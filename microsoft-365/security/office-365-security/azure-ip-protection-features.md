@@ -17,14 +17,14 @@ ms.collection:
 ms.custom:
 - seo-marvel-apr2020
 description: En este artículo se explican los cambios que se están implementando en las características de protección de Azure Information Protection
-ms.technology: mdo
-ms.prod: m365-security
-ms.openlocfilehash: 38dd1accf4641d6dfe3f66574b1072e2500cb914
-ms.sourcegitcommit: 725a92b0b1555572b306b285a0e7a7614d34e5e5
+ms.subservice: mdo
+ms.service: microsoft-365-security
+ms.openlocfilehash: b4d57227e07695f334a70cd8ad5f28e34f8a3895
+ms.sourcegitcommit: 10e6abe740e27000e223378eb17d657a47555fa8
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/24/2022
-ms.locfileid: "65647829"
+ms.lasthandoff: 08/31/2022
+ms.locfileid: "67472774"
 ---
 # <a name="protection-features-in-azure-information-protection-rolling-out-to-existing-tenants"></a>Características de protección de Azure Information Protection implementación en inquilinos existentes
 
@@ -32,7 +32,7 @@ ms.locfileid: "65647829"
 - [Plan 2 de Microsoft Defender para Office 365](defender-for-office-365.md)
 - [Microsoft 365 Defender](../defender/microsoft-365-defender.md)
 
-Para ayudar con el paso inicial para proteger la información, a partir de julio de 2018 todos los inquilinos válidos de Azure Information Protection tendrán las características de protección en Azure Information Protection activadas de forma predeterminada. Las características de protección de Azure Information Protection se conocían anteriormente en Office 365 como Rights Management o Azure RMS. Si su organización tiene un plan de servicio E3 de Office o un plan de servicio superior, ahora obtendrá un punto de partida para proteger la información a través de Azure Information Protection cuando implementemos estas características.
+Para ayudar con el paso inicial para proteger la información, a partir de julio de 2018 todos los inquilinos válidos de Azure Information Protection tendrán las características de protección en Azure Information Protection activadas de forma predeterminada. Las características de protección de Azure Information Protection se conocían anteriormente en Office 365 como Rights Management o Azure RMS. Si su organización tiene un plan de servicio de Office E3 o un plan de servicio superior, ahora obtendrá una ventaja para proteger la información a través de Azure Information Protection cuando implementemos estas características.
 
 ## <a name="changes-beginning-july-1-2018"></a>Cambios a partir del 1 de julio de 2018
 
@@ -52,7 +52,7 @@ Los administradores de inquilinos pueden comprobar el estado de protección en e
 
 ## <a name="why-are-we-making-this-change"></a>¿Por qué hacemos este cambio?
 
-Office 365 Message Encryption aprovecha las funcionalidades de protección de Azure Information Protection. En el centro de las mejoras recientes en Office 365 cifrado de mensajes y en nuestras inversiones más amplias en la protección de la información en Microsoft 365, estamos facilitando a las organizaciones activar y usar nuestras capacidades de protección, ya que históricamente, las tecnologías de cifrado han sido difíciles de configurar. Al activar las características de protección en Azure Information Protection de forma predeterminada, puede empezar a proteger rápidamente los datos confidenciales.
+Office 365 Message Encryption aprovecha las funcionalidades de protección de Azure Information Protection. En el centro de las mejoras recientes en Office 365 cifrado de mensajes y en nuestras inversiones más amplias en la protección de la información en Microsoft 365, facilitamos a las organizaciones activar y usar nuestras capacidades de protección, ya que históricamente, las tecnologías de cifrado han sido difíciles de configurar. Al activar las características de protección en Azure Information Protection de forma predeterminada, puede empezar a proteger rápidamente los datos confidenciales.
 
 ## <a name="does-this-impact-me"></a>¿Esto me afecta?
 
@@ -73,7 +73,7 @@ Use estas instrucciones de [Preparación del entorno para Azure Rights Managemen
 
    Use ADSI Edit para ver si tiene un SCP publicado en Active Directory: CN=Configuration [nombre del servidor], CN=Services, CN=RightsManagementServices, CN=SCP
 
-2. Si no usa un SCP, Windows equipos que se conectan a un clúster de AD RMS deben configurarse para la detección de servicios del lado cliente o el redireccionamiento de licencias mediante el registro de Windows: `HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\MSIPC\ServiceLocation or HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\Microsoft\MSIPC\ServiceLocation`.
+2. Si no usa un SCP, los equipos Windows que se conectan a un clúster de AD RMS deben configurarse para la detección de servicios del lado cliente o el redireccionamiento de licencias mediante el Registro de Windows: `HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\MSIPC\ServiceLocation or HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\Microsoft\MSIPC\ServiceLocation`.
 
 Para obtener más información sobre estas configuraciones del Registro, consulte [Habilitación de la detección de servicios del lado cliente mediante el registro de Windows](/azure/information-protection/rms-client/client-deployment-notes#enabling-client-side-service-discovery-by-using-the-windows-registry) y [Redirección del tráfico del servidor de licencias](/azure/information-protection/rms-client/client-deployment-notes#redirecting-licensing-server-traffic).
 

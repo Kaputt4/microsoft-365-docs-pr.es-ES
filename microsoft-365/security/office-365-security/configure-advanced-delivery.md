@@ -15,14 +15,14 @@ ms.collection:
 - M365-security-compliance
 ms.custom: ''
 description: Los administradores pueden aprender a usar la directiva de entrega avanzada en Exchange Online Protection (EOP) para identificar los mensajes que no se deben filtrar en escenarios admitidos específicos (simulaciones de suplantación de identidad de terceros y mensajes entregados a buzones de operaciones de seguridad (SecOps).
-ms.technology: mdo
-ms.prod: m365-security
-ms.openlocfilehash: 826eb2d2b860900ed0f73ecd85f3162bb90de2a9
-ms.sourcegitcommit: d7c51ab23de4b43bcc8eebebc5a2962831e9fd55
+ms.subservice: mdo
+ms.service: microsoft-365-security
+ms.openlocfilehash: 82d1f38430769b00cdb8fc5cc7c9cd02884f66d1
+ms.sourcegitcommit: 10e6abe740e27000e223378eb17d657a47555fa8
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/23/2022
-ms.locfileid: "67420992"
+ms.lasthandoff: 08/31/2022
+ms.locfileid: "67483000"
 ---
 # <a name="configure-the-delivery-of-third-party-phishing-simulations-to-users-and-unfiltered-messages-to-secops-mailboxes"></a>Configurar la entrega de simulaciones de suplantación de identidad de terceros a usuarios y mensajes sin filtrar a buzones de SecOps
 

@@ -4,7 +4,8 @@ description: Cómo redirigir cuentas y sesiones de Defender for Identity a Micro
 keywords: Microsoft 365 Defender, Introducción a Microsoft 365 Defender, redirección de Security Center
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
-ms.prod: m365-security
+ms.service: microsoft-365-security
+ms.subservice: m365d
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -19,13 +20,12 @@ ms.collection:
 - M365-security-compliance
 ms.custom: admindeeplinkDEFENDER
 ms.topic: article
-ms.technology: m365d
-ms.openlocfilehash: b5c122f01d37d066e0f20bf817ca45ad5c57480b
-ms.sourcegitcommit: 5fe7f2954a89406245416fc1a218cf4bf19abb85
+ms.openlocfilehash: c66794d8f09d93b2582938d3eda996be7f9b5400
+ms.sourcegitcommit: 10e6abe740e27000e223378eb17d657a47555fa8
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "65864648"
+ms.lasthandoff: 08/31/2022
+ms.locfileid: "67471067"
 ---
 # <a name="redirecting-accounts-from-microsoft-defender-for-identity-to-microsoft-365-defender"></a>Redirigir cuentas de Microsoft Defender for Identity a Microsoft 365 Defender
 
@@ -54,7 +54,7 @@ Para iniciar el enrutamiento de cuentas a Microsoft 365 Defender:
 
 1. Inicie sesión en <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">Microsoft 365 Defender</a>.
 
-1. Vaya a **Configuración** >  **Identities** > **General** > **Portal redireccionamiento** o [haga clic aquí](https://security.microsoft.com/preferences2/portal_redirection).
+1. Vaya al **redireccionamiento del Portal** **general** > **de identidades** >  de **configuración** >  o [haga clic aquí](https://security.microsoft.com/preferences2/portal_redirection).
 
     :::image type="content" source="../../media/portal-redirection.png" alt-text="Redirección del portal."lightbox="../../media/portal-redirection.png":::
 
@@ -74,7 +74,7 @@ Para volver al portal de Microsoft Defender for Identity anterior:
 
 1. Inicie sesión en <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">Microsoft 365 Defender</a> como administrador global o con una cuenta y con permisos de administrador de seguridad en Azure Active Directory.
 
-2. Vaya a **Configuración** >  **Redireccionamiento del Portal** **general** >  **de Identidades** >  o [abra la página aquí](https://security.microsoft.com/preferences2/portal_redirection).  
+2. Vaya al **redireccionamiento del Portal** **de** > **identidades** >  de **configuración** >  o [abra la página aquí](https://security.microsoft.com/preferences2/portal_redirection).  
 
 3. Cambie la configuración de redireccionamiento automático a **Desactivado**.
 

@@ -1,9 +1,10 @@
 ---
 title: Tabla AADSpnSignInEventsBeta en el esquema de búsqueda avanzada
-description: Obtenga información sobre la información asociada con la entidad de servicio de Azure Active Directory y la tabla de eventos de inicio de sesión de identidad administrada.
+description: Obtenga información sobre la información asociada a la entidad de servicio de Azure Active Directory y a la tabla de eventos de inicio de sesión de identidad administrada.
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
-ms.prod: m365-security
+ms.service: microsoft-365-security
+ms.subservice: m365d
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -16,13 +17,12 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
-ms.technology: m365d
-ms.openlocfilehash: b1b9d6405abdddea42652cfd4c532df91eeb6b30
-ms.sourcegitcommit: 7ab324551afac4fd82abc015247371ebfe6ccac2
+ms.openlocfilehash: 74e8ff6319799da8e9893a65b447a8e3c693cd8f
+ms.sourcegitcommit: 10e6abe740e27000e223378eb17d657a47555fa8
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/02/2022
-ms.locfileid: "65842222"
+ms.lasthandoff: 08/31/2022
+ms.locfileid: "67472950"
 ---
 # <a name="aadspnsignineventsbeta"></a>AADSpnSignInEventsBeta
 
@@ -32,7 +32,7 @@ ms.locfileid: "65842222"
 > [!IMPORTANT]
 > La `AADSpnSignInEventsBeta` tabla está actualmente en versión beta y se ofrece a corto plazo para permitirle buscar a través de eventos de inicio de sesión de Azure Active Directory (AAD). Los clientes deben tener una licencia de Azure Active Directory Premium P2 para recopilar y ver las actividades de esta tabla. Con el tiempo, Microsoft moverá toda la información del esquema de inicio de sesión a la `IdentityLogonEvents` tabla.
 
-La `AADSpnSignInEventsBeta` tabla del esquema de búsqueda avanzada contiene información sobre Azure Active Directory entidad de servicio e inicios de sesión de identidad administrada. Puede obtener más información sobre los diferentes tipos de inicios de sesión en [Azure Active Directory informes de actividad de inicio de sesión: versión preliminar](/azure/active-directory/reports-monitoring/concept-all-sign-ins).
+La `AADSpnSignInEventsBeta` tabla del esquema de búsqueda avanzada contiene información sobre la entidad de servicio de Azure Active Directory y los inicios de sesión de identidad administrada. Puede obtener más información sobre los distintos tipos de inicios de sesión en [informes de actividad de inicio de sesión de Azure Active Directory: versión preliminar](/azure/active-directory/reports-monitoring/concept-all-sign-ins).
 
 Use esta referencia para crear consultas que devuelvan información de la tabla.
 

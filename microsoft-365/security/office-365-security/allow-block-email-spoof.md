@@ -14,14 +14,14 @@ search.appverid:
 ms.collection:
 - M365-security-compliance
 description: Los administradores pueden aprender a permitir o bloquear correos electrónicos y entradas de remitente suplantados en la lista de permitidos o bloqueados de inquilinos en el portal de seguridad.
-ms.technology: mdo
-ms.prod: m365-security
-ms.openlocfilehash: 912743015041bc610c3f44607b8ee21f8c715cc9
-ms.sourcegitcommit: 031b3e963478f642a0d23be37a01f23a01cb3d84
+ms.subservice: mdo
+ms.service: microsoft-365-security
+ms.openlocfilehash: 03dd5247135e3d4d297e73ab166921adc73f3573
+ms.sourcegitcommit: 10e6abe740e27000e223378eb17d657a47555fa8
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/26/2022
-ms.locfileid: "67441885"
+ms.lasthandoff: 08/31/2022
+ms.locfileid: "67469589"
 ---
 # <a name="allow-or-block-emails-using-the-tenant-allowblock-list"></a>Permitir o bloquear correos electrónicos mediante la lista de bloqueados y permitidos del espacio empresarial
 

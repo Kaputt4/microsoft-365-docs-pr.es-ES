@@ -1,9 +1,10 @@
 ---
-title: Solución de problemas de Microsoft 365 Defender servicio
+title: Solución de problemas del servicio Microsoft 365 Defender
 description: Búsqueda de soluciones y soluciones alternativas a problemas conocidos de Microsoft 365 Defender
 keywords: solución de problemas de Microsoft 365 Defender, solución de problemas, Microsoft Defender for Identity, problemas, complemento, página de configuración
 search.product: eADQiWindows 10XVcnh
-ms.prod: m365-security
+ms.service: microsoft-365-security
+ms.subservice: m365d
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -19,15 +20,14 @@ ms.topic: conceptual
 search.appverid:
 - MOE150
 - MET150
-ms.technology: m365d
-ms.openlocfilehash: 656599cf9ec66987119819b2f28f9a8eff1d4e77
-ms.sourcegitcommit: 1ef176c79a0e6dbb51834fe30807409d4e94847c
+ms.openlocfilehash: 1bc37191d83ebe4e2a6d483d4f490d96d195082b
+ms.sourcegitcommit: 10e6abe740e27000e223378eb17d657a47555fa8
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/19/2021
-ms.locfileid: "64731678"
+ms.lasthandoff: 08/31/2022
+ms.locfileid: "67474960"
 ---
-# <a name="troubleshoot-microsoft-365-defender-service-issues"></a>Solución de problemas de Microsoft 365 Defender servicio
+# <a name="troubleshoot-microsoft-365-defender-service-issues"></a>Solución de problemas del servicio Microsoft 365 Defender
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
 

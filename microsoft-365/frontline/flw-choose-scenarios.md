@@ -17,12 +17,12 @@ ms.reviewer: aaglick
 appliesto:
 - Microsoft Teams
 - Microsoft 365 for frontline workers
-ms.openlocfilehash: 5d5c6596d0981ad9787a784c0d189a8e11c07ac6
-ms.sourcegitcommit: f09687dbbc68347bc421d0b686625b80ff3a6b20
+ms.openlocfilehash: 5265c8f4a2135fdeee800ebdd465bc3cbb53a6f5
+ms.sourcegitcommit: 10e6abe740e27000e223378eb17d657a47555fa8
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/25/2022
-ms.locfileid: "67432405"
+ms.lasthandoff: 08/31/2022
+ms.locfileid: "67470979"
 ---
 # <a name="choose-your-scenarios-for-microsoft-365-for-frontline-workers"></a>Elija los escenarios para Microsoft 365 para trabajadores de primera línea
 
@@ -37,6 +37,11 @@ Use la información general de estos escenarios para empezar a prever lo que su 
 :::image type="icon" source="/office/media/icons/chat-room-conversation-teams.png":::
 
 Las soluciones de comunicaciones conectan a los trabajadores de primera línea y les permiten colaborar entre sí, con otros usuarios de la organización y con sus clientes.
+
+Vea el siguiente vídeo para ver un ejemplo de cómo puede ayudar a los trabajadores de primera línea a conectarse y colaborar en organizaciones comerciales:
+
+> [!VIDEO https://www.microsoft.com/videoplayer/embed/RWRJVw]
+
 
 | Escenario | Descripción | Servicios | Aplicaciones de Teams |
 | --- | --- | --- |--- |
@@ -84,6 +89,11 @@ Simplifique y optimice la coordinación de los horarios con los empleados de pri
 
 Impulse la eficiencia operativa mediante la digitalización de procesos basados en papel y la automatización de pasos rutinarios y repetitivos.
 
+Vea el vídeo siguiente para ver un ejemplo de cómo puede simplificar los procesos empresariales en entornos comerciales:
+
+> [!VIDEO https://www.microsoft.com/videoplayer/embed/RWRzfc]
+
+
 | Escenario | Descripción | Servicios | Aplicaciones de Teams |
 | --- | --- | --- | --- |
 | [Simplificar procesos empresariales](simplify-business-processes.md) | Use la publicación de tareas para crear procesos estándar entre sitios, listas para administrar información y realizar un seguimiento de los procesos en curso y simplificar las solicitudes con aprobaciones. Los flujos de trabajo automatizados pueden acelerar y automatizar acciones, como recopilar datos o enrutar notificaciones. | Microsoft Teams<br>Power Platform | Tareas<br>Listas<br>Aprobaciones |
@@ -95,7 +105,12 @@ Impulse la eficiencia operativa mediante la digitalización de procesos basados 
 
 Use Microsoft Bookings y Microsoft Teams para programar y hospedar citas virtuales con clientes y clientes. Puede integrar Forms con su experiencia de citas virtuales para obtener la información adecuada sobre sus clientes o como parte de su experiencia de soporte al cliente para aprender lo que sus clientes necesitan.
 
-Más información: [Citas virtuales con Microsoft Teams y la aplicación Bookings](bookings-virtual-visits.md)
+Vea el siguiente vídeo para ver un ejemplo de citas virtuales en organizaciones sanitarias: 
+
+> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4TQop]
+
+
+Más información: [citas virtuales con Microsoft Teams y la aplicación Bookings](bookings-virtual-visits.md)
 
 ## <a name="help-your-team-clients-and-customers"></a>Ayuda a tu equipo, clientes y clientes
 

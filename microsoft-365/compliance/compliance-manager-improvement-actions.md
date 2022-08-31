@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Obtenga información sobre cómo implementar y probar controles trabajando con acciones de mejora en el Administrador de cumplimiento de Microsoft Purview. Asigne trabajo, almacene documentación y exporte informes.
-ms.openlocfilehash: 4eb75e23825e8e60fc0ea3ecfcbb75e1292ac5e9
-ms.sourcegitcommit: 0c8934129b5ed147fb873fc3f4d201042c313571
+ms.openlocfilehash: 6388a4e1c4ce73e29481e1e1daa0ee27d733ed8b
+ms.sourcegitcommit: 10e6abe740e27000e223378eb17d657a47555fa8
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/12/2022
-ms.locfileid: "67333772"
+ms.lasthandoff: 08/31/2022
+ms.locfileid: "67472972"
 ---
 # <a name="working-with-improvement-actions-in-compliance-manager"></a>Trabajar con acciones de mejora en el Administrador de cumplimiento
 
@@ -154,7 +154,7 @@ El Administrador de cumplimiento proporciona opciones para probar las acciones d
 Las acciones de mejora establecidas para las pruebas manuales son acciones que se prueban e implementan manualmente. Establezca los estados de implementación y estado de prueba necesarios, y cargue los archivos de evidencia en la pestaña **Documentos** . Para algunas acciones, este es el único método disponible para probar las acciones de mejora.
 
 #### <a name="automatic-testing-source"></a>Origen de pruebas automáticas
-El Administrador de cumplimiento puede probar automáticamente determinadas acciones de mejora. [Obtenga detalles](compliance-manager-improvement-actions.md#update-testing-source) sobre qué acciones de mejora se pueden probar automáticamente y qué no.
+El Administrador de cumplimiento puede probar automáticamente determinadas acciones de mejora. [Obtenga detalles](compliance-manager-setup.md#set-up-automated-testing) sobre qué acciones de mejora se pueden probar automáticamente y qué no.
 
 Para las acciones de mejora que se pueden probar automáticamente, verá la opción **Automático** para probar el origen. El Administrador de cumplimiento detectará señales de otras soluciones de cumplimiento que haya configurado en el entorno de Microsoft 365, así como las acciones complementarias que microsoft Secure Score también supervisa. El campo **Lógica de prueba** de la pestaña **Pruebas** mostrará qué tipo de directiva o configuración es necesaria en otra solución para que la acción pase y obtenga puntos para la puntuación de cumplimiento.
 

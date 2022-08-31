@@ -1,9 +1,10 @@
 ---
-title: Códigos de error Microsoft 365 Defender API de REST comunes
-description: Obtenga información sobre los códigos de error comunes Microsoft 365 Defender api de REST
+title: Códigos de error de la API REST de Microsoft 365 Defender comunes
+description: Más información sobre los códigos de error comunes de la API REST de Microsoft 365 Defender
 keywords: api, error, códigos, errores comunes, Microsoft 365 Defender, códigos de error de api
 search.product: eADQiWindows 10XVcnh
-ms.prod: m365-security
+ms.service: microsoft-365-security
+ms.subservice: m365d
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -19,16 +20,15 @@ ms.topic: conceptual
 search.appverid:
 - MOE150
 - MET150
-ms.technology: m365d
 ms.custom: api
-ms.openlocfilehash: 499ab1722b2754e893361784f7ff1ce257ceb58b
-ms.sourcegitcommit: 6f3bc00a5cf25c48c61eb3835ac069e9f41dc4db
+ms.openlocfilehash: 6aeed1afa77779de5d21bb0ecbdd34d5a4c7e0e0
+ms.sourcegitcommit: 10e6abe740e27000e223378eb17d657a47555fa8
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/24/2022
-ms.locfileid: "62171952"
+ms.lasthandoff: 08/31/2022
+ms.locfileid: "67482480"
 ---
-# <a name="common-microsoft-365-defender-rest-api-error-codes"></a>Códigos de error Microsoft 365 Defender API de REST comunes
+# <a name="common-microsoft-365-defender-rest-api-error-codes"></a>Códigos de error de la API REST de Microsoft 365 Defender comunes
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
 
@@ -39,31 +39,31 @@ ms.locfileid: "62171952"
 > [!IMPORTANT]
 > Parte de la información se refiere a productos preliminares que pueden ser modificados sustancialmente antes de su lanzamiento comercial. Microsoft no otorga garantías, expresas o implícitas, con respecto a la información que aquí se proporciona.
 
-Una operación puede devolver códigos de error en cualquiera de las API de Microsoft 365 Defender. Cada respuesta de error contendrá un mensaje de error, lo que puede ayudar a resolver el problema. La columna de mensaje de error de la sección tabla proporciona algunos mensajes de ejemplo. El contenido de los mensajes reales variará en función de los factores que desencadenaron la respuesta. El contenido de las variables se indica en la tabla entre corchetes angulares.
+Una operación puede devolver códigos de error en cualquiera de las API de Microsoft 365 Defender. Cada respuesta de error contendrá un mensaje de error, que puede ayudar a resolver el problema. La columna de mensaje de error de la sección de tabla proporciona algunos mensajes de ejemplo. El contenido de los mensajes reales variará en función de los factores que desencadenaron la respuesta. El contenido de la variable se indica en la tabla entre corchetes angulares.
 
 ## <a name="error-codes"></a>Códigos de error
 
-Código de error | Código de estado HTTP | Mensaje
+Código de error | Código de estado HTTP | Message
 -|-|-
-BadRequest | BadRequest (400) | Mensaje de error General Bad Request.
-ODataError | BadRequest (400) | Consulta URI de OData no válida \<the specific error is specified\> .
-InvalidInput | BadRequest (400) | Entrada no válida \<the invalid input\> .
+BadRequest | BadRequest (400) | Mensaje de error de solicitud incorrecta general.
+ODataError | BadRequest (400) | Consulta URI \<the specific error is specified\>de OData no válida.
+InvalidInput | BadRequest (400) | Entrada \<the invalid input\>no válida.
 InvalidRequestBody | BadRequest (400) | Cuerpo de la solicitud no válido.
-InvalidHashValue | BadRequest (400) | El valor hash \<the invalid hash\> no es válido.
+InvalidHashValue | BadRequest (400) | El valor \<the invalid hash\> hash no es válido.
 InvalidDomainName | BadRequest (400) | El nombre \<the invalid domain\> de dominio no es válido.
-InvalidIpAddress | BadRequest (400) | La dirección IP \<the invalid IP\> no es válida.
+InvalidIpAddress | BadRequest (400) | La dirección \<the invalid IP\> IP no es válida.
 InvalidUrl | BadRequest (400) | La dirección URL \<the invalid URL\> no es válida.
-MaximumBatchSizeExceeded | BadRequest (400) | Se ha superado el tamaño máximo de lote. Recibido: \<batch size received\> , permitido: {tamaño de lote permitido}.
-MissingRequiredParameter | BadRequest (400) | Falta \<the missing parameter\> el parámetro.
-OsPlatformNotSupported | BadRequest (400) | La plataforma del \<the client OS Platform\> sistema operativo no es compatible con esta acción.
-ClientVersionNotSupported | BadRequest (400) | \<The requested action\> se admite en la versión del cliente \<supported client version\> y versiones posteriores.
-No autorizado (Unauthorized) | No autorizado (401) | No autorizado (Unauthorized) <br /><br />*Nota: Normalmente se debe a un encabezado de autorización no válido o expirado.*
+MaximumBatchSizeExceeded | BadRequest (400) | Se ha superado el tamaño máximo del lote. Recibido: \<batch size received\>, permitido: {tamaño de lote permitido}.
+MissingRequiredParameter | BadRequest (400) | Falta el parámetro \<the missing parameter\> .
+OsPlatformNotSupported | BadRequest (400) | La plataforma \<the client OS Platform\> del sistema operativo no se admite para esta acción.
+ClientVersionNotSupported | BadRequest (400) | \<The requested action\> se admite en la versión \<supported client version\> de cliente y versiones posteriores.
+No autorizado (Unauthorized) | No autorizado (401) | No autorizado (Unauthorized) <br /><br />*Nota: Normalmente, se debe a un encabezado de autorización no válido o expirado.*
 Prohibido (Forbidden) | Prohibido (403) | Prohibido (Forbidden) <br /><br />*Nota: Token válido pero permiso insuficiente para la acción*.
-DisabledFeature | Prohibido (403) | La característica inquilino no está habilitada.
-DisallowedOperation | Prohibido (403) | \<the disallowed operation and the reason\>.
-NotFound | No encontrado (404) | Mensaje de error General No encontrado.
-ResourceNotFound | No encontrado (404) | No \<the requested resource\> se encontró el recurso.
-InternalServerError | Error interno del servidor (500) | *Nota: No hay mensaje de error, vuelva a intentar la operación o [póngase en contacto con Microsoft](../../admin/get-help-support.md) si no se resuelve*
+DisabledFeature | Prohibido (403) | La característica de inquilino no está habilitada.
+No permitidaOperation | Prohibido (403) | \<the disallowed operation and the reason\>.
+NotFound | No encontrado (404) | Mensaje de error General no encontrado.
+ResourceNotFound | No encontrado (404) | No se encontró el recurso \<the requested resource\> .
+InternalServerError | Error interno del servidor (500) | *Nota: No hay ningún mensaje de error, reintente la operación o [póngase en contacto con Microsoft](../../admin/get-help-support.md) si no se resuelve*
 
 ## <a name="examples"></a>Ejemplos
 
@@ -90,17 +90,17 @@ InternalServerError | Error interno del servidor (500) | *Nota: No hay mensaje d
 ## <a name="body-parameters"></a>Parámetros de cuerpo
 
 > [!IMPORTANT]
-> Los parámetros de cuerpo distinguen mayúsculas de minúsculas.
+> Los parámetros del cuerpo distinguen mayúsculas de minúsculas.
 
-Si experimenta un error *InvalidRequestBody* *o MissingRequiredParameter,* puede deberse a un error tipográfico. Revise la documentación de la API y compruebe que los parámetros enviados coinciden con el ejemplo correspondiente.
+Si experimenta un error *InvalidRequestBody* o *MissingRequiredParameter* , puede deberse a un error tipográfico. Revise la documentación de la API y compruebe que los parámetros enviados coinciden con el ejemplo pertinente.
 
-## <a name="tracking-id"></a>Id. de seguimiento
+## <a name="tracking-id"></a>Identificador de seguimiento
 
-Cada respuesta de error contiene un parámetro id. único para el seguimiento. El nombre de la propiedad de este parámetro es *target*. Al ponerse en contacto con nosotros sobre un error, adjuntar este identificador nos ayudará a encontrar la causa raíz del problema.
+Cada respuesta de error contiene un parámetro de identificador único para el seguimiento. El nombre de propiedad de este parámetro es *target*. Al ponerse en contacto con nosotros sobre un error, adjuntar este identificador nos ayudará a encontrar la causa principal del problema.
 
 ## <a name="related-articles"></a>Artículos relacionados
 
-- [Microsoft 365 Defender introducción a las API](api-overview.md)
+- [Introducción a las API de Microsoft 365 Defender](api-overview.md)
 - [Las API de Microsoft 365 Defender compatibles](api-supported.md)
-- [Obtener acceso a Microsoft 365 Defender API de acceso](api-access.md)
-- [Más información sobre los límites de api y las licencias](api-terms.md)
+- [Acceso a las API de Microsoft 365 Defender](api-access.md)
+- [Más información sobre los límites de API y las licencias](api-terms.md)

@@ -20,13 +20,14 @@ ms.collection:
 - m365solution-identitydevice
 - m365solution-scenario
 - zerotrust-solution
+- highpri
 ms.technology: mdo
-ms.openlocfilehash: 35acb32c9a27ec32c78f4f247257d589a9fefc04
-ms.sourcegitcommit: 61b22df76e0f81e5ef11c587b129287886151c79
+ms.openlocfilehash: e47dffc84870a34cb22aa8246b82ce230bcd7ebd
+ms.sourcegitcommit: 10e6abe740e27000e223378eb17d657a47555fa8
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/12/2022
-ms.locfileid: "66750064"
+ms.lasthandoff: 08/31/2022
+ms.locfileid: "67468193"
 ---
 # <a name="common-zero-trust-identity-and-device-access-policies"></a>Directivas comunes de acceso a dispositivos e identidades de Confianza cero
 
@@ -364,7 +365,7 @@ Para **Seguridad del sistema**, consulte esta tabla.
 |Password|Requerir una contraseña para desbloquear dispositivos móviles|Obligatoria|Seleccionar|
 ||Contraseñas sencillas|Bloquear|Seleccionar|
 ||Tipo de contraseña|Valor predeterminado del dispositivo|Seleccionar|
-||Longitud mínima de la contraseña|6 |Tipo|
+||Longitud mínima de la contraseña|6|Tipo|
 ||Máximo de minutos de inactividad antes de solicitar la contraseña|15 |Tipo <p> Esta configuración es compatible con las versiones 4.0 y posteriores de Android o KNOX 4.0 y versiones posteriores. Para dispositivos iOS, es compatible con iOS 8.0 y versiones posteriores.|
 ||Expiración de contraseña (días)|41|Tipo|
 ||Número de contraseñas anteriores que no se pueden reutilizar|5|Tipo|
@@ -382,7 +383,7 @@ Para **Seguridad del sistema**, consulte esta tabla.
 
 |Tipo|Propiedades|Valor|Acción|
 |---|---|---|---|
-|Microsoft Defender para punto de conexión reglas en el Centro de administración de Microsoft Endpoint Manager|[Requerir que el dispositivo esté en o bajo la puntuación de riesgo de la máquina](/mem/intune/protect/advanced-threat-protection-configure#create-and-assign-compliance-policy-to-set-device-risk-level)|Medio|Seleccionar|
+|Microsoft Defender para punto de conexión reglas en el Centro de administración de Microsoft Endpoint Manager|[Requerir que el dispositivo esté en o bajo la puntuación de riesgo de la máquina](/mem/intune/protect/advanced-threat-protection-configure#create-and-assign-compliance-policy-to-set-device-risk-level)|Mediano|Seleccionar|
 
 <!--
 ## Require compliant PCs (but not compliant phones and tablets)

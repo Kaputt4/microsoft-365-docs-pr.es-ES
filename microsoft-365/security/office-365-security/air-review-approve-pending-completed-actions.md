@@ -17,15 +17,15 @@ ms.collection:
 - m365initiative-defender-office365
 ms.custom: ''
 description: Obtenga información sobre las acciones de corrección en las funcionalidades automatizadas de investigación y respuesta en Microsoft Defender para Office 365 plan 2.
-ms.technology: mdo
-ms.prod: m365-security
+ms.subservice: mdo
+ms.service: microsoft-365-security
 ms.date: 06/10/2021
-ms.openlocfilehash: aaa444a2bada254aeed83540aee361ed806ab0a0
-ms.sourcegitcommit: 725a92b0b1555572b306b285a0e7a7614d34e5e5
+ms.openlocfilehash: f7a8c1b4ae7df1d69d48dbcb1f1954e4fae3e51b
+ms.sourcegitcommit: 10e6abe740e27000e223378eb17d657a47555fa8
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/24/2022
-ms.locfileid: "65649129"
+ms.lasthandoff: 08/31/2022
+ms.locfileid: "67468711"
 ---
 # <a name="review-and-manage-remediation-actions-in-office-365"></a>Revisar y administrar las acciones de corrección en Office 365
 
@@ -47,7 +47,7 @@ Hay cuatro maneras diferentes de buscar y realizar acciones de investigación au
 
 - [Cola de incidentes](https://security.microsoft.com/incidents)
 - Investigación en sí (a la que se accede a través de incidente o desde una alerta)
-- [Centro de actividades](https://security.microsoft.com/action-center/pending)
+- [Centro de acciones](https://security.microsoft.com/action-center/pending)
 - [Cola de investigaciones de investigación y corrección](https://security.microsoft.com/airinvestigation)
 
 ## <a name="incident-queue"></a>Cola de incidentes
@@ -68,7 +68,7 @@ Hay cuatro maneras diferentes de buscar y realizar acciones de investigación au
 
 ## <a name="investigation-and-remediation-investigations-queue"></a>Cola de investigaciones de investigación y corrección
 
-1. En el portal de Microsoft 365 Defender en <https://security.microsoft.com>, vaya a la página **Investigación de amenazas** en **Correo electrónico &** **Investigaciones de** colaboración\>. Para ir directamente a la página **Investigación de amenazas** , use <https://security.microsoft.com/airinvestigation>.
+1. En el portal de Microsoft 365 Defender en <https://security.microsoft.com>, vaya a la página **Investigación de amenazas** en Email & **Investigaciones de** **colaboración**\>. Para ir directamente a la página **Investigación de amenazas** , use <https://security.microsoft.com/airinvestigation>.
 2. En la página **Investigación de amenazas** , busque y un elemento de la lista cuyo estado sea **La acción Pendiente**.
 3. Haga clic en ![Abrir en el icono de ventana nueva.](../../media/m365-cc-sc-open-icon.png) **Abra en una nueva ventana** en la hora de la lista (entre **id.** y **Estado**).
 4. En la página que se abre, realice acciones de aprobación o rechazo.
@@ -78,7 +78,7 @@ Hay cuatro maneras diferentes de buscar y realizar acciones de investigación au
 Hay dos maneras diferentes de reconsiderar las acciones enviadas:
 
 - A través del [centro de acciones unificado](https://security.microsoft.com/action-center).
-- Aunque el [centro de acción Office](https://security.microsoft.com/threatincidents).
+- Aunque el [centro de acciones de Office](https://security.microsoft.com/threatincidents).
 
 ## <a name="change-or-undo-through-the-unified-action-center"></a>Cambiar o deshacer a través del centro de acciones unificado
 
@@ -88,18 +88,18 @@ Hay dos maneras diferentes de reconsiderar las acciones enviadas:
 
 ## <a name="change-or-undo-through-the-office-action-center"></a>Cambiar o deshacer a través del centro de acciones de Office
 
-1. En el portal de Microsoft 365 Defender en <https://security.microsoft.com>, vaya al centro de acciones de Office en **Correo electrónico &** **centro de acciones** de **revisión** \> de colaboración\>. Para ir directamente al centro de acciones de Office, use <https://security.microsoft.com/threatincidents>.
+1. En el portal de Microsoft 365 Defender en <https://security.microsoft.com>, vaya al centro de acciones de Office en Email & **centro de acciones** de **revisión** \> de **colaboración**\>. Para ir directamente al centro de acciones de Office, use <https://security.microsoft.com/threatincidents>.
 2. En la página **Centro de acciones** , seleccione la corrección adecuada.
 3. En el panel lateral, haga clic en la entrada envíos de correo y espere a que se cargue la lista.
 4. Espere a que el botón Acción de la parte superior se habilite y seleccione el botón Acción para cambiar el tipo de acción.
 5. Esto creará las acciones adecuadas.
 
-## <a name="next-steps"></a>Siguientes pasos
+## <a name="next-steps"></a>Pasos siguientes
 
 - [Uso del Explorador de amenazas](threat-explorer.md)
 - [Administración /Acciones manuales](remediate-malicious-email-delivered-office-365.md)
 - [Cómo notificar falsos positivos o negativos en funcionalidades automatizadas de investigación y respuesta](air-report-false-positives-negatives.md)
 
-## <a name="see-also"></a>Recursos adicionales
+## <a name="see-also"></a>Vea también
 
 - [Ver detalles y resultados de una investigación automatizada en Office 365](air-view-investigation-results.md)

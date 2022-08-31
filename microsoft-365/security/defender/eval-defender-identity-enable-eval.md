@@ -3,7 +3,8 @@ title: Habilitación del entorno de evaluación para Microsoft Defender for Iden
 description: Configure Microsoft Defender for Identity en Microsoft 365 Defender laboratorio de prueba o entorno piloto mediante la instalación de & configuración del sensor y la detección de administradores locales en otros equipos.
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
-ms.prod: m365-security
+ms.service: microsoft-365-security
+ms.subservice: m365d
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -20,14 +21,14 @@ ms.collection:
 - m365solution-scenario
 - m365solution-evalutatemtp
 - zerotrust-solution
+- highpri
 ms.topic: conceptual
-ms.technology: m365d
-ms.openlocfilehash: 84b893b6689385e4137778d0d787f42428843d26
-ms.sourcegitcommit: 61b22df76e0f81e5ef11c587b129287886151c79
+ms.openlocfilehash: 800410fe4faecde9a104242d5d4a1821ad8de86a
+ms.sourcegitcommit: 10e6abe740e27000e223378eb17d657a47555fa8
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/12/2022
-ms.locfileid: "66750196"
+ms.lasthandoff: 08/31/2022
+ms.locfileid: "67482260"
 ---
 # <a name="enable-the-evaluation-environment-for-microsoft-defender-for-identity"></a>Habilitación del entorno de evaluación para Microsoft Defender for Identity
 
@@ -63,7 +64,7 @@ A continuación, descargue, instale y configure el sensor de Defender for Identi
 |1     | Determine cuántos sensores de Microsoft Defender for Identity necesita.        | [Capacidad del plan para Microsoft Defender for Identity](/defender-for-identity/capacity-planning)   |
 |2     | Descarga del paquete de configuración del sensor  |  [Inicio rápido: Descarga del paquete de configuración del sensor de Microsoft Defender for Identity](/defender-for-identity/install-step3)   |
 |3     | Instalación del sensor de Defender for Identity    |  [Inicio rápido: Instalación del sensor de Microsoft Defender for Identity](/defender-for-identity/install-step4)       |
-|4      | Configuración del sensor       |  [Configuración de Microsoft Defender for Identity sensor](/defender-for-identity/install-step5)   |
+|4     | Configuración del sensor       |  [Configuración de Microsoft Defender for Identity sensor](/defender-for-identity/install-step5)   |
 
 ## <a name="step-3-configure-event-log-and-proxy-settings-on-machines-with-the-sensor"></a>Paso 3. Configuración del registro de eventos y del proxy en las máquinas con el sensor
 
@@ -82,7 +83,7 @@ Para asegurarse de que los clientes y servidores de Windows permiten que su cuen
 
 Para obtener instrucciones sobre cómo hacerlo, consulte [Configuración de Microsoft Defender for Identity para realizar llamadas remotas a SAM](/defender-for-identity/install-step8-samr). 
 
-## <a name="next-steps"></a>Siguientes pasos
+## <a name="next-steps"></a>Pasos siguientes
 
 Paso 3 de 3: [Microsoft Defender for Identity piloto](eval-defender-identity-pilot.md)
 

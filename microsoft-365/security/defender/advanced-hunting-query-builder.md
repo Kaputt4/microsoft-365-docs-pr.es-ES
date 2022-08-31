@@ -4,7 +4,8 @@ description: Obtenga información sobre cómo crear consultas en modo guiado med
 keywords: modo guiado, búsqueda avanzada, búsqueda de amenazas, búsqueda de ciberamenazas, Microsoft 365 Defender, microsoft 365, m365, búsqueda, consulta, telemetría, detecciones personalizadas, esquema, kusto
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
-ms.prod: m365-security
+ms.service: microsoft-365-security
+ms.subservice: m365d
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -19,13 +20,12 @@ ms.collection:
 - M365-security-compliance
 - m365initiative-m365-defender
 ms.topic: conceptual
-ms.technology: m365d
-ms.openlocfilehash: 583e22a57d591176c0077cc9e6d2656c6802d05e
-ms.sourcegitcommit: 7374c7b013890744d74e5214f7f8d69ca7874466
+ms.openlocfilehash: 1ec67ba3dd912851425a06066dac0648418bf58e
+ms.sourcegitcommit: 10e6abe740e27000e223378eb17d657a47555fa8
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/23/2022
-ms.locfileid: "67406702"
+ms.lasthandoff: 08/31/2022
+ms.locfileid: "67475369"
 ---
 # <a name="build-hunting-queries-using-guided-mode-in-microsoft-365-defender"></a>Compilación de consultas de búsqueda mediante el modo guiado en Microsoft 365 Defender
 

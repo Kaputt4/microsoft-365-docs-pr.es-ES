@@ -18,12 +18,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Establezca los roles y permisos de usuario del Administrador de cumplimiento de Microsoft Purview y configure pruebas automatizadas de acciones. Administre el historial de usuarios y filtre la vista del panel.
-ms.openlocfilehash: 940396ad6334e646a37a359f4ed73345056f51ef
-ms.sourcegitcommit: 06b81b66f13774102bb34556479c1ff890011afb
+ms.openlocfilehash: 295ba35eeb454314adb364a0203b6d6c337c8ba8
+ms.sourcegitcommit: 10e6abe740e27000e223378eb17d657a47555fa8
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/16/2022
-ms.locfileid: "67357464"
+ms.lasthandoff: 08/31/2022
+ms.locfileid: "67467951"
 ---
 # <a name="get-started-with-compliance-manager"></a>Introducción al Administrador de cumplimiento
 
@@ -155,7 +155,7 @@ El administrador global de su organización puede cambiar la configuración de l
 
 ### <a name="manage-user-history"></a>Administrar el historial de usuarios
 
-La configuración **Administrar historial de usuarios** le ayuda a identificar rápidamente qué usuarios han trabajado con acciones de mejora en el Administrador de cumplimiento. Los datos de usuario identificables asociados a las acciones de mejora incluyen cualquier trabajo de implementación y pruebas realizado, los documentos que cargaron y las notas que escribieron. Comprender y recuperar este tipo de datos puede ser necesario para las propias necesidades de cumplimiento de su organización.
+La configuración **Administrar historial de usuarios** le ayuda a identificar rápidamente qué usuarios han trabajado con acciones de mejora en el Administrador de cumplimiento. Los datos de usuario identificables asociados a las acciones de mejora incluyen el estado de las acciones de mejora y los documentos que cargaron. Comprender y recuperar este tipo de datos puede ser necesario para las propias necesidades de cumplimiento de su organización.
 
 La configuración del historial de usuarios también le permite reasignar todas las acciones de mejora de un usuario a otro.
 

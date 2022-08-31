@@ -19,12 +19,12 @@ ms.collection:
 search.appverid:
 - MET150
 - MOE150
-ms.openlocfilehash: ccf46df1ecbe2fb2e55e461cc27a5b7af088e7b9
-ms.sourcegitcommit: 221212fff9737e0ea386755deb8fed62ae9c254b
+ms.openlocfilehash: af6b5af33ce6d10b66489f2d49ef5ed4ec1f9310
+ms.sourcegitcommit: 10e6abe740e27000e223378eb17d657a47555fa8
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/14/2022
-ms.locfileid: "66787460"
+ms.lasthandoff: 08/31/2022
+ms.locfileid: "67469215"
 ---
 # <a name="detect-channel-signals-with-communication-compliance"></a>Detección de señales de canal con cumplimiento de comunicaciones
 
@@ -41,7 +41,7 @@ Para chat privado y canales privados, las directivas de cumplimiento de comunica
 | **Compartir un canal con un equipo interno** | Las directivas de cumplimiento de comunicaciones se aplican a los usuarios en el ámbito y a todos los mensajes del canal compartido |
 | **Compartir un canal con un equipo externo** | Las directivas de cumplimiento de comunicaciones se aplican a los usuarios internos del ámbito y a los mensajes del canal compartido de la organización interna |
 
-Los datos adjuntos modernos son archivos procedentes de [sitios de OneDrive](/onedrive/plan-onedrive-enterprise#modern-attachments) o [SharePoint](/sharepoint/dev/solution-guidance/modern-experience-customizations) que se incluyen en los mensajes de Teams. El texto se extrae automáticamente de estos datos adjuntos para el procesamiento automatizado y posibles coincidencias con las condiciones y clasificadores de directivas de cumplimiento de comunicaciones activas. No hay ninguna configuración adicional necesaria para la detección y el procesamiento de datos adjuntos modernos. El texto solo se extrae para los datos adjuntos que coinciden con las condiciones de la directiva. El texto no se extrae para los datos adjuntos de los mensajes con coincidencias de directiva, incluso si los datos adjuntos también tienen una coincidencia de directiva.
+Los datos adjuntos modernos son archivos procedentes de [sitios de OneDrive](/onedrive/plan-onedrive-enterprise#modern-attachments) o [SharePoint](/sharepoint/dev/solution-guidance/modern-experience-customizations) que se incluyen en los mensajes de Teams. El texto se extrae automáticamente de estos datos adjuntos para el procesamiento automatizado y posibles coincidencias con las condiciones y clasificadores de directivas de cumplimiento de comunicaciones activas. No hay ninguna configuración adicional necesaria para la detección y el procesamiento de datos adjuntos modernos. El texto solo se extrae para los datos adjuntos que coinciden con las condiciones de la directiva en el momento en que se envió el mensaje. El texto no se extrae para los datos adjuntos de los mensajes con coincidencias de directiva, incluso si los datos adjuntos también tienen una coincidencia de directiva.
 
 El examen de datos adjuntos modernos es compatible con los siguientes tipos de archivo:
 

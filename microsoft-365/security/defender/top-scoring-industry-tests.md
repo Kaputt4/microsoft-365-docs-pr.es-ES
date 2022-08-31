@@ -3,7 +3,8 @@ title: 'Puntuaciones más altas en las pruebas del sector: Microsoft 365 Defende
 ms.reviewer: ''
 description: Vea las puntuaciones y análisis más recientes de Microsoft 365 Defender. Obtiene puntuaciones altas de forma consistente en pruebas independientes (AV-TEST, AV Comparatives, SE Labs, MITRE ATT&CK). Ver las puntuaciones y análisis más recientes.
 keywords: Antivirus de Microsoft Defender, Antivirus de Windows Defender, revisiones de av, prueba de antivirus, pruebas de av, puntuaciones av más recientes, puntuaciones de detección, pruebas de producto de seguridad, pruebas de seguridad del sector, pruebas de antivirus del sector, mejores antivirus, prueba av, comparativas de av, SE labs, MITRE ATT&CK, plataforma de protección de puntos de conexión, EPP, detección y respuesta de punto de conexión, EDR, Windows 10, Windows 11, Antivirus de Microsoft Defender, WDAV, Microsoft Defender para punto de conexión, Microsoft 365 Defender, seguridad, malware, av, antivirus, puntuaciones, puntuación, protección de nueva generación, clasificación, éxito
-ms.prod: m365-security
+ms.service: microsoft-365-security
+ms.subservice: m365d
 ms.mktglfcycl: secure
 ms.sitesec: library
 ms.localizationpriority: high
@@ -14,13 +15,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 search.appverid: met150
-ms.technology: m365d
-ms.openlocfilehash: a61590b614631b738198001a56e29096d4a7d957
-ms.sourcegitcommit: dd7e5b67ff4ae4e7f74490e437c1795933c74cc7
-ms.translationtype: HT
+ms.openlocfilehash: 02d996e9e2da6083b228a55bb4a173601a378dcb
+ms.sourcegitcommit: 10e6abe740e27000e223378eb17d657a47555fa8
+ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/08/2022
-ms.locfileid: "64731315"
+ms.lasthandoff: 08/31/2022
+ms.locfileid: "67474696"
 ---
 # <a name="top-scoring-in-industry-tests"></a>Puntuaciones más altas en las pruebas del sector
 

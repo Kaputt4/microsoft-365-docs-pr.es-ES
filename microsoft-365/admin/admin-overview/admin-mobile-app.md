@@ -26,12 +26,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Obtén la aplicación Administración de Microsoft 365, tu compañero de la Centro de administración de Microsoft 365 basada en web, para administrar tu organización en línea desde tu teléfono o tableta.
-ms.openlocfilehash: 6fcc6ceec6c7dcd7f5af3cb2bf0883b0bd1170a1
-ms.sourcegitcommit: 2f6a7410e9919f753a759c1ada441141e18f06fd
+ms.openlocfilehash: 8766098509a0c7cea22e177907b77199d6e6c690
+ms.sourcegitcommit: 10e6abe740e27000e223378eb17d657a47555fa8
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/30/2022
-ms.locfileid: "67084639"
+ms.lasthandoff: 08/31/2022
+ms.locfileid: "67469127"
 ---
 # <a name="about-the-microsoft-365-admin-mobile-app"></a>Acerca de la aplicación móvil Administración de Microsoft 365
 
@@ -77,9 +77,15 @@ Debe ser administrador de una organización de Microsoft 365 para usar la aplica
 
 [Google Play Store](https://play.google.com/store/apps/details?id=com.ms.office365admin&referrer=utm_source%3Ddocsaboutadminapp%26utm_campaign%25docsaboutadminapp).
 
-## <a name="frequently-asked-questions"></a>Preguntas frecuentes
+## <a name="frequently-asked-questions"></a>Preguntas más frecuentes
 
 A continuación, le mostramos las respuestas a algunas preguntas frecuentes.
+
+### <a name="does-the-admin-app-support-multi-tenant-billing-features"></a>¿La aplicación de administración admite características de facturación multiinquilino? 
+
+A la aplicación móvil de administración le faltan algunas características multiinquilino en las que el administrador autorizado puede ver los productos y licencias del inquilino en cuestión junto con los productos y licencias de los inquilinos asociados en una sola vista. 
+
+Esta característica aún no forma parte de Administración de Microsoft 365 aplicación móvil y estará disponible próximamente. Para obtener más información, los administradores pueden ir a la <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">Centro de administración de Microsoft 365</a>.  
   
 ### <a name="what-do-i-need-to-do-to-be-able-to-use-the-app"></a>¿Qué necesito hacer para poder usar la aplicación?
 
@@ -132,7 +138,7 @@ En el menú de navegación izquierdo, vaya a **Notificaciones de configuración*
 
 Email [feedback365@microsoft.com](mailto:feedback365@microsoft.com) para notificar un problema con la aplicación. O bien, puede enviar comentarios en la parte inferior de este artículo.
 
-## <a name="next-steps"></a>Siguientes pasos
+## <a name="next-steps"></a>Pasos siguientes
 
 Una vez que haya descargado el dispositivo móvil de administración, puede agregar usuarios para empezar.
   

@@ -4,7 +4,8 @@ description: Investigar la pérdida de datos en Microsoft 365 Defender.
 keywords: Prevención de pérdida de datos, incidentes, alertas, investigación, análisis, respuesta, correlación, ataque, máquinas, dispositivos, usuarios, identidades, identidad, buzón de correo electrónico, 365, microsoft, m365
 f1.keywords:
 - NOCSH
-ms.prod: m365-security
+ms.service: microsoft-365-security
+ms.subservice: m365d
 ms.author: dansimp
 author: dansimp
 ms.localizationpriority: medium
@@ -15,13 +16,12 @@ ms.collection:
 ms.topic: conceptual
 search.appverid:
 - MOE150
-ms.technology: m365d
-ms.openlocfilehash: b0f422175ae16bf1e3c6fb7138c235b79911e338
-ms.sourcegitcommit: 34910ea9318289d78c35b0e7990238467c05384b
+ms.openlocfilehash: 275a05db866de90eada1d948fff9fe559502d45f
+ms.sourcegitcommit: 10e6abe740e27000e223378eb17d657a47555fa8
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/10/2022
-ms.locfileid: "67306380"
+ms.lasthandoff: 08/31/2022
+ms.locfileid: "67474542"
 ---
 # <a name="investigate-data-loss-incidents-with-microsoft-365-defender"></a>Investigación de incidentes de pérdida de datos con Microsoft 365 Defender
 

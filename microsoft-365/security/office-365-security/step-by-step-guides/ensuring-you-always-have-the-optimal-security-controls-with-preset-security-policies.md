@@ -1,6 +1,6 @@
 ---
-title: Asegurarse de que siempre tiene los controles de seguridad óptimos con directivas de seguridad preestablecidas
-description: Los pasos para asegurarse de que siempre tiene los mejores controles de seguridad con directivas de seguridad preestablecidas. Las directivas preestablecidas permiten seleccionar un perfil de seguridad estándar o estricto. Microsoft administrará y mantendrá los controles de seguridad en Microsoft Defender para Office 365 automáticamente.
+title: Pasos para configurar rápidamente las directivas de seguridad preestablecidas estándar o estricta para Microsoft Defender para Office 365
+description: Paso a paso para configurar directivas de seguridad preestablecidas en Microsoft Defender para Office 365 para que tenga la seguridad recomendada por el producto. Las directivas preestablecidas establecen un perfil de seguridad *estándar* o *estricto*. Establézcalos y Microsoft Defender para Office 365 administrará y mantendrá estos controles de seguridad automáticamente.
 search.product: ''
 search.appverid: ''
 ms.prod: m365-security
@@ -17,25 +17,29 @@ audience: ITPro
 ms.collection: m365-guidance-templates
 ms.topic: how-to
 ms.technology: mdo
-ms.openlocfilehash: 383023ea03e9b1634664b3311e7f698ce946608b
-ms.sourcegitcommit: 7e551fa4e9b8b25ed62b5f406143b6b1dae08cbf
+ms.openlocfilehash: 095826d1633dddc55e055278d00148ce446a3719
+ms.sourcegitcommit: 10e6abe740e27000e223378eb17d657a47555fa8
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/01/2022
-ms.locfileid: "67107357"
+ms.lasthandoff: 08/31/2022
+ms.locfileid: "67482348"
 ---
-# <a name="ensuring-you-always-have-the-optimal-security-controls-with-preset-security-policies"></a>Asegurarse de que siempre tiene los controles de seguridad óptimos con directivas de seguridad preestablecidas
+# <a name="set-up-steps-for-the-standard-or-strict-preset-security-policies-in-microsoft-defender-for-office-365"></a>Configure los pasos para las directivas de seguridad preestablecidas estándar o estricta en Microsoft Defender para Office 365
 
-Las directivas de seguridad preestablecidas le permiten seleccionar un perfil de seguridad estándar o estricto, y hacer que Microsoft administre y mantenga los controles de seguridad en Microsoft Defender para Office 365 automáticamente.
+¿Microsoft Defender para Office 365 le proporcionó una manera de aplicar las directivas de seguridad que luego mantendría?
 
-A medida que se agregan nuevos controles o si la configuración de procedimientos recomendados para un control de seguridad cambia con el panorama de amenazas en constante evolución, Microsoft actualizará automáticamente la configuración de control de seguridad para los usuarios asignados a una directiva de seguridad preestablecida estándar o estricta. Mediante el uso de directivas de valores preestablecidos de seguridad, siempre tendrá la configuración recomendada y recomendada de Microsoft para los usuarios.
+¿Sabía que cuando cambia un procedimiento recomendado para un control de seguridad debido al panorama de amenazas en constante evolución, o a medida que se agregan nuevos controles, Microsoft actualiza *automáticamente* la configuración de control de seguridad para los usuarios asignados a una directiva de seguridad preestablecida *estándar* o *estricta* ?
+
+Mediante el uso de directivas de seguridad preestablecidas (*estándar* o *estricta*), siempre tendrá la *configuración recomendada y recomendada* de Microsoft para los usuarios.
+
+**Siga estos pasos** para aplicar directivas de seguridad preestablecidas y hacer que Microsoft Defender para Office 365 administre y mantenga los controles *de seguridad automáticamente*.
 
 ## <a name="what-you-will-need"></a>Lo que necesitará
 - Microsoft Defender para Office 365 plan 1 o superior (incluido en E5)
 - Permisos suficientes (rol administrador de seguridad)
 - 5 minutos para realizar los pasos siguientes.
 
-## <a name="choosing-between-standard-and-strict-policies"></a>Elección entre directivas estándar y estrictas
+## <a name="choose-between-standard-and-strict-policies"></a>Elegir entre directivas estándar y estrictas
 
 Nuestra directiva de seguridad preestablecida estricta tiene límites y configuraciones más agresivos para los controles de seguridad que darán lugar a detecciones más agresivas e implicarán al administrador en la toma de decisiones sobre qué correos electrónicos bloqueados se publican a los usuarios finales.
 
@@ -48,7 +52,7 @@ Nuestra directiva de seguridad preestablecida estricta tiene límites y configur
 > [!TIP]
 > Para obtener información sobre qué son las directivas de seguridad estándar y estricta, consulte este [artículo](../../office-365-security/recommended-settings-for-eop-and-office365.md).
 
-## <a name="enable-security-presets"></a>Habilitar valores preestablecidos de seguridad
+## <a name="enable-security-presets-in-microsoft-defender-for-office-365"></a>Habilitar valores preestablecidos de seguridad en Microsoft Defender para Office 365
 
 Una vez que haya elegido entre las directivas preestablecidas de seguridad estándar y estricta para los usuarios, se requieren algunos pasos adicionales para asignar usuarios a cada valor preestablecido.
 
@@ -60,21 +64,21 @@ Una vez que haya elegido entre las directivas preestablecidas de seguridad está
 1. Seleccione **Administrar** debajo del valor preestablecido Protección estándar.
 1. Seleccione **Todos los destinatarios** para aplicar Exchange Online Protection inquilino en todo el inquilino o seleccione **Destinatarios específicos a los** que agregar manualmente usuarios, grupos o dominios a los que desea aplicar la directiva de protección. Haga clic en el botón **Siguiente** .
 1. Seleccione **Todos los destinatarios** para aplicar Defender para Office 365 Protección en todo el inquilino o seleccione **Destinatarios específicos** para agregar manualmente usuarios, grupos o dominios a los que quiera aplicar la directiva de protección. Haga clic en el botón **Siguiente** .
-1. En la sección **Protección contra suplantación**, agregue direcciones de correo electrónico & dominios para protegerse frente a ataques de suplantación y, a continuación, agregue los remitentes y dominios de confianza a los que no quiera que se aplique la protección de suplantación y, a continuación, presione **Siguiente**.
-3. Haga clic en el botón **Confirmar** .
-4. Seleccione el vínculo **Administrar** en el valor preestablecido Protección estricta.
-5. Repita los pasos del 7 al 10 de nuevo, pero para los usuarios se debe aplicar una protección estricta. (si procede)
-7. Haga clic en el botón **Confirmar** .
+1. En la sección **Protección contra suplantación** , agregue direcciones de correo electrónico & dominios para protegerse frente a ataques de suplantación y, a continuación, agregue los remitentes y dominios de confianza a los que no quiera que se aplique la protección de suplantación y, a continuación, presione **Siguiente**.
+1. Haga clic en el botón **Confirmar** .
+1. Seleccione el vínculo **Administrar** en el valor preestablecido Protección estricta.
+1. Repita los pasos del 7 al 10 de nuevo, pero para los usuarios se debe aplicar una protección estricta. (si procede)
+1. Haga clic en el botón **Confirmar** .
 
 > [!TIP]
-> Para más información sobre las directivas preestablecidas, haga clic [aquí](../../office-365-security/preset-security-policies.md).
+> Para más información sobre las directivas preestablecidas, haga clic [aquí.](../../office-365-security/preset-security-policies.md)
 
-## <a name="next-steps"></a>Pasos siguientes
+## <a name="your-next-step-is-config-analyzer"></a>El siguiente paso es El analizador de configuración
 
 Use el analizador de configuración para determinar si los usuarios están configurados según los procedimientos recomendados de Microsoft.
 
 > [!TIP]
 > El analizador de configuración permite a los administradores buscar y corregir directivas de seguridad donde la configuración está por debajo de la configuración del perfil de protección estándar o estricta en las directivas de seguridad preestablecidas. Obtenga más información sobre el analizador de configuración [aquí](../../office-365-security/configuration-analyzer-for-security-policies.md).
 
-Los valores preestablecidos seguros siempre se sugieren porque garantiza que siempre está ejerciendo los procedimientos recomendados de Microsoft. Sin embargo, en algunos casos se requieren configuraciones personalizadas. Obtenga información sobre las directivas personalizadas [aquí](../../office-365-security/tenant-wide-setup-for-increased-security.md).
+Los valores preestablecidos seguros siempre se recomiendan porque *garantiza que los* administradores ejerzan los procedimientos recomendados de Microsoft. Sin embargo, en algunos casos se requieren configuraciones personalizadas. Obtenga información sobre las directivas personalizadas [aquí](../../office-365-security/tenant-wide-setup-for-increased-security.md).
 

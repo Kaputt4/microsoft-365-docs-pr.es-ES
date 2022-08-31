@@ -3,7 +3,8 @@ title: Paso 2. Corrección del primer incidente
 description: Cómo empezar a corregir el primer incidente en Microsoft 365 Defender.
 keywords: incidentes, alertas, investigación, correlación, ataque, máquinas, dispositivos, usuarios, identidades, identidad, buzón de correo electrónico, 365, microsoft, m365, respuesta a incidentes, ciberataque
 search.product: eADQiWindows 10XVcnh
-ms.prod: m365-security
+ms.service: microsoft-365-security
+ms.subservice: m365d
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -17,17 +18,17 @@ audience: ITPro
 ms.collection:
 - M365-security-compliance
 - m365solution-firstincident
+- highpri
 ms.topic: conceptual
 search.appverid:
 - MOE150
 - MET150
-ms.technology: m365d
-ms.openlocfilehash: f55cdc31dbf8a74395a232340cc8d273e9927dc0
-ms.sourcegitcommit: c1eaea74c8ffce2f9f477c9469342e88e4a70c14
+ms.openlocfilehash: 63c9e47f30e113a6b79e0b290d19b8fe9e9a6399
+ms.sourcegitcommit: 10e6abe740e27000e223378eb17d657a47555fa8
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/20/2022
-ms.locfileid: "66893549"
+ms.lasthandoff: 08/31/2022
+ms.locfileid: "67482304"
 ---
 # <a name="step-2-remediate-your-first-incident"></a>Paso 2. Corrección del primer incidente
 

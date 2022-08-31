@@ -3,7 +3,8 @@ title: Paso 6. Identificación de tareas de mantenimiento de SOC
 description: Identifique las tareas de mantenimiento de SOC al integrar Microsoft 365 Defender en las operaciones de seguridad.
 keywords: incidentes, alertas, investigación, correlación, ataque, dispositivos, usuarios, identidades, identidad, buzón, correo electrónico, 365, microsoft, m365, respuesta a incidentes, ciberataque, secops, operaciones de seguridad, soc
 search.product: eADQiWindows 10XVcnh
-ms.prod: m365-security
+ms.service: microsoft-365-security
+ms.subservice: m365d
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -21,13 +22,12 @@ ms.topic: conceptual
 search.appverid:
 - MOE150
 - MET150
-ms.technology: m365d
-ms.openlocfilehash: db30612de836cfac1279dba4aa3563ae71a6e269
-ms.sourcegitcommit: 48a75b40e607542e5fe219b6e75ffc757804a9c6
+ms.openlocfilehash: b066b248444dbd897e7c560ec58622787c5fed9a
+ms.sourcegitcommit: 10e6abe740e27000e223378eb17d657a47555fa8
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/16/2022
-ms.locfileid: "67343151"
+ms.lasthandoff: 08/31/2022
+ms.locfileid: "67482436"
 ---
 # <a name="step-6-identify-soc-maintenance-tasks"></a>Paso 6. Identificación de tareas de mantenimiento de SOC
 
@@ -51,6 +51,6 @@ Estas son las tareas periódicas o según sea necesario para mantener el SOC par
 
 Integre estas tareas en los procesos de SOC actuales.
 
-## <a name="next-steps"></a>Siguientes pasos
+## <a name="next-steps"></a>Pasos siguientes
 
 Debe revisar las guías a las que se hace referencia en este contenido y en la [biblioteca de Microsoft 365 Defender](/microsoft-365/security/defender) para determinar cómo se debe estructurar e integrar su propia implementación de Microsoft 365 Defender.

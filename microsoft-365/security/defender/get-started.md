@@ -5,7 +5,8 @@ description: Obtenga información sobre los pasos que debe seguir para empezar a
 keywords: introducción, microsoft 365 defender, activar, incorporar, implementar
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
-ms.prod: m365-security
+ms.service: microsoft-365-security
+ms.subservice: m365d
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -17,15 +18,15 @@ audience: ITPro
 ms.collection:
 - M365-security-compliance
 - m365solution-getstarted
+- highpri
 ms.custom: intro-get-started
 ms.topic: conceptual
-ms.technology: m365d
-ms.openlocfilehash: 7cc3a28062ffa052d42172adabb72443eb5b10bb
-ms.sourcegitcommit: c1eaea74c8ffce2f9f477c9469342e88e4a70c14
+ms.openlocfilehash: a4b9d0ad556f78fef0338de94a256cb13114dda2
+ms.sourcegitcommit: 10e6abe740e27000e223378eb17d657a47555fa8
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/20/2022
-ms.locfileid: "66893505"
+ms.lasthandoff: 08/31/2022
+ms.locfileid: "67483044"
 ---
 # <a name="get-started-with-microsoft-365-defender"></a>Introducción a Microsoft 365 Defender
 
@@ -62,6 +63,6 @@ Al activar Microsoft 365 Defender e implementar servicios, obtendrá acceso a la
 | Funcionalidad | Descripción |
 | ------ | ------ |
 | Microsoft Defender para punto de conexión | Conjunto de aplicaciones de Endpoint Protection basado en potentes sensores de comportamiento, análisis en la nube e inteligencia sobre amenazas |
-|Microsoft Defender para Office 365 | Protección avanzada para las aplicaciones y los datos en Office 365, incluidos el correo electrónico y otras herramientas de colaboración |
+|Microsoft Defender para Office 365 | Protección avanzada para las aplicaciones y los datos en Office 365, incluidos el correo electrónico y otras herramientas de colaboración |
 | Microsoft Defender for Identity | Defenderse de amenazas avanzadas, identidades en peligro y usuarios internos malintencionados mediante señales correlacionadas de Active Directory |
 | Microsoft Defender for Cloud Apps | Identificar y combatir las ciberamenazas en los servicios en la nube de Microsoft y de terceros |

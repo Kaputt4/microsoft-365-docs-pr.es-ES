@@ -20,13 +20,14 @@ ms.collection:
 - m365solution-identitydevice
 - m365solution-scenario
 - zerotrust-solution
+- highpri
 ms.technology: mdo
-ms.openlocfilehash: 1b3afc4988dc5d20a1c6c3e0b1a51c1ef1cf9987
-ms.sourcegitcommit: 61b22df76e0f81e5ef11c587b129287886151c79
+ms.openlocfilehash: 4a63855d25a7ace428fd3fd93e134f4a6ffcbce3
+ms.sourcegitcommit: 10e6abe740e27000e223378eb17d657a47555fa8
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/12/2022
-ms.locfileid: "66750174"
+ms.lasthandoff: 08/31/2022
+ms.locfileid: "67482877"
 ---
 # <a name="policy-recommendations-for-securing-email"></a>Recomendaciones de directivas para proteger el correo electrónico
 
@@ -107,7 +108,7 @@ Con Cifrado de mensajes de Microsoft Purview, que aprovecha las características
 
 Para obtener más información, vea [Configurar nuevas funcionalidades de cifrado de mensajes Office 365](../../compliance/set-up-new-message-encryption-capabilities.md).
 
-## <a name="next-steps"></a>Siguientes pasos
+## <a name="next-steps"></a>Pasos siguientes
 
 :::image type="content" source="../../media/microsoft-365-policies-configurations/identity-device-access-steps-next-step-4.png" alt-text="Directivas para aplicaciones en la nube de Microsoft 365" lightbox="../../media/microsoft-365-policies-configurations/identity-device-access-steps-next-step-4.png":::
 

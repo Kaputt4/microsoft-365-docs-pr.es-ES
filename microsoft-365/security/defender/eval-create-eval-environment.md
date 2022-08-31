@@ -3,7 +3,8 @@ title: Creación del entorno de evaluación de Microsoft 365 Defender para una m
 description: Obtenga información sobre lo que se incluye en el Microsoft 365 Defender XDR que evaluará y obtenga información sobre el laboratorio de prueba o el entorno piloto de Microsoft 365 Defender activando licencias de prueba. Inicie el recorrido de ciberseguridad de XDR aquí y aprenda a llevar esa prueba a producción.
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
-ms.prod: m365-security
+ms.service: microsoft-365-security
+ms.subservice: m365d
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -20,14 +21,14 @@ ms.collection:
 - m365solution-scenario
 - m365solution-evalutatemtp
 - zerotrust-solution
+- highpri
 ms.topic: how-to
-ms.technology: m365d
-ms.openlocfilehash: fb097532fe809fa1b1ec4c29a9a489bcb4ea2871
-ms.sourcegitcommit: 61b22df76e0f81e5ef11c587b129287886151c79
+ms.openlocfilehash: 31254fac4b56da65469fac56320440bfd0e487c3
+ms.sourcegitcommit: 10e6abe740e27000e223378eb17d657a47555fa8
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/12/2022
-ms.locfileid: "66747975"
+ms.lasthandoff: 08/31/2022
+ms.locfileid: "67470561"
 ---
 # <a name="step-1-create-the-microsoft-365-defender-evaluation-environment-for-greater-cyber-security"></a>Paso 1. Creación del entorno de evaluación de Microsoft 365 Defender para una mayor ciberseguridad
 

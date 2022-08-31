@@ -3,7 +3,8 @@ title: Microsoft Defender para Office 365 piloto, use la evaluación en el entor
 description: Pasos para probar la evaluación con grupos de usuarios activos y existentes con el fin de probar correctamente las características de Microsoft Defender para Office 365.
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
-ms.prod: m365-security
+ms.service: microsoft-365-security
+ms.subservice: m365d
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -20,15 +21,15 @@ ms.collection:
 - m365solution-scenario
 - m365solution-evalutatemtp
 - zerotrust-solution
+- highpri
 ms.custom: admindeeplinkEXCHANGE
 ms.topic: how-to
-ms.technology: m365d
-ms.openlocfilehash: fb246805ebf38cddfda6fe308d19e1dd1419531b
-ms.sourcegitcommit: 61b22df76e0f81e5ef11c587b129287886151c79
+ms.openlocfilehash: 9202923afc7e86e15a03b03e053e86590f4fae60
+ms.sourcegitcommit: 10e6abe740e27000e223378eb17d657a47555fa8
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/12/2022
-ms.locfileid: "66748811"
+ms.lasthandoff: 08/31/2022
+ms.locfileid: "67482700"
 ---
 # <a name="pilot-microsoft-defender-for-office-365"></a>Microsoft Defender para Office 365 piloto
 
@@ -91,7 +92,7 @@ Puede habilitar las directivas de protección de Defender para Office 365 y EOP 
 Estas son las [directivas de seguridad preestablecidas en EOP y Microsoft Defender para Office 365](../office-365-security/preset-security-policies.md) artículo que describe los pasos.
 
 1. Inicie sesión en el inquilino de Microsoft 365. Use una cuenta con acceso al portal de Microsoft 365 Defender, agregada al rol Administración de la organización en Office 365 o al rol Administrador de seguridad en Microsoft 365.
-2. En el menú de navegación, seleccione *Directivas & reglas* en Correo electrónico & colaboración.
+2. En el menú de navegación, seleccione *Directivas & reglas* en Colaboración Email &.
 
    :::image type="content" source="../../media/mdo-eval/5_mdo-eval-pilot-policies.png" alt-text=" El elemento de menú Directivas & reglas en el que se va a hacer clic" lightbox="../../media/mdo-eval/5_mdo-eval-pilot-policies.png":::
 
@@ -142,7 +143,7 @@ En la tabla siguiente se proporcionan referencias y más instrucciones para conf
 |Protección contra la suplantación de identidad|Proteja a los usuarios de los intentos de suplantación de identidad mediante la inteligencia suplantada y la información de inteligencia de suplantación de identidad.|[Configuración de la inteligencia de suplantación de identidad en Defender para Office 365](../office-365-security/learn-about-spoof-intelligence.md)|
 |Antispam|Proteja a los usuarios del correo no deseado de correo electrónico, incluidas las acciones que se realizarán si se detecta correo no deseado.|[Configuración de directivas contra correo no deseado en Defender para Office 365](../office-365-security/configure-your-spam-filter-policies.md)|
 |Anti-Phishing|Protección de los usuarios frente a ataques de suplantación de identidad (phishing) y configuración de sugerencias de seguridad en mensajes sospechosos|[Configurar directivas contra suplantación de identidad (phishing) en Defender para Office 365](../office-365-security/configure-mdo-anti-phishing-policies.md)|
-|Archivos adjuntos seguros|Proteja a los usuarios de contenido malintencionado en archivos y datos adjuntos de correo electrónico en SharePoint, OneDrive y Teams.|[Configuración de directivas de datos adjuntos seguros en Defender para Office 365](../office-365-security/set-up-safe-attachments-policies.md)|
+|Datos adjuntos seguros|Proteja a los usuarios de contenido malintencionado en archivos y datos adjuntos de correo electrónico en SharePoint, OneDrive y Teams.|[Configuración de directivas de datos adjuntos seguros en Defender para Office 365](../office-365-security/set-up-safe-attachments-policies.md)|
 |Vínculos seguros|Proteja a los usuarios de abrir y compartir vínculos malintencionados en mensajes de correo electrónico o aplicaciones de escritorio de Office.|[Configuración de directivas de vínculos seguros en Defender para Office 365](../office-365-security/set-up-safe-links-policies.md)|
 |
 
@@ -158,10 +159,10 @@ Ahora que el piloto está configurado y configurado, resulta útil familiarizars
 |---|---|---|
 |Explorador de amenazas|El Explorador de amenazas es una herramienta eficaz casi en tiempo real para ayudar a los equipos de operaciones de seguridad a investigar y responder a las amenazas y muestra información sobre el malware sospechoso y el phish en el correo electrónico y los archivos de Office 365, así como otras amenazas y riesgos de seguridad para su organización.|[Vistas en el explorador de amenazas y detecciones en tiempo real](../office-365-security/threat-explorer-views.md)|
 |Simulador de ataques|Puede usar el entrenamiento de simulación de ataques en el portal de Microsoft 365 Defender para ejecutar escenarios de ataque realistas en su organización, lo que le ayudará a identificar y encontrar usuarios vulnerables antes de que un ataque real afecte a su entorno.|[Introducción al uso de aprendizaje de simulación de ataques](../office-365-security/attack-simulation-training-get-started.md)|
-|Panel informes|En el menú de navegación izquierdo, haga clic en Informes y expanda el encabezado Correo electrónico & colaboración. Los informes de colaboración de correo electrónico & se tratan de detectar tendencias de seguridad, algunas de las cuales le permitirán realizar acciones (a través de botones como "Ir a envíos") y otras que mostrarán tendencias, como resumen de estado de flujo de correo, principales malware, detecciones de suplantación de identidad, usuarios en peligro, latencia de correo, vínculos seguros e informes de datos adjuntos seguros. Estas métricas se generan automáticamente.|[Ver informes](../office-365-security/view-email-security-reports.md)|
+|Panel informes|En el menú de navegación izquierdo, haga clic en Informes y expanda el encabezado Email & colaboración. Los informes de colaboración Email & se tratan de detectar tendencias de seguridad, algunas de las cuales le permitirán realizar acciones (a través de botones como "Ir a envíos") y otras que mostrarán tendencias, como resumen de estado de Flujo de correo, Top Malware, detecciones de suplantación de identidad, usuarios en peligro, latencia de correo, vínculos seguros e informes de datos adjuntos seguros. Estas métricas se generan automáticamente.|[Ver informes](../office-365-security/view-email-security-reports.md)|
 |
 
-## <a name="next-steps"></a>Siguientes pasos
+## <a name="next-steps"></a>Pasos siguientes
 
 [Microsoft Defender para punto de conexión](eval-defender-endpoint-overview.md)
 

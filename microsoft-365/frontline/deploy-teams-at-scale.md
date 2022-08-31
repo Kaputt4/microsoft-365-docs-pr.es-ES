@@ -16,12 +16,12 @@ ms.collection:
 appliesto:
 - Microsoft Teams
 - Microsoft 365 for frontline workers
-ms.openlocfilehash: 9a06b695d6e9cffe03ed2a42590c1489f3678056
-ms.sourcegitcommit: 6f565d9e0f91ebc76fd13d7005619531391ab5f9
+ms.openlocfilehash: e833def27e88a9f59c756bd769a09191e9b2dd5c
+ms.sourcegitcommit: 10e6abe740e27000e223378eb17d657a47555fa8
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/25/2022
-ms.locfileid: "67439594"
+ms.lasthandoff: 08/31/2022
+ms.locfileid: "67467391"
 ---
 # <a name="deploy-teams-at-scale-for-frontline-workers-in-microsoft-teams"></a>Implementar equipos a escala para los trabajadores de primera línea en Microsoft Teams
 
@@ -143,7 +143,7 @@ Use el ```New-CsBatchTeamsDeployment``` cmdlet para enviar un lote de equipos pa
     Get-Command -Module MicrosoftTeams
     ```
 
-    Compruebe que ```New-CsBatchTeamsDeployment``` y ```Get-CsBatchTeamsDeployment``` aparecen en la lista.
+    Compruebe que ```New-CsBatchTeamsDeployment``` y ```Get-CsBatchTeamsDeploymentStatus``` aparecen en la lista.
 
 1. Ejecute lo siguiente para implementar un lote de equipos. En este comando, especificará la ruta de acceso a los archivos CSV y las direcciones de correo electrónico de hasta cinco destinatarios para notificar sobre esta implementación.
 
@@ -162,7 +162,7 @@ Use el ```New-CsBatchTeamsDeployment``` cmdlet para enviar un lote de equipos pa
 1. Ejecute lo siguiente para comprobar el estado del lote que envió.
 
     ```powershell
-    Get-CsBatchTeamsDeployment -OrchestrationId "OrchestrationId"
+    Get-CsBatchTeamsDeploymentStatus -OrchestrationId "OrchestrationId"
     ```
 
 ## <a name="send-us-feedback"></a>Enviarnos comentarios

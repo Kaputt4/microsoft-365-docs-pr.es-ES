@@ -3,7 +3,8 @@ title: Revisión de los requisitos de arquitectura de Microsoft Defender para pu
 description: El diagrama técnico de Microsoft Defender para punto de conexión en Microsoft 365 Defender le ayudará a comprender la identidad en Microsoft 365 antes de compilar el laboratorio de prueba o el entorno piloto.
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
-ms.prod: m365-security
+ms.service: microsoft-365-security
+ms.subservice: m365d
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -20,14 +21,14 @@ ms.collection:
 - m365solution-scenario
 - m365solution-evalutatemtp
 - zerotrust-solution
+- highpri
 ms.topic: conceptual
-ms.technology: m365d
-ms.openlocfilehash: 5197acd8ceb3a2dea7c03b0ef076bca5dc9138dd
-ms.sourcegitcommit: 61b22df76e0f81e5ef11c587b129287886151c79
+ms.openlocfilehash: 5a446047168394fd8506f2aaed911ce3af284f10
+ms.sourcegitcommit: 10e6abe740e27000e223378eb17d657a47555fa8
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/12/2022
-ms.locfileid: "66749141"
+ms.lasthandoff: 08/31/2022
+ms.locfileid: "67467973"
 ---
 # <a name="review-microsoft-defender-for-endpoint-architecture-requirements-and-key-concepts"></a>Revisión de los requisitos de arquitectura de Microsoft Defender para punto de conexión y los conceptos clave
 
@@ -52,7 +53,7 @@ Llamada | Descripción
 1 | Los dispositivos se abordan a través de una de las herramientas de administración admitidas. 
 2 | Los dispositivos integrados proporcionan y responden a Microsoft Defender para punto de conexión datos de señal.
 3 | Los dispositivos administrados se unen o se inscriben en Azure Active Directory.
-4  | Los dispositivos Windows unidos a un dominio se sincronizan con Azure Active Directory mediante Azure Active Directory Connect.
+4 | Los dispositivos Windows unidos a un dominio se sincronizan con Azure Active Directory mediante Azure Active Directory Connect.
 5 | Microsoft Defender para punto de conexión alertas, investigaciones y respuestas se administran en Microsoft 365 Defender.
 
 ## <a name="understand-key-concepts"></a>Descripción de los conceptos clave
@@ -79,7 +80,7 @@ Puede integrar Microsoft Defender para punto de conexión con Microsoft Sentinel
 Microsoft Defender para punto de conexión también se pueden integrar en otras soluciones de administración de eventos e información de seguridad (SIEM). Para obtener más información, consulte [Habilitación de la integración siem en Microsoft Defender para punto de conexión](/microsoft-365/security/defender-endpoint/enable-siem-integration).
 
 
-## <a name="next-steps"></a>Siguientes pasos
+## <a name="next-steps"></a>Pasos siguientes
 [Habilitar la evaluación](eval-defender-endpoint-enable-eval.md)
 
 Vuelva a la introducción para [Evaluar Microsoft Defender para punto de conexión](eval-defender-endpoint-overview.md)

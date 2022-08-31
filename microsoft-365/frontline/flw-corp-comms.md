@@ -21,12 +21,12 @@ searchScope:
 appliesto:
 - Microsoft Teams
 - Microsoft 365 for frontline workers
-ms.openlocfilehash: 28273f2445784ea269364f62a49bdc6ba871b960
-ms.sourcegitcommit: d09eb780dc41a01796eb8137fbe9267231af6746
+ms.openlocfilehash: ff0abacf0961bf1df7751ca3e1fca8293902887c
+ms.sourcegitcommit: 10e6abe740e27000e223378eb17d657a47555fa8
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/19/2022
-ms.locfileid: "67388279"
+ms.lasthandoff: 08/31/2022
+ms.locfileid: "67474081"
 ---
 # <a name="corporate-communications-with-frontline-workers"></a>Comunicaciones corporativas con trabajadores de primera línea
 
@@ -36,11 +36,9 @@ Mantenga a su equipo de primera línea conectado con su organización mediante Y
 
 Interactúe con los trabajadores e infórmelos con Conexiones Viva. Conexiones Viva crea un centro en Teams en el que el equipo de primera línea puede ver una fuente de noticias personalizada de su organización y un panel personalizado con los recursos que necesita. Cuando los empleados usan Conexiones Viva, pueden obtener información importante más rápidamente, lo que significa que los administradores no tienen que dedicar tiempo valioso a retransmitir actualizaciones. Información clave, noticias personalizadas, tareas, anuncios y otros recursos de Surface en el panel de Conexiones Viva. Por ejemplo, un minorista podría compartir anuncios de nuevos productos y promociones con sus asociados de la tienda, o un coordinador de la recaudación de fondos para una ONG podría compartir objetivos trimestrales con voluntarios.
 
-
 | Vista de un trabajador minorista  |Vista de un administrador comercial                  | 
 | :------------------- | :------------------- |
 | ![Captura de pantalla del panel de Conexiones Viva en un dispositivo móvil que muestra información para un trabajador minorista.](media/frontline-worker-1.png)  | ![Captura de pantalla del panel de Conexiones Viva en un dispositivo móvil que muestra información de un administrador comercial.](media/frontline-worker-2.png) | 
-
 
 Obtenga más información sobre [Conexiones Viva](/sharepoint/viva-connections-overview) y ayude a sus empleados y asociados a empezar a usar [Conexiones Viva en Microsoft Teams](https://support.microsoft.com/office/your-intranet-is-now-in-microsoft-teams-8b4e7f76-f305-49a9-b6d2-09378476f95b).
 

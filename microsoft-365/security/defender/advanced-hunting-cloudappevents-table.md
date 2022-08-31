@@ -4,7 +4,8 @@ description: Obtenga información sobre los eventos de aplicaciones y servicios 
 keywords: búsqueda avanzada, búsqueda de amenazas, búsqueda de amenazas cibernética, Microsoft 365 Defender, microsoft 365, m365, búsqueda, consulta, telemetría, referencia de esquema, kusto, tabla, columna, tipo de datos, descripción, CloudAppEvents, Defender for Cloud Apps
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
-ms.prod: m365-security
+ms.service: microsoft-365-security
+ms.subservice: m365d
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -17,13 +18,12 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
-ms.technology: m365d
-ms.openlocfilehash: 77b4ebd42a8c105340d6d965380aa42b64ae6734
-ms.sourcegitcommit: 85ce5fd0698b6f00ea1ea189634588d00ea13508
+ms.openlocfilehash: 8892a672cb9fc77b4cf606f32581c1928decc45f
+ms.sourcegitcommit: 10e6abe740e27000e223378eb17d657a47555fa8
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/06/2022
-ms.locfileid: "64664972"
+ms.lasthandoff: 08/31/2022
+ms.locfileid: "67470151"
 ---
 # <a name="cloudappevents"></a>CloudAppEvents
 
@@ -46,7 +46,7 @@ Para obtener información sobre otras tablas del esquema de búsqueda avanzada, 
 | `Application` | `string` | Aplicación que realizó la acción registrada |
 | `ApplicationId` | `string` | Identificador único de la aplicación |
 | `AccountObjectId` | `string` | Identificador único de la cuenta en Azure Active Directory |
-| `AccountId` | `string` | Identificador de la cuenta tal como lo encuentra Microsoft Defender for Cloud Apps. Podría ser Azure Active Directory identificador, nombre principal de usuario u otros identificadores. |
+| `AccountId` | `string` | Identificador de la cuenta tal como lo encuentra Microsoft Defender for Cloud Apps. Puede ser el identificador de Azure Active Directory, el nombre principal de usuario u otros identificadores. |
 | `AccountDisplayName` | `string` | Nombre del usuario de la cuenta que se muestra en la libreta de direcciones. Normalmente, una combinación de un nombre determinado o de nombre, una iniciación intermedia y un apellido o apellido. |
 | `IsAdminOperation` | `string` | Indica si la actividad la realizó un administrador |
 | `DeviceType` | `string` | Tipo de dispositivo basado en el propósito y la funcionalidad, como "Dispositivo de red", "Estación de trabajo", "Servidor", "Móvil", "Consola de juegos" o "Impresora" |
@@ -65,7 +65,7 @@ Para obtener información sobre otras tablas del esquema de búsqueda avanzada, 
 | `ReportId` | `string` | Identificador único del evento |
 | `RawEventData` | `string` | Información de eventos sin formato de la aplicación o servicio de origen en formato JSON |
 | `AdditionalFields` | `dynamic` | Información adicional sobre la entidad o el evento |
-| `AccountType` | `string` | Tipo de cuenta de usuario, que indica su rol general y sus niveles de acceso, como Normal, Sistema, Administrador, DcAdmin, Sistema, Aplicación |
+| `AccountType` | `string` | Tipo de cuenta de usuario, que indica su rol general y sus niveles de acceso, como Regular, System, Administración, DcAdmin, System, Application |
 | `IsExternalUser` | `boolean` | Indica si un usuario dentro de la red no pertenece al dominio de la organización |
 | `IsImpersonated` | `boolean` | Indica si un usuario realizó la actividad para otro usuario (suplantado) |
 | `IPTags` | `dynamic` | Información definida por el cliente aplicada a direcciones IP específicas e intervalos de direcciones IP |

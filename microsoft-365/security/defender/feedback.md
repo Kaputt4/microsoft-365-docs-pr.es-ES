@@ -1,9 +1,10 @@
 ---
 title: Proporcionar comentarios sobre Microsoft 365 Defender
-description: Proporcionar comentarios sobre los productos Microsoft 365 Defender
-keywords: comentarios, seguridad m365, seguridad, 365, capacidades
+description: Proporcionar comentarios sobre el producto sobre Microsoft 365 Defender
+keywords: feedback, m365 security, security, 365, capabilities
 search.product: eADQiWindows 10XVcnh
-ms.prod: m365-security
+ms.service: microsoft-365-security
+ms.subservice: m365d
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -19,13 +20,12 @@ ms.topic: conceptual
 search.appverid:
 - MOE150
 - MET150
-ms.technology: m365d
-ms.openlocfilehash: 2843406c934ab95587ba07e3f897a3055562d9e1
-ms.sourcegitcommit: 3b8e009ea1ce928505b8fc3b8926021fb91155f3
+ms.openlocfilehash: de30ac89e0bf4f39ba7114adac7ad0a24bbf4a18
+ms.sourcegitcommit: 10e6abe740e27000e223378eb17d657a47555fa8
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/28/2022
-ms.locfileid: "64501253"
+ms.lasthandoff: 08/31/2022
+ms.locfileid: "67468755"
 ---
 # <a name="provide-feedback-on-microsoft-365-defender"></a>Proporcionar comentarios sobre Microsoft 365 Defender
 
@@ -35,17 +35,17 @@ ms.locfileid: "64501253"
 **Se aplica a:**
 - Microsoft 365 Defender
 
-Sus comentarios nos ayudan a mejorar la protección del entorno frente a ataques avanzados. Comparta su experiencia, impresiones y solicitudes proporcionando comentarios.
+Sus comentarios nos ayudan a mejorar la protección de su entorno frente a ataques avanzados. Comparta su experiencia, impresiones y solicitudes proporcionando comentarios.
 
-Echa un vistazo a este vídeo para ver lo fácil que es proporcionar comentarios.
+Consulte este vídeo para ver lo fácil que es proporcionar comentarios.
 
 > [!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RE4LWeP]
 
 
-1. En cualquier parte del portal, seleccione **Enviar comentarios**. 
+1. En cualquier parte del portal, seleccione **Dar comentarios**. 
 
-    :::image type="content" source="../../media/feedback.png" alt-text="Los incidentes en el portal de Microsoft 365 seguridad" lightbox="../../media/feedback.png":::   
+    :::image type="content" source="../../media/feedback.png" alt-text="Los incidentes en el portal de seguridad de Microsoft 365" lightbox="../../media/feedback.png":::   
  
-2. Califica tu experiencia y proporciona detalles sobre lo que te ha gustado o dónde se puede mejorar. También puede elegir que se le contacte sobre los comentarios. 
+2. Valore su experiencia y proporcione detalles sobre lo que le gustó o dónde se puede realizar la mejora. También puede optar por ser contactado sobre los comentarios. 
 
 3. Seleccione **Enviar**.

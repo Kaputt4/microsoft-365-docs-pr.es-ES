@@ -1,9 +1,9 @@
 ---
-title: Configuración de notificaciones de Antivirus de Microsoft Defender
-description: Obtenga información sobre cómo configurar y personalizar las notificaciones estándar y otras Antivirus de Microsoft Defender en los puntos de conexión.
+title: Configuración de notificaciones del Antivirus de Microsoft Defender
+description: Obtenga información sobre cómo configurar y personalizar las notificaciones estándar y otras notificaciones del Antivirus de Microsoft Defender en los puntos de conexión.
 keywords: notificaciones, defender, antivirus, punto de conexión, administración, administrador
-ms.prod: m365-security
-ms.technology: mde
+ms.service: microsoft-365-security
+ms.subservice: mde
 ms.mktglfcycl: manage
 ms.sitesec: library
 ms.pagetype: security
@@ -16,14 +16,14 @@ ms.date: 10/18/2021
 ms.reviewer: ''
 manager: dansimp
 ms.collection: M365-security-compliance
-ms.openlocfilehash: 6c9dfd603a128de4a94c9cf49faa6ba9ca940d9b
-ms.sourcegitcommit: ebbe8713297675db5dcb3e0d9c3ae5e746b99196
+ms.openlocfilehash: af6889be3f64d45f7a7237453e2050664de301bf
+ms.sourcegitcommit: 10e6abe740e27000e223378eb17d657a47555fa8
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/14/2022
-ms.locfileid: "65418190"
+ms.lasthandoff: 08/31/2022
+ms.locfileid: "67473257"
 ---
-# <a name="configure-microsoft-defender-antivirus-notifications-that-appear-on-endpoints"></a>Configuración Antivirus de Microsoft Defender notificaciones que aparecen en los puntos de conexión
+# <a name="configure-microsoft-defender-antivirus-notifications-that-appear-on-endpoints"></a>Configuración de notificaciones del Antivirus de Microsoft Defender que aparecen en puntos de conexión
 
 **Se aplica a:**
 
@@ -34,7 +34,7 @@ ms.locfileid: "65418190"
 **Plataformas**
 - Windows
 
-En Windows 10 y Windows 11, las notificaciones de aplicación sobre la detección y corrección de malware son más sólidas, coherentes y concisas. Antivirus de Microsoft Defender las notificaciones aparecen en los puntos de conexión cuando se completan los exámenes y se detectan amenazas. Las notificaciones siguen los exámenes programados y desencadenados manualmente. Estas notificaciones también aparecen en el **Centro de notificaciones** y aparecen un resumen de exámenes y detecciones de amenazas a intervalos de tiempo regulares.
+En Windows 10 y Windows 11, las notificaciones de aplicación sobre la detección y corrección de malware son más sólidas, coherentes y concisas. Las notificaciones del Antivirus de Microsoft Defender aparecen en los puntos de conexión cuando se completan los exámenes y se detectan amenazas. Las notificaciones siguen los exámenes programados y desencadenados manualmente. Estas notificaciones también aparecen en el **Centro de notificaciones** y aparecen un resumen de exámenes y detecciones de amenazas a intervalos de tiempo regulares.
 
 Si forma parte del equipo de seguridad de su organización, puede configurar cómo aparecen las notificaciones en los puntos de conexión, como las notificaciones que solicitan un reinicio del sistema o que indican que se ha detectado y corregido una amenaza.
 
@@ -43,7 +43,7 @@ Si forma parte del equipo de seguridad de su organización, puede configurar có
 Puede configurar la visualización de notificaciones adicionales, como resúmenes de detección de amenazas recientes, en la [aplicación Seguridad de Windows](microsoft-defender-security-center-antivirus.md) y con directiva de grupo.
 
 > [!NOTE]
-> En Windows 10, la versión 1607 la característica se **denominaba Notificaciones mejoradas** y se configuraba en **Windows Configuración** \> Windows Defender de **seguridad** \> update &. En directiva de grupo configuración para todas las versiones de Windows 10 y Windows 11, la característica de notificación se denomina **Notificaciones mejoradas**.
+> En Windows 10, versión 1607, la característica se **denominaba Notificaciones mejoradas** y se configuraba en **Windows Settings** \> **Update & Windows Defender de seguridad**\>. En directiva de grupo configuración para todas las versiones de Windows 10 y Windows 11, la característica de notificación se denomina **Notificaciones mejoradas**.
 
 ### <a name="use-group-policy-to-disable-additional-notifications"></a>Uso de directiva de grupo para deshabilitar notificaciones adicionales
 
@@ -55,7 +55,7 @@ Puede configurar la visualización de notificaciones adicionales, como resúmene
 
 4. Seleccione **Plantillas administrativas**.
 
-5. Expanda el árbol para **Windows componentes** \> **Antivirus de Microsoft Defender** >  **Reporting**.
+5. Expanda el árbol a **componentes** \> de Windows Informes **del Antivirus** > **de** Microsoft Defender.
 
 6. Haga doble clic en **Desactivar notificaciones mejoradas** y establezca la opción **en Habilitado**. A continuación, seleccione **Aceptar**. Esto impedirá que aparezcan notificaciones adicionales.
 
@@ -83,7 +83,7 @@ Puede usar directiva de grupo para:
 - Ocultar todas las notificaciones en puntos de conexión
 - Ocultar notificaciones de reinicio en puntos de conexión
 
-Ocultar notificaciones puede ser útil en situaciones en las que no se puede ocultar toda la interfaz de Antivirus de Microsoft Defender. Consulte [Impedir que los usuarios vean o interactúen con la interfaz de usuario de Antivirus de Microsoft Defender](prevent-end-user-interaction-microsoft-defender-antivirus.md) para obtener más información. La ocultación de notificaciones solo se producirá en los puntos de conexión en los que se ha implementado la directiva. Las notificaciones relacionadas con las acciones que se deben realizar (como un reinicio) seguirán apareciendo en el [panel de supervisión y los informes de Microsoft Endpoint Manager Endpoint Protection](/configmgr/protect/deploy-use/monitor-endpoint-protection). 
+Ocultar notificaciones puede ser útil en situaciones en las que no se puede ocultar toda la interfaz del Antivirus de Microsoft Defender. Consulte [Impedir que los usuarios vean o interactúen con la interfaz de usuario del Antivirus de Microsoft Defender](prevent-end-user-interaction-microsoft-defender-antivirus.md) para obtener más información. La ocultación de notificaciones solo se producirá en los puntos de conexión en los que se ha implementado la directiva. Las notificaciones relacionadas con las acciones que se deben realizar (como un reinicio) seguirán apareciendo en el [panel e informes de supervisión de Microsoft Endpoint Manager Endpoint Protection](/configmgr/protect/deploy-use/monitor-endpoint-protection). 
 
 Para agregar información de contacto personalizada a las notificaciones de punto de conexión, consulte [Personalización de la aplicación de Seguridad de Windows para su organización](/windows/security/threat-protection/windows-defender-security-center/windows-defender-security-center).
 
@@ -95,7 +95,7 @@ Para agregar información de contacto personalizada a las notificaciones de punt
 
 3. En el **Editor de administración de directiva de grupo**, vaya a **Configuración del equipo** y, a continuación, seleccione **Plantillas administrativas**.
 
-4. Expanda el árbol para **Windows componentes** \> **Antivirus de Microsoft Defender** \> **interfaz de cliente**. 
+4. Expanda el árbol a **componentes** \> de Windows Interfaz **de cliente** **del Antivirus de** \> Microsoft Defender. 
 
 5. Haga doble clic en **Suprimir todas las notificaciones** y establezca la opción **en Habilitado**. 
 
@@ -111,14 +111,14 @@ Para agregar información de contacto personalizada a las notificaciones de punt
 
 3. Haga clic en **Plantillas administrativas**.
 
-4. Expanda el árbol para **Windows componentes** \> **Antivirus de Microsoft Defender** \> **interfaz de cliente**.
+4. Expanda el árbol a **componentes** \> de Windows Interfaz **de cliente** **del Antivirus de** \> Microsoft Defender.
 
 5. Haga doble clic en **Suprimir notificaciones de reinicio** y establezca la opción **en Habilitado**. 
 
 5. Seleccione **Aceptar**. Esto impedirá que aparezcan notificaciones adicionales.
 
 > [!TIP]
-> Si busca información relacionada con antivirus para otras plataformas, consulte:
+> Si busca información relacionada con el antivirus para otras plataformas, consulte:
 > - [Establecer las preferencias para Microsoft Defender para punto de conexión en macOS](mac-preferences.md)
 > - [Microsoft Defender para punto de conexión en Mac](microsoft-defender-endpoint-mac.md)
 > - [Configuración de las directivas de antivirus de macOS para Antivirus de Microsoft Defender para Intune](/mem/intune/protect/antivirus-microsoft-defender-settings-macos)

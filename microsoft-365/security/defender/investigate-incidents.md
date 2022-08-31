@@ -2,7 +2,8 @@
 title: Investigar incidentes con Microsoft 365 Defender
 description: Investigue los incidentes relacionados con dispositivos, usuarios y buzones.
 keywords: incident, incidents, analyze, response, machines, devices, users, identities, mail, email, mailbox, investigation, graph, evidence
-ms.prod: m365-security
+ms.service: microsoft-365-security
+ms.subservice: m365d
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -18,13 +19,12 @@ ms.collection:
 ms.topic: conceptual
 search.appverid:
 - MOE150
-ms.technology: m365d
-ms.openlocfilehash: 92a2d49e68bcf138e99264ac5f7a1392e23d61b6
-ms.sourcegitcommit: d09eb780dc41a01796eb8137fbe9267231af6746
+ms.openlocfilehash: f4349df98ea54bd960506c8812fe180bdd9aad18
+ms.sourcegitcommit: 10e6abe740e27000e223378eb17d657a47555fa8
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/19/2022
-ms.locfileid: "67388515"
+ms.lasthandoff: 08/31/2022
+ms.locfileid: "67482921"
 ---
 # <a name="investigate-incidents-in-microsoft-365-defender"></a>Investigar incidentes con Microsoft 365 Defender
 
@@ -191,7 +191,7 @@ En la pestaña **Gráfico** , puede hacer lo siguiente:
  
    :::image type="content" source="../../media/investigate-incidents/incident-graph-alert.png" alt-text="Un resaltado de alerta en la página de Graph" lightbox="../../media/investigate-incidents/incident-graph-alert.png":::
 
-## <a name="next-steps"></a>Siguientes pasos
+## <a name="next-steps"></a>Pasos siguientes
 
 Según sea necesario:
 

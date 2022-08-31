@@ -4,7 +4,8 @@ description: Seguimiento y revisión de tablas y columnas de cambios de nomencla
 keywords: búsqueda avanzada, búsqueda de amenazas, búsqueda de amenazas cibernética, Microsoft 365 Defender, microsoft 365, m365, búsqueda, consulta, telemetría, referencia de esquema, kusto, tabla, datos, cambios de nomenclatura, cambio de nombre
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
-ms.prod: m365-security
+ms.service: microsoft-365-security
+ms.subservice: m365d
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -17,13 +18,12 @@ manager: dansimp
 audience: ITPro
 ms.collection: m365-security-compliance
 ms.topic: article
-ms.technology: m365d
-ms.openlocfilehash: 4e58bb3d8c8cc7c507c4136abcabeb7e42b6827d
-ms.sourcegitcommit: 1ef176c79a0e6dbb51834fe30807409d4e94847c
+ms.openlocfilehash: 12653741e10eaba0e8a658e24d3001e16af4e5d5
+ms.sourcegitcommit: 10e6abe740e27000e223378eb17d657a47555fa8
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/19/2021
-ms.locfileid: "64731513"
+ms.lasthandoff: 08/31/2022
+ms.locfileid: "67482524"
 ---
 # <a name="advanced-hunting-schema---naming-changes"></a>Esquema de búsqueda avanzada: cambios de nomenclatura
 
@@ -37,9 +37,9 @@ ms.locfileid: "64731513"
 
 El [esquema de búsqueda avanzada](advanced-hunting-schema-tables.md) se actualiza periódicamente para agregar nuevas tablas y columnas. En algunos casos, se cambia el nombre de las columnas existentes o se reemplazan para mejorar la experiencia del usuario. Consulte este artículo para revisar los cambios de nomenclatura que podrían afectar a las consultas.
 
-Los cambios de nomenclatura se aplican automáticamente a las consultas que se guardan en el Defender for Cloud, incluidas las consultas usadas por las reglas de detección personalizadas. No es necesario actualizar estas consultas manualmente. Sin embargo, deberá actualizar las siguientes consultas:
+Los cambios de nomenclatura se aplican automáticamente a las consultas que se guardan en Defender for Cloud, incluidas las consultas que usan las reglas de detección personalizadas. No es necesario actualizar estas consultas manualmente. Sin embargo, deberá actualizar las siguientes consultas:
 - Consultas que se ejecutan mediante la API
-- Consultas que se guardan en otro lugar fuera de la Defender for Cloud
+- Consultas que se guardan en otro lugar fuera de Defender for Cloud
 
 ## <a name="december-2020"></a>Diciembre de 2020
 
@@ -54,12 +54,12 @@ Los cambios de nomenclatura se aplican automáticamente a las consultas que se g
 | Nombre de columna | Nombre del valor original | Nuevo nombre de valor | Motivo del cambio
 |--|--|--|--|
 | `DetectionSource` | Defender for Cloud Apps | Microsoft Defender for Cloud Apps | Rebranding |
-| `DetectionSource` | WindowsDefenderAtp| EDR| Rebranding |
+| `DetectionSource` | WindowsDefenderAtp| Edr| Rebranding |
 | `DetectionSource` | WindowsDefenderAv | Antivirus | Rebranding |
 | `DetectionSource` | WindowsDefenderSmartScreen |  SmartScreen | Rebranding |
 | `DetectionSource` | CustomerTI | TI personalizado | Rebranding |
-| `DetectionSource` | OfficeATP | Microsoft Defender para Office 365 | Rebranding |
-| `DetectionSource` | MTP | Microsoft 365 Defender | Rebranding |
+| `DetectionSource` | OfficeATP | Microsoft Defender para Office 365 | Rebranding |
+| `DetectionSource` | Mtp | Microsoft 365 Defender | Rebranding |
 | `DetectionSource` | AzureATP | Microsoft Defender for Identity | Rebranding |
 | `DetectionSource` | CustomDetection | Detección personalizada | Rebranding |
 | `DetectionSource` | AutomatedInvestigation |Investigación automatizada | Rebranding |
@@ -67,7 +67,7 @@ Los cambios de nomenclatura se aplican automáticamente a las consultas que se g
 | `DetectionSource` | TI de terceros | Sensores de terceros | Rebranding |
 | `ServiceSource` | ATP de Microsoft Defender| Microsoft Defender para punto de conexión | Rebranding |
 |`ServiceSource` |Protección contra amenazas de Microsoft | Microsoft 365 Defender | Rebranding |
-| `ServiceSource` | ATP de Office 365 |Microsoft Defender para Office 365 | Rebranding |
+| `ServiceSource` | ATP de Office 365 |Microsoft Defender para Office 365 | Rebranding |
 | `ServiceSource` |Azure ATP |Microsoft Defender for Identity | Rebranding |
 
 `DetectionSource` está disponible en la tabla [AlertInfo](advanced-hunting-alertinfo-table.md) . `ServiceSource` está disponible en las tablas [AlertEvidence](advanced-hunting-alertevidence-table.md) y [AlertInfo](advanced-hunting-alertinfo-table.md) . 

@@ -3,7 +3,8 @@ title: Paso 5. Desarrollar y probar casos de uso
 description: Los conceptos básicos de desarrollo y pruebas de casos de uso al integrar Microsoft 365 Defender en las operaciones de seguridad.
 keywords: incidentes, alertas, investigación, correlación, ataque, dispositivos, usuarios, identidades, identidad, buzón, correo electrónico, 365, microsoft, m365, respuesta a incidentes, ciberataque, secops, operaciones de seguridad, soc
 search.product: eADQiWindows 10XVcnh
-ms.prod: m365-security
+ms.service: microsoft-365-security
+ms.subservice: m365d
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -21,13 +22,12 @@ ms.topic: conceptual
 search.appverid:
 - MOE150
 - MET150
-ms.technology: m365d
-ms.openlocfilehash: 2df6e5a989ff46359d685cca3859aaf759280bef
-ms.sourcegitcommit: 217108c59be41b01963a393b4f16d137636fe6a8
+ms.openlocfilehash: c4caee1bd0904cecd941789e891b93a378080eed
+ms.sourcegitcommit: 10e6abe740e27000e223378eb17d657a47555fa8
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/12/2022
-ms.locfileid: "67328813"
+ms.lasthandoff: 08/31/2022
+ms.locfileid: "67483308"
 ---
 # <a name="step-5-develop-and-test-use-cases"></a>Paso 5. Desarrollar y probar casos de uso
 

@@ -17,12 +17,12 @@ ms.custom:
 - M365-Lighthouse
 search.appverid: MET150
 description: En el caso de los proveedores de servicios administrados (MSP) que usan Microsoft 365 Lighthouse, obtenga información sobre cómo ver y administrar usuarios de riesgo.
-ms.openlocfilehash: 6f3fdaca1b89561e623d195faa4804c431e43a69
-ms.sourcegitcommit: 23a53b5c5e372a2a7ad5e175850224d3d464f6dd
+ms.openlocfilehash: 0239dd4c56de9203f01df04cc4f0fce8c73fb27e
+ms.sourcegitcommit: 10e6abe740e27000e223378eb17d657a47555fa8
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/28/2022
-ms.locfileid: "67055842"
+ms.lasthandoff: 08/31/2022
+ms.locfileid: "67474872"
 ---
 # <a name="view-and-manage-risky-users-in-microsoft-365-lighthouse"></a>Visualización y administración de usuarios de riesgo en Microsoft 365 Lighthouse
 
@@ -53,7 +53,7 @@ En Azure AD Identity Protection, las detecciones de riesgos incluyen las accione
 
 1. En el panel de navegación izquierdo de Lighthouse, seleccione **Usuarios** > **de riesgo**.
 
-2. En la pestaña **Usuarios de riesgo** , revise los usuarios de la lista con un estado de riesgo **De riesgo**.
+2. En la página **Usuarios de riesgo** , revise los usuarios de la lista con un estado de riesgo **de En riesgo**.
 
 3. Seleccione **Ver detecciones de riesgos** para obtener información detallada sobre los riesgos detectados para cada usuario. Para obtener más información sobre los tipos de riesgo y la detección, consulte [¿Qué es el riesgo?](/azure/active-directory/identity-protection/concept-identity-protection-risks).
 
@@ -73,7 +73,7 @@ Para realizar acciones en varios usuarios afectados a la vez:
 
 1. En el panel de navegación izquierdo de Lighthouse, seleccione **Usuarios** > **de riesgo**.
 
-2. En la pestaña **Usuarios de riesgo** , seleccione el conjunto de usuarios en los que desea realizar acciones.
+2. En la página **Usuarios de riesgo** , seleccione el conjunto de usuarios en los que desea realizar acciones.
 
 3. Elija una de las siguientes acciones para realizar:
 

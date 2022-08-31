@@ -1,9 +1,10 @@
 ---
 title: Preguntas más frecuentes al activar Microsoft 365 Defender
 description: Obtenga respuestas a las preguntas más frecuentes sobre licencias, permisos, configuración inicial y otros productos y servicios relacionados con la habilitación de Microsoft 365 Defender
-keywords: preguntas frecuentes, preguntas más frecuentes, GCC, introducción, habilitación de Microsoft 365 Defender, Microsoft 365 Defender, M365, seguridad, ubicación de datos, permisos necesarios, elegibilidad de licencias, página de configuración
+keywords: preguntas más frecuentes, preguntas frecuentes, GCC, introducción, habilitación de Microsoft 365 Defender, Microsoft 365 Defender, M365, seguridad, ubicación de datos, permisos necesarios, elegibilidad de licencia, página de configuración
 search.product: eADQiWindows 10XVcnh
-ms.prod: m365-security
+ms.service: microsoft-365-security
+ms.subservice: m365d
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -20,13 +21,12 @@ ms.topic: conceptual
 search.appverid:
 - MOE150
 - MET150
-ms.technology: m365d
-ms.openlocfilehash: 73dddcfc1389eb5bb0b0115f0666c413dc7d2a01
-ms.sourcegitcommit: 85ce5fd0698b6f00ea1ea189634588d00ea13508
+ms.openlocfilehash: 55a5dbaf78ff19b9ef70d77493f7ac8568a0039d
+ms.sourcegitcommit: 10e6abe740e27000e223378eb17d657a47555fa8
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/06/2022
-ms.locfileid: "64663212"
+ms.lasthandoff: 08/31/2022
+ms.locfileid: "67483418"
 ---
 # <a name="frequently-asked-questions-when-turning-on-microsoft-365-defender"></a>Preguntas más frecuentes al activar Microsoft 365 Defender
 
@@ -53,16 +53,16 @@ Para obtener una lista completa de las licencias admitidas, [lea los requisitos 
 
 ## <a name="do-i-need-to-install-or-deploy-anything-to-start-using-microsoft-365-defender"></a>¿Es necesario instalar o implementar algo para empezar a usar Microsoft 365 Defender?
 
-No, Microsoft 365 Defender consolida los datos de Microsoft 365 servicios de seguridad que ya ha implementado. Una vez que lo active, las experiencias de incidentes, automatización y búsqueda comenzarán a funcionar dentro del ámbito de los productos implementados. Si ninguno de estos productos se implementa correctamente, Microsoft 365 Defender no mostrará ningún dato y no podrá realizar ninguna acción.
+No, Microsoft 365 Defender consolida los datos de los servicios de seguridad de Microsoft 365 que ya ha implementado. Una vez que lo active, las experiencias de incidentes, automatización y búsqueda comenzarán a funcionar dentro del ámbito de los productos implementados. Si ninguno de estos productos se implementa correctamente, Microsoft 365 Defender no mostrará ningún dato y no podrá realizar ninguna acción.
 
-Para optimizar las experiencias de Microsoft 365 Defender, se recomienda implementar *todos los* [productos y servicios de seguridad Microsoft 365](deploy-supported-services.md) admitidos.
+Para optimizar las experiencias de Microsoft 365 Defender, se recomienda implementar *todos los* [productos y servicios de seguridad de Microsoft 365](deploy-supported-services.md) compatibles.
 
 ## <a name="where-does-microsoft-365-defender-process-and-store-my-data"></a>¿Dónde Microsoft 365 Defender procesar y almacenar mis datos?
 
 Microsoft 365 Defender selecciona automáticamente una ubicación óptima para el centro de datos donde se procesan y almacenan los datos consolidados. Si tiene Microsoft Defender para punto de conexión, selecciona la misma ubicación usada por Defender para punto de conexión.
 
 >[!NOTE]
->Microsoft Defender para punto de conexión automáticamente disposiciones en centros de datos de la Unión Europea (UE) cuando se activa a través de Microsoft Defender for Cloud. Microsoft 365 Defender aprovisionará automáticamente en el mismo centro de datos de la UE a los clientes que hayan aprovisionado Microsoft Defender para punto de conexión de esta manera.
+>Microsoft Defender para punto de conexión aprovisiona automáticamente en centros de datos de la Unión Europea (UE) cuando se activa a través de Microsoft Defender for Cloud. Microsoft 365 Defender aprovisionará automáticamente en el mismo centro de datos de la UE a los clientes que hayan aprovisionado Microsoft Defender para punto de conexión de esta manera.
 
 La ubicación del centro de datos se muestra antes y después de aprovisionar el servicio en la página de configuración de Microsoft 365 Defender (**Configuración > Microsoft 365 Defender**). Si prefiere usar otra ubicación del centro de datos, seleccione **¿Necesita ayuda?** en el portal de Microsoft 365 Defender para ponerse en contacto con el soporte técnico de Microsoft.
 
@@ -97,7 +97,7 @@ De forma predeterminada, Microsoft 365 Defender muestra información de hora en 
 Microsoft proporciona periódicamente información a través de los diversos canales, entre los que se incluyen:
 
 - El [centro de mensajes](../../admin/manage/message-center.md) de Centro de administración de Microsoft 365
-- Blogposts en la [comunidad técnica de cumplimiento de & seguridad Microsoft 365](https://techcommunity.microsoft.com/t5/security-privacy-and-compliance/bg-p/securityprivacycompliance)
+- Blogposts en la [comunidad técnica de cumplimiento & seguridad de Microsoft 365](https://techcommunity.microsoft.com/t5/security-privacy-and-compliance/bg-p/securityprivacycompliance)
 
 Obtenga las experiencias más recientes disponibles públicamente activando [las características de versión preliminar](preview.md).
 

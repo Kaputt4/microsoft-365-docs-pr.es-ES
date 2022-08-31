@@ -4,7 +4,8 @@ description: Microsoft 365 Defender es una solución coordinada de protección c
 keywords: introducción a MMicrosoft 365 Defender, ciberseguridad, amenazas persistentes avanzadas, seguridad empresarial, dispositivos, dispositivo, identidad, usuarios, datos, aplicaciones, incidentes, investigación y corrección automatizadas, búsqueda avanzada
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
-ms.prod: m365-security
+ms.service: microsoft-365-security
+ms.subservice: m365d
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -22,14 +23,13 @@ ms.custom:
 - admindeeplinkDEFENDER
 - intro-overview
 ms.topic: conceptual
-ms.technology: m365d
 adobe-target: true
-ms.openlocfilehash: de40589c69aee6c6ab959f360b384707eca3d29a
-ms.sourcegitcommit: 44ece87e3e0c0c851dfc1e77211ac3e5e4a5b973
+ms.openlocfilehash: 6e255fda40e12855359754920ef07ff2d78f9b5e
+ms.sourcegitcommit: 10e6abe740e27000e223378eb17d657a47555fa8
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/05/2022
-ms.locfileid: "66617138"
+ms.lasthandoff: 08/31/2022
+ms.locfileid: "67483286"
 ---
 # <a name="what-is-microsoft-365-defender"></a>¿Qué es Microsoft 365 Defender?
 
@@ -65,7 +65,7 @@ los servicios de Microsoft 365 Defender protegen:
 
 - **Puntos de conexión con Defender para punto de conexión** : Defender para punto de conexión es una plataforma de punto de conexión unificada para la protección preventiva, la detección posterior a la vulneración, la investigación automatizada y la respuesta.
 - **Recursos con La administración de vulnerabilidades de Defender**: Administración de vulnerabilidades de Microsoft Defender ofrece visibilidad continua de los recursos, evaluaciones inteligentes basadas en riesgos y herramientas de corrección integradas para ayudar a los equipos de TI y seguridad a priorizar y abordar vulnerabilidades críticas y configuraciones incorrectas en toda la organización.
-- **Correo electrónico y colaboración con Defender para Office 365**: Defender para Office 365 protege a su organización frente a amenazas malintencionadas planteadas por mensajes de correo electrónico, vínculos (DIRECCIONES URL) y herramientas de colaboración.
+- **Email y la colaboración con Defender para Office 365**: Defender para Office 365 protege a su organización frente a amenazas malintencionadas planteadas por mensajes de correo electrónico, vínculos (DIRECCIONES URL) y herramientas de colaboración.
 - **Las identidades con Defender for Identity y Azure Active Directory (Azure AD) Identity Protection** - Defender for Identity usan las señales de Active Directory local Domain Services (AD DS) para identificar, detectar e investigar amenazas avanzadas, identidades en peligro y acciones internas malintencionadas dirigidas a su organización. Azure AD Identity Protection automatiza la detección y corrección de riesgos basados en identidades en Azure AD basado en la nube.
 - **Aplicaciones con Microsoft Defender for Cloud Apps**: Microsoft Defender for Cloud Apps es una solución completa entre SaaS que ofrece visibilidad profunda, controles de datos seguros y protección contra amenazas mejorada para las aplicaciones en la nube.
 

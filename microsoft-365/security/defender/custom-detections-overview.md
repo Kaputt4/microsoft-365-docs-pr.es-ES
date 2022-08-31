@@ -1,10 +1,11 @@
 ---
-title: Información general sobre las detecciones personalizadas en Microsoft 365 Defender
+title: Introducción a las detecciones personalizadas en Microsoft 365 Defender
 description: Comprender cómo puede usar la búsqueda avanzada para crear detecciones personalizadas y generar alertas
-keywords: búsqueda avanzada, búsqueda de amenazas, búsqueda de amenazas cibernéticas, Microsoft 365 Defender, microsoft 365, m365, búsqueda, consulta, telemetría, detecciones personalizadas, esquema, kusto
+keywords: búsqueda avanzada, búsqueda de amenazas, búsqueda de amenazas cibernética, Microsoft 365 Defender, microsoft 365, m365, búsqueda, consulta, telemetría, detecciones personalizadas, esquema, kusto
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
-ms.prod: m365-security
+ms.service: microsoft-365-security
+ms.subservice: m365d
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -17,13 +18,12 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
-ms.technology: m365d
-ms.openlocfilehash: 0ad75d2cf67360c04597f56816e22755fae3388b
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 5d369bbea463b758a4ce29cb16f66e52488039e1
+ms.sourcegitcommit: 10e6abe740e27000e223378eb17d657a47555fa8
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60208426"
+ms.lasthandoff: 08/31/2022
+ms.locfileid: "67474652"
 ---
 # <a name="custom-detections-overview"></a>Introducción a las detecciones personalizadas
 
@@ -34,15 +34,15 @@ ms.locfileid: "60208426"
 - Microsoft 365 Defender
 - Microsoft Defender para punto de conexión
 
-Con las detecciones personalizadas, puede supervisar proactivamente y responder a varios eventos y estados del sistema, incluidos la actividad de infracciones sospechosas y los extremos mal configurados. Esto es posible mediante reglas de detección personalizables que desencadenan automáticamente alertas, así como acciones de respuesta.
+Con las detecciones personalizadas, puede supervisar y responder de forma proactiva a diversos eventos y estados del sistema, incluida la actividad de infracción sospechosa y los puntos de conexión mal configurados. Esto es posible gracias a reglas de detección personalizables que desencadenan automáticamente alertas, así como acciones de respuesta.
 
-Las detecciones personalizadas funcionan [con](advanced-hunting-overview.md)búsqueda avanzada, lo que proporciona un lenguaje de consulta eficaz y flexible que cubre un amplio conjunto de información de eventos e sistema de la red. Puede configurarlas para que se ejecuten a intervalos regulares, generando alertas y llevando a cabo acciones de respuesta siempre que haya coincidencias.
+Las detecciones personalizadas funcionan con [la búsqueda avanzada](advanced-hunting-overview.md), que proporciona un lenguaje de consulta eficaz y flexible que cubre un amplio conjunto de información del sistema y eventos de la red. Puede configurarlas para que se ejecuten a intervalos regulares, generando alertas y llevando a cabo acciones de respuesta siempre que haya coincidencias.
 
 Las detecciones personalizadas proporcionan:
-- Alertas para detecciones basadas en reglas creadas a partir de consultas de búsqueda avanzadas
-- Acciones de respuesta automáticas
+- Alertas de detecciones basadas en reglas creadas a partir de consultas de búsqueda avanzadas
+- Acciones de respuesta automática
 
 ## <a name="see-also"></a>Vea también
-- [Crear y administrar reglas de detección personalizadas](custom-detection-rules.md)
+- [Creación y administración de reglas de detección personalizadas](custom-detection-rules.md)
 - [Información general sobre la búsqueda avanzada de amenazas](advanced-hunting-overview.md)
-- [Migrar consultas de búsqueda avanzada desde Microsoft Defender para endpoint](advanced-hunting-migrate-from-mde.md)
+- [Migración de consultas de búsqueda avanzadas desde Microsoft Defender para punto de conexión](advanced-hunting-migrate-from-mde.md)

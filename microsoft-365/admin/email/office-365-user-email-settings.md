@@ -17,16 +17,22 @@ search.appverid:
 - MET150
 ms.assetid: 03083fdf-bc52-409a-b2ac-2a5f5c308fa0
 description: Este artículo le proporciona información sobre cómo administrar la configuración de los usuarios.
-ms.openlocfilehash: 291d6a0207c8ed0f94bcfa224accc217dfc1d78f
-ms.sourcegitcommit: 9255a7e8b398f92d8dae09886ae95dc8577bf29a
-ms.translationtype: HT
+ms.openlocfilehash: ec83579e5a3c4a264f5030db1cdbf1ac6aa915fe
+ms.sourcegitcommit: 10e6abe740e27000e223378eb17d657a47555fa8
+ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/17/2022
-ms.locfileid: "65437137"
+ms.lasthandoff: 08/31/2022
+ms.locfileid: "67470261"
 ---
 # <a name="user-email-settings-in-microsoft-365"></a>Configuración de correo electrónico de usuario en Microsoft 365
 
 Como administrador de una organización, puede gestionar la configuración de correo electrónico de los usuarios. Este artículo le informa sobre cómo administrar esta configuración.
+
+## <a name="manage-email-settings"></a>Administrar la configuración de correo electrónico de usuario
+
+1. Vaya al Centro de administración en <https://admin.microsoft.com>.
+2. Vaya a **Usuarios** > **usuarios activos** y seleccione el usuario para el que desea administrar la configuración de correo electrónico.
+3. En el nuevo panel, seleccione **Correo** para administrar la configuración de correo electrónico.
 
 ## <a name="summary-of-email-settings"></a>Resumen de la configuración del correo electrónico
 

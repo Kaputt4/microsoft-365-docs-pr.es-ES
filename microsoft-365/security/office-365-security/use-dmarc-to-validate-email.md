@@ -18,12 +18,12 @@ ms.collection:
 description: Obtenga información sobre cómo configurar Domain-based Message Authentication, Reporting, and Conformance (DMARC) para validar mensajes enviados desde la organización.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: f33ea4cfe9323121f928e9a07247167c9d536721
-ms.sourcegitcommit: d09eb780dc41a01796eb8137fbe9267231af6746
+ms.openlocfilehash: 7723105d4617937b85a29911122a0e43e2076350
+ms.sourcegitcommit: 10e6abe740e27000e223378eb17d657a47555fa8
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/19/2022
-ms.locfileid: "67388427"
+ms.lasthandoff: 08/31/2022
+ms.locfileid: "67470283"
 ---
 # <a name="use-dmarc-to-validate-email"></a>Usar DMARC para validar el correo electrónico
 
@@ -40,6 +40,9 @@ DMARC garantiza que los sistemas de correo electrónico de destino confían en l
 
 > [!TIP]
 > Visite el catálogo de la [Asociación de seguridad inteligente de Microsoft (MISA)](https://www.microsoft.com/misapartnercatalog) para ver los proveedores que ofrecen informes DMARC para Microsoft 365.
+
+> [!TIP]
+> **¿Has visto nuestras guías paso a paso?** Configuración 1-2-3s y sin lujos, para administradores con prisa. Visite los pasos para *[habilitar DMARC Reporting for Microsoft Online Email Routing Addresses (MOERA) and parked Domains (DmARC Reporting for Microsoft Online Email Routing Addresses (MOERA) and parked Domains (DmARC Reporting for Microsoft Online Email Routing Addresses (MOERA) and parked Domains (DmARC Reporting for Microsoft Online Email Routing Addresses (MO](step-by-step-guides/how-to-enable-dmarc-reporting-for-microsoft-online-email-routing-address-moera-and-parked-domains.md)*
 
 ## <a name="how-do-spf-and-dmarc-work-together-to-protect-email-in-microsoft-365"></a>¿Cómo se coordinan SPF y DMARC para proteger el correo electrónico en Microsoft 365?
 

@@ -3,7 +3,8 @@ title: Análisis de amenazas en Microsoft 365 Defender
 ms.reviewer: ''
 description: Obtenga información sobre las amenazas emergentes y las técnicas de ataque y cómo detenerlas. Evalúe su impacto en la organización y evalúe la resistencia de la organización.
 keywords: análisis de amenazas, evaluación de riesgos, Microsoft 365 Defender, M365D, estado de mitigación, configuración segura, Microsoft Defender para Office 365, Microsoft Defender para Office 365  análisis de amenazas, análisis de amenazas de MDO, datos integrados de análisis de amenazas de MDE y MDO, integración de datos de análisis de amenazas, análisis de amenazas integrado Microsoft 365 Defender análisis de amenazas
-ms.prod: m365-security
+ms.service: microsoft-365-security
+ms.subservice: m365d
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -19,12 +20,12 @@ ms.collection:
 - m365initiative-m365-defender
 ms.topic: article
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: ee74b1b5af9af8e657329f973855cdee926a61f8
-ms.sourcegitcommit: 217108c59be41b01963a393b4f16d137636fe6a8
+ms.openlocfilehash: f9b0fc2035ff1b47c41d928f885c105aef59e9cb
+ms.sourcegitcommit: 10e6abe740e27000e223378eb17d657a47555fa8
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/12/2022
-ms.locfileid: "67328373"
+ms.lasthandoff: 08/31/2022
+ms.locfileid: "67467127"
 ---
 # <a name="threat-analytics-in-microsoft-365-defender"></a>Análisis de amenazas en Microsoft 365 Defender
 

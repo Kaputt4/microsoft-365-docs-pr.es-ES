@@ -4,7 +4,8 @@ description: Enumera las nuevas características y funcionalidades de Microsoft 
 keywords: novedades de Microsoft 365 Defender, ga, disponibilidad general, funcionalidades, disponibles, nuevas
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
-ms.prod: m365-security
+ms.service: microsoft-365-security
+ms.subservice: m365d
 ms.mktglfcycl: secure
 ms.sitesec: library
 ms.pagetype: security
@@ -17,13 +18,12 @@ audience: ITPro
 ms.collection:
 - M365-security-compliance
 ms.topic: conceptual
-ms.technology: m365d
-ms.openlocfilehash: d7a49b76efb824160157b9bf10315562149edb02
-ms.sourcegitcommit: 7374c7b013890744d74e5214f7f8d69ca7874466
+ms.openlocfilehash: e7b992f22e58cca007e1ed3afecf02ecac830857
+ms.sourcegitcommit: 10e6abe740e27000e223378eb17d657a47555fa8
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/23/2022
-ms.locfileid: "67405628"
+ms.lasthandoff: 08/31/2022
+ms.locfileid: "67483374"
 ---
 # <a name="whats-new-in-microsoft-365-defender"></a>Novedades de Microsoft 365 Defender
 
@@ -150,7 +150,7 @@ El equipo de operaciones de seguridad puede ver todas las acciones pendientes de
 
   El análisis de amenazas le ayuda a responder y minimizar el impacto de los ataques activos. También puede obtener información sobre los intentos de ataque bloqueados por Microsoft 365 Defender soluciones y tomar medidas preventivas que mitigan el riesgo de una mayor exposición y aumentan la resistencia. Como parte de la experiencia de seguridad unificada, el análisis de amenazas ahora está disponible para los titulares de licencias de Microsoft Defender para punto de conexión y Microsoft Defender para Office E5.
 
-## <a name="march-2021"></a>Marzo de 2021
+## <a name="march-2021"></a>Marzo 2021
 
 - [Tabla CloudAppEvents](advanced-hunting-cloudappevents-table.md)
 

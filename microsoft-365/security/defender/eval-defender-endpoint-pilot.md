@@ -3,7 +3,8 @@ title: Microsoft Defender para punto de conexión piloto
 description: Obtenga información sobre cómo ejecutar un piloto para Microsoft Defender para punto de conexión (MDE), incluida la comprobación del grupo piloto y la prueba de funcionalidades.
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
-ms.prod: m365-security
+ms.service: microsoft-365-security
+ms.subservice: m365d
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -20,14 +21,14 @@ ms.collection:
 - m365solution-scenario
 - m365solution-evalutatemtp
 - zerotrust-solution
+- highpri
 ms.topic: conceptual
-ms.technology: m365d
-ms.openlocfilehash: 44e6e341bd47dfb4d0debe1975c79f00cdb5a1da
-ms.sourcegitcommit: 217108c59be41b01963a393b4f16d137636fe6a8
+ms.openlocfilehash: 825a1676e3adfd79a410d4d32df0daef53b34df2
+ms.sourcegitcommit: 10e6abe740e27000e223378eb17d657a47555fa8
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/12/2022
-ms.locfileid: "67328967"
+ms.lasthandoff: 08/31/2022
+ms.locfileid: "67482811"
 ---
 # <a name="pilot-microsoft-defender-for-endpoint"></a>Microsoft Defender para punto de conexión piloto
 
@@ -84,7 +85,7 @@ Para ejecutar cualquiera de las simulaciones proporcionadas, necesita al menos [
 > [!NOTE]
 > Los archivos o scripts de simulación imitan la actividad de ataque, pero en realidad son benignos y no dañarán ni pondrán en peligro el dispositivo de prueba.
 
-## <a name="next-steps"></a>Siguientes pasos
+## <a name="next-steps"></a>Pasos siguientes
 [Evaluar Microsoft Defender for Cloud Apps](eval-defender-mcas-overview.md)
 
 Vuelva a la introducción para [Evaluar Microsoft Defender para punto de conexión](eval-defender-endpoint-overview.md)

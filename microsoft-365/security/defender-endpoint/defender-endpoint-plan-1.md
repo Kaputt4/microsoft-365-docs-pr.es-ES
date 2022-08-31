@@ -7,8 +7,8 @@ ms.author: deniseb
 manager: dansimp
 audience: ITPro
 ms.topic: overview
-ms.prod: m365-security
-ms.technology: mdep1
+ms.service: microsoft-365-security
+ms.subservice: mde
 ms.localizationpriority: medium
 ms.reviewer: inbadian
 f1.keywords: NOCSH
@@ -16,12 +16,12 @@ ms.collection:
 - M365-security-compliance
 - m365initiative-defender-endpoint
 ms.custom: intro-overview
-ms.openlocfilehash: ace1eae6ab668a34e4ceff676b9edf01196521dd
-ms.sourcegitcommit: 35f167725bec5fd4fe131781a53d96b060cf232d
+ms.openlocfilehash: d3d0118c75f2ac183b6a7c6b6eef599b2a943b1f
+ms.sourcegitcommit: 10e6abe740e27000e223378eb17d657a47555fa8
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "65872728"
+ms.lasthandoff: 08/31/2022
+ms.locfileid: "67468909"
 ---
 # <a name="overview-of-microsoft-defender-for-endpoint-plan-1"></a>Introducción al plan 1 de Microsoft Defender para punto de conexión
 
@@ -43,7 +43,7 @@ Use esta guía para:
 - [Obtenga información general sobre lo que se incluye en el plan 1 de Defender para punto de conexión](#defender-for-endpoint-plan-1-capabilities)
 - [Comparar los planes 1 y 2 de Defender para punto de conexión](defender-endpoint-plan-1-2.md)
 - [Obtenga información sobre cómo configurar y configurar El plan 1 de Defender para punto de conexión](mde-p1-setup-configuration.md)
-- [Comenzar mediante el portal de Microsoft 365 Defender, donde puede ver incidentes y alertas, administrar dispositivos y usar informes sobre amenazas detectadas.](mde-plan1-getting-started.md)
+- [Empiece a usar el portal de Microsoft 365 Defender, donde puede ver incidentes y alertas, administrar dispositivos y usar informes sobre amenazas detectadas.](mde-plan1-getting-started.md)
 - [Obtenga información general sobre el mantenimiento y las operaciones.](mde-p1-maintenance-operations.md)
 
 > [!TIP]
@@ -67,7 +67,7 @@ La protección de última generación incluye protección antivirus y antimalwar
 
 - Protección antivirus basada en comportamientos, heurística y en tiempo real 
 - Protección proporcionada por la nube, que incluye detección casi instantánea y bloqueo de amenazas nuevas y emergentes 
-- Actualizaciones de productos y protección dedicadas, incluidas las relacionadas con Antivirus de Microsoft Defender 
+- Protección dedicada y actualizaciones de productos, incluidas las actualizaciones relacionadas con el Antivirus de Microsoft Defender 
 
 Para más información, consulte [Introducción a la protección de próxima generación](next-generation-protection.md).
 
@@ -77,8 +77,8 @@ Las acciones de respuesta manual son acciones que el equipo de seguridad puede r
 
 | Archivo o dispositivo | Acción | Descripción |
 |:---|:---|:---|
-| Dispositivo | Ejecutar examen de antivirus | Inicia un examen antivirus. Si se detecta alguna amenaza en el dispositivo, esas amenazas a menudo se abordan durante un examen antivirus. |
-| Dispositivo | Aislar el dispositivo | Desconecta un dispositivo de la red de la organización mientras conserva la conectividad con Defender para punto de conexión. Esta acción le permite supervisar el dispositivo y realizar más acciones si es necesario. |
+| Device | Ejecutar examen de antivirus | Inicia un examen antivirus. Si se detecta alguna amenaza en el dispositivo, esas amenazas a menudo se abordan durante un examen antivirus. |
+| Device | Aislar el dispositivo | Desconecta un dispositivo de la red de la organización mientras conserva la conectividad con Defender para punto de conexión. Esta acción le permite supervisar el dispositivo y realizar más acciones si es necesario. |
 | Archivo | Detener y poner en cuarentena un archivo |Detiene la ejecución de procesos y pone en cuarentena los archivos asociados. |
 | Archivo | Adición de un indicador para bloquear o permitir un archivo | Los indicadores de bloque impiden que los archivos ejecutables portátiles se lean, escriban o ejecuten en los dispositivos. <p>Permitir indicadores impide que los archivos se bloqueen o corrijan. |
 
@@ -148,13 +148,13 @@ Con la protección del firewall de red, puede establecer reglas que determinen q
 - Protección de datos confidenciales y propiedad intelectual
 - Ampliación de la inversión en seguridad
 
-Para obtener más información, consulte [Firewall de Windows Defender con seguridad avanzada](/windows/security/threat-protection/windows-firewall/windows-firewall-with-advanced-security).
+Para más información, consulte [Windows Defender Firewall con seguridad avanzada](/windows/security/threat-protection/windows-firewall/windows-firewall-with-advanced-security).
 
 ### <a name="application-control"></a>Control de la aplicación
 
 El control de aplicaciones protege los puntos de conexión de Windows ejecutando solo aplicaciones y código de confianza en el núcleo del sistema (kernel). El equipo de seguridad puede definir reglas de control de aplicaciones que consideren los atributos de una aplicación, como sus certificados de firma de código, reputación, proceso de inicio, etc. El control de aplicación está disponible en Windows 10 o posterior.
 
-Para más información, consulte [Control de aplicaciones para Windows](/windows/security/threat-protection/windows-defender-application-control/windows-defender-application-control).
+Para obtener más información, consulte [Control de aplicaciones para Windows](/windows/security/threat-protection/windows-defender-application-control/windows-defender-application-control).
 
 ## <a name="centralized-management"></a>Administración centralizada
 
@@ -164,11 +164,11 @@ Para obtener más información, consulte [Microsoft 365 Defender introducción a
 
 ### <a name="role-based-access-control"></a>Control de acceso basado en roles
 
-Mediante el control de acceso basado en rol (RBAC), el administrador de seguridad puede crear roles y grupos para conceder el acceso adecuado al portal de Microsoft 365 Defender ([https://security.microsoft.com](https://security.microsoft.com)). Con RBAC, tiene un control específico sobre quién puede acceder a la Defender for Cloud y qué pueden ver y hacer. 
+Mediante el control de acceso basado en rol (RBAC), el administrador de seguridad puede crear roles y grupos para conceder el acceso adecuado al portal de Microsoft 365 Defender ([https://security.microsoft.com](https://security.microsoft.com)). Con RBAC, tiene un control específico sobre quién puede acceder a Defender for Cloud y qué pueden ver y hacer. 
 
 Para más información, consulte [Administración del acceso al portal mediante el control de acceso basado en rol](rbac.md).
 
-### <a name="reporting"></a>Generación de informes
+### <a name="reporting"></a>Reporting
 
 El portal de Microsoft 365 Defender ([https://security.microsoft.com](https://security.microsoft.com)) proporciona fácil acceso a la información sobre las amenazas y acciones detectadas para abordar esas amenazas. 
 
@@ -177,7 +177,7 @@ El portal de Microsoft 365 Defender ([https://security.microsoft.com](https://se
 - El **Centro de** acciones enumera las acciones de corrección que se han realizado. Por ejemplo, si un archivo se envía a cuarentena o se bloquea una dirección URL, cada acción se muestra en el Centro de acciones de la pestaña **Historial** .
 - La sección **Informes** incluye informes que muestran las amenazas detectadas y su estado. 
 
-Para obtener más información, consulte [Comenzar con Microsoft Defender para punto de conexión Plan 1](mde-plan1-getting-started.md).
+Para más información, consulte [Introducción a Microsoft Defender para punto de conexión Plan 1](mde-plan1-getting-started.md).
 
 ### <a name="apis"></a>API
 
@@ -189,7 +189,7 @@ Para más información, consulte [Api de Defender para punto de conexión](manag
 
 La mayoría de las organizaciones usan varios dispositivos y sistemas operativos. Actualmente, El plan 1 de Defender para punto de conexión admite los siguientes sistemas operativos:
 
-- Windows 7 (ESU requerida)
+- Windows 7 (ESU obligatorio)
 - Windows 8.1
 - Windows 10, versión 1709 o posterior
 - Windows 10 Enterprise
@@ -199,9 +199,9 @@ La mayoría de las organizaciones usan varios dispositivos y sistemas operativos
 - iOS
 - Sistema operativo Android
 
-## <a name="next-steps"></a>Siguientes pasos
+## <a name="next-steps"></a>Pasos siguientes
 
 - [Comparar Microsoft Defender para punto de conexión plan 1 con plan 2](defender-endpoint-plan-1-2.md)
 - [Configurar Defender para punto de conexión plan 1](mde-p1-setup-configuration.md)
-- [Comenzar con el plan 1 de Defender para punto de conexión](mde-plan1-getting-started.md)
+- [Introducción al plan 1 de Defender para punto de conexión](mde-plan1-getting-started.md)
 - [Administración del plan 1 de Defender para punto de conexión](mde-p1-maintenance-operations.md)

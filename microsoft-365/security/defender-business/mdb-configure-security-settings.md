@@ -16,12 +16,13 @@ ms.collection:
 - SMB
 - M365-security-compliance
 - m365solution-mdb-setup
-ms.openlocfilehash: dd741bd3fabed64e7a27ddc0521bac8b318ffeed
-ms.sourcegitcommit: 48a75b40e607542e5fe219b6e75ffc757804a9c6
+- highpri
+ms.openlocfilehash: 48e316e1be7975db912dfd9ebe7380f4a9102d56
+ms.sourcegitcommit: 10e6abe740e27000e223378eb17d657a47555fa8
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/16/2022
-ms.locfileid: "67344445"
+ms.lasthandoff: 08/31/2022
+ms.locfileid: "67468457"
 ---
 # <a name="view-and-edit-security-policies-and-settings-in-microsoft-defender-for-business"></a>Visualización y edición de directivas de seguridad y configuración en Microsoft Defender para Empresas
 
@@ -170,7 +171,7 @@ En la tabla siguiente se describe la configuración que puede ver y editar en De
 
 3. En la lista de configuraciones, seleccione un elemento para ver o editar.
 
-## <a name="next-steps"></a>Siguientes pasos
+## <a name="next-steps"></a>Pasos siguientes
 
 - [Introducción al uso de Defender para empresas](mdb-get-started.md)
 - [Administración de dispositivos en Defender para empresas](mdb-manage-devices.md)

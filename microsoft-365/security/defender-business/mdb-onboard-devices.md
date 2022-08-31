@@ -10,19 +10,20 @@ ms.topic: overview
 ms.prod: m365-security
 ms.technology: mdb
 ms.localizationpriority: medium
-ms.date: 08/10/2022
+ms.date: 08/29/2022
 ms.reviewer: shlomiakirav
 f1.keywords: NOCSH
 ms.collection:
 - SMB
 - M365-security-compliance
 - m365solution-mdb-setup
-ms.openlocfilehash: 3f69c82a6a401118d50372adec03b9cdbed0f502
-ms.sourcegitcommit: 771f7bbb241f910b3e16b4d1f9bbd9c0c8c6fa34
+- highpri
+ms.openlocfilehash: 05bfff000929fcc26bd358b1b76bbdd2dd1f250e
+ms.sourcegitcommit: 10e6abe740e27000e223378eb17d657a47555fa8
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2022
-ms.locfileid: "67309403"
+ms.lasthandoff: 08/31/2022
+ms.locfileid: "67472994"
 ---
 # <a name="onboard-devices-to-microsoft-defender-for-business"></a>Incorporación de dispositivos a Microsoft Defender para Empresas
 
@@ -138,7 +139,7 @@ Una vez que se ejecuta el comando, la ventana del símbolo del sistema se cerrar
 
 Para ver la lista de dispositivos incorporados a Defender for Business, vaya al portal de Microsoft 365 Defender ([https://security.microsoft.com](https://security.microsoft.com)). En el panel de navegación, en **Puntos de conexión**, elija **Inventario de dispositivos**.
 
-## <a name="next-steps"></a>Siguientes pasos
+## <a name="next-steps"></a>Pasos siguientes
 
 - Si tiene otros dispositivos que incorporar, seleccione la pestaña para esos dispositivos ([Windows 10 y 11, Mac, servidores o dispositivos móviles](#what-to-do)) y siga las instrucciones de esa pestaña.
 - Si ha terminado de incorporar dispositivos, vaya al [Paso 5: Configurar las directivas y las opciones de seguridad en Defender para empresas](mdb-configure-security-settings.md).
@@ -227,7 +228,7 @@ Después de inscribir un dispositivo en Intune, puede agregarlo a un grupo de di
 
 Para ver la lista de dispositivos incorporados a Defender for Business, vaya al portal de Microsoft 365 Defender ([https://security.microsoft.com](https://security.microsoft.com)). En el panel de navegación, en **Puntos de conexión**, elija **Inventario de dispositivos**.
 
-## <a name="next-steps"></a>Siguientes pasos
+## <a name="next-steps"></a>Pasos siguientes
 
 - Si tiene otros dispositivos que incorporar, seleccione la pestaña para esos dispositivos ([Windows 10 y 11, Mac, servidores o dispositivos móviles](#what-to-do)) y siga las instrucciones de esa pestaña.
 - Si ha terminado de incorporar dispositivos, vaya al [Paso 5: Configurar las directivas y las opciones de seguridad en Defender para empresas](mdb-configure-security-settings.md).
@@ -248,7 +249,8 @@ Elija el sistema operativo del servidor:
 ## <a name="windows-server"></a>Windows Server
 
 > [!IMPORTANT]
-> **La capacidad de incorporar puntos de conexión de Windows Server está actualmente en versión preliminar**. Asegúrese de cumplir los siguientes requisitos antes de incorporar un punto de conexión de Windows Server:
+> **La capacidad de incorporar puntos de conexión de Windows Server está actualmente en versión preliminar**. Cuando se anuncia la disponibilidad general, se debe adquirir una licencia de Microsoft Defender para Empresas servidores para cada servidor incorporado, o bien se pueden desconectar esos servidores.
+> Asegúrese de cumplir los siguientes requisitos antes de incorporar un punto de conexión de Windows Server:
 > - La opción **Características en versión preliminar** activada. En el portal de Microsoft 365 Defender ([https://security.microsoft.com](https://security.microsoft.com)), vaya a **Configuración** > **Puntos de conexión** > **General** > **Características avanzadas** > **Características en versión preliminar**.
 > - El ámbito de cumplimiento de Windows Server está activado. Vaya a **Configuración** > **Puntos de conexión** > **Administración de configuración** > **Ámbito de cumplimiento**. Seleccione **Usar MDE para aplicar la configuración de seguridad desde MEM**, seleccione  **Windows Server** y, luego, **Guardar**.
 
@@ -303,7 +305,8 @@ Una vez que se ejecuta el comando, la ventana del símbolo del sistema se cerrar
 ## <a name="linux-server"></a>Servidor Linux
 
 > [!IMPORTANT]
-> **La capacidad de incorporar puntos de conexión de Servidor Linux está actualmente en versión preliminar**. Asegúrese de cumplir los siguientes requisitos antes de incorporar un punto de conexión de Servidor Linux:
+> **La capacidad de incorporar puntos de conexión de Servidor Linux está actualmente en versión preliminar**. Cuando se anuncia la disponibilidad general, se debe adquirir una licencia de Microsoft Defender para Empresas servidores para cada servidor incorporado, o bien se pueden desconectar esos servidores.
+> Asegúrese de cumplir los siguientes requisitos antes de incorporar un punto de conexión de Servidor Linux:
 > - La opción **Características en versión preliminar** activada. En el portal de Microsoft 365 Defender ([https://security.microsoft.com](https://security.microsoft.com)), vaya a **Configuración** > **Puntos de conexión** > **General** > **Características avanzadas** > **Características en versión preliminar**.
 > - Cumple los [requisitos previos para Microsoft Defender para punto de conexión en Linux](../defender-endpoint/microsoft-defender-endpoint-linux.md#prerequisites).
 
@@ -323,7 +326,7 @@ Puede usar los métodos siguientes para incorporar una instancia de Linux Server
 
 Para ver la lista de dispositivos incorporados a Defender for Business, vaya al portal de Microsoft 365 Defender ([https://security.microsoft.com](https://security.microsoft.com)). En el panel de navegación, en **Puntos de conexión**, elija **Inventario de dispositivos**.
 
-## <a name="next-steps"></a>Siguientes pasos
+## <a name="next-steps"></a>Pasos siguientes
 
 - Si tiene otros dispositivos que incorporar, seleccione la pestaña para esos dispositivos ([Windows 10 y 11, Mac, servidores o dispositivos móviles](#what-to-do)) y siga las instrucciones de esa pestaña.
 - Si ha terminado de incorporar dispositivos, vaya al [Paso 5: Configurar las directivas y las opciones de seguridad en Defender para empresas](mdb-configure-security-settings.md).
@@ -344,7 +347,7 @@ Después de inscribir un dispositivo en Intune, puede agregarlo a un grupo de di
 
 Para ver la lista de dispositivos incorporados a Defender for Business, vaya al portal de Microsoft 365 Defender ([https://security.microsoft.com](https://security.microsoft.com)). En el panel de navegación, en **Puntos de conexión**, elija **Inventario de dispositivos**.
 
-## <a name="next-steps"></a>Siguientes pasos
+## <a name="next-steps"></a>Pasos siguientes
 
 - Si tiene otros dispositivos que incorporar, seleccione la pestaña para esos dispositivos ([Windows 10 y 11, Mac, servidores o dispositivos móviles](#what-to-do)) y siga las instrucciones de esa pestaña.
 - Si ha terminado de incorporar dispositivos, vaya al [Paso 5: Configurar las directivas y las opciones de seguridad en Defender para empresas](mdb-configure-security-settings.md).

@@ -15,14 +15,14 @@ ms.assetid: a5b03b3c-37dd-429e-8e9b-2c1b25031794
 ms.collection:
 - M365-security-compliance
 description: Los administradores pueden obtener información sobre los valores de nivel de queja masiva (BCL) que se usan en Exchange Online Protection (EOP).
-ms.technology: mdo
-ms.prod: m365-security
-ms.openlocfilehash: 08e747b704faa18aa73110256624d70c79d0307b
-ms.sourcegitcommit: 725a92b0b1555572b306b285a0e7a7614d34e5e5
+ms.subservice: mdo
+ms.service: microsoft-365-security
+ms.openlocfilehash: 056531c0fe0173d6cbd417a5d51b8a40a339e671
+ms.sourcegitcommit: 10e6abe740e27000e223378eb17d657a47555fa8
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/24/2022
-ms.locfileid: "65647389"
+ms.lasthandoff: 08/31/2022
+ms.locfileid: "67474916"
 ---
 # <a name="bulk-complaint-level-bcl-in-eop"></a>Nivel de queja masiva (BCL) en EOP
 
@@ -31,11 +31,11 @@ ms.locfileid: "65647389"
 - [Plan 1 y Plan 2 de Microsoft Defender para Office 365](defender-for-office-365.md)
 - [Microsoft 365 Defender](../defender/microsoft-365-defender.md)
 
-En Microsoft 365 organizaciones con buzones de correo en organizaciones Exchange Online o independientes de Exchange Online Protection (EOP) sin buzones de correo Exchange Online, EOP asigna un nivel de queja masiva (BCL) a los mensajes entrantes de los buzones masivos. La BCL se agrega al mensaje en un encabezado X y es similar al [nivel de confianza de correo no deseado (SCL)](spam-confidence-levels.md) que se usa para identificar mensajes como correo no deseado. Una mayor BCL indica que es más probable que un mensaje masivo genere quejas (y, por lo tanto, es más probable que sea correo no deseado). Microsoft usa orígenes internos y de terceros para identificar el correo masivo y determinar la BCL adecuada.
+En las organizaciones de Microsoft 365 con buzones de Exchange Online o organizaciones independientes de Exchange Online Protection (EOP) sin buzones de Exchange Online, EOP asigna un nivel de queja masiva (BCL) a los mensajes entrantes de los buzones masivos. La BCL se agrega al mensaje en un encabezado X y es similar al [nivel de confianza de correo no deseado (SCL)](spam-confidence-levels.md) que se usa para identificar mensajes como correo no deseado. Una mayor BCL indica que es más probable que un mensaje masivo genere quejas (y, por lo tanto, es más probable que sea correo no deseado). Microsoft usa orígenes internos y de terceros para identificar el correo masivo y determinar la BCL adecuada.
 
 Los correos masivos varían en función de sus patrones de envío, creación de contenido y prácticas de adquisición de destinatarios. Los buenos mailers masivos envían los mensajes deseados con contenido relevante a sus suscriptores. Estos mensajes generan pocas quejas por parte de los destinatarios. Otros troyanos de envío masivo de correo electrónico envían mensajes no solicitados muy similares al correo no deseado y generan muchas quejas por parte de los destinatarios. Los mensajes de un correo masivo se conocen como correo masivo o correo gris.
 
- El filtrado de correo no deseado marca los mensajes como **correo electrónico masivo** en función del umbral de BCL (el valor predeterminado o un valor especificado) y realiza la acción especificada en el mensaje (la acción predeterminada es entregar el mensaje a la carpeta correo no deseado del destinatario). Para obtener más información, vea [Configurar directivas contra correo no deseado](configure-your-spam-filter-policies.md) y [¿Cuál es la diferencia entre correo no deseado y correo electrónico masivo?](what-s-the-difference-between-junk-email-and-bulk-email.md)
+ El filtrado de correo no deseado marca los mensajes como **correo electrónico masivo** en función del umbral de BCL (el valor predeterminado o un valor especificado) y realiza la acción especificada en el mensaje (la acción predeterminada es entregar el mensaje a la carpeta junk Email del destinatario). Para obtener más información, vea [Configurar directivas contra correo no deseado](configure-your-spam-filter-policies.md) y [¿Cuál es la diferencia entre correo no deseado y correo electrónico masivo?](what-s-the-difference-between-junk-email-and-bulk-email.md)
 
 Los umbrales de BCL se describen en la tabla siguiente.
 

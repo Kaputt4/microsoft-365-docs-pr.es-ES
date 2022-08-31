@@ -3,7 +3,8 @@ title: Revise los requisitos de arquitectura y la estructura de Microsoft Defend
 description: Microsoft Defender for Cloud Apps diagramas técnicos explican la arquitectura en Microsoft 365 Defender, lo que le ayudará a crear un entorno piloto.
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
-ms.prod: m365-security
+ms.service: microsoft-365-security
+ms.subservice: m365d
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -20,14 +21,14 @@ ms.collection:
 - m365solution-scenario
 - m365solution-evalutatemtp
 - zerotrust-solution
+- highpri
 ms.topic: conceptual
-ms.technology: m365d
-ms.openlocfilehash: 7cc147f60d3ae7ccd7014476de5c6839fa67131f
-ms.sourcegitcommit: 61b22df76e0f81e5ef11c587b129287886151c79
+ms.openlocfilehash: e012ee5c94a37456a67dc5624e2aae0a2a460548
+ms.sourcegitcommit: 10e6abe740e27000e223378eb17d657a47555fa8
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/12/2022
-ms.locfileid: "66747997"
+ms.lasthandoff: 08/31/2022
+ms.locfileid: "67473818"
 ---
 # <a name="review-architecture-requirements-and-key-concepts-for-microsoft-defender-for-cloud-apps"></a>Revise los requisitos de arquitectura y los conceptos clave para Microsoft Defender for Cloud Apps
 
@@ -60,7 +61,7 @@ El primer paso para administrar el uso de aplicaciones en la nube es detectar qu
 
 
 En esta ilustración, hay dos métodos que se pueden usar para supervisar el tráfico de red y detectar aplicaciones en la nube que usa la organización.
-- R: Cloud App Discovery se integra con Microsoft Defender para punto de conexión de forma nativa. Defender for Endpoint informa de que se accede a las aplicaciones y servicios en la nube desde dispositivos de Windows 10 y Windows 11 administrados por TI. 
+- A. Cloud App Discovery se integra con Microsoft Defender para punto de conexión de forma nativa. Defender for Endpoint informa de que se accede a las aplicaciones y servicios en la nube desde dispositivos de Windows 10 y Windows 11 administrados por TI. 
 - B. Para la cobertura en todos los dispositivos conectados a una red, el recopilador de registros de Defender for Cloud Apps se instala en firewalls y otros servidores proxy para recopilar datos de puntos de conexión. Estos datos se envían a Defender for Cloud Apps para su análisis.
 
 #### <a name="managing-cloud-apps"></a>Administración de aplicaciones en la nube
@@ -148,7 +149,7 @@ Además, Microsoft Sentinel incluye un conector de Microsoft Defender for Cloud 
 - [Integración de SIEM genérica](/cloud-app-security/siem)
 - [Transmisión de alertas y registros de Cloud Discovery desde Defender for Cloud Apps a Microsoft Sentinel](/azure/sentinel/connect-cloud-app-security)
 
-### <a name="next-steps"></a>Siguientes pasos
+### <a name="next-steps"></a>Pasos siguientes
 
 Paso 2 de 3: [Habilitar el entorno de evaluación para Microsoft Defender for Cloud Apps](eval-defender-mcas-enable-eval.md)
 

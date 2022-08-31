@@ -4,8 +4,8 @@ ms.reviewer: pahuijbr
 manager: dansimp
 description: Windows Server incluye exclusiones automáticas basadas en el rol de servidor. También puede agregar exclusiones personalizadas.
 keywords: exclusiones, servidor, exclusiones automáticas, automáticas, personalizadas, exámenes, Antivirus de Microsoft Defender
-ms.prod: m365-security
-ms.technology: mde
+ms.service: microsoft-365-security
+ms.subservice: mde
 ms.mktglfcycl: manage
 ms.sitesec: library
 ms.pagetype: security
@@ -15,12 +15,12 @@ ms.author: deniseb
 ms.topic: article
 ms.custom: nextgen
 ms.collection: M365-security-compliance
-ms.openlocfilehash: 7205a612954dfbd283b61ca377c81c5f78243f58
-ms.sourcegitcommit: d09eb780dc41a01796eb8137fbe9267231af6746
+ms.openlocfilehash: 1e8a50ee0aace7b2d668bf7b083eacb74d9d6319
+ms.sourcegitcommit: 10e6abe740e27000e223378eb17d657a47555fa8
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/19/2022
-ms.locfileid: "67388691"
+ms.lasthandoff: 08/31/2022
+ms.locfileid: "67469698"
 ---
 # <a name="configure-microsoft-defender-antivirus-exclusions-on-windows-server"></a>Configuración de exclusiones del Antivirus de Microsoft Defender en Windows Server
 

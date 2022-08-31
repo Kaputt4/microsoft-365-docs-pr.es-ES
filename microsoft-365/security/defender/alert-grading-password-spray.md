@@ -2,7 +2,8 @@
 title: Alerta de actividad de dirección IP sospechosa relacionada con la difusión de contraseñas
 description: Clasificación de alertas para la actividad sospechosa de direcciones IP relacionadas con la difusión de contraseñas para revisar las alertas y realizar las acciones recomendadas para corregir el ataque y proteger la red.
 keywords: incidentes, alertas, investigar, analizar, respuesta, correlación, ataque, dispositivos, usuarios, 365, microsoft, m365, contraseña, difusión, clasificación de alertas, clasificación de alertas, aplicaciones en la nube, IP sospechosa
-ms.prod: m365-security
+ms.service: microsoft-365-security
+ms.subservice: m365d
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -20,13 +21,12 @@ ms.custom: admindeeplinkDEFENDER
 ms.topic: conceptual
 search.appverid:
 - MOE150
-ms.technology: m365d
-ms.openlocfilehash: 621f52f4dc400d8a3afe56d3f6f08005547d7014
-ms.sourcegitcommit: 23c7e96d8ec31c676c458e7c71f1cc8a1e40a0e4
+ms.openlocfilehash: 43b736b88e79091f27baba400819bac92a03cb2e
+ms.sourcegitcommit: 10e6abe740e27000e223378eb17d657a47555fa8
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/16/2022
-ms.locfileid: "67360752"
+ms.lasthandoff: 08/31/2022
+ms.locfileid: "67482957"
 ---
 # <a name="suspicious-password-spray-related-ip-activity"></a>Actividad de IP sospechosa relacionada con la difusión de contraseñas
 

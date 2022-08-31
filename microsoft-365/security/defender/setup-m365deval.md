@@ -4,7 +4,8 @@ description: Acceda a Microsoft 365 Defender portal y configure el entorno de la
 keywords: Microsoft 365 Defender configuración de prueba, Microsoft 365 Defender configuración piloto, pruebe Microsoft 365 Defender, Microsoft 365 Defender configuración del laboratorio de evaluación.
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
-ms.prod: m365-security
+ms.service: microsoft-365-security
+ms.subservice: m365d
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -17,14 +18,14 @@ ms.collection:
 - M365-security-compliance
 - m365solution-scenario
 - m365solution-evalutatemtp
+- highpri
 ms.topic: article
-ms.technology: m365d
-ms.openlocfilehash: 5d516a7062d8c6f617cee2a260f27ee896689f2c
-ms.sourcegitcommit: 85ce5fd0698b6f00ea1ea189634588d00ea13508
+ms.openlocfilehash: 116efc949edace902b8e71abb27f5c091407fb14
+ms.sourcegitcommit: 10e6abe740e27000e223378eb17d657a47555fa8
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/06/2022
-ms.locfileid: "64667348"
+ms.lasthandoff: 08/31/2022
+ms.locfileid: "67482282"
 ---
 # <a name="set-up-your-microsoft-365-defender-trial-in-a-lab-environment"></a>Configuración de la prueba de Microsoft 365 Defender en un entorno de laboratorio 
 
@@ -38,7 +39,7 @@ Este tema le guía para configurar un entorno de laboratorio dedicado. Para obte
 
 ## <a name="create-an-office-365-e5-trial-tenant"></a>Creación de un inquilino de prueba de Office 365 E5
 >[!NOTE]
->Si ya tiene una suscripción Office 365 o Azure Active Directory existente, puede omitir los pasos de creación de inquilinos de prueba Office 365 E5.
+>Si ya tiene una Office 365 existente o una suscripción de Azure Active Directory, puede omitir los pasos de creación de inquilinos de prueba Office 365 E5.
 
 1. Vaya al [portal Office 365 E5 producto](https://www.microsoft.com/microsoft-365/business/office-365-enterprise-e5-business-software?activetab=pivot%3aoverviewtab) y seleccione **Evaluación gratuita**.
 
@@ -71,7 +72,7 @@ Este tema le guía para configurar un entorno de laboratorio dedicado. Para obte
 
    :::image type="content" source="../../media/mtp-eval-15.png" alt-text="La página de configuración del registro de prueba Office 365 E5 solicitando hacer clic en el botón Ir a la instalación" lightbox="../../media/mtp-eval-15.png":::
 
-8. Conectar el dominio corporativo al inquilino de Office 365. [Opcional] Elija **Conectar un dominio que ya posea** y escriba el nombre de dominio. Haga clic en **Siguiente**.
+8. Conecte el dominio corporativo al inquilino de Office 365. [Opcional] Elija **Conectar un dominio que ya posee** y escriba el nombre de dominio. Haga clic en **Siguiente**.
 
    :::image type="content" source="../../media/mtp-eval-16.png" alt-text="Página de configuración de Office 365 E5 en la que debe personalizar el inicio de sesión y el correo electrónico" lightbox="../../media/mtp-eval-16.png":::
  
@@ -83,9 +84,9 @@ Este tema le guía para configurar un entorno de laboratorio dedicado. Para obte
 
     :::image type="content" source="../../media/mtp-eval-18.png" alt-text="Página de configuración de Office 365 E5 donde puede agregar más usuarios" lightbox="../../media/mtp-eval-18.png":::
  
-11. [Opcional] Descargue Office aplicaciones. Haga clic en **Siguiente** para omitir este paso. 
+11. [Opcional] Descargue aplicaciones de Office. Haga clic en **Siguiente** para omitir este paso. 
 
-    :::image type="content" source="../../media/mtp-eval-19.png" alt-text="Página de Office 365 E5 en la que puede instalar las aplicaciones de Office" lightbox="../../media/mtp-eval-19.png":::
+    :::image type="content" source="../../media/mtp-eval-19.png" alt-text="Página de Office 365 E5 donde puede instalar las aplicaciones de Office" lightbox="../../media/mtp-eval-19.png":::
 
 12. [Opcional] Migrar mensajes de correo electrónico. De nuevo, puede omitir este paso.
 
@@ -104,10 +105,10 @@ Este tema le guía para configurar un entorno de laboratorio dedicado. Para obte
     :::image type="content" source="../../media/mtp-eval-23.png" alt-text="Página de confirmación de finalización de la instalación Office 365 E5" lightbox="../../media/mtp-eval-23.png":::
     
 
-## <a name="enable-microsoft-365-trial-subscription"></a>Habilitación de Microsoft 365 suscripción de prueba
+## <a name="enable-microsoft-365-trial-subscription"></a>Habilitación de la suscripción de prueba de Microsoft 365
 
 >[!NOTE]
->Registrarse en una prueba le ofrece 25 licencias de usuario para usarlas durante un mes. Consulte [Probar o comprar una suscripción Microsoft 365](../../commerce/try-or-buy-microsoft-365.md) para obtener más información.
+>Registrarse en una prueba le ofrece 25 licencias de usuario para usarlas durante un mes. Consulte [Probar o comprar una suscripción a Microsoft 365](../../commerce/try-or-buy-microsoft-365.md) para obtener más información.
 
 1. En [Administración de Microsoft 365 Centro](https://admin.microsoft.com/), haga clic en **Facturación** y, a continuación, vaya a **Comprar servicios**.
 
@@ -127,7 +128,7 @@ Este tema le guía para configurar un entorno de laboratorio dedicado. Para obte
 
    :::image type="content" source="../../media/mtp-eval-27.png" alt-text="La página de evaluación gratuita Microsoft 365 E5 Iniciar, donde debe reloj el botón Probar ahora para iniciar" lightbox="../../media/mtp-eval-27.png":::
  
-6. Vaya a la **Administración de Microsoft 365** **CenterUsersActive** >  >  **users (Usuarios activos**). Seleccione su cuenta de usuario, seleccione **Administrar licencias de productos** y, a continuación, cambie la licencia de Office 365 E5 a **Microsoft 365 E5**. Haga clic en **Guardar**.
+6. Vaya a usuarios **activos** del **Centro** >  >  de Administración de Microsoft 365. Seleccione su cuenta de usuario, seleccione **Administrar licencias de productos** y, a continuación, cambie la licencia de Office 365 E5 a **Microsoft 365 E5**. Haga clic en **Guardar**.
 
    :::image type="content" source="../../media/mtp-eval-28.png" alt-text="Página del Centro de Administración de Microsoft 365 donde puede seleccionar la licencia de Microsoft 365 E5" lightbox="../../media/mtp-eval-28.png":::
  

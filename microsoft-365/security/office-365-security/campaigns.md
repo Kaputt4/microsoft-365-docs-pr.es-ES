@@ -18,14 +18,14 @@ ms.collection:
 - m365initiative-defender-office365
 ms.custom: ''
 description: Obtenga información sobre las vistas de campaña en Microsoft Defender para Office 365.
-ms.technology: mdo
-ms.prod: m365-security
-ms.openlocfilehash: 5308770e4ddb72ead5e4d5dac7506c507aa407f6
-ms.sourcegitcommit: a8fbaf4b441b5325004f7a2dacd9429ec9d80534
+ms.subservice: mdo
+ms.service: microsoft-365-security
+ms.openlocfilehash: 7d705e77e7d288ea6cee594d02277d2c9bb54db1
+ms.sourcegitcommit: 10e6abe740e27000e223378eb17d657a47555fa8
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/26/2022
-ms.locfileid: "65739635"
+ms.lasthandoff: 08/31/2022
+ms.locfileid: "67473972"
 ---
 # <a name="campaign-views-in-microsoft-defender-for-office-365"></a>Vistas de campaña en Microsoft Defender para Office 365
 
@@ -47,7 +47,7 @@ Vea este breve vídeo sobre cómo las vistas de las campañas en Microsoft Defen
 
 ## <a name="what-is-a-campaign"></a>¿Qué es una campaña?
 
-Una campaña es un ataque de correo electrónico coordinado contra una o varias organizaciones. Los ataques por correo electrónico que roban credenciales y datos de la empresa son un sector grande y lucrativo. A medida que las tecnologías aumentan en un esfuerzo por detener los ataques, los atacantes modifican sus métodos en un esfuerzo para garantizar el éxito continuo.
+Una campaña es un ataque de correo electrónico coordinado contra una o varias organizaciones. Email ataques que roban credenciales y datos de la empresa son un sector grande y lucrativo. A medida que las tecnologías aumentan en un esfuerzo por detener los ataques, los atacantes modifican sus métodos en un esfuerzo para garantizar el éxito continuo.
 
 Microsoft aprovecha las grandes cantidades de datos anti-phishing, antispam y antimalware en todo el servicio para ayudar a identificar las campañas. Analizamos y clasificamos la información de ataque según varios factores. Por ejemplo:
 
@@ -60,16 +60,16 @@ Una campaña puede ser de corta duración o puede abarcar varios días, semanas 
 
 ## <a name="campaign-views-in-the-microsoft-365-defender-portal"></a>Vistas de campaña en el portal de Microsoft 365 Defender
 
-Las vistas de campaña están disponibles en el portal de Microsoft 365 Defender en <https://security.microsoft.com> **Correo electrónico &** **campañas** de colaboración \> o directamente en <https://security.microsoft.com/campaigns>.
+Las vistas de campaña están disponibles en el portal de Microsoft 365 Defender en <https://security.microsoft.com> **Email & campañas de colaboración** \> o directamente en .<https://security.microsoft.com/campaigns>
 
 :::image type="content" source="../../media/campaigns-overview.png" alt-text="Información general sobre las campañas en el portal de Microsoft 365 Defender" lightbox="../../media/campaigns-overview.png":::
 
 También puedes acceder a Las vistas de campaña desde:
 
-- Colaboración \> **& por correo electrónico** **Explorador** \> **Vista** \> **Campañas**
-- Colaboración \> **& por correo electrónico** **Explorador** \> **Vista** \> **Todo el correo electrónico** \> **Pestaña Campaña**
-- Colaboración \> **& por correo electrónico** **Explorador** \> **Vista** \> **Phish** \> **Pestaña Campaña**
-- Colaboración \> **& por correo electrónico** **Explorador** \> **Vista** \> **Malware** \> **Pestaña Campaña**
+- **Email &** **campañas** de **vista del** \> **Explorador** \> de colaboración \>
+- Email & **pestaña** **Ver** \> todas las campañas de **correo electrónico** \> del **Explorador** \> de **colaboración** \>
+- Email & pestaña Ver **campaña** **de phish** \> **del** \> **Explorador** \> de **colaboración** \>
+- Email & pestaña Ver **campaña** de **malware** \> **del** \> **Explorador** \> de **colaboración** \>
 
 Para acceder a las vistas de campaña, debe ser miembro de los grupos de roles Administración de la **organización**, **Administrador de seguridad** o **Lector de seguridad** en el portal de Microsoft 365 Defender. Para obtener más información, consulte [Permisos en el portal de Microsoft 365 Defender](permissions-microsoft-365-security-center.md).
 
@@ -100,7 +100,7 @@ La tabla debajo del gráfico de la página de información general muestra la si
 
 - **Destinatarios**: el número de usuarios a los que se ha dirigido esta campaña.
 
-- **Bandeja de entrada**: el número de usuarios que recibieron mensajes de esta campaña en su bandeja de entrada (no entregados a su carpeta correo no deseado).
+- **Bandeja de entrada**: el número de usuarios que recibieron mensajes de esta campaña en su bandeja de entrada (no entregados a su carpeta de Email de correo no deseado).
 
 - **Clicado**: el número de usuarios que han hecho clic en la dirección URL o que han abierto los datos adjuntos en el mensaje de suplantación de identidad (phishing).
 
@@ -108,7 +108,7 @@ La tabla debajo del gráfico de la página de información general muestra la si
 
   Tenga en cuenta que **la tasa de clics** no se usa en las campañas de malware.
 
-- **Visitado**: cuántos usuarios realmente lo hicieron a través del sitio web de carga útil. Si hay valores **clicked**, pero Caja fuerte vínculos bloquearon el acceso al sitio web, este valor será cero.
+- **Visitado**: cuántos usuarios realmente lo hicieron a través del sitio web de carga útil. Si hay valores **clicked** , pero vínculos seguros bloquearon el acceso al sitio web, este valor será cero.
 
 La pestaña **Origen de la campaña** muestra los orígenes de mensajes en un mapa del mundo.
 
@@ -145,7 +145,7 @@ Las propiedades de campaña filtrables que están disponibles en el botón **Tip
 
 - **Avanzadas**:
   - **Id. de mensaje de Internet**: disponible en el campo encabezado **Message-ID** del encabezado del mensaje. Un valor de ejemplo es `<08f1e0f6806a47b4ac103961109ae6ef@server.domain>` (tenga en cuenta los corchetes angulares).
-  - **Id**. de mensaje de red: un valor GUID que está disponible en el campo de encabezado **X-MS-Exchange-Organization-Network-Message-Id** en el encabezado del mensaje.
+  - **Id**. de mensaje de red: valor GUID que está disponible en el campo de encabezado **X-MS-Exchange-Organization-Network-Message-Id** del encabezado del mensaje.
   - **IP del remitente**
   - **Datos adjuntos SHA256**: para buscar el valor hash SHA256 de un archivo en Windows, ejecute el siguiente comando en un símbolo del sistema: `certutil.exe -hashfile "<Path>\<Filename>" SHA256`.
   - **Id. de clúster**
@@ -173,7 +173,7 @@ Después de crear un filtro básico o avanzado, puede guardarlo mediante **Guard
 
 Para exportar el gráfico o la lista de campañas, haga clic en **Exportar** y seleccione **Exportar datos de gráficos** o **Exportar lista de campañas**.
 
-Si tiene una suscripción Microsoft Defender para punto de conexión, puede hacer clic en **MDE Configuración** para conectar o desconectar la información de las campañas con Microsoft Defender para punto de conexión. Para obtener más información, consulte [Integración de Microsoft Defender para Office 365 con Microsoft Defender para punto de conexión](integrate-office-365-ti-with-mde.md).
+Si tiene una suscripción Microsoft Defender para punto de conexión, puede hacer clic en **Configuración de MDE** para conectar o desconectar la información de las campañas con Microsoft Defender para punto de conexión. Para obtener más información, consulte [Integración de Microsoft Defender para Office 365 con Microsoft Defender para punto de conexión](integrate-office-365-ti-with-mde.md).
 
 ## <a name="campaign-details"></a>Detalles de la campaña
 
@@ -188,7 +188,7 @@ En la parte superior de la vista de detalles de la campaña, está disponible la
 - Los siguientes datos para el filtro de intervalo de fechas seleccionado (o que seleccione en la escala de tiempo):
 - **Impacto**
 - **Mensajes**: el número total de destinatarios.
-- **Bandeja de entrada**: el número de mensajes que se entregaron a la Bandeja de entrada, no a la carpeta Correo no deseado.
+- **Bandeja de entrada**: el número de mensajes que se entregaron a la bandeja de entrada, no a la carpeta de Email de correo no deseado.
 - **Vínculo en el que se ha hecho clic**: cuántos usuarios han hecho clic en la carga de la dirección URL en el mensaje de suplantación de identidad ( phishing).
 - **Vínculo visitado**: cuántos usuarios visitaron la dirección URL.
 - **Targeted(%)**: el porcentaje calculado por: (el número de destinatarios de la campaña en su organización) / (el número total de destinatarios de la campaña en todas las organizaciones del servicio). Tenga en cuenta que este valor se calcula durante toda la duración de la campaña y no cambia en función de los filtros de fecha.
@@ -223,15 +223,15 @@ El diagrama contiene la información siguiente:
   |**Fecha de publicación**|`SFV:SKQ`|El mensaje omitió el filtrado de correo no deseado porque se liberó de la cuarentena.|
   |**Permitir inquilino**<sup>\*</sup>|`SFV:SKA`|El mensaje omitió el filtrado de correo no deseado debido a la configuración de una directiva contra correo no deseado. Por ejemplo, el remitente estaba en la lista de remitentes permitidos o en la lista de dominios permitidos.|
   |**Bloque de inquilinos**<sup>\*\*</sup>|`SFV:SKA`|El filtro de correo no deseado bloqueó el mensaje debido a la configuración de una directiva contra correo no deseado. Por ejemplo, el remitente estaba en la lista de remitentes permitidos o en la lista de dominios permitidos.|
-  |**Permitir usuario**<sup>\*</sup>|`SFV:SFE`|El mensaje omitió el filtrado de correo no deseado porque el remitente estaba en la lista de remitentes Caja fuerte de un usuario.|
+  |**Permitir usuario**<sup>\*</sup>|`SFV:SFE`|El mensaje omitió el filtrado de correo no deseado porque el remitente estaba en la lista de remitentes seguros de un usuario.|
   |**Bloque de usuario**<sup>\*\*</sup>|`SFV:BLK`|El filtrado de correo no deseado bloqueó el mensaje porque el remitente estaba en la lista de remitentes bloqueados de un usuario.|
-  |**ZAP**|No aplicable|[La purga automática de cero horas (ZAP)](zero-hour-auto-purge.md) ha movido el mensaje entregado a la carpeta correo no deseado o a la cuarentena. La acción se configura en [directivas contra correo no deseado](configure-your-spam-filter-policies.md).|
+  |**ZAP**|No aplicable|[La purga automática de cero horas (ZAP)](zero-hour-auto-purge.md) ha movido el mensaje entregado a la carpeta o cuarentena de Email no deseado. La acción se configura en [directivas contra correo no deseado](configure-your-spam-filter-policies.md).|
 
   <sup>\*</sup> Revise las directivas contra correo no deseado, ya que es probable que el servicio haya bloqueado el mensaje permitido.
 
   <sup>\*\*</sup> Revise las directivas contra correo no deseado, ya que estos mensajes deben estar en cuarentena, no entregarse.
 
-- **Destinos de mensajes**: es probable que quiera investigar los mensajes que se entregaron a los destinatarios (ya sea a la bandeja de entrada o a la carpeta Correo no deseado), incluso si los usuarios no hicieron clic en la dirección URL de carga del mensaje. También puede quitar los mensajes en cuarentena de la cuarentena. Para obtener más información, vea [Mensajes de correo electrónico en cuarentena en EOP](quarantine-email-messages.md).
+- **Destinos del mensaje**: es probable que quiera investigar los mensajes que se entregaron a los destinatarios (ya sea a la bandeja de entrada o a la carpeta de Email no deseado), incluso si los usuarios no hicieron clic en la dirección URL de carga del mensaje. También puede quitar los mensajes en cuarentena de la cuarentena. Para obtener más información, vea [Mensajes de correo electrónico en cuarentena en EOP](quarantine-email-messages.md).
   - **Carpeta eliminada**
   - **Cayó**
   - **Externo**: el destinatario se encuentra en la organización de correo electrónico local en entornos híbridos.
@@ -249,14 +249,14 @@ El diagrama contiene la información siguiente:
 
 #### <a name="url-clicks"></a>Clics de URL
 
-Cuando se entrega un mensaje de suplantación de identidad (phishing) a la carpeta Bandeja de entrada o correo no deseado de un destinatario, siempre existe la posibilidad de que el usuario haga clic en la dirección URL de carga. No hacer clic en la dirección URL es una pequeña medida de éxito, pero debe determinar por qué el mensaje de suplantación de identidad se entregó incluso al buzón de correo.
+Cuando se entrega un mensaje de suplantación de identidad (phishing) a la bandeja de entrada o a la carpeta de Email no deseado de un destinatario, siempre existe la posibilidad de que el usuario haga clic en la dirección URL de carga. No hacer clic en la dirección URL es una pequeña medida de éxito, pero debe determinar por qué el mensaje de suplantación de identidad se entregó incluso al buzón de correo.
 
 Si un usuario ha hecho clic en la dirección URL de carga en el mensaje de suplantación de identidad (phishing), las acciones se muestran en el área **url clicks** del diagrama en la vista de detalles de la campaña.
 
 - **Permitido**
-- **BlockPage**: el destinatario hizo clic en la dirección URL de carga, pero una directiva [de vínculos de Caja fuerte](safe-links.md) bloqueó su acceso al sitio web malintencionado en su organización.
-- **BlockPageOverride**: el destinatario ha hecho clic en la dirección URL de carga del mensaje, Caja fuerte Vínculos ha intentado detenerlos, pero se les ha permitido invalidar el bloque. Inspeccione [las directivas de vínculos de Caja fuerte](set-up-safe-links-policies.md) para ver por qué los usuarios pueden invalidar el veredicto de vínculos de Caja fuerte y continuar con el sitio web malintencionado.
-- **PendingDetonationPage**: Caja fuerte Datos adjuntos en Microsoft Defender para Office 365 está en proceso de abrir e investigar la dirección URL de carga en un entorno de equipo virtual.
+- **BlockPage**: el destinatario hizo clic en la dirección URL de carga, pero su acceso al sitio web malintencionado fue bloqueado por una directiva [de vínculos seguros](safe-links.md) de su organización.
+- **BlockPageOverride**: el destinatario ha hecho clic en la dirección URL de carga del mensaje, Vínculos seguros intentó detenerlos, pero se les permitió invalidar el bloque. Inspeccione [las directivas de vínculos seguros](set-up-safe-links-policies.md) para ver por qué los usuarios pueden invalidar el veredicto de vínculos seguros y continuar con el sitio web malintencionado.
+- **PendingDetonationPage**: datos adjuntos seguros en Microsoft Defender para Office 365 está en proceso de abrir e investigar la dirección URL de carga en un entorno de equipo virtual.
 - **PendingDetonationPageOverride**: se permitió al destinatario invalidar el proceso de detonación de carga y abrir la dirección URL sin esperar a los resultados.
 
 ### <a name="tabs"></a>Pestañas

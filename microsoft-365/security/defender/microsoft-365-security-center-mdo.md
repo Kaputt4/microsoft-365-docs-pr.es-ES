@@ -1,7 +1,7 @@
 ---
 title: Microsoft Defender para Office 365 en Microsoft 365 Defender
 description: Obtenga información sobre los cambios del Centro de cumplimiento de seguridad & a Microsoft 365 Defender.
-keywords: Microsoft 365 seguridad, Introducción a Microsoft 365 Defender, Microsoft Defender para Office 365, Microsoft Defender para punto de conexión, MDO, MDE, nuevo portal de seguridad de Defender
+keywords: Seguridad de Microsoft 365, Introducción a Microsoft 365 Defender, Microsoft Defender para Office 365, Microsoft Defender para punto de conexión, MDO, MDE, nuevo portal de seguridad de Defender
 ms.date: 02/21/2021
 ms.author: tracyp
 author: msfttracyp
@@ -15,14 +15,14 @@ search.appverid:
 ms.collection:
 - M365-security-compliance
 ms.custom: admindeeplinkDEFENDER
-ms.prod: m365-security
-ms.technology: m365d
-ms.openlocfilehash: 4cd43c5f9e8ecad35ed574d5b60eaf1fa2e635d9
-ms.sourcegitcommit: 9255a7e8b398f92d8dae09886ae95dc8577bf29a
+ms.service: microsoft-365-security
+ms.subservice: m365d
+ms.openlocfilehash: 0a1bf4dd4d46490ed85cbb8631d2581da0a2f7af
+ms.sourcegitcommit: 10e6abe740e27000e223378eb17d657a47555fa8
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/17/2022
-ms.locfileid: "65438310"
+ms.lasthandoff: 08/31/2022
+ms.locfileid: "67482788"
 ---
 # <a name="microsoft-defender-for-office-365-in-microsoft-365-defender"></a>Microsoft Defender para Office 365 en Microsoft 365 Defender
 
@@ -45,11 +45,11 @@ En la tabla siguiente se enumeran los cambios en la navegación entre security &
 |Prevención de pérdida de datos||Consulte [portal de cumplimiento Microsoft Purview](https://compliance.microsoft.com/homepage)||
 |Administración de registros||Consulte [portal de cumplimiento Microsoft Purview](https://compliance.microsoft.com/homepage)||
 |Información de gobierno||Consulte [portal de cumplimiento Microsoft Purview](https://compliance.microsoft.com/homepage)||
-|Administración de amenazas|[Colaboración & por correo electrónico](https://security.microsoft.com/homepage)|||
+|Administración de amenazas|[colaboración Email &](https://security.microsoft.com/homepage)|||
 |Permisos|[Permisos & roles](https://security.microsoft.com/emailandcollabpermissions)|Consulte [portal de cumplimiento Microsoft Purview](https://compliance.microsoft.com/homepage)||
-|Flujo del correo|||Consulte [Exchange centro de administración](https://admin.exchange.microsoft.com/#/)|
+|Flujo del correo|||Consulte [Centro de administración de Exchange](https://admin.exchange.microsoft.com/#/)|
 |Privacidad de datos||Consulte [portal de cumplimiento Microsoft Purview](https://compliance.microsoft.com/homepage)||
-|Buscar |[Auditoría](https://security.microsoft.com/auditlogsearch?viewid=Async%20Search)|Búsqueda (búsqueda de contenido)||
+|Búsqueda|[Auditoría](https://security.microsoft.com/auditlogsearch?viewid=Async%20Search)|Búsqueda (búsqueda de contenido)||
 |Informes|[Report](https://security.microsoft.com/emailandcollabreport)|||
 |Garantía de servicio||Consulte [portal de cumplimiento Microsoft Purview](https://compliance.microsoft.com/homepage)||
 |Supervisión||Consulte [portal de cumplimiento Microsoft Purview](https://compliance.microsoft.com/homepage)||
@@ -65,7 +65,7 @@ Si busca elementos relacionados con el cumplimiento, visite el <a href="https://
 
 ## <a name="new-and-improved-capabilities"></a>Funcionalidades nuevas y mejoradas
 
-La navegación izquierda o la barra de inicio rápido tienen un aspecto familiar. Sin embargo, hay algunos elementos nuevos y actualizados en esta Defender for Cloud.
+La navegación izquierda o la barra de inicio rápido tienen un aspecto familiar. Sin embargo, hay algunos elementos nuevos y actualizados en este Defender for Cloud.
 
 Con la solución unificada de Microsoft 365 Defender, puede unir las señales de amenaza y determinar el ámbito completo y el impacto de la amenaza y cómo afecta actualmente a la organización.
 
@@ -114,11 +114,11 @@ Obtenga más información sobre cómo [realizar un seguimiento y responder a las
 
 Supervise e investigue amenazas para los correos electrónicos, campañas de supervisión, etc., de sus usuarios. Si ha usado el Centro de cumplimiento de seguridad &, le resultará familiar.
 
-![El menú de inicio rápido de Correo electrónico & collab, en el panel de navegación izquierdo del portal de Microsoft 365 Defender.](../../media/mdo-m365d-nav.png)
+![El menú de inicio rápido de Email & collab, en el panel de navegación izquierdo del portal de Microsoft 365 Defender.](../../media/mdo-m365d-nav.png)
   
 #### <a name="email-entity-page"></a>Página de la entidad de correo electrónico
 
-La [página de entidad Correo electrónico](../office-365-security/mdo-email-entity-page.md) *unifica la* información de correo electrónico que se había disperso en distintas páginas o vistas en el pasado. Se ha *centralizado* la investigación de correos electrónicos para encontrar amenazas y tendencias. La información del encabezado y la vista previa del correo electrónico son accesibles desde la misma página de correo electrónico, junto con más información útil relacionada con correos electrónicos. Igualmente, el estado de detonación de direcciones URL o archivos adjuntos malintencionados se puede encontrar en una pestaña en la misma página. La página de entidad de correo electrónico ofrece a los administradores y equipos de operaciones de seguridad los recursos necesarios para permitirles entender con rapidez una amenaza de correo electrónico y su estado, para que puedan decidir de inmediato qué acciones tomar.
+La [página de entidad Email](../office-365-security/mdo-email-entity-page.md) *unifica la* información de correo electrónico que se había disperso en distintas páginas o vistas en el pasado. Se ha *centralizado* la investigación de correos electrónicos para encontrar amenazas y tendencias. La información del encabezado y la vista previa del correo electrónico son accesibles desde la misma página de correo electrónico, junto con más información útil relacionada con correos electrónicos. Igualmente, el estado de detonación de direcciones URL o archivos adjuntos malintencionados se puede encontrar en una pestaña en la misma página. La página de entidad de correo electrónico ofrece a los administradores y equipos de operaciones de seguridad los recursos necesarios para permitirles entender con rapidez una amenaza de correo electrónico y su estado, para que puedan decidir de inmediato qué acciones tomar.
 
 ### <a name="access-and-reports"></a>Accesos e informes
 

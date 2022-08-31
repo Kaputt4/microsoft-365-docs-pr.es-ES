@@ -14,14 +14,14 @@ metadata:
   ms.custom:
   - seo-marvel-apr2020
   description: Los administradores pueden ver las preguntas y respuestas más frecuentes sobre las tareas de administración delegada en Microsoft 365 para partners y revendedores de Microsoft.
-  ms.technology: mdo
-  ms.prod: m365-security
-  ms.openlocfilehash: 457dc56d8869b1d8ddd010139f571dae217655b6
-  ms.sourcegitcommit: 35f167725bec5fd4fe131781a53d96b060cf232d
+  ms.subservice: mdo
+  ms.service: microsoft-365-security
+  ms.openlocfilehash: 5ccd9868bef3e26eaff0edde91f76a789099d734
+  ms.sourcegitcommit: 10e6abe740e27000e223378eb17d657a47555fa8
   ms.translationtype: MT
   ms.contentlocale: es-ES
-  ms.lasthandoff: 06/03/2022
-  ms.locfileid: "65873190"
+  ms.lasthandoff: 08/31/2022
+  ms.locfileid: "67475070"
 title: Preguntas más frecuentes sobre administración delegada
 summary: >
   [!INCLUDE [MDO Trial banner](../includes/mdo-trial-banner.md)]
@@ -34,10 +34,10 @@ sections:
   - question: >
       Soy revendedor y necesito administrar los inquilinos de mis clientes. ¿Cómo funciona esto?
     answer: >
-      Si es un partner o revendedor de Microsoft y se ha registrado para ser un Proveedor de soluciones en la nube de Microsoft (CSP), puede solicitar funcionalidades de _administración delegada_ en la organización Microsoft 365 del cliente. Para más información, consulte los siguientes artículos:
+      Si es un partner o revendedor de Microsoft y se ha registrado para ser un proveedor de soluciones en la nube (CSP) de Microsoft, puede solicitar funcionalidades de _administración delegada_ en la organización de Microsoft 365 del cliente. Para más información, consulte los siguientes artículos:
 
 
-      - [programa de Proveedor de soluciones en la nube](/partner-center/csp-overview)
+      - [Programa proveedor de soluciones en la nube](/partner-center/csp-overview)
 
       - [Obtenga permisos para administrar el servicio o la suscripción de un cliente](/partner-center/customers-revoke-admin-privileges).
   - question: >

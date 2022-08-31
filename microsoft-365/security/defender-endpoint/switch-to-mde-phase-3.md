@@ -15,20 +15,19 @@ audience: ITPro
 ms.collection:
 - M365-security-compliance
 - m365solution-migratetomdatp
-- m365solution-mcafeemigrate
-- m365solution-symantecmigrate
+- highpri
 ms.custom:
 - migrationguides
 - admindeeplinkDEFENDER
 ms.topic: article
 ms.date: 04/01/2022
 ms.reviewer: jesquive, chventou, jonix, chriggs, owtho
-ms.openlocfilehash: d927f1a5972e24c3bae0329bd866a4b56b0a5d95
-ms.sourcegitcommit: c314e989202dc1c9c260fffd459d53bc1f08514e
+ms.openlocfilehash: cc07b9324c8c3e0f1c37e7bd8c4d235945fc1092
+ms.sourcegitcommit: 10e6abe740e27000e223378eb17d657a47555fa8
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/12/2022
-ms.locfileid: "66717258"
+ms.lasthandoff: 08/31/2022
+ms.locfileid: "67482546"
 ---
 # <a name="switch-to-microsoft-defender-for-endpoint---phase-3-onboard"></a>Cambiar a Microsoft Defender para punto de conexión- Fase 3: Incorporación
 
@@ -88,7 +87,7 @@ Para comprobar que los dispositivos incorporados están conectados correctamente
 
 |Sistema operativo|Instrucciones|
 |---|---|
-|Windows 10 o posterior<br/><br/>Windows Server 2022<br/><br/>Windows Server 2019<br/><br/>Windows Server, versión 1803 o posterior<br/><br/>Windows Server 2016<br/><br/>Windows Server 2012 R2|Consulte [Ejecución de una prueba de detección](run-detection-test.md).|
+|Windows 10 o posterior<br/><br/>Windows Server 2022<br/><br/>Windows Server 2019<br/><br/>Windows Server, versión 1803 o posterior<br/><br/>Windows Server 2016<br/><br/>Windows Server 2012 R2|Consulte [Ejecución de una prueba de detección](run-detection-test.md).|
 |macOS (consulte [Requisitos del sistema)](microsoft-defender-endpoint-mac.md)|Descargue y use la aplicación de bricolaje en <https://aka.ms/mdatpmacosdiy>. <br/><br/> Para obtener más información, consulte [Defender para punto de conexión en macOS](microsoft-defender-endpoint-mac.md).|
 |Linux (consulte [Requisitos del sistema](microsoft-defender-endpoint-linux.md#system-requirements))|1. Ejecute el siguiente comando y busque un resultado de **1**: `mdatp health --field real_time_protection_enabled`.<br/><br/>2. Abra una ventana terminal y ejecute el siguiente comando: `curl -o ~/Downloads/eicar.com.txt https://www.eicar.org/download/eicar.com.txt`.<br/><br/>3. Ejecute el siguiente comando para enumerar las amenazas detectadas: `mdatp threat list`.<br/><br/>Para obtener más información, consulte [Defender para punto de conexión en Linux](microsoft-defender-endpoint-linux.md).|
 
@@ -167,7 +166,7 @@ Ahora que se ha incorporado a Defender para punto de conexión y ha desinstalado
 
 Para más información, consulte [Inventario de dispositivos](machines-view-overview.md).
 
-## <a name="next-steps"></a>Siguientes pasos
+## <a name="next-steps"></a>Pasos siguientes
 
 **¡Enhorabuena**! Ha completado la [migración a Defender para punto de conexión](switch-to-mde-overview.md#the-migration-process).
 

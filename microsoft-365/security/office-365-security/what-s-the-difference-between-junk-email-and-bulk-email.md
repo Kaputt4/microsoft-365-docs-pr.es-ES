@@ -19,12 +19,12 @@ ms.custom:
 description: Los administradores pueden aprender sobre las diferencias entre correo no deseado (correo no deseado) y correo electrónico masivo (correo gris) en Exchange Online Protection (EOP).
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 5117954e668c4e64444628078f38dab61b0597cb
-ms.sourcegitcommit: 031b3e963478f642a0d23be37a01f23a01cb3d84
+ms.openlocfilehash: d8fc8bdc3740c5103c33a1e3fdd1d98dc67f8704
+ms.sourcegitcommit: 10e6abe740e27000e223378eb17d657a47555fa8
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/26/2022
-ms.locfileid: "67441797"
+ms.lasthandoff: 08/31/2022
+ms.locfileid: "67482414"
 ---
 # <a name="whats-the-difference-between-junk-email-and-bulk-email-in-eop"></a>¿Cuál es la diferencia entre el correo electrónico no deseado y el correo electrónico masivo en EOP?
 
@@ -52,7 +52,6 @@ Debido a la reacción mixta al correo electrónico masivo, no hay una guía univ
 Las directivas contra correo no deseado tienen un umbral de BCL predeterminado que se usa para identificar el correo electrónico masivo como correo no deseado. Los administradores pueden aumentar o reducir el umbral. Para obtener más información, consulte los siguientes temas:
 
 - [Configurar directivas contra correo no deseado en EOP](configure-your-spam-filter-policies.md).
-
 - [Configuración de directivas contra correo no deseado de EOP](recommended-settings-for-eop-and-office365.md#eop-anti-spam-policy-settings)
 
 Otra opción fácil de pasar por alto: si un usuario se queja de recibir correo electrónico masivo, pero los mensajes proceden de remitentes de confianza que pasan el filtrado de correo no deseado en EOP, haga que el usuario compruebe si hay una opción de cancelación de suscripción en el mensaje de correo electrónico masivo.
@@ -71,12 +70,15 @@ EmailEvents
 
 Esta consulta permite a los administradores identificar remitentes deseados y no deseados. Si un remitente masivo tiene una puntuación de BCL que no cumple el umbral masivo, los administradores pueden [enviar los mensajes del remitente a Microsoft para su análisis](allow-block-email-spoof.md#use-the-microsoft-365-defender-portal-to-create-allow-entries-for-domains-and-email-addresses-in-the-submissions-portal), lo que agrega el remitente como una entrada permitida a la lista de inquilinos permitidos o bloqueados.
 
-Las organizaciones sin Defender para Office 365 plan 2 pueden usar el [informe de estado de protección contra amenazas](view-email-security-reports.md#threat-protection-status-report) para identificar remitentes masivos deseados y no deseados:
+Las organizaciones sin Defender para Office 365 Plan 2 pueden probar las características de Microsoft 365 Defender para Office 365 Plan 2 de forma gratuita. Use la evaluación de Defender para Office 365 de 90 días en <https://security.microsoft.com/atpEvaluation>. Obtenga información sobre quién puede registrarse y probar los términos [aquí](try-microsoft-defender-for-office-365.md) o puede usar el [informe de estado de protección contra amenazas](view-email-security-reports.md#threat-protection-status-report) para identificar remitentes masivos deseados y no deseados:
 
-1. Vaya al informe de estado de protección contra amenazas en <https://security.microsoft.com/reports/URLProtectionActionReport> y filtre por **Ver datos Email** \> **Correo no deseado**.
- 
+1. En el informe Estado de protección contra amenazas, seleccione **Ver datos Email \> Correo no deseado**. Para ir directamente al informe, abra una de las siguientes direcciones URL:
+
+   - EOP: <https://security.microsoft.com/reports/TPSAggregateReport>
+   - Defender para Office 365:<https://security.microsoft.com/reports/TPSAggregateReportATP>
+
 2. Filtre por correo electrónico masivo, seleccione un correo electrónico para investigar y haga clic en la entidad de correo electrónico para obtener más información sobre el remitente. Email entidad solo está disponible para clientes de Defender para Office 365 Plan 2.
 
 3. Una vez que haya identificado remitentes deseados y no deseados, ajuste el umbral masivo al nivel deseado. Si hay remitentes masivos con puntuación BCL que no caben dentro del umbral masivo, [envíe los mensajes a Microsoft para su análisis](allow-block-email-spoof.md#use-the-microsoft-365-defender-portal-to-create-allow-entries-for-domains-and-email-addresses-in-the-submissions-portal), lo que agrega el remitente como una entrada permitida a la lista de inquilinos permitidos o bloqueados.
 
-Los administradores pueden seguir los valores de umbral masivos recuperados o elegir un valor de umbral masivo que se adapte a las necesidades de su organización.
+Los administradores pueden seguir los [valores de umbral masivo recomendados](/microsoft-365/security/office-365-security/recommended-settings-for-eop-and-office365.md#anti-spam-anti-malware-and-anti-phishing-protection-in-eop) o elegir un valor de umbral masivo que se adapte a las necesidades de su organización.

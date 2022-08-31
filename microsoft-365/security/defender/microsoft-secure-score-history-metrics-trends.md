@@ -2,7 +2,8 @@
 title: Seguimiento del historial de puntuación segura de Microsoft y cumplimiento de objetivos
 description: Obtenga información sobre la actividad que ha afectado a la puntuación de seguridad de Microsoft. Descubra tendencias y establezca objetivos.
 keywords: puntuación de seguridad de microsoft, puntuación de seguridad, puntuación de seguridad de office 365, puntuación de seguridad de Microsoft, Microsoft 365 Defender portal, acciones de mejora
-ms.prod: m365-security
+ms.service: microsoft-365-security
+ms.subservice: m365d
 ms.mktglfcycl: deploy
 ms.localizationpriority: medium
 f1.keywords:
@@ -20,13 +21,12 @@ search.appverid:
 ms.custom:
 - seo-marvel-apr2020
 - seo-marvel-jun2020
-ms.technology: m365d
-ms.openlocfilehash: 3604f163ddf8a14098d366f48aca2918b09f1e9e
-ms.sourcegitcommit: 44ece87e3e0c0c851dfc1e77211ac3e5e4a5b973
+ms.openlocfilehash: d1c75e9200b5d1eefc5a6ec5b56ea91b1611efaf
+ms.sourcegitcommit: 10e6abe740e27000e223378eb17d657a47555fa8
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/05/2022
-ms.locfileid: "66617062"
+ms.lasthandoff: 08/31/2022
+ms.locfileid: "67482766"
 ---
 # <a name="track-your-microsoft-secure-score-history-and-meet-goals"></a>Seguimiento del historial de puntuación segura de Microsoft y cumplimiento de objetivos
 

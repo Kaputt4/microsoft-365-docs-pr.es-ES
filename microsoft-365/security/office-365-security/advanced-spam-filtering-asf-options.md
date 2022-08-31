@@ -16,14 +16,14 @@ ms.collection:
 ms.custom:
 - seo-marvel-apr2020
 description: Los administradores pueden obtener información sobre la configuración del filtro de correo no deseado avanzado (ASF) que están disponibles en las directivas contra correo no deseado en Exchange Online Protection (EOP).
-ms.technology: mdo
-ms.prod: m365-security
-ms.openlocfilehash: 75fca937049e71576e1dd599b4cc0f7fba2a2211
-ms.sourcegitcommit: 725a92b0b1555572b306b285a0e7a7614d34e5e5
+ms.subservice: mdo
+ms.service: microsoft-365-security
+ms.openlocfilehash: 67b35aceb9507683ebe83c7a5bcde2c2bcec4d94
+ms.sourcegitcommit: 10e6abe740e27000e223378eb17d657a47555fa8
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/24/2022
-ms.locfileid: "65647675"
+ms.lasthandoff: 08/31/2022
+ms.locfileid: "67473621"
 ---
 # <a name="advanced-spam-filter-asf-settings-in-eop"></a>Configuración del filtro de correo no deseado avanzado (ASF) en EOP
 
@@ -32,7 +32,7 @@ ms.locfileid: "65647675"
 - [Plan 1 y Plan 2 de Microsoft Defender para Office 365](defender-for-office-365.md)
 - [Microsoft 365 Defender](../defender/microsoft-365-defender.md)
 
-En todas las organizaciones Microsoft 365, la configuración del filtro de correo no deseado avanzado (ASF) en las directivas contra correo no deseado de EOP permite a los administradores marcar los mensajes como correo no deseado en función de propiedades específicas del mensaje. ASF se dirige específicamente a estas propiedades porque se encuentran normalmente en el correo no deseado. Dependiendo de la propiedad, las detecciones de ASF marcarán el mensaje como **spam** o **spam de alta confianza**.
+En todas las organizaciones de Microsoft 365, la configuración del filtro de correo no deseado avanzado (ASF) en las directivas contra correo no deseado de EOP permite a los administradores marcar los mensajes como correo no deseado en función de las propiedades específicas del mensaje. ASF se dirige específicamente a estas propiedades porque se encuentran normalmente en el correo no deseado. Dependiendo de la propiedad, las detecciones de ASF marcarán el mensaje como **spam** o **spam de alta confianza**.
 
 > [!NOTE]
 > Habilitar una o varias configuraciones de ASF es un enfoque agresivo para el filtrado de correo no deseado. No se pueden notificar mensajes filtrados por ASF como falsos positivos. Puede identificar los mensajes filtrados por ASF por:
@@ -81,7 +81,7 @@ La siguiente configuración **de Marcar como asf de correo no deseado** establec
 |---|---|---|
 |**Mensajes vacíos** <p> *MarkAsSpamEmptyMessages*|Los mensajes sin asunto, sin contenido en el cuerpo del mensaje y sin datos adjuntos se marcan como correo no deseado de alta confianza.|`X-CustomSpam: Empty Message`|
 |**Etiquetas incrustadas en HTML** <p> *MarkAsSpamEmbedTagsInHtml*|Los mensajes que contienen `<embed>` etiquetas HTML se marcan como correo no deseado de alta confianza. <p> Esta etiqueta permite insertar diferentes tipos de documentos en un documento HTML (por ejemplo, sonidos, vídeos o imágenes).|`X-CustomSpam: Embed tag in html`|
-|**JavaScript o VBScript en HTML** <p> *MarkAsSpamJavaScriptInHtml*|Los mensajes que usan JavaScript o Visual Basic Script Edition en HTML se marcan como spam de alta confianza. <p> Estos lenguajes de scripting se usan en los mensajes de correo electrónico para hacer que se produzcan acciones específicas automáticamente.|`X-CustomSpam: Javascript or VBscript tags in HTML`|
+|**JavaScript o VBScript en HTML** <p> *MarkAsSpamJavaScriptInHtml*|Los mensajes que usan JavaScript o Visual Basic Script Edition en HTML se marcan como correo no deseado de alta confianza. <p> Estos lenguajes de scripting se usan en los mensajes de correo electrónico para hacer que se produzcan acciones específicas automáticamente.|`X-CustomSpam: Javascript or VBscript tags in HTML`|
 |**Etiquetas Form en HTML** <p> *MarkAsSpamFormTagsInHtml*|Los mensajes que contienen `<form>` etiquetas HTML se marcan como spam de alta confianza. <p> Esta etiqueta se usa para crear formularios de sitio web. Los anuncios en correo electrónico a menudo incluyen esa etiqueta con el fin de solicitar información del destinatario.|`X-CustomSpam: Form tag in html`|
 |**Etiquetas de marco o iframe en HTML** <p> *MarkAsSpamFramesInHtml*|Los mensajes que contienen `<frame>` o `<iframe>` etiquetas HTML se marcan como spam de alta confianza. <p> Estas etiquetas se usan en mensajes de correo electrónico para dar formato a la página para mostrar texto o gráficos.|`X-CustomSpam: IFRAME or FRAME in HTML`|
 |**Errores web en HTML** <p> *MarkAsSpamWebBugsInHtml*|Un *error web* (también conocido como *baliza web*) es un elemento gráfico (a menudo tan pequeño como un píxel por un píxel) que se usa en los mensajes de correo electrónico para determinar si el destinatario leyó el mensaje. <p> Los mensajes que contienen errores web se marcan como spam de alta confianza. <p> Los boletines de noticias legítimos pueden usar errores web, aunque muchos consideran esto una invasión de privacidad. |`X-CustomSpam: Web bug`|
@@ -94,4 +94,4 @@ La siguiente configuración **de Marcar como ASF de correo no deseado** establec
 |Configuración de directivas contra correo no deseado|Descripción|Encabezado X agregado|
 |---|---|---|
 |**Error de filtrado de identificador de remitente** <p> *MarkAsSpamFromAddressAuthFail*|Los mensajes que no cumplen una comprobación condicional del identificador de remitente se marcan como correo no deseado. <p> Esta configuración combina una comprobación de SPF con una comprobación de id. de remitente para ayudar a protegerse frente a encabezados de mensaje que contienen remitentes falsificados. <p> El modo de prueba no está disponible para esta configuración.|`X-CustomSpam: SPF From Record Fail`|
-|**Retrodispersión** <p> *MarkAsSpamNdrBackscatter*|*Backscatter* es informes de no entrega inútiles (también conocidos como NDR o mensajes de rebote) causados por remitentes falsificados en mensajes de correo electrónico. Para obtener más información, vea [Mensajes backscatter y EOP](backscatter-messages-and-eop.md). <p> No es necesario configurar esta configuración en los siguientes entornos, ya que se entregan NDR legítimos y backscatter está marcado como spam: <ul><li>Microsoft 365 organizaciones con buzones de Exchange Online.</li><li>Organizaciones de correo electrónico locales donde se enruta correo electrónico *saliente* a través de EOP.</li></ul> <p> En entornos EOP independientes que protegen el correo electrónico entrante en buzones locales, activar o desactivar esta configuración tiene el siguiente resultado: <ul><li> **Activado**: Se entregan los NDR legítimos y el backscatter se marca como spam.</li><li>**Desactivado**: los NDR legítimos y backscatter pasan por el filtrado normal de correo no deseado. La mayoría de los NDR legítimos se entregarán al remitente del mensaje original. Algunos, pero no todos, se marcan como spam. Por definición, el backscatter solo se puede entregar al remitente suplantado, no al remitente original.</li></ul> <p> El modo de prueba no está disponible para esta configuración.|`X-CustomSpam: Backscatter NDR`|
+|**Retrodispersión** <p> *MarkAsSpamNdrBackscatter*|*Backscatter* es informes de no entrega inútiles (también conocidos como NDR o mensajes de rebote) causados por remitentes falsificados en mensajes de correo electrónico. Para obtener más información, vea [Mensajes backscatter y EOP](backscatter-messages-and-eop.md). <p> No es necesario configurar esta configuración en los siguientes entornos, ya que se entregan NDR legítimos y backscatter está marcado como spam: <ul><li>Organizaciones de Microsoft 365 con buzones de Exchange Online.</li><li>Organizaciones de correo electrónico locales donde se enruta correo electrónico *saliente* a través de EOP.</li></ul> <p> En entornos EOP independientes que protegen el correo electrónico entrante en buzones locales, activar o desactivar esta configuración tiene el siguiente resultado: <ul><li> **Activado**: Se entregan los NDR legítimos y el backscatter se marca como spam.</li><li>**Desactivado**: los NDR legítimos y backscatter pasan por el filtrado normal de correo no deseado. La mayoría de los NDR legítimos se entregarán al remitente del mensaje original. Algunos, pero no todos, se marcan como spam. Por definición, el backscatter solo se puede entregar al remitente suplantado, no al remitente original.</li></ul> <p> El modo de prueba no está disponible para esta configuración.|`X-CustomSpam: Backscatter NDR`|
