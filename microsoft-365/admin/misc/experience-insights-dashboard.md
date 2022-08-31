@@ -8,16 +8,17 @@ ms.topic: overview
 ms.service: o365-administration
 ms.localizationpriority: medium
 description: Obtenga un informe periódico sobre cómo los usuarios de su organización usan los servicios de Microsoft 365 y explore cada gráfico para obtener más información.
-ms.openlocfilehash: 4894eb931f392d4d760e15e37f33e8a1f8d88a0d
-ms.sourcegitcommit: f1b3ecde15e5cbbeadaf51b2cadb6b1d677fc265
+ms.openlocfilehash: daedfcee251619df1adb1d228b13036150dea35d
+ms.sourcegitcommit: 10e6abe740e27000e223378eb17d657a47555fa8
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/25/2022
-ms.locfileid: "67437741"
+ms.lasthandoff: 08/31/2022
+ms.locfileid: "67475447"
 ---
 # <a name="microsoft-365-experience-insights-dashboard"></a>Panel de información sobre la experiencia de Microsoft 365
 
-El panel Conclusiones de la experiencia (versión preliminar) muestra los datos entre el uso y la opinión para proporcionarle una vista más completa de la experiencia de su organización con Microsoft 365. Esta información y datos en el panel le ayudarán a comprender mejor y mejorar la experiencia de los usuarios con Microsoft 365. El panel muestra los datos entre el uso y la opinión del usuario, y le ayuda a obtener una imagen más completa de la experiencia general del usuario. Puede explorar en profundidad información específica, como el uso de características para determinadas aplicaciones, comentarios exactos y comentarios de puntuación de promotor neto (NPS) y artículos de ayuda principales vistos por los usuarios de su organización. Esta información puede ayudarle a identificar oportunidades para mejorar las experiencias de aplicaciones y productos de Microsoft 365 del usuario en su organización.
+El panel Conclusiones de la experiencia (versión preliminar) muestra los datos entre el uso y la opinión para proporcionarle una vista más completa de la experiencia de su organización con Microsoft 365.
+La información de experiencia está optimizada para organizaciones con mayores volúmenes de datos, por lo que solo está disponible para organizaciones con más de 20 000 puestos. Estamos trabajando para llevar la experiencia a organizaciones más pequeñas en el futuro. Esta información y datos en el panel le ayudarán a comprender mejor y mejorar la experiencia de los usuarios con Microsoft 365. El panel muestra los datos entre el uso y la opinión del usuario y le ayuda a obtener una imagen más completa de la experiencia general de los usuarios. Puede explorar en profundidad información específica, como el uso de características para determinadas aplicaciones, comentarios exactos y comentarios de puntuación de promotor neto (NPS) y artículos de ayuda principales vistos por los usuarios de su organización. Esta información puede ayudarle a identificar oportunidades para mejorar las experiencias de aplicaciones y productos de Microsoft 365 de los usuarios en su organización.
 
 <!--To learn more about adoption and training for users in your organization, see [Experience insights help article report](experience-insights-help-articles.md). -->
 

@@ -3,7 +3,8 @@ title: Priorizar incidentes en Microsoft 365 Defender
 description: Obtenga información sobre cómo filtrar incidentes de la cola de incidentes en Microsoft 365 Defender
 keywords: incident, queue, overview, devices, identities, users, mailbox, email, incidents, analyze, response, triage
 search.product: eADQiWindows 10XVcnh
-ms.prod: m365-security
+ms.service: microsoft-365-security
+ms.subservice: m365d
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -22,13 +23,12 @@ ms.topic: conceptual
 search.appverid:
 - MOE150
 - MET150
-ms.technology: m365d
-ms.openlocfilehash: 285da473c8e8035a28ee6e64c4950e2b8fe373f5
-ms.sourcegitcommit: 52eea2b65c0598ba4a1b930c58b42dbe62cdaadc
+ms.openlocfilehash: b5f8968020a08197586caef09273d6b4276ff421
+ms.sourcegitcommit: 10e6abe740e27000e223378eb17d657a47555fa8
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/19/2022
-ms.locfileid: "64944423"
+ms.lasthandoff: 08/31/2022
+ms.locfileid: "67480225"
 ---
 # <a name="prioritize-incidents-in-microsoft-365-defender"></a>Priorizar incidentes en Microsoft 365 Defender
 
@@ -81,7 +81,7 @@ En esta tabla se enumeran los nombres de filtro que están disponibles.
 | Orígenes del servicio  | Especificar incidentes que contengan alertas de: Gobernanza de aplicaciones, Microsoft 365 Defender, Microsoft Defender para Office 365, Microsoft Defender para punto de conexión, Microsoft Defender for Identity, Microsoft Defender for Cloud Apps. |
 | Etiquetas | Seleccione uno o varios nombres de etiqueta de la lista. |
 | Varias categorías  | Especifique si el filtro es para más de una categoría. |
-| Categorías | Elija categorías para centrarse en tácticas, técnicas o componentes de ataque específicos vistos. |
+| Categories | Elija categorías para centrarse en tácticas, técnicas o componentes de ataque específicos vistos. |
 | Entidades | Especifique el nombre de un recurso, como un usuario, dispositivo, buzón o nombre de aplicación. |
 | Confidencialidad de datos | Algunos ataques tienen por objetivo extraer datos confidenciales o importantes. Al aplicar un filtro para etiquetas de confidencialidad específicas, puede determinar rápidamente si la información confidencial potencialmente se ha puesto en peligro y dar prioridad a abordar esos incidentes. <br><br> Este filtro solo muestra información cuando se han aplicado [etiquetas de confidencialidad desde Microsoft Purview Information Protection](../../compliance/sensitivity-labels.md). |
 | Grupos de dispositivo | Especifique un nombre [de grupo de dispositivos](/windows/security/threat-protection/microsoft-defender-atp/machine-groups) . |
@@ -119,7 +119,7 @@ En el cuadro **Buscar nombre o identificador** situado encima de la lista de inc
 
 ## <a name="search-for-impacted-assets"></a>Búsqueda de recursos afectados
 
-Puede asignar un nombre a un recurso&mdash; como usuario, dispositivo, buzón o nombre&mdash; de aplicación y buscar todos los incidentes relacionados. 
+Puede asignar un nombre a un recurso&mdash;, como un usuario, un dispositivo, un buzón o un nombre&mdash;de aplicación, y buscar todos los incidentes relacionados. 
 
 ## <a name="specify-a-time-range"></a>Especificar un intervalo de tiempo
 
@@ -133,7 +133,7 @@ La lista predeterminada de incidentes es para los que se han producido en los ú
  - 6 meses
  - Intervalo personalizado en el que puede especificar fechas y horas
 
-## <a name="next-steps"></a>Siguientes pasos
+## <a name="next-steps"></a>Pasos siguientes
 
 Después de determinar qué incidente requiere la prioridad más alta, selecciónelo y:
 

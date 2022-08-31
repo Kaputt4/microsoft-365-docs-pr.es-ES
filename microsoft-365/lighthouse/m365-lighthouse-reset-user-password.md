@@ -17,12 +17,12 @@ ms.custom:
 - M365-Lighthouse
 search.appverid: MET150
 description: En el caso de los proveedores de servicios administrados (MSP) que usan Microsoft 365 Lighthouse, aprenda a restablecer una contraseña para un solo usuario o para varios usuarios de riesgo en distintos inquilinos.
-ms.openlocfilehash: c46f7e744e06118eb3a8cf8dc48bf5dcf1b36e31
-ms.sourcegitcommit: 23a53b5c5e372a2a7ad5e175850224d3d464f6dd
+ms.openlocfilehash: 1133b545cc3b817f06b88112fc9670247dd0dd66
+ms.sourcegitcommit: 10e6abe740e27000e223378eb17d657a47555fa8
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/28/2022
-ms.locfileid: "67055886"
+ms.lasthandoff: 08/31/2022
+ms.locfileid: "67475656"
 ---
 # <a name="reset-a-user-password-in-microsoft-365-lighthouse"></a>Restablecer una contraseña de usuario en Microsoft 365 Lighthouse
 
@@ -30,7 +30,7 @@ Microsoft 365 Lighthouse permite cambiar o restablecer contraseñas de usuario. 
 
 ## <a name="reset-a-password-for-a-user"></a>Restablecimiento de una contraseña para un usuario
 
-1. En el panel de navegación izquierdo de Lighthouse, seleccione **Usuarios** > **de búsqueda de usuarios**.
+1. En el panel de navegación izquierdo de Lighthouse, seleccione **Usuarios** > **Administración de** >  cuentas **Buscar usuarios**.
 
 2. En la pestaña **Buscar usuarios** , escriba el nombre de un usuario en el cuadro de búsqueda.
 
@@ -50,7 +50,7 @@ Microsoft 365 Lighthouse permite cambiar o restablecer contraseñas de usuario. 
 
 1. En el panel de navegación izquierdo de Lighthouse, seleccione **Usuarios** > **de riesgo**.
 
-2. En la pestaña **Usuarios de riesgo** , seleccione un usuario de riesgo en la lista.
+2. En la página **Usuarios de riesgo** , seleccione un usuario de riesgo en la lista.
 
 3. Seleccione **Restablecer contraseña**.
 

@@ -20,13 +20,14 @@ ms.collection:
 - m365solution-overview
 - m365solution-zero-trust
 - zerotrust-solution
+- highpri
 ms.technology: mdo
-ms.openlocfilehash: 97e81f020c18a4f51e8af99f3633c8edb2559a41
-ms.sourcegitcommit: 61b22df76e0f81e5ef11c587b129287886151c79
+ms.openlocfilehash: 7480fdcf3d394e152ff3b1de738d48f5723d7b75
+ms.sourcegitcommit: 10e6abe740e27000e223378eb17d657a47555fa8
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/12/2022
-ms.locfileid: "66750372"
+ms.lasthandoff: 08/31/2022
+ms.locfileid: "67481204"
 ---
 # <a name="zero-trust-identity-and-device-access-configurations"></a>Configuraciones de identidad y acceso a dispositivos de Confianza cero
 
@@ -34,15 +35,15 @@ Las arquitecturas de seguridad que se basan en firewalls de red y redes privadas
 
 Para abordar este nuevo mundo de la informática, Microsoft recomienda encarecidamente el modelo de seguridad Confianza cero, que se basa en estos principios rectores:
 
-- Comprobar explícitamente
+- Comprobar de forma explícita.
 
   Autentíquese y autorice siempre en función de todos los puntos de datos disponibles. Aquí es donde Confianza cero directivas de acceso a dispositivos e identidades son fundamentales para el inicio de sesión y la validación en curso.
 
-- Uso del acceso con privilegios mínimos
+- Utilizar el acceso con menos privilegios
 
   Limite el acceso de usuario con Just-In-Time y Just-Enough-Access (JIT/JEA), directivas adaptables basadas en riesgos y protección de datos.
 
-- Asumir una infracción
+- Asumir la vulneración.
 
   Minimice el radio de explosión y el acceso a segmentos. Compruebe el cifrado de un extremo a otro y use análisis para obtener visibilidad, impulsar la detección de amenazas y mejorar las defensas.
 

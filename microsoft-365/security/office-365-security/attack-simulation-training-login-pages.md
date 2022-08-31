@@ -5,27 +5,27 @@ author: chrisda
 manager: dansimp
 audience: ITPro
 ms.topic: how-to
-ms.prod: m365-security
+ms.service: microsoft-365-security
 ms.localizationpriority: medium
 ms.collection:
 - M365-security-compliance
 - m365initiative-defender-office365
 description: Los administradores pueden aprender a crear y administrar páginas de inicio de sesión para ataques de suplantación de identidad simulados en Microsoft Defender para Office 365 Plan 2.
-ms.technology: mdo
-ms.openlocfilehash: 7057f443675cb0715a41f78c80feb69cdc75d22c
-ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
+ms.subservice: mdo
+ms.openlocfilehash: d0a129bfdd43009a854bffea27a18717bf95df7b
+ms.sourcegitcommit: 10e6abe740e27000e223378eb17d657a47555fa8
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/06/2022
-ms.locfileid: "66998393"
+ms.lasthandoff: 08/31/2022
+ms.locfileid: "67480159"
 ---
 # <a name="login-pages-in-attack-simulation-training"></a>Páginas de inicio de sesión en el aprendizaje de simulación de ataques
 
 **Se aplica a** [Microsoft Defender para Office 365 plan 2](defender-for-office-365.md)
 
-En El entrenamiento de simulación de ataques en Microsoft 365 E5 o Microsoft Defender para Office 365 Plan 2, las páginas de inicio de sesión se muestran a los usuarios en simulaciones que usan la **recopilación de credenciales** y El vínculo en [técnicas de ingeniería social](attack-simulation-training.md#select-a-social-engineering-technique) **de datos adjuntos**.
+En Entrenamiento de simulación de ataque en Microsoft 365 E5 o Microsoft Defender para Office 365 Plan 2, las páginas de inicio de sesión se muestran a los usuarios en simulaciones que usan la **cosecha de credenciales** y **El vínculo en** [técnicas de ingeniería social de datos adjuntos](attack-simulation-training.md#select-a-social-engineering-technique).
 
-Para ver las páginas de inicio de sesión disponibles, abra el portal de Microsoft 365 Defender en <https://security.microsoft.com>, vaya a Email & pestaña \> Biblioteca de contenido de **simulación de entrenamiento** \> de **simulación de simulación** de **colaboración** \> y, a continuación, seleccione **Páginas de inicio de sesión**. Para ir directamente a la pestaña **Biblioteca de contenido de simulación** , donde puede seleccionar **Páginas de inicio de sesión**, use <https://security.microsoft.com/attacksimulator?viewid=simulationcontentlibrary>.
+Para ver las páginas de inicio de sesión disponibles, abra el portal de Microsoft 365 Defender en <https://security.microsoft.com>, vaya a Email & pestaña \> **De colaboración** \> **Entrenamiento de simulación de ataque** \> **biblioteca de contenido de Simulación** y, a continuación, seleccione **Páginas de inicio de sesión**. Para ir directamente a la pestaña **Biblioteca de contenido de simulación** , donde puede seleccionar **Páginas de inicio de sesión**, use <https://security.microsoft.com/attacksimulator?viewid=simulationcontentlibrary>.
 
 **Las páginas de inicio de sesión** tienen dos pestañas:
 
@@ -67,7 +67,7 @@ Al seleccionar una página de inicio de sesión de la lista, aparece un control 
 
 ## <a name="create-login-pages"></a>Crear páginas de inicio de sesión
 
-1. En el portal de Microsoft 365 Defender de <https://security.microsoft.com>, vaya a Email & pestaña \> biblioteca de contenido de **simulación de entrenamiento** \> de **simulación de simulación** de **colaboración** \> y, a continuación, seleccione **Páginas de inicio de sesión**. Para ir directamente a la pestaña **Biblioteca de contenido de simulación** , donde puede seleccionar **Páginas de inicio de sesión**, use <https://security.microsoft.com/attacksimulator?viewid=simulationcontentlibrary>.
+1. En el portal de Microsoft 365 Defender en <https://security.microsoft.com>, vaya a **Email & pestaña** \> biblioteca de contenido Entrenamiento de simulación de ataque **colaboración**  \> \> y, a continuación, seleccione **Páginas de inicio de sesión**. Para ir directamente a la pestaña **Biblioteca de contenido de simulación** , donde puede seleccionar **Páginas de inicio de sesión**, use <https://security.microsoft.com/attacksimulator?viewid=simulationcontentlibrary>.
 Puede crear páginas de inicio de sesión personalizadas en las siguientes ubicaciones:
 
    Haga clic en ![Crear nuevo icono.](../../media/m365-cc-sc-create-icon.png) **Cree una nueva** para iniciar el asistente para crear la página de inicio de sesión del usuario final.
@@ -173,7 +173,7 @@ Para que una página de inicio de sesión sea la predeterminada en las **pestañ
 >
 > La página de inicio de sesión predeterminada también está marcada en la lista, aunque es posible que tenga que ampliar la columna **Nombre** para verla:
 >
-> ![Página de inicio de sesión predeterminada marcada en la lista de páginas de inicio de sesión en Entrenamiento de simulación de ataques.](../../media/attack-sim-training-login-pages-default.png)
+> ![Página de inicio de sesión predeterminada marcada en la lista de páginas de inicio de sesión de Entrenamiento de simulación de ataque.](../../media/attack-sim-training-login-pages-default.png)
 
 ## <a name="related-links"></a>Vínculos relacionados
 
@@ -181,4 +181,4 @@ Para que una página de inicio de sesión sea la predeterminada en las **pestañ
 
 [Creación de una simulación de ataque de suplantación de identidad (phishing)](attack-simulation-training.md)
 
-[Automatizaciones de simulación para el entrenamiento de simulación de ataques](attack-simulation-training-simulation-automations.md)
+[Automatizaciones de simulación para Entrenamiento de simulación de ataque](attack-simulation-training-simulation-automations.md)

@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Al crear una etiqueta de confidencialidad, puede asignar automáticamente una etiqueta a archivos o correos electrónicos, o bien puede pedir a los usuarios que seleccionen la etiqueta recomendada.
-ms.openlocfilehash: 611719819bf64918cdd4f974214d8926e59aecb3
-ms.sourcegitcommit: 60c6ce8cbdf539f8b6ff1c6029eb16f81461a3ad
+ms.openlocfilehash: b986d875bc8a3368cdb6e85aa00c23b4783eaa46
+ms.sourcegitcommit: 10e6abe740e27000e223378eb17d657a47555fa8
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/25/2022
-ms.locfileid: "67434534"
+ms.lasthandoff: 08/31/2022
+ms.locfileid: "67476580"
 ---
 # <a name="apply-a-sensitivity-label-to-content-automatically"></a>Aplicar automáticamente una etiqueta de confidencialidad al contenido
 
@@ -92,7 +92,7 @@ Use la siguiente tabla para ayudarle a identificar las diferencias en el comport
 |:-----|:-----|:-----|
 |Dependencia de la aplicación|Sí ([versiones mínimas](sensitivity-labels-office-apps.md#support-for-sensitivity-label-capabilities-in-apps)) |No\* |
 |Restringir por ubicación|No |Sí |
-|Condiciones: clasificadores que se pueden entrenar|Sí |No |
+|Condiciones: clasificadores que se pueden entrenar|Sí |En versión preliminar |
 |Condiciones: opciones de uso compartido y opciones adicionales para el correo electrónico|No |Sí |
 |Condiciones: excepciones|No |Sí (solo correo electrónico) |
 |Recomendaciones, información sobre herramientas de directiva y sustituciones de usuarios|Sí |No |
@@ -162,7 +162,7 @@ Cuando esta etiqueta de confidencialidad se aplica automáticamente, el usuario 
 
 ### <a name="configuring-sensitive-info-types-for-a-label"></a>Configuración de tipos de información confidencial para una etiqueta
 
-Al seleccionar la opción **Tipos de información confidencial**, verá la misma lista de tipos de información confidencial que al crear una directiva de prevención de pérdida de datos (DLP). Por ejemplo, puede aplicar automáticamente una etiqueta de Extremadamente confidencial a cualquier contenido que contenga información personal de los clientes, como números de tarjeta de crédito, números del seguro social o números de pasaporte:
+Al seleccionar la opción **Tipos de información confidencial** , verá la misma lista de [tipos de información confidencial](sensitive-information-type-learn-about.md) que al crear una directiva de prevención de pérdida de datos (DLP). Por ejemplo, puede aplicar automáticamente una etiqueta extremadamente confidencial a cualquier contenido que incluya información personal de los clientes, como los números de tarjeta de crédito, de la seguridad social o de pasaporte:
 
 ![Tipos de información confidencial para etiquetado automático en aplicaciones de Office.](../media/sensitivity-labels-sensitive-info-types.png)
 
@@ -335,9 +335,9 @@ Por último, puede usar el modo de simulación para ofrecer una aproximación de
 
 7. Para la página **Configurar reglas comunes o avanzadas**: mantenga el valor predeterminado de las **Reglas comunes** para definir reglas que identifiquen el contenido que se va a etiquetar en todas las ubicaciones seleccionadas. Si necesita reglas diferentes por ubicación, incluidas más opciones para Exchange, seleccione **Reglas avanzadas**. Luego, seleccione **Siguiente**.
 
-    Las reglas usan condiciones que incluyen tipos de información confidencial y opciones de uso compartido:
-    - En el caso de los tipos de información confidencial, puede seleccionar tipos de información integrados y personalizados.
-    - En las opciones de uso compartido, puede elegir **solo con las personas de mi organización** o **con personas ajenas a mi organización**.
+    Las reglas usan condiciones que incluyen [tipos de información confidencial](sensitive-information-type-learn-about.md), [clasificadores entrenables](classifier-learn-about.md) y opciones de uso compartido:
+    - Para seleccionar un tipo de información confidencial o un clasificador que se puede entrenar como condición, en **Contenido contiene**, seleccione **Agregar** y, a continuación, elija **Tipos de información confidencial** o **Clasificadores entrenables**.
+    - Para seleccionar opciones de uso compartido como condición, en **Contenido compartido**, elija **solo con personas de mi organización** o **con personas ajenas a mi organización**.
 
     Si la única ubicación es **Exchange** y ha seleccionado **Reglas avanzadas**, hay otras condiciones que puede seleccionar:
     - La dirección IP del remitente es

@@ -1,9 +1,9 @@
 ---
 title: Configurar las funciones del Antivirus de Microsoft Defender
-description: Puede configurar características de Antivirus de Microsoft Defender con Intune, Microsoft Endpoint Configuration Manager, directiva de grupo y PowerShell.
-keywords: Antivirus de Microsoft Defender, antimalware, security, defender, configure, configuration, Config Manager, Microsoft Endpoint Configuration Manager, SCCM, Intune, MDM, administración de dispositivos móviles, GP, directiva de grupo, PowerShell
-ms.prod: m365-security
-ms.technology: mde
+description: Puede configurar las características del Antivirus de Microsoft Defender con Intune, Configuration Manager de punto de conexión de Microsoft, directiva de grupo y PowerShell.
+keywords: Antivirus de Microsoft Defender, antimalware, seguridad, defender, configure, configuration, Config Manager, Microsoft Endpoint Configuration Manager, SCCM, Intune, MDM, administración de dispositivos móviles, GP, directiva de grupo, PowerShell
+ms.service: microsoft-365-security
+ms.subservice: mde
 ms.mktglfcycl: manage
 ms.sitesec: library
 ms.pagetype: security
@@ -15,12 +15,12 @@ ms.custom: nextgen
 ms.reviewer: ''
 manager: dansimp
 ms.collection: M365-security-compliance
-ms.openlocfilehash: 8271f6d0fcc58ce5a7e1ce08f6034a8a90afab48
-ms.sourcegitcommit: 18bc521a88b7b521bccb0e69d02deac764218087
+ms.openlocfilehash: c0950ead64f39dced48bbdea0e242bdc1d8fe3b6
+ms.sourcegitcommit: 10e6abe740e27000e223378eb17d657a47555fa8
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/16/2022
-ms.locfileid: "66115463"
+ms.lasthandoff: 08/31/2022
+ms.locfileid: "67479540"
 ---
 # <a name="configure-microsoft-defender-antivirus-features"></a>Configurar las funciones del Antivirus de Microsoft Defender
 
@@ -35,9 +35,9 @@ ms.locfileid: "66115463"
 **Plataformas**
 - Windows
 
-Puede configurar Antivirus de Microsoft Defender con una serie de herramientas, como:
+Puede configurar antivirus de Microsoft Defender con varias herramientas, como:
 
-- Microsoft Endpoint Manager (que incluye Microsoft Intune y Microsoft Endpoint Configuration Manager)
+- Microsoft Endpoint Manager (que incluye Microsoft Intune y Configuration Manager de punto de conexión de Microsoft)
 - Directiva de grupo
 - Cmdlets de PowerShell
 - Instrumental de administración de Windows (WMI)
@@ -50,8 +50,8 @@ Se pueden configurar las siguientes categorías generales de características:
 - Protección en tiempo real always-on, incluida la protección basada en comportamiento, heurística y aprendizaje automático. Consulte [Configuración del comportamiento, la heurística y la protección en tiempo real](configure-protection-features-microsoft-defender-antivirus.md).
 
 - Cómo interactúan los usuarios finales con el cliente en puntos de conexión individuales. Vea los siguientes recursos:
-  - [Impedir que los usuarios vean o interactúen con la interfaz de usuario Antivirus de Microsoft Defender](prevent-end-user-interaction-microsoft-defender-antivirus.md)
-  - [Impedir o permitir que los usuarios modifiquen localmente Antivirus de Microsoft Defender configuración de directiva](configure-local-policy-overrides-microsoft-defender-antivirus.md)
+  - [Impedir que los usuarios vean o interactúen con la interfaz de usuario del Antivirus de Microsoft Defender](prevent-end-user-interaction-microsoft-defender-antivirus.md)
+  - [Impedir o permitir que los usuarios modifiquen localmente la configuración de la directiva del Antivirus de Microsoft Defender](configure-local-policy-overrides-microsoft-defender-antivirus.md)
 
 > [!TIP]
 > Revise [los temas de referencia de las herramientas de administración y configuración](configuration-management-reference-microsoft-defender-antivirus.md).

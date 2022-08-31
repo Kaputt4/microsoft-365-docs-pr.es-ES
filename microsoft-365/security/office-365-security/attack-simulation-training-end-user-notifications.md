@@ -5,19 +5,19 @@ author: chrisda
 manager: dansimp
 audience: ITPro
 ms.topic: how-to
-ms.prod: m365-security
+ms.service: microsoft-365-security
 ms.localizationpriority: medium
 ms.collection:
 - M365-security-compliance
 - m365initiative-defender-office365
-description: Los administradores pueden aprender a crear mensajes de correo electrónico de notificación del usuario final para el entrenamiento de simulación de ataques en Microsoft Defender para Office 365 plan 2.
-ms.technology: mdo
-ms.openlocfilehash: b26c8060fb869ea9e02ab06396a5a91281bcf3f0
-ms.sourcegitcommit: a7cd723fd62b4b0aae9c2c2df04ead3c28180084
+description: Los administradores pueden aprender a crear mensajes de correo electrónico de notificación del usuario final para Entrenamiento de simulación de ataque en Microsoft Defender para Office 365 plan 2.
+ms.subservice: mdo
+ms.openlocfilehash: 6297fafeb572c807a49161b1bd3e11a0820b7686
+ms.sourcegitcommit: 10e6abe740e27000e223378eb17d657a47555fa8
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/02/2022
-ms.locfileid: "65839272"
+ms.lasthandoff: 08/31/2022
+ms.locfileid: "67481072"
 ---
 # <a name="end-user-notifications-for-attack-simulation-training"></a>Notificaciones del usuario final para el aprendizaje de simulación de ataques
 
@@ -26,14 +26,14 @@ ms.locfileid: "65839272"
 **Se aplica a**
 - [Plan 2 de Microsoft Defender para Office 365](defender-for-office-365.md)
 
-En El entrenamiento de simulación de ataques en Microsoft 365 E5 o Microsoft Defender para Office 365 plan 2, las notificaciones del usuario final son mensajes de correo electrónico que se envían a los usuarios como resultado de [simulaciones](attack-simulation-training.md) o [automatizaciones de simulaciones](attack-simulation-training-simulation-automations.md). Están disponibles los siguientes tipos de notificaciones de usuario final:
+En Entrenamiento de simulación de ataque en Microsoft 365 E5 o Microsoft Defender para Office 365 Plan 2, las notificaciones del usuario final son mensajes de correo electrónico que se envían a los usuarios como resultado de [simulaciones](attack-simulation-training.md) o [automatizaciones de simulaciones](attack-simulation-training-simulation-automations.md). Están disponibles los siguientes tipos de notificaciones de usuario final:
 
 - **Notificación de refuerzo positivo**: se envía cuando los usuarios informan de un mensaje de suplantación de identidad simulado.
 - **Notificación de simulación**: se envía cuando los usuarios se incluyen en una automatización de simulación o simulación, pero no se selecciona ningún entrenamiento.
 - **Notificación de asignación de entrenamiento**: se envía cuando a los usuarios se les asignan los entrenamientos necesarios como resultado de una simulación o automatizaciones de simulación.
 - **Notificación de recordatorio de entrenamiento**: se envía como recordatorio para los entrenamientos necesarios.
 
-Para ver las notificaciones de usuario final disponibles, abra el portal de Microsoft 365 Defender en <https://security.microsoft.com>, vaya a la pestaña \> Biblioteca de contenido de **simulación de entrenamiento** \> de **simulación de simulación** de colaboración \> por **correo electrónico &** y, a continuación, seleccione **Notificaciones del usuario final**. Para ir directamente a la pestaña **Biblioteca de contenido de simulación** , donde puede seleccionar **Notificaciones de usuario final**, use <https://security.microsoft.com/attacksimulator?viewid=simulationcontentlibrary>.
+Para ver las notificaciones de usuario final disponibles, abra el portal de Microsoft 365 Defender en <https://security.microsoft.com>, vaya a **Email & pestaña** \> De colaboración \> **Entrenamiento de simulación de ataque** \> **biblioteca de contenido simulación** y, a continuación, seleccione Notificaciones del **usuario final**. Para ir directamente a la pestaña **Biblioteca de contenido de simulación** , donde puede seleccionar **Notificaciones de usuario final**, use <https://security.microsoft.com/attacksimulator?viewid=simulationcontentlibrary>.
 
 **Las notificaciones de usuario final** tienen dos pestañas:
 
@@ -79,7 +79,7 @@ En el control flotante de detalles de la pestaña **Solo notificaciones de inqui
 
 ## <a name="create-end-user-notifications"></a>Creación de notificaciones de usuario final
 
-1. En el portal de Microsoft 365 Defender en <https://security.microsoft.com>, vaya a la pestaña \> Biblioteca de contenido de **simulación de entrenamiento** \> de **simulación de simulación** de **correo electrónico & colaboración** \> y, a continuación, seleccione **Notificaciones del usuario final**. Para ir directamente a la pestaña **Biblioteca de contenido de simulación** , donde puede seleccionar **Notificaciones de usuario final**, use <https://security.microsoft.com/attacksimulator?viewid=simulationcontentlibrary>.
+1. En el portal de Microsoft 365 Defender de <https://security.microsoft.com>, vaya a **Email & pestaña** \> Biblioteca de **contenido de simulación** **Entrenamiento de simulación de ataque** \> colaboración \> y, a continuación, seleccione **Notificaciones del usuario final**. Para ir directamente a la pestaña **Biblioteca de contenido de simulación** , donde puede seleccionar **Notificaciones de usuario final**, use <https://security.microsoft.com/attacksimulator?viewid=simulationcontentlibrary>.
 
 2. En la pestaña **Notificaciones de inquilino** , haga clic en ![el icono Crear nuevo.](../../media/m365-cc-sc-create-icon.png) **Cree un nuevo** para iniciar el Asistente para notificaciones de usuario final.
 
@@ -104,7 +104,7 @@ En el control flotante de detalles de la pestaña **Solo notificaciones de inqui
    - **Marque esto como el idioma predeterminado**: dado que este es el primer y único idioma de la notificación, este valor está seleccionado y no se puede cambiar.
    - **Asunto**: El valor predeterminado es **Gracias por informar de phish**, pero puede cambiarlo.
    - **Importar correo electrónico**: opcionalmente, puede hacer clic en este botón y, a continuación, hacer clic en **Elegir archivo** para importar un archivo de mensaje de texto sin formato existente.
-   - Área de contenido de correo electrónico: hay dos pestañas disponibles:
+   - Email área de contenido: hay dos pestañas disponibles:
      - **Pestaña Texto** : hay disponible un editor de texto enriquecido para crear el correo electrónico de notificación. Además de la configuración típica de fuente y formato, están disponibles las siguientes opciones:
        - **Etiqueta dinámica**: seleccione una de las siguientes etiquetas:
          - **Insertar nombre**
@@ -121,7 +121,7 @@ En el control flotante de detalles de la pestaña **Solo notificaciones de inqui
    Vuelve a la página **Definir contenido** , donde la notificación que acaba de crear se resume con la siguiente información:
 
    - **Language**
-   - **Subject**
+   - **Asunto**
    - **Categoría**
    - **Acciones**: están disponibles los iconos siguientes:
      - ![Icono de edición.](../../media/m365-cc-sc-edit-icon.png) **Edit**
@@ -183,7 +183,7 @@ No se pueden quitar las notificaciones integradas de la pestaña **Notificacione
 Para quitar una notificación personalizada existente de la pestaña **Notificaciones de inquilino** , realice uno de los pasos siguientes:
 
 - Seleccione la notificación de la lista haciendo clic en la casilla y, a continuación, haga clic en el ![icono Eliminar.](../../media/m365-cc-sc-delete-icon.png) **Icono de eliminación** que aparece.
-- Haga clic en **⋮** (**Acciones**) entre los valores **notificaciones** y **idioma** de la notificación de la lista y, a continuación, seleccione el ![icono Eliminar.](../../media/m365-cc-sc-delete-icon.png) **Delete**.
+- Haga clic en **⋮** (**Acciones**) entre los valores **notificaciones** y **idioma** de la notificación de la lista y, a continuación, seleccione el ![icono Eliminar.](../../media/m365-cc-sc-delete-icon.png) **Eliminar**.
 
 ## <a name="related-links"></a>Vínculos relacionados
 
@@ -191,4 +191,4 @@ Para quitar una notificación personalizada existente de la pestaña **Notificac
 
 [Creación de una simulación de ataque de suplantación de identidad (phishing)](attack-simulation-training.md)
 
-[Automatizaciones de simulación para el entrenamiento de simulación de ataques](attack-simulation-training-simulation-automations.md)
+[Automatizaciones de simulación para Entrenamiento de simulación de ataque](attack-simulation-training-simulation-automations.md)

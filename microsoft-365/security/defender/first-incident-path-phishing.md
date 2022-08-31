@@ -3,7 +3,8 @@ title: Ejemplo de ataque de correo electrónico de suplantación de identidad
 description: Realice un análisis de ejemplo de un ataque de suplantación de identidad (phishing).
 keywords: incidentes, alertas, investigar, correlación, ataque, equipos, dispositivos, usuarios, identidades, identidad, buzón, correo electrónico, 365, Microsoft, M365
 search.product: eADQiWindows 10XVcnh
-ms.prod: m365-security
+ms.service: microsoft-365-security
+ms.subservice: m365d
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -17,17 +18,17 @@ audience: ITPro
 ms.collection:
 - M365-security-compliance
 - m365solution-firstincident
+- highpri
 ms.topic: conceptual
 search.appverid:
 - MOE150
 - MET150
-ms.technology: m365d
-ms.openlocfilehash: dcf620cfaeb1d33665538d16d080e72745b96e42
-ms.sourcegitcommit: c1eaea74c8ffce2f9f477c9469342e88e4a70c14
+ms.openlocfilehash: da2c331dcbe3b76a6c546eaac62684f0709f6ebd
+ms.sourcegitcommit: 10e6abe740e27000e223378eb17d657a47555fa8
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/20/2022
-ms.locfileid: "66892926"
+ms.lasthandoff: 08/31/2022
+ms.locfileid: "67480896"
 ---
 # <a name="example-of-a-phishing-email-attack"></a>Ejemplo de ataque de correo electrónico de suplantación de identidad
 

@@ -362,6 +362,8 @@
   items:
     - name: Servicios financieros
       items:
+        - name: Información general
+          href: financial-services-overview.md
         - name: Seguridad y cumplimiento normativo para servicios financieros
           href: financial-services-secure-collaboration.md
     - name: Servicios de energía y utilidades
@@ -373,7 +375,7 @@
         - name: Información general
           href: healthcare-overview.md
         - name: Teams para sanidad
-          href: /MicrosoftTeams/expand-teams-across-your-org/healthcare/teams-in-hc
+          href: /frontline/teams-in-hc
     - name: Educación
       items:
         - name: Microsoft Teams para el ámbito educativo
@@ -389,7 +391,7 @@
         - name: Información general
           href: retail-overview.md
         - name: Teams para el comercio
-          href: /MicrosoftTeams/expand-teams-across-your-org/teams-for-retail-landing-page
+          href: /frontline/teams-for-retail-landing-page
 - name: Principios de diseño de arquitectura empresarial
   items:
     - name: Información general

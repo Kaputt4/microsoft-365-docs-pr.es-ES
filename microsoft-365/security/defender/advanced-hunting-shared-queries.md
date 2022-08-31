@@ -4,7 +4,8 @@ description: Inicie inmediatamente la protección contra amenazas a través de l
 keywords: búsqueda avanzada, búsqueda de amenazas, búsqueda de ciberamenazas, Microsoft 365 Defender, microsoft 365, m365, búsqueda, consulta, telemetría, detecciones personalizadas, esquema, kusto, repositorio de github, mis consultas, consultas compartidas
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
-ms.prod: m365-security
+ms.service: microsoft-365-security
+ms.subservice: m365d
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -17,13 +18,12 @@ manager: dansimp
 audience: ITPro
 ms.collection: m365-security-compliance
 ms.topic: article
-ms.technology: m365d
-ms.openlocfilehash: 2e86d733304eeaa0e5e16f3ce1bfde87c21258d4
-ms.sourcegitcommit: 9ba00298cfa9ae293e4a57650965fdb3e8ffe07b
+ms.openlocfilehash: d9e90d1c4e353b9ac460420867ed56632b1e5eeb
+ms.sourcegitcommit: 10e6abe740e27000e223378eb17d657a47555fa8
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/11/2022
-ms.locfileid: "64761636"
+ms.lasthandoff: 08/31/2022
+ms.locfileid: "67477129"
 ---
 # <a name="use-shared-queries-in-advanced-hunting"></a>Utilice las consultas compartidas en la búsqueda avanzada
 
@@ -36,10 +36,10 @@ ms.locfileid: "64761636"
 
 Las consultas en la [búsqueda avanzada](advanced-hunting-overview.md) pueden ser compartidas entre usuarios de la misma organización. También puede guardar consultas que solo sean accesibles para usted. También puede encontrar consultas de la comunidad que se comparten públicamente en GitHub. Estas consultas guardadas permiten buscar rápidamente escenarios específicos de búsqueda de amenazas sin tener que escribir consultas desde cero.
 
-En la pestaña Consultas de la búsqueda avanzada, puede encontrar los menús desplegables para **consultas compartidas**, **Mis consultas** y **Community consultas**. Puede seleccionar una flecha hacia abajo para expandir un menú.
+En la pestaña Consultas de búsqueda avanzada, puede encontrar los menús desplegables de **Consultas compartidas**, **Mis consultas** y **Consultas de la comunidad**. Puede seleccionar una flecha hacia abajo para expandir un menú.
 
 
-:::image type="content" source="../../media/advanced-hunting-shared-queries-1.png" alt-text="Consultas compartidas, Mis consultas y consultas de Community en el portal de Microsoft 365 Defender" lightbox="../../media/advanced-hunting-shared-queries-1.png":::
+:::image type="content" source="../../media/advanced-hunting-shared-queries-1.png" alt-text="Consultas compartidas, Mis consultas y Consultas de la comunidad en el portal de Microsoft 365 Defender" lightbox="../../media/advanced-hunting-shared-queries-1.png":::
 
 
 
@@ -73,11 +73,11 @@ Para generar un vínculo que abra la consulta directamente en el editor de consu
 ## <a name="access-community-queries-in-the-github-repo"></a>Acceso a consultas de la comunidad en el repositorio de GitHub  
 Los investigadores de la seguridad de Microsoft comparten regularmente las consultas de búsquedas avanzadas en un [repositorio público designado en GitHub](https://github.com/Azure/Azure-Sentinel/tree/master/Hunting%20Queries/Microsoft%20365%20Defender). Las contribuciones a este repositorio se revisan antes de publicarse. Para contribuir, [únete a GitHub gratis](https://github.com/).
 
-Puede encontrar fácilmente estas consultas en el menú desplegable **Community consultas**.
+Puede encontrar fácilmente estas consultas en el menú desplegable Consultas de la **comunidad** también.
 
-:::image type="content" source="../../media/advanced-hunting-shared-queries-2.png" alt-text="Community consultas organizadas por carpeta en el portal de Microsoft 365 Defender" lightbox="../../media/advanced-hunting-shared-queries-2.png":::
+:::image type="content" source="../../media/advanced-hunting-shared-queries-2.png" alt-text="Consultas de la comunidad organizadas por carpeta en el portal de Microsoft 365 Defender" lightbox="../../media/advanced-hunting-shared-queries-2.png":::
 
-Community consultas se agrupan en carpetas como *Campañas*, *Colección*, *Evasión de defensa* y similares. Se proporciona más información sobre la consulta como comentarios en línea en la propia consulta. 
+Las consultas de la comunidad se agrupan en carpetas como *Campañas*, *Recopilación*, *Evasión de defensa* y similares. Se proporciona más información sobre la consulta como comentarios en línea en la propia consulta. 
 
 >[!tip]
 >Los investigadores de la seguridad de Microsoft también proporcionan búsquedas avanzadas que puede ser utilizadas para buscar actividades e indicadores asociados a las amenazas emergentes. Estas consultas se proporcionan como parte de los informes de [análisis de amenazas](/windows/security/threat-protection/microsoft-defender-atp/threat-analytics) en Microsoft 365 Defender.

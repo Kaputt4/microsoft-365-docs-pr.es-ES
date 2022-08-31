@@ -19,13 +19,14 @@ ms.topic: article
 ms.collection:
 - M365-security-compliance
 - m365solution-asr-rules
+- highpri
 ms.date: 1/18/2022
-ms.openlocfilehash: c503af0931b60b6ef54ae070a377c2ffda5a9f50
-ms.sourcegitcommit: 00948161a72d8cea8c2baba873743fc4a0e19f90
+ms.openlocfilehash: d544d109f0b150efc23447ed1aaaaedc03ed6719
+ms.sourcegitcommit: 10e6abe740e27000e223378eb17d657a47555fa8
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/22/2022
-ms.locfileid: "66969318"
+ms.lasthandoff: 08/31/2022
+ms.locfileid: "67480048"
 ---
 # <a name="attack-surface-reduction-asr-rules-deployment-overview"></a>Introducción a la implementación de reglas de reducción de la superficie expuesta a ataques (ASR)
 
@@ -94,7 +95,7 @@ El Antivirus de Microsoft Defender no debe estar en ninguno de los modos siguien
 - Pasiva
 - Modo pasivo con detección y respuesta de puntos de conexión (EDR) en modo de bloque
 - Examen periódico limitado (LPS)
-- Desactivado
+- Desactivada
 
 Consulte: [Protección entregada en la nube y Antivirus de Microsoft Defender](cloud-protection-microsoft-defender-antivirus.md).
 

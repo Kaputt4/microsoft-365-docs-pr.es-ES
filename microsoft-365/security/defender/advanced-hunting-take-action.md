@@ -4,7 +4,8 @@ description: Abordar rápidamente las amenazas y los recursos afectados en los r
 keywords: búsqueda avanzada, búsqueda de amenazas, búsqueda de ciberamenazas, Microsoft 365 Defender, microsoft 365, m365, búsqueda, consulta, telemetría, tomar medidas
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
-ms.prod: m365-security
+ms.service: microsoft-365-security
+ms.subservice: m365d
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -19,13 +20,12 @@ ms.collection:
 - M365-security-compliance
 - m365initiative-m365-defender
 ms.topic: article
-ms.technology: m365d
-ms.openlocfilehash: b7fbe659902bf89023e994f4e1304f25f3934db8
-ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
+ms.openlocfilehash: c83370c302b10159d4d2325e66224685ab232cad
+ms.sourcegitcommit: 10e6abe740e27000e223378eb17d657a47555fa8
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "65097619"
+ms.lasthandoff: 08/31/2022
+ms.locfileid: "67479518"
 ---
 # <a name="take-action-on-advanced-hunting-query-results"></a>Realizar acciones en los resultados de consultas de búsqueda avanzadas
 
@@ -46,7 +46,7 @@ Puede contener rápidamente amenazas o abordar los recursos en peligro que encue
 ## <a name="required-permissions"></a>Permisos necesarios
 Para realizar acciones en los dispositivos mediante la búsqueda avanzada, necesita un rol en Microsoft Defender para punto de conexión con [permisos para enviar acciones de corrección en los dispositivos](/windows/security/threat-protection/microsoft-defender-atp/user-roles#permission-options). Si no puede realizar ninguna acción, póngase en contacto con un administrador global para obtener el permiso siguiente:
 
-*Acciones de corrección activas > Amenaza y administración de vulnerabilidades: control de corrección*
+*Acciones de corrección activas > administración de amenazas y vulnerabilidades: control de correcciones*
 
 Para tomar medidas en los correos electrónicos a través de la búsqueda avanzada, necesita un rol en Microsoft Defender para Office 365 para [buscar y purgar correos electrónicos](/microsoft-365/security/office-365-security/permissions-in-the-security-and-compliance-center).
 
@@ -76,7 +76,7 @@ Para obtener más información sobre cómo se realizan las acciones de cuarenten
 
 Para realizar cualquiera de las acciones descritas, seleccione uno o varios registros en los resultados de la consulta y, a continuación, seleccione **Realizar acciones**. Un asistente le guiará a través del proceso de selección y envío de las acciones preferidas.
 
-:::image type="content" source="../../media/take-action-multiple.png" alt-text="La opción Realizar acciones en el portal de Microsoft 365 Defender" lightbox="../../media/take-action-multiple.png":::
+:::image type="content" source="../../media/take-action-multiple.png" alt-text="Opción Realizar acciones en el portal de Microsoft 365 Defender" lightbox="../../media/take-action-multiple.png":::
 
 
 ## <a name="take-various-actions-on-emails"></a>Realizar varias acciones en los correos electrónicos
@@ -97,7 +97,7 @@ Estas acciones de correo electrónico también se aplican a [las detecciones per
 
 
 ## <a name="review-actions-taken"></a>Revisar las acciones realizadas
-Cada acción se registra individualmente en el [centro de acción](m365d-action-center.md) en **Centro** >  de **acciónHistoria** ([security.microsoft.com/action-center/history](https://security.microsoft.com/action-center/history)). Vaya al centro de acciones para comprobar el estado de cada acción.
+Cada acción se registra individualmente en el [centro de acciones](m365d-action-center.md) en **Historial** del **centro** >  de acciones ([security.microsoft.com/action-center/history](https://security.microsoft.com/action-center/history)). Vaya al centro de acciones para comprobar el estado de cada acción.
  
 >[!NOTE]
 >Es posible que algunas tablas de este artículo no estén disponibles en Microsoft Defender para punto de conexión. [Active Microsoft 365 Defender](m365d-enable.md) para buscar amenazas mediante más orígenes de datos. Para mover los flujos de trabajo de búsqueda avanzados de Microsoft Defender para punto de conexión a Microsoft 365 Defender, siga los pasos descritos en [Migración de consultas de búsqueda avanzadas desde Microsoft Defender para punto de conexión](advanced-hunting-migrate-from-mde.md) .

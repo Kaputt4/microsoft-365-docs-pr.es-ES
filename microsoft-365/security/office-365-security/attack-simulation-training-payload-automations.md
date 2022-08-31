@@ -1,33 +1,33 @@
 ---
-title: Automatizaciones de carga útil para el entrenamiento de simulación de ataques
+title: Automatizaciones de cargas útiles para Entrenamiento de simulación de ataque
 ms.author: chrisda
 author: chrisda
 manager: dansimp
 audience: ITPro
 ms.topic: how-to
-ms.prod: m365-security
+ms.service: microsoft-365-security
 ms.localizationpriority: medium
 ms.collection:
 - M365-security-compliance
 - m365initiative-defender-office365
-description: Los administradores pueden aprender a usar automatizaciones de carga útil (recopilación de carga) para recopilar e iniciar simulaciones automatizadas para el entrenamiento de simulación de ataques en Microsoft Defender para Office 365 Plan 2.
-ms.technology: mdo
-ms.openlocfilehash: bc7bba0d91e9b2ff1f9baddc52f717450660d070
-ms.sourcegitcommit: a7cd723fd62b4b0aae9c2c2df04ead3c28180084
+description: Los administradores pueden aprender a usar automatizaciones de carga útil (recopilación de carga) para recopilar e iniciar simulaciones automatizadas para Entrenamiento de simulación de ataque en Microsoft Defender para Office 365 Plan 2.
+ms.subservice: mdo
+ms.openlocfilehash: 340ca76086e7696017e1433433a5294a8003b225
+ms.sourcegitcommit: 10e6abe740e27000e223378eb17d657a47555fa8
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/02/2022
-ms.locfileid: "65838921"
+ms.lasthandoff: 08/31/2022
+ms.locfileid: "67480479"
 ---
-# <a name="payload-automations-for-attack-simulation-training"></a>Automatizaciones de carga útil para el entrenamiento de simulación de ataques
+# <a name="payload-automations-for-attack-simulation-training"></a>Automatizaciones de cargas útiles para Entrenamiento de simulación de ataque
 
 [!INCLUDE [MDO Trial banner](../includes/mdo-trial-banner.md)]
 
 **Se aplica a** [Microsoft Defender para Office 365 plan 2](defender-for-office-365.md)
 
-En El entrenamiento de simulación de ataques en Microsoft 365 E5 o Microsoft Defender para Office 365 Plan 2, las automatizaciones de carga útil (también conocidas como _recopilación de carga_) recopilan información de los mensajes de ataque de suplantación de identidad (phishing) del mundo real que los usuarios de su organización notificaron. Aunque es probable que el número de estos mensajes sea bajo en su organización, puede especificar las condiciones que se deben buscar en los ataques de suplantación de identidad (por ejemplo, destinatarios, técnica de ingeniería social, información del remitente, etc.). A continuación, el entrenamiento de simulación de ataque imitará los mensajes y las cargas que se usan en el ataque para iniciar automáticamente simulaciones inofensivas a los usuarios de destino.
+En Entrenamiento de simulación de ataque en Microsoft 365 E5 o Microsoft Defender para Office 365 Plan 2, las automatizaciones de carga útil (también conocidas como _recopilación de carga_) recopilan información de los mensajes de ataque de suplantación de identidad (phishing) del mundo real notificados por los usuarios en su organización. Aunque es probable que el número de estos mensajes sea bajo en su organización, puede especificar las condiciones que se deben buscar en los ataques de suplantación de identidad (por ejemplo, destinatarios, técnica de ingeniería social, información del remitente, etc.). Entrenamiento de simulación de ataque imitará los mensajes y las cargas que se usan en el ataque para iniciar automáticamente simulaciones inofensivas a los usuarios de destino.
 
-Para ver las automatizaciones de carga útil disponibles, abra el portal de Microsoft 365 Defender en <https://security.microsoft.com>, vaya a la pestaña \> **Automatizaciones** de entrenamiento \> de **simulación** de **ataques** & correo \> electrónico y, a continuación, seleccione **Automatizaciones de carga.** Para ir directamente a la pestaña **Automatizaciones** , donde puede seleccionar **Automatizaciones de carga**, use <https://security.microsoft.com/attacksimulator?viewid=automations>.
+Para ver las automatizaciones de carga disponibles, abra el portal de Microsoft 365 Defender en <https://security.microsoft.com>, vaya a Email & pestaña \> **Colaboración** \> **Entrenamiento de simulación de ataque** \> **Automatizaciones** y, a continuación, seleccione **Automatizaciones de carga**. Para ir directamente a la pestaña **Automatizaciones** , donde puede seleccionar **Automatizaciones de carga**, use <https://security.microsoft.com/attacksimulator?viewid=automations>.
 
 Se muestra la siguiente información para cada automatización de carga:
 
@@ -46,16 +46,16 @@ Al seleccionar una automatización de carga de la lista, aparece un control flot
 
 Para crear una automatización de carga, siga estos pasos:
 
-1. En el portal de Microsoft 365 Defender en <https://security.microsoft.com/>, vaya a **Correo electrónico & la** pestaña **Automatizaciones de entrenamiento** \> de simulación de ataque de colaboración \> **Automatizaciones** \> de **carga**. Para ir directamente a la pestaña **Automatizaciones** , donde puede seleccionar **Automatizaciones de carga**, use <https://security.microsoft.com/attacksimulator?viewid=automations>.
+1. En el portal de Microsoft 365 Defender en <https://security.microsoft.com/>, vaya a **Email & pestaña** \> Automatizaciones de la colaboración \> **Entrenamiento de simulación de ataque** \> **automatizaciones**. Para ir directamente a la pestaña **Automatizaciones** , donde puede seleccionar **Automatizaciones de carga**, use <https://security.microsoft.com/attacksimulator?viewid=automations>.
 
    Haga clic en ![el icono Crear automatización.](../../media/m365-cc-sc-create-icon.png) **Crear automatización**.
 
-   :::image type="content" source="../../media/attack-sim-training-sim-automations-create.png" alt-text="El botón Crear simulación de la pestaña Automatizaciones de carga en Entrenamiento de simulación de ataques en el portal de Microsoft 365 Defender" lightbox="../../media/attack-sim-training-sim-automations-create.png":::
+   :::image type="content" source="../../media/attack-sim-training-sim-automations-create.png" alt-text="El botón Crear simulación de la pestaña Automatizaciones de carga de Entrenamiento de simulación de ataque en el portal de Microsoft 365 Defender" lightbox="../../media/attack-sim-training-sim-automations-create.png":::
 
    > [!NOTE]
    > En cualquier momento durante el asistente para la creación, puede hacer clic en **Guardar y cerrar** para guardar el progreso y seguir configurando la automatización de la carga más adelante. Puede seleccionar dónde lo dejó seleccionando la automatización de carga en **Automatizaciones** de carga y, a continuación, haga clic en ![el icono Editar automatización.](../../media/m365-cc-sc-edit-icon.png) **Edite la automatización**. La automatización de carga parcialmente completada tendrá el valor **Estado** **Borrador**.
 
-2. En la página **Nombre de Automation**, configure los siguientes valores:
+2. En la página **Nombre de Automation** , configure los siguientes valores:
 
    - **Nombre**: escriba un nombre descriptivo único para la automatización de carga.
    - **Descripción**: escriba una descripción detallada opcional para la automatización de la carga.
@@ -125,6 +125,6 @@ Para quitar una automatización de carga, seleccione la automatización de carga
 
 [Introducción al uso de aprendizaje de simulación de ataques](attack-simulation-training-get-started.md)
 
-[Automatizaciones de simulación para el entrenamiento de simulación de ataques](attack-simulation-training-simulation-automations.md)
+[Automatizaciones de simulación para Entrenamiento de simulación de ataque](attack-simulation-training-simulation-automations.md)
 
 [Obtenga información a través de la formación de simulación de ataques](attack-simulation-training-insights.md)

@@ -1,5 +1,5 @@
 ---
-title: Ver los resultados de una investigación automatizada en Microsoft 365
+title: Visualización de los resultados de una investigación automatizada en Microsoft 365
 keywords: AIR, autoIR, Microsoft Defender para punto de conexión, automatizado, investigación, corrección, acciones
 f1.keywords:
 - NOCSH
@@ -17,14 +17,14 @@ ms.collection:
 - m365initiative-defender-office365
 description: Durante y después de una investigación automatizada en Microsoft 365, puede ver los resultados y los resultados clave.
 ms.date: 01/29/2021
-ms.technology: mdo
-ms.prod: m365-security
-ms.openlocfilehash: 6e3234168383a0dad6d8a9de3fb680b27b7ce6cb
-ms.sourcegitcommit: 7ac54e1952383d5cd5f084c6a9d247eb747d4904
+ms.subservice: mdo
+ms.service: microsoft-365-security
+ms.openlocfilehash: 75700ed2c5eaa197750cf8634ccbdeadf0ee204e
+ms.sourcegitcommit: 10e6abe740e27000e223378eb17d657a47555fa8
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/17/2022
-ms.locfileid: "66139703"
+ms.lasthandoff: 08/31/2022
+ms.locfileid: "67481556"
 ---
 # <a name="details-and-results-of-an-automated-investigation-in-microsoft-365"></a>Detalles y resultados de una investigación automatizada en Microsoft 365
 
@@ -77,11 +77,11 @@ Ciertos tipos de alertas desencadenan una investigación automatizada en Microso
 
 ## <a name="keep-the-following-points-in-mind"></a>Tenga en cuenta los siguientes puntos
 
-- Los recuentos de correo electrónico se calculan en el momento de la investigación y algunos recuentos se recalculan al abrir los controles flotantes de la investigación (en función de una consulta subyacente).
+- Email recuentos se calculan en el momento de la investigación y algunos recuentos se recalculan al abrir controles flotantes de investigación (en función de una consulta subyacente).
 
-- Los recuentos de correo electrónico que se muestran para los clústeres de correo electrónico en la pestaña **Correo electrónico** y el valor de cantidad de correo electrónico que se muestra en el control flotante del clúster se calculan en el momento de la investigación y no cambian.
+- Los recuentos de correo electrónico que se muestran para los clústeres de correo electrónico en la pestaña **Email** y el valor de cantidad de correo electrónico que se muestra en el control flotante del clúster se calculan en el momento de la investigación y no cambian.
 
-- El recuento de correo electrónico que se muestra en la parte inferior de la pestaña **Correo electrónico** del control flotante del clúster de correo electrónico y el número de mensajes de correo electrónico que se muestran en el Explorador reflejan los mensajes de correo electrónico recibidos después del análisis inicial de la investigación.
+- El recuento de correo electrónico que se muestra en la parte inferior de la pestaña **Email** del control flotante del clúster de correo electrónico y el recuento de mensajes de correo electrónico que se muestran en el Explorador reflejan los mensajes de correo electrónico recibidos después del análisis inicial de la investigación.
 
   Por lo tanto, un clúster de correo electrónico que muestra una cantidad original de 10 mensajes de correo electrónico mostraría un total de 15 cuando llegan cinco mensajes de correo electrónico más entre la fase de análisis de investigación y cuando el administrador revisa la investigación. Del mismo modo, las investigaciones antiguas podrían empezar a mostrar recuentos más altos de los que muestran las consultas del Explorador, ya que los datos de Microsoft Defender para Office 365 Plan 2 expiran después de siete días para las pruebas y después de 30 días para las licencias de pago.
 

@@ -3,7 +3,7 @@ title: Configuración de opciones de examen para antivirus de Microsoft Defender
 description: Puede configurar antivirus de Microsoft Defender para examinar archivos de almacenamiento de correo electrónico, puntos de copia de seguridad o de reanálisis, archivos de red y archivos archivados (por ejemplo, archivos .zip).
 keywords: análisis avanzados, escaneo, correo electrónico, archivo, zip, rar, archivo, examen de repetición de análisis
 ms.pagetype: security
-ms.prod: m365-security
+ms.service: microsoft-365-security
 ms.mktglfcycl: manage
 ms.sitesec: library
 ms.localizationpriority: medium
@@ -12,16 +12,16 @@ ms.author: deniseb
 ms.custom: nextgen
 ms.reviewer: ''
 manager: dansimp
-ms.technology: mde
+ms.subservice: mde
 ms.date: 12/03/2021
 ms.collection: M365-security-compliance
 ms.topic: how-to
-ms.openlocfilehash: 873ea8ee0b8f3f392a312b811b79f9a6e59f9825
-ms.sourcegitcommit: d09eb780dc41a01796eb8137fbe9267231af6746
+ms.openlocfilehash: 6668bfc3cd9b8b2494458a1434f3d296f56c8b09
+ms.sourcegitcommit: 10e6abe740e27000e223378eb17d657a47555fa8
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/19/2022
-ms.locfileid: "67387889"
+ms.lasthandoff: 08/31/2022
+ms.locfileid: "67479321"
 ---
 # <a name="configure-microsoft-defender-antivirus-scanning-options"></a>Configurar opciones de análisis del Antivirus de Microsoft Defender
 

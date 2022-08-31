@@ -19,13 +19,14 @@ ms.collection:
 - m365solution-identitydevice
 - m365solution-scenario
 - zerotrust-solution
+- highpri
 ms.technology: mdo
-ms.openlocfilehash: 6883782a942b7fda8e2dedc721756b59a3e7ede6
-ms.sourcegitcommit: 61b22df76e0f81e5ef11c587b129287886151c79
+ms.openlocfilehash: 27c6557219db62d17ebb90e3e5b36169fc397874
+ms.sourcegitcommit: 10e6abe740e27000e223378eb17d657a47555fa8
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/12/2022
-ms.locfileid: "66749998"
+ms.lasthandoff: 08/31/2022
+ms.locfileid: "67477349"
 ---
 # <a name="prerequisite-work-for-implementing-zero-trust-identity-and-device-access-policies"></a>Trabajo de requisitos previos para implementar directivas de acceso a dispositivos e identidades de Confianza cero
 
@@ -94,12 +95,12 @@ Se recomiendan los siguientes clientes cuando se ha aplicado una directiva de do
 
 |Plataforma|Word/Excel/PowerPoint|OneNote|Aplicación OneDrive|Aplicación SharePoint|[Cliente de sincronización de OneDrive](/onedrive/enable-conditional-access)|
 |---|---|---|---|---|---|
-|Windows 11 o Windows 10|Compatible|Compatible.|N/D|N/D|Compatible.|
+|Windows 11 o Windows 10|Compatible|Compatible|N/D|N/D|Compatible|
 |Windows 8.1|Compatible|Compatible|N/D|N/D|Compatible|
 |Android|Compatible|Compatible|Compatible|Compatible|No aplicable|
 |iOS|Compatible|Compatible|Compatible|Compatible|No aplicable|
-|macOS|Compatible|Compatible.|N/D|N/D|No compatible|
-|Linux|No se admite|No se admite|No se admite|No se admite|No se admite|
+|macOS|Compatible|Compatible|N/D|N/D|No compatible|
+|Linux|No compatible|No compatible|No compatible|No compatible|No compatible|
 
 ### <a name="microsoft-365-client-support"></a>Soporte técnico para el cliente de Microsoft 365
 

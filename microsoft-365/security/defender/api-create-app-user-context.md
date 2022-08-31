@@ -3,7 +3,8 @@ title: Creación de una aplicación para acceder a Microsoft 365 Defender API en
 description: Obtenga información sobre cómo acceder a las API de Microsoft 365 Defender en nombre de un usuario.
 keywords: access, en nombre del usuario, api, aplicación, usuario, token de acceso, token,
 search.product: eADQiWindows 10XVcnh
-ms.prod: m365-security
+ms.service: microsoft-365-security
+ms.subservice: m365d
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -19,14 +20,13 @@ ms.topic: conceptual
 search.appverid:
 - MOE150
 - MET150
-ms.technology: m365d
 ms.custom: api
-ms.openlocfilehash: 41f2763d73bbb9ed0b7ae32dce431cb2c1a4d71f
-ms.sourcegitcommit: 3b194dd6f9ce531ae1b33d617ab45990d48bd3d0
+ms.openlocfilehash: b7fa369729873b21b3e775b3b3fdb2e26c9130f6
+ms.sourcegitcommit: 10e6abe740e27000e223378eb17d657a47555fa8
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/15/2022
-ms.locfileid: "66102600"
+ms.lasthandoff: 08/31/2022
+ms.locfileid: "67479452"
 ---
 # <a name="create-an-app-to-access-microsoft-365-defender-apis-on-behalf-of-a-user"></a>Creación de una aplicación para acceder a Microsoft 365 Defender API en nombre de un usuario
 
@@ -41,7 +41,7 @@ ms.locfileid: "66102600"
 
 En esta página se describe cómo crear una aplicación para obtener acceso mediante programación a Microsoft 365 Defender en nombre de un único usuario.
 
-Si necesita acceso mediante programación a Microsoft 365 Defender sin un usuario definido (por ejemplo, si está escribiendo una aplicación en segundo plano o un demonio), consulte [Creación de una aplicación para acceder a Microsoft 365 Defender sin un usuario](api-create-app-web.md). Si necesita proporcionar acceso para varios inquilinos(por ejemplo, si está atendiendo a una organización grande o a un grupo de clientes), consulte [Creación de una aplicación con acceso de asociado a Microsoft 365 Defender API](api-partner-access.md). Si no está seguro del tipo de acceso que necesita, consulte [Comenzar](api-access.md).
+Si necesita acceso mediante programación a Microsoft 365 Defender sin un usuario definido (por ejemplo, si está escribiendo una aplicación en segundo plano o un demonio), consulte [Creación de una aplicación para acceder a Microsoft 365 Defender sin un usuario](api-create-app-web.md). Si necesita proporcionar acceso para varios inquilinos(por ejemplo, si está atendiendo a una organización grande o a un grupo de clientes), consulte [Creación de una aplicación con acceso de asociado a Microsoft 365 Defender API](api-partner-access.md). Si no está seguro del tipo de acceso que necesita, consulte [Introducción](api-access.md).
 
 Microsoft 365 Defender expone gran parte de sus datos y acciones a través de un conjunto de API mediante programación. Esas API le ayudan a automatizar flujos de trabajo y a usar las funcionalidades de Microsoft 365 Defender. Este acceso a la API requiere la autenticación de OAuth2.0. Para obtener más información, vea [Flujo de código de autorización de OAuth 2.0](/azure/active-directory/develop/active-directory-v2-protocols-oauth-code).
 

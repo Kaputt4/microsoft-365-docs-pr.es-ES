@@ -17,16 +17,19 @@ search.appverid:
 - MET150
 description: Más información sobre el número de instancias y otros límites de tipos de información confidencial
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 5cb574ac9aa0d20818379d7f11ace0a40b68905f
-ms.sourcegitcommit: 60c6ce8cbdf539f8b6ff1c6029eb16f81461a3ad
+ms.openlocfilehash: 4a1f01e26fa36496affbc696befaba60effa6c08
+ms.sourcegitcommit: 10e6abe740e27000e223378eb17d657a47555fa8
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/25/2022
-ms.locfileid: "67434554"
+ms.lasthandoff: 08/31/2022
+ms.locfileid: "67478000"
 ---
 # <a name="sensitive-information-type-limits"></a>Límites de tipos de información confidencial
 
-Estos límites se aplican a todos los tipos de información confidencial (SIT), excepto los datos exactos que coinciden con los tipos de información confidencial.
+Estos límites se aplican a todos los tipos de información confidencial (SIT), excepto a los datos exactos que coinciden con los tipos de información confidencial que admiten hasta 100.
+
+> [!NOTE]
+> Se admiten hasta 100 evaluaciones exactas de coincidencia de datos (EDM). Las directivas que usan SIT de EDM no deben escribirse con un valor **mínimo** o **máximo** de recuento de instancias mayor que 100.
 
 Estos límites se aplican a todas las directivas de Microsoft Purview que usan SIT.
 
@@ -67,6 +70,5 @@ Para que un elemento examinado cumpla los criterios de regla, el número de inst
 
 Por ejemplo, si desea que la regla desencadene una coincidencia cuando se encuentren al menos 500 instancias únicas de una SIT en un solo elemento, establezca el valor `500` **mínimo** en y el valor **máximo** en `Any`.
 
-> [!NOTE]
-> Se admiten hasta 100 evaluaciones exactas de coincidencia de datos (EDM). Las directivas que usan SIT de EDM no deben escribirse con un valor **mínimo** o **máximo** de recuento de instancias mayor que 100.
+
 

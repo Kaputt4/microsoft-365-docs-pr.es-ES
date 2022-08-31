@@ -1,10 +1,11 @@
 ---
-title: Función DeviceFromIP() en búsqueda avanzada para Microsoft 365 Defender
-description: Obtenga información sobre cómo usar la función DeviceFromIP() para obtener los dispositivos a los que se ha asignado una dirección IP específica
-keywords: búsqueda avanzada, búsqueda de amenazas, búsqueda de amenazas cibernéticas, Microsoft 365 Defender, microsoft 365, m365, búsqueda, consulta, telemetría, referencia de esquema, kusto, dispositivo, devicefromIP, función, enriquecimiento
+title: Función DeviceFromIP() en la búsqueda avanzada de Microsoft 365 Defender
+description: Aprenda a usar la función DeviceFromIP() para obtener los dispositivos a los que se ha asignado una dirección IP específica.
+keywords: búsqueda avanzada, búsqueda de amenazas, búsqueda de amenazas cibernética, Microsoft 365 Defender, microsoft 365, m365, búsqueda, consulta, telemetría, referencia de esquema, kusto, dispositivo, devicefromIP, función, enriquecimiento
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
-ms.prod: m365-security
+ms.service: microsoft-365-security
+ms.subservice: m365d
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -17,13 +18,12 @@ manager: dansimp
 audience: ITPro
 ms.collection: m365-security-compliance
 ms.topic: article
-ms.technology: m365d
-ms.openlocfilehash: 4a1f1198c247aefbcbb093d1a5f5105704255692
-ms.sourcegitcommit: 6dcc3b039e0f0b9bae17c386f14ed2b577b453a6
+ms.openlocfilehash: 62df7a7c7bbf61c176d69b115f88bddae09fa04f
+ms.sourcegitcommit: 10e6abe740e27000e223378eb17d657a47555fa8
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/15/2021
-ms.locfileid: "61531584"
+ms.lasthandoff: 08/31/2022
+ms.locfileid: "67479408"
 ---
 # <a name="devicefromip"></a>DeviceFromIP()
 
@@ -37,11 +37,11 @@ ms.locfileid: "61531584"
 [!INCLUDE [Prerelease information](../includes/prerelease.md)]
 
 
-Usa la función de las consultas de búsqueda avanzadas para obtener rápidamente la lista de dispositivos que se han asignado a una dirección IP determinada `DeviceFromIP()` en un momento dado. [](advanced-hunting-overview.md) 
+Use la `DeviceFromIP()` función en las consultas [de búsqueda avanzadas](advanced-hunting-overview.md) para obtener rápidamente la lista de dispositivos que se han asignado a una dirección IP determinada en un momento dado. 
 
-Esta función devuelve una tabla con las siguientes columnas:
+Esta función devuelve una tabla con las columnas siguientes:
 
-| Columna | Tipo de datos | Description |
+| Column | Tipo de datos | Descripción |
 |------------|-------------|-------------|
 | `IP` | `string` | Dirección IP  |
 | `DeviceId` | `string` | Identificador único del dispositivo en el servicio |
@@ -57,8 +57,8 @@ invoke DeviceFromIP()
 
 Esta función se invoca como parte de una consulta.
 
-- **x**: el primer parámetro suele ser ya una columna de la consulta. En este caso, es la columna denominada , la dirección IP para la que desea ver una lista de dispositivos que se le han `IP` asignado. Debe ser una dirección IP local. No se admiten direcciones IP externas.
-- **y**— Un segundo parámetro opcional es el , que indica a la función que obtenga los `Timestamp` dispositivos asignados más recientes a partir de una hora específica. Si no se especifica, la función devuelve los registros disponibles más recientes.
+- **x**: el primer parámetro suele ser una columna de la consulta. En este caso, es la columna denominada `IP`, la dirección IP para la que desea ver una lista de dispositivos que se le han asignado. Debe ser una dirección IP local. No se admiten direcciones IP externas.
+- **y**: un segundo parámetro opcional es , `Timestamp`que indica a la función que obtenga los dispositivos asignados más recientes de una hora específica. Si no se especifica, la función devuelve los registros disponibles más recientes.
 
 ## <a name="example"></a>Ejemplo
 

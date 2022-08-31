@@ -2,7 +2,8 @@
 title: Administración de incidentes en Microsoft 365 Defender
 description: Obtenga información acerca de cómo asignar, actualizar el estado
 keywords: incidente, incidentes, análisis, respuesta, alertas, alertas correlacionadas, asignación, actualización, estado, administración, clasificación, microsoft, 365, m365
-ms.prod: m365-security
+ms.service: microsoft-365-security
+ms.subservice: m365d
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -20,13 +21,12 @@ ms.custom: admindeeplinkDEFENDER
 ms.topic: conceptual
 search.appverid:
 - MOE150
-ms.technology: m365d
-ms.openlocfilehash: 9aa293a84f3bdca6988b1bf8437906f8b1cfbd39
-ms.sourcegitcommit: a8fbaf4b441b5325004f7a2dacd9429ec9d80534
+ms.openlocfilehash: 5bc9135419dfcc85fa1a942c1d06fc52029fbc84
+ms.sourcegitcommit: 10e6abe740e27000e223378eb17d657a47555fa8
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/26/2022
-ms.locfileid: "65740008"
+ms.lasthandoff: 08/31/2022
+ms.locfileid: "67480786"
 ---
 # <a name="manage-incidents-in-microsoft-365-defender"></a>Administración de incidentes en Microsoft 365 Defender
 
@@ -121,7 +121,7 @@ Para incidentes en proceso, continúe con la [investigación](investigate-incide
 
 Para incidentes resueltos, realice una [revisión posterior a los incidentes](first-incident-post.md).
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 - [Información general sobre incidentes](incidents-overview.md)
 - [Priorizar incidentes](incident-queue.md)

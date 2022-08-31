@@ -3,7 +3,8 @@ title: Paso 3. Realizar una revisión posterior al incidente del primer incident
 description: Cómo realizar una revisión del primer incidente en Microsoft 365 Defender.
 keywords: incidentes, alertas, investigar, correlación, ataque, equipos, dispositivos, usuarios, identidades, identidad, buzón, correo electrónico, 365, Microsoft, M365
 search.product: eADQiWindows 10XVcnh
-ms.prod: m365-security
+ms.service: microsoft-365-security
+ms.subservice: m365d
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -17,17 +18,17 @@ audience: ITPro
 ms.collection:
 - M365-security-compliance
 - m365solution-firstincident
+- highpri
 ms.topic: conceptual
 search.appverid:
 - MOE150
 - MET150
-ms.technology: m365d
-ms.openlocfilehash: 1856548b8cb3fd1c8b09844d04adaa21f6fd8776
-ms.sourcegitcommit: c1eaea74c8ffce2f9f477c9469342e88e4a70c14
+ms.openlocfilehash: 76df56c3d1200e8657f288f0b696e8ace3f8ea28
+ms.sourcegitcommit: 10e6abe740e27000e223378eb17d657a47555fa8
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/20/2022
-ms.locfileid: "66892933"
+ms.lasthandoff: 08/31/2022
+ms.locfileid: "67480852"
 ---
 # <a name="step-3-perform-a-post-incident-review-of-your-first-incident"></a>Paso 3. Realizar una revisión posterior al incidente del primer incidente
 

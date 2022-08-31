@@ -1,10 +1,11 @@
 ---
-title: Función AssignedIPAddresses() en búsqueda avanzada para Microsoft 365 Defender
-description: Obtenga información sobre cómo usar la función AssignedIPAddresses() para obtener las direcciones IP más recientes asignadas a un dispositivo
-keywords: búsqueda avanzada, búsqueda de amenazas, búsqueda de amenazas cibernéticas, Microsoft 365 Defender, microsoft 365, m365, búsqueda, consulta, telemetría, referencia de esquema, kusto, FileProfile, perfil de archivo, función, enriquecimiento
+title: Función AssignedIPAddresses() en la búsqueda avanzada de Microsoft 365 Defender
+description: Aprenda a usar la función AssignedIPAddresses() para obtener las direcciones IP más recientes asignadas a un dispositivo.
+keywords: búsqueda avanzada, búsqueda de amenazas, búsqueda de amenazas cibernética, Microsoft 365 Defender, microsoft 365, m365, búsqueda, consulta, telemetría, referencia de esquema, kusto, FileProfile, perfil de archivo, función, enriquecimiento
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
-ms.prod: m365-security
+ms.service: microsoft-365-security
+ms.subservice: m365d
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -17,13 +18,12 @@ manager: dansimp
 audience: ITPro
 ms.collection: m365-security-compliance
 ms.topic: article
-ms.technology: m365d
-ms.openlocfilehash: b82a079a476ee6ed3d5465b52bca381cd49746b5
-ms.sourcegitcommit: 6dcc3b039e0f0b9bae17c386f14ed2b577b453a6
+ms.openlocfilehash: ecb3191888359675fb2fafa373858c388bc8bf08
+ms.sourcegitcommit: 10e6abe740e27000e223378eb17d657a47555fa8
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/15/2021
-ms.locfileid: "61530920"
+ms.lasthandoff: 08/31/2022
+ms.locfileid: "67477701"
 ---
 # <a name="assignedipaddresses"></a>AssignedIPAddresses()
 
@@ -33,17 +33,17 @@ ms.locfileid: "61530920"
 **Se aplica a:**
 - Microsoft 365 Defender
 
-Usa la función de las consultas de búsqueda avanzadas para obtener rápidamente las direcciones IP más recientes que se han `AssignedIPAddresses()` asignado a un dispositivo. [](advanced-hunting-overview.md) Si especifica un argumento de marca de tiempo, esta función obtiene las direcciones IP más recientes en el momento especificado. 
+Use la `AssignedIPAddresses()` función en las consultas [de búsqueda avanzadas](advanced-hunting-overview.md) para obtener rápidamente las direcciones IP más recientes que se han asignado a un dispositivo. Si especifica un argumento timestamp, esta función obtiene las direcciones IP más recientes en el momento especificado. 
 
-Esta función devuelve una tabla con las siguientes columnas:
+Esta función devuelve una tabla con las columnas siguientes:
 
-| Columna | Tipo de datos | Description |
+| Column | Tipo de datos | Descripción |
 |------------|-------------|-------------|
-| `Timestamp` | `datetime` | Última hora en la que se observó el dispositivo con la dirección IP |
+| `Timestamp` | `datetime` | Hora más reciente en que se observó el dispositivo mediante la dirección IP |
 | `IPAddress` | `string` | Dirección IP usada por el dispositivo |
-| `IPType` | `string` | Indica si la dirección IP es una dirección pública o privada |
-| `NetworkAdapterType` | `int` | Tipo de adaptador de red usado por el dispositivo al que se ha asignado la dirección IP. Para obtener los valores posibles, consulte [esta enumeración](/dotnet/api/system.net.networkinformation.networkinterfacetype) |
-| `ConnectedNetworks` | `int` | Redes a las que está conectado el adaptador con la dirección IP asignada. Cada matriz JSON contiene el nombre de red, la categoría (público, privado o dominio), una descripción y una marca que indica si está conectada públicamente a Internet |
+| `IPType` | `string` | Indica si la dirección IP es una dirección pública o privada. |
+| `NetworkAdapterType` | `int` | Tipo de adaptador de red usado por el dispositivo al que se ha asignado la dirección IP. Para conocer los valores posibles, consulte [esta enumeración](/dotnet/api/system.net.networkinformation.networkinterfacetype). |
+| `ConnectedNetworks` | `int` | Redes a las que está conectado el adaptador con la dirección IP asignada. Cada matriz JSON contiene el nombre de red, la categoría (pública, privada o dominio), una descripción y una marca que indica si está conectada públicamente a Internet. |
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -53,8 +53,8 @@ AssignedIPAddresses(x, y)
 
 ## <a name="arguments"></a>Argumentos
 
-- **x** o `DeviceId` valor que identifica el `DeviceName` dispositivo
-- **y:** valor (datetime) que indica a la función que obtenga las direcciones IP asignadas más `Timestamp` recientes a partir de una hora específica. Si no se especifica, la función devuelve las direcciones IP más recientes.
+- **x**:`DeviceId` o `DeviceName` valor que identifica el dispositivo
+- **y**:`Timestamp` valor (datetime) que indica a la función que obtenga las direcciones IP asignadas más recientes de una hora específica. Si no se especifica, la función devuelve las direcciones IP más recientes.
 
 ## <a name="examples"></a>Ejemplos
 
@@ -64,8 +64,8 @@ AssignedIPAddresses(x, y)
 AssignedIPAddresses('example-device-name', ago(1d))
 ```
 
-### <a name="get-ip-addresses-used-by-a-device-and-find-devices-communicating-with-it"></a>Obtener direcciones IP usadas por un dispositivo y buscar dispositivos que se comuniquen con él
-Esta consulta usa la función para obtener direcciones IP asignadas para el dispositivo ( ) en `AssignedIPAddresses()` o antes de una fecha específica ( `example-device-name` `example-date` ). A continuación, usa las direcciones IP para buscar conexiones al dispositivo iniciadas por otros dispositivos. 
+### <a name="get-ip-addresses-used-by-a-device-and-find-devices-communicating-with-it"></a>Obtención de direcciones IP usadas por un dispositivo y búsqueda de dispositivos que se comunican con él
+Esta consulta usa la `AssignedIPAddresses()` función para obtener direcciones IP asignadas para el dispositivo (`example-device-name`) en o antes de una fecha específica (`example-date`). A continuación, usa las direcciones IP para buscar conexiones al dispositivo iniciado por otros dispositivos. 
 
 ```kusto
 let Date = datetime(example-date);

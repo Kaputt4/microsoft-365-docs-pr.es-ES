@@ -1,10 +1,11 @@
 ---
 title: Tabla IdentityDirectoryEvents en el esquema de búsqueda avanzada
-description: Obtenga información sobre el controlador de dominio y los eventos de Active Directory en la tabla IdentityDirectoryEvents del esquema de búsqueda avanzado
-keywords: búsqueda avanzada, búsqueda de amenazas, búsqueda de amenazas cibernéticas, Microsoft 365 Defender, microsoft 365, m365, búsqueda, consulta, telemetría, referencia de esquema, kusto, tabla, columna, tipo de datos, descripción, IdentityDirectoryEvents, controlador de dominio, Active Directory, Microsoft Defender para identidad, identidades
+description: Obtenga información sobre el controlador de dominio y los eventos de Active Directory en la tabla IdentityDirectoryEvents del esquema de búsqueda avanzada.
+keywords: búsqueda avanzada, búsqueda de amenazas, búsqueda de amenazas cibernética, Microsoft 365 Defender, microsoft 365, m365, búsqueda, consulta, telemetría, referencia de esquema, kusto, tabla, columna, tipo de datos, descripción, IdentityDirectoryEvents, controlador de dominio, Active Directory, Microsoft Defender for Identity, identidades
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
-ms.prod: m365-security
+ms.service: microsoft-365-security
+ms.subservice: m365d
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -17,13 +18,12 @@ manager: dansimp
 audience: ITPro
 ms.collection: m365-security-compliance
 ms.topic: article
-ms.technology: m365d
-ms.openlocfilehash: b7d880e0865ebeaf09e40fc543abba37566d2081
-ms.sourcegitcommit: 6dcc3b039e0f0b9bae17c386f14ed2b577b453a6
+ms.openlocfilehash: 9665ff301396d9b3c4f31ed51f17ffbd45f06113
+ms.sourcegitcommit: 10e6abe740e27000e223378eb17d657a47555fa8
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/15/2021
-ms.locfileid: "61531815"
+ms.lasthandoff: 08/31/2022
+ms.locfileid: "67481314"
 ---
 # <a name="identitydirectoryevents"></a>IdentityDirectoryEvents
 
@@ -33,23 +33,23 @@ ms.locfileid: "61531815"
 **Se aplica a:**
 - Microsoft 365 Defender
 
-La tabla del esquema de búsqueda avanzada contiene eventos que implican un controlador de `IdentityDirectoryEvents` dominio local que ejecuta Active Directory (AD). [](advanced-hunting-overview.md) Esta tabla captura varios eventos relacionados con la identidad, como cambios de contraseña, expiración de contraseña y cambios de nombre principal de usuario (UPN). También captura eventos del sistema en el controlador de dominio, como la programación de tareas y la actividad de PowerShell. Utilice esta referencia para crear consultas que devuelvan información sobre la tabla.
+La `IdentityDirectoryEvents` tabla del esquema [de búsqueda avanzada](advanced-hunting-overview.md) contiene eventos que implican un controlador de dominio local que ejecuta Active Directory (AD). Esta tabla captura varios eventos relacionados con la identidad, como los cambios de contraseña, la expiración de contraseñas y los cambios de nombre principal de usuario (UPN). También captura eventos del sistema en el controlador de dominio, como la programación de tareas y la actividad de PowerShell. Utilice esta referencia para crear consultas que devuelvan información sobre la tabla.
 
 >[!TIP]
-> Para obtener información detallada acerca de los tipos de eventos ( valores) admitidos por una tabla, use la referencia de esquema integrada `ActionType` disponible en Defender para la nube.
+> Para obtener información detallada sobre los tipos de eventos (`ActionType` valores) admitidos por una tabla, use la referencia de esquema integrada disponible en Defender for Cloud.
 
 Para obtener información sobre otras tablas del esquema de búsqueda avanzada, [vea la referencia de búsqueda avanzada](advanced-hunting-schema-tables.md).
 
-| Nombre de columna | Tipo de datos | Description |
+| Nombre de columna | Tipo de datos | Descripción |
 |-------------|-----------|-------------|
 | `Timestamp` | `datetime` | Fecha y hora en que se registró el evento. |
-| `ActionType` | `string` | Tipo de actividad que desencadenó el evento. Vea la [referencia de esquema en el portal](advanced-hunting-schema-tables.md?#get-schema-information-in-the-security-center) para obtener más información |
-| `Application` | `string` | Aplicación que realizó la acción grabada |
-| `TargetAccountUpn` | `string` | Nombre principal de usuario (UPN) de la cuenta a la que se aplicó la acción grabada |
-| `TargetAccountDisplayName` | `string` | Nombre para mostrar de la cuenta a la que se aplicó la acción grabada |
-| `TargetDeviceName` | `string` | Nombre de dominio completo (FQDN) del dispositivo al que se aplicó la acción grabada |
-| `DestinationDeviceName` | `string` | Nombre del dispositivo que ejecuta la aplicación de servidor que procesó la acción grabada |
-| `DestinationIPAddress` | `string` | Dirección IP del dispositivo que ejecuta la aplicación de servidor que procesó la acción grabada |
+| `ActionType` | `string` | Tipo de actividad que desencadenó el evento. Consulte la [referencia de esquema en el portal](advanced-hunting-schema-tables.md?#get-schema-information-in-the-security-center) para obtener más información. |
+| `Application` | `string` | Aplicación que realizó la acción registrada |
+| `TargetAccountUpn` | `string` | Nombre principal de usuario (UPN) de la cuenta a la que se aplicó la acción registrada |
+| `TargetAccountDisplayName` | `string` | Nombre para mostrar de la cuenta a la que se aplicó la acción registrada |
+| `TargetDeviceName` | `string` | Nombre de dominio completo (FQDN) del dispositivo al que se aplicó la acción registrada |
+| `DestinationDeviceName` | `string` | Nombre del dispositivo que ejecuta la aplicación de servidor que procesó la acción registrada |
+| `DestinationIPAddress` | `string` | Dirección IP del dispositivo que ejecuta la aplicación de servidor que procesó la acción registrada |
 | `DestinationPort` | `string` | Puerto de destino de la actividad |
 | `Protocol` | `string` | Protocolo usado durante la comunicación |
 | `AccountName` | `string` | Nombre de usuario de la cuenta |
@@ -57,12 +57,12 @@ Para obtener información sobre otras tablas del esquema de búsqueda avanzada, 
 | `AccountUpn` | `string` | Nombre principal de usuario (UPN) de la cuenta |
 | `AccountSid` | `string` | Identificador de seguridad (SID) de la cuenta |
 | `AccountObjectId` | `string` | Identificador único de la cuenta en Azure Active Directory |
-| `AccountDisplayName` | `string` | Nombre del usuario de la cuenta que se muestra en la libreta de direcciones. Normalmente, una combinación de un nombre o un nombre determinado, un inicio intermedio y un apellido o apellido. |
+| `AccountDisplayName` | `string` | Nombre del usuario de la cuenta que se muestra en la libreta de direcciones. Normalmente, una combinación de un nombre determinado o de nombre, una iniciación intermedia y un apellido o apellido. |
 | `DeviceName` | `string` | Nombre de dominio completo (FQDN) del dispositivo |
 | `IPAddress` | `string` | Dirección IP asignada al dispositivo durante la comunicación |
 | `Port` | `string` | Puerto TCP usado durante la comunicación |
 | `Location` | `string` | Ciudad, país u otra ubicación geográfica asociada al evento |
-| `ISP` | `string` | Proveedor de servicios de Internet asociado con la dirección IP |
+| `ISP` | `string` | Proveedor de servicios de Internet asociado a la dirección IP |
 | `ReportId` | `long` | Identificador único del evento |
 | `AdditionalFields` | `string` | Información adicional sobre la entidad o el evento |
 

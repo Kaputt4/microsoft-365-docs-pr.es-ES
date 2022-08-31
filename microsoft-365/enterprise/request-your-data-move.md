@@ -15,19 +15,19 @@ f1.keywords:
 - NOCSH
 description: Los clientes Office 365 existentes deben enviar una solicitud antes de la fecha límite para que su país mueva los datos de sus servicios de Microsoft 365 a su nueva ubicación geográfica.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 492e7680524728a136d5aa5530285e50b47f2935
-ms.sourcegitcommit: 35f167725bec5fd4fe131781a53d96b060cf232d
+ms.openlocfilehash: 821aa47c2101c2370e95372a7f9b9eb302199918
+ms.sourcegitcommit: 10e6abe740e27000e223378eb17d657a47555fa8
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "65874160"
+ms.lasthandoff: 08/31/2022
+ms.locfileid: "67476218"
 ---
 # <a name="how-to-request-your-data-move"></a>Cómo solicitar el movimiento de datos
 
 > [!NOTE]
-> La información de esta página solo se aplica a los clientes que tenían inquilinos Microsoft 365 existentes antes de que se abrieron los nuevos centros de datos en su centro de datos geográfico. La idoneidad de la migración también depende de la fecha de aprovisionamiento del servicio específica.  Es posible que la fecha de creación del inquilino no siempre sea la fecha única que importa.
+> La información de esta página solo se aplica a los clientes que tenían inquilinos de Microsoft 365 existentes antes de que se abrieron los nuevos centros de datos en su centro de datos geográfico. La idoneidad de la migración también depende de la fecha de aprovisionamiento del servicio específica.  Es posible que la fecha de creación del inquilino no siempre sea la fecha única que importa.
   
-Los clientes de Microsoft 365 aptos pueden solicitar la migración de todos los datos principales de clientes de su organización en reposo.  El programa admite solicitudes para cada país en el período de tiempo descrito en la tabla y de clientes con un país de registro válido asociado a su inquilino de Microsoft 365.
+Los clientes aptos de Microsoft 365 pueden solicitar la migración de todos los datos principales de clientes de su organización en reposo.  El programa admite solicitudes para cada país en el período de tiempo descrito en la tabla y de clientes con un país de registro válido asociado a su inquilino de Microsoft 365.
   
 ## <a name="when-can-i-request-a-move"></a>¿Cuándo puedo solicitar un traslado?
 
@@ -36,7 +36,7 @@ Los clientes de Microsoft 365 aptos pueden solicitar la migración de todos los 
 |Japón  | |Período de solicitud cerrado  |
 |Australia, Nueva Zelanda, Fiji  | |Período de solicitud cerrado  |
 |India  | |Período de solicitud cerrado  |
-|Canadá  | |Período de solicitud cerrado  |
+|Canada  | |Período de solicitud cerrado  |
 |Reino Unido  | |Período de solicitud cerrado  |
 |Corea del Sur  | |Período de solicitud cerrado  |
 |Francia  | |Período de solicitud cerrado  |
@@ -46,16 +46,17 @@ Los clientes de Microsoft 365 aptos pueden solicitar la migración de todos los 
 |Noruega  | |Período de solicitud cerrado  |
 |Alemania  | |Período de solicitud cerrado  |
 |Brasil  | |Período de solicitud cerrado  |
-|Suecia  |16 de noviembre de 2021  |31 de mayo de 2022  |
+|Suecia  | |Período de solicitud cerrado  |
+|Qatar  |30 de agosto de 2022  |28 de febrero de 2023  |
 
 ## <a name="how-to-request-a-move"></a>Cómo solicitar un traslado
 
 Los clientes aptos verán una página en el Centro de administración de Microsoft 365, lo que les permitirá solicitar que se muevan sus datos principales del cliente a su nueva región del centro de datos.  
   
-Para acceder a la página del Centro de administración de Microsoft 365, en el panel de navegación de la izquierda, expanda **Configuración** y, a continuación, haga clic en **Org Configuración**.
+Para acceder a la página de la Centro de administración de Microsoft 365, en el panel de navegación de la izquierda, expanda **Configuración** y, a continuación, haga clic en **Configuración de la organización**.
 Seleccione la pestaña **Perfil de la organización** y, a continuación, seleccione la opción **Residencia de datos**.
   
-No verá esta sección si el inquilino no es apto para el programa de movimiento de Microsoft 365.  Si su organización tiene requisitos de residencia de datos y necesita solicitar la migración, marque la casilla y, a continuación, **Guarde**.
+No verá esta sección si el inquilino no es apto para el Programa de movimiento de Microsoft 365.  Si su organización tiene requisitos de residencia de datos y necesita solicitar la migración, marque la casilla y, a continuación, **Guarde**.
   
 ![Pantalla de acción de participación en el centro de datos.](../media/dataresidencyflyoutae.jpg)
   
@@ -63,13 +64,13 @@ El texto de la sección **Residencia de datos** cambiará para indicar que **su 
   
 ## <a name="what-happens-after-requesting-a-move"></a>¿Qué ocurre después de solicitar un traslado?
 
-Después de solicitar un traslado, planearemos mover los datos principales del cliente en reposo para los servicios de Microsoft 365 aptos tan rápidamente como lo permitan nuestras restricciones operativas. Debido a la naturaleza imprevisible de muchas de las restricciones, no podemos compartir una fecha o un período de tiempo específicos para los movimientos. Los administradores de inquilinos del cliente verán una notificación en el Centro de mensajes una vez completado el traslado de cada servicio.
+Después de solicitar un traslado, planearemos mover los datos principales del cliente en reposo para los servicios de Microsoft 365 aptos tan rápidamente como nuestras restricciones operativas lo permitan. Debido a la naturaleza imprevisible de muchas de las restricciones, no podemos compartir una fecha o un período de tiempo específicos para los movimientos. Los administradores de inquilinos del cliente verán una notificación en el Centro de mensajes una vez completado el traslado de cada servicio.
   
 Los movimientos pueden tardar hasta 24 meses desde la fecha límite de solicitud para que su país se complete.
   
 ## <a name="microsoft-teams"></a>Microsoft Teams
 
-A partir de enero de 2020, los clientes de Office 365 países elegibles pueden participar en la migración de Microsoft Teams datos del servicio de chat.  Los clientes que anteriormente optaron por un traslado de Data Residency también tendrán Teams mover a la ubicación geográfica del centro de datos local.  Estos clientes no requieren ninguna acción adicional.
+A partir de enero de 2020, los clientes de Office 365 países elegibles pueden participar en la migración de datos del servicio de chat de Microsoft Teams.  Los clientes que anteriormente optaron por un traslado de Data Residency también tendrán que mover Teams a la ubicación geográfica del centro de datos local.  Estos clientes no requieren ninguna acción adicional.
 
 ## <a name="related-topics"></a>Temas relacionados
 

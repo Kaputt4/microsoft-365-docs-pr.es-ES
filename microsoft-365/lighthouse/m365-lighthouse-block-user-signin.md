@@ -17,12 +17,12 @@ ms.custom:
 - M365-Lighthouse
 search.appverid: MET150
 description: En el caso de los proveedores de servicios administrados (MSP) que usan Microsoft 365 Lighthouse, aprenda a bloquear una cuenta de usuario si cree que está en peligro para que los usuarios no puedan iniciar sesión.
-ms.openlocfilehash: b9e02ba0696d76ec58ec880e12001cdc6800430c
-ms.sourcegitcommit: 23a53b5c5e372a2a7ad5e175850224d3d464f6dd
+ms.openlocfilehash: 27cfcff4fd3d56a276e1499d8241395f48551003
+ms.sourcegitcommit: 10e6abe740e27000e223378eb17d657a47555fa8
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/28/2022
-ms.locfileid: "67056518"
+ms.lasthandoff: 08/31/2022
+ms.locfileid: "67477987"
 ---
 # <a name="block-user-sign-in-in-microsoft-365-lighthouse"></a>Bloquear el inicio de sesión de usuario Microsoft 365 Lighthouse
 
@@ -30,7 +30,7 @@ Puede bloquear una cuenta de usuario si cree que está en peligro. Al bloquear u
 
 ## <a name="block-sign-in-for-a-user"></a>Bloquear el inicio de sesión de un usuario
 
-1. En el panel de navegación izquierdo de Lighthouse, seleccione **Usuarios** > **de búsqueda de usuarios**.
+1. En el panel de navegación izquierdo de Lighthouse, seleccione **Usuarios** > **Administración de** > cuentas **Buscar usuarios**.
 
 2. En la pestaña **Buscar usuarios** , escriba el nombre de un usuario en el cuadro de búsqueda.
 
@@ -46,7 +46,7 @@ Puede bloquear una cuenta de usuario si cree que está en peligro. Al bloquear u
 
 1. En el panel de navegación izquierdo de Lighthouse, seleccione **Usuarios** > **de riesgo**.
 
-2. En la pestaña **Usuarios de riesgo** , seleccione el conjunto de usuarios en los que desea realizar acciones.
+2. En la página **Usuarios de riesgo** , seleccione el conjunto de usuarios en los que desea realizar acciones.
 
 3. Seleccione **Bloquear inicio de sesión**.
 

@@ -17,24 +17,24 @@ ms.custom:
 - M365-Lighthouse
 search.appverid: MET150
 description: En el caso de los proveedores de servicios administrados (MSP) que usan Microsoft 365 Lighthouse, obtenga información sobre cómo buscar usuarios.
-ms.openlocfilehash: 44e043c144fd35e42f2f5ea937670007ce8b3c62
-ms.sourcegitcommit: 5e5c2c1f7c321b5eb1c5b932c03bdd510005de13
+ms.openlocfilehash: bd0b29393eab77403556640b9fd5294c2357ec76
+ms.sourcegitcommit: 10e6abe740e27000e223378eb17d657a47555fa8
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/15/2022
-ms.locfileid: "66823515"
+ms.lasthandoff: 08/31/2022
+ms.locfileid: "67475700"
 ---
 # <a name="search-for-users-in-microsoft-365-lighthouse"></a>Buscar usuarios en Microsoft 365 Lighthouse
 
 Microsoft 365 Lighthouse permite buscar un usuario específico en todos los inquilinos activos. Esto le permite encontrar un usuario rápidamente sin necesidad de navegar por diferentes inquilinos.
 
-1. En el panel de navegación izquierdo de Lighthouse, seleccione **Usuarios** > **de búsqueda de usuarios**.
+1. En el panel de navegación izquierdo de Lighthouse, seleccione **Usuarios** > **Administración de** >  cuentas **Buscar usuarios**.
 
 2. En el cuadro de búsqueda, escriba un nombre para mostrar o un nombre principal de usuario (UPN).
 
 3. En la lista de resultados de búsqueda, seleccione el usuario que desea investigar.
 
-## <a name="next-steps"></a>Siguientes pasos
+## <a name="next-steps"></a>Pasos siguientes
 
 Una vez que se encuentra el usuario, puede restablecer su contraseña o bloquear su cuenta. Para obtener más información, vea [Restablecer contraseña de usuario](m365-lighthouse-reset-user-password.md) o [Bloquear inicio de sesión de usuario Microsoft 365 Lighthouse](m365-lighthouse-block-user-signin.md).
 

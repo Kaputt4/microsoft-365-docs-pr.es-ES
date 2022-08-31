@@ -18,16 +18,16 @@ search.appverid:
 - MOE150
 - MET150
 description: El Explorador de actividades le permite ver y filtrar las acciones que los usuarios están realizando en el contenido etiquetado.
-ms.openlocfilehash: 06e77cf567c34f49da7206dd22f030ddb35e6b3d
-ms.sourcegitcommit: d1f51dbd12ceffe6a6aeebffde0f9a744486f2d4
+ms.openlocfilehash: 0091c1b48544f4e693554901aec5ef645b5a908c
+ms.sourcegitcommit: 10e6abe740e27000e223378eb17d657a47555fa8
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/23/2022
-ms.locfileid: "67417398"
+ms.lasthandoff: 08/31/2022
+ms.locfileid: "67478627"
 ---
 # <a name="get-started-with-activity-explorer"></a>Introducción al explorador de actividad
 
-La [información general de clasificación de datos](data-classification-overview.md) y las pestañas [del explorador de contenido](data-classification-content-explorer.md) proporcionan visibilidad sobre qué contenido se ha detectado y etiquetado y dónde está ese contenido. El explorador de actividad complementa este conjunto de funciones permitiéndole supervisar lo que se lleva a cabo con el contenido de la etiqueta. El Explorador de actividades proporciona una vista histórica de las actividades en el contenido etiquetado. La información de actividad se recopila de los registros de auditoría unificados de Microsoft 365, se transforma y está disponible en la interfaz de usuario del Explorador de actividad. El explorador de actividad informa de datos de hasta 30 días.
+La [información general de clasificación de datos](data-classification-overview.md) y las pestañas [del explorador de contenido](data-classification-content-explorer.md) proporcionan visibilidad sobre qué contenido se ha detectado y etiquetado y dónde está ese contenido. [El explorador de actividad](https://compliance.microsoft.com/dataclassification?viewid=activitiesexplorer) redondea este conjunto de funciones al permitirle supervisar lo que se está haciendo con el contenido etiquetado. El Explorador de actividades proporciona una vista histórica de las actividades en el contenido etiquetado. La información de actividad se recopila de los registros de auditoría unificados de Microsoft 365, se transforma y está disponible en la interfaz de usuario del Explorador de actividad. El explorador de actividad informa de datos de hasta 30 días.
 
 ![Explorador de actividad de información general de la captura de pantalla del marcador de posición.](../media/data-classification-activity-explorer-1.png)
 

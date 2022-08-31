@@ -6,8 +6,8 @@ author: chrisda
 manager: dansimp
 audience: Admin
 ms.topic: overview
-ms.prod: m365-security
-ms.technology: mdo
+ms.service: microsoft-365-security
+ms.subservice: mdo
 ms.localizationpriority: medium
 search.appverid:
 - MET150
@@ -19,12 +19,12 @@ ms.custom:
 - seo-marvel-apr2020
 ROBOTS: NOINDEX, NOFOLLOW
 description: Los administradores pueden obtener información sobre el modo de prueba de Microsoft Defender para Office 365
-ms.openlocfilehash: 9cce1e910f5497ce2dfe265923f66e87306fb90e
-ms.sourcegitcommit: fa90763559239c4c46c5e848939126763879d8e4
+ms.openlocfilehash: 883e91227ccf99835d85ea5253f89d765c3693df
+ms.sourcegitcommit: 10e6abe740e27000e223378eb17d657a47555fa8
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/13/2022
-ms.locfileid: "66773265"
+ms.lasthandoff: 08/31/2022
+ms.locfileid: "67481380"
 ---
 # <a name="about-the-microsoft-defender-for-office-365-trial"></a>Acerca de la prueba de Microsoft Defender para Office 365
 
@@ -43,12 +43,12 @@ Una evaluación Microsoft Defender para Office 365 es una manera fácil de proba
 |Característica|Descripción|
 |---|---|
 |[Configuración exclusiva en las directivas contra suplantación de identidad](set-up-anti-phishing-policies.md#exclusive-settings-in-anti-phishing-policies-in-microsoft-defender-for-office-365)|Obtenga la protección de suplantación de usuario, la protección de suplantación de dominio, la inteligencia de buzones de correo y los umbrales avanzados de suplantación de identidad.|
-|[Datos adjuntos seguros](safe-attachments.md)|Inspeccione los datos adjuntos del correo electrónico y otros archivos en un entorno de detonación controlado para detectar malware nuevo y evasivo.|
+|[Archivos adjuntos seguros](safe-attachments.md)|Inspeccione los datos adjuntos del correo electrónico y otros archivos en un entorno de detonación controlado para detectar malware nuevo y evasivo.|
 |[Vínculos seguros](safe-links.md)|Realice comprobaciones de tiempo de clic para asegurarse de que las direcciones URL que podrían haber pasado la inspección inicial no se han armado.|
 |[Seguimientos de amenazas](threat-trackers.md)<sup>\*</sup>|Use widgets informativos y vistas para identificar problemas de ciberseguridad que podrían afectar a su organización.|
 |[Explorador de amenazas](threat-explorer.md)<sup>\*</sup>|Busque información casi en tiempo real sobre amenazas en el correo electrónico Office 365.|
 |[Investigación y respuesta automatizadas (AIR)](office-365-air.md)<sup>\*</sup>|Busque y corrija automáticamente los objetos de amenaza a medida que se desencadenen alertas.|
-|[Entrenamiento de simulación de ataques](attack-simulation-training.md)<sup>\*</sup>|Entrene a los usuarios para que identifiquen los ataques de suplantación de identidad (phishing) y respondan correctamente.|
+|[Entrenamiento de simulación de ataque](attack-simulation-training.md)<sup>\*</sup>|Entrene a los usuarios para que identifiquen los ataques de suplantación de identidad (phishing) y respondan correctamente.|
 |[Vistas de campaña](campaigns.md)<sup>\*</sup>|Investigue y responda a la actividad de correo electrónico malintencionado a gran escala.|
 |[Informes con funcionalidades de Defender para Office 365](view-reports-for-mdo.md)|Vea los informes, incluido el estado de protección contra amenazas, la protección contra amenazas url, la latencia de correo, etc.|
 |[Protección de cuenta prioritaria](/microsoft-365/admin/setup/priority-accounts)<sup>\*</sup>|Los usuarios que identifica como cuentas de prioridad se etiquetan en alertas, informes e investigaciones para que se destaquen. También puede usar la etiqueta Prioridad en los filtros.|
@@ -62,7 +62,7 @@ Una prueba permite a las organizaciones configurar y configurar fácilmente las 
 De forma predeterminada, estas directivas se limitan a todos los usuarios de la organización, pero durante o después de la configuración de la prueba, puede cambiar la asignación de directivas a usuarios específicos.
 
 > [!NOTE]
-> Es probable que las directivas antispam existentes estén configuradas con la acción **Mover mensaje a la carpeta Correo no deseado** para el veredicto de spam de alta confianza en las directivas contra correo no deseado. La plantilla Estándar para directivas de seguridad preestablecidas usa el **mensaje de cuarentena** de acción para el correo no deseado de alta confianza, y las directivas de seguridad preestablecidas siempre se aplican antes que las directivas de antispam personalizadas o la directiva de antispam predeterminada. Para obtener más información sobre la configuración predeterminada, estándar y estricta, consulte [Configuración recomendada para EOP y Microsoft Defender para Office 365 seguridad](recommended-settings-for-eop-and-office365.md).
+> Es probable que las directivas antispam existentes estén configuradas con la **acción Mover mensaje a la carpeta de correo no deseado Email** para el veredicto de spam de alta confianza en las directivas contra correo no deseado. La plantilla Estándar para directivas de seguridad preestablecidas usa el **mensaje de cuarentena** de acción para el correo no deseado de alta confianza, y las directivas de seguridad preestablecidas siempre se aplican antes que las directivas de antispam personalizadas o la directiva de antispam predeterminada. Para obtener más información sobre la configuración predeterminada, estándar y estricta, consulte [Configuración recomendada para EOP y Microsoft Defender para Office 365 seguridad](recommended-settings-for-eop-and-office365.md).
 
 Otras cargas de trabajo también están disponibles para la protección (por ejemplo, [Datos adjuntos seguros para SharePoint, OneDrive y Microsoft Teams](mdo-for-spo-odb-and-teams.md) y [vínculos seguros para aplicaciones de Office compatibles](safe-links.md#safe-links-settings-for-office-apps).
 
@@ -88,7 +88,7 @@ La tarjeta de licencia de la prueba muestra la siguiente información:
   - **Solo la detección & respuesta**: el número total de usuarios que se incluyen en los escenarios siguientes:
     - Durante la prueba, ha limitado las directivas a usuarios específicos.
     - Tiene directivas personalizadas que se limitan a usuarios específicos.
-  - **Protección completa**: el número total de usuarios protegidos por Defender para Office 365 características del plan 2 (AIR, Explorador de amenazas, entrenamiento de simulación de ataques, etc.).
+  - **Protección completa**: el número total de usuarios protegidos por Defender para Office 365 características del plan 2 (AIR, Explorador de amenazas, Entrenamiento de simulación de ataque, etc.).
 
 Para obtener información sobre los precios, consulte [Microsoft Defender para Office 365](https://www.microsoft.com/security/business/siem-and-xdr/microsoft-defender-office-365).
 
@@ -108,7 +108,7 @@ La prueba de Defender para Office 365 se está implementando gradualmente para l
 
 Para obtener más información, consulte [Microsoft Defender para Office 365 Términos de prueba & Condiciones](defender-for-office-365-trial-terms-and-conditions.md).
 
-## <a name="frequently-asked-questions"></a>Preguntas frecuentes
+## <a name="frequently-asked-questions"></a>Preguntas más frecuentes
 
 ### <a name="q-how-do-i-extend-the-trial"></a>P: Cómo ampliar la prueba?
 

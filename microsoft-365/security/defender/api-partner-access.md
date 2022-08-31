@@ -3,7 +3,8 @@ title: Acceso de asociados a través de api de Microsoft 365 Defender
 description: Obtenga información sobre cómo crear una aplicación para obtener acceso mediante programación a Microsoft 365 Defender en nombre de los usuarios.
 keywords: partner, access, api, multiinquilino, consentimiento, token de acceso, aplicación
 search.product: eADQiWindows 10XVcnh
-ms.prod: m365-security
+ms.service: microsoft-365-security
+ms.subservice: m365d
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -19,14 +20,13 @@ ms.topic: conceptual
 search.appverid:
 - MOE150
 - MET150
-ms.technology: m365d
 ms.custom: api
-ms.openlocfilehash: 43bb018abe6a19464d7e52493ed1b4ccd1f15140
-ms.sourcegitcommit: 3b194dd6f9ce531ae1b33d617ab45990d48bd3d0
+ms.openlocfilehash: 03c87d32cf850d75fb83eefdc989927fcdc6ae90
+ms.sourcegitcommit: 10e6abe740e27000e223378eb17d657a47555fa8
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/15/2022
-ms.locfileid: "66102424"
+ms.lasthandoff: 08/31/2022
+ms.locfileid: "67479562"
 ---
 # <a name="create-an-app-with-partner-access-to-microsoft-365-defender-apis"></a>Creación de una aplicación con acceso de asociado a Microsoft 365 Defender API
 
@@ -41,7 +41,7 @@ ms.locfileid: "66102424"
 
 En esta página se describe cómo crear una aplicación de Azure Active Directory que tenga acceso mediante programación a Microsoft 365 Defender, en nombre de los usuarios de varios inquilinos. Las aplicaciones multiinquilino son útiles para atender a grandes grupos de usuarios.
 
-Si necesita acceso mediante programación a Microsoft 365 Defender en nombre de un único usuario, consulte [Creación de una aplicación para acceder a Microsoft 365 Defender API en nombre de un usuario](api-create-app-user-context.md). Si necesita acceso sin un usuario definido explícitamente (por ejemplo, si está escribiendo una aplicación en segundo plano o un demonio), consulte [Creación de una aplicación para acceder a Microsoft 365 Defender sin un usuario](api-create-app-web.md). Si no está seguro del tipo de acceso que necesita, consulte [Comenzar](api-access.md).
+Si necesita acceso mediante programación a Microsoft 365 Defender en nombre de un único usuario, consulte [Creación de una aplicación para acceder a Microsoft 365 Defender API en nombre de un usuario](api-create-app-user-context.md). Si necesita acceso sin un usuario definido explícitamente (por ejemplo, si está escribiendo una aplicación en segundo plano o un demonio), consulte [Creación de una aplicación para acceder a Microsoft 365 Defender sin un usuario](api-create-app-web.md). Si no está seguro del tipo de acceso que necesita, consulte [Introducción](api-access.md).
 
 Microsoft 365 Defender expone gran parte de sus datos y acciones a través de un conjunto de API mediante programación. Esas API le ayudan a automatizar flujos de trabajo y a usar las funcionalidades de Microsoft 365 Defender. Este acceso a la API requiere la autenticación de OAuth2.0. Para obtener más información, vea [Flujo de código de autorización de OAuth 2.0](/azure/active-directory/develop/active-directory-v2-protocols-oauth-code).
 
@@ -186,7 +186,7 @@ return $token
 > El código siguiente se ha probado con Nuget Microsoft.Identity.Client 3.19.8.
 
 > [!IMPORTANT]
-> El paquete NuGet [Microsoft.IdentityModel.Clients.ActiveDirectory](https://www.nuget.org/packages/Microsoft.IdentityModel.Clients.ActiveDirectory) y la Biblioteca de autenticación de Azure AD (ADAL) han quedado en desuso. No se han agregado nuevas características desde el 30 de junio de 2020.   Le recomendamos encarecidamente que actualice, consulte la [guía de migración](/azure/active-directory/develop/msal-migration) para obtener más detalles.
+> El paquete [NuGet Microsoft.IdentityModel.Clients.ActiveDirectory](https://www.nuget.org/packages/Microsoft.IdentityModel.Clients.ActiveDirectory) y Autenticación de Azure AD Library (ADAL) han quedado en desuso. No se han agregado nuevas características desde el 30 de junio de 2020.   Le recomendamos encarecidamente que actualice, consulte la [guía de migración](/azure/active-directory/develop/msal-migration) para obtener más detalles.
 
 1. Cree una nueva aplicación de consola.
 1. Instale NuGet [Microsoft.Identity.Client](https://www.nuget.org/packages/Microsoft.Identity.Client/).
@@ -252,7 +252,7 @@ aadToken = jsonResponse["access_token"]
 1. Abra un símbolo del sistema y establezca CLIENT_ID en el identificador de aplicación de Azure.
 1. Establezca CLIENT_SECRET en el secreto de aplicación de Azure.
 1. Establezca TENANT_ID en el identificador de inquilino de Azure del usuario que quiere usar la aplicación para acceder a Microsoft 365 Defender.
-1. Ejecute el siguiente comando:
+1. Ejecute el comando siguiente:
 
 ```bash
 curl -i -X POST -H "Content-Type:application/x-www-form-urlencoded" -d "grant_type=client_credentials" -d "client_id=%CLIENT_ID%" -d "scope=https://securitycenter.onmicrosoft.com/windowsatpservice/.default" -d "client_secret=%CLIENT_SECRET%" "https://login.microsoftonline.com/%TENANT_ID%/oauth2/v2.0/token" -k

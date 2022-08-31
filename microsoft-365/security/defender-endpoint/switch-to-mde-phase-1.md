@@ -15,20 +15,19 @@ audience: ITPro
 ms.collection:
 - M365-security-compliance
 - m365solution-migratetomdatp
-- m365solution-mcafeemigrate
-- m365solution-symantecmigrate
+- highpri
 ms.topic: article
 ms.custom:
 - migrationguides
 - admindeeplinkDEFENDER
 ms.date: 04/01/2022
 ms.reviewer: jesquive, chventou, jonix, chriggs, owtho
-ms.openlocfilehash: c08ab1c96adc2b9d83cc6869573f2f0dbe75ac78
-ms.sourcegitcommit: ac0ae5c2888e2b323e36bad041a4abef196c9c96
+ms.openlocfilehash: 269e9023f18ab028a15f561841b4b46ecb8ce311
+ms.sourcegitcommit: 10e6abe740e27000e223378eb17d657a47555fa8
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/12/2022
-ms.locfileid: "64782927"
+ms.lasthandoff: 08/31/2022
+ms.locfileid: "67481468"
 ---
 # <a name="switch-to-microsoft-defender-for-endpoint---phase-1-prepare"></a>Cambiar a Microsoft Defender para punto de conexión- Fase 1: Preparación
 
@@ -116,13 +115,13 @@ Para habilitar la comunicación entre los dispositivos y Defender para punto de 
 |Capacidades|Sistema operativo|Recursos|
 |---|---|---|
 |[Detección y respuesta de puntos de conexión](overview-endpoint-detection-response.md) (EDR)|[Windows 10](/windows/release-health/release-information) o posterior<br/><br/>Windows Server 2022 <br/><br/>[Windows Server 2019](/windows/release-health/status-windows-10-1809-and-windows-server-2019)<br/><br/>[Windows Server 1803 o posterior](/windows-server/get-started/whats-new-in-windows-server-1803)<br/><br/>[Windows Server 2016*](/windows/release-health/status-windows-10-1607-and-windows-server-2016)<br/><br/>[Windows Server 2012 R2*](/windows/release-health/status-windows-8.1-and-windows-server-2012-r2)|[Configuración del proxy de máquina y la conectividad a Internet](configure-proxy-internet.md)|
-|EDR [Windows Server 2008 R2 SP1](/windows/release-health/status-windows-7-and-windows-server-2008-r2-sp1)<br/><br/>[Windows 8.1](/windows/release-health/status-windows-8.1-and-windows-server-2012-r2)<br/><br/>[Windows 7 SP1](/windows/release-health/status-windows-7-and-windows-server-2008-r2-sp1)|[Configuración de proxy y conectividad a Internet](onboard-downlevel.md#configure-proxy-and-internet-connectivity-settings)|
-|EDR|macOS (consulte [Requisitos del sistema)](microsoft-defender-endpoint-mac.md)|[Defender para punto de conexión en macOS: conexiones de red](microsoft-defender-endpoint-mac.md#network-connections)|
+|EDR[Windows Server 2008 R2 SP1](/windows/release-health/status-windows-7-and-windows-server-2008-r2-sp1)<br/><br/>[Windows 8.1](/windows/release-health/status-windows-8.1-and-windows-server-2012-r2)<br/><br/>[Windows 7 SP1](/windows/release-health/status-windows-7-and-windows-server-2008-r2-sp1)|[Configuración de proxy y conectividad a Internet](onboard-downlevel.md#configure-proxy-and-internet-connectivity-settings)|
+|Edr|macOS (consulte [Requisitos del sistema)](microsoft-defender-endpoint-mac.md)|[Defender para punto de conexión en macOS: conexiones de red](microsoft-defender-endpoint-mac.md#network-connections)|
 |[Antivirus de Microsoft Defender](microsoft-defender-antivirus-in-windows-10.md)|[Windows 10](/windows/release-health/release-information) <br/><br/> [Windows Server 2019](/windows/release-health/status-windows-10-1809-and-windows-server-2019)<br/><br/> Windows Server 2022 <br/><br/> [Windows Server 1803 o posterior](/windows-server/get-started/whats-new-in-windows-server-1803) <br/><br/> [Windows Server 2016](/windows-server/get-started/whats-new-in-windows-server-2016)<br/><br/>[Windows Server 2012 R2*](/windows/release-health/status-windows-8.1-and-windows-server-2012-r2)|[Configurar y validar las conexiones de red del Antivirus de Windows Defender](configure-network-connections-microsoft-defender-antivirus.md)|
 |Antivirus|macOS (consulte [Requisitos del sistema)](microsoft-defender-endpoint-mac.md)|[Defender para punto de conexión en macOS: conexiones de red](microsoft-defender-endpoint-mac.md#network-connections)|
 |Antivirus|Linux (consulte [Requisitos del sistema](microsoft-defender-endpoint-linux.md#system-requirements))|[Defender para punto de conexión en Linux: conexiones de red](microsoft-defender-endpoint-linux.md#network-connections)|
 
-*Requiere la instalación de la solución moderna y unificada para Windows Server 2012 R2 y 2016. Para obtener más información, consulte [Incorporación de servidores Windows al servicio Microsoft Defender para punto de conexión](/microsoft-365/security/defender-endpoint/configure-server-endpoints).
+*Requiere la instalación de la solución moderna y unificada para Windows Server 2012 R2 y 2016. Para obtener más información, vea [Incorporación de servidores Windows al servicio de Microsoft Defender para punto de conexión](/microsoft-365/security/defender-endpoint/configure-server-endpoints).
 
 ## <a name="next-step"></a>Paso siguiente
 

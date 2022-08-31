@@ -1,6 +1,6 @@
 ---
-title: Microsoft 365 soluciones para el sector de la salud
-description: Obtenga información sobre los recursos de solución y arquitectura para el sector de la salud mediante Microsoft 365
+title: Soluciones de Microsoft 365 para el sector sanitario
+description: Más información sobre los recursos de soluciones y arquitectura para el sector sanitario mediante Microsoft 365
 ms.author: samanro
 author: samanro
 manager: bcarter
@@ -13,16 +13,16 @@ ms.collection:
 - M365solutions
 ms.custom: seo-marvel-jun2020
 f1.keywords: NOCSH
-ms.openlocfilehash: 2a2bcf7af5247dab804c3251b359cf82946d855c
-ms.sourcegitcommit: e3bff611439354e6339bb666a88682078f32ec13
+ms.openlocfilehash: 89b293f55e5ce258febf8a5a491abf71de988699
+ms.sourcegitcommit: 10e6abe740e27000e223378eb17d657a47555fa8
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/03/2022
-ms.locfileid: "62355061"
+ms.lasthandoff: 08/31/2022
+ms.locfileid: "67475766"
 ---
-# <a name="microsoft-365-solutions-for-the-healthcare-industry"></a>Microsoft 365 soluciones para el sector de la salud
+# <a name="microsoft-365-solutions-for-the-healthcare-industry"></a>Soluciones de Microsoft 365 para el sector sanitario
 
-Microsoft proporciona muchas capacidades para ayudar a las organizaciones de salud a atender a los pacientes, simplificar la administración y facilitar la colaboración mientras se cumplen las obligaciones reglamentarias. Microsoft también proporciona una plataforma completa para el sector de la salud, Microsoft Cloud para el sector sanitario, que incluye componentes de Microsoft 365 y Dynamics 365, además de Azure. La modernización y transformación digital de los centros de salud es aún más importante durante la actual pandemia global de COVID-19.
+Microsoft proporciona muchas funcionalidades para ayudar a las organizaciones sanitarias a atender a los pacientes, simplificar la administración y facilitar la colaboración a la vez que cumple con las obligaciones normativas. Microsoft también proporciona una plataforma completa para el sector sanitario, Microsoft Cloud for Healthcare, que incluye componentes de Microsoft 365 y Dynamics 365, además de Azure. La modernización y transformación digital de las instalaciones sanitarias es aún más importante durante la actual pandemia global del COVID-19.
 
 <br>
 
@@ -30,26 +30,25 @@ Microsoft proporciona muchas capacidades para ayudar a las organizaciones de sal
 
 <br>
 
-Obtenga información sobre cómo puede usar Microsoft 365, Dynamics 365 y Azure para digitalizar, modernizar y mejorar la solución de salud.
+Obtenga información sobre cómo puede usar Microsoft 365, Dynamics 365 y Azure para digitalizar, modernizar y mejorar la solución sanitaria.
 
-## <a name="resources-for-healthcare"></a>Recursos para la salud
+## <a name="resources-for-healthcare"></a>Recursos para la atención sanitaria
 
 |Recurso |Descripción  |
 |---------|---------|
-|[Visitas virtuales con Microsoft Teams y la aplicación Bookings](/microsoftteams/expand-teams-across-your-org/bookings-virtual-visits)  |      La aplicación Bookings en Microsoft Teams proporciona a las organizaciones una forma sencilla de programar y administrar citas virtuales para el personal y los asistentes. Úselo para programar citas virtuales, como visitas médicas, consultas financieras, entrevistas, soporte al cliente, experiencias de compras virtuales, horas de oficina educativa y mucho más.   |
-|[Teams para el cuidado de la salud](/MicrosoftTeams/expand-teams-across-your-org/healthcare/teams-in-hc)    |  Microsoft Teams ofrece una serie de características de telemedicina útiles para hospitales y otras organizaciones de salud. <br>- Visitas virtuales e integración de registros electrónicos de salud (EHR)<br>- Teams de directivas<br>- Mensajería segura<br>- Teams plantillas<br>- Coordinación y colaboración de la atención      |
-|[Microsoft Cloud para el sector sanitario](/industry/healthcare/overview)  | Obtenga información sobre Microsoft Cloud para el sector sanitario y cómo reúne capacidades de confianza para clientes y socios que mejoran la participación de los pacientes, potencian la colaboración del equipo de salud y mejoran los conocimientos de datos clínicos y operativos para mejorar la toma de decisiones y las eficiencias operativas.     |
-| [Arquitectura y soluciones de Azure para el cuidado de la salud](/azure/architecture/industries/healthcare)| Obtenga información sobre cómo puede usar Microsoft Azure para digitalizar, modernizar y mejorar su solución de salud en Azure para la atención médica|
-| | |
+|[Visitas virtuales con Microsoft Teams y la aplicación Bookings](/microsoftteams/expand-teams-across-your-org/bookings-virtual-visits)  |      La aplicación Bookings en Microsoft Teams proporciona a las organizaciones una forma sencilla de programar y administrar citas virtuales para el personal y los asistentes. Úselo para programar citas virtuales, como visitas sanitarias, consultas financieras, entrevistas, soporte al cliente, experiencias de compras virtuales, horas de oficina educativas y mucho más.   |
+|[Microsoft 365 for Healthcare](/microsoft-365/frontline/teams-in-hc)    |  Microsoft Teams ofrece una serie de características de telemedicina útiles para hospitales y otras organizaciones sanitarias. <br>- Visitas virtuales e integración de registros electrónicos de atención sanitaria (EHR)<br>- Paquetes de directivas de Teams<br>- Mensajería segura<br>- Plantillas de Teams<br>- Coordinación y colaboración del cuidado      |
+|[Microsoft Cloud para el sector sanitario](/industry/healthcare/overview)  | Obtenga información sobre Microsoft Cloud for Healthcare y cómo reúne funcionalidades de confianza para clientes y asociados que mejoran la participación de los pacientes, potencian la colaboración del equipo de salud y mejoran la información de datos clínicos y operativos para mejorar la toma de decisiones y la eficiencia operativa.     |
+| [Arquitectura y soluciones de Azure para el sector sanitario](/azure/architecture/industries/healthcare)| Obtenga información sobre cómo puede usar los servicios de Microsoft Azure para digitalizar, modernizar y mejorar la solución sanitaria en Azure para el sector sanitario.|
 
 ## <a name="videos-you-can-share-with-your-team"></a>Vídeos que puede compartir con su equipo
 
-**St. Luke's Hospital usa Microsoft 365 para reimaginar el cuidado de los pacientes**
+**St. Luke's Hospital usa Microsoft 365 para reimaginear la atención a los pacientes**
 <br>
 
 > [!VIDEO https://www.youtube.com/embed/-jcBjy88n4s]
 
-**Microsoft Viva permite a Humana lograr la productividad & bienestar en un lugar de trabajo híbrido**
+**Microsoft Viva permite a Humana lograr productividad & bienestar en un área de trabajo híbrida**
 
 > [!VIDEO https://www.youtube.com/embed/vu1oqbuVOns]
 

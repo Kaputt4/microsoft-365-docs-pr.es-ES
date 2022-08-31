@@ -3,7 +3,8 @@ title: Acciones de corrección en Microsoft 365 Defender
 description: Obtenga información general sobre las acciones de corrección que siguen las investigaciones automatizadas en Microsoft 365 Defender
 keywords: automatizada, investigación, alerta, desencadenante, acción, corrección
 search.appverid: met150
-ms.prod: m365-security
+ms.service: microsoft-365-security
+ms.subservice: m365d
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -20,13 +21,12 @@ ms.collection:
 ms.topic: conceptual
 ms.custom: autoir
 ms.reviewer: evaldm, isco
-ms.technology: m365d
-ms.openlocfilehash: 669d4f3b4e8c2d805f72f9113cea1e9e926f3390
-ms.sourcegitcommit: d1b60ed9a11f5e6e35fbaf30ecaeb9dfd6dd197d
+ms.openlocfilehash: 6e1648b8c2e02eb17635597026e48535c4bfa402
+ms.sourcegitcommit: 10e6abe740e27000e223378eb17d657a47555fa8
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/29/2022
-ms.locfileid: "66492378"
+ms.lasthandoff: 08/31/2022
+ms.locfileid: "67479430"
 ---
 # <a name="remediation-actions-in-microsoft-365-defender"></a>Acciones de corrección en Microsoft 365 Defender
 

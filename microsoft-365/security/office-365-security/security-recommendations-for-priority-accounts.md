@@ -17,16 +17,17 @@ ms.collection:
 - M365-security-compliance
 - m365solution-overview
 - m365solution-protecthve
+- highpri
 ms.custom: ''
-description: Los administradores pueden aprender a elevar la configuración de seguridad y usar informes, alertas e investigaciones para las cuentas de prioridad en sus organizaciones Microsoft 365.
+description: Los administradores pueden aprender a elevar la configuración de seguridad y usar informes, alertas e investigaciones para las cuentas de prioridad en sus organizaciones de Microsoft 365.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 99e4726af1226e044715d33e92a176c9292b49ab
-ms.sourcegitcommit: 35f167725bec5fd4fe131781a53d96b060cf232d
+ms.openlocfilehash: 89452cca1e3871c864204053049c05938b576b91
+ms.sourcegitcommit: 10e6abe740e27000e223378eb17d657a47555fa8
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "65873388"
+ms.lasthandoff: 08/31/2022
+ms.locfileid: "67481644"
 ---
 # <a name="security-recommendations-for-priority-accounts-in-microsoft-365"></a>Recomendaciones de seguridad para cuentas prioritarias en Microsoft 365
 
@@ -44,7 +45,7 @@ Microsoft 365 y Microsoft Defender para Office 365 contienen varias característ
 
 :::image type="content" source="../../media/security-recommendations-for-priority-users.png" alt-text="Resumen de las recomendaciones de seguridad en el formulario de icono" lightbox="../../media/security-recommendations-for-priority-users.png":::
 
-|Task|Todos los planes de Office 365 Enterprise|Microsoft 365 E3|Microsoft 365 E5|
+|Tarea|Todos los planes de Office 365 Enterprise|Microsoft 365 E3|Microsoft 365 E5|
 |---|:---:|:---:|:---:|
 |[Aumento de la seguridad de inicio de sesión para las cuentas de prioridad](#increase-sign-in-security-for-priority-accounts)|![Incluido.](../../media/d238e041-6854-4a78-9141-049224df0795.png)|![Incluido.](../../media/d238e041-6854-4a78-9141-049224df0795.png)|![Incluido.](../../media/d238e041-6854-4a78-9141-049224df0795.png)|
 |[Uso de directivas de seguridad preestablecidas estrictas para cuentas de prioridad](#use-strict-preset-security-policies-for-priority-accounts)|![Incluido.](../../media/d238e041-6854-4a78-9141-049224df0795.png)|![Incluido.](../../media/d238e041-6854-4a78-9141-049224df0795.png)|![Incluido.](../../media/d238e041-6854-4a78-9141-049224df0795.png)|
@@ -75,7 +76,7 @@ También merece la pena tener en cuenta que la autenticación básica está en d
 
 Los usuarios prioritarios requieren acciones más estrictas para las distintas protecciones disponibles en Exchange Online Protection (EOP) y Defender para Office 365.
 
-Por ejemplo, en lugar de entregar mensajes clasificados como correo no deseado en la carpeta Correo no deseado, debe poner en cuarentena esos mismos mensajes si están destinados a cuentas de prioridad.
+Por ejemplo, en lugar de entregar mensajes que se clasificaron como correo no deseado en la carpeta junk Email, debe poner en cuarentena esos mismos mensajes si están destinados a cuentas de prioridad.
 
 Puede implementar este enfoque estricto para las cuentas de prioridad mediante el perfil Strict en las directivas de seguridad preestablecidas.
 
@@ -98,10 +99,10 @@ Después de proteger y etiquetar los usuarios prioritarios, puede usar los infor
 |Característica|Descripción|
 |---|---|
 |Alertas|Las etiquetas de usuario de los usuarios afectados están visibles y están disponibles como filtros en la página **Alertas** del portal de Microsoft 365 Defender. Para obtener más información, consulte [Visualización de alertas](../../compliance/alert-policies.md#viewing-alerts).|
-|Explorador <p> Detecciones en tiempo real|En **explorador** (Defender para Office 365 plan 2) o **detecciones en tiempo real** (Defender para Office 365 plan 1), las etiquetas de usuario son visibles en la vista de cuadrícula Correo electrónico y en el control flotante Detalles del correo electrónico. Las etiquetas de usuario también están disponibles como una propiedad filtrable. Para obtener más información, vea  [Etiquetas en el Explorador](threat-explorer.md#tags-in-threat-explorer).|
+|Explorador <p> Detecciones en tiempo real|En **explorer** (Defender para Office 365 plan 2) o **detecciones en tiempo real** (Defender para Office 365 plan 1), las etiquetas de usuario son visibles en la vista de cuadrícula de Email y el control flotante de detalles de Email. Las etiquetas de usuario también están disponibles como una propiedad filtrable. Para obtener más información, vea  [Etiquetas en el Explorador](threat-explorer.md#tags-in-threat-explorer).|
 |Vistas de campañas|Las etiquetas de usuario son una de las muchas propiedades filtrables en Vistas de campaña en Microsoft Defender para Office 365 Plan 2. Para obtener más información, consulte [Vistas de campaña](campaigns.md).|
 |Informe de estado de protección contra amenazas|En prácticamente todas las vistas y tablas de detalles del **informe de estado de protección contra amenazas**, puede filtrar los resultados por **cuentas de prioridad**. Para obtener más información, consulte [Informe de estado de protección contra amenazas](view-email-security-reports.md#threat-protection-status-report).|
-|Informe de problemas de correo electrónico para cuentas prioritarias|El informe **Problemas de correo electrónico para cuentas de prioridad** en el Centro de administración de Exchange (EAC) contiene información sobre los mensajes no entregados y retrasados para **las cuentas de prioridad**. Para obtener más información, consulte [El informe Problemas de correo electrónico para cuentas de prioridad](/exchange/monitoring/mail-flow-reports/mfr-email-issues-for-priority-accounts-report).|
+|informe de problemas de Email de cuentas prioritarias|El **informe de problemas de Email para las cuentas de prioridad** en el Centro de administración de Exchange (EAC) contiene información sobre los mensajes no entregados y retrasados para **las cuentas de prioridad**. Para obtener más información, consulte [el informe problemas de Email para cuentas de prioridad](/exchange/monitoring/mail-flow-reports/mfr-email-issues-for-priority-accounts-report).|
 
 ## <a name="train-users"></a>Entrenar a los usuarios
 
@@ -114,9 +115,9 @@ Microsoft 365 proporciona los siguientes recursos para ayudar a informar a los u
 |Concepto|Recursos|Descripción|
 |---|---|---|
 |Microsoft 365|[Caminos de aprendizaje personalizables](/office365/customlearning/)|Estos recursos pueden ayudarle a organizar el entrenamiento para los usuarios de su organización.|
-|Centro de seguridad de Microsoft 365|[módulo Learning: proteja su organización con seguridad inteligente integrada de Microsoft 365](/learn/modules/security-with-microsoft-365)|Este módulo le permite describir cómo funcionan conjuntamente las características de seguridad Microsoft 365 y articular las ventajas de estas características de seguridad.|
+|Centro de seguridad de Microsoft 365|[Módulo de aprendizaje: Protección de la organización con seguridad inteligente integrada de Microsoft 365](/learn/modules/security-with-microsoft-365)|Este módulo le permite describir cómo funcionan conjuntamente las características de seguridad de Microsoft 365 y articular las ventajas de estas características de seguridad.|
 |Autenticación multifactor|[Verificación en dos pasos: ¿Cuál es la página de comprobación adicional?](/azure/active-directory/user-help/multi-factor-authentication-end-user-first-time)|Este artículo ayuda a los usuarios finales a comprender qué es la autenticación multifactor y por qué se usa en su organización.|
-|Aprendizaje de simulación de ataque|[Introducción al uso de aprendizaje de simulación de ataques](attack-simulation-training-get-started.md)|El entrenamiento de simulación de ataques en Microsoft Defender para Office 365 Plan 2 permite al administrador configurar, iniciar y realizar un seguimiento de los ataques simulados de suplantación de identidad (phishing) contra grupos específicos de usuarios.|
+|Aprendizaje de simulación de ataque|[Introducción al uso de aprendizaje de simulación de ataques](attack-simulation-training-get-started.md)|Entrenamiento de simulación de ataque en Microsoft Defender para Office 365 Plan 2 permite al administrador configurar, iniciar y realizar un seguimiento de ataques de suplantación de identidad simulados contra grupos específicos de usuarios.|
 
 Además, Microsoft recomienda que los usuarios realicen las acciones descritas en este artículo: [Proteger su cuenta y dispositivos de hackers y malware](https://support.microsoft.com/office/066d6216-a56b-4f90-9af3-b3a1e9a327d6). Entre estas acciones se incluyen:
 

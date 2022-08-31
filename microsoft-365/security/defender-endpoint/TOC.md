@@ -298,7 +298,6 @@
 ### Protección de última generación
 #### [Información sobre los servicios de protección de última generación](next-generation-protection.md)
 ##### [Introducción al Antivirus de Microsoft Defender](microsoft-defender-antivirus-windows.md)
-##### [Antivirus de Microsoft Defender en Windows](microsoft-defender-antivirus-windows.md)
 ##### [Habilitación y actualización del Antivirus de Microsoft Defender en Windows Server](enable-update-mdav-to-latest-ws.md)
 ##### [Mejor juntos: Antivirus de Microsoft Defender y Microsoft Defender para punto de conexión](why-use-microsoft-defender-antivirus.md)
 ##### [Mejor juntos: Antivirus de Microsoft Defender y Office 365](office-365-microsoft-defender-antivirus.md)
@@ -523,6 +522,10 @@
 ####### [Exportar evaluación del inventario de software](get-assessment-software-inventory.md)
 ####### [Exportar evaluación de inventario de software sin código de producto](get-assessment-non-cpe-software-inventory.md)
 ####### [Exportar evaluación de vulnerabilidades de software](get-assessment-software-vulnerabilities.md)
+
+###### [Extensiones del explorador]()
+####### [Exportación de la evaluación de extensiones de broswer](get-assessment-browser-extensions.md)
+####### [Obtener información de permisson de extenstions del explorador](get-browser-extensions-permission-info.md)
 
 ###### [Investigación automatizada]()
 ####### [Propiedades y métodos de investigación](investigation.md)

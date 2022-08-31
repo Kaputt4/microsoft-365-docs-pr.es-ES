@@ -15,14 +15,14 @@ ms.collection:
 - m365initiative-defender-office365
 ms.custom: seo-marvel-apr2020
 description: Los administradores pueden aprender a usar el portal envíos en el portal de Microsoft 365 Defender para enviar correo electrónico legítimo bloqueado, correo electrónico sospechoso, sospecha de correo electrónico de phishing, correo no deseado, otros mensajes potencialmente dañinos, direcciones URL y datos adjuntos de correo electrónico a Microsoft para volver a examinar.
-ms.technology: mdo
-ms.prod: m365-security
-ms.openlocfilehash: 692bef65a37f1411952e3848147913a64daf72a1
-ms.sourcegitcommit: c81f6c39ed39d017f9d7c5f13148cd8d17b25c3d
+ms.subservice: mdo
+ms.service: microsoft-365-security
+ms.openlocfilehash: b5b54a0d6d8e760d392578997461be44a19cf92a
+ms.sourcegitcommit: 10e6abe740e27000e223378eb17d657a47555fa8
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/20/2022
-ms.locfileid: "67393033"
+ms.lasthandoff: 08/31/2022
+ms.locfileid: "67480545"
 ---
 # <a name="use-the-submissions-portal-to-submit-suspected-spam-phish-urls-legitimate-email-getting-blocked-and-email-attachments-to-microsoft"></a>Use el portal envíos para enviar sospechas de correo no deseado, mensajes no deseados, direcciones URL, bloqueo de correo electrónico legítimo y datos adjuntos de correo electrónico a Microsoft.
 
@@ -124,7 +124,7 @@ Vea este breve vídeo para aprender a usar envíos de administrador en Microsoft
 
 2. En la página **Envíos**, seleccione la pestaña **Email datos adjuntos**.
 
-3. En la pestaña **Email datos adjuntos**, haga clic en ![el icono Enviar a Microsoft para análisis.](../../media/m365-cc-sc-create-icon.png) **Envíe a Microsoft para su análisis**.
+3. En la pestaña **Email datos adjuntos**, haga clic en ![Icono de Enviar a Microsoft para su análisis.](../../media/m365-cc-sc-create-icon.png) **Envíe a Microsoft para su análisis**.
 
 4. En el control flotante **Enviar a Microsoft para análisis** que aparece, escriba la siguiente información:
 
@@ -166,7 +166,7 @@ Vea este breve vídeo para aprender a usar envíos de administrador en Microsoft
 
 2. En la página **Envíos** , seleccione la pestaña **Direcciones URL** .
 
-3. En la pestaña **Direcciones URL** , haga clic en ![el icono Enviar a Microsoft para análisis.](../../media/m365-cc-sc-create-icon.png) **Envíe a Microsoft para su análisis**.
+3. En la pestaña **Direcciones URL** , haga clic en ![el botón Enviar a Microsoft para agregar análisis.](../../media/m365-cc-sc-create-icon.png) **Envíe a Microsoft para su análisis**.
 
 4. En el control flotante **Enviar a Microsoft para análisis** que aparece, escriba la siguiente información:
 
@@ -441,7 +441,7 @@ Una vez que un usuario envía un correo electrónico sospechoso al buzón person
 
 Si ha configurado el buzón personalizado para interceptar los mensajes notificados por el usuario sin enviar los mensajes a Microsoft, puede encontrar y enviar mensajes específicos a Microsoft para su análisis.
 
-En la pestaña **Mensajes notificados** por el usuario, seleccione un mensaje en la lista y haga clic en ![el icono Enviar a Microsoft para análisis.](../../media/m365-cc-sc-submit-user-reported-message-icon.png) **Envíelo a Microsoft para su análisis** y, a continuación, seleccione uno de los siguientes valores en la lista desplegable:
+En la pestaña **Mensajes notificados** por el usuario, seleccione un mensaje en la lista y haga clic en ![el icono Enviar a Microsoft para agregar análisis.](../../media/m365-cc-sc-submit-user-reported-message-icon.png) **Envíelo a Microsoft para su análisis** y, a continuación, seleccione uno de los siguientes valores en la lista desplegable:
 
 - **Informe limpio**
 - **Informar de suplantación de identidad**

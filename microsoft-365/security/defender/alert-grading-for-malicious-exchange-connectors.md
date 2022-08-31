@@ -2,7 +2,8 @@
 title: Clasificación de alertas para conectores de intercambio malintencionados
 description: Alerte a los destinatarios de la clasificación de la actividad de conectores de intercambio malintencionados y protejan su red frente a ataques malintencionados.
 keywords: incidentes, alertas, investigar, analizar, respuesta, correlación, ataque, máquinas, dispositivos, usuarios, identidades, identidad, buzón de correo electrónico, 365, microsoft, m365
-ms.prod: m365-security
+ms.service: microsoft-365-security
+ms.subservice: m365d
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -20,13 +21,12 @@ ms.custom: admindeeplinkDEFENDER
 ms.topic: conceptual
 search.appverid:
 - MOE150
-ms.technology: m365d
-ms.openlocfilehash: b815e088152a055b532e748c469c78065421d255
-ms.sourcegitcommit: f72ea75c6d5c1bca0e0ed8fd228d3a84c6104361
+ms.openlocfilehash: 16f168fc772e4b4c9e7f48221dbd14039690ba83
+ms.sourcegitcommit: 10e6abe740e27000e223378eb17d657a47555fa8
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/10/2022
-ms.locfileid: "67301949"
+ms.lasthandoff: 08/31/2022
+ms.locfileid: "67480238"
 ---
 # <a name="alert-grading-for-malicious-exchange-connectors"></a>Clasificación de alertas para conectores de intercambio malintencionados
 

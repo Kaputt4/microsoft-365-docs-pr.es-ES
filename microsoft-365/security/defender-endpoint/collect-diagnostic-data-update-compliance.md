@@ -3,7 +3,7 @@ title: Recopilación de datos de diagnóstico para las actualizaciones de cumpli
 description: Use una herramienta para recopilar datos para solucionar problemas de cumplimiento de actualizaciones al usar el complemento Evaluación del antivirus de Microsoft Defender.
 keywords: solución de problemas, error, corrección, cumplimiento de actualizaciones, oms, supervisión, informe, Antivirus de Microsoft Defender, Antivirus de Microsoft Defender
 search.product: eADQiWindows 10XVcnh
-ms.prod: m365-security
+ms.service: microsoft-365-security
 ms.mktglfcycl: manage
 ms.sitesec: library
 ms.pagetype: security
@@ -14,15 +14,15 @@ ms.custom: nextgen
 ms.date: 09/03/2018
 ms.reviewer: ''
 manager: dansimp
-ms.technology: mde
+ms.subservice: mde
 ms.topic: article
 ms.collection: M365-security-compliance
-ms.openlocfilehash: 84a0d069d2f4f87d2884f3d70b6c6e88a07b4868
-ms.sourcegitcommit: d09eb780dc41a01796eb8137fbe9267231af6746
+ms.openlocfilehash: b21201d5b3a24c570819ac903eb3a38058c362c8
+ms.sourcegitcommit: 10e6abe740e27000e223378eb17d657a47555fa8
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/19/2022
-ms.locfileid: "67388845"
+ms.lasthandoff: 08/31/2022
+ms.locfileid: "67479828"
 ---
 # <a name="collect-update-compliance-diagnostic-data-for-microsoft-defender-antivirus-assessment"></a>Recopilación de datos de diagnóstico de cumplimiento de actualizaciones para la evaluación del Antivirus de Microsoft Defender
 

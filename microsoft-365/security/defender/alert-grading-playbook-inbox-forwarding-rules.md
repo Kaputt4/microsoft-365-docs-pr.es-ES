@@ -2,7 +2,8 @@
 title: Clasificación de alertas para reglas de reenvío de bandeja de entrada sospechosas
 description: Clasificación de alertas para reglas de reenvío de bandeja de entrada sospechosas para revisar las alertas y realizar las acciones recomendadas para corregir el ataque y proteger la red.
 keywords: incidentes, alertas, investigar, analizar, respuesta, correlación, ataque, máquinas, dispositivos, usuarios, identidades, identidad, buzón de correo electrónico, 365, microsoft, m365
-ms.prod: m365-security
+ms.service: microsoft-365-security
+ms.subservice: m365d
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -20,13 +21,12 @@ ms.custom: admindeeplinkDEFENDER
 ms.topic: conceptual
 search.appverid:
 - MOE150
-ms.technology: m365d
-ms.openlocfilehash: dca305b88e6e8db25e0a798c4361086bd7cb1e8b
-ms.sourcegitcommit: 85ce5fd0698b6f00ea1ea189634588d00ea13508
+ms.openlocfilehash: bb99643be9df5a43b65bd0d5d017ff65b4bc0426
+ms.sourcegitcommit: 10e6abe740e27000e223378eb17d657a47555fa8
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/06/2022
-ms.locfileid: "64666028"
+ms.lasthandoff: 08/31/2022
+ms.locfileid: "67479474"
 ---
 # <a name="alert-grading-for-suspicious-inbox-forwarding-rules"></a>Clasificación de alertas para reglas de reenvío de bandeja de entrada sospechosas
 
@@ -187,7 +187,7 @@ CloudAppEvents
 ## <a name="recommended-actions"></a>Acciones recomendadas
 
 1. Deshabilite la regla de bandeja de entrada malintencionada.
-2. Restablezca las credenciales de la cuenta del usuario. También puede comprobar si la cuenta de usuario se ha visto comprometida con Microsoft Defender for Cloud Apps, que obtiene señales de seguridad de Azure Active Directory (Azure AD) Identity Protection.
+2. Restablezca las credenciales de la cuenta del usuario. También puede comprobar si la cuenta de usuario se ha puesto en peligro con Microsoft Defender for Cloud Apps, que obtiene señales de seguridad de Azure Active Directory (Azure AD) Identity Protection.
 3. Busque otras actividades malintencionadas realizadas por el usuario afectado.
 4. Compruebe si hay otra actividad sospechosa en el inquilino originada desde la misma dirección IP o desde el mismo ISP (si el ISP es poco frecuente) para encontrar otros usuarios en peligro.
 

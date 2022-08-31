@@ -17,12 +17,13 @@ ms.collection:
 - SMB
 - M365-security-compliance
 - m365solution-mdb-setup
-ms.openlocfilehash: 4dfd112af96bbb421ace15e3ac4bd9a8e4e2733a
-ms.sourcegitcommit: 217108c59be41b01963a393b4f16d137636fe6a8
+- highpri
+ms.openlocfilehash: 3c2f22cb7ec397847fb25adaa485588386b62e5c
+ms.sourcegitcommit: 10e6abe740e27000e223378eb17d657a47555fa8
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/12/2022
-ms.locfileid: "67328087"
+ms.lasthandoff: 08/31/2022
+ms.locfileid: "67481050"
 ---
 # <a name="set-up-and-configure-microsoft-defender-for-business"></a>Configuración y configuración de Microsoft Defender para Empresas
 
@@ -49,6 +50,6 @@ En el diagrama siguiente se muestra el proceso de configuración y configuració
 | 4 | [Incorporación de dispositivos](mdb-onboard-devices.md)     | Puede elegir entre varias opciones para incorporar los dispositivos de su empresa, como usar un script descargable o inscribir dispositivos en Microsoft Intune. Consulte [Incorporación de dispositivos a Defender for Business](mdb-onboard-devices.md).         |
 | 5 | [Configuración de las directivas y las opciones de seguridad](mdb-configure-security-settings.md) | Puede elegir entre varias opciones para configurar las directivas y las opciones de seguridad, como el [proceso de configuración simplificado](mdb-simplified-configuration.md) en Defender para empresas o Microsoft Intune. Consulte [Configuración de las directivas y las opciones de seguridad](mdb-configure-security-settings.md). |
 
-## <a name="next-steps"></a>Siguientes pasos
+## <a name="next-steps"></a>Pasos siguientes
 
 Continúe con [el paso 1: Revisar los requisitos de Microsoft Defender para Empresas](mdb-requirements.md).

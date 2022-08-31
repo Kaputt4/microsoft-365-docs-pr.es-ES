@@ -7,7 +7,7 @@ ms.mktglfcycl: manage
 ms.sitesec: library
 ms.pagetype: security
 ms.localizationpriority: medium
-ms.date: 07/28/2022
+ms.date: 08/30/2022
 author: denisebmsft
 ms.author: deniseb
 ms.custom: nextgen
@@ -16,12 +16,12 @@ manager: dansimp
 ms.technology: mde
 ms.topic: article
 ms.collection: M365-security-compliance
-ms.openlocfilehash: 33f41114c0647de2987a5ed5abdaec4c885fcbfd
-ms.sourcegitcommit: d09eb780dc41a01796eb8137fbe9267231af6746
+ms.openlocfilehash: 350ab278281cc436bb49c6d27827ac73ae2bea43
+ms.sourcegitcommit: 10e6abe740e27000e223378eb17d657a47555fa8
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/19/2022
-ms.locfileid: "67387449"
+ms.lasthandoff: 08/31/2022
+ms.locfileid: "67476536"
 ---
 # <a name="run-and-review-the-results-of-a-microsoft-defender-offline-scan"></a>Ejecutar y revisar los resultados de un análisis de Microsoft Defender sin Conexión
 
@@ -141,6 +141,14 @@ Consulte lo siguiente para obtener más información:
 > - [Microsoft Defender para punto de conexión en Linux](microsoft-defender-endpoint-linux.md)
 > - [Configurar Defender para punto de conexión en características de Android](android-configure.md)
 > - [Configurar Microsoft Defender para punto de conexión en las características de iOS](ios-configure-features.md)
+
+### <a name="where-can-i-find-the-scan-results"></a>¿Dónde puedo encontrar los resultados del examen?
+
+Para ver los resultados del examen sin conexión de Microsoft Defender:
+
+1. Seleccione **Inicio** y, a continuación, seleccione **Configuración**  > **Actualizar & Seguridad**  >  **Seguridad de Windows**  >  **Virus & protección contra amenazas**.
+
+2. En la pantalla **Protección contra amenazas de Virus &** , en **Amenazas actuales**, seleccione Opciones de **examen** y, a continuación, seleccione **Historial de protección**.
 
 ## <a name="related-articles"></a>Artículos relacionados
 

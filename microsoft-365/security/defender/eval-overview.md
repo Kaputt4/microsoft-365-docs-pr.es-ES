@@ -3,7 +3,8 @@ title: Evaluación y Microsoft 365 Defender piloto, una solución XDR
 description: ¿Qué es la seguridad de XDR? ¿Cómo puede evaluar un XDR de Microsoft en Microsoft 365 Defender? Use esta serie de blogs para planear su Microsoft 365 Defender laboratorio de prueba o entorno piloto para probar y probar una solución de seguridad diseñada para proteger dispositivos, identidades, datos y aplicaciones. Inicie su viaje de ciberseguridad de XDR aquí y realice esa prueba a producción.
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
-ms.prod: m365-security
+ms.service: microsoft-365-security
+ms.subservice: m365d
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -20,14 +21,14 @@ ms.collection:
 - m365solution-overview
 - m365solution-evalutatemtp
 - zerotrust-solution
+- highpri
 ms.topic: conceptual
-ms.technology: m365d
-ms.openlocfilehash: 5256a578abb515f7d8d2d6e73b5a01fe71404dd0
-ms.sourcegitcommit: 61b22df76e0f81e5ef11c587b129287886151c79
+ms.openlocfilehash: 5689dd9f493ce148b02146ddca7ca7c570e005e4
+ms.sourcegitcommit: 10e6abe740e27000e223378eb17d657a47555fa8
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/12/2022
-ms.locfileid: "66750086"
+ms.lasthandoff: 08/31/2022
+ms.locfileid: "67481666"
 ---
 # <a name="evaluate-and-pilot-microsoft-365-defender"></a>Evaluar Microsoft 365 Defender y realizar una prueba piloto
 
@@ -84,7 +85,7 @@ Microsoft 365 Defender se compone de estas tecnologías de seguridad, que funcio
 |---|---|---|
 |Microsoft Defender for Identity|Microsoft Defender for Identity usa señales de Active Directory para identificar, detectar e investigar amenazas avanzadas, identidades en peligro y acciones internas malintencionadas dirigidas a su organización.|[¿Qué es Microsoft Defender for Identity?](/defender-for-identity/what-is)|
 |Exchange Online Protection|Exchange Online Protection es el servicio de filtrado y retransmisión SMTP basado en la nube nativo que ayuda a proteger su organización contra el correo no deseado y el malware.|[Introducción a Exchange Online Protection (EOP): Office 365](../office-365-security/overview.md)|
-|Microsoft Defender para Office 365|Microsoft Defender para Office 365 protege a su organización frente a amenazas malintencionadas planteadas por mensajes de correo electrónico, vínculos (DIRECCIONES URL) y herramientas de colaboración.|[Microsoft Defender para Office 365: Office 365](../office-365-security/overview.md)|
+|Microsoft Defender para Office 365|Microsoft Defender para Office 365 protege a su organización frente a amenazas malintencionadas planteadas por mensajes de correo electrónico, vínculos (DIRECCIONES URL) y herramientas de colaboración.|[Microsoft Defender para Office 365: Office 365](../office-365-security/overview.md)|
 |Microsoft Defender para punto de conexión|Microsoft Defender para punto de conexión es una plataforma unificada para la protección de dispositivos, la detección posterior a la vulneración, la investigación automatizada y la respuesta recomendada.|[Microsoft Defender para punto de conexión: seguridad de Windows](../defender-endpoint/microsoft-defender-endpoint.md)|
 |Microsoft Defender for Cloud Apps|Microsoft Defender for Cloud Apps es una solución completa entre SaaS que ofrece visibilidad profunda, controles de datos seguros y protección contra amenazas mejorada para las aplicaciones en la nube.|[¿Qué es Defender for Cloud Apps?](/cloud-app-security/what-is-cloud-app-security)|
 |Azure AD Identity Protection|Azure AD Identity Protection evalúa los datos de riesgo de miles de millones de intentos de inicio de sesión y usa estos datos para evaluar el riesgo de cada inicio de sesión en su entorno. Azure AD usa estos datos para permitir o impedir el acceso a la cuenta, en función de cómo se configuren las directivas de acceso condicional. Azure AD Identity Protection tiene licencia independiente de Microsoft 365 Defender. Se incluye con Azure Active Directory Premium P2.|[¿Qué es Identity Protection?](/azure/active-directory/identity-protection/overview-identity-protection)|
@@ -126,9 +127,9 @@ En la tabla siguiente se describe esta ilustración.
 |1     | [Creación del entorno de evaluación](eval-create-eval-environment.md)       |Este paso garantiza que tiene la licencia de prueba para Microsoft 365 Defender.         |
 |2     | [Habilitación de Defender for Identity](eval-defender-identity-overview.md)        | Revise los requisitos de arquitectura, habilite la evaluación y recorra tutoriales para identificar y corregir diferentes tipos de ataque.   |
 |3     | [Habilitar Defender para Office 365 ](eval-defender-office-365-overview.md)       | Asegúrese de cumplir los requisitos de arquitectura, habilite la evaluación y, a continuación, cree el entorno piloto. Este componente incluye Exchange Online Protection, por lo que realmente evaluará *ambos* aquí.      |
-|4      | [Habilitación de Defender para punto de conexión ](eval-defender-endpoint-overview.md)       | Asegúrese de cumplir los requisitos de arquitectura, habilite la evaluación y, a continuación, cree el entorno piloto.         |
+|4     | [Habilitación de Defender para punto de conexión ](eval-defender-endpoint-overview.md)       | Asegúrese de cumplir los requisitos de arquitectura, habilite la evaluación y, a continuación, cree el entorno piloto.         |
 |5     | [Habilitar Microsoft Defender for Cloud Apps](eval-defender-mcas-overview.md)        |  Asegúrese de cumplir los requisitos de arquitectura, habilite la evaluación y, a continuación, cree el entorno piloto.        |
-|6      | [Investigar y responder a amenazas](eval-defender-investigate-respond.md)        |   Simular un ataque y empezar a usar funcionalidades de respuesta a incidentes.      |
+|6     | [Investigar y responder a amenazas](eval-defender-investigate-respond.md)        |   Simular un ataque y empezar a usar funcionalidades de respuesta a incidentes.      |
 |7      | [Promover la versión de prueba a producción](eval-defender-promote-to-production.md)        | Promover los componentes de Microsoft 365 a producción uno a uno.        |
 
 Este es un orden comúnmente recomendado diseñado para aprovechar el valor de las funcionalidades rápidamente en función de cuánto esfuerzo se requiere normalmente para implementar y configurar las funcionalidades. Por ejemplo, Defender para Office 365 se pueden configurar en menos tiempo del necesario para inscribir dispositivos en Defender para punto de conexión. Por supuesto, debe priorizar los componentes para satisfacer sus necesidades empresariales y puede habilitarlos en un orden diferente.

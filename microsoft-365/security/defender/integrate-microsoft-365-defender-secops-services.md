@@ -3,7 +3,8 @@ title: Paso 3. Planeamiento de Microsoft 365 Defender integración con el catál
 description: Los conceptos básicos de la integración de Microsoft 365 Defender en el catálogo de servicios de operaciones de seguridad.
 keywords: incidentes, alertas, investigación, correlación, ataque, dispositivos, usuarios, identidades, identidad, buzón, correo electrónico, 365, microsoft, m365, respuesta a incidentes, ciberataque, secops, operaciones de seguridad, soc
 search.product: eADQiWindows 10XVcnh
-ms.prod: m365-security
+ms.service: microsoft-365-security
+ms.subservice: m365d
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -21,13 +22,12 @@ ms.topic: conceptual
 search.appverid:
 - MOE150
 - MET150
-ms.technology: m365d
-ms.openlocfilehash: f6cab6be7d41f1d71a6ccf69fbedfa616694ee78
-ms.sourcegitcommit: 9255a7e8b398f92d8dae09886ae95dc8577bf29a
+ms.openlocfilehash: 5db25bc333c09c284971b86c44a088a75fcaa92f
+ms.sourcegitcommit: 10e6abe740e27000e223378eb17d657a47555fa8
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/17/2022
-ms.locfileid: "65438496"
+ms.lasthandoff: 08/31/2022
+ms.locfileid: "67479652"
 ---
 # <a name="step-3-plan-for-microsoft-365-defender-integration-with-your-soc-catalog-of-services"></a>Paso 3. Planeamiento de Microsoft 365 Defender integración con el catálogo de servicios de SOC
 
@@ -61,7 +61,7 @@ Los componentes de Microsoft 365 Defender son:
 
 - **Microsoft Defender for Identity** (anteriormente Azure Advanced Threat Protection, también conocido como Azure ATP) es una solución de seguridad basada en la nube que usa Servicios de dominio de Active Directory  (AD DS) señales para identificar, detectar e investigar amenazas avanzadas, identidades en peligro y acciones internas malintencionadas dirigidas a las organizaciones.
 
-- **Microsoft Defender para punto de conexión** es una solución holística de seguridad de puntos de conexión entregados en la nube para dispositivos que incluye administración de vulnerabilidades y evaluación basadas en riesgos, reducción de la superficie expuesta a ataques, protección basada en el comportamiento y tecnología de la nube de próxima generación, detección y respuesta de puntos de conexión (EDR), investigación y corrección automáticas, servicios de búsqueda administrados, API enriquecidas y administración unificada de seguridad.
+- **Microsoft Defender para punto de conexión** es una solución holística de seguridad de puntos de conexión entregados en la nube para dispositivos que incluye la administración y evaluación de vulnerabilidades basada en riesgos, reducción de la superficie expuesta a ataques, protección de próxima generación basada en el comportamiento y con tecnología de nube, detección y respuesta de puntos de conexión (EDR), investigación y corrección automáticas, servicios de búsqueda administrados, API enriquecidas y unificado  administración de seguridad.
 
  - **Microsoft Defender para Office 365** es un servicio de filtrado de correo electrónico basado en la nube que ayuda a proteger a las organizaciones contra malware y virus desconocidos proporcionando una sólida protección de día cero e incluye características para proteger a las organizaciones de vínculos dañinos en tiempo real. También ofrece una lista completa de las características de investigación y búsqueda, respuesta y corrección, reconocimiento y entrenamiento, y características de posición segura.
 

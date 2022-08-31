@@ -17,12 +17,13 @@ ms.collection:
 - SMB
 - M365-security-compliance
 - m365solution-mdb-setup
-ms.openlocfilehash: 4968a6318138b4c3b6bd5958de195dcd1677106b
-ms.sourcegitcommit: 771f7bbb241f910b3e16b4d1f9bbd9c0c8c6fa34
+- highpri
+ms.openlocfilehash: d5d1cae1ce1b8a468668991165dd8222a68b375d
+ms.sourcegitcommit: 10e6abe740e27000e223378eb17d657a47555fa8
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2022
-ms.locfileid: "67309425"
+ms.lasthandoff: 08/31/2022
+ms.locfileid: "67479299"
 ---
 # <a name="microsoft-defender-for-business-requirements"></a>requisitos de Microsoft Defender para Empresas
 
@@ -53,7 +54,7 @@ En la tabla siguiente se enumeran los requisitos básicos que necesita para conf
 > - Si no tiene una suscripción a Microsoft 365 antes de iniciar la prueba, Azure AD se aprovisionará automáticamente durante el proceso de activación. 
 > - Si tiene otra suscripción de Microsoft 365 al iniciar la prueba de Defender para empresas, puede usar el servicio de Azure AD existente. 
 
-## <a name="next-steps"></a>Siguientes pasos
+## <a name="next-steps"></a>Pasos siguientes
 
 Vaya al [paso 2: Asignación de roles y permisos en Defender para empresas](mdb-roles-permissions.md).
  

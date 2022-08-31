@@ -1,9 +1,10 @@
 ---
-title: Características de vista previa en Microsoft 365 Defender
+title: Características en versión preliminar de Microsoft 365 Defender
 description: Conozca las nuevas características de la seguridad de Microsoft 365
 keywords: Versión preliminar, novedades, seguridad m365, seguridad, 365, funciones
 search.product: eADQiWindows 10XVcnh
-ms.prod: m365-security
+ms.service: microsoft-365-security
+ms.subservice: m365d
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -19,43 +20,42 @@ ms.topic: conceptual
 search.appverid:
 - MOE150
 - MET150
-ms.technology: m365d
-ms.openlocfilehash: 6693fc853370e1c5b2cd2f3ae09f54da2af14ca8
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 724ddc1c4958811609e6b442f781f4e3371c0edb
+ms.sourcegitcommit: 10e6abe740e27000e223378eb17d657a47555fa8
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60162247"
+ms.lasthandoff: 08/31/2022
+ms.locfileid: "67479718"
 ---
-# <a name="microsoft-365-defender-preview-features"></a>Microsoft 365 Defender de vista previa
+# <a name="microsoft-365-defender-preview-features"></a>características de Microsoft 365 Defender versión preliminar
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
 
 **Se aplica a:**
 - Microsoft 365 Defender
 
-El Microsoft 365 Defender se actualiza constantemente para incluir nuevas mejoras y capacidades de características.
+El servicio Microsoft 365 Defender se actualiza constantemente para incluir nuevas mejoras y funcionalidades de características.
 
-Obtenga información sobre las nuevas características de Microsoft 365 Defender versión preliminar y sea uno de los primeros en probar las próximas características al activar la experiencia de vista previa.
+Obtenga información sobre las nuevas características de la versión preliminar Microsoft 365 Defender y entre las primeras en probar las próximas características activando la experiencia en versión preliminar.
 
-Para obtener más información sobre las nuevas funcionalidades que están disponibles en general, vea [Novedades de Microsoft 365 Defender](whats-new.md).
+Para obtener más información sobre las nuevas funcionalidades que están disponibles con carácter general, consulte [Novedades de Microsoft 365 Defender](whats-new.md).
 
- ## <a name="what-you-need-to-know"></a>Lo que necesita saber
+ ## <a name="what-you-need-to-know"></a>Aspectos que debe saber
 
 Al trabajar con características en versión preliminar pública, estas características:
 
-- Puede que tenga funciones restringidas o limitadas. Por ejemplo, la característica solo puede aplicarse a una plataforma.
-- Normalmente, pasan por los cambios de características antes de que estén generalmente disponibles (GA).
+- Pueden tener una funcionalidad restringida o limitada. Por ejemplo, es posible que la característica solo se aplique a una plataforma.
+- Las características suelen pasar por varios cambios antes de estar en disponibilidad general (GA).
 - Son totalmente compatibles con Microsoft.
-- Solo puede estar disponible en regiones geográficas seleccionadas o entornos en la nube. Por ejemplo, es posible que la característica no exista en la nube del gobierno.
-- Las características individuales de la versión preliminar pueden tener más restricciones de uso y compatibilidad. Si es así, esta información se indica normalmente en la documentación de características.
-- Las versiones preliminares se proporcionan con un nivel de soporte estándar y se pueden usar para entornos de producción. 
+- Es posible que solo estén disponibles en determinadas regiones geográficas o entornos de nube. Por ejemplo, puede que la característica no exista en la nube de la administración pública.
+- Las características individuales de la versión preliminar pueden tener más restricciones de uso y soporte técnico. Si es así, esta información se indica normalmente en la documentación de la característica.
+- Las versiones preliminares se proporcionan con un nivel de compatibilidad estándar y se pueden usar para entornos de producción. 
 
 
 
 ## <a name="required-permissions"></a>Permisos necesarios
 
-Las cuentas asignadas a Azure Active Directory (Azure AD) pueden activar las Microsoft 365 Defender vista previa:
+Las cuentas asignadas a los siguientes roles de Azure Active Directory (Azure AD) pueden activar Microsoft 365 Defender características de versión preliminar:
 
 - Administrador global
 - Administrador de seguridad
@@ -63,7 +63,7 @@ Las cuentas asignadas a Azure Active Directory (Azure AD) pueden activar las Mic
 
 ## <a name="turn-on-preview-features"></a>Activar la versión preliminar de las características
 
-Tendrás acceso a las próximas características sobre las que puedes proporcionar comentarios para mejorar la experiencia general antes de que las características estén disponibles en general.
+Tendrá acceso a las próximas características en las que puede proporcionar comentarios para ayudar a mejorar la experiencia general antes de que las características estén disponibles con carácter general.
 
 Active la configuración de la experiencia de la versión preliminar para estar entre los primeros en probar las próximas características.
 

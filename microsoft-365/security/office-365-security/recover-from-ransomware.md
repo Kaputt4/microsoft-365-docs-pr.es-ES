@@ -13,15 +13,16 @@ ms.collection:
 - M365-security-compliance
 - m365initiative-defender-office365
 - m365solution-ransomware
-description: Microsoft 365 los administradores pueden aprender a recuperarse de un ataque de ransomware.
+- highpri
+description: Los administradores de Microsoft 365 pueden aprender a recuperarse de un ataque de ransomware.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 328457e37ea6ae351abb2c5d5f0089246145b32c
-ms.sourcegitcommit: 725a92b0b1555572b306b285a0e7a7614d34e5e5
+ms.openlocfilehash: 23cc51d34244ebdb0d37141879df25da7e8429df
+ms.sourcegitcommit: 10e6abe740e27000e223378eb17d657a47555fa8
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/24/2022
-ms.locfileid: "65648665"
+ms.lasthandoff: 08/31/2022
+ms.locfileid: "67481138"
 ---
 # <a name="recover-from-a-ransomware-attack-in-microsoft-365"></a>Recuperación de un ataque de ransomware en Microsoft 365
 
@@ -30,7 +31,7 @@ ms.locfileid: "65648665"
 - [Plan 1 y Plan 2 de Microsoft Defender para Office 365](defender-for-office-365.md)
 - [Microsoft 365 Defender](../defender/microsoft-365-defender.md)
 
-Incluso si toma todas las precauciones necesarias para proteger su organización, puede ser víctima de un ataque [de ransomware](/windows/security/threat-protection/intelligence/ransomware-malware) . El ransomware es un gran negocio, y en el panorama de amenazas actual Microsoft 365 es un objetivo cada vez mayor [para ataques sofisticados](https://i.blackhat.com/USA21/Wednesday-Handouts/us-21-Cloudy-With-A-Chance-Of-APT-Novel-Microsoft-365-Attacks-In-The-Wild.pdf).
+Incluso si toma todas las precauciones necesarias para proteger su organización, puede ser víctima de un ataque [de ransomware](/windows/security/threat-protection/intelligence/ransomware-malware) . El ransomware es un gran negocio y, en el panorama de amenazas actual, Microsoft 365 es un objetivo cada vez mayor [para ataques sofisticados](https://i.blackhat.com/USA21/Wednesday-Handouts/us-21-Cloudy-With-A-Chance-Of-APT-Novel-Microsoft-365-Attacks-In-The-Wild.pdf).
 
 Los pasos de este artículo le proporcionarán la mejor oportunidad de recuperar datos y detener la propagación interna de la infección. Antes de empezar, tenga en cuenta los siguientes elementos:
 
@@ -70,7 +71,7 @@ Ejecute un examen antivirus completo y actual en todos los equipos y dispositivo
 
 No olvide examinar los dispositivos que sincronizan datos o los destinos de las unidades de red asignadas.
 
-Puede usar [Microsoft Security Essentials Windows Defender](https://www.microsoft.com/windows/comprehensive-security) o (para clientes más [antiguos).](https://www.microsoft.com/download/details.aspx?id=5201)
+Puede usar [Windows Defender](https://www.microsoft.com/windows/comprehensive-security) o (para clientes anteriores) [Microsoft Security Essentials](https://www.microsoft.com/download/details.aspx?id=5201).
 
 Una alternativa que también le ayudará a eliminar ransomware o malware es la [herramienta de eliminación de software malintencionado (MSRT)](https://www.microsoft.com/download/details.aspx?id=9905).
 
@@ -78,21 +79,21 @@ Si estas opciones no funcionan, puede intentar [Windows Defender sin conexión](
 
 ## <a name="step-4-recover-files-on-a-cleaned-computer-or-device"></a>Paso 4: Recuperar archivos en un equipo o dispositivo limpio
 
-Después de haber completado el paso anterior para quitar la carga útil de ransomware de su entorno (que impedirá que el ransomware cifre o quite los archivos), puede usar [el historial](https://support.microsoft.com/help/17128) de archivos en Windows 11, Windows 10, Windows 8.1, y mediante protección del sistema en Windows 7 para intentar recuperar los archivos y carpetas locales.
+Después de completar el paso anterior para quitar la carga útil de ransomware de su entorno (lo que impedirá que el ransomware cifre o quite los archivos), puede usar [el historial](https://support.microsoft.com/help/17128) de archivos en Windows 11, Windows 10, Windows 8.1 y mediante Protección del sistema en Windows 7 para intentar recuperar los archivos y carpetas locales.
 
 **Notas**:
 
-- Algunos ransomware también cifrarán o eliminarán las versiones de copia de seguridad, por lo que no puede usar el historial de archivos o protección del sistema para restaurar archivos. Si esto sucede, necesita usar copias de seguridad en unidades externas o dispositivos que no se vieron afectados por el ransomware o OneDrive como se describe en la sección siguiente.
+- Algunos ransomware también cifrarán o eliminarán las versiones de copia de seguridad, por lo que no puede usar el historial de archivos o protección del sistema para restaurar archivos. Si esto sucede, necesita usar copias de seguridad en unidades externas o dispositivos que no se vieron afectados por el ransomware o OneDrive, como se describe en la sección siguiente.
 
 - Si una carpeta está sincronizada con OneDrive y no usa la versión más reciente de Windows, puede haber algunas limitaciones mediante el historial de archivos.
 
 ## <a name="step-5-recover-your-files-in-your-onedrive-for-business"></a>Paso 5: Recuperar los archivos en el OneDrive para la Empresa
 
-Restauración de archivos en OneDrive para la Empresa permite restaurar toda la OneDrive a un momento dado anterior en los últimos 30 días. Para obtener más información, consulte [Restaurar su OneDrive](https://support.microsoft.com/office/fa231298-759d-41cf-bcd0-25ac53eb8a15).
+Restauración de archivos en OneDrive para la Empresa permite restaurar todo onedrive a un momento dado anterior en los últimos 30 días. Para obtener más información, consulte [Restaurar su OneDrive](https://support.microsoft.com/office/fa231298-759d-41cf-bcd0-25ac53eb8a15).
 
 ## <a name="step-6-recover-deleted-email"></a>Paso 6: Recuperación del correo electrónico eliminado
 
-En el raro caso de que el ransomware eliminó todo el correo electrónico, es probable que pueda recuperar los elementos eliminados. Para más información, vea:
+En el raro caso de que el ransomware eliminó todo el correo electrónico, es probable que pueda recuperar los elementos eliminados. Para obtener más información, consulte:
 
 - [Recuperar mensajes eliminados en el buzón de un usuario](/exchange/recipients-in-exchange-online/manage-user-mailboxes/recover-deleted-messages)
 
@@ -155,7 +156,7 @@ Microsoft 365:
 - [Implementar la protección contra ransomware para el inquilino de Microsoft 365](/microsoft-365/solutions/ransomware-protection-microsoft-365)
 - [Maximizar la resistencia de ransomware con Azure y Microsoft 365](https://azure.microsoft.com/resources/maximize-ransomware-resiliency-with-azure-and-microsoft-365/)
 - [Protección de malware y ransomware](/compliance/assurance/assurance-malware-and-ransomware-protection)
-- [Proteger su pc Windows de ransomware](https://support.microsoft.com//windows/protect-your-pc-from-ransomware-08ed68a7-939f-726c-7e84-a72ba92c01c3)
+- [Proteger su PC Windows de ransomware](https://support.microsoft.com//windows/protect-your-pc-from-ransomware-08ed68a7-939f-726c-7e84-a72ba92c01c3)
 - [Control de ransomware en SharePoint Online](/sharepoint/troubleshoot/security/handling-ransomware-in-sharepoint-online)
 - [Informes de análisis de amenazas para ransomware](https://security.microsoft.com/threatanalytics3?page_size=30&filters=tags%3DRansomware&ordering=-lastUpdatedOn&fields=displayName,alertsCount,impactedEntities,reportType,createdOn,lastUpdatedOn,tags,flag) en el portal de Microsoft 365 Defender
 
@@ -168,7 +169,7 @@ Microsoft Azure:
 - [Defensas de Azure para los ataques de ransomware](https://azure.microsoft.com/resources/azure-defenses-for-ransomware-attack/)
 - [Maximizar la resistencia de ransomware con Azure y Microsoft 365](https://azure.microsoft.com/resources/maximize-ransomware-resiliency-with-azure-and-microsoft-365/)
 - [Plan de restauración y copia de seguridad para la protección contra ransomware](/security/compass/backup-plan-to-protect-against-ransomware)
-- [Ayuda para protegerse frente a ransomware con Microsoft Azure Backup](https://www.youtube.com/watch?v=VhLOr2_1MCg) (vídeo de 26 minutos)
+- [Ayuda para protegerse de ransomware con Microsoft Azure Backup](https://www.youtube.com/watch?v=VhLOr2_1MCg) (vídeo de 26 minutos)
 - [Recuperación de una identidad en peligro](/azure/security/fundamentals/recover-from-identity-compromise)
 - [Detección avanzada de ataques de varias fases en Microsoft Sentinel](/azure/sentinel/fusion#ransomware)
 - [Detección de difusión para ransomware en Microsoft Sentinel](https://techcommunity.microsoft.com/t5/azure-sentinel/what-s-new-fusion-detection-for-ransomware/ba-p/2621373)

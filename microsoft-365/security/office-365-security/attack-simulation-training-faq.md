@@ -16,14 +16,14 @@ ms.collection: m365-security-compliance
 ms.custom:
 - seo-marvel-apr2020
 description: Los administradores pueden obtener información sobre las consideraciones de implementación y las preguntas más frecuentes sobre la simulación de ataques y el entrenamiento en organizaciones de Microsoft 365 E5 o Microsoft Defender para Office 365 Plan 2.
-ms.technology: mdo
-ms.prod: m365-security
-ms.openlocfilehash: 50f82d975e9dc4f534f9223b85fd9e841a3ad725
-ms.sourcegitcommit: d1b60ed9a11f5e6e35fbaf30ecaeb9dfd6dd197d
+ms.subservice: mdo
+ms.service: microsoft-365-security
+ms.openlocfilehash: f0a4bf3f408b48a4feb48ae4fad39cfe1e11420d
+ms.sourcegitcommit: 10e6abe740e27000e223378eb17d657a47555fa8
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/29/2022
-ms.locfileid: "66490495"
+ms.lasthandoff: 08/31/2022
+ms.locfileid: "67480611"
 ---
 # <a name="attack-simulation-training-deployment-considerations-and-faq"></a>Implementación y preguntas más frecuentes del aprendizaje de simulación de ataques  
 
@@ -32,9 +32,9 @@ ms.locfileid: "66490495"
 **Se aplica a**
 - [Plan 2 de Microsoft Defender para Office 365](defender-for-office-365.md)
 
-El entrenamiento de simulación de ataques permite a las organizaciones de Microsoft 365 E5 o Microsoft Defender para Office 365 Plan 2 medir y administrar el riesgo de ingeniería social al permitir la creación y administración de simulaciones de suplantación de identidad (phishing) con tecnología de cargas de phishing des armas reales. El entrenamiento hiperesparáfico, ofrecido en asociación con la seguridad de Terranova, ayuda a mejorar el conocimiento y a cambiar el comportamiento de los empleados.
+Entrenamiento de simulación de ataque permite a las organizaciones Microsoft 365 E5 o Microsoft Defender para Office 365 Plan 2 medir y administrar el riesgo de ingeniería social al permitir la creación y administración de simulaciones de suplantación de identidad (phishing) con tecnología real, cargas de phishing des armas. El entrenamiento hiperesparáfico, ofrecido en asociación con la seguridad de Terranova, ayuda a mejorar el conocimiento y a cambiar el comportamiento de los empleados.
 
-Para obtener más información sobre cómo empezar a trabajar con el entrenamiento de simulación de ataques, consulte [Introducción al entrenamiento de simulación de ataques](attack-simulation-training-get-started.md).
+Para obtener más información sobre cómo empezar a trabajar con Entrenamiento de simulación de ataque, consulte [Introducción al uso de Entrenamiento de simulación de ataque](attack-simulation-training-get-started.md).
 
 Aunque toda la experiencia de creación y programación de simulaciones se ha diseñado para que sea de flujo libre y sin fricción, la ejecución de simulaciones a escala empresarial a menudo requiere planeamiento. Este artículo ayuda a abordar desafíos específicos que vemos cuando nuestros clientes ejecutan simulaciones en sus propios entornos.
 
@@ -42,7 +42,7 @@ Aunque toda la experiencia de creación y programación de simulaciones se ha di
 
 ### <a name="phishing-simulation-urls-blocked-by-google-safe-browsing"></a>Direcciones URL de simulación de suplantación de identidad bloqueadas por la exploración segura de Google
 
-Un servicio de reputación de direcciones URL podría identificar una o varias de las direcciones URL que usa el entrenamiento de simulación de ataques como no seguras. Google Safe Browsing en Google Chrome bloquea algunas de las direcciones URL de suplantación de identidad simuladas con un mensaje **de anticipación de un sitio engañoso** . Aunque trabajamos con muchos proveedores de reputación de direcciones URL para permitir siempre nuestras direcciones URL de simulación, no siempre tenemos cobertura completa.
+Un servicio de reputación de direcciones URL podría identificar una o varias de las direcciones URL que usa Entrenamiento de simulación de ataque como no seguras. Google Safe Browsing en Google Chrome bloquea algunas de las direcciones URL de suplantación de identidad simuladas con un mensaje **de anticipación de un sitio engañoso** . Aunque trabajamos con muchos proveedores de reputación de direcciones URL para permitir siempre nuestras direcciones URL de simulación, no siempre tenemos cobertura completa.
 
 :::image type="content" source="../../media/attack-sim-training-faq-chrome-deceptive-site-message.png" alt-text="Advertencia previa del sitio engañoso en Google Chrome" lightbox="../../media/attack-sim-training-faq-chrome-deceptive-site-message.png":::
 
@@ -50,7 +50,7 @@ Tenga en cuenta que este problema no afecta a Microsoft Edge.
 
 Como parte de la fase de planeación, asegúrese de comprobar la disponibilidad de la dirección URL en los exploradores web admitidos antes de usar la dirección URL en una campaña de suplantación de identidad (phishing). Si Google Safe Browsing bloquea las direcciones URL, [siga esta guía](https://support.google.com/chrome/a/answer/7532419) de Google para permitir el acceso a las direcciones URL.
 
-Consulte [Introducción al entrenamiento de simulación de ataques](attack-simulation-training-get-started.md) para obtener la lista de direcciones URL que usa actualmente el entrenamiento de simulación de ataques.
+Consulte [Introducción al uso de Entrenamiento de simulación de ataque](attack-simulation-training-get-started.md) para obtener la lista de direcciones URL que usa actualmente Entrenamiento de simulación de ataque.
 
 ### <a name="phishing-simulation-and-admin-urls-blocked-by-network-proxy-solutions-and-filter-drivers"></a>Simulación de suplantación de identidad (phishing) y direcciones URL de administración bloqueadas por soluciones de proxy de red y controladores de filtro
 
@@ -62,7 +62,7 @@ Tanto las direcciones URL de simulación de suplantación de identidad como las 
 
 Aunque hemos visto que pocos clientes están bloqueados en esta capa, sí sucede. Si tiene problemas, considere la posibilidad de configurar las siguientes direcciones URL para omitir el examen por parte de los dispositivos de seguridad o filtros según sea necesario:
 
-- Las direcciones URL de suplantación de identidad simuladas como se describe en [Introducción al entrenamiento de simulación de ataques](attack-simulation-training-get-started.md).
+- Las direcciones URL de suplantación de identidad simuladas como se describe en [Introducción al uso de Entrenamiento de simulación de ataque](attack-simulation-training-get-started.md).
 - <https://security.microsoft.com/attacksimulator>
 - <https://security.microsoft.com/attacksimulationreport>
 - <https://security.microsoft.com/trainingassignments>
@@ -77,13 +77,13 @@ Es posible que el número de usuarios que reciben realmente los mensajes de corr
 
 Solo se incluirán en simulaciones los usuarios válidos que no sean invitados con un buzón válido. Si usa grupos de distribución o grupos de seguridad habilitados para correo para dirigirse a los usuarios, puede usar el cmdlet [Get-DistributionGroupMember](/powershell/module/exchange/get-distributiongroupmember) en [Exchange Online PowerShell](/powershell/exchange/connect-to-exchange-online-powershell) para ver y validar los miembros del grupo de distribución.
 
-## <a name="issues-with-attack-simulation-training-reporting"></a>Problemas con los informes de entrenamiento de simulación de ataques
+## <a name="issues-with-attack-simulation-training-reporting"></a>Problemas con los informes de Entrenamiento de simulación de ataque
 
-### <a name="attack-simulation-training-reports-do-not-contain-any-activity-details"></a>Los informes de entrenamiento de simulación de ataques no contienen detalles de actividad
+### <a name="attack-simulation-training-reports-do-not-contain-any-activity-details"></a>Entrenamiento de simulación de ataque informes no contienen detalles de actividad
 
-El entrenamiento de simulación de ataques incluye información enriquecida y procesable que le mantiene informado del progreso de preparación de amenazas de sus empleados. Si los informes de entrenamiento de simulación de ataques no se rellenan con datos, compruebe que la búsqueda de registros de auditoría está activada en su organización (está activada de forma predeterminada).
+Entrenamiento de simulación de ataque incluye información enriquecida y procesable que le mantiene informado del progreso de preparación de amenazas de sus empleados. Si Entrenamiento de simulación de ataque informes no se rellenan con datos, compruebe que la búsqueda de registros de auditoría está activada en su organización (está activada de forma predeterminada).
 
-El entrenamiento de simulación de ataques requiere la búsqueda de registros de auditoría para que los eventos se puedan capturar, grabar y leer. La desactivación de la búsqueda de registros de auditoría tiene las siguientes consecuencias para el entrenamiento de simulación de ataques:
+La búsqueda de registros de auditoría es necesaria por Entrenamiento de simulación de ataque para que los eventos se puedan capturar, grabar y leer. La desactivación de la búsqueda de registros de auditoría tiene las siguientes consecuencias para Entrenamiento de simulación de ataque:
 
 - Los datos de informes no están disponibles en todos los informes. Los informes aparecerán vacíos.
 - Las asignaciones de entrenamiento están bloqueadas, ya que los datos no están disponibles.
@@ -127,7 +127,7 @@ Los informes de simulación del entrenamiento del simulador de ataques proporcio
 - Usuarios que han renunciado a sus credenciales.
 - Usuarios que notificaron el mensaje como suplantación de identidad (phishing).
 
-Si los mensajes que los usuarios notifican como suplantación de identidad (phishing) no se capturan en los informes de simulación de entrenamiento de simulación de ataques, puede haber una regla de flujo de correo de Exchange (también conocida como regla de transporte) que bloquee la entrega de los mensajes notificados a Microsoft. Compruebe que las reglas de flujo de correo no bloquean la entrega a las siguientes direcciones de correo electrónico:
+Si los mensajes que los usuarios notifican como suplantación de identidad no se capturan en Entrenamiento de simulación de ataque informes de simulación, puede haber una regla de flujo de correo de Exchange (también conocida como regla de transporte) que bloquee la entrega de los mensajes notificados a Microsoft. Compruebe que las reglas de flujo de correo no bloquean la entrega a las siguientes direcciones de correo electrónico:
 
 - junk@office365.microsoft.com
 - abuse@messaging.microsoft.com

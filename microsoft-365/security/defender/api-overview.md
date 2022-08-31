@@ -3,7 +3,8 @@ title: Información general sobre las API de Microsoft 365 Defender
 description: Obtenga información sobre las API disponibles en Microsoft 365 Defender
 keywords: api, apis, overview, incident, incidents, threat hunting, microsoft 365 defender
 search.product: eADQiWindows 10XVcnh
-ms.prod: m365-security
+ms.service: microsoft-365-security
+ms.subservice: m365d
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -19,14 +20,13 @@ ms.topic: conceptual
 search.appverid:
 - MOE150
 - MET150
-ms.technology: m365d
 ms.custom: api
-ms.openlocfilehash: c2a340c2ad147e32082a50e326a2e0c7e11718c2
-ms.sourcegitcommit: a8fbaf4b441b5325004f7a2dacd9429ec9d80534
+ms.openlocfilehash: efa0f6a14915078a87d5b337a2ac523bc11bab26
+ms.sourcegitcommit: 10e6abe740e27000e223378eb17d657a47555fa8
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/26/2022
-ms.locfileid: "65739613"
+ms.lasthandoff: 08/31/2022
+ms.locfileid: "67479277"
 ---
 # <a name="overview-of-microsoft-365-defender-apis"></a>Información general sobre las API de Microsoft 365 Defender
 

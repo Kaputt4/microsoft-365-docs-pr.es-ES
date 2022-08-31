@@ -3,7 +3,8 @@ title: Revise los requisitos de arquitectura y los conceptos de planeamiento de 
 description: El diagrama técnico de Microsoft Defender para Office 365 en Microsoft 365 Defender le ayudará a comprender la identidad en Microsoft 365 antes de crear el laboratorio de prueba o el entorno piloto.
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
-ms.prod: m365-security
+ms.service: microsoft-365-security
+ms.subservice: m365d
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -20,14 +21,14 @@ ms.collection:
 - m365solution-scenario
 - m365solution-evalutatemtp
 - zerotrust-solution
+- highpri
 ms.topic: conceptual
-ms.technology: m365d
-ms.openlocfilehash: 1002b03a0ebb3940d544343476045d52e8209273
-ms.sourcegitcommit: 61b22df76e0f81e5ef11c587b129287886151c79
+ms.openlocfilehash: c4bf7a3c2449bd330bebcb6e4fa33dd2c2fb4584
+ms.sourcegitcommit: 10e6abe740e27000e223378eb17d657a47555fa8
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/12/2022
-ms.locfileid: "66749954"
+ms.lasthandoff: 08/31/2022
+ms.locfileid: "67480523"
 ---
 # <a name="review-microsoft-defender-for-office-365-architecture-requirements-and-key-concepts"></a>Revisión de los requisitos de arquitectura de Microsoft Defender para Office 365 y los conceptos clave
 
@@ -52,9 +53,9 @@ En la tabla siguiente se describe esta ilustración.
 |1     | El servidor host para el remitente externo normalmente realiza una búsqueda dns pública para un registro MX, que proporciona el servidor de destino para retransmitir el mensaje.  Esta referencia puede ser Exchange Online (EXO) directamente o una puerta de enlace SMTP que se ha configurado para retransmitir en EXO.  |
 |2     | Exchange Online Protection negocia y valida la conexión entrante e inspecciona los encabezados y el contenido del mensaje para determinar qué directivas, etiquetado o procesamiento adicionales son necesarios.  |
 |3     | Exchange Online se integra con Microsoft Defender para Office 365 para ofrecer protección contra amenazas, mitigación y corrección más avanzadas. |
-|4      | Un mensaje que no es malintencionado, bloqueado o en cuarentena se procesa y entrega al destinatario en EXO donde se evalúan y desencadenan las preferencias de usuario relacionadas con el correo no deseado, las reglas de buzón de correo u otra configuración. |
+|4     | Un mensaje que no es malintencionado, bloqueado o en cuarentena se procesa y entrega al destinatario en EXO donde se evalúan y desencadenan las preferencias de usuario relacionadas con el correo no deseado, las reglas de buzón de correo u otra configuración. |
 |5     | La integración con Active Directory local se puede habilitar mediante Azure AD Connect para sincronizar y aprovisionar cuentas y objetos habilitados para correo en Azure Active Directory y, en última instancia, Exchange Online. |
-|6      | Al integrar un entorno local, se recomienda usar un servidor exchange para la administración y administración admitidas de atributos, configuraciones y atributos relacionados con el correo. |
+|6     | Al integrar un entorno local, se recomienda usar un servidor exchange para la administración y administración admitidas de atributos, configuraciones y atributos relacionados con el correo. |
 |7      | Microsoft Defender para Office 365 comparte señales a Microsoft 365 Defender para la detección y respuesta extendidas (XDR).|
 
 La integración local es común pero opcional. Si el entorno es solo en la nube, esta guía también le funcionará.
@@ -94,7 +95,7 @@ Puede integrar Microsoft Defender para Office 365 con Microsoft Sentinel para an
 
 Microsoft Defender para Office 365 también se pueden integrar en otras soluciones de administración de eventos e información de seguridad (SIEM) mediante la [API de administración de actividad de Office 365](/office/office-365-management-api/office-365-management-activity-api-reference).
 
-## <a name="next-steps"></a>Siguientes pasos
+## <a name="next-steps"></a>Pasos siguientes
 
 Paso 2 de 3: [Habilitar el entorno de evaluación Microsoft Defender para Office 365](eval-defender-office-365-enable-eval.md)
 

@@ -2,7 +2,8 @@
 title: Evaluación de la posición de seguridad mediante puntuación segura de Microsoft
 description: Describe cómo realizar acciones para mejorar la puntuación de seguridad de Microsoft en el portal de Microsoft 365 Defender.
 keywords: puntuación de seguridad de microsoft, puntuación de seguridad, puntuación de seguridad de office 365, puntuación de seguridad de Microsoft, Microsoft 365 Defender portal, acciones de mejora
-ms.prod: m365-security
+ms.service: microsoft-365-security
+ms.subservice: m365d
 ms.mktglfcycl: deploy
 ms.localizationpriority: medium
 f1.keywords:
@@ -21,13 +22,12 @@ search.appverid:
 ms.custom:
 - seo-marvel-apr2020
 - seo-marvel-jun2020
-ms.technology: m365d
-ms.openlocfilehash: d09c64d7986a85bbc90469d7cd8cc20bdf0d367e
-ms.sourcegitcommit: 217108c59be41b01963a393b4f16d137636fe6a8
+ms.openlocfilehash: dac1fa506dbb5de8a74817d20722738640ee2719
+ms.sourcegitcommit: 10e6abe740e27000e223378eb17d657a47555fa8
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/12/2022
-ms.locfileid: "67328571"
+ms.lasthandoff: 08/31/2022
+ms.locfileid: "67480435"
 ---
 # <a name="assess-your-security-posture-with-microsoft-secure-score"></a>Evaluación de la posición de seguridad con puntuación segura de Microsoft
 

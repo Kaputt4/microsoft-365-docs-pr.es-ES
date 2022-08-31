@@ -1,10 +1,11 @@
 ---
 title: Tabla DeviceProcessEvents en el esquema de búsqueda avanzada
-description: Obtenga información sobre los eventos de generación o creación de procesos en DeviceProcessEventstable del esquema de búsqueda avanzado
-keywords: búsqueda avanzada, búsqueda de amenazas, búsqueda de amenazas cibernéticas, Microsoft 365 Defender, microsoft 365, m365, búsqueda, consulta, telemetría, referencia de esquema, kusto, tabla, columna, tipo de datos, processcreationevents, DeviceProcessEvents, id. de proceso, línea de comandos, DeviceProcessEvents
+description: Obtenga información sobre el proceso de generación o creación de eventos en DeviceProcessEventstable del esquema de búsqueda avanzada.
+keywords: búsqueda avanzada, búsqueda de amenazas, búsqueda de amenazas cibernética, Microsoft 365 Defender, microsoft 365, m365, búsqueda, consulta, telemetría, referencia de esquema, kusto, tabla, columna, tipo de datos, processcreationevents, DeviceProcessEvents, id. de proceso, línea de comandos, DeviceProcessEvents
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
-ms.prod: m365-security
+ms.service: microsoft-365-security
+ms.subservice: m365d
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -17,13 +18,12 @@ manager: dansimp
 audience: ITPro
 ms.collection: m365-security-compliance
 ms.topic: article
-ms.technology: m365d
-ms.openlocfilehash: 9bd0b658141395ac09d530dfecfa29befa892fcc
-ms.sourcegitcommit: 6dcc3b039e0f0b9bae17c386f14ed2b577b453a6
+ms.openlocfilehash: 5f250c18a8bacb728143ada220a09525f4f1f6b1
+ms.sourcegitcommit: 10e6abe740e27000e223378eb17d657a47555fa8
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/15/2021
-ms.locfileid: "61531380"
+ms.lasthandoff: 08/31/2022
+ms.locfileid: "67476844"
 ---
 # <a name="deviceprocessevents"></a>DeviceProcessEvents
 
@@ -36,26 +36,26 @@ ms.locfileid: "61531380"
 
 
 
-La `DeviceProcessEvents` tabla del esquema de [búsqueda](advanced-hunting-overview.md) avanzada contiene información sobre la creación de procesos y los eventos relacionados. Utilice esta referencia para crear consultas que devuelvan información sobre la tabla.
+La `DeviceProcessEvents` tabla del esquema [de búsqueda avanzada](advanced-hunting-overview.md) contiene información sobre la creación de procesos y los eventos relacionados. Utilice esta referencia para crear consultas que devuelvan información sobre la tabla.
 
 >[!TIP]
-> Para obtener información detallada acerca de los tipos de eventos ( valores) admitidos por una tabla, use la referencia de esquema integrada `ActionType` disponible en Defender para la nube.
+> Para obtener información detallada sobre los tipos de eventos (`ActionType` valores) admitidos por una tabla, use la referencia de esquema integrada disponible en Defender for Cloud.
 
 Para obtener información sobre otras tablas del esquema de búsqueda avanzada, [vea la referencia de búsqueda avanzada](advanced-hunting-schema-tables.md).
 
-| Nombre de columna | Tipo de datos | Description |
+| Nombre de columna | Tipo de datos | Descripción |
 |-------------|-----------|-------------|
 | `Timestamp` | `datetime` | Fecha y hora en que se registró el evento. |
 | `DeviceId` | `string` | Identificador único para el equipo en servicio |
 | `DeviceName` | `string` | Nombre de dominio completo (FQDN, por sus siglas en inglés) del equipo |
-| `ActionType` | `string` | Tipo de actividad que desencadenó el evento. Vea la [referencia de esquema en el portal](advanced-hunting-schema-tables.md?#get-schema-information-in-the-security-center) para obtener más información |
+| `ActionType` | `string` | Tipo de actividad que desencadenó el evento. Consulte la [referencia de esquema en el portal](advanced-hunting-schema-tables.md?#get-schema-information-in-the-security-center) para obtener más información. |
 | `FileName` | `string` | Nombre del archivo donde se aplicó la acción registrada |
-| `FolderPath` | `string` | Carpeta que contiene el archivo al que se aplicó la acción grabada |
+| `FolderPath` | `string` | Carpeta que contiene el archivo al que se aplicó la acción registrada |
 | `SHA1` | `string` | SHA-1 del archivo donde fue aplicada la acción registrada |
 | `SHA256` | `string` | SHA-256 del archivo donde se aplicó la acción registrada. Este campo no suele estar rellenado; use la columna SHA1 cuando se encuentre disponible. |
-| `MD5` | `string` | Hash MD5 del archivo al que se aplicó la acción grabada |
+| `MD5` | `string` | Hash MD5 del archivo al que se aplicó la acción registrada |
 | `FileSize` | `long` | Tamaño del archivo en bytes |
-| `ProcessVersionInfoCompanyName` | `string` | Nombre de la compañía a partir de la información de versión del proceso recién creado |
+| `ProcessVersionInfoCompanyName` | `string` | Nombre de la empresa de la información de versión del proceso recién creado |
 | `ProcessVersionInfoProductName` | `string` | Nombre del producto de la información de versión del proceso recién creado |
 | `ProcessVersionInfoProductVersion` | `string` | Versión del producto a partir de la información de versión del proceso recién creado |
 | `ProcessVersionInfoInternalFileName` | `string` | Nombre de archivo interno de la información de versión del proceso recién creado |
@@ -63,31 +63,31 @@ Para obtener información sobre otras tablas del esquema de búsqueda avanzada, 
 | `ProcessVersionInfoFileDescription` | `string` | Descripción de la información de versión del proceso recién creado |
 | `ProcessId` | `int` | Identificador de proceso (PID) del proceso recién creado |
 | `ProcessCommandLine` | `string` | Línea de comandos usada para crear el nuevo proceso |
-| `ProcessIntegrityLevel` | `string` | Nivel de integridad del proceso recién creado. Windows asigna niveles de integridad a los procesos en función de determinadas características, como si se iniciaron desde una descarga de Internet. Estos niveles de integridad influyen en los permisos de los recursos |
-| `ProcessTokenElevation` | `string` | Indica el tipo de elevación de token aplicada al proceso recién creado. Valores posibles: TokenElevationTypeLimited (restringido), TokenElevationTypeDefault (estándar) y TokenElevationTypeFull (elevado) |
+| `ProcessIntegrityLevel` | `string` | Nivel de integridad del proceso recién creado. Windows asigna niveles de integridad a los procesos en función de ciertas características, como si se iniciaran desde una descarga de Internet. Estos niveles de integridad influyen en los permisos para los recursos |
+| `ProcessTokenElevation` | `string` | Indica el tipo de elevación de token aplicada al proceso recién creado. Valores posibles: TokenElevationTypeLimited (restringido), TokenElevationTypeDefault (estándar) y TokenElevationTypeFull (con privilegios elevados) |
 | `ProcessCreationTime` | `datetime` | Fecha y hora en que se creó el proceso |
 | `AccountDomain` | `string` | Dominio de la cuenta |
 | `AccountName` | `string` | Nombre de usuario de la cuenta |
 | `AccountSid` | `string` | Identificador de seguridad (SID) de la cuenta |
 | `AccountUpn` | `string` | Nombre principal de usuario (UPN) de la cuenta |
 | `AccountObjectId` | `string` | Identificador único de la cuenta en Azure AD |
-| `LogonId` | `string` | Identificador de una sesión de inicio de sesión. Este identificador es único en el mismo equipo solo entre reinicios |
+| `LogonId` | `string` | Identificador de una sesión de inicio de sesión. Este identificador es único en la misma máquina solo entre reinicios |
 | `InitiatingProcessAccountDomain` | `string` | Dominio de la cuenta que ejecutó el proceso responsable del evento |
 | `InitiatingProcessAccountName` | `string` | Nombre de usuario de la cuenta que ejecutó el proceso responsable del evento |
 | `InitiatingProcessAccountSid` | `string` | Identificador de seguridad (SID) de la cuenta que ejecutó el proceso responsable del evento |
 | `InitiatingProcessAccountUpn` | `string` | Nombre principal de usuario (UPN) de la cuenta que ejecutó el proceso responsable del evento |
-| `InitiatingProcessAccountObjectId` | `string` | Azure AD de objeto de la cuenta de usuario que ejecutó el proceso responsable del evento |
-| `InitiatingProcessLogonId` | `string` | Identificador de una sesión de inicio de sesión del proceso que inició el evento. Este identificador es único en el mismo equipo solo entre reinicios. |
-| `InitiatingProcessIntegrityLevel` | `string` | Nivel de integridad del proceso que inició el evento. Windows asigna niveles de integridad a los procesos en función de determinadas características, como si se iniciaron desde una descarga de Internet. Estos niveles de integridad influyen en los permisos de los recursos |
-| `InitiatingProcessTokenElevation` | `string` | Tipo de token que indica la presencia o ausencia de elevación de privilegios del Control de acceso de usuario (UAC) aplicada al proceso que inició el evento |
+| `InitiatingProcessAccountObjectId` | `string` | Identificador de objeto de Azure AD de la cuenta de usuario que ejecutó el proceso responsable del evento |
+| `InitiatingProcessLogonId` | `string` | Identificador de una sesión de inicio de sesión del proceso que inició el evento. Este identificador es único en la misma máquina solo entre reinicios. |
+| `InitiatingProcessIntegrityLevel` | `string` | Nivel de integridad del proceso que inició el evento. Windows asigna niveles de integridad a los procesos en función de ciertas características, como si se iniciaran desde una descarga de Internet. Estos niveles de integridad influyen en los permisos para los recursos |
+| `InitiatingProcessTokenElevation` | `string` | Tipo de token que indica la presencia o ausencia de elevación de privilegios de Access Control de usuario (UAC) aplicada al proceso que inició el evento |
 | `InitiatingProcessSHA1` | `string` | SHA-1 del proceso (archivo de imagen) que inició el evento |
 | `InitiatingProcessSHA256` | `string` | SHA-256 del proceso (archivo de imagen) que inició el evento. Este campo no suele estar rellenado; use la columna SHA1 cuando se encuentre disponible. |
 | `InitiatingProcessMD5` | `string` | Hash MD5 del proceso (archivo de imagen) que inició el evento |
 | `InitiatingProcessFileName` | `string` | Nombre del proceso que inició el evento |
 | `InitiatingProcessFileSize` | `long` | Tamaño del archivo que ejecutó el proceso responsable del evento |
-| `InitiatingProcessVersionInfoCompanyName` | `string` | Nombre de la compañía a partir de la información de versión del proceso (archivo de imagen) responsable del evento |
+| `InitiatingProcessVersionInfoCompanyName` | `string` | Nombre de la empresa de la información de versión del proceso (archivo de imagen) responsable del evento |
 | `InitiatingProcessVersionInfoProductName` | `string` | Nombre del producto de la información de versión del proceso (archivo de imagen) responsable del evento |
-| `InitiatingProcessVersionInfoProductVersion` | `string` | Versión del producto de la información de versión del proceso (archivo de imagen) responsable del evento |
+| `InitiatingProcessVersionInfoProductVersion` | `string` | Versión del producto a partir de la información de versión del proceso (archivo de imagen) responsable del evento |
 | `InitiatingProcessVersionInfoInternalFileName` | `string` | Nombre de archivo interno de la información de versión del proceso (archivo de imagen) responsable del evento |
 | `InitiatingProcessVersionInfoOriginalFileName` | `string` | Nombre de archivo original de la información de versión del proceso (archivo de imagen) responsable del evento |
 | `InitiatingProcessVersionInfoFileDescription` | `string` | Descripción de la información de versión del proceso (archivo de imagen) responsable del evento |
@@ -98,9 +98,9 @@ Para obtener información sobre otras tablas del esquema de búsqueda avanzada, 
 | `InitiatingProcessParentId` | `int` | Identificador de proceso (PID) del proceso primario que generó el proceso responsable del evento |
 | `InitiatingProcessParentFileName` | `string` | Nombre del proceso primario que generó el proceso responsable del evento |
 | `InitiatingProcessParentCreationTime` | `datetime` | Fecha y hora en que se inició el elemento primario del proceso responsable del evento |
-| `InitiatingProcessSignerType` | `string` | Tipo de firmante de archivos del proceso (archivo de imagen) que inició el evento |
+| `InitiatingProcessSignerType` | `string` | Tipo de firmante de archivo del proceso (archivo de imagen) que inició el evento |
 | `InitiatingProcessSignatureStatus` | `string` | Información sobre el estado de firma del proceso (archivo de imagen) que inició el evento |
-| `ReportId` | `long` | Identificador de eventos basado en un contador de repetición. Para identificar eventos únicos, esta columna debe usarse junto con las columnas DeviceName y Timestamp |
+| `ReportId` | `long` | Identificador de eventos basado en un contador de repetición. Para identificar eventos únicos, esta columna debe usarse junto con las columnas DeviceName y Timestamp. |
 | `AppGuardContainerId` | `string` | Identificador del contenedor virtualizado usado por Application Guard para aislar la actividad del explorador |
 | `AdditionalFields` | `string` | Información adicional sobre el evento en formato de matriz JSON |
 

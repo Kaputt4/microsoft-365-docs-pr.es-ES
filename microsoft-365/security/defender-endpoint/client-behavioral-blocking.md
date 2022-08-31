@@ -9,19 +9,19 @@ manager: dansimp
 ms.reviewer: shwetaj
 audience: ITPro
 ms.topic: article
-ms.prod: m365-security
+ms.service: microsoft-365-security
 ms.localizationpriority: medium
 ms.custom:
 - next-gen
 - edr
 ms.collection: m365-security-compliance
-ms.technology: mde
-ms.openlocfilehash: 95c138b6613d610520a4e6870ae7a59b46159f5d
-ms.sourcegitcommit: ebbe8713297675db5dcb3e0d9c3ae5e746b99196
+ms.subservice: mde
+ms.openlocfilehash: 3947d29b4115c2f08e57aab26de951b733762c07
+ms.sourcegitcommit: 10e6abe740e27000e223378eb17d657a47555fa8
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/14/2022
-ms.locfileid: "65418748"
+ms.lasthandoff: 08/31/2022
+ms.locfileid: "67480633"
 ---
 # <a name="client-behavioral-blocking"></a>Contención y bloqueo de comportamiento del cliente
 
@@ -33,7 +33,7 @@ ms.locfileid: "65418748"
 **Plataforma**
 - Windows
 
-> ¿Desea experimentar Defender para punto de conexión? [Regístrese para obtener una prueba gratuita.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-assignaccess-abovefoldlink)
+> ¿Quiere experimentar Defender para punto de conexión? [Regístrese para obtener una prueba gratuita.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-assignaccess-abovefoldlink)
 
 ## <a name="overview"></a>Información general
 
@@ -45,7 +45,7 @@ La protección antivirus funciona mejor cuando se empareja con la protección en
 
 ## <a name="how-client-behavioral-blocking-works"></a>Funcionamiento del bloqueo del comportamiento del cliente
 
-[Antivirus de Microsoft Defender](microsoft-defender-antivirus-in-windows-10.md) puede detectar comportamientos sospechosos, código malintencionado, ataques sin archivos y en memoria, etc. en un dispositivo. Cuando se detectan comportamientos sospechosos, Antivirus de Microsoft Defender supervisa y envía esos comportamientos sospechosos y sus árboles de proceso al servicio de protección en la nube. El aprendizaje automático diferencia entre las aplicaciones malintencionadas y los buenos comportamientos en milisegundos y clasifica cada artefacto. En tiempo casi real, en cuanto se detecta que un artefacto es malintencionado, se bloquea en el dispositivo.
+[Antivirus de Microsoft Defender](microsoft-defender-antivirus-in-windows-10.md) puede detectar comportamientos sospechosos, código malintencionado, ataques sin archivos y en memoria, etc. en un dispositivo. Cuando se detectan comportamientos sospechosos, Antivirus de Microsoft Defender supervisa y envía esos comportamientos sospechosos y sus árboles de procesos al servicio de protección en la nube. El aprendizaje automático diferencia entre las aplicaciones malintencionadas y los buenos comportamientos en milisegundos y clasifica cada artefacto. En tiempo casi real, en cuanto se detecta que un artefacto es malintencionado, se bloquea en el dispositivo.
 
 Cada vez que se detecta un comportamiento sospechoso, se genera una [alerta](alerts-queue.md) y es visible mientras se detectó y detuvo el ataque; las alertas, como una "alerta de acceso inicial", se desencadenan y aparecen en el [portal de Microsoft 365 Defender](/microsoft-365/security/defender/microsoft-365-defender) (anteriormente Microsoft 365 Defender).
 
@@ -53,7 +53,7 @@ El bloqueo del comportamiento del cliente es eficaz porque no solo ayuda a evita
 
 ## <a name="behavior-based-detections"></a>Detecciones basadas en comportamiento
 
-Las detecciones basadas en comportamiento se denominan de acuerdo con la [matriz ATT de MITRE&CK para Enterprise](https://attack.mitre.org/matrices/enterprise). La convención de nomenclatura ayuda a identificar la fase de ataque en la que se observó el comportamiento malintencionado:
+Las detecciones basadas en comportamiento se denominan de acuerdo con la [matriz de ATT de MITRE&CK para empresas](https://attack.mitre.org/matrices/enterprise). La convención de nomenclatura ayuda a identificar la fase de ataque en la que se observó el comportamiento malintencionado:
 
 |Táctica|Nombre de la amenaza de detección|
 |---|---|
@@ -85,7 +85,7 @@ Si su organización usa Defender para punto de conexión, el bloqueo del comport
 - [Protección de última generación](configure-microsoft-defender-antivirus-features.md) (antivirus, antimalware y otras funcionalidades de protección contra amenazas)
 
 > [!TIP]
-> Si busca información relacionada con antivirus para otras plataformas, consulte:
+> Si busca información relacionada con el antivirus para otras plataformas, consulte:
 > - [Establecer las preferencias para Microsoft Defender para punto de conexión en macOS](mac-preferences.md)
 > - [Microsoft Defender para punto de conexión en Mac](microsoft-defender-endpoint-mac.md)
 > - [Configuración de las directivas de antivirus de macOS para Antivirus de Microsoft Defender para Intune](/mem/intune/protect/antivirus-microsoft-defender-settings-macos)

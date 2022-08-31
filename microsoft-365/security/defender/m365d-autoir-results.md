@@ -3,8 +3,8 @@ title: Detalles y resultados de una investigación automatizada
 description: Ver los resultados y los resultados clave de la investigación automatizada en Microsoft 365 Defender
 keywords: automatizada, investigación, resultados, analizar, detalles, corrección, autoair
 search.appverid: met150
-ms.prod: m365-security
-ms.technology: m365d
+ms.service: microsoft-365-security
+ms.subservice: m365d
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -24,12 +24,12 @@ ms.custom:
 - autoir
 - admindeeplinkDEFENDER
 ms.reviewer: evaldm, isco
-ms.openlocfilehash: 591c7a8aca882c0674eaa3ba4b3eacc89817e859
-ms.sourcegitcommit: d09eb780dc41a01796eb8137fbe9267231af6746
+ms.openlocfilehash: be8cdaf9912c9039f9eb12ae7555a0052e8e502e
+ms.sourcegitcommit: 10e6abe740e27000e223378eb17d657a47555fa8
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/19/2022
-ms.locfileid: "67388625"
+ms.lasthandoff: 08/31/2022
+ms.locfileid: "67481402"
 ---
 # <a name="details-and-results-of-an-automated-investigation"></a>Detalles y resultados de una investigación automatizada
 
@@ -134,27 +134,27 @@ Para proporcionar más contexto sobre cómo se muestran los estados de investiga
 |Nombre de alerta | Severity | Estado de investigación | Estado | Categoría |
 |-----------|----------|---------------------|--------|----------|
 |Se detectó malware en un archivo de imagen de disco wim|Informativo|Benigno|Resuelto|Malware|
-|Se detectó malware en un archivo de archivo rar|Informativo|PendingResource|Nueva|Malware|
+|Se detectó malware en un archivo de archivo rar|Informativo|PendingResource|Nuevo|Malware|
 |Se detectó malware en un archivo de archivo rar|Informativo|UnsupportedAlertType|Nueva|Malware|
 |Se detectó malware en un archivo de archivo rar|Informativo|UnsupportedAlertType|Nueva|Malware|
 |Se detectó malware en un archivo de archivo rar|Informativo|UnsupportedAlertType|Nueva|Malware|
 |Se detectó malware en un archivo zip|Informativo|PendingResource|Nueva|Malware|
-|Se detectó malware en un archivo zip|Informativo|PendingResource|Nuevo|Malware|
 |Se detectó malware en un archivo zip|Informativo|PendingResource|Nueva|Malware|
-|Se detectó malware en un archivo zip|Informativo|PendingResource|Nuevo|Malware|
+|Se detectó malware en un archivo zip|Informativo|PendingResource|Nueva|Malware|
+|Se detectó malware en un archivo zip|Informativo|PendingResource|Nueva|Malware|
 |Wpakill hacktool se ha evitado|Bajo|Error|Nuevo|Malware|
 |GendowsBatch hacktool se ha evitado|Bajo|Error|Nuevo|Malware|
 |Keygen hacktool se ha evitado|Bajo|Error|Nuevo|Malware|
-|Se detectó malware en un archivo zip|Informativo|PendingResource|Nuevo|Malware|
-|Se detectó malware en un archivo de archivo rar|Informativo|PendingResource|Nuevo|Malware|
-|Se detectó malware en un archivo de archivo rar|Informativo|PendingResource|Nuevo|Malware|
 |Se detectó malware en un archivo zip|Informativo|PendingResource|Nueva|Malware|
-|Se detectó malware en un archivo de archivo rar|Informativo|PendingResource|Nuevo|Malware|
 |Se detectó malware en un archivo de archivo rar|Informativo|PendingResource|Nueva|Malware|
-|Se detectó malware en un archivo de imagen de disco iso.|Informativo|PendingResource|Nuevo|Malware|
+|Se detectó malware en un archivo de archivo rar|Informativo|PendingResource|Nueva|Malware|
+|Se detectó malware en un archivo zip|Informativo|PendingResource|Nueva|Malware|
+|Se detectó malware en un archivo de archivo rar|Informativo|PendingResource|Nueva|Malware|
+|Se detectó malware en un archivo de archivo rar|Informativo|PendingResource|Nueva|Malware|
 |Se detectó malware en un archivo de imagen de disco iso.|Informativo|PendingResource|Nueva|Malware|
+|Se detectó malware en un archivo de imagen de disco iso.|Informativo|PendingResource|Nuevo|Malware|
 |Se detectó malware en un archivo de datos de Outlook pst|Informativo|UnsupportedAlertType|Nuevo|Malware|
-|Se detectó malware en un archivo de datos de Outlook pst|Informativo|UnsupportedAlertType|Nuevo|Malware|
+|Se detectó malware en un archivo de datos de Outlook pst|Informativo|UnsupportedAlertType|Nueva|Malware|
 |MediaGet detectado|Mediano|Parcialmente invertido|Nuevo|Malware|
 |TrojanEmailFile|Mediano|CorrectamenteRemediated|Resuelto|Malware|
 |Se ha evitado el malware CustomEnterpriseBlock|Informativo|CorrectamenteRemediated|Resuelto|Malware|
@@ -166,9 +166,9 @@ Para proporcionar más contexto sobre cómo se muestran los estados de investiga
 |Se ha evitado el malware CustomEnterpriseBlock|Informativo|CorrectamenteRemediated|Resuelto|Malware|
 |TrojanEmailFile|Mediano|CorrectamenteRemediated|Resuelto|Malware|
 |TrojanEmailFile|Mediano|Benigno|Resuelto|Malware|
-|Se bloqueó un malware CustomEnterpriseBlock activo|Bajo|PendingResource|Nuevo|Malware|
+|Se bloqueó un malware CustomEnterpriseBlock activo|Bajo|PendingResource|Nueva|Malware|
 
-## <a name="next-steps"></a>Siguientes pasos
+## <a name="next-steps"></a>Pasos siguientes
 
 - [Ver y aprobar acciones de corrección](m365d-autoir-actions.md)
 - [Más información sobre las acciones de corrección](m365d-remediation-actions.md)

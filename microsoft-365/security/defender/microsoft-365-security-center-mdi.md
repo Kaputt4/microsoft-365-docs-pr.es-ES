@@ -2,7 +2,8 @@
 title: Microsoft Defender for Identity en Microsoft 365 Defender
 description: Obtenga información sobre los cambios de la Microsoft Defender for Identity a Microsoft 365 Defender
 keywords: Introducción a Microsoft 365 Defender, Microsoft Defender for Identity, NDI
-ms.prod: m365-security
+ms.service: microsoft-365-security
+ms.subservice: m365d
 ms.mktglfcycl: deploy
 ms.localizationpriority: medium
 f1.keywords:
@@ -19,12 +20,12 @@ search.appverid:
 ms.collection:
 - M365-security-compliance
 ms.custom: admindeeplinkDEFENDER
-ms.openlocfilehash: 76044b7451014cc578800b6e1726556688d9db14
-ms.sourcegitcommit: 7e551fa4e9b8b25ed62b5f406143b6b1dae08cbf
+ms.openlocfilehash: a8ec7ceaa052b1f0043004a0109b1e3aba74493f
+ms.sourcegitcommit: 10e6abe740e27000e223378eb17d657a47555fa8
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/01/2022
-ms.locfileid: "67107291"
+ms.lasthandoff: 08/31/2022
+ms.locfileid: "67480181"
 ---
 # <a name="microsoft-defender-for-identity-in-microsoft-365-defender"></a>Microsoft Defender for Identity en Microsoft 365 Defender
 

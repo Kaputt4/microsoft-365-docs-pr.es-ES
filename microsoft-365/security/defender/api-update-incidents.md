@@ -3,7 +3,8 @@ title: Actualización de la API de incidentes
 description: Obtenga información sobre cómo actualizar incidentes mediante Microsoft 365 Defender API
 keywords: update, api, incident
 search.product: eADQiWindows 10XVcnh
-ms.prod: m365-security
+ms.service: microsoft-365-security
+ms.subservice: m365d
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -19,14 +20,13 @@ ms.topic: conceptual
 search.appverid:
 - MOE150
 - MET150
-ms.technology: m365d
 ms.custom: api
-ms.openlocfilehash: f0d8ec43cc67ab07b2c69104e79730ab522118ad
-ms.sourcegitcommit: e4882e3c66166ea7b834ad2e8fafeab42293e07d
+ms.openlocfilehash: d15f7a580964736ebc81bd0dbeed534c4965426b
+ms.sourcegitcommit: 10e6abe740e27000e223378eb17d657a47555fa8
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/30/2022
-ms.locfileid: "67100061"
+ms.lasthandoff: 08/31/2022
+ms.locfileid: "67480984"
 ---
 # <a name="update-incidents-api"></a>Actualización de la API de incidentes
 
@@ -56,7 +56,7 @@ Se requiere uno de los permisos siguientes para llamar a esta API. Para más inf
 
 Tipo de permiso|Permiso|Nombre para mostrar del permiso
 ---|---|---
-Aplicación|Incident.ReadWrite.All|Leer y escribir todos los incidentes
+Application|Incident.ReadWrite.All|Leer y escribir todos los incidentes
 Delegado (cuenta profesional o educativa)|Incident.ReadWrite|Incidentes de lectura y escritura
 
 > [!NOTE]
@@ -72,7 +72,7 @@ PATCH /api/incidents/{id}
 
 Nombre|Tipo|Descripción
 ---|---|---
-Authorization|String|Portador {token}. **Necesario**.
+Authorization|Cadena|Portador {token}. **Necesario**.
 Content-Type|Cadena|application/json. **Necesario**.
 
 ## <a name="request-body"></a>Cuerpo de solicitud
@@ -84,7 +84,7 @@ Propiedad|Tipo|Descripción
 status|Enum|Especifica el estado actual del incidente. Los valores posibles son: `Active`, `Resolved`y `Redirected`.
 assignedTo|string|Propietario del incidente.
 classification|Enum|Especificación del incidente. Los valores posibles son: `Unknown`, `FalsePositive` y `TruePositive`.
-determinación|Enum|Especifica la determinación del incidente. Valores posibles: `NotAvailable`, `Apt`, `Malware`, `SecurityPersonnel`, `SecurityTesting`, `UnwantedSoftware`, `Other`.
+Determinación|Enum|Especifica la determinación del incidente. Valores posibles: `NotAvailable`, `Apt`, `Malware`, `SecurityPersonnel`, `SecurityTesting`, `UnwantedSoftware`, `Other`.
 tags|string List|Lista de etiquetas de incidentes.
 comment|string|Comentario que se va a agregar al incidente.
 
@@ -95,7 +95,7 @@ comment|string|Comentario que se va a agregar al incidente.
 
 Si se ejecuta correctamente, este método devuelve `200 OK`. El cuerpo de la respuesta contendrá la entidad de incidente con las propiedades actualizadas. Si no se encontró un incidente con el identificador especificado, el método devuelve `404 Not Found`.
 
-## <a name="example"></a>Ejemplo:
+## <a name="example"></a>Ejemplo
 
 ### <a name="request-example"></a>Ejemplo de solicitud
 

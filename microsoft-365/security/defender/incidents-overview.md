@@ -3,7 +3,8 @@ title: Respuesta a incidentes con Microsoft 365 Defender
 description: Investigue los incidentes detectados entre dispositivos, usuarios y buzones en el portal de Microsoft 365 Defender.
 keywords: incidentes, alertas, investigar, analizar, responder, correlación, ataque, máquinas, dispositivos, usuarios, identidades, identidad, buzón, correo electrónico, 365, microsoft, m365, respuesta a incidentes, ciberataque
 search.product: eADQiWindows 10XVcnh
-ms.prod: m365-security
+ms.service: microsoft-365-security
+ms.subservice: m365d
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -22,13 +23,12 @@ ms.topic: conceptual
 search.appverid:
 - MOE150
 - MET150
-ms.technology: m365d
-ms.openlocfilehash: 9a8d2e5533afe8d9a7d5dd2effe1646de8dc974d
-ms.sourcegitcommit: 217108c59be41b01963a393b4f16d137636fe6a8
+ms.openlocfilehash: a797d0c96c708bd69b275cb5f9dfb7bbd669e367
+ms.sourcegitcommit: 10e6abe740e27000e223378eb17d657a47555fa8
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/12/2022
-ms.locfileid: "67328923"
+ms.lasthandoff: 08/31/2022
+ms.locfileid: "67478759"
 ---
 # <a name="incident-response-with-microsoft-365-defender"></a>Respuesta a incidentes con Microsoft 365 Defender
 
@@ -242,7 +242,7 @@ Use este módulo de aprendizaje de Microsoft Learn para comprender cómo usar Mi
 > [!div class="nextstepaction"]
 > [Iniciar >](/learn/modules/defender-investigate-incidents/)
 
-## <a name="next-steps"></a>Siguientes pasos
+## <a name="next-steps"></a>Pasos siguientes
 
 Use los pasos enumerados en función del nivel de experiencia o el rol del equipo de seguridad.
 

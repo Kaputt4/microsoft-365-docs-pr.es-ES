@@ -3,7 +3,8 @@ title: Microsoft Defender for Identity piloto
 description: Microsoft Defender for Identity piloto, establecer pruebas comparativas, realizar tutoriales sobre reconocimiento, credenciales comprometidas, movimiento lateral, dominación de dominio y alertas de filtración, entre otros.
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
-ms.prod: m365-security
+ms.service: microsoft-365-security
+ms.subservice: m365d
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -20,14 +21,14 @@ ms.collection:
 - m365solution-scenario
 - m365solution-evalutatemtp
 - zerotrust-solution
+- highpri
 ms.topic: conceptual
-ms.technology: m365d
-ms.openlocfilehash: 4805c97d79d36879a7b5081c347bd81c655c58c4
-ms.sourcegitcommit: 61b22df76e0f81e5ef11c587b129287886151c79
+ms.openlocfilehash: b6cf54408fff8139f1cd06a303f91c9785cca98a
+ms.sourcegitcommit: 10e6abe740e27000e223378eb17d657a47555fa8
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/12/2022
-ms.locfileid: "66747909"
+ms.lasthandoff: 08/31/2022
+ms.locfileid: "67481292"
 ---
 # <a name="pilot-microsoft-defender-for-identity"></a>Microsoft Defender for Identity piloto
 
@@ -67,7 +68,7 @@ Pruebe los tutoriales de Defender for Identity:
 - [Investigar rutas de movimiento lateral](/defender-for-identity/investigate-lateral-movement-path)
 - [Investigar entidades](/defender-for-identity/investigate-entity)
 
-## <a name="next-steps"></a>Siguientes pasos
+## <a name="next-steps"></a>Pasos siguientes
 
 [Evaluar Microsoft Defender para Office 365](eval-defender-office-365-overview.md)
 

@@ -16,12 +16,12 @@ f1.keywords:
 - NOCSH
 description: Los movimientos de datos son operaciones de back-end que se producen cuando Microsoft mueve los servicios y los datos asociados del inquilino a una nueva ubicación geográfica del centro de datos.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 76d4921db83c5f13ad7f6d62b4826540b12528a0
-ms.sourcegitcommit: 35f167725bec5fd4fe131781a53d96b060cf232d
+ms.openlocfilehash: 9c8b22665fec704ae9cb74bb2fe218e0b2e4a00f
+ms.sourcegitcommit: 10e6abe740e27000e223378eb17d657a47555fa8
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "65872300"
+ms.lasthandoff: 08/31/2022
+ms.locfileid: "67478605"
 ---
 # <a name="during-and-after-your-data-move"></a>Durante y después del movimiento de datos
 
@@ -30,14 +30,14 @@ Los movimientos de datos son una operación de back-end con un impacto mínimo p
 > [!NOTE]
 > Los movimientos se producen en momentos diferentes para cada servicio. Como resultado, verá la funcionalidad reducida descrita para cada servicio en un momento diferente.
   
-Vea el Centro de mensajes de Microsoft 365 para obtener confirmación cuando se completen los movimientos de cada Exchange Online, SharePoint En línea y Teams servicio de chat. Como se muestra en la tabla siguiente, puede tardar hasta 24 meses después del final del período de inscripción en completar los datos básicos del cliente en reposo que se mueven a la nueva ubicación geográfica del centro de datos.
+Vea el Centro de mensajes de Microsoft 365 para obtener confirmación cuando se completen los movimientos de cada Exchange Online, SharePoint Online y el servicio de chat de Teams. Como se muestra en la tabla siguiente, puede tardar hasta 24 meses después del final del período de inscripción en completar los datos básicos del cliente en reposo que se mueven a la nueva ubicación geográfica del centro de datos.
 
 | Clientes con país de registro en | Todos los movimientos completados por |
 |:-----|:-----|
 |Australia, Nueva Zelanda, Fiji  <br/> |viernes, 1 de julio de 2022  <br/> |
 |Japón  <br/> |viernes, 1 de julio de 2022  <br/> |
 |India  <br/> |viernes, 1 de julio de 2022  <br/> |
-|Canadá  <br/> |viernes, 1 de julio de 2022  <br/> |
+|Canada  <br/> |viernes, 1 de julio de 2022  <br/> |
 |Corea del Sur  <br/> |viernes, 1 de julio de 2022  <br/> |
 |Reino Unido  <br/> |viernes, 1 de julio de 2022  <br/> |
 |Francia  <br/> |viernes, 1 de julio de 2022  <br/> |
@@ -48,19 +48,20 @@ Vea el Centro de mensajes de Microsoft 365 para obtener confirmación cuando se 
 |Alemania  <br/> |1 de mayo de 2023  <br/> |
 |Brasil  <br/> |jueves, 1 de junio de 2023  <br/> |
 |Suecia  <br/> |1 de junio de 2024  <br/> |
+|Qatar  <br/> |1 de marzo de 2025  <br/> |
 
 ## <a name="exchange-online"></a>Exchange Online
 
 Dado que se tarda tiempo en mover cada usuario a la nueva ubicación geográfica del centro de datos para un único inquilino, algunos usuarios seguirán estando en la ubicación geográfica del centro de datos anterior durante el traslado, mientras que otros estarán en la nueva ubicación geográfica del centro de datos. Esto significa que es posible que algunas características que implican el acceso a varios buzones no funcionen por completo durante un período del proceso de traslado, que puede durar semanas. Estas características se describen en las secciones siguientes.
   
-### <a name="open-shared-folder-in-outlook-web-access"></a>Abra "Carpeta compartida" en Outlook Web Access
+### <a name="open-shared-folder-in-outlook-web-access"></a>Abrir "Carpeta compartida" en Outlook Web Access
 
 Algunos usuarios abren una carpeta de correo compartido desde otro buzón (en el que el usuario tiene permisos de lectura o escritura) en Outlook Web Access mediante la característica "Carpeta compartida". En la tabla siguiente se describe cómo funciona el acceso a carpetas compartidas durante el traslado de un buzón. Tenga en cuenta que los usuarios con permisos completos para un buzón compartido pueden abrir el buzón mediante Outlook Web Access durante el traslado.
   
 | Configuración | Descripción |
 |:-----|:-----|
 |El usuario tiene permiso de carpeta de buzón para otro buzón  <br/> |Potencialmente limitado.  <br/> Si el usuario A y el buzón B no están en la misma ubicación geográfica durante el traslado del inquilino, el usuario A no puede abrir la carpeta del buzón B en Outlook Web Access si el usuario A solo tiene permiso para una carpeta específica en el buzón B.  <br/> Para agregar una carpeta compartida, haga clic con el botón derecho en el nombre de usuario en el panel de navegación izquierdo y seleccione **Agregar carpeta compartida**.  <br/> |
-|Usuario con permiso de buzón completo para otro buzón  <br/> |Totalmente compatible.  <br/> Si el usuario A tiene el permiso "Acceso total" al buzón B, el usuario A puede hacer clic en la carpeta compartida del panel de navegación izquierdo de Outlook Web Access para abrir una ventana que muestre el buzón B.  Un usuario puede abrir un buzón compartido mediante Outlook Web Access durante el traslado sin ningún impacto adverso. La limitación solo se aplica al uso compartido de nivel de carpeta en un buzón de correo.           |
+|Usuario con permiso de buzón completo para otro buzón  <br/> |Totalmente compatible.  <br/> Si el usuario A tiene permiso de "acceso completo" al buzón B, el usuario A puede hacer clic en la carpeta compartida en el panel de navegación izquierdo de Outlook Web Access para abrir una ventana que muestre el buzón B.  Un usuario puede abrir un buzón compartido con Outlook Web Access durante el traslado sin ningún impacto adverso. La limitación solo se aplica al uso compartido de nivel de carpeta en un buzón de correo.           |
   
 ## <a name="sharepoint-online"></a>SharePoint Online
 
@@ -68,17 +69,17 @@ Cuando se mueve SharePoint Online, también se mueven los datos de los siguiente
   
 - OneDrive para la Empresa
 
-- Microsoft 365 servicios de vídeo
+- Servicios de vídeo de Microsoft 365
 
 - Office en un explorador
 
-- Aplicaciones de Microsoft 365 para empresas
+- Microsoft 365 Apps para empresas
 
 - Visio Pro para Microsoft 365
 
-Una vez que hayamos completado el traslado de los datos de SharePoint Online, es posible que vea algunos de los siguientes efectos.
+Una vez completado el movimiento de los datos de SharePoint Online, es posible que vea algunos de los siguientes efectos.
   
-### <a name="microsoft-365-video-services"></a>Microsoft 365 Video Services
+### <a name="microsoft-365-video-services"></a>Servicios de vídeo de Microsoft 365
 
 - El movimiento de datos del vídeo tarda más que los movimientos del resto del contenido en SharePoint Online.
 
@@ -88,7 +89,7 @@ Una vez que hayamos completado el traslado de los datos de SharePoint Online, es
 
 ### <a name="search"></a>Búsqueda
 
-En el transcurso de mover los datos de SharePoint Online, migraremos el índice de búsqueda y la configuración de búsqueda a una nueva ubicación. Hasta que hayamos **completado** el traslado de los datos de SharePoint Online, seguiremos atendiendo a los usuarios desde el índice en la ubicación original. En la nueva ubicación, la búsqueda comienza automáticamente a rastrear el contenido después de haber completado el movimiento de los datos de SharePoint Online. A partir de este punto y en adelante, atenderemos a los usuarios desde el índice migrado. Los cambios en el contenido que se produjeron después de la migración no se incluyen en el índice migrado hasta que el rastreo los recoge. La mayoría de los clientes no se da cuenta de que los resultados son menos frescos justo después de haber completado el traslado de sus datos de SharePoint Online, pero algunos clientes podrían experimentar una actualización reducida en las primeras 24-48 horas.
+En el curso de mover los datos de SharePoint Online, migramos el índice de búsqueda y la configuración de búsqueda a una nueva ubicación. Hasta que hayamos **completado** el traslado de los datos de SharePoint Online, seguiremos atendiendo a los usuarios desde el índice en la ubicación original. En la nueva ubicación, la búsqueda comienza automáticamente a rastrear el contenido después de haber completado el movimiento de los datos de SharePoint Online. A partir de este punto y en adelante, atenderemos a los usuarios desde el índice migrado. Los cambios en el contenido que se produjeron después de la migración no se incluyen en el índice migrado hasta que el rastreo los recoge. La mayoría de los clientes no se da cuenta de que los resultados son menos frescos justo después de haber completado el traslado de sus datos de SharePoint Online, pero algunos clientes podrían experimentar una actualización reducida en las primeras 24-48 horas.
   
 Las siguientes características de búsqueda se ven afectadas:
   
@@ -96,25 +97,25 @@ Las siguientes características de búsqueda se ven afectadas:
 
 - Delve: Delve no incluye los cambios que se produjeron después de la migración hasta que el rastreo los recoge.
 
-- Informes de popularidad y búsqueda para el sitio: los recuentos de informes de Excel en la nueva ubicación solo incluyen los recuentos y recuentos migrados de los informes de uso que se han ejecutado después de completar el movimiento de los datos de SharePoint Online. Los recuentos del período provisional se pierden y no se pueden recuperar. Este período suele ser de un par de días. Algunos clientes pueden experimentar pérdidas más cortas o más largas.
+- Informes de popularidad y búsqueda para el sitio: los recuentos de informes de Excel en la nueva ubicación solo incluyen recuentos y recuentos migrados de informes de uso que se han ejecutado después de haber completado el movimiento de los datos de SharePoint Online. Los recuentos del período provisional se pierden y no se pueden recuperar. Este período suele ser de un par de días. Algunos clientes pueden experimentar pérdidas más cortas o más largas.
 
-- Portal de vídeo: los recuentos de visualización y las estadísticas de Video Portal dependen de las estadísticas de Excel Informes, por lo que los recuentos de visualización y las estadísticas de Video Portal se pierden durante el mismo período de tiempo que para los informes de Excel.
+- Portal de vídeo: los recuentos de vistas y las estadísticas del Portal de vídeo dependen de las estadísticas de los informes de Excel, por lo que los recuentos de vistas y las estadísticas de Video Portal se pierden durante el mismo período de tiempo que para los informes de Excel.
 
 - eDiscovery: los elementos que cambiaron durante la migración no se muestran hasta que el rastreo recoge los cambios.
 
 - Protección contra pérdida de datos (DLP): las directivas no se aplican en los elementos que cambian hasta que el rastreo recoge los cambios.
 
-Como parte de la migración, la región predeterminada cambiará y todo el contenido nuevo se almacenará en reposo en la nueva región predeterminada. El contenido existente se moverá en segundo plano sin ningún impacto hasta 90 días después del primer cambio en la ubicación de datos de SharePoint Online en el centro de administración.
+Como parte de la migración, la región predeterminada cambiará y todo el contenido nuevo se almacenará en reposo en la nueva región predeterminada. El contenido existente se moverá en segundo plano sin ningún impacto durante un máximo de 90 días después del primer cambio en la ubicación de datos de SharePoint Online en el centro de administración.
 
 ## <a name="microsoft-teams"></a>Microsoft Teams
 
-### <a name="files-tab"></a>Pestaña Archivos
+### <a name="files-tab"></a>Pestaña Archivo
 
 Una vez completada la migración, la pestaña Archivos puede tardar más tiempo (hasta 7 segundos) en cargarse completamente cuando el usuario intenta usarla por primera vez. 
 
 ### <a name="read-only-period"></a>Período de solo lectura
 
-Teams servicios de chat mueve cada subproceso individualmente.  El subproceso está bloqueado en un estado de solo lectura durante el movimiento, que dura unos segundos por subproceso.  Los subprocesos siguen siendo accesibles durante la migración.
+Los servicios de chat de Teams mueven cada subproceso individualmente.  El subproceso está bloqueado en un estado de solo lectura durante el movimiento, que dura unos segundos por subproceso.  Los subprocesos siguen siendo accesibles durante la migración.
 
 ## <a name="skype-for-business"></a>Skype Empresarial
 

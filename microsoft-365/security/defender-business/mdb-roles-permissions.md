@@ -17,12 +17,13 @@ ms.collection:
 - SMB
 - M365-security-compliance
 - m365solution-mdb-setup
-ms.openlocfilehash: b8e884c207479a7d2781e1ea4e31b9ee91bd25db
-ms.sourcegitcommit: 6bff75867764335685f972943170c7db46e33a6f
+- highpri
+ms.openlocfilehash: 2c8b8f73b680324a25f478a96bff177a3d17aea7
+ms.sourcegitcommit: 10e6abe740e27000e223378eb17d657a47555fa8
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/10/2022
-ms.locfileid: "67300900"
+ms.lasthandoff: 08/31/2022
+ms.locfileid: "67480413"
 ---
 # <a name="assign-roles-and-permissions-in-microsoft-defender-for-business"></a>Asignación de roles y permisos en Microsoft Defender para Empresas
 
@@ -72,7 +73,7 @@ En la tabla siguiente se describen los tres roles que se pueden asignar en Defen
 
 Si aún no ha agregado usuarios a su suscripción, consulte [Agregar usuarios y asignar licencias al mismo tiempo](mdb-add-users.md).
 
-## <a name="next-steps"></a>Siguientes pasos
+## <a name="next-steps"></a>Pasos siguientes
 
 Vete a:
 
