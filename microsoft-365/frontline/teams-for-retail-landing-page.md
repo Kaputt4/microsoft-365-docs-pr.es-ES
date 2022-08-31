@@ -23,12 +23,12 @@ searchScope:
 appliesto:
 - Microsoft Teams
 - Microsoft 365 for frontline workers
-ms.openlocfilehash: c4b176d0da2d6caa9b6126ddfbd1e4d02ab1417e
-ms.sourcegitcommit: 1efb75d033860977239b479f92e7eaf274b5fbf0
-ms.translationtype: HT
+ms.openlocfilehash: db40235a7ef2b278cd532fec06745e58054580ee
+ms.sourcegitcommit: 10e6abe740e27000e223378eb17d657a47555fa8
+ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/16/2022
-ms.locfileid: "66998867"
+ms.lasthandoff: 08/31/2022
+ms.locfileid: "67471994"
 ---
 # <a name="get-started-with-microsoft-365-for-retail"></a>Introducción a Microsoft 365 para comercios minoristas
 
@@ -37,7 +37,7 @@ Los entornos minoristas, con sus programaciones rotativas y el personal sobre la
 1. [Elija los escenarios](#choose-your-scenarios) que desea implementar para su empresa.
 :::image type="content" source="media/retail-teams-scenarios.png" alt-text="Diagrama que muestra los escenarios de Teams para el comercio minorista." lightbox="media/retail-teams-scenarios.png":::
 2. [Configuración de Microsoft 365](flw-setup-microsoft-365.md): configure los elementos principales de Microsoft 365, Microsoft Teams y cualquier otro servicio que necesite.
-3. [Configurar servicios y aplicaciones](#configure-services-and-apps): use plantillas de equipo para configurar los equipos que necesita rápidamente, incluidos los canales y las aplicaciones que necesita para su empresa. Agregue otras aplicaciones de Microsoft según sea necesario para admitir sus escenarios.
+3. [Configurar servicios y aplicaciones](#configure-services-and-apps): usar plantillas de equipo para configurar los equipos que se necesitan rápidamente, incluidos los canales y las aplicaciones que la empresa necesita. Agregue otras aplicaciones de Microsoft según sea necesario para admitir sus escenarios.
 :::image type="content" source="media/retail-teams-apps.png" alt-text="Diagrama que muestra equipos, plantillas de equipo y aplicaciones que se pueden incluir." lightbox="media/retail-teams-apps.png":::
 
 ## <a name="choose-your-scenarios"></a>Elegir los escenarios
@@ -48,6 +48,16 @@ Microsoft 365 y Microsoft Teams ofrecen varias funcionalidades que pueden ayudar
 
 > [!NOTE]
 > Estos escenarios también forman parte de Microsoft Cloud for Retail. Puede hacer más con estos escenarios cuando también use otras funcionalidades de Microsoft Cloud for Retail, como Microsoft Dynamics 365. Obtenga más información sobre el uso de esta solución, que reúne las funcionalidades de Azure, Dynamics 365 y Microsoft 365 en [Microsoft Cloud for Retail](/industry/retail).
+
+Vea el siguiente vídeo para ver cómo puede ayudar a los asociados de la tienda a conectarse y colaborar:
+
+> [!VIDEO https://www.microsoft.com/videoplayer/embed/RWRJVw]
+
+
+Vea el siguiente vídeo para ver cómo puede simplificar los procesos empresariales en entornos comerciales:
+
+> [!VIDEO https://www.microsoft.com/videoplayer/embed/RWRzfc]
+
 
 ### <a name="in-store-communication-and-collaboration"></a>Comunicación y colaboración en el almacén.
 
@@ -124,13 +134,13 @@ En el caso de entornos comerciales, las siguientes aplicaciones y servicios pued
 
 | Aplicaciones y servicios de Teams | Descripción | Administrar | Ayuda |
 | ----- | ----- | ----- | ----- |
-| Aprobaciones | Las aprobaciones se pueden integrar en el chat para que se pueda cerrar la sesión fácilmente. | [Administrar aprobaciones](/microsoftteams/approval-admin?bc=/microsoft-365/frontline/breadcrumb/toc.json&toc=/microsoft-365/frontline/toc.json) | [Usar aprobaciones](https://support.microsoft.com/office/what-is-approvals-a9a01c95-e0bf-4d20-9ada-f7be3fc283d3) |
+| Aprobaciones | Las aprobaciones se pueden integrar en el chat para que se pueda cerrar la sesión fácilmente. | [Administrar aprobaciones](/microsoftteams/approval-admin?bc=/microsoft-365/frontline/breadcrumb/toc.json&toc=/microsoft-365/frontline/toc.json) | [Usar Aprobaciones](https://support.microsoft.com/office/what-is-approvals-a9a01c95-e0bf-4d20-9ada-f7be3fc283d3) |
 | Chat | Habilite conversaciones rápidas e inserciones entre el personal con herramientas de comunicaciones seguras de nivel empresarial, en lugar de aplicaciones de nivel de consumidor o SMS. | [Chat, equipos, canales y aplicaciones en Microsoft Teams](/microsoftteams/deploy-chat-teams-channels-microsoft-teams-landing-page) | [Chatear en Teams](https://support.microsoft.com/office/start-and-pin-chats-a864b052-5e4b-4ccf-b046-2e26f40e21b5?wt.mc_id=otc_microsoft_teams) |
 | Documentos | Comparta procedimientos operativos estándar, directivas de almacenamiento, planes y mucho más. | [Integración de Teams y SharePoint](/sharepoint/teams-connected-sites) | [Compartir archivos](https://support.microsoft.com/office/upload-and-share-files-57b669db-678e-424e-b0a0-15d19215cb12) |
-| Elogios | Reconozca a sus compañeros de trabajo por su excelente trabajo en equipo con la aplicación Elogiar. | [Administrar la aplicación Elogiar](/microsoftteams/manage-praise-app?bc=/microsoft-365/frontline/breadcrumb/toc.json&toc=/microsoft-365/frontline/toc.json) | [Enviar elogios a las personas](https://support.microsoft.com/office/send-praise-to-people-50f26b47-565f-40fe-8642-5ca2a5ed261e) |
+| Elogios | Reconozca a sus compañeros de trabajo por su excelente trabajo en equipo con la aplicación Elogio. | [Administrar la aplicación Elogiar](/microsoftteams/manage-praise-app?bc=/microsoft-365/frontline/breadcrumb/toc.json&toc=/microsoft-365/frontline/toc.json) | [Enviar elogios a las personas](https://support.microsoft.com/office/send-praise-to-people-50f26b47-565f-40fe-8642-5ca2a5ed261e) |
 | Dispositivos RealWear | Comunicación manos libres con dispositivos. | [Microsoft Teams para RealWear](/microsoftteams/flw-realwear?bc=/microsoft-365/frontline/breadcrumb/toc.json&toc=/microsoft-365/frontline/toc.json) | [Usar Microsoft Teams para RealWear](https://support.microsoft.com/office/using-microsoft-teams-for-realwear-af20d232-d18c-476f-8031-843a4edccd5f) |
-| Turnos | Administre las programaciones y el reloj de entrada y salida con Turnos. | [Administrar la aplicación Turnos para su organización en Teams](/microsoftteams/expand-teams-across-your-org/shifts/manage-the-shifts-app-for-your-organization-in-teams?bc=/microsoft-365/frontline/breadcrumb/toc.json&toc=/microsoft-365/frontline/toc.json) | [Usar Turnos](https://support.microsoft.com/office/what-is-shifts-f8efe6e4-ddb3-4d23-b81b-bb812296b821) |
-| Tareas | Ayude a los empleados a saber en qué deben centrarse cuando no están con los clientes asignándoles tareas. Las operaciones pueden usar [la publicación de tareas](/microsoftteams/manage-tasks-app?bc=/microsoft-365/frontline/breadcrumb/toc.json&toc=/microsoft-365/frontline/toc.json#task-publishing) para enviar tareas a ubicaciones y realizar un seguimiento del progreso en esas ubicaciones. | [Administrar la aplicación Tareas](/microsoftteams/manage-tasks-app?bc=/microsoft-365/frontline/breadcrumb/toc.json&toc=/microsoft-365/frontline/toc.json) | [Usar Tareas](https://support.microsoft.com/office/use-the-tasks-app-in-teams-e32639f3-2e07-4b62-9a8c-fd706c12c070) |
+| Turnos | Administre las programaciones y los registros de entrada y salida con Turnos. | [Administrar la aplicación Turnos para su organización en Teams](/microsoftteams/expand-teams-across-your-org/shifts/manage-the-shifts-app-for-your-organization-in-teams?bc=/microsoft-365/frontline/breadcrumb/toc.json&toc=/microsoft-365/frontline/toc.json) | [Usar Turnos](https://support.microsoft.com/office/what-is-shifts-f8efe6e4-ddb3-4d23-b81b-bb812296b821) |
+| Tareas | Ayude a los empleados a saber en qué deben centrarse cuando no están con los clientes asignándoles tareas. Las operaciones pueden usar [la publicación de tareas](/microsoftteams/manage-tasks-app?bc=/microsoft-365/frontline/breadcrumb/toc.json&toc=/microsoft-365/frontline/toc.json#task-publishing) para enviar tareas a ubicaciones y realizar un seguimiento del progreso en esas ubicaciones. | [Administrar la aplicación Tareas](/microsoftteams/manage-tasks-app?bc=/microsoft-365/frontline/breadcrumb/toc.json&toc=/microsoft-365/frontline/toc.json) | [Usar Tasks](https://support.microsoft.com/office/use-the-tasks-app-in-teams-e32639f3-2e07-4b62-9a8c-fd706c12c070) |
 | Actualizaciones | Compruebe las prioridades periódicas o puntuales, como la limpieza diaria. Los administradores pueden crear plantillas para que los empleados las rellenen y las envíen. | [Administrar la aplicación Actualizaciones](/microsoftteams/manage-updates-app?bc=/microsoft-365/frontline/breadcrumb/toc.json&toc=/microsoft-365/frontline/toc.json). | [Uso de Actualizaciones](https://support.microsoft.com/office/get-started-in-updates-c03a079e-e660-42dc-817b-ca4cfd602e5a) |
 | Walkie-talkie | Presione para mantener una comunicación rápida que no esté restringida por la geografía, como las radios estándar de dos vías.| [Administrar la aplicación Walkie-talkie](/microsoftteams/walkie-talkie?bc=/microsoft-365/frontline/breadcrumb/toc.json&toc=/microsoft-365/frontline/toc.json) | [Usar Walkie-talkie](https://support.microsoft.com/office/get-started-with-teams-walkie-talkie-25bdc3d5-bbb2-41b7-89bf-650fae0c8e0c) |
 

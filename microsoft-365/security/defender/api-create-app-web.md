@@ -3,7 +3,8 @@ title: Creación de una aplicación para acceder a Microsoft 365 Defender sin un
 description: Obtenga información sobre cómo crear una aplicación para acceder a Microsoft 365 Defender sin un usuario.
 keywords: app, access, api, create
 search.product: eADQiWindows 10XVcnh
-ms.prod: m365-security
+ms.service: microsoft-365-security
+ms.subservice: m365d
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -19,14 +20,13 @@ ms.topic: conceptual
 search.appverid:
 - MOE150
 - MET150
-ms.technology: m365d
 ms.custom: api
-ms.openlocfilehash: 05450912d78e7da774de76e02dfe4d42a1569084
-ms.sourcegitcommit: 3b194dd6f9ce531ae1b33d617ab45990d48bd3d0
+ms.openlocfilehash: fbcf081bda20dd470837614c985de77d037673a3
+ms.sourcegitcommit: 10e6abe740e27000e223378eb17d657a47555fa8
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/15/2022
-ms.locfileid: "66102402"
+ms.lasthandoff: 08/31/2022
+ms.locfileid: "67471398"
 ---
 # <a name="create-an-app-to-access-microsoft-365-defender-without-a-user"></a>Creación de una aplicación para acceder a Microsoft 365 Defender sin un usuario
 
@@ -41,7 +41,7 @@ ms.locfileid: "66102402"
 
 En esta página se describe cómo crear una aplicación para obtener acceso mediante programación a Microsoft 365 Defender sin un usuario definido, por ejemplo, si está creando un demonio o un servicio en segundo plano.
 
-Si necesita acceso mediante programación a Microsoft 365 Defender en nombre de uno o varios usuarios, consulte [Creación de una aplicación para acceder a Microsoft 365 Defender API en nombre de un usuario](api-create-app-user-context.md) y [Creación de una aplicación con acceso de asociado a Microsoft 365 Defender API](api-partner-access.md). Si no está seguro del tipo de acceso que necesita, consulte [Comenzar](api-access.md).
+Si necesita acceso mediante programación a Microsoft 365 Defender en nombre de uno o varios usuarios, consulte [Creación de una aplicación para acceder a Microsoft 365 Defender API en nombre de un usuario](api-create-app-user-context.md) y [Creación de una aplicación con acceso de asociado a Microsoft 365 Defender API](api-partner-access.md). Si no está seguro del tipo de acceso que necesita, consulte [Introducción](api-access.md).
 
 Microsoft 365 Defender expone gran parte de sus datos y acciones a través de un conjunto de API mediante programación. Esas API le ayudan a automatizar flujos de trabajo y a usar las funcionalidades de Microsoft 365 Defender. Este acceso a la API requiere la autenticación de OAuth2.0. Para obtener más información, vea [Flujo de código de autorización de OAuth 2.0](/azure/active-directory/develop/active-directory-v2-protocols-oauth-code).
 
@@ -158,7 +158,7 @@ return $token
 > El código siguiente se ha probado con Nuget Microsoft.Identity.Client 3.19.8.
 
 > [!IMPORTANT]
-> El paquete NuGet [Microsoft.IdentityModel.Clients.ActiveDirectory](https://www.nuget.org/packages/Microsoft.IdentityModel.Clients.ActiveDirectory) y la Biblioteca de autenticación de Azure AD (ADAL) han quedado en desuso. No se han agregado nuevas características desde el 30 de junio de 2020.   Le recomendamos encarecidamente que actualice, consulte la [guía de migración](/azure/active-directory/develop/msal-migration) para obtener más detalles.
+> El paquete [NuGet Microsoft.IdentityModel.Clients.ActiveDirectory](https://www.nuget.org/packages/Microsoft.IdentityModel.Clients.ActiveDirectory) y Autenticación de Azure AD Library (ADAL) han quedado en desuso. No se han agregado nuevas características desde el 30 de junio de 2020.   Le recomendamos encarecidamente que actualice, consulte la [guía de migración](/azure/active-directory/develop/msal-migration) para obtener más detalles.
 
 1. Cree una nueva aplicación de consola.
 
@@ -230,7 +230,7 @@ aadToken = jsonResponse["access_token"]
 
 1. Establezca TENANT_ID en el identificador de inquilino de Azure del cliente que quiere usar la aplicación para acceder a Microsoft 365 Defender.
 
-1. Ejecute el siguiente comando:
+1. Ejecute el comando siguiente:
 
    ```bash
    curl -i -X POST -H "Content-Type:application/x-www-form-urlencoded" -d "grant_type=client_credentials" -d "client_id=%CLIENT_ID%" -d "scope=https://api.security.microsoft.com/.default" -d "client_secret=%CLIENT_SECRET%" "https://login.microsoftonline.com/%TENANT_ID%/oauth2/v2.0/token" -k

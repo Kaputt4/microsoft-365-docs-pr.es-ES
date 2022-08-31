@@ -4,7 +4,8 @@ description: Estudiar escenarios de búsqueda comunes y consultas de ejemplo que
 keywords: búsqueda avanzada, datos de Office365, dispositivos Windows, correos electrónicos de Office365 normalizar, correos electrónicos, aplicaciones, identidades, búsqueda de amenazas, búsqueda de ciberamenazas, búsqueda, consulta, telemetría, Microsoft 365, Microsoft 365 Defender
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
-ms.prod: m365-security
+ms.service: microsoft-365-security
+ms.subservice: m365d
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -19,13 +20,12 @@ ms.collection:
 - M365-security-compliance
 - m365initiative-m365-defender
 ms.topic: article
-ms.technology: m365d
-ms.openlocfilehash: 0ca9a951ffd561113a806341d25bc1f0661732cc
-ms.sourcegitcommit: a8fbaf4b441b5325004f7a2dacd9429ec9d80534
+ms.openlocfilehash: 740f9c5e683297f2a4d990cad5fdbc8c6295ed57
+ms.sourcegitcommit: 10e6abe740e27000e223378eb17d657a47555fa8
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/26/2022
-ms.locfileid: "65739957"
+ms.lasthandoff: 08/31/2022
+ms.locfileid: "67481864"
 ---
 # <a name="hunt-for-threats-across-devices-emails-apps-and-identities"></a>Buscar amenazas entre dispositivos, correos electrónicos, aplicaciones e identidades
 
@@ -50,7 +50,7 @@ Use estas consultas para obtener información sobre las cuentas de usuario, los 
 ### <a name="obtain-user-accounts-from-email-addresses"></a>Obtener cuentas de usuario a través de las direcciones de correo electrónico
 Al crear consultas a través de [tablas que cubran dispositivos y mensajes de correo electrónico](advanced-hunting-schema-tables.md), puede que necesite obtener los nombres de las cuentas de usuario en las direcciones de correo electrónico del remitente o destinatario. Por lo general, puede hacerlo para el destinatario o la dirección del remitente mediante el *host local* de la dirección de correo electrónico.
 
-En el fragmento de código siguiente, usamos la función [Kusto tostring()](/azure/data-explorer/kusto/query/tostringfunction) para extraer el host local justo antes de las `@` direcciones de correo electrónico del destinatario en la columna `RecipientEmailAddress`.
+En el fragmento de código siguiente, usamos la función [kusto tostring()](/azure/data-explorer/kusto/query/tostringfunction) para extraer el host local justo antes de las `@` direcciones de correo electrónico del destinatario en la columna `RecipientEmailAddress`.
 
 ```kusto
 //Query snippet showing how to extract the account name from an email address

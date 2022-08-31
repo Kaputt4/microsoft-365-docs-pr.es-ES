@@ -17,12 +17,12 @@ ms.collection:
 - Strat_O365_Enterprise
 description: Obtenga información sobre el cifrado disponible en Azure, como Azure Disk Encryption.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 66fb4e54c0837534d6943372d84cf3a4864e4739
-ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
+ms.openlocfilehash: de0e98feb54cd2f56ebea35a0f0ec243b8712d86
+ms.sourcegitcommit: 10e6abe740e27000e223378eb17d657a47555fa8
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/06/2022
-ms.locfileid: "66632187"
+ms.lasthandoff: 08/31/2022
+ms.locfileid: "67472444"
 ---
 # <a name="encryption-in-azure"></a>Cifrado en Azure
 
@@ -32,7 +32,7 @@ Azure ofrece muchos mecanismos para proteger los datos a medida que se mueven de
 
 Los datos se pueden proteger en tránsito entre una aplicación y Azure mediante [el cifrado del lado cliente](/azure/storage/storage-client-side-encryption), HTTPS o SMB 3.0. Puede habilitar el cifrado para el tráfico entre sus propias máquinas virtuales (VM) y los usuarios. Con [Azure Virtual Networks](https://azure.microsoft.com/services/virtual-network/), puede usar el protocolo IPsec estándar del sector para cifrar el tráfico entre la puerta de enlace de VPN corporativa y Azure, así como entre las máquinas virtuales ubicadas en el Virtual Network.
 
-En el caso de los datos en reposo, Azure ofrece muchas opciones de cifrado, como la compatibilidad con AES-256, lo que le ofrece la flexibilidad de elegir el escenario de almacenamiento de datos que mejor se adapte a sus necesidades. Los datos se pueden cifrar automáticamente cuando se escriben en Azure Storage mediante [Storage Service Encryption](/azure/storage/storage-service-encryption), y el sistema operativo y los discos de datos usados por las máquinas virtuales se pueden cifrar. Para obtener más información, consulte [Recomendaciones de seguridad para máquinas virtuales Windows en Azure](/azure/security/azure-security-disk-encryption). Además, el acceso delegado a los objetos de datos de Azure Storage se puede conceder mediante [firmas de acceso compartido](/azure/storage/storage-dotnet-shared-access-signature-part-1). Azure también proporciona cifrado de datos en reposo mediante [cifrado de datos transparente para Azure SQL Database y Data Warehouse](/sql/relational-databases/security/encryption/transparent-data-encryption-azure-sql).
+En el caso de los datos en reposo, Azure ofrece muchas opciones de cifrado, como la compatibilidad con AES-256, lo que le ofrece la flexibilidad de elegir el escenario de almacenamiento de datos que mejor se adapte a sus necesidades. Los datos se pueden cifrar automáticamente cuando se escriben en Azure Storage mediante [Storage Service Encryption](/azure/storage/storage-service-encryption), y el sistema operativo y los discos de datos usados por las máquinas virtuales se pueden cifrar. Para obtener más información, consulte [Recomendaciones de seguridad para máquinas virtuales Windows en Azure](/azure/virtual-machines/security-recommendations). Además, el acceso delegado a los objetos de datos de Azure Storage se puede conceder mediante [firmas de acceso compartido](/azure/storage/storage-dotnet-shared-access-signature-part-1). Azure también proporciona cifrado de datos en reposo mediante [cifrado de datos transparente para Azure SQL Database y Data Warehouse](/sql/relational-databases/security/encryption/transparent-data-encryption-azure-sql).
 
 Para obtener más información sobre el cifrado en Azure, consulte [Introducción al cifrado de Azure](/azure/security/security-azure-encryption-overview) y [Azure Data Encryption-at-Rest](/azure/security/azure-security-encryption-atrest).
 

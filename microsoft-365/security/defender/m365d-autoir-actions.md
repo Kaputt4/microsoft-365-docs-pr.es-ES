@@ -3,7 +3,8 @@ title: Visualización y administración de acciones en el Centro de acciones
 description: Uso del Centro de acciones para ver y administrar acciones de corrección
 keywords: action, center, autoair, automated, investigation, response, remediation
 search.appverid: met150
-ms.prod: m365-security
+ms.service: microsoft-365-security
+ms.subservice: m365d
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -23,13 +24,12 @@ ms.custom:
 - autoir
 - admindeeplinkDEFENDER
 ms.reviewer: evaldm, isco
-ms.technology: m365d
-ms.openlocfilehash: 1dc09357f2b16a0d00dc995ff2a9e10285ccb81b
-ms.sourcegitcommit: e8dd5cd434d17af7096d28d467a2b3b021cbb233
+ms.openlocfilehash: b6cd87846b9225ced8a818252ef5b0e90e562470
+ms.sourcegitcommit: 10e6abe740e27000e223378eb17d657a47555fa8
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/27/2022
-ms.locfileid: "67050686"
+ms.lasthandoff: 08/31/2022
+ms.locfileid: "67482084"
 ---
 # <a name="view-and-manage-actions-in-the-action-center"></a>Visualización y administración de acciones en el Centro de acciones
 
@@ -100,7 +100,7 @@ Si ha determinado que un dispositivo o un archivo no es una amenaza, puede desha
 
 3. En el panel del lado derecho de la pantalla, seleccione **Aplicar a X más instancias de este archivo** y, a continuación, seleccione **Deshacer**.
 
-## <a name="next-steps"></a>Siguientes pasos
+## <a name="next-steps"></a>Pasos siguientes
 
 - [Ver los detalles y los resultados de una investigación automatizada](m365d-autoir-results.md)
 - [Dirección de falsos positivos o falsos negativos](m365d-autoir-report-false-positives-negatives.md)

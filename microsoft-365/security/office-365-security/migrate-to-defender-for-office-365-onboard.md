@@ -15,16 +15,17 @@ search.appverid:
 ms.collection:
 - M365-security-compliance
 - m365solution-mdo-migration
+- highpri
 ms.custom: migrationguides
 description: Complete los pasos para migrar desde un dispositivo o servicio de protección de terceros a Microsoft Defender para Office 365 protección.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: d30f13e77f0b7da864d266ddb2607afe7de1d451
-ms.sourcegitcommit: d09eb780dc41a01796eb8137fbe9267231af6746
+ms.openlocfilehash: e7a4be34a4ee93609a167314c0d822e11cde5586
+ms.sourcegitcommit: 10e6abe740e27000e223378eb17d657a47555fa8
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/19/2022
-ms.locfileid: "67388095"
+ms.lasthandoff: 08/31/2022
+ms.locfileid: "67481842"
 ---
 # <a name="migrate-to-microsoft-defender-for-office-365---phase-3-onboard"></a>Migración a Microsoft Defender para Office 365: Fase 3: Incorporación
 
@@ -213,7 +214,7 @@ Cuando esté listo, cambie el registro MX de los dominios. Puede migrar todos lo
 
 No dude en pausar y evaluar aquí en cualquier momento. Pero recuerde: una vez que desactive la regla de flujo de correo SCL=-1, los usuarios pueden tener dos experiencias diferentes para comprobar falsos positivos. Cuanto antes pueda proporcionar una experiencia única y coherente, más felices serán los usuarios y los equipos de soporte técnico cuando tengan que solucionar un mensaje que falta.
 
-## <a name="next-steps"></a>Siguientes pasos
+## <a name="next-steps"></a>Pasos siguientes
 
 ¡Enhorabuena! Ha completado [la migración a Microsoft Defender para Office 365](migrate-to-defender-for-office-365.md#the-migration-process). Dado que ha seguido los pasos de esta guía de migración, los primeros días en los que el correo se entrega directamente en Microsoft 365 debe ser mucho más sencillo.
 

@@ -1,8 +1,8 @@
 ---
-title: Configuración del período de tiempo de espera del bloque de nube de Antivirus de Microsoft Defender
-description: Puede configurar cuánto tiempo Antivirus de Microsoft Defender bloqueará la ejecución de un archivo mientras espera una determinación de la nube.
-keywords: Antivirus de Microsoft Defender, antimalware, security, defender, cloud, timeout, block, period, seconds
-ms.prod: m365-security
+title: Configuración del período de tiempo de espera del bloque de nube del Antivirus de Microsoft Defender
+description: Puede configurar cuánto tiempo bloqueará el antivirus de Microsoft Defender para que no se ejecute mientras espera una determinación de la nube.
+keywords: Antivirus de Microsoft Defender, antimalware, seguridad, defender, nube, tiempo de espera, bloqueo, período, segundos
+ms.service: microsoft-365-security
 ms.mktglfcycl: manage
 ms.sitesec: library
 ms.pagetype: security
@@ -12,16 +12,16 @@ ms.author: deniseb
 ms.custom: nextgen
 ms.reviewer: ''
 manager: dansimp
-ms.technology: mde
+ms.subservice: mde
 ms.topic: article
 ms.date: 10/18/2021
 ms.collection: M365-security-compliance
-ms.openlocfilehash: 0ad46ff70ed2542ebed423a02eba6cc0810a99ca
-ms.sourcegitcommit: ebbe8713297675db5dcb3e0d9c3ae5e746b99196
+ms.openlocfilehash: d147ef775d012628ff6e5a4410f800d08a792adb
+ms.sourcegitcommit: 10e6abe740e27000e223378eb17d657a47555fa8
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/14/2022
-ms.locfileid: "65418770"
+ms.lasthandoff: 08/31/2022
+ms.locfileid: "67481886"
 ---
 # <a name="configure-the-cloud-block-timeout-period"></a>Configurar el período de espera de bloqueo en la nube
 
@@ -33,9 +33,9 @@ ms.locfileid: "65418770"
 **Plataformas**
 - Windows
 
-Cuando Antivirus de Microsoft Defender encuentra un archivo sospechoso, puede impedir que el archivo se ejecute mientras consulta el [servicio en la nube de Antivirus de Microsoft Defender](cloud-protection-microsoft-defender-antivirus.md).
+Cuando Antivirus de Microsoft Defender encuentra un archivo sospechoso, puede impedir que el archivo se ejecute mientras consulta el [servicio en la nube antivirus de Microsoft Defender](cloud-protection-microsoft-defender-antivirus.md).
 
-El período predeterminado en el que se [bloquea](configure-block-at-first-sight-microsoft-defender-antivirus.md) el archivo es de 10 segundos. Si es administrador de seguridad, puede especificar más tiempo de espera antes de que se permita ejecutar el archivo. La ampliación del período de tiempo de espera del bloque de nube puede ayudar a garantizar que haya suficiente tiempo para recibir una determinación adecuada del servicio en la nube Antivirus de Microsoft Defender.
+El período predeterminado en el que se [bloquea](configure-block-at-first-sight-microsoft-defender-antivirus.md) el archivo es de 10 segundos. Si es administrador de seguridad, puede especificar más tiempo de espera antes de que se permita ejecutar el archivo. La ampliación del período de tiempo de espera del bloque de nube puede ayudar a garantizar que haya suficiente tiempo para recibir una determinación adecuada del servicio en la nube antivirus de Microsoft Defender.
 
 ## <a name="prerequisites-to-use-the-extended-cloud-block-timeout"></a>Requisitos previos para usar el tiempo de espera extendido del bloque de nube
 
@@ -51,9 +51,9 @@ Puede especificar el período de tiempo de espera del bloque en la nube con una 
 
 3. Seleccione (o cree) una directiva antivirus.
 
-4. En la sección **Configuración** , expanda **Protección en la nube**. A continuación, en el **cuadro Antivirus de Microsoft Defender Tiempo de espera extendido en segundos**, especifique el tiempo más, en segundos, de 1 segundo a 50 segundos. Cualquier cosa que especifique se agregará al valor predeterminado de 10 segundos.
+4. En la sección **Configuración** , expanda **Protección en la nube**. A continuación, en el cuadro **Tiempo de espera extendido en segundos del Antivirus de Microsoft Defender** , especifique el tiempo más, en segundos, de 1 segundo a 50 segundos. Cualquier cosa que especifique se agregará al valor predeterminado de 10 segundos.
 
-5. (Este paso es opcional) Realice cualquier otro cambio en la directiva antivirus. (¿Necesita ayuda? Consulte [Configuración para obtener Antivirus de Microsoft Defender directiva en Microsoft Intune](/mem/intune/protect/antivirus-microsoft-defender-settings-windows)).
+5. (Este paso es opcional) Realice cualquier otro cambio en la directiva antivirus. (¿Necesita ayuda? Consulte [Configuración de la directiva del Antivirus de Microsoft Defender en Microsoft Intune](/mem/intune/protect/antivirus-microsoft-defender-settings-windows)).
 
 6. Elija **Siguiente** y termine de configurar la directiva.
 
@@ -67,7 +67,7 @@ Puede usar directiva de grupo para especificar un tiempo de espera extendido par
 
 3. En el **Editor de administración de directiva de grupo**, vaya a **Configuración del equipo** y, a continuación, seleccione **Plantillas administrativas**.
 
-3. Expanda el árbol para **Windows componentes** \> **Antivirus de Microsoft Defender** \> **MpEngine**.
+3. Expanda el árbol a **componentes** \> de **Windows Antivirus** \> de Microsoft Defender **MpEngine**.
 
 4. Haga doble clic en **Configurar la comprobación de nube extendida** y asegúrese de que la opción está habilitada. 
 
@@ -76,7 +76,7 @@ Puede usar directiva de grupo para especificar un tiempo de espera extendido par
 5. Seleccione **Aceptar**.
 
 > [!TIP]
-> Si busca información relacionada con antivirus para otras plataformas, consulte:
+> Si busca información relacionada con el antivirus para otras plataformas, consulte:
 > - [Establecer las preferencias para Microsoft Defender para punto de conexión en macOS](mac-preferences.md)
 > - [Microsoft Defender para punto de conexión en Mac](microsoft-defender-endpoint-mac.md)
 > - [Configuración de las directivas de antivirus de macOS para Antivirus de Microsoft Defender para Intune](/mem/intune/protect/antivirus-microsoft-defender-settings-macos)

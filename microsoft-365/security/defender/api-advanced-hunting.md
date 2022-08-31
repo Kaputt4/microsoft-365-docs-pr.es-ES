@@ -3,7 +3,8 @@ title: Microsoft 365 Defender API de búsqueda avanzada
 description: Aprenda a ejecutar consultas de búsqueda avanzadas mediante la API de búsqueda avanzada de Microsoft 365 Defender
 keywords: Búsqueda avanzada, API, API, M365 Defender, Microsoft 365 Defender
 search.product: eADQiWindows 10XVcnh
-ms.prod: m365-security
+ms.service: microsoft-365-security
+ms.subservice: m365d
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -19,14 +20,13 @@ ms.topic: conceptual
 search.appverid:
 - MOE150
 - MET150
-ms.technology: m365d
 ms.custom: api
-ms.openlocfilehash: 4b8a8e67bc7bd69b9ae20648ad66eb539101441e
-ms.sourcegitcommit: 1efb75d033860977239b479f92e7eaf274b5fbf0
+ms.openlocfilehash: 4e0114e2a53a9fd532f49ef5c928e15751a9aa2e
+ms.sourcegitcommit: 10e6abe740e27000e223378eb17d657a47555fa8
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/16/2022
-ms.locfileid: "66827188"
+ms.lasthandoff: 08/31/2022
+ms.locfileid: "67482018"
 ---
 # <a name="microsoft-365-defender-advanced-hunting-api"></a>Microsoft 365 Defender API de búsqueda avanzada
 
@@ -61,7 +61,7 @@ Se requiere uno de los permisos siguientes para llamar a la API de búsqueda ava
 
 Tipo de permiso | Permiso | Nombre para mostrar del permiso
 -|-|-
-Aplicación | AdvancedHunting.Read.All| Ejecución de consultas avanzadas
+Application | AdvancedHunting.Read.All| Ejecución de consultas avanzadas
 Delegado (cuenta profesional o educativa) | AdvancedHunting.Read | Ejecución de consultas avanzadas
 
 >[!Note]
@@ -83,13 +83,13 @@ Encabezado | Valor
 Authorization | Portador {token} **Nota: obligatorio**
 Content-Type | application/json
 
-## <a name="request-body"></a>Cuerpo de la solicitud
+## <a name="request-body"></a>Cuerpo de solicitud
 
 En el cuerpo de la solicitud, proporcione un objeto JSON con los parámetros siguientes:
 
 Parámetro | Tipo | Descripción
 -|-|-
-Query | Text | Consulta que se va a ejecutar. **(obligatorio)**
+Consulta | Text | Consulta que se va a ejecutar. **(obligatorio)**
 
 ## <a name="response"></a>Respuesta
 
@@ -105,7 +105,7 @@ El objeto de respuesta contiene tres propiedades de nivel superior:
 
 En el ejemplo siguiente, un usuario envía la consulta siguiente y recibe un objeto de respuesta de API que contiene `Stats`, `Schema`y `Results`.
 
-### <a name="query"></a>Query
+### <a name="query"></a>Consulta
 
 ```json
 {

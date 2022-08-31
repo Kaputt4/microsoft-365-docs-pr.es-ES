@@ -17,12 +17,12 @@ ms.custom:
 - M365-Lighthouse
 search.appverid: MET150
 description: En el caso de los proveedores de servicios administrados (MSP) que usan Microsoft 365 Lighthouse, obtenga información sobre cómo administrar el autoservicio de restablecimiento de contraseña.
-ms.openlocfilehash: 4760953d3d25c925dbe1bad6e2c67f43c621761b
-ms.sourcegitcommit: 23a53b5c5e372a2a7ad5e175850224d3d464f6dd
+ms.openlocfilehash: 2b530b7f0d2d8707a0876788fd22132a5cb998c5
+ms.sourcegitcommit: 10e6abe740e27000e223378eb17d657a47555fa8
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/28/2022
-ms.locfileid: "67055930"
+ms.lasthandoff: 08/31/2022
+ms.locfileid: "67471640"
 ---
 # <a name="manage-self-service-password-reset-in-microsoft-365-lighthouse"></a>Administración del autoservicio de restablecimiento de contraseña en Microsoft 365 Lighthouse
 
@@ -40,13 +40,13 @@ Se deben cumplir las condiciones siguientes antes de que aparezca un inquilino e
 
 - En el panel de navegación izquierdo de Lighthouse, seleccione **Restablecimiento de contraseña** **de los usuarios** > .
 
-La pestaña Restablecimiento de contraseña proporciona información general sobre los inquilinos que han habilitado SSPR a través de la configuración recomendada, el número de usuarios que no se han registrado para SSPR y un desglose detallado por inquilino del progreso de la implementación de SSPR en las organizaciones que administra.
+La página Restablecimiento de contraseña proporciona información general sobre los inquilinos que han habilitado SSPR a través de la configuración recomendada, el número de usuarios que no se han registrado para SSPR y un desglose detallado por inquilino del progreso de la implementación de SSPR en las organizaciones que administra.
 
 ## <a name="enable-sspr-for-a-tenant"></a>Habilitación de SSPR para un inquilino
 
 1. En el panel de navegación izquierdo de Lighthouse, seleccione **Restablecimiento de contraseña** **de los usuarios** > .
 
-2. En la pestaña **Restablecimiento de contraseña** , seleccione un inquilino de la lista para abrir el panel de detalles.
+2. En la página **Restablecimiento de contraseña** , seleccione un inquilino de la lista para abrir el panel de detalles.
 
 3. Seleccione **Editar configuración de SSPR en Azure Active Directory** para ir a Azure Active Directory (Azure AD).
 
@@ -56,7 +56,7 @@ La pestaña Restablecimiento de contraseña proporciona información general sob
 
 1. En el panel de navegación izquierdo de Lighthouse, seleccione **Restablecimiento de contraseña** **de los usuarios** > .
 
-2. En la pestaña **Restablecimiento de contraseña** , seleccione un inquilino de la lista para abrir el panel de detalles.
+2. En la página **Restablecimiento de contraseña** , seleccione un inquilino de la lista para abrir el panel de detalles.
 
 3. Seleccione los usuarios a los que desea notificar.
 

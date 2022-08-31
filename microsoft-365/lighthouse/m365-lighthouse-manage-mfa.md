@@ -17,16 +17,16 @@ ms.custom:
 - M365-Lighthouse
 search.appverid: MET150
 description: En el caso de los proveedores de servicios administrados (MSP) que usan Microsoft 365 Lighthouse, obtenga información sobre cómo administrar la autenticación multifactor.
-ms.openlocfilehash: aa9d25ce633088d840a38e1927c4ebf3baef56b3
-ms.sourcegitcommit: 23a53b5c5e372a2a7ad5e175850224d3d464f6dd
+ms.openlocfilehash: ef658f19aba9530ab4f1cd76e1e32a1733f3594c
+ms.sourcegitcommit: 10e6abe740e27000e223378eb17d657a47555fa8
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/28/2022
-ms.locfileid: "67056475"
+ms.lasthandoff: 08/31/2022
+ms.locfileid: "67471784"
 ---
 # <a name="manage-multifactor-authentication-in-microsoft-365-lighthouse"></a>Administración de la autenticación multifactor en Microsoft 365 Lighthouse
 
-Multi-Factor Authentication (MFA) de Azure Active Directory (Azure AD) ayuda a proteger el acceso a datos y aplicaciones, lo que proporciona otra capa de seguridad mediante una segunda forma de autenticación. La pestaña Autenticación multifactor proporciona información detallada sobre el estado de la habilitación de MFA en los inquilinos. Seleccione cualquier inquilino de la lista para ver más detalles para ese inquilino, incluidas las directivas de acceso condicional que requieren MFA ya configuradas y qué usuarios aún no se han registrado para MFA.
+Multi-Factor Authentication (MFA) de Azure Active Directory (Azure AD) ayuda a proteger el acceso a datos y aplicaciones, lo que proporciona otra capa de seguridad mediante una segunda forma de autenticación. La página Autenticación multifactor proporciona información detallada sobre el estado de la habilitación de MFA en los inquilinos. Seleccione cualquier inquilino de la lista para ver más detalles para ese inquilino, incluidas las directivas de acceso condicional que requieren MFA ya configuradas y qué usuarios aún no se han registrado para MFA.
 
 Para los clientes de pequeñas y medianas empresas (SMB), Microsoft recomienda habilitar [los valores predeterminados de seguridad](/azure/active-directory/fundamentals/concept-fundamentals-security-defaults) como mínimo. Para escenarios más complejos, puede usar [el acceso condicional](/azure/active-directory/conditional-access/overview) para configurar directivas específicas.
 
@@ -42,7 +42,7 @@ Se deben cumplir las condiciones siguientes antes de que aparezca un inquilino e
 
 1. En el panel de navegación izquierdo de Lighthouse, seleccione Autenticación **multifactor** **de usuarios** > .
 
-2. En la pestaña **Autenticación multifactor** , busque un inquilino que no use MFA y, a continuación, seleccione ese inquilino para abrir el panel de detalles del inquilino.
+2. En la página **Autenticación multifactor** , busque un inquilino que no use MFA y, a continuación, seleccione ese inquilino para abrir el panel de detalles del inquilino.
 
 3. En la pestaña **Habilitación de MFA** , en **MFA con valores predeterminados de seguridad**, seleccione **Habilitar valores predeterminados de seguridad**.
 
@@ -54,7 +54,7 @@ Para habilitar MFA a través del acceso condicional, consulte [Tutorial: Protecc
 
 1. En el panel de navegación izquierdo de Lighthouse, seleccione Autenticación **multifactor** **de usuarios** > .
 
-2. En la pestaña **Autenticación multifactor** , busque inquilinos con usuarios no registrados para MFA y, a continuación, seleccione el inquilino para abrir el panel de detalles del inquilino.
+2. En la página **Autenticación multifactor** , busque inquilinos con usuarios no registrados para MFA y, a continuación, seleccione el inquilino para abrir el panel de detalles del inquilino.
 
 3. Seleccione **Usuarios no registrados para la pestaña MFA** .
 
@@ -71,7 +71,7 @@ Lighthouse abre el cliente de correo electrónico predeterminado y rellena previ
 
 Si desea usar una cuenta de correo electrónico diferente, puede exportar la lista de usuarios a un archivo. También puede descargar plantillas de correo electrónico de ejemplo que puede personalizar con la personalización de marca de su empresa.
 
-## <a name="next-steps"></a>Siguientes pasos
+## <a name="next-steps"></a>Pasos siguientes
 
 Una vez habilitada MFA, puede habilitar el autoservicio de restablecimiento de contraseña de Azure Active Directory (Azure AD). Esta característica ofrece a los usuarios la posibilidad de cambiar o restablecer su contraseña sin la participación del administrador o del departamento de soporte técnico. Para obtener más información, vea [Administrar el autoservicio de restablecimiento de contraseña en Microsoft 365 Lighthouse](m365-lighthouse-manage-sspr.md).
 

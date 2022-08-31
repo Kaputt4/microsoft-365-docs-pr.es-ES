@@ -2,8 +2,8 @@
 title: Configuración de funcionalidades automatizadas de investigación y corrección
 description: Configure las funcionalidades automatizadas de investigación y corrección en Microsoft Defender para punto de conexión.
 keywords: configurar, configurar, automatizar, investigar, detectar, alertas, corrección, respuesta
-ms.prod: m365-security
-ms.technology: mde
+ms.service: microsoft-365-security
+ms.subservice: mde
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -15,12 +15,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: how-to
 ms.reviewer: ramarom, evaldm, isco, mabraitm, chriggs
-ms.openlocfilehash: 7e94cd14f392eb47a9b747cfb5e5f846f03fdc63
-ms.sourcegitcommit: e624221597480295b799d56568c4f6f56d40b41d
+ms.openlocfilehash: 09d9860119a7c4aeb8949357b277fb395e09a9c2
+ms.sourcegitcommit: 10e6abe740e27000e223378eb17d657a47555fa8
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/19/2022
-ms.locfileid: "65535766"
+ms.lasthandoff: 08/31/2022
+ms.locfileid: "67481908"
 ---
 # <a name="configure-automated-investigation-and-remediation-capabilities-in-microsoft-defender-for-endpoint"></a>Configurar funcionalidades automatizadas de investigación y corrección en Microsoft Defender para punto de conexión
 
@@ -62,15 +62,15 @@ Para configurar la investigación y corrección automatizadas:
    - Especifique un nombre y una descripción para el grupo de dispositivos.
    - En la **lista Nivel de automatización**, seleccione un nivel, como **Completo: corrija automáticamente las amenazas**. El nivel de automatización determina si las acciones de corrección se realizan automáticamente o solo tras la aprobación. Para más información, consulte [Niveles de automatización en investigación y corrección automatizadas](automation-levels.md).
    - En la sección **Miembros** , use una o varias condiciones para identificar e incluir dispositivos.
-   - En la pestaña **Acceso de usuario**, seleccione los [grupos de Azure Active Directory](/azure/active-directory/fundamentals/active-directory-manage-groups?context=azure/active-directory/users-groups-roles/context/ugr-context) que deben tener acceso al grupo de dispositivos que va a crear.
+   - En la pestaña **Acceso de usuario** , seleccione los [grupos de Azure Active Directory](/azure/active-directory/fundamentals/active-directory-manage-groups?context=azure/active-directory/users-groups-roles/context/ugr-context) que deben tener acceso al grupo de dispositivos que va a crear.
 
 4. Seleccione **Listo** cuando haya terminado de configurar el grupo de dispositivos.
 
-## <a name="next-steps"></a>Siguientes pasos
+## <a name="next-steps"></a>Pasos siguientes
 
 - [Visite el Centro de acciones para ver las acciones de corrección pendientes y completadas.](/microsoft-365/security/defender-endpoint/auto-investigation-action-center#the-action-center)
 - [Revisión y aprobación de acciones pendientes](/microsoft-365/security/defender-endpoint/manage-auto-investigation)
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 - [Abordar falsos positivos/negativos en Microsoft Defender para punto de conexión](defender-endpoint-false-positives-negatives.md)

@@ -1,9 +1,10 @@
 ---
 title: Otras API de protección contra amenazas y seguridad
-description: Ver una lista de API relacionadas con productos de seguridad y protección contra amenazas de Microsoft.
-keywords: api, seguridad, protección contra amenazas, mde, Microsoft Defender para endpoint, Microsoft Defender para Office 365, seguridad de aplicaciones en la nube
+description: Vea una lista de API relacionadas con los productos de protección contra amenazas y seguridad de Microsoft.
+keywords: api, security, threat protection, mde, Microsoft Defender para punto de conexión, Microsoft Defender para Office 365, cloud app security
 search.product: eADQiWindows 10XVcnh
-ms.prod: m365-security
+ms.service: microsoft-365-security
+ms.subservice: m365d
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -19,14 +20,13 @@ ms.topic: conceptual
 search.appverid:
 - MOE150
 - MET150
-ms.technology: m365d
 ms.custom: api
-ms.openlocfilehash: 7fa04ce2ecfb830b60cbc195bc57af3cf4a44bdd
-ms.sourcegitcommit: 6f3bc00a5cf25c48c61eb3835ac069e9f41dc4db
+ms.openlocfilehash: d5524b85066e95be0630084fc0525158095fe7a5
+ms.sourcegitcommit: 10e6abe740e27000e223378eb17d657a47555fa8
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/24/2022
-ms.locfileid: "62172216"
+ms.lasthandoff: 08/31/2022
+ms.locfileid: "67481996"
 ---
 # <a name="other-security-and-threat-protection-apis"></a>Otras API de protección contra amenazas y seguridad
 
@@ -34,12 +34,12 @@ ms.locfileid: "62172216"
 
 **Se aplica a:**
 
-- Microsoft 365 Defender API
+- API de Microsoft 365 Defender
 
 > [!IMPORTANT]
 > Parte de la información se refiere a productos preliminares que pueden ser modificados sustancialmente antes de su lanzamiento comercial. Microsoft no otorga garantías, expresas o implícitas, con respecto a la información que aquí se proporciona.
 
-Los siguientes recursos proporcionan más información sobre las API disponibles para otras soluciones de seguridad de Microsoft, más allá de Microsoft 365 Defender API.
+Los siguientes recursos proporcionan más información sobre las API disponibles para otras soluciones de seguridad de Microsoft, más allá de la API de Microsoft 365 Defender.
 
 - [Microsoft Defender para punto de conexión](/windows/security/threat-protection/microsoft-defender-atp/apis-intro)
 - [Microsoft Defender para Office 365](/office/office-365-management-api/)

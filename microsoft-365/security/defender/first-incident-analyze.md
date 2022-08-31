@@ -3,7 +3,8 @@ title: Paso 1. Evaluación y análisis del primer incidente
 description: Cómo evaluar e iniciar el análisis del primer incidente en Microsoft 365 Defender.
 keywords: incidentes, alertas, investigación, correlación, ataque, máquinas, dispositivos, usuarios, identidades, identidad, buzón de correo electrónico, 365, microsoft, m365, respuesta a incidentes, ciberataque
 search.product: eADQiWindows 10XVcnh
-ms.prod: m365-security
+ms.service: microsoft-365-security
+ms.subservice: m365d
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -17,17 +18,17 @@ audience: ITPro
 ms.collection:
 - M365-security-compliance
 - m365solution-firstincident
+- highpri
 ms.topic: conceptual
 search.appverid:
 - MOE150
 - MET150
-ms.technology: m365d
-ms.openlocfilehash: 596966c7c1975ebb8f20b306be5e4ab0a34bd99e
-ms.sourcegitcommit: c1eaea74c8ffce2f9f477c9469342e88e4a70c14
+ms.openlocfilehash: b930181681d5849af4e99bf41d2b8643329175a5
+ms.sourcegitcommit: 10e6abe740e27000e223378eb17d657a47555fa8
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/20/2022
-ms.locfileid: "66893647"
+ms.lasthandoff: 08/31/2022
+ms.locfileid: "67482238"
 ---
 # <a name="step-1-triage-and-analyze-your-first-incident"></a>Paso 1. Evaluación y análisis del primer incidente
 

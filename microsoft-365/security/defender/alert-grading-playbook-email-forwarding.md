@@ -2,7 +2,8 @@
 title: Clasificación de alertas para actividades sospechosas de reenvío de correo electrónico
 description: Clasificación de alertas para la actividad sospechosa de reenvío de correo electrónico para revisar las alertas y realizar las acciones recomendadas para corregir el ataque y proteger la red.
 keywords: incidentes, alertas, investigar, analizar, respuesta, correlación, ataque, máquinas, dispositivos, usuarios, identidades, identidad, buzón de correo electrónico, 365, microsoft, m365
-ms.prod: m365-security
+ms.service: microsoft-365-security
+ms.subservice: m365d
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -20,13 +21,12 @@ ms.custom: admindeeplinkDEFENDER
 ms.topic: conceptual
 search.appverid:
 - MOE150
-ms.technology: m365d
-ms.openlocfilehash: dcfb6d01503dd4499ce6431b95a433c4cb598de1
-ms.sourcegitcommit: 85ce5fd0698b6f00ea1ea189634588d00ea13508
+ms.openlocfilehash: 088cb74f16fae1155b86b1bfa6b5c72aae287720
+ms.sourcegitcommit: 10e6abe740e27000e223378eb17d657a47555fa8
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/06/2022
-ms.locfileid: "64663234"
+ms.lasthandoff: 08/31/2022
+ms.locfileid: "67482106"
 ---
 # <a name="alert-grading-for-suspicious-email-forwarding-activity"></a>Clasificación de alertas para actividades sospechosas de reenvío de correo electrónico
 
@@ -37,9 +37,9 @@ ms.locfileid: "64663234"
 
 Los actores de amenazas pueden usar cuentas de usuario en peligro para varios propósitos malintencionados, como leer correos electrónicos en la bandeja de entrada de un usuario, reenviar correos electrónicos a destinatarios externos y enviar correos de phishing, entre otros. Es posible que el usuario de destino no sea consciente de que se están reenviando sus correos electrónicos. Se trata de una táctica muy común que los atacantes usan cuando las cuentas de usuario están en peligro.
 
-Los correos electrónicos se pueden reenviar manualmente o automáticamente mediante reglas de reenvío. El reenvío automático se puede implementar de varias maneras, como reglas de bandeja de entrada, Exchange regla de transporte (ETR) y reenvío SMTP. Aunque el reenvío manual requiere la acción directa de los usuarios, es posible que no tengan en cuenta todos los correos electrónicos reenviados automáticamente. En Microsoft 365, se genera una alerta cuando un usuario reenvía automáticamente un correo electrónico a una dirección de correo electrónico potencialmente malintencionada.
+Los correos electrónicos se pueden reenviar manualmente o automáticamente mediante reglas de reenvío. El reenvío automático se puede implementar de varias maneras, como reglas de bandeja de entrada, regla de transporte de Exchange (ETR) y reenvío SMTP. Aunque el reenvío manual requiere la acción directa de los usuarios, es posible que no tengan en cuenta todos los correos electrónicos reenviados automáticamente. En Microsoft 365, se genera una alerta cuando un usuario reenvía automáticamente un correo electrónico a una dirección de correo electrónico potencialmente malintencionada.
 
-Este cuaderno de estrategias le ayuda a investigar alertas sospechosas de actividad de reenvío de correo electrónico y a calificarlas rápidamente como un verdadero positivo (TP) o un falso positivo (FP). A continuación, puede realizar las acciones recomendadas para que las alertas de TP corrijan el ataque.
+Este cuaderno de estrategias le ayuda a investigar alertas sospechosas de actividad de reenvío de Email y a calificarlas rápidamente como un verdadero positivo (TP) o un falso positivo (FP). A continuación, puede realizar las acciones recomendadas para que las alertas de TP corrijan el ataque.
 
 Para obtener información general sobre la clasificación de alertas para Microsoft Defender para Office 365 y Microsoft Defender for Cloud Apps, consulte el [artículo de introducción](alert-grading-playbooks.md).
 
@@ -51,9 +51,9 @@ Los resultados del uso de este cuaderno de estrategias son:
 
 - Ha realizado la acción necesaria si los correos electrónicos se han reenviado a una dirección de correo electrónico malintencionada.
 
-## <a name="email-forwarding-rules"></a>Reglas de reenvío de correo electrónico
+## <a name="email-forwarding-rules"></a>reglas de reenvío de Email
 
-Las reglas de reenvío de correo electrónico permiten a los usuarios crear una regla para reenviar mensajes de correo electrónico enviados al buzón de correo de un usuario al buzón de otro usuario dentro o fuera de la organización. Algunos usuarios de correo electrónico, especialmente los que tienen varios buzones, configuran reglas de reenvío para mover los correos electrónicos del empleador a sus cuentas de correo electrónico privadas. El reenvío de correo electrónico es una característica útil, pero también puede suponer un riesgo de seguridad debido a la posible divulgación de información. Los atacantes pueden usar esta información para atacar a su organización o a sus asociados.
+Email reglas de reenvío permiten a los usuarios crear una regla para reenviar mensajes de correo electrónico enviados al buzón de correo de un usuario al buzón de otro usuario dentro o fuera de la organización. Algunos usuarios de correo electrónico, especialmente los que tienen varios buzones, configuran reglas de reenvío para mover los correos electrónicos del empleador a sus cuentas de correo electrónico privadas. Email reenvío es una característica útil, pero también puede suponer un riesgo para la seguridad debido a la posible divulgación de información. Los atacantes pueden usar esta información para atacar a su organización o a sus asociados.
 
 ### <a name="suspicious-email-forwarding-activity"></a>Actividad de reenvío de correo electrónico sospechoso
 
@@ -65,12 +65,12 @@ Microsoft Defender para Office 365 puede detectar y alertar sobre reglas de reen
 
 Para obtener más información, vea estas entradas de blog:
 
-- [Compromiso de correo electrónico empresarial](https://techcommunity.microsoft.com/t5/microsoft-defender-for-office/business-email-uncompromised-part-one/ba-p/2159900)
+- [Compromiso de Email empresarial](https://techcommunity.microsoft.com/t5/microsoft-defender-for-office/business-email-uncompromised-part-one/ba-p/2159900)
 - [En segundo plano del riesgo de correo electrónico empresarial: uso de datos de amenazas entre dominios para interrumpir una campaña de BEC grande](https://www.microsoft.com/security/blog/2021/06/14/behind-the-scenes-of-business-email-compromise-using-cross-domain-threat-data-to-disrupt-a-large-bec-infrastructure/)
 
 ## <a name="alert-details"></a>Detalles de la alerta
 
-Para revisar la alerta Actividad de reenvío de correo electrónico sospechoso, abra la página **Alertas** para ver la sección **Lista de actividad** . Por ejemplo:
+Para revisar la alerta Actividad de reenvío de Email sospechosa, abra la página **Alertas** para ver la sección **Lista de actividad**. Por ejemplo:
 
 :::image type="content" source="../../media/alert-grading-playbook-email-forwarding/alert-grading-playbook-email-forwarding-activity-list.png" alt-text="Lista de actividades relacionadas con la alerta" lightbox="../../media/alert-grading-playbook-email-forwarding/alert-grading-playbook-email-forwarding-activity-list.png":::
 
@@ -81,7 +81,7 @@ Seleccione **Actividad**  para ver los detalles de esa actividad en la barra lat
 El campo **Motivo** contiene la siguiente información relacionada con esta alerta.
 
 - El tipo de reenvío (FT) es uno de los siguientes:
-  - Exchange Regla de transporte (ETR): reenviado mediante y Exchange regla de transporte
+  - Regla de transporte de Exchange (ETR): reenviado mediante y regla de transporte de Exchange
   - SMTP: reenviado mediante el reenvío de buzones
   - InboxRule: reenviado mediante una regla de bandeja de entrada
 
@@ -107,7 +107,7 @@ También puede analizar estas actividades adicionales para el buzón afectado:
   - Observe cuántos de los correos electrónicos recientes enviados por el remitente se detectan como phish, spam o malware.
   - Observe cuántos de los correos electrónicos enviados contienen información confidencial.
 
-- Evalúe el comportamiento de inicio de sesión de riesgo en el portal de Microsoft Azure.
+- Evalúe el comportamiento de inicio de sesión de riesgo en microsoft Azure Portal.
 - Compruebe si hay actividades malintencionadas en el dispositivo del usuario.
 
 ### <a name="are-the-activities-malicious"></a>¿Las actividades son malintencionadas?
@@ -135,7 +135,7 @@ El Explorador de amenazas proporciona una experiencia de investigación interact
 
     :::image type="content" source="../../media/alert-grading-playbook-email-forwarding/alert-grading-playbook-email-forwarding-recipients-list.png" alt-text="Ejemplo de la lista de destinatarios" lightbox="../../media/alert-grading-playbook-email-forwarding/alert-grading-playbook-email-forwarding-recipients-list.png":::
 
-  - Quién más ha reenviado correos electrónicos a estos destinatarios?
+  - ¿Quién más ha reenviado correos electrónicos a estos destinatarios?
   - ¿Cuántos correos electrónicos se han reenviado a estos destinatarios?
   - ¿Con qué frecuencia se reenvía un correo electrónico a estos destinatarios?
 
@@ -236,15 +236,15 @@ IdentityLogonEvents
 
 ### <a name="investigating-forwarding-rules"></a>Investigación de reglas de reenvío
 
-También puede encontrar reglas de reenvío sospechosas mediante el centro de administración de Exchange, en función del tipo de regla (el valor FT de la alerta).
+También puede encontrar reglas de reenvío sospechosas mediante el Centro de administración de Exchange, en función del tipo de regla (el valor FT de la alerta).
 
 - ETR
 
-  Exchange reglas de transporte se enumeran en la sección **Reglas**. Compruebe que todas las reglas son las esperadas.
+  Las reglas de transporte de Exchange se enumeran en la sección **Reglas** . Compruebe que todas las reglas son las esperadas.
 
 - SMTP
 
-  Puede ver las reglas de reenvío de buzones seleccionando el buzón **\>  del remitente Administrar configuración \> de flujo de correo Edición de reenvío de \> correo** electrónico.
+  Para ver las reglas de reenvío de buzones, seleccione el buzón **\> del remitente Administrar la configuración \> del flujo de correo Email editar el \> reenvío**.
 
 - InboxRule
 

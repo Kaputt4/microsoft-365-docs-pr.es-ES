@@ -18,14 +18,14 @@ ms.collection:
 ms.custom:
 - seo-marvel-apr2020
 description: Los administradores pueden aprender a usar Entrenamiento de simulación de ataque para ejecutar ataques simulados de suplantación de identidad y contraseña en sus organizaciones de Microsoft 365 E5 o Microsoft Defender para Office 365 Plan 2.
-ms.technology: mdo
-ms.prod: m365-security
-ms.openlocfilehash: cee9ca2160a5840860efb4400e9a289cb90fd509
-ms.sourcegitcommit: 7374c7b013890744d74e5214f7f8d69ca7874466
+ms.subservice: mdo
+ms.service: microsoft-365-security
+ms.openlocfilehash: 4ae78b01a2f3b156f0842f13c03ef296b9dca492
+ms.sourcegitcommit: 10e6abe740e27000e223378eb17d657a47555fa8
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/23/2022
-ms.locfileid: "67409166"
+ms.lasthandoff: 08/31/2022
+ms.locfileid: "67481732"
 ---
 # <a name="get-started-using-attack-simulation-training-in-defender-for-office-365"></a>Introducción al uso de Entrenamiento de simulación de ataque en Defender para Office 365
 

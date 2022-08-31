@@ -1,10 +1,11 @@
 ---
 title: La tabla EmailEvents en el esquema de búsqueda avanzada
-description: Obtenga información sobre los eventos asociados a Microsoft 365 correos electrónicos en la tabla EmailEvents del esquema de búsqueda avanzada.
+description: Obtenga información sobre los eventos asociados a los correos electrónicos de Microsoft 365 en la tabla EmailEvents del esquema de búsqueda avanzada.
 keywords: búsqueda avanzada, búsqueda de amenazas, búsqueda de amenazas cibernética, Microsoft 365 Defender, microsoft 365, m365, búsqueda, consulta, telemetría, referencia de esquema, kusto, tabla, columna, tipo de datos, descripción, EmailEvents, id. de mensaje de red, remitente, destinatario, identificador de datos adjuntos, nombre de datos adjuntos, veredicto de malware, veredicto de phishing, recuento de datos adjuntos, recuento de vínculos, recuento de direcciones URL
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
-ms.prod: m365-security
+ms.service: microsoft-365-security
+ms.subservice: m365d
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -17,13 +18,12 @@ manager: dansimp
 audience: ITPro
 ms.collection: m365-security-compliance
 ms.topic: article
-ms.technology: m365d
-ms.openlocfilehash: b34ac5538a2c38261f7da0a0cd3a75452660ef6e
-ms.sourcegitcommit: fdd0294e6cda916392ee66f5a1d2a235fb7272f8
+ms.openlocfilehash: 5ac64dfbfd42d76e350d27a5d7a1594e6c055cba
+ms.sourcegitcommit: 10e6abe740e27000e223378eb17d657a47555fa8
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/29/2022
-ms.locfileid: "65128813"
+ms.lasthandoff: 08/31/2022
+ms.locfileid: "67482062"
 ---
 # <a name="emailevents"></a>EmailEvents
 
@@ -37,7 +37,7 @@ ms.locfileid: "65128813"
 La `EmailEvents` tabla del esquema [de búsqueda avanzada](advanced-hunting-overview.md) contiene información sobre eventos que implican el procesamiento de correos electrónicos en Microsoft Defender para Office 365. Utilice esta referencia para crear consultas que devuelvan información sobre la tabla.
 
 > [!TIP]
-> Para obtener información detallada sobre los tipos de eventos (`ActionType`valores) admitidos por una tabla, use la referencia de esquema integrada disponible en el Defender for Cloud.
+> Para obtener información detallada sobre los tipos de eventos (`ActionType` valores) admitidos por una tabla, use la referencia de esquema integrada disponible en Defender for Cloud.
 
 Para obtener información sobre otras tablas del esquema de búsqueda avanzada, [vea la referencia de búsqueda avanzada](advanced-hunting-schema-tables.md).
 

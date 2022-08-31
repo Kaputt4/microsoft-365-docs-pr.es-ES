@@ -3,7 +3,8 @@ title: Microsoft 365 Defender API de incidentes y el tipo de recurso incidents
 description: Obtenga información sobre los métodos y propiedades del tipo de recurso Incidents en Microsoft 365 Defender
 keywords: incidente, incidentes, API
 search.product: eADQiWindows 10XVcnh
-ms.prod: m365-security
+ms.service: microsoft-365-security
+ms.subservice: m365d
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -19,14 +20,13 @@ ms.topic: conceptual
 search.appverid:
 - MOE150
 - MET150
-ms.technology: m365d
 ms.custom: api
-ms.openlocfilehash: 45a6e14d6c3514a63869cc9d7229cda8dd511334
-ms.sourcegitcommit: e4882e3c66166ea7b834ad2e8fafeab42293e07d
+ms.openlocfilehash: 8531a2f647f9f8adaeb952c08cae596142fc884f
+ms.sourcegitcommit: 10e6abe740e27000e223378eb17d657a47555fa8
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/30/2022
-ms.locfileid: "67100083"
+ms.lasthandoff: 08/31/2022
+ms.locfileid: "67471376"
 ---
 # <a name="microsoft-365-defender-incidents-api-and-the-incidents-resource-type"></a>Microsoft 365 Defender API de incidentes y el tipo de recurso incidents
 
@@ -76,7 +76,7 @@ assignedTo | string | Propietario del incidente.
 severity | Enum | Gravedad del incidente. Los valores posibles son: ```UnSpecified```, ```Informational```, ```Low```, ```Medium```y ```High```.
 status | Enum | Especifica el estado actual del incidente. Los valores posibles son ```Active```, ```InProgress```, ```Resolved``` y ```Redirected```
 classification | Enum | Especificación del incidente. Los valores posibles son: ```Unknown```, ```FalsePositive``` y ```TruePositive```.
-determinación | Enum | Especifica la determinación del incidente. Valores posibles: ```NotAvailable```, ```Apt```, ```Malware```, ```SecurityPersonnel```, ```SecurityTesting```, ```UnwantedSoftware```, ```Other```.
+Determinación | Enum | Especifica la determinación del incidente. Valores posibles: ```NotAvailable```, ```Apt```, ```Malware```, ```SecurityPersonnel```, ```SecurityTesting```, ```UnwantedSoftware```, ```Other```.
 tags | string List | Lista de etiquetas de incidentes.
 comments | Lista de comentarios de incidentes | El objeto Incident Comment contiene: cadena de comentario, cadena createdBy y fecha y hora de createTime.
 alertas | Lista de alertas | Lista de alertas relacionadas. Consulte ejemplos en [la documentación de la API De lista de incidentes](api-list-incidents.md) .

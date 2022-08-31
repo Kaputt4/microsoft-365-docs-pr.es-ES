@@ -2,7 +2,7 @@
 title: Personalizar el acceso controlado a carpetas
 description: Agregue otras carpetas que deben protegerse mediante acceso controlado a carpetas o permitir aplicaciones que bloqueen incorrectamente los cambios en archivos importantes.
 keywords: Acceso controlado a carpetas, windows 10, windows 11, windows defender, ransomware, protect, files, folders, customize, add folder, add app, allow, add executable
-ms.prod: m365-security
+ms.service: microsoft-365-security
 ms.mktglfcycl: manage
 ms.sitesec: library
 ms.localizationpriority: medium
@@ -11,16 +11,16 @@ author: denisebmsft
 ms.author: deniseb
 ms.reviewer: oogunrinde, dbodorin, vladiso, nixanm, anvascon
 manager: dansimp
-ms.technology: mde
+ms.subservice: mde
 ms.topic: how-to
 ms.collection: M365-security-compliance
 ms.date: ''
-ms.openlocfilehash: 3d6f763bd2ac2c4352f1b200c05c3079bc615aaf
-ms.sourcegitcommit: 7ac54e1952383d5cd5f084c6a9d247eb747d4904
+ms.openlocfilehash: 5b46a2a4f520ea1d7d92366b8e356b895d12563a
+ms.sourcegitcommit: 10e6abe740e27000e223378eb17d657a47555fa8
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/17/2022
-ms.locfileid: "66139349"
+ms.lasthandoff: 08/31/2022
+ms.locfileid: "67471618"
 ---
 # <a name="customize-controlled-folder-access"></a>Personalizar el acceso controlado a carpetas
 
@@ -35,7 +35,7 @@ ms.locfileid: "66139349"
 > [!TIP]
 > ¿Quiere experimentar Defender para punto de conexión? [Regístrese para obtener una prueba gratuita.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-assignaccess-abovefoldlink)
 
-El acceso controlado a carpetas le ayuda a proteger datos valiosos de aplicaciones y amenazas malintencionadas, como ransomware. El acceso controlado a carpetas se admite en Windows Server 2019, Windows Server 2022, Windows 10 y Windows 11 clientes. En este artículo se describe cómo personalizar las funcionalidades de acceso controlado a carpetas e se incluyen las secciones siguientes:
+El acceso controlado a carpetas le ayuda a proteger datos valiosos de aplicaciones y amenazas malintencionadas, como ransomware. El acceso controlado a carpetas se admite en clientes de Windows Server 2019, Windows Server 2022, Windows 10 y Windows 11. En este artículo se describe cómo personalizar las funcionalidades de acceso controlado a carpetas e se incluyen las secciones siguientes:
 
 - [Protección de carpetas adicionales](#protect-additional-folders)
 - [Agregar aplicaciones a las que se debe permitir el acceso a carpetas protegidas](#allow-specific-apps-to-make-changes-to-controlled-folders)
@@ -77,7 +77,7 @@ Puede usar la aplicación de Seguridad de Windows, directiva de grupo, cmdlets d
 
 3. En **el Editor de administración de directiva de grupo**, vaya a **Directivas** \> de **configuración** \> del equipo **Plantillas administrativas**.
 
-4. Expanda el árbol para **Windows componentes** \> **Antivirus de Microsoft Defender** \> Windows Defender **acceso a carpetas controladas** de **Protección contra vulnerabilidades** \> de seguridad. <br/>**NOTA**: En las versiones anteriores de Windows, es posible que vea **Antivirus de Windows Defender** en lugar de **Antivirus de Microsoft Defender**.
+4. Expanda el árbol a **componentes** \> de **Windows Antivirus** \> de Microsoft Defender Windows Defender **acceso a carpetas controladas** de **Protección contra vulnerabilidades** \> de seguridad. <br/>**NOTA**: En versiones anteriores de Windows, es posible que vea **Antivirus de Windows Defender** en lugar de **Antivirus de Microsoft Defender**.
 
 5. Haga doble clic en **Carpetas protegidas configuradas** y, a continuación, establezca la opción **en Habilitado**. Seleccione **Mostrar** y especifique cada carpeta que quiera proteger.
 
@@ -108,7 +108,7 @@ Use el proveedor de servicios de configuración [./Vendor/MSFT/Policy/Config/Def
 Puede especificar si ciertas aplicaciones siempre se consideran seguras y dar acceso de escritura a los archivos de carpetas protegidas. Permitir aplicaciones puede ser útil si la característica de acceso controlado a carpetas bloquea una aplicación determinada que conozca y de confianza.
 
 > [!IMPORTANT]
-> De forma predeterminada, Windows agrega aplicaciones que se consideran fáciles de usar en la lista permitida. Estas aplicaciones que se agregan automáticamente no se registran en la lista que se muestra en la aplicación Seguridad de Windows o mediante los cmdlets de PowerShell asociados. No es necesario agregar la mayoría de las aplicaciones. Agregue solo aplicaciones si se están bloqueando y puede comprobar su confiabilidad.
+> De forma predeterminada, Windows agrega aplicaciones que se consideran fáciles de usar en la lista de permitidos. Estas aplicaciones que se agregan automáticamente no se registran en la lista que se muestra en la aplicación Seguridad de Windows o mediante los cmdlets de PowerShell asociados. No es necesario agregar la mayoría de las aplicaciones. Agregue solo aplicaciones si se están bloqueando y puede comprobar su confiabilidad.
 
 Al agregar una aplicación, debe especificar la ubicación de la aplicación. Solo se permitirá el acceso a las carpetas protegidas a la aplicación de esa ubicación. Si la aplicación (con el mismo nombre) está en una ubicación diferente, no se agregará a la lista de permitidos y puede bloquearse mediante el acceso controlado a carpetas.
 
@@ -132,7 +132,7 @@ Una aplicación o servicio permitidos solo tiene acceso de escritura a una carpe
 
 2. En el **Editor de administración de directiva de grupo**, vaya a **Configuración del equipo** y seleccione **Plantillas administrativas**.
 
-3. Expanda el árbol para **Windows componentes** \> **Antivirus de Microsoft Defender** \> Windows Defender **acceso a carpetas controladas** de **Protección contra vulnerabilidades** \> de seguridad.
+3. Expanda el árbol a **componentes** \> de **Windows Antivirus** \> de Microsoft Defender Windows Defender **acceso a carpetas controladas** de **Protección contra vulnerabilidades** \> de seguridad.
 
 4. Haga doble clic en la opción **Configurar aplicaciones permitidas** y establezca la opción **en Habilitado**. Seleccione **Mostrar** y escriba cada aplicación.
 

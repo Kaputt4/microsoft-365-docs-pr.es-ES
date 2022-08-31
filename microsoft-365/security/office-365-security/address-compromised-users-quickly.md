@@ -14,14 +14,14 @@ ms.collection: M365-security-compliance
 ms.custom: ''
 ms.date: 06/10/2021
 description: Obtenga información sobre cómo acelerar el proceso de detección y direccionamiento de cuentas de usuario en peligro con funcionalidades automatizadas de investigación y respuesta en Microsoft Defender para Office 365 Plan 2.
-ms.technology: mdo
-ms.prod: m365-security
-ms.openlocfilehash: 8628f1952f37f43a66daccb5f0792097ce798c31
-ms.sourcegitcommit: 725a92b0b1555572b306b285a0e7a7614d34e5e5
+ms.subservice: mdo
+ms.service: microsoft-365-security
+ms.openlocfilehash: 5c6bd48759382209375201b2e95ac71ccce4d0f4
+ms.sourcegitcommit: 10e6abe740e27000e223378eb17d657a47555fa8
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/24/2022
-ms.locfileid: "65649051"
+ms.lasthandoff: 08/31/2022
+ms.locfileid: "67482216"
 ---
 # <a name="address-compromised-user-accounts-with-automated-investigation-and-response"></a>Abordar las cuentas de usuario en peligro con una investigación y respuesta automatizadas
 
@@ -70,7 +70,7 @@ Vea este breve vídeo para aprender a detectar y responder a los riesgos del usu
 
 ### <a name="view-and-investigate-restricted-users"></a>Visualización e investigación de usuarios restringidos
 
-Tiene algunas opciones para navegar a una lista de usuarios restringidos. Por ejemplo, en el portal de Microsoft 365 Defender, puede ir a **Correo electrónico & usuarios** **restringidos** de **revisión de** \> colaboración\>. En el procedimiento siguiente se describe la navegación mediante el panel **Alertas** , que es una buena manera de ver varios tipos de alertas que podrían haberse desencadenado.
+Tiene algunas opciones para navegar a una lista de usuarios restringidos. Por ejemplo, en el portal de Microsoft 365 Defender, puede ir a **Email & colaboración** \> **Revisar** \> **usuarios restringidos**. En el procedimiento siguiente se describe la navegación mediante el panel **Alertas** , que es una buena manera de ver varios tipos de alertas que podrían haberse desencadenado.
 
 1. Abra el portal Microsoft 365 Defender en <https://security.microsoft.com> y vaya a **Incidentes & alertas** \> **alertas**. O bien, para ir directamente a la página **Alertas** , use <https://security.microsoft.com/alerts>.
 
@@ -96,7 +96,7 @@ Para más información, consulte [Visualización de los detalles de una investig
 
 - **No confíe en una alerta de inicio de sesión sospechosa como único indicador**. Cuando una cuenta de usuario está en peligro, es posible que desencadene o no una alerta de inicio de sesión sospechosa. A veces es la serie de actividades que se producen después de que una cuenta está en peligro lo que desencadena una alerta. ¿Desea obtener más información sobre las alertas? Consulte [Directivas de alerta](../../compliance/alert-policies.md).
 
-## <a name="next-steps"></a>Siguientes pasos
+## <a name="next-steps"></a>Pasos siguientes
 
 - [Revisión de los permisos necesarios para usar las funcionalidades de AIR](office-365-air.md#required-permissions-to-use-air-capabilities)
 
@@ -104,4 +104,4 @@ Para más información, consulte [Visualización de los detalles de una investig
 
 - [Más información sobre AIR en Microsoft Defender para punto de conexión](/windows/security/threat-protection/microsoft-defender-atp/automated-investigations)
 
-- [Visite la hoja de ruta de Microsoft 365 para ver lo que va a venir pronto y la implementación](https://www.microsoft.com/microsoft-365/roadmap?filters=)
+- [Visite la hoja de ruta de Microsoft 365 para ver lo que se va a implementar próximamente.](https://www.microsoft.com/microsoft-365/roadmap?filters=)

@@ -22,16 +22,19 @@ searchScope:
 appliesto:
 - Microsoft Teams
 - Microsoft 365 for frontline workers
-ms.openlocfilehash: 45e476ea1054c8d495c78f8744109d24130706d1
-ms.sourcegitcommit: 5e5c2c1f7c321b5eb1c5b932c03bdd510005de13
-ms.translationtype: HT
+ms.openlocfilehash: 020862c14e02b06718a7816ab6200341969404c8
+ms.sourcegitcommit: 10e6abe740e27000e223378eb17d657a47555fa8
+ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/15/2022
-ms.locfileid: "66822630"
+ms.lasthandoff: 08/31/2022
+ms.locfileid: "67472016"
 ---
 # <a name="simplify-business-processes-for-frontline-teams"></a>Simplifique los procesos empresariales de los equipos de primera línea
 
 Puede usar las aplicaciones de Teams, Power Apps y Power BI para simplificar los procesos empresariales de los equipos de primera línea.
+
+> [!VIDEO https://www.microsoft.com/videoplayer/embed/RWRzfc]
+
 
 > [!NOTE]
 > Las nubes del sector de Microsoft ofrecen funcionalidades adicionales para [servicios financieros](/industry/financial-services), [asistencia sanitaria](/industry/healthcare), [ONG](/industry/nonprofit) y entornos [comerciales](/industry/retail), que incluyen funcionalidades de Dynamics 365 y Microsoft Azure, así como las características de Microsoft 365.

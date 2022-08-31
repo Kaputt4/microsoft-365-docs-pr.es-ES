@@ -2,7 +2,8 @@
 title: Elija entre modos guiados y avanzados para la búsqueda en Microsoft 365 Defender
 description: La búsqueda guiada en Microsoft 365 Defender no requiere conocimientos de KQL, mientras que la búsqueda avanzada permite escribir una consulta desde cero.
 keywords: modo guiado, búsqueda avanzada, búsqueda de amenazas, búsqueda de ciberamenazas, Microsoft 365 Defender, microsoft 365, m365, búsqueda, consulta, telemetría, detecciones personalizadas, esquema, kusto
-ms.prod: m365-security
+ms.service: microsoft-365-security
+ms.subservice: m365d
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -18,13 +19,12 @@ ms.collection:
 - m365initiative-m365-defender
 ms.topic: conceptual
 ms.custom: seo-marvel-apr2020
-ms.technology: m365d
-ms.openlocfilehash: f94ef320b24fe95d1e08e7deafff85a18d6010b1
-ms.sourcegitcommit: 7374c7b013890744d74e5214f7f8d69ca7874466
+ms.openlocfilehash: 45bc2edc940c5681302c1d9266b437b0406913af
+ms.sourcegitcommit: 10e6abe740e27000e223378eb17d657a47555fa8
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/23/2022
-ms.locfileid: "67406952"
+ms.lasthandoff: 08/31/2022
+ms.locfileid: "67471819"
 ---
 # <a name="choose-between-guided-and-advanced-modes-to-hunt-in-microsoft-365-defender"></a>Elija entre modos guiados y avanzados para cazar en Microsoft 365 Defender
 

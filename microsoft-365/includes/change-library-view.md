@@ -7,21 +7,21 @@ ms.reviewer: ssquires
 audience: admin
 ms.topic: article
 ms.customer: intro-overview
-ms.prod: microsoft-365-enterprise
+ms.service: microsoft-365-enterprise
 search.appverid: ''
 ms.collection:
 - enabler-strategic
 - m365initiative-syntex
 ms.localizationpriority: medium
 description: Obtenga información sobre cómo cambiar la vista en una biblioteca de documentos en Microsoft SharePoint Syntex.
-ms.openlocfilehash: f850cbe57964d13b2d2e36fee3e2cd455e48d9fe
-ms.sourcegitcommit: 46e796c6b76a01516c48977335bbf5076ca74a06
+ms.openlocfilehash: abbe2f80459bef6b9b354ed1a6cd136ea2ef5274
+ms.sourcegitcommit: 10e6abe740e27000e223378eb17d657a47555fa8
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/09/2022
-ms.locfileid: "64738454"
+ms.lasthandoff: 08/31/2022
+ms.locfileid: "67484095"
 ---
-Hay varias maneras de ver cómo ve la información en una biblioteca de documentos SharePoint. Puede cambiar la vista de la biblioteca de documentos para que se ajuste a sus necesidades o preferencias.
+Hay varias maneras de ver cómo ve la información en una biblioteca de documentos de SharePoint. Puede cambiar la vista de la biblioteca de documentos para que se ajuste a sus necesidades o preferencias.
 
 Para cambiar la vista en la página de la biblioteca, seleccione el menú desplegable ver para mostrar las opciones y, a continuación, seleccione la vista que desea usar.
 
