@@ -13,12 +13,12 @@ metadata:
   ms.author: samanro
   ms.date: 06/08/2021
   ms.localizationpriority: high
-  ms.openlocfilehash: e699cfb3cd0f45ff466967a93e2c40bc3d2ff556
-  ms.sourcegitcommit: 5e5c2c1f7c321b5eb1c5b932c03bdd510005de13
-  ms.translationtype: HT
+  ms.openlocfilehash: 90225a98fc6e702fec1819273c1ee2b15f623dd5
+  ms.sourcegitcommit: 10e6abe740e27000e223378eb17d657a47555fa8
+  ms.translationtype: MT
   ms.contentlocale: es-ES
-  ms.lasthandoff: 07/15/2022
-  ms.locfileid: "66822931"
+  ms.lasthandoff: 08/31/2022
+  ms.locfileid: "67477107"
 highlightedContent:
   items:
   - title: Configure su infraestructura para el trabajo híbrido
@@ -141,12 +141,12 @@ productDirectory:
   - title: Escenarios y soluciones específicas para el sector
     imageSrc: https://docs.microsoft.com/office/media/icons/on-premises-blue.svg
     links:
+    - url: frontline/index.yml
+      text: Microsoft 365 para organizaciones de primera línea
     - url: solutions/financial-services-secure-collaboration.md
       text: Seguridad y cumplimiento normativo para servicios financieros
     - url: solutions/energy-secure-collaboration.md
       text: Seguridad y cumplimiento normativo para los servicios de energía y utilidades
-    - url: frontline/teams-in-hc.md
-      text: Teams para organizaciones sanitarias
     - url: /MicrosoftTeams/expand-teams-across-your-org/teams-for-education-landing-page
       text: Teams para el ámbito educativo
     - url: /MicrosoftTeams/expand-teams-across-your-org/teams-for-government-landing-page
@@ -215,7 +215,7 @@ additionalContent:
       links:
       - text: Planificación, implementación y administración
         url: /onedrive/onedrive
-      - text: Más de OneDrive >
+      - text: Más >
         url: /onedrive
     - title: Outlook y Exchange
       links:
@@ -223,7 +223,7 @@ additionalContent:
         url: https://resources.techcommunity.microsoft.com/outlook-mobile-adoption/
       - text: Exchange en línea
         url: /Exchange/exchange-online
-      - text: Más de Exchange >
+      - text: Más >
         url: /Exchange
     - title: Planner y Project
       links:
@@ -236,15 +236,15 @@ additionalContent:
     - title: Microsoft Viva
       links:
       - text: Temas Microsoft Viva
-        url: /microsoft-365/knowledge/
+        url: /viva/topics/
       - text: Ideas Microsoft Viva
         url: /insights/viva-teams-app
       - text: Conexiones Microsoft Viva
-        url: /viva/connections/
+        url: /viva/connections/viva-connections-overview
       - text: Aprendizaje Microsoft Viva
-        url: /microsoft-365/learning/
-      - text: Más de Microsoft Viva >
-        url: /microsoft-365/viva/
+        url: /viva/learning/
+      - text: Más >
+        url: /viva/
     - title: Más aplicaciones y servicios
       links:
       - text: Microsoft Bookings

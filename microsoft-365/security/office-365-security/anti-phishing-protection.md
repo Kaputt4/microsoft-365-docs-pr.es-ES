@@ -19,14 +19,14 @@ ms.custom:
 - TopSMBIssues
 - seo-marvel-apr2020
 description: Los administradores pueden obtener información sobre las características de protección contra phishing en Exchange Online Protection (EOP) y Microsoft Defender para Office 365.
-ms.technology: mdo
-ms.prod: m365-security
-ms.openlocfilehash: 226791c0d157a553ab731f837bfbdfe46697a4dd
-ms.sourcegitcommit: d09eb780dc41a01796eb8137fbe9267231af6746
+ms.subservice: mdo
+ms.service: microsoft-365-security
+ms.openlocfilehash: 766f366a12e46bc5c02796203420379bf0b64b3a
+ms.sourcegitcommit: 10e6abe740e27000e223378eb17d657a47555fa8
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/19/2022
-ms.locfileid: "67385361"
+ms.lasthandoff: 08/31/2022
+ms.locfileid: "67466842"
 ---
 # <a name="anti-phishing-protection-in-microsoft-365"></a>Protección contra suplantación de identidad (phishing) en Microsoft 365
 
