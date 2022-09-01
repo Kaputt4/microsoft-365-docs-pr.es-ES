@@ -3,7 +3,7 @@ title: Administrar indicadores
 ms.reviewer: ''
 description: Administre los indicadores de un hash de archivo, dirección IP, direcciones URL o dominios que definen la detección, prevención y exclusión de entidades.
 keywords: import, indicator, list, ioc, csv, manage, allowed, blocked, block, clean, malicious, file hash, ip address, urls, domain
-ms.prod: m365-security
+ms.service: microsoft-365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -14,13 +14,13 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
-ms.technology: mde
-ms.openlocfilehash: 4619b24d06af4cdb80916fb9eacbc52b2fa55c21
-ms.sourcegitcommit: 0a67e239549752fcdbcff660189f34b51ec273f5
+ms.subservice: mde
+ms.openlocfilehash: 6a78b50ce7361363ae03d13d63783ed8469a56de
+ms.sourcegitcommit: 228fa13973bf7c2d91504703fab757f552ae40dd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/23/2022
-ms.locfileid: "66983969"
+ms.lasthandoff: 09/01/2022
+ms.locfileid: "67521003"
 ---
 # <a name="manage-indicators"></a>Administrar indicadores
 
@@ -67,13 +67,13 @@ Parámetro|Tipo|Descripción
 indicatorType|Enum|Tipo del indicador. Los valores posibles son: "FileSha1", "FileSha256", "IpAddress", "DomainName" y "Url". **Required**
 indicatorValue|Cadena|Identidad de la entidad [Indicator](ti-indicator.md) . **Required**
 acción|Enum|Acción que se realizará si el indicador se detectará en la organización. Los valores posibles son: "Alert", "AlertAndBlock" y "Allowed". **Required**
-title|String|Título de alerta de indicador. **Required**
+title|Cadena|Título de alerta de indicador. **Required**
 description|Cadena| Descripción del indicador. **Required**
 expirationTime|DateTimeOffset|La hora de expiración del indicador con el siguiente formato AAAA-MM-DDTHH:MM:SS.0Z. El indicador se elimina si transcurre el tiempo de expiración y lo que ocurra en el momento de expiración se produce en el valor de segundos (SS). **Optional**
 severity|Enum|Gravedad del indicador. Los valores posibles son: "Informativo", "Bajo", "Medio" y "Alto". **Optional**
-recommendedActions|String|Acciones recomendadas de alerta de indicador de TI. **Optional**
+recommendedActions|Cadena|Acciones recomendadas de alerta de indicador de TI. **Optional**
 rbacGroups|Cadena|Lista separada por comas de grupos de RBAC a los que se aplicaría el indicador. **Optional**
-categoría|String|Categoría de la alerta. Algunos ejemplos son: Ejecución y acceso a credenciales. **Optional**
+categoría|Cadena|Categoría de la alerta. Algunos ejemplos son: Ejecución y acceso a credenciales. **Optional**
 mitretechniques|Cadena|Código/id de técnicas de MITRE (separados por comas). Para obtener más información, consulte [Tácticas empresariales](https://attack.mitre.org/tactics/enterprise/). **Opcional** Se recomienda agregar un valor en la categoría cuando se trata de una técnica MITRE.
 GenerateAlert|Cadena|Si se debe generar la alerta. Los valores posibles son: True o False. **Optional**
 
@@ -84,7 +84,7 @@ Para obtener más información, consulte [Microsoft Defender para punto de conex
 Vea este vídeo para obtener información sobre cómo Microsoft Defender para punto de conexión proporciona varias maneras de agregar y administrar indicadores de riesgo (IO). 
 > [!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RE4qLVw]
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 - [Crear indicadores](manage-indicators.md)
 - [Crear indicadores para los archivos](indicator-file.md)

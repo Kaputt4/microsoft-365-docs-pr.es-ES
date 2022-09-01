@@ -2,7 +2,7 @@
 title: Implementación de actualizaciones para Microsoft Defender para punto de conexión en Mac
 description: Controle las actualizaciones de Microsoft Defender para punto de conexión en Mac en entornos empresariales.
 keywords: microsoft, defender, Microsoft Defender para punto de conexión, mac, actualizaciones, implementar
-ms.prod: m365-security
+ms.service: microsoft-365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -14,13 +14,13 @@ audience: ITPro
 ms.collection:
 - m365-security-compliance
 ms.topic: conceptual
-ms.technology: mde
-ms.openlocfilehash: 4612c7ca68ab0b55fa2a2f28821cb5baef6ff6e9
-ms.sourcegitcommit: 6c2ab5e8efe74d0dc2df610e2d9d2fdda8aaf074
+ms.subservice: mde
+ms.openlocfilehash: 3686ee0e4356091a0dd3d6b295fde72d8f2611e0
+ms.sourcegitcommit: 228fa13973bf7c2d91504703fab757f552ae40dd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/25/2022
-ms.locfileid: "65669350"
+ms.lasthandoff: 09/01/2022
+ms.locfileid: "67519520"
 ---
 # <a name="deploy-updates-for-microsoft-defender-for-endpoint-on-macos"></a>Implementación de actualizaciones para Microsoft Defender para punto de conexión en macOS
 
@@ -40,7 +40,7 @@ Microsoft publica periódicamente actualizaciones de software para mejorar el re
 
 Para actualizar Microsoft Defender para punto de conexión en macOS, se usa un programa denominado Microsoft AutoUpdate (MAU). De forma predeterminada, MAU comprueba automáticamente las actualizaciones diarias, pero puede cambiarlas a semanales, mensuales o manualmente.
 
-:::image type="content" source="images/MDATP-34-MAU.png" alt-text="MAU" lightbox="images/MDATP-34-MAU.png":::
+:::image type="content" source="images/MDATP-34-MAU.png" alt-text="Mau" lightbox="images/MDATP-34-MAU.png":::
 
 Si decide implementar actualizaciones mediante las herramientas de distribución de software, debe configurar MAU para comprobar manualmente si hay actualizaciones de software. Puede implementar preferencias para configurar cómo y cuándo MAU comprueba si hay actualizaciones para los Equipos Mac de su organización.
 
@@ -48,7 +48,7 @@ Si decide implementar actualizaciones mediante las herramientas de distribución
 
 MAU incluye una herramienta de línea de *comandos, denominada msupdate*, diseñada para los administradores de TI para que tengan un control más preciso sobre cuándo se aplican las actualizaciones. Las instrucciones para usar esta herramienta se pueden encontrar en [Update Office para Mac mediante msupdate](/deployoffice/mac/update-office-for-mac-using-msupdate).
 
-En MAU, el identificador de aplicación de Microsoft Defender para punto de conexión en macOS es *WDAV00*. Para descargar e instalar las actualizaciones más recientes de Microsoft Defender para punto de conexión en macOS, ejecute el siguiente comando desde una ventana terminal:
+En MAU, el identificador de aplicación para Microsoft Defender para punto de conexión en macOS es *WDAV00*. Para descargar e instalar las actualizaciones más recientes de Microsoft Defender para punto de conexión en macOS, ejecute el siguiente comando desde una ventana terminal:
 
 ```dos
 cd /Library/Application\ Support/Microsoft/MAU2.0/Microsoft\ AutoUpdate.app/Contents/MacOS
@@ -84,7 +84,7 @@ El `Current` canal contiene la versión más estable del producto.
 |**Dominio**|`com.microsoft.autoupdate2`|
 |**Clave**|ChannelName|
 |**Tipo de datos**|Cadena|
-|**Posibles valores**|Beta <p> Versión preliminar <p> Current|
+|**Posibles valores**|Beta <p> Preview <p> Current|
 |||
 
 > [!WARNING]
@@ -128,9 +128,9 @@ Cambie la forma en que MAU busca actualizaciones.
 |**Comment**|Tenga en cuenta que AutomaticDownload realizará una descarga e instalación silenciosa si es posible.|
 |||
 
-### <a name="change-whether-the-check-for-updates-button-is-enabled"></a>Cambiar si el botón "Buscar actualizaciones" está habilitado
+### <a name="change-whether-the-check-for-updates-button-is-enabled"></a>Cambiar si el botón "Buscar Novedades" está habilitado
 
-Cambie si los usuarios locales podrán hacer clic en la opción "Buscar actualizaciones" en la interfaz de usuario de Microsoft AutoUpdate.
+Cambie si los usuarios locales podrán hacer clic en la opción "Buscar Novedades" en la interfaz de usuario de Microsoft AutoUpdate.
 
 <br>
 
@@ -146,7 +146,7 @@ Cambie si los usuarios locales podrán hacer clic en la opción "Buscar actualiz
 
 ### <a name="disable-insider-checkbox"></a>Casilla Deshabilitar Insider
 
-Establézcalo en true para que "Join the Office Insider Program..." casilla no disponible o atenuada para los usuarios.
+Establézcalo en true para que "Únase al programa Office Insider..." casilla no disponible o atenuada para los usuarios.
 
 <br>
 

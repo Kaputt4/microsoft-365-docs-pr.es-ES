@@ -3,7 +3,7 @@ title: Microsoft Defender para punto de conexión en Android
 ms.reviewer: ''
 description: Describe cómo instalar y usar Microsoft Defender para punto de conexión en Android
 keywords: microsoft, defender, Microsoft Defender para punto de conexión, android, installation, deploy, uninstallation, intune
-ms.prod: m365-security
+ms.service: microsoft-365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -16,13 +16,13 @@ ms.collection:
 - m365-security-compliance
 - m365-initiative-defender-endpoint
 ms.topic: conceptual
-ms.technology: mde
-ms.openlocfilehash: 8de6af6f04243a8481d116fe9a67f5420b536f6c
-ms.sourcegitcommit: 133bf9097785309da45df6f374a712a48b33f8e9
+ms.subservice: mde
+ms.openlocfilehash: 691764119295ce4edab3df2ee3e6b1c3439900d9
+ms.sourcegitcommit: 228fa13973bf7c2d91504703fab757f552ae40dd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/10/2022
-ms.locfileid: "66016534"
+ms.lasthandoff: 09/01/2022
+ms.locfileid: "67521431"
 ---
 # <a name="microsoft-defender-for-endpoint-on-android"></a>Microsoft Defender para punto de conexión en Android
 
@@ -52,7 +52,7 @@ En este tema se describe cómo instalar, configurar, actualizar y usar Defender 
 
 - **Para administradores**:
    - Acceso al portal de Microsoft 365 Defender.
-   - Acceda [a Microsoft Endpoint Manager centro de administración](https://go.microsoft.com/fwlink/?linkid=2109431) a:
+   - Acceda al [Centro de administración de Microsoft Endpoint Manager](https://go.microsoft.com/fwlink/?linkid=2109431) para:
      - Implemente la aplicación en grupos de usuarios inscritos en su organización.
      - Configure Microsoft Defender para punto de conexión señales de riesgo en la directiva de protección de aplicaciones.
   
@@ -63,16 +63,16 @@ En este tema se describe cómo instalar, configurar, actualizar y usar Defender 
 
 ### <a name="network-requirements"></a>Requisitos de red
 
-- Para que Microsoft Defender para punto de conexión en Android funcione cuando se conecte a una red, el firewall o proxy deberá configurarse para [habilitar el acceso a las direcciones URL de servicio de Microsoft Defender para punto de conexión](configure-proxy-internet.md#enable-access-to-microsoft-defender-for-endpoint-service-urls-in-the-proxy-server).
+- Para que Microsoft Defender para punto de conexión en Android funcione cuando se conecte a una red, el firewall o proxy tendrá que configurarse para habilitar el [acceso a las direcciones URL de servicio de Microsoft Defender para punto de conexión](configure-proxy-internet.md#enable-access-to-microsoft-defender-for-endpoint-service-urls-in-the-proxy-server).
 
 ### <a name="system-requirements"></a>Requisitos del sistema
 
-- Teléfonos móviles que ejecutan Android 6.0 y versiones posteriores. **Actualmente no se admiten los teléfonos móviles que ejecutan Android go, tabletas y otros dispositivos móviles que ejecutan Android.**
+- Teléfonos móviles con Android 6.0 y versiones posteriores. **Actualmente no se admiten teléfonos móviles que ejecutan Android go, tabletas y otros dispositivos móviles que ejecutan Android.**
 - Portal de empresa de Intune aplicación se descarga de [Google Play](https://play.google.com/store/apps/details?id=com.microsoft.windowsintune.companyportal) y se instala. La inscripción de dispositivos es necesaria para que se apliquen Intune directivas de cumplimiento de dispositivos.
 
 ### <a name="installation-instructions"></a>Instrucciones de instalación
 
-Microsoft Defender para punto de conexión en Android admite la instalación en ambos modos de dispositivos inscritos: el administrador de dispositivos heredado y los modos de Android Enterprise. **Actualmente, los dispositivos de propiedad personal con perfil de trabajo y las inscripciones de dispositivos de usuario totalmente administrados de propiedad corporativa se admiten en Android Enterprise. La compatibilidad con otros modos de Android Enterprise se anunciará cuando esté listo.**
+Microsoft Defender para punto de conexión en Android admite la instalación en ambos modos de dispositivos inscritos: los modos heredados Administrador de dispositivos y Android Enterprise. **Actualmente, los dispositivos de propiedad personal con perfil de trabajo y las inscripciones de dispositivos de usuario totalmente administrados de propiedad corporativa son compatibles con Android Enterprise. La compatibilidad con otros modos de Android Enterprise se anunciará cuando esté listo.**
 
 - La implementación de Microsoft Defender para punto de conexión en Android se realiza a través de Microsoft Intune (MDM). Para obtener más información, consulte [Implementación de Microsoft Defender para punto de conexión en Android con Microsoft Intune](android-intune.md).
 - Instalación de Microsoft Defender para punto de conexión en dispositivos que no están inscritos mediante Intune administración de dispositivos móviles (MDM), consulte [Configuración de señales de riesgo de Microsoft Defender para punto de conexión en la directiva de protección de aplicaciones (MAM).](android-configure-mam.md)
@@ -80,11 +80,11 @@ Microsoft Defender para punto de conexión en Android admite la instalación en 
 > [!NOTE]
 > **Microsoft Defender para punto de conexión en Android ya está disponible en [Google Play](https://play.google.com/store/apps/details?id=com.microsoft.scmx).**
 >
-> Puede conectarse a Google Play desde Intune para implementar Microsoft Defender para punto de conexión aplicación, a través del administrador de dispositivos y Android Enterprise modos de inscripción.
+> Puede conectarse a Google Play desde Intune para implementar Microsoft Defender para punto de conexión aplicación en los modos de inscripción Administrador de dispositivos y Android Enterprise.
 
 ## <a name="how-to-configure-microsoft-defender-for-endpoint-on-android"></a>Configuración de Microsoft Defender para punto de conexión en Android
 
-Las instrucciones sobre cómo configurar Microsoft Defender para punto de conexión en las características de Android están disponibles en [Configurar Microsoft Defender para punto de conexión en Android características](android-configure.md).
+Las instrucciones sobre cómo configurar Microsoft Defender para punto de conexión en las características de Android están disponibles en [Configurar características de Microsoft Defender para punto de conexión en Android](android-configure.md).
 
 ## <a name="related-topics"></a>Temas relacionados
 

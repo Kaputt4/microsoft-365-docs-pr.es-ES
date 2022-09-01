@@ -2,7 +2,7 @@
 title: Programación de exámenes con Microsoft Defender para punto de conexión (Linux)
 description: Obtenga información sobre cómo programar un tiempo de examen automático para Microsoft Defender para punto de conexión (Linux) para proteger mejor los recursos de su organización.
 keywords: microsoft, defender, Microsoft Defender para punto de conexión, linux, scans, antivirus, microsoft defender for endpoint (linux)
-ms.prod: m365-security
+ms.service: microsoft-365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -13,13 +13,13 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
-ms.technology: mde
-ms.openlocfilehash: 706284ed0adf49c4da6357b6bb8217d5a14268e1
-ms.sourcegitcommit: 85ce5fd0698b6f00ea1ea189634588d00ea13508
+ms.subservice: mde
+ms.openlocfilehash: 21fbdd1e10fc929711944c2586e262c76e7a3905
+ms.sourcegitcommit: 228fa13973bf7c2d91504703fab757f552ae40dd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/06/2022
-ms.locfileid: "64663498"
+ms.lasthandoff: 09/01/2022
+ms.locfileid: "67519762"
 ---
 # <a name="schedule-scans-with-microsoft-defender-for-endpoint-linux"></a>Programar exámenes con Microsoft Defender para punto de conexión (Linux)
 

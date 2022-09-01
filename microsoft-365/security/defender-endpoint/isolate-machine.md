@@ -2,7 +2,7 @@
 title: Aislar la API de máquina
 description: Obtenga información sobre cómo usar isolate machine API para aislar un dispositivo de acceso a la red externa en Microsoft Defender para punto de conexión.
 keywords: apis, graph api, api admitidas, aislar el dispositivo
-ms.prod: m365-security
+ms.service: microsoft-365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -13,14 +13,14 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
-ms.technology: mde
+ms.subservice: mde
 ms.custom: api
-ms.openlocfilehash: 7f477c1e8133d0b01b71d7264caf3b0da2a53d3b
-ms.sourcegitcommit: 217108c59be41b01963a393b4f16d137636fe6a8
+ms.openlocfilehash: ebaa1286fadc89acff02204a8c583e3ba3a1d19e
+ms.sourcegitcommit: 228fa13973bf7c2d91504703fab757f552ae40dd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/12/2022
-ms.locfileid: "67327561"
+ms.lasthandoff: 09/01/2022
+ms.locfileid: "67519872"
 ---
 # <a name="isolate-machine-api"></a>Aislar la API de máquina
 

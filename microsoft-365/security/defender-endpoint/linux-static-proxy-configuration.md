@@ -1,9 +1,9 @@
 ---
-title: Detección de proxy estático de Microsoft Defender para endpoint en Linux
+title: Microsoft Defender para punto de conexión en la detección de proxy estático de Linux
 ms.reviewer: ''
-description: Describe cómo configurar Microsoft Defender para Endpoint en Linux para la detección de proxy estático.
-keywords: microsoft, defender, Microsoft Defender para endpoint, linux, instalación, proxy
-ms.prod: m365-security
+description: Describe cómo configurar Microsoft Defender para punto de conexión en Linux para la detección de proxy estático.
+keywords: microsoft, defender, Microsoft Defender para punto de conexión, linux, instalación, proxy
+ms.service: microsoft-365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -15,72 +15,72 @@ audience: ITPro
 ms.collection:
 - m365-security-compliance
 ms.topic: conceptual
-ms.technology: mde
-ms.openlocfilehash: 3b5061f0230a9704cb0fb9b80752c4d38954ad12
-ms.sourcegitcommit: eb8c600d3298dca1940259998de61621e6505e69
+ms.subservice: mde
+ms.openlocfilehash: 3b2a0ad396f9a74e4b01bcda5e1e072f2f297b5c
+ms.sourcegitcommit: 228fa13973bf7c2d91504703fab757f552ae40dd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/24/2021
-ms.locfileid: "61168551"
+ms.lasthandoff: 09/01/2022
+ms.locfileid: "67519740"
 ---
-# <a name="configure-microsoft-defender-for-endpoint-on-linux-for-static-proxy-discovery"></a>Configurar Microsoft Defender para endpoint en Linux para la detección de proxy estático
+# <a name="configure-microsoft-defender-for-endpoint-on-linux-for-static-proxy-discovery"></a>Configuración de Microsoft Defender para punto de conexión en Linux para la detección de proxy estático
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
 **Se aplica a:**
-- [Plan 2 de Microsoft Defender para endpoint](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Microsoft Defender para punto de conexión Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
-> ¿Desea experimentar Defender for Endpoint? [Regístrese para obtener una prueba gratuita.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-investigateip-abovefoldlink)
+> ¿Quiere experimentar Defender para punto de conexión? [Regístrese para obtener una prueba gratuita.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-investigateip-abovefoldlink)
 
-Microsoft Defender para endpoint puede detectar un servidor proxy mediante la `HTTPS_PROXY` variable de entorno. Esta configuración debe configurarse **tanto en** el momento de la instalación como después de instalar el producto.
+Microsoft Defender para punto de conexión puede detectar un servidor proxy mediante la variable de `HTTPS_PROXY` entorno. Esta configuración debe configurarse **tanto** en el momento de la instalación como después de instalar el producto.
 
-## <a name="installation-time-configuration"></a>Configuración de tiempo de instalación
+## <a name="installation-time-configuration"></a>Configuración del tiempo de instalación
 
-Durante la instalación, la `HTTPS_PROXY` variable de entorno debe pasarse al administrador de paquetes. El administrador de paquetes puede leer esta variable de las siguientes maneras:
+Durante la instalación, la variable de `HTTPS_PROXY` entorno debe pasarse al administrador de paquetes. El administrador de paquetes puede leer esta variable de cualquiera de las maneras siguientes:
 
-- La `HTTPS_PROXY` variable se define con la siguiente `/etc/environment` línea:
+- La `HTTPS_PROXY` variable se define en `/etc/environment` con la línea siguiente:
 
   ```bash
   HTTPS_PROXY="http://proxy.server:port/"
   ```
 
-- La `HTTPS_PROXY` variable se define en la configuración global del administrador de paquetes. Por ejemplo, en Ubuntu 18.04, puede agregar la siguiente línea a `/etc/apt/apt.conf.d/proxy.conf` :
+- La `HTTPS_PROXY` variable se define en la configuración global del administrador de paquetes. Por ejemplo, en Ubuntu 18.04, puede agregar la siguiente línea a `/etc/apt/apt.conf.d/proxy.conf`:
 
   ```bash
   Acquire::https::Proxy "http://proxy.server:port/";
   ```
 
   > [!CAUTION]
-  > Tenga en cuenta que los dos métodos anteriores podrían definir el proxy que se usará para otras aplicaciones del sistema. Use este método con precaución o solo si está pensado para ser una configuración global general.
+  > Tenga en cuenta que los dos métodos anteriores podrían definir el proxy que se usará para otras aplicaciones del sistema. Use este método con precaución, o solo si está pensado para ser una configuración global general.
 
-- La `HTTPS_PROXY` variable se antepone a los comandos de instalación o desinstalación. Por ejemplo, con el administrador de paquetes de APT, anteponer la variable de la siguiente manera al instalar Microsoft Defender para endpoint:
+- La `HTTPS_PROXY` variable se antepone a los comandos de instalación o desinstalación. Por ejemplo, con el administrador de paquetes APT, anteponga la variable como se indica a continuación al instalar Microsoft Defender para punto de conexión:
 
   ```bash
   HTTPS_PROXY="http://proxy.server:port/" apt install mdatp
   ```
 
   > [!NOTE]
-  > No agregue sudo entre la definición de variable de entorno y apt, de lo contrario, la variable no se propagará.
+  > No agregue sudo entre la definición de variable de entorno y apt; de lo contrario, la variable no se propagará.
 
-La variable de entorno puede definirse de forma `HTTPS_PROXY` similar durante la desinstalación.
+La `HTTPS_PROXY` variable de entorno se puede definir de forma similar durante la desinstalación.
 
-Tenga en cuenta que la instalación y desinstalación no necesariamente producirán errores si se requiere un proxy pero no está configurado. Sin embargo, la telemetría no se envía y la operación podría tardar mucho más tiempo debido a los tiempos de espera de la red.
+Tenga en cuenta que la instalación y desinstalación no producirán un error necesariamente si se requiere un proxy pero no está configurado. Sin embargo, la telemetría no se enviará y la operación podría tardar mucho más tiempo debido a los tiempos de espera de red.
 
 ## <a name="post-installation-configuration"></a>Configuración posterior a la instalación
 
-Después de la instalación, `HTTPS_PROXY` la variable de entorno debe definirse en el archivo de servicio Defender for Endpoint. Para ello, ejecute `sudo systemctl edit --full mdatp.service` .
-A continuación, puede propagar la variable al servicio de dos maneras:
+Después de la instalación, la variable de `HTTPS_PROXY` entorno debe definirse en el archivo de servicio de Defender para punto de conexión. Para ello, ejecute `sudo systemctl edit --full mdatp.service`.
+A continuación, puede propagar la variable al servicio de una de estas dos maneras:
 
-- Descomprima la línea `#Environment="HTTPS_PROXY=http://address:port"` y especifica la dirección de proxy estática.
+- Quite la marca de comentario de la línea `#Environment="HTTPS_PROXY=http://address:port"` y especifique la dirección del proxy estático.
 
-- Agregar una línea `EnvironmentFile=/path/to/env/file` . Esta ruta de acceso puede apuntar a o a un archivo personalizado, cualquiera de los `/etc/environment` cuales necesita agregar la siguiente línea:
+- Agregue una línea `EnvironmentFile=/path/to/env/file`. Esta ruta de acceso puede apuntar a o a `/etc/environment` un archivo personalizado, cualquiera de los cuales debe agregar la siguiente línea:
 
   ```bash
   HTTPS_PROXY="http://proxy.server:port/"
   ```
 
-Después de modificar , guarde el archivo y reinicie el servicio para que los cambios se puedan `mdatp.service` aplicar mediante los siguientes comandos:
+Después de `mdatp.service`modificar , guarde el archivo y reinicie el servicio para que los cambios se puedan aplicar mediante los siguientes comandos:
 
 ```bash
 sudo systemctl daemon-reload; sudo systemctl restart mdatp

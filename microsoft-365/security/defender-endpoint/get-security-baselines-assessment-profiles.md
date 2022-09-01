@@ -2,7 +2,7 @@
 title: Perfiles de evaluación de líneas base de seguridad
 description: Proporciona información sobre las API de perfiles de evaluación de líneas base de seguridad que extraen datos "Administración de vulnerabilidades de Microsoft Defender". Hay diferentes llamadas API para obtener diferentes tipos de datos. En general, cada llamada API contiene los datos necesarios para los dispositivos de la organización.
 keywords: api, apis, export assessment, per device assessment, per machine assessment, vulnerability assessment report, device vulnerability assessment, device vulnerability report, secure configuration assessment, secure configuration report, software vulnerabilities assessment, software vulnerability report, vulnerability report by machine,
-ms.prod: m365-security
+ms.service: microsoft-365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -13,14 +13,14 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
-ms.technology: mde
+ms.subservice: mde
 ms.custom: api
-ms.openlocfilehash: f619efaa3ef258405a45bd747fa2f3e2850d0a21
-ms.sourcegitcommit: 48a75b40e607542e5fe219b6e75ffc757804a9c6
+ms.openlocfilehash: 13f88b8994fc8bde379b93cc2e0507957a4361e5
+ms.sourcegitcommit: 228fa13973bf7c2d91504703fab757f552ae40dd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/16/2022
-ms.locfileid: "67345045"
+ms.lasthandoff: 09/01/2022
+ms.locfileid: "67520619"
 ---
 # <a name="list-all-security-baselines-assessment-profiles"></a>Enumerar todos los perfiles de evaluación de líneas de base de seguridad
 

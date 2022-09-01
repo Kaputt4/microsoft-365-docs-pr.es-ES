@@ -2,7 +2,7 @@
 title: Investigación de entidades en dispositivos mediante respuesta dinámica en Microsoft Defender para punto de conexión
 description: Acceda a un dispositivo mediante una conexión de shell remoto segura para realizar un trabajo de investigación y realizar acciones de respuesta inmediatas en un dispositivo en tiempo real.
 keywords: remote, shell, connection, live, response, real-time, command, script, remediate, hunt, export, log, drop, download, file,
-ms.prod: m365-security
+ms.service: microsoft-365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -13,13 +13,13 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
-ms.technology: mde
-ms.openlocfilehash: 1f387696797d52805495777be0850ebe135fd38a
-ms.sourcegitcommit: f30616b90b382409f53a056b7a6c8be078e6866f
+ms.subservice: mde
+ms.openlocfilehash: f25537cc3ccbfc1cf7bc957a56d074755f4852e7
+ms.sourcegitcommit: 228fa13973bf7c2d91504703fab757f552ae40dd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/03/2022
-ms.locfileid: "65173118"
+ms.lasthandoff: 09/01/2022
+ms.locfileid: "67519674"
 ---
 # <a name="investigate-entities-on-devices-using-live-response"></a>Investigación de entidades en dispositivos mediante respuesta dinámica
 
@@ -29,7 +29,7 @@ ms.locfileid: "65173118"
 - [Microsoft Defender para punto de conexión Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
-> ¿Desea experimentar Defender para punto de conexión? [Regístrese para obtener una prueba gratuita.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-investigateip-abovefoldlink)
+> ¿Quiere experimentar Defender para punto de conexión? [Regístrese para obtener una prueba gratuita.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-investigateip-abovefoldlink)
 
 La respuesta dinámica proporciona a los equipos de operaciones de seguridad acceso instantáneo a un dispositivo (también conocido como máquina) mediante una conexión de shell remoto. Esto le ofrece la capacidad de realizar un trabajo de investigación en profundidad y tomar medidas de respuesta inmediatas para contener rápidamente amenazas identificadas en tiempo real.
 
@@ -42,7 +42,7 @@ Con la respuesta en vivo, los analistas pueden realizar todas las tareas siguien
 - Ejecute comandos básicos y avanzados para realizar un trabajo de investigación en un dispositivo.
 - Descargue archivos como ejemplos de malware y resultados de scripts de PowerShell.
 - Descargar archivos en segundo plano (¡nuevo!).
-- Upload un script o ejecutable de PowerShell a la biblioteca y ejecútelo en un dispositivo desde un nivel de inquilino.
+- Cargue un script o ejecutable de PowerShell en la biblioteca y ejecútelo en un dispositivo desde un nivel de inquilino.
 - Realizar o deshacer acciones de corrección.
 
 ## <a name="before-you-begin"></a>Antes de empezar
@@ -114,7 +114,7 @@ Antes de iniciar una sesión en un dispositivo, asegúrese de cumplir los siguie
   Solo los usuarios que se han aprovisionado con los permisos adecuados pueden iniciar una sesión. Para obtener más información sobre las asignaciones de roles, consulte [Creación y administración de roles](user-roles.md).
 
   > [!IMPORTANT]
-  > La opción para cargar un archivo en la biblioteca solo está disponible para los usuarios con el permiso "Administrar seguridad Configuración".
+  > La opción para cargar un archivo en la biblioteca solo está disponible para los usuarios con el permiso "Administrar configuración de seguridad".
   > El botón está atenuado para los usuarios con solo permisos delegados.
 
   En función del rol que se le haya concedido, puede ejecutar comandos de respuesta en directo básicos o avanzados. Los permisos de los usuarios se controlan mediante el rol personalizado de RBAC.
@@ -123,14 +123,14 @@ Antes de iniciar una sesión en un dispositivo, asegúrese de cumplir los siguie
 
 Al iniciar una sesión de respuesta dinámica en un dispositivo, se abre un panel. El panel proporciona información sobre la sesión como la siguiente:
 
-- Quién ha creado la sesión
+- Quién creó la sesión
 - Cuando se inició la sesión
 - Duración de la sesión
 
 El panel también le proporciona acceso a:
 
 - Desconectar sesión
-- Upload archivos a la biblioteca
+- Carga de archivos en la biblioteca
 - Consola de comandos
 - Registro de comandos
 
@@ -199,7 +199,7 @@ Los siguientes comandos están disponibles para los roles de usuario a los que s
 
 ## <a name="use-live-response-commands"></a>Uso de comandos de respuesta en directo
 
-Los comandos que puede usar en la consola siguen principios similares a [Windows Comandos](/windows-server/administration/windows-commands/windows-commands#BKMK_c).
+Los comandos que puede usar en la consola siguen principios similares a los [comandos de Windows](/windows-server/administration/windows-commands/windows-commands#BKMK_c).
 
 Los comandos avanzados ofrecen un conjunto más sólido de acciones que le permiten realizar acciones más eficaces, como descargar y cargar un archivo, ejecutar scripts en el dispositivo y realizar acciones de corrección en una entidad.
 
@@ -244,7 +244,7 @@ Puede tener una colección de scripts de PowerShell que se pueden ejecutar en di
 
 #### <a name="to-upload-a-file-in-the-library"></a>Para cargar un archivo en la biblioteca
 
-1. Haga clic en **Upload archivo a la biblioteca**.
+1. Haga clic en **Cargar archivo en la biblioteca**.
 
 2. Haga clic en **Examinar** y seleccione el archivo.
 
@@ -332,7 +332,7 @@ processes > output.txt
 
 Seleccione la pestaña **Registro de comandos** para ver los comandos usados en el dispositivo durante una sesión. Se realiza un seguimiento de cada comando con detalles completos, como:
 
-- ID
+- Id.
 - Línea de comandos
 - Duración
 - Estado y barra lateral de entrada o salida

@@ -2,7 +2,7 @@
 title: Inventario de dispositivos
 description: Obtenga información sobre las características disponibles que puede usar en la lista Dispositivos, como ordenar, filtrar y exportar la lista para mejorar las investigaciones.
 keywords: sort, filter, export, csv, device name, domain, last seen, internal IP, health state, active alerts, active malware detections, threat category, review alerts, network, connection, malware, type, password stealer, ransomware, exploit, threat, general malware, unwanted software
-ms.prod: m365-security
+ms.service: microsoft-365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -13,13 +13,13 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
-ms.technology: mde
-ms.openlocfilehash: 232f27b9edb23e932d49cf33e026d22abfbe72dd
-ms.sourcegitcommit: 44ece87e3e0c0c851dfc1e77211ac3e5e4a5b973
+ms.subservice: mde
+ms.openlocfilehash: 2d436df67c9f0ee7e37ce7c6ea6e4580f24af0ff
+ms.sourcegitcommit: 228fa13973bf7c2d91504703fab757f552ae40dd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/05/2022
-ms.locfileid: "66617334"
+ms.lasthandoff: 09/01/2022
+ms.locfileid: "67514376"
 ---
 # <a name="device-inventory"></a>Inventario de dispositivos
 

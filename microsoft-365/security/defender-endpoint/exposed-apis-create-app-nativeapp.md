@@ -3,7 +3,7 @@ title: Uso de api de Microsoft Defender para punto de conexión
 ms.reviewer: ''
 description: Obtén información sobre cómo diseñar una aplicación nativa de Windows para obtener acceso mediante programación a Microsoft Defender para punto de conexión sin un usuario.
 keywords: api, graph api, api admitidas, actor, alertas, dispositivo, usuario, dominio, ip, archivo, búsqueda avanzada, consulta
-ms.prod: m365-security
+ms.service: microsoft-365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -14,14 +14,14 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
-ms.technology: mde
+ms.subservice: mde
 ms.custom: api
-ms.openlocfilehash: c7adaa79ef98b0ccfc1c12e2f84b30c8cd5600fe
-ms.sourcegitcommit: 217108c59be41b01963a393b4f16d137636fe6a8
+ms.openlocfilehash: e3081127f86b31c61abaad8e896f5ab6213908f2
+ms.sourcegitcommit: 228fa13973bf7c2d91504703fab757f552ae40dd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/12/2022
-ms.locfileid: "67327912"
+ms.lasthandoff: 09/01/2022
+ms.locfileid: "67520171"
 ---
 # <a name="use-microsoft-defender-for-endpoint-apis"></a>Uso de api de Microsoft Defender para punto de conexión
 

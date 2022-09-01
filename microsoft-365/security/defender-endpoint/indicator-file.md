@@ -3,7 +3,7 @@ title: Crear indicadores para los archivos
 ms.reviewer: ''
 description: Cree indicadores para un hash de archivo que defina la detección, prevención y exclusión de entidades.
 keywords: file, hash, manage, allowed, blocked, block, clean, malicious, file hash, ip address, urls, domain
-ms.prod: m365-security
+ms.service: microsoft-365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -15,13 +15,13 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
-ms.technology: mde
-ms.openlocfilehash: d16be2d9a072b43fba591a65b78eaa3111b25f65
-ms.sourcegitcommit: 217108c59be41b01963a393b4f16d137636fe6a8
+ms.subservice: mde
+ms.openlocfilehash: ea7283127708d5576e6436fae5f7f077d53182f6
+ms.sourcegitcommit: 228fa13973bf7c2d91504703fab757f552ae40dd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/12/2022
-ms.locfileid: "67325785"
+ms.lasthandoff: 09/01/2022
+ms.locfileid: "67521069"
 ---
 # <a name="create-indicators-for-files"></a>Crear indicadores para los archivos
 

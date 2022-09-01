@@ -2,7 +2,7 @@
 title: API de máquinas de lista
 description: Aprenda a usar list machines API para recuperar una colección de máquinas que se han comunicado con Microsoft Defender para punto de conexión nube.
 keywords: apis, graph api, api admitidas, get, devices
-ms.prod: m365-security
+ms.service: microsoft-365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -13,14 +13,14 @@ manager: dansimp
 audience: ITPro
 ms.topic: article
 ms.collection: M365-security-compliance
-ms.technology: mde
+ms.subservice: mde
 ms.custom: api
-ms.openlocfilehash: b7a95843d1102d9bd004a300a754fdd6bc8ecd42
-ms.sourcegitcommit: 217108c59be41b01963a393b4f16d137636fe6a8
+ms.openlocfilehash: b2ce0be32f5172aa1f6f86b450b9444f150eadb6
+ms.sourcegitcommit: 228fa13973bf7c2d91504703fab757f552ae40dd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/12/2022
-ms.locfileid: "67326879"
+ms.lasthandoff: 09/01/2022
+ms.locfileid: "67520641"
 ---
 # <a name="list-machines-api"></a>API de máquinas de lista
 

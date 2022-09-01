@@ -2,26 +2,26 @@
 title: Propiedades y métodos de API de detalles de estado del antivirus de exportación del antivirus de Microsoft Defender
 description: Obtenga información sobre cómo exportar una lista de detalles de estado del dispositivo antivirus de Microsoft Defender.
 keywords: apis, graph api, api admitidas, get, device health api, Microsoft Defender para punto de conexión api report api microsoft defender reports api, microsoft defender for endpoint reporting api, windows defender reporting api, defender for endpoint reporting api, windows defender reporting api, windows defender reporting api, windows defender report api
-ms.prod: m365-security
+ms.service: microsoft-365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
 ms.author: v-jweston
 author: jweston-1
 ms.localizationpriority: medium
-ms.date: 08/08/2022
+ms.date: 09/01/2022
 manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
-MS.technology: mde
+ms.subservice: mde
 ms.custom: api
-ms.openlocfilehash: 91d8f711abf3a428b506d580227589253ee156a2
-ms.sourcegitcommit: 402e0b2095b6cb141b8525a53194d47357bcd612
+ms.openlocfilehash: 06339d5313b0921a5560ef7db53d2b1dad1b771f
+ms.sourcegitcommit: 228fa13973bf7c2d91504703fab757f552ae40dd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/09/2022
-ms.locfileid: "67285086"
+ms.lasthandoff: 09/01/2022
+ms.locfileid: "67520378"
 ---
 # <a name="export-device-antivirus-health-details-api-methods-and-properties"></a>Exportación de propiedades y métodos de API de detalles de estado del antivirus de dispositivo
 
@@ -52,6 +52,12 @@ Los datos recopilados mediante "_respuesta JSON_ o _a través de archivos_" son 
 
 > [!IMPORTANT]
 >
+> Actualmente, solo la **respuesta JSON de estado del antivirus** está disponible con carácter general. **Antivirus Health API a través de archivos** solo está disponible actualmente en versión preliminar pública.
+>
+> **La consulta personalizada de búsqueda avanzada** solo está disponible actualmente en versión preliminar pública, incluso si las consultas siguen estando visibles.
+
+> [!IMPORTANT]
+>
 > Para que Windows&nbsp;Server 2012 R2&nbsp;y Windows&nbsp;Server&nbsp;2016 aparezcan en los informes de estado del dispositivo, estos dispositivos deben incorporarse mediante el paquete de solución unificado&nbsp;moderno. Para obtener más información, consulte [Nueva funcionalidad en la solución unificada moderna para Windows Server 2012 R2 y 2016](/microsoft-365/security/defender-endpoint/configure-server-endpoints#new-windows-server-2012-r2-and-2016-functionality-in-the-modern-unified-solution).
 
 > [!NOTE]
@@ -76,34 +82,37 @@ Método|Tipo de datos|Descripción
 | Propiedad (ID) | Tipo de datos | Descripción | Ejemplo de un valor devuelto |
 |:----|:----|:----|:----|
 | avEngineUpdateTime | DateTimeOffset | Fecha y hora en que se actualizó por última vez el motor av en el dispositivo | "2022-08-04T12:44:02Z" |
-| avEngineVersion | String | Versión del motor antivirus | "1.1.19400.3" |
-| avIsEngineUpToDate | String | Estado actualizado del motor de AV | "True", "False", "Unknown" |
-| avIsPlatformUpToDate | String | Stauts actualizados de la plataforma av | "True", "False", "Unknown" |
-| avIsSignatureUpToDate | String | Estado actualizado de la firma de AV | "True", "False", "Unknown" |
-| avMode | String | Modo antivirus. | Cada modo será un valor entero con tipo de cadena que va de 0 a 5. Consulte la asignación siguiente para ver el significado de su valor: <ul><li>'' = Otros</li><li> '0' = Activo</li><li> '1' = Pasivo</li><li> '2' = Deshabilitado</li><li> '3' = Otros</li><li> '4' = EDRBlocked</li><li>'5' = PassiveAudit</li></ul> |
+| avEngineVersion | Cadena | Versión del motor antivirus | "1.1.19400.3" |
+| avIsEngineUpToDate | Cadena | Estado actualizado del motor de AV | "True", "False", "Unknown" |
+| avIsPlatformUpToDate | Cadena | Stauts actualizados de la plataforma av | "True", "False", "Unknown" |
+| avIsSignatureUpToDate | Cadena | Estado actualizado de la firma de AV | "True", "False", "Unknown" |
+| avMode | Cadena | Modo antivirus. | Cada modo será un valor entero con tipo de cadena que va de 0 a 5. Consulte la asignación siguiente para ver el significado de su valor: <ul><li>'' = Otros</li><li> '0' = Activo</li><li> '1' = Pasivo</li><li> '2' = Deshabilitado</li><li> '3' = Otros</li><li> '4' = EDRBlocked</li><li>'5' = PassiveAudit</li></ul> |
 | avPlatformUpdateTime | DateTimeOffset | Fecha y hora en que se actualizó por última vez la plataforma av en el dispositivo | "2022-08-04T12:44:02Z" |
-| avPlatformVersion | String | Versión de la plataforma antivirus | "4.18.2203.5" |
+| avPlatformVersion | Cadena | Versión de la plataforma antivirus | "4.18.2203.5" |
 | avSignaturePublishTime | DateTimeOffset | Fecha y hora en que se publicó la compilación de inteligencia de seguridad de AV | "2022-08-04T12:44:02Z" |
 | avSignatureUpdateTime | DateTimeOffset | Fecha y hora en que se actualizó por última vez la inteligencia de seguridad de ANTIVIRUS en el dispositivo | "2022-08-04T12:44:02Z" |
-| avSignatureVersion | String | Versión de inteligencia de seguridad antivirus | "1.371.1323.0" |
-| computerDnsName | String | Nombre DNS | "SampleDns" |
+| avSignatureVersion | Cadena | Versión de inteligencia de seguridad antivirus | "1.371.1323.0" |
+| computerDnsName | Cadena | Nombre DNS | "SampleDns" |
 | dataRefreshTimestamp | DateTimeOffset | Fecha y hora en que se actualizan los datos para este informe | "2022-08-04T12:44:02Z" |
-| fullScanError | String | Códigos de error del examen completo | "0x80508023" |
-| fullScanResult | String | Resultado del examen completo de este dispositivo | "Completado" <br> "Cancelado" <br>"Error" |
+| fullScanError | Cadena | Códigos de error del examen completo | "0x80508023" |
+| fullScanResult | Cadena | Resultado del examen completo de este dispositivo | "Completado" <br> "Cancelado" <br>"Error" |
 | fullScanTime | DateTimeOffset | Fecha y hora en que se ha completado el examen completo | "2022-08-04T12:44:02Z" |
-| id | String | GUID de máquina | "30a8fa2826abf24d24379b23f8a44d471f00feab" |
+| id | Cadena | GUID de máquina | "30a8fa2826abf24d24379b23f8a44d471f00feab" |
 | lastSeenTime | DateTimeOffset | Fecha y hora de la última vez que se ha visto en esta máquina | "2022-08-04T12:44:02Z" |
-| machineId | String | GUID de máquina | "30a8fa2826abf24d24379b23f8a44d471f00feab" |
-| osKind | String | Tipo de sistema operativo | "windows", "mac", "linux" |
-| osPlatform | String | Nombre de la versión principal del sistema operativo | Windows 10, macOs |
+| machineId | Cadena | GUID de máquina | "30a8fa2826abf24d24379b23f8a44d471f00feab" |
+| osKind | Cadena | Tipo de sistema operativo | "windows", "mac", "linux" |
+| osPlatform | Cadena | Nombre de la versión principal del sistema operativo | Windows 10, macOs |
 | osVersion | Cadena | Versión del sistema operativo | 10.0.18363.1440, 12.4.0.0 |
-| quickScanError | String | Códigos de error del examen rápido | "0x80508023" |
-| quickScanResult | String | Resultado del examen rápido de este dispositivo | "Completado" <br>"Cancelado" <br>"Error" |
+| quickScanError | Cadena | Códigos de error del examen rápido | "0x80508023" |
+| quickScanResult | Cadena | Resultado del examen rápido de este dispositivo | "Completado" <br>"Cancelado" <br>"Error" |
 | quickScanTime | DateTimeOffset | Fecha y hora en que se ha completado el examen rápido   | "2022-08-04T12:44:02Z" |
 | rbacGroupId | Long | Identificador de grupo de dispositivos al que pertenece esta máquina | 712 |
-| rbacGroupName | String | Nombre del grupo de dispositivos al que pertenece esta máquina | "SampleGroup" |
+| rbacGroupName | Cadena | Nombre del grupo de dispositivos al que pertenece esta máquina | "SampleGroup" |
 
 ### <a name="13-export-device-antivirus-health-details-api-properties-via-files"></a>1.3 Export device antivirus health details API properties (via files)
+
+> [!IMPORTANT]
+> La información de esta sección se refiere al producto preliminar que se puede modificar sustancialmente antes de su lanzamiento comercial. Microsoft no otorga garantías, expresas o implícitas, con respecto a la información que aquí se proporciona.
 
 > [!NOTE]
 >
@@ -116,13 +125,13 @@ Método|Tipo de datos|Descripción
 | Propiedad (ID) | Tipo de datos | Descripción | Ejemplo de un valor devuelto |
 |:----|:----|:----|:----|
 | Exportación de archivos | array[string] | Una lista de direcciones URL de descarga para los archivos que contienen la instantánea actual de la organización. | ["https://tvmexportstrstgeus.blob.core.windows.net/tvm-export...1", "https://tvmexportstrstgeus.blob.core.windows.net/tvm-export...2"] |
-| GeneratedTime | String | Hora en que se generó la exportación. | 2022-05-20T08:00:00Z |
+| GeneratedTime | Cadena | Hora en que se generó la exportación. | 2022-05-20T08:00:00Z |
 
 > [!NOTE]
 > En cada uno de los archivos de exportación se puede encontrar una propiedad "DeviceGatheredInfo" que contiene los datos sobre la información del antivirus. Cada uno de sus atributos puede proporcionar información sobre el estado del dispositivo y su estado.
 
 ## <a name="see-also"></a>Vea también
 
-[Exportación del informe de estado del antivirus de dispositivos](device-health-export-antivirus-health-report-api.md)
+[Exportar informe de estado del antivirus del dispositivo](device-health-export-antivirus-health-report-api.md)
 
 [Informes de cumplimiento y estado del dispositivo](machine-reports.md)

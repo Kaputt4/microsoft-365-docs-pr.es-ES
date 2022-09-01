@@ -3,7 +3,7 @@ title: API compatibles de Microsoft Defender para punto de conexión
 ms.reviewer: ''
 description: Obtenga información sobre las entidades de Microsoft Defender para punto de conexión admitidas específicas en las que puede crear llamadas API.
 keywords: apis, api admitidas, actor, alertas, dispositivo, usuario, dominio, ip, archivo, consultas avanzadas, búsqueda avanzada
-ms.prod: m365-security
+ms.service: microsoft-365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -14,14 +14,14 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
-ms.technology: mde
+ms.subservice: mde
 ms.custom: api
-ms.openlocfilehash: 7f732b38c108d50b2c8950cdc5e30ba1153944b3
-ms.sourcegitcommit: 217108c59be41b01963a393b4f16d137636fe6a8
+ms.openlocfilehash: c7e05b51b7c56edb16a0984912970205ea77a1e8
+ms.sourcegitcommit: 228fa13973bf7c2d91504703fab757f552ae40dd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/12/2022
-ms.locfileid: "67324394"
+ms.lasthandoff: 09/01/2022
+ms.locfileid: "67520047"
 ---
 # <a name="supported-microsoft-defender-for-endpoint-apis"></a>API compatibles de Microsoft Defender para punto de conexión
 

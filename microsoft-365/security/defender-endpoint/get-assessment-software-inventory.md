@@ -2,7 +2,7 @@
 title: Exportación de la evaluación del inventario de software por dispositivo
 description: Devuelve una tabla con una entrada para cada combinación única de DeviceId, SoftwareVendor, SoftwareName, SoftwareVersion.
 keywords: api, apis, export assessment, per device assessment, vulnerability assessment report, device vulnerability assessment, device vulnerability report, secure configuration assessment, secure configuration report, software vulnerabilities assessment, software vulnerability report, vulnerability report by machine,
-ms.prod: m365-security
+ms.service: microsoft-365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -13,14 +13,14 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
-ms.technology: mde
+ms.subservice: mde
 ms.custom: api
-ms.openlocfilehash: 365b932de39e558bbe30c84ba793e59b1db447c3
-ms.sourcegitcommit: 48a75b40e607542e5fe219b6e75ffc757804a9c6
+ms.openlocfilehash: 02d14b7aad018d8c4744c5aed012e441f65ac1d0
+ms.sourcegitcommit: 228fa13973bf7c2d91504703fab757f552ae40dd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/16/2022
-ms.locfileid: "67344563"
+ms.lasthandoff: 09/01/2022
+ms.locfileid: "67516036"
 ---
 # <a name="export-software-inventory-assessment-per-device"></a>Exportación de la evaluación del inventario de software por dispositivo
 
@@ -55,7 +55,7 @@ Los datos recopilados (mediante _la respuesta Json_ o _a través de archivos_) s
 
 Esta respuesta de API contiene todos los datos del software instalado que tiene una [enumeración de plataforma común (CPE)](https://nvd.nist.gov/products/cpe) por dispositivo. Devuelve una tabla con una entrada para cada combinación única de DeviceId, SoftwareVendor, SoftwareName, SoftwareVersion.
 
-#### <a name="limitations"></a>Limitaciones
+#### <a name="111-limitations"></a>1.1.1 Limitaciones
 
 - El tamaño máximo de página es de 200 000.
 - Las limitaciones de velocidad de esta API son 30 llamadas por minuto y 1000 llamadas por hora.
@@ -66,8 +66,8 @@ Se requiere uno de los permisos siguientes para llamar a esta API. Para obtener 
 
 Tipo de permiso|Permiso|Nombre para mostrar del permiso
 ---|---|---
-Application|Software.Read.All|\'Lee la información de vulnerabilidades de Administración de amenazas y vulnerabilidades.\'
-Delegado (cuenta profesional o educativa)|Software.Read|\'Lee la información de vulnerabilidades de Administración de amenazas y vulnerabilidades.\'
+Application|Software.Read.All|\'Leer información de software de administración de amenazas y vulnerabilidades\'
+Delegado (cuenta profesional o educativa)|Software.Read|\'Leer información de software de administración de amenazas y vulnerabilidades\'
 
 ### <a name="13-url"></a>Dirección URL 1.3
 
@@ -231,8 +231,8 @@ Se requiere uno de los permisos siguientes para llamar a esta API. Para obtener 
 
 Tipo de permiso|Permiso|Nombre para mostrar del permiso
 ---|---|---
-Application|Software.Read.All|\'Lee la información de vulnerabilidades de Administración de amenazas y vulnerabilidades.\'
-Delegado (cuenta profesional o educativa)|Software.Read|\'Lee la información de vulnerabilidades de Administración de amenazas y vulnerabilidades.\'
+Application|Software.Read.All|\'Leer información de software de administración de amenazas y vulnerabilidades\'
+Delegado (cuenta profesional o educativa)|Software.Read|\'Leer información de software de administración de amenazas y vulnerabilidades\'
 
 ### <a name="23-url"></a>Dirección URL 2.3
 

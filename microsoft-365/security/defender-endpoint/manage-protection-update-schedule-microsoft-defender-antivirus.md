@@ -2,7 +2,7 @@
 title: Programación de actualizaciones de protección del Antivirus de Microsoft Defender
 description: Programar el día, la hora y el intervalo para cuándo se deben descargar las actualizaciones de protección
 keywords: actualizaciones, líneas base de seguridad, actualizaciones de programación
-ms.prod: m365-security
+ms.service: microsoft-365-security
 search.appverid: met150
 ms.mktglfcycl: manage
 ms.sitesec: library
@@ -14,14 +14,14 @@ ms.author: deniseb
 ms.custom: nextgen
 ms.reviewer: pahuijbr
 manager: dansimp
-ms.technology: mde
+ms.subservice: mde
 ms.collection: m365-security-compliance
-ms.openlocfilehash: 46deff4933055e4a76fa2e45663243ceca53f6d1
-ms.sourcegitcommit: d09eb780dc41a01796eb8137fbe9267231af6746
+ms.openlocfilehash: 6222ea1102fd57a9cba3cfca5d4f2f8bc90bd20b
+ms.sourcegitcommit: 228fa13973bf7c2d91504703fab757f552ae40dd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/19/2022
-ms.locfileid: "67388130"
+ms.lasthandoff: 09/01/2022
+ms.locfileid: "67521167"
 ---
 # <a name="manage-the-schedule-for-when-protection-updates-should-be-downloaded-and-applied"></a>Administrar la programación para cuándo se han de descargar y aplicar las actualizaciones de protección
 

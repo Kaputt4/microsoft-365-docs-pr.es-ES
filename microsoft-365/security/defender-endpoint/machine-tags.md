@@ -1,8 +1,8 @@
 ---
 title: Crear y administrar etiquetas de dispositivos
-description: Usar etiquetas de dispositivo para agrupar dispositivos para capturar contexto y habilitar la creación de listas dinámicas como parte de un incidente
+description: Uso de etiquetas de dispositivo para agrupar dispositivos para capturar contexto y habilitar la creación dinámica de listas como parte de un incidente
 keywords: etiquetas, etiquetas de dispositivo, grupos de dispositivos, grupos, corrección, nivel, reglas, grupo de aad, rol, asignación, clasificación
-ms.prod: m365-security
+ms.service: microsoft-365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -13,13 +13,13 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
-ms.technology: mde
-ms.openlocfilehash: b0b94e4905a780be9a608c8e91967b47a4db7160
-ms.sourcegitcommit: b0c3ffd7ddee9b30fab85047a71a31483b5c649b
+ms.subservice: mde
+ms.openlocfilehash: 1bdc8a92bdc966256072d17524d74a0da93f1933
+ms.sourcegitcommit: 228fa13973bf7c2d91504703fab757f552ae40dd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/25/2022
-ms.locfileid: "64465759"
+ms.lasthandoff: 09/01/2022
+ms.locfileid: "67519498"
 ---
 # <a name="create-and-manage-device-tags"></a>Crear y administrar etiquetas de dispositivos
 
@@ -31,9 +31,9 @@ ms.locfileid: "64465759"
 
 > ¿Quiere experimentar Microsoft Defender para punto de conexión? [Regístrese para obtener una prueba gratuita.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-exposedapis-abovefoldlink)
 
-Agregue etiquetas en los dispositivos para crear una afiliación de grupos lógica. Las etiquetas de dispositivo son compatibles con la asignación adecuada de la red, lo que permite adjuntar diferentes etiquetas para capturar contexto y habilitar la creación de listas dinámicas como parte de un incidente. Las etiquetas se pueden usar como filtro en la **vista Inventario** de dispositivos o para agrupar dispositivos. Para obtener más información sobre la agrupación de dispositivos, consulta [Crear y administrar grupos de dispositivos](machine-groups.md).
+Agregue etiquetas en los dispositivos para crear una afiliación de grupos lógica. Las etiquetas de dispositivo son compatibles con la asignación adecuada de la red, lo que permite adjuntar diferentes etiquetas para capturar contexto y habilitar la creación de listas dinámicas como parte de un incidente. Las etiquetas se pueden usar como filtro en la vista **Inventario de** dispositivos o para agrupar dispositivos. Para obtener más información sobre la agrupación de dispositivos, consulte [Creación y administración de grupos de dispositivos](machine-groups.md).
 
-Puedes agregar etiquetas en dispositivos de las siguientes maneras:
+Puede agregar etiquetas en dispositivos de las siguientes maneras:
 
 - Usando el portal
 - Estableciendo un valor de clave de registro
@@ -49,41 +49,41 @@ Para agregar etiquetas de dispositivo con la API, consulte [API para agregar o q
 
    - **Panel de operaciones de seguridad** : seleccione el nombre del dispositivo en la sección Dispositivos principales con alertas activas.
    - **Cola de alertas**: seleccione el nombre del dispositivo junto al icono de dispositivo en la cola de alertas.
-   - **Inventario de dispositivos** : seleccione el nombre del dispositivo de la lista de dispositivos.
+   - **Inventario de dispositivos** : seleccione el nombre del dispositivo en la lista de dispositivos.
    - **Cuadro de búsqueda**: seleccione Dispositivo en el menú desplegable y escriba el nombre del dispositivo.
 
      También puede acceder a la página de la alerta a través del archivo y las vistas IP.
 
 2. Seleccione **Administrar etiquetas** en la fila de Acciones de respuesta.
 
-    :::image type="content" source="images/manage-tags-option.png" alt-text="Imagen del botón administrar etiquetas" lightbox="images/manage-tags-option.png":::
+    :::image type="content" source="images/manage-tags-option.png" alt-text="Imagen del botón Administrar etiquetas" lightbox="images/manage-tags-option.png":::
     
 
-3. Tipo para buscar o crear etiquetas
+3. Escriba para buscar o crear etiquetas
 
-    :::image type="content" source="images/create-new-tag.png" alt-text="Agregar etiquetas en device1" lightbox="images/create-new-tag.png":::
+    :::image type="content" source="images/create-new-tag.png" alt-text="Adición de etiquetas en device1" lightbox="images/create-new-tag.png":::
 
-Las etiquetas se agregan a la vista de dispositivo y también se reflejarán en la **vista Inventario de** dispositivos. A continuación, puede usar el **filtro Etiquetas** para ver la lista relevante de dispositivos.
+Las etiquetas se agregan a la vista de dispositivo y también se reflejarán en la vista **de inventario Dispositivos** . A continuación, puede usar el filtro **Etiquetas** para ver la lista pertinente de dispositivos.
 
 > [!NOTE]
 > Es posible que el filtrado no funcione en nombres de etiquetas que contengan paréntesis.
 >
-> Al crear una etiqueta nueva, se muestra una lista de etiquetas existentes. La lista solo muestra las etiquetas creadas a través del portal. Las etiquetas existentes creadas a partir de dispositivos cliente no se mostrarán.
+> Al crear una nueva etiqueta, se muestra una lista de etiquetas existentes. La lista solo muestra las etiquetas creadas a través del portal. No se mostrarán las etiquetas existentes creadas a partir de dispositivos cliente.
 
 También puede eliminar etiquetas de esta vista.
 
-:::image type="content" source="images/new-tag-label-display.png" alt-text="Agregar etiquetas en device2" lightbox="images/new-tag-label-display.png":::
+:::image type="content" source="images/new-tag-label-display.png" alt-text="Adición de etiquetas en device2" lightbox="images/new-tag-label-display.png":::
 
 ## <a name="add-device-tags-by-setting-a-registry-key-value"></a>Agregar etiquetas de dispositivo estableciendo un valor de clave del Registro
 
 > [!NOTE]
-> Solo se aplica a los siguientes dispositivos:
+> Solo se aplica en los siguientes dispositivos:
 >
 > - Windows 11
-> - Windows 10 versión 1709 o posterior
+> - Windows 10, versión 1709 o posterior
 > - Windows Server, versión 1803 o posterior
 > - Windows Server 2016
-> - Windows Server 2012 R2
+> - Windows Server 2012 R2
 > - Windows Server 2008 R2 SP1
 > - Windows 8.1
 > - Windows 7 SP1
@@ -91,9 +91,9 @@ También puede eliminar etiquetas de esta vista.
 > [!NOTE]
 > El número máximo de caracteres que se pueden establecer en una etiqueta es 200.
 
-Los dispositivos con etiquetas similares pueden ser útiles cuando necesitas aplicar una acción contextual en una lista específica de dispositivos.
+Los dispositivos con etiquetas similares pueden ser útiles cuando necesite aplicar acciones contextuales en una lista específica de dispositivos.
 
-Use la siguiente entrada de clave del Registro para agregar una etiqueta a un dispositivo:
+Use la siguiente entrada de clave del Registro para agregar una etiqueta en un dispositivo:
 
 - Clave del Registro: `HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows Advanced Threat Protection\DeviceTagging\`
 - Valor de clave del Registro (REG_SZ): `Group`
@@ -102,4 +102,4 @@ Use la siguiente entrada de clave del Registro para agregar una etiqueta a un di
 > [!NOTE]
 > La etiqueta de dispositivo forma parte del informe de información del dispositivo que se genera una vez al día. Como alternativa, puede optar por reiniciar el punto de conexión que transferiría un nuevo informe de información del dispositivo.
 >
-> Si necesita quitar una etiqueta que se agregó con la clave del Registro anterior, desactive el contenido de los datos de la clave del Registro en lugar de quitar la clave "Grupo".
+> Si necesita quitar una etiqueta que se agregó con la clave del Registro anterior, borre el contenido de los datos de clave del Registro en lugar de quitar la clave "Group".

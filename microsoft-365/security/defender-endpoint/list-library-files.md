@@ -1,10 +1,10 @@
 ---
 title: Archivos de biblioteca de lista
-description: Obtenga información sobre cómo enumerar los archivos de biblioteca de respuestas en directo.
-keywords: api, api de gráfico, api admitidas, get, dispositivos
+description: Obtenga información sobre cómo enumerar los archivos de biblioteca de respuesta dinámica.
+keywords: apis, graph api, api admitidas, get, devices
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
-ms.prod: m365-security
+ms.service: microsoft-365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -18,20 +18,20 @@ audience: ITPro
 ms.collection:
 - M365-security-compliance
 ms.topic: reference
-MS.technology: mde
+ms.subservice: mde
 ms.custom: api
-ms.openlocfilehash: 9c9bf11856cf518a1cd387b88a3b70dc4a34cc91
-ms.sourcegitcommit: 3fb76db6b34e24569417f4c8a41b99f46a780389
+ms.openlocfilehash: bc4e8d1df158ff4707aad966505dbf02be523548
+ms.sourcegitcommit: 228fa13973bf7c2d91504703fab757f552ae40dd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/17/2022
-ms.locfileid: "63526913"
+ms.lasthandoff: 09/01/2022
+ms.locfileid: "67521299"
 ---
 #  <a name="list-library-files"></a>Archivos de biblioteca de lista 
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
-**Se aplica a:** [Microsoft Defender para endpoint](https://go.microsoft.com/fwlink/?linkid=2154037)
+**Se aplica a:** [Microsoft Defender para punto de conexión](https://go.microsoft.com/fwlink/?linkid=2154037)
 
 [!include[Prerelease information](../../includes/prerelease.md)]
 
@@ -43,20 +43,20 @@ ms.locfileid: "63526913"
 
 ## <a name="api-description"></a>Descripción de la API
 
-Enumerar los archivos de biblioteca de respuestas en directo.
+Enumera los archivos de la biblioteca de respuestas dinámicas.
 
 ## <a name="limitations"></a>Limitaciones
 
-1.  Las limitaciones de velocidad para esta API son 100 llamadas por minuto y 1500 llamadas por hora.
+1.  Las limitaciones de velocidad de esta API son 100 llamadas por minuto y 1500 llamadas por hora.
 
 ## <a name="permissions"></a>Permisos
 
-Se requiere uno de los siguientes permisos para llamar a esta API. Para obtener más información, incluido cómo elegir permisos, consulte [Introducción](apis-intro.md).
+Se requiere uno de los permisos siguientes para llamar a esta API. Para más información, incluido cómo elegir permisos, consulte [Introducción](apis-intro.md).
 
-|Tipo de permiso                       |      Permiso          |  Nombre para mostrar de permisos | 
+|Tipo de permiso                       |      Permiso          |  Nombre para mostrar del permiso | 
 |-----------------|--------|---------------------------|  
-| Aplicación                        | Library.Manage | Administrar biblioteca de respuestas en directo |
-| Delegado (cuenta profesional o educativa) | Library.Manage | Administrar biblioteca de respuestas en directo |
+| Application                        | Library.Manage | Administración de la biblioteca de respuestas dinámicas |
+| Delegado (cuenta profesional o educativa) | Library.Manage | Administración de la biblioteca de respuestas dinámicas |
 
 ## <a name="http-request"></a>Solicitud HTTP
 
@@ -68,19 +68,19 @@ GET https://api.securitycenter.microsoft.com/api/libraryfiles
 
 | Nombre         |      Tipo                     | Descripción
 |-----------------|--------|---------------------------|
-| Authorization   | String | {token} de portador. Obligatorio. |
+| Authorization   | Cadena | {token} de portador. Obligatorio. |
 
-## <a name="request-body"></a>Cuerpo de la solicitud
+## <a name="request-body"></a>Cuerpo de solicitud
 En blanco
 
 ## <a name="response"></a>Respuesta 
-Si se realiza correctamente, este método devuelve 200: código de respuesta aceptar con una colección de entidades de archivo de biblioteca de respuestas en directo.
+Si se ejecuta correctamente, este método devuelve el código de respuesta 200 - Ok con una colección de entidades de archivo de biblioteca de respuesta dinámica.
 
 ## <a name="example"></a>Ejemplo
 
 **Solicitud**
 
-Este es un ejemplo de una solicitud que obtiene todos los archivos de biblioteca de respuestas en directo
+Este es un ejemplo de una solicitud que obtiene todos los archivos de biblioteca de respuesta activa
 
 ```HTTP
 GET https://api.securitycenter.microsoft.com/api/libraryfiles

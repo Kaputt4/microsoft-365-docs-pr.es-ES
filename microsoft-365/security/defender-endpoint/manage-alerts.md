@@ -2,7 +2,7 @@
 title: Administrar alertas de Microsoft Defender para punto de conexión
 description: Cambie el estado de las alertas, cree reglas de supresión para ocultar alertas, envíe comentarios y revise el historial de cambios de alertas individuales con el menú Administrar alerta.
 keywords: administrar alertas, administrar, alertas, estado, nuevo, en curso, resuelto, resolver alertas, suprimir, supresión, reglas, contexto, historial, comentarios, cambios
-ms.prod: m365-security
+ms.service: microsoft-365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -13,13 +13,13 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
-ms.technology: mde
-ms.openlocfilehash: c14447301cfa6abf83c231361c020d261eeb87a9
-ms.sourcegitcommit: 349f0f54b0397cdd7d8fbb9ef07f1b6654a32d6e
+ms.subservice: mde
+ms.openlocfilehash: 72d35555d3853aad102d2e4fee1a665c9abb04cd
+ms.sourcegitcommit: 228fa13973bf7c2d91504703fab757f552ae40dd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/20/2022
-ms.locfileid: "65623437"
+ms.lasthandoff: 09/01/2022
+ms.locfileid: "67521233"
 ---
 # <a name="manage-microsoft-defender-for-endpoint-alerts"></a>Administrar alertas de Microsoft Defender para punto de conexión
 
@@ -105,7 +105,7 @@ Cree reglas personalizadas para controlar cuándo se suprimen o resuelven las al
 
 #### <a name="view-the-list-of-suppression-rules"></a>Ver la lista de reglas de supresión
 
-1. En el panel de navegación, seleccione **Configuración** \> **supresión de alertas**.
+1. En el panel de navegación, seleccione **Configuración Supresión** \> **de alertas**.
 
 2. La lista de reglas de supresión muestra todas las reglas que los usuarios de su organización han creado.
 

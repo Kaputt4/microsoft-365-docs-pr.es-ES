@@ -1,8 +1,8 @@
 ---
-title: Solucionar problemas de instalación de Microsoft Defender para Endpoint en Mac
-description: Solucionar problemas de instalación en Microsoft Defender para Endpoint en Mac.
-keywords: microsoft, defender, Microsoft Defender para Endpoint, mac, instalar
-ms.prod: m365-security
+title: Solución de problemas de instalación de Microsoft Defender para punto de conexión en Mac
+description: Solución de problemas de instalación en Microsoft Defender para punto de conexión en Mac.
+keywords: microsoft, defender, Microsoft Defender para punto de conexión, mac, install
+ms.service: microsoft-365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -14,15 +14,15 @@ audience: ITPro
 ms.collection:
 - m365-security-compliance
 ms.topic: conceptual
-ms.technology: mde
-ms.openlocfilehash: 5f56e28d472cb3fdf8dd089effcd4beac6e42374
-ms.sourcegitcommit: 6e90baef421ae06fd790b0453d3bdbf624b7f9c0
+ms.subservice: mde
+ms.openlocfilehash: 9de2083062e720016facebef118a9c279cd15697
+ms.sourcegitcommit: 228fa13973bf7c2d91504703fab757f552ae40dd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/12/2022
-ms.locfileid: "62766661"
+ms.lasthandoff: 09/01/2022
+ms.locfileid: "67519542"
 ---
-# <a name="troubleshoot-installation-issues-for-microsoft-defender-for-endpoint-on-macos"></a>Solucionar problemas de instalación de Microsoft Defender para Endpoint en macOS
+# <a name="troubleshoot-installation-issues-for-microsoft-defender-for-endpoint-on-macos"></a>Solución de problemas de instalación de Microsoft Defender para punto de conexión en macOS
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
@@ -36,11 +36,11 @@ ms.locfileid: "62766661"
 
 > ¿Quiere experimentar Microsoft Defender para punto de conexión? [Regístrese para obtener una prueba gratuita.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-exposedapis-abovefoldlink)
 
-## <a name="installation-failed"></a>Error en la instalación
+## <a name="installation-failed"></a>Error de instalación
 
-Para la instalación manual, la página Resumen del asistente de instalación dice: "Se produjo un error durante la instalación. El instalador encontró un error que provocó un error en la instalación. Póngase en contacto con el editor de software para obtener ayuda". Para las implementaciones de MDM, también se muestra como un error de instalación genérica.
+Para la instalación manual, en la página Resumen del asistente para la instalación se indica: "Se produjo un error durante la instalación. El instalador encontró un error que provocó un error en la instalación. Póngase en contacto con el editor de software para obtener ayuda." En el caso de las implementaciones de MDM, también se muestra como un error de instalación genérico.
 
-Aunque no se muestra un error exacto al usuario final, se mantiene un archivo de registro con el progreso de la instalación en `/Library/Logs/Microsoft/mdatp/install.log`. Cada sesión de instalación se anexa a este archivo de registro. Solo puede usar para `sed` generar la última sesión de instalación:
+Aunque no se muestra un error exacto al usuario final, conservamos un archivo de registro con el progreso de la instalación en `/Library/Logs/Microsoft/mdatp/install.log`. Cada sesión de instalación se anexa a este archivo de registro. Solo puede usar para generar `sed` la última sesión de instalación:
 
 ```bash
 sed -n 'H; /^preinstall com.microsoft.wdav begin/h; ${g;p;}' /Library/Logs/Microsoft/mdatp/install.log
@@ -53,13 +53,13 @@ correlation id=CB509765-70FC-4679-866D-8A14AD3F13CC
 preinstall com.microsoft.wdav end [2020-03-11 13:08:49 -0700] 804 => 1
 ```
 
-En este ejemplo, el motivo real tiene el prefijo `[ERROR]`.
+En este ejemplo, el motivo real tiene el `[ERROR]`prefijo .
 Error en la instalación porque no se admite una degradación entre estas versiones.
 
 ## <a name="mdatp-install-log-missing-or-not-updated"></a>Falta o no se actualiza el registro de instalación de MDATP
 
 En raras ocasiones, la instalación no deja ningún seguimiento en el archivo /Library/Logs/Microsoft/mdatp/install.log de MDATP.
-En primer lugar, compruebe que se ha producido una instalación. A continuación, analice los posibles errores consultando los registros de macOS. Es útil hacerlo en implementaciones MDM, cuando no hay ninguna interfaz de usuario de cliente. Se recomienda usar una ventana de tiempo limitada para ejecutar una consulta y filtrar por el nombre del proceso de registro, ya que habrá una gran cantidad de información.
+En primer lugar, compruebe que se ha producido una instalación. A continuación, analice los posibles errores consultando los registros de macOS. Es útil hacerlo en las implementaciones de MDM, cuando no hay ninguna interfaz de usuario de cliente. Se recomienda usar un período de tiempo reducido para ejecutar una consulta y filtrar por el nombre del proceso de registro, ya que habrá una gran cantidad de información.
 
 ```bash
 grep '^2020-03-11 13:08' /var/log/install.log

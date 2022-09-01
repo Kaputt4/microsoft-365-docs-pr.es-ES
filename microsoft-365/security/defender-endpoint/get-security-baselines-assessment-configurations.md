@@ -2,7 +2,7 @@
 title: Configuraciones de evaluación de líneas base de seguridad
 description: Proporciona información sobre las configuraciones de evaluación de líneas base de seguridad que extraen datos "Administración de vulnerabilidades de Microsoft Defender". Hay diferentes llamadas API para obtener diferentes tipos de datos. En general, cada llamada API contiene los datos necesarios para los dispositivos de la organización.
 keywords: api, apis, export assessment, per device assessment, per machine assessment, vulnerability assessment report, device vulnerability assessment, device vulnerability report, secure configuration assessment, secure configuration report, software vulnerabilities assessment, software vulnerability report, vulnerability report by machine,
-ms.prod: m365-security
+ms.service: microsoft-365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -13,14 +13,14 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
-ms.technology: mde
+ms.subservice: mde
 ms.custom: api
-ms.openlocfilehash: 396f5f83123ec3040cd773e1fe2abd201bd8a3ae
-ms.sourcegitcommit: 48a75b40e607542e5fe219b6e75ffc757804a9c6
+ms.openlocfilehash: 21fdebfac2ba62144e665e7e72580cbff1ee8c00
+ms.sourcegitcommit: 228fa13973bf7c2d91504703fab757f552ae40dd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/16/2022
-ms.locfileid: "67344555"
+ms.lasthandoff: 09/01/2022
+ms.locfileid: "67520421"
 ---
 # <a name="list-security-baselines-assessment-configurations"></a>Lista de configuraciones de evaluación de líneas base de seguridad
 

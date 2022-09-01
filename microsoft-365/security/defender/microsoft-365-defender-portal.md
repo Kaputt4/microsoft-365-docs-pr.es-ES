@@ -24,16 +24,16 @@ ms.custom:
 - intro-overview
 ms.topic: conceptual
 adobe-target: true
-ms.openlocfilehash: ea1a6138204dd75855ade67ce06822c347160e4f
-ms.sourcegitcommit: 10e6abe740e27000e223378eb17d657a47555fa8
+ms.openlocfilehash: 6c442d0a3a3394a29ad89e81add2a1608c4d675b
+ms.sourcegitcommit: 228fa13973bf7c2d91504703fab757f552ae40dd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/31/2022
-ms.locfileid: "67467907"
+ms.lasthandoff: 09/01/2022
+ms.locfileid: "67516552"
 ---
 # <a name="microsoft-365-defender-portal"></a>Portal de Microsoft 365 Defender
 
-El [portal de Microsoft 365 Defender](https://sip.security.microsoft.com/homepage?tid=72f988bf-86f1-41af-91ab-2d7cd011db47) combina protección, detección, investigación y respuesta a amenazas de correo electrónico, colaboración, identidad, dispositivo y aplicación en la nube, en un lugar central. El portal de Microsoft 365 Defender hace hincapié en el acceso rápido a la información, diseños más sencillos y reunir información relacionada para facilitar su uso. Incluye:
+El [portal de Microsoft 365 Defender](https://sip.security.microsoft.com/homepage) combina protección, detección, investigación y respuesta a amenazas de correo electrónico, colaboración, identidad, dispositivo y aplicación en la nube, en un lugar central. El portal de Microsoft 365 Defender hace hincapié en el acceso rápido a la información, diseños más sencillos y reunir información relacionada para facilitar su uso. Incluye:
 
 - **[Microsoft Defender para Office 365](/microsoft-365/security/office-365-security/defender-for-office-365)** Microsoft Defender para Office 365 ayuda a las organizaciones a proteger su empresa con un conjunto de características de prevención, detección, investigación y búsqueda para proteger el correo electrónico y Office 365 recursos.
 - **[Microsoft Defender para punto de conexión](/microsoft-365/security/defender-endpoint/microsoft-defender-advanced-threat-protection)** ofrece protección preventiva, detección posterior a la vulneración, investigación automatizada y respuesta para los dispositivos de la organización.

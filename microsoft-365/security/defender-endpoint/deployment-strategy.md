@@ -3,7 +3,7 @@ title: Planee su cuenta de Microsoft Defender para punto de conexión
 description: Seleccione la mejor estrategia de implementación de Microsoft Defender para punto de conexión para su entorno.
 keywords: deploy, plan, deployment strategy, cloud native, management, on prem, evaluation, onboarding, local, group policy, gp, endpoint manager, mem
 search.product: eADQiWindows 10XVcnh
-ms.prod: m365-security
+ms.service: microsoft-365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -16,13 +16,13 @@ ms.collection:
 - M365-security-compliance
 - m365-initiative-defender-endpoint
 ms.topic: article
-ms.technology: mde
-ms.openlocfilehash: 009c0ef044595781aaf1cb233550d2686f6ed7df
-ms.sourcegitcommit: 2aa5c026cc06ed39a9c1c2bcabd1f563bf5a1859
+ms.subservice: mde
+ms.openlocfilehash: e6071204f7f78fbc10c5e09ad2448d583fd63135
+ms.sourcegitcommit: 228fa13973bf7c2d91504703fab757f552ae40dd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/09/2022
-ms.locfileid: "66696192"
+ms.lasthandoff: 09/01/2022
+ms.locfileid: "67520331"
 ---
 # <a name="plan-your-microsoft-defender-for-endpoint-deployment"></a>Planee su cuenta de Microsoft Defender para punto de conexión
 

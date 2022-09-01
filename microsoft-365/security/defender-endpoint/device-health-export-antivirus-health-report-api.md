@@ -2,25 +2,26 @@
 title: Informes de estado del antivirus de exportación de dispositivos antivirus de Microsoft Defender Antivirus
 description: Presenta métodos para recuperar los detalles del estado del dispositivo antivirus de Microsoft Defender.
 keywords: apis, graph api, api admitidas, get, device health api, Microsoft Defender para punto de conexión api report api microsoft defender reports api, microsoft defender for endpoint reporting api, windows defender reporting api, defender for endpoint reporting api, windows defender reporting api, windows defender reporting api, windows defender report api
-ms.prod: m365-security
+ms.service: microsoft-365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
 ms.author: v-jweston
 author: jweston-1
 ms.localizationpriority: medium
+ms.date: 09/01/2022
 manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
-MS.technology: mde
+ms.subservice: mde
 ms.custom: api
-ms.openlocfilehash: d47b4d4920fe49a1270a6eecc7c4ef8a661bdc0d
-ms.sourcegitcommit: d09eb780dc41a01796eb8137fbe9267231af6746
+ms.openlocfilehash: 05cc0522d76086cdcc6785d23598e2259b35abe3
+ms.sourcegitcommit: 228fa13973bf7c2d91504703fab757f552ae40dd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/19/2022
-ms.locfileid: "67386932"
+ms.lasthandoff: 09/01/2022
+ms.locfileid: "67521410"
 ---
 # <a name="export-device-antivirus-health-report"></a>Exportar informe de estado del antivirus del dispositivo
 
@@ -48,6 +49,12 @@ Esta API tiene dos métodos para recuperar los detalles de estado del antivirus 
   - Descargue todos los archivos mediante las direcciones URL de descarga y procese los datos como desee.
 
 Los datos recopilados mediante "_respuesta JSON_ o _a través de archivos_" son la instantánea actual del estado actual. No contiene datos históricos. Para recopilar datos históricos, los clientes deben guardar los datos en sus propios almacenamientos de datos. Consulte [Exportación de propiedades y métodos de API de detalles de estado del dispositivo](device-health-api-methods-properties.md).
+
+> [!IMPORTANT]
+>
+> Actualmente, solo la **respuesta JSON de estado del antivirus** está disponible con carácter general. **Antivirus Health API a través de archivos** solo está disponible actualmente en versión preliminar pública.
+>
+> **La consulta personalizada de búsqueda avanzada** solo está disponible actualmente en versión preliminar pública, incluso si las consultas siguen estando visibles.
 
 > [!IMPORTANT]
 >
@@ -206,6 +213,9 @@ Esta es una respuesta de ejemplo:
 ```
 
 ## <a name="2-export-health-reporting-via-files"></a>2 Exportar informes de estado (a través de archivos)
+
+> [!IMPORTANT]
+> La información de esta sección se refiere al producto preliminar que se puede modificar sustancialmente antes de su lanzamiento comercial. Microsoft no otorga garantías, expresas o implícitas, con respecto a la información que aquí se proporciona.
 
 ### <a name="21-api-method-description"></a>2.1 Descripción del método de API
 

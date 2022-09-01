@@ -2,7 +2,7 @@
 title: Obtener software instalado
 description: Recupera una colección de software instalado relacionado con un identificador de dispositivo determinado.
 keywords: apis, graph api, api admitidas, get, list, file, information, software inventory, installed software per device, threat & vulnerability management api, Microsoft Defender para punto de conexión tvm api
-ms.prod: m365-security
+ms.service: microsoft-365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -13,14 +13,14 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
-MS.technology: mde
+ms.subservice: mde
 ms.custom: api
-ms.openlocfilehash: 4af5a39b3e94f29e95c332dce006dec035445d44
-ms.sourcegitcommit: 48a75b40e607542e5fe219b6e75ffc757804a9c6
+ms.openlocfilehash: dfc2ec8f9aa866338e0a615fb5d9adac1288f3ce
+ms.sourcegitcommit: 228fa13973bf7c2d91504703fab757f552ae40dd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/16/2022
-ms.locfileid: "67344819"
+ms.lasthandoff: 09/01/2022
+ms.locfileid: "67520509"
 ---
 # <a name="get-installed-software"></a>Obtener software instalado
 

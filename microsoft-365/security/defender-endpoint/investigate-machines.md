@@ -2,7 +2,7 @@
 title: Investigación de dispositivos en la lista defender para dispositivos de punto de conexión
 description: Investigue los dispositivos afectados revisando alertas, información de conexión de red, agregando etiquetas y grupos de dispositivos y comprobando el estado del servicio.
 keywords: devices, tags, groups, endpoint, alerts queue, alerts, device name, domain, last seen, internal IP, active alerts, threat category, filter, sort, review alerts, network, connection, type, password stealer, ransomware, exploit, threat, low severity, service health
-ms.prod: m365-security
+ms.service: microsoft-365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -13,13 +13,13 @@ manager: dansimp
 audience: ITPro
 ms.collection: m365-security-compliance
 ms.topic: article
-ms.technology: mde
-ms.openlocfilehash: f80f33b76ad5061372351ef0c399adabcc8a8c26
-ms.sourcegitcommit: d09eb780dc41a01796eb8137fbe9267231af6746
+ms.subservice: mde
+ms.openlocfilehash: c1ff7eff6627ed231754dbdf9c31f740e053f154
+ms.sourcegitcommit: 228fa13973bf7c2d91504703fab757f552ae40dd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/19/2022
-ms.locfileid: "67384454"
+ms.lasthandoff: 09/01/2022
+ms.locfileid: "67519894"
 ---
 # <a name="investigate-devices-in-the-microsoft-defender-for-endpoint-devices-list"></a>Investigación de dispositivos en la lista de dispositivos Microsoft Defender para punto de conexión
 

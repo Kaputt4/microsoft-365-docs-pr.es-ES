@@ -2,7 +2,7 @@
 title: Exportación de una evaluación de configuración segura por dispositivo
 description: Devuelve una entrada para cada combinación única de DeviceId, ConfigurationId.
 keywords: api, apis, export assessment, per device assessment, vulnerability assessment report, device vulnerability assessment, device vulnerability report, secure configuration assessment, secure configuration report, software vulnerabilities assessment, software vulnerability report, vulnerability report by machine,
-ms.prod: m365-security
+ms.service: microsoft-365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -13,14 +13,14 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
-ms.technology: mde
+ms.subservice: mde
 ms.custom: api
-ms.openlocfilehash: dfc0ad17a142eebb021f11e78bedddf33538c61e
-ms.sourcegitcommit: 48a75b40e607542e5fe219b6e75ffc757804a9c6
+ms.openlocfilehash: 4b9d8cc479e72e79f9322feb6adca9b8b5bd5eda
+ms.sourcegitcommit: 228fa13973bf7c2d91504703fab757f552ae40dd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/16/2022
-ms.locfileid: "67342853"
+ms.lasthandoff: 09/01/2022
+ms.locfileid: "67520553"
 ---
 # <a name="export-secure-configuration-assessment-per-device"></a>Exportación de una evaluación de configuración segura por dispositivo
 
@@ -222,7 +222,7 @@ GET https://api.securitycenter.microsoft.com/api/machines/SecureConfigurationsAs
 
 Esta respuesta de API contiene la evaluación de configuración segura en los dispositivos expuestos y devuelve una entrada para cada combinación única de DeviceId, ConfigurationId.
 
-#### <a name="212-limitations"></a>2.1.2 Limitaciones
+#### <a name="211-limitations"></a>2.1.1 Limitaciones
 
 Las limitaciones de frecuencia de esta API son 5 llamadas por minuto y 20 llamadas por hora.
 
@@ -232,8 +232,8 @@ Se requiere uno de los permisos siguientes para llamar a esta API. Para obtener 
 
 Tipo de permiso|Permiso|Nombre para mostrar del permiso
 ---|---|---
-Application|Vulnerability.Read.All|\'Leer la información de vulnerabilidad "Administración de amenazas y vulnerabilidades"\'
-Delegado (cuenta profesional o educativa)|Vulnerability.Read|\'Leer la información de vulnerabilidad "Administración de amenazas y vulnerabilidades"\'
+Application|Vulnerability.Read.All|\'Lee la información de vulnerabilidades de Administración de amenazas y vulnerabilidades.\'
+Delegado (cuenta profesional o educativa)|Vulnerability.Read|\'Lee la información de vulnerabilidades de Administración de amenazas y vulnerabilidades.\'
 
 ### <a name="23-url"></a>Dirección URL 2.3
 

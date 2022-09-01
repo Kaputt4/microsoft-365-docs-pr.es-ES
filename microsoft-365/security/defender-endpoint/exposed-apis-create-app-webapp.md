@@ -3,7 +3,7 @@ title: Creación de una aplicación para acceder a Microsoft Defender para punto
 ms.reviewer: ''
 description: Obtenga información sobre cómo diseñar una aplicación web para obtener acceso mediante programación a Microsoft Defender para punto de conexión sin un usuario.
 keywords: api, graph api, api admitidas, actor, alertas, dispositivo, usuario, dominio, ip, archivo, búsqueda avanzada, consulta
-ms.prod: m365-security
+ms.service: microsoft-365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -14,14 +14,14 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
-ms.technology: mde
+ms.subservice: mde
 ms.custom: api
-ms.openlocfilehash: ca448d64b544e7c7a390b243c77a878dd9afc55a
-ms.sourcegitcommit: 217108c59be41b01963a393b4f16d137636fe6a8
+ms.openlocfilehash: bd5c808ffef012f3c2cfefbb1bf664fe0e80babc
+ms.sourcegitcommit: 228fa13973bf7c2d91504703fab757f552ae40dd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/12/2022
-ms.locfileid: "67324503"
+ms.lasthandoff: 09/01/2022
+ms.locfileid: "67520091"
 ---
 # <a name="create-an-app-to-access-microsoft-defender-for-endpoint-without-a-user"></a>Creación de una aplicación para acceder a Microsoft Defender para punto de conexión sin un usuario
 
@@ -190,7 +190,7 @@ Consulte [Obtención de token mediante Python](run-advanced-query-sample-python.
 1. Abra un símbolo del sistema y establezca CLIENT_ID en el identificador de aplicación de Azure.
 1. Establezca CLIENT_SECRET en el secreto de aplicación de Azure.
 1. Establezca TENANT_ID en el identificador de inquilino de Azure del cliente que quiere usar la aplicación para acceder a Defender para punto de conexión.
-1. Ejecute el siguiente comando:
+1. Ejecute el comando siguiente:
 
     ```console
     curl -i -X POST -H "Content-Type:application/x-www-form-urlencoded" -d "grant_type=client_credentials" -d "client_id=%CLIENT_ID%" -d "scope=https://securitycenter.onmicrosoft.com/windowsatpservice/.default" -d "client_secret=%CLIENT_SECRET%" "https://login.microsoftonline.com/%TENANT_ID%/oauth2/v2.0/token" -k

@@ -1,8 +1,8 @@
 ---
-title: Configurar grupos de dispositivos en Jamf Pro
-description: Obtenga información sobre cómo configurar grupos de dispositivos en Jamf Pro para Microsoft Defender para Endpoint en macOS
-keywords: 'device, group, microsoft, defender, Microsoft Defender for Endpoint, mac, installation, deploy, uninstallation, intune, jamfpro, macos, catalina, mojave, high sierra'
-ms.prod: m365-security
+title: Configuración de grupos de dispositivos en Jamf Pro
+description: Aprenda a configurar grupos de dispositivos en Jamf Pro para Microsoft Defender para punto de conexión en macOS
+keywords: device, group, microsoft, defender, Microsoft Defender para punto de conexión, mac, installation, deploy, uninstallation, intune, jamfpro, macos, catalina, mojave, high sierra
+ms.service: microsoft-365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -12,12 +12,17 @@ ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection:
-  - m365-security-compliance
+- m365-security-compliance
 ms.topic: conceptual
-ms.technology: mde
+ms.subservice: mde
+ms.openlocfilehash: 1f72dec9dffd6675828cc365588e7dc8e33c7ed6
+ms.sourcegitcommit: 228fa13973bf7c2d91504703fab757f552ae40dd
+ms.translationtype: MT
+ms.contentlocale: es-ES
+ms.lasthandoff: 09/01/2022
+ms.locfileid: "67521255"
 ---
-
-# <a name="set-up-microsoft-defender-for-endpoint-on-macos-device-groups-in-jamf-pro"></a>Configurar Microsoft Defender para endpoint en grupos de dispositivos macOS en Jamf Pro
+# <a name="set-up-microsoft-defender-for-endpoint-on-macos-device-groups-in-jamf-pro"></a>Configuración de Microsoft Defender para punto de conexión en grupos de dispositivos macOS en Jamf Pro
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
@@ -26,23 +31,23 @@ ms.technology: mde
 - [Microsoft Defender para punto de conexión Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
-> ¿Desea experimentar Defender for Endpoint? [Regístrese para obtener una prueba gratuita.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-investigateip-abovefoldlink)
+> ¿Quiere experimentar Defender para punto de conexión? [Regístrese para obtener una prueba gratuita.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-investigateip-abovefoldlink)
 
-Configure los grupos de dispositivos de forma similar a la organización de directivas de grupo unirse (UNIDADES), la colección de dispositivos de Microsoft Endpoint Configuration Manager y los grupos de dispositivos de Intune.
+Configure los grupos de dispositivos de forma similar a La organización de la directiva de grupo une (unidades organizativas), la recopilación de dispositivos de Microsoft Endpoint Configuration Manager y los grupos de dispositivos de Intune.
 
 1. Vaya a **Grupos de equipos estáticos**.
 
 2. Seleccione **Nuevo**. 
 
-   :::image type="content" source="images/jamf-pro-static-group.png" alt-text="La página Jamf Pro1" lightbox="images/jamf-pro-static-group.png":::
+   :::image type="content" source="images/jamf-pro-static-group.png" alt-text="Página Jamf Pro1" lightbox="images/jamf-pro-static-group.png":::
 
 3. Proporcione un nombre para mostrar y seleccione **Guardar**.
 
-   :::image type="content" source="images/jamfpro-machine-group.png" alt-text="La página Jamf Pro2" lightbox="images/jamfpro-machine-group.png":::
+   :::image type="content" source="images/jamfpro-machine-group.png" alt-text="Página Jamf Pro2" lightbox="images/jamfpro-machine-group.png":::
 
-4. Ahora verá el grupo de máquinas **de Contoso en** **Grupos de equipos estáticos**.
+4. Ahora verá el **grupo de máquinas de Contoso** en **Grupos de equipos estáticos**.
 
-   :::image type="content" source="images/contoso-machine-group.png" alt-text="La página Jamf Pro3" lightbox="images/contoso-machine-group.png":::
+   :::image type="content" source="images/contoso-machine-group.png" alt-text="Página Jamf Pro3" lightbox="images/contoso-machine-group.png":::
 
 ## <a name="next-step"></a>Paso siguiente
-- [Configurar Microsoft Defender para endpoint en directivas de macOS en Jamf Pro](mac-jamfpro-policies.md)
+- [Configuración de Microsoft Defender para punto de conexión en directivas de macOS en Jamf Pro](mac-jamfpro-policies.md)

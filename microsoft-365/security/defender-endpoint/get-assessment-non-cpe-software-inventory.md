@@ -2,7 +2,7 @@
 title: Exportación de la evaluación del inventario de software que no es de código de producto por dispositivo
 description: Devuelve una tabla con una entrada para cada combinación única de DeviceId, SoftwareVendor, SoftwareName, SoftwareVersion para software que no tiene una enumeración common platform (CPE)
 keywords: api, apis, export assessment, per device assessment, vulnerability assessment report, device vulnerability assessment, device vulnerability report, secure configuration assessment, secure configuration report, software vulnerabilities assessment, software vulnerability report, vulnerability report by machine,
-ms.prod: m365-security
+ms.service: microsoft-365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -13,14 +13,14 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
-ms.technology: mde
+ms.subservice: mde
 ms.custom: api
-ms.openlocfilehash: 223ca8ab9eac14b456c62dad3d644ad067092766
-ms.sourcegitcommit: 48a75b40e607542e5fe219b6e75ffc757804a9c6
+ms.openlocfilehash: 9468438b6d52842986521a1de311e32a7b0fed19
+ms.sourcegitcommit: 228fa13973bf7c2d91504703fab757f552ae40dd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/16/2022
-ms.locfileid: "67344552"
+ms.lasthandoff: 09/01/2022
+ms.locfileid: "67520566"
 ---
 # <a name="export-non-product-code-software-inventory-assessment-per-device"></a>Exportación de la evaluación del inventario de software que no es de código de producto por dispositivo
 
@@ -69,8 +69,8 @@ Se requiere uno de los permisos siguientes para llamar a esta API. Para obtener 
 
 Tipo de permiso|Permiso|Nombre para mostrar del permiso
 ---|---|---
-Application|Software.Read.All|\'Lee la información de vulnerabilidades de Administración de amenazas y vulnerabilidades.\'
-Delegado (cuenta profesional o educativa)|Software.Read|\'Lee la información de vulnerabilidades de Administración de amenazas y vulnerabilidades.\'
+Application|Software.Read.All|\'Leer información de software de administración de amenazas y vulnerabilidades\'
+Delegado (cuenta profesional o educativa)|Software.Read|\'Leer información de software de administración de amenazas y vulnerabilidades\'
 
 ### <a name="13-url"></a>Dirección URL 1.3
 
@@ -174,8 +174,8 @@ Se requiere uno de los permisos siguientes para llamar a esta API. Para obtener 
 
 Tipo de permiso|Permiso|Nombre para mostrar del permiso
 ---|---|---
-Application|Software.Read.All|\'Lee la información de vulnerabilidades de Administración de amenazas y vulnerabilidades.\'
-Delegado (cuenta profesional o educativa)|Software.Read|\'Lee la información de vulnerabilidades de Administración de amenazas y vulnerabilidades.\'
+Application|Software.Read.All|\'Leer información de software de administración de amenazas y vulnerabilidades\'
+Delegado (cuenta profesional o educativa)|Software.Read|\'Leer información de software de administración de amenazas y vulnerabilidades\'
 
 ### <a name="23-url"></a>Dirección URL 2.3
 

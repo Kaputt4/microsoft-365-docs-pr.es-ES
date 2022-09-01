@@ -2,7 +2,7 @@
 title: Obtener la API de máquinas relacionadas con el dominio
 description: Obtenga información sobre cómo usar la API Get domain-related machines (Obtener máquinas relacionadas con el dominio) para obtener máquinas que se comunicaron con o desde un dominio en Microsoft Defender para punto de conexión.
 keywords: apis, graph api, api admitidas, get, domain, related, devices
-ms.prod: m365-security
+ms.service: microsoft-365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -13,14 +13,14 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
-ms.technology: mde
+ms.subservice: mde
 ms.custom: api
-ms.openlocfilehash: 5f81a9783529a59e240a9ac8c88ae265c409bb9b
-ms.sourcegitcommit: 217108c59be41b01963a393b4f16d137636fe6a8
+ms.openlocfilehash: 5c68c99195f54bfdf7315b95029d6bfa37a6c19a
+ms.sourcegitcommit: 228fa13973bf7c2d91504703fab757f552ae40dd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/12/2022
-ms.locfileid: "67324284"
+ms.lasthandoff: 09/01/2022
+ms.locfileid: "67520531"
 ---
 # <a name="get-domain-related-machines-api"></a>Obtener la API de máquinas relacionadas con el dominio
 

@@ -1,10 +1,10 @@
 ---
-title: Guía de búsqueda avanzada con la API de PowerShell
+title: Búsqueda avanzada con la guía de la API de PowerShell
 ms.reviewer: ''
 description: Use estos ejemplos de código para consultar varias API de Microsoft Defender para punto de conexión.
 keywords: apis, api admitidas, búsqueda avanzada, consulta
 search.product: eADQiWindows 10XVcnh
-ms.prod: m365-security
+ms.service: microsoft-365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -16,14 +16,14 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.date: 04/27/2022
-ms.technology: mde
+ms.subservice: mde
 ms.custom: api
-ms.openlocfilehash: c23bf15a188527b2b4c24270fbc1312537da4154
-ms.sourcegitcommit: f30616b90b382409f53a056b7a6c8be078e6866f
+ms.openlocfilehash: cad44fdbf07b784f6f18edb4d5eb59cd7cf46d80
+ms.sourcegitcommit: 228fa13973bf7c2d91504703fab757f552ae40dd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/03/2022
-ms.locfileid: "65174879"
+ms.lasthandoff: 09/01/2022
+ms.locfileid: "67520069"
 ---
 # <a name="microsoft-defender-for-endpoint-apis-using-powershell"></a>API de Microsoft Defender para punto de conexión con PowerShell
 
@@ -68,7 +68,7 @@ Para obtener más información, consulte [la documentación de PowerShell](/powe
 Ejecute lo siguiente:
 
 - $tenantId: identificador del inquilino en nombre del que desea ejecutar la consulta (es decir, la consulta se ejecutará en los datos de este inquilino)
-- $appId: identificador de la aplicación de AAD (la aplicación debe tener el permiso "Ejecutar consultas avanzadas" en Defender para punto de conexión)
+- $appId: Id. de la aplicación de AAD (la aplicación debe tener el permiso "Ejecutar consultas avanzadas" para Defender para punto de conexión)
 - $appSecret: Secreto de la aplicación de Azure AD
 
 - $suspiciousUrl: la dirección URL
@@ -135,7 +135,7 @@ $response
 ```
 
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 - [API de Microsoft Defender para punto de conexión](apis-intro.md)
 - [API de Búsqueda avanzada de amenazas](run-advanced-query-api.md)
 - [Búsqueda avanzada de amenazas con Python](run-advanced-query-sample-python.md)

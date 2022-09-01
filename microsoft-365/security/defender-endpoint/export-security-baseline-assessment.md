@@ -2,7 +2,7 @@
 title: Métodos y propiedades de evaluación de línea base de seguridad por dispositivo
 description: Proporciona información sobre las API de líneas base de seguridad que extraen datos "Administración de vulnerabilidades de Microsoft Defender". Hay diferentes llamadas API para obtener diferentes tipos de datos. En general, cada llamada API contiene los datos necesarios para los dispositivos de la organización.
 keywords: api, apis, export assessment, per device assessment, per machine assessment, vulnerability assessment report, device vulnerability assessment, device vulnerability report, secure configuration assessment, secure configuration report, software vulnerabilities assessment, software vulnerability report, vulnerability report by machine,
-ms.prod: m365-security
+ms.service: microsoft-365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -13,14 +13,14 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
-ms.technology: mde
+ms.subservice: mde
 ms.custom: api
-ms.openlocfilehash: fb7dd6ff2f752fdbd8eff644ba728391d1f1dfa0
-ms.sourcegitcommit: 48a75b40e607542e5fe219b6e75ffc757804a9c6
+ms.openlocfilehash: ffae67db503dba7cd23fc78d6180c2d003c28d30
+ms.sourcegitcommit: 228fa13973bf7c2d91504703fab757f552ae40dd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/16/2022
-ms.locfileid: "67343359"
+ms.lasthandoff: 09/01/2022
+ms.locfileid: "67520265"
 ---
 # <a name="export-security-baselines-assessment-per-device"></a>Exportación de la evaluación de líneas base de seguridad por dispositivo
 

@@ -2,7 +2,7 @@
 title: Exportación de métodos de evaluación y propiedades por dispositivo
 description: Proporciona información sobre las API que extraen datos "Administración de vulnerabilidades de Microsoft Defender". Hay diferentes llamadas API para obtener diferentes tipos de datos. En general, cada llamada API contiene los datos necesarios para los dispositivos de la organización.
 keywords: api, apis, export assessment, per device assessment, per machine assessment, vulnerability assessment report, device vulnerability assessment, device vulnerability report, secure configuration assessment, secure configuration report, software vulnerabilities assessment, software vulnerability report, vulnerability report by machine,
-ms.prod: m365-security
+ms.service: microsoft-365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -13,14 +13,14 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
-ms.technology: mde
+ms.subservice: mde
 ms.custom: api
-ms.openlocfilehash: a6a542f07e77a35661cab10b64133f6cfa2a26ed
-ms.sourcegitcommit: 7374c7b013890744d74e5214f7f8d69ca7874466
+ms.openlocfilehash: 785be9671e4ad10fd7b6dbde85e8f2805d3621a8
+ms.sourcegitcommit: 228fa13973bf7c2d91504703fab757f552ae40dd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/23/2022
-ms.locfileid: "67408361"
+ms.lasthandoff: 09/01/2022
+ms.locfileid: "67516354"
 ---
 # <a name="export-assessment-methods-and-properties-per-device"></a>Exportación de métodos de evaluación y propiedades por dispositivo
 

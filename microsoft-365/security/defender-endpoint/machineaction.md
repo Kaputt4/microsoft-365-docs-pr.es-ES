@@ -1,8 +1,8 @@
 ---
-title: tipo de recurso machineAction
-description: Obtenga información sobre los métodos y propiedades del tipo de recurso MachineAction en Microsoft Defender para endpoint.
+title: Tipo de recurso machineAction
+description: Obtenga información sobre los métodos y propiedades del tipo de recurso MachineAction en Microsoft Defender para punto de conexión.
 keywords: apis, api admitidas, get, machineaction, recent
-ms.prod: m365-security
+ms.service: microsoft-365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -13,13 +13,13 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
-ms.technology: mde
-ms.openlocfilehash: 625170f0e589ece6f6277dc8445f3af7bef11837
-ms.sourcegitcommit: 348f3998a029a876a9dcc031f808e9e350804f22
+ms.subservice: mde
+ms.openlocfilehash: fc651603a93ad4fe9d05265eed53b5a66d5f4e71
+ms.sourcegitcommit: 228fa13973bf7c2d91504703fab757f552ae40dd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/03/2021
-ms.locfileid: "61301863"
+ms.lasthandoff: 09/01/2022
+ms.locfileid: "67516530"
 ---
 # <a name="machineaction-resource-type"></a>Tipo de recurso MachineAction
 
@@ -38,23 +38,23 @@ ms.locfileid: "61301863"
 [!include[Improve request performance](../../includes/improve-request-performance.md)]
 
 
-- Para obtener más información, vea [Response Actions](respond-machine-alerts.md).
+- Para obtener más información, vea [Acciones de respuesta](respond-machine-alerts.md).
 
-|Método|Tipo de valor devuelto|Description|
+|Método|Tipo de valor devuelto|Descripción|
 |---|---|---|
-|[Enumerar MachineActions](get-machineactions-collection.md)|[Acción de máquina](machineaction.md)|Enumerar [entidades de acción](machineaction.md) de máquina.|
-|[Obtener MachineAction](get-machineaction-object.md)|[Acción de máquina](machineaction.md)|Obtener una sola [entidad De acción de](machineaction.md) máquina.|
-|[Recopilar paquete de investigación](collect-investigation-package.md)|[Acción de máquina](machineaction.md)|Recopilar el paquete de investigación de una [máquina](machine.md).|
-|[Obtener identificador URI de SAS de paquete de investigación](get-package-sas-uri.md)|[Acción de máquina](machineaction.md)|Obtener URI para descargar el paquete de investigación.|
-|[Aislar máquina](isolate-machine.md)|[Acción de máquina](machineaction.md)|[Aísle el equipo](machine.md) de la red.|
-|[Liberar máquina del aislamiento](unisolate-machine.md)|[Acción de máquina](machineaction.md)|Libere [el equipo](machine.md) de Aislamiento.|
+|[Enumerar MachineActions](get-machineactions-collection.md)|[Acción de máquina](machineaction.md)|Enumerar entidades [de acción de máquina](machineaction.md) .|
+|[Obtener MachineAction](get-machineaction-object.md)|[Acción de máquina](machineaction.md)|Obtenga una sola entidad [de acción de máquina](machineaction.md) .|
+|[Recopilar paquete de investigación](collect-investigation-package.md)|[Acción de máquina](machineaction.md)|Recopile el paquete de investigación de una [máquina](machine.md).|
+|[Obtener identificador URI de SAS de paquete de investigación](get-package-sas-uri.md)|[Acción de máquina](machineaction.md)|Obtenga el URI para descargar el paquete de investigación.|
+|[Aislar máquina](isolate-machine.md)|[Acción de máquina](machineaction.md)|Aísle la [máquina](machine.md) de la red.|
+|[Liberar máquina del aislamiento](unisolate-machine.md)|[Acción de máquina](machineaction.md)|Liberar [la máquina](machine.md) del aislamiento.|
 |[Restringir ejecución de aplicación](restrict-code-execution.md)|[Acción de máquina](machineaction.md)|Restringir la ejecución de la aplicación.|
-|[Quitar restricción de aplicación](unrestrict-code-execution.md)|[Acción de máquina](machineaction.md)|Quitar la restricción de ejecución de aplicaciones.|
+|[Quitar restricción de aplicación](unrestrict-code-execution.md)|[Acción de máquina](machineaction.md)|Quite la restricción de ejecución de la aplicación.|
 |[Ejecutar examen antivirus](run-av-scan.md)|[Acción de máquina](machineaction.md)|Ejecute un examen antivirus con Windows Defender (cuando corresponda).|
-|[Retirar máquina](offboard-machine-api.md)|[Acción de máquina](machineaction.md)|Equipo fuera [de la máquina](machine.md) de Microsoft Defender para endpoint.|
+|[Retirar máquina](offboard-machine-api.md)|[Acción de máquina](machineaction.md)|Offboard [machine](machine.md) from Microsoft Defender para punto de conexión.|
 |[Detener y poner en cuarentena un archivo](stop-and-quarantine-file.md)|[Acción de máquina](machineaction.md)|Detenga la ejecución de un archivo en un equipo y elimínelo.|
-|[Ejecutar respuesta directa](run-live-response.md)|[Acción de máquina](machineaction.md)|Ejecuta una secuencia de comandos de respuesta en directo en un dispositivo|
-|[Obtener resultado de respuesta en directo](get-live-response-result.md)|Entidad URL|Recupera el vínculo de descarga de resultados del comando de respuesta en directo específico por su índice.|
+|[Ejecutar respuesta directa](run-live-response.md)|[Acción de máquina](machineaction.md)|Ejecuta una secuencia de comandos de respuesta dinámica en un dispositivo.|
+|[Obtener resultado de respuesta en directo](get-live-response-result.md)|Entidad URL|Recupera el vínculo de descarga de resultados del comando de respuesta dinámica específico por su índice.|
 |[Cancelar acción de máquina](cancel-machine-action.md)|[Acción de máquina](machineaction.md)|Cancelar una acción de máquina activa.|
 
 <br>
@@ -63,24 +63,24 @@ ms.locfileid: "61301863"
 
 |Propiedad|Tipo|Descripción|
 |---|---|---|
-|Id.|Guid|Identidad de la [entidad Acción de](machineaction.md) máquina.|
+|Id.|Guid|Identidad de la entidad [Machine Action](machineaction.md) .|
 |type|Enum|Tipo de la acción. Los valores posibles son: "RunAntiVirusScan", "Offboard", "Live Response", "CollectInvestigationPackage", "Isolate", "Unisolate", "StopAndQuarantineFile", "RestrictCodeExecution" y "UnrestrictCodeExecution".|
-|scope|cadena|Ámbito de la acción. "Completo" o "Selectivo" para aislamiento, "Rápido" o "Completo" para el examen antivirus.|
-|solicitante|String|Identidad de la persona que ejecutó la acción.|
-|externalID|Cadena|Id que el cliente puede enviar en la solicitud de correlación personalizada.|
-|requestSource|cadena|Nombre del usuario o aplicación que envió la acción.|
-|comandos|matriz|Comandos que se ejecutarán. Los valores permitidos son PutFile, RunScript, GetFile.|
+|scope|cadena|Ámbito de la acción. "Full" o "Selective" for Isolation, "Quick" o "Full" para el examen antivirus.|
+|Solicitante|Cadena|Identidad de la persona que ejecutó la acción.|
+|externalID|Cadena|Identificador que el cliente puede enviar en la solicitud de correlación personalizada.|
+|requestSource|string|Nombre del usuario o aplicación que envió la acción.|
+|Comandos |matriz|Comandos que se van a ejecutar. Los valores permitidos son PutFile, RunScript y GetFile.|
 |cancellationRequestor|Cadena|Identidad de la persona que canceló la acción.|
-|requestorComment|String|Comentario que se escribió al emitir la acción.|
-|cancellationComment|String|Comentario que se escribió al cancelar la acción.|
+|requestorComment|Cadena|Comentario que se escribió al emitir la acción.|
+|cancellationComment|Cadena|Comentario que se escribió al cancelar la acción.|
 |status|Enum|Estado actual del comando. Los valores posibles son: "Pending", "InProgress", "Succeeded", "Failed", "TimeOut" y "Cancelled".|
-|machineId|Cadena|Id. de [la máquina](machine.md) en la que se ejecutó la acción.|
-|computerDnsName|String|Nombre de la [máquina](machine.md) en la que se ejecutó la acción.|
+|machineId|Cadena|Identificador de la [máquina](machine.md) en la que se ejecutó la acción.|
+|computerDnsName|Cadena|Nombre de la [máquina](machine.md) en la que se ejecutó la acción.|
 |creationDateTimeUtc|DateTimeOffset|Fecha y hora en que se creó la acción.|
 |cancellationDateTimeUtc|DateTimeOffset|Fecha y hora en que se canceló la acción.|
 |lastUpdateDateTimeUtc|DateTimeOffset|La última fecha y hora en que se actualizó el estado de la acción.|
-|title|Cadena|Título de acción de máquina.|
-|relatedFileInfo|Clase|Contiene dos propiedades. string `fileIdentifier` , `fileIdentifierType` Enumerar con los valores posibles: "Sha1", "Sha256" y "Md5".|
+|title|Cadena|Título de la acción de la máquina.|
+|relatedFileInfo|Clase|Contiene dos propiedades. string `fileIdentifier`, Enum `fileIdentifierType` con los valores posibles: "Sha1", "Sha256" y "Md5".|
 
 ## <a name="json-representation"></a>Representación json
 

@@ -3,7 +3,7 @@ title: Introducción a la administración y las API
 ms.reviewer: ''
 description: Obtenga información sobre las herramientas de administración y las categorías de API en Microsoft Defender para punto de conexión
 keywords: onboarding, api, siem, rbac, access, portal, integration, investigation, response, entities, entity, user context, application context, streaming
-ms.prod: m365-security
+ms.service: microsoft-365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -14,14 +14,14 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
-ms.technology: mde
+ms.subservice: mde
 ms.custom: api
-ms.openlocfilehash: 493f83c3ba2e607a09d89e3570cbd4b0f65f6bfb
-ms.sourcegitcommit: 217108c59be41b01963a393b4f16d137636fe6a8
+ms.openlocfilehash: 212a21accc314cc9ff235138eeb2784521a32502
+ms.sourcegitcommit: 228fa13973bf7c2d91504703fab757f552ae40dd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/12/2022
-ms.locfileid: "67327253"
+ms.lasthandoff: 09/01/2022
+ms.locfileid: "67516508"
 ---
 # <a name="overview-of-management-and-apis"></a>Introducción a la administración y las API
 

@@ -3,7 +3,7 @@ title: Implementación de Microsoft Defender para punto de conexión en Linux co
 ms.reviewer: ''
 description: Describe cómo implementar Microsoft Defender para punto de conexión en Linux mediante Ansible.
 keywords: microsoft, defender, Microsoft Defender para punto de conexión, linux, installation, deploy, uninstallation, puppet, ansible, linux, redhat, ubuntu, debian, sles, suse, centos, fedora, amazon linux 2
-ms.prod: m365-security
+ms.service: microsoft-365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -15,13 +15,13 @@ audience: ITPro
 ms.collection:
 - m365-security-compliance
 ms.topic: conceptual
-ms.technology: mde
-ms.openlocfilehash: e35510960818472ccf82ffab0c3cb3016f49907a
-ms.sourcegitcommit: d7193ee954c01c4172e228d25b941026c8d92d30
+ms.subservice: mde
+ms.openlocfilehash: a35c50a941c7398c2c0722233627fe76f36f6afe
+ms.sourcegitcommit: 228fa13973bf7c2d91504703fab757f552ae40dd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/02/2022
-ms.locfileid: "67175166"
+ms.lasthandoff: 09/01/2022
+ms.locfileid: "67522089"
 ---
 # <a name="deploy-microsoft-defender-for-endpoint-on-linux-with-ansible"></a>Implementación de Microsoft Defender para punto de conexión en Linux con Ansible
 
@@ -50,7 +50,7 @@ Además, para la implementación de Ansible, debe estar familiarizado con las ta
 - Ansible debe instalarse en al menos un equipo (Ansible llama a este nodo de control).
 - SSH debe configurarse para una cuenta de administrador entre el nodo de control y todos los nodos administrados (dispositivos que tendrán Defender para punto de conexión instalado en ellos) y se recomienda configurarlo con autenticación de clave pública.
 - El software siguiente debe instalarse en todos los nodos administrados:
-  - rizo
+  - Enrollamiento
   - python-apt
 
 - Todos los nodos administrados deben aparecer en el siguiente formato en el archivo o en el `/etc/ansible/hosts` archivo correspondiente:

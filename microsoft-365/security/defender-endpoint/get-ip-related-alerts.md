@@ -2,7 +2,7 @@
 title: Obtención de la API de alertas relacionadas con IP
 description: Recuperar una colección de alertas relacionadas con una dirección IP determinada mediante Microsoft Defender para punto de conexión
 keywords: apis, graph api, api admitidas, get, ip, related, alerts
-ms.prod: m365-security
+ms.service: microsoft-365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -13,14 +13,14 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
-ms.technology: mde
+ms.subservice: mde
 ms.custom: api
-ms.openlocfilehash: 71f8a51e97e8bdfa4c68fde86f37aafa80c994b9
-ms.sourcegitcommit: 217108c59be41b01963a393b4f16d137636fe6a8
+ms.openlocfilehash: 62a07c08d3b3e86b2b2e501deb2e77cbdbff2d03
+ms.sourcegitcommit: 228fa13973bf7c2d91504703fab757f552ae40dd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/12/2022
-ms.locfileid: "67325977"
+ms.lasthandoff: 09/01/2022
+ms.locfileid: "67516014"
 ---
 # <a name="get-ip-related-alerts-api"></a>Obtención de la API de alertas relacionadas con IP
 

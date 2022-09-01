@@ -3,7 +3,7 @@ title: Implementación de Microsoft Defender para punto de conexión en Linux co
 ms.reviewer: ''
 description: Describe cómo implementar Microsoft Defender para punto de conexión en Linux mediante Puppet.
 keywords: microsoft, defender, Microsoft Defender para punto de conexión, linux, installation, deploy, uninstallation, puppet, ansible, linux, redhat, ubuntu, debian, sles, suse, centos, fedora, amazon linux 2
-ms.prod: m365-security
+ms.service: microsoft-365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -15,13 +15,13 @@ audience: ITPro
 ms.collection:
 - m365-security-compliance
 ms.topic: conceptual
-ms.technology: mde
-ms.openlocfilehash: 9fe38f8bec7ca99d9c1828126382c8f70a22fa3a
-ms.sourcegitcommit: 133bf9097785309da45df6f374a712a48b33f8e9
+ms.subservice: mde
+ms.openlocfilehash: 24f752a28a20c80f0980d44d6a0dbac87ce1baea
+ms.sourcegitcommit: 228fa13973bf7c2d91504703fab757f552ae40dd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/10/2022
-ms.locfileid: "66014612"
+ms.lasthandoff: 09/01/2022
+ms.locfileid: "67522067"
 ---
 # <a name="deploy-microsoft-defender-for-endpoint-on-linux-with-puppet"></a>Implementación de Microsoft Defender para punto de conexión en Linux con Puppet
 
@@ -51,7 +51,7 @@ Además, para la implementación de Puppet, debe estar familiarizado con las tar
 
 Descargue el paquete de incorporación desde Microsoft 365 Defender portal:
 
-1. En Microsoft 365 Defender portal, vaya a **Configuración > Puntos de conexión > Administración de dispositivos > Incorporación**.
+1. En Microsoft 365 Defender portal, vaya a **Configuración > puntos de conexión > Administración de dispositivos > Incorporación**.
 2. En el primer menú desplegable, seleccione **Servidor Linux** como sistema operativo. En el segundo menú desplegable, seleccione **La herramienta de administración de configuración de Linux preferida** como método de implementación.
 3. Seleccione **Descargar el paquete de incorporación** Guarde el archivo como WindowsDefenderATPOnboardingPackage.zip.
 

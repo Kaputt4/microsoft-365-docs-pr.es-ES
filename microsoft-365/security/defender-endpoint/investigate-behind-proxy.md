@@ -1,8 +1,8 @@
 ---
 title: Investigar eventos de conexión que ocurren tras los servidores proxy de reenvío
-description: Obtenga información sobre cómo usar la supervisión avanzada del nivel HTTP a través de la protección de red en Microsoft Defender para endpoint, que muestra un destino real, en lugar de un proxy.
-keywords: proxy, protección de red, proxy de reenvío, eventos de red, auditoría, bloqueo, nombres de dominio, dominio
-ms.prod: m365-security
+description: Aprenda a usar la supervisión avanzada de nivel HTTP a través de la protección de red en Microsoft Defender para punto de conexión, que expone un destino real, en lugar de un proxy.
+keywords: proxy, protección de red, proxy de reenvío, eventos de red, auditoría, bloque, nombres de dominio, dominio
+ms.service: microsoft-365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -14,13 +14,13 @@ audience: ITPro
 ms.collection:
 - m365-security-compliance
 ms.topic: article
-ms.technology: mde
-ms.openlocfilehash: 580f41c24d6d78fb9e5ac7e20eb80e6ae78a505b
-ms.sourcegitcommit: b0c3ffd7ddee9b30fab85047a71a31483b5c649b
+ms.subservice: mde
+ms.openlocfilehash: b34e9cfcbebee2196981e11b5a59a897aeca8cb1
+ms.sourcegitcommit: 228fa13973bf7c2d91504703fab757f552ae40dd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/25/2022
-ms.locfileid: "64469809"
+ms.lasthandoff: 09/01/2022
+ms.locfileid: "67514369"
 ---
 # <a name="investigate-connection-events-that-occur-behind-forward-proxies"></a>Investigar eventos de conexión que ocurren tras los servidores proxy de reenvío
 
@@ -30,47 +30,47 @@ ms.locfileid: "64469809"
 - [Microsoft Defender para punto de conexión Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
-> ¿Desea experimentar Defender for Endpoint? [Regístrese para obtener una prueba gratuita.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-investigatemachines-abovefoldlink)
+> ¿Quiere experimentar Defender para punto de conexión? [Regístrese para obtener una prueba gratuita.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-investigatemachines-abovefoldlink)
 
-Defender for Endpoint admite la supervisión de conexiones de red desde diferentes niveles de la pila de red. Un caso difícil es cuando la red usa un proxy de reenvío como puerta de enlace a Internet.
+Defender for Endpoint admite la supervisión de conexiones de red desde distintos niveles de la pila de red. Un caso difícil es cuando la red usa un proxy de reenvío como puerta de enlace a Internet.
 
-El proxy actúa como si fuera el extremo de destino. En estos casos, los monitores de conexión de red simples auditarán las conexiones con el proxy correcto pero con un valor de investigación inferior.
+El proxy actúa como si fuera el punto de conexión de destino. En estos casos, los monitores de conexión de red simples auditarán las conexiones con el proxy que son correctas pero tienen un valor de investigación inferior.
 
-Defender for Endpoint admite la supervisión avanzada del nivel HTTP a través de la protección de red. Cuando está activado, se muestra un nuevo tipo de evento que expone los nombres de dominio de destino reales.
+Defender for Endpoint admite la supervisión avanzada de nivel HTTP a través de la protección de red. Cuando está activado, aparece un nuevo tipo de evento que expone los nombres de dominio de destino reales.
 
-## <a name="use-network-protection-to-monitor-network-connection-behind-a-firewall"></a>Usar la protección de red para supervisar la conexión de red detrás de un firewall
+## <a name="use-network-protection-to-monitor-network-connection-behind-a-firewall"></a>Uso de la protección de red para supervisar la conexión de red detrás de un firewall
 
-La supervisión de la conexión de red detrás de un proxy de reenvío es posible debido a otros eventos de red que se originan a partir de la protección de red. Para verlos en una escala de tiempo del dispositivo, activa la protección de red (como mínimo en modo auditoría).
+La supervisión de la conexión de red detrás de un proxy de reenvío es posible debido a otros eventos de red que se originan en la protección de red. Para verlos en una escala de tiempo del dispositivo, active la protección de red (como mínimo en modo de auditoría).
 
-La protección de red se puede controlar con los siguientes modos:
+La protección de red se puede controlar mediante los modos siguientes:
 
-- **Bloquear**: se bloqueará la conexión de usuarios o aplicaciones a dominios peligrosos. Podrás ver esta actividad en Microsoft 365 Defender.
-- **Auditoría**: los usuarios o aplicaciones no se bloquearán para que no se conecten a dominios peligrosos. Sin embargo, seguirás teniendo esta actividad en Microsoft 365 Defender.
+- **Bloquear**: los usuarios o aplicaciones no podrán conectarse a dominios peligrosos. Podrá ver esta actividad en Microsoft 365 Defender.
+- **Auditoría**: no se bloqueará la conexión de usuarios o aplicaciones a dominios peligrosos. Sin embargo, seguirá viendo esta actividad en Microsoft 365 Defender.
 
 
-Si desactivas la protección de red, los usuarios o las aplicaciones no se bloquearán para que no se conecten a dominios peligrosos. No verá ninguna actividad de red en Microsoft 365 Defender.
+Si desactiva la protección de red, no se bloqueará la conexión de usuarios o aplicaciones a dominios peligrosos. No verá ninguna actividad de red en Microsoft 365 Defender.
 
 Si no lo configura, el bloqueo de red se desactivará de forma predeterminada.
 
-Para obtener más información, vea [Habilitar la protección de red](enable-network-protection.md).
+Para obtener más información, consulte [Habilitación de la protección de red](enable-network-protection.md).
 
-## <a name="investigation-impact"></a>Impacto de la investigación
+## <a name="investigation-impact"></a>Impacto en la investigación
 
-Cuando la protección de red esté activada, verás que en la escala de tiempo de un dispositivo la dirección IP seguirá representando el proxy, mientras que la dirección de destino real aparece.
+Cuando se activa la protección de red, verá que, en la escala de tiempo de un dispositivo, la dirección IP seguirá representando el proxy, mientras que la dirección de destino real aparece.
 
-:::image type="content" source="images/atp-proxy-investigation.png" alt-text="Los eventos de red en la escala de tiempo del dispositivo" lightbox="images/atp-proxy-investigation.png":::
+:::image type="content" source="images/atp-proxy-investigation.png" alt-text="Eventos de red en la escala de tiempo del dispositivo" lightbox="images/atp-proxy-investigation.png":::
 
-Otros eventos desencadenados por la capa de protección de red ahora están disponibles para que los nombres de dominio reales se desencadene incluso detrás de un proxy.
+Otros eventos desencadenados por la capa de protección de red ahora están disponibles para exponer los nombres de dominio reales incluso detrás de un proxy.
 
 Información del evento:
 
-:::image type="content" source="images/atp-proxy-investigation-event.png" alt-text="Las direcciones URL de un solo evento de red" lightbox="images/atp-proxy-investigation-event.png":::
+:::image type="content" source="images/atp-proxy-investigation-event.png" alt-text="Direcciones URL de un único evento de red" lightbox="images/atp-proxy-investigation-event.png":::
 
-## <a name="hunt-for-connection-events-using-advanced-hunting"></a>Buscar eventos de conexión mediante la búsqueda avanzada
+## <a name="hunt-for-connection-events-using-advanced-hunting"></a>Búsqueda de eventos de conexión mediante la búsqueda avanzada
 
-Todos los nuevos eventos de conexión están disponibles para que también se desatrase de la búsqueda avanzada. Dado que estos eventos son eventos de conexión, puede encontrarlos en la tabla DeviceNetworkEvents en el tipo `ConnecionSuccess` de acción.
+Todos los nuevos eventos de conexión están disponibles para que usted pueda buscar a través de la búsqueda avanzada también. Dado que estos eventos son eventos de conexión, puede encontrarlos en la tabla DeviceNetworkEvents en el `ConnecionSuccess` tipo de acción.
 
-Con esta consulta sencilla se mostrarán todos los eventos relevantes:
+El uso de esta consulta simple le mostrará todos los eventos pertinentes:
 
 ```console
 DeviceNetworkEvents
@@ -82,7 +82,7 @@ DeviceNetworkEvents
 
 También puede filtrar los eventos relacionados con la conexión con el propio proxy.
 
-Use la siguiente consulta para filtrar las conexiones al proxy:
+Use la consulta siguiente para filtrar las conexiones al proxy:
 
 ```console
 DeviceNetworkEvents
@@ -92,4 +92,4 @@ DeviceNetworkEvents
 
 ## <a name="related-topics"></a>Temas relacionados
 
-- [Aplicación de protección de red con GP: CSP de directiva](/windows/client-management/mdm/policy-csp-defender#defender-enablenetworkprotection)
+- [Aplicación de la protección de red con GP: CSP de directiva](/windows/client-management/mdm/policy-csp-defender#defender-enablenetworkprotection)
