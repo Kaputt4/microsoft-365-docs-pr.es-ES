@@ -16,12 +16,12 @@ ms.collection:
 description: Los administradores pueden aprender a permitir o bloquear correos electrónicos y entradas de remitente suplantados en la lista de permitidos o bloqueados de inquilinos en el portal de seguridad.
 ms.subservice: mdo
 ms.service: microsoft-365-security
-ms.openlocfilehash: 03dd5247135e3d4d297e73ab166921adc73f3573
-ms.sourcegitcommit: 10e6abe740e27000e223378eb17d657a47555fa8
+ms.openlocfilehash: 1537b32d56046da776024cef3acbd9eb2d8a4da3
+ms.sourcegitcommit: ecc04b5b8f84b34255a2d5e90b5ab596af0d16c7
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/31/2022
-ms.locfileid: "67469589"
+ms.lasthandoff: 09/01/2022
+ms.locfileid: "67497569"
 ---
 # <a name="allow-or-block-emails-using-the-tenant-allowblock-list"></a>Permitir o bloquear correos electrónicos mediante la lista de bloqueados y permitidos del espacio empresarial
 
@@ -87,18 +87,18 @@ Para obtener instrucciones, consulte [Informe de correo electrónico cuestionabl
 
 #### <a name="use-the-microsoft-365-defender-portal-to-create-block-entries-for-domains-and-email-addresses-in-the-tenant-allowblock-list"></a>Use el portal de Microsoft 365 Defender para crear entradas de bloque para dominios y direcciones de correo electrónico en la lista de permitidos o bloqueados de inquilinos.
 
-Las entradas de bloque se crean para dominios y direcciones de correo electrónico directamente en la lista de permitidos o bloqueados de inquilinos.
+Puede crear entradas de bloque para dominios y direcciones de correo electrónico directamente en la lista de permitidos o bloqueados de inquilinos.
+
+Email mensajes de estos remitentes se marcan como *spam de alta confianza* (SCL = 9). Lo que sucede con los mensajes viene determinado por la [directiva antispam](configure-your-spam-filter-policies.md) que detectó el mensaje para el destinatario. En la directiva de antispam predeterminada y en las nuevas directivas personalizadas, los mensajes marcados como correo no deseado de alta confianza se entregan de forma predeterminada a la carpeta Junk Email. En las [directivas de seguridad preestablecidas](preset-security-policies.md) Estándar y Estricta, los mensajes de spam de alta confianza se ponen en cuarentena.
 
 > [!NOTE]
-> Email mensajes de estos remitentes se marcan como *spam de alta confianza* (SCL = 9). Lo que sucede con los mensajes viene determinado por la [directiva antispam](configure-your-spam-filter-policies.md) que detectó el mensaje para el destinatario. En la directiva de antispam predeterminada y en las nuevas directivas personalizadas, los mensajes marcados como correo no deseado de alta confianza se entregan de forma predeterminada a la carpeta Junk Email. En las [directivas de seguridad preestablecidas](preset-security-policies.md) Estándar y Estricta, los mensajes de spam de alta confianza se ponen en cuarentena.
->
 > Los usuarios de la organización no pueden enviar correo electrónico a estos dominios y direcciones bloqueados. Recibirán el siguiente informe de no entrega (también conocido como NDR o mensaje de devolución): `5.7.1  Your message can't be delivered because one or more recipients are blocked by your organization's tenant allow/block list policy.`
 
 1. En el portal de Microsoft 365 Defender en <https://security.microsoft.com>, vaya a **Directivas & reglas De directivas** \> de amenazas sección \> **Reglas de directivas** de **amenazas** \> **Listas de permitidos o bloques de inquilinos**. O bien, para ir directamente a la página **Permitir o bloquear lista de inquilinos** , use <https://security.microsoft.com/tenantAllowBlockList>.
 
 2. En la página **Lista de permitidos o bloqueados de inquilinos** , compruebe que la pestaña **Dominios & direcciones** está seleccionada.
 
-3. **En la pestaña Dominios & direcciones** , haga clic en ![icono Bloquear.](../../media/m365-cc-sc-create-icon.png) **Bloquear**.
+3. En la pestaña **Dominios & direcciones** , haga clic en ![el icono Bloquear.](../../media/m365-cc-sc-create-icon.png) **Bloquear**.
 
 4. En el control flotante **Bloquear dominios & direcciones** que aparece, configure los siguientes valores:
 
@@ -546,12 +546,12 @@ Agregar un par de dominio solo permite o bloquea la *combinación* del usuario s
 Por ejemplo, agrega una entrada allow para el siguiente par de dominio:
 
 - **Dominio**: gmail.com
-- **Infraestructura**: tms.mx.com
+- **Infraestructura de envío**: tms.mx.com
 
 Solo los mensajes de ese dominio *y* el par de infraestructura de envío pueden suplantarse. No se permiten otros remitentes que intenten suplantar gmail.com. Los mensajes de remitentes de otros dominios que se originan en tms.mx.com se comprueban mediante inteligencia suplantada.
 
 > [!NOTE]
-> No puede usar caracteres comodín en la infraestructura de envío.
+> Puede especificar caracteres comodín en la infraestructura de envío o en el usuario suplantado, pero no en ambos al mismo tiempo. Por ejemplo, `*, *` no se permite.
 
 ## <a name="about-impersonated-domains-or-senders"></a>Acerca de los dominios o remitentes suplantados
 

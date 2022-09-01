@@ -2,7 +2,7 @@
 title: Obtención de la API de alertas
 description: Obtenga información sobre los métodos y propiedades del tipo de recurso Alert en Microsoft Defender para punto de conexión.
 keywords: apis, graph api, api admitidas, get, alerts, recent
-ms.prod: m365-security
+ms.service: microsoft-365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -13,14 +13,14 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
-ms.technology: mde
+ms.subservice: mde
 ms.custom: api
-ms.openlocfilehash: 626b18829594c6cd88421fd183c2403a84bf0a4e
-ms.sourcegitcommit: 217108c59be41b01963a393b4f16d137636fe6a8
+ms.openlocfilehash: 301abec576f15ac83406660ca75b3f9ec3b7d389
+ms.sourcegitcommit: ecc04b5b8f84b34255a2d5e90b5ab596af0d16c7
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/12/2022
-ms.locfileid: "67322395"
+ms.lasthandoff: 09/01/2022
+ms.locfileid: "67497925"
 ---
 # <a name="alert-resource-type"></a>Tipo de recurso de alerta
 
@@ -37,10 +37,6 @@ ms.locfileid: "67322395"
 
 ## <a name="methods"></a>Métodos
 
-<br>
-
-****
-
 |Método|Tipo de valor devuelto|Descripción|
 |---|---|---|
 |[Obtener alerta](get-alert-info-by-id.md)|[Alerta](alerts.md)|Obtener un único objeto [de alerta](alerts.md) .|
@@ -53,13 +49,8 @@ ms.locfileid: "67322395"
 |[Enumerar direcciones IP relacionadas](get-alert-related-ip-info.md)|Colección ip|Enumera las direcciones IP asociadas a la alerta.|
 |[Obtener máquinas relacionadas](get-alert-related-machine-info.md)|[Máquina](machine.md)|La [máquina](machine.md) asociada a la [alerta](alerts.md).|
 |[Obtener usuarios relacionados](get-alert-related-user-info.md)|[Usuario](user.md)|El [usuario](user.md) que está asociado a la [alerta](alerts.md).|
-|
 
 ## <a name="properties"></a>Propiedades
-
-<br>
-
-****
 
 |Propiedad|Tipo|Descripción|
 |---|---|---|
@@ -92,7 +83,6 @@ ms.locfileid: "67322395"
 |detectorId|Cadena|Identificador del detector que desencadenó la alerta.|
 |comments|Lista de comentarios de alerta|El objeto Alert Comment contiene: cadena de comentario, cadena createdBy y fecha y hora de createTime.|
 |Evidencia|Lista de pruebas de alerta|Evidencia relacionada con la alerta. Vea el ejemplo abajo.|
-|
 
 >[!NOTE]
 >Alrededor del 29 de agosto de 2022, los valores de determinación de alertas admitidos anteriormente ("Apt" y "SecurityPersonnel") quedarán en desuso y ya no estarán disponibles a través de la API.

@@ -9,7 +9,7 @@ f1.keywords: NOCSH
 ms.author: tracyp
 author: msfttracyp
 ms.localizationpriority: medium
-ms.date: 08/11/2022
+ms.date: 08/30/2022
 manager: dansimp
 audience: ITPro
 ms.collection:
@@ -20,12 +20,12 @@ ms.custom: seo-marvel-apr2020
 ms.reviewer: vippand
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 6c714e15cfb37116fe23f51c4e47214d69961120
-ms.sourcegitcommit: d09eb780dc41a01796eb8137fbe9267231af6746
+ms.openlocfilehash: 7487297cbb6a28436e7a28006ef9989d902cdcc6
+ms.sourcegitcommit: ecc04b5b8f84b34255a2d5e90b5ab596af0d16c7
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/19/2022
-ms.locfileid: "67385559"
+ms.lasthandoff: 09/01/2022
+ms.locfileid: "67496843"
 ---
 # <a name="whats-new-in-microsoft-defender-for-office-365"></a>Novedades de Microsoft Defender para Office 365
 
@@ -45,9 +45,9 @@ Para obtener más información sobre las novedades de otros productos de segurid
 - [Novedades de Microsoft 365 Defender](../defender/whats-new.md)
 - [Novedades de Microsoft Defender para punto de conexión](../defender-endpoint/whats-new-in-microsoft-defender-endpoint.md)
 - [Novedades de Microsoft Defender for Identity](/defender-for-identity/whats-new)
-- [Novedades de Microsoft Cloud App Security](/cloud-app-security/release-notes)
+- [Novedades de Microsoft Defender for Cloud Apps](/cloud-app-security/release-notes)
 
-## <a name="august-2022"></a>Agosto de 2022
+## <a name="september-2022"></a>Septiembre de 2022
 
 **Redireccionamiento automático de Office 365 Centro de seguridad y cumplimiento a Microsoft 365 Defender portal:** el redireccionamiento automático comienza para los usuarios que acceden a las soluciones de seguridad de Office 365 Centro de seguridad y cumplimiento (protection.office.com) a las soluciones adecuadas en Microsoft 365 Defender portal (security.microsoft.com). Esto es para todos los flujos de trabajo de seguridad, como alertas, administración de amenazas e informes. 
 - Direcciones URL de redireccionamiento:

@@ -15,14 +15,14 @@ ms.assetid: c31406ea-2979-4fac-9288-f835269b9d2f
 ms.collection:
 - M365-security-compliance
 description: Cómo notificar un correo electrónico o un archivo sospechosos a Microsoft? Informe de mensajes, direcciones URL, datos adjuntos de correo electrónico y archivos a Microsoft para su análisis. Aprenda a notificar correos electrónicos no deseados y correos electrónicos de suplantación de identidad (phishing).
-ms.technology: mdo
-ms.prod: m365-security
-ms.openlocfilehash: e57460766864ba27cec95e584d28a22c8b2c0229
-ms.sourcegitcommit: adc4e5707aa074fc4aa0cb9e8c2986fc8b88813c
+ms.subservice: mdo
+ms.service: microsoft-365-security
+ms.openlocfilehash: e030ccb9aa81e3e9c7b97a4b074e87af9a99e6de
+ms.sourcegitcommit: ecc04b5b8f84b34255a2d5e90b5ab596af0d16c7
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/01/2022
-ms.locfileid: "67112491"
+ms.lasthandoff: 09/01/2022
+ms.locfileid: "67495761"
 ---
 # <a name="how-do-i-report-a-suspicious-email-or-file-to-microsoft"></a>Cómo notificar un correo electrónico o un archivo sospechosos a Microsoft?
 

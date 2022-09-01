@@ -12,19 +12,19 @@ search.appverid: MET150
 ms.collection: ''
 ms.localizationpriority: medium
 description: Obtenga información sobre qué clientes son compatibles actualmente con Whiteboard.
-ms.openlocfilehash: b1e4f83a0df0f03a423d9f7e3821cc53284ddb19
-ms.sourcegitcommit: 34910ea9318289d78c35b0e7990238467c05384b
+ms.openlocfilehash: 5ff362ff562eade8f80b44b3a5f5a929b242de24
+ms.sourcegitcommit: ecc04b5b8f84b34255a2d5e90b5ab596af0d16c7
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/10/2022
-ms.locfileid: "67306336"
+ms.lasthandoff: 09/01/2022
+ms.locfileid: "67497503"
 ---
 # <a name="manage-clients-for-microsoft-whiteboard-in-gcc-high-environments"></a>Administración de clientes para Microsoft Whiteboard en entornos de GCC High
 
 > [!NOTE]
 > Esta guía se aplica a los entornos altos de la nube de la comunidad del gobierno de EE. UU. (GCC).
 
-Los clientes de pizarra se están actualizando actualmente para admitir OneDrive para la Empresa.
+Los clientes de pizarra se están actualizando actualmente para admitir OneDrive para la Empresa. 
 
 ## <a name="clients-supported"></a>Clientes admitidos
 

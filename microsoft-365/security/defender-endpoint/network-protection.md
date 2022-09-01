@@ -19,12 +19,12 @@ ms.topic: overview
 ms.collection:
 - m365initiative-m365-defender
 - M365-security-compliance
-ms.openlocfilehash: bb4b0cb1c38fc394d5dfb2ec0498ba72b23e8754
-ms.sourcegitcommit: d09eb780dc41a01796eb8137fbe9267231af6746
+ms.openlocfilehash: 7ab48b6dc7aad50af438e6fcebb241e32baac6ed
+ms.sourcegitcommit: ecc04b5b8f84b34255a2d5e90b5ab596af0d16c7
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/19/2022
-ms.locfileid: "67388559"
+ms.lasthandoff: 09/01/2022
+ms.locfileid: "67495289"
 ---
 # <a name="protect-your-network"></a>Proteger la red
 
@@ -48,6 +48,17 @@ La protección de red ayuda a proteger los dispositivos frente a eventos basados
 
 La protección de red amplía la protección de la [protección web](web-protection-overview.md) al nivel del sistema operativo. Proporciona la funcionalidad de protección web que se encuentra en Microsoft Edge a otros exploradores compatibles y aplicaciones que no son de explorador. La protección de red también proporciona visibilidad y bloqueo de indicadores de riesgo (IOC) cuando se usan con la [detección y respuesta de puntos de conexión](overview-endpoint-detection-response.md). Por ejemplo, la protección de red funciona con [los indicadores personalizados](manage-indicators.md) que puede usar para bloquear dominios o nombres de host específicos.
 
+> [!NOTE]
+> En el caso de procesos distintos de Microsoft Edge e Internet Explorer, los escenarios de protección web aprovechan la protección de red para la inspección y el cumplimiento:
+>
+> - Ip es compatible con los tres protocolos (TCP, HTTP y HTTPS (TLS)).
+> - Solo se admiten direcciones IP únicas (sin bloques CIDR ni intervalos IP) en indicadores personalizados.
+> - Las direcciones URL cifradas (ruta de acceso completa) solo se pueden bloquear en exploradores de primera entidad (Internet Explorer, Edge).
+> - Las direcciones URL cifradas (solo FQDN) se pueden bloquear en exploradores de terceros (es decir, distintas de Internet Explorer, Edge).
+> - Los bloques de ruta de acceso de dirección URL completa se pueden aplicar a direcciones URL sin cifrar.
+>
+> Puede haber hasta 2 horas de latencia (normalmente menos) entre el momento en que se realiza la acción y la dirección URL y la dirección IP bloqueadas.
+
 Vea este vídeo para obtener información sobre cómo la protección de red ayuda a reducir la superficie expuesta a ataques de los dispositivos frente a estafas de suplantación de identidad (phishing), vulnerabilidades de seguridad y otro contenido malintencionado.
 > [!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RE4r4yZ]
 
@@ -64,7 +75,7 @@ La protección de red requiere Windows 10 o 11 (Pro o Enterprise), Windows Serve
 La protección de red forma parte del grupo de soluciones de reducción de superficie expuesta a ataques en Microsoft Defender para punto de conexión. La protección de red habilita la capa de red de direcciones URL de bloqueo y direcciones IP. La protección de red puede impedir que se acceda a las direcciones URL mediante determinados exploradores y conexiones de red estándar. De forma predeterminada, la protección de red protege los equipos de direcciones URL malintencionadas conocidas mediante la fuente SmartScreen, que bloquea las direcciones URL malintencionadas de forma similar a SmartScreen en el explorador Microsoft Edge. La funcionalidad de protección de red se puede ampliar a:
 
 - Bloquear direcciones IP/URL de su propia inteligencia sobre amenazas ([indicadores](indicator-ip-domain.md))
-- Bloquear los servicios no autorizadas de [Microsoft Defender for Cloud Apps](/defender-cloud-apps/what-is-defender-for-cloud-apps) (anteriormente conocido como Microsoft Cloud App Security)
+- Bloquear los servicios no autorizadas de [Microsoft Defender for Cloud Apps](/defender-cloud-apps/what-is-defender-for-cloud-apps)
 - Bloquear sitios en función de la categoría ([filtrado de contenido web](web-content-filtering.md))
 
 La protección de red es una parte fundamental de la pila de protección y respuesta de Microsoft.
@@ -137,6 +148,8 @@ Un usuario visita un sitio web:
 
 ### <a name="network-protection-c2-detection-and-remediation"></a>Protección de red: detección y corrección de C2
 
+[!INCLUDE [Prerelease information](../includes/prerelease.md)]
+
 En su forma inicial, ransomware es una amenaza de mercancía, preprogramada y centrada en resultados limitados y específicos (por ejemplo, el cifrado de un equipo). Sin embargo, el ransomware ha evolucionado hasta convertirse en una amenaza sofisticada controlada por el ser humano, adaptable y centrada en resultados a mayor escala y más extendidos; como mantener activos o datos completos de una organización para el rescate.
 
 La compatibilidad con servidores de comandos y control (C2) es una parte clave de esta evolución de ransomware y es lo que permite que estos ataques se adapten al entorno al que se dirigen. La interrupción del vínculo a la infraestructura de comandos y control detiene la progresión de un ataque a su siguiente fase.
@@ -175,7 +188,7 @@ En el ejemplo siguiente se incluyen las acciones bloqueadas:
 ```kusto
 
 DeviceEvents
-|Where ActionType in ('ExploitGuardNetworkProtectionAudited','ExploitGuardNetworkProtectionBlocked')
+|where ActionType in ('ExploitGuardNetworkProtectionAudited','ExploitGuardNetworkProtectionBlocked')
 
 ```
 

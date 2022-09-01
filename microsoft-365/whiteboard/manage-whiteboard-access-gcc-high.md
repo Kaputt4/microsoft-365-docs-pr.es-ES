@@ -12,12 +12,12 @@ search.appverid: MET150
 ms.collection: ''
 ms.localizationpriority: medium
 description: Obtenga información sobre cómo habilitar, deshabilitar y administrar datos de Pizarra.
-ms.openlocfilehash: 2f79f53ce68dd9179b2b652f46a4245b9ed6ffdb
-ms.sourcegitcommit: 5aed330d8af523f0dffe5e392f1c79f047e38172
+ms.openlocfilehash: 7034aba1ea94bcc87a21f8378595ce984a74769f
+ms.sourcegitcommit: ecc04b5b8f84b34255a2d5e90b5ab596af0d16c7
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/21/2022
-ms.locfileid: "66942436"
+ms.lasthandoff: 09/01/2022
+ms.locfileid: "67496733"
 ---
 # <a name="manage-access-to-microsoft-whiteboard-for-gcc-high-environments"></a>Administración del acceso a Microsoft Whiteboard para entornos de GCC High
 
@@ -46,7 +46,7 @@ Puede controlar el acceso a Whiteboard de las siguientes maneras:
 - Requerir directivas de acceso condicional para acceder a Whiteboard mediante el Centro de administración de Azure Active Directory.
 
 >[!NOTE]
-> La pizarra en OneDrive para la Empresa no aparece en el Centro de administración de Microsoft 365. La directiva de reunión de Teams solo oculta los puntos de entrada de pizarra, no impide que los usuarios usen Pizarra. Las instrucciones de acceso condicional impiden el acceso a Whiteboard, pero no oculta los puntos de entrada.
+> La pizarra en OneDrive para la Empresa no aparece en el Centro de administración de Microsoft 365. La directiva de reunión de Teams solo oculta los puntos de entrada de pizarra, no impide que los usuarios usen Pizarra. Las directivas de acceso condicional impiden el acceso a Whiteboard, pero no oculta los puntos de entrada.
 
 ## <a name="enable-or-disable-whiteboard"></a>Habilitación o deshabilitación de Whiteboard
 
@@ -69,7 +69,7 @@ El cambio debe tardar aproximadamente 60 minutos en aplicarse en todo el inquili
 
 Para mostrar u ocultar pizarra en reuniones, consulte Configuración de [directivas de reunión](/microsoftteams/meeting-policies-content-sharing).
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 [Administración de datos para Pizarra: GCC High](manage-data-gcc-high.md)
 

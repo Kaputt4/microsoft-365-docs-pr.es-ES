@@ -4,7 +4,8 @@ ms.reviewer: ''
 description: Si no está familiarizado con los expertos de Microsoft 365 Defender y Defender para la búsqueda, así es como se suscribe.
 keywords: servicio de búsqueda de amenazas administrada, búsqueda de amenazas administrada, servicio de detección y respuesta administrada (MDR), MTE, Expertos en amenazas de Microsoft, MTE-TAN, notificación de ataque dirigida, notificaciones de expertos de defender, notificaciones de ataque de punto de conexión, expertos de Microsoft Defender para búsqueda, búsqueda y análisis de amenazas.
 search.product: Windows 10
-ms.prod: m365-security
+ms.service: microsoft-365-security
+ms.subservice: m365d
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -17,13 +18,12 @@ ms.collection:
 - m365-security-compliance
 - m365initiative-defender-endpoint
 ms.topic: conceptual
-ms.technology: mde
-ms.openlocfilehash: 5165adfd402415ddd7bd5a0fd6b5acb098fd49f1
-ms.sourcegitcommit: 217108c59be41b01963a393b4f16d137636fe6a8
+ms.openlocfilehash: 298bba9601d87887b839b7b0c5f0a33c7616caa4
+ms.sourcegitcommit: ecc04b5b8f84b34255a2d5e90b5ab596af0d16c7
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/12/2022
-ms.locfileid: "67328461"
+ms.lasthandoff: 09/01/2022
+ms.locfileid: "67497433"
 ---
 # <a name="start-using-microsoft-defender-experts-for-hunting"></a>Empezar a usar expertos de Microsoft Defender para la búsqueda
 

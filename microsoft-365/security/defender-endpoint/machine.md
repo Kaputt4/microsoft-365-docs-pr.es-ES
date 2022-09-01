@@ -15,12 +15,12 @@ ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
 ms.custom: api
-ms.openlocfilehash: d5b6c51fd6f0e581a1299e72600930d9ef4a2a3e
-ms.sourcegitcommit: 217108c59be41b01963a393b4f16d137636fe6a8
+ms.openlocfilehash: ada405980a781d32735a545f4d2bd44d19477511
+ms.sourcegitcommit: ecc04b5b8f84b34255a2d5e90b5ab596af0d16c7
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/12/2022
-ms.locfileid: "67327407"
+ms.lasthandoff: 09/01/2022
+ms.locfileid: "67497080"
 ---
 # <a name="machine-resource-type"></a>Tipo de recurso de máquina
 
@@ -41,15 +41,11 @@ ms.locfileid: "67327407"
 
 ## <a name="methods"></a>Métodos
 
-<br>
-
-****
-
 |Método|Tipo de valor devuelto|Descripción|
 |---|---|---|
 |[Enumerar máquinas](get-machines.md)|[colección de máquinas](machine.md)|Enumera el conjunto de entidades de [máquina](machine.md) de la organización.|
 |[Obtener equipo](get-machine-by-id.md)|[Máquina](machine.md)|Obtenga una [máquina](machine.md) por su identidad.|
-|[Obtener usuarios que han iniciado sesión](get-machine-log-on-users.md)|Colección [user](user.md)|Obtenga el conjunto de [usuarios](user.md) que iniciaron sesión en la [máquina](machine.md).|
+|[Obtener usuarios que han iniciado sesión](get-machine-log-on-users.md)|Colección [usario](user.md)|Obtenga el conjunto de [usuarios](user.md) que iniciaron sesión en la [máquina](machine.md).|
 |[Obtener alertas relacionadas](get-machine-related-alerts.md)|Colección [alert](alerts.md)|Obtenga el conjunto de entidades de [alerta](alerts.md) que se generaron en la [máquina](machine.md).|
 |[Obtener software instalado](get-installed-software.md)|colección [de software](software.md)|Recupera una colección de software instalado relacionado con un identificador de equipo determinado.|
 |[Obtener las vulnerabilidades detectadas](get-discovered-vulnerabilities.md)|[colección de vulnerabilidades](vulnerability.md)|Recupera una colección de vulnerabilidades detectadas relacionadas con un identificador de equipo determinado.|
@@ -60,13 +56,8 @@ ms.locfileid: "67327407"
 |[Obtener los kB que faltan](get-missing-kbs-machine.md)|Colección KB|Obtener una lista de los KB que faltan asociados con el identificador de equipo|
 |[Establecer valor de dispositivo](set-device-value.md)|[colección de máquinas](machine.md)|Establezca el [valor de un dispositivo](tvm-assign-device-value.md).|
 |[Actualizar máquina](update-machine-method.md)|[colección de máquinas](machine.md)|Obtenga el estado de actualización de una máquina.|
-|
 
 ## <a name="properties"></a>Propiedades
-
-<br>
-
-****
 
 |Propiedad|Tipo|Descripción|
 |---|---|---|
@@ -91,4 +82,3 @@ ms.locfileid: "67327407"
 |deviceValue|Enumeración que acepta valores NULL|[Valor del dispositivo](tvm-assign-device-value.md). Los valores posibles son: "Normal", "Low" y "High".|
 |ipAddresses|Colección IpAddress|Conjunto de objetos ***IpAddress*** . Consulte [Obtención de la API de máquinas](get-machines.md).|
 |osArchitecture|Cadena|Arquitectura del sistema operativo. Los valores posibles son: "32 bits", "64 bits". Use esta propiedad en lugar de osProcessor.|
-|

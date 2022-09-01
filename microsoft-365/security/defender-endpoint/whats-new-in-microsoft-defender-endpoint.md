@@ -18,12 +18,12 @@ ms.collection:
 - m365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 07f9aa517ae0cc4b442d0296df82f219e242debf
-ms.sourcegitcommit: 6f565d9e0f91ebc76fd13d7005619531391ab5f9
+ms.openlocfilehash: 9d7e89a55a70cef1f8957792346ca09f05416439
+ms.sourcegitcommit: ecc04b5b8f84b34255a2d5e90b5ab596af0d16c7
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/25/2022
-ms.locfileid: "67439616"
+ms.lasthandoff: 09/01/2022
+ms.locfileid: "67497146"
 ---
 # <a name="whats-new-in-microsoft-defender-for-endpoint"></a>Novedades de Microsoft Defender para punto de conexión
 
@@ -53,7 +53,7 @@ Para obtener más información sobre las novedades de otros productos de segurid
 - [Novedades de Microsoft 365 Defender](../defender/whats-new.md)
 - [Novedades de Microsoft Defender para Office 365](../office-365-security/whats-new-in-defender-for-office-365.md)
 - [Novedades de Microsoft Defender for Identity](/defender-for-identity/whats-new)
-- [Novedades de Microsoft Cloud App Security](/cloud-app-security/release-notes)
+- [Novedades de Microsoft Defender for Cloud Apps](/cloud-app-security/release-notes)
 
 Para obtener más información sobre Microsoft Defender para punto de conexión en otros sistemas operativos:
 
@@ -158,7 +158,7 @@ Para obtener más información sobre Microsoft Defender para punto de conexión 
 - [Detección de jailbreak en iOS](/microsoft-365/security/defender-endpoint/ios-configure-features#conditional-access-with-defender-for-endpoint-on-ios) <br> La funcionalidad de detección de jailbreak en Microsoft Defender para punto de conexión en iOS ya está disponible con carácter general. Esto se suma a la protección contra suplantación de identidad (phishing) que ya existe.  Para obtener más información, consulte [Configuración de la directiva de acceso condicional en función de las señales de riesgo del dispositivo](/microsoft-365/security/defender-endpoint/ios-configure-features).
 
 
-## <a name="march-2021"></a>Marzo de 2021
+## <a name="march-2021"></a>Marzo 2021
 - [Administración de la protección contra alteraciones de la organización mediante Microsoft 365 Defender portal](manage-tamper-protection-microsoft-365-defender.md) <br> Puede administrar la configuración de protección contra alteraciones en Windows 10, Windows Server 2016, Windows Server 2019 y Windows Server 2022 mediante un método denominado *asociación de inquilinos*.
 
 

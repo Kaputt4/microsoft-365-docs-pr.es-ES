@@ -15,14 +15,14 @@ search.appverid:
 ms.collection:
 - M365-security-compliance
 description: Más información sobre la configuración segura de forma predeterminada en Exchange Online Protection (EOP)
-ms.technology: mdo
-ms.prod: m365-security
-ms.openlocfilehash: ab5fa5e9c769d68589b722e8fdc9976fa616e6ac
-ms.sourcegitcommit: 725a92b0b1555572b306b285a0e7a7614d34e5e5
+ms.subservice: mdo
+ms.service: microsoft-365-security
+ms.openlocfilehash: b70e3639df2cfa1b2099cc5e61efe43b216b4afe
+ms.sourcegitcommit: ecc04b5b8f84b34255a2d5e90b5ab596af0d16c7
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/24/2022
-ms.locfileid: "65648137"
+ms.lasthandoff: 09/01/2022
+ms.locfileid: "67497321"
 ---
 # <a name="secure-by-default-in-office-365"></a>Proteger de forma predeterminada en Office 365
 
@@ -43,7 +43,7 @@ Sin embargo, la seguridad debe estar equilibrada con la productividad. Esto pued
 
 Microsoft 365 organizaciones con buzones en Exchange Online están protegidas por Exchange Online Protection (EOP). La protección incluye:
 
-- El correo electrónico con sospecha de malware se pondrá automáticamente en cuarentena. La directiva de cuarentena y la configuración de la directiva antimalware controlan si los destinatarios reciben una notificación sobre los mensajes de malware en cuarentena. Para obtener más información, vea [Configurar directivas antimalware en EOP](configure-anti-malware-policies.md).
+- Email con sospecha de malware se pondrá automáticamente en cuarentena. La directiva de cuarentena y la configuración de la directiva antimalware controlan si los destinatarios reciben una notificación sobre los mensajes de malware en cuarentena. Para obtener más información, vea [Configurar directivas antimalware en EOP](configure-anti-malware-policies.md).
 - El correo electrónico identificado como suplantación de identidad de alta confianza se controlará según la acción de la directiva contra correo no deseado. Consultar [Configuración de las directivas contra correo no deseado en EOP](configure-your-spam-filter-policies.md).
 
 Para obtener más información sobre EOP, consulte [Información general de Exchange Online Protection](exchange-online-protection-overview.md)
@@ -53,7 +53,7 @@ Debido a que Microsoft quiere mantener seguros a nuestros clientes de forma pred
 - Listas de remitentes permitidos o listas de dominios permitidos (directivas contra correo no deseado)
 - Remitentes seguros de Outlook
 - Lista de direcciones IP permitidas (filtrado de conexiones)
-- Exchange reglas de flujo de correo (también conocidas como reglas de transporte)
+- Reglas de flujo de correo de Exchange (también conocidas como reglas de transporte)
 
 Puede encontrar más información sobre estas invalidaciones en [Crear listas de remitentes seguros](create-safe-sender-lists-in-office-365.md).
 

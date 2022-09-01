@@ -18,12 +18,12 @@ audience: ITPro
 ms.collection:
 - M365-security-compliance
 ms.topic: conceptual
-ms.openlocfilehash: e7b992f22e58cca007e1ed3afecf02ecac830857
-ms.sourcegitcommit: 10e6abe740e27000e223378eb17d657a47555fa8
+ms.openlocfilehash: 1d1eb2f292d5697eb3aabfbceaa89157e48473c3
+ms.sourcegitcommit: ecc04b5b8f84b34255a2d5e90b5ab596af0d16c7
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/31/2022
-ms.locfileid: "67483374"
+ms.lasthandoff: 09/01/2022
+ms.locfileid: "67495091"
 ---
 # <a name="whats-new-in-microsoft-365-defender"></a>Novedades de Microsoft 365 Defender
 
@@ -154,5 +154,5 @@ El equipo de operaciones de seguridad puede ver todas las acciones pendientes de
 
 - [Tabla CloudAppEvents](advanced-hunting-cloudappevents-table.md)
 
-  Busque información sobre eventos en varias aplicaciones y servicios en la nube cubiertos por Microsoft Cloud App Security. Esta tabla también incluye información disponible anteriormente en la `AppFileEvents` tabla.
+  Busque información sobre eventos en varias aplicaciones y servicios en la nube cubiertos por Microsoft Defender for Cloud Apps. Esta tabla también incluye información disponible anteriormente en la `AppFileEvents` tabla.
 

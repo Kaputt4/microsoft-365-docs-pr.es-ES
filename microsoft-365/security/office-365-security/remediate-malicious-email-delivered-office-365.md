@@ -12,14 +12,14 @@ ms.localizationpriority: medium
 MS.collection: ''
 search.appverid: MET150
 description: Corrección de amenazas
-ms.technology: mdo
-ms.prod: m365-security
-ms.openlocfilehash: 6102d1e7d3b7e39787c3787b8bc0851eedbdcefb
-ms.sourcegitcommit: 18bc521a88b7b521bccb0e69d02deac764218087
+ms.subservice: mdo
+ms.service: microsoft-365-security
+ms.openlocfilehash: 9b9a51bfbfe7cd5ec754c6f3925b91612e58a2d6
+ms.sourcegitcommit: ecc04b5b8f84b34255a2d5e90b5ab596af0d16c7
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/16/2022
-ms.locfileid: "66115551"
+ms.lasthandoff: 09/01/2022
+ms.locfileid: "67496865"
 ---
 # <a name="remediate-malicious-email-delivered-in-office-365"></a>Corregir el correo electrónico malintencionado entregado en Office 365
 
@@ -35,9 +35,9 @@ La corrección significa tomar una acción prescrita contra una amenaza. El sist
 
 ## <a name="what-you-need-to-know-before-you-begin"></a>Lo que necesita saber antes de empezar
 
-Los administradores pueden realizar las acciones necesarias en los correos electrónicos, pero para obtener esas acciones aprobadas, deben tener asignado el rol *Buscar y purgar* en el **correo electrónico &** permisos de colaboración en el portal de Microsoft 365 Defender. Sin el rol *Buscar y purgar agregado* a uno de los grupos de roles, no podrán ejecutar la acción.
+Los administradores pueden realizar las acciones necesarias en los correos electrónicos, pero para obtener la aprobación de esas acciones, deben tener asignado el rol *Buscar y purgar* en el Email & permisos de **colaboración** en el portal de Microsoft 365 Defender. Sin el rol *Buscar y purgar agregado* a uno de los grupos de roles, no podrán ejecutar la acción.
 
-Dado que las acciones de correo electrónico crean investigaciones automatizadas en el back-end, debe habilitar *La investigación automatizada*. Vaya a **Configuración** \> **Características avanzadas de puntos** \> de conexión y active **Investigación automatizada**.
+Dado que las acciones de correo electrónico crean investigaciones automatizadas en el back-end, debe habilitar *La investigación automatizada*. Vaya a **Configuración** \> **Puntos de conexión** **Características avanzadas** \> y active **Investigación automatizada**.
 
 ## <a name="manual-and-automated-remediation"></a>Corrección manual y automatizada
 
@@ -82,7 +82,7 @@ El Centro de acciones unificadas muestra las acciones de corrección de los últ
 Abra cualquier elemento de corrección para ver los detalles sobre él, incluidos su nombre de corrección, el identificador de aprobación, el identificador de investigación, la fecha de creación, la descripción, el estado, el origen de la acción, el tipo de acción, decidido por, el estado. También se abre un panel lateral con detalles de acción, detalles del clúster de correo electrónico, alertas y detalles de incidentes.
 
 - *Abra la página Investigación* , lo que abre una investigación de administrador que contiene menos detalles y pestañas. Muestra detalles como: alerta relacionada, entidad seleccionada para la corrección, acción realizada, estado de corrección, recuento de entidades, registros, aprobador de la acción. Esta investigación realiza un seguimiento de la investigación realizada por el administrador manualmente y contiene detalles de las selecciones realizadas por el administrador, por lo que se denomina investigación de acción de administrador. No es necesario actuar sobre la investigación y alertar a su ya en estado aprobado.
-- *Recuento de correo electrónico* Muestra el número de correos electrónicos enviados a través del Explorador de amenazas. Estos correos electrónicos pueden ser accionables o no accionables.
+- *recuento de Email* Muestra el número de correos electrónicos enviados a través del Explorador de amenazas. Estos correos electrónicos pueden ser accionables o no accionables.
 - *Registros de acciones* Muestra los detalles de los estados de corrección, como correcto, erróneo y ya en destino.
 
 :::image type="content" source="../../media/microsoft-365-defender-action-center-history-panel.png" alt-text="Se abre el Centro de acciones con la opción Mover a bandeja de entrada.":::
@@ -97,7 +97,7 @@ Abra cualquier elemento de corrección para ver los detalles sobre él, incluido
       > Actualmente, solo un usuario con acceso al buzón puede recuperar elementos de una carpeta eliminada temporalmente.
 
   - **No accionable**: los correos electrónicos de las siguientes ubicaciones no se pueden actuar ni mover en acciones de corrección:
-    - Cuarentena
+    - Quarantine
     - Carpeta eliminada de forma rígida
     - Local/externo
     - Error o se ha eliminado

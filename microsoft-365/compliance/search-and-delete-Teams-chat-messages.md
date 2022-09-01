@@ -16,24 +16,21 @@ search.appverid:
 - MET150
 ms.assetid: 3526fd06-b45f-445b-aed4-5ebd37b3762a
 description: Use eDiscovery (Premium) y el Explorador de Microsoft Graph para buscar y purgar mensajes de chat en Microsoft Teams y responder a incidentes de desbordamiento de datos en Teams.
-ms.openlocfilehash: 372293e11ee16498746da69c824a91abd108f2cf
-ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
+ms.openlocfilehash: 12ac9bbc0cf45a7609ddcbfcc382d579e4641cd9
+ms.sourcegitcommit: ecc04b5b8f84b34255a2d5e90b5ab596af0d16c7
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/06/2022
-ms.locfileid: "66629210"
+ms.lasthandoff: 09/01/2022
+ms.locfileid: "67496711"
 ---
 # <a name="search-and-purge-chat-messages-in-teams-preview"></a>Buscar y purgar mensajes de chat en Teams (versión preliminar)
 
 Puede usar eDiscovery (Premium) y el Explorador de Microsoft Graph para buscar y eliminar mensajes de chat en Microsoft Teams. Esto puede ayudarle a encontrar y quitar información confidencial o contenido inadecuado. Este flujo de trabajo de búsqueda y purga también le ayudará a responder a un incidente de derrame de datos, cuando el contenido que contiene información confidencial o malintencionada se publica a través de mensajes de chat de Teams.
 
-> [!NOTE]
-> Este artículo se aplica a las organizaciones Microsoft 365 Enterprise. El soporte técnico para la nube del Gobierno de EE. UU. (incluido GCC, GCC High y DoD) estará disponible próximamente.
-
 ## <a name="before-you-search-and-purge-chat-messages"></a>Antes de buscar y purgar mensajes de chat
 
 - Para crear un caso de eDiscovery (Premium) y usar colecciones para buscar mensajes de chat, debe ser miembro del grupo de roles **administrador de eDiscovery** en el portal de cumplimiento Microsoft Purview. Para eliminar mensajes de chat, debe tener asignado el rol **Buscar y purgar** . Este rol se asigna a los grupos de roles Investigador de datos y Administración de la organización de forma predeterminada. Para más información, consulte [Asignar permisos de eDiscovery](assign-ediscovery-permissions.md).
-- La búsqueda y purga se admiten para las conversaciones dentro del inquilino. La compatibilidad con las conversaciones de Chat de Teams Connect (acceso externo o federación) está habilitada en la interfaz en algunos casos, pero no funciona según lo previsto.
+- La búsqueda y purga se admiten para las conversaciones dentro del inquilino. La compatibilidad con las conversaciones de Teams Connect Chat (acceso externo o federación) está habilitada en la interfaz en algunos casos, pero no funciona según lo previsto.
 - Se puede eliminar un máximo de 10 elementos por buzón a la vez. Dado que la capacidad de buscar y quitar mensajes de chat está pensada para ser una herramienta de respuesta a incidentes, este límite ayuda a garantizar que los mensajes de chat se quiten rápidamente.
 
 ## <a name="search-and-purge-workflow"></a>Flujo de trabajo de búsqueda y purga
@@ -143,6 +140,9 @@ Para obtener información sobre el uso del Explorador de Graph, consulte [Uso de
 
 3. Copie el identificador correspondiente (o cópielo y péguelo en un archivo de texto). Usará este identificador en la siguiente tarea para purgar los mensajes de chat.
 
+> [!TIP]
+> En lugar de usar el procedimiento anterior para obtener el identificador de colección, puede abrir el caso en el portal de cumplimiento Microsoft Purview. Abra el caso y vaya a la pestaña Trabajos. Seleccione la colección correspondiente y, en Información de soporte técnico, busque el identificador de trabajo (el identificador de trabajo que se muestra aquí es el mismo que el identificador de colección).
+
 ### <a name="purge-the-chat-messages"></a>Purgar los mensajes de chat
 
 1. En el Explorador de Graph, ejecute la siguiente solicitud POST para purgar los elementos devueltos por la colección que creó en el paso 2. Use el valor `https://graph.microsoft.com/beta/compliance/ediscovery/cases('caseId')/sourceCollections('collectionId')/purgeData` de la barra de direcciones de la consulta de solicitud, donde caseId y collectionId son los identificadores que obtuvo en los procedimientos anteriores. Asegúrese de rodear los valores id con paréntesis y comillas simples.
@@ -155,11 +155,28 @@ Para obtener información sobre el uso del Explorador de Graph, consulte [Uso de
 
   Para obtener más información sobre purgeData, vea [sourceCollection: purgeData](/graph/api/ediscovery-sourcecollection-purgedata).
 
+> [!NOTE]
+> Dado que Microsoft Graph Explorer no está disponible en la nube del Gobierno de EE. UU. (GCC, GCC High y DOD), debe usar PowerShell para realizar estas tareas.
+
+También puede purgar mensajes de chat mediante PowerShell. Por ejemplo, para purgar mensajes en la nube del Gobierno de EE. UU., podría usar un comando similar al siguiente:
+
+``
+Connect-MgGraph -Scopes "ediscovery.ReadWrite.All" -Environment USGov
+``
+
+``Invoke-MgGraphRequest  -Method POST -Uri '/beta/security/cases/ediscoveryCases/<case ID>/searches/<collection ID>/purgeData'
+``
+
+Para obtener más información sobre el uso de PowerShell para purgar mensajes de chat, vea [ediscoverySearch: purgeData](/graph/api/security-ediscoverysearch-purgedata).
+
 ## <a name="step-6-verify-chat-messages-are-purged"></a>Paso 6: Comprobar que los mensajes de chat se purgan
 
 Después de ejecutar la solicitud POST para purgar mensajes de chat, estos mensajes se quitan del cliente de Teams y se reemplazan por un generado automáticamente que indica que un administrador ha quitado el mensaje. Para ver un ejemplo de este mensaje, consulte la sección [Experiencia del usuario final](#end-user-experience) de este artículo.
 
 Los mensajes de chat purgados se mueven a la carpeta SubstrateHolds, que es una carpeta de buzón oculta. Los mensajes de chat purgados se almacenan allí durante al menos 1 día y, a continuación, se eliminan permanentemente la próxima vez que se ejecuta el trabajo del temporizador (normalmente entre 1 y 7 días). Para obtener más información, consulte [Información sobre la retención para Microsoft Teams](retention-policies-teams.md).
+
+> [!NOTE]
+> Dado que Microsoft Graph Explorer no está disponible en la nube del Gobierno de EE. UU. (GCC, GCC High y DOD), debe usar PowerShell para realizar estas tareas.
 
 ## <a name="step-7-reapply-holds-and-retention-policies-to-data-sources"></a>Paso 7: Volver a aplicar las directivas de retención y retención a orígenes de datos
 

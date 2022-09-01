@@ -17,12 +17,12 @@ ms.custom:
 - M365-Lighthouse
 search.appverid: MET150
 description: Para los proveedores de servicios administrados (MSP) que usan Microsoft 365 Lighthouse, consulte lo que se ha agregado, cambiado y corregido en Microsoft 365 Lighthouse cada mes.
-ms.openlocfilehash: fd5e7d611146237482fd53753c7362ce83639225
-ms.sourcegitcommit: f09687dbbc68347bc421d0b686625b80ff3a6b20
+ms.openlocfilehash: b1c8a3f3a965f21ab5197c6d13196c092f8ebc68
+ms.sourcegitcommit: ecc04b5b8f84b34255a2d5e90b5ab596af0d16c7
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/25/2022
-ms.locfileid: "67432296"
+ms.lasthandoff: 09/01/2022
+ms.locfileid: "67496887"
 ---
 # <a name="whats-new-in-microsoft-365-lighthouse"></a>Novedades de Microsoft 365 Lighthouse
 
@@ -42,18 +42,6 @@ Microsoft 365 Lighthouse ahora proporciona una lista de todas las cuentas de usu
 Hemos agregado una tarea de implementación de directivas de Microsoft Edge a la línea base predeterminada. Esta tarea de implementación le permite proteger los exploradores del inquilino del cliente con la configuración de seguridad de Edge, que incluye protección integrada contra phishing y malware. Microsoft Edge ha demostrado ser más seguro que Google Chromium para pequeñas y medianas empresas con dispositivos que ejecutan Windows 10 o posterior.
 
 Para obtener más información, consulte [Seguridad de Microsoft Edge para su empresa](/deployedge/ms-edge-security-for-business).
-
-### <a name="deployment-status-reporting"></a>Informes de estado de implementación 
-
-Microsoft 365 Lighthouse ahora proporciona un estado de implementación para cada plan de implementación para ayudarle a optimizar y priorizar los esfuerzos de implementación en consecuencia.
-
-### <a name="enhanced-deployment-insights-for-licensing"></a>Información de implementación mejorada para licencias
-
-Microsoft 365 Lighthouse ahora proporciona información sobre qué tareas de implementación no se pueden completar para qué usuarios debido a licencias insuficientes. Estas conclusiones le ayudan a ajustar las licencias o el plan de implementación en consecuencia para completar el plan de implementación.
-
-### <a name="enhanced-baseline-deployment-with-direct-links-to-existing-configurations"></a>Implementación de línea base mejorada con vínculos directos a configuraciones existentes
-
-Hemos mejorado la experiencia de implementación de línea base para que sea más rápido y fácil garantizar que los inquilinos de los clientes estén en buen estado y sean seguros. Hemos agregado vínculos a configuraciones de inquilino de clientes detectadas, para que pueda encontrar, revisar y modificar fácilmente estas configuraciones de inquilino en el portal de administración aplicable.
 
 ## <a name="july-2022"></a>Julio de 2022
 

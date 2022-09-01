@@ -16,12 +16,12 @@ ms.custom:
 - admindeeplinkEXCHANGE
 ms.collection:
 - M365-subscription-management
-ms.openlocfilehash: 307754dec24549c320a8ea9e2d8064b7e6d44d68
-ms.sourcegitcommit: 702fba4b6e6210bb7933cdbff0ad72426fcb9ef2
+ms.openlocfilehash: a0146159ebbb5e960bb375228e87fbfe43c0276e
+ms.sourcegitcommit: ecc04b5b8f84b34255a2d5e90b5ab596af0d16c7
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/13/2022
-ms.locfileid: "67336032"
+ms.lasthandoff: 09/01/2022
+ms.locfileid: "67497168"
 ---
 # <a name="cross-tenant-mailbox-migration-preview"></a>Migración de buzones entre inquilinos (versión preliminar)
 
@@ -225,6 +225,9 @@ Los usuarios que migran deben estar presentes en el inquilino de destino y en Ex
 ### <a name="prerequisites-for-target-user-objects"></a>Requisitos previos para objetos de usuario de destino
 
 Asegúrese de que los siguientes objetos y atributos se establecen en la organización de destino.
+
+>[!TIP]
+>Microsoft está desarrollando una característica para proporcionar un método automatizado seguro para establecer muchos de los atributos de la sección siguiente. Esta característica, denominada Asignación de identidades entre inquilinos, busca actualmente clientes dispuestos a participar en una pequeña versión preliminar privada. Para obtener más información sobre esta característica de versión preliminar y cómo puede simplificar los procesos de migración entre inquilinos, consulte el artículo **[Asignación de identidades entre inquilinos](cross-tenant-identity-mapping.md)**.
 
 1. Para cualquier buzón que se mueva desde una organización de origen, debe aprovisionar un objeto MailUser en la organización de destino:
 

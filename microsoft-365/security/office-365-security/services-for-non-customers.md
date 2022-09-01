@@ -15,18 +15,18 @@ ms.assetid: 19fd3e0f-8dbf-4049-a810-2c8ee6cefd48
 ms.collection:
 - M365-security-compliance
 description: Para ayudar a mantener la confianza del usuario en el uso del correo electrónico, Microsoft ha puesto en marcha distintas políticas y tecnologías para ayudar a proteger a nuestros usuarios.
-ms.technology: mdo
-ms.prod: m365-security
-ms.openlocfilehash: ff526dc317935651d28843b36bb529edf4ceb006
-ms.sourcegitcommit: 725a92b0b1555572b306b285a0e7a7614d34e5e5
+ms.subservice: mdo
+ms.service: microsoft-365-security
+ms.openlocfilehash: 8fb45e71d79458c6d990f226d8c2d81d7efe3681
+ms.sourcegitcommit: ecc04b5b8f84b34255a2d5e90b5ab596af0d16c7
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/24/2022
-ms.locfileid: "65648687"
+ms.lasthandoff: 09/01/2022
+ms.locfileid: "67496755"
 ---
 # <a name="services-for-non-customers-sending-mail-to-microsoft-365"></a>Servicios para clientes que no envían correo a Microsoft 365
 
-El abuso de correo electrónico, correo electrónico no deseado y correos electrónicos fraudulentos (phishing) siguen sobrecargando todo el ecosistema de correo electrónico. Para ayudar a mantener la confianza del usuario en el uso del correo electrónico, Microsoft ha puesto en marcha varias directivas y tecnologías para ayudar a proteger a nuestros usuarios. Sin embargo, Microsoft entiende que el correo electrónico legítimo no debería verse afectado negativamente. Por lo tanto, hemos establecido un conjunto de servicios para ayudar a los remitentes a mejorar su capacidad de entregar correo electrónico a Microsoft 365 usuarios mediante la administración proactiva de su reputación de envío.
+El abuso de correo electrónico, correo electrónico no deseado y correos electrónicos fraudulentos (phishing) siguen sobrecargando todo el ecosistema de correo electrónico. Para ayudar a mantener la confianza del usuario en el uso del correo electrónico, Microsoft ha puesto en marcha varias directivas y tecnologías para ayudar a proteger a nuestros usuarios. Sin embargo, Microsoft entiende que el correo electrónico legítimo no debería verse afectado negativamente. Por lo tanto, hemos establecido un conjunto de servicios para ayudar a los remitentes a mejorar su capacidad de entregar correo electrónico a los usuarios de Microsoft 365 mediante la administración proactiva de su reputación de envío.
 
 Esta información general proporciona información sobre las ventajas que proporcionamos a su organización incluso si no es cliente.
 
@@ -41,13 +41,13 @@ Esta información general proporciona información sobre las ventajas que propor
 
 ## <a name="microsoft-support"></a>Soporte técnico de Microsoft
 
-Microsoft ofrece varias opciones de soporte técnico para las personas que tienen problemas para enviar correo a Microsoft 365 destinatarios. Le recomendamos que haga lo siguiente:
+Microsoft ofrece varias opciones de soporte técnico para las personas que tienen problemas para enviar correo a los destinatarios de Microsoft 365. Le recomendamos que haga lo siguiente:
 
 - Siga las instrucciones de cualquier informe de no entrega que reciba.
 
 - Consulte los problemas más comunes que los no clientes encuentran en [Correo de solución de problemas enviado a Office 365](troubleshooting-mail-sent-to-office-365.md).
 
-- Use el [Microsoft 365 portal de deslist para](https://sender.office.com) enviar una solicitud para que la dirección IP se quite de la lista del remitente bloqueado.
+- Use el [portal de deslist de Microsoft 365](https://sender.office.com) para enviar una solicitud para que la dirección IP se quite de la lista del remitente bloqueado.
 
 - Lea los [foros de la comunidad de Microsoft](https://community.office365.com/f/).
 
@@ -57,8 +57,8 @@ Microsoft ofrece varias opciones de soporte técnico para las personas que tiene
 
 ## <a name="anti-spam-ip-delist-portal"></a>Portal de lista de direcciones IP no deseados
 
-Este es un portal de autoservicio que puede usar para quitarse de la lista de remitentes Microsoft 365 bloqueados. Use este portal si recibe un mensaje de error al intentar enviar un correo electrónico a un destinatario cuya dirección de correo electrónico está en Microsoft 365 y no cree que deba hacerlo. Para más información, consulte [Usar el portal de eliminación de la lista para quitarse de la lista de remitentes bloqueados](use-the-delist-portal-to-remove-yourself-from-the-office-365-blocked-senders-lis.md).
+Este es un portal de autoservicio que puede usar para quitarse de la lista de remitentes bloqueados de Microsoft 365. Use este portal si recibe un mensaje de error al intentar enviar un correo electrónico a un destinatario cuya dirección de correo electrónico está en Microsoft 365 y no cree que debería hacerlo. Para más información, consulte [Usar el portal de eliminación de la lista para quitarse de la lista de remitentes bloqueados](use-the-delist-portal-to-remove-yourself-from-the-office-365-blocked-senders-lis.md).
 
 ## <a name="abuse-and-spam-reporting-for-junk-email-originating-from-exchange-online"></a>Notificación de abusos y spam relativos a correos electrónicos no deseados procedentes de Exchange Online
 
-A veces Microsoft 365 es utilizado por terceros para enviar correo electrónico no deseado, en violación de nuestros términos de uso y política. Si recibe correo electrónico no deseado de Office 365, puede informar de estos mensajes a Microsoft. Para obtener instrucciones, consulte [Notificar mensajes y archivos a Microsoft](report-junk-email-messages-to-microsoft.md).
+A veces, terceros usan Microsoft 365 para enviar correo no deseado, en violación de nuestros términos de uso y directiva. Si recibe correo electrónico no deseado de Office 365, puede informar de estos mensajes a Microsoft. Para obtener instrucciones, consulte [Notificar mensajes y archivos a Microsoft](report-junk-email-messages-to-microsoft.md).

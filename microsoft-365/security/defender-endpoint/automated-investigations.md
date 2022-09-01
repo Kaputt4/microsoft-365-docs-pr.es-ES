@@ -10,6 +10,7 @@ ms.pagetype: security
 author: dansimp
 ms.author: dansimp
 ms.localizationpriority: medium
+ms.date: 08/31/2022
 manager: dansimp
 audience: ITPro
 ms.collection:
@@ -18,12 +19,12 @@ ms.collection:
 ms.topic: how-to
 ms.reviewer: ramarom, evaldm, isco, mabraitm, chriggs
 ms.custom: AIR
-ms.openlocfilehash: cfc3ebb1a32487bf2b32074059091c0d4d3517ec
-ms.sourcegitcommit: e624221597480295b799d56568c4f6f56d40b41d
+ms.openlocfilehash: d83377503587c76fced144159f2d8f3fc82f4df7
+ms.sourcegitcommit: ecc04b5b8f84b34255a2d5e90b5ab596af0d16c7
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/19/2022
-ms.locfileid: "65535788"
+ms.lasthandoff: 09/01/2022
+ms.locfileid: "67497903"
 ---
 # <a name="overview-of-automated-investigations"></a>Introducción a las investigaciones automatizadas
 
@@ -37,7 +38,7 @@ ms.locfileid: "65535788"
 **Plataformas**
 - Windows
 
-¿Quieres ver cómo funciona? Vea el siguiente vídeo:
+¿Quiere ver cómo funciona? Vea el siguiente vídeo:
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4bOeh]
 
@@ -85,7 +86,7 @@ Todas las acciones de corrección, ya sean pendientes o completadas, se realizan
 La suscripción debe incluir [Defender para punto de conexión](microsoft-defender-endpoint.md) o [Defender para empresas](../defender-business/mdb-overview.md).
 
 > [!NOTE]
-> La investigación y la respuesta automatizadas requieren Antivirus de Microsoft Defender para ejecutarse en modo pasivo o en modo activo. Si Antivirus de Microsoft Defender está deshabilitado o desinstalado, la investigación y la respuesta automatizadas no funcionarán correctamente.
+> La investigación y la respuesta automatizadas requieren antivirus de Microsoft Defender para ejecutarse en modo pasivo o en modo activo. Si antivirus de Microsoft Defender está deshabilitado o desinstalado, la investigación y la respuesta automatizadas no funcionarán correctamente.
 
 Actualmente, AIR solo admite las siguientes versiones del sistema operativo:
 
@@ -98,13 +99,16 @@ Actualmente, AIR solo admite las siguientes versiones del sistema operativo:
 - Windows 10, versión [1803](/windows/release-information/status-windows-10-1809-and-windows-server-2019) o posterior
 - Windows 11
 
-## <a name="next-steps"></a>Siguientes pasos
+> [!NOTE]
+> La investigación y respuesta automatizadas en Windows Server 2012 R2 y Windows Server 2016 requiere la instalación del [agente unificado](/microsoft-365/security/defender-endpoint/configure-server-endpoints#new-windows-server-2012-r2-and-2016-functionality-in-the-modern-unified-solution). 
+
+## <a name="next-steps"></a>Pasos siguientes
 
 - [Más información sobre los niveles de automatización](automation-levels.md)
 - [Consulte la guía interactiva: Investigación y corrección de amenazas con Microsoft Defender para punto de conexión](https://aka.ms/MDATP-IR-Interactive-Guide)
 - [Configurar funcionalidades automatizadas de investigación y corrección en Microsoft Defender para punto de conexión](configure-automated-investigations-remediation.md)
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 - [Protección PUA](/windows/security/threat-protection/microsoft-defender-antivirus/detect-block-potentially-unwanted-apps-microsoft-defender-antivirus)
 - [Investigación y respuesta automatizadas en Microsoft Defender para Office 365](/microsoft-365/security/office-365-security/office-365-air)

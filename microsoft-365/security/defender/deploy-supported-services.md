@@ -1,7 +1,7 @@
 ---
 title: Implementación de servicios compatibles con Microsoft 365 Defender
 description: Obtenga información sobre los servicios de seguridad de Microsoft que se pueden integrar mediante Microsoft 365 Defender, sus requisitos de licencia y los procedimientos de implementación.
-keywords: deploy, licenses, supported services, provisioning, configuration Microsoft 365 Defender, M365, license eligibility, Microsoft Defender para punto de conexión, Microsoft Defender para Office 365, Microsoft Defender for Identity, Microsoft Cloud App Security, MCAS, E5, A5, EMS
+keywords: deploy, licenses, supported services, provisioning, configuration Microsoft 365 Defender, M365, license eligibility, Microsoft Defender para punto de conexión, Microsoft Defender para Office 365, Microsoft Defender for Identity, Microsoft Defender for Cloud Apps, MCAS, E5, A5, EMS
 search.product: eADQiWindows 10XVcnh
 ms.service: microsoft-365-security
 ms.subservice: m365d
@@ -23,12 +23,12 @@ ms.topic: conceptual
 search.appverid:
 - MOE150
 - MET150
-ms.openlocfilehash: 8c7b5f44097bcf2e18b1b9d39e82c4ca468c38aa
-ms.sourcegitcommit: 10e6abe740e27000e223378eb17d657a47555fa8
+ms.openlocfilehash: 9ba05de628da9b98fcea1ad4e363123807f33d51
+ms.sourcegitcommit: ecc04b5b8f84b34255a2d5e90b5ab596af0d16c7
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/31/2022
-ms.locfileid: "67480721"
+ms.lasthandoff: 09/01/2022
+ms.locfileid: "67496689"
 ---
 # <a name="deploy-supported-services"></a>Implementación de servicios compatibles
 

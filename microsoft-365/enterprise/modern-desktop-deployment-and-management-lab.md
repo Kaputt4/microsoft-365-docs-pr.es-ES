@@ -16,12 +16,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: Obtenga información sobre dónde acceder al Kit de laboratorio de implementación de Windows y Office.
-ms.openlocfilehash: fcb0b24480c61dcd5d3856aa800d6a30566d3b02
-ms.sourcegitcommit: 2d1302a6165b83cbbc8c2df2c608d43b6b0498b0
+ms.openlocfilehash: 3457d949887877f6ba3e514d68ca145ef3d155b3
+ms.sourcegitcommit: ecc04b5b8f84b34255a2d5e90b5ab596af0d16c7
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/25/2022
-ms.locfileid: "67433692"
+ms.lasthandoff: 09/01/2022
+ms.locfileid: "67497613"
 ---
 # <a name="windows-and-office-365-deployment-lab-kit"></a>Kit de laboratorio de implementación de Windows y Office 365
 
@@ -31,8 +31,8 @@ Hay dos versiones del laboratorio disponibles para descarga gratuita:
 
 |laboratorio de Windows 10|laboratorio de Windows 11|
 |---|---|
-|[Entorno de laboratorio de Win 10](https://download.microsoft.com/download/8/5/e/85e007b0-1f3e-460c-bd0a-5a8c6ec490b5/Win10_21H2_lab.zip)|[Entorno de laboratorio de Win 11](https://download.microsoft.com/download/5/0/b/50bbe36a-9291-4339-9dcc-2a444fcd1659/Microsoft365DeviceLabKit.zip)|
-|[Guías de laboratorio de Win 10](https://download.microsoft.com/download/b/d/4/bd4f430b-8cd1-4a07-97b1-c32100fce7ae/Win_10_21H2_lab_guides.zip)|[Guías de laboratorio de Win 11](https://download.microsoft.com/download/5/0/b/50bbe36a-9291-4339-9dcc-2a444fcd1659/Win11_SetUp_Guide_08.05.zip)|
+|[entorno de laboratorio de Windows 10](https://download.microsoft.com/download/8/5/e/85e007b0-1f3e-460c-bd0a-5a8c6ec490b5/Win10_21H2_lab.zip)|[entorno de laboratorio de Windows 11](https://download.microsoft.com/download/5/0/b/50bbe36a-9291-4339-9dcc-2a444fcd1659/Microsoft365DeviceLabKit.zip)|
+|[guías de laboratorio de Windows 10](https://download.microsoft.com/download/b/d/4/bd4f430b-8cd1-4a07-97b1-c32100fce7ae/Win_10_21H2_lab_guides.zip)|[guías de laboratorio de Windows 11](https://download.microsoft.com/download/5/0/b/50bbe36a-9291-4339-9dcc-2a444fcd1659/Win11_SetUp_Guide_08.05.zip)|
 
 ## <a name="a-complete-lab-environment"></a>Un entorno de laboratorio completo
 

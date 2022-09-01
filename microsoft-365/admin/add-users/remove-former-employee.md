@@ -28,21 +28,21 @@ search.appverid:
 - MET150
 - MOE150
 description: Bloquee el acceso a Microsoft 365 para que un antiguo empleado no pueda iniciar sesión, proteger los datos de la organización y permitir que otros empleados accedan a su correo electrónico y a los datos de OneDrive.
-ms.openlocfilehash: 12c1656ba0826e9d4d2472427642914cdcc7b2e6
-ms.sourcegitcommit: e9692a40dfe1f8c2047699ae3301c114a01b0d3a
+ms.openlocfilehash: 163cb427ce66f9c1f583681895f18fc67d0745dc
+ms.sourcegitcommit: ecc04b5b8f84b34255a2d5e90b5ab596af0d16c7
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/01/2022
-ms.locfileid: "66601726"
+ms.lasthandoff: 09/01/2022
+ms.locfileid: "67496601"
 ---
 # <a name="overview-remove-a-former-employee-and-secure-data"></a>Información general: Eliminación de un empleado anterior y protección de datos
 
-Consulte la [ayuda para pequeñas empresas de Microsoft 365](https://go.microsoft.com/fwlink/?linkid=2197659) en YouTube.
+Consulte [ayuda de Microsoft 365 para pequeñas empresas](https://go.microsoft.com/fwlink/?linkid=2197659) en YouTube.
 
 Una pregunta que a menudo obtenemos es: "¿Qué debo hacer para proteger los datos y proteger el acceso cuando un empleado deja mi organización?" En esta serie de artículos se explica cómo bloquear el acceso a Microsoft 365 para que estos usuarios no puedan iniciar sesión en Microsoft 365, los pasos que debe seguir para proteger los datos de la organización y cómo permitir que otros empleados accedan al correo electrónico y a los datos de OneDrive.
 
 > [!TIP]
-> Si necesita ayuda con los pasos descritos en este tema, considere la posibilidad de [trabajar con un especialista de Microsoft Small Business](https://go.microsoft.com/fwlink/?linkid=2186871). Con Business Assist, usted y sus empleados obtienen acceso de forma ininterrumpida a especialistas de pequeñas empresas a medida que hace crecer su negocio, desde la incorporación hasta el uso diario.
+> Si necesita ayuda con los pasos que se describen en este tema, considere la posibilidad de [trabajar con un especialista en pequeñas empresas de Microsoft](https://go.microsoft.com/fwlink/?linkid=2186871). Con Business Assist, usted y sus empleados obtienen acceso de forma ininterrumpida a especialistas de pequeñas empresas a medida que hace crecer su negocio, desde la incorporación hasta el uso diario.
 
 ## <a name="before-you-begin"></a>Antes de empezar
 
@@ -82,7 +82,7 @@ Para completar los pasos de esta serie, use estas funcionalidades y característ
 
 ## <a name="watch-delete-a-user"></a>Inspección: Eliminación de un usuario
 
-Echa un vistazo a este vídeo y a otros usuarios en nuestro [canal de YouTube](https://go.microsoft.com/fwlink/?linkid=2198203).
+Consulte este vídeo y otros en nuestro [canal de YouTube](https://go.microsoft.com/fwlink/?linkid=2198203).
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE1FOfR?autoplay=false]
 
@@ -103,4 +103,5 @@ Después de quitar un usuario, tiene hasta 30 días para restaurar su cuenta.
 [Restauración de un usuario](restore-user.md) (artículo)\
 [Agregar un nuevo empleado a Microsoft 365](add-new-employee.md) (artículo)\
 [Asignar licencias a los usuarios](../manage/assign-licenses-to-users.md) (artículo)\
+[Remove-CalendarEvents](/powershell/module/exchange/remove-calendarevents)\
 [Anulación de la asignación de licencias de usuarios](../manage/remove-licenses-from-users.md) (artículo)

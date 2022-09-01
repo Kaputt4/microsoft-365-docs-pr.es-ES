@@ -14,12 +14,12 @@ ms.collection:
 - m365initiative-syntex
 ms.localizationpriority: medium
 description: Obtenga información sobre los modelos precompilados en Microsoft SharePoint Syntex.
-ms.openlocfilehash: 47579f640e02874545177946534d81f1350104cd
-ms.sourcegitcommit: ebaa70d0da4a600efe52b5008eaddb511d36df8c
+ms.openlocfilehash: 04247a627c30e4a13209f11bcdf40c3b24e8aea0
+ms.sourcegitcommit: ecc04b5b8f84b34255a2d5e90b5ab596af0d16c7
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/07/2022
-ms.locfileid: "66687682"
+ms.lasthandoff: 09/01/2022
+ms.locfileid: "67497591"
 ---
 # <a name="prebuilt-models-overview-in-microsoft-sharepoint-syntex"></a>Introducción a los modelos creados previamente en Microsoft SharePoint Syntex
 
@@ -67,8 +67,8 @@ Tenga en cuenta las siguientes diferencias sobre los archivos basados en texto d
 
 - No se admite la aplicación de más de un modelo de procesamiento de formulario personalizado a una biblioteca.
 
-## <a name="see-also"></a>Recursos adicionales
+## <a name="see-also"></a>Vea también
 
-[Uso de un modelo precompilado para extraer información de facturas o recibos](prebuilt-overview.md)
+[Uso de un modelo precompilado para extraer información de facturas o recibos](prebuilt-models.md)
  
 

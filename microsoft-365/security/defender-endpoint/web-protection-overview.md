@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: e54b3c1c696d05bb0f3815b532a4f0e7e92c6331
-ms.sourcegitcommit: 6e570b79944862c86735db455349b685d5b903b6
+ms.openlocfilehash: 886ed68514235669d72fe260cacc9b150d9a04d3
+ms.sourcegitcommit: ecc04b5b8f84b34255a2d5e90b5ab596af0d16c7
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/26/2022
-ms.locfileid: "67020657"
+ms.lasthandoff: 09/01/2022
+ms.locfileid: "67497788"
 ---
 # <a name="web-protection"></a>Protección web
 
@@ -33,9 +33,7 @@ ms.locfileid: "67020657"
 - [Microsoft Defender para punto de conexión Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
-
 > ¿Quiere experimentar Microsoft Defender para punto de conexión? [Regístrese para obtener una prueba gratuita.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-main-abovefoldlink&rtc=1)
-
 
 ## <a name="about-web-protection"></a>Acerca de la protección web
 
@@ -52,6 +50,17 @@ La protección contra amenazas web incluye:
 - Visibilidad completa de las amenazas web que afectan a su organización.
 - Capacidades de investigación sobre la actividad de amenazas relacionada con la web a través de alertas y perfiles completos de direcciones URL y los dispositivos que acceden a estas direcciones URL.
 - Un conjunto completo de características de seguridad que realizan un seguimiento de las tendencias generales de acceso a sitios web malintencionados y no deseados.
+
+> [!NOTE]
+> En el caso de procesos distintos de Microsoft Edge e Internet Explorer, los escenarios de protección web aprovechan la protección de red para la inspección y el cumplimiento:
+>
+> - Ip es compatible con los tres protocolos (TCP, HTTP y HTTPS (TLS)).
+> - Solo se admiten direcciones IP únicas (sin bloques CIDR ni intervalos IP) en indicadores personalizados.
+> - Las direcciones URL cifradas (ruta de acceso completa) solo se pueden bloquear en exploradores de primera entidad (Internet Explorer, Edge).
+> - Las direcciones URL cifradas (solo FQDN) se pueden bloquear en exploradores de terceros (es decir, distintas de Internet Explorer, Edge).
+> - Los bloques de ruta de acceso de dirección URL completa se pueden aplicar a direcciones URL sin cifrar.
+>
+> Puede haber hasta 2 horas de latencia (normalmente menos) entre el momento en que se realiza la acción y la dirección URL y la dirección IP bloqueadas.
 
 Para obtener más información, consulte [Protección contra amenazas web](web-threat-protection.md).
 
@@ -136,7 +145,7 @@ En la tabla siguiente se muestran las respuestas y sus características correlac
 
 |ResponseCategory|Característica responsable del bloque|
 |---|---|
-|CustomPolicy|WCF|
+|CustomPolicy|Wcf|
 |CustomBlockList|Indicadores personalizados|
 |CasbPolicy|Defender for Cloud Apps|
 |Malintencionado|Amenazas web|

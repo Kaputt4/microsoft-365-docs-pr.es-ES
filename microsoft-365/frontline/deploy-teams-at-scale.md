@@ -1,5 +1,5 @@
 ---
-title: Implementar equipos a escala para los trabajadores de primera línea en Microsoft Teams
+title: Implementación de Teams a escala para trabajadores de primera línea
 author: LanaChin
 ms.author: v-lanachin
 ms.reviewer: rahuldey
@@ -8,7 +8,7 @@ ms.topic: article
 audience: admin
 ms.service: microsoft-365-frontline
 search.appverid: MET150
-description: Obtenga información sobre cómo implementar equipos a escala para los trabajadores de primera línea de su organización.
+description: Obtenga información sobre cómo implementar Teams a escala para los trabajadores de primera línea de su organización.
 ms.localizationpriority: high
 ms.collection:
 - M365-collaboration
@@ -16,44 +16,38 @@ ms.collection:
 appliesto:
 - Microsoft Teams
 - Microsoft 365 for frontline workers
-ms.openlocfilehash: e833def27e88a9f59c756bd769a09191e9b2dd5c
-ms.sourcegitcommit: 10e6abe740e27000e223378eb17d657a47555fa8
+ms.openlocfilehash: c9eca5d4d805b3eb9663a3aacf82d8e922585da7
+ms.sourcegitcommit: ecc04b5b8f84b34255a2d5e90b5ab596af0d16c7
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/31/2022
-ms.locfileid: "67467391"
+ms.lasthandoff: 09/01/2022
+ms.locfileid: "67497723"
 ---
-# <a name="deploy-teams-at-scale-for-frontline-workers-in-microsoft-teams"></a>Implementar equipos a escala para los trabajadores de primera línea en Microsoft Teams
-
-> [!NOTE]
-> Esta característica está disponible actualmente en versión preliminar pública. Si desea participar, póngase en contacto con nosotros en [dscale@microsoft.com](mailto:dscale@microsoft.com).
+# <a name="deploy-teams-at-scale-for-frontline-workers"></a>Implementación de Teams a escala para trabajadores de primera línea
 
 ## <a name="overview"></a>Información general
- 
-Su organización puede tener una gran cantidad de equipos empleados para impulsar la comunicación y la colaboración entre los trabajadores de primera línea, que se distribuyen entre diferentes tiendas, ubicaciones y roles. Actualmente, no hay una solución sencilla para implementar, configurar y administrar estos equipos y usuarios a escala.
 
-Estamos creando una solución para permitir que los administradores implementen y administren equipos a escala.
+¿Su organización usa un gran número de equipos para impulsar la comunicación y la colaboración entre los trabajadores de primera línea? Este artículo es para usted si necesita crear y administrar equipos a escala.
 
-Esta es una introducción a las funciones disponibles hoy en día para crear y administrar un gran número de equipos a la vez y lo que planeamos para el futuro próximo.
+Puede usar PowerShell para implementar hasta 500 equipos y agregar hasta 25 usuarios por equipo a la vez. También puede agregar y quitar usuarios de equipos existentes a escala. Use esta solución para satisfacer las necesidades de escala de su organización y reducir significativamente el tiempo de implementación.
 
-||Disponible hoy |Más adelante en 2022  |
-|---------|---------|---------|
-|**Número de equipos que puede crear por lote**|Hasta 100 GB |Hasta 500|
-|**Número de usuarios que puede agregar por equipo**|Hasta 25|Hasta 25|
-
-La implementación de equipos a escala le permite:
+La implementación de Teams a escala le permite:
 
 - Crear equipos mediante plantillas predefinidas o sus propias plantillas personalizadas.
 - Agregue usuarios a los equipos como propietarios o miembros.
 - Administre los equipos a escala agregando o quitando usuarios de los equipos existentes.
 - Reciba una notificación por correo electrónico, incluidos la finalización, el estado y los errores (si los hubiera). Puede optar por notificar hasta cinco personas sobre el estado de cada lote de equipos que implemente. Los propietarios y miembros del equipo reciben una notificación automática cuando se agregan a un equipo.
 
-## <a name="how-to-deploy-teams-at-scale"></a>Cómo implementar equipos a escala
+En este artículo se explica cómo implementar Teams a escala.
+
+:::image type="content" source="media/deploy-teams-at-scale.png" alt-text="Introducción a los pasos para implementar Teams a escala.":::
+
+## <a name="set-up-and-deploy-your-teams"></a>Configuración e implementación de equipos
 
 > [!NOTE]
 > Antes de implementar los equipos, asegúrese de que todos los propietarios de los equipos cuenten con una licencia de Teams.
 
-Siga estos pasos para implementar un gran número de equipos a la vez.
+Siga estos pasos para implementar hasta 500 equipos a la vez.
 
 ### <a name="step-1-prepare-your-csv-files"></a>Paso 1: Preparación de los archivos CSV
 
@@ -112,11 +106,9 @@ Use los siguientes ejemplos para ayudarle a crear los archivos CSV. Aquí hemos 
 |Sydney Mattos|sydneym@contoso.com|Tienda Contoso 9|AddMember|Member|
 |Violet Martinez|violetm@contoso.com|Tienda Contoso 10|AddMember|Member|
 
-### <a name="step-2-deploy-your-teams"></a>Paso 2: Implementar el sitio aislado
+### <a name="step-2-set-up-your-environment"></a>Paso 2: Configuración del entorno
 
-Ahora que ha creado los archivos CSV, está listo para configurar el entorno e implementar los equipos.
-
-Use el ```New-CsBatchTeamsDeployment``` cmdlet para enviar un lote de equipos para crear. Se genera un Id. de orquestación para cada lote. A continuación, puede usar el ```Get-CsBatchTeamsDeployment``` cmdlet para realizar un seguimiento del progreso y el estado de cada lote.
+Siga estos pasos para instalar y conectarse a la versión más reciente del módulo de PowerShell de Teams.
 
 1. Instale PowerShell versión 7 o posterior. Para obtener instrucciones paso a paso, consulte [Instalar PowerShell en Windows](/powershell/scripting/install/installing-powershell-on-windows).
 1. Ejecute PowerShell en modo de administrador.
@@ -127,7 +119,7 @@ Use el ```New-CsBatchTeamsDeployment``` cmdlet para enviar un lote de equipos pa
     ```
 
     Si recibe un mensaje de error, significa que ya está establecido. Vaya al paso siguiente.
-1. Descargue e instale la [versión preliminar más reciente del módulo de PowerShell de Teams](https://www.powershellgallery.com/packages/MicrosoftTeams). Debe ejecutar la versión 4.3.1 (versión preliminar) o una versión preliminar posterior.  
+1. Descargue e instale la [versión más reciente del módulo de PowerShell de Teams](https://www.powershellgallery.com/packages/MicrosoftTeams). Debe ejecutar la versión 4.3.1 (versión preliminar) o una versión posterior.  
 
 1. Ejecute lo siguiente para conectarse a Teams.
 
@@ -145,11 +137,19 @@ Use el ```New-CsBatchTeamsDeployment``` cmdlet para enviar un lote de equipos pa
 
     Compruebe que ```New-CsBatchTeamsDeployment``` y ```Get-CsBatchTeamsDeploymentStatus``` aparecen en la lista.
 
+### <a name="step-3-deploy-your-teams"></a>Paso 3: Implementación de los equipos
+
+Ahora que ha creado los archivos CSV y configurado el entorno, está listo para implementar los equipos.
+
+Use el ```New-CsBatchTeamsDeployment``` cmdlet para enviar un lote de equipos para crear. Se genera un Id. de orquestación para cada lote. A continuación, puede usar el ```Get-CsBatchTeamsDeploymentStatus``` cmdlet para realizar un seguimiento del progreso y el estado de cada lote.
+
 1. Ejecute lo siguiente para implementar un lote de equipos. En este comando, especificará la ruta de acceso a los archivos CSV y las direcciones de correo electrónico de hasta cinco destinatarios para notificar sobre esta implementación.
 
     ```powershell
     New-CsBatchTeamsDeployment -TeamsFilePath "Your CSV file path" -UsersFilePath "Your CSV file path" -UsersToNotify "Email addresses" 
     ```
+
+    Los destinatarios recibirán notificaciones por correo electrónico sobre el estado de la implementación. El correo electrónico contiene el Id. de orquestación del lote que envió y los errores que puedan haberse producido.
 
     Por ejemplo:
 
@@ -157,20 +157,13 @@ Use el ```New-CsBatchTeamsDeployment``` cmdlet para enviar un lote de equipos pa
     New-CsBatchTeamsDeployment -TeamsFilePath "C:\dscale\Teams.csv" -UsersFilePath "C:\dscale\Users.csv" -UsersToNotify "adminteams@contoso.com,adelev@contoso.com"
     ```
 
-    Los destinatarios recibirán notificaciones por correo electrónico sobre el estado de la implementación. El correo electrónico contiene el Id. de orquestación del lote que envió y los errores que puedan haberse producido.
-
 1. Ejecute lo siguiente para comprobar el estado del lote que envió.
 
     ```powershell
     Get-CsBatchTeamsDeploymentStatus -OrchestrationId "OrchestrationId"
     ```
 
-## <a name="send-us-feedback"></a>Enviarnos comentarios
-
-Valoramos sus comentarios. Facilidad de uso, confiabilidad, rendimiento&mdash;¡lo agradecemos todo!
-
-Email [dscale@microsoft.com](mailto:dscale@microsoft.com) e incluya el Id. de orquestación y el archivo de error, si lo tiene.
-
 ## <a name="related-articles"></a>Artículos relacionados
 
 - [Descripción de PowerShell para Teams](/microsoftteams/teams-powershell-overview)
+- [Obtenga información sobre dónde empezar con una implementación de primera línea](flw-deploy-overview.md)

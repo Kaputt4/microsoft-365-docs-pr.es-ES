@@ -1,5 +1,5 @@
 ---
-title: Quitar conectores bloqueados del portal de entidades restringidas en Microsoft 365
+title: Eliminación de conectores bloqueados del portal de entidades restringidas en Microsoft 365
 f1.keywords:
 - NOCSH
 ms.author: dansimp
@@ -14,18 +14,18 @@ ms.collection:
 - M365-security-compliance
 ms.custom: ''
 description: Obtenga información sobre cómo quitar conectores bloqueados en Microsoft 365 Defender.
-ms.technology: mdo
-ms.prod: m365-security
-ms.openlocfilehash: d0797f0ec16b8f813cf7db9b2fd27468c141ea53
-ms.sourcegitcommit: ebbe8713297675db5dcb3e0d9c3ae5e746b99196
+ms.subservice: mdo
+ms.service: microsoft-365-security
+ms.openlocfilehash: f15a782d9acac240a091e4a6670e00d83bead517
+ms.sourcegitcommit: ecc04b5b8f84b34255a2d5e90b5ab596af0d16c7
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/14/2022
-ms.locfileid: "65417005"
+ms.lasthandoff: 09/01/2022
+ms.locfileid: "67495827"
 ---
 # <a name="remove-blocked-connectors-from-the-restricted-entities-portal"></a>Eliminación de conectores bloqueados del portal de entidades restringidas
 
-[!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
+[!INCLUDE [MDO Trial banner](../includes/mdo-trial-banner.md)]
 
 **Se aplica a**
 
@@ -54,7 +54,7 @@ Hay 2 tipos de entidades restringidas:
 
 - Abra el portal de Microsoft 365 Defender en <https://security.microsoft.com>. Para ir directamente a la página **Entidades restringidas** , use <https://security.microsoft.com/restrictedentities>.
 
-- Para conectarse al PowerShell de Exchange Online, consulte [Conectarse a PowerShell de Exchange Online](/powershell/exchange/connect-to-exchange-online-powershell).
+- Para conectarse al PowerShell de Exchange Online, consulte [Conexión a Exchange Online PowerShell](/powershell/exchange/connect-to-exchange-online-powershell).
 
 - Debe tener permisos en **Exchange Online** para poder seguir los procedimientos mencionados en este artículo:
   - Para quitar conectores del portal de entidades restringidas, debe ser miembro de los grupos de roles Administración de la **organización** o **Administrador de seguridad** .
@@ -72,7 +72,7 @@ Hay 2 tipos de entidades restringidas:
 
 ## <a name="use-the-microsoft-365-defender-portal-to-remove-a-connector-from-the-restricted-entities-list"></a>Use el portal de Microsoft 365 Defender para quitar un conector de la lista entidades restringidas
 
-1. En el [portal de Microsoft 365 Defender](https://security.microsoft.com), vaya a **Correo electrónico & entidades** **restringidas** **de revisión de** \> colaboración\>. Para ir directamente a la página **Entidades restringidas** , use <https://security.microsoft.com/restrictedentities>.
+1. En el [portal de Microsoft 365 Defender](https://security.microsoft.com), vaya a Email & **entidades restringidas** **de revisión de** \> **colaboración**\>. Para ir directamente a la página **Entidades restringidas** , use <https://security.microsoft.com/restrictedentities>.
 
 2. En la página **Entidades restringidas** , busque y seleccione el conector que desea desbloquear haciendo clic en el conector.
 

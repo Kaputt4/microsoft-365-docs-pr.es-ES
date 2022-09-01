@@ -4,7 +4,7 @@ description: Describe las directivas recomendadas por Microsoft para aplicar dir
 ms.author: dansimp
 author: dansimp
 manager: Laurawi
-ms.prod: m365-security
+ms.service: microsoft-365-security
 ms.topic: article
 audience: Admin
 f1.keywords:
@@ -21,13 +21,13 @@ ms.collection:
 - m365solution-scenario
 - zerotrust-solution
 - highpri
-ms.technology: mdo
-ms.openlocfilehash: 4a63855d25a7ace428fd3fd93e134f4a6ffcbce3
-ms.sourcegitcommit: 10e6abe740e27000e223378eb17d657a47555fa8
+ms.subservice: mdo
+ms.openlocfilehash: f8045ae49d919b67ffe517c5f7bd2e13a97078e1
+ms.sourcegitcommit: ecc04b5b8f84b34255a2d5e90b5ab596af0d16c7
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/31/2022
-ms.locfileid: "67482877"
+ms.lasthandoff: 09/01/2022
+ms.locfileid: "67497547"
 ---
 # <a name="policy-recommendations-for-securing-email"></a>Recomendaciones de directivas para proteger el correo electrónico
 

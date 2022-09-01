@@ -17,14 +17,14 @@ ms.collection:
 - M365-security-compliance
 description: Obtenga información sobre los informes inteligentes y la información, y cómo usarlos para ver y explorar datos y realizar acciones rápidas.
 ms.custom: seo-marvel-apr2020
-ms.technology: mdo
-ms.prod: m365-security
-ms.openlocfilehash: 3dc90846f68d5e3ef5a1b2a003f5afb69cab3c60
-ms.sourcegitcommit: 44ece87e3e0c0c851dfc1e77211ac3e5e4a5b973
+ms.subservice: mdo
+ms.service: microsoft-365-security
+ms.openlocfilehash: 93a0a0891710678f6dee56e47bbb1d35e0952791
+ms.sourcegitcommit: ecc04b5b8f84b34255a2d5e90b5ab596af0d16c7
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/05/2022
-ms.locfileid: "66617094"
+ms.lasthandoff: 09/01/2022
+ms.locfileid: "67496645"
 ---
 # <a name="smart-reports-and-insights-in-the-security--compliance-center"></a>Informes inteligentes y reportes en el Centro de seguridad y cumplimiento
 
@@ -52,7 +52,7 @@ En la tabla siguiente se enumeran los informes que están disponibles en el **pa
 |Tipo de información|Cómo llegar ahí|Dónde ir para obtener más información|
 |---|---|---|
 |**Todo arriba** <p> Información y recomendaciones principales, así como vínculos a informes de seguridad e informes de cumplimiento disponibles.|<https://protection.office.com/insightdashboard>|[Informes del Centro de seguridad y cumplimiento](../../compliance/reports-in-security-and-compliance.md)|
-|**Informes de colaboración de & por correo electrónico** <p> Detecciones de amenazas, tendencias de malware, usuarios de destino superior, detalles sobre los mensajes de correo electrónico enviados y recibidos, etc.|<https://security.microsoft.com/emailandcollabreport>|[Ver informes de seguridad de correo electrónico](view-email-security-reports.md) <p> [Ver informes para Defender para Office 365](view-reports-for-mdo.md)|
+|**informes de colaboración de Email &** <p> Detecciones de amenazas, tendencias de malware, usuarios de destino superior, detalles sobre los mensajes de correo electrónico enviados y recibidos, etc.|<https://security.microsoft.com/emailandcollabreport>|[Ver informes de seguridad de correo electrónico](view-email-security-reports.md) <p> [Ver informes para Defender para Office 365](view-reports-for-mdo.md)|
 |**Explorador** (también conocido como Explorador de amenazas) o **Detecciones en tiempo real** <p> Sospecha de malware detectado en el correo electrónico y los archivos de Microsoft 365.|<https://security.microsoft.com/threatexplorer> <p> <https://security.microsoft.com/realtimereports>|[Explorador de amenazas (o detecciones en tiempo real)](threat-explorer.md)|
 
 ## <a name="related-topics"></a>Temas relacionados

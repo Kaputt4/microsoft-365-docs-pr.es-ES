@@ -17,18 +17,18 @@ ms.collection:
 ms.custom:
 - seo-marvel-apr2020
 description: Use el nuevo panel de seguridad para revisar Office 365 estado de protección contra amenazas y ver y actuar sobre las alertas de seguridad.
-ms.technology: mdo
-ms.prod: m365-security
-ms.openlocfilehash: defda5c112cf29cb944b502f442cf0e721a32676
-ms.sourcegitcommit: 45bc65972d4007b2aa7760d4457a0d2699f81926
+ms.subservice: mdo
+ms.service: microsoft-365-security
+ms.openlocfilehash: f417c64329b0a8e276e34e65520b56f7d788171b
+ms.sourcegitcommit: ecc04b5b8f84b34255a2d5e90b5ab596af0d16c7
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/20/2022
-ms.locfileid: "64971746"
+ms.lasthandoff: 09/01/2022
+ms.locfileid: "67497299"
 ---
 # <a name="security-dashboard-in-the-security--compliance-center"></a>Panel de seguridad en el Centro de cumplimiento de & de seguridad
 
-[!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
+[!INCLUDE [MDO Trial banner](../includes/mdo-trial-banner.md)]
 
 ## <a name="basic-functions-and-how-to-open-security-dashboard"></a>Funciones básicas y cómo abrir el panel de seguridad
 
@@ -70,7 +70,7 @@ Los detalles dependen de si la suscripción de Microsoft 365 incluye [Exchange O
 |Si la suscripción incluye...|Verá estos detalles.|
 |---|---|
 |EOP pero no Microsoft Defender para Office 365|Correo electrónico malintencionado detectado y bloqueado por EOP.<p> Consulte [Informe de estado de protección contra amenazas (EOP).](view-email-security-reports.md#threat-protection-status-report)|
-|Microsoft Defender para Office 365|EOP y Defender para Office 365 detectan y bloquean el contenido malintencionado y el correo electrónico malintencionado <p> Recuento agregado de mensajes de correo electrónico únicos con contenido malintencionado bloqueado por el motor antimalware, [purga automática de cero horas](zero-hour-auto-purge.md) y características de Defender para Office 365 ([incluidos vínculos de Caja fuerte](safe-links.md), [datos adjuntos Caja fuerte](safe-attachments.md) y [anti phishing en Defender para Office 365](set-up-anti-phishing-policies.md#exclusive-settings-in-anti-phishing-policies-in-microsoft-defender-for-office-365)). <p> Consulte [Informe de estado de protección contra amenazas](view-reports-for-mdo.md#threat-protection-status-report).|
+|Microsoft Defender para Office 365|EOP y Defender para Office 365 detectan y bloquean el contenido malintencionado y el correo electrónico malintencionado <p> Recuento agregado de mensajes de correo electrónico únicos con contenido malintencionado bloqueado por el motor antimalware, [purga automática de cero horas](zero-hour-auto-purge.md) y características de Defender para Office 365 ([incluidos Vínculos seguros](safe-links.md), [Datos adjuntos seguros](safe-attachments.md) y [Anti-phishing en Defender para Office 365](set-up-anti-phishing-policies.md#exclusive-settings-in-anti-phishing-policies-in-microsoft-defender-for-office-365)). <p> Consulte [Informe de estado de protección contra amenazas](view-reports-for-mdo.md#threat-protection-status-report).|
 
 Para ver o acceder al widget Estado de protección contra amenazas, debe tener permisos para ver Defender para Office 365 informes. Para obtener más información, consulte [¿Qué permisos se necesitan para ver los informes de Defender para Office 365?](view-reports-for-mdo.md#what-permissions-are-needed-to-view-the-defender-for-office-365-reports)
 
@@ -97,7 +97,7 @@ Los widgets de malware muestran detalles sobre las tendencias de malware y los t
 
 ## <a name="insights"></a>Insights
 
-Ideas no solo se exponen los problemas clave que debe revisar, sino que también incluyen recomendaciones y acciones que se deben tener en cuenta.
+Las conclusiones no solo exponen los problemas clave que debe revisar, sino que también incluyen recomendaciones y acciones que se deben tener en cuenta.
 
 :::image type="content" source="../../media/smartinsights.png" alt-text="La información inteligente" lightbox="../../media/smartinsights.png":::
 
@@ -107,7 +107,7 @@ Por ejemplo, es posible que vea que los mensajes de correo electrónico de phish
 
 Si la suscripción de su organización incluye [Microsoft Defender para Office 365 plan 2](office-365-ti.md), el panel de seguridad tiene una sección que incluye herramientas avanzadas de investigación y respuesta de amenazas. Estas herramientas incluyen [funcionalidades automatizadas de investigación y respuesta](automated-investigation-response-office.md). La investigación y la respuesta automatizadas pueden ser útiles en escenarios como [abordar rápidamente las cuentas de usuario en peligro](address-compromised-users-quickly.md).
 
-Para obtener más información, consulte [Comenzar uso de la investigación y respuesta automatizadas (AIR) en Office 365](office-365-air.md).
+Para obtener más información, consulte [Introducción al uso de la investigación y respuesta automatizadas (AIR) en Office 365](office-365-air.md).
 
 ## <a name="trends"></a>Tendencias
 
@@ -117,7 +117,7 @@ Cerca de la parte inferior del panel de seguridad hay una sección **Tendencias*
 
 Y, si la suscripción de su organización incluye [Defender para Office 365 plan 2](office-365-ti.md), también tendrá un informe de **alertas de administración de amenazas recientes** en esta sección que permite al equipo de seguridad ver y tomar medidas en alertas de seguridad de prioridad alta.
 
-Para ver o acceder al widget Correo electrónico enviado y recibido, debe tener permisos para ver Defender para Office 365 informes. Para obtener más información, consulte [¿Qué permisos se necesitan para ver los informes de Defender para Office 365?](view-reports-for-mdo.md#what-permissions-are-needed-to-view-the-defender-for-office-365-reports).
+Para ver o acceder al widget de Email enviado y recibido, debe tener permisos para ver Defender para Office 365 informes. Para obtener más información, consulte [¿Qué permisos se necesitan para ver los informes de Defender para Office 365?](view-reports-for-mdo.md#what-permissions-are-needed-to-view-the-defender-for-office-365-reports).
 
 Para ver o acceder al widget Alertas de administración de amenazas recientes, debe tener permisos para ver las alertas. Para obtener más información, consulte [Permisos de RBAC necesarios para ver las alertas](../../compliance/alert-policies.md#rbac-permissions-required-to-view-alerts).
 

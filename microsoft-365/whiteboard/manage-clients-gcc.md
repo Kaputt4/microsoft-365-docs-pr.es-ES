@@ -13,12 +13,12 @@ ms.collection: ''
 ms.localizationpriority: medium
 description: Obtenga información sobre qué clientes son compatibles actualmente con Whiteboard.
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: ccca3a2b24c774a095b1c17ef3e8a3d72fe958bf
-ms.sourcegitcommit: 031b3e963478f642a0d23be37a01f23a01cb3d84
+ms.openlocfilehash: 0a4250b356e56857581a5083c515b44513d844f3
+ms.sourcegitcommit: ecc04b5b8f84b34255a2d5e90b5ab596af0d16c7
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/26/2022
-ms.locfileid: "67441972"
+ms.lasthandoff: 09/01/2022
+ms.locfileid: "67497482"
 ---
 # <a name="manage-clients-for-microsoft-whiteboard-in-gcc-environments"></a>Administración de clientes para Microsoft Whiteboard en entornos de GCC
 
@@ -34,24 +34,20 @@ Actualmente se admiten los siguientes clientes en Whiteboard:
 - Aplicación web de pizarra independiente en [https://whiteboard.office365.us](https://whiteboard.office365.us)
 - Reuniones, chats y canales de Microsoft Teams mediante el escritorio y la web de Teams
 - Aplicación de pizarra independiente para dispositivos móviles
+- Aplicaciones de pizarra independientes para Windows 10
 
 ## <a name="clients-planned"></a>Clientes planeados
 
 Los siguientes clientes están previstos para futuras versiones de Whiteboard:
 
-- Aplicación de pizarra independiente para Windows 10 o versiones posteriores
-- Aplicación de pizarra independiente para Surface Hub (actualmente se puede usar en modo anónimo)
 - Pizarra en el iniciador de aplicaciones Office.com
-- Pizarra en reuniones de Teams en Surface Hub y salas de reuniones de Teams
-- Pizarra en llamadas 1:1 en Teams
+- Pizarra en la sala de reuniones de Teams
 
-> [!NOTE]
-> Aunque los usuarios pueden instalar el cliente de Windows, no podrán iniciar sesión hasta que se actualice el cliente.
 
 ## <a name="see-also"></a>Vea también
 
-[Administración del acceso a Whiteboard- GCC High](manage-whiteboard-access-gcc-high.md)
+[Administración del acceso a Whiteboard: GCC](manage-whiteboard-access-gcc.md)
 
-[Administración de datos para Pizarra: GCC High](manage-data-gcc-high.md)
+[Administración de datos para Whiteboard: GCC](manage-data-gcc.md)
 
-[Administración del uso compartido para Pizarra: GCC High](manage-sharing-gcc-high.md)
+[Administración del uso compartido para Pizarra: GCC](manage-sharing-gcc.md)

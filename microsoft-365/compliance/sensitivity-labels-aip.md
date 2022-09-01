@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Cuando use el cliente de etiquetado unificado de Azure Information Protection (AIP), comprenda las ventajas de usar el etiquetado integrado para aplicaciones Office en lugar del complemento AIP.
-ms.openlocfilehash: 9f1bf7c7243ce2414c70ad3fd487ab43465b905f
-ms.sourcegitcommit: 34910ea9318289d78c35b0e7990238467c05384b
-ms.translationtype: HT
+ms.openlocfilehash: 0c2f4989407d4498df3d4e3401b935f5200b2412
+ms.sourcegitcommit: ecc04b5b8f84b34255a2d5e90b5ab596af0d16c7
+ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/10/2022
-ms.locfileid: "67306270"
+ms.lasthandoff: 09/01/2022
+ms.locfileid: "67497657"
 ---
 # <a name="why-choose-built-in-labeling-over-the-aip-add-in-for-office-apps"></a>Por qué elegir el etiquetado integrado en lugar del complemento de AIP para aplicaciones de Office
 
@@ -74,7 +74,7 @@ Algunas características solo son compatibles con el etiquetado integrado para l
     - Acceso a servicios de clasificación inteligentes que incluyen [clasificadores capacitados](classifier-learn-about.md), [coincidencia exacta de datos (EDM)](sit-learn-about-exact-data-match-based-sits.md) y [entidades con nombre](named-entities-learn.md)
     - Detección de información confidencial a medida que los usuarios escriben
     - En Word, los usuarios pueden revisar y quitar el contenido confidencial identificado
-- [Soporte de PDF](sensitivity-labels-office-apps.md#pdf-support) (en versión preliminar)
+- [Compatibilidad con PDF](sensitivity-labels-office-apps.md#pdf-support)
 - En el caso de las etiquetas que permiten a los usuarios asignar permisos, se pueden conceder permisos diferentes (lectura o cambio) a usuarios o grupos
 - Solo cifrar para correos electrónicos
 - Visibilidad de etiquetas en la barra de estado

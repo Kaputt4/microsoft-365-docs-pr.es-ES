@@ -16,12 +16,12 @@ ms.collection:
 description: Los administradores pueden aprender a permitir o bloquear direcciones URL en la lista de inquilinos permitidos o bloqueados en el portal de seguridad.
 ms.subservice: mdo
 ms.service: microsoft-365-security
-ms.openlocfilehash: 4160bb2351f0096dafb189d63a9b0498c141fdde
-ms.sourcegitcommit: 10e6abe740e27000e223378eb17d657a47555fa8
+ms.openlocfilehash: f29e410a6457a4810bf98436f912a57866978241
+ms.sourcegitcommit: ecc04b5b8f84b34255a2d5e90b5ab596af0d16c7
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/31/2022
-ms.locfileid: "67467039"
+ms.lasthandoff: 09/01/2022
+ms.locfileid: "67495113"
 ---
 # <a name="allow-or-block-urls-using-the-tenant-allowblock-list"></a>Permitir o bloquear direcciones URL mediante la lista de bloqueados y permitidos del espacio empresarial
 
@@ -81,10 +81,9 @@ Para obtener instrucciones, consulte [Notificar direcciones URL cuestionables a 
 
 ### <a name="use-the-microsoft-365-defender-portal-to-create-block-entries-for-urls-in-the-tenant-allowblock-list"></a>Use el portal de Microsoft 365 Defender para crear entradas de bloque para direcciones URL en la lista de permitidos o bloques de inquilinos.
 
-Las entradas de bloque se crean para las direcciones URL directamente en la lista de permitidos o bloqueados de inquilinos.
+Puede crear entradas de bloque para direcciones URL directamente en la lista de permitidos o bloqueados de inquilinos.
 
-> [!NOTE]
-> Email mensajes que contienen estas direcciones URL bloqueadas se bloquean como *suplantación de identidad de alta confianza*.
+Email mensajes que contienen estas direcciones URL bloqueadas se bloquean como *suplantación de identidad de alta confianza*.
 
 1. En el portal de Microsoft 365 Defender en <https://security.microsoft.com>, vaya a **Directivas & reglas De directivas** \> de amenazas sección \> **Reglas de directivas** de **amenazas** \> **Listas de permitidos o bloques de inquilinos**. O bien, para ir directamente a la página **Permitir o bloquear lista de inquilinos** , use <https://security.microsoft.com/tenantAllowBlockList>.
 

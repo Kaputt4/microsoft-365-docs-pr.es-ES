@@ -17,14 +17,14 @@ ms.collection:
 - M365-security-compliance
 description: Integre el servidor SIEM de su organización con Microsoft Defender para Office 365 y eventos de amenazas relacionados en la API de administración de actividad de Office 365.
 ms.custom: seo-marvel-apr2020
-ms.technology: mdo
-ms.prod: m365-security
-ms.openlocfilehash: 2ffa1e59f368af4b3e99cee9939ed0ead0cc686e
-ms.sourcegitcommit: fdd0294e6cda916392ee66f5a1d2a235fb7272f8
+ms.subservice: mdo
+ms.service: microsoft-365-security
+ms.openlocfilehash: 90a3b87b4ce2c52a26c2d95b6f607816ff26afa4
+ms.sourcegitcommit: ecc04b5b8f84b34255a2d5e90b5ab596af0d16c7
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/29/2022
-ms.locfileid: "65131006"
+ms.lasthandoff: 09/01/2022
+ms.locfileid: "67497387"
 ---
 # <a name="siem-integration-with-microsoft-defender-for-office-365"></a>Integración de SIEM con Microsoft Defender para Office 365
 
@@ -33,13 +33,13 @@ ms.locfileid: "65131006"
 - [Plan 1 y Plan 2 de Microsoft Defender para Office 365](defender-for-office-365.md)
 - [Microsoft 365 Defender](../defender/microsoft-365-defender.md)
 
-[!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
+[!INCLUDE [MDO Trial banner](../includes/mdo-trial-banner.md)]
 
 Si su organización usa un servidor de administración de eventos e información de seguridad (SIEM), puede integrar Microsoft Defender para Office 365 con el servidor SIEM. Puede configurar esta integración mediante la [API de administración de actividad de Office 365](/office/office-365-management-api/office-365-management-activity-api-reference).
 
 La integración siem permite ver información, como malware o phish detectados por Microsoft Defender para Office 365, en los informes del servidor SIEM.
 
-- Para ver un ejemplo de integración de SIEM con Microsoft Defender para Office 365, consulte [el blog de Tech Community: Mejora de la eficacia del SOC con Defender para Office 365 y la API de administración de O365](https://techcommunity.microsoft.com/t5/microsoft-security-and/improve-the-effectiveness-of-your-soc-with-office-365-atp-and/ba-p/1525185).
+- Para ver un ejemplo de integración de SIEM con Microsoft Defender para Office 365, consulte [el blog de tech community: Improve the Effectiveness of your SOC with Defender para Office 365 and the O365 Management API(Blog de tech community: Mejora de la eficacia de su SOC con Defender para Office 365 y la API de administración de O365](https://techcommunity.microsoft.com/t5/microsoft-security-and/improve-the-effectiveness-of-your-soc-with-office-365-atp-and/ba-p/1525185)).
 - Para obtener más información sobre las API de administración de Office 365, consulte [introducción a las API de administración de Office 365](/office/office-365-management-api/office-365-management-apis-overview).
 
 ## <a name="how-siem-integration-works"></a>Funcionamiento de la integración siem
@@ -48,7 +48,7 @@ La API de administración de actividad de Office 365 recupera información sobre
 
 Recientemente, los eventos de las funcionalidades automatizadas de investigación y respuesta en [Microsoft Defender para Office 365 plan 2](defender-for-office-365.md#microsoft-defender-for-office-365-plan-1-and-plan-2) se agregaron a la API de actividad de administración de Office 365. Además de incluir datos sobre los detalles principales de la investigación, como el identificador, el nombre y el estado, la API también contiene información de alto nivel sobre las acciones de investigación y las entidades.
 
-El servidor SIEM u otro sistema similar sondea la carga de trabajo **audit.general** para acceder a los eventos de detección. Para obtener más información, consulte [Comenzar con las API de administración de Office 365](/office/office-365-management-api/get-started-with-office-365-management-apis).
+El servidor SIEM u otro sistema similar sondea la carga de trabajo **audit.general** para acceder a los eventos de detección. Para más información, consulte [Introducción a las API de administración de Office 365](/office/office-365-management-api/get-started-with-office-365-management-apis).
 
 ## <a name="enum-auditlogrecordtype---type-edmint32"></a>Enum: AuditLogRecordType - Tipo: Edm.Int32
 
@@ -59,8 +59,8 @@ En la tabla siguiente se resumen los valores de **AuditLogRecordType** que son r
 | Valor | Nombre del miembro | Descripción |
 |---|---|---|
 | 28| ThreatIntelligence | Eventos de suplantación de identidad y malware de Exchange Online Protection y Microsoft Defender para Office 365. |
-| 41| ThreatIntelligenceUrl | Caja fuerte Vincula los eventos de invalidación de tiempo de bloqueo y bloqueo de Microsoft Defender para Office 365. |
-| 47| ThreatIntelligenceAtpContent | Eventos de phishing y malware para archivos de SharePoint Online, OneDrive para la Empresa y Microsoft Teams, desde Microsoft Defender para Office 365. |
+| 41| ThreatIntelligenceUrl | Eventos de invalidación de bloque y tiempo de bloqueo de vínculos seguros de Microsoft Defender para Office 365. |
+| 47| ThreatIntelligenceAtpContent | Eventos de phishing y malware para archivos en SharePoint Online, OneDrive para la Empresa y Microsoft Teams, desde Microsoft Defender para Office 365. |
 | 64| AirInvestigation | Eventos de investigación y respuesta automatizados, como detalles de la investigación y artefactos pertinentes, de Microsoft Defender para Office 365 Plan 2. |
 
 > [!IMPORTANT]
@@ -68,7 +68,7 @@ En la tabla siguiente se resumen los valores de **AuditLogRecordType** que son r
 >
 > El registro de auditoría debe estar activado para el entorno de Microsoft 365. Para obtener ayuda con esto, consulte [Activar o desactivar la búsqueda de registros de auditoría](../../compliance/turn-audit-log-search-on-or-off.md).
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 [Investigación y respuesta de amenazas de Office 365](office-365-ti.md)
 

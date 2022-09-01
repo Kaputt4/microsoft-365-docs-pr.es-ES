@@ -11,14 +11,14 @@ ms.localizationpriority: medium
 ms.collection:
 - M365-security-compliance
 description: Obtenga información sobre cómo notificar falsos positivos y falsos negativos en Outlook mediante la característica Mensaje de informe.
-ms.technology: mdo
-ms.prod: m365-security
-ms.openlocfilehash: 5955f6b5c4e376f296dcdad2d54a627bbcce04c3
-ms.sourcegitcommit: 1734c95ce72d9c8af695cb4b49b1e40d921a1fee
+ms.subservice: mdo
+ms.service: microsoft-365-security
+ms.openlocfilehash: 92ec6777469caaa47664130a66acfcb72e7329ba
+ms.sourcegitcommit: ecc04b5b8f84b34255a2d5e90b5ab596af0d16c7
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/07/2022
-ms.locfileid: "66685687"
+ms.lasthandoff: 09/01/2022
+ms.locfileid: "67497365"
 ---
 # <a name="report-false-positives-and-false-negatives-in-outlook"></a>Informar de falsos positivos y falsos negativos en Outlook
 
@@ -58,7 +58,7 @@ Vea este breve vídeo para obtener información sobre cómo puede usar Microsoft
 
 ### <a name="report-junk-and-phishing-messages"></a>Informar de mensajes no deseados y de suplantación de identidad
 
-Para los mensajes de la Bandeja de entrada o de cualquier otra carpeta de correo electrónico excepto correo no deseado, use el siguiente método para notificar mensajes de spam y phishing:
+Para los mensajes de la Bandeja de entrada o de cualquier otra carpeta de correo electrónico excepto correo no deseado Email, use el siguiente método para notificar mensajes de spam y phishing:
 
 1. Seleccione los puntos suspensivos **Más acciones** en la esquina superior derecha del mensaje seleccionado, seleccione **Mensaje** de informe en el menú desplegable y, a continuación, seleccione **Correo no deseado** o **Phishing**.
 
@@ -67,7 +67,7 @@ Para los mensajes de la Bandeja de entrada o de cualquier otra carpeta de correo
    :::image type="content" source="../../media/report-message-junk-phishing.png" alt-text="Opción Correo no deseado y suplantación de identidad en el panel Mensaje de informe" lightbox="../../media/report-message-junk-phishing.png":::
 
 2. Los mensajes seleccionados se enviarán a Microsoft para su análisis y:
-   - Se ha movido a la carpeta Correo no deseado si se notificaron como correo no deseado.
+   - Se ha movido a la carpeta junk Email si se han notificado como correo no deseado.
    - Se eliminaron si se notificaron como suplantación de identidad (phishing).
 
 ### <a name="report-messages-that-are-not-junk"></a>Informar de mensajes que no son correo no deseado

@@ -19,12 +19,12 @@ ms.collection:
 - m365initiative-m365-defender
 - M365-security-compliance
 ms.date: ''
-ms.openlocfilehash: 5a4fcb8e467a9ec79a03b27d8e8260406a615a54
-ms.sourcegitcommit: d09eb780dc41a01796eb8137fbe9267231af6746
+ms.openlocfilehash: a05ddff1ef6c9689143c36cde3c9d0719c7dab10
+ms.sourcegitcommit: ecc04b5b8f84b34255a2d5e90b5ab596af0d16c7
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/19/2022
-ms.locfileid: "67385948"
+ms.lasthandoff: 09/01/2022
+ms.locfileid: "67497801"
 ---
 # <a name="network-protection-for-linux"></a>Protección de red para Linux
 
@@ -189,7 +189,7 @@ Además, asegúrese de que en Las **características avanzadas** de **los** >  p
    > [!NOTE]
    > Si va a quitar una directiva o cambiar grupos de dispositivos al mismo tiempo, esto podría provocar un retraso en la implementación de directivas.
    > Sugerencia profesional: puede implementar una directiva sin seleccionar ninguna categoría en un grupo de dispositivos. Esta acción creará una directiva de solo auditoría para ayudarle a comprender el comportamiento del usuario antes de crear una directiva de bloque.
-4. [Integre Microsoft Defender para punto de conexión con Cloud App Security](/defender-cloud-apps/mde-integration.md) y los dispositivos macOS habilitados para la protección de red tendrán funcionalidades de cumplimiento de directivas de punto de conexión.
+4. [Integre Microsoft Defender para punto de conexión con Defender for Cloud Apps](/defender-cloud-apps/mde-integration) y los dispositivos macOS habilitados para la protección de red tendrán funcionalidades de cumplimiento de directivas de punto de conexión.
    > [!NOTE]
    > La detección y otras características no se admiten actualmente en estas plataformas.
 

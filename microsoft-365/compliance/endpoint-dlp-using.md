@@ -18,12 +18,12 @@ ms.collection:
 search.appverid:
 - MET150
 description: Aprenda cómo configurar las directivas de prevención de pérdida de datos (DLP) para usar las ubicaciones de la Prevención de pérdida de datos de punto de conexión.
-ms.openlocfilehash: 0224fefeb5b33bf688dea37b4609408e6d299557
-ms.sourcegitcommit: e6595be36bbaba244439bd59dbae935e2b258ded
+ms.openlocfilehash: eef4e62f013c95788d723a250b5d8b833bf574b8
+ms.sourcegitcommit: ecc04b5b8f84b34255a2d5e90b5ab596af0d16c7
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/27/2022
-ms.locfileid: "67450089"
+ms.lasthandoff: 09/01/2022
+ms.locfileid: "67497847"
 ---
 # <a name="using-endpoint-data-loss-prevention"></a>Uso de la prevención de pérdida de datos en punto de conexión
 
@@ -295,7 +295,7 @@ Estos son algunos ejemplos:
 1. Seleccione **Agregar un nuevo grupo de dominios de servicio confidencial**.
 1. Asigne un nombre al grupo.
 1. Seleccione el **Tipo de coincidencia** que quiera. Puede seleccionar entre **URL**, **Dirección IP**, **Intervalo de direcciones IP**.
-1. Escriba el valor adecuado en **Agregar nuevos dominios de servicio a este grupo**. Puede agregar varios sitios web a un grupo y usar caracteres comodín para cubrir subdominios.  Por ejemplo, www.contoso.com solo para el sitio web de nivel superior o *.contoso.com para corp.contoso.com, hr.contoso.com fin.contoso.com
+1. Escriba el valor adecuado en **Agregar nuevos dominios de servicio a este grupo**. Puede agregar varios sitios web a un grupo y usar caracteres comodín para cubrir subdominios.  Por ejemplo, `www.contoso.com` solo para el sitio web de nivel superior o \*.contoso.com para corp.contoso.com, hr.contoso.com, fin.contoso.com
 1. Haga clic en **Guardar**.
 1. Seleccione **Directivas**.
 1. Cree y defina el ámbito de una directiva que solo se aplica a **Dispositivos**. Vea, [Crear, probar y ajustar una directiva DLP](create-test-tune-dlp-policy.md) para más información sobre cómo crear una directiva.

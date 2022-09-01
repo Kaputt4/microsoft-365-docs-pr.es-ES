@@ -13,40 +13,40 @@ ms.localizationpriority: medium
 ms.assetid: f40253f2-50a1-426e-9979-be74ba74cb61
 ms.custom:
 - seo-marvel-apr2020
-description: En este artículo, aprenderá acerca de los informes y las herramientas de solución de problemas disponibles para los administradores de Microsoft Exchange Online protección contra errores (EOP).
-ms.technology: mdo
-ms.prod: m365-security
-ms.openlocfilehash: 929fce14a9e128b724b4aa69d88e4a3062ed5640
-ms.sourcegitcommit: b3530441288b2bc44342e00e9025a49721796903
+description: En este artículo, obtendrá información sobre los informes y las herramientas de solución de problemas disponibles para los administradores de Microsoft Exchange Online Protection (EOP).
+ms.subservice: mdo
+ms.service: microsoft-365-security
+ms.openlocfilehash: c8bca790e7916daacada685f15581f6c5fbcf6f2
+ms.sourcegitcommit: ecc04b5b8f84b34255a2d5e90b5ab596af0d16c7
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/20/2022
-ms.locfileid: "63682425"
+ms.lasthandoff: 09/01/2022
+ms.locfileid: "67495798"
 ---
-# <a name="reporting-and-message-trace-in-eop"></a>Informes y seguimiento de mensajes en EOP
+# <a name="reporting-and-message-trace-in-eop"></a>Seguimiento de mensajes y creación de informes Exchange Online Protection
 
-[!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
+[!INCLUDE [MDO Trial banner](../includes/mdo-trial-banner.md)]
 
 **Se aplica a**
 - [Exchange Online Protection](exchange-online-protection-overview.md)
 - [Plan 1 y Plan 2 de Microsoft Defender para Office 365](defender-for-office-365.md)
 - [Microsoft 365 Defender](../defender/microsoft-365-defender.md)
 
-En Microsoft 365 organizaciones con buzones en organizaciones de Exchange Online o independientes de Exchange Online Protection (EOP) sin buzones de Exchange Online, EOP ofrece muchos informes diferentes que pueden ayudarle a determinar el estado general y el estado de su organización. También hay herramientas para ayudarle a solucionar problemas de eventos específicos (por ejemplo, un mensaje que no llegue a sus destinatarios) e informes de auditoría para ayudar con los requisitos de cumplimiento.
+En las organizaciones de Microsoft 365 con buzones de Exchange Online o organizaciones independientes de Exchange Online Protection (EOP) sin buzones de Exchange Online, EOP ofrece muchos informes diferentes que pueden ayudarle a determinar el estado general y el estado de su organización. También hay herramientas para ayudarle a solucionar problemas de eventos específicos (por ejemplo, un mensaje que no llegue a sus destinatarios) e informes de auditoría para ayudar con los requisitos de cumplimiento.
 
 ## <a name="usage-reports"></a>Informes de uso
 
-- **Microsoft 365 de grupos**: ver información sobre el número de grupos Microsoft 365 que se crean y usan. Para obtener más información, [vea Microsoft 365 informes en el Centro de administración: Microsoft 365 grupos](../../admin/activity-reports/office-365-groups.md).
-- **Actividad de correo** electrónico: vea información sobre el número de mensajes enviados, recibidos y leídos en toda la organización y por usuarios específicos. Para obtener más información, [vea Microsoft 365 informes en el Centro de administración: actividad de correo electrónico](../../admin/activity-reports/email-activity.md).
-- **Uso de la aplicación de** correo electrónico: ver información sobre las aplicaciones de correo electrónico que se usan. Esto incluye el número total de conexiones para cada aplicación y las versiones de Outlook que se conectan. Para obtener más información, [consulta Microsoft 365 informes en el Centro de administración: Uso de aplicaciones de correo electrónico](../../admin/activity-reports/email-apps-usage.md).
-- **Uso del** buzón: vea información sobre el almacenamiento usado, el consumo de cuota, el recuento de elementos y la última actividad (actividad de envío o lectura) de los buzones. Para obtener más información, [vea Microsoft 365 informes en el Centro de administración: uso de buzones](../../admin/activity-reports/mailbox-usage.md).
+- **Actividad de grupos de Microsoft 365**: vea información sobre el número de grupos de Microsoft 365 que se crean y usan. Para obtener más información, consulte [Informes de Microsoft 365 en el Centro de administración: grupos de Microsoft 365](../../admin/activity-reports/office-365-groups.md).
+- **Email actividad**: vea información sobre el número de mensajes enviados, recibidos y leídos en toda la organización y por usuarios específicos. Para obtener más información, vea [Informes de Microsoft 365 en el Centro de administración: Email actividad](../../admin/activity-reports/email-activity.md).
+- **Email uso de la aplicación**: vea información sobre las aplicaciones de correo electrónico que se usan. Esto incluye el número total de conexiones para cada aplicación y las versiones de Outlook que se conectan. Para obtener más información, consulte [Informes de Microsoft 365 en el Centro de administración: uso de aplicaciones Email](../../admin/activity-reports/email-apps-usage.md).
+- **Uso del buzón de correo**: vea información sobre el almacenamiento usado, el consumo de cuota, el recuento de elementos y la última actividad (actividad de envío o lectura) de los buzones. Para obtener más información, consulte [Informes de Microsoft 365 en el Centro de administración: Uso del buzón de correo](../../admin/activity-reports/mailbox-usage.md).
 
-## <a name="security-reports-in-the-microsoft-365-defender-portal"></a>Informes de seguridad en el portal Microsoft 365 defender
+## <a name="security-reports-in-the-microsoft-365-defender-portal"></a>Informes de seguridad en el portal de Microsoft 365 Defender
 
-Estos informes mejorados proporcionan una experiencia interactiva de informes para los administradores de EOP, que incluye información de resumen y la capacidad de explorar más detalles.
+Estos informes mejorados proporcionan una experiencia de generación de informes interactiva para los administradores de EOP, que incluye información de resumen y la capacidad de explorar en profundidad para obtener más detalles.
 
-- **Defender para Office 365**: ver información sobre Caja fuerte vínculos y Caja fuerte datos adjuntos que forman parte de Microsoft Defender para Office 365. Para obtener más información, vea [View Defender for Office 365 reports in the Microsoft 365 Defender portal](view-reports-for-mdo.md).
-- **EOP**: ver información sobre detecciones de malware, correo suplantado, detecciones de correo no deseado y flujo de correo desde y hacia su organización. Para obtener más información, vea [View email security reports in the Microsoft 365 Defender portal](view-email-security-reports.md).
+- **Defender para Office 365**: ver información sobre vínculos seguros y datos adjuntos seguros que forman parte de Microsoft Defender para Office 365. Para obtener más información, vea [Ver informes de Defender para Office 365 en el portal de Microsoft 365 Defender](view-reports-for-mdo.md).
+- **EOP**: vea información sobre las detecciones de malware, el correo suplantado, las detecciones de correo no deseado y el flujo de correo hacia y desde su organización. Para obtener más información, vea [Ver informes de seguridad de correo electrónico en el portal de Microsoft 365 Defender](view-email-security-reports.md).
 
 ## <a name="mail-flow-insights-in-the-security--compliance-center"></a>Reportes de flujo de Correo en el Centro de seguridad y cumplimiento
 
@@ -54,23 +54,23 @@ Para obtener más información, vea [Mail flow insights in the Security & Compli
 
 ## <a name="custom-reports-using-microsoft-graph"></a>Informes personalizados con Microsoft Graph
 
-Cree informes disponibles en el Centro de administración mediante programación mediante Microsoft Graph. Para obtener más información, vea [Overview of Microsoft Graph](/graph/overview) and [Working with Office 365 usage reports in Microsoft Graph](/graph/api/resources/report).
+Cree mediante programación informes que estén disponibles en el Centro de administración mediante Microsoft Graph. Para obtener más información, consulte [Introducción a Microsoft Graph](/graph/overview) y [Trabajar con informes de uso de Office 365 en Microsoft Graph](/graph/api/resources/report).
 
 ## <a name="message-trace"></a>Seguimiento de mensajes
 
-Sigue los mensajes de correo electrónico mientras viajan a través de EOP. Puede determinar si el servicio recibió, rechazó, aplazó o entregó un mensaje de correo electrónico. También muestra qué acciones se realizaron en el mensaje antes de alcanzar su estado final.
+Sigue los mensajes de correo electrónico mientras viajan a través de EOP. Puede determinar si el servicio recibió, rechazó, aplazó o entregó un mensaje de correo electrónico. También muestra qué acciones se realizaron en el mensaje antes de que alcanzara su estado final.
 
-Puede usar esta información para responder eficazmente a las preguntas del usuario, solucionar problemas de flujo de correo, validar los cambios de directiva y aliviar la necesidad de ponerse en contacto con el soporte técnico para obtener asistencia.
+Puede usar esta información para responder de forma eficaz a las preguntas del usuario, solucionar problemas de flujo de correo, validar los cambios de directiva y aliviar la necesidad de ponerse en contacto con el soporte técnico para obtener ayuda.
 
-Consulte [Seguimiento de mensajes en Microsoft 365 Defender portal](message-trace-scc.md).
+Consulte [Seguimiento de mensajes en el portal de Microsoft 365 Defender](message-trace-scc.md).
 
 ## <a name="audit-logging"></a>Registro de auditoría
 
-Realiza un seguimiento de los cambios específicos realizados por los administradores en su organización. Estos informes pueden ayudarle a solucionar problemas de configuración o a encontrar la causa de problemas relacionados con la seguridad o el cumplimiento. Consulte [Informes de auditoría en Exchange Online](/exchange/security-and-compliance/exchange-auditing-reports/exchange-auditing-reports).
+Realiza un seguimiento de los cambios específicos realizados por los administradores en su organización. Estos informes pueden ayudarle a solucionar problemas de configuración o a encontrar la causa de problemas relacionados con la seguridad o el cumplimiento. Consulte [Auditoría de informes en Exchange Online](/exchange/security-and-compliance/exchange-auditing-reports/exchange-auditing-reports).
 
 ## <a name="reporting-and-message-trace-data-availability-and-latency"></a>Informes, disponibilidad y latencia de los datos de seguimiento de mensajes
 
-En la tabla siguiente se describe cuándo los datos de seguimiento de mensajes y informes de EOP están disponibles y durante cuánto tiempo.
+En la tabla siguiente se describe cuándo están disponibles los datos de informes y seguimiento de mensajes de EOP y durante cuánto tiempo.
 
 |Tipo de informe|Datos disponibles (período retrospectivo)|Latencia|
 |---|---|---|
@@ -79,4 +79,4 @@ En la tabla siguiente se describe cuándo los datos de seguimiento de mensajes y
 |Datos de seguimiento de mensajes|90 días|Cuando se ejecuta un seguimiento de mensajes para mensajes con antigüedad menor a 7 días, los mensajes deberían aparecer en un plazo de 5 a 30 minutos.<p> Cuando se ejecuta un seguimiento de mensajes para mensajes con antigüedad mayor a 7 días, los resultados pueden tardar hasta unas cuantas horas.|
 
 > [!NOTE]
-> La disponibilidad y la latencia de los datos son las mismas si se solicitan a través del Centro de administración o powerShell remoto.
+> La disponibilidad y latencia de los datos es la misma, tanto si se solicita a través del centro de administración como de PowerShell remoto.
