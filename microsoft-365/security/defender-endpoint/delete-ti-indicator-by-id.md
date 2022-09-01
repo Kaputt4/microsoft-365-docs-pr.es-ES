@@ -2,7 +2,7 @@
 title: Eliminar API de indicador.
 description: Obtenga información sobre cómo usar Delete Indicator API para eliminar una entidad Indicator por identificador en Microsoft Defender para punto de conexión.
 keywords: apis, api pública, api admitidas, delete, ti indicator, entity, id
-ms.prod: m365-security
+ms.service: microsoft-365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -13,14 +13,14 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
-ms.technology: mde
+ms.subservice: mde
 ms.custom: api
-ms.openlocfilehash: 1bfb5955a14f8f520ce66139b708f82d27e1f724
-ms.sourcegitcommit: 217108c59be41b01963a393b4f16d137636fe6a8
+ms.openlocfilehash: 2c23364eb08e223da744af106e01ca49063628cd
+ms.sourcegitcommit: 10e6abe740e27000e223378eb17d657a47555fa8
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/12/2022
-ms.locfileid: "67326131"
+ms.lasthandoff: 08/31/2022
+ms.locfileid: "67499022"
 ---
 # <a name="delete-indicator-api"></a>Eliminar API de indicador
 

@@ -2,7 +2,7 @@
 title: Recopilación de la API del paquete de investigación
 description: Use esta API para crear llamadas relacionadas con la recopilación de un paquete de investigación desde un dispositivo.
 keywords: apis, graph api, api admitidas, recopilar paquete de investigación
-ms.prod: m365-security
+ms.service: microsoft-365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -13,14 +13,14 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
-ms.technology: mde
+ms.subservice: mde
 ms.custom: api
-ms.openlocfilehash: 13cc4e0a1c5a72beb6c5c65ceb4a408d7d43a6ea
-ms.sourcegitcommit: 217108c59be41b01963a393b4f16d137636fe6a8
+ms.openlocfilehash: 5bfc3c3703ae0f662a519948cd93e1ab1e4178fd
+ms.sourcegitcommit: 10e6abe740e27000e223378eb17d657a47555fa8
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/12/2022
-ms.locfileid: "67326175"
+ms.lasthandoff: 08/31/2022
+ms.locfileid: "67498986"
 ---
 # <a name="collect-investigation-package-api"></a>Recopilación de la API del paquete de investigación
 

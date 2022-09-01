@@ -2,7 +2,7 @@
 title: API agregar o quitar etiquetas de máquina
 description: Obtenga información sobre cómo usar la API Agregar o quitar etiquetas de máquina para agregar o quitar una etiqueta para una máquina en Microsoft Defender para punto de conexión.
 keywords: api, graph api, api admitidas, etiquetas, etiquetas de máquina
-ms.prod: m365-security
+ms.service: microsoft-365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -13,16 +13,16 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
-ms.technology: m365d
+ms.subservice: m365d
 ms.custom: api
-ms.openlocfilehash: f5a4a232e7752ae990c1f32ca69653c45baecb8b
-ms.sourcegitcommit: 217108c59be41b01963a393b4f16d137636fe6a8
+ms.openlocfilehash: 39c1024a047cefbd372e4668977f4c68132c103c
+ms.sourcegitcommit: 10e6abe740e27000e223378eb17d657a47555fa8
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/12/2022
-ms.locfileid: "67328109"
+ms.lasthandoff: 08/31/2022
+ms.locfileid: "67498979"
 ---
-# <a name="add-or-remove-machine-tags-api"></a>API agregar o quitar etiquetas de máquina
+# <a name="add-or-remove-machine-tags-api"></a>API de agregar o quitar etiquetas de máquina
 
 **Se aplica a:**
 
@@ -49,7 +49,7 @@ Agrega o quita la etiqueta a una [máquina](machine.md) específica.
 
 ## <a name="permissions"></a>Permisos
 
-Se requiere uno de los permisos siguientes para llamar a esta API. Para más información, incluido cómo elegir permisos, consulte [Uso de Defender para API de punto de conexión](apis-intro.md).
+Se requiere uno de los permisos siguientes para llamar a esta API. Para obtener más información, incluido cómo elegir permisos, consulte [Uso de Defender para API de punto de conexión](apis-intro.md).
 
 Tipo de permiso|Permiso|Nombre para mostrar del permiso
 :---|:---|:---
@@ -59,7 +59,7 @@ Delegado (cuenta profesional o educativa)|Machine.ReadWrite|"Leer y escribir inf
 > [!NOTE]
 > Al obtener un token con credenciales de usuario:
 >
-> - El usuario debe tener al menos el siguiente permiso de rol: "Administrar configuración de seguridad". Para obtener más información (consulte [Creación y administración de roles](user-roles.md) )
+> - El usuario debe tener al menos el siguiente permiso de rol: "Administrar configuración de seguridad". Para obtener más información (consulte [Creación y administración de roles](user-roles.md) ).
 > - El usuario debe tener acceso a la máquina en función de la configuración del grupo de máquinas (consulte [Creación y administración de grupos de máquinas](machine-groups.md) para obtener más información).
 
 ## <a name="http-request"></a>Solicitud HTTP
@@ -88,9 +88,7 @@ Acción|Enum|Agregar o quitar. Los valores permitidos son: "Add" o "Remove". **N
 
 Si se ejecuta correctamente, este método devuelve el código de respuesta 200 - Ok y la máquina actualizada en el cuerpo de la respuesta.
 
-## <a name="example"></a>Ejemplo
-
-### <a name="request"></a>Solicitud
+## <a name="example-request"></a>Solicitud de ejemplo
 
 Este es un ejemplo de una solicitud que agrega la etiqueta de máquina.
 
@@ -105,4 +103,4 @@ POST https://api.securitycenter.microsoft.com/api/machines/1e5bc9d7e413ddd7902c2
 }
 ```
 
-- Para quitar la etiqueta de máquina, establezca la acción en "Quitar" en lugar de "Agregar" en el cuerpo de la solicitud.
+Para quitar la etiqueta de máquina, establezca la acción en "Quitar" en lugar de "Agregar" en el cuerpo de la solicitud.

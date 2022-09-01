@@ -2,7 +2,7 @@
 title: Creación de una alerta a partir de event API
 description: Obtenga información sobre cómo usar la API De creación de alertas para crear una nueva alerta sobre el evento en Microsoft Defender para punto de conexión.
 keywords: apis, graph api, api admitidas, get, alert, information, id
-ms.prod: m365-security
+ms.service: microsoft-365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -13,14 +13,14 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
-ms.technology: mde
+ms.subservice: mde
 ms.custom: api
-ms.openlocfilehash: 9a211034b164381226df0d5d79d0d709db3c2e98
-ms.sourcegitcommit: 217108c59be41b01963a393b4f16d137636fe6a8
+ms.openlocfilehash: 6b8e8077a06ba811d9e969766ea09c3547595b56
+ms.sourcegitcommit: 10e6abe740e27000e223378eb17d657a47555fa8
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/12/2022
-ms.locfileid: "67326747"
+ms.lasthandoff: 08/31/2022
+ms.locfileid: "67498993"
 ---
 # <a name="create-alert-api"></a>Creación de la API de alertas
 

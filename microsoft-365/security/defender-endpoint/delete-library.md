@@ -4,7 +4,7 @@ description: Obtenga información sobre cómo eliminar un archivo de la bibliote
 keywords: api, graph api, api admitidas, eliminación de la biblioteca
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
-ms.prod: m365-security
+ms.service: microsoft-365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -18,14 +18,14 @@ audience: ITPro
 ms.collection:
 - M365-security-compliance
 ms.topic: reference
-MS.technology: mde
+ms.subservice: mde
 ms.custom: api
-ms.openlocfilehash: 97a2a2152a60ff542cb946c4283fe3f26c4b9c8e
-ms.sourcegitcommit: 35f167725bec5fd4fe131781a53d96b060cf232d
+ms.openlocfilehash: da4da672f3ae513a60f5d4a9fb7134c7b36bc8df
+ms.sourcegitcommit: 10e6abe740e27000e223378eb17d657a47555fa8
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "65874138"
+ms.lasthandoff: 08/31/2022
+ms.locfileid: "67499044"
 ---
 #  <a name="delete-a-file-from-the-live-response-library"></a>Eliminación de un archivo de la biblioteca de respuestas dinámicas  
 
@@ -52,11 +52,11 @@ Elimine un archivo de la biblioteca de respuestas dinámicas.
 
 ## <a name="permissions"></a>Permisos
 
-Se requiere uno de los permisos siguientes para llamar a esta API. Para obtener más información, incluido cómo elegir permisos, consulte [Comenzar](apis-intro.md).
+Se requiere uno de los permisos siguientes para llamar a esta API. Para más información, incluido cómo elegir permisos, consulte [Introducción](apis-intro.md).
 
 | Tipo de permiso                    | Permiso     | Nombre para mostrar del permiso        |
 |------------------------------------|----------------|--------------------------------|
-| Aplicación                        | Library.Manage | Administración de la biblioteca de respuestas dinámicas |
+| Application                        | Library.Manage | Administración de la biblioteca de respuestas dinámicas |
 | Delegado (cuenta profesional o educativa) | Library.Manage | Administración de la biblioteca de respuestas dinámicas |
 
 ## <a name="http-request"></a>Solicitud HTTP
@@ -67,9 +67,9 @@ DELETE https://api.securitycenter.microsoft.com/api/libraryfiles/{fileName}
 
 | Nombre            | Tipo   | Descripción               |
 |-----------------|--------|---------------------------|
-| Authorization   | String | Portador\<token>\. Obligatorio. |
+| Authorization   | Cadena | Portador\<token>\. Necesario. |
 
-## <a name="request-body"></a>Cuerpo de la solicitud
+## <a name="request-body"></a>Cuerpo de solicitud
 
 En blanco
 

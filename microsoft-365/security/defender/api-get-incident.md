@@ -3,7 +3,8 @@ title: Obtención de la API de incidentes
 description: Obtenga información sobre cómo usar la API Get incidents para obtener un único incidente en Microsoft 365 Defender.
 keywords: api, graph api, api admitidas, get, file, hash
 search.product: eADQiWindows 10XVcnh
-ms.prod: m365-security
+ms.service: microsoft-365-security
+ms.subservice: m365d
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -14,14 +15,13 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
-MS.technology: m365d
 ms.custom: api
-ms.openlocfilehash: af54daf82ca8f4fbd50c5aaeafd4482f2ce6b0ca
-ms.sourcegitcommit: 217108c59be41b01963a393b4f16d137636fe6a8
+ms.openlocfilehash: adfe4423304d7827cef9fc4a0c49a1499d5302a1
+ms.sourcegitcommit: 10e6abe740e27000e223378eb17d657a47555fa8
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/12/2022
-ms.locfileid: "67329099"
+ms.lasthandoff: 08/31/2022
+ms.locfileid: "67499088"
 ---
 # <a name="get-incident-information-api"></a>Obtención de la API de información de incidentes
 
