@@ -2,7 +2,7 @@
 title: Implementación basada en Intune para Microsoft Defender para punto de conexión en Mac
 description: Instale Microsoft Defender para punto de conexión en Mac con Microsoft Intune.
 keywords: microsoft, defender, Microsoft Defender para punto de conexión, mac, installation, deploy, uninstallation, intune, jamf, macos, catalina, mojave, high sierra
-ms.prod: m365-security
+ms.service: microsoft-365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -14,13 +14,13 @@ audience: ITPro
 ms.collection:
 - m365-security-compliance
 ms.topic: conceptual
-ms.technology: mde
-ms.openlocfilehash: 4c2c1f7c11c57ca45411b74023807077f73ba8bf
-ms.sourcegitcommit: a7c1acfb3d2cbba913e32493b16ebd8cbfeee456
+ms.subservice: mde
+ms.openlocfilehash: 79af6ae1a6fc54726789caaf9c49dbe997bd3186
+ms.sourcegitcommit: 228fa13973bf7c2d91504703fab757f552ae40dd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/13/2022
-ms.locfileid: "66044114"
+ms.lasthandoff: 09/01/2022
+ms.locfileid: "67520783"
 ---
 # <a name="intune-based-deployment-for-microsoft-defender-for-endpoint-on-macos"></a>Implementación basada en Intune para Microsoft Defender para punto de conexión en macOS
 
@@ -32,7 +32,7 @@ ms.locfileid: "66044114"
 - [Microsoft Defender para punto de conexión Plan 1](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft Defender para punto de conexión Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 
-En este tema se describe cómo implementar Microsoft Defender para punto de conexión en macOS a través de Intune. Una implementación correcta requiere la finalización de todos los pasos siguientes:
+En este tema se describe cómo implementar Microsoft Defender para punto de conexión en macOS mediante Intune. Una implementación correcta requiere la finalización de todos los pasos siguientes:
 
 1. [Descarga del paquete de incorporación](#download-the-onboarding-package)
 1. [Configuración del dispositivo cliente](#client-device-setup)
@@ -42,7 +42,7 @@ En este tema se describe cómo implementar Microsoft Defender para punto de cone
 
 ## <a name="prerequisites-and-system-requirements"></a>Requisitos previos y requisitos del sistema
 
-Antes de empezar, consulte [la Microsoft Defender para punto de conexión principal en macOS página](microsoft-defender-endpoint-mac.md) para obtener una descripción de los requisitos previos y los requisitos del sistema para la versión de software actual.
+Antes de empezar, consulte [la página principal Microsoft Defender para punto de conexión en macOS](microsoft-defender-endpoint-mac.md) para obtener una descripción de los requisitos previos y los requisitos del sistema para la versión actual del software.
 
 ## <a name="overview"></a>Información general
 
@@ -68,9 +68,9 @@ En la tabla siguiente se resumen los pasos que tendría que seguir para implemen
 
 Descargue los paquetes de incorporación desde Microsoft 365 Defender portal:
 
-1. En Microsoft 365 Defender portal, vaya a **Configuración** \> **Endpoints** \> **Device management** **Onboarding (Incorporación** de administración \> de dispositivos de puntos de conexión).
+1. En Microsoft 365 Defender portal, vaya a **Configuración** \> **Puntos de conexión** \> **Administración de** \> dispositivos **Incorporación**.
 
-2. Establezca el sistema operativo en **macOS** y el método de implementación **en Mobile Administración de dispositivos/Microsoft Intune**.
+2. Establezca el sistema operativo en **macOS** y el método de implementación en **Mobile Administración de dispositivos/Microsoft Intune**.
 
    :::image type="content" source="images/macos-install-with-intune.png" alt-text="Página Configuración de incorporación" lightbox="images/macos-install-with-intune.png":::
 
@@ -93,14 +93,14 @@ Descargue los paquetes de incorporación desde Microsoft 365 Defender portal:
 ## <a name="create-system-configuration-profiles"></a>Creación de perfiles de configuración del sistema
 
 El siguiente paso consiste en crear perfiles de configuración del sistema que Microsoft Defender para punto de conexión necesidades.
-En el [centro de administración de Microsoft Endpoint Manager](https://endpoint.microsoft.com/), abra **Perfiles de configuración de dispositivos**\>.
+En el [Centro de administración de Microsoft Endpoint Manager](https://endpoint.microsoft.com/), abra **Perfiles de configuración de dispositivos**\>.
 
 ### <a name="onboarding-blob"></a>Incorporación de blobs
 
 Este perfil contiene información de licencia para Microsoft Defender para punto de conexión. Sin este perfil, Microsoft Defender para punto de conexión notificará que no tiene licencia.
 
 1. Seleccione **Crear perfil** en **Perfiles de configuración**.
-1. Seleccione **Plataforma**= **macOS**, **Plantillas de tipo**= de perfil **.** **Nombre**= de plantilla **Personalizado**. Haga clic en **Crear**.
+1. Seleccione **Plataforma**=**macOS**, **Tipo**= de perfil **Plantillas**. **Nombre**= de plantilla **Personalizado**. Haga clic en **Crear**.
 
     > [!div class="mx-imgBorder"]
     > :::image type="content" source="images/mdatp-6-systemconfigurationprofiles-1.png" alt-text="Página de creación del perfil de configuración personalizada" lightbox="images/mdatp-6-systemconfigurationprofiles-1.png":::
@@ -131,10 +131,10 @@ Este perfil contiene información de licencia para Microsoft Defender para punto
 
 ### <a name="approve-system-extensions"></a>Aprobar extensiones del sistema
 
-Este perfil es necesario para macOS 10.15 (Catalina) o posterior. Se omitirá en macOS anteriores.
+Este perfil es necesario para macOS 10.15 (Catalina) o posterior. Se omitirá en macOS más antiguo.
 
 1. Seleccione **Crear perfil** en **Perfiles de configuración**.
-1. Seleccione **Plataforma**= **macOS**, **Plantillas de tipo**= de perfil **.** **Nombre**= de plantilla **Extensiones**. Haga clic en **Crear**.
+1. Seleccione **Plataforma**=**macOS**, **Tipo**= de perfil **Plantillas**. **Nombre**= de plantilla **Extensiones**. Haga clic en **Crear**.
 1. En la pestaña **Aspectos básicos** , asigne un nombre a este nuevo perfil.
 1. En la pestaña **Configuración** , expanda **Extensiones del sistema** y agregue las siguientes entradas en la sección **Extensiones de sistema permitidas** :
 
@@ -151,13 +151,13 @@ Este perfil es necesario para macOS 10.15 (Catalina) o posterior. Se omitirá en
 
 ### <a name="kernel-extensions"></a>Extensiones de kernel
 
-Este perfil es necesario para macOS 10.15 (Catalina) o posterior. Se omitirá en macOS más recientes.
+Este perfil es necesario para macOS 10.15 (Catalina) o versiones posteriores. Se omitirá en macOS más reciente.
 
 > [!CAUTION]
 > Los dispositivos Apple Silicon (M1) no admiten KEXT. Se producirá un error en la instalación de un perfil de configuración que consta de directivas KEXT en estos dispositivos.
 
 1. Seleccione **Crear perfil** en **Perfiles de configuración**.
-1. Seleccione **Plataforma**= **macOS**, **Plantillas de tipo**= de perfil **.** **Nombre**= de plantilla **Extensiones**. Haga clic en **Crear**.
+1. Seleccione **Plataforma**=**macOS**, **Tipo**= de perfil **Plantillas**. **Nombre**= de plantilla **Extensiones**. Haga clic en **Crear**.
 1. En la pestaña **Aspectos básicos** , asigne un nombre a este nuevo perfil.
 1. En la pestaña **Configuración** , expanda **Extensiones de kernel**.
 1. Establezca **Identificador de equipo** en **UBF8T346G9** y haga clic en **Siguiente**.
@@ -206,13 +206,13 @@ Una vez que los cambios de Intune se propaguen a los dispositivos inscritos, pue
 
 Este paso permite implementar Microsoft Defender para punto de conexión en máquinas inscritas.
 
-1. En el [centro de administración de Microsoft Endpoint Manager](https://endpoint.microsoft.com/), abra **Aplicaciones**.
+1. En el [Centro de administración de Microsoft Endpoint Manager](https://endpoint.microsoft.com/), abra **Aplicaciones**.
 
     > [!div class="mx-imgBorder"]
     > :::image type="content" source="images/mdatp-8-app-before.png" alt-text="Página de información general de la aplicación" lightbox="images/mdatp-8-app-before.png":::
 
 1. Seleccione Por plataforma > macOS > Agregar.
-1. Elija **Tipo**= de aplicación **macOS**, haga clic en **Seleccionar**.
+1. Elija **Tipo**= de **aplicación macOS** y haga clic en **Seleccionar**.
 
     > [!div class="mx-imgBorder"]
     > :::image type="content" source="images/mdatp-9-app-type.png" alt-text="El tipo de aplicación específico" lightbox="images/mdatp-9-app-type.png":::

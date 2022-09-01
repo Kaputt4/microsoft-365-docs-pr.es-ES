@@ -1,10 +1,10 @@
 ---
 title: Propiedades y métodos de la biblioteca de respuestas inmediatas
-description: Obtenga información sobre cómo usar los métodos y propiedades de la biblioteca de respuestas en directo.
-keywords: api, api de gráfico, api admitidas, get, dispositivos
+description: Obtenga información sobre cómo usar los métodos y las propiedades de la biblioteca de respuestas dinámicas.
+keywords: apis, graph api, api admitidas, get, devices
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
-ms.prod: m365-security
+ms.service: microsoft-365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -18,19 +18,19 @@ audience: ITPro
 ms.collection:
 - M365-security-compliance
 ms.topic: reference
-ms.technology: m365d
-ms.openlocfilehash: c9eb1de08be8905a41b172a19a33db58dbdc19b9
-ms.sourcegitcommit: 3fb76db6b34e24569417f4c8a41b99f46a780389
+ms.subservice: m365d
+ms.openlocfilehash: 8338805bebc21e538242ebb902a5d581d5af42f5
+ms.sourcegitcommit: 228fa13973bf7c2d91504703fab757f552ae40dd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/17/2022
-ms.locfileid: "63525853"
+ms.lasthandoff: 09/01/2022
+ms.locfileid: "67520827"
 ---
 #  <a name="live-response-library-methods-and-properties"></a>Propiedades y métodos de la biblioteca de respuestas inmediatas
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
-**Se aplica a:** [Microsoft Defender para endpoint](https://go.microsoft.com/fwlink/?linkid=2154037)
+**Se aplica a:** [Microsoft Defender para punto de conexión](https://go.microsoft.com/fwlink/?linkid=2154037)
 
 [!include[Prerelease information](../../includes/prerelease.md)]
 
@@ -45,13 +45,13 @@ ms.locfileid: "63525853"
 
 | **Método**          | **Tipo de valor devuelto**         | **Descripción**                         |
 |---------------------|-------------------------|-----------------------------------------|
-| Archivos de biblioteca de lista  | Colección de archivos de biblioteca | Enumerar entidades de archivo de biblioteca              |
-| Upload a la biblioteca   | Entidad de archivo de biblioteca     | Upload un archivo a una biblioteca de respuestas en directo |
+| Archivos de biblioteca de lista  | Colección de archivos de biblioteca | Enumeración de entidades de archivo de biblioteca              |
+| Carga en la biblioteca   | Entidad de archivo de biblioteca     | Carga de un archivo en la biblioteca de respuesta activa |
 | Eliminar de la biblioteca | Sin contenido              | Eliminar entidad de archivo de biblioteca              |
 
 ## <a name="properties"></a>Propiedades
 
 | **Propiedad** | **Tipo**                         | **Descripción**                                        |
 |--------------|----------------------------------|--------------------------------------------------------|
-| Comandos     | Colección de comandos Live Response | Matriz de objetos Command. Consulta [comandos de respuesta en directo](live-response.md#live-response-commands). |
+| Comandos     | Colección de comandos live response | Matriz de objetos Command. Consulte [comandos de respuesta dinámica](live-response.md#live-response-commands). |
 

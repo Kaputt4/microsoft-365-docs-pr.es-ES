@@ -1,8 +1,8 @@
 ---
 title: Ejemplos de directivas de control de dispositivos para JAMF
-description: Aprende a usar directivas de control de dispositivos con ejemplos que se pueden usar con JAMF.
-keywords: microsoft, defender, endpoint, Microsoft Defender para Endpoint, mac, device, control, usb, removable, media, jamf
-ms.prod: m365-security
+description: Obtenga información sobre cómo usar directivas de control de dispositivos mediante ejemplos que se pueden usar con JAMF.
+keywords: microsoft, defender, endpoint, Microsoft Defender para punto de conexión, mac, device, control, usb, removable, media, jamf
+ms.service: microsoft-365-security
 ms.mktglfcycl: security
 ms.sitesec: library
 ms.pagetype: security
@@ -14,13 +14,13 @@ audience: ITPro
 ms.collection:
 - m365-security-compliance
 ms.topic: conceptual
-ms.technology: mde
-ms.openlocfilehash: 74925625f6d004c1901756cde75310b345dd5747
-ms.sourcegitcommit: 6e90baef421ae06fd790b0453d3bdbf624b7f9c0
+ms.subservice: mde
+ms.openlocfilehash: 6e1b46af18846a6fcae94c99aeaa771e9c614da2
+ms.sourcegitcommit: 228fa13973bf7c2d91504703fab757f552ae40dd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/12/2022
-ms.locfileid: "62766037"
+ms.lasthandoff: 09/01/2022
+ms.locfileid: "67520805"
 ---
 # <a name="examples-of-device-control-policies-for-jamf"></a>Ejemplos de directivas de control de dispositivos para JAMF
 
@@ -33,11 +33,11 @@ ms.locfileid: "62766037"
 
 > ¿Quiere experimentar Microsoft Defender para punto de conexión? [Regístrese para obtener una prueba gratuita.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-exposedapis-abovefoldlink)
 
-Este documento contiene ejemplos de directivas de control de dispositivos que puedes personalizar para tu propia organización. Estos ejemplos son aplicables si usa JAMF para administrar dispositivos en su empresa.
+Este documento contiene ejemplos de directivas de control de dispositivos que puede personalizar para su propia organización. Estos ejemplos son aplicables si usa JAMF para administrar dispositivos de su empresa.
 
-## <a name="restrict-access-to-all-removable-media"></a>Restringir el acceso a todos los medios extraíbles
+## <a name="restrict-access-to-all-removable-media"></a>Restricción del acceso a todos los medios extraíbles
 
-En el ejemplo siguiente se restringe el acceso a todos los medios extraíbles. Tenga en `none` cuenta el permiso que se aplica en el nivel superior de la directiva, lo que significa que todas las operaciones de archivos estarán prohibidas.
+En el ejemplo siguiente se restringe el acceso a todos los medios extraíbles. Tenga en cuenta el `none` permiso que se aplica en el nivel superior de la directiva, lo que significa que se prohibirán todas las operaciones de archivo.
 
 ```xml
 <?xml version="1.0" encoding="UTF-8"?>
@@ -60,9 +60,9 @@ En el ejemplo siguiente se restringe el acceso a todos los medios extraíbles. T
 </plist>
 ```
 
-## <a name="set-all-removable-media-to-be-read-only"></a>Establecer todos los medios extraíbles como de solo lectura
+## <a name="set-all-removable-media-to-be-read-only"></a>Establecer que todos los medios extraíbles sean de solo lectura
 
-En el ejemplo siguiente se configura todos los medios extraíbles para que sean de solo lectura. Tenga en `read` cuenta el permiso que se aplica en el nivel superior de la directiva, lo que significa que no se permitirán todas las operaciones de escritura y ejecución.
+En el ejemplo siguiente se configura que todos los medios extraíbles sean de solo lectura. Tenga en cuenta el `read` permiso que se aplica en el nivel superior de la directiva, lo que significa que no se permitirán todas las operaciones de escritura y ejecución.
 
 ```xml
 <?xml version="1.0" encoding="UTF-8"?>
@@ -85,9 +85,9 @@ En el ejemplo siguiente se configura todos los medios extraíbles para que sean 
 </plist>
 ```
 
-## <a name="disallow-program-execution-from-removable-media"></a>No permitir la ejecución del programa de medios extraíbles
+## <a name="disallow-program-execution-from-removable-media"></a>No permitir la ejecución del programa desde medios extraíbles
 
-En el ejemplo siguiente se muestra cómo se puede no poder realizar la ejecución del programa desde medios extraíbles. Tenga en `read` cuenta los `write` permisos y que se aplican en el nivel superior de la directiva.
+En el ejemplo siguiente se muestra cómo no se puede permitir la ejecución del programa desde medios extraíbles. Tenga en cuenta los `read` permisos y `write` que se aplican en el nivel superior de la directiva.
 
 ```xml
 <?xml version="1.0" encoding="UTF-8"?>
@@ -111,9 +111,9 @@ En el ejemplo siguiente se muestra cómo se puede no poder realizar la ejecució
 </plist>
 ```
 
-## <a name="restrict-all-devices-from-specific-vendors"></a>Restringir todos los dispositivos de proveedores específicos
+## <a name="restrict-all-devices-from-specific-vendors"></a>Restricción de todos los dispositivos de proveedores específicos
 
-En el ejemplo siguiente se restringen todos los dispositivos de proveedores específicos (en este caso identificados por `fff0` y `4525`). El resto de dispositivos no estarán restringidos, ya que el permiso definido en el nivel superior de la directiva enumera todos los permisos posibles (lectura, escritura y ejecución).
+En el ejemplo siguiente se restringen todos los dispositivos de proveedores específicos (en este caso identificados por `fff0` y `4525`). Todos los demás dispositivos serán sin restricciones, ya que el permiso definido en el nivel superior de la directiva enumera todos los permisos posibles (lectura, escritura y ejecución).
 
 ```xml
 <?xml version="1.0" encoding="UTF-8"?>
@@ -155,9 +155,9 @@ En el ejemplo siguiente se restringen todos los dispositivos de proveedores espe
 </plist>
 ```
 
-## <a name="restrict-specific-devices-identified-by-vendor-id-product-id-and-serial-number"></a>Restringir dispositivos específicos identificados por id. de proveedor, id. de producto y número de serie
+## <a name="restrict-specific-devices-identified-by-vendor-id-product-id-and-serial-number"></a>Restricción de dispositivos específicos identificados por el identificador de proveedor, el identificador de producto y el número de serie
 
-En el ejemplo siguiente se restringen dos dispositivos específicos, identificados por el identificador de `fff0`proveedor, el id. `1000`de producto y los números de serie `04ZSSMHI2O7WBVOA` y `04ZSSMHI2O7WBVOB`. En todos los demás niveles de la directiva, los permisos incluyen todos los valores posibles (lectura, escritura y ejecución), lo que significa que todos los demás dispositivos no estarán restringidos.
+En el ejemplo siguiente se restringen dos dispositivos específicos, identificados por el identificador `fff0`de proveedor, el identificador `1000`de producto y los números `04ZSSMHI2O7WBVOA` de serie y `04ZSSMHI2O7WBVOB`. En todos los demás niveles de la directiva, los permisos incluyen todos los valores posibles (lectura, escritura y ejecución), lo que significa que todos los demás dispositivos estarán sin restricciones.
 
 ```xml
 <?xml version="1.0" encoding="UTF-8"?>
@@ -219,4 +219,4 @@ En el ejemplo siguiente se restringen dos dispositivos específicos, identificad
 
 ## <a name="related-topics"></a>Temas relacionados
 
-- [Información general sobre el control de dispositivos para macOS](mac-device-control-overview.md)
+- [Introducción al control de dispositivos para macOS](mac-device-control-overview.md)
