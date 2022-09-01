@@ -170,6 +170,8 @@
           href: microsoft-365-inter-tenant-collaboration.md
         - name: Migración de buzones de inquilinos cruzados
           href: cross-tenant-mailbox-migration.md
+        - name: Asignación de identidades entre inquilinos
+          href: cross-tenant-identity-mapping.md
         - name: Migraciones de espacio empresarial a espacio empresarial
           href: microsoft-365-tenant-to-tenant-migrations.md
     - name: Multi-Geo
