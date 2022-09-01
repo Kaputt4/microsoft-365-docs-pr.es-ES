@@ -16,12 +16,12 @@ search.appverid:
 - MET150
 description: Información para que los administradores de TI administren las etiquetas de confidencialidad en las aplicaciones de Office para escritorio, móvil y web.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: f520af643882e0aa7cd172f32894aa8b43a1cbb9
-ms.sourcegitcommit: ecc04b5b8f84b34255a2d5e90b5ab596af0d16c7
+ms.openlocfilehash: b395aaf4d506fcb933b34135d3871e9669a5efaa
+ms.sourcegitcommit: d60d78e6a05845747af0ad25131c7e526d58064d
 ms.translationtype: MT
 ms.contentlocale: es-ES
 ms.lasthandoff: 09/01/2022
-ms.locfileid: "67497766"
+ms.locfileid: "67498491"
 ---
 # <a name="manage-sensitivity-labels-in-office-apps"></a>Administrar etiquetas de confidencialidad en las aplicaciones de Office
 
@@ -64,7 +64,7 @@ Los números indicados son las versiones mínimas de la aplicación Office reque
 |[Aplicar, cambiar o eliminar manualmente la etiqueta](https://support.microsoft.com/en-us/office/apply-sensitivity-labels-to-your-files-and-email-in-office-2f96e7cd-d5a4-403b-8bd7-4cc636bae0f9)| Canal actual: 1910+ <br /><br> Canal mensual para empresas: 1910+ <br /><br> Canal semestral para empresas: 2002+ | 16.21+     | 2.21+ | 16.0.11231+ | [Sí - participar](sensitivity-labels-sharepoint-onedrive-files.md) |
 |[Compatibilidad con varios idiomas](create-sensitivity-labels.md#additional-label-settings-with-security--compliance-powershell)| Canal actual: 1910+ <br /><br> Canal mensual para empresas: 1910+ <br /><br> Canal semestral para empresas: 2002+ | 16.21+     | 2.21+ | 16.0.11231+ | En revisión |
 |[Aplicar una etiqueta predeterminada](sensitivity-labels.md#what-label-policies-can-do) a nuevos documentos                                         | Canal actual: 1910+ <br /><br> Canal mensual para empresas: 1910+ <br /><br> Canal semestral para empresas: 2002+ | 16.21+     | 2.21+ | 16.0.11231+ | [Sí - participar](sensitivity-labels-sharepoint-onedrive-files.md)                                                        |
-|[Aplicar una etiqueta predeterminada](sensitivity-labels.md#what-label-policies-can-do) a documentos existentes | Versión preliminar: Implementando en [Canal actual (versión preliminar)](https://office.com/insider) | Versión preliminar: Implementando en [Canal actual (versión preliminar)](https://office.com/insider) | En revisión | En revisión | [Sí - participar](sensitivity-labels-sharepoint-onedrive-files.md) |
+|[Aplicar una etiqueta predeterminada](sensitivity-labels.md#what-label-policies-can-do) a documentos existentes | Lanzamiento al canal actual: 2208+ <br /><br> Canal mensual de empresa: en revisión  <br /><br> Canal semestral para empresas: en revisión | Implementación a la versión 16.63+ | En revisión | En revisión | [Sí - participar](sensitivity-labels-sharepoint-onedrive-files.md) |
 |[Requerir una justificación para cambiar una etiqueta.](sensitivity-labels.md#what-label-policies-can-do)                     | Canal actual: 1910+ <br /><br> Canal mensual para empresas: 1910+  <br /><br> Canal semestral para empresas: 2002+ | 16.21+     | 2.21+ | 16.0.11231+ | [Sí - participar](sensitivity-labels-sharepoint-onedrive-files.md) |
 |[Proporcionar un vínculo de ayuda a una página de ayuda personalizada.](sensitivity-labels.md#what-label-policies-can-do)                       | Canal actual: 1910+ <br /><br> Canal mensual para empresas: 1910+ <br /><br> Canal semestral para empresas: 2002+ | 16.21+     | 2.21+ | 16.0.11231+ | [Sí - participar](sensitivity-labels-sharepoint-onedrive-files.md) |
 |[Marcar el contenido](sensitivity-labels.md#what-sensitivity-labels-can-do)                                              | Canal actual: 1910+ <br /><br> Canal mensual para empresas: 1910+ <br /><br> Canal semestral para empresas: 2002+ | 16.21+     | 2.21+ | 16.0.11231+ | [Sí - participar](sensitivity-labels-sharepoint-onedrive-files.md) |
@@ -438,6 +438,8 @@ Escenarios de PDF no admitidos:
 
 Para más información sobre esta funcionalidad, vea el anuncio [Aplicar etiquetas de confidencialidad a archivos PDF creados con aplicaciones de Office](https://insider.office.com/blog/apply-sensitivity-labels-to-pdfs-created-with-office-apps).
 
+Para obtener documentación del usuario final, consulte [Creación de archivos PDF protegidos a partir de archivos de Office](https://support.microsoft.com/topic/aba7e367-e482-49e7-b746-a385e48d01e4).
+
 ## <a name="auditing-labeling-activities"></a>Actividades de etiquetado de auditoría
 
 Para obtener información sobre los eventos de auditoría generados por las actividades de etiquetas de confidencialidad, vea la sección [Actividades de etiquetas de confidencialidad](search-the-audit-log-in-security-and-compliance.md#sensitivity-label-activities) de [Buscar en el registro de auditoría en el portal de cumplimiento de Microsoft Purview](search-the-audit-log-in-security-and-compliance.md).
@@ -458,3 +460,9 @@ También puede crear informes personalizados con su elección de administración
 
 - [Aplicar o recomendar automáticamente etiquetas de confidencialidad para sus archivos y correos electrónicos en Office](https://support.office.com/article/automatically-apply-or-recommend-sensitivity-labels-to-your-files-and-emails-in-office-622e0d9c-f38c-470a-bcdb-9e90b24d71a1)
     - [Problemas conocidos al aplicar o recomendar automáticamente etiquetas de confidencialidad](https://support.office.com/article/known-issues-with-automatically-applying-or-recommending-sensitivity-labels-451698ae-311b-4d28-83aa-a839a66f6efc)
+
+- [Creación de archivos PDF protegidos a partir de archivos de Office](https://support.microsoft.com/topic/aba7e367-e482-49e7-b746-a385e48d01e4)
+
+
+
+
