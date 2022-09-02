@@ -2,7 +2,7 @@
 title: Obtención de la API de máquinas relacionadas con el usuario
 description: Obtenga información sobre cómo usar la API Obtener máquinas relacionadas con el usuario para recuperar una colección de dispositivos relacionados con un identificador de usuario en Microsoft Defender para punto de conexión.
 keywords: apis, graph api, api admitidas, get, user, user related alerts
-ms.prod: m365-security
+ms.service: microsoft-365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -13,14 +13,14 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
-ms.technology: mde
+ms.subservice: mde
 ms.custom: api
-ms.openlocfilehash: 7cb4091f86383e7751c8837cbecafe895f22e5bc
-ms.sourcegitcommit: 217108c59be41b01963a393b4f16d137636fe6a8
+ms.openlocfilehash: fddef873ffa7cbf505d6fb6d6ceccf04a9ec50ae
+ms.sourcegitcommit: 228fa13973bf7c2d91504703fab757f552ae40dd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/12/2022
-ms.locfileid: "67327583"
+ms.lasthandoff: 09/01/2022
+ms.locfileid: "67524136"
 ---
 # <a name="get-user-related-machines-api"></a>Obtención de la API de máquinas relacionadas con el usuario
 

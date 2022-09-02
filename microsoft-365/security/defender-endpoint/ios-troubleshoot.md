@@ -2,7 +2,7 @@
 title: Solución de problemas y búsqueda de respuestas en preguntas más frecuentes relacionadas con Microsoft Defender para punto de conexión en iOS
 description: 'Solución de problemas y preguntas más frecuentes: Microsoft Defender para punto de conexión en iOS'
 keywords: microsoft, defender, Microsoft Defender para punto de conexión, ios, troubleshooting, faq, how to
-ms.prod: m365-security
+ms.service: microsoft-365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -14,13 +14,13 @@ audience: ITPro
 ms.collection:
 - m365-security-compliance
 ms.topic: conceptual
-ms.technology: mde
-ms.openlocfilehash: ae6e65d99a82bdf4a9c0adbb740c6e5b969f4b68
-ms.sourcegitcommit: 133bf9097785309da45df6f374a712a48b33f8e9
+ms.subservice: mde
+ms.openlocfilehash: d6cf7a9e2d19f694711b565f786f7c0560b962f0
+ms.sourcegitcommit: 228fa13973bf7c2d91504703fab757f552ae40dd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/10/2022
-ms.locfileid: "66016336"
+ms.lasthandoff: 09/01/2022
+ms.locfileid: "67522111"
 ---
 # <a name="troubleshoot-issues-and-find-answers-to-faqs-on-microsoft-defender-for-endpoint-on-ios"></a>Solucionar problemas y encontrar respuestas a preguntas más frecuentes sobre Microsoft Defender para punto de conexión en iOS
 
@@ -45,25 +45,25 @@ De forma predeterminada, Defender para punto de conexión en iOS incluye y habil
 
 Aunque está habilitado de forma predeterminada, puede haber algunos casos que requieran que deshabilite la VPN. Por ejemplo, quiere ejecutar algunas aplicaciones que no funcionan cuando se configura una VPN. En tales casos, puede optar por deshabilitar la VPN directamente desde la aplicación Defender para punto de conexión o mediante los pasos siguientes:
 
-1. En el dispositivo iOS, abra la aplicación **Configuración**, haga clic o pulse **general** y, a continuación, **VPN**.
+1. En el dispositivo iOS, abra la aplicación **Configuración** , haga clic o pulse en **General** y, a continuación, **vpn**.
 1. Haga clic o pulse el botón "i" para Microsoft Defender para punto de conexión.
-1. Desactive **Conectar a petición** para deshabilitar la VPN.
+1. Desactive **Conectar a petición** para deshabilitar vpn.
 
     > [!div class="mx-imgBorder"]
-    > :::image type="content" source="images/ios-vpn-config.png" alt-text="Opción Conectar a petición" lightbox="images/ios-vpn-config.png":::
+    > :::image type="content" source="images/ios-vpn-config.png" alt-text="La opción Conectar a petición" lightbox="images/ios-vpn-config.png":::
 
 > [!NOTE]
 > La protección web no estará disponible cuando la VPN esté deshabilitada. Para volver a habilitar La protección web, abra la aplicación Microsoft Defender para punto de conexión en el dispositivo y Habilite La protección web.
 
 ## <a name="coexistence-with-multiple-vpn-profiles"></a>Coexistencia con varios perfiles de VPN
 
-Apple iOS no admite que varias VPN de todo el **dispositivo** estén activas simultáneamente. Aunque pueden existir varios perfiles de VPN en el dispositivo, solo una VPN puede estar activa a la vez. Si necesita usar otra VPN en el dispositivo, puede deshabilitar la VPN de Defender para punto de conexión mientras usa la otra VPN.
+Apple iOS no admite varias VPN **de todo el dispositivo** para que estén activas simultáneamente. Aunque pueden existir varios perfiles de VPN en el dispositivo, solo una VPN puede estar activa a la vez. Si necesita usar otra VPN en el dispositivo, puede deshabilitar la VPN de Defender para punto de conexión mientras usa la otra VPN.
 
 ## <a name="battery-consumption"></a>Consumo de batería
 
 Para proporcionar protección en todo momento frente a amenazas basadas en web, Microsoft Defender para punto de conexión debe ejecutarse en segundo plano en todo momento. Esto podría dar lugar a un pequeño aumento en el consumo general de batería del dispositivo. En caso de que vea un drenaje significativo de la batería, [envíenos sus comentarios](ios-troubleshoot.md#send-in-app-feedback) e investigaremos.
 
-Además, en la aplicación Configuración, iOS solo muestra el uso de batería de las aplicaciones que son visibles para el usuario durante un período de tiempo específico. El uso de la batería por parte de las aplicaciones que se muestra en la pantalla es solo durante ese tiempo y se calcula iOS en función de una gran variedad de factores, como el uso de CPU y red. Microsoft Defender para punto de conexión usa una VPN local o de bucle atrás en segundo plano para comprobar el tráfico web en busca de sitios web malintencionados o conexiones. Los paquetes de red de cualquier aplicación pasan por esta comprobación y esto hace que el uso de la batería de Microsoft Defender para punto de conexión se calcule inexactamente. El consumo real de batería de Microsoft Defender para punto de conexión es menor que lo que se muestra en la página De batería Configuración del dispositivo.
+Además, en la aplicación Configuración, iOS solo muestra el uso de batería de las aplicaciones que son visibles para el usuario durante un período de tiempo específico. El uso de la batería por parte de las aplicaciones que se muestra en la pantalla es solo durante ese tiempo y iOS lo calcula en función de una gran variedad de factores, como el uso de CPU y red. Microsoft Defender para punto de conexión usa una VPN local o de bucle atrás en segundo plano para comprobar el tráfico web en busca de sitios web malintencionados o conexiones. Los paquetes de red de cualquier aplicación pasan por esta comprobación y esto hace que el uso de la batería de Microsoft Defender para punto de conexión se calcule inexactamente. El consumo real de batería de Microsoft Defender para punto de conexión es menor que lo que se muestra en la página Configuración de batería del dispositivo.
 
 Tenga en cuenta que la VPN usada es una VPN local y, a diferencia de una VPN tradicional, el tráfico de red no se envía fuera del dispositivo.
 
@@ -93,7 +93,7 @@ Además, se muestra una notificación en el dispositivo iOS. Al pulsar en la not
 Después de la incorporación, el dispositivo tarda unas horas en aparecer en el inventario de dispositivos en la consola de seguridad de Defender para punto de conexión. Además, asegúrese de que el dispositivo está registrado correctamente con Azure Active Directory y que el dispositivo tiene conectividad a Internet. Para una incorporación correcta, el dispositivo debe registrarse a través de Microsoft Authenticator o Portal de empresa de Intune y el usuario debe iniciar sesión con la misma cuenta con la que el dispositivo está registrado con Azure AD.
 
 > [!NOTE]
-> A veces, el nombre del dispositivo no es coherente con el de Microsoft Endpoint Manager consola (Intune). El nombre del dispositivo en la consola de Defender para punto de conexión tiene el formato <username_iPhone o modelo de iPad>. También puede usar el identificador de dispositivo de Azure AD para identificar el dispositivo en la consola de Defender para punto de conexión.
+> A veces, el nombre del dispositivo no es coherente con el de la consola de Microsoft Endpoint Manager (Intune). El nombre del dispositivo en la consola de Defender para punto de conexión tiene el formato <username_iPhone/modelo de iPad>. También puede usar el identificador de dispositivo de Azure AD para identificar el dispositivo en la consola de Defender para punto de conexión.
 
 ## <a name="data-and-privacy"></a>Datos y privacidad
 
@@ -101,7 +101,7 @@ Para obtener más información sobre los datos recopilados y la privacidad, cons
 
 ## <a name="connectivity-issue-on-cellular-network"></a>Problema de conectividad en la red de telefonía móvil
 
-Si tiene problemas de conectividad a Internet en la red de telefonía móvil, compruebe si Microsoft Defender para punto de conexión tiene los datos móviles habilitados: Abra Configuración aplicación > MS Defender > asegúrese de que "Datos de telefonía móvil" está habilitado para MS Defender.
+Si tiene problemas de conectividad a Internet en la red de telefonía móvil, compruebe si Microsoft Defender para punto de conexión tiene los datos de telefonía móvil habilitados: abra la aplicación Configuración > MS Defender > asegúrese de que "Datos móviles" está habilitado para MS Defender.
 
 Si sigue teniendo problemas de conectividad, compruebe si activar o desactivar el modo avión ayuda a resolver el problema. Si el problema persiste, [envíenos registros](ios-troubleshoot.md#send-in-app-feedback).
 

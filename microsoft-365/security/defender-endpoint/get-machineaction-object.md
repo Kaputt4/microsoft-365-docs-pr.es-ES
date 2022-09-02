@@ -2,7 +2,7 @@
 title: Api de objeto Get MachineAction
 description: Obtenga información sobre cómo usar la API Get MachineAction para recuperar una acción de máquina específica mediante su identificador en Microsoft Defender para punto de conexión.
 keywords: apis, graph api, api admitidas, machineaction (objeto)
-ms.prod: m365-security
+ms.service: microsoft-365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -13,14 +13,14 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
-ms.technology: mde
+ms.subservice: mde
 ms.custom: api
-ms.openlocfilehash: 4fa508be9abdbf0f589b1dd488d905386c42a183
-ms.sourcegitcommit: 217108c59be41b01963a393b4f16d137636fe6a8
+ms.openlocfilehash: 4cf04ebcb1d08eb582215fe7fbefd57440aa808c
+ms.sourcegitcommit: 228fa13973bf7c2d91504703fab757f552ae40dd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/12/2022
-ms.locfileid: "67326945"
+ms.lasthandoff: 09/01/2022
+ms.locfileid: "67522265"
 ---
 # <a name="get-machineaction-api"></a>Obtención de machineAction API
 

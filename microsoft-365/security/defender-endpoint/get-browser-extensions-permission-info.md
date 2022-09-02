@@ -2,7 +2,7 @@
 title: Obtener información de permisos de extensiones de explorador
 description: Recupera una lista de todos los permisos necesarios para una extensión del explorador.
 keywords: api, graph api, api admitidas, get, información de extensión del explorador, Microsoft Defender para punto de conexión, Administración de vulnerabilidades de Microsoft Defender
-ms.prod: m365-security
+ms.service: microsoft-365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -13,14 +13,14 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
-MS.technology: mde
+ms.subservice: mde
 ms.custom: api
-ms.openlocfilehash: 0dd9498e5ff126e8b91a8cb70cf352f6720db686
-ms.sourcegitcommit: 10e6abe740e27000e223378eb17d657a47555fa8
+ms.openlocfilehash: 5deeba682aa4cbd65c434132c4dec57ff7b1ebea
+ms.sourcegitcommit: 228fa13973bf7c2d91504703fab757f552ae40dd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/31/2022
-ms.locfileid: "67499066"
+ms.lasthandoff: 09/01/2022
+ms.locfileid: "67521815"
 ---
 # <a name="get-browser-extensions-permission-information"></a>Obtener información de permisos de extensiones de explorador
 

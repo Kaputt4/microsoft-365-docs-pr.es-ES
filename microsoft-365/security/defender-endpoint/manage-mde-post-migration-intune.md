@@ -2,8 +2,8 @@
 title: Administración de Microsoft Defender para punto de conexión mediante Intune
 description: Aprenda a administrar Microsoft Defender para punto de conexión con Intune
 keywords: posterior a la migración, administración, operaciones, mantenimiento, uso, intune, Microsoft Defender para punto de conexión, edr
-ms.prod: m365-security
-ms.technology: mde
+ms.service: microsoft-365-security
+ms.subservice: mde
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -17,12 +17,12 @@ ms.collection:
 ms.topic: article
 ms.date: 07/01/2022
 ms.reviewer: chventou
-ms.openlocfilehash: c8a7b949118375fa10ac12a18ce82c4fadebd6f3
-ms.sourcegitcommit: 217108c59be41b01963a393b4f16d137636fe6a8
+ms.openlocfilehash: 9c7471783b3a3f9d8ab77b4a9b4416df170df04c
+ms.sourcegitcommit: 228fa13973bf7c2d91504703fab757f552ae40dd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/12/2022
-ms.locfileid: "67327165"
+ms.lasthandoff: 09/01/2022
+ms.locfileid: "67522838"
 ---
 # <a name="manage-microsoft-defender-for-endpoint-with-intune"></a>Administración de Microsoft Defender para punto de conexión con Intune
 
@@ -83,7 +83,7 @@ Si aún no lo ha hecho, configure el portal de Microsoft 365 Defender para ver a
 - [Introducción a Microsoft 365 Defender](/microsoft-365/security/defender-endpoint/use)
 - [Endpoint Protection: Microsoft 365 Defender](/mem/intune/protect/endpoint-protection-windows-10#microsoft-defender-security-center)
 
-## <a name="next-steps"></a>Siguientes pasos
+## <a name="next-steps"></a>Pasos siguientes
 
 - [Obtenga información general sobre la administración de vulnerabilidades de Defender](/microsoft-365/security/defender-endpoint/next-gen-threat-and-vuln-mgt)
 - [Visite el panel de operaciones de seguridad del portal de Microsoft 365 Defender](/microsoft-365/security/defender-endpoint/security-operations-dashboard)

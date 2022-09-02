@@ -9,19 +9,19 @@ manager: dansimp
 ms.reviewer: shwetaj
 audience: ITPro
 ms.topic: article
-ms.prod: m365-security
+ms.service: microsoft-365-security
 ms.localizationpriority: medium
 ms.custom:
 - next-gen
 - edr
-ms.technology: mde
+ms.subservice: mde
 ms.collection: m365-security-compliance
-ms.openlocfilehash: da3f16837b8715fe791fbd8abf48acb657fd4963
-ms.sourcegitcommit: ebbe8713297675db5dcb3e0d9c3ae5e746b99196
+ms.openlocfilehash: 9fff81a71a82ce8f8af8dfd4267a56788f132246
+ms.sourcegitcommit: 228fa13973bf7c2d91504703fab757f552ae40dd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/14/2022
-ms.locfileid: "65416780"
+ms.lasthandoff: 09/01/2022
+ms.locfileid: "67523740"
 ---
 # <a name="feedback-loop-blocking"></a>Bloqueo de bucles de distribución de comentarios
 
@@ -41,7 +41,7 @@ El bloqueo de bucles de comentarios, también conocido como protección rápida,
 
 ## <a name="how-feedback-loop-blocking-works"></a>Funcionamiento del bloqueo de bucles de comentarios
 
-Cuando se detecta un comportamiento o un archivo sospechosos, como por [Antivirus de Microsoft Defender](/windows/security/threat-protection/microsoft-defender-antivirus/microsoft-defender-antivirus-in-windows-10), se envía información sobre ese artefacto a varios clasificadores. El motor de bucle de protección rápida inspecciona y correlaciona la información con otras señales para llegar a una decisión sobre si bloquear un archivo. La comprobación y clasificación de artefactos se produce rápidamente. Esto provoca un bloqueo rápido del malware confirmado y impulsa la protección en todo el ecosistema. 
+Cuando se detecta un comportamiento o un archivo sospechosos, como el [Antivirus de Microsoft Defender](/windows/security/threat-protection/microsoft-defender-antivirus/microsoft-defender-antivirus-in-windows-10), la información sobre ese artefacto se envía a varios clasificadores. El motor de bucle de protección rápida inspecciona y correlaciona la información con otras señales para llegar a una decisión sobre si bloquear un archivo. La comprobación y clasificación de artefactos se produce rápidamente. Esto provoca un bloqueo rápido del malware confirmado y impulsa la protección en todo el ecosistema. 
 
 Con una protección rápida, se puede detener un ataque en un dispositivo, otros dispositivos de la organización y dispositivos de otras organizaciones, a medida que un ataque intenta ampliar su posición.
 
@@ -61,7 +61,7 @@ Si su organización usa Defender para punto de conexión, el bloqueo de bucles d
 - [Protección de próxima generación](/windows/security/threat-protection/microsoft-defender-antivirus/configure-microsoft-defender-antivirus-features) (antivirus)
 
 > [!TIP]
-> Si busca información relacionada con antivirus para otras plataformas, consulte:
+> Si busca información relacionada con el antivirus para otras plataformas, consulte:
 > - [Establecer las preferencias para Microsoft Defender para punto de conexión en macOS](mac-preferences.md)
 > - [Microsoft Defender para punto de conexión en Mac](microsoft-defender-endpoint-mac.md)
 > - [Configuración de las directivas de antivirus de macOS para Antivirus de Microsoft Defender para Intune](/mem/intune/protect/antivirus-microsoft-defender-settings-macos)

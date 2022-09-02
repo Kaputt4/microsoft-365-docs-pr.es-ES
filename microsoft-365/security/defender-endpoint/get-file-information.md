@@ -2,7 +2,7 @@
 title: Obtención de la API de información de archivos
 description: Obtenga información sobre cómo usar la API Get file information para obtener un archivo mediante el identificador Sha1, Sha256 o MD5 en Microsoft Defender para punto de conexión.
 keywords: api, graph api, api admitidas, get, file, information, sha1, sha256, md5
-ms.prod: m365-security
+ms.service: microsoft-365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -13,14 +13,14 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
-ms.technology: mde
+ms.subservice: mde
 ms.custom: api
-ms.openlocfilehash: 54f5cc3055f4d652a5dc74396d1e2d322c23213d
-ms.sourcegitcommit: 217108c59be41b01963a393b4f16d137636fe6a8
+ms.openlocfilehash: ff17fef0189dd04b6f72356bb8b95e0739f1021c
+ms.sourcegitcommit: 228fa13973bf7c2d91504703fab757f552ae40dd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/12/2022
-ms.locfileid: "67331827"
+ms.lasthandoff: 09/01/2022
+ms.locfileid: "67523168"
 ---
 # <a name="get-file-information-api"></a>Obtención de la API de información de archivos
 

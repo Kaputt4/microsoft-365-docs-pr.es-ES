@@ -1,8 +1,8 @@
 ---
-title: Obtener puntuación segura para dispositivos
+title: Obtener la puntuación de seguridad del dispositivo
 description: Recupera la puntuación de seguridad del dispositivo de la organización.
 keywords: apis, graph api, api admitidas, get, alerts, recent
-ms.prod: m365-security
+ms.service: microsoft-365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -13,14 +13,14 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
-ms.technology: mde
+ms.subservice: mde
 ms.custom: api
-ms.openlocfilehash: 07651ed756d8229e6f0f4712b230875c11bf8007
-ms.sourcegitcommit: 217108c59be41b01963a393b4f16d137636fe6a8
+ms.openlocfilehash: 9838e799975d5880e40cb62a2bfb529bfd7c2440
+ms.sourcegitcommit: 228fa13973bf7c2d91504703fab757f552ae40dd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/12/2022
-ms.locfileid: "67327693"
+ms.lasthandoff: 09/01/2022
+ms.locfileid: "67523190"
 ---
 # <a name="get-device-secure-score"></a>Obtener puntuación segura para dispositivos
 

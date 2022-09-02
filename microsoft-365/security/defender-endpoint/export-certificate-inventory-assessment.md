@@ -2,7 +2,7 @@
 title: Métodos y propiedades de evaluación de certificados por dispositivo
 description: Proporciona información sobre las API de certificados que extraen datos "Administración de vulnerabilidades de Microsoft Defender". Hay diferentes llamadas API para obtener diferentes tipos de datos. En general, cada llamada API contiene los datos necesarios para los dispositivos de la organización.
 keywords: api, apis, export assessment, per device assessment, per machine assessment, vulnerability assessment report, device vulnerability assessment, device vulnerability report, secure configuration assessment, secure configuration report, software vulnerabilities assessment, software vulnerability report, vulnerability report by machine,
-ms.prod: m365-security
+ms.service: microsoft-365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -13,14 +13,14 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
-ms.technology: mde
+ms.subservice: mde
 ms.custom: api
-ms.openlocfilehash: 1b47a3b3c0088dca035fa6c85943e1737935cc51
-ms.sourcegitcommit: 48a75b40e607542e5fe219b6e75ffc757804a9c6
+ms.openlocfilehash: 681f177215c15540cb8649e74b2b319623c2db58
+ms.sourcegitcommit: 228fa13973bf7c2d91504703fab757f552ae40dd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/16/2022
-ms.locfileid: "67344929"
+ms.lasthandoff: 09/01/2022
+ms.locfileid: "67524026"
 ---
 # <a name="export-certificate-inventory-per-device"></a>Exportación del inventario de certificados por dispositivo
 
@@ -53,21 +53,31 @@ Los datos recopilados mediante "_respuesta JSON_ o _a través de archivos_" son 
 
 Devuelve todas las evaluaciones de certificados para todos los dispositivos, por dispositivo. Devuelve una tabla con una entrada independiente para cada combinación única de DeviceId, Huella digital y Ruta de acceso.
 
-#### <a name="12-limitations"></a>1.2 Limitaciones
+#### <a name="111-limitations"></a>1.1.1 Limitaciones
 
 - El tamaño máximo de página es de 200 000.
 - Las limitaciones de velocidad de esta API son 30 llamadas por minuto y 1000 llamadas por hora.
 
-### <a name="13-parameters"></a>1.3 Parámetros
+### <a name="12-permissions"></a>1.2 Permisos
 
-- pageSize (valor predeterminado = 50 000): número de resultados en respuesta.
-- $top: número de resultados que se devolverán (no devuelve @odata.nextLink y, por lo tanto, no extrae todos los datos).
+Se requiere uno de los permisos siguientes para llamar a esta API. Para obtener más información, incluido cómo elegir permisos, consulte [Uso de Microsoft Defender para punto de conexión API para obtener más información.](apis-intro.md)
 
-### <a name="14-http-request"></a>1.4 Solicitud HTTP
+Tipo de permiso|Permiso|Nombre para mostrar del permiso
+:---|:---|:---
+Application|Software.Read.All|"Leer la información del software de administración de amenazas y vulnerabilidades"
+Delegado (cuenta profesional o educativa)|Software.Read|"Leer la información del software de administración de amenazas y vulnerabilidades"
+
+### <a name="13-url"></a>Dirección URL 1.3
 
 ```http
 GET /api/machines/certificateAssessmentByMachine
 ```
+
+### <a name="14-parameters"></a>1.4 Parámetros
+
+- pageSize (valor predeterminado = 50 000): número de resultados en respuesta.
+- $top: número de resultados que se devolverán (no devuelve @odata.nextLink y, por lo tanto, no extrae todos los datos).
+
 
 ### <a name="15-properties-json-response"></a>Propiedades 1.5 (respuesta JSON)
 
@@ -139,19 +149,28 @@ GET https://api.securitycenter.microsoft.com/api/machines/BaselineComplianceAsse
 
 Devuelve todas las evaluaciones de certificados para todos los dispositivos, por dispositivo. Devuelve una tabla con una entrada independiente para cada combinación única de DeviceId, Huella digital y Ruta de acceso.
 
-#### <a name="22-limitations"></a>2.2 Limitaciones
+#### <a name="211-limitations"></a>2.1.1 Limitaciones
 
-- Las limitaciones de frecuencia de esta API son 5 llamadas por minuto y 20 llamadas por hora. 
+- Las limitaciones de frecuencia de esta API son 5 llamadas por minuto y 20 llamadas por hora.
 
-### <a name="23-parameters"></a>2.3 Parámetros
+### <a name="22-permissions"></a>2.2 Permisos
 
-- sasValidHours: el número de horas durante las que serán válidas las direcciones URL de descarga (máximo 24 horas).
+Se requiere uno de los permisos siguientes para llamar a esta API. Para obtener más información, incluido cómo elegir permisos, consulte [Uso de Microsoft Defender para punto de conexión API para obtener más información.](apis-intro.md)
 
-### <a name="24-http-request"></a>2.4 Solicitud HTTP
+Tipo de permiso|Permiso|Nombre para mostrar del permiso
+:---|:---|:---
+Application|Software.Read.All|"Leer la información del software de administración de amenazas y vulnerabilidades"
+Delegado (cuenta profesional o educativa)|Software.Read|"Leer la información del software de administración de amenazas y vulnerabilidades"
+
+### <a name="23-url"></a>Dirección URL 2.3
 
 ```http
 GET /api/machines/certificateAssessmentExport
 ```
+
+### <a name="24-parameters"></a>2.4 Parámetros
+
+- sasValidHours: el número de horas durante las que serán válidas las direcciones URL de descarga (máximo 24 horas).
 
 ### <a name="25-properties-json-response"></a>Propiedades 2.5 (respuesta JSON)
 

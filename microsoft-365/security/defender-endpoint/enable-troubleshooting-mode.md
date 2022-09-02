@@ -4,7 +4,7 @@ description: Active el modo de solución de problemas de Microsoft Defender para
 keywords: antivirus, solución de problemas, modo de solución de problemas, protección contra alteraciones, compatibilidad
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
-ms.prod: m365-security
+ms.service: microsoft-365-security
 ms.mktglfcycl: manage
 ms.sitesec: library
 ms.pagetype: security
@@ -16,13 +16,13 @@ audience: ITPro
 ms.collection:
 - m365-security-compliance
 ms.topic: article
-ms.technology: mde
-ms.openlocfilehash: eee3e07825b2775b4eff1b5fb45a6e1f86fc3a1b
-ms.sourcegitcommit: d1b60ed9a11f5e6e35fbaf30ecaeb9dfd6dd197d
+ms.subservice: mde
+ms.openlocfilehash: efe3ea8feb30e1177ff2c156fd6ccb284708a5b4
+ms.sourcegitcommit: 228fa13973bf7c2d91504703fab757f552ae40dd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/29/2022
-ms.locfileid: "66490596"
+ms.lasthandoff: 09/01/2022
+ms.locfileid: "67523322"
 ---
 # <a name="get-started-with-troubleshooting-mode-in-microsoft-defender-for-endpoint"></a>Introducción al modo de solución de problemas en Microsoft Defender para punto de conexión 
 
@@ -35,7 +35,7 @@ ms.locfileid: "66490596"
 
 Microsoft Defender para punto de conexión modo de solución de problemas le permite solucionar problemas de varias características antivirus de Microsoft Defender al habilitarlas desde el dispositivo y probar diferentes escenarios, incluso si están controladas por la directiva de la organización. El modo de solución de problemas está deshabilitado de forma predeterminada y requiere que lo active para un dispositivo (o grupo de dispositivos) durante un tiempo limitado. Tenga en cuenta que se trata exclusivamente de una característica de solo empresa y requiere Microsoft 365 Defender acceso.
 
-## <a name="what-do-you-need-to-know-before-you-begin"></a>¿Qué necesita saber antes de comenzar?
+## <a name="what-do-you-need-to-know-before-you-begin"></a>¿Qué necesita saber antes de empezar?
 
 - Use el modo de solución de problemas para deshabilitar o cambiar la configuración de protección contra alteraciones para realizar lo siguiente:
 

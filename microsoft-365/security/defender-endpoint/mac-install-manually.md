@@ -2,7 +2,7 @@
 title: Implementación manual para Microsoft Defender para punto de conexión en macOS
 description: Instale Microsoft Defender para punto de conexión en macOS manualmente, desde la línea de comandos.
 keywords: microsoft, defender, Microsoft Defender para punto de conexión, mac, installation, deploy, uninstallation, intune, jamf, macos, catalina, mojave, high sierra
-ms.prod: m365-security
+ms.service: microsoft-365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -15,13 +15,13 @@ ms.collection:
 - m365-security-compliance
 ms.custom: admindeeplinkDEFENDER
 ms.topic: conceptual
-ms.technology: mde
-ms.openlocfilehash: 68f91e4b8f789087aacea14b6b2a8a8b67262fd0
-ms.sourcegitcommit: b0b1be67de8f40b199bb9b51eb3568e59377e93a
+ms.subservice: mde
+ms.openlocfilehash: 6abef7bbfffdf7e00a9921470476acfa24ef890b
+ms.sourcegitcommit: 228fa13973bf7c2d91504703fab757f552ae40dd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/18/2022
-ms.locfileid: "66159627"
+ms.lasthandoff: 09/01/2022
+ms.locfileid: "67521683"
 ---
 # <a name="manual-deployment-for-microsoft-defender-for-endpoint-on-macos"></a>Implementación manual para Microsoft Defender para punto de conexión en macOS
 
@@ -34,7 +34,7 @@ ms.locfileid: "66159627"
 
 > ¿Quiere experimentar Defender para punto de conexión? [Regístrese para obtener una evaluación gratuita](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-investigateip-abovefoldlink).
 
-En este tema se describe cómo implementar Microsoft Defender para punto de conexión en macOS manualmente. Una implementación correcta requiere la finalización de todos los pasos siguientes:
+En este tema se describe cómo implementar manualmente Microsoft Defender para punto de conexión en macOS. Una implementación correcta requiere la finalización de todos los pasos siguientes:
 
 - [Descarga de paquetes de instalación e incorporación](#download-installation-and-onboarding-packages)
 - [Instalación de aplicaciones (macOS 10.15)](#application-installation-macos-1015)
@@ -43,14 +43,14 @@ En este tema se describe cómo implementar Microsoft Defender para punto de cone
 
 ## <a name="prerequisites-and-system-requirements"></a>Requisitos previos y requisitos del sistema
 
-Antes de empezar, consulte [la Microsoft Defender para punto de conexión principal en macOS página](microsoft-defender-endpoint-mac.md) para obtener una descripción de los requisitos previos y los requisitos del sistema para la versión de software actual.
+Antes de empezar, consulte [la página principal Microsoft Defender para punto de conexión en macOS](microsoft-defender-endpoint-mac.md) para obtener una descripción de los requisitos previos y los requisitos del sistema para la versión actual del software.
 
 ## <a name="download-installation-and-onboarding-packages"></a>Descarga de paquetes de instalación e incorporación
 
 Descargue los paquetes de instalación e incorporación de Microsoft 365 Defender portal:
 
-1. En <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">Microsoft 365 Defender portal</a>, vaya a **Configuración > Puntos de conexión > Administración de dispositivos > Incorporación**.
-2. En la sección 1 de la página, establezca el sistema operativo en **macOS** y el método deployment en **Script local**.
+1. En <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">Microsoft 365 Defender portal</a>, vaya a **Configuración > puntos de conexión > Administración de dispositivos > incorporación**.
+2. En la sección 1 de la página, establezca el sistema operativo en **macOS** y el método de implementación en **Script local**.
 3. En la sección 2 de la página, seleccione **Descargar paquete de instalación**. Guárdelo como wdav.pkg en un directorio local.
 4. En la sección 2 de la página, seleccione **Descargar paquete de incorporación**. Guárdelo como WindowsDefenderATPOnboardingPackage.zip en el mismo directorio.
 
@@ -137,7 +137,7 @@ Para completar este proceso, debe tener privilegios de administrador en el dispo
     mdatp health --field org_id
     ```
 
-    Después de la instalación, verá el icono de Microsoft Defender en la barra de estado macOS de la esquina superior derecha.
+    Después de la instalación, verá el icono de Microsoft Defender en la barra de estado de macOS en la esquina superior derecha.
 
     > [!div class="mx-imgBorder"]
     > :::image type="content" source="images/mdatp-icon-bar.png" alt-text="Icono de Microsoft Defender en la barra de estado" lightbox="images/mdatp-icon-bar.png":::
@@ -206,18 +206,18 @@ Para completar este proceso, debe tener privilegios de administrador en el dispo
 
     El sistema debe mostrar el siguiente mensaje:
 
-    > Microsoft Defender para punto de conexión: macOS EDR archivo de prueba DE BRICOLAJE<br/>
+    > Microsoft Defender para punto de conexión: archivo de prueba de bricolaje de macOS EDR<br/>
     > La alerta correspondiente estará disponible en el portal de MDATP.
 
 10. Haga clic en **Open** (Abrir).
 
-    En unos minutos se debe generar una alerta denominada "macOS EDR alerta de prueba".
+    En unos minutos se debe generar una alerta denominada "alerta de prueba de EDR de macOS".
 
 11. Vaya a Microsoft 365 Defender portal (https://security.microsoft.com/).
 
 12. Vaya a la cola de alertas.
 
-    :::image type="content" source="images/b8db76c2-c368-49ad-970f-dcb87534d9be.png" alt-text="Una macOS EDR alerta de prueba que muestra la gravedad, la categoría, el origen de detección y un menú contraído de acciones" lightbox="images/b8db76c2-c368-49ad-970f-dcb87534d9be.png":::
+    :::image type="content" source="images/b8db76c2-c368-49ad-970f-dcb87534d9be.png" alt-text="Una alerta de prueba de EDR de macOS que muestra la gravedad, la categoría, el origen de detección y un menú contraído de acciones" lightbox="images/b8db76c2-c368-49ad-970f-dcb87534d9be.png":::
 
     Examine los detalles de la alerta y la escala de tiempo del dispositivo y realice los pasos de investigación normales.
 

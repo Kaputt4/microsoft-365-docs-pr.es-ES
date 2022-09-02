@@ -2,7 +2,7 @@
 title: Detección y bloqueo de aplicaciones potencialmente no deseadas con Microsoft Defender para punto de conexión en Linux
 description: Detecte y bloquee aplicaciones potencialmente no deseadas (PUA) mediante Microsoft Defender para punto de conexión en Linux.
 keywords: microsoft, defender, Microsoft Defender para punto de conexión, linux, pua, pus
-ms.prod: m365-security
+ms.service: microsoft-365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -14,13 +14,13 @@ audience: ITPro
 ms.collection:
 - m365-security-compliance
 ms.topic: conceptual
-ms.technology: mde
-ms.openlocfilehash: 004a9d7af09e8a2abb656c29db558d797173edcd
-ms.sourcegitcommit: 612ce4d15d8a2fdbf7795393b50af477d81b6139
+ms.subservice: mde
+ms.openlocfilehash: 6dda58683c18070d0d5b023872a7614d8618572d
+ms.sourcegitcommit: 228fa13973bf7c2d91504703fab757f552ae40dd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/24/2022
-ms.locfileid: "65663610"
+ms.lasthandoff: 09/01/2022
+ms.locfileid: "67520893"
 ---
 # <a name="detect-and-block-potentially-unwanted-applications-with-microsoft-defender-for-endpoint-on-linux"></a>Detección y bloqueo de aplicaciones potencialmente no deseadas con Microsoft Defender para punto de conexión en Linux
 

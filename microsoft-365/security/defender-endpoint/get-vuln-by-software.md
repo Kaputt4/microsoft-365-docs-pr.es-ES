@@ -2,7 +2,7 @@
 title: Enumerar vulnerabilidades por software
 description: Recupere una lista de vulnerabilidades en el software instalado.
 keywords: apis, graph api, api admitidas, get, lista de vulnerabilidades, Microsoft Defender para punto de conexión tvm api
-ms.prod: m365-security
+ms.service: microsoft-365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -13,14 +13,14 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
-ms.technology: mde
+ms.subservice: mde
 ms.custom: api
-ms.openlocfilehash: 61a85b5e3a52cdf936058a08ad71f08348c4a553
-ms.sourcegitcommit: 217108c59be41b01963a393b4f16d137636fe6a8
+ms.openlocfilehash: 261545c6d462bcffd6067c0249457e5690a65616
+ms.sourcegitcommit: 228fa13973bf7c2d91504703fab757f552ae40dd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/12/2022
-ms.locfileid: "67327649"
+ms.lasthandoff: 09/01/2022
+ms.locfileid: "67522199"
 ---
 # <a name="list-vulnerabilities-by-software"></a>Enumerar vulnerabilidades por software
 

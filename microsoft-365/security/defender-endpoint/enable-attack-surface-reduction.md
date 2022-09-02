@@ -2,7 +2,7 @@
 title: Habilitar reglas de reducción de superficie expuesta a ataques
 description: Habilite reglas de reducción de la superficie expuesta a ataques (ASR) para proteger los dispositivos frente a ataques que usan macros, scripts y técnicas de inyección comunes.
 keywords: Reducción de la superficie expuesta a ataques, caderas, sistema de prevención de intrusiones del host, reglas de protección, anti-vulnerabilidad, antiexploit, vulnerabilidad de seguridad, prevención de infecciones, habilitar, activar
-ms.prod: m365-security
+ms.service: microsoft-365-security
 ms.mktglfcycl: manage
 ms.sitesec: library
 ms.pagetype: security
@@ -12,18 +12,18 @@ author: jweston-1
 ms.author: v-jweston
 ms.reviewer: oogunrinde
 manager: dansimp
-ms.technology: mde
+ms.subservice: mde
 ms.topic: how-to
 ms.collection:
 - M365-security-compliance
 ms.custom: admindeeplinkDEFENDER
 ms.date: 1/18/2022
-ms.openlocfilehash: a34ee4f16bb6bc98e14ede15df98ceedb7f4dec8
-ms.sourcegitcommit: d09eb780dc41a01796eb8137fbe9267231af6746
+ms.openlocfilehash: 7425579656cfcf4549d8b1330d62c40b10bc07cc
+ms.sourcegitcommit: 228fa13973bf7c2d91504703fab757f552ae40dd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/19/2022
-ms.locfileid: "67388647"
+ms.lasthandoff: 09/01/2022
+ms.locfileid: "67521903"
 ---
 # <a name="enable-attack-surface-reduction-rules"></a>Habilitar reglas de reducción de superficie expuesta a ataques
 

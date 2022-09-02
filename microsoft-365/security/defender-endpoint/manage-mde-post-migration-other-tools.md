@@ -2,8 +2,8 @@
 title: Administración de Microsoft Defender para punto de conexión mediante PowerShell, WMI y MPCmdRun.exe
 description: Aprenda a administrar Microsoft Defender para punto de conexión con PowerShell, WMI y MPCmdRun.exe
 keywords: posterior a la migración, administración, operaciones, mantenimiento, uso, PowerShell, WMI, MPCmdRun.exe, Microsoft Defender para punto de conexión, edr
-ms.prod: m365-security
-ms.technology: mde
+ms.service: microsoft-365-security
+ms.subservice: mde
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -17,12 +17,12 @@ ms.collection:
 ms.custom: admindeeplinkDEFENDER
 ms.topic: article
 ms.reviewer: chventou
-ms.openlocfilehash: 4003f2a41674ec6dbaa875235ccc12412d23ddba
-ms.sourcegitcommit: 217108c59be41b01963a393b4f16d137636fe6a8
+ms.openlocfilehash: 499f02521d0b7fa0627d1b0ab7bcd6e9ab92f6a7
+ms.sourcegitcommit: 228fa13973bf7c2d91504703fab757f552ae40dd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/12/2022
-ms.locfileid: "67327187"
+ms.lasthandoff: 09/01/2022
+ms.locfileid: "67522794"
 ---
 # <a name="manage-microsoft-defender-for-endpoint-with-powershell-wmi-and-mpcmdrunexe"></a>Administración de Microsoft Defender para punto de conexión con PowerShell, WMI y MPCmdRun.exe
 
@@ -82,7 +82,7 @@ También puede configurar si y qué características pueden ver los usuarios fin
 - [Introducción a la Centro de seguridad de Microsoft Defender](/microsoft-365/security/defender-endpoint/use)
 - [Endpoint Protection: Centro de seguridad de Microsoft Defender](/mem/intune/protect/endpoint-protection-windows-10#microsoft-defender-security-center)
 
-## <a name="next-steps"></a>Siguientes pasos
+## <a name="next-steps"></a>Pasos siguientes
 
 - [Obtenga información general sobre la administración de vulnerabilidades de Defender](/microsoft-365/security/defender-endpoint/next-gen-threat-and-vuln-mgt)
 - [Visite el panel de operaciones de seguridad de Centro de seguridad de Microsoft Defender](/microsoft-365/security/defender-endpoint/security-operations-dashboard)

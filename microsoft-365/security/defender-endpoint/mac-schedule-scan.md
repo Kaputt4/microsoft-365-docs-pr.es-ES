@@ -1,8 +1,8 @@
 ---
-title: Cómo programar exámenes con Microsoft Defender para endpoint en macOS
-description: Obtenga información sobre cómo programar un tiempo de examen automático para Microsoft Defender para Endpoint en macOS para proteger mejor los activos de su organización.
-keywords: microsoft, defender, Microsoft Defender para Endpoint, mac, exámenes, antivirus
-ms.prod: m365-security
+title: Programación de exámenes con Microsoft Defender para punto de conexión en macOS
+description: Obtenga información sobre cómo programar un tiempo de examen automático para Microsoft Defender para punto de conexión en macOS con el fin de proteger mejor los recursos de su organización.
+keywords: microsoft, defender, Microsoft Defender para punto de conexión, mac, scans, antivirus
+ms.service: microsoft-365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -14,15 +14,15 @@ audience: ITPro
 ms.collection:
 - m365-security-compliance
 ms.topic: conceptual
-ms.technology: mde
-ms.openlocfilehash: 629db5fc343d100913d631f59a680fc9160713ed
-ms.sourcegitcommit: 6e90baef421ae06fd790b0453d3bdbf624b7f9c0
+ms.subservice: mde
+ms.openlocfilehash: c8e7167bbd059678c26bfe4f0c8318fc74a6e9fe
+ms.sourcegitcommit: 228fa13973bf7c2d91504703fab757f552ae40dd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/12/2022
-ms.locfileid: "62766001"
+ms.lasthandoff: 09/01/2022
+ms.locfileid: "67521617"
 ---
-# <a name="schedule-scans-with-microsoft-defender-for-endpoint-on-macos"></a>Programar exámenes con Microsoft Defender para endpoint en macOS
+# <a name="schedule-scans-with-microsoft-defender-for-endpoint-on-macos"></a>Programación de exámenes con Microsoft Defender para punto de conexión en macOS
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
@@ -33,13 +33,13 @@ ms.locfileid: "62766001"
 
 > ¿Quiere experimentar Microsoft Defender para punto de conexión? [Regístrese para obtener una prueba gratuita.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-exposedapis-abovefoldlink)
 
-Aunque puede iniciar un examen de amenazas en cualquier momento con Microsoft Defender para endpoint, su empresa puede beneficiarse de exámenes programados o programados. Por ejemplo, puede programar un examen para que se ejecute al principio de cada día laborable o semana. 
+Aunque puede iniciar un examen de amenazas en cualquier momento con Microsoft Defender para punto de conexión, su empresa podría beneficiarse de exámenes programados o programados. Por ejemplo, puede programar un examen para que se ejecute al principio de cada día laborable o semana. 
 
-## <a name="schedule-a-scan-with-launchd"></a>Programar un examen con *inicio*
+## <a name="schedule-a-scan-with-launchd"></a>Programación de un examen con *el inicio*
 
-Puedes crear una programación de análisis mediante *el* demonio que se inicia en un dispositivo macOS.
+Puede crear una programación de examen mediante el demonio *lanzado* en un dispositivo macOS.
 
-Para obtener más información sobre el formato *de archivo .plist* que se usa aquí, consulta Acerca [de los archivos](https://developer.apple.com/library/archive/documentation/General/Reference/InfoPlistKeyReference/Articles/AboutInformationPropertyListFiles.html) de lista de propiedades de información en el sitio web oficial para desarrolladores de Apple.
+Para obtener más información sobre el formato de archivo *.plist* que se usa aquí, consulte [Acerca de los archivos de lista de propiedades de información](https://developer.apple.com/library/archive/documentation/General/Reference/InfoPlistKeyReference/Articles/AboutInformationPropertyListFiles.html) en el sitio web oficial para desarrolladores de Apple.
 
 ### <a name="schedule-a-quick-scan"></a>Programar un examen rápido
 
@@ -121,9 +121,9 @@ El código siguiente muestra el esquema que debe usar para programar un examen r
 
 2. Guarde el archivo como *com.microsoft.wdav.schedfullscan.plist*.
  
-### <a name="load-your-file"></a>Cargar el archivo
+### <a name="load-your-file"></a>Carga del archivo
 
-1. Abra **Terminal**.
+1. Abra **terminal**.
 2. Escriba los siguientes comandos para cargar el archivo:
 
     ```bash
@@ -131,21 +131,21 @@ El código siguiente muestra el esquema que debe usar para programar un examen r
     launchctl start <your file name>
     ```
 
-3. El examen programado se ejecutará en la fecha, hora y frecuencia definidas en la lista p. En los ejemplos anteriores, el examen se ejecuta a las 2:50 a.m. todos los viernes. 
+3. El examen programado se ejecutará en la fecha, hora y frecuencia definidas en la lista P. En los ejemplos anteriores, el examen se ejecuta a las 2:50 a.m. todos los viernes. 
 
-    - El `Weekday` valor de `StartCalendarInterval` usa un entero para indicar el quinto día de la semana, o viernes. El intervalo está entre 0 y 7 y 7 representa el domingo.
-    - El `Day` valor de `StartCalendarInterval` usa un entero para indicar el tercer día del mes. El intervalo está entre 1 y 31.
-    - El `Hour` valor de `StartCalendarInterval` usa un entero para indicar la segunda hora del día. El intervalo está entre 0 y 24.
-    El `Minute` valor de `StartCalendarInterval` usa un entero para indicar cincuenta minutos de la hora. El intervalo está entre 0 y 59.
+    - El `Weekday` valor de `StartCalendarInterval` usa un entero para indicar el quinto día de la semana o viernes. El intervalo está comprendido entre 0 y 7, con 7 representando el domingo.
+    - El `Day` valor de `StartCalendarInterval` usa un entero para indicar el tercer día del mes. El intervalo está comprendido entre 1 y 31.
+    - El `Hour` valor de `StartCalendarInterval` usa un entero para indicar la segunda hora del día. El intervalo está comprendido entre 0 y 24.
+    El `Minute` valor de `StartCalendarInterval` usa un entero para indicar cincuenta minutos de la hora. El intervalo está comprendido entre 0 y 59.
     
     
  > [!IMPORTANT]
- > Los agentes ejecutados *con el inicio* no se ejecutarán en la hora programada mientras el dispositivo está dormido. En su lugar, se ejecutarán una vez que el dispositivo reanude el modo de suspensión.
+ > Los agentes ejecutados con *el inicio* no se ejecutarán a la hora programada mientras el dispositivo esté inactivo. En su lugar, se ejecutarán una vez que el dispositivo se reanude del modo de suspensión.
  >
- > Si el dispositivo está desactivado, el examen se ejecutará en la próxima hora programada del examen.
+ > Si el dispositivo está desactivado, el examen se ejecutará en la siguiente hora de examen programada.
 
 ## <a name="schedule-a-scan-with-intune"></a>Programar un examen con Intune
 
-También puede programar exámenes con Microsoft Intune. El [script runMDATPQuickScan.sh](https://github.com/microsoft/shell-intune-samples/tree/master/Misc/MDATP#runmdatpquickscansh) shell disponible en [Scripts para Microsoft Defender para Endpoint](https://github.com/microsoft/shell-intune-samples/tree/master/Misc/MDATP) persistirá cuando el dispositivo reanude el modo de suspensión. 
+También puede programar exámenes con Microsoft Intune. El [script de shell de runMDATPQuickScan.sh](https://github.com/microsoft/shell-intune-samples/tree/master/Misc/MDATP#runmdatpquickscansh) disponible en [Scripts para Microsoft Defender para punto de conexión](https://github.com/microsoft/shell-intune-samples/tree/master/Misc/MDATP) se conservará cuando el dispositivo se reanude del modo de suspensión. 
 
-Consulta [Usar scripts de shell en dispositivos macOS en Intune](/mem/intune/apps/macos-shell-scripts) para obtener instrucciones más detalladas sobre cómo usar este script en tu empresa.
+Consulte [Uso de scripts de shell en dispositivos macOS en Intune](/mem/intune/apps/macos-shell-scripts) para obtener instrucciones más detalladas sobre cómo usar este script en la empresa.

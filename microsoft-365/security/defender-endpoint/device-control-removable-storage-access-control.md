@@ -1,7 +1,7 @@
 ---
 title: Microsoft Defender para punto de conexión dispositivo control almacenamiento extraíble Access Control, medios de almacenamiento extraíbles
 description: Un tutorial sobre Microsoft Defender para punto de conexión
-ms.prod: m365-security
+ms.service: microsoft-365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -13,15 +13,15 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.custom: admindeeplinkDEFENDER
 ms.topic: conceptual
-ms.technology: mde
+ms.subservice: mde
 ms.date: 08/08/2022
 ms.reviewer: tewchen
-ms.openlocfilehash: 021556a1942619be8deeb4724507b1237c0a3f51
-ms.sourcegitcommit: 414682b9bf42dc19a89c893d3c515aee9765b6e4
+ms.openlocfilehash: d6370dca95797b7ce83e95a4a4123aa2f5470205
+ms.sourcegitcommit: 228fa13973bf7c2d91504703fab757f552ae40dd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/08/2022
-ms.locfileid: "67280705"
+ms.lasthandoff: 09/01/2022
+ms.locfileid: "67522441"
 ---
 # <a name="microsoft-defender-for-endpoint-device-control-removable-storage-access-control"></a>Microsoft Defender para punto de conexión almacenamiento extraíble de control de dispositivos Access Control
 
@@ -37,12 +37,12 @@ Microsoft Defender para punto de conexión característica de almacenamiento ext
 
 |Privilegio|Permiso|
 |---|---|
-|Access|Lectura, Escritura, Ejecución|
+|Acceso|Lectura, Escritura, Ejecución|
 |Modo de acción|Auditar, permitir, impedir|
-|Compatibilidad con CSP|Sí|
-|Compatibilidad con GPO|Sí|
-|Soporte técnico basado en el usuario|Sí|
-|Compatibilidad basada en máquinas|Sí|
+|Compatibilidad con CSP|Yes|
+|Compatibilidad con GPO|Yes|
+|Soporte técnico basado en el usuario|Yes|
+|Compatibilidad basada en máquinas|Yes|
 
 Microsoft Defender para punto de conexión característica de almacenamiento extraíble de control de dispositivos Access Control proporciona las siguientes funcionalidades:
 

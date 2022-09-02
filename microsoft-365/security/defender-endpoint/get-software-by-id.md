@@ -2,7 +2,7 @@
 title: Obtener software por identificación
 description: Recupera una lista de detalles de software por identificador.
 keywords: api, graph api, api admitidas, get, software, Microsoft Defender para punto de conexión tvm api, mdvm, Administración de vulnerabilidades de Microsoft Defender
-ms.prod: m365-security
+ms.service: microsoft-365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -13,14 +13,14 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
-ms.technology: mde
+ms.subservice: mde
 ms.custom: api
-ms.openlocfilehash: 25875a0be2a632ae0d0d02a8633757216a8bcb2f
-ms.sourcegitcommit: 48a75b40e607542e5fe219b6e75ffc757804a9c6
+ms.openlocfilehash: 25a43e4ea23b18749ec8b78f5ddf70493e55b7c8
+ms.sourcegitcommit: 228fa13973bf7c2d91504703fab757f552ae40dd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/16/2022
-ms.locfileid: "67344841"
+ms.lasthandoff: 09/01/2022
+ms.locfileid: "67523850"
 ---
 # <a name="get-software-by-id"></a>Obtener software por identificación
 

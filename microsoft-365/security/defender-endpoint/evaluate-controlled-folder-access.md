@@ -2,7 +2,7 @@
 title: Evaluar acceso controlado a carpetas
 description: Vea cómo el acceso controlado a carpetas puede ayudar a proteger los archivos de que las aplicaciones malintencionadas cambien.
 keywords: Protección contra vulnerabilidades de seguridad, windows 10, windows 11, windows defender, ransomware, protect, evaluate, test, demo, try
-ms.prod: m365-security
+ms.service: microsoft-365-security
 ms.mktglfcycl: manage
 ms.sitesec: library
 ms.localizationpriority: medium
@@ -12,15 +12,15 @@ author: dansimp
 ms.author: dansimp
 ms.reviewer: oogunrinde, sugamar
 manager: dansimp
-ms.technology: mde
+ms.subservice: mde
 ms.collection: m365-security-compliance
 ms.date: ''
-ms.openlocfilehash: 8e251222d71ad9559084ec39d7fa65a18b9e2c1a
-ms.sourcegitcommit: c314e989202dc1c9c260fffd459d53bc1f08514e
+ms.openlocfilehash: f1309a52f21075574bcf1386a684889798a42405
+ms.sourcegitcommit: 228fa13973bf7c2d91504703fab757f552ae40dd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/12/2022
-ms.locfileid: "66717170"
+ms.lasthandoff: 09/01/2022
+ms.locfileid: "67523300"
 ---
 # <a name="evaluate-controlled-folder-access"></a>Evaluar acceso controlado a carpetas
 
@@ -76,7 +76,7 @@ Durante la evaluación, es posible que desee agregar a la lista de carpetas prot
 
 Consulte [Protección de carpetas importantes con acceso controlado a carpetas](controlled-folders.md) para configurar la característica con herramientas de administración, incluidos directiva de grupo, PowerShell y proveedores de servicios de configuración de MDM (CSP).
 
-## <a name="see-also"></a>Recursos adicionales
+## <a name="see-also"></a>Vea también
 
 * [Proteger carpetas importantes con acceso controlado a carpetas](controlled-folders.md)
 * [Microsoft Defender para punto de conexión](evaluate-mde.md)

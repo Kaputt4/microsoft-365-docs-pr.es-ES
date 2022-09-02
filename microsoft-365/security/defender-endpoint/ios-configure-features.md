@@ -1,8 +1,8 @@
 ---
-title: Configurar Microsoft Defender para punto de conexión en las características iOS
+title: Configurar Microsoft Defender para punto de conexión en las características de iOS
 description: Describe cómo implementar Microsoft Defender para punto de conexión en características de iOS.
 keywords: microsoft, defender, Microsoft Defender para punto de conexión, ios, configure, features, ios
-ms.prod: m365-security
+ms.service: microsoft-365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -14,15 +14,15 @@ audience: ITPro
 ms.collection:
 - m365-security-compliance
 ms.topic: conceptual
-ms.technology: mde
-ms.openlocfilehash: 0e1971ba9b2c65dd02411d237ab3886c58fa7003
-ms.sourcegitcommit: e4882e3c66166ea7b834ad2e8fafeab42293e07d
+ms.subservice: mde
+ms.openlocfilehash: a40f5074b2e9caf85eeda01e8061c9b5fcaca6d2
+ms.sourcegitcommit: 228fa13973bf7c2d91504703fab757f552ae40dd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/30/2022
-ms.locfileid: "67099291"
+ms.lasthandoff: 09/01/2022
+ms.locfileid: "67522133"
 ---
-# <a name="configure-microsoft-defender-for-endpoint-on-ios-features"></a>Configurar Microsoft Defender para punto de conexión en las características iOS
+# <a name="configure-microsoft-defender-for-endpoint-on-ios-features"></a>Configurar Microsoft Defender para punto de conexión en las características de iOS
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 

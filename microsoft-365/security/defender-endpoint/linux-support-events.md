@@ -1,8 +1,8 @@
 ---
-title: Solucionar problemas de alertas o eventos que faltan para Microsoft Defender para Endpoint en Linux
-description: Solucionar problemas de alertas o eventos que faltan en Microsoft Defender para Endpoint en Linux.
-keywords: microsoft, defender, Microsoft Defender para endpoint, linux, eventos
-ms.prod: m365-security
+title: Solución de problemas de eventos o alertas que faltan para Microsoft Defender para punto de conexión en Linux
+description: Solución de problemas de eventos o alertas que faltan en Microsoft Defender para punto de conexión en Linux.
+keywords: microsoft, defender, Microsoft Defender para punto de conexión, linux, eventos
+ms.service: microsoft-365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -15,15 +15,15 @@ ms.collection:
 - m365-security-compliance
 ms.custom: admindeeplinkDEFENDER
 ms.topic: conceptual
-ms.technology: mde
-ms.openlocfilehash: 5a17f94e3d26c08c0f6e0ca358778a65189cf6a5
-ms.sourcegitcommit: 6e90baef421ae06fd790b0453d3bdbf624b7f9c0
+ms.subservice: mde
+ms.openlocfilehash: 6f492ac422e105a22c48cb561f2b2247f4210c73
+ms.sourcegitcommit: 228fa13973bf7c2d91504703fab757f552ae40dd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/12/2022
-ms.locfileid: "62766027"
+ms.lasthandoff: 09/01/2022
+ms.locfileid: "67520871"
 ---
-# <a name="troubleshoot-missing-events-or-alerts-issues-for-microsoft-defender-for-endpoint-on-linux"></a>Solucionar problemas de alertas o eventos que faltan para Microsoft Defender para Endpoint en Linux
+# <a name="troubleshoot-missing-events-or-alerts-issues-for-microsoft-defender-for-endpoint-on-linux"></a>Solución de problemas de eventos o alertas que faltan para Microsoft Defender para punto de conexión en Linux
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
@@ -32,14 +32,14 @@ ms.locfileid: "62766027"
 - [Microsoft Defender para punto de conexión en Linux](microsoft-defender-endpoint-linux.md)
 - [Microsoft Defender para punto de conexión Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 
-En este artículo se proporcionan algunos pasos generales para mitigar los eventos o alertas que <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">faltan en Microsoft 365 Defender portal</a>.
+En este artículo se proporcionan algunos pasos generales para mitigar los eventos o alertas que faltan en el <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">portal de Microsoft 365 Defender</a>.
 
-Una **vez que Microsoft Defender para endpoint** se haya instalado correctamente en un dispositivo,  se generará una página de dispositivo en el portal. Puedes revisar todos los eventos registrados en la pestaña escala de tiempo de la página del dispositivo o en la página de búsqueda avanzada. En esta sección se soluciona el caso de que faltan algunos o todos los eventos esperados.
+Una vez **que Microsoft Defender para punto de conexión** se haya instalado correctamente en un dispositivo, se generará una _página de dispositivo_ en el portal. Puede revisar todos los eventos grabados en la pestaña escala de tiempo de la página del dispositivo o en la página de búsqueda avanzada. En esta sección se soluciona el caso de que falten algunos o todos los eventos esperados.
 Por ejemplo, si faltan todos los eventos _CreatedFile_ .
 
-## <a name="missing-network-and-login-events"></a>Faltan eventos de red e inicio de sesión
+## <a name="missing-network-and-login-events"></a>Eventos de red e inicio de sesión que faltan
 
-Microsoft Defender para endpoint utilizó `audit` el marco de linux para realizar un seguimiento de la actividad de red e inicio de sesión.
+Microsoft Defender para punto de conexión marco de trabajo utilizado `audit` desde Linux para realizar un seguimiento de la actividad de red e inicio de sesión.
 
 1. Asegúrese de que el marco de auditoría funciona.
 
@@ -66,21 +66,21 @@ Microsoft Defender para endpoint utilizó `audit` el marco de linux para realiza
             └─16671 /opt/microsoft/mdatp/sbin/mdatp_audisp_plugin -d
     ```
 
-2. Si `auditd` está marcado como detenido, indábalo.
+2. Si `auditd` está marcado como detenido, inícielo.
 
     ```bash
     service auditd start
     ```
 
-**En los sistemas SLES** , la auditoría de SYSCALL puede `auditd` deshabilitarse de forma predeterminada y puede tenerse en cuenta si faltan eventos.
+En los sistemas **SLES**, la auditoría SYSCALL en podría estar deshabilitada de forma predeterminada y se puede tener en `auditd` cuenta los eventos que faltan.
 
-1. Para validar que la auditoría de SYSCALL no está deshabilitada, enumere las reglas de auditoría actuales:
+1. Para validar que la auditoría SYSCALL no está deshabilitada, enumere las reglas de auditoría actuales:
 
     ```bash
     sudo auditctl -l
     ```
 
-    si la siguiente línea está presente, quítela o edite para permitir que Microsoft Defender for Endpoint realice un seguimiento de syscalls específicos.
+    si la línea siguiente está presente, quítela o edítela para habilitar Microsoft Defender para punto de conexión realizar un seguimiento de syscalls específicos.
 
     ```output
     -a task, never
@@ -90,9 +90,9 @@ Microsoft Defender para endpoint utilizó `audit` el marco de linux para realiza
 
 ## <a name="missing-file-events"></a>Eventos de archivo que faltan
 
-Los eventos de archivo se recopilan con `fanotify` framework. En caso de que falte alguno o todos los eventos de archivo, `fanotify` asegúrese de que está habilitado en el dispositivo y de que el sistema de [archivos es compatible](microsoft-defender-endpoint-linux.md#system-requirements).
+Los eventos de archivo se recopilan con `fanotify` framework. En caso de que falten algunos o todos los eventos de archivo, asegúrese de que `fanotify` está habilitado en el dispositivo y de que el sistema de archivos es [compatible](microsoft-defender-endpoint-linux.md#system-requirements).
 
-Enumere los sistemas de archivos del equipo con:
+Enumere los sistemas de archivos de la máquina con:
 
 ```bash
 df -Th

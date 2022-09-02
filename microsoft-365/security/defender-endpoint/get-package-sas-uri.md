@@ -2,7 +2,7 @@
 title: Obtención de la API de URI de SAS del paquete
 description: Use esta API para obtener un URI que permita descargar un paquete de investigación.
 keywords: apis, graph api, api admitidas, get package, sas, uri
-ms.prod: m365-security
+ms.service: microsoft-365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -13,14 +13,14 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
-ms.technology: mde
+ms.subservice: mde
 ms.custom: api
-ms.openlocfilehash: af4d99f552af17f99ea93c940cadadc100905d62
-ms.sourcegitcommit: 217108c59be41b01963a393b4f16d137636fe6a8
+ms.openlocfilehash: 8dcc5a89cd50f560bc60226f1b940c44fbee8728
+ms.sourcegitcommit: 228fa13973bf7c2d91504703fab757f552ae40dd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/12/2022
-ms.locfileid: "67331695"
+ms.lasthandoff: 09/01/2022
+ms.locfileid: "67523894"
 ---
 # <a name="get-package-sas-uri-api"></a>Obtención de la API de URI de SAS del paquete
 

@@ -2,7 +2,7 @@
 title: Obtención de la API de estadísticas de dominio
 description: Obtenga información sobre cómo usar la API Get domain statistics para recuperar las estadísticas del dominio determinado en Microsoft Defender para punto de conexión.
 keywords: apis, graph api, api admitidas, get, domain, domain related devices
-ms.prod: m365-security
+ms.service: microsoft-365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -13,14 +13,14 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
-ms.technology: mde
+ms.subservice: mde
 ms.custom: api
-ms.openlocfilehash: 945ca97d9492f9aad96603a7282c326186475613
-ms.sourcegitcommit: 217108c59be41b01963a393b4f16d137636fe6a8
+ms.openlocfilehash: e4dc4137525f9f3019f98979ef33a219868ed15b
+ms.sourcegitcommit: 228fa13973bf7c2d91504703fab757f552ae40dd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/12/2022
-ms.locfileid: "67327077"
+ms.lasthandoff: 09/01/2022
+ms.locfileid: "67523674"
 ---
 # <a name="get-domain-statistics-api"></a>Obtención de la API de estadísticas de dominio
 

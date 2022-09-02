@@ -2,7 +2,7 @@
 title: Novedades de Microsoft Defender para punto de conexión en Linux
 description: Lista de cambios principales para Microsoft Defender para punto de conexión en Linux.
 keywords: microsoft, defender, Microsoft Defender para punto de conexión, linux, whatsnew, release
-ms.prod: m365-security
+ms.service: microsoft-365-security
 ms.mktglfcycl: security
 ms.sitesec: library
 ms.pagetype: security
@@ -14,13 +14,13 @@ audience: ITPro
 ms.collection:
 - m365-security-compliance
 ms.topic: reference
-ms.technology: mde
-ms.openlocfilehash: 577747a28c86cb1b95640a6ae6ebe557d2340a28
-ms.sourcegitcommit: adc4e5707aa074fc4aa0cb9e8c2986fc8b88813c
+ms.subservice: mde
+ms.openlocfilehash: 877cf9b7db508798a35cc99f8a163d0de0b91f37
+ms.sourcegitcommit: 228fa13973bf7c2d91504703fab757f552ae40dd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/01/2022
-ms.locfileid: "67112227"
+ms.lasthandoff: 09/01/2022
+ms.locfileid: "67520849"
 ---
 # <a name="whats-new-in-microsoft-defender-for-endpoint-on-linux"></a>Novedades de Microsoft Defender para punto de conexión en Linux
 

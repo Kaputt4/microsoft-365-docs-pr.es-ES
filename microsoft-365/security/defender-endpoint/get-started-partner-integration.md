@@ -3,7 +3,7 @@ title: Convertirse en socio de Microsoft Defender para punto de conexión
 ms.reviewer: ''
 description: Obtenga información sobre los pasos y requisitos para integrar la solución con Microsoft Defender para punto de conexión y ser asociado
 keywords: partner, integration, solution validation, certification, requirements, member, misa, application portal
-ms.prod: m365-security
+ms.service: microsoft-365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -14,12 +14,13 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
-ms.openlocfilehash: 276f411699f4a9db61850a04da3ff18d3c6bb2a7
-ms.sourcegitcommit: e8dd5cd434d17af7096d28d467a2b3b021cbb233
+ms.subservice: mde
+ms.openlocfilehash: ed6664f71712c9200cb27b7bc4c466778c55c3bd
+ms.sourcegitcommit: 228fa13973bf7c2d91504703fab757f552ae40dd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/27/2022
-ms.locfileid: "67051214"
+ms.lasthandoff: 09/01/2022
+ms.locfileid: "67523014"
 ---
 # <a name="become-a-microsoft-defender-for-endpoint-partner"></a>Convertirse en socio de Microsoft Defender para punto de conexión
 

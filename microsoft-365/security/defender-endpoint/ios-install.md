@@ -3,7 +3,7 @@ title: Implementación basada en aplicaciones para Microsoft Defender para punto
 ms.reviewer: ''
 description: Describe cómo implementar Microsoft Defender para punto de conexión en iOS mediante una aplicación
 keywords: microsoft, defender, Microsoft Defender para punto de conexión, ios, app, installation, deploy, uninstallation, intune
-ms.prod: m365-security
+ms.service: microsoft-365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -15,13 +15,13 @@ audience: ITPro
 ms.collection:
 - m365-security-compliance
 ms.topic: conceptual
-ms.technology: mde
-ms.openlocfilehash: 53f21b5db99bb8d01e06f724f9fbc822ba2332e5
-ms.sourcegitcommit: e8dd5cd434d17af7096d28d467a2b3b021cbb233
+ms.subservice: mde
+ms.openlocfilehash: 76c53ce599b811ed868eb51e94e0cf0466987944
+ms.sourcegitcommit: 228fa13973bf7c2d91504703fab757f552ae40dd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/27/2022
-ms.locfileid: "67050994"
+ms.lasthandoff: 09/01/2022
+ms.locfileid: "67522684"
 ---
 # <a name="deploy-microsoft-defender-for-endpoint-on-ios"></a>Implementación de Microsoft Defender para punto de conexión en iOS
 

@@ -2,7 +2,7 @@
 title: Excluir dispositivos en Microsoft Defender para punto de conexión
 description: Excluir dispositivos de la lista de inventario de dispositivos
 keywords: Excluir
-ms.prod: m365-security
+ms.service: microsoft-365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -13,13 +13,13 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
-ms.technology: mde
-ms.openlocfilehash: d97e8db205d066671b7c0d430e3dbf79f0dd6ebd
-ms.sourcegitcommit: 344a254ca268a2f65cf199d9158a47e08861ffa5
+ms.subservice: mde
+ms.openlocfilehash: bd7769fa420da8770acbacfcb6a11abeb6e0a14c
+ms.sourcegitcommit: 228fa13973bf7c2d91504703fab757f552ae40dd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/12/2022
-ms.locfileid: "65368119"
+ms.lasthandoff: 09/01/2022
+ms.locfileid: "67521881"
 ---
 # <a name="exclude-devices"></a>Excluir dispositivos
 
@@ -31,15 +31,15 @@ ms.locfileid: "65368119"
 - [Microsoft Defender para punto de conexión Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
-> ¿Desea experimentar Defender para punto de conexión? [Regístrese para obtener una prueba gratuita.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-respondmachine-abovefoldlink)
+> ¿Quiere experimentar Defender para punto de conexión? [Regístrese para obtener una prueba gratuita.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-respondmachine-abovefoldlink)
 
-## <a name="exclude-devices-from-vulnerability-management"></a>Excluir dispositivos de administración de vulnerabilidades
+## <a name="exclude-devices-from-vulnerability-management"></a>Excluir dispositivos de la administración de vulnerabilidades
 
-Excluir dispositivos inactivos, duplicados o fuera del ámbito le permite centrarse en detectar y priorizar los riesgos en los dispositivos activos. Esta acción también puede ayudar a reflejar una puntuación de exposición de administración de vulnerabilidades más precisa, ya que los dispositivos excluidos no serán visibles en los informes de administración de vulnerabilidades.
+Excluir dispositivos inactivos, duplicados o fuera del ámbito le permite centrarse en detectar y priorizar los riesgos en los dispositivos activos. Esta acción también puede ayudar a reflejar una puntuación de exposición de administración de vulnerabilidades más precisa, ya que los dispositivos excluidos no estarán visibles en los informes de administración de vulnerabilidades.
 
-Una vez que se excluyen los dispositivos, no podrá ver información actualizada o relevante sobre vulnerabilidades y software instalado en estos dispositivos. Afecta a todas las administración de vulnerabilidades páginas, informes y tablas relacionadas en la búsqueda avanzada.
+Una vez que se excluyen los dispositivos, no podrá ver información actualizada o relevante sobre vulnerabilidades y software instalado en estos dispositivos. Afecta a todas las páginas de administración de vulnerabilidades, informes y tablas relacionadas en la búsqueda avanzada.
 
-Aunque la característica de exclusión de dispositivos quita los datos del dispositivo de administración de vulnerabilidades páginas e informes, los dispositivos permanecen conectados a la red y pueden seguir siendo un riesgo para la organización. Podrá cancelar la exclusión del dispositivo en cualquier momento.
+Aunque la característica de exclusión de dispositivos quita los datos del dispositivo de las páginas e informes de administración de vulnerabilidades, los dispositivos permanecen conectados a la red y pueden seguir siendo un riesgo para la organización. Podrá cancelar la exclusión del dispositivo en cualquier momento.
 
 ## <a name="how-to-exclude-a-device"></a>Cómo excluir un dispositivo
 
@@ -58,7 +58,7 @@ Puede optar por excluir un solo dispositivo o varios dispositivos al mismo tiemp
     - Dispositivo duplicado
     - El dispositivo no existe
     - Fuera de ámbito
-    - Otro
+    - Otros
 
 4. Escriba una nota y seleccione **Excluir dispositivo**.
 
@@ -69,7 +69,7 @@ También puede excluir un dispositivo de su página de dispositivo.
 > [!NOTE]
 > No se recomienda excluir los dispositivos activos, ya que es especialmente arriesgado no tener visibilidad sobre su información de vulnerabilidad. Si un dispositivo está activo e intenta excluirlo, recibirá un mensaje de advertencia y un mensaje emergente de confirmación que le preguntará si está seguro de que desea excluir un dispositivo activo.
 
-Un dispositivo puede tardar hasta 10 horas en excluirse completamente de administración de vulnerabilidades vistas y datos.
+Un dispositivo puede tardar hasta 10 horas en excluirse completamente de los datos y vistas de administración de vulnerabilidades.
 
 Los dispositivos excluidos siguen estando visibles en la lista Inventario de dispositivos. Puede administrar la vista de los dispositivos excluidos mediante:
 
@@ -92,11 +92,11 @@ Si selecciona varios dispositivos en la lista de dispositivos con diferentes est
 
 ![Imagen de exclusión masiva](images/exclude-device-bulk.png)
 
-Una vez que se excluye un dispositivo, si va a la página del dispositivo de un dispositivo excluido, no podrá ver los datos de las vulnerabilidades detectadas, el inventario de software o las recomendaciones de seguridad. Los datos tampoco se mostrarán en administración de vulnerabilidades páginas, tablas de búsqueda avanzada relacionadas y el informe de dispositivos vulnerables.
+Una vez que se excluye un dispositivo, si va a la página del dispositivo de un dispositivo excluido, no podrá ver los datos de las vulnerabilidades detectadas, el inventario de software o las recomendaciones de seguridad. Los datos tampoco se mostrarán en páginas de administración de vulnerabilidades, tablas de búsqueda avanzada relacionadas y el informe de dispositivos vulnerables.
 
 ## <a name="stop-excluding-a-device"></a>Detener la exclusión de un dispositivo
 
-Podrá dejar de excluir un dispositivo en cualquier momento. Una vez que los dispositivos ya no se excluyen, sus datos de vulnerabilidad serán visibles en administración de vulnerabilidades páginas, informes y en la búsqueda avanzada. Los cambios pueden tardar hasta 8 horas en surtir efecto.
+Podrá dejar de excluir un dispositivo en cualquier momento. Una vez que los dispositivos ya no se excluyen, sus datos de vulnerabilidad serán visibles en las páginas de administración de vulnerabilidades, los informes y en la búsqueda avanzada. Los cambios pueden tardar hasta 8 horas en surtir efecto.
 
 1. Vaya al inventario de dispositivos, seleccione el dispositivo excluido para abrir el control flotante y, a continuación, seleccione **Detalles de exclusión**.
 2. Seleccione **Detener exclusión.**

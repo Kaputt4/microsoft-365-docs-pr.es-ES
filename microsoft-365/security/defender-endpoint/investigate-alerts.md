@@ -2,7 +2,7 @@
 title: Investigar alertas de Microsoft Defender para punto de conexión
 description: Use las opciones de investigación para obtener detalles sobre las alertas que afectan a la red, lo que significan y cómo resolverlas.
 keywords: investigación, investigación, dispositivos, dispositivo, cola de alertas, panel, dirección IP, archivo, envío, envíos, análisis profundos, escala de tiempo, búsqueda, dominio, dirección URL, IP
-ms.prod: m365-security
+ms.service: microsoft-365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -16,13 +16,13 @@ ms.collection:
 - m365-initiative-defender-endpoint
 ms.topic: article
 ms.date: 04/24/2018
-ms.technology: mde
-ms.openlocfilehash: e4d379ee476276d24b683878bc4978addf220ced
-ms.sourcegitcommit: 85ce5fd0698b6f00ea1ea189634588d00ea13508
+ms.subservice: mde
+ms.openlocfilehash: a2bc1b44cc49e2ded0a3079360436df2880b2f58
+ms.sourcegitcommit: 228fa13973bf7c2d91504703fab757f552ae40dd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/06/2022
-ms.locfileid: "64665808"
+ms.lasthandoff: 09/01/2022
+ms.locfileid: "67522970"
 ---
 # <a name="investigate-alerts-in-microsoft-defender-for-endpoint"></a>Investigación de alertas en Microsoft Defender para punto de conexión
 
@@ -33,7 +33,7 @@ ms.locfileid: "64665808"
 - [Microsoft Defender para punto de conexión Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
-> ¿Desea experimentar Defender para punto de conexión? [Regístrese para obtener una prueba gratuita.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-investigatealerts-abovefoldlink)
+> ¿Quiere experimentar Defender para punto de conexión? [Regístrese para obtener una prueba gratuita.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-investigatealerts-abovefoldlink)
 
 Investigue las alertas que afectan a la red, comprenda lo que significan y cómo resolverlas.
 

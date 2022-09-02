@@ -2,7 +2,7 @@
 title: Búsqueda de dispositivos por API de IP interna
 description: Buscar dispositivos vistos con la dirección IP interna solicitada en el intervalo de tiempo de 15 minutos antes y después de una marca de tiempo determinada
 keywords: api, graph api, api admitidas, get, device, IP, find, find device, by ip, ip
-ms.prod: m365-security
+ms.service: microsoft-365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -13,14 +13,14 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
-ms.technology: mde
+ms.subservice: mde
 ms.custom: api
-ms.openlocfilehash: 84db0ee6740e6b6a47090a94ebc032d0176071f9
-ms.sourcegitcommit: 217108c59be41b01963a393b4f16d137636fe6a8
+ms.openlocfilehash: d3312c9218c600a63ca17a8d620ef49283c42ac8
+ms.sourcegitcommit: 228fa13973bf7c2d91504703fab757f552ae40dd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/12/2022
-ms.locfileid: "67323363"
+ms.lasthandoff: 09/01/2022
+ms.locfileid: "67522375"
 ---
 # <a name="find-devices-by-internal-ip-api"></a>Búsqueda de dispositivos por API de IP interna
 

@@ -2,7 +2,7 @@
 title: Preguntas más frecuentes sobre la detección de dispositivos
 description: Búsqueda de respuestas a las preguntas más frecuentes (P+F) sobre la detección de dispositivos
 keywords: detección, detección, pasiva, proactiva, red, visibilidad, servidor, estación de trabajo, dispositivos incorporados y no administrados
-ms.prod: m365-security
+ms.service: microsoft-365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -15,13 +15,13 @@ manager: dansimp
 audience: ITPro
 ms.collection: m365-security-compliance
 ms.topic: conceptual
-ms.technology: m365d
-ms.openlocfilehash: 54a1b816f3d1322cab5558e5bd09d5d9b4285ae8
-ms.sourcegitcommit: 85ce5fd0698b6f00ea1ea189634588d00ea13508
+ms.subservice: m365d
+ms.openlocfilehash: d33cccb219c262fb472a99b21e9071fdf2bb27c7
+ms.sourcegitcommit: 228fa13973bf7c2d91504703fab757f552ae40dd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/06/2022
-ms.locfileid: "64665016"
+ms.lasthandoff: 09/01/2022
+ms.locfileid: "67522750"
 ---
 # <a name="device-discovery-frequently-asked-questions"></a>Preguntas más frecuentes sobre la detección de dispositivos
 
@@ -51,7 +51,7 @@ En este modo, los puntos de conexión incorporados a Microsoft Defender para pun
 
 ## <a name="can-i-control-which-devices-perform-standard-discovery"></a>¿Puedo controlar qué dispositivos realizan la detección estándar?
 
-Puede personalizar la lista de dispositivos que se usan para realizar la detección estándar. Puede habilitar la detección estándar en todos los dispositivos incorporados que también admiten esta funcionalidad (actualmente Windows 10 o posterior y solo Windows Server 2019 o posterior) o seleccionar un subconjunto o subconjuntos de los dispositivos especificando sus etiquetas de dispositivo. En este caso, todos los demás dispositivos se configurarán para ejecutar solo la detección básica. La configuración está disponible en la página configuración de detección de dispositivos.
+Puede personalizar la lista de dispositivos que se usan para realizar la detección estándar. Puede habilitar la detección estándar en todos los dispositivos incorporados que también admiten esta funcionalidad (actualmente Windows 10 o versiones posteriores y solo dispositivos windows server 2019 o posteriores) o seleccionar un subconjunto o subconjuntos de los dispositivos especificando sus etiquetas de dispositivo. En este caso, todos los demás dispositivos se configurarán para ejecutar solo la detección básica. La configuración está disponible en la página configuración de detección de dispositivos.
 
 ## <a name="can-i-exclude-unmanaged-devices-from-the-device-inventory-list"></a>¿Puedo excluir dispositivos no administrados de la lista de inventario de dispositivos?
 
@@ -67,7 +67,7 @@ El motor de detección distingue entre los eventos de red que se reciben en la r
 
 ## <a name="what-protocols-are-you-capturing-and-analyzing"></a>¿Qué protocolos está capturando y analizando?
 
-De forma predeterminada, todos los dispositivos incorporados que se ejecutan en Windows 10 versión 1809 o posterior, Windows 11, Windows Server 2019 o Windows Server 2022 capturan y analizan los siguientes protocolos: ARP, CDP, DHCP, DHCPv6, IP (encabezados), LLDP, LLMNR, mDNS, MNDP, NBNS, SSDP, TCP (encabezados SYN), UDP (encabezados), WSD
+De forma predeterminada, todos los dispositivos incorporados que se ejecutan en Windows 10 versión 1809 o posterior, Windows 11, Windows Server 2019 o Windows Server 2022 capturan y analizan los protocolos siguientes: ARP, CDP, DHCP, DHCPv6, IP (encabezados), LLDP, LLMNR, mDNS, MNDP, NBNS, SSDP, TCP (encabezados SYN), UDP (encabezados), WSD
 
 ## <a name="which-protocols-do-you-use-for-active-probing-in-standard-discovery"></a>¿Qué protocolos usa para el sondeo activo en la detección estándar?
 Cuando un dispositivo está configurado para ejecutar la detección estándar, los servicios expuestos se sondean mediante los siguientes protocolos: ARP, FTP, HTTP, HTTPS, ICMP, LLMNR, NBNS, RDP, SIP, SMTP, SNMP, SSH, Telnet, UPNP, WSD, SMB, NBSS, IPP, PJL, RPC, mDNS, DHCP, AFP, CrestonCIP, IphoneSync, WinRM, VNC, SLP, LDAP
@@ -116,7 +116,7 @@ Al considerar la detección estándar, es posible que se pregunte sobre las impl
 
 ### <a name="probing-is-distributed-across-all-windows-devices-on-the-network"></a>El sondeo se distribuye entre todos los dispositivos Windows de la red
 
-A diferencia de la actividad malintencionada, que normalmente examinaría toda la red desde un pequeño número de dispositivos en peligro, el sondeo de detección estándar de Microsoft Defender para punto de conexión se inicia desde todos los dispositivos de Windows incorporados, lo que hace que la actividad sea benigna y no anómala. El sondeo se administra de forma centralizada desde la nube para equilibrar el intento de sondeo entre todos los dispositivos incorporados admitidos en la red.  
+A diferencia de la actividad malintencionada, que normalmente examinaría toda la red desde un pequeño número de dispositivos en peligro, el sondeo de detección estándar de Microsoft Defender para punto de conexión se inicia desde todos los dispositivos Windows incorporados, lo que hace que la actividad sea benigna y no anómala. El sondeo se administra de forma centralizada desde la nube para equilibrar el intento de sondeo entre todos los dispositivos incorporados admitidos en la red.  
 
 ### <a name="active-probing-generates-negligible-amount-of-extra-traffic"></a>El sondeo activo genera una cantidad insignificante de tráfico adicional.
 
@@ -126,7 +126,7 @@ Los dispositivos no administrados normalmente se sondean no más de una vez en u
 
 Las funcionalidades de detección activa siempre se han insertado en el sistema operativo Windows, para encontrar dispositivos, puntos de conexión e impresoras cercanos, para facilitar las experiencias de "plug and play" y el uso compartido de archivos entre los puntos de conexión de la red. Una funcionalidad similar se implementa en dispositivos móviles, equipos de red y aplicaciones de inventario solo por nombrar algunos.  
 
-La detección estándar usa los mismos métodos de detección para identificar dispositivos y tener una visibilidad unificada de todos los dispositivos de la red en el inventario de dispositivos Microsoft 365 Defender. Por ejemplo: la detección estándar identifica los puntos de conexión cercanos de la red de la misma manera Windows enumera las impresoras disponibles en la red. 
+La detección estándar usa los mismos métodos de detección para identificar dispositivos y tener una visibilidad unificada de todos los dispositivos de la red en el inventario de dispositivos Microsoft 365 Defender. Por ejemplo: la detección estándar identifica los puntos de conexión cercanos de la red de la misma manera que Windows muestra las impresoras disponibles en la red. 
 
 Las herramientas de seguridad y supervisión de red son diferentes a las actividades que realizan los dispositivos de la red. 
 

@@ -1,10 +1,10 @@
 ---
-title: Solucionar problemas de Microsoft Defender para endpoint en Linux RHEL6
+title: Solución de problemas de Microsoft Defender para punto de conexión en Linux RHEL6
 ms.reviewer: ''
-description: Solucionar problemas de conectividad en la nube para Microsoft Defender para Endpoint en Linux
-keywords: microsoft, defender, Microsoft Defender para endpoint, linux, nube, conectividad, comunicación
+description: Solución de problemas de conectividad en la nube para Microsoft Defender para punto de conexión en Linux
+keywords: microsoft, defender, Microsoft Defender para punto de conexión, linux, nube, conectividad, comunicación
 search.appverid: met150
-ms.prod: m365-security
+ms.service: microsoft-365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -15,32 +15,32 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
-ms.technology: mde
-ms.openlocfilehash: 43a60d12883dc639c4ee5b831d305010cef58533
-ms.sourcegitcommit: eb8c600d3298dca1940259998de61621e6505e69
+ms.subservice: mde
+ms.openlocfilehash: 0ffd8a986f3156fd0e406f0a87c3ae1d81c71dc3
+ms.sourcegitcommit: 228fa13973bf7c2d91504703fab757f552ae40dd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/24/2021
-ms.locfileid: "61163643"
+ms.lasthandoff: 09/01/2022
+ms.locfileid: "67521705"
 ---
-# <a name="troubleshoot-issues-for-microsoft-defender-for-endpoint-on-linux-rhel6"></a>Solucionar problemas de Microsoft Defender para endpoint en Linux RHEL6
+# <a name="troubleshoot-issues-for-microsoft-defender-for-endpoint-on-linux-rhel6"></a>Solución de problemas de Microsoft Defender para punto de conexión en Linux RHEL6
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
 **Se aplica a:**
-- [Plan 2 de Microsoft Defender para endpoint](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Microsoft Defender para punto de conexión Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 [!include[Prerelease information](../../includes/prerelease.md)]
 
-> ¿Desea experimentar Defender for Endpoint? [Regístrese para obtener una prueba gratuita.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-investigateip-abovefoldlink)
+> ¿Quiere experimentar Defender para punto de conexión? [Regístrese para obtener una prueba gratuita.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-investigateip-abovefoldlink)
 
-En este artículo se proporcionan instrucciones sobre cómo solucionar problemas que puedan surgir con Microsoft Defender para Linux en Red Hat Linux 6 (RHEL 6) o posterior. 
+En este artículo se proporcionan instrucciones sobre cómo solucionar problemas que podría encontrar con Microsoft Defender para Linux en Red Hat Linux 6 (RHEL 6) o versiones posteriores. 
 
-Después de instalar el paquete (mdatp_XXX.XX.XX.XX.x86_64.rpm), lleve a cabo las acciones proporcionadas para comprobar que la instalación se ha realizado correctamente. 
+Una vez instalado el paquete (mdatp_XXX.XX.XX.XX.x86_64.rpm), realice las acciones que se proporcionan para comprobar que la instalación se realizó correctamente. 
 
 
-## <a name="check-the-service-health"></a>Comprobar el estado del servicio
+## <a name="check-the-service-health"></a>Comprobación del estado del servicio
 
 Use el siguiente comando para comprobar el estado del servicio:
 
@@ -48,7 +48,7 @@ Use el siguiente comando para comprobar el estado del servicio:
 mdatp health 
 ```
 
-## <a name="verify-that-the-service-is-running"></a>Comprobar que el servicio se está ejecutando
+## <a name="verify-that-the-service-is-running"></a>Comprobación de que el servicio se está ejecutando
 
 Use el siguiente comando para comprobar que el servicio se está ejecutando:
 
@@ -58,7 +58,7 @@ service mdatp status
 
 Salida esperada: `mdatp start/running, process 4517`
 
-## <a name="verify-the-distribution-and-kernel-version"></a>Comprobar la distribución y la versión del kernel
+## <a name="verify-the-distribution-and-kernel-version"></a>Comprobación de la distribución y la versión del kernel
 Las versiones de distribución y kernel deben estar en la lista admitida.
 
 Use el siguiente comando para obtener la versión de distribución:
@@ -72,8 +72,8 @@ Use el siguiente comando para obtener la versión del kernel:
 ```bash
 uname -r
 ```
-## <a name="check-if-mdatp-audisp-process-is-running"></a>Comprobar si se está ejecutando el proceso de mdatp audisp 
-El resultado esperado es que el proceso se está ejecutando.
+## <a name="check-if-mdatp-audisp-process-is-running"></a>Comprobación de si se está ejecutando el proceso de audisp de mdatp 
+La salida esperada es que el proceso se está ejecutando.
 
 Use el siguiente comando para comprobar:
 
@@ -81,7 +81,7 @@ Use el siguiente comando para comprobar:
 pidof mdatp_audisp_plugin 
 ```
 
-## <a name="check-talpa-modules"></a>Comprobar módulos TALPA
+## <a name="check-talpa-modules"></a>Comprobación de módulos TALPA
 Debe haber nueve módulos cargados. 
 
 Use el siguiente comando para comprobar:
@@ -90,7 +90,7 @@ Use el siguiente comando para comprobar:
 lsmod | grep talpa
 ```
 
-Salida esperada: Habilitada
+Salida esperada: habilitada
 
 ```bash
 talpa_pedconnector       878  0 
@@ -119,7 +119,7 @@ lsmod | grep talpa | wc -l
 
 Salida esperada: 9
 
-## <a name="check-talpa-status"></a>Comprobar el estado de TALPA
+## <a name="check-talpa-status"></a>Comprobación del estado de TALPA
 
 ```bash
 cat /proc/sys/talpa/interceptors/VFSHookInterceptor/status 
@@ -144,5 +144,5 @@ top -p <wdavdaemon pid>
 pmap -x <wdavdaemon pid> 
 ```
 
-Dónde `<wdavdaemon pid>` se puede encontrar con `pidof wdavdaemon` .
+Donde `<wdavdaemon pid>` se puede encontrar mediante `pidof wdavdaemon`.
 

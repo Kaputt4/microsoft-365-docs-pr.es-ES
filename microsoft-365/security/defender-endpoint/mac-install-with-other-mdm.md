@@ -2,7 +2,7 @@
 title: Implementación con un sistema de Administración de dispositivos móvil (MDM) diferente para Microsoft Defender para punto de conexión en Mac
 description: Instale Microsoft Defender para punto de conexión en Mac en otras soluciones de administración.
 keywords: microsoft, defender, Microsoft Defender para punto de conexión, mac, installation, deploy, macos, catalina, mojave, high sierra
-ms.prod: m365-security
+ms.service: microsoft-365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -14,13 +14,13 @@ audience: ITPro
 ms.collection:
 - m365-security-compliance
 ms.topic: conceptual
-ms.technology: mde
-ms.openlocfilehash: 2fa64ee9822fe1f784788e2d1ead79e66eb200ef
-ms.sourcegitcommit: 2d870e06e87b10d9e8ec7a7a8381353bc3bc59c7
+ms.subservice: mde
+ms.openlocfilehash: 016293cb17675a90fd9f8ac49824d721154fd921
+ms.sourcegitcommit: 228fa13973bf7c2d91504703fab757f552ae40dd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/11/2022
-ms.locfileid: "65349742"
+ms.lasthandoff: 09/01/2022
+ms.locfileid: "67521639"
 ---
 # <a name="deployment-with-a-different-mobile-device-management-mdm-system-for-microsoft-defender-for-endpoint-on-macos"></a>Implementación con un sistema de mobile Administración de dispositivos (MDM) diferente para Microsoft Defender para punto de conexión en macOS
 
@@ -32,25 +32,25 @@ ms.locfileid: "65349742"
 - [Microsoft Defender para punto de conexión Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
-> ¿Desea experimentar Defender para punto de conexión? [Regístrese para obtener una prueba gratuita.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-investigateip-abovefoldlink)
+> ¿Quiere experimentar Defender para punto de conexión? [Regístrese para obtener una prueba gratuita.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-investigateip-abovefoldlink)
  
 ## <a name="prerequisites-and-system-requirements"></a>Requisitos previos y requisitos del sistema
 
-Antes de empezar, consulte [la Microsoft Defender para punto de conexión principal en macOS página](microsoft-defender-endpoint-mac.md) para obtener una descripción de los requisitos previos y los requisitos del sistema para la versión de software actual.
+Antes de empezar, consulte [la página principal Microsoft Defender para punto de conexión en macOS](microsoft-defender-endpoint-mac.md) para obtener una descripción de los requisitos previos y los requisitos del sistema para la versión actual del software.
 
 
 ## <a name="approach"></a>Enfoque
 
 > [!CAUTION]
 
-> Actualmente, Microsoft solo admite oficialmente Intune y JAMF para la implementación y administración de Microsoft Defender para punto de conexión en macOS. Microsoft no ofrece ninguna garantía, expresa o implícita, con respecto a la información que se proporciona a continuación.
+> Actualmente, Microsoft admite oficialmente solo Intune y JAMF para la implementación y administración de Microsoft Defender para punto de conexión en macOS. Microsoft no ofrece ninguna garantía, expresa o implícita, con respecto a la información que se proporciona a continuación.
 
-Si su organización usa una solución mobile Administración de dispositivos (MDM) que no se admite oficialmente, esto no significa que no pueda implementar ni ejecutar Microsoft Defender para punto de conexión en macOS.
+Si su organización usa una solución de mobile Administración de dispositivos (MDM) que no se admite oficialmente, esto no significa que no pueda implementar ni ejecutar Microsoft Defender para punto de conexión en macOS.
 
 Microsoft Defender para punto de conexión en macOS no depende de ninguna característica específica del proveedor. Se puede usar con cualquier solución MDM que admita las siguientes características:
 
-- Implemente un archivo .pkg macOS en dispositivos administrados.
-- Implemente macOS perfiles de configuración del sistema en dispositivos administrados.
+- Implemente un archivo .pkg de macOS en dispositivos administrados.
+- Implemente perfiles de configuración del sistema macOS en dispositivos administrados.
 - Ejecute una herramienta o script arbitrario configurados por el administrador en dispositivos administrados.
 
 La mayoría de las soluciones MDM modernas incluyen estas características, pero pueden llamarlas de forma diferente.
@@ -74,7 +74,7 @@ Para implementar el paquete en la empresa, use las instrucciones asociadas a la 
 
 Configurar [un perfil de configuración del sistema](mac-install-with-jamf.md). 
 
-La solución MDM puede llamarla como "Perfil de Configuración personalizado", ya que Microsoft Defender para punto de conexión en macOS no forma parte de macOS.
+La solución MDM puede llamarla como "Perfil de configuración personalizada", ya que Microsoft Defender para punto de conexión en macOS no forma parte de macOS.
 
 Use la lista de propiedades, jamf/WindowsDefenderATPOnboarding.plist, que se puede extraer de un paquete de incorporación descargado de [Microsoft 365 Defender portal](mac-install-with-jamf.md).
 El sistema puede admitir una lista de propiedades arbitraria en formato XML. Puede cargar el archivo jamf/WindowsDefenderATPOnboarding.plist tal y como está en ese caso.

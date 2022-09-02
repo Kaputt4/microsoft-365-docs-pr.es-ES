@@ -3,7 +3,7 @@ title: Implementación manual de Microsoft Defender para punto de conexión en L
 ms.reviewer: ''
 description: Describe cómo implementar Microsoft Defender para punto de conexión en Linux manualmente desde la línea de comandos.
 keywords: microsoft, defender, Microsoft Defender para punto de conexión, linux, installation, deploy, uninstallation, puppet, ansible, linux, redhat, ubuntu, debian, sles, suse, centos, fedora, amazon linux 2
-ms.prod: m365-security
+ms.service: microsoft-365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -15,13 +15,13 @@ audience: ITPro
 ms.collection:
 - m365-security-compliance
 ms.topic: conceptual
-ms.technology: mde
-ms.openlocfilehash: a38c94ff225c0792a1e6f13d1a57a68a8c322cff
-ms.sourcegitcommit: 5aed330d8af523f0dffe5e392f1c79f047e38172
+ms.subservice: mde
+ms.openlocfilehash: c8c12f2ee3f5a6f6bb498db0e5fe33cba7f447c6
+ms.sourcegitcommit: 228fa13973bf7c2d91504703fab757f552ae40dd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/21/2022
-ms.locfileid: "66944073"
+ms.lasthandoff: 09/01/2022
+ms.locfileid: "67522926"
 ---
 # <a name="deploy-microsoft-defender-for-endpoint-on-linux-manually"></a>Implementación manual de Microsoft Defender para punto de conexión en Linux
 
@@ -460,6 +460,6 @@ Consulte [Problemas de instalación](linux-resources.md#log-installation-issues)
 
 Consulte [Desinstalación](linux-resources.md#uninstall) para obtener más información sobre cómo quitar Defender para punto de conexión en Linux de los dispositivos cliente.
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 - [Investigar problemas de estado del agente](health-status.md)

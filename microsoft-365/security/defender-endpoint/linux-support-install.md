@@ -1,9 +1,9 @@
 ---
-title: Solucionar problemas de instalación de Microsoft Defender para Endpoint en Linux
+title: Solución de problemas de instalación de Microsoft Defender para punto de conexión en Linux
 ms.reviewer: ''
-description: Solucionar problemas de instalación de Microsoft Defender para Endpoint en Linux
-keywords: microsoft, defender, Microsoft Defender para endpoint, linux, instalación
-ms.prod: m365-security
+description: Solución de problemas de instalación de Microsoft Defender para punto de conexión en Linux
+keywords: microsoft, defender, Microsoft Defender para punto de conexión, linux, instalación
+ms.service: microsoft-365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -15,15 +15,15 @@ audience: ITPro
 ms.collection:
 - m365-security-compliance
 ms.topic: conceptual
-ms.technology: mde
-ms.openlocfilehash: a0b2a571be5f78818279a343d253709e05814908
-ms.sourcegitcommit: 6e90baef421ae06fd790b0453d3bdbf624b7f9c0
+ms.subservice: mde
+ms.openlocfilehash: 761cc1ea72bfccba98145daa2e8649f33268997e
+ms.sourcegitcommit: 228fa13973bf7c2d91504703fab757f552ae40dd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/12/2022
-ms.locfileid: "62766024"
+ms.lasthandoff: 09/01/2022
+ms.locfileid: "67521727"
 ---
-# <a name="troubleshoot-installation-issues-for-microsoft-defender-for-endpoint-on-linux"></a>Solucionar problemas de instalación de Microsoft Defender para Endpoint en Linux
+# <a name="troubleshoot-installation-issues-for-microsoft-defender-for-endpoint-on-linux"></a>Solución de problemas de instalación de Microsoft Defender para punto de conexión en Linux
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
@@ -31,11 +31,11 @@ ms.locfileid: "62766024"
 - [Microsoft Defender para punto de conexión Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
-> ¿Desea experimentar Defender for Endpoint? [Regístrese para obtener una prueba gratuita.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-investigateip-abovefoldlink)
+> ¿Quiere experimentar Defender para punto de conexión? [Regístrese para obtener una prueba gratuita.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-investigateip-abovefoldlink)
 
-## <a name="verify-that-the-installation-succeeded"></a>Comprobar que la instalación se ha hecho correctamente
+## <a name="verify-that-the-installation-succeeded"></a>Comprobación de que la instalación se realizó correctamente
 
-Un error en la instalación puede o no provocar un mensaje de error significativo por parte del administrador de paquetes. Para comprobar si la instalación se ha hecho correctamente, obtenga y compruebe los registros de instalación mediante:
+Un error en la instalación puede dar lugar o no a un mensaje de error significativo por parte del administrador de paquetes. Para comprobar si la instalación se realizó correctamente, obtenga y compruebe los registros de instalación mediante:
 
 ```bash
  sudo journalctl --no-pager|grep 'microsoft-mdatp' > installation.log
@@ -49,19 +49,19 @@ Un error en la instalación puede o no provocar un mensaje de error significativ
  microsoft-mdatp-installer[102243]: postinstall end [2020-03-26 07:04:43OURCE +0000] 102216
 ```
 
-Un resultado del comando anterior con la fecha y hora correctas de instalación indica que se ha correcto.
+Una salida del comando anterior con la fecha y hora correctas de instalación indica que se ha realizado correctamente.
 
 Compruebe también la [configuración del cliente](linux-install-manually.md#client-configuration) para comprobar el estado del producto y detectar el archivo de texto EICAR.
 
-## <a name="make-sure-you-have-the-correct-package"></a>Asegúrese de que tiene el paquete correcto
+## <a name="make-sure-you-have-the-correct-package"></a>Asegúrese de que tiene el paquete correcto.
 
-Compruebe que el paquete que va a instalar coincide con la distribución y la versión del host.
+Compruebe que el paquete que está instalando coincide con la distribución y la versión del host.
 
 <br>
 
 ****
 
-|paquete|distribución|
+|paquete|Distribución|
 |---|---|
 |mdatp-rhel8. Linux.x86_64.rpm|Oracle, RHEL y CentOS 8.x|
 |mdatp-sles12. Linux.x86_64.rpm|SUSE Linux Enterprise Server 12.x|
@@ -70,11 +70,11 @@ Compruebe que el paquete que va a instalar coincide con la distribución y la ve
 |mdatp. Linux.x86_64.deb|Debian y Ubuntu 16.04, 18.04 y 20.04|
 |
 
-Para [la implementación manual](linux-install-manually.md), asegúrese de que se han elegido el distro y la versión correctas.
+Para la [implementación manual](linux-install-manually.md), asegúrese de que se ha elegido la distribución y la versión correctas.
 
-## <a name="installation-failed"></a>Error en la instalación
+## <a name="installation-failed"></a>Error de instalación
 
-Compruebe si el servicio Defender for Endpoint se está ejecutando:
+Compruebe si el servicio Defender para punto de conexión se está ejecutando:
 
 ```bash
 service mdatp status
@@ -100,13 +100,13 @@ service mdatp status
     id "mdatp"
     ```
 
-    Si no hay salida, ejecute
+    Si no hay ninguna salida, ejecute
 
     ```bash
     sudo useradd --system --no-create-home --user-group --shell /usr/sbin/nologin mdatp
     ```
 
-2. Intente habilitar y reiniciar el servicio con:
+2. Intente habilitar y reiniciar el servicio mediante:
 
     ```bash
     sudo service mdatp start
@@ -122,10 +122,10 @@ service mdatp status
     sudo cp /opt/microsoft/mdatp/conf/mdatp.service <systemd_path> 
     ```
 
-    donde `<systemd_path>` está `/lib/systemd/system` para las distribuciones de Ubuntu y Debian y /usr/lib/systemd/system' para Rhel, CentOS, Oracle y SLES. A continuación, vuelva a ejecutar el paso 2.
+    donde `<systemd_path>` es `/lib/systemd/system` para distribuciones de Ubuntu y Debian y /usr/lib/systemd/system' para Rhel, CentOS, Oracle y SLES. A continuación, vuelva a ejecutar el paso 2.
 
-4. Si los pasos anteriores no funcionan, compruebe si SELinux está instalado y en modo de aplicación. Si es así, intenta establecerlo en modo permisivo (preferiblemente) o deshabilitado. Se puede hacer estableciendo el parámetro `SELINUX` en "permisivo" o "deshabilitado" `/etc/selinux/config` en el archivo, seguido del reinicio. Consulta la página man de selinux para obtener más detalles.
-Ahora intente reiniciar el servicio mdatp mediante el paso 2. Revert the configuration change immediately though for security reasons after trying it and reboot.
+4. Si los pasos anteriores no funcionan, compruebe si SELinux está instalado y en modo de aplicación. Si es así, intente establecerlo en modo permisivo (preferiblemente) o deshabilitado. Se puede hacer estableciendo el parámetro `SELINUX` en "permisivo" o "deshabilitado" en el `/etc/selinux/config` archivo, seguido del reinicio. Consulte la página man-page de selinux para obtener más detalles.
+Ahora intente reiniciar el servicio mdatp mediante el paso 2. Revierta el cambio de configuración inmediatamente por motivos de seguridad después de probarlo y reiniciar.
 
 5. Si `/opt` el directorio es un vínculo simbólico, cree un montaje de enlace para `/opt/microsoft`.
 
@@ -139,7 +139,7 @@ Ahora intente reiniciar el servicio mdatp mediante el paso 2. Revert the configu
     -rwxr-xr-x 2 root root 15502160 Mar  3 04:47 /opt/microsoft/mdatp/sbin/wdavdaemon
     ```
 
-    Si el demonio no tiene permisos ejecutables, haga que sea ejecutable mediante:
+    Si el demonio no tiene permisos ejecutables, consiéndolo ejecutable mediante:
 
     ```bash
     sudo chmod 0755 /opt/microsoft/mdatp/sbin/wdavdaemon
@@ -149,7 +149,7 @@ Ahora intente reiniciar el servicio mdatp mediante el paso 2. Revert the configu
 
 7. Asegúrese de que el sistema de archivos que contiene wdavdaemon no esté montado con "noexec".
 
-## <a name="if-the-defender-for-endpoint-service-is-running-but-the-eicar-text-file-detection-doesnt-work"></a>Si el servicio Defender for Endpoint se está ejecutando, pero la detección de archivos de texto eicar no funciona
+## <a name="if-the-defender-for-endpoint-service-is-running-but-the-eicar-text-file-detection-doesnt-work"></a>Si el servicio Defender para punto de conexión se está ejecutando, pero la detección de archivos de texto EICAR no funciona
 
 1. Compruebe el tipo de sistema de archivos mediante:
 
@@ -157,11 +157,11 @@ Ahora intente reiniciar el servicio mdatp mediante el paso 2. Revert the configu
     findmnt -T <path_of_EICAR_file>
     ```
 
-    Los sistemas de archivos compatibles actualmente para la actividad en tiempo de acceso se enumeran [aquí](microsoft-defender-endpoint-linux.md#system-requirements). Los archivos fuera de estos sistemas de archivos no se examinarán.
+    Los sistemas de archivos admitidos actualmente para la actividad de acceso se enumeran [aquí](microsoft-defender-endpoint-linux.md#system-requirements). No se examinarán los archivos que estén fuera de estos sistemas de archivos.
 
 ## <a name="command-line-tool-mdatp-isnt-working"></a>La herramienta de línea de comandos "mdatp" no funciona
 
-1. Si al ejecutar la herramienta de línea de comandos `mdatp` se produce un error `command not found`, ejecute el siguiente comando:
+1. Si al ejecutar la herramienta `mdatp` de línea de comandos se produce un error `command not found`, ejecute el siguiente comando:
 
     ```bash
     sudo ln -sf /opt/microsoft/mdatp/sbin/wdavdaemonclient /usr/bin/mdatp
@@ -179,4 +179,4 @@ Ahora intente reiniciar el servicio mdatp mediante el paso 2. Revert the configu
     Diagnostic file created: <path to file>
     ```
 
-    La ruta de acceso a un archivo zip que contiene los registros se mostrará como salida. Llegue a nuestro servicio de atención al cliente con estos registros.
+    La ruta de acceso a un archivo ZIP que contiene los registros se mostrará como una salida. Póngase en contacto con nuestro servicio de atención al cliente con estos registros.

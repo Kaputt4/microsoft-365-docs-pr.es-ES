@@ -2,7 +2,7 @@
 title: Obtención de la API de estadísticas de archivos
 description: Obtenga información sobre cómo usar la API Get file statistics para recuperar las estadísticas del archivo determinado en Microsoft Defender para punto de conexión.
 keywords: apis, graph api, api admitidas, get, file, statistics
-ms.prod: m365-security
+ms.service: microsoft-365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -13,14 +13,14 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
-ms.technology: mde
+ms.subservice: mde
 ms.custom: api
-ms.openlocfilehash: 3a7880b9a148ca971be8fb588d4823e85c30db99
-ms.sourcegitcommit: 217108c59be41b01963a393b4f16d137636fe6a8
+ms.openlocfilehash: 131290fb70ae4e12309fd2fecc8b9a1939ef3d7a
+ms.sourcegitcommit: 228fa13973bf7c2d91504703fab757f552ae40dd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/12/2022
-ms.locfileid: "67325443"
+ms.lasthandoff: 09/01/2022
+ms.locfileid: "67523146"
 ---
 # <a name="get-file-statistics-api"></a>Obtención de la API de estadísticas de archivos
 
