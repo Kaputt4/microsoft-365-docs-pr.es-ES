@@ -6,7 +6,7 @@ manager: scotv
 ms.date: 06/15/2022
 audience: Admin
 ms.topic: conceptual
-ms.service: o365-administration
+ms.service: microsoft-365-enterprise
 ms.localizationpriority: medium
 ms.collection:
 - Ent_O365
@@ -24,12 +24,12 @@ search.appverid:
 ms.assetid: ''
 description: 'Resumen: el nuevo servicio web de punto de conexión no incluye algunos puntos de conexión para escenarios específicos.'
 hideEdit: true
-ms.openlocfilehash: 0d8980840e75bc08c8414bcfa5c99baf8a5cacd0
-ms.sourcegitcommit: e6595be36bbaba244439bd59dbae935e2b258ded
+ms.openlocfilehash: 879bd66783caf6f65c8721c2c453e03ddb2980ad
+ms.sourcegitcommit: 62368e5a48e569c8e475b07d194d7d8ff7d167ab
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/27/2022
-ms.locfileid: "67449997"
+ms.lasthandoff: 09/02/2022
+ms.locfileid: "67560645"
 ---
 # <a name="other-endpoints-not-included-in-the-office-365-ip-address-and-url-web-service"></a>Otros puntos de conexión adicionales no incluidos en el servicio web de URL ni en la dirección IP de Office 365
 

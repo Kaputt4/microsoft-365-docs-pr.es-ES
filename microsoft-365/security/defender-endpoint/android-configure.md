@@ -2,7 +2,7 @@
 title: Configurar Microsoft Defender para punto de conexión en funciones de Android
 description: Describe cómo configurar Microsoft Defender para punto de conexión en Android
 keywords: microsoft, defender, Microsoft Defender para punto de conexión, mde, android, configuration
-ms.prod: m365-security
+ms.service: microsoft-365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -14,13 +14,13 @@ audience: ITPro
 ms.collection:
 - m365-security-compliance
 ms.topic: conceptual
-ms.technology: mde
-ms.openlocfilehash: 596ed2681df34ef288fadd4f28f96b1a8aebee73
-ms.sourcegitcommit: d7193ee954c01c4172e228d25b941026c8d92d30
+ms.subservice: mde
+ms.openlocfilehash: 5a644d63c2e07ea03c98cba6d9925864381161b0
+ms.sourcegitcommit: 62368e5a48e569c8e475b07d194d7d8ff7d167ab
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/02/2022
-ms.locfileid: "67175562"
+ms.lasthandoff: 09/02/2022
+ms.locfileid: "67560975"
 ---
 # <a name="configure-defender-for-endpoint-on-android-features"></a>Configurar Defender para punto de conexión en características de Android
 
@@ -46,6 +46,8 @@ Defender para punto de conexión en Android permite a los administradores config
 
 ## <a name="configure-web-protection"></a>Configuración de la protección web
 Defender para punto de conexión en Android permite a los administradores de TI configurar la característica de protección web. Esta funcionalidad está disponible en el Centro de Endpoint Manager Administración de Microsoft.
+
+La [protección web](web-protection-overview.md) ayuda a proteger los dispositivos frente a las amenazas web y a los usuarios frente a ataques de suplantación de identidad. Tenga en cuenta que los indicadores personalizados y contra la suplantación de identidad (URL y direcciones IP) se admiten como parte de la protección web. El filtrado de contenido web no se admite actualmente en plataformas móviles.
 
 > [!NOTE]
 > Defender para punto de conexión en Android usaría una VPN para proporcionar la característica de protección web. No es una VPN normal y es una VPN local o de bucle automático que no toma tráfico fuera del dispositivo.

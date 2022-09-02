@@ -8,7 +8,7 @@ manager: scotv
 ms.date: 09/30/2020
 audience: ITPro
 ms.topic: article
-ms.prod: microsoft-365-enterprise
+ms.service: microsoft-365-enterprise
 ms.localizationpriority: high
 ms.collection:
 - M365-security-compliance
@@ -19,12 +19,12 @@ ms.collection:
 - zerotrust-solution
 ms.custom: ''
 description: Requerir que los usuarios inicien sesión de forma segura con la autenticación multifactor (MFA) y otras características.
-ms.openlocfilehash: 56ccd1df24bbfb09920cb0c7138ed2e5dc9ca3cb
-ms.sourcegitcommit: 61b22df76e0f81e5ef11c587b129287886151c79
-ms.translationtype: HT
+ms.openlocfilehash: c0b78128ec9f08cd099bebcfa61a3bc2f25452b9
+ms.sourcegitcommit: 62368e5a48e569c8e475b07d194d7d8ff7d167ab
+ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/12/2022
-ms.locfileid: "66749976"
+ms.lasthandoff: 09/02/2022
+ms.locfileid: "67556510"
 ---
 # <a name="step-3-protect-your-microsoft-365-user-accounts"></a>Paso 3: Proteger las cuentas de usuario de Microsoft 365
 

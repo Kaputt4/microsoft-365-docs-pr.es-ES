@@ -6,7 +6,7 @@ manager: scotv
 ms.date: 09/30/2020
 audience: ITPro
 ms.topic: landing-page
-ms.service: o365-solutions
+ms.service: microsoft-365-enterprise
 ms.localizationpriority: medium
 search.appverid:
 - MET150
@@ -18,18 +18,18 @@ ms.custom:
 - seo-marvel-apr2020
 ms.assetid: e9b8e065-2750-4534-9d39-aafd51a2a4e2
 description: Proporciona una lista de vínculos a información útil para implementar cargas de trabajo de Office Server en Microsoft Azure.
-ms.openlocfilehash: 9acb67db92e47951bf8d85cdcf6ad35c718c231b
-ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
+ms.openlocfilehash: 2d414d7f3f7c289034dd6e653d8bef49c17c2052
+ms.sourcegitcommit: 62368e5a48e569c8e475b07d194d7d8ff7d167ab
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "65091245"
+ms.lasthandoff: 09/02/2022
+ms.locfileid: "67560359"
 ---
 # <a name="hybrid-solutions"></a>Soluciones híbridas
 
 Con Microsoft Azure, puede implementar algunas cargas de trabajo de Office Server que se implementaron normalmente de forma local en los servicios de infraestructura de Azure.
   
-Para Microsoft 365 infraestructura de identidad en Azure:
+Para la infraestructura de identidad de Microsoft 365 en Azure:
 
 - [Uso de Azure AD para la autenticación de SharePoint Server](/azure/active-directory/saas-apps/sharepoint-on-premises-tutorial)
 

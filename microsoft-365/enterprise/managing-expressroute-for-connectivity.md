@@ -6,7 +6,7 @@ manager: scotv
 ms.date: 7/13/2017
 audience: ITPro
 ms.topic: conceptual
-ms.service: o365-administration
+ms.service: microsoft-365-enterprise
 ms.localizationpriority: medium
 ms.collection: Ent_O365
 f1.keywords:
@@ -19,12 +19,12 @@ search.appverid:
 - BCS160
 ms.assetid: e4468915-15e1-4530-9361-cd18ce82e231
 description: Obtenga información sobre cómo administrar ExpressRoute para Office 365, incluidas las áreas comunes para configurar, como el filtrado de prefijos, la seguridad y el cumplimiento.
-ms.openlocfilehash: 493a7c0ca14d05a2b84763b9e9485f828574a930
-ms.sourcegitcommit: 6a981ca15bac84adbbed67341c89235029aad476
+ms.openlocfilehash: 50f4e345c1a0a2095f53e1ad85ffe30297140584
+ms.sourcegitcommit: 62368e5a48e569c8e475b07d194d7d8ff7d167ab
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/27/2022
-ms.locfileid: "65753878"
+ms.lasthandoff: 09/02/2022
+ms.locfileid: "67560095"
 ---
 # <a name="managing-expressroute-for-office-365-connectivity"></a>Administración de la conectividad de ExpressRoute para Office 365
 
@@ -45,7 +45,7 @@ Hay muchas razones para evitar el uso de las [direcciones URL de Office 365 y lo
 
 - Las direcciones URL Office 365 y los intervalos de direcciones IP están diseñadas para administrar las listas de permitidos de firewall y la infraestructura de proxy, no para el enrutamiento.
 
-- Las direcciones URL de Office 365 y los intervalos de direcciones IP no cubren otros servicios Microsoft que puedan estar en el ámbito de las conexiones de ExpressRoute.
+- Las direcciones URL de Office 365 y los intervalos de direcciones IP no cubren otros servicios de Microsoft que puedan estar en el ámbito de las conexiones de ExpressRoute.
 
 |**Opción**|**Complejidad**|**Cambiar control**|
 |:-----|:-----|:-----|
@@ -86,11 +86,11 @@ Hay varios escenarios opcionales que requieren que Microsoft inicie conexiones a
 
 - Envíe correo desde un inquilino de Exchange Online a un host local.
 
-- SharePoint correo en línea enviado desde SharePoint Online a un host local.
+- Correo de SharePoint Online enviado desde SharePoint Online a un host local.
 
-- [SharePoint búsqueda híbrida federada](/SharePoint/hybrid/display-hybrid-federated-search-results-in-sharepoint-online).
+- [Búsqueda híbrida federada de SharePoint](/SharePoint/hybrid/display-hybrid-federated-search-results-in-sharepoint-online).
 
-- [SharePoint BCS híbrido](/SharePoint/hybrid/deploy-a-business-connectivity-services-hybrid-solution).
+- [BCS híbrido de SharePoint](/SharePoint/hybrid/deploy-a-business-connectivity-services-hybrid-solution).
 
 - [Skype Empresarial federación híbrida](/skypeforbusiness/hybrid/plan-hybrid-connectivity?bc=%2fSkypeForBusiness%2fbreadcrumb%2ftoc.json&toc=%2fSkypeForBusiness%2ftoc.json) o [Skype Empresarial](/office365/servicedescriptions/skype-for-business-online-service-description/skype-for-business-online-features).
 

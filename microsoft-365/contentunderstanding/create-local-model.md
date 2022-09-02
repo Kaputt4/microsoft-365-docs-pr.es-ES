@@ -6,23 +6,23 @@ manager: pamgreen
 ms.reviewer: ssquires
 audience: admin
 ms.topic: article
-ms.prod: microsoft-365-enterprise
+ms.service: microsoft-365-enterprise
 search.appverid: ''
 ms.collection:
 - enabler-strategic
 - m365initiative-syntex
 ms.localizationpriority: medium
-description: Obtenga información sobre cómo crear un modelo local en un sitio de SharePoint local con SharePoint Syntex.
-ms.openlocfilehash: bcd3f1f086af3982cb4a3ecc5fe754cf82f09a70
-ms.sourcegitcommit: e624221597480295b799d56568c4f6f56d40b41d
+description: Obtenga información sobre cómo crear un modelo local en un sitio local de SharePoint con SharePoint Syntex.
+ms.openlocfilehash: 6a3d9098ef8f61d2ffe40c2871313ef1b2e2e0f7
+ms.sourcegitcommit: 62368e5a48e569c8e475b07d194d7d8ff7d167ab
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/19/2022
-ms.locfileid: "65535390"
+ms.lasthandoff: 09/02/2022
+ms.locfileid: "67560513"
 ---
 # <a name="create-a-model-on-a-local-sharepoint-site-with-microsoft-sharepoint-syntex"></a>Creación de un modelo en un sitio de SharePoint local con Microsoft SharePoint Syntex
 
-SharePoint Syntex ahora proporciona una opción para crear y entrenar modelos localmente en su propio sitio SharePoint. Estos modelos solo se pueden usar en el sitio donde se crean. 
+SharePoint Syntex ahora proporciona una opción para crear y entrenar modelos localmente en su propio sitio de SharePoint. Estos modelos solo se pueden usar en el sitio donde se crean. 
 
 Al activar la clasificación y extracción de documentos en el sitio de SharePoint, SharePoint Syntex permite clasificar archivos en bibliotecas de documentos, extraer información de archivos nuevos y automatizar actividades basadas en información extraída.
 
@@ -37,9 +37,9 @@ Esta característica solo está disponible para crear [modelos de comprensión d
 
 ## <a name="create-a-model-on-a-local-site"></a>Creación de un modelo en un sitio local
 
-1. En una biblioteca de documentos SharePoint, seleccione los archivos que desea analizar y, a continuación, seleccione **Clasificar y extraer**.
+1. En una biblioteca de documentos de SharePoint, seleccione los archivos que desea analizar y, a continuación, seleccione **Clasificar y extraer**.
 
-    ![Captura de pantalla de una biblioteca de documentos SharePoint con la opción Clasificar y extraer resaltada.](../media/content-understanding/local-model-classify-and-extract-option.png) 
+    ![Captura de pantalla de una biblioteca de documentos de SharePoint con la opción Clasificar y extraer resaltada.](../media/content-understanding/local-model-classify-and-extract-option.png) 
 
 2. La primera vez que use esta característica, activará SharePoint Syntex en su sitio. Verá el siguiente mensaje.
 
@@ -64,7 +64,7 @@ Esta característica solo está disponible para crear [modelos de comprensión d
 
     ![Captura de pantalla del panel Agregar a la biblioteca que muestra el sitio y las bibliotecas aplicadas.](../media/content-understanding/local-model-add-to-library-panel.png) 
 
-8. En el panel **Agregar a la biblioteca**, verá el nombre del sitio de SharePoint y la biblioteca de documentos a la que se aplicará el modelo. Si desea aplicar el modelo a otra biblioteca, seleccione **Volver a las bibliotecas** y elija la biblioteca que desea usar. A continuación, seleccione **Aceptar**.
+8. En el panel **Agregar a la biblioteca** , verá el nombre del sitio de SharePoint y la biblioteca de documentos a la que se aplicará el modelo. Si desea aplicar el modelo a otra biblioteca, seleccione **Volver a las bibliotecas** y elija la biblioteca que desea usar. A continuación, seleccione **Aceptar**.
 
 9. En la página principal del modelo, en la sección **Where the model is applied on this site (Dónde se aplica el modelo en este sitio** ), puede ver las bibliotecas que tienen aplicado el modelo. Para aplicar el modelo a otras bibliotecas del sitio, seleccione **Aplicar modelo**. 
 

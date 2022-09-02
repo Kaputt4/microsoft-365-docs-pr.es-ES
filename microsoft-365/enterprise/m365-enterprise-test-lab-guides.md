@@ -8,7 +8,7 @@ manager: scotv
 ms.date: 11/20/2019
 audience: ITPro
 ms.topic: landing-page
-ms.service: o365-solutions
+ms.service: microsoft-365-enterprise
 ms.localizationpriority: medium
 ms.collection:
 - M365-subscription-management
@@ -18,12 +18,12 @@ ms.custom:
 - seo-marvel-apr2020
 ms.assetid: 706d5449-45e5-4b0c-a012-ab60501899ad
 description: Utilice estas guías de laboratorio de pruebas para configurar una demostración, prueba de concepto o entornos de desarrollo/prueba en Microsoft 365 para empresas.
-ms.openlocfilehash: 8c4444b599682ad40ebba88b37d83125fccd99f0
-ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
+ms.openlocfilehash: 8c0d66e0a3ee2cfee3d387d2aa233e0d6a6d40c6
+ms.sourcegitcommit: 62368e5a48e569c8e475b07d194d7d8ff7d167ab
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "65097434"
+ms.lasthandoff: 09/02/2022
+ms.locfileid: "67560293"
 ---
 # <a name="microsoft-365-for-enterprise-test-lab-guides"></a>Guías de laboratorio para pruebas de Microsoft 365 para empresas
 
@@ -37,17 +37,17 @@ También puede usar los TLG para crear entornos representativos para desarrollar
   
 ![Guías de laboratorio de prueba para la nube de Microsoft.](../media/m365-enterprise-test-lab-guides/cloud-tlg-icon.png)
 
-Para obtener un mapa visual de todos los artículos de la pila Microsoft 365 para la guía de laboratorio de pruebas empresarial, expanda el siguiente gráfico o vaya a [Microsoft 365 para la pila de guía del laboratorio de pruebas empresarial](../downloads/Microsoft365EnterpriseTLGStack.pdf).
+Para obtener un mapa visual de todos los artículos de la pila guía del laboratorio de pruebas de Microsoft 365 para empresas, expanda el siguiente gráfico o vaya a [Microsoft 365 para enterprise Test Lab Guide Stack](../downloads/Microsoft365EnterpriseTLGStack.pdf).
 
-[![La pila Microsoft 365 para la guía del laboratorio de pruebas empresarial.](../media/m365-enterprise-test-lab-guides/microsoft-365-enterprise-tlg-stack.png)](../downloads/Microsoft365EnterpriseTLGStack.pdf)
+[![Pila de la Guía del laboratorio de pruebas de Microsoft 365 para empresas.](../media/m365-enterprise-test-lab-guides/microsoft-365-enterprise-tlg-stack.png)](../downloads/Microsoft365EnterpriseTLGStack.pdf)
 
 ## <a name="base-configuration"></a>Configuración básica
 
 En primer lugar, cree un entorno de prueba para [Microsoft 365 para empresas](/microsoft-365-enterprise/). Puede crear dos tipos diferentes de configuraciones base:
 
-- [Configuración base ligera](lightweight-base-configuration-microsoft-365-enterprise.md): úsela cuando desee configurar y demostrar Microsoft 365 para las características y funcionalidades empresariales en un entorno solo en la nube, que no incluye ningún componente local.
+- [Configuración base ligera](lightweight-base-configuration-microsoft-365-enterprise.md) : úsela cuando quiera configurar y demostrar Microsoft 365 para características y funcionalidades empresariales en un entorno solo en la nube, que no incluye ningún componente local.
 
-- [Configuración base empresarial simulada](simulated-ent-base-configuration-microsoft-365-enterprise.md): úsela cuando desee configurar y demostrar Microsoft 365 para las características y funcionalidades empresariales en un entorno de nube híbrida, que usa componentes locales, como un dominio de Servicios de dominio de Active Directory (AD DS).
+- [Configuración base de empresa simulada](simulated-ent-base-configuration-microsoft-365-enterprise.md): úsela cuando desee configurar y demostrar Microsoft 365 para características y funcionalidades empresariales en un entorno de nube híbrida, que usa componentes locales, como un dominio de Servicios de dominio de Active Directory (AD DS).
 
 También puede crear entornos de prueba para Office 365 E5 al no agregar la licencia de Microsoft 365 E5 a su prueba o entorno de prueba de producción.
     
@@ -69,7 +69,7 @@ Para mostrar características y funciones relacionadas con identidades, vea:
 
 - [Inicio de sesión único de conexión directa de Azure AD](single-sign-on-m365-ent-test-environment.md)
   
-   Habilite y pruebe Azure AD inicio de sesión único de conexión directa (SSO de conexión directa) con un controlador de dominio de AD DS.
+   Habilite y pruebe el inicio de sesión único de conexión directa (SSO de conexión directa) de Azure AD con un controlador de dominio de AD DS.
 
 - [Autenticación multifactor](multi-factor-authentication-microsoft-365-test-environment.md)
   

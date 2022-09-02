@@ -1,5 +1,5 @@
 ---
-title: Deshabilitar el acceso a Microsoft 365 servicios al asignar licencias de usuario
+title: Deshabilitar el acceso a los servicios de Microsoft 365 al asignar licencias de usuario
 ms.author: kvice
 author: kelleyvice-msft
 manager: scotv
@@ -7,7 +7,7 @@ ms.date: 04/24/2020
 audience: Admin
 ms.topic: article
 ms.collection: Ent_O365
-ms.service: o365-administration
+ms.service: microsoft-365-enterprise
 ms.localizationpriority: medium
 search.appverid:
 - MET150
@@ -18,22 +18,22 @@ ms.custom:
 - Ent_Office_Other
 ms.assetid: bb003bdb-3c22-4141-ae3b-f0656fc23b9c
 description: Obtenga información sobre cómo asignar licencias a cuentas de usuario y deshabilitar planes de servicio específicos al mismo tiempo mediante PowerShell para Microsoft 365.
-ms.openlocfilehash: 6c0c3a3860da8a1935152fcaefb29f2f355cfa49
-ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
+ms.openlocfilehash: ef469a39136e030a5ff769af9a40f397c0714043
+ms.sourcegitcommit: 62368e5a48e569c8e475b07d194d7d8ff7d167ab
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "65095738"
+ms.lasthandoff: 09/02/2022
+ms.locfileid: "67560205"
 ---
-# <a name="disable-access-to-microsoft-365-services-while-assigning-user-licenses"></a>Deshabilitar el acceso a Microsoft 365 servicios al asignar licencias de usuario
+# <a name="disable-access-to-microsoft-365-services-while-assigning-user-licenses"></a>Deshabilitar el acceso a los servicios de Microsoft 365 al asignar licencias de usuario
 
-*Este artículo se aplica tanto a Microsoft 365 Enterprise como a Office 365 Enterprise.*
+*Este artículo afecta tanto a Office 365 Enterprise como a Microsoft 365 Enterprise*
 
-Microsoft 365 suscripciones incluyen planes de servicio para servicios individuales. Microsoft 365 administradores suelen tener que deshabilitar determinados planes al asignar licencias a los usuarios. Con las instrucciones de este artículo, puede asignar una licencia de Microsoft 365 al deshabilitar planes de servicio específicos mediante PowerShell para una cuenta de usuario individual o varias cuentas de usuario.
+Las suscripciones de Microsoft 365 incluyen planes de servicio para servicios individuales. Los administradores de Microsoft 365 suelen tener que deshabilitar determinados planes al asignar licencias a los usuarios. Con las instrucciones de este artículo, puede asignar una licencia de Microsoft 365 al deshabilitar planes de servicio específicos mediante PowerShell para una cuenta de usuario individual o varias cuentas de usuario.
 
 ## <a name="use-the-azure-active-directory-powershell-for-graph-module"></a>Use el módulo de PowerShell Azure Active Directory para Graph
 
-En primer lugar, [conéctese al inquilino de Microsoft 365](connect-to-microsoft-365-powershell.md#connect-with-the-azure-active-directory-powershell-for-graph-module).
+En primer lugar, [conéctese a su inquilino de Microsoft 365](connect-to-microsoft-365-powershell.md#connect-with-the-azure-active-directory-powershell-for-graph-module).
 
 
 A continuación, enumere los planes de licencia del inquilino con este comando.
@@ -67,7 +67,7 @@ Set-AzureADUserLicense -ObjectId $user.ObjectId -AssignedLicenses $LicensesToAss
 
 ## <a name="use-the-microsoft-azure-active-directory-module-for-windows-powershell"></a>Use el Módulo Microsoft Azure Active Directory para Windows PowerShell
 
-En primer lugar, [conéctese al inquilino de Microsoft 365](connect-to-microsoft-365-powershell.md#connect-with-the-microsoft-azure-active-directory-module-for-windows-powershell).
+En primer lugar, [conéctese a su inquilino de Microsoft 365](connect-to-microsoft-365-powershell.md#connect-with-the-microsoft-azure-active-directory-module-for-windows-powershell).
 
 A continuación, ejecute este comando para ver las suscripciones actuales:
 
@@ -91,7 +91,7 @@ En la presentación del  `Get-MsolAccountSku` comando:
 
 Tenga en cuenta el AccountSkuId de la suscripción de Microsoft 365 que contiene los usuarios que desea licenciar. Además, asegúrese de que hay suficientes licencias para asignar (reste **ConsumedUnits** de **ActiveUnits**).
 
-A continuación, ejecute este comando para ver los detalles sobre los planes de servicio Microsoft 365 que están disponibles en todas las suscripciones:
+A continuación, ejecute este comando para ver los detalles sobre los planes de servicio de Microsoft 365 que están disponibles en todas las suscripciones:
 
 ```powershell
 Get-MsolAccountSku | Select -ExpandProperty ServiceStatus
@@ -101,7 +101,7 @@ En la presentación de este comando, determine qué planes de servicio desea des
 
 Esta es una lista parcial de los planes de servicio y sus servicios de Microsoft 365 correspondientes.
 
-En la tabla siguiente se muestran los planes de servicio Microsoft 365 y sus nombres descriptivos para los servicios más comunes. Su lista de planes de servicio puede ser diferente.
+En la tabla siguiente se muestran los planes de servicio de Microsoft 365 y sus nombres descriptivos para los servicios más comunes. Su lista de planes de servicio puede ser diferente.
 
 |**Plan de servicio**|**Descripción**|
 |:-----|:-----|
@@ -111,7 +111,7 @@ En la tabla siguiente se muestran los planes de servicio Microsoft 365 y sus nom
 | `RMS_S_ENTERPRISE` <br/> |Azure Rights Management (RMS)  <br/> |
 | `OFFICESUBSCRIPTION` <br/> |Aplicaciones Microsoft 365 para empresas *(anteriormente denominado Office 365 ProPlus)*  <br/> |
 | `MCOSTANDARD` <br/> |Skype Empresarial Online  <br/> |
-| `SHAREPOINTWAC` <br/> |Office   <br/> |
+| `SHAREPOINTWAC` <br/> |Oficina   <br/> |
 | `SHAREPOINTENTERPRISE` <br/> |SharePoint Online  <br/> |
 | `EXCHANGE_S_ENTERPRISE` <br/> |Plan 2 de Exchange Online  <br/> |
 
@@ -186,7 +186,7 @@ Este bloque de comandos de PowerShell:
 
 ## <a name="see-also"></a>Vea también
 
-[Deshabilitar el acceso a Microsoft 365 servicios con PowerShell](disable-access-to-services-with-microsoft-365-powershell.md)
+[Deshabilitar el acceso a los servicios de Microsoft 365 con PowerShell](disable-access-to-services-with-microsoft-365-powershell.md)
 
 [Deshabilitar el acceso a Sway con PowerShell](disable-access-to-sway-with-microsoft-365-powershell.md)
 

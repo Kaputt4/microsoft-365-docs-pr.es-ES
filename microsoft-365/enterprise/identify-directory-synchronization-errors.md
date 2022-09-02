@@ -5,7 +5,7 @@ author: kelleyvice-msft
 manager: scotv
 audience: Admin
 ms.topic: article
-ms.service: o365-administration
+ms.service: microsoft-365-enterprise
 ms.localizationpriority: medium
 f1.keywords:
 - CSH
@@ -24,12 +24,12 @@ search.appverid:
 - GPA150
 ms.assetid: b4fc07a5-97ea-4ca6-9692-108acab74067
 description: Obtenga información sobre cómo ver los errores de sincronización de directorios y las posibles correcciones en Centro de administración de Microsoft 365.
-ms.openlocfilehash: 1aa6a9208c9ae3091c2490a003eaabb841b78dc5
-ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
+ms.openlocfilehash: bbbff97b424c65b92affca67cae338efb0220b87
+ms.sourcegitcommit: 62368e5a48e569c8e475b07d194d7d8ff7d167ab
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "65096510"
+ms.lasthandoff: 09/02/2022
+ms.locfileid: "67560337"
 ---
 # <a name="view-directory-synchronization-errors-in-microsoft-365"></a>Visualización de errores de sincronización de directorios en Microsoft 365
 
@@ -45,7 +45,7 @@ Para ver los errores de la Centro de administración de Microsoft 365:
     
     ![La tarjeta de administración de usuarios de la Centro de administración de Microsoft 365.](../media/060006e9-de61-49d5-8979-e77cda198e71.png)
   
-3. En la tarjeta, elija **Errores de sincronización** en **Azure AD Conectar** para ver los errores en la página **Errores de sincronización de directorios**.   
+3. En la tarjeta, elija **Sincronizar errores** en **Azure AD Connect** para ver los errores en la página **Errores de sincronización de directorios** .   
     
     ![Ejemplo de la página Errores de sincronización de directorios.](../media/882094a3-80d3-4aae-b90b-78b27047974c.png)
 
@@ -53,4 +53,4 @@ Para ver los errores de la Centro de administración de Microsoft 365:
 
    ![Ejemplo de los detalles de un error de sincronización de directorios.](../media/a6e302d4-6be7-4e3a-b4b5-81c5a2c02952.png)
   
-Después de la visualización, consulte [Solucionar problemas con la sincronización de directorios para Microsoft 365](fix-problems-with-directory-synchronization.md) para corregir los problemas identificados.
+Después de la visualización, vea [Solucionar problemas con la sincronización de directorios de Microsoft 365](fix-problems-with-directory-synchronization.md) para corregir los problemas identificados.

@@ -1,5 +1,5 @@
 ---
-title: Automatización de licencias y pertenencia a grupos para su Microsoft 365 para el entorno de prueba empresarial
+title: Automatización de licencias y pertenencia a grupos para el entorno de prueba de Microsoft 365 para empresas
 f1.keywords:
 - NOCSH
 ms.author: kvice
@@ -8,37 +8,37 @@ manager: scotv
 ms.date: 12/09/2019
 audience: ITPro
 ms.topic: article
-ms.service: o365-solutions
+ms.service: microsoft-365-enterprise
 ms.localizationpriority: medium
 ms.collection: M365-identity-device-management
 ms.custom:
 - TLG
 - Ent_TLGs
-description: Configure las licencias basadas en grupos y la pertenencia dinámica a grupos en la Microsoft 365 para el entorno de prueba empresarial.
-ms.openlocfilehash: 1d471076ac07acb023cdf785233ea2222690b596
-ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
+description: Configure las licencias basadas en grupos y la pertenencia dinámica a grupos en el entorno de prueba de Microsoft 365 para empresas.
+ms.openlocfilehash: ba980e0fe6553993cf701bab4d4fb2e4f9826da4
+ms.sourcegitcommit: 62368e5a48e569c8e475b07d194d7d8ff7d167ab
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "65097544"
+ms.lasthandoff: 09/02/2022
+ms.locfileid: "67560139"
 ---
-# <a name="automate-licensing-and-group-membership-for-your-microsoft-365-for-enterprise-test-environment"></a>Automatización de licencias y pertenencia a grupos para su Microsoft 365 para el entorno de prueba empresarial
+# <a name="automate-licensing-and-group-membership-for-your-microsoft-365-for-enterprise-test-environment"></a>Automatización de licencias y pertenencia a grupos para el entorno de prueba de Microsoft 365 para empresas
 
-*Esta Guía de laboratorio de pruebas solo se puede usar para Microsoft 365 para entornos de prueba empresariales.*
+*Esta guía de laboratorio de pruebas solo se puede usar para Microsoft 365 para entornos de prueba empresariales.*
 
-Las licencias basadas en grupos asignan o quitan automáticamente licencias para una cuenta de usuario en función de la pertenencia a grupos. La pertenencia dinámica a grupos agrega o quita miembros a un grupo en función de las propiedades de la cuenta de usuario, como **Department** o **Country**. En este artículo se explican las demostraciones de cómo agregar y quitar miembros del grupo en la Microsoft 365 para el entorno de prueba empresarial.
+Las licencias basadas en grupos asignan o quitan automáticamente licencias para una cuenta de usuario en función de la pertenencia a grupos. La pertenencia dinámica a grupos agrega o quita miembros a un grupo en función de las propiedades de la cuenta de usuario, como **Department** o **Country**. En este artículo se explican las demostraciones de cómo agregar y quitar miembros del grupo en el entorno de prueba de Microsoft 365 para empresas.
 
 La configuración de las licencias automáticas y la pertenencia dinámica a grupos en el entorno de prueba de Microsoft 365 para empresas implica dos fases:
 
-- [Fase 1: Compilación de la Microsoft 365 para el entorno de prueba empresarial](#phase-1-build-out-your-microsoft-365-for-enterprise-test-environment)
+- [Fase 1: Compilación del entorno de prueba de Microsoft 365 para empresas](#phase-1-build-out-your-microsoft-365-for-enterprise-test-environment)
 - [Fase 2: Configuración y prueba de la pertenencia dinámica a grupos y las licencias automáticas](#phase-2-configure-and-test-dynamic-group-membership-and-automatic-licensing)
 
 ![Guías de laboratorio de prueba para la nube de Microsoft.](../media/m365-enterprise-test-lab-guides/cloud-tlg-icon.png) 
     
 > [!TIP]
-> Para obtener un mapa visual de todos los artículos de la pila Microsoft 365 para la pila guía del laboratorio de pruebas empresarial, vaya a [Microsoft 365 para la pila de la guía del laboratorio de pruebas empresarial](../downloads/Microsoft365EnterpriseTLGStack.pdf).
+> Para obtener un mapa visual de todos los artículos de la pila guía del laboratorio de pruebas de Microsoft 365 para empresas, vaya a [Microsoft 365 para enterprise Test Lab Guide Stack (Pila de guía del laboratorio de pruebas empresariales).](../downloads/Microsoft365EnterpriseTLGStack.pdf)
   
-## <a name="phase-1-build-out-your-microsoft-365-for-enterprise-test-environment"></a>Fase 1: Compilación de la Microsoft 365 para el entorno de prueba empresarial
+## <a name="phase-1-build-out-your-microsoft-365-for-enterprise-test-environment"></a>Fase 1: Compilación del entorno de prueba de Microsoft 365 para empresas
 
 Si solo quiere probar las licencias automatizadas y la pertenencia a grupos de forma ligera con los requisitos mínimos, siga las instrucciones de [Configuración base ligera](lightweight-base-configuration-microsoft-365-enterprise.md).
   
@@ -63,7 +63,7 @@ En primer lugar, cree un nuevo grupo denominado Ventas y agregue una regla de pe
    - Seleccione la propiedad **department** .
    - Seleccione el operador **Equals** .
    - En el cuadro **Valor** , escriba **Ventas**.
-10. Seleccione **Guardar**.
+10. Haga clic en **Guardar**.
 11. Seleccione **Crear**.
 
 A continuación, configure el grupo Ventas para que a los miembros se les asigne automáticamente la licencia de Microsoft 365 E5.
@@ -74,15 +74,15 @@ A continuación, configure el grupo Ventas para que a los miembros se les asigne
 
 A continuación, pruebe la pertenencia dinámica a grupos y las licencias automáticas en la cuenta de usuario 4:
 
-1. En la pestaña **Inicio de Microsoft Office** del explorador, seleccione **Administrador**.
+1. En la pestaña **Inicio de Microsoft Office** del explorador, seleccione **Administración**.
 2. En la pestaña **Centro de administración de Microsoft 365**, seleccione **Usuarios activos**.
 3. En la página **Usuarios activos** , seleccione la cuenta **Usuario 4** .
 4. En el panel **Usuario 4** , seleccione **Editar** para **Licencias de producto**.
-5. En el panel **Licencias de producto**, deshabilite la licencia **de Microsoft 365 E5** y, a continuación, seleccione **GuardarClose** > .
+5. En el panel **Licencias de producto**, deshabilite la licencia **de Microsoft 365 E5** y, a continuación, seleccione **Guardar** > **cierre**.
 6. En las propiedades de la cuenta de usuario 4, compruebe que no se han asignado licencias de producto y que no hay pertenencias a grupos.
 7. Para **Información de contacto**, seleccione **Editar**.
 8. En el panel **Editar información de contacto** , seleccione **Información de contacto**.
-9. En el cuadro **Departamento**, escriba **Ventas** y, a continuación, seleccione **GuardarClose** > .
+9. En el cuadro **Departamento** , escriba **Ventas** y, a continuación, seleccione **Guardar** > **cierre**.
 10. Espere unos minutos y, a continuación, seleccione periódicamente el icono **Actualizar** en la esquina superior derecha del panel Cuenta de usuario 4.
 
 Con el tiempo, debería ver lo siguiente:

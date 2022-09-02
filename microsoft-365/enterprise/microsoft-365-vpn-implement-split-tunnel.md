@@ -6,7 +6,7 @@ manager: scotv
 ms.date: 3/3/2022
 audience: Admin
 ms.topic: conceptual
-ms.service: o365-administration
+ms.service: microsoft-365-enterprise
 ms.localizationpriority: medium
 search.appverid:
 - MET150
@@ -17,12 +17,12 @@ ms.collection:
 f1.keywords:
 - NOCSH
 description: Implementación de la tunelización dividida de VPN para Microsoft 365
-ms.openlocfilehash: 6b578b9b1801921644c6982c15c160bce5fbb4dd
-ms.sourcegitcommit: 61bdfa84f2d6ce0b61ba5df39dcde58df6b3b59d
+ms.openlocfilehash: db406c36a7395f3d8c4faad6d7d7f4b34c83ff55
+ms.sourcegitcommit: 62368e5a48e569c8e475b07d194d7d8ff7d167ab
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/08/2022
-ms.locfileid: "65941094"
+ms.lasthandoff: 09/02/2022
+ms.locfileid: "67560535"
 ---
 # <a name="implementing-vpn-split-tunneling-for-microsoft-365"></a>Implementación de la tunelización dividida de VPN para Microsoft 365
 
@@ -70,7 +70,7 @@ Las direcciones URL que se deben optimizar actualmente se muestran en la siguien
 | <https://outlook.office.com> | TCP 443 | Esta dirección URL se usa para que Outlook Online Web Access se conecte al servidor de Exchange Online y es sensible a la latencia de red. La conectividad es especialmente importante para la carga y descarga de archivos grandes con SharePoint Online. |
 | \<tenant\>https://.sharepoint.com | TCP 443 | Esta es la dirección URL principal de SharePoint Online y tiene un uso de ancho de banda alto. |
 | \<tenant\>https://-my.sharepoint.com | TCP 443 | Esta es la dirección URL principal de OneDrive para la Empresa y tiene un gran uso de ancho de banda y posiblemente un alto número de conexiones de la Herramienta de sincronización de OneDrive para la Empresa. |
-| Direcciones IP del contenido multimedia de Teams (sin URL) | UDP 3478, 3479, 3480 y 3481 | Asignación de detección de retransmisión y tráfico en tiempo real. Estos son los puntos de conexión que se usan para el tráfico multimedia de Skype Empresarial y Microsoft Teams (llamadas, reuniones, etc.). La mayoría de los puntos de conexión se proporcionan cuando el cliente de Microsoft Teams establece una llamada (que se incluye en las direcciones IP mostradas para el servicio). El uso del protocolo UDP es necesario para obtener la calidad multimedia ideal.   |
+| Direcciones IP del contenido multimedia de Teams (sin URL) | UDP 3478, 3479, 3480 y 3481 | Asignación de detección de retransmisión y tráfico en tiempo real. Estos son los puntos de conexión que se usan para Skype Empresarial y el tráfico multimedia de Microsoft Teams (llamadas, reuniones, etc.). La mayoría de los puntos de conexión se proporcionan cuando el cliente de Microsoft Teams establece una llamada (que se incluye en las direcciones IP mostradas para el servicio). El uso del protocolo UDP es necesario para obtener la calidad multimedia ideal.   |
 
 En los ejemplos anteriores, el **inquilino** debe reemplazarse por el nombre del inquilino de Microsoft 365. Por ejemplo, **contoso.onmicrosoft.com** usaría _contoso.sharepoint.com_ y _contoso-my.sharepoint.com_.
 
@@ -162,13 +162,13 @@ El cliente VPN debe configurarse para que el tráfico a las direcciones IP de la
 
 En esta sección se proporcionan vínculos a guías detalladas para implementar la tunelización dividida para el tráfico de Microsoft 365 desde los asociados más comunes de este espacio. Se agregarán guías adicionales a medida que estén disponibles.
 
-- **Cliente VPN de Windows 10**: [optimización del tráfico de Microsoft 365 para trabajadores remotos con el cliente VPN nativo de Windows 10](/windows/security/identity-protection/vpn/vpn-office-365-optimization)
+- **Windows 10 cliente VPN**: [optimización del tráfico de Microsoft 365 para trabajos remotos con el cliente VPN de Windows 10 nativo](/windows/security/identity-protection/vpn/vpn-office-365-optimization)
 - **Cisco AnyConnect**: [Optimize Anyconnect Split Tunnel for Office 365 (Optimización del túnel dividido de AnyConnect para Office 365)](https://www.cisco.com/c/en/us/support/docs/security/anyconnect-secure-mobility-client/215343-optimize-anyconnect-split-tunnel-for-off.html)
 - **Palo Alto GlobalProtect**: [optimización del tráfico de Microsoft 365 a través de la ruta de acceso de exclusión de túnel dividido de VPN](https://live.paloaltonetworks.com/t5/Prisma-Access-Articles/GlobalProtect-Optimizing-Office-365-Traffic/ta-p/319669)
 - **F5 Networks BIG-IP APM**: [Optimización del tráfico de Microsoft 365 en acceso remoto a través de VPN cuando se usa BIG-IP APM](https://devcentral.f5.com/s/articles/SSL-VPN-Split-Tunneling-and-Office-365)
 - **Citrix Gateway**: [optimización del túnel dividido de VPN de Citrix Gateway para Office365](https://docs.citrix.com/en-us/citrix-gateway/current-release/optimizing-citrix-gateway-vpn-split-tunnel-for-office365.html)
 - **Pulse Secure**: [Vpn Tunneling: Cómo configurar la tunelización dividida para excluir aplicaciones de Microsoft 365](https://kb.pulsesecure.net/articles/Pulse_Secure_Article/KB44417)
-- **VPN de Check Point**: [Configuración de Túnel dividido para Microsoft 365 y otras aplicaciones SaaS](https://supportcenter.checkpoint.com/supportcenter/portal?eventSubmit_doGoviewsolutiondetails=&solutionid=sk167000)
+- **Check Point VPN**: [Configuración del túnel dividido para Microsoft 365 y otras aplicaciones SaaS](https://supportcenter.checkpoint.com/supportcenter/portal?eventSubmit_doGoviewsolutiondetails=&solutionid=sk167000)
 
 ## <a name="related-articles"></a>Artículos relacionados
 

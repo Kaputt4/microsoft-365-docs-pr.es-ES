@@ -16,12 +16,12 @@ ms.collection:
 - m365-security-compliance
 ms.topic: conceptual
 ms.subservice: mde
-ms.openlocfilehash: 76c53ce599b811ed868eb51e94e0cf0466987944
-ms.sourcegitcommit: 228fa13973bf7c2d91504703fab757f552ae40dd
+ms.openlocfilehash: 783ff81d7317792a99c6ad6ad2e584c843466001
+ms.sourcegitcommit: 62368e5a48e569c8e475b07d194d7d8ff7d167ab
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/01/2022
-ms.locfileid: "67522684"
+ms.lasthandoff: 09/02/2022
+ms.locfileid: "67560689"
 ---
 # <a name="deploy-microsoft-defender-for-endpoint-on-ios"></a>Implementación de Microsoft Defender para punto de conexión en iOS
 
@@ -56,7 +56,7 @@ Implemente Defender para punto de conexión en iOS a través de Portal de empres
     > [!div class="mx-imgBorder"]
     > :::image type="content" source="images/ios-deploy-1.png" alt-text="La pestaña Agregar aplicaciones en el Centro de Endpoint Manager Administración de Microsoft" lightbox="images/ios-deploy-1.png":::
 
-1. En la página **Agregar aplicación**, haga clic en **Buscar en el App Store** y escriba **Microsoft Defender para punto de conexión** en la barra de búsqueda. En la sección de resultados de búsqueda, haga clic en *Microsoft Defender para punto de conexión* y haga clic en **Seleccionar**.
+1. En la página **Agregar aplicación**, haga clic en **Buscar en el App Store** y escriba **Microsoft Defender** en la barra de búsqueda. En la sección de resultados de búsqueda, haga clic en *Microsoft Defender* y haga clic en **Seleccionar**.
 
 1. Seleccione **iOS 11.0** como sistema operativo mínimo. Revise el resto de la información sobre la aplicación y haga clic en **Siguiente**.
 

@@ -5,7 +5,7 @@ author: kelleyvice-msft
 manager: scotv
 audience: ITPro
 ms.topic: article
-ms.service: o365-administration
+ms.service: microsoft-365-enterprise
 ms.localizationpriority: medium
 ms.collection:
 - Ent_O365
@@ -17,20 +17,20 @@ search.appverid:
 ms.assetid: 7cec08a5-97fd-4761-b23b-ef3d66519e30
 f1.keywords:
 - NOCSH
-description: Configure aplicaciones y servicios de Microsoft 365 Enterprise, como SharePoint, Exchange y Microsoft Teams.
+description: Configure Microsoft 365 Enterprise servicios y aplicaciones, como SharePoint, Exchange y Microsoft Teams.
 ms.custom: seo-marvel-mar2020
-ms.openlocfilehash: 61bde298ad89293d713e68e932081264a2fde726
-ms.sourcegitcommit: 61bdfa84f2d6ce0b61ba5df39dcde58df6b3b59d
+ms.openlocfilehash: 225270166b4c88be945adc35474f39a71de52f4a
+ms.sourcegitcommit: 62368e5a48e569c8e475b07d194d7d8ff7d167ab
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/08/2022
-ms.locfileid: "65940676"
+ms.lasthandoff: 09/02/2022
+ms.locfileid: "67556268"
 ---
 # <a name="configure-microsoft-365-enterprise-services-and-applications"></a>Configuración de aplicaciones y servicios de Microsoft 365 Enterprise
 
 Nuestras [instrucciones básicas de configuración](../admin/setup/setup.md) le ayudan a obtener a todos los usuarios que usan sus servicios y aplicaciones de Microsoft 365 en el menor tiempo posible. A veces, se prefiere configurar los elementos antes de que todos empiecen a usarlos. Por ejemplo, si desea configurar el enrutamiento de correo, el almacenamiento de archivos o las directivas de uso compartido. 
   
-Si desea ayuda para configurar Microsoft 365, use **[FastTrack](https://www.microsoft.com/fasttrack/microsoft-365)** o las [guías de instalación para los servicios de Microsoft 365 y Office 365](setup-guides-for-microsoft-365.md).
+Si desea ayuda para configurar Microsoft 365, use **[FastTrack](https://www.microsoft.com/fasttrack/microsoft-365)** o las [guías de instalación de Microsoft 365 y Office 365 servicios](setup-guides-for-microsoft-365.md).
   
 |**Servicios y aplicaciones**|**Recursos**|
 |:-----|:-----|
@@ -39,5 +39,5 @@ Si desea ayuda para configurar Microsoft 365, use **[FastTrack](https://www.micr
 |**Sitios** <br> (SharePoint) | - Configuración de la funcionalidad híbrida para [SharePoint Server](/SharePoint/hybrid/hybrid) <br> - Usar la [Guía de planeamiento de SharePoint](https://support.office.com/article/SharePoint-Online-Planning-Guide-for-Office-365-for-business-d5089cdf-3fd2-4230-acbd-20ecda2f9bb8) o el [Asesor de implementación de SharePoint](https://aka.ms/spoguidance) para planear y configurar características adicionales|
 |**Mensajería instantánea y reuniones en línea** <br> (Teams) | - [Introducción a la implementación de Microsoft Teams](/microsoftteams/deploy-overview)<br> - [Reuniones y conferencias en Microsoft Teams](/microsoftteams/deploy-meetings-microsoft-teams-landing-page) <br> - [Planeamiento de la solución de voz de Teams](/microsoftteams/cloud-voice-landing-page) |
 | **Almacenamiento y uso compartido de archivos** <br> (OneDrive y SharePoint) | - [Configurar el almacenamiento y el uso compartido de archivos de Microsoft 365](https://support.office.com/article/7aa9cdc8-2245-4218-81ee-86fa7c35f1de#BKMK_WhatDif): obtenga información sobre cuándo debe usar OneDrive para almacenar archivos y cuándo debe usar sitios de grupo de SharePoint. <br> - Use la [guía de configuración de OneDrive](https://aka.ms/OD4Bguidance) para obtener instrucciones de configuración personalizadas. |
-|**Aplicaciones de Microsoft 365** | - Los administradores de Microsoft 365 deben usar la [Guía de implementación de Office](/deployoffice) para obtener ayuda para planear una implementación o actualización de Aplicaciones de Microsoft 365 para empresas.  <br> - [Centro de administración de Power BI para Microsoft 365](https://support.office.com/article/Power-BI-for-Office-365-Admin-Center-Help-5e391ecb-500c-47a3-bd0f-a6173b541044) <br> - [Introducción a Project for the Web](/project-for-the-web/projectforweb-admin-home).  <br> - [Asesor de implementación de Microsoft Intune](/mem/intune/) |
+|**Aplicaciones de Microsoft 365** | - Los administradores de Microsoft 365 deben usar la [Guía de implementación de Office](/deployoffice) para obtener ayuda para planear una implementación o actualización de Aplicaciones Microsoft 365 para empresas.  <br> - [Power BI para Centro de administración de Microsoft 365](https://support.office.com/article/Power-BI-for-Office-365-Admin-Center-Help-5e391ecb-500c-47a3-bd0f-a6173b541044) <br> - [Introducción a Project for the Web](/project-for-the-web/projectforweb-admin-home).  <br> - [Asesor de implementación de Microsoft Intune](/mem/intune/) |
 |**Redes sociales de empresa** <br> (Yammer) | - [Uso de Yammer con Microsoft 365](https://support.office.com/article/Plan-for-Yammer-integration-with-Office-365-4086681f-6de1-4d39-aa72-752b2af1cbd7)  <br> - Use la [guía de configuración de Yammer Enterprise](https://aka.ms/yammerdeploy) para obtener instrucciones de configuración personalizadas. |

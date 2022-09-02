@@ -8,23 +8,23 @@ manager: scotv
 ms.date: 08/10/2020
 audience: ITPro
 ms.topic: article
-ms.service: o365-solutions
+ms.service: microsoft-365-enterprise
 ms.localizationpriority: medium
 ms.collection: M365-subscription-management
 ms.custom: it-pro
 description: La hoja de ruta para configurar los servicios en la nube para Microsoft 365.
-ms.openlocfilehash: 166db75078b8c0b3cd55d896f7fc1af9f2a00176
-ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
+ms.openlocfilehash: a59999e683b01f907553efddcc92961ca2c81e1d
+ms.sourcegitcommit: 62368e5a48e569c8e475b07d194d7d8ff7d167ab
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "65093007"
+ms.lasthandoff: 09/02/2022
+ms.locfileid: "67556312"
 ---
 # <a name="cloud-services-roadmap-for-microsoft-365"></a>Hoja de ruta de servicios en la nube para Microsoft 365
 
 Para obtener las ventajas de creatividad, trabajo en equipo y productividad de Microsoft 365 para empresas, implemente los servicios en la nube que mejor se adapten a las necesidades de su organización.
 
-Si tiene implementaciones existentes basadas en servidor para Exchange, SharePoint o Skype Empresarial y desea migrar toda la organización a Microsoft 365 para empresas, consulte el [plan de desarrollo de software de cliente y servidor](client-server-software-roadmap-microsoft-365.md). Este plan de desarrollo incluye Microsoft Office productos cliente, productos locales de Office Server y dispositivos basados en Microsoft Windows.
+Si tiene implementaciones existentes basadas en servidor para Exchange, SharePoint o Skype Empresarial y desea migrar toda la organización a Microsoft 365 para empresas, consulte el [plan de desarrollo de software de cliente y servidor](client-server-software-roadmap-microsoft-365.md). Este plan de desarrollo incluye productos de cliente de Microsoft Office, productos de Office Server locales y dispositivos basados en Microsoft Windows.
 
 ## <a name="deploy"></a>Implementar
 
@@ -53,13 +53,13 @@ Para administrar los servicios en la nube:
   - [Yammer](https://support.office.com/article/e1464355-1f97-49ac-b2aa-dd320b179dbe)
 - [Realización de la optimización del rendimiento de los servicios en la nube](tune-microsoft-365-performance.md)
 
-## <a name="how-microsoft-does-cloud-services-for-microsoft-365"></a>¿Cómo hace Microsoft los servicios en la nube para Microsoft 365
+## <a name="how-microsoft-does-cloud-services-for-microsoft-365"></a>Cómo hace Microsoft servicios en la nube para Microsoft 365
 
-Para obtener información sobre cómo microsoft TI ha implementado o administra Microsoft 365 servicios en la nube:
+Para obtener información sobre cómo microsoft TI ha implementado o está administrando los servicios en la nube de Microsoft 365:
 
 1. Vaya a [Microsoft IT Showcase](https://www.microsoft.com/itshowcase).
 2. Seleccione **Buscar contenido**.
-3. En **Refinar resultados**, seleccione **TI Pro** en **Audiencia** y, a continuación, en **Producto**, seleccione un servicio en la nube.
+3. En **Refinar resultados**, seleccione **Profesionales de TI** en **Audiencia** y, a continuación, en **Producto**, seleccione un servicio en la nube.
 
 ## <a name="next-step"></a>Paso siguiente
 

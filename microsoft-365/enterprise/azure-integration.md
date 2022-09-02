@@ -5,7 +5,7 @@ author: kelleyvice-msft
 manager: scotv
 audience: Admin
 ms.topic: overview
-ms.service: o365-administration
+ms.service: microsoft-365-enterprise
 ms.localizationpriority: medium
 ms.collection:
 - Ent_O365
@@ -21,46 +21,46 @@ search.appverid:
 - MED150
 - BCS160
 ms.assetid: a5efce5d-9c9c-4190-b61b-fd273c1d425f
-description: Integre Microsoft 365 con Azure AD si desea la sincronización de contraseñas o el inicio de sesión único con el entorno local.
-ms.openlocfilehash: bebbad10d0fb7a61437dcb24398ebb88d90db739
-ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
+description: Integre Microsoft 365 con Azure AD si desea la sincronización de contraseñas o el inicio de sesión único con su entorno local.
+ms.openlocfilehash: e2513290a171c0f304e1c76be07b021d1e1ea237
+ms.sourcegitcommit: 62368e5a48e569c8e475b07d194d7d8ff7d167ab
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "65096840"
+ms.lasthandoff: 09/02/2022
+ms.locfileid: "67560447"
 ---
 # <a name="azure-integration-with-microsoft-365"></a>Integración de Azure con Microsoft 365
 
-*Este artículo se aplica tanto a Microsoft 365 Enterprise como a Office 365 Enterprise.*
+*Este artículo afecta tanto a Office 365 Enterprise como a Microsoft 365 Enterprise*
 
-Microsoft 365 usa Azure Active Directory (Azure AD) para administrar las identidades de usuario en segundo plano. La suscripción Microsoft 365 incluye una suscripción de Azure AD gratuita para que pueda integrar su Active Directory local Domain Services (AD DS) para sincronizar cuentas de usuario y contraseñas o configurar el inicio de sesión único. También puede comprar características avanzadas para administrar mejor sus cuentas.
+Microsoft 365 usa Azure Active Directory (Azure AD) para administrar identidades de usuario en segundo plano. La suscripción de Microsoft 365 incluye una suscripción gratuita de Azure AD para que pueda integrar su Active Directory local Domain Services (AD DS) para sincronizar cuentas de usuario y contraseñas o configurar el inicio de sesión único. También puede comprar características avanzadas para administrar mejor sus cuentas.
   
 Azure AD también ofrece otras funciones, como la administración de aplicaciones integradas, que puede usar para ampliar y personalizar las suscripciones de Microsoft 365.
   
 Puede usar los asesores de implementación de Azure AD para una experiencia de configuración y configuración guiada en el Centro de administración de Microsoft 365 (debe iniciar sesión en Microsoft 365):
 
- - [asesor de Azure AD Conectar](https://aka.ms/aadconnectpwsync)
+ - [Asesor de Azure AD Connect](https://aka.ms/aadconnectpwsync)
  - [Asesor de implementación de AD FS](https://aka.ms/adfsguidance)
- - [guía de configuración de Azure AD](https://aka.ms/aadpguidance)
+ - [Guía de configuración de Azure AD](https://aka.ms/aadpguidance)
   
-## <a name="azure-ad-editions-and-microsoft-365-identity-management"></a>ediciones de Azure AD y administración de identidades de Microsoft 365
+## <a name="azure-ad-editions-and-microsoft-365-identity-management"></a>Ediciones de Azure AD y administración de identidades de Microsoft 365
 
-Si tiene una suscripción de pago para Microsoft 365, también tiene una suscripción gratuita Azure AD. Puede usar Azure AD para crear y administrar cuentas de usuario y grupo. Para activar esta suscripción, debe completar un registro único. Después, puede acceder a Azure AD desde su Centro de administración de Microsoft 365. 
+Si tiene una suscripción de pago a Microsoft 365, también tiene una suscripción gratuita a Azure AD. Puede usar Azure AD para crear y administrar cuentas de usuario y grupo. Para activar esta suscripción, debe completar un registro único. Después, puede acceder a Azure AD desde el Centro de administración de Microsoft 365. 
 
-Para obtener instrucciones para registrar su suscripción gratuita Azure AD, consulte [Uso de la suscripción gratuita Azure AD](../compliance/use-your-free-azure-ad-subscription-in-office-365.md). No vaya directamente a azure.microsoft.com para registrarse o terminará con una suscripción de prueba o de pago para Microsoft Azure que sea independiente de la suscripción gratuita Azure AD con Microsoft 365. 
+Para obtener instrucciones para registrar la suscripción gratuita de Azure AD, consulte [Uso de la suscripción gratuita de Azure AD](../compliance/use-your-free-azure-ad-subscription-in-office-365.md). No vaya directamente a azure.microsoft.com para registrarse o terminará con una suscripción de prueba o de pago a Microsoft Azure que sea independiente de la suscripción gratuita de Azure AD con Microsoft 365. 
   
 Con la suscripción gratuita, puede sincronizar con directorios locales, configurar el inicio de sesión único y sincronizar con muchas aplicaciones de software como servicio, como Salesforce, DropBox y muchas más.
   
-Si desea mejorar la funcionalidad de AD DS, la sincronización bidireccional y otras funcionalidades de administración, puede actualizar la suscripción gratuita a una suscripción Premium de pago. Para obtener más información, consulte [Azure Active Directory ediciones](https://azure.microsoft.com/pricing/details/active-directory/).
+Si desea mejorar la funcionalidad de AD DS, la sincronización bidireccional y otras funcionalidades de administración, puede actualizar la suscripción gratuita a una suscripción Premium de pago. Para más información, consulte [Ediciones de Azure Active Directory](https://azure.microsoft.com/pricing/details/active-directory/).
   
-Para obtener más información sobre Microsoft 365 y Azure AD, consulte [modelos de identidad de Microsoft 365](deploy-identity-solution-identity-model.md).
+Para obtener más información sobre Microsoft 365 y Azure AD, consulte [Modelos de identidad de Microsoft 365](deploy-identity-solution-identity-model.md).
   
 ## <a name="extend-the-capabilities-of-your-microsoft-365-tenant"></a>Ampliación de las funcionalidades del inquilino de Microsoft 365
 
 |**Característica**|**Descripción**|
 |:-----|:-----|
-|Aplicaciones integradas  <br/> |Puede conceder a las aplicaciones individuales acceso a los datos de Microsoft 365, como correo, calendarios, contactos, usuarios, grupos, archivos y carpetas. También puede autorizar estas aplicaciones en **Azure AD administrador de DC** o en el nivel de **administrador global** y ponerlas a disposición de toda la empresa mediante el registro de las aplicaciones en Azure AD. Para obtener más información, consulte [Aplicaciones integradas y Azure AD para administradores de Microsoft 365](integrated-apps-and-azure-ads.md).<br/> Para más información, consulte[Sobre los roles de administrador](/microsoft-365/admin/add-users/about-admin-roles?). <br/> Consulte también [Inicio de sesión único](/azure/active-directory/manage-apps/what-is-single-sign-on).  <br/> |
-|Power Apps  <br/> | Power Apps son aplicaciones centradas para dispositivos móviles que pueden conectarse a los orígenes de datos existentes, como listas de SharePoint y otras aplicaciones de datos. Consulte [Creación de una aplicación power para obtener una lista en SharePoint Online](https://support.office.com/article/9338b2d2-67ac-4b81-8e67-97da27e5e9ab) y la [página de Power Apps](https://powerapps.microsoft.com/) para obtener más información.  <br/> |
+|Aplicaciones integradas  <br/> |Puede conceder a las aplicaciones individuales acceso a los datos de Microsoft 365, como correo, calendarios, contactos, usuarios, grupos, archivos y carpetas. También puede autorizar estas aplicaciones en el nivel **de administrador de Azure AD DC** o **administrador global** y ponerlas a disposición de toda la empresa mediante el registro de las aplicaciones en Azure AD. Para más información, consulte [Aplicaciones integradas y Azure AD para administradores de Microsoft 365](integrated-apps-and-azure-ads.md).<br/> Para más información, consulte[Sobre los roles de administrador](/microsoft-365/admin/add-users/about-admin-roles?). <br/> Consulte también [Inicio de sesión único](/azure/active-directory/manage-apps/what-is-single-sign-on).  <br/> |
+|Power Apps  <br/> | Power Apps son aplicaciones centradas para dispositivos móviles que pueden conectarse a los orígenes de datos existentes, como listas de SharePoint y otras aplicaciones de datos. Vea [Crear una aplicación de Power para obtener una lista en SharePoint Online](https://support.office.com/article/9338b2d2-67ac-4b81-8e67-97da27e5e9ab) y la [página De Power Apps](https://powerapps.microsoft.com/) para obtener más información.  <br/> |
    
 ## <a name="see-also"></a>Vea también
 

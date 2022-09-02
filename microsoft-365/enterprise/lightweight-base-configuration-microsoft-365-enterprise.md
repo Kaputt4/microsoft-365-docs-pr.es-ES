@@ -8,7 +8,7 @@ manager: scotv
 ms.date: 05/17/2022
 audience: ITPro
 ms.topic: article
-ms.service: o365-solutions
+ms.service: microsoft-365-enterprise
 ms.localizationpriority: medium
 ms.collection:
 - M365-subscription-management
@@ -19,12 +19,12 @@ ms.custom:
 - admindeeplinkMAC
 ms.assetid: 6f916a77-301c-4be2-b407-6cec4d80df76
 description: Use esta guía de laboratorio de pruebas para crear un entorno de prueba ligero para probar Microsoft 365 para empresas.
-ms.openlocfilehash: fcfa3f67ec790244fc44f3539af8da1df7a09432
-ms.sourcegitcommit: f645e0e9db74b25663cd9ddec7e3824d6ffc57f7
+ms.openlocfilehash: 2d48fa3b2435b16ef29fa212d30eb51cffbbfe64
+ms.sourcegitcommit: 62368e5a48e569c8e475b07d194d7d8ff7d167ab
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/17/2022
-ms.locfileid: "65444210"
+ms.lasthandoff: 09/02/2022
+ms.locfileid: "67560821"
 ---
 # <a name="the-lightweight-base-configuration"></a>Configuración básica ligera
 
@@ -47,7 +47,7 @@ Use el entorno resultante para probar las características y la funcionalidad de
 ![Guías de laboratorio de prueba para la nube de Microsoft.](../media/m365-enterprise-test-lab-guides/cloud-tlg-icon.png)
   
 > [!TIP]
-> Para obtener un mapa visual de todos los artículos de la pila Microsoft 365 for enterprise Test Lab Guide, consulte [Microsoft 365 for enterprise Test Lab Guide Stack(Microsoft 365 for Enterprise Test Lab Guide Stack](../downloads/Microsoft365EnterpriseTLGStack.pdf)).
+> Para obtener un mapa visual de todos los artículos de la pila guía del laboratorio de pruebas de Microsoft 365 para empresas, consulte [Pila de la guía del laboratorio de pruebas de Microsoft 365 para empresas](../downloads/Microsoft365EnterpriseTLGStack.pdf).
 
 >[!NOTE]
 >Es recomendable que imprima este artículo para registrar la información específica que necesitará para este entorno durante los 30 días de la suscripción de prueba de Office 365. Puede extender fácilmente la suscripción de prueba otros 30 días. Para un entorno de pruebas permanente, cree una nueva suscripción de pago con un inquilino de Azure AD distinto y un número reducido de licencias.
@@ -89,7 +89,7 @@ Debería ver el Centro de administración de Microsoft 365.
 
 En esta fase, se configura la suscripción con usuarios adicionales y se les asignan licencias de Office 365 E5.
   
-Para conectarse a la suscripción con el módulo Azure Active Directory PowerShell for Graph desde el equipo, use las instrucciones de [Conectar para Microsoft 365 con PowerShell](connect-to-microsoft-365-powershell.md#connect-with-the-azure-active-directory-powershell-for-graph-module).
+Para conectarse a la suscripción con el módulo Azure Active Directory PowerShell for Graph desde el equipo, use las instrucciones de [Conexión a Microsoft 365 con PowerShell](connect-to-microsoft-365-powershell.md#connect-with-the-azure-active-directory-powershell-for-graph-module).
 
 En el cuadro de diálogo **Windows PowerShell solicitud de credenciales**, escriba el nombre de administrador global (por ejemplo, *jdoe@contosotoycompany.onmicrosoft.com*) y la contraseña.
   
@@ -150,7 +150,7 @@ Si aún no ha registrado estos valores, anote estos valores ahora:
 
 Si solo necesita un entorno de prueba Office 365, no es necesario leer el resto de este artículo.
 
-Para obtener más guías de laboratorio de pruebas que se aplican tanto a Office 365 como a Microsoft 365, consulte [Microsoft 365 para guías de laboratorio de pruebas empresariales](m365-enterprise-test-lab-guides.md).
+Para obtener más guías de laboratorio de pruebas que se aplican tanto a Office 365 como a Microsoft 365, consulte [Guías de laboratorio de pruebas de Microsoft 365 para empresas](m365-enterprise-test-lab-guides.md).
   
 ## <a name="phase-3-add-a-microsoft-365-e5-trial-subscription"></a>Fase 3: agregar una suscripción de prueba a Microsoft 365 E5
 
@@ -160,7 +160,7 @@ Primero, agregue la suscripción de prueba de Microsoft 365 E5 y asigne la nueva
   
 1. En una ventana privada del explorador de Internet, use las credenciales de la cuenta de administrador global para iniciar sesión en la Centro de administración de Microsoft 365 en [https://admin.microsoft.com](https://admin.microsoft.com).
 
-2. En la página **Centro de administración de Microsoft 365**, en el panel de navegación izquierdo, seleccione <a href="https://go.microsoft.com/fwlink/p/?linkid=868433" target="_blank">**BillingPurchase**</a> >  services .net.
+2. En la página **Centro de administración de Microsoft 365**, en el panel de navegación izquierdo, seleccione **Servicios de compra de facturación** > .<a href="https://go.microsoft.com/fwlink/p/?linkid=868433" target="_blank"></a>
 
 3. En la página **Comprar servicios**, seleccione **Microsoft 365 E5** y, a continuación, seleccione **Obtener evaluación gratuita**.
 
@@ -279,9 +279,9 @@ Después de crear la máquina física o virtual con Windows 10 Enterprise, inici
   
 Después, una el equipo WIN10 al espacio empresarial de Azure AD de la suscripción de Microsoft 365 E5.
   
-1. En el escritorio del equipo WIN10, seleccione **Iniciar cuentas de > Configuración > > > Conectar profesional o educativa de Access**.
+1. En el escritorio del equipo WIN10, seleccione **Iniciar > Configuración > Cuentas > Access > Connect profesional o educativa**.
 
-2. En el cuadro de diálogo **Configurar una cuenta profesional o educativa**, seleccione **Unir este dispositivo para Azure Active Directory**.
+2. En el cuadro de diálogo **Configurar una cuenta profesional o educativa** , seleccione **Unir este dispositivo a Azure Active Directory**.
 
 3. En **Cuenta profesional o educativa**, escriba el nombre de la cuenta de administrador global de la suscripción Microsoft 365 E5 y, a continuación, seleccione **Siguiente**.
 
@@ -295,7 +295,7 @@ A continuación, instale Aplicaciones Microsoft 365 para empresas en el equipo W
   
 1. Abra el explorador Microsoft Edge e inicie sesión en el [Centro de administración de Microsoft 365](https://admin.microsoft.com) con las credenciales de la cuenta de administrador global.
 
-2. En la pestaña **Inicio de Microsoft Office**, seleccione **Instalar Office**.
+2. En la pestaña **Inicio de Microsoft Office** , seleccione **Instalar Office**.
 
 3. Cuando se le pida qué hacer, seleccione **Ejecutar** y, a continuación, seleccione **Sí** en **Control de cuentas de usuario**.
 

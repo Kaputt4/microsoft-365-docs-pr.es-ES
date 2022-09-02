@@ -14,12 +14,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: troubleshooting
 ms.technology: mde
-ms.openlocfilehash: c6a2f676839caefc34b9dff03f860d04a260de0c
-ms.sourcegitcommit: d09eb780dc41a01796eb8137fbe9267231af6746
+ms.openlocfilehash: 3e9111edf7400ff09b366783a45ee40397bec81a
+ms.sourcegitcommit: 62368e5a48e569c8e475b07d194d7d8ff7d167ab
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/19/2022
-ms.locfileid: "67384946"
+ms.lasthandoff: 09/02/2022
+ms.locfileid: "67560249"
 ---
 # <a name="troubleshoot-microsoft-defender-for-endpoint-live-response-issues"></a>Solución de problemas de Microsoft Defender para punto de conexión respuesta activa
 
@@ -64,9 +64,8 @@ Si al intentar realizar una acción durante una sesión de respuesta activa, enc
 
 La respuesta en vivo aprovecha el registro del sensor de Defender para punto de conexión con el servicio WNS en Windows. Si tiene problemas de conectividad con la respuesta en vivo, confirme los detalles siguientes:
 
-1. `notify.windows.com` no está bloqueado en su entorno. Para obtener más información, consulte [Configuración del proxy de dispositivo y la conectividad a Internet](configure-proxy-internet.md#enable-access-to-microsoft-defender-for-endpoint-service-urls-in-the-proxy-server).
-2. WpnService (Servicio del sistema de notificaciones push de Windows) no está deshabilitado.
-3. La conectividad de WpnService con la nube de WNS no está deshabilitada a través de la directiva de grupo o la configuración de MDM. ["Desactivar el uso de la red de notificaciones"](/windows/client-management/mdm/policy-csp-notifications) no debe establecerse en "1".
+1. WpnService (Servicio del sistema de notificaciones push de Windows) no está deshabilitado.
+2. La conectividad de WpnService con la nube de WNS no está deshabilitada a través de la directiva de grupo o la configuración de MDM. ["Desactivar el uso de la red de notificaciones"](/windows/client-management/mdm/policy-csp-notifications) no debe establecerse en "1".
 
 Consulte los artículos siguientes para comprender completamente el comportamiento y los requisitos del servicio WpnService:
 

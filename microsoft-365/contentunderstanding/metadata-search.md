@@ -6,19 +6,19 @@ manager: pamgreen
 ms.reviewer: kkameth
 audience: admin
 ms.topic: article
-ms.prod: microsoft-365-enterprise
+ms.service: microsoft-365-enterprise
 search.appverid: ''
 ms.collection:
 - enabler-strategic
 - m365initiative-syntex
 ms.localizationpriority: high
 description: Obtenga información sobre cómo usar la búsqueda avanzada de metadatos y la búsqueda de columnas de sitio personalizadas para buscar elementos en bibliotecas de documentos de SharePoint con SharePoint Syntex.
-ms.openlocfilehash: 50b9ef7ff6fe7942266ec59f8d5ad81e0dfbecd4
-ms.sourcegitcommit: 872ab0b6a225c20274916e07ed4cc4944be9509a
-ms.translationtype: HT
+ms.openlocfilehash: db13be1ce22becc10d04bf7e18becc9208784844
+ms.sourcegitcommit: 62368e5a48e569c8e475b07d194d7d8ff7d167ab
+ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/25/2022
-ms.locfileid: "65679579"
+ms.lasthandoff: 09/02/2022
+ms.locfileid: "67560183"
 ---
 # <a name="search-for-metadata-in-document-libraries-in-microsoft-sharepoint-syntex"></a>Buscar metadatos en bibliotecas de documentos en Microsoft SharePoint Syntex
 

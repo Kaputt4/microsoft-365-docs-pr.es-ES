@@ -6,7 +6,7 @@ author: MikePlumleyMSFT
 manager: pamgreen
 audience: ITPro
 ms.topic: article
-ms.service: o365-solutions
+ms.service: microsoft-365-enterprise
 f1.keywords:
 - NOCSH
 ms.custom:
@@ -17,12 +17,12 @@ ms.collection:
 - SPO_Content
 ms.localizationpriority: medium
 description: Los administradores pueden aprender a administrar servicios de SharePoint y OneDrive en un entorno multigeográfico.
-ms.openlocfilehash: 155eea030cfa700a009805fb66aeb74eaae617d3
-ms.sourcegitcommit: 52eea2b65c0598ba4a1b930c58b42dbe62cdaadc
+ms.openlocfilehash: 640aacdbbcfe265244b25e2d839f7c015562f06a
+ms.sourcegitcommit: 62368e5a48e569c8e475b07d194d7d8ff7d167ab
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/19/2022
-ms.locfileid: "64949087"
+ms.lasthandoff: 09/02/2022
+ms.locfileid: "67556422"
 ---
 # <a name="administering-a-multi-geo-environment"></a>Administración de un entorno de Multi-Geo
 
@@ -30,14 +30,14 @@ A continuación, se muestra cómo funcionan los servicios de Microsoft 365 en un
 
 ## <a name="administrator-experience"></a>Experiencia de administrador
 
-El centro de administración de SharePoint tiene una <a href="https://go.microsoft.com/fwlink/?linkid=2185076" target="_blank">pestaña **Ubicaciones geográficas**</a> en el panel de navegación izquierdo que incluye un mapa de ubicaciones geográficas donde puede ver y administrar las ubicaciones geográficas. Use esta página para agregar o eliminar ubicaciones geográficas para el inquilino.
+El Centro de administración de SharePoint tiene una <a href="https://go.microsoft.com/fwlink/?linkid=2185076" target="_blank">pestaña **Ubicaciones geográficas**</a> en el panel de navegación izquierdo que incluye un mapa de ubicaciones geográficas donde puede ver y administrar las ubicaciones geográficas. Use esta página para agregar o eliminar ubicaciones geográficas para el inquilino.
 
 ## <a name="audit-log-search"></a>Búsqueda de registros de auditoría
 
 En la página de búsqueda de registros de auditoría de Microsoft 365 podrá encontrar un [registro de auditoría](https://support.office.com/article/0d4d0f35-390b-4518-800e-0c7ec95e946c) unificado de todas las ubicaciones satélite. Puede ver todas las entradas de registro de auditoría entre ubicaciones geográficas, por ejemplo, las actividades de los usuarios de NAM y EUR se mostrarán en una vista de la organización y, después, puede aplicar filtros existentes para ver las actividades de un usuario específico.
 
 > [!NOTE]
-> Exchange eventos de auditoría de administrador solo están disponibles para la ubicación predeterminada.
+> Los eventos de auditoría del administrador de Exchange solo están disponibles para la ubicación predeterminada.
 
 ## <a name="bcs-secure-store-apps"></a>BCS, Secure Store, Apps
 
@@ -61,11 +61,11 @@ Puede establecer directivas de DLP e IP para OneDrive para la Empresa, SharePoin
 
 Las directivas DLP se sincronizan automáticamente en función de su aplicabilidad a cada ubicación geográfica.
 
-Implementar directivas de prevención de pérdida de datos Information Protection y Microsoft Purview para todos los usuarios de una ubicación geográfica no es una opción disponible en la interfaz de usuario, sino que debe seleccionar las cuentas aplicables para la directiva o aplicar la directiva globalmente a todas las cuentas.
+La implementación de directivas de Information Protection y Prevención de pérdida de datos de Microsoft Purview para todos los usuarios de una ubicación geográfica no es una opción disponible en la interfaz de usuario; en su lugar, debe seleccionar las cuentas aplicables para la directiva o aplicar la directiva globalmente a todas las cuentas.
 
 ## <a name="microsoft-power-apps"></a>Microsoft Power Apps
 
-Power Apps creada para la ubicación satélite usará el punto final ubicado en la ubicación central del inquilino. Microsoft Power Apps no es un servicio multigeográfica. 
+Power Apps creado para la ubicación satélite usará el punto final ubicado en la ubicación central del inquilino. Microsoft Power Apps no es un servicio multigeográfica. 
 
 ## <a name="power-automate"></a>Power Automate
 
@@ -77,11 +77,11 @@ De forma predeterminada, todas las ubicaciones geográficas de un entorno multig
 
 ## <a name="sharing"></a>Uso compartido
 
-Los administradores pueden configurar y administrar directivas de uso compartido para cada una de sus ubicaciones. Los sitios de OneDrive y SharePoint de cada ubicación geográfica solo respetarán la configuración de uso compartido específica de la ubicación geográfica correspondiente. (Por ejemplo, puede permitir el [uso compartido externo](https://support.office.com/article/C8A462EB-0723-4B0B-8D0A-70FEAFE4BE85) para su ubicación central, pero no para la ubicación satélite o viceversa). Tenga en cuenta que la configuración de uso compartido no permite configurar limitaciones de uso compartido entre ubicaciones geográficas.
+Los administradores pueden configurar y administrar directivas de uso compartido para cada una de sus ubicaciones. Los sitios de OneDrive y SharePoint en cada ubicación geográfica solo respetarán la configuración de uso compartido específica de la ubicación geográfica correspondiente. (Por ejemplo, puede permitir el [uso compartido externo](https://support.office.com/article/C8A462EB-0723-4B0B-8D0A-70FEAFE4BE85) para su ubicación central, pero no para la ubicación satélite o viceversa). Tenga en cuenta que la configuración de uso compartido no permite configurar limitaciones de uso compartido entre ubicaciones geográficas.
 
 ## <a name="stream"></a>Stream
 
-Los vídeos cargados en Stream en un chat 1:1 se almacenan en el OneDrive de la persona que carga. Las grabaciones de reuniones se almacenan en el OneDrive de cada asistente que registra la reunión.
+Los vídeos cargados en Stream en un chat 1:1 se almacenan en OneDrive de la persona que carga. Las grabaciones de reuniones se almacenan en OneDrive de cada asistente que registra la reunión.
 
 ## <a name="taxonomy"></a>Taxonomía
 
@@ -99,4 +99,4 @@ Vea [Trabajar con perfiles de usuario en un espacio empresarial multigeográfico
 
 ## <a name="yammer"></a>Yammer
 
-Yammer no es una carga de trabajo multigeográfica. Yammer subprocesos almacenados en Yammer se colocarán en la ubicación central del inquilino. Yammer está implementando un cambio de almacenamiento de archivos que almacenará Yammer archivos en SharePoint. Yammer archivos almacenados en SharePoint se colocará el sitio SharePoint asociado al grupo de Yammer. SharePoint sitios de grupo se basan en la lógica PDL, como se describe en [SharePoint Sitios y grupos](multi-geo-capabilities-in-onedrive-and-sharepoint-online-in-microsoft-365.md#sharepoint-sites-and-groups).
+Yammer no es una carga de trabajo multigeográfica. Los subprocesos de Yammer almacenados en Yammer se colocarán en la ubicación central del inquilino. Yammer está implementando un cambio de almacenamiento de archivos que almacenará los archivos de Yammer en SharePoint. Los archivos de Yammer almacenados en SharePoint se colocarán en el sitio de SharePoint asociado al grupo de Yammer. Los sitios de grupo de SharePoint se basan en la lógica PDL como se describe en [Sitios y grupos de SharePoint](multi-geo-capabilities-in-onedrive-and-sharepoint-online-in-microsoft-365.md#sharepoint-sites-and-groups).

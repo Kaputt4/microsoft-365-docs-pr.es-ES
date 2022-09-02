@@ -1,5 +1,5 @@
 ---
-title: Comenzar impulsar la adopción de Microsoft SharePoint Syntex
+title: Introducción a la adopción de Microsoft SharePoint Syntex
 description: Aprenda a usar e implementar SharePoint Syntex en su organización para ayudarle a simplificar los procesos empresariales.
 ms.author: chucked
 author: chuckedmonson
@@ -7,27 +7,27 @@ manager: pamgreen
 ms.date: ''
 audience: admin
 ms.topic: article
-ms.prod: microsoft-365-enterprise
+ms.service: microsoft-365-enterprise
 ms.collection:
 - enabler-strategic
 - m365initiative-syntex
 ms.custom: Adopt
 search.appverid: ''
 ms.localizationpriority: medium
-ms.openlocfilehash: 9b11c5077551aad666d565b0f3c077b3e43dc78e
-ms.sourcegitcommit: 52eea2b65c0598ba4a1b930c58b42dbe62cdaadc
+ms.openlocfilehash: 55ec030a82beda2f1ddd767c938eba8769eb55b3
+ms.sourcegitcommit: 62368e5a48e569c8e475b07d194d7d8ff7d167ab
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/19/2022
-ms.locfileid: "64937837"
+ms.lasthandoff: 09/02/2022
+ms.locfileid: "67556444"
 ---
-# <a name="get-started-driving-adoption-of-microsoft-sharepoint-syntex"></a>Comenzar impulsar la adopción de Microsoft SharePoint Syntex
+# <a name="get-started-driving-adoption-of-microsoft-sharepoint-syntex"></a>Introducción a la adopción de Microsoft SharePoint Syntex
 
 Considere que los servicios de contenido inteligente disponibles en SharePoint Syntex tienen tres partes:
 
 - **Comprensión del contenido:** Cree modelos de inteligencia artificial sin código para clasificar y extraer información del contenido para aplicar automáticamente metadatos para la detección y reutilización de conocimientos. Obtenga más información sobre la [comprensión del contenido](document-understanding-overview.md).
-- **Procesamiento de contenido:** Automatice la captura, ingesta y categorización del contenido y optimice los procesos centrados en el contenido mediante Power Automate. Obtenga más información sobre el [procesamiento de contenido](form-processing-overview.md).
-- **Cumplimiento de contenido:** Controlar y administrar el contenido para mejorar la seguridad y la gobernanza con la integración en Microsoft Purview Information Protection.
+- **Procesamiento de contenido:** Automatice la captura, la ingesta y la categorización del contenido y optimice los procesos centrados en el contenido mediante Power Automate. Obtenga más información sobre el [procesamiento de contenido](form-processing-overview.md).
+- **Cumplimiento de contenido:** Controlar y administrar el contenido para mejorar la seguridad y la gobernanza con la integración para Microsoft Purview Information Protection.
 
 Con los nuevos servicios y funcionalidades de inteligencia artificial, puede crear aplicaciones de clasificación y comprensión de contenido directamente en el flujo de administración de contenido mediante SharePoint Syntex. Hay dos maneras diferentes de entender el contenido. El tipo de modelo que se usa se basa en el formato de archivo y el caso de uso.
 
@@ -72,7 +72,7 @@ Determine quién en su organización compilará y administrará los modelos. Los
 
 | Administrador de conocimiento/SharePoint | Administrador de Power Platform | Responsable de la información | Propietario del modelo |
 |:-------|:-------|:-------|:-------|
-| rol AAD| rol AAD | rol AAD | Expertos: |
+| Rol de AAD| Rol de AAD | Rol de AAD | Expertos |
 | Configurar el procesamiento de formularios | Configuración del entorno de Dataverse para el procesamiento de formularios | Recopilación de casos de uso | Recopilación de casos de uso empresarial |
 | Administración de centros de contenido y permisos| Compra y asignación de créditos de AIB | Establecimiento de procedimientos recomendados y revisión del análisis de modelos | Creación y aplicación de modelos |
 
@@ -104,7 +104,7 @@ Identifique las partes interesadas del proyecto.
 |Rol |Responsabilidades |Departamento |
 |:-------|:-------|:--------|
 | Patrocinadores ejecutivos   | Comunicar a la empresa valores y visión de alto nivel   |  Liderazgo ejecutivo   |
-| Project clientes potenciales | Supervisar todo el proceso de ejecución e implementación del lanzamiento | Administración de proyectos |
+| Clientes potenciales del proyecto | Supervisar todo el proceso de ejecución e implementación del lanzamiento | Administración de proyectos |
 | Administradores de información| Creación y administración de centros de contenido | TI u otro departamento|
 | Administradores de contenido y propietarios de modelos| Recopilación de casos de uso y creación y aplicación de modelos | Cualquier departamento|
 | Expertos: | Ayudar a promocionar y administrar el tratamiento de objeción | Cualquier departamento (personal) |
@@ -123,7 +123,7 @@ Para prepararse para implementar SharePoint Syntex, debe:
 1. Planear el estado final
     - Los modelos de comprensión de documentos son los medios, no el final.
     - Planee aprovechar el valor de los metadatos extraídos con:
-      - Buscar 
+      - Búsqueda
       - Filtrado y formato de vista
       - Cumplimiento
       - Automatización
