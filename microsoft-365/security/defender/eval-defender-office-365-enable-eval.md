@@ -12,7 +12,7 @@ f1.keywords:
 - NOCSH
 ms.author: tracyp
 author: MSFTTracyP
-ms.date: 07/01/2021
+ms.date: 09/01/2021
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
@@ -23,12 +23,12 @@ ms.collection:
 - zerotrust-solution
 - highpri
 ms.topic: how-to
-ms.openlocfilehash: b41754e6fe8930f2b01c983ff7d30e1d478efcb4
-ms.sourcegitcommit: 10e6abe740e27000e223378eb17d657a47555fa8
+ms.openlocfilehash: a88c98e345e6ac1caa2a31a724c4f62fcf47151c
+ms.sourcegitcommit: e9323a90a1156c10b037abca3e16d7367ef92dd7
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/31/2022
-ms.locfileid: "67478869"
+ms.lasthandoff: 09/02/2022
+ms.locfileid: "67566508"
 ---
 # <a name="enable-the-evaluation-environment"></a>Habilitación del entorno de evaluación
 
@@ -39,97 +39,66 @@ Este artículo es el [paso 2 del 3](eval-defender-office-365-overview.md) en el 
 
 Siga estos pasos para habilitar la evaluación para Microsoft Defender para Office 365.
 
-:::image type="content" source="../../media/defender/m365-defender-office-eval-enable-steps.png" alt-text="Los pasos para habilitar Microsoft Defender para Office 365 en el entorno de evaluación de Microsoft Defender" lightbox="../../media/defender/m365-defender-office-eval-enable-steps.png":::
+:::image type="content" source="../../media/defender/m365-defender-office-eval-enable-steps.png" alt-text="Los pasos para habilitar Microsoft Defender para Office 365 en el entorno de evaluación de Microsoft Defender." lightbox="../../media/defender/m365-defender-office-eval-enable-steps.png":::
 
+- [Paso 1: Auditar y comprobar el registro MX público](#step-1-audit-and-verify-the-public-mx-record)
+- [Paso 2: Auditar dominios aceptados](#step-2-audit-accepted-domains)
+- [Paso 3: Auditoría de conectores de entrada](#step-3-audit-inbound-connectors)
+- [Paso 4: Activar la evaluación](#step-4-activate-the-evaluation)
 
-- [Paso 1: Activación de licencias de prueba](#step-1-activate-trial-licenses)
-- [Paso 2: Auditar y comprobar el registro MX público](#step-2-audit-and-verify-the-public-mx-record)
-- [Paso 3: Auditar dominios aceptados](#step-3-audit-accepted-domains)
-- [Paso 4: Auditoría de conectores de entrada](#step-4-audit-inbound-connectors)
-- [Paso 5: Activar la evaluación](#step-5-activate-the-evaluation)
-
-## <a name="step-1-activate-trial-licenses"></a>Paso 1: Activación de licencias de prueba
-
-Inicie sesión en el entorno de Microsoft Defender para Office 365 existente o en el portal de administración de inquilinos.
-
-1. Vaya al portal de administración.
-2. Seleccione Comprar servicios en el inicio rápido.
-
-   :::image type="content" source="../../media/mdo-eval/1_m365-purchase-services.png" alt-text="La opción Comprar servicios en la que se va a hacer clic en el Centro de administración de Microsoft 365" lightbox="../../media/mdo-eval/1_m365-purchase-services.png":::
-
-3. Desplácese hacia abajo hasta la sección Add-On (o busque "Defender") para buscar los planes de Microsoft Defender para Office 365.
-4. Haga clic en Detalles junto al plan que desea evaluar.
-
-   :::image type="content" source="../../media/mdo-eval/2_mdo-eval-license-details.png" alt-text="Botón Detalles en el que se va a hacer clic" lightbox="../../media/mdo-eval/2_mdo-eval-license-details.png":::
-
-5. Haga clic en el vínculo *Iniciar evaluación gratuita* .
-
-   :::image type="content" source="../../media/mdo-eval/3-m365-purchase-button.png" alt-text="El hipervínculo Iniciar evaluación gratuita" lightbox="../../media/mdo-eval/3-m365-purchase-button.png":::
-
-6. Confirme la solicitud y haga clic en el botón *Probar ahora* .
-
-   :::image type="content" source="../../media/mdo-eval/4_mdo-trial-order.png" alt-text="Botón Probar ahora" lightbox="../../media/mdo-eval/4_mdo-trial-order.png":::
-
-## <a name="step-2-audit-and-verify-the-public-mx-record"></a>Paso 2: Auditar y comprobar el registro MX público
+## <a name="step-1-audit-and-verify-the-public-mx-record"></a>Paso 1: Auditar y comprobar el registro MX público
 
 Para evaluar de forma eficaz Microsoft Defender para Office 365, es importante que el correo electrónico externo entrante se transmita a través de la instancia de Exchange Online Protection (EOP) asociada al inquilino.
 
-1. Inicie sesión en el Portal de Administración M365, expanda Configuración y seleccione Dominios.
-2. Seleccione el dominio de correo electrónico comprobado y haga clic en Administrar DNS.
-3. Anote el registro MX generado y asignado al inquilino de EOP.
-4. Acceda a la zona DNS externa (pública) y compruebe el registro MX principal asociado al dominio de correo electrónico.
-    - *Si el registro MX público coincide actualmente con la dirección EOP asignada (por ejemplo, tenant-com.mail.protection.outlook.com), no se deben requerir más cambios de enrutamiento*.
+1. En el portal de Administración M365 en <https://admin.microsoft.com>, expanda *... Mostrar todo* si es necesario, expanda *Configuración* y, a continuación, seleccione **Dominios**. O bien, para ir directamente a la página *Dominios* , use <https://admin.microsoft.com/Adminportal/Home#/Domains>.
+2. En la página *Dominios* , seleccione el dominio de correo electrónico comprobado haciendo clic en cualquier parte de la entrada que no sea la casilla.
+3. En el control flotante de detalles del dominio que se abre, seleccione la pestaña **Registros DNS** . Anote el registro MX que se genera y asigna al inquilino de EOP.
+4. Acceda a la zona DNS externa (pública) y compruebe el registro MX principal asociado al dominio de correo electrónico:
+    - *Si el registro MX público coincide actualmente con la dirección EOP asignada (por ejemplo, contoso-com.mail.protection.outlook.com), no se deben requerir más cambios de enrutamiento*.
     - Si el registro MX público se resuelve actualmente en una puerta de enlace SMTP local o de terceros, es posible que se requieran configuraciones de enrutamiento adicionales.
     - Si el registro MX público se resuelve actualmente en Exchange local, es posible que todavía esté en un modelo híbrido en el que algún buzón de correo de destinatario aún no se haya migrado a EXO.
 
-## <a name="step-3-audit-accepted-domains"></a>Paso 3: Auditar dominios aceptados
+## <a name="step-2-audit-accepted-domains"></a>Paso 2: Auditar dominios aceptados
 
-1. Inicie sesión en Exchange Online Administración Portal, seleccione Flujo de correo y, a continuación, haga clic en Dominios aceptados.
-2. En la lista de dominios aceptados que se han agregado y comprobado en el inquilino, anote el **tipo de dominio** del dominio de correo electrónico principal.
-    - Si el tipo de dominio está establecido en ***Autoritativo***, se supone que todos los buzones de correo de destinatario de la organización residen actualmente en Exchange Online.
-    - Si el tipo de dominio está establecido en ***Retransmisión interna*** , es posible que todavía esté en un modelo híbrido en el que algunos buzones de correo de destinatario siguen residiendo en el entorno local.
+1. En el Centro de administración de Exchange (EAC) en <https://admin.exchange.microsoft.com>, expanda *Flujo de correo* y, a continuación, haga clic en **Dominios aceptados**. O bien, para ir directamente a la página *Dominios aceptados* , use <https://admin.exchange.microsoft.com/#/accepteddomains>.
+2. En la página *Dominios aceptados* , anote el valor **de Tipo de dominio** del dominio de correo electrónico principal.
+    - Si el tipo de dominio está establecido en **Autoritativo**, se supone que todos los buzones de correo de destinatario de la organización residen actualmente en Exchange Online.
+    - Si el tipo de dominio está establecido en **InternalRelay** , es posible que todavía esté en un modelo híbrido en el que algunos buzones de correo de destinatario siguen residiendo en el entorno local.
 
-## <a name="step-4-audit-inbound-connectors"></a>Paso 4: Auditoría de conectores de entrada
+## <a name="step-3-audit-inbound-connectors"></a>Paso 3: Auditoría de conectores de entrada
 
-1. Inicie sesión en Exchange Online Administración Portal, seleccione Flujo de correo y, a continuación, haga clic en Conectores.
-2. En la lista de conectores configurados, anote las entradas que proceden de **la organización asociada** y pueden correlacionarse con una puerta de enlace SMTP de terceros.
-3. En la lista de conectores configurados, anote las entradas etiquetadas **desde el servidor de correo electrónico de su organización** , lo que puede indicar que todavía está en un escenario híbrido.
+1. En el Centro de administración de Exchange (EAC) en <https://admin.exchange.microsoft.com>, expanda *Flujo de correoy*, a continuación, haga clic en **Conectores**. O bien, para ir directamente a la página *Conectores*, use <https://admin.exchange.microsoft.com/#/connectors>.
+2. En la página *Conectores* , anote los conectores con la siguiente configuración:
+   - El valor **From** es **una organización de asociados** que podría correlacionarse con una puerta de enlace SMTP de terceros.
+   - El valor **De** es **Su organización** que podría indicar que sigue en un escenario híbrido.
 
-## <a name="step-5-activate-the-evaluation"></a>Paso 5: Activar la evaluación
+## <a name="step-4-activate-the-evaluation"></a>Paso 4: Activar la evaluación
 
 Siga estas instrucciones para activar la evaluación de Microsoft Defender para Office 365 desde el portal de Microsoft 365 Defender.
 
-1. Inicie sesión en el inquilino con una cuenta que tenga acceso al portal de Microsoft 365 Defender.
-2. Elija si desea que el **portal de Microsoft 365 Defender** sea la interfaz predeterminada para la administración de Microsoft Defender para Office 365 (recomendado).
+Para obtener información detallada, consulte [Probar Microsoft Defender para Office 365](../office-365-security/try-microsoft-defender-for-office-365.md).
 
-   :::image type="content" source="../../media/mdo-eval/1_mdo-eval-activate-eval.png" alt-text="El botón Activar en configuración para dar lugar a un portal de Microsoft 365 Defender centralizado y mejorado para la administración" lightbox="../../media/mdo-eval/1_mdo-eval-activate-eval.png":::
+1. En el portal de Microsoft 365 Defender en <https://security.microsoft.com> expandir *Email & colaboración*\>, seleccione **Directivas & reglas**\>, seleccione **Directivas** \> de amenazas desplácese hacia abajo hasta la sección *Otros* y, a continuación, seleccione **Modo de evaluación**. O bien, para ir directamente a la página *Modo de evaluación* , use <https://security.microsoft.com/atpEvaluation>.
 
-3. En el menú de navegación, seleccione **Directivas & reglas** en *Colaboración Email &*.
+2. En la página *Modo de evaluación* , haga clic en **Iniciar evaluación**.
 
-   :::image type="content" source="../../media/mdo-eval/2_mdo-eval-activate-eval.png" alt-text="El elemento de menú Directivas & reglas en el que se va a hacer clic" lightbox="../../media/mdo-eval/2_mdo-eval-activate-eval.png":::
+   :::image type="content" source="../../media/mdo-eval/mdo-eval-activate-eval_05.png" alt-text="La página Modo de evaluación y el botón Iniciar evaluación para hacer clic." lightbox="../../media/mdo-eval/mdo-eval-activate-eval_05.png":::
 
-4. En el panel *Reglas de &* de directivas, haga clic en **Directivas de amenazas**.
+3. En el cuadro de diálogo *Activar protección* , seleccione **No, Solo quiero informes** y, a continuación, haga clic en **Continuar**.
 
-   :::image type="content" source="../../media/mdo-eval/3_mdo-eval-activate-eval.png" alt-text="Elemento de menú Directivas de amenazas en el que se va a hacer clic" lightbox="../../media/mdo-eval/3_mdo-eval-activate-eval.png":::
+   :::image type="content" source="../../media/mdo-eval/mdo-eval-activate-eval_06.png" alt-text="El cuadro de diálogo Activar protección y la opción No, solo quiero que se seleccionen informes." lightbox="../../media/mdo-eval/mdo-eval-activate-eval_06.png":::
 
-5. Desplácese hacia abajo hasta *Directivas adicionales* y seleccione el icono **Evaluar Defender para Office 365**.
+4. En el cuadro de diálogo *Seleccionar los usuarios que desea incluir* , seleccione **Todos los usuarios** y, a continuación, haga clic en **Continuar**.
 
-   :::image type="content" source="../../media/mdo-eval/4_mdo-eval-activate-eval.png" alt-text="Icono de Eval Defender para Office 365" lightbox="../../media/mdo-eval/4_mdo-eval-activate-eval.png":::
+   :::image type="content" source="../../media/mdo-eval/mdo-eval-activate-eval_07.png" alt-text="El cuadro de diálogo Seleccionar los usuarios que desea incluir y la opción Todos los usuarios que desea seleccionar." lightbox="../../media/mdo-eval/mdo-eval-activate-eval_07.png":::
 
-6. Ahora elija si el correo electrónico externo se enruta a Exchange Online directamente o a una puerta de enlace o servicio de terceros y haga clic en Siguiente.
+5. En el cuadro de diálogo *Help us understand your mail flow (Ayudarnos a comprender el flujo de correo* ), se selecciona automáticamente una de las siguientes opciones en función de la detección del registro MX para su dominio:
 
-   :::image type="content" source="../../media/mdo-eval/5_mdo-eval-activate-eval.png" alt-text="Panel Configuración de enrutamiento en el portal de Microsoft Defender para Office 365" lightbox="../../media/mdo-eval/5_mdo-eval-activate-eval.png":::
+   - **Solo estoy usando Microsoft Exchange Online**: los registros MX de su dominio apuntan a Microsoft 365. No queda nada que configurar, por lo que haga clic en **Finalizar**.
 
-7. Si usa una puerta de enlace de terceros, seleccione el nombre del proveedor en la lista desplegable junto con el conector de entrada asociado a esa solución. Cuando haya enumerado las respuestas, haga clic en Siguiente.
+     :::image type="content" source="../../media/mdo-eval/mdo-eval-activate-eval_08a.png" alt-text="El cuadro de diálogo Help us understand your mail flow (Ayudarnos a comprender el flujo de correo) con la opción Solo estoy usando Microsoft Exchange Online seleccionada." lightbox="../../media/mdo-eval/mdo-eval-activate-eval_08a.png":::
 
-   :::image type="content" source="../../media/mdo-eval/6-mdo-eval-activate-eval-settings.png" alt-text="Panel Configuración local o de terceros en el portal de Microsoft Defender para Office 365" lightbox="../../media/mdo-eval/6-mdo-eval-activate-eval-settings.png":::
-
-8. Revise la configuración y haga clic en el botón **Crear evaluación** .
-
-   |Antes|Después|
-   |:---:|:---:|
-   |:::image type="content" source="../../media/mdo-eval/7-mdo-eval-activate-review.png" alt-text="El panel Revisar la configuración del portal de Microsoft Defender para Office 365" lightbox="../../media/mdo-eval/7-mdo-eval-activate-review.png":::|:::image type="content" source="../../media/mdo-eval/8-mdo-eval-activate-complete.png" alt-text="La notificación de finalización de la instalación de evaluación en el portal de Microsoft Defender para Office 365" lightbox="../../media/mdo-eval/8-mdo-eval-activate-complete.png":::|
-   |
+   - **Estoy usando un proveedor de servicios local o de terceros**: en las próximas pantallas, seleccione el nombre del proveedor junto con el conector de entrada que acepta correo de esa solución. También decide si necesita una regla de flujo de correo Exchange Online (también conocida como regla de transporte) que omita el filtrado de correo no deseado para los mensajes entrantes desde el dispositivo o servicio de protección de terceros. Cuando haya terminado, haga clic en **Finalizar**.
 
 ## <a name="next-steps"></a>Pasos siguientes
 

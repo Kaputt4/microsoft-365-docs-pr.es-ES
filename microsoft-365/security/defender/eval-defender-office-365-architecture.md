@@ -23,15 +23,14 @@ ms.collection:
 - zerotrust-solution
 - highpri
 ms.topic: conceptual
-ms.openlocfilehash: c4bf7a3c2449bd330bebcb6e4fa33dd2c2fb4584
-ms.sourcegitcommit: 10e6abe740e27000e223378eb17d657a47555fa8
+ms.openlocfilehash: e23324a7d779e2dd59beda8270099f3514d57746
+ms.sourcegitcommit: e9323a90a1156c10b037abca3e16d7367ef92dd7
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/31/2022
-ms.locfileid: "67480523"
+ms.lasthandoff: 09/02/2022
+ms.locfileid: "67567277"
 ---
 # <a name="review-microsoft-defender-for-office-365-architecture-requirements-and-key-concepts"></a>Revisión de los requisitos de arquitectura de Microsoft Defender para Office 365 y los conceptos clave
-
 
 **Se aplica a:**
 - Microsoft 365 Defender
@@ -44,19 +43,19 @@ Antes de habilitar Defender para Office 365, asegúrese de comprender la arquite
 
 En el diagrama siguiente se muestra la arquitectura de línea base para Microsoft Defender para Office, que puede incluir una puerta de enlace SMTP de terceros o una integración local. Los escenarios de coexistencia híbrida (es decir, los buzones de producción son locales y en línea) requieren configuraciones más complejas y no se tratan en este artículo ni en las instrucciones de evaluación.
 
-:::image type="content" source="../../media/defender/m365-defender-office-architecture.png" alt-text="Arquitectura de la Microsoft Defender para Office 365" lightbox="../../media/defender/m365-defender-office-architecture.png":::
+:::image type="content" source="../../media/defender/m365-defender-office-architecture.png" alt-text="Arquitectura de la Microsoft Defender para Office 365." lightbox="../../media/defender/m365-defender-office-architecture.png":::
 
 En la tabla siguiente se describe esta ilustración.
 
-|Llamada  |Descripción  |
-|---------|---------|
-|1     | El servidor host para el remitente externo normalmente realiza una búsqueda dns pública para un registro MX, que proporciona el servidor de destino para retransmitir el mensaje.  Esta referencia puede ser Exchange Online (EXO) directamente o una puerta de enlace SMTP que se ha configurado para retransmitir en EXO.  |
-|2     | Exchange Online Protection negocia y valida la conexión entrante e inspecciona los encabezados y el contenido del mensaje para determinar qué directivas, etiquetado o procesamiento adicionales son necesarios.  |
-|3     | Exchange Online se integra con Microsoft Defender para Office 365 para ofrecer protección contra amenazas, mitigación y corrección más avanzadas. |
-|4     | Un mensaje que no es malintencionado, bloqueado o en cuarentena se procesa y entrega al destinatario en EXO donde se evalúan y desencadenan las preferencias de usuario relacionadas con el correo no deseado, las reglas de buzón de correo u otra configuración. |
-|5     | La integración con Active Directory local se puede habilitar mediante Azure AD Connect para sincronizar y aprovisionar cuentas y objetos habilitados para correo en Azure Active Directory y, en última instancia, Exchange Online. |
-|6     | Al integrar un entorno local, se recomienda usar un servidor exchange para la administración y administración admitidas de atributos, configuraciones y atributos relacionados con el correo. |
-|7      | Microsoft Defender para Office 365 comparte señales a Microsoft 365 Defender para la detección y respuesta extendidas (XDR).|
+|Llamada|Descripción|
+|---|---|
+|1|El servidor host para el remitente externo normalmente realiza una búsqueda dns pública para un registro MX, que proporciona el servidor de destino para retransmitir el mensaje. Esta referencia puede ser Exchange Online (EXO) directamente o una puerta de enlace SMTP que se ha configurado para retransmitir en EXO.|
+|2|Exchange Online Protection negocia y valida la conexión entrante e inspecciona los encabezados y el contenido del mensaje para determinar qué directivas, etiquetado o procesamiento adicionales son necesarios.|
+|3|Exchange Online se integra con Microsoft Defender para Office 365 para ofrecer protección contra amenazas, mitigación y corrección más avanzadas.|
+|4|Un mensaje que no es malintencionado, bloqueado o en cuarentena se procesa y entrega al destinatario en EXO donde se evalúan y desencadenan las preferencias de usuario relacionadas con el correo no deseado, las reglas de buzón de correo u otra configuración.|
+|5|La integración con Active Directory local se puede habilitar mediante Azure AD Connect para sincronizar y aprovisionar cuentas y objetos habilitados para correo en Azure Active Directory y, en última instancia, Exchange Online.|
+|6|Al integrar un entorno local, se recomienda usar un servidor exchange para la administración y administración admitidas de atributos, configuraciones y atributos relacionados con el correo.|
+|7 |Microsoft Defender para Office 365 comparte señales a Microsoft 365 Defender para la detección y respuesta extendidas (XDR).|
 
 La integración local es común pero opcional. Si el entorno es solo en la nube, esta guía también le funcionará.
 
@@ -64,23 +63,23 @@ La integración local es común pero opcional. Si el entorno es solo en la nube,
 
 En la tabla siguiente se identificaron conceptos clave que son importantes comprender al evaluar, configurar e implementar MDO.
 
-
-|Concepto  |Descripción |Más información  |
-|---------|---------|---------|
-|Exchange Online Protection      |    Exchange Online Protection (EOP) es el servicio de filtrado basado en la nube que ayuda a proteger su organización contra correo electrónico no deseado y malware. EOP se incluye en todas las licencias de Microsoft 365 que incluyen Exchange Online.     |   [Información general de Exchange Online Protection](../office-365-security/exchange-online-protection-overview.md)      |
-|Protección antimalware     |    Las organizaciones con buzones de correo en EXO se protegen automáticamente contra malware.     |  [Protección contra malware en EOP](../office-365-security/anti-malware-protection.md)       |
-|Protección contra correo no deseado     |   Las organizaciones con buzones de correo en EXO se protegen automáticamente contra las directivas de correo no deseado y correo no deseado.      |  [Protección contra correo no deseado en EOP](../office-365-security/anti-spam-protection.md)       |
-|Protección contra phishing |  MDO ofrece protección anti-phishing más avanzada relacionada con la suplantación de identidad (phishing), la caza de ballenas, el ransomware y otras actividades malintencionadas.   | [Protección contra suplantación de identidad adicional en Microsoft Defender para Office 365](../office-365-security/anti-phishing-protection.md)   |
-|Protección contra la suplantación de identidad     |   EOP incluye características para ayudar a proteger su organización frente a remitentes falsificados (falsificados).      |   [Protección contra la suplantación de identidad en EOP](../office-365-security/anti-spoofing-protection.md)      |
-|Datos adjuntos seguros     |   Datos adjuntos seguros proporciona una capa adicional de protección mediante el uso de un entorno virtual para comprobar y "detonar" los datos adjuntos en los mensajes de correo electrónico antes de que se entreguen.      |   [Datos adjuntos seguros en Microsoft Defender para Office 365](../office-365-security/safe-attachments.md)      |
-|Datos adjuntos seguros para SharePoint, OneDrive y Microsoft Teams     |    Además, Los datos adjuntos seguros para SharePoint, OneDrive y Microsoft Teams ofrecen una capa adicional de protección para los archivos que se han cargado en repositorios de almacenamiento en la nube.     |  [Datos adjuntos seguros para SharePoint, OneDrive y Microsoft Teams](../office-365-security/mdo-for-spo-odb-and-teams.md)       |
-|Vínculos seguros     | Vínculos seguros es una característica que proporciona examen y reescritura de direcciones URL dentro de los mensajes de correo electrónico entrantes y ofrece la verificación de esos vínculos antes de que se entreguen o se haga clic en ellos.        |   [Vínculos seguros en Microsoft Defender para Office 365](../office-365-security/safe-links.md)      |
-|    |         |         |
+|Concepto|Descripción|Más información|
+|---|---|---|
+|Exchange Online Protection|Exchange Online Protection (EOP) es el servicio de filtrado basado en la nube que ayuda a proteger su organización contra correo electrónico no deseado y malware. EOP se incluye en todas las licencias de Microsoft 365 que incluyen Exchange Online.|[Información general de Exchange Online Protection](../office-365-security/exchange-online-protection-overview.md)|
+|Protección antimalware|Las organizaciones con buzones de correo en EXO se protegen automáticamente contra malware.|[Protección contra malware en EOP](../office-365-security/anti-malware-protection.md)|
+|Protección contra correo no deseado|Las organizaciones con buzones de correo en EXO se protegen automáticamente contra las directivas de correo no deseado y correo no deseado.|[Protección contra correo no deseado en EOP](../office-365-security/anti-spam-protection.md)|
+|Protección contra phishing|MDO ofrece protección anti-phishing más avanzada relacionada con la suplantación de identidad (phishing), la caza de ballenas, el ransomware y otras actividades malintencionadas.|[Protección contra suplantación de identidad adicional en Microsoft Defender para Office 365](../office-365-security/anti-phishing-protection.md)|
+|Protección contra la suplantación de identidad|EOP incluye características para ayudar a proteger su organización frente a remitentes falsificados (falsificados).|[Protección contra la suplantación de identidad en EOP](../office-365-security/anti-spoofing-protection.md)|
+|Datos adjuntos seguros|Datos adjuntos seguros proporciona una capa adicional de protección mediante el uso de un entorno virtual para comprobar y "detonar" los datos adjuntos en los mensajes de correo electrónico antes de que se entreguen.|[Datos adjuntos seguros en Microsoft Defender para Office 365](../office-365-security/safe-attachments.md)|
+|Datos adjuntos seguros para SharePoint, OneDrive y Microsoft Teams|Además, Los datos adjuntos seguros para SharePoint, OneDrive y Microsoft Teams ofrecen una capa adicional de protección para los archivos que se han cargado en repositorios de almacenamiento en la nube.|[Datos adjuntos seguros para SharePoint, OneDrive y Microsoft Teams](../office-365-security/mdo-for-spo-odb-and-teams.md)|
+|Vínculos seguros|Vínculos seguros es una característica que proporciona examen y reescritura de direcciones URL dentro de los mensajes de correo electrónico entrantes y ofrece la verificación de esos vínculos antes de que se entreguen o se haga clic en ellos.|[Vínculos seguros en Microsoft Defender para Office 365](../office-365-security/safe-links.md)|
 
 Para obtener información más detallada sobre las funcionalidades incluidas con Microsoft Defender para Office, consulte [Microsoft Defender para Office 365 descripción del servicio](/office365/servicedescriptions/office-365-advanced-threat-protection-service-description).
 
 ## <a name="review-architecture-requirements"></a>Revisión de los requisitos de arquitectura
+
 Una evaluación de MDO correcta o un piloto de producción asume los siguientes requisitos previos:
+
 - Todos los buzones de correo de destinatario están actualmente en Exchange Online.
 - El registro MX público se resuelve directamente en EOP o en una puerta de enlace SMTP de terceros que, a continuación, retransmite el correo electrónico externo entrante directamente a EOP.
 - El dominio de correo electrónico principal está configurado como *autoritativo* en Exchange Online.
@@ -101,4 +100,4 @@ Paso 2 de 3: [Habilitar el entorno de evaluación Microsoft Defender para Office
 
 Vuelva a la introducción para [Evaluar Microsoft Defender para Office 365](eval-defender-office-365-overview.md)
 
-Vuelva a la información general sobre [la evaluación y la Microsoft 365 Defender piloto](eval-overview.md) 
+Vuelva a la información general sobre [la evaluación y la Microsoft 365 Defender piloto](eval-overview.md)

@@ -7,23 +7,23 @@ ms.author: kvice
 manager: scotv
 audience: ITPro
 ms.topic: article
-ms.service: o365-solutions
+ms.service: microsoft-365-enterprise
 ms.localizationpriority: medium
 ms.collection:
 - Strat_O365_Enterprise
 - M365-subscription-management
 ms.custom: ''
 description: Cómo una organización global ficticia pero representativa adoptó Microsoft 365 para empresas.
-ms.openlocfilehash: 9c623c181e6583d03f9e6d175a169caf77831e39
-ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
+ms.openlocfilehash: 7a8b6ef18ef7d78705447063534671c80c7a6c25
+ms.sourcegitcommit: e9323a90a1156c10b037abca3e16d7367ef92dd7
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "65094468"
+ms.lasthandoff: 09/02/2022
+ms.locfileid: "67570103"
 ---
 # <a name="microsoft-365-for-enterprise-for-the-contoso-corporation"></a>Microsoft 365 para empresas para Contoso Corporation
 
-Microsoft 365 para empresas es la oferta en la nube premier de Microsoft que combina servicios y aplicaciones de productividad locales y basadas en la nube con características de seguridad avanzada y Windows 10 Enterprise. Es una solución completa e inteligente que permite a todos trabajar juntos de forma creativa y segura.
+Microsoft 365 para empresas es la oferta en la nube premier de Microsoft que combina aplicaciones y servicios de productividad locales y basados en la nube con Windows 10 Enterprise y características de seguridad avanzadas. Es una solución completa e inteligente que permite a todos trabajar juntos de forma creativa y segura.
 
 Contoso Corporation es un conglomerado de fabricación global ficticio pero representativo con su sede central en París. La empresa implementó Microsoft 365 para empresas y abordó las principales decisiones de diseño y detalles de implementación para redes, identidad, Windows 10 Enterprise, Aplicaciones Microsoft 365 para empresas, administración de dispositivos móviles, protección de la información y seguridad.
 
@@ -53,7 +53,7 @@ Vea los siguientes artículos para obtener más información:
 
 - [Aplicaciones de Microsoft 365 para empresas](contoso-o365pp.md)
 
-  La infraestructura de Contoso para Aplicaciones Microsoft 365 para empresas implementa e instala automáticamente actualizaciones para el conjunto de Microsoft Office de software de productividad.
+  La infraestructura de Contoso para Aplicaciones Microsoft 365 para empresas implementa e instala automáticamente actualizaciones para el conjunto de software de productividad de Microsoft Office.
 
 - [Administración de dispositivos móviles](contoso-mdm.md)
 
@@ -65,7 +65,7 @@ Vea los siguientes artículos para obtener más información:
 
 - [Resumen de Microsoft 365 para la seguridad empresarial](contoso-security-summary.md)
 
-  Contoso usa todo el espectro de Microsoft 365 para las características de seguridad empresariales para la administración de identidades y acceso, la protección contra amenazas, la protección de la información y la administración de seguridad.
+  Contoso usa todo el espectro de Microsoft 365 para las características de seguridad empresarial para la administración de identidades y acceso, la protección contra amenazas, la protección de la información y la administración de seguridad.
 
 Consulte estos escenarios y configuraciones de TI adicionales:
 
@@ -83,7 +83,7 @@ Consulte estos escenarios y configuraciones de TI adicionales:
 
 - [Directiva de lenguaje ofensivo de cumplimiento de comunicaciones](../compliance/communication-compliance-case-study.md)
 
-  Obtenga información sobre cómo Contoso configuró rápidamente una directiva de lenguaje ofensivo para las comunicaciones Microsoft Teams, Exchange y Yammer.
+  Obtenga información sobre cómo Contoso configuró rápidamente una directiva de lenguaje ofensivo para las comunicaciones de Microsoft Teams, Exchange y Yammer.
 
 ## <a name="next-step"></a>Paso siguiente
 
