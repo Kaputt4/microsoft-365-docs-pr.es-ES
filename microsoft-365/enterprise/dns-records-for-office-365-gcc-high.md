@@ -6,7 +6,7 @@ manager: dzazzo
 ms.date: 05/19/2020
 audience: ITPro
 ms.topic: conceptual
-ms.service: o365-administration
+ms.service: microsoft-365-enterprise
 ms.localizationpriority: medium
 ms.collection:
 - M365-subscription-management
@@ -18,40 +18,40 @@ search.appverid:
 - OGD150
 - MOE150
 ms.assetid: ''
-description: 'Resumen: registros DNS para Office 365 GCC High'
+description: 'Resumen: Registros DNS para Office 365 GCC High'
 hideEdit: true
-ms.openlocfilehash: 80c1a5d4473af0877e67b6bc9e14a9ffd890e3ba
-ms.sourcegitcommit: 355ab75eb7b604c6afbe9a5a1b97ef16a1dec4fc
+ms.openlocfilehash: 6a7970fd795408099aea9018d66422845db2f1ad
+ms.sourcegitcommit: e9323a90a1156c10b037abca3e16d7367ef92dd7
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/14/2022
-ms.locfileid: "62806821"
+ms.lasthandoff: 09/02/2022
+ms.locfileid: "67570067"
 ---
 # <a name="dns-records-for-office-365-gcc-high"></a>Registros DNS para Office 365 GCC High
 
 *Este artículo se aplica a Office 365 GCC High y Microsoft 365 GCC High*
 
-Como parte de la incorporación a Office 365 GCC High, deberá agregar los dominios SMTP y SIP al inquilino de Servicios en línea.  Para ello, usará el cmdlet New-MsolDomain en Azure AD PowerShell o usará [Azure Government Portal](https://portal.azure.us) para iniciar el proceso de agregar el dominio y probar la propiedad.
+Como parte de la incorporación a Office 365 GCC High, deberá agregar los dominios SMTP y SIP al inquilino de Online Services.  Para ello, usará el cmdlet New-MsolDomain en PowerShell de Azure AD o el [Portal de Azure Government](https://portal.azure.us) para iniciar el proceso de agregar el dominio y probar la propiedad.
 
-Una vez que haya agregado los dominios al inquilino y validado, use las siguientes instrucciones para agregar los registros DNS adecuados para los servicios siguientes.  Es posible que deba modificar la tabla siguiente para que se ajuste a las necesidades de su organización con respecto a los registros MX entrantes y los registros de detección automática de Exchange existentes que tenga en su lugar.  Recomendamos encarecidamente coordinar estos registros DNS con el equipo de mensajería para evitar interrupciones o entregas erróneas de correo electrónico.
+Una vez que haya agregado los dominios al inquilino y validado, use las instrucciones siguientes para agregar los registros DNS adecuados para los servicios siguientes.  Es posible que tenga que modificar la tabla siguiente para satisfacer las necesidades de su organización con respecto a los registros MX entrantes y a los registros de detección automática de Exchange existentes que tenga en vigor.  Se recomienda coordinar estos registros DNS con el equipo de mensajería para evitar interrupciones o entregas incorrectas de correo electrónico.
 
 ## <a name="exchange-online"></a>Exchange Online
 
 | Tipo | Prioridad | Nombre de host | Apuntar a dirección o valor | TTL |
 | --- | --- | --- | --- | --- |
-| MX | 0 | @ | *tenant.mail.protection.office365.us* (vea más adelante para obtener más información) | Una hora |
+| MX | 0 | @ | *tenant.mail.protection.office365.us* (consulte a continuación para obtener más información) | Una hora |
 | TXT | - | @ | v=spf1 include:spf.protection.office365.us -all | Una hora |
 | CNAME | - | autodiscover | autodiscover.office365.us | Una hora |
 
-### <a name="exchange-autodiscover-record"></a>Exchange de detección automática
+### <a name="exchange-autodiscover-record"></a>Registro de detección automática de Exchange
 
-Si ha Exchange Server local, se recomienda dejar el registro existente en su lugar mientras migra a Exchange Online y actualizar ese registro una vez que haya completado la migración. 
+Si tiene Exchange Server local, se recomienda dejar el registro existente en su lugar mientras se migra a Exchange Online y actualizar ese registro una vez que haya completado la migración. 
 
-### <a name="exchange-online-mx-record"></a>Exchange Online MX Record
+### <a name="exchange-online-mx-record"></a>registro MX de Exchange Online
 
-El valor de registro MX para los dominios aceptados sigue un formato estándar como se mencionó anteriormente: *tenant.mail.protection.office365.us*, reemplazando  el espacio empresarial por la primera parte del nombre de inquilino predeterminado.
+El valor de registro MX de los dominios aceptados sigue un formato estándar como se indicó anteriormente: *tenant.mail.protection.office365.us*, reemplazando el *inquilino* por la primera parte del nombre de inquilino predeterminado.
 
-Por ejemplo, si el nombre del espacio empresarial contoso.onmicrosoft.us, usaría **contoso.mail.protection.office365.us como el** valor del registro MX.
+Por ejemplo, si el nombre del inquilino está contoso.onmicrosoft.us, usaría **contoso.mail.protection.office365.us** como valor para el registro MX.
 
 ## <a name="skype-for-business-online"></a>Skype Empresarial Online
 
@@ -72,4 +72,4 @@ Por ejemplo, si el nombre del espacio empresarial contoso.onmicrosoft.us, usarí
 ## <a name="other-dns-records"></a>Otros registros DNS
 
 > [!IMPORTANT]
-> Si tiene un registro *CNAME msoid* existente en la zona DNS, debe **quitar el registro** de DNS en este momento.  El registro msoid es incompatible con Microsoft 365 Enterprise Apps (anteriormente Office 365 ProPlus *)* y evitará que la activación se haga correctamente.
+> Si tiene un registro *CNAME msoid* existente en la zona DNS, debe **quitar** el registro de DNS en este momento.  El registro msoid no es compatible con Microsoft 365 Enterprise Apps *(anteriormente Office 365 ProPlus)* y evitará que la activación se realice correctamente.

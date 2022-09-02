@@ -406,7 +406,7 @@
           items:
             - name: Cómo configurar directivas y permisos de cuarentena
               href: step-by-step-guides/how-to-configure-quarantine-permissions-with-quarantine-policies.md
-            - name: Asegurarse de que siempre tiene los controles de seguridad óptimos con directivas de seguridad preestablecidas
+            - name: Configure los pasos para las directivas de seguridad preestablecidas estándar o estricta en Microsoft Defender para Office 365
               href: step-by-step-guides/ensuring-you-always-have-the-optimal-security-controls-with-preset-security-policies.md
             - name: "Conectar Microsoft\_Defender para Office\_365 a Microsoft\_Sentinel"
               href: step-by-step-guides/connect-microsoft-defender-for-office-365-to-microsoft-sentinel.md

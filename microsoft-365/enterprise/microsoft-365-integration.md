@@ -1,11 +1,11 @@
 ---
-title: Microsoft 365 integración con entornos locales
+title: Integración de Microsoft 365 con entornos locales
 ms.author: kvice
 author: kelleyvice-msft
 manager: scotv
 audience: Admin
 ms.topic: article
-ms.service: o365-administration
+ms.service: microsoft-365-enterprise
 ms.localizationpriority: medium
 f1.keywords:
 - CSH
@@ -22,25 +22,25 @@ search.appverid:
 - MED150
 ms.assetid: 263faf8d-aa21-428b-aed3-2021837a4b65
 description: En este artículo, aprenderá a integrar Microsoft 365 con los servicios de directorio y los entornos locales existentes.
-ms.openlocfilehash: a3ba75fd2f2b69e71d5b14b14e17827ed96e4dd4
-ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
+ms.openlocfilehash: 69d21a5da22db7ae51ab28df548f832b58ca95f6
+ms.sourcegitcommit: e9323a90a1156c10b037abca3e16d7367ef92dd7
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "65093907"
+ms.lasthandoff: 09/02/2022
+ms.locfileid: "67570169"
 ---
-# <a name="microsoft-365-integration-with-on-premises-environments"></a>Microsoft 365 integración con entornos locales
+# <a name="microsoft-365-integration-with-on-premises-environments"></a>Integración de Microsoft 365 con entornos locales
 
-*Este artículo se aplica tanto a Microsoft 365 Enterprise como a Office 365 Enterprise.*
+*Este artículo afecta tanto a Office 365 Enterprise como a Microsoft 365 Enterprise*
 
-Puede integrar Microsoft 365 con los servicios de dominio de Active Directory local (AD DS) existentes y con instalaciones locales de Exchange Server, Skype Empresarial Server 2015 o SharePoint Server.
+Puede integrar Microsoft 365 con su Active Directory local Domain Services (AD DS) existente y con instalaciones locales de Exchange Server, Skype Empresarial Server 2015 o SharePoint Server.
   
  - Al integrar AD DS, puede sincronizar y administrar cuentas de usuario para ambos entornos. También puede agregar sincronización de hash de contraseña (PHS) o inicio de sesión único (SSO) para que los usuarios puedan iniciar sesión en ambos entornos con sus credenciales locales.
  - Cuando se integra con productos de servidor locales, se crea un entorno híbrido. Un entorno híbrido puede ayudarle a migrar usuarios o información a Microsoft 365, o puede seguir teniendo algunos usuarios o información local y otros en la nube. Para obtener más información sobre los entornos híbridos, consulte [Nube híbrida](../solutions/cloud-architecture-models.md#hybrid).
 
 También puede usar los asesores de Azure Active Directory (Azure AD) para obtener instrucciones de configuración personalizadas en el Centro de administración de Microsoft 365 (debe iniciar sesión en Microsoft 365):
 
-- [guía de configuración de Azure AD](https://aka.ms/aadpguidance)
+- [Guía de configuración de Azure AD](https://aka.ms/aadpguidance)
 - [Sincronización de usuarios desde el directorio de la organización](https://aka.ms/aadconnectpwsync)
 - [Asesor de implementación de Servicios de federación de Active Directory (AD FS) (AD FS)](https://aka.ms/adfsguidance)
    
@@ -48,7 +48,7 @@ También puede usar los asesores de Azure Active Directory (Azure AD) para obten
 
 Antes de integrar Microsoft 365 y un entorno local, también debe realizar el [planeamiento de la red y el ajuste del rendimiento](network-planning-and-performance.md). También querrá comprender los [modelos de identidad](deploy-identity-solution-identity-model.md) disponibles. 
 
-Consulte [Administrar cuentas de Microsoft 365](manage-microsoft-365-accounts.md) para obtener una lista de herramientas que puede usar para administrar cuentas de usuario Microsoft 365. 
+Consulte [Administrar cuentas de Microsoft 365](manage-microsoft-365-accounts.md) para obtener una lista de herramientas que puede usar para administrar cuentas de usuario de Microsoft 365. 
   
 ## <a name="integrate-microsoft-365-with-ad-ds"></a>Integración de Microsoft 365 con AD DS
 
@@ -64,21 +64,21 @@ Si desea que los usuarios puedan iniciar sesión en Microsoft 365 con sus creden
 
 Un usuario inicia sesión en su entorno local con su cuenta de usuario (dominio\nombre de usuario). Cuando van a Microsoft 365, deben iniciar sesión de nuevo con su cuenta profesional o educativa (user@domain.com). El nombre de usuario es el mismo en ambos entornos. Al agregar PHS o PTA, el usuario tiene la misma contraseña para ambos entornos, pero tendrá que proporcionar esas credenciales de nuevo al iniciar sesión en Microsoft 365. La sincronización de directorios con PHS es la sincronización de directorios más usada.
 
-Para configurar la sincronización de directorios, use Azure AD Conectar. Para obtener instrucciones, consulte [Configuración de la sincronización de directorios para Microsoft 365](set-up-directory-synchronization.md) y [Azure AD Conectar con configuración rápida](/azure/active-directory/hybrid/how-to-connect-install-express).
+Para configurar la sincronización de directorios, use Azure AD Connect. Para obtener instrucciones, consulte [Configuración de la sincronización de directorios para Microsoft 365](set-up-directory-synchronization.md) y [Azure AD Connect con configuración rápida](/azure/active-directory/hybrid/how-to-connect-install-express).
 
-Obtenga más información sobre [cómo preparar la sincronización de directorios para Microsoft 365](prepare-for-directory-synchronization.md).
+Obtenga más información sobre [cómo preparar la sincronización de directorios con Microsoft 365](prepare-for-directory-synchronization.md).
 
 ### <a name="directory-synchronization-with-sso"></a>Sincronización de directorios con SSO
 
 Un usuario inicia sesión en su entorno local con su cuenta de usuario. Cuando van a Microsoft 365, inician sesión automáticamente o inician sesión con las mismas credenciales que usan para su entorno local (dominio\nombre de usuario).
 
-Para configurar el inicio de sesión único, use también Azure AD Conectar. Para obtener instrucciones, consulte [Instalación personalizada de Azure AD Conectar](/azure/active-directory/hybrid/how-to-connect-install-custom).
+Para configurar el inicio de sesión único, use también Azure AD Connect. Para obtener instrucciones, consulte [Instalación personalizada de Azure AD Connect](/azure/active-directory/hybrid/how-to-connect-install-custom).
 
 Para obtener más información, consulte [Inicio de sesión único](/azure/active-directory/manage-apps/what-is-single-sign-on).
 
 ## <a name="azure-ad-connect"></a>Azure AD Connect
 
-Azure AD Conectar reemplaza las versiones anteriores de las herramientas de integración de identidades, como DirSync y Sincronización de Azure AD. Si desea actualizar de Azure Active Directory Sync a Azure AD Conectar, consulte [las instrucciones de actualización](/azure/active-directory/hybrid/how-to-dirsync-upgrade-get-started). 
+Azure AD Connect reemplaza las versiones anteriores de las herramientas de integración de identidades, como DirSync y Sincronización de Azure AD. Si desea actualizar desde Azure Active Directory Sync a Azure AD Connect, consulte [las instrucciones de actualización](/azure/active-directory/hybrid/how-to-dirsync-upgrade-get-started). 
 
 ## <a name="see-also"></a>Vea también
 
