@@ -15,14 +15,14 @@ ms.collection:
 description: Use el Explorador o las detecciones en tiempo real para investigar y responder a las amenazas de forma eficaz.
 ms.custom:
 - seo-marvel-apr2020
-ms.technology: mdo
-ms.prod: m365-security
-ms.openlocfilehash: 510064136db8ed374c27ac8039ef78214945e002
-ms.sourcegitcommit: 35f167725bec5fd4fe131781a53d96b060cf232d
+ms.subservice: mdo
+ms.service: microsoft-365-security
+ms.openlocfilehash: 3c431b60abfe728cfb823ea45719d922ef0b1c93
+ms.sourcegitcommit: 2b89bcff547e00be3d38dc8d1e6cbcf8f41eba42
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "65873840"
+ms.lasthandoff: 09/03/2022
+ms.locfileid: "67596795"
 ---
 # <a name="explorer-and-real-time-detections"></a>Detecciones en tiempo real y explorador
 
@@ -39,22 +39,22 @@ En este artículo:
 - [Permisos y licencias necesarios](#required-licenses-and-permissions)
 
 > [!NOTE]
-> Esto forma parte de una **serie de 3 artículos** sobre **el Explorador (también conocido como Explorador de amenazas),** la **seguridad del correo electrónico** **y los conceptos básicos de detecciones en tiempo real y explorador** (como las diferencias entre las herramientas y los permisos necesarios para operarlas). Los otros dos artículos de esta serie son [Búsqueda de amenazas en el Explorador](threat-hunting-in-threat-explorer.md) y [Seguridad de correo electrónico con el Explorador](email-security-in-microsoft-defender.md).
+> Esto forma parte de una **serie de 3 artículos** sobre **el Explorador (también conocido como Explorador de amenazas),** la **seguridad del correo electrónico** **y los conceptos básicos de detecciones en tiempo real y explorador** (como las diferencias entre las herramientas y los permisos necesarios para operarlas). Los otros dos artículos de esta serie son [Búsqueda de amenazas en el Explorador](threat-hunting-in-threat-explorer.md) y [Email seguridad con el Explorador](email-security-in-microsoft-defender.md).
 
 En este artículo se explica la diferencia entre los informes de detecciones del Explorador y en tiempo real, la experiencia actualizada con el Explorador y las detecciones en tiempo real, donde puede alternar entre experiencias antiguas y nuevas, y las licencias y permisos necesarios.
 
 Si su organización tiene [Microsoft Defender para Office 365](defender-for-office-365.md) y tiene los [permisos](#required-licenses-and-permissions), puede usar **explorador** (también conocido como **Explorador de amenazas**) o **detecciones en tiempo real** para detectar y corregir amenazas.
 
-En el portal de Microsoft 365 Defender en <https://security.microsoft.com>, vaya a **Correo electrónico & colaboración** y, a continuación, elija **Explorador** _o_ **Detecciones en tiempo real**. Para ir directamente a la página, use <https://security.microsoft.com/threatexplorer> o <https://security.microsoft.com/realtimereports>.
+En el portal de Microsoft 365 Defender en <https://security.microsoft.com>, vaya a **Email & colaboración** y, a continuación, elija **Explorador** _o_ **Detecciones en tiempo real**. Para ir directamente a la página, use <https://security.microsoft.com/threatexplorer> o <https://security.microsoft.com/realtimereports>.
 
 Con estas herramientas, puede:
 
-- Consulte malware detectado por Microsoft 365 características de seguridad.
+- Vea malware detectado por las características de seguridad de Microsoft 365.
 - Vea la dirección URL de phishing y haga clic en datos de veredicto.
 - Inicie un proceso de investigación y respuesta automatizado desde una vista en el Explorador.
 - Investigue el correo electrónico malintencionado y mucho más.
 
-Para obtener más información, vea [Seguridad de correo electrónico con el Explorador](email-security-in-microsoft-defender.md).
+Para obtener más información, vea [Email seguridad con el Explorador](email-security-in-microsoft-defender.md).
 
 ## <a name="differences-between-explorer-and-real-time-detections"></a>Diferencias entre el Explorador y las detecciones en tiempo real
 
@@ -129,13 +129,13 @@ Estos son los componentes comunes dentro de estas experiencias:
 
     - Los controles flotantes de entidades individuales, como IP, destinatario y dirección URL, reflejarían la misma información, pero se presentarían en una sola vista basada en pestañas, con la capacidad de expandir y contraer las distintas secciones según los requisitos.  
 
-    - Para controles flotantes como direcciones URL, puede hacer clic en **Ver todo el correo electrónico** o **Ver todos los clics** para ver el conjunto completo de correos electrónicos o clics que contienen esa dirección URL, así como exportar el conjunto de resultados.  
+    - Para controles flotantes como direcciones URL, puede hacer clic en **Ver todos los Email** o **Ver todos los clics** para ver el conjunto completo de correos electrónicos o clics que contienen esa dirección URL, así como exportar el conjunto de resultados.  
 
 - Acciones
 
     - Desde el Explorador de amenazas, puede desencadenar acciones de corrección como *Eliminar un correo electrónico*. Para obtener más información sobre la corrección, los límites de corrección y el seguimiento de la corrección, consulte [Corrección del correo electrónico malintencionado](remediate-malicious-email-delivered-office-365.md).  
 
-- Exportar
+- Export
 
     - Puede hacer clic en **Exportar datos del gráfico** para exportar los detalles del gráfico. Del mismo modo, haga clic en **Exportar lista de correo electrónico** para exportar los detalles del correo electrónico.
 
@@ -144,7 +144,7 @@ Estos son los componentes comunes dentro de estas experiencias:
     > [!div class="mx-imgBorder"]
     > ![Exportación de datos de gráficos](../../media/explorer-new-experience-export-chart-data.png)
 
-Además de estas características, también obtendrá experiencias actualizadas, como *direcciones URL principales*, *clics superiores*, *usuarios de destino superior* y *origen de correo electrónico*. *Las direcciones URL principales*, *los clics superiores* y *los usuarios de destino superior* se pueden filtrar aún más según el filtro que aplique en el Explorador. 
+Además de estas características, también obtendrá experiencias actualizadas como *direcciones URL principales*, *clics superiores*, *usuarios de destino superior* y *Email origen*. *Las direcciones URL principales*, *los clics superiores* y *los usuarios de destino superior* se pueden filtrar aún más según el filtro que aplique en el Explorador. 
 
 ## <a name="required-licenses-and-permissions"></a>Permisos y licencias necesarios
 
@@ -159,7 +159,7 @@ Para ver y usar el Explorador *o* las detecciones en tiempo real, necesita los p
 
 - En Defender para Office 365:
   - Administración de la organización
-  - Administrador de seguridad (esto se puede asignar en el centro de administración de Azure Active Directory (<https://aad.portal.azure.com>)
+  - Administrador de seguridad (esto se puede asignar en el Centro de administración de Azure Active Directory (<https://aad.portal.azure.com>)
   - Lector de seguridad
 - En Exchange Online:
   - Administración de la organización

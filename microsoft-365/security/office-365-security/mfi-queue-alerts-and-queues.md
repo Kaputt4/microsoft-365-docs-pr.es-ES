@@ -11,19 +11,19 @@ ms.custom: ''
 ms.localizationpriority: medium
 ms.assetid: 37640c80-ce6f-47e2-afd1-bc1d3c50e637
 description: Los administradores pueden aprender a usar el widget Colas en el panel Flujo de correo del Centro de cumplimiento de seguridad & para supervisar el flujo de correo incorrecto a sus organizaciones locales o asociadas a través de conectores salientes.
-ms.technology: mdo
-ms.prod: m365-security
+ms.subservice: mdo
+ms.service: microsoft-365-security
 ms.collection: M365-security-compliance
-ms.openlocfilehash: 146ce26c32f1ff80a451b85fd343990db547a131
-ms.sourcegitcommit: 45bc65972d4007b2aa7760d4457a0d2699f81926
+ms.openlocfilehash: 2d9e35e90870ef8b9dba97f8b10fa4d09090551a
+ms.sourcegitcommit: 2b89bcff547e00be3d38dc8d1e6cbcf8f41eba42
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/20/2022
-ms.locfileid: "64972659"
+ms.lasthandoff: 09/03/2022
+ms.locfileid: "67597402"
 ---
 # <a name="queues-insight-in-the-security--compliance-center"></a>Información sobre colas en el Centro de cumplimiento de seguridad &
 
-[!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
+[!INCLUDE [MDO Trial banner](../includes/mdo-trial-banner.md)]
 
 **Se aplica a**
 - [Exchange Online Protection](exchange-online-protection-overview.md)
@@ -61,12 +61,12 @@ Si el volumen de correo electrónico en cola supera el umbral predefinido (el va
 
    - **Estado**: puede activar o desactivar la alerta.
 
-   - **Destinatarios de correo electrónico** y **límite diario de notificaciones**: haga clic en **Editar** para configurar las siguientes opciones:
+   - **Email destinatarios** y **límite de notificaciones diarias**: haga clic en **Editar** para configurar las siguientes opciones:
 
 4. Para configurar las opciones de notificación, haga clic en **Editar**. En el control flotante **Editar directiva** que aparece, configure los siguientes valores:
 
    - **Enviar notificaciones por correo electrónico**: el valor predeterminado está activado.
-   - **Destinatarios de correo electrónico**: el valor predeterminado es **TenantAdmins**.
+   - **Email destinatarios**: el valor predeterminado es **TenantAdmins**.
    - **Límite diario de notificaciones**: el valor predeterminado es **Sin límite**.
    - **Umbral**: el valor predeterminado es 200.
 
@@ -83,7 +83,7 @@ Incluso si el volumen de mensajes en cola no ha superado el umbral y ha generado
 Si hace clic en el número de mensajes del widget, aparece un control flotante **Mensajes en cola** con la siguiente información:
 
 - **Número de mensajes en cola**
-- **Nombre del conector**: seleccione el nombre del conector para administrar el conector en el centro de administración de Exchange (EAC) en <https://admin.exchange.microsoft.com/#/connectors>.
+- **Nombre del conector**: seleccione el nombre del conector para administrar el conector en el Centro de administración de Exchange (EAC) en <https://admin.exchange.microsoft.com/#/connectors>.
 - **Hora de inicio de la cola**
 - **Mensajes más antiguos expirados**
 - **Servidor de destino**

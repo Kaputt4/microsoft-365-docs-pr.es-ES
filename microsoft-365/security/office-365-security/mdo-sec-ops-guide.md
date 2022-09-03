@@ -16,14 +16,14 @@ ms.collection:
 - M365-security-compliance
 ms.custom: ''
 description: Un cuaderno de estrategias prescriptivo para que el personal de SecOps administre Microsoft Defender para Office 365.
-ms.technology: mdo
-ms.prod: m365-security
-ms.openlocfilehash: 32beb27564475c988b95da1a1f41f1943de1220e
-ms.sourcegitcommit: 031b3e963478f642a0d23be37a01f23a01cb3d84
+ms.subservice: mdo
+ms.service: microsoft-365-security
+ms.openlocfilehash: 2c22dd6e0d6fef3607bc51325d66691e2b9fc979
+ms.sourcegitcommit: 2b89bcff547e00be3d38dc8d1e6cbcf8f41eba42
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/26/2022
-ms.locfileid: "67441710"
+ms.lasthandoff: 09/03/2022
+ms.locfileid: "67595771"
 ---
 # <a name="microsoft-defender-for-office-365-security-operations-guide"></a>Guía de operaciones de seguridad de Microsoft Defender para Office 365
 

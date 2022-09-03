@@ -7,8 +7,8 @@ ms.author: deniseb
 manager: dansimp
 audience: Admin
 ms.topic: article
-ms.prod: m365-security
-ms.technology: mdb
+ms.service: microsoft-365-security
+ms.subservice: mdb
 ms.localizationpriority: medium
 ms.date: 08/09/2022
 ms.reviewer: shlomiakirav
@@ -18,12 +18,12 @@ ms.collection:
 - M365-security-compliance
 - m365-initiative-defender-business
 ms.custom: intro-get-started
-ms.openlocfilehash: e1bf29eb817649f2e736da2a80aed3b0108157a5
-ms.sourcegitcommit: 9b10e56b9e83f3a80757fa6108bebd1d80cf4178
+ms.openlocfilehash: c0b9666a280b159df4e1b985b733c73565477241
+ms.sourcegitcommit: 2b89bcff547e00be3d38dc8d1e6cbcf8f41eba42
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/12/2022
-ms.locfileid: "67319963"
+ms.lasthandoff: 09/03/2022
+ms.locfileid: "67597534"
 ---
 # <a name="use-the-setup-wizard-in-microsoft-defender-for-business"></a>Uso del asistente para la instalación en Microsoft Defender para Empresas
 
@@ -100,7 +100,7 @@ Consulte [Configuración y configuración de Defender para empresas para](mdb-se
 
 4. **[Administre las directivas de seguridad](mdb-configure-security-settings.md)**, que incluyen protección de última generación, protección contra firewalls y filtrado de contenido web.
 
-## <a name="next-steps"></a>Siguientes pasos
+## <a name="next-steps"></a>Pasos siguientes
 
 - [Incorporación de más dispositivos a Defender for Business](mdb-onboard-devices.md)
 - [Visualización y edición de las directivas de seguridad y la configuración en Defender para empresas](mdb-configure-security-settings.md)

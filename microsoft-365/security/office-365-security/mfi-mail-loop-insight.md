@@ -12,47 +12,47 @@ ms.localizationpriority: medium
 ms.assetid: cb801985-3c89-4979-9c18-17829a4cb563
 ms.custom:
 - seo-marvel-apr2020
-description: Los administradores pueden aprender a usar la información sobre corregir posibles bucles de correo en el panel flujo de correo del Centro de seguridad y cumplimiento de & para identificar y corregir bucles de correo en su organización.
-ms.technology: mdo
-ms.prod: m365-security
-ms.openlocfilehash: 5a74e7cc623dffd6bae6451f7488d8f630b607b2
-ms.sourcegitcommit: b0c3ffd7ddee9b30fab85047a71a31483b5c649b
+description: Los administradores pueden aprender a usar la información corregir posibles bucles de correo en el panel Flujo de correo del Centro de cumplimiento de seguridad & para identificar y corregir bucles de correo en su organización.
+ms.subservice: mdo
+ms.service: microsoft-365-security
+ms.openlocfilehash: 488d992727ba01a4b050ddc0af6dff951898b833
+ms.sourcegitcommit: 2b89bcff547e00be3d38dc8d1e6cbcf8f41eba42
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/25/2022
-ms.locfileid: "64469149"
+ms.lasthandoff: 09/03/2022
+ms.locfileid: "67597468"
 ---
-# <a name="fix-possible-mail-loop-insight-in-the-security--compliance-center"></a>Corregir la posible información del bucle de correo en el Centro de seguridad & cumplimiento
+# <a name="fix-possible-mail-loop-insight-in-the-security--compliance-center"></a>Corrección de la posible información del bucle de correo en el Centro de cumplimiento de seguridad &
 
-[!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
+[!INCLUDE [MDO Trial banner](../includes/mdo-trial-banner.md)]
 
 **Se aplica a**
 - [Exchange Online Protection](exchange-online-protection-overview.md)
 - [Plan 1 y Plan 2 de Microsoft Defender para Office 365](defender-for-office-365.md)
 - [Microsoft 365 Defender](../defender/microsoft-365-defender.md)
 
-Los bucles de correo son malos porque:
+Los bucles de correo son incorrectos porque:
 
 - Desperdician recursos del sistema.
 - Consumen la cuota de volumen de correo de la organización.
 - Envían informes confusos de no entrega (también conocidos como NDR o mensajes de rebote) a los remitentes de mensajes originales.
 
-Fix **possible mail loop** insight in the **Recommended for you** area of the [Mail flow dashboard](mail-flow-insights-v2.md) in the [Security & Compliance Center](https://protection.office.com) notifies you when a mail loop is detected in your organization.
+La **opción Corregir posible** información de bucle de correo en el área **Recomendado para usted** del [panel Flujo de correo](mail-flow-insights-v2.md) del [Centro de cumplimiento de seguridad &](https://protection.office.com) le notifica cuándo se detecta un bucle de correo en su organización.
 
-Esta información aparece solo después de que se detecte la condición (si no tiene bucles de correo, no verá la información).
+Esta información aparece solo después de detectar la condición (si no tiene ningún bucle de correo, no verá la información).
 
-:::image type="content" source="../../media/mfi-fix-possible-mail-loop.png" alt-text="Información sobre las reglas de flujo de correo lento fix en el área Recomendado para usted del panel flujo de correo" lightbox="../../media/mfi-fix-possible-mail-loop.png":::
+:::image type="content" source="../../media/mfi-fix-possible-mail-loop.png" alt-text="Información sobre la corrección de reglas de flujo de correo lento en el área Recomendado para usted del panel Flujo de correo" lightbox="../../media/mfi-fix-possible-mail-loop.png":::
 
-Al hacer clic **en Ver detalles** en el widget, aparece un control flotante con más información:
+Al hacer clic en **Ver detalles** en el widget, aparece un control flotante con más información:
 
 - **Dominio**
-- **Número de mensajes**: puede hacer clic en **Ver** mensajes de ejemplo para [](message-trace-scc.md) ver los resultados del seguimiento de mensajes de una muestra de los mensajes que se vieron afectados por el bucle.
-- **Tipo de dominio**" Por ejemplo, Autoritativo o no autoritativo.
-- **Registro MX**: el host (**servidor de correo**) y los valores **de** prioridad del registro MX para el dominio.
-- **Motivo del** bucle **y Cómo corregir**: identificaremos los escenarios de bucle de correo más comunes y proporcionaremos acciones recomendadas para corregir el bucle.
+- **Número de mensajes**: puede hacer clic en **Ver mensajes de ejemplo** para ver los resultados del [seguimiento](message-trace-scc.md) de mensajes de un ejemplo de los mensajes afectados por el bucle.
+- **Tipo de dominio**" Por ejemplo, Autoritativo o No autoritativo.
+- **Registro MX**: el host (**servidor de correo**) y los valores de **prioridad** del registro MX para el dominio.
+- **Motivo del bucle** y **Corrección**: identificaremos los escenarios de bucle de correo más comunes y proporcionaremos las acciones recomendadas para corregir el bucle.
 
-:::image type="content" source="../../media/mfi-fix-possible-mail-loop-details.png" alt-text="El control desplegable Detalles que aparece después de hacer clic en Ver detalles en la información de corregir posibles bucles de correo" lightbox="../../media/mfi-fix-possible-mail-loop-details.png":::
+:::image type="content" source="../../media/mfi-fix-possible-mail-loop-details.png" alt-text="El control flotante Detalles que aparece después de hacer clic en Ver detalles en la opción Corregir posible información del bucle de correo" lightbox="../../media/mfi-fix-possible-mail-loop-details.png":::
 
 ## <a name="see-also"></a>Vea también
 
-Para obtener información sobre otras perspectivas en el panel flujo de correo, vea Información sobre el flujo de correo en el [Centro de seguridad & cumplimiento](mail-flow-insights-v2.md).
+Para obtener información sobre otras conclusiones en el panel Flujo de correo, consulte [Información de flujo de correo en el Centro de cumplimiento de seguridad &](mail-flow-insights-v2.md).

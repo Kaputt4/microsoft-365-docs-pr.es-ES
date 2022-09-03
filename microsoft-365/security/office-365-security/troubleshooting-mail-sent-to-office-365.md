@@ -16,19 +16,19 @@ ms.collection:
 - M365-security-compliance
 ms.custom:
 - seo-marvel-apr2020
-description: En este artículo se proporciona información para solucionar problemas relacionados con el envío de correo electrónico a bandejas de entrada en Microsoft 365 & procedimientos recomendados para el envío masivo de correo a Microsoft 365 clientes.
-ms.technology: mdo
-ms.prod: m365-security
-ms.openlocfilehash: 37703ccb0ffb37163033bb2fdca24566a33bb275
-ms.sourcegitcommit: fdd0294e6cda916392ee66f5a1d2a235fb7272f8
+description: En este artículo se proporciona información para solucionar problemas relacionados con el envío de correo electrónico a bandejas de entrada en Microsoft 365 & procedimientos recomendados para el envío masivo de correo a clientes de Microsoft 365.
+ms.subservice: mdo
+ms.service: microsoft-365-security
+ms.openlocfilehash: 661cdbb58b7ce0b8d7f77cfbea4677ad3af6a42d
+ms.sourcegitcommit: 2b89bcff547e00be3d38dc8d1e6cbcf8f41eba42
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/29/2022
-ms.locfileid: "65128442"
+ms.lasthandoff: 09/03/2022
+ms.locfileid: "67597744"
 ---
 # <a name="troubleshooting-mail-sent-to-microsoft-365"></a>Correo de solución de problemas enviado a Microsoft 365
 
-[!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
+[!INCLUDE [MDO Trial banner](../includes/mdo-trial-banner.md)]
 
 **Se aplica a**
 - [Exchange Online Protection](exchange-online-protection-overview.md)
@@ -62,7 +62,7 @@ No podemos aceptar correo electrónico de los remitentes que no logran una búsq
 
 Algunos problemas de entrega se deben a que Microsoft ha bloqueado la dirección IP del remitente o a que la cuenta de usuario se identifica como remitente prohibido debido a una actividad precedente de correo no deseado. Si cree que ha recibido el NDR por error, en primer lugar, siga las instrucciones del mensaje de NDR para resolver el problema.
 
-Para obtener más información sobre el error que ha recibido, consulte la lista de códigos de error en [Informes de no entrega por correo electrónico en Exchange Online](/exchange/mail-flow-best-practices/non-delivery-reports-in-exchange-online/non-delivery-reports-in-exchange-online).
+Para obtener más información sobre el error que ha recibido, consulte la lista de códigos de error en [Email informes de no entrega en Exchange Online](/exchange/mail-flow-best-practices/non-delivery-reports-in-exchange-online/non-delivery-reports-in-exchange-online).
 
  Por ejemplo, si recibe el siguiente NDR, indica que Microsoft bloqueó la dirección IP de envío:
 
@@ -70,7 +70,7 @@ Para obtener más información sobre el error que ha recibido, consulte la lista
 
 Para solicitar la eliminación de esta lista, puede [usar el portal de deslist para quitarse de la lista de remitentes bloqueados](use-the-delist-portal-to-remove-yourself-from-the-office-365-blocked-senders-lis.md).
 
-## <a name="my-email-landed-in-the-recipients-junk-email-folder"></a>Mi correo electrónico aterrizó en la carpeta correo no deseado del destinatario
+## <a name="my-email-landed-in-the-recipients-junk-email-folder"></a>Mi correo electrónico aterrizó en la carpeta de Email no deseado del destinatario.
 
 Si EOP identificó incorrectamente un mensaje como correo no deseado, puede hablar con el destinatario para enviar este mensaje falso positivo al equipo de análisis de correo no deseado de Microsoft, que lo evaluará y analizará. Para obtener más información, consulte [Notificar mensajes y archivos a Microsoft](report-junk-email-messages-to-microsoft.md).
 
@@ -82,13 +82,13 @@ Si recibe un NDR de EOP que indica que EOP está limitando su dirección IP, por
 
 Ha recibido el NDR porque se ha detectado actividad sospechosa procedente de la dirección IP en cuestión y se ha restringido temporalmente mientras se analiza el caso en profundidad. Si después del análisis, la dirección deja de ser sospechosa, la restricción se levantará en breve.
 
-## <a name="i-cant-receive-email-from-senders-in-microsoft-365"></a>No puedo recibir correo electrónico de los remitentes en Microsoft 365
+## <a name="i-cant-receive-email-from-senders-in-microsoft-365"></a>No puedo recibir correo electrónico de remitentes en Microsoft 365
 
  Para recibir mensajes de nuestros usuarios, asegúrese de que la red permite conexiones desde las direcciones IP que EOP usa en nuestros centros de datos. Para obtener más información, consulte [Exchange Online Protection direcciones IP](../../enterprise/urls-and-ip-address-ranges.md).
 
-## <a name="best-practices-for-bulk-emailing-to-microsoft-365-users"></a>Procedimientos recomendados para enviar correo electrónico masivo a usuarios Microsoft 365
+## <a name="best-practices-for-bulk-emailing-to-microsoft-365-users"></a>Procedimientos recomendados para enviar correo electrónico masivo a usuarios de Microsoft 365
 
-Si a menudo realiza campañas de correo electrónico masivas para Microsoft 365 usuarios y desea asegurarse de que los correos electrónicos llegan de forma segura y oportuna, siga las sugerencias de esta sección.
+Si a menudo realiza campañas de correo electrónico masivas a los usuarios de Microsoft 365 y desea asegurarse de que los correos electrónicos llegan de forma segura y oportuna, siga las sugerencias de esta sección.
 
 ### <a name="ensure-that-the-from-name-reflects-who-is-sending-the-message"></a>Asegúrese de que el nombre De refleja quién envía el mensaje.
 

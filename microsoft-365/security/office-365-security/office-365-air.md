@@ -20,14 +20,14 @@ description: Empiece a usar funcionalidades automatizadas de investigación y re
 ms.custom:
 - air
 - seo-marvel-mar2020
-ms.technology: mdo
-ms.prod: m365-security
-ms.openlocfilehash: 0fda154f8eb52ddab024a7f5bb02f980c9a05894
-ms.sourcegitcommit: 44ece87e3e0c0c851dfc1e77211ac3e5e4a5b973
+ms.subservice: mdo
+ms.service: microsoft-365-security
+ms.openlocfilehash: 9d7a486e97356ca960ad0ac519445e30a997750e
+ms.sourcegitcommit: 2b89bcff547e00be3d38dc8d1e6cbcf8f41eba42
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/05/2022
-ms.locfileid: "66617160"
+ms.lasthandoff: 09/03/2022
+ms.locfileid: "67596366"
 ---
 # <a name="automated-investigation-and-response-air-in-microsoft-defender-for-office-365"></a>Investigación y respuesta automatizadas (AIR) en Microsoft Defender para Office 365
 
@@ -93,8 +93,8 @@ Microsoft 365 proporciona muchas directivas de alertas integradas que ayudan a i
 |---|---|---|
 |Se detectó un clic de dirección URL potencialmente malintencionado|**Alto**|Esta alerta se genera cuando se produce cualquiera de las siguientes acciones: <ul><li>Un usuario protegido por [vínculos seguros](safe-links.md) de su organización hace clic en un vínculo malintencionado</li><li>Los cambios de veredicto de las direcciones URL se identifican mediante Microsoft Defender para Office 365</li><li>Los usuarios invalidan las páginas de advertencia de Vínculos seguros (en función de la [directiva de vínculos seguros](set-up-safe-links-policies.md) de su organización.</li></ul> <p> Para obtener más información sobre los eventos que desencadenan esta alerta, consulte [Configuración de directivas de vínculos seguros](set-up-safe-links-policies.md).|
 |Un usuario notifica un mensaje de correo electrónico como malware o phish|**Informativo**|Esta alerta se genera cuando los usuarios de su organización notifican mensajes como correo electrónico de suplantación de identidad mediante el [complemento Mensaje](enable-the-report-message-add-in.md) de informe o el [complemento De suplantación de identidad](enable-the-report-phish-add-in.md) de informe.|
-|Los mensajes de correo electrónico que contienen malware se quitan después de la entrega|**Informativo**|Esta alerta se genera cuando los mensajes de correo electrónico que contienen malware se entregan a los buzones de su organización. Si se produce este evento, Microsoft quita los mensajes infectados de Exchange Online buzones mediante [la purga automática de cero horas (ZAP).](zero-hour-auto-purge.md)|
-|Los mensajes de correo electrónico que contienen direcciones URL de phish se quitan después de la entrega|**Informativo**|Esta alerta se genera cuando los mensajes que contienen phish se entregan a los buzones de su organización. Si se produce este evento, Microsoft quita los mensajes infectados de Exchange Online buzones mediante [ZAP](zero-hour-auto-purge.md).|
+|Email mensajes que contienen malware se quitan después de la entrega|**Informativo**|Esta alerta se genera cuando los mensajes de correo electrónico que contienen malware se entregan a los buzones de su organización. Si se produce este evento, Microsoft quita los mensajes infectados de Exchange Online buzones mediante [la purga automática de cero horas (ZAP).](zero-hour-auto-purge.md)|
+|Email mensajes que contienen direcciones URL de phish se quitan después de la entrega|**Informativo**|Esta alerta se genera cuando los mensajes que contienen phish se entregan a los buzones de su organización. Si se produce este evento, Microsoft quita los mensajes infectados de Exchange Online buzones mediante [ZAP](zero-hour-auto-purge.md).|
 |Se detectan patrones de envío de correo electrónico sospechosos|**Medio**|Esta alerta se genera cuando alguien de su organización ha enviado un correo electrónico sospechoso y corre el riesgo de que se le restrinja el envío de correo electrónico. La alerta es una advertencia temprana para el comportamiento que podría indicar que la cuenta está en peligro, pero no lo suficientemente grave como para restringir al usuario. <p> Aunque es poco frecuente, una alerta generada por esta directiva puede ser una anomalía. Sin embargo, es una buena idea [comprobar si la cuenta de usuario está en peligro](responding-to-a-compromised-email-account.md).|
 |Un usuario tiene restringido el envío de correo electrónico.|**Alto**|Esta alerta se genera cuando a alguien de su organización se le restringe el envío de correo saliente. Esta alerta suele producirse cuando una [cuenta de correo electrónico está en peligro](responding-to-a-compromised-email-account.md). <p> Para obtener más información sobre los usuarios restringidos, consulte [Eliminación de usuarios bloqueados del portal Usuarios restringidos de Microsoft 365](removing-user-from-restricted-users-portal-after-spam.md).|
 
@@ -108,7 +108,7 @@ Los permisos se conceden a través de determinados roles, como los que se descri
 |Tarea|Rol(s) requerido(s)|
 |---|---|
 |Configuración de las características de AIR|Uno de los siguientes roles: <ul><li>Administrador global</li><li>Administrador de seguridad</li></ul> <p> Estos roles se pueden asignar en [Azure Active Directory](/azure/active-directory/roles/permissions-reference) o en el [portal de Microsoft 365 Defender](permissions-microsoft-365-security-center.md).|
-|Iniciar una investigación automatizada <p> --- o --- <p> Aprobar o rechazar las acciones recomendadas|Uno de los siguientes roles, asignados en [Azure Active Directory](/azure/active-directory/roles/permissions-reference) o en el [portal de Microsoft 365 Defender](permissions-microsoft-365-security-center.md): <ul><li>Administrador global</li><li>Administrador de seguridad</li><li>Operador de seguridad</li><li>Lector de seguridad <br> --- y --- </li><li>Buscar y purgar (este rol solo se asigna en el [portal de Microsoft 365 Defender](permissions-microsoft-365-security-center.md). Es posible que tenga que crear un nuevo grupo de roles de **colaboración & correo electrónico** y agregar el rol Buscar y purgar a ese nuevo grupo de roles.</li></ul>|
+|Iniciar una investigación automatizada <p> --- o --- <p> Aprobar o rechazar las acciones recomendadas|Uno de los siguientes roles, asignados en [Azure Active Directory](/azure/active-directory/roles/permissions-reference) o en el [portal de Microsoft 365 Defender](permissions-microsoft-365-security-center.md): <ul><li>Administrador global</li><li>Administrador de seguridad</li><li>Operador de seguridad</li><li>Lector de seguridad <br> --- y --- </li><li>Buscar y purgar (este rol solo se asigna en el [portal de Microsoft 365 Defender](permissions-microsoft-365-security-center.md). Es posible que tenga que crear un nuevo grupo de roles **de colaboración Email &** allí y agregar el rol Buscar y purgar a ese nuevo grupo de roles.</li></ul>|
 
 ## <a name="required-licenses"></a>Licencias necesarias
 
@@ -138,11 +138,11 @@ El portal <https://security.microsoft.com> de Microsoft 365 Defender nuevo y mej
 
 En la tabla siguiente se enumeran los cambios y mejoras que llegan a AIR en Microsoft Defender para Office 365.
 
-|Item|¿Qué está cambiando?|
+|Elemento|¿Qué está cambiando?|
 |---|---|
 |**Página Investigaciones**|La página **Investigaciones** actualizada es más coherente con lo que se ve en [Microsoft Defender para punto de conexión](/windows/security/threat-protection/microsoft-defender-atp/automated-investigations). Verá algunos cambios generales de formato y estilo que se alinean con la nueva vista **Investigaciones** unificada. Por ejemplo, el gráfico de investigación tiene un formato más unificado.|
 |**Pestaña Usuarios**|La pestaña **Usuarios** ahora es la pestaña **Buzones** . Los detalles sobre los usuarios aparecen en la pestaña **Buzón** .|
-|**Pestaña Correo electrónico**|Se ha quitado la pestaña **Correo electrónico** ; visite la pestaña **Entidades** para ver una lista de elementos de clúster de correo electrónico y correo electrónico.|
+|**pestaña Email**|Se ha quitado la pestaña **Email**; visite la pestaña **Entidades** para ver una lista de elementos del clúster de correo electrónico y correo electrónico.|
 |**Pestaña Entidades**|La pestaña **Entidades** tiene un estilo de tabulación que incluye una vista de resumen completo y la capacidad de filtrar por tipo de entidad. La pestaña **Entidades** ahora incluye una opción **de búsqueda Go** además de la opción **Abrir en el Explorador** . Ahora puede usar [el Explorador](threat-explorer.md) o [la búsqueda avanzada](../defender-endpoint/advanced-hunting-overview.md) para buscar entidades y amenazas, y filtrar los resultados.|
 |**Pestaña Acciones**|La pestaña **Acciones** actualizada ahora incluye una pestaña **Acciones pendientes** y una pestaña **Historial de acciones** . Las acciones se pueden aprobar (o rechazar) en un panel lateral que se abre al seleccionar una acción pendiente.|
 |**Pestaña Evidencia**|Una nueva pestaña **Evidencia** muestra los resultados clave de la entidad relacionados con las acciones. Las acciones relacionadas con cada elemento de evidencia se pueden aprobar (o rechazar) en un panel lateral que se abre al seleccionar una acción pendiente.|

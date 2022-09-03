@@ -18,14 +18,14 @@ ms.collection:
 description: Los administradores pueden aprender cómo funciona la información de suplantación. Pueden determinar rápidamente qué remitentes envían legítimamente correo electrónico a sus organizaciones desde dominios que no pasan comprobaciones de autenticación por correo electrónico (SPF, DKIM o DMARC).
 ms.custom:
 - seo-marvel-apr2020
-ms.technology: mdo
-ms.prod: m365-security
-ms.openlocfilehash: c54bdbb4ee8c3bf068b40df8cd5ca0a58da2392f
-ms.sourcegitcommit: 221212fff9737e0ea386755deb8fed62ae9c254b
+ms.subservice: mdo
+ms.service: microsoft-365-security
+ms.openlocfilehash: 34cb0cfe920751c40685d2df51b7f61f5ba02dbb
+ms.sourcegitcommit: 2b89bcff547e00be3d38dc8d1e6cbcf8f41eba42
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/14/2022
-ms.locfileid: "66787758"
+ms.lasthandoff: 09/03/2022
+ms.locfileid: "67596839"
 ---
 # <a name="impersonation-insight-in-defender-for-office-365"></a>Información de suplantación en Defender para Office 365
 
@@ -64,7 +64,7 @@ Puede usar la información de suplantación en el portal de Microsoft 365 Defend
 
 ## <a name="open-the-impersonation-insight-in-the-microsoft-365-defender-portal"></a>Abra la información de suplantación en el portal de Microsoft 365 Defender
 
-1. En el portal de Microsoft 365 Defender en <https://security.microsoft.com>, vaya a **Directivas de colaboración** \> & correo electrónico **& Directivas** de **amenazas** \> de reglas \> **Anti-phishing** en la sección **Directivas**. Para ir directamente a la página **Anti-phishing** , use <https://security.microsoft.com/antiphishing>.
+1. En el portal de Microsoft 365 Defender en <https://security.microsoft.com>, vaya a Email & Directivas de **colaboración** \> **& Directivas** de **amenazas** \> de reglas \> **Anti-phishing** en la sección **Directivas**. Para ir directamente a la página **Anti-phishing** , use <https://security.microsoft.com/antiphishing>.
 
 2. En la página **Anti-phishing** , la información de suplantación tiene el siguiente aspecto:
 

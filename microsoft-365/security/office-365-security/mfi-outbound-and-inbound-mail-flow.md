@@ -12,18 +12,18 @@ ms.collection: M365-security-compliance
 ms.localizationpriority: medium
 ms.assetid: f2738dec-41b0-43c4-b814-84c0a4e45c6d
 description: Los administradores pueden obtener información sobre la información de flujo de correo saliente y entrante en el panel Flujo de correo del Centro de cumplimiento de seguridad &.
-ms.technology: mdo
-ms.prod: m365-security
-ms.openlocfilehash: f856e2b9a4829531966802f2594f26c19e6ab7e5
-ms.sourcegitcommit: fdd0294e6cda916392ee66f5a1d2a235fb7272f8
+ms.subservice: mdo
+ms.service: microsoft-365-security
+ms.openlocfilehash: f9e6cc058ff479ea13253f0e6b4ecd7c28281eda
+ms.sourcegitcommit: 2b89bcff547e00be3d38dc8d1e6cbcf8f41eba42
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/29/2022
-ms.locfileid: "65131204"
+ms.lasthandoff: 09/03/2022
+ms.locfileid: "67597424"
 ---
 # <a name="outbound-and-inbound-mail-flow-insight-in-the-security--compliance-center"></a>Información de flujo de correo saliente y entrante en el Centro de cumplimiento de seguridad &
 
-[!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
+[!INCLUDE [MDO Trial banner](../includes/mdo-trial-banner.md)]
 
 **Se aplica a**
 - [Exchange Online Protection](exchange-online-protection-overview.md)
@@ -50,7 +50,7 @@ Al hacer clic en **Ver detalles** en el widget, el control flotante **Mensaje pr
 
 Actualmente, TLS 1.2 es la versión más segura de TLS que ofrece Microsoft 365. A menudo, necesitará conocer el cifrado TLS que se usa para las auditorías de cumplimiento. Probablemente no tenga una relación directa con la mayoría de los servidores de correo electrónico de origen y de destino (no los posee ni Microsoft), por lo que no tiene muchas opciones para mejorar el cifrado TLS que usan esos servidores.
 
-Sin embargo, puede usar [conectores](/exchange/mail-flow-best-practices/use-connectors-to-configure-mail-flow/use-connectors-to-configure-mail-flow) para garantizar la mejor protección TLS disponible para los mensajes que se envían entre los servidores de correo electrónico y Microsoft 365. El flujo de correo entre Microsoft 365 y sus propios servidores de correo electrónico o servidores que pertenecen a sus asociados suele ser más importante y confidencial que los mensajes normales, por lo que querrá aplicar seguridad y vigilancia adicionales a esos mensajes.
+Sin embargo, puede usar [conectores](/exchange/mail-flow-best-practices/use-connectors-to-configure-mail-flow/use-connectors-to-configure-mail-flow) para garantizar la mejor protección TLS disponible para los mensajes que se envían entre los servidores de correo electrónico y Microsoft 365. El flujo de correo entre Microsoft 365 y sus propios servidores de correo electrónico o servidores que pertenecen a sus asociados suele ser más importante y confidencial que los mensajes normales, por lo que querrá aplicar seguridad adicional y vigilancia a esos mensajes.
 
 Puede actualizar o corregir sus propios servidores de correo electrónico para mejorar el cifrado TLS que se usa, o ponerse en contacto con sus asociados para hacer lo mismo. El **informe del conector** muestra el volumen de flujo de correo y el cifrado TLS para los mensajes que usan los conectores de Microsoft 365.
 
@@ -61,6 +61,6 @@ Puede hacer clic en el vínculo **Informe del conector** para ir al [informe del
 
 En el caso de las conexiones TLS 1.0, es preciso actualizar o corregir el servidor de correo electrónico o el servidor de su asociado para evitar cualquier problema cuando la compatibilidad con TLS 1.0 finalmente esté en desuso en Microsoft 365.
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 Para obtener información sobre otras conclusiones en el panel Flujo de correo, consulte [Información de flujo de correo en el Centro de cumplimiento de seguridad &](mail-flow-insights-v2.md).

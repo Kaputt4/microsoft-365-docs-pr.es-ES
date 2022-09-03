@@ -3,7 +3,7 @@ title: (Falsos positivos) Cómo controlar los correos electrónicos legítimos q
 description: Los pasos para controlar el bloqueo del correo electrónico legítimo (falso positivo) por Microsoft Defender para Office 365 con el fin de evitar la pérdida de negocio.
 search.product: ''
 search.appverid: ''
-ms.prod: m365-security
+ms.service: microsoft-365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -16,13 +16,13 @@ manager: jarogers
 audience: ITPro
 ms.collection: m365-guidance-templates
 ms.topic: how-to
-ms.technology: mdo
-ms.openlocfilehash: abf348fd4de02f521dfa9c5f8d7c16346753c5de
-ms.sourcegitcommit: a7c1acfb3d2cbba913e32493b16ebd8cbfeee456
+ms.subservice: mdo
+ms.openlocfilehash: ae7b66a2dc8c8b4fb96360ca2bc0625bfcdf6b43
+ms.sourcegitcommit: 2b89bcff547e00be3d38dc8d1e6cbcf8f41eba42
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/13/2022
-ms.locfileid: "66998258"
+ms.lasthandoff: 09/03/2022
+ms.locfileid: "67596685"
 ---
 # <a name="how-to-handle-legitimate-emails-getting-blocked-false-positive-using-microsoft-defender-for-office-365"></a>Cómo controlar el bloqueo de correos electrónicos legítimos (falso positivo), mediante Microsoft Defender para Office 365
 

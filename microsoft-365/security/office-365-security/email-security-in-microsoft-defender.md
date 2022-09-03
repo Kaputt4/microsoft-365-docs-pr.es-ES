@@ -1,5 +1,5 @@
 ---
-title: Seguridad del correo electrónico con el Explorador de amenazas en Microsoft Defender para Office 365
+title: Email seguridad con el Explorador de amenazas en Microsoft Defender para Office 365
 f1.keywords:
 - NOCSH
 ms.author: dansimp
@@ -15,16 +15,16 @@ ms.collection:
 description: Vea e investigue los intentos de suplantación de identidad de malware.
 ms.custom:
 - seo-marvel-apr2020
-ms.technology: mdo
-ms.prod: m365-security
-ms.openlocfilehash: 637e387ca457c9795892791a1a6d9326107fc6fb
-ms.sourcegitcommit: 725a92b0b1555572b306b285a0e7a7614d34e5e5
+ms.subservice: mdo
+ms.service: microsoft-365-security
+ms.openlocfilehash: cd3d2ca5dee7d3857bb889ded9dc83e6279f2e51
+ms.sourcegitcommit: 2b89bcff547e00be3d38dc8d1e6cbcf8f41eba42
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/24/2022
-ms.locfileid: "65648203"
+ms.lasthandoff: 09/03/2022
+ms.locfileid: "67596035"
 ---
-# <a name="email-security-with-threat-explorer-in-microsoft-defender-for-office-365"></a>Seguridad del correo electrónico con el Explorador de amenazas en Microsoft Defender para Office 365
+# <a name="email-security-with-threat-explorer-in-microsoft-defender-for-office-365"></a>Email seguridad con el Explorador de amenazas en Microsoft Defender para Office 365
 
 [!INCLUDE [MDO Trial banner](../includes/mdo-trial-banner.md)]
 
@@ -41,19 +41,19 @@ En este artículo:
 > [!NOTE]
 > Esto forma parte de una **serie de 3 artículos** sobre **el Explorador de amenazas (Explorer),** **la seguridad del correo electrónico** **y las detecciones del Explorador y en tiempo real** (como las diferencias entre las herramientas y los permisos necesarios para operarlas). Los otros dos artículos de esta serie son [Búsqueda de amenazas en el Explorador de amenazas y explorador](threat-hunting-in-threat-explorer.md) de [amenazas y detecciones en tiempo real](real-time-detections.md).
 
-En este artículo se explica cómo ver e investigar los intentos de malware y phishing detectados en el correo electrónico por Microsoft 365 características de seguridad.
+En este artículo se explica cómo ver e investigar los intentos de malware y phishing detectados en el correo electrónico por las características de seguridad de Microsoft 365.
 
 ## <a name="view-malware-detected-in-email"></a>Visualización del malware detectado en el correo electrónico
 
-Para ver el malware detectado en el correo electrónico ordenado por Microsoft 365 tecnología, use la vista [**Malware de correo electrónico \>**](threat-explorer-views.md#email--malware) del Explorador (o detecciones en tiempo real). El malware es la vista predeterminada, por lo que podría seleccionarse en cuanto abra el Explorador.
+Para ver el malware detectado en el correo electrónico ordenado por la tecnología de Microsoft 365, use la vista [**Email \> Malware**](threat-explorer-views.md#email--malware) del Explorador (o detecciones en tiempo real). El malware es la vista predeterminada, por lo que podría seleccionarse en cuanto abra el Explorador.
 
-1. En el portal de Microsoft 365 Defender en <https://security.microsoft.com>, vaya a **Correo electrónico & colaboración** y, a continuación, elija **Explorador** o **Detecciones en tiempo real**. Para ir directamente a la página, use <https://security.microsoft.com/threatexplorer> o <https://security.microsoft.com/realtimereports>.
+1. En el portal de Microsoft 365 Defender en <https://security.microsoft.com>, vaya a **Email & colaboración** y, a continuación, elija **Explorador** o **Detecciones en tiempo real**. Para ir directamente a la página, use <https://security.microsoft.com/threatexplorer> o <https://security.microsoft.com/realtimereports>.
 
    En este ejemplo se usa **el Explorador**.
 
    Desde aquí, comience en la vista, elija un período de tiempo determinado para investigar (si es necesario) y centre los filtros, según el [tutorial del Explorador](threat-hunting-in-threat-explorer.md#threat-explorer-walk-through).
 
-2. En la lista desplegable **Ver**, compruebe que **malware** de **correo electrónico** \> está seleccionado.
+2. En la lista desplegable **Ver**, compruebe que **Email** \> **Malware** está seleccionado.
 
 3. Haga clic en **Remitente** y, a continuación, elija **Tecnología de detección** **básica** \> en la lista desplegable.
 
@@ -71,9 +71,9 @@ Para ver el malware detectado en el correo electrónico ordenado por Microsoft 3
 
 Puede usar la opción **Informe limpio** en el Explorador para notificar un mensaje como falso positivo. 
 
-1. En el portal de Microsoft 365 Defender, vaya a **Correo electrónico &** **explorador** de colaboración \> y, a continuación, en la lista desplegable **Ver**, compruebe que **Phish** está seleccionado.
+1. En el portal de Microsoft 365 Defender, vaya a Email & **Explorador** de **colaboración** \> y, a continuación, en la lista desplegable **Ver**, compruebe que **Phish** está seleccionado.
 
-2. Compruebe que está en la pestaña **Correo electrónico** y, a continuación, en la lista de mensajes notificados, seleccione la que desea notificar como limpia. 
+2. Compruebe que se encuentra en la pestaña **Email** y, a continuación, en la lista de mensajes notificados, seleccione la que desea notificar como limpia. 
 
 3. Haga clic en **Acciones** para expandir la lista de opciones.
 
@@ -86,13 +86,13 @@ Puede usar la opción **Informe limpio** en el Explorador para notificar un mens
 
 ## <a name="view-phishing-url-and-click-verdict-data"></a>Ver la dirección URL de phishing y hacer clic en datos de veredicto
 
-Puede ver los intentos de suplantación de identidad a través de direcciones URL en el correo electrónico, incluida una lista de direcciones URL permitidas, bloqueadas y reemplazadas. Para identificar las direcciones URL en las que se ha hecho clic, se debe configurar [Caja fuerte Vínculos](safe-links.md). Asegúrese de configurar [las directivas de vínculos de Caja fuerte](set-up-safe-links-policies.md) para la protección con el tiempo de clic y el registro de veredictos de clics mediante Caja fuerte Vínculos.
+Puede ver los intentos de suplantación de identidad a través de direcciones URL en el correo electrónico, incluida una lista de direcciones URL permitidas, bloqueadas y reemplazadas. Para identificar las direcciones URL en las que se ha hecho clic, se deben configurar [vínculos seguros](safe-links.md) . Asegúrese de configurar [directivas de vínculos seguros](set-up-safe-links-policies.md) para la protección con el tiempo de clic y el registro de veredictos de clics mediante vínculos seguros.
 
-1. En el portal de Microsoft 365 Defender en <https://security.microsoft.com>, vaya a **Correo electrónico & colaboración** y, a continuación, elija **Explorador** o **Detecciones en tiempo real**. Para ir directamente a la página, use <https://security.microsoft.com/threatexplorer> o <https://security.microsoft.com/realtimereports>.
+1. En el portal de Microsoft 365 Defender en <https://security.microsoft.com>, vaya a **Email & colaboración** y, a continuación, elija **Explorador** o **Detecciones en tiempo real**. Para ir directamente a la página, use <https://security.microsoft.com/threatexplorer> o <https://security.microsoft.com/realtimereports>.
 
    En este ejemplo se usa **el Explorador**.
 
-2. En la lista desplegable **Ver** , elija **Email** \> **Phish**.
+2. En la lista desplegable **Ver**, elija **Email** \> **Phish**.
 
    > [!div class="mx-imgBorder"]
    > :::image type="content" source="../../media/ExplorerViewEmailPhishMenu.png" alt-text="El menú Ver del Explorador en contexto de suplantación de identidad" lightbox="../../media/ExplorerViewEmailPhishMenu.png":::
@@ -107,7 +107,7 @@ Puede ver los intentos de suplantación de identidad a través de direcciones UR
 
    - **Las direcciones URL principales** son las direcciones URL de los mensajes a los que filtró y la acción de entrega de correo electrónico cuenta para cada dirección URL. En la vista de correo electrónico de Phish, esta lista normalmente contiene direcciones URL legítimas. Los atacantes incluyen una combinación de direcciones URL buenas y malas en sus mensajes para intentar que se entreguen, pero hacen que los vínculos malintencionados parezcan más interesantes. La tabla de direcciones URL se ordena por número total de correo electrónico, pero esta columna está oculta para simplificar la vista.
 
-   - **Los clics superiores son las direcciones URL ajustadas por vínculos** Caja fuerte en las que se ha hecho clic, ordenadas por número total de clics. Esta columna tampoco se muestra para simplificar la vista. Los recuentos totales por columna indican el número de veredictos de clic de vínculos de Caja fuerte para cada dirección URL en la que se ha hecho clic. En la vista de correo electrónico de Phish, suelen ser direcciones URL sospechosas o malintencionadas. Pero la vista podría incluir direcciones URL que no son amenazas, pero que están en mensajes de tipo phish. Los clics de dirección URL en los vínculos desencapsados no aparecen aquí.
+   - **Los clics superiores son las direcciones** URL encapsuladas en vínculos seguros en las que se ha hecho clic, ordenadas por número total de clics. Esta columna tampoco se muestra para simplificar la vista. Los recuentos totales por columna indican el recuento de veredictos de clic de vínculos seguros para cada dirección URL en la que se ha hecho clic. En la vista de correo electrónico de Phish, suelen ser direcciones URL sospechosas o malintencionadas. Pero la vista podría incluir direcciones URL que no son amenazas, pero que están en mensajes de tipo phish. Los clics de dirección URL en los vínculos desencapsados no aparecen aquí.
 
    Las dos tablas de direcciones URL muestran las direcciones URL principales en los mensajes de correo electrónico de suplantación de identidad por acción de entrega y ubicación. Las tablas muestran los clics de dirección URL que se bloquearon o visitaron a pesar de una advertencia, para que pueda ver qué posibles vínculos incorrectos se presentaron a los usuarios y en los que los usuarios hicieron clic. Desde aquí, puede realizar análisis adicionales. Por ejemplo, debajo del gráfico puede ver las direcciones URL principales en los mensajes de correo electrónico que se bloquearon en el entorno de la organización.
 
@@ -121,7 +121,7 @@ Puede ver los intentos de suplantación de identidad a través de direcciones UR
 
 ### <a name="interpretation-of-click-verdicts"></a>Interpretación de los veredictos de clic
 
-En los controles flotantes Correo electrónico o DIRECCIÓN URL, Clics superiores y, en nuestras experiencias de filtrado, verá diferentes valores de veredicto de clics:
+En los controles flotantes Email o URL, Clics superiores y, en nuestras experiencias de filtrado, verá diferentes valores de veredicto de clics:
 
 - **Ninguno:** No se puede capturar el veredicto de la dirección URL. Es posible que el usuario haya hecho clic en la dirección URL.
 - **Permitido:** Se permitió al usuario navegar a la dirección URL.
@@ -141,4 +141,4 @@ En los controles flotantes Correo electrónico o DIRECCIÓN URL, Clics superiore
 
 ## <a name="other-articles"></a>Otros artículos
 
-[Investigación de correos electrónicos con la página Entidad de correo electrónico](mdo-email-entity-page.md)
+[Investigación de correos electrónicos con la página de entidad Email](mdo-email-entity-page.md)

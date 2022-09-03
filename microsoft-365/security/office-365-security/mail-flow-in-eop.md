@@ -13,15 +13,15 @@ ms.assetid: e109077e-cc85-4c19-ae40-d218ac7d0548
 ms.custom:
 - seo-marvel-apr2020
 description: Administración puede obtener información sobre las opciones para configurar el flujo de correo y el enrutamiento en Exchange Online Protection (EOP).
-ms.technology: mdo
-ms.prod: m365-security
+ms.subservice: mdo
+ms.service: microsoft-365-security
 ms.collection: M365-security-compliance
-ms.openlocfilehash: e0267af0297dce41657c76e97964e5c02fbe5815
-ms.sourcegitcommit: 725a92b0b1555572b306b285a0e7a7614d34e5e5
+ms.openlocfilehash: 15a0bf969a1b1c8254845be3c4c06eb556366bf1
+ms.sourcegitcommit: 2b89bcff547e00be3d38dc8d1e6cbcf8f41eba42
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/24/2022
-ms.locfileid: "65648753"
+ms.lasthandoff: 09/03/2022
+ms.locfileid: "67597876"
 ---
 # <a name="mail-flow-in-eop"></a>Flujo de correo en EOP
 
@@ -32,7 +32,7 @@ ms.locfileid: "65648753"
 - [Plan 1 y Plan 2 de Microsoft Defender para Office 365](defender-for-office-365.md)
 - [Microsoft 365 Defender](../defender/microsoft-365-defender.md)
 
-En Microsoft 365 organizaciones con buzones de Exchange Online o organizaciones independientes de Exchange Online Protection (EOP) sin Exchange Online buzones, todos los mensajes enviados a su organización pasan a través de EOP antes de que los usuarios los vean. Tiene opciones sobre cómo enrutar los mensajes que pasan a través de EOP para su procesamiento antes de que se enruten a buzones de usuario.
+En las organizaciones de Microsoft 365 con buzones de Exchange Online o organizaciones independientes de Exchange Online Protection (EOP) sin buzones de Exchange Online, todos los mensajes enviados a su organización pasan a través de EOP antes de que los usuarios los vean. Tiene opciones sobre cómo enrutar los mensajes que pasan a través de EOP para su procesamiento antes de que se enruten a buzones de usuario.
 
 ## <a name="working-with-messages-and-message-access-options"></a>Trabajar con mensajes y opciones de acceso de mensajes
 
@@ -48,7 +48,7 @@ Si agrega subdominios a la organización, el servicio de EOP también puede ayud
 
 [Filtrado mejorado para conectores](/exchange/mail-flow-best-practices/use-connectors-to-configure-mail-flow/enhanced-filtering-for-connectors) describe cómo configurar conectores si el correo se enruta a un servicio o dispositivo antes de EOP.
 
-En entornos híbridos donde EOP protege los buzones de correo Exchange locales, debe configurar reglas de flujo de correo (también conocidas como reglas de transporte) en Exchange locales. Estas reglas de flujo de correo traducen el veredicto de filtrado de correo no deseado de EOP para que la regla de correo no deseado del buzón pueda mover el mensaje a la carpeta Correo no deseado. Para obtener información, consulte [Configuración de un EOP para entregar el correo no deseado en la carpeta de correo no deseado en entornos híbridos](/exchange/standalone-eop/configure-eop-spam-protection-hybrid). Si no desea mover mensajes a la carpeta correo no deseado de cada usuario, puede elegir otra acción editando las directivas de antispam (también conocidas como directivas de filtro de contenido). Para obtener más información, consulte [Configurar directivas contra correo electrónico no deseado](configure-your-spam-filter-policies.md).
+En entornos híbridos donde EOP protege los buzones de Exchange locales, debe configurar reglas de flujo de correo (también conocidas como reglas de transporte) en Exchange local. Estas reglas de flujo de correo traducen el veredicto de filtrado de correo no deseado de EOP para que la regla de correo no deseado del buzón pueda mover el mensaje a la carpeta De correo no deseado Email. Para obtener información, consulte [Configuración de un EOP para entregar el correo no deseado en la carpeta de correo no deseado en entornos híbridos](/exchange/standalone-eop/configure-eop-spam-protection-hybrid). Si no desea mover mensajes a la carpeta de Email no deseado de cada usuario, puede elegir otra acción editando las directivas de antispam (también conocidas como directivas de filtro de contenido). Para obtener más información, consulte [Configurar directivas contra correo electrónico no deseado](configure-your-spam-filter-policies.md).
 
 ## <a name="verify-mail-flow"></a>Comprobar el flujo de correo
 

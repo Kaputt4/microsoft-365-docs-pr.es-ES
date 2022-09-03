@@ -17,14 +17,14 @@ ms.collection:
 ms.custom:
 - seo-marvel-apr2020
 description: Los administradores pueden obtener información sobre el nivel de confianza de correo no deseado (SCL) que se aplica a los mensajes de Exchange Online Protection (EOP).
-ms.technology: mdo
-ms.prod: m365-security
-ms.openlocfilehash: 8febc1d0e0c4fd98b33fb0016beee89a30802241
-ms.sourcegitcommit: 725a92b0b1555572b306b285a0e7a7614d34e5e5
+ms.subservice: mdo
+ms.service: microsoft-365-security
+ms.openlocfilehash: 4f041fe92d6ba295a11dab7904316b238686a34f
+ms.sourcegitcommit: 2b89bcff547e00be3d38dc8d1e6cbcf8f41eba42
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/24/2022
-ms.locfileid: "65647917"
+ms.lasthandoff: 09/03/2022
+ms.locfileid: "67595947"
 ---
 # <a name="spam-confidence-level-scl-in-eop"></a>Nivel de confianza de correo no deseado (SCL) en EOP
 
@@ -33,7 +33,7 @@ ms.locfileid: "65647917"
 - [Plan 1 y Plan 2 de Microsoft Defender para Office 365](defender-for-office-365.md)
 - [Microsoft 365 Defender](../defender/microsoft-365-defender.md)
 
-En Microsoft 365 organizaciones con buzones en Exchange Online o organizaciones independientes de Exchange Online Protection (EOP) sin buzones de correo Exchange Online, los mensajes entrantes pasan por el filtrado de correo no deseado en EOP y se les asigna una puntuación de correo no deseado. Esa puntuación se asigna a un nivel de confianza de correo no deseado (SCL) individual que se agrega al mensaje en un encabezado X. Un SCL superior indica que es más probable que un mensaje sea correo no deseado. EOP toma medidas en el mensaje en función de la SCL.
+En las organizaciones de Microsoft 365 con buzones en Exchange Online o organizaciones independientes de Exchange Online Protection (EOP) sin Exchange Online buzones, los mensajes entrantes pasan por el filtrado de correo no deseado en EOP y se les asigna una puntuación de correo no deseado. Esa puntuación se asigna a un nivel de confianza de correo no deseado (SCL) individual que se agrega al mensaje en un encabezado X. Un SCL superior indica que es más probable que un mensaje sea correo no deseado. EOP toma medidas en el mensaje en función de la SCL.
 
 En la tabla siguiente se describe lo que significa SCL y las acciones predeterminadas que se realizan en los mensajes. Para obtener más información sobre las acciones que puede realizar en los mensajes en función del veredicto de filtrado de correo no deseado, consulte [Configuración de directivas contra correo no deseado en EOP](configure-your-spam-filter-policies.md).
 
@@ -52,4 +52,4 @@ De forma similar a la SCL, el nivel de queja masiva (BCL) identifica el correo e
 
 ****
 
-![Icono corto de linkedin Learning.](../../media/eac8a413-9498-4220-8544-1e37d1aaea13.png) **¿No es nuevo en Microsoft 365?** Descubra cursos de vídeo **gratuitos para administradores de Microsoft 365 y profesionales de TI**, que LinkedIn Learning le ofrece.
+![Icono corto de LinkedIn Learning.](../../media/eac8a413-9498-4220-8544-1e37d1aaea13.png) **¿Es nuevo en Microsoft 365?** Descubra cursos de vídeo **gratuitos para administradores y profesionales de TI de Microsoft 365**, que LinkedIn Learning le ofrece.

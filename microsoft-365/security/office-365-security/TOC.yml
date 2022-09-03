@@ -404,6 +404,8 @@
           href: step-by-step-guides/step-by-step-guide-overview.md
         - name: Configurar
           items:
+            - name: Introducción a la configuración en profundidad de defensa para la seguridad del correo electrónico
+              href: step-by-step-guides/defense-in-depth-guide.md
             - name: Cómo configurar directivas y permisos de cuarentena
               href: step-by-step-guides/how-to-configure-quarantine-permissions-with-quarantine-policies.md
             - name: Configure los pasos para las directivas de seguridad preestablecidas estándar o estricta en Microsoft Defender para Office 365
@@ -418,6 +420,8 @@
               href: step-by-step-guides/utilize-microsoft-defender-for-office-365-in-sharepoint-online.md
         - name: Utilice
           items:
+            - name: Seguimiento y respuesta a amenazas de seguridad emergentes con la vista de campañas en Microsoft Defender para Office 365
+              href: step-by-step-guides/track-and-respond-to-emerging-threats-with-campaigns.md
             - name: Configurar una notificación de resumen de los cambios en Microsoft Defender para Office 365 desde el centro de mensajes
               href: step-by-step-guides/stay-informed-with-message-center.md
             - name: 'Cómo priorizar, administrar, investigar y actuar ante incidentes en Microsoft 365 Defender'

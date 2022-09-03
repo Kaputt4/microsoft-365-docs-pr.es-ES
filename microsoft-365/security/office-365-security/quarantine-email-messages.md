@@ -20,14 +20,14 @@ ms.collection:
 ms.custom:
 - seo-marvel-apr2020
 description: Los administradores pueden obtener información sobre la cuarentena en Exchange Online Protection (EOP) que contiene mensajes potencialmente peligrosos o no deseados.
-ms.technology: mdo
-ms.prod: m365-security
-ms.openlocfilehash: c61154054669032a23c9cbdb0d11344ef78ec281
-ms.sourcegitcommit: e852dafda3c0d1dfdde492600093aa17a3dcf5a6
+ms.subservice: mdo
+ms.service: microsoft-365-security
+ms.openlocfilehash: af99da8ddaddcbf8c9fd746496a66242c57abd5b
+ms.sourcegitcommit: 2b89bcff547e00be3d38dc8d1e6cbcf8f41eba42
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/25/2022
-ms.locfileid: "67002480"
+ms.lasthandoff: 09/03/2022
+ms.locfileid: "67596817"
 ---
 # <a name="quarantined-email-messages-in-eop-and-defender-for-office-365"></a>Mensajes de correo electrónico en cuarentena en EOP y Defender para Office 365
 
@@ -60,8 +60,8 @@ Tanto los usuarios como los administradores pueden trabajar con mensajes en cuar
 
   |Motivo de la cuarentena:|Período de retención predeterminado|¿Personalizable?|Comentarios|
   |---|---|:---:|---|
-  |Mensajes en cuarentena por directivas antispam: correo no deseado, spam de alta confianza, suplantación de identidad (phishing), suplantación de identidad (phishing) de alta confianza o de forma masiva.|15 días: <ul><li>En la directiva de antispam predeterminada.</li><li>En las directivas contra correo no deseado que se crean en PowerShell.</li></ul> <p> 30 días en las directivas contra correo no deseado que cree en el portal de Microsoft 365 Defender.|Sí|Puede configurar (inferior) este valor en las directivas contra correo no deseado. Para obtener más información, consulte la configuración **Retener correo no deseado en cuarentena para estos muchos días** (_QuarantineRetentionPeriod_) en [Configurar directivas de antispam](configure-your-spam-filter-policies.md).|
-  |Mensajes en cuarentena por directivas anti phishing: inteligencia de suplantación de identidad en EOP; suplantación de usuario, suplantación de dominio o inteligencia de buzón de correo en Defender para Office 365.|30 días|Sí|Este período de retención también se controla mediante la configuración **Retener correo no deseado en cuarentena durante estos muchos días** (_QuarantineRetentionPeriod_) en las **directivas de antispam** . El período de retención que se usa es el valor de la primera directiva **antispam** coincidente en la que se define el destinatario.|
+  |Mensajes en cuarentena por directivas antispam: correo no deseado, spam de alta confianza, suplantación de identidad (phishing), suplantación de identidad (phishing) de alta confianza o de forma masiva.|15 días: <ul><li>En la directiva de antispam predeterminada.</li><li>En las directivas contra correo no deseado que se crean en PowerShell.</li></ul> <p> 30 días en las directivas contra correo no deseado que cree en el portal de Microsoft 365 Defender.|Yes|Puede configurar (inferior) este valor en las directivas contra correo no deseado. Para obtener más información, consulte la configuración **Retener correo no deseado en cuarentena para estos muchos días** (_QuarantineRetentionPeriod_) en [Configurar directivas de antispam](configure-your-spam-filter-policies.md).|
+  |Mensajes en cuarentena por directivas anti phishing: inteligencia de suplantación de identidad en EOP; suplantación de usuario, suplantación de dominio o inteligencia de buzón de correo en Defender para Office 365.|30 días|Yes|Este período de retención también se controla mediante la configuración **Retener correo no deseado en cuarentena durante estos muchos días** (_QuarantineRetentionPeriod_) en las **directivas de antispam** . El período de retención que se usa es el valor de la primera directiva **antispam** coincidente en la que se define el destinatario.|
   |Mensajes en cuarentena por directivas antimalware (mensajes de malware).|30 días|No||
   |Mensajes en cuarentena por directivas de datos adjuntos seguros en Defender para Office 365 (mensajes de malware).|30 días|No||
   |Mensajes en cuarentena por reglas de flujo de correo: la acción es **Entregar el mensaje a la cuarentena hospedada** (_cuarentena_).|30 días|No||

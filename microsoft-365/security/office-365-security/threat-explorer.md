@@ -18,14 +18,14 @@ ms.collection:
 description: Use el Explorador y las detecciones en tiempo real en el portal de Microsoft 365 Defender para investigar y responder a las amenazas de forma eficaz.
 ms.custom:
 - seo-marvel-apr2020
-ms.technology: mdo
-ms.prod: m365-security
-ms.openlocfilehash: 0920439345b026879b86ad3b2ce104d3ea8174d1
-ms.sourcegitcommit: 725a92b0b1555572b306b285a0e7a7614d34e5e5
+ms.subservice: mdo
+ms.service: microsoft-365-security
+ms.openlocfilehash: 7710b2eb156845ccc0e79550a76a9b61ac90327f
+ms.sourcegitcommit: 2b89bcff547e00be3d38dc8d1e6cbcf8f41eba42
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/24/2022
-ms.locfileid: "65649447"
+ms.lasthandoff: 09/03/2022
+ms.locfileid: "67597269"
 ---
 # <a name="threat-explorer-and-real-time-detections"></a>Explorador de amenazas y detecciones en tiempo real
 
@@ -47,7 +47,7 @@ Las detecciones en tiempo real o explorador ayudan al equipo de operaciones de s
 
 Con este informe, puede:
 
-- [Ver el malware detectado por Microsoft 365 características de seguridad](#see-malware-detected-in-email-by-technology)
+- [Ver el malware detectado por las características de seguridad de Microsoft 365](#see-malware-detected-in-email-by-technology)
 - [Ver la dirección URL de phishing y hacer clic en datos de veredicto](#view-phishing-url-and-click-verdict-data)
 - [Iniciar un proceso de investigación y respuesta automatizado desde una vista en el Explorador](#start-automated-investigation-and-response) (solo Defender para Office 365 plan 2)
 - [Investigar el correo electrónico malintencionado y mucho más](#more-ways-to-use-explorer-and-real-time-detections)
@@ -69,23 +69,23 @@ El identificador de alerta está disponible en la dirección URL cuando se ve un
 
 ### <a name="extending-the-explorer-and-real-time-detections-data-retention-and-search-limit-for-trial-tenants-from-7-to-30-days"></a>Ampliación de la retención de datos del Explorador (y detecciones en tiempo real) y el límite de búsqueda para inquilinos de prueba de 7 a 30 días
 
-Como parte de este cambio, podrá buscar y filtrar los datos de correo electrónico durante 30 días (un aumento con respecto a los 7 días anteriores) en El Explorador de amenazas/Detecciones en tiempo real para los inquilinos de prueba de Defender para Office P1 y P2.
+Como parte de este cambio, podrá buscar y filtrar los datos de correo electrónico durante 30 días (un aumento con respecto a los 7 días anteriores) en explorador de amenazas o detecciones en tiempo real para los inquilinos de prueba de Defender para Office P1 y P2.
 Esto no afecta a los inquilinos de producción para los clientes P1 y P2/E5, que ya tienen las capacidades de retención y búsqueda de datos de 30 días.
 
 ### <a name="updated-limits-for-export-of-records-for-threat-explorer"></a>Límites actualizados para la exportación de registros para el Explorador de amenazas
 
-Como parte de esta actualización, el número de filas de registros de correo electrónico que se pueden exportar desde el Explorador de amenazas aumenta de 9990 a 200 000 registros. El conjunto de columnas que se pueden exportar actualmente seguirá siendo el mismo, pero el número de filas aumentará con respecto al límite actual.
+Como parte de esta actualización, el número de filas de Email registros que se pueden exportar desde el Explorador de amenazas se incrementa de 9990 a 200 000 registros. El conjunto de columnas que se pueden exportar actualmente seguirá siendo el mismo, pero el número de filas aumentará con respecto al límite actual.
 
 ### <a name="tags-in-threat-explorer"></a>Etiquetas en el Explorador de amenazas
 
 > [!NOTE]
-> La característica de etiquetas de usuario está en *versión preliminar*, no está disponible para todos y está sujeta a cambios. Para obtener información sobre la programación de la versión, consulte la hoja de ruta de Microsoft 365.
+> La característica de etiquetas de usuario está en *versión preliminar*, no está disponible para todos y está sujeta a cambios. Para obtener información sobre la programación de lanzamiento, consulte el plan de desarrollo de Microsoft 365.
 
 Las etiquetas de usuario identifican grupos específicos de usuarios en Microsoft Defender para Office 365. Para obtener más información sobre las etiquetas, incluidas las licencias y la configuración, consulte [Etiquetas de usuario](user-tags.md).
 
 En el Explorador de amenazas, puede ver información sobre las etiquetas de usuario en las siguientes experiencias.
 
-#### <a name="email-grid-view"></a>Vista de cuadrícula de correo electrónico
+#### <a name="email-grid-view"></a>Email vista de cuadrícula
 
 La columna **Etiquetas** de la cuadrícula de correo electrónico contiene todas las etiquetas que se han aplicado a los buzones de remitente o destinatario. De forma predeterminada, las etiquetas del sistema, como las cuentas de prioridad, se muestran primero.
 
@@ -101,15 +101,15 @@ Puede usar etiquetas como filtro. Busque solo entre cuentas de prioridad o escen
 > [!div class="mx-imgBorder"]
 > :::image type="content" source="../../media/tags-filter-not.png" alt-text="Las etiquetas que no se filtran" lightbox="../../media/tags-filter-not.png":::
 
-#### <a name="email-detail-flyout"></a>Control flotante de detalles de correo electrónico
+#### <a name="email-detail-flyout"></a>Email control flotante de detalles
 
 Para ver las etiquetas individuales del remitente y el destinatario, seleccione el asunto para abrir el control flotante de detalles del mensaje. En la pestaña **Resumen** , las etiquetas de remitente y destinatario se muestran por separado, si están presentes para un correo electrónico.
 La información sobre etiquetas individuales para remitente y destinatario también se extiende a los datos CSV exportados, donde puede ver estos detalles en dos columnas independientes.
 
 > [!div class="mx-imgBorder"]
-> :::image type="content" source="../../media/tags-flyout.png" alt-text="Etiquetas de detalles de correo electrónico" lightbox="../../media/tags-flyout.png":::
+> :::image type="content" source="../../media/tags-flyout.png" alt-text="Etiquetas de detalles de Email" lightbox="../../media/tags-flyout.png":::
 
-La información de etiquetas también se muestra en el control flotante Clics de dirección URL. Para verlo, vaya a la vista Phish o Todo el correo electrónico y, a continuación, a la pestaña **Url** o **URL Clics** . Seleccione un control flotante de dirección URL individual para ver detalles adicionales sobre los clics de esa dirección URL, incluidas las etiquetas asociadas a ese clic.
+La información de etiquetas también se muestra en el control flotante Clics de dirección URL. Para verlo, vaya a la vista Phish o All Email y, a continuación, a la pestaña **Url** o **URL Clics**. Seleccione un control flotante de dirección URL individual para ver detalles adicionales sobre los clics de esa dirección URL, incluidas las etiquetas asociadas a ese clic.
 
 ### <a name="updated-timeline-view"></a>Vista de escala de tiempo actualizada
 
@@ -128,7 +128,7 @@ Después de estas actualizaciones, verá una única entrada para cada mensaje, i
 
 Además de mostrar amenazas de malware y phishing, verá el veredicto de correo no deseado asociado a un correo electrónico. En el correo electrónico, vea todas las amenazas asociadas al correo electrónico junto con las tecnologías de detección correspondientes. Un correo electrónico puede tener cero, una o varias amenazas. Verá las amenazas actuales en la sección **Detalles** del control flotante de correo electrónico. En el caso de varias amenazas (como malware y phishing), el campo **tecnología de detección** muestra la asignación de detección de amenazas, que es la tecnología de detección que identificó la amenaza.
 
-El conjunto de tecnologías de detección ahora incluye nuevos métodos de detección, así como tecnologías de detección de correo no deseado. Puede usar el mismo conjunto de tecnologías de detección para filtrar los resultados en las distintas vistas de correo electrónico (Malware, Phish, Todo el correo electrónico).
+El conjunto de tecnologías de detección ahora incluye nuevos métodos de detección, así como tecnologías de detección de correo no deseado. Puede usar el mismo conjunto de tecnologías de detección para filtrar los resultados en las distintas vistas de correo electrónico (Malware, Phish, All Email).
 
 > [!NOTE]
 > Es posible que el análisis de veredictos no esté necesariamente vinculado a entidades. Por ejemplo, un correo electrónico podría clasificarse como phish o spam, pero no hay direcciones URL que estén selladas con un veredicto de phish/spam. Esto se debe a que los filtros también evalúan el contenido y otros detalles de un correo electrónico antes de asignar un veredicto.
@@ -165,7 +165,7 @@ Actualmente, exponemos la ubicación de entrega en la cuadrícula de correo elec
 > [!NOTE]
 > Hay algunos casos en los que **la ubicación de entrega** y **la acción de entrega** pueden mostrarse como "desconocidos":
 >
-> - Es posible que vea **Ubicación de entrega** como "entregada" y **Ubicación de entrega** como "desconocida" si el mensaje se ha entregado, pero una regla de bandeja de entrada ha movido el mensaje a una carpeta predeterminada (como Borrador o Archivo) en lugar de a la carpeta Bandeja de entrada o Correo electrónico no deseado.
+> - Es posible que vea **Ubicación de entrega** como "entregada" y **Ubicación de entrega** como "desconocida" si el mensaje se ha entregado, pero una regla de bandeja de entrada ha movido el mensaje a una carpeta predeterminada (como Borrador o Archivo) en lugar de a la carpeta Bandeja de entrada o Correo no deseado Email.
 >
 > - **La ubicación de entrega más reciente** puede ser desconocida si se intentó realizar una acción de administrador o sistema (como ZAP), pero no se encontró el mensaje. Normalmente, la acción se produce después de que el usuario haya movido o eliminado el mensaje. En tales casos, compruebe la columna **Resultado/Detalles** en la vista de escala de tiempo. Busque la instrucción "Mensaje movido o eliminado por el usuario".
 
@@ -184,13 +184,13 @@ Se aplicaron *acciones adicionales* después de la entrega del correo electróni
 
 ### <a name="system-overrides"></a>Invalidaciones del sistema
 
-*Las invalidaciones del sistema* permiten realizar excepciones en la ubicación de entrega prevista de un mensaje. La ubicación de entrega proporcionada por el sistema se invalida en función de las amenazas y otras detecciones identificadas por la pila de filtrado. Las invalidaciones del sistema se pueden establecer a través de la directiva de inquilino o de usuario para entregar el mensaje tal y como sugiere la directiva. Las invalidaciones pueden identificar la entrega involuntaria de mensajes malintencionados debido a brechas de configuración, como una directiva de remitente demasiado amplia Caja fuerte establecida por un usuario. Estos valores de invalidación pueden ser:
+*Las invalidaciones del sistema* permiten realizar excepciones en la ubicación de entrega prevista de un mensaje. La ubicación de entrega proporcionada por el sistema se invalida en función de las amenazas y otras detecciones identificadas por la pila de filtrado. Las invalidaciones del sistema se pueden establecer a través de la directiva de inquilino o de usuario para entregar el mensaje tal y como sugiere la directiva. Las invalidaciones pueden identificar la entrega involuntaria de mensajes malintencionados debido a brechas de configuraciones, como una directiva de remitente seguro demasiado amplia establecida por un usuario. Estos valores de invalidación pueden ser:
 
 - Permitido por la directiva de usuario: un usuario crea directivas en el nivel de buzón para permitir dominios o remitentes.
 
 - Bloqueado por la directiva de usuario: un usuario crea directivas en el nivel de cuadro de correo para bloquear dominios o remitentes.
 
-- Permitido por la directiva de la organización: los equipos de seguridad de la organización establecen directivas o Exchange reglas de flujo de correo (también conocidas como reglas de transporte) para permitir remitentes y dominios para los usuarios de su organización. Esto puede ser para un conjunto de usuarios o toda la organización.
+- Permitido por la directiva de la organización: los equipos de seguridad de la organización establecen directivas o reglas de flujo de correo de Exchange (también conocidas como reglas de transporte) para permitir remitentes y dominios para los usuarios de su organización. Esto puede ser para un conjunto de usuarios o toda la organización.
 
 - Bloqueado por la directiva de la organización: los equipos de seguridad de la organización establecen directivas o reglas de flujo de correo para bloquear remitentes, dominios, idiomas de mensaje o direcciones IP de origen para los usuarios de su organización. Esto se puede aplicar a un conjunto de usuarios o a toda la organización.
 
@@ -241,7 +241,7 @@ Ahora puede ordenar y filtrar las etiquetas de usuario personalizadas o del sist
 
 ### <a name="timezone-improvements"></a>Mejoras en la zona horaria
 
-Verá la zona horaria para los registros de correo electrónico en el portal, así como para los datos exportados. Será visible en experiencias como Email Grid, control flotante Detalles, Escala de tiempo de correo electrónico y Correos electrónicos similares, por lo que la zona horaria del conjunto de resultados es clara.
+Verá la zona horaria para los registros de correo electrónico en el portal, así como para los datos exportados. Será visible entre experiencias como Email Grid, control flotante Detalles, escala de tiempo de Email y Correos electrónicos similares, por lo que la zona horaria del conjunto de resultados es clara.
 
 > [!div class="mx-imgBorder"]
 > :::image type="content" source="../../media/TimezoneImprovements.png" alt-text="Vista de la zona horaria en el Explorador" lightbox="../../media/TimezoneImprovements.png":::
@@ -280,14 +280,14 @@ Podrá exportar la lista de usuarios de destino, hasta un límite de 3000, junto
 > [!div class="mx-imgBorder"]
 > :::image type="content" source="../../media/Top_Targeted_Users.png" alt-text="Los usuarios de destino superior" lightbox="../../media/Top_Targeted_Users.png":::
 
-### <a name="exchange-transport-rules"></a>Exchange reglas de transporte
+### <a name="exchange-transport-rules"></a>Reglas de transporte de Exchange
 
-Como parte del enriquecimiento de datos, podrá ver todas las diferentes reglas de transporte de Exchange (ETR) que se aplicaron a un mensaje. Esta información estará disponible en la vista de cuadrícula Correo electrónico. Para verlo, seleccione **Opciones de columna** en la cuadrícula y, a continuación, **Agregue Exchange regla de transporte** en las opciones de columna. También estará visible en el control flotante **Detalles** del correo electrónico.
+Como parte del enriquecimiento de datos, podrá ver todas las diferentes reglas de transporte de Exchange (ETR) que se aplicaron a un mensaje. Esta información estará disponible en la vista de cuadrícula de Email. Para verlo, seleccione **Opciones de columna** en la cuadrícula y, a continuación, **Agregue regla de transporte de Exchange** en las opciones de columna. También estará visible en el control flotante **Detalles** del correo electrónico.
 
 Podrá ver el GUID y el nombre de las reglas de transporte que se aplicaron al mensaje. Podrá buscar los mensajes mediante el nombre de la regla de transporte. Se trata de una búsqueda "Contiene", lo que significa que también puede realizar búsquedas parciales.
 
 > [!IMPORTANT]
-> La disponibilidad de nombres y búsqueda de ETR depende del rol específico que se le asigne. Debe tener uno de los siguientes roles o permisos para ver los nombres y la búsqueda de ETR. Si no tiene ninguno de estos roles asignados, no podrá ver los nombres de las reglas de transporte ni buscar mensajes mediante nombres ETR. Sin embargo, podría ver la etiqueta ETR y la información del GUID en Detalles del correo electrónico. Otras experiencias de visualización de registros en cuadrículas de correo electrónico, controles flotantes de correo electrónico, filtros y exportación no se ven afectados.
+> La disponibilidad de nombres y búsqueda de ETR depende del rol específico que se le asigne. Debe tener uno de los siguientes roles o permisos para ver los nombres y la búsqueda de ETR. Si no tiene ninguno de estos roles asignados, no podrá ver los nombres de las reglas de transporte ni buscar mensajes mediante nombres ETR. Sin embargo, podría ver la etiqueta ETR y la información del GUID en los detalles de Email. Otras experiencias de visualización de registros en Email Grids, Email controles flotantes, filtros y exportación no se ven afectados.
 >
 > - Solo EXO: prevención de pérdida de datos: todos
 > - Solo EXO: O365SupportViewConfig: todos
@@ -301,9 +301,9 @@ Podrá ver el GUID y el nombre de las reglas de transporte que se aplicaron al m
 > > [!div class="mx-imgBorder"]
 > > :::image type="content" source="../../media/ETR_Details.png" alt-text="Reglas de transporte de Exchange" lightbox="../../media/ETR_Details.png":::
 
-### <a name="inbound-connectors"></a>Conectores de entrada
+### <a name="inbound-connectors"></a>Conectores entrantes
 
-Los conectores son una colección de instrucciones que personalizan cómo fluye el correo electrónico hacia y desde la Microsoft 365 o Office 365 organización. Permiten aplicar restricciones o controles de seguridad. En el Explorador de amenazas, ahora puede ver los conectores relacionados con un correo electrónico y buscar correos electrónicos mediante nombres de conector.
+Los conectores son una colección de instrucciones que personalizan cómo fluye el correo electrónico hacia y desde su organización de Microsoft 365 o Office 365. Permiten aplicar restricciones o controles de seguridad. En el Explorador de amenazas, ahora puede ver los conectores relacionados con un correo electrónico y buscar correos electrónicos mediante nombres de conector.
 
 La búsqueda de conectores es "contiene" por naturaleza, lo que significa que las búsquedas parciales de palabras clave también deberían funcionar. En la vista de cuadrícula Principal, el control flotante Detalles y el ARCHIVO CSV exportado, los conectores se muestran en el formato nombre/GUID, como se muestra aquí:
 
@@ -314,20 +314,20 @@ La búsqueda de conectores es "contiene" por naturaleza, lo que significa que la
 
 - [Visualización de correos electrónicos de suplantación de identidad enviados a usuarios y dominios suplantados](#view-phishing-emails-sent-to-impersonated-users-and-domains)
 - [Vista previa del encabezado de correo electrónico y descarga del cuerpo del correo electrónico](#preview-email-header-and-download-email-body)
-- [Escala de tiempo del correo electrónico](#email-timeline)
+- [escala de tiempo de Email](#email-timeline)
 - [Exportar datos de clic de dirección URL](#export-url-click-data)
 
 ### <a name="view-phishing-emails-sent-to-impersonated-users-and-domains"></a>Visualización de correos electrónicos de suplantación de identidad enviados a usuarios y dominios suplantados
 
 Para identificar los intentos de suplantación de identidad de los usuarios y dominios que son usuarios suplantados se deben agregar a la lista de *usuarios que se van a proteger*. En el caso de los dominios, los administradores deben habilitar *los dominios de la organización* o agregar un nombre de dominio a *Dominios para protegerlos*. Los dominios que se van a proteger se encuentran en la *página Directiva contra suplantación de identidad* en la sección *Suplantación* .
 
-Para revisar los mensajes de phish y buscar usuarios o dominios suplantados, use la [vista Correo electrónico > Phish](threat-explorer-views.md) del Explorador.
+Para revisar los mensajes de phish y buscar usuarios o dominios suplantados, use la [vista Email > Phish](threat-explorer-views.md) del Explorador.
 
 En este ejemplo se usa el Explorador de amenazas.
 
 1. En el [Centro de cumplimiento de seguridad &](https://protection.office.com) (https://protection.office.com), elija Administración de amenazas > Explorer (o Detecciones en tiempo real).
 
-2. En el menú Ver, elija Correo electrónico > Phish.
+2. En el menú Ver, elija Email > Phish.
 
    Aquí puede elegir un **dominio suplantado** o un **usuario suplantado**.
 
@@ -335,21 +335,21 @@ En este ejemplo se usa el Explorador de amenazas.
 
    Por ejemplo, busque nombres de dominio protegidos como *contoso*, *contoso.com* o *contoso.com.au*.
 
-4. Seleccione el Asunto de cualquier mensaje en la pestaña Correo electrónico > pestaña Detalles para ver información de suplantación adicional, como Dominio suplantado o Ubicación detectada.
+4. Seleccione el Asunto de cualquier mensaje en la pestaña Email > pestaña Detalles para ver información de suplantación adicional, como Dominio suplantado o Ubicación detectada.
 
-    **OR**
+    **O**
 
     Seleccione **Usuario suplantado** y escriba la dirección de correo electrónico de un usuario protegido en el cuadro de texto.
 
     > [!TIP]
     > **Para obtener los mejores resultados**, use *direcciones de correo electrónico completas* para buscar usuarios protegidos. Encontrará el usuario protegido más rápido y correctamente si busca *firstname.lastname@contoso.com*, por ejemplo, al investigar la suplantación de usuario. Al buscar un dominio protegido, la búsqueda tomará el dominio raíz (contoso.com, por ejemplo) y el nombre de dominio (*contoso*). La búsqueda del dominio raíz *contoso.com* devolverá las suplantaciones de *contoso.com* y el nombre de dominio *contoso*.
 
-5. Seleccione el **Asunto** de cualquier mensaje en **la pestaña** >  Correo **electrónicoDetails** para ver información adicional de suplantación sobre el usuario o dominio y la *ubicación Detectada*.
+5. Seleccione el **Asunto** de cualquier mensaje en **Email pestaña** > **Detalles** para ver información adicional de suplantación sobre el usuario o dominio y la *ubicación Detectada*.
 
     :::image type="content" source="../../media/threat-ex-views-impersonated-user-image.png" alt-text="El panel de detalles del Explorador de amenazas para un usuario protegido que muestra la ubicación de detección y la amenaza detectada (aquí suplantación de identidad de un usuario)" lightbox="../../media/threat-ex-views-impersonated-user-image.png":::
 
 > [!NOTE]
-> En el paso 3 o 5, si elige **Tecnología de detección** y selecciona **Dominio de suplantación** o **Usuario de suplantación**, respectivamente, la información de la **pestaña** >  Correo electrónicoDetails sobre el usuario o dominio y la *ubicación Detectada* solo se mostrarán en los mensajes relacionados con el usuario o dominio **enumerados** en la página *Directiva anti phishing*.
+> En el paso 3 o 5, si elige **Tecnología de detección** y selecciona **Dominio de suplantación** o **Usuario de suplantación** respectivamente, la información de la **pestaña Email pestaña** > **Detalles** sobre el usuario o dominio, y la *ubicación Detectada* solo se mostrará en los mensajes relacionados con el usuario o dominio enumerados en la página Directiva *anti phishing*.
 
 ### <a name="preview-email-header-and-download-email-body"></a>Vista previa del encabezado de correo electrónico y descarga del cuerpo del correo electrónico
 
@@ -372,7 +372,7 @@ Las detecciones en tiempo real y explorador también obtendrán nuevos campos qu
 
 |Entregado|Tirados|Blocked|Substituido|
 |---|---|---|---|
-|El correo electrónico se entregó en la bandeja de entrada o carpeta de un usuario y el usuario puede acceder a él.|El correo electrónico se envió a la carpeta No deseado o Eliminado del usuario y el usuario puede acceder a él.|Correos electrónicos en cuarentena, con errores o eliminados. Estos correos no son accesibles para el usuario.|El correo electrónico tenía datos adjuntos malintencionados reemplazados por .txt archivos que indican que los datos adjuntos eran malintencionados.|
+|Email se entregó en la bandeja de entrada o carpeta de un usuario, y el usuario puede acceder a ella.|Email se envió a la carpeta No deseado o Eliminado del usuario, y el usuario puede acceder a ella.|Correos electrónicos en cuarentena, con errores o eliminados. Estos correos no son accesibles para el usuario.|Email tenía datos adjuntos malintencionados reemplazados por archivos .txt que indican que los datos adjuntos eran malintencionados.|
 
 Esto es lo que el usuario puede y no puede ver:
 
@@ -391,15 +391,15 @@ Esto es lo que el usuario puede y no puede ver:
 - *Error*: el correo electrónico no pudo llegar al buzón de correo.
 - *Eliminado*: el correo electrónico se perdió en algún lugar del flujo de correo.
 
-### <a name="email-timeline"></a>Escala de tiempo del correo electrónico
+### <a name="email-timeline"></a>escala de tiempo de Email
 
-La **escala de tiempo de correo electrónico** es una nueva característica del Explorador que mejora la experiencia de búsqueda de los administradores. Reduce el tiempo dedicado a comprobar diferentes ubicaciones para intentar comprender el evento. Cuando se producen varios eventos en o cerca del mismo momento en que llega un correo electrónico, esos eventos se muestran en una vista de escala de tiempo. Algunos eventos que se producen en el correo electrónico posterior a la entrega se capturan en la columna **Acción especial** . Los administradores pueden combinar información de la escala de tiempo con la acción especial realizada en el correo posterior a la entrega para obtener información sobre cómo funcionan sus directivas, dónde se enrutó finalmente el correo y, en algunos casos, cuál fue la evaluación final.
+La **escala de tiempo de Email** es una nueva característica del Explorador que mejora la experiencia de búsqueda de los administradores. Reduce el tiempo dedicado a comprobar diferentes ubicaciones para intentar comprender el evento. Cuando se producen varios eventos en o cerca del mismo momento en que llega un correo electrónico, esos eventos se muestran en una vista de escala de tiempo. Algunos eventos que se producen en el correo electrónico posterior a la entrega se capturan en la columna **Acción especial** . Los administradores pueden combinar información de la escala de tiempo con la acción especial realizada en el correo posterior a la entrega para obtener información sobre cómo funcionan sus directivas, dónde se enrutó finalmente el correo y, en algunos casos, cuál fue la evaluación final.
 
 Para obtener más información, vea [Investigar y corregir el correo electrónico malintencionado que se entregó en Office 365](investigate-malicious-email-that-was-delivered.md).
 
 ### <a name="export-url-click-data"></a>Exportar datos de clic de dirección URL
 
-Ahora puede exportar informes de clics de dirección URL para Microsoft Excel para ver su **identificador de mensaje de red** y **veredicto de clics**, lo que ayuda a explicar dónde se originó el tráfico de clic de la dirección URL. Este es el funcionamiento: En Administración de amenazas en la barra de inicio rápido Office 365, siga esta cadena:
+Ahora puede exportar informes para hacer clic en url a Microsoft Excel para ver su **identificador de mensaje de red** y **hacer clic en veredicto**, lo que ayuda a explicar dónde se originó el tráfico de clic de la dirección URL. Este es el funcionamiento: En Administración de amenazas en la barra de inicio rápido Office 365, siga esta cadena:
 
 **Explorador** \> **Ver phish** \> **Clics** \> **Las direcciones URL principales** o **los clics** \> superiores de dirección URL seleccionan cualquier registro para abrir el control flotante de direcciones URL.
 
@@ -417,11 +417,11 @@ Siga esta ruta de acceso para llegar a la misma ubicación en el informe Detecci
 
 ## <a name="see-malware-detected-in-email-by-technology"></a>Ver malware detectado en el correo electrónico por tecnología
 
-Supongamos que desea ver el malware detectado en el correo electrónico ordenado por Microsoft 365 tecnología. Para ello, use la vista [Correo electrónico > Malware](threat-explorer-views.md#email--malware) del Explorador (o detecciones en tiempo real).
+Supongamos que desea ver el malware detectado en el correo electrónico ordenado por la tecnología de Microsoft 365. Para ello, use la vista [Email > Malware](threat-explorer-views.md#email--malware) del Explorador (o detecciones en tiempo real).
 
 1. En el Centro de cumplimiento de seguridad & (<https://protection.office.com>), elija **Explorador** **de administración** \> de amenazas (o **Detecciones en tiempo real**). (En este ejemplo se usa el Explorador).
 
-2. En el menú **Ver**, elija **Malware de correo electrónico**\>.
+2. En el menú **Ver**, elija **Email** \> **Malware**.
 
    > [!div class="mx-imgBorder"]
    > :::image type="content" source="../../media/ExplorerViewEmailMalwareMenu.png" alt-text="Menú Ver del Explorador" lightbox="../../media/ExplorerViewEmailMalwareMenu.png":::
@@ -442,13 +442,13 @@ El informe se actualiza para mostrar los resultados detectados por malware en el
 
 ## <a name="view-phishing-url-and-click-verdict-data"></a>Ver la dirección URL de phishing y hacer clic en datos de veredicto
 
-Supongamos que desea ver los intentos de suplantación de identidad a través de direcciones URL en el correo electrónico, incluida una lista de direcciones URL permitidas, bloqueadas y reemplazadas. Para identificar las direcciones URL en las que se ha hecho clic, se debe configurar [Caja fuerte Vínculos](safe-links.md). Asegúrese de configurar [las directivas de vínculos de Caja fuerte](set-up-safe-links-policies.md) para la protección con el tiempo de clic y el registro de veredictos de clics mediante Caja fuerte Vínculos.
+Supongamos que desea ver los intentos de suplantación de identidad a través de direcciones URL en el correo electrónico, incluida una lista de direcciones URL permitidas, bloqueadas y reemplazadas. Para identificar las direcciones URL en las que se ha hecho clic, se deben configurar [vínculos seguros](safe-links.md) . Asegúrese de configurar [directivas de vínculos seguros](set-up-safe-links-policies.md) para la protección con el tiempo de clic y el registro de veredictos de clics mediante vínculos seguros.
 
-Para revisar las direcciones URL de phish en los mensajes y hacer clic en las direcciones URL de los mensajes de phish, use la vista [**EmailPhish** > ](threat-explorer-views.md#email--phish) del Explorador o las detecciones en tiempo real.
+Para revisar las direcciones URL de phish en los mensajes y hacer clic en las direcciones URL de los mensajes phish, use la vista [**Email** >  **Phish**](threat-explorer-views.md#email--phish) de las detecciones del Explorador o en tiempo real.
 
 1. En el Centro de cumplimiento de seguridad & (<https://protection.office.com>), elija **Explorador** **de administración** \> de amenazas (o **Detecciones en tiempo real**). (En este ejemplo se usa el Explorador).
 
-2. En el menú **Ver** , elija **Email** \> **Phish**.
+2. En el menú **Ver**, elija **Email** \> **Phish**.
 
    > [!div class="mx-imgBorder"]
    > :::image type="content" source="../../media/ExplorerViewEmailPhishMenu.png" alt-text="El menú Ver del Explorador en contexto de suplantación de identidad" lightbox="../../media/ExplorerViewEmailPhishMenu.png":::
@@ -464,7 +464,7 @@ Para revisar las direcciones URL de phish en los mensajes y hacer clic en las di
 
    - **Las direcciones URL principales** son las direcciones URL de los mensajes a los que filtró y la acción de entrega de correo electrónico cuenta para cada dirección URL. En la vista de correo electrónico de Phish, esta lista normalmente contiene direcciones URL legítimas. Los atacantes incluyen una combinación de direcciones URL buenas y malas en sus mensajes para intentar que se entreguen, pero hacen que los vínculos malintencionados parezcan más interesantes. La tabla de direcciones URL se ordena por número total de correo electrónico, pero esta columna está oculta para simplificar la vista.
 
-   - **Los clics superiores son las direcciones URL ajustadas por vínculos** Caja fuerte en las que se ha hecho clic, ordenadas por número total de clics. Esta columna tampoco se muestra para simplificar la vista. Los recuentos totales por columna indican el número de veredictos de clic de vínculos de Caja fuerte para cada dirección URL en la que se ha hecho clic. En la vista de correo electrónico de Phish, suelen ser direcciones URL sospechosas o malintencionadas. Pero la vista podría incluir direcciones URL que no son amenazas, pero que están en mensajes de tipo phish. Los clics de dirección URL en los vínculos desencapsados no aparecen aquí.
+   - **Los clics superiores son las direcciones** URL encapsuladas en vínculos seguros en las que se ha hecho clic, ordenadas por número total de clics. Esta columna tampoco se muestra para simplificar la vista. Los recuentos totales por columna indican el recuento de veredictos de clic de vínculos seguros para cada dirección URL en la que se ha hecho clic. En la vista de correo electrónico de Phish, suelen ser direcciones URL sospechosas o malintencionadas. Pero la vista podría incluir direcciones URL que no son amenazas, pero que están en mensajes de tipo phish. Los clics de dirección URL en los vínculos desencapsados no aparecen aquí.
 
    Las dos tablas de direcciones URL muestran las direcciones URL principales en los mensajes de correo electrónico de suplantación de identidad por acción de entrega y ubicación. Las tablas muestran los clics de dirección URL que se bloquearon o visitaron a pesar de una advertencia, por lo que puede ver qué posibles vínculos incorrectos se presentaron a los usuarios y en los que se hizo clic en el usuario. Desde aquí, puede realizar análisis adicionales. Por ejemplo, debajo del gráfico puede ver las direcciones URL principales en los mensajes de correo electrónico que se bloquearon en el entorno de la organización.
 
@@ -478,7 +478,7 @@ Para revisar las direcciones URL de phish en los mensajes y hacer clic en las di
 
 ### <a name="interpretation-of-click-verdicts"></a>Interpretación de los veredictos de clic
 
-Dentro de los controles flotantes Correo electrónico o DIRECCIÓN URL, Clics superiores, así como dentro de nuestras experiencias de filtrado, verá diferentes valores de veredicto de clics:
+Dentro de los controles flotantes Email o URL, los clics superiores, así como dentro de nuestras experiencias de filtrado, verá diferentes valores de veredicto de clics:
 
 - **Ninguno:** No se puede capturar el veredicto de la dirección URL. Es posible que el usuario haya hecho clic en la dirección URL.
 - **Permitido:** Se permitió al usuario navegar a la dirección URL.
@@ -491,11 +491,11 @@ Dentro de los controles flotantes Correo electrónico o DIRECCIÓN URL, Clics su
 
 ## <a name="review-email-messages-reported-by-users"></a>Revisión de los mensajes de correo electrónico notificados por los usuarios
 
-Supongamos que desea ver mensajes de correo electrónico que los usuarios de su organización notificaron como *No deseado*, *No no deseado* o *Phishing* a través del [complemento Mensaje](enable-the-report-message-add-in.md) de informe o el [complemento De suplantación de identidad](enable-the-report-phish-add-in.md) de informe. Para verlos, use la vista [**EmailSubmissions** > ](threat-explorer-views.md#email--submissions) del Explorador (o detecciones en tiempo real).
+Supongamos que desea ver mensajes de correo electrónico que los usuarios de su organización notificaron como *No deseado*, *No no deseado* o *Phishing* a través del [complemento Mensaje](enable-the-report-message-add-in.md) de informe o el [complemento De suplantación de identidad](enable-the-report-phish-add-in.md) de informe. Para verlos, use la vista [**Email** >  **Submissions**](threat-explorer-views.md#email--submissions) del Explorador (o detecciones en tiempo real).
 
 1. En el Centro de cumplimiento de seguridad & (<https://protection.office.com>), elija **Explorador** **de administración** \> de amenazas (o **Detecciones en tiempo real**). (En este ejemplo se usa el Explorador).
 
-2. En el menú **Ver**, elija **Envíos de** **correo electrónico**\>.
+2. En el menú **Ver**, elija **Email** \> **Envíos**.
 
    > [!div class="mx-imgBorder"]
    > :::image type="content" source="../../media/explorer-view-menu-email-user-reported.png" alt-text="El menú Ver del Explorador para correos electrónicos" lightbox="../../media/explorer-view-menu-email-user-reported.png":::
@@ -539,7 +539,7 @@ Para ver y usar el Explorador o las detecciones en tiempo real, debe tener los p
 - Para el Centro de cumplimiento de seguridad &, debe tener asignado uno de los siguientes roles:
 
   - Administración de la organización
-  - Administrador de seguridad (esto se puede asignar en el centro de administración de Azure Active Directory (<https://aad.portal.azure.com>)
+  - Administrador de seguridad (esto se puede asignar en el Centro de administración de Azure Active Directory (<https://aad.portal.azure.com>)
   - Lector de seguridad
 
 - Para Exchange Online, debe tener uno de los siguientes roles asignados en el Centro de administración de Exchange (EAC) o [Exchange Online PowerShell](/powershell/exchange/exchange-online-powershell):
@@ -563,4 +563,4 @@ Para obtener más información sobre los roles y permisos, consulte los siguient
 
 ## <a name="other-articles"></a>Otros artículos
 
-[Investigación de correos electrónicos con la página Entidad de correo electrónico](mdo-email-entity-page.md)
+[Investigación de correos electrónicos con la página de entidad Email](mdo-email-entity-page.md)

@@ -3,7 +3,7 @@ title: Cómo priorizar, administrar, investigar y actuar ante incidentes en Micr
 description: Los pasos para administrar las alertas desencadenadas en Microsoft 365 Defender. La investigación y respuesta automatizadas (AIR) recorren la suscripción y determinan el impacto y el ámbito de una amenaza, y combinan la información en un único incidente.
 search.product: ''
 search.appverid: ''
-ms.prod: m365-security
+ms.service: microsoft-365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -16,13 +16,13 @@ manager: dansimp
 audience: ITPro
 ms.collection: m365-guidance-templates
 ms.topic: how-to
-ms.technology: mdo
-ms.openlocfilehash: 61fd955d244a31dab5549d776a10eec1b582043f
-ms.sourcegitcommit: 7e551fa4e9b8b25ed62b5f406143b6b1dae08cbf
+ms.subservice: mdo
+ms.openlocfilehash: 578c2e93cf18b7c80390cc7719a6af1a6ace241c
+ms.sourcegitcommit: 2b89bcff547e00be3d38dc8d1e6cbcf8f41eba42
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/01/2022
-ms.locfileid: "67106128"
+ms.lasthandoff: 09/03/2022
+ms.locfileid: "67596663"
 ---
 # <a name="prioritize-manage-investigate--respond-to-incidents-in-microsoft-365-defender"></a>Priorizar, administrar, investigar & responder a incidentes en Microsoft 365 Defender
 

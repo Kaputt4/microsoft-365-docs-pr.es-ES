@@ -7,18 +7,18 @@ ms.reviewer: ''
 audience: admin
 ms.topic: article
 ms.custom: ''
-ms.prod: microsoft-365-enterprise
+ms.service: microsoft-365-enterprise
 search.appverid: MET150
 ms.collection: ''
 ms.localizationpriority: medium
 description: Obtenga información sobre cómo habilitar, deshabilitar y administrar datos de Pizarra.
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: d015a0a3fbfc4c44d1f844c966405e7735990b20
-ms.sourcegitcommit: ecc04b5b8f84b34255a2d5e90b5ab596af0d16c7
+ms.openlocfilehash: 46a4c6db8755f7ee2928828453518acdb2a2eb36
+ms.sourcegitcommit: 2b89bcff547e00be3d38dc8d1e6cbcf8f41eba42
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/01/2022
-ms.locfileid: "67497446"
+ms.lasthandoff: 09/03/2022
+ms.locfileid: "67597613"
 ---
 # <a name="manage-access-to-microsoft-whiteboard-for-gcc-environments"></a>Administración del acceso a Microsoft Whiteboard para entornos GCC
 

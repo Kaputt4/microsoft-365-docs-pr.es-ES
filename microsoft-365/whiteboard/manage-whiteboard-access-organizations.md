@@ -7,17 +7,17 @@ ms.reviewer: ''
 audience: admin
 ms.topic: article
 ms.custom: ''
-ms.prod: microsoft-365-enterprise
+ms.service: microsoft-365-enterprise
 search.appverid: MET150
 ms.collection: ''
 ms.localizationpriority: medium
 description: Obtenga información sobre cómo configurar Microsoft Whiteboard para su organización en el Centro de administración de Microsoft 365.
-ms.openlocfilehash: 12c16c428d6cd03459d6de4bb4e372d471b1ba36
-ms.sourcegitcommit: 72d10d0bc29ecc8b19c395f1815dc48b549096d9
+ms.openlocfilehash: 5e72dd78229c1bb4690c47fa3b637d52965eb0d7
+ms.sourcegitcommit: 2b89bcff547e00be3d38dc8d1e6cbcf8f41eba42
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/17/2022
-ms.locfileid: "67369847"
+ms.lasthandoff: 09/03/2022
+ms.locfileid: "67596541"
 ---
 # <a name="manage-access-to-microsoft-whiteboard-for-your-organization"></a>Administración del acceso a La pizarra de Microsoft para su organización
 

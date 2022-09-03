@@ -7,19 +7,19 @@ ms.author: deniseb
 manager: dansimp
 audience: Admin
 ms.topic: article
-ms.prod: m365-security
-ms.technology: mdb
+ms.service: microsoft-365-security
+ms.subservice: mdb
 ms.localizationpriority: medium
 ms.date: 08/24/2022
 ms.collection: M365-security-compliance
 ms.reviewer: shlomiakirav
 f1.keywords: NOCSH
-ms.openlocfilehash: e2e6ec0fca05aabe49ad720f1991d1b846c1678a
-ms.sourcegitcommit: 2d1302a6165b83cbbc8c2df2c608d43b6b0498b0
+ms.openlocfilehash: bb1a0924972712df9e9b40cf2daf7a017c869566
+ms.sourcegitcommit: 2b89bcff547e00be3d38dc8d1e6cbcf8f41eba42
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/25/2022
-ms.locfileid: "67433689"
+ms.lasthandoff: 09/03/2022
+ms.locfileid: "67597115"
 ---
 # <a name="add-users-and-assign-licenses-in-microsoft-defender-for-business"></a>Agregar usuarios y asignar licencias en Microsoft Defender para Empresas
 
@@ -48,7 +48,7 @@ En cuanto se haya registrado en Defender para empresas, el primer paso es agrega
 
 6. En la página **Revisar y finalizar** , revise los detalles y, a continuación, seleccione **Finalizar la adición** para agregar el usuario. Si necesita realizar cambios, elija **Atrás** para volver a una página anterior.
 
-## <a name="next-steps"></a>Siguientes pasos
+## <a name="next-steps"></a>Pasos siguientes
 
 - [Visite el portal de Microsoft 365 Defender](mdb-get-started.md)
 - [Use el asistente de configuración en Defender para empresas](mdb-use-wizard.md).

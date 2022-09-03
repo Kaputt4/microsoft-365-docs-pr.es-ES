@@ -15,18 +15,18 @@ ms.collection:
 - m365initiative-defender-office365
 description: Obtenga información sobre cómo usar el Explorador de amenazas y el informe de detecciones en tiempo real para investigar y responder a amenazas en el portal de Microsoft 365 Defender.
 ms.custom: seo-marvel-apr2020
-ms.technology: mdo
-ms.prod: m365-security
-ms.openlocfilehash: ccc26bef5209dd297df0b3008b841edb56cdd160
-ms.sourcegitcommit: 45bc65972d4007b2aa7760d4457a0d2699f81926
+ms.subservice: mdo
+ms.service: microsoft-365-security
+ms.openlocfilehash: d6d666285baa2e31c8e2099eb1359c370ac660ae
+ms.sourcegitcommit: 2b89bcff547e00be3d38dc8d1e6cbcf8f41eba42
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/20/2022
-ms.locfileid: "64971162"
+ms.lasthandoff: 09/03/2022
+ms.locfileid: "67596575"
 ---
 # <a name="views-in-threat-explorer-and-real-time-detections"></a>Vistas en el explorador de amenazas y detecciones en tiempo real
 
-[!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
+[!INCLUDE [MDO Trial banner](../includes/mdo-trial-banner.md)]
 
 **Se aplica a**
 - [Plan 1 y Plan 2 de Microsoft Defender para Office 365](defender-for-office-365.md)
@@ -58,9 +58,9 @@ Use el menú **Ver** para cambiar la información que se muestra. La informació
 
 Una vez que seleccione una vista, puede aplicar filtros y establecer consultas para realizar análisis adicionales. En las secciones siguientes se proporciona una breve introducción a las distintas vistas disponibles en el Explorador (o en las detecciones en tiempo real).
 
-## <a name="email--malware"></a>Malware > correo electrónico
+## <a name="email--malware"></a>malware Email >
 
-Para ver este informe, en explorador (o detecciones en tiempo real), elija **Ver** \> **malware** de **correo electrónico**\>. En esta vista se muestra información sobre los mensajes de correo electrónico que se identificaron como que contienen malware.
+Para ver este informe, en explorador (o detecciones en tiempo real), elija **Ver** \> **Email** \> **malware**. En esta vista se muestra información sobre los mensajes de correo electrónico que se identificaron como que contienen malware.
 
 :::image type="content" source="../../media/detection-technology.png" alt-text="Ver datos sobre el correo electrónico identificado como malware" lightbox="../../media/detection-technology.png":::
 
@@ -74,9 +74,9 @@ Debajo del gráfico, vea más detalles sobre mensajes específicos. Al seleccion
 
 :::image type="content" source="../../media/ThreatExplorerMalwareItemSelectedFlyout.png" alt-text="El Explorador de amenazas con el control flotante abierto" lightbox="../../media/ThreatExplorerMalwareItemSelectedFlyout.png":::
 
-## <a name="email--phish"></a>Correo electrónico > Phish
+## <a name="email--phish"></a>Email > Phish
 
-Para ver este informe, en Explorador (o detecciones en tiempo real), elija **Ver** \> **phish** **de correo electrónico**\>. En esta vista se muestran los mensajes de correo electrónico identificados como intentos de suplantación de identidad ( phishing).
+Para ver este informe, en explorador (o detecciones en tiempo real), elija **Ver** \> **Email** \> **Phish**. En esta vista se muestran los mensajes de correo electrónico identificados como intentos de suplantación de identidad ( phishing).
 
 :::image type="content" source="../../media/phish.png" alt-text="Ver datos sobre correo electrónico identificados como intentos de suplantación de identidad" lightbox="../../media/phish.png":::
 
@@ -94,11 +94,11 @@ Al seleccionar un elemento de la lista, como una dirección URL que se detectó,
 
 :::image type="content" source="../../media/ThreatExplorerEmailPhishURLDetails.png" alt-text="Detalles sobre una dirección URL detectada" lightbox="../../media/ThreatExplorerEmailPhishURLDetails.png":::
 
-## <a name="email--submissions"></a>Envíos de > por correo electrónico
+## <a name="email--submissions"></a>envíos de Email >
 
-Para ver este informe, en explorador (o detecciones en tiempo real), elija **Ver** \> **envíos de** **correo electrónico**\>. En esta vista se muestra el correo electrónico que los usuarios han notificado como correo no deseado, no como correo no deseado o correo electrónico de phishing.
+Para ver este informe, en explorador (o detecciones en tiempo real), elija **Ver** \> **Email** \> **envíos**. En esta vista se muestra el correo electrónico que los usuarios han notificado como correo no deseado, no como correo no deseado o correo electrónico de phishing.
 
-:::image type="content" source="../../media/ThreatExplorerEmailUserReportedViewOptions.png" alt-text="Mensajes de correo electrónico notificados por los usuarios" lightbox="../../media/ThreatExplorerEmailUserReportedViewOptions.png":::
+:::image type="content" source="../../media/ThreatExplorerEmailUserReportedViewOptions.png" alt-text="Los mensajes de Email notificados por los usuarios" lightbox="../../media/ThreatExplorerEmailUserReportedViewOptions.png":::
 
 Haga clic en **Remitente** para abrir la lista de opciones de visualización. Use esta lista para ver la información por remitente, destinatarios, tipo de informe (la determinación del usuario de que el correo electrónico era no deseado, no basura o phish) y mucho más.
 
@@ -112,9 +112,9 @@ Debajo del gráfico, vea más detalles sobre mensajes de correo electrónico esp
 
 Seleccione un elemento de la lista para ver detalles adicionales.
 
-## <a name="email--all-email"></a>Correo electrónico > todo el correo electrónico
+## <a name="email--all-email"></a>Email > todo el correo electrónico
 
-Para ver este informe, en el Explorador, elija **Ver** \> correo **electrónico** \> **todo el correo**. Esta vista muestra una vista general de la actividad de correo electrónico, incluido el correo electrónico identificado como malintencionado debido a phishing o malware, así como todo el correo no malintencionado (correo electrónico normal, correo no deseado y correo masivo).
+Para ver este informe, en el Explorador, elija **Ver** \> **Email** \> **todo el correo**. Esta vista muestra una vista general de la actividad de correo electrónico, incluido el correo electrónico identificado como malintencionado debido a phishing o malware, así como todo el correo no malintencionado (correo electrónico normal, correo no deseado y correo masivo).
 
 > [!NOTE]
 > Si recibe un error que lee **Demasiados datos para mostrar**, agregue un filtro y, si es necesario, limite el intervalo de fechas que está viendo.
@@ -127,7 +127,7 @@ Debajo del gráfico, vea más detalles sobre mensajes de correo electrónico esp
 
 ## <a name="content--malware"></a>Malware de > de contenido
 
-Para ver este informe, en explorador (o detecciones en tiempo real), elija **Ver** \> **malware de contenido**\>. Esta vista muestra los archivos identificados como malintencionados por [Microsoft Defender para Office 365 en SharePoint Online, OneDrive para la Empresa y Microsoft Teams](mdo-for-spo-odb-and-teams.md).
+Para ver este informe, en explorador (o detecciones en tiempo real), elija **Ver** \> **malware de contenido**\>. En esta vista se muestran los archivos identificados como malintencionados por [Microsoft Defender para Office 365 en SharePoint Online, OneDrive para la Empresa y Microsoft Teams](mdo-for-spo-odb-and-teams.md).
 
 Vea información por familia de malware, tecnología de detección (cómo se detectó el malware) y carga de trabajo (OneDrive, SharePoint o Teams).
 
@@ -145,7 +145,7 @@ Al hacer clic en **Detonación de ATP** en este gráfico, se obtiene una vista s
 
 :::image type="content" source="../../media/7241d7dd-27bc-467d-9db8-6e806c49df14.png" alt-text="Explorador filtrado para mostrar solo Defender para Office 365 resultados de detonación" lightbox="../../media/7241d7dd-27bc-467d-9db8-6e806c49df14.png":::
 
-En esta vista, ahora se examinan los datos de los archivos detonados por [Caja fuerte Datos adjuntos](safe-attachments.md). Debajo del gráfico, podemos ver detalles sobre mensajes de correo electrónico específicos que tenían datos adjuntos detectados por Caja fuerte Attachments.
+En esta vista, ahora estamos examinando los datos de los archivos detonados por [datos adjuntos seguros](safe-attachments.md). Debajo del gráfico, podemos ver detalles sobre mensajes de correo electrónico específicos que tenían datos adjuntos detectados por datos adjuntos seguros.
 
 :::image type="content" source="../../media/c91fb05c-d1d4-4085-acc6-f7008a415c2a.png" alt-text="Detalles específicos sobre los mensajes de correo electrónico con datos adjuntos detectados" lightbox="../../media/c91fb05c-d1d4-4085-acc6-f7008a415c2a.png":::
 

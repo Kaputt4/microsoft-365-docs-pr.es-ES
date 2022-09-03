@@ -7,8 +7,8 @@ ms.author: deniseb
 manager: dansimp
 audience: Admin
 ms.topic: overview
-ms.prod: m365-security
-ms.technology: mdb
+ms.service: microsoft-365-security
+ms.subservice: mdb
 ms.localizationpriority: medium
 ms.date: 08/11/2022
 ms.reviewer: shlomiakirav
@@ -16,12 +16,12 @@ f1.keywords: NOCSH
 ms.collection:
 - SMB
 - M365-security-compliance
-ms.openlocfilehash: 4d3f2f7a04891fdf3e08f06d6744894e18e944dd
-ms.sourcegitcommit: 9b10e56b9e83f3a80757fa6108bebd1d80cf4178
+ms.openlocfilehash: 3a6632f3a285c29c327dc8f5b74d83da3c583a5e
+ms.sourcegitcommit: 2b89bcff547e00be3d38dc8d1e6cbcf8f41eba42
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/12/2022
-ms.locfileid: "67320358"
+ms.lasthandoff: 09/03/2022
+ms.locfileid: "67597600"
 ---
 # <a name="understand-policy-order-in-microsoft-defender-for-business"></a>Descripción del orden de la directiva en Microsoft Defender para Empresas
 
@@ -40,7 +40,7 @@ A medida que se agregan directivas, observará que se asigna un orden de priorid
 - Puede cambiar el orden de prioridad de las directivas.
 - Las directivas predeterminadas tienen el orden de prioridad más bajo.
 
-## <a name="next-steps"></a>Siguientes pasos
+## <a name="next-steps"></a>Pasos siguientes
 
 - [Introducción al uso de Defender para empresas](mdb-get-started.md)
 - [Administrar dispositivos](mdb-manage-devices.md)

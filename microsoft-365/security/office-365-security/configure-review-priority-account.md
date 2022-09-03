@@ -17,12 +17,12 @@ ms.custom: ''
 description: Obtenga información sobre cómo identificar personas críticas en una organización y agregar la etiqueta de cuenta de prioridad para proporcionarles protección adicional.
 ms.subservice: mdo
 ms.service: microsoft-365-security
-ms.openlocfilehash: ff8617f84c7e774d2dd119f3706ad08ea7591e31
-ms.sourcegitcommit: 10e6abe740e27000e223378eb17d657a47555fa8
+ms.openlocfilehash: 342c23269d3cc7f1c4ee3dd90148de4f14a275d5
+ms.sourcegitcommit: 2b89bcff547e00be3d38dc8d1e6cbcf8f41eba42
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/31/2022
-ms.locfileid: "67482568"
+ms.lasthandoff: 09/03/2022
+ms.locfileid: "67596124"
 ---
 # <a name="configure-and-review-priority-accounts-in-microsoft-defender-for-office-365"></a>Configuración y revisión de cuentas de prioridad en Microsoft Defender para Office 365
 
@@ -77,7 +77,7 @@ Para obtener más información, consulte [Etiquetas de usuario en Microsoft Defe
 Los efectos de la protección de la cuenta de prioridad son visibles en las siguientes características:
 
 - [Alertas](alerts.md)
-- [Directivas de alertas personalizadas](../../compliance/alert-policies.md#viewing-alerts)
+- [Directivas de alertas personalizadas](../../compliance/alert-policies.md#view-alerts)
 - [Explorador de amenazas y detecciones en tiempo real](threat-explorer.md)
 - [Informe de usuario en peligro](view-email-security-reports.md#compromised-users-report)
 - [Página de la entidad de correo electrónico](mdo-email-entity-page.md#other-innovations)

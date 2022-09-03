@@ -16,16 +16,16 @@ search.appverid:
 - MOE150
 - MET150
 ms.assetid: 2cfce2c8-20c5-47f9-afc4-24b059c1bd76
-description: Los usuarios deben tener asignados permisos en Microsoft 365 Security & Compliance Center para poder administrar cualquiera de sus características de seguridad o cumplimiento.
+description: A los usuarios se les deben asignar permisos en el Centro de cumplimiento de & de seguridad de Microsoft 365 para poder administrar cualquiera de sus características de seguridad o cumplimiento.
 ms.custom: seo-marvel-apr2020
-ms.technology: mdo
-ms.prod: m365-security
-ms.openlocfilehash: 4e0ca3874f03d9f0c386a84c9e8b56ea58bbfe72
-ms.sourcegitcommit: 133bf9097785309da45df6f374a712a48b33f8e9
+ms.subservice: mdo
+ms.service: microsoft-365-security
+ms.openlocfilehash: 922606623ef8834f7e39d48ebc758d9c6e6c414e
+ms.sourcegitcommit: 2b89bcff547e00be3d38dc8d1e6cbcf8f41eba42
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/10/2022
-ms.locfileid: "66018016"
+ms.lasthandoff: 09/03/2022
+ms.locfileid: "67596497"
 ---
 # <a name="give-users-access-to-the-security--compliance-center"></a>Proporcionar a los usuarios acceso al Centro de seguridad y cumplimiento
 

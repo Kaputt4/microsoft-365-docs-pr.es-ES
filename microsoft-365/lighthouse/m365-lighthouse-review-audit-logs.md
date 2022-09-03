@@ -7,7 +7,7 @@ manager: scotv
 ms-reviewer: vivkuma
 audience: Admin
 ms.topic: article
-ms.prod: microsoft-365-lighthouse
+ms.service: microsoft-365-lighthouse
 ms.localizationpriority: medium
 ms.collection:
 - M365-subscription-management
@@ -17,12 +17,12 @@ ms.custom:
 - M365-Lighthouse
 search.appverid: MET150
 description: En el caso de los proveedores de servicios administrados (MSP) que usan Microsoft 365 Lighthouse, obtenga información sobre cómo revisar los registros de auditoría.
-ms.openlocfilehash: c24e321cae13e6e604f7daba79f820d0b1bc6bb3
-ms.sourcegitcommit: eb81b49205cbc66b021326b8e2c00a8336b4a2fa
+ms.openlocfilehash: 73e3bd75b065bdf6bfbf072645005c7614a5af53
+ms.sourcegitcommit: 2b89bcff547e00be3d38dc8d1e6cbcf8f41eba42
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2022
-ms.locfileid: "67315622"
+ms.lasthandoff: 09/03/2022
+ms.locfileid: "67597159"
 ---
 # <a name="review-audit-logs-in-microsoft-365-lighthouse"></a>Revisión de los registros de auditoría en Microsoft 365 Lighthouse
 
@@ -82,7 +82,7 @@ En la tabla siguiente se enumeran las actividades capturadas en los registros de
 | **windowsDefenderScan** | Administración de amenazas | Examen rápido | Mem |
 | **windowsDefenderUpdateSignatures** | Administración de amenazas | Actualización del antivirus | Mem |
 
-## <a name="next-steps"></a>Siguientes pasos
+## <a name="next-steps"></a>Pasos siguientes
 
 Use Microsoft Graph API para acceder a más eventos de auditoría, si es necesario. Para obtener más información, consulte [Información general sobre la administración multiinquilino mediante la API de Microsoft 365 Lighthouse](/graph/managedtenants-concept-overview).
 

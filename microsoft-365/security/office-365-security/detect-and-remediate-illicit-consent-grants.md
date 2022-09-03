@@ -17,14 +17,14 @@ search.appverid:
 description: Obtenga información sobre cómo reconocer y corregir el ataque de concesiones de consentimiento ilícito en Microsoft 365.
 ms.custom:
 - seo-marvel-apr2020
-ms.technology: mdo
-ms.prod: m365-security
-ms.openlocfilehash: 354e32ca01a17be69f0bb144a437fd3e825613ea
-ms.sourcegitcommit: 1e53bf8208c30d7b60685896207cc1142bebf34a
+ms.subservice: mdo
+ms.service: microsoft-365-security
+ms.openlocfilehash: 061760b71d46cd7ea90b90aa34d01e8b77ee5411
+ms.sourcegitcommit: 2b89bcff547e00be3d38dc8d1e6cbcf8f41eba42
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/28/2022
-ms.locfileid: "67059719"
+ms.lasthandoff: 09/03/2022
+ms.locfileid: "67596102"
 ---
 # <a name="detect-and-remediate-illicit-consent-grants"></a>Detección y corrección de concesiones de consentimiento ilícitas
 

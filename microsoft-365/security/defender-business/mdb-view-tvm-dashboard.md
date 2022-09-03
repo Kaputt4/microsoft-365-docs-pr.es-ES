@@ -7,8 +7,8 @@ ms.author: deniseb
 manager: dansimp
 audience: Admin
 ms.topic: article
-ms.prod: m365-security
-ms.technology: mdb
+ms.service: microsoft-365-security
+ms.subservice: mdb
 ms.localizationpriority: medium
 ms.date: 08/02/2022
 ms.reviewer: shlomiakirav
@@ -17,12 +17,12 @@ ms.collection:
 - SMB
 - M365-security-compliance
 ms.custom: intro-get-started
-ms.openlocfilehash: dc1fea2a1bcbf05b0f32519221a68686a85e85f6
-ms.sourcegitcommit: 217108c59be41b01963a393b4f16d137636fe6a8
+ms.openlocfilehash: b0b14216737eea49c7a5875b62d2ba93c1fc422e
+ms.sourcegitcommit: 2b89bcff547e00be3d38dc8d1e6cbcf8f41eba42
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/12/2022
-ms.locfileid: "67326351"
+ms.lasthandoff: 09/03/2022
+ms.locfileid: "67597964"
 ---
 # <a name="use-your-vulnerability-management-dashboard-in-microsoft-defender-for-business"></a>Use el panel de administración de vulnerabilidades en Microsoft Defender para Empresas
 
@@ -56,7 +56,7 @@ Las características y funcionalidades de administración de vulnerabilidades de
 
 [Más información sobre Administración de vulnerabilidades de Microsoft Defender](../defender-vulnerability-management/defender-vulnerability-management.md).
 
-## <a name="next-steps"></a>Siguientes pasos
+## <a name="next-steps"></a>Pasos siguientes
 
 - [Prueba de tutoriales y simulaciones en Defender para empresas](mdb-tutorials.md)
 - [Incorporar dispositivos a Defender para Empresas](mdb-onboard-devices.md)

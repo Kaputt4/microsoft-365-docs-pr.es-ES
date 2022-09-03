@@ -15,14 +15,14 @@ ms.collection:
 - M365-identity-device-management
 - M365-security-compliance
 - zerotrust-solution
-ms.technology: mdo
-ms.prod: m365-security
-ms.openlocfilehash: 5aff82e0909388cddcef5672ded6578e0701f47f
-ms.sourcegitcommit: 217108c59be41b01963a393b4f16d137636fe6a8
+ms.subservice: mdo
+ms.service: microsoft-365-security
+ms.openlocfilehash: d92d0c39b1a5c240df4a119c2c775ab108df5efd
+ms.sourcegitcommit: 2b89bcff547e00be3d38dc8d1e6cbcf8f41eba42
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/12/2022
-ms.locfileid: "67323625"
+ms.lasthandoff: 09/03/2022
+ms.locfileid: "67596432"
 ---
 # <a name="recommended-microsoft-defender-for-cloud-apps-policies-for-saas-apps"></a>Directivas recomendadas de Microsoft Defender for Cloud Apps para aplicaciones SaaS
 
@@ -107,6 +107,6 @@ En la siguiente ilustración y tabla se proporcionan varios ejemplos de directiv
 |Seguridad especializada|Alerta cuando los archivos con esta etiqueta ("Altamente clasificados") se descargan en dispositivos administrados <p> Bloquear descargas de archivos con esta etiqueta ("Altamente clasificados") en dispositivos no administrados|
 |||
 
-## <a name="next-steps"></a>Siguientes pasos
+## <a name="next-steps"></a>Pasos siguientes
 
 Para obtener más información sobre el uso de Defender for Cloud Apps, consulte [Microsoft Defender for Cloud Apps documentación](/defender-cloud-apps/).

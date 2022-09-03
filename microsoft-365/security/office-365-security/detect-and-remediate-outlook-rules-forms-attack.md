@@ -14,33 +14,33 @@ ms.collection:
 ms.localizationpriority: medium
 search.appverid:
 - MET150
-description: Aprenda a reconocer y corregir las reglas de Outlook y los ataques de inyecciones de formularios personalizados en Office 365
+description: Aprenda a reconocer y corregir las reglas de Outlook y los ataques por inyección de formularios personalizados en Office 365
 ms.custom: seo-marvel-apr2020
-ms.technology: mdo
-ms.prod: m365-security
-ms.openlocfilehash: 370fa7cf6e8003954044290b7c19c3d839b0a145
-ms.sourcegitcommit: 133bf9097785309da45df6f374a712a48b33f8e9
+ms.subservice: mdo
+ms.service: microsoft-365-security
+ms.openlocfilehash: 108a03544b4ad7dcb889f2b1c3381dcae48ae6e7
+ms.sourcegitcommit: 2b89bcff547e00be3d38dc8d1e6cbcf8f41eba42
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/10/2022
-ms.locfileid: "66016040"
+ms.lasthandoff: 09/03/2022
+ms.locfileid: "67596079"
 ---
 # <a name="detect-and-remediate-outlook-rules-and-custom-forms-injections-attacks"></a>Detección y corrección de reglas de Outlook y ataques por inyección de formularios personalizados
 
 [!INCLUDE [MDO Trial banner](../includes/mdo-trial-banner.md)]
 
-**Resumen** Obtenga información sobre cómo reconocer y corregir las reglas de Outlook y los ataques de inyecciones de formularios personalizados en Office 365.
+**Resumen** Obtenga información sobre cómo reconocer y corregir las reglas de Outlook y los ataques de inyección de formularios personalizados en Office 365.
 
-## <a name="what-is-the-outlook-rules-and-custom-forms-injection-attack"></a>¿Cuál es el ataque por inyección de reglas de Outlook y formularios personalizados?
+## <a name="what-is-the-outlook-rules-and-custom-forms-injection-attack"></a>¿Qué es el ataque por inyección de reglas y formularios personalizados de Outlook?
 
 Después de que un atacante obtenga acceso a su organización, intentará establecer un punto de apoyo para permanecer en o volver a entrar después de que se haya detectado. Esta actividad se denomina *establecimiento de un mecanismo de persistencia*. Hay dos maneras en que un atacante puede usar Outlook para establecer un mecanismo de persistencia:
 
-- Mediante la explotación de Outlook reglas.
-- Insertando formularios personalizados en Outlook.
+- Mediante la explotación de reglas de Outlook.
+- Mediante la inserción de formularios personalizados en Outlook.
 
-Volver a instalar Outlook o incluso dar a la persona afectada un nuevo equipo no le ayudará. Cuando la nueva instalación de Outlook se conecta al buzón de correo, todas las reglas y formularios se sincronizan desde la nube. Las reglas o formularios se suelen diseñar para ejecutar código remoto e instalar malware en el equipo local. El malware roba credenciales o realiza otra actividad ilícita.
+Volver a instalar Outlook o incluso dar a la persona afectada un nuevo equipo no le ayudará. Cuando la nueva instalación de Outlook se conecta al buzón, todas las reglas y formularios se sincronizan desde la nube. Las reglas o formularios se suelen diseñar para ejecutar código remoto e instalar malware en el equipo local. El malware roba credenciales o realiza otra actividad ilícita.
 
-La buena noticia es que, si mantiene los clientes de Outlook revisados a la versión más reciente, no es vulnerable a la amenaza, ya que los valores predeterminados actuales Outlook cliente bloquean ambos mecanismos.
+La buena noticia es que, si mantiene los clientes de Outlook revisados a la versión más reciente, no es vulnerable a la amenaza, ya que los valores predeterminados del cliente de Outlook actuales bloquean ambos mecanismos.
 
 Los ataques suelen seguir estos patrones:
 
@@ -48,7 +48,7 @@ Los ataques suelen seguir estos patrones:
 
 1. El atacante roba las credenciales de un usuario.
 
-2. El atacante inicia sesión en el buzón de Exchange de ese usuario (Exchange Online o Exchange local).
+2. El atacante inicia sesión en el buzón de Exchange de ese usuario (Exchange Online o exchange local).
 
 3. El atacante crea una regla de bandeja de entrada de reenvío en el buzón de correo. La regla de reenvío se desencadena cuando el buzón recibe un mensaje específico del atacante que coincide con las condiciones de la regla. Las condiciones de regla y el formato de mensaje se adaptan entre sí.
 
@@ -64,7 +64,7 @@ Los ataques suelen seguir estos patrones:
 
 1. El atacante roba las credenciales de un usuario.
 
-2. El atacante inicia sesión en el buzón de Exchange de ese usuario (Exchange Online o Exchange local).
+2. El atacante inicia sesión en el buzón de Exchange de ese usuario (Exchange Online o exchange local).
 
 3. El atacante inserta una plantilla de formulario de correo personalizado en el buzón del usuario. El formulario personalizado se desencadena cuando el buzón recibe un mensaje específico del atacante que requiere que el buzón cargue el formulario personalizado. El formulario personalizado y el formato de mensaje se personalizan entre sí.
 
@@ -83,7 +83,7 @@ Es poco probable que los usuarios noten estos mecanismos de persistencia y, en a
 - **Indicadores del compromiso de reglas**:
   - La acción de regla es iniciar una aplicación.
   - Regla Hace referencia a una dirección EXE, ZIP o URL.
-  - En el equipo local, busque nuevos inicios de proceso que se originen en el PID de Outlook.
+  - En la máquina local, busque nuevos inicios de proceso que se originen en el PID de Outlook.
 
 - **Los indicadores de los formularios personalizados están en peligro**:
   - Formularios personalizados presentes guardados como su propia clase de mensaje.
@@ -101,7 +101,7 @@ Puede usar cualquiera de los métodos siguientes para confirmar el ataque:
 
 ### <a name="confirm-the-rules-attack-using-the-outlook-client"></a>Confirmación del ataque de reglas mediante el cliente de Outlook
 
-1. Abra los usuarios Outlook cliente como usuario. Es posible que el usuario necesite ayuda para examinar las reglas de su buzón de correo.
+1. Abra el cliente de Outlook de los usuarios como usuario. Es posible que el usuario necesite ayuda para examinar las reglas de su buzón de correo.
 
 2. Consulte el artículo [Administración de mensajes de correo electrónico mediante reglas](https://support.microsoft.com/office/c24f5dea-9465-4df4-ad17-a50704d66c59) para ver los procedimientos para abrir la interfaz de reglas en Outlook.
 
@@ -111,9 +111,9 @@ Puede usar cualquiera de los métodos siguientes para confirmar el ataque:
 
 5. Busque los nuevos procesos que empiecen a usar el identificador de proceso de Outlook. Consulte [Buscar el identificador de proceso](/windows-hardware/drivers/debugger/finding-the-process-id).
 
-### <a name="steps-to-confirm-the-forms-attack-using-the-outlook-client"></a>Pasos para confirmar el ataque de Forms mediante el cliente de Outlook
+### <a name="steps-to-confirm-the-forms-attack-using-the-outlook-client"></a>Pasos para confirmar el ataque de Formularios mediante el cliente de Outlook
 
-1. Abra el usuario Outlook cliente como usuario.
+1. Abra el cliente de Outlook del usuario como usuario.
 
 2. Siga los pasos descritos en [la pestaña Mostrar el programador](https://support.microsoft.com/office/e1192344-5e56-4d45-931b-e5fd9bea2d45) de la versión del usuario de Outlook.
 
@@ -171,11 +171,11 @@ Si encuentra alguna evidencia de cualquiera de estos ataques, la corrección es 
 
 ### <a name="using-powershell"></a>Con PowerShell
 
-Hay dos cmdlets de PowerShell Exchange que puede usar para quitar o deshabilitar reglas peligrosas. Siga los pasos.
+Hay dos cmdlets de Exchange PowerShell que puede usar para quitar o deshabilitar reglas peligrosas. Siga los pasos.
 
-#### <a name="steps-for-mailboxes-that-are-on-an-exchange-server"></a>Pasos para los buzones de correo que están en un servidor Exchange
+#### <a name="steps-for-mailboxes-that-are-on-an-exchange-server"></a>Pasos para buzones de correo que están en un servidor Exchange
 
-1. Conectar al servidor de Exchange mediante PowerShell remoto o el Shell de administración de Exchange. Siga los pasos descritos en [Conectar para Exchange servidores mediante PowerShell remoto](/powershell/exchange/connect-to-exchange-servers-using-remote-powershell) o [Abra el shell de administración de Exchange](/powershell/exchange/open-the-exchange-management-shell).
+1. Conéctese al servidor exchange mediante PowerShell remoto o el Shell de administración de Exchange. Siga los pasos descritos en [Conexión a servidores exchange mediante PowerShell remoto](/powershell/exchange/connect-to-exchange-servers-using-remote-powershell) o [Abrir el Shell de administración de Exchange](/powershell/exchange/open-the-exchange-management-shell).
 
 2. Si desea quitar completamente una sola regla, varias reglas o todas las reglas de un buzón, use el cmdlet [Remove-InboxRule](/powershell/module/exchange/Remove-InboxRule) .
 
@@ -183,7 +183,7 @@ Hay dos cmdlets de PowerShell Exchange que puede usar para quitar o deshabilitar
 
 #### <a name="steps-for-mailboxes-in-exchange-online"></a>Pasos para buzones de Exchange Online
 
-1. Siga los pasos de [Conectar para Exchange Online PowerShell](/powershell/exchange/connect-to-exchange-online-powershell).
+1. Siga los pasos descritos en [Conexión a Exchange Online PowerShell](/powershell/exchange/connect-to-exchange-online-powershell).
 
 2. Si desea quitar completamente una sola regla, varias reglas o todas las reglas de un buzón, use el cmdlet [Remove-Inbox Rule](/powershell/module/exchange/Remove-InboxRule) .
 
@@ -207,9 +207,9 @@ La mejor manera de proteger las cuentas de usuario, y especialmente las cuentas 
 
 - Use una herramienta como [Office 365 Puntuación de seguridad](/microsoft-365/security/defender/microsoft-secure-score) para administrar los comportamientos y las configuraciones de seguridad de la cuenta.
 
-### <a name="second-keep-your-outlook-clients-current"></a>Segundo: Mantener los clientes Outlook al día
+### <a name="second-keep-your-outlook-clients-current"></a>Segundo: Mantener los clientes de Outlook actualizados
 
-Las versiones totalmente actualizadas y revisadas de Outlook 2013 y 2016 deshabilitan la acción de formulario o regla "Iniciar aplicación" de forma predeterminada. Esto garantizará que, incluso si un atacante infringe la cuenta, se bloquearán las acciones de regla y formulario. Puede instalar las actualizaciones más recientes y las revisiones de seguridad siguiendo los pasos descritos en [Instalación de actualizaciones Office](https://support.microsoft.com/office/2ab296f3-7f03-43a2-8e50-46de917611c5).
+Las versiones totalmente actualizadas y revisadas de Outlook 2013 y 2016 deshabilitan la acción de formulario o regla "Iniciar aplicación" de forma predeterminada. Esto garantizará que, incluso si un atacante infringe la cuenta, se bloquearán las acciones de regla y formulario. Puede instalar las actualizaciones y revisiones de seguridad más recientes siguiendo los pasos descritos en [Instalación de actualizaciones de Office](https://support.microsoft.com/office/2ab296f3-7f03-43a2-8e50-46de917611c5).
 
 Estas son las versiones de revisión para los clientes de Outlook 2013 y 2016:
 
@@ -221,7 +221,7 @@ Para obtener más información sobre las revisiones de seguridad individuales, c
 
 - [revisión de seguridad de Outlook 2016](https://support.microsoft.com/help/3191883)
 
-- [revisión de seguridad de Outlook 2013](https://support.microsoft.com/help/3191938)
+- [Revisión de seguridad de Outlook 2013](https://support.microsoft.com/help/3191938)
 
 ### <a name="third-monitor-your-outlook-clients"></a>Tercero: Supervisión de los clientes de Outlook
 
@@ -231,11 +231,11 @@ Puede ver si se ha vuelto a habilitar "Iniciar aplicación" mediante una invalid
 
 - **Outlook 2016**:`HKEY_CURRENT_USER\Software\Microsoft\Office\16.0\Outlook\Security\`
 
-- **Outlook 2013**:`HKEY_CURRENT_USER\Software\Microsoft\Office\15.0\Outlook\Security\`
+- **Outlook 2013**: `HKEY_CURRENT_USER\Software\Microsoft\Office\15.0\Outlook\Security\`
 
 Busque la clave EnableUnsafeClientMailRules. Si está allí y se establece en 1, se ha invalidado la revisión de seguridad de Outlook y el equipo es vulnerable al ataque Formulario/Reglas. Si el valor es 0, se deshabilita la acción "Iniciar aplicación". Si la versión actualizada y revisada de Outlook está instalada y esta clave del Registro no está presente, un sistema no es vulnerable a estos ataques.
 
-Los clientes con instalaciones de Exchange locales deben considerar la posibilidad de bloquear versiones anteriores de Outlook que no tienen revisiones disponibles. Puede encontrar más información sobre este proceso en el artículo [Configurar Outlook bloqueo de cliente](/exchange/configure-outlook-client-blocking-exchange-2013-help).
+Los clientes con instalaciones de Exchange locales deben considerar la posibilidad de bloquear versiones anteriores de Outlook que no tengan revisiones disponibles. Puede encontrar detalles sobre este proceso en el artículo [Configurar el bloqueo de cliente de Outlook](/exchange/configure-outlook-client-blocking-exchange-2013-help).
 
 ## <a name="secure-microsoft-365-like-a-cybersecurity-pro"></a>Proteger Microsoft 365 como un profesional de la ciberseguridad
 
@@ -249,11 +249,11 @@ Su suscripción a Microsoft 365 incluye un potente conjunto de capacidades de se
 
 ## <a name="see-also"></a>Vea también:
 
-- [Las reglas de Outlook malintencionadas](https://silentbreaksecurity.com/malicious-outlook-rules/) de SilentBreak Security Post acerca del vector de reglas proporcionan una revisión detallada de cómo las reglas de Outlook.
+- [Las reglas malintencionadas de Outlook](https://silentbreaksecurity.com/malicious-outlook-rules/) de SilentBreak Security Post acerca del vector de reglas proporcionan una revisión detallada de cómo las reglas de Outlook.
 
-- [MAPI sobre HTTP y Mailrule Pwnage](https://sensepost.com/blog/2016/mapi-over-http-and-mailrule-pwnage/) en el blog de Sensepost sobre Mailrule Pwnage describe una herramienta denominada Ruler que le permite aprovechar los buzones de correo a través de Outlook reglas.
+- [MAPI sobre HTTP y Mailrule Pwnage](https://sensepost.com/blog/2016/mapi-over-http-and-mailrule-pwnage/) en el blog de Sensepost sobre Mailrule Pwnage describe una herramienta denominada Ruler que le permite aprovechar los buzones a través de reglas de Outlook.
 
-- [Outlook formularios y shells](https://sensepost.com/blog/2017/outlook-forms-and-shells/) en el blog de Sensepost sobre el vector de amenazas de formularios.
+- [Formularios y shells de Outlook](https://sensepost.com/blog/2017/outlook-forms-and-shells/) en el blog de Sensepost sobre el vector de amenazas de formularios.
 
 - [Código base de regla](https://github.com/sensepost/ruler)
 

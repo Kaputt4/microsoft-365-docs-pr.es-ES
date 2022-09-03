@@ -14,18 +14,18 @@ ms.assetid: a4c95148-a00c-4d12-85ed-88520b547d97
 ms.collection:
 - M365-security-compliance
 description: Obtenga información sobre la validación de mensajes firmados de DKIM en Exchange Online Protection y Exchange Online
-ms.technology: mdo
-ms.prod: m365-security
-ms.openlocfilehash: dcdd251ba1266033671ac524426d1ac3d2f56a10
-ms.sourcegitcommit: fdd0294e6cda916392ee66f5a1d2a235fb7272f8
+ms.subservice: mdo
+ms.service: microsoft-365-security
+ms.openlocfilehash: 8921dbf6c27de98c2d7af4de3edc10a539d75e75
+ms.sourcegitcommit: 2b89bcff547e00be3d38dc8d1e6cbcf8f41eba42
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/29/2022
-ms.locfileid: "65130722"
+ms.lasthandoff: 09/03/2022
+ms.locfileid: "67595881"
 ---
 # <a name="support-for-validation-of-dkim-signed-messages"></a>Compatibilidad para la validación de mensajes firmados con DKIM
 
-[!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
+[!INCLUDE [MDO Trial banner](../includes/mdo-trial-banner.md)]
 
 **Se aplica a**
 - [Exchange Online Protection](exchange-online-protection-overview.md)
@@ -43,4 +43,4 @@ DKIM valida un mensaje firmado digitalmente que aparece en el encabezado DKIM-Si
 > [!NOTE]
 > Para obtener más información sobre el encabezado Authentication-Results, vea RFC 7001 ([Campo de encabezado de mensaje para indicar el estado de autenticación de mensajes](https://www.rfc-editor.org/rfc/rfc7001.txt)). La implementación DKIM de Microsoft se ajusta a esta RFC.
 
-Los administradores pueden crear [Exchange reglas de flujo de correo](/exchange/security-and-compliance/mail-flow-rules/mail-flow-rules) (también conocidas como reglas de transporte) en los resultados de la validación dkim. Estas reglas de flujo de correo permitirán a los administradores filtrar o enrutar mensajes según sea necesario.
+Los administradores pueden crear [reglas de flujo de correo](/exchange/security-and-compliance/mail-flow-rules/mail-flow-rules) de Exchange (también conocidas como reglas de transporte) en los resultados de la validación DKIM. Estas reglas de flujo de correo permitirán a los administradores filtrar o enrutar mensajes según sea necesario.

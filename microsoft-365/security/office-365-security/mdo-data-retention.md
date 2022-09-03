@@ -8,20 +8,20 @@ manager: dansimp
 ms.date: ''
 audience: ITPro
 ms.topic: article
-ms.prod: m365-security
-ms.technology: mdo
+ms.service: microsoft-365-security
+ms.subservice: mdo
 ms.localizationpriority: medium
 search.appverid: ''
 ms.collection:
 - M365-security-compliance
 ms.custom: ''
 description: Microsoft Defender para Office 365 información de retención de datosTreat Explorer/Real-Time detecciones
-ms.openlocfilehash: 9cab47358890b47796a42e48b690818d65e20527
-ms.sourcegitcommit: 38a18b0195d99222c2c6da0c80838d24b5f66b97
+ms.openlocfilehash: d57865649dbba96dc4e2d66c0618dc6d52d87205
+ms.sourcegitcommit: 2b89bcff547e00be3d38dc8d1e6cbcf8f41eba42
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/28/2022
-ms.locfileid: "66998156"
+ms.lasthandoff: 09/03/2022
+ms.locfileid: "67596410"
 ---
 # <a name="data-retention-information-for-microsoft-defender-for-office-365"></a>Información de retención de datos para Microsoft Defender para Office 365
 
@@ -38,7 +38,7 @@ De forma predeterminada, los datos de distintas características se conservan du
 |Detalles de metadatos de entidad (correos electrónicos) | 30 días |
 |Detalles de alertas de actividad (registros de auditoría) | 7 días |
 |Página de la entidad de correo electrónico | 30 días |
-|Cuarentena | 30 días (configurable hasta un máximo de 30 días) |
+|Quarantine | 30 días (configurable hasta un máximo de 30 días) |
 |Informes | 90 días (para todos los datos agregados) <br>30 días (para toda la información detallada excepto a continuación) <br> 10 días (para detalles del informe de estado de protección contra amenazas y detalles del informe de correo de suplantación de identidad) <br> 7 días (para detalles del informe de protección de direcciones URL) <br>
 |Envíos | 30 días |
 |Detecciones del Explorador de amenazas o Real-Time | 30 días |
@@ -50,7 +50,7 @@ Defender para Office 365 funcionalidades del plan 1, además de:
 |Característica|Período de retención|
 |---|---|
 |Centro de actividades | 180 días, 30 días (Centro de acción de Office)   |
-|Búsqueda avanzada | 30 días |
+|Búsqueda avanzada de amenazas | 30 días |
 |AIR (investigación y respuesta automatizadas) | 60 días (para los metadatos de las investigaciones)<br> 30 días (para metadatos de correo electrónico)  |
 |Datos de simulación de ataques | 18 meses |
 |Campañas | 30 días |

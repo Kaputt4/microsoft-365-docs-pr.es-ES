@@ -1,7 +1,7 @@
 ---
 title: 'Directivas de acceso a dispositivos e identidades para permitir el acceso B2B de usuario invitado y externo: Microsoft 365 para empresas | Microsoft Docs'
 description: Describe el acceso condicional recomendado y las directivas relacionadas para proteger el acceso de invitados y usuarios externos.
-ms.prod: m365-security
+ms.service: microsoft-365-security
 ms.topic: article
 ms.author: dansimp
 author: dansimp
@@ -20,13 +20,13 @@ ms.collection:
 - m365solution-scenario
 - zerotrust-solution
 - highpri
-ms.technology: mdo
-ms.openlocfilehash: 872d5e5fc7774a32619e637bdb6dceb6e07b324e
-ms.sourcegitcommit: 10e6abe740e27000e223378eb17d657a47555fa8
+ms.subservice: mdo
+ms.openlocfilehash: d4f047272d11d8c4cd5d40a578bd508403d1b527
+ms.sourcegitcommit: 2b89bcff547e00be3d38dc8d1e6cbcf8f41eba42
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/31/2022
-ms.locfileid: "67466907"
+ms.lasthandoff: 09/03/2022
+ms.locfileid: "67596861"
 ---
 # <a name="policies-for-allowing-guest-access-and-b2b-external-user-access"></a>Directivas para permitir el acceso de invitado y el acceso de usuarios externos B2B
 

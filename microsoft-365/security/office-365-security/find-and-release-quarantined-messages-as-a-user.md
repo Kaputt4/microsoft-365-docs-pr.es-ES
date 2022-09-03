@@ -18,15 +18,15 @@ ms.collection:
 ms.custom:
 - seo-marvel-apr2020
 description: Los usuarios pueden obtener información sobre cómo ver y administrar los mensajes en cuarentena en Exchange Online Protection (EOP) que deberían haberles entregado.
-ms.technology: mdo
-ms.prod: m365-security
+ms.subservice: mdo
+ms.service: microsoft-365-security
 adobe-target: true
-ms.openlocfilehash: 845e72f2cf3eeb97d7d5f90224967a4fe5068cf1
-ms.sourcegitcommit: bfbe2574f487ced69e711b48ce140120bd99181b
-ms.translationtype: HT
+ms.openlocfilehash: 69fa7f15aa95f85d298209d4e24e37ada6868bba
+ms.sourcegitcommit: 2b89bcff547e00be3d38dc8d1e6cbcf8f41eba42
+ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/02/2022
-ms.locfileid: "66607683"
+ms.lasthandoff: 09/03/2022
+ms.locfileid: "67597920"
 ---
 # <a name="find-and-release-quarantined-messages-as-a-user-in-eop"></a>Búsqueda y liberación de mensajes en cuarentena como usuario en EOP
 

@@ -18,14 +18,14 @@ ms.collection:
 ms.custom:
 - seo-marvel-apr2020
 description: Más información sobre cómo usar DomainKeys Identified Mail (DKIM) con Microsoft 365 para asegurarse de que los mensajes que se envían desde su dominio personalizado sean de confianza para los sistemas de correo electrónico de destino.
-ms.technology: mdo
-ms.prod: m365-security
-ms.openlocfilehash: ce6550b442f4a863c87bfa5272e8d5b707b7f096
-ms.sourcegitcommit: 414682b9bf42dc19a89c893d3c515aee9765b6e4
-ms.translationtype: HT
+ms.subservice: mdo
+ms.service: microsoft-365-security
+ms.openlocfilehash: e35e11ba0e46ea85566bb311f8e7fcd69642b2a2
+ms.sourcegitcommit: 2b89bcff547e00be3d38dc8d1e6cbcf8f41eba42
+ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/08/2022
-ms.locfileid: "67281721"
+ms.lasthandoff: 09/03/2022
+ms.locfileid: "67597722"
 ---
 # <a name="use-dkim-to-validate-outbound-email-sent-from-your-custom-domain"></a>Usar DKIM para validar el correo electrónico saliente enviado desde su dominio personalizado
 

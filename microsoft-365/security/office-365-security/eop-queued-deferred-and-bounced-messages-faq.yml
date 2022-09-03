@@ -13,18 +13,18 @@ metadata:
   ms.assetid: 9d015a0d-52a0-484d-9a08-121d04f973d3
   ms.custom:
   - seo-marvel-apr2020
-  description: Encuentre respuestas a las preguntas más comunes acerca de los mensajes que se han puesto en cola, diferidos o devueltos durante el proceso de filtrado de Exchange Online Protection (EOP).
-  ms.technology: mdo
-  ms.prod: m365-security
-  ms.openlocfilehash: 52e05fd61ef439e294ec3c0cc8212d7f826d7fcd
-  ms.sourcegitcommit: b3530441288b2bc44342e00e9025a49721796903
+  description: Encuentre respuestas a las preguntas más comunes sobre los mensajes que se han puesto en cola, aplazados o devueltos durante el proceso de filtrado de Exchange Online Protection (EOP).
+  ms.subservice: mdo
+  ms.service: microsoft-365-security
+  ms.openlocfilehash: e23d2bb332481e3c0f5e19ac1cf0ec8621542587
+  ms.sourcegitcommit: 2b89bcff547e00be3d38dc8d1e6cbcf8f41eba42
   ms.translationtype: MT
   ms.contentlocale: es-ES
-  ms.lasthandoff: 03/20/2022
-  ms.locfileid: "63683195"
+  ms.lasthandoff: 09/03/2022
+  ms.locfileid: "67596013"
 title: Preguntas más frecuentes sobre mensajes devueltos, aplazados y en cola de EOP
 summary: >
-  [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
+  [!INCLUDE [MDO Trial banner](../includes/mdo-trial-banner.md)]
 
 
   **Se aplica a**
@@ -36,7 +36,7 @@ summary: >
   - [Microsoft 365 Defender](../defender/microsoft-365-defender.md)
 
 
-  En este tema se proporcionan respuestas a las preguntas más frecuentes acerca de los mensajes que se han puesto en cola, diferidos o devueltos durante el proceso de filtrado de Exchange Online Protection (EOP).
+  En este tema se proporcionan respuestas a las preguntas más frecuentes sobre los mensajes que se han puesto en cola, se han aplazado o se han devuelto durante el proceso de filtrado de Exchange Online Protection (EOP).
 sections:
 - name: Ignorado
   questions:
@@ -51,7 +51,7 @@ sections:
   - question: >
       ¿Cuánto tiempo permanece aplazado un mensaje y cuál es el intervalo de reintento?
     answer: >
-      Los mensajes en aplazamiento permanecerán en nuestras colas durante 1 día. Los reintentos de envío de mensajes se basan en el error que se obtiene del sistema de correo del destinatario. Los primeros aplazamientos son de 15 minutos o menos, y los reintentos posteriores (durante la siguiente media docena aproximadamente) aumentan el intervalo durante varios reintentos a un máximo de 60 minutos. La expansión de la duración del intervalo es dinámica, teniendo en cuenta varias variables, como los tamaños de cola y la prioridad del mensaje interno. In basic, it's 15 minutes (or less) to start, then expanding from there over the next few hours to 60 mins max.
+      Los mensajes aplazados permanecerán en nuestras colas durante un día. Los reintentos de envío de mensajes se basan en el error que se obtiene del sistema de correo del destinatario. Los primeros aplazamientos son de 15 minutos o menos, con reintentos posteriores (más o menos media docena) que aumentan el intervalo en varios reintentos a un máximo de 60 minutos. La expansión de la duración del intervalo es dinámica, teniendo en cuenta varias variables, como los tamaños de cola y la prioridad interna del mensaje. En básico, es de 15 minutos (o menos) para comenzar y, a continuación, se expande desde allí en las próximas horas a 60 minutos como máximo.
   - question: >
       Después de que se restaura el servidor de correo electrónico, ¿cómo se distribuyen los mensajes en cola?
     answer: Después de que se restaura el servidor de correo electrónico, todos los mensajes en cola se procesan automáticamente en el orden en que se recibieron y se pusieron en cola cuando el servidor dejó de estar disponible.

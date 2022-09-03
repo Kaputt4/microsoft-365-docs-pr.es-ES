@@ -14,18 +14,18 @@ ms.assetid: 37125cdb-715d-42d0-b669-1a8efa140813
 ms.custom:
 - seo-marvel-apr2020
 description: Los administradores pueden aprender a usar la información Corregir reglas de flujo de correo lento en el Centro de cumplimiento de seguridad & para identificar y corregir reglas de flujo de correo ineficaces o interrumpidas (también conocidas como reglas de transporte) en su organización.
-ms.technology: mdo
-ms.prod: m365-security
-ms.openlocfilehash: 650389529f2a5d811f71b7c3f755d93e7e734d81
-ms.sourcegitcommit: fdd0294e6cda916392ee66f5a1d2a235fb7272f8
+ms.subservice: mdo
+ms.service: microsoft-365-security
+ms.openlocfilehash: edc173463d6dd5882693f2734c8df09b487e1032
+ms.sourcegitcommit: 2b89bcff547e00be3d38dc8d1e6cbcf8f41eba42
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/29/2022
-ms.locfileid: "65128748"
+ms.lasthandoff: 09/03/2022
+ms.locfileid: "67597380"
 ---
 # <a name="fix-slow-mail-flow-rules-insight-in-the-security--compliance-center"></a>Corrección de la información de reglas de flujo de correo lento en el Centro de cumplimiento de seguridad &
 
-[!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
+[!INCLUDE [MDO Trial banner](../includes/mdo-trial-banner.md)]
 
 **Se aplica a**
 - [Exchange Online Protection](exchange-online-protection-overview.md)
@@ -57,6 +57,6 @@ Al hacer clic en **Ver detalles** en el widget, aparece un control flotante con 
 
 Para obtener más información sobre las condiciones y excepciones en las reglas de flujo de correo, vea [Condiciones y excepciones de reglas de flujo de correo (predicados) en Exchange Online](/Exchange/security-and-compliance/mail-flow-rules/conditions-and-exceptions).
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 Para obtener información sobre otras conclusiones en el panel Flujo de correo, consulte [Información de flujo de correo en el Centro de cumplimiento de seguridad &](mail-flow-insights-v2.md).

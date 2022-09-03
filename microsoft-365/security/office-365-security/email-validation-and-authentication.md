@@ -17,14 +17,14 @@ ms.collection:
 ms.custom: TopSMBIssues
 ms.localizationpriority: high
 description: Los administradores pueden obtener información sobre cómo EOP usa la autenticación de correo electrónico (SPF, DKIM y DMARC) para ayudar a evitar la suplantación de identidad, el phishing y el correo no deseado.
-ms.technology: mdo
-ms.prod: m365-security
-ms.openlocfilehash: 0722e586a19dab70bfe4433bd2909098dd8a3ac1
-ms.sourcegitcommit: d09eb780dc41a01796eb8137fbe9267231af6746
+ms.subservice: mdo
+ms.service: microsoft-365-security
+ms.openlocfilehash: 95d448337034eb9e7a20cbad4247a30367abcd5c
+ms.sourcegitcommit: 2b89bcff547e00be3d38dc8d1e6cbcf8f41eba42
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/19/2022
-ms.locfileid: "67385735"
+ms.lasthandoff: 09/03/2022
+ms.locfileid: "67597942"
 ---
 # <a name="email-authentication-in-eop"></a>Autenticación de correo electrónico en EOP
 

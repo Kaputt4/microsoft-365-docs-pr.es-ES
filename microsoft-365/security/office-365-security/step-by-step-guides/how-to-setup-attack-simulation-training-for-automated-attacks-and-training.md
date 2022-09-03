@@ -3,7 +3,7 @@ title: Cómo configurar ataques automatizados y aprendizaje con Aprendizaje de s
 description: Los pasos para automatizar el entrenamiento de Simulación de ataque y enviar una carga útil a los usuarios de destino. Siguiendo esta guía, aprenderá a crear flujos de ataque automatizados con técnicas y cargas específicas.
 search.product: ''
 search.appverid: ''
-ms.prod: m365-security
+ms.service: microsoft-365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -16,17 +16,17 @@ manager: dansimp
 audience: ITPro
 ms.collection: m365-guidance-templates
 ms.topic: how-to
-ms.technology: mdo
-ms.openlocfilehash: c522c9602874ca8b385a135a64c34ef0643abe82
-ms.sourcegitcommit: 7e551fa4e9b8b25ed62b5f406143b6b1dae08cbf
+ms.subservice: mdo
+ms.openlocfilehash: 8bb4b0ef91eac55dae814150a39c4fc2dbe0875d
+ms.sourcegitcommit: 2b89bcff547e00be3d38dc8d1e6cbcf8f41eba42
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/01/2022
-ms.locfileid: "67106851"
+ms.lasthandoff: 09/03/2022
+ms.locfileid: "67596641"
 ---
 # <a name="how-to-setup-automated-attacks-and-training-within-attack-simulation-training"></a>Cómo configurar ataques automatizados y aprendizaje con Aprendizaje de simulación de ataques
 
-El entrenamiento de simulación de ataques le permite ejecutar simulaciones de ataques benignos en su organización para evaluar el riesgo de suplantación de identidad (phishing) y enseñar a los usuarios a evitar mejor los ataques de phish. Siguiendo esta guía, configurará flujos automatizados con técnicas y cargas específicas que se ejecutan cuando se cumplen las condiciones especificadas, iniciando simulaciones en su organización.
+Entrenamiento de simulación de ataque le permite ejecutar simulaciones de ataques benignos en su organización para evaluar el riesgo de suplantación de identidad (phishing) y enseñar a los usuarios a evitar mejor los ataques de phish. Siguiendo esta guía, configurará flujos automatizados con técnicas y cargas específicas que se ejecutan cuando se cumplen las condiciones especificadas, iniciando simulaciones en su organización.
 
 ## <a name="what-youll-need"></a>Lo que necesitará
 
@@ -36,7 +36,7 @@ El entrenamiento de simulación de ataques le permite ejecutar simulaciones de a
 
 ## <a name="send-a-payload-to-target-users"></a>Envío de una carga útil a los usuarios de destino
 
-1. Vaya a [Entrenamiento de simulación de ataques](https://security.microsoft.com/attacksimulator).
+1. Vaya a [Entrenamiento de simulación de ataque](https://security.microsoft.com/attacksimulator).
 1. Elija **Automatizaciones de simulación** en la barra de navegación superior.
 1. Presione **Crear automatización**.
 1. Asigne a la automatización de simulación un nombre relevante y memorable. *A continuación*.
@@ -55,4 +55,4 @@ El entrenamiento de simulación de ataques le permite ejecutar simulaciones de a
 
 ## <a name="learn-more"></a>Más información
 
-Encontrará instrucciones completas en [Automatizaciones de simulación para el entrenamiento de simulación de ataques: Office 365 | Microsoft Docs](../../office-365-security/attack-simulation-training-simulation-automations.md).
+Encontrará instrucciones completas en [Automatizaciones de simulación para Entrenamiento de simulación de ataque: Office 365 | Microsoft Docs](../../office-365-security/attack-simulation-training-simulation-automations.md).
