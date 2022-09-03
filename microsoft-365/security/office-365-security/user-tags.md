@@ -15,14 +15,14 @@ ms.collection:
 - M365-security-compliance
 ms.custom: ''
 description: Los administradores pueden aprender a identificar grupos específicos de usuarios con etiquetas de usuario en Microsoft Defender para Office 365 Plan 2. El filtrado de etiquetas está disponible en alertas, informes e investigaciones en Microsoft Defender para Office 365 para identificar rápidamente a los usuarios etiquetados.
-ms.subservice: mdo
-ms.service: microsoft-365-security
-ms.openlocfilehash: 14fe268b07f253a66da8a88418153326279867da
-ms.sourcegitcommit: 2b89bcff547e00be3d38dc8d1e6cbcf8f41eba42
+ms.technology: mdo
+ms.prod: m365-security
+ms.openlocfilehash: 3e3fd5ad26e97e3d0bc04164d9595fb88be60427
+ms.sourcegitcommit: 511d15831b97d02e5a0f5e11834ad52617abd0f6
 ms.translationtype: MT
 ms.contentlocale: es-ES
 ms.lasthandoff: 09/03/2022
-ms.locfileid: "67599547"
+ms.locfileid: "67600409"
 ---
 # <a name="user-tags-in-microsoft-defender-for-office-365"></a>Etiquetas de usuario en Microsoft Defender para Office 365
 

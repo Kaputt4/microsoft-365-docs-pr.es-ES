@@ -6,10 +6,9 @@ ms.author: deniseb
 author: denisebmsft
 manager: dansimp
 audience: Admin
-ms.topic: how-to
+ms.topic: article
 ms.collection: m365-security-compliance
 ms.localizationpriority: high
-ms.date: 09/02/2022
 ms.service: microsoft-365-security
 ms.subservice: mdb
 search.appverid:
@@ -17,12 +16,12 @@ search.appverid:
 - MET150
 description: Saque el máximo partido de la edición de prueba de Defender para Empresas con este cuaderno de estrategias. Prepárese rápidamente y comience a usar sus nuevas funcionalidades de seguridad.
 ms.custom: trial-playbook
-ms.openlocfilehash: 0ebe58b5083127cfe281c4444f425d214f3c4153
-ms.sourcegitcommit: 2b89bcff547e00be3d38dc8d1e6cbcf8f41eba42
+ms.openlocfilehash: f03b444b685d4f2bc39a5a0e73d2488b88db6dec
+ms.sourcegitcommit: 511d15831b97d02e5a0f5e11834ad52617abd0f6
 ms.translationtype: MT
 ms.contentlocale: es-ES
 ms.lasthandoff: 09/03/2022
-ms.locfileid: "67598503"
+ms.locfileid: "67600387"
 ---
 # <a name="trial-playbook-microsoft-defender-for-business"></a>Edición de prueba del cuaderno de estrategias de Microsoft Defender para Empresas
 
