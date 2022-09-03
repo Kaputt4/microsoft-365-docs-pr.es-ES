@@ -7,7 +7,7 @@ manager: scotv
 ms-reviewer: katmartin
 audience: Admin
 ms.topic: article
-ms.prod: microsoft-365-lighthouse
+ms.service: microsoft-365-lighthouse
 ms.localizationpriority: medium
 ms.collection:
 - M365-subscription-management
@@ -17,12 +17,12 @@ ms.custom:
 - M365-Lighthouse
 search.appverid: MET150
 description: En el caso de los proveedores de servicios administrados (MSP) que usan Microsoft 365 Lighthouse, obtenga información sobre cómo ver una conexión de red con errores en un equipo en la nube empresarial.
-ms.openlocfilehash: e557c2cd01851c77d11aadf75e20b394b2944987
-ms.sourcegitcommit: 23a53b5c5e372a2a7ad5e175850224d3d464f6dd
+ms.openlocfilehash: 0d4c2c535da22199c2667b08e3a0f0c1c13928e3
+ms.sourcegitcommit: 2b89bcff547e00be3d38dc8d1e6cbcf8f41eba42
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/28/2022
-ms.locfileid: "67055864"
+ms.lasthandoff: 09/03/2022
+ms.locfileid: "67590708"
 ---
 # <a name="view-an-enterprise-cloud-pc-failed-network-connection-in-microsoft-365-lighthouse"></a>Visualización de una conexión de red con errores en un equipo en la nube empresarial en Microsoft 365 Lighthouse
 
@@ -45,7 +45,7 @@ Microsoft 365 Lighthouse proporciona el estado de conexión entre los inquilinos
 
 5. En el Centro de administración de Microsoft Endpoint Manager, seleccione **Ver detalles** para obtener más información sobre el error.
 
-## <a name="next-steps"></a>Siguientes pasos
+## <a name="next-steps"></a>Pasos siguientes
 
 Para solucionar problemas de conexión, consulte [Solución de problemas de conexión de red local](/windows-365/enterprise/troubleshoot-on-premises-network-connection).
 

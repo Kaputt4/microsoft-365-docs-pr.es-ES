@@ -11,26 +11,26 @@ ms.topic: conceptual
 ms.localizationpriority: medium
 ms.assetid: 64535a0a-1044-413f-8bc2-ed8e8a0bc54c
 description: Microsoft ofrece ayuda para EOP en diversos lugares y a través de varios métodos, incluido el autosoporte o el soporte asistido.
-ms.technology: mdo
-ms.prod: m365-security
+ms.subservice: mdo
+ms.service: microsoft-365-security
 ms.collection: M365-security-compliance
-ms.openlocfilehash: 144e816a19f47960a70ef98de8f947d040348631
-ms.sourcegitcommit: fdd0294e6cda916392ee66f5a1d2a235fb7272f8
+ms.openlocfilehash: 8b1b96df91081f2fd8bff3f4d80f8c4c8e016b46
+ms.sourcegitcommit: 2b89bcff547e00be3d38dc8d1e6cbcf8f41eba42
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/29/2022
-ms.locfileid: "65131226"
+ms.lasthandoff: 09/03/2022
+ms.locfileid: "67595793"
 ---
 # <a name="help-and-support-for-eop"></a>Ayuda y soporte técnico para EOP
 
-[!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
+[!INCLUDE [MDO Trial banner](../includes/mdo-trial-banner.md)]
 
 **Se aplica a**
 - [Exchange Online Protection](exchange-online-protection-overview.md)
 - [Plan 1 y Plan 2 de Microsoft Defender para Office 365](defender-for-office-365.md)
 - [Microsoft 365 Defender](../defender/microsoft-365-defender.md)
 
-En Microsoft 365 organizaciones con buzones de correo en organizaciones Exchange Online o independientes de Exchange Online Protection (EOP) sin Exchange Online buzones de correo, los recursos de soporte técnico enumerados en este artículo le ayudarán a encontrar respuestas si tiene dificultades con EOP. Microsoft ofrece ayuda para EOP en diversos lugares y a través de varios métodos, incluido el autosoporte o el soporte asistido.
+En las organizaciones de Microsoft 365 con buzones en Exchange Online o organizaciones independientes de Exchange Online Protection (EOP) sin Exchange Online buzones, los recursos de soporte técnico que se enumeran en este artículo le ayudarán a encontrar respuestas si tiene dificultades con EOP. Microsoft ofrece ayuda para EOP en diversos lugares y a través de varios métodos, incluido el autosoporte o el soporte asistido.
 
 ## <a name="self-support-options"></a>Opciones de autosoporte
 
@@ -40,9 +40,9 @@ Al iniciar sesión, el Centro de administración de Microsoft 365 proporciona in
 
 [Contactar al soporte técnico para productos empresariales: ayuda para administradores](../../admin/get-help-support.md)
 
-[comunidad de Microsoft 365](https://techcommunity.microsoft.com/t5/Office-365/ct-p/Office365)
+[Comunidad de Microsoft 365](https://techcommunity.microsoft.com/t5/Office-365/ct-p/Office365)
 
-[Soporte técnico de Microsoft y Recovery Assistant (ASyR)](https://support.microsoft.com/office/e90bb691-c2a7-4697-a94f-88836856c72f)
+[Soporte técnico de Microsoft y Recovery Assistant (SaRA)](https://support.microsoft.com/office/e90bb691-c2a7-4697-a94f-88836856c72f)
 
 [Solucionador de problemas del flujo de correo](https://aka.ms/FixEmail)
 

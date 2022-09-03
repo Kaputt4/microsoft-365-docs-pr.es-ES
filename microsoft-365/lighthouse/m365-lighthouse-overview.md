@@ -7,7 +7,7 @@ manager: scotv
 ms-reviewer: crimora
 audience: Admin
 ms.topic: article
-ms.prod: microsoft-365-lighthouse
+ms.service: microsoft-365-lighthouse
 ms.localizationpriority: medium
 ms.collection:
 - M365-subscription-management
@@ -18,12 +18,12 @@ ms.custom:
 - intro-overview
 search.appverid: MET150
 description: En el caso de los proveedores de servicios administrados (MSP), obtenga información sobre cómo Microsoft 365 Lighthouse puede ayudarle a proteger y administrar los inquilinos de los clientes en una ubicación.
-ms.openlocfilehash: 9b8c2b897b5a5d726435700f50afd6030a340ec0
-ms.sourcegitcommit: 133bf9097785309da45df6f374a712a48b33f8e9
+ms.openlocfilehash: 8bba3dbe14cf1370d3074872852eb4af9a2f0e11
+ms.sourcegitcommit: 2b89bcff547e00be3d38dc8d1e6cbcf8f41eba42
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/10/2022
-ms.locfileid: "66007182"
+ms.lasthandoff: 09/03/2022
+ms.locfileid: "67596168"
 ---
 # <a name="overview-of-microsoft-365-lighthouse"></a>Introducción a Microsoft 365 Lighthouse
 
@@ -31,12 +31,12 @@ Microsoft 365 Lighthouse es un portal de administración que ayuda a los proveed
 
 Lighthouse simplifica la incorporación de inquilinos de clientes al recomendar líneas base de configuración de seguridad adaptadas a los clientes SMB y proporcionar vistas multiinquilino en todos los entornos de cliente. Con Lighthouse, los MSP pueden escalar la administración de sus clientes, centrarse en lo más importante, buscar e investigar rápidamente los riesgos y tomar medidas para que sus clientes se encuentren en un estado seguro y correcto.
 
-No hay costos adicionales asociados con el uso de Lighthouse para administrar Microsoft 365 servicios y dispositivos conectados. Lighthouse está disponible para los MSP inscritos en el programa Proveedor de soluciones en la nube (CSP) que presta servicio a los clientes SMB. Esto incluye los asociados de CSP que realizan transacciones directamente con Microsoft y los que realizan transacciones a través de un proveedor indirecto (distribuidor).
+No hay costos adicionales asociados con el uso de Lighthouse para administrar los servicios de Microsoft 365 y los dispositivos conectados. Lighthouse está disponible para los MSP inscritos en el programa Proveedor de soluciones en la nube (CSP) que presta servicio a los clientes SMB. Esto incluye los asociados de CSP que realizan transacciones directamente con Microsoft y los que realizan transacciones a través de un proveedor indirecto (distribuidor).
 
 > [!IMPORTANT] 
 > Para usar Lighthouse, los MSP y sus inquilinos de cliente deben cumplir los requisitos enumerados en [Microsoft 365 Lighthouse requisitos](m365-lighthouse-requirements.md).
 
-Para obtener más información sobre el programa CSP, consulte la [introducción al programa Proveedor de soluciones en la nube](/partner-center/csp-overview).
+Para obtener más información sobre el programa CSP, consulte información general sobre el [programa Proveedor de soluciones](/partner-center/csp-overview) en la nube.
 
 > [!NOTE]  
 > Una oferta similar, Azure Lighthouse, ayuda a los proveedores de servicios a ofrecer servicios administrados para los servicios de Azure mediante herramientas de administración completas y sólidas integradas en la plataforma Azure. Para más información, consulte [¿Qué es Azure Lighthouse?](/azure/lighthouse/overview)   
@@ -47,7 +47,7 @@ Para obtener más información sobre el programa CSP, consulte la [introducción
 
 ## <a name="microsoft-365-lighthouse-benefits"></a>ventajas Microsoft 365 Lighthouse
 
-Lighthouse ayuda a los MSP a proteger y administrar Microsoft 365 servicios y puntos de conexión conectados a escala mediante:
+Lighthouse ayuda a los MSP a proteger y administrar los servicios de Microsoft 365 y los puntos de conexión conectados a escala mediante:
 
 - Proporcionar recorridos de implementación de inquilinos para que los técnicos puedan seguir un conjunto coherente de pasos para proteger y configurar los inquilinos del cliente. 
 - Usar una línea de base de seguridad SMB predeterminada que recete los procedimientos recomendados destinados a inquilinos de pequeñas y medianas empresas. 
@@ -56,7 +56,7 @@ Lighthouse ayuda a los MSP a proteger y administrar Microsoft 365 servicios y pu
 - Configuración de la autenticación multifactor y el autoservicio de restablecimiento de contraseña, incluidas herramientas para ayudar a impulsar la adopción por parte de los usuarios. 
 - Descripción y protección frente a inicios de sesión de riesgo.
 - Administrar amenazas en dispositivos Windows 10 proporcionando detalles sobre las amenazas detectadas por Microsoft 365 Defender y las acciones que se deben realizar para resolver problemas y mantener los dispositivos actualizados.
-- Proporcionar información sobre Microsoft 365 incidentes de servicio y avisos que afectan a los inquilinos del cliente que administran.
+- Proporcionar información sobre los incidentes de servicio de Microsoft 365 y los avisos que afectan a los inquilinos del cliente que administran.
 
 > [!NOTE] 
 > Para obtener más información sobre cómo registrarse, consulte [Registrarse para Microsoft 365 Lighthouse](m365-lighthouse-sign-up.md).

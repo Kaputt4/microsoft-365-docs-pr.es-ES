@@ -14,14 +14,14 @@ ms.collection:
 - M365-security-compliance
 ms.custom: ''
 description: Los administradores pueden aprender a aplicar la configuración de directiva estándar y estricta en las características de protección de Exchange Online Protection (EOP) y Microsoft Defender para Office 365
-ms.technology: mdo
-ms.prod: m365-security
-ms.openlocfilehash: ba440b028b1f56f3375e46f57c0b347f63eeed3f
-ms.sourcegitcommit: 6f565d9e0f91ebc76fd13d7005619531391ab5f9
+ms.subservice: mdo
+ms.service: microsoft-365-security
+ms.openlocfilehash: 82c1a314aebae90ca6c0f2252180d9704a5ed27c
+ms.sourcegitcommit: 2b89bcff547e00be3d38dc8d1e6cbcf8f41eba42
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/25/2022
-ms.locfileid: "67439670"
+ms.lasthandoff: 09/03/2022
+ms.locfileid: "67595483"
 ---
 # <a name="preset-security-policies-in-eop-and-microsoft-defender-for-office-365"></a>Directivas de seguridad preestablecidas en Exchange Online Protection y Microsoft Defender para Office 365
 

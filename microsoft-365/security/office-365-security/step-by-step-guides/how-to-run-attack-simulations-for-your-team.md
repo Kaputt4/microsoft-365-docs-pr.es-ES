@@ -3,7 +3,7 @@ title: Cómo ejecutar simulaciones de ataques para su equipo
 description: Los pasos para enviar una carga de simulación de ataque a los usuarios de destino para su equipo u organización para el entrenamiento. Los ataques simulados pueden ayudarle a identificar y encontrar usuarios, directivas y prácticas vulnerables antes de que un ataque real afecte a su organización.
 search.product: ''
 search.appverid: ''
-ms.prod: m365-security
+ms.service: microsoft-365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -16,17 +16,17 @@ manager: dansimp
 audience: ITPro
 ms.collection: m365-guidance-templates
 ms.topic: how-to
-ms.technology: mdo
-ms.openlocfilehash: d3ce22386d0ebde6dbc3035056b683894cdd6131
-ms.sourcegitcommit: 7e551fa4e9b8b25ed62b5f406143b6b1dae08cbf
+ms.subservice: mdo
+ms.openlocfilehash: f9955b8c72323a6a924c516ba54ec89a5acead84
+ms.sourcegitcommit: 2b89bcff547e00be3d38dc8d1e6cbcf8f41eba42
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/01/2022
-ms.locfileid: "67107379"
+ms.lasthandoff: 09/03/2022
+ms.locfileid: "67593955"
 ---
 # <a name="how-to-run-attack-simulations-for-your-team"></a>Cómo ejecutar simulaciones de ataques para su equipo
 
-El entrenamiento de simulación de ataques le permite ejecutar escenarios de ciberataque realistas pero benignos en su organización. Los ataques simulados pueden ayudarle a identificar y encontrar usuarios, directivas y prácticas vulnerables antes de que un ataque real afecte a su organización, aprovechando el entrenamiento integrado o personalizado para reducir el riesgo y educar mejor a los usuarios finales sobre las amenazas.
+Entrenamiento de simulación de ataque permite ejecutar escenarios de ciberataques realistas pero benignos en su organización. Los ataques simulados pueden ayudarle a identificar y encontrar usuarios, directivas y prácticas vulnerables antes de que un ataque real afecte a su organización, aprovechando el entrenamiento integrado o personalizado para reducir el riesgo y educar mejor a los usuarios finales sobre las amenazas.
 
 ## <a name="what-youll-need"></a>Lo que necesitará
 
@@ -58,4 +58,4 @@ El entrenamiento de simulación de ataques le permite ejecutar escenarios de cib
 
 ### <a name="further-reading"></a>Lectura adicional
 
-Para obtener información sobre cómo funciona la simulación de ataques, consulte [Simulación de un ataque de suplantación de identidad con entrenamiento de simulación de ataques Office 365 | Microsoft Docs](../../office-365-security/attack-simulation-training.md)
+Para obtener información sobre cómo funciona la simulación de ataques, consulte [Simulación de un ataque de suplantación de identidad con Entrenamiento de simulación de ataque: Office 365 | Microsoft Docs](../../office-365-security/attack-simulation-training.md)

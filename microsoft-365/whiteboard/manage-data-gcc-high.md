@@ -7,17 +7,17 @@ ms.reviewer: ''
 audience: admin
 ms.topic: article
 ms.custom: ''
-ms.prod: microsoft-365-enterprise
+ms.service: microsoft-365-enterprise
 search.appverid: MET150
 ms.collection: ''
 ms.localizationpriority: medium
 description: Obtenga información sobre cómo habilitar, deshabilitar y administrar el acceso a Whiteboard.
-ms.openlocfilehash: 934036417e0879cdec9c21bacefd51b9753336b4
-ms.sourcegitcommit: 72d10d0bc29ecc8b19c395f1815dc48b549096d9
+ms.openlocfilehash: fd41a4280d6f4b9fd243ee82551496281de9be18
+ms.sourcegitcommit: 2b89bcff547e00be3d38dc8d1e6cbcf8f41eba42
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/17/2022
-ms.locfileid: "67367695"
+ms.lasthandoff: 09/03/2022
+ms.locfileid: "67596300"
 ---
 # <a name="manage-data-for-microsoft-whiteboard-in-gcc-high-environments"></a>Administración de datos para Microsoft Whiteboard en entornos de GCC High
 

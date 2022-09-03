@@ -7,7 +7,7 @@ manager: scotv
 ms-reviewer: chboyd
 audience: Admin
 ms.topic: article
-ms.prod: microsoft-365-lighthouse
+ms.service: microsoft-365-lighthouse
 ms.localizationpriority: medium
 ms.collection:
 - M365-subscription-management
@@ -17,18 +17,18 @@ ms.custom:
 - M365-Lighthouse
 search.appverid: MET150
 description: En el caso de los proveedores de servicios administrados (MSP) que usan Microsoft 365 Lighthouse, obtenga información sobre cómo ver el estado del servicio de inquilino.
-ms.openlocfilehash: 53424b98dc47e16971322260a93e30eb707161a7
-ms.sourcegitcommit: 133bf9097785309da45df6f374a712a48b33f8e9
+ms.openlocfilehash: 968cea20e26a2b15bceb7cb28474e65e96a6afc0
+ms.sourcegitcommit: 2b89bcff547e00be3d38dc8d1e6cbcf8f41eba42
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/10/2022
-ms.locfileid: "66007160"
+ms.lasthandoff: 09/03/2022
+ms.locfileid: "67590752"
 ---
 # <a name="view-tenant-service-health-in-microsoft-365-lighthouse"></a>Visualización del estado del servicio de inquilino en Microsoft 365 Lighthouse
 
 Puede ver el estado del servicio de los inquilinos que administra en Microsoft 365 Lighthouse. Estado del servicio incluye incidentes y avisos para varios servicios, incluidos Microsoft Intune, servicios de identidad de Azure Active Directory (Azure AD) y servicios en la nube de administración de dispositivos móviles (MDM). También puede ver cuántos de los inquilinos administrados se ven afectados por incidentes. Por ejemplo, si uno de los inquilinos tiene problemas, puede comprobar la página de Estado del servicio para determinar si se trata de un problema conocido con una resolución en curso o si un cambio reciente puede afectar a ellos. Esto podría ahorrarle tiempo para solucionar problemas y reducir las llamadas de soporte técnico.
 
-Si no puede iniciar sesión en Lighthouse, puede usar la [página Microsoft 365 estado de mantenimiento del servicio](https://status.office365.com/) para comprobar si hay problemas conocidos que le impidan iniciar sesión en el inquilino del asociado. Además, regístrese para seguir [@MSFT365status](https://twitter.com/MSFT365Status) en Twitter para ver información sobre incidentes de servicio específicos.
+Si no puede iniciar sesión en Lighthouse, puede usar la página estado de [mantenimiento del servicio de Microsoft 365](https://status.office365.com/) para comprobar si hay problemas conocidos que le impidan iniciar sesión en el inquilino del asociado. Además, regístrese para seguir [@MSFT365status](https://twitter.com/MSFT365Status) en Twitter para ver información sobre incidentes de servicio específicos.
 
 ## <a name="before-you-begin"></a>Antes de empezar
 
@@ -62,6 +62,6 @@ En la pestaña **Inquilinos afectados** , puede exportar una lista de inquilinos
 
 ## <a name="related-content"></a>Contenido relacionado
 
-[Cómo comprobar Microsoft 365 estado del servicio](/microsoft-365/enterprise/view-service-health) (artículo)\
+[Cómo comprobar el estado del servicio de Microsoft 365](/microsoft-365/enterprise/view-service-health) (artículo)\
 [Problemas conocidos con Microsoft 365 Lighthouse](m365-lighthouse-known-issues.md) (artículo)\
-[Ver los roles de Azure Active Directory en Microsoft 365 Lighthouse](m365-lighthouse-view-your-roles.md) (artículo)
+[Visualización de los roles de Azure Active Directory en Microsoft 365 Lighthouse](m365-lighthouse-view-your-roles.md) (artículo)

@@ -7,7 +7,7 @@ manager: scotv
 ms-reviewer: katmartin
 audience: Admin
 ms.topic: article
-ms.prod: microsoft-365-lighthouse
+ms.service: microsoft-365-lighthouse
 ms.localizationpriority: medium
 ms.collection:
 - M365-subscription-management
@@ -17,12 +17,12 @@ ms.custom:
 - M365-Lighthouse
 search.appverid: MET150
 description: En el caso de los proveedores de servicios administrados (MSP) que usan Microsoft 365 Lighthouse, obtenga información sobre cómo establecer o cambiar un tipo de cuenta de pc en la nube de Windows 365 Business.
-ms.openlocfilehash: c1cb1e8a8e6f850aa73fe05360289d280c4b9eb2
-ms.sourcegitcommit: 23a53b5c5e372a2a7ad5e175850224d3d464f6dd
+ms.openlocfilehash: c66499a4320c06cc2da6eae365559b0e17c579d5
+ms.sourcegitcommit: 2b89bcff547e00be3d38dc8d1e6cbcf8f41eba42
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/28/2022
-ms.locfileid: "67056009"
+ms.lasthandoff: 09/03/2022
+ms.locfileid: "67590730"
 ---
 # <a name="change-a-windows-365-business-cloud-pc-account-type-in-microsoft-365-lighthouse"></a>Cambiar un tipo de cuenta de pc en la nube de Windows 365 Business en Microsoft 365 Lighthouse
 
@@ -55,7 +55,7 @@ Debe ser un administrador Windows 365 o un administrador global en el inquilino 
 
 7.  En el panel **Cambiar tipo de cuenta de PC** en la nube, seleccione el tipo de cuenta para el equipo en la nube y, a continuación, seleccione **Guardar**.
 
-## <a name="next-steps"></a>Siguientes pasos
+## <a name="next-steps"></a>Pasos siguientes
 
 Una vez aplicada la actualización, el usuario asignado del equipo en la nube tendrá que volver a iniciar sesión en el equipo en la nube o reiniciar el dispositivo. Los nuevos cambios pueden tardar varios minutos en aparecer en Microsoft 365 Lighthouse. El administrador de PC en la nube también puede reiniciar de forma remota el equipo en la nube, pero el usuario puede perder los datos no guardados.
 

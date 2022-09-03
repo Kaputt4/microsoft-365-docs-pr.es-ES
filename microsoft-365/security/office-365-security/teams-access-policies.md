@@ -3,7 +3,7 @@ title: 'Directivas recomendadas de Teams: Microsoft 365 para empresas | Microsof
 description: Describe las directivas de recomendaciones de Microsoft sobre cómo proteger la comunicación y el acceso a archivos de Teams.
 author: MicrosoftHeidi
 manager: serdars
-ms.prod: m365-security
+ms.service: microsoft-365-security
 ms.topic: article
 audience: Admin
 f1.keywords:
@@ -20,13 +20,13 @@ ms.collection:
 - m365solution-identitydevice
 - m365solution-scenario
 - zerotrust-solution
-ms.technology: mdo
-ms.openlocfilehash: 0e26923925416db48b0547bd9d044e367b56cef7
-ms.sourcegitcommit: 61b22df76e0f81e5ef11c587b129287886151c79
+ms.subservice: mdo
+ms.openlocfilehash: b9b3129d0d7668673696fe18dcac9501fecc5c73
+ms.sourcegitcommit: 2b89bcff547e00be3d38dc8d1e6cbcf8f41eba42
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/12/2022
-ms.locfileid: "66750042"
+ms.lasthandoff: 09/03/2022
+ms.locfileid: "67590642"
 ---
 # <a name="policy-recommendations-for-securing-teams-chats-groups-and-files"></a>Recomendaciones de directiva para proteger chats, grupos y archivos de Teams
 
@@ -139,7 +139,7 @@ Teams también le permite usar aplicaciones en varios lugares, como canales o ch
 
 Para obtener más información sobre las directivas de permisos de aplicación, consulte [Administrar directivas de permisos de aplicación en Microsoft Teams](/microsoftteams/teams-app-permission-policies).
 
-## <a name="next-steps"></a>Siguientes pasos
+## <a name="next-steps"></a>Pasos siguientes
 
 :::image type="content" source="../../media/microsoft-365-policies-configurations/identity-device-access-steps-next-step-4.png" alt-text="Paso 4: Directivas para aplicaciones en la nube de Microsoft 365" lightbox="../../media/microsoft-365-policies-configurations/identity-device-access-steps-next-step-4.png":::
 

@@ -14,14 +14,14 @@ ms.collection:
 - m365initiative-defender-office365
 - MET150
 description: Los administradores pueden aprender a identificar las razones por las que y cómo se a través de un mensaje de suplantación de identidad (phishing) en Microsoft 365 y qué hacer para evitar más mensajes de phishing en el futuro.
-ms.technology: mdo
-ms.prod: m365-security
-ms.openlocfilehash: 283abe4f7a62bf5d1c21e4ea480ca2889fcd474d
-ms.sourcegitcommit: d09eb780dc41a01796eb8137fbe9267231af6746
+ms.subservice: mdo
+ms.service: microsoft-365-security
+ms.openlocfilehash: cb33889abf59900d7840590930386b0253d0b57e
+ms.sourcegitcommit: 2b89bcff547e00be3d38dc8d1e6cbcf8f41eba42
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/19/2022
-ms.locfileid: "67385129"
+ms.lasthandoff: 09/03/2022
+ms.locfileid: "67590620"
 ---
 # <a name="tune-anti-phishing-protection"></a>Ajustar protección contra phishing
 

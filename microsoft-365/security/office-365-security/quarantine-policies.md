@@ -15,14 +15,14 @@ ms.collection:
 - M365-security-compliance
 ms.custom: ''
 description: Los administradores pueden aprender a usar directivas de cuarentena para controlar lo que los usuarios pueden hacer en los mensajes en cuarentena.
-ms.technology: mdo
-ms.prod: m365-security
-ms.openlocfilehash: 01a4d5acb9edfa0906695329489439d3ce6af298
-ms.sourcegitcommit: ab32c6e19af08837aaa84a058653c3a209d366ba
+ms.subservice: mdo
+ms.service: microsoft-365-security
+ms.openlocfilehash: 1943a52b69c4e0bdb76769facdc1d93e7f53bd7b
+ms.sourcegitcommit: 2b89bcff547e00be3d38dc8d1e6cbcf8f41eba42
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/26/2022
-ms.locfileid: "67445146"
+ms.lasthandoff: 09/03/2022
+ms.locfileid: "67595461"
 ---
 # <a name="quarantine-policies"></a>Directivas de cuarentena
 

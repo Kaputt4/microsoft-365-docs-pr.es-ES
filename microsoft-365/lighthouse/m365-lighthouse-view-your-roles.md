@@ -7,7 +7,7 @@ manager: scotv
 ms-reviewer: magarlan, chrigreen
 audience: Admin
 ms.topic: article
-ms.prod: microsoft-365-lighthouse
+ms.service: microsoft-365-lighthouse
 ms.localizationpriority: medium
 ms.collection:
 - M365-subscription-management
@@ -17,12 +17,12 @@ ms.custom:
 - M365-Lighthouse
 search.appverid: MET150
 description: En el caso de los técnicos del proveedor de servicios administrados (MSP) que usan Microsoft 365 Lighthouse, aprenda a ver los roles de Azure Active Directory (Azure AD) en los distintos inquilinos de cliente que administra su organización.
-ms.openlocfilehash: a2cb9349f0511d2c9891e7b8611ef13f0aad6ee1
-ms.sourcegitcommit: 23a53b5c5e372a2a7ad5e175850224d3d464f6dd
+ms.openlocfilehash: acae37322ef74a150a9ec6189119ca90187f08d2
+ms.sourcegitcommit: 2b89bcff547e00be3d38dc8d1e6cbcf8f41eba42
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/28/2022
-ms.locfileid: "67055820"
+ms.lasthandoff: 09/03/2022
+ms.locfileid: "67590664"
 ---
 # <a name="view-your-azure-active-directory-roles-in-microsoft-365-lighthouse"></a>Visualización de los roles de Azure Active Directory en Microsoft 365 Lighthouse
 
@@ -46,7 +46,7 @@ Debe tener acceso a un inquilino de asociado que se haya incorporado al servicio
 
     La página **Roles** también muestra las etiquetas personalizadas que se han aplicado a los inquilinos. Puede filtrar los datos de la página por roles o etiquetas asignados.
 
-## <a name="next-steps"></a>Siguientes pasos
+## <a name="next-steps"></a>Pasos siguientes
 
 Si no tiene permiso para realizar una acción que necesita realizar en Lighthouse, póngase en contacto con un administrador del inquilino del asociado que pueda asignarle el rol adecuado para la acción que intenta realizar.
 

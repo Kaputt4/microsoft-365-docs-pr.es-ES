@@ -15,18 +15,18 @@ ms.assetid: ff3f140b-b005-445f-bfe0-7bc3f328aaf0
 ms.collection:
 - M365-security-compliance
 description: Microsoft ha desarrollado varias directivas, procedimientos y ha adoptado varios procedimientos recomendados del sector para ayudar a proteger a nuestros usuarios frente a correos electrónicos abusivos, no deseados o malintencionados.
-ms.technology: mdo
-ms.prod: m365-security
-ms.openlocfilehash: 815fea8981fdab8825a109dae69abaf8232997f9
-ms.sourcegitcommit: fdd0294e6cda916392ee66f5a1d2a235fb7272f8
+ms.subservice: mdo
+ms.service: microsoft-365-security
+ms.openlocfilehash: a2b047b7a7c528f76131f84ecf34203cb7be2352
+ms.sourcegitcommit: 2b89bcff547e00be3d38dc8d1e6cbcf8f41eba42
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/29/2022
-ms.locfileid: "65130371"
+ms.lasthandoff: 09/03/2022
+ms.locfileid: "67594197"
 ---
 # <a name="reference-policies-practices-and-guidelines"></a>Referencia: Políticas, prácticas y directrices
 
-[!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
+[!INCLUDE [MDO Trial banner](../includes/mdo-trial-banner.md)]
 
 **Se aplica a**
 - [Exchange Online Protection](exchange-online-protection-overview.md)
@@ -39,7 +39,7 @@ Si no cumple estas políticas y directrices, es posible que nuestro equipo de so
 
 ## <a name="general-microsoft-policies"></a>Directivas generales de Microsoft
 
-El correo electrónico enviado a Microsoft 365 usuarios debe cumplir todas las directivas de Microsoft que rigen la transmisión y el uso de Microsoft 365 por correo electrónico.
+Email enviados a los usuarios de Microsoft 365 deben cumplir todas las directivas de Microsoft que rigen la transmisión y el uso de correo electrónico de Microsoft 365.
 
 - Términos de servicios aplicables a Microsoft 365; en particular, la prohibición de usar el servicio para enviar correo no deseado o distribuir malware.
 
@@ -47,7 +47,7 @@ El correo electrónico enviado a Microsoft 365 usuarios debe cumplir todas las d
 
 ## <a name="governmental-regulations"></a>Regulaciones gubernamentales
 
-El correo electrónico enviado a Microsoft 365 usuarios debe cumplir todas las leyes y regulaciones aplicables que rigen las comunicaciones por correo electrónico en la jurisdicción aplicable.
+Email enviados a los usuarios de Microsoft 365 deben cumplir todas las leyes y regulaciones aplicables que rigen las comunicaciones por correo electrónico en la jurisdicción aplicable.
 
 - [Ley estadounidense CAN-SPAM: guía de cumplimiento para empresas](https://www.ftc.gov/tips-advice/business-center/guidance/can-spam-act-compliance-guide-business)
 
@@ -55,7 +55,7 @@ El correo electrónico enviado a Microsoft 365 usuarios debe cumplir todas las l
 
 ## <a name="technical-guidelines"></a>Directrices técnicas
 
-El correo electrónico enviado a Microsoft 365 debe cumplir las recomendaciones aplicables enumeradas en los documentos siguientes (algunos vínculos solo están disponibles en inglés).
+Email enviados a Microsoft 365 deben cumplir las recomendaciones aplicables enumeradas en los documentos siguientes (algunos vínculos solo están disponibles en inglés).
 
 - [RFC 2505: Recomendaciones frente a correo electrónico no deseado para MTA de SMTP](https://www.ietf.org/rfc/rfc2505.txt)
 
@@ -81,7 +81,7 @@ Además, los servidores de correo electrónico que se conectan a Microsoft 365 d
 
 Los remitentes, ISP y otros proveedores de servicios deben administrar activamente la reputación de sus direcciones IP salientes.
 
-## <a name="microsoft-365-limits"></a>límites de Microsoft 365
+## <a name="microsoft-365-limits"></a>Límites de Microsoft 365
 
 Los remitentes deben cumplir los límites de Microsoft 365 enumerados en [límites de Exchange Online Protection](/office365/servicedescriptions/exchange-online-protection-service-description/exchange-online-protection-limits).
 

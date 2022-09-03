@@ -17,14 +17,14 @@ search.appverid:
 description: Esta solución le indica el aspecto que podrían tener los ataques de ciberseguridad más comunes en Microsoft 365 y cómo responder a ellos.
 ms.custom:
 - seo-marvel-apr2020
-ms.technology: mdo
-ms.prod: m365-security
-ms.openlocfilehash: 6e69ca9f57f3a025ee669001227e64c8809d4741
-ms.sourcegitcommit: 725a92b0b1555572b306b285a0e7a7614d34e5e5
+ms.subservice: mdo
+ms.service: microsoft-365-security
+ms.openlocfilehash: 0df592a793bb9866058d3d9a4da8571de15483f8
+ms.sourcegitcommit: 2b89bcff547e00be3d38dc8d1e6cbcf8f41eba42
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/24/2022
-ms.locfileid: "65648159"
+ms.lasthandoff: 09/03/2022
+ms.locfileid: "67596344"
 ---
 # <a name="security-incident-response"></a>Respuesta a incidentes de seguridad
 
@@ -65,7 +65,7 @@ Vuelva aquí mensualmente, ya que se agregarán más artículos con el tiempo.
 
 ## <a name="secure-microsoft-365-like-a-cybersecurity-pro"></a>Proteger Microsoft 365 como un profesional de la ciberseguridad
 
-Su suscripción a Microsoft 365 incluye un potente conjunto de capacidades de seguridad que puede usar para proteger sus datos y los usuarios.  Use la [hoja de ruta de seguridad Microsoft 365: prioridades principales durante los primeros 30 días, 90 días y posteriores](security-roadmap.md) para implementar los procedimientos recomendados de Microsoft para proteger su organización Microsoft 365.
+Su suscripción a Microsoft 365 incluye un potente conjunto de capacidades de seguridad que puede usar para proteger sus datos y los usuarios.  Use la [hoja de ruta de seguridad de Microsoft 365: prioridades principales durante los primeros 30 días, 90 días y posteriores](security-roadmap.md) para implementar los procedimientos recomendados de Microsoft para proteger su organización de Microsoft 365.
 
 - Tareas a realizar en los primeros 30 días.  Estas tienen un efecto inmediato y de bajo impacto para los usuarios.
 

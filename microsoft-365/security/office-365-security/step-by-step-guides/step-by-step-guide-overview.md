@@ -3,7 +3,7 @@ title: Guías paso a paso de Microsoft Defender para Office 365 y cómo usarlas
 description: ¿Cuáles son las guías paso a paso para Microsoft 365 Defender para Office 365? Consulte *solo los pasos necesarios para completar una tarea* y configurar las características. Información para su uso en suscripciones de prueba y producción. Guía diseñada para minimizar la sobrecarga de información y acelerar su configuración y uso.
 search.product: ''
 search.appverid: ''
-ms.prod: m365-security
+ms.service: microsoft-365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -16,13 +16,13 @@ manager: dansimp
 audience: ITPro
 ms.collection: m365-guidance-templates
 ms.topic: overview
-ms.technology: mdo
-ms.openlocfilehash: 6c31edcbcc523ce1946bb01e723541e48699c1b5
-ms.sourcegitcommit: a7c1acfb3d2cbba913e32493b16ebd8cbfeee456
+ms.subservice: mdo
+ms.openlocfilehash: adec3c67a611c48f01b6c4c5550ef5368d47662c
+ms.sourcegitcommit: 2b89bcff547e00be3d38dc8d1e6cbcf8f41eba42
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/13/2022
-ms.locfileid: "66043446"
+ms.lasthandoff: 09/03/2022
+ms.locfileid: "67593833"
 ---
 # <a name="welcome-to-the-microsoft-defender-for-office-365-step-by-step-guides"></a>Bienvenido a las guías paso a paso de Microsoft Defender para Office 365
 
@@ -50,7 +50,7 @@ En su lugar, estas guías se simplifican para **el aprendizaje mediante la reali
 
 - ¿Cómo [configura](how-to-run-attack-simulations-for-your-team.md) o [automatiza](how-to-setup-attack-simulation-training-for-automated-attacks-and-training.md) una nueva simulación de forma rápida y sencilla?
 
-- [Conectar Microsoft Defender para Office 365 a Sentinel](connect-microsoft-defender-for-office-365-to-microsoft-sentinel.md).
+- [Conecte Microsoft Defender para Office 365 a Sentinel](connect-microsoft-defender-for-office-365-to-microsoft-sentinel.md).
 
 La documentación en este formato se puede encontrar en la sección paso a paso de Office 365 Security. Visite los documentos mediante [aka.ms/step-by-step](https://aka.ms/step-by-step).
 

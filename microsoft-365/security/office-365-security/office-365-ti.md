@@ -19,14 +19,14 @@ ms.collection:
 ms.custom:
 - seo-marvel-apr2020
 description: Obtenga información sobre las funcionalidades de investigación y respuesta de amenazas en Microsoft Defender para Office 365 Plan.
-ms.technology: mdo
-ms.prod: m365-security
-ms.openlocfilehash: f38e5b51e930bde2fb3218864fa0e57c31949e28
-ms.sourcegitcommit: 217108c59be41b01963a393b4f16d137636fe6a8
+ms.subservice: mdo
+ms.service: microsoft-365-security
+ms.openlocfilehash: 8cd390c394b90e6b6abce77d5f351aa5daa48e63
+ms.sourcegitcommit: 2b89bcff547e00be3d38dc8d1e6cbcf8f41eba42
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/12/2022
-ms.locfileid: "67325845"
+ms.lasthandoff: 09/03/2022
+ms.locfileid: "67590796"
 ---
 # <a name="threat-investigation-and-response"></a>Investigación y respuesta de amenazas
 
@@ -120,7 +120,7 @@ Microsoft Defender para Office 365 usa el control de acceso basado en rol. Los p
 |Desencadenar acciones de correo electrónico en un incidente <p> Búsqueda y eliminación de mensajes de correo electrónico sospechosos|Uno de los siguientes: <ul><li>**Administrador global**</li><li>**Administrador de seguridad** más el rol **Buscar y purgar**</li></ul> <p> Los roles **administrador global** y **administrador de seguridad** se pueden asignar en Azure Active Directory (<https://portal.azure.com>) o en la Centro de administración de Microsoft 365 (<https://admin.microsoft.com>). <p> El rol **Buscar y purgar** debe asignarse en los **roles de colaboración Email &** en el portal de Microsoft 36 Defender (<https://security.microsoft.com>).|
 |Integración de Microsoft Defender para Office 365 Plan 2 con Microsoft Defender para punto de conexión <p> Integración de Microsoft Defender para Office 365 Plan 2 con un servidor SIEM|El **rol Administrador global** o **Administrador de seguridad** asignado en Azure Active Directory (<https://portal.azure.com>) o el Centro de administración de Microsoft 365 (<https://admin.microsoft.com>). <p> --- **Más** --- <p> Un rol adecuado asignado en aplicaciones adicionales (como [Centro de seguridad de Microsoft Defender](/windows/security/threat-protection/microsoft-defender-atp/user-roles) o el servidor SIEM).|
 
-## <a name="next-steps"></a>Siguientes pasos
+## <a name="next-steps"></a>Pasos siguientes
 
 - [Más información sobre los seguimientos de amenazas: nuevos y destacados](threat-trackers.md)
 - [Búsqueda e investigación de correo electrónico malintencionado que se entregó (Office 365 investigación y respuesta de amenazas)](investigate-malicious-email-that-was-delivered.md)

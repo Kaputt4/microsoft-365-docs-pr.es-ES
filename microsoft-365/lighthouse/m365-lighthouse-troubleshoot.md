@@ -7,7 +7,7 @@ manager: scotv
 ms-reviewer: crimora
 audience: Admin
 ms.topic: troubleshooting
-ms.prod: microsoft-365-lighthouse
+ms.service: microsoft-365-lighthouse
 ms.localizationpriority: medium
 ms.collection:
 - M365-subscription-management
@@ -17,12 +17,12 @@ ms.custom:
 - M365-Lighthouse
 search.appverid: MET150
 description: Para los proveedores de servicios administrados (MSP) que usan Microsoft 365 Lighthouse, obtenga ayuda para solucionar problemas y mensajes de error.
-ms.openlocfilehash: a93e6816effdc68253c4ec465fa79213258d7581
-ms.sourcegitcommit: f181e110cdb983788a86f30d5bb018e53c83e64d
+ms.openlocfilehash: f92914ae4257ec7c94192dac0036642cc023479c
+ms.sourcegitcommit: 2b89bcff547e00be3d38dc8d1e6cbcf8f41eba42
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/13/2022
-ms.locfileid: "66057837"
+ms.lasthandoff: 09/03/2022
+ms.locfileid: "67595703"
 ---
 # <a name="troubleshoot-error-messages-and-problems-in-microsoft-365-lighthouse"></a>Solución de problemas y mensajes de error en Microsoft 365 Lighthouse
 
@@ -60,7 +60,7 @@ En este artículo se describen los mensajes de error y los problemas que puede e
 
 **Resolución:** En la tabla siguiente se describen los distintos estados de inquilino que requieren acción y se explica cómo resolverlos.
 
-Se requiere privilegios de administrador delegados granulares (GDAP) más una relación de revendedor indirecto o una relación de privilegios de administrador delegado (DAP) para incorporar clientes a Lighthouse. Si DAP y GDAP coexisten en un inquilino de cliente, los permisos de GDAP tienen prioridad para los técnicos de MSP en grupos de seguridad habilitados para GDAP. Próximamente, los clientes con relaciones solo de GDAP (sin relaciones de revendedor indirecto) podrán incorporarse a Lighthouse.<br><br>
+Se requiere privilegios de Administración delegados granulares (GDAP) más una relación de revendedor indirecto o una relación de privilegios delegados de Administración (DAP) para incorporar clientes a Lighthouse. Si DAP y GDAP coexisten en un inquilino de cliente, los permisos de GDAP tienen prioridad para los técnicos de MSP en grupos de seguridad habilitados para GDAP. Próximamente, los clientes con relaciones solo de GDAP (sin relaciones de revendedor indirecto) podrán incorporarse a Lighthouse.<br><br>
 
 | Estado | Descripción | Solución |
 |--|--|--|
@@ -81,7 +81,7 @@ Si ha confirmado que el inquilino del cliente cumple los criterios de incorporac
 
 **Resolución:** Asegúrese de que un administrador del inquilino del asociado con los permisos adecuados le ha asignado al grupo de seguridad de GDAP correcto en Azure AD y le ha asignado el rol correcto en el Centro de partners. Además, tenga en cuenta que algunas acciones de Lighthouse requieren que sea administrador global. Para más información sobre los roles de GDAP y lo que puede hacer cada rol, consulte [Introducción a los permisos en Microsoft 365 Lighthouse](m365-lighthouse-overview-of-permissions.md). Para obtener una descripción detallada de todos los roles y permisos integrados de Azure AD para GDAP, consulte [Roles integrados de Azure AD](/azure/active-directory/roles/permissions-reference).
 
-En el caso de los clientes con relaciones dap, el administrador de partners deberá asignarle el rol Agente de administración o Agente del departamento de soporte técnico en el Centro de partners. Para obtener una descripción detallada de todos los roles y permisos del Centro de partners, consulte [Asignación de roles y permisos a los usuarios](/partner-center/permissions-overview).
+En el caso de los clientes con relaciones de DAP, el administrador del asociado deberá asignarle el rol de agente de Administración o agente del departamento de soporte técnico en el Centro de partners. Para obtener una descripción detallada de todos los roles y permisos del Centro de partners, consulte [Asignación de roles y permisos a los usuarios](/partner-center/permissions-overview).
 
 ### <a name="i-dont-see-complete-data-in-certain-areas-of-lighthouse-or-i-cant-perform-certain-tasks-or-i-cant-access-certain-tenants"></a>No veo datos completos en ciertas áreas de Lighthouse, o no puedo realizar ciertas tareas, o no puedo acceder a determinados inquilinos.
 

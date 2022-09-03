@@ -12,14 +12,14 @@ ms.localizationpriority: medium
 ms.assetid: beb6acaa-6016-4d54-ba7e-3d6d035e2b46
 description: Los administradores pueden obtener información sobre la información y los informes que están disponibles en el panel Flujo de correo del Centro de cumplimiento de seguridad &.
 ms.custom: seo-marvel-apr2020
-ms.technology: mdo
-ms.prod: m365-security
-ms.openlocfilehash: 5850612fbd0de89e5eafe101f55d368b0f4b0c8f
-ms.sourcegitcommit: 725a92b0b1555572b306b285a0e7a7614d34e5e5
+ms.subservice: mdo
+ms.service: microsoft-365-security
+ms.openlocfilehash: 49b6a6e326225f3d0715a4eaf722014b78541958
+ms.sourcegitcommit: 2b89bcff547e00be3d38dc8d1e6cbcf8f41eba42
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/24/2022
-ms.locfileid: "65648731"
+ms.lasthandoff: 09/03/2022
+ms.locfileid: "67595527"
 ---
 # <a name="mail-flow-insights-in-the-security--compliance-center"></a>Reportes de flujo de Correo en el Centro de seguridad y cumplimiento
 
@@ -37,11 +37,11 @@ Los administradores pueden usar el panel flujo de correo en el Centro de cumplim
 Las conclusiones disponibles son:
 
 - [Información de mensajes reenviados automáticamente](mfi-auto-forwarded-messages-report.md)
-- [Corrección de la posible información del bucle de correo1](mfi-mail-loop-insight.md)<sup></sup>
-- [Corrección de la información de reglas de flujo de correo lenta1](mfi-slow-mail-flow-rules-insight.md)<sup></sup>
+- [Corrección de la posible información de bucle de correo](mfi-mail-loop-insight.md)<sup>1</sup>
+- [Corrección de la información de reglas de flujo de correo lento](mfi-slow-mail-flow-rules-insight.md)<sup>1</sup>
 - [Mapa de flujo de correo](mfi-mail-flow-map-report.md)
-- [Nuevos dominios que se reenvía información de correo electrónico2](mfi-new-domains-being-forwarded-email.md)<sup></sup>
-- [Nuevos usuarios que reenvía información de correo electrónico2](mfi-new-users-forwarding-email.md)<sup></sup>
+- [Nuevos dominios que se reenvía información de correo electrónico](mfi-new-domains-being-forwarded-email.md)<sup>2</sup>
+- [Nuevos usuarios que reenvía información de correo electrónico](mfi-new-users-forwarding-email.md)<sup>2</sup>
 - [Informe de dominios no aceptados](mfi-non-accepted-domain-report.md)
 - [Informe de no entrega](mfi-non-delivery-report.md)
 - [Información de flujo de correo entrante y saliente](mfi-outbound-and-inbound-mail-flow.md)
@@ -59,7 +59,7 @@ El panel Flujo de correo está disponible para los miembros de los siguientes gr
 
 - **Administración de la organización** en el Centro de cumplimiento de seguridad & (administradores globales).
 
-- **[Exchange Administrador](/azure/active-directory/roles/permissions-reference#exchange-administrator)** en Azure Active Directory.
+- **[Administrador de Exchange](/azure/active-directory/roles/permissions-reference#exchange-administrator)** en Azure Active Directory.
 
 - **Administrador de MailFlow** en el Centro de cumplimiento de seguridad &. Si la cuenta no es también miembro de los grupos de roles Administración de la organización o Administrador de Exchange, tenga en cuenta los siguientes problemas:
   - El usuario debe iniciar sesión en el Centro de cumplimiento de seguridad & directamente en <https://protection.office.com>.

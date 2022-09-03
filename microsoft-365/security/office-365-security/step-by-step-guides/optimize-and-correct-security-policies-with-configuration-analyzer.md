@@ -3,7 +3,7 @@ title: Optimización y corrección de directivas de seguridad con el analizador 
 description: Pasos para optimizar y corregir directivas de seguridad con el analizador de configuración. El analizador de configuración es una ubicación central y un único panel de cristal para administrar y ver las directivas de seguridad de correo electrónico que ha configurado en el inquilino.
 search.product: ''
 search.appverid: ''
-ms.prod: m365-security
+ms.service: microsoft-365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -16,13 +16,13 @@ manager: dansimp
 audience: ITPro
 ms.collection: m365-guidance-templates
 ms.topic: how-to
-ms.technology: mdo
-ms.openlocfilehash: 2c1318d685b38332f011d1e56dfb0dd394cc990c
-ms.sourcegitcommit: 7e551fa4e9b8b25ed62b5f406143b6b1dae08cbf
+ms.subservice: mdo
+ms.openlocfilehash: 39d7c0bca758f4991b073716159ad340d87619f4
+ms.sourcegitcommit: 2b89bcff547e00be3d38dc8d1e6cbcf8f41eba42
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/01/2022
-ms.locfileid: "67106369"
+ms.lasthandoff: 09/03/2022
+ms.locfileid: "67593911"
 ---
 # <a name="optimize-and-correct-security-policies-with-configuration-analyzer"></a>Optimización y corrección de directivas de seguridad con el analizador de configuración
 
