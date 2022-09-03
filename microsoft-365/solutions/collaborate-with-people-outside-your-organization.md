@@ -5,7 +5,7 @@ author: MikePlumleyMSFT
 manager: serdars
 audience: ITPro
 ms.topic: article
-ms.prod: microsoft-365-enterprise
+ms.service: microsoft-365-enterprise
 ms.collection:
 - SPO_Content
 - M365-collaboration
@@ -18,57 +18,57 @@ ms.custom:
 ms.localizationpriority: medium
 f1.keywords: NOCSH
 recommendations: false
-description: Obtén información sobre cómo configurar Microsoft 365 aplicaciones como Teams, OneDrive y SharePoint colaboración con personas de fuera de la organización.
-ms.openlocfilehash: 65511cbafdc1f5a666c11e1bef7fefd6e6852ee3
-ms.sourcegitcommit: 46456ca009c9d50622e57e24269be74986184654
+description: Obtenga información sobre cómo configurar aplicaciones de Microsoft 365 como Teams, OneDrive y SharePoint para la colaboración con personas ajenas a su organización.
+ms.openlocfilehash: 4bfe20d2c0520d9b8be402066a1a9a88a20a8acb
+ms.sourcegitcommit: d3ef9391f621e8f4ca70661184b3bb82c6cbda94
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2022
-ms.locfileid: "63712782"
+ms.lasthandoff: 09/02/2022
+ms.locfileid: "67586190"
 ---
 # <a name="collaborating-with-people-outside-your-organization"></a>Colaborar con personas ajenas a la organización
 
-Las capacidades de uso compartido externo de Microsoft 365 proporcionan una oportunidad para que los usuarios de la organización colaboren con socios, proveedores, clientes y otros usuarios que no tienen una cuenta en el directorio. Puede compartir equipos, canales o sitios completos con personas ajenas a su organización o simplemente archivos individuales.
+Las funcionalidades de uso compartido externo de Microsoft 365 proporcionan una oportunidad para que los usuarios de su organización colaboren con asociados, proveedores, clientes y otros que no tengan una cuenta en el directorio. Puede compartir equipos, canales o sitios completos con personas ajenas a su organización o solo archivos individuales.
 
-La colaboración con personas fuera de la organización consta de estos componentes principales:
+La colaboración con personas ajenas a la organización consta de estos componentes principales:
 
-- **Habilitar el** uso compartido: configure los controles de uso compartido en Azure Active Directory, Teams, grupos de Microsoft 365 y SharePoint para permitir el nivel de uso compartido que desea para su organización.
-- **Configurar relaciones organizativas: si usa canales compartidos**, debe configurar las opciones de acceso entre inquilinos en Azure Active Directory para permitir el acceso directo a la conexión B2B para cada organización con la que desee colaborar. (Estas organizaciones también deben configurar las relaciones organizativas con el inquilino).
-- Habilitar la seguridad **adicional: aunque** las características básicas de uso compartido se pueden configurar para requerir que las personas de fuera de la organización se autentiquen, Microsoft 365 proporciona muchas características de seguridad y cumplimiento adicionales que le ayudarán a proteger los datos y mantener las directivas de gobierno mientras se comparten externamente.
+- **Habilitar el uso compartido**: configure los controles de uso compartido entre Azure Active Directory, Teams, Grupos de Microsoft 365 y SharePoint para permitir el nivel de uso compartido que desea para su organización.
+- **Configuración de relaciones organizativas** : si usa canales compartidos, debe configurar los valores de acceso entre inquilinos en Azure Active Directory para permitir el acceso de conexión directa B2B para cada organización con la que quiera colaborar. (Estas organizaciones también deben configurar relaciones organizativas con el inquilino).
+- **Habilitar seguridad adicional** : aunque las características básicas de uso compartido se pueden configurar para requerir que las personas de fuera de su organización se autentiquen, Microsoft 365 proporciona muchas características de seguridad y cumplimiento adicionales para ayudarle a proteger los datos y mantener las directivas de gobernanza mientras se comparte externamente.
 
-Lea [Configurar la colaboración segura con Microsoft 365 y Microsoft Teams](/microsoft-365/solutions/setup-secure-collaboration-with-teams) información sobre cómo el uso compartido externo se vincula con la guía general Microsoft 365 colaboración.
+Lea [Configuración de la colaboración segura con Microsoft 365 y Microsoft Teams](/microsoft-365/solutions/setup-secure-collaboration-with-teams) para obtener información sobre cómo vincula el uso compartido externo con la guía general de colaboración de Microsoft 365.
 
-## <a name="enable-sharing"></a>Habilitar el uso compartido
+## <a name="enable-sharing"></a>Habilitación del uso compartido
 
-De forma predeterminada, el uso compartido con personas de fuera de la organización mediante acceso de invitado o acceso anónimo está habilitado, pero los canales compartidos deben habilitarse configurando relaciones organizativas en Azure AD. La mayoría de los escenarios de uso compartido de invitados funcionan sin configuración adicional. Para confirmar la configuración de un escenario que está usando o habilitar uno nuevo, elija entre las siguientes opciones:
+De forma predeterminada, el uso compartido con personas ajenas a la organización mediante el acceso de invitado o el acceso anónimo está habilitado, pero los canales compartidos deben habilitarse mediante la configuración de relaciones organizativas en Azure AD. La mayoría de los escenarios de uso compartido de invitados funcionan sin más configuración. Para confirmar la configuración de un escenario que está usando o habilitar uno nuevo, elija entre las siguientes opciones:
 
-- [Colaborar en](collaborate-on-documents.md) documentos: aprenda a configurar Microsoft 365 para permitir el uso compartido y la colaboración con personas de fuera de la organización (tanto invitados como usuarios no autenticados) en archivos y carpetas.
-- [Colaborar en un sitio](collaborate-in-site.md): obtenga información sobre cómo configurar Microsoft 365 para habilitar el uso compartido SharePoint sitios con invitados.
-- [Colaborar en equipo](collaborate-as-team.md): obtenga información sobre cómo configurar Microsoft 365 para habilitar la colaboración de invitados en Teams.
-- [Colaborar con participantes externos en un canal para](/microsoft-365/solutions/collaborate-teams-direct-connect) colaborar con personas fuera de la organización en un canal compartido.
+- [Colaborar en documentos](collaborate-on-documents.md) : obtenga información sobre cómo configurar Microsoft 365 para permitir el uso compartido y la colaboración con personas ajenas a su organización (invitados y usuarios no autenticados) en archivos y carpetas.
+- [Colaborar en un sitio](collaborate-in-site.md) : obtenga información sobre cómo configurar Microsoft 365 para habilitar el uso compartido de sitios de SharePoint con invitados.
+- [Colaborar como equipo](collaborate-as-team.md) : aprenda a configurar Microsoft 365 para habilitar la colaboración de invitados en Teams.
+- [Colabore con participantes externos en un canal](/microsoft-365/solutions/collaborate-teams-direct-connect) para colaborar con personas ajenas a la organización en un canal compartido.
 
-Para obtener una visión completa de la configuración de uso compartido de invitados disponible en Microsoft 365, consulte Microsoft 365 referencia de configuración [de uso compartido de invitados](microsoft-365-guest-settings.md).
+Para obtener un vistazo completo a la configuración de uso compartido de invitados disponible en Microsoft 365, consulte [Referencia de configuración de uso compartido de invitados de Microsoft 365](microsoft-365-guest-settings.md).
 
-## <a name="enable-additional-security"></a>Habilitar seguridad adicional
+## <a name="enable-additional-security"></a>Habilitación de seguridad adicional
 
-Una vez que hayas habilitado el escenario que quieras usar para compartir con personas de fuera de la organización, considera medidas de seguridad adicionales para ayudar a proteger el contenido contra el uso compartido accidental o intencionado inadecuado.
+Una vez que haya habilitado el escenario que desea usar para compartir con personas ajenas a su organización, considere medidas de seguridad adicionales para ayudar a proteger el contenido frente al uso compartido inadecuado accidental o intencionado.
 
-- [Procedimientos recomendados para compartir archivos y](best-practices-anonymous-sharing.md) carpetas con usuarios no autenticados: obtenga información sobre los procedimientos recomendados para compartir con usuarios no autenticados.
-- [Limitar la exposición accidental](share-limit-accidental-exposure.md) : aprenda a reducir las posibilidades de compartir accidentalmente contenido confidencial con personas de fuera de la organización.
-- [Crear](create-secure-guest-sharing-environment.md) un entorno de uso compartido de invitados seguro: obtenga información sobre las herramientas que se proporcionan en Microsoft 365 para garantizar que el uso compartido con personas ajenas a su organización se realiza de forma segura y segura y cumple los requisitos de gobierno.
+- [Procedimientos recomendados para compartir archivos y carpetas con usuarios no autenticados](best-practices-anonymous-sharing.md) : obtenga información sobre los procedimientos recomendados para compartir con usuarios no autenticados.
+- [Limitar la exposición accidental](share-limit-accidental-exposure.md) : aprenda a reducir las posibilidades de compartir accidentalmente contenido confidencial con personas ajenas a la organización.
+- [Crear un entorno de uso compartido de invitados seguro](create-secure-guest-sharing-environment.md) : obtenga información sobre las herramientas proporcionadas en Microsoft 365 para ayudar a garantizar que el uso compartido con personas ajenas a la organización se realiza de forma segura y segura y cumple los requisitos de gobernanza.
 
-## <a name="collaborate-with-partner-companies"></a>Colaborar con empresas asociadas
+## <a name="collaborate-with-partner-companies"></a>Colaboración con empresas asociadas
 
-Cuando trabaje en un proyecto grande que implique invitados de otra organización, considere la posibilidad de compartir canales. Dado que los canales compartidos no usan cuentas de invitado, los usuarios de la otra organización pueden acceder al canal compartido directamente sin tener que iniciar sesión en la organización por separado.
+Cuando trabaje en un proyecto grande que implique invitados de otra organización, considere la posibilidad de usar canales compartidos. Dado que los canales compartidos no usan cuentas de invitado, los usuarios de la otra organización pueden acceder al canal compartido directamente sin tener que iniciar sesión en la organización por separado.
 
-Si tiene una relación de proveedor continua en la que los invitados suelen cambiar, puede usar la administración de derechos en Azure Active Directory para simplificar la administración de invitados y permitir que la compañía asociada comparta esa responsabilidad. Consulte [Crear una extranet B2B con invitados administrados para](b2b-extranet.md) obtener más información.
+Si tiene una relación de proveedor en curso en la que los invitados suelen cambiar, puede usar la administración de derechos en Azure Active Directory para simplificar la administración de invitados y permitir que la empresa asociada comparta esa responsabilidad. Consulte [Creación de una extranet B2B con invitados administrados](b2b-extranet.md) para obtener más información.
 
 ## <a name="limit-sharing"></a>Limitar el uso compartido
 
-Si algunas de las características de uso compartido de Microsoft 365 conflicto con las directivas de gobierno, vea [Limitar el](microsoft-365-limit-sharing.md) uso compartido en Microsoft 365 para obtener información sobre las opciones para limitar el uso compartido.
+Si algunas de las características de uso compartido de Microsoft 365 entran en conflicto con las directivas de gobernanza, consulte [Limitar el uso compartido en Microsoft 365](microsoft-365-limit-sharing.md) para obtener información sobre las opciones para limitar el uso compartido.
 
 ## <a name="related-topics"></a>Temas relacionados
 
 [Introducción a la colaboración de archivos en Microsoft 365](/sharepoint/intro-to-file-collaboration)
 
-[Planear la colaboración de archivos SharePoint con Microsoft 365](/sharepoint/deploy-file-collaboration)
+[Planear la colaboración de archivos en SharePoint con Microsoft 365](/sharepoint/deploy-file-collaboration)

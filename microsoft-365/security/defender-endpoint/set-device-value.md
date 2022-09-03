@@ -2,7 +2,7 @@
 title: Establecer la API de valor de dispositivo
 description: Obtenga información sobre cómo especificar el valor de un dispositivo mediante una API de Microsoft Defender para punto de conexión.
 keywords: api, graph api, api admitidas, etiquetas, etiquetas de máquina
-ms.prod: m365-security
+ms.service: microsoft-365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -13,14 +13,14 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
-ms.technology: mde
+ms.subservice: mde
 ms.custom: api
-ms.openlocfilehash: 940fb1a04bbef5ccc7b05097429bb6b04869e313
-ms.sourcegitcommit: 217108c59be41b01963a393b4f16d137636fe6a8
+ms.openlocfilehash: 219b552eb096e1e1bcc59938f0c360afb0663017
+ms.sourcegitcommit: d3ef9391f621e8f4ca70661184b3bb82c6cbda94
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/12/2022
-ms.locfileid: "67331321"
+ms.lasthandoff: 09/02/2022
+ms.locfileid: "67584493"
 ---
 # <a name="set-device-value-api"></a>Establecer la API de valor de dispositivo
 

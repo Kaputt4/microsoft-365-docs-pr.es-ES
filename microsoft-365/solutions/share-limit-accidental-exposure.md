@@ -5,7 +5,7 @@ author: MikePlumleyMSFT
 manager: serdars
 audience: ITPro
 ms.topic: article
-ms.prod: microsoft-365-enterprise
+ms.service: microsoft-365-enterprise
 ms.collection:
 - SPO_Content
 - M365-collaboration
@@ -17,12 +17,12 @@ ms.localizationpriority: high
 f1.keywords: NOCSH
 recommendations: false
 description: Obtenga información sobre cómo limitar la exposición accidental de información al compartir archivos con usuarios externos a la organización.
-ms.openlocfilehash: c1bf6424e2be70118dd2d85671a857a8a33ef2f9
-ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
-ms.translationtype: HT
+ms.openlocfilehash: 66d55a59175b812d305ab3e1c4868f7be689cbaa
+ms.sourcegitcommit: d3ef9391f621e8f4ca70661184b3bb82c6cbda94
+ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/08/2022
-ms.locfileid: "63329063"
+ms.lasthandoff: 09/02/2022
+ms.locfileid: "67586102"
 ---
 # <a name="limit-accidental-exposure-to-files-when-sharing-with-people-outside-your-organization"></a>Limitar la exposición accidental de archivos al compartirlos con usuarios externos a la organización
 

@@ -1,11 +1,11 @@
 ---
-title: Paso 5. Administración de dispositivos y aplicaciones para el Microsoft 365 para inquilinos empresariales
+title: Paso 5. Administración de dispositivos y aplicaciones para los inquilinos de Microsoft 365 para empresas
 ms.author: kvice
 author: kelleyvice-msft
 manager: scotv
 ms.audience: ITPro
 ms.topic: article
-ms.prod: microsoft-365-enterprise
+ms.service: microsoft-365-enterprise
 ms.localizationpriority: medium
 ms.collection:
 - M365-subscription-management
@@ -16,25 +16,25 @@ ms.collection:
 ms.custom:
 - Ent_Solutions
 description: Implemente la opción correcta para la administración de dispositivos y aplicaciones para los inquilinos de Microsoft 365.
-ms.openlocfilehash: 3999d30aaeee9ebfc2af90b0aeeeaea1b46986fb
-ms.sourcegitcommit: ebbe8713297675db5dcb3e0d9c3ae5e746b99196
+ms.openlocfilehash: 827e3aa06e81e1d10bf4f6b83c4baeb5c143c206
+ms.sourcegitcommit: d3ef9391f621e8f4ca70661184b3bb82c6cbda94
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/14/2022
-ms.locfileid: "65419470"
+ms.lasthandoff: 09/02/2022
+ms.locfileid: "67586080"
 ---
-# <a name="step-5-device-and-app-management-for-your-microsoft-365-for-enterprise-tenants"></a>Paso 5. Administración de dispositivos y aplicaciones para el Microsoft 365 para inquilinos empresariales
+# <a name="step-5-device-and-app-management-for-your-microsoft-365-for-enterprise-tenants"></a>Paso 5. Administración de dispositivos y aplicaciones para los inquilinos de Microsoft 365 para empresas
 
-Microsoft 365 para empresas incluye características para ayudar a administrar dispositivos y el uso de aplicaciones en esos dispositivos dentro de su organización con la administración de dispositivos móviles (MDM) y la administración de aplicaciones móviles (MAM). Puede administrar dispositivos iOS, Android, macOS y Windows para proteger el acceso a los recursos de la organización, incluidos los datos. Por ejemplo, puede evitar que los correos electrónicos se envíen a personas ajenas a su organización o aislar los datos de la organización de los datos personales en los dispositivos personales del trabajador.
+Microsoft 365 para empresas incluye características para ayudar a administrar dispositivos y el uso de aplicaciones en esos dispositivos dentro de su organización con la administración de dispositivos móviles (MDM) y la administración de aplicaciones móviles (MAM). Puede administrar dispositivos iOS, Android, macOS y Windows para proteger el acceso a los recursos de su organización, incluidos los datos. Por ejemplo, puede evitar que los correos electrónicos se envíen a personas ajenas a su organización o aislar los datos de la organización de los datos personales en los dispositivos personales del trabajador.
 
-Este es un ejemplo de la validación y administración de los usuarios, sus dispositivos y su uso de aplicaciones de productividad locales y en la nube como Microsoft Teams.
+Este es un ejemplo de la validación y administración de los usuarios, sus dispositivos y su uso de aplicaciones de productividad locales y en la nube, como Microsoft Teams.
 
 ![Validación y administración de usuarios, dispositivos y aplicaciones.](../media/tenant-management-overview/tenant-management-device-app-mgmt.png)
 
-Para ayudarle a proteger y proteger los recursos de su organización, Microsoft 365 para empresas incluye características que ayudan a administrar los dispositivos y su acceso a las aplicaciones. Hay dos opciones para la administración de dispositivos:
+Para ayudarle a proteger y proteger los recursos de su organización, Microsoft 365 para empresas incluye características para ayudar a administrar los dispositivos y su acceso a las aplicaciones. Hay dos opciones para la administración de dispositivos:
 
 - Microsoft Intune, que es una solución completa de administración de dispositivos y aplicaciones para empresas.
-- Basic Mobility and Security, que es un subconjunto de servicios de Intune incluidos con todos los productos Microsoft 365 para administrar dispositivos de la organización. Para obtener más información, consulte [Funcionalidades de movilidad y seguridad básicas](../admin/basic-mobility-security/capabilities.md).
+- Basic Mobility and Security, que es un subconjunto de Intune servicios incluidos con todos los productos de Microsoft 365 para administrar dispositivos en su organización. Para obtener más información, consulte [Funcionalidades de movilidad y seguridad básicas](../admin/basic-mobility-security/capabilities.md).
 
 Si tiene Microsoft 365 E3 o E5, debe usar Intune.
 
@@ -55,7 +55,7 @@ Microsoft proporciona un conjunto de configuraciones para el [acceso a identidad
 - Directivas de riesgo de usuario de Azure AD Identity Protection
 - Directivas adicionales de aplicaciones en la nube
 
-Este es un ejemplo de la aplicación de esta configuración y directivas para validar y restringir a los usuarios, sus dispositivos y su uso de aplicaciones de productividad locales y en la nube, como Microsoft Teams.
+Este es un ejemplo de la aplicación de estas directivas y configuración para validar y restringir a los usuarios, sus dispositivos y su uso de aplicaciones de productividad locales y en la nube como Microsoft Teams.
 
 ![Configuraciones de acceso de identidad y dispositivo para requisitos y restricciones en los usuarios, sus dispositivos y su uso de aplicaciones.](../media/tenant-management-overview/tenant-management-device-app-mgmt-golden-config.png)
 

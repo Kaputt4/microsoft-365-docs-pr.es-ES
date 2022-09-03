@@ -2,7 +2,7 @@
 title: Creación y administración de roles para el control de acceso basado en rol
 description: Cree roles y defina los permisos asignados al rol como parte de la implementación del control de acceso basado en rol en el Microsoft 365 Defender
 keywords: roles de usuario, roles, acceso a rbac
-ms.prod: m365-security
+ms.service: microsoft-365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -14,13 +14,13 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.custom: admindeeplinkDEFENDER
 ms.topic: article
-ms.technology: mde
-ms.openlocfilehash: 91f9f7c48d63b200db28b29530d5c1f398877283
-ms.sourcegitcommit: 48a75b40e607542e5fe219b6e75ffc757804a9c6
+ms.subservice: mde
+ms.openlocfilehash: 8d86c55dcab74ea3901b4e1c55882664d9e7dd83
+ms.sourcegitcommit: d3ef9391f621e8f4ca70661184b3bb82c6cbda94
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/16/2022
-ms.locfileid: "67345061"
+ms.lasthandoff: 09/02/2022
+ms.locfileid: "67586608"
 ---
 # <a name="create-and-manage-roles-for-role-based-access-control"></a>Creación y administración de roles para el control de acceso basado en rol
 

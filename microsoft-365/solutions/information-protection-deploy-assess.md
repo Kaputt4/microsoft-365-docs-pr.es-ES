@@ -8,7 +8,7 @@ manager: laurawi
 ms.date: 07/13/2020
 audience: ITPro
 ms.topic: article
-ms.prod: microsoft-365-enterprise
+ms.service: microsoft-365-enterprise
 ms.localizationpriority: medium
 ms.collection:
 - M365-security-compliance
@@ -18,12 +18,12 @@ ms.collection:
 - zerotrust-solution
 ms.custom: ''
 description: Determine las regulaciones de privacidad de datos, los escenarios pertinentes, su preparación y los tipos de información confidencial que se encuentran en su entorno de Microsoft 365.
-ms.openlocfilehash: e881ff4eb9561525fed42775d8f56b6842dc1719
-ms.sourcegitcommit: 61b22df76e0f81e5ef11c587b129287886151c79
+ms.openlocfilehash: a9eb6e975e223014006d34ecea33851c116baab9
+ms.sourcegitcommit: d3ef9391f621e8f4ca70661184b3bb82c6cbda94
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/12/2022
-ms.locfileid: "66748316"
+ms.lasthandoff: 09/02/2022
+ms.locfileid: "67585496"
 ---
 # <a name="assess-data-privacy-risks-and-identify-sensitive-items-with-microsoft-365"></a>Evaluación de riesgos de privacidad de datos e identificación de elementos confidenciales con Microsoft 365
 
@@ -49,9 +49,9 @@ La adhesión a otras normas como la ISO 27001 también ha sido reconocida por va
 
 Otras normativas de privacidad de datos destacadas también especifican requisitos para el tratamiento de datos personales.
 
-En el Estados Unidos, estos incluyen la Ley de Protección al Consumidor de California ([CCPA](/compliance/regulatory/ccpa-faq)), HIPAA-HITECH (Estados Unidos ley de privacidad de atención médica) y la Ley Graham Leach Bliley (GLBA). Las regulaciones adicionales específicas del estado también están en vigor o en desarrollo.
+En el Estados Unidos, estos incluyen la Ley de Protección al Consumidor de California ([CCPA](/compliance/regulatory/ccpa-faq)), HIPAA-HITECH (Estados Unidos ley de privacidad de atención médica) y la Ley Graham Leach Bliley (GLBA). Otras regulaciones específicas del estado también están en vigor o en desarrollo.
 
-En todo el mundo, otros ejemplos incluyen la Ley nacional de implementación del RGPD (BDSG) de Alemania, la Ley de protección de datos de Brasil (LGPD) y muchos otros.
+En todo el mundo, más ejemplos incluyen la Ley Nacional de Implementación del RGPD (BDSG) de Alemania, la Ley de protección de datos de Brasil (LGPD) y muchos otros.
 
 ## <a name="regulation-mapping-to-microsoft-365-technical-control-categories"></a>Asignación de normativas a categorías de control técnico de Microsoft 365
 
@@ -63,20 +63,20 @@ Para una referencia posterior en los artículos de esta solución general, en es
 |---|---|---|---|
 |RGPD|Artículo 5, apartado 1, letra f)|Los datos personales se procesarán de forma que garantice la seguridad adecuada de los datos personales, incluida la protección contra el procesamiento no autorizado o ilegal y contra la pérdida accidental, la destrucción o el daño, utilizando las medidas técnicas u organizativas adecuadas («integridad y confidencialidad».|(Todos) <br> Identidad <br> Device <br> Protección contra amenazas <br> Protección de la información <br> Gobernanza de la información <br> Detección y respuesta|
 ||Artículo 32)(1)(a)|Teniendo en cuenta el estado de la técnica, los costos de ejecución y la naturaleza, el ámbito, el contexto y los fines del tratamiento, así como el riesgo de variación de probabilidad y gravedad para los derechos y libertades de las personas físicas, el responsable y el encargado de la tratamiento aplicarán las medidas técnicas y organizativas adecuadas para garantizar un nivel de seguridad adecuado al riesgo,  incluyendo, entre otras cosas, según corresponda: (a) la seudónimo y el cifrado de datos personales.|Protección de la información|
-||Artículo 13)(2)(a)|"... en el momento en que se obtengan los datos personales, el responsable del tratamiento proporcionará al interesado la siguiente información adicional necesaria para garantizar un tratamiento justo y transparente: (a) el período durante el cual se almacenarán los datos personales, o si no es posible, los criterios utilizados para determinar dicho período.|Gobernanza de la información|
+||Artículo 13)(2)(a)|"... En el momento en que se obtengan los datos personales, el responsable del tratamiento proporcionará al interesado la siguiente información adicional necesaria para garantizar un tratamiento justo y transparente: (a) el período durante el cual se almacenarán los datos personales, o si no es posible, los criterios utilizados para determinar ese período.|Gobernanza de la información|
 ||Artículo 15)(1)(e)|El interesado tendrá derecho a obtener de la confirmación del responsable de la tratamiento si se están procesando o no los datos personales que le conciernen, y en su caso, el acceso a los datos personales y la siguiente información: (e) la existencia del derecho a solicitar al responsable la rectificación o eliminación de datos personales o la restricción del tratamiento de datos personales relativos al interesado o a oponerse a dichos datos Tratamiento|Detección y respuesta|
 |LGPD|Artículo 46|Los agentes encargados del tratamiento adoptarán medidas de seguridad, técnicas y administrativas que puedan proteger los datos personales frente a accesos no autorizados y situaciones accidentales o ilegales de destrucción, pérdida, alteración, comunicación o cualquier tipo de tratamiento inadecuado o ilegal.|Protección de la información <br> Gobernanza de la información <br> Detección y respuesta|
 ||Artículo 48|El responsable debe comunicar a la autoridad nacional y al interesado todo incidente de seguridad que pueda dar lugar a riesgos o daños relevantes a los interesados.|Detección y respuesta|
 |HIPPA-HITECH|45 CFR 164.312(e)(1)|Implementar medidas técnicas de seguridad para protegerse contra el acceso no autorizado a información de salud protegida electrónicamente que se transmite a través de una red de comunicaciones electrónicas.|Protección de la información|
 ||45 C.F.R. 164.312(e)(2)(ii)|Implementar un mecanismo para cifrar información de salud protegida electrónicamente cuando se considere necesario.|Protección de la información|
-||45 CFR 164.312(c)(2)|Implementar mecanismos electrónicos para corroborar que la información de salud protegida electrónicamente no se ha modificado o destruido de forma no autorizada.|Gobernanza de la información|
+||45 CFR 164.312(c)(2)|Implemente mecanismos electrónicos para corroborar que la información sanitaria protegida electrónica no se ha modificado ni destruido de forma no autorizada.|Gobernanza de la información|
 ||45 CFR 164.316(b)(1)(i)|Si esta subparte requiere que se documente una acción, actividad o evaluación, mantenga un registro escrito (que puede ser electrónico) de la acción, actividad o evaluación.|Gobernanza de la información|
 ||45 CFR 164.316(b)(1)(ii)|Conservar la documentación exigida por el párrafo (b)(1) de esta sección durante 6 años a partir de la fecha de creación o la fecha en que fue efectiva por última vez, la que sea posterior.|Gobernanza de la información|
 ||45 C.F.R. 164.308(a)(1)(ii)(D)|Implementar procedimientos para revisar periódicamente los registros de actividad del sistema de información, como registros de auditoría, informes de acceso e informes de seguimiento de incidentes de seguridad|Detección y respuesta|
 ||45 C.F.R. 164.308(a)(6)(ii)|Identificar y responder a incidentes de seguridad sospechosos o conocidos; mitigar, en la medida de lo posible, efectos negativos de los incidentes de seguridad que se conozcan en la entidad cubierta o la empresa asociada y documentar incidencias de seguridad y sus resultados.|Detección y respuesta|
 ||45 C.F.R. 164.312(b)|Implemente mecanismos de hardware, software y procedimientos que registren y examinen la actividad en sistemas de información que contienen o usan información de salud protegida electrónicamente.|Detección y respuesta|
 |CCPA|1798.105(c)|Una empresa que reciba una solicitud verificable de un consumidor para eliminar la información personal del consumidor de conformidad con la subdivisión (a) de esta sección eliminará la información personal del consumidor de sus registros y dirigirá a los proveedores de servicios que eliminen la información personal del consumidor de sus registros.|Detección y respuesta|
-||1798.105(d)|(excepciones a 1798.105(c) <br> Una empresa o un proveedor de servicios no estarán obligados a cumplir con la solicitud de un consumidor de eliminar la información personal del consumidor si es necesario que la empresa o el proveedor de servicios mantengan la información personal del consumidor para: (consulte el reglamento actual para obtener información adicional).|Detección y respuesta|
+||1798.105(d)|(excepciones a 1798.105(c) <br> Una empresa o un proveedor de servicios no deberán cumplir con la solicitud de un consumidor de eliminar la información personal del consumidor si es necesario que la empresa o el proveedor de servicios mantengan la información personal del consumidor con el fin de: (consulte el reglamento actual para obtener información adicional).|Detección y respuesta|
 |||||
 
 > [!IMPORTANT]
@@ -181,8 +181,8 @@ La evaluación del RGPD consta de estas secciones:
 
 |Sección|Descripción|
 |:-------|:-----|
-|Gobierno|<ol><li>¿Su directiva de privacidad indica explícitamente qué información de datos se está procesando? </li><li>¿Ejecuta regularmente evaluaciones de impacto de privacidad (PIA)? </li><li> ¿Usa una herramienta para administrar información personal (PI)? </li><li> ¿Tiene autoridad legal para realizar negocios con datos de PI en una persona determinada? ¿Realiza un seguimiento del consentimiento de los datos? </li><li> ¿Realiza el seguimiento, la implementación y la administración de controles de auditoría? ¿Supervisa las fugas de datos? </li></ol>|
-|Eliminación y notificación|<ol><li>¿Se proporcionan instrucciones explícitas sobre cómo se puede acceder a los datos de los usuarios? </li><li> ¿Tiene procesos documentados en vigor para controlar el consentimiento de exclusión? </li><li> ¿Tiene un proceso de eliminación automatizada de datos? </li><li> ¿Tiene un proceso para validar la identidad al interactuar con un cliente? </li></ol>|
+|Gobernanza|<ol><li>¿Su directiva de privacidad indica explícitamente qué información de datos se está procesando? </li><li>¿Ejecuta regularmente evaluaciones de impacto de privacidad (PIA)? </li><li> ¿Usa una herramienta para administrar información personal (PI)? </li><li> ¿Tiene autoridad legal para realizar negocios con datos de PI en una persona determinada? ¿Realiza un seguimiento del consentimiento de los datos? </li><li> ¿Realiza el seguimiento, la implementación y la administración de controles de auditoría? ¿Supervisa las fugas de datos? </li></ol>|
+|Eliminación y notificación|<ol><li>¿Se proporcionan instrucciones explícitas sobre cómo se puede acceder a los datos de los usuarios? </li><li> ¿Tiene procesos documentados para controlar el consentimiento de exclusión? </li><li> ¿Tiene un proceso de eliminación automatizada de datos? </li><li> ¿Tiene un proceso para validar la identidad al interactuar con un cliente? </li></ol>|
 |Mitigación de riesgos y seguridad de la información|<ol><li>¿Usa herramientas para examinar datos no estructurados? </li><li>¿Están todos los servidores actualizados y aprovecha los firewalls para protegerlos? </li><li>¿Ejecuta copias de seguridad periódicas de los servidores? </li><li>¿Supervisa activamente las fugas de datos? </li><li>¿Cifra los datos en reposo y en transmisión? </li></ol>|
 |Administración de directivas|<ol><li>¿Cómo se administran las reglas corporativas de enlace (BCR)? </li><li>¿Realiza un seguimiento del consentimiento de los datos? </li><li> En una escala de 1 a 5, siendo 5 completamente cubierta, ¿cubren sus contratos las clasificaciones de datos y los requisitos de control? </li><li>¿Tiene y prueba periódicamente un plan de respuesta a incidentes? </li><li>¿Qué directiva usa para administrar el acceso? </li></ol>|
 |||
@@ -213,7 +213,7 @@ Consulte estos artículos para obtener más información:
 - [Obtener más información acerca de los tipos de información confidencial](../compliance/sensitive-information-type-learn-about.md)
 - [Crear un tipo de información confidencial personalizado en el Centro de seguridad y cumplimiento](../compliance/create-a-custom-sensitive-information-type.md)
 - [Crear un tipo personalizado de información confidencial en PowerShell del Centro de seguridad y cumplimientol](../compliance/create-a-custom-sensitive-information-type-in-scc-powershell.md)
-- [Crear un tipo de información confidencial personalizado con clasificación basada en coincidencia exacta de datos](/microsoft-365/compliance/sit-get-started-exact-data-match-based-sits-overview?view=o365-worldwide)
+- [Crear un tipo de información confidencial personalizado con clasificación basada en coincidencia exacta de datos](/microsoft-365/compliance/sit-get-started-exact-data-match-based-sits-overview)
 
 ### <a name="content-explorer"></a>Explorador de contenido
 

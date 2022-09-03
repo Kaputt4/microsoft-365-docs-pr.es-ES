@@ -8,7 +8,7 @@ manager: laurawi
 ms.date: 06/09/2020
 audience: ITPro
 ms.topic: article
-ms.prod: microsoft-365-enterprise
+ms.service: microsoft-365-enterprise
 ms.localizationpriority: medium
 ms.collection:
 - M365-security-compliance
@@ -18,12 +18,12 @@ ms.collection:
 - zerotrust-solution
 ms.custom: ''
 description: Use etiquetas y directivas de retención de Microsoft 365 para administrar datos personales en su entorno de Microsoft 365.
-ms.openlocfilehash: 2643e183b9121e7e82a3237bde4d977315667008
-ms.sourcegitcommit: 61b22df76e0f81e5ef11c587b129287886151c79
+ms.openlocfilehash: 4a9f094aa1555db87956e247f83c83f6c7eefa9f
+ms.sourcegitcommit: d3ef9391f621e8f4ca70661184b3bb82c6cbda94
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/12/2022
-ms.locfileid: "66748789"
+ms.lasthandoff: 09/02/2022
+ms.locfileid: "67585298"
 ---
 # <a name="govern-information-subject-to-data-privacy-regulation"></a>Regulación de la información sujeta a la normativa de privacidad de datos
 
@@ -83,7 +83,7 @@ Tenga en cuenta lo siguiente:
 
 - Una vez que se conozcan mejor los tipos de información personal de su entorno, establezca programaciones de retención y eliminación para este tipo de contenido y ajuste la arquitectura de información para facilitar la gobernanza de este tipo de información. Por ejemplo, aísle la información personal en sitios, bibliotecas o carpetas independientes con acceso controlado.
 
-### <a name="retention-policies-and-retention-labels"></a>Directivas de retención y etiquetas de retención
+### <a name="retention-policies-and-retention-labels"></a>Directivas y etiquetas de retención
 
 Use [directivas de retención y etiquetas de retención](../compliance/retention.md) para conservar o eliminar contenido de Microsoft 365 que contenga o se espera que contenga datos personales.
 

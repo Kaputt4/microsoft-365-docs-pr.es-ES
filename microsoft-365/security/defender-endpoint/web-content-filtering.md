@@ -2,7 +2,7 @@
 title: Filtrado de contenido web
 description: Use el filtrado de contenido web en Microsoft Defender para punto de conexión para realizar un seguimiento y regular el acceso a sitios web en función de sus categorías de contenido.
 keywords: protección web, protección contra amenazas web, exploración web, supervisión, informes, tarjetas, lista de dominios, seguridad, phishing, malware, vulnerabilidad de seguridad, sitios web, protección de red, Edge, Internet Explorer, Chrome, Firefox, explorador web
-ms.prod: m365-security
+ms.service: microsoft-365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -14,13 +14,13 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.custom: admindeeplinkDEFENDER
 ms.topic: article
-ms.technology: mde
-ms.openlocfilehash: 7b195f595592b5c3b284b6dee4fd65b66d80e06a
-ms.sourcegitcommit: d1b60ed9a11f5e6e35fbaf30ecaeb9dfd6dd197d
+ms.subservice: mde
+ms.openlocfilehash: 294549d49c37024d0f1c9ed94a325990aacbf572
+ms.sourcegitcommit: d3ef9391f621e8f4ca70661184b3bb82c6cbda94
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/29/2022
-ms.locfileid: "66489384"
+ms.lasthandoff: 09/02/2022
+ms.locfileid: "67585870"
 ---
 # <a name="web-content-filtering"></a>Filtrado de contenido web
 

@@ -2,7 +2,7 @@
 title: Ejecutar el analizador de cliente en Windows
 description: Obtenga información sobre cómo ejecutar el analizador de cliente de Microsoft Defender para punto de conexión en Windows.
 keywords: analizador de cliente, solución de problemas de sensor, analizador, mdeanalyzer, windows
-ms.prod: m365-security
+ms.service: microsoft-365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -17,13 +17,13 @@ ms.collection:
 - M365-security-compliance
 - m365initiative-m365-defender
 ms.topic: conceptual
-ms.technology: m365d
-ms.openlocfilehash: 7a60e76c332c7fb41107535f4394816b020f55e2
-ms.sourcegitcommit: 1734c95ce72d9c8af695cb4b49b1e40d921a1fee
+ms.subservice: m365d
+ms.openlocfilehash: f70b42f685afbbebff64cd6bc5e6aab203f51e8a
+ms.sourcegitcommit: d3ef9391f621e8f4ca70661184b3bb82c6cbda94
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/07/2022
-ms.locfileid: "66686105"
+ms.lasthandoff: 09/02/2022
+ms.locfileid: "67586432"
 ---
 # <a name="run-the-client-analyzer-on-windows"></a>Ejecutar el analizador de cliente en Windows
 
@@ -162,7 +162,7 @@ De forma predeterminada, el archivo MDEClientAnalyzerResult.zip desempaquetado c
 
 
 
-## <a name="see-also"></a>Recursos adicionales
+## <a name="see-also"></a>Vea también
 
 - [Información general del Analizador de clientes](overview-client-analyzer.md)
 - [Descargar y ejecutar el Analizador de clientes](download-client-analyzer.md)

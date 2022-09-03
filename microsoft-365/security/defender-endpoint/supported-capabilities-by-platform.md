@@ -2,7 +2,7 @@
 title: Funcionalidades de Microsoft Defender para punto de conexión admitidas por plataforma
 description: Conozca las funcionalidades de Microsoft Defender para punto de conexión compatibles con dispositivos Windows 10, servidores y dispositivos que no son de Windows.
 keywords: onboarding, Microsoft Defender para punto de conexión onboarding, sccm, group policy, mdm, local script, detection test
-ms.prod: m365-security
+ms.service: microsoft-365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -15,13 +15,13 @@ ms.collection:
 - M365-security-compliance
 - m365-initiative-defender-endpoint
 ms.topic: conceptual
-ms.technology: mde
-ms.openlocfilehash: 8370bfcae9efbac72642292d41b844cc7b20219a
-ms.sourcegitcommit: ab32c6e19af08837aaa84a058653c3a209d366ba
+ms.subservice: mde
+ms.openlocfilehash: 216532eab9aead28c94122bfacfa4946d191279b
+ms.sourcegitcommit: d3ef9391f621e8f4ca70661184b3bb82c6cbda94
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/26/2022
-ms.locfileid: "67445211"
+ms.lasthandoff: 09/02/2022
+ms.locfileid: "67585927"
 ---
 # <a name="supported-microsoft-defender-for-endpoint-capabilities-by-platform"></a>Funcionalidades de Microsoft Defender para punto de conexión admitidas por plataforma
 

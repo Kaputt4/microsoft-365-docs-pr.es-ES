@@ -1,10 +1,10 @@
 ---
 title: Técnicas en la escala de tiempo del dispositivo
-description: Descripción de la escala de tiempo del dispositivo en Microsoft Defender para endpoint
+description: Descripción de la escala de tiempo del dispositivo en Microsoft Defender para punto de conexión
 keywords: escala de tiempo del dispositivo, punto de conexión, MITRE, MITRE ATT&CK, técnicas, tácticas
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
-ms.prod: m365-security
+ms.service: microsoft-365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -15,83 +15,83 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
-ms.technology: mde
-ms.openlocfilehash: d724b7663bd4484c630e97362eb5766490e1fa8e
-ms.sourcegitcommit: b0c3ffd7ddee9b30fab85047a71a31483b5c649b
+ms.subservice: mde
+ms.openlocfilehash: 89e29ccddb3ee7da6affb6133665b43a4d5dffdb
+ms.sourcegitcommit: d3ef9391f621e8f4ca70661184b3bb82c6cbda94
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/25/2022
-ms.locfileid: "64465913"
+ms.lasthandoff: 09/02/2022
+ms.locfileid: "67586300"
 ---
 # <a name="techniques-in-the-device-timeline"></a>Técnicas en la escala de tiempo del dispositivo
 
 **Se aplica a:**
 - [Microsoft Defender para punto de conexión Plan 2](https://go.microsoft.com/fwlink/?linkid=2154037)
 
-Puedes obtener más información en una investigación analizando los eventos que sucedieron en un dispositivo específico. En primer lugar, selecciona el dispositivo de interés de la [lista Dispositivos](machines-view-overview.md). En la página del dispositivo, puedes seleccionar la pestaña **Escala** de tiempo para ver todos los eventos que se produjeron en el dispositivo.
+Puede obtener más información en una investigación mediante el análisis de los eventos que ocurrieron en un dispositivo específico. En primer lugar, seleccione el dispositivo de interés en la [lista Dispositivos](machines-view-overview.md). En la página del dispositivo, puede seleccionar la pestaña **Escala de tiempo** para ver todos los eventos que se produjeron en el dispositivo.
 
-## <a name="understand-techniques-in-the-timeline"></a>Comprender técnicas en la escala de tiempo
+## <a name="understand-techniques-in-the-timeline"></a>Descripción de las técnicas en la escala de tiempo
 
 > [!IMPORTANT]
-> Parte de la información se relaciona con una característica de producto publicada previamente en la versión preliminar pública que puede modificarse considerablemente antes de su lanzamiento comercial. Microsoft no otorga garantías, expresas o implícitas, con respecto a la información que aquí se proporciona.
+> Cierta información se relaciona con una característica de producto preliminar en versión preliminar pública que puede modificarse sustancialmente antes de su lanzamiento comercial. Microsoft no otorga garantías, expresas o implícitas, con respecto a la información que aquí se proporciona.
 
-En Microsoft Defender para endpoint, **las técnicas son** un tipo de datos adicional en la escala de tiempo del evento. Las técnicas proporcionan más información sobre las actividades asociadas con [MITRE ATT&técnicas de CK](https://attack.mitre.org/) o sub-técnicas.
+En Microsoft Defender para punto de conexión, **Técnicas** es un tipo de datos adicional en la escala de tiempo de eventos. Las técnicas proporcionan más información sobre las actividades asociadas a [MITRE ATT&](https://attack.mitre.org/) técnicas de CK o sub técnicas.
 
-Esta característica simplifica la experiencia de investigación al ayudar a los analistas a comprender las actividades que se observaron en un dispositivo. A continuación, los analistas pueden decidir investigar más a fondo.
+Esta característica simplifica la experiencia de investigación al ayudar a los analistas a comprender las actividades que se observaron en un dispositivo. A continuación, los analistas pueden decidir investigar más.
 
-Para la vista previa pública, las técnicas están disponibles de forma predeterminada y se muestran junto con los eventos cuando se visualiza la escala de tiempo de un dispositivo.
+Para la versión preliminar pública, Las técnicas están disponibles de forma predeterminada y se muestran junto con eventos cuando se ve la escala de tiempo de un dispositivo.
 
-:::image type="content" source="images/device-timeline-2.png" alt-text="Las técnicas en la escala de tiempo del dispositivo" lightbox="images/device-timeline-2.png":::
+:::image type="content" source="images/device-timeline-2.png" alt-text="Técnicas en la escala de tiempo del dispositivo" lightbox="images/device-timeline-2.png":::
 
-Las técnicas se resaltan en texto en negrita y aparecen con un icono azul a la izquierda. El nombre de la técnica y el identificador&MITRE ATT correspondientes también aparecen como etiquetas en Información adicional.
+Las técnicas se resaltan en negrita y aparecen con un icono azul a la izquierda. El id. de CK y el nombre de la técnica de MITRE AT&T correspondientes también aparecen como etiquetas en Información adicional.
 
 Las opciones de búsqueda y exportación también están disponibles para Técnicas.
 
-## <a name="investigate-using-the-side-pane"></a>Investigar con el panel lateral
+## <a name="investigate-using-the-side-pane"></a>Investigación mediante el panel lateral
 
-Seleccione una técnica para abrir su panel lateral correspondiente. Aquí puede ver información e información adicionales, como att relacionado&técnicas de CK, tácticas y descripciones.
+Seleccione una técnica para abrir su panel lateral correspondiente. Aquí puede ver información e información adicional, como técnicas, tácticas y descripciones relacionadas de ATT&CK.
 
-Seleccione la técnica *de ataque específica* para abrir la página relacionada&técnica de CK en la que puede encontrar más información sobre ella.
+Seleccione la *técnica de ataque* específica para abrir la página de técnica de ATT&CK relacionada, donde puede encontrar más información al respecto.
 
-Puede copiar los detalles de una entidad cuando vea un icono azul a la derecha. Por ejemplo, para copiar el SHA1 de un archivo relacionado, seleccione el icono de página azul.
+Puede copiar los detalles de una entidad cuando vea un icono azul a la derecha. Por ejemplo, para copiar sha1 de un archivo relacionado, seleccione el icono de página azul.
 
-:::image type="content" source="images/techniques-side-pane-clickable.png" alt-text="Los detalles de la entidad para copiar" lightbox="images/techniques-side-pane-clickable.png":::
+:::image type="content" source="images/techniques-side-pane-clickable.png" alt-text="que se va a copiar los detalles de la entidad" lightbox="images/techniques-side-pane-clickable.png":::
 
 Puede hacer lo mismo con las líneas de comandos.
 
-:::image type="content" source="images/techniques-side-pane-command.png" alt-text="La opción para copiar la línea de comandos" lightbox="images/techniques-side-pane-command.png":::
+:::image type="content" source="images/techniques-side-pane-command.png" alt-text="Opción para copiar la línea de comandos" lightbox="images/techniques-side-pane-command.png":::
 
-## <a name="investigate-related-events"></a>Investigar eventos relacionados
+## <a name="investigate-related-events"></a>Investigación de eventos relacionados
 
-Para usar [la búsqueda avanzada](advanced-hunting-overview.md) para buscar eventos relacionados con la técnica seleccionada, seleccione **Buscar para eventos relacionados**. Esto lleva a la página de búsqueda avanzada con una consulta para encontrar eventos relacionados con la técnica.
+Para usar la [búsqueda avanzada](advanced-hunting-overview.md) para buscar eventos relacionados con la técnica seleccionada, seleccione **Buscar eventos relacionados**. Esto conduce a la página de búsqueda avanzada con una consulta para buscar eventos relacionados con la técnica.
 
-:::image type="content" source="images/techniques-hunt-for-related-events.png" alt-text="La opción Buscar eventos relacionados" lightbox="images/techniques-hunt-for-related-events.png":::
+:::image type="content" source="images/techniques-hunt-for-related-events.png" alt-text="Opción Buscar eventos relacionados" lightbox="images/techniques-hunt-for-related-events.png":::
 
 > [!NOTE]
-> Las consultas con el botón **Buscar** eventos relacionados desde un panel lateral Técnica muestran todos los eventos relacionados con la técnica identificada, pero no incluyen la técnica en sí en los resultados de la consulta.
+> La consulta mediante el botón **Buscar eventos relacionados** de un panel lateral Técnica muestra todos los eventos relacionados con la técnica identificada, pero no incluye la propia técnica en los resultados de la consulta.
 
-## <a name="customize-your-device-timeline"></a>Personalizar la escala de tiempo del dispositivo
+## <a name="customize-your-device-timeline"></a>Personalización de la escala de tiempo del dispositivo
 
-En la parte superior derecha de la escala de tiempo del dispositivo, puedes elegir un intervalo de fechas para limitar el número de eventos y técnicas de la escala de tiempo.
+En la parte superior derecha de la escala de tiempo del dispositivo, puede elegir un intervalo de fechas para limitar el número de eventos y técnicas en la escala de tiempo.
 
-Puede personalizar las columnas que se deben exponer. También puede filtrar los eventos marcados por tipo de datos o por grupo de eventos.
+Puede personalizar las columnas que se van a exponer. También puede filtrar los eventos marcados por tipo de datos o por grupo de eventos.
 
-### <a name="choose-columns-to-expose"></a>Elegir columnas para exponer
+### <a name="choose-columns-to-expose"></a>Elegir columnas que se van a exponer
 
-Puede elegir qué columnas exponer en la escala de tiempo seleccionando el **botón Elegir** columnas.
+Para elegir qué columnas se van a exponer en la escala de tiempo, seleccione el botón **Elegir columnas** .
 
-:::image type="content" source="images/filter-customize-columns.png" alt-text="Panel en el que puede personalizar columnas" lightbox="images/filter-customize-columns.png":::
+:::image type="content" source="images/filter-customize-columns.png" alt-text="Panel en el que se pueden personalizar las columnas" lightbox="images/filter-customize-columns.png":::
 
 
-Desde allí, puede seleccionar qué conjunto de información incluir.
+Desde allí puede seleccionar qué información se va a incluir.
 
 ### <a name="filter-to-view-techniques-or-events-only"></a>Filtrar solo para ver técnicas o eventos
 
-Para ver solo eventos o técnicas, selecciona **Filtros en** la escala de tiempo del dispositivo y elige el tipo de datos que prefieras ver.
+Para ver solo eventos o técnicas, seleccione **Filtros** en la escala de tiempo del dispositivo y elija el tipo de datos que quiera ver.
 
 :::image type="content" source="images/device-timeline-filters.png" alt-text="Panel Filtros" lightbox="images/device-timeline-filters.png":::
 
 ## <a name="see-also"></a>Vea también
 
 - [Ver y organizar la lista de dispositivos](machines-view-overview.md)
-- [Marcas de eventos de escala de tiempo de dispositivo de Microsoft Defender para punto de conexión](device-timeline-event-flag.md)
+- [Microsoft Defender para punto de conexión marcas de eventos de escala de tiempo del dispositivo](device-timeline-event-flag.md)

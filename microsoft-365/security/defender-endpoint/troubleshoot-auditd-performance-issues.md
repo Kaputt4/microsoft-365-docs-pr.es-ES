@@ -3,7 +3,7 @@ title: Solución de problemas de rendimiento de AuditD con Microsoft Defender pa
 ms.reviewer: ''
 description: Describe cómo solucionar problemas de rendimiento relacionados con AuditD que podría encontrar con Microsoft Defender para Linux.
 keywords: microsoft, defender, Microsoft Defender para punto de conexión, linux, troubleshooting, AuditD, XMDEClientAnalyzer, installation, deploy, uninstallation
-ms.prod: m365-security
+ms.service: microsoft-365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -16,13 +16,13 @@ ms.collection:
 - m365-security-compliance
 - m365-initiative-defender-endpoint
 ms.topic: conceptual
-ms.technology: mde
-ms.openlocfilehash: 840961a39f2e298bfc11eecdbb1344fc9c252c3a
-ms.sourcegitcommit: e4882e3c66166ea7b834ad2e8fafeab42293e07d
+ms.subservice: mde
+ms.openlocfilehash: 0c953eef32dc3851fa9618f6204dec6b19e23bff
+ms.sourcegitcommit: d3ef9391f621e8f4ca70661184b3bb82c6cbda94
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/30/2022
-ms.locfileid: "67099071"
+ms.lasthandoff: 09/02/2022
+ms.locfileid: "67584229"
 ---
 # <a name="troubleshoot-auditd-performance-issues-with-microsoft-defender-for-endpoint-on-linux"></a>Solución de problemas de rendimiento de AuditD con Microsoft Defender para punto de conexión en Linux 
 
@@ -32,7 +32,7 @@ En este artículo se proporcionan instrucciones sobre cómo solucionar problemas
 
 - Microsoft Defender para punto de conexión en distribuciones del sistema operativo Linux usa el marco AuditD para recopilar determinados tipos de eventos de telemetría. 
 
-- Los eventos del sistema capturados por las reglas agregadas a `/etc/audit/rules.d/` se agregarán a la auditoría.log y podrían afectar a la auditoría del host y a la recopilación ascendente.  
+- Los eventos del sistema capturados por las reglas agregadas a `/etc/audit/rules.d/` se agregarán a audit.log(s) y podrían afectar a la auditoría del host y a la recopilación ascendente.  
 
 - Los eventos agregados por Microsoft Defender para punto de conexión en Linux se etiquetarán con `mdatp` clave. 
 
@@ -42,7 +42,7 @@ En determinadas cargas de trabajo de servidor, se pueden observar dos problemas:
 
 - **Consumo elevado** de recursos de CPU de **_mdatp_audisp_plugin_** proceso. 
 
-- ***/var/log/audit/audit.log*** convirtiéndose en grande o rotando con frecuencia. 
+- ***/var/log/audit/audit.log*** se convierte en grande o gira con frecuencia. 
 
 Estos problemas pueden producirse en servidores con muchos eventos que inundan AuditD.  
 

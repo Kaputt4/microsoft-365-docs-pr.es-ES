@@ -6,19 +6,19 @@ manager: pamgreen
 ms.reviewer: ssquires
 audience: admin
 ms.topic: article
-ms.prod: microsoft-365-enterprise
+ms.service: microsoft-365-enterprise
 search.appverid: ''
 ms.collection:
 - enabler-strategic
 - m365initiative-syntex
 ms.localizationpriority: medium
 description: Obtenga información sobre cómo usar la compilación de IA para crear modelos de procesamiento de formularios en Microsoft SharePoint Syntex.
-ms.openlocfilehash: 7b9ff8b8a1014dfb47aa7061caf31599e497c18a
-ms.sourcegitcommit: 37111bc0c5a6cc4690f7144a019bbff11d44858f
+ms.openlocfilehash: 8bcb5874ce62b8125e385fcf9eca8dbd2ca9f0fa
+ms.sourcegitcommit: d3ef9391f621e8f4ca70661184b3bb82c6cbda94
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/18/2022
-ms.locfileid: "65463195"
+ms.lasthandoff: 09/02/2022
+ms.locfileid: "67585254"
 ---
 # <a name="form-processing-overview-in-microsoft-sharepoint-syntex"></a>Resumen del procesamiento de formularios en Microsoft SharePoint Syntex
 
@@ -41,7 +41,7 @@ Use archivos de ejemplo para entrenar el modelo y definir la información que se
 
 Después de entrenar y publicar el modelo, el modelo crea un [flujo de Power Automate](/power-automate/getting-started). El flujo se ejecuta cuando se carga un archivo en la biblioteca de documentos de SharePoint y se extraen los datos identificados en el modelo. Los datos extraídos se mostrarán en columnas en la vista de la biblioteca de documentos del modelo.
 
-Un administrador de Office 365 debe [habilitar el procesamiento de formularios](./set-up-content-understanding.md) para que los usuarios puedan [crear un modelo de procesamiento de formularios](create-a-form-processing-model.md) en la biblioteca de documentos de SharePoint. Puede seleccionar los sitios durante la instalación o después de la misma, en la configuración de administración.
+Un administrador de Office 365 debe [habilitar el procesamiento de formularios](./set-up-content-understanding.md) para la biblioteca de documentos de SharePoint para que los usuarios puedan [crear un modelo de procesamiento de formularios](create-a-form-processing-model.md) en ella. Puede seleccionar los sitios durante la instalación o después de la misma, en la configuración de administración.
 
 ## <a name="file-limitations"></a>Limitaciones de archivos
 
@@ -60,7 +60,7 @@ Al configurar SharePoint Syntex en un [entorno de Microsoft 365 Multi-Geo](../en
 Si usa un entorno personalizado (en lugar del entorno predeterminado) para el procesamiento de Power Platform, hay requisitos de configuración adicionales. Para obtener más información, consulte [Entornos de Power Platform personalizados](set-up-content-understanding.md#requirements).
 
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
   
 [Documentación de Power Automate](/power-automate/)
 

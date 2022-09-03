@@ -10,7 +10,7 @@ manager: dougeby
 audience: ITPro
 description: Cree una directiva de acceso condicional en Azure AD para requerir dispositivos compatibles, manteniendo los datos corporativos seguros cuando los usuarios trabajan desde cualquier dispositivo en cualquier ubicación.
 ms.topic: article
-ms.prod: microsoft-365-enterprise
+ms.service: microsoft-365-enterprise
 ms.localizationpriority: high
 ms.collection:
 - Conditional access policy
@@ -20,12 +20,12 @@ ms.collection:
 - m365solution-scenario
 - zerotrust-solution
 ms.custom: ''
-ms.openlocfilehash: 61191da794c065a46d709d443982849ec4c4d3e3
-ms.sourcegitcommit: 61b22df76e0f81e5ef11c587b129287886151c79
-ms.translationtype: HT
+ms.openlocfilehash: 407611cbad022bdc59f6f16dbcd7b0fbe33d1435
+ms.sourcegitcommit: d3ef9391f621e8f4ca70661184b3bb82c6cbda94
+ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/12/2022
-ms.locfileid: "66747953"
+ms.lasthandoff: 09/02/2022
+ms.locfileid: "67585694"
 ---
 # <a name="step-4-require-healthy-and-compliant-devices-with-intune"></a>Paso 4. Requerir dispositivos correctos y compatibles con Intune
 
@@ -47,8 +47,8 @@ Asegúrese de:
 - Coordina los grupos de usuarios que asignó a las directivas de cumplimiento con los grupos de usuarios asignados a la directiva de acceso condicional.
 - Prueba las directivas de acceso condicional con las funcionalidades de What If y modo de auditoría antes de asignar completamente la directiva de acceso condicional. Esto te ayuda a comprender los resultados de la directiva.
 - Establece un período de gracia adaptado a la confidencialidad de los datos o la aplicación a la que se accede. 
-- Asegúrate de que las directivas de cumplimiento no interfieren con los requisitos normativos o de cumplimiento. 
-- Comprende los intervalos de registro de dispositivos para las directivas de cumplimiento.
+- Asegúrese de que las directivas de cumplimiento no interfieran con los requisitos normativos u otros requisitos de cumplimiento. 
+- Comprenda los intervalos de protección del dispositivo para las directivas de cumplimiento.
 - Evita conflictos entre las directivas de cumplimiento y los perfiles de configuración. Comprende los resultados, si lo deseas.
 
 Para solucionar problemas de perfiles de dispositivo en Intune, incluidos los conflictos entre directivas, consulta [Preguntas y respuestas habituales sobre perfiles y directivas de dispositivos en Microsoft Intune](/mem/intune/configuration/device-profile-troubleshoot).

@@ -7,7 +7,7 @@ ms.author: dansimp
 manager: dansimp
 audience: ITPro
 ms.topic: article
-ms.prod: microsoft-365-enterprise
+ms.service: microsoft-365-enterprise
 ms.localizationpriority: high
 ms.collection:
 - M365-security-compliance
@@ -17,12 +17,12 @@ ms.collection:
 - m365solution-scenario
 ms.custom: ''
 description: Use Microsoft Endpoint Manager para administrar sus dispositivos, equipos y otros puntos de conexión.
-ms.openlocfilehash: d18a001021486c617aaf0fa04972e9464a5c2016
-ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
-ms.translationtype: HT
+ms.openlocfilehash: 62b8e106ebd4350cc1d706ae15f599676b03dbc9
+ms.sourcegitcommit: d3ef9391f621e8f4ca70661184b3bb82c6cbda94
+ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/08/2022
-ms.locfileid: "63328629"
+ms.lasthandoff: 09/02/2022
+ms.locfileid: "67584119"
 ---
 # <a name="step-4-deploy-endpoint-management-for-your-devices-pcs-and-other-endpoints"></a>Paso 4. Implementar la administración de puntos de conexión para sus dispositivos, PCs y otros puntos de conexión
 

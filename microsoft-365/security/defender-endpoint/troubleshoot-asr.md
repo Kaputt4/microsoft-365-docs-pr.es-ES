@@ -3,7 +3,7 @@ title: Solución de problemas con las reglas de reducción de superficie expuest
 description: Recursos y código de ejemplo para solucionar problemas con las reglas de reducción de superficie expuesta a ataques en Microsoft Defender para punto de conexión.
 keywords: troubleshooting, error, fix, windows defender, por ejemplo, asr, rules, hips, troubleshooting, audit, exclusion, false positive, broken, blocking, Microsoft Defender para punto de conexión
 ms.pagetype: security
-ms.prod: m365-security
+ms.service: microsoft-365-security
 ms.mktglfcycl: manage
 ms.sitesec: library
 ms.localizationpriority: medium
@@ -14,15 +14,15 @@ ms.date: 03/27/2019
 ms.reviewer: ''
 manager: dansimp
 ms.custom: asr
-ms.technology: mde
+ms.subservice: mde
 ms.topic: how-to
 ms.collection: M365-security-compliance
-ms.openlocfilehash: 9c884ab9a4ee2180d3c491c4257fb04129c40bc9
-ms.sourcegitcommit: c314e989202dc1c9c260fffd459d53bc1f08514e
+ms.openlocfilehash: ced2de009678bc58ac103a05c53557b6198e52f8
+ms.sourcegitcommit: d3ef9391f621e8f4ca70661184b3bb82c6cbda94
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/12/2022
-ms.locfileid: "66717236"
+ms.lasthandoff: 09/02/2022
+ms.locfileid: "67584251"
 ---
 # <a name="troubleshoot-attack-surface-reduction-rules"></a>Solución de problemas de reglas de reducción de superficie expuesta a ataques
 

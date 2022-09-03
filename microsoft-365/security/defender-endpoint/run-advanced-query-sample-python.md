@@ -3,7 +3,7 @@ title: Guía de búsqueda avanzada con API de Python
 ms.reviewer: ''
 description: Obtenga información sobre cómo consultar mediante la API de Microsoft Defender para punto de conexión, mediante Python, con ejemplos.
 keywords: apis, api admitidas, búsqueda avanzada, consulta
-ms.prod: m365-security
+ms.service: microsoft-365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -14,14 +14,14 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
-ms.technology: mde
+ms.subservice: mde
 ms.custom: api
-ms.openlocfilehash: 6751098c58e53c06cf9b62f7b93cd48aa35f5374
-ms.sourcegitcommit: 217108c59be41b01963a393b4f16d137636fe6a8
+ms.openlocfilehash: c75c39f898a6e94e9f0f96402d28c477a5819efa
+ms.sourcegitcommit: d3ef9391f621e8f4ca70661184b3bb82c6cbda94
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/12/2022
-ms.locfileid: "67331387"
+ms.lasthandoff: 09/02/2022
+ms.locfileid: "67585166"
 ---
 # <a name="advanced-hunting-using-python"></a>Búsqueda avanzada de amenazas con Python
 

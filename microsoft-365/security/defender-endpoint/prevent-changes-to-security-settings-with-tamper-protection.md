@@ -5,7 +5,7 @@ manager: dansimp
 description: Use la protección contra alteraciones para evitar que las aplicaciones malintencionadas cambien la configuración de seguridad importante.
 keywords: malware, defender, antivirus, protección contra alteraciones
 ms.pagetype: security
-ms.prod: m365-security
+ms.service: microsoft-365-security
 ms.mktglfcycl: manage
 ms.sitesec: library
 ms.localizationpriority: medium
@@ -16,16 +16,16 @@ ms.author: deniseb
 ms.custom:
 - nextgen
 - admindeeplinkDEFENDER
-ms.technology: mde
+ms.subservice: mde
 ms.collection:
 - M365-security-compliance
 - m365initiative-defender-endpoint
-ms.openlocfilehash: dd0512f66adc012c222bded21bad6904bff884dd
-ms.sourcegitcommit: d09eb780dc41a01796eb8137fbe9267231af6746
+ms.openlocfilehash: 6b89e21bbd376d74d36b4363f4450559b6564020
+ms.sourcegitcommit: d3ef9391f621e8f4ca70661184b3bb82c6cbda94
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/19/2022
-ms.locfileid: "67387163"
+ms.lasthandoff: 09/02/2022
+ms.locfileid: "67586344"
 ---
 # <a name="protect-security-settings-with-tamper-protection"></a>Configuración de seguridad de la protección con protección contra alteraciones
 

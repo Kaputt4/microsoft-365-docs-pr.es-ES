@@ -2,7 +2,7 @@
 title: Información sobre los servicios de protección de última generación de Microsoft Defender para punto de conexión
 description: Obtenga información sobre los servicios de protección de última generación de Microsoft Defender para punto de conexión. Refuerce el perímetro de seguridad de la red mediante los servicios de protección de última generación diseñados para detectar todos los tipos de amenazas emergentes.
 keywords: Antivirus de Microsoft Defender, windows defender, antimalware, virus, malware, amenaza, detección, protección, seguridad
-ms.prod: m365-security
+ms.service: microsoft-365-security
 ms.mktglfcycl: manage
 ms.sitesec: library
 ms.pagetype: security
@@ -13,14 +13,14 @@ ms.author: deniseb
 ms.reviewer: mkaminska
 manager: dansimp
 ms.custom: nextgen
-ms.technology: mde
+ms.subservice: mde
 ms.collection: M365-security-compliance
-ms.openlocfilehash: f1a1517e072c3a1c07f8792281092392dd1ff210
-ms.sourcegitcommit: c314e989202dc1c9c260fffd459d53bc1f08514e
-ms.translationtype: HT
+ms.openlocfilehash: 9e8f1c04616bf26f337668f7556606eee0a39d70
+ms.sourcegitcommit: d3ef9391f621e8f4ca70661184b3bb82c6cbda94
+ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/12/2022
-ms.locfileid: "66717104"
+ms.lasthandoff: 09/02/2022
+ms.locfileid: "67586476"
 ---
 # <a name="next-generation-protection-overview"></a>Información sobre los servicios de protección de última generación
 

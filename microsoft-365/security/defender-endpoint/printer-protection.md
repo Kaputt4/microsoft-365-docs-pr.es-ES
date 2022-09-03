@@ -1,7 +1,7 @@
 ---
-title: Protección de impresora de control de dispositivos de Microsoft Defender para Endpoint
-description: Microsoft Defender para Endpoint Device Control Printer Protection bloquea la impresión de personas a través de impresoras no corporativas o impresoras USB no aprobadas.
-ms.prod: m365-security
+title: Microsoft Defender para punto de conexión Protección contra impresoras de control de dispositivos
+description: Microsoft Defender para punto de conexión Device Control Printer Protection impide que las personas impriman a través de impresoras no corporativas o impresoras USB no aprobadas.
+ms.service: microsoft-365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -11,36 +11,41 @@ author: lovina-saldanha
 ms.reviewer: dansimp
 manager: dansimp
 audience: ITPro
-ms.technology: mde
+ms.subservice: mde
 ms.topic: article
 ms.collection: M365-security-compliance
 ms.custom: admindeeplinkDEFENDER
+ms.openlocfilehash: 49d03062da1f5440013faf49c08190c63f9a831e
+ms.sourcegitcommit: d3ef9391f621e8f4ca70661184b3bb82c6cbda94
+ms.translationtype: MT
+ms.contentlocale: es-ES
+ms.lasthandoff: 09/02/2022
+ms.locfileid: "67585948"
 ---
-
 # <a name="device-control-printer-protection"></a>Protección de la impresora de control de dispositivo
 
 **Se aplica a**
 - [Microsoft Defender para punto de conexión Plan 1](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft Defender para punto de conexión Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 
-Microsoft Defender para Endpoint Device Control Printer Protection bloquea la impresión de personas a través de impresoras no corporativas o impresoras USB no aprobadas.
+Microsoft Defender para punto de conexión Device Control Printer Protection impide que las personas impriman a través de impresoras no corporativas o impresoras USB no aprobadas.
 
 ## <a name="licensing"></a>Licencias
 
-Antes de empezar a usar Printer Protection, debes [confirmar tu Microsoft 365 suscripción](https://www.microsoft.com/microsoft-365/compare-microsoft-365-enterprise-plans?rtc=1). Para obtener acceso y usar la protección de impresoras, debe tener lo siguiente:
+Antes de empezar a trabajar con Printer Protection, debe [confirmar su suscripción a Microsoft 365](https://www.microsoft.com/microsoft-365/compare-microsoft-365-enterprise-plans?rtc=1). Para acceder y usar Printer Protection, debe tener lo siguiente:
 
-- Microsoft 365 E3 para la implementación de directivas/funcionalidad
-- Microsoft 365 E5 para informes
+- Microsoft 365 E3 para la implementación de funciones o directivas
+- Microsoft 365 E5 para la generación de informes
 
 ## <a name="permission"></a>Permiso
 
-Para la implementación de directivas en Intune, para implementar la directiva a través de OMA-URI, la cuenta debe tener permisos para crear, editar, actualizar o eliminar perfiles de configuración de dispositivos. Puede crear roles personalizados o usar cualquiera de los roles integrados con estos permisos:
+Para la implementación de directivas en Intune, para implementar la directiva a través de OMA-URI, la cuenta debe tener permisos para crear, editar, actualizar o eliminar perfiles de configuración de dispositivo. Puede crear roles personalizados o usar cualquiera de los roles integrados con estos permisos:
 
-- Rol Administrador de directivas y perfiles.
-- O rol personalizado con permisos Create/Edit/Update/Read/Delete/View Reports activados para perfiles de configuración de dispositivos
-- O Administrador global
+- Rol de administrador de perfiles y directivas.
+- O un rol personalizado con los permisos Crear/Editar/Actualizar/Leer/Eliminar/Ver informes activados para los perfiles de configuración de dispositivos
+- O administrador global
 
-Para ver los informes de configuración del dispositivo, la cuenta debe tener permisos de vista de informes. Puede crear roles personalizados o usar los roles integrados con estos permisos:
+Para ver los informes de configuración del dispositivo, la cuenta debe tener permisos de visualización de informes. Puede crear roles personalizados o usar los roles integrados con estos permisos:
 
 - Administrador de seguridad global
 - Administrador de seguridad
@@ -48,38 +53,38 @@ Para ver los informes de configuración del dispositivo, la cuenta debe tener pe
 
 ## <a name="prepare-your-endpoints"></a>Preparar los puntos de conexión
 
-Asegúrese de que el Windows 10 o Windows 11 dispositivos que planee implementar Printer Protection para cumplir estos requisitos.
+Asegúrese de que los dispositivos Windows 10 o Windows 11 que tiene previsto implementar Printer Protection para cumplir estos requisitos.
 
 1. Se instalan las siguientes actualizaciones de Windows.
-    - For Windows 1809: install Windows Update [KB5003217](https://support.microsoft.com/topic/may-20-2021-kb5003217-os-build-17763-1971-preview-08687c95-0740-421b-a205-54aa2c716b46)
-    - For Windows 1909: install Windows Update [KB5003212](https://support.microsoft.com/topic/may-20-2021-kb5003212-os-build-18363-1593-preview-05381524-8380-4b30-b783-e330cad3d4a1)
+    - Para Windows 1809: instalar Windows Update [KB5003217](https://support.microsoft.com/topic/may-20-2021-kb5003217-os-build-17763-1971-preview-08687c95-0740-421b-a205-54aa2c716b46)
+    - Para Windows 1909: instalar Windows Update [KB5003212](https://support.microsoft.com/topic/may-20-2021-kb5003212-os-build-18363-1593-preview-05381524-8380-4b30-b783-e330cad3d4a1)
     - Para Windows 2004 o posterior
 
-2. Si estás planeando implementar la directiva a través de la directiva de grupo, el dispositivo debe incorporarse a Microsoft Defender para unirse a Endpoint; si estás planeando implementar la directiva a través de Microsoft Endpoint Manager, el dispositivo debe unirse mediante Microsoft Intune.
+2. Si tiene previsto implementar la directiva a través de directiva de grupo, el dispositivo debe incorporarse a Microsoft Defender para punto de conexión unido; si tiene previsto implementar la directiva a través de Microsoft Endpoint Manager, el dispositivo debe estar unido mediante el uso de Microsoft Intune.
 
-## <a name="deploy-device-control-printer-protection-policy"></a>Implementar directiva de protección de impresoras de control de dispositivos
+## <a name="deploy-device-control-printer-protection-policy"></a>Implementación de la directiva de protección de impresora de control de dispositivos
 
-Puedes implementar la directiva a través de la directiva de grupo o Intune.
+Puede implementar la directiva mediante directiva de grupo o Intune.
 
 <br>
 
 ****
 
-|Título|Descripción|Compatibilidad con CSP | Compatibilidad con GPO | Soporte técnico basado en usuarios | Compatibilidad basada en máquina |
+|Título|Descripción|Compatibilidad con CSP | Compatibilidad con GPO | Soporte técnico basado en el usuario | Compatibilidad basada en máquinas |
 |---|---|:---:|:---:|:---:|:---:|
-|**Habilitar restricciones de impresión del control de dispositivos**|Bloquear la impresión de personas a través de impresoras no corporativas|Sí|Sí|Sí|Sí|
+|**Habilitar restricciones de impresión del control de dispositivos**|Impedir que las personas impriman a través de una impresora no corporativa|Sí|Sí|Sí|Sí|
 |**Lista de dispositivos de impresión conectados a USB aprobados**\*|Permitir una impresora USB específica|Sí|Sí|Sí|Sí|
 |
 
-\* Esta directiva debe usarse junto con **Habilitar restricciones de impresión del control de dispositivos**.
+\* Esta directiva debe usarse junto con **Habilitar restricciones de impresión del control de dispositivo**.
 
-## <a name="deploy-policy-via-intune"></a>Implementar la directiva a través de Intune
+## <a name="deploy-policy-via-intune"></a>Implementación de directivas a través de Intune
 
-En Intune, actualmente Device Control Printer Protection solo admite OMA-URI.
+Por Intune, actualmente Device Control Printer Protection solo admite OMA-URI.
 
-### <a name="scenario-1-block-people-from-printing-via-any-non-corporate-printer-using-intune"></a>Escenario 1: Bloquear la impresión de personas a través de cualquier impresora no corporativa con Intune
+### <a name="scenario-1-block-people-from-printing-via-any-non-corporate-printer-using-intune"></a>Escenario 1: Impedir que los usuarios impriman a través de cualquier impresora no corporativa mediante Intune
 
-- Aplicar directiva sobre el equipo:
+- Aplicar directiva a través de la máquina:
 
   `./Vendor/MSFT/Policy/Config/Printers/EnableDeviceControl`
 
@@ -89,11 +94,11 @@ En Intune, actualmente Device Control Printer Protection solo admite OMA-URI.
 
 La cadena de compatibilidad de CSP con `<enabled/>`:
 
-:::image type="content" source="../../media/customeditrow.png" alt-text="La página Personalizada" lightbox="../../media/customeditrow.png":::
+:::image type="content" source="../../media/customeditrow.png" alt-text="Página Personalizada" lightbox="../../media/customeditrow.png":::
 
-### <a name="scenario-2-allow-specific-approved-usb-printers-using-intune"></a>Escenario 2: Permitir impresoras USB aprobadas específicas con Intune
+### <a name="scenario-2-allow-specific-approved-usb-printers-using-intune"></a>Escenario 2: Permitir impresoras USB aprobadas específicas mediante Intune
 
-- Aplicar directiva sobre el equipo:
+- Aplicar directiva a través de la máquina:
 
   `./Vendor/MSFT/Policy/Config/Printers/ApprovedUsbPrintDevices`
 
@@ -105,37 +110,37 @@ La cadena de compatibilidad de CSP con impresoras USB aprobadas a través de la 
 
 :::image type="content" source="../../media/editrow.png" alt-text="Panel Editar fila" lightbox="../../media/editrow.png":::
 
-## <a name="deploy-policy-via-group-policy"></a>Implementar la directiva a través de la directiva de grupo
+## <a name="deploy-policy-via-group-policy"></a>Implementación de directivas a través de directiva de grupo
 
-Si el dispositivo no está unido a Intune, también puedes implementar la directiva a través de la directiva de grupo.
+Si el dispositivo no está Intune unido, también puede implementar la directiva a través de directiva de grupo.
 
-### <a name="scenario-1-block-people-from-printing-via-any-non-corporate-printer-using-group-policy"></a>Escenario 1: Bloquear la impresión de personas a través de cualquier impresora no corporativa mediante la directiva de grupo
+### <a name="scenario-1-block-people-from-printing-via-any-non-corporate-printer-using-group-policy"></a>Escenario 1: Impedir que los usuarios impriman a través de cualquier impresora no corporativa mediante directiva de grupo
 
-- Aplicar directiva sobre el equipo:
+- Aplicar directiva a través de la máquina:
 
-  Impresora de plantillas administrativas \> de configuración del \> equipo: Habilitar restricciones de impresión del control de dispositivos
+  Impresora de plantillas \> administrativas de configuración \> del equipo: habilitar restricciones de impresión de control de dispositivos
 
 - Aplicar directiva sobre el usuario:
 
-  Configuración de usuario \> Plantillas administrativas \> Impresoras del panel de control \> : Habilitar restricciones de impresión del control de dispositivos
+  Plantillas \> administrativas de configuración \> de usuario Panel de control \> impresoras: Habilitar restricciones de impresión de control de dispositivos
 
 :::image type="content" source="../../media/enable-device-ctrl-printing-restrictions.png" alt-text="Panel Habilitar restricciones de impresión de control de dispositivos" lightbox="../../media/enable-device-ctrl-printing-restrictions.png":::
 
-### <a name="scenario-2-allow-specific-approved-usb-printers-using-group-policy"></a>Escenario 2: Permitir impresoras USB aprobadas específicas con la directiva de grupo
+### <a name="scenario-2-allow-specific-approved-usb-printers-using-group-policy"></a>Escenario 2: Permitir impresoras USB aprobadas específicas mediante directiva de grupo
 
-- Aplicar directiva sobre el equipo:
+- Aplicar directiva a través de la máquina:
 
-  Impresora de plantillas administrativas \> de configuración del \> equipo: lista de dispositivos de impresión conectados a USB aprobados
+  Impresora de plantillas \> administrativas de configuración \> del equipo: lista de dispositivos de impresión conectados a USB aprobados
 
 - Aplicar directiva sobre el usuario:
 
-  Impresoras de \> panel de \> control de plantillas administrativas \> de configuración de usuario: lista de dispositivos de impresión conectados a USB aprobados
+  Plantillas \> administrativas de configuración \> de usuario Panel de control \> impresoras: lista de dispositivos de impresión conectados a USB aprobados
 
-:::image type="content" source="../../media/list-of-approved-connected-print-devices.png" alt-text="La lista de dispositivos de impresión conectados a USB aprobados" lightbox="../../media/list-of-approved-connected-print-devices.png":::
+:::image type="content" source="../../media/list-of-approved-connected-print-devices.png" alt-text="Lista de dispositivos de impresión conectados a USB aprobados" lightbox="../../media/list-of-approved-connected-print-devices.png":::
 
-## <a name="view-device-control-printer-protection-data-in-microsoft-defender-for-endpoint-portal"></a>Ver datos de protección de impresoras de control de dispositivos en Microsoft Defender para el portal de puntos de conexión
+## <a name="view-device-control-printer-protection-data-in-microsoft-defender-for-endpoint-portal"></a>Visualización de datos de protección de impresora de Control de dispositivos en Microsoft Defender para punto de conexión portal
 
-El <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">Microsoft 365 Defender muestra</a> la impresión bloqueada por la directiva de protección de impresoras de control de dispositivos anterior.
+El <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">portal de Microsoft 365 Defender</a> muestra la impresión bloqueada por la directiva protección de impresora de control de dispositivos anterior.
 
 ```kusto
 DeviceEvents
@@ -170,4 +175,4 @@ DeviceEvents
 | order by Timestamp desc
 ```
 
- :::image type="content" source="https://user-images.githubusercontent.com/81826151/128954383-71df3009-77ef-40db-b575-79c73fda332b.png" alt-text="La página Búsqueda avanzada" lightbox="https://user-images.githubusercontent.com/81826151/128954383-71df3009-77ef-40db-b575-79c73fda332b.png":::
+ :::image type="content" source="https://user-images.githubusercontent.com/81826151/128954383-71df3009-77ef-40db-b575-79c73fda332b.png" alt-text="Página Búsqueda avanzada" lightbox="https://user-images.githubusercontent.com/81826151/128954383-71df3009-77ef-40db-b575-79c73fda332b.png":::

@@ -6,7 +6,7 @@ author: MikePlumleyMSFT
 manager: serdars
 audience: Admin
 ms.topic: article
-ms.prod: microsoft-365-enterprise
+ms.service: microsoft-365-enterprise
 ms.localizationpriority: medium
 ms.collection:
 - M365-collaboration
@@ -16,12 +16,12 @@ ms.custom:
 f1.keywords: NOCSH
 recommendations: false
 description: Agrupa las interacciones de servicios
-ms.openlocfilehash: 884ee06ed3e345d2a9b1e88f7aa201875d599b32
-ms.sourcegitcommit: 23a53b5c5e372a2a7ad5e175850224d3d464f6dd
+ms.openlocfilehash: ab1bda8b3065518736468a6603e9356e9a2d0d25
+ms.sourcegitcommit: d3ef9391f621e8f4ca70661184b3bb82c6cbda94
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/28/2022
-ms.locfileid: "67056776"
+ms.lasthandoff: 09/02/2022
+ms.locfileid: "67585760"
 ---
 # <a name="groups-services-interactions"></a>Agrupa las interacciones de servicios
 
@@ -119,13 +119,13 @@ En la tabla siguiente se proporciona información general sobre las interaccione
 |---|---|---|---|---|
 |Azure AD|Pertenencia, Controles de grupo, Invitados|Sí|Sí|Sí|
 |Exchange|Calendario, buzón|Sí|Sí|Sí|
-|Forms|Formulario|Sí|No|No|
-|OneNote|Bloc de notas|Sí|No|No|
+|Forms|Formulario|Yes|No|No|
+|OneNote|Bloc de notas|Yes|No|No|
 |Planner|Panel de tareas|No|Sí|Sí|
-|Aplicación de Power Apps|Aplicación|Sí|No|No|
-|Power Automate|Flujo de trabajo|Sí|No|No|
+|Aplicación de Power Apps|Aplicación|Yes|No|No|
+|Power Automate|Flujo de trabajo|Yes|No|No|
 |Power BI (clásico)|Área de trabajo|No|Sí|Sí|
-|Power BI (nuevo)|Área de trabajo|Sí|No|Sí|
+|Power BI (nuevo)|Área de trabajo|Yes|No|Sí|
 |Project para la Web|Plan de proyecto|Sí|Sí|No|
 |Guía básica|Guía básica|Sí|Sí|No|
 |SharePoint|Site|Sí|Sí|Sí|
@@ -181,7 +181,7 @@ De forma predeterminada, cuando se crea un equipo, el buzón de correo y el cale
 
 - Conversaciones
 - Pestañas de & canales
-- Meetings
+- Reuniones
 
 **¿Puede Teams crear un grupo?**
 

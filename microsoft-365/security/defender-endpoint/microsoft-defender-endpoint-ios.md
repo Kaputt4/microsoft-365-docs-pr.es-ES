@@ -3,7 +3,7 @@ title: Microsoft Defender para punto de conexión en iOS
 ms.reviewer: ''
 description: Describe cómo instalar y usar Microsoft Defender para punto de conexión en iOS
 keywords: microsoft, defender, Microsoft Defender para punto de conexión, ios, overview, installation, deploy, uninstallation, intune
-ms.prod: m365-security
+ms.service: microsoft-365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -16,13 +16,13 @@ ms.collection:
 - m365-security-compliance
 - m365-initiative-defender-endpoint
 ms.topic: conceptual
-ms.technology: mde
-ms.openlocfilehash: ac2c34359686da45998fab1076b7501357651318
-ms.sourcegitcommit: 2aa5c026cc06ed39a9c1c2bcabd1f563bf5a1859
+ms.subservice: mde
+ms.openlocfilehash: 3c8a63668ee427bf732f8ee2229667e232310d3e
+ms.sourcegitcommit: d3ef9391f621e8f4ca70661184b3bb82c6cbda94
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/09/2022
-ms.locfileid: "66695887"
+ms.lasthandoff: 09/02/2022
+ms.locfileid: "67585992"
 ---
 # <a name="microsoft-defender-for-endpoint-on-ios"></a>Microsoft Defender para punto de conexión en iOS
 
@@ -95,7 +95,7 @@ La implementación de Microsoft Defender para punto de conexión en iOS se puede
 
 - Proporcionar comentarios a través del sistema de comentarios desde la aplicación o a través de la [consola de seguridad unificada](https://security.microsoft.com)
 
-## <a name="next-steps"></a>Siguientes pasos
+## <a name="next-steps"></a>Pasos siguientes
 
 - [Implementación de Microsoft Defender para punto de conexión en iOS mediante Intune para dispositivos inscritos](ios-install.md)
 - [Configuración de la directiva de protección de aplicaciones para incluir señales de riesgo de Defender para punto de conexión (MAM)](ios-install-unmanaged.md)

@@ -3,7 +3,7 @@ title: Integración de Microsoft Defender para punto de conexión con otras solu
 description: Obtenga información sobre cómo se integra Microsoft Defender para punto de conexión con otras soluciones de Microsoft, como Microsoft Defender for Identity y Microsoft Defender for Cloud.
 author: mjcaparas
 ms.author: macapara
-ms.prod: m365-security
+ms.service: microsoft-365-security
 keywords: microsoft 365 defender, acceso condicional, office, Microsoft Defender para punto de conexión, microsoft defender for identity, microsoft defender para office, Microsoft Defender for Cloud, Microsoft Cloud App Security, Azure Sentinel
 ms.mktglfcycl: deploy
 ms.sitesec: library
@@ -13,13 +13,13 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
-ms.technology: mde
-ms.openlocfilehash: 24244fa9b0cbb9ed452c8b09b6a108055ac6f770
-ms.sourcegitcommit: d1b60ed9a11f5e6e35fbaf30ecaeb9dfd6dd197d
+ms.subservice: mde
+ms.openlocfilehash: 62a822e64ef739c4d2e81103b5627d9f1259e712
+ms.sourcegitcommit: d3ef9391f621e8f4ca70661184b3bb82c6cbda94
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/29/2022
-ms.locfileid: "66489434"
+ms.lasthandoff: 09/02/2022
+ms.locfileid: "67586256"
 ---
 # <a name="microsoft-defender-for-endpoint-and-other-microsoft-solutions"></a>Microsoft Defender para punto de conexión y otras soluciones de Microsoft
 

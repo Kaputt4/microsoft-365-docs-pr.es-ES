@@ -3,7 +3,7 @@ title: Ver y organizar la cola de incidentes
 ms.reviewer: ''
 description: Consulte la lista de incidentes y obtenga información sobre cómo aplicar filtros para limitar la lista y obtener una vista más centrada.
 keywords: ver, organizar, incidentes, agregado, investigaciones, cola, ttp
-ms.prod: m365-security
+ms.service: microsoft-365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -14,13 +14,13 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
-ms.technology: mde
-ms.openlocfilehash: a2d75b935c19a20c37ecdbdb77feff73bbed4a79
-ms.sourcegitcommit: 9fdb5c5b9eaf0c8a8d62b579a5fb5a5dc2d29fa9
+ms.subservice: mde
+ms.openlocfilehash: 079b1272d88098bd64f0b34056ee085ca9409363
+ms.sourcegitcommit: d3ef9391f621e8f4ca70661184b3bb82c6cbda94
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/11/2022
-ms.locfileid: "66714649"
+ms.lasthandoff: 09/02/2022
+ms.locfileid: "67585364"
 ---
 # <a name="view-and-organize-the-microsoft-defender-for-endpoint-incidents-queue"></a>Ver y organizar la cola de incidentes de Microsoft Defender para punto de conexión
 
@@ -58,7 +58,7 @@ Puede aplicar los filtros siguientes para limitar la lista de incidentes y obten
 Gravedad del incidente | Descripción
 :---|:---
 Alto </br>(Rojo) | Las amenazas a menudo asociadas a amenazas persistentes avanzadas (APT). Estos incidentes indican un alto riesgo debido a la gravedad de los daños que pueden infligir en los dispositivos.
-Medio </br>(Naranja) | Las amenazas rara vez observadas en la organización, como el cambio anómalo del Registro, la ejecución de archivos sospechosos y los comportamientos observados típicos de las fases de ataque.
+Mediano </br>(Naranja) | Las amenazas rara vez observadas en la organización, como el cambio anómalo del Registro, la ejecución de archivos sospechosos y los comportamientos observados típicos de las fases de ataque.
 Bajo </br>(Amarillo) | Amenazas asociadas con malware frecuente y herramientas de hack que no indican necesariamente una amenaza avanzada destinada a la organización.
 Informativo </br>(Gris) | Es posible que los incidentes informativos no se consideren dañinos para la red, pero podrían ser buenos para realizar un seguimiento de ellos.
 
