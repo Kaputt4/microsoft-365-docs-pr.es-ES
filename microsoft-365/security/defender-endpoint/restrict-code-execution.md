@@ -2,7 +2,7 @@
 title: Restricción de la API de ejecución de aplicaciones
 description: Use esta API para crear llamadas relacionadas con la restricción de la ejecución de una aplicación.
 keywords: apis, graph api, api admitidas, recopilar paquete de investigación
-ms.prod: m365-security
+ms.service: microsoft-365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -13,14 +13,14 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
-ms.technology: mde
+ms.subservice: mde
 ms.custom: api
-ms.openlocfilehash: 765f08fe38d8b04d76c191c9e31c7a33c9b56ff7
-ms.sourcegitcommit: 217108c59be41b01963a393b4f16d137636fe6a8
+ms.openlocfilehash: 55451d169df705e7be0a93178490cc64e2b03809
+ms.sourcegitcommit: d3ef9391f621e8f4ca70661184b3bb82c6cbda94
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/12/2022
-ms.locfileid: "67331603"
+ms.lasthandoff: 09/02/2022
+ms.locfileid: "67581000"
 ---
 # <a name="restrict-app-execution-api"></a>Restricción de la API de ejecución de aplicaciones
 

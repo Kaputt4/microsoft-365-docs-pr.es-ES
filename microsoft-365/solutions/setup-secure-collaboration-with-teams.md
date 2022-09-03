@@ -1,11 +1,11 @@
 ---
-title: Configurar el uso compartido seguro de archivos y documentos y la colaboración con Teams en Microsoft 365
+title: Configuración del uso compartido seguro de archivos y documentos y la colaboración con Teams en Microsoft 365
 ms.author: mikeplum
 author: MikePlumleyMSFT
 manager: serdars
 ms.audience: ITPro
 ms.topic: article
-ms.prod: microsoft-365-enterprise
+ms.service: microsoft-365-enterprise
 ms.localizationpriority: medium
 ms.collection:
 - M365-collaboration
@@ -17,12 +17,12 @@ ms.custom:
 f1.keywords: NOCSH
 recommendations: false
 description: Obtenga información sobre los procedimientos recomendados para configurar la colaboración y el uso compartido de archivos seguros en Teams para proteger los datos en función de su confidencialidad.
-ms.openlocfilehash: 54bfe4bce20687474526916fe7b11ca0e5bb1b72
-ms.sourcegitcommit: 5c64002236561000c5bd63c71423e8099e803c2d
+ms.openlocfilehash: 521946cc464cd946f0c87a7d58fde3ffae31eac3
+ms.sourcegitcommit: d3ef9391f621e8f4ca70661184b3bb82c6cbda94
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/09/2022
-ms.locfileid: "65286546"
+ms.lasthandoff: 09/02/2022
+ms.locfileid: "67582964"
 ---
 # <a name="set-up-secure-file-sharing-and-collaboration-with-microsoft-teams"></a>Configuración del uso compartido de archivos seguro y la colaboración con Microsoft Teams
 
@@ -33,7 +33,7 @@ Esta guía de solución de colaboración incluye dos componentes que le ayudará
 - Implementación de Teams con el nivel de protección adecuado para cada proyecto
 - Configuración del uso compartido externo con la configuración de seguridad adecuada para cada proyecto
 
-![Implemente Teams con la protección adecuada y configure el uso compartido externo con las opciones de seguridad adecuadas.](..\media\solutions-architecture-center\secure-collaboration-overview.png)
+![Implemente Teams con la protección adecuada y configure el uso compartido externo con la configuración de seguridad adecuada.](..\media\solutions-architecture-center\secure-collaboration-overview.png)
 
 Si las herramientas de colaboración de archivos versátiles y fáciles de usar no están disponibles, los usuarios suelen colaborar mediante el envío de documentos por correo electrónico. Se trata de un método de colaboración tedioso y propenso a errores, y puede aumentar el riesgo de compartir información de forma inapropiada. Si a las personas les resulta demasiado difícil compartir archivos, podrían volver a usar productos de consumidor que no se rigen por TI. Esto puede suponer un riesgo aún mayor.
 
@@ -62,13 +62,13 @@ La información que es fundamental para el éxito de su organización o que tien
 
 ![Escala de riesgo de baja (folleto publicado) a alta (datos empresariales confidenciales).](../media/solutions-architecture-center/SecureCollaboration-SensitivityAndBusinessImpactofSharing-fromVisio.png)
 
-Para todos los escenarios indicados anteriormente, puede usar equipos en Microsoft Teams para almacenar, compartir y colaborar en la información.
+Para todos los escenarios indicados anteriormente, puede usar los equipos de Microsoft Teams para almacenar, compartir y colaborar en la información.
 
 Para configurar la colaboración segura, use estas funcionalidades y características de Microsoft 365.
 
 |Producto o componente|Funcionalidad o característica|Licencias|
 |---|---|---|
-|Microsoft Defender para Office 365|Caja fuerte datos adjuntos para SPO, OneDrive y Teams; Caja fuerte Documentos; Vínculos de Caja fuerte para Teams|Microsoft 365 E1, E3 y E5|
+|Microsoft Defender para Office 365|Datos adjuntos seguros para SPO, OneDrive y Teams; Documentos seguros; Vínculos seguros para Teams|Microsoft 365 E1, E3 y E5|
 |SharePoint|Directivas de uso compartido de sitios y archivos, permisos de uso compartido de sitios, vínculos de uso compartido, solicitudes de acceso, configuración de uso compartido de invitados del sitio|Microsoft 365 E1, E3 y E5|
 |Microsoft Teams|Acceso de invitado, equipos privados, canales privados, canales compartidos|Microsoft 365 E1, E3 y E5|
 |Microsoft Purview|Etiquetas de confidencialidad|Microsoft 365 E3 y E5|
@@ -117,7 +117,7 @@ Es posible que tenga que [compartir información de cualquier confidencialidad c
 Estos recursos le ayudarán a empezar a configurar su entorno para colaborar con personas ajenas a su organización:
 
 - [Colabore en documentos](collaborate-on-documents.md) para compartir archivos individuales de carpetas.
-- [Colabore en un sitio](collaborate-in-site.md) para colaborar con los invitados en un sitio de SharePoint.
+- [Colabore en un sitio](collaborate-in-site.md) para colaborar con invitados en un sitio de SharePoint.
 - [Colabore como equipo](collaborate-as-team.md) para colaborar con los invitados de un equipo.
 - [Colabore con participantes externos en un canal](/microsoft-365/solutions/collaborate-teams-direct-connect) para colaborar con personas ajenas a la organización en un canal compartido.
 
@@ -137,7 +137,7 @@ Estos módulos de entrenamiento de Microsoft Learn pueden ayudarle a aprender la
 
 |Aprendizaje:|Administración de la colaboración en grupo con Microsoft Teams|
 |---|---|
-|![Teams icono de entrenamiento de colaboración.](../media/manage-team-collaboration-with-microsoft-teams.svg)|Administración de la colaboración en grupo con Microsoft Teams le presenta las características y funciones de Microsoft Teams, el núcleo central para la colaboración en grupo de Microsoft 365. Aprenderá cómo puede usar Teams para facilitar el trabajo en equipo y la comunicación dentro de la organización, tanto en un entorno local como externo, en dispositivos muy diversos, desde equipos de escritorio a tabletas y teléfonos, a la vez que aprovecha toda la funcionalidad enriquecida de las aplicaciones de Office 365. Comprenderá cómo Teams ofrece un entorno completo y flexible para la colaboración en aplicaciones y dispositivos. Esta ruta de aprendizaje puede ayudarle a preparar el certificado Microsoft 365 Certified: Teams Administrator Associate.<p>2 h 17 min - Learning Ruta de acceso - 5 módulos|
+|![Icono de entrenamiento de colaboración de Teams.](../media/manage-team-collaboration-with-microsoft-teams.svg)|Administración de la colaboración en grupo con Microsoft Teams le presenta las características y funciones de Microsoft Teams, el núcleo central para la colaboración en grupo de Microsoft 365. Aprenderá cómo puede usar Teams para facilitar el trabajo en equipo y la comunicación dentro de la organización, tanto en un entorno local como externo, en dispositivos muy diversos, desde equipos de escritorio a tabletas y teléfonos, a la vez que aprovecha toda la funcionalidad enriquecida de las aplicaciones de Office 365. Comprenderá cómo Teams ofrece un entorno completo y flexible para la colaboración en aplicaciones y dispositivos. Esta ruta de aprendizaje puede ayudarle a preparar el certificado Microsoft 365 Certified: Teams Administrator Associate.<p>2 h 17 minutos - Ruta de aprendizaje - 5 módulos|
 
 > [!div class="nextstepaction"]
 > [Iniciar >](/learn/modules/m365-teams-collab-prepare-deployment/introduction/)
@@ -146,7 +146,7 @@ Estos módulos de entrenamiento de Microsoft Learn pueden ayudarle a aprender la
 
 |Aprendizaje:|Colaborar con SharePoint en Microsoft 365|
 |---|---|
-|![SharePoint icono de entrenamiento.](../media/collaborate-with-sharepoint-in-microsoft-365.svg)|Administrar el contenido compartido con Microsoft SharePoint le ofrece una introducción a las características y funciones de SharePoint y cómo funciona con Microsoft 365. Obtendrá información sobre los distintos tipos de sitios de SharePoint, incluidos los sitios concentradores, así como la protección de la información, la creación de informes y la supervisión. También obtendrá información sobre cómo emplear el uso compartido de archivos y carpetas de SharePoint para optimizar la colaboración, cómo compartir archivos externamente y cómo administrar sitios de SharePoint en el centro de administración de SharePoint. Esta ruta de aprendizaje puede ayudarle a preparar el certificado Microsoft 365 Certified: Teamwork Administrator Associate.<p>1 h 14 min - Learning ruta de acceso - 4 módulos|
+|![Icono de entrenamiento de SharePoint.](../media/collaborate-with-sharepoint-in-microsoft-365.svg)|Administrar el contenido compartido con Microsoft SharePoint le ofrece una introducción a las características y funciones de SharePoint y cómo funciona con Microsoft 365. Obtendrá información sobre los distintos tipos de sitios de SharePoint, incluidos los sitios concentradores, así como la protección de la información, la creación de informes y la supervisión. También obtendrá información sobre cómo emplear el uso compartido de archivos y carpetas de SharePoint para optimizar la colaboración, cómo compartir archivos externamente y cómo administrar sitios de SharePoint en el centro de administración de SharePoint. Esta ruta de aprendizaje puede ayudarle a preparar el certificado Microsoft 365 Certified: Teamwork Administrator Associate.<p>1 h 14 min - Ruta de aprendizaje - 4 módulos|
 
 > [!div class="nextstepaction"]
 > [Iniciar >](/learn/modules/m365-teams-sharepoint-plan-sharepoint/introduction/)
@@ -155,7 +155,7 @@ Estos módulos de entrenamiento de Microsoft Learn pueden ayudarle a aprender la
 
 |Aprendizaje:|Proteger la información de la empresa con Microsoft 365|
 |---|---|
-|![Teams icono de entrenamiento de protección de información.](../media/protect-enterprise-information-microsoft-365.svg)|Proteger y asegurar la información de su organización es más difícil que nunca. La ruta de aprendizaje Proteger la información de la empresa con Microsoft 365 analiza cómo proteger su información confidencial de un uso excesivo o indebido accidental, cómo descubrir y clasificar los datos, cómo protegerlos con etiquetas de confidencialidad y cómo supervisar y analizar su información confidencial para protegerla contra su pérdida. Esta ruta de aprendizaje puede ayudarle a prepararse para las certificaciones Microsoft 365 Certified: Security Administrator Associate y Microsoft 365 Certified: Enterprise Administration Expert.<p>1 h - ruta de acceso Learning - 5 módulos|
+|![Icono de entrenamiento de protección de información de Teams.](../media/protect-enterprise-information-microsoft-365.svg)|Proteger y asegurar la información de su organización es más difícil que nunca. La ruta de aprendizaje Proteger la información de la empresa con Microsoft 365 analiza cómo proteger su información confidencial de un uso excesivo o indebido accidental, cómo descubrir y clasificar los datos, cómo protegerlos con etiquetas de confidencialidad y cómo supervisar y analizar su información confidencial para protegerla contra su pérdida. Esta ruta de aprendizaje puede ayudarle a prepararse para las certificaciones Microsoft 365 Certified: Security Administrator Associate y Microsoft 365 Certified: Enterprise Administration Expert.<p>1 h - Ruta de aprendizaje: 5 módulos|
 
 > [!div class="nextstepaction"]
 > [Iniciar >](/learn/modules/m365-security-info-overview/introduction/)
@@ -164,7 +164,7 @@ Estos módulos de entrenamiento de Microsoft Learn pueden ayudarle a aprender la
 
 |Aprendizaje:|Proteger la identidad y el acceso con Azure Active Directory|
 |---|---|
-|![Icono de entrenamiento de identidad y acceso.](../media/protect-identity-and-access-with-microsoft-365.svg)|La Ruta de aprendizaje de identidad y acceso cubre las últimas tecnologías de identidad y acceso, herramientas para reforzar la autenticación y orientación sobre la protección de la identidad dentro de su organización. Las tecnologías de acceso e identidad de Microsoft le permiten asegurar la identidad de su organización, ya sea en sus instalaciones o en la nube, y permiten a sus usuarios trabajar de forma segura desde cualquier lugar. Esta ruta de aprendizaje puede ayudarle a preparar los certificados Microsoft 365 Certified: Security Administrator Associate y Microsoft 365 Certified: Enterprise Administration Expert.<p>2 h 52 min - Learning Ruta de acceso - 6 módulos|
+|![Icono de entrenamiento de identidad y acceso.](../media/protect-identity-and-access-with-microsoft-365.svg)|La Ruta de aprendizaje de identidad y acceso cubre las últimas tecnologías de identidad y acceso, herramientas para reforzar la autenticación y orientación sobre la protección de la identidad dentro de su organización. Las tecnologías de acceso e identidad de Microsoft le permiten asegurar la identidad de su organización, ya sea en sus instalaciones o en la nube, y permiten a sus usuarios trabajar de forma segura desde cualquier lugar. Esta ruta de aprendizaje puede ayudarle a preparar los certificados Microsoft 365 Certified: Security Administrator Associate y Microsoft 365 Certified: Enterprise Administration Expert.<p>2 h 52 min - Ruta de aprendizaje - 6 módulos|
 
 > [!div class="nextstepaction"]
 > [Iniciar >](/learn/modules/m365-identity-overview/introduction/)
@@ -175,8 +175,8 @@ Estos módulos de entrenamiento pueden ayudar a los usuarios a usar Teams, grupo
 
 |Teams|SharePoint|
 |---|---|
-|![Configure y personalice el icono de entrenamiento del equipo.](../media/set-up-customize-team-training.png)<br>**[Configuración y personalización del equipo](https://support.microsoft.com/office/702a2977-e662-4038-bef5-bdf8ee47b17b)**|![icono de entrenamiento de SharePoint compartir y sincronizar](../media/sharepoint-share-sync-training.png)<br>**[Compartir y sincronizar](https://support.microsoft.com/office/98cb2ff2-c27e-42ea-b055-c2d895f8a5de)**|
-|![Teams icono de entrenamiento cargar y buscar archivos.](../media/smc-teams-upload-find-files-training.png)<br>**[Upload y buscar archivos](https://support.microsoft.com/office/57b669db-678e-424e-b0a0-15d19215cb12)**||
+|![Configure y personalice el icono de entrenamiento del equipo.](../media/set-up-customize-team-training.png)<br>**[Configuración y personalización del equipo](https://support.microsoft.com/office/702a2977-e662-4038-bef5-bdf8ee47b17b)**|![Icono de aprendizaje de share and sync de SharePoint](../media/sharepoint-share-sync-training.png)<br>**[Compartir y sincronizar](https://support.microsoft.com/office/98cb2ff2-c27e-42ea-b055-c2d895f8a5de)**|
+|![Icono de entrenamiento cargar y buscar archivos de Teams.](../media/smc-teams-upload-find-files-training.png)<br>**[Carga y búsqueda de archivos](https://support.microsoft.com/office/57b669db-678e-424e-b0a0-15d19215cb12)**||
 |![Icono colaborar en equipos y canales.](../media/teams-collaborate-channels-training.png)<br>**[Colaborar en equipos y canales](https://support.microsoft.com/office/c3d63c10-77d5-4204-a566-53ddcf723b46)**||
 
 ## <a name="illustrations"></a>Ilustraciones
@@ -197,7 +197,7 @@ La arquitectura lógica de los servicios de productividad en Microsoft 365, una 
 
 |**Item**|**Descripción**|
 |---|---|
-|[![Imagen digital para Teams póster de arquitectura lógica.](../downloads/msft-teams-logical-architecture-thumb.png)](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/downloads/msft-m365-teams-logical-architecture.pdf) <br/> [PDF](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/downloads/msft-m365-teams-logical-architecture.pdf) \| [Visio](https://github.com/MicrosoftDocs/OfficeDocs-Enterprise/raw/live/Enterprise/downloads/msft-m365-teams-logical-architecture.vsdx)  <br>Actualizado en abril de 2019|Microsoft proporciona un conjunto de servicios de productividad que funcionan en conjunto para proporcionar experiencias de colaboración con funcionalidades de gobierno, seguridad y cumplimiento. <p>Esta serie de ilustraciones proporciona una vista de la arquitectura lógica de los servicios de productividad para arquitectos empresariales, que es una de las más destacadas gracias a Microsoft Teams.|
+|[![Imagen digital del póster de la arquitectura lógica de Teams.](../downloads/msft-teams-logical-architecture-thumb.png)](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/downloads/msft-m365-teams-logical-architecture.pdf) <br/> [PDF](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/downloads/msft-m365-teams-logical-architecture.pdf) \| [Visio](https://github.com/MicrosoftDocs/OfficeDocs-Enterprise/raw/live/Enterprise/downloads/msft-m365-teams-logical-architecture.vsdx)  <br>Actualizado en abril de 2019|Microsoft proporciona un conjunto de servicios de productividad que funcionan en conjunto para proporcionar experiencias de colaboración con funcionalidades de gobierno, seguridad y cumplimiento. <p>Esta serie de ilustraciones proporciona una vista de la arquitectura lógica de los servicios de productividad para arquitectos empresariales, que es una de las más destacadas gracias a Microsoft Teams.|
 
 ## <a name="deploy-the-secure-collaboration-solution"></a>Implementación de la solución de colaboración segura
 
@@ -206,7 +206,7 @@ Cuando esté listo para implementar esta solución, continúe con estos pasos:
 1. Configure los [tres niveles diferentes de protección para Teams](configure-teams-three-tiers-protection.md).
 2. Configure las opciones para [compartir información de cualquier confidencialidad con personas ajenas a su organización](collaborate-with-people-outside-your-organization.md).
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 [Documentación de Seguridad de Microsoft 365](../security/index.yml)
 

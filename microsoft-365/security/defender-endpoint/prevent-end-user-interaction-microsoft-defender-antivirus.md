@@ -2,7 +2,7 @@
 title: Ocultar la interfaz del Antivirus de Microsoft Defender
 description: Puede ocultar el icono de protección contra amenazas y virus en la aplicación Seguridad de Windows.
 keywords: ui lockdown, headless mode, hide app, hide settings, hide interface
-ms.prod: m365-security
+ms.service: microsoft-365-security
 ms.mktglfcycl: manage
 ms.sitesec: library
 ms.pagetype: security
@@ -13,15 +13,15 @@ ms.custom: nextgen
 ms.date: 10/18/2021
 ms.reviewer: ''
 manager: dansimp
-ms.technology: mde
+ms.subservice: mde
 ms.topic: article
 ms.collection: M365-security-compliance
-ms.openlocfilehash: 072207248192d158169e52a8e0ca860678b4f63f
-ms.sourcegitcommit: d09eb780dc41a01796eb8137fbe9267231af6746
+ms.openlocfilehash: 5b0ed6ace2aafba9270e757b7bef9ab313e92ccc
+ms.sourcegitcommit: d3ef9391f621e8f4ca70661184b3bb82c6cbda94
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/19/2022
-ms.locfileid: "67388537"
+ms.lasthandoff: 09/02/2022
+ms.locfileid: "67575755"
 ---
 # <a name="prevent-users-from-seeing-or-interacting-with-the-microsoft-defender-antivirus-user-interface"></a>Impedir que los usuarios vean o interactúen con la interfaz de usuario del Antivirus de Microsoft Defender
 

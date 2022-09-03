@@ -2,7 +2,7 @@
 title: Solucionar problemas de servicio de Microsoft Defender para punto de conexión
 description: Busque soluciones y soluciones alternativas a problemas conocidos, como errores de servidor al intentar acceder al servicio.
 keywords: solución de problemas de Microsoft Defender para punto de conexión, error del servidor, acceso denegado, credenciales no válidas, sin datos, portal de panel, permitir, visor de eventos
-ms.prod: m365-security
+ms.service: microsoft-365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -13,13 +13,13 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: troubleshooting
-ms.technology: mde
-ms.openlocfilehash: bcd0f5ba70d154c40972c0b8035d1617a9e71966
-ms.sourcegitcommit: 85ce5fd0698b6f00ea1ea189634588d00ea13508
+ms.subservice: mde
+ms.openlocfilehash: c4dba4a85985bdbfa2bcc03421327bd35ae35928
+ms.sourcegitcommit: d3ef9391f621e8f4ca70661184b3bb82c6cbda94
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/06/2022
-ms.locfileid: "64665852"
+ms.lasthandoff: 09/02/2022
+ms.locfileid: "67585540"
 ---
 # <a name="troubleshoot-service-issues"></a>Solucionar problemas de servicio
 
@@ -30,7 +30,7 @@ ms.locfileid: "64665852"
 - [Microsoft Defender para punto de conexión Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
-> ¿Desea experimentar Defender para punto de conexión? [Regístrese para obtener una prueba gratuita.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-pullalerts-abovefoldlink)
+> ¿Quiere experimentar Defender para punto de conexión? [Regístrese para obtener una prueba gratuita.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-pullalerts-abovefoldlink)
 
 En esta sección se abordan los problemas que pueden surgir al usar el servicio de Microsoft Defender para punto de conexión.
 
@@ -56,7 +56,7 @@ Consulte [Revisar eventos y errores mediante Visor de eventos](event-error-codes
 
 Si la incorporación de dispositivos se completa correctamente, pero Microsoft Defender para punto de conexión no se inicia después de un reinicio y muestra el error 577, compruebe que una directiva no deshabilita Windows Defender.
 
-Para obtener más información, vea [Asegurarse de que la directiva no deshabilita Antivirus de Microsoft Defender](troubleshoot-onboarding.md#ensure-that-microsoft-defender-antivirus-is-not-disabled-by-a-policy).
+Para obtener más información, vea [Asegurarse de que el antivirus de Microsoft Defender no está deshabilitado por directiva](troubleshoot-onboarding.md#ensure-that-microsoft-defender-antivirus-is-not-disabled-by-a-policy).
 
 ## <a name="known-issues-with-regional-formats"></a>Problemas conocidos con formatos regionales
 

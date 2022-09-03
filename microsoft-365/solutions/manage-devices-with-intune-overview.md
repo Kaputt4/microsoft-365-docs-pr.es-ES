@@ -11,7 +11,7 @@ manager: dougeby
 audience: ITPro
 ms.topic: article
 description: Inscriba los dispositivos de punto de conexión en Microsoft Intune como parte de la arquitectura de seguridad de Confianza cero, protegiendo contra ransomware mientras crea protección para trabajadores remotos.
-ms.prod: microsoft-365-enterprise
+ms.service: microsoft-365-enterprise
 ms.localizationpriority: high
 ms.collection:
 - M365-security-compliance
@@ -20,12 +20,12 @@ ms.collection:
 - zerotrust-solution
 ms.custom: ''
 keywords: ''
-ms.openlocfilehash: 40e4e87b7a0d955c41a130ae512913b3a1133688
-ms.sourcegitcommit: 61b22df76e0f81e5ef11c587b129287886151c79
-ms.translationtype: HT
+ms.openlocfilehash: a7aa25fe7d174fd9d4ca310381312764a4883464
+ms.sourcegitcommit: d3ef9391f621e8f4ca70661184b3bb82c6cbda94
+ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/12/2022
-ms.locfileid: "66748041"
+ms.lasthandoff: 09/02/2022
+ms.locfileid: "67576019"
 ---
 # <a name="manage-devices-with-intune-overview"></a>Información general para administrar dispositivos con Intune
 
@@ -69,9 +69,9 @@ En esta ilustración:
 |1|Configurar el punto de partida de directivas de acceso de dispositivos e identidad de Confianza cero|Trabajar con el administrador de identidades para [**Implementar la protección de datos de directivas de protección de aplicaciones (APP) de nivel 2**](manage-devices-with-intune-app-protection.md). Estas directivas no requieren que administres dispositivos. Las directivas de APP se configuran en Intune. El administrador de identidades configura una directiva de acceso condicional para requerir las aplicaciones aprobadas.|E3, E5, F1, F3, F5|
 |2|Inscribir dispositivos en Intune|Esta tarea requiere más planeamiento y tiempo para implementar. Microsoft recomienda usar Intune para inscribir dispositivos, ya que esta herramienta proporciona una integración óptima. Hay varias opciones para inscribir dispositivos, en función de la plataforma. Por ejemplo, los dispositivos Windows se pueden inscribir mediante Azure AD Join o Autopilot. Debe revisar las opciones de cada plataforma y decidir qué opción de inscripción es la mejor para su entorno. Consulte [**Paso 2. Inscribir dispositivos en Intune**](manage-devices-with-intune-enroll.md) para obtener más información.|E3, E5, F1, F3, F5|
 |3|Configurar directivas de cumplimiento|Quieres asegurarte de que los dispositivos que tienen acceso a tus aplicaciones y datos cumplen los requisitos mínimos, por ejemplo, los dispositivos están protegidos con contraseña o patillas y el sistema operativo está actualizado. Las directivas de cumplimiento son la manera de definir los requisitos que los dispositivos deben cumplir. [**Paso 3. Configurar directivas de cumplimiento**](manage-devices-with-intune-compliance-policies.md) ayuda a configurar estas directivas.|E3, E5, F3, F5|
-|4 |Configurar directivas de acceso a dispositivos e identidades de Enterprise (recomendado) de Confianza cero|Ahora que los dispositivos están inscritos, puede trabajar con el administrador de identidades para [**ajustar directivas de acceso condicional y requerir dispositivos correctos y compatibles**](manage-devices-with-intune-require-compliance.md).|E3, E5, F3, F5|
-|5 |Implementar perfiles de configuración|En lugar de las directivas de cumplimiento de dispositivos que simplemente marcan un dispositivo como compatible o no en función de los criterios que configures, los perfiles de configuración cambian realmente la configuración de los valores de un dispositivo. Puede usar directivas de configuración para proteger los dispositivos frente a ciberamenazas. Consulte [**Paso 5. Implementar perfiles de configuración**](manage-devices-with-intune-configuration-profiles.md).|E3, E5, F3, F5|
-|6 |Supervisión del riesgo y el cumplimiento de los dispositivos con las líneas base de seguridad|En este paso, conectará Intune a Microsoft Defender para punto de conexión. Con esta integración, puedes supervisar el riesgo del dispositivo como una condición de acceso. Se bloquearán los dispositivos que se encuentren en un estado de riesgo. También puede supervisar el cumplimiento de las líneas de base de seguridad. Consulte [**Paso 6. Supervisar el riesgo del dispositivo y el cumplimiento de las líneas base de seguridad**](manage-devices-with-intune-monitor-risk.md).|E5, F5|
+|4|Configurar directivas de acceso a dispositivos e identidades de Enterprise (recomendado) de Confianza cero|Ahora que los dispositivos están inscritos, puede trabajar con el administrador de identidades para [**ajustar directivas de acceso condicional y requerir dispositivos correctos y compatibles**](manage-devices-with-intune-require-compliance.md).|E3, E5, F3, F5|
+|5|Implementar perfiles de configuración|En lugar de las directivas de cumplimiento de dispositivos que simplemente marcan un dispositivo como compatible o no en función de los criterios que configures, los perfiles de configuración cambian realmente la configuración de los valores de un dispositivo. Puede usar directivas de configuración para proteger los dispositivos frente a ciberamenazas. Consulte [**Paso 5. Implementar perfiles de configuración**](manage-devices-with-intune-configuration-profiles.md).|E3, E5, F3, F5|
+|6|Supervisión del riesgo y el cumplimiento de los dispositivos con las líneas base de seguridad|En este paso, conectará Intune a Microsoft Defender para punto de conexión. Con esta integración, puedes supervisar el riesgo del dispositivo como una condición de acceso. Se bloquearán los dispositivos que se encuentren en un estado de riesgo. También puede supervisar el cumplimiento de las líneas de base de seguridad. Consulte [**Paso 6. Supervisar el riesgo del dispositivo y el cumplimiento de las líneas base de seguridad**](manage-devices-with-intune-monitor-risk.md).|E5, F5|
 |7 |Implementar la prevención de pérdida de datos (DLP) con funcionalidades de protección de la información|Si la organización se ha enfocado en identificar datos confidenciales y etiquetar documentos, puede trabajar con el administrador de protección de la información para [**proteger la información confidencial y los documentos en los dispositivos**](manage-devices-with-intune-dlp-mip.md).|Complemento de cumplimiento E5, F5|
 
 ## <a name="coordinating-endpoint-management-with-zero-trust-identity-and-device-access-policies"></a>Coordinación de la administración de puntos de conexión con directivas de acceso de dispositivos e identidad de Cero confianza

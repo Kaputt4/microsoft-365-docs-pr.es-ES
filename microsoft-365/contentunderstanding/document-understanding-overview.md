@@ -7,19 +7,19 @@ ms.reviewer: ssquires
 audience: admin
 ms.topic: article
 ms.customer: intro-overview
-ms.prod: microsoft-365-enterprise
+ms.service: microsoft-365-enterprise
 search.appverid: ''
 ms.collection:
 - enabler-strategic
 - m365initiative-syntex
 ms.localizationpriority: medium
 description: Obtenga información sobre la comprensión de documentos en Microsoft SharePoint Syntex.
-ms.openlocfilehash: 385d981f1f8db22ec7d18c79734bde5a8fc3739d
-ms.sourcegitcommit: 23e186b46b27a6a4863f507a52a11105afae9726
+ms.openlocfilehash: 7ce1a44a8101a45bf55007b98cc310c734d26895
+ms.sourcegitcommit: d3ef9391f621e8f4ca70661184b3bb82c6cbda94
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/15/2022
-ms.locfileid: "64882492"
+ms.lasthandoff: 09/02/2022
+ms.locfileid: "67584968"
 ---
 # <a name="document-understanding-overview-in-microsoft-sharepoint-syntex"></a>Introducción a la comprensión de documentos en Microsoft SharePoint Syntex
 
@@ -54,7 +54,7 @@ Después de publicar el modelo, utilice el centro de contenido para aplicarlo a 
 
 Los modelos de comprensión de documentos usan la tecnología de reconocimiento óptico de caracteres (OCR) para examinar archivos PDF, imágenes y archivos TIFF. Los archivos se examinan al entrenar un modelo con archivos de ejemplo y al ejecutar el modelo en archivos de una biblioteca de documentos.
 
-Tenga en cuenta las siguientes diferencias sobre Microsoft Office archivos basados en texto y archivos escaneados con OCR (PDF, imagen o TIFF):
+Tenga en cuenta las siguientes diferencias sobre los archivos basados en texto de Microsoft Office y los archivos escaneados por OCR (PDF, imagen o TIFF):
 
 - Archivos de Office: truncados a 64 000 caracteres (durante el entrenamiento y cuando se ejecuta en archivos de una biblioteca de documentos).
 
@@ -124,7 +124,7 @@ Los modelos de comprensión de documentos admiten *todos los* idiomas basados en
 - Italiano
 - Español
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 [Crear un clasificador](create-a-classifier.md)
 

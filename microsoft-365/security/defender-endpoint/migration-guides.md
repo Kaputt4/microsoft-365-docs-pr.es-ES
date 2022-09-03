@@ -6,7 +6,7 @@ ms.author: deniseb
 manager: dansimp
 audience: ITPro
 ms.topic: conceptual
-ms.prod: m365-security
+ms.service: microsoft-365-security
 ms.localizationpriority: medium
 ms.collection:
 - M365-security-compliance
@@ -14,13 +14,13 @@ ms.custom: migrationguides
 ms.reviewer: chriggs, depicker, yongrhee
 f1.keywords: NOCSH
 ms.date: 07/01/2022
-ms.technology: mde
-ms.openlocfilehash: d13d5bf8f33d022824e24e8b1fc879f0826d82da
-ms.sourcegitcommit: bfbe2574f487ced69e711b48ce140120bd99181b
+ms.subservice: mde
+ms.openlocfilehash: 6d9f60886c02cd4b6af929b2b403316b1bfea0a2
+ms.sourcegitcommit: d3ef9391f621e8f4ca70661184b3bb82c6cbda94
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/02/2022
-ms.locfileid: "66607639"
+ms.lasthandoff: 09/02/2022
+ms.locfileid: "67577307"
 ---
 # <a name="move-to-microsoft-defender-for-endpoint"></a>Mover a Microsoft Defender para punto de conexión
 

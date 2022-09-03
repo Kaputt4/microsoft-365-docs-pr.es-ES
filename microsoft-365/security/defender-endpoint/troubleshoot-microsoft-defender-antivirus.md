@@ -2,7 +2,7 @@
 title: Identificadores de eventos y códigos de error del Antivirus de Microsoft Defender
 description: Buscar las causas y soluciones de los identificadores y errores de eventos del Antivirus de Microsoft Defender
 keywords: event, error code, siem, logging, troubleshooting, wef, windows event forwarding
-ms.prod: m365-security
+ms.service: microsoft-365-security
 ms.mktglfcycl: manage
 ms.sitesec: library
 ms.localizationpriority: medium
@@ -13,14 +13,14 @@ ms.custom: nextgen
 ms.date: 08/04/2022
 ms.reviewer: ''
 manager: dansimp
-ms.technology: mde
+ms.subservice: mde
 ms.collection: M365-security-compliance
-ms.openlocfilehash: af697062c7ce7a0d5f3fd4879a622970962c1083
-ms.sourcegitcommit: cd9df1a681265905eef99c039f7036b2fa6e8b6d
+ms.openlocfilehash: 7d70d6e39e31619341c3f6041a06fc87d64d5509
+ms.sourcegitcommit: d3ef9391f621e8f4ca70661184b3bb82c6cbda94
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/07/2022
-ms.locfileid: "67275862"
+ms.lasthandoff: 09/02/2022
+ms.locfileid: "67580539"
 ---
 # <a name="review-event-logs-and-error-codes-to-troubleshoot-issues-with-microsoft-defender-antivirus"></a>Revisar registros de sucesos y códigos de error para solucionar problemas del Antivirus de Windows Defender
 
@@ -3199,7 +3199,7 @@ Se trata de un error interno. Es posible que se haya desencadenado cuando un exa
 > - [Establecer preferencias para Microsoft Defender para punto de conexión en Linux](linux-preferences.md)
 > - [Microsoft Defender para punto de conexión en Linux](microsoft-defender-endpoint-linux.md)
 > - [Configurar Defender para punto de conexión en características de Android](android-configure.md)
-> - [Configurar Microsoft Defender para punto de conexión en las características iOS](ios-configure-features.md)
+> - [Configurar Microsoft Defender para punto de conexión en las características de iOS](ios-configure-features.md)
 
 
 ## <a name="related-topics"></a>Temas relacionados

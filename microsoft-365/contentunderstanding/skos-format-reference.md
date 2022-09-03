@@ -5,47 +5,47 @@ author: MikePlumleyMSFT
 manager: serdars
 audience: admin
 ms.topic: article
-ms.prod: microsoft-365-enterprise
+ms.service: microsoft-365-enterprise
 search.appverid: ''
 ms.collection: enabler-strategic
 ms.localizationpriority: high
 description: Referencia de formato SKOS para la taxonomía de SharePoint
-ms.openlocfilehash: c9dbaae4242155522eec2fff0f7fd4d721e697cc
-ms.sourcegitcommit: 7ac54e1952383d5cd5f084c6a9d247eb747d4904
-ms.translationtype: HT
+ms.openlocfilehash: b3e0e60345e46fde8f82af536101f4f8b09daf24
+ms.sourcegitcommit: d3ef9391f621e8f4ca70661184b3bb82c6cbda94
+ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/17/2022
-ms.locfileid: "66139681"
+ms.lasthandoff: 09/02/2022
+ms.locfileid: "67575853"
 ---
 # <a name="skos-format-reference-for-sharepoint-taxonomy"></a>Referencia de formato SKOS para la taxonomía de SharePoint
 
 Este artículo incluye el vocabulario de RDF usado para representar la [taxonomía de SharePoint](/dotnet/api/microsoft.sharepoint.taxonomy) y se basa en [SKOS](https://www.w3.org/TR/skos-primer/). Para serializar esta sintaxis RDF, utilice RDF [TURTLE](https://www.w3.org/TR/turtle/).
 
-En la tabla siguiente se muestran los equivalentes de [SKOS](https://www.w3.org/TR/skos-primer/) para el vocabulario de la [taxonomía de SharePoint](/dotnet/api/microsoft.sharepoint.taxonomy). SharePoint no es compatible con aquellos valores de [SKOS](https://www.w3.org/TR/skos-primer/) que no tengan equivalentes de la taxonomía de SharePoint.
+En la tabla siguiente se muestran los equivalentes de [SKOS](https://www.w3.org/TR/skos-primer/) para el vocabulario de la [taxonomía de SharePoint](/dotnet/api/microsoft.sharepoint.taxonomy). SharePoint no admite valores [de SKOS](https://www.w3.org/TR/skos-primer/) que no tengan equivalente de taxonomía de SharePoint.
 
 |Taxonomía de SharePoint|Equivalente de SKOS|
 |:-----------------|:--------------|
-|sharepoint-taxonomy:Term|skos:Concept|
-|sharepoint-taxonomy:TermSet|skos:ConceptScheme|
-|sharepoint-taxonomy:inTermSet|skos:inScheme|
-|sharepoint-taxonomy:hasTopLevelTerm|skos:hasTopConcept|
-|sharepoint-taxonomy:topLevelTermOf|skos:topConceptOf|
-|sharepoint-taxonomy:defaultLabel|skos:prefLabel|
-|sharepoint-taxonomy:termSetName|skos:prefLabel|
-|sharepoint-taxonomy:propertyName|skos:prefLabel|
-|sharepoint-taxonomy:otherLabel|skos:altLabel|
-|sharepoint-taxonomy:description|skos:definition|
-|sharepoint-taxonomy:parent|skos:broader|
-|sharepoint-taxonomy:child|skos:narrower|
+|sharepoint-taxonomy: término|skos: Concepto|
+|sharepoint-taxonomy: TermSet|skos: ConceptScheme|
+|sharepoint-taxonomy: inTermSet|skos: inScheme|
+|sharepoint-taxonomy: hasTopLevelTerm|skos: hasTopConcept|
+|sharepoint-taxonomy: topLevelTermOf|skos: topConceptOf|
+|sharepoint-taxonomy: defaultLabel|skos: prefLabel|
+|sharepoint-taxonomy: termSetName|skos: prefLabel|
+|sharepoint-taxonomy: propertyName|skos: prefLabel|
+|sharepoint-taxonomy: otherLabel|skos: altLabel|
+|sharepoint-taxonomy: description|skos: definición|
+|sharepoint-taxonomy: parent|skos: más amplio|
+|sharepoint-taxonomy: secundario|skos: más estrecho|
 
 En la tabla siguiente se muestran las entidades del vocabulario de la taxonomía de SharePoint derivados de [OWL](https://www.w3.org/TR/owl2-primer/).
 
 |Vocabulario de la taxonomía de SharePoint|Derivado de OWL|
 |:-----------------------------|:----------------------|
-|sharepoint-taxonomy:isAvailableForTagging|owl:datatypeproperty|
-|sharepoint-taxonomy:SharedCustomPropertyForTerm|owl:ObjectProperty|
-|sharepoint-taxonomy:LocalCustomPropertyForTerm|owl:ObjectProperty|
-|sharepoint-taxonomy:CustomPropertyForTermSet|owl:ObjectProperty|
+|sharepoint-taxonomy: isAvailableForTagging|owl: datatypeproperty|
+|sharepoint-taxonomy: SharedCustomPropertyForTerm|owl: ObjectProperty|
+|sharepoint-taxonomy: LocalCustomPropertyForTerm|owl: ObjectProperty|
+|sharepoint-taxonomy: CustomPropertyForTermSet|owl: ObjectProperty|
 
 ## <a name="sharepoint-taxonomy-vocabulary"></a>Vocabulario de la taxonomía de SharePoint
 
@@ -70,14 +70,14 @@ ex:TermA    a    sharepoint-taxonomy:Term;
 
 Obligatoriamente, existe un [término](/dotnet/api/microsoft.sharepoint.taxonomy.term) en un [TermSet](/dotnet/api/microsoft.sharepoint.taxonomy.termset). DefaultLabel es el nombre del [Término](/dotnet/api/microsoft.sharepoint.taxonomy.term) tal y como aparece en la representación visual. Los campos obligatorios para definir un [Término](/dotnet/api/microsoft.sharepoint.taxonomy.term) incluyen:
 
-- sharepoint-taxonomy:defaultLabel
-- sharepoint-taxonomy:inTermSet
+- sharepoint-taxonomy: defaultLabel
+- sharepoint-taxonomy: inTermSet
 
 Un [Término](/dotnet/api/microsoft.sharepoint.taxonomy.term) puede:
 
 - Estar relacionado jerárquicamente con otro [Término](/dotnet/api/microsoft.sharepoint.taxonomy.term), siempre y cuando ambos [Términos](/dotnet/api/microsoft.sharepoint.taxonomy.term) pertenezcan al mismo [TermSet](/dotnet/api/microsoft.sharepoint.taxonomy.termset).
 - Tener varios [Términos](/dotnet/api/microsoft.sharepoint.taxonomy.term) secundarios, pero un único [Término](/dotnet/api/microsoft.sharepoint.taxonomy.term) principal.
-- No tener un [Término](/dotnet/api/microsoft.sharepoint.taxonomy.term) definido, si se trata de un término de nivel superior (topLevelTermOf) de un [TermSet](/dotnet/api/microsoft.sharepoint.taxonomy.termset).
+- No tiene un [term](/dotnet/api/microsoft.sharepoint.taxonomy.term) primario definido, si es un topLevelTermOf un [TermSet](/dotnet/api/microsoft.sharepoint.taxonomy.termset).
 - Tener una única defaultLabel por idioma de trabajo de [TermStore](/dotnet/api/microsoft.sharepoint.taxonomy.termstore).
 - No existir en caso de que no contenga un [Término](/dotnet/api/microsoft.sharepoint.taxonomy.term) principal y de que no sea el término de nivel superior (topLevelTermOf) de un [TermSet](/dotnet/api/microsoft.sharepoint.taxonomy.termset).
 - Tener una única defaultLabel en el mismo nivel jerárquico.
@@ -99,13 +99,13 @@ ex:TermSetA    a    sharepoint-taxonomy:TermSet;
 
 Los [TermSets](/dotnet/api/microsoft.sharepoint.taxonomy.termset) se agrupan lógicamente en [TermGroups](/dotnet/api/microsoft.sharepoint.taxonomy.group). El campo obligatorio para definir un [TermSet](/dotnet/api/microsoft.sharepoint.taxonomy.termset) es el siguiente:
 
-- sharepoint-taxonomy:termSetName
+- sharepoint-taxonomy: termSetName
 
-En aquellos casos en los que el termSetName proporcionado no sea único en el [TermGroup](/dotnet/api/microsoft.sharepoint.taxonomy.group), SharePoint anexará un número al final del nombre para mantener la exclusividad del termSetName.
+Si el termSetName proporcionado no es único dentro de [TermGroup](/dotnet/api/microsoft.sharepoint.taxonomy.group), SharePoint anexa un número al final del nombre para mantener la exclusividad de termSetName(s).
 
 **sharepoint-taxonomy:hasTopLevelTerm**
 
-SharePoint usa esta propiedad para asignar el [Término](/dotnet/api/microsoft.sharepoint.taxonomy.term) superior en el [TermSet](/dotnet/api/microsoft.sharepoint.taxonomy.termset), que constituye el punto de entrada a la jerarquía de los [Términos](/dotnet/api/microsoft.sharepoint.taxonomy.term) en [TermSet](/dotnet/api/microsoft.sharepoint.taxonomy.termset). Se trata de una relación inversa a sharepoint-taxonomy:topLevelTermOf.
+SharePoint usa esta propiedad para asignar el [término](/dotnet/api/microsoft.sharepoint.taxonomy.term) más alto del [TermSet](/dotnet/api/microsoft.sharepoint.taxonomy.termset), que es el punto de entrada a la jerarquía de [Términos](/dotnet/api/microsoft.sharepoint.taxonomy.term) en un [TermSet](/dotnet/api/microsoft.sharepoint.taxonomy.termset). Se trata de una relación inversa con la taxonomía de sharepoint: topLevelTermOf.
 
 La sintaxis para definirlo es la siguiente:
 
@@ -118,7 +118,7 @@ ex:TermSetA    sharepoint-taxonomy:hasTopLevelTerm    ex:TermA.
 
 **sharepoint-taxonomy:topLevelTermOf**
 
-Sharepoint-taxonomy:topLevelTermOf constituye el contrario de sharepoint-taxonomy:hasTopLevelTerm
+Sharepoint-taxonomy: topLevelTermOf es el inverso de sharepoint-taxonomy: hasTopLevelTerm
 
 La sintaxis para definirlo es la siguiente:
 
@@ -152,7 +152,7 @@ La DefaultLabel contiene dos partes: la cadena y la etiqueta de idioma. El idiom
 
 Obtiene y establece el nombre del objeto TermSet actual.
 
-Esta es la etiqueta léxica de un [TermSet](/dotnet/api/microsoft.sharepoint.taxonomy.termset), en un idioma de trabajo de [TermStore](/dotnet/api/microsoft.sharepoint.taxonomy.termstore). Se trata de un parámetro obligatorio para un [TermSet](/dotnet/api/microsoft.sharepoint.taxonomy.termset). Se usa para representar visualmente un [TermSet](/dotnet/api/microsoft.sharepoint.taxonomy.termset).
+Esta es la etiqueta léxica de un [TermSet](/dotnet/api/microsoft.sharepoint.taxonomy.termset), en un lenguaje de trabajo [TermStore](/dotnet/api/microsoft.sharepoint.taxonomy.termstore) . Se trata de un parámetro obligatorio para un [TermSet](/dotnet/api/microsoft.sharepoint.taxonomy.termset). Se usa para representar visualmente un [TermSet](/dotnet/api/microsoft.sharepoint.taxonomy.termset).
 
 La sintaxis para definir un termSetName es la siguiente:
 
@@ -166,7 +166,7 @@ Obtiene y establece el nombre de propiedad del objeto TermSet actual.
 
 Se trata de la etiqueta léxica para una sharepoint-taxonomy:SharedCustomPropertyForTerm, sharepoint-taxonomy:LocalCustomPropertyForTerm y sharepoint-taxonomy:CustomPropertyForTermSet en un idioma de trabajo de [TermStore](/dotnet/api/microsoft.sharepoint.taxonomy.termstore).
 
-La sharepoint-taxonomy:propertyName se trata como la clave de la CustomProperty.
+La taxonomía de sharepoint: propertyName se trata como la clave de CustomProperty.
 
 La sintaxis para definir un propertyName es la siguiente:
 
@@ -206,7 +206,7 @@ Esto significa que el TermA es el principal y el TermA es el secundario.
 
 **sharepoint-taxonomy:child**
 
-El objeto contiene una o más instancias de TermSet secundarias, y se puede acceder a ellas mediante la propiedad TermSets. Esta clase también proporciona métodos para crear nuevos objetos TermSet secundarios. Los permisos para editar las instancias de término y de TermSet secundarios se especifican en el grupo.
+El objeto contiene una o más instancias de TermSet secundarias, y se puede acceder a ellas mediante la propiedad TermSets. Esta clase también proporciona métodos para crear nuevos objetos TermSet secundarios. Los permisos para editar instancias secundarias de Term y TermSet se especifican en el grupo.
 
 Relaciona de forma jerárquica un [Término](/dotnet/api/microsoft.sharepoint.taxonomy.term) a otro [Término](/dotnet/api/microsoft.sharepoint.taxonomy.term).
 
@@ -263,7 +263,7 @@ ex:TermA    ex:CustomProp2    “5 cm”@en-us.
 ```
 **sharepoint-taxonomy:LocalCustomPropertyForTerm**
 
-Si no resulta necesario llevar la propiedad personalizada para un [Término](/dotnet/api/microsoft.sharepoint.taxonomy.term) junto con el [Término](/dotnet/api/microsoft.sharepoint.taxonomy.term), cuando vuelva a usar el [Término](/dotnet/api/microsoft.sharepoint.taxonomy.term) en otro lugar, deberá definirlo en LocalCustomPropertyForTerm.
+Si no es necesario llevar la propiedad personalizada de un [término](/dotnet/api/microsoft.sharepoint.taxonomy.term) junto con el [término](/dotnet/api/microsoft.sharepoint.taxonomy.term), al reutilizar el [término](/dotnet/api/microsoft.sharepoint.taxonomy.term) en otro lugar, deberá definirlo en LocalCustomPropertyForTerm.
 
 La sintaxis para definirlo es la siguiente:
 
@@ -312,10 +312,10 @@ propertyName|Tiene etiqueta de propiedad|SharedCustomPropertyForTerm, LocalCusto
 
 Escenarios válidos de [SKOS](https://www.w3.org/TR/skos-primer/) que la [taxonomía de SharePoint](/dotnet/api/microsoft.sharepoint.taxonomy) no permite:
 
-- Redundancia jerárquica: un concepto de [SKOS](https://www.w3.org/TR/skos-primer/) se puede adjuntar a varios conceptos más amplios al mismo tiempo, pero una sharepoint-taxonomy:Term solo puede tener una sharepoint-taxonomy:parent, por lo que tampoco se permite la dependencia cíclica de los términos.
-- No se permiten términos huérfanos en la taxonomía de SharePoint. Cada sharepoint-taxonomy:Term debe tener un sharepoint-taxonomy:parent o debe ser sharepoint-taxonomy:topLevelTermOf un TermSet.
+- Redundancia jerárquica: un concepto [de SKOS](https://www.w3.org/TR/skos-primer/) se puede asociar a varios conceptos más amplios al mismo tiempo, pero una taxonomía de sharepoint:Term solo puede tener un sharepoint-taxonomy:parent, por lo tanto, no se permite la dependencia cíclica de los Términos.
+- Los términos huérfanos no se permiten en la taxonomía de SharePoint. Cada taxonomía de sharepoint: el término debe tener una taxonomía de sharepoint: parent o debe ser la taxonomía de sharepoint: topLevelTermOf a TermSet.
 - La taxonomía de SharePoint no admite relaciones asociativas.
-- La taxonomía de SharePoint solo permite 2 tipos de relación jerárquica: sharepoint-taxonomy:parent y sharepoint-Taxonomy:child.
+- La taxonomía de SharePoint solo permite dos tipos de relaciones jerárquicas: sharepoint-taxonomy: parent y sharepoint-Taxonomy: child.
 - A diferencia de [SKOS](https://www.w3.org/TR/skos-primer/), la relación jerárquica en el vocabulario de la taxonomía de SharePoint solo se puede establecer con términos del mismo TermSet.
 
 ## <a name="see-also"></a>Consulte también

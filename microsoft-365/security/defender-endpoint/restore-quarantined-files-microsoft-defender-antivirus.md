@@ -1,8 +1,8 @@
 ---
 title: Restaurar archivos en cuarentena en el Antivirus de Windows Defender
-description: Puede restaurar archivos y carpetas que Antivirus de Microsoft Defender pusieron en cuarentena.
+description: Puede restaurar archivos y carpetas que el Antivirus de Microsoft Defender ha puesto en cuarentena.
 keywords: ''
-ms.prod: m365-security
+ms.service: microsoft-365-security
 ms.mktglfcycl: manage
 ms.sitesec: library
 ms.pagetype: security
@@ -13,15 +13,15 @@ ms.custom: nextgen
 ms.date: 10/19/2021
 ms.reviewer: ''
 manager: dansimp
-ms.technology: mde
+ms.subservice: mde
 ms.topic: article
 ms.collection: M365-security-compliance
-ms.openlocfilehash: 52e83cf75385b36f87efbe72df9c865415f15452
-ms.sourcegitcommit: ebbe8713297675db5dcb3e0d9c3ae5e746b99196
+ms.openlocfilehash: 415c16677669277e75f88ec91d1ef18cefd00ee0
+ms.sourcegitcommit: d3ef9391f621e8f4ca70661184b3bb82c6cbda94
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/14/2022
-ms.locfileid: "65417356"
+ms.lasthandoff: 09/02/2022
+ms.locfileid: "67585584"
 ---
 # <a name="restore-quarantined-files-in-microsoft-defender-antivirus"></a>Restaurar archivos en cuarentena en el Antivirus de Windows Defender
 
@@ -47,7 +47,7 @@ Si Antivirus de Microsoft Defender está configurado para detectar y corregir am
 > La restauración de un archivo desde la cuarentena también se puede realizar mediante el símbolo del sistema. Consulte [Restauración de un archivo desde la cuarentena](/windows/security/threat-protection/microsoft-defender-atp/respond-file-alerts#restore-file-from-quarantine). 
 
 > [!TIP]
-> Si busca información relacionada con antivirus para otras plataformas, consulte:
+> Si busca información relacionada con el antivirus para otras plataformas, consulte:
 > - [Establecer las preferencias para Microsoft Defender para punto de conexión en macOS](mac-preferences.md)
 > - [Microsoft Defender para punto de conexión en Mac](microsoft-defender-endpoint-mac.md)
 > - [Configuración de las directivas de antivirus de macOS para Antivirus de Microsoft Defender para Intune](/mem/intune/protect/antivirus-microsoft-defender-settings-macos)
@@ -62,4 +62,4 @@ Si Antivirus de Microsoft Defender está configurado para detectar y corregir am
 - [Revisión de los resultados del examen](review-scan-results-microsoft-defender-antivirus.md)
 - [Configuración y validación de exclusiones basadas en el nombre de archivo, la extensión y la ubicación de la carpeta](configure-extension-file-exclusions-microsoft-defender-antivirus.md)
 - [Configuración y validación de exclusiones para archivos abiertos por procesos](configure-process-opened-file-exclusions-microsoft-defender-antivirus.md)
-- [Configuración de exclusiones de Antivirus de Microsoft Defender en Windows Server](configure-server-exclusions-microsoft-defender-antivirus.md)
+- [Configuración de exclusiones del Antivirus de Microsoft Defender en Windows Server](configure-server-exclusions-microsoft-defender-antivirus.md)

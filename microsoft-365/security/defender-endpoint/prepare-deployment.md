@@ -2,7 +2,7 @@
 title: Prepare su cuenta de Microsoft Defender para punto de conexión
 description: Preparar la aprobación de las partes interesadas, las escalas de tiempo, las consideraciones del entorno y el orden de adopción para implementar Microsoft Defender para punto de conexión
 keywords: implementar, preparar, partes interesadas, escala de tiempo, entorno, punto de conexión, servidor, administración, adopción
-ms.prod: m365-security
+ms.service: microsoft-365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -15,14 +15,15 @@ ms.collection:
 - M365-security-compliance
 - m365solution-endpointprotect
 - m365solution-scenario
+- highpri
 ms.topic: article
-ms.technology: mde
-ms.openlocfilehash: 294013251b599a22e714307892828ee73f0fea85
-ms.sourcegitcommit: 217108c59be41b01963a393b4f16d137636fe6a8
+ms.subservice: mde
+ms.openlocfilehash: 7f730cdb342ef66ae0047d63637e6a88d644cd9b
+ms.sourcegitcommit: d3ef9391f621e8f4ca70661184b3bb82c6cbda94
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/12/2022
-ms.locfileid: "67331761"
+ms.lasthandoff: 09/02/2022
+ms.locfileid: "67583702"
 ---
 # <a name="prepare-microsoft-defender-for-endpoint-deployment"></a>Prepare su cuenta de Microsoft Defender para punto de conexión
 

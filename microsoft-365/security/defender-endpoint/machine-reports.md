@@ -17,19 +17,22 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.subservice: mde
-ms.openlocfilehash: 58be3951f8937e095e68f2238119271973811210
-ms.sourcegitcommit: 228fa13973bf7c2d91504703fab757f552ae40dd
+ms.openlocfilehash: 57db94df3cfd8fae60ab335f2f4a3c8c02f3c9cf
+ms.sourcegitcommit: d3ef9391f621e8f4ca70661184b3bb82c6cbda94
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/01/2022
-ms.locfileid: "67522524"
+ms.lasthandoff: 09/02/2022
+ms.locfileid: "67584868"
 ---
 # <a name="device-health-and-compliance-report-in-microsoft-defender-for-endpoint"></a>Informe de estado y cumplimiento del dispositivo en Microsoft Defender para punto de conexión
 
 **Se aplica a:**
 
-- [Microsoft Defender para punto de conexión](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
+- [Microsoft Defender para punto de conexión](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Microsoft Defender para punto de conexión Plan 1](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Microsoft Defender para punto de conexión Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Microsoft Defender para Empresas](../defender-business/mdb-overview.md)
 
 > ¿Quiere experimentar Microsoft Defender para punto de conexión? [Regístrese para obtener una prueba gratuita.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-exposedapis-abovefoldlink)
 
@@ -306,7 +309,7 @@ Las tarjetas actualizadas muestran el estado actualizado del  **motor antiviru
 
 A continuación se proporcionan definiciones de no_data_available, _desactualizadas_ _y_ _actualizadas_ para cada tarjeta.
 
-Los informes actualizados del Antivirus de Microsoft Defender (MDAV) realizan determinaciones basadas en los criterios siguientes:
+Antivirus de Microsoft Defender (MDAV) crea informes y determinaciones actualizados en función de los criterios siguientes:
 
 - **En el caso de las actualizaciones de la plataforma de & motor**: la hora en que se recibieron por última vez los eventos de cliente para los informes actualizados ("hora de actualización de firma") y la hora de publicación de Security Intelligence (los VDM de inteligencia de seguridad también se usan para determinar las versiones del motor & plataforma)
 - **Para las actualizaciones de inteligencia de seguridad**: la hora en que se recibieron por última vez los eventos de cliente para los informes actualizados ("Hora de actualización de firma"), la hora de publicación de Security Intelligence y el último estado actualizado comunicado desde el cliente
@@ -327,7 +330,9 @@ Para obtener más información sobre los términos mencionados anteriormente, co
 >*Actualmente, los informes actualizados solo están disponibles para dispositivos Windows. Los dispositivos multiplataforma, como Mac y Linux, aparecen en "No hay datos disponibles"
 >
 
-##### <a name="up-to-date-examples"></a>Ejemplos actualizados
+##### <a name="up-to-date-definitions"></a>Definiciones actualizadas
+
+A continuación se muestran definiciones actualizadas para el motor y la plataforma:
 
 | El motor o plataforma en el dispositivo se considera: | Si: |
 |:---|:---|
@@ -335,7 +340,11 @@ Para obtener más información sobre los términos mencionados anteriormente, co
 | **desactualizadas** | el dispositivo comunicado con el evento de informe de Defender ('Hora de actualización de la firma') en los últimos 7 días y tiene un tiempo de publicación de inteligencia de seguridad en los últimos 7, pero el tiempo de compilación de la versión del motor o de la plataforma es superior a 60 días. |
 | **unknown (no hay datos disponibles)** | el dispositivo no se ha comunicado con el evento de informe ('Hora de actualización de firma') durante más de 7 días, o el tiempo de publicación de inteligencia de seguridad es mayor que 7 días. |
 
-**La actualización de inteligencia de seguridad se considera actualizada** Si la versión de inteligencia de seguridad del dispositivo se escribió en los últimos 7 días y el dispositivo se ha comunicado con el evento de informe en los últimos 7 días
+A continuación se muestran definiciones actualizadas de inteligencia de seguridad:
+
+| Se considera la actualización de inteligencia de seguridad | Si: |
+|:---|:---|
+|Actualizado | La versión de inteligencia de seguridad del dispositivo se escribió en los últimos 7 días y el dispositivo se ha comunicado con el evento de informe en los últimos 7 días. |
 
 Para obtener más información sobre estos, consulte:
 
@@ -353,7 +362,7 @@ En la tabla siguiente se establecen los valores posibles para los informes actua
 
 | Hora de la última actualización del evento (también conocida como "Hora de actualización de firma" en los informes) | Hora de publicación de Security Intelligence | _Estado notificado_: |
 |:----|:----|:----|
-| < 7 días (nuevo) | < 7 días (nuevo) | _Actualizado/ Obsoleto/Desconocido (informes de cliente)_ |
+| < 7 días (nuevo) | < 7 días (nuevo) | _<br/> Actualizado Desconocido (cualquier informe de <br/> cliente)_ |
 | > 7 días (de edad) | > 7 días (de edad) | _Desconocido_ |
 | < 7 días (nuevo) | > 7 días (de edad) | _Desconocido_ |
 | > 7 días (de edad) | < 7 días (nuevo) | _Desconocido_ |
@@ -370,7 +379,7 @@ En la tabla siguiente se establecen los posibles valores de informe actualizados
 
 | Hora de la última actualización del evento (también conocida como "Hora de actualización de firma" en los informes) | Hora de publicación de Security Intelligence | _Estado notificado_: |
 |:----|:----|:----|
-| < 7 días (nuevo) | < 7 días (nuevo) | _Actualizado/ Obsoleto/Desconocido (informes de cliente)_ |
+| < 7 días (nuevo) | < 7 días (nuevo) | _<br/> Actualizado Desconocido (cualquier informe de <br/> cliente)_ |
 | > 7 días (de edad) | > 7 días (de edad) | _Desconocido_ |
 | < 7 días (nuevo) | > 7 días (de edad) | _Desconocido_ |
 | > 7 días (de edad) | < 7 días (nuevo) | _Desconocido_ |
@@ -385,16 +394,16 @@ Esta tarjeta identifica los dispositivos que tienen versiones de inteligencia de
 
 En la tabla siguiente se establecen los posibles valores de informe actualizados para las actualizaciones **de Security Intelligence** . Los valores notificados se basan en la última vez que se recibió el evento de informes y en la hora de publicación de inteligencia de seguridad.
 
-| Hora de la última actualización del evento (también conocida como "Hora de actualización de firma" en los informes) | Hora de publicación de Security Intelligence | _Estado notificado_: |
-|:----|:----|:----|
+| Hora de última actualización del evento <br/> (también conocido como "Hora de actualización de firma" en los informes) | Hora de publicación de Security Intelligence | Último estado recibido del cliente | _Estado notificado_: |
+|:----|:----|:----|:----|
 | >7 días (de edad) | >7 días (de edad) | Hasta la fecha | _Desconocido_ |
 | <7 días (nuevo) | >7 días (de edad) | Hasta la fecha | _Desconocido_ |
 | >7 días (de edad) | <7 días (nuevo) | Hasta la fecha |  _Desconocido_ |
 | <7 días (nuevo) | <7 días (nuevo) | Unknown | _Desconocido_|
 | <7 días (nuevo) | <7 días (nuevo) | Hasta la fecha | _Hasta la fecha_ |
-| >7 días (de edad) | <7 días (nuevo) | Obsoleto | _Desactualizadas_ |
-| >7 días (de edad) | >7 días (de edad) | Obsoleto | _Desactualizadas_ |
-| <7 días (nuevo) | >7 días (de edad) | Desactualizadas | _Desactualizadas_ |
+| >7 días (de edad) | <7 días (nuevo) | Obsoleto | _Obsoleto_ |
+| >7 días (de edad) | >7 días (de edad) | Obsoleto | _Obsoleto_ |
+| <7 días (nuevo) | >7 días (de edad) | Obsoleto | _Obsoleto_ |
 
 ## <a name="see-also"></a>Vea también
 

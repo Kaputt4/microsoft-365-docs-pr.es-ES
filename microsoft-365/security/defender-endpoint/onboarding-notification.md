@@ -1,9 +1,9 @@
 ---
 title: Crear una regla de notificación de incorporación o retirada
-description: Obtener una notificación cuando se usa un script local de incorporación o offboarding.
-keywords: incorporación, offboarding, local, script, notificación, regla
+description: Obtenga una notificación cuando se use un script de incorporación o eliminación local.
+keywords: onboarding, offboarding, local, script, notification, rule
 search.appverid: met150
-ms.prod: m365-security
+ms.service: microsoft-365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -14,15 +14,15 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
-ms.technology: mde
-ms.openlocfilehash: 0208e21394e350c2b5ffffdca6f8e14ebba227c8
-ms.sourcegitcommit: b0c3ffd7ddee9b30fab85047a71a31483b5c649b
+ms.subservice: mde
+ms.openlocfilehash: 86947166a973d196b27ba63ffcf2110176ce1f22
+ms.sourcegitcommit: d3ef9391f621e8f4ca70661184b3bb82c6cbda94
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/25/2022
-ms.locfileid: "64476057"
+ms.lasthandoff: 09/02/2022
+ms.locfileid: "67576525"
 ---
-# <a name="create-a-notification-rule-when-a-local-onboarding-or-offboarding-script-is-used"></a>Crear una regla de notificación cuando se usa un script local de incorporación o offboarding
+# <a name="create-a-notification-rule-when-a-local-onboarding-or-offboarding-script-is-used"></a>Creación de una regla de notificación cuando se usa un script de incorporación o eliminación local
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
@@ -39,20 +39,20 @@ ms.locfileid: "64476057"
 [!include[Improve request performance](../../includes/improve-request-performance.md)]
 
 
-Cree una regla de notificación para que cuando se utilice un script local de incorporación o offboarding, se le notificará.
+Cree una regla de notificación para que cuando se use un script local de incorporación o eliminación, se le notifique.
 
 ## <a name="before-you-begin"></a>Antes de empezar
 
-Tendrás que tener acceso a:
+Tendrá que tener acceso a:
 
-- Power Automate (plan por usuario como mínimo). Para obtener más información, [vea Power Automate de precios](https://flow.microsoft.com/pricing/).
-- Azure Table o SharePoint List or Library /SQL DB.
+- Power Automate (plan por usuario como mínimo). Para obtener más información, consulte la [página de precios de Power Automate](https://flow.microsoft.com/pricing/).
+- Tabla de Azure o lista de SharePoint o biblioteca/BASE de datos SQL.
 
-## <a name="create-the-notification-flow"></a>Crear el flujo de notificaciones
+## <a name="create-the-notification-flow"></a>Creación del flujo de notificación
 
 1. En [flow.microsoft.com](https://flow.microsoft.com/).
 
-2. Vaya a **Mis flujos > Nuevo > Programado: desde en blanco**.
+2. Vaya a **Mis flujos > Nuevo > Programado: desde cero**.
 
    :::image type="content" source="images/new-flow.png" alt-text="El flujo" lightbox="images/new-flow.png":::
 
@@ -62,36 +62,36 @@ Tendrás que tener acceso a:
    2. Especifique el inicio y la hora.
    3. Especifique la frecuencia. Por ejemplo, cada 5 minutos.
 
-   :::image type="content" source="images/build-flow.png" alt-text="Flujo de notificaciones" lightbox="images/build-flow.png":::
+   :::image type="content" source="images/build-flow.png" alt-text="Flujo de notificación" lightbox="images/build-flow.png":::
 
-4. Seleccione el botón + para agregar una nueva acción. La nueva acción será una solicitud HTTP a la API del Centro de seguridad de Defender para puntos de conexión. También puede reemplazarlo por el "Conector WDATP" (acción: "Máquinas- Obtener lista de máquinas").
+4. Seleccione el botón + para agregar una nueva acción. La nueva acción será una solicitud HTTP a la API del centro de seguridad de Defender para punto de conexión. También puede reemplazarlo por el "Conector WDATP" (acción: "Máquinas : Obtener lista de máquinas").
 
-   :::image type="content" source="images/recurrence-add.png" alt-text="La periodicidad y la acción agregar" lightbox="images/recurrence-add.png":::
+   :::image type="content" source="images/recurrence-add.png" alt-text="La acción de periodicidad y adición" lightbox="images/recurrence-add.png":::
 
 5. Escriba los siguientes campos HTTP:
 
    - Método: "GET" como valor para obtener la lista de dispositivos.
    - URI: escriba `https://api.securitycenter.microsoft.com/api/machines`.
    - Autenticación: seleccione "OAuth de Active Directory".
-   - Inquilino: inicie sesión y https://portal.azure.com vaya a **Azure Active Directory > registros de aplicaciones** y obtenga el valor de Identificador de inquilino.
+   - Inquilino: inicie sesión y vaya a https://portal.azure.com **Azure Active Directory > Registros de aplicaciones** y obtenga el valor de Identificador de inquilino.
    - Audiencia: `https://securitycenter.onmicrosoft.com/windowsatpservice\`
-   - Id. de cliente: inicie sesión y https://portal.azure.com vaya **a Azure Active Directory > registros de aplicaciones** y obtenga el valor id. de cliente.
+   - Id. de cliente: inicie sesión en https://portal.azure.com **Azure Active Directory > registros de aplicaciones** y obtenga el valor de Id. de cliente.
    - Tipo de credencial: seleccione "Secreto".
-   - Secreto: inicie sesión y https://portal.azure.com vaya a **Azure Active Directory > registros de aplicaciones** y obtenga el valor de Identificador de inquilino.
+   - Secreto: inicie sesión y vaya a https://portal.azure.com **Azure Active Directory > Registros de aplicaciones** y obtenga el valor de Identificador de inquilino.
 
-    :::image type="content" source="images/http-conditions.png" alt-text="Las condiciones HTTP" lightbox="images/http-conditions.png":::
+    :::image type="content" source="images/http-conditions.png" alt-text="Condiciones HTTP" lightbox="images/http-conditions.png":::
 
-6. Agrega un paso nuevo seleccionando Agregar **nueva** acción, luego busca **Operaciones de datos** y selecciona **Analizar JSON**.
+6. Para agregar un nuevo paso, seleccione **Agregar nueva acción** , busque **Operaciones de datos** y seleccione **Analizar JSON**.
 
    :::image type="content" source="images/data-operations.png" alt-text="Entrada de operaciones de datos" lightbox="images/data-operations.png":::
 
-7. Agregue Body en el **campo Contenido** .
+7. Agregue Cuerpo en el campo **Contenido** .
 
-   :::image type="content" source="images/parse-json.png" alt-text="Sección JSON de análisis" lightbox="images/parse-json.png":::
+   :::image type="content" source="images/parse-json.png" alt-text="La sección analizar JSON" lightbox="images/parse-json.png":::
 
-8. Seleccione el **vínculo Usar carga de ejemplo para generar el** esquema.
+8. Seleccione el vínculo **Usar carga de ejemplo para generar esquema** .
 
-   :::image type="content" source="images/parse-json-schema.png" alt-text="Json de análisis con carga" lightbox="images/parse-json-schema.png":::
+   :::image type="content" source="images/parse-json-schema.png" alt-text="El archivo JSON de análisis con carga" lightbox="images/parse-json-schema.png":::
 
 9. Copie y pegue el siguiente fragmento de código JSON:
 
@@ -175,41 +175,41 @@ Tendrás que tener acceso a:
 
     ```
 
-10. Extraiga los valores de la llamada JSON y compruebe si los dispositivos incorporados ya están registrados en la lista SharePoint como ejemplo:
+10. Extraiga los valores de la llamada JSON y compruebe si los dispositivos incorporados ya están registrados en la lista de SharePoint como ejemplo:
 
-    - Si es así, no se activará ninguna notificación
-    - Si no, registrará los nuevos dispositivos incorporados en la lista de SharePoint y se enviará una notificación al administrador de Defender for Endpoint
+    - Si es así, no se desencadenará ninguna notificación.
+    - Si no es así, registrará los nuevos dispositivos incorporados en la lista de SharePoint y se enviará una notificación al administrador de Defender para punto de conexión.
 
-    :::image type="content" source="images/flow-apply.png" alt-text="La aplicación del flujo a cada elemento" lightbox="images/flow-apply.png":::
+    :::image type="content" source="images/flow-apply.png" alt-text="Aplicación del flujo a cada elemento" lightbox="images/flow-apply.png":::
 
-    :::image type="content" source="images/apply-to-each.png" alt-text="La aplicación del flujo al elemento Get items" lightbox="images/apply-to-each.png":::
+    :::image type="content" source="images/apply-to-each.png" alt-text="Aplicación del flujo al elemento Get items" lightbox="images/apply-to-each.png":::
 
-11. En **Condición**, agregue la siguiente expresión: "length(body('Get_items')?[' value'])" y establece la condición en igual a 0.
+11. En **Condición**, agregue la siguiente expresión: "length(body('Get_items')?[' value'])" y establezca la condición en igual a 0.
 
-    :::image type="content" source="images/apply-to-each-value.png" alt-text="La aplicación del flujo a cada condición" lightbox="images/apply-to-each-value.png":::
-    :::image type="content" source="images/conditions-2.png" alt-text="La condición-1" lightbox="images/conditions-2.png":::
-    :::image type="content" source="images/condition3.png" alt-text="La condición-2" lightbox="images/condition3.png":::
-    :::image type="content" source="images/send-email.png" alt-text="Sección Enviar un correo electrónico" lightbox="images/send-email.png":::
+    :::image type="content" source="images/apply-to-each-value.png" alt-text="Aplicación del flujo a cada condición" lightbox="images/apply-to-each-value.png":::
+    :::image type="content" source="images/conditions-2.png" alt-text="La condición 1" lightbox="images/conditions-2.png":::
+    :::image type="content" source="images/condition3.png" alt-text="La condición 2" lightbox="images/condition3.png":::
+    :::image type="content" source="images/send-email.png" alt-text="La sección Enviar un correo electrónico" lightbox="images/send-email.png":::
 
 ## <a name="alert-notification"></a>Notificación de alerta
 
 La siguiente imagen es un ejemplo de una notificación por correo electrónico.
 
-:::image type="content" source="images/alert-notification.png" alt-text="Pantalla de notificación de correo electrónico" lightbox="images/alert-notification.png":::
+:::image type="content" source="images/alert-notification.png" alt-text="Pantalla de notificación por correo electrónico" lightbox="images/alert-notification.png":::
 
 ## <a name="tips"></a>Sugerencias
 
 - Puede filtrar aquí solo con lastSeen:
   - Cada 60 minutos:
-    - Toma todos los dispositivos vistos por última vez en los últimos 7 días.
+    - Tome todos los dispositivos que se han visto por última vez en los últimos 7 días.
 
 - Para cada dispositivo:
-  - Si la propiedad vista por última vez se encuentra en el intervalo de una hora de [-7 días, -7 días + 60 minutos ] -> alerta para la posibilidad de fuera deborde.
+  - Si la propiedad vista por última vez está en el intervalo de una hora de [-7 días, -7 días + 60 minutos ] -> Alerta de posibilidad de retirada.
   - Si se ve por primera vez en la última hora, > alerta para la incorporación.
 
-En esta solución no tendrá alertas duplicadas: hay inquilinos que tienen numerosos dispositivos. Obtener todos esos dispositivos puede ser muy caro y puede requerir paginación.
+En esta solución no tendrá alertas duplicadas: hay inquilinos que tienen numerosos dispositivos. La obtención de todos esos dispositivos podría ser muy costosa y podría requerir paginación.
 
 Puede dividirlo en dos consultas:
 
-1. Para la offboarding, tome solo este intervalo mediante el $filter OData y notifique únicamente si se cumplen las condiciones.
-2. Tome todos los dispositivos vistos por última vez en la última hora y compruebe la propiedad vista por primera vez para ellos (si la primera propiedad vista está en la última hora, la última vista también debe estar allí).
+1. Para la eliminación, tome solo este intervalo mediante el $filter OData y solo notifique si se cumplen las condiciones.
+2. Tome todos los dispositivos vistos por última vez en la última hora y compruebe la primera propiedad vista para ellos (si la primera propiedad vista es en la última hora, la última vista debe estar allí también).

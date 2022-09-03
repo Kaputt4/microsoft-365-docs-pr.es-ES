@@ -10,7 +10,7 @@ manager: dougeby
 audience: ITPro
 description: Use Intune y Autopilot para inscribir dispositivos en la administración con el fin de asegurarse de que las aplicaciones que se ejecutan en ellos son compatibles y para evitar pérdidas de datos corporativos.
 ms.topic: article
-ms.prod: microsoft-365-enterprise
+ms.service: microsoft-365-enterprise
 ms.localizationpriority: high
 ms.collection:
 - M365-security-compliance
@@ -19,12 +19,12 @@ ms.collection:
 - zerotrust-solution
 ms.custom: ''
 keywords: ''
-ms.openlocfilehash: 6a5fb754b8d2cea38473de888d2d927dd4bd9de9
-ms.sourcegitcommit: 61b22df76e0f81e5ef11c587b129287886151c79
-ms.translationtype: HT
+ms.openlocfilehash: 8ff6b86890f1c0b197f681c7029cc85bc90101d4
+ms.sourcegitcommit: d3ef9391f621e8f4ca70661184b3bb82c6cbda94
+ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/12/2022
-ms.locfileid: "66749273"
+ms.lasthandoff: 09/02/2022
+ms.locfileid: "67579586"
 ---
 # <a name="step-2-enroll-devices-to-intune"></a>Paso 2. Inscribir dispositivos en Intune
 

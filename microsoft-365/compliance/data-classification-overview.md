@@ -19,12 +19,12 @@ search.appverid:
 - MOE150
 - MET150
 description: El panel de clasificación de datos le permite ver la cantidad de información confidencial que se ha encontrado y clasificado en la organización.
-ms.openlocfilehash: dccc33715b2a3cd489d7fd65fa47773952cf8727
-ms.sourcegitcommit: 24827a509b3e78959ce67679646e572a0c996282
-ms.translationtype: HT
+ms.openlocfilehash: 188cb8b28f2a1468fd72236cf160a01e99c16634
+ms.sourcegitcommit: d3ef9391f621e8f4ca70661184b3bb82c6cbda94
+ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/21/2022
-ms.locfileid: "66917593"
+ms.lasthandoff: 09/02/2022
+ms.locfileid: "67579344"
 ---
 # <a name="learn-about-data-classification"></a>Obtenga información sobre la clasificación de datos.
 
@@ -46,9 +46,9 @@ También puede administrar estas características en la página de clasificació
 
 Puede encontrar la clasificación de datos en el <a href="https://go.microsoft.com/fwlink/p/?linkid=2077149" target="_blank">portal de cumplimiento Microsoft Purview</a> o en el <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">portal de Microsoft 365 Defender</a> > **Clasificación** > **Clasificación de datos**.
 
-<!--Take a video tour of our data classification features.
+Participe en un recorrido en vídeo de nuestras características de clasificación de datos.
 
-> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4vx8x]-->
+> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4vx8x]
 
 La clasificación de datos analizará su contenido confidencial y el contenido etiquetado antes de crear ninguna directiva. Esto se denomina **administración de cambios de zero**. Esto le permite ver el impacto que las etiquetas de confidencialidad y retención están teniendo en su entorno para que pueda comenzar con la evaluación de sus necesidades de protección y directivas de gobernanza de datos.
 

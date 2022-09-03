@@ -6,7 +6,7 @@ manager: pamgreen
 ms.reviewer: ssquires
 audience: admin
 ms.topic: article
-ms.prod: microsoft-365-enterprise
+ms.service: microsoft-365-enterprise
 search.appverid: ''
 ms.collection:
 - enabler-strategic
@@ -14,12 +14,12 @@ ms.collection:
 ms.custom: admindeeplinkSPO
 ms.localizationpriority: medium
 description: Use la taxonomía del almacén de términos al crear un extractor en el modelo de comprensión de documentos en Microsoft SharePoint Syntex.
-ms.openlocfilehash: d3f2acf32231558f9f56a62b18c6dd7ffbc4e20f
-ms.sourcegitcommit: e3bc6563037bd2cce2abf108b3d1bcc2ccf538f6
+ms.openlocfilehash: 551acd46d2ccf8336bbdf6b6fda7e7cb448dd66c
+ms.sourcegitcommit: d3ef9391f621e8f4ca70661184b3bb82c6cbda94
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/15/2022
-ms.locfileid: "64861496"
+ms.lasthandoff: 09/02/2022
+ms.locfileid: "67579278"
 ---
 # <a name="leverage-term-store-taxonomy-when-creating-an-extractor-in-microsoft-sharepoint-syntex"></a>Aprovechar la taxonomía del almacén de términos al crear un extractor en Microsoft SharePoint Syntex
 
@@ -37,7 +37,7 @@ Por ejemplo, el modelo identifica y clasifica todos los documentos de **Contrato
 
 ## <a name="use-a-managed-metadata-column-in-your-extractor"></a>Usar una columna de metadatos administrados en el extractor
 
-Los conjuntos de términos se configuran en el almacén de términos de Servicios de metadatos administrados (MMS) en el <a href="https://go.microsoft.com/fwlink/?linkid=2185219" target="_blank">centro de administración de SharePoint</a>. En el ejemplo siguiente, el *conjunto de términos* de [Servicios de contrato](/sharepoint/managed-metadata#term-set) se configura para incluir varios términos, incluido *Creativo*.  En los detalles, se muestra que el término tiene tres sinónimos (*Diseño*, *Gráficos* y *Topografía*) y los sinónimos se deberían traducir como *Creativo*. 
+Los conjuntos de términos se configuran en el almacén de términos de Servicios de metadatos administrados (MMS) en el <a href="https://go.microsoft.com/fwlink/?linkid=2185219" target="_blank">Centro de administración de SharePoint</a>. En el ejemplo siguiente, el *conjunto de términos* de [Servicios de contrato](/sharepoint/managed-metadata#term-set) se configura para incluir varios términos, incluido *Creativo*.  En los detalles, se muestra que el término tiene tres sinónimos (*Diseño*, *Gráficos* y *Topografía*) y los sinónimos se deberían traducir como *Creativo*. 
 
    ![Conjunto de términos.](../media/content-understanding/term-store.png)</br>
 
@@ -54,7 +54,7 @@ Después de aplicar el modelo a la biblioteca de documentos, cuando los document
 > [!NOTE]
 > Si el conjunto de términos está abierto, los valores extraídos que no coincidan con un término preferido o un valor de sinónimo se agregarán como un nuevo término a la raíz del conjunto de términos. Estos nuevos términos se pueden mover, combinar o convertir en sinónimos en el almacén de términos donde reside el conjunto de términos.
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 [Introducción a los metadatos administrados](/sharepoint/managed-metadata#terms)
 
 [Crear un extractor](create-an-extractor.md)

@@ -8,7 +8,7 @@ manager: laurawi
 ms.date: 01/04/2021
 audience: ITPro
 ms.topic: article
-ms.prod: microsoft-365-enterprise
+ms.service: microsoft-365-enterprise
 ms.localizationpriority: medium
 ms.collection:
 - M365-security-compliance
@@ -18,12 +18,12 @@ ms.collection:
 - zerotrust-solution
 ms.custom: ''
 description: Use directivas de auditoría y alertas y solicitudes de interesados para supervisar y responder a incidentes de datos personales.
-ms.openlocfilehash: 2a19154b9b0602eded09e6521dc285c00fd56a10
-ms.sourcegitcommit: 61b22df76e0f81e5ef11c587b129287886151c79
+ms.openlocfilehash: f86020a26842fed07e46cec70357cd3c7ade340b
+ms.sourcegitcommit: d3ef9391f621e8f4ca70661184b3bb82c6cbda94
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/12/2022
-ms.locfileid: "66748294"
+ms.lasthandoff: 09/02/2022
+ms.locfileid: "67581952"
 ---
 # <a name="monitor-and-respond-to-data-privacy-incidents-in-your-organization"></a>Supervisión y respuesta a incidentes de privacidad de datos en su organización
 

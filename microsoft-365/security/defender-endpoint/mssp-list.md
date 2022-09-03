@@ -2,7 +2,7 @@
 title: Proveedores de servicios de seguridad administrados compatibles
 description: Consulte la lista de MSSP que Microsoft Defender para punto de conexión integra con
 keywords: proveedor de servicios de seguridad administrados, mssp, configure, integration
-ms.prod: m365-security
+ms.service: microsoft-365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -13,13 +13,13 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
-ms.technology: mde
-ms.openlocfilehash: bade400bfd794371f294df28320d3a8a11aa30b4
-ms.sourcegitcommit: ab32c6e19af08837aaa84a058653c3a209d366ba
+ms.subservice: mde
+ms.openlocfilehash: 304e493f813bcd3254a981481e0739feaabaa1c7
+ms.sourcegitcommit: d3ef9391f621e8f4ca70661184b3bb82c6cbda94
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/26/2022
-ms.locfileid: "67445054"
+ms.lasthandoff: 09/02/2022
+ms.locfileid: "67578320"
 ---
 # <a name="supported-managed-security-service-providers"></a>Proveedores de servicios de seguridad administrados compatibles
 

@@ -2,7 +2,7 @@
 title: Haga que el cambio de endpoint protection que no es de Microsoft a Microsoft Defender para punto de conexión
 description: Realice el cambio a Microsoft Defender para punto de conexión, que incluye Antivirus de Microsoft Defender para la solución de endpoint protection.
 keywords: migración, Windows Defender, protección avanzada de puntos de conexión, antivirus, antimalware, modo pasivo, modo activo
-ms.prod: m365-security
+ms.service: microsoft-365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -21,13 +21,13 @@ ms.topic: overview
 ms.custom: migrationguides
 ms.date: 11/29/2021
 ms.reviewer: jesquive, chventou, jonix, chriggs, owtho
-ms.technology: mde
-ms.openlocfilehash: 5194200b942870f27f784b11c55cd8dbba2e816f
-ms.sourcegitcommit: 10e6abe740e27000e223378eb17d657a47555fa8
+ms.subservice: mde
+ms.openlocfilehash: d244fb96db686b34a201122f604f9b5aa1c2bd17
+ms.sourcegitcommit: d3ef9391f621e8f4ca70661184b3bb82c6cbda94
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/31/2022
-ms.locfileid: "67470693"
+ms.lasthandoff: 09/02/2022
+ms.locfileid: "67581566"
 ---
 # <a name="make-the-switch-from-non-microsoft-endpoint-protection-to-microsoft-defender-for-endpoint"></a>Haga que el cambio de endpoint protection que no es de Microsoft a Microsoft Defender para punto de conexión
 

@@ -2,7 +2,7 @@
 title: Realizar acciones de respuesta en un dispositivo en Microsoft Defender para punto de conexión
 description: Realice acciones de respuesta en un dispositivo, como aislar dispositivos, recopilar un paquete de investigación, administrar etiquetas, ejecutar av scan y restringir la ejecución de la aplicación.
 keywords: respond, isolate, isolate device, collect investigation package, action center, restrict, manage tags, av scan, restrict app
-ms.prod: m365-security
+ms.service: microsoft-365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -13,13 +13,13 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
-ms.technology: mde
-ms.openlocfilehash: 65799821ab4d6b2ad8076c68c9991074465d1435
-ms.sourcegitcommit: d09eb780dc41a01796eb8137fbe9267231af6746
+ms.subservice: mde
+ms.openlocfilehash: 6534e43b63e1413d4e6ffba5511f07c5fa385644
+ms.sourcegitcommit: d3ef9391f621e8f4ca70661184b3bb82c6cbda94
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/19/2022
-ms.locfileid: "67387229"
+ms.lasthandoff: 09/02/2022
+ms.locfileid: "67576283"
 ---
 # <a name="take-response-actions-on-a-device"></a>Realizar acciones de respuesta en un dispositivo
 

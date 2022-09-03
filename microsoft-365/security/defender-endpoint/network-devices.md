@@ -2,7 +2,7 @@
 title: Detección de dispositivos de red y administración de vulnerabilidades
 description: Las recomendaciones de seguridad y la detección de vulnerabilidades ahora están disponibles para los sistemas operativos de conmutadores, enrutadores, controladores WLAN y firewalls.
 keywords: dispositivos de red, detección de vulnerabilidades de dispositivos de red, sistemas operativos de conmutadores, enrutadores, controladores WLAN y firewalls
-ms.prod: m365-security
+ms.service: microsoft-365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -16,13 +16,13 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.custom: admindeeplinkDEFENDER
 ms.topic: conceptual
-ms.technology: mde
-ms.openlocfilehash: 1ff2bb5e7381f09d1a6bf448c18096f0f9263fe0
-ms.sourcegitcommit: 217108c59be41b01963a393b4f16d137636fe6a8
+ms.subservice: mde
+ms.openlocfilehash: 3806daf2cc4e0a7dbb277943cf3aa1a3abe70fb9
+ms.sourcegitcommit: d3ef9391f621e8f4ca70661184b3bb82c6cbda94
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/12/2022
-ms.locfileid: "67323911"
+ms.lasthandoff: 09/02/2022
+ms.locfileid: "67577219"
 ---
 # <a name="network-device-discovery-and-vulnerability-management"></a>Detección de dispositivos de red y administración de vulnerabilidades
 

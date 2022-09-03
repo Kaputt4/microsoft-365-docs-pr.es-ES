@@ -6,19 +6,19 @@ author: MikePlumleyMSFT
 manager: serdars
 audience: admin
 ms.topic: article
-ms.prod: microsoft-365-enterprise
+ms.service: microsoft-365-enterprise
 search.appverid: ''
 ms.collection:
 - enabler-strategic
 - m365initiative-syntex
 ms.custom: admindeeplinkSPO
 ms.localizationpriority: high
-ms.openlocfilehash: 4a7a84023f3155c2b6f1405a3da5d8c5776d0047
-ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
-ms.translationtype: HT
+ms.openlocfilehash: f3e3e314d0527e48cb2566b45e48f2e7158f0cf4
+ms.sourcegitcommit: d3ef9391f621e8f4ca70661184b3bb82c6cbda94
+ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/08/2022
-ms.locfileid: "63322063"
+ms.lasthandoff: 09/02/2022
+ms.locfileid: "67584625"
 ---
 # <a name="push-content-types-to-a-hub"></a>Insertar tipos de contenido en un centro
 

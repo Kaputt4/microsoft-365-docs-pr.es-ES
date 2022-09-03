@@ -30,12 +30,12 @@ search.appverid:
 - MOE150
 ms.assetid: 6383f56d-3d09-4dcb-9b41-b5f5a5efd611
 description: Use el Asistente para la instalación para agregar el dominio a Microsoft 365 en el Centro de administración de Microsoft 365 agregando un registro DNS en el host DNS.
-ms.openlocfilehash: 13699b4a565c0762baa6f383330ed2e87517ac6d
-ms.sourcegitcommit: 2f6a7410e9919f753a759c1ada441141e18f06fd
+ms.openlocfilehash: ef19ad68e36313dbc221ef84fe4c9a16ef1a18f3
+ms.sourcegitcommit: d3ef9391f621e8f4ca70661184b3bb82c6cbda94
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/30/2022
-ms.locfileid: "67087361"
+ms.lasthandoff: 09/02/2022
+ms.locfileid: "67576811"
 ---
 # <a name="add-a-domain-to-microsoft-365"></a>Agregar un dominio a Microsoft 365
 
@@ -98,7 +98,7 @@ Siga estos pasos para agregar, configurar o continuar configurando un dominio.
     1. Elija **Agregar los registros DNS para mí** si su registrador admite [Domain Connect](#domain-connect-registrars-integrating-with-microsoft-365) y Microsoft [configurará los registros automáticamente](../get-help-with-domains/domain-connect.md) haciendo que inicie sesión en el registrador y confirme la conexión a Microsoft 365.
     2. Elija **Agregaré los registros DNS yo mismo** si quiere adjuntar solo servicios específicos de Microsoft 365 a su dominio o si quiere omitir este paso por ahora y hacerlo más adelante. **Elija esta opción si sabe exactamente lo que hace.**
 
-7. Si quiere *agregar registros DNS usted mismo*, seleccione **Siguiente** y verá una página con todos los registros que tiene que agregar al sitio web de su registrador para configurar su dominio. 
+7. Si decide *agregar registros DNS usted mismo*, seleccione **Siguiente** y verá una página con todos los registros que necesita agregar al sitio web de registradores para configurar el dominio. 
 
     Si el portal no reconoce el registrador, puede [seguir estas instrucciones generales.](../get-help-with-domains/create-dns-records-at-any-dns-hosting-provider.md)
     
@@ -159,7 +159,7 @@ Cada organización de Microsoft 365 puede tener hasta cinco dominios onmicrosoft
 
 > [!NOTE]
 > Debe ser administrador global o administrador de nombres de dominio para agregar un dominio.
-> Al crear un dominio .onmicrosoft adicional y usarlo como predeterminado, no se cambiará el nombre de SharePoint Online. Para realizar cambios en el dominio de SharePoint de .onmicrosoft, debe usar la [Vista previa de cambio de nombre de dominio de SharePoint](/sharepoint/change-your-sharepoint-domain-name) (disponible actualmente para cualquier espacio empresarial con menos de 1 000 sitios).
+> Al crear un dominio .onmicrosoft adicional y usarlo como predeterminado, no se cambiará el nombre de SharePoint Online. Para realizar cambios en el dominio .onmicrosoft de SharePoint, tendría que usar la [versión preliminar del cambio de nombre de dominio de SharePoint](/sharepoint/change-your-sharepoint-domain-name) (actualmente disponible para cualquier inquilino con menos de 10 000 sitios).
 > Si usa servicios de correo de Microsoft 365, no se admite la eliminación del dominio .onmicrosoft inicial.
 
 

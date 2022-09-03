@@ -2,7 +2,7 @@
 title: ¿Por qué debe usar antivirus de Microsoft Defender junto con Microsoft Defender para punto de conexión
 description: Para obtener mejores resultados, use Antivirus de Microsoft Defender junto con otras ofertas de Microsoft.
 keywords: windows defender, antivirus, av de terceros
-ms.prod: m365-security
+ms.service: microsoft-365-security
 ms.mktglfcycl: manage
 ms.sitesec: library
 ms.localizationpriority: medium
@@ -13,14 +13,14 @@ ms.author: deniseb
 ms.custom: nextgen
 ms.reviewer: ''
 manager: dansimp
-ms.technology: mde
+ms.subservice: mde
 ms.collection: m365-security-compliance
-ms.openlocfilehash: 61a70535cc875d75432fb63730cccdb821bfdb99
-ms.sourcegitcommit: 217108c59be41b01963a393b4f16d137636fe6a8
+ms.openlocfilehash: c5f22aa22b81aca5dc4be86e9386b153ad729bcd
+ms.sourcegitcommit: d3ef9391f621e8f4ca70661184b3bb82c6cbda94
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/12/2022
-ms.locfileid: "67330397"
+ms.lasthandoff: 09/02/2022
+ms.locfileid: "67577615"
 ---
 # <a name="better-together-microsoft-defender-antivirus-and-microsoft-defender-for-endpoint"></a>Mejor juntos: Antivirus de Microsoft Defender y Microsoft Defender para punto de conexión
 

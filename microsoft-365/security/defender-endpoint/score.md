@@ -2,7 +2,7 @@
 title: Propiedades y métodos de puntuación
 description: Recupera la puntuación de exposición de la organización, la puntuación de seguridad del dispositivo y la puntuación de exposición por grupo de dispositivos.
 keywords: api, graph api, api admitidas, puntuación, puntuación de exposición, puntuación de seguridad del dispositivo, puntuación de exposición por grupo de dispositivos
-ms.prod: m365-security
+ms.service: microsoft-365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -13,14 +13,14 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
-ms.technology: mde
+ms.subservice: mde
 ms.custom: api
-ms.openlocfilehash: 270ce3b5a2127217c1fb2e7e568b21d5f7b33ecd
-ms.sourcegitcommit: 217108c59be41b01963a393b4f16d137636fe6a8
+ms.openlocfilehash: 076753747d01d24d4ba17a63d54cfc7b3f1d325b
+ms.sourcegitcommit: d3ef9391f621e8f4ca70661184b3bb82c6cbda94
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/12/2022
-ms.locfileid: "67331453"
+ms.lasthandoff: 09/02/2022
+ms.locfileid: "67578628"
 ---
 # <a name="score-resource-type"></a>Puntuación del tipo de recurso
 

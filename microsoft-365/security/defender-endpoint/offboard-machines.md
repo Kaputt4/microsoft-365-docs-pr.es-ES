@@ -2,7 +2,7 @@
 title: Dispositivos fuera del panel del servicio Microsoft Defender para punto de conexión
 description: Incorporación de dispositivos Windows, servidores y dispositivos que no sean de Windows desde el servicio Microsoft Defender para punto de conexión
 keywords: offboarding, Microsoft Defender para punto de conexión offboarding, offboarding
-ms.prod: m365-security
+ms.service: microsoft-365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -13,13 +13,13 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
-ms.technology: mde
-ms.openlocfilehash: 4cdd61ffaf91f6ddf88825f243abba38ffe78cd9
-ms.sourcegitcommit: 217108c59be41b01963a393b4f16d137636fe6a8
+ms.subservice: mde
+ms.openlocfilehash: 2b43d818f1cc871c843ec6f1d29f770d96d06d45
+ms.sourcegitcommit: d3ef9391f621e8f4ca70661184b3bb82c6cbda94
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/12/2022
-ms.locfileid: "67323669"
+ms.lasthandoff: 09/02/2022
+ms.locfileid: "67580649"
 ---
 # <a name="offboard-devices-from-the-microsoft-defender-for-endpoint-service"></a>Dispositivos fuera del panel del servicio Microsoft Defender para punto de conexión
 

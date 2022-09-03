@@ -2,7 +2,7 @@
 title: Supervisión e informe sobre la protección antivirus de Microsoft Defender
 description: Use Configuration Manager o herramientas de administración de eventos e información de seguridad (SIEM) para consumir informes y supervisar antivirus de Microsoft Defender con PowerShell y WMI.
 keywords: siem, monitor, report, Antivirus de Microsoft Defender, Antivirus de Microsoft Defender
-ms.prod: m365-security
+ms.service: microsoft-365-security
 ms.mktglfcycl: manage
 ms.sitesec: library
 ms.pagetype: security
@@ -12,15 +12,15 @@ ms.author: deniseb
 ms.custom: nextgen
 ms.reviewer: ''
 manager: dansimp
-ms.technology: mde
+ms.subservice: mde
 ms.topic: article
 ms.collection: M365-security-compliance
-ms.openlocfilehash: 49f272a613b45746c5c203daf03671f5032c0b59
-ms.sourcegitcommit: d09eb780dc41a01796eb8137fbe9267231af6746
+ms.openlocfilehash: 0ce1b183b1d2e7704c2009f52249af034feccc85
+ms.sourcegitcommit: d3ef9391f621e8f4ca70661184b3bb82c6cbda94
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/19/2022
-ms.locfileid: "67386082"
+ms.lasthandoff: 09/02/2022
+ms.locfileid: "67578772"
 ---
 # <a name="report-on-microsoft-defender-antivirus"></a>Informe en el Antivirus de Windows Defender
 

@@ -1,12 +1,12 @@
 ---
-title: Planear la organización y el gobierno del ciclo de vida Microsoft 365 grupos y Microsoft Teams
+title: Planeamiento de la gobernanza de la organización y del ciclo de vida para grupos de Microsoft 365 y Microsoft Teams
 ms.reviewer: arvaradh
 ms.author: mikeplum
 author: MikePlumleyMSFT
 manager: serdars
 audience: Admin
 ms.topic: article
-ms.prod: microsoft-365-enterprise
+ms.service: microsoft-365-enterprise
 ms.localizationpriority: medium
 ms.collection:
 - M365-collaboration
@@ -15,71 +15,71 @@ ms.custom:
 - M365solutions
 f1.keywords: NOCSH
 recommendations: false
-description: Lea las opciones de gobierno del ciclo de vida para herramientas de colaboración en Microsoft 365
-ms.openlocfilehash: a0f4622afd1a22b8cd6574865012b7f636fc06c5
-ms.sourcegitcommit: c2b5ce3150ae998e18a51bad23277cedad1f06c6
+description: Acerca de las opciones de gobernanza del ciclo de vida para las herramientas de colaboración en Microsoft 365
+ms.openlocfilehash: ef47d7f9000cb6c350f8f90c47881e65d58d3128
+ms.sourcegitcommit: d3ef9391f621e8f4ca70661184b3bb82c6cbda94
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/17/2021
-ms.locfileid: "61063325"
+ms.lasthandoff: 09/02/2022
+ms.locfileid: "67575689"
 ---
-# <a name="plan-organization-and-lifecycle-governance-for-microsoft-365-groups-and-microsoft-teams"></a>Planear la organización y el gobierno del ciclo de vida Microsoft 365 grupos y Microsoft Teams
+# <a name="plan-organization-and-lifecycle-governance-for-microsoft-365-groups-and-microsoft-teams"></a>Planeamiento de la gobernanza de la organización y del ciclo de vida para grupos de Microsoft 365 y Microsoft Teams
 
-Microsoft 365 grupos tienen un amplio conjunto de herramientas para implementar las capacidades de gobierno que necesita su organización. 
+Los grupos de Microsoft 365 tienen un amplio conjunto de herramientas para implementar las funcionalidades de gobernanza que requiere su organización. 
 
-En la siguiente sección se describen las capacidades, se recomiendan los procedimientos recomendados y se proporcionan instrucciones para hacer las preguntas adecuadas para determinar los requisitos de gobierno y cómo cumplirlas.
+En la sección siguiente se describen las funcionalidades, se recomiendan los procedimientos recomendados y se proporcionan instrucciones para formular las preguntas adecuadas para determinar los requisitos de gobernanza y cómo cumplirlas.
 
-## <a name="control-who-can-create-microsoft-365-groups"></a>Controlar quién puede crear Microsoft 365 grupos
+## <a name="control-who-can-create-microsoft-365-groups"></a>Controlar quién puede crear grupos de Microsoft 365
 
-Los usuarios finales pueden crear grupos desde varios puntos finales, incluidos Outlook, SharePoint, Teams y otros entornos.
+Los usuarios finales pueden crear grupos desde varios puntos de conexión, como Outlook, SharePoint, Teams y otros entornos.
 
 ![image desc.](../media/04.png)
 
-Recomendamos encarecidamente el autoservicio para habilitar a los propietarios de grupos y ayudar a los usuarios a realizar su trabajo con más facilidad. Limitar la creación de grupos y equipos puede ralentizar la productividad de los usuarios, ya que muchos Microsoft 365 requieren que se cree un grupo para que el servicio funcione.
+Se recomienda encarecidamente el autoservicio para capacitar a los propietarios del grupo y ayudar a los usuarios a realizar su trabajo más fácilmente. Limitar la creación de grupos y equipos puede ralentizar la productividad de los usuarios porque muchos servicios de Microsoft 365 requieren que se creen grupos para que el servicio funcione.
 
-Tenga en cuenta las siguientes opciones de gobierno para la creación de grupos:
+Tenga en cuenta las siguientes opciones de gobernanza para la creación de grupos:
 
-- Para limitar la expansión de grupos, use directivas de expiración [de grupos](microsoft-365-groups-expiration-policy.md) para eliminar automáticamente los grupos que no se están utilizando.
-- Limitar la creación de grupos a miembros de grupos de [seguridad](/azure/active-directory/users-groups-roles/groups-create-rule) con pertenencia dinámica que contenga, por ejemplo, todos los empleados a tiempo completo.
-- Limite la creación de grupos a un grupo de seguridad y exija a los usuarios que completen el aprendizaje en las directivas de uso de grupo de su organización para convertirse en miembros del grupo de seguridad.
+- Para limitar la expansión de grupos, use [directivas de expiración de grupos](microsoft-365-groups-expiration-policy.md) para eliminar automáticamente los grupos que no se usan.
+- Limite la creación de grupos a los miembros de un [grupo de seguridad con pertenencia dinámica](/azure/active-directory/users-groups-roles/groups-create-rule) que contenga, por ejemplo, todos los empleados a tiempo completo.
+- Limite la creación de grupos a un grupo de seguridad y exija a los usuarios que completen el entrenamiento en las directivas de uso de grupos de su organización para convertirse en miembros del grupo de seguridad.
 
-Si desea limitar quién puede crear grupos, consulte [Manage who can create Microsoft 365 groups](manage-creation-of-groups.md) para obtener información sobre cómo configurar esto.
+Si desea limitar quién puede crear grupos, consulte [Administrar quién puede crear grupos de Microsoft 365](manage-creation-of-groups.md) para obtener información sobre cómo configurarlo.
 
 ## <a name="group-delete-restore-and-archiving"></a>Eliminación, restauración y archivado de grupos
 
-Cuando un Microsoft 365 se elimina, de forma predeterminada se conserva durante 30 días. Este período de 30 días se denomina "eliminación temporal", ya que todavía estará a tiempo de restaurar el grupo. Después de los 30 días, el grupo y el contenido asociado se eliminarán permanentemente y no se podrán restaurar.
+Cuando se elimina un grupo de Microsoft 365, de forma predeterminada se conserva durante 30 días. Este período de 30 días se denomina "eliminación temporal", ya que todavía estará a tiempo de restaurar el grupo. Después de los 30 días, el grupo y el contenido asociado se eliminarán permanentemente y no se podrán restaurar.
 
-Si tiene directivas de retención para conservar el chat, los archivos o el correo, esos elementos se conservarán después de eliminar el grupo. Vea [Más información sobre las directivas de retención](../compliance/retention.md) para obtener más información.
+Si tiene directivas de retención para conservar el chat, los archivos o el correo, esos elementos se conservarán después de eliminar el grupo. Consulte [Más información sobre las directivas de retención](../compliance/retention.md) para obtener más información.
 
-Si desea eliminar un grupo pero conservar el contenido de uno o varios de los servicios conectados a grupos, consulte Grupos de [archivos,](end-life-cycle-groups-teams-sites-yammer.md) equipos y Yammer para obtener información.
+Si desea eliminar un grupo, pero conservar el contenido de uno o varios de los servicios conectados al grupo, consulte [Grupos de archivos, equipos y Yammer](end-life-cycle-groups-teams-sites-yammer.md) para obtener información.
 
-## <a name="group-naming-policy"></a>Directiva de nomenclatura de grupo
+## <a name="group-naming-policy"></a>Directiva de nomenclatura de grupos
 
-Una directiva de nomenclatura de grupos puede ayudarle a gobernar grupos de dos maneras:
+Una directiva de nomenclatura de grupos puede ayudarle a controlar los grupos de dos maneras:
 
-- Se puede usar una directiva de nomenclatura de prefijo o sufijo para aplicar cadenas fijas o Azure AD atributos al principio o al final de un nombre de grupo y su dirección de correo electrónico asociada. Al hacerlo, puede garantizar la inclusión de, por ejemplo, nombres de departamento o regiones en nombres de grupo.
-- Una directiva de palabras bloqueadas puede garantizar que determinadas palabras, como los nombres de los ejecutivos, no se usan en los nombres de grupo.
+- Se puede usar una directiva de nomenclatura de prefijos o sufijos para aplicar cadenas fijas o atributos de Azure AD al principio o al final de un nombre de grupo y su dirección de correo electrónico asociada. Al hacerlo, puede garantizar la inclusión de, por ejemplo, nombres de departamento o regiones en los nombres de grupo.
+- Una directiva de palabras bloqueadas puede garantizar que ciertas palabras, como los nombres de los ejecutivos, no se usen en los nombres de grupo.
 
-Las directivas de nomenclatura se aplican cuando se crean grupos desde cualquiera de los servicios conectados a grupos.
+Las directivas de nomenclatura se aplican cuando se crean grupos a partir de cualquiera de los servicios conectados a grupos.
 
-Si decide usar directivas de nomenclatura para grupos, vea Microsoft 365 de nomenclatura [de grupos](groups-naming-policy.md).
+Si decide usar directivas de nomenclatura para grupos, consulte [Grupos de Microsoft 365 directiva de nomenclatura](groups-naming-policy.md).
 
 ## <a name="group-expiration-policy"></a>Directiva de expiración de grupo
 
-Puede especificar un período de expiración y se eliminará cualquier grupo que llegue al final de ese período y no se renueve. El período de expiración comienza cuando se crea el grupo o en la fecha en que se renovó por última vez.
+Puede especificar un período de expiración y cualquier grupo que llegue al final de ese período, y no se renueve, se eliminará. El período de expiración comenzará cuando se cree el grupo o en la fecha en que se renovó por última vez.
 
 Una vez establecidos los grupos para que expiren:
-- Se notificará a los propietarios del grupo para que renueve el grupo a medida que se acerca la expiración.
+- Se notifica a los propietarios del grupo que renueve el grupo a medida que se acerca la expiración.
 - Los grupos activos se renuevan automáticamente.
 - Se elimina cualquier grupo que no se renueve.
 - Los propietarios del grupo o el administrador pueden restaurar cualquier grupo que se elimine en un plazo de 30 días.
 
-Las directivas de expiración son una buena forma de limitar la expansión de grupos al garantizar que se eliminen los grupos que ya no están en uso. Si desea crear una directiva de expiración de grupo, [vea Microsoft 365 de expiración de grupos](microsoft-365-groups-expiration-policy.md).
+Las directivas de expiración son una buena manera de limitar la expansión de grupos asegurándose de que se eliminen los grupos que ya no están en uso. Si desea crear una directiva de expiración de grupo, consulte [Grupos de Microsoft 365 directiva de expiración](microsoft-365-groups-expiration-policy.md).
 
 ## <a name="related-topics"></a>Temas relacionados
 
-[Recomendaciones de planeación de gobierno de colaboración](collaboration-governance-overview.md#collaboration-governance-planning-recommendations)
+[Recomendaciones de planeamiento de gobernanza de colaboración](collaboration-governance-overview.md#collaboration-governance-planning-recommendations)
 
-[Crear el plan de gobierno de colaboración](collaboration-governance-first.md)
+[Creación del plan de gobernanza de colaboración](collaboration-governance-first.md)
 
 [Quitar un antiguo empleado y proteger los datos](/microsoft-365/admin/add-users/remove-former-employee)

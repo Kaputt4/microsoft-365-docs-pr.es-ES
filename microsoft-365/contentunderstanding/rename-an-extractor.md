@@ -6,19 +6,19 @@ manager: pamgreen
 audience: admin
 ms.reviewer: ssquires
 ms.topic: article
-ms.prod: microsoft-365-enterprise
+ms.service: microsoft-365-enterprise
 search.appverid: ''
 ms.collection:
 - enabler-strategic
 - m365initiative-syntex
 ms.localizationpriority: medium
 description: Obtenga información sobre cómo y por qué cambiar el nombre de un extractor en Microsoft SharePoint Syntex.
-ms.openlocfilehash: feba0d8850a534e7f5e5d985bf3424f931e0ceb0
-ms.sourcegitcommit: dc415d784226c77549ba246601f34324c4f94e73
+ms.openlocfilehash: 81c325e937378b5c00bac354f14e43d9ab676724
+ms.sourcegitcommit: d3ef9391f621e8f4ca70661184b3bb82c6cbda94
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/19/2022
-ms.locfileid: "64916169"
+ms.lasthandoff: 09/02/2022
+ms.locfileid: "67576833"
 ---
 # <a name="rename-an-extractor-in-microsoft-sharepoint-syntex"></a>Cambiar el nombre de un extractor en Microsoft SharePoint Syntex
 
@@ -51,7 +51,7 @@ Siga estos pasos para cambiar el nombre de un extractor de entidades.
 
 5. Seleccione **Cambiar nombre**.
 
-## <a name="see-also"></a>Ver también
+## <a name="see-also"></a>Vea también
 [Crear un extractor](create-an-extractor.md)
 
 [Crear un clasificador](create-a-classifier.md)

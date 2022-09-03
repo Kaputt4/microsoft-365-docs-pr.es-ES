@@ -2,7 +2,7 @@
 title: Solución de problemas de incorporación relacionados con la administración de seguridad para Microsoft Defender para punto de conexión
 description: Solucione los problemas que puedan surgir durante la incorporación de dispositivos mediante Security Management para Microsoft Defender para punto de conexión.
 keywords: solución de problemas de incorporación, incorporación, visor de eventos, recopilación de datos y compilaciones de versión preliminar, datos y diagnósticos del sensor
-ms.prod: m365-security
+ms.service: microsoft-365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -13,13 +13,13 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: troubleshooting
-ms.technology: mde
-ms.openlocfilehash: 0ceb24b5da0947dbb2b79ca7560ffbb46b701b38
-ms.sourcegitcommit: 2aa5c026cc06ed39a9c1c2bcabd1f563bf5a1859
+ms.subservice: mde
+ms.openlocfilehash: b02c3bc005e067b4752283d49dbe7f1ca2d06c89
+ms.sourcegitcommit: d3ef9391f621e8f4ca70661184b3bb82c6cbda94
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/09/2022
-ms.locfileid: "66696280"
+ms.lasthandoff: 09/02/2022
+ms.locfileid: "67582150"
 ---
 # <a name="troubleshoot-onboarding-issues-related-to-security-management-for-microsoft-defender-for-endpoint"></a>Solución de problemas de incorporación relacionados con la administración de seguridad para Microsoft Defender para punto de conexión
 

@@ -2,7 +2,7 @@
 title: Revisión de alertas en Microsoft Defender para punto de conexión
 description: Revise la información de alertas, incluido un artículo de alerta visualizado y los detalles de cada paso de la cadena.
 keywords: incidente, incidentes, máquinas, dispositivos, usuarios, alertas, alertas, investigaciones, gráficos, pruebas
-ms.prod: m365-security
+ms.service: microsoft-365-security
 ms.pagetype: security
 f1.keywords:
 - NOCSH
@@ -16,13 +16,13 @@ ms.collection:
 - m365-initiative-defender-endpoint
 ms.topic: conceptual
 ms.date: 5/1/2020
-ms.technology: mde
-ms.openlocfilehash: 76503c180dfdd2314254efc9315235c0802ab7f8
-ms.sourcegitcommit: bfbe2574f487ced69e711b48ce140120bd99181b
+ms.subservice: mde
+ms.openlocfilehash: 079dfd696e630246a332cdf1457ed4134c101e89
+ms.sourcegitcommit: d3ef9391f621e8f4ca70661184b3bb82c6cbda94
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/02/2022
-ms.locfileid: "66607551"
+ms.lasthandoff: 09/02/2022
+ms.locfileid: "67575777"
 ---
 # <a name="review-alerts-in-microsoft-defender-for-endpoint"></a>Revisión de alertas en Microsoft Defender para punto de conexión
 

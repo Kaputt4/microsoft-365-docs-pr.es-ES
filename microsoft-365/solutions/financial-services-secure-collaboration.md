@@ -7,17 +7,17 @@ audience: ITPro
 ms.topic: article
 ms.collection:
 - M365-security-compliance
-ms.prod: microsoft-365-enterprise
+ms.service: microsoft-365-enterprise
 ms.custom: seo-marvel-jun2020
 ms.localizationpriority: high
 description: Conozca la forma en que las instituciones de servicios financieros pueden mantener el cumplimiento de la seguridad financiera y colaborar de forma eficaz al usar Microsoft 365 y Teams.
 f1.keywords: NOCSH
-ms.openlocfilehash: d64d5e021d7d196132198dd9ddf5ae7a9d707037
-ms.sourcegitcommit: 402e0b2095b6cb141b8525a53194d47357bcd612
-ms.translationtype: HT
+ms.openlocfilehash: f78013491e25bf715bbcd08cc2221bb0bbca48fd
+ms.sourcegitcommit: d3ef9391f621e8f4ca70661184b3bb82c6cbda94
+ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/09/2022
-ms.locfileid: "67285294"
+ms.lasthandoff: 09/02/2022
+ms.locfileid: "67577373"
 ---
 # <a name="key-compliance-and-security-considerations-for-us-banking-and-capital-markets"></a>Consideraciones clave de cumplimiento y seguridad para los mercados de capital y los bancos de Estados Unidos
 
@@ -321,7 +321,7 @@ Un peligro común para las empresas es la exfiltración de datos o el acto de ex
 
 Permitir que los empleados utilicen herramientas de colaboración en línea a las que se puede tener acceso desde cualquier lugar, supone un riesgo inherente para la organización. Los empleados pueden filtrar datos, de forma involuntaria o malintencionada, a atacantes o competidores.  O bien, pueden exfiltrar datos para uso personal o llevarlos con ellos a un futuro empleador. Estos escenarios presentan serios riesgos para las instituciones de servicios financieros tanto desde el punto de vista de seguridad como del cumplimiento. Identificar estos riesgos cuando se producen y mitigarlos rápidamente requiere herramientas inteligentes para la recopilación de datos y colaboración entre departamentos como los departamentos legal, de seguridad de la información y de Recursos Humanos.
 
-La [Administración de riesgos internos de Microsoft Purview](/microsoft-365/compliance/insider-risk-management) es una solución de cumplimiento que ayuda a minimizar los riesgos internos, ya que le permite detectar, investigar y actuar en actividades malintencionadas e involuntarias en su organización. Las directivas de riesgos internos le permiten definir los tipos de riesgos para identificar y detectar en su organización, incluida la acción sobre casos y la elevación de casos a Microsoft eDiscovery (Premium) si es necesario. Los analistas de riesgo de su organización pueden tomar rápidamente las medidas adecuadas para asegurarse de que los usuarios cumplen los estándares de cumplimiento de su organización.  
+La [Administración de riesgos internos de Microsoft Purview](/microsoft-365/compliance/insider-risk-management) es una solución de cumplimiento que ayuda a minimizar los riesgos internos, ya que le permite detectar, investigar y actuar en actividades malintencionadas e involuntarias en su organización. Las directivas de riesgos internos le permiten definir los tipos de riesgos a identificar y detectar en su organización, incluida la acción sobre casos y la elevación de casos a Microsoft eDiscovery (Premium) si es necesario. Los analistas de riesgo de su organización pueden tomar rápidamente las medidas adecuadas para asegurarse de que los usuarios cumplen los estándares de cumplimiento de su organización.  
 
 Por ejemplo, la administración de riesgos internos puede correlacionar las señales de los dispositivos de un usuario (como la copia de archivos a una unidad USB o el envío de un correo electrónico a una cuenta de correo electrónico personal) con actividades de servicios en línea (como el correo electrónico de Office 365, SharePoint Online, Microsoft Teams o OneDrive para la Empresa) para identificar los patrones de filtración de datos. También puede correlacionar estas actividades con los empleados que abandonan una organización, que es un patrón común de exfiltración de datos. Puede detectar varias actividades y comportamientos potencialmente peligrosos a lo largo del tiempo. Cuando surgen patrones comunes, se pueden generar alertas y ayudar a los investigadores a centrarse en las actividades clave para comprobar la violación de la directiva con un alto grado de confianza. La administración de riesgos internos puede anonimizar los datos de los investigadores para ayudar a cumplir con las normas de privacidad de datos, a la vez que se siguen realizando actividades clave que les ayudan a realizar investigaciones de forma eficaz. Permite que los investigadores empaqueten y envíen con seguridad datos de actividad clave a los departamentos de RR. HH. y jurídicos, siguiendo los flujos de trabajo de escalamiento comunes para establecer casos para acciones correctivas.
 

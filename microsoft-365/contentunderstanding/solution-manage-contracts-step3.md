@@ -1,5 +1,5 @@
 ---
-title: Paso 3. Usar Power Automate para crear el flujo para procesar los contratos
+title: Paso 3. Uso de Power Automate para crear el flujo para procesar los contratos
 ms.author: chucked
 author: chuckedmonson
 manager: pamgreen
@@ -7,51 +7,51 @@ ms.reviewer: ssquires
 audience: admin
 ms.topic: article
 ms.date: ''
-ms.prod: microsoft-365-enterprise
+ms.service: microsoft-365-enterprise
 search.appverid: ''
 ms.localizationpriority: medium
 ROBOTS: ''
-description: Obtenga información sobre cómo usar Power Automate para crear el flujo para procesar los contratos mediante una Microsoft 365 solución.
-ms.openlocfilehash: d83fb6e5ca911cbafc6f064c615ab15ae0f570c7
-ms.sourcegitcommit: f3c912780bbcf5a5b47de192202adb3afbd5952b
+description: Obtenga información sobre cómo usar Power Automate para crear el flujo para procesar los contratos mediante una solución de Microsoft 365.
+ms.openlocfilehash: 0a449fbac6fe7a0dd9c66e49a0ba6dd57b649b15
+ms.sourcegitcommit: d3ef9391f621e8f4ca70661184b3bb82c6cbda94
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/26/2022
-ms.locfileid: "62219010"
+ms.lasthandoff: 09/02/2022
+ms.locfileid: "67578860"
 ---
-# <a name="step-3-use-power-automate-to-create-the-flow-to-process-your-contracts"></a>Paso 3. Usar Power Automate para crear el flujo para procesar los contratos
+# <a name="step-3-use-power-automate-to-create-the-flow-to-process-your-contracts"></a>Paso 3. Uso de Power Automate para crear el flujo para procesar los contratos
 
-Ha creado el canal de administración de contratos y ha adjuntado su SharePoint de documentos. El siguiente paso es crear un flujo de Power Automate para procesar los contratos que el SharePoint Syntex identifica y clasifica. Puede realizar este paso creando [un flujo de Power Automate en la SharePoint de documentos](https://support.microsoft.com/office/create-a-flow-for-a-list-or-library-in-sharepoint-or-onedrive-a9c3e03b-0654-46af-a254-20252e580d01).
+Ha creado el canal de administración de contratos y ha adjuntado la biblioteca de documentos de SharePoint. El siguiente paso es crear un flujo de Power Automate para procesar los contratos que el modelo de SharePoint Syntex identifica y clasifica. Para realizar este paso, [cree un flujo de Power Automate en la biblioteca de documentos de SharePoint](https://support.microsoft.com/office/create-a-flow-for-a-list-or-library-in-sharepoint-or-onedrive-a9c3e03b-0654-46af-a254-20252e580d01).
 
-Para la solución de administración de contratos, desea crear un flujo Power Automate para realizar las siguientes acciones:
+Para la solución de administración de contratos, quiere crear un flujo de Power Automate para realizar las siguientes acciones:
 
--  Después de clasificar un contrato por su SharePoint Syntex, cambie el estado del contrato a **En revisión**.
+-  Una vez que el modelo de SharePoint Syntex haya clasificado un contrato, cambie el estado del contrato a **En revisión**.
 - A continuación, se revisa el contrato y se aprueba o se rechaza.
-- Para los contratos aprobados, la información del contrato se publica en una pestaña para el procesamiento de pagos.
+- En el caso de los contratos aprobados, la información del contrato se contabiliza en una pestaña para el procesamiento de pagos.
 - En el caso de los contratos rechazados, se notifica al equipo para su análisis posterior. 
 
-En el siguiente diagrama se muestra el Power Automate de la solución de administración de contratos.
+En el diagrama siguiente se muestra el flujo de Power Automate para la solución de administración de contratos.
 
-![Flow diagrama que muestra toda la solución.](../media/content-understanding/flow-entire-process.png)
+![Diagrama de flujo que muestra toda la solución.](../media/content-understanding/flow-entire-process.png)
 
-## <a name="prepare-your-contract-for-review"></a>Preparar el contrato para revisión
+## <a name="prepare-your-contract-for-review"></a>Preparar el contrato para su revisión
 
-Cuando el modelo de comprensión de documentos de SharePoint Syntex identifica y clasifica un contrato, el flujo de Power Automate primero cambiará el estado a **En revisión**.
+Cuando el modelo de comprensión de documentos de SharePoint Syntex identifique y clasifique un contrato, el flujo de Power Automate cambiará primero el estado a **En revisión**.
 
 ![Estado de actualización.](../media/content-understanding/flow-overview.png)
 
-Después de desaltear el archivo, cambie el valor de estado a **En revisión**.
+Después de extraer el archivo, cambie el valor de estado a **En revisión**.
 
 ![En estado de revisión.](../media/content-understanding/in-review.png)
 
-El siguiente paso es crear una tarjeta adaptable que indique que el contrato está esperando su revisión y publicarla en el canal de administración de contratos.
+El siguiente paso es crear una tarjeta adaptable que indique que el contrato está esperando su revisión y su publicación en el canal de administración de contratos.
 
-![Publicación de revisión de contratos.](../media/content-understanding/contract-approval-post.png)
+![Publicación de revisión del contrato.](../media/content-understanding/contract-approval-post.png)
 
 
 ![Cree una tarjeta adaptable para su revisión.](../media/content-understanding/adaptive-card.png)
 
-El siguiente código es el JSON usado para este paso en el flujo Power Automate datos.
+El código siguiente es el JSON que se usa para este paso en el flujo de Power Automate.
 
 ```JSON
 {
@@ -129,42 +129,42 @@ El siguiente código es el JSON usado para este paso en el flujo Power Automate 
 
 ## <a name="conditional-context"></a>Contexto condicional
 
-En el flujo, a continuación, debe crear una [](#if-the-contract-is-approved) condición en la que se aprobará o [rechazará el contrato.](#if-the-contract-is-rejected)
+En el flujo, a continuación, debe crear una condición en la que el contrato se  [aprobará](#if-the-contract-is-approved) o [rechazará](#if-the-contract-is-rejected).
 
 ![Condicional.](../media/content-understanding/condition.png)
 
 ## <a name="if-the-contract-is-approved"></a>Si se aprueba el contrato
 
-Cuando se ha aprobado un contrato, se producen los siguientes aspectos:
+Cuando se ha aprobado un contrato, se producen las siguientes cosas:
 
-- En la **pestaña Contratos,** el estado de la tarjeta de contrato cambiará a **Aprobado**.
+- En la pestaña **Contratos** , el estado de la tarjeta de contrato cambiará a **Aprobado**.
 
    ![Estado de la tarjeta aprobado.](../media/content-understanding/approved-contracts-tab.png)
 
 - En el flujo, el estado cambia a **Aprobado**.
 
-   ![Flow estado aprobado.](../media/content-understanding/status-approved.png)
+   ![Estado de flujo aprobado.](../media/content-understanding/status-approved.png)
 
-- En esta solución, los datos del contrato se agregarán a la pestaña **Para** pago para que se puedan administrar los pagos. Este proceso se puede extender para permitir que el flujo envíe los contratos para su pago mediante una aplicación financiera de terceros (por ejemplo, Dynamics CRM).
+- En esta solución, los datos del contrato se agregarán a la pestaña **Para pago para** que se puedan administrar los pagos. Este proceso se puede ampliar para permitir que el flujo envíe los contratos de pago por parte de una aplicación financiera de terceros (por ejemplo, Dynamics CRM).
 
-   ![El contrato se movió a Pay Out.](../media/content-understanding/for-payout.png)
+   ![El contrato se trasladó a Pago.](../media/content-understanding/for-payout.png)
 
-- En el flujo, se crea el siguiente elemento para mover los contratos aprobados a la **pestaña Para pago.**
+- En el flujo, se crea el siguiente elemento para mover los contratos aprobados a la pestaña **Para pago** .
 
-   ![Flow elemento que se moverá a Pay Out.](../media/content-understanding/ready-for-payout.png)
+   ![Elemento de flujo que se va a mover a Pago.](../media/content-understanding/ready-for-payout.png)
 
-    Para obtener las expresiones de la información necesaria desde la Teams, use los valores que se muestran en la tabla siguiente.
+    Para obtener las expresiones de la información necesaria de la tarjeta de Teams, use los valores que se muestran en la tabla siguiente.
  
     |Nombre     |Expression |
     |---------|-----------|
     | Estado de aprobación  | body('Post_an_Adaptive_Card_to_a_Teams_channel_and_wait_for_a_response')? ['submitActionId']         |
-    | Aprobado por     | body('Post_an_Adaptive_Card_to_a_Teams_channel_and_wait_for_a_response')? ['responder'] ['displayName']        |
+    | Aprobado por     | body('Post_an_Adaptive_Card_to_a_Teams_channel_and_wait_for_a_response')? ['respondedor'] ['displayName']        |
     | Fecha de aprobación     | body('Post_an_Adaptive_Card_to_a_Teams_channel_and_wait_for_a_response')? ['responseTime']         |
-    | Comentario     | body('Post_an_Adaptive_Card_to_a_Teams_channel_and_wait_for_a_response')? ['data']? ['acComments']         |
+    | Comentario     | body('Post_an_Adaptive_Card_to_a_Teams_channel_and_wait_for_a_response')? ¿['data']? ['acComments']         |
     
     En el ejemplo siguiente se muestra cómo usar el cuadro de fórmula de Power Automate para escribir una expresión.
 
-   ![Captura de pantalla Power Automate muestra una fórmula de expresión.](../media/content-understanding/expression-formula-power-automate.png)    
+   ![Captura de pantalla de Power Automate que muestra una fórmula de expresión.](../media/content-understanding/expression-formula-power-automate.png)    
 
 - Se crea una tarjeta adaptable que indica que el contrato se ha aprobado y se publica en el canal de administración de contratos.
 
@@ -173,7 +173,7 @@ Cuando se ha aprobado un contrato, se producen los siguientes aspectos:
    ![Aprobación de tarjeta adaptable.](../media/content-understanding/adaptive-card.png)
 
 
-   El siguiente código es el JSON usado para este paso en el flujo Power Automate datos.
+   El código siguiente es el JSON que se usa para este paso en el flujo de Power Automate.
 
 ```JSON
 { 
@@ -255,21 +255,21 @@ Cuando se ha aprobado un contrato, se producen los siguientes aspectos:
 
 ## <a name="if-the-contract-is-rejected"></a>Si se rechaza el contrato
 
-Cuando se rechaza un contrato, se producen lo siguiente:
+Cuando se ha rechazado un contrato, se producen las siguientes cosas:
 
-- En la **pestaña Contratos,** el estado de la tarjeta de contrato cambiará a **Rechazado**.
+- En la pestaña **Contratos** , el estado de la tarjeta de contrato cambiará a **Rechazado**.
 
-   ![Se ha rechazado el estado de la tarjeta.](../media/content-understanding/rejected-contracts-tab.png)
+   ![Estado de la tarjeta rechazado.](../media/content-understanding/rejected-contracts-tab.png)
 
-- En el flujo, se desvía el archivo de contrato, se cambia el estado a **Rechazado** y, a continuación, se vuelve a comprobar el archivo.
+- En el flujo, descarte el archivo de contrato, cambie el estado a **Rechazado** y vuelva a comprobar el archivo.
 
-   ![Flow estado rechazado en el archivo de contrato.](../media/content-understanding/reject-flow.png)
+   ![Estado de flujo rechazado en el archivo de contrato.](../media/content-understanding/reject-flow.png)
 
 - En el flujo, se crea una tarjeta adaptable que indica que se ha rechazado el contrato.
 
-   ![Flow se muestra el estado rechazado en la tarjeta adaptable.](../media/content-understanding/reject-flow-item.png)
+   ![El estado del flujo se muestra rechazado en la tarjeta adaptable.](../media/content-understanding/reject-flow-item.png)
 
-El siguiente código es el JSON usado para este paso en el flujo Power Automate datos.
+El código siguiente es el JSON que se usa para este paso en el flujo de Power Automate.
 
 ```JSON
 { 
@@ -349,6 +349,6 @@ El siguiente código es el JSON usado para este paso en el flujo Power Automate 
 }
 ```
 
-- La tarjeta se publica en el canal de administración de contratos.
+- La tarjeta se contabiliza en el canal de administración de contratos.
 
-   ![Flow tarjeta adaptable para rechazar.](../media/content-understanding/rejected.png)
+   ![Tarjeta adaptable de flujo que se va a rechazar.](../media/content-understanding/rejected.png)

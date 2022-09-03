@@ -9,23 +9,23 @@ ms.topic: landing-page
 ms.custom:
 - intro-overview
 - intro-get-started
-ms.prod: microsoft-365-enterprise
+ms.service: microsoft-365-enterprise
 search.appverid: ''
 ms.collection:
 - enabler-strategic
 - m365initiative-syntex
 ms.localizationpriority: medium
 description: Obtenga información sobre cómo encontrar recursos de Microsoft SharePoint Syntex.
-ms.openlocfilehash: 1b57283b5818a7fa502e112d903f873863a6e1b6
-ms.sourcegitcommit: b3530441288b2bc44342e00e9025a49721796903
+ms.openlocfilehash: 55714bdf4f362978ee77e152dea7a4dfccbd9f00
+ms.sourcegitcommit: d3ef9391f621e8f4ca70661184b3bb82c6cbda94
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/20/2022
-ms.locfileid: "63682072"
+ms.lasthandoff: 09/02/2022
+ms.locfileid: "67583723"
 ---
 # <a name="introduction-to-microsoft-sharepoint-syntex"></a>Introducción a Microsoft SharePoint Syntex
 
-SharePoint Syntex es un servicio Microsoft 365 que ayuda a las organizaciones a:
+SharePoint Syntex es un servicio de Microsoft 365 que ayuda a las organizaciones a:
 
 - Emplear inteligencia artificial avanzada y aprendizaje automático para ampliar las experiencias humanas
 - Automatizar el procesamiento de contenido
@@ -39,9 +39,9 @@ Los recursos de esta página están diseñados para ayudarle a empezar a aprende
 
 </br>
 
-## <a name="get-started"></a>Comenzar
+## <a name="get-started"></a>Introducción
 
-Los recursos de esta sección le ayudan a obtener más información sobre los métodos de clasificación y extracción de datos usados por SharePoint Syntex. Hay dos tipos de modelo personalizados([descripción de](document-understanding-overview.md) documentos y [procesamiento de](form-processing-overview.md) formularios) y un [tipo de modelo precompilado](prebuilt-overview.md) .
+Los recursos de esta sección le ayudan a obtener más información sobre los métodos de clasificación y extracción de datos utilizados por SharePoint Syntex. Hay dos tipos de modelo personalizados( [comprensión de documentos](document-understanding-overview.md) y [procesamiento de formularios](form-processing-overview.md)) y un tipo de modelo [precompilado](prebuilt-overview.md) .
 
 > [!NOTE]
 > Puede empezar a trabajar con SharePoint Syntex sin comprar licencias [crear un centro de contenido desde el Centro de administración de SharePoint](create-a-content-center.md). Los usuarios sin licencia pueden crear modelos de comprensión de documentos, pero no pueden aplicarlos a una biblioteca de documentos.
@@ -54,7 +54,7 @@ Los recursos de esta sección le ayudan a obtener más información sobre los m�
 |Consultar recursos en el Centro de recursos de Microsoft Tech Community|[SharePoint Syntex - Servicios de contenido en Microsoft 365](https://techcommunity.microsoft.com/t5/sharepoint-syntex/bg-p/SharePointSyntex)|
 |Preguntas más frecuentes de SharePoint Syntex en el Centro de recursos de Microsoft Tech Community |[SharePoint Syntex - Preguntas más frecuentes](https://resources.techcommunity.microsoft.com/sharepoint-syntex/faq/)|
 |Cómo obtener SharePoint Syntex |[Página de producto de SharePoint Syntex](https://www.microsoft.com/microsoft-365/enterprise/sharepoint-syntex)|
-|Aprenda a usar SharePoint Syntex |[SharePoint Syntex de aprendizaje](/learn/paths/syntex-get-started)|
+|Aprenda a usar SharePoint Syntex |[SharePoint Syntex ruta de aprendizaje](/learn/paths/syntex-get-started)|
 
 ## <a name="adoption"></a>Adopción
 
@@ -66,8 +66,8 @@ Obtenga más información sobre cómo usar e implementar SharePoint Syntex en su
 |Vea escenarios de ejemplo para tener ideas sobre cómo puede usar SharePoint Syntex en su organización |[Escenarios y casos de uso de SharePoint Syntex](./adoption-scenarios.md) | 
 |Creación y ejecución de un programa piloto de prueba para SharePoint Syntex |[Ejecutar una prueba ](./trial-syntex.md)|
 |Obtener información sobre cómo usar SharePoint Syntex para automatizar procesos de documentos |[Administrar contratos con una solución de Microsoft 365](./solution-manage-contracts-in-microsoft-365.md)| 
-|Pruebe una plantilla de sitio SharePoint personalizable para ayudar a administrar contratos |[Usar la plantilla de sitio Administración de contratos](./use-contracts-management-site.md)| 
-|Pruebe una plantilla de sitio del Centro de contenido instructivo para obtener más información sobre los modelos |[Usar la plantilla de sitio del Centro de contenido](./use-content-center-site.md)| 
+|Pruebe una plantilla de sitio de SharePoint personalizable para ayudar a administrar contratos |[Uso de la plantilla de sitio Administración de contratos](./use-contracts-management-site.md)| 
+|Pruebe una plantilla de sitio del Centro de contenido instructivo para obtener más información sobre los modelos. |[Uso de la plantilla de sitio del Centro de contenido](./use-content-center-site.md)| 
 
 ## <a name="set-up-sharepoint-syntex"></a>Configurar SharePoint Syntex
 
@@ -78,7 +78,7 @@ Los recursos de esta sección ayudan al administrador de su organización a inst
 |Instalar y configurar SharePoint Syntex|[Configurar SharePoint Syntex](./set-up-content-understanding.md)|
 |Más información sobre las licencias para SharePoint Syntex|[Licencias para SharePoint Syntex](./syntex-licensing.md)|
 |Obtenga información sobre el etiquetado de imágenes y cómo deshabilitar|[Etiquetado de imágenes en SharePoint Syntex](./image-tagging.md)|
-|Use PowerShell para administrar SharePoint Syntex|[Administración de SharePoint Syntex con PowerShell](./powershell-syntex-intro.md)|
+|Uso de PowerShell para administrar SharePoint Syntex|[Administración de SharePoint Syntex con PowerShell](./powershell-syntex-intro.md)|
 
 ## <a name="models"></a>Modelos
 
@@ -89,9 +89,9 @@ Los recursos de esta sección ayudan a los usuarios a aprender a crear y configu
 |Obtenga información sobre cómo trabajar con modelos|[Crear un centro de contenido](./create-a-content-center.md)<br><br>[Crear un clasificador](./create-a-classifier.md)<br><br>[Duplicar un modelo](./duplicate-a-model.md)<br><br>[Cambiar el nombre de un modelo](./rename-a-model.md)<br><br>[Crear un extractor](./create-an-extractor.md)<br><br>[Cambiar el nombre de un extractor](./rename-an-extractor.md)<br><br>[Crear un modelo de procesamiento de formularios](./create-a-form-processing-model.md)<br><br>[Tipos de explicación](./explanation-types-overview.md)<br><br>[Usar plantillas de explicación](./explanation-templates.md)<br><br>[Aplicar modelos de comprensión mediante documentos](./apply-a-model.md)<br><br>[Obtenga información sobre los modelos de comprensión mediante documentos con el modelo de ejemplo](./learn-about-document-understanding-models-through-the-sample-model.md)<br><br>|
 |Aplicar una etiqueta de retención al modelo|[Aplicar una etiqueta de retención a un modelo de comprensión mediante documentos](./apply-a-retention-label-to-a-model.md)|
 |Aplique una etiqueta de confidencialidad a su modelo|[Agregar una etiqueta de confidencialidad a un modelo de comprensión mediante documentos](./apply-a-sensitivity-label-to-a-model.md)|
-|Usar modelos precompilados para extraer información de documentos |[Usar un modelo precompilado para extraer información de facturas o recibos](./prebuilt-models.md)|
-|Crear y entrenar modelos localmente en un SharePoint web |[Crear un modelo en un sitio SharePoint local](./create-local-model.md)|
-|Usar modelos formados en otros centros de contenido |[Publicar y descubrir modelos de comprensión de documentos](./model-discovery.md)|
+|Uso de modelos precompilados para extraer información de documentos |[Uso de un modelo precompilado para extraer información de facturas o recibos](./prebuilt-models.md)|
+|Creación y entrenamiento de modelos localmente en un sitio de SharePoint |[Creación de un modelo en un sitio local de SharePoint](./create-local-model.md)|
+|Uso de modelos entrenados en otros centros de contenido |[Publicación y detección de modelos de comprensión de documentos](./model-discovery.md)|
 |Realizar consultas basadas en metadatos en bibliotecas de documentos|[Búsqueda de metadatos en bibliotecas de documentos](./metadata-search.md)|
 |Usar la taxonomía del almacén de términos de servicios de metadatos administrados al crear un extractor|[Aprovechar la taxonomía del almacén de términos al crear un extractor](./leverage-term-store-taxonomy.md)|
 |Obtenga información sobre cómo ver los datos de los modelos|[Análisis de uso del modelo](./model-usage-analytics.md)|
@@ -99,7 +99,7 @@ Los recursos de esta sección ayudan a los usuarios a aprender a crear y configu
 
 ## <a name="premium-services"></a>Servicios Premium
 
-Una licencia de SharePoint Syntex ofrece a los usuarios servicios de contenido premium que proporcionan funciones adicionales en el entorno de Microsoft 365. Los recursos de esta sección le dan más detalles sobre estas características y cómo usarlas.
+Una licencia de SharePoint Syntex ofrece a los usuarios servicios de contenido premium que proporcionan funciones adicionales en el entorno de Microsoft 365. Los recursos de esta sección proporcionan más detalles sobre estas características y cómo usarlas.
 
 | Si busca esta información: | Vea este recurso: |
 |:-----|:-----|
@@ -109,8 +109,8 @@ Una licencia de SharePoint Syntex ofrece a los usuarios servicios de contenido p
 
 ## <a name="extensibility"></a>Extensibilidad
 
-Use las API de REST para crear un modelo de comprensión de documentos, aplicar o quitar el modelo a una o más bibliotecas y obtener o actualizar información sobre el modelo.
+Use las API REST para crear un modelo de comprensión de documentos, aplicar o quitar el modelo a una o varias bibliotecas y obtener o actualizar información sobre el modelo.
 
 | Si busca esta información: | Vea este recurso: |
 |:-----|:-----|
-|Usar las API de REST para los modelos de comprensión de documentos|[API de REST del modelo de comprensión mediante documentos de SharePoint Syntex](/sharepoint/dev/apis/syntex/syntex-model-rest-api)|
+|Uso de las API REST para los modelos de comprensión de documentos|[API de REST del modelo de comprensión mediante documentos de SharePoint Syntex](/sharepoint/dev/apis/syntex/syntex-model-rest-api)|

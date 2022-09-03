@@ -8,7 +8,7 @@ manager: scotv
 ms.date: 02/09/2021
 audience: ITPro
 ms.topic: overview
-ms.prod: microsoft-365-enterprise
+ms.service: microsoft-365-enterprise
 ms.localizationpriority: medium
 search.appverid:
 - MET150
@@ -16,13 +16,13 @@ ms.collection:
 - M365-security-compliance
 ms.custom:
 - Ent_Architecture
-description: Use Guías del laboratorio de pruebas para crear Microsoft 365 soluciones y escenarios en un entorno de desarrollo y pruebas.
-ms.openlocfilehash: febcb9e3c1a870bfa85468b56f4b2a45774f3070
-ms.sourcegitcommit: 22cae7ec541268d519d45518c32f22bf5811aec1
+description: Use guías de laboratorio de pruebas para crear soluciones y escenarios de Microsoft 365 en un entorno de desarrollo y pruebas.
+ms.openlocfilehash: 72dc8a6a7db562100d4a4bbb17c699bd32686810
+ms.sourcegitcommit: d3ef9391f621e8f4ca70661184b3bb82c6cbda94
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/10/2022
-ms.locfileid: "62524134"
+ms.lasthandoff: 09/02/2022
+ms.locfileid: "67579410"
 ---
 # <a name="test-lab-guides-for-solutions-and-scenarios"></a>Guías del entorno de pruebas para soluciones y escenarios
 
@@ -32,8 +32,8 @@ Las TLG están diseñadas para ser modulares. Se desarrollan entre sí para crea
 
 Las TLG también le permiten crear entornos representativos para desarrollo y prueba de aplicaciones, también conocidos como entornos de desarrollo y prueba.
   
-![Guías del laboratorio de pruebas para la nube de Microsoft.](../media/m365-enterprise-test-lab-guides/cloud-tlg-icon.png)
+![Guías de laboratorio de prueba para la nube de Microsoft.](../media/m365-enterprise-test-lab-guides/cloud-tlg-icon.png)
 
 Pruebe [esta Guía del laboratorio de pruebas](team-security-isolation-dev-test.md) para configurar un equipo con aislamiento de seguridad.
 
-Para obtener guías adicionales Microsoft 365 características y configuración, [consulte Microsoft 365 guías de laboratorio de pruebas empresariales](../enterprise/m365-enterprise-test-lab-guides.md).
+Para obtener guías adicionales para las características y la configuración de Microsoft 365, consulte [Guías del laboratorio de pruebas de Microsoft 365 para empresas](../enterprise/m365-enterprise-test-lab-guides.md).

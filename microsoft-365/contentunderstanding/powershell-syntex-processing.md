@@ -1,33 +1,33 @@
 ---
-title: Usar PowerShell para solicitar el procesamiento por un modelo de comprensión de documentos
+title: Uso de PowerShell para solicitar el procesamiento por un modelo de comprensión de documentos
 ms.author: jaeccles
 author: jameseccles
 ms.reviewer: ssquires
 manager: serdars
 audience: admin
 ms.topic: article
-ms.prod: microsoft-365-enterprise
+ms.service: microsoft-365-enterprise
 ms.collection:
 - enabler-strategic
 - m365initiative-syntex
 search.appverid: MET150
 ms.localizationpriority: medium
-description: Obtenga información sobre cómo usar PowerShell para solicitar el procesamiento por un SharePoint Syntex de comprensión de documentos.
-ms.openlocfilehash: 8f66a0cc5e59ad2ccb6b92d98cfaee8ce84470f2
-ms.sourcegitcommit: 3fb76db6b34e24569417f4c8a41b99f46a780389
+description: Obtenga información sobre cómo usar PowerShell para solicitar el procesamiento mediante un modelo de comprensión de documentos SharePoint Syntex.
+ms.openlocfilehash: f0b2292b68ce8f1c22c892ef3a807d3d54f91b85
+ms.sourcegitcommit: d3ef9391f621e8f4ca70661184b3bb82c6cbda94
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/17/2022
-ms.locfileid: "63526448"
+ms.lasthandoff: 09/02/2022
+ms.locfileid: "67580912"
 ---
-# <a name="use-powershell-to-request-processing-by-a-document-understanding-model"></a>Usar PowerShell para solicitar el procesamiento por un modelo de comprensión de documentos
+# <a name="use-powershell-to-request-processing-by-a-document-understanding-model"></a>Uso de PowerShell para solicitar el procesamiento por un modelo de comprensión de documentos
 
 > [!IMPORTANT]
-> Los SharePoint Syntex de PowerShell y todos los demás componentes pnP son herramientas de código abierto con el respaldo de una comunidad activa que les proporciona soporte técnico. Los canales oficiales de soporte técnico de Microsoft no ofrecen ningún contrato de nivel de servicio para herramientas de código abierto.
+> Los cmdlets de PowerShell SharePoint Syntex y todos los demás componentes de PnP son herramientas de código abierto respaldadas por una comunidad activa que proporciona soporte técnico para ellos. Los canales oficiales de soporte técnico de Microsoft no ofrecen ningún contrato de nivel de servicio para herramientas de código abierto.
 
 Los modelos de comprensión de documentos procesarán los archivos recién cargados en una biblioteca. También es posible solicitar manualmente el procesamiento en la interfaz de usuario. Sin embargo, puede haber escenarios en los que sea más eficaz desencadenar el procesamiento a través de PowerShell.
 
-## <a name="request-processing-of-all-items-that-have-not-been-previously-classified"></a>Solicitar el procesamiento de todos los elementos que no se han clasificado previamente
+## <a name="request-processing-of-all-items-that-have-not-been-previously-classified"></a>Procesamiento de solicitudes de todos los elementos que no se han clasificado previamente
 
 Puede solicitar el procesamiento de todos los elementos de la biblioteca que no se hayan clasificado previamente mediante este comando:
 
@@ -38,11 +38,11 @@ Connect-PnPOnline -Url "https://contoso.sharepoint.com/sites/finance"
 Request-PnPSyntexClassifyAndExtract -List "Documents"
 ```
 
-Para un procesamiento de menor prioridad, también puede considerar el uso del parámetro -OffPeak, que pondrá en cola los archivos para su procesamiento fuera del horario comercial en el que se encuentra el espacio empresarial. Consulta [Request-PnPSyntexClassifyAndExtract](https://pnp.github.io/powershell/cmdlets/Request-PnPSyntexClassifyAndExtract.html) para obtener más información.
+Para el procesamiento de prioridad inferior, también puede considerar el uso del parámetro -OffPeak, que pondrá en cola los archivos para su procesamiento fuera del horario comercial donde se encuentra el inquilino. Consulte [Request-PnPSyntexClassifyAndExtract](https://pnp.github.io/powershell/cmdlets/Request-PnPSyntexClassifyAndExtract.html) para obtener más detalles.
 
-## <a name="request-processing-of-all-items-in-a-library"></a>Solicitar el procesamiento de todos los elementos de una biblioteca
+## <a name="request-processing-of-all-items-in-a-library"></a>Solicitud de procesamiento de todos los elementos de una biblioteca
 
-Puede solicitar el procesamiento de todos los archivos de la biblioteca, incluso si se han clasificado previamente. Esto puede ser útil si ha actualizado un modelo o ha agregado otro modelo a la biblioteca.
+Puede solicitar el procesamiento de todos los archivos de la biblioteca, incluso si se han clasificado anteriormente. Esto podría ser útil si ha actualizado un modelo o ha agregado otro modelo a la biblioteca.
 
 ```PowerShell
 #Note: you're connecting here to the site that holds the document library you want to process
@@ -54,9 +54,9 @@ Request-PnPSyntexClassifyAndExtract -List "Documents" -Force
 > [!NOTE]
 > El uso de la opción -Force con más de 5000 elementos habilitará automáticamente el procesamiento máximo.
 
-## <a name="request-processing-of-all-items-based-on-a-property"></a>Solicitar el procesamiento de todos los elementos basados en una propiedad
+## <a name="request-processing-of-all-items-based-on-a-property"></a>Procesamiento de solicitudes de todos los elementos basados en una propiedad
 
-Si desea limitar el procesamiento a un subconjunto específico de elementos de una biblioteca, puede usar un script para seleccionar un grupo específico de archivos. En el ejemplo siguiente, el script permite seleccionar un campo y un valor de campo por el que filtrar. Las consultas más complejas se pueden completar [con Get-PnPListItem](https://pnp.github.io/powershell/cmdlets/Get-PnPListItem.html).
+Si desea limitar el procesamiento a un subconjunto específico de elementos de una biblioteca, puede usar un script para seleccionar un grupo específico de archivos. En el ejemplo siguiente, el script permite seleccionar un campo y un valor de campo por el que filtrar. Las consultas más complejas se pueden completar mediante [Get-PnPListItem](https://pnp.github.io/powershell/cmdlets/Get-PnPListItem.html).
 
 ```PowerShell
 #Note: you're connecting here to the site that holds the document library you want to process
@@ -93,7 +93,7 @@ Connect-PnPOnline -Url "https://contoso.sharepoint.com/sites/finance"
 Request-PnPSyntexClassifyAndExtract -FileUrl "/sites/finance/documents/contoso contract.docx"
 ```
 
-El archivo por modelo de archivos también admite el procesamiento por lotes:
+El modelo de archivos por archivo también admite el procesamiento por lotes:
 
 ```PowerShell
 #Note: you're connecting here to the site that holds the document library you want to process

@@ -3,7 +3,7 @@ title: Búsqueda avanzada con conceptos básicos de la API de PowerShell
 ms.reviewer: ''
 description: Obtenga información sobre los conceptos básicos de la consulta de la API de Microsoft Defender para punto de conexión mediante PowerShell.
 keywords: apis, api admitidas, búsqueda avanzada, consulta
-ms.prod: m365-security
+ms.service: microsoft-365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -14,14 +14,14 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
-ms.technology: mde
+ms.subservice: mde
 ms.custom: api
-ms.openlocfilehash: 535f978333d867641ce2e3a8564e3764e59d4333
-ms.sourcegitcommit: 217108c59be41b01963a393b4f16d137636fe6a8
+ms.openlocfilehash: 0023be82a47dcc3a05d7d10b045b5b5140b53202
+ms.sourcegitcommit: d3ef9391f621e8f4ca70661184b3bb82c6cbda94
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/12/2022
-ms.locfileid: "67331475"
+ms.lasthandoff: 09/02/2022
+ms.locfileid: "67578694"
 ---
 # <a name="advanced-hunting-using-powershell"></a>Búsqueda avanzada de amenazas con PowerShell
 

@@ -2,7 +2,7 @@
 title: Programar los exámenes de antivirus con la directiva de grupo
 description: Uso de directiva de grupo para configurar exámenes antivirus
 keywords: examen rápido, examen completo, programación, directiva de grupo, antivirus
-ms.prod: m365-security
+ms.service: microsoft-365-security
 ms.mktglfcycl: manage
 ms.sitesec: library
 ms.pagetype: security
@@ -13,15 +13,15 @@ ms.custom: nextgen
 ms.date: 11/10/2021
 ms.reviewer: pauhijbr, ksarens
 manager: dansimp
-ms.technology: mde
+ms.subservice: mde
 ms.topic: how-to
 ms.collection: M365-security-compliance
-ms.openlocfilehash: 21b30bc9ce43c4d6a04e6e6e33f55f6d8e3d6d1b
-ms.sourcegitcommit: ebbe8713297675db5dcb3e0d9c3ae5e746b99196
+ms.openlocfilehash: 522c565d98c2b90f3eec6faef699d627b5e941f0
+ms.sourcegitcommit: d3ef9391f621e8f4ca70661184b3bb82c6cbda94
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/14/2022
-ms.locfileid: "65415525"
+ms.lasthandoff: 09/02/2022
+ms.locfileid: "67582238"
 ---
 # <a name="schedule-antivirus-scans-using-group-policy"></a>Programar los exámenes de antivirus con la directiva de grupo
 
@@ -34,11 +34,11 @@ ms.locfileid: "65415525"
 **Plataformas**
 - Windows
 
-En este artículo se describe cómo configurar exámenes programados mediante directiva de grupo. Para obtener más información sobre la programación de exámenes y sobre los tipos de examen, consulte [Configuración de exámenes programados rápidos o completos Antivirus de Microsoft Defender](schedule-antivirus-scans.md). 
+En este artículo se describe cómo configurar exámenes programados mediante directiva de grupo. Para más información sobre la programación de exámenes y sobre los tipos de examen, consulte [Configuración de exámenes programados rápidos o completos del Antivirus de Microsoft Defender](schedule-antivirus-scans.md). 
 
 ## <a name="configure-antivirus-scans-using-group-policy"></a>Configuración de exámenes antivirus mediante directiva de grupo
 
-1. En la máquina de administración de directiva de grupo, en el Editor de directiva de grupo, vaya a **Configuración** \> del equipo **Plantillas** \> administrativas **Windows Componentes** \> **Antivirus de Microsoft Defender** \> **Examen**.
+1. En la máquina de administración de directiva de grupo, en el Editor de directiva de grupo, vaya a Configuración del **equipo** \> **Plantillas** \> administrativas **Componentes de Windows Antivirus** \> \> de **Microsoft Defender** **Examen**.
 
 2. Haga clic con el botón derecho en el objeto directiva de grupo que desea configurar y, a continuación, seleccione **Editar**.
 
@@ -94,7 +94,7 @@ Para obtener más información, consulte los temas [Administrar cuándo se deben
 | Actualizaciones de firma | Activar el examen después de la actualización de Inteligencia de seguridad | Un examen se producirá inmediatamente después de descargar una nueva actualización de protección. | Habilitado |
 
 > [!TIP]
-> Si busca información relacionada con antivirus para otras plataformas, consulte:
+> Si busca información relacionada con el antivirus para otras plataformas, consulte:
 > - [Establecer las preferencias para Microsoft Defender para punto de conexión en macOS](mac-preferences.md)
 > - [Microsoft Defender para punto de conexión en Mac](microsoft-defender-endpoint-mac.md)
 > - [Configuración de las directivas de antivirus de macOS para Antivirus de Microsoft Defender para Intune](/mem/intune/protect/antivirus-microsoft-defender-settings-macos)

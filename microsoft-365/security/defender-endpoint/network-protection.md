@@ -2,7 +2,7 @@
 title: Uso de la protección de red para evitar conexiones a sitios incorrectos
 description: Proteja la red evitando que los usuarios accedan a direcciones de red malintencionadas y sospechosas conocidas.
 keywords: Protección de red, vulnerabilidades de seguridad, sitio web malintencionado, ip, dominio, dominios, comando y control, SmartScreen, notificación del sistema
-ms.prod: m365-security
+ms.service: microsoft-365-security
 ms.mktglfcycl: manage
 ms.sitesec: library
 ms.pagetype: security
@@ -14,17 +14,17 @@ ms.author: deniseb
 ms.reviewer: oogunrinde
 manager: dansimp
 ms.custom: asr
-ms.technology: mde
+ms.subservice: mde
 ms.topic: overview
 ms.collection:
 - m365initiative-m365-defender
 - M365-security-compliance
-ms.openlocfilehash: 7ab48b6dc7aad50af438e6fcebb241e32baac6ed
-ms.sourcegitcommit: ecc04b5b8f84b34255a2d5e90b5ab596af0d16c7
+ms.openlocfilehash: 123f6cb9e53c7c8f64726923d9d17e879bd3fb8c
+ms.sourcegitcommit: d3ef9391f621e8f4ca70661184b3bb82c6cbda94
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/01/2022
-ms.locfileid: "67495289"
+ms.lasthandoff: 09/02/2022
+ms.locfileid: "67578044"
 ---
 # <a name="protect-your-network"></a>Proteger la red
 

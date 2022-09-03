@@ -2,7 +2,7 @@
 title: Uso de la protección de red para evitar conexiones de Linux a sitios incorrectos
 description: Protección de la red evitando que los usuarios de Linux accedan a direcciones de red malintencionadas y sospechosas conocidas
 keywords: Protección de red, vulnerabilidades de seguridad de Linux, sitio web malintencionado, ip, dominio, dominios, comando y control, SmartScreen, notificación del sistema
-ms.prod: m365-security
+ms.service: microsoft-365-security
 ms.mktglfcycl: manage
 ms.sitesec: library
 ms.pagetype: security
@@ -13,18 +13,18 @@ ms.author: v-jweston
 ms.reviewer: oogunrinde
 manager: dansimp
 ms.custom: asr
-ms.technology: mde
+ms.subservice: mde
 ms.topic: overview
 ms.collection:
 - m365initiative-m365-defender
 - M365-security-compliance
 ms.date: ''
-ms.openlocfilehash: a05ddff1ef6c9689143c36cde3c9d0719c7dab10
-ms.sourcegitcommit: ecc04b5b8f84b34255a2d5e90b5ab596af0d16c7
+ms.openlocfilehash: ee3b78a3cdb03cb652478f68f965c43d022f8633
+ms.sourcegitcommit: d3ef9391f621e8f4ca70661184b3bb82c6cbda94
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/01/2022
-ms.locfileid: "67497801"
+ms.lasthandoff: 09/02/2022
+ms.locfileid: "67581123"
 ---
 # <a name="network-protection-for-linux"></a>Protección de red para Linux
 

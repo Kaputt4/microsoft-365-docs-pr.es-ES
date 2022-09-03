@@ -6,7 +6,7 @@ author: MikePlumleyMSFT
 manager: serdars
 audience: Admin
 ms.topic: article
-ms.prod: microsoft-365-enterprise
+ms.service: microsoft-365-enterprise
 ms.localizationpriority: medium
 ms.collection:
 - M365-collaboration
@@ -16,12 +16,12 @@ ms.custom:
 f1.keywords: NOCSH
 recommendations: false
 description: Obtenga información sobre los escenarios de colaboración de gobernanza de comunicaciones.
-ms.openlocfilehash: 83dd8384acee2e4fc0de6ac2514533bf7d53c879
-ms.sourcegitcommit: 52eea2b65c0598ba4a1b930c58b42dbe62cdaadc
+ms.openlocfilehash: e6eeb0103c3e3a8e92efa3534b1c489713d8f1fe
+ms.sourcegitcommit: d3ef9391f621e8f4ca70661184b3bb82c6cbda94
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/19/2022
-ms.locfileid: "64947481"
+ms.lasthandoff: 09/02/2022
+ms.locfileid: "67578452"
 ---
 # <a name="communications-governance-for-collaboration-scenarios"></a>Gobernanza de las comunicaciones para escenarios de colaboración
 
@@ -37,7 +37,7 @@ En la tabla siguiente se proporciona una referencia rápida para los controles d
 |Reuniones|||
 ||Administre lo que pueden hacer los participantes de la reunión.|[Administración de directivas de reunión en Teams](/microsoftteams/meeting-policies-in-teams)|
 ||Permitir o impedir que los usuarios anónimos se unan a reuniones.|[Permitir que los usuarios anónimos se unan a las reuniones](/microsoftteams/meeting-settings-in-teams#allow-anonymous-users-to-join-meetings)|
-|Cumplimiento de comunicaciones|||
+|Cumplimiento de las comunicaciones|||
 ||Superficie y respuesta a una comunicación descuidada y negligente|[Cumplimiento de las comunicaciones](../compliance/communication-compliance.md)|
 
 ## <a name="messaging"></a>Mensajería 
@@ -46,24 +46,24 @@ Puede controlar qué características de mensajería de chat y canal (como edita
 
 [Administrar directivas de mensajería de Teams](/microsoftteams/messaging-policies-in-teams)
 
-Puede controlar quién puede iniciar nuevas publicaciones y responder a las publicaciones en un canal Teams mediante la configuración de la moderación del canal.
+Puede controlar quién puede iniciar nuevas publicaciones y responder a las publicaciones en un canal de Teams mediante la configuración de la moderación del canal.
 
 [Configuración y administración de la moderación de canales en Microsoft Teams](/microsoftteams/manage-channel-moderation-in-teams)
 
 ## <a name="meetings"></a>Reuniones
 
-Puede controlar las características que están disponibles para Teams participantes de la reunión, como la programación, el uso compartido de contenido, los participantes y las directivas de audio y vídeo.
+Puede controlar las características que están disponibles para los participantes de la reunión de Teams, como la programación, el uso compartido de contenido, los participantes y las directivas de audio y vídeo.
 
 [Administración de directivas de reunión en Teams](/microsoftteams/meeting-policies-in-teams)
 
-Puede controlar la unión anónima para Teams reuniones, lo que permite unirse a cualquier persona con un vínculo a la reunión.
+Puede controlar la unión anónima para las reuniones de Teams, lo que permite unirse a cualquier persona con un vínculo a la reunión.
 
 [Permitir que los usuarios anónimos se unan a las reuniones](/microsoftteams/meeting-settings-in-teams#allow-anonymous-users-to-join-meetings)
 
 
-## <a name="communication-compliance"></a>Cumplimiento de comunicaciones
+## <a name="communication-compliance"></a>Cumplimiento de las comunicaciones
 
-El cumplimiento de comunicaciones le permite examinar las comunicaciones en busca de lenguaje ofensivo, información confidencial e información relacionada con estándares internos y normativos. Las comunicaciones de chat, los buzones y los mensajes de Yammer se pueden supervisar, generando alertas. Con las herramientas de administración, puede identificar y tomar medidas rápidamente en los mensajes con coincidencias de directiva.
+El cumplimiento de comunicaciones le permite examinar las comunicaciones en busca de lenguaje ofensivo, información confidencial e información relacionada con estándares internos y normativos. Las comunicaciones de chat, los buzones y los mensajes de Yammer se pueden supervisar y generar alertas. Con las herramientas de administración, puede identificar y tomar medidas rápidamente en los mensajes con coincidencias de directiva.
 
 [Obtener más información sobre el cumplimiento de las comunicaciones](../compliance/communication-compliance.md)
 

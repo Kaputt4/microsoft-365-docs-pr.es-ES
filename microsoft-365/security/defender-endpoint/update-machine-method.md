@@ -2,7 +2,7 @@
 title: Actualización de la API de entidad de máquina
 description: Obtenga información sobre cómo actualizar las etiquetas de máquina mediante esta API. Puede actualizar las etiquetas y las propiedades devicevalue.
 keywords: apis, graph api, api admitidas, get, alert, information, id
-ms.prod: m365-security
+ms.service: microsoft-365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -13,14 +13,14 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
-ms.technology: mde
+ms.subservice: mde
 ms.custom: api
-ms.openlocfilehash: 5674f9b8038bba646d86b02fe775525ad433dcac
-ms.sourcegitcommit: 217108c59be41b01963a393b4f16d137636fe6a8
+ms.openlocfilehash: a7f24d69d8be5ce996c902fa00b6fdde05c6905d
+ms.sourcegitcommit: d3ef9391f621e8f4ca70661184b3bb82c6cbda94
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/12/2022
-ms.locfileid: "67330683"
+ms.lasthandoff: 09/02/2022
+ms.locfileid: "67577021"
 ---
 # <a name="update-machine"></a>Actualizar máquina 
 
@@ -86,7 +86,7 @@ Para obtener el mejor rendimiento, no debe incluir valores existentes que no hay
 
 Propiedad|Tipo|Descripción
 :---|:---|:---
-machineTags|Colección string|Conjunto de etiquetas de [máquina](machine.md) .
+machineTags|Colección de cadenas|Conjunto de etiquetas de [máquina](machine.md) .
 deviceValue|Enumeración que acepta valores NULL|[Valor del dispositivo](tvm-assign-device-value.md). Los valores posibles son: "Normal", "Low" y "High".
 
 ## <a name="response"></a>Respuesta

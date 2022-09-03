@@ -6,19 +6,19 @@ manager: pamgreen
 ms.reviewer: lauris
 audience: admin
 ms.topic: article
-ms.prod: microsoft-365-enterprise
+ms.service: microsoft-365-enterprise
 search.appverid: ''
 ms.collection:
 - enabler-strategic
 - m365initiative-syntex
 ms.localizationpriority: medium
 description: Obtenga información sobre las diferencias clave entre un modelo de comprensión de documentos y un modelo de procesamiento de formularios.
-ms.openlocfilehash: 31f70983b90e758516f92081217010bb6a64acd4
-ms.sourcegitcommit: e9692a40dfe1f8c2047699ae3301c114a01b0d3a
+ms.openlocfilehash: 18235caa31876aa4d9a7b1733885d924804f7e46
+ms.sourcegitcommit: d3ef9391f621e8f4ca70661184b3bb82c6cbda94
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/01/2022
-ms.locfileid: "66603800"
+ms.lasthandoff: 09/02/2022
+ms.locfileid: "67581820"
 ---
 # <a name="differences-between-custom-models-in-microsoft-sharepoint-syntex"></a>Diferencias entre modelos personalizados en Microsoft SharePoint Syntex 
 
@@ -82,7 +82,7 @@ Use la tabla siguiente para comprender cuándo usar el procesamiento de formular
 | Integrar con Metadatos administrados | No | Sí, mediante la formación del extractor de entidades que hace referencia a un campo de metadatos administrados configurados.|
 | Integración de características de cumplimiento con Microsoft Purview Information Protection | Establezca etiquetas de retención publicadas.<br>Se acerca el establecimiento de etiquetas de confidencialidad. | Establezca etiquetas de retención publicadas.<br>Establecer etiquetas de confidencialidad publicadas. |
 | Regiones compatibles| Procesamiento de formularios basado en Power Platform. Para obtener información sobre la disponibilidad global para Power Platform y AI Builder, consulta [disponibilidad de Power Platform](https://dynamics.microsoft.com/geographic-availability/). | Disponible en todas las regiones.|
-| Gastos transaccionales | Usar créditos de AI Builder.<br>Se incluyen 3,5 000 créditos por cada licencia de SharePoint Syntex al mes.<br>Los créditos de 1 M permitirán procesar 2 000 páginas de archivos.<br>| No es aplicable |
+| Gastos transaccionales | Usar créditos de AI Builder.<br>Se incluyen 3,5 000 créditos por cada licencia de SharePoint Syntex al mes.<br>Los créditos de 1 M permitirán procesar 2 000 páginas de archivos.<br>| No aplicable |
 | Capacidad | Usa el entorno de Power Platform predeterminado (entornos personalizados con soporte para la base de datos de Dataverse). | No tiene restricciones de capacidad.|
 | Idiomas admitidos| Compatibilidad con idiomas para más de [73 idiomas](/power-platform-release-plan/2021wave2/ai-builder/form-processing-new-language-support). | Los modelos funcionan en todos los idiomas del alfabeto latino. Además de inglés: alemán, sueco, francés, español, italiano y portugués.|
 

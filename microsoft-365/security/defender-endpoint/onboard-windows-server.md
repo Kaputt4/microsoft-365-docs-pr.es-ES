@@ -2,7 +2,7 @@
 title: Incorporación de Windows Server a Defender para punto de conexión
 description: Incorporación de Windows Server a Microsoft Defender para punto de conexión.
 keywords: onboarding, Microsoft Defender para punto de conexión onboarding, sccm, group policy, mdm, local script, detection test
-ms.prod: m365-security
+ms.service: microsoft-365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -15,13 +15,13 @@ ms.collection:
 - M365-security-compliance
 - m365-initiative-defender-endpoint
 ms.topic: conceptual
-ms.technology: mde
-ms.openlocfilehash: b25d60be243dd5d375fb6ed0f795e4a901a504b2
-ms.sourcegitcommit: c6f1486617b39565bfd8f662ee6ad65a9cefd3e3
+ms.subservice: mde
+ms.openlocfilehash: 6bc6bfa6848d613b23fab0bf00d137d3c62b80e3
+ms.sourcegitcommit: d3ef9391f621e8f4ca70661184b3bb82c6cbda94
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/29/2022
-ms.locfileid: "66532777"
+ms.lasthandoff: 09/02/2022
+ms.locfileid: "67585628"
 ---
 # <a name="defender-for-endpoint-onboarding-windows-server"></a>Incorporación de Windows Server a Defender para punto de conexión
 
@@ -46,14 +46,15 @@ En este tema se describe cómo incorporar servidores windows específicos para M
 
 Para obtener instrucciones sobre cómo descargar y usar Seguridad de Windows líneas base para servidores Windows, consulte [Seguridad de Windows Líneas base.](/windows/security/threat-protection/windows-security-configuration-framework/windows-security-baselines)
 
+## <a name="license-requirement"></a>Requisito de licencia
+
+Para poder comprar Microsoft Defender para punto de conexión SKU de servidor, debe haber adquirido ya un mínimo combinado de cualquiera de las siguientes licencias: Windows E5/A5, Microsoft 365 E5/A5 o Seguridad de Microsoft 365 E5 licencias de suscripción. Para obtener más información sobre las licencias, consulte los [Términos del producto](https://www.microsoft.com/licensing/terms/productoffering/MicrosoftDefenderforEndpointServer/all).
+
 ## <a name="windows-server-onboarding-overview"></a>Introducción a la incorporación de Windows Server
 
 Deberá completar los siguientes pasos generales para incorporar correctamente los servidores 2008 R2, 2012 R2, 2016, 2019 y 2022.
 
 :::image type="content" source="images/server-onboarding.png" alt-text="Incorporación de servidores" lightbox="images/server-onboarding.png":::
-
-> [!NOTE]
-> Los servidores están integrados solo con GP.
 
 ### <a name="windows-server-2012-r2-and-windows-server-2016"></a>Windows Server 2012 R2 y Windows Server 2016
 - Descargue los paquetes de instalación e incorporación.
@@ -63,9 +64,6 @@ Deberá completar los siguientes pasos generales para incorporar correctamente l
 ### <a name="windows-server-semi-annual-enterprise-channel-and-windows-server-2019"></a>Windows Server Semi-Annual Enterprise Channel y Windows Server 2019
 - Descargue el paquete de incorporación.
 - Siga los pasos de incorporación de la herramienta correspondiente.
-
-> [!IMPORTANT]
-> Para poder comprar Microsoft Defender para punto de conexión SKU de servidor, debe haber adquirido ya un mínimo combinado de cualquiera de las siguientes licencias de suscripción, Windows E5/A5, Microsoft 365 E5/A5 o Seguridad de Microsoft 365 E5. Para obtener más información sobre las licencias, consulte los [Términos del producto](https://www.microsoft.com/licensing/terms/productoffering/MicrosoftDefenderforEndpointServer/all).
 
 ## <a name="offboard-windows-servers"></a>Servidores Windows fuera del panel
 

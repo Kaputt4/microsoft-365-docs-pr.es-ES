@@ -6,19 +6,19 @@ manager: pamgreen
 ms.reviewer: ssquires
 audience: admin
 ms.topic: article
-ms.prod: microsoft-365-enterprise
+ms.service: microsoft-365-enterprise
 search.appverid: ''
 ms.collection:
 - enabler-strategic
 - m365initiative-syntex
 ms.localizationpriority: medium
 description: Obtenga información sobre cómo aplicar una etiqueta de confidencialidad a un modelo en SharePoint Syntex.
-ms.openlocfilehash: 4ab530fbd4a187f03617b01b6b9661332ad1a7d9
-ms.sourcegitcommit: 52eea2b65c0598ba4a1b930c58b42dbe62cdaadc
+ms.openlocfilehash: bb694f1a406565986fef86f1089254a57d3cc53f
+ms.sourcegitcommit: d3ef9391f621e8f4ca70661184b3bb82c6cbda94
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/19/2022
-ms.locfileid: "64945613"
+ms.lasthandoff: 09/02/2022
+ms.locfileid: "67581144"
 ---
 # <a name="apply-a-sensitivity-label-to-a-model-in-microsoft-sharepoint-syntex"></a>Aplicar una etiqueta de confidencialidad a un modelo en Microsoft SharePoint Syntex
 
@@ -29,7 +29,7 @@ Las etiquetas de confidencialidad permiten aplicar cifrado a los documentos que 
 Puede aplicar una etiqueta de confidencialidad preexistente al modelo en la página principal del modelo. Para que esté disponible en la selección desde la configuración del modelo, la etiqueta ya debe haberse publicado. Las etiquetas se aplican a los archivos de Office para Word (.docx), PowerPoint (.pptx) y Excel (.xlsx). 
 
 > [!Important]
-> Para que las etiquetas de confidencialidad estén disponibles para aplicarlas a los modelos de comprensión de documentos, deben [crearse y publicarse en el portal de cumplimiento de Microsoft Purview](../admin/security-and-compliance/set-up-compliance.md).
+> Para que las etiquetas de confidencialidad estén disponibles para aplicarlas a los modelos de comprensión de documentos, deben [crearse y publicarse en el portal de cumplimiento Microsoft Purview](../admin/security-and-compliance/set-up-compliance.md).
 
 ## <a name="add-a-sensitivity-label-to-a-document-understanding-model"></a>Agregar una etiqueta de confidencialidad a un modelo de comprensión mediante documentos
 

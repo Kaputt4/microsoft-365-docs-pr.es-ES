@@ -2,7 +2,7 @@
 title: Ejecución de la API de examen antivirus
 description: Use esta API para crear llamadas relacionadas con la ejecución de un examen antivirus en un dispositivo.
 keywords: apis, graph api, api admitidas, quitar el dispositivo del aislamiento
-ms.prod: m365-security
+ms.service: microsoft-365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -13,14 +13,14 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
-ms.technology: mde
+ms.subservice: mde
 ms.custom: api
-ms.openlocfilehash: 0f72d2d6db4bae754b0cd70d444e2781654a4b40
-ms.sourcegitcommit: d09eb780dc41a01796eb8137fbe9267231af6746
+ms.openlocfilehash: 0d952848afed65f622e23d490a1b34fdfc593b0b
+ms.sourcegitcommit: d3ef9391f621e8f4ca70661184b3bb82c6cbda94
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/19/2022
-ms.locfileid: "67387100"
+ms.lasthandoff: 09/02/2022
+ms.locfileid: "67579168"
 ---
 # <a name="run-antivirus-scan-api"></a>Ejecución de la API de examen antivirus
 

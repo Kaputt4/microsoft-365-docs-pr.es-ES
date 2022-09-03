@@ -1,33 +1,33 @@
 ---
-title: Trabajar con las explicaciones del modelo de descripción de documentos en PowerShell
+title: Trabajar con explicaciones del modelo de comprensión de documentos en PowerShell
 ms.author: jaeccles
 author: jameseccles
 ms.reviewer: ssquires
 manager: serdars
 audience: admin
 ms.topic: article
-ms.prod: microsoft-365-enterprise
+ms.service: microsoft-365-enterprise
 ms.collection:
 - enabler-strategic
 - m365initiative-syntex
 search.appverid: MET150
 ms.localizationpriority: medium
-description: Obtenga información sobre cómo trabajar con SharePoint Syntex explicaciones del modelo de documentos en PowerShell.
-ms.openlocfilehash: 12bdb4c7019b34ee7d2c1f4315673d78cbfb7ba1
-ms.sourcegitcommit: 3fb76db6b34e24569417f4c8a41b99f46a780389
+description: Obtenga información sobre el trabajo con SharePoint Syntex explicaciones del modelo de comprensión de documentos en PowerShell.
+ms.openlocfilehash: f81281e28977e842188e1dcc02906eedaad09738
+ms.sourcegitcommit: d3ef9391f621e8f4ca70661184b3bb82c6cbda94
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/17/2022
-ms.locfileid: "63525700"
+ms.lasthandoff: 09/02/2022
+ms.locfileid: "67578364"
 ---
-# <a name="work-with-document-understanding-model-explanations-in-powershell"></a>Trabajar con las explicaciones del modelo de descripción de documentos en PowerShell
+# <a name="work-with-document-understanding-model-explanations-in-powershell"></a>Trabajar con explicaciones del modelo de comprensión de documentos en PowerShell
 
 > [!IMPORTANT]
-> Los SharePoint Syntex de PowerShell y todos los demás componentes pnP son herramientas de código abierto con el respaldo de una comunidad activa que les proporciona soporte técnico. Los canales oficiales de soporte técnico de Microsoft no ofrecen ningún contrato de nivel de servicio para herramientas de código abierto.
+> Los cmdlets de PowerShell SharePoint Syntex y todos los demás componentes de PnP son herramientas de código abierto respaldadas por una comunidad activa que proporciona soporte técnico para ellos. Los canales oficiales de soporte técnico de Microsoft no ofrecen ningún contrato de nivel de servicio para herramientas de código abierto.
 
-Las plantillas de explicación personalizadas se almacenan en una lista dentro de un centro de contenido. Dado que estas explicaciones se almacenan como elementos de lista, PowerShell puede usarse para interactuar con ellos.
+Las plantillas de explicación personalizadas se almacenan en una lista dentro de un centro de contenido. Dado que estas explicaciones se almacenan como elementos de lista, PowerShell se puede usar para interactuar con ellos.
 
-## <a name="list-saved-explanations"></a>Enumerar las explicaciones guardadas
+## <a name="list-saved-explanations"></a>Enumeración de explicaciones guardadas
 
 En este ejemplo se muestra cómo ver todas las plantillas de explicación personalizadas que se han guardado en un centro de contenido específico.
 
@@ -67,7 +67,7 @@ foreach ($explanation in $explanationValues) {
 $explanationOutput
 ```
 
-## <a name="create-a-phrase-list-explanation"></a>Crear una explicación de lista de frases
+## <a name="create-a-phrase-list-explanation"></a>Creación de una explicación de lista de frases
 
 En este ejemplo se muestra cómo crear una plantilla de explicación de lista de frases personalizada.
 
@@ -104,9 +104,9 @@ $explanationContent = "{`"id`":`"$guid`",`"kind`":`"dictionaryFeature`",`"name`"
 Add-PnPListItem -List $explanationTemplatesList -Values @{"Title"= $explanationName; "ExplanationName" = $explanationName; "ExplanationDescription" = $explanationDescription; "ExplanationContent" = $explanationContent}
 ```
 
-## <a name="create-a-regular-expression-explanation"></a>Crear una explicación de expresión regular
+## <a name="create-a-regular-expression-explanation"></a>Creación de una explicación de expresiones regulares
 
-En este ejemplo se muestra cómo crear una plantilla de explicación de expresión regular personalizada.
+En este ejemplo se muestra cómo crear una plantilla de explicación de expresiones regulares personalizada.
 
 ```PowerShell
 $contentCenterURL = "https://contoso.sharepoint.com/sites/yourContentCenter"
@@ -131,7 +131,7 @@ $explanationContent = "{`"id`":`"$guid`",`"kind`":`"regexFeature`",`"name`":`"$e
 Add-PnPListItem -List $explanationTemplatesList -Values @{"Title"= $explanationName; "ExplanationName" = $explanationName; "ExplanationDescription" = $explanationDescription; "ExplanationContent" = $explanationContent}
 ```
 
-## <a name="create-a-phrase-list-explanation-based-on-a-term-set"></a>Crear una explicación de lista de frases basada en un conjunto de términos
+## <a name="create-a-phrase-list-explanation-based-on-a-term-set"></a>Creación de una explicación de lista de frases basada en un conjunto de términos
 
 En este ejemplo se muestra cómo crear una plantilla de explicación de lista de frases personalizada tomando los valores de un conjunto de términos. Esto incluye los nombres de término preferidos y los sinónimos.
 

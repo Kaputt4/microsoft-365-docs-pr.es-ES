@@ -6,7 +6,7 @@ manager: pamgreen
 ms.reviewer: ssquires
 audience: admin
 ms.topic: article
-ms.prod: microsoft-365-enterprise
+ms.service: microsoft-365-enterprise
 search.appverid: ''
 ms.custom: admindeeplinkSPO
 ms.collection:
@@ -14,12 +14,12 @@ ms.collection:
 - m365initiative-syntex
 ms.localizationpriority: medium
 description: Crear un centro de contenido en Microsoft SharePoint Syntex
-ms.openlocfilehash: c630bba8bafad8bcbf9749e7a4d08ae1e86f4d68
-ms.sourcegitcommit: 23e186b46b27a6a4863f507a52a11105afae9726
+ms.openlocfilehash: b0151ad464a84e06cc613c9baf06db03a831ceae
+ms.sourcegitcommit: d3ef9391f621e8f4ca70661184b3bb82c6cbda94
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/15/2022
-ms.locfileid: "64882228"
+ms.lasthandoff: 09/02/2022
+ms.locfileid: "67583228"
 ---
 # <a name="create-a-content-center-in-microsoft-sharepoint-syntex"></a>Crear un centro de contenido en Microsoft SharePoint Syntex
 
@@ -47,7 +47,7 @@ Un administrador de SharePoint puede crear un sitio del centro de contenido del 
 
 Para crear un nuevo centro de contenido:
 
-1. En el Centro de administración de Microsoft 365, vaya al <a href="https://go.microsoft.com/fwlink/?linkid=2185220" target="_blank">centro de administración de SharePoint > **sitios activos**</a>.
+1. En el Centro de administración de Microsoft 365, vaya al <a href="https://go.microsoft.com/fwlink/?linkid=2185220" target="_blank">Centro de administración de SharePoint > **sitios activos**</a>.
 
 2. En la página **Sitios activos**, haga clic en **Crear** y seleccione **Otras opciones**.
 
@@ -60,7 +60,7 @@ Para crear un nuevo centro de contenido:
 
 5. Seleccione **Terminado**.
  
-Después de crear un sitio del centro de contenido, verá que aparece en <a href="https://go.microsoft.com/fwlink/?linkid=2185220" target="_blank">**sitios activos**</a> en el centro de administración de SharePoint. 
+Después de crear un sitio del centro de contenido, verá que aparece en <a href="https://go.microsoft.com/fwlink/?linkid=2185220" target="_blank">**sitios activos**</a> en el Centro de administración de SharePoint. 
 
 ### <a name="give-access-to-additional-users"></a>Conceder acceso a otros usuarios
  
@@ -77,7 +77,7 @@ La biblioteca de **Models** en la vista del centro de contenido predeterminada a
 > [!NOTE]
 > No se puede cambiar el centro de contenido predeterminado designado. Siempre es el primer centro de contenido creado durante la instalación. 
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 [Crear un clasificador](create-a-classifier.md)
 

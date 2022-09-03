@@ -3,7 +3,7 @@ title: Descripción y uso de la reducción de la superficie expuesta a ataques (
 ms.reviewer: ''
 description: Obtenga información sobre las capacidades de reducción de la superficie expuesta a ataques de Microsoft Defender para punto de conexión.
 keywords: asr, reducción de superficie expuesta a ataques, reglas de reducción de superficie expuesta a ataques, Microsoft Defender para punto de conexión, microsoft defender, antivirus, av, windows defender
-ms.prod: m365-security
+ms.service: microsoft-365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -14,17 +14,17 @@ manager: dansimp
 audience: ITPro
 ms.custom: asr
 ms.topic: conceptual
-ms.technology: mde
+ms.subservice: mde
 ms.collection:
 - m365initiative-m365-defender
 - M365-security-compliance
 ms.date: 05/16/2022
-ms.openlocfilehash: bbed1512f5d51860f8f24ea29c2b0f73cbe7d9eb
-ms.sourcegitcommit: 221212fff9737e0ea386755deb8fed62ae9c254b
+ms.openlocfilehash: 08143912df1a8607b616cadfb4df0942a0054343
+ms.sourcegitcommit: d3ef9391f621e8f4ca70661184b3bb82c6cbda94
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/14/2022
-ms.locfileid: "66787202"
+ms.lasthandoff: 09/02/2022
+ms.locfileid: "67582436"
 ---
 # <a name="understand-and-use-attack-surface-reduction-capabilities"></a>Descripción y uso de funcionalidades de reducción de superficie expuesta a ataques
 
@@ -73,9 +73,9 @@ Para configurar la reducción de la superficie expuesta a ataques en el entorno,
 
 9. Configure el firewall de red.
 
-   1. Obtenga información general sobre [Firewall de Windows Defender con seguridad avanzada](/windows/security/threat-protection/windows-firewall/windows-firewall-with-advanced-security).
-   2. Use la [guía de diseño de Firewall de Windows Defender](/windows/security/threat-protection/windows-firewall/windows-firewall-with-advanced-security-design-guide) para decidir cómo desea diseñar las directivas de firewall.
-   3. Use la [guía de implementación de Firewall de Windows Defender](/windows/security/threat-protection/windows-firewall/windows-firewall-with-advanced-security-deployment-guide) para configurar el firewall de su organización con seguridad avanzada.
+   1. Obtenga información general sobre [Windows Defender Firewall con seguridad avanzada](/windows/security/threat-protection/windows-firewall/windows-firewall-with-advanced-security).
+   2. Use la [guía de diseño Windows Defender Firewall](/windows/security/threat-protection/windows-firewall/windows-firewall-with-advanced-security-design-guide) para decidir cómo desea diseñar las directivas de firewall.
+   3. Use la [guía de implementación Windows Defender Firewall](/windows/security/threat-protection/windows-firewall/windows-firewall-with-advanced-security-deployment-guide) para configurar el firewall de su organización con seguridad avanzada.
 
 > [!TIP]
 > En la mayoría de los casos, al configurar funcionalidades de reducción de superficie expuesta a ataques, puede elegir entre varios métodos:
@@ -247,9 +247,9 @@ Puede acceder a estos eventos en el Visor de eventos de Windows:
 |Protección contra vulnerabilidades de seguridad|Mitigaciones de seguridad (modo kernel/modo de usuario)|1|Auditoría de ACG|
 |Protección contra vulnerabilidades de seguridad|Mitigaciones de seguridad (modo kernel/modo de usuario)|2|Aplicación de ACG|
 |Protección contra vulnerabilidades de seguridad|Mitigaciones de seguridad (modo kernel/modo de usuario)|3|No permitir procesos secundarios de auditoría|
-|Protección contra vulnerabilidades de seguridad|Mitigaciones de seguridad (modo kernel/modo de usuario)|4 |No permitir procesos secundarios de bloqueo|
+|Protección contra vulnerabilidades de seguridad|Mitigaciones de seguridad (modo kernel/modo de usuario)|4|No permitir procesos secundarios de bloqueo|
 |Protección contra vulnerabilidades de seguridad|Mitigaciones de seguridad (modo kernel/modo de usuario)|5|Bloquear auditoría de imágenes de integridad baja|
-|Protección contra vulnerabilidades de seguridad|Mitigaciones de seguridad (modo kernel/modo de usuario)|6 |Bloquear bloqueo de imágenes de integridad baja|
+|Protección contra vulnerabilidades de seguridad|Mitigaciones de seguridad (modo kernel/modo de usuario)|6|Bloquear bloqueo de imágenes de integridad baja|
 |Protección contra vulnerabilidades de seguridad|Mitigaciones de seguridad (modo kernel/modo de usuario)|7 |Bloquear auditoría de imágenes remota|
 |Protección contra vulnerabilidades de seguridad|Mitigaciones de seguridad (modo kernel/modo de usuario)|8 |Bloquear bloqueo de imágenes remoto|
 |Protección contra vulnerabilidades de seguridad|Mitigaciones de seguridad (modo kernel/modo de usuario)|9 |Deshabilitar auditoría de llamadas del sistema de Win32k|

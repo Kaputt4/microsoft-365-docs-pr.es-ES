@@ -2,7 +2,7 @@
 title: API de máquina fuera del panel
 description: Obtenga información sobre cómo usar una API para desconectar un dispositivo de Microsoft Defender para punto de conexión.
 keywords: apis, graph api, api admitidas, recopilar paquete de investigación
-ms.prod: m365-security
+ms.service: microsoft-365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -13,14 +13,14 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
-ms.technology: mde
+ms.subservice: mde
 ms.custom: api
-ms.openlocfilehash: 5b26e5a558460b5777f389c79e70d1718632e584
-ms.sourcegitcommit: 217108c59be41b01963a393b4f16d137636fe6a8
+ms.openlocfilehash: 673ac885ad610a9ca44dcc775cebdd90951d5688
+ms.sourcegitcommit: d3ef9391f621e8f4ca70661184b3bb82c6cbda94
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/12/2022
-ms.locfileid: "67323757"
+ms.lasthandoff: 09/02/2022
+ms.locfileid: "67578816"
 ---
 # <a name="offboard-machine-api"></a>API de máquina fuera del panel
 

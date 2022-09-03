@@ -7,7 +7,7 @@ ms.reviewer: jaeccles
 ms.date: ''
 audience: admin
 ms.topic: article
-ms.prod: microsoft-365-enterprise
+ms.service: microsoft-365-enterprise
 ms.collection:
 - enabler-strategic
 - m365initiative-syntex
@@ -17,12 +17,12 @@ ms.custom:
 search.appverid: ''
 ms.localizationpriority: medium
 description: Aprenda a usar la herramienta de evaluación de la adopción para ver cómo su organización puede beneficiarse de SharePoint Syntex.
-ms.openlocfilehash: 8b4ffc6358487ec6cb66830fd56541bfc0b3df4f
-ms.sourcegitcommit: 133bf9097785309da45df6f374a712a48b33f8e9
+ms.openlocfilehash: f993530d9eea57bfa0cd8b03336f8a132588acdf
+ms.sourcegitcommit: d3ef9391f621e8f4ca70661184b3bb82c6cbda94
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/10/2022
-ms.locfileid: "66998204"
+ms.lasthandoff: 09/02/2022
+ms.locfileid: "67578948"
 ---
 # <a name="discover-opportunities-in-sharepoint-syntex-by-using-the-microsoft-365-assessment-tool"></a>Detección de oportunidades en SharePoint Syntex mediante la herramienta de evaluación de Microsoft 365
 

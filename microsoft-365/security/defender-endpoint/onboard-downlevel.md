@@ -2,7 +2,7 @@
 title: Incorporación de versiones anteriores de Windows en Microsoft Defender para punto de conexión
 description: Incorporación de versiones anteriores compatibles de dispositivos Windows para que puedan enviar datos del sensor al sensor de Microsoft Defender para punto de conexión
 keywords: onboard, windows, 7, 81, oms, sp1, enterprise, pro, down level
-ms.prod: m365-security
+ms.service: microsoft-365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -13,13 +13,13 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
-ms.technology: mde
-ms.openlocfilehash: 73330ff3dde5daa8d8ec9b2e3f1500e125135db5
-ms.sourcegitcommit: d09eb780dc41a01796eb8137fbe9267231af6746
+ms.subservice: mde
+ms.openlocfilehash: c6a1ead70762ca2eae91d9d697c372dd3b924662
+ms.sourcegitcommit: d3ef9391f621e8f4ca70661184b3bb82c6cbda94
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/19/2022
-ms.locfileid: "67388152"
+ms.lasthandoff: 09/02/2022
+ms.locfileid: "67584581"
 ---
 # <a name="onboard-previous-versions-of-windows"></a>Incorporar versiones anteriores de Windows
 
@@ -181,7 +181,7 @@ Siga los pasos descritos en [Ejecutar una prueba de detección en un dispositivo
 
 ## <a name="onboarding-endpoints-with-no-management-solution"></a>Incorporación de puntos de conexión sin solución de administración 
 
-### <a name="using-group-policy"></a>Uso de directiva de grupo
+### <a name="using-group-policy"></a>Usar la directiva de grupo
 
 **Paso 1: Descargue la actualización correspondiente para el punto de conexión.**
 

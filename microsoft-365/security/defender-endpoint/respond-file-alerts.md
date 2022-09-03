@@ -2,7 +2,7 @@
 title: Realizar acciones de respuesta en un archivo de Microsoft Defender para punto de conexión
 description: Realice acciones de respuesta en alertas relacionadas con archivos al detener y poner en cuarentena un archivo o bloquear un archivo y comprobar los detalles de la actividad.
 keywords: respond, stop and quarantine, block file, deep analysis
-ms.prod: m365-security
+ms.service: microsoft-365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -13,13 +13,13 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
-ms.technology: mde
-ms.openlocfilehash: a70602f9b482196ee949a8f9922f2979b04b3ff4
-ms.sourcegitcommit: 6c2ab5e8efe74d0dc2df610e2d9d2fdda8aaf074
+ms.subservice: mde
+ms.openlocfilehash: 53f9516c327272d2bee517e1a4236caaaedbe736
+ms.sourcegitcommit: d3ef9391f621e8f4ca70661184b3bb82c6cbda94
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/25/2022
-ms.locfileid: "65669306"
+ms.lasthandoff: 09/02/2022
+ms.locfileid: "67581654"
 ---
 # <a name="take-response-actions-on-a-file"></a>Realizar acciones de respuesta en un archivo
 
@@ -69,7 +69,7 @@ Puede contener un ataque en su organización si detiene el proceso malintenciona
 >
 > - El dispositivo en el que va a realizar la acción se ejecuta Windows 10, versión 1703 o posterior y Windows 11
 > - El archivo no pertenece a editores de terceros de confianza o no está firmado por Microsoft
-> - Antivirus de Microsoft Defender debe ejecutarse al menos en modo pasivo. Para obtener más información, consulte [compatibilidad Antivirus de Microsoft Defender](/windows/security/threat-protection/microsoft-defender-antivirus/microsoft-defender-antivirus-compatibility).
+> - Antivirus de Microsoft Defender debe ejecutarse al menos en modo pasivo. Para obtener más información, consulte [Compatibilidad del Antivirus de Microsoft Defender](/windows/security/threat-protection/microsoft-defender-antivirus/microsoft-defender-antivirus-compatibility).
 
 La acción **Detener y poner en cuarentena el archivo** incluye detener los procesos en ejecución, poner en cuarentena los archivos y eliminar datos persistentes, como claves del Registro.
 
@@ -151,11 +151,11 @@ De forma predeterminada, debería poder descargar los archivos que están en cua
 
 ### <a name="download-quarantined-files"></a>Descarga de archivos en cuarentena
 
-Los archivos que Antivirus de Microsoft Defender o el equipo de seguridad han puesto en cuarentena se guardarán de forma compatible según [las configuraciones de envío de ejemplo](enable-cloud-protection-microsoft-defender-antivirus.md). El equipo de seguridad puede descargar los archivos directamente desde la página de detalles del archivo mediante el botón "Descargar archivo". **Esta característica está activada de forma predeterminada**.
+Los archivos que el Antivirus de Microsoft Defender o el equipo de seguridad hayan puesto en cuarentena se guardarán de forma compatible según [las configuraciones de envío de ejemplo](enable-cloud-protection-microsoft-defender-antivirus.md). El equipo de seguridad puede descargar los archivos directamente desde la página de detalles del archivo mediante el botón "Descargar archivo". **Esta característica está activada de forma predeterminada**.
 
 La ubicación depende de la configuración geográfica de su organización (UE, Reino Unido o EE. UU.). Un archivo en cuarentena solo se recopilará una vez por organización. Obtenga más información sobre la protección de datos de Microsoft desde el Portal de confianza de servicios en https://aka.ms/STP.
 
-Tener esta configuración activada puede ayudar a los equipos de seguridad a examinar archivos potencialmente incorrectos e investigar incidentes rápidamente y de una manera menos arriesgada. Sin embargo, si necesita desactivar esta configuración, vaya a **Configuración** \> **Características** \> **avanzadas de puntos** \> de conexión **Descargar archivos en cuarentena** para ajustar la configuración. [Más información sobre las características avanzadas](advanced-features.md)
+Tener esta configuración activada puede ayudar a los equipos de seguridad a examinar archivos potencialmente incorrectos e investigar incidentes rápidamente y de una manera menos arriesgada. Sin embargo, si necesita desactivar esta configuración, vaya a **Configuración** \> **Puntos de conexión** Características \> **avanzadas** \> **Descargar archivos en cuarentena** para ajustar la configuración. [Más información sobre las características avanzadas](advanced-features.md)
 
 #### <a name="backing-up-quarantined-files"></a>Copia de seguridad de archivos en cuarentena
 
@@ -166,11 +166,11 @@ Esta característica no funcionará si el envío de ejemplo está desactivado. S
 > [!IMPORTANT]
 > Descargue los requisitos de archivo en cuarentena:
 >
-> - La organización usa Antivirus de Microsoft Defender en modo activo
+> - Su organización usa antivirus de Microsoft Defender en modo activo
 > - La versión del motor antivirus es 1.1.17300.4 o posterior. Consulte [Versiones mensuales de la plataforma y del motor](manage-updates-baselines-microsoft-defender-antivirus.md#monthly-platform-and-engine-versions)
 > - La protección basada en la nube está habilitada. Consulte [Activación de la protección entregada en la nube](enable-cloud-protection-microsoft-defender-antivirus.md)
 > - El envío de ejemplo está activado
-> - Los dispositivos tienen Windows 10 versión 1703 o posterior, o Windows servidor 2016 o 2019, o Windows Server 2022 o Windows 11
+> - Los dispositivos tienen Windows 10 versión 1703 o posterior, o Windows Server 2016 o 2019, o Windows Server 2022 o Windows 11
 
 ### <a name="collect-files"></a>Recopilar archivos
 
@@ -184,7 +184,7 @@ Evite la propagación de un ataque en su organización mediante la prohibición 
 
 > [!IMPORTANT]
 >
-> - Esta característica está disponible si su organización usa Antivirus de Microsoft Defender y la protección entregada en la nube está habilitada. Para obtener más información, consulte [Administración de la protección entregada en la nube](/windows/security/threat-protection/microsoft-defender-antivirus/deploy-manage-report-microsoft-defender-antivirus).
+> - Esta característica está disponible si su organización usa el Antivirus de Microsoft Defender y la protección entregada en la nube está habilitada. Para obtener más información, consulte [Administración de la protección entregada en la nube](/windows/security/threat-protection/microsoft-defender-antivirus/deploy-manage-report-microsoft-defender-antivirus).
 >
 > - La versión de cliente de Antimalware debe ser 4.18.1901.x o posterior.
 > - Esta característica está diseñada para evitar que se descargue malware sospechoso (o archivos potencialmente malintencionados) desde la web. Actualmente admite archivos ejecutables portátiles (PE), _incluidos archivos.exe_ y _.dll_ . La cobertura se ampliará con el tiempo.

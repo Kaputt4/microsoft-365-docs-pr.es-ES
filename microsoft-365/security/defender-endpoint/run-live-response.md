@@ -3,7 +3,7 @@ title: Ejecución de comandos de respuesta en directo en un dispositivo
 description: Obtenga información sobre cómo ejecutar una secuencia de comandos de respuesta dinámica en un dispositivo.
 keywords: api, graph api, api admitidas, carga en la biblioteca
 search.appverid: met150
-ms.prod: m365-security
+ms.service: microsoft-365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -16,14 +16,14 @@ manager: dansimp
 audience: ITPro
 ms.collection: m365-security-compliance
 ms.topic: article
-ms.technology: mde
+ms.subservice: mde
 ms.custom: api
-ms.openlocfilehash: 6ffed96a1587a656687826c8faee54dc57826a14
-ms.sourcegitcommit: 217108c59be41b01963a393b4f16d137636fe6a8
+ms.openlocfilehash: e815af864aa66173a7ce110948c4cd8e9e19be35
+ms.sourcegitcommit: d3ef9391f621e8f4ca70661184b3bb82c6cbda94
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/12/2022
-ms.locfileid: "67331437"
+ms.lasthandoff: 09/02/2022
+ms.locfileid: "67577902"
 ---
 # <a name="run-live-response-commands-on-a-device"></a>Ejecución de comandos de respuesta en directo en un dispositivo
 

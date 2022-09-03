@@ -6,19 +6,19 @@ author: brendacarter
 manager: bcarter
 ms.audience: ITPro
 ms.topic: article
-ms.prod: microsoft-365-enterprise
+ms.service: microsoft-365-enterprise
 ms.localizationpriority: medium
 ms.collection:
 - M365-identity-device-management
 - M365-security-compliance
 ms.custom: ''
 f1.keywords: NOCSH
-ms.openlocfilehash: 5f90e4616edd3534baefd64bba5a2eec640f6366
-ms.sourcegitcommit: 195e4734d9a6e8e72bd355ee9f8bca1f18577615
+ms.openlocfilehash: fccc7c7eb84b55ab974e687cb90672d0775f1209
+ms.sourcegitcommit: d3ef9391f621e8f4ca70661184b3bb82c6cbda94
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/13/2022
-ms.locfileid: "64823946"
+ms.lasthandoff: 09/02/2022
+ms.locfileid: "67581298"
 ---
 # <a name="networking-up-to-the-cloudone-architects-viewpoint"></a>Conexión de red (en la nube): el punto de vista de un arquitecto
 
@@ -28,7 +28,7 @@ En este artículo, [Ed Fisher](https://www.linkedin.com/in/edfisher/), arquitect
 
 ![Foto de Ed Fisher.](../media/solutions-architecture-center/ed-fisher-networking.jpg)
 
-Actualmente soy especialista técnico principal en nuestro equipo de minoristas y bienes de consumo, centrándome en seguridad & cumplimiento. He trabajado con clientes que se mudan a Office 365 durante los últimos diez años. He trabajado con tiendas más pequeñas con un puñado de ubicaciones para agencias gubernamentales y empresas con millones de usuarios distribuidos por todo el mundo, y muchos otros clientes en el medio, con la mayoría con decenas de miles de usuarios, varias ubicaciones en varias partes del mundo, la necesidad de un mayor grado de seguridad y una gran cantidad de requisitos de cumplimiento. He ayudado a cientos de empresas y millones de usuarios a migrar a la nube de forma segura y segura.
+Actualmente soy un especialista técnico principal en nuestro equipo de minoristas y bienes de consumo, centrándome en seguridad & cumplimiento. He trabajado con clientes que se mudan a Office 365 durante los últimos diez años. He trabajado con tiendas más pequeñas con un puñado de ubicaciones para agencias gubernamentales y empresas con millones de usuarios distribuidos por todo el mundo, y muchos otros clientes en el medio, con la mayoría con decenas de miles de usuarios, varias ubicaciones en varias partes del mundo, la necesidad de un mayor grado de seguridad y una gran cantidad de requisitos de cumplimiento. He ayudado a cientos de empresas y millones de usuarios a migrar a la nube de forma segura y segura.
 
 Con una experiencia en los últimos 25 años que incluye la seguridad, la infraestructura y la ingeniería de red, y haber movido a dos de mis empleadores anteriores a Office 365 antes de unirse a Microsoft, he estado de su lado muchas veces, y recuerde lo que es eso. Aunque ninguno de los dos clientes es nunca el mismo, la mayoría tiene necesidades similares y, al consumir un servicio estandarizado como cualquier plataforma SaaS o PaaS, los mejores enfoques tienden a ser los mismos.
 
@@ -36,7 +36,7 @@ Con una experiencia en los últimos 25 años que incluye la seguridad, la infrae
 
 No importa cuántas veces se produzca, nunca deja de sorprenderme cómo los equipos de seguridad *creativos* y los equipos de redes intentan obtener información sobre cómo creen que deben conectarse a los servicios en la nube de Microsoft. Siempre hay alguna directiva de seguridad, estándar de cumplimiento o mejor manera en la que insisten en usar, sin estar dispuestos a participar en una conversación sobre lo que están intentando lograr o *cómo* hay formas mejores, más fáciles, más rentables y más eficaces de hacerlo.
 
-Cuando este tipo de cosas se escalan a mí, normalmente estoy dispuesto a aceptar el desafío y guiarlos a través de los cánones y los por qué y llevarlos a donde necesitan estar. Pero si estoy siendo completamente franco, tengo que compartir que a veces quiero dejar que hagan lo que quieran, y volver a decir que te lo dije cuando finalmente lo conceden no funciona. Puede que quiera hacerlo a veces, pero *no* lo hago. Lo que hago es tratar de explicar todo lo que voy a incluir en este post. Independientemente de su rol, si su organización quiere usar los servicios en la nube de Microsoft, probablemente haya algo de sabiduría en lo siguiente que puede ayudarle.
+Cuando este tipo de cosas se escalan a mí, normalmente estoy dispuesto a aceptar el desafío y guiarlos a través de los cánones y los por qué y llevarlos a donde necesitan estar. Pero si estoy siendo completamente franco, tengo que compartir que a veces quiero dejar que hagan lo que quieran, y volver a decir que te lo dije cuando finalmente conceden que no funciona. Puede que quiera hacerlo a veces, pero *no* lo hago. Lo que hago es intentar explicar todo lo que voy a incluir en este post. Independientemente de su rol, si su organización quiere usar los servicios en la nube de Microsoft, probablemente haya algo de sabiduría en lo siguiente que puede ayudarle.
 
 ## <a name="guiding-principles"></a>Principios rectores
 
@@ -56,7 +56,7 @@ Aunque hay muchos lugares donde se toman decisiones incorrectas en nombre de la 
 
 ### <a name="insufficient-resources-at-the-edge"></a>Recursos insuficientes en el perímetro
 
-Muy pocos clientes están implementando entornos de campo verde y tienen años de experiencia con cómo funcionan sus usuarios y cómo es su salida de Internet. Tanto si los clientes tienen servidores proxy como si permiten el acceso directo y simplemente el tráfico de salida NAT, lo han estado haciendo durante años y no tienen en cuenta cuánto más van a empezar a bombear a través de su perímetro, ya que mueven tradicionalmente las aplicaciones internas a la nube.
+Muy pocos clientes están implementando entornos de campo verde y tienen años de experiencia con cómo funcionan sus usuarios y cómo es su salida de Internet. Tanto si los clientes tienen servidores proxy como si permiten el acceso directo y simplemente el tráfico saliente de NAT, lo han estado haciendo durante años y no tienen en cuenta cuánto más van a empezar a bombear a través de su perímetro, ya que mueven tradicionalmente las aplicaciones internas a la nube.
 
 El ancho de banda siempre es un problema, pero es posible que los dispositivos NAT no tengan suficiente potencia para controlar el aumento de la carga y puedan empezar a cerrar prematuramente las conexiones para liberar recursos. La mayoría del software cliente que se conecta a Office 365 espera conexiones persistentes y un usuario que usa completamente Office 365 puede tener 32 o más conexiones simultáneas. Si el dispositivo NAT los está quitando prematuramente, esas aplicaciones pueden dejar de responder cuando intentan usar las conexiones que ya no están allí. Cuando se dan por vencieron e intentan establecer nuevas conexiones, ponen aún más carga en el engranaje de red.
 
@@ -70,9 +70,9 @@ Por supuesto, para que un cliente encuentre cualquier punto de conexión, debe u
 
 ### <a name="to-proxy-or-not-to-proxy-that-is-the-question"></a>Para proxy o no para proxy, esa es la pregunta
 
-Una de las primeras cosas que hay que tener en cuenta es si se van a proxy las conexiones de los usuarios a Office 365. Que uno es fácil; no haga proxy. Office 365 se accede a través de Internet, pero no es Internet. Es una extensión de los servicios principales y debe tratarse como tal. Cualquier cosa que quiera que haga un proxy, como DLP o antimalware o inspección de contenido, ya está disponible en el servicio y se puede usar a escala y sin necesidad de descifrar las conexiones cifradas con TLS. Pero si realmente desea proxy de tráfico que no puede controlar de otro modo, preste atención a nuestra guía en [https://aka.ms/pnc](../enterprise/microsoft-365-network-connectivity-principles.md) y las categorías de tráfico en [https://aka.ms/ipaddrs](../enterprise/urls-and-ip-address-ranges.md). Tenemos tres categorías de tráfico para Office 365. Optimizar y permitir realmente debe ir directo y omitir el proxy. El valor predeterminado se puede proxy. Los detalles están en esos documentos... léelas.
+Una de las primeras cosas que hay que tener en cuenta es si se van a proxy las conexiones de los usuarios a Office 365. Que uno es fácil; no proxy. Office 365 se accede a través de Internet, pero no es Internet. Es una extensión de los servicios principales y debe tratarse como tal. Cualquier cosa que quiera que haga un proxy, como DLP o antimalware o inspección de contenido, ya está disponible en el servicio y se puede usar a escala y sin necesidad de descifrar las conexiones cifradas con TLS. Pero si realmente desea proxy de tráfico que no se puede controlar de otro modo, preste atención a nuestra guía en [https://aka.ms/pnc](../enterprise/microsoft-365-network-connectivity-principles.md) y las categorías de tráfico en [https://aka.ms/ipaddrs](../enterprise/urls-and-ip-address-ranges.md). Tenemos tres categorías de tráfico para Office 365. Optimizar y permitir realmente debe ir directo y omitir el proxy. El valor predeterminado se puede proxy. Los detalles están en esos documentos... léelas.
 
-La mayoría de los clientes que insisten en usar un proxy, cuando realmente miran lo que están haciendo, se dan cuenta de que cuando el cliente realiza una solicitud HTTP CONNECT al proxy, el proxy es ahora solo un enrutador adicional costoso. Los protocolos en uso, como MAPI y RTC, no son ni siquiera protocolos que los servidores proxy web entienden, por lo que incluso con el descifrado de TLS no se obtiene realmente ninguna seguridad adicional. *Obtiene una* latencia adicional. Para obtener [https://aka.ms/pnc](../enterprise/microsoft-365-network-connectivity-principles.md) más información sobre esto, incluidas las categorías Optimizar, Permitir y Predeterminado para Microsoft 365 tráfico.
+La mayoría de los clientes que insisten en usar un proxy, cuando realmente miran lo que están haciendo, se dan cuenta de que cuando el cliente realiza una solicitud HTTP CONNECT al proxy, el proxy es ahora solo un enrutador adicional costoso. Los protocolos en uso, como MAPI y RTC, ni siquiera son protocolos que los servidores proxy web entienden, por lo que incluso con el descifrado de TLS no se obtiene realmente ninguna seguridad adicional. Obtiene una latencia adicional. Para obtener [https://aka.ms/pnc](../enterprise/microsoft-365-network-connectivity-principles.md) más información sobre esto, incluidas las categorías Optimizar, Permitir y Predeterminado para el tráfico de Microsoft 365.
 
 Por último, tenga en cuenta el impacto general para el proxy y su respuesta correspondiente para abordar ese impacto. A medida que se realizan más y más conexiones a través del proxy, puede reducir el factor de escala TCP para que no tenga que almacenar en búfer tanto tráfico. He visto a los clientes donde sus servidores proxy estaban tan sobrecargados que estaban usando un factor de escala de 0. Dado que factor de escala es un valor exponencial y nos gusta usar 8, cada reducción en el valor del factor de escala es un gran impacto negativo en el rendimiento.
 
@@ -80,7 +80,7 @@ Inspección tls significa seguridad! ¡Pero en realidad no! Muchos clientes con 
 
 ### <a name="streaming-isnt-important-except-that-it-is"></a>El streaming no es importante, salvo que *es*
 
-Los únicos servicios de Office 365 que usan UDP se Skype (próximamente se retirarán) y Microsoft Teams. Teams usa UDP para el tráfico de streaming, incluido el uso compartido de audio, vídeo y presentación. El tráfico de streaming está en directo, como cuando se tiene una reunión en línea con voz, vídeo y presentación de barajas o la realización de demostraciones. Estos usan UDP porque si los paquetes se quitan o llegan fuera de orden, es prácticamente imperceptible para el usuario y la secuencia puede continuar.
+Los únicos servicios de Office 365 que usan UDP son Skype (que pronto se retirará) y Microsoft Teams. Teams usa UDP para el tráfico de streaming, incluido el uso compartido de audio, vídeo y presentación. El tráfico de streaming está en directo, como cuando se tiene una reunión en línea con voz, vídeo y presentación de barajas o la realización de demostraciones. Estos usan UDP porque si los paquetes se quitan o llegan fuera de orden, es prácticamente imperceptible para el usuario y la secuencia puede continuar.
 
 Cuando no permite el tráfico UDP saliente de los clientes al servicio, pueden volver a usar TCP. Pero si se quita un paquete TCP, *todo se detiene* hasta que expira el tiempo de espera de retransmisión (RTO) y se puede retransmitir el paquete que falta. Si un paquete llega fuera de orden, todo se detiene hasta que llegan los otros paquetes y se pueden volver a ensamblar en orden. Ambos provocan problemas perceptibles en el audio (¿recuerdas Max Headroom?) y vídeo (has hecho clic en algo... oh, ahí está) y conducir a un rendimiento deficiente y una mala experiencia de usuario. ¿Y recuerdas lo que puse anteriormente sobre los servidores proxy? Cuando se fuerza a un cliente de Teams a usar un proxy, se fuerza a usar TCP. Por lo tanto, ahora está causando impactos negativos en el rendimiento dos veces.
 
@@ -88,7 +88,7 @@ Cuando no permite el tráfico UDP saliente de los clientes al servicio, pueden v
 
 Pero no lo es. Todas las conexiones a Office 365 se realizan a través de TLS. Hemos estado ofreciendo TLS 1.2 durante bastante tiempo y pronto deshabilitaremos las versiones anteriores porque los clientes heredados todavía las usan y eso es un riesgo.
 
-Forzar una conexión TLS, o 32 de ellas, para pasar por una VPN antes de ir al servicio no agrega seguridad. Agrega latencia y reduce el rendimiento general. En algunas soluciones de VPN, incluso obliga a UDP a tunelizar a través de TCP, lo que de nuevo tendrá un impacto muy negativo en el tráfico de streaming. Y, a menos que realice la inspección de TLS, no hay ningún inconveniente, todo al revés. Un tema muy común entre los clientes, ahora que la mayoría de su personal es remota, es que están viendo impactos significativos en el ancho de banda y el rendimiento al hacer que todos sus usuarios se conecten mediante una VPN, en lugar de configurar la tunelización dividida para el acceso a [la categoría Optimize Office 365 puntos de conexión](../enterprise/microsoft-365-network-connectivity-principles.md#new-office-365-endpoint-categories).
+Forzar una conexión TLS, o 32 de ellas, para pasar por una VPN antes de ir al servicio no agrega seguridad. Agrega latencia y reduce el rendimiento general. En algunas soluciones de VPN, incluso obliga a UDP a tunelizar a través de TCP, lo que de nuevo tendrá un impacto muy negativo en el tráfico de streaming. Y, a menos que realice la inspección de TLS, no hay ningún inconveniente. Un tema muy común entre los clientes, ahora que la mayoría de su personal es remota, es que están viendo impactos significativos en el ancho de banda y el rendimiento al hacer que todos sus usuarios se conecten mediante una VPN, en lugar de configurar la tunelización dividida para el acceso a [la categoría Optimize Office 365 puntos de conexión](../enterprise/microsoft-365-network-connectivity-principles.md#new-office-365-endpoint-categories).
 
 Es una solución fácil de hacer tunelización dividida y es una que debe hacer. Para obtener más información, asegúrese de revisar [Optimizar la conectividad Office 365 para usuarios remotos mediante la tunelización dividida de VPN](../enterprise/microsoft-365-vpn-split-tunnel.md).
 

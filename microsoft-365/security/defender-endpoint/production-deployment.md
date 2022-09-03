@@ -2,7 +2,7 @@
 title: Configuración de Microsoft Defender para punto de conexión implementación
 description: Aprenda a configurar la implementación para Microsoft Defender para punto de conexión
 keywords: deploy, setup, licensing validation, tenant configuration, network configuration
-ms.prod: m365-security
+ms.service: microsoft-365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -15,15 +15,16 @@ ms.collection:
 - M365-security-compliance
 - m365solution-endpointprotect
 - m365solution-scenario
+- highpri
 ms.custom: admindeeplinkDEFENDER
 ms.topic: article
-ms.technology: mde
-ms.openlocfilehash: bae66223494d8de98737516cef1a2c407d7d1a6a
-ms.sourcegitcommit: ac0ae5c2888e2b323e36bad041a4abef196c9c96
+ms.subservice: mde
+ms.openlocfilehash: abfa6200a1250ff9fda8cf30c6106a39eff4f25b
+ms.sourcegitcommit: d3ef9391f621e8f4ca70661184b3bb82c6cbda94
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/12/2022
-ms.locfileid: "64783543"
+ms.lasthandoff: 09/02/2022
+ms.locfileid: "67584846"
 ---
 # <a name="set-up-microsoft-defender-for-endpoint-deployment"></a>Configuración de Microsoft Defender para punto de conexión implementación
 
@@ -51,13 +52,13 @@ En este escenario de implementación, se le guiará por los pasos siguientes:
 - Configuración de red
 
 > [!NOTE]
-> Con el fin de guiarle a través de una implementación típica, este escenario solo cubrirá el uso de Microsoft Endpoint Configuration Manager. Defender para punto de conexión admite el uso de otras herramientas de incorporación, pero no cubrirá esos escenarios en la guía de implementación. Para obtener más información, consulte [Incorporación de dispositivos a Microsoft Defender para punto de conexión](onboard-configure.md).
+> Con el fin de guiarle a través de una implementación típica, este escenario solo cubrirá el uso del punto de conexión de Microsoft Configuration Manager. Defender para punto de conexión admite el uso de otras herramientas de incorporación, pero no cubrirá esos escenarios en la guía de implementación. Para obtener más información, consulte [Incorporación de dispositivos a Microsoft Defender para punto de conexión](onboard-configure.md).
 
 ## <a name="check-license-state"></a>Comprobación del estado de la licencia
 
-La comprobación del estado de la licencia y si se aprovisionó correctamente se puede realizar a través del centro de administración o a través del **portal de Microsoft Azure**.
+La comprobación del estado de la licencia y si se aprovisionó correctamente se puede realizar a través del Centro de administración o a través de **Microsoft Azure Portal**.
 
-1. Para ver las licencias, vaya al **portal de Microsoft Azure** y vaya a la [sección Microsoft Azure licencia del portal](https://portal.azure.com/#blade/Microsoft_AAD_IAM/LicensesMenuBlade/Products).
+1. Para ver las licencias, vaya a Microsoft **Azure Portal** y vaya a la [sección Licencia de Microsoft Azure Portal](https://portal.azure.com/#blade/Microsoft_AAD_IAM/LicensesMenuBlade/Products).
 
    :::image type="content" source="images/atp-licensing-azure-portal.png" alt-text="Página Licencias de Azure" lightbox="images/atp-licensing-azure-portal.png":::
 
@@ -73,7 +74,7 @@ Para obtener acceso a las licencias que se aprovisionan en su empresa y comproba
 
 1. En el **portal de partners**, seleccione **Administrar servicios > Office 365**.
 
-2. Al hacer clic en el vínculo **Portal de partners** , se abrirá la opción **Admin on behalf (Administrador en nombre** ) y se le proporcionará acceso al centro de administración del cliente.
+2. Al hacer clic en el vínculo **Portal de partners**, se abrirá la opción **Administración en nombre** y se le dará acceso al centro de administración del cliente.
 
    :::image type="content" source="images/atp-O365-admin-portal-customer.png" alt-text="El portal de administración de Office 365" lightbox="images/atp-O365-admin-portal-customer.png":::
 
@@ -84,13 +85,13 @@ La incorporación a Microsoft Defender para punto de conexión es fácil. En el 
 Desde un explorador web, vaya al <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">portal de Microsoft 365 Defender</a>.
 
 ## <a name="data-center-location"></a>Ubicación del centro de datos
-Microsoft Defender para punto de conexión almacenará y procesará los datos en la [misma ubicación que la usada por Microsoft 365 Defender](/microsoft-365/security/defender/m365d-enable). Si aún no se ha activado Microsoft 365 Defender, la incorporación a Microsoft Defender para punto de conexión también activará Microsoft 365 Defender y se seleccionará automáticamente una nueva ubicación del centro de datos en función de la ubicación de activo. Microsoft 365 servicios de seguridad. La ubicación del centro de datos seleccionada se muestra en la pantalla.
+Microsoft Defender para punto de conexión almacenará y procesará los datos en la [misma ubicación que la usada por Microsoft 365 Defender](/microsoft-365/security/defender/m365d-enable). Si aún no se ha activado Microsoft 365 Defender, la incorporación a Microsoft Defender para punto de conexión también activará Microsoft 365 Defender y se seleccionará automáticamente una nueva ubicación del centro de datos en función de la ubicación de los servicios de seguridad de Microsoft 365 activos. La ubicación del centro de datos seleccionada se muestra en la pantalla.
 
 ## <a name="network-configuration"></a>Configuración de red
 
 Si la organización no requiere que los puntos de conexión usen un proxy para acceder a Internet, omita esta sección.
 
-El sensor de Microsoft Defender para punto de conexión requiere HTTP de Microsoft Windows (WinHTTP) para informar los datos del sensor y comunicarse con el servicio Microsoft Defender para punto de conexión. El sensor de Microsoft Defender para punto de conexión incrustado se ejecuta en el contexto del sistema mediante la cuenta LocalSystem. El sensor usa los servicios HTTP de Microsoft Windows (WinHTTP) para habilitar la comunicación con el servicio en la nube Microsoft Defender para punto de conexión. La configuración de WinHTTP es independiente de la configuración del proxy de exploración de Internet Windows Internet (WinINet) y solo puede detectar un servidor proxy mediante los siguientes métodos de detección:
+El sensor de Microsoft Defender para punto de conexión requiere HTTP de Microsoft Windows (WinHTTP) para informar los datos del sensor y comunicarse con el servicio Microsoft Defender para punto de conexión. El sensor de Microsoft Defender para punto de conexión incrustado se ejecuta en el contexto del sistema mediante la cuenta LocalSystem. El sensor usa los servicios HTTP de Microsoft Windows (WinHTTP) para habilitar la comunicación con el servicio en la nube Microsoft Defender para punto de conexión. La configuración de WinHTTP es independiente de la configuración del proxy de exploración de Internet de Windows Internet (WinINet) y solo puede detectar un servidor proxy mediante los siguientes métodos de detección:
 
 - **Métodos de detección automática**:
   - Proxy transparente
@@ -108,18 +109,18 @@ El sensor de Microsoft Defender para punto de conexión requiere HTTP de Microso
 
 Configure un proxy estático basado en el Registro para permitir que solo Microsoft Defender para punto de conexión sensor informe de datos de diagnóstico y se comunique con Microsoft Defender para punto de conexión servicios si un equipo no tiene permiso para conectarse a Internet. El proxy estático se puede configurar mediante la directiva de grupo (GP). La directiva de grupo se puede encontrar aquí:
 
-- Plantillas \> administrativas Windows compilaciones de recopilación de datos y versión preliminar de \> componentes \> Configurar el uso del proxy autenticado para el servicio de telemetría y experiencia del usuario conectado
+- Plantillas \> administrativas: recopilación de datos de componentes \> de Windows y compilaciones \> en versión preliminar Configurar el uso del proxy autenticado para el servicio de telemetría y experiencia del usuario conectado
 - Establézcalo **en Habilitado** y seleccione **Deshabilitar el uso del proxy autenticado**.
 
 1. Abra la Consola de administración de directivas de grupo.
 2. Cree una directiva o edite una directiva existente basada en las prácticas de la organización.
-3. Edite el directiva de grupo y vaya a **Plantillas \> administrativas Windows Recopilación de datos de componentes \> y Compilaciones \> en versión preliminar Configure Authenticated Proxy usage for the Connected User Experience and Telemetry Service (Configurar el uso del proxy autenticado para el servicio de telemetría y experiencia del usuario conectado).**
+3. Edite el directiva de grupo y vaya a **Plantillas \> administrativas Componentes \> de Windows Recopilación de datos y Compilaciones \> en versión preliminar Configure Authenticated Proxy usage for the Connected User Experience and Telemetry Service (Configurar el uso del proxy autenticado para el servicio de telemetría y experiencia del usuario conectado).**
 
    :::image type="content" source="images/atp-gpo-proxy1.png" alt-text="Opciones relacionadas con la configuración de la directiva de uso" lightbox="images/atp-gpo-proxy1.png":::
 
 4. Seleccione **Habilitado**.
 5. Seleccione **Deshabilitar el uso del proxy autenticado**.
-6. Vaya a **Plantillas \> administrativas Windows Recopilación de datos de componentes \> y Compilaciones en versión preliminar Configure connected user experiences and telemetry (Configurar la telemetría y las experiencias de usuario conectadas\>**).
+6. Vaya a **Plantillas \> administrativas Recopilación de datos de componentes \> de Windows y Compilaciones \> en versión preliminar Configure connected user experiences and telemetry (Configurar experiencias de usuario conectadas y telemetría**).
 
    :::image type="content" source="images/atp-gpo-proxy2.png" alt-text="Las opciones relacionadas con la configuración de la experiencia del usuario conectado y la telemetría" lightbox="images/atp-gpo-proxy2.png":::
 
@@ -161,7 +162,7 @@ Use netsh para configurar un proxy estático en todo el sistema.
 
 ### <a name="proxy-configuration-for-down-level-devices"></a>Configuración de proxy para dispositivos de nivel inferior
 
-Down-Level dispositivos incluyen estaciones de trabajo Windows 7 SP1 y Windows 8.1, así como Windows Server 2008 R2 y otros sistemas operativos de servidor que se han incorporado anteriormente mediante el Microsoft Monitoring Agent. Estos sistemas operativos tendrán el proxy configurado como parte del Agente de administración de Microsoft para controlar la comunicación desde el punto de conexión a Azure. Consulte la Guía de implementación rápida del Agente de administración de Microsoft para obtener información sobre cómo se configura un proxy en estos dispositivos.
+Down-Level dispositivos incluyen estaciones de trabajo de Windows 7 SP1 y Windows 8.1, así como Windows Server 2008 R2 y otros sistemas operativos de servidor que se han incorporado anteriormente mediante Microsoft Monitoring Agent. Estos sistemas operativos tendrán el proxy configurado como parte del Agente de administración de Microsoft para controlar la comunicación desde el punto de conexión a Azure. Consulte la Guía de implementación rápida del Agente de administración de Microsoft para obtener información sobre cómo se configura un proxy en estos dispositivos.
 
 ### <a name="proxy-service-urls"></a>Direcciones URL del servicio proxy
 

@@ -2,7 +2,7 @@
 title: Propiedades y métodos estáticos
 description: Recupera las alertas recientes principales.
 keywords: apis, graph api, api admitidas, get, alerts, recent
-ms.prod: m365-security
+ms.service: microsoft-365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -13,14 +13,14 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
-ms.technology: mde
+ms.subservice: mde
 ms.custom: api
-ms.openlocfilehash: d629678e9b03e3abcb0ed88781d4943a137ba7b3
-ms.sourcegitcommit: 217108c59be41b01963a393b4f16d137636fe6a8
+ms.openlocfilehash: 25e9df7e74dc1e0f214f4588fa32c51364df8778
+ms.sourcegitcommit: d3ef9391f621e8f4ca70661184b3bb82c6cbda94
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/12/2022
-ms.locfileid: "67331607"
+ms.lasthandoff: 09/02/2022
+ms.locfileid: "67581676"
 ---
 # <a name="recommendation-resource-type"></a>Tipo de recurso de recomendación
 
@@ -75,7 +75,7 @@ ms.locfileid: "67331607"
 |severityScore|Doble|Posible impacto de la configuración en la Puntuación de seguridad de Microsoft para dispositivos de la organización (1-10)|
 |publicExploit|Boolean|La vulnerabilidad de seguridad pública está disponible|
 |activeAlert|Boolean|La alerta activa está asociada a esta recomendación|
-|associatedThreats|Colección de cadenas|El informe de análisis de amenazas está asociado a esta recomendación|
+|associatedThreats|Colección string|El informe de análisis de amenazas está asociado a esta recomendación|
 |remediationType|Cadena|Tipo de corrección. Los valores posibles son: "ConfigurationChange","Update","Upgrade","Uninstall"|
 |Estado|Enum|Estado de excepción de recomendación. Los valores posibles son: "Active" y "Exception"|
 |configScoreImpact|Doble|Impacto en la puntuación de seguridad de Microsoft para dispositivos|

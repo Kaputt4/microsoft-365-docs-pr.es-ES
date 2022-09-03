@@ -6,7 +6,7 @@ manager: pamgreen
 ms.reviewer: ssquires
 audience: admin
 ms.topic: article
-ms.prod: microsoft-365-enterprise
+ms.service: microsoft-365-enterprise
 search.appverid: ''
 ms.collection:
 - enabler-strategic
@@ -14,12 +14,12 @@ ms.collection:
 ms.custom: admindeeplinkSPO
 ms.localizationpriority: medium
 description: Aprenda cómo crear un clasificador en Microsoft SharePoint Syntex
-ms.openlocfilehash: 6c47d2fe2f7f2b67533587f0956281c2b577dbe0
-ms.sourcegitcommit: 23e186b46b27a6a4863f507a52a11105afae9726
+ms.openlocfilehash: 6069f22466372b09b744056218827119b6a73f34
+ms.sourcegitcommit: d3ef9391f621e8f4ca70661184b3bb82c6cbda94
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/15/2022
-ms.locfileid: "64882382"
+ms.lasthandoff: 09/02/2022
+ms.locfileid: "67583855"
 ---
 # <a name="create-a-classifier-in-microsoft-sharepoint-syntex"></a>Crear un clasificador en Microsoft SharePoint Syntex
 
@@ -146,7 +146,7 @@ Si recibe una coincidencia en sus archivos de muestra etiquetados, ahora puede p
 
     ![Prueba de archivos sin etiquetar.](../media/content-understanding/test-on-files.png) 
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 [Crear un extractor](create-an-extractor.md)
 
