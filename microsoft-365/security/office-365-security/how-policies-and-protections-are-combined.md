@@ -15,25 +15,25 @@ ms.collection:
 ms.custom:
 - seo-marvel-apr2020
 description: Los administradores pueden obtener información sobre el orden de las protecciones de la aplicación en Exchange Online Protection (EOP) y cómo el valor de prioridad de las directivas de protección determina qué directiva se aplica.
-ms.technology: mdo
-ms.prod: m365-security
-ms.openlocfilehash: 8b7bf48de0939ec913982feb399b38dc2c540157
-ms.sourcegitcommit: ebbe8713297675db5dcb3e0d9c3ae5e746b99196
+ms.subservice: mdo
+ms.service: microsoft-365-security
+ms.openlocfilehash: b976c738bb77d6a6e3264e1e1cde76a7afdfe005
+ms.sourcegitcommit: 2b89bcff547e00be3d38dc8d1e6cbcf8f41eba42
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/14/2022
-ms.locfileid: "65417762"
+ms.lasthandoff: 09/03/2022
+ms.locfileid: "67598371"
 ---
 # <a name="order-and-precedence-of-email-protection"></a>Orden y prioridad de la protección por correo electrónico
 
-[!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
+[!INCLUDE [MDO Trial banner](../includes/mdo-trial-banner.md)]
 
 **Se aplica a**
 - [Exchange Online Protection](exchange-online-protection-overview.md)
 - [Plan 1 y Plan 2 de Microsoft Defender para Office 365](defender-for-office-365.md)
 - [Microsoft 365 Defender](../defender/microsoft-365-defender.md)
 
-En Microsoft 365 organizaciones con buzones de correo en organizaciones Exchange Online o independientes de Exchange Online Protection (EOP) sin Exchange Online buzones, el correo electrónico entrante puede marcarse mediante varias formas de protección. Por ejemplo, las directivas integradas contra phishing en EOP que están disponibles para todos los clientes Microsoft 365 y las directivas anti phishing más sólidas que están disponibles para Microsoft Defender para Office 365 clientes. Los mensajes también pasan a través de varios exámenes de detección de malware, spam, phishing, etc. Dada toda esta actividad, puede haber cierta confusión en cuanto a qué directiva se aplica.
+En las organizaciones de Microsoft 365 con buzones en Exchange Online o organizaciones independientes de Exchange Online Protection (EOP) sin buzones de correo Exchange Online, el correo electrónico entrante puede marcarse mediante varias formas de protección. Por ejemplo, las directivas integradas contra phishing en EOP que están disponibles para todos los clientes de Microsoft 365 y las directivas anti phishing más sólidas que están disponibles para Microsoft Defender para Office 365 clientes. Los mensajes también pasan a través de varios exámenes de detección de malware, spam, phishing, etc. Dada toda esta actividad, puede haber cierta confusión en cuanto a qué directiva se aplica.
 
 En general, una directiva que se aplica a un mensaje se identifica en el encabezado **X-Forefront-Antispam-Report** de la propiedad **CAT (Category).** Para obtener más información, vea [Encabezados de mensajes de correo no deseado](anti-spam-message-headers.md).
 
@@ -41,12 +41,12 @@ Hay dos factores principales que determinan qué directiva se aplica a un mensaj
 
 - **Orden de procesamiento del tipo de protección de correo electrónico**: este pedido no es configurable y se describe en la tabla siguiente:
 
-  |Orden|Protección por correo electrónico|Categoría|Dónde administrar|
+  |Order|protección Email|Categoría|Dónde administrar|
   |:---:|---|---|---|
-  |1 |Malware|CAT:MALW|[Configuración de directivas antimalware en EOP](configure-anti-malware-policies.md)|
-  |2 |Phishing|CAT:PHSH|[Configuración de directivas contra correo no deseado en EOP](configure-your-spam-filter-policies.md)|
-  |3 |Correo no deseado de alta confianza|CAT:HSPM|[Configuración de directivas contra correo no deseado en EOP](configure-your-spam-filter-policies.md)|
-  |4 |Suplantación|CAT:SPOOF|[Información de inteligencia sobre suplantación de identidad en EOP](learn-about-spoof-intelligence.md)|
+  |1|Malware|CAT:MALW|[Configuración de directivas antimalware en EOP](configure-anti-malware-policies.md)|
+  |2|Phishing|CAT:PHSH|[Configuración de directivas contra correo no deseado en EOP](configure-your-spam-filter-policies.md)|
+  |3|Correo no deseado de alta confianza|CAT:HSPM|[Configuración de directivas contra correo no deseado en EOP](configure-your-spam-filter-policies.md)|
+  |4|Suplantación|CAT:SPOOF|[Información de inteligencia sobre suplantación de identidad en EOP](learn-about-spoof-intelligence.md)|
   |5<sup>\*</sup>|Suplantación de usuario (usuarios protegidos)|UIMP|[Configuración de directivas contra phishing en Microsoft Defender para Office 365](configure-mdo-anti-phishing-policies.md)|
   |6<sup>\*</sup>|Suplantación de dominio (dominios protegidos)|DIMP|[Configuración de directivas contra phishing en Microsoft Defender para Office 365](configure-mdo-anti-phishing-policies.md)|
   |7 |Correo no deseado|CAT:SPM|[Configuración de directivas contra correo no deseado en EOP](configure-your-spam-filter-policies.md)|
@@ -61,10 +61,10 @@ Hay dos factores principales que determinan qué directiva se aplica a un mensaj
 
 Por ejemplo, considere las siguientes **directivas contra suplantación de identidad** en Microsoft Defender para Office 365 **que se aplican a los mismos usuarios** y un mensaje que se identifica como **suplantación de usuario y suplantación de identidad**:
 
-|Nombre de la directiva|Prioridad|Suplantación de usuario|Directiva contra la suplantación|
+|Nombre de la directiva|Prioridad|Suplantación de usuario|Protección contra la suplantación de identidad|
 |---|:---:|:---:|:---:|
-|Directiva A|1 |Activada|Desactivada|
-|Directiva B|2 |Desactivada|Activada|
+|Directiva A|1|Activada|Desactivada|
+|Directiva B|2|Desactivada|Activada|
 
 1. El mensaje se identifica como suplantación, porque la suplantación (4) se evalúa antes de la suplantación de usuario (5).
 2. La directiva A se aplica primero porque tiene una prioridad mayor que la directiva B.

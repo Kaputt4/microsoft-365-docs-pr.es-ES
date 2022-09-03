@@ -16,14 +16,14 @@ ms.collection:
 ms.custom:
 - seo-marvel-apr2020
 description: La cadena de recepción autenticada (ARC) es la autenticación del correo electrónico que intenta preservar los resultados de la autenticación a través de los dispositivos y cualquier flujo de correo indirecto que se interponga entre el remitente y el destinatario. Aquí se muestra cómo realizar excepciones para los remitentes ARC de confianza.
-ms.technology: mdo
-ms.prod: m365-security
-ms.openlocfilehash: c6845fd9137029ebebd031550e145aef8ffc1440
-ms.sourcegitcommit: ec245c75006e3e5ed2b8e6c1b062fbb31a63aa6c
+ms.subservice: mdo
+ms.service: microsoft-365-security
+ms.openlocfilehash: 83d5a0d3d7ca66634c63bf019e980c9aced060b1
+ms.sourcegitcommit: 2b89bcff547e00be3d38dc8d1e6cbcf8f41eba42
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/24/2022
-ms.locfileid: "67423745"
+ms.lasthandoff: 09/03/2022
+ms.locfileid: "67598679"
 ---
 # <a name="make-a-list-of-trusted-arc-senders-to-trust-legitimate-indirect-mailflows"></a>Crear una lista de remitentes ARC de confianza para confiar en los flujos de correo indirectos *legítimos* 
 

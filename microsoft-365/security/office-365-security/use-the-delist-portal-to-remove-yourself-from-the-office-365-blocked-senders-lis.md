@@ -17,15 +17,15 @@ ms.collection:
 - m365initiative-defender-office365
 ms.custom:
 - seo-marvel-apr2020
-description: En este artículo, aprenderá a usar el portal de deslist para quitarse de la lista de remitentes bloqueados Microsoft 365. Esta es la mejor respuesta para solucionar los errores de acceso denegado 5.7.511.
-ms.technology: mdo
-ms.prod: m365-security
-ms.openlocfilehash: 83822faaf1c667524dd88fc1bba400c10fa30ac3
-ms.sourcegitcommit: 725a92b0b1555572b306b285a0e7a7614d34e5e5
+description: En este artículo, aprenderá a usar el portal de deslist para quitarse de la lista de remitentes bloqueados de Microsoft 365. Esta es la mejor respuesta para solucionar los errores de acceso denegado 5.7.511.
+ms.subservice: mdo
+ms.service: microsoft-365-security
+ms.openlocfilehash: 3eb58e7620a0d79a4a4e8172b72fafd154df56a0
+ms.sourcegitcommit: 2b89bcff547e00be3d38dc8d1e6cbcf8f41eba42
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/24/2022
-ms.locfileid: "65647741"
+ms.lasthandoff: 09/03/2022
+ms.locfileid: "67598898"
 ---
 # <a name="use-the-delist-portal-to-remove-yourself-from-the-blocked-senders-list-and-address-57511-access-denied-errors"></a>Use el portal de deslist para quitarse de la lista de remitentes bloqueados y la dirección 5.7.511 Errores de acceso denegado
 
@@ -34,11 +34,11 @@ ms.locfileid: "65647741"
 - [Plan 1 y Plan 2 de Microsoft Defender para Office 365](defender-for-office-365.md)
 - [Microsoft 365 Defender](../defender/microsoft-365-defender.md)
 
-¿Recibe un mensaje de error al intentar enviar un correo electrónico a un destinatario cuya dirección de correo electrónico está en Microsoft 365 (por ejemplo, y la dirección 5.7.511 Acceso denegado)? Si cree que no debería recibir el mensaje de error, puede usar el portal de deslist para quitarse de la lista de remitentes bloqueados.
+¿Recibe un mensaje de error al intentar enviar un correo electrónico a un destinatario cuya dirección de correo electrónico está en Microsoft 365 (por ejemplo, y la dirección 5.7.511 Access denegada)? Si cree que no debería recibir el mensaje de error, puede usar el portal de deslist para quitarse de la lista de remitentes bloqueados.
 
 ## <a name="what-is-the-blocked-senders-list"></a>¿Cuál es la lista de remitentes bloqueados?
 
-Microsoft usa la lista de remitentes bloqueados para proteger a sus clientes contra el spam, la suplantación de identidad y los ataques de phishing. La dirección IP del servidor de correo, es decir, la dirección que usa el servidor de correo para identificarse en Internet, se etiquetó como una amenaza potencial para Microsoft 365 por una de las diversas razones. Cuando Microsoft 365 agrega la dirección IP a la lista, impide toda comunicación adicional entre la dirección IP y cualquiera de nuestros clientes a través de nuestros centros de datos.
+Microsoft usa la lista de remitentes bloqueados para proteger a sus clientes contra el spam, la suplantación de identidad y los ataques de phishing. La dirección IP del servidor de correo, es decir, la dirección que usa el servidor de correo para identificarse en Internet, se etiquetó como una posible amenaza para Microsoft 365 por una de las diversas razones. Cuando Microsoft 365 agrega la dirección IP a la lista, impide toda comunicación adicional entre la dirección IP y cualquiera de nuestros clientes a través de nuestros centros de datos.
 
 Sabrá que lo hemos agregado a la lista cuando reciba una respuesta a un mensaje de correo que incluya un error similar al siguiente:
 

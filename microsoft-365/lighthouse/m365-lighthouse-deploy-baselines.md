@@ -7,7 +7,7 @@ manager: scotv
 ms-reviewer: shcallaw, kywirpel
 audience: Admin
 ms.topic: article
-ms.prod: microsoft-365-lighthouse
+ms.service: microsoft-365-lighthouse
 ms.localizationpriority: medium
 ms.collection:
 - M365-subscription-management
@@ -17,12 +17,12 @@ ms.custom:
 - M365-Lighthouse
 search.appverid: MET150
 description: En el caso de los proveedores de servicios administrados (MSP) que usan Microsoft 365 Lighthouse, obtenga información sobre cómo implementar líneas base Microsoft 365 Lighthouse.
-ms.openlocfilehash: 0f31a4ef985eb6cbaf58f2f2d65b8269b25d83b2
-ms.sourcegitcommit: 23a53b5c5e372a2a7ad5e175850224d3d464f6dd
+ms.openlocfilehash: 3094cc08cfdd68b316bb457d89bffde000476c13
+ms.sourcegitcommit: 2b89bcff547e00be3d38dc8d1e6cbcf8f41eba42
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/28/2022
-ms.locfileid: "67056820"
+ms.lasthandoff: 09/03/2022
+ms.locfileid: "67598855"
 ---
 # <a name="deploy-microsoft-365-lighthouse-baselines"></a>Implementación de líneas base de Microsoft 365 Lighthouse
 
@@ -62,7 +62,7 @@ Asegúrese de que usted y los inquilinos de sus clientes cumplen los requisitos 
     | SKU necesaria   | SKU necesarias para completar el paso de implementación.                                      |
     | Impacto en el usuario    | Impacto de la implementación del paso en los usuarios del inquilino.                             |
     | Para los usuarios | Vínculos a recursos que los usuarios del inquilino pueden resultar útiles.                             |
-    | Siguientes pasos     | Vínculos e instrucciones sobre los pasos siguientes aplicables.                                |
+    | Pasos siguientes     | Vínculos e instrucciones sobre los pasos siguientes aplicables.                                |
 
     Los pasos de implementación incluyen uno o varios procesos que deben completarse. La página de detalles del paso de implementación incluye una tabla que enumera cada proceso incluido en el paso de implementación y proporciona la siguiente información:
 

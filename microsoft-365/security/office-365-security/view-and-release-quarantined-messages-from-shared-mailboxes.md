@@ -14,14 +14,14 @@ ms.assetid: ''
 ms.collection:
 - M365-security-compliance
 description: Los usuarios pueden aprender a ver y actuar en los mensajes en cuarentena que se enviaron a buzones compartidos a los que tienen permisos.
-ms.technology: mdo
-ms.prod: m365-security
-ms.openlocfilehash: a37ed03535bd3f3b48aca81c7bf7adeb3c660b46
-ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
+ms.subservice: mdo
+ms.service: microsoft-365-security
+ms.openlocfilehash: 65e26cfe0fbe12967fbf08b8c12ef81b0b687843
+ms.sourcegitcommit: 2b89bcff547e00be3d38dc8d1e6cbcf8f41eba42
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/06/2022
-ms.locfileid: "66629021"
+ms.lasthandoff: 09/03/2022
+ms.locfileid: "67599525"
 ---
 # <a name="view-and-release-quarantined-messages-from-shared-mailboxes"></a>Visualización y liberación de mensajes en cuarentena desde buzones compartidos
 

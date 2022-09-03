@@ -16,14 +16,14 @@ ms.collection:
 - m365initiative-defender-office365
 ms.custom: ''
 description: Los administradores pueden aprender a identificar un buzón personalizado (también conocido como buzón de envíos de usuario) para recopilar mensajes de spam y phishing que notifican los usuarios. Otras configuraciones completan la experiencia de generación de informes para los usuarios cuando notifican mensajes.
-ms.technology: mdo
-ms.prod: m365-security
-ms.openlocfilehash: e09b5f7d6f34ac1daa98430f1bc868b4ca644777
-ms.sourcegitcommit: cd9df1a681265905eef99c039f7036b2fa6e8b6d
+ms.subservice: mdo
+ms.service: microsoft-365-security
+ms.openlocfilehash: b2f3f9b07c0d2d6c856fc786bf437bda76399ca1
+ms.sourcegitcommit: 2b89bcff547e00be3d38dc8d1e6cbcf8f41eba42
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/07/2022
-ms.locfileid: "67276314"
+ms.lasthandoff: 09/03/2022
+ms.locfileid: "67599569"
 ---
 # <a name="user-reported-message-settings"></a>Configuración del mensaje notificado por el usuario
 
@@ -45,11 +45,11 @@ La configuración de mensajes notificada por el usuario y el buzón de correo de
 Entregar mensajes notificados por el usuario a un buzón de correo de envíos de usuario en lugar de directamente a Microsoft permite a los administradores informar de forma selectiva y manual de los mensajes a Microsoft en la página **Envíos** de <https://security.microsoft.com/reportsubmission>. Para obtener más información, consulte [Administración envío](admin-submission.md).
 
   > [!NOTE]
-  > Si los informes se han [deshabilitado en Outlook na Web](report-junk-email-and-phishing-scams-in-outlook-on-the-web-eop.md#disable-or-enable-junk-email-reporting-in-outlook-on-the-web), la habilitación de los mensajes notificados por el usuario aquí invalidará esa configuración y permitirá a los usuarios informar de los mensajes en Outlook na Web de nuevo.
+  > Si los informes se han [deshabilitado en Outlook en la Web](report-junk-email-and-phishing-scams-in-outlook-on-the-web-eop.md#disable-or-enable-junk-email-reporting-in-outlook-on-the-web), la habilitación de los mensajes notificados por el usuario aquí invalidará esa configuración y permitirá a los usuarios informar de los mensajes en Outlook en la Web de nuevo.
 
 ## <a name="configuration-requirements-for-the-user-submissions-mailbox"></a>Requisitos de configuración para el buzón de correo de envíos de usuario
 
-Antes de empezar, debe configurar Exchange Online Protection y Defender pre Office 365 para que los mensajes notificados por el usuario se entreguen al buzón de correo de envíos de usuario sin filtrarse como se describe en los pasos siguientes:
+Antes de empezar, debe configurar Exchange Online Protection y Defender para Office 365 para que los mensajes notificados por el usuario se entreguen al buzón de correo de envíos de usuario sin filtrarse como se describe en los pasos siguientes:
 
 - Identifique el buzón de correo de envíos de usuario como buzón de SecOps. Para obtener instrucciones, consulte [Uso del portal de Microsoft 365 Defender para configurar buzones de SecOps en la directiva de entrega avanzada](configure-advanced-delivery.md#use-the-microsoft-365-defender-portal-to-configure-secops-mailboxes-in-the-advanced-delivery-policy).
 
@@ -63,13 +63,13 @@ Antes de empezar, debe configurar Exchange Online Protection y Defender pre Offi
 
 - Compruebe que el buzón de correo de envíos de usuario no está incluido en las directivas de seguridad preestablecidas **Estándar** o **Estricta** . Para obtener instrucciones, consulte [Directivas de seguridad preestablecidas](preset-security-policies.md).
 
-- **Defender pre Office 365**: Configure las siguientes opciones adicionales:
+- **Defender para Office 365**: Configure los siguientes valores adicionales:
 
   - Excluya el buzón de correo de envíos de usuario de la directiva de seguridad preestablecida **de protección integrada** . Para obtener instrucciones, consulte [Directivas de seguridad preestablecidas](preset-security-policies.md).
 
-  - Cree una directiva de datos adjuntos seguros para el buzón de correo de envíos del usuario en el que el examen de datos adjuntos seguros, incluida la entrega dinámica, esté desactivado (**sección** \> Configuración \> **datos adjuntos seguros respuesta de malware desconocido** **Desactivado** o `-Enable $false` en PowerShell). Para obtener instrucciones, consulte [Configuración de directivas de datos adjuntos seguros en Pertahanan Microsoft untuk Office 365](set-up-safe-attachments-policies.md).
+  - Cree una directiva de datos adjuntos seguros para el buzón de correo de envíos del usuario en el que el examen de datos adjuntos seguros, incluida la entrega dinámica, esté desactivado (**sección** \> Configuración \> **datos adjuntos seguros respuesta de malware desconocido** **Desactivado** o `-Enable $false` en PowerShell). Para obtener instrucciones, consulte [Configurar directivas de datos adjuntos seguros en Microsoft Defender para Office 365](set-up-safe-attachments-policies.md).
 
-  - Cree una directiva de vínculos seguros para el buzón de correo de envíos de usuarios donde el examen de vínculos seguros en el correo electrónico está desactivado (**url & configuración de** \> protección de **clics Activada: Vínculos seguros comprueba una lista de vínculos malintencionados conocidos cuando los usuarios hacen clic en vínculos en el correo electrónico** no está seleccionado o `EnableSafeLinksForEmail $false` en PowerShell). Para obtener instrucciones, consulte [Configuración de directivas de vínculos seguros en Pertahanan Microsoft untuk Office 365](set-up-safe-links-policies.md).
+  - Cree una directiva de vínculos seguros para el buzón de correo de envíos de usuarios donde el examen de vínculos seguros en el correo electrónico está desactivado (**url & configuración de** \> protección de **clics Activada: Vínculos seguros comprueba una lista de vínculos malintencionados conocidos cuando los usuarios hacen clic en vínculos en el correo electrónico** no está seleccionado o `EnableSafeLinksForEmail $false` en PowerShell). Para obtener instrucciones, consulte [Configuración de directivas de vínculos seguros en Microsoft Defender para Office 365](set-up-safe-links-policies.md).
 
 Después de comprobar que el buzón cumple estos requisitos, use el resto de las instrucciones de este artículo para identificar el buzón de correo de envíos de usuario y otras configuraciones de mensajes notificadas por el usuario.
 
@@ -98,7 +98,7 @@ Después de comprobar que el buzón cumple estos requisitos, use el resto de las
 
 2. En la página **Envíos** de usuarios, lo que ve viene determinado en gran medida por el botón de alternancia **del mensaje de informe de Microsoft Outlook** :
 
-   - **En** ![ Activar.](../../media/scc-toggle-on.png): se usa la experiencia de informes integrada de Microsoft, que incluye el complemento Mensaje de informe, el complemento De suplantación de identidad de informe o los informes integrados en Outlook na Web.
+   - **En** ![ Activar.](../../media/scc-toggle-on.png): usa la experiencia de informes integrada de Microsoft, que incluye el complemento Mensaje de informe, el complemento De suplantación de identidad de informe o los informes integrados en Outlook en la Web.
 
      Esta configuración también permite a los usuarios notificar mensajes falsos positivos desde el portal de cuarentena.
 
@@ -121,11 +121,11 @@ Cuando el **botón Mensaje de informe de Microsoft Outlook** está **Activado** 
   > [!IMPORTANT]
   > En las organizaciones gubernamentales de Ee. UU. (GCC, GCC High y DoD), la única selección disponible en la sección **Enviar los mensajes notificados a es el** **buzón de mi organización**. Las otras dos opciones están atenuadas.
   >
-  > Si ha usado [Outlook na Web directivas de buzón de correo](/exchange/clients-and-mobile-in-exchange-online/outlook-on-the-web/configure-outlook-web-app-mailbox-policy-properties) para deshabilitar los informes de correo no deseado en Outlook na Web, pero selecciona **Microsoft** o **Microsoft y el buzón de mi organización**, los usuarios podrán notificar mensajes a Microsoft en Outlook na Web mediante el complemento Mensaje de informe o el complemento De suplantación de identidad de informe.
+  > Si ha usado [Outlook en la Web directivas de buzón de correo](/exchange/clients-and-mobile-in-exchange-online/outlook-on-the-web/configure-outlook-web-app-mailbox-policy-properties) para deshabilitar los informes de correo no deseado en Outlook en la Web, pero selecciona **Microsoft** o **Microsoft y el buzón de mi organización**, los usuarios podrán notificar mensajes a Microsoft en Outlook en la Web mediante el complemento Mensaje de informe o el complemento Suplantación de identidad de informe.
   >
   > Si selecciona **el buzón de mi organización**, los mensajes notificados aparecerán en la pestaña **Mensajes notificados** por el usuario de la página **Envíos** de <https://security.microsoft.com/reportsubmission>. Pero el valor **Result** de estos mensajes siempre estará vacío, ya que los mensajes no se examinaron de nuevo.
   >
-  > Si usa [el entrenamiento de simulación de ataques](attack-simulation-training-get-started.md) o un producto de terceros para realizar simulaciones de suplantación de identidad (phishing), debe configurar el buzón de correo de envíos de usuario como buzón de SecOps, tal como se describió anteriormente en la sección [Requisitos de configuración para el buzón de envíos de usuario](#configuration-requirements-for-the-user-submissions-mailbox) anteriormente en este artículo. Si no lo hace, un usuario que informe de un mensaje podría desencadenar una asignación de entrenamiento en el producto de simulación de suplantación de identidad (phishing).
+  > Si usa [Entrenamiento de simulación de ataque](attack-simulation-training-get-started.md) o un producto de terceros para realizar simulaciones de suplantación de identidad (phishing), debe configurar el buzón de correo de envíos de usuario como buzón de SecOps, tal como se describió anteriormente en la sección [Requisitos de configuración para el buzón de correo de envíos de usuario](#configuration-requirements-for-the-user-submissions-mailbox) anteriormente en este artículo. Si no lo hace, un usuario que informe de un mensaje podría desencadenar una asignación de entrenamiento en el producto de simulación de suplantación de identidad (phishing).
 
   Independientemente de la selección, la siguiente configuración también está disponible en la sección **Enviar los mensajes notificados a** :
 

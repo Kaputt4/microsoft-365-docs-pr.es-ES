@@ -7,8 +7,8 @@ ms.author: deniseb
 manager: dansimp
 audience: Admin
 ms.topic: overview
-ms.prod: m365-security
-ms.technology: mdb
+ms.service: microsoft-365-security
+ms.subservice: mdb
 ms.localizationpriority: medium
 ms.date: 08/11/2022
 ms.reviewer: shlomiakirav
@@ -16,12 +16,12 @@ f1.keywords: NOCSH
 ms.collection:
 - SMB
 - m365-security-compliance
-ms.openlocfilehash: 42f9766f951f6598008bf2646321829603d75391
-ms.sourcegitcommit: 9b10e56b9e83f3a80757fa6108bebd1d80cf4178
+ms.openlocfilehash: f12d264e97f966f450ea4bc74ed7b0a2967d5d4c
+ms.sourcegitcommit: 2b89bcff547e00be3d38dc8d1e6cbcf8f41eba42
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/12/2022
-ms.locfileid: "67319919"
+ms.lasthandoff: 09/03/2022
+ms.locfileid: "67598635"
 ---
 # <a name="get-microsoft-defender-for-business"></a>Obtener Microsoft Defender para Empresas
 
@@ -104,7 +104,7 @@ Cuando esté listo para empezar, trabajará con dos portales principales: el Cen
 > Puede usar el Centro de administración de Microsoft Endpoint Manager ([https://endpoint.microsoft.com/](https://endpoint.microsoft.com/)) para incorporar dispositivos y configurar las opciones de seguridad. Para obtener más información sobre Intune, consulte [Microsoft Intune es un proveedor de MDM y MAM para los dispositivos](/mem/intune/fundamentals/what-is-intune).
 
 
-## <a name="next-steps"></a>Siguientes pasos
+## <a name="next-steps"></a>Pasos siguientes
 
 - [Consulte el cuaderno de estrategias de prueba: Microsoft Defender para Empresas](trial-playbook-defender-business.md).
 - [Use el asistente de instalación en Microsoft Defender para Empresas](mdb-use-wizard.md).

@@ -7,7 +7,7 @@ manager: scotv
 ms-reviewer: crimora
 audience: Admin
 ms.topic: article
-ms.prod: microsoft-365-lighthouse
+ms.service: microsoft-365-lighthouse
 ms.localizationpriority: medium
 ms.collection:
 - M365-subscription-management
@@ -18,12 +18,12 @@ ms.custom:
 - intro-get-started
 search.appverid: MET150
 description: Para los proveedores de servicios administrados (MSP), obtenga información sobre cómo registrarse para Microsoft 365 Lighthouse.
-ms.openlocfilehash: 03ab19f55d7ab46c798daf0e0b49836739e1e9fd
-ms.sourcegitcommit: 23a53b5c5e372a2a7ad5e175850224d3d464f6dd
+ms.openlocfilehash: 10217bb162a45e8d98d02e045b2de87500c94b1e
+ms.sourcegitcommit: 2b89bcff547e00be3d38dc8d1e6cbcf8f41eba42
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/28/2022
-ms.locfileid: "67056842"
+ms.lasthandoff: 09/03/2022
+ms.locfileid: "67595725"
 ---
 # <a name="sign-up-for-microsoft-365-lighthouse"></a>Regístrese para obtener Microsoft 365 Lighthouse
 
@@ -57,7 +57,7 @@ En este artículo se proporcionan instrucciones sobre cómo registrarse para Mic
     > [!NOTE]
     > Después de completar el registro, los datos del cliente pueden tardar hasta 48 horas en aparecer en Lighthouse.
 
-## <a name="next-steps"></a>Siguientes pasos
+## <a name="next-steps"></a>Pasos siguientes
 
 [Configuración de la seguridad del portal de Microsoft 365 Lighthouse](m365-lighthouse-configure-portal-security.md) 
 

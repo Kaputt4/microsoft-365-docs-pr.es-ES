@@ -16,18 +16,19 @@ ms.collection:
 - m365-initiative-defender-endpoint
 ms.topic: conceptual
 ms.subservice: mde
-ms.openlocfilehash: 6bc6bfa6848d613b23fab0bf00d137d3c62b80e3
-ms.sourcegitcommit: d3ef9391f621e8f4ca70661184b3bb82c6cbda94
+ms.openlocfilehash: ff3f2b4e34322d53c687c2ead3fcb6c7c427e34b
+ms.sourcegitcommit: 2b89bcff547e00be3d38dc8d1e6cbcf8f41eba42
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/02/2022
-ms.locfileid: "67585628"
+ms.lasthandoff: 09/03/2022
+ms.locfileid: "67598481"
 ---
 # <a name="defender-for-endpoint-onboarding-windows-server"></a>Incorporación de Windows Server a Defender para punto de conexión
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
 **Se aplica a:**
+- Windows Server 2008 R2
 - Windows Server 2012 R2
 - Windows Server 2016
 - Canal de Windows Server Semi-Annual Enterprise

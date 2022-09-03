@@ -15,14 +15,14 @@ ms.assetid: 4250c4bc-6102-420b-9e0a-a95064837676
 ms.collection:
 - M365-security-compliance
 description: Obtenga información sobre cómo habilitar el mensaje de informe o los complementos de suplantación de identidad de informe para Outlook y Outlook en la Web, para usuarios individuales o para toda la organización.
-ms.technology: mdo
-ms.prod: m365-security
-ms.openlocfilehash: f1d51499558780f1b20fa5f6955e7c4a7c2ff5e8
-ms.sourcegitcommit: 5463d4518c269d9c125bb66836a780df292b4854
+ms.subservice: mdo
+ms.service: microsoft-365-security
+ms.openlocfilehash: 287f2880c8ed2252111164f6141fd2cede730a89
+ms.sourcegitcommit: 2b89bcff547e00be3d38dc8d1e6cbcf8f41eba42
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/14/2022
-ms.locfileid: "66795452"
+ms.lasthandoff: 09/03/2022
+ms.locfileid: "67596905"
 ---
 # <a name="enable-the-report-message-or-the-report-phishing-add-ins"></a>Habilitar los complementos Informar sobre el mensaje o Informar sobre suplantación de identidad
 
@@ -50,7 +50,7 @@ Si es un usuario individual, puede habilitar ambos complementos por sí mismo.
 
 Si es un administrador global o un administrador de Exchange Online, y Exchange está configurado para usar la autenticación de OAuth, puede habilitar el complemento Mensaje de informe y el complemento Suplantación de identidad de informe para su organización. Ambos complementos ya están disponibles a través de [la implementación centralizada](../../admin/manage/centralized-deployment-of-add-ins.md).
 
-## <a name="what-do-you-need-to-know-before-you-begin"></a>¿Qué necesita saber antes de comenzar?
+## <a name="what-do-you-need-to-know-before-you-begin"></a>¿Qué necesita saber antes de empezar?
 
 - Tanto el complemento mensaje de informe como el complemento de suplantación de identidad de informe funcionan con la mayoría de las suscripciones de Microsoft 365 y los siguientes productos:
   - Outlook en la Web

@@ -7,8 +7,8 @@ ms.author: deniseb
 manager: dansimp
 audience: Admin
 ms.topic: how-to
-ms.prod: m365-security
-ms.technology: mdb
+ms.service: microsoft-365-security
+ms.subservice: mdb
 ms.localizationpriority: medium
 ms.date: 08/11/2022
 ms.reviewer: shlomiakirav
@@ -17,12 +17,12 @@ ms.collection:
 - SMB
 - M365-security-compliance
 - m365-initiative-defender-business
-ms.openlocfilehash: a0330385d47609abe269b9aabad528ea75607d3c
-ms.sourcegitcommit: 9b10e56b9e83f3a80757fa6108bebd1d80cf4178
+ms.openlocfilehash: f31f478fda2f8f2540dd524c2dbaf1113801dca8
+ms.sourcegitcommit: 2b89bcff547e00be3d38dc8d1e6cbcf8f41eba42
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/12/2022
-ms.locfileid: "67320007"
+ms.lasthandoff: 09/03/2022
+ms.locfileid: "67598008"
 ---
 # <a name="review-remediation-actions-in-the-action-center"></a>Revisión de las acciones de corrección en el Centro de acciones
 
@@ -63,7 +63,7 @@ En la tabla siguiente se enumeran las acciones de corrección que están disponi
 | [Acciones de contestación manual](../defender-endpoint/respond-machine-alerts.md)   |<ul><li>Ejecutar examen de antivirus</li><li>Aislar un dispositivo</li><li>Detener y poner en cuarentena un archivo</li><li>Adición de un indicador para bloquear o permitir un archivo</li></ul> |
 | [Respuesta inmediata](../defender-endpoint/live-response.md)   |<ul><li>Recopilación de datos forenses</li><li>Análisis de un archivo</li><li>Ejecutar un script</li><li>Envío de una entidad sospechosa a Microsoft para su análisis</li><li>Corrección de un archivo </li><li>Búsqueda proactiva de amenazas</li></ul>|
 
-## <a name="next-steps"></a>Siguientes pasos
+## <a name="next-steps"></a>Pasos siguientes
 
 - [Respuesta y mitigación de amenazas en Defender para empresas](mdb-respond-mitigate-threats.md)
 - [Administración de dispositivos en Defender para empresas](mdb-manage-devices.md)

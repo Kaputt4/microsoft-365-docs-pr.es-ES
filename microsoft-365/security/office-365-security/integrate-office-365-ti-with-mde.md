@@ -18,18 +18,18 @@ ms.collection:
 description: Use Microsoft Defender para Office 365 junto con Microsoft Defender para punto de conexión para obtener información más detallada sobre las amenazas contra los dispositivos y el contenido del correo electrónico.
 ms.custom:
 - seo-marvel-apr2020
-ms.technology: mdo
-ms.prod: m365-security
-ms.openlocfilehash: 8df364538e6a799557956a8d624b0561c626e4fd
-ms.sourcegitcommit: 45bc65972d4007b2aa7760d4457a0d2699f81926
+ms.subservice: mdo
+ms.service: microsoft-365-security
+ms.openlocfilehash: be951f29924300bfa14c92df549c7959a995c7ef
+ms.sourcegitcommit: 2b89bcff547e00be3d38dc8d1e6cbcf8f41eba42
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/20/2022
-ms.locfileid: "64971118"
+ms.lasthandoff: 09/03/2022
+ms.locfileid: "67598393"
 ---
 # <a name="use-microsoft-defender-for-office-365-together-with-microsoft-defender-for-endpoint"></a>Uso de Microsoft Defender para Office 365 junto con Microsoft Defender para punto de conexión
 
-[!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
+[!INCLUDE [MDO Trial banner](../includes/mdo-trial-banner.md)]
 
 [Microsoft Defender para Office 365](defender-for-office-365.md) se puede configurar para que funcione con [Microsoft Defender para punto de conexión](/windows/security/threat-protection).
 
@@ -58,11 +58,11 @@ La integración de Microsoft Defender para Office 365 con Microsoft Defender par
 
 1. Vaya al portal de Microsoft 365 Defender ([https://security.microsoft.com](https://security.microsoft.com)) e inicie sesión.
 
-2. Vaya al **Explorador** de **colaboración** \> de & correo electrónico.
+2. Vaya a Email & **explorador** de **colaboración**\>.
 
-3. En la página **Explorador**, en la esquina superior derecha de la pantalla, seleccione **MDE Configuración**.
+3. En la página **Explorador** , en la esquina superior derecha de la pantalla, seleccione **Configuración de MDE**.
 
-3. En el **control flotante Microsoft Defender para punto de conexión conexión** que aparece, active **Conectar para Microsoft Defender para punto de conexión** (![activar](../../media/scc-toggle-on.png)) y, a continuación, seleccione **Cerrar**.
+3. En el **control flotante Microsoft Defender para punto de conexión conexión** que aparece, active **Conectar a Microsoft Defender para punto de conexión** (![activar](../../media/scc-toggle-on.png)) y, a continuación, seleccione **Cerrar**.
 
    :::image type="content" source="../../media/explorer-mdeconnection-dialognew.png" alt-text="Página Conexión de MDE" lightbox="../../media/explorer-mdeconnection-dialognew.png":::
 

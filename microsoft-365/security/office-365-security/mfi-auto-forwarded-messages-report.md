@@ -10,19 +10,19 @@ ms.topic: conceptual
 ms.localizationpriority: medium
 ms.assetid: b5543faa-44fa-44c5-8180-fb835e7e452d
 description: Los administradores pueden obtener información sobre el informe de mensajes reenviados automáticamente en el panel Flujo de correo del Centro de cumplimiento de seguridad &.
-ms.technology: mdo
-ms.prod: m365-security
+ms.subservice: mdo
+ms.service: microsoft-365-security
 ms.collection: M365-security-compliance
-ms.openlocfilehash: 2f102f4fbea558f0972fbd4f3e8f4a4bea257bf4
-ms.sourcegitcommit: fdd0294e6cda916392ee66f5a1d2a235fb7272f8
+ms.openlocfilehash: 86c3e7f530f31d6827bb5ce4396f3b9ed6229605
+ms.sourcegitcommit: 2b89bcff547e00be3d38dc8d1e6cbcf8f41eba42
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/29/2022
-ms.locfileid: "65131050"
+ms.lasthandoff: 09/03/2022
+ms.locfileid: "67598767"
 ---
 # <a name="auto-forwarded-messages-insight-in-the-security--compliance-center"></a>Información de mensajes reenviados automáticamente en el Centro de cumplimiento de seguridad &
 
-[!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
+[!INCLUDE [MDO Trial banner](../includes/mdo-trial-banner.md)]
 
 **Se aplica a**
 - [Exchange Online Protection](exchange-online-protection-overview.md)
@@ -61,6 +61,6 @@ Se generan dos conclusiones basadas en los datos del informe:
 - [Nuevos usuarios que reenvía correo electrónico](mfi-new-users-forwarding-email.md)
 - [Nuevos dominios que se reenvía por correo electrónico](mfi-new-domains-being-forwarded-email.md)
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 Para obtener información sobre otras conclusiones en el panel Flujo de correo, consulte [Información de flujo de correo en el Centro de cumplimiento de seguridad &](mail-flow-insights-v2.md).

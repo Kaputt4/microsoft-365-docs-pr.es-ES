@@ -7,8 +7,8 @@ ms.author: deniseb
 manager: dansimp
 audience: Admin
 ms.topic: overview
-ms.prod: m365-security
-ms.technology: mdb
+ms.service: microsoft-365-security
+ms.subservice: mdb
 ms.localizationpriority: medium
 ms.date: 08/11/2022
 ms.reviewer: shlomiakirav
@@ -17,12 +17,12 @@ ms.collection:
 - SMB
 - M365-security-compliance
 - m365-initiative-defender-business
-ms.openlocfilehash: 24c6e511b32b88ca72de7a7a0654fbea2761bf78
-ms.sourcegitcommit: 217108c59be41b01963a393b4f16d137636fe6a8
+ms.openlocfilehash: 055cd0e6e6f2d3279d028e2af210f40b62f329ee
+ms.sourcegitcommit: 2b89bcff547e00be3d38dc8d1e6cbcf8f41eba42
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/12/2022
-ms.locfileid: "67325647"
+ms.lasthandoff: 09/03/2022
+ms.locfileid: "67598591"
 ---
 # <a name="offboard-a-device-from-microsoft-defender-for-business"></a>Desconectar un dispositivo de Microsoft Defender para Empresas
 
@@ -56,7 +56,7 @@ Si desea desconectar un dispositivo, use uno de los procedimientos siguientes:
 > [!IMPORTANT]
 > La desincorporación de un dispositivo hace que los dispositivos dejen de enviar datos a Defender para empresas. Sin embargo, los datos recibidos antes de la desincorporación se conservan durante un máximo de seis (6) meses.
 
-## <a name="next-steps"></a>Siguientes pasos
+## <a name="next-steps"></a>Pasos siguientes
 
 - [Use el panel de Administración de vulnerabilidades de Microsoft Defender en Microsoft Defender para Empresas](mdb-view-tvm-dashboard.md)
 - [Ver o editar directivas en Microsoft Defender para Empresas](mdb-view-edit-create-policies.md)

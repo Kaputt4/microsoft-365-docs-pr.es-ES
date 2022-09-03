@@ -7,7 +7,7 @@ manager: scotv
 ms-reviewer: ragovind
 audience: Admin
 ms.topic: article
-ms.prod: microsoft-365-lighthouse
+ms.service: microsoft-365-lighthouse
 ms.localizationpriority: medium
 ms.collection:
 - M365-subscription-management
@@ -17,12 +17,12 @@ ms.custom:
 - M365-Lighthouse
 search.appverid: MET150
 description: En el caso de los proveedores de servicios administrados (MSP) que usan Microsoft 365 Lighthouse, obtenga información sobre la página Cumplimiento de dispositivos.
-ms.openlocfilehash: dfe214b4fdda87e8e363045c4367e1fd1364bb97
-ms.sourcegitcommit: 23a53b5c5e372a2a7ad5e175850224d3d464f6dd
+ms.openlocfilehash: 3985f17758a5205360db41988972014bc94e29bb
+ms.sourcegitcommit: 2b89bcff547e00be3d38dc8d1e6cbcf8f41eba42
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/28/2022
-ms.locfileid: "67056732"
+ms.lasthandoff: 09/03/2022
+ms.locfileid: "67599437"
 ---
 # <a name="overview-of-the-device-compliance-page-in-microsoft-365-lighthouse"></a>Información general de la página Cumplimiento de dispositivos en Microsoft 365 Lighthouse
 

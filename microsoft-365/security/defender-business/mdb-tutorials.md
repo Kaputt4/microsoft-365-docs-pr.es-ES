@@ -7,20 +7,21 @@ ms.author: deniseb
 manager: dansimp
 audience: Admin
 ms.topic: article
-ms.prod: m365-security
-ms.technology: mdb
+ms.service: microsoft-365-security
+ms.subservice: mdb
 ms.localizationpriority: medium
 ms.reviewer: shlomiakirav
+ms.date: 07/19/2022
 f1.keywords: NOCSH
 ms.collection:
 - SMB
 - M365-security-compliance
-ms.openlocfilehash: 2116306529530561fab9e4c8107a7b97e64fb5a1
-ms.sourcegitcommit: 48a75b40e607542e5fe219b6e75ffc757804a9c6
+ms.openlocfilehash: ac24a606f9678561d23e14c8e278cbd2bd0ef2d1
+ms.sourcegitcommit: 2b89bcff547e00be3d38dc8d1e6cbcf8f41eba42
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/16/2022
-ms.locfileid: "67344709"
+ms.lasthandoff: 09/03/2022
+ms.locfileid: "67599030"
 ---
 # <a name="tutorials-and-simulations-in-microsoft-defender-for-business"></a>Tutoriales y simulaciones en Microsoft Defender para Empresas
 
@@ -67,7 +68,7 @@ Cada tutorial incluye un documento de tutorial que explica el escenario, cómo f
    - **Respuesta dinámica**
    - **Administración de vulnerabilidades de Microsoft Defender (escenarios principales)**
 
-## <a name="next-steps"></a>Siguientes pasos
+## <a name="next-steps"></a>Pasos siguientes
 
 - [Administración de dispositivos en Defender para empresas](mdb-manage-devices.md)
 - [Visualización y administración de incidentes en Defender para empresas](mdb-view-manage-incidents.md)

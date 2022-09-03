@@ -7,17 +7,17 @@ ms.reviewer: ''
 audience: admin
 ms.topic: article
 ms.custom: ''
-ms.prod: microsoft-365-enterprise
+ms.service: microsoft-365-enterprise
 search.appverid: MET150
 ms.collection: ''
 ms.localizationpriority: medium
 description: Obtenga información sobre la retención de datos para Microsoft Whiteboard en Azure y OneDrive para la Empresa.
-ms.openlocfilehash: 49189ff03774d91a855d3339c4a93702b1cbafcc
-ms.sourcegitcommit: 60c6ce8cbdf539f8b6ff1c6029eb16f81461a3ad
+ms.openlocfilehash: a43caaa9aaccff3b2a56a1c38537f80d2304358f
+ms.sourcegitcommit: 2b89bcff547e00be3d38dc8d1e6cbcf8f41eba42
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/25/2022
-ms.locfileid: "67434403"
+ms.lasthandoff: 09/03/2022
+ms.locfileid: "67598205"
 ---
 # <a name="manage-data-for-microsoft-whiteboard"></a>Administración de datos para La pizarra de Microsoft
 

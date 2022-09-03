@@ -7,7 +7,7 @@ manager: scotv
 ms-reviewer: ragovind
 audience: Admin
 ms.topic: article
-ms.prod: microsoft-365-lighthouse
+ms.service: microsoft-365-lighthouse
 ms.localizationpriority: medium
 ms.collection:
 - M365-subscription-management
@@ -17,12 +17,12 @@ ms.custom:
 - M365-Lighthouse
 search.appverid: MET150
 description: En el caso de los proveedores de servicios administrados (MSP) que usan Microsoft 365 Lighthouse, obtenga información sobre cómo administrar la lista de inquilinos.
-ms.openlocfilehash: f8d1c47dc5fc349cd78b7a5f364b80244900554b
-ms.sourcegitcommit: 23a53b5c5e372a2a7ad5e175850224d3d464f6dd
+ms.openlocfilehash: 2e7c20362a7746ec5cde78b4b405b4a0a6a22560
+ms.sourcegitcommit: 2b89bcff547e00be3d38dc8d1e6cbcf8f41eba42
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/28/2022
-ms.locfileid: "67056535"
+ms.lasthandoff: 09/03/2022
+ms.locfileid: "67599272"
 ---
 # <a name="manage-your-tenant-list-in-microsoft-365-lighthouse"></a>Administrar la lista de inquilinos en Microsoft 365 Lighthouse
 
@@ -103,7 +103,7 @@ Las etiquetas que ya están asignadas al inquilino tienen una marca de verificac
 
 Las etiquetas asignadas actualmente tienen una marca de verificación a la derecha del nombre. También puede quitar una etiqueta de varios inquilinos seleccionando la casilla situada junto a cada inquilino de la lista, seleccionando **Asignar etiquetas** y, a continuación, seleccionando una etiqueta activada de la lista.
 
-## <a name="next-steps"></a>Siguientes pasos
+## <a name="next-steps"></a>Pasos siguientes
 
 Después de crear y asignar etiquetas, puede usarlas para filtrar los inquilinos. Vaya a cualquiera de las otras páginas (Usuarios, Dispositivos, Administración de amenazas o Windows 365) y seleccione una o varias etiquetas en el filtro Inquilino. Puede crear nuevas etiquetas para admitir vistas específicas basadas en cada página.
 

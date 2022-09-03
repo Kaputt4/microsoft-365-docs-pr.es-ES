@@ -1,7 +1,7 @@
 ---
 title: Información de estado del flujo de correo de dominio superior en el panel Flujo de correo
 f1.keywords:
-  - NOCSH
+- NOCSH
 ms.author: dansimp
 author: dansimp
 manager: dansimp
@@ -9,43 +9,48 @@ audience: ITPro
 ms.topic: conceptual
 ms.collection: M365-security-compliance
 ms.localizationpriority: medium
-ms.assetid: null
+ms.assetid: ''
 ms.custom:
-  - seo-marvel-apr2020
-description: Los administradores pueden aprender a usar la información sobre el estado del flujo de correo de dominio superior en el panel flujo de correo del Centro de seguridad & cumplimiento para solucionar problemas de flujo de correo relacionados con sus registros MX.
-ms.technology: mdo
-ms.prod: m365-security
+- seo-marvel-apr2020
+description: Los administradores pueden aprender a usar la información de estado del flujo de correo de dominio superior en el panel Flujo de correo del Centro de cumplimiento de seguridad & para solucionar problemas de flujo de correo relacionados con sus registros MX.
+ms.subservice: mdo
+ms.service: microsoft-365-security
+ms.openlocfilehash: 525a424babac6d7be1da0abf73a61da723857e8e
+ms.sourcegitcommit: 2b89bcff547e00be3d38dc8d1e6cbcf8f41eba42
+ms.translationtype: MT
+ms.contentlocale: es-ES
+ms.lasthandoff: 09/03/2022
+ms.locfileid: "67599613"
 ---
+# <a name="top-domain-mail-flow-status-insight-in-the-security--compliance-center"></a>Información de estado del flujo de correo de dominio superior en el Centro de cumplimiento de seguridad &
 
-# <a name="top-domain-mail-flow-status-insight-in-the-security--compliance-center"></a>Información de estado del flujo de correo de dominio superior en el Centro de seguridad & cumplimiento
-
-[!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
+[!INCLUDE [MDO Trial banner](../includes/mdo-trial-banner.md)]
 
 **Se aplica a**
 - [Exchange Online Protection](exchange-online-protection-overview.md)
 - [Plan 1 y Plan 2 de Microsoft Defender para Office 365](defender-for-office-365.md)
 - [Microsoft 365 Defender](../defender/microsoft-365-defender.md)
 
-La **información sobre el estado del flujo** de correo [](mail-flow-insights-v2.md) de dominio superior en el panel Flujo de correo del Centro de seguridad [& cumplimiento](https://protection.office.com) le proporciona el estado del flujo de correo actual de su organización.
+La información **de estado del flujo de correo de dominio superior** en el [panel Flujo de correo](mail-flow-insights-v2.md) del [Centro de cumplimiento de seguridad &](https://protection.office.com) proporciona el estado actual del flujo de correo de su organización.
 
-Esta información le ayuda a identificar y solucionar problemas de dominios que están experimentando problemas ***de flujo de*** correo. Por ejemplo, el dominio no puede recibir correo electrónico externo porque el dominio ha expirado o el dominio tiene un registro MX incorrecto.
+Esta información le ayuda a identificar y solucionar problemas de dominios que experimentan problemas de ***flujo de correo*** . Por ejemplo, el dominio no puede recibir correo electrónico externo porque el dominio ha expirado o el dominio tiene un registro MX incorrecto.
 
-![Widget de estado de flujo de dominio superior en el panel Flujo de correo del Centro de & cumplimiento.](../../media/mfi-top-domain-mail-flow-status-widget.png)
+:::image type="content" source="../../media/mfi-top-domain-mail-flow-status-widget.png" alt-text="Widget de estado de flujo de dominio superior en el panel Flujo de correo del Centro de cumplimiento de seguridad &" lightbox="../../media/mfi-top-domain-mail-flow-status-widget.png":::
 
-Al hacer clic **en Ver detalles** en el widget, aparece **un control flotante** Estado del dominio que muestra más detalles sobre el estado de cada dominio:
+Al hacer clic en **Ver detalles** en el widget, aparece un control flotante **Estado del dominio** que muestra más detalles sobre el estado de cada dominio:
 
 - **Dominio**
 - **Registro MX anterior**
 - **Registro MX actual**
-- **Estado de recepción de correo electrónico**
-- **Estado del** dominio: una marca de verificación verde indica que el registro MX actual (en el momento en que hizo clic en el widget) coincide con el valor que tenemos en el registro y el dominio ha recibido correo electrónico durante las últimas dos horas.
+- **Email estado de recepción**
+- **Estado del dominio**: una marca de verificación verde indica que el registro MX actual (en el momento en que se ha hecho clic en el widget) coincide con el valor que tenemos en el registro y que el dominio ha recibido correo electrónico durante las últimas dos horas.
 
-  Una X roja indica que se ha cambiado el registro MX y que el dominio no ha recibido ningún correo electrónico durante las últimas 6 horas. Esto probablemente indica que el dominio ha expirado o que el registro MX se ha actualizado incorrectamente. Compruebe con el registrador de dominio o el servicio de hospedaje DNS para ver si el dominio ha expirado o si el registro MX del dominio es incorrecto.
+  Una X roja indica que se ha cambiado el registro MX y que el dominio no ha recibido ningún correo electrónico durante las últimas 6 horas. Esto probablemente indica que el dominio ha expirado o que el registro MX se ha actualizado incorrectamente. Compruebe con el registrador de dominios o el servicio de hospedaje DNS para ver si el dominio ha expirado o si el registro MX del dominio es incorrecto.
 
-Puede hacer clic **en Ver más** para ver la misma información para más dominios.
+Puede hacer clic en **Ver más** para ver la misma información para más dominios.
 
-![Los detalles se desván de la información de estado del flujo de correo de dominio superior.](../../media/mfi-top-domain-mail-flow-status-view-details.png)
+:::image type="content" source="../../media/mfi-top-domain-mail-flow-status-view-details.png" alt-text="El control flotante Detalles en la información de estado del flujo de correo del dominio superior" lightbox="../../media/mfi-top-domain-mail-flow-status-view-details.png":::
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
-Para obtener información sobre otras perspectivas en el panel flujo de correo, vea Información sobre el flujo de correo en el [Centro de seguridad & cumplimiento](mail-flow-insights-v2.md).
+Para obtener información sobre otras conclusiones en el panel Flujo de correo, consulte [Información de flujo de correo en el Centro de cumplimiento de seguridad &](mail-flow-insights-v2.md).

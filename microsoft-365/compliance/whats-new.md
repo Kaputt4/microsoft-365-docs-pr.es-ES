@@ -18,12 +18,12 @@ ms.collection:
 - M365-security-compliance
 description: Ya sea que agregue nuevas soluciones al centro de cumplimiento, actualice las características existentes en función de sus comentarios o implemente documentación actualizada y actualizada, Microsoft 365 le ayuda a mantenerse al tanto del panorama de cumplimiento en constante cambio. Averigüe lo que hemos estado haciendo hasta este mes.
 ms.custom: seo-marvel-mar2020
-ms.openlocfilehash: 7a44fe74c3d0262737d5af52e226a3aa942a412f
-ms.sourcegitcommit: e6595be36bbaba244439bd59dbae935e2b258ded
+ms.openlocfilehash: c75106dcaccb5d0688d86fedeee79595ce760b40
+ms.sourcegitcommit: 2b89bcff547e00be3d38dc8d1e6cbcf8f41eba42
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/27/2022
-ms.locfileid: "67450177"
+ms.lasthandoff: 09/03/2022
+ms.locfileid: "67598657"
 ---
 # <a name="whats-new-in-microsoft-purview-risk-and-compliance-solutions"></a>Novedades de las soluciones de cumplimiento y riesgo de Microsoft Purview
 
@@ -40,6 +40,60 @@ Ya sea agregando nuevas soluciones a la [portal de cumplimiento Microsoft Purvie
 > - [Novedades de Microsoft 365 Defender](../security/defender/whats-new.md)
 >
 > Y visite la [hoja de ruta de Microsoft 365](https://www.microsoft.com/microsoft-365/roadmap) para obtener información sobre las características de Microsoft 365 que se lanzaron, se están implementando, están en desarrollo, se han cancelado o publicado anteriormente.
+
+## <a name="august-2022"></a>Agosto de 2022
+
+### <a name="compliance-manager"></a>Administrador de cumplimiento
+
+- [Actualice las acciones de mejora y incorpore los datos de cumplimiento en el Administrador de cumplimiento](compliance-manager-update-actions.md) : nueva funcionalidad para actualizar varias acciones de mejora a la vez, lo que también permite a las organizaciones llevar el trabajo de cumplimiento completado en otros sistemas al Administrador de cumplimiento para realizar el seguimiento allí.
+- [Trabajar con acciones de mejora en el Administrador de cumplimiento](compliance-manager-improvement-actions.md) : los usuarios ahora pueden incluir un vínculo o una dirección URL como parte de la evidencia para la implementación de acciones de mejora o el trabajo de prueba.
+
+### <a name="compliance-offerings--service-assurance"></a>Ofertas de cumplimiento & garantía de servicio
+
+- [Administración de cambios de Microsoft 365](/compliance/assurance/assurance-microsoft-365-change-management) : nuevo tema de garantía que trata los cambios de código y no de código en los servicios de Microsoft.
+- **Tema de la oferta de la marca de oro de Japón CS** : retirada, certificación no renovada.
+
+### <a name="data-lifecycle-management-and-records-management"></a>Administración del ciclo de vida de los datos y administración de registros
+
+- La configuración de [Exchange (heredada)](data-lifecycle-management.md#exchange-legacy-features) pasa del Centro de administración de Exchange clásico (EAC) a la portal de cumplimiento Microsoft Purview, en **Administración del ciclo de vida de los datos**. Las características existentes de administración del ciclo de vida de datos se encuentran en un nuevo subnodo, **Microsoft 365**.
+- En el caso de los datos adjuntos en la nube (actualmente en versión preliminar), la retención automática y temporal de los archivos eliminados en la biblioteca de suspensión de conservación se protege frente al archivo original que los usuarios eliminan antes de que se pueda crear y etiquetar la copia. Para obtener más información, consulte [Cómo funciona la retención con los agregados en la nube](retention-policies-sharepoint.md#how-retention-works-with-cloud-attachments).
+
+### <a name="data-loss-prevention"></a>Prevención de pérdida de datos
+
+- [Introducción a la prevención de pérdida de datos del punto de conexión: vínculos actualizados](endpoint-dlp-getting-started.md) para nombres de artículos más accesibles
+- [Obtenga información sobre la prevención de pérdida de datos del punto de conexión: vínculos actualizados](endpoint-dlp-learn-about.md) para nombres de artículos más accesibles; instrucciones actualizadas sobre los tipos de archivo admitidos; guía de copia a otra aplicación actualizada
+- [Compartir alertas de prevención de pérdida de datos](dlp-share-alerts.md) (versión preliminar): nuevo
+- [Configuración de la DLP de punto de conexión](dlp-configure-endpoint-settings.md) : disponibilidad general de dominios de servicio confidenciales
+- [Referencia de directiva de prevención de pérdida de datos](dlp-policy-reference.md) : disponibilidad general de dominios de servicio confidenciales
+- [Uso de la prevención de pérdida de datos de punto de conexión](endpoint-dlp-using.md) : disponibilidad general de dominios de servicio confidenciales
+
+### <a name="microsoft-priva"></a>Microsoft Priva
+
+- [Microsoft Priva cuaderno de estrategias de prueba](/privacy/priva/priva-trial-playbook): guía actualizada y simplificada para alinearse con las actualizaciones recientes de documentación
+
+### <a name="sensitive-information-types"></a>Tipos de información confidencial
+
+- [Creación de una experiencia clásica de flujo de trabajo de tipo de información confidencial de coincidencia exacta de datos](sit-create-edm-sit-classic-ux-workflow.md) : nueva
+- [Creación del archivo de ejemplo sit de EDM para la nueva experiencia](sit-create-edm-sit-unified-ux-sample-file.md) : nuevo
+- [Creación de EDM SIT con la nueva experiencia](sit-create-edm-sit-unified-ux-schema-rule-package.md) : nuevo
+- [Creación de una nueva experiencia de flujo de trabajo de tipo de información confidencial que coincida con datos exactos](sit-create-edm-sit-unified-ux-workflow.md) : nueva
+- Se han agregado instrucciones para la experiencia de creación de SIT de EDM nueva y clásica en los temas siguientes:
+  - [Introducción a los tipos de información confidencial basados en las coincidencias exactas de datos](sit-get-started-exact-data-match-based-sits-overview.md)
+  - [Crear un paquete de reglas o tipo de información confidencial de coincidencia exacta de datos](sit-get-started-exact-data-match-create-rule-package.md)
+  - [Crear el esquema para tipos de información confidencial basados en las coincidencias exactas de datos](sit-get-started-exact-data-match-create-schema.md)
+  - [Exportar datos de origen para el tipo de información confidencial basada en la coincidencia exacta de datos](sit-get-started-exact-data-match-export-data.md)
+  - [Aplicar hash y cargar la tabla de origen de información confidencial para los datos exactos que coincidan con los tipos de información confidencial](sit-get-started-exact-data-match-hash-upload.md)
+  - [Probar un tipo de información confidencial de coincidencia exacta de datos](sit-get-started-exact-data-match-test.md)
+  - [Más información sobre los tipos de información confidencial de coincidencia exacta de datos](sit-learn-about-exact-data-match-based-sits.md)
+- [Límites de tipos de información confidencial](sit-limits.md) : nuevo
+
+### <a name="sensitivity-labels"></a>Etiquetas de confidencialidad
+
+- Disponibilidad general (GA) y ya no es necesario participar: los dispositivos móviles (iOS y Android, con versiones mínimas) admiten [la coautoría de archivos cifrados con etiquetas de confidencialidad](sensitivity-labels-coauthoring.md).
+- Disponibilidad general con el canal actual 2208+ para Word, Excel y PowerPoint en Windows: [compatibilidad con PDF](sensitivity-labels-office-apps.md#pdf-support). La compatibilidad con Outlook para bloquear la impresión en PDF cuando sea necesario, se está implementando en el canal beta.
+- Implementación en disponibilidad general con canal actual 2208+ para Windows y 16.63+ para macOS: etiqueta predeterminada para documentos existentes.
+- En versión preliminar: clasificadores entrenables para directivas [de etiquetado automático](apply-sensitivity-label-automatically.md).
+- Guía sobre cómo [configurar Azure AD para contenido cifrado](encryption-azure-ad-configuration.md), que incluye información sobre la configuración de acceso entre inquilinos de identidades externas, las directivas de acceso condicional y las cuentas de invitado.
 
 ## <a name="july-2022"></a>Julio de 2022
 
@@ -330,26 +384,3 @@ Para satisfacer los desafíos del área de trabajo descentralizada y rica en dat
   - Compatibilidad con plantillas, enumeradas anteriormente como [no compatibles con las API de Graph de Teams y los cmdlets de PowerShell]( /microsoftteams/sensitivity-labels#limitations).  
 - Para auditar Word, Excel y PowerPoint en la Web, el texto de justificación ahora está totalmente implementado.
 - La aplicación de una etiqueta predeterminada a documentos existentes para Word, Excel y PowerPoint en la Web ahora está totalmente implementado.
-
-## <a name="february-2022"></a>Febrero de 2022
-
-### <a name="ediscovery"></a>eDiscovery
-
-- [Administrar plantillas de comunicaciones de custodios en eDiscovery (Premium):](advanced-ediscovery-communications-library.md) los administradores de eDiscovery ahora pueden crear plantillas de comunicaciones custodios que se pueden usar en cualquier caso de eDiscovery (Premium) de la organización.
-- [Administrar oficiales emisores en eDiscovery (Premium):](advanced-ediscovery-issuing-officers.md) los administradores de eDiscovery pueden agregar una lista de oficiales emisores que se pueden asignar a las comunicaciones de custodio en cualquier caso de exhibición de documentos electrónicos (Premium) de la organización.
-
-### <a name="data-lifecycle-management-and-records-management"></a>Administración del ciclo de vida de los datos y administración de registros
-
-- [Los ámbitos adaptables para las directivas](retention.md#adaptive-or-static-policy-scopes-for-retention) de retención y las directivas de etiqueta de retención ahora están disponibles con carácter general (GA). Las instrucciones para [configurar un ámbito adaptable](retention-settings.md#to-configure-an-adaptive-scope) ahora incluyen más información para los ámbitos de sitio de SharePoint: referencia de entrada de blog para usar propiedades de sitio personalizadas y cómo usar la propiedad site SiteTemplate para incluir o excluir tipos de sitio específicos con el generador de consultas avanzadas.
-- [La búsqueda de directivas](retention.md#policy-lookup) en la solución de administración del ciclo de vida de datos ya está disponible con carácter general (GA).
-- Alternativa de PowerShell a la configuración de administración de registros que permite a los usuarios eliminar elementos etiquetados en SharePoint y OneDrive mediante AllowFilesWithKeepLabelToBeDeletedSPO y AllowFilesWithKeepLabelToBeDeletedODB desde [Get-PnPTenant](https://pnp.github.io/powershell/cmdlets/Get-PnPTenant.html) y [Set-PnPTenant](https://pnp.github.io/powershell/cmdlets/Set-PnPTenant.html).
-
-### <a name="sensitivity-labels"></a>Etiquetas de confidencialidad
-
-- Nueva guía [Por qué elegir el etiquetado integrado en el complemento AIP para aplicaciones de Office](sensitivity-labels-aip.md) si usa el cliente de etiquetado unificado de Azure Information Protection (AIP) para equipos Windows. Esta página incluye información sobre la nueva versión preliminar privada para aplicaciones de Office.
-- Nueva configuración para las [directivas de etiquetado automático](apply-sensitivity-label-automatically.md#how-to-configure-auto-labeling-policies-for-sharepoint-onedrive-and-exchange):
-  - Configuración adicional del correo electrónico para admitir siempre la aplicación de una etiqueta de confidencialidad coincidente y aplicar el cifrado al correo electrónico recibido desde fuera de la organización.
-  - Las exclusiones de instancias específicas (usuarios, grupos, sitios) se admiten mediante la nueva opción **Excluir** cuando se especifica la selección predeterminada de **Todos** para **Incluido**.
-- Ahora en versión preliminar: los dispositivos móviles (iOS y Android) admiten [la coautoría](sensitivity-labels-coauthoring.md) cuando tiene versiones mínimas y opta por esta versión preliminar.
-- La compatibilidad para establecer el tipo de vínculo de uso compartido predeterminado se extiende a documentos individuales en SharePoint y OneDrive. Para obtener más información, vea el nuevo artículo [Uso de etiquetas de confidencialidad para configurar el tipo de vínculo de uso compartido predeterminado para sitios y documentos en SharePoint y OneDrive]( sensitivity-labels-default-sharing-link.md).
-- El Centro de administración de Teams ahora admite etiquetas de contenedor (etiquetas de confidencialidad con el ámbito de Grupos & sitios).

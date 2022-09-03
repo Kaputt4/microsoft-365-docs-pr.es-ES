@@ -7,8 +7,8 @@ ms.author: deniseb
 manager: dansimp
 audience: Admin
 ms.topic: article
-ms.prod: m365-security
-ms.technology: mdb
+ms.service: microsoft-365-security
+ms.subservice: mdb
 ms.localizationpriority: medium
 ms.date: 08/15/2022
 ms.reviewer: shlomiakirav
@@ -18,12 +18,12 @@ ms.collection:
 - M365-security-compliance
 - m365-initiative-defender-business
 ms.custom: intro-get-started
-ms.openlocfilehash: 03804ba55903dd4d0b788333c9b3adfae3dd7186
-ms.sourcegitcommit: 06b81b66f13774102bb34556479c1ff890011afb
+ms.openlocfilehash: 20d1bf0cb045e3ee2efc70a6b0c68fec8b8436ca
+ms.sourcegitcommit: 2b89bcff547e00be3d38dc8d1e6cbcf8f41eba42
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/16/2022
-ms.locfileid: "67357364"
+ms.lasthandoff: 09/03/2022
+ms.locfileid: "67598096"
 ---
 # <a name="visit-the-microsoft-365-defender-portal"></a>Visitar el portal de Microsoft 365 Defender
 
@@ -59,7 +59,7 @@ Use la barra de navegación del lado izquierdo de la pantalla para acceder a los
 | **Más recursos** | Vaya a otros portales, como Azure Active Directory. Pero tenga en cuenta que el portal de Microsoft 365 Defender debe satisfacer sus necesidades sin necesidad de navegar a otros portales. |
 | **Personalización del panel de navegación** | Seleccione esta opción para ocultar o mostrar opciones en la barra de navegación. |
 
-## <a name="next-steps"></a>Siguientes pasos
+## <a name="next-steps"></a>Pasos siguientes
 
 - [Uso del asistente para la instalación en Defender para empresas](mdb-use-wizard.md)
 - [Consulte el proceso de configuración y configuración general.](mdb-setup-configuration.md)

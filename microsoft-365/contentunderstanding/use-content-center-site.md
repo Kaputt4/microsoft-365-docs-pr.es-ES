@@ -13,12 +13,12 @@ ms.collection:
 - m365initiative-syntex
 ms.localizationpriority: medium
 description: Obtenga información sobre cómo aprovisionar y usar la plantilla de sitio del Centro de contenido en Microsoft SharePoint Syntex.
-ms.openlocfilehash: e3d0e50d755a2fe771513389d4028c0306702520
-ms.sourcegitcommit: d3ef9391f621e8f4ca70661184b3bb82c6cbda94
+ms.openlocfilehash: b82f649788f06dbd73cede83d635061894b50105
+ms.sourcegitcommit: 2b89bcff547e00be3d38dc8d1e6cbcf8f41eba42
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/02/2022
-ms.locfileid: "67583811"
+ms.lasthandoff: 09/03/2022
+ms.locfileid: "67599767"
 ---
 # <a name="use-the-content-center-site-template-for-microsoft-sharepoint-syntex"></a>Uso de la plantilla de sitio del Centro de contenido para Microsoft SharePoint Syntex
 
@@ -47,7 +47,7 @@ El sitio del Centro de contenido se puede aprovisionar desde el [servicio de lib
 
 3. Escriba su dirección de correo electrónico (para una notificación de cuándo está listo para usar el sitio), la dirección URL del sitio que desea usar y el título que desea usar para su sitio. 
 
-    ![Captura de pantalla de la página de aprovisionamiento de plantillas de sitio del Centro de contenido.](../media/content-understanding/content-center-email-and-url.png)
+    ![Captura de pantalla que muestra la página de aprovisionamiento de plantillas de sitio del Centro de contenido.](../media/content-understanding/content-center-email-and-url.png)
 
 4. Seleccione **Aprovisionar** y, en poco tiempo, el sitio estará listo para el uso. Recibirá un correo electrónico (enviado a la dirección de correo electrónico que proporcionó) que indica que se ha completado la solicitud para aprovisionar la plantilla de sitio del Centro de contenido.
 

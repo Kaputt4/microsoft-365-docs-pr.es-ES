@@ -15,14 +15,14 @@ ms.collection:
 - M365-security-compliance
 ms.custom: ''
 description: Obtenga información sobre cómo administrar los bloques y los permitidos en la lista de permitidos o bloqueados de inquilinos en el portal de seguridad.
-ms.technology: mdo
-ms.prod: m365-security
-ms.openlocfilehash: 9993241a42b40fd670e83d0e28938fa9a4625086
-ms.sourcegitcommit: 031b3e963478f642a0d23be37a01f23a01cb3d84
+ms.subservice: mdo
+ms.service: microsoft-365-security
+ms.openlocfilehash: 1eae7f137d9457ca507efb592414127223af4f87
+ms.sourcegitcommit: 2b89bcff547e00be3d38dc8d1e6cbcf8f41eba42
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/26/2022
-ms.locfileid: "67441601"
+ms.lasthandoff: 09/03/2022
+ms.locfileid: "67598986"
 ---
 # <a name="manage-your-allows-and-blocks-in-the-tenant-allowblock-list"></a>Administrar los bloques y los permitidos en la lista de permitidos o bloqueados de inquilinos
 

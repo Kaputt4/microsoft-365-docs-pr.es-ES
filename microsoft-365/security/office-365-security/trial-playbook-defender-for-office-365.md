@@ -10,19 +10,19 @@ ms.topic: conceptual
 ms.collection: m365-security-compliance
 ms.localizationpriority: high
 ROBOTS: NOINDEX, NOFOLLOW
-ms.prod: m365-security
+ms.service: microsoft-365-security
 search.appverid:
 - MOE150
 - MET150
 description: Soluciones para la versión de prueba del cuaderno de estrategias de Microsoft Defender para Office 365
-ms.technology: mdo
+ms.subservice: mdo
 ms.custom: trial-playbook
-ms.openlocfilehash: 942752a8fc13a9644558f20567d7dd32e991867b
-ms.sourcegitcommit: 7374c7b013890744d74e5214f7f8d69ca7874466
+ms.openlocfilehash: 0fcd44b3bf82e4eca1322bf1c8ceaff1613a04cd
+ms.sourcegitcommit: 2b89bcff547e00be3d38dc8d1e6cbcf8f41eba42
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/23/2022
-ms.locfileid: "67408073"
+ms.lasthandoff: 09/03/2022
+ms.locfileid: "67598271"
 ---
 # <a name="trial-playbook-microsoft-defender-for-office-365"></a>Versión de prueba del cuaderno de estrategias: Microsoft Defender para Office 365
 

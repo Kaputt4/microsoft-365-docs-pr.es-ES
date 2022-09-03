@@ -15,14 +15,14 @@ ms.collection:
 description: Use el Explorador de amenazas o las detecciones en tiempo real en el portal de Microsoft 365 Defender para investigar y responder a las amenazas de forma eficaz.
 ms.custom:
 - seo-marvel-apr2020
-ms.technology: mdo
-ms.prod: m365-security
-ms.openlocfilehash: 2c99bc2ce004156320ec8f53f6b956f7989ee056
-ms.sourcegitcommit: 725a92b0b1555572b306b285a0e7a7614d34e5e5
+ms.subservice: mdo
+ms.service: microsoft-365-security
+ms.openlocfilehash: c1fa07fd22d0bb03cf9713dd210e24de8fa66e2b
+ms.sourcegitcommit: 2b89bcff547e00be3d38dc8d1e6cbcf8f41eba42
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/24/2022
-ms.locfileid: "65648831"
+ms.lasthandoff: 09/03/2022
+ms.locfileid: "67598701"
 ---
 # <a name="threat-hunting-in-threat-explorer-for-microsoft-defender-for-office-365"></a>Búsqueda de amenazas en el Explorador de amenazas para Microsoft Defender para Office 365
 
@@ -35,12 +35,12 @@ ms.locfileid: "65648831"
 En este artículo:
 
 - [Tutorial del Explorador de amenazas](#threat-explorer-walk-through)
-- [Investigación por correo electrónico](#email-investigation)
-- [Corrección por correo electrónico](#email-remediation)
+- [Email investigación](#email-investigation)
+- [Email corrección](#email-remediation)
 - [Mejoras en la experiencia de búsqueda de amenazas](#improvements-to-threat-hunting-experience)
 
 > [!NOTE]
-> Esto forma parte de una **serie de 3 artículos** sobre **el Explorador de amenazas (Explorer),** **la seguridad del correo electrónico** **y las detecciones del Explorador y en tiempo real** (como las diferencias entre las herramientas y los permisos necesarios para operarlas). Los otros dos artículos de esta serie son [Seguridad de correo electrónico con explorador de amenazas](email-security-in-microsoft-defender.md) y [Explorador de amenazas y detecciones en tiempo real](real-time-detections.md).
+> Esto forma parte de una **serie de 3 artículos** sobre **el Explorador de amenazas (Explorer),** **la seguridad del correo electrónico** **y las detecciones del Explorador y en tiempo real** (como las diferencias entre las herramientas y los permisos necesarios para operarlas). Los otros dos artículos de esta serie son [Email seguridad con el Explorador de amenazas](email-security-in-microsoft-defender.md) y [el Explorador de amenazas y las detecciones en tiempo real](real-time-detections.md).
 
 **Se aplica a**
 - [Plan 1 y Plan 2 de Microsoft Defender para Office 365](defender-for-office-365.md)
@@ -48,16 +48,16 @@ En este artículo:
 
 Si su organización tiene [Microsoft Defender para Office 365](defender-for-office-365.md) y tiene los [permisos](#required-licenses-and-permissions), puede usar el **Explorador** o **las detecciones en tiempo real** para detectar y corregir amenazas.
 
-En el portal de Microsoft 365 Defender en <https://security.microsoft.com>, vaya a **Correo electrónico & colaboración** y, a continuación, elija **Explorador** o **Detecciones en tiempo real**. Para ir directamente a la página, use <https://security.microsoft.com/threatexplorer> o <https://security.microsoft.com/realtimereports>.
+En el portal de Microsoft 365 Defender en <https://security.microsoft.com>, vaya a **Email & colaboración** y, a continuación, elija **Explorador** o **Detecciones en tiempo real**. Para ir directamente a la página, use <https://security.microsoft.com/threatexplorer> o <https://security.microsoft.com/realtimereports>.
 
 Con estas herramientas, puede:
 
-- Ver el malware detectado por Microsoft 365 características de seguridad
+- Ver el malware detectado por las características de seguridad de Microsoft 365
 - Ver la dirección URL de phishing y hacer clic en datos de veredicto
 - Inicio de un proceso de investigación y respuesta automatizado desde una vista en el Explorador
 - Investigar el correo electrónico malintencionado y mucho más
 
-Para obtener más información, consulte [Seguridad de correo electrónico con el Explorador de amenazas](email-security-in-microsoft-defender.md).
+Para obtener más información, consulte [Email seguridad con el Explorador de amenazas](email-security-in-microsoft-defender.md).
 
 Vea este breve vídeo para aprender a buscar e investigar amenazas basadas en el correo electrónico y la colaboración mediante Microsoft Defender para Office 365. 
 > [!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RWyPRU]
@@ -101,15 +101,15 @@ Use el botón **Opciones de columna** para obtener el tipo de información de la
 > [!div class="mx-imgBorder"]
 > :::image type="content" source="../../media/column-options.png" alt-text="Las opciones disponibles en Columnas" lightbox="../../media/column-options.png":::
 
-En el mismo mien, asegúrese de probar las opciones de visualización. Diferentes audiencias reaccionarán bien a diferentes presentaciones de los mismos datos. Para algunos espectadores, el mapa **Orígenes de correo electrónico** puede mostrar que una amenaza es generalizada o discreta más rápidamente que la opción **de visualización Campaña** situada justo al lado. Las operaciones sec pueden usar estas pantallas para destacar mejor la necesidad de seguridad y protección, o para una comparación posterior, para demostrar la eficacia de sus acciones.
+En el mismo mien, asegúrese de probar las opciones de visualización. Diferentes audiencias reaccionarán bien a diferentes presentaciones de los mismos datos. Para algunos espectadores, el mapa **de orígenes de Email** puede mostrar que una amenaza está generalizada o discreta más rápidamente que la opción **de visualización Campaña** situada junto a ella. Las operaciones sec pueden usar estas pantallas para destacar mejor la necesidad de seguridad y protección, o para una comparación posterior, para demostrar la eficacia de sus acciones.
 
 > [!div class="mx-imgBorder"]
-> :::image type="content" source="../../media/threat-explorer-email-origin-map.png" alt-text="Mapa orígenes de correo electrónico" lightbox="../../media/threat-explorer-email-origin-map.png":::
+> :::image type="content" source="../../media/threat-explorer-email-origin-map.png" alt-text="Mapa de orígenes de Email" lightbox="../../media/threat-explorer-email-origin-map.png":::
 
 > [!div class="mx-imgBorder"]
 > :::image type="content" source="../../media/threat-explorer-campaign-display.png" alt-text="Opciones de presentación de campaña" lightbox="../../media/threat-explorer-campaign-display.png":::
 
-### <a name="email-investigation"></a>Investigación por correo electrónico
+### <a name="email-investigation"></a>Email investigación
 
 Cuando vea un correo electrónico sospechoso, haga clic en el nombre para expandir el control flotante de la derecha. Aquí está disponible el banner que permite a Sec Ops ver la [página de entidad de correo electrónico](mdo-email-entity-page.md) .
 
@@ -121,12 +121,12 @@ Cuando llegue a esta fase, la página de la entidad de correo electrónico será
 > :::image type="content" source="../../media/threat-explorer-email-entity-page.png" alt-text="Página de la entidad de correo electrónico" lightbox="../../media/threat-explorer-email-entity-page.png":::
 
 > [!TIP]
-> Para obtener más información sobre la página de entidad de correo electrónico enriquecida (que se muestra a continuación en la pestaña **Análisis** ), incluidos los resultados de los datos adjuntos detonados, los resultados de las direcciones URL incluidas y la versión preliminar de correo electrónico seguro, haga clic [aquí](mdo-email-entity-page.md).
+> Para obtener más información sobre la página de entidad de correo electrónico enriquecida (que se muestra a continuación en la pestaña **Análisis**), incluidos los resultados de los datos adjuntos detonados, los resultados de las direcciones URL incluidas y la versión preliminar Email segura, haga clic [aquí](mdo-email-entity-page.md).
 
 > [!div class="mx-imgBorder"]
 > :::image type="content" source="../../media/threat-explorer-analysis-tab.png" alt-text="Pestaña Análisis de la página de entidad de correo electrónico" lightbox="../../media/threat-explorer-analysis-tab.png":::
 
-### <a name="email-remediation"></a>Corrección por correo electrónico
+### <a name="email-remediation"></a>Email corrección
 
 Una vez que una persona de Operaciones por segundo determina que un correo electrónico es una amenaza, el siguiente paso de detección en tiempo real o Explorador se ocupa de la amenaza y la corrige. Para ello, vuelva al Explorador de amenazas, active la casilla del correo electrónico del problema y use el botón **Acciones** .
 
@@ -154,7 +154,7 @@ Por último, el identificador de alerta se incluye en la dirección URL, por eje
 
 ### <a name="extending-explorer-and-real-time-detections-data-retention-and-search-limit-for-trial-tenants"></a>Extensión de la retención de datos del Explorador (y detecciones en tiempo real) y el límite de búsqueda para inquilinos de prueba
 
-Como parte de este cambio, los analistas podrán buscar y filtrar los datos de correo electrónico durante 30 días (lo que aumenta desde siete días) en el Explorador de amenazas y las detecciones en tiempo real para los inquilinos de prueba de Defender para Office P1 y P2. Esto no afecta a los inquilinos de producción para los clientes P1 y P2 E5, donde el valor predeterminado de retención ya es de 30 días.
+Como parte de este cambio, los analistas podrán buscar y filtrar los datos de correo electrónico durante 30 días (se aumenta desde siete días) en el Explorador de amenazas y las detecciones en tiempo real para los inquilinos de prueba de Defender para Office P1 y P2. Esto no afecta a los inquilinos de producción para los clientes P1 y P2 E5, donde el valor predeterminado de retención ya es de 30 días.
 
 ### <a name="updated-export-limit"></a>Límite de exportación actualizado
 
@@ -163,13 +163,13 @@ El número de registros de correos electrónicos que se pueden exportar desde el
 ### <a name="tags-in-threat-explorer"></a>Etiquetas en el Explorador de amenazas
 
 > [!NOTE]
-> La característica de etiquetas de usuario está en versión preliminar y es posible que no esté disponible para todos los usuarios. Además, las versiones preliminares están sujetas a cambios. Para obtener información sobre la programación de la versión, consulte la hoja de ruta de Microsoft 365.
+> La característica de etiquetas de usuario está en versión preliminar y es posible que no esté disponible para todos los usuarios. Además, las versiones preliminares están sujetas a cambios. Para obtener información sobre la programación de lanzamiento, consulte el plan de desarrollo de Microsoft 365.
 
 Las etiquetas de usuario identifican grupos específicos de usuarios en Microsoft Defender para Office 365. Para obtener más información sobre las etiquetas, incluidas las licencias y la configuración, consulte [Etiquetas de usuario](user-tags.md).
 
 En el Explorador de amenazas, puede ver información sobre las etiquetas de usuario en las siguientes experiencias.
 
-#### <a name="email-grid-view"></a>Vista de cuadrícula de correo electrónico
+#### <a name="email-grid-view"></a>Email vista de cuadrícula
 
 Cuando los analistas examinan la columna **Etiquetas** de la cuadrícula de correo electrónico, ven todas las etiquetas que se han aplicado a buzones de remitente o destinatario. De forma predeterminada, las etiquetas del sistema, como *las cuentas de prioridad* , se muestran primero.
 
@@ -185,14 +185,14 @@ Las etiquetas se pueden usar como filtros. Busque solo entre cuentas de priorida
 > [!div class="mx-imgBorder"]
 > :::image type="content" source="../../media/tags-filter-not.png" alt-text="Las etiquetas que no se han filtrado" lightbox="../../media/tags-filter-not.png":::
 
-#### <a name="email-detail-flyout"></a>Control flotante de detalles de correo electrónico
+#### <a name="email-detail-flyout"></a>Email control flotante de detalles
 
 Para ver las etiquetas individuales del remitente y el destinatario, seleccione un correo electrónico para abrir el control flotante de detalles del mensaje. En la pestaña **Resumen** , las etiquetas remitente y destinatario se muestran por separado. La información sobre etiquetas individuales para remitente y destinatario se puede exportar como datos CSV.
 
 > [!div class="mx-imgBorder"]
-> :::image type="content" source="../../media/tags-flyout.png" alt-text="Etiquetas de detalles de correo electrónico" lightbox="../../media/tags-flyout.png":::
+> :::image type="content" source="../../media/tags-flyout.png" alt-text="Etiquetas de detalles de Email" lightbox="../../media/tags-flyout.png":::
 
-La información de etiquetas también se muestra en el control flotante Clics de dirección URL. Para verlo, vaya a la vista Phish o Todo el correo electrónico > pestaña **Url** o **URL Clics** . Seleccione un control flotante de dirección URL individual para ver detalles adicionales sobre los clics de esa dirección URL, incluidas las etiquetas asociadas a ese clic.
+La información de etiquetas también se muestra en el control flotante Clics de dirección URL. Para verlo, vaya a la pestaña Phish o All Email view > **URL** or **URL Clicks (Direcciones URL o url).** Seleccione un control flotante de dirección URL individual para ver detalles adicionales sobre los clics de esa dirección URL, incluidas las etiquetas asociadas a ese clic.
 
 ### <a name="updated-timeline-view"></a>Vista de escala de tiempo actualizada
 
@@ -212,30 +212,30 @@ Las operaciones de seguridad pueden exportar la lista de usuarios de destino, ha
 > [!div class="mx-imgBorder"]
 > :::image type="content" source="../../media/Top_Targeted_Users.png" alt-text="Los usuarios que más se han dirigido" lightbox="../../media/Top_Targeted_Users.png":::
 
-### <a name="exchange-transport-rules"></a>Exchange reglas de transporte
+### <a name="exchange-transport-rules"></a>Reglas de transporte de Exchange
 
-El equipo de operaciones de seguridad podrá ver todas las reglas de transporte de Exchange (o reglas de flujo de correo) aplicadas a un mensaje, en la vista de cuadrícula Correo electrónico. Seleccione **Opciones de columna** en la cuadrícula y, a continuación, **Agregue Exchange regla de transporte** en las opciones de columna. La opción Exchange reglas de transporte también está visible en el control flotante **Detalles** del correo electrónico.
+El equipo de operaciones de seguridad podrá ver todas las reglas de transporte de Exchange (o reglas de flujo de correo) aplicadas a un mensaje, en la vista de cuadrícula de Email. Seleccione **Opciones de columna** en la cuadrícula y, a continuación, **Agregar regla de transporte de Exchange** en las opciones de columna. La opción Reglas de transporte de Exchange también está visible en el control flotante **Detalles** del correo electrónico.
 
 Aparecen nombres y GUID de las reglas de transporte aplicadas al mensaje. Los analistas podrán buscar mensajes mediante el nombre de la regla de transporte. Se trata de una búsqueda CONTAINS, lo que significa que también puede realizar búsquedas parciales.
 
 > [!IMPORTANT]
-> Exchange disponibilidad de nombres y búsqueda de reglas de transporte dependen del rol específico asignado. Debe tener uno de los siguientes roles o permisos para ver los nombres de las reglas de transporte y la búsqueda. Sin embargo, incluso sin los roles o permisos siguientes, un analista puede ver la etiqueta de regla de transporte y la información del GUID en detalles del correo electrónico. Otras experiencias de visualización de registros en cuadrículas de correo electrónico, controles flotantes de correo electrónico, filtros y exportación no se ven afectados.
+> La disponibilidad de nombres y búsqueda de reglas de transporte de Exchange depende del rol específico que se le haya asignado. Debe tener uno de los siguientes roles o permisos para ver los nombres de las reglas de transporte y la búsqueda. Sin embargo, incluso sin los roles o permisos siguientes, un analista puede ver la etiqueta de regla de transporte y la información del GUID en los detalles de Email. Otras experiencias de visualización de registros en Email Grids, Email controles flotantes, filtros y exportación no se ven afectados.
 >
 > - solo Exchange Online: prevención de pérdida de datos: todos
 > - solo Exchange Online - O365SupportViewConfig: Todos
 > - Microsoft Azure Active Directory o Exchange Online: Administración de seguridad: todos
-> - Azure Active Directory o Exchange Online- Lector de seguridad: Todos
+> - Azure Active Directory o Exchange Online: Lector de seguridad: todos
 > - solo Exchange Online: reglas de transporte: todas
 > - solo Exchange Online: configuración de View-Only: todos
 >
 > Dentro de la cuadrícula de correo electrónico, el control flotante Detalles y CSV exportado, los ETR se presentan con un nombre o GUID, como se muestra a continuación.
 >
 > > [!div class="mx-imgBorder"]
-> > :::image type="content" source="../../media/ETR_Details.png" alt-text="Las reglas de Exchange Transport" lightbox="../../media/ETR_Details.png":::
+> > :::image type="content" source="../../media/ETR_Details.png" alt-text="Las reglas del transporte de Exchange" lightbox="../../media/ETR_Details.png":::
 
-### <a name="inbound-connectors"></a>Conectores de entrada
+### <a name="inbound-connectors"></a>Conectores entrantes
 
-Los conectores son una colección de instrucciones que personalizan cómo fluye el correo electrónico hacia y desde la Microsoft 365 o Office 365 organización. Permiten aplicar restricciones o controles de seguridad. En el Explorador de amenazas, puede ver los conectores relacionados con un correo electrónico y buscar correos electrónicos mediante nombres de conector.
+Los conectores son una colección de instrucciones que personalizan cómo fluye el correo electrónico hacia y desde su organización de Microsoft 365 o Office 365. Permiten aplicar restricciones o controles de seguridad. En el Explorador de amenazas, puede ver los conectores relacionados con un correo electrónico y buscar correos electrónicos mediante nombres de conector.
 
 La búsqueda de conectores es una consulta CONTAINS, lo que significa que las búsquedas parciales de palabras clave pueden funcionar:
 
@@ -254,7 +254,7 @@ Para ver y usar el Explorador o las detecciones en tiempo real, debe tener los p
 
 - En el portal de Microsoft 365 Defender:
   - Administración de la organización
-  - Administrador de seguridad (esto se puede asignar en el centro de administración de Azure Active Directory (<https://aad.portal.azure.com>)
+  - Administrador de seguridad (esto se puede asignar en el Centro de administración de Azure Active Directory (<https://aad.portal.azure.com>)
   - Lector de seguridad
 - En Exchange Online:
   - Administración de la organización
@@ -275,4 +275,4 @@ Para obtener más información sobre los roles y permisos, consulte los siguient
 - [Obtenga información general sobre las vistas en el Explorador de amenazas (y detecciones en tiempo real)](threat-explorer-views.md)
 - [Informe de estado de protección contra amenazas](view-email-security-reports.md#threat-protection-status-report)
 - [Investigación y respuesta automatizada en la Protección contra amenazas de Microsoft](automated-investigation-response-office.md)
-- [Investigación de correos electrónicos con la página Entidad de correo electrónico](mdo-email-entity-page.md)
+- [Investigación de correos electrónicos con la página de entidad Email](mdo-email-entity-page.md)

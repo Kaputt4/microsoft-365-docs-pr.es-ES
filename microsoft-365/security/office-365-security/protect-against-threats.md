@@ -18,14 +18,14 @@ ms.collection:
 - m365initiative-defender-office365
 description: Los administradores pueden obtener información sobre la protección contra amenazas en Microsoft 365 y configurar cómo usarla para su organización.
 ms.custom: seo-marvel-apr2020
-ms.technology: mdo
-ms.prod: m365-security
-ms.openlocfilehash: f4a7dd91dde78e816ed579d2f16744ec90b67675
-ms.sourcegitcommit: fa90763559239c4c46c5e848939126763879d8e4
+ms.subservice: mdo
+ms.service: microsoft-365-security
+ms.openlocfilehash: 747fe0563222b34b5ff63673a6bc350db9207b83
+ms.sourcegitcommit: 2b89bcff547e00be3d38dc8d1e6cbcf8f41eba42
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/13/2022
-ms.locfileid: "66772136"
+ms.lasthandoff: 09/03/2022
+ms.locfileid: "67598723"
 ---
 # <a name="protect-against-threats"></a>Protección contra amenazas
 
@@ -127,8 +127,8 @@ En el procedimiento siguiente se describe cómo configurar la directiva de anti 
      - **Sección Acciones del mensaje** : Configure las siguientes opciones:
        - **Si el mensaje se detecta como un usuario**<sup>\*</sup> suplantado: seleccione **Poner en cuarentena el mensaje**. Aparece un cuadro **Aplicar directiva de cuarentena** donde se selecciona la [directiva de cuarentena](quarantine-policies.md) que se aplica a los mensajes que están en cuarentena por la protección de suplantación de usuario.
        - **Si el mensaje se detecta como un dominio**<sup>\*</sup> suplantado: seleccione **Poner en cuarentena el mensaje**. Aparece un cuadro **Aplicar directiva de cuarentena** donde se selecciona la [directiva de cuarentena](quarantine-policies.md) que se aplica a los mensajes que están en cuarentena por la protección de suplantación de dominio.
-       - **Si la inteligencia del buzón detecta un usuario**<sup>\*</sup> suplantado: seleccione **Mover mensaje a las carpetas de correo no deseado** (Estándar) de los destinatarios o **Poner en cuarentena el mensaje** (Estricto). Si selecciona **Poner en cuarentena el mensaje**, aparece un cuadro **Aplicar directiva de cuarentena** donde selecciona la [directiva de cuarentena](quarantine-policies.md) que se aplica a los mensajes que están en cuarentena por la protección de inteligencia del buzón de correo.
-       - **Si el mensaje se detecta como suplantación**: seleccione **Mover mensaje a las carpetas de correo no deseado** (Estándar) de los destinatarios o **Poner en cuarentena el mensaje** (Estricto).  Si selecciona **Poner en cuarentena el mensaje**, aparece un cuadro **Aplicar directiva de cuarentena** donde selecciona la [directiva de cuarentena](quarantine-policies.md) que se aplica a los mensajes que están en cuarentena mediante la protección de inteligencia contra suplantación de identidad.
+       - **Si la inteligencia del buzón detecta un usuario**<sup>\*</sup> suplantado: seleccione **Mover mensaje a las carpetas de Email no deseados** (Estándar) de los destinatarios o **Poner en cuarentena el mensaje** (Estricto). Si selecciona **Poner en cuarentena el mensaje**, aparece un cuadro **Aplicar directiva de cuarentena** donde selecciona la [directiva de cuarentena](quarantine-policies.md) que se aplica a los mensajes que están en cuarentena por la protección de inteligencia del buzón de correo.
+       - **Si el mensaje se detecta como suplantación de identidad**: seleccione **Mover mensaje a las carpetas de Email no deseados** (Estándar) de los destinatarios o **Poner en cuarentena el mensaje** (Estricto).  Si selecciona **Poner en cuarentena el mensaje**, aparece un cuadro **Aplicar directiva de cuarentena** donde selecciona la [directiva de cuarentena](quarantine-policies.md) que se aplica a los mensajes que están en cuarentena mediante la protección de inteligencia contra suplantación de identidad.
      - **Sugerencias de seguridad & sección indicadores** : Configure los siguientes valores:
        - **Mostrar la primera sugerencia de seguridad de contacto**: seleccione (activar).
        - Mostrar sugerencia <sup>\*</sup>de **seguridad de suplantación de usuario**: seleccione (activar).
@@ -162,11 +162,11 @@ Para obtener más información sobre la configuración recomendada para la prote
 
    - **Sección Acciones** : haga clic en **Editar acciones**. En el control flotante que aparece, configure los siguientes valores:
      - **Sección Acciones del mensaje** :
-       - **Correo no deseado**: compruebe que la **carpeta Mover mensaje a correo no deseado** está seleccionada (Estándar) o seleccione **Mensaje de cuarentena** (estricto).
+       - **Correo no deseado**: compruebe que **la opción Mover mensaje a la carpeta de Email no deseado** está seleccionada (Estándar) o seleccione **Mensaje de cuarentena** (Estricto).
        - **Correo no deseado de alta confianza**: seleccione **Mensaje de cuarentena**.
        - **Phishing**: seleccione **Mensaje de cuarentena**.
        - **Suplantación de identidad de alta confianza**: compruebe que los **mensajes de cuarentena** están seleccionados.
-       - **Masivo**: compruebe que **la opción Mover mensaje a la carpeta Correo no deseado** está seleccionada (Estándar) o seleccione **Mensaje de cuarentena** (Estricto).
+       - **Masivo**: compruebe que **la opción Mover mensaje a la carpeta Email no deseado** está seleccionada (Estándar) o seleccione **Mensaje de cuarentena** (Estricto).
 
        Para cada acción en la que seleccione **Mensaje de cuarentena**, aparece un cuadro **Seleccionar directiva de cuarentena** donde selecciona la directiva de [cuarentena](quarantine-policies.md) que se aplica a los mensajes que están en cuarentena por la protección contra correo no deseado.
 
@@ -223,8 +223,8 @@ Para obtener más información sobre la configuración recomendada para datos ad
 5. Cuando haya terminado, haga clic en **Enviary**, a continuación, haga clic en **Listo**.
 
 6. (Recomendado) Como administrador global o administrador de SharePoint Online, ejecute el cmdlet **[Set-SPOTenant](/powershell/module/sharepoint-online/Set-SPOTenant)** con el parámetro _DisallowInfectedFileDownload_ establecido `$true` en en PowerShell de SharePoint Online.
-   - `$true` bloquea todas las acciones (excepto Eliminar) para los archivos detectados. Los usuarios no pueden abrir, mover, copiar ni compartir los archivos detectados.
-   - `$false` bloquea todas las acciones excepto Eliminar y Descargar. Las personas pueden optar por aceptar el riesgo y descargar un archivo detectado.
+   - `$true` bloquea todas las acciones (excepto Eliminar) para los archivos detectados. Personas no puede abrir, mover, copiar ni compartir los archivos detectados.
+   - `$false` bloquea todas las acciones excepto Eliminar y Descargar. Personas puede optar por aceptar el riesgo y descargar un archivo detectado.
 
 7. Espere hasta 30 minutos para que los cambios se distribuyan a todos los centros de datos de Microsoft 365.
 
@@ -270,7 +270,7 @@ Para obtener instrucciones detalladas sobre cómo configurar directivas de vínc
 
 Para recibir una notificación cuando un archivo de SharePoint Online o OneDrive para la Empresa se ha identificado como malintencionado, puede configurar una alerta como se describe en esta sección.
 
-1. En el portal de Microsoft 365 Defender en <https://security.microsoft.com>, vaya a **Correo electrónico & directivas** **de & directivas** \> de **alerta** de colaboración\>.
+1. En el portal de Microsoft 365 Defender en <https://security.microsoft.com>, vaya a **Email & directivas** **de & directivas de alertas de las directivas** \> de colaboración.\>
 
 2. En la página **Directiva de alertas** , haga clic en **Nueva directiva de alerta**.
 
@@ -290,7 +290,7 @@ Para recibir una notificación cuando un archivo de SharePoint Online o OneDrive
 
 5. En la página **Establecer los destinatarios** , configure los siguientes valores:
    - **Enviar notificaciones por correo electrónico**: compruebe que esta configuración está seleccionada.
-   - **Destinatarios de correo electrónico**: seleccione uno o varios administradores globales, administradores de seguridad o lectores de seguridad que deben recibir una notificación cuando se detecte un archivo malintencionado.
+   - **Email destinatarios**: seleccione uno o varios administradores globales, administradores de seguridad o lectores de seguridad que deben recibir una notificación cuando se detecte un archivo malintencionado.
    - **Límite diario de notificaciones**: compruebe que **no hay ningún límite** seleccionado.
 
    Cuando haya terminado, haga clic en **Siguiente.**
@@ -313,6 +313,6 @@ Después de configurar las características de protección contra amenazas, aseg
 
 |Qué hacer|Recursos para obtener más información|
 |---|---|
-|Vea cómo funcionan las características de protección contra amenazas para su organización mediante la visualización de informes|[Informes de seguridad de correo electrónico](view-email-security-reports.md) <p> [Informes para Microsoft Defender para Office 365](view-reports-for-mdo.md) <p> [Explorador de amenazas](threat-explorer.md)|
+|Vea cómo funcionan las características de protección contra amenazas para su organización mediante la visualización de informes|[Email informes de seguridad](view-email-security-reports.md) <p> [Informes para Microsoft Defender para Office 365](view-reports-for-mdo.md) <p> [Explorador de amenazas](threat-explorer.md)|
 |Revise y revise periódicamente las directivas de protección contra amenazas según sea necesario.|[Puntuación de seguridad](../defender/microsoft-secure-score.md) <p> [Características de investigación y respuesta de amenazas de Microsoft 365](./office-365-ti.md)|
 |Inspección de nuevas características y actualizaciones del servicio|[Opciones de versión estándar y de destino](../../admin/manage/release-options-in-office-365.md) <p> [Centro de mensajes](../../admin/manage/message-center.md) <p> [Plan de desarrollo de Microsoft 365](https://www.microsoft.com/microsoft-365/roadmap?filters=&searchterms=advanced%2Cthreat%2Cprotection) <p> [Descripciones del servicio](/office365/servicedescriptions/office-365-service-descriptions-technet-library)|

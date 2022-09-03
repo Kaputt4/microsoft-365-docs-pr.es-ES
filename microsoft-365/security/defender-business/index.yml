@@ -4,9 +4,10 @@ summary: Simple, seguridad para puntos finales sencilla y completa que le ayudar
 metadata:
   title: Documentación de Microsoft Defender para Empresas
   description: Microsoft Defender para Empresas es una solución de ciberseguridad para pequeñas y medianas empresas. Proteja los dispositivos con seguridad de nivel empresarial a un precio asequible.
-  ms.prod: m365-security
-  ms.technology: mdb
+  ms.service: microsoft-365-security
+  ms.subservice: mdb
   ms.topic: landing-page
+  ms.date: 07/19/2022
   ms.collection:
   - SMB
   - M365-security-compliance
@@ -14,12 +15,12 @@ metadata:
   ms.custom: intro-hub-or-landing
   author: denisebmsft
   ms.author: deniseb
-  ms.openlocfilehash: 32746cbb20f9a05d5928449cd6076eb0fa3321f5
-  ms.sourcegitcommit: af6c13d7ab1fe440dd45ce8cd3940774cdda66ef
-  ms.translationtype: HT
+  ms.openlocfilehash: c7aaed4a26d39eea32378eb423f38937a423a88c
+  ms.sourcegitcommit: 2b89bcff547e00be3d38dc8d1e6cbcf8f41eba42
+  ms.translationtype: MT
   ms.contentlocale: es-ES
-  ms.lasthandoff: 07/25/2022
-  ms.locfileid: "67004504"
+  ms.lasthandoff: 09/03/2022
+  ms.locfileid: "67598117"
 landingContent:
 - title: Información general
   linkLists:

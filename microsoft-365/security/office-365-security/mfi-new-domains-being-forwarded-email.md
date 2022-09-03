@@ -10,19 +10,19 @@ ms.topic: conceptual
 ms.localizationpriority: medium
 ms.assetid: ''
 description: Los administradores pueden aprender a usar la información de correo electrónico Nuevos dominios que se reenvían en el panel Flujo de correo del Centro de cumplimiento de seguridad & para investigar cuándo sus usuarios reenvían mensajes a dominios externos a los que nunca se han reenviado.
-ms.technology: mdo
-ms.prod: m365-security
+ms.subservice: mdo
+ms.service: microsoft-365-security
 ms.collection: M365-security-compliance
-ms.openlocfilehash: 1dbcf83d234611af1d209d83191cee24f5bee579
-ms.sourcegitcommit: 45bc65972d4007b2aa7760d4457a0d2699f81926
+ms.openlocfilehash: 5cbd60714b929b97c571ca21fdb5f50fa0b18443
+ms.sourcegitcommit: 2b89bcff547e00be3d38dc8d1e6cbcf8f41eba42
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/20/2022
-ms.locfileid: "64974353"
+ms.lasthandoff: 09/03/2022
+ms.locfileid: "67599591"
 ---
 # <a name="new-domains-being-forwarded-email-insight-in-the-security--compliance-center"></a>Información de correo electrónico de nuevos dominios reenviados en el Centro de cumplimiento de seguridad &
 
-[!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
+[!INCLUDE [MDO Trial banner](../includes/mdo-trial-banner.md)]
 
 **Se aplica a**
 - [Exchange Online Protection](exchange-online-protection-overview.md)

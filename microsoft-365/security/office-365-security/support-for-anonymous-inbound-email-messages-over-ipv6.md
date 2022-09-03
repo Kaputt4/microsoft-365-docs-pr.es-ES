@@ -16,14 +16,14 @@ ms.collection:
 ms.custom:
 - seo-marvel-apr2020
 description: Administración puede aprender a configurar la compatibilidad con el correo electrónico entrante anónimo desde orígenes IPv6 en Exchange Online y Exchange Online Protection.
-ms.technology: mdo
-ms.prod: m365-security
-ms.openlocfilehash: 093ab458e8894105536e1c3dd46d2c911de440fd
-ms.sourcegitcommit: 725a92b0b1555572b306b285a0e7a7614d34e5e5
+ms.subservice: mdo
+ms.service: microsoft-365-security
+ms.openlocfilehash: ea64d73177c18fcfde55caa6637815361f90560d
+ms.sourcegitcommit: 2b89bcff547e00be3d38dc8d1e6cbcf8f41eba42
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/24/2022
-ms.locfileid: "65649107"
+ms.lasthandoff: 09/03/2022
+ms.locfileid: "67598293"
 ---
 # <a name="add-support-for-anonymous-inbound-email-over-ipv6-in-microsoft-365"></a>Agregar compatibilidad con el correo electrónico de entrada anónimo a través de IPv6 en Microsoft 365
 
@@ -32,7 +32,7 @@ ms.locfileid: "65649107"
 - [Plan 1 y Plan 2 de Microsoft Defender para Office 365](defender-for-office-365.md)
 - [Microsoft 365 Defender](../defender/microsoft-365-defender.md)
 
-Microsoft 365 organizaciones con buzones de Exchange Online y organizaciones independientes de Exchange Online Protection (EOP) sin buzones de correo Exchange Online admiten el correo electrónico entrante anónimo a través de IPv6. El servidor de correo electrónico IPv6 de origen debe cumplir los dos requisitos siguientes:
+Las organizaciones de Microsoft 365 con buzones de Exchange Online y organizaciones independientes de Exchange Online Protection (EOP) sin buzones de correo Exchange Online admiten el correo electrónico entrante anónimo a través de IPv6. El servidor de correo electrónico IPv6 de origen debe cumplir los dos requisitos siguientes:
 
 - La dirección IPv6 de origen debe tener un registro de búsqueda inversa (PTR) válido que permita al destino encontrar el nombre de dominio de la dirección IPv6.
 

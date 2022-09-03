@@ -7,8 +7,8 @@ ms.author: deniseb
 manager: dansimp
 audience: Admin
 ms.topic: how-to
-ms.prod: m365-security
-ms.technology: mdb
+ms.service: microsoft-365-security
+ms.subservice: mdb
 ms.localizationpriority: medium
 ms.date: 08/11/2022
 ms.reviewer: shlomiakirav
@@ -17,12 +17,12 @@ ms.collection:
 - SMB
 - M365-security-compliance
 - m365-initiative-defender-business
-ms.openlocfilehash: f8a77fa133ff3d9117dc7a62b9aaf6c3d31210d4
-ms.sourcegitcommit: 9b10e56b9e83f3a80757fa6108bebd1d80cf4178
+ms.openlocfilehash: ee0555ee8d08b66ad3121789520af662beeaa194
+ms.sourcegitcommit: 2b89bcff547e00be3d38dc8d1e6cbcf8f41eba42
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/12/2022
-ms.locfileid: "67320446"
+ms.lasthandoff: 09/03/2022
+ms.locfileid: "67598569"
 ---
 # <a name="respond-to-and-mitigate-threats-in-microsoft-defender-for-business"></a>Respuesta y mitigación de amenazas en Microsoft Defender para Empresas
 
@@ -53,7 +53,7 @@ El portal de Microsoft 365 Defender permite al equipo de seguridad responder y m
 
 6. Seleccione una acción disponible. Por ejemplo, puede elegir **Ejecutar examen antivirus**, lo que hará que Antivirus de Microsoft Defender inicie un examen rápido en el dispositivo. O bien, puede seleccionar **Iniciar investigación automatizada** para desencadenar una investigación automatizada en el dispositivo.
 
-## <a name="next-steps"></a>Siguientes pasos
+## <a name="next-steps"></a>Pasos siguientes
 
 - [Revisión de las acciones de corrección en el Centro de acciones](mdb-review-remediation-actions.md)
 - [Administración de dispositivos en Defender para empresas](mdb-manage-devices.md)

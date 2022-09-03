@@ -22,12 +22,12 @@ ms.custom: ''
 description: Los administradores pueden aprender a elevar la configuración de seguridad y usar informes, alertas e investigaciones para las cuentas de prioridad en sus organizaciones de Microsoft 365.
 ms.subservice: mdo
 ms.service: microsoft-365-security
-ms.openlocfilehash: 047c4aaffdad5831ec7b5bca76449cb909fe870d
-ms.sourcegitcommit: ecc04b5b8f84b34255a2d5e90b5ab596af0d16c7
+ms.openlocfilehash: 6193ebcce086c741b84af1f3dc701e6ac0340537
+ms.sourcegitcommit: 2b89bcff547e00be3d38dc8d1e6cbcf8f41eba42
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/01/2022
-ms.locfileid: "67497277"
+ms.lasthandoff: 09/03/2022
+ms.locfileid: "67598920"
 ---
 # <a name="security-recommendations-for-priority-accounts-in-microsoft-365"></a>Recomendaciones de seguridad para cuentas prioritarias en Microsoft 365
 
@@ -98,7 +98,7 @@ Después de proteger y etiquetar los usuarios prioritarios, puede usar los infor
 
 |Característica|Descripción|
 |---|---|
-|Alertas|Las etiquetas de usuario de los usuarios afectados están visibles y están disponibles como filtros en la página **Alertas** del portal de Microsoft 365 Defender. Para obtener más información, consulte [Visualización de alertas](../../compliance/alert-policies.md#viewing-alerts).|
+|Alertas|Las etiquetas de usuario de los usuarios afectados están visibles y están disponibles como filtros en la página **Alertas** del portal de Microsoft 365 Defender. Para obtener más información, consulte [Visualización de alertas](../../compliance/alert-policies.md#view-alerts).|
 |Explorador <p> Detecciones en tiempo real|En **explorer** (Defender para Office 365 plan 2) o **detecciones en tiempo real** (Defender para Office 365 plan 1), las etiquetas de usuario son visibles en la vista de cuadrícula de Email y el control flotante de detalles de Email. Las etiquetas de usuario también están disponibles como una propiedad filtrable. Para obtener más información, vea  [Etiquetas en el Explorador](threat-explorer.md#tags-in-threat-explorer).|
 |Vistas de campañas|Las etiquetas de usuario son una de las muchas propiedades filtrables en Vistas de campaña en Microsoft Defender para Office 365 Plan 2. Para obtener más información, consulte [Vistas de campaña](campaigns.md).|
 |Informe de estado de protección contra amenazas|En prácticamente todas las vistas y tablas de detalles del **informe de estado de protección contra amenazas**, puede filtrar los resultados por **cuentas de prioridad**. Para obtener más información, consulte [Informe de estado de protección contra amenazas](view-email-security-reports.md#threat-protection-status-report).|

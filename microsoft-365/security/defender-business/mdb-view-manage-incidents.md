@@ -7,8 +7,8 @@ ms.author: deniseb
 manager: dansimp
 audience: Admin
 ms.topic: how-to
-ms.prod: m365-security
-ms.technology: mdb
+ms.service: microsoft-365-security
+ms.subservice: mdb
 ms.localizationpriority: medium
 ms.date: 08/11/2022
 ms.reviewer: shlomiakirav
@@ -17,12 +17,12 @@ ms.collection:
 - SMB
 - M365-security-compliance
 - m365-initiative-defender-business
-ms.openlocfilehash: 2c751289c9d365d72909433fe6534f3f00ba3638
-ms.sourcegitcommit: 9b10e56b9e83f3a80757fa6108bebd1d80cf4178
+ms.openlocfilehash: 5146f36dd6d4f638b450a326d22405d8efc080b6
+ms.sourcegitcommit: 2b89bcff547e00be3d38dc8d1e6cbcf8f41eba42
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/12/2022
-ms.locfileid: "67320424"
+ms.lasthandoff: 09/03/2022
+ms.locfileid: "67597986"
 ---
 # <a name="view-and-manage-incidents-in-microsoft-defender-for-business"></a>Visualización y administración de incidentes en Microsoft Defender para Empresas
 
@@ -61,7 +61,7 @@ Cuando Antivirus de Microsoft Defender asigna una gravedad de alerta basada en l
 | Defender for Business detecta el malware que se está ejecutando. El malware se bloquea casi inmediatamente. | **Medio** o **Alto**. El malware supone una amenaza para puntos de conexión individuales y para su empresa. |
 | Se detecta un comportamiento sospechoso, pero aún no se realizan acciones correctivas. | **Bajo**, **Medio** o **Alto**. La gravedad depende del grado en que el comportamiento supone una amenaza para la empresa. |
 
-## <a name="next-steps"></a>Siguientes pasos
+## <a name="next-steps"></a>Pasos siguientes
 
 - [Respuesta y mitigación de amenazas en Defender para empresas](mdb-respond-mitigate-threats.md)
 - [Revisión de las acciones de corrección en el Centro de acciones](mdb-review-remediation-actions.md)

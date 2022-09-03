@@ -7,8 +7,8 @@ ms.author: deniseb
 manager: dansimp
 audience: Admin
 ms.topic: overview
-ms.prod: m365-security
-ms.technology: mdb
+ms.service: microsoft-365-security
+ms.subservice: mdb
 ms.localizationpriority: medium
 ms.date: 08/11/2022
 ms.reviewer: shlomiakirav
@@ -18,12 +18,12 @@ ms.collection:
 - M365-security-compliance
 - m365-initiative-defender-business
 ms.custom: intro-overview
-ms.openlocfilehash: 3d0449bbf62e95032b236b8e239652368227d332
-ms.sourcegitcommit: 9b10e56b9e83f3a80757fa6108bebd1d80cf4178
+ms.openlocfilehash: 51c480016244dca6aaaa0c65601376ba574478f1
+ms.sourcegitcommit: 2b89bcff547e00be3d38dc8d1e6cbcf8f41eba42
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/12/2022
-ms.locfileid: "67320533"
+ms.lasthandoff: 09/03/2022
+ms.locfileid: "67598074"
 ---
 # <a name="what-is-microsoft-defender-for-business"></a>¿Qué es Microsoft Defender para Empresas?
 
@@ -73,7 +73,7 @@ Con Defender para empresas, puede ayudar a proteger los dispositivos y los datos
    - [Supervisión o administración de dispositivos](mdb-manage-devices.md).
    - [Ver o editar directivas de seguridad](mdb-view-edit-policies.md).
 
-## <a name="next-steps"></a>Siguientes pasos
+## <a name="next-steps"></a>Pasos siguientes
 
 - [Pruebe la guía interactiva: Introducción a Defender para empresas](https://aka.ms/MDB-GetStartedGuide)
 - [Más información sobre el proceso de configuración simplificado en Defender para empresas](mdb-simplified-configuration.md)

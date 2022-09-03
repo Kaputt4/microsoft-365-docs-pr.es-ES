@@ -18,14 +18,14 @@ ms.collection:
 ms.custom:
 - seo-marvel-apr2020
 description: Aprenda a integrar Azure PIM para conceder acceso Just-In-Time limitado a los usuarios para que realicen tareas con privilegios elevados en Microsoft Defender para Office 365 y reducir así el riesgo para los datos.
-ms.technology: mdo
-ms.prod: m365-security
-ms.openlocfilehash: 32bc21130d98687f95af2ce6664c0759a716f362
-ms.sourcegitcommit: 133bf9097785309da45df6f374a712a48b33f8e9
-ms.translationtype: HT
+ms.subservice: mdo
+ms.service: microsoft-365-security
+ms.openlocfilehash: 6a198c25fd329c0bce79e85af8831a673b30cd1a
+ms.sourcegitcommit: 2b89bcff547e00be3d38dc8d1e6cbcf8f41eba42
+ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/10/2022
-ms.locfileid: "66010242"
+ms.lasthandoff: 09/03/2022
+ms.locfileid: "67597678"
 ---
 <!--A-->
 # <a name="privileged-identity-management-pim-and-why-to-use-it-with-microsoft-defender-for-office-365"></a>Privileged Identity Management (PIM) y por qué usarlo con Microsoft Defender para Office 365

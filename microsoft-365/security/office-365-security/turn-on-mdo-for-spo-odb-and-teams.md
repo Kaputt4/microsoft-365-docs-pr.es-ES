@@ -16,17 +16,17 @@ ms.assetid: 07e76024-0c80-40dc-8c48-1dd0d0f863cb
 ms.collection:
 - M365-security-compliance
 - SPO_Content
-description: Los administradores pueden aprender a activar Caja fuerte Datos adjuntos para SharePoint, OneDrive y Microsoft Teams, incluido cómo establecer alertas para los archivos detectados.
+description: Los administradores pueden aprender a activar datos adjuntos seguros para SharePoint, OneDrive y Microsoft Teams, incluido cómo establecer alertas para los archivos detectados.
 ms.custom:
 - seo-marvel-apr2020
-ms.technology: mdo
-ms.prod: m365-security
-ms.openlocfilehash: 55923b13cf47e0309a7246ba43dcb9adaf3c58ff
-ms.sourcegitcommit: 133bf9097785309da45df6f374a712a48b33f8e9
+ms.subservice: mdo
+ms.service: microsoft-365-security
+ms.openlocfilehash: 8814ad4b2ae1cddf53efd85b3eb2f6174224f2de
+ms.sourcegitcommit: 2b89bcff547e00be3d38dc8d1e6cbcf8f41eba42
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/10/2022
-ms.locfileid: "66016018"
+ms.lasthandoff: 09/03/2022
+ms.locfileid: "67598227"
 ---
 # <a name="turn-on-safe-attachments-for-sharepoint-onedrive-and-microsoft-teams"></a>Activar Datos adjuntos seguros para SharePoint, OneDrive y Microsoft Teams
 
@@ -36,37 +36,37 @@ ms.locfileid: "66016018"
 - [Plan 1 y Plan 2 de Microsoft Defender para Office 365](defender-for-office-365.md)
 - [Microsoft 365 Defender](../defender/microsoft-365-defender.md)
 
-Microsoft Defender para Office 365 para SharePoint, OneDrive y Microsoft Teams protege a su organización de compartir involuntariamente archivos malintencionados. Para obtener más información, consulte [datos adjuntos de Caja fuerte para SharePoint, OneDrive y Microsoft Teams](mdo-for-spo-odb-and-teams.md).
+Microsoft Defender para Office 365 para SharePoint, OneDrive y Microsoft Teams protege a su organización de compartir involuntariamente archivos malintencionados. Para obtener más información, vea [Datos adjuntos seguros para SharePoint, OneDrive y Microsoft Teams](mdo-for-spo-odb-and-teams.md).
 
-Este artículo contiene los pasos para habilitar y configurar Caja fuerte Datos adjuntos para SharePoint, OneDrive y Microsoft Teams.
+Este artículo contiene los pasos para habilitar y configurar datos adjuntos seguros para SharePoint, OneDrive y Microsoft Teams.
 
 ## <a name="what-do-you-need-to-know-before-you-begin"></a>¿Qué necesita saber antes de comenzar?
 
-- Abra el portal de Microsoft 365 Defender en <https://security.microsoft.com>. Para ir directamente a la página **datos adjuntos de Caja fuerte**, use <https://security.microsoft.com/safeattachmentv2>.
+- Abra el portal de Microsoft 365 Defender en <https://security.microsoft.com>. Para ir directamente a la página **Datos adjuntos seguros** , use <https://security.microsoft.com/safeattachmentv2>.
 
-- Para activar Caja fuerte Datos adjuntos para SharePoint, OneDrive y Microsoft Teams, debe ser miembro de los grupos de roles Administración de la **organización** o **Administrador de seguridad** en el portal de Microsoft 365 Defender. Para obtener más información, consulte [Permisos en el portal de Microsoft 365 Defender](permissions-microsoft-365-security-center.md).
+- Para activar datos adjuntos seguros para SharePoint, OneDrive y Microsoft Teams, debe ser miembro de los grupos de roles **Administración** de la organización o **Administrador de seguridad** en el portal de Microsoft 365 Defender. Para obtener más información, consulte [Permisos en el portal de Microsoft 365 Defender](permissions-microsoft-365-security-center.md).
 
-- Para usar SharePoint PowerShell en línea para evitar que las personas descarguen archivos malintencionados, debe ser miembro de los roles [Administrador global](/azure/active-directory/roles/permissions-reference#global-administrator) o [Administrador de SharePoint](/azure/active-directory/roles/permissions-reference#sharepoint-administrator) en Azure AD.
+- Para usar PowerShell de SharePoint Online para evitar que las personas descarguen archivos malintencionados, debe ser miembro de los roles [Administrador global](/azure/active-directory/roles/permissions-reference#global-administrator) o [Administrador de SharePoint](/azure/active-directory/roles/permissions-reference#sharepoint-administrator) en Azure AD.
 
 - Compruebe que el registro de auditoría está habilitado para su organización. Para obtener más información, consulte [Desactivar o activar la búsqueda de registros de auditoría](../../compliance/turn-audit-log-search-on-or-off.md).
 
 - Espere hasta 30 minutos para que la configuración surta efecto.
 
-## <a name="step-1-use-the-microsoft-365-defender-portal-to-turn-on-safe-attachments-for-sharepoint-onedrive-and-microsoft-teams"></a>Paso 1: Use el portal de Microsoft 365 Defender para activar Caja fuerte Datos adjuntos para SharePoint, OneDrive y Microsoft Teams
+## <a name="step-1-use-the-microsoft-365-defender-portal-to-turn-on-safe-attachments-for-sharepoint-onedrive-and-microsoft-teams"></a>Paso 1: Usar el portal de Microsoft 365 Defender para activar datos adjuntos seguros para SharePoint, OneDrive y Microsoft Teams
 
-1. En el portal de Microsoft 365 Defender en <https://security.microsoft.com>, vaya a **Directivas & reglas** \> **Directivas de amenazas** \> **Caja fuerte Datos adjuntos** en la sección **Directivas**. Para ir directamente a la página **datos adjuntos de Caja fuerte**, use <https://security.microsoft.com/safeattachmentv2>.
+1. En el portal de Microsoft 365 Defender en <https://security.microsoft.com>, vaya a **Directivas & reglas** \> **Directivas de amenazas** \> **Datos adjuntos seguros** en la sección **Directivas**. Para ir directamente a la página **Datos adjuntos seguros** , use <https://security.microsoft.com/safeattachmentv2>.
 
-2. En la página **Datos adjuntos de Caja fuerte**, haga clic en **Configuración global**.
+2. En la página **Datos adjuntos seguros** , haga clic en **Configuración global**.
 
-3. En el control **flotante Configuración global** que aparece, vaya a la sección **Proteger archivos en SharePoint, OneDrive y Microsoft Teams**.
+3. En el control **flotante Configuración global** que aparece, vaya a la sección **Proteger archivos en SharePoint, OneDrive y Microsoft Teams** .
 
-   Mueva el botón **Activar Defender para Office 365 para SharePoint, OneDrive y Microsoft Teams** alternancia a la derecha ![Activar alternancia.](../../media/scc-toggle-on.png) para activar Caja fuerte Datos adjuntos para SharePoint, OneDrive y Microsoft Teams.
+   Mueva el botón **Activar Defender para Office 365 para SharePoint, OneDrive y Microsoft Teams** a la derecha ![Activar alternancia.](../../media/scc-toggle-on.png) para activar datos adjuntos seguros para SharePoint, OneDrive y Microsoft Teams.
 
    Cuando haya terminado, haga clic en **Guardar**.
 
-### <a name="use-exchange-online-powershell-to-turn-on-safe-attachments-for-sharepoint-onedrive-and-microsoft-teams"></a>Use Exchange Online PowerShell para activar los datos adjuntos de Caja fuerte para SharePoint, OneDrive y Microsoft Teams
+### <a name="use-exchange-online-powershell-to-turn-on-safe-attachments-for-sharepoint-onedrive-and-microsoft-teams"></a>Use Exchange Online PowerShell para activar datos adjuntos seguros para SharePoint, OneDrive y Microsoft Teams
 
-Si prefiere usar PowerShell para activar Caja fuerte Datos adjuntos para SharePoint, OneDrive y Microsoft Teams, [conéctese a Exchange Online PowerShell](/powershell/exchange/connect-to-exchange-online-powershell) y ejecute el siguiente comando:
+Si prefiere usar PowerShell para activar datos adjuntos seguros para SharePoint, OneDrive y Microsoft Teams, [conéctese a Exchange Online PowerShell](/powershell/exchange/connect-to-exchange-online-powershell) y ejecute el siguiente comando:
 
 ```powershell
 Set-AtpPolicyForO365 -EnableATPForSPOTeamsODB $true
@@ -74,13 +74,13 @@ Set-AtpPolicyForO365 -EnableATPForSPOTeamsODB $true
 
 Para obtener información detallada sobre la sintaxis y los parámetros, vea [Set-AtpPolicyForO365](/powershell/module/exchange/set-atppolicyforo365).
 
-## <a name="step-2-recommended-use-sharepoint-online-powershell-to-prevent-users-from-downloading-malicious-files"></a>Paso 2: (Recomendado) Usar SharePoint PowerShell en línea para evitar que los usuarios descarguen archivos malintencionados
+## <a name="step-2-recommended-use-sharepoint-online-powershell-to-prevent-users-from-downloading-malicious-files"></a>Paso 2: (Recomendado) Usar PowerShell de SharePoint Online para evitar que los usuarios descarguen archivos malintencionados
 
-De forma predeterminada, los usuarios no pueden abrir, mover, copiar ni compartir<sup>\*</sup> archivos malintencionados detectados por Caja fuerte Datos adjuntos para SharePoint, OneDrive y Microsoft Teams. Sin embargo, pueden eliminar y descargar archivos malintencionados.
+De forma predeterminada, los usuarios no pueden abrir, mover, copiar ni compartir<sup>\*</sup> archivos malintencionados detectados por datos adjuntos seguros para SharePoint, OneDrive y Microsoft Teams. Sin embargo, pueden eliminar y descargar archivos malintencionados.
 
 <sup>\*</sup> Si los usuarios van a **Administrar acceso**, la opción **Compartir** sigue estando disponible.
 
-Para evitar que los usuarios descarguen archivos malintencionados, [conéctese a SharePoint PowerShell en línea](/powershell/sharepoint/sharepoint-online/connect-sharepoint-online) y ejecute el siguiente comando:
+Para evitar que los usuarios descarguen archivos malintencionados, [conéctese a PowerShell de SharePoint Online](/powershell/sharepoint/sharepoint-online/connect-sharepoint-online) y ejecute el siguiente comando:
 
 ```powershell
 Set-SPOTenant -DisallowInfectedFileDownload $true
@@ -89,13 +89,13 @@ Set-SPOTenant -DisallowInfectedFileDownload $true
 **Notas**:
 
 - Esta configuración afecta tanto a los usuarios como a los administradores.
-- Las personas todavía pueden eliminar archivos malintencionados.
+- Personas puede eliminar archivos malintencionados.
 
 Para obtener información detallada sobre la sintaxis y los parámetros, vea [Set-SPOTenant](/powershell/module/sharepoint-online/Set-SPOTenant).
 
 ## <a name="step-3-recommended-use-the-microsoft-365-defender-portal-to-create-an-alert-policy-for-detected-files"></a>Paso 3 (recomendado) Uso del portal de Microsoft 365 Defender para crear una directiva de alertas para los archivos detectados
 
-Puede crear una directiva de alertas que le notifique a usted y a otros administradores cuando Caja fuerte Datos adjuntos para SharePoint, OneDrive y Microsoft Teams detecte un archivo malintencionado. Para obtener más información sobre las alertas, consulte [Directivas de alertas](../../compliance/alert-policies.md).
+Puede crear una directiva de alertas que le notifique a usted y a otros administradores cuando Datos adjuntos seguros para SharePoint, OneDrive y Microsoft Teams detecten un archivo malintencionado. Para obtener más información sobre las alertas, consulte [Directivas de alertas](../../compliance/alert-policies.md).
 
 1. En el portal de Microsoft 365 Defender en <https://security.microsoft.com>, vaya a **Directivas & reglas** \> **Directiva de alertas**. Para ir directamente a la página de **Directiva de alertas**, use <https://security.microsoft.com/alertpolicies>.
 
@@ -116,7 +116,7 @@ Puede crear una directiva de alertas que le notifique a usted y a otros administ
    Cuando termine, haga clic en **Siguiente**.
 
 5. En la página **Establecer los destinatarios** , configure los siguientes valores:
-   - Compruebe que **la opción Enviar notificaciones por correo electrónico** está seleccionada. En el cuadro **Destinatarios de correo electrónico** , seleccione uno o varios administradores globales, administradores de seguridad o lectores de seguridad que deben recibir una notificación cuando se detecte un archivo malintencionado.
+   - Compruebe que **la opción Enviar notificaciones por correo electrónico** está seleccionada. En el cuadro **destinatarios de Email**, seleccione uno o varios administradores globales, administradores de seguridad o lectores de seguridad que deben recibir una notificación cuando se detecte un archivo malintencionado.
    - **Límite de notificación diario**: deje seleccionado el valor predeterminado **Sin límite** .
 
    Cuando termine, haga clic en **Siguiente**.
@@ -141,9 +141,9 @@ Para obtener información detallada sobre la sintaxis y los parámetros, vea [Ne
 
 ### <a name="how-do-you-know-these-procedures-worked"></a>¿Cómo saber si estos procedimientos han funcionado?
 
-- Para comprobar que ha activado correctamente Caja fuerte Datos adjuntos para SharePoint, OneDrive y Microsoft Teams, siga estos pasos:
+- Para comprobar que ha activado correctamente datos adjuntos seguros para SharePoint, OneDrive y Microsoft Teams, siga estos pasos:
 
-  - En el portal de Microsoft 365 Defender, vaya a la sección \> **Directivas & reglas** \> **Directivas** \> de **amenazas** **Caja fuerte Datos adjuntos**, seleccione **Configuración global** y compruebe el valor de **Activar Defender para Office 365 para SharePoint , OneDrive y Microsoft Teams** configuración.
+  - En el portal de Microsoft 365 Defender, vaya a **Directivas & reglas** \> **Directivas** \> de amenazas  sección \> **Datos adjuntos seguros**, seleccione **Configuración global** y compruebe el valor de la opción **Activar Defender para Office 365 para SharePoint, OneDrive y Microsoft Teams**.
 
   - En Exchange Online PowerShell, ejecute el siguiente comando para comprobar la configuración de la propiedad:
 
@@ -153,7 +153,7 @@ Para obtener información detallada sobre la sintaxis y los parámetros, vea [Ne
 
     Para obtener información detallada sobre la sintaxis y los parámetros, consulte [Get-AtpPolicyForO365](/powershell/module/exchange/get-atppolicyforo365).
 
-- Para comprobar que ha bloqueado correctamente la descarga de archivos malintencionados, abra SharePoint PowerShell en línea y ejecute el siguiente comando para comprobar el valor de la propiedad:
+- Para comprobar que ha bloqueado correctamente la descarga de archivos malintencionados, abra PowerShell de SharePoint Online y ejecute el siguiente comando para comprobar el valor de la propiedad:
 
   ```powershell
   Get-SPOTenant | Format-List DisallowInfectedFileDownload

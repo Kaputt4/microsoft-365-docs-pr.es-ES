@@ -19,14 +19,14 @@ ms.collection:
 ms.custom:
 - seo-marvel-apr2020
 description: Los administradores pueden obtener información sobre las notificaciones de correo no deseado del usuario final para los mensajes en cuarentena en Exchange Online Protection (EOP).
-ms.technology: mdo
-ms.prod: m365-security
-ms.openlocfilehash: 44ed83a95fe8f588369f0a1bbae4809f32581f87
-ms.sourcegitcommit: a7c1acfb3d2cbba913e32493b16ebd8cbfeee456
+ms.subservice: mdo
+ms.service: microsoft-365-security
+ms.openlocfilehash: 57d794e601250cac554226cdb8e1210f15ed08ef
+ms.sourcegitcommit: 2b89bcff547e00be3d38dc8d1e6cbcf8f41eba42
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/13/2022
-ms.locfileid: "66043485"
+ms.lasthandoff: 09/03/2022
+ms.locfileid: "67597656"
 ---
 # <a name="use-quarantine-notifications-to-release-and-report-quarantined-messages"></a>Uso de notificaciones de cuarentena para liberar e informar de mensajes en cuarentena
 
@@ -50,7 +50,7 @@ Los administradores también pueden usar la configuración global de las directi
 En el caso de los buzones compartidos, las notificaciones de cuarentena solo se admiten para los usuarios a los que se les concede permiso FullAccess para el buzón compartido. Para obtener más información, vea [Uso del EAC para editar la delegación de buzones compartidos](/Exchange/collaboration-exo/shared-mailboxes#use-the-eac-to-edit-shared-mailbox-delegation).
 
 > [!NOTE]
-> De forma predeterminada, los mensajes que se ponen en cuarentena como suplantación de identidad de alta confianza, malware, por reglas de flujo de correo (también conocidas como reglas de transporte) o Caja fuerte directivas de datos adjuntos en Defender para Office 365 solo están disponibles para los administradores (de forma predeterminada, se usa la directiva de cuarentena AdminOnlyAccessPolicy). Para más información, consulte [Administrar mensajes en cuarentena y archivos como administrador en EOP](manage-quarantined-messages-and-files.md).
+> De forma predeterminada, los mensajes que se ponen en cuarentena como suplantación de identidad de alta confianza, malware, por reglas de flujo de correo (también conocidas como reglas de transporte) o directivas de datos adjuntos seguros en Defender para Office 365 solo están disponibles para los administradores (de forma predeterminada, se usa la directiva de cuarentena AdminOnlyAccessPolicy). Para más información, consulte [Administrar mensajes en cuarentena y archivos como administrador en EOP](manage-quarantined-messages-and-files.md).
 >
 > Las notificaciones de cuarentena de los mensajes enviados a grupos de distribución o grupos de seguridad habilitados para correo se envían a todos los miembros del grupo.
 >
@@ -73,4 +73,4 @@ De forma predeterminada, las siguientes acciones están disponibles en la notifi
 :::image type="content" source="../../media/end-user-spam-notification.png" alt-text="Ejemplo de una notificación de cuarentena" lightbox="../../media/end-user-spam-notification.png":::
 
 > [!NOTE]
-> Un remitente bloqueado todavía puede enviarle correo. Los mensajes de este remitente que lo hagan al buzón se moverán inmediatamente a la carpeta Correo no deseado. Los mensajes futuros de este remitente irán a la carpeta correo no deseado o a la cuarentena. Si desea eliminar estos mensajes a la llegada en lugar de ponerlos en cuarentena, use reglas de [flujo de correo](/exchange/security-and-compliance/mail-flow-rules/mail-flow-rules) (también conocidas como reglas de transporte) para eliminar los mensajes a la llegada.
+> Un remitente bloqueado todavía puede enviarle correo. Los mensajes de este remitente que lo hagan al buzón se moverán inmediatamente a la carpeta de Email no deseado. Los mensajes futuros de este remitente irán a la carpeta de Email no deseado o a la cuarentena. Si desea eliminar estos mensajes a la llegada en lugar de ponerlos en cuarentena, use reglas de [flujo de correo](/exchange/security-and-compliance/mail-flow-rules/mail-flow-rules) (también conocidas como reglas de transporte) para eliminar los mensajes a la llegada.
