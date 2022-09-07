@@ -7,7 +7,8 @@ author: denisebmsft
 manager: dansimp
 ms.audience: Admin
 ms.topic: conceptual
-ms.service: o365-administration
+ms.service: microsoft-365-business
+ms.subservice: business-premium
 ms.localizationpriority: high
 ms.date: 07/19/2022
 ms.collection:
@@ -19,12 +20,12 @@ search.appverid:
 - BCS160
 - MET150
 description: Obtenga información sobre cómo enviar un correo electrónico cifrado mediante Outlook.
-ms.openlocfilehash: 5e0698db0a17e24df358fc873b0a419b13c17dad
-ms.sourcegitcommit: c1eaea74c8ffce2f9f477c9469342e88e4a70c14
-ms.translationtype: HT
+ms.openlocfilehash: 0754509ca7c7a5a07ab3416b5e190c695af3e1d9
+ms.sourcegitcommit: 651610ca73bfd1d008d97311b59782790df664fb
+ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/20/2022
-ms.locfileid: "66893131"
+ms.lasthandoff: 09/07/2022
+ms.locfileid: "67613744"
 ---
 # <a name="encrypt-or-label-your-sensitive-email-in-microsoft-365"></a>Cifrar o etiquetar el correo electrónico confidencial en Microsoft 365
 

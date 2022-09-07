@@ -18,12 +18,12 @@ description: Obtenga información sobre cómo definir directivas de datos adjunt
 ms.custom: seo-marvel-apr2020
 ms.subservice: mdo
 ms.service: microsoft-365-security
-ms.openlocfilehash: 3b47007eb3653c6f1d10cfc808d4052f6899e996
-ms.sourcegitcommit: ecc04b5b8f84b34255a2d5e90b5ab596af0d16c7
+ms.openlocfilehash: ad5b68ca377a03ff42044b85c3125339bcbc8b62
+ms.sourcegitcommit: 651610ca73bfd1d008d97311b59782790df664fb
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/01/2022
-ms.locfileid: "67496623"
+ms.lasthandoff: 09/07/2022
+ms.locfileid: "67611900"
 ---
 # <a name="set-up-safe-attachments-policies-in-microsoft-defender-for-office-365"></a>Configuración de directivas de datos adjuntos seguros en Microsoft Defender para Office 365
 
@@ -38,7 +38,7 @@ ms.locfileid: "67496623"
 
 Datos adjuntos seguros es una característica de [Microsoft Defender para Office 365](whats-new-in-defender-for-office-365.md) que usa un entorno virtual para comprobar los datos adjuntos en los mensajes de correo electrónico entrantes después de haber sido examinados por [la protección contra malware en Exchange Online Protection (EOP),](anti-malware-protection.md) pero antes de entregarlos a los destinatarios. Para obtener más información, vea [Datos adjuntos seguros en Microsoft Defender para Office 365](safe-attachments.md).
 
-Aunque no hay ninguna directiva de datos adjuntos seguros predeterminada, la directiva de seguridad preestablecida **de protección integrada** proporciona protección de datos adjuntos seguros a todos los destinatarios (usuarios que no están definidos en directivas de datos adjuntos seguros personalizados). Para obtener más información, vea [Directivas de seguridad preestablecidas en EOP y Microsoft Defender para Office 365](preset-security-policies.md). También puede usar los procedimientos de este artículo para crear directivas de datos adjuntos seguros que se apliquen a usuarios, grupos o dominios específicos.
+Aunque no hay ninguna directiva de datos adjuntos seguros predeterminada, la directiva de seguridad preestablecida **de protección integrada** proporciona protección de datos adjuntos seguros a todos los destinatarios (usuarios que no están definidos en las directivas de seguridad preestablecidas estándar o estrictas o directivas de datos adjuntos seguros personalizados). Para obtener más información, vea [Directivas de seguridad preestablecidas en EOP y Microsoft Defender para Office 365](preset-security-policies.md). También puede usar los procedimientos de este artículo para crear directivas de datos adjuntos seguros que se apliquen a usuarios, grupos o dominios específicos.
 
 Puede configurar directivas de datos adjuntos seguros en el portal de Microsoft 365 Defender o en PowerShell (Exchange Online PowerShell para organizaciones de Microsoft 365 aptas con buzones en Exchange Online; PowerShell EOP independiente para organizaciones sin buzones de correo Exchange Online , pero con Defender para Office 365 suscripciones de complemento).
 
@@ -111,8 +111,8 @@ La creación de una directiva de datos adjuntos seguros personalizados en el por
    > [!IMPORTANT]
    > Los diferentes tipos de condiciones o excepciones no son aditivos; son inclusivos. La directiva se aplica _solo_ a los destinatarios que coinciden con _todos_ los filtros de destinatarios especificados. Por ejemplo, se configura una condición de filtro de destinatario en la directiva con los siguientes valores:
    >
-   > - El destinatario es: romain@contoso.com
-   > - El destinatario es miembro de: Ejecutivos
+   > - Usuarios: romain@contoso.com
+   > - Grupos: Ejecutivos
    >
    > La directiva se aplica a romain@contoso.com _solo_ si también es miembro del grupo de Ejecutivos. Si no es miembro del grupo, la directiva no se le aplica.
    >

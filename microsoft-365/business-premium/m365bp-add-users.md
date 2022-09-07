@@ -7,7 +7,8 @@ author: denisebmsft
 manager: dansimp
 audience: Admin
 ms.topic: how-to
-ms.service: o365-administration
+ms.service: microsoft-365-business
+ms.subservice: business-premium
 ms.localizationpriority: high
 ms.date: 07/19/2022
 ms.collection: ''
@@ -18,12 +19,12 @@ search.appverid:
 - BCS160
 - MET150
 description: Cómo agregar un nuevo empleado o usuario a la red y a los sistemas internos de la organización. Cuando un nuevo empleado se une a su empresa, debe agregarlo de forma segura a la red.
-ms.openlocfilehash: d0137d9c7814191573e1c82c01b16db915bb280e
-ms.sourcegitcommit: c1eaea74c8ffce2f9f477c9469342e88e4a70c14
-ms.translationtype: HT
+ms.openlocfilehash: b8bd94f939fc6c509698f65afcffe226d73ac156
+ms.sourcegitcommit: 651610ca73bfd1d008d97311b59782790df664fb
+ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/20/2022
-ms.locfileid: "66999053"
+ms.lasthandoff: 09/07/2022
+ms.locfileid: "67615394"
 ---
 # <a name="add-a-new-employee-in-microsoft-365-business-premium"></a>Agregar un nuevo empleado en Microsoft 365 Empresa Premium
 

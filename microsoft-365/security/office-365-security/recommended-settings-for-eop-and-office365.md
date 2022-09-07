@@ -19,12 +19,12 @@ ms.collection:
 description: ¿Cuáles son los procedimientos recomendados para Exchange Online Protection (EOP) y Defender para Office 365 configuración de seguridad? ¿Cuáles son las recomendaciones actuales para la protección estándar? ¿Qué se debe usar si desea ser más estricto? ¿Y qué extras obtienes si también usas Defender para Office 365?
 ms.subservice: mdo
 ms.service: microsoft-365-security
-ms.openlocfilehash: 15bc518a7bc9fa939bfd33e7f272929d190378c2
-ms.sourcegitcommit: 2b89bcff547e00be3d38dc8d1e6cbcf8f41eba42
+ms.openlocfilehash: a91e8f6c517ad37c7311be09956c7f71fc2893db
+ms.sourcegitcommit: 651610ca73bfd1d008d97311b59782790df664fb
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/03/2022
-ms.locfileid: "67597788"
+ms.lasthandoff: 09/07/2022
+ms.locfileid: "67612726"
 ---
 # <a name="recommended-settings-for-eop-and-microsoft-defender-for-office-365-security"></a>Configuración recomendada de seguridad para EOP y Microsoft Defender para Office 365
 
@@ -67,8 +67,8 @@ Para crear y configurar directivas contra correo no deseado, consulte [Configura
 |**Umbral de correo electrónico masivo & propiedades de correo no deseado**|||||
 |**Umbral de correo electrónico masivo** <br><br> _BulkThreshold_|7 |6|5|Para obtener más información, consulte [Nivel de quejas masivas (BCL) en EOP](bulk-complaint-level-values.md).|
 |_MarkAsSpamBulkMail_|`On`|`On`|`On`|Esta configuración solo está disponible en PowerShell.|
-|**Aumentar la configuración de puntuación de correo no deseado**|Desactivado|Desactivada|Desactivado|Todas estas configuraciones forman parte del filtro de correo no deseado avanzado (ASF). Para obtener más información, consulte la sección [Configuración de ASF en las directivas contra correo no deseado](#asf-settings-in-anti-spam-policies) de este artículo.|
-|**Marcar como configuración de correo no deseado**|Desactivado|Desactivada|Desactivado|La mayoría de estas configuraciones forman parte de ASF. Para obtener más información, consulte la sección [Configuración de ASF en las directivas contra correo no deseado](#asf-settings-in-anti-spam-policies) de este artículo.|
+|**Aumentar la configuración de puntuación de correo no deseado**|Desactivado|Desactivado|Desactivado|Todas estas configuraciones forman parte del filtro de correo no deseado avanzado (ASF). Para obtener más información, consulte la sección [Configuración de ASF en las directivas contra correo no deseado](#asf-settings-in-anti-spam-policies) de este artículo.|
+|**Marcar como configuración de correo no deseado**|Desactivado|Desactivado|Desactivado|La mayoría de estas configuraciones forman parte de ASF. Para obtener más información, consulte la sección [Configuración de ASF en las directivas contra correo no deseado](#asf-settings-in-anti-spam-policies) de este artículo.|
 |**Contiene idiomas específicos** <br><br> _EnableLanguageBlockList_ <br><br> _LanguageBlockList_|**Desactivado** <br><br> `$false` <br><br> En blanco|**Desactivado** <br><br> `$false` <br><br> En blanco|**Desactivado** <br><br> `$false` <br><br> En blanco|No tenemos ninguna recomendación específica para esta configuración. Puede bloquear mensajes en lenguajes específicos en función de sus necesidades empresariales.|
 |**De estos países** <br><br> _EnableRegionBlockList_ <br><br> _RegionBlockList_|**Desactivado** <br><br> `$false` <br><br> En blanco|**Desactivado** <br><br> `$false` <br><br> En blanco|**Desactivado** <br><br> `$false` <br><br> En blanco|No tenemos ninguna recomendación específica para esta configuración. Puede bloquear mensajes de países específicos en función de sus necesidades empresariales.|
 |**Modo de prueba** (_TestModeAction_)|**Ninguna**|**Ninguna**|**Ninguna**|Esta configuración forma parte de ASF. Para obtener más información, consulte la sección [Configuración de ASF en las directivas contra correo no deseado](#asf-settings-in-anti-spam-policies) de este artículo.|
@@ -99,12 +99,12 @@ Para obtener más información sobre la configuración del filtro de correo no d
 |**Redireccionamiento de direcciones URL a otro puerto** <br><br> _IncreaseScoreWithRedirectToOtherPort_|Desactivado|Desactivada|Desactivado||
 |**Vínculos a sitios web .biz o .info** <br><br> _IncreaseScoreWithBizOrInfoUrls_|Desactivado|Desactivada|Desactivado||
 |**Mensajes vacíos** <br><br> _MarkAsSpamEmptyMessages_|Desactivado|Desactivada|Desactivado||
-|**Etiquetas Embed en HTML** <br><br> _MarkAsSpamEmbedTagsInHtml_|Desactivado|Desactivada|Desactivado||
-|**JavaScript o VBScript en HTML** <br><br> _MarkAsSpamJavaScriptInHtml_|Desactivado|Desactivada|Desactivado||
-|**Etiquetas Form en HTML** <br><br> _MarkAsSpamFormTagsInHtml_|Desactivado|Desactivada|Desactivado||
+|**Etiquetas Embed en HTML** <br><br> _MarkAsSpamEmbedTagsInHtml_|Desactivado|Desactivado|Desactivado||
+|**JavaScript o VBScript en HTML** <br><br> _MarkAsSpamJavaScriptInHtml_|Desactivado|Desactivado|Desactivado||
+|**Etiquetas Form en HTML** <br><br> _MarkAsSpamFormTagsInHtml_|Desactivado|Desactivado|Desactivado||
 |**Etiquetas de marco o iframe en HTML** <br><br> _MarkAsSpamFramesInHtml_|Desactivado|Desactivada|Desactivado||
-|**Errores web en HTML** <br><br> _MarkAsSpamWebBugsInHtml_|Desactivado|Desactivada|Desactivado||
-|**Etiquetas Object en HTML** <br><br> _MarkAsSpamObjectTagsInHtml_|Desactivado|Desactivada|Desactivado||
+|**Errores web en HTML** <br><br> _MarkAsSpamWebBugsInHtml_|Desactivado|Desactivado|Desactivado||
+|**Etiquetas Object en HTML** <br><br> _MarkAsSpamObjectTagsInHtml_|Desactivado|Desactivado|Desactivado||
 |**Palabras confidenciales** <br><br> _MarkAsSpamSensitiveWordList_|Desactivado|Desactivada|Desactivado||
 |**Registro de SPF: error** <br><br> _MarkAsSpamSpfRecordHardFail_|Desactivado|Desactivada|Desactivado||
 |**Error de filtrado de identificador de remitente** <br><br> _MarkAsSpamFromAddressAuthFail_|Desactivado|Desactivada|Desactivado||
@@ -179,7 +179,7 @@ Las ventajas de seguridad adicionales incluyen una suscripción Microsoft Defend
 >
 > - La directiva predeterminada contra suplantación de identidad (phishing) de Microsoft Defender para Office 365 proporciona [protección contra suplantación de identidad](set-up-anti-phishing-policies.md#spoof-settings) e inteligencia de buzones para todos los destinatarios. Sin embargo, las otras características de [protección de suplantación](#impersonation-settings-in-anti-phishing-policies-in-microsoft-defender-for-office-365) disponibles y [la configuración avanzada](#advanced-settings-in-anti-phishing-policies-in-microsoft-defender-for-office-365) no están configuradas ni habilitadas en la directiva predeterminada. Para habilitar todas las características de protección, modifique la directiva predeterminada contra suplantación de identidad (phishing) o cree directivas adicionales contra phishing.
 >
-> - Aunque no hay ninguna directiva de datos adjuntos seguros predeterminada ni directiva de vínculos seguros, la directiva de seguridad preestablecida **de protección integrada** proporciona protección de datos adjuntos seguros y protección de vínculos seguros a los destinatarios que aún no están incluidos en directivas de datos adjuntos seguros personalizadas o directivas de vínculos seguros. Para obtener más información, vea [Directivas de seguridad preestablecidas en EOP y Microsoft Defender para Office 365](preset-security-policies.md).
+> - Aunque no hay ninguna directiva de datos adjuntos seguros predeterminada ni directiva de vínculos seguros, la directiva de seguridad preestablecida **de protección integrada** proporciona protección de datos adjuntos seguros y protección de vínculos seguros a todos los destinatarios (usuarios que no están definidos en las directivas de seguridad preestablecidas estándar o estricta, o en directivas de datos adjuntos seguros o vínculos seguros personalizadas). Para obtener más información, vea [Directivas de seguridad preestablecidas en EOP y Microsoft Defender para Office 365](preset-security-policies.md).
 >
 > - [Los datos adjuntos seguros para SharePoint, OneDrive y la protección de Microsoft Teams y](mdo-for-spo-odb-and-teams.md) la protección de [documentos seguros](safe-docs.md) no tienen dependencias en las directivas de vínculos seguros.
 
@@ -227,7 +227,7 @@ Estas son las mismas configuraciones que están disponibles en la [configuració
 
 Datos adjuntos seguros en Microsoft Defender para Office 365 incluye la configuración global que no tiene ninguna relación con las directivas de datos adjuntos seguros y la configuración específica de cada directiva de vínculos seguros. Para obtener más información, vea [Datos adjuntos seguros en Defender para Office 365](safe-attachments.md).
 
-Aunque no hay ninguna directiva de datos adjuntos seguros predeterminada, la directiva de seguridad preestablecida **de protección integrada** proporciona protección de datos adjuntos seguros a todos los destinatarios que aún no están incluidos en directivas de datos adjuntos seguros personalizadas. Para obtener más información, vea [Directivas de seguridad preestablecidas en EOP y Microsoft Defender para Office 365](preset-security-policies.md).
+Aunque no hay ninguna directiva de datos adjuntos seguros predeterminada, la directiva de seguridad preestablecida **de protección integrada** proporciona protección de datos adjuntos seguros a todos los destinatarios (usuarios que no están definidos en las directivas de seguridad preestablecidas estándar o estricta o en directivas de datos adjuntos seguros personalizadas). Para obtener más información, vea [Directivas de seguridad preestablecidas en EOP y Microsoft Defender para Office 365](preset-security-policies.md).
 
 #### <a name="global-settings-for-safe-attachments"></a>Configuración global de datos adjuntos seguros
 
@@ -253,7 +253,7 @@ Para configurar estas opciones, consulte [Configuración de directivas de datos 
 En PowerShell, se usan los cmdlets [New-SafeAttachmentPolicy](/powershell/module/exchange/new-safeattachmentpolicy) y [Set-SafeAttachmentPolicy](/powershell/module/exchange/set-safelinkspolicy) para esta configuración.
 
 > [!NOTE]
-> Como se describió anteriormente, no hay ninguna directiva de datos adjuntos seguros predeterminada, pero la directiva [de seguridad preestablecida **protección de**](preset-security-policies.md) datos adjuntos seguros está asignada a todos los destinatarios.
+> Como se describió anteriormente, no hay ninguna directiva de datos adjuntos seguros predeterminada, pero la directiva de [seguridad preestablecida protección **integrada**](preset-security-policies.md) asigna la protección de datos adjuntos seguros a todos los destinatarios (usuarios que no están definidos en ninguna directiva de datos adjuntos seguros).
 >
 > La columna **Predeterminado en personalizado** hace referencia a los valores predeterminados de las nuevas directivas de datos adjuntos seguros que se crean. Las columnas restantes indican (a menos que se indique lo contrario) los valores configurados en las directivas de seguridad preestablecidas correspondientes.
 
@@ -268,7 +268,7 @@ En PowerShell, se usan los cmdlets [New-SafeAttachmentPolicy](/powershell/module
 
 Vínculos seguros en Defender para Office 365 incluye la configuración global que se aplica a todos los usuarios que se incluyen en las directivas de vínculos seguros activas y la configuración específica de cada directiva de vínculos seguros. Para obtener más información, consulte [Vínculos seguros en Defender para Office 365](safe-links.md).
 
-Aunque no hay ninguna directiva de vínculos seguros predeterminada, la directiva de seguridad preestablecida **de protección integrada** proporciona protección de vínculos seguros a todos los destinatarios (usuarios que no están definidos en directivas de vínculos seguros personalizadas o directivas de seguridad preestablecidas estándar o estricta). Para obtener más información, vea [Directivas de seguridad preestablecidas en EOP y Microsoft Defender para Office 365](preset-security-policies.md).
+Aunque no hay ninguna directiva de vínculos seguros predeterminada, la directiva de seguridad preestablecida **de protección integrada** proporciona protección de vínculos seguros a todos los destinatarios (usuarios que no están definidos en las directivas de seguridad preestablecidas estándar o estricta o en directivas de vínculos seguros personalizadas). Para obtener más información, vea [Directivas de seguridad preestablecidas en EOP y Microsoft Defender para Office 365](preset-security-policies.md).
 
 #### <a name="global-settings-for-safe-links"></a>Configuración global de vínculos seguros
 
@@ -292,7 +292,7 @@ Para configurar estas opciones, consulte [Configuración de directivas de víncu
 En PowerShell, se usan los [cmdlets New-SafeLinksPolicy](/powershell/module/exchange/new-safelinkspolicy) y [Set-SafeLinksPolicy](/powershell/module/exchange/set-safelinkspolicy) para esta configuración.
 
 > [!NOTE]
-> Como se describió anteriormente, no hay ninguna directiva de vínculos seguros predeterminada, pero la directiva [de seguridad preestablecida **de protección integrada**](preset-security-policies.md) asigna la protección de vínculos seguros a todos los destinatarios.
+> Como se describió anteriormente, no hay ninguna directiva de vínculos seguros predeterminada, pero la directiva de [seguridad preestablecida de **protección integrada**](preset-security-policies.md) asigna la protección de vínculos seguros a todos los destinatarios (los usuarios que, de lo contrario, no están incluidos en ninguna directiva de vínculos seguros).
 >
 > La columna **Valor predeterminado en personalizado** hace referencia a los valores predeterminados de las nuevas directivas de vínculos seguros que se crean. Las columnas restantes indican (a menos que se indique lo contrario) los valores configurados en las directivas de seguridad preestablecidas correspondientes.
 

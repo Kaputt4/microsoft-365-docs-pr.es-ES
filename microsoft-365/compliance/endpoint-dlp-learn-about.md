@@ -19,12 +19,12 @@ ms.collection:
 search.appverid:
 - MET150
 description: 'La prevención de pérdida de datos en punto de conexión amplía la supervisión de las actividades de archivo y las acciones de protección de esos archivos a los puntos de conexión. Los archivos se hacen visibles en las soluciones de cumplimiento '
-ms.openlocfilehash: f6c966b13dc5671c1ba95cd54d3c2c99f782a7f8
-ms.sourcegitcommit: d09eb780dc41a01796eb8137fbe9267231af6746
+ms.openlocfilehash: adcfd8576d942581f2f4f0afae2e73e7dea2cf7e
+ms.sourcegitcommit: 651610ca73bfd1d008d97311b59782790df664fb
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/19/2022
-ms.locfileid: "67388327"
+ms.lasthandoff: 09/07/2022
+ms.locfileid: "67615218"
 ---
 # <a name="learn-about-endpoint-data-loss-prevention"></a>Obtener información sobre la Prevención de pérdida de datos en punto de conexión
 
@@ -109,8 +109,9 @@ Los tipos de archivo son una agrupación de formatos de archivo que se usan para
 |procesamiento de texto |Word, PDF | .doc, .docx, .docm, .dot, .dotx, .dotm, .docb, .pdf |
 |hoja de cálculo    |Excel, CSV, TSV |.xls, .xlsx, .xlt, .xlm, .xlsm, .xltx, .xltm, .xlsb, .xlw, .csv, .tsv         |
 |presentación |PowerPoint|.ppt, .pptx, .pos, .pps, .pptm, .potx, .potm, .ppam, .ppsx|
-|archivar  |herramientas de compresión y archivo de archivos | .zip, .zipx, .rar, .7z, .tar, .gz        |
+|archivar  |herramientas de compresión y archivo de archivos | .zip, .zipx, .rar, .7z, .tar, .gz |
 |correo electrónico    |Outlook |.pst, .ost, .msg         |
+
 
 ### <a name="file-extensions"></a>Extensiones de archivo
 

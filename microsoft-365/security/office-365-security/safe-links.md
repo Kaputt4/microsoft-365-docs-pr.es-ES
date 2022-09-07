@@ -28,12 +28,12 @@ ms.assetid: dd6a1fef-ec4a-4cf4-a25a-bb591c5811e3
 description: Obtenga información sobre la protección de vínculos seguros en Defender para Office 365 para proteger una organización contra suplantación de identidad (phishing) y otros ataques que usan direcciones URL malintencionadas. Descubra vínculos seguros de Teams y vea los gráficos de los mensajes de vínculos seguros.
 ms.subservice: mdo
 ms.service: microsoft-365-security
-ms.openlocfilehash: 63f2a129b5a02969cdc8859611822cdb3c89ec89
-ms.sourcegitcommit: ecc04b5b8f84b34255a2d5e90b5ab596af0d16c7
+ms.openlocfilehash: 501e75e2c81d12d99b1f093991b864c7ad43519e
+ms.sourcegitcommit: 651610ca73bfd1d008d97311b59782790df664fb
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/01/2022
-ms.locfileid: "67497343"
+ms.lasthandoff: 09/07/2022
+ms.locfileid: "67612909"
 ---
 # <a name="safe-links-in-microsoft-defender-for-office-365"></a>Vínculos seguros en Microsoft Defender para Office 365
 
@@ -53,7 +53,7 @@ Vea este breve vídeo sobre cómo protegerse frente a vínculos malintencionados
 > [!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RWGzjb]
 
 > [!NOTE]
-> Aunque no hay ninguna directiva de vínculos seguros predeterminada, la directiva de seguridad preestablecida **de protección integrada** proporciona protección de vínculos seguros en mensajes de correo electrónico, Microsoft Teams y archivos en aplicaciones de Office compatibles a todos los destinatarios (usuarios que no están definidos en directivas de vínculos seguros personalizadas o directivas de seguridad preestablecidas estándar o estricta) con licencia para Defender para Office 365. Para obtener más información, vea [Directivas de seguridad preestablecidas en EOP y Microsoft Defender para Office 365](preset-security-policies.md). También puede crear directivas de vínculos seguros que se apliquen a usuarios, grupos o dominios específicos. Para obtener instrucciones, consulte [Configuración de directivas de vínculos seguros en Microsoft Defender para Office 365](set-up-safe-links-policies.md).
+> Aunque no hay ninguna directiva de vínculos seguros predeterminada, la directiva de seguridad preestablecida **de protección integrada** proporciona protección de vínculos seguros en mensajes de correo electrónico, Microsoft Teams y archivos en aplicaciones de Office compatibles a todos los destinatarios con licencia para Defender para Office 365 (usuarios que no están definidos en las directivas de seguridad preestablecidas estándar o estricta o en directivas de vínculos seguros personalizados). Para obtener más información, vea [Directivas de seguridad preestablecidas en EOP y Microsoft Defender para Office 365](preset-security-policies.md). También puede crear directivas de vínculos seguros que se apliquen a usuarios, grupos o dominios específicos. Para obtener instrucciones, consulte [Configuración de directivas de vínculos seguros en Microsoft Defender para Office 365](set-up-safe-links-policies.md).
 
 La protección de vínculos seguros está disponible en las siguientes ubicaciones:
 
@@ -95,7 +95,7 @@ En la tabla siguiente se describen los escenarios de vínculos seguros en Micros
 |Escenario|Resultado|
 |---|---|
 |Jean es miembro del departamento de marketing. La protección de vínculos seguros para aplicaciones de Office está activada en una directiva de vínculos seguros que se aplica a los miembros del departamento de marketing. Jean abre una presentación de PowerPoint en un mensaje de correo electrónico y, a continuación, hace clic en una dirección URL en la presentación.|Jean está protegido por vínculos seguros. <p> Jean se incluye en una directiva de vínculos seguros en la que está activada la protección de vínculos seguros para aplicaciones de Office. <p> Para obtener más información sobre los requisitos de protección de vínculos seguros en aplicaciones de Office, consulte la sección [Configuración de vínculos seguros para aplicaciones de Office](#safe-links-settings-for-office-apps) más adelante en este artículo.|
-|La organización Microsoft 365 E5 de Chris no tiene configuradas directivas de vínculos seguros. Chris recibe un correo electrónico de un remitente externo que contiene una dirección URL a un sitio web malintencionado en el que, en última instancia, hace clic.|Chris está protegido por vínculos seguros. <p> La directiva de seguridad preestablecida **de protección integrada** proporciona protección de vínculos seguros a todos los destinatarios (usuarios que no están definidos en directivas de vínculos seguros personalizadas o directivas de seguridad preestablecidas estándar o estricta). Para obtener más información, vea [Directivas de seguridad preestablecidas en EOP y Microsoft Defender para Office 365](preset-security-policies.md).|
+|La organización Microsoft 365 E5 de Chris no tiene configuradas directivas de vínculos seguros. Chris recibe un correo electrónico de un remitente externo que contiene una dirección URL a un sitio web malintencionado en el que, en última instancia, hace clic.|Chris está protegido por vínculos seguros. <p> La directiva de seguridad preestablecida **de protección integrada** proporciona protección de vínculos seguros a todos los destinatarios (usuarios que no están definidos en las directivas de seguridad preestablecidas Estándar o Estricta o en directivas de vínculos seguros personalizadas). Para obtener más información, vea [Directivas de seguridad preestablecidas en EOP y Microsoft Defender para Office 365](preset-security-policies.md).|
 |En la organización de Pat, los administradores han creado una directiva de vínculos seguros que aplica Pat, pero la protección de vínculos seguros para aplicaciones de Office está desactivada. Pat abre un documento de Word y hace clic en una dirección URL en el archivo.|Pat no está protegido por vínculos seguros. <p> Aunque Pat se incluye en una directiva de vínculos seguros activa, la protección de vínculos seguros para aplicaciones de Office está desactivada en esa directiva, por lo que no se puede aplicar la protección.|
 |En la organización de Lee, `https://tailspintoys.com` se configura en la lista **Bloquear las siguientes direcciones URL** en la configuración global de Vínculos seguros. Ya existe una directiva de vínculos seguros que incluye Lee. Lee recibe un mensaje de correo electrónico que contiene la dirección URL `https://tailspintoys.com/aboutus/trythispage`. Lee hace clic en la dirección URL.|Es posible que la dirección URL se bloquee automáticamente para Lee; depende de la entrada de dirección URL de la lista y del cliente de correo electrónico que usó Lee. Para obtener más información, consulte la [sección "Bloquear las siguientes direcciones URL" para vínculos seguros](#block-the-following-urls-list-for-safe-links) más adelante en este artículo.|
 |Jamie y Julia trabajan para contoso.com. Hace mucho tiempo, los administradores configuraron directivas de vínculos seguros que se aplican tanto a Jamie como a Julia. Jamie envía un correo electrónico a Julia, sin saber que el correo electrónico contiene una dirección URL malintencionada.|Julia está protegida por vínculos seguros **si** la directiva vínculos seguros que se aplica a ella está configurada para aplicarse a los mensajes entre destinatarios internos. Para obtener más información, consulte la sección [Configuración de vínculos seguros para mensajes de correo electrónico](#safe-links-settings-for-email-messages) más adelante en este artículo.|
@@ -104,17 +104,17 @@ En la tabla siguiente se describen los escenarios de vínculos seguros en Micros
 
 Debe especificar las condiciones y excepciones del destinatario que determinan a quién se aplica la directiva. Puede usar estas propiedades para condiciones y excepciones:
 
-- **El destinatario es**
-- **El dominio de destinatario es**
-- **El destinatario es un miembro de**
+- **Usuarios**
+- **Grupos**
+- **Dominios**
 
 Solo puede usar una condición o excepción una vez, pero la condición o excepción puede contener varios valores. Varios valores de una misma condición o excepción usan la lógica OR (por ejemplo, _\<recipient1\>_ o _\<recipient2\>_). Condiciones o excepciones diversas usan la lógica AND (por ejemplo, _\<recipient1\>_ y _\<member of group 1\>_).
 
 > [!IMPORTANT]
 > Los diferentes tipos de condiciones o excepciones no son aditivos; son inclusivos. La directiva se aplica _solo_ a los destinatarios que coinciden con _todos_ los filtros de destinatarios especificados. Por ejemplo, se configura una condición de filtro de destinatario en la directiva con los siguientes valores:
 >
-> - El destinatario es: romain@contoso.com
-> - El destinatario es miembro de: Ejecutivos
+> - Usuarios: romain@contoso.com
+> - Grupos: Ejecutivos
 >
 > La directiva se aplica a romain@contoso.com _solo_ si también es miembro del grupo de Ejecutivos. Si no es miembro del grupo, la directiva no se le aplica.
 >
