@@ -7,7 +7,8 @@ author: denisebmsft
 manager: dansimp
 audience: Admin
 ms.topic: how-to
-ms.service: o365-administration
+ms.service: microsoft-365-business
+ms.subservice: business-premium
 ms.collection: ''
 ms.localizationpriority: high
 ms.date: 08/18/2022
@@ -19,12 +20,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Aprenda a usar Windows AutoPilot para configurar nuevos dispositivos de Windows 10 para su empresa para que estén listos para su uso por parte de los empleados.
-ms.openlocfilehash: 7286d22a92b8d989b8cb00c949f45f25f501a1a3
-ms.sourcegitcommit: d09eb780dc41a01796eb8137fbe9267231af6746
+ms.openlocfilehash: 80f14c2a516560897bd87dd47a0a57b4277a8db4
+ms.sourcegitcommit: 651610ca73bfd1d008d97311b59782790df664fb
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/19/2022
-ms.locfileid: "67388594"
+ms.lasthandoff: 09/07/2022
+ms.locfileid: "67613371"
 ---
 # <a name="use-this-step-by-step-guide-to-add-autopilot-devices-and-profile"></a>Usar esta guía paso a paso para agregar perfiles y dispositivos de AutoPilot
 

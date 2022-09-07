@@ -14,12 +14,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Obtenga más información sobre la prueba de soluciones de Microsoft Purview y sobre cómo registrarse.
-ms.openlocfilehash: dd223402153048b0d7f452b202804e6bf1853b97
-ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
-ms.translationtype: HT
+ms.openlocfilehash: 42a29a40df1b452b32ae74110c0d9d166361d5fe
+ms.sourcegitcommit: 651610ca73bfd1d008d97311b59782790df664fb
+ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/06/2022
-ms.locfileid: "66640124"
+ms.lasthandoff: 09/07/2022
+ms.locfileid: "67614668"
 ---
 # <a name="about-the-microsoft-purview-solutions-trial"></a>Acerca de la prueba de soluciones de Microsoft Purview
 
@@ -47,7 +47,7 @@ Los usuarios deben tener uno de los siguientes roles de administrador para regis
 - Administrador global
 - Administrador de datos de cumplimiento
 
-Obtenga detalles sobre los roles en [Acerca de los roles de administrador](../admin/add-users/about-admin-roles.md).
+Obtenga más detalles sobre [los roles para iniciar las pruebas de Microsoft 365](compliance-easy-trials-roles.md).
 
 ## <a name="how-to-sign-up-for-the-trial"></a>Cómo registrarse para la prueba
 

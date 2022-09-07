@@ -1,5 +1,5 @@
 ---
-title: Microsoft 365 para comercios minoristas
+title: Microsoft 365 para organizaciones minoristas
 description: Obtenga información sobre los recursos de administración disponibles para administrar y sacar el máximo partido de Teams para sus tiendas minoristas y recursos.
 ms.topic: conceptual
 author: samanro
@@ -23,14 +23,14 @@ searchScope:
 appliesto:
 - Microsoft Teams
 - Microsoft 365 for frontline workers
-ms.openlocfilehash: db40235a7ef2b278cd532fec06745e58054580ee
-ms.sourcegitcommit: 10e6abe740e27000e223378eb17d657a47555fa8
+ms.openlocfilehash: df4094a3ae3654fd282351f5527f941cd86a1741
+ms.sourcegitcommit: 651610ca73bfd1d008d97311b59782790df664fb
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/31/2022
-ms.locfileid: "67471994"
+ms.lasthandoff: 09/07/2022
+ms.locfileid: "67614096"
 ---
-# <a name="get-started-with-microsoft-365-for-retail"></a>Introducción a Microsoft 365 para comercios minoristas
+# <a name="get-started-with-microsoft-365-for-retail-organizations"></a>Introducción a Microsoft 365 para organizaciones minoristas
 
 Los entornos minoristas, con sus programaciones rotativas y el personal sobre la marcha, tienen necesidades muy diferentes a las de otras organizaciones. Para obtener la mayor ventaja para su organización comercial, primero elija qué escenarios Microsoft 365 y Microsoft Teams pueden ayudarle en sus operaciones empresariales diarias y, a continuación, asegúrese de preparar el entorno de Teams con los aspectos básicos, los equipos y las aplicaciones adecuados para admitir esos escenarios.
 
@@ -49,10 +49,19 @@ Microsoft 365 y Microsoft Teams ofrecen varias funcionalidades que pueden ayudar
 > [!NOTE]
 > Estos escenarios también forman parte de Microsoft Cloud for Retail. Puede hacer más con estos escenarios cuando también use otras funcionalidades de Microsoft Cloud for Retail, como Microsoft Dynamics 365. Obtenga más información sobre el uso de esta solución, que reúne las funcionalidades de Azure, Dynamics 365 y Microsoft 365 en [Microsoft Cloud for Retail](/industry/retail).
 
+### <a name="download-a-poster-with-scenario-overviews"></a>Descarga de un póster con información general sobre escenarios
+
+Use el siguiente póster para empezar a imaginar lo que su organización puede hacer con Microsoft 365 for frontline workers.
+
+| Elemento | Descripción |
+|:-----|:-----|
+|[![Microsoft 365 for frontline workers: Escenarios comerciales.](media/m365-frontline-retail-thumb.png)](https://go.microsoft.com/fwlink/?linkid=2206476) <br/> [PDF](https://go.microsoft.com/fwlink/?linkid=2206476) \| [Visio](https://go.microsoft.com/fwlink/?linkid=2206271)  <br>Actualizado en septiembre de 2022   |Este póster proporciona información general sobre los escenarios que puede implementar para los empleados de primera línea en una configuración comercial.|
+
+### <a name="video-overviews"></a>Introducción al vídeo
+
 Vea el siguiente vídeo para ver cómo puede ayudar a los asociados de la tienda a conectarse y colaborar:
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RWRJVw]
-
 
 Vea el siguiente vídeo para ver cómo puede simplificar los procesos empresariales en entornos comerciales:
 
@@ -65,7 +74,7 @@ Reúna a los asociados y la administración en el almacén para colaborar y simp
 
 **Aplicaciones clave:** Turnos, Walkie Talkie, Tareas, Aprobaciones, Chat, Elogios, Listas, Archivos, Actualizaciones
 
-**Servicios adicionales:** Conexiones Viva, SharePoint, Power Platform y Power Apps
+**Servicios adicionales:** Outlook, Conexiones Viva, SharePoint, Power Platform y Power Apps
 
 Más información: [Colaboración en equipo de primera línea](flw-team-collaboration.md)
 
@@ -75,7 +84,7 @@ Los miembros del personal pueden comunicarse y colaborar en varios almacenes de 
 
 **Aplicaciones clave:** Turnos, Walkie Talkie, Tareas, Aprobaciones, Chat, Elogios, Listas, Archivos, Actualizaciones
 
-**Servicios adicionales:** Conexiones Viva, Yammer, SharePoint, Power Platform y Power Apps
+**Servicios adicionales:** Outlook, Conexiones Viva, Yammer, SharePoint, Power Platform y Power Apps
 
 Más información: [Colaboración en equipo de primera línea](flw-team-collaboration.md)
 

@@ -17,12 +17,12 @@ ms.reviewer: aaglick
 appliesto:
 - Microsoft Teams
 - Microsoft 365 for frontline workers
-ms.openlocfilehash: 5265c8f4a2135fdeee800ebdd465bc3cbb53a6f5
-ms.sourcegitcommit: 10e6abe740e27000e223378eb17d657a47555fa8
+ms.openlocfilehash: d654a94fc508ee109bdeeba97684d5f7636a3a6d
+ms.sourcegitcommit: 651610ca73bfd1d008d97311b59782790df664fb
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/31/2022
-ms.locfileid: "67470979"
+ms.lasthandoff: 09/07/2022
+ms.locfileid: "67613168"
 ---
 # <a name="choose-your-scenarios-for-microsoft-365-for-frontline-workers"></a>Elija los escenarios para Microsoft 365 para trabajadores de primera línea
 
@@ -30,7 +30,13 @@ Microsoft 365 para trabajadores de primera línea puede ayudarle a conectar e in
 
 :::image type="content" source="media/flw-maturity-model.png" alt-text="Modelo de madurez digital para primera línea, de la habilitación hasta la capacidad de transformación.":::
 
+## <a name="download-a-poster-with-scenario-overviews"></a>Descarga de un póster con información general sobre escenarios
+
 Use la información general de estos escenarios para empezar a prever lo que su organización puede hacer con Microsoft 365 para trabajadores de primera línea y, a continuación, siga los vínculos para averiguar cómo implementar estos escenarios.
+
+| Elemento | Descripción |
+|:-----|:-----|
+|[![Microsoft 365 para escenarios de trabajo de primera línea.](media/m365-frontline-scenarios-thumb.png)](https://go.microsoft.com/fwlink/?linkid=2206713) <br/> [PDF](https://go.microsoft.com/fwlink/?linkid=2206713) \| [Visio](https://go.microsoft.com/fwlink/?linkid=2206386)  <br>Actualizado en septiembre de 2022   |Este póster proporciona información general sobre los escenarios que puede implementar para que los empleados de primera línea aumenten las comunicaciones, mejoren el bienestar y la participación, entrenen e incorporen a sus trabajadores y administren sus plantillas y operaciones.|
 
 ## <a name="communications"></a>Comunicaciones
 
@@ -45,10 +51,10 @@ Vea el siguiente vídeo para ver un ejemplo de cómo puede ayudar a los trabajad
 
 | Escenario | Descripción | Servicios | Aplicaciones de Teams |
 | --- | --- | --- |--- |
-| [Comunicación y colaboración en equipo](flw-team-collaboration.md) | Ayuda a los empleados de primera línea a comunicarse en su tienda, turnos o equipo con Microsoft Teams. Conexiones Viva ayuda a crear un panel que coloque la información que necesitan delante y en el centro de sus dispositivos, para que puedan ponerse en contacto con ellos siempre que lo necesiten. | Microsoft Teams<br>SharePoint<br>Viva Connections<br>Power Platform y Power Apps | Aprobaciones, Chat, Archivos, Listas, Reunión, Elogios, Turnos, Tareas, Walkie Talkie |
-| [Comunicaciones corporativas](flw-corp-comms.md) | La participación de los empleados contribuye de forma significativa a la satisfacción, la fidelidad y la productividad del lugar de trabajo en cualquier organización. Aprenda cómo mantener a todos informados e involucrados en Teams, Stream y Yammer. Todo en un mismo sitio con Conexiones Viva. | Microsoft Teams<br> SharePoint <br> Yammer <br>Viva Connections | Reunirse |
+| [Comunicación y colaboración en equipo](flw-team-collaboration.md) | Ayuda a los empleados de primera línea a comunicarse en su tienda, turnos o equipo con Microsoft Teams. Conexiones Viva ayuda a crear un panel que coloque la información que necesitan delante y en el centro de sus dispositivos, para que puedan ponerse en contacto con ellos siempre que lo necesiten. | Microsoft Teams<br>Outlook<br>SharePoint<br>Viva Connections<br>Power Platform y Power Apps | Aprobaciones, Chat, Archivos, Listas, Reunión, Elogios, Turnos, Tareas, Walkie Talkie |
+| [Comunicaciones corporativas](flw-corp-comms.md) | La participación de los empleados contribuye de forma significativa a la satisfacción, la fidelidad y la productividad del lugar de trabajo en cualquier organización. Aprenda cómo mantener a todos informados e involucrados en Teams, Stream y Yammer. Todo en un mismo sitio con Conexiones Viva. | Microsoft Teams<br>Outlook<br>SharePoint<br>Yammer<br>Viva Connections | Reunirse |
 
-Consulte también estos recursos para obtener información sobre cómo puede funcionar Yammer para los trabajadores de primera línea: [Yammer Ten Communities](https://aka.ms/Yam10Communities) y [Yammer Lookbook](https://aka.ms/Yammer/Lookbook)
+Vea también estos recursos para obtener información sobre cómo Yammer puede trabajar para los trabajadores de primera línea: [Yammer Ten Communities](https://aka.ms/Yam10Communities) y [Yammer Lookbook](https://aka.ms/Yammer/Lookbook).
 
 ## <a name="wellbeing--engagement"></a>Bienestar y compromiso
 
@@ -60,8 +66,6 @@ Fomente la sensación de pertenencia con sus empleados de primera línea ayudán
 | --- | --- | --- |--- |
 | [Interactúe con sus empleados y céntrese en su bienestar](flw-wellbeing-engagement.md) | Cree conexiones más profundas en toda la organización y cree un área de trabajo inclusiva. | Microsoft Teams <br>SharePoint <br> Microsoft Stream <br>Viva Connections <br> Yammer| Elogios |
 
-Portada: [Traducción en línea](/microsoftteams/inline-message-translation-teams), Elogios, comunicaciones dirigidas (Conexiones Viva), difusiones de vídeo con Stream o Teams.
-
 ## <a name="training--onboarding"></a>Entrenamiento e incorporación
 
 :::image type="icon" source="/office/media/icons/files-teams.png":::
@@ -70,8 +74,8 @@ Promueva el crecimiento continuo de sus empleados y fomente el uso compartido y 
 
 | Escenario | Descripción | Servicios | Aplicaciones de Teams |
 | --- | --- | --- |--- |
-| [Incorporación de nuevos empleados a la organización](flw-onboarding-training.md) | Haga que la incorporación de nuevos empleados sea una gran experiencia fomentando un entorno de trabajo híbrido todo en uno donde los nuevos empleados puedan encontrar recursos importantes, reunirse con personas de su organización y prepararse para tener éxito en su nuevo rol.| SharePoint <br> Viva Learning <br> Viva Connections <br> Yammer | Listas <br>Reuniones en directo |
-| [Aprendizaje continuo](flw-onboarding-training.md#ongoing-training) | Una vez incorporados, ayude a sus empleados a mantener sus aptitudes actualizadas con la formación continua en Aprendizaje Viva. | SharePoint <br> Viva Learning <br> Viva Connections <br> Yammer| |
+| [Incorporación de nuevos empleados a la organización](flw-onboarding-training.md) | Haga que la incorporación de nuevos empleados sea una gran experiencia fomentando un entorno de trabajo híbrido todo en uno donde los nuevos empleados puedan encontrar recursos importantes, reunirse con personas de su organización y prepararse para tener éxito en su nuevo rol.| SharePoint<br>Viva Learning <br>Viva Connections <br>Yammer | Listas <br>Reuniones en directo |
+| [Aprendizaje continuo](flw-onboarding-training.md#ongoing-training) | Una vez incorporados, ayude a sus empleados a mantener sus aptitudes actualizadas con la formación continua en Aprendizaje Viva. | SharePoint <br>Viva Learning <br>Viva Connections <br>Yammer| |
 
 ## <a name="schedule-management"></a>Administración de horarios
 

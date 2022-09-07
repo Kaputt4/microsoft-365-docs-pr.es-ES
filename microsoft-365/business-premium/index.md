@@ -7,7 +7,8 @@ author: denisebmsft
 manager: dansimp
 ms.audience: Admin
 ms.topic: overview
-ms.service: o365-administration
+ms.service: microsoft-365-business
+ms.subservice: business-premium
 ms.localizationpriority: high
 ms.date: 08/24/2022
 ms.collection:
@@ -21,12 +22,12 @@ search.appverid:
 - BCS160
 - MET150
 description: Aprenda a implementar la ciberseguridad para pequeñas o medianas empresas con Microsoft 365 Empresa Premium. Las funcionalidades y características de ciberseguridad están optimizadas para evitar ciberataques y infracciones de seguridad, y ayudar a proteger los datos, los dispositivos y la información con ciberdefensas de alto nivel.
-ms.openlocfilehash: 799f491f99143df2e12d7852bb6e6bf28d3e70b5
-ms.sourcegitcommit: 2d1302a6165b83cbbc8c2df2c608d43b6b0498b0
+ms.openlocfilehash: 057aff207ec19161ba9ecd1e078dd2fee6bbd533
+ms.sourcegitcommit: 651610ca73bfd1d008d97311b59782790df664fb
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/25/2022
-ms.locfileid: "67433583"
+ms.lasthandoff: 09/07/2022
+ms.locfileid: "67613436"
 ---
 # <a name="microsoft-365-business-premium--productivity-and-cybersecurity-for-small-business"></a>Microsoft 365 Empresa Premium: productividad y ciberseguridad para pequeñas empresas
 
@@ -53,7 +54,7 @@ Las instrucciones de estas misiones se basan en el [modelo de seguridad Confianz
 
 [:::image type="content" source="media/m365bp-cyber-security-playbook.png" alt-text="Cuaderno de estrategias de ciberseguridad. Descargue esta guía.":::](https://download.microsoft.com/download/9/c/1/9c167271-8209-492e-acc2-38a39d1834c2/m365bp-cybersecurity-playbook.pdf)
 
-## <a name="next-steps"></a>Siguientes pasos
+## <a name="next-steps"></a>Pasos siguientes
 
 Continúe con [fortificar su entorno](m365bp-setup-overview.md).
 

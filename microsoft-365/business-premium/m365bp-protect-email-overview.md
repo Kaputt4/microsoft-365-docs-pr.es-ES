@@ -7,7 +7,8 @@ author: denisebmsft
 manager: dansimp
 audience: Admin
 ms.topic: conceptual
-ms.service: o365-administration
+ms.service: microsoft-365-business
+ms.subservice: business-premium
 ms.localizationpriority: high
 ms.date: 08/05/2022
 ms.collection:
@@ -19,12 +20,12 @@ search.appverid:
 - BCS160
 - MET150
 description: Saber qué se debe supervisar en el correo electrónico. Entrene a su equipo para protegerse contra malware, phishing y otros ciberataques malintencionados mediante las herramientas de ciberseguridad incluidas con Microsoft 365 Empresa Premium.
-ms.openlocfilehash: 087eb5017e2bda3d2fdd1bdd224f7c019970115b
-ms.sourcegitcommit: cd9df1a681265905eef99c039f7036b2fa6e8b6d
-ms.translationtype: HT
+ms.openlocfilehash: 62e88c37b071bf7ec038115f1bf01599685e82ce
+ms.sourcegitcommit: 651610ca73bfd1d008d97311b59782790df664fb
+ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/07/2022
-ms.locfileid: "67276808"
+ms.lasthandoff: 09/07/2022
+ms.locfileid: "67611397"
 ---
 # <a name="protect-all-email"></a>Proteger todo el correo electrónico
 

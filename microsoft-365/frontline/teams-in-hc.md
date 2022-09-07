@@ -28,12 +28,12 @@ description: Obtenga información sobre las características de telemedicina en 
 ms.custom:
 - seo-marvel-apr2020
 - seo-marvel-jun2020
-ms.openlocfilehash: 0ce08e71a2bec105b2c9f2efe59cc7f440225b4e
-ms.sourcegitcommit: 1efb75d033860977239b479f92e7eaf274b5fbf0
-ms.translationtype: HT
+ms.openlocfilehash: 36e47c683a61657d799750f7410a2de23e1444a1
+ms.sourcegitcommit: 651610ca73bfd1d008d97311b59782790df664fb
+ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/16/2022
-ms.locfileid: "66998870"
+ms.lasthandoff: 09/07/2022
+ms.locfileid: "67612860"
 ---
 # <a name="get-started-with-microsoft-365-for-healthcare-organizations"></a>Introducción a Microsoft 365 para organizaciones sanitarias
 
@@ -56,7 +56,7 @@ Para obtener la mayor ventaja para su organización sanitaria, primero elija qu�
 
 1. [Elija los escenarios](#scenarios-for-healthcare) que desea implementar.
 2. [Configuración de Microsoft 365](flw-setup-microsoft-365.md): configure los elementos principales de Microsoft 365, Microsoft Teams y cualquier otro servicio que necesite.
-3. [Configurar servicios y aplicaciones](flw-setup-microsoft-365.md#step-5-configure-apps-for-your-scenario): use plantillas de equipo para configurar los equipos que necesita rápidamente, incluidos los canales y las aplicaciones que necesita para su empresa. Agregue otras aplicaciones de Microsoft según sea necesario para admitir sus escenarios.
+3. [Configurar servicios y aplicaciones](flw-setup-microsoft-365.md#step-5-configure-apps-for-your-scenario): usar plantillas de equipo para configurar los equipos que se necesitan rápidamente, incluidos los canales y las aplicaciones que la empresa necesita. Agregue otras aplicaciones de Microsoft según sea necesario para admitir sus escenarios.
 
 ## <a name="scenarios-for-healthcare"></a>Escenarios para el cuidado de la salud
 
@@ -79,6 +79,14 @@ Además, aproveche estas características que ayudan a Microsoft Teams a trabaja
 | [Paquetes de directivas de Microsoft Teams](#teams-policy-packages)| Asegúrese de que los dispositivos del personal clínico, del personal de información y de las salas de pacientes tengan el acceso adecuado a la función de Teams.| Los usuarios deben tener una licencia adecuada*. |
 | [Mensajería segura](#secure-messaging) | Obtenga atención más rápida de los mensajes urgentes y tenga la seguridad de que los mensajes se reciben y se leen. | Los usuarios deben tener una licencia adecuada*.  |
 | [Plantillas de Teams](#teams-templates-for-healthcare-organizations) | Cree equipos que incluyan una plantilla predefinida de configuración, canales y aplicaciones preinstaladas para la comunicación y colaboración en una planta, sala o departamento, o entre varias plantas, salas o departamentos en un hospital. | Los usuarios deben tener una licencia adecuada*.  |
+
+### <a name="download-a-poster-with-scenario-overviews"></a>Descarga de un póster con información general sobre escenarios
+
+Use el siguiente póster para empezar a imaginar lo que su organización puede hacer con Microsoft 365 for frontline workers.
+
+| Elemento | Descripción |
+|:-----|:-----|
+|[![Microsoft 365 for frontline workers: escenarios de atención sanitaria.](media/m365-frontline-healthcare-thumb.png)](https://go.microsoft.com/fwlink/?linkid=2206475) <br/> [PDF](https://go.microsoft.com/fwlink/?linkid=2206475) \| [Visio](https://go.microsoft.com/fwlink/?linkid=2206474)  <br>Actualizado en septiembre de 2022   |Este póster proporciona información general sobre los escenarios que puede implementar para el personal de primera línea en un entorno de atención sanitaria.|
 
 ## <a name="virtual-appointments-and-electronic-healthcare-record-ehr-integration"></a>Citas virtuales e integración de registros electrónicos de atención sanitaria (EHR)
 
@@ -135,6 +143,12 @@ Además, su equipo puede usar aplicaciones en Teams para:
 - Hacer un seguimiento de tareas y monitorearlas con la aplicación Tasks
 - Simplificar aprobaciones con la aplicación Aprobaciones
 - Crear, administrar y compartir horarios con la aplicación Turnos
+
+### <a name="coordinate-over-email-with-exchange-online"></a>Coordinar por correo electrónico con Exchange Online
+
+Email es una herramienta de comunicación básica para la mayoría de los lugares de trabajo. [Configure el correo electrónico con Exchange Online](flw-setup-microsoft-365.md#set-up-email-with-exchange-online) para ayudar a los gerentes y trabajadores de primera línea a coordinarse con los miembros del equipo de atención en otras ubicaciones o programar reuniones para analizar los planes de atención. Los usuarios deben tener una licencia F3 para tener un buzón de correo electrónico.
+
+También puede configurar buzones compartidos para permitir el correo entrante de los clientes (por ejemplo, para el servicio de atención al cliente o las solicitudes de programación) y tener un grupo de trabajadores que supervisen y envíen correo electrónico desde un alias de correo electrónico público como info@contoso.com. Para obtener más información sobre los buzones compartidos, vea [Acerca de los buzones compartidos](../admin/email/about-shared-mailboxes.md) y [Abrir y usar un buzón compartido en Outlook](https://support.microsoft.com/office/open-and-use-a-shared-mailbox-in-outlook-d94a8e9e-21f1-4240-808b-de9c9c088afd).
 
 ### <a name="share-lists-and-track-information-with-the-lists-app"></a>Compartir listas y hacer un seguimiento de la información con la aplicación Listas
 

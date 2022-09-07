@@ -22,12 +22,12 @@ ms.custom:
 description: Los administradores pueden obtener información sobre la cuarentena en Exchange Online Protection (EOP) que contiene mensajes potencialmente peligrosos o no deseados.
 ms.subservice: mdo
 ms.service: microsoft-365-security
-ms.openlocfilehash: af99da8ddaddcbf8c9fd746496a66242c57abd5b
-ms.sourcegitcommit: 2b89bcff547e00be3d38dc8d1e6cbcf8f41eba42
+ms.openlocfilehash: fde70d38090b3069c404d904b10a16bf056f67a0
+ms.sourcegitcommit: 651610ca73bfd1d008d97311b59782790df664fb
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/03/2022
-ms.locfileid: "67596817"
+ms.lasthandoff: 09/07/2022
+ms.locfileid: "67612733"
 ---
 # <a name="quarantined-email-messages-in-eop-and-defender-for-office-365"></a>Mensajes de correo electrónico en cuarentena en EOP y Defender para Office 365
 
@@ -65,7 +65,7 @@ Tanto los usuarios como los administradores pueden trabajar con mensajes en cuar
   |Mensajes en cuarentena por directivas antimalware (mensajes de malware).|30 días|No||
   |Mensajes en cuarentena por directivas de datos adjuntos seguros en Defender para Office 365 (mensajes de malware).|30 días|No||
   |Mensajes en cuarentena por reglas de flujo de correo: la acción es **Entregar el mensaje a la cuarentena hospedada** (_cuarentena_).|30 días|No||
-  |Archivos en cuarentena por datos adjuntos seguros para SharePoint, OneDrive y Microsoft Teams (archivos de malware).|30 días|No||
+  |Archivos en cuarentena por datos adjuntos seguros para SharePoint, OneDrive y Microsoft Teams (archivos de malware).|30 días|No|Los archivos en cuarentena en SharePoint o OneDrive se quitan de la cuarentena de fom después de 30 días, pero los archivos bloqueados permanecen en SharePoint o OneDrive en estado bloqueado.|
 
   Cuando un mensaje expira de la cuarentena, no se puede recuperar.
 

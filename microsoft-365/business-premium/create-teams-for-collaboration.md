@@ -7,7 +7,8 @@ author: denisebmsft
 manager: dansimp
 ms.audience: Admin
 ms.topic: how-to
-ms.service: o365-administration
+ms.service: microsoft-365-business
+ms.subservice: business-premium
 ms.localizationpriority: high
 ms.collection:
 - Adm_O365
@@ -23,12 +24,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Obtenga información sobre por qué y cómo crear un equipo en Microsoft Teams para que colabore en su pequeña empresa o campaña.
-ms.openlocfilehash: 046a888c0df95bc404bafcddb041e015131e6503
-ms.sourcegitcommit: d1b60ed9a11f5e6e35fbaf30ecaeb9dfd6dd197d
-ms.translationtype: HT
+ms.openlocfilehash: 1ad91df2578327d86b7c8dad144ae284014723cd
+ms.sourcegitcommit: 651610ca73bfd1d008d97311b59782790df664fb
+ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/29/2022
-ms.locfileid: "66489656"
+ms.lasthandoff: 09/07/2022
+ms.locfileid: "67612975"
 ---
 # <a name="use-microsoft-teams-for-collaboration"></a>Uso de Microsoft Teams para la colaboración
 

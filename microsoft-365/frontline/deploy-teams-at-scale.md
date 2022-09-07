@@ -16,12 +16,12 @@ ms.collection:
 appliesto:
 - Microsoft Teams
 - Microsoft 365 for frontline workers
-ms.openlocfilehash: c9eca5d4d805b3eb9663a3aacf82d8e922585da7
-ms.sourcegitcommit: ecc04b5b8f84b34255a2d5e90b5ab596af0d16c7
+ms.openlocfilehash: 76ee0b786c2435e57fc4991685c4456cf82fe3dd
+ms.sourcegitcommit: 651610ca73bfd1d008d97311b59782790df664fb
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/01/2022
-ms.locfileid: "67497723"
+ms.lasthandoff: 09/07/2022
+ms.locfileid: "67611134"
 ---
 # <a name="deploy-teams-at-scale-for-frontline-workers"></a>Implementación de Teams a escala para trabajadores de primera línea
 
@@ -141,7 +141,7 @@ Siga estos pasos para instalar y conectarse a la versión más reciente del mód
 
 Ahora que ha creado los archivos CSV y configurado el entorno, está listo para implementar los equipos.
 
-Use el ```New-CsBatchTeamsDeployment``` cmdlet para enviar un lote de equipos para crear. Se genera un Id. de orquestación para cada lote. A continuación, puede usar el ```Get-CsBatchTeamsDeploymentStatus``` cmdlet para realizar un seguimiento del progreso y el estado de cada lote.
+Use el cmdlet [New-CsBatchTeamsDeployment](/powershell/module/teams/New-CsBatchTeamsDeployment) para enviar un lote de equipos para crear. Se genera un Id. de orquestación para cada lote. Después, puede usar el cmdlet [Get-CsBatchTeamsDeploymentStatus](/powershell/module/teams/Get-CsBatchTeamsDeploymentstatus) para realizar un seguimiento del progreso y el estado de cada lote.
 
 1. Ejecute lo siguiente para implementar un lote de equipos. En este comando, especificará la ruta de acceso a los archivos CSV y las direcciones de correo electrónico de hasta cinco destinatarios para notificar sobre esta implementación.
 
@@ -165,5 +165,7 @@ Use el ```New-CsBatchTeamsDeployment``` cmdlet para enviar un lote de equipos pa
 
 ## <a name="related-articles"></a>Artículos relacionados
 
+- [New-CsBatchTeamsDeployment](/powershell/module/teams/New-CsBatchTeamsDeployment)
+- [Get-CsBatchTeamsDeploymentStatus](/powershell/module/teams/Get-CsBatchTeamsDeploymentstatus)
 - [Descripción de PowerShell para Teams](/microsoftteams/teams-powershell-overview)
 - [Obtenga información sobre dónde empezar con una implementación de primera línea](flw-deploy-overview.md)

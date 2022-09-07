@@ -7,19 +7,20 @@ author: denisebmsft
 manager: dansimp
 audience: Admin
 ms.topic: article
-ms.service: o365-administration
+ms.service: microsoft-365-business
+ms.subservice: business-premium
 localization_priority: Normal
 ms.date: 07/19/2022
 search.appverid:
 - MET150
 - MOE150
 description: Obtenga información sobre cómo actualizar los dispositivos Windows a Windows 10 Pro con Microsoft 365 Empresa Premium.
-ms.openlocfilehash: 5ea7b107512722118e6fe872ebe48836e0fe70f6
-ms.sourcegitcommit: c1eaea74c8ffce2f9f477c9469342e88e4a70c14
+ms.openlocfilehash: 6e7acf1106dfd588d0a061714acbb72985056d8b
+ms.sourcegitcommit: 651610ca73bfd1d008d97311b59782790df664fb
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/20/2022
-ms.locfileid: "66892669"
+ms.lasthandoff: 09/07/2022
+ms.locfileid: "67613722"
 ---
 # <a name="upgrade-windows-devices-to-windows-10-pro"></a>Actualizar dispositivos Windows a Windows 10 Pro
 

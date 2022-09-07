@@ -19,12 +19,12 @@ ms.custom: ''
 description: Los administradores pueden aprender a ver, crear, modificar y eliminar directivas de vínculos seguros y la configuración global de vínculos seguros en Microsoft Defender para Office 365.
 ms.subservice: mdo
 ms.service: microsoft-365-security
-ms.openlocfilehash: a0e9a805038e3cb3ae586d84229a00e24631d7e0
-ms.sourcegitcommit: ecc04b5b8f84b34255a2d5e90b5ab596af0d16c7
+ms.openlocfilehash: ac2c6a2fb5ca151ba50176ae9faf06ec7b8cd0ab
+ms.sourcegitcommit: 651610ca73bfd1d008d97311b59782790df664fb
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/01/2022
-ms.locfileid: "67496909"
+ms.lasthandoff: 09/07/2022
+ms.locfileid: "67611331"
 ---
 # <a name="set-up-safe-links-policies-in-microsoft-defender-for-office-365"></a>Configurar directivas de vínculos seguros en Microsoft Defender para Office 365
 
@@ -39,7 +39,7 @@ ms.locfileid: "67496909"
 
 Vínculos seguros en [Microsoft Defender para Office 365](defender-for-office-365.md) proporciona el examen de direcciones URL de los mensajes de correo electrónico entrantes en el flujo de correo y la comprobación de la hora del clic de las direcciones URL y los vínculos en los mensajes de correo electrónico y en otras ubicaciones. Para obtener más información, vea [Vínculos seguros en Microsoft Defender para Office 365](safe-links.md).
 
-Aunque no hay ninguna directiva de vínculos seguros predeterminada, la directiva de seguridad preestablecida **de protección integrada** proporciona protección de vínculos seguros a todos los destinatarios (usuarios que no están definidos en directivas de seguridad predefinidas estándar o estrictas o de vínculos seguros personalizados). Para obtener más información, vea [Directivas de seguridad preestablecidas en EOP y Microsoft Defender para Office 365](preset-security-policies.md).
+Aunque no hay ninguna directiva de vínculos seguros predeterminada, la directiva de seguridad preestablecida **de protección integrada** proporciona protección de vínculos seguros a todos los destinatarios (usuarios que no están definidos en las directivas de seguridad preestablecidas estándar o estricta o en directivas de vínculos seguros personalizadas). Para obtener más información, vea [Directivas de seguridad preestablecidas en EOP y Microsoft Defender para Office 365](preset-security-policies.md).
 
 También puede usar los procedimientos de este artículo para crear directivas de vínculos seguros que se apliquen a usuarios, grupos o dominios específicos.
 
@@ -120,8 +120,8 @@ La creación de una directiva de vínculos seguros personalizada en el portal de
    > [!IMPORTANT]
    > Los diferentes tipos de condiciones o excepciones no son aditivos; son inclusivos. La directiva se aplica _solo_ a los destinatarios que coinciden con _todos_ los filtros de destinatarios especificados. Por ejemplo, se configura una condición de filtro de destinatario en la directiva con los siguientes valores:
    >
-   > - El destinatario es: romain@contoso.com
-   > - El destinatario es miembro de: Ejecutivos
+   > - Usuarios: romain@contoso.com
+   > - Grupos: Ejecutivos
    >
    > La directiva se aplica a romain@contoso.com _solo_ si también es miembro del grupo de Ejecutivos. Si no es miembro del grupo, la directiva no se le aplica.
    >

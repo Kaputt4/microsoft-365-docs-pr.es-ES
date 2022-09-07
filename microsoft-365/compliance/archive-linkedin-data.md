@@ -15,12 +15,12 @@ search.appverid:
 ms.collection: M365-security-compliance
 ms.custom: seo-marvel-apr2020
 description: Obtenga información sobre cómo los administradores pueden configurar & usar un conector nativo para importar datos de una página de empresa de LinkedIn a Microsoft 365.
-ms.openlocfilehash: d018237a7cd0d4171be8a9f104ee4ccd745f2228
-ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
+ms.openlocfilehash: 204d1da0a89ea0eb5afcb6b14ca2a5247093c8f5
+ms.sourcegitcommit: 651610ca73bfd1d008d97311b59782790df664fb
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/06/2022
-ms.locfileid: "66630640"
+ms.lasthandoff: 09/07/2022
+ms.locfileid: "67614558"
 ---
 # <a name="set-up-a-connector-to-archive-linkedin-data"></a>Configurar un conector para archivar datos de LinkedIn
 
@@ -58,7 +58,7 @@ Después de almacenar los datos de la página De la empresa de LinkedIn en un bu
 
 6. Seleccione la página de empresa desde la que desea archivar elementos y, a continuación, haga clic en **Siguiente**.
 
-7. En la página **Elegir ubicación de almacenamiento** , haga clic en el cuadro, seleccione la dirección de correo electrónico de un buzón de Microsoft 365 al que se importarán los elementos de LinkedIn y, a continuación, haga clic en **Siguiente**. Los elementos se importan a la carpeta bandeja de entrada de este buzón.
+7. En la página **Elegir ubicación de almacenamiento** , haga clic en el cuadro, seleccione la dirección de correo electrónico de un buzón de Microsoft 365 al que se importarán los elementos de LinkedIn y, a continuación, haga clic en **Siguiente**. Los elementos se importan a la carpeta bandeja de entrada de este buzón. El buzón usado debe tener una licencia Exchange Online plan 1 o plan 2.
 
 8. Haga clic en **Siguiente** para revisar la configuración del conector y, a continuación, haga clic en **Finalizar** para completar la configuración del conector.
 

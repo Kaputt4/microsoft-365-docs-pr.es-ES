@@ -7,7 +7,8 @@ author: denisebmsft
 manager: dansimp
 audience: Admin
 ms.topic: how-to
-ms.service: o365-administration
+ms.service: microsoft-365-business
+ms.subservice: business-premium
 ms.localizationpriority: high
 ms.date: 08/24/2022
 ms.collection:
@@ -20,12 +21,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Obtenga información sobre cómo los valores predeterminados de seguridad pueden ayudar a proteger su organización frente a ataques relacionados con la identidad proporcionando una preconfiguración de seguridad para Microsoft 365 Empresa Premium.
-ms.openlocfilehash: e054361e015f6dbfad8e6e4dd6e212814f43d552
-ms.sourcegitcommit: 2d1302a6165b83cbbc8c2df2c608d43b6b0498b0
+ms.openlocfilehash: 9eb0c4c9062a8a0ff3971f2bd8d12f600b7e22c5
+ms.sourcegitcommit: 651610ca73bfd1d008d97311b59782790df664fb
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/25/2022
-ms.locfileid: "67433496"
+ms.lasthandoff: 09/07/2022
+ms.locfileid: "67611659"
 ---
 # <a name="security-defaults-and-multi-factor-authentication"></a>Valores predeterminados de seguridad y autenticación multifactor
 

@@ -22,12 +22,12 @@ searchScope:
 appliesto:
 - Microsoft Teams
 - Microsoft 365 for frontline workers
-ms.openlocfilehash: a2c354b575436d93713bb2487c35f2dca6807f19
-ms.sourcegitcommit: f09687dbbc68347bc421d0b686625b80ff3a6b20
+ms.openlocfilehash: 84b855e34d2612aa10b1e8eaed33d584590cd424
+ms.sourcegitcommit: 651610ca73bfd1d008d97311b59782790df664fb
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/25/2022
-ms.locfileid: "67432383"
+ms.lasthandoff: 09/07/2022
+ms.locfileid: "67614184"
 ---
 # <a name="frontline-team-collaboration"></a>Colaboración de equipos de primera línea
 
@@ -202,22 +202,21 @@ Restrinja lo que hay en su equipo mediante aplicaciones. Puede permitir o bloque
 
 Los usuarios pueden agregar las aplicaciones que haya permitido a sus equipos. Comparta este aprendizaje con los usuarios para mostrarles cómo: [Buscar y usar aplicaciones](https://support.microsoft.com/office/find-and-use-apps-6e22a734-c002-4da0-ba63-681f155b142d).
 
+## <a name="communicate-over-email-with-exchange-online-and-outlook"></a>Comunicación por correo electrónico con Exchange Online y Outlook
 
-### <a name="use-viva-connections-to-create-a-personalized-experience"></a>Uso de Conexiones Viva para crear una experiencia personalizada
+Email es una herramienta de comunicación básica para la mayoría de los lugares de trabajo. [Configure el correo electrónico con Exchange Online](flw-setup-microsoft-365.md#set-up-email-with-exchange-online) para permitir que los administradores y trabajadores de primera línea se comuniquen entre sí, con los empleados de otras ubicaciones o con la sede central. Los usuarios deben tener una licencia F3 para tener un buzón de correo electrónico.
+
+También puede configurar buzones compartidos para permitir el correo entrante de los clientes (por ejemplo, para el servicio de atención al cliente o las solicitudes de programación) y tener un grupo de trabajadores que supervisen y envíen correo electrónico desde un alias de correo electrónico público como info@contoso.com. Para obtener más información sobre los buzones compartidos, vea [Acerca de los buzones compartidos](../admin/email/about-shared-mailboxes.md) y [Abrir y usar un buzón compartido en Outlook](https://support.microsoft.com/office/open-and-use-a-shared-mailbox-in-outlook-d94a8e9e-21f1-4240-808b-de9c9c088afd).
+
+## <a name="use-viva-connections-to-create-a-personalized-experience"></a>Uso de Conexiones Viva para crear una experiencia personalizada
 
 Conexiones Viva forma parte del [conjunto microsoft Viva](/viva/microsoft-viva-overview) y le permite crear una experiencia de aterrizaje personalizada en Teams. 
 
 ![Captura de pantalla del panel de Conexiones Viva en un dispositivo móvil.](media/flw-shifts-praise-tasks-approvals.png)
 
-
-Use el panel de Conexiones Viva y agregue las tarjetas Turnos, Tareas y Aprobaciones. Las tarjetas están conectadas a las aplicaciones Turnos, Tareas y Aprobaciones de Teams. El contenido de las tarjetas es dinámico y personalizado para el usuario. 
+Use el panel de Conexiones Viva y agregue las tarjetas Turnos, Tareas y Aprobaciones. Las tarjetas están conectadas a las aplicaciones Turnos, Tareas y Aprobaciones de Teams. El contenido de las tarjetas es dinámico y personalizado para el usuario.
 
 Obtenga más información sobre [cómo obtener Conexiones Viva](/viva/connections/viva-connections-overview) y [cómo crear un panel de Conexiones Viva](/viva/connections/create-dashboard). 
-
-
-
-
-
 
 ## <a name="learn-more-about-teams-capabilities-for-specific-industries"></a>Más información sobre las capacidades de Teams para sectores específicos
 

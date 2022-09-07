@@ -1,5 +1,5 @@
 ---
-title: Comience con una implementación piloto de Microsoft 365 for frontline workers
+title: Comience con una implementación piloto de Microsoft 365 para los trabajadores de primera línea
 description: Obtenga información sobre cómo ejecutar una implementación piloto para los trabajadores de primera línea de su organización.
 author: samanro
 ms.author: samanro
@@ -15,16 +15,16 @@ ms.collection:
 appliesto:
 - Microsoft Teams
 - Microsoft 365 for frontline workers
-ms.openlocfilehash: 3249de86a92d41fabe10c74701461a86e7b57ece
-ms.sourcegitcommit: 5e5c2c1f7c321b5eb1c5b932c03bdd510005de13
+ms.openlocfilehash: 27456ce239e896c5beb2f988f1c1377c68c9c10c
+ms.sourcegitcommit: 651610ca73bfd1d008d97311b59782790df664fb
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/15/2022
-ms.locfileid: "66998666"
+ms.lasthandoff: 09/07/2022
+ms.locfileid: "67614228"
 ---
-# <a name="start-with-a-pilot-deployment-of-microsoft-365-for-frontline-workers"></a>Comience con una implementación piloto de Microsoft 365 for frontline workers
+# <a name="start-with-a-pilot-deployment-of-microsoft-365-for-frontline-workers"></a>Comience con una implementación piloto de Microsoft 365 para los trabajadores de primera línea
 
-Antes de comprometerse a una implementación completa de Microsoft 365 for frontline workers en toda la organización, es una buena idea probarlo primero con un pequeño conjunto de personas reales de su organización. A partir de un programa piloto, primero puede ayudarle a identificar:
+Antes de confirmar una implementación completa de Microsoft 365 para los trabajadores de primera línea en toda la organización, es una buena idea probarla primero con un pequeño conjunto de personas reales de su organización. A partir de un programa piloto, primero puede ayudarle a identificar:
 
 - Validar la preparación del usuario.
 - Identificar y mitigar problemas.
@@ -44,7 +44,7 @@ La ejecución de un programa piloto forma parte del proceso de adopción general
 - [Habilitación de los trabajadores de primera línea con Microsoft Teams](https://adoption.microsoft.com/microsoft-teams/frontline-workers/)
 - [3 maneras de apoyar a los trabajadores de primera línea en un mundo híbrido](https://www.microsoft.com/microsoft-365/blog/2021/10/19/3-ways-to-support-frontline-workers-in-a-hybrid-world/)
 
-Se recomienda prepararse para la implementación completando esta ruta de aprendizaje de 30 minutos: [Preparación para una implementación de Teams con Microsoft 365](https://docs.microsoft.com/learn/modules/m365-teams-collab-prepare-deployment/).
+Se recomienda prepararse para la implementación completando esta ruta de aprendizaje de 30 minutos: [Preparación para una implementación de Teams con Microsoft 365](/learn/modules/m365-teams-collab-prepare-deployment/).
 
 ## <a name="steps-to-run-a-pilot-program"></a>Pasos para ejecutar un programa piloto
 
@@ -63,14 +63,14 @@ Reúna a un grupo de personas de su empresa, TI y comunidades de primera línea 
 
 A continuación, identifique la comunidad piloto de la fase 1 y asegúrese de que incluye trabajadores de primera línea reales en la agrupación lógica más pequeña de su organización. Por ejemplo, un restaurante, una división de una tienda departamental, una tienda, una sala clínica, un recinto, una planta, un centro de distribución, etc. La clave es optimizar en torno al promedio de trabajadores de primera línea que forman parte solo de un equipo. Los gerentes o especialistas pueden estar en más de uno.
 
-![Símbolo de cinta de procedimientos recomendados.](https://docs.microsoft.com/office/media/icons/best-practices-teams.png) **Procedimiento recomendado**  
+![Símbolo de cinta de procedimientos recomendados.](/office/media/icons/best-practices-teams.png) **Procedimiento recomendado**  
 
 Es importante incluir todos los roles dentro de esa agrupación lógica más pequeña, desde administradores a trabajadores a tiempo parcial o trabajadores estacionales para descubrir información valiosa y habilitar escenarios de comunicación modernos. ¡Tu personal más joven te sorprenderá! Algunos escenarios valiosos clave encantadores e imprevistos descubiertos durante los pilotos con clientes de ejemplo incluyen:
 
 - Expectativas estandarizadas y entrenamiento: Tomar una foto de una estufa limpia para ilustrar al personal de cocina lo que significa limpiar. "Si no tiene este aspecto, entonces no está limpio!"
 - Reducción de la reducción: tomar una foto de un vendedor conocido y notificar a otros empleados inmediatamente. Los equipos de turnos futuros también verán esta imagen para mitigar el riesgo futuro.
 
-![Símbolo de gráfico de proceso/flujo.](https://docs.microsoft.com/office/media/icons/process-flow-teams.png) **Puntos de decisión:**
+![Símbolo de gráfico de proceso/flujo.](/office/media/icons/process-flow-teams.png) **Puntos de decisión:**
 
 Al final de esta fase, debería poder responder a estas preguntas:
 
@@ -100,7 +100,7 @@ Use una encuesta previa a la prueba piloto para hacer un inventario de las herra
 
 En Chat en móvil, puede tener el diseño de chat tradicional normal para Teams o un diseño que incluya canales favoritos en Chat. Esta segunda interfaz de usuario simplificada funciona bien para los trabajadores de primera línea que solo están en un equipo y es el procedimiento recomendado. La configuración de "Mostrar canales favoritos en el chat" también crea una oportunidad para quitar el botón "Teams" de la directiva de configuración de la aplicación de trabajo de primera línea para simplificar aún más la experiencia del usuario final sin perder funcionalidad. Para los usuarios que estarán en varios equipos, no se recomienda. Afortunadamente, esto se puede configurar por usuario y aumentar la sofisticación según sea necesario.
 
-![Símbolo de cinta de procedimientos recomendados.](https://docs.microsoft.com/office/media/icons/best-practices-teams.png) **Procedimiento recomendado**  
+![Símbolo de cinta de procedimientos recomendados.](/office/media/icons/best-practices-teams.png) **Procedimiento recomendado**  
 
 Configure la fase 1 de la experiencia de Teams de primera línea para imitar las herramientas de consumidor que estos usuarios ya usan. Se recomienda iniciar el piloto para los trabajadores de primera línea con "Mostrar canales favoritos en chat" para comunicaciones simplificadas y turnos (opcional).
 
@@ -108,7 +108,7 @@ Configure la fase 1 de la experiencia de Teams de primera línea para imitar las
 |---------------|------------------|
 |:::image type="content" source="media/firstline-worker-chat-with-shifts.png" alt-text="Captura de pantalla de la pantalla del teléfono con los turnos agregados":::    |:::image type="content" source="media/firstline-worker-chat-without-shifts.png" alt-text="Captura de pantalla de la pantalla del teléfono sin cambios agregados":::|
 
-![Símbolo de gráfico de proceso/flujo.](https://docs.microsoft.com/office/media/icons/process-flow-teams.png) **Puntos de decisión:**
+![Símbolo de gráfico de proceso/flujo.](/office/media/icons/process-flow-teams.png) **Puntos de decisión:**
 
 - ¿Qué funcionalidades estarán en la fase 1 del piloto para los trabajadores de primera línea?
 - ¿Los trabajadores de primera línea necesitan turnos?
@@ -124,7 +124,7 @@ Cuando haya configurado y configurado todos los demás servicios que necesita, p
 
 #### <a name="use-the-frontline-worker-onboarding-wizard-to-kick-off-your-pilot"></a>Uso del asistente de incorporación de Frontline Worker para iniciar el piloto
 
-El Asistente para la incorporación de frontline worker en el Centro de administración de Microsoft 365 simplifica la incorporación de trabajadores de primera línea a su organización. Use el asistente para iniciar el piloto e implementar rápidamente una experiencia en Teams adaptada a su personal de primera línea.
+El Asistente para la incorporación de un trabajador de primera línea en el Centro de administración de Microsoft 365 simplifica la incorporación de trabajadores de primera línea a su organización. Use el asistente para iniciar el piloto e implementar rápidamente una experiencia en Teams adaptada a su personal de primera línea.
 
 Consulte este breve vídeo para obtener información general sobre cómo ejecutar el asistente para poner en funcionamiento el personal de primera línea.
 
@@ -134,14 +134,14 @@ El asistente configura un equipo para los trabajadores de primera línea y asign
 
 El asistente está disponible para todas las organizaciones que tengan al menos una [licencia F](https://www.microsoft.com/microsoft-365/enterprise/frontline). Puede ejecutar el asistente tantas veces como necesite para implementar Teams en el personal de primera línea en diferentes ubicaciones o sitios de la organización.
 
-Para obtener instrucciones paso a paso, consulte [Uso del Asistente para la incorporación](flw-onboarding-wizard.md) de trabajadores de primera línea para poner en funcionamiento el personal de primera línea.
+Para obtener instrucciones paso a paso, consulte [Uso del Asistente para la incorporación de trabajadores de primera línea para poner en funcionamiento el personal de primera línea](flw-onboarding-wizard.md).
 
-![Símbolo de gráfico de proceso/flujo.](https://docs.microsoft.com/office/media/icons/process-flow-teams.png) **Puntos de decisión:**
+![Símbolo de gráfico de proceso/flujo.](/office/media/icons/process-flow-teams.png) **Puntos de decisión:**
 
 - ¿Cuántos canales o temas de conversación desea para el piloto?
 - ¿Qué temas se sienten adecuados para sus escenarios?
 
-![Símbolo de cinta de procedimientos recomendados.](https://docs.microsoft.com/office/media/icons/best-practices-teams.png) **Procedimiento recomendado**  
+![Símbolo de cinta de procedimientos recomendados.](/office/media/icons/best-practices-teams.png) **Procedimiento recomendado**  
 
 **Mantenga los canales simples**. Se recomienda resistir la necesidad de crear un canal para cada posible tema de conversación y, en su lugar, mantener las cosas muy simples. No pasa nada si los canales se crean con el tiempo según sea necesario.
 
@@ -157,7 +157,7 @@ Una vez que haya configurado Teams y haya creado sus equipos y canales, puede co
 
 Informe a los trabajadores de primera línea de su participación en el piloto, los objetivos piloto y proporcione formación, si es necesario, sobre las funciones básicas. Para la mayoría de los clientes, esto puede ser una sencilla instrucción para estos usuarios para ir a Google Play o Apple Store en sus dispositivos móviles personales, descargar la aplicación Microsoft Teams e iniciar sesión con sus credenciales de empresa. Hemos diseñado Microsoft Teams con una interfaz sencilla y fácil de usar que la mayoría de los trabajadores de primera línea deben encontrar intuitiva.
 
-![Símbolo de cinta de procedimientos recomendados.](https://docs.microsoft.com/office/media/icons/best-practices-teams.png) **Procedimiento recomendado**  
+![Símbolo de cinta de procedimientos recomendados.](/office/media/icons/best-practices-teams.png) **Procedimiento recomendado**  
 
 ¡No olvide entrenar a sus gerentes en turnos! Si va a incluir turnos en el piloto, asegúrese de llevar a cabo una sesión de entrenamiento independiente con los administradores sobre cómo crear, administrar y publicar programaciones en su equipo. Si desea materiales de entrenamiento y plantillas de comunicación adicionales, puede encontrarlos en el piloto de primera línea en una caja.
 
@@ -165,7 +165,7 @@ Informe a los trabajadores de primera línea de su participación en el piloto, 
 
 Capacitar a los trabajadores de primera línea es más acerca de las personas que de la tecnología. Para comprender el impacto de Teams, concentrarse en la experiencia de los trabajadores de primera línea. Sonéctelos antes, durante y después del piloto para comprender sus necesidades, puntos de dolor y reacciones. Si va a iterar el piloto y agregar nuevas características con el tiempo, estos comentarios pueden ayudar a guiar el orden, el ritmo o incluso si se necesitan características adicionales. Con el fin de ayudarle a evaluar el éxito de su piloto, puede encontrarlos en su piloto de primera línea en una caja.
 
-![Símbolo de cinta de procedimientos recomendados.](https://docs.microsoft.com/office/media/icons/best-practices-teams.png) **Procedimiento recomendado**  
+![Símbolo de cinta de procedimientos recomendados.](/office/media/icons/best-practices-teams.png) **Procedimiento recomendado**  
 
 **Nutre a sus campeones y resalte sus victorias**. Recompense a sus trabajadores de primera línea por adoptar estas nuevas herramientas y usarlas de maneras innovadoras relacionadas con los resultados empresariales de su empresa. Esto, por encima de todo, garantizará la adopción continua de Teams y el valor para su empresa.
 

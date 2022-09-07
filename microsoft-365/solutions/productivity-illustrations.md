@@ -13,12 +13,12 @@ ms.collection:
 - M365-security-compliance
 ms.custom: ''
 f1.keywords: NOCSH
-ms.openlocfilehash: 511e1d69ada1281592ddfe3a840ad4a0e057365d
-ms.sourcegitcommit: d3ef9391f621e8f4ca70661184b3bb82c6cbda94
+ms.openlocfilehash: 2935b54d6be6f68833f018c1e0710db3e71a1d51
+ms.sourcegitcommit: 651610ca73bfd1d008d97311b59782790df664fb
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/02/2022
-ms.locfileid: "67577351"
+ms.lasthandoff: 09/07/2022
+ms.locfileid: "67611156"
 ---
 # <a name="microsoft-365-productivity-illustrations"></a>Ilustraciones de productividad de Microsoft 365
 
@@ -30,6 +30,17 @@ La arquitectura lógica de los servicios de productividad en Microsoft 365, una 
 | Elemento | Descripción |
 |:-----|:-----|
 |[![Póster de arquitectura lógica de Teams.](../downloads/msft-teams-logical-architecture-thumb.png)](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/downloads/msft-m365-teams-logical-architecture.pdf) <br/> [PDF](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/downloads/msft-m365-teams-logical-architecture.pdf) \| [Visio](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/downloads/msft-m365-teams-logical-architecture.vsdx)  <br>Actualizado en enero de 2021   |Microsoft proporciona un conjunto de servicios de productividad que funcionan en conjunto para proporcionar experiencias de colaboración con funcionalidades de gobierno, seguridad y cumplimiento. <br/> <br/>Esta serie de ilustraciones proporciona una vista de la arquitectura lógica de los servicios de productividad para arquitectos empresariales, que es una de las más destacadas gracias a Microsoft Teams.|
+
+## <a name="microsoft-365-for-frontline-workers-scenarios"></a>escenarios de Microsoft 365 for frontline workers
+Microsoft 365 para trabajadores de primera línea puede ayudarle a conectar e interactuar con su personal, mejorar la administración del personal y aumentar la eficiencia operativa. Puede usar las funcionalidades incluidas con Microsoft 365 para trabajadores de primera línea, desde Microsoft Teams, a SharePoint, Conexiones Viva, Yammer y Power Platform, o bien agregar soluciones de nuestros asociados en el ecosistema digital para conectarse a sistemas existentes o crear soluciones personalizadas para su empresa.
+
+Use los siguientes pósteres para empezar a imaginar lo que su organización puede hacer con Microsoft 365 for frontline workers.
+
+| Elemento | Descripción |
+|:-----|:-----|
+|[![Microsoft 365 para escenarios de trabajo de primera línea.](/microsoft-365/frontline/media/m365-frontline-scenarios-thumb.png)](https://go.microsoft.com/fwlink/?linkid=2206713) <br/> [PDF](https://go.microsoft.com/fwlink/?linkid=2206713) \| [Visio](https://go.microsoft.com/fwlink/?linkid=2206386)  <br>Actualizado en septiembre de 2022   |Este póster proporciona información general sobre los escenarios que puede implementar para que los empleados de primera línea aumenten las comunicaciones, mejoren el bienestar y la participación, entrenen e incorporen a sus trabajadores y administren sus plantillas y operaciones.<br/><br/>**Guías de soluciones relacionadas** <br/> <ul><li>[Microsoft 365 para trabajadores de primera línea](/microsoft-365/frontline/flw-overview)|
+|[![Microsoft 365 for frontline workers: escenarios de atención sanitaria.](/microsoft-365/frontline/media/m365-frontline-healthcare-thumb.png)](https://go.microsoft.com/fwlink/?linkid=2206475) <br/> [PDF](https://go.microsoft.com/fwlink/?linkid=2206475) \| [Visio](https://go.microsoft.com/fwlink/?linkid=2206474)  <br>Actualizado en septiembre de 2022   |Este póster proporciona información general sobre los escenarios que puede implementar para el personal de primera línea en un entorno de atención sanitaria.<br/><br/>**Guías de soluciones relacionadas** <br/> <ul><li>[Introducción a Microsoft 365 para organizaciones sanitarias](/microsoft-365/frontline/teams-in-hc)|
+|[![Microsoft 365 for frontline workers: Escenarios comerciales.](/microsoft-365/frontline/media/m365-frontline-retail-thumb.png)](https://go.microsoft.com/fwlink/?linkid=2206476) <br/> [PDF](https://go.microsoft.com/fwlink/?linkid=2206476) \| [Visio](https://go.microsoft.com/fwlink/?linkid=2206271)  <br>Actualizado en septiembre de 2022   |Este póster proporciona información general sobre los escenarios que puede implementar para los empleados de primera línea en una configuración comercial.<br/><br/>**Guías de soluciones relacionadas** <br/> <ul><li>[Introducción a Microsoft 365 para organizaciones minoristas](/microsoft-365/frontline/teams-for-retail-landing-page)|
 
 ## <a name="corporate-communications-with-microsoft-365--a-contoso-case-study"></a>Comunicaciones corporativas con Microsoft 365: un caso práctico de Contoso
 La participación de los empleados es un factor importante para la satisfacción, retención y productividad en el lugar de trabajo en cualquier organización. En Microsoft 365, hay varias maneras de comunicarse e interactuar con el público. 

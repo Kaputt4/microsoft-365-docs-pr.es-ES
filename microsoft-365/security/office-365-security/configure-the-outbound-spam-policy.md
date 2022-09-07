@@ -19,12 +19,12 @@ ms.custom:
 description: Los administradores pueden aprender a ver, crear, modificar y eliminar directivas de correo no deseado saliente en Exchange Online Protection (EOP).
 ms.subservice: mdo
 ms.service: microsoft-365-security
-ms.openlocfilehash: f26f2f1056b17725761181e5b606bafcd421c923
-ms.sourcegitcommit: 10e6abe740e27000e223378eb17d657a47555fa8
+ms.openlocfilehash: 03b6769e91ce667cafe2318a5ea4a7a44550bc67
+ms.sourcegitcommit: 651610ca73bfd1d008d97311b59782790df664fb
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/31/2022
-ms.locfileid: "67481226"
+ms.lasthandoff: 09/07/2022
+ms.locfileid: "67613480"
 ---
 # <a name="configure-outbound-spam-filtering-in-eop"></a>Configuración del filtrado de correo no deseado saliente en EOP
 
@@ -119,8 +119,8 @@ La creación de una directiva de correo no deseado de salida personalizada en el
    > [!IMPORTANT]
    > Los diferentes tipos de condiciones o excepciones no son aditivos; son inclusivos. La directiva se aplica _solo_ a los destinatarios que coinciden con _todos_ los filtros de destinatarios especificados. Por ejemplo, se configura una condición de filtro de destinatario en la directiva con los siguientes valores:
    >
-   > - El destinatario es: romain@contoso.com
-   > - El destinatario es miembro de: Ejecutivos
+   > - Usuarios: romain@contoso.com
+   > - Grupos: Ejecutivos
    >
    > La directiva se aplica a romain@contoso.com _solo_ si también es miembro del grupo de Ejecutivos. Si no es miembro del grupo, la directiva no se le aplica.
    >

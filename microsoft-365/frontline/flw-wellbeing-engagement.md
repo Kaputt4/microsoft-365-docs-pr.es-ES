@@ -22,12 +22,12 @@ searchScope:
 appliesto:
 - Microsoft Teams
 - Microsoft 365 for frontline workers
-ms.openlocfilehash: 14cde97d085faf859b5f096ed708d72cdc2ae8f0
-ms.sourcegitcommit: 5e5c2c1f7c321b5eb1c5b932c03bdd510005de13
-ms.translationtype: HT
+ms.openlocfilehash: 1197cc585f5725cf3569699d23d01ebf1894e2dc
+ms.sourcegitcommit: 651610ca73bfd1d008d97311b59782790df664fb
+ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/15/2022
-ms.locfileid: "66998516"
+ms.lasthandoff: 09/07/2022
+ms.locfileid: "67614162"
 ---
 # <a name="engage-your-frontline-workers-and-focus-on-wellbeing"></a>Interactúe con su personal de primera línea y céntrese en el bienestar
 
@@ -63,7 +63,7 @@ Conexiones Viva consta de tres componentes principales que se pueden configurar
 |Componente |Descripción |Capacidades |
 |:---------|:-----------|:------------|
 |Panel |El Panel es el conjunto de herramientas digital de su empleado y permite el acceso rápido a tareas populares. |Dé prioridad a las tarjetas que ayudan al personal de primera línea a realizar tareas populares, como registrar el ingreso y la salida, o ver las tareas asignadas. Las tarjetas se pueden destinar a distintos roles y regiones. |
-|Fuente |La Fuente agrega contenido de Yammer, noticias de SharePoint y Stream para mostrar una secuencia de noticias personalizada. |El contenido de la Fuente se agrega automáticamente en función de los sitios y las comunidades de Yammer que sigue el usuario. El contenido se puede priorizar para mostrarse de forma más destacada en la fuente. |
+|Fuente |La Fuente agrega contenido de Yammer, noticias de SharePoint y Stream para mostrar una secuencia de noticias personalizada. |El contenido de la Fuente se agrega automáticamente en función de los sitios y las comunidades de Yammer que sigue el usuario. El contenido se puede priorizar para mostrarse de forma más destacada en la fuente. Use la segmentación de audiencia para mostrar contenido a audiencias específicas. |
 |Recursos |La superficie de Recursos muestra vínculos a portales populares de SharePoint y otro contenido. |Los recursos se heredan de la navegación global en SharePoint. Se muestran vínculos a portales populares de SharePoint, como recursos de aprendizaje y ventajas de RR. HH. Los portales modernos de SharePoint se mostrarán en Teams para proporcionar la mejor experiencia de visualización posible. |
 
 Hay varias maneras de usar Conexiones Viva para comunicarse con los empleados. Conexiones Viva incluye una [Fuente donde se agregan y muestran noticias, contenido de Yammer y vídeos](/viva/connections/viva-connections-overview#viva-connections-feed) en una vista personalizada basada en los sitios y comunidades que sigue el espectador. El [Panel](/viva/connections/create-dashboard) también se puede usar para resaltar determinadas tarjetas que se vinculan a fuentes de noticias importantes.
@@ -87,7 +87,7 @@ La creación de canales para que el personal de primera línea comparta comentar
 El personal de primera línea necesita un soporte adicional a la hora de administrar su salud y bienestar. No solo sus trabajos son acelerados, sino que también pueden ser exigentes desde el punto de vista físico y emocional.
 
 - **En el Panel**: incluya revisiones de salud diarias, avisos de bienestar y [otras soluciones de terceros que mantienen a las personas conectadas y productivas](https://cloudpartners.transform.microsoft.com/resources/viva-app-integration).
-- **En la Fuente**: use [publicaciones de noticias de SharePoint](https://support.microsoft.com/office/create-and-share-news-on-your-sharepoint-sites-495f8f1a-3bef-4045-b33a-55e5abe7aed7#:~:text=In%20SharePoint%20Online%2C%20you%20can%20add%20news%20posts,instructions%20Create%20the%20news%20post%20.%20See%20More) y [Vínculos de noticias de vídeo](/viva/connections/video-news-links) para destacar los recursos de salud y bienestar.
+- **En la Fuente**: use [publicaciones de noticias de SharePoint](https://support.microsoft.com/office/create-and-share-news-on-your-sharepoint-sites-495f8f1a-3bef-4045-b33a-55e5abe7aed7#:~:text=In%20SharePoint%20Online%2C%20you%20can%20add%20news%20posts,instructions%20Create%20the%20news%20post%20.%20See%20More) y [Vínculos de noticias de vídeo](/viva/connections/video-news-links) para destacar los recursos de salud y bienestar. Puedes usar la segmentación de audiencia para asegurarte de que las publicaciones lleguen a las personas más relevantes.
 - **En Recursos**: incluya vínculos a los recursos de salud y bienestar para que los trabajadores puedan acceder a ellos en cualquier momento.
 
 ### <a name="create-a-supportive-digital-ecosystem"></a>Creación de un ecosistema digital de apoyo
@@ -146,7 +146,7 @@ Si su organización ya usa Microsoft Teams, es posible que haya grabado algunas
 
 Una vez que se graba y guarda una reunión en SharePoint, el equipo de comunicaciones corporativas puede [agregar una tarjeta en Conexiones Viva](/viva/connections/create-dashboard#create-a-dashboard-and-add-cards) para que sea fácilmente accesible para el equipo de primera línea.
 
-### <a name="host-live-events-and-share-content-on-microsoft-stream"></a>Hospedar eventos en directo y compartir contenido en Microsoft Stream
+### <a name="host-live-events-and-share-video-content-on-microsoft-stream"></a>Hospedar eventos en directo y compartir contenido de vídeo en Microsoft Stream
 
 Microsoft Stream es la propia plataforma de streaming de vídeo de su organización. Con Stream, cualquier usuario de su organización puede grabar y cargar vídeos para compartirlos. Entre las formas de usar Stream para interactuar con el personal de primera línea se incluyen las siguientes:
 

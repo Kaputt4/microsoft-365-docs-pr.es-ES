@@ -7,7 +7,8 @@ author: denisebmsft
 manager: dansimp
 audience: Admin
 ms.topic: how-to
-ms.service: o365-administration
+ms.service: microsoft-365-business
+ms.subservice: business-premium
 ms.localizationpriority: medium
 ms.date: 07/19/2022
 ms.custom:
@@ -16,12 +17,12 @@ search.appverid:
 - BCS160
 - MET150
 description: Obtenga información sobre cómo validar la configuración de protección de aplicaciones Microsoft 365 Empresa Premium en los dispositivos Android o iOS. La configuración de seguridad de las aplicaciones es fundamental para proteger los archivos de las aplicaciones móviles y los dispositivos frente a cualquier tipo de amenaza de seguridad.
-ms.openlocfilehash: 36a67f999cb9b4476f3757daa6033e6409b49c1a
-ms.sourcegitcommit: c1eaea74c8ffce2f9f477c9469342e88e4a70c14
+ms.openlocfilehash: 32a9e22751474acabe1cab24cc7dcc35b2879383
+ms.sourcegitcommit: 651610ca73bfd1d008d97311b59782790df664fb
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/20/2022
-ms.locfileid: "66893823"
+ms.lasthandoff: 09/07/2022
+ms.locfileid: "67611703"
 ---
 # <a name="validate-app-protection-settings-on-android-or-ios-devices"></a>Validación de la configuración de protección de aplicaciones en dispositivos Android o iOS
 

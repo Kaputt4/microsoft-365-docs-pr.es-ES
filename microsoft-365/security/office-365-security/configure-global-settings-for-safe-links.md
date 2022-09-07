@@ -19,12 +19,12 @@ ms.custom: ''
 description: Los administradores pueden aprender a ver y configurar la configuración global (la lista "Bloquear las siguientes direcciones URL" y la protección para aplicaciones de Office 365) para vínculos seguros en Microsoft Defender para Office 365.
 ms.subservice: mdo
 ms.service: microsoft-365-security
-ms.openlocfilehash: fb9e5159b4bee43d7e376af569151293aefd20f0
-ms.sourcegitcommit: 10e6abe740e27000e223378eb17d657a47555fa8
+ms.openlocfilehash: ed217c73b626d2b6320c1f5b6d391545f5854015
+ms.sourcegitcommit: 651610ca73bfd1d008d97311b59782790df664fb
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/31/2022
-ms.locfileid: "67481160"
+ms.lasthandoff: 09/07/2022
+ms.locfileid: "67613129"
 ---
 # <a name="configure-global-settings-for-safe-links-in-microsoft-defender-for-office-365"></a>Configuración global de vínculos seguros en Microsoft Defender para Office 365
 
@@ -49,7 +49,7 @@ Puede configurar los valores globales de Vínculos seguros en el portal de Micro
 
 ## <a name="what-do-you-need-to-know-before-you-begin"></a>¿Qué necesita saber antes de empezar?
 
-- Aunque no hay ninguna directiva de vínculos seguros predeterminada, la directiva de seguridad preestablecida **de protección integrada** proporciona protección de vínculos seguros a todos los destinatarios (usuarios que no están definidos en directivas de vínculos seguros personalizadas o directivas de seguridad preestablecidas estándar o estricta). Para obtener más información, vea [Directivas de seguridad preestablecidas en EOP y Microsoft Defender para Office 365](preset-security-policies.md). También puede crear directivas de vínculos seguros para aplicarlas a usuarios, grupos o dominios específicos. Para obtener instrucciones, consulte [Configuración de directivas de vínculos seguros en Microsoft Defender para Office 365](set-up-safe-links-policies.md).
+- Aunque no hay ninguna directiva de vínculos seguros predeterminada, la directiva de seguridad preestablecida **de protección integrada** proporciona protección de vínculos seguros a todos los destinatarios (usuarios que no están definidos en las directivas de seguridad preestablecidas estándar o estricta o en directivas de vínculos seguros personalizadas). Para obtener más información, vea [Directivas de seguridad preestablecidas en EOP y Microsoft Defender para Office 365](preset-security-policies.md). También puede crear directivas de vínculos seguros para aplicarlas a usuarios, grupos o dominios específicos. Para obtener instrucciones, consulte [Configuración de directivas de vínculos seguros en Microsoft Defender para Office 365](set-up-safe-links-policies.md).
 
 - Abra el portal de Microsoft 365 Defender en <https://security.microsoft.com>. Para ir directamente a la página **Vínculos seguros** , use <https://security.microsoft.com/safelinksv2>.
 

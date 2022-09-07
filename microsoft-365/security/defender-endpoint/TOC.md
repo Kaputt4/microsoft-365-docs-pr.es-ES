@@ -258,6 +258,7 @@
 ###### [Habilitar reglas de la reducción de la superficie expuesta a ataques (ASR)](attack-surface-reduction-rules-deployment-implement.md)
 ###### [Operacionar reglas de reducción de la superficie expuesta a ataques (ASR)](attack-surface-reduction-rules-deployment-operationalize.md)
 ##### [Referencia de reglas de reducción de la superficie expuesta a ataques (ASR)](attack-surface-reduction-rules-reference.md)
+##### [Informe de reglas de reducción de superficie expuesta a ataques](attack-surface-reduction-rules-report.md)
 ##### [Solucionar de problemas de reglas de reducción de la superficie expuesta a ataques (ASR)](troubleshoot-asr-rules.md)
 ##### [Habilitar métodos de configuración alternativos de reglas de ASR](enable-attack-surface-reduction.md)
 #### [Preguntas más frecuentes sobre la reducción de la superficie expuesta a ataques](attack-surface-reduction-faq.yml)

@@ -7,7 +7,8 @@ author: denisebmsft
 manager: dansimp
 audience: Admin
 ms.topic: how-to
-ms.service: o365-administration
+ms.service: microsoft-365-business
+ms.subservice: business-premium
 ms.localizationpriority: medium
 ms.collection:
 - Adm_O365
@@ -27,12 +28,12 @@ search.appverid:
 - MET150
 ms.assetid: fae8819d-7235-495f-9f07-d016f545887f
 description: Obtenga información sobre cómo comprobar que Microsoft 365 Empresa Premium configuración de protección de aplicaciones surtió efecto en los dispositivos Windows 10 de los usuarios.
-ms.openlocfilehash: fe91d0b1588d860ee510f2542bc3f11a8cf2812a
-ms.sourcegitcommit: d1b60ed9a11f5e6e35fbaf30ecaeb9dfd6dd197d
+ms.openlocfilehash: bab1eea1bff77d559e160b8c363ad7c0a91b4100
+ms.sourcegitcommit: 651610ca73bfd1d008d97311b59782790df664fb
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/29/2022
-ms.locfileid: "66486838"
+ms.lasthandoff: 09/07/2022
+ms.locfileid: "67614272"
 ---
 # <a name="validate-device-protection-settings-for-windows-10-or-11-pcs"></a>Validación de la configuración de protección de dispositivos para Windows 10 o 11 equipos
 

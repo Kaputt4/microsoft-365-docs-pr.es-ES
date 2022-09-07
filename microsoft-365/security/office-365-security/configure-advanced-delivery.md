@@ -17,12 +17,12 @@ ms.custom: ''
 description: Los administradores pueden aprender a usar la directiva de entrega avanzada en Exchange Online Protection (EOP) para identificar los mensajes que no se deben filtrar en escenarios admitidos específicos (simulaciones de suplantación de identidad de terceros y mensajes entregados a buzones de operaciones de seguridad (SecOps).
 ms.subservice: mdo
 ms.service: microsoft-365-security
-ms.openlocfilehash: 82d1f38430769b00cdb8fc5cc7c9cd02884f66d1
-ms.sourcegitcommit: 10e6abe740e27000e223378eb17d657a47555fa8
+ms.openlocfilehash: 8f779a3f26fe1c5570ce89cf4d42b76f997faeb1
+ms.sourcegitcommit: 651610ca73bfd1d008d97311b59782790df664fb
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/31/2022
-ms.locfileid: "67483000"
+ms.lasthandoff: 09/07/2022
+ms.locfileid: "67613041"
 ---
 # <a name="configure-the-delivery-of-third-party-phishing-simulations-to-users-and-unfiltered-messages-to-secops-mailboxes"></a>Configurar la entrega de simulaciones de suplantación de identidad de terceros a usuarios y mensajes sin filtrar a buzones de SecOps
 
@@ -333,7 +333,7 @@ La configuración de una simulación de suplantación de identidad de terceros e
 
 #### <a name="step-1-use-powershell-to-create-the-phishing-simulation-override-policy"></a>Paso 1: Uso de PowerShell para crear la directiva de invalidación de simulación de suplantación de identidad
 
-En [Exchange Online PowerShell](/powershell/exchange/connect-to-exchange-online-powershell), en este ejemplo se crea la directiva de invalidación de simulación de phishing.
+En [Security & Compliance PowerShell](/powershell/exchange/connect-to-scc-powershell), en este ejemplo se crea la directiva de invalidación de simulación de suplantación de identidad (phishing).
 
 ```powershell
 New-PhishSimOverridePolicy -Name PhishSimOverridePolicy
@@ -345,7 +345,7 @@ Para obtener información detallada sobre la sintaxis y los parámetros, consult
 
 #### <a name="step-2-use-powershell-to-create-the-phishing-simulation-override-rule"></a>Paso 2: Uso de PowerShell para crear la regla de invalidación de simulación de suplantación de identidad
 
-En [Exchange Online PowerShell](/powershell/exchange/connect-to-exchange-online-powershell), use la sintaxis siguiente:
+En [PowerShell de cumplimiento de seguridad &](/powershell/exchange/connect-to-scc-powershell), use la sintaxis siguiente:
 
 ```powershell
 New-PhishSimOverrideRule -Name PhishSimOverrideRule -Policy PhishSimOverridePolicy -Domains <Domain1>,<Domain2>,...<Domain10> -SenderIpRanges <IPAddressEntry1>,<IPAddressEntry2>,...<IPAddressEntry10>
@@ -387,7 +387,7 @@ Para obtener información detallada sobre la sintaxis y los [parámetros, vea Ne
 
 ### <a name="use-powershell-to-view-the-phishing-simulation-override-policy"></a>Uso de PowerShell para ver la directiva de invalidación de simulación de suplantación de identidad
 
-En [Exchange Online PowerShell](/powershell/exchange/connect-to-exchange-online-powershell), este ejemplo devuelve información detallada sobre la única directiva de invalidación de simulación de suplantación de identidad (phishing).
+En [PowerShell de cumplimiento de seguridad &](/powershell/exchange/connect-to-scc-powershell), en este ejemplo se devuelve información detallada sobre la única directiva de invalidación de simulación de suplantación de identidad (phishing).
 
 ```powershell
 Get-PhishSimOverridePolicy
@@ -397,7 +397,7 @@ Para obtener información detallada sobre la sintaxis y los parámetros, consult
 
 ### <a name="use-powershell-to-view-phishing-simulation-override-rules"></a>Uso de PowerShell para ver las reglas de invalidación de simulación de suplantación de identidad
 
-En [Exchange Online PowerShell](/powershell/exchange/connect-to-exchange-online-powershell), este ejemplo devuelve información detallada sobre las reglas de invalidación de simulación de suplantación de identidad (phishing).
+En [Security & Compliance PowerShell](/powershell/exchange/connect-to-scc-powershell), este ejemplo devuelve información detallada sobre las reglas de invalidación de simulación de suplantación de identidad (phishing).
 
 ```powershell
 Get-PhishSimOverrideRule
@@ -427,7 +427,7 @@ Para obtener información detallada sobre la sintaxis y los [parámetros, vea Ge
 
 ### <a name="use-powershell-to-modify-the-phishing-simulation-override-policy"></a>Uso de PowerShell para modificar la directiva de invalidación de simulación de suplantación de identidad
 
-En [Exchange Online PowerShell](/powershell/exchange/connect-to-exchange-online-powershell), use la sintaxis siguiente:
+En [PowerShell de cumplimiento de seguridad &](/powershell/exchange/connect-to-scc-powershell), use la sintaxis siguiente:
 
 ```powershell
 Set-PhishSimOverridePolicy -Identity PhishSimOverridePolicy [-Comment "<DescriptiveText>"] [-Enabled <$true | $false>]
@@ -443,7 +443,7 @@ Para obtener información detallada sobre la sintaxis y los parámetros, consult
 
 ### <a name="use-powershell-to-modify-phishing-simulation-override-rules"></a>Uso de PowerShell para modificar las reglas de invalidación de simulación de suplantación de identidad
 
-En [Exchange Online PowerShell](/powershell/exchange/connect-to-exchange-online-powershell), use la sintaxis siguiente:
+En [PowerShell de cumplimiento de seguridad &](/powershell/exchange/connect-to-scc-powershell), use la sintaxis siguiente:
 
 ```powershell
 Set-PhishSimOverrideRule -Identity PhishSimOverrideRulea0eae53e-d755-4a42-9320-b9c6b55c5011 [-Comment "<DescriptiveText>"] [-AddSenderDomainIs <DomainEntry1>,<DomainEntry2>,...<DomainEntryN>] [-RemoveSenderDomainIs <DomainEntry1>,<DomainEntry2>,...<DomainEntryN>] [-AddSenderIpRanges <IPAddressEntry1>,<IPAddressEntry2>,...<IPAddressEntryN>] [-RemoveSenderIpRanges <IPAddressEntry1>,<IPAddressEntry2>,...<IPAddressEntryN>]
@@ -484,7 +484,7 @@ Para obtener información detallada sobre la sintaxis y los [parámetros, vea Se
 
 ### <a name="use-powershell-to-remove-a-phishing-simulation-override-policy"></a>Uso de PowerShell para quitar una directiva de invalidación de simulación de suplantación de identidad
 
-En [Exchange Online PowerShell](/powershell/exchange/connect-to-exchange-online-powershell), en este ejemplo se quita la directiva de invalidación de simulación de suplantación de identidad (phishing) y la regla correspondiente.
+En [Security & Compliance PowerShell](/powershell/exchange/connect-to-scc-powershell), en este ejemplo se quita la directiva de invalidación de simulación de suplantación de identidad (phishing) y la regla correspondiente.
 
 ```powershell
 Remove-PhishSimOverridePolicy -Identity PhishSimOverridePolicy
@@ -494,7 +494,7 @@ Para obtener información detallada sobre la sintaxis y los parámetros, consult
 
 ### <a name="use-powershell-to-remove-phishing-simulation-override-rules"></a>Uso de PowerShell para quitar reglas de invalidación de simulación de suplantación de identidad
 
-En [Exchange Online PowerShell](/powershell/exchange/connect-to-exchange-online-powershell), use la sintaxis siguiente:
+En [PowerShell de cumplimiento de seguridad &](/powershell/exchange/connect-to-scc-powershell), use la sintaxis siguiente:
 
 ```powershell
 Remove-PhishSimOverrideRule -Identity <RuleIdentity>

@@ -17,12 +17,12 @@ ms.custom:
 description: Los administradores pueden obtener información sobre las directivas contra phishing que están disponibles en Exchange Online Protection (EOP) y Microsoft Defender para Office 365.
 ms.subservice: mdo
 ms.service: microsoft-365-security
-ms.openlocfilehash: c543bcfc7c69487055ccd7aa374afd4a08f90866
-ms.sourcegitcommit: ecc04b5b8f84b34255a2d5e90b5ab596af0d16c7
+ms.openlocfilehash: 1833f5394b5604685aad63b42c6623b6efc125b5
+ms.sourcegitcommit: 651610ca73bfd1d008d97311b59782790df664fb
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/01/2022
-ms.locfileid: "67495870"
+ms.lasthandoff: 09/07/2022
+ms.locfileid: "67613458"
 ---
 # <a name="anti-phishing-policies-in-microsoft-365"></a>Directivas contra suplantación de identidad en Microsoft 365
 
@@ -89,8 +89,8 @@ La siguiente configuración de directiva está disponible en las directivas cont
   >
   > Los diferentes tipos de condiciones o excepciones no son aditivos; son inclusivos. La directiva se aplica _solo_ a los destinatarios que coinciden con _todos_ los filtros de destinatarios especificados. Por ejemplo, se configura una condición de filtro de destinatario en la directiva con los siguientes valores:
   >
-  > - El destinatario es: romain@contoso.com
-  > - El destinatario es miembro de: Ejecutivos
+  > - Usuarios: romain@contoso.com
+  > - Grupos: Ejecutivos
   >
   > La directiva se aplica a romain@contoso.com _solo_ si también es miembro del grupo de Ejecutivos. Si no es miembro del grupo, la directiva no se le aplica.
   >

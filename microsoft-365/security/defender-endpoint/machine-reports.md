@@ -1,6 +1,6 @@
 ---
-title: Informe de estado y cumplimiento del dispositivo en Microsoft Defender para punto de conexión
-description: Use el informe de cumplimiento y estado del dispositivo para realizar un seguimiento del estado del dispositivo, el estado y las versiones del antivirus, las plataformas del sistema operativo y las versiones de Windows 10.
+title: Informe de estado del dispositivo en Microsoft Defender para punto de conexión
+description: Use el informe de estado del dispositivo para realizar un seguimiento del estado del dispositivo, el estado y las versiones del antivirus, las plataformas del sistema operativo y las versiones de Windows 10.
 keywords: estado de mantenimiento, antivirus, plataforma del sistema operativo, versión de Windows 10, versión, estado, cumplimiento, estado
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
@@ -11,18 +11,19 @@ ms.pagetype: security
 ms.author: v-jweston
 author: jweston-1
 localization_priority: Normal
-ms.date: 09/01/2022
+ms.date: 09/06/2022
 manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.subservice: mde
-ms.openlocfilehash: 57db94df3cfd8fae60ab335f2f4a3c8c02f3c9cf
-ms.sourcegitcommit: d3ef9391f621e8f4ca70661184b3bb82c6cbda94
+ms.reviewer: mkaminska
+ms.openlocfilehash: 1acfb53905d5f122ce548b1e1a90cf7ca1b0ee75
+ms.sourcegitcommit: 651610ca73bfd1d008d97311b59782790df664fb
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/02/2022
-ms.locfileid: "67584868"
+ms.lasthandoff: 09/07/2022
+ms.locfileid: "67614580"
 ---
 # <a name="device-health-and-compliance-report-in-microsoft-defender-for-endpoint"></a>Informe de estado y cumplimiento del dispositivo en Microsoft Defender para punto de conexión
 
@@ -36,7 +37,7 @@ ms.locfileid: "67584868"
 
 > ¿Quiere experimentar Microsoft Defender para punto de conexión? [Regístrese para obtener una prueba gratuita.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-exposedapis-abovefoldlink)
 
-El informe de estado de dispositivos proporciona información de alto nivel sobre los dispositivos de la organización. El informe incluye información de tendencias que muestra el estado de mantenimiento del sensor, el estado del antivirus, las plataformas del sistema operativo y las versiones de Windows 10.
+El informe Estado del dispositivo proporciona información de alto nivel sobre los dispositivos de la organización. El informe incluye información de tendencias que muestra el estado de mantenimiento del sensor, el estado del antivirus, las plataformas del sistema operativo, las versiones de Windows 10 y las versiones de actualización del Antivirus de Microsoft Defender.
 
 > [!IMPORTANT]
 > Para que Windows&nbsp;Server 2012 R2&nbsp;y Windows&nbsp;Server&nbsp;2016 aparezcan en los informes de estado del dispositivo, estos dispositivos deben incorporarse mediante el paquete de solución unificado&nbsp;moderno. Para obtener más información, consulte [Nueva funcionalidad en la solución unificada moderna para Windows Server 2012 R2 y 2016](/microsoft-365/security/defender-endpoint/configure-server-endpoints#new-windows-server-2012-r2-and-2016-functionality-in-the-modern-unified-solution).
@@ -49,7 +50,7 @@ El panel Estado y cumplimiento del dispositivo se estructura en dos pestañas:
   - [Tarjeta de sistemas operativos y plataformas](#operating-systems-and-platforms-card)
   - [tarjeta de versiones de Windows 10](#windows-10-versions-card)
 
-- La [pestaña **Estado del Antivirus de Microsoft Defender**](#microsoft-defender-antivirus-health-tab) tiene ocho tarjetas que informan sobre los aspectos del Antivirus de Microsoft Defender:
+- La [pestaña **Estado del antivirus de Microsoft Defender**](#microsoft-defender-antivirus-health-tab) tiene ocho tarjetas que informan sobre los aspectos del Antivirus de Microsoft Defender (MDAV):
   - [Tarjeta de modo antivirus](#antivirus-mode-card)
   - [Tarjeta de versión del motor antivirus](#antivirus-engine-version-card)
   - [Tarjeta de versión de inteligencia de seguridad antivirus](#antivirus-security-intelligence-version-card)
@@ -172,7 +173,7 @@ Los informes actualizados generan información para los dispositivos que cumplen
 - Protección en la nube habilitada
 - Sistema operativo Windows*
 
-*Actualmente, los informes actualizados solo están disponibles para dispositivos Windows. Los dispositivos multiplataforma, como Mac y Linux, aparecen en "No hay datos disponibles"
+*Actualmente, los informes actualizados solo están disponibles para dispositivos Windows. Los dispositivos multiplataforma, como Mac y Linux, aparecen en "No hay datos disponibles"/Desconocido
 
 >:::image type="content" source="images/device-health-defender-antivirus-health-tab.png" alt-text="Muestra la pestaña Estado del antivirus de Microsoft Defender." lightbox="images/device-health-defender-antivirus-health-tab.png":::
 
@@ -227,7 +228,7 @@ Para obtener información sobre la exportación mediante la API, consulte los ar
 
 > [!IMPORTANT]
 >
-> Actualmente, solo la **respuesta JSON de estado del antivirus** está disponible con carácter general. **Antivirus Health API a través de archivos** solo está disponible actualmente en versión preliminar pública.
+> Actualmente, solo la **respuesta JSON de estado del antivirus** está disponible con carácter general. **Antivirus Health API a través de archivos** solo está disponible en versión preliminar pública.
 >
 > **La consulta personalizada de búsqueda avanzada** solo está disponible actualmente en versión preliminar pública, incluso si las consultas siguen estando visibles.
 
@@ -307,12 +308,12 @@ Para obtener más información sobre las versiones actuales y cómo actualizar l
 
 Las tarjetas actualizadas muestran el estado actualizado del  **motor antivirus**, la  **plataforma antivirus** y las versiones de actualización **de inteligencia de seguridad** . Hay tres estados posibles:  _Actualizado_ ('True'), _obsoleto_ ('False') y _no hay datos disponibles_ ('Desconocido').
 
-A continuación se proporcionan definiciones de no_data_available, _desactualizadas_ _y_ _actualizadas_ para cada tarjeta.
+A continuación, se proporcionan definiciones de  _actualizadas_, date_ y _no hay datos disponibles_ para cada tarjeta siguiente.
 
-Antivirus de Microsoft Defender (MDAV) crea informes y determinaciones actualizados en función de los criterios siguientes:
+Los informes MDAV componen determinaciones e informes actualizados en función de los criterios siguientes:
 
-- **En el caso de las actualizaciones de la plataforma de & motor**: la hora en que se recibieron por última vez los eventos de cliente para los informes actualizados ("hora de actualización de firma") y la hora de publicación de Security Intelligence (los VDM de inteligencia de seguridad también se usan para determinar las versiones del motor & plataforma)
-- **Para las actualizaciones de inteligencia de seguridad**: la hora en que se recibieron por última vez los eventos de cliente para los informes actualizados ("Hora de actualización de firma"), la hora de publicación de Security Intelligence y el último estado actualizado comunicado desde el cliente
+- **Para las actualizaciones de la plataforma de & motor**: "Hora de actualización de firma" (la hora en que se recibieron por última vez los eventos de cliente para los informes actualizados) y "Hora de publicación de Inteligencia de seguridad" (los VDM de inteligencia de seguridad se usan para determinar las versiones del motor & plataforma)
+- **Para las actualizaciones de inteligencia de seguridad**: "Hora de actualización de firma" (la hora en que se recibieron por última vez los eventos de cliente para los informes actualizados), la hora de publicación de Security Intelligence y el último estado actualizado comunicado desde el cliente
 
 Para obtener más información sobre los términos mencionados anteriormente, consulte la sección[: Nuevas definiciones de filtro del Antivirus de Microsoft Defender](#new-microsoft-defender-antivirus-filter-definitions).
 
@@ -337,7 +338,7 @@ A continuación se muestran definiciones actualizadas para el motor y la platafo
 | El motor o plataforma en el dispositivo se considera: | Si: |
 |:---|:---|
 | **actualizado** | el dispositivo comunicado con el evento de informe de Defender ('Hora de actualización de firma') en los últimos 7 días y tiene un tiempo de publicación de inteligencia de seguridad en los últimos 7 días y el tiempo de compilación de la versión del motor o de la plataforma es de los últimos 60 días. |
-| **desactualizadas** | el dispositivo comunicado con el evento de informe de Defender ('Hora de actualización de la firma') en los últimos 7 días y tiene un tiempo de publicación de inteligencia de seguridad en los últimos 7, pero el tiempo de compilación de la versión del motor o de la plataforma es superior a 60 días. |
+| **desactualizadas** | el dispositivo comunicado con el evento de informe de Defender ('Hora de actualización de firma') en los últimos 7 días y tiene un tiempo de publicación de inteligencia de seguridad en los últimos 7 días, pero el tiempo de compilación de la versión del motor o de la plataforma es anterior a 60 días. |
 | **unknown (no hay datos disponibles)** | el dispositivo no se ha comunicado con el evento de informe ('Hora de actualización de firma') durante más de 7 días, o el tiempo de publicación de inteligencia de seguridad es mayor que 7 días. |
 
 A continuación se muestran definiciones actualizadas de inteligencia de seguridad:
@@ -356,7 +357,7 @@ Para obtener más información sobre estos, consulte:
 
 Esta tarjeta identifica los dispositivos que tienen versiones del motor antivirus que están actualizadas frente a obsoletas.
 
-**La definición general de "_Actualizado_"**: la versión del motor en el dispositivo es la versión del motor más reciente (el motor _se_ suele publicar mensualmente, a través de Windows Update (WU)). Hay un período de gracia de tres días a partir del día en que se libera Windows Update (WU).
+**La definición general de "_Actualizado_":** la versión del motor en el dispositivo es la versión más reciente del motor. _El motor se_ suele lanzar mensualmente, a través de Windows Update (WU)). Hay un período de gracia de tres días dado desde el día en que se libera Windows Update (WU).
 
 En la tabla siguiente se establecen los valores posibles para los informes actualizados de **Antivirus Engine**. El estado notificado se basa en la última vez que se recibió el evento de informes y en la hora de publicación de inteligencia de seguridad.  
 
@@ -373,7 +374,7 @@ Para obtener información sobre cómo administrar las versiones de actualizació
 
 Esta tarjeta identifica los dispositivos que tienen versiones de la plataforma Antivirus actualizadas frente a obsoletas.
 
-**Definición general de "Actualizado"** La versión de la plataforma en el dispositivo es la versión más reciente de la plataforma (la plataforma suele publicarse mensualmente, a través de Windows Update). Hay un período de gracia de tres días a partir del día en que wu se libera.
+**Definición general de "Actualizado"** La versión de la plataforma en el dispositivo es la versión más reciente de la plataforma. La plataforma suele publicarse mensualmente, a través de Windows Update). Hay un período de gracia de tres días a partir del día en que wu se libera.
 
 En la tabla siguiente se establecen los posibles valores de informe actualizados para **La plataforma antivirus**. Los valores notificados se basan en la última vez que se recibió el evento de informes y en la hora de publicación de inteligencia de seguridad.
 
@@ -392,7 +393,7 @@ Esta tarjeta identifica los dispositivos que tienen versiones de inteligencia de
 
 **La definición general de "Actualizado":** la versión de inteligencia de seguridad del dispositivo se escribió en los últimos 7 días.
 
-En la tabla siguiente se establecen los posibles valores de informe actualizados para las actualizaciones **de Security Intelligence** . Los valores notificados se basan en la última vez que se recibió el evento de informes y en la hora de publicación de inteligencia de seguridad.
+En la tabla siguiente se establecen los posibles valores de informe actualizados para las actualizaciones **de Security Intelligence** . Los valores notificados se basan en la última vez que se recibió el evento de informes, la hora de publicación de inteligencia de seguridad y el último estado recibido del cliente.
 
 | Hora de última actualización del evento <br/> (también conocido como "Hora de actualización de firma" en los informes) | Hora de publicación de Security Intelligence | Último estado recibido del cliente | _Estado notificado_: |
 |:----|:----|:----|:----|

@@ -7,7 +7,7 @@ ms.mktglfcycl: manage
 ms.sitesec: library
 ms.pagetype: security
 ms.localizationpriority: high
-ms.date: 08/15/2022
+ms.date: 09/06/2022
 audience: ITPro
 ms.topic: reference
 author: denisebmsft
@@ -19,12 +19,12 @@ ms.subservice: mde
 ms.collection:
 - M365-security-compliance
 - m365initiative-defender-endpoint
-ms.openlocfilehash: 9550222938f6b179f72a3a2bc46db2738c819bb6
-ms.sourcegitcommit: 228fa13973bf7c2d91504703fab757f552ae40dd
+ms.openlocfilehash: ef00b200b1743de9ced826585330936dcfc41702
+ms.sourcegitcommit: 651610ca73bfd1d008d97311b59782790df664fb
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/01/2022
-ms.locfileid: "67521497"
+ms.lasthandoff: 09/07/2022
+ms.locfileid: "67614470"
 ---
 # <a name="manage-microsoft-defender-antivirus-updates-and-apply-baselines"></a>Para obtener más información, consulte Administrar actualizaciones de Antivirus de Microsoft Defender y aplicar bases de referencia.
 
@@ -787,6 +787,21 @@ Se recomienda actualizar las imágenes de instalación del sistema operativo Win
 Para obtener más información, vea [las imágenes de instalación de Microsoft Defender para el sistema operativo Windows](https://support.microsoft.com/help/4568292/defender-update-for-windows-operating-system-installation-images).
 
 <details>
+<summary>20220901.4</summary>
+
+&ensp;Versión del paquete: **20220901.4**<br/>
+&ensp;Versión de la plataforma: **4.18.2205.7**<br/>
+&ensp;Versión del motor: **1.1.19500.2**<br/>
+&ensp;Versión de firma: **1.373.1371.0**<br/>
+
+### <a name="fixes"></a>Correcciones
+- Ninguno
+
+### <a name="additional-information"></a>Información adicional
+- Ninguno
+
+<br/>
+</details><details>
 <summary>20220802.1</summary>
 
 &ensp;Versión del paquete: **20220802.1**<br/>

@@ -360,6 +360,14 @@
           href: team-security-isolation-dev-test.md
 - name: Pautas específicas por sectores
   items:
+    - name: Microsoft 365 para trabajadores de primera línea
+      items:
+        - name: Información general
+          href: /microsoft-365/frontline/flw-overview?bc=%2fmicrosoft-365%2fsolutions%2fbreadcrumb%2ftoc.json&toc=%2fmicrosoft-365%2fsolutions%2ftoc.json
+        - name: Paso 1. Elegir los escenarios
+          href: /microsoft-365/frontline/flw-choose-scenarios?bc=%2fmicrosoft-365%2fsolutions%2fbreadcrumb%2ftoc.json&toc=%2fmicrosoft-365%2fsolutions%2ftoc.json
+        - name: Paso 2. Microsoft 365 para trabajadores de primera línea
+          href: /microsoft-365/frontline/flw-deploy-overview?bc=%2fmicrosoft-365%2fsolutions%2fbreadcrumb%2ftoc.json&toc=%2fmicrosoft-365%2fsolutions%2ftoc.json
     - name: Servicios financieros
       items:
         - name: Información general
@@ -375,7 +383,7 @@
         - name: Información general
           href: healthcare-overview.md
         - name: Teams para sanidad
-          href: /frontline/teams-in-hc
+          href: /microsoft-365/frontline/teams-in-hc
     - name: Educación
       items:
         - name: Microsoft Teams para el ámbito educativo
@@ -391,7 +399,7 @@
         - name: Información general
           href: retail-overview.md
         - name: Teams para el comercio
-          href: /frontline/teams-for-retail-landing-page
+          href: /microsoft-365/frontline/teams-for-retail-landing-page
 - name: Principios de diseño de arquitectura empresarial
   items:
     - name: Información general

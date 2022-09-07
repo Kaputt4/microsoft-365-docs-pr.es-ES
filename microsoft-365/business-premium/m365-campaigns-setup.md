@@ -7,7 +7,8 @@ author: denisebmsft
 manager: dansimp
 audience: Admin
 ms.topic: overview
-ms.service: o365-administration
+ms.service: microsoft-365-business
+ms.subservice: business-premium
 ms.localizationpriority: high
 ms.date: 08/05/2022
 ms.collection:
@@ -20,12 +21,12 @@ search.appverid:
 - MET150
 ms.assetid: 496e690b-b75d-4ff5-bf34-cc32905d0364
 description: Introducción a la configuración de Microsoft 365 Empresa para campañas u otras empresas
-ms.openlocfilehash: 90de3294ffb7bfe1ebc2890375433ba432cdca4c
-ms.sourcegitcommit: cd9df1a681265905eef99c039f7036b2fa6e8b6d
-ms.translationtype: HT
+ms.openlocfilehash: d3bcf371961de8870f9892bd0818341b0288b385
+ms.sourcegitcommit: 651610ca73bfd1d008d97311b59782790df664fb
+ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/07/2022
-ms.locfileid: "67276840"
+ms.lasthandoff: 09/07/2022
+ms.locfileid: "67613393"
 ---
 # <a name="setup-for-microsoft-365-business-for-campaigns"></a>Configuración de Microsoft 365 Empresa para campañas
 
@@ -41,7 +42,7 @@ Asegúrese de que cumple los siguientes requisitos antes de ejecutar el asistent
 | Permisos  | Para completar el proceso de configuración inicial, debe ser un administrador global. [Obtenga más información sobre los roles de administrador](../admin/add-users/about-admin-roles.md). |
 | Requisitos de los exploradores | Microsoft Edge, Safari, Chrome o Firefox. [Obtenga más información sobre los requisitos de los exploradores](https://www.microsoft.com/microsoft-365/microsoft-365-and-office-resources#coreui-heading-uyetipy).  |
 | Sistemas operativos (cliente) | **Windows**: Windows 11, Windows 10, Windows 8.1<br/>**macOS**: Una de las tres últimas versiones de macOS 
-| Sistemas operativos (servidores) | Windows Server o Linux Server <br/>- Requiere servidores de Microsoft Defender para empresas (actualmente en versión preliminar)<br/>- Consulte [Cómo obtener servidores de Microsoft Defender para Empresas (versión preliminar).](../security/defender-business/get-defender-business-servers.md)  |
+| Sistemas operativos (servidores) | Windows Server o Linux Server <br/>- Requiere servidores de Microsoft Defender para empresas (actualmente en versión preliminar)<br/>- Vea [Cómo obtener servidores de Microsoft Defender para empresas (versión preliminar)](../security/defender-business/get-defender-business-servers.md).  |
 
 > [!TIP]
 > Para obtener información más detallada sobre los requisitos de Microsoft 365, Office y sistema, consulte [Recursos de Microsoft 365 y Office](https://www.microsoft.com/microsoft-365/microsoft-365-and-office-resources).

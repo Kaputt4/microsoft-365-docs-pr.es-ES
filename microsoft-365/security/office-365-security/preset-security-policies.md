@@ -16,12 +16,12 @@ ms.custom: ''
 description: Los administradores pueden aprender a aplicar la configuración de directiva estándar y estricta en las características de protección de Exchange Online Protection (EOP) y Microsoft Defender para Office 365
 ms.subservice: mdo
 ms.service: microsoft-365-security
-ms.openlocfilehash: 82c1a314aebae90ca6c0f2252180d9704a5ed27c
-ms.sourcegitcommit: 2b89bcff547e00be3d38dc8d1e6cbcf8f41eba42
+ms.openlocfilehash: 95880c0af06525610b3ad039c5bd7925d87e24b8
+ms.sourcegitcommit: 651610ca73bfd1d008d97311b59782790df664fb
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/03/2022
-ms.locfileid: "67595483"
+ms.lasthandoff: 09/07/2022
+ms.locfileid: "67614448"
 ---
 # <a name="preset-security-policies-in-eop-and-microsoft-defender-for-office-365"></a>Directivas de seguridad preestablecidas en Exchange Online Protection y Microsoft Defender para Office 365
 
@@ -64,7 +64,7 @@ El perfil determina el nivel de protección. Los perfiles siguientes están disp
 
     > [!NOTE]
     >  No se admiten grupos de distribución dinámicos.
-    
+
   - **Dominios**: todos los destinatarios de los [dominios aceptados](/exchange/mail-flow-best-practices/manage-accepted-domains/manage-accepted-domains) especificados en la organización.
 
   Solo puede usar una condición o excepción una vez, pero puede especificar varios valores para la condición o excepción. Varios valores de una misma condición o excepción usan la lógica OR (por ejemplo, _\<recipient1\>_ o _\<recipient2\>_). Condiciones o excepciones diversas usan la lógica AND (por ejemplo, _\<recipient1\>_ y _\<member of group 1\>_).
@@ -72,17 +72,14 @@ El perfil determina el nivel de protección. Los perfiles siguientes están disp
   > [!IMPORTANT]
   > Los diferentes tipos de condiciones o excepciones no son aditivos; son inclusivos. La directiva de seguridad preestablecida _solo_ se aplica a los destinatarios que coinciden _con todos los_ filtros de destinatarios especificados. Por ejemplo, se configura una condición de filtro de destinatario en la directiva con los siguientes valores:
   >
-  > - El destinatario es: romain@contoso.com
-  > - El destinatario es miembro de: Ejecutivos
+  > - Usuarios: romain@contoso.com
+  > - Grupos: Ejecutivos
   >
   > La directiva se aplica a romain@contoso.com _solo_ si también es miembro del grupo de Ejecutivos. Si no es miembro del grupo, la directiva no se le aplica.
   >
   > Asimismo, si utiliza el mismo filtro de destinatarios como excepción a la directiva, esta no se aplica a romain@contoso.com _solo_ si también es miembro del grupo de Ejecutivos. Si no es miembro del grupo, la directiva se le sigue aplicando.
 
 - **Protección integrada** (solo Defender para Office 365): perfil que habilita solo la protección de vínculos seguros y datos adjuntos seguros. Este perfil proporciona de forma eficaz directivas predeterminadas para vínculos seguros y datos adjuntos seguros, que nunca tenían directivas predeterminadas.
-
-  > [!NOTE]
-  > La directiva de seguridad preestablecida de protección integrada se está implementando y es posible que no esté disponible en su organización.
 
   Para **la protección integrada**, la directiva de seguridad preestablecida está activada de forma predeterminada para todos los clientes Defender para Office 365. Aunque no se recomienda, también puede configurar excepciones basadas en **usuarios**, **grupos** y **dominios** para que la protección no se aplique a usuarios específicos.
 
@@ -518,8 +515,8 @@ Para obtener información detallada sobre la sintaxis y los parámetros, vea [En
 > [!IMPORTANT]
   > Los diferentes tipos de condiciones o excepciones no son aditivos; son inclusivos. La directiva de seguridad preestablecida _solo_ se aplica a los destinatarios que coinciden _con todos los_ filtros de destinatarios especificados. Por ejemplo, se configura una condición de filtro de destinatario en la directiva con los siguientes valores:
   >
-  > - El destinatario es: romain@contoso.com
-  > - El destinatario es miembro de: Ejecutivos
+  > - Usuarios: romain@contoso.com
+  > - Grupos: Ejecutivos
   >
   > La directiva se aplica a romain@contoso.com _solo_ si también es miembro del grupo de Ejecutivos. Si no es miembro del grupo, la directiva no se le aplica.
   >

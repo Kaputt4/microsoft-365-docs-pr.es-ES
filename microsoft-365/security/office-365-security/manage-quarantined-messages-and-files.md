@@ -19,12 +19,12 @@ ms.custom:
 description: Los administradores pueden aprender a ver y administrar mensajes en cuarentena para todos los usuarios de Exchange Online Protection (EOP). Los administradores de organizaciones con Microsoft Defender para Office 365 también pueden administrar archivos en cuarentena en SharePoint Online, OneDrive para la Empresa y Microsoft Teams.
 ms.subservice: mdo
 ms.service: microsoft-365-security
-ms.openlocfilehash: c9603827fbd58472dde025cb2bae294e29128f74
-ms.sourcegitcommit: 2b89bcff547e00be3d38dc8d1e6cbcf8f41eba42
+ms.openlocfilehash: 8c28e4dc142136075e220ac6f011be4acf76e813
+ms.sourcegitcommit: 651610ca73bfd1d008d97311b59782790df664fb
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/03/2022
-ms.locfileid: "67596475"
+ms.lasthandoff: 09/07/2022
+ms.locfileid: "67611463"
 ---
 # <a name="manage-quarantined-messages-and-files-as-an-admin-in-eop"></a>Administración de mensajes en cuarentena y archivos como administrador en EOP
 
@@ -284,6 +284,9 @@ Cuando se seleccionan varios mensajes en cuarentena en la lista (hasta 100) haci
 > Los procedimientos para los archivos en cuarentena de esta sección solo están disponibles para los suscriptores de Microsoft Defender para Office 365 Plan 1 o Plan 2.
 
 En las organizaciones con Defender para Office 365, los administradores pueden administrar archivos que se pusieron en cuarentena mediante datos adjuntos seguros para SharePoint, OneDrive y Microsoft Teams. Para habilitar la protección de estos archivos, consulte [Activar datos adjuntos seguros para SharePoint, OneDrive y Microsoft Teams](turn-on-mdo-for-spo-odb-and-teams.md).
+
+> [!NOTE]
+> Los archivos en cuarentena en SharePoint o OneDrive se quitan de la cuarentena de fom después de 30 días, pero los archivos bloqueados permanecen en SharePoint o OneDrive en estado bloqueado.
 
 ### <a name="view-quarantined-files"></a>Visualización de archivos en cuarentena
 

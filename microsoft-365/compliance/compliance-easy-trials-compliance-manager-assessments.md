@@ -14,12 +14,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Acerca de las pruebas de evaluación premium del Administrador de cumplimiento de Microsoft.
-ms.openlocfilehash: 50950cc39d9a987239a7b10c70f68aece5647085
-ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
-ms.translationtype: HT
+ms.openlocfilehash: 1d76817f6521a7922424fd4257cb647d1b35942b
+ms.sourcegitcommit: 651610ca73bfd1d008d97311b59782790df664fb
+ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/06/2022
-ms.locfileid: "66631279"
+ms.lasthandoff: 09/07/2022
+ms.locfileid: "67611375"
 ---
 # <a name="about-the-free-trial-for-microsoft-purview-compliance-manager-premium-assessments"></a>Acerca de la evaluación gratuita de las evaluaciones premium del Administrador de cumplimiento de Microsoft Purview
 
@@ -50,9 +50,15 @@ Después de iniciar la prueba, vaya a la pestaña **Evaluaciones** en el Adminis
 
 Para obtener más información sobre cómo usar y administrar plantillas del Administrador de cumplimiento, vea [Trabajar con plantillas de evaluación](compliance-manager-templates.md).
 
-## <a name="permissions"></a>Permisos
+## <a name="required-roles-for-starting-the-trial"></a>Roles necesarios para iniciar la prueba
 
-Cualquier usuario de su organización con permisos para acceder al Administrador de cumplimiento puede registrarse para obtener la evaluación premium. Obtenga más información sobre los [permisos y roles necesarios para el Administrador de cumplimiento](compliance-manager-setup.md#set-user-permissions-and-assign-roles).
+Los usuarios deben tener uno de los siguientes roles de administrador para registrarse o finalizar una prueba:
+- Administrador de facturación
+- Administrador de cumplimiento
+- Administrador global
+- Administrador de datos de cumplimiento
+
+Obtenga más detalles sobre [los roles para iniciar las pruebas de Microsoft 365](compliance-easy-trials-roles.md).
 
 ## <a name="during-your-trial"></a>Durante la prueba
 
