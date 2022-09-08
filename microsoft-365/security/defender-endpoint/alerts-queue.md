@@ -2,7 +2,7 @@
 title: Ver y organizar la cola de alertas de Microsoft Defender para punto de conexión
 description: Obtenga información sobre cómo funcionan las colas de alertas de Microsoft Defender para punto de conexión y cómo ordenar y filtrar listas de alertas.
 keywords: alertas, colas, cola de alertas, ordenación, orden, filtro, administración de alertas, nuevas, en curso, resueltas, más recientes, tiempo en cola, gravedad, período de tiempo, alertas de expertos en amenazas de Microsoft
-ms.prod: m365-security
+ms.service: microsoft-365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -14,13 +14,13 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.date: 03/27/2020
-ms.technology: mde
-ms.openlocfilehash: 30d42c9ca69c75675f453eefd2714b6820dd5384
-ms.sourcegitcommit: d09eb780dc41a01796eb8137fbe9267231af6746
+ms.subservice: mde
+ms.openlocfilehash: 39941cec6ae58dc7ebea3ce8a68905493e3c680b
+ms.sourcegitcommit: 651610ca73bfd1d008d97311b59782790df664fb
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/19/2022
-ms.locfileid: "67388218"
+ms.lasthandoff: 09/08/2022
+ms.locfileid: "67632901"
 ---
 # <a name="view-and-organize-the-microsoft-defender-for-endpoint-alerts-queue"></a>Ver y organizar la cola de alertas de Microsoft Defender para punto de conexión
 
