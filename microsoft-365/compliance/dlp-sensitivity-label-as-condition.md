@@ -20,12 +20,12 @@ search.appverid:
 ms.custom:
 - seo-marvel-apr2020
 description: Obtener más información sobre los servicios y los tipos de elementos en los que se puede usar etiquetas de confidencialidad como condiciones en directivas DLP
-ms.openlocfilehash: 55803a2c354890264f99753af2aa6337cf49182a
-ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
-ms.translationtype: HT
+ms.openlocfilehash: c35e2e9855875eb86c5da813bfc85dd0d285138c
+ms.sourcegitcommit: 6f36cb8c69090c62a006d461bfc5aa1139cf09a9
+ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/06/2022
-ms.locfileid: "66632407"
+ms.lasthandoff: 09/08/2022
+ms.locfileid: "67631370"
 ---
 # <a name="use-sensitivity-labels-as-conditions-in-dlp-policies"></a>Usar etiquetas de confidencialidad como condiciones en las directivas de DLP
 
@@ -75,7 +75,7 @@ Puede usar etiquetas de confidencialidad como condiciones para estos elementos y
 
 - El uso de las etiquetas de confidencialidad como condición se admite en todas las cargas de trabajo, como se indica en la matriz de soporte más arriba.
 
-- Las sugerencias de directivas DLP se seguirán mostrando en las cargas de trabajo (excepto Outlook Win32) para las directivas DLP que contienen la etiqueta de confidencialidad como condición.
+- Las sugerencias de directiva DLP seguirán mostrándose en todas las cargas de trabajo (excepto Outlook para Windows) para las directivas DLP que contienen la etiqueta de confidencialidad como condición.
 
 - Las etiquetas de sensibilidad también aparecerán como parte del correo del informe de incidentes si se cumple una directiva DLP con la etiqueta de confidencialidad como condición.
 
@@ -88,7 +88,7 @@ Puede usar etiquetas de confidencialidad como condiciones para estos elementos y
 |Carga de trabajo  |Sugerencias sobre las directivas compatibles / no compatibles  |
 |---------|---------|
 |OWA |    compatible     |
-|Outlook Win 32    |  no compatible       |
+|Outlook para Windows   |  no compatible       |
 |SharePoint   |   compatible      |
 |OneDrive para la Empresa    |    compatible     |
 |dispositivos de punto de conexión   |  no compatible       |

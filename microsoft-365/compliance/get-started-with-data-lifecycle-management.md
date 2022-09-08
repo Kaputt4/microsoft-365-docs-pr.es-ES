@@ -19,12 +19,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Pasos prescriptivos para administradores, requisitos de licencia y escenarios comunes que administran el ciclo de vida de los datos de la organización.
-ms.openlocfilehash: 9a304a9bbde5bd77a146c3e18246cf5115634f8f
-ms.sourcegitcommit: 7e551fa4e9b8b25ed62b5f406143b6b1dae08cbf
-ms.translationtype: HT
+ms.openlocfilehash: 0ed0abe1edee323bfae69836f9db49ca9d7e88e5
+ms.sourcegitcommit: 6f36cb8c69090c62a006d461bfc5aa1139cf09a9
+ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/01/2022
-ms.locfileid: "67105997"
+ms.lasthandoff: 09/08/2022
+ms.locfileid: "67631283"
 ---
 # <a name="get-started-with-data-lifecycle-management"></a>Introducción a la administración del ciclo de vida de los datos
 
@@ -41,7 +41,7 @@ ms.locfileid: "67105997"
     
     Si es necesario, [crear y aplicar etiquetas de retención para las excepciones](create-retention-labels-information-governance.md).
 
-3. **Archivo de buzones de correo** disponible para proporcionar a los usuarios espacio de almacenamiento adicional en el buzón: [habilite buzones de archivo en el portal de cumplimiento de Microsoft Purview](enable-archive-mailboxes.md)
+3. **Habilitar el archivado de buzones** para proporcionar a los usuarios espacio de almacenamiento de buzón adicional: [Habilitar buzones de archivo en Microsoft 365](enable-archive-mailboxes.md)
     
     Si es necesario para admitir buzones de archivo:
     
@@ -82,7 +82,7 @@ Use la tabla siguiente para ayudarle a asignar los requisitos empresariales a lo
 |Quiero...|Documentación|
 |----------------|---------------|
 |Conserve o elimine datos de forma eficaz para los servicios de Microsoft 365: <br />- Exchange  <br />- SharePoint  <br />- OneDrive  <br />- Grupos de Microsoft 365 <br />- Teams <br />- Yammer <br />- Skype Empresarial |[Crear y configurar directivas de retención](create-retention-policies.md)|
-|Proporcionar a los usuarios almacenamiento adicional en el buzón |[Habilitación de buzones de archivo en el portal de cumplimiento de Microsoft Purview](enable-archive-mailboxes.md)|
+|Proporcionar a los usuarios almacenamiento adicional en el buzón |[Habilitación de buzones de archivo en Microsoft 365](enable-archive-mailboxes.md)|
 |Retener el contenido del buzón después de que los empleados dejen la organización |[Crear y administrar buzones inactivos](create-and-manage-inactive-mailboxes.md)|
 |Cargar datos de buzón de correo desde archivos PST |[Usar la carga en la red para importar archivos PST](use-network-upload-to-import-pst-files.md)|
 

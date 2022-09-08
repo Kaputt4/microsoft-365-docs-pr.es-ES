@@ -21,12 +21,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Administre los comentarios que los usuarios pueden enviar a Microsoft sobre los productos de Microsoft.
-ms.openlocfilehash: 24b421598815c163599932d761908b0765acea1b
-ms.sourcegitcommit: 7374c7b013890744d74e5214f7f8d69ca7874466
+ms.openlocfilehash: b6c54780277cf57a66aa3064f4222a360c270486
+ms.sourcegitcommit: 6f36cb8c69090c62a006d461bfc5aa1139cf09a9
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/23/2022
-ms.locfileid: "67406220"
+ms.lasthandoff: 09/08/2022
+ms.locfileid: "67631436"
 ---
 # <a name="manage-microsoft-feedback-for-your-organization"></a>Administrar comentarios de Microsoft para la organización
 
@@ -44,13 +44,13 @@ La tabla siguiente representa qué aplicaciones y servicios están conectados ac
 |**Portal de empresa de Intune (Android)**|Sí|Sí|Sí|Sí|
 |**Microsoft Stream (Android, iOS)**|Sí|Sí|Sí|Sí|
 |**Microsoft Whiteboard**|Sí|Sí|Sí|Sí|
-|**Office.com**|Próximamente|Próximamente|Próximamente|Próximamente|
+|**Office.com**|Sí|Sí|Sí|Sí|
 |**OneNote**|Sí|Sí|Sí|Sí|
 |**OneDrive**|[Algunas configuraciones administradas actualmente por otros controles.](/onedrive/disable-contact-support-send-feedback)||||
 |**Outlook (Web, iOS)**|Próximamente|Próximamente|Próximamente|Próximamente|
-|**Outlook (Escritorio, Android, Mac)**|Próximamente|Próximamente|Próximamente|Próximamente|
+|**Outlook (Escritorio, Android, Mac)**|Sí|Sí|Sí|Sí|
 |**PowerPoint**|Sí|Sí|Sí|Sí|
-|**Proyecto**|Próximamente|Próximamente|Próximamente|Próximamente|
+|**Proyecto**|Sí|Sí|Sí|Sí|
 |**Publicador**|Sí|Sí|Sí|Sí|
 |**SharePoint**|[Algunas configuraciones administradas actualmente por otros controles.](/powershell/module/sharepoint-online/set-spotenant)||||
 |**Teams**|[Algunas configuraciones administradas actualmente por otros controles.](/microsoftteams/manage-feedback-policies-in-teams)||||
@@ -58,6 +58,7 @@ La tabla siguiente representa qué aplicaciones y servicios están conectados ac
 |**Word**|Sí|Sí|Sí|Sí|
 |**Visio**|Sí|Sí|Sí|Sí|
 |**Objetivos Viva**|Sí|Sí|Sí|Sí|
+|**Ideas Viva**|Sí|Sí|Sí|Sí|
 |**Whiteboard**|Sí|Sí|Sí|Sí|
 |**Yammer**|Sí|Sí|Sí|Sí|
 
@@ -92,7 +93,7 @@ Los dispositivos deben tener un número mínimo de compilación para usar estas 
 |Permitir que los usuarios envíen comentarios a Microsoft|Activada|Controla los puntos de entrada de comentarios entre las aplicaciones|
 |Permitir que los usuarios reciban y respondan encuestas de Microsoft dentro de un producto|Activada|Controla las solicitudes de encuesta dentro del producto|
 |Permitir que los usuarios incluyan capturas de pantalla y datos adjuntos cuando envíen comentarios a Microsoft|Desactivada|Determina qué metadatos puede decidir enviar el usuario con comentarios o encuestas|
-|Permitir que Microsoft realice un seguimiento de los comentarios enviados por los usuarios|Desactivado|Determina si el usuario puede compartir información de contacto con comentarios o encuestas|
+|Permitir que Microsoft realice un seguimiento de los comentarios enviados por los usuarios|Desactivada|Determina si el usuario puede compartir información de contacto con comentarios o encuestas|
 |Permitir que los usuarios incluyan archivos de registro y ejemplos de contenido cuando envíen comentarios a Microsoft|Desactivada|Determina los metadatos que el usuario puede decidir enviar con comentarios o encuestas.|
 
 > [!NOTE]

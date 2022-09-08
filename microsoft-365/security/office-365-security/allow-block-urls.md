@@ -16,12 +16,12 @@ ms.collection:
 description: Los administradores pueden aprender a permitir o bloquear direcciones URL en la lista de inquilinos permitidos o bloqueados en el portal de seguridad.
 ms.subservice: mdo
 ms.service: microsoft-365-security
-ms.openlocfilehash: f29e410a6457a4810bf98436f912a57866978241
-ms.sourcegitcommit: ecc04b5b8f84b34255a2d5e90b5ab596af0d16c7
+ms.openlocfilehash: be94c967a156ac61b3fdddedf533980bb5391c43
+ms.sourcegitcommit: 6f36cb8c69090c62a006d461bfc5aa1139cf09a9
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/01/2022
-ms.locfileid: "67495113"
+ms.lasthandoff: 09/08/2022
+ms.locfileid: "67631524"
 ---
 # <a name="allow-or-block-urls-using-the-tenant-allowblock-list"></a>Permitir o bloquear direcciones URL mediante la lista de bloqueados y permitidos del espacio empresarial
 
@@ -370,7 +370,6 @@ Las entradas url válidas y sus resultados se describen en las secciones siguien
 **Entrada**: `*.contoso.com`
 
 - **Coincidencia de bloques**:
-  - contoso.com
   - xyz.abc.contoso.com
 
 - **Bloque no coincidente**:

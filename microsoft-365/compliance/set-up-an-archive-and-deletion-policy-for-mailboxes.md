@@ -23,12 +23,12 @@ ms.custom:
 - seo-marvel-apr2020
 - admindeeplinkEXCHANGE
 description: Cómo crear una directiva de archivado y eliminación de registros de mensajería personalizados (MRM) para mover automáticamente los elementos al buzón de archivo de un usuario.
-ms.openlocfilehash: d9a4af2b5518480e45ab98ca1a76b11aea36efd8
-ms.sourcegitcommit: 23c7e96d8ec31c676c458e7c71f1cc8a1e40a0e4
+ms.openlocfilehash: 08037607aa183462c560fb95641e3b0bc50da2e7
+ms.sourcegitcommit: 6f36cb8c69090c62a006d461bfc5aa1139cf09a9
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/16/2022
-ms.locfileid: "67360421"
+ms.lasthandoff: 09/08/2022
+ms.locfileid: "67631312"
 ---
 # <a name="customize-an-archive-and-deletion-policy-for-mailboxes-in-your-organization"></a>Personalización de una directiva de archivo y eliminación para buzones de correo de la organización
 
@@ -69,7 +69,7 @@ Puede seguir algunos o todos los pasos de este artículo para configurar una dir
 
 El primer paso es asegurarse de que cada usuario de la organización tiene un buzón de archivo. El buzón de archivo de un usuario debe estar habilitado para que una etiqueta de retención con una acción de retención "Mover a archivo" pueda mover el elemento después de que expire la antigüedad de retención.
 
-Para obtener instrucciones para habilitar los buzones de archivo, consulte [Habilitar buzones de archivo en el portal de cumplimiento Microsoft Purview](enable-archive-mailboxes.md).
+Para obtener instrucciones para habilitar los buzones de archivo, consulte [Habilitar buzones de archivo en Microsoft 365](enable-archive-mailboxes.md).
   
 > [!NOTE]
 > Puede habilitar los buzones de archivo en cualquier momento durante este proceso, siempre y cuando estén habilitados en algún momento antes de completar el proceso. Si un buzón de archivo no está habilitado, no se realiza ninguna acción en los elementos que tengan asignada una directiva de archivo o eliminación.

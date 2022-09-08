@@ -4,7 +4,7 @@ description: Configure el proxy de Microsoft Defender para punto de conexión y 
 keywords: configurar, proxy, Internet, conectividad a Internet, configuración, configuración de proxy, netsh, winhttp, servidor proxy
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
-ms.prod: m365-security
+ms.service: microsoft-365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -17,13 +17,13 @@ ms.collection:
 - m365-security-compliance
 - m365-initiative-defender-endpoint
 ms.topic: article
-ms.technology: mde
-ms.openlocfilehash: c579c72ab4918bf7ce0ebb5df80c05d9a4a45518
-ms.sourcegitcommit: d09eb780dc41a01796eb8137fbe9267231af6746
+ms.subservice: mde
+ms.openlocfilehash: c0c26b391f46f7186aa9d9c54e8ef63f98ad6093
+ms.sourcegitcommit: 6f36cb8c69090c62a006d461bfc5aa1139cf09a9
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/19/2022
-ms.locfileid: "67388735"
+ms.lasthandoff: 09/08/2022
+ms.locfileid: "67631502"
 ---
 # <a name="configure-device-proxy-and-internet-connectivity-settings"></a>Configurar las opciones de proxy de dispositivo y de conectividad a Internet
 
@@ -94,6 +94,14 @@ El proxy estático se puede configurar a través de la directiva de grupo (GP), 
 |:---|:---|:---|:---|
 | Configuración del uso de proxy autenticado para la experiencia del usuario conectado y el servicio de telemetría | `HKLM\Software\Policies\Microsoft\Windows\DataCollection` | `DisableEnterpriseAuthProxy` | 1 (REG_DWORD) |
 | Configuración de telemetría y experiencias de usuario conectadas | `HKLM\Software\Policies\Microsoft\Windows\DataCollection` | `TelemetryProxyServer` | ```servername:port or ip:port``` <br> <br> Por ejemplo: ```10.0.0.6:8080``` (REG_SZ) |
+
+> [!NOTE]
+> Si usa la configuración "TelemetryProxyServer" en dispositivos que, de lo contrario, están **completamente sin conexión**, se recomienda agregar la configuración `PreferStaticProxyForHttpRequest` adicional del Registro con un valor de `1`.<br>
+> La ubicación de la ruta de acceso del Registro principal para "PreferStaticProxyForHttpRequest" es "HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows Advanced Threat Protection"<br>
+> El siguiente comando se puede usar para insertar el valor del Registro en la ubicación correcta:<br>
+> ```reg add "HKLM\SOFTWARE\Policies\Microsoft\Windows Advanced Threat Protection" /v PreferStaticProxyForHttpRequest /t REG_DWORD /d 1 /f```
+
+
 
 ## <a name="configure-a-static-proxy-for-microsoft-defender-antivirus"></a>Configuración de un proxy estático para el Antivirus de Microsoft Defender
 
