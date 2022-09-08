@@ -8,12 +8,12 @@ ms.topic: article
 ms.service: bookings
 ms.localizationpriority: medium
 description: Obtenga información sobre cómo configurar notificaciones de texto SMS para clientes, clientes y asociados en Microsoft Bookings.
-ms.openlocfilehash: 5e340aafbbf88ab1c3747aa87ce27ed62ecd3cad
-ms.sourcegitcommit: ebaa70d0da4a600efe52b5008eaddb511d36df8c
+ms.openlocfilehash: e5c2b384898dfc4f20a6c57e076f8c3dc59e3c04
+ms.sourcegitcommit: 02a9c7f915d3a795a373b62dbdee2925966703f5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/07/2022
-ms.locfileid: "66687726"
+ms.lasthandoff: 09/08/2022
+ms.locfileid: "67623687"
 ---
 # <a name="configure-sms-text-notifications-and-reminders-in-microsoft-bookings"></a>Configurar notificaciones y avisos de texto SMS en Microsoft Bookings
 
@@ -53,4 +53,3 @@ Contenido relacionado
 
 [Microsoft Bookings](bookings-overview.md)\
 [Activar o desactivar Microsoft Bookings](turn-bookings-on-or-off.md)\
-[Obtener la aplicación Microsoft Bookings para iOS y Android](get-bookings-app.md)\

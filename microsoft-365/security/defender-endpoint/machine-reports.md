@@ -18,12 +18,12 @@ ms.collection: M365-security-compliance
 ms.topic: article
 ms.subservice: mde
 ms.reviewer: mkaminska
-ms.openlocfilehash: 1acfb53905d5f122ce548b1e1a90cf7ca1b0ee75
-ms.sourcegitcommit: 651610ca73bfd1d008d97311b59782790df664fb
+ms.openlocfilehash: a3ae7658ecfab9b0c92be3f75a3aa24ed2dfb7a8
+ms.sourcegitcommit: 02a9c7f915d3a795a373b62dbdee2925966703f5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/07/2022
-ms.locfileid: "67614580"
+ms.lasthandoff: 09/08/2022
+ms.locfileid: "67623737"
 ---
 # <a name="device-health-and-compliance-report-in-microsoft-defender-for-endpoint"></a>Informe de estado y cumplimiento del dispositivo en Microsoft Defender para punto de conexión
 
@@ -48,7 +48,7 @@ El panel Estado y cumplimiento del dispositivo se estructura en dos pestañas:
 - La [pestaña **Estado del sensor & sistema operativo**](#sensor-health--os-tab) proporciona información general del sistema operativo, dividida en tres tarjetas que muestran los siguientes atributos de dispositivo:
   - [Tarjeta de estado del sensor](#sensor-health-card)
   - [Tarjeta de sistemas operativos y plataformas](#operating-systems-and-platforms-card)
-  - [tarjeta de versiones de Windows 10](#windows-10-versions-card)
+  - [Tarjeta de versiones de Windows](#windows-versions-card)
 
 - La [pestaña **Estado del antivirus de Microsoft Defender**](#microsoft-defender-antivirus-health-tab) tiene ocho tarjetas que informan sobre los aspectos del Antivirus de Microsoft Defender (MDAV):
   - [Tarjeta de modo antivirus](#antivirus-mode-card)
@@ -135,7 +135,7 @@ Por ejemplo, el arranque seguro (introducido en Windows 8) prácticamente elimin
 
 Idealmente, el gráfico "Estado actual" muestra que el número de sistemas operativos se pondera en favor del sistema operativo más actual que las versiones anteriores. De lo contrario, el gráfico de tendencias indica que se están adoptando nuevos sistemas o que se están actualizando o reemplazando sistemas anteriores.
 
-### <a name="windows-10-versions-card"></a>tarjeta de versiones de Windows 10
+### <a name="windows-versions-card"></a>Tarjeta de versiones de Windows
 
 La tarjeta Windows 10 versiones muestra la distribución de dispositivos Windows y sus versiones en su organización.
 De la misma manera que una actualización de Windows 8 a Windows 10 mejora la seguridad de su organización, cambiar de versiones tempranas de Windows a versiones más actuales mejora su posición frente a posibles amenazas.
@@ -310,7 +310,7 @@ Las tarjetas actualizadas muestran el estado actualizado del  **motor antiviru
 
 A continuación, se proporcionan definiciones de  _actualizadas_, date_ y _no hay datos disponibles_ para cada tarjeta siguiente.
 
-Los informes MDAV componen determinaciones e informes actualizados en función de los criterios siguientes:
+Antivirus de Microsoft Defender crea informes y determinaciones actualizados en función de los criterios siguientes:
 
 - **Para las actualizaciones de la plataforma de & motor**: "Hora de actualización de firma" (la hora en que se recibieron por última vez los eventos de cliente para los informes actualizados) y "Hora de publicación de Inteligencia de seguridad" (los VDM de inteligencia de seguridad se usan para determinar las versiones del motor & plataforma)
 - **Para las actualizaciones de inteligencia de seguridad**: "Hora de actualización de firma" (la hora en que se recibieron por última vez los eventos de cliente para los informes actualizados), la hora de publicación de Security Intelligence y el último estado actualizado comunicado desde el cliente

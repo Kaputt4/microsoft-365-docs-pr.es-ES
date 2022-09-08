@@ -17,12 +17,12 @@ ms.custom: ''
 description: Los administradores pueden aprender a usar directivas de cuarentena para controlar lo que los usuarios pueden hacer en los mensajes en cuarentena.
 ms.subservice: mdo
 ms.service: microsoft-365-security
-ms.openlocfilehash: 1943a52b69c4e0bdb76769facdc1d93e7f53bd7b
-ms.sourcegitcommit: 2b89bcff547e00be3d38dc8d1e6cbcf8f41eba42
+ms.openlocfilehash: be6661d4a40632a66a6a183d16e3bbfa0a85552f
+ms.sourcegitcommit: 02a9c7f915d3a795a373b62dbdee2925966703f5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/03/2022
-ms.locfileid: "67595461"
+ms.lasthandoff: 09/08/2022
+ms.locfileid: "67623751"
 ---
 # <a name="quarantine-policies"></a>Directivas de cuarentena
 
@@ -630,11 +630,7 @@ Para obtener información detallada sobre la sintaxis y los parámetros, consult
 
 ## <a name="system-alerts-for-quarantine-release-requests"></a>Alertas del sistema para solicitudes de lanzamiento en cuarentena
 
-De forma predeterminada, la directiva de alerta predeterminada denominada **User requested to release a quarantined message** automatically generates an informational alert and sends notification messages to members of the following role groups whenever a user requests the release of a quarantined message:
-
-- Administrador de cuarentena
-- Administrador de seguridad
-- Administración de la organización (administrador global)
+De forma predeterminada, la directiva de alerta predeterminada denominada **User requested to release a quarantined message** automatically generates an informational alert and sends notification to Organization Management (global administrator) whenever a user requests the release of a quarantined message:
 
 Los administradores pueden personalizar los destinatarios de notificaciones por correo electrónico o crear una directiva de alertas personalizada para obtener más opciones.
 

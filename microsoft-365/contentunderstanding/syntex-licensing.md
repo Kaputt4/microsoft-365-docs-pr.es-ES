@@ -6,19 +6,19 @@ ms.reviewer: ssquires
 manager: serdars
 audience: admin
 ms.topic: article
-ms.prod: microsoft-365-enterprise
+ms.service: microsoft-365-enterprise
 ms.collection:
 - enabler-strategic
 - m365initiative-syntex
 search.appverid: MET150
 ms.localizationpriority: high
 description: Más información sobre las licencias para SharePoint Syntex
-ms.openlocfilehash: 86776af3184e44cb88f17e0164859f0ba0e2f334
-ms.sourcegitcommit: 5e5c2c1f7c321b5eb1c5b932c03bdd510005de13
-ms.translationtype: HT
+ms.openlocfilehash: 22fcff4801e912e152256c49610adc46180546a6
+ms.sourcegitcommit: 02a9c7f915d3a795a373b62dbdee2925966703f5
+ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/15/2022
-ms.locfileid: "66822277"
+ms.lasthandoff: 09/08/2022
+ms.locfileid: "67623648"
 ---
 # <a name="licensing-for-sharepoint-syntex"></a>Licencias para SharePoint Syntex
 
@@ -35,7 +35,10 @@ Las siguientes tareas requieren una [licencia de SharePoint Syntex](https://www.
 - Creación de un modelo de procesamiento de formularios mediante el punto de entrada en una biblioteca
 - Carga de contenido en una biblioteca en la que se ha aplicado un modelo de procesamiento de formularios o de comprensión mediante documentos
 - Ejecución a petición de un modelo de comprensión mediante documentos
-- Use los servicios de taxonomía premium. (Los servicios de taxonomía premium comprenden la importación de conjuntos de términos basados en SKOS, la inserción de tipos de contenido empresarial en sitios asociados al centro y los informes de almacén de términos).
+- Creación de una plantilla moderna con ensamblado de contenido
+- Generación de un documento a partir de una plantilla moderna
+- Uso de la búsqueda avanzada de metadatos
+- Uso de servicios de taxonomía premium. (Los servicios de taxonomía premium comprenden la importación de conjuntos de términos basados en SKOS, la inserción de tipos de contenido empresarial en sitios asociados al centro y los informes de almacén de términos).
 
 A los usuarios sin licencia se les puede conceder acceso a un centro de contenido y pueden crear modelos de comprensión mediante documentos allí, pero no pueden aplicarlos a una biblioteca de documentos.
  

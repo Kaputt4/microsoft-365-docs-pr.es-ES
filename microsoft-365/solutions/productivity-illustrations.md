@@ -13,12 +13,12 @@ ms.collection:
 - M365-security-compliance
 ms.custom: ''
 f1.keywords: NOCSH
-ms.openlocfilehash: 2935b54d6be6f68833f018c1e0710db3e71a1d51
-ms.sourcegitcommit: 651610ca73bfd1d008d97311b59782790df664fb
+ms.openlocfilehash: 9f804fbc9d8a9e3bace06ae0ca1f10b7f5f98a32
+ms.sourcegitcommit: 02a9c7f915d3a795a373b62dbdee2925966703f5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/07/2022
-ms.locfileid: "67611156"
+ms.lasthandoff: 09/08/2022
+ms.locfileid: "67623768"
 ---
 # <a name="microsoft-365-productivity-illustrations"></a>Ilustraciones de productividad de Microsoft 365
 
@@ -38,9 +38,9 @@ Use los siguientes pósteres para empezar a imaginar lo que su organización pue
 
 | Elemento | Descripción |
 |:-----|:-----|
-|[![Microsoft 365 para escenarios de trabajo de primera línea.](/microsoft-365/frontline/media/m365-frontline-scenarios-thumb.png)](https://go.microsoft.com/fwlink/?linkid=2206713) <br/> [PDF](https://go.microsoft.com/fwlink/?linkid=2206713) \| [Visio](https://go.microsoft.com/fwlink/?linkid=2206386)  <br>Actualizado en septiembre de 2022   |Este póster proporciona información general sobre los escenarios que puede implementar para que los empleados de primera línea aumenten las comunicaciones, mejoren el bienestar y la participación, entrenen e incorporen a sus trabajadores y administren sus plantillas y operaciones.<br/><br/>**Guías de soluciones relacionadas** <br/> <ul><li>[Microsoft 365 para trabajadores de primera línea](/microsoft-365/frontline/flw-overview)|
-|[![Microsoft 365 for frontline workers: escenarios de atención sanitaria.](/microsoft-365/frontline/media/m365-frontline-healthcare-thumb.png)](https://go.microsoft.com/fwlink/?linkid=2206475) <br/> [PDF](https://go.microsoft.com/fwlink/?linkid=2206475) \| [Visio](https://go.microsoft.com/fwlink/?linkid=2206474)  <br>Actualizado en septiembre de 2022   |Este póster proporciona información general sobre los escenarios que puede implementar para el personal de primera línea en un entorno de atención sanitaria.<br/><br/>**Guías de soluciones relacionadas** <br/> <ul><li>[Introducción a Microsoft 365 para organizaciones sanitarias](/microsoft-365/frontline/teams-in-hc)|
-|[![Microsoft 365 for frontline workers: Escenarios comerciales.](/microsoft-365/frontline/media/m365-frontline-retail-thumb.png)](https://go.microsoft.com/fwlink/?linkid=2206476) <br/> [PDF](https://go.microsoft.com/fwlink/?linkid=2206476) \| [Visio](https://go.microsoft.com/fwlink/?linkid=2206271)  <br>Actualizado en septiembre de 2022   |Este póster proporciona información general sobre los escenarios que puede implementar para los empleados de primera línea en una configuración comercial.<br/><br/>**Guías de soluciones relacionadas** <br/> <ul><li>[Introducción a Microsoft 365 para organizaciones minoristas](/microsoft-365/frontline/teams-for-retail-landing-page)|
+|[![Microsoft 365 para escenarios de trabajo de primera línea.](/microsoft-365/frontline/media/m365-frontline-scenarios-thumb.png)](https://go.microsoft.com/fwlink/?linkid=2206713) <br/> [PDF](https://go.microsoft.com/fwlink/?linkid=2206713) \| [Visio](https://go.microsoft.com/fwlink/?linkid=2206386)  <br>Actualizado en septiembre de 2022   |**Escenarios de trabajo de primera línea**<br><br>Este póster proporciona información general sobre los escenarios que puede implementar para que los empleados de primera línea aumenten las comunicaciones, mejoren el bienestar y la participación, entrenen e incorporen a sus trabajadores y administren sus plantillas y operaciones.<br/><br/>**Guías de soluciones relacionadas** <br/> <ul><li>[Microsoft 365 para trabajadores de primera línea](/microsoft-365/frontline/flw-overview)|
+|[![Microsoft 365 for frontline workers: escenarios de atención sanitaria.](/microsoft-365/frontline/media/m365-frontline-healthcare-thumb.png)](https://go.microsoft.com/fwlink/?linkid=2206475) <br/> [PDF](https://go.microsoft.com/fwlink/?linkid=2206475) \| [Visio](https://go.microsoft.com/fwlink/?linkid=2206474)  <br>Actualizado en septiembre de 2022   |**Escenarios de atención sanitaria**<br><br>Este póster proporciona información general sobre los escenarios que puede implementar para el personal de primera línea en un entorno de atención sanitaria.<br/><br/>**Guías de soluciones relacionadas** <br/> <ul><li>[Introducción a Microsoft 365 para organizaciones sanitarias](/microsoft-365/frontline/teams-in-hc)|
+|[![Microsoft 365 for frontline workers: Escenarios comerciales.](/microsoft-365/frontline/media/m365-frontline-retail-thumb.png)](https://go.microsoft.com/fwlink/?linkid=2206476) <br/> [PDF](https://go.microsoft.com/fwlink/?linkid=2206476) \| [Visio](https://go.microsoft.com/fwlink/?linkid=2206271)  <br>Actualizado en septiembre de 2022   |**Escenarios comerciales**<br><br>Este póster proporciona información general sobre los escenarios que puede implementar para los empleados de primera línea en una configuración comercial.<br/><br/>**Guías de soluciones relacionadas** <br/> <ul><li>[Introducción a Microsoft 365 para organizaciones minoristas](/microsoft-365/frontline/teams-for-retail-landing-page)|
 
 ## <a name="corporate-communications-with-microsoft-365--a-contoso-case-study"></a>Comunicaciones corporativas con Microsoft 365: un caso práctico de Contoso
 La participación de los empleados es un factor importante para la satisfacción, retención y productividad en el lugar de trabajo en cualquier organización. En Microsoft 365, hay varias maneras de comunicarse e interactuar con el público. 

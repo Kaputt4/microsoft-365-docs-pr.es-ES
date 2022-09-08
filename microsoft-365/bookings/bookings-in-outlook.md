@@ -1,5 +1,5 @@
 ---
-title: Reservas conmigo
+title: Bookings conmigo
 ms.author: kwekua
 author: kwekuako
 manager: scotv
@@ -9,14 +9,14 @@ ms.service: bookings
 ms.localizationpriority: medium
 ROBOTS: NO INDEX, NO FOLLOW
 description: Use Bookings conmigo para permitir que otros usuarios programe reuniones con usted en Outlook.
-ms.openlocfilehash: 076dc353107aa2499ec170ead5299d94404e351a
-ms.sourcegitcommit: d1b60ed9a11f5e6e35fbaf30ecaeb9dfd6dd197d
+ms.openlocfilehash: 5de348a45ca7e38d6ee20cdcce4137247c63bfd7
+ms.sourcegitcommit: 02a9c7f915d3a795a373b62dbdee2925966703f5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/29/2022
-ms.locfileid: "66487343"
+ms.lasthandoff: 09/08/2022
+ms.locfileid: "67623567"
 ---
-# <a name="bookings-with-me"></a>Reservas conmigo
+# <a name="bookings-with-me"></a>Bookings conmigo
 
 **Bookings with me** in Outlook es una página de programación personal basada en web que se integra con la información de disponibilidad de su calendario de Outlook. Bookings with me permite a las personas programar una reunión o cita con usted. Puede crear tipos de reunión personalizados para compartirlos con otros usuarios para que puedan programar fácilmente tiempo con usted en función de su disponibilidad y preferencias. Ambos reciben una confirmación por correo electrónico y los asistentes pueden actualizar o cancelar reuniones programadas con usted desde la página Reservas conmigo.
 
@@ -62,7 +62,7 @@ Para obtener más información, consulte el [artículo Bookings with me Microsof
 
 1. Bookings conmigo y Bookings comparten el mismo modelo de licencia. Sin embargo, Bookings no tiene que estar activado para la organización mediante la configuración del inquilino para que los usuarios accedan a Bookings conmigo. La aplicación Bookings debe estar habilitada para que los usuarios tengan acceso a Bookings conmigo.
 
-   Para activar Bookings with me sin acceso a Bookings, bloquee el acceso a Microsoft Bookings mediante el [comando de PowerShell de la directiva de buzón de correo de OWA](/powershell/module/exchange/set-owamailboxpolicy?view=exchange-ps) o siga las instrucciones que aparecen aquí: [Activar o desactivar Microsoft Bookings](turn-bookings-on-or-off.md).
+   Para activar Bookings with me sin acceso a Bookings, bloquee el acceso a Microsoft Bookings mediante el [comando de PowerShell de la directiva de buzón de correo de OWA](/powershell/module/exchange/set-owamailboxpolicy) o siga las instrucciones que aparecen aquí: [Activar o desactivar Microsoft Bookings](turn-bookings-on-or-off.md).
 
 2. El uso compartido anónimo de Calendar FreeBusy debe estar habilitado para usar Bookings conmigo. Esto permite que la página Bookings tenga acceso a la información de disponibilidad en el calendario de Outlook. Use PowerShell para comprobar el estado.
 
@@ -70,13 +70,15 @@ Para obtener más información, consulte el [artículo Bookings with me Microsof
      Get-SharingPolicy -Identity "Default Sharing Policy" | fl Domains 
    ```
 
-    "Anonymous:CalendarSharingFreeBusyReviewer"" debe ser uno de los dominios de la respuesta.
+    Anonymous:SharingPolicyAction debe ser uno de los dominios de la respuesta. El valor sharingPolicyAction puede ser CalendarSharingFreeBusySimple, CalendarSharingFreeBusyDetail o CalendarSharingFreeBusyReviewer (valor predeterminado).
 
    Para habilitar el uso compartido anónimo, use el siguiente comando.
 
    ```PowerShell
-     Set-SharingPolicy "Default Sharing Policy" -Domains @{Add="Anonymous:CalendarSharingFreeBusyReviewer"}
+     Set-SharingPolicy "Default Sharing Policy" -Domains @{Add="Anonymous:CalendarSharingFreeBusySimple"}
    ```
+  
+  Para obtener más información, vea [Set-SharingPolicy](/powershell/module/exchange/set-sharingpolicy).
 
 ## <a name="turn-bookings-with-me-on-or-off"></a>Activar o desactivar Bookings with me
 
@@ -99,7 +101,8 @@ Use los comandos **Get-OrganizationConfig** y **Set-OrganizationConfig** para av
 
     Si el comando devuelve "EwsEnabled: **$true**", continúe con el paso 2.
 
-    Si el comando devuelve "EwsEnabled:" (vacío es el valor predeterminado), habilite y continúe con el paso 2.
+    Si el comando devuelve "EwsEnabled:" (vacío es el valor predeterminado), habilite, pero solo si necesita bloquear "Bookings with" y continúe con el paso 2.
+    De lo contrario, los valores predeterminados de EwsEnabled son suficientes para dejar "Bookings with me" habilitado, no se necesitan más cambios.
 
    ```PowerShell
    Set-OrganizationConfig -EwsEnabled: $true
