@@ -15,12 +15,12 @@ ms.collection:
 search.appverid:
 - MET150
 description: Los chats y canales de Microsoft Teams admiten directivas de prevención de pérdida de datos (DLP).
-ms.openlocfilehash: 5d2ee7cefc23a85aec1a75fbe9fe121feacbb51f
-ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
+ms.openlocfilehash: ae9f7b273dc84d16c499a13f4c491d517d804cd2
+ms.sourcegitcommit: 6d86713c3b1da2db338c78fa60bd7d93e24aa6f4
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/06/2022
-ms.locfileid: "66638375"
+ms.lasthandoff: 09/09/2022
+ms.locfileid: "67639622"
 ---
 # <a name="data-loss-prevention-and-microsoft-teams"></a>Prevención de pérdida de datos y Microsoft Teams.
 
@@ -31,7 +31,12 @@ Si su organización tiene Prevención de pérdida de datos de Microsoft Purview 
     > [!NOTE]
     > DLP para Microsoft Teams bloquea el contenido confidencial cuando se comparte con usuarios de Microsoft Teams que tienen:<br/>- [acceso de invitado](/MicrosoftTeams/guest-access) en equipos y canales; O<br/>- [acceso externo](/MicrosoftTeams/manage-external-access) en reuniones y sesiones de chat. <p>DLP para sesiones de chat externas solo funcionará si tanto el remitente como el receptor están en modo Solo teams y mediante [la federación nativa de Microsoft Teams](/microsoftteams/manage-external-access). DLP para Teams no bloquea los mensajes en [interoperabilidad](/microsoftteams/teams-and-skypeforbusiness-coexistence-and-interoperability#interoperability-of-teams-and-skype-for-business) con sesiones de chat federadas Skype Empresarial o no nativas.
 
-- **Ejemplo 2: Protección de información confidencial en documentos**. Supongamos que alguien intenta compartir un documento con invitados en un canal o chat de Microsoft Teams y que el documento contiene información confidencial. Si tiene una directiva DLP definida para evitarlo, el documento no se abrirá para esos usuarios. La directiva DLP debe incluir SharePoint y OneDrive para poder establecer la protección. Este es un ejemplo de DLP para SharePoint que se muestra en Microsoft Teams y, por lo tanto, requiere que los usuarios tienen licencia para Office 365 DLP (incluido en Office 365 E3), pero no requiere que los usuarios estén autorizados para Cumplimiento avanzado de Office 365).
+- **Ejemplo 2: Protección de información confidencial en documentos**. Supongamos que alguien intenta compartir un documento con invitados en un canal o chat de Microsoft Teams y que el documento contiene información confidencial. Si tiene una directiva DLP definida para evitarlo, el documento no se abrirá para esos usuarios. La directiva DLP debe incluir SharePoint y OneDrive para poder establecer la protección. Este es un ejemplo de DLP para SharePoint que se muestra en Microsoft Teams y, por lo tanto, requiere que los usuarios tienen licencia para Office 365 DLP (incluido en Office 365 E3), pero no requiere que los usuarios tengan licencia para Cumplimiento avanzado de Office 365. 
+   
+Puede ampliar la directiva DLP de Teams para cubrir SharePoint Online y OneDrive para la Empresa seleccionando **Protección automática de archivos** del banner en **Directivas** **DLP** > . Esto habilitará la protección DLP para todos los archivos compartidos en chats y canales de Teams con las mismas reglas que se aplican a los mensajes de Teams. Una vez habilitada, la extensión se aplicará a todas las directivas DLP de Teams existentes y futuras, por lo que no es necesario crear directivas independientes para SharePoint y OneDrive para la protección de archivos. 
+
+> [!NOTE]
+> Solo las directivas de Teams que tengan reglas con condiciones o excepciones de **contenido que contengan** o **contenido se compartan desde Microsoft 365** se pueden ampliar para la protección automática de archivos. Si la configuración de condición o excepción tiene **Sender es**, **el dominio del remitente es**, **el destinatario es** y **el dominio del destinatario está** presente, se producirá un error en la acción de extensión porque estas condiciones no se aplican a SharePoint y OneDrive.
 
 - **Ejemplo 3: Protección de las comunicaciones en canales compartidos de Teams**. En el caso de los canales compartidos, se aplica la directiva DLP del equipo host de Teams. Por ejemplo, supongamos que hay un canal compartido propiedad de TeamA de Contoso. TeamA tiene una directiva DLP P1. Hay tres maneras de compartir un canal:
     - **Compartir con un miembro**: invita a user1 de Contoso a unirse al canal compartido sin convertirlo en miembro de TeamA. Todos los usuarios de este canal compartido, incluido user1, estarán cubiertos por P1.
@@ -62,14 +67,14 @@ La protección DLP se aplica de forma diferente a las entidades de Teams.
 
 |Cuando la directiva tiene el ámbito |Estas entidades de Teams |Tendrá la protección DLP disponible|
 |---------|---------|---------|
-|Cuentas de usuario individuales     |1:1/n chats         |Sí         |
+|Cuentas de usuario individuales     |1:1/n chats         |Yes         |
 |     |Mensajes de canal estándar y compartidos         |No         |
 |     |Mensajes de canal privado         |Sí         |
-|Grupos de seguridad o listas de distribución  | 1:1/n chats         |Sí         |
+|Grupos de seguridad o listas de distribución  | 1:1/n chats         |Yes         |
 |     |Mensajes de canal estándar y compartidos  |No         |
 |     |Mensajes de canal privado         |Sí        |
 |Grupo de Microsoft 365    |1:1/n chats          |No         |
-|     |Mensajes de canal estándar y compartidos          |Sí        |
+|     |Mensajes de canal estándar y compartidos          |Yes        |
 |     |Mensajes de canal privado|No| 
 
 

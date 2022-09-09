@@ -16,12 +16,12 @@ search.appverid:
 - MET150
 description: Información para que los administradores de TI administren las etiquetas de confidencialidad en las aplicaciones de Office para escritorio, móvil y web.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: b395aaf4d506fcb933b34135d3871e9669a5efaa
-ms.sourcegitcommit: d60d78e6a05845747af0ad25131c7e526d58064d
+ms.openlocfilehash: c757b9b2b6f9dc649832f2c32a2a0137f4804779
+ms.sourcegitcommit: 6d86713c3b1da2db338c78fa60bd7d93e24aa6f4
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/01/2022
-ms.locfileid: "67498491"
+ms.lasthandoff: 09/09/2022
+ms.locfileid: "67639552"
 ---
 # <a name="manage-sensitivity-labels-in-office-apps"></a>Administrar etiquetas de confidencialidad en las aplicaciones de Office
 
@@ -191,20 +191,27 @@ Para una experiencia de etiquetado más uniforme con los informes significativos
 > [!NOTE]
 > Si los usuarios eliminan manualmente el cifrado de un documento etiquetado que está almacenado en SharePoint o OneDrive y usted ha [habilitado las etiquetas de confidencialidad para los archivos de Office en SharePoint y OneDrive](sensitivity-labels-sharepoint-onedrive-files.md), el cifrado de la etiqueta se restaurará automáticamente la próxima vez que se acceda al documento o se descargue. 
 
+## <a name="encryption-based-label-matching-for-documents"></a>Coincidencia de etiquetas basadas en cifrado para documentos
 
-## <a name="apply-sensitivity-labels-to-files-emails-and-attachments"></a>Aplicar etiquetas de confidencialidad a los archivos, correos electrónicos y archivos adjuntos
+Cuando se ha cifrado un documento con permisos definidos por el administrador, la información de cifrado incluye información sobre una etiqueta de confidencialidad coincidente. Como resultado, cuando un usuario abre ese documento en una aplicación de Office, la etiqueta coincidente se muestra en la aplicación de Office y se conserva si se guarda el documento.
 
-Los usuarios pueden aplicar una sola etiqueta a la vez para cada documento o correo electrónico.
+En este escenario, la etiqueta de confidencialidad coincidente puede etiquetar un documento sin etiquetar y reemplazar una etiqueta existente que no aplique el cifrado. Por ejemplo, la etiqueta **General** se reemplaza por **Confidencial/Todos los empleados**. Las marcas de contenido de la etiqueta coincidente no se aplican automáticamente, a menos que el documento no se haya etiquetado previamente y use el complemento AIP.
 
-Cuando etiqueta un mensaje de correo electrónico que tiene archivos adjuntos, los archivos adjuntos heredan la etiqueta solo si la etiqueta que aplica al mensaje de correo electrónico aplica cifrado y el archivo adjunto es un documento de Office que aún no está cifrado. Debido a que la etiqueta heredada aplica cifrado, el archivo adjunto se vuelve a cifrar.
+Este escenario ayuda a mover las soluciones de cifrado anteriores de las plantillas de protección a las etiquetas de confidencialidad que aplican el cifrado.
 
-Un archivo adjunto no hereda las etiquetas del mensaje de correo electrónico cuando la etiqueta aplicada al mensaje de correo electrónico no aplica el cifrado o el archivo adjunto ya está cifrado.
+Sin embargo, también verá este comportamiento con un escenario de etiquetado para los datos adjuntos de correo electrónico cuando el destinatario los abra. Por ejemplo:
 
-Ejemplos de herencia de etiquetas, donde la etiqueta **Confidencial** aplica encriptación y la etiqueta **General** no aplica encriptación:
+1. Un usuario crea un correo electrónico y adjunta un documento de Office sin cifrar y, a continuación, aplica una etiqueta al correo electrónico.
+    
+    La etiqueta aplica el cifrado con permisos establecidos por el administrador, en lugar de las opciones No reenviar o Encrypt-Only. Por ejemplo, para la configuración de la etiqueta, el administrador selecciona **Asignar permisos ahora** y especifica que todos los empleados tienen acceso de lectura.
 
-- Un usuario crea un nuevo mensaje de correo electrónico y le aplica la etiqueta **Confidencial**. A continuación, agregan un documento de Word que no está etiquetado ni cifrado. Como resultado de la herencia, el documento recibe la nueva etiqueta de **Confidencial** y ahora se le aplica el cifrado a partir de esa etiqueta.
+2. Cuando se envía el correo electrónico, los [datos adjuntos heredan automáticamente el cifrado, pero no la etiqueta](encryption-sensitivity-labels.md#email-attachments-for-encrypted-email-messages).
 
-- Un usuario crea un nuevo mensaje de correo electrónico y le aplica la etiqueta **Confidencial**. A continuación, agregan un documento de Word con la etiqueta **General** y este archivo no está cifrado. Como resultado de la herencia, el documento se etiqueta de nuevo como **Confidencial** y ahora se le aplica el cifrado a partir de esa etiqueta.
+3. Cuando un destinatario del mismo inquilino abre el documento cifrado, se muestra automáticamente una etiqueta coincidente para los permisos definidos por el administrador para el documento y se conserva si se guarda el documento.
+    
+    Como evento de auditoría que se muestra en el Explorador de actividades, este usuario aplicó la etiqueta, no el remitente del correo electrónico.
+
+La coincidencia de etiquetas basada en cifrado solo funciona dentro del inquilino, para los permisos definidos por el administrador, y la etiqueta de confidencialidad coincidente debe publicarse para el usuario que abre el documento.
 
 ## <a name="sensitivity-label-compatibility"></a>Compatibilidad con la etiqueta de confidencialidad
 

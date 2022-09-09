@@ -2,8 +2,8 @@
 title: Informes de actividad del Centro de administración de Microsoft 365
 f1.keywords:
 - NOCSH
-ms.author: kwekua
-author: kwekua
+ms.author: camillepack
+author: camillepack
 manager: scotv
 audience: Admin
 ms.topic: overview
@@ -23,12 +23,12 @@ search.appverid:
 - GEA150
 ms.assetid: 0d6dfb17-8582-4172-a9a9-aed798150263
 description: Obtenga un informe periódico de cómo usan los usuarios los servicios de Microsoft 365 y explore en profundidad cada gráfico para obtener más información.
-ms.openlocfilehash: 05bee2950cb50b0b5a21ef67e9f73cec5e78b07a
-ms.sourcegitcommit: e9692a40dfe1f8c2047699ae3301c114a01b0d3a
-ms.translationtype: HT
+ms.openlocfilehash: 79c4c4bcdb7036fcf32e8d8ee98f29ce49e4c3dd
+ms.sourcegitcommit: 6d86713c3b1da2db338c78fa60bd7d93e24aa6f4
+ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/01/2022
-ms.locfileid: "66601616"
+ms.lasthandoff: 09/09/2022
+ms.locfileid: "67639600"
 ---
 # <a name="microsoft-365-reports-in-the-admin-center"></a>Informes de Microsoft 365 en el centro de administración
 
@@ -38,9 +38,9 @@ Puede ver fácilmente el uso que hacen de los servicios de Microsoft 365 los us
   
 Los informes están disponibles para los últimos 7, 30, 90 o 180 días. Los datos no estarán disponibles para todos los períodos de informes al instante. Los informes están disponibles en 48 horas.
 
-## <a name="watch-act-on-a-usage-report-in-office-365"></a>Mirar: Actuar sobre un informe de uso de Office 365
+## <a name="watch-act-on-a-usage-report-in-microsoft-365"></a>Inspección: Actuar sobre un informe de uso en Microsoft 365
   
-Consulte este vídeo y otros en nuestro [canal de YouTube](https://go.microsoft.com/fwlink/?linkid=2198103).
+Consulte este vídeo y otros en nuestro [canal de YouTube](https://go.microsoft.com/fwlink/?linkid=2198103).<br><br>
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4VjrX?autoplay=false]
 

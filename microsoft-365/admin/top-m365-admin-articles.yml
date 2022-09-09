@@ -1,6 +1,6 @@
 ### YamlMime:Landing
 title: Los 20 artículos de ayuda para administradores más vistos este mes
-summary: Última actualización del 3 de agosto de 2022. ¿Tiene curiosidad por saber qué artículos de ayuda son más populares entre los administradores? Consulte esta colección de los 20 artículos de ayuda más vistos, actualizados mensualmente.
+summary: Última actualización del 9 de septiembre de 2022. ¿Tiene curiosidad por saber qué artículos de ayuda son más populares entre los administradores? Consulte esta colección de los 20 artículos de ayuda más vistos, actualizados mensualmente.
 metadata:
   title: Los 20 artículos de ayuda para administradores más vistos este mes
   description: Consulte esta colección de los 20 artículos de ayuda más populares entre los administradores, actualizados mensualmente.
@@ -15,12 +15,12 @@ metadata:
   - VSBFY23
   - AdminSurgePortfolio
   ms.collection: Adm_TOC
-  ms.openlocfilehash: 0117f7954b439e4e6dee8b5d74dca8218869edfe
-  ms.sourcegitcommit: cd9df1a681265905eef99c039f7036b2fa6e8b6d
+  ms.openlocfilehash: dfa4003cbf35d91a09d7e6cf89dcb87764bda47a
+  ms.sourcegitcommit: 6d86713c3b1da2db338c78fa60bd7d93e24aa6f4
   ms.translationtype: MT
   ms.contentlocale: es-ES
-  ms.lasthandoff: 08/07/2022
-  ms.locfileid: "67275664"
+  ms.lasthandoff: 09/09/2022
+  ms.locfileid: "67639555"
 landingContent:
 - title: Administración de datos y servicios
   linkLists:
@@ -30,8 +30,12 @@ landingContent:
       url: add-users/about-admin-roles.md
     - text: Información general del Centro de administración de Microsoft 365
       url: admin-overview/admin-center-overview.md
+  - linkListType: how-to-guide
+    links:
     - text: Obtener soporte técnico para Microsoft 365 para empresas
       url: get-help-support.md
+    - text: Informes de actividad de Microsoft 365
+      url: activity-reports/activity-reports.md
 - title: Dominios
   linkLists:
   - linkListType: how-to-guide
@@ -74,8 +78,6 @@ landingContent:
       url: email/configure-email-forwarding.md
     - text: Creación de un buzón compartido
       url: email/create-a-shared-mailbox.md
-    - text: Conceder permisos de buzón a otro usuario de Microsoft 365
-      url: add-users/give-mailbox-permissions-to-another-user.md
     - text: Cambiar un nombre de usuario y una dirección de correo electrónico
       url: add-users/change-a-user-name-and-email-address.md
 - title: Usuarios, grupos y contraseñas

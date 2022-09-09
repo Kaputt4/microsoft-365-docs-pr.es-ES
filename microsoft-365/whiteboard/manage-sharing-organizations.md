@@ -12,12 +12,12 @@ search.appverid: MET150
 ms.collection: ''
 ms.localizationpriority: medium
 description: Obtenga información sobre cómo administrar el uso compartido para La pizarra de Microsoft.
-ms.openlocfilehash: 7b4fdfd6eb183cac34c31a16f12804d84731bcea
-ms.sourcegitcommit: 2b89bcff547e00be3d38dc8d1e6cbcf8f41eba42
+ms.openlocfilehash: 53409c352a3be95a720d6ebfc0759270140c7400
+ms.sourcegitcommit: 6d86713c3b1da2db338c78fa60bd7d93e24aa6f4
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/03/2022
-ms.locfileid: "67599481"
+ms.lasthandoff: 09/09/2022
+ms.locfileid: "67639512"
 ---
 # <a name="manage-sharing-for-microsoft-whiteboard"></a>Administración del uso compartido para La pizarra de Microsoft
 
@@ -63,6 +63,11 @@ Estos cambios deben tardar aproximadamente 60 minutos en aplicarse en todo el in
 |Iniciar la pizarra desde un dispositivo móvil o de escritorio|Almacenamiento: OneDrive para la Empresa<br><br>Propietario: usuario que crea la pizarra|Habilitado|Usuarios en el inquilino: pueden crear, ver y colaborar<br><br>Usuarios externos: solo pueden ver y colaborar durante la reunión (el botón para compartir una pizarra no aparecerá para los usuarios externos)<br><br>Cuentas de dispositivo compartido: solo puede ver y colaborar durante la reunión.|
 |Iniciar la pizarra desde un dispositivo móvil o de escritorio|Almacenamiento: OneDrive para la Empresa<br><br>Propietario: usuario que crea la pizarra|Deshabilitada|Usuarios en el inquilino: pueden iniciar, ver y colaborar<br><br>Usuarios externos: no se puede ver ni colaborar<br><br>Cuentas de dispositivo compartido: no se puede ver ni colaborar|
 |Inicie la pizarra desde surface hub o Salas de Microsoft Teams|Almacenamiento: Azure (los archivos de pizarra se moverán a OneDrive para la Empresa en el futuro)<br><br>Propietario: Participante de la reunión|No aplicable|Usuarios en el inquilino: pueden iniciar, ver y colaborar<br><br>Usuarios externos: solo pueden ver y colaborar durante la reunión.<br><br> Cuentas de dispositivo compartido: solo puede ver y colaborar durante la reunión.|
+
+> [!NOTE]
+>Si una pizarra se almacena en OneDrive y ya está asociada a una reunión, no se puede iniciar en un dispositivo Surface Hub o Salas de Microsoft Teams. Un usuario autenticado en otro dispositivo tendrá que hacerlo. Estamos trabajando en una corrección para este problema.
+
+
 
 ## <a name="add-as-a-tab-in-teams-channels-and-chats"></a>Agregar como pestaña en canales y chats de Teams
 
