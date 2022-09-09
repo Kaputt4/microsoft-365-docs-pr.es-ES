@@ -352,7 +352,7 @@
               href: manage/servicenow-testing-the-configuration.md
             - name: Solución de problemas
               href: manage/servicenow-troubleshooting.md
-            - name: Habilitación de la integración de soporte técnico de Microsoft 365 para ServiceNow
+            - name: Habilitación del agente virtual
               href: manage/servicenow-support-integration.md
     - name: Administrar suscripciones y facturación
       href: ../commerce/index.yml

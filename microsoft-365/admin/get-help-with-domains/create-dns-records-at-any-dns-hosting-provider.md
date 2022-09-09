@@ -24,12 +24,12 @@ ms.custom:
 - AdminTemplateSet
 - business_assist
 - admindeeplinkMAC
-ms.openlocfilehash: d4175cc9cdf0e0a2b7e58d0b9bc0cf295cc3683c
-ms.sourcegitcommit: 2f6a7410e9919f753a759c1ada441141e18f06fd
-ms.translationtype: HT
+ms.openlocfilehash: 4e0b89b390133ac6fa0f6a88f092f60ed2ce926d
+ms.sourcegitcommit: 80fddb7a071eee4801204929788531e93f7ba087
+ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/30/2022
-ms.locfileid: "67083957"
+ms.lasthandoff: 09/09/2022
+ms.locfileid: "67634786"
 ---
 # <a name="add-dns-records-to-connect-your-domain"></a>Agregar registros DNS para conectarse a su dominio
 
@@ -38,6 +38,8 @@ Si ha comprado un dominio de un proveedor de host externo, puede conectarlo a Mi
 Tras finalizar estos pasos, el dominio seguirá registrado en el host en el que compró el dominio, pero Microsoft 365 podrá usarlo para sus direcciones de correo electrónico (como usuario@sudominio.com) y otros servicios.
 
 Si no agrega el dominio, los integrantes de la organización usarán el dominio onmicrosoft.com para las direcciones de correo electrónico hasta que lo agregue. Es importante que agregue el dominio antes de agregar usuarios, para evitar tener que configurarlo dos veces.
+
+Si ya ha creado usuarios y desea cambiar su dominio, siga los pasos descritos en Cambiar la [dirección de correo electrónico para usar el dominio personalizado mediante el Centro de administración de Microsoft 365](/microsoft-365/admin/email/change-email-address#change-your-email-address-to-use-your-custom-domain-using-the-microsoft-365-admin-center).
 
 [Consulte las preguntas frecuentes sobre los dominios](../setup/domains-faq.yml) si no encuentra lo que busca debajo.
 
