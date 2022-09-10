@@ -7,6 +7,8 @@
       href: 'https://go.microsoft.com/fwlink/?linkid=2197659'
     - name: Introducción
       items:
+        - name: Qué es Microsoft 365 para empresas
+          href: ../admin/admin-overview/what-is-microsoft-365-for-business.md
         - name: Registrarse
           href: admin-overview/sign-up-for-office-365.md
         - name: Probar o comprar Microsoft 365
@@ -21,13 +23,11 @@
               href: ../admin/simplified-signup/signup-business-standard.md
             - name: Configurar Microsoft 365 Empresa Estándar
               href: ../admin/setup/setup-business-standard.md
-            - name: Invitar a usuarios a Microsoft 365 Empresa Estándar
+            - name: Invitar a usuarios a una suscripción de Microsoft 365 para empresas
               href: ../admin/simplified-signup/admin-invite-business-standard.md
-            - name: Qué es Microsoft 365 para empresas
-              href: ../admin/admin-overview/what-is-microsoft-365-for-business.md
-            - name: Aceptar invitación por correo electrónico a Microsoft 365 Empresa Estándar
+            - name: Aceptación de una invitación por correo electrónico a una suscripción a Microsoft 365 para empresas
               href: ../admin/simplified-signup/user-invite-business-standard.md
-            - name: 'Aceptar una invitación por correo electrónico a una organización de suscripción de Microsoft 365 Empresa Estándar con una cuenta de Outlook, Yahoo, Gmail u otra.'
+            - name: 'Aceptar una invitación por correo electrónico a una suscripción de Microsoft 365 para empresas mediante Outlook, Yahoo, Gmail u otra cuenta'
               href: ../admin/simplified-signup/user-invite-msa-nodomain-join.md
             - name: Migrar datos a mi suscripción de Microsoft 365 Empresa Estándar
               href: ../admin/simplified-signup/migrate-data-business-standard.md
@@ -37,9 +37,11 @@
               href: setup/signup--apps-business.md
             - name: Configurar Microsoft 365 Apps para empresas
               href: setup/setup-apps-for-business.md
-        - name: Configurar Microsoft 365 Empresa Básico
+        - name: Regístrese para obtener Microsoft 365 Empresa Básico
           items:
-            - name: Microsoft 365 Empresa Básico
+            - name: Regístrese para obtener Microsoft 365 Empresa Básico
+              href: setup/signup-business-basic.md
+            - name: Configurar Microsoft 365 Empresa Básico
               href: setup/setup-business-basic.md
         - name: Explorar la página y el Asistente de configuración
           href: setup/o365-setup-wizard-and-setup-page.md

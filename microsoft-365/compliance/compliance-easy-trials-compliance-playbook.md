@@ -16,12 +16,12 @@ search.appverid:
 - MET150
 description: Cuaderno de estrategias de prueba de soluciones de Microsoft Purview.
 ms.custom: trial-playbook
-ms.openlocfilehash: 8a8b4acc4626e82186aede35d553b665d0f98e74
-ms.sourcegitcommit: 72d10d0bc29ecc8b19c395f1815dc48b549096d9
+ms.openlocfilehash: e79986eb4b74e675770825fa621cdfdfd59ac047
+ms.sourcegitcommit: 173f696dc8f81259d852775572a6938ec39f6115
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/17/2022
-ms.locfileid: "67370115"
+ms.lasthandoff: 09/10/2022
+ms.locfileid: "67643881"
 ---
 # <a name="trial-playbook-microsoft-purview-solutions"></a>Cuaderno de estrategias de prueba: soluciones de Microsoft Purview
 
@@ -305,7 +305,7 @@ Para aprovechar al máximo la funcionalidad de Insider Risk Management, se recom
 
 **Identificación de infracciones de directivas de cumplimiento normativo**
 
-Cumplimiento de comunicaciones de Microsoft Purview ayuda a las organizaciones a detectar infracciones explícitas de cumplimiento normativo, como las obligaciones SEC o FINRA, incluido el uso compartido inadecuado de información confidencial o confidencial. Con los flujos de trabajo integrados, la solución puede ayudarle a investigar y corregir posibles infracciones de cumplimiento normativo. Creada con privacidad por diseño, esta solución tiene nombres de usuario seudonimizados de forma predeterminada, los controles de acceso basados en rol están integrados, los investigadores deben ser agregados explícitamente por un administrador a una directiva y los registros de auditoría están en su lugar para ayudar a garantizar la privacidad de nivel de usuario.
+Cumplimiento de comunicaciones de Microsoft Purview proporciona las herramientas para ayudar a las organizaciones a detectar infracciones de cumplimiento normativo (por ejemplo, SEC o FINRA), como información confidencial o confidencial, hostigamiento o amenazante del lenguaje y uso compartido de contenido para adultos. Creados con privacidad por diseño, los nombres de usuario se seudonimizan de forma predeterminada, los controles de acceso basados en roles se integran, los investigadores son admitidos por un administrador y los registros de auditoría están en vigor para garantizar la privacidad del nivel de usuario.
 
 ### <a name="step-1-enable-permissions-for-communication-compliance"></a>Paso 1: Habilitación de permisos para el cumplimiento de comunicaciones
 

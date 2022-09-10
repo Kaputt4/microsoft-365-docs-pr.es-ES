@@ -17,12 +17,12 @@ search.appverid:
 description: Soluciones para la versión de prueba del cuaderno de estrategias de Microsoft Defender para Office 365
 ms.subservice: mdo
 ms.custom: trial-playbook
-ms.openlocfilehash: 0fcd44b3bf82e4eca1322bf1c8ceaff1613a04cd
-ms.sourcegitcommit: 2b89bcff547e00be3d38dc8d1e6cbcf8f41eba42
+ms.openlocfilehash: cc54c427649fc98b9807522017830017f038264f
+ms.sourcegitcommit: 173f696dc8f81259d852775572a6938ec39f6115
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/03/2022
-ms.locfileid: "67598271"
+ms.lasthandoff: 09/10/2022
+ms.locfileid: "67643859"
 ---
 # <a name="trial-playbook-microsoft-defender-for-office-365"></a>Versión de prueba del cuaderno de estrategias: Microsoft Defender para Office 365
 
@@ -56,7 +56,7 @@ Comencemos
 
 #### <a name="start-your-microsoft-defender-for-office-365-trial"></a>Iniciar la versión de prueba de Microsoft Defender para Office 365
 
-Después de iniciar la versión de prueba y completar el [proceso de configuración](try-microsoft-defender-for-office-365.md#set-up-an-evaluation-in-blocking-mode), los cambios pueden tardar hasta 2 horas en surtir efecto.
+Después de iniciar la versión de prueba y completar el [proceso de configuración](try-microsoft-defender-for-office-365.md#set-up-an-evaluation-or-trial-in-blocking-mode), los cambios pueden tardar hasta 2 horas en surtir efecto.
 
 Hemos configurado automáticamente las directivas de [Seguridad preestablecidas](preset-security-policies.md) en su entorno. Estas directivas representan un perfil de protección de línea base adecuado para la mayoría de los usuarios. La protección estándar incluye:
 
@@ -168,7 +168,7 @@ Proporciona los conocimientos adecuados a los usuarios para que identifiquen ame
 
 #### <a name="start-your-defender-for-office-365-evaluation"></a>Inicio de la evaluación de Defender para Office 365
 
-Una vez completado el [proceso de configuración](try-microsoft-defender-for-office-365.md#set-up-an-evaluation-in-audit-mode), los cambios pueden tardar hasta 2 horas en tomar efecto. Hemos configurado automáticamente las directivas de evaluación preestablecida en su entorno.
+Una vez completado el [proceso de configuración](try-microsoft-defender-for-office-365.md#set-up-an-evaluation-or-trial-in-audit-mode), los cambios pueden tardar hasta 2 horas en tomar efecto. Hemos configurado automáticamente las directivas de evaluación preestablecida en su entorno.
 
 Las directivas de evaluación garantizan que no se realice ninguna acción en el correo electrónico detectado por Defender para Office 365.
 
@@ -186,7 +186,7 @@ Mira este vídeo para obtener más información: [Aprender a usar el portal de e
 
 Usa las funcionalidades de informe de Defender para Office 365 para obtener más detalles sobre tu entorno.
 
-- El [panel Evaluación](try-microsoft-defender-for-office-365.md#reporting-in-audit-mode) proporciona una vista sencilla de las amenazas detectadas por Defender para Office 365 durante la evaluación.
+- El [panel Evaluación](try-microsoft-defender-for-office-365.md#reports-for-audit-mode-only) proporciona una vista sencilla de las amenazas detectadas por Defender para Office 365 durante la evaluación.
 - Comprende las amenazas recibidas en las herramientas de correo electrónico y de colaboración con el [Informe de estado de protección contra amenazas](view-email-security-reports.md#threat-protection-status-report).
 
 ### <a name="step-2-intermediate-steps-in-auditing-mode"></a>Paso 2: Pasos intermedios en modo auditoría

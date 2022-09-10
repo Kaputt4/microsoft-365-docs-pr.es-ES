@@ -18,12 +18,12 @@ description: Obtenga información sobre cómo definir directivas de datos adjunt
 ms.custom: seo-marvel-apr2020
 ms.subservice: mdo
 ms.service: microsoft-365-security
-ms.openlocfilehash: ad5b68ca377a03ff42044b85c3125339bcbc8b62
-ms.sourcegitcommit: 651610ca73bfd1d008d97311b59782790df664fb
+ms.openlocfilehash: 11d6a276d40441092b3d4f060933cfb2968e0a8e
+ms.sourcegitcommit: 173f696dc8f81259d852775572a6938ec39f6115
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/07/2022
-ms.locfileid: "67611900"
+ms.lasthandoff: 09/10/2022
+ms.locfileid: "67644211"
 ---
 # <a name="set-up-safe-attachments-policies-in-microsoft-defender-for-office-365"></a>Configuración de directivas de datos adjuntos seguros en Microsoft Defender para Office 365
 
@@ -126,7 +126,7 @@ La creación de una directiva de datos adjuntos seguros personalizados en el por
      - **Desactivado**: normalmente, no se recomienda este valor.
      - **Supervisar**
      - **Bloquear**: este es el valor predeterminado y el valor recomendado en Directivas de [seguridad preestablecidas](preset-security-policies.md) estándar y estricta.
-     - **Replace**
+     - **Reemplazar**: esta acción quedará en desuso. Para obtener más información, vea [MC424901](https://admin.microsoft.com/AdminPortal/Home#/MessageCenter/:/messages/MC424901).
      - **Entrega dinámica (característica de versión preliminar)**
 
      Estos valores se explican en [configuración de directivas de datos adjuntos seguros](safe-attachments.md#safe-attachments-policy-settings).
@@ -137,7 +137,8 @@ La creación de una directiva de datos adjuntos seguros personalizados en el por
 
    - **Redirigir mensajes con datos adjuntos detectados**: si selecciona **Habilitar redirección**, puede especificar una dirección de correo electrónico en el cuadro **Enviar mensajes que contengan datos adjuntos bloqueados, supervisados o reemplazados a la dirección de correo electrónico especificada** para enviar mensajes que contengan datos adjuntos de malware para su análisis e investigación.
 
-     La recomendación para la configuración de directivas estándar y estricta es habilitar el redireccionamiento. Para obtener más información, consulte [Configuración de datos adjuntos seguros](recommended-settings-for-eop-and-office365.md#safe-attachments-settings).
+     > [!NOTE]
+     > El redireccionamiento estará pronto disponible solo para la acción **Supervisión** . Para obtener más información, consulte [MC424899](https://admin.microsoft.com/AdminPortal/Home?#/MessageCenter/:/messages/MC424899).
 
    - **Aplique la respuesta de detección de datos adjuntos seguros si el examen no puede completarse (tiempo de espera o errores):** la acción especificada por la **respuesta de malware desconocido de Datos adjuntos seguros** se realiza en los mensajes incluso cuando el análisis de datos adjuntos seguros no se puede completar. Si seleccionó esta opción, seleccione siempre **Habilitar redirección** y especifique una dirección de correo electrónico para enviar mensajes que contengan datos adjuntos de malware. De lo contrario, es posible que se pierdan los mensajes.
 

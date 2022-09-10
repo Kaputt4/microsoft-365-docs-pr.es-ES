@@ -17,12 +17,12 @@ ms.custom: seo-marvel-apr2020
 description: Los administradores pueden aprender a usar el portal envíos en el portal de Microsoft 365 Defender para enviar correo electrónico legítimo bloqueado, correo electrónico sospechoso, sospecha de correo electrónico de phishing, correo no deseado, otros mensajes potencialmente dañinos, direcciones URL y datos adjuntos de correo electrónico a Microsoft para volver a examinar.
 ms.subservice: mdo
 ms.service: microsoft-365-security
-ms.openlocfilehash: 56d61a09b3180a22cb525be1e97872b6f1616056
-ms.sourcegitcommit: 71643c8c73d1e6a4d909177656f8d2bd440b1022
+ms.openlocfilehash: 9a2620df6f7cb6eba490fba289c019240e172679
+ms.sourcegitcommit: 173f696dc8f81259d852775572a6938ec39f6115
 ms.translationtype: MT
 ms.contentlocale: es-ES
 ms.lasthandoff: 09/10/2022
-ms.locfileid: "67642722"
+ms.locfileid: "67643969"
 ---
 # <a name="use-the-submissions-portal-to-submit-suspected-spam-phish-urls-legitimate-email-getting-blocked-and-email-attachments-to-microsoft"></a>Use el portal envíos para enviar sospechas de correo no deseado, mensajes no deseados, direcciones URL, bloqueo de correo electrónico legítimo y datos adjuntos de correo electrónico a Microsoft.
 
@@ -109,7 +109,7 @@ Vea este breve vídeo para aprender a usar envíos de administrador en Microsoft
 
    Cuando haya terminado, haga clic en **Enviary**, a continuación, haga clic en **Listo**.
 
-> :::image type="content" source="../../media/admin-submission-email-block.png" alt-text="Envíe un correo electrónico falso negativo (incorrecto) a Microsoft para su análisis en la página Envíos del portal de Defender." lightbox="../../media/admin-submission-email-block.png":::
+:::image type="content" source="../../media/admin-submission-email-block.png" alt-text="Envíe un correo electrónico falso negativo (incorrecto) a Microsoft para su análisis en la página Envíos del portal de Defender." lightbox="../../media/admin-submission-email-block.png":::
 
 > [!NOTE]
 > En el caso de los mensajes bloqueados incorrectamente por [inteligencia de suplantación de identidad](learn-about-spoof-intelligence.md), no se crea una entrada de bloque para el par de dominios en la lista de permitidos o bloqueados de inquilinos.
@@ -153,7 +153,7 @@ Vea este breve vídeo para aprender a usar envíos de administrador en Microsoft
 
    Cuando haya terminado, haga clic en **Enviary**, a continuación, haga clic en **Listo**.
 
-> :::image type="content" source="../../media/admin-submission-file-block.png" alt-text="Envíe un archivo adjunto de correo electrónico falso negativo (incorrecto) a Microsoft para su análisis en la página Envíos del portal de Defender." lightbox="../../media/admin-submission-file-block.png":::
+:::image type="content" source="../../media/admin-submission-file-block.png" alt-text="Envíe un archivo adjunto de correo electrónico falso negativo (incorrecto) a Microsoft para su análisis en la página Envíos del portal de Defender." lightbox="../../media/admin-submission-file-block.png":::
 
 ## <a name="report-questionable-urls-to-microsoft"></a>Notificar direcciones URL cuestionables a Microsoft
 
@@ -192,19 +192,129 @@ Vea este breve vídeo para aprender a usar envíos de administrador en Microsoft
 
    Cuando haya terminado, haga clic en **Enviary**, a continuación, haga clic en **Listo**.
 
-> :::image type="content" source="../../media/admin-submission-url-block.png" alt-text="Envíe una dirección URL falsa negativa (incorrecta) a Microsoft para su análisis en la página Envíos del portal de Defender." lightbox="../../media/admin-submission-url-block.png":::
+:::image type="content" source="../../media/admin-submission-url-block.png" alt-text="Envíe una dirección URL falsa negativa (incorrecta) a Microsoft para su análisis en la página Envíos del portal de Defender." lightbox="../../media/admin-submission-url-block.png":::
 
 ## <a name="report-good-email-to-microsoft"></a>Informar de un buen correo electrónico a Microsoft
 
-Para informar de los mensajes de correo electrónico bloqueados que deberían haberse permitido (falsos negativos), consulte [Uso del portal de Microsoft 365 Defender para crear entradas permitidas para dominios y direcciones de correo electrónico en el portal envíos](allow-block-email-spoof.md#use-the-microsoft-365-defender-portal-to-create-allow-entries-for-domains-and-email-addresses-in-the-submissions-portal).
+1. En el portal de Microsoft 365 Defender en <https://security.microsoft.com>, vaya a la página **Envíos** en **Acciones & envíos** \> **.** Para ir directamente a la página **Envíos** , use <https://security.microsoft.com/reportsubmission>.
+
+2. En la página **Envíos** , compruebe que la pestaña **Correos electrónicos** está seleccionada.
+
+3. En la pestaña **Correos electrónicos** , haga clic en ![el icono Enviar a Microsoft para análisis.](../../media/m365-cc-sc-create-icon.png) **Envíe a Microsoft para su análisis**.
+
+4. En el control flotante **Enviar a Microsoft para análisis** que aparece, escriba la siguiente información:
+
+   - **Seleccione el tipo de envío**: compruebe que el valor **Email** está seleccionado.
+
+   - **Agregue el identificador de mensaje de red o cargue el archivo de correo electrónico**: seleccione una de las siguientes opciones:
+
+     - **Agregar el identificador de mensaje de red de correo electrónico**: se trata de un valor GUID que está disponible en el encabezado **X-MS-Exchange-Organization-Network-Message-Id** en el mensaje o en el encabezado **X-MS-Office365-Filtering-Correlation-Id** en los mensajes en cuarentena.
+
+     - **Cargar el archivo de correo electrónico (.msg o .eml):** haga clic en **Examinar archivos**. En el cuadro de diálogo que se abre, busque y seleccione el archivo .eml o .msg y, a continuación, haga clic en **Abrir**.
+
+   - **Elija un destinatario que tenga un problema**: especifique el destinatario en el que desea ejecutar una comprobación de directiva. La comprobación de directiva determinará si el correo electrónico se bloqueó debido a directivas de usuario u organización.
+
+   - **Seleccione un motivo para enviar a Microsoft**: Seleccione **No se debería haber bloqueado (Falso positivo)** y, a continuación, configure los siguientes valores:
+
+     - **Permitir correos electrónicos con atributos similares (URL, remitente, etc.):** active esta opción ![Activar.](../../media/scc-toggle-on.png)
+
+         - **Quitar permitir entrada después**: El valor predeterminado es **de 30 días**, pero puede seleccionar entre los siguientes valores:
+           - **1 día**
+           - **7 días**
+           - **30 días**
+           - **Fecha específica**: el valor máximo es de 30 días a partir de hoy.
+
+           En el caso de los remitentes suplantados, este valor no tiene sentido, ya que las entradas de los remitentes suplantados nunca expiran.
+
+         - **Permitir nota de entrada**: escriba información opcional sobre por qué está permitiendo este correo electrónico.
+
+           En el caso de los remitentes suplantados, cualquier valor que escriba aquí no se muestra en la entrada allow de la pestaña **Remitentes suplantados** de la **lista de permitidos o bloqueados de inquilinos**.
+
+   Cuando haya terminado, haga clic en **Enviary**, a continuación, haga clic en **Listo**.
+
+   :::image type="content" source="../../media/admin-submission-email-allow.png" alt-text="Envíe un correo electrónico falso positivo (correcto) a Microsoft para su análisis en la página Envíos del portal de Defender." lightbox="../../media/admin-submission-email-allow.png":::
+
+Transcurridos unos instantes, la entrada allow aparecerá en la pestaña **Dominios & direcciones** o **Remitentes suplantados** de la página Lista de **permitidos o bloqueados de inquilinos** .
+
+> [!NOTE]
+>
+> - Al invalidar el veredicto en la información de inteligencia sobre suplantación de identidad, el remitente suplantado se convierte en una entrada de bloqueo o permiso manual que solo aparece en la pestaña **Remitentes suplantados de la lista de permitidos o bloqueados de inquilinos** .
+> - Si el remitente aún no se ha bloqueado, el envío del mensaje de correo electrónico a Microsoft no creará una entrada de permiso en la lista de inquilinos permitidos o bloqueados.
+> - Las permite se agregan durante el flujo de correo, en función de los filtros que determinaron que el mensaje era malintencionado. Por ejemplo, si se ha determinado que el remitente y una dirección URL del mensaje son incorrectos, se crea una entrada allow para el remitente y se crea una entrada allow para la dirección URL.
+> - Cuando se vuelve a encontrar esa entidad (dirección de dominio o correo electrónico, dirección URL, archivo), se omiten todos los filtros asociados a esa entidad.
+> - Durante el flujo de correo, si los mensajes del dominio o la dirección de correo electrónico pasan otras comprobaciones en la pila de filtrado, se entregarán los mensajes. Por ejemplo, si se supera la [autenticación por correo electrónico](email-validation-and-authentication.md) , se entregará un mensaje de un remitente en la entrada allow.
 
 ## <a name="report-good-email-attachments-to-microsoft"></a>Notificar datos adjuntos de correo electrónico correctos a Microsoft
 
-Para informar de los datos adjuntos de correo electrónico bloqueados que deberían haberse permitido (falsos negativos), consulte [Uso del portal de Microsoft 365 Defender para crear entradas permitidas para los archivos en el portal Envíos](allow-block-files.md#use-the-microsoft-365-defender-portal-to-create-allow-entries-for-files-in-the-submissions-portal).
+1. En el portal de Microsoft 365 Defender en <https://security.microsoft.com>, vaya a la página **Envíos** en **Acciones & envíos** \> **.** Para ir directamente a la página **Envíos** , use <https://security.microsoft.com/reportsubmission>.
+
+2. En la página **Envíos**, seleccione la pestaña **Email datos adjuntos**.
+
+3. En la pestaña **Email datos adjuntos**, haga clic en ![el icono Enviar a Microsoft para análisis.](../../media/m365-cc-sc-create-icon.png) **Envíe a Microsoft para su análisis**.
+
+4. En el control flotante **Enviar a Microsoft para análisis** que aparece, escriba la siguiente información:
+
+   - **Seleccione el tipo de envío**: compruebe que el valor **Email datos adjuntos** está seleccionado.
+
+   - **Archivo**: haga clic en **Examinar archivos** para buscar y seleccionar el archivo que se va a enviar.
+
+   - **Seleccione un motivo para enviar a Microsoft**: Seleccione **No se debería haber bloqueado (Falso positivo)** y, a continuación, configure los siguientes valores:
+
+     - **Permitir este archivo**: active esta opción ![Activar.](../../media/scc-toggle-on.png)
+
+         - **Quitar permitir entrada después**: El valor predeterminado es **de 30 días**, pero puede seleccionar entre los siguientes valores:
+           - **1 día**
+           - **7 días**
+           - **30 días**
+           - **Fecha específica**: el valor máximo es de 30 días a partir de hoy.
+
+         - **Permitir nota de entrada**: escriba información opcional sobre por qué está permitiendo este archivo.
+
+   Cuando haya terminado, haga clic en **Enviary**, a continuación, haga clic en **Listo**.
+
+   :::image type="content" source="../../media/admin-submission-file-allow.png" alt-text="Envíe un archivo adjunto de correo electrónico falso positivo (correcto) a Microsoft para su análisis en la página Envíos del portal de Defender." lightbox="../../media/admin-submission-file-allow.png":::
+
+Transcurridos unos instantes, aparecerá una entrada allow en la pestaña **Archivos** de la página **Lista de inquilinos permitidos o bloqueados** .
+
+> [!NOTE]
+> Cuando se vuelve a encontrar el archivo, no se envía para la detonación de [datos adjuntos seguros](safe-attachments.md) o las comprobaciones de reputación de archivos, y se omiten todos los demás filtros basados en archivos. Durante el flujo de correo, si los mensajes que contienen el archivo pasan otras comprobaciones que no son de archivo en la pila de filtrado, se entregarán los mensajes.
 
 ## <a name="report-good-urls-to-microsoft"></a>Notificar direcciones URL correctas a Microsoft
 
-Para informar de las direcciones URL bloqueadas que deberían haberse permitido (falsos negativos), consulte [Uso del portal de Microsoft 365 Defender para crear entradas permitidas para direcciones URL en el portal envíos](allow-block-urls.md#use-the-microsoft-365-defender-portal-to-create-allow-entries-for-urls-in-the-submissions-portal).
+1. En el portal de Microsoft 365 Defender en <https://security.microsoft.com>, vaya a la página **Envíos** en **Acciones & envíos** \> **.** Para ir directamente a la página **Envíos** , use <https://security.microsoft.com/reportsubmission>.
+
+2. En la página **Envíos** , seleccione la pestaña **Direcciones URL** .
+
+3. En la pestaña **Direcciones URL** , haga clic en ![el icono Enviar a Microsoft para análisis.](../../media/m365-cc-sc-create-icon.png) **Envíe a Microsoft para su análisis**.
+
+4. En el control flotante **Enviar a Microsoft para análisis** que aparece, escriba la siguiente información:
+
+   - **Seleccione el tipo de envío**: compruebe que la **dirección URL** del valor está seleccionada.
+
+   - **DIRECCIÓN URL**: escriba la dirección URL completa (por ejemplo, ) y selecciónela `https://www.fabrikam.com/marketing.html`en el cuadro que aparece.
+
+   - **Seleccione un motivo para enviar a Microsoft**: Seleccione **No se debería haber bloqueado (Falso positivo)** y, a continuación, configure los siguientes valores:
+
+     - **Permitir esta dirección URL**: active esta opción ![Activar.](../../media/scc-toggle-on.png)
+
+         - **Quitar permitir entrada después**: El valor predeterminado es **de 30 días**, pero puede seleccionar entre los siguientes valores:
+           - **1 día**
+           - **7 días**
+           - **30 días**
+           - **Fecha específica**: el valor máximo es de 30 días a partir de hoy.
+
+         - **Permitir nota de entrada**: escriba información opcional sobre por qué está permitiendo esta dirección URL.
+
+   Cuando haya terminado, haga clic en **Enviary**, a continuación, haga clic en **Listo**.
+
+   :::image type="content" source="../../media/admin-submission-url-allow.png" alt-text="Envíe una dirección URL falsa positiva (buena) a Microsoft para su análisis en la página Envíos del portal de Defender." lightbox="../../media/admin-submission-url-allow.png":::
+
+Transcurridos unos instantes, aparecerá una entrada allow en la pestaña **URL** de la página **Lista de inquilinos permitidos o bloqueados** . Para obtener más información sobre la lista de permitidos o bloqueados de inquilinos, vea [Administrar los bloques y permitidos en la lista de permitidos o bloques de inquilinos](manage-tenant-allow-block-list.md).
+
+> [!NOTE]
+>
+> - Cuando se detecta de nuevo la dirección URL, no se envía para las comprobaciones de reputación de url o de detonación de [vínculos seguros](safe-links.md) , y se omiten todos los demás filtros basados en direcciones URL.
+> - Durante el flujo de correo, si los mensajes que contienen la dirección URL pasan otras comprobaciones que no son de dirección URL en la pila de filtrado, se entregarán los mensajes.
 
 ## <a name="view-email-admin-submissions-to-microsoft"></a>Visualización de envíos de administradores de correo electrónico a Microsoft
 

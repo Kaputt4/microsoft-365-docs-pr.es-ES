@@ -1,5 +1,5 @@
 ---
-title: Aceptar una invitación por correo electrónico a Microsoft 365 Empresa Estándar (usuario)
+title: Aceptar una invitación por correo electrónico a una suscripción de Microsoft 365 para empresas (usuario)
 f1.keywords:
 - NOCSH
 ms.author: kwekua
@@ -14,15 +14,18 @@ ms.collection:
 ms.custom:
 - VSBFY23
 - AdminSurgePortfolio
-description: Aceptar invitación para unirse a una organización Microsoft 365 Empresa Estándar
-ms.openlocfilehash: a956057d25dfe9c724441007ca30a4ecc88ad2c8
-ms.sourcegitcommit: 2f6a7410e9919f753a759c1ada441141e18f06fd
+description: Aceptar invitación para unirse a una organización de Microsoft 365 para empresas
+ms.openlocfilehash: a1727e6c2d03a7617a986acf08c4182cbcef05dd
+ms.sourcegitcommit: 173f696dc8f81259d852775572a6938ec39f6115
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/30/2022
-ms.locfileid: "67086877"
+ms.lasthandoff: 09/10/2022
+ms.locfileid: "67644233"
 ---
-# <a name="accept-an-email-invitation-to-a-microsoft-365-business-standard-subscription-user"></a>Aceptar una invitación por correo electrónico a una suscripción de Microsoft 365 Empresa Estándar (usuario)
+# <a name="accept-an-email-invitation-to-a-microsoft-365-for-business-subscription-user"></a>Aceptar una invitación por correo electrónico a una suscripción de Microsoft 365 para empresas (usuario)
+
+> [!IMPORTANT]
+> Estos pasos se aplican a Microsoft 365 Empresa Estándar, Microsoft 365 Empresa Básico y Aplicaciones Microsoft 365 para negocios.
 
 Cuando ya usa Microsoft 365 Empresa con una dirección de correo electrónico de Gmail, Outlook, Yahoo (o similar), alguien (por ejemplo, su administrador o propietario empresarial) puede invitarle a actualizar Microsoft 365 para empezar a usar el correo electrónico de marca profesional.  En este escenario, cambiará la dirección de correo electrónico y aprenderá a actualizar.
 
@@ -31,9 +34,9 @@ Cuando ya usa Microsoft 365 Empresa con una dirección de correo electrónico de
 Si es administrador de una organización en la que los usuarios siguen usando Gmail, Outlook, Yahoo o direcciones de correo electrónico similares y busca cómo configurar el correo electrónico de marca, consulte estos pasos en su lugar: [Agregar un dominio a Microsoft 365](../setup/add-domain.md) y [Configurar su organización con correo electrónico y almacenamiento en la nube](../setup/setup-business-standard.md#finish-setting-up).
 
 > [!IMPORTANT]
-> Si es administrador y está buscando pasos sobre cómo enviar a un usuario una invitación a su suscripción de Microsoft 365 Empresa Estándar, consulte [Invitar a usuarios a Microsoft 365 Empresa Estándar (Administración).](admin-invite-business-standard.md)
+> Si es administrador y está buscando pasos sobre cómo enviar a un usuario una invitación a su suscripción de Microsoft 365 para empresas, consulte [Invitar a usuarios a Microsoft 365 Empresa Estándar (Administración)](admin-invite-business-standard.md).
 
-## <a name="join-a-business-microsoft-365-business-standard-organization"></a>Unirse a una organización de Microsoft 365 Empresa Estándar empresarial
+## <a name="join-a-microsoft-365-for-business-organization"></a>Unirse a una organización de Microsoft 365 para empresas
 
 Asegúrese de que tiene los detalles de inicio de sesión de su cuenta actual antes de iniciar estos pasos.
 
@@ -53,15 +56,15 @@ Asegúrese de que tiene los detalles de inicio de sesión de su cuenta actual an
 
 8. En la página **Agregar nueva cuenta a Microsoft Teams** , siga los pasos para configurar Teams. Seleccione **I'm done** when you're complete (He terminado cuando haya terminado).
 
-### <a name="next-steps---migrate-your-data-to-microsoft-365-business-standard"></a>Pasos siguientes: migración de los datos a Microsoft 365 Empresa Estándar
+### <a name="next-steps---migrate-your-data-to-microsoft-365-for-business"></a>Pasos siguientes: Migración de los datos a Microsoft 365 para empresas
 
-Siga los pasos descritos en [Migración de datos a mi suscripción de Microsoft 365 Empresa Estándar](migrate-data-business-standard.md) para mover los datos de OneDrive, Outlook y Teams.
+Siga los pasos descritos en [Migración de datos a mi suscripción de Microsoft 365 para empresas para](migrate-data-business-standard.md) mover los datos de OneDrive, Outlook y Teams.
 
 ### <a name="no-data-to-migrate"></a>¿No hay datos que migrar?
 
 Descargue y empiece a usar [aplicaciones de Office para empresas](https://support.microsoft.com/office/install-office-apps-from-office-365-dcf2d841-dac7-455b-9a77-fc8f7ee92702).
 
-## <a name="frequently-asked-questions"></a>Preguntas frecuentes
+## <a name="frequently-asked-questions"></a>Preguntas más frecuentes
 
 ### <a name="i-didnt-receive-an-upgrade-email"></a>¿No he recibido un correo electrónico de actualización?
 
@@ -73,7 +76,7 @@ Póngase en contacto con nuestros expertos en soporte técnico para pequeñas em
 
 ### <a name="what-happens-to-my-data-and-account-when-i-upgrade"></a>¿Qué ocurre con mis datos y mi cuenta al actualizar?
 
-Los datos permanecerán en su cuenta anterior, no se eliminará nada.  Todavía podrá iniciar sesión en su antigua cuenta de Gmail, Outlook, Yahoo u otra cuenta de correo electrónico como lo hizo antes. Ahora debe mover los archivos de trabajo a la nueva cuenta profesional. Obtenga información sobre cómo hacerlo aquí: [Migración de datos a mi suscripción de Microsoft 365 Empresa Estándar](migrate-data-business-standard.md).
+Los datos permanecerán en su cuenta anterior, no se eliminará nada.  Todavía podrá iniciar sesión en su antigua cuenta de Gmail, Outlook, Yahoo u otra cuenta de correo electrónico como lo hizo antes. Ahora debe mover los archivos de trabajo a la nueva cuenta profesional. Obtenga información sobre cómo hacerlo aquí: [Migrar datos a mi suscripción de Microsoft 365 para empresas](migrate-data-business-standard.md).
 
 ### <a name="how-can-i-copy-data-to-my-business-account"></a>¿Cómo puedo copiar datos en mi cuenta empresarial?
 
@@ -82,7 +85,7 @@ Los datos permanecerán en su cuenta anterior, no se eliminará nada.  Todavía 
 
 ### <a name="why-does-it-say-my-admin-now-handles-my-data"></a>¿Por qué dice que mi administrador ahora controla mis datos?
 
-Al usar una cuenta de Microsoft 365 Business actualizada, los documentos, el correo electrónico y los datos que cree en Microsoft Office (y dentro de otras aplicaciones de Microsoft 365 Empresa Estándar) serán propiedad del administrador técnico de su organización. Por ejemplo, la persona que le envió el correo electrónico de invitación o el propietario de su empresa.
+Al usar una cuenta de Microsoft 365 Business actualizada, los documentos, el correo electrónico y los datos que cree en Microsoft Office (y dentro de otras aplicaciones de Microsoft 365 para suscripciones empresariales) serán propiedad del administrador técnico de su organización. Por ejemplo, la persona que le envió el correo electrónico de invitación o el propietario de su empresa.
 
 ### <a name="how-do-i-get-started-with-my-new-account"></a>Cómo empezar a trabajar con mi nueva cuenta?
 

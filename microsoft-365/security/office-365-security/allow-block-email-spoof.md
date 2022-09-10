@@ -16,12 +16,12 @@ ms.collection:
 description: Los administradores pueden aprender a permitir o bloquear correos electrónicos y entradas de remitente suplantados en la lista de permitidos o bloqueados de inquilinos en el portal de seguridad.
 ms.subservice: mdo
 ms.service: microsoft-365-security
-ms.openlocfilehash: 1537b32d56046da776024cef3acbd9eb2d8a4da3
-ms.sourcegitcommit: ecc04b5b8f84b34255a2d5e90b5ab596af0d16c7
+ms.openlocfilehash: 752877aab39ce6c06b10b76c192b2188a9fb138d
+ms.sourcegitcommit: 173f696dc8f81259d852775572a6938ec39f6115
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/01/2022
-ms.locfileid: "67497569"
+ms.lasthandoff: 09/10/2022
+ms.locfileid: "67644013"
 ---
 # <a name="allow-or-block-emails-using-the-tenant-allowblock-list"></a>Permitir o bloquear correos electrónicos mediante la lista de bloqueados y permitidos del espacio empresarial
 
@@ -81,7 +81,7 @@ Para crear entradas de bloque para remitentes suplantados, consulte [la sección
 
 #### <a name="use-the-microsoft-365-defender-portal-to-create-block-entries-for-domains-and-email-addresses-in-the-submissions-portal"></a>Use el portal de Microsoft 365 Defender para crear entradas de bloque para dominios y direcciones de correo electrónico en el portal envíos.
 
-Cuando use el portal Envíos en <https://security.microsoft.com/reportsubmission> para notificar mensajes de correo electrónico como **Debería haberse bloqueado (Falso negativo),** puede seleccionar **Bloquear todos los correos electrónicos de este destinatario** para agregar una entrada de bloque para el dominio o el remitente en la Lista de inquilinos permitidos o bloqueados.
+Cuando use el portal Envíos en <https://security.microsoft.com/reportsubmission> para notificar mensajes de correo electrónico como **Debería haberse bloqueado (Falso negativo),** puede seleccionar **Bloquear todos los correos electrónicos de este destinatario** para agregar una entrada de bloque para el remitente en la pestaña **Dominios & direcciones** de la Lista de permitidos o bloqueados de inquilinos.
 
 Para obtener instrucciones, consulte [Informe de correo electrónico cuestionable a Microsoft](admin-submission.md#report-questionable-email-to-microsoft).
 
@@ -133,7 +133,9 @@ Para obtener información detallada sobre la sintaxis y los [parámetros, vea Ne
 
 ### <a name="use-the-microsoft-365-defender-portal-to-create-allow-entries-for-domains-and-email-addresses-in-the-submissions-portal"></a>Use el portal de Microsoft 365 Defender para crear entradas permitidas para dominios y direcciones de correo electrónico en el portal envíos.
 
-No puede crear entradas permitidas para dominios y direcciones de correo electrónico directamente en la lista de permitidos o bloqueados de inquilinos. En su lugar, use el portal Envíos en <https://security.microsoft.com/reportsubmission> para notificar el mensaje como falso positivo. Para obtener más información sobre los envíos de administradores, consulte [Uso del portal envíos para enviar sospechas de correo no deseado, fish, direcciones URL, bloqueo de correo electrónico legítimo y datos adjuntos de correo electrónico a Microsoft](admin-submission.md).
+No puede crear entradas permitidas para dominios y direcciones de correo electrónico directamente en la lista de permitidos o bloqueados de inquilinos. En su lugar, use el portal Envíos de <https://security.microsoft.com/reportsubmission> para notificar el mensaje como falso positivo, que también agrega una entrada de permiso para el remitente en la pestaña **Dominios & direcciones** de la Lista de inquilinos permitidos o bloqueados.
+
+Para obtener instrucciones, consulte [Informe de un buen correo electrónico a Microsoft](admin-submission.md#report-good-email-to-microsoft).
 
 > [!NOTE]
 > Dado que Microsoft administra las entradas permitidas automáticamente, se quitarán las entradas permitidas innecesarias para dominios y direcciones de correo electrónico. Este comportamiento protege su organización y ayuda a evitar entradas permitidas mal configuradas. Si no está de acuerdo con el veredicto, es posible que tenga que abrir un caso de soporte técnico para ayudar a determinar por qué un mensaje todavía se considera incorrecto.
@@ -143,48 +145,6 @@ No puede crear entradas permitidas para dominios y direcciones de correo electr�
 > En la mayoría de los casos en los que se determinó que el mensaje era un falso positivo que se bloqueó incorrectamente, la entrada permitida se quitará en la fecha de expiración especificada.
 >
 > Para crear entradas permitidas para remitentes suplantados, consulte la sección [Creación de entradas permitidas para remitentes suplantados](#create-allow-entries-for-spoofed-senders) más adelante en este artículo.
-
-1. En el portal de Microsoft 365 Defender en <https://security.microsoft.com>, vaya a la página **Envíos** en **Acciones & envíos** \> **.** Para ir directamente a la página **Envíos** , use <https://security.microsoft.com/reportsubmission>.
-
-2. En la página **Envíos** , compruebe que la pestaña **Correos electrónicos** está seleccionada.
-
-3. En la pestaña **Correos electrónicos** , haga clic en ![el icono Enviar a Microsoft para análisis.](../../media/m365-cc-sc-create-icon.png) **Envíe a Microsoft para su análisis**.
-
-4. En el control flotante **Enviar a Microsoft para análisis** que aparece, escriba la siguiente información:
-
-   - **Seleccione el tipo de envío**: compruebe que el valor **Email** está seleccionado.
-
-   - **Agregue el identificador de mensaje de red o cargue el archivo de correo electrónico**: seleccione una de las siguientes opciones:
-
-     - **Agregar el identificador de mensaje de red de correo electrónico**: se trata de un valor GUID que está disponible en el encabezado **X-MS-Exchange-Organization-Network-Message-Id** en el mensaje o en el encabezado **X-MS-Office365-Filtering-Correlation-Id** en los mensajes en cuarentena.
-
-     - **Cargar el archivo de correo electrónico (.msg o .eml):** haga clic en **Examinar archivos**. En el cuadro de diálogo que se abre, busque y seleccione el archivo .eml o .msg y, a continuación, haga clic en **Abrir**.
-
-   - **Elija un destinatario que tenga un problema**: especifique el destinatario en el que desea ejecutar una comprobación de directiva. La comprobación de directiva determinará si el correo electrónico se bloqueó debido a directivas de usuario u organización.
-
-   - **Seleccione un motivo para enviar a Microsoft**: Seleccione **No se debería haber bloqueado (Falso positivo)** y, a continuación, configure los siguientes valores:
-
-     - **Permitir correos electrónicos con atributos similares (URL, remitente, etc.):** active esta opción ![Activar.](../../media/scc-toggle-on.png)
-
-         - **Quitar permitir entrada después**: El valor predeterminado es **de 30 días**, pero puede seleccionar entre los siguientes valores:
-           - **1 día**
-           - **7 días**
-           - **30 días**
-           - **Fecha específica**: el valor máximo es de 30 días a partir de hoy.
-
-         - **Permitir nota de entrada**: escriba información opcional sobre por qué está permitiendo este correo electrónico.
-
-   Cuando haya terminado, haga clic en **Enviary**, a continuación, haga clic en **Listo**.
-
-   :::image type="content" source="../../media/admin-submission-email-allow.png" alt-text="Envíe un correo electrónico falso positivo (correcto) a Microsoft para su análisis en la página Envíos del portal de Defender." lightbox="../../media/admin-submission-email-allow.png":::
-
-5. Transcurridos unos instantes, la entrada allow aparecerá en la pestaña **Dominios & direcciones** de la página **Lista de inquilinos permitidos o bloqueados** .
-
-> [!NOTE]
->
-> - Las permite se agregan durante el flujo de correo, en función de los filtros que determinaron que el mensaje era malintencionado. Por ejemplo, si se ha determinado que el remitente y una dirección URL del mensaje son incorrectos, se crea una entrada allow para el remitente y se crea una entrada allow para la dirección URL.
-> - Cuando se vuelve a encontrar esa entidad (dirección de dominio o correo electrónico, dirección URL, archivo), se omiten todos los filtros asociados a esa entidad.
-> - Durante el flujo de correo, si los mensajes del dominio o la dirección de correo electrónico pasan otras comprobaciones en la pila de filtrado, se entregarán los mensajes. Por ejemplo, si se supera la [autenticación por correo electrónico](email-validation-and-authentication.md) , se entregará un mensaje de un remitente en la entrada allow.
 
 ### <a name="use-the-microsoft-365-defender-portal-to-view-allow-or-block-entries-for-domains-and-email-addresses-in-the-tenant-allowblock-list"></a>Use el portal de Microsoft 365 Defender para ver las entradas de permitir o bloquear para dominios y direcciones de correo electrónico en la lista de permitidos o bloqueados de inquilinos.
 
@@ -238,7 +198,7 @@ Para obtener información detallada sobre la sintaxis y los [parámetros, vea Ge
 
 ### <a name="use-the-microsoft-365-defender-portal-to-modify-allow-or-block-entries-for-domains-and-email-addresses-in-the-tenant-allowblock-list"></a>Use el portal de Microsoft 365 Defender para modificar las entradas de permitir o bloquear para dominios y direcciones de correo electrónico en la lista de permitidos o bloqueados de inquilinos.
 
-Al modificar una entrada de permitir o bloquear para dominios y direcciones de correo electrónico en la lista Permitir o bloquear inquilinos, solo puede modificar la fecha de expiración y las notas.
+Al modificar entradas de permitir o bloquear para dominios y direcciones de correo electrónico en la lista Permitir o bloquear inquilinos, solo puede modificar la fecha de expiración y las notas.
 
 1. En el portal de Microsoft 365 Defender en <https://security.microsoft.com>, vaya a **Directivas & reglas De directivas** \> de amenazas sección \> **Reglas de directivas** de **amenazas** \> **Listas de permitidos o bloques de inquilinos**. O bien, para ir directamente a la página **Permitir o bloquear lista de inquilinos** , use <https://security.microsoft.com/tenantAllowBlockList>.
 
@@ -327,19 +287,14 @@ Tiene las siguientes opciones para crear entradas de bloque para remitentes supl
 
 #### <a name="use-the-microsoft-365-defender-portal-to-create-allow-entries-for-spoofed-senders-in-the-submissions-portal"></a>Use el portal de Microsoft 365 Defender para crear entradas permitidas para remitentes suplantados en el portal envíos.
 
-Al enviar mensajes bloqueados por [inteligencia de suplantación](learn-about-spoof-intelligence.md) de identidad a Microsoft desde la página **Envíos** , se agrega el remitente como una entrada de permitido en la pestaña **Remitentes suplantados en Lista de permitidos o bloqueados de inquilinos** .
+El envío de mensajes bloqueados por [inteligencia de suplantación](learn-about-spoof-intelligence.md) de identidad a Microsoft en el portal **envíos** en <https://security.microsoft.com/reportsubmission> agrega el remitente como una entrada de permiso para el remitente en la pestaña **Remitentes suplantados en Lista de permitidos o bloqueados de inquilinos** .
+
+Para obtener instrucciones, consulte [Informe de un buen correo electrónico a Microsoft](admin-submission.md#report-good-email-to-microsoft).
 
 > [!NOTE]
 > Al invalidar el veredicto en la información de inteligencia sobre suplantación de identidad, el remitente suplantado se convierte en una entrada de bloqueo o permiso manual que solo aparece en la pestaña **Remitentes suplantados de la lista de permitidos o bloqueados de inquilinos** .
 >
 > Si la inteligencia de suplantación de identidad no ha bloqueado al remitente, el envío del mensaje de correo electrónico a Microsoft no creará una entrada permitida en la lista de permitidos o bloqueados de inquilinos.
-
-Las instrucciones para informar del mensaje son casi idénticas a los pasos descritos en [Uso del portal de Microsoft 365 Defender para crear entradas permitidas para dominios y direcciones de correo electrónico en el portal Envíos](#use-the-microsoft-365-defender-portal-to-create-allow-entries-for-domains-and-email-addresses-in-the-submissions-portal).
-
-Las únicas diferencias son:
-
-- La **opción Remove allow entry after** setting in Step 4 (Quitar permitir entrada después de la configuración del paso 4) no tiene sentido, ya que las entradas de los remitentes suplantados nunca expiran.
-- La opción **Permitir nota de entrada** del paso 4 no se aplica a las entradas de remitentes suplantados en la lista de permitidos o bloqueados de inquilinos.
 
 #### <a name="use-the-microsoft-365-defender-portal-to-create-allow-entries-for-spoofed-senders-in-the-tenant-allowblock-list"></a>Use el portal de Microsoft 365 Defender para crear entradas permitidas para remitentes suplantados en la lista de permitidos o bloqueados de inquilinos.
 

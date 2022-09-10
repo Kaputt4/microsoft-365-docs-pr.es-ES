@@ -19,12 +19,12 @@ ms.collection:
 recommendations: false
 description: Componente de directiva DLP y referencia de configuración
 ms.custom: seo-marvel-apr2021
-ms.openlocfilehash: 12c416af0a6f715ce56c193830ddb0db0ad9eba1
-ms.sourcegitcommit: 651610ca73bfd1d008d97311b59782790df664fb
+ms.openlocfilehash: f9d5b5065925805c346f865706b34bb05c268571
+ms.sourcegitcommit: 173f696dc8f81259d852775572a6938ec39f6115
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/07/2022
-ms.locfileid: "67615240"
+ms.lasthandoff: 09/10/2022
+ms.locfileid: "67643903"
 ---
 # <a name="data-loss-prevention-policy-reference"></a>Referencia de directiva de prevención de pérdida de datos
 
@@ -313,8 +313,8 @@ Las opciones de contexto disponibles cambian en función de la ubicación que el
 ##### <a name="conditions-devices-supports"></a>Condiciones que admiten los dispositivos
 
 - El contenido contiene
-- (versión preliminar) El documento o los datos adjuntos están protegidos por contraseña o el archivo está cifrado. (.pdf, los archivos de Office son totalmente compatibles. Solo se admiten archivos cifrados pgp)
-- (versión preliminar) El contenido no tiene una etiqueta de confidencialidad aplicada.
+- (versión preliminar) El documento o los datos adjuntos están protegidos con contraseña (.pdf, los archivos de Office y los archivos cifrados de Symantec PGP son totalmente compatibles). Este predicado no detecta archivos cifrados con derechos digitales administrados (DRM) ni protegidos por permisos. 
+- (versión preliminar) El contenido no está etiquetado (.pdf, los archivos de Office son totalmente compatibles). Este predicado detecta el contenido que no tiene una etiqueta de confidencialidad aplicada. Para ayudar a garantizar que solo se detecten tipos de archivo admitidos, debe usar esta condición con la **extensión Archivo es** o **El tipo de archivo es** condiciones.
 - (versión preliminar) El usuario accedió a un sitio web confidencial desde Edge. Vea [Escenario 6 Supervisar o restringir las actividades de usuario en dominios de servicio confidencial (versión preliminar)](endpoint-dlp-using.md#scenario-6-monitor-or-restrict-user-activities-on-sensitive-service-domains) para más información. 
 - La extensión de archivo es
 - El tipo de archivo es
