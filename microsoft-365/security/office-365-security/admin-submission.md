@@ -17,12 +17,12 @@ ms.custom: seo-marvel-apr2020
 description: Los administradores pueden aprender a usar el portal envíos en el portal de Microsoft 365 Defender para enviar correo electrónico legítimo bloqueado, correo electrónico sospechoso, sospecha de correo electrónico de phishing, correo no deseado, otros mensajes potencialmente dañinos, direcciones URL y datos adjuntos de correo electrónico a Microsoft para volver a examinar.
 ms.subservice: mdo
 ms.service: microsoft-365-security
-ms.openlocfilehash: b5b54a0d6d8e760d392578997461be44a19cf92a
-ms.sourcegitcommit: 10e6abe740e27000e223378eb17d657a47555fa8
+ms.openlocfilehash: 56d61a09b3180a22cb525be1e97872b6f1616056
+ms.sourcegitcommit: 71643c8c73d1e6a4d909177656f8d2bd440b1022
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/31/2022
-ms.locfileid: "67480545"
+ms.lasthandoff: 09/10/2022
+ms.locfileid: "67642722"
 ---
 # <a name="use-the-submissions-portal-to-submit-suspected-spam-phish-urls-legitimate-email-getting-blocked-and-email-attachments-to-microsoft"></a>Use el portal envíos para enviar sospechas de correo no deseado, mensajes no deseados, direcciones URL, bloqueo de correo electrónico legítimo y datos adjuntos de correo electrónico a Microsoft.
 
@@ -115,8 +115,6 @@ Vea este breve vídeo para aprender a usar envíos de administrador en Microsoft
 > En el caso de los mensajes bloqueados incorrectamente por [inteligencia de suplantación de identidad](learn-about-spoof-intelligence.md), no se crea una entrada de bloque para el par de dominios en la lista de permitidos o bloqueados de inquilinos.
 >
 > En el caso de los mensajes bloqueados incorrectamente por [la protección de suplantación de dominio o usuario](set-up-anti-phishing-policies.md#impersonation-settings-in-anti-phishing-policies-in-microsoft-defender-for-office-365), no se crea una entrada de bloque para el dominio o el remitente en la lista de permitidos o bloqueados de inquilinos. En su lugar, el dominio o el remitente se agrega a la **sección Remitentes y dominios de confianza** de la [directiva anti-phishing](configure-mdo-anti-phishing-policies.md#use-the-microsoft-365-defender-portal-to-modify-anti-phishing-policies) que detectó el mensaje.
->
-> Para informar de un archivo como **No debería haberse bloqueado (Falso positivo),** consulte [Uso del portal de Microsoft 365 Defender para crear entradas permitidas para dominios y direcciones de correo electrónico en el portal Envíos](allow-block-email-spoof.md#use-the-microsoft-365-defender-portal-to-create-allow-entries-for-domains-and-email-addresses-in-the-submissions-portal).
 
 ## <a name="report-questionable-email-attachments-to-microsoft"></a>Notificar datos adjuntos de correo electrónico cuestionables a Microsoft
 
@@ -157,9 +155,6 @@ Vea este breve vídeo para aprender a usar envíos de administrador en Microsoft
 
 > :::image type="content" source="../../media/admin-submission-file-block.png" alt-text="Envíe un archivo adjunto de correo electrónico falso negativo (incorrecto) a Microsoft para su análisis en la página Envíos del portal de Defender." lightbox="../../media/admin-submission-file-block.png":::
 
- > [!NOTE]
- > Para informar de un archivo como **No se debería haber bloqueado (Falso positivo),** consulte [Uso del portal de Microsoft 365 Defender para crear entradas permitidas para los archivos en el portal Envíos](allow-block-files.md#use-the-microsoft-365-defender-portal-to-create-allow-entries-for-files-in-the-submissions-portal).
-
 ## <a name="report-questionable-urls-to-microsoft"></a>Notificar direcciones URL cuestionables a Microsoft
 
 1. En el portal de Microsoft 365 Defender en <https://security.microsoft.com>, vaya a la página **Envíos** en **Acciones & envíos** \> **.** Para ir directamente a la página **Envíos** , use <https://security.microsoft.com/reportsubmission>.
@@ -199,8 +194,17 @@ Vea este breve vídeo para aprender a usar envíos de administrador en Microsoft
 
 > :::image type="content" source="../../media/admin-submission-url-block.png" alt-text="Envíe una dirección URL falsa negativa (incorrecta) a Microsoft para su análisis en la página Envíos del portal de Defender." lightbox="../../media/admin-submission-url-block.png":::
 
- > [!NOTE]
- > Para informar de una dirección URL como **No se debería haber bloqueado (Falso positivo),** consulte [Uso del portal de Microsoft 365 Defender para crear entradas permitidas para direcciones URL en el portal envíos](allow-block-urls.md#use-the-microsoft-365-defender-portal-to-create-allow-entries-for-urls-in-the-submissions-portal).
+## <a name="report-good-email-to-microsoft"></a>Informar de un buen correo electrónico a Microsoft
+
+Para informar de los mensajes de correo electrónico bloqueados que deberían haberse permitido (falsos negativos), consulte [Uso del portal de Microsoft 365 Defender para crear entradas permitidas para dominios y direcciones de correo electrónico en el portal envíos](allow-block-email-spoof.md#use-the-microsoft-365-defender-portal-to-create-allow-entries-for-domains-and-email-addresses-in-the-submissions-portal).
+
+## <a name="report-good-email-attachments-to-microsoft"></a>Notificar datos adjuntos de correo electrónico correctos a Microsoft
+
+Para informar de los datos adjuntos de correo electrónico bloqueados que deberían haberse permitido (falsos negativos), consulte [Uso del portal de Microsoft 365 Defender para crear entradas permitidas para los archivos en el portal Envíos](allow-block-files.md#use-the-microsoft-365-defender-portal-to-create-allow-entries-for-files-in-the-submissions-portal).
+
+## <a name="report-good-urls-to-microsoft"></a>Notificar direcciones URL correctas a Microsoft
+
+Para informar de las direcciones URL bloqueadas que deberían haberse permitido (falsos negativos), consulte [Uso del portal de Microsoft 365 Defender para crear entradas permitidas para direcciones URL en el portal envíos](allow-block-urls.md#use-the-microsoft-365-defender-portal-to-create-allow-entries-for-urls-in-the-submissions-portal).
 
 ## <a name="view-email-admin-submissions-to-microsoft"></a>Visualización de envíos de administradores de correo electrónico a Microsoft
 
