@@ -13,12 +13,12 @@ manager: laurawi
 audience: itpro
 ms.collection: m365-security-compliance
 ms.custom: admindeeplinkCOMPLIANCE
-ms.openlocfilehash: 53b56c8e96beb3e68c56fd968ac87e58994bc2ee
-ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
+ms.openlocfilehash: 7f2a2f40d79db0fd344ca2a78f09840fd39939c8
+ms.sourcegitcommit: a6cbc057e757771cc0e7b53b184fab9fa53a658a
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/06/2022
-ms.locfileid: "66622973"
+ms.lasthandoff: 09/12/2022
+ms.locfileid: "67648733"
 ---
 # <a name="investigate-insider-risk-management-activities"></a>Investigación de actividades de administración de riesgos internos
 
@@ -141,6 +141,7 @@ Esta pestaña abre el resumen de los factores de riesgo de la actividad de alert
 - **Contenido de prioridad**: muestra las actividades asociadas con el contenido de prioridad.
 - **Dominios no permitidos**: muestra actividades para eventos asociados a dominios no permitidos.
 - **Acceso a registros de estado**: muestra las actividades de los eventos asociados con el acceso a los registros de estado.
+- **Uso de explorador de riesgo**: muestra actividades para eventos asociados con la navegación a sitios web potencialmente inadecuados.
 
 Con estos filtros, solo verá alertas con estos factores de riesgo, pero es posible que la actividad que generó una alerta no se incluya en ninguna de estas categorías. Por ejemplo, es posible que se haya generado una alerta que contiene actividades de secuencia simplemente porque el usuario copió un archivo en un dispositivo USB.
 
@@ -161,7 +162,7 @@ El gráfico **de actividad De usuario** es una de las herramientas más eficaces
 1. **Filtros de tiempo**: de forma predeterminada, los últimos tres meses de actividades se muestran en el gráfico Actividad del usuario. Puede filtrar fácilmente la vista de gráfico seleccionando las pestañas *6 Meses*, *3 Meses* o *1 Mes* en el gráfico de burbujas.
 2. **Actividad y detalles de alertas de riesgo**: las actividades de riesgo se muestran visualmente como burbujas de color en el gráfico Actividad del usuario. Las burbujas se crean para diferentes categorías de riesgo y. Seleccione una burbuja para mostrar los detalles de cada actividad de riesgo. Los detalles incluyen:
     - **Fecha** de la actividad de riesgo.
-    - Categoría de **actividad de riesgo**. Por ejemplo, *los correos electrónicos con datos adjuntos enviados fuera de la organización* o *archivos descargados de SharePoint Online*.
+    - Categoría de **actividad de riesgo**. Por ejemplo, *Email con datos adjuntos enviados fuera de la organización* o *archivos descargados de SharePoint Online*.
     - **Nivel de riesgo** de la alerta. Esta puntuación es la puntuación numérica para el nivel de gravedad del riesgo de alerta.
     - Número de eventos asociada a la alerta. También están disponibles vínculos a cada archivo o correo electrónico asociado a la actividad de riesgo.
 3. **Filtros y ordenación (versión preliminar):**
@@ -202,6 +203,7 @@ Use los filtros Ámbito de actividad y Información de riesgo para mostrar y ord
   - Actividades de secuencia
   - Actividades de filtración acumulativas
   - Actividades de acceso a registros de estado
+  - Uso de explorador de riesgo
 
 ![Información general sobre el explorador de actividades de administración de riesgos internos.](../media/insider-risk-activity-explorer.png)
 
@@ -239,7 +241,7 @@ A medida que la administración de riesgos internos alerta de la antigüedad, su
 
 Para ayudar a minimizar el número de elementos anteriores que proporcionan un valor actual limitado, se aplican los siguientes límites y retención para alertas de administración de riesgos internos, casos e informes de actividad de usuario:
 
-|Item|Retención/límite|
+|Elemento|Retención/límite|
 |---|---|
 |Alertas con estado de revisión de necesidades|120 días desde la creación de alertas y, a continuación, se elimina automáticamente|
 |Casos activos (y artefactos asociados)|Retención indefinida, nunca expirar|
@@ -274,4 +276,4 @@ Los usuarios modernos del área de trabajo suelen tener una amplia variedad de r
 
 - **Céntrese primero en los esfuerzos de analistas e investigadores en las alertas de mayor riesgo**. En función de las directivas, es posible que esté capturando actividades y generando alertas con distintos grados de impacto potencial en los esfuerzos de mitigación de riesgos. [Filtre las alertas](insider-risk-management-activities.md#filter-alerts-on-the-alert-dashboard) por gravedad y dé prioridad a las *alertas de gravedad alta* .
 - **Asigne usuarios como analistas e investigadores**. Tener al usuario adecuado asignado a los roles adecuados es una parte importante del proceso de revisión de alertas de riesgo internos. Asegúrese de que ha asignado los usuarios adecuados a los grupos de roles *Insider Risk Management Analysts* y *Insider Risk Management Investigators* .  
-- **Use características de riesgo internos automatizadas para ayudar a descubrir las actividades de mayor riesgo**. La [detección de secuencias de](insider-risk-management-policies.md#sequence-detection) administración de riesgos internos y las características [de detección de filtración acumulativa](insider-risk-management-policies.md#cumulative-exfiltration-detection-preview) pueden ayudarle a detectar rápidamente riesgos más difíciles de encontrar en su organización. Considere la posibilidad de ajustar [los refuerzos de la puntuación de riesgo](insider-risk-management-settings.md#indicators), [las exclusiones de tipo de archivo](insider-risk-management-settings.md#file-type-exclusions), [los dominios](insider-risk-management-settings.md#domains) y la [configuración mínima del umbral de indicador](insider-risk-management-settings.md#indicator-level-settings-preview) para las directivas.
+- **Use características de riesgo internos automatizadas para ayudar a descubrir las actividades de mayor riesgo**. La [detección de secuencias de](insider-risk-management-policies.md#sequence-detection-preview) administración de riesgos internos y las características [de detección de filtración acumulativa](insider-risk-management-policies.md#cumulative-exfiltration-detection-preview) pueden ayudarle a detectar rápidamente riesgos más difíciles de encontrar en su organización. Considere la posibilidad de ajustar [los refuerzos de la puntuación de riesgo](insider-risk-management-settings.md#indicators), [las exclusiones de tipo de archivo](insider-risk-management-settings.md#file-type-exclusions), [los dominios](insider-risk-management-settings.md#domains) y la [configuración mínima del umbral de indicador](insider-risk-management-settings.md#indicator-level-settings-preview) para las directivas.

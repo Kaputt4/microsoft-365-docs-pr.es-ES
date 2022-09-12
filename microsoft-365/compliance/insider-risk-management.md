@@ -15,19 +15,19 @@ ms.collection:
 - m365-security-compliance
 - m365solution-insiderrisk
 - m365initiative-compliance
-ms.openlocfilehash: db99267bc7d55e6e069e984dc4b419ed379fd088
-ms.sourcegitcommit: 221212fff9737e0ea386755deb8fed62ae9c254b
+ms.openlocfilehash: 5b82aa83a790a96f8196f89f75f2aaf905fc0a14
+ms.sourcegitcommit: a6cbc057e757771cc0e7b53b184fab9fa53a658a
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/14/2022
-ms.locfileid: "66787218"
+ms.lasthandoff: 09/12/2022
+ms.locfileid: "67648711"
 ---
 # <a name="learn-about-insider-risk-management"></a>Información sobre riesgos internos de Microsoft
 
 > [!TIP]
 > *¿Sabía que puede probar las versiones premium de las nueve soluciones de Microsoft Purview de forma gratuita?* Utilice la prueba de 90 días de las soluciones Purview para explorar cómo las sólidas capacidades de Purview pueden ayudar a su organización a satisfacer sus necesidades de cumplimiento. Los clientes Microsoft 365 E3 y Office 365 E3 pueden empezar ahora en el [Centro de pruebas del portal de cumplimiento de Microsoft Purview](https://compliance.microsoft.com/trialHorizontalHub?sku=ComplianceE5&ref=DocsRef). Obtenga información sobre [las personas que pueden registrarse y los términos de la prueba](compliance-easy-trials.md).
 
-Administración de riesgos internos de Microsoft Purview es una solución de cumplimiento que ayuda a minimizar los riesgos internos al permitirle detectar, investigar y actuar sobre actividades malintencionadas e involuntariamente en su organización. Las directivas de riesgo internos le permiten definir los tipos de riesgos para identificar y detectar en su organización, incluida la acción en casos y la elevación de casos a Microsoft eDiscovery (Premium) si es necesario. Los analistas de riesgo de su organización pueden realizar rápidamente las acciones adecuadas para asegurarse de que los usuarios cumplen los estándares de cumplimiento de su organización.
+La Administración de riesgos internos de Microsoft Purview es una solución de cumplimiento que ayuda a minimizar los riesgos internos, ya que le permite detectar, investigar y actuar en actividades malintencionadas e involuntarias en su organización. Las directivas de riesgos internos le permiten definir los tipos de riesgos a identificar y detectar en su organización, incluida la acción sobre casos y la elevación de casos a Microsoft eDiscovery (Premium) si es necesario. Los analistas de riesgo de su organización pueden tomar rápidamente las medidas adecuadas para asegurarse de que los usuarios cumplen los estándares de cumplimiento de su organización.
 
 Para obtener más información y una introducción al proceso de planeación para abordar las actividades de riesgo en su organización, consulte [Inicio de un programa de administración de riesgos internos](https://download.microsoft.com/download/b/2/0/b208282a-2482-4986-ba07-15a9b9286df0/pwc-starting-an-insider-risk-management-program-with-pwc-and-microsoft.pdf).
 
@@ -125,7 +125,7 @@ Para resolver las alertas, se abre un nuevo caso, se asigna la alerta a un caso 
 
 ![Evaluación interna de la administración de riesgos.](../media/insider-risk-triage.png)
 
-### <a name="investigate"></a>Investigar
+### <a name="investigate"></a>Investigación
 
 Investigue rápidamente todas las actividades de un usuario seleccionado con [informes de actividad de usuario (versión preliminar).](insider-risk-management-activities.md#user-activity-reports-preview) Estos informes permiten a los investigadores de su organización examinar las actividades de usuarios específicos durante un período de tiempo definido sin tener que asignarlas de forma temporal o explícita a una directiva de administración de riesgos internos. Después de examinar las actividades de un usuario, los investigadores pueden descartar actividades individuales como benignas, compartir o enviar por correo electrónico un vínculo al informe con otros investigadores, o elegir asignar al usuario temporal o explícitamente a una directiva de administración de riesgos internos.
 
@@ -141,7 +141,7 @@ Si se selecciona un caso en el panel de casos, se abre el caso para su investiga
 
 Además, el nuevo [registro de auditoría (versión preliminar)](insider-risk-management-audit-log.md) le permite mantenerse informado de las acciones que se realizaron en las características de administración de riesgos internos. Este recurso permite una revisión independiente de las acciones realizadas por los usuarios asignados a uno o varios grupos de roles de administración de riesgos internos.
 
-### <a name="action"></a>Action
+### <a name="action"></a>Acción
 
 Una vez investigados los casos, los revisores pueden actuar rápidamente para resolver el caso o colaborar con otras partes interesadas de riesgo de la organización. Si los usuarios infringen accidental o involuntariamente las condiciones de la directiva, se puede enviar al usuario un aviso sencillo desde las plantillas de aviso que puede personalizar para su organización. Estos avisos pueden servir como recordatorios simples o pueden dirigir al usuario a un entrenamiento de actualización o una guía para ayudar a evitar comportamientos de riesgo futuros. Para más información, consulte [plantillas de notificación de administración de riesgos internos](insider-risk-management-notices.md).
 
@@ -169,7 +169,7 @@ En la mayoría de los casos, los usuarios hacen todo lo posible para controlar c
 - [Filtración de datos por parte de usuarios prioritarios (versión preliminar)](insider-risk-management-policies.md#data-leaks-by-priority-users-preview)
 - [Filtraciones de datos por parte de usuarios inconformes (versión preliminar)](insider-risk-management-policies.md#data-leaks-by-disgruntled-users-preview)
 
-## <a name="intentional-or-unintentional-security-policy-violations-preview"></a>Infracciones de directivas de seguridad intencionadas o involuntarias (versión preliminar)
+### <a name="intentional-or-unintentional-security-policy-violations-preview"></a>Infracciones de directivas de seguridad intencionadas o involuntarias (versión preliminar)
 
 Los usuarios suelen tener un gran grado de control al administrar sus dispositivos en el área de trabajo moderna. Este control puede incluir permisos para instalar o desinstalar las aplicaciones necesarias en el desempeño de sus tareas o la capacidad de deshabilitar temporalmente las características de seguridad del dispositivo. Independientemente de si esta actividad es involuntaria, accidental o malintencionada, esta conducta puede suponer un riesgo para su organización y es importante identificar y actuar para minimizar. Para ayudar a identificar estas actividades de seguridad de riesgo, las siguientes plantillas de infracción de directivas de seguridad de administración de riesgos internos puntúan los indicadores de riesgo de seguridad y usan alertas de Microsoft Defender para punto de conexión para proporcionar información sobre las actividades relacionadas con la seguridad:
 
@@ -178,25 +178,31 @@ Los usuarios suelen tener un gran grado de control al administrar sus dispositiv
 - [Infracciones de la directiva de seguridad por parte de los usuarios prioritarios (versión preliminar)](insider-risk-management-policies.md#security-policy-violations-by-priority-users-preview)
 - [Infracciones de la directiva de seguridad por parte de usuarios inconformes (versión preliminar)](insider-risk-management-policies.md#security-policy-violations-by-disgruntled-users-preview)
 
-## <a name="policies-for-users-based-on-position-access-level-or-risk-history-preview"></a>Directivas para usuarios basadas en la posición, el nivel de acceso o el historial de riesgos (versión preliminar)
+### <a name="policies-for-users-based-on-position-access-level-or-risk-history-preview"></a>Directivas para usuarios basadas en la posición, el nivel de acceso o el historial de riesgos (versión preliminar)
 
 Los usuarios de su organización pueden tener distintos niveles de riesgo en función de su posición, nivel de acceso a información confidencial o historial de riesgos. Esta estructura puede incluir miembros del equipo directivo ejecutivo de la organización, administradores de TI que tienen amplios privilegios de acceso a datos y redes o usuarios con un historial pasado de actividades de riesgo. En estas circunstancias, una inspección más cercana y una puntuación de riesgo más agresiva son importantes para ayudar a exponer alertas para la investigación y la acción rápida. Para ayudar a identificar actividades de riesgo para estos tipos de usuarios, puede crear grupos de usuarios prioritarios y crear directivas a partir de las siguientes plantillas de directiva:
 
 - [Infracciones de la directiva de seguridad por parte de los usuarios prioritarios (versión preliminar)](insider-risk-management-policies.md#security-policy-violations-by-priority-users-preview)
 - [Filtración de datos por parte de usuarios prioritarios (versión preliminar)](insider-risk-management-policies.md#data-leaks-by-priority-users-preview)
 
-## <a name="healthcare-preview"></a>Healthcare (versión preliminar)
+### <a name="healthcare-preview"></a>Healthcare (versión preliminar)
 
 En el caso de las organizaciones de la industria sanitaria, estudios recientes han encontrado una tasa muy alta de infracciones de datos relacionadas con los usuarios internos. La detección del uso indebido de los datos de los pacientes y la información de los registros de salud es un componente fundamental para proteger la privacidad de los pacientes y cumplir con la normativa de cumplimiento, como la Ley de Portabilidad y Responsabilidad del Seguro De Salud (HIPAA) y la Ley de Tecnología de información sanitaria para la salud económica y clínica (HITECH). El uso indebido de los datos de los pacientes puede ir desde el acceso a registros de pacientes con privilegios hasta el acceso a registros de pacientes de familiares o vecinos con intenciones malintencionadas. Para ayudar a identificar estos tipos de actividades de riesgo, las siguientes plantillas de directivas de administración de riesgos internos usan el conector de RR. HH. de Microsoft 365 y un conector de datos específico para la salud para empezar a puntuar indicadores de riesgo relacionados con comportamientos que pueden producirse en los sistemas de registro de salud electrónico (EHR):
 
 - [Uso indebido general de datos de pacientes (versión preliminar)](insider-risk-management-policies.md#general-patient-data-misuse-preview)
 
-## <a name="actions-and-behaviors-by-disgruntled-users-preview"></a>Acciones y comportamientos de usuarios descontentos (versión preliminar)
+### <a name="actions-and-behaviors-by-disgruntled-users-preview"></a>Acciones y comportamientos de usuarios descontentos (versión preliminar)
 
 Los eventos de estrés de empleo pueden afectar al comportamiento del usuario de varias maneras relacionadas con los riesgos internos. Estos factores de estrés pueden ser una revisión de rendimiento deficiente, una disminución de posición o la colocación del usuario en un plan de revisión de rendimiento. Aunque la mayoría de los usuarios no responden malintencionadamente a estos eventos, el estrés de estas acciones puede dar lugar a que algunos usuarios se comporten de maneras que normalmente no consideren en circunstancias normales. Para ayudar a identificar estos tipos de actividades de riesgo, las siguientes plantillas de directivas de administración de riesgos internos usan el conector de RR. HH. de Microsoft 365 y comienzan a puntuar indicadores de riesgo relacionados con comportamientos que pueden producirse cerca de eventos de estrés en el empleo:
 
 - [Filtraciones de datos por parte de usuarios inconformes (versión preliminar)](insider-risk-management-policies.md#data-leaks-by-disgruntled-users-preview)
 - [Infracciones de la directiva de seguridad por parte de usuarios inconformes (versión preliminar)](insider-risk-management-policies.md#security-policy-violations-by-disgruntled-users-preview)
+
+### <a name="risky-browser-usage-that-could-result-in-a-security-incident-preview"></a>Uso de explorador de riesgo que podría dar lugar a un incidente de seguridad (versión preliminar)
+
+La mayoría de las organizaciones proporcionan a los usuarios reglas y directrices que aclaran cómo se deben usar los dispositivos y el acceso a Internet de una organización. Estas directivas ayudan a proteger tanto a la organización como a los usuarios de los riesgos de seguridad y normativos. Para ayudar a identificar estos tipos de acciones de riesgo, la siguiente plantilla de directiva de administración de riesgos internos puede ayudar a detectar y habilitar la puntuación de riesgos para comportamientos de exploración web que podrían dar lugar a un incidente de seguridad de datos, como visitar sitios que proporcionan herramientas de malware o piratería.
+
+- [Uso general del explorador de riesgo (versión preliminar)](insider-risk-management-policies.md#general-risky-browser-usage-preview)
 
 ## <a name="ready-to-get-started"></a>¿Está listo para empezar?
 

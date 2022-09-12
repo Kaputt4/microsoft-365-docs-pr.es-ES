@@ -16,12 +16,12 @@ ms.collection:
 - m365solution-insiderrisk
 - m365initiative-compliance
 ms.custom: admindeeplinkCOMPLIANCE
-ms.openlocfilehash: 50eab9a7cf521258119597f10a1e2d27d49192d0
-ms.sourcegitcommit: 10e6abe740e27000e223378eb17d657a47555fa8
+ms.openlocfilehash: 30804601a463a47f2c11b0d8054a2435acdca486
+ms.sourcegitcommit: a6cbc057e757771cc0e7b53b184fab9fa53a658a
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/31/2022
-ms.locfileid: "67472466"
+ms.lasthandoff: 09/12/2022
+ms.locfileid: "67648755"
 ---
 # <a name="get-started-with-insider-risk-management-settings"></a>Introducción a la configuración de administración de riesgos internos
 
@@ -200,7 +200,7 @@ A las actividades de usuario detectadas por las directivas de riesgo internos se
 - **Volumen predeterminado**: verá todas las alertas de gravedad alta y una cantidad equilibrada de alertas de gravedad media y baja.
 - **Más alertas**: verá todas las alertas de gravedad media y alta y las alertas de gravedad más baja. Este nivel de configuración podría dar lugar a más falsos positivos.
 
-### <a name="microsoft-defender-for-endpoint-preview"></a>Microsoft Defender para punto de conexión (versión preliminar)
+### <a name="microsoft-defender-for-endpoint-alert-statuses-preview"></a>Microsoft Defender para punto de conexión estados de alerta (versión preliminar)
 
 [Microsoft Defender para punto de conexión](/windows/security/threat-protection/microsoft-defender-atp/microsoft-defender-advanced-threat-protection) es una plataforma de seguridad de punto de conexión empresarial diseñada para ayudar a las redes empresariales a prevenir, detectar, investigar y responder a amenazas avanzadas. Para tener una mejor visibilidad de las infracciones de seguridad en su organización, puede importar y filtrar alertas de Defender para punto de conexión para las actividades que se usan en las directivas creadas a partir de plantillas de directivas de infracción de seguridad de administración de riesgos internos.
 
@@ -236,6 +236,72 @@ Para cada una de las siguientes configuraciones de dominio, puede escribir hasta
     Al especificar dominios permitidos en la configuración, esta actividad con estos dominios se trata de forma similar a cómo se trata la actividad interna de la organización. Por ejemplo, los dominios agregados aquí se asignan a actividades que pueden implicar compartir contenido con alguien de fuera de la organización (por ejemplo, enviar correo electrónico a alguien con una dirección de gmail.com).
 
 - **Dominios de terceros:** Si su organización usa dominios de terceros con fines empresariales (como el almacenamiento en la nube), insclúyelos aquí para que pueda recibir alertas de actividad relacionada con el indicador de dispositivo *Use un explorador para descargar contenido de un sitio de terceros*.
+
+### <a name="file-path-exclusions"></a>Exclusiones de ruta de archivo
+
+Al definir las rutas de acceso de archivo que se van a excluir, las actividades del usuario que se asignan a indicadores específicos y que se producen en estas ubicaciones de ruta de acceso de archivo no generarán alertas de directiva. Algunos ejemplos son copiar o mover archivos a una carpeta del sistema o a una ruta de acceso de recurso compartido de red. Puede escribir hasta 500 rutas de acceso de archivo para su exclusión.
+
+Para agregar rutas de acceso de archivo para excluir, complete los pasos siguientes:
+
+1. En el portal de cumplimiento, vaya a Configuración **de administración de** >  riesgos internos **Detecciones** > **inteligentes**. 
+2. En la sección **Exclusión de ruta de acceso** de archivo, seleccione **Agregar rutas de acceso de archivo para excluir**.
+3. En el panel **Agregar una ruta de acceso de archivo** , escriba un recurso compartido de red exacto o una ruta de acceso del dispositivo que se excluirá de la puntuación de riesgo. También puede usar * y *([0-9]) para indicar carpetas y subcarpetas específicas que se van a excluir.
+4. Seleccione **Agregar rutas de acceso de archivo** para excluir para configurar las exclusiones de ruta de acceso de archivo o **Cerrar** para descartar los cambios. 
+
+Para eliminar una exclusión de ruta de acceso de archivo, seleccione la exclusión de ruta de acceso de archivo y seleccione **Eliminar**.
+
+### <a name="default-file-path-exclusions"></a>Exclusiones de ruta de acceso de archivo predeterminadas
+
+De forma predeterminada, varias rutas de acceso de archivo se excluyen automáticamente de la generación de alertas de directiva. Las actividades de estas rutas de acceso de archivo suelen ser benignas y podrían aumentar el volumen de alertas que no requieren acción. Si es necesario, puede cancelar la selección de estas exclusiones de ruta de acceso de archivo predeterminadas para habilitar la puntuación de riesgo para las actividades de estas ubicaciones.
+
+Las exclusiones de ruta de acceso de archivo predeterminadas son:
+
+- \Users\\\*\AppData
+- \Users\\\*\AppData\Local
+- \Users\\\*\AppData\Local\Roaming
+- \Users\\\*\AppData\Local\Local\Temp
+
+Los caracteres comodín de estas rutas de acceso indican que todos los niveles de carpeta entre \Users y \AppData se incluyen en la exclusión. Por ejemplo, las actividades de *C:\Users\Test1\AppData\Local* y *C:\Users\Test2\AppData\Local*, *C:\Users\Test3\AppData\Local* (y así sucesivamente) se incluirán y no se puntuarán como riesgo como parte de la selección de exclusión *\Users\\\*\AppData\Local* .
+
+### <a name="site-url-exclusions"></a>Exclusiones de direcciones URL del sitio
+
+Configure exclusiones de direcciones URL del sitio para evitar que las posibles actividades de riesgo que se producen en SharePoint (y sitios de SharePoint asociados a sitios de canal de equipo) generen alertas de directiva. Es posible que desee considerar la posibilidad de excluir sitios y canales que contengan archivos y datos no confidenciales que se puedan compartir con las partes interesadas o el público. Puede escribir hasta 500 rutas de acceso de dirección URL de sitio para excluir.
+
+Para agregar rutas de acceso de dirección URL del sitio que se van a excluir, siga estos pasos:
+
+1. En el portal de cumplimiento, vaya a Configuración **de administración de** >  riesgos internos **Detecciones** > **inteligentes**.
+2. En la sección **Exclusión de direcciones URL del sitio** , seleccione **Agregar o editar sitios de SharePoint**.
+3. En el panel **Agregar o editar sitios de SharePoint** , escriba o busque el sitio de SharePoint que se excluirá de la puntuación de riesgo. Solo verá los sitios de SharePoint a los que tiene permiso de acceso.
+4. Seleccione **Agregar** para configurar las exclusiones de direcciones URL del sitio o **Cancelar** para descartar los cambios.
+
+Para editar las rutas de acceso url del sitio que se van a excluir, siga estos pasos:
+
+1. En el portal de cumplimiento, vaya a Configuración **de administración de** >  riesgos internos **Detecciones** > **inteligentes**.
+2. En la sección **Exclusión de direcciones URL del sitio** , seleccione **Agregar o editar sitios de SharePoint**.
+3. En el panel **Agregar o editar sitios de SharePoint** , escriba o busque el sitio de SharePoint que se excluirá de la puntuación de riesgo. Solo verá los sitios de SharePoint a los que tiene permiso de acceso.
+4. Seleccione **Editar** para configurar las exclusiones de direcciones URL del sitio o **Cancelar** para descartar los cambios.
+
+Para eliminar una exclusión de dirección URL del sitio, seleccione la exclusión de la dirección URL del sitio y seleccione **Eliminar**.
+
+### <a name="keyword-exclusions"></a>Exclusiones de palabras clave
+
+Configure exclusiones para palabras clave que aparecen en nombres de archivo, rutas de acceso de archivo o líneas de asunto de mensajes de correo electrónico. Esto permite flexibilidad para las organizaciones que necesitan reducir el posible ruido de alertas debido al marcado de términos benignos especificados para su organización. Estas actividades relacionadas con archivos o asuntos de correo electrónico que contienen la palabra clave serán ignoradas por las directivas de administración de riesgos internos y no generarán alertas. Puede escribir hasta 500 palabras clave para excluir. 
+
+Use **excluir solo si no contiene** campo para definir agrupaciones específicas de términos que se omitirán por exclusión. Por ejemplo, si quiere excluir la palabra clave "training", pero no excluir "entrenamiento de cumplimiento", escribiría "compliance" (o "compliance training") en **Exclude solo si no contiene** campo y "training" en el campo **But does contain** .
+
+Si solo quiere excluir términos independientes específicos, escriba los términos en el **campo Pero** contiene solo.
+
+Para agregar palabras clave independientes que se van a excluir, siga estos pasos:
+
+1. En el portal de cumplimiento, vaya a Configuración **de administración de** >  riesgos internos **Detecciones** > **inteligentes**.
+2. En la sección **Exclusión de palabras clave** , escriba las palabras clave independientes en el campo **Pero contiene** .
+3. Seleccione **Guardar** para configurar las exclusiones de palabras clave.
+
+Para eliminar una palabra clave independiente que se va a excluir, siga estos pasos:
+
+1. En el portal de cumplimiento, vaya a Configuración **de administración de** >  riesgos internos **Detecciones** > **inteligentes**. 
+2. En la sección **Exclusión de palabras clave** , seleccione la *X* para la palabra clave independiente específica en el campo **Pero contiene** . Repita el procedimiento según sea necesario para quitar varias palabras clave.
+3. Seleccione **Guardar** para eliminar las exclusiones de palabras clave.
 
 ## <a name="export-alerts"></a>Exportar alertas
 

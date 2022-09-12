@@ -15,12 +15,12 @@ ms.collection:
 - m365-security-compliance
 - m365solution-insiderrisk
 - m365initiative-compliance
-ms.openlocfilehash: d70c5a568e1b694229f3c2f1ba11fe9a2be807f6
-ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
+ms.openlocfilehash: 20501814ccf87cfbbda6080b60515be374516cd2
+ms.sourcegitcommit: a6cbc057e757771cc0e7b53b184fab9fa53a658a
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/06/2022
-ms.locfileid: "66634189"
+ms.lasthandoff: 09/12/2022
+ms.locfileid: "67648623"
 ---
 # <a name="learn-about-and-configure-insider-risk-management-browser-signal-detection"></a>Información y configuración de la detección de señales del explorador de administración de riesgos internos
 
@@ -30,6 +30,7 @@ Los exploradores web a menudo los usan los usuarios para acceder a archivos conf
 - Archivos impresos en dispositivos locales o de red
 - Archivos transferidos o copiados a un recurso compartido de red
 - Archivos copiados en dispositivos USB
+- Exploración de sitios web de riesgo
 
 Las señales de estos eventos se detectan en Microsoft Edge mediante funcionalidades integradas del explorador y mediante el complemento *Extensión de cumplimiento de Microsoft* . En Google Chrome, los clientes usan la *extensión de cumplimiento de Microsoft* para la detección de señales.
 
@@ -41,6 +42,7 @@ En la tabla siguiente se resumen las actividades detectadas y la compatibilidad 
 | Archivos impresos en dispositivos locales o de red      | Nativa             | Extensión         |
 | Archivos transferidos o copiados a un recurso compartido de red | Extensión          | Extensión         |
 | Archivos copiados en dispositivos USB                    | Extensión          | Extensión         |
+| Exploración de sitios web de riesgo                        | Extensión          | Extensión         |
 
 ## <a name="common-requirements"></a>Requisitos comunes
 
@@ -52,13 +54,17 @@ Antes de instalar el complemento de Microsoft Edge o la extensión de Google Chr
 
 Para conocer los requisitos de configuración específicos del explorador, consulte las secciones Microsoft Edge y Google Chrome más adelante en este artículo.
 
+## <a name="additional-requirements"></a>Requisitos adicionales 
+
+Si usa directivas basadas en la plantilla *de uso de explorador de riesgo*, se debe seleccionar al menos un *indicador de exploración* en **Indicadores de directivas** de **configuración** >  de **administración** >  de riesgos internos.
+
 ## <a name="configure-browser-signal-detection-for-microsoft-edge"></a>Configuración de la detección de señales del explorador para Microsoft Edge
 
 ### <a name="microsoft-edge-browser-requirements"></a>Requisitos del explorador Microsoft Edge
 
 - Cumplir los requisitos comunes
-- Microsoft Edge x64, versión 91.0.864.41 o posterior
-- *Complemento de extensión de cumplimiento de Microsoft* versión 1.0.0.44 o posterior
+- Versión más reciente de Microsoft Edge x64 (91.0.864.41 o posterior)
+- Complemento *de extensión de cumplimiento de Microsoft* más reciente (1.0.0.44 o posterior)
 - Edge.exe no está configurado como un explorador no permitido
 
 ### <a name="option-1-basic-setup-recommended-for-testing-with-edge"></a>Opción 1: Configuración básica (se recomienda para las pruebas con Edge)
@@ -120,7 +126,7 @@ La compatibilidad con la detección de señales del explorador de administració
 
 - Cumplir los requisitos comunes
 - Versión más reciente de Google Chrome x64
-- *Microsoft Compliance Extension* versión 2.0.0.183 o posterior
+- Versión más reciente *de la extensión de cumplimiento de Microsoft* (2.0.0.183 o posterior)
 - Chrome.exe no está configurado como un explorador no permitido
 
 ### <a name="option-1-basic-setup-recommended-for-testing-with-chrome"></a>Opción 1: Configuración básica (se recomienda para las pruebas con Chrome)

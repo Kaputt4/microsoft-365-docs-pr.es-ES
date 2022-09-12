@@ -16,12 +16,12 @@ ms.collection:
 - m365solution-insiderrisk
 - m365initiative-compliance
 ms.custom: admindeeplinkCOMPLIANCE
-ms.openlocfilehash: c85d126d92e27080d1e38f9b25deed1108eb0ea9
-ms.sourcegitcommit: 34910ea9318289d78c35b0e7990238467c05384b
+ms.openlocfilehash: f000ece5715667b07222d31a9e131fed3eab552f
+ms.sourcegitcommit: a6cbc057e757771cc0e7b53b184fab9fa53a658a
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/10/2022
-ms.locfileid: "67306666"
+ms.lasthandoff: 09/12/2022
+ms.locfileid: "67648689"
 ---
 # <a name="get-started-with-insider-risk-management"></a>Introducción a la administración de riesgos internos
 
@@ -94,11 +94,11 @@ Al trabajar con la administración de riesgos internos, elegirá entre estas opc
 |---|---|---|---|---|---|
 |Configuración de directivas y opciones|Sí|Sí|No|No|No|
 |Información de análisis de acceso|Sí|Sí|Sí|No|No|
-|Acceso & investigar alertas|Sí|No|Sí|Sí|No|
-|Acceso & investigar casos|Sí|No|Sí|Sí|No|
-|Acceso & ver el Explorador de contenido|Sí|No|No|Sí|No|
-|Configuración de plantillas de aviso|Sí|No|Sí|Sí|No|
-|Ver & exportar registros de auditoría|Sí|No|No|No|Sí|
+|Acceso & investigar alertas|Yes|No|Sí|Sí|No|
+|Acceso & investigar casos|Yes|No|Sí|Sí|No|
+|Acceso & ver el Explorador de contenido|Yes|No|No|Sí|No|
+|Configuración de plantillas de aviso|Yes|No|Sí|Sí|No|
+|Ver & exportar registros de auditoría|Yes|No|No|No|Sí|
 
 > [!IMPORTANT]
 > Asegúrese de tener siempre al menos un usuario en los grupos de roles *integrados Insider Risk Management* o *Insider Risk Management Administración* (según la opción que elija) para que la configuración de administración de riesgos internos no se incluya en un escenario de "administrador cero" si determinados usuarios abandonan la organización.
@@ -247,7 +247,7 @@ Antes de configurar una directiva, defina los siguientes valores de riesgo inter
     - [Exclusiones de tipos de archivo](insider-risk-management-settings.md#file-type-exclusions)
     - [Número mínimo de eventos diarios para aumentar la puntuación de actividad inusual](insider-risk-management-settings.md#minimum-number-of-daily-events-to-boost-score-for-unusual-activity)
     - [Nivel de volumen de alertas](insider-risk-management-settings.md#alert-volume)
-    - [estado de alerta de Microsoft Defender para punto de conexión](insider-risk-management-settings.md#microsoft-defender-for-endpoint-preview)
+    - [estado de alerta de Microsoft Defender para punto de conexión](insider-risk-management-settings.md#microsoft-defender-for-endpoint-alert-statuses-preview)
     - [Configuración del dominio](insider-risk-management-settings.md#domains)
 6. En la página **Exportar alertas**, habilite la exportación de información de alertas de riesgo internos mediante las API de administración de Office 365 si es necesario.
 7. En la página **Grupos de usuarios prioritarios** , cree un grupo de usuarios de prioridad y agregue usuarios si no se crean en el **paso 3**.
@@ -312,13 +312,14 @@ Las directivas de administración de riesgos internos incluyen usuarios asignado
 
     Si ha seleccionado al menos un indicador de *Office* o *Dispositivo*, seleccione los **Impulsores de la puntuación de riesgo** según corresponda. Los impulsores de la puntuación de riesgo solo se aplican a los indicadores seleccionados.
     Si ha seleccionado una plantilla de directiva de *Robo de datos* o *Filtración de datos*, seleccione uno o más métodos de **Detección de Secuencia** y un método de **Detección de filtración acumulada** para aplicar a la directiva.
+    Si ha seleccionado la plantilla de directiva *de uso de explorador de riesgo* , seleccione uno o varios de los **indicadores de exploración**.
 
 20. Seleccione **Siguiente** para continuar.
 21. En la página **Decidir si usar umbrales de indicadores predeterminados o personalizados** , elija umbrales personalizados o predeterminados para los indicadores de directiva que ha seleccionado. Elija **Usar umbrales predeterminados para todos los indicadores** o **Especificar umbrales personalizados** para los indicadores de directiva seleccionados. Si ha seleccionado Especificar umbrales personalizados, elija el nivel adecuado para generar el nivel deseado de alertas de actividad para cada indicador de directiva.
 22. Seleccione **Siguiente** para continuar.
 23. En la página **Revisión**, revise la configuración que ha elegido para la directiva y cualquier sugerencia o advertencia sobre sus selecciones. Seleccione **Editar** para cambiar cualquiera de los valores de la directiva o seleccione **Enviar** para crear y activar la directiva.
 
-## <a name="next-steps"></a>Siguientes pasos
+## <a name="next-steps"></a>Pasos siguientes
 
 Después de completar estos pasos para crear la primera directiva de administración de riesgos internos, empezará a recibir alertas de indicadores de actividad después de aproximadamente 24 horas. Configure directivas adicionales según sea necesario mediante las instrucciones del paso 4 de este artículo o los pasos descritos en [Creación de una nueva directiva de riesgo interno](insider-risk-management-policies.md#create-a-new-policy).
 
