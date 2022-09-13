@@ -17,12 +17,12 @@ ms.collection:
 - m365-initiative-defender-endpoint
 ms.topic: conceptual
 ms.subservice: mde
-ms.openlocfilehash: 0f94cab9a414a2d5dc8343ff01cd4dcb10636ef2
-ms.sourcegitcommit: d3ef9391f621e8f4ca70661184b3bb82c6cbda94
+ms.openlocfilehash: 28f5ea1f30567622e176ad20058f6f1674edba5c
+ms.sourcegitcommit: db89873e22a12705ed313964c1bc2fa19d4fe719
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/02/2022
-ms.locfileid: "67578088"
+ms.lasthandoff: 09/13/2022
+ms.locfileid: "67652459"
 ---
 # <a name="microsoft-defender-for-endpoint---mobile-threat-defense"></a>Microsoft Defender para punto de conexión: Mobile Threat Defense
 
@@ -41,8 +41,6 @@ Microsoft Defender para punto de conexión en Android e iOS es nuestra **soluci�
 
 Microsoft Defender para punto de conexión en Android e iOS proporciona las siguientes funcionalidades clave, para obtener información sobre las características y [ventajas](https://aka.ms/mdeblog) más recientes, lea nuestros anuncios.
 
-<br>
-
 |Funcionalidad|Descripción|
 |---|---|
 |Protección web|Protección contra phishing, bloqueo de conexiones de red no seguras y compatibilidad con indicadores personalizados.|
@@ -50,13 +48,12 @@ Microsoft Defender para punto de conexión en Android e iOS proporciona las sigu
 |Detección de jailbreak (solo iOS)|Detección de dispositivos jailbreak.|
 |Administración de vulnerabilidades de Microsoft Defender (MDVM) |Evaluación de vulnerabilidades de dispositivos móviles incorporados. Visite esta [página](next-gen-threat-and-vuln-mgt.md) para obtener más información sobre Administración de vulnerabilidades de Microsoft Defender en Microsoft Defender para punto de conexión. *Tenga en cuenta que en iOS solo se admiten vulnerabilidades del sistema operativo en esta versión preliminar.*|
 |Protección de red *(versión preliminar pública)*| Protección contra amenazas no autorizadas Wi-Fi relacionadas y certificados no autorizados; la capacidad de permitir la lista de certificados de CA raíz y ca raíz privada en Intune; establecer la confianza con los puntos de conexión.|
-|Alertas unificadas|Alertas de todas las plataformas en la consola de seguridad unificada de M365|
-|Acceso condicional, inicio condicional|Impedir que los dispositivos de riesgo accedan a los recursos corporativos. Las señales de riesgo de Defender para punto de conexión también se pueden agregar a las directivas de protección de aplicaciones (MAM)|
-|Controles de privacidad. En versión preliminar (vea la nota siguiente)|Configure la privacidad en los informes de amenazas mediante el control de los datos enviados por Microsoft Defender para punto de conexión. *Tenga en cuenta que los controles de privacidad solo están disponibles actualmente para dispositivos inscritos. Los controles para dispositivos no inscritos se agregarán más adelante.*|
+|Alertas unificadas|Alertas de todas las plataformas de la consola de seguridad unificada de M365.|
+|Acceso condicional, inicio condicional|Impedir que los dispositivos de riesgo accedan a los recursos corporativos. Las señales de riesgo de Defender para punto de conexión también se pueden agregar a las directivas de protección de aplicaciones (MAM).|
+|Controles de privacidad|Configure la privacidad en los informes de amenazas mediante el control de los datos enviados por Microsoft Defender para punto de conexión. Los controles de privacidad están disponibles para el administrador y los usuarios finales. También está allí para dispositivos inscritos y no inscritos.|
 |Integración con Microsoft Tunnel|Se puede integrar con Microsoft Tunnel, una solución de puerta de enlace de VPN para habilitar la seguridad y la conectividad en una sola aplicación. Disponible en Android y ahora también está disponible con carácter general en iOS.|
 
 Todas estas funcionalidades están disponibles para Microsoft Defender para punto de conexión titulares de licencias. Para obtener más información, consulte [Requisitos de licencias](minimum-requirements.md#licensing-requirements).
-
 
 ## <a name="overview-and-deploy"></a>Información general e implementación
 
@@ -78,7 +75,7 @@ En la tabla siguiente se resume cómo implementar Microsoft Defender para punto 
 |--------------------|-------------|
 |Android Enterprise con Intune unified Endpoint Manager (Microsoft Endpoint Manager)|[Implementación en dispositivos inscritos en Android Enterprise](android-intune.md#deploy-on-android-enterprise-enrolled-devices)|
 |Administrador de dispositivos con Intune Endpoint Manager unificado (Microsoft Endpoint Manager)|[Implementación en dispositivos inscritos por el administrador de dispositivos](android-intune.md#deploy-on-device-administrator-enrolled-devices)|
-|Dispositivos BYOD O no administrados administrados por otros administradores de puntos de conexión unificados o directiva de protección de aplicaciones de configuración (MAM)|[Configuración de señales de riesgo de Defender en la directiva de protección de aplicaciones (MAM)](android-configure-mam.md)|
+|Dispositivos BYOD O no administrados administrados por otros administradores de puntos de conexión unificados o configuración de la directiva de protección de aplicaciones (MAM)|[Configuración de señales de riesgo de Defender en la directiva de protección de aplicaciones (MAM)](android-configure-mam.md)|
 
 **iOS**
 
@@ -86,7 +83,7 @@ En la tabla siguiente se resume cómo implementar Microsoft Defender para punto 
 |--------------------|-------------|
 |Dispositivos supervisados con Intune Endpoint Manager unificado (Microsoft Endpoint Manager)|1. [Implementación como aplicación de la tienda iOS](ios-install.md)<br/>2. [Configurar la protección web sin VPN para dispositivos iOS supervisados](ios-install.md#complete-deployment-for-supervised-devices)|
 |Dispositivos no supervisados (BYOD) inscritos con Intune UEM (Microsoft Endpoint Manager)|[Implementación como aplicación de la Tienda iOS](ios-install.md)|
-|Dispositivos BYOD O no administrados administrados por otros UEM o directiva de protección de aplicaciones de configuración (MAM)|[Configuración de señales de riesgo de Defender en la directiva de protección de aplicaciones (MAM)](ios-install-unmanaged.md)|
+|Dispositivos BYOD O no administrados administrados por otros UEM o Configuración de la directiva de protección de aplicaciones (MAM)|[Configuración de señales de riesgo de Defender en la directiva de protección de aplicaciones (MAM)](ios-install-unmanaged.md)|
 
 ### <a name="end-user-onboarding"></a>Incorporación del usuario final
 

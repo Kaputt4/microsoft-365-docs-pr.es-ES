@@ -10,24 +10,21 @@ ms.localizationpriority: medium
 author: denisebmsft
 ms.author: deniseb
 ms.custom: nextgen
-ms.date: 10/18/2020
+ms.date: 09/06/2022
 ms.reviewer: ''
 manager: dansimp
 ms.subservice: mde
 audience: ITPro
 ms.topic: how-to
 ms.collection: m365-security-compliance
-ms.openlocfilehash: bb63bb3ec898e7ba6f7b957288e95da7ec49f17c
-ms.sourcegitcommit: d3ef9391f621e8f4ca70661184b3bb82c6cbda94
+ms.openlocfilehash: 650dae61e71b17e4f63598f60177ab7c193c50b7
+ms.sourcegitcommit: db89873e22a12705ed313964c1bc2fa19d4fe719
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/02/2022
-ms.locfileid: "67585892"
+ms.lasthandoff: 09/13/2022
+ms.locfileid: "67652349"
 ---
 # <a name="use-powershell-cmdlets-to-configure-and-manage-microsoft-defender-antivirus"></a>Uso de cmdlets de PowerShell para configurar y administrar el Antivirus de Microsoft Defender
-
-[!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
-
 
 **Se aplica a:**
 - [Microsoft Defender para punto de conexión Plan 1](https://go.microsoft.com/fwlink/?linkid=2154037)
@@ -37,14 +34,14 @@ ms.locfileid: "67585892"
 **Plataformas**
 - Windows
 
-Puede usar PowerShell para realizar varias funciones en Windows Defender. De forma similar al símbolo del sistema o la línea de comandos, PowerShell es un shell de línea de comandos basado en tareas y un lenguaje de scripting diseñado especialmente para la administración del sistema. Puede obtener más información al respecto en el [centro de PowerShell en MSDN](/previous-versions/msdn10/mt173057(v=msdn.10)).
+Puede usar PowerShell para realizar varias funciones en Windows Defender. De forma similar al símbolo del sistema o la línea de comandos, PowerShell es un shell de línea de comandos basado en tareas y un lenguaje de scripting diseñado especialmente para la administración del sistema. Puede obtener más información al respecto en la [documentación de PowerShell](/powershell/scripting/overview).
 
 Para obtener una lista de los cmdlets y sus funciones y parámetros disponibles, consulte el tema [Cmdlets del Antivirus de Defender](/powershell/module/defender) .
 
 Los cmdlets de PowerShell son más útiles en entornos de Windows Server que no dependen de una interfaz gráfica de usuario (GUI) para configurar el software.
 
 > [!NOTE]
-> Los cmdlets de PowerShell no deben usarse como reemplazo de una infraestructura de administración de directivas de red completa, como [Microsoft Endpoint Configuration Manager](/configmgr), [directiva de grupo Management Console](/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/cc731212(v=ws.11)) o [Antivirus de Microsoft Defender directiva de grupo plantillas ADMX](https://www.microsoft.com/download/101445).
+> Los cmdlets de PowerShell no deben usarse como reemplazo de una infraestructura de administración de directivas de red completa, como [Microsoft Endpoint Configuration Manager](/configmgr), [directiva de grupo Management Console](use-group-policy-microsoft-defender-antivirus.md) o [Antivirus de Microsoft Defender directiva de grupo plantillas ADMX](https://www.microsoft.com/download/101445).
 
 Los cambios realizados con PowerShell afectarán a la configuración local en el punto de conexión donde se implementan o realizan los cambios. Esto significa que las implementaciones de directiva con directiva de grupo, Configuration Manager de punto de conexión de Microsoft o Microsoft Intune pueden sobrescribir los cambios realizados con PowerShell.
 

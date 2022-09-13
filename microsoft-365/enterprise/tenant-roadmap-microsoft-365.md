@@ -14,12 +14,12 @@ ms.collection:
 - m365initiative-coredeploy
 ms.custom: it-pro
 description: La hoja de ruta para configurar los inquilinos para Microsoft 365.
-ms.openlocfilehash: 5eed55d45e4b34962b08d236f8659cfd2cf209c1
-ms.sourcegitcommit: 61bdfa84f2d6ce0b61ba5df39dcde58df6b3b59d
+ms.openlocfilehash: d24d134c5ca74d1ddb47bcccead996fe0a914b0d
+ms.sourcegitcommit: db89873e22a12705ed313964c1bc2fa19d4fe719
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/08/2022
-ms.locfileid: "65940412"
+ms.lasthandoff: 09/13/2022
+ms.locfileid: "67652371"
 ---
 # <a name="tenant-roadmap-for-microsoft-365"></a>Plan de desarrollo de inquilinos para Microsoft 365
 
@@ -43,14 +43,14 @@ Para planear la implementación del inquilino:
 - [Planeamiento de la compatibilidad con aplicaciones cliente](microsoft-365-client-support-certificate-based-authentication.md)
 - [Determinación de cómo usar la autenticación moderna híbrida](hybrid-modern-auth-overview.md)
 - [Planear actualizaciones de Office 2007 y Office 2010](plan-upgrade-previous-versions-office.md)
-- [Descripción del aislamiento de inquilinos](/microsoft-365-isolation-in-microsoft-365?view=o365-worldwide&preserve-view=true)
+- [Descripción del aislamiento de inquilinos](/compliance/assurance/assurance-microsoft-365-isolation-controls#tenant-isolation)
 
 ### <a name="deploy"></a>Implementar
 
 Para implementar el inquilino: 
 
 - Agregue los [dominios DNS](../admin/setup/add-domain.md) para su organización.
-- Use las [guías de configuración en el Centro de administración de Microsoft 365](setup-guides-for-microsoft-365.md).
+- Use las [guías de configuración de la Centro de administración de Microsoft 365](setup-guides-for-microsoft-365.md).
 - Compile la [infraestructura de identidad](deploy-identity-solution-overview.md).
 
 ### <a name="move-a-tenants-geographic-locations"></a>Mover las ubicaciones geográficas de un inquilino
@@ -62,13 +62,13 @@ Para obtener más información, consulte [Traslado de datos principales a nuevas
 
 ## <a name="deploy-microsoft-365-multi-geo"></a>Implementación multigeográfica de Microsoft 365
 
-Con Microsoft 365 Multi-Geo, su organización puede expandir su presencia en Microsoft 365 a varias regiones geográficas y países dentro de su espacio empresarial existente.
+Con Microsoft 365 Multi-Geo, su organización puede expandir su presencia de Microsoft 365 a varias regiones geográficas y/o países dentro de su inquilino existente.
 
 Para más información, vea [Microsoft 365 Multi-Geo](microsoft-365-multi-geo.md).
 
 ## <a name="manage-multiple-microsoft-365-tenants"></a>Administración de varios inquilinos de Microsoft 365 
 
-Aunque tener un único inquilino para la oganización es ideal, puede ser una de las muchas organizaciones que tienen varios inquilinos. Las razones pueden incluir fusiones y adquisiciones, desea aislamiento administrativo o una TI descentralizada.
+Aunque tener un único inquilino para su organización es ideal, puede ser una de las muchas organizaciones que tienen varios inquilinos. Las razones pueden incluir fusiones y adquisiciones, desea aislamiento administrativo o una TI descentralizada.
 
 Si tiene varios inquilinos de Microsoft 365, consulte estos artículos para obtener más información sobre:
 

@@ -11,19 +11,19 @@ ms.pagetype: security
 ms.author: macapara
 author: mjcaparas
 ms.localizationpriority: medium
-ms.date: 09/06/2022
+ms.date: 09/12/2022
 manager: dansimp
 audience: ITPro
 ms.collection:
 - m365-security-compliance
 ms.topic: conceptual
 ms.subservice: mde
-ms.openlocfilehash: ae828a6437849de86ea23b52397d0541e9d821d2
-ms.sourcegitcommit: 651610ca73bfd1d008d97311b59782790df664fb
+ms.openlocfilehash: 1aa80af7ff13f1ec5eccf207042458adae5c9208
+ms.sourcegitcommit: db89873e22a12705ed313964c1bc2fa19d4fe719
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/07/2022
-ms.locfileid: "67613502"
+ms.lasthandoff: 09/13/2022
+ms.locfileid: "67652400"
 ---
 # <a name="whats-new-in-microsoft-defender-for-endpoint"></a>Novedades de Microsoft Defender para punto de conexión
 
@@ -64,6 +64,10 @@ Para obtener más información sobre Microsoft Defender para punto de conexión 
 ## <a name="september-2022"></a>Septiembre de 2022
 
 - [Los informes de estado del dispositivo ya están disponibles con carácter general](machine-reports.md). <br/>El informe de estado del dispositivo proporciona información de alto nivel sobre el estado y la seguridad de los puntos de conexión. El informe incluye información de tendencias que muestra el estado de mantenimiento del sensor, el estado del antivirus, las plataformas del sistema operativo, las versiones de Windows 10 y las versiones de actualización del Antivirus de Microsoft Defender.
+- [El modo de solución de problemas](enable-troubleshooting-mode.md) ya está disponible para Windows Server 2012 máquinas R2 y 2016 que ejecutan la solución moderna y unificada. Durante el modo de solución de problemas, use `Set-MPPreference -DisableTamperProtection $true` para deshabilitar temporalmente la protección contra alteraciones en el dispositivo y realizar los cambios de configuración necesarios. Antes de usar el modo de solución de problemas, asegúrese de que todos los componentes siguientes están actualizados:
+   - Sense versión 10.8049.22439.1084 (KB5005292) o posterior
+   - Antivirus de Microsoft Defender: Plataforma: 4.18.2207.7 (KB4052623) o posterior 
+   - Antivirus de Microsoft Defender: motor: 1.1.19500.2 (KB2267602) o posterior
 
 ## <a name="august-2022"></a>Agosto de 2022
 

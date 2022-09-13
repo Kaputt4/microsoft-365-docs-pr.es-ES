@@ -15,12 +15,12 @@ ms.collection:
 - m365-security-compliance
 ms.topic: conceptual
 ms.subservice: mde
-ms.openlocfilehash: a40f5074b2e9caf85eeda01e8061c9b5fcaca6d2
-ms.sourcegitcommit: 228fa13973bf7c2d91504703fab757f552ae40dd
+ms.openlocfilehash: da6124fcce55bc8fe0f40158f9849a0fd02b40e1
+ms.sourcegitcommit: db89873e22a12705ed313964c1bc2fa19d4fe719
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/01/2022
-ms.locfileid: "67522133"
+ms.lasthandoff: 09/13/2022
+ms.locfileid: "67652517"
 ---
 # <a name="configure-microsoft-defender-for-endpoint-on-ios-features"></a>Configurar Microsoft Defender para punto de conexión en las características de iOS
 
@@ -90,7 +90,7 @@ Esta configuración está disponible tanto para los dispositivos inscritos (MDM)
     - En [el Centro de administración de Microsoft Endpoint Manager](https://go.microsoft.com/fwlink/?linkid=2109431), vaya a **Directivas** >  de **configuración** >  de aplicaciones **Agregar** > **aplicaciones administradas**.
     - Asignar a la directiva un nombre.
     - En Seleccionar aplicaciones públicas, elija Microsoft Defender para punto de conexión como aplicación de destino.
-    - En la página Configuración, en Configuración general, agregue **WebProtection** como la clave y el valor como **false**, .
+    - En la página Configuración, en Configuración general, agregue **WebProtection** como la clave y el valor como **false**.
         - De forma predeterminada, **WebProtection= true**.
         - Administración debe hacer **webProtection = false** para desactivar la protección web.
         - Defender enviará el latido al portal de Microsoft 365 Defender cada vez que el usuario abra la aplicación.
@@ -194,7 +194,7 @@ Los clientes ahora pueden habilitar el control de privacidad para el informe de 
 
 1. **Controles de privacidad del usuario final** Estos controles ayudan al usuario final a configurar la información compartida con su organización.
     - En el caso de los dispositivos supervisados, los controles de usuario final no estarán visibles. Administración decidirá y controlará la configuración.
-    - Sin embargo, en el caso de los dispositivos sin supervisión, el control se mostrará en **Configuración-> Privacidad**
+    - Sin embargo, en el caso de los dispositivos no supervisados, el control se mostrará en **Configuración > Privacidad**.
         - Los usuarios verán un botón de alternancia para **Información de sitio no segura**.
         - Este botón de alternancia solo es visible si Administración ha establecido **DefenderExcludeURLInReport = true**
         - Si se habilita mediante Administración, los usuarios pueden decidir si quieren enviar la información del sitio no seguro a su organización o no.
@@ -205,7 +205,7 @@ Activar o desactivar los controles de privacidad anteriores no afectará a la co
 
 ## <a name="optional-permissions"></a>Permisos opcionales
 
-Microsoft Defender para punto de conexión en iOS habilita **permisos opcionales** en el flujo de incorporación. Actualmente, los permisos requeridos por MDE son obligatorios en el flujo de incorporación. Con esta característica, el administrador puede implementar MDE en dispositivos BYOD sin aplicar el **permiso de VPN** obligatorio durante la incorporación. Los usuarios finales pueden incorporar la aplicación sin los permisos obligatorios y pueden revisarlos más adelante. Esta característica solo está presente actualmente para dispositivos inscritos (MDM).
+Microsoft Defender para punto de conexión en iOS habilita **permisos opcionales** en el flujo de incorporación. Actualmente, los permisos necesarios para Defender para punto de conexión son obligatorios en el flujo de incorporación. Con esta característica, los administradores pueden implementar Defender para punto de conexión en dispositivos BYOD sin aplicar el **permiso DE VPN** obligatorio durante la incorporación. Los usuarios finales pueden incorporar la aplicación sin los permisos obligatorios y pueden revisarlos más adelante. Esta característica solo está presente actualmente para dispositivos inscritos (MDM).
 
 ### <a name="configure-optional-permission"></a>Configurar permiso opcional
 
@@ -230,7 +230,7 @@ Microsoft Defender para punto de conexión en iOS habilita **permisos opcionales
     - Más adelante, el usuario puede habilitar desde `Web Protection` dentro de la aplicación. Esto instalará la configuración de VPN en el dispositivo.
 
 > [!NOTE]
->**El permiso opcional** es diferente de **Deshabilitar protección web**. El permiso VPN opcional solo ayuda a omitir el permiso durante la incorporación, pero está disponible para que el usuario final lo revise y lo habilite más adelante. Mientras **que Deshabilitar protección web** permite a los usuarios incorporar la aplicación MDE sin la protección web. No se puede habilitar más adelante.
+>**El permiso opcional** es diferente de **Deshabilitar protección web**. El permiso VPN opcional solo ayuda a omitir el permiso durante la incorporación, pero está disponible para que el usuario final lo revise y lo habilite más adelante. Mientras **que Deshabilitar Protección web** permite a los usuarios incorporar la aplicación Defender para punto de conexión sin La protección web. No se puede habilitar más adelante.
 
 ## <a name="configure-compliance-policy-against-jailbroken-devices"></a>Configuración de la directiva de cumplimiento en dispositivos con jailbreak
 
@@ -241,7 +241,7 @@ Para proteger el acceso a los datos corporativos en dispositivos iOS con jailbre
 
 Siga los pasos siguientes para crear una directiva de cumplimiento en dispositivos con jailbreak.
 
-1. En [el Centro de administración de Microsoft Endpoint Manager](https://go.microsoft.com/fwlink/?linkid=2109431), vaya a **Directivas****de cumplimiento** ->  de dispositivos  -> **Crear directiva**. Seleccione "iOS/iPadOS" como plataforma y haga clic en **Crear**.
+1. En [el Centro de administración de Microsoft Endpoint Manager](https://go.microsoft.com/fwlink/?linkid=2109431), vaya a **Directivas****de cumplimiento** >  de dispositivos  > **Crear directiva**. Seleccione "iOS/iPadOS" como plataforma y haga clic en **Crear**.
 
    :::image type="content" source="images/ios-jb-policy.png" alt-text="Pestaña Crear directiva" lightbox="images/ios-jb-policy.png":::
 
@@ -266,6 +266,50 @@ Defender para punto de conexión en iOS permite a los administradores configurar
 > [!NOTE]
 > Defender para punto de conexión en iOS admite la creación de indicadores personalizados solo para direcciones IP y direcciones URL o dominios.
 
+## <a name="configure-vulnerability-assessment-of-apps"></a>Configuración de la evaluación de vulnerabilidades de las aplicaciones
+
+>[!Note]
+>La evaluación de vulnerabilidades de las aplicaciones en Microsoft Defender para punto de conexión para iOS está ahora en versión preliminar pública. La siguiente información se refiere a la versión preliminar del producto que puede modificarse sustancialmente antes de su lanzamiento comercial. Microsoft no otorga garantías, expresas o implícitas, con respecto a la información que aquí se proporciona. Si está interesado en participar en la versión preliminar, comparta su nombre de inquilino e id. con nosotros en **mdatpmobile@microsoft.com**.
+
+Defender para punto de conexión en iOS admite evaluaciones de vulnerabilidades de aplicaciones solo para dispositivos inscritos (MDM).
+
+Los administradores pueden usar los pasos siguientes para configurar la evaluación de vulnerabilidades de las aplicaciones.
+
+### <a name="on-a-supervised-device"></a>En un dispositivo supervisado
+
+1. Asegúrese de que el dispositivo está configurado en [modo supervisado](ios-install.md#complete-deployment-for-supervised-devices).
+1. Para habilitar la característica en el [Centro de administración de Microsoft Endpoint Manager](https://go.microsoft.com/fwlink/?linkid=2109431), vaya a **Seguridad** >  de punto de conexión **Microsoft Defender para punto de conexión** >  **Incronizar aplicaciones para dispositivos iOS/iPadOS**.
+
+     :::image type="content" source="images/tvm-app-sync-toggle.png" alt-text="Alternancia de sincronización de aplicacionesSup" lightbox="images/tvm-app-sync-toggle.png":::
+
+### <a name="on-an-unsupervised-device"></a>En un dispositivo sin supervisión
+
+1. Para habilitar la característica en el [Centro de administración de Microsoft Endpoint Manager](https://go.microsoft.com/fwlink/?linkid=2109431), vaya a **Seguridad** >  de punto de conexión **Microsoft Defender para punto de conexión** >  **Incronizar aplicaciones para dispositivos iOS/iPadOS**.
+
+   :::image type="content" source="images/tvm-app-sync-toggle.png" alt-text="Alternancia de sincronización de aplicaciones" lightbox="images/tvm-app-sync-toggle.png":::
+
+1. Para obtener la lista de todas las aplicaciones, incluidas las aplicaciones no administradas, habilite el botón de alternancia **Enviar datos de inventario de aplicaciones completos en dispositivos del sistema operativo iOS/iPad de propiedad personal**.
+
+    :::image type="content" source="images/tvm-full-app-data.png" alt-text="Datos completos de la aplicación" lightbox="images/tvm-full-app-data.png":::
+
+1. Siga estos pasos para configurar la configuración de privacidad.
+    - Vaya a **Aplicaciones Directivas** > **de configuración de aplicaciones** > **Agregar** > **dispositivos administrados**.
+    - Asigne un nombre a la directiva, **Platform** > **iOS/iPadOS**.
+    - Seleccione **Microsoft Defender para punto de conexión** como la aplicación de destino.
+    - En la página Configuración, seleccione Usar diseñador de configuración y agregue **DefenderTVMPrivacyMode** como tipo de clave y valor como **Cadena**.
+        - Para deshabilitar la privacidad y recopilar la lista de aplicaciones instaladas, escriba el valor como `False` y asigne esta directiva a los usuarios. 
+        - De forma predeterminada, este valor se establece en `True` para dispositivos sin supervisión.
+        - Para los usuarios con el conjunto de claves como `False`, Defender para punto de conexión enviará la lista de aplicaciones instaladas en el dispositivo para la evaluación de vulnerabilidades.
+    - Haga clic en **Siguiente** y asigne este perfil a los dispositivos o usuarios de destino.
+    - Activar o desactivar los controles de privacidad anteriores no afectará a la comprobación de cumplimiento del dispositivo ni al acceso condicional.
+1. Una vez aplicada la configuración, el usuario final tendrá que abrir la aplicación para **aprobar** la configuración de privacidad.
+    - La pantalla de aprobación de privacidad solo vendrá para dispositivos no supervisados.
+    - Solo si el usuario final aprueba la privacidad, la información de la aplicación se enviará a la consola de Defender para punto de conexión.
+
+        :::image type="content" source="images/tvm-user-privacy.png" alt-text="Privacidad de TVM" lightbox="images/tvm-user-privacy.png":::
+
+Una vez implementadas las versiones de cliente para dispositivos iOS de destino, se iniciará el procesamiento. Las vulnerabilidades encontradas en esos dispositivos comenzarán a aparecer en el panel de Administración de vulnerabilidades de Defender. El procesamiento puede tardar algunas horas (máximo 24 horas) en completarse. Especialmente para que toda la lista de aplicaciones aparezca en el inventario de software.
+
 ## <a name="configure-option-to-send-in-app-feedback"></a>Configuración de la opción para enviar comentarios desde la aplicación
 
 Los clientes ahora tienen la opción de configurar la capacidad de enviar datos de comentarios a Microsoft dentro de la aplicación Defender para punto de conexión. Los datos de comentarios ayudan a Microsoft a mejorar los productos y a solucionar problemas.
@@ -282,9 +326,9 @@ Siga estos pasos para configurar la opción para enviar datos de comentarios a M
 1. Seleccione **Microsoft Defender para punto de conexión** como la aplicación de destino.
 
 1. En la página Configuración, seleccione **Usar diseñador de configuración** y agregue **DefenderSendFeedback** como tipo de clave y valor como **booleano**.
-   
+
    - Para quitar la capacidad de los usuarios finales de proporcionar comentarios, establezca el valor como `false` y asigne esta directiva a los usuarios. De forma predeterminada, este valor se establece en `true`. Para los clientes del Gobierno de EE. UU., el valor predeterminado se establece en "false".
-   
+
    - Para los usuarios con el conjunto de claves como `true`, habrá una opción para enviar datos de comentarios a Microsoft dentro de la aplicación (Menú > Ayuda & Comentarios > Enviar comentarios a Microsoft)
 
 1. Haga clic en **Siguiente** y asigne este perfil a los dispositivos o usuarios de destino.
