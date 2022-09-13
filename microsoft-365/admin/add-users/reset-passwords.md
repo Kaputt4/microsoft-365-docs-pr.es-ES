@@ -31,12 +31,12 @@ search.appverid:
 - GEA150
 ms.assetid: 7a5d073b-7fae-4aa5-8f96-9ecd041aba9c
 description: Inicie sesión con su cuenta de administrador de Microsoft 365 para restablecer las contraseñas de los usuarios cuando tenga una suscripción de Microsoft 365 para empresas.
-ms.openlocfilehash: 39dc2dfdc4a50e8e55ef919a438895c4cefd0ed7
-ms.sourcegitcommit: 2f6a7410e9919f753a759c1ada441141e18f06fd
+ms.openlocfilehash: 8ae60825c411345afb756072f16b599dbdf042d3
+ms.sourcegitcommit: 974922d1d8d9ce7bc2eb49ab80ecca9da4a911f9
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/30/2022
-ms.locfileid: "67084661"
+ms.lasthandoff: 09/13/2022
+ms.locfileid: "67651324"
 ---
 # <a name="reset-passwords-in-microsoft-365-for-business"></a>Restablecimiento de contraseñas en Microsoft 365 para empresas
 
@@ -82,6 +82,16 @@ Si este vídeo le ha sido de ayuda, consulte la [serie completa de aprendizaje p
 ## <a name="let-users-reset-their-own-passwords"></a>Permitir que los usuarios puedan restablecer sus propias contraseñas
 
 Le recomendamos encarecidamente que configure el autoservicio de restablecimiento de contraseña. Así, no tendrá que restablecer de forma manual las contraseñas de los usuarios. Así no tendrá tanto trabajo. Para obtener información sobre cómo hacerlo, vea [Permitir que los usuarios puedan restablecer sus propias contraseñas en Office 365](let-users-reset-passwords.md).
+
+## <a name="resend-user-password"></a>Reenviar la contraseña de usuario
+  
+1. En el centro de administración, vaya a la página **Usuarios** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=834822" target="_blank">Usuarios activos</a>.
+
+2. En la página **Usuarios activos** , seleccione el usuario y, a continuación, seleccione **Restablecer contraseña**.
+
+3. Siga las instrucciones de la página **Restablecer contraseña** para generar automáticamente una nueva contraseña para el usuario o crear una para ellos y, a continuación, seleccione **Restablecer**.  
+
+4. Escriba una dirección de correo electrónico a la que el usuario pueda acceder, para que reciba la nueva contraseña y realice un seguimiento con ella para asegurarse de que la obtuvo.
 
 ## <a name="reset-my-admin-password"></a>Restablecimiento de la contraseña de administrador
 
@@ -130,6 +140,24 @@ Para obtener información general, consulte [Administración de Microsoft 365 co
 ## <a name="force-a-password-change-for-all-users-in-your-business"></a>Forzar un cambio de contraseña para todos los usuarios de su empresa
 
 Consulte esta excelente entrada de blog publicada por Vasil Michev, MVP de Microsoft: [Forzar el cambio de contraseña para todos los usuarios en Office 365](https://go.microsoft.com/fwlink/?linkid=853693).
+
+## <a name="set-strong-passwords"></a>Establecimiento de contraseñas seguras
+
+1. [Conéctese a Microsoft 365 con PowerShell](/office365/enterprise/powershell/connect-to-office-365-powershell#connect-with-the-microsoft-azure-active-directory-module-for-windows-powershell).
+
+2. Con PowerShell, puede desactivar los requisitos de contraseña seguros para todos los usuarios con el siguiente comando:
+
+    ```powershell
+    Get-MsolUser | Set-MsolUser -StrongPasswordRequired $false
+
+3. You can turn **OFF** strong password requirements for specific users with this command:
+
+    ```powershell
+    Set-MsolUser –UserPrincipalName –StrongPasswordRequired  $false
+    ```
+
+> [!NOTE]
+> UserPrincipalName debe tener el formato de inicio de sesión de estilo Internet, donde el nombre de usuario va seguido del signo de inicio de sesión (@) y un nombre de dominio. Por ejemplo: user@contoso.com.
   
 ## <a name="i-dont-have-a-microsoft-365-for-business-subscription"></a>No tengo una suscripción a Microsoft 365 para empresas
 

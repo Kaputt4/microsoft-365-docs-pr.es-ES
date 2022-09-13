@@ -20,12 +20,12 @@ metadata:
   search.appverid:
   - MET150
   description: Preguntas más frecuentes sobre Basic Mobility and Security.
-  ms.openlocfilehash: c404ff1c80952ec3db600e96ceef5cce97c182cd
-  ms.sourcegitcommit: 1fa0b15f86470c49dddf0d6de59d553a38ae259b
+  ms.openlocfilehash: ecd87fab3c72fdc263c38647fe11c556edcdd4bc
+  ms.sourcegitcommit: 974922d1d8d9ce7bc2eb49ab80ecca9da4a911f9
   ms.translationtype: MT
   ms.contentlocale: es-ES
-  ms.lasthandoff: 06/03/2022
-  ms.locfileid: "65863018"
+  ms.lasthandoff: 09/13/2022
+  ms.locfileid: "67651412"
 title: Preguntas más frecuentes sobre la movilidad y la seguridad básicas
 summary: Este artículo contiene las preguntas más frecuentes sobre Basic Mobility and Security, una característica que le ayuda a administrar y proteger dispositivos móviles en Microsoft 365. Si no encuentra una respuesta a su pregunta, háganoslo saber dejando un comentario en la página para que consideremos añadir su pregunta a este artículo.
 sections:
@@ -40,22 +40,95 @@ sections:
       2.  Vaya a Prevención de pérdida de datos > Administración de dispositivos.
   - question: >
       ¿Cómo puedo empezar a trabajar con la administración de dispositivos en Basic Mobility and Security?
-    answer: "Hay cuatro pasos para empezar a trabajar con Basic Mobility and Security: \n\n1. Active Movilidad y seguridad básicas yendo al [Office 365 Security & Compliance (Cumplimiento de & de seguridad de Office 365](https://protection.office.com/)).\n\n2. Vaya a [Movilidad y seguridad básicas (versión preliminar).](https://compliance.microsoft.com/basicmobilityandsecurity)\n    \n3. Cree directivas de administración de dispositivos y aplíquelas a grupos de usuarios configurados en grupos de seguridad. Se recomienda empezar implementando las directivas en un grupo de pruebas pequeño. Para obtener más información, consulte [Creación de directivas de seguridad de dispositivos en Basic Mobility and Security](create-device-security-policies.md).\n\n4. A los usuarios a los que se les ha aplicado una directiva se les pide que inscriban sus dispositivos cuando intenten acceder a Microsoft 365 datos. Para obtener más información, consulta [Inscribir tu dispositivo móvil con Basic Mobility and Security](enroll-your-mobile-device.md).\n\nPara obtener más información, consulte [Configuración de Basic Mobility and Security](set-up.md).\n"
+    answer: "Hay cuatro pasos para empezar a trabajar con Basic Mobility and Security: \n\n1. Active Movilidad y seguridad básicas yendo al [Office 365 Security & Compliance (Cumplimiento de & de seguridad de Office 365](https://protection.office.com/)).\n\n2. Vaya a [Movilidad y seguridad básicas (versión preliminar).](https://compliance.microsoft.com/basicmobilityandsecurity)\n    \n3. Cree directivas de administración de dispositivos y aplíquelas a grupos de usuarios configurados en grupos de seguridad. Se recomienda empezar implementando las directivas en un grupo de pruebas pequeño. Para obtener más información, consulte [Creación de directivas de seguridad de dispositivos en Basic Mobility and Security](create-device-security-policies.md).\n\n4. A los usuarios a los que se les ha aplicado una directiva se les pedirá que inscriban sus dispositivos cuando intenten acceder a los datos de Microsoft 365. Para obtener más información, consulta [Inscribir tu dispositivo móvil con Basic Mobility and Security](enroll-your-mobile-device.md).\n\nPara obtener más información, consulte [Configuración de Basic Mobility and Security](set-up.md).\n"
   - question: >
-      Estoy tratando de configurar Basic Mobility and Security, pero parece atascado. La Microsoft 365 Service Health ha estado mostrando "aprovisionamiento" durante un tiempo. ¿Qué puedo hacer?
+      Estoy tratando de configurar Basic Mobility and Security, pero parece atascado. El estado del servicio de Microsoft 365 ha estado mostrando "aprovisionamiento" durante un tiempo. ¿Qué puedo hacer?
     answer: >
       El servicio puede tardar algún tiempo en prepararse para usted. Una vez completado el aprovisionamiento, verá la página Movilidad y seguridad básicas. Si ha esperado 24 horas y el estado sigue aprovisionamiento, póngase en contacto con el soporte técnico y le ayudaremos a averiguar cuál es el problema.
   - question: >
+      Tengo problemas al intentar inscribir un dispositivo en Basic Mobility and Security. ¿Qué puedo hacer?
+    answer: >
+      Para empezar, compruebe lo siguiente:
+
+
+      - Asegúrese de que el dispositivo aún no está inscrito con otro proveedor de administración de dispositivos móviles, como Intune.
+
+
+      - Asegúrese de que el dispositivo está establecido en la fecha y hora correctas.
+
+
+      - Cambie a una red WIFI o de telefonía móvil diferente en el dispositivo.
+
+
+      - Para dispositivos Android o iOS, desinstale y vuelva a instalar la aplicación Portal de empresa de Intune en el dispositivo.
+  - question: >
+      Tengo problemas para configurar Basic Mobility and Security en mi teléfono o tableta iOS. ¿Qué puedo hacer?
+    answer: >
+      - Asegúrese de que ha configurado un certificado APNs. Para obtener más información, consulte [Creación de un certificado de APNs para dispositivos iOS](create-an-apns-certificate-for-ios-devices.md).
+
+
+      - En **Configuración** >  Perfil **general** > **(o Administración de dispositivos),** asegúrese de que un perfil de administración no está instalado todavía. Si es así, quítelo.
+
+
+      - Si ve el mensaje de error "No se pudo inscribir el dispositivo", inicie sesión en Microsoft 365 y asegúrese de que se ha asignado una licencia que incluye Exchange Online al usuario que ha iniciado sesión en el dispositivo.
+
+
+      - Si ve el mensaje de error "No se pudo instalar el perfil", pruebe una de las siguientes acciones:
+
+        - Asegúrese de que Safari es el explorador predeterminado del dispositivo y de que las cookies no están deshabilitadas.
+
+        - Reinicie el dispositivo y, a continuación, vaya a portal.manage.microsoft.com. Inicie sesión con el identificador de usuario y la contraseña de Microsoft 365 e intente instalar el perfil manualmente.
+  - question: >
+      Tengo problemas para configurar Basic Mobility and Security en Windows RT. ¿Qué puedo hacer?
+    answer: >
+      - Asegúrese de que el dominio está configurado en Microsoft 365 para trabajar con Basic Mobility and Security. Para obtener más información, consulte [Configuración de Basic Mobility and Security](set-up.md).
+
+
+      - Asegúrese de que el usuario está eligiendo **Activar en** lugar de elegir **Unirse**.
+  - question: >
+      Tengo problemas para configurar Basic Mobility and Security en Windows 10 PC. ¿Qué puedo hacer?
+    answer: >
+      - Asegúrese de que el dominio está configurado en Microsoft 365 para trabajar con Basic Mobility and Security. Para obtener más información, consulte [Configuración de Basic Mobility and Security](set-up.md).
+
+
+      - A menos que tenga Azure Active Directory Premium, asegúrese de que el usuario elija **Inscribirse en Administración de dispositivos solo en** lugar de elegir **Conectar**.
+  - question: >
+      Tengo problemas para configurar Basic Mobility and Security en un teléfono o tableta Android. ¿Qué puedo hacer?
+    answer: >
+      - Asegúrese de que el dispositivo ejecuta Android.
+
+
+      - Asegúrese de que Chrome está actualizado y está establecido como el explorador predeterminado.
+
+
+      - Si ve el mensaje de error "No se pudo inscribir este dispositivo", inicie sesión en Microsoft 365 y asegúrese de que se ha asignado una licencia que incluye Exchange Online al usuario que ha iniciado sesión en el dispositivo.
+
+
+      - Compruebe el Área de notificación en el dispositivo para ver si hay alguna acción de usuario final necesaria pendiente y, si es así, complete las acciones.
+  - question: >
       ¿Qué puedo hacer si se produce un error en la inscripción de dispositivos?
-    answer: "Si tiene problemas para inscribir un dispositivo, compruebe primero lo siguiente:\n\n- Asegúrese de que el dispositivo aún no está inscrito con otro proveedor de administración de dispositivos móviles, como Intune.\n\n- Asegúrese de que el dispositivo está establecido en la fecha y hora correctas.\n\n- Cambie a una red WIFI o de telefonía móvil diferente en el dispositivo.\n\n- Para Android o iOS dispositivos, desinstale y vuelva a instalar la aplicación Portal de empresa de Intune en el dispositivo.\n    \nSi la inscripción sigue sin funcionar, consulte [Solución de problemas de movilidad y seguridad básicas](troubleshoot.md).\n"
+    answer: >
+      Si tiene problemas para inscribir un dispositivo, compruebe primero lo siguiente:
+
+
+      - Asegúrese de que el dispositivo aún no está inscrito con otro proveedor de administración de dispositivos móviles, como Intune.
+
+
+      - Asegúrese de que el dispositivo está establecido en la fecha y hora correctas.
+
+
+      - Cambie a una red WIFI o de telefonía móvil diferente en el dispositivo.
+
+
+      - Para dispositivos Android o iOS, desinstale y vuelva a instalar la aplicación Portal de empresa de Intune en el dispositivo.
   - question: >
       ¿Cuál es la diferencia entre Intune y Basic Mobility and Security?
     answer: >
-      Basic Mobility and Security está hospedado por el servicio Intune. Es un subconjunto de Intune servicios proporcionados como una ventaja adicional para Microsoft 365 y es una solución integrada basada en la nube para administrar dispositivos de su organización. Para obtener una comparación en paralelo de los dos servicios para ayudarle a decidir si el uso de Intune o Basic Mobility and Security para Microsoft 365 es la mejor opción para usted, consulte [Elegir entre Basic Mobility Security y Intune](choose-between-basic-mobility-and-security-and-intune.md).
+      Basic Mobility and Security está hospedado por el servicio Intune. Es un subconjunto de Intune servicios proporcionados como una ventaja adicional a Microsoft 365 y es una solución integrada basada en la nube para administrar dispositivos de su organización. Para ver una comparación en paralelo de los dos servicios para ayudarle a decidir si el uso de Intune o Basic Mobility and Security para Microsoft 365 es la mejor opción para usted, consulte [Elegir entre Basic Mobility Security y Intune](choose-between-basic-mobility-and-security-and-intune.md).
   - question: >
       ¿Cómo funcionan las directivas para la movilidad y la seguridad básicas? Cómo configurarlos? ¿Deshabilitarlos?
     answer: >
-      Después de completar la configuración inicial de Basic Mobility and Security, se crean directivas y se aplican a grupos de usuarios en el Centro de cumplimiento de seguridad &. Las directivas requieren que los usuarios de las directivas inscriban sus dispositivos en Basic Mobility and Security antes de que el dispositivo pueda usarse para acceder a Microsoft 365 datos. Las directivas que configura determinan la configuración de los dispositivos móviles, por ejemplo, la frecuencia con la que se deben restablecer las contraseñas o si se requiere el cifrado de datos. Para obtener más información, consulte [Creación de directivas de seguridad de dispositivos en Basic Mobility and Security](create-device-security-policies.md) y [portal de cumplimiento Microsoft Purview](../../compliance/microsoft-365-compliance-center.md).
+      Después de completar la configuración inicial de Basic Mobility and Security, se crean directivas y se aplican a grupos de usuarios en el Centro de cumplimiento de seguridad &. Las directivas requieren que los usuarios de las directivas inscriban sus dispositivos en Basic Mobility and Security antes de que el dispositivo pueda usarse para acceder a los datos de Microsoft 365. Las directivas que configura determinan la configuración de los dispositivos móviles, por ejemplo, la frecuencia con la que se deben restablecer las contraseñas o si se requiere el cifrado de datos. Para obtener más información, consulte [Creación de directivas de seguridad de dispositivos en Basic Mobility and Security](create-device-security-policies.md) y [portal de cumplimiento Microsoft Purview](../../compliance/microsoft-365-compliance-center.md).
 
 
       Para obtener instrucciones paso a paso para crear e implementar directivas de dispositivo, consulte [Creación de directivas de seguridad de dispositivos en Basic Mobility and Security](create-device-security-policies.md).
@@ -68,7 +141,7 @@ sections:
       Si ya usa directivas de Exchange ActiveSync para administrar dispositivos móviles, puede empezar a usar Basic Mobility and Security siguiendo los pasos para configurar Basic Mobility and Security. Para obtener más información, consulte [Protección del acceso de usuarios y dispositivos](../../compliance/protect-access-to-data-and-services.md) y [Configuración de la movilidad y la seguridad básicas](set-up.md).
 
 
-      Al aplicar las directivas que crea en Basic Mobility and Security a grupos de usuarios, estas directivas invalidan Exchange ActiveSync directivas de buzón de dispositivo móvil y reglas de acceso a dispositivos que creó anteriormente en el <a href="https://go.microsoft.com/fwlink/p/?linkid=2059104" target="_blank">centro de administración de Exchange</a> para esos usuarios.
+      Al aplicar las directivas que crea en Basic Mobility and Security a grupos de usuarios, estas directivas invalidan Exchange ActiveSync directivas de buzón de dispositivo móvil y reglas de acceso a dispositivos que ha creado anteriormente en el <a href="https://go.microsoft.com/fwlink/p/?linkid=2059104" target="_blank">Centro de administración de Exchange</a> para esos usuarios.
 
 
       Después de inscribir un dispositivo en Basic Mobility and Security, se omite cualquier Exchange ActiveSync directiva de buzón de dispositivo móvil o regla de acceso de dispositivo aplicada al dispositivo.

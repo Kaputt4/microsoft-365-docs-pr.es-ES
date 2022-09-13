@@ -20,12 +20,12 @@ ms.custom:
 search.appverid:
 - MET150
 description: Administre y proteja los dispositivos móviles conectados a su organización de Microsoft 365 mediante la configuración y el uso de Basic Mobility and Security.
-ms.openlocfilehash: b49b02b37df615aafb87b2fc520737d4ad16d515
-ms.sourcegitcommit: 2f6a7410e9919f753a759c1ada441141e18f06fd
+ms.openlocfilehash: c205ce6cc8b14017eae65f3cf1b74d78c89fd253
+ms.sourcegitcommit: 974922d1d8d9ce7bc2eb49ab80ecca9da4a911f9
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/30/2022
-ms.locfileid: "67084507"
+ms.lasthandoff: 09/13/2022
+ms.locfileid: "67651457"
 ---
 # <a name="overview-of-basic-mobility-and-security-for-microsoft-365"></a>Información general sobre la movilidad y la seguridad básicas para Microsoft 365
 
@@ -66,4 +66,3 @@ Si solo necesita administración de aplicaciones móviles (MAM), quizás para pe
 [Configuración de Basic Mobility and Security](set-up.md) (artículo)\
 [Inscribir el dispositivo móvil mediante Basic Mobility and Security](enroll-your-mobile-device.md) (artículo)\
 [Administrar dispositivos inscritos en Mobile Administración de dispositivos para Microsoft 365](manage-enrolled-devices.md) (artículo)\
-[Obtener detalles sobre los dispositivos administrados por Basic Mobility and Security](get-details-about-managed-devices.md) (artículo)
