@@ -2,8 +2,7 @@
 title: Pasos para configurar un correo electrónico de resumen semanal de los cambios del centro de mensajes para Microsoft Defender para Office 365
 description: Los pasos para configurar un correo electrónico de resumen semanal de la actividad del centro de mensajes para mantenerse al día sobre los cambios en Microsoft Defender para Office 365.
 search.product: ''
-search.appverid: ''
-ms.service: microsoft-365-security
+ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -16,13 +15,14 @@ manager: jarogers
 audience: ITPro
 ms.collection: m365-guidance-templates
 ms.topic: how-to
-ms.subservice: mdo
-ms.openlocfilehash: 27d6483c8a0a92f912421fe2f7feb7f62e99e5bb
-ms.sourcegitcommit: 2b89bcff547e00be3d38dc8d1e6cbcf8f41eba42
+ms.technology: mdo
+search.appverid: met150
+ms.openlocfilehash: 8e1ab822eb4e0bb4a9ca8ded4f2de28354b881e9
+ms.sourcegitcommit: 9b133379196da2b3a4bb311b07ff274f43780f68
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/03/2022
-ms.locfileid: "67596597"
+ms.lasthandoff: 09/14/2022
+ms.locfileid: "67683855"
 ---
 # <a name="set-up-a-digest-notification-of-changes-to-microsoft-defender-for-office-365-using-the-message-center"></a>Configuración de una notificación de resumen de los cambios en Microsoft Defender para Office 365 mediante el centro de mensajes
 

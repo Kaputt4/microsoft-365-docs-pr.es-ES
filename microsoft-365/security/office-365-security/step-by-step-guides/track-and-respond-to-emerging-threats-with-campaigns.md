@@ -2,7 +2,6 @@
 title: Seguimiento y respuesta a amenazas de seguridad emergentes con la vista de campañas en Microsoft Defender para Office 365
 description: Tutorial de campañas de amenazas dentro de Microsoft Defender para Office 365 para demostrar cómo se pueden usar para investigar un ataque de correo electrónico coordinado contra su organización.
 search.product: ''
-search.appverid: ''
 ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
@@ -17,12 +16,13 @@ audience: ITPro
 ms.collection: m365-guidance-templates
 ms.topic: how-to
 ms.technology: mdo
-ms.openlocfilehash: 103a3b839e2a182e60c1ee025e6739bfa53fa263
-ms.sourcegitcommit: e9323a90a1156c10b037abca3e16d7367ef92dd7
+search.appverid: met150
+ms.openlocfilehash: 79ff9f29b37dca665635a9728567c78d0b945435
+ms.sourcegitcommit: 9b133379196da2b3a4bb311b07ff274f43780f68
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/02/2022
-ms.locfileid: "67568346"
+ms.lasthandoff: 09/14/2022
+ms.locfileid: "67686282"
 ---
 # <a name="track-and-respond-to-emerging-threats-with-campaigns-in-microsoft-defender-for-office-365"></a>Seguimiento y respuesta a amenazas emergentes con campañas en Microsoft Defender para Office 365
 

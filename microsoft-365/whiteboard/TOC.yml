@@ -21,28 +21,26 @@
     - name: Administrar solicitudes de RGPD
       href: gdpr-requests.md
 - name: Whiteboard para administración pública
+  items: null
+- name: GCC
   items:
-    - name: Whiteboard para administración pública
-      items:
-        - name: Government Community Cloud (GCC)
-          items:
-            - name: 'Administración del acceso: GCC'
-              href: manage-whiteboard-access-gcc.md
-            - name: 'Administración de datos: GCC'
-              href: manage-data-gcc.md
-            - name: 'Administración del uso compartido: GCC'
-              href: manage-sharing-gcc.md
-            - name: 'Administración de clientes: GCC'
-              href: manage-clients-gcc.md
-        - name: Government Community Cloud (GCC) High
-          items:
-            - name: 'Administración del acceso: GCC High'
-              href: manage-whiteboard-access-gcc-high.md
-            - name: 'Administración de datos: GCC High'
-              href: manage-data-gcc-high.md
-            - name: 'Administración del uso compartido: GCC High'
-              href: manage-sharing-gcc-high.md
-            - name: 'Administración de clientes: GCC High'
-              href: manage-clients-gcc-high.md
+    - name: 'Administración del acceso: GCC'
+      href: manage-whiteboard-access-gcc.md
+    - name: 'Administración de datos: GCC'
+      href: manage-data-gcc.md
+    - name: 'Administración del uso compartido: GCC'
+      href: manage-sharing-gcc.md
+    - name: 'Administración de clientes: GCC'
+      href: manage-clients-gcc.md
+- name: GCC High
+  items:
+    - name: 'Administración del acceso: GCC High'
+      href: manage-whiteboard-access-gcc-high.md
+    - name: 'Administración de datos: GCC High'
+      href: manage-data-gcc-high.md
+    - name: 'Administración del uso compartido: GCC High'
+      href: manage-sharing-gcc-high.md
+    - name: 'Administración de clientes: GCC High'
+      href: manage-clients-gcc-high.md
 - name: Whiteboard PowerShell
   href: /powershell/module/whiteboard/

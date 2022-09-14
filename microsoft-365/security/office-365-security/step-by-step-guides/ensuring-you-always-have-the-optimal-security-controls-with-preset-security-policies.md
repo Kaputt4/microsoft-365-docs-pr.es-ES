@@ -2,8 +2,7 @@
 title: Pasos para configurar rápidamente las directivas de seguridad preestablecidas estándar o estricta para Microsoft Defender para Office 365
 description: Paso a paso para configurar directivas de seguridad preestablecidas en Microsoft Defender para Office 365 para que tenga la seguridad recomendada por el producto. Las directivas preestablecidas establecen un perfil de seguridad *estándar* o *estricto*. Establézcalos y Microsoft Defender para Office 365 administrará y mantendrá estos controles de seguridad automáticamente.
 search.product: ''
-search.appverid: ''
-ms.service: microsoft-365-security
+ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -16,13 +15,14 @@ manager: dansimp
 audience: ITPro
 ms.collection: m365-guidance-templates
 ms.topic: how-to
-ms.subservice: mdo
-ms.openlocfilehash: 8d99f68169b19b26d89a883d1975fffe61ee2ac7
-ms.sourcegitcommit: 2b89bcff547e00be3d38dc8d1e6cbcf8f41eba42
+ms.technology: mdo
+search.appverid: met150
+ms.openlocfilehash: 6ee5ffd388d5bb278c4655e90e217d5d663cca08
+ms.sourcegitcommit: 9b133379196da2b3a4bb311b07ff274f43780f68
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/03/2022
-ms.locfileid: "67594131"
+ms.lasthandoff: 09/14/2022
+ms.locfileid: "67686513"
 ---
 # <a name="set-up-steps-for-the-standard-or-strict-preset-security-policies-in-microsoft-defender-for-office-365"></a>Configure los pasos para las directivas de seguridad preestablecidas estándar o estricta en Microsoft Defender para Office 365
 

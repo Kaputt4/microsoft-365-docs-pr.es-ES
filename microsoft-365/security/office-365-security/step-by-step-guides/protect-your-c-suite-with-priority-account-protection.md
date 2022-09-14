@@ -2,8 +2,7 @@
 title: Protección de c-suite con la protección de la cuenta prioritaria en Microsoft Defender para Office 365 Plan 2
 description: Los pasos para proteger el conjunto de c con la protección de cuenta prioritaria. El etiquetado de una cuenta como una cuenta de prioridad habilitará la protección adicional optimizada para los patrones de flujo de correo dirigidos a ejecutivos de la empresa, junto con visibilidad adicional en informes, alertas e investigaciones.
 search.product: ''
-search.appverid: ''
-ms.service: microsoft-365-security
+ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -16,13 +15,13 @@ manager: dansimp
 audience: ITPro
 ms.collection: m365-guidance-templates
 ms.topic: how-to
-ms.subservice: mdo
-ms.openlocfilehash: d3c7d1cff44d1b8d3070a9a6ed1160ad25e2d260
-ms.sourcegitcommit: 2b89bcff547e00be3d38dc8d1e6cbcf8f41eba42
+ms.technology: mdo
+ms.openlocfilehash: ad7ebb6b8ab42f5f2b733360f468b56462ea38bc
+ms.sourcegitcommit: 9b133379196da2b3a4bb311b07ff274f43780f68
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/03/2022
-ms.locfileid: "67596619"
+ms.lasthandoff: 09/14/2022
+ms.locfileid: "67681939"
 ---
 # <a name="protect-your-c-suite-with-priority-account-protection"></a>Proteja su c-suite con la protección de cuentas prioritaria
 

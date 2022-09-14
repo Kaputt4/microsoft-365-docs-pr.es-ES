@@ -14,12 +14,13 @@ audience: ITPro
 ms.collection: m365-security-compliance
 ms.topic: conceptual
 ms.subservice: mde
-ms.openlocfilehash: ac6cb30d14f0d2295667227dc3f94d1f86159413
-ms.sourcegitcommit: d3ef9391f621e8f4ca70661184b3bb82c6cbda94
+search.appverid: met150
+ms.openlocfilehash: 592ef3bc4c51685393e95c717b5cb605a139b49d
+ms.sourcegitcommit: 9b133379196da2b3a4bb311b07ff274f43780f68
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/02/2022
-ms.locfileid: "67584207"
+ms.lasthandoff: 09/14/2022
+ms.locfileid: "67684373"
 ---
 # <a name="troubleshoot-cloud-connectivity-issues-for-microsoft-defender-for-endpoint-on-macos"></a>Solución de problemas de conectividad en la nube para Microsoft Defender para punto de conexión en macOS
 

@@ -15,12 +15,13 @@ ms.reviewer: ''
 manager: dansimp
 ms.subservice: mde
 ms.collection: m365-security-compliance
-ms.openlocfilehash: c5f22aa22b81aca5dc4be86e9386b153ad729bcd
-ms.sourcegitcommit: d3ef9391f621e8f4ca70661184b3bb82c6cbda94
+search.appverid: met150
+ms.openlocfilehash: b582932c679758715985d48138099850688be380
+ms.sourcegitcommit: 9b133379196da2b3a4bb311b07ff274f43780f68
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/02/2022
-ms.locfileid: "67577615"
+ms.lasthandoff: 09/14/2022
+ms.locfileid: "67681459"
 ---
 # <a name="better-together-microsoft-defender-antivirus-and-microsoft-defender-for-endpoint"></a>Mejor juntos: Antivirus de Microsoft Defender y Microsoft Defender para punto de conexión
 

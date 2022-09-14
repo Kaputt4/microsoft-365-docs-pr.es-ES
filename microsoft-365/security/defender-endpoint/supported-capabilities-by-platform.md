@@ -16,12 +16,13 @@ ms.collection:
 - m365-initiative-defender-endpoint
 ms.topic: conceptual
 ms.subservice: mde
-ms.openlocfilehash: 216532eab9aead28c94122bfacfa4946d191279b
-ms.sourcegitcommit: d3ef9391f621e8f4ca70661184b3bb82c6cbda94
+search.appverid: met150
+ms.openlocfilehash: cbd72c97dd8749fd778506f8c5e5062922801f25
+ms.sourcegitcommit: 9b133379196da2b3a4bb311b07ff274f43780f68
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/02/2022
-ms.locfileid: "67585927"
+ms.lasthandoff: 09/14/2022
+ms.locfileid: "67684408"
 ---
 # <a name="supported-microsoft-defender-for-endpoint-capabilities-by-platform"></a>Funcionalidades de Microsoft Defender para punto de conexión admitidas por plataforma
 
@@ -50,7 +51,7 @@ En la tabla siguiente se proporciona información sobre las funcionalidades de M
 |Protección web       | ![Sí.](images/svg/check-yes.svg)        | ![Sí.](images/svg/check-yes.svg)     |  ![Sí.](images/svg/check-yes.svg) <sup>[[2](#fn2)]</sup>       |  ![Sí.](images/svg/check-yes.svg) <sup>[[2](#fn2)]</sup>        |
 ||||||
 |**Detección**     |         |         |         |       |
-|Búsqueda avanzada de amenazas        | ![Sí.](images/svg/check-yes.svg)        | ![Sí.](images/svg/check-yes.svg) |  ![Sí.](images/svg/check-yes.svg)       |  ![Sí.](images/svg/check-yes.svg)         |
+|Búsqueda avanzada        | ![Sí.](images/svg/check-yes.svg)        | ![Sí.](images/svg/check-yes.svg) |  ![Sí.](images/svg/check-yes.svg)       |  ![Sí.](images/svg/check-yes.svg)         |
 |Indicadores de archivos personalizados         | ![Sí.](images/svg/check-yes.svg)        | ![Sí.](images/svg/check-yes.svg)  |  ![Sí.](images/svg/check-yes.svg)       |  ![Sí.](images/svg/check-yes.svg)         |
 |Indicadores de red personalizados        | ![Sí.](images/svg/check-yes.svg)        | ![Sí.](images/svg/check-yes.svg)  |  ![Sí.](images/svg/check-yes.svg) <sup>[[2](#fn2)]</sup>       |  ![Sí.](images/svg/check-yes.svg) <sup>[[2](#fn2)]</sup>        |
 |Bloque EDR       | ![Sí.](images/svg/check-yes.svg)        | ![Sí.](images/svg/check-yes.svg)  |  ![No](images/svg/check-no.svg)       |  ![No](images/svg/check-no.svg)        |

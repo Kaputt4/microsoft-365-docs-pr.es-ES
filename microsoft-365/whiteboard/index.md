@@ -12,12 +12,12 @@ search.appverid: MET150
 ms.collection: ''
 ms.localizationpriority: medium
 description: Busque recursos sobre cómo configurar y administrar Microsoft Whiteboard.
-ms.openlocfilehash: 23fc56fd3fd69c384f787a4b4b27abc159392d12
-ms.sourcegitcommit: 2b89bcff547e00be3d38dc8d1e6cbcf8f41eba42
+ms.openlocfilehash: 5ea00fc7871a39b9342e13b9db7152a68f1bacd0
+ms.sourcegitcommit: 9b133379196da2b3a4bb311b07ff274f43780f68
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/03/2022
-ms.locfileid: "67598876"
+ms.lasthandoff: 09/14/2022
+ms.locfileid: "67681884"
 ---
 # <a name="introduction-to-microsoft-whiteboard"></a>Introducción a la pizarra de Microsoft
 
@@ -54,6 +54,10 @@ Los recursos de esta sección ayudan al administrador de su organización a conf
 
 | Si busca esta información | Vea este recurso |
 |:-----|:-----|
+|Aprenda a configurar y administrar el acceso a Whiteboard para entornos GCC del Gobierno de EE. UU.|[Administración del acceso a Whiteboard: GCC](manage-whiteboard-access-gcc.md)|
+|Busque dónde se almacenan el contenido y los datos de la pizarra en Azure y OneDrive para la Empresa en entornos GCC del Gobierno de EE. UU.  |[Administración de datos para Whiteboard: GCC](manage-data-gcc.md)  |
+|Obtenga información sobre la experiencia de uso compartido en Teams y cómo compartir vínculos a usuarios específicos en entornos GCC del Gobierno de EE. UU.  |[Administración del uso compartido para Pizarra: GCC](manage-sharing-gcc.md)  |
+|Obtenga información sobre qué clientes son compatibles actualmente con Whiteboard en entornos GCC del Gobierno de EE. UU.  |[Administración de clientes para Whiteboard: GCC](manage-clients-gcc.md)       |
 |Obtenga información sobre cómo configurar y administrar el acceso a Whiteboard para entornos de GCC High del Gobierno de EE. UU.|[Administración del acceso a Whiteboard- GCC High](manage-whiteboard-access-gcc-high.md)|
 |Busque dónde se almacenan el contenido y los datos de la pizarra en Azure y OneDrive para la Empresa en entornos de GCC High del Gobierno de EE. UU.  |[Administración de datos para Pizarra: GCC High](manage-data-gcc-high.md)  |
 |Obtenga información sobre la experiencia de uso compartido en Teams y cómo compartir vínculos a usuarios específicos en entornos de GCC High del Gobierno de EE. UU.  |[Administración del uso compartido para Pizarra: GCC High](manage-sharing-gcc-high.md)  |
@@ -64,6 +68,3 @@ Los recursos de esta sección ayudan al administrador de su organización a conf
 | Si busca esta información | Vea este recurso |
 |:-----|:-----|
 |Búsqueda de referencias de ayuda del cmdlet de PowerShell para administrar Microsoft Whiteboard|[PowerShell para pizarra](/powershell/module/whiteboard/)|
-
-
-

@@ -22,12 +22,13 @@ ms.collection:
 - zerotrust-solution
 - highpri
 ms.subservice: mdo
-ms.openlocfilehash: 07049a7eb04cac2a22f82aa7cf57fe8b44a228e7
-ms.sourcegitcommit: 2b89bcff547e00be3d38dc8d1e6cbcf8f41eba42
+search.appverid: met150
+ms.openlocfilehash: dd0182bda8e23537a1c7914270037ea61c16feaa
+ms.sourcegitcommit: 9b133379196da2b3a4bb311b07ff274f43780f68
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/03/2022
-ms.locfileid: "67599723"
+ms.lasthandoff: 09/14/2022
+ms.locfileid: "67686645"
 ---
 # <a name="common-zero-trust-identity-and-device-access-policies"></a>Directivas comunes de acceso a dispositivos e identidades de Confianza cero
 
@@ -58,7 +59,7 @@ Para darle tiempo para realizar estas tareas, se recomienda implementar las dire
 
 |Nivel de protección|Directivas|Más información|Licencias|
 |---|---|---|---|
-|**Punto de partida**|[Requerir MFA cuando el riesgo de inicio de sesión es *medio* o *alto*](#require-mfa-based-on-sign-in-risk)||Microsoft 365 E5 o Microsoft 365 E3 con el complemento de seguridad E5|
+|**Punto de inicio**|[Requerir MFA cuando el riesgo de inicio de sesión es *medio* o *alto*](#require-mfa-based-on-sign-in-risk)||Microsoft 365 E5 o Microsoft 365 E3 con el complemento de seguridad E5|
 ||[Bloquear a los clientes que no sean compatibles con la autenticación moderna](#block-clients-that-dont-support-multi-factor)|Los clientes que no usan la autenticación moderna pueden omitir las directivas de acceso condicional, por lo que es importante bloquearlas.|Microsoft 365 E3 o E5|
 ||[Los usuarios de riesgo alto tienen que cambiar la contraseña](#high-risk-users-must-change-password)|Obliga a los usuarios a cambiar su contraseña al iniciar sesión si se detecta actividad de alto riesgo para su cuenta.|Microsoft 365 E5 o Microsoft 365 E3 con el complemento de seguridad E5|
 ||[Aplicar protección de datos de directivas de protección de aplicaciones (APP)](#apply-app-data-protection-policies)|Una directiva de Protección de aplicaciones de Intune por plataforma (Windows, iOS/iPadOS, Android).|Microsoft 365 E3 o E5|

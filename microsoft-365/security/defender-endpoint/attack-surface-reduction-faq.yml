@@ -17,13 +17,13 @@ metadata:
   ms.topic: faq
   ms.technology: mde
   ms.collection: m365-security-compliance
-  ms.date: 1/18/2022
-  ms.openlocfilehash: b2cb00e826fc7e108fdd4b71720ac1fc6007750d
-  ms.sourcegitcommit: d09eb780dc41a01796eb8137fbe9267231af6746
+  ms.date: 09/13/2022
+  ms.openlocfilehash: 46fe5d2e3cdfd2bf8b893461f250060ef76e3803
+  ms.sourcegitcommit: 9b133379196da2b3a4bb311b07ff274f43780f68
   ms.translationtype: MT
   ms.contentlocale: es-ES
-  ms.lasthandoff: 08/19/2022
-  ms.locfileid: "67388867"
+  ms.lasthandoff: 09/14/2022
+  ms.locfileid: "67683679"
 title: Preguntas más frecuentes sobre la reducción de la superficie expuesta a ataques
 summary: >
   [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
@@ -79,17 +79,17 @@ sections:
       Tenga en cuenta los siguientes elementos sobre las exclusiones de reglas de ASR (incluidos los caracteres comodín y env. variables):
 
 
-      - Las exclusiones de reglas de ASR son independientes de las exclusiones del Antivirus de Microsoft Defender
+      - Las exclusiones de reglas de ASR son independientes de las exclusiones del Antivirus de Microsoft Defender.
 
-      - No se pueden usar caracteres comodín para definir una letra de unidad
+      - No se pueden usar caracteres comodín para definir una letra de unidad.
 
       - Si desea excluir más de una carpeta, en una ruta de acceso, use varias instancias de ```\*\``` para indicar varias carpetas anidadas (por ejemplo, ```c:\Folder\*\*\Test```)
 
-      - Microsoft Endpoint Configuration Manager *no* admite caracteres comodín (* o ?)
+      - Microsoft Endpoint Configuration Manager admite caracteres comodín (* o ?).
 
       - Si desea excluir un archivo, que contiene caracteres aleatorios (generación automatizada de archivos), puede usar el símbolo "?" (por ejemplo, ```C:\Folder\fileversion?.docx```)
 
-      - Las exclusiones de ASR en directiva de grupo no admiten comillas (el motor controlará de forma nativa la ruta de acceso larga, los espacios, etc., por lo que no es necesario usar comillas)
+      - Las exclusiones de ASR en directiva de grupo no admiten comillas (el motor controlará de forma nativa la ruta de acceso larga, los espacios, etc., por lo que no es necesario usar comillas).
 
       - Las reglas de ASR se ejecutan en la cuenta NT AUTHORITY\SYSTEM, por lo que las variables de entorno se limitan a las variables de máquina.
   - question: >
