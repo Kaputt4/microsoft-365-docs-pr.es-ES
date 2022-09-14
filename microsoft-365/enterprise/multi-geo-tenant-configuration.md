@@ -6,7 +6,7 @@ author: MikePlumleyMSFT
 manager: pamgreen
 audience: ITPro
 ms.topic: article
-ms.service: o365-solutions
+ms.service: microsoft-365-enterprise
 ms.collection:
 - SPO_Content
 - Strat_SP_gtc
@@ -15,12 +15,12 @@ f1.keywords:
 ms.custom: seo-marvel-apr2020
 ms.localizationpriority: medium
 description: En este artículo, aprenderá a agregar ubicaciones de satélite y a configurar su espacio empresarial de Microsoft 365 Multi-Geo
-ms.openlocfilehash: 2a82872e7c917421c0eb418cf0582eb33d2a53c9
-ms.sourcegitcommit: 61bdfa84f2d6ce0b61ba5df39dcde58df6b3b59d
+ms.openlocfilehash: 3c8071616aa754888aa6cab9bc5a0373552497e5
+ms.sourcegitcommit: 9b133379196da2b3a4bb311b07ff274f43780f68
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/08/2022
-ms.locfileid: "65941204"
+ms.lasthandoff: 09/14/2022
+ms.locfileid: "67687249"
 ---
 # <a name="microsoft-365-multi-geo-tenant-configuration"></a>Configuración de inquilino de Microsoft 365 Multi-Geo
 
@@ -81,7 +81,7 @@ Siga el proceso en [Sincronización de Azure Active Directory Connect: Configura
 Se recomienda incluir el establecimiento de la ubicación de datos preferida del usuario como parte del flujo de trabajo de creación de usuarios estándar.
 
 > [!IMPORTANT]
-> En el caso de los nuevos usuarios sin OneDrive aprovisionado, licencia la cuenta y espere al menos 48 horas después de que la PDL de un usuario se sincronice con Azure AD para que los cambios se propaguen antes de que el usuario inicie sesión en OneDrive para la Empresa. (El establecimiento de la PDL antes de que el usuario inicie sesión para aprovisionar OneDrive para la Empresa garantiza que la nueva instancia de OneDrive del usuario se aprovisionará en la ubicación correcta).
+> En el caso de los nuevos usuarios sin OneDrive aprovisionado, realice la licencia de la cuenta y espere al menos 48 horas después de que la PDL de un usuario se sincronice con Azure AD para que los cambios se propaguen antes de que el usuario inicie sesión en OneDrive para la Empresa. (El establecimiento de la PDL antes de que el usuario inicie sesión para aprovisionar OneDrive para la Empresa garantiza que la nueva instancia de OneDrive del usuario se aprovisionará en la ubicación correcta).
 
 ### <a name="setting-preferred-data-location-for-cloud-only-users"></a>Establecimiento de la ubicación de datos preferida de usuarios solo de nube
 
@@ -112,7 +112,7 @@ Se recomienda incluir el establecimiento de la ubicación de datos preferida del
 
 ## <a name="onedrive-provisioning-and-the-effect-of-pdl"></a>Aprovisionamiento de OneDrive y efecto de la PDL
 
-Si el usuario ya ha creado un sitio de OneDrive en el espacio empresarial, el establecimiento de su PDL no trasladará automáticamente su instancia de OneDrive existente. Para mover OneDrive de un usuario, consulte [Movimiento geográfico de OneDrive para la Empresa](move-onedrive-between-geo-locations.md).
+Si el usuario ya ha creado un sitio de OneDrive en el espacio empresarial, el establecimiento de su PDL no trasladará automáticamente su instancia de OneDrive existente. Para mover OneDrive de un usuario, consulte [OneDrive para la Empresa Movimiento geográfico](move-onedrive-between-geo-locations.md).
 
 > [!NOTE]
 > Exchange Online reubica automáticamente el buzón del usuario si el PLD cambia y MailboxRegion ya no coincide con el código de ubicación geográfica de la base de datos de buzones. Para obtener más información, consulte [Administración de buzones de Exchange Online en un entorno multigeográfico](./administering-exchange-online-multi-geo.md).
@@ -146,7 +146,7 @@ Seleccione OneDrive desde el iniciador de aplicaciones de Microsoft 365 y confir
 
 Inicie sesión en la aplicación móvil de OneDrive con las credenciales de la cuenta de prueba. Confirme que puede ver sus archivos de OneDrive para la Empresa y puede interactuar con ellos desde su dispositivo móvil.
 
-**Cliente de sincronización de OneDrive**:
+**Sincronización de OneDrive cliente**:
 
 Confirme que el cliente de sincronización de OneDrive detecta automáticamente la ubicación geográfica de OneDrive para la Empresa al iniciar sesión. Si quiere descargar el cliente de sincronización, puede hacer clic en **Sincronización** en la biblioteca de OneDrive.
 

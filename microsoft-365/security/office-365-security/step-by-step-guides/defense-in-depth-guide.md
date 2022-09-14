@@ -2,7 +2,6 @@
 title: Introducción a la configuración en profundidad de defensa para la seguridad del correo electrónico
 description: Guía de configuración paso a paso sobre cómo obtener el valor de seguridad de Microsoft Defender para Office 365 cuando se tiene filtrado de correo electrónico de terceros.
 search.product: ''
-search.appverid: ''
 ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
@@ -17,12 +16,13 @@ audience: ITPro
 ms.collection: m365-guidance-templates
 ms.topic: how-to
 ms.technology: mdo
-ms.openlocfilehash: cdeaaecbf0f0473b9f066db5d0b87e34d722a6a2
-ms.sourcegitcommit: e9323a90a1156c10b037abca3e16d7367ef92dd7
+search.appverid: met150
+ms.openlocfilehash: cb9d63c020a7857c31a77f41ce0c027c82ba81e7
+ms.sourcegitcommit: 9b133379196da2b3a4bb311b07ff274f43780f68
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/02/2022
-ms.locfileid: "67568354"
+ms.lasthandoff: 09/14/2022
+ms.locfileid: "67688318"
 ---
 # <a name="getting-the-best-security-value-from-microsoft-defender-for-office-365-when-you-have-third-party-email-filtering"></a>Obtener el mejor valor de seguridad de Microsoft Defender para Office 365 cuando se tiene filtrado de correo electrónico de terceros
 

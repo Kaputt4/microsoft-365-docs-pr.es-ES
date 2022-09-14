@@ -15,12 +15,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Aprenda a crear e importar un tipo de información confidencial personalizada para directivas en el Centro de cumplimiento.
-ms.openlocfilehash: b71893afad2d68f9820f23e60ae9c3b15531f976
-ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
+ms.openlocfilehash: ea8e20cbc5f74ed04099f8abe9b772d670b4fef7
+ms.sourcegitcommit: 9b133379196da2b3a4bb311b07ff274f43780f68
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/06/2022
-ms.locfileid: "66625597"
+ms.lasthandoff: 09/14/2022
+ms.locfileid: "67683921"
 ---
 # <a name="create-a-custom-sensitive-information-type-using-powershell"></a>Crear un tipo de información confidencial personalizada con PowerShell
 
@@ -317,7 +317,7 @@ Tenga en cuenta que, para el correo electrónico, el cuerpo del mensaje y cada d
 
 Cuantas más pruebas necesite un patrón, más seguro estará de que se haya identificado una entidad real (como un id. de empleado) cuando coincida el patrón. Por ejemplo, tendrá más confianza en un patrón que necesite un número de identificación de nueve dígitos, una fecha de contratación y una palabra clave a muy poca distancia, que en un patrón que solo necesite un número de identificación de nueve dígitos.
 
-El elemento Pattern tiene un atributo confidenceLevel obligatorio. Piense en el valor de confidenceLevel (un número entero entre 1 y 100) como un id. único para cada patrón de una entidad (los patrones de una entidad deben tener asignados distintos niveles de confianza). El valor preciso del número entero no importa: solo tiene que elegir números que tengan sentido para el equipo de cumplimiento. Después de cargar el tipo de información confidencial personalizado y crear una directiva, puede hacer referencia a esos niveles de confianza en las condiciones de las reglas que cree.
+El elemento Pattern tiene un atributo confidenceLevel obligatorio. Puede pensar en el valor de confidenceLevel (un valor entre 65/75/85 que indica niveles de confianza bajo/medio/alto) como un identificador único para cada patrón de una entidad. Después de cargar el tipo de información confidencial personalizado y de crear una directiva, podrá hacer referencia a estos niveles de confianza en las condiciones de las reglas que cree.
 
 ![Marcado XML que muestra elementos Pattern con valores diferentes para el atributo confidenceLevel.](../media/sit-xml-markedup-2.png)
 

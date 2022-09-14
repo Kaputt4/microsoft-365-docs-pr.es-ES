@@ -14,12 +14,13 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: troubleshooting
 ms.subservice: mde
-ms.openlocfilehash: c4dba4a85985bdbfa2bcc03421327bd35ae35928
-ms.sourcegitcommit: d3ef9391f621e8f4ca70661184b3bb82c6cbda94
+search.appverid: met150
+ms.openlocfilehash: eabaf627d882544d377e0cea61d83c5858fe3ac7
+ms.sourcegitcommit: 9b133379196da2b3a4bb311b07ff274f43780f68
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/02/2022
-ms.locfileid: "67585540"
+ms.lasthandoff: 09/14/2022
+ms.locfileid: "67690817"
 ---
 # <a name="troubleshoot-service-issues"></a>Solucionar problemas de servicio
 
@@ -78,7 +79,7 @@ Actualmente no se admiten los siguientes formatos de fecha y hora:
 
 ### <a name="use-of-comma-to-indicate-thousand"></a>Uso de comas para indicar miles
 
-No se admite el uso de comas como separador en números. Las regiones en las que un número se separa con una coma para indicar un millar, solo verán el uso de un punto como separador. Por ejemplo, 15 5 000 se muestra como 15,5 K.
+No se admite el uso de comas como separador en números. Las regiones en las que un número se separa con una coma para indicar un millar, solo verán el uso de un punto como separador. Por ejemplo, 15,5 K se muestra como 15,5 K.
 
 > ¿Quiere experimentar Microsoft Defender para punto de conexión? [Regístrese para obtener una prueba gratuita.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-troubleshoot-belowfoldlink)
 

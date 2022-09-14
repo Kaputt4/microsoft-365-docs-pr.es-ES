@@ -16,12 +16,13 @@ ms.collection:
 - m365-security-compliance
 ms.topic: conceptual
 ms.subservice: mde
-ms.openlocfilehash: 3b2a0ad396f9a74e4b01bcda5e1e072f2f297b5c
-ms.sourcegitcommit: 228fa13973bf7c2d91504703fab757f552ae40dd
+search.appverid: met150
+ms.openlocfilehash: 859abb10c9e3db1b608190e79f540dc90771ab99
+ms.sourcegitcommit: 9b133379196da2b3a4bb311b07ff274f43780f68
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/01/2022
-ms.locfileid: "67519740"
+ms.lasthandoff: 09/14/2022
+ms.locfileid: "67690059"
 ---
 # <a name="configure-microsoft-defender-for-endpoint-on-linux-for-static-proxy-discovery"></a>Configuración de Microsoft Defender para punto de conexión en Linux para la detección de proxy estático
 

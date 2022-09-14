@@ -18,12 +18,13 @@ ms.collection:
 ms.custom: admindeeplinkDEFENDER
 ms.topic: article
 ms.subservice: mde
-ms.openlocfilehash: 37dd9e55422520fbd2fe1cce88d052503a331b9b
-ms.sourcegitcommit: d3ef9391f621e8f4ca70661184b3bb82c6cbda94
+search.appverid: met150
+ms.openlocfilehash: bc950e1f850dab3a5d3474566145979be34b6ab9
+ms.sourcegitcommit: 9b133379196da2b3a4bb311b07ff274f43780f68
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/02/2022
-ms.locfileid: "67575831"
+ms.lasthandoff: 09/14/2022
+ms.locfileid: "67688669"
 ---
 # <a name="onboarding-using-microsoft-endpoint-configuration-manager"></a>Incorporación mediante Microsoft Endpoint Configuration Manager
 
@@ -75,7 +76,7 @@ Siga los pasos siguientes para incorporar puntos de conexión mediante microsoft
 
     :::image type="content" source="images/configmgr-device-collections.png" alt-text="Asistente de Configuration Manager de punto de conexión de Microsoft1" lightbox="images/configmgr-device-collections.png":::
 
-2. Haga clic con el botón derecho en **Recopilación de dispositivos** y seleccione **Crear recopilación de dispositivos**.
+2. Seleccione **Recopilación de dispositivos** con el botón derecho y **seleccione Crear recopilación de dispositivos**.
 
     :::image type="content" source="images/configmgr-create-device-collection.png" alt-text="Asistente para Configuration Manager de punto de conexión de Microsoft2" lightbox="images/configmgr-create-device-collection.png":::
 
@@ -87,7 +88,7 @@ Siga los pasos siguientes para incorporar puntos de conexión mediante microsoft
 
     :::image type="content" source="images/configmgr-query-rule.png" alt-text="Asistente para Configuration Manager de punto de conexión de Microsoft4" lightbox="images/configmgr-query-rule.png":::
 
-5. Haga clic en **Siguiente** en el **Asistente para pertenencia directa** y haga clic en **Editar instrucción de consulta**.
+5. Seleccione **Siguiente** en el **Asistente para pertenencia directa** y seleccione **Editar instrucción de consulta**.
 
     :::image type="content" source="images/configmgr-direct-membership.png" alt-text="Asistente para Configuration Manager de punto de conexión de Microsoft5" lightbox="images/configmgr-direct-membership.png":::
 
@@ -95,7 +96,7 @@ Siga los pasos siguientes para incorporar puntos de conexión mediante microsoft
 
     :::image type="content" source="images/configmgr-criteria.png" alt-text="Asistente para Configuration Manager de punto de conexión de Microsoft6" lightbox="images/configmgr-criteria.png":::
 
-7. Mantenga el tipo de criterio como **valor simple**, elija dónde como **Sistema operativo: número de compilación**, operador como **mayor o igual que** y valor **14393** y haga clic en **Aceptar**.
+7. Mantenga el tipo de criterio como **valor simple**, elija dónde como **Sistema operativo: número de compilación**, operador como **mayor o igual que** y valor **14393** y seleccione en **Aceptar**.
 
     :::image type="content" source="images/configmgr-simple-value.png" alt-text="Asistente para Configuration Manager de punto de conexión de Microsoft7" lightbox="images/configmgr-simple-value.png":::
 
@@ -144,36 +145,36 @@ Desde el portal de Microsoft 365 Defender es posible descargar la `.onboarding` 
 
     :::image type="content" source="images/configmgr-policy-name.png" alt-text="Asistente para Configuration Manager de punto de conexión de Microsoft13" lightbox="images/configmgr-policy-name.png":::
 
-8. Haga clic en **Examinar**.
+8. Seleccione **Examinar**.
 
 9. Vaya a la ubicación del archivo descargado del paso 4 anterior.
 
-10. Haga clic en **Siguiente**.
+10. Seleccione **Siguiente**.
 11. Configure el agente con los ejemplos adecuados (**Ninguno** o **Todos los tipos de archivo**).
 
     :::image type="content" source="images/configmgr-config-settings.png" alt-text="Los valores de configuración1" lightbox="images/configmgr-config-settings.png":::
 
-12. Seleccione la telemetría adecuada (**Normal** o **Acelerada**) y haga clic en **Siguiente**.
+12. Seleccione la telemetría adecuada (**Normal** o **Acelerada**) y, a continuación, seleccione **Siguiente**.
 
     :::image type="content" source="images/configmgr-telemetry.png" alt-text="Los valores de configuración2" lightbox="images/configmgr-telemetry.png":::
 
-13. Compruebe la configuración y haga clic en **Siguiente**.
+13. Compruebe la configuración y, a continuación, seleccione **Siguiente**.
 
     :::image type="content" source="images/configmgr-verify-configuration.png" alt-text="La configuración de configuración3" lightbox="images/configmgr-verify-configuration.png":::
 
-14. Haga clic en **Cerrar** cuando se complete el asistente.
+14. Seleccione **Cerrar** cuando se complete el Asistente.
 
 15. En la consola de Microsoft Endpoint Configuration Manager, haga clic con el botón derecho en la directiva de Defender para punto de conexión que acaba de crear y seleccione **Implementar**.
 
     :::image type="content" source="images/configmgr-deploy.png" alt-text="Los valores de configuración4" lightbox="images/configmgr-deploy.png":::
 
-16. En el panel derecho, seleccione la colección creada anteriormente y haga clic en **Aceptar**.
+16. En el panel derecho, seleccione la colección creada anteriormente y seleccione **Aceptar**.
 
     :::image type="content" source="images/configmgr-select-collection.png" alt-text="La configuración5" lightbox="images/configmgr-select-collection.png":::
 
 #### <a name="previous-versions-of-windows-client-windows-7-and-windows-81"></a>Versiones anteriores del cliente de Windows (Windows 7 y Windows 8.1)
 
-Siga los pasos siguientes para identificar el identificador del área de trabajo de Defender para punto de conexión y la clave del área de trabajo, que serán necesarios para la incorporación de versiones anteriores de Windows.
+Siga los pasos siguientes para identificar el identificador del área de trabajo de Defender para punto de conexión y la clave del área de trabajo que serán necesarios para la incorporación de versiones anteriores de Windows.
 
 1. En un <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">portal de Microsoft 365 Defender</a>, seleccione **Configuración** \> **Puntos de conexión** \> **Incorporación** (en **Administración de dispositivos**).
 
@@ -209,7 +210,7 @@ Una vez completado, debería ver los puntos de conexión incorporados en el port
 
 ### <a name="next-generation-protection"></a>Protección de última generación
 
-El Antivirus de Microsoft Defender es una solución antimalware integrada que proporciona una protección de última generación para equipos de escritorio, equipos portátiles y servidores.
+Antivirus de Microsoft Defender es una solución antimalware integrada que proporciona protección de próxima generación para equipos de escritorio, equipos portátiles y servidores.
 
 1. En la consola de Microsoft Endpoint Configuration Manager, vaya a **Assets and Compliance Overview Endpoint Protection Antimalware Polices (Directivas antimalware de Endpoint Protection \> de Información general \> sobre activos y cumplimiento\>**) y elija **Create Antimalware Policy (Crear directiva antimalware**).
 
@@ -245,7 +246,7 @@ El Antivirus de Microsoft Defender es una solución antimalware integrada que pr
 
     :::image type="content" source="images/f5508317cd8c7870627cb4726acd5f3d.png" alt-text="Panel de protección de última generación10" lightbox="images/f5508317cd8c7870627cb4726acd5f3d.png":::
 
-4. Dirija la nueva directiva antimalware a la colección de Windows y haga clic en **Aceptar**.
+4. Dirige la nueva directiva antimalware a tu colección de Windows y selecciona **Aceptar**.
 
     :::image type="content" source="images/configmgr-select-collection.png" alt-text="Panel de protección de próxima generación11" lightbox="images/configmgr-select-collection.png":::
 
@@ -255,9 +256,9 @@ Después de completar esta tarea, ahora ha configurado correctamente el Antiviru
 
 El pilar de reducción de la superficie expuesta a ataques de Defender para punto de conexión incluye el conjunto de características que está disponible en Protección contra vulnerabilidades de seguridad. Reglas de reducción de la superficie expuesta a ataques (ASR), acceso controlado a carpetas, protección de red y protección contra vulnerabilidades de seguridad.
 
-Todas estas características proporcionan un modo de auditoría y un modo de bloque. En el modo de auditoría no hay ningún impacto en el usuario final. Todo lo que hace es recopilar telemetría adicional y hacer que esté disponible en el portal de Microsoft 365 Defender. El objetivo de una implementación es mover paso a paso los controles de seguridad al modo de bloque.
+Todas estas características proporcionan un modo de prueba y un modo de bloque. En el modo de prueba, no hay ningún impacto en el usuario final. Todo lo que hace es recopilar telemetría adicional y hacer que esté disponible en el portal de Microsoft 365 Defender. El objetivo de una implementación es mover paso a paso los controles de seguridad al modo de bloque.
 
-Para establecer reglas de ASR en modo auditoría:
+Para establecer reglas de ASR en modo de prueba:
 
 1. En la consola de Microsoft Endpoint Configuration Manager, vaya a **Assets and Compliance \> Overview \> Endpoint Protection \> Windows Defender Exploit Guard** y elija Crear directiva de **Protección contra vulnerabilidades** de seguridad.
 
@@ -265,15 +266,15 @@ Para establecer reglas de ASR en modo auditoría:
 
 2. Seleccione **Reducción de superficie expuesta a ataques**.
 
-3. Establezca reglas en **Auditar** y haga clic en **Siguiente**.
+3. Establezca reglas en **Auditar** y seleccione **Siguiente**.
 
    :::image type="content" source="images/d18e40c9e60aecf1f9a93065cb7567bd.png" alt-text="El punto de conexión de Microsoft Configuration Manager console1" lightbox="images/d18e40c9e60aecf1f9a93065cb7567bd.png":::
 
-4. Para confirmar la nueva directiva de Protección contra vulnerabilidades de seguridad, haga clic en **Siguiente**.
+4. Para confirmar la nueva directiva de Protección contra vulnerabilidades de seguridad, seleccione **Siguiente**.
 
    :::image type="content" source="images/0a6536f2c4024c08709cac8fcf800060.png" alt-text="Microsoft Endpoint Configuration Manager console2" lightbox="images/0a6536f2c4024c08709cac8fcf800060.png":::
 
-5. Una vez creada la directiva, haga clic en **Cerrar**.
+5. Una vez creada la directiva, seleccione **Cerrar**.
 
    :::image type="content" source="images/95d23a07c2c8bc79176788f28cef7557.png" alt-text="El punto de conexión de Microsoft Configuration Manager consola3" lightbox="images/95d23a07c2c8bc79176788f28cef7557.png":::
 
@@ -281,11 +282,11 @@ Para establecer reglas de ASR en modo auditoría:
 
    :::image type="content" source="images/8999dd697e3b495c04eb911f8b68a1ef.png" alt-text="El punto de conexión de Microsoft Configuration Manager consola4" lightbox="images/8999dd697e3b495c04eb911f8b68a1ef.png":::
 
-7. Dirija la directiva a la colección de Windows recién creada y haga clic en **Aceptar**.
+7. Dirija la directiva a la colección de Windows recién creada y seleccione **Aceptar**.
 
    :::image type="content" source="images/0ccfe3e803be4b56c668b220b51da7f7.png" alt-text="El punto de conexión de Microsoft Configuration Manager consola5" lightbox="images/0ccfe3e803be4b56c668b220b51da7f7.png":::
 
-Después de completar esta tarea, ahora ha configurado correctamente las reglas de ASR en modo de auditoría.
+Después de completar esta tarea, ahora ha configurado correctamente las reglas de ASR en modo de prueba.
 
 A continuación se muestran pasos adicionales para comprobar si las reglas de ASR se aplican correctamente a los puntos de conexión. (Esto puede tardar unos minutos)
 
@@ -293,21 +294,21 @@ A continuación se muestran pasos adicionales para comprobar si las reglas de AS
 
 2. Seleccione **Administración de configuración** en el menú de la izquierda.
 
-3. Haga clic en **Ir a la administración de superficies expuestas a ataques** en el panel Administración de superficie expuesta a ataques.
+3. Seleccione **Ir a la administración de superficies expuestas a ataques** en el panel Administración de superficie expuesta a ataques.
 
    :::image type="content" source="images/security-center-attack-surface-mgnt-tile.png" alt-text="Administración de la superficie expuesta a ataques" lightbox="images/security-center-attack-surface-mgnt-tile.png":::
 
-4. Haga clic en la pestaña **Configuración** en Informes de reglas de reducción de superficie expuesta a ataques. Muestra información general sobre la configuración de reglas de ASR y el estado de las reglas de ASR en cada dispositivo.
+4. Seleccione **la pestaña Configuración** en Informes de reglas de reducción de superficie expuesta a ataques. Muestra información general sobre la configuración de reglas de ASR y el estado de las reglas de ASR en cada dispositivo.
 
    :::image type="content" source="images/f91f406e6e0aae197a947d3b0e8b2d0d.png" alt-text="Las reglas de reducción de superficie expuesta a ataques informan1" lightbox="images/f91f406e6e0aae197a947d3b0e8b2d0d.png":::
 
-5. Haga clic en cada dispositivo para ver los detalles de configuración de las reglas de ASR.
+5. Seleccionar cada dispositivo muestra los detalles de configuración de las reglas de ASR.
 
    :::image type="content" source="images/24bfb16ed561cbb468bd8ce51130ca9d.png" alt-text="Las reglas de reducción de superficie expuesta a ataques informan2" lightbox="images/24bfb16ed561cbb468bd8ce51130ca9d.png":::
 
 Consulte [Optimización de la implementación y detecciones de reglas de ASR](/microsoft-365/security/defender-endpoint/configure-machines-asr) para obtener más detalles.
 
-#### <a name="set-network-protection-rules-in-audit-mode"></a>Establecimiento de reglas de protección de red en modo auditoría
+#### <a name="set-network-protection-rules-in-test-mode"></a>Establecimiento de reglas de protección de red en modo de prueba
 
 1. En la consola de Microsoft Endpoint Configuration Manager, vaya a **Assets and Compliance \> Overview \> Endpoint Protection \> Windows Defender Exploit Guard** y elija Crear directiva de **Protección contra vulnerabilidades** de seguridad.
 
@@ -315,15 +316,15 @@ Consulte [Optimización de la implementación y detecciones de reglas de ASR](/m
 
 2. Seleccione **Protección de red**.
 
-3. Establezca la configuración en **Auditar** y haga clic en **Siguiente**.
+3. Establezca la configuración en **Auditar** y seleccione **Siguiente**.
 
    :::image type="content" source="images/c039b2e05dba1ade6fb4512456380c9f.png" alt-text="The System Center Configuration Manager2" lightbox="images/c039b2e05dba1ade6fb4512456380c9f.png":::
 
-4. Para confirmar la nueva directiva de Protección contra vulnerabilidades de seguridad, haga clic en **Siguiente**.
+4. Para confirmar la nueva directiva de Protección contra vulnerabilidades de seguridad, seleccione **Siguiente**.
 
    :::image type="content" source="images/0a6536f2c4024c08709cac8fcf800060.png" alt-text="La directiva de Protección contra vulnerabilidades1" lightbox="images/0a6536f2c4024c08709cac8fcf800060.png":::
 
-5. Una vez creada la directiva, haga clic en **Cerrar**.
+5. Una vez creada la directiva, seleccione **Cerrar**.
 
    :::image type="content" source="images/95d23a07c2c8bc79176788f28cef7557.png" alt-text="La directiva de Protección contra vulnerabilidades2" lightbox="images/95d23a07c2c8bc79176788f28cef7557.png":::
 
@@ -335,9 +336,9 @@ Consulte [Optimización de la implementación y detecciones de reglas de ASR](/m
 
    :::image type="content" source="images/0ccfe3e803be4b56c668b220b51da7f7.png" alt-text="El punto de conexión de Microsoft Configuration Manager-2" lightbox="images/0ccfe3e803be4b56c668b220b51da7f7.png":::
 
-Después de completar esta tarea, ahora ha configurado correctamente Protección de red en modo de auditoría.
+Después de completar esta tarea, ahora ha configurado correctamente Protección de red en modo de prueba.
 
-#### <a name="to-set-controlled-folder-access-rules-in-audit-mode"></a>Para establecer reglas de acceso controlado a carpetas en modo auditoría
+#### <a name="to-set-controlled-folder-access-rules-in-test-mode"></a>Para establecer reglas de acceso controlado a carpetas en modo de prueba
 
 1. En la consola de Microsoft Endpoint Configuration Manager, vaya a **Assets and Compliance** > **Overview** > **Endpoint Protection** >  **Windows Defender Exploit Guard** y, a continuación, elija **Crear directiva de Protección contra vulnerabilidades de seguridad**.
 
@@ -345,15 +346,15 @@ Después de completar esta tarea, ahora ha configurado correctamente Protección
 
 2. Seleccione **Acceso controlado a carpetas**.
 
-3. Establezca la configuración en **Auditar** y haga clic en **Siguiente**.
+3. Establezca la configuración en **Auditar** y seleccione **Siguiente**.
 
    :::image type="content" source="images/a8b934dab2dbba289cf64fe30e0e8aa4.png" alt-text="El punto de conexión de Microsoft Configuration Manager-4" lightbox="images/a8b934dab2dbba289cf64fe30e0e8aa4.png":::
 
-4. Confirme la nueva directiva de Protección contra vulnerabilidades haciendo clic en **Siguiente**.
+4. Para confirmar la nueva directiva de Protección contra vulnerabilidades de seguridad, seleccione **Siguiente**.
 
    :::image type="content" source="images/0a6536f2c4024c08709cac8fcf800060.png" alt-text="El punto de conexión de Microsoft Configuration Manager-5" lightbox="images/0a6536f2c4024c08709cac8fcf800060.png":::
 
-5. Una vez creada la directiva, haga clic en **Cerrar**.
+5. Una vez creada la directiva, seleccione **Cerrar**.
 
    :::image type="content" source="images/95d23a07c2c8bc79176788f28cef7557.png" alt-text="El punto de conexión de Microsoft Configuration Manager-6" lightbox="images/95d23a07c2c8bc79176788f28cef7557.png":::
 
@@ -361,13 +362,11 @@ Después de completar esta tarea, ahora ha configurado correctamente Protección
 
    :::image type="content" source="images/8999dd697e3b495c04eb911f8b68a1ef.png" alt-text="El punto de conexión de Microsoft Configuration Manager-7" lightbox="images/8999dd697e3b495c04eb911f8b68a1ef.png":::
 
-
-7. Dirija la directiva a la colección de Windows recién creada y haga clic en **Aceptar**.
-
+7. Dirija la directiva a la colección de Windows recién creada y seleccione **Aceptar**.
 
 :::image type="content" source="images/0ccfe3e803be4b56c668b220b51da7f7.png" alt-text="El punto de conexión de Microsoft Configuration Manager-8" lightbox="images/0ccfe3e803be4b56c668b220b51da7f7.png":::
 
-Ahora ha configurado correctamente el acceso controlado a carpetas en modo de auditoría.
+Ahora ha configurado correctamente el acceso controlado a carpetas en modo de prueba.
 
 ## <a name="related-topic"></a>Tema relacionado
 

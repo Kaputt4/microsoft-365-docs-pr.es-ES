@@ -15,12 +15,13 @@ ms.collection: M365-security-compliance
 ms.topic: article
 ms.subservice: mde
 ms.custom: api
-ms.openlocfilehash: 9b4e23e764c600799e80cff4d1154c9a5e086d68
-ms.sourcegitcommit: d3ef9391f621e8f4ca70661184b3bb82c6cbda94
+search.appverid: met150
+ms.openlocfilehash: a680e28c3ee2f9401c5a4960adac39aaa6197ebd
+ms.sourcegitcommit: 9b133379196da2b3a4bb311b07ff274f43780f68
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/02/2022
-ms.locfileid: "67584824"
+ms.lasthandoff: 09/14/2022
+ms.locfileid: "67689677"
 ---
 # <a name="configure-microsoft-defender-for-endpoint-to-stream-advanced-hunting-events-to-your-storage-account"></a>Configuración de Microsoft Defender para punto de conexión para transmitir eventos de búsqueda avanzada a la cuenta de almacenamiento
 

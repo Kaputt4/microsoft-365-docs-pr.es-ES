@@ -16,12 +16,13 @@ ms.collection: M365-security-compliance
 ms.topic: article
 ms.subservice: mde
 ms.custom: api
-ms.openlocfilehash: d2277c70efa845d3b983c67203b67e065ae4f7c7
-ms.sourcegitcommit: d3ef9391f621e8f4ca70661184b3bb82c6cbda94
+search.appverid: met150
+ms.openlocfilehash: 1067417fd2eeff624aecf4cf80bb5eeb3b97b03c
+ms.sourcegitcommit: 9b133379196da2b3a4bb311b07ff274f43780f68
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/02/2022
-ms.locfileid: "67581475"
+ms.lasthandoff: 09/14/2022
+ms.locfileid: "67687623"
 ---
 # <a name="release-device-from-isolation-api"></a>Liberación del dispositivo desde la API de aislamiento
 

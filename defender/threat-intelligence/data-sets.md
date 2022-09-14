@@ -7,12 +7,12 @@ ms.service: threat-intelligence
 ms.topic: conceptual
 ms.date: 08/02/2022
 ms.custom: template-concept
-ms.openlocfilehash: 9a728cef7c23d65f2a6f39c1211854cb8c91c53f
-ms.sourcegitcommit: 37e137535c4f70702afe1a5eeaa899c75ee02cfd
+ms.openlocfilehash: 03d058101296968f0b2f3e02e249f6b4c00be157
+ms.sourcegitcommit: 9b133379196da2b3a4bb311b07ff274f43780f68
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/13/2022
-ms.locfileid: "67661067"
+ms.lasthandoff: 09/14/2022
+ms.locfileid: "67687755"
 ---
 # <a name="data-sets"></a>Conjuntos de datos
 
@@ -20,7 +20,7 @@ Microsoft centraliza numerosos conjuntos de datos en una única plataforma, Inte
 
 Microsoft recopila, analiza e indexa datos de Internet para ayudar a los usuarios a detectar amenazas y responder a ellas, priorizar incidentes e identificar proactivamente a los adversarios. infraestructura asociada a grupos de actores que tienen como destino su organización. Microsoft recopila datos de Internet a través de su Red de sensores PDNS, red de proxy global de usuarios virtuales, exámenes de puertos y aprovecha orígenes de terceros para malware y datos agregados del Sistema de nombres de dominio (DNS).
 
-Estos datos de Internet se clasifican en dos grupos distintos: tradicional y avanzado. Los conjuntos de datos tradicionales incluyen resoluciones, whois, certificados SSL, subdominios, hashes, DNS, DNS inverso y servicios. Los conjuntos de datos avanzados incluyen rastreadores, componentes, pares de hosts y cookies. Los conjuntos de datos rastreadores, componentes, pares host y cookies se recopilan al observar el Document Object Model (DOM) de las páginas web rastreadas. Además, los componentes y rastreadores también se observan a partir de reglas de detección que se desencadenan en función de las respuestas de banner de los exámenes de puerto o los detalles del certificado SSL.
+Estos datos de Internet se clasifican en dos grupos distintos: tradicional y avanzado. Los conjuntos de datos tradicionales incluyen resoluciones, whois, certificados SSL, subdominios, DNS, DNS inverso y servicios. Los conjuntos de datos avanzados incluyen rastreadores, componentes, pares de hosts y cookies. Los conjuntos de datos rastreadores, componentes, pares host y cookies se recopilan al observar el Document Object Model (DOM) de las páginas web rastreadas. Además, los componentes y rastreadores también se observan a partir de reglas de detección que se desencadenan en función de las respuestas de banner de los exámenes de puerto o los detalles del certificado SSL.
 
 ![Captura de pantalla de Edge de conjuntos de datos](media/dataSetsEdgeScreenshot.png)
 
@@ -380,37 +380,6 @@ Nuestros datos de par de host incluyen lo siguiente:
 - ¿Dónde se redirige a los usuarios desde y hacia?
 
 - ¿Qué tipo de redireccionamiento está teniendo lugar?
-
-## <a name="hashes"></a>Hashes
-
-Microsoft se asocia con Proofpoint para exponer los hashes de [malware](/microsoft-365/security/intelligence/malware-naming) MD5 asociados con el dominio, el host o la dirección IP de una búsqueda de usuarios. Se recomienda a los usuarios que compren una licencia de Emerging Threats mediante Proofpoint si desean analizar los detalles del hash MD5. Estos datos ayudan a los usuarios a comprender las capacidades, la intención y los motivos de un atacante, a la vez que ayudan a conectar la infraestructura juntos. Cada resultado contiene un hash único.
-
-Nuestros datos hash incluyen lo siguiente:
-
-- **Origen:** el origen usado para detectar el hash.
-- **Ejemplo:** el código de identificación único para el hash detectado.
-- **Fecha de recopilación:** el día en que el origen designado recopiló el ejemplo hash.
-
-![Hashes de pestaña de datos](media/dataTabHashes.png)
-
-**Preguntas que este conjunto de datos puede ayudar a responder:**
-
-- ¿Se conecta el dominio al malware?
-
-    ![Hashes de conjuntos de datos](media/dataSetsHashes.png)
-
-- ¿Esta dirección IP tiene malware asociado?
-    ![Hash de IP de conjuntos de datos](media/dataSetsIPHashes.png)
-
-- ¿Se recopilan los hashes asociados con malware?
-
-- ¿Hace cuánto tiempo se observó esta actividad sospechosa?
-
-- ¿Qué proveedores o orígenes han observado archivos binarios malintencionados?
-
-- ¿La dirección IP o el dominio consultado han servido como servidor de comandos y control para malware?
-
-- ¿La evaluación del archivo asociado al hash de una consulta determinada puede llevarme a otros indicadores con fines de búsqueda de amenazas?
 
 ## <a name="cookies"></a>Cookies
 

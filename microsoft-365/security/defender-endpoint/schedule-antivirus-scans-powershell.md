@@ -16,12 +16,13 @@ manager: dansimp
 ms.subservice: mde
 ms.topic: how-to
 ms.collection: M365-security-compliance
-ms.openlocfilehash: d0a3ab3ab6572b59987b2297f6b3c23a014e3b1c
-ms.sourcegitcommit: d3ef9391f621e8f4ca70661184b3bb82c6cbda94
+search.appverid: met150
+ms.openlocfilehash: cdf9d45848cb2510b704d2933e86768682458466
+ms.sourcegitcommit: 9b133379196da2b3a4bb311b07ff274f43780f68
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/02/2022
-ms.locfileid: "67585452"
+ms.lasthandoff: 09/14/2022
+ms.locfileid: "67687689"
 ---
 # <a name="schedule-antivirus-scans-using-powershell"></a>Programar los exámenes de antivirus con PowerShell
 

@@ -7,7 +7,7 @@ author: MikePlumleyMSFT
 manager: serdars
 audience: Admin
 ms.topic: article
-ms.service: o365-administration
+ms.service: microsoft-365-enterprise
 ms.localizationpriority: medium
 ms.collection:
 - M365-subscription-management
@@ -18,12 +18,12 @@ search.appverid:
 ms.assetid: 7cf5655d-e523-4bc3-a93b-3ccebf44a01a
 recommendations: false
 description: Aprenda a elegir el dominio que se va a usar al crear grupos de Microsoft 365 mediante la configuración de directivas de direcciones de correo electrónico mediante PowerShell.
-ms.openlocfilehash: bd9fad340d136fe4cac228f94f1904761cff7071
-ms.sourcegitcommit: d1b60ed9a11f5e6e35fbaf30ecaeb9dfd6dd197d
+ms.openlocfilehash: f0449ac5d384501053242d8ccebabfb4a26c4c6a
+ms.sourcegitcommit: 9b133379196da2b3a4bb311b07ff274f43780f68
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/29/2022
-ms.locfileid: "66490905"
+ms.lasthandoff: 09/14/2022
+ms.locfileid: "67690715"
 ---
 # <a name="choose-the-domain-to-use-when-creating-microsoft-365-groups"></a>Elegir el dominio que se va a usar al crear grupos de Microsoft 365
 

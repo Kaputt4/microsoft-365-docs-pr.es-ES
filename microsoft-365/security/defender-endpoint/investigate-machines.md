@@ -14,12 +14,13 @@ audience: ITPro
 ms.collection: m365-security-compliance
 ms.topic: article
 ms.subservice: mde
-ms.openlocfilehash: c1ff7eff6627ed231754dbdf9c31f740e053f154
-ms.sourcegitcommit: 228fa13973bf7c2d91504703fab757f552ae40dd
+search.appverid: met150
+ms.openlocfilehash: ad6cf3d61efec199d9a30ba67e06829b6f1feccb
+ms.sourcegitcommit: 9b133379196da2b3a4bb311b07ff274f43780f68
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/01/2022
-ms.locfileid: "67519894"
+ms.lasthandoff: 09/14/2022
+ms.locfileid: "67688129"
 ---
 # <a name="investigate-devices-in-the-microsoft-defender-for-endpoint-devices-list"></a>Investigación de dispositivos en la lista de dispositivos Microsoft Defender para punto de conexión
 
@@ -202,18 +203,25 @@ La tarjeta **Evaluaciones de seguridad** muestra el nivel de exposición general
 
 ### <a name="device-health-status"></a>Estado de mantenimiento del dispositivo
 
-La tarjeta **estado de mantenimiento** del dispositivo muestra un informe de estado resumido para el dispositivo específico. En la parte superior de la tarjeta se muestra uno de los siguientes estados para indicar el estado general del dispositivo:
+La tarjeta **estado de mantenimiento** del dispositivo muestra un informe de estado resumido para el dispositivo específico. Uno de los siguientes mensajes se muestra en la parte superior de la tarjeta para indicar el estado general del dispositivo (en orden de mayor a menor prioridad):
 
-- El dispositivo está actualizado
-- La plataforma no está actualizada
-- Error en el examen completo
-- Error en el examen rápido
-- El motor no está actualizado
-- La inteligencia de seguridad no está actualizada
 - Antivirus de Defender no activo
+- La inteligencia de seguridad no está actualizada
+- El motor no está actualizado
+- Error en el examen rápido
+- Error en el examen completo
+- La plataforma no está actualizada
+- El estado de actualización de inteligencia de seguridad es desconocido
+- El estado de actualización del motor es desconocido
+- El estado del examen rápido es desconocido
+- El estado del examen completo es desconocido
+- El estado de actualización de la plataforma es desconocido
+- El dispositivo está actualizado
 - Estado no disponible para macOS & Linux
 
 Otra información de la tarjeta incluye: el último examen completo, el último examen rápido, la versión de actualización de inteligencia de seguridad, la versión de actualización del motor, la versión de actualización de la plataforma y el modo Antivirus de Defender. 
+
+Tenga en cuenta que un círculo gris indica que los datos son desconocidos. 
 
 >[!NOTE]
 >El mensaje de estado general para dispositivos macOS y Linux aparece actualmente como "Estado no disponible para macOS & Linux". Actualmente, el resumen de estado solo está disponible para dispositivos Windows. Toda la otra información de la tabla está actualizada para mostrar los estados individuales de cada señal de estado de dispositivo para todas las plataformas admitidas. 

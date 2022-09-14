@@ -18,12 +18,12 @@ ms.collection:
 - m365-security-compliance
 ms.topic: conceptual
 ms.subservice: mde
-ms.openlocfilehash: 131fb7dfc4894b62428ed67fa41e48bedaa0c603
-ms.sourcegitcommit: 37e137535c4f70702afe1a5eeaa899c75ee02cfd
+ms.openlocfilehash: 8930006a4748d090de15ef76c84fd39b8f7527ec
+ms.sourcegitcommit: 9b133379196da2b3a4bb311b07ff274f43780f68
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/13/2022
-ms.locfileid: "67661901"
+ms.lasthandoff: 09/14/2022
+ms.locfileid: "67690825"
 ---
 # <a name="whats-new-in-microsoft-defender-for-endpoint"></a>Novedades de Microsoft Defender para punto de conexión
 
@@ -64,10 +64,7 @@ Para obtener más información sobre Microsoft Defender para punto de conexión 
 ## <a name="september-2022"></a>Septiembre de 2022
 
 - [Los informes de estado del dispositivo ya están disponibles con carácter general](machine-reports.md). <br/>El informe de estado del dispositivo proporciona información de alto nivel sobre el estado y la seguridad de los puntos de conexión. El informe incluye información de tendencias que muestra el estado de mantenimiento del sensor, el estado del antivirus, las plataformas del sistema operativo, las versiones de Windows 10 y las versiones de actualización del Antivirus de Microsoft Defender.
-- [El modo de solución de problemas](enable-troubleshooting-mode.md) ya está disponible para Windows Server 2012 máquinas R2 y 2016 que ejecutan la solución moderna y unificada. Durante el modo de solución de problemas, use `Set-MPPreference -DisableTamperProtection $true` para deshabilitar temporalmente la protección contra alteraciones en el dispositivo y realizar los cambios de configuración necesarios. Antes de usar el modo de solución de problemas, asegúrese de que todos los componentes siguientes están actualizados:
-   - Sense versión 10.8049.22439.1084 (KB5005292) o posterior
-   - Antivirus de Microsoft Defender: Plataforma: 4.18.2207.7 (KB4052623) o posterior 
-   - Antivirus de Microsoft Defender: motor: 1.1.19500.2 (KB2267602) o posterior
+- [El modo de solución de problemas](enable-troubleshooting-mode.md) ya está disponible para más sistemas operativos Windows, incluidos Windows Server 2012 R2 y versiones posteriores. Consulte el artículo para obtener más información sobre las actualizaciones necesarias.
 
 ## <a name="august-2022"></a>Agosto de 2022
 
