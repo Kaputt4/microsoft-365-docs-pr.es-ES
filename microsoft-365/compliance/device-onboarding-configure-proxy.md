@@ -1,26 +1,31 @@
 ---
 title: Configurar el proxy del dispositivo y la conexión a Internet para Information Protection
 f1.keywords:
-  - CSH
+- CSH
 ms.author: chrfox
 author: chrfox
 manager: laurawi
-ms.date: null
+ms.date: ''
 audience: ITPro
 ms.topic: conceptual
 f1_keywords:
-  - ms.o365.cc.DLPLandingPage
+- ms.o365.cc.DLPLandingPage
 ms.service: O365-seccomp
 ms.localizationpriority: high
 ms.collection:
-  - M365-security-compliance
-  - m365solution-mip
-  - m365initiative-compliance
+- M365-security-compliance
+- m365solution-mip
+- m365initiative-compliance
 search.appverid:
-  - MET150
+- MET150
 description: Configurar el proxy del dispositivo y la conexión a Internet para Information Protection
+ms.openlocfilehash: 2d0bc6484636cffb479ccb96b3458fddf0697cd7
+ms.sourcegitcommit: 437461fa1d38ff9bb95dd8a1c5f0b94e8111ada2
+ms.translationtype: MT
+ms.contentlocale: es-ES
+ms.lasthandoff: 09/14/2022
+ms.locfileid: "67679853"
 ---
-
 # <a name="configure-device-proxy-and-internet-connection-settings-for-information-protection"></a>Configurar el proxy del dispositivo y la conexión a Internet para Information Protection
 
 Las tecnologías de Microsoft Endpoint utilizan Microsoft Windows HTTP (WinHTTP) para notificar datos y comunicarse con el servicio en la nube de Microsoft Endpoint. El servicio incrustado se ejecuta en el contexto del sistema mediante la cuenta LocalSystem.

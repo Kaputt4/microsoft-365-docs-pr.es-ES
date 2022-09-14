@@ -1,8 +1,8 @@
 ---
-title: Configurar las notificaciones de alerta que se envían a los MSSP
-description: Configurar las notificaciones de alerta que se envían a los MSSP
-keywords: proveedor de servicios de seguridad administrados, mssp, configuración, integración
-ms.prod: m365-security
+title: Configuración de las notificaciones de alertas que se envían a los CSP
+description: Configuración de las notificaciones de alertas que se envían a los CSP
+keywords: proveedor de servicios de seguridad administrados, mssp, configure, integration
+ms.service: microsoft-365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -13,15 +13,15 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
-ms.technology: mde
-ms.openlocfilehash: 0cead78048fcf8ef25637e969aae816b7a8d8e76
-ms.sourcegitcommit: dfa9f28a5a5055a9530ec82c7f594808bf28d0dc
+ms.subservice: mde
+ms.openlocfilehash: b086014e718c504d990271536c69a7aba16311ce
+ms.sourcegitcommit: 437461fa1d38ff9bb95dd8a1c5f0b94e8111ada2
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/29/2021
-ms.locfileid: "61217487"
+ms.lasthandoff: 09/14/2022
+ms.locfileid: "67678853"
 ---
-# <a name="configure-alert-notifications-that-are-sent-to-mssps"></a>Configurar las notificaciones de alerta que se envían a los MSSP
+# <a name="configure-alert-notifications-that-are-sent-to-mssps"></a>Configuración de las notificaciones de alertas que se envían a los CSP
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
@@ -30,19 +30,19 @@ ms.locfileid: "61217487"
 - [Microsoft Defender para punto de conexión Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
-> ¿Desea experimentar Defender for Endpoint? [Regístrese para obtener una prueba gratuita.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-mssp-support-abovefoldlink)
+> ¿Quiere experimentar Defender para punto de conexión? [Regístrese para obtener una prueba gratuita.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-mssp-support-abovefoldlink)
 
 > [!NOTE]
-> Este paso lo puede realizar el cliente de MSSP o MSSP. Los MSSP deben tener los permisos adecuados para configurarlo en nombre del cliente de MSSP.
+> Este paso lo pueden realizar el cliente de MSSP o MSSP. Los MSSP deben tener los permisos adecuados para configurarlo en nombre del cliente de MSSP.
 
-Una vez concedido el acceso al portal, se pueden crear reglas de notificación de alertas para que los correos electrónicos se envíen a los MSSP cuando se crean alertas asociadas con el espacio empresarial y se cumplen las condiciones establecidas.
+Una vez concedido el acceso al portal, se pueden crear reglas de notificación de alertas para que los correos electrónicos se envíen a los MSSP cuando se creen alertas asociadas al inquilino y se cumplan las condiciones establecidas.
 
-Para obtener más información, vea [Create rules for alert notifications](configure-email-notifications.md#create-rules-for-alert-notifications).
+Para obtener más información, consulte [Creación de reglas para notificaciones de alertas](configure-email-notifications.md#create-rules-for-alert-notifications).
 
 Estas casillas deben estar activadas:
 
-- **Incluir nombre de organización:** el nombre del cliente se agregará a las notificaciones por correo electrónico
-- **Incluir vínculo de portal específico del** inquilino: la dirección URL del vínculo de alerta tendrá un parámetro específico del inquilino (tid=target_tenant_id) que permite el acceso directo al portal de inquilinos de destino
+- **Incluir nombre de la organización** : el nombre del cliente se agregará a las notificaciones por correo electrónico
+- **Incluir vínculo de portal específico del inquilino** : la dirección URL del vínculo de alerta tendrá un parámetro específico del inquilino (tid=target_tenant_id) que permite el acceso directo al portal de inquilinos de destino.
 
 ## <a name="related-topics"></a>Temas relacionados
 

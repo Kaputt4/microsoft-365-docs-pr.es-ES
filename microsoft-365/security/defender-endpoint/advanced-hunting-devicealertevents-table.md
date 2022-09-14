@@ -2,7 +2,7 @@
 title: Tabla DeviceAlertEvents en el esquema de búsqueda avanzada
 description: Obtenga información sobre los eventos de generación de alertas en la tabla DeviceAlertEvents del esquema de búsqueda avanzada.
 keywords: búsqueda avanzada, búsqueda de amenazas, búsqueda de amenazas cibernética, mdatp, atp de microsoft defender, microsoft defender para punto de conexión, búsqueda wdatp, consulta, telemetría, referencia de esquema, kusto, tabla, columna, tipo de datos, descripción, DeviceAlertEvents, alerta, gravedad, categoría
-ms.prod: m365-security
+ms.service: microsoft-365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -14,13 +14,13 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.date: 01/22/2020
-ms.technology: mde
-ms.openlocfilehash: 1742c674cb982282d8edbe73e43e6ea59fedf8f6
-ms.sourcegitcommit: 414682b9bf42dc19a89c893d3c515aee9765b6e4
+ms.subservice: mde
+ms.openlocfilehash: fa6d6ef9954da4e11e4d6af5ecc1e8fa4658cdcb
+ms.sourcegitcommit: 10e6abe740e27000e223378eb17d657a47555fa8
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/08/2022
-ms.locfileid: "67281847"
+ms.lasthandoff: 08/31/2022
+ms.locfileid: "67678655"
 ---
 # <a name="devicealertevents"></a>DeviceAlertEvents
 

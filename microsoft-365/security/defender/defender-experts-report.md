@@ -5,7 +5,8 @@ description: El servicio Expertos de Defender para la búsqueda publica informes
 keywords: informe de analistas, informe de expertos de defender, detecciones, notificación de expertos de defender, búsqueda, notificaciones, categorías de amenazas, informes de búsqueda
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
-ms.prod: m365-security
+ms.service: microsoft-365-security
+ms.subservice: m365d
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -20,12 +21,12 @@ ms.collection:
 - M365-security-compliance
 ms.topic: article
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 179b13d31091e2c5ec60ba467bb06f2d072f6cdd
-ms.sourcegitcommit: 7e551fa4e9b8b25ed62b5f406143b6b1dae08cbf
+ms.openlocfilehash: f54bc1b1f3569be0267e49971eae2ed4a84e213b
+ms.sourcegitcommit: 437461fa1d38ff9bb95dd8a1c5f0b94e8111ada2
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/01/2022
-ms.locfileid: "67107262"
+ms.lasthandoff: 09/14/2022
+ms.locfileid: "67680249"
 ---
 # <a name="understand-the-defender-experts-for-hunting-report-in-microsoft-365-defender"></a>Descripción del informe expertos de Defender para la búsqueda en Microsoft 365 Defender
 
@@ -97,9 +98,9 @@ Entre las distintas categorías de amenazas disponibles, las siguientes categor�
 
 - Ransomware
 - Malware
-- Creación de armas
+- Militarización
 - Explotar
-- Delivery
+- Entrega
 
 Puede priorizar la corrección en función de la categoría más afectada, como se muestra en el gráfico de barras.
 

@@ -23,11 +23,11 @@ ms.custom:
 - seo-marvel-apr2020
 description: Obtenga información sobre cómo configurar una directiva de administración de la información para controlar cuánto tiempo se mantiene la información y realizar un seguimiento de quién usa la información.
 ms.openlocfilehash: d62eea4c43e6c171bf8c640e341933e81a23e0d0
-ms.sourcegitcommit: 9ba00298cfa9ae293e4a57650965fdb3e8ffe07b
+ms.sourcegitcommit: 437461fa1d38ff9bb95dd8a1c5f0b94e8111ada2
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/11/2022
-ms.locfileid: "64758979"
+ms.lasthandoff: 09/14/2022
+ms.locfileid: "67678919"
 ---
 # <a name="create-and-apply-information-management-policies"></a>Crear y aplicar directivas de administración de información
 
@@ -46,13 +46,13 @@ Para obtener más información, consulte [Introducción a las directivas de admi
 
 Para asegurarse de que se aplica una directiva de información a todos los documentos de un tipo determinado dentro de una colección de sitios, considere la posibilidad de crear la directiva en el nivel de colección de sitios y, a continuación, aplicar la directiva a los tipos de contenido. Estas se conocen como directivas de colección de sitios.
 
-1. En la página \> principal de la colección de sitios **Configuración**![ SharePoint botón Configuración de 2016 en la barra de título.](../media/1c22d2d8-39e0-4930-82c6-c3eee44211d3.png) \> **Configuración del sitio**.
+1. En la página \> principal de la colección de sitios **, botón Configuración**![de SharePoint 2016 en la barra de título.](../media/1c22d2d8-39e0-4930-82c6-c3eee44211d3.png) \> **Configuración del sitio**.
 
-    En un sitio conectado a un grupo de SharePoint, haga clic en **Configuración**, en **Contenido del sitioy**, a continuación, haga clic en **Sitio Configuración**.
+    En un sitio conectado a un grupo de SharePoint, haga clic en **Configuración**, en **Contenido del sitioy**, a continuación, en **Configuración del sitio**.
 
 2. En la página Configuración del sitio, en Plantillas de directiva de tipo de contenido **de administración** \> de **colecciones de sitios**.
 
-   ![Vínculo plantilla de directiva de tipo de contenido en la página de Configuración del sitio.](../media/26d3466a-23ec-443f-88f0-2aaff38e992b.png)
+   ![Vínculo a la plantilla de directiva de tipo de contenido en la página Configuración del sitio.](../media/26d3466a-23ec-443f-88f0-2aaff38e992b.png)
 
 3. En la página \> Directivas **, cree**.
 
@@ -69,17 +69,17 @@ Agregar una directiva de administración de información a un tipo de contenido 
 
  También puede agregar una directiva de administración de información a un tipo de contenido específico de las listas. Esto tiene el efecto de aplicar la directiva solo a los elementos de esa lista que usan el tipo de contenido.
 
-1. En la página \> principal de la colección de sitios **Configuración**![ SharePoint botón Configuración de 2016 en la barra de título.](../media/1c22d2d8-39e0-4930-82c6-c3eee44211d3.png) \> **Configuración del sitio**.
+1. En la página \> principal de la colección de sitios **, botón Configuración**![de SharePoint 2016 en la barra de título.](../media/1c22d2d8-39e0-4930-82c6-c3eee44211d3.png) \> **Configuración del sitio**.
 
-    En un sitio conectado a un grupo de SharePoint, haga clic en **Configuración**, en **Contenido del sitioy**, a continuación, haga clic en **Sitio Configuración**.
+    En un sitio conectado a un grupo de SharePoint, haga clic en **Configuración**, en **Contenido del sitioy**, a continuación, en **Configuración del sitio**.
 
-2. En la página Configuración del sitio, en **Galerías** \> del diseñador web **Tipos de contenido de sitio**.
+2. En la página Configuración del sitio, en Tipos de **contenido del sitio** **galerías** \> del diseñador web.
 
-   ![Los tipos de contenido del sitio se vinculan en la página Configuración del sitio.](../media/6f6fa51f-15d7-4782-b06f-a7b36e874cd3.png)
+   ![Vínculo tipos de contenido de sitio en la página Configuración del sitio.](../media/6f6fa51f-15d7-4782-b06f-a7b36e874cd3.png)
 
-3. En la página Tipo de contenido del sitio Configuración, seleccione el tipo de contenido al que desea agregar una directiva.
+3. En la página Configuración del tipo de contenido del sitio, seleccione el tipo de contenido al que desea agregar una directiva.
 
-4. En la página Tipo de contenido del sitio, en **Configuración** \> **configuración de la directiva de administración de información**.
+4. En la página Tipo de contenido del sitio, en **Configuración** \> de **la directiva de administración de información**.
 
 5. En la página Editar directiva, escriba un nombre y una descripción para la directiva y, a continuación, escriba una breve descripción que explique a los usuarios para qué sirve la directiva.
 
@@ -121,11 +121,11 @@ Agregar una directiva de administración de información a un tipo de contenido 
 
    La característica Directiva de auditoría permite a las organizaciones crear y analizar seguimientos de auditoría de documentos y enumerar elementos como listas de tareas, listas de problemas, grupos de discusión y calendarios. Esta característica de directiva proporciona un registro de auditoría que graba eventos, por ejemplo cuando se ve, se modifica o se elimina contenido.
 
-   Cuando la auditoría está habilitada como parte de una directiva de administración de información, los administradores pueden ver los datos de auditoría en los informes de uso de directivas que se basan en Microsoft Excel y que resumen el uso actual. Los administradores pueden usar estos informes para determinar cómo se usa la información en la organización. Estos informes también pueden ayudar a las organizaciones a comprobar y documentar su cumplimiento normativo o a investigar posibles problemas.
+   Cuando la auditoría está habilitada como parte de una directiva de administración de información, los administradores pueden ver los datos de auditoría en los informes de uso de directivas basados en Microsoft Excel y que resumen el uso actual. Los administradores pueden usar estos informes para determinar cómo se usa la información en la organización. Estos informes también pueden ayudar a las organizaciones a comprobar y documentar su cumplimiento normativo o a investigar posibles problemas.
 
    El registro de auditoría graba la siguiente información: nombre del evento, fecha y hora del evento y nombre de sistema del usuario que realizó la acción.
 
-9. Cuando los códigos de barras se habilitan como parte de una directiva, se agregan a las propiedades del documento y se muestran en el área de encabezado del documento al que se aplica el código de barras. Al igual que las etiquetas, los códigos de barras también se pueden quitar manualmente de un documento. Puede especificar si se debe pedir a los usuarios que incluyan el código de barras al imprimir o guardar un elemento o si el código de barras debe insertarse manualmente mediante la pestaña **Insertar** en 2010 Office programas de lanzamiento.
+9. Cuando los códigos de barras se habilitan como parte de una directiva, se agregan a las propiedades del documento y se muestran en el área de encabezado del documento al que se aplica el código de barras. Al igual que las etiquetas, los códigos de barras también se pueden quitar manualmente de un documento. Puede especificar si se debe pedir a los usuarios que incluyan el código de barras al imprimir o guardar un elemento o si el código de barras debe insertarse manualmente mediante la pestaña **Insertar** en los programas de versión de Office 2010.
 
    Para habilitar códigos de barras:
 
@@ -185,7 +185,7 @@ Necesita al menos el permiso Administrar listas para cambiar la configuración d
 
 1. Vaya a la lista o biblioteca para la que desea especificar una directiva de administración de información.
 
-2. En la cinta de opciones, elija las pestañas \> **Biblioteca** o **Lista** **Biblioteca Configuración** o **Lista Configuración**.
+2. En la cinta de opciones, elija la pestaña \> **Biblioteca** o **Lista** **Configuración de biblioteca** o **Configuración de lista**.
 
    En SharePoint Online, haga clic en **Configuración** y, a continuación, haga clic en **Configuración de lista** o **Configuración de biblioteca**.
 
@@ -193,7 +193,7 @@ Necesita al menos el permiso Administrar listas para cambiar la configuración d
 
    ![Vínculo directivas de administración de información en la página de configuración de la biblioteca de documentos.](../media/9fa6d366-6aab-49e1-a05c-898ac6f536e6.png)
 
-4. En la página Configuración Directiva de administración de la información, asegúrese de que el origen de retención de la lista o biblioteca está establecido en Biblioteca y carpetas.
+4. En la página Configuración de directivas de administración de información, asegúrese de que el origen de la retención de la lista o biblioteca está establecido en Biblioteca y carpetas.
 
    Si **tipo de contenido** aparece como origen, haga clic en **Cambiar origeny**, a continuación, haga clic en **Biblioteca y carpetas**. Se le avisa de que se omitirán las directivas de retención de tipos de contenido. Elija **Aceptar**.
 
@@ -203,7 +203,7 @@ Necesita al menos el permiso Administrar listas para cambiar la configuración d
 
    Tenga en cuenta que, en Registros, puede elegir definir directivas de retención diferentes para los registros seleccionando la opción Definir distintas fases de retención para registros.
 
-7. En el cuadro de diálogo Propiedades de fase, seleccione una opción de período de retención para especificar cuándo se establece la expiración de documentos o elementos. Realice una de las siguientes acciones:
+7. En el cuadro de diálogo Propiedades de fase, seleccione una opción de período de retención para especificar cuándo se establece la expiración de documentos o elementos. Realiza una de las siguientes acciones:
 
    - Para establecer la fecha de expiración en función de una propiedad de fecha, en **Evento** \> **Esta fase se basa en una propiedad de fecha en el elemento** y, a continuación, seleccione la acción de documento o elemento (por ejemplo, Creado o Modificado) y el incremento de tiempo después de esta acción (por ejemplo, el número de días, meses o años) cuando desee que expire el elemento.
 
@@ -232,7 +232,7 @@ Si ya se han creado directivas de administración de información para el sitio 
 
 1. Vaya a la lista o biblioteca que contiene el tipo de contenido al que desea aplicar una directiva.
 
-2. En la cinta de opciones, elija las pestañas \> **Biblioteca** o **Lista** **Biblioteca Configuración** o **Lista Configuración**.
+2. En la cinta de opciones, elija la pestaña \> **Biblioteca** o **Lista** **Configuración de biblioteca** o **Configuración de lista**.
 
    En SharePoint Online, haga clic en **Configuración** y, a continuación, haga clic en **Configuración de lista** o **Configuración de biblioteca**.
 
@@ -267,13 +267,13 @@ Puede definir una directiva de administración de información y, a continuació
 ### <a name="export-a-policy"></a>Exportación de una directiva
 <a name="__toc260646790"> </a>
 
-1. En la página principal de la colección de sitios, elija **Configuración**![ Small Configuración engranaje que tomó el lugar de Site Configuración.](../media/a47a06c3-83fb-46b2-9c52-d1bad63e3e60.png)\> **Site Configuración**.
+1. En la página principal de la colección de sitios, elija **Configuración Engranaje**![de configuración pequeña que tomó el lugar de Configuración del sitio.](../media/a47a06c3-83fb-46b2-9c52-d1bad63e3e60.png)\> **Configuración del sitio**.
 
-   En un sitio conectado a un grupo de SharePoint, haga clic en **Configuración**, en **Contenido del sitioy**, a continuación, haga clic en **Sitio Configuración**.
+   En un sitio conectado a un grupo de SharePoint, haga clic en **Configuración**, en **Contenido del sitioy**, a continuación, en **Configuración del sitio**.
 
 2. En la página Configuración del sitio, en Plantillas de directiva de tipo de contenido **de administración** \> de **colecciones de sitios**.
 
-   ![Vínculo plantilla de directiva de tipo de contenido en la página de Configuración del sitio.](../media/26d3466a-23ec-443f-88f0-2aaff38e992b.png)
+   ![Vínculo a la plantilla de directiva de tipo de contenido en la página Configuración del sitio.](../media/26d3466a-23ec-443f-88f0-2aaff38e992b.png)
 
 3. Elija la directiva que desea exportar \> desplácese hasta la parte inferior \> **Exportar**.
 
@@ -286,9 +286,9 @@ Puede definir una directiva de administración de información y, a continuació
 
 La importación de una directiva de administración de información le permite aplicarla a varios tipos de contenido en el nivel de sitio o de lista dentro de una colección de sitios determinada. Las ventajas de hacerlo son dobles: no es necesario volver a definir y aplicar la directiva en cada tipo de contenido, y puede administrar más fácilmente las modificaciones de directiva realizando cambios en la directiva en un solo lugar.
 
-1. En la página principal de la colección de sitios a la que desea aplicar la directiva, elija **Configuración**![ Small Configuración equipo que tomó el lugar de Sitio Configuración.](../media/a47a06c3-83fb-46b2-9c52-d1bad63e3e60.png)\> **Sitio Configuración**.
+1. En la página principal de la colección de sitios a la que desea aplicar la directiva, elija **Configuración**![Engranaje de configuración pequeña que tomó el lugar de Configuración del sitio.](../media/a47a06c3-83fb-46b2-9c52-d1bad63e3e60.png)\> **Configuración del sitio**.
 
-   En un sitio conectado a un grupo de SharePoint, haga clic en **Configuración**, en **Contenido del sitioy**, a continuación, haga clic en **Sitio Configuración**.
+   En un sitio conectado a un grupo de SharePoint, haga clic en **Configuración**, en **Contenido del sitioy**, a continuación, en **Configuración del sitio**.
 
 2. En la página Configuración del sitio, en Plantillas de directiva de tipo de contenido **de administración** \> de **colecciones de sitios**.
 

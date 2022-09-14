@@ -1,5 +1,5 @@
 ---
-title: Validadores regex de tipo de información confidencial y comprobaciones adicionales
+title: Validadores REGEX de tipo de información confidencial y comprobaciones adicionales
 f1.keywords:
 - NOCSH
 ms.author: chrfox
@@ -18,13 +18,13 @@ search.appverid:
 description: Obtenga información sobre cómo usar validadores REGEX y comprobaciones adicionales en los tipos de información de sentisitve.
 ms.custom: seo-marvel-apr2020
 ms.openlocfilehash: 615d4757be16b3171005105aea8148536e6f3015
-ms.sourcegitcommit: bb493f12701f6d6ee7d5e64b541adb87470bc7bc
+ms.sourcegitcommit: 437461fa1d38ff9bb95dd8a1c5f0b94e8111ada2
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/18/2022
-ms.locfileid: "62902704"
+ms.lasthandoff: 09/14/2022
+ms.locfileid: "67679271"
 ---
-# <a name="sensitive-information-type-regex-validators-and-additional-check"></a>Validadores REGEX de tipo de información confidencial y comprobación adicional
+# <a name="sensitive-information-type-regex-validators-and-additional-check"></a>Tipo de información confidencial validadores REGEX y comprobación adicional
 
 > [!IMPORTANT]
 > El soporte técnico y el servicio al cliente de Microsoft no puede ayudar a crear clasificaciones personalizadas o patrones de expresiones regulares. Los ingenieros de soporte técnico pueden ofrecer soporte limitado para la característica como, por ejemplo, proporcionar patrones de expresiones regulares de ejemplo para propósitos de prueba o ayudar con la solución de problemas de un patrón de expresión regular existente que no se activa de la forma esperada. Pero no pueden garantizar que el desarrollo personalizado que coincida con el contenido cumplirá sus requisitos u obligaciones.
@@ -33,7 +33,7 @@ ms.locfileid: "62902704"
 
 ### <a name="checksum-validator"></a>Validador de suma de comprobación
 
-Si necesita ejecutar una suma de comprobación en un dígito de una expresión regular, puede usar el *validador de suma de comprobación*. Por ejemplo, diga que necesita crear un SIT para un número de licencia de ocho dígitos donde el último dígito es un dígito de suma de comprobación que se valida con un cálculo mod 9. Ha configurado el algoritmo de suma de comprobación de este tipo:
+Si necesita ejecutar una suma de comprobación en un dígito de una expresión regular, puede usar el *validador de suma de comprobación*. Por ejemplo, supongamos que necesita crear una SIT para un número de licencia de ocho dígitos donde el último dígito es un dígito de suma de comprobación que se valida mediante un cálculo mod 9. Ha configurado el algoritmo de suma de comprobación de la siguiente manera:
 
 ```console
 Sum = digit 1 * Weight 1 + digit 2 * weight 2 + digit 3 * weight 3 + digit 4 * weight 4 + digit 5 * weight 5 + digit 6 * weight 6 + digit 7 * weight 7 + digit 8 * weight 8
@@ -52,16 +52,16 @@ If Mod value != digit 8
 
 2. A continuación, agregue el validador de suma de comprobación.
 
-3. Agregue los valores de peso separados por comas, la posición del dígito de comprobación y el valor mod. Para obtener más información acerca de la operación Modulo, vea [Modulo operation](https://en.wikipedia.org/wiki/Modulo_operation).
+3. Agregue los valores de peso separados por comas, la posición del dígito de comprobación y el valor Mod. Para obtener más información sobre la operación de Módulo, consulte [Operación de módulo](https://en.wikipedia.org/wiki/Modulo_operation).
 
    > [!NOTE]
-   > Si el dígito de comprobación no forma parte del cálculo de suma de comprobación, use 0 como el peso del dígito de comprobación. Por ejemplo, en el caso anterior, el peso 8 será igual a 0 si el dígito de comprobación no se va a usar para calcular el dígito de comprobación.
+   > Si el dígito de comprobación no forma parte del cálculo de suma de comprobación, use 0 como peso para el dígito de comprobación. Por ejemplo, en el caso anterior, el peso 8 será igual a 0 si no se va a usar el dígito de comprobación para calcular el dígito de comprobación.
 
    :::image type="content" alt-text="captura de pantalla del validador de suma de comprobación configurado." source="../media/checksum-validator.png" lightbox="../media/checksum-validator.png":::
 
-### <a name="date-validator"></a>Validador de fechas
+### <a name="date-validator"></a>Validador de fecha
 
-Si un valor de fecha incrustado en la expresión regular forma parte de un nuevo patrón que está creando, puede usar el validador de fechas para probar que cumple los criterios. Por ejemplo, diga que desea crear un SIT para un número de identificación de empleado de nueve dígitos. Los seis primeros dígitos son la fecha de contratación en formato DDMMYY y los tres últimos son números generados aleatoriamente. Para validar que los seis primeros dígitos tienen el formato correcto.
+Si un valor de fecha insertado en la expresión regular forma parte de un nuevo patrón que está creando, puede usar el *validador de fecha* para probar que cumple los criterios. Por ejemplo, supongamos que desea crear una SIT para un número de identificación de empleado de nueve dígitos. Los seis primeros dígitos son la fecha de contratación en formato DDMMYY y los tres últimos son números generados aleatoriamente. Para validar que los seis primeros dígitos están en el formato correcto.
 
 1. Defina el elemento principal con esta expresión regular:
 
@@ -71,19 +71,19 @@ Si un valor de fecha incrustado en la expresión regular forma parte de un nuevo
 
 2. A continuación, agregue el validador de fecha.
 
-3. Seleccione el formato de fecha y el desplazamiento de inicio. Dado que la cadena de fecha es los seis primeros dígitos, el desplazamiento es `0`.
+3. Seleccione el formato de fecha y el desplazamiento inicial. Dado que la cadena de fecha es de los seis primeros dígitos, el desplazamiento es `0`.
 
-   :::image type="content" alt-text="captura de pantalla del validador de fecha configurado." source="../media/date-validator.png" lightbox="../media/date-validator.png":::
+   :::image type="content" alt-text="captura de pantalla del validador de fecha configurada." source="../media/date-validator.png" lightbox="../media/date-validator.png":::
 
 ### <a name="functional-processors-as-validators"></a>Procesadores funcionales como validadores
 
-Puede usar procesadores de funciones para algunos de los SIT más usados como validadores. Esto le permite definir su propia expresión regular al mismo tiempo que garantiza que pasan las comprobaciones adicionales necesarias por el SIT. Por ejemplo, Func_India_Aadhar garantizará que la expresión regular personalizada definida por usted pase la lógica de validación necesaria para la tarjeta Aadhar india. Para obtener más información sobre las funciones DLP que se pueden usar como validadores, vea [Funciones de tipo de información confidencial](sit-functions.md). 
+Puede usar procesadores de funciones para algunos de los SIT más usados como validadores. Esto le permite definir su propia expresión regular, al tiempo que garantiza que pasan las comprobaciones adicionales requeridas por sit. Por ejemplo, Func_India_Aadhar garantizará que la expresión regular personalizada definida por pasa la lógica de validación necesaria para la tarjeta india de Aadhar. Para obtener más información sobre las funciones DLP que se pueden usar como validadores, vea [Funciones de tipo de información confidencial](sit-functions.md). 
 
 ### <a name="luhn-check-validator"></a>Validador de comprobación de Luhn
 
-Puede usar el validador de comprobación de Luhn si tiene un tipo de información confidencial personalizado que incluye una expresión regular que debe pasar el algoritmo [Luhn](https://en.wikipedia.org/wiki/Luhn_algorithm).
+Puede usar el validador de comprobación de Luhn si tiene un tipo de información confidencial personalizado que incluye una expresión regular que debe pasar el [algoritmo de Luhn](https://en.wikipedia.org/wiki/Luhn_algorithm).
 
-## <a name="sensitive-information-type-additional-checks"></a>Comprobaciones adicionales de tipo de información confidencial
+## <a name="sensitive-information-type-additional-checks"></a>Comprobaciones adicionales del tipo de información confidencial
 
 Aquí tiene las definiciones y algunos ejemplos de las comprobaciones adicionales disponibles.
 

@@ -1,9 +1,9 @@
 ---
 title: Cola de alertas en Microsoft 365 Defender
 ms.reviewer: ''
-description: Ver y administrar las alertas que se han presentado en Microsoft 365 Defender
+description: Ver y administrar las alertas expuestas en Microsoft 365 Defender
 keywords: ''
-ms.prod: m365-security
+ms.service: microsoft-365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -15,23 +15,23 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.date: 09/03/2018
-ms.technology: mde
-ms.openlocfilehash: 61b6e9d412a7f91614a0b63955d3bd08aea1c3ef
-ms.sourcegitcommit: eb8c600d3298dca1940259998de61621e6505e69
+ms.subservice: mde
+ms.openlocfilehash: a58436e2c463646c183a3828c4f623d0c7475a16
+ms.sourcegitcommit: 10e6abe740e27000e223378eb17d657a47555fa8
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/24/2021
-ms.locfileid: "61168815"
+ms.lasthandoff: 08/31/2022
+ms.locfileid: "67680469"
 ---
 # <a name="alerts-queue-in-microsoft-365-defender"></a>Cola de alertas en Microsoft 365 Defender
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
 **Se aplica a:**
-- [Plan 1 de Microsoft Defender para endpoint](https://go.microsoft.com/fwlink/p/?linkid=2154037)
-- [Plan 2 de Microsoft Defender para endpoint](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Microsoft Defender para punto de conexión Plan 1](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Microsoft Defender para punto de conexión Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 
-> ¿Desea experimentar Defender for Endpoint? [Regístrese para obtener una prueba gratuita.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-exposedapis-abovefoldlink)
+> ¿Quiere experimentar Defender para punto de conexión? [Regístrese para obtener una prueba gratuita.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-exposedapis-abovefoldlink)
 
 Obtenga información sobre cómo puede ver y administrar la cola para que pueda investigar eficazmente las amenazas que se ven en entidades como dispositivos, archivos o cuentas de usuario.
 
@@ -40,10 +40,10 @@ Obtenga información sobre cómo puede ver y administrar la cola para que pueda 
 Tema|Descripción
 :---|:---
 [Ver y organizar la cola de alertas](alerts-queue.md)|Muestra una lista de alertas marcadas en la red.
-[Administrar alertas](manage-alerts.md)|Obtenga información sobre cómo administrar alertas como cambiar su estado, asignarla a un miembro de operaciones de seguridad y ver el historial de una alerta.
+[Administrar alertas](manage-alerts.md)|Obtenga información sobre cómo puede administrar alertas, como cambiar su estado, asignarla a un miembro de operaciones de seguridad y ver el historial de una alerta.
 [Investigar alertas](investigate-alerts.md)|Investigue las alertas que afectan a la red, comprenda lo que significan y cómo resolverlas.
-[Investigar archivos](investigate-files.md)|Investigue los detalles de un archivo asociado a una alerta, comportamiento o evento específicos.
-[Investigar dispositivos](investigate-machines.md)|Investigar los detalles de un dispositivo asociado a una alerta, comportamiento o evento específicos.
-[Investigar una dirección IP](investigate-ip.md)|Examine las posibles comunicaciones entre dispositivos de la red y las direcciones IP (protocolos de Internet externos).
+[Investigar archivos](investigate-files.md)|Investigue los detalles de un archivo asociado a una alerta, un comportamiento o un evento específicos.
+[Investigar dispositivos](investigate-machines.md)|Investigue los detalles de un dispositivo asociado a una alerta, un comportamiento o un evento específicos.
+[Investigar una dirección IP](investigate-ip.md)|Examine la posible comunicación entre los dispositivos de la red y las direcciones de protocolo de Internet (IP) externas.
 [Investigar un dominio](investigate-domain.md)|Investigue un dominio para ver si los dispositivos y servidores de la red se han estado comunicando con un dominio malintencionado conocido.
-[Reactivar una cuenta de usuario](investigate-user.md)|Identifique las cuentas de usuario con las alertas más activas e investigue los casos de posibles credenciales comprometidas.
+[Reactivar una cuenta de usuario](investigate-user.md)|Identifique las cuentas de usuario con las alertas más activas e investigue los casos de posibles credenciales en peligro.
