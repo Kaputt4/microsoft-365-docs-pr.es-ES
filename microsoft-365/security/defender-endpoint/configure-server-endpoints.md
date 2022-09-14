@@ -4,7 +4,7 @@ description: Incorpore servidores Windows para que puedan enviar datos del senso
 keywords: onboard server, server, 2012r2, 2016, 2019, server onboarding, device management, configure Microsoft Defender para punto de conexión servers, onboard Microsoft Defender para punto de conexión servers, onboard servidores de Microsoft Defender para punto de conexión
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
-ms.prod: m365-security
+ms.service: microsoft-365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -18,13 +18,13 @@ ms.collection:
 - M365-security-compliance
 - m365-initiative-defender-endpoint
 ms.topic: article
-ms.technology: mde
-ms.openlocfilehash: 4a9cb2e20c2c2b5bfc47ae738d52f248fb464a3e
-ms.sourcegitcommit: d09eb780dc41a01796eb8137fbe9267231af6746
+ms.subservice: mde
+ms.openlocfilehash: 39d6c455790d5f87adcd2b0791c5603e449de6d1
+ms.sourcegitcommit: 10e6abe740e27000e223378eb17d657a47555fa8
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/19/2022
-ms.locfileid: "67387691"
+ms.lasthandoff: 08/31/2022
+ms.locfileid: "67680205"
 ---
 # <a name="onboard-windows-servers-to-the-microsoft-defender-for-endpoint-service"></a>Incorporación de servidores Windows al servicio Microsoft Defender para punto de conexión
 
@@ -383,7 +383,7 @@ Después de incorporar el dispositivo, puede optar por ejecutar una prueba de de
 
 Siga los pasos descritos en [Ejecutar una prueba de detección en un dispositivo recién incorporado](run-detection-test.md) para comprobar que el servidor informa a Defender para el servicio de punto de conexión.
 
-## <a name="next-steps"></a>Siguientes pasos
+## <a name="next-steps"></a>Pasos siguientes
 
 Después de incorporar correctamente los dispositivos al servicio, deberá configurar los componentes individuales de Microsoft Defender para punto de conexión. Siga el [orden de adopción](prepare-deployment.md#adoption-order) que se va a guiar para habilitar los distintos componentes.
 

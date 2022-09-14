@@ -2,7 +2,7 @@
 title: Microsoft Defender para punto de conexión almacenamiento de datos y privacidad
 description: Obtenga información sobre cómo Microsoft Defender para punto de conexión controla la privacidad y los datos que recopila.
 keywords: Microsoft Defender para punto de conexión, almacenamiento y privacidad de datos, almacenamiento, privacidad, licencias, geolocalización, retención de datos, datos
-ms.prod: m365-security
+ms.service: microsoft-365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -13,13 +13,13 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
-ms.technology: mde
-ms.openlocfilehash: d1d8ad0a16129e909476891291c0b2c0f0d54956
-ms.sourcegitcommit: bc35c7826e3403f259725ac72cca5bafd36aa56a
+ms.subservice: mde
+ms.openlocfilehash: 8725063629ffe2f162307a6fce6ddb198640c732
+ms.sourcegitcommit: 10e6abe740e27000e223378eb17d657a47555fa8
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/30/2022
-ms.locfileid: "66554155"
+ms.lasthandoff: 08/31/2022
+ms.locfileid: "67679249"
 ---
 # <a name="microsoft-defender-for-endpoint-data-storage-and-privacy"></a>Microsoft Defender para punto de conexión almacenamiento de datos y privacidad
 

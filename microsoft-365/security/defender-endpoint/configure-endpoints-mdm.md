@@ -2,7 +2,7 @@
 title: Incorporación de dispositivos Windows a Defender para punto de conexión mediante Intune
 description: Use Microsoft Intune para implementar el paquete de configuración en los dispositivos de modo que se incorporen al servicio Defender para punto de conexión.
 keywords: incorporación de dispositivos mediante mdm, administración de dispositivos, incorporación de dispositivos Microsoft Defender para punto de conexión, mdm
-ms.prod: m365-security
+ms.service: microsoft-365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -14,13 +14,13 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.custom: admindeeplinkDEFENDER
 ms.topic: article
-ms.technology: mde
-ms.openlocfilehash: 90c6ec688b19f328f89e2bcabe70b7955086e8da
-ms.sourcegitcommit: c6f1486617b39565bfd8f662ee6ad65a9cefd3e3
+ms.subservice: mde
+ms.openlocfilehash: b2114591ae4314f48836a296092a169e27a422b6
+ms.sourcegitcommit: 10e6abe740e27000e223378eb17d657a47555fa8
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/29/2022
-ms.locfileid: "66531064"
+ms.lasthandoff: 08/31/2022
+ms.locfileid: "67680378"
 ---
 # <a name="onboard-windows-devices-to-defender-for-endpoint-using-intune"></a>Incorporación de dispositivos Windows a Defender para punto de conexión mediante Intune 
 

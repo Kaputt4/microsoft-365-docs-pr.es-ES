@@ -2,7 +2,7 @@
 title: Proteger las carpetas importantes del ransomware contra el cifrado de los archivos con acceso controlado a carpetas
 description: Los archivos de las carpetas predeterminadas se pueden proteger frente a cambios de aplicaciones malintencionadas. Impedir que el ransomware cifre los archivos.
 keywords: acceso controlado a carpetas, windows 10, Windows Defender, ransomware, protect, files, folders
-ms.prod: m365-security
+ms.service: microsoft-365-security
 ms.mktglfcycl: manage
 ms.sitesec: library
 ms.pagetype: security
@@ -13,16 +13,16 @@ audience: ITPro
 ms.reviewer: oogunrinde, sugamar
 manager: dansimp
 ms.custom: asr
-ms.technology: mde
+ms.subservice: mde
 ms.topic: how-to
 ms.collection: m365-security-compliance
 ms.date: ''
-ms.openlocfilehash: 00c2f6f490a09e76e097a20419f8d8137b32a467
-ms.sourcegitcommit: c314e989202dc1c9c260fffd459d53bc1f08514e
+ms.openlocfilehash: 2d300c085ae066688be92faf7d1904b1d88398ae
+ms.sourcegitcommit: 10e6abe740e27000e223378eb17d657a47555fa8
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/12/2022
-ms.locfileid: "66717302"
+ms.lasthandoff: 08/31/2022
+ms.locfileid: "67679501"
 ---
 # <a name="protect-important-folders-with-controlled-folder-access"></a>Proteger carpetas importantes con acceso controlado a carpetas
 

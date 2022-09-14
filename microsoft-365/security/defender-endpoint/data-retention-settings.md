@@ -1,8 +1,8 @@
 ---
-title: Comprobar la ubicación de almacenamiento de datos y actualizar la configuración de retención de datos
-description: Comprobar la ubicación de almacenamiento de datos y actualizar la configuración de retención de datos para Microsoft Defender para endpoint
+title: Comprobación de la ubicación del almacenamiento de datos y actualización de la configuración de retención de datos
+description: Compruebe la ubicación del almacenamiento de datos y actualice la configuración de retención de datos para Microsoft Defender para punto de conexión
 keywords: datos, almacenamiento, configuración, retención, actualización
-ms.prod: m365-security
+ms.service: microsoft-365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -13,15 +13,15 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
-ms.technology: mde
-ms.openlocfilehash: fb27a097f2f9dfd26e1b611c56be6d078ecadc52
-ms.sourcegitcommit: dfa9f28a5a5055a9530ec82c7f594808bf28d0dc
+ms.subservice: mde
+ms.openlocfilehash: 9d2e929486a45590f2c6b273b5af28f7fbb9526a
+ms.sourcegitcommit: 10e6abe740e27000e223378eb17d657a47555fa8
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/29/2021
-ms.locfileid: "61217459"
+ms.lasthandoff: 08/31/2022
+ms.locfileid: "67680271"
 ---
-# <a name="verify-data-storage-location-and-update-data-retention-settings-for-microsoft-defender-for-endpoint"></a>Comprobar la ubicación de almacenamiento de datos y actualizar la configuración de retención de datos para Microsoft Defender para endpoint
+# <a name="verify-data-storage-location-and-update-data-retention-settings-for-microsoft-defender-for-endpoint"></a>Compruebe la ubicación del almacenamiento de datos y actualice la configuración de retención de datos para Microsoft Defender para punto de conexión
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
@@ -32,33 +32,33 @@ ms.locfileid: "61217459"
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 
-> ¿Desea experimentar Defender for Endpoint? [Regístrese para obtener una prueba gratuita.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-gensettings-abovefoldlink)
+> ¿Quiere experimentar Defender para punto de conexión? [Regístrese para obtener una prueba gratuita.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-gensettings-abovefoldlink)
 
-Durante el proceso de incorporación, un asistente le llevará a través de la configuración de almacenamiento y retención de datos de Defender for Endpoint. 
+Durante el proceso de incorporación, un asistente le llevará a través de la configuración de almacenamiento y retención de datos de Defender para punto de conexión. 
 
 Después de completar la incorporación, puede comprobar la selección en la página de configuración de retención de datos.
 
-## <a name="verify-data-storage-location"></a>Comprobar la ubicación de almacenamiento de datos
-Durante la [fase de configuración,](production-deployment.md)habría seleccionado la ubicación para almacenar los datos. 
+## <a name="verify-data-storage-location"></a>Comprobación de la ubicación del almacenamiento de datos
+Durante la [fase de configuración](production-deployment.md), habría seleccionado la ubicación para almacenar los datos. 
 
 
-Para comprobar la ubicación de los datos, vaya a **Configuración** de datos de puntos de conexión \>  \>  (en **General**).
+Para comprobar la ubicación de los datos, vaya a **Configuración** \> **Puntos de conexión** \> **Retención de datos** (en **General**).
 
 
-## <a name="update-data-retention-settings"></a>Actualizar la configuración de retención de datos
+## <a name="update-data-retention-settings"></a>Actualización de la configuración de retención de datos
 
 Puede actualizar la configuración de retención de datos. De forma predeterminada, el período de retención es de 180 días. 
 
-1. En el panel de navegación, **seleccione Configuración** Datos de puntos de \> **conexión** \>  (en **General**).
+1. En el panel de navegación, seleccione **Configuración** \> **Puntos de conexión** \> **Retención de datos** (en **General**).
 
-2. Seleccione la duración de retención de datos de la lista desplegable.
+2. Seleccione la duración de retención de datos en la lista desplegable.
 
     > [!NOTE]
     > Otras opciones de configuración no son editables.
 
-3. Haga clic **en Guardar preferencias**.
+3. Haga clic en **Guardar preferencias**.
 
 ## <a name="related-topics"></a>Temas relacionados
-- [Actualizar la configuración de retención de datos](data-retention-settings.md)
-- [Configurar notificaciones de alertas en Defender para endpoint](configure-email-notifications.md)
+- [Actualización de la configuración de retención de datos](data-retention-settings.md)
+- [Configuración de notificaciones de alertas en Defender para punto de conexión](configure-email-notifications.md)
 - [Configurar funciones avanzadas](advanced-features.md)

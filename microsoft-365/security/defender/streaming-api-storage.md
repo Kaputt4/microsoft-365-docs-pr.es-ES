@@ -4,7 +4,8 @@ description: Obtenga información sobre cómo configurar Microsoft 365 Defender 
 keywords: exportación de datos sin procesar, API de streaming, API, Event Hubs, Almacenamiento de Azure, cuenta de almacenamiento, Búsqueda avanzada, uso compartido de datos sin procesar
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
-ms.prod: m365-security
+ms.service: microsoft-365-security
+ms.subservice: m365d
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -16,13 +17,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.custom: admindeeplinkDEFENDER
 ms.topic: article
-ms.technology: mde
-ms.openlocfilehash: 0f5195e5a74395073267fd4df87f077c6a1d5f20
-ms.sourcegitcommit: c6f1486617b39565bfd8f662ee6ad65a9cefd3e3
+ms.openlocfilehash: 2fe59f16887075c590de555be796842f58b50247
+ms.sourcegitcommit: 10e6abe740e27000e223378eb17d657a47555fa8
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/29/2022
-ms.locfileid: "66530584"
+ms.lasthandoff: 08/31/2022
+ms.locfileid: "67678721"
 ---
 # <a name="configure-microsoft-365-defender-to-stream-advanced-hunting-events-to-your-storage-account"></a>Configuración de Microsoft 365 Defender para transmitir eventos de búsqueda avanzada a la cuenta de almacenamiento
 

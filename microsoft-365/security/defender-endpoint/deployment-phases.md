@@ -2,7 +2,7 @@
 title: introducción a la implementación de Microsoft Defender para punto de conexión
 description: Aprenda a implementar Microsoft Defender para punto de conexión mediante la preparación, configuración e incorporación de puntos de conexión a ese servicio.
 keywords: implementar, preparar, configurar, incorporar, fase, implementación, implementación, adopción, configuración
-ms.prod: m365-security
+ms.service: microsoft-365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -15,14 +15,15 @@ ms.collection:
 - M365-security-compliance
 - m365solution-endpointprotect
 - m365solution-overview
+- highpri
 ms.topic: article
-ms.technology: mde
-ms.openlocfilehash: 3520d249e7241eb1b890c3939fe6e6165d5c6011
-ms.sourcegitcommit: bfbe2574f487ced69e711b48ce140120bd99181b
+ms.subservice: mde
+ms.openlocfilehash: b5e664fb40d549d669d1b3bba6d55feb96ccc843
+ms.sourcegitcommit: 10e6abe740e27000e223378eb17d657a47555fa8
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/02/2022
-ms.locfileid: "66607617"
+ms.lasthandoff: 08/31/2022
+ms.locfileid: "67679161"
 ---
 # <a name="microsoft-defender-for-endpoint-deployment-overview"></a>introducción a la implementación de Microsoft Defender para punto de conexión
 

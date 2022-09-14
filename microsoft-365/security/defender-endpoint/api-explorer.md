@@ -3,7 +3,7 @@ title: Explorador de API en Microsoft Defender para punto de conexión
 ms.reviewer: ''
 description: Use el Explorador de API para construir y realizar consultas de API, probar y enviar solicitudes para cualquier API disponible.
 keywords: api, explorer, send, request, get, post,
-ms.prod: m365-security
+ms.service: microsoft-365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -14,14 +14,14 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
-ms.technology: mde
+ms.subservice: mde
 ms.custom: api
-ms.openlocfilehash: 5d3d81f878e201cd00e7286bd045caa5fb3e1625
-ms.sourcegitcommit: d1b60ed9a11f5e6e35fbaf30ecaeb9dfd6dd197d
+ms.openlocfilehash: 0183be9f388bb6c589e679f8bcea0a28d93bc770
+ms.sourcegitcommit: 10e6abe740e27000e223378eb17d657a47555fa8
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/29/2022
-ms.locfileid: "66486803"
+ms.lasthandoff: 08/31/2022
+ms.locfileid: "67679567"
 ---
 # <a name="api-explorer"></a>Explorador de API
 

@@ -2,7 +2,7 @@
 title: Configuración de notificaciones de alertas en Microsoft Defender para punto de conexión
 description: Puede usar Microsoft Defender para punto de conexión para configurar las opciones de notificación por correo electrónico para las alertas de seguridad, en función de la gravedad y otros criterios.
 keywords: notificaciones por correo electrónico, configurar notificaciones de alertas, Microsoft Defender para punto de conexión, Microsoft Defender para punto de conexión notificaciones, Microsoft Defender para punto de conexión alertas, Windows Enterprise, Windows Education
-ms.prod: m365-security
+ms.service: microsoft-365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -13,13 +13,13 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
-ms.technology: mde
-ms.openlocfilehash: fde5ce238a44b6722770338378ae33c54a38a450
-ms.sourcegitcommit: 60970cf8a2cb451011c423d797dfb77925394f89
+ms.subservice: mde
+ms.openlocfilehash: 9325fa56232428b1c923817631826202155bc6f1
+ms.sourcegitcommit: 10e6abe740e27000e223378eb17d657a47555fa8
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/19/2022
-ms.locfileid: "65587498"
+ms.lasthandoff: 08/31/2022
+ms.locfileid: "67679787"
 ---
 # <a name="configure-alert-notifications-in-microsoft-defender-for-endpoint"></a>Configuración de notificaciones de alertas en Microsoft Defender para punto de conexión
 
@@ -49,7 +49,7 @@ La notificación por correo electrónico incluye información básica sobre la a
 ## <a name="create-rules-for-alert-notifications"></a>Creación de reglas para notificaciones de alertas
 Puede crear reglas que determinen los dispositivos y la gravedad de las alertas para enviar notificaciones por correo electrónico a los destinatarios de las notificaciones y .
 
-1. En el panel de navegación, seleccione **Configuración** \> **Notificaciones de correo electrónico** **general** \> **de puntos** \> de conexión.
+1. En el panel de navegación, seleccione **Configuración** \> **Puntos de conexión** \> **Generales** \> **Email notificaciones**.
 
 2. Haga clic en **Agregar elemento**.
 
@@ -95,7 +95,7 @@ En esta sección se enumeran varios problemas que puede encontrar al usar notifi
 
 **Solución:** Asegúrese de que los filtros de correo electrónico no bloqueen las notificaciones:
 
-1. Compruebe que las notificaciones de correo electrónico de Defender para punto de conexión no se envían a la carpeta Correo no deseado. Marcarlos como No basura.
+1. Compruebe que las notificaciones de correo electrónico de Defender para punto de conexión no se envían a la carpeta de Email no deseado. Marcarlos como No basura.
 2. Compruebe que el producto de seguridad de correo electrónico no bloquea las notificaciones por correo electrónico de Defender para punto de conexión.
 3. Compruebe las reglas de la aplicación de correo electrónico que podrían estar detectando y moviendo las notificaciones de correo electrónico de Defender para punto de conexión.
 

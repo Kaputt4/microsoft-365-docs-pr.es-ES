@@ -2,7 +2,7 @@
 title: Incorporación de dispositivos a Microsoft Defender para punto de conexión
 description: Realice un seguimiento de la incorporación de dispositivos administrados por Intune para Microsoft Defender para punto de conexión y aumente la tasa de incorporación.
 keywords: onboard, Intune management, Microsoft Defender para punto de conexión, Microsoft Defender, Windows Defender, configuration management
-ms.prod: m365-security
+ms.service: microsoft-365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -13,13 +13,13 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
-ms.technology: mde
-ms.openlocfilehash: 1e77f404b70ee770bd4d5c441362739cc7b2f13c
-ms.sourcegitcommit: 349f0f54b0397cdd7d8fbb9ef07f1b6654a32d6e
+ms.subservice: mde
+ms.openlocfilehash: 8a4a97e082e0f3b6d129e8c1bf86c6918de29b89
+ms.sourcegitcommit: 10e6abe740e27000e223378eb17d657a47555fa8
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/20/2022
-ms.locfileid: "65622961"
+ms.lasthandoff: 08/31/2022
+ms.locfileid: "67678611"
 ---
 # <a name="get-devices-onboarded-to-microsoft-defender-for-endpoint"></a>Incorporación de dispositivos a Microsoft Defender para punto de conexión
 
@@ -32,7 +32,7 @@ ms.locfileid: "65622961"
 
 > ¿Quiere experimentar Microsoft Defender para punto de conexión? [Regístrese para obtener una prueba gratuita.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-onboardconfigure-abovefoldlink)
 
-Cada dispositivo incorporado agrega un sensor de detección y respuesta de puntos de conexión adicional (EDR) y aumenta la visibilidad sobre la actividad de infracción en la red. La incorporación también garantiza que un dispositivo se pueda comprobar si hay componentes vulnerables, así como problemas de configuración de seguridad y puede recibir acciones de corrección críticas durante los ataques.
+Cada dispositivo incorporado agrega un sensor adicional de detección y respuesta de puntos de conexión (EDR) y aumenta la visibilidad sobre la actividad de infracciones en la red. La incorporación también garantiza que un dispositivo se pueda comprobar si hay componentes vulnerables, así como problemas de configuración de seguridad y puede recibir acciones de corrección críticas durante los ataques.
 
 Antes de poder realizar un seguimiento y administrar la incorporación de dispositivos:
 
@@ -64,7 +64,7 @@ En la tarjeta **Incorporación**, seleccione **Incorporar más dispositivos** pa
 *Microsoft Defender para punto de conexión página de cumplimiento de dispositivos en Intune administración de dispositivos*
 
 > [!TIP]
-> Como alternativa, puede navegar a la página Cumplimiento de incorporación de Defender para punto de conexión en el [portal de Microsoft Azure](https://portal.azure.com/) desde **Todos los servicios > Intune > Cumplimiento de dispositivos > ATP de Microsoft Defender**.
+> Como alternativa, puede navegar a la página Cumplimiento de incorporación de Defender para punto de conexión en [Microsoft Azure Portal](https://portal.azure.com/) desde **Todos los servicios > Intune > Cumplimiento de dispositivos > ATP de Microsoft Defender**.
 
 > [!NOTE]
 > Si desea ver los datos del dispositivo más actualizados, haga clic en **Lista de dispositivos sin sensor ATP**.

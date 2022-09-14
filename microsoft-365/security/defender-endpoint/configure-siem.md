@@ -3,7 +3,7 @@ title: Integración de las herramientas siem con Microsoft Defender para punto d
 description: Obtenga información sobre cómo ingerir incidentes y alertas e integrar herramientas SIEM.
 keywords: configurar siem, herramientas de administración de eventos e información de seguridad, splunk, arcsight, indicadores personalizados, API rest, definiciones de alertas, indicadores de riesgo
 search.appverid: met150
-ms.prod: m365-security
+ms.service: microsoft-365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -14,13 +14,13 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
-ms.technology: mde
-ms.openlocfilehash: 3bdb35b4251725dc4b2e69fc077d0edf29693cef
-ms.sourcegitcommit: 6e570b79944862c86735db455349b685d5b903b6
+ms.subservice: mde
+ms.openlocfilehash: b00a9f02f4cd370985dfa5c094c6be36aa34ab1e
+ms.sourcegitcommit: 10e6abe740e27000e223378eb17d657a47555fa8
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/26/2022
-ms.locfileid: "67020591"
+ms.lasthandoff: 08/31/2022
+ms.locfileid: "67679523"
 ---
 # <a name="integrate-your-siem-tools-with-microsoft-defender-for-endpoint"></a>Integración de las herramientas siem con Microsoft Defender para punto de conexión
 
@@ -40,7 +40,7 @@ ms.locfileid: "67020591"
 
 Microsoft Defender para punto de conexión admite herramientas de administración de eventos e información de seguridad (SIEM) que ingieren información del inquilino empresarial en Azure Active Directory (AAD) mediante el protocolo de autenticación de OAuth 2.0 para una aplicación de AAD registrada que represente la solución SIEM o el conector específico instalado en su entorno.
 
-Para más información, vea:
+Para obtener más información, consulte:
 
 - [Microsoft Defender para punto de conexión licencia y términos de uso de las API](api-terms-of-use.md) 
 - [Acceder a las API de Microsoft Defender para punto de conexión](apis-intro.md)

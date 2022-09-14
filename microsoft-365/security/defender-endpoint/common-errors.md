@@ -2,7 +2,7 @@
 title: Errores comunes Microsoft Defender para punto de conexión API
 description: Lista de errores comunes de api de Microsoft Defender para punto de conexión con descripciones.
 keywords: API, API de Microsoft Defender para punto de conexión, errores, solución de problemas
-ms.prod: m365-security
+ms.service: microsoft-365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -13,14 +13,14 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
-ms.technology: mde
+ms.subservice: mde
 ms.custom: api
-ms.openlocfilehash: dbbfd44f573e216015bfe586d5c309cc3ba12f5e
-ms.sourcegitcommit: 217108c59be41b01963a393b4f16d137636fe6a8
+ms.openlocfilehash: 75ecf39967f6308806ceb4f19f3f94fe3d603f80
+ms.sourcegitcommit: 10e6abe740e27000e223378eb17d657a47555fa8
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/12/2022
-ms.locfileid: "67326153"
+ms.lasthandoff: 08/31/2022
+ms.locfileid: "67679545"
 ---
 # <a name="common-rest-api-error-codes"></a>Códigos de error comunes de API de REST
 

@@ -2,7 +2,7 @@
 title: Implementar Microsoft Defender para punto de conexión en Android con Microsoft Intune
 description: Describe cómo implementar Microsoft Defender para punto de conexión en Android con Microsoft Intune
 keywords: microsoft, defender, Microsoft Defender para punto de conexión, mde, android, installation, deploy, uninstallation,
-ms.prod: m365-security
+ms.service: microsoft-365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -14,13 +14,13 @@ audience: ITPro
 ms.collection:
 - m365-security-compliance
 ms.topic: conceptual
-ms.technology: mde
-ms.openlocfilehash: 9c00ea16bddb7aa9094b41b30692493b530acbb3
-ms.sourcegitcommit: 5e5c2c1f7c321b5eb1c5b932c03bdd510005de13
+ms.subservice: mde
+ms.openlocfilehash: eda60083ff28188022ab0713ac4ec9d9fedcae44
+ms.sourcegitcommit: 10e6abe740e27000e223378eb17d657a47555fa8
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/15/2022
-ms.locfileid: "66823172"
+ms.lasthandoff: 08/31/2022
+ms.locfileid: "67679095"
 ---
 # <a name="deploy-microsoft-defender-for-endpoint-on-android-with-microsoft-intune"></a>Implementar Microsoft Defender para punto de conexión en Android con Microsoft Intune
 
@@ -57,7 +57,7 @@ Obtenga información sobre cómo implementar Defender para punto de conexión en
    - **Nombre**
    - **Descripción**
    - **Publicador** como Microsoft.
-   - **Dirección URL del almacén de** aplicaciones como https://play.google.com/store/apps/details?id=com.microsoft.scmx (dirección URL de Google Play Store aplicación de Defender para punto de conexión)
+   - **Dirección URL de la tienda de** aplicaciones como https://play.google.com/store/apps/details?id=com.microsoft.scmx (dirección URL de Google Play Store de la aplicación Defender para punto de conexión)
 
    Otros campos son opcionales. Seleccione **Siguiente**.
 

@@ -4,7 +4,8 @@ ms.reviewer: ''
 description: Expertos de Defender para la búsqueda es un servicio proactivo de búsqueda de amenazas que va más allá del punto de conexión para buscar entre puntos de conexión.
 keywords: notificaciones de expertos de defender, búsqueda de amenazas administrada, servicio de detección y respuesta administrada (MDR), MTE, Expertos en amenazas de Microsoft, MTE-TAN, notificación de ataque dirigida, Notificación de ataque dirigida, Expertos de Microsoft Defender para búsqueda, búsqueda y análisis de amenazas.
 search.product: Windows 10
-ms.prod: m365-security
+ms.service: microsoft-365-security
+ms.subservice: m365d
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -17,13 +18,12 @@ ms.collection:
 - m365-security-compliance
 - m365initiative-defender-endpoint
 ms.topic: conceptual
-ms.technology: mde
-ms.openlocfilehash: 899e7052d5091e8ef161dc122b83b6f34532de2c
-ms.sourcegitcommit: cd9df1a681265905eef99c039f7036b2fa6e8b6d
+ms.openlocfilehash: 9577c2bf6b9b1d384f172c4f5c55e5df44a290c5
+ms.sourcegitcommit: 10e6abe740e27000e223378eb17d657a47555fa8
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/07/2022
-ms.locfileid: "67275876"
+ms.lasthandoff: 08/31/2022
+ms.locfileid: "67678677"
 ---
 # <a name="microsoft-defender-experts-for-hunting"></a>Expertos de Microsoft Defender para la búsqueda
 

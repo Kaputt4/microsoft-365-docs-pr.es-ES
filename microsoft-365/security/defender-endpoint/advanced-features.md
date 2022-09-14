@@ -2,7 +2,7 @@
 title: Configuración de características avanzadas en Microsoft Defender para punto de conexión
 description: Active características avanzadas, como el archivo de bloque en Microsoft Defender para punto de conexión.
 keywords: características avanzadas, configuración, archivo de bloque, investigación automatizada, resolución automática, skype, microsoft defender for identity, office 365, azure information protection, intune
-ms.prod: m365-security
+ms.service: microsoft-365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -13,13 +13,13 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
-ms.technology: mde
-ms.openlocfilehash: d9824a738468f14ebfc7cd7bdc3c612c21a0e43c
-ms.sourcegitcommit: d1b60ed9a11f5e6e35fbaf30ecaeb9dfd6dd197d
+ms.subservice: mde
+ms.openlocfilehash: 5d1aea5fe5d8d1baaae3f616137f23dd93714f95
+ms.sourcegitcommit: 10e6abe740e27000e223378eb17d657a47555fa8
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/29/2022
-ms.locfileid: "66493117"
+ms.lasthandoff: 08/31/2022
+ms.locfileid: "67679655"
 ---
 # <a name="configure-advanced-features-in-defender-for-endpoint"></a>Configuración de características avanzadas en Defender para punto de conexión
 

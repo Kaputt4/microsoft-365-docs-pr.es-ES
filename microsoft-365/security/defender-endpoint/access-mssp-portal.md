@@ -1,8 +1,8 @@
 ---
-title: Obtener acceso Microsoft 365 Defender portal de clientes de MSSP
-description: Obtener acceso Microsoft 365 Defender portal de clientes de MSSP
-keywords: proveedor de servicios de seguridad administrados, mssp, configuración, integración
-ms.prod: m365-security
+title: Acceso al portal de clientes Microsoft 365 Defender MSSP
+description: Acceso al portal de clientes Microsoft 365 Defender MSSP
+keywords: proveedor de servicios de seguridad administrados, mssp, configure, integration
+ms.service: microsoft-365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -13,19 +13,19 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
-ms.technology: mde
-ms.openlocfilehash: b1c133048e6600d553f0530e135ebfc2c441dd84
-ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
+ms.subservice: mde
+ms.openlocfilehash: d404e89e3891b7a6325323e2fcc953e4968657d5
+ms.sourcegitcommit: 10e6abe740e27000e223378eb17d657a47555fa8
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/08/2022
-ms.locfileid: "63323673"
+ms.lasthandoff: 08/31/2022
+ms.locfileid: "67679473"
 ---
-# <a name="access-the-microsoft-365-defender-mssp-customer-portal"></a>Obtener acceso Microsoft 365 Defender portal de clientes de MSSP
+# <a name="access-the-microsoft-365-defender-mssp-customer-portal"></a>Acceso al portal de clientes Microsoft 365 Defender MSSP
 
 **Se aplica a:**
-- [ Plan 1 de Microsoft Defender para endpoint](https://go.microsoft.com/fwlink/p/?linkid=2154037)
-- [ Plan 2 de Microsoft Defender para endpoint](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [plan 1 de Microsoft Defender para punto de conexión](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [plan 2 de Microsoft Defender para punto de conexión](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
@@ -36,21 +36,21 @@ ms.locfileid: "63323673"
 > [!NOTE]
 > Este conjunto de pasos se dirige al MSSP.
 
-De forma predeterminada, los clientes de MSSP tienen acceso Microsoft 365 Defender inquilino a través de la siguiente dirección URL: `https://security.microsoft.com/`.
+De forma predeterminada, los clientes de MSSP acceden a su inquilino de Microsoft 365 Defender a través de la siguiente dirección URL: `https://security.microsoft.com/`.
 
-Sin embargo, los MSSP tendrán que usar una dirección URL específica del inquilino en el siguiente formato:  `https://security.microsoft.com?tid=customer_tenant_id` para obtener acceso al portal de clientes de MSSP.
+Sin embargo, los MSSP tendrán que usar una dirección URL específica del inquilino en el siguiente formato:  `https://security.microsoft.com?tid=customer_tenant_id` para acceder al portal del cliente de MSSP.
 
-En general, los MSSP tendrán que agregarse a cada una de las Azure AD cliente de MSSP que tienen la intención de administrar.
+En general, los MSSP deberán agregarse a cada azure AD del cliente de MSSP que pretenden administrar.
 
-Siga estos pasos para obtener el identificador de inquilino del cliente MSSP y, a continuación, use el identificador para obtener acceso a la dirección URL específica del inquilino:
+Siga estos pasos para obtener el identificador de inquilino del cliente de MSSP y, a continuación, use el identificador para acceder a la dirección URL específica del inquilino:
 
 1. Como MSSP, inicie sesión en Azure AD con sus credenciales.
 
 2. Cambie el directorio al inquilino del cliente de MSSP.
 
-3. Seleccione **Azure Active Directory > propiedades**. Encontrará el identificador de inquilino en el campo Id. de directorio.
+3. Seleccione **Azure Active Directory > Propiedades**. Encontrará el identificador de inquilino en el campo Id. de directorio.
 
-4. Para obtener acceso al portal de clientes de MSSP, reemplace el `customer_tenant_id` valor en la siguiente dirección URL: `https://security.microsoft.com/?tid=customer_tenant_id`.
+4. Acceda al portal del cliente de MSSP reemplazando el `customer_tenant_id` valor en la siguiente dirección URL: `https://security.microsoft.com/?tid=customer_tenant_id`.
 
 ## <a name="related-topics"></a>Temas relacionados
 

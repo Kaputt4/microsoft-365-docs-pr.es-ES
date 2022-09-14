@@ -4,7 +4,8 @@ ms.reviewer: ''
 description: En esta sección se describen los requisitos clave de infraestructura que debe cumplir e información importante sobre el acceso y el cumplimiento de los datos.
 keywords: servicio de búsqueda de amenazas administrada, búsqueda de amenazas administrada, servicio de detección y respuesta administrada (MDR), MTE, Expertos en amenazas de Microsoft, MTE-TAN, notificación de expertos de defender, notificación de ataque dirigido, expertos de Microsoft Defender para la búsqueda, búsqueda y análisis de amenazas.
 search.product: Windows 10
-ms.prod: m365-security
+ms.service: microsoft-365-security
+ms.subservice: m365d
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -17,13 +18,12 @@ ms.collection:
 - m365-security-compliance
 - m365initiative-defender-endpoint
 ms.topic: conceptual
-ms.technology: mde
-ms.openlocfilehash: 51e882c879f9365fbdc5b4a70d2ade106d061d51
-ms.sourcegitcommit: cd9df1a681265905eef99c039f7036b2fa6e8b6d
+ms.openlocfilehash: 5c91ef8dc31faa733d50417c2a9279e50f8bd202
+ms.sourcegitcommit: 10e6abe740e27000e223378eb17d657a47555fa8
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/07/2022
-ms.locfileid: "67276228"
+ms.lasthandoff: 08/31/2022
+ms.locfileid: "67679831"
 ---
 # <a name="before-you-begin-using-defender-experts-for-hunting"></a>Antes de empezar a usar Expertos de Defender para la búsqueda
 
@@ -61,7 +61,7 @@ Todos los datos usados para la búsqueda de servicios de Defender existentes seg
 
 Los expertos de Defender para la búsqueda de datos operativos, como vales de casos y notas de analistas, se generan y almacenan en un centro de datos de Microsoft en la región de EE. UU. durante la duración del servicio, independientemente de la ubicación de almacenamiento del servicio Microsoft 365 Defender. Los datos generados para el panel de informes se almacenan en la ubicación de almacenamiento del servicio Microsoft 365 Defender del cliente. Los datos de informes y los datos operativos se conservarán durante un período de gracia de no menos de 90 días después de que un cliente deje el servicio.
 
-Los expertos de Microsoft buscan [registros de búsqueda avanzados](../../security/defender/advanced-hunting-schema-tables.md) en Microsoft 365 Defender tablas de búsqueda avanzadas. Los datos de estas tablas dependen del conjunto de servicios de Defender para los que está habilitado el cliente (por ejemplo, Pertahanan Microsoft untuk Titik Akhir, Pertahanan Microsoft untuk Office 365, Pertahanan Microsoft untuk Identitas, Microsoft Defender for Cloud Apps y Azure Active Directory). Los expertos también usan un gran conjunto de datos internos de inteligencia sobre amenazas para informar sobre su búsqueda y automatización.
+Los expertos de Microsoft buscan [registros de búsqueda avanzados](../../security/defender/advanced-hunting-schema-tables.md) en Microsoft 365 Defender tablas de búsqueda avanzadas. Los datos de estas tablas dependen del conjunto de servicios de Defender para los que está habilitado el cliente (por ejemplo, Microsoft Defender para punto de conexión, Microsoft Defender para Office 365, Microsoft Defender for Identity, Microsoft Defender for Cloud Apps y Azure Active Directory). Los expertos también usan un gran conjunto de datos internos de inteligencia sobre amenazas para informar sobre su búsqueda y automatización.
 
 ### <a name="security-and-compliance"></a>Seguridad y cumplimiento
 

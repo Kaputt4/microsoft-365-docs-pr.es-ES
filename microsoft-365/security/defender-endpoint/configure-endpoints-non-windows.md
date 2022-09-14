@@ -1,10 +1,10 @@
 ---
-title: Incorporar dispositivos que no Windows en el servicio de Microsoft Defender para endpoints
-description: Configure dispositivos que no Windows para que puedan enviar datos del sensor al servicio de Microsoft Defender para endpoints.
-keywords: incorporar dispositivos no Windows, macos, linux, administración de dispositivos, configurar Microsoft Defender para dispositivos de punto de conexión
+title: Incorporación de dispositivos que no son de Windows al servicio Microsoft Defender para punto de conexión
+description: Configure dispositivos que no sean de Windows para que puedan enviar datos del sensor al servicio de Microsoft Defender para punto de conexión.
+keywords: incorporación de dispositivos que no son de Windows, macos, Linux, administración de dispositivos, configuración de dispositivos Microsoft Defender para punto de conexión
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
-ms.prod: m365-security
+ms.service: microsoft-365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -17,13 +17,13 @@ ms.collection:
 - M365-security-compliance
 - m365-initiative-defender-endpoint
 ms.topic: article
-ms.technology: mde
-ms.openlocfilehash: 4573e7002454e9e72648df42352104abaa4c22d6
-ms.sourcegitcommit: 6e90baef421ae06fd790b0453d3bdbf624b7f9c0
+ms.subservice: mde
+ms.openlocfilehash: 95ed620bf8b5af456174c232d90e05e6fbd547fd
+ms.sourcegitcommit: 10e6abe740e27000e223378eb17d657a47555fa8
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/12/2022
-ms.locfileid: "62767657"
+ms.lasthandoff: 08/31/2022
+ms.locfileid: "67680406"
 ---
 # <a name="onboard-non-windows-devices"></a>Incorporar dispositivos que no tienen Windows
 
@@ -38,39 +38,39 @@ ms.locfileid: "62767657"
 - macOS
 - Linux
 
-> ¿Desea experimentar Defender for Endpoint? [Regístrese para obtener una prueba gratuita.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-nonwindows-abovefoldlink)
+> ¿Quiere experimentar Defender para punto de conexión? [Regístrese para obtener una prueba gratuita.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-nonwindows-abovefoldlink)
 
-Defender for Endpoint proporciona una experiencia de operaciones de seguridad centralizada para Windows y plataformas Windows de seguridad. Podrás ver alertas de varios sistemas operativos compatibles (SO) en Microsoft 365 Defender y proteger mejor la red de la organización.
+Defender para punto de conexión proporciona una experiencia de operaciones de seguridad centralizada para plataformas windows y no windows. Podrá ver alertas de varios sistemas operativos (SO) compatibles en Microsoft 365 Defender y proteger mejor la red de su organización.
 
-Deberá conocer las versiones exactas de Linux distros y macOS que son compatibles con Defender for Endpoint para que la integración funcione. Para más información, vea:
+Necesitará conocer las versiones exactas de Linux distros y macOS que son compatibles con Defender para punto de conexión para que la integración funcione. Para obtener más información, consulte:
 
-- [Requisitos del sistema de Microsoft Defender para endpoint en Linux](microsoft-defender-endpoint-linux.md#system-requirements)
-- [Requisitos del sistema de Microsoft Defender para endpoint en macOS](microsoft-defender-endpoint-mac.md#system-requirements).
+- [Microsoft Defender para punto de conexión en los requisitos del sistema Linux](microsoft-defender-endpoint-linux.md#system-requirements)
+- [Microsoft Defender para punto de conexión en los requisitos del sistema macOS](microsoft-defender-endpoint-mac.md#system-requirements).
 
-## <a name="onboarding-non-windows-devices"></a>Incorporación de dispositivos no Windows móviles
+## <a name="onboarding-non-windows-devices"></a>Incorporación de dispositivos que no son de Windows
 
-Tendrás que seguir los siguientes pasos para incorporar dispositivos que no Windows:
+Tendrá que realizar los pasos siguientes para incorporar dispositivos que no sean de Windows:
 
-1. Seleccione el método de incorporación preferido:
+1. Seleccione el método de incorporación que prefiera:
 
-   - Para dispositivos macOS, puedes elegir incorporarlo a través de Microsoft Defender para Endpoint o a través de una solución de terceros. Para obtener más información, consulta [Microsoft Defender para Endpoint en Mac](/microsoft-365/security/defender-endpoint/microsoft-defender-endpoint-mac).
+   - En el caso de los dispositivos macOS, puede optar por incorporarse a través de Microsoft Defender para punto de conexión o a través de una solución de terceros. Para obtener más información, consulte [Microsoft Defender para punto de conexión en Mac](/microsoft-365/security/defender-endpoint/microsoft-defender-endpoint-mac).
 
-   - Para otros dispositivos que no Windows, elija Incorporar dispositivos que **no Windows a través de la integración de terceros**.
-    1. En el panel de navegación, seleccione **Partners and APIs** \> **Partner Applications** . Asegúrese de que la solución de terceros aparece en la lista.
-    2. En la **página Aplicaciones de partners**, seleccione el partner que admita los dispositivos que no Windows asociados.
-    3. Haga **clic en** Ver para abrir la página del partner. Siga las instrucciones proporcionadas en la página.
-    4. Después de crear una cuenta o suscribirse a la solución de partners, debe llegar a una fase en la que se pida a un administrador global de inquilinos de la organización que acepte una solicitud de permiso de la aplicación asociada. Lea atentamente la solicitud de permiso para asegurarse de que está alineada con el servicio que necesita.
+   - Para otros dispositivos que no sean de Windows, elija **Incorporar dispositivos que no sean de Windows mediante la integración de terceros**.
+    1. En el panel de navegación, seleccione **Asociados y API** \> **Aplicaciones de asociados** . Asegúrese de que aparece la solución de terceros.
+    2. En la página **Aplicaciones de asociado** , seleccione el asociado que admite los dispositivos que no son de Windows.
+    3. Haga clic en **Ver** para abrir la página del asociado. Siga las instrucciones proporcionadas en la página.
+    4. Después de crear una cuenta o suscribirse a la solución de asociado, debe llegar a una fase en la que se pida a un Administración global de inquilino de su organización que acepte una solicitud de permiso de la aplicación asociada. Lea detenidamente la solicitud de permiso para asegurarse de que está alineada con el servicio que necesita.
 
 2. Ejecute una prueba de detección siguiendo las instrucciones de la solución de terceros.
 
-## <a name="offboard-non-windows-devices"></a>Dispositivos no Windows offboard
+## <a name="offboard-non-windows-devices"></a>Dispositivos fuera del panel que no son de Windows
 
-Para dispositivos macOS y Linux, puedes elegir salir a través de Microsoft Defender para endpoint. En el panel de navegación, **seleccione Configuración** \> **Offboard** \> **Seleccionar sistema operativo para iniciar el proceso de offboarding**.
+En el caso de los dispositivos macOS y Linux, puede optar por desconectarse a través de Microsoft Defender para punto de conexión. En el panel de navegación, seleccione **Configuración** \> **Offboard** \> **Seleccionar sistema operativo para iniciar el proceso de eliminación**.
 
-También puede desactivar la integración de terceros Windows dispositivos no integrados. Habilite la cobertura para dispositivos que ejecutan plataformas que no Windows mediante [la integración de soluciones de terceros](https://security.microsoft.com/interoperability/partners).
+También puede desconectar dispositivos que no sean de Windows deshabilitando la integración de terceros. Habilite la cobertura para dispositivos que ejecutan plataformas que no son de Windows [mediante la integración de soluciones de terceros](https://security.microsoft.com/interoperability/partners).
 
 ## <a name="related-topics"></a>Temas relacionados
 - [incorporar dispositivos Windows](configure-endpoints.md)
-- [Servidores integrados](configure-server-endpoints.md)
+- [Incorporación de servidores](configure-server-endpoints.md)
 - [Configurar las opciones del proxy y de conectividad a Internet](configure-proxy-internet.md)
-- [Solución de problemas de incorporación de Microsoft Defender para puntos de conexión](troubleshoot-onboarding.md)
+- [Solución de problemas de incorporación de Microsoft Defender para punto de conexión](troubleshoot-onboarding.md)

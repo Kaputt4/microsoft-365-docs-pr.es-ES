@@ -1,8 +1,8 @@
 ---
 title: Asegurarse de que los dispositivos estén configurados de manera adecuada
-description: Configure correctamente los dispositivos para aumentar la resistencia general frente a las amenazas y mejorar su capacidad para detectar y responder a los ataques.
-keywords: onboard, administración de Intune, Microsoft Defender para Endpoint, Microsoft Defender, Windows Defender, reducción de superficie de ataque, ASR, línea base de seguridad
-ms.prod: m365-security
+description: Configure correctamente los dispositivos para aumentar la resistencia general frente a las amenazas y mejorar la capacidad de detectar y responder a ataques.
+keywords: onboard, Intune management, Microsoft Defender para punto de conexión, Microsoft Defender, Windows Defender, attack surface reduction, ASR, security baseline
+ms.service: microsoft-365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -14,13 +14,13 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.custom: admindeeplinkDEFENDER
 ms.topic: conceptual
-ms.technology: mde
-ms.openlocfilehash: 47c3cb5d680899a28e6467b24ef398a428851a07
-ms.sourcegitcommit: b0c3ffd7ddee9b30fab85047a71a31483b5c649b
+ms.subservice: mde
+ms.openlocfilehash: 74fe25476a336f04b5d419f93a4554becbb6b6f7
+ms.sourcegitcommit: 10e6abe740e27000e223378eb17d657a47555fa8
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/25/2022
-ms.locfileid: "64476167"
+ms.lasthandoff: 08/31/2022
+ms.locfileid: "67679430"
 ---
 # <a name="ensure-your-devices-are-configured-properly"></a>Asegurarse de que los dispositivos estén configurados de manera adecuada
 
@@ -31,65 +31,65 @@ ms.locfileid: "64476167"
 - [Microsoft Defender para punto de conexión Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
-> ¿Desea experimentar Defender for Endpoint? [Regístrese para obtener una prueba gratuita.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-onboardconfigure-abovefoldlink)
+> ¿Quiere experimentar Defender para punto de conexión? [Regístrese para obtener una prueba gratuita.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-onboardconfigure-abovefoldlink)
 
-Con dispositivos configurados correctamente, puedes aumentar la resistencia general frente a amenazas y mejorar tu capacidad para detectar y responder a los ataques. La administración de la configuración de seguridad ayuda a garantizar que los dispositivos:
+Con los dispositivos configurados correctamente, puede aumentar la resistencia general frente a amenazas y mejorar la capacidad de detectar y responder a ataques. La administración de configuración de seguridad ayuda a garantizar que los dispositivos:
 
 - Incorporación a Microsoft Defender para punto de conexión
-- Cumplir o superar la configuración de línea base de seguridad de Defender for Endpoint
-- Tener mitigaciones de superficie de ataques estratégicos en su lugar
+- Cumplir o superar la configuración de línea base de seguridad de Defender para punto de conexión
+- Tener mitigaciones estratégicas de la superficie expuesta a ataques en su lugar
 
-Haga **clic en Administración de** configuración en el menú de navegación para abrir la página Administración de configuración de dispositivos.
+Haga clic en **Administración de configuración** en el menú de navegación para abrir la página Administración de configuración de dispositivos.
 
 :::image type="content" source="images/secconmgmt_main.png" alt-text="Página Administración de configuración de seguridad" lightbox="images/secconmgmt_main.png":::
 
-*Página de administración de configuración de dispositivos*
+*Página administración de configuración de dispositivos*
 
-Puedes realizar un seguimiento del estado de configuración en un nivel organizativo y tomar medidas rápidamente en respuesta a una cobertura de incorporación deficiente, problemas de cumplimiento y mitigaciones de superficies de ataque mal optimizadas a través de vínculos directos y profundos a páginas de administración de dispositivos en Microsoft Intune y <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">Microsoft 365 Defender portal</a>.
+Puede realizar un seguimiento del estado de configuración a nivel organizativo y tomar medidas rápidamente en respuesta a problemas de cobertura de incorporación deficiente, problemas de cumplimiento y mitigaciones de superficie de ataque mal optimizadas mediante vínculos directos y profundos a páginas de administración de dispositivos en Microsoft Intune y <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">Microsoft 365 Defender portal</a>.
 
-Al hacerlo, se beneficia de:
+Al hacerlo, se beneficia de lo siguiente:
 
 - Visibilidad completa de los eventos en los dispositivos
-- Inteligencia de amenazas sólida y tecnologías de aprendizaje de dispositivos eficaces para procesar eventos sin procesar e identificar la actividad de vulneración y los indicadores de amenazas
-- Una pila completa de características de seguridad configuradas para detener eficazmente la instalación de implantes malintencionados, el secuestro de archivos y procesos del sistema, la exfiltración de datos y otras actividades de amenazas
-- Mitigaciones optimizadas de superficie de ataque, maximizando las defensas estratégicas contra la actividad de amenazas al mismo tiempo que minimiza el impacto en la productividad
+- Inteligencia de amenazas sólida y potentes tecnologías de aprendizaje de dispositivos para procesar eventos sin procesar e identificar la actividad de vulneración y los indicadores de amenazas
+- Una pila completa de características de seguridad configuradas para detener eficazmente la instalación de implantes malintencionados, el secuestro de archivos y procesos del sistema, la filtración de datos y otras actividades de amenazas
+- Mitigaciones optimizadas de la superficie expuesta a ataques, maximizando las defensas estratégicas frente a la actividad de amenazas y minimizando el impacto en la productividad
 
 ## <a name="enroll-devices-to-intune-management"></a>Inscribir dispositivos en la administración de Intune
 
-La administración de configuración de dispositivos funciona estrechamente con la administración de dispositivos de Intune para establecer el inventario de los dispositivos de la organización y la configuración de seguridad de línea base. Podrás realizar un seguimiento y administrar problemas de configuración en dispositivos Windows Intune.
+La administración de configuración de dispositivos funciona estrechamente con Intune administración de dispositivos para establecer el inventario de los dispositivos de la organización y la configuración de seguridad de línea base. Podrá realizar un seguimiento y administrar los problemas de configuración en dispositivos Windows administrados Intune.
 
-Antes de garantizar que los dispositivos estén configurados correctamente, inscríbalos en la administración de Intune. La inscripción de Intune es sólida y tiene varias opciones de inscripción para Windows dispositivos. Para obtener más información acerca de las opciones de inscripción de Intune, consulta cómo [configurar la inscripción para Windows dispositivos](/intune/windows-enroll).
+Antes de asegurarse de que los dispositivos están configurados correctamente, inscríbases en Intune administración. Intune inscripción es sólida y tiene varias opciones de inscripción para dispositivos Windows. Para obtener más información sobre Intune opciones de inscripción, consulte [Configuración de la inscripción para dispositivos Windows](/intune/windows-enroll).
 
 > [!NOTE]
-> Para inscribir Windows dispositivos en Intune, los administradores ya deben tener asignadas licencias. [Obtenga información sobre la asignación de licencias para la inscripción de dispositivos](/intune/licenses-assign).
+> Para inscribir dispositivos Windows en Intune, ya se deben haber asignado licencias a los administradores. [Obtenga información sobre la asignación de licencias para la inscripción de dispositivos](/intune/licenses-assign).
 
 > [!TIP]
-> Para optimizar la administración de dispositivos a través de Intune, [conecta Intune a Defender para endpoint](/intune/advanced-threat-protection#enable-windows-defender-atp-in-intune).
+> Para optimizar la administración de dispositivos a través de Intune, [conecte Intune a Defender para punto de conexión](/intune/advanced-threat-protection#enable-windows-defender-atp-in-intune).
 
 ## <a name="obtain-required-permissions"></a>Obtener los permisos necesarios
 
-De forma predeterminada, solo los usuarios a los que se haya asignado el rol Administrador global o administrador de servicio de Intune en Azure AD pueden administrar y asignar los perfiles de configuración del dispositivo necesarios para incorporar dispositivos e implementar la línea base de seguridad.
+De forma predeterminada, solo los usuarios a los que se ha asignado el rol Administrador global o Administrador de servicios de Intune en Azure AD pueden administrar y asignar los perfiles de configuración del dispositivo necesarios para la incorporación de dispositivos y la implementación de la línea de base de seguridad.
 
 Si se le han asignado otros roles, asegúrese de que tiene los permisos necesarios:
 
-- Permisos completos para configuraciones de dispositivos
-- Permisos completos para las líneas base de seguridad
+- Permisos completos para las configuraciones de dispositivos
+- Permisos completos para líneas base de seguridad
 - Permisos de lectura para directivas de cumplimiento de dispositivos
 - Permisos de lectura para la organización
 
 :::image type="content" source="images/secconmgmt_intune_permissions.png" alt-text="Los permisos necesarios en intune" lightbox="images/secconmgmt_intune_permissions.png":::
 
-*Permisos de configuración de dispositivos en Intune*
+*Permisos de configuración del dispositivo en Intune*
 
 > [!TIP]
-> Para obtener más información sobre cómo asignar permisos en Intune, [lea sobre cómo crear roles personalizados](/intune/create-custom-role#to-create-a-custom-role).
+> Para obtener más información sobre la asignación de permisos en Intune, [lea sobre la creación de roles personalizados](/intune/create-custom-role#to-create-a-custom-role).
 
 ## <a name="in-this-section"></a>En esta sección
 
 Tema|Descripción
 :---|:---
-[Obtener dispositivos incorporados a Defender for Endpoint](configure-machines-onboarding.md)|Realice un seguimiento del estado de incorporación de dispositivos administrados por Intune e incorpore más dispositivos a través de Intune. 
-[Aumentar el cumplimiento de la línea base de seguridad de Defender for Endpoint](configure-machines-security-baseline.md)|Realizar un seguimiento del cumplimiento de línea base y el incumplimiento. Implemente la línea base de seguridad en más dispositivos administrados por Intune.
-[Optimizar la implementación y las detecciones de reglas de ASR](configure-machines-asr.md)|Revise la implementación de reglas y ajuste las detecciones con herramientas de análisis de impacto <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">en Microsoft 365 Defender portal</a>.
+[Incorporación de dispositivos a Defender para punto de conexión](configure-machines-onboarding.md)|Realice un seguimiento del estado de incorporación de dispositivos administrados por Intune e incorpore más dispositivos a través de Intune. 
+[Aumento del cumplimiento de la línea base de seguridad de Defender para punto de conexión](configure-machines-security-baseline.md)|Realice un seguimiento del cumplimiento y el incumplimiento de la línea base. Implemente la línea base de seguridad en más dispositivos administrados Intune.
+[Optimizar la implementación y las detecciones de reglas de ASR](configure-machines-asr.md)|Revise la implementación de reglas y ajuste las detecciones mediante herramientas de análisis de impacto en <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">Microsoft 365 Defender portal</a>.
 
-> ¿Desea experimentar Defender for Endpoint? [Regístrese para obtener una prueba gratuita.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-onboardconfigure-belowfoldlink)
+> ¿Quiere experimentar Defender para punto de conexión? [Regístrese para obtener una prueba gratuita.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-onboardconfigure-belowfoldlink)

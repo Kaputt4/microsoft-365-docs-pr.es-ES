@@ -3,7 +3,7 @@ title: Uso del conector de Power Automate para configurar un flujo para eventos
 ms.reviewer: ''
 description: Use Microsoft Defender para punto de conexión conector de Flow para crear un flujo que se desencadenará cada vez que se produzca un nuevo evento en el inquilino.
 keywords: flow, api admitidas, API, Flujo de Microsoft, consulta, automatización, power automate
-ms.prod: m365-security
+ms.service: microsoft-365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -14,14 +14,14 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: how-to
-ms.technology: mde
+ms.subservice: mde
 ms.custom: api
-ms.openlocfilehash: 2c800b5e36f7c3f19a3ed11e7a33e9040ffffad2
-ms.sourcegitcommit: 217108c59be41b01963a393b4f16d137636fe6a8
+ms.openlocfilehash: 4cacdf602f732478133d8a6c98ea3be3efa1a69f
+ms.sourcegitcommit: 10e6abe740e27000e223378eb17d657a47555fa8
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/12/2022
-ms.locfileid: "67328022"
+ms.lasthandoff: 08/31/2022
+ms.locfileid: "67679293"
 ---
 # <a name="how-to-use-power-automate-connector-to-set-up-a-flow-for-events"></a>Uso del conector de Power Automate para configurar un flujo para eventos
 

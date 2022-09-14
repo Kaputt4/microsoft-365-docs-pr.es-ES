@@ -1,9 +1,9 @@
 ---
-title: Ejecute y personalice exámenes programados y a petición.
-description: Personalizar e iniciar exámenes Antivirus de Microsoft Defender en puntos de conexión en toda la red
-keywords: análisis, programación, personalización, exclusiones, excluir archivos, corrección, resultados del examen, cuarentena, eliminación de amenazas, examen rápido, examen completo, Antivirus de Microsoft Defender
+title: Ejecute y personalice los exámenes programados y a petición.
+description: Personalización e inicio de exámenes del Antivirus de Microsoft Defender en puntos de conexión a través de la red
+keywords: scan, schedule, customize, exclusions, exclude files, remediation, scan results, quarantine, remove threat, quick scan, full scan, Microsoft Defender Antivirus
 search.product: eADQiWindows 10XVcnh
-ms.prod: m365-security
+ms.service: microsoft-365-security
 ms.mktglfcycl: manage
 ms.sitesec: library
 ms.pagetype: security
@@ -14,17 +14,17 @@ ms.custom: nextgen
 ms.date: 09/03/2018
 ms.reviewer: ''
 manager: dansimp
-ms.technology: mde
+ms.subservice: mde
 ms.topic: article
 ms.collection: M365-security-compliance
-ms.openlocfilehash: 9acac2868b0bd2449338f4a61f663d8cfe8a8ee4
-ms.sourcegitcommit: dfa9f28a5a5055a9530ec82c7f594808bf28d0dc
+ms.openlocfilehash: a250e39b04b621be90fce001a8154f54cc6d9ddb
+ms.sourcegitcommit: 10e6abe740e27000e223378eb17d657a47555fa8
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/29/2021
-ms.locfileid: "61218255"
+ms.lasthandoff: 08/31/2022
+ms.locfileid: "67680293"
 ---
-# <a name="customize-initiate-and-review-the-results-of-microsoft-defender-antivirus-scans-and-remediation"></a>Personalizar, iniciar y revisar los resultados de Antivirus de Microsoft Defender análisis y corrección
+# <a name="customize-initiate-and-review-the-results-of-microsoft-defender-antivirus-scans-and-remediation"></a>Personalización, inicio y revisión de los resultados de los exámenes y correcciones del Antivirus de Microsoft Defender
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
@@ -34,15 +34,15 @@ ms.locfileid: "61218255"
 - [Microsoft Defender para punto de conexión Plan 1](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft Defender para punto de conexión Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 
-Puede usar la directiva de grupo, PowerShell y Windows Management Instrumentation (WMI) para configurar Antivirus de Microsoft Defender exámenes. 
+Puede usar directiva de grupo, PowerShell e Instrumental de administración de Windows (WMI) para configurar exámenes del Antivirus de Microsoft Defender. 
 
 ## <a name="in-this-section"></a>En esta sección
 
 Tema | Descripción
 ---|---
-[Configurar y validar exclusiones de archivos, carpetas y archivos abiertos por proceso en Antivirus de Microsoft Defender exámenes](configure-exclusions-microsoft-defender-antivirus.md) | Puede excluir archivos (incluidos los archivos modificados por procesos especificados) y carpetas de exámenes a petición, exámenes programados y supervisión y análisis de protección siempre en tiempo real
-[Configurar opciones de análisis del Antivirus de Microsoft Defender](configure-advanced-scan-types-microsoft-defender-antivirus.md) | Puede configurar Antivirus de Microsoft Defender para incluir determinados tipos de archivos de almacenamiento de correo electrónico, puntos de copia de seguridad o reanúrlo, y archivos archivados (como .zip archivos) en los exámenes. También puede habilitar el examen de archivos de red
-[Configurar la corrección para exámenes](configure-remediation-microsoft-defender-antivirus.md) | Configurar qué Antivirus de Microsoft Defender debe hacer cuando detecta una amenaza y cuánto tiempo deben conservarse los archivos en cuarentena en la carpeta de cuarentena
-[Configurar exámenes programados](scheduled-catch-up-scans-microsoft-defender-antivirus.md) | Configurar exámenes periódicos (programados), incluso cuándo deben ejecutarse y si se ejecutan como exámenes rápidos o completos
-[Configurar y ejecutar exámenes](run-scan-microsoft-defender-antivirus.md) | Ejecutar y configurar exámenes a petición con PowerShell, Windows Management Instrumentation o individualmente en puntos de conexión con la Seguridad de Windows aplicación
-[Revisar los resultados del examen](review-scan-results-microsoft-defender-antivirus.md) | Revisar los resultados de los exámenes mediante Microsoft Endpoint Configuration Manager, Microsoft Intune o la aplicación Seguridad de Windows examen
+[Configuración y validación de exclusiones de archivos, carpetas y archivos abiertos por procesos en exámenes del Antivirus de Microsoft Defender](configure-exclusions-microsoft-defender-antivirus.md) | Puede excluir los archivos (incluidos los archivos modificados por procesos especificados) y las carpetas de los exámenes a petición, los exámenes programados y la supervisión y el examen de protección en tiempo real siempre activados.
+[Configurar opciones de análisis del Antivirus de Microsoft Defender](configure-advanced-scan-types-microsoft-defender-antivirus.md) | Puede configurar antivirus de Microsoft Defender para incluir determinados tipos de archivos de almacenamiento de correo electrónico, puntos de copia de seguridad o de reanálisis y archivos archivados (como archivos .zip) en los exámenes. También puede habilitar el examen de archivos de red
+[Configuración de la corrección de exámenes](configure-remediation-microsoft-defender-antivirus.md) | Configure lo que el Antivirus de Microsoft Defender debe hacer cuando detecte una amenaza y cuánto tiempo deben conservarse los archivos en cuarentena en la carpeta de cuarentena.
+[Configuración de exámenes programados](scheduled-catch-up-scans-microsoft-defender-antivirus.md) | Configurar exámenes periódicos (programados), incluidos cuándo se deben ejecutar y si se ejecutan como exámenes completos o rápidos
+[Configuración y ejecución de exámenes](run-scan-microsoft-defender-antivirus.md) | Ejecución y configuración de exámenes a petición mediante PowerShell, Instrumental de administración de Windows o individualmente en puntos de conexión con la aplicación Seguridad de Windows
+[Revisión de los resultados del examen](review-scan-results-microsoft-defender-antivirus.md) | Revise los resultados de los exámenes mediante Configuration Manager de punto de conexión de Microsoft, Microsoft Intune o la aplicación Seguridad de Windows
