@@ -6,7 +6,7 @@ manager: scotv
 ms.date: 07/13/2021
 audience: ITPro
 ms.topic: article
-ms.service: o365-administration
+ms.service: microsoft-365-enterprise
 ms.localizationpriority: medium
 ms.collection:
 - Ent_O365
@@ -21,12 +21,12 @@ search.appverid:
 - SPO160
 ms.assetid: bebb285f-1d54-4f79-90a5-94985afc6af8
 description: Obtenga información sobre cómo usar la red de entrega de contenido (CDN) Office 365 para acelerar la entrega de los recursos de SharePoint Online.
-ms.openlocfilehash: ca3d6c1158c93c9f897540e4b73565fd5a518e2a
-ms.sourcegitcommit: 702fba4b6e6210bb7933cdbff0ad72426fcb9ef2
+ms.openlocfilehash: 99e53cfb645b2e84e614321d269f4fe6d7b519b6
+ms.sourcegitcommit: 437461fa1d38ff9bb95dd8a1c5f0b94e8111ada2
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/13/2022
-ms.locfileid: "67336208"
+ms.lasthandoff: 09/14/2022
+ms.locfileid: "67670121"
 ---
 # <a name="use-the-office-365-content-delivery-network-cdn-with-sharepoint-online"></a>Uso de la red de entrega de contenido (CDN) de Office 365 con SharePoint Online
 

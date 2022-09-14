@@ -8,7 +8,7 @@ manager: scotv
 ms.date: 11/22/2019
 audience: ITPro
 ms.topic: article
-ms.service: o365-solutions
+ms.service: microsoft-365-enterprise
 ms.localizationpriority: medium
 ms.collection:
 - M365-identity-device-management
@@ -18,16 +18,16 @@ ms.custom:
 - Ent_TLGs
 ms.assetid: ''
 description: 'Resumen: configure la escritura diferida de contraseña para el entorno de prueba de Microsoft 365'
-ms.openlocfilehash: 0477e2200db7252dcce4351b2f96298e075f3b29
-ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
+ms.openlocfilehash: 29db50002be7a01d09391609ab3d43a7e18082d8
+ms.sourcegitcommit: 437461fa1d38ff9bb95dd8a1c5f0b94e8111ada2
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "65091113"
+ms.lasthandoff: 09/14/2022
+ms.locfileid: "67669945"
 ---
 # <a name="password-writeback-for-your-microsoft-365-test-environment"></a>Escritura diferida de contraseña para el entorno de prueba de Microsoft 365
 
-*Esta Guía de laboratorio de pruebas solo se puede usar para Microsoft 365 para entornos de prueba empresariales.*
+*Esta guía de laboratorio de pruebas solo se puede usar para Microsoft 365 para entornos de prueba empresariales.*
 
 Los usuarios pueden usar la escritura diferida de contraseñas para actualizar sus contraseñas a través de Azure Active Directory (Azure AD), que luego se replica en la Servicios de dominio de Active Directory local (AD DS). Con la escritura diferida de contraseñas, los usuarios no tienen que actualizar sus contraseñas a través de AD DS local donde se almacenan sus cuentas de usuario originales. Esto ayuda a los usuarios móviles o remotos que no tienen una conexión de acceso remoto a su red local.
 
@@ -40,7 +40,7 @@ La configuración del entorno de prueba para la escritura diferida de contraseñ
 ![Guías de laboratorio de prueba para la nube de Microsoft.](../media/m365-enterprise-test-lab-guides/cloud-tlg-icon.png) 
     
 > [!TIP]
-> Para obtener un mapa visual de todos los artículos de la pila Microsoft 365 para la pila guía del laboratorio de pruebas empresarial, vaya a [Microsoft 365 para la pila de la guía del laboratorio de pruebas empresarial](../downloads/Microsoft365EnterpriseTLGStack.pdf).
+> Para obtener un mapa visual de todos los artículos de la pila guía del laboratorio de pruebas de Microsoft 365 para empresas, vaya a [Microsoft 365 para enterprise Test Lab Guide Stack (Pila de guía del laboratorio de pruebas empresariales).](../downloads/Microsoft365EnterpriseTLGStack.pdf)
 
 ## <a name="phase-1-configure-password-hash-synchronization-for-your-microsoft-365-test-environment"></a>Fase 1: configurar la sincronización de hash de contraseñas para el entorno de prueba de Microsoft 365
 
@@ -109,9 +109,9 @@ A continuación, configure Azure AD Connect en APP1 para la escritura diferida d
 
 4. En la página **Tareas adicionales** , seleccione **Personalizar las opciones de sincronización** y, a continuación, seleccione **Siguiente**.
 
-5. En la **página Conectar para Azure AD**, escriba las credenciales de la cuenta de administrador global y, a continuación, seleccione **Siguiente**.
+5. En la página **Conectarse a Azure AD** , escriba las credenciales de la cuenta de administrador global y, a continuación, seleccione **Siguiente**.
 
-6. En los **directorios de Conectar** y las páginas **de filtrado de dominio o unidad organizativa**, seleccione **Siguiente**.
+6. En las páginas **Connect directory and** **Domain/OU filtering (Conectar directorios y filtrado de dominio/unidad organizativa** ), seleccione **Siguiente**.
 
 7. En la página **Características opcionales** , seleccione **Escritura diferida de contraseñas** y, a continuación, seleccione **Siguiente**.
 

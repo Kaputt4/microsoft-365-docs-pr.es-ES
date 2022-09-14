@@ -6,7 +6,7 @@ manager: scotv
 ms.date: 06/03/2020
 audience: Admin
 ms.topic: article
-ms.service: o365-administration
+ms.service: microsoft-365-enterprise
 ms.localizationpriority: medium
 ms.collection:
 - Ent_O365
@@ -19,12 +19,12 @@ search.appverid:
 f1.keywords:
 - NOCSH
 description: Use la herramienta Diagnóstico de páginas para SharePoint para analizar el portal moderno de SharePoint Online y las páginas de publicación clásicas con un conjunto predefinido de criterios de rendimiento.
-ms.openlocfilehash: b89534fe45daf34082b7ee3b735a7ba67851f9f4
-ms.sourcegitcommit: 61bdfa84f2d6ce0b61ba5df39dcde58df6b3b59d
+ms.openlocfilehash: 0d89d16ead05a5a683fbfbf7b1dde35cde4dcde9
+ms.sourcegitcommit: 437461fa1d38ff9bb95dd8a1c5f0b94e8111ada2
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/08/2022
-ms.locfileid: "65941116"
+ms.lasthandoff: 09/14/2022
+ms.locfileid: "67670209"
 ---
 # <a name="use-the-page-diagnostics-for-sharepoint-tool"></a>Uso de la herramienta Diagnóstico de páginas para SharePoint
 
@@ -90,7 +90,7 @@ Seleccione **Iniciar** para empezar a recopilar datos para su análisis.
     > [!div class="mx-imgBorder"]
     > ![Detalles de diagnóstico de página.](../media/page-diagnostics-for-spo/pagediag-details.PNG)
 
-   - **CorrelationID** es un elemento importante al trabajar con soporte técnico de Microsoft, ya que les permite recopilar más datos de diagnóstico para la página específica.
+   - **CorrelationID** es un elemento importante al trabajar con Soporte técnico de Microsoft, ya que les permite recopilar más datos de diagnóstico para la página específica.
    - **SPRequestDuration** es el tiempo necesario para que SharePoint procese la página. La navegación estructural, imágenes grandes, muchas llamadas API podrían contribuir a duraciones más largas.
    - **SPIISLatency** es el tiempo en milisegundos que tarda SharePoint Online en empezar a cargar la página. Este valor no incluye el tiempo necesario para que la aplicación web responda.
    - **El tiempo de carga** de página es el tiempo total registrado por la página desde el momento de la solicitud hasta el momento en que se recibió y representó la respuesta en el explorador. Este valor se ve afectado por varios factores, como la latencia de red, el rendimiento del equipo y el tiempo que tarda el explorador en cargar la página.
@@ -154,13 +154,13 @@ Debe habilitarse antes de hacer clic en Inicio, lo que habilitará el modo de de
 > [!IMPORTANT]
 > Estos resultados contienen direcciones URL y que se pueden clasificar como PII (Información de identificación personal). Asegúrese de seguir las directrices de su organización antes de distribuir esa información.
 
-## <a name="engaging-with-microsoft-support"></a>Interacción con el soporte técnico de Microsoft
+## <a name="engaging-with-microsoft-support"></a>Interacción con Soporte técnico de Microsoft
 
-Hemos incluido una característica de **nivel de soporte técnico de Microsoft** que solo se debe usar al trabajar directamente en un caso de soporte técnico. El uso de esta característica no le proporcionará ninguna ventaja cuando se use sin la participación del equipo de soporte técnico y puede hacer que la página funcione significativamente más lentamente. No hay información adicional al usar esta característica en la herramienta, ya que la información adicional se agrega al registro en el servicio.
+Hemos incluido una **característica de nivel de Soporte técnico de Microsoft** que solo se debe usar al trabajar directamente en un caso de soporte técnico. El uso de esta característica no le proporcionará ninguna ventaja cuando se use sin la participación del equipo de soporte técnico y puede hacer que la página funcione significativamente más lentamente. No hay información adicional al usar esta característica en la herramienta, ya que la información adicional se agrega al registro en el servicio.
 
 No se ve ningún cambio, excepto que se le notificará que lo ha habilitado y que el rendimiento de la página se verá significativamente degradado por un rendimiento 2-3 veces más lento mientras esté habilitado. Solo será relevante para la página determinada y esa sesión activa. Por este motivo, se debe usar con moderación y solo cuando se emplee activamente con soporte técnico.
 
-### <a name="to-enable-the-microsoft-support-level-feature"></a>Para habilitar la característica de nivel de soporte técnico de Microsoft
+### <a name="to-enable-the-microsoft-support-level-feature"></a>Para habilitar la característica de nivel de Soporte técnico de Microsoft
 
 1. Abra la herramienta Diagnósticos de página para SharePoint.
 2. En el teclado, presione **ALT-Mayús-L**. Se mostrará la casilla **Habilitar registro de soporte** técnico.

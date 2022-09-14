@@ -1,12 +1,12 @@
 ---
-title: Ver Microsoft 365 detalles de licencia de cuenta y servicio con PowerShell
+title: Visualización de los detalles del servicio y la licencia de la cuenta de Microsoft 365 con PowerShell
 ms.author: kvice
 author: kelleyvice-msft
 manager: scotv
 ms.date: 07/17/2020
 audience: Admin
 ms.topic: article
-ms.service: o365-administration
+ms.service: microsoft-365-enterprise
 ms.localizationpriority: medium
 search.appverid:
 - MET150
@@ -19,16 +19,16 @@ ms.custom:
 - LIL_Placement
 ms.assetid: ace07d8a-15ca-4b89-87f0-abbce809b519
 description: Explica cómo usar PowerShell para determinar los servicios de Microsoft 365 que se han asignado a los usuarios.
-ms.openlocfilehash: 01f8865faeb187bef23c5757a0373fbc8be2d139
-ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
+ms.openlocfilehash: a148a2ed1e12507a3a004555e90060c48a7a54c6
+ms.sourcegitcommit: 437461fa1d38ff9bb95dd8a1c5f0b94e8111ada2
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "65095584"
+ms.lasthandoff: 09/14/2022
+ms.locfileid: "67669744"
 ---
-# <a name="view-microsoft-365-account-license-and-service-details-with-powershell"></a>Ver Microsoft 365 detalles de licencia de cuenta y servicio con PowerShell
+# <a name="view-microsoft-365-account-license-and-service-details-with-powershell"></a>Visualización de los detalles del servicio y la licencia de la cuenta de Microsoft 365 con PowerShell
 
-*Este artículo se aplica tanto a Microsoft 365 Enterprise como a Office 365 Enterprise.*
+*Este artículo afecta tanto a Office 365 Enterprise como a Microsoft 365 Enterprise*
 
 En Microsoft 365, las licencias de planes de licencia (también denominadas SKU o planes de Microsoft 365) proporcionan a los usuarios acceso a los servicios de Microsoft 365 definidos para esos planes. Sin embargo, un usuario podría no tener acceso a todos los servicios disponibles en una licencia que está actualmente asignada a ellos. Puede usar PowerShell para Microsoft 365 para ver el estado de los servicios en las cuentas de usuario.
 
@@ -36,7 +36,7 @@ Para obtener más información sobre los planes de licencias, las licencias y lo
 
 ## <a name="use-the-microsoft-graph-powershell-sdk"></a>Uso del SDK de PowerShell de Microsoft Graph
 
-En primer lugar, [conéctese al inquilino de Microsoft 365](/graph/powershell/get-started#authentication).
+En primer lugar, [conéctese a su inquilino de Microsoft 365](/graph/powershell/get-started#authentication).
 
 La lectura de propiedades de usuario, incluidos los detalles de la licencia, requiere el ámbito de permiso User.Read.All o uno de los demás permisos enumerados en la [página de referencia "Obtener un usuario" Graph API](/graph/api/user-get).
 
@@ -108,7 +108,7 @@ $allLicenses | ForEach-Object {
 
 ## <a name="use-the-azure-active-directory-powershell-for-graph-module"></a>Use el módulo de PowerShell Azure Active Directory para Graph
 
-En primer lugar, [conéctese al inquilino de Microsoft 365](connect-to-microsoft-365-powershell.md#connect-with-the-azure-active-directory-powershell-for-graph-module).
+En primer lugar, [conéctese a su inquilino de Microsoft 365](connect-to-microsoft-365-powershell.md#connect-with-the-azure-active-directory-powershell-for-graph-module).
   
 A continuación, enumere los planes de licencia del inquilino con este comando.
 
@@ -141,7 +141,7 @@ $userList | ForEach { $sku=$_.SkuId ; $licensePlanList | ForEach { If ( $sku -eq
 
 ## <a name="use-the-microsoft-azure-active-directory-module-for-windows-powershell"></a>Use el Módulo Microsoft Azure Active Directory para Windows PowerShell
 
-En primer lugar, [conéctese al inquilino de Microsoft 365](connect-to-microsoft-365-powershell.md#connect-with-the-microsoft-azure-active-directory-module-for-windows-powershell).
+En primer lugar, [conéctese a su inquilino de Microsoft 365](connect-to-microsoft-365-powershell.md#connect-with-the-microsoft-azure-active-directory-module-for-windows-powershell).
 
 A continuación, ejecute este comando para enumerar los planes de licencia que están disponibles en su organización. 
 

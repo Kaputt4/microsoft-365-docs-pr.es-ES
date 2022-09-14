@@ -6,7 +6,7 @@ manager: scotv
 ms.date: 07/17/2020
 audience: Admin
 ms.topic: landing-page
-ms.service: o365-administration
+ms.service: microsoft-365-enterprise
 ms.localizationpriority: medium
 search.appverid:
 - MET150
@@ -16,18 +16,18 @@ f1.keywords:
 ms.custom: seo-marvel-apr2020
 ms.assetid: 795158e1-7dfc-4d9e-b805-373dd576c4e7
 description: Obtenga información sobre cómo migrar el correo electrónico del sistema existente a Microsoft 365 mediante PowerShell.
-ms.openlocfilehash: 26c8b6038db090559a1c3cc908689918a8c2be11
-ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
+ms.openlocfilehash: d4eebdcc80e058244d11ed8c375aefb5461d5ec1
+ms.sourcegitcommit: 437461fa1d38ff9bb95dd8a1c5f0b94e8111ada2
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "65098194"
+ms.lasthandoff: 09/14/2022
+ms.locfileid: "67672741"
 ---
 # <a name="how-to-use-powershell-to-migrate-email-to-microsoft-365"></a>Cómo usar PowerShell para migrar correo electrónico a Microsoft 365
 
-*Este artículo se aplica tanto a Microsoft 365 Enterprise como a Office 365 Enterprise.*
+*Este artículo afecta tanto a Office 365 Enterprise como a Microsoft 365 Enterprise*
 
-Los administradores suelen migrar el correo electrónico de los sistemas existentes cuando configuran por primera vez Microsoft 365. En los artículos siguientes se describe cómo migrar el correo electrónico mediante Windows PowerShell:
+Los administradores suelen migrar el correo electrónico de los sistemas existentes cuando configuran Por primera vez Microsoft 365. En los artículos siguientes se describe cómo migrar el correo electrónico mediante Windows PowerShell:
   
 - [Usar PowerShell para realizar una migración total a Microsoft 365](use-powershell-to-perform-a-cutover-migration-to-microsoft-365.md)
     
@@ -45,6 +45,6 @@ Los administradores suelen migrar el correo electrónico de los sistemas existen
   
 [Usar Windows PowerShell para crear informes en Microsoft 365](use-windows-powershell-to-create-reports-in-microsoft-365.md)
 
-[Por qué debe usar Microsoft 365 PowerShell](why-you-need-to-use-microsoft-365-powershell.md)
+[Por qué debe usar PowerShell de Microsoft 365](why-you-need-to-use-microsoft-365-powershell.md)
   
 [Administrar cuentas de usuario, licencias y grupos de Microsoft 365 con PowerShell](manage-user-accounts-and-licenses-with-microsoft-365-powershell.md)

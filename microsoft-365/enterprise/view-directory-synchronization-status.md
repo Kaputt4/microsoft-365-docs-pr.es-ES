@@ -5,7 +5,7 @@ author: kelleyvice-msft
 manager: scotv
 audience: Admin
 ms.topic: article
-ms.service: o365-administration
+ms.service: microsoft-365-enterprise
 ms.localizationpriority: medium
 f1.keywords:
 - CSH
@@ -21,12 +21,12 @@ search.appverid:
 - MED150
 ms.assetid: 18be3b98-34ae-47be-9337-ab6c3fb372ac
 description: En este artículo, aprenderá a comprobar el estado de la sincronización de directorios en Office 365.
-ms.openlocfilehash: 28376a63ab035490bdfeafb294eed9d993db54d9
-ms.sourcegitcommit: 6c2ab5e8efe74d0dc2df610e2d9d2fdda8aaf074
+ms.openlocfilehash: 050c4f4abfb8e4d925af3d65117d6c9ae8cb26e7
+ms.sourcegitcommit: 437461fa1d38ff9bb95dd8a1c5f0b94e8111ada2
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/25/2022
-ms.locfileid: "65669658"
+ms.lasthandoff: 09/14/2022
+ms.locfileid: "67670485"
 ---
 # <a name="view-directory-synchronization-status-in-microsoft-365"></a>Visualización del estado de sincronización de directorios en Microsoft 365
 
@@ -45,13 +45,13 @@ Si hay un problema con la sincronización de directorios, los errores también s
   
 |Elemento|Para qué sirve|
 |:-----|:-----|
-|**Dominios comprobados** | Número de dominios del inquilino de Microsoft 365 que ha comprobado que posee. |
+|**Dominios comprobados** | Número de dominios en el inquilino de Microsoft 365 que ha comprobado que posee. |
 |**Dominios no comprobados** | Dominios que ha agregado, pero no comprobados. |
 |**Sincronización de directorios habilitada** |Verdadero o Falso Especifica si ha habilitado la sincronización de directorios. |
 |**Sincronización del directorio más reciente** | Última vez que se ejecutó la sincronización de directorios. Mostrará una advertencia y un vínculo a una herramienta de solución de problemas si la última sincronización fue hace más de tres días. |
-|**Sincronización de contraseña habilitada** | Verdadero o Falso Especifica si tiene sincronización de hash de contraseña entre nuestro inquilino local y el inquilino de Microsoft 365. |
+|**Sincronización de contraseña habilitada** | Verdadero o Falso Especifica si tiene sincronización de hash de contraseña entre el entorno local y el inquilino de Microsoft 365. |
 |**Última sincronización de contraseñas** | Última vez que se ejecutó la sincronización de hash de contraseña. Mostrará una advertencia y un vínculo a una herramienta de solución de problemas si la última sincronización fue hace más de tres días. |
-|**Versión del cliente de sincronización de directorios** | Contiene un vínculo de descarga si se ha publicado una nueva versión de Azure AD Conectar. |
+|**Versión del cliente de sincronización de directorios** | Contiene un vínculo de descarga si se ha publicado una nueva versión de Azure AD Connect. |
 |**Cuenta de servicio de sincronización de directorios** | Muestra el nombre de la cuenta de servicio de sincronización de directorios de Microsoft 365. |
 |||
 

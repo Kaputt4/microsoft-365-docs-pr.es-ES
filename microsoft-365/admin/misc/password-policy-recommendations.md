@@ -24,18 +24,18 @@ search.appverid:
 - MOE150
 ms.assetid: 9fa2539a-2211-41fd-85a0-bc37b9619ca4
 description: Haga que su organización sea más segura contra ataques a contraseñas y prohíba las contraseñas comunes y habilite la autenticación multifactor basada en riesgos.
-ms.openlocfilehash: 83b122df96302d9a06bb950528d1063cb8c38c8d
-ms.sourcegitcommit: 37e137535c4f70702afe1a5eeaa899c75ee02cfd
+ms.openlocfilehash: ab997d544a2789a4e2c6e28caa6a601a51a32bc7
+ms.sourcegitcommit: 437461fa1d38ff9bb95dd8a1c5f0b94e8111ada2
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/13/2022
-ms.locfileid: "67661769"
+ms.lasthandoff: 09/14/2022
+ms.locfileid: "67670761"
 ---
 # <a name="password-policy-recommendations-for-microsoft-365-passwords"></a>Recomendaciones de directiva de contraseñas para contraseñas de Microsoft 365
 
 Como administrador de una organización, usted es el responsable de establecer la directiva de contraseñas para los usuarios de su organización. El establecimiento de la directiva de contraseñas puede resultar complicado y confuso, y en este artículo se proporcionan recomendaciones para que la organización sea más segura frente a ataques de contraseñas.
 
-Las cuentas basadas solo en la nube de Microsoft tienen una directiva de contraseña predefinida que no se puede cambiar. Los únicos elementos que puede cambiar son el número de días hasta que expire una contraseña y si las contraseñas expiran o no. 
+Las cuentas basadas solo en la nube de Microsoft tienen una directiva de contraseña predefinida que no se puede cambiar. Los únicos elementos que puede cambiar son el número de días hasta que expire una contraseña y si las contraseñas expiran o no.
   
 Para determinar con qué frecuencia expiran las contraseñas de Microsoft 365 en la organización, vea [Establecer la directiva de expiración de contraseñas para Microsoft 365](../manage/set-password-expiration-policy.md).
 
@@ -62,7 +62,6 @@ Los procedimientos recomendados para las contraseñas se dividen en algunas ampl
 ## <a name="password-guidelines-for-administrators"></a>Instrucciones de contraseña para administradores
 
 El principal objetivo de un sistema de contraseña más seguro es la diversidad de las contraseñas. Desea que la Directiva de contraseñas contenga una gran cantidad de contraseñas distintas y difíciles de adivinar. Estas son algunas recomendaciones para mantener su organización lo más segura posible.
-  
 
 - Mantenga un requisito de longitud mínima de ocho caracteres
 
@@ -96,9 +95,11 @@ Esta es una guía sobre contraseñas para los usuarios de su organización. Aseg
 
 Los requisitos de expiración de contraseñas no ayudan, ya que estos requisitos hacen que los usuarios seleccionen contraseñas predecibles, compuestas de palabras secuenciales y números estrechamente relacionados entre sí. En estos casos, la contraseña siguiente puede predecirse en función de la contraseña anterior. Los requisitos de expiración de contraseñas no ofrecen ventajas de contención, ya que los ciberdelincuentes casi siempre usan las credenciales en cuanto las obtienen. Consulte [Momento para reconsiderar los cambios en la contraseña obligatoria](https://go.microsoft.com/fwlink/p/?linkid=861018) para más información.
   
-### <a name="requiring-long-passwords"></a>Requerir contraseñas largas
+### <a name="minimum-password-length-requirements"></a>Requisitos mínimos de longitud de contraseña
 
-Los requisitos de longitud de contraseña (con un tamaño superior a 10 caracteres) pueden dar lugar a un comportamiento de usuario predecible e indeseable. Por ejemplo, es posible que los usuarios que tengan que disponer de una contraseña de 16 caracteres elijan patrones de repetición como **fourfourfourfour** o **passwordpassword** que cumplan con los requisitos de longitud de caracteres y no sean difíciles de adivinar. Además, los requisitos de longitud aumentan las posibilidades de que los usuarios adopten otras prácticas que no sean seguras, como escribir a mano la contraseñas, volver a usarlas o almacenarlas sin cifrar en sus documentos. Para animar a los usuarios a considerar una contraseña única, le recomendamos que mantenga un requisito de longitud mínima de 8 caracteres.
+<!--Password length requirements (greater than about 10 characters) can result in user behavior that is predictable and undesirable. For example, users who are required to have a 16-character password may choose repeating patterns like **fourfourfourfour** or **passwordpassword** that meet the character length requirement but aren't hard to guess. Additionally, length requirements increase the chances that users will adopt other insecure practices, such as writing down their passwords, reusing them, or storing them unencrypted in their documents.-->
+
+Para animar a los usuarios a pensar en una contraseña única, se recomienda mantener un requisito de longitud mínima razonable de 14 caracteres.
   
 ### <a name="requiring-the-use-of-multiple-character-sets"></a>Requerir el uso de varios juegos de caracteres
 

@@ -6,7 +6,7 @@ manager: scotv
 ms.date: 09/30/2020
 audience: Admin
 ms.topic: article
-ms.service: o365-administration
+ms.service: microsoft-365-enterprise
 ms.localizationpriority: medium
 ms.collection:
 - Strat_O365_IP
@@ -25,12 +25,12 @@ f1.keywords:
 ms.assetid: 6b4ded77-ac8d-42ed-8606-c014fd947560
 description: En este artículo se proporciona información sobre cómo proteger el acceso con privilegios al inquilino de Microsoft 365.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 6aebdd79f2870ca25ab866bccb66c1d1f680f701
-ms.sourcegitcommit: 61b22df76e0f81e5ef11c587b129287886151c79
+ms.openlocfilehash: 3639ca3ea132c900db38d5dd16278ce756a2cc24
+ms.sourcegitcommit: 437461fa1d38ff9bb95dd8a1c5f0b94e8111ada2
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/12/2022
-ms.locfileid: "66749339"
+ms.lasthandoff: 09/14/2022
+ms.locfileid: "67671179"
 ---
 # <a name="step-2-protect-your-microsoft-365-privileged-accounts"></a>Paso 2. Protección de las cuentas con privilegios de Microsoft 365
 
@@ -120,7 +120,7 @@ El uso de PIM y este proceso reduce significativamente la cantidad de tiempo que
 
 PIM está disponible con Azure Active Directory Premium P2, que se incluye con Microsoft 365 E5. Como alternativa, puede comprar licencias individuales de Azure Active Directory Premium P2 para las cuentas de administrador.
   
-Para más información, vea:
+Para obtener más información, consulte:
 
 - [Privileged Identity Management de Azure AD](/azure/active-directory/active-directory-privileged-identity-management-configure).
 - [Proteger el acceso con privilegios para implementaciones híbridas y en la nube en Azure AD](/azure/active-directory/roles/security-planning)

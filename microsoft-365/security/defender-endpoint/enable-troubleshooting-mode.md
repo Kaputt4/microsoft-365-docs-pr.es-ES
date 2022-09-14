@@ -17,12 +17,12 @@ ms.collection:
 - m365-security-compliance
 ms.topic: article
 ms.subservice: mde
-ms.openlocfilehash: efe3ea8feb30e1177ff2c156fd6ccb284708a5b4
-ms.sourcegitcommit: 228fa13973bf7c2d91504703fab757f552ae40dd
+ms.openlocfilehash: 2ffe38f5c2bbd248968df709644972d2468b4826
+ms.sourcegitcommit: 437461fa1d38ff9bb95dd8a1c5f0b94e8111ada2
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/01/2022
-ms.locfileid: "67523322"
+ms.lasthandoff: 09/14/2022
+ms.locfileid: "67672345"
 ---
 # <a name="get-started-with-troubleshooting-mode-in-microsoft-defender-for-endpoint"></a>Introducción al modo de solución de problemas en Microsoft Defender para punto de conexión 
 
@@ -85,6 +85,14 @@ Microsoft Defender para punto de conexión modo de solución de problemas le per
   Windows Server 2022|>=20348.617|[KB5011558: Catálogo de Microsoft Update](https://www.catalog.update.microsoft.com/Search.aspx?q=KB5011558)
   Windows Server 2019 (RS5)|>=17763.2746|[KB5011551: Catálogo de Microsoft Update](https://www.catalog.update.microsoft.com/Search.aspx?q=KB5011551)
 
+- El modo de solución de problemas también está disponible para las máquinas que ejecutan la solución moderna y unificada para Windows Server 2012 R2 y Windows Server 2016. Durante el modo de solución de problemas, use `Set-MPPreference -DisableTamperProtection $true` para deshabilitar temporalmente la protección contra alteraciones en el dispositivo y realizar los cambios de configuración necesarios. Antes de usar el modo de solución de problemas, asegúrese de que todos los componentes siguientes están actualizados:
+
+  - Sense versión 10.8049.22439.1084 o posterior ([KB5005292: Catálogo de Microsoft Update](https://www.catalog.update.microsoft.com/Search.aspx?q=KB5005292))
+
+  - Antivirus de Defender: Plataforma: 4.18.2207.7 o posterior ([KB4052623: Catálogo de Microsoft Update](https://www.catalog.update.microsoft.com/Search.aspx?q=KB4052623))
+
+  - Antivirus de Defender: motor: 1.1.19500.2 o posterior ([KB2267602: Catálogo de Microsoft Update](https://www.microsoft.com/en-us/wdsi/defenderupdates))
+
 - Para aplicar el modo de solución de problemas, Microsoft Defender para punto de conexión deben estar inscritos en el inquilino y estar activos en el dispositivo.
 
 - El dispositivo debe ejecutar activamente antivirus de Microsoft Defender, versión 4.18.2203 o posterior.
@@ -110,7 +118,9 @@ Microsoft Defender para punto de conexión modo de solución de problemas le per
 Estas son algunas consultas de búsqueda avanzadas pregeneradas para proporcionarle visibilidad sobre los eventos de solución de problemas que se producen en su entorno. También puede usar estas consultas para [crear reglas de detección](/defender/custom-detection-rules.md#create-a-custom-detection-rule) que le avisan cuando los dispositivos están en modo de solución de problemas.
 
 ### <a name="get-troubleshooting-events-for-a-particular-device"></a>Obtención de eventos de solución de problemas para un dispositivo determinado
-Busque por deviceId o deviceName comentando las líneas correspondientes.  
+
+Busque por deviceId o deviceName comentando las líneas correspondientes. 
+ 
 ```kusto
 //let deviceName = "<deviceName>";   // update with device name
 let deviceId = "<deviceID>";   // update with device id

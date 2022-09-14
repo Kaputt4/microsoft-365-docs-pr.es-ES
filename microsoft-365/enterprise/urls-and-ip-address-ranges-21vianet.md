@@ -6,7 +6,7 @@ manager: scotv
 ms.date: 07/28/2022
 audience: ITPro
 ms.topic: conceptual
-ms.service: o365-administration
+ms.service: microsoft-365-enterprise
 ms.localizationpriority: medium
 ms.collection:
 - M365-subscription-management
@@ -21,12 +21,12 @@ f1.keywords:
 - NOCSH
 description: En este artículo se enumeran las direcciones URL y los intervalos de direcciones IP para Office 365 cuando lo opera 21Vianet en China.
 hideEdit: true
-ms.openlocfilehash: 11c1740ef976f616306c01e476d94883b2e836db
-ms.sourcegitcommit: 8aa110806572e9b19682c8f97ee4bf3953e1fd3f
+ms.openlocfilehash: a91cd61a665846790660bbb2eb62db6ef59d4af8
+ms.sourcegitcommit: 437461fa1d38ff9bb95dd8a1c5f0b94e8111ada2
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/09/2022
-ms.locfileid: "67294443"
+ms.lasthandoff: 09/14/2022
+ms.locfileid: "67670099"
 ---
 # <a name="urls-and-ip-address-ranges-for-office-365-operated-by-21vianet"></a>Direcciones URL e intervalos de direcciones IP para Office 365 operado por 21Vianet
 
@@ -36,7 +36,7 @@ ms.locfileid: "67294443"
   
  **puntos de conexión de Office 365:** [en todo el mundo (incluido GCC)](urls-and-ip-address-ranges.md)  |  *Office 365 opera 21 Vianet* |  [Office 365 U.S. Government DoD](microsoft-365-u-s-government-dod-endpoints.md) |  [Office 365 U.S. Government GCC High](microsoft-365-u-s-government-gcc-high-endpoints.md) |
   
-**Última actualización:** 28/07/2022 - ![RSS.](../media/5dc6bb29-25db-4f44-9580-77c735492c4b.png) [Suscripción del registro de cambios](https://endpoints.office.com/version/China?allversions=true&format=rss&clientrequestid=b10c5ed1-bad1-445f-b386-b919946339a7)
+**Última actualización:** 28/07/2022: ![RSS.](../media/5dc6bb29-25db-4f44-9580-77c735492c4b.png) [Suscripción del registro de cambios](https://endpoints.office.com/version/China?allversions=true&format=rss&clientrequestid=b10c5ed1-bad1-445f-b386-b919946339a7)
 
 **Descargue:** todos los destinos obligatorios y opcionales en una lista de [formato JSON](https://endpoints.office.com/endpoints/China?clientrequestid=b10c5ed1-bad1-445f-b386-b919946339a7).
 

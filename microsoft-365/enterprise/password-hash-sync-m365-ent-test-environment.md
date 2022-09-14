@@ -8,7 +8,7 @@ manager: scotv
 ms.date: 05/26/2020
 audience: ITPro
 ms.topic: article
-ms.service: o365-solutions
+ms.service: microsoft-365-enterprise
 ms.localizationpriority: medium
 ms.collection:
 - M365-identity-device-management
@@ -19,12 +19,12 @@ ms.custom:
 - seo-marvel-apr2020
 ms.assetid: ''
 description: 'Resumen: configure y muestre la sincronización de hash de contraseñas e inicie sesión en su entorno de prueba de Microsoft 365.'
-ms.openlocfilehash: 91d4de08382149b5089f0c06295e77965ea022cf
-ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
+ms.openlocfilehash: 35dcaa6cf4612283a7e1890345c5b5d99ba798e0
+ms.sourcegitcommit: 437461fa1d38ff9bb95dd8a1c5f0b94e8111ada2
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "65093819"
+ms.lasthandoff: 09/14/2022
+ms.locfileid: "67669989"
 ---
 # <a name="password-hash-synchronization-for-your-microsoft-365-test-environment"></a>Sincronización de hash de contraseñas para el entorno de prueba de Microsoft 365
 
@@ -42,7 +42,7 @@ La configuración de este entorno de prueba implica tres fases:
 - [Fase 3: instalar Azure AD Connect en APP1](#phase-3-install-azure-ad-connect-on-app1)
     
 > [!TIP]
-> Para obtener un mapa visual de todos los artículos de la pila Microsoft 365 para la pila guía del laboratorio de pruebas empresarial, vaya a [Microsoft 365 para la pila de la guía del laboratorio de pruebas empresarial](../downloads/Microsoft365EnterpriseTLGStack.pdf).
+> Para obtener un mapa visual de todos los artículos de la pila guía del laboratorio de pruebas de Microsoft 365 para empresas, vaya a [Microsoft 365 para enterprise Test Lab Guide Stack (Pila de guía del laboratorio de pruebas empresariales).](../downloads/Microsoft365EnterpriseTLGStack.pdf)
   
 ## <a name="phase-1-create-the-microsoft-365-simulated-enterprise-test-environment"></a>Fase 1: crear el entorno de pruebas empresarial simulado de Microsoft 365.
 
@@ -80,9 +80,9 @@ Observe cómo testlab.<*el nombre de dominio público*> es ahora:
      
 ## <a name="phase-3-install-azure-ad-connect-on-app1"></a>Fase 3: instalar Azure AD Connect en APP1
 
-En esta fase, instale y configure la herramienta de Azure AD Conectar en APP1 y, a continuación, compruebe que funciona.
+En esta fase, instale y configure la herramienta Azure AD Connect en APP1 y compruebe que funciona.
   
-En primer lugar, instale y configure Azure AD Conectar en APP1.
+En primer lugar, instale y configure Azure AD Connect en APP1.
 
 1. Desde el [Azure Portal](https://portal.azure.com), inicie sesión con su cuenta de administrador global y conéctese a APP1 con la cuenta TESTLAB\\Usuario1.
     
@@ -98,13 +98,13 @@ En primer lugar, instale y configure Azure AD Conectar en APP1.
     
 4. En la página Microsoft Azure Active Directory Conectar, seleccione **Descargar** y, a continuación, seleccione **Ejecutar**.
     
-5. En la página **Bienvenido a Azure AD Conectar**, seleccione **Acepto** y, a continuación, seleccione **Continuar**.
+5. En la página **Bienvenido a Azure AD Connect** , seleccione **Acepto** y, a continuación, seleccione **Continuar**.
     
-6. En la página **Express Configuración**, seleccione **Usar configuración rápida**.
+6. En la página **Configuración rápida** , seleccione **Usar configuración rápida**.
     
-7. En la **página Conectar para Azure AD**, escriba el nombre de la cuenta de administrador global en **Nombre de usuario,** escriba su contraseña en **Contraseña** y, a continuación, seleccione **Siguiente**.
+7. En la página **Conectarse a Azure AD** , escriba el nombre de la cuenta de administrador global en **Nombre de usuario,** escriba su contraseña en **Contraseña** y, a continuación, seleccione **Siguiente**.
     
-8. En la página **Conectar a AD DS**, escriba **TESTLABUser1\\** en **Nombre de usuario,** escriba su contraseña en **Contraseña** y, a continuación, seleccione **Siguiente**.
+8. En la página **Conectarse a AD DS** , escriba **TESTLAB\\User1** en **Nombre de usuario,** escriba su contraseña en **Contraseña** y, a continuación, seleccione **Siguiente**.
     
 9. En la página **Listo para configurar** , seleccione **Instalar**.
     
@@ -137,7 +137,7 @@ La configuración resultante tiene este aspecto:
 Esta configuración se compone de: 
   
 - Microsoft 365 E5 o Office 365 E5 suscripciones de prueba o de pago con el dominio DNS TESTLAB.<*el nombre de dominio*> registrado.
-- Intranet de una organización simplificada conectada a Internet, que consta de las máquinas virtuales DC1, APP1 y CLIENT1 en una subred de una red virtual de Azure. Azure AD Conectar se ejecuta en APP1 para sincronizar periódicamente el dominio de AD DS de TESTLAB con el inquilino Azure AD de la suscripción de Microsoft 365.
+- Intranet de una organización simplificada conectada a Internet, que consta de las máquinas virtuales DC1, APP1 y CLIENT1 en una subred de una red virtual de Azure. Azure AD Connect se ejecuta en APP1 para sincronizar periódicamente el dominio de TESTLAB AD DS con el inquilino de Azure AD de la suscripción de Microsoft 365.
 - La cuenta User1 en el dominio AD DS de TESTLAB se ha sincronizado con la cuenta empresarial de Azure AD.
 
 ## <a name="next-step"></a>Paso siguiente

@@ -6,7 +6,7 @@ author: MikePlumleyMSFT
 manager: pamgreen
 audience: ITPro
 ms.topic: article
-ms.service: o365-solutions
+ms.service: microsoft-365-enterprise
 f1.keywords:
 - NOCSH
 ms.custom: seo-marvel-apr2020
@@ -15,16 +15,16 @@ ms.collection:
 - SPO_Content
 ms.localizationpriority: medium
 description: Obtenga información acerca de Microsoft 365 Multi-Geo, cómo funcionan las capacidades multigeográficas y qué ubicaciones geográficas están disponibles para el almacenamiento de datos.
-ms.openlocfilehash: bda48f14b14840eed03d456ef66e7d86df890619
-ms.sourcegitcommit: 195e4734d9a6e8e72bd355ee9f8bca1f18577615
+ms.openlocfilehash: 6237408442a33a3a54ba5267986a9e33219c4239
+ms.sourcegitcommit: 437461fa1d38ff9bb95dd8a1c5f0b94e8111ada2
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/13/2022
-ms.locfileid: "64822802"
+ms.lasthandoff: 09/14/2022
+ms.locfileid: "67670375"
 ---
 # <a name="plan-for-microsoft-365-multi-geo"></a>Plan para Microsoft 365 Multi-Geo
 
-Esta guía está diseñada para administradores de empresas multinacionales (MNC) que están preparando su inquilino de Microsoft 365 para expandirse a zonas geográficas adicionales de acuerdo con la presencia de la empresa para satisfacer los requisitos de residencia de datos.
+Esta guía está diseñada para administradores de empresas multinacionales (MNC) que están preparando su inquilino de Microsoft 365 para expandirse a zonas geográficas adicionales de acuerdo con la presencia de la empresa para cumplir los requisitos de residencia de datos.
 
 En una configuración multigeográfica, la cuenta empresarial de Microsoft 365 está compuesta por una ubicación central y una o más ubicaciones por satélite. Se trata de una única cuenta empresarial que abarca varias ubicaciones geográficas. La información de la cuenta empresarial, incluidas las ubicaciones geográficas, se almacenan en Azure Active Directory (Azure AD).
 
@@ -61,9 +61,9 @@ Al configurar capacidades multigeográficas, podrá consolidar su infraestructur
 
 ## <a name="best-practices"></a>Procedimientos recomendados
 
-Se recomienda crear un usuario de prueba de Microsoft 365 para realizar algunas pruebas iniciales. Le guiaremos por algunos pasos de prueba y verificación con este usuario antes de continuar con la incorporación de los usuarios de producción a Microsoft 365 multigeográfica.
+Se recomienda crear un usuario de prueba de Microsoft 365 para realizar algunas pruebas iniciales. Le guiaremos por algunos pasos de prueba y verificación con este usuario antes de continuar con la incorporación de usuarios de producción a Microsoft 365 Multi-Geo.
 
-Una vez que haya completado las pruebas con el usuario de prueba, seleccione un grupo piloto (quizás del departamento de TI) para ser el primero en usar OneDrive y Exchange en una nueva ubicación geográfica. Para este primer grupo, seleccione usuarios que aún no tengan OneDrive. Le recomendamos que este grupo inicial no tenga más de cinco personas y que lo extienda gradualmente siguiendo un enfoque de lanzamiento por lotes.
+Una vez que haya completado las pruebas con el usuario de prueba, seleccione un grupo piloto (quizás desde el departamento de TI) para ser el primero en usar OneDrive y Exchange en una nueva ubicación geográfica. Para este primer grupo, seleccione usuarios que aún no tengan OneDrive. Le recomendamos que este grupo inicial no tenga más de cinco personas y que lo extienda gradualmente siguiendo un enfoque de lanzamiento por lotes.
 
 Cada usuario debe disponer de una *ubicación de datos preferida* (PDL) para que Microsoft 365 pueda determinar en qué ubicación geográfica necesita aprovisionar la cuenta de OneDrive. La ubicación de datos preferida del usuario tiene que coincidir con una de las ubicaciones satélite o con la ubicación central. Aunque el campo de PDL no es obligatorio, le recomendamos que establezca una PDL para todos los usuarios. Las cargas de trabajo de un usuario sin una PDL se aprovisionarán en la ubicación central.
 

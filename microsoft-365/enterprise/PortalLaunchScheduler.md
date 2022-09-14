@@ -5,7 +5,7 @@ author: jhendr
 manager: pamgreen
 audience: Admin
 ms.topic: conceptual
-ms.service: o365-administration
+ms.service: microsoft-365-enterprise
 ms.localizationpriority: medium
 ms.collection:
 - Ent_O365
@@ -17,12 +17,12 @@ search.appverid:
 - SPO160
 - MET150
 description: En este artículo se describe cómo puede iniciar el portal mediante el programador de inicio del portal.
-ms.openlocfilehash: b76a61bb06c3f2bab7f92ad97cde0630011e487c
-ms.sourcegitcommit: 34910ea9318289d78c35b0e7990238467c05384b
+ms.openlocfilehash: 9d04cd984ee194e10d8372e8ed1246ba2b389aea
+ms.sourcegitcommit: 437461fa1d38ff9bb95dd8a1c5f0b94e8111ada2
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/10/2022
-ms.locfileid: "67306534"
+ms.lasthandoff: 09/14/2022
+ms.locfileid: "67669893"
 ---
 # <a name="launch-your-portal-using-the-sharepoint-portal-launch-scheduler"></a>Iniciar el portal mediante el programador de inicio del portal de SharePoint
 

@@ -8,7 +8,7 @@ manager: scotv
 ms.date: 11/14/2019
 audience: ITPro
 ms.topic: article
-ms.service: o365-solutions
+ms.service: microsoft-365-enterprise
 ms.localizationpriority: medium
 search.appverid:
 - MET150
@@ -17,12 +17,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: seo-marvel-apr2020
 description: 'Resumen: cree una red virtual entre locales simulada en Microsoft Azure como entorno de prueba de Microsoft 365.'
-ms.openlocfilehash: a3bc5c130ad03d1896abcf98ba9fc26d9ff2f422
-ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
+ms.openlocfilehash: c4920976d8e817c260f95ba76aa15136b7c8266d
+ms.sourcegitcommit: 437461fa1d38ff9bb95dd8a1c5f0b94e8111ada2
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "65099177"
+ms.lasthandoff: 09/14/2022
+ms.locfileid: "67670253"
 ---
 # <a name="simulated-cross-premises-virtual-network-in-a-microsoft-365-test-environment"></a>Red virtual entre locales simulada en un entorno de prueba de Microsoft 365
 
@@ -59,12 +59,12 @@ Existen tres fases principales para configurar el entorno de pruebas:
 > [!NOTE]
 > Esta configuración necesita una suscripción de pago de Azure. 
 
-Puede usar el entorno resultante para probar las características y la funcionalidad de [Microsoft 365 para empresas](https://www.microsoft.com/microsoft-365/enterprise) con guías de laboratorio de [pruebas](m365-enterprise-test-lab-guides.md) adicionales o por su cuenta.
+Puede usar el entorno resultante para probar las características y la funcionalidad de [Microsoft 365 para empresas](https://www.microsoft.com/microsoft-365/enterprise) con guías de [laboratorio de pruebas](m365-enterprise-test-lab-guides.md) adicionales o por su cuenta.
 
 ![Guías de laboratorio de prueba para la nube de Microsoft.](../media/m365-enterprise-test-lab-guides/cloud-tlg-icon.png)
 
 > [!TIP]
-> Vaya a [Microsoft 365 para la pila de guías de laboratorio de pruebas empresariales](../downloads/Microsoft365EnterpriseTLGStack.pdf) para obtener un mapa visual de todos los artículos de la pila de Microsoft 365 para enterprise Test Lab Guide.
+> Vaya a [La pila de la guía del laboratorio de pruebas de Microsoft 365 para empresas](../downloads/Microsoft365EnterpriseTLGStack.pdf) para obtener un mapa visual de todos los artículos de la pila guía del laboratorio de pruebas de Microsoft 365 para empresas.
 
 ## <a name="phase-1-configure-the-testlab-virtual-network"></a>Fase 1: configurar la red virtual TestLab
 

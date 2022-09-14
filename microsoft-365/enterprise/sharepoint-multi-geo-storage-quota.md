@@ -6,7 +6,7 @@ author: MikePlumleyMSFT
 manager: pamgreen
 audience: ITPro
 ms.topic: article
-ms.service: o365-solutions
+ms.service: microsoft-365-enterprise
 f1.keywords:
 - NOCSH
 ms.custom: seo-marvel-apr2020
@@ -14,13 +14,13 @@ ms.collection:
 - Strat_SP_gtc
 - SPO_Content
 ms.localizationpriority: medium
-description: Obtenga información sobre SharePoint de almacenamiento en entornos multige geográficos y cómo el administrador de SharePoint Online puede administrar las cuotas.
-ms.openlocfilehash: d1e47c206f1353093ba8bebf9db03ab7142d6da9
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+description: Obtenga información sobre las cuotas de almacenamiento de SharePoint en entornos multigeográficos y cómo el administrador de SharePoint Online puede administrar las cuotas.
+ms.openlocfilehash: 78f57a13cc04e5f98189624a0c02f8f1b85cdea1
+ms.sourcegitcommit: 437461fa1d38ff9bb95dd8a1c5f0b94e8111ada2
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60178736"
+ms.lasthandoff: 09/14/2022
+ms.locfileid: "67670231"
 ---
 # <a name="sharepoint-storage-quotas-in-multi-geo-environments"></a>Cuotas de almacenamiento de SharePoint en entornos multigeográficos
 

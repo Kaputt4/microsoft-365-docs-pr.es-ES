@@ -6,7 +6,7 @@ manager: scotv
 ms.date: 6/29/2018
 audience: Admin
 ms.topic: landing-page
-ms.service: o365-administration
+ms.service: microsoft-365-enterprise
 ms.localizationpriority: medium
 f1.keywords:
 - CSH
@@ -22,18 +22,18 @@ search.appverid:
 - BCS160
 ms.assetid: 4307bdbf-6097-458d-9a6a-048112695c59
 description: Como administrador, busque ayuda para configurar partes de Skype Empresarial Online, incluida la red, las reuniones y la mensajería instantánea, y el acceso externo para los usuarios.
-ms.openlocfilehash: d9c290cbf756cb0ec7a8a6f042409498d7a379b4
-ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
+ms.openlocfilehash: 05fbf45bd54f0a8a1c1d19fdaf376885a1e306d9
+ms.sourcegitcommit: 437461fa1d38ff9bb95dd8a1c5f0b94e8111ada2
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "65092081"
+ms.lasthandoff: 09/14/2022
+ms.locfileid: "67669745"
 ---
 # <a name="skype-for-business-online-in-office-365---admin-help"></a>Skype Empresarial Online en Office 365 ayuda de administración
 
 ## <a name="were-here-to-help"></a>¡Estamos aquí para ayudarle!
 
-Como administrador de Office 365 para empresas, tiene acceso gratuito a nuestros agentes expertos en soporte técnico. Si no encuentra la información que necesita en este sitio web, **[póngase en contacto con el soporte técnico para productos empresariales: Ayuda del administrador](https://support.office.com/article/32a17ca7-6fa0-4870-8a8d-e25ba4ccfd4b).**
+Como administrador de Office 365 para empresas, tiene acceso gratuito a nuestros agentes expertos en soporte técnico. Si no encuentra la información que necesita en este sitio web, **[póngase en contacto con el soporte técnico para productos empresariales Administración Ayuda.](https://support.office.com/article/32a17ca7-6fa0-4870-8a8d-e25ba4ccfd4b)**
   
 ## <a name="let-your-users-contact-external-skype-or-skype-for-business-users"></a>Permitir que los usuarios se pongan en contacto con usuarios externos de Skype o de Skype Empresarial
 

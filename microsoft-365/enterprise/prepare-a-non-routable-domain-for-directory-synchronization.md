@@ -5,7 +5,7 @@ author: kelleyvice-msft
 manager: scotv
 audience: Admin
 ms.topic: article
-ms.service: o365-administration
+ms.service: microsoft-365-enterprise
 ms.localizationpriority: medium
 f1.keywords:
 - CSH
@@ -21,29 +21,29 @@ search.appverid:
 - MED150
 - BCS160
 ms.assetid: e7968303-c234-46c4-b8b0-b5c93c6d57a7
-description: Obtenga información sobre qué hacer si tiene un dominio no enrutable asociado a las cuentas de usuario locales antes de sincronizarlas con el inquilino de Microsoft 365.
-ms.openlocfilehash: 9d720b42b345e85031a4fa34b9c1353f868765f1
-ms.sourcegitcommit: db1e48af88995193f15bbd5962f5101a6088074b
+description: Obtenga información sobre qué hacer si tiene un dominio no enrutable asociado a las cuentas de usuario locales antes de sincronizarlas con su inquilino de Microsoft 365.
+ms.openlocfilehash: 551cb50686742577f78649bddee824637e87fa5e
+ms.sourcegitcommit: 437461fa1d38ff9bb95dd8a1c5f0b94e8111ada2
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/23/2022
-ms.locfileid: "65637899"
+ms.lasthandoff: 09/14/2022
+ms.locfileid: "67672389"
 ---
 # <a name="prepare-a-non-routable-domain-for-directory-synchronization"></a>Preparar un dominio no enrutable para la sincronización de directorios
 
 Al sincronizar el directorio local con Microsoft 365, debe tener un dominio comprobado en Azure Active Directory (Azure AD). Solo se sincronizan los nombres de entidad de seguridad de usuario (UPN) asociados al dominio Active Directory local Domain Services (AD DS). Sin embargo, cualquier UPN que contenga un dominio no enrutable, como ".local" (por ejemplo, billa@contoso.local), se sincronizará con un dominio .onmicrosoft.com (por ejemplo, billa@contoso.onmicrosoft.com). 
 
-Si actualmente usa un dominio ".local" para las cuentas de usuario en AD DS, se recomienda cambiarlos para usar un dominio comprobado, como billa@contoso.com, para sincronizarse correctamente con el dominio de Microsoft 365.
+Si actualmente usa un dominio ".local" para sus cuentas de usuario en AD DS, se recomienda cambiarlos para usar un dominio comprobado, como billa@contoso.com, para sincronizarse correctamente con el dominio de Microsoft 365.
   
 ## <a name="what-if-i-only-have-a-local-on-premises-domain"></a>¿Qué ocurre si solo tengo un dominio local ".local"?
 
-Use azure AD Conectar para sincronizar AD DS con el inquilino de Azure AD del inquilino de Microsoft 365. Para obtener más información, consulte [Integración de las identidades locales con Azure AD](/azure/architecture/reference-architectures/identity/azure-ad).
+Use Azure AD Connect para sincronizar AD DS con el inquilino de Azure AD del inquilino de Microsoft 365. Para obtener más información, consulte [Integración de las identidades locales con Azure AD](/azure/architecture/reference-architectures/identity/azure-ad).
   
-Azure AD Conectar sincroniza el UPN y la contraseña de los usuarios para que los usuarios puedan iniciar sesión con las mismas credenciales que usan en el entorno local. Sin embargo, Azure AD Conectar solo sincroniza los usuarios con dominios comprobados por Microsoft 365. Esto significa que Azure AD también comprueba el dominio porque Azure AD administra Microsoft 365 identidades. En otras palabras, el dominio debe ser un dominio de Internet válido (por ejemplo, .com, .org, .net, .us). Si su AD DS interno solo usa un dominio no enrutable (por ejemplo, ".local"), esto no puede coincidir con el dominio comprobado que tiene para el inquilino de Microsoft 365. Para solucionar este problema, puede cambiar el dominio principal de AD DS local o agregar uno o varios sufijos UPN.
+Azure AD Connect sincroniza el UPN y la contraseña de los usuarios para que los usuarios puedan iniciar sesión con las mismas credenciales que usan en el entorno local. Sin embargo, Azure AD Connect solo sincroniza los usuarios con dominios comprobados por Microsoft 365. Esto significa que Azure AD también comprueba el dominio porque Azure AD administra las identidades de Microsoft 365. En otras palabras, el dominio debe ser un dominio de Internet válido (por ejemplo, .com, .org, .net, .us). Si su AD DS interno solo usa un dominio no enrutable (por ejemplo, ".local"), esto no puede coincidir con el dominio comprobado que tiene para el inquilino de Microsoft 365. Para solucionar este problema, puede cambiar el dominio principal de AD DS local o agregar uno o varios sufijos UPN.
   
 ### <a name="change-your-primary-domain"></a>Cambio del dominio principal
 
-Cambie el dominio principal a un dominio que ha comprobado en Microsoft 365, por ejemplo, contoso.com. Cada usuario que tiene el dominio contoso.local se actualiza a contoso.com. Sin embargo, se trata de un proceso implicado y se describe una solución más sencilla en la sección siguiente.
+Cambie el dominio principal a un dominio que haya comprobado en Microsoft 365, por ejemplo, contoso.com. Cada usuario que tiene el dominio contoso.local se actualiza a contoso.com. Sin embargo, se trata de un proceso implicado y se describe una solución más sencilla en la sección siguiente.
   
 ### <a name="add-upn-suffixes-and-update-your-users-to-them"></a>Agregar sufijos UPN y actualizar los usuarios a ellos
 
@@ -57,7 +57,7 @@ Después de actualizar los UPN para usar el dominio comprobado, está listo para
     
     **O bien, si no tiene Windows Server 2012**
     
-    Presione **Windows tecla + R** para abrir el cuadro de diálogo **Ejecutar** y, a continuación, escriba Domain.msc y, a continuación, elija **Aceptar**.
+    Presione **la tecla Windows + R** para abrir el cuadro de diálogo **Ejecutar** y, a continuación, escriba Domain.msc y, a continuación, elija **Aceptar**.
     
     ![Elija Dominios y confianzas de Active Directory.](../media/46b6e007-9741-44af-8517-6f682e0ac974.png)
   
@@ -77,7 +77,7 @@ Después de actualizar los UPN para usar el dominio comprobado, está listo para
     
     **O bien, si no tiene Windows Server 2012**
     
-    Presione **Windows tecla + R** para abrir el cuadro de diálogo **Ejecutar** y, a continuación, escriba Dsa.msc y, a continuación, haga clic en **Aceptar.**
+    Presione **la tecla Windows + R** para abrir el cuadro de diálogo **Ejecutar** y, a continuación, escriba Dsa.msc y, a continuación, haga clic en **Aceptar.**
     
 2. Seleccione un usuario, haga clic con el botón derecho y, a continuación, elija **Propiedades**.
     

@@ -20,12 +20,12 @@ ms.collection:
 description: Los administradores pueden obtener información sobre la característica Datos adjuntos seguros en Microsoft Defender para Office 365.
 ms.subservice: mdo
 ms.service: microsoft-365-security
-ms.openlocfilehash: d8439ac6dbf9ee9dae315f4da4d5f7fd38560351
-ms.sourcegitcommit: 651610ca73bfd1d008d97311b59782790df664fb
+ms.openlocfilehash: 4ee9bfea06d1bc3e4b5b49bc4759b9d59166cd1f
+ms.sourcegitcommit: 437461fa1d38ff9bb95dd8a1c5f0b94e8111ada2
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/07/2022
-ms.locfileid: "67614932"
+ms.lasthandoff: 09/14/2022
+ms.locfileid: "67671399"
 ---
 # <a name="safe-attachments-in-microsoft-defender-for-office-365"></a>Datos adjuntos seguros en Microsoft Defender para Office 365
 
@@ -38,8 +38,6 @@ ms.locfileid: "67614932"
 Datos adjuntos seguros en [Microsoft Defender para Office 365](defender-for-office-365.md) proporciona una capa adicional de protección para los datos adjuntos de correo electrónico que ya han sido examinados por [la protección antimalware en Exchange Online Protection (EOP)](anti-malware-protection.md). En concreto, Los datos adjuntos seguros usan un entorno virtual para comprobar los datos adjuntos en los mensajes de correo electrónico antes de que se entreguen a los destinatarios (un proceso conocido como _detonación_).
 
 La protección de datos adjuntos seguros para mensajes de correo electrónico se controla mediante directivas de datos adjuntos seguros. Aunque no hay ninguna directiva de datos adjuntos seguros predeterminada, la directiva de seguridad preestablecida **de protección integrada** proporciona protección de datos adjuntos seguros a todos los destinatarios (usuarios que no están definidos en las directivas de seguridad preestablecidas estándar o estricta o en directivas de datos adjuntos seguros personalizadas). Para obtener más información, vea [Directivas de seguridad preestablecidas en EOP y Microsoft Defender para Office 365](preset-security-policies.md). También puede crear directivas de datos adjuntos seguros que se apliquen a usuarios, grupos o dominios específicos. Para obtener instrucciones, consulte [Configurar directivas de datos adjuntos seguros en Microsoft Defender para Office 365](set-up-safe-attachments-policies.md).
-
-Si un archivo adjunto está cifrado o protegido con contraseña, no se puede examinar mediante datos adjuntos seguros. El mensaje con los datos adjuntos se entregará y el destinatario no recibirá ninguna advertencia de que los datos adjuntos seguros no hayan examinado el archivo.
 
 En la tabla siguiente se describen los escenarios de datos adjuntos seguros en Microsoft 365 y Office 365 organizaciones que incluyen Microsoft Defender para Office 365 (es decir, la falta de licencias nunca es un problema en los ejemplos).
 
@@ -86,7 +84,7 @@ En esta sección se describe la configuración de directivas de datos adjuntos s
   |**Desactivado**|Los datos adjuntos seguros no examinan los datos adjuntos en busca de malware. Los mensajes todavía se examinan para buscar malware mediante [la protección contra malware en EOP](anti-malware-protection.md).|Desactive el examen de los destinatarios seleccionados. <br/><br/> Evite retrasos innecesarios en el enrutamiento del correo interno. <br/><br/> **Esta opción no se recomienda para la mayoría de los usuarios. Solo debe usar esta opción para desactivar el examen de datos adjuntos seguros para los destinatarios que solo reciben mensajes de remitentes de confianza. ZAP no pondrá en cuarentena los mensajes si se desactivan los datos adjuntos seguros y no se recibe una señal de malware. Para obtener más información, consulte [Purga automática de hora cero](zero-hour-auto-purge.md).**|
   |**Supervisar**|Entrega mensajes con datos adjuntos y, a continuación, realiza un seguimiento de lo que sucede con el malware detectado. <br/><br/> La entrega de mensajes seguros podría retrasarse debido al examen de datos adjuntos seguros.|Vea dónde va el malware detectado en su organización.|
   |**Bloquear**|Impide que se entreguen los mensajes con datos adjuntos de malware detectados. <br/><br/> Los mensajes se ponen en cuarentena. De forma predeterminada, solo los administradores (no los usuarios) pueden revisar, liberar o eliminar los mensajes.<sup>\*</sup> <br/><br/> Bloquea automáticamente las instancias futuras de los mensajes y datos adjuntos. <br/><br/> La entrega de mensajes seguros podría retrasarse debido al examen de datos adjuntos seguros.|Protege su organización frente a ataques repetidos con los mismos datos adjuntos de malware. <br/><br/> Este es el valor predeterminado y el valor recomendado en Directivas de [seguridad preestablecidas](preset-security-policies.md) estándar y estricta.|
-  |**Replace**|Quita los datos adjuntos de malware detectados. <br/><br/> Notifica a los destinatarios que se han quitado los datos adjuntos. <br/><br/>  Los mensajes que contienen datos adjuntos malintencionados se ponen en cuarentena. De forma predeterminada, solo los administradores (no los usuarios) pueden revisar, liberar o eliminar los mensajes.<sup>\*</sup> <br/><br/> La entrega de mensajes seguros podría retrasarse debido al examen de datos adjuntos seguros.|Aumente la visibilidad para los destinatarios de que los datos adjuntos se quitaron debido al malware detectado.|
+  |**Replace**|**Nota**: Esta acción quedará en desuso. Para obtener más información, vea [MC424901](https://admin.microsoft.com/AdminPortal/Home#/MessageCenter/:/messages/MC424901). <br/><br/> Quita los datos adjuntos de malware detectados. <br/><br/> Notifica a los destinatarios que se han quitado los datos adjuntos. <br/><br/>  Los mensajes que contienen datos adjuntos malintencionados se ponen en cuarentena. De forma predeterminada, solo los administradores (no los usuarios) pueden revisar, liberar o eliminar los mensajes.<sup>\*</sup> <br/><br/> La entrega de mensajes seguros podría retrasarse debido al examen de datos adjuntos seguros.|Aumente la visibilidad para los destinatarios de que los datos adjuntos se quitaron debido al malware detectado.|
   |**Entrega dinámica**|Entrega mensajes inmediatamente, pero reemplaza los datos adjuntos por marcadores de posición hasta que se complete el examen de datos adjuntos seguros. <br/><br/> Los mensajes que contienen datos adjuntos malintencionados se ponen en cuarentena. De forma predeterminada, solo los administradores (no los usuarios) pueden revisar, liberar o eliminar los mensajes.<sup>\*</sup> <br/><br/> Para obtener más información, consulte la sección [Entrega dinámica en directivas de datos adjuntos seguros](#dynamic-delivery-in-safe-attachments-policies) más adelante en este artículo.|Evite retrasos en los mensajes al proteger a los destinatarios de archivos malintencionados.|
 
   <sup>\*</sup>**Directiva de cuarentena**: los administradores pueden crear y asignar _directivas de cuarentena en directivas_ de datos adjuntos seguros que definen lo que los usuarios pueden hacer con los mensajes en cuarentena. Para más información, vea [Directivas de cuarentena](quarantine-policies.md).
@@ -94,6 +92,9 @@ En esta sección se describe la configuración de directivas de datos adjuntos s
 - **Redirigir mensajes con datos adjuntos detectados**: **habilite la redirección** y **enviar mensajes que contengan datos adjuntos bloqueados, supervisados o reemplazados a la dirección de correo electrónico especificada**: para las acciones **Bloquear**, **Supervisar** o **Reemplazar** , envíe mensajes que contengan datos adjuntos de malware a la dirección de correo electrónico interna o externa especificada para su análisis e investigación.
 
   La recomendación para la configuración de directivas estándar y estricta es habilitar el redireccionamiento. Para obtener más información, consulte [Configuración de datos adjuntos seguros](recommended-settings-for-eop-and-office365.md#safe-attachments-settings).
+
+  > [!NOTE]
+  > El redireccionamiento estará pronto disponible solo para la acción **Supervisión** . Para obtener más información, consulte [MC424899](https://admin.microsoft.com/AdminPortal/Home?#/MessageCenter/:/messages/MC424899).
 
 - **Aplique la respuesta de detección de datos adjuntos seguros si el examen no puede completarse (tiempo de espera o errores):** la acción especificada por la **respuesta de malware desconocido de Datos adjuntos seguros** se realiza en los mensajes incluso cuando el análisis de datos adjuntos seguros no se puede completar. Seleccione siempre esta opción si selecciona **Habilitar redirección**. De lo contrario, es posible que se pierdan los mensajes.
 

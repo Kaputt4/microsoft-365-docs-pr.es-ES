@@ -5,7 +5,7 @@ author: kelleyvice-msft
 manager: scotv
 audience: Admin
 ms.topic: article
-ms.service: o365-administration
+ms.service: microsoft-365-enterprise
 ms.localizationpriority: medium
 search.appverid:
 - MET150
@@ -17,31 +17,31 @@ ms.custom:
 - admindeeplinkEXCHANGE
 ms.assetid: b468cb4b-a35c-43d3-85bf-65446998af40
 description: Obtenga información sobre cómo usar PowerShell para mover el contenido de un sistema de correo electrónico de origen a la vez realizando una migración total a Microsoft 365.
-ms.openlocfilehash: 3761640c42a6907818886e96c9d6355d70073522
-ms.sourcegitcommit: f302de988d98628922eea1f509a3f639634ddc64
+ms.openlocfilehash: 726834521f369b4720903709835bc668794306e3
+ms.sourcegitcommit: 437461fa1d38ff9bb95dd8a1c5f0b94e8111ada2
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/17/2022
-ms.locfileid: "66151214"
+ms.lasthandoff: 09/14/2022
+ms.locfileid: "67669769"
 ---
 # <a name="use-powershell-to-perform-a-cutover-migration-to-microsoft-365"></a>Usar PowerShell para realizar una migración total a Microsoft 365
 
 *Este artículo afecta tanto a Office 365 Enterprise como a Microsoft 365 Enterprise*
 
-Puede migrar el contenido de los buzones de usuario de un sistema de correo electrónico de origen a Microsoft 365 todo a la vez mediante una migración total. Este artículo le guiará a través de las tareas para una migración total del correo electrónico con Exchange Online PowerShell.
+Puede migrar el contenido de los buzones de usuario de un sistema de correo electrónico de origen a Microsoft 365 a la vez mediante una migración total. Este artículo le guiará a través de las tareas para una migración total del correo electrónico con Exchange Online PowerShell.
 
 Al revisar el tema [Lo que necesita saber sobre una migración de correo electrónico de transición a Microsoft 365](/Exchange/mailbox-migration/what-to-know-about-a-cutover-migration), puede obtener información general sobre el proceso de migración. Cuando se sienta cómodo con el contenido de ese artículo, úselo para empezar a migrar los buzones de un sistema de correo electrónico a otro.
 
 > [!NOTE]
-> También puede usar el <a href="https://go.microsoft.com/fwlink/p/?linkid=2059104" target="_blank">centro de administración de Exchange</a> para realizar una migración total. Consulte [Realizar una migración total del correo electrónico a Microsoft 365](/Exchange/mailbox-migration/cutover-migration-to-office-365).
+> También puede usar el <a href="https://go.microsoft.com/fwlink/p/?linkid=2059104" target="_blank">Centro de administración de Exchange</a> para realizar una migración total. Consulte [Realizar una migración total del correo electrónico a Microsoft 365](/Exchange/mailbox-migration/cutover-migration-to-office-365).
 
 ## <a name="what-do-you-need-to-know-before-you-begin"></a>¿Qué necesita saber antes de comenzar?
 
-Tiempo estimado para finalizar esta tarea: entre 2 y 5 minutos para crear un lote de migración. Después de que haya iniciado el lote de migración, la duración de la migración variará según la cantidad de buzones del lote, el tamaño de cada buzón y la capacidad de red disponible. Para obtener información sobre otros factores que afectan al tiempo que se tarda en migrar buzones a Microsoft 365, vea [Rendimiento de la migración](/Exchange/mailbox-migration/office-365-migration-best-practices).
+Tiempo estimado para finalizar esta tarea: entre 2 y 5 minutos para crear un lote de migración. Después de que haya iniciado el lote de migración, la duración de la migración variará según la cantidad de buzones del lote, el tamaño de cada buzón y la capacidad de red disponible. Para obtener información sobre otros factores que afectan al tiempo que se tarda en migrar buzones a Microsoft 365, consulte [Rendimiento de la migración](/Exchange/mailbox-migration/office-365-migration-best-practices).
 
 Deberá tener permisos asignados para poder llevar a cabo estos procedimientos. Para ver qué permisos necesita, consulte la entrada "Movimiento de buzón y permisos de migración" en una tabla del tema [Permisos de destinatarios](/exchange/recipients-permissions-exchange-2013-help).
 
-Para usar los cmdlets de Exchange Online PowerShell, deberá iniciar sesión e importar los cmdlets en la sesión local de Windows PowerShell. Consulte [Conectar para Exchange Online PowerShell](/powershell/exchange/connect-to-exchange-online-powershell) para obtener instrucciones.
+Para usar los cmdlets de Exchange Online PowerShell, deberá iniciar sesión e importar los cmdlets en la sesión local de Windows PowerShell. Consulte [Conexión a Exchange Online PowerShell](/powershell/exchange/connect-to-exchange-online-powershell) para obtener instrucciones.
 
 Para obtener una lista completa de los comandos de migración, consulte [Cmdlets de movimiento y migración](/powershell/exchange/).
 
@@ -50,7 +50,7 @@ Para obtener una lista completa de los comandos de migración, consulte [Cmdlets
 ### <a name="step-1-prepare-for-a-cutover-migration"></a>Paso 1: Prepararse para una migración total
 <a name="BK_Step1"> </a>
 
-- **Agregue la organización de Exchange local como un dominio aceptado de la organización Microsoft 365.** El servicio de migración usa la dirección SMTP de los buzones locales para crear el identificador de usuario y la dirección de correo electrónico de Microsoft Online Services para los nuevos buzones de Microsoft 365. Se producirá un error en la migración si el dominio de Exchange no es un dominio aceptado o el dominio principal de la organización Microsoft 365. Para obtener más información, consulte [Comprobación del dominio](../admin/setup/add-domain.md).
+- **Agregue la organización de Exchange local como un dominio aceptado de su organización de Microsoft 365.** El servicio de migración usa la dirección SMTP de los buzones locales para crear el identificador de usuario y la dirección de correo electrónico de Microsoft Online Services para los nuevos buzones de Microsoft 365. Se producirá un error en la migración si el dominio de Exchange no es un dominio aceptado o el dominio principal de la organización de Microsoft 365. Para obtener más información, consulte [Comprobación del dominio](../admin/setup/add-domain.md).
 
 - **Configure Outlook en cualquier lugar en el servidor Exchange local.** El servicio de migración de correo electrónico utiliza RPC sobre HTTP, u Outlook en cualquier lugar, para conectarse al servidor Exchange local. Para obtener más información acerca de cómo configurar Outlook en cualquier lugar para Exchange 2010, Exchange 2007 y Exchange 2003, consulte lo siguiente:
 
@@ -81,7 +81,7 @@ Para obtener una lista completa de los comandos de migración, consulte [Cmdlets
   Test-MigrationServerAvailability -ExchangeOutlookAnywhere -Autodiscover -EmailAddress <email address for on-premises administrator> -Credentials $credentials
   ```
 
-- **Asigne a una cuenta de usuario local los permisos necesarios para obtener acceso a los buzones de la organización de Exchange.** La cuenta de usuario local que usa para conectarse a la organización de Exchange local (también denominada administrador de migración) debe tener los permisos necesarios para acceder a los buzones locales que desea migrar a Microsoft 365. Esta cuenta de usuario se utiliza para crear un extremo de migración para la organización local.
+- **Asigne a una cuenta de usuario local los permisos necesarios para obtener acceso a los buzones de la organización de Exchange.** La cuenta de usuario local que usa para conectarse a la organización local de Exchange (también denominada administrador de migración) debe tener los permisos necesarios para acceder a los buzones locales que desea migrar a Microsoft 365. Esta cuenta de usuario se utiliza para crear un extremo de migración para la organización local.
 
     En la lista siguiente, se muestran los privilegios administrativos necesarios para migrar buzones con una migración total. Hay tres opciones posibles.
 
@@ -97,7 +97,7 @@ Para obtener una lista completa de los comandos de migración, consulte [Cmdlets
 
 - **Deshabilite la mensajería unificada.** Si los buzones locales que va a migrar están habilitados para la mensajería unificada, debe deshabilitarla en los buzones antes de migrarlos. A continuación, puede habilitar la mensajería unificada en los buzones una vez completada la migración.
 
-- **Grupos de seguridad y delegados** El servicio de migración de correo electrónico no puede detectar si los grupos de Active Directory local son grupos de seguridad o no, por lo que no puede aprovisionar ningún grupo migrado como grupos de seguridad en Microsoft 365. Si desea tener grupos de seguridad en el inquilino de Microsoft 365, primero debe aprovisionar un grupo de seguridad vacío habilitado para correo en el inquilino de Microsoft 365 antes de iniciar la migración total. Además, este método de migración solo mueve buzones, usuarios de correo, contactos de correo y grupos habilitados para correo. Si cualquier otro objeto de Active Directory, como el usuario que no se migra a Microsoft 365, se asigna como administrador o delegado a un objeto que se va a migrar, se debe quitar del objeto antes de migrar.
+- **Grupos de seguridad y delegados** El servicio de migración de correo electrónico no puede detectar si Active Directory local grupos son grupos de seguridad o no, por lo que no puede aprovisionar ningún grupo migrado como grupos de seguridad en Microsoft 365. Si desea tener grupos de seguridad en el inquilino de Microsoft 365, primero debe aprovisionar un grupo de seguridad vacío habilitado para correo en el inquilino de Microsoft 365 antes de iniciar la migración de transición. Además, este método de migración solo mueve buzones, usuarios de correo, contactos de correo y grupos habilitados para correo. Si cualquier otro objeto de Active Directory, como el usuario que no se migra a Microsoft 365, se asigna como administrador o delegado a un objeto que se va a migrar, se debe quitar del objeto antes de migrar.
 
 ### <a name="step-2-create-a-migration-endpoint"></a>Paso 2: Crear un extremo de migración
 <a name="BK_Step2"> </a>
@@ -175,9 +175,9 @@ Get-MigrationBatch -Identity CutoverBatch |  Format-List Status
 
 ### <a name="step-5-route-your-email-to-microsoft-365"></a>Paso 5: Enrutar el correo electrónico a Microsoft 365
 
-Los sistemas de correo electrónico utilizan un registro DNS denominado registro MX para averiguar dónde entregar los correos electrónicos. Durante el proceso de migración del correo electrónico, el registro MX apuntaba al sistema de correo electrónico de origen. Ahora que la migración de correo electrónico a Microsoft 365 está completa, es el momento de apuntar el registro MX a Microsoft 365. Esto ayuda a asegurarse de que el correo electrónico se entrega a los buzones de Microsoft 365. Al mover el registro MX, también puede desactivar el sistema de correo electrónico antiguo cuando esté listo.
+Los sistemas de correo electrónico utilizan un registro DNS denominado registro MX para averiguar dónde entregar los correos electrónicos. Durante el proceso de migración del correo electrónico, el registro MX apuntaba al sistema de correo electrónico de origen. Ahora que se ha completado la migración de correo electrónico a Microsoft 365, es el momento de apuntar el registro MX a Microsoft 365. Esto ayuda a asegurarse de que el correo electrónico se entrega a los buzones de Microsoft 365. Al mover el registro MX, también puede desactivar el sistema de correo electrónico antiguo cuando esté listo.
 
-Para muchos proveedores de DNS, hay instrucciones específicas para Cambiar el registro MX. Si su proveedor de DNS no está incluido o si desea hacerse una idea de las orientaciones generales, también ofrecemos las [instrucciones generales de registro MX](/microsoft-365/admin/get-help-with-domains/create-dns-records-at-any-dns-hosting-provider?view=o365-worldwide#add-an-mx-record-for-email-outlook-exchange-online).
+Para muchos proveedores de DNS, hay instrucciones específicas para Cambiar el registro MX. Si su proveedor de DNS no está incluido o si desea hacerse una idea de las orientaciones generales, también ofrecemos las [instrucciones generales de registro MX](/microsoft-365/admin/get-help-with-domains/create-dns-records-at-any-dns-hosting-provider#add-an-mx-record-for-email-outlook-exchange-online).
 
 Los sistemas de correo electrónico de sus clientes y socios pueden tardar hasta 72 horas en reconocer el registro MX cambiado. Espere al menos 72 horas antes de continuar con la tarea siguiente: [Paso 6: Eliminar el lote de migración total](#step-6-delete-the-cutover-migration-batch).
 
@@ -187,7 +187,7 @@ Después de cambiar el registro MX y comprobar que todo el correo electrónico s
 
 - Todos los usuarios usan buzones de Microsoft 365. Una vez eliminado el lote, el correo enviado a los buzones del Exchange Server local no se copia en los buzones de Microsoft 365 correspondientes.
 
-- Microsoft 365 buzones se sincronizaron al menos una vez después de que el correo empezara a enviarse directamente a ellos. Para ello, asegúrese de que el valor del cuadro Hora de última sincronización del lote de migración es más reciente que cuando el correo comenzó a enrutarse directamente a Microsoft 365 buzones.
+- Los buzones de Microsoft 365 se sincronizaron al menos una vez después de que el correo empezara a enviarse directamente a ellos. Para ello, asegúrese de que el valor del cuadro Hora de última sincronización del lote de migración es más reciente que cuando el correo comenzó a enrutarse directamente a buzones de Microsoft 365.
 
 Para eliminar el lote de migración "CutoverBatch" en Exchange Online PowerShell, ejecute el comando siguiente.
 
@@ -197,18 +197,18 @@ Remove-MigrationBatch -Identity CutoverBatch
 
 ### <a name="section-7-assign-user-licenses"></a>Sección 7: Asignar licencias de usuario
 
- **Active Microsoft 365 cuentas de usuario para las cuentas migradas mediante la asignación de licencias.** Si no asigna una licencia, el buzón se deshabilitará cuando finalice el periodo de gracia (30 días). Para asignar una licencia en el Centro de administración de Microsoft 365, consulte [Asignación o anulación de la asignación de licencias](../admin/manage/assign-licenses-to-users.md).
+ **Active las cuentas de usuario de Microsoft 365 para las cuentas migradas mediante la asignación de licencias.** Si no asigna una licencia, el buzón se deshabilitará cuando finalice el periodo de gracia (30 días). Para asignar una licencia en el Centro de administración de Microsoft 365, consulte [Asignación o anulación de la asignación de licencias](../admin/manage/assign-licenses-to-users.md).
 
 ### <a name="step-8-complete-post-migration-tasks"></a>Paso 8: Finalizar las tareas posteriores a la migración
 
-- **Cree un registro DNS de Detección automática para que los usuarios puedan acceder fácilmente a sus buzones.** Después de migrar todos los buzones locales a Microsoft 365, puede configurar un registro DNS de detección automática para la organización de Microsoft 365 para permitir que los usuarios se conecten fácilmente a sus nuevos buzones de Microsoft 365 con clientes Outlook y móviles. Este nuevo registro DNS de detección automática tiene que usar el mismo espacio de nombres que usa para la organización de Microsoft 365. Por ejemplo, si el espacio de nombres basado en la nube es cloud.contoso.com, el registro DNS de Detección automática que se debe crear es autodiscover.cloud.contoso.com.
+- **Cree un registro DNS de Detección automática para que los usuarios puedan acceder fácilmente a sus buzones.** Después de migrar todos los buzones locales a Microsoft 365, puede configurar un registro DNS de detección automática para su organización de Microsoft 365 para permitir que los usuarios se conecten fácilmente a sus nuevos buzones de Microsoft 365 con Outlook y clientes móviles. Este nuevo registro DNS de detección automática tiene que usar el mismo espacio de nombres que usa para su organización de Microsoft 365. Por ejemplo, si el espacio de nombres basado en la nube es cloud.contoso.com, el registro DNS de Detección automática que se debe crear es autodiscover.cloud.contoso.com.
 
-    Si mantiene la Exchange Server, también debe asegurarse de que el registro CNAME de Detección automática de DNS tenga que apuntar a Microsoft 365 tanto en DNS interno como externo después de la migración para que el cliente de Outlook se conecte al buzón correcto.
+    Si mantiene la Exchange Server, también debe asegurarse de que el registro CNAME de Detección automática de DNS tenga que apuntar a Microsoft 365 en DNS interno y externo después de la migración para que el cliente de Outlook se conecte al buzón correcto.
 
     > [!NOTE]
     >  En Exchange 2007, Exchange 2010 y Exchange 2013 también debe establecer  `Set-ClientAccessServer AutodiscoverInternalConnectionURI` como `Null`.
 
-    Microsoft 365 usa un registro CNAME para implementar el servicio de detección automática para clientes Outlook y móviles. El registro CNAME de Detección automática debe contener la información siguiente:
+    Microsoft 365 usa un registro CNAME para implementar el servicio de detección automática para outlook y clientes móviles. El registro CNAME de Detección automática debe contener la información siguiente:
 
   - **Alias:** autodiscover
 
@@ -216,7 +216,7 @@ Remove-MigrationBatch -Identity CutoverBatch
 
     Para obtener más información, consulte [Agregar registros DNS para conectar el dominio](../admin/get-help-with-domains/create-dns-records-at-any-dns-hosting-provider.md).
 
-- **Retire los servidores de Exchange locales.** Después de comprobar que todo el correo electrónico se enruta directamente a los buzones de Microsoft 365 y ya no necesita mantener la organización de correo electrónico local o no tiene previsto implementar una solución de inicio de sesión único (SSO), puede desinstalar Exchange de los servidores y quitar la organización de Exchange local.
+- **Retire los servidores de Exchange locales.** Después de comprobar que todo el correo electrónico se enruta directamente a los buzones de Microsoft 365 y ya no necesita mantener la organización de correo electrónico local o no tiene previsto implementar una solución de inicio de sesión único (SSO), puede desinstalar Exchange de los servidores y quitar la organización local de Exchange.
 
     Para obtener más información, vea los artículos siguientes:
 

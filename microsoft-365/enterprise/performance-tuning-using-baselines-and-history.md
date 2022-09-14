@@ -6,7 +6,7 @@ manager: scotv
 ms.date: 07/08/2021
 audience: Admin
 ms.topic: conceptual
-ms.service: o365-administration
+ms.service: microsoft-365-enterprise
 ms.localizationpriority: medium
 f1.keywords:
 - CSH
@@ -23,12 +23,12 @@ ms.collection:
 - Ent_O365
 - SPO_Content
 description: Obtenga información sobre cómo comprobar el historial de las conexiones del equipo cliente para ayudarle a detectar problemas emergentes de forma temprana.
-ms.openlocfilehash: ceb56f88d057d3a003f158369c9d35223852c7fa
-ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
+ms.openlocfilehash: 2a4d904fe0b5a09851da5dc83ca238eb70638f9a
+ms.sourcegitcommit: 437461fa1d38ff9bb95dd8a1c5f0b94e8111ada2
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "65100443"
+ms.lasthandoff: 09/14/2022
+ms.locfileid: "67670507"
 ---
 # <a name="office-365-performance-tuning-using-baselines-and-performance-history"></a>Ajuste del rendimiento de Office 365 mediante líneas base y el historial de rendimiento
 
@@ -46,7 +46,7 @@ Office 365 vive dentro de una red de Microsoft dedicada y de alta capacidad que 
 Las mejoras de rendimiento nunca se detienen realmente en la nube, por lo que tampoco la experiencia con el mantenimiento de la nube es correcta y rápida. Si tiene un problema de rendimiento al conectarse desde su ubicación a Office 365, es mejor no empezar por un caso de soporte técnico o esperarlo. En su lugar, debería empezar a investigar el problema desde "dentro hacia fuera". Es decir, empiece dentro de la red y trabaje para Office 365. Antes de abrir un caso con soporte técnico, puede recopilar datos y realizar acciones que exploren y puedan resolver el problema.
   
 > [!IMPORTANT]
-> Tenga en cuenta los límites y el planeamiento de la capacidad en Office 365. Esa información le pondrá por delante de la curva al intentar resolver un problema de rendimiento. Este es un vínculo a las [descripciones del servicio Microsoft 365 y Office 365](/office365/servicedescriptions/office-365-service-descriptions-technet-library). Este es un centro central y todos los servicios que ofrece Office 365 tienen un vínculo que va a sus propias descripciones de servicio desde aquí. Esto significa que, si necesita ver los límites estándar de SharePoint Online, por ejemplo, haría clic en [SharePoint Descripción del servicio en línea](/office365/servicedescriptions/sharepoint-online-service-description/sharepoint-online-service-description) y buscaría su [sección límites en línea de SharePoint](/office365/servicedescriptions/sharepoint-online-service-description/sharepoint-online-limits).
+> Tenga en cuenta los límites y el planeamiento de la capacidad en Office 365. Esa información le pondrá por delante de la curva al intentar resolver un problema de rendimiento. Este es un vínculo a las [descripciones de servicio de Microsoft 365 y Office 365](/office365/servicedescriptions/office-365-service-descriptions-technet-library). Este es un centro central y todos los servicios que ofrece Office 365 tienen un vínculo que va a sus propias descripciones de servicio desde aquí. Esto significa que, si necesita ver los límites estándar para SharePoint Online, por ejemplo, haría clic en [Descripción del servicio De SharePoint Online](/office365/servicedescriptions/sharepoint-online-service-description/sharepoint-online-service-description) y buscaría su [sección Límites de SharePoint Online](/office365/servicedescriptions/sharepoint-online-service-description/sharepoint-online-limits).
   
 Asegúrese de entrar en la solución de problemas entendiendo que el rendimiento es una escala deslizante. No se trata de lograr un valor idealizado y mantenerlo permanentemente. Las tareas ocasionales de ancho de banda alto, como incorporar un gran número de usuarios o realizar migraciones de datos grandes, serán estresantes, por lo que *planeará* entonces los impactos en el rendimiento. Debe tener una idea aproximada de los objetivos de rendimiento, pero muchas variables se desempeñan en el rendimiento, por lo que el rendimiento varía.
   
@@ -56,9 +56,9 @@ La solución de problemas de rendimiento no se trata de cumplir objetivos espec�
 
 En primer lugar, debe asegurarse de que lo que está experimentando es realmente un problema de rendimiento y no un incidente de servicio. Un problema de rendimiento es diferente de un incidente de servicio en Office 365. Aquí te mostremos cómo distinguirlos.
   
-Los incidentes de servicio se producen cuando el propio servicio de Office 365 tiene problemas. Es posible que vea iconos rojos o amarillos en **Estado actual** en el Centro de administración de Microsoft 365. Es posible que observe que el rendimiento de los equipos cliente que se conectan a Office 365 es lento. Por ejemplo, si Mantenimiento actual notifica un icono rojo y ve **Investigar** junto a Exchange, también puede recibir llamadas de personas de la organización que se quejan de que los buzones de cliente que usan Exchange Online son lentos. En ese caso, es razonable suponer que su rendimiento de Exchange Online fue víctima de problemas de servicio.
+Los incidentes de servicio se producen cuando el propio servicio de Office 365 tiene problemas. Es posible que vea iconos rojos o amarillos en **Estado actual** en el Centro de administración de Microsoft 365. Es posible que observe que el rendimiento de los equipos cliente que se conectan a Office 365 es lento. Por ejemplo, si mantenimiento actual notifica un icono rojo y ve **Investigar** junto a Exchange, también puede recibir llamadas de personas de la organización que se quejan de que los buzones de cliente que usan Exchange Online son lentos. En ese caso, es razonable suponer que su rendimiento de Exchange Online fue víctima de problemas de servicio.
   
-![El panel estado de Office 365 con todas las cargas de trabajo en verde, excepto Exchange, que muestra El servicio restaurado.](../media/ec7f0325-9e61-4e1a-bec0-64b87f4469be.PNG)
+![El panel de estado de Office 365 con todas las cargas de trabajo en verde, excepto Exchange, que muestra El servicio restaurado.](../media/ec7f0325-9e61-4e1a-bec0-64b87f4469be.PNG)
   
 En este momento, usted, el administrador de Office 365, debe comprobar **estado actual** y, a continuación, **ver los detalles y el historial**, a menudo, para mantenerse al día sobre el mantenimiento en el sistema. El panel **Estado actual** se realizó para actualizarle sobre los cambios y problemas en el servicio. Las notas y explicaciones escritas en el historial de mantenimiento, de administrador a administrador, están allí para ayudarle a medir y para mantenerlo informado sobre el trabajo en curso.
   
@@ -82,7 +82,7 @@ Los problemas de rendimiento suelen surgir con el tiempo, por lo que puede ser d
   
 - Cambiar de mi bandeja de entrada a mi calendario solía ser algo que no noté, y ahora es una pausa de café. ¿Puedes hacer que actúe como antes?
     
-- Cargar mis archivos en SharePoint Online está tardando para siempre. ¿Por qué es lento por la tarde, pero en cualquier otro momento, es rápido? ¿No puede ser rápido?
+- Cargar mis archivos en SharePoint Online lleva mucho tiempo. ¿Por qué es lento por la tarde, pero en cualquier otro momento, es rápido? ¿No puede ser rápido?
     
 Hay varios desafíos grandes planteados por las declaraciones de problema anteriores. En concreto, demasiadas ambigüedades con las que tratar. Por ejemplo:
   
@@ -110,7 +110,7 @@ Cuando los usuarios notifican un problema de rendimiento, hay mucha información
     
 - ¿Dónde está usted en el mundo?
     
-Algunas de estas preguntas son más obvias que otras. La mayoría de los usuarios comprenderán que un solucionador de problemas necesita los pasos exactos para reproducir el problema. Después de todo, ¿cómo puede registrar lo que está mal y cómo puede probar si el problema está corregido? Menos obvios son cosas como "¿Qué fecha y hora vio el problema?", y "¿Dónde se encuentra el mundo?", información que se puede usar en tándem. Dependiendo de cuándo trabajara el usuario, una diferencia de horas puede significar que ya se está realizando mantenimiento en partes de la red de la empresa. Por ejemplo, la empresa tiene una implementación híbrida, como una búsqueda híbrida de SharePoint, que puede consultar índices de búsqueda en SharePoint Online y en una instancia local de SharePoint Server 2013, es posible que se estén realizando actualizaciones en la granja local. Si su empresa está en la nube, el mantenimiento del sistema puede incluir la adición o eliminación de hardware de red, la implementación de actualizaciones en toda la empresa o la realización de cambios en DNS u otra infraestructura principal.
+Algunas de estas preguntas son más obvias que otras. La mayoría de los usuarios comprenderán que un solucionador de problemas necesita los pasos exactos para reproducir el problema. Después de todo, ¿cómo puede registrar lo que está mal y cómo puede probar si el problema está corregido? Menos obvios son cosas como "¿Qué fecha y hora vio el problema?", y "¿Dónde se encuentra el mundo?", información que se puede usar en tándem. Dependiendo de cuándo trabajara el usuario, una diferencia de horas puede significar que ya se está realizando mantenimiento en partes de la red de la empresa. Por ejemplo, la empresa tiene una implementación híbrida, como una búsqueda híbrida de SharePoint, que puede consultar índices de búsqueda en SharePoint Online y una instancia local de SharePoint Server 2013, las actualizaciones pueden estar en curso en la granja local. Si su empresa está en la nube, el mantenimiento del sistema puede incluir la adición o eliminación de hardware de red, la implementación de actualizaciones en toda la empresa o la realización de cambios en DNS u otra infraestructura principal.
   
 Cuando se está solucionando un problema de rendimiento, es un poco como una escena del crimen, debe ser preciso y observador para extraer conclusiones de la evidencia. Para ello, debe obtener una buena declaración de problemas mediante la recopilación de pruebas. Debe incluir el contexto del equipo, el contexto del usuario, cuándo comenzó el problema y los pasos exactos que han expuesto el problema de rendimiento. Esta instrucción de problema debe ser, y permanecer, la página más alta de las notas. Al volver a recorrer la instrucción de problema después de trabajar en la resolución, está realizando los pasos necesarios para probar y probar si las acciones que realiza han resuelto el problema. Esto es fundamental para saber cuándo se realiza el trabajo.
   
@@ -120,7 +120,7 @@ Si tienes mala suerte, nadie lo sabe. Nadie tenía números. Esto significa que 
   
 ¿Qué falta aquí es una línea base de rendimiento?
   
-Las líneas base proporcionan un contexto para el rendimiento. Debe tomar una línea base de vez en cuando a con frecuencia, en función de las necesidades de su empresa. Si es una empresa más grande, el equipo de operaciones puede tomar líneas base para el entorno local ya. Por ejemplo, si aplica revisiones a todos los servidores de Exchange el primer lunes del mes y a todos los servidores de SharePoint el tercer lunes, es probable que el equipo de operaciones tenga una lista de tareas y escenarios que ejecuta después de la aplicación de revisiones para demostrar que las funciones críticas están operativas. Por ejemplo, abra la Bandeja de entrada, haga clic en Enviar o recibir y asegúrese de que las carpetas se actualicen o, en SharePoint, examine la página principal del sitio, vaya a la página búsqueda de empresa y realice una búsqueda que devuelva resultados.
+Las líneas base proporcionan un contexto para el rendimiento. Debe tomar una línea base de vez en cuando a con frecuencia, en función de las necesidades de su empresa. Si es una empresa más grande, el equipo de operaciones puede tomar líneas base para el entorno local ya. Por ejemplo, si aplica revisiones a todos los servidores de Exchange el primer lunes del mes y a todos los servidores de SharePoint en el tercer lunes, es probable que el equipo de operaciones tenga una lista de tareas y escenarios en los que se ejecuta después de la aplicación de revisiones, para demostrar que las funciones críticas están operativas. Por ejemplo, al abrir la Bandeja de entrada, hacer clic en Enviar o recibir y asegurarse de que las carpetas se actualizan, o bien, en SharePoint, se examina la página principal del sitio, se entra en la página búsqueda de empresa y se realiza una búsqueda que devuelve resultados.
   
 Si las aplicaciones están en Office 365, algunas de las líneas base más fundamentales puede medir el tiempo (en milisegundos) desde un equipo cliente dentro de la red, hasta un punto de salida o el punto en el que salga de la red y salga a Office 365. Estas son algunas líneas base útiles que puede investigar y registrar:
   
@@ -317,13 +317,13 @@ Tomar una línea base de rendimiento es la parte sencilla de este método y much
   
 - Lista de línea base para SPO : ** Paso 1: ** Examinar la página principal del sitio web de SPO y realizar un seguimiento de red. Guarde el seguimiento. 
     
-- Lista de línea base para SPO **: paso 2:** busque un término (como el nombre de la empresa) a través de Enterprise Buscar y realice un seguimiento de red. Guarde el seguimiento. 
+- Lista de línea base para SPO **: paso 2:** busque un término (como el nombre de la empresa) a través de Enterprise Search y realice un seguimiento de red. Guarde el seguimiento. 
     
-- Lista de línea base para SPO: **paso 3:** Upload un archivo grande a una biblioteca de documentos en línea de SharePoint y realizar un seguimiento de red. Guarde el seguimiento. 
+- Lista de línea base para SPO: **paso 3:** carga de un archivo grande en una biblioteca de documentos de SharePoint Online y realiza un seguimiento de red. Guarde el seguimiento. 
     
 - Lista de línea base para SPO: **Paso 4:** Examinar la página principal del sitio web de OneDrive y realizar un seguimiento de red. Guarde el seguimiento. 
     
-Esta lista debe incluir las acciones comunes más importantes que los usuarios realizan en SharePoint Online. Observe que el último paso, para realizar el seguimiento que va a OneDrive para la Empresa, compila en una comparación entre la carga de la página principal de SharePoint Online (que suele personalizar las empresas) y OneDrive para la Empresa página principal, que rara vez se personaliza. Se trata de una prueba básica cuando se trata de un sitio en línea de carga lenta SharePoint. Puede crear un registro de esta diferencia en las pruebas.
+Esta lista debe incluir las acciones comunes más importantes que los usuarios realizan en SharePoint Online. Observe que el último paso, para realizar el seguimiento que va a OneDrive para la Empresa, compila en una comparación entre la carga de la página principal de SharePoint Online (que suele personalizar las empresas) y OneDrive para la Empresa página principal, que rara vez se personaliza. Se trata de una prueba básica cuando se trata de un sitio de SharePoint Online de carga lenta. Puede crear un registro de esta diferencia en las pruebas.
   
 Si se encuentra en medio de un problema de rendimiento, muchos de los pasos son los mismos que cuando se toma una línea base. Los seguimientos de red se vuelven críticos, por lo que controlaremos  *cómo*  realizar los seguimientos importantes a continuación. 
   

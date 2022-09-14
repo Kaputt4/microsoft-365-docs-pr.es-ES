@@ -6,7 +6,7 @@ manager: scotv
 ms.date: 9/29/2016
 audience: Admin
 ms.topic: troubleshooting
-ms.service: o365-administration
+ms.service: microsoft-365-enterprise
 ms.localizationpriority: medium
 ms.collection: Ent_O365
 f1.keywords:
@@ -21,12 +21,12 @@ search.appverid:
 - BCS160
 ms.assetid: beec23c2-c5d6-4e84-a8af-e82aefca7802
 description: En este artículo se proporcionan vínculos para los administradores del sistema que planean los requisitos de ancho de banda de red o mejoran el rendimiento de Skype Empresarial Online.
-ms.openlocfilehash: 2316f919d564216cd015b398641278e2f3a11567
-ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
+ms.openlocfilehash: f1cdd649a80e41fe67dae52abcdd9aff1c7eccf4
+ms.sourcegitcommit: 437461fa1d38ff9bb95dd8a1c5f0b94e8111ada2
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "65077368"
+ms.lasthandoff: 09/14/2022
+ms.locfileid: "67671883"
 ---
 # <a name="tune-skype-for-business-online-performance"></a>Optimización del rendimiento de Skype Empresarial Online
 
@@ -40,7 +40,7 @@ En este artículo se proporcionan vínculos para los administradores del sistema
     
 ## <a name="more-ways-to-improve-skype-for-business-online-performance"></a>Más formas de mejorar el rendimiento de Skype Empresarial Online
 
-- [ExpressRoute y QoS en Skype Empresarial Online](/skypeforbusiness/optimizing-your-network/expressroute-and-qos-in-skype-for-business-online): Conectar para Office 365 a través de una conexión de red dedicada mediante Azure ExpressRoute para Office 365 y Skype Empresarial Online. 
+- [ExpressRoute y QoS en Skype Empresarial Online](/skypeforbusiness/optimizing-your-network/expressroute-and-qos-in-skype-for-business-online): conéctese a Office 365 a través de una conexión de red dedicada mediante Azure ExpressRoute para Office 365 y Skype Empresarial Online. 
     
 - [Activar y usar el panel de calidad de llamadas en Skype Empresarial en línea](/SkypeForBusiness/using-call-quality-in-your-organization/turning-on-and-using-call-quality-dashboard): el panel de calidad de llamadas (CQD) le permite supervisar y obtener información sobre la calidad de las llamadas realizadas mediante Skype Empresarial servicios. 
     
@@ -48,11 +48,11 @@ En este artículo se proporcionan vínculos para los administradores del sistema
 
 - [Configurar Skype Empresarial Online](/skypeforbusiness/set-up-skype-for-business-online/set-up-skype-for-business-online)
     
-- [Configurar audioconferencias para Skype Empresarial y Microsoft Teams](/skypeforbusiness/audio-conferencing-in-office-365/set-up-audio-conferencing)
+- [Configuración de audioconferencias para Skype Empresarial y Microsoft Teams](/skypeforbusiness/audio-conferencing-in-office-365/set-up-audio-conferencing)
     
 - [Configurar planes de llamadas (Skype Empresarial)](/SkypeForBusiness/what-are-calling-plans-in-office-365/set-up-calling-plans)
     
-- [Esto es lo que obtienes con Sistema telefónico en Office 365](/skypeforbusiness/what-is-phone-system-in-office-365/here-s-what-you-get-with-phone-system)
+- [Esto es lo que obtienes con Phone System en Office 365](/skypeforbusiness/what-is-phone-system-in-office-365/here-s-what-you-get-with-phone-system)
     
 ## <a name="see-also"></a>Vea también
 

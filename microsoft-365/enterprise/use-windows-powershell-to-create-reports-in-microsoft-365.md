@@ -6,7 +6,7 @@ manager: scotv
 ms.date: 07/17/2020
 audience: ITPro
 ms.topic: landing-page
-ms.service: o365-administration
+ms.service: microsoft-365-enterprise
 ms.localizationpriority: medium
 ms.collection: Ent_O365
 f1.keywords:
@@ -15,23 +15,23 @@ ms.custom:
 - Ent_Office_Other
 - seo-marvel-apr2020
 ms.assetid: 1ea4d4ec-af89-496f-9678-701867f5a6fc
-description: 'Resumen: use PowerShell para Microsoft 365 para crear informes que no se pueden generar en el Centro de administración de Microsoft 365.'
-ms.openlocfilehash: cc64e5108a5aeff517f825ca4973b2511fe124b3
-ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
+description: 'Resumen: use PowerShell para Microsoft 365 para crear informes que no se puedan generar en el Centro de administración de Microsoft 365.'
+ms.openlocfilehash: 7f2180865831885392abbe91ba48957d457d0756
+ms.sourcegitcommit: 437461fa1d38ff9bb95dd8a1c5f0b94e8111ada2
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "65078443"
+ms.lasthandoff: 09/14/2022
+ms.locfileid: "67669109"
 ---
 # <a name="use-powershell-to-create-reports-for-microsoft-365"></a>Usar PowerShell para crear informes de Microsoft 365
 
-*Este artículo se aplica tanto a Microsoft 365 Enterprise como a Office 365 Enterprise.*
+*Este artículo afecta tanto a Office 365 Enterprise como a Microsoft 365 Enterprise*
 
 Hay muchos informes diferentes disponibles en el Centro de administración de Microsoft 365. Pero estos informes solo proporcionan mucha información y, a veces, necesita más. Es cuando necesita PowerShell para Microsoft 365.
   
 En estos artículos se describe cómo usar PowerShell para Microsoft 365 para obtener información del inquilino de Microsoft 365:
   
-- Comenzar con informes mediante PowerShell para Microsoft 365:
+- Introducción a los informes mediante PowerShell para Microsoft 365:
     
   - [¿Por qué necesita usar PowerShell para Microsoft 365?](./why-you-need-to-use-microsoft-365-powershell.md)
     
@@ -40,11 +40,11 @@ En estos artículos se describe cómo usar PowerShell para Microsoft 365 para ob
     
   - [Visualización de licencias y servicios de Microsoft 365 con PowerShell](view-licenses-and-services-with-microsoft-365-powershell.md)
     
-  - [Ver Microsoft 365 usuarios con licencia y sin licencia con PowerShell](view-licensed-and-unlicensed-users-with-microsoft-365-powershell.md)
+  - [Visualización de usuarios con licencia y sin licencia de Microsoft 365 con PowerShell](view-licensed-and-unlicensed-users-with-microsoft-365-powershell.md)
     
-  - [Ver Microsoft 365 detalles de licencia de cuenta y servicio con PowerShell](view-account-license-and-service-details-with-microsoft-365-powershell.md)
+  - [Visualización de los detalles del servicio y la licencia de la cuenta de Microsoft 365 con PowerShell](view-account-license-and-service-details-with-microsoft-365-powershell.md)
     
-  - [Ver Microsoft 365 cuentas de usuario con PowerShell](view-user-accounts-with-microsoft-365-powershell.md)
+  - [Visualización de cuentas de usuario de Microsoft 365 con PowerShell](view-user-accounts-with-microsoft-365-powershell.md)
     
 - Informes de SharePoint Online:
     

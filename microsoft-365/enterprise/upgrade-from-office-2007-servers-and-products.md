@@ -1,12 +1,12 @@
 ---
-title: Recursos que le ayudarán a actualizar desde Office servidores y clientes de 2007
+title: Recursos para ayudarle a actualizar desde servidores y clientes de Office 2007
 ms.author: kvice
 author: kelleyvice-msft
 manager: scotv
 ms.date: 11/01/2018
 audience: ITPro
 ms.topic: overview
-ms.service: o365-solutions
+ms.service: microsoft-365-enterprise
 ms.localizationpriority: medium
 ms.collection: Ent_O365
 search.appverid:
@@ -22,28 +22,28 @@ search.appverid:
 ms.assetid: b2acaeca-4986-40f4-92b7-a1bdd06e549d
 f1.keywords:
 - NOCSH
-description: En este artículo se proporcionan recursos que le ayudarán a actualizar desde Office servidores y clientes de 2007, ya que ha finalizado la compatibilidad con Office 2007.
+description: En este artículo se proporcionan recursos que le ayudarán a actualizar desde servidores y clientes de Office 2007, ya que ha finalizado la compatibilidad con Office 2007.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 47c9fdafabcd81c71106d287b45303a49a8177fc
-ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
+ms.openlocfilehash: a1bd2946afae086a634da8ae77b33099077ad5d1
+ms.sourcegitcommit: 437461fa1d38ff9bb95dd8a1c5f0b94e8111ada2
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "65098216"
+ms.lasthandoff: 09/14/2022
+ms.locfileid: "67670639"
 ---
-# <a name="resources-to-help-you-upgrade-from-office-2007-servers-and-clients"></a>Recursos que le ayudarán a actualizar desde Office servidores y clientes de 2007
+# <a name="resources-to-help-you-upgrade-from-office-2007-servers-and-clients"></a>Recursos para ayudarle a actualizar desde servidores y clientes de Office 2007
 
-*Este artículo se aplica tanto a Microsoft 365 Enterprise como a Office 365 Enterprise.*
+*Este artículo afecta tanto a Office 365 Enterprise como a Microsoft 365 Enterprise*
 
-Si usa Office productos y servicios de 2007, tenga en cuenta que la compatibilidad con estas aplicaciones ha finalizado. Considere la posibilidad de migrar a la nube de Microsoft, empezando por Microsoft 365. Use este artículo como punto de partida para revisar las opciones y planear la actualización.
+Si usa productos y servicios de Office 2007, tenga en cuenta que la compatibilidad con estas aplicaciones ha finalizado. Considere la posibilidad de pasar a la nube de Microsoft, a partir de Microsoft 365. Use este artículo como punto de partida para revisar las opciones y planear la actualización.
       
-## <a name="office-2007-planning-roadmaps"></a>hojas de ruta de planificación de Office 2007
+## <a name="office-2007-planning-roadmaps"></a>Hojas de ruta de planeamiento de Office 2007
   
-El soporte técnico ha finalizado para Office productos y servicios de 2007. Las siguientes hojas de ruta pueden ayudarle a planear la actualización ahora.
+El soporte técnico ha finalizado para los productos y servicios de Office 2007. Las siguientes hojas de ruta pueden ayudarle a planear la actualización ahora.
 
 |**Planeamiento del contenido**|**Fecha de finalización del soporte técnico**|
 |:-----|:-----|
-|[Office hoja de ruta de fin de soporte técnico de 2007](/DeployOffice/office-2007-end-support-roadmap) <br/> |10 de octubre de 2017  <br/> |
+|[Hoja de ruta de fin de soporte técnico de Office 2007](/DeployOffice/office-2007-end-support-roadmap) <br/> |10 de octubre de 2017  <br/> |
 |[Plan de fin del soporte técnico de Exchange 2007](exchange-2007-end-of-support.md) <br/> |11 de abril de 2017  <br/> |
 |[Plan de fin del soporte técnico de SharePoint Server 2007](sharepoint-2007-end-of-support.md) <br/> |10 de octubre de 2017  <br/> |
 |[Plan de fin del soporte técnico de Project Server 2007](project-server-2007-end-of-support.md) <br/> |10 de octubre de 2017  <br/> |
@@ -60,7 +60,7 @@ Ya sea una organización empresarial o un usuario principal individual, tiene va
 
 ## <a name="im-a-home-user-what-do-i-do"></a>Soy un usuario doméstico. ¿Qué hago?
 
-Si usa Office productos y aplicaciones de 2007 en casa, consulte [esta información](plan-upgrade-previous-versions-office.md#im-a-home-user-what-do-i-do).
+Si usa productos y aplicaciones de Office 2007 en casa, consulte [esta información](plan-upgrade-previous-versions-office.md#im-a-home-user-what-do-i-do).
      
 ## <a name="related-topics"></a>Temas relacionados
 

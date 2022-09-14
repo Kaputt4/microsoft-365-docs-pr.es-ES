@@ -6,7 +6,7 @@ manager: scotv
 ms.date: 11/19/2019
 audience: ITPro
 ms.topic: conceptual
-ms.service: o365-administration
+ms.service: microsoft-365-enterprise
 ms.localizationpriority: medium
 search.appverid:
 - MET150
@@ -21,12 +21,12 @@ ms.custom:
 - seo-marvel-apr2020
 ms.assetid: ee73dafb-be54-492e-bcfd-0fbfb5f65e94
 description: Estos pasos de información general están diseñados para ayudarle a configurar la red, crear identidades, implementar Aplicaciones Microsoft 365 y migrar los datos.
-ms.openlocfilehash: 216a06cbd8291bfe01944b01de45f3fce6908b05
-ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
+ms.openlocfilehash: 1562e92c082c27ba349d0f5611cc7bbbc4d55035
+ms.sourcegitcommit: 437461fa1d38ff9bb95dd8a1c5f0b94e8111ada2
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "65091553"
+ms.lasthandoff: 09/14/2022
+ms.locfileid: "67673027"
 ---
 # <a name="deploy-microsoft-365-enterprise-for-your-organization"></a>Implementación de Microsoft 365 Enterprise para su organización
 
@@ -34,11 +34,11 @@ ms.locfileid: "65091553"
 
 En este artículo se describen dos opciones de implementación, tanto si desea ayuda como si lo está haciendo por su cuenta. En cada caso, Microsoft proporciona una ruta de acceso guiada que debe seguir para que la implementación se realice correctamente.
 
-## <a name="guided-microsoft-365-enterprise-setup-process-with-fasttrack"></a>Proceso de configuración de Microsoft 365 Enterprise guiado con FastTrack
+## <a name="guided-microsoft-365-enterprise-setup-process-with-fasttrack"></a>Proceso de configuración guiado Microsoft 365 Enterprise con FastTrack
 
 **[FastTrack para Microsoft 365](https://www.microsoft.com/fasttrack/microsoft-365)** es el mejor método para implementar Microsoft 365. FastTrack le guiará por las configuraciones de implementación más comunes e irá respondiendo sus preguntas sobre la marcha. 
 
-Para acceder a una serie de guías de configuración, inicie sesión en la suscripción de Microsoft 365 y, a continuación, vaya a [Guía de instalación](https://aka.ms/o365fasttrack).
+Para acceder a una serie de guías de instalación, inicie sesión en su suscripción de Microsoft 365 y, a continuación, vaya a [Guía de instalación](https://aka.ms/o365fasttrack).
 
 >[!Note]
 >También puede obtener ayuda de un [asociado de Microsoft](https://www.microsoft.com/solution-providers/home).
@@ -46,7 +46,7 @@ Para acceder a una serie de guías de configuración, inicie sesión en la suscr
 
 ## <a name="do-it-yourself-guided-deployment-of-microsoft-365-enterprise"></a>Implementación guiada de Microsoft 365 Enterprise
 
-La implementación de Microsoft 365 Enterprise por su cuenta requiere que realice una investigación detallada para tomar las decisiones de diseño que agilicen la configuración del servicio Microsoft 365 y la adopción del usuario. Comience su planeamiento [aquí](get-your-organization-ready-for-office-365.md).
+La implementación de Microsoft 365 Enterprise por su cuenta requiere que realice una investigación detallada para tomar las decisiones de diseño que optimicen la configuración del servicio de Microsoft 365 y la adopción del usuario. Comience su planeamiento [aquí](get-your-organization-ready-for-office-365.md).
 
 Para implementar Microsoft 365 Enterprise por su cuenta después de completar el planeamiento, estos son los pasos recomendados.
 
@@ -56,7 +56,7 @@ Para implementar Microsoft 365 Enterprise por su cuenta después de completar el
  
 2. [Configuración de las identidades](protect-your-global-administrator-accounts.md)
 
-   Incluye la determinación de un modelo de identidad (solo en la nube o híbrido) y para la identidad híbrida, la configuración de la sincronización de directorios entre Active Directory local Domain Services (AD DS) y la suscripción de Microsoft 365.
+   Incluye la determinación de un modelo de identidad (solo en la nube o híbrido) y la configuración de la sincronización de directorios entre Active Directory local Domain Services (AD DS) y la suscripción de Microsoft 365.
 
 3. [Implementación de la seguridad](/office365/securitycompliance/security-roadmap)
 
@@ -64,7 +64,7 @@ Para implementar Microsoft 365 Enterprise por su cuenta después de completar el
  
 4. [Implementación de software cliente](/DeployOffice/deployment-guide-microsoft-365-apps)
 
-   Incluye la implementación de Aplicaciones Microsoft 365 para empresas (anteriormente denominada Office 365 ProPlus), la versión actualizada en la nube y siempre actualizada del conjunto de Office (Word, Excel, PowerPoint y otros) en los dispositivos. Cada licencia de cliente Microsoft 365 incluye una licencia para Aplicaciones Microsoft 365 para empresas.
+   Incluye la implementación de Aplicaciones Microsoft 365 para empresas (anteriormente denominada Office 365 ProPlus), la versión actualizada en la nube y siempre actualizada del conjunto de aplicaciones de Office (Word, Excel, PowerPoint, etc.) en los dispositivos. Cada licencia de cliente de Microsoft 365 incluye una licencia para Aplicaciones Microsoft 365 para empresas.
  
 5. [Configuración de la administración de dispositivos móviles](https://support.office.com/article/set-up-mobile-device-management-mdm-in-office-365-dd892318-bc44-4eb1-af00-9db5430be3cd)
 
@@ -72,7 +72,7 @@ Para implementar Microsoft 365 Enterprise por su cuenta después de completar el
  
 6. [Configuración de servicios y aplicaciones](configure-services-and-applications.md)
 
-   Incluye información sobre la migración de los datos y vínculos a artículos que le permiten empezar a trabajar con aplicaciones clave de productividad Microsoft 365, como Exchange Online, SharePoint Online y Teams.
+   Incluye información sobre la migración de los datos y vínculos a artículos que le permiten empezar a trabajar con aplicaciones clave de productividad de Microsoft 365, como Exchange Online, SharePoint Online y Teams.
  
 7. [Proporcionar formación a los usuarios](/office365/admin/admin-overview/get-started-with-office-365#training-resources-for-your-users)
 
