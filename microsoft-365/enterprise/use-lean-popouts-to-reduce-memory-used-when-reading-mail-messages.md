@@ -6,7 +6,7 @@ manager: scotv
 ms.date: 12/3/2019
 audience: ITPro
 ms.topic: article
-ms.service: o365-administration
+ms.service: microsoft-365-enterprise
 ms.localizationpriority: medium
 search.appverid:
 - MET150
@@ -15,18 +15,18 @@ f1.keywords:
 - NOCSH
 description: Este artículo contiene información para usar elementos emergentes lean para mejorar el rendimiento de descarga de mensajes en Outlook en la Web.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 9636fd3beafd169358c4b50cafdc4ac0f9494994
-ms.sourcegitcommit: 133bf9097785309da45df6f374a712a48b33f8e9
+ms.openlocfilehash: 85045c1227509c42eea432a1fb72d639693aa299
+ms.sourcegitcommit: 437461fa1d38ff9bb95dd8a1c5f0b94e8111ada2
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/10/2022
-ms.locfileid: "66012690"
+ms.lasthandoff: 09/14/2022
+ms.locfileid: "67671839"
 ---
 # <a name="use-lean-popouts-to-reduce-memory-used-when-reading-mail-messages"></a>Uso de elementos emergentes lean para reducir la memoria usada al leer mensajes de correo
 
 Este artículo contiene información para mejorar el rendimiento de descarga de mensajes en Outlook en la Web. Este artículo forma parte del [plan de red y el ajuste del rendimiento para Office 365](./network-planning-and-performance.md) proyecto.
   
-Como **administrador** de aplicaciones Office 365, **administrador global** o **administrador de usuarios**, puede configurar Outlook en la Web para ofrecer _elementos emergentes lean_, una versión más pequeña y menos intensiva de memoria de determinados mensajes de correo electrónico en Microsoft Edge o Internet Explorer. Cuando se configuran elementos emergentes lean para Outlook en la Web, se cargan componentes representados en el lado servidor que optimizan el rendimiento.
+Como **Office 365 application Administración**, **global admin** o **user Administración**, puede configurar Outlook en la Web para ofrecer _elementos emergentes lean_, una versión más pequeña y menos intensiva de memoria de determinados mensajes de correo electrónico en Microsoft Edge o Internet Explorer. Cuando se configuran elementos emergentes lean para Outlook en la Web, se cargan componentes representados en el lado servidor que optimizan el rendimiento.
   
 > [!NOTE]
 > A partir de marzo de 2018, los elementos emergentes lean no están disponibles para los mensajes que especifican restricciones de derechos de uso, como Information Rights Management (IRM).

@@ -6,7 +6,7 @@ manager: scotv
 ms.date: 09/23/2020
 audience: Admin
 ms.topic: article
-ms.service: o365-administration
+ms.service: microsoft-365-enterprise
 ms.localizationpriority: medium
 search.appverid:
 - MET150
@@ -19,17 +19,17 @@ ms.custom:
 - LIL_Placement
 - O365ITProTrain
 ms.assetid: e7e4dc5e-e299-482c-9414-c265e145134f
-description: Explica cómo usar PowerShell para quitar Microsoft 365 licencias que se asignaron anteriormente a los usuarios.
-ms.openlocfilehash: b036f58686ac179fc93c1a0605ed2b585ea89c30
-ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
+description: Explica cómo usar PowerShell para quitar licencias de Microsoft 365 que se asignaron anteriormente a los usuarios.
+ms.openlocfilehash: e726136fb2661d4855b3dcc828537b7be6e35c6c
+ms.sourcegitcommit: 437461fa1d38ff9bb95dd8a1c5f0b94e8111ada2
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "65096334"
+ms.lasthandoff: 09/14/2022
+ms.locfileid: "67670727"
 ---
 # <a name="remove-microsoft-365-licenses-from-user-accounts-with-powershell"></a>Eliminación de licencias de Microsoft 365 de cuentas de usuario con PowerShell
 
-*Este artículo se aplica tanto a Microsoft 365 Enterprise como a Office 365 Enterprise.*
+*Este artículo afecta tanto a Office 365 Enterprise como a Microsoft 365 Enterprise*
 
 >[!Note]
 >[Obtenga información sobre cómo quitar licencias de cuentas de usuario](../admin/manage/remove-licenses-from-users.md) con el Centro de administración de Microsoft 365. Para obtener una lista de recursos adicionales, consulte [Administración de usuarios y grupos](/admin).
@@ -37,7 +37,7 @@ ms.locfileid: "65096334"
 
 ## <a name="use-the-microsoft-graph-powershell-sdk"></a>Uso del SDK de PowerShell de Microsoft Graph
 
-En primer lugar, [conéctese al inquilino de Microsoft 365](/graph/powershell/get-started#authentication).
+En primer lugar, [conéctese a su inquilino de Microsoft 365](/graph/powershell/get-started#authentication).
 
 La asignación y eliminación de licencias para un usuario requiere el ámbito de permisos User.ReadWrite.All o uno de los demás permisos enumerados en la [página de referencia "Asignar licencia" Graph API](/graph/api/user-assignlicense).
 
@@ -86,10 +86,10 @@ Otra forma de liberar una licencia consiste en eliminar la cuenta de usuario. Pa
 
 ## <a name="use-the-azure-active-directory-powershell-for-graph-module"></a>Use el módulo de PowerShell Azure Active Directory para Graph
 
->El cmdlet Set-AzureADUserLicense está programado para retirarse. Migre los scripts al cmdlet Set-MgUserLicense del SDK de Microsoft Graph, tal como se describió anteriormente. Para obtener más información, consulte [Migración de aplicaciones para acceder a las API de administración de licencias desde Microsoft Graph](https://techcommunity.microsoft.com/t5/azure-active-directory-identity/migrate-your-apps-to-access-the-license-managements-apis-from/ba-p/2464366).
+>El cmdlet Set-AzureADUserLicense está programado para retirarse. Migre los scripts al cmdlet de Set-MgUserLicense del SDK de Microsoft Graph, como se describió anteriormente. Para obtener más información, consulte [Migración de aplicaciones para acceder a las API de administración de licencias desde Microsoft Graph](https://techcommunity.microsoft.com/t5/azure-active-directory-identity/migrate-your-apps-to-access-the-license-managements-apis-from/ba-p/2464366).
 >
 
-En primer lugar, [conéctese al inquilino de Microsoft 365](connect-to-microsoft-365-powershell.md#connect-with-the-azure-active-directory-powershell-for-graph-module).
+En primer lugar, [conéctese a su inquilino de Microsoft 365](connect-to-microsoft-365-powershell.md#connect-with-the-azure-active-directory-powershell-for-graph-module).
 
 A continuación, enumere los planes de licencia del inquilino con este comando.
 
@@ -134,10 +134,10 @@ if($userList.Count -ne 0) {
 ## <a name="use-the-microsoft-azure-active-directory-module-for-windows-powershell"></a>Use el Módulo Microsoft Azure Active Directory para Windows PowerShell
 
 >[!Note]
->Los cmdlets Set-MsolUserLicense y New-MsolUser (-LicenseAssignment) están programados para retirarse. Migre los scripts al cmdlet Set-MgUserLicense del SDK de Microsoft Graph, tal como se describió anteriormente. Para obtener más información, consulte [Migración de aplicaciones para acceder a las API de administración de licencias desde Microsoft Graph](https://techcommunity.microsoft.com/t5/azure-active-directory-identity/migrate-your-apps-to-access-the-license-managements-apis-from/ba-p/2464366).
+>Los cmdlets Set-MsolUserLicense y New-MsolUser (-LicenseAssignment) están programados para retirarse. Migre los scripts al cmdlet de Set-MgUserLicense del SDK de Microsoft Graph, como se describió anteriormente. Para obtener más información, consulte [Migración de aplicaciones para acceder a las API de administración de licencias desde Microsoft Graph](https://techcommunity.microsoft.com/t5/azure-active-directory-identity/migrate-your-apps-to-access-the-license-managements-apis-from/ba-p/2464366).
 >
 
-En primer lugar, [conéctese al inquilino de Microsoft 365](connect-to-microsoft-365-powershell.md#connect-with-the-microsoft-azure-active-directory-module-for-windows-powershell).
+En primer lugar, [conéctese a su inquilino de Microsoft 365](connect-to-microsoft-365-powershell.md#connect-with-the-microsoft-azure-active-directory-module-for-windows-powershell).
    
 Para ver la información del plan de licencias (**AccountSkuID**) de su organización, vea los temas siguientes:
     

@@ -6,25 +6,25 @@ author: MikePlumleyMSFT
 manager: pamgreen
 audience: ITPro
 ms.topic: article
-ms.service: o365-solutions
+ms.service: microsoft-365-enterprise
 f1.keywords:
 - NOCSH
 ms.custom: seo-marvel-apr2020
 ms.collection: Strat_SP_gtc
 ms.localizationpriority: medium
-description: En este artículo, obtenga información sobre cómo restringir SharePoint a una ubicación geográfica especificada en un entorno multige geográfico.
-ms.openlocfilehash: 06401658afe9f6a26b1280f5931ba6b3ba761742
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+description: En este artículo, aprenderá a restringir los sitios de SharePoint a una ubicación geográfica especificada en un entorno multigeográfico.
+ms.openlocfilehash: 03e1738b88d10717892152655a9e4f3de7a2d847
+ms.sourcegitcommit: 437461fa1d38ff9bb95dd8a1c5f0b94e8111ada2
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60154979"
+ms.lasthandoff: 09/14/2022
+ms.locfileid: "67673049"
 ---
 # <a name="restrict-sharepoint-site-content-to-a-geo-location"></a>Restringir el contenido del sitio de SharePoint a una ubicación geográfica
 
-En algunos casos, puede dejar un sitio y el contenido del archivo en la ubicación geográfica donde se creó, impidiendo que se mueva o que se almacene su contenido en otra ubicación geográfica.
+En determinadas circunstancias, puede optar por aplicar un sitio y su contenido de archivo para que permanezcan en la ubicación geográfica donde se creó el sitio, ya sea evitando que el sitio se mueva o impidiendo el almacenamiento en caché del contenido del archivo del sitio en otra ubicación geográfica.
 
-Para ello, use el cmdlet [Set-SPOSite](/powershell/module/sharepoint-online/set-sposite) con el parámetro **RestrictedToGeo**. Este parámetro tiene un valor predeterminado NULL, pero puede cambiarlo a uno de los siguientes:
+Puede realizar esta tarea mediante el cmdlet [Set-SPOSite](/powershell/module/sharepoint-online/set-sposite) con el parámetro **RestrictedToGeo** . Este parámetro tiene un valor predeterminado de NULL, pero puede cambiarlo a una de las siguientes restricciones:
 
 |Restriction|Descripción|
 |:----------|:----------|

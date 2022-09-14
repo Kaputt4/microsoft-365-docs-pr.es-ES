@@ -5,7 +5,7 @@ author: kelleyvice-msft
 manager: scotv
 audience: Admin
 ms.topic: article
-ms.service: o365-administration
+ms.service: microsoft-365-enterprise
 ms.localizationpriority: medium
 f1.keywords:
 - CSH
@@ -21,22 +21,22 @@ search.appverid:
 - MED150
 ms.assetid: ee5f861e-bd48-4267-83d1-a4ead4b4a00d
 description: En este artículo, busque información sobre el uso de PowerShell para desactivar la sincronización de directorios para Microsoft 365.
-ms.openlocfilehash: 5082f89032c17e549f11f8397126f6d059937c48
-ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
+ms.openlocfilehash: 90c4fb95aade8752f5be53db0163087b3a4f1d71
+ms.sourcegitcommit: 437461fa1d38ff9bb95dd8a1c5f0b94e8111ada2
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "65077357"
+ms.lasthandoff: 09/14/2022
+ms.locfileid: "67671509"
 ---
 # <a name="turn-off-directory-synchronization-for-microsoft-365"></a>Desactivar la sincronización de directorios para Microsoft 365
-Puede usar PowerShell para desactivar la sincronización de directorios y convertir los usuarios sincronizados en solo nube. Sin embargo, no se recomienda desactivar la sincronización de directorios como paso de solución de problemas. Si necesita ayuda para solucionar problemas de sincronización de directorios, consulte el artículo [Solucionar problemas con la sincronización de directorios para Microsoft 365](fix-problems-with-directory-synchronization.md). 
+Puede usar PowerShell para desactivar la sincronización de directorios y convertir los usuarios sincronizados en solo nube. Sin embargo, no se recomienda desactivar la sincronización de directorios como paso de solución de problemas. Si necesita ayuda para solucionar problemas de sincronización de directorios, consulte el artículo [Corrección de problemas con la sincronización de directorios para Microsoft 365](fix-problems-with-directory-synchronization.md) . 
   
 [Póngase en contacto con el soporte](https://support.office.com/article/32a17ca7-6fa0-4870-8a8d-e25ba4ccfd4b) técnico para productos empresariales si es necesario.
   
 ## <a name="turn-off-directory-synchronization"></a>Desactivar la sincronización de directorios  
 Para desactivar la sincronización de directorios:
   
-1. En primer lugar, instale el software necesario y conéctese a la suscripción de Microsoft 365. Para obtener instrucciones, consulte [Conectar con el módulo Microsoft Azure Active Directory para Windows PowerShell](connect-to-microsoft-365-powershell.md#connect-with-the-microsoft-azure-active-directory-module-for-windows-powershell).
+1. En primer lugar, instale el software necesario y conéctese a la suscripción de Microsoft 365. Para obtener instrucciones, consulte [Conexión con el módulo Microsoft Azure Active Directory para Windows PowerShell](connect-to-microsoft-365-powershell.md#connect-with-the-microsoft-azure-active-directory-module-for-windows-powershell).
     
 2. Use [Set-MsolDirSyncEnabled](/previous-versions/azure/dn194097(v=azure.100)) para deshabilitar la sincronización de directorios: 
     

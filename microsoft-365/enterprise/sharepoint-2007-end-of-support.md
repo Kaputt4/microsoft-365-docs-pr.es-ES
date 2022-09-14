@@ -16,7 +16,7 @@ ms.custom:
 - configssc
 - AppDefToBDC
 - seo-marvel-apr2020
-ms.service: o365-solutions
+ms.service: microsoft-365-enterprise
 ms.localizationpriority: medium
 ms.collection:
 - Ent_O365
@@ -37,12 +37,12 @@ search.appverid:
 - OSU160
 ms.assetid: ba124775-d5c0-4d68-b88d-8458ad4c3717
 description: La compatibilidad con SharePoint Server 2007 finalizó en octubre de 2017. En este artículo, obtenga información sobre las opciones de actualización, migración y soporte técnico.
-ms.openlocfilehash: 4678af709c498366c74802e70d17b1380b871143
-ms.sourcegitcommit: 61bdfa84f2d6ce0b61ba5df39dcde58df6b3b59d
+ms.openlocfilehash: 889f166c7f1b6aac9110a34f2cc5ae0e069d6b7f
+ms.sourcegitcommit: 437461fa1d38ff9bb95dd8a1c5f0b94e8111ada2
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/08/2022
-ms.locfileid: "65941160"
+ms.lasthandoff: 09/14/2022
+ms.locfileid: "67670683"
 ---
 # <a name="sharepoint-server-2007-end-of-support-roadmap"></a>Plan de fin del soporte técnico de SharePoint Server 2007
 
@@ -62,7 +62,7 @@ SharePoint Server, como la mayoría de los productos de Microsoft, tiene un cicl
     
 - Actualizaciones de zona horaria.
     
-La granja de servidores de SharePoint Server 2007 seguirá funcionando después del 10 de octubre de 2017, pero no se publicarán más actualizaciones, revisiones o correcciones para el producto, incluidas revisiones o correcciones de seguridad. El soporte técnico de Microsoft ha desplazado por completo sus esfuerzos de soporte técnico a versiones más recientes del producto. Dado que la instalación ya no se admite ni se aplica una revisión, debe actualizar el producto o migrar datos importantes.
+La granja de servidores de SharePoint Server 2007 seguirá funcionando después del 10 de octubre de 2017, pero no se publicarán más actualizaciones, revisiones o correcciones para el producto, incluidas revisiones o correcciones de seguridad. Soporte técnico de Microsoft ha desplazado por completo sus esfuerzos de apoyo a versiones más recientes del producto. Dado que la instalación ya no se admite ni se aplica una revisión, debe actualizar el producto o migrar datos importantes.
   
 > [!TIP]
 > Si aún no ha planeado la actualización o migración, consulte: Opciones de [migración de SharePoint 2007 para ver](sharepoint-2007-migration-options.md) algunos ejemplos de dónde empezar. También puede buscar [asociados de Microsoft](https://go.microsoft.com/fwlink/?linkid=841249) que puedan ayudar con la actualización o la migración de Microsoft 365 (o ambas).
@@ -124,7 +124,7 @@ No se puede migrar directamente de SharePoint 2007 a SharePoint Online. El trasl
 |Microsoft publica [contratos de nivel de](/office365/servicedescriptions/office-365-platform-service-description/service-level-agreement) servicio y se mueve rápidamente para resolver incidentes de nivel de servicio. <br/> |El servicio automatiza la copia de seguridad y restauración y otras opciones de recuperación en SharePoint Online. Las copias de seguridad se sobrescriben si no se usan. <br/> |
 |Microsoft realiza pruebas de seguridad y optimización del rendimiento del servidor de forma continuada en el servicio. <br/> |El servicio instala los cambios en la interfaz de usuario y otras características de SharePoint y es posible que tenga que activarse o desactivarse. <br/> |
 |Microsoft 365 cumple muchos estándares del sector: [ofertas de cumplimiento de Microsoft](/compliance/regulatory/offering-home).  <br/> |La asistencia de [FastTrack](https://www.microsoft.com/fasttrack/microsoft-365) para la migración es limitada.  <br/> Gran parte de la actualización será manual o a través de la API de migración de SPO que se describe en la hoja de ruta de [desarrollo de contenido de migración de SharePoint Online y OneDrive](/sharepointmigration/upload-on-premises-content-to-sharepoint-online-using-powershell-cmdlets).  <br/> |
-|Los ingenieros de soporte técnico de Microsoft y los empleados del centro de datos no tendrán acceso de administrador sin restricciones a la suscripción. <br/> |Puede haber costos adicionales si es necesario actualizar el hardware para admitir la versión más reciente de SharePoint o si se requiere una granja de servidores secundaria para la actualización.  <br/> |
+|Soporte técnico de Microsoft ingenieros y empleados del centro de datos no tendrán acceso de administrador sin restricciones a la suscripción. <br/> |Puede haber costos adicionales si es necesario actualizar el hardware para admitir la versión más reciente de SharePoint o si se requiere una granja de servidores secundaria para la actualización.  <br/> |
 |Los asociados pueden ayudar con el trabajo único de migración de los datos a SharePoint Online.  <br/> ||
 |Los productos en línea se actualizan automáticamente. Aunque las características pueden dejar de estar en desuso, no hay un verdadero final de soporte técnico. <br/> ||
    
@@ -162,7 +162,7 @@ Si tiene personalizaciones, es fundamental tener un plan para cada paso de la ru
     
 |**Profesional local**|**Con local**|
 |:-----|:-----|
-|Control total de todos los aspectos de la granja de SharePoint, desde el hardware del servidor hasta.  <br/> |Todas las interrupciones y correcciones son responsabilidad de su empresa (puede contratar soporte técnico de Microsoft de pago si su producto no ha superado el final del soporte técnico).  <br/> |
+|Control total de todos los aspectos de la granja de SharePoint, desde el hardware del servidor hasta.  <br/> |Todos los descansos y correcciones son responsabilidad de su empresa (puede contratar a Soporte técnico de Microsoft de pago si su producto no ha superado el final del soporte técnico).  <br/> |
 |Conjunto de características completo de SharePoint Server local con la opción de conectar la granja local a una suscripción de SharePoint Online a través de híbrido.  <br/> |Actualización, revisiones, correcciones de seguridad y todo el mantenimiento de SharePoint Server administrado localmente.  <br/> |
 |Acceso completo para una mayor personalización.  <br/> |Las [ofertas de cumplimiento de Microsoft](/compliance/regulatory/offering-home) deben configurarse manualmente en el entorno local.  <br/> |
 |Las pruebas de seguridad y el ajuste del rendimiento del servidor se realizan en el entorno local (bajo su control).  <br/> |Microsoft 365 puede hacer que las características estén disponibles para SharePoint Online que no interoperan con SharePoint Server local.  <br/> |
@@ -194,7 +194,7 @@ Si decide que una granja híbrida de SharePoint Server beneficiará a su empresa
 | Opción | Descripción |
 |:-----|:-----|
 [Ofertas de cumplimiento de Microsoft](/compliance/regulatory/offering-home)  <br/> |La asistencia de [FastTrack](https://www.microsoft.com/fasttrack/microsoft-365) para la migración es limitada.  <br/> Gran parte de la actualización será manual o a través de la API de migración de SPO que se describe en la hoja de ruta de [desarrollo de contenido de migración de SharePoint Online y OneDrive](/sharepointmigration/upload-on-premises-content-to-sharepoint-online-using-powershell-cmdlets).  <br/> |
-|Los ingenieros de soporte técnico de Microsoft y los empleados del centro de datos no tienen acceso de administrador sin restricciones a la suscripción.<br/> |Puede haber costos adicionales si es necesario actualizar la infraestructura de hardware para admitir la versión más reciente de SharePoint o si se requiere una granja de servidores secundaria para la actualización.  <br/> |
+|Soporte técnico de Microsoft ingenieros y empleados del centro de datos no tienen acceso de administrador sin restricciones a la suscripción.<br/> |Puede haber costos adicionales si es necesario actualizar la infraestructura de hardware para admitir la versión más reciente de SharePoint o si se requiere una granja de servidores secundaria para la actualización.  <br/> |
 |Los asociados pueden ayudar con el trabajo único de migración de los datos a SharePoint Online.  <br/> ||
 |Los productos en línea se actualizan automáticamente en todo el servicio. Aunque las características pueden dejar de estar en desuso, no hay un verdadero final de soporte técnico.<br/> ||
    
@@ -232,7 +232,7 @@ Si tiene *personalizaciones*, es fundamental que tenga un plan de actualización
     
 |**Pro local**|**Con local**|
 |:-----|:-----|
-|Control total de todos los aspectos de la granja de SharePoint, desde el hardware del servidor hasta.  <br/> |Todos los descansos y correcciones son responsabilidad de su empresa. (Puede interactuar con el soporte técnico de Microsoft de pago si su producto no ha superado el final del soporte técnico).  <br/> |
+|Control total de todos los aspectos de la granja de SharePoint, desde el hardware del servidor hasta.  <br/> |Todos los descansos y correcciones son responsabilidad de su empresa. (Puede interactuar con Soporte técnico de Microsoft de pago si su producto no ha superado el fin del soporte técnico).  <br/> |
 |Conjunto de características completo de SharePoint Server local con la opción de conectar la granja local a una suscripción de SharePoint Online a través de híbrido.  <br/> |Actualización, revisiones, correcciones de seguridad y todo el mantenimiento de SharePoint Server administrado localmente.  <br/> |
 |Acceso completo para una mayor personalización.  <br/> |Las [ofertas de cumplimiento de Microsoft](/compliance/regulatory/offering-home) deben configurarse manualmente en el entorno local.  <br/> |
 |Las pruebas de seguridad y la optimización del rendimiento del servidor se realizan en el entorno local bajo su control.  <br/> |Microsoft 365 puede hacer que las características estén disponibles para SharePoint Online que no interoperan con SharePoint Server local  <br/> |
@@ -261,7 +261,7 @@ Si la respuesta a sus necesidades de migración está en algún lugar entre el a
   
 Si decide que una granja híbrida de SharePoint Server beneficiará a su empresa, familiarícese con los tipos de híbridos existentes y cómo configurar la conexión entre la granja de servidores de SharePoint local y la suscripción de Microsoft 365.
   
-Una buena manera de ver cómo funciona esto es crear un entorno de desarrollo y pruebas de Microsoft 365, que puede configurar con [guías de laboratorio de pruebas](m365-enterprise-test-lab-guides.md). Después de obtener una suscripción de Microsoft 365 de prueba o comprada, puede crear colecciones de sitios, webs y bibliotecas de documentos en SharePoint Online a las que puede migrar datos. Puede migrar manualmente, mediante la API de migración o, si desea migrar el contenido de Mi sitio a OneDrive para la Empresa, mediante el asistente híbrido.
+Una buena manera de ver cómo funciona esto es crear un entorno de desarrollo y pruebas de Microsoft 365, que puede configurar con [guías de laboratorio de pruebas](m365-enterprise-test-lab-guides.md). Después de obtener una suscripción de Microsoft 365 de prueba o comprada, puede crear colecciones de sitios, webs y bibliotecas de documentos en SharePoint Online a las que puede migrar datos. Puede migrar manualmente, mediante la API de migración o, si quiere migrar el contenido de Mi sitio a OneDrive para la Empresa, mediante el asistente híbrido.
   
 > [!NOTE]
 > Recuerde que para usar la opción híbrida, la granja de SharePoint 2007 tendrá que actualizarse localmente a SharePoint Server 2013 o SharePoint Server 2016.

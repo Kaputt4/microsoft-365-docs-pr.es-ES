@@ -6,7 +6,7 @@ manager: scotv
 ms.date: 12/29/2016
 audience: ITPro
 ms.topic: conceptual
-ms.service: o365-administration
+ms.service: microsoft-365-enterprise
 ms.localizationpriority: medium
 ms.collection: Ent_O365
 f1.keywords:
@@ -18,12 +18,12 @@ search.appverid:
 - BCS160
 ms.assetid: 073433ca-3511-4db9-b173-7a2edca57691
 description: 'Resumen: describe las consideraciones sobre la capacidad de red, los aceleradores WAN y los dispositivos de equilibrio de carga que se usan para conectarse a Office 365.'
-ms.openlocfilehash: 3b79e73f292ecf1db38a90364db3d2e475723158
-ms.sourcegitcommit: 349f0f54b0397cdd7d8fbb9ef07f1b6654a32d6e
+ms.openlocfilehash: eddb7cd45e872b41fa25dbf0cd1786ccb40de1e2
+ms.sourcegitcommit: 437461fa1d38ff9bb95dd8a1c5f0b94e8111ada2
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/20/2022
-ms.locfileid: "65622828"
+ms.lasthandoff: 09/14/2022
+ms.locfileid: "67672081"
 ---
 # <a name="plan-for-network-devices-that-connect-to-office-365-services"></a>Planificación de dispositivos de red que se conecten a servicios de Office 365
 
@@ -60,7 +60,7 @@ Lea nuestra declaración de soporte técnico sobre [el uso del controlador de op
   
 ## <a name="hardware-and-software-load-balancing-devices"></a>Dispositivos de equilibrio de carga de hardware y software
 
-Su organización debe usar un equilibrador de carga de hardware (HLB) o una solución de equilibrio de carga de red (NLB) para distribuir solicitudes a los servidores de Servicios de federación de Active Directory (AD FS) (AD FS) o a los servidores híbridos de Exchange. Los dispositivos de equilibrio de carga controlan el tráfico de red a los servidores locales. Estos servidores son fundamentales para ayudar a garantizar la disponibilidad del inicio de sesión único y Exchange implementación híbrida.
+La organización debe usar un equilibrador de carga de hardware (HLB) o una solución de equilibrio de carga de red (NLB) para distribuir las solicitudes a los servidores de Servicios de federación de Active Directory (AD FS) (AD FS) o a los servidores híbridos de Exchange. Los dispositivos de equilibrio de carga controlan el tráfico de red a los servidores locales. Estos servidores son fundamentales para ayudar a garantizar la disponibilidad del inicio de sesión único y la implementación híbrida de Exchange.
   
 Proporcionamos una solución NLB basada en software integrada en Windows Server. Office 365 admite esta solución para lograr el equilibrio de carga.
   
@@ -68,7 +68,7 @@ Proporcionamos una solución NLB basada en software integrada en Windows Server.
 
 Para obtener más información sobre cómo configurar firewalls y servidores proxy para conectarse a Office 365, consulte [Administración de puntos de conexión de Office 365](https://support.office.com/article/99cab9d4-ef59-4207-9f2b-3728eb46bf9a), [Evaluación de Office 365 conectividad de red](assessing-network-connectivity.md) y [preguntas más frecuentes sobre puntos de conexión de Office 365](https://support.office.com/article/d4088321-1c89-4b96-9c99-54c75cae2e6d) para obtener más información sobre los dispositivos y la selección de circuitos.
   
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 [Guías de configuración para servicios de Office 365](setup-guides-for-microsoft-365.md)
 

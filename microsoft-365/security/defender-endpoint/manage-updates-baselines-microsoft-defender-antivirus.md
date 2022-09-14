@@ -7,7 +7,7 @@ ms.mktglfcycl: manage
 ms.sitesec: library
 ms.pagetype: security
 ms.localizationpriority: high
-ms.date: 09/08/2022
+ms.date: 09/13/2022
 audience: ITPro
 ms.topic: reference
 author: denisebmsft
@@ -19,12 +19,12 @@ ms.subservice: mde
 ms.collection:
 - M365-security-compliance
 - m365initiative-defender-endpoint
-ms.openlocfilehash: ad736e8cb196fabbfd1c08112ef0aa9dc0794593
-ms.sourcegitcommit: 6f36cb8c69090c62a006d461bfc5aa1139cf09a9
+ms.openlocfilehash: 24b5d6be3e4b0a226617623b68c49d2043475045
+ms.sourcegitcommit: 437461fa1d38ff9bb95dd8a1c5f0b94e8111ada2
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/08/2022
-ms.locfileid: "67631480"
+ms.lasthandoff: 09/14/2022
+ms.locfileid: "67672235"
 ---
 # <a name="manage-microsoft-defender-antivirus-updates-and-apply-baselines"></a>Para obtener más información, consulte Administrar actualizaciones de Antivirus de Microsoft Defender y aplicar bases de referencia.
 
@@ -87,31 +87,32 @@ Todas nuestras actualizaciones contienen
 - Mejoras en la capacidad de servicio
 - Mejoras de integración (nube, [Microsoft 365 Defender](/microsoft-365/security/defender/microsoft-365-defender))
 <br/><br/>
-<details> 
-<summary> Agosto de 2022 (Plataforma: 4.18.2207.7| Motor: 1.1.19600.3)</summary> 
- &ensp;Versión de actualización de inteligencia de seguridad: **1.373.1647.0** <br/>
-&ensp;Fecha de publicación: **6 de septiembre de 2022**<br/>
+<details>
+<summary>Agosto de 2022 (Plataforma: 4.18.2207.7 | Motor: 1.1.19600.3)</summary>
+
+&ensp;Versión de actualización de inteligencia de seguridad: **1.373.1647.0**<br/>
+&ensp;Fecha de lanzamiento: **6 de septiembre de 2022**<br/>
 &ensp;Plataforma: **4.18.2207.7**<br/>
 &ensp;Motor: **1.1.19600.3**<br/>
 &ensp;Fase de soporte técnico: **Actualizaciones críticas y de seguridad**<br/>
-  Versión del motor: 1.1.19600.3<br/>
-Versión de actualización de inteligencia de seguridad: 1.373.1647.0<br/>
-  
-### <a name="whats-new"></a>Novedades 
 
-- Se han corregido problemas del instalador del agente unificado en el servidor WS2012R2 y Windows Server 2016 <br/>
-- Se ha corregido un problema de corrección para la detección personalizada. <br/>
-- Condición de carrera fija relacionada con la supervisión del comportamiento <br/>
-- Se han resuelto varios escenarios de interbloqueo en archivos dll de Defender <br/>
-- Frecuencia mejorada de notificación del sistema de Windows para las reglas de ASR  
-  
-### <a name="known-issues"></a>Problemas conocidos 
+Versión del motor: 1.1.19600.3<br/>
+Versión de actualización de inteligencia de seguridad: 1.373.1647.0 <br/>
 
-No hay problemas conocidos   
+### <a name="whats-new"></a>Novedades
 
-<br/> 
-</details> 
-<details>
+- Se han corregido problemas del instalador del agente unificado en el servidor WS2012R2 y Windows Server 2016
+- Se ha corregido un problema de corrección para la detección personalizada.
+- Condición de carrera fija relacionada con la supervisión del comportamiento
+- Se han resuelto varios escenarios de interbloqueo en archivos dll de Defender
+- Frecuencia mejorada de notificación del sistema de Windows para las reglas de ASR
+
+### <a name="known-issues"></a>Problemas conocidos
+
+- Ninguno
+
+<br/><br/>
+</details><details>
 <summary>Julio-2022 (Plataforma: 4.18.2207.5 | Motor: 1.1.19500.2)</summary>
 
 &ensp;Versión de actualización de inteligencia de seguridad: **1.373.219.0**<br/>

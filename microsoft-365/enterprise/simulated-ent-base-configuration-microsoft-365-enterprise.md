@@ -8,7 +8,7 @@ manager: scotv
 ms.date: 11/21/2019
 audience: ITPro
 ms.topic: article
-ms.service: o365-solutions
+ms.service: microsoft-365-enterprise
 ms.localizationpriority: medium
 ms.collection:
 - M365-subscription-management
@@ -18,12 +18,12 @@ ms.custom:
 - seo-marvel-apr2020
 ms.assetid: 6f916a77-301c-4be2-b407-6cec4d80df76
 description: Use esta guía de laboratorio de pruebas para crear un entorno de prueba empresarial simulado para Microsoft 365 para empresas.
-ms.openlocfilehash: 9c52bf657e91ceca9ef6e43f20a523a57a7b5042
-ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
+ms.openlocfilehash: 7f90046c75c2b95c288cdf2134734d1cc9898125
+ms.sourcegitcommit: 437461fa1d38ff9bb95dd8a1c5f0b94e8111ada2
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "65078721"
+ms.lasthandoff: 09/14/2022
+ms.locfileid: "67672983"
 ---
 # <a name="the-simulated-enterprise-base-configuration"></a>La configuración básica empresarial simulada
 
@@ -40,18 +40,18 @@ La creación de un entorno de prueba simplificado implica dos fases:
 - [Fase 1: Crear una intranet simulada](#phase-1-create-a-simulated-intranet)
 - [Fase 2: crear la suscripción a Microsoft 365 E5](#phase-2-create-your-microsoft-365-e5-subscription)
 
-Puede usar el entorno resultante para probar las características y la funcionalidad de [Microsoft 365 para empresas](https://www.microsoft.com/microsoft-365/enterprise) con guías de laboratorio de [pruebas](m365-enterprise-test-lab-guides.md) adicionales o por su cuenta.
+Puede usar el entorno resultante para probar las características y la funcionalidad de [Microsoft 365 para empresas](https://www.microsoft.com/microsoft-365/enterprise) con guías de [laboratorio de pruebas](m365-enterprise-test-lab-guides.md) adicionales o por su cuenta.
 
 ![Guías de laboratorio de prueba para la nube de Microsoft.](../media/m365-enterprise-test-lab-guides/cloud-tlg-icon.png)
 
 > [!TIP]
-> Para obtener un mapa visual de todos los artículos de la pila Microsoft 365 para la pila guía del laboratorio de pruebas empresarial, vaya a [Microsoft 365 para la pila de la guía del laboratorio de pruebas empresarial](../downloads/Microsoft365EnterpriseTLGStack.pdf).
+> Para obtener un mapa visual de todos los artículos de la pila guía del laboratorio de pruebas de Microsoft 365 para empresas, vaya a [Microsoft 365 para enterprise Test Lab Guide Stack (Pila de guía del laboratorio de pruebas empresariales).](../downloads/Microsoft365EnterpriseTLGStack.pdf)
 
 ## <a name="phase-1-create-a-simulated-intranet"></a>Fase 1: Crear una intranet simulada
 
 En esta fase, cree una intranet simulada en los servicios de infraestructura de Azure que incluya un controlador de dominio Servicios de dominio de Active Directory (AD DS), un servidor de aplicaciones y un equipo cliente.
 
-Usará estos equipos en [Microsoft 365 adicionales para guías de laboratorio de pruebas empresariales](m365-enterprise-test-lab-guides.md) para configurar y demostrar la identidad híbrida y otras funcionalidades.
+Usará estos equipos en [otras guías de laboratorio de pruebas de Microsoft 365 para empresas](m365-enterprise-test-lab-guides.md) para configurar y demostrar la identidad híbrida y otras funcionalidades.
 
 ### <a name="method-1-build-your-simulated-intranet-with-an-azure-resource-manager-template"></a>Método 1: Crear la intranet simulada con una plantilla de Azure Resource Manager.
 
@@ -160,7 +160,7 @@ Se le pedirá un nombre de usuario y una contraseña para la cuenta de administr
   
 A continuación, conéctese a la máquina virtual DC1:
   
-1. En el [Azure Portal](https://portal.azure.com), seleccione **Grupos de recursos** > <**_el nombre del nuevo grupo de recursos_*_> > _* DC1** >  **Conectar**.
+1. En el [Azure Portal](https://portal.azure.com), seleccione **Grupos de recursos** > <**_el nombre del nuevo grupo de recursos_*_> > _* DC1** > **Connect**.
     
 2. En el panel abierto, seleccione **Descargar archivo RDP**. Abra el archivo DC1.rdp que se descarga y, a continuación, seleccione **Conectar**.
     
@@ -168,11 +168,11 @@ A continuación, conéctese a la máquina virtual DC1:
     
    - Para Windows 7:
     
-     En el **cuadro** de diálogo Seguridad de Windows, seleccione **Usar otra cuenta**. En **Nombre de usuario**, escriba el *nombre de la cuenta de administrador* **dc1local\\**<>.
+     En el **cuadro** de diálogo Seguridad de Windows, seleccione **Usar otra cuenta**. En **Nombre de usuario**, escriba el *nombre de la cuenta de administrador local* **de DC1\\**<>.
     
    - Para Windows 8 o Windows 10:
     
-     En el **cuadro** de diálogo Seguridad de Windows, seleccione **Más opciones** y, a continuación, seleccione **Usar una cuenta diferente**. En **Nombre de usuario**, escriba el *nombre de la cuenta de administrador* **dc1local\\**<>.
+     En el **cuadro** de diálogo Seguridad de Windows, seleccione **Más opciones** y, a continuación, seleccione **Usar una cuenta diferente**. En **Nombre de usuario**, escriba el *nombre de la cuenta de administrador local* **de DC1\\**<>.
     
 4. En **Contraseña**, escriba la contraseña de la cuenta de administrador local y, a continuación, seleccione **Aceptar**.
     
@@ -197,11 +197,11 @@ Tenga en cuenta que estos comandos pueden tardan unos minutos en completarse.
   
 Después de que DC1 se reinicie, vuelva a conectarse a la máquina virtual de DC1.
   
-1. En el [Azure Portal](https://portal.azure.com), seleccione **Grupos de recursos** > <*el nombre del grupo de recursos*> > **DC1** >  **Conectar**.
+1. En el [Azure Portal](https://portal.azure.com), seleccione **Grupos de recursos** > <*el nombre del grupo de recursos*> > **DC1** > **Connect**.
     
 2. Ejecute el archivo DC1.rdp que se descarga y, a continuación, seleccione **Conectar**.
     
-3. En **Seguridad de Windows**, seleccione **Usar otra cuenta**. En **Nombre de usuario**, escriba **testlablocal\\**< *administrator account name*>.
+3. En **Seguridad de Windows**, seleccione **Usar otra cuenta**. En **Nombre de usuario**, escriba el *nombre de la cuenta de administrador local* **de TESTLAB\\**<>.
     
 4. En el cuadro **Contraseña** , escriba la contraseña de la cuenta de administrador local y, a continuación, seleccione **Aceptar**.
     
@@ -271,7 +271,7 @@ Add-Computer -DomainName ("testlab." + $yourDomain)
 Restart-Computer
 ```
 
-Tenga en cuenta que después de ejecutar el comando **Add-Computer** , debe proporcionar las credenciales de la cuenta de dominio TESTLABUser1\\.
+Tenga en cuenta que después de ejecutar el comando **Add-Computer** , debe proporcionar las credenciales de la cuenta de dominio TESTLAB\\User1.
   
 Una vez reiniciado APP1, conéctese a él con la cuenta TESTLAB\\User1 y luego abra un símbolo del sistema de Windows PowerShell con nivel de administrador.
   
@@ -347,7 +347,7 @@ Después, compruebe que tiene acceso a recursos compartidos de archivos y web en
     
 6. En la barra de tareas del escritorio, seleccione el icono de Explorador de archivos.
     
-7. En la barra de direcciones, escriba **\\\\app1Files\\** y presione **Entrar**. Debería ver una ventana de carpeta con el contenido de la carpeta compartida Archivos.
+7. En la barra de direcciones, escriba **\\\\archivos app1\\** y presione **Entrar**. Debería ver una ventana de carpeta con el contenido de la carpeta compartida Archivos.
     
 8. En la ventana de la carpeta compartida **Archivos**, haga doble clic en el archivo **Example.txt**. Debería ver el contenido del archivo Example.txt.
     
@@ -381,7 +381,7 @@ Para configurar su nueva suscripción de prueba de Office 365 E5, siga las instr
 
 Si solo necesita un entorno de prueba Office 365, no es necesario leer el resto de este artículo.
 
-Para obtener más guías de laboratorio de pruebas que se aplican tanto a Microsoft 365 como a Office 365, consulte [Microsoft 365 para guías de laboratorio de pruebas empresariales](m365-enterprise-test-lab-guides.md).
+Para obtener más guías de laboratorio de pruebas que se aplican a Microsoft 365 y Office 365, consulte [Guías de laboratorio de pruebas de Microsoft 365 para empresas](m365-enterprise-test-lab-guides.md).
 
 ### <a name="add-a-microsoft-365-e5-trial-subscription"></a>Agregar una suscripción de prueba de Microsoft 365 E5
 
