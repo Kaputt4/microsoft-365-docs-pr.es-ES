@@ -17,12 +17,12 @@ description: Seguridad en Office 365, desde EOP hasta Defender para Office 365
 ms.subservice: mdo
 ms.service: microsoft-365-security
 adobe-target: true
-ms.openlocfilehash: ad636b1d8b67b69722373ee778ef332da6010611
-ms.sourcegitcommit: 2b89bcff547e00be3d38dc8d1e6cbcf8f41eba42
+ms.openlocfilehash: 6a2c9841a894ad46614cca4b1ee768eac1fd2a35
+ms.sourcegitcommit: 37e137535c4f70702afe1a5eeaa899c75ee02cfd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/03/2022
-ms.locfileid: "67598745"
+ms.lasthandoff: 09/13/2022
+ms.locfileid: "67661835"
 ---
 # <a name="microsoft-defender-for-office-365-security-overview"></a>Información general de seguridad de Microsoft Defender para Office 365
 
@@ -141,7 +141,7 @@ Esta referencia rápida le ayudará a comprender qué funcionalidades se incluye
 - Los clientes de Microsoft Defender para Office 365 P2 tienen acceso a **Integración de Microsoft Defender para Office 365** para detectar, revisar y responder eficazmente a incidentes y alertas.
 
 > [!TIP]
-> ***Sugerencia de Insider** _. Puede usar la tabla de contenido de docs.microsoft.com para obtener información sobre EOP y sobre Microsoft Defender para Office 365. Vuelva a la página [Información general de seguridad de Office 365](index.yml)y verá la tabla de contenido en la barra lateral. Comienza con la Implementación (lo que incluye la migración) y después continúa con la prevención, la detección, la investigación y la respuesta. <p> Esta estructura está dividida de modo que los temas de _ *Administración de seguridad** están seguidos por los temas de **Operaciones de seguridad**. Si es un miembro nuevo en cualquier rol de trabajo, use el vínculo de esta sugerencia y sus conocimientos de la tabla de contenido para ayudarle a conocer el espacio. No olvide usar los *vínculos de comentarios* y *calificar los artículos* sobre la marcha. Los comentarios nos ayudan a mejorar lo que le ofrecemos.
+> ***Sugerencia de Insider** _. Puede usar la tabla de contenido de Microsoft Docs para obtener información sobre EOP y Microsoft Defender para Office 365. Vuelva a la página [Información general de seguridad de Office 365](index.yml)y verá la tabla de contenido en la barra lateral. Comienza con la Implementación (lo que incluye la migración) y después continúa con la prevención, la detección, la investigación y la respuesta. <p> Esta estructura está dividida de modo que los temas de _ *Administración de seguridad** están seguidos por los temas de **Operaciones de seguridad**. Si es un miembro nuevo en cualquier rol de trabajo, use el vínculo de esta sugerencia y sus conocimientos de la tabla de contenido para ayudarle a conocer el espacio. No olvide usar los *vínculos de comentarios* y *calificar los artículos* sobre la marcha. Los comentarios nos ayudan a mejorar lo que le ofrecemos.
 
 ## <a name="where-to-go-next"></a>Acciones siguientes
 

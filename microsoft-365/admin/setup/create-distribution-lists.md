@@ -10,6 +10,7 @@ ms.topic: article
 ms.service: o365-administration
 ms.localizationpriority: medium
 ms.collection:
+- highpri
 - M365-subscription-management
 - Adm_O365
 search.appverid:
@@ -24,12 +25,12 @@ ms.custom:
 - okr_smb
 - AdminTemplateSet
 description: Cree grupos de distribución o listas en el Centro de administración de Microsoft 365 para que pueda enviar correos electrónicos a un grupo sin escribir el nombre de cada destinatario.
-ms.openlocfilehash: c1e640a9294dce11e5e321856c97c9094c407c07
-ms.sourcegitcommit: 2f6a7410e9919f753a759c1ada441141e18f06fd
+ms.openlocfilehash: c8ef856e301ddea20b55b3132f72a6b25996c440
+ms.sourcegitcommit: 37e137535c4f70702afe1a5eeaa899c75ee02cfd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/30/2022
-ms.locfileid: "67086547"
+ms.lasthandoff: 09/13/2022
+ms.locfileid: "67661155"
 ---
 # <a name="create-distribution-groups-in-the-microsoft-365-admin-center"></a>Crear grupos de distribución en el Centro de administración de Microsoft 365
   

@@ -10,6 +10,7 @@ ms.topic: article
 ms.service: o365-administration
 ms.localizationpriority: medium
 ms.collection:
+- highpri
 - M365-subscription-management
 - Adm_O365
 - Adm_TOC
@@ -31,12 +32,12 @@ search.appverid:
 - GEA150
 ms.assetid: 7a5d073b-7fae-4aa5-8f96-9ecd041aba9c
 description: Inicie sesión con su cuenta de administrador de Microsoft 365 para restablecer las contraseñas de los usuarios cuando tenga una suscripción de Microsoft 365 para empresas.
-ms.openlocfilehash: 8ae60825c411345afb756072f16b599dbdf042d3
-ms.sourcegitcommit: 974922d1d8d9ce7bc2eb49ab80ecca9da4a911f9
+ms.openlocfilehash: a220ad7942baf0545625053b41d05a2c2fb8b878
+ms.sourcegitcommit: 37e137535c4f70702afe1a5eeaa899c75ee02cfd
 ms.translationtype: MT
 ms.contentlocale: es-ES
 ms.lasthandoff: 09/13/2022
-ms.locfileid: "67651324"
+ms.locfileid: "67662275"
 ---
 # <a name="reset-passwords-in-microsoft-365-for-business"></a>Restablecimiento de contraseñas en Microsoft 365 para empresas
 

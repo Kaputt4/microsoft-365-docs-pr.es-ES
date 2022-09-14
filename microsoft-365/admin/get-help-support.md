@@ -10,6 +10,7 @@ ms.topic: article
 ms.service: o365-administration
 ms.localizationpriority: high
 ms.collection:
+- highpri
 - Adm_O365
 - Adm_TOC
 ms.custom:
@@ -23,12 +24,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Obtenga información sobre cómo obtener soporte técnico en línea o por teléfono para su suscripción Microsoft 365 para empresas. Debe ser el administrador de una suscripción de empresa para poder usar el soporte técnico.
-ms.openlocfilehash: 837bd27d0a1f0823397710a6c55ec108ebe8548d
-ms.sourcegitcommit: 2f6a7410e9919f753a759c1ada441141e18f06fd
-ms.translationtype: HT
+ms.openlocfilehash: 4684daccf74e54a16c61a9a6f5982cee3f61659b
+ms.sourcegitcommit: 37e137535c4f70702afe1a5eeaa899c75ee02cfd
+ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/30/2022
-ms.locfileid: "67084925"
+ms.lasthandoff: 09/13/2022
+ms.locfileid: "67661571"
 ---
 # <a name="get-support-for-microsoft-365-for-business"></a>Obtener soporte técnico para Microsoft 365 para empresas
 

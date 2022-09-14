@@ -7,20 +7,20 @@ ms.service: threat-intelligence
 ms.topic: conceptual
 ms.date: 08/02/2022
 ms.custom: template-concept
-ms.openlocfilehash: 4b2a5369e6c22dcff0fa1e22642ac6fcb4c30ea2
-ms.sourcegitcommit: 7e551fa4e9b8b25ed62b5f406143b6b1dae08cbf
+ms.openlocfilehash: 9a728cef7c23d65f2a6f39c1211854cb8c91c53f
+ms.sourcegitcommit: 37e137535c4f70702afe1a5eeaa899c75ee02cfd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/01/2022
-ms.locfileid: "67108806"
+ms.lasthandoff: 09/13/2022
+ms.locfileid: "67661067"
 ---
 # <a name="data-sets"></a>Conjuntos de datos
 
 Microsoft centraliza numerosos conjuntos de datos en una única plataforma, Inteligencia contra amenazas de Microsoft Defender (TI de Defender), lo que facilita a la comunidad de Microsoft y a los clientes realizar análisis de infraestructura. El objetivo principal de Microsoft es proporcionar tantos datos como sea posible sobre la infraestructura de Internet para admitir una variedad de casos de uso de seguridad.
 
-Microsoft recopila, analiza e indexa datos de Internet para ayudar a los usuarios a detectar y responder a amenazas, priorizar incidentes e identificar proactivamente la infraestructura de adversarios asociada a grupos de actores que tienen como destino su organización. Microsoft recopila datos de Internet a través de la red del sensor PDNS, la red de proxy global de usuarios virtuales, los exámenes de puertos y aprovecha los orígenes de terceros para el malware y los datos del sistema de nombres de dominio (DNS) agregados.
+Microsoft recopila, analiza e indexa datos de Internet para ayudar a los usuarios a detectar amenazas y responder a ellas, priorizar incidentes e identificar proactivamente a los adversarios. infraestructura asociada a grupos de actores que tienen como destino su organización. Microsoft recopila datos de Internet a través de su Red de sensores PDNS, red de proxy global de usuarios virtuales, exámenes de puertos y aprovecha orígenes de terceros para malware y datos agregados del Sistema de nombres de dominio (DNS).
 
-Estos datos de Internet se clasifican en dos grupos distintos: tradicional y avanzado. Los conjuntos de datos tradicionales incluyen resoluciones, whois, certificados SSL, subdominios, hashes, DNS, DNS inverso y servicios. Los conjuntos de datos avanzados incluyen rastreadores, componentes, pares de host y cookies. Los conjuntos de datos Trackers, Components, Host Pairs y Cookies se recopilan de la observación del modelo de objetos de documento (DOM) de las páginas web rastreadas. Además, también se observan componentes y rastreadores de las reglas de detección que se desencadenan en función de las respuestas de banner de los exámenes de puertos o los detalles del certificado SSL.
+Estos datos de Internet se clasifican en dos grupos distintos: tradicional y avanzado. Los conjuntos de datos tradicionales incluyen resoluciones, whois, certificados SSL, subdominios, hashes, DNS, DNS inverso y servicios. Los conjuntos de datos avanzados incluyen rastreadores, componentes, pares de hosts y cookies. Los conjuntos de datos rastreadores, componentes, pares host y cookies se recopilan al observar el Document Object Model (DOM) de las páginas web rastreadas. Además, los componentes y rastreadores también se observan a partir de reglas de detección que se desencadenan en función de las respuestas de banner de los exámenes de puerto o los detalles del certificado SSL.
 
 ![Captura de pantalla de Edge de conjuntos de datos](media/dataSetsEdgeScreenshot.png)
 
@@ -229,7 +229,7 @@ Cuando un usuario se expande en un hash SHA1, el usuario podrá ver detalles sob
 
 ## <a name="subdomains"></a>Subdominios
 
-Un subdominio es un dominio de Internet, que forma parte de un dominio principal. Los subdominios también se conocen como "hosts". Por ejemplo, "docs.microsoft.com" es un subdominio de "microsoft.com". Para cada subdominio, podría haber un nuevo conjunto de direcciones IP en las que el dominio se resuelve y esto puede ser un excelente origen de datos para buscar la infraestructura relacionada.
+Un subdominio es un dominio de Internet, que forma parte de un dominio principal. Los subdominios también se conocen como "hosts". Por ejemplo,`docs.microsoft.com` es un subdominio de `microsoft.com`. Para cada subdominio, podría haber un nuevo conjunto de direcciones IP en las que el dominio se resuelve y esto puede ser un excelente origen de datos para buscar la infraestructura relacionada.
 
 Nuestros datos de subdominio incluyen lo siguiente:
 
@@ -541,6 +541,6 @@ Nuestros datos dns inversos incluyen lo siguiente:
 Para más información, vea:
 
 - [Búsqueda y dinamización](searching-and-pivoting.md)
-- [Ordenación, filtrado y descarga de datos](sorting-filtering-and-downloading-data.md)
+- [Ordenar, filtrar y descargar datos](sorting-filtering-and-downloading-data.md)
 - [Encadenamiento de infraestructura](infrastructure-chaining.md)
 - [Tutorial: Recopilación de inteligencia sobre amenazas y encadenamiento de infraestructura](gathering-threat-intelligence-and-infrastructure-chaining.md)

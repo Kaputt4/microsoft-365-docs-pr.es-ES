@@ -1,5 +1,5 @@
 ---
-title: Microsoft 365 de navegación de documentos
+title: Sugerencias de navegación de documentos de Microsoft 365
 description: 'Sugerencias y trucos para navegar por la documentación técnica de Microsoft 365: explica aspectos como la página central, la tabla de contenido, el encabezado, así como cómo usar las rutas de navegación y cómo usar el filtro de versión.'
 ms.date: 08/12/2020
 ms.prod: sql
@@ -11,44 +11,44 @@ author: samanro
 ms.author: samanro
 manager: pamgreen
 ms.collection: Adm_TOC
-ms.openlocfilehash: c2c7c73b4f49ab5d8b76b8a7574f900f414d1d1f
-ms.sourcegitcommit: 7b83e2605895fee5c73cd1d01f4cd16e1457a69f
+ms.openlocfilehash: c6a481497a682cbbad896a2d7ec9e88b84c64d10
+ms.sourcegitcommit: 37e137535c4f70702afe1a5eeaa899c75ee02cfd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/11/2021
-ms.locfileid: "60907914"
+ms.lasthandoff: 09/13/2022
+ms.locfileid: "67660253"
 ---
-# <a name="microsoft-365-docs-navigation-guide"></a>Microsoft 365 de navegación de documentos
+# <a name="microsoft-365-docs-navigation-guide"></a>Guía de navegación de documentos de Microsoft 365
 
-En este tema se proporcionan algunas sugerencias y trucos para navegar por el Microsoft 365 de documentación técnica.  
+En este tema se proporcionan algunas sugerencias y trucos para navegar por el espacio de documentación técnica de Microsoft 365.  
 
-## <a name="hub-page"></a>Página central
+## <a name="hub-page"></a>Página concentrador
 
-La Microsoft 365 de concentradores se puede encontrar en y es el punto de entrada para buscar contenido [https://aka.ms/microsoft365docs](./index.yml) Microsoft 365 relevante.
+La página del centro de Microsoft 365 se puede encontrar en [https://aka.ms/microsoft365docs](./index.yml) y es el punto de entrada para buscar contenido relevante de Microsoft 365.
 
-Siempre puede volver a esta página  seleccionando Microsoft 365 del encabezado en la parte superior de cada página dentro del conjunto de documentación Microsoft 365 documentación técnica:
+Siempre puede volver a esta página seleccionando **Microsoft 365** en el encabezado de la parte superior de cada página del conjunto de documentación técnica de Microsoft 365:
 
 ![Microsoft 365 en el encabezado.](media/m365-header-cursor.png)
 
 ## <a name="toc-search"></a>Búsqueda de TOC 
-On docs.microsoft.com, you can search the content in the table of contents by using the filter search box at the top:
+En Microsoft Docs, puede buscar en el contenido de la tabla de contenido mediante el cuadro de búsqueda de filtro de la parte superior:
 
 ![Use el cuadro de filtro.](media/m365-filter-by-title.png)
 
 ## <a name="version-filter"></a>Filtro de versión
-La Microsoft 365 técnica proporciona contenido para productos adicionales, incluidos Office 365 Alemania y Office 365 operado por 21 Vianet (China). Las características pueden variar entre estas versiones y, como tal, a veces el contenido en sí puede variar.
+La documentación técnica de Microsoft 365 proporciona contenido para productos adicionales, incluidos Office 365 Alemania y Office 365 operados por 21 Vianet (China). Las características pueden variar entre estas versiones y, como tal, a veces el propio contenido puede variar.
 
-Puede usar el filtro de versión para asegurarse de que está viendo contenido para la versión adecuada de Microsoft 365:
+Puede usar el filtro de versión para asegurarse de que ve contenido para la versión adecuada de Microsoft 365:
 
-![Microsoft 365 de versión.](media/m365-version-filter.png)
+![Filtro de versión de Microsoft 365.](media/m365-version-filter.png)
 
-## <a name="breadcrumbs"></a>Rutas de navegación
+## <a name="breadcrumbs"></a>Pan rallado
 
-Se pueden encontrar rutas de navegación debajo del encabezado y encima de la tabla de contenido, e indicar dónde se encuentra el artículo actual en la tabla de contenido.  Esta ayuda no solo permite establecer el contexto en qué tipo de contenido está leyendo, sino que también le permite navegar por la copia de seguridad del árbol de la tabla de contenido:
+Las rutas de navegación se pueden encontrar debajo del encabezado y encima de la tabla de contenido, e indicar dónde se encuentra el artículo actual en la tabla de contenido.  Esto no solo ayuda a establecer el contexto en el tipo de contenido que está leyendo, sino que también le permite navegar por el árbol de tabla de contenido:
 
-![Microsoft 365 rutas de navegación.](media/m365-breadcrumb.png)
+![Rutas de navegación de Microsoft 365.](media/m365-breadcrumb.png)
 
-## <a name="article-section-navigation"></a>Navegación de sección de artículos
+## <a name="article-section-navigation"></a>Navegación por sección de artículo
 
 El panel de navegación derecho le permite navegar rápidamente a las secciones de un artículo, así como identificar su ubicación dentro del artículo.  
 
@@ -56,16 +56,16 @@ El panel de navegación derecho le permite navegar rápidamente a las secciones 
 
 ## <a name="submit-docs-feedback"></a>Enviar comentarios de documentos
 
-Si encuentra algo incorrecto en un artículo, puede enviar comentarios al equipo de contenido de SQL para ese artículo desplazándose hacia abajo hasta la parte inferior de la página y seleccionando Comentarios de **contenido**.
+Si encuentra algún problema en un artículo, puede enviar comentarios al equipo de contenido de SQL para ese artículo desplazándose hacia abajo hasta la parte inferior de la página y seleccionando **Comentarios de contenido**.
 
-![Comentarios de contenido de Git Issue.](media/m365-article-feedback.png)
+![Comentarios sobre el contenido del problema de Git.](media/m365-article-feedback.png)
 
-## <a name="contribute-to-microsoft-365-documentation"></a>Contribuir a la Microsoft 365 documentación
+## <a name="contribute-to-microsoft-365-documentation"></a>Contribución a la documentación de Microsoft 365
 
-¿Sabía que podía editar el contenido en docs.microsoft.com usted mismo? Si lo hace, no solo mejorará nuestra documentación, sino que también se le acreditará como colaborador de la página. Para empezar, vea:
+¿Sabía que podía editar el contenido en Microsoft Docs usted mismo? Si lo hace, no solo mejorará nuestra documentación, sino que también se le acreditará como colaborador de la página. Para empezar, consulte:
 
-- [Guía de colaboradores de Microsoft Docs](/contribute/)
+- [guía del colaborador de Microsoft Docs](/contribute/)
 
-## <a name="next-steps"></a>Siguientes pasos
+## <a name="next-steps"></a>Pasos siguientes
 
-- Introducción a la documentación [Microsoft 365 técnica](index.yml).
+- Introducción a la [documentación técnica de Microsoft 365](index.yml).

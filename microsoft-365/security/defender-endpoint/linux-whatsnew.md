@@ -15,12 +15,12 @@ ms.collection:
 - m365-security-compliance
 ms.topic: reference
 ms.subservice: mde
-ms.openlocfilehash: 877cf9b7db508798a35cc99f8a163d0de0b91f37
-ms.sourcegitcommit: 228fa13973bf7c2d91504703fab757f552ae40dd
+ms.openlocfilehash: 8cddb2ab6a1f56fddb9be30d33a0934e3189845b
+ms.sourcegitcommit: 37e137535c4f70702afe1a5eeaa899c75ee02cfd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/01/2022
-ms.locfileid: "67520849"
+ms.lasthandoff: 09/13/2022
+ms.locfileid: "67661023"
 ---
 # <a name="whats-new-in-microsoft-defender-for-endpoint-on-linux"></a>Novedades de Microsoft Defender para punto de conexión en Linux
 
@@ -34,6 +34,24 @@ Este artículo se actualiza con frecuencia para informarle de las novedades de l
 
 - [Novedades de Defender para punto de conexión en macOS](mac-whatsnew.md)
 - [Novedades de Defender para punto de conexión en iOS](ios-whatsnew.md)
+
+<details>
+  <summary>Sep-2022 (compilación: 101.80.97 | Versión de lanzamiento: 30.122072.18097.0)</summary>
+
+&ensp;Fecha de publicación: **14 de septiembre de 2022**<br/>
+&ensp;Publicado: **14 de septiembre de 2022**<br/>
+&ensp;Compilación: **101.80.97**<br/>
+&ensp;Versión de lanzamiento: **30.122072.18097.0**<br/>
+&ensp;Versión del motor: **1.1.19300.3**<br/>
+&ensp;Versión de firma: **1.369.395.0**<br/>
+
+**Novedades**
+
+- Corrige un bloqueo del kernel observado en cargas de trabajo de clientes seleccionados que ejecutan la versión 101.75.43 de mdatp. Después de RCA, esto se atribuyó a una condición de carrera al liberar la propiedad de un descriptor de archivo de sensor. La condición de carrera se expuso debido a un cambio reciente del producto en la ruta de apagado. Este problema no afecta a los clientes de las versiones más recientes del kernel (5.1+).
+</br>
+
+<br/><br/>
+</details>
 
 <details>
   <summary>Ago-2022 (compilación: 101.75.43 | Versión de lanzamiento: 30.122071.17543.0)</summary>

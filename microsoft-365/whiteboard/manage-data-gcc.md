@@ -12,13 +12,12 @@ search.appverid: MET150
 ms.collection: ''
 ms.localizationpriority: medium
 description: Obtenga información sobre cómo habilitar, deshabilitar y administrar el acceso a Whiteboard.
-ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: 66b4c62437243654eb2d14c3318f65cf3ed12850
-ms.sourcegitcommit: 2b89bcff547e00be3d38dc8d1e6cbcf8f41eba42
+ms.openlocfilehash: 681993a060c85dcd7b71753b00698d5a56636565
+ms.sourcegitcommit: 37e137535c4f70702afe1a5eeaa899c75ee02cfd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/03/2022
-ms.locfileid: "67596554"
+ms.lasthandoff: 09/13/2022
+ms.locfileid: "67664417"
 ---
 # <a name="manage-data-for-microsoft-whiteboard-in-gcc-environments"></a>Administración de datos para Microsoft Whiteboard en entornos de GCC
 

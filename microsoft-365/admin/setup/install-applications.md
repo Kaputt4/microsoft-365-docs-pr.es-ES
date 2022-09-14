@@ -10,6 +10,7 @@ ms.topic: landing-page
 ms.service: o365-administration
 ms.localizationpriority: medium
 ms.collection:
+- highpri
 - M365-subscription-management
 - Adm_O365
 - Adm_TOC
@@ -25,12 +26,12 @@ ms.custom:
 - AdminTemplateSet
 - adminvideo
 description: Ahora que ha configurado Microsoft 365, aprenda a instalar aplicaciones de Office individuales en su Mac, PC o dispositivos móviles.
-ms.openlocfilehash: ad99f8f0ba6ab4c5bcc7d157d46f9c071a15df96
-ms.sourcegitcommit: 2f6a7410e9919f753a759c1ada441141e18f06fd
+ms.openlocfilehash: b7580925962ff0f632c4597becfc33aeb4e94373
+ms.sourcegitcommit: 37e137535c4f70702afe1a5eeaa899c75ee02cfd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/30/2022
-ms.locfileid: "67086899"
+ms.lasthandoff: 09/13/2022
+ms.locfileid: "67661111"
 ---
 # <a name="install-office-applications"></a>Instalar aplicaciones de Office
 
@@ -50,7 +51,7 @@ Las aplicaciones de Microsoft Office se pueden encontrar en el menú **Inicio**
 4. Para instalar Microsoft Teams, vaya a la página office.com y elija  **Teams**.
 5. Obtenga la aplicación de Windows y, a continuación, seleccione  **Ejecutar**. Teams le mostrará un mensaje al terminar la instalación.
 
-## <a name="next-steps"></a>Siguientes pasos
+## <a name="next-steps"></a>Pasos siguientes
 
 Siga estos vínculos para obtener información sobre cómo:
   

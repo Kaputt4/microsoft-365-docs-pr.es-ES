@@ -14,12 +14,12 @@ search.appverid:
 ms.collection:
 - M365-security-compliance
 description: Obtenga información sobre cómo funciona la autenticación basada en DNS SMTP de entidades con nombre (DANE) para proteger las comunicaciones por correo electrónico entre los servidores de correo.
-ms.openlocfilehash: 2202cccc3c1feb9f50cc35dbb3e38d6b443675fd
-ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
+ms.openlocfilehash: 5c0cc4a7a194cea1b18f528f4c72323a16fab73e
+ms.sourcegitcommit: 37e137535c4f70702afe1a5eeaa899c75ee02cfd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/06/2022
-ms.locfileid: "66625157"
+ms.lasthandoff: 09/13/2022
+ms.locfileid: "67663221"
 ---
 # <a name="how-smtp-dns-based-authentication-of-named-entities-dane-works"></a>Funcionamiento de la autenticación basada en DNS SMTP de entidades con nombre (DANE)
 
@@ -50,7 +50,7 @@ Hay cuatro campos configurables únicos para el tipo de registro TLSA:
 |0<sup>1</sup>|PKIX-TA|El certificado usado es la entidad de certificación pública de anclaje de confianza de la cadena de confianza X.509.|
 |1<sup>1</sup>|PKIX-EE|El certificado comprobado es el servidor de destino; Las comprobaciones de DNSSEC deben comprobar su autenticidad.|
 |2|DANE-TA|Use la clave privada del servidor del árbol X.509 que debe validar un delimitador de confianza en la cadena de confianza. El registro TLSA especifica el delimitador de confianza que se usará para validar los certificados TLS para el dominio.|
-|3 |DANE-EE|Solo coincide con el certificado del servidor de destino.|
+|3|DANE-EE|Solo coincide con el certificado del servidor de destino.|
 
 <sup>1</sup> Exchange Online sigue las instrucciones de implementación de RFC que indican que los valores del campo de uso de certificado de 0 o 1 no deben usarse cuando dane se implementa con SMTP. Cuando se devuelve un registro TLSA que tiene un valor de campo Uso de certificado de 0 o 1 a Exchange Online, Exchange Online lo tratará como no utilizable. Si se encuentran inutilizables todos los registros TLSA, Exchange Online no realizará los pasos de validación de DANE para 0 o 1 al enviar el correo electrónico. En su lugar, debido a la presencia de un registro TLSA, Exchange Online aplicará el uso de TLS para enviar el correo electrónico, enviar el correo electrónico si el servidor de correo electrónico de destino admite TLS o quitar el correo electrónico y generar un NDR si el servidor de correo electrónico de destino no admite TLS.
 
@@ -61,7 +61,7 @@ En el registro TLSA de ejemplo, el campo Uso del certificado se establece en "3"
 |Valor|Acrónimo|Descripción|
 |---|---|---|
 |0|Cert|Use el certificado completo.|
-|1 |SPKI (información de clave pública del asunto)|Use la clave pública del certificado y el algoritmo con el que se identifica la clave pública que se va a usar.|
+|1|SPKI (información de clave pública del asunto)|Use la clave pública del certificado y el algoritmo con el que se identifica la clave pública que se va a usar.|
 
 En el registro TLSA de ejemplo, el campo selector se establece en "1", por lo que los datos de asociación de certificados se coincidirían con la clave pública del certificado de servidor de destino y el algoritmo con el que se identifica la clave pública que se va a usar.
 
@@ -70,7 +70,7 @@ En el registro TLSA de ejemplo, el campo selector se establece en "1", por lo qu
 |Valor|Acrónimo|Descripción|
 |---|---|---|
 |0|Full|Los datos del registro TSLA son el certificado completo o SPKI.|
-|1 |SHA-256|Los datos del registro TSLA son un hash SHA-256 del certificado o spki.|
+|1|SHA-256|Los datos del registro TSLA son un hash SHA-256 del certificado o spki.|
 |2|SHA-512|Los datos del registro TSLA son un hash SHA-512 del certificado o spki.|
 
 En el registro TLSA de ejemplo, el campo De tipo coincidente se establece en "1", por lo que los datos de asociación de certificados son un hash SHA-256 de la información de clave pública del firmante del certificado de servidor de destino.
@@ -108,9 +108,9 @@ Solo hay dos escenarios en los que un error SMTP DANE hará que el correo electr
 |Tecnología|Información adicional|
 |---|---|
 |**Agente de transferencia de correo: la seguridad de transporte estricta (MTA-STS)** ayuda a frustrar los ataques de degradación y man-in-the-middle proporcionando un mecanismo para establecer directivas de dominio que especifican si el servidor de correo electrónico de destino admite TLS y qué hacer cuando no se puede negociar TLS, por ejemplo, detener la transmisión.|Más información sobre la próxima compatibilidad de Exchange Online con MTA-STS entrante y saliente se publicará a finales de este año. <br/><br/> [noticias de transporte de Exchange Online de Microsoft Ignite 2020: Microsoft Tech Community](https://techcommunity.microsoft.com/t5/exchange-team-blog/exchange-online-transport-news-from-microsoft-ignite-2020/ba-p/1687699) <br/><br/> [rfc8461 (ietf.org)](https://datatracker.ietf.org/doc/html/rfc8461)|
-|**Sender Policy Framework (SPF)** usa información de IP para asegurarse de que los sistemas de correo electrónico de destino confían en los mensajes enviados desde el dominio personalizado.|[Cómo el Marco de directivas de remitente (SPF) evita la suplantación de identidad Office 365 Microsoft Docs](/microsoft-365/security/office-365-security/how-office-365-uses-spf-to-prevent-spoofing)|
-|**DomainKeys Identified Mail (DKIM)** usa información de certificado X.509 para asegurarse de que los sistemas de correo electrónico de destino confían en los mensajes enviados salientes desde el dominio personalizado.|[Cómo usar DKIM para el correo electrónico en el dominio personalizado Office 365 Microsoft Docs](/microsoft-365/security/office-365-security/use-dkim-to-validate-outbound-email)|
-|**La autenticación de mensajes basada en dominio, informes y conformidad (DMARC)** funciona con el marco de directivas de remitente y el correo identificado DomainKeys para autenticar a los remitentes de correo y asegurarse de que los sistemas de correo electrónico de destino confían en los mensajes enviados desde el dominio.|[Use DMARC para validar el correo electrónico, los pasos de configuración Office 365 Microsoft Docs](/microsoft-365/security/office-365-security/use-dmarc-to-validate-email)|
+|**Sender Policy Framework (SPF)** usa información de IP para asegurarse de que los sistemas de correo electrónico de destino confían en los mensajes enviados desde el dominio personalizado.|[Cómo el marco de directivas de remitente (SPF) evita la suplantación de identidad](/microsoft-365/security/office-365-security/how-office-365-uses-spf-to-prevent-spoofing)|
+|**DomainKeys Identified Mail (DKIM)** usa información de certificado X.509 para asegurarse de que los sistemas de correo electrónico de destino confían en los mensajes enviados salientes desde el dominio personalizado.|[Cómo usar DKIM para el correo electrónico en su dominio personalizado](/microsoft-365/security/office-365-security/use-dkim-to-validate-outbound-email)|
+|**La autenticación de mensajes basada en dominio, informes y conformidad (DMARC)** funciona con el marco de directivas de remitente y el correo identificado DomainKeys para autenticar a los remitentes de correo y asegurarse de que los sistemas de correo electrónico de destino confían en los mensajes enviados desde el dominio.|[Pasos de configuración para usar DMARC para validar el correo electrónico](/microsoft-365/security/office-365-security/use-dmarc-to-validate-email)|
 
 ## <a name="troubleshooting-sending-emails-with-smtp-dane"></a>Solución de problemas de envío de correos electrónicos con SMTP DANE
 
@@ -120,7 +120,7 @@ Actualmente, hay cuatro códigos de error para DANE al enviar correos electróni
 2. NDR generados cuando no se envía un mensaje debido a un error DANE o DNSSEC.
 3. Herramienta Analizador de conectividad [remota Analizador de conectividad remota de Microsoft](https://testconnectivity.microsoft.com/tests/o365).
 
-|Código NDR|Description|
+|Código NDR|Descripción|
 |---|---|
 |5.7.321|starttls-not-supported: el servidor de correo de destino debe admitir TLS para recibir correo.|
 |5.7.322|certificado expirado: el certificado del servidor de correo de destino ha expirado.|
@@ -189,7 +189,7 @@ El segundo método consiste en usar el [Analizador de conectividad remota Analiz
 
 Al solucionar problemas, se pueden generar los siguientes códigos de error:
 
-|Código NDR|Description|
+|Código NDR|Descripción|
 |---|---|
 |4/5.7.321|starttls-not-supported: el servidor de correo de destino debe admitir TLS para recibir correo.|
 |4/5.7.322|certificado expirado: el certificado del servidor de correo de destino ha expirado.|

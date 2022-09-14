@@ -10,6 +10,7 @@ ms.topic: article
 ms.service: o365-administration
 ms.localizationpriority: high
 ms.collection:
+- highpri
 - M365-subscription-management
 - Adm_O365
 - Adm_TOC
@@ -25,12 +26,12 @@ search.appverid:
 - MOE150
 - BEA160
 description: Obtenga información acerca de cómo configurar su suscripción a Aplicaciones de Microsoft 365 para negocios.
-ms.openlocfilehash: a117bbb6468effe7122c74ff051d90ab9714d89e
-ms.sourcegitcommit: 2f6a7410e9919f753a759c1ada441141e18f06fd
-ms.translationtype: HT
+ms.openlocfilehash: 055f148617fb51a46739d61cc06ebb41be536649
+ms.sourcegitcommit: 37e137535c4f70702afe1a5eeaa899c75ee02cfd
+ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/30/2022
-ms.locfileid: "67085649"
+ms.lasthandoff: 09/13/2022
+ms.locfileid: "67664217"
 ---
 # <a name="set-up-microsoft-365-apps-for-business"></a>Configurar Aplicaciones de Microsoft 365 para negocios
 

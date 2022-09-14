@@ -10,17 +10,18 @@ ms.topic: article
 ms.service: o365-administration
 ms.localizationpriority: medium
 ms.collection:
+- highpri
 - Adm_TOC
 ms.custom:
 - VSBFY23
 - AdminSurgePortfolio
 description: Regístrese para obtener Aplicaciones Microsoft 365 para negocios.
-ms.openlocfilehash: b63b2436a901257d5d6a79c71901be6f7566e389
-ms.sourcegitcommit: 2f6a7410e9919f753a759c1ada441141e18f06fd
+ms.openlocfilehash: b9b0e3c0725137218c8fb82e94acfdbccb9b32ab
+ms.sourcegitcommit: 37e137535c4f70702afe1a5eeaa899c75ee02cfd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/30/2022
-ms.locfileid: "67086133"
+ms.lasthandoff: 09/13/2022
+ms.locfileid: "67660275"
 ---
 # <a name="sign-up-for-a-microsoft-365-apps-for-business-subscription"></a>Registrarse para obtener una suscripción Aplicaciones Microsoft 365 para negocios
 
@@ -103,7 +104,7 @@ Siga estos pasos para [finalizar la configuración de](setup-apps-for-business.m
 
 Para obtener pasos sobre cómo comprar o agregar un dominio, consulte [Configuración de Microsoft 365 Empresa Estándar](../setup/setup-business-standard.md).
 
-### <a name="next-steps"></a>Siguientes pasos
+### <a name="next-steps"></a>Pasos siguientes
 
 ## <a name="terms-of-service-update-for-simplified-sign-up-mode"></a>Actualización de términos de servicio para el modo de Sign-Up simplificado
 
@@ -115,7 +116,7 @@ Los términos de uso simplificados Sign-Up se han actualizado recientemente y, e
 
 Si decide no aceptar términos, su suscripción no se renovará automáticamente y, al final del contrato de suscripción actual, perderá el acceso a las aplicaciones de Office. Los datos de OneDrive se conservarán durante 90 días para que pueda hacer copias de ellos y, a continuación, se eliminarán.
 
-## <a name="frequently-asked-questions"></a>Preguntas frecuentes
+## <a name="frequently-asked-questions"></a>Preguntas más frecuentes
 
 ### <a name="is-there-a-benefit-to-paying-monthly-vs-annually"></a>¿Hay algún beneficio para pagar mensualmente frente a anualmente?
 

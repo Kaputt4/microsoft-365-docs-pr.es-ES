@@ -18,12 +18,12 @@ ms.collection:
 - m365-security-compliance
 ms.topic: conceptual
 ms.subservice: mde
-ms.openlocfilehash: 1aa80af7ff13f1ec5eccf207042458adae5c9208
-ms.sourcegitcommit: db89873e22a12705ed313964c1bc2fa19d4fe719
+ms.openlocfilehash: 131fb7dfc4894b62428ed67fa41e48bedaa0c603
+ms.sourcegitcommit: 37e137535c4f70702afe1a5eeaa899c75ee02cfd
 ms.translationtype: MT
 ms.contentlocale: es-ES
 ms.lasthandoff: 09/13/2022
-ms.locfileid: "67652400"
+ms.locfileid: "67661901"
 ---
 # <a name="whats-new-in-microsoft-defender-for-endpoint"></a>Novedades de Microsoft Defender para punto de conexión
 
@@ -141,7 +141,7 @@ Para obtener más información sobre Microsoft Defender para punto de conexión 
 
 ## <a name="august-2021"></a>Agosto de 2021
 
-- (versión preliminar) [plan 1 de Microsoft Defender para punto de conexión ](defender-endpoint-plan-1.md) <br/>Defender for Endpoint Plan 1 (versión preliminar) es una solución de protección de puntos de conexión que incluye protección de última generación, reducción de la superficie expuesta a ataques, administración centralizada e informes y API. El plan 1 de Defender para punto de conexión (versión preliminar) es una nueva oferta para los clientes que quieren probar nuestras funcionalidades de Endpoint Protection, tienen Microsoft 365 E3 y aún no tienen Microsoft 365 E5. 
+- (versión preliminar) [plan 1 de Microsoft Defender para punto de conexión](defender-endpoint-plan-1.md) <br/>Defender for Endpoint Plan 1 (versión preliminar) es una solución de protección de puntos de conexión que incluye protección de última generación, reducción de la superficie expuesta a ataques, administración centralizada e informes y API. El plan 1 de Defender para punto de conexión (versión preliminar) es una nueva oferta para los clientes que quieren probar nuestras funcionalidades de Endpoint Protection, tienen Microsoft 365 E3 y aún no tienen Microsoft 365 E5. 
 
    Para obtener más información, consulte [Microsoft Defender para punto de conexión Plan 1 (versión preliminar).](defender-endpoint-plan-1.md) Las funcionalidades existentes de [Defender para punto de conexión](microsoft-defender-endpoint.md) se conocerán como Defender para el plan de punto de conexión 2. 
 - (versión preliminar) [Filtrado de contenido web](web-content-filtering.md)<br>  El filtrado de contenido web forma parte de las funcionalidades de protección web de Microsoft Defender para punto de conexión. Permite a su organización realizar un seguimiento y regular el acceso a sitios web en función de sus categorías de contenido. Muchos de estos sitios web, aunque no son malintencionados, pueden ser problemáticos debido a las regulaciones de cumplimiento, el uso del ancho de banda u otros problemas.

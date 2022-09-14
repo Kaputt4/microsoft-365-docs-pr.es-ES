@@ -22,12 +22,12 @@ ms.topic: conceptual
 search.appverid:
 - MOE150
 - MET150
-ms.openlocfilehash: 0656ec0d5194ea14deec293a505c5563a74ec939
-ms.sourcegitcommit: 10e6abe740e27000e223378eb17d657a47555fa8
+ms.openlocfilehash: e619457ce420665ba1867480740a327aacdb618c
+ms.sourcegitcommit: 37e137535c4f70702afe1a5eeaa899c75ee02cfd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/31/2022
-ms.locfileid: "67481094"
+ms.lasthandoff: 09/13/2022
+ms.locfileid: "67664689"
 ---
 # <a name="train-your-security-staff-for-microsoft-365-defender"></a>Entrenar al personal de seguridad para Microsoft 365 Defender
 
@@ -45,9 +45,9 @@ Con la urgencia de proteger su organización y sus datos de los atacantes, debe 
 
 El contenido se estructura en tres niveles de conocimiento diferentes, con varios módulos: Fundamentales, Intermedio y Experto. Cada nivel incluye una comprobación de conocimientos para probar su comprensión del material.
 
-## <a name="microsoft-learn-learning-paths"></a>Rutas de aprendizaje de Microsoft Learn
+## <a name="learning-paths"></a>Rutas de aprendizaje
 
-Use estas rutas de aprendizaje de Microsoft Learn y sus módulos para comprender Microsoft 365 Defender y Microsoft Defender para punto de conexión, un módulo y una unidad a la vez.
+Use estas rutas de aprendizaje y sus módulos para comprender Microsoft 365 Defender y Microsoft Defender para punto de conexión, un módulo y una unidad a la vez.
 
  - [Detectar y responder a ataques cibernéticos con Microsoft 365 Defender](/learn/paths/defender-detect-respond/)
 
@@ -72,4 +72,3 @@ Una de las mejores maneras de aprender es configurar y probar Microsoft 365 Defe
 ## <a name="simulating-an-attack"></a>Simulación de un ataque
 
 Para probar al personal de seguridad su capacidad de detectar y responder a un ciberataque, use un ataque simulado. Consulte [Simulación de ataques con el portal de Microsoft 365 Defender](eval-defender-investigate-respond-simulate-attack.md#simulate-attacks-with-the-microsoft-365-defender-portal) para obtener más información. 
-

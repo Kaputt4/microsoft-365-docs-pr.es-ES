@@ -10,6 +10,7 @@ ms.topic: overview
 ms.service: o365-administration
 ms.localizationpriority: medium
 ms.collection:
+- highpri
 - M365-subscription-management
 - Adm_O365
 ms.custom:
@@ -27,12 +28,12 @@ search.appverid:
 - SPB160
 ms.assetid: eb3e840f-ed60-4461-81f5-12381c132b89
 description: Obtenga información sobre los distintos tipos de grupos y cómo usarlos con las distintas características de colaboración de Microsoft 365.
-ms.openlocfilehash: 93bccf4ca5d6e70ffdaf9a613cd3f5c4eeaad4f5
-ms.sourcegitcommit: 2f6a7410e9919f753a759c1ada441141e18f06fd
+ms.openlocfilehash: a9f98076ec304216ecdde3126e22a155232c9aa6
+ms.sourcegitcommit: 37e137535c4f70702afe1a5eeaa899c75ee02cfd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/30/2022
-ms.locfileid: "67084881"
+ms.lasthandoff: 09/13/2022
+ms.locfileid: "67664404"
 ---
 # <a name="email-collaboration-in-microsoft-365"></a>colaboración Email en Microsoft 365
 
@@ -59,7 +60,7 @@ En la tabla siguiente se ofrece un vistazo rápido a los distintos tipos de grup
 |**¿Quién las usa?** <br/> |Usuarios que desean un área de trabajo de colaboración para sus mensajes de grupo, archivos y calendario que se integran con los servicios que ya usan (Outlook Web App, OneDrive para la Empresa)  <br/> |Usuarios que necesitan enviar un correo electrónico a un grupo de destinatarios con una característica o interés común.  <br/> |Los buzones compartidos son una excelente manera de controlar las preguntas de correo electrónico del cliente, ya que varias personas de su organización pueden compartir la responsabilidad de supervisar el buzón y responder a las consultas. Las preguntas de los clientes obtienen respuestas más rápidas y los correos electrónicos relacionados se almacenan en un buzón.  <br/><br/> Delegados que trabajan en nombre de una identidad virtual, por ejemplo, asistencia@contoso.com. Los delegados pueden responder al correo electrónico en nombre de esta identidad de buzón de correo de uso compartido.  <br/> |Con los permisos adecuados, todas las personas de su organización pueden tener acceso a las carpetas públicas y realizar búsquedas en ellas. Son ideales para el archivado del correo electrónico o para compartir documentos.  <br/> |
 |**Tamaño de grupo ideal** <br/> |Cualquiera  <br/> |Grande  <br/> |Pequeño  <br/> |Organización de  <br/> |
 |**Acceso** <br/> |Exchange Online y usuarios  <br/> |Para los grupos de distribución, los miembros deben agregarse manualmente. Para los grupos de distribución dinámica, los miembros se agregan sobre la base de criterios de filtrado.  <br/> |A los usuarios se les pueden otorgar los permisos Acceso total y Enviar como. Si tienen el permiso Acceso total, también deberán agregar el buzón de correo compartido a su perfil de Outlook para acceder al buzón compartido.  <br/> |Accesible para cualquier miembro de su organización  <br/> |
-|**¿Calendario compartido?** <br/> |Sí  <br/> |No  <br/> |Sí  <br/> |Sí  <br/> |
+|**¿Calendario compartido?** <br/> |Yes  <br/> |No  <br/> |Sí  <br/> |Sí  <br/> |
 |**¿El correo electrónico llega a la bandeja de entrada?** <br/> |No. Los usuarios pueden suscribirse a un grupo y, a continuación, reenviar todos los mensajes del grupo a su bandeja de entrada.  <br/> |Sí. Los correos electrónicos llegan a la bandeja de entrada de todos los miembros del grupo de distribución.  <br/> |No. El correo electrónico llega a la bandeja de entrada del buzón de correo compartido.  <br/> |No. El correo electrónico llega a la carpeta pública.  <br/> |
 |**Clientes compatibles** <br/> | Outlook 2016  <br/>  Outlook 2013 (reenvío después de suscribirse)  <br/>  Outlook Web App  <br/>  Outlook 2010 (reenvío después de suscribirse)  <br/>  Outlook 2007 (reenvío después de suscribirse)  <br/> | Outlook 2016  <br/>  Outlook 2013  <br/>  Outlook Web App  <br/>  Outlook 2010  <br/>  Outlook 2007  <br/> | Outlook 2016  <br/>  Outlook 2013  <br/>  Outlook Web App  <br/>  Outlook 2010  <br/>  Outlook 2007  <br/> | Outlook 2016  <br/>  Outlook 2013  <br/>  Outlook Web App  <br/>  Outlook 2010  <br/>  Outlook 2007  <br/> |
 

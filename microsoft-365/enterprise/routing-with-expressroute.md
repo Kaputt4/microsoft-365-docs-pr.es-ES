@@ -22,16 +22,16 @@ search.appverid:
 - BCS160
 ms.assetid: e1da26c6-2d39-4379-af6f-4da213218408
 description: En este artículo, obtenga información sobre los requisitos de enrutamiento, los circuitos y los dominios de enrutamiento de Azure ExpressRoute para su uso con Office 365.
-ms.openlocfilehash: c63e3ae14c9b369265622f17c2e542818620aa3e
-ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
+ms.openlocfilehash: 4596f3fb05b39b8044c645db3bfcb1bd5fbe8c18
+ms.sourcegitcommit: 37e137535c4f70702afe1a5eeaa899c75ee02cfd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "65092919"
+ms.lasthandoff: 09/13/2022
+ms.locfileid: "67660825"
 ---
 # <a name="routing-with-expressroute-for-office-365"></a>Enrutamiento con ExpressRoute para Office 365
 
-*Este artículo se aplica tanto a Microsoft 365 Enterprise como a Office 365 Enterprise.*
+*Este artículo afecta tanto a Office 365 Enterprise como a Microsoft 365 Enterprise*
 
 Para comprender correctamente el enrutamiento del tráfico a Office 365 mediante Azure ExpressRoute, necesitará una comprensión firme de los requisitos básicos de [enrutamiento de ExpressRoute](/azure/expressroute/expressroute-routing) y los [circuitos y dominios de enrutamiento de ExpressRoute](/azure/expressroute/expressroute-circuit-peerings). Estos establecen los aspectos básicos para usar ExpressRoute en los que se basarán Office 365 clientes.
   
@@ -59,17 +59,17 @@ Independientemente de si inicia una conexión a Office 365 a través de Internet
   
 A continuación se muestran escenarios en los que se iniciarán las comunicaciones desde Office 365 a la red local. Para simplificar el diseño de red, se recomienda enrutar lo siguiente a través de la ruta de Acceso a Internet.
   
-- Servicios SMTP, como el correo de un inquilino de Exchange Online a un host local o SharePoint Correo en línea enviado desde SharePoint Online a un host local. El protocolo SMTP se usa más ampliamente dentro de la red de Microsoft que los prefijos de ruta compartidos a través de circuitos ExpressRoute y la publicidad de servidores SMTP locales a través de ExpressRoute provocará errores con estos otros servicios.
+- Servicios SMTP, como correo de un inquilino de Exchange Online a un host local o correo de SharePoint Online enviado desde SharePoint Online a un host local. El protocolo SMTP se usa más ampliamente dentro de la red de Microsoft que los prefijos de ruta compartidos a través de circuitos ExpressRoute y la publicidad de servidores SMTP locales a través de ExpressRoute provocará errores con estos otros servicios.
 
 - ADFS durante la validación de contraseñas para iniciar sesión.
 
 - [Exchange Server implementaciones híbridas](/exchange/exchange-hybrid).
 
-- [SharePoint búsqueda híbrida federada](/SharePoint/hybrid/display-hybrid-federated-search-results-in-sharepoint-online).
+- [Búsqueda híbrida federada de SharePoint](/SharePoint/hybrid/display-hybrid-federated-search-results-in-sharepoint-online).
 
-- [SharePoint BCS híbrido](/SharePoint/hybrid/deploy-a-business-connectivity-services-hybrid-solution).
+- [BCS híbrido de SharePoint](/SharePoint/hybrid/deploy-a-business-connectivity-services-hybrid-solution).
 
-- [Skype Empresarial federación híbrida](/skypeforbusiness/hybrid/plan-hybrid-connectivity?bc=%2fSkypeForBusiness%2fbreadcrumb%2ftoc.json&toc=%2fSkypeForBusiness%2ftoc.json) o [Skype Empresarial](/office365/servicedescriptions/skype-for-business-online-service-description/skype-for-business-online-features).
+- [Skype Empresarial federación híbrida](/skypeforbusiness/hybrid/plan-hybrid-connectivity?bc=/SkypeForBusiness/breadcrumb/toc.json&toc=/SkypeForBusiness/toc.json) o [Skype Empresarial](/office365/servicedescriptions/skype-for-business-online-service-description/skype-for-business-online-features).
 
 - [Skype Empresarial Cloud Connector](/skypeforbusiness/skype-for-business-hybrid-solutions/plan-your-phone-system-cloud-pbx-solution/plan-skype-for-business-cloud-connector-edition).
 
@@ -166,7 +166,7 @@ El último escenario, el enrutamiento Office 365 tráfico a través de ExpressRo
   
 Las preguntas adicionales que se deben responder a los clientes con varias ubicaciones en varias zonas geográficas incluyen:
   
-1. ¿Necesita un circuito ExpressRoute en todas las ubicaciones? Si usa Skype Empresarial Online o está preocupado por la confidencialidad de latencia de SharePoint Online o Exchange Online, se recomienda un par redundante de circuitos ExpressRoute activos o activos en cada ubicación. Consulte la guía de conectividad de red y calidad de los medios de Skype Empresarial para obtener más información.
+1. ¿Necesita un circuito ExpressRoute en todas las ubicaciones? Si usa Skype Empresarial Online o está preocupado por la confidencialidad de latencia para SharePoint Online o Exchange Online, se recomienda un par redundante de circuitos ExpressRoute activos o activos en cada ubicación. Consulte la guía de conectividad de red y calidad de los medios de Skype Empresarial para obtener más información.
 
 2. Si un circuito ExpressRoute no está disponible en una región determinada, ¿cómo se debe enrutar Office 365 tráfico destinado?
 

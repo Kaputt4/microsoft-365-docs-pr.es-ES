@@ -10,6 +10,7 @@ ms.topic: article
 ms.service: o365-administration
 ms.localizationpriority: medium
 ms.collection:
+- highpri
 - M365-subscription-management
 - Adm_O365_Setup
 - Adm_O365
@@ -29,12 +30,12 @@ search.appverid:
 - MOE150
 ms.assetid: ''
 description: Obtenga información sobre cómo crear un nuevo dominio onmicrosoft.com y convertirlo en el nuevo dominio de reserva.
-ms.openlocfilehash: 9382921fcb8d93770c056b11b2c3bb89ceb01a2d
-ms.sourcegitcommit: ab32c6e19af08837aaa84a058653c3a209d366ba
+ms.openlocfilehash: 01e22eab6cddf4f19b63dce36056ac4a6127e500
+ms.sourcegitcommit: 37e137535c4f70702afe1a5eeaa899c75ee02cfd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/26/2022
-ms.locfileid: "67445190"
+ms.lasthandoff: 09/13/2022
+ms.locfileid: "67661945"
 ---
 # <a name="add-and-replace-your-onmicrosoftcom-fallback-domain-in-microsoft-365"></a>Agregar y reemplazar el dominio de reserva de onmicrosoft.com en Microsoft 365
 

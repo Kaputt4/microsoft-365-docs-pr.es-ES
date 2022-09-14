@@ -10,6 +10,7 @@ ms.topic: article
 ms.service: o365-administration
 ms.localizationpriority: medium
 ms.collection:
+- highpri
 - M365-subscription-management
 - Adm_O365
 - Adm_TOC
@@ -26,12 +27,12 @@ search.appverid:
 - GEA150
 ms.assetid: 40398b0b-bdd0-4afd-ab5e-b5ae6b7990bf
 description: Aprenda a rastrear los problemas que se producen al configurar un dominio personalizado asegurándose de que los registros DNS están configurados correctamente.
-ms.openlocfilehash: 2e4f69b19fd87f45017a304414018995e90703a7
-ms.sourcegitcommit: 2f6a7410e9919f753a759c1ada441141e18f06fd
+ms.openlocfilehash: 89eca074425581b7e939bc4599ec86b7d7cdd2f6
+ms.sourcegitcommit: 37e137535c4f70702afe1a5eeaa899c75ee02cfd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/30/2022
-ms.locfileid: "67085167"
+ms.lasthandoff: 09/13/2022
+ms.locfileid: "67660495"
 ---
 # <a name="find-and-fix-issues-after-adding-your-domain-or-dns-records"></a>Buscar y corregir problemas después de agregar el dominio o los registros DNS
 
@@ -95,7 +96,7 @@ Podemos ayudarle a localizar los problemas de configuración DNS de su dominio. 
 
 Si ha corregido cualquier problema de DNS y sigue teniendo dificultades, pruebe los siguientes procedimientos.
   
-- Las personas no pueden acceder a su sitio web en *contoso.com*: [Seguimiento de problemas del sitio web](../setup/add-domain.md)
+- Personas no puede acceder a su sitio web en *contoso.com*: [Seguimiento de problemas del sitio web](../setup/add-domain.md)
     
 - No puede actualizar el registro A o CNAME para que apunte a su sitio web: [Actualizar registros DNS personalizados en Microsoft 365](../setup/add-domain.md)
 

@@ -11,6 +11,7 @@ ms.topic: article
 ms.service: o365-administration
 ms.localizationpriority: medium
 ms.collection:
+- highpri
 - M365-subscription-management
 - Adm_O365
 - Adm_TOC
@@ -24,12 +25,12 @@ ms.custom:
 search.appverid: GEA150
 description: Regístrese para obtener una evaluación gratuita de 30 días para Microsoft 365 Empresa Estándar, Microsoft 365 Empresa Premium o Aplicaciones Microsoft 365 para negocios.
 ms.date: 08/07/2020
-ms.openlocfilehash: 473e93660d854f953973cbb4590aceabe0e67e36
-ms.sourcegitcommit: 414682b9bf42dc19a89c893d3c515aee9765b6e4
+ms.openlocfilehash: 25f50d5cc5b0c795aec14d68f40634017fd1f624
+ms.sourcegitcommit: 37e137535c4f70702afe1a5eeaa899c75ee02cfd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/08/2022
-ms.locfileid: "67281825"
+ms.lasthandoff: 09/13/2022
+ms.locfileid: "67664173"
 ---
 # <a name="try-or-buy-a-microsoft-365-for-business-subscription"></a>Prueba o compra de una suscripción a Microsoft 365 para empresas
 
@@ -148,7 +149,7 @@ La prueba de pago se proporcionará en forma de Fapiaos. Puede enviar su solicit
 > No se aceptan tarjetas de crédito internacionales.
 ::: moniker-end
 
-## <a name="next-steps"></a>Siguientes pasos
+## <a name="next-steps"></a>Pasos siguientes
 
 Si tiene una cuenta nueva y está configurando su primera suscripción, puede usar los artículos de configuración guiada para ayudarle a empezar.
 

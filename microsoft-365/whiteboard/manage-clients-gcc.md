@@ -7,18 +7,17 @@ ms.reviewer: ''
 audience: admin
 ms.topic: article
 ms.custom: ''
-ms.service: microsoft-365-enterprise
+ms.prod: microsoft-365-enterprise
 search.appverid: MET150
 ms.collection: ''
 ms.localizationpriority: medium
-description: Obtenga información sobre qué clientes son compatibles actualmente con Whiteboard.
-ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: 45c09b30d09676e67da9fa1089a13f7627437905
-ms.sourcegitcommit: 2b89bcff547e00be3d38dc8d1e6cbcf8f41eba42
+description: Obtenga información sobre qué clientes son compatibles actualmente con Whiteboard en entornos de GCC.
+ms.openlocfilehash: 2f473e7334d664d5d369e25164095ca0d3e0149b
+ms.sourcegitcommit: 37e137535c4f70702afe1a5eeaa899c75ee02cfd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/03/2022
-ms.locfileid: "67595750"
+ms.lasthandoff: 09/13/2022
+ms.locfileid: "67664494"
 ---
 # <a name="manage-clients-for-microsoft-whiteboard-in-gcc-environments"></a>Administración de clientes para Microsoft Whiteboard en entornos de GCC
 
@@ -31,7 +30,7 @@ Los clientes de pizarra se están actualizando actualmente para admitir OneDrive
 
 Actualmente se admiten los siguientes clientes en Whiteboard:
 
-- Aplicación web de pizarra independiente en [https://whiteboard.office365.us](https://whiteboard.office365.us)
+- Aplicación web de pizarra independiente en [https://whiteboard.office.com](https://whiteboard.office.com)
 - Reuniones, chats y canales de Microsoft Teams mediante el escritorio y la web de Teams
 - Aplicación de pizarra independiente para dispositivos móviles
 - Aplicaciones de pizarra independientes para Windows 10

@@ -12,13 +12,12 @@ search.appverid: MET150
 ms.collection: ''
 ms.localizationpriority: medium
 description: Obtenga información sobre cómo administrar el uso compartido para Microsoft Whiteboard en entornos GCC.
-ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: bfb3168403524da67ae7798619a01b455b667be9
-ms.sourcegitcommit: 2b89bcff547e00be3d38dc8d1e6cbcf8f41eba42
+ms.openlocfilehash: 100d15c9035c68b4cd7b911657adf1bb93e057df
+ms.sourcegitcommit: 37e137535c4f70702afe1a5eeaa899c75ee02cfd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/03/2022
-ms.locfileid: "67595738"
+ms.lasthandoff: 09/13/2022
+ms.locfileid: "67663047"
 ---
 # <a name="manage-sharing-for-microsoft-whiteboard-in-gcc-environments"></a>Administración del uso compartido para Microsoft Whiteboard en entornos GCC
 

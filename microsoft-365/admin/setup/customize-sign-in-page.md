@@ -10,6 +10,7 @@ ms.topic: article
 ms.service: o365-administration
 ms.localizationpriority: medium
 ms.collection:
+- highpri
 - M365-subscription-management
 - Adm_O365
 - Adm_TOC
@@ -24,12 +25,12 @@ search.appverid:
 - MOE150
 ms.assetid: a1229cdb-ce19-4da5-90c7-2b9b146aef0a
 description: Personalice la página de inicio de sesión de Microsoft 365 mediante Azure Active Directory. Puede agregar una ilustración, un logotipo y texto a la página de inicio de sesión.
-ms.openlocfilehash: 9ac46be83d9bf25ee76067e54530e75ed5769d14
-ms.sourcegitcommit: 2f6a7410e9919f753a759c1ada441141e18f06fd
+ms.openlocfilehash: 98ff05af3669787b9ad6b68e80eb6abe78bd36b9
+ms.sourcegitcommit: 37e137535c4f70702afe1a5eeaa899c75ee02cfd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/30/2022
-ms.locfileid: "67086943"
+ms.lasthandoff: 09/13/2022
+ms.locfileid: "67663331"
 ---
 # <a name="add-your-company-branding-to-the-microsoft-365-sign-in-page"></a>Agregar la personalización de marca de la empresa a la página de inicio de sesión de Microsoft 365
 
@@ -51,7 +52,7 @@ La siguiente ilustración muestra qué partes de la página de inicio de sesión
     
 Además de la página de inicio de sesión, puede personalizar la página de Panel de acceso en Azure.
   
-## <a name="next-steps"></a>Siguientes pasos
+## <a name="next-steps"></a>Pasos siguientes
 
 Si está listo para agregar la personalización de marca, explore las opciones de personalización en el conjunto de contenido de Azure: [Incorporación de la personalización de marca de empresa a sus páginas de inicio de sesión y panel de acceso](/azure/active-directory/fundamentals/customize-branding).
 

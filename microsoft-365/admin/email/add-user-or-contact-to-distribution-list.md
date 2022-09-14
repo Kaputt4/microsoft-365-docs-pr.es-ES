@@ -10,6 +10,7 @@ ms.topic: article
 ms.service: o365-administration
 ms.localizationpriority: medium
 ms.collection:
+- highpri
 - M365-subscription-management
 - Adm_O365
 - Adm_TOC
@@ -23,12 +24,12 @@ search.appverid:
 - MOE150
 ms.assetid: ba256583-03ca-429e-be4d-a92d9c221ad6
 description: Obtenga información sobre cómo agregar un usuario o contacto de Microsoft 365, como un empleado, asociado o proveedor, a un grupo de distribución de correo electrónico.
-ms.openlocfilehash: 765380e1c8b6bd4aed94df9335d6b1dafe5bd12a
-ms.sourcegitcommit: 2f6a7410e9919f753a759c1ada441141e18f06fd
+ms.openlocfilehash: f7a41cbbb1b9bdf2f72fa74166826f65cabd59d9
+ms.sourcegitcommit: 37e137535c4f70702afe1a5eeaa899c75ee02cfd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/30/2022
-ms.locfileid: "67084089"
+ms.lasthandoff: 09/13/2022
+ms.locfileid: "67661967"
 ---
 # <a name="add-a-user-or-contact-to-a-microsoft-365-distribution-group"></a>Agregar un usuario o un contacto a un grupo de distribución de Microsoft 365
 
@@ -52,7 +53,7 @@ Como administrador de una organización, es posible que tenga que agregar uno de
   
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/ed4e6095-9a6a-4d3d-999d-698c39bb7ec8?autoplay=false]
   
-## <a name="next-steps"></a>Siguientes pasos
+## <a name="next-steps"></a>Pasos siguientes
 
 Aprenda a [enviar correo electrónico como un grupo de distribución en Microsoft 365](../manage/send-email-as-distribution-list.md).
 

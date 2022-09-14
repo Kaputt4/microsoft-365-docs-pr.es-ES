@@ -11,6 +11,7 @@ ms.topic: article
 ms.service: o365-administration
 ms.localizationpriority: medium
 ms.collection:
+- highpri
 - M365-subscription-management
 - Adm_O365
 - Adm_O365_Setup
@@ -24,12 +25,12 @@ ms.custom:
 search.appverid: MET150
 description: Para comprobar qué suscripciones de Microsoft 365 tiene su organización, vaya a la página Sus productos.
 ms.date: 01/21/2021
-ms.openlocfilehash: 5a6bf93c40ceb15df091cd1e9f7dcb952812e5b2
-ms.sourcegitcommit: adc4e5707aa074fc4aa0cb9e8c2986fc8b88813c
+ms.openlocfilehash: 9940062d3d36ae24ab98dcb13483910ff39f57bc
+ms.sourcegitcommit: 37e137535c4f70702afe1a5eeaa899c75ee02cfd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/01/2022
-ms.locfileid: "67111679"
+ms.lasthandoff: 09/13/2022
+ms.locfileid: "67662209"
 ---
 # <a name="which-microsoft-365-subscription-do-i-have"></a>¿Qué suscripción de Microsoft 365 tengo?
 
@@ -45,6 +46,6 @@ Si es administrador, puede comprobar qué suscripciones tiene su organización y
 ## <a name="related-content"></a>Contenido relacionado
   
 [Suscripciones y facturación](../../commerce/index.yml) (página de vínculos)\
-[Vea su factura o recibo](../../commerce/billing-and-payments/view-your-bill-or-invoice.md) (artículo)\
+[Vea su factura o recibo](../../commerce/billing-and-payments/view-your-bill-or-invoice.md) (artículo)
 [Pagar por la suscripción](../../commerce/billing-and-payments/pay-for-your-subscription.md) (artículo)\
 [Cambiar las direcciones de facturación](../../commerce/billing-and-payments/change-your-billing-addresses.md) (artículo)

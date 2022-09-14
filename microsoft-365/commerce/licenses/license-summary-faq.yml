@@ -12,12 +12,12 @@ metadata:
   ms.custom: commerce_vl
   ms.localizationpriority: medium
   description: Preguntas más frecuentes sobre los contratos de licencia de Centro de administración de Microsoft 365.
-  ms.openlocfilehash: bcc97969b283d51194dd8f1eb213340bd8f0334e
-  ms.sourcegitcommit: e911dd506ea066795e418daf7b84c1e11381a21c
+  ms.openlocfilehash: b9085d38f3411ad32b383621f1ca19df8dd12991
+  ms.sourcegitcommit: 37e137535c4f70702afe1a5eeaa899c75ee02cfd
   ms.translationtype: MT
   ms.contentlocale: es-ES
-  ms.lasthandoff: 04/19/2022
-  ms.locfileid: "64953691"
+  ms.lasthandoff: 09/13/2022
+  ms.locfileid: "67663572"
 title: Preguntas más frecuentes sobre contratos
 summary: ''
 sections:
@@ -38,7 +38,7 @@ sections:
       Un identificador de licencia identifica el nivel de programa en el que una organización puede realizar pedidos. Puede representar cualquiera de los siguientes elementos:
 
 
-      - Inscripción (Enterprise o Seleccionar programas)
+      - Inscripción (programas Enterprise o Select)
 
       - Contrato (programa Open Value)
 
@@ -63,7 +63,7 @@ sections:
       - Es administrador con acceso a los contratos.
 
 
-      Para obtener más información sobre los roles de permisos VL y sus acciones permitidas, consulte las [preguntas más frecuentes sobre permisos](https://docs.microsoft.com/licensing/permissions-faq).
+      Para obtener más información sobre los roles de permisos VL y sus acciones permitidas, consulte las [preguntas más frecuentes sobre permisos](/licensing/permissions-faq).
   - question: >
       ¿Cuánto tiempo tardan los nuevos pedidos de licencia en aparecer en la lista de contratos?
     answer: >
@@ -107,7 +107,7 @@ sections:
 
       1. Inicie sesión en el Centro de administración de Microsoft 365.
 
-      2. Vaya a **FacturaciónSu** >  **productosVolume** >  **licensingContracts** > .
+      2. Vaya a **Facturación** > **Sus productos** > **Contratos** de **licencias por** >  volumen.
 
 
       Filtrar los identificadores de licencia para mostrarlos en el resumen de licencias
@@ -193,4 +193,4 @@ sections:
       Las concesiones de licencias se reflejan en la lista Contratos y en Descargas & claves. En la lista de productos, los productos recibidos de concesiones de licencias se muestran con un asterisco (*) para indicar que no formaban parte de la compra original.
   - question: >
       Póngase en contacto con el soporte técnico asistido
-    answer: Los clientes también pueden [ponerse en contacto con nosotros](https://docs.microsoft.com/licensing/contact-us) por teléfono o por formulario web. Microsoft responde a los envíos de formularios web en un plazo de 24 horas.
+    answer: Los clientes también pueden [ponerse en contacto con nosotros](/licensing/contact-us) por teléfono o por formulario web. Microsoft responde a los envíos de formularios web en un plazo de 24 horas.

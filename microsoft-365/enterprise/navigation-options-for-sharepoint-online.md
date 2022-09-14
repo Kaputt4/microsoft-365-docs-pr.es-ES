@@ -21,12 +21,12 @@ search.appverid:
 - MET150
 ms.assetid: adb92b80-b342-4ecb-99a1-da2a2b4782eb
 description: En este artículo se describen los sitios de opciones de navegación con la publicación de SharePoint habilitada en SharePoint Online.
-ms.openlocfilehash: c95666a0fdb78fa584d9ca32ce19f10e4db89753
-ms.sourcegitcommit: 61bdfa84f2d6ce0b61ba5df39dcde58df6b3b59d
+ms.openlocfilehash: da06987e0136b3ae92f7bcdc9b561e6478439a01
+ms.sourcegitcommit: 37e137535c4f70702afe1a5eeaa899c75ee02cfd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/08/2022
-ms.locfileid: "65940940"
+ms.lasthandoff: 09/13/2022
+ms.locfileid: "67662253"
 ---
 # <a name="navigation-options-for-sharepoint-online"></a>Opciones de navegación para SharePoint Online
 
@@ -99,7 +99,7 @@ Muchos sitios no requieren recorte de seguridad, ya que la estructura de navegac
 
 ### <a name="how-to-implement-managed-navigation-and-the-results"></a>Implementación de la navegación administrada y los resultados
 
-Hay varios artículos sobre docs.microsoft.com sobre los detalles de la navegación administrada. Por ejemplo, vea [Información general sobre la navegación administrada en SharePoint Server](/sharepoint/administration/overview-of-managed-navigation).
+Hay varios artículos sobre Microsoft Docs sobre los detalles de la navegación administrada. Por ejemplo, vea [Información general sobre la navegación administrada en SharePoint Server](/sharepoint/administration/overview-of-managed-navigation).
 
 Para implementar la navegación administrada, configure términos con direcciones URL correspondientes a la estructura de navegación del sitio. La navegación administrada se puede incluso seleccionar manualmente para reemplazar la navegación estructural en muchos casos. Por ejemplo:
 

@@ -10,6 +10,7 @@ ms.topic: article
 ms.service: o365-administration
 ms.localizationpriority: medium
 ms.collection:
+- highpri
 - M365-subscription-management
 - M365-identity-device-management
 - Adm_TOC
@@ -25,12 +26,12 @@ search.appverid:
 - BCS160
 - MET150
 description: Configure Microsoft Defender para Office 365 y proteja los datos confidenciales contra phishing, malware y otras amenazas.
-ms.openlocfilehash: 3eee2afebdd3ffe2085029388e70b6b45de420e7
-ms.sourcegitcommit: 2f6a7410e9919f753a759c1ada441141e18f06fd
+ms.openlocfilehash: 41eed29cdc87e4334270efdb4d0039147254988c
+ms.sourcegitcommit: 37e137535c4f70702afe1a5eeaa899c75ee02cfd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/30/2022
-ms.locfileid: "67085540"
+ms.lasthandoff: 09/13/2022
+ms.locfileid: "67661372"
 ---
 # <a name="increase-threat-protection-for-microsoft-365-for-business"></a>Aumentar la protección contra amenazas para Microsoft 365 para empresas
 
@@ -104,9 +105,9 @@ Para crear una regla de transporte de correo:
 
 5. Aplique la configuración de la siguiente tabla para la regla. Use los valores predeterminados para el resto de la configuración, a menos que desee cambiarlos.
 
-6. Seleccione **Guardar**.
+6. Haga clic en **Guardar**.
 
-|Configuración|Advertir a los usuarios antes de abrir archivos adjuntos de Office|
+|Setting|Advertir a los usuarios antes de abrir archivos adjuntos de Office|
 |---|---|
 |Nombre|Regla contra ransomware: advertir a los usuarios|
 |Aplique esta regla si es . . .|Cualquier archivo adjunto . . . la extensión de archivo coincide con . . .|
@@ -114,7 +115,7 @@ Para crear una regla de transporte de correo:
 |Haga lo siguiente. . .|Notificar al destinatario con un mensaje|
 |Proporcionar texto del mensaje|No abra estos tipos de archivos de personas que no conozca porque podrían contener macros con código malintencionado.|
 
-Para más información, vea:
+Para obtener más información, consulte:
 
 - [Ransomware: cómo reducir el riesgo](https://www.microsoft.com/security/blog/2020/04/28/ransomware-groups-continue-to-target-healthcare-critical-services-heres-how-to-reduce-risk/)
 
@@ -136,9 +137,9 @@ Para crear una regla de transporte de correo, siga estos pasos:
 
 5. Aplique la configuración de la tabla siguiente. Use los valores predeterminados para el resto de la configuración, a menos que desee cambiarlos.
 
-6. Seleccione **Guardar**.
+6. Haga clic en **Guardar**.
 
-|Configuración|Advertir a los usuarios antes de abrir archivos adjuntos de Office|
+|Setting|Advertir a los usuarios antes de abrir archivos adjuntos de Office|
 |---|---|
 |Nombre|Impedir el reenvío automático de correo electrónico a dominios externos|
 |Aplique esta regla si ...|Remitente . . . es externo o interno. . . Dentro de la organización|
@@ -192,7 +193,7 @@ Los usuarios envían, reciben y comparten datos adjuntos con regularidad, como d
 1. Desplácese hacia abajo. Elija **Habilitar redirección** y escriba su dirección de correo electrónico o la dirección de la persona que desea revisar los datos adjuntos bloqueados.
 1. Seleccione **aplicado a** y, a continuación, seleccione el nombre de dominio.
 1. Elija los dominios adicionales que posea (como el dominio de onmicrosoft.com) a los que le gustaría aplicar la regla. Seleccione **Agregar** y, a continuación, **Aceptar**.
-1. Seleccione **Guardar**.
+1. Haga clic en **Guardar**.
 
 La regla de datos adjuntos seguros de ATP se ha actualizado. Ahora que la protección está en vigor, no podrá abrir un archivo malintencionado desde Outlook, OneDrive, SharePoint o Teams. Los archivos afectados tendrán escudos rojos junto a ellos. Si alguien intenta abrir un archivo bloqueado, recibirá un mensaje de advertencia.
 

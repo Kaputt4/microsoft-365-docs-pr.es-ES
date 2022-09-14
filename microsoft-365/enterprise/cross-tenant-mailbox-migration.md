@@ -4,7 +4,7 @@ description: Cómo mover buzones entre los inquilinos de Microsoft 365 o Office 
 ms.author: kvice
 author: kelleyvice-msft
 manager: scotv
-ms.prod: microsoft-365-enterprise
+ms.service: microsoft-365-enterprise
 ms.topic: article
 f1.keywords:
 - NOCSH
@@ -16,16 +16,16 @@ ms.custom:
 - admindeeplinkEXCHANGE
 ms.collection:
 - M365-subscription-management
-ms.openlocfilehash: a0146159ebbb5e960bb375228e87fbfe43c0276e
-ms.sourcegitcommit: ecc04b5b8f84b34255a2d5e90b5ab596af0d16c7
+ms.openlocfilehash: 44a80d3d1a7845461e7c97ed2a4466a6557a52bd
+ms.sourcegitcommit: 37e137535c4f70702afe1a5eeaa899c75ee02cfd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/01/2022
-ms.locfileid: "67497168"
+ms.lasthandoff: 09/13/2022
+ms.locfileid: "67664239"
 ---
 # <a name="cross-tenant-mailbox-migration-preview"></a>Migración de buzones entre inquilinos (versión preliminar)
 
-Normalmente, durante las fusiones o desinversiones, necesita la capacidad de mover el buzón de Exchange Online del usuario a un nuevo inquilino. La migración de buzones entre inquilinos permite a los administradores de inquilinos usar interfaces conocidas como Exchange Online PowerShell y MRS para realizar la transición de los usuarios a su nueva organización.
+Normalmente, durante las fusiones o desinversiones, necesita la capacidad de mover los buzones de Exchange Online de los usuarios a un nuevo inquilino. La migración de buzones entre inquilinos permite a los administradores de inquilinos usar interfaces conocidas como Exchange Online PowerShell y MRS para realizar la transición de los usuarios a su nueva organización.
 
 Los administradores pueden usar el cmdlet **New-MigrationBatch** , disponible a través del rol de administración _Mover buzones_ , para ejecutar movimientos entre inquilinos.
 
@@ -429,9 +429,9 @@ Get-MoveRequest -Flags "CrossTenant"
    Start-ADSyncSyncCycle
    ```
 
-### <a name="how-do-we-access-outlook-on-day-1-after-the-use-mailbox-is-moved"></a>¿Cómo se accede a Outlook el día 1 después de mover el buzón de uso?
+### <a name="how-do-we-access-outlook-on-day-1-after-the-user-mailbox-is-moved"></a>¿Cómo se accede a Outlook el día 1 después de mover el buzón de usuario?
 
-Dado que solo un inquilino puede poseer un dominio, la dirección SMTP Principal anterior no se asociará al usuario en el inquilino de destino cuando se complete el movimiento del buzón; solo los dominios asociados al nuevo inquilino. Outlook usa el nuevo UPN de los usuarios para autenticarse en el servicio y el perfil de Outlook espera encontrar la dirección SMTP Principal heredada para que coincida con el buzón en el sistema de destino. Dado que la dirección heredada no está en el sistema de destino, el perfil de Outlook no se conectará para buscar el buzón recién movido.
+Dado que solo un inquilino puede poseer un dominio, la dirección SMTP Principal anterior no se asociará al usuario en el inquilino de destino cuando se complete el movimiento del buzón; solo los dominios asociados al nuevo inquilino. Outlook usa el nuevo UPN del usuario para autenticarse en el servicio y el perfil de Outlook espera encontrar la dirección SMTP Principal heredada para que coincida con el buzón del sistema de destino. Dado que la dirección heredada no está en el sistema de destino, el perfil de Outlook no se conectará para buscar el buzón recién movido.
 
 Para esta implementación inicial, los usuarios tendrán que volver a generar su perfil con su nuevo UPN, dirección SMTP principal y contenido OST resincronizar.
 

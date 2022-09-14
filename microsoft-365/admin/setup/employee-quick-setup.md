@@ -10,6 +10,7 @@ ms.topic: article
 ms.service: o365-administration
 ms.localizationpriority: medium
 ms.collection:
+- highpri
 - M365-subscription-management
 - Adm_O365
 ms.custom:
@@ -22,12 +23,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Ayude a los empleados a aprender a configurar las aplicaciones de Office que obtienen con Microsoft 365 Empresa Premium.
-ms.openlocfilehash: 435b1627e5a86a1981a5aedb09d7e69fdaf4d2a3
-ms.sourcegitcommit: 2f6a7410e9919f753a759c1ada441141e18f06fd
+ms.openlocfilehash: 5f10bf4f6e7dc24ba5698cd915a6b232e8a9ba09
+ms.sourcegitcommit: 37e137535c4f70702afe1a5eeaa899c75ee02cfd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/30/2022
-ms.locfileid: "67086503"
+ms.lasthandoff: 09/13/2022
+ms.locfileid: "67662825"
 ---
 # <a name="employee-quick-setup-in-microsoft-365-for-business"></a>Configuración rápida de empleados en Microsoft 365 para empresas
 
@@ -47,7 +48,7 @@ ms.locfileid: "67086503"
     - En Microsoft Edge/IE, elija **Guardar** y, después, **Ejecutar**.
     
     Si se le solicita que permita que la aplicación pueda realizar cambios, elija **Sí**. Deje que se inicie el programa de instalación de Office.
-    - En un Equipo Mac, abra Microsoft **Office_2016_Installer.pkg**
+    - En un Equipo Mac, abra Microsoft **Office_2016_Installer.pkg.**
 
 ## <a name="3-open-outlook-and-add-your-account"></a>3. Abra Outlook y agregue su cuenta.
 

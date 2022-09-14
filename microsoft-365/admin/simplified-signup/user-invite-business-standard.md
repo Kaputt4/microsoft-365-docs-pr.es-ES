@@ -10,17 +10,18 @@ ms.topic: article
 ms.service: o365-administration
 ms.localizationpriority: medium
 ms.collection:
+- highpri
 - Adm_TOC
 ms.custom:
 - VSBFY23
 - AdminSurgePortfolio
 description: Aceptar invitación para unirse a una organización de Microsoft 365 para empresas
-ms.openlocfilehash: a1727e6c2d03a7617a986acf08c4182cbcef05dd
-ms.sourcegitcommit: 173f696dc8f81259d852775572a6938ec39f6115
+ms.openlocfilehash: ba17c55e62d24717fd7a3cd978e85be32de99065
+ms.sourcegitcommit: 37e137535c4f70702afe1a5eeaa899c75ee02cfd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/10/2022
-ms.locfileid: "67644233"
+ms.lasthandoff: 09/13/2022
+ms.locfileid: "67660979"
 ---
 # <a name="accept-an-email-invitation-to-a-microsoft-365-for-business-subscription-user"></a>Aceptar una invitación por correo electrónico a una suscripción de Microsoft 365 para empresas (usuario)
 

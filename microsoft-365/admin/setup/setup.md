@@ -10,6 +10,7 @@ ms.topic: landing-page
 ms.service: o365-administration
 ms.localizationpriority: high
 ms.collection:
+- highpri
 - M365-subscription-management
 - Adm_O365
 - Adm_O365_Setup
@@ -26,12 +27,12 @@ search.appverid:
 - BEA160
 ms.assetid: 6a3a29a0-e616-4713-99d1-15eda62d04fa
 description: Obtenga información acerca de cómo configurar su suscripción de Microsoft Empresa Premium, Microsoft 365 Empresa Estándar, Microsoft 365 Empresa Básico, Aplicaciones de Microsoft 365 para negocios u Office 365 Educación.
-ms.openlocfilehash: ce471a4cb43864edf7884e6df93b39b9d1afbe15
-ms.sourcegitcommit: 2f6a7410e9919f753a759c1ada441141e18f06fd
-ms.translationtype: HT
+ms.openlocfilehash: fa1f117cd00c4d40689d606e1ec7582c18a7e7fd
+ms.sourcegitcommit: 37e137535c4f70702afe1a5eeaa899c75ee02cfd
+ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/30/2022
-ms.locfileid: "67086089"
+ms.lasthandoff: 09/13/2022
+ms.locfileid: "67660605"
 ---
 # <a name="set-up-microsoft-365-for-business"></a>Configurar Microsoft 365 para empresas
 

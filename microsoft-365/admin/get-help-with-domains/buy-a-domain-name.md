@@ -10,6 +10,7 @@ ms.topic: article
 ms.service: o365-administration
 ms.localizationpriority: medium
 ms.collection:
+- highpri
 - M365-subscription-management
 - Adm_O365
 - Adm_TOC
@@ -25,12 +26,12 @@ search.appverid:
 - GEA150
 ms.assetid: 1561140a-16a9-4a02-822d-a989250e479d
 description: Obtenga información sobre cómo comprar un nombre de dominio en Microsoft 365.
-ms.openlocfilehash: 2f238698892e1a1d97c7d50fdad281e8973cb515
-ms.sourcegitcommit: 2f6a7410e9919f753a759c1ada441141e18f06fd
+ms.openlocfilehash: 78e43b13731839d791d00b93000567b12bd07a80
+ms.sourcegitcommit: 37e137535c4f70702afe1a5eeaa899c75ee02cfd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/30/2022
-ms.locfileid: "67085189"
+ms.lasthandoff: 09/13/2022
+ms.locfileid: "67661923"
 ---
 # <a name="buy-a-domain-name"></a>Comprar un nombre de dominio
 
@@ -80,7 +81,7 @@ Ofrecemos una suscripción gratuita a la privacidad del dominio con la compra de
 Si desea comprar un dominio de un registrador de dominios que no sea [GoDaddy](https://www.godaddy.com), le recomendamos que use uno a continuación que admita la configuración automática (Domain Connect). 
   
 - [1&amp;1 IONOS](https://www.1and1.com/)
-- [WordPress](https://www.wordpress.com) 
+- [Wordpress](https://www.wordpress.com) 
 
    
 ## <a name="transfer-your-domain-to-a-different-domain-registrar"></a>Transferir su dominio a otro registrador de dominios

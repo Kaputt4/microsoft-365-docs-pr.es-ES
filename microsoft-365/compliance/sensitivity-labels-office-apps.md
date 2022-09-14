@@ -16,12 +16,12 @@ search.appverid:
 - MET150
 description: Información para que los administradores de TI administren las etiquetas de confidencialidad en las aplicaciones de Office para escritorio, móvil y web.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: c757b9b2b6f9dc649832f2c32a2a0137f4804779
-ms.sourcegitcommit: 6d86713c3b1da2db338c78fa60bd7d93e24aa6f4
+ms.openlocfilehash: c627d21c4416cecf5be98c6730e508d332dcad9b
+ms.sourcegitcommit: 37e137535c4f70702afe1a5eeaa899c75ee02cfd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/09/2022
-ms.locfileid: "67639552"
+ms.lasthandoff: 09/13/2022
+ms.locfileid: "67663550"
 ---
 # <a name="manage-sensitivity-labels-in-office-apps"></a>Administrar etiquetas de confidencialidad en las aplicaciones de Office
 
@@ -104,7 +104,7 @@ Los números indicados son las versiones mínimas de la aplicación Office reque
 |[Aplicar una etiqueta de confidencialidad automáticamente al contenido](apply-sensitivity-label-automatically.md) <br /> - Uso de clasificadores capacitados                    | Canal actual: 2105+ <br /><br> Canal mensual para empresas: 2105+ <br /><br> Canal semestral para empresas: 2108+ | 16.49+ | En revisión           | En revisión               | Sí |
 |[Diferentes opciones de configuración para etiquetas predeterminadas y etiquetas obligatorias](#outlook-specific-options-for-default-label-and-mandatory-labeling)                    | Canal actual: 2105+ <br /><br> Canal mensual para empresas: 2105+ <br /><br> Canal semestral para empresas: 2108+ | 16.43+ <sup>\*</sup>                   | 4.2111+           | 4.2111+               | Sí |
 |[Compatibilidad con PDF](#pdf-support) | Versión preliminar: implementando en [Canal Beta](https://office.com/insider)|  En revisión | En revisión | En revisión | En revisión |
-|[Aplicar protección S/MIME](#configure-a-label-to-apply-smime-protection-in-outlook)                    | En revisión | Implementando: 16.61+ <sup>\*</sup>                   | Implementación: 4.2226+ | Implementación: 4.2203+ | En revisión |
+|[Aplicar protección S/MIME](#configure-a-label-to-apply-smime-protection-in-outlook) | Versión preliminar: implementando en [Canal Beta](https://office.com/insider) | Implementando: 16.61+ <sup>\*</sup>                   | Implementación: 4.2226+ | Implementación: 4.2203+ | En revisión |
 
 **Notas al pie:**
 

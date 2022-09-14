@@ -10,6 +10,7 @@ ms.topic: article
 ms.service: o365-administration
 ms.localizationpriority: high
 ms.collection:
+- highpri
 - M365-subscription-management
 - Adm_O365_Setup
 - Adm_TOC
@@ -24,12 +25,12 @@ search.appverid:
 - MET150
 description: Obtenga más información sobre cómo proporcionar a cada miembro del equipo una cuenta de usuario para que pueda tener licencias de Microsoft 365, credenciales de inicio de sesión y buzones de Microsoft 365.
 ms.date: 07/01/2020
-ms.openlocfilehash: cc928cff4f27585a978eadea2c173a0cd148be33
-ms.sourcegitcommit: 974922d1d8d9ce7bc2eb49ab80ecca9da4a911f9
+ms.openlocfilehash: 4f96fb483ab38cc2ea20d80ba5e64592bf5c4c20
+ms.sourcegitcommit: 37e137535c4f70702afe1a5eeaa899c75ee02cfd
 ms.translationtype: MT
 ms.contentlocale: es-ES
 ms.lasthandoff: 09/13/2022
-ms.locfileid: "67651477"
+ms.locfileid: "67662077"
 ---
 # <a name="add-users-and-assign-licenses-at-the-same-time"></a>Agregar usuarios y asignar licencias al mismo tiempo
 

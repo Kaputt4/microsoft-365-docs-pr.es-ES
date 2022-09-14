@@ -17,84 +17,84 @@ ms.collection:
 f1.keywords:
 - NOCSH
 description: Consideraciones especiales para stream y eventos en directo en entornos VPN
-ms.openlocfilehash: eb2e57b844f06bc3b1e005aa1095794b176bba94
-ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
+ms.openlocfilehash: 7970bef10eb7483af633f41eb19f9e224de58ee6
+ms.sourcegitcommit: 37e137535c4f70702afe1a5eeaa899c75ee02cfd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/08/2022
-ms.locfileid: "63331356"
+ms.lasthandoff: 09/13/2022
+ms.locfileid: "67662473"
 ---
 # <a name="special-considerations-for-stream-and-live-events-in-vpn-environments"></a>Consideraciones especiales para stream y eventos en directo en entornos VPN
 
 >[!NOTE]
->Este artículo forma parte de un conjunto de artículos que abordan la optimización Microsoft 365 usuarios remotos.
+>Este artículo forma parte de un conjunto de artículos que abordan la optimización de Microsoft 365 para usuarios remotos.
 
->- Para obtener información general sobre cómo usar el túnel dividido de VPN para optimizar la conectividad Microsoft 365 usuarios remotos, vea [Overview: VPN split tunneling for Microsoft 365](microsoft-365-vpn-split-tunnel.md).
->- Para obtener instrucciones detalladas sobre cómo implementar el túnel dividido de VPN, consulte [Implementing VPN split tunneling for Microsoft 365](microsoft-365-vpn-implement-split-tunnel.md).
->- Para obtener una lista detallada de escenarios de túnel dividido de VPN, consulte [Escenarios de túnel dividido de VPN comunes para Microsoft 365](microsoft-365-vpn-common-scenarios.md).
->- Para obtener instrucciones sobre cómo proteger el Teams de medios en entornos de túnel dividido de VPN, consulte [Securing Teams media traffic for VPN split tunneling](microsoft-365-vpn-securing-teams.md).
->- Para obtener información sobre cómo optimizar Microsoft 365 el rendimiento de los inquilinos en todo el mundo para los usuarios de China, [vea optimización Microsoft 365 rendimiento para los usuarios de China](microsoft-365-networking-china.md).
+>- Para obtener información general sobre el uso de la tunelización dividida de VPN para optimizar la conectividad de Microsoft 365 para usuarios remotos, consulte [Información general: Túnel dividido de VPN para Microsoft 365](microsoft-365-vpn-split-tunnel.md).
+>- Para obtener instrucciones detalladas sobre la implementación de la tunelización dividida de VPN, consulte [Implementación de la tunelización dividida de VPN para Microsoft 365](microsoft-365-vpn-implement-split-tunnel.md).
+>- Para obtener una lista detallada de escenarios de tunelización dividida de VPN, consulte [Escenarios comunes de tunelización dividida de VPN para Microsoft 365](microsoft-365-vpn-common-scenarios.md).
+>- Para obtener instrucciones sobre cómo proteger el tráfico multimedia de Teams en entornos de tunelización dividida de VPN, consulte [Protección del tráfico multimedia de Teams para la tunelización dividida de VPN](microsoft-365-vpn-securing-teams.md).
+>- Para obtener información sobre cómo optimizar el rendimiento de los inquilinos de Microsoft 365 en todo el mundo para los usuarios de China, consulte [Optimización del rendimiento de Microsoft 365 para los usuarios de China](microsoft-365-networking-china.md).
 
-Microsoft 365 tráfico de eventos en directo (esto incluye los asistentes Teams eventos en directo producidos por Teams y los producidos con un codificador externo a través de Teams, Stream o Yammer) y el tráfico de secuencia a petición se clasifica actualmente como Predeterminado frente a **Optimizar** en la lista  [url/IP](urls-and-ip-address-ranges.md) del servicio. Estos puntos de conexión se clasifican como **predeterminados** porque están hospedados en las CDN que también pueden usar otros servicios. Por lo general, los clientes prefieren proxy de este tipo de tráfico y aplicar los elementos de seguridad que normalmente se realizan en puntos de conexión como estos.
+El tráfico de Eventos en directo de Microsoft 365 (esto incluye los asistentes a eventos en directo producidos por Teams y los producidos con un codificador externo a través de Teams, Stream o Yammer) y el tráfico de Stream a petición se clasifica actualmente como **Predeterminado** frente a **Optimizar** en la [lista de direcciones URL/IP del servicio](urls-and-ip-address-ranges.md). Estos puntos de conexión se clasifican como **predeterminados** porque se hospedan en redes CDN que también pueden usar otros servicios. Por lo general, los clientes prefieren proxy de este tipo de tráfico y aplican cualquier elemento de seguridad que se realice normalmente en puntos de conexión como estos.
 
-Muchos clientes han solicitado los datos url/IP necesarios para conectar a sus usuarios a eventos stream/live directamente desde su conexión a Internet local, en lugar de enrutar el tráfico de alto volumen y sensible a la latencia a través de la infraestructura VPN. Normalmente, esto no es posible sin espacios de nombres dedicados e información IP precisa para los puntos de conexión, que no se proporciona para los puntos de conexión Microsoft 365 categorizados como **Predeterminados**.
+Muchos clientes han solicitado los datos de DIRECCIÓN URL/IP necesarios para conectar a sus usuarios a Stream/Live Events directamente desde su conexión local a Internet, en lugar de enrutar el tráfico de alto volumen y sensible a la latencia a través de la infraestructura de VPN. Normalmente, esto no es posible sin espacios de nombres dedicados e información de IP precisa para los puntos de conexión, que no se proporciona para los puntos de conexión de Microsoft 365 clasificados como **Predeterminado**.
 
-Siga estos pasos para habilitar la conectividad directa para el servicio Stream/Live Events desde clientes que usan una VPN de túnel forzada. Esta solución está diseñada para proporcionar a los clientes una opción para evitar el enrutamiento del tráfico de eventos en directo a través de VPN mientras hay un tráfico de red alto debido a escenarios de trabajo desde casa. Si es posible, se recomienda tener acceso al servicio a través de un proxy de inspección.
+Siga estos pasos para habilitar la conectividad directa para el servicio Stream/Live Events desde clientes mediante una VPN de túnel forzado. Esta solución está diseñada para proporcionar a los clientes una opción para evitar el enrutamiento del tráfico de Live Events a través de VPN mientras hay un tráfico de red elevado debido a escenarios de trabajo desde casa. Si es posible, se recomienda acceder al servicio a través de un proxy de inspección.
 
 >[!NOTE]
->Con esta solución, puede haber elementos de servicio que no se resuelven en las direcciones IP proporcionadas y, por lo tanto, atraviesan la VPN, pero la mayor parte del tráfico de alto volumen, como los datos de streaming, deberían hacerlo. Puede haber otros elementos fuera del ámbito de Live Events/Stream que se capturan por esta descarga, pero estos deben ser limitados, ya que deben cumplir tanto el _FQDN como_ la coincidencia IP antes de ir directo.
+>Con esta solución, puede haber elementos de servicio que no se resuelven en las direcciones IP proporcionadas y, por tanto, atraviesan la VPN, pero la mayor parte del tráfico de gran volumen, como los datos de streaming, debería. Puede haber otros elementos fuera del ámbito de Live Events/Stream que se detecten mediante esta descarga, pero estos deben estar limitados, ya que deben cumplir tanto el _FQDN como_ la coincidencia ip antes de ir directamente.
 
 >[!IMPORTANT]
->Se recomienda a los clientes sopesar el riesgo de enviar más tráfico que omite la VPN sobre la ganancia de rendimiento de los eventos en directo.
+>Se recomienda a los clientes que sopesan el riesgo de enviar más tráfico que omite la VPN sobre la ganancia de rendimiento de Live Events.
 
-Para implementar la excepción de túnel forzado para Teams Live Events y Stream, se deben aplicar los siguientes pasos:
+Para implementar la excepción de túnel forzado para Teams Live Events y Stream, se deben aplicar los pasos siguientes:
 
-## <a name="1-configure-external-dns-resolution"></a>1. Configurar la resolución dns externa
+## <a name="1-configure-external-dns-resolution"></a>1. Configurar la resolución DNS externa
 
-Los clientes necesitan que la resolución dns recursiva y externa esté disponible para que los siguientes nombres de host se puedan resolver en direcciones IP.
+Los clientes necesitan una resolución DNS externa y recursiva para estar disponibles para que los siguientes nombres de host se puedan resolver en direcciones IP.
 
 - \*.azureedge.net
 - \*.media.azure.net
 - \*.bmc.cdn.office.net
 
-**\*.azureedge.net** se usa para eventos Stream (Configurar codificadores para streaming en directo en [Microsoft Stream - Microsoft Stream | Microsoft Docs](/stream/live-encoder-setup)).
+**\*.azureedge.net** se usa para eventos de Stream ([Configurar codificadores para streaming en directo en Microsoft Stream: Microsoft Stream | Microsoft Docs](/stream/live-encoder-setup)).
 
-**\*.media.azure.net** **\*y .bmc.cdn.office.net** se usan para eventos en directo producidos por Teams (eventos de inicio rápido, eventos compatibles con RTMP-In [Id. de hoja de ruta 84960]) programados desde el Teams cliente.
+**\*.media.azure.net** y **\*.bmc.cdn.office.net** se usan para eventos en directo producidos por Teams (eventos de inicio rápido, RTMP-In eventos admitidos [id. de hoja de ruta 84960]) programados desde el cliente de Teams.
 
- Algunos de estos puntos de conexión se comparten con otros elementos fuera de Stream/Live Events, no se recomienda usar estos FQDN para configurar la descarga de VPN incluso si técnicamente es posible en la solución VPN (por ejemplo, si funciona en el FQDN en lugar de ip).
+ Algunos de estos puntos de conexión se comparten con otros elementos fuera de Stream/Live Events, no se recomienda usar estos FQDN para configurar la descarga de VPN incluso si técnicamente es posible en la solución VPN (por ejemplo, si funciona en el FQDN en lugar de la dirección IP).
 
-Los FQDN no son necesarios en la configuración de VPN, son puramente para su uso en archivos PAC en combinación con los IP para enviar el tráfico relevante directo.
+Los FQDN no son necesarios en la configuración de VPN, son puramente para su uso en archivos PAC en combinación con las direcciones IP para enviar el tráfico directo pertinente.
 
-## <a name="2-implement-pac-file-changes-where-required"></a>2. Implementar cambios en el archivo PAC (cuando sea necesario)
+## <a name="2-implement-pac-file-changes-where-required"></a>2. Implementar cambios de archivo PAC (cuando sea necesario)
 
-Para las organizaciones que usan un archivo PAC para enrutar el tráfico a través de un proxy mientras están en VPN, esto se logra normalmente con FQDN. Sin embargo, con Stream/Live Events, los nombres de host proporcionados **\*** contienen caracteres comodín como .azureedge.net, que también incluye otros elementos para los que no es posible proporcionar listas de IP completa. Por lo tanto, si la solicitud se envía directamente en función solo de la coincidencia de caracteres comodín dns, el tráfico a estos puntos de conexión se bloqueará, ya que no hay ninguna ruta a través de la ruta directa para ella en el paso [3](#3-configure-routing-on-the-vpn-to-enable-direct-egress) más adelante en este artículo.
+Para las organizaciones que usan un archivo PAC para enrutar el tráfico a través de un proxy mientras se encuentra en VPN, esto normalmente se logra mediante FQDN. Sin embargo, con Stream/Live Events, los nombres de host proporcionados contienen caracteres comodín como **\*.azureedge.net**, que también abarca otros elementos para los que no es posible proporcionar listas IP completas. Por lo tanto, si la solicitud se envía directamente en función de la coincidencia de caracteres comodín dns solo, el tráfico a estos puntos de conexión se bloqueará, ya que no hay ninguna ruta a través de la ruta de acceso directa para ella en el [paso 3](#3-configure-routing-on-the-vpn-to-enable-direct-egress) más adelante en este artículo.
 
-Para solucionar esto, podemos proporcionar las siguientes direcciones IP y usarlas en combinación con los nombres de host en un archivo PAC de ejemplo, tal como se describe en [el paso 1](#1-configure-external-dns-resolution). El archivo PAC comprueba si la dirección URL coincide con las usadas para los eventos Stream/Live y, si lo hace, también comprueba si la IP devuelta de una búsqueda DNS coincide con las proporcionadas para el servicio. Si _ambos_ coinciden, el tráfico se enruta directamente. Si cualquiera de los elementos (FQDN/IP) no coincide, el tráfico se envía al proxy. Como resultado, la configuración garantiza que cualquier cosa que se resuelva en una DIRECCIÓN IP fuera del ámbito de la IP y los espacios de nombres definidos atravesará el proxy a través de la VPN de forma normal.
+Para solucionar esto, podemos proporcionar las siguientes direcciones IP y usarlas en combinación con los nombres de host en un archivo PAC de ejemplo, como se describe en [el paso 1](#1-configure-external-dns-resolution). El archivo PAC comprueba si la dirección URL coincide con las usadas para Stream/Live Events y, a continuación, si lo hace, también comprueba si la dirección IP devuelta desde una búsqueda DNS coincide con las proporcionadas para el servicio. Si _ambos_ coinciden, el tráfico se enruta directamente. Si ninguno de los elementos (FQDN/IP) coincide, el tráfico se envía al proxy. Como resultado, la configuración garantiza que todo lo que se resuelva en una dirección IP fuera del ámbito de la dirección IP y los espacios de nombres definidos atravesará el proxy a través de la VPN de la forma habitual.
 
-### <a name="gathering-the-current-lists-of-cdn-endpoints"></a>Recopilación de las listas actuales de CDN de conexión
+### <a name="gathering-the-current-lists-of-cdn-endpoints"></a>Recopilación de las listas actuales de puntos de conexión de CDN
 
-Live Events usa varios CDN para transmitir a los clientes, para proporcionar la mejor cobertura, calidad y resistencia. Actualmente, se Azure CDN de Microsoft y de Verizon. Con el tiempo, esto podría cambiarse debido a situaciones como la disponibilidad regional. Este artículo es un origen que le permite mantenerse al día en los intervalos IP.
+Live Events usa varios proveedores de CDN para transmitirlos a los clientes, con el fin de proporcionar la mejor cobertura, calidad y resistencia. Actualmente, se usan tanto Azure CDN de Microsoft como Verizon. Con el tiempo, esto podría cambiarse debido a situaciones como la disponibilidad regional. Este artículo es un origen que le permite mantenerse al día sobre los intervalos IP.
 
-Para Azure CDN de Microsoft, puede descargar la lista desde Descargar [intervalos IP de Azure y etiquetas](https://www.microsoft.com/download/details.aspx?id=56519) de servicio : nube pública desde el Centro de descarga oficial de Microsoft: tendrá que buscar específicamente la etiqueta de servicio *AzureFrontdoor.Frontend* en json; *addressPrefixes mostrará las subredes* IPv4/IPv6. Con el tiempo, las direcciones IP pueden cambiar, pero la lista de etiquetas de servicio siempre se actualiza antes de que se pongan en uso.
+En el caso de Azure CDN de Microsoft, puede descargar la lista de [Descarga de intervalos IP y etiquetas de servicio de Azure en la nube pública desde el Centro de descarga oficial de Microsoft](https://www.microsoft.com/download/details.aspx?id=56519) ; tendrá que buscar específicamente la etiqueta de servicio *AzureFrontdoor.Frontend* en JSON; *addressPrefixes mostrará las subredes* IPv4/IPv6. Con el tiempo, las direcciones IP pueden cambiar, pero la lista de etiquetas de servicio siempre se actualiza antes de que se usen.
 
-For Azure CDN from Verizon (Edgecast) you can find an exhaustive list using [https://docs.microsoft.com/rest/api/cdn/edge-nodes/list](/rest/api/cdn/edge-nodes/list) (click **Try It** ) - you will need to look specifically for the **Premium\_ Verizon** section. Tenga en cuenta que esta API muestra todas las IP de edgecast (origin y Anycast). Actualmente no hay un mecanismo para que la API distinga entre origin y Anycast.
+Para Azure CDN de Verizon (Edgecast) puede encontrar una lista exhaustiva mediante [Nodos perimetrales - Lista](/rest/api/cdn/edge-nodes/list) (haga clic en **Probar** ) - tendrá que buscar específicamente la sección  **Premium\_Verizon**  . Tenga en cuenta que esta API muestra todas las direcciones IP de Edgecast (origen y Anycast). Actualmente no hay un mecanismo para que la API distinga entre el origen y Anycast.
 
-Para implementar esto en un archivo PAC, puede usar el siguiente ejemplo que envía el tráfico directo de optimización de Microsoft 365 (que se recomienda práctica recomendada) a través del FQDN, y el tráfico crítico de stream/live events directamente a través de una combinación del FQDN y la dirección IP devuelta. El nombre del marcador _de posición Contoso_ tendría que editarse en el nombre del inquilino específico donde _contoso_ es de contoso.onmicrosoft.com
+Para implementar esto en un archivo PAC, puede usar el ejemplo siguiente que envía el tráfico directo de Optimización de Microsoft 365 (que se recomienda) a través del FQDN y el tráfico crítico de Stream/Live Events directamente a través de una combinación del FQDN y la dirección IP devuelta. El nombre del marcador de posición _Contoso_ tendría que editarse en el nombre del inquilino específico en el que _contoso_ procede de contoso.onmicrosoft.com
 
 #### <a name="example-pac-file"></a>Archivo PAC de ejemplo
 
 Este es un ejemplo de cómo generar los archivos PAC:
 
 1. Guarde el script siguiente en el disco duro local como _Get-TLEPacFile.ps1_.
-1. Vaya a la [dirección URL de Verizon](/rest/api/cdn/edge-nodes/list#code-try-0) y descargue el JSON resultante (cópielo en un archivo como cdnedgenodes.json)
+1. Vaya a la [dirección URL de Verizon](/rest/api/cdn/edge-nodes/list#code-try-0) y descargue el JSON resultante (copie péguelo en un archivo como cdnedgenodes.json)
 1. Coloque el archivo en la misma carpeta que el script.
-1. En una ventana de PowerShell, ejecute el siguiente comando. Cambie el nombre del inquilino para otra cosa si desea las direcciones URL de SPO. Este es el tipo 2, por lo que **optimizar** y **permitir** (el tipo 1 es optimizar solamente).
+1. En una ventana de PowerShell, ejecute el siguiente comando. Cambie el nombre del inquilino por otra cosa si quiere las direcciones URL de SPO. Este es el tipo 2, por lo que **optimizar** y **permitir** (el tipo 1 es solo optimizar).
 
    ```powershell
    .\Get-TLEPacFile.ps1 -Instance Worldwide -Type 2 -TenantName <contoso> -CdnEdgeNodesFilePath .\cdnedgenodes.json -FilePath TLE.pac
    ```
 
-5. El archivo TLE.pac contendrá todos los espacios de nombres e IP (IPv4/IPv6).
+5. El archivo TLE.pac contendrá todos los espacios de nombres y direcciones IP (IPv4/IPv6).
 
 ##### <a name="get-tlepacfileps1"></a>Get-TLEPacFile.ps1
 
@@ -500,73 +500,73 @@ else
 }
 ```
 
-El script analizará automáticamente la lista de Azure en función de la [dirección URL](https://www.microsoft.com/download/details.aspx?id=56519) de descarga y las claves de **AzureFrontDoor.Frontend**, por lo que no es necesario obtenerla manualmente.
+El script analizará automáticamente la lista de Azure en función de la [dirección URL de descarga](https://www.microsoft.com/download/details.aspx?id=56519) y las claves fuera de **AzureFrontDoor.Frontend**, por lo que no es necesario obtenerla manualmente.
 
-De nuevo, no se recomienda realizar la descarga de VPN con solo los FQDN; usar **los** FQDN y las direcciones IP de la función ayuda a limitar el uso de esta descarga a un conjunto limitado de puntos de conexión, incluidos Live Events/Stream. La forma en que se estructura la función dará como resultado que se haga una búsqueda dns para el FQDN que coincida con los enumerados por el cliente directamente, es decir, la resolución DNS de los espacios de nombres restantes permanece sin cambios.
+De nuevo, no se recomienda realizar la descarga de VPN con solo los FQDN; Usar **los** FQDN y las direcciones IP de la función ayuda a limitar el uso de esta descarga a un conjunto limitado de puntos de conexión, incluidos Live Events/Stream. La forma en que se estructura la función dará lugar a que se realice una búsqueda DNS para el FQDN que coincida con las enumeradas directamente por el cliente, es decir, la resolución DNS de los espacios de nombres restantes permanece sin cambios.
 
-Si desea limitar el riesgo de descargar puntos de conexión que no están relacionados con Live Events y Stream, **\*** puede quitar el dominio .azureedge.net de la configuración, que es donde se encuentra la mayor parte de este riesgo, ya que se trata de un dominio compartido que se usa para todos los clientes de Azure CDN. La desventaja de esto es que cualquier evento que use un codificador externo no se optimizará, pero los eventos producidos o organizados dentro de Teams lo estarán.
+Si desea limitar el riesgo de descarga de puntos de conexión no relacionados con Live Events y Stream, puede quitar el **\*dominio .azureedge.net** de la configuración, que es donde se encuentra la mayor parte de este riesgo, ya que se trata de un dominio compartido que se usa para todos los clientes de Azure CDN. La desventaja de esto es que cualquier evento que use un codificador externo no se optimizará, pero los eventos generados o organizados en Teams serán.
 
 ## <a name="3-configure-routing-on-the-vpn-to-enable-direct-egress"></a>3. Configurar el enrutamiento en la VPN para habilitar la salida directa
 
-El último paso es agregar una ruta directa para las IP de eventos en directo **descritas en Recopilación** de las listas actuales de puntos de conexión de CDN en la configuración de VPN para asegurarse de que el tráfico no se envía a través del túnel forzado a la VPN. Encontrará información detallada sobre cómo hacerlo para los puntos de conexión de optimización de Microsoft 365 en la sección Implementar túnel dividido de [VPN](microsoft-365-vpn-implement-split-tunnel.md#implement-vpn-split-tunneling) de Implementar túnel [dividido de VPN para Microsoft 365](microsoft-365-vpn-implement-split-tunnel.md). El proceso es exactamente el mismo para las IP de stream/live events enumeradas en este documento.
+El último paso es agregar una ruta directa para las direcciones IP de eventos en directo descritas en **Recopilación de las listas actuales de puntos de conexión de RED CDN** en la configuración de VPN para asegurarse de que el tráfico no se envía a través del túnel forzado a la VPN. Puede encontrar información detallada sobre cómo hacerlo para los puntos de conexión de Microsoft 365 Optimize en la sección [Implementar tunelización dividida de VPN](microsoft-365-vpn-implement-split-tunnel.md#implement-vpn-split-tunneling) de [Implementación de la tunelización dividida de VPN para Microsoft 365](microsoft-365-vpn-implement-split-tunnel.md). El proceso es exactamente el mismo para las direcciones IP de Stream/Live Events enumeradas en este documento.
 
-Tenga en cuenta que solo los IP (no FQDN) de [Recopilar](#gathering-the-current-lists-of-cdn-endpoints) las listas actuales de puntos de conexión CDN deben usarse para la configuración de VPN.
+Tenga en cuenta que solo se deben usar las direcciones IP (no LOS FQDN) de [Recopilación de las listas actuales de puntos de conexión de RED CDN](#gathering-the-current-lists-of-cdn-endpoints) para la configuración de VPN.
 
 ## <a name="faq"></a>Preguntas más frecuentes
 
 ### <a name="will-this-send-all-my-traffic-to-the-service-direct"></a>¿Esto enviará todo mi tráfico al servicio directamente?
 
-No, esto enviará el tráfico de streaming sensible a la latencia de un evento live o directo de vídeo Stream, cualquier otro tráfico seguirá usando el túnel VPN si no se resuelven en las IP publicadas.
+No, esto enviará el tráfico de streaming sensible a la latencia para un evento en directo o streaming de vídeo directo, cualquier otro tráfico seguirá usando el túnel VPN si no se resuelven en las direcciones IP publicadas.
 
 ### <a name="do-i-need-to-use-the-ipv6-addresses"></a>¿Necesito usar las direcciones IPv6?
 
 No, la conectividad solo puede ser IPv4 si es necesario.
 
-### <a name="why-are-these-ips-not-published-in-the-microsoft-365-urlip-service"></a>¿Por qué estas direcciones IP no se publican en el servicio Microsoft 365 URL/IP?
+### <a name="why-are-these-ips-not-published-in-the-microsoft-365-urlip-service"></a>¿Por qué estas direcciones IP no se publican en el servicio de dirección URL/IP de Microsoft 365?
 
-Microsoft tiene controles estrictos en torno al formato y el tipo de información que está en el servicio para garantizar que los clientes puedan usar de forma confiable la información para implementar un enrutamiento seguro y óptimo en función de la categoría de extremo.
+Microsoft tiene controles estrictos en torno al formato y el tipo de información que se encuentra en el servicio para garantizar que los clientes puedan usar la información de forma confiable para implementar un enrutamiento seguro y óptimo en función de la categoría de punto de conexión.
 
-La **categoría** de extremo predeterminado no proporciona información IP por numerosas razones (Los extremos predeterminados pueden estar fuera del control de Microsoft, cambiar con demasiada frecuencia o estar en bloques compartidos con otros elementos). Por este motivo, los extremos predeterminados están diseñados para enviarse a través de FQDN a un proxy de inspección, como el tráfico web normal.
+La categoría Punto de conexión **predeterminado** no tiene información de IP proporcionada por numerosas razones (los puntos de conexión predeterminados pueden estar fuera del control de Microsoft, pueden cambiar con demasiada frecuencia o estar en bloques compartidos con otros elementos). Por este motivo, los puntos de conexión predeterminados están diseñados para enviarse a través del FQDN a un proxy de inspección, como el tráfico web normal.
 
-En este caso, los puntos de conexión anteriores son CDN que pueden usar elementos que no son controlados por Microsoft que no sean Live Events o Stream, por lo que enviar el tráfico directo también significará cualquier otra cosa que se resuelva en estas IP también se enviará directamente desde el cliente. Debido a la naturaleza única de la crisis global actual y para satisfacer las necesidades a corto plazo de nuestros clientes, Microsoft ha proporcionado la información anterior para que los clientes puedan usarlo según lo que es conveniente.
+En este caso, los puntos de conexión anteriores son redes CDN que pueden usar elementos no controlados por Microsoft que no sean Live Events o Stream, por lo que enviar el tráfico directo también significará cualquier otra cosa que se resuelva en estas direcciones IP también se enviará directamente desde el cliente. Debido a la naturaleza única de la crisis global actual y para satisfacer las necesidades a corto plazo de nuestros clientes, Microsoft ha proporcionado la información anterior para que los clientes puedan usar como consideren oportuno.
 
-Microsoft está trabajando para volver a configurar los puntos de conexión de eventos en directo para permitir que se incluyan en las categorías de extremo Permitir/optimizar en el futuro.
+Microsoft está trabajando para volver a configurar los puntos de conexión de Live Events para permitir que se incluyan en las categorías de punto de conexión Allow/Optimize en el futuro.
 
-### <a name="do-i-only-need-to-allow-access-to-these-ips"></a>¿Solo necesito permitir el acceso a estas IP?
+### <a name="do-i-only-need-to-allow-access-to-these-ips"></a>¿Solo necesito permitir el acceso a estas direcciones IP?
 
-No, el acceso a todos los puntos de **conexión marcados** requeridos en el servicio [URL/IP](urls-and-ip-address-ranges.md) es esencial para que el servicio funcione. Además, se requiere cualquier extremo opcional marcado para Stream (id. 41-45).
+No, el acceso a todos los puntos de conexión marcados **requeridos** en [el servicio URL/IP](urls-and-ip-address-ranges.md) es esencial para que el servicio funcione. Además, se requiere cualquier punto de conexión opcional marcado para Stream (id. 41-45).
 
-### <a name="what-scenarios-will-this-advice-cover"></a>¿Qué escenarios abarcará este consejo?
+### <a name="what-scenarios-will-this-advice-cover"></a>¿Qué escenarios cubrirá este consejo?
 
-1. Eventos en directo producidos dentro de la Teams app
+1. Eventos en directo generados dentro de la aplicación teams
 2. Visualización del contenido hospedado de Stream
-3. Eventos producidos por dispositivo externo (codificador)
+3. Eventos generados por dispositivos externos (codificador)
 
-### <a name="does-this-advice-cover-presenter-traffic"></a>¿Este consejo cubre el tráfico de moderador?
+### <a name="does-this-advice-cover-presenter-traffic"></a>¿Este consejo cubre el tráfico del moderador?
 
-No es así, el consejo anterior es puramente para aquellos que consumen el servicio. La presentación desde dentro de Teams verá el tráfico del moderador fluyendo a los puntos de conexión UDP marcados optimizar enumerados en la fila 11 del servicio URL/IP con el asesoramiento detallado de descarga de VPN descrito en la sección Implementar túnel dividido de [VPN](microsoft-365-vpn-implement-split-tunnel.md#implement-vpn-split-tunneling) de Implementar túnel dividido de [VPN para Microsoft 365](microsoft-365-vpn-implement-split-tunnel.md).
+No lo hace, el consejo anterior es puramente para aquellos que consumen el servicio. Al presentar desde Teams, verá el tráfico del moderador fluyendo a los puntos de conexión UDP marcados de Optimización que aparecen en la fila 11 del servicio URL/IP con consejos detallados de descarga de VPN descritos en la sección [Implementación de túnel dividido de VPN](microsoft-365-vpn-implement-split-tunnel.md#implement-vpn-split-tunneling) de [Implementación de la tunelización dividida de VPN para Microsoft 365](microsoft-365-vpn-implement-split-tunnel.md).
 
-### <a name="does-this-configuration-risk-traffic-other-than-live-events-amp-stream-being-sent-direct"></a>¿Esta configuración arriesga el tráfico que no sea Live Events &amp; Stream que se envía directamente?
+### <a name="does-this-configuration-risk-traffic-other-than-live-events-amp-stream-being-sent-direct"></a>¿Esta configuración corre el riesgo de que el tráfico que no sea Live Events &amp; Stream se envíe directamente?
 
-Sí, debido a los FQDN compartidos usados para algunos elementos del servicio, esto es inevitable. Este tráfico normalmente se envía a través de un proxy corporativo que puede aplicar la inspección. En un escenario de túnel dividido de VPN, el uso de los FQDN y los IP reducirá este riesgo al mínimo, pero seguirá existiendo. Los clientes pueden quitar el dominio .azureedge.net de la configuración de descarga y reducir este riesgo al mínimo, pero esto quitará la descarga de eventos en directo compatibles con Stream (eventos de codificador externos programados por Teams, eventos Yammer producidos en Teams, eventos de codificador externo programados por Yammer y Eventos programados de stream o visualización a petición de Stream).**\*** Los eventos programados y producidos en Teams no se ven afectados.
+Sí, debido a los FQDN compartidos que se usan para algunos elementos del servicio, esto es inevitable. Normalmente, este tráfico se envía a través de un proxy corporativo que puede aplicar la inspección. En un escenario de túnel dividido de VPN, el uso de los FQDN y las direcciones IP limitará este riesgo al mínimo, pero seguirá existiendo. Los clientes pueden quitar el **\*dominio .azureedge.net** de la configuración de descarga y reducir este riesgo a un mínimo, pero esto quitará la descarga de eventos en directo compatibles con Stream (eventos de codificador externos programados por Teams, eventos de Yammer producidos en Teams, eventos de codificador externo programados para Yammer y eventos programados de Stream o visualización a petición desde Stream). Los eventos programados y producidos en Teams no se ven afectados.
 
 ## <a name="related-articles"></a>Artículos relacionados
 
 [Información general: Túnel dividido de VPN para Microsoft 365](microsoft-365-vpn-split-tunnel.md)
 
-[Implementación de túnel dividido de VPN para Microsoft 365](microsoft-365-vpn-implement-split-tunnel.md)
+[Implementación de la tunelización dividida de VPN para Microsoft 365](microsoft-365-vpn-implement-split-tunnel.md)
 
-[Escenarios comunes de túnel dividido de VPN para Microsoft 365](microsoft-365-vpn-common-scenarios.md)
+[Escenarios comunes de tunelización dividida de VPN para Microsoft 365](microsoft-365-vpn-common-scenarios.md)
 
-[Proteger el tráfico Teams multimedia para el túnel dividido de VPN](microsoft-365-vpn-securing-teams.md)
+[Protección del tráfico multimedia Teams para la tunelización dividida VPN](microsoft-365-vpn-securing-teams.md)
 
-[Microsoft 365 optimización del rendimiento para usuarios de China](microsoft-365-networking-china.md)
+[Optimización del rendimiento de Microsoft 365 para usuarios de China](microsoft-365-networking-china.md)
 
 [Principios de conectividad de red de Microsoft 365](microsoft-365-network-connectivity-principles.md)
 
 [Evaluar la conectividad de red de Microsoft 365](assessing-network-connectivity.md)
 
-[Microsoft 365 de red y rendimiento](network-planning-and-performance.md)
+[Optimización de rendimiento y red de Microsoft 365](network-planning-and-performance.md)
 
 [Formas alternativas para que los profesionales de seguridad y de TI logren controles de seguridad modernos en los escenarios de trabajo remoto específicos (blog del Equipo de Seguridad de Microsoft)](https://www.microsoft.com/security/blog/2020/03/26/alternative-security-professionals-it-achieve-modern-security-controls-todays-unique-remote-work-scenarios/)
 

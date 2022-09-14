@@ -10,6 +10,7 @@ ms.topic: article
 ms.service: o365-administration
 ms.localizationpriority: medium
 ms.collection:
+- highpri
 - M365-subscription-management
 - Adm_O365
 - Adm_TOC
@@ -28,12 +29,12 @@ search.appverid:
 - MOE150
 ms.assetid: 2d75860f-c527-4352-a7f6-73eba54c0c72
 description: Administre las firmas de correo electrónico, incluidas las declaraciones de divulgación o declinación de responsabilidades legales para todos los mensajes de correo electrónico que entran o salen de su organización.
-ms.openlocfilehash: 22cc27b48482bb6deb658a215d40eff2541be0a2
-ms.sourcegitcommit: 2f6a7410e9919f753a759c1ada441141e18f06fd
+ms.openlocfilehash: 7eebd09d675ec4186a1aeac526176c627367efd4
+ms.sourcegitcommit: 37e137535c4f70702afe1a5eeaa899c75ee02cfd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/30/2022
-ms.locfileid: "67087295"
+ms.lasthandoff: 09/13/2022
+ms.locfileid: "67663353"
 ---
 # <a name="create-organization-wide-signatures-and-disclaimers"></a>Creación de firmas y declinaciones de responsabilidades para toda la organización
 

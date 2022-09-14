@@ -10,6 +10,7 @@ ms.topic: article
 ms.service: o365-administration
 ms.localizationpriority: medium
 ms.collection:
+- highpri
 - M365-subscription-management
 - Adm_O365
 - Adm_TOC
@@ -24,12 +25,12 @@ search.appverid:
 - MOE150
 ms.assetid: f493e3af-e1d8-4668-9211-230c245a0466
 description: Inicie sesión en su cuenta de administrador de Microsoft 365 para establecer que algunas contraseñas de usuario individuales nunca expiren mediante PowerShell de Azure AD.
-ms.openlocfilehash: bd9960e0da7491b5f2db14618daa17b917310450
-ms.sourcegitcommit: 2f6a7410e9919f753a759c1ada441141e18f06fd
+ms.openlocfilehash: aad32365ee8b8344cab1fe6eedd63a404bb27187
+ms.sourcegitcommit: 37e137535c4f70702afe1a5eeaa899c75ee02cfd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/30/2022
-ms.locfileid: "67084617"
+ms.lasthandoff: 09/13/2022
+ms.locfileid: "67662319"
 ---
 # <a name="set-an-individual-users-password-to-never-expire"></a>Establecer la contraseña de un usuario individual para que nunca expire
 

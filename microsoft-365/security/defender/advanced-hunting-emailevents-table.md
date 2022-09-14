@@ -18,12 +18,12 @@ manager: dansimp
 audience: ITPro
 ms.collection: m365-security-compliance
 ms.topic: article
-ms.openlocfilehash: 5ac64dfbfd42d76e350d27a5d7a1594e6c055cba
-ms.sourcegitcommit: 10e6abe740e27000e223378eb17d657a47555fa8
+ms.openlocfilehash: 9f6624122a2b1b6989e83757b246a82b01e33bbb
+ms.sourcegitcommit: 37e137535c4f70702afe1a5eeaa899c75ee02cfd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/31/2022
-ms.locfileid: "67482062"
+ms.lasthandoff: 09/13/2022
+ms.locfileid: "67664680"
 ---
 # <a name="emailevents"></a>EmailEvents
 
@@ -81,6 +81,7 @@ Para obtener información sobre otras tablas del esquema de búsqueda avanzada, 
 | `UserLevelPolicy` | `string` | Directiva de buzón de usuario final que desencadenó la acción realizada en el correo electrónico |
 | `ReportId` | `long` | Identificador de eventos basado en un contador de repetición. Para identificar eventos únicos, esta columna debe usarse junto con las columnas DeviceName y Timestamp. |
 | `AuthenticationDetails` | `string` | Lista de veredictos de paso o error por protocolos de autenticación por correo electrónico como DMARC, DKIM, SPF o una combinación de varios tipos de autenticación (CompAuth) |
+| `BulkComplaintLevel` | `int` | El umbral asignado al correo electrónico de los correos electrónicos masivos, un alto nivel de quejas masivas (BCL) significa que es más probable que el correo electrónico genere quejas y, por tanto, sea más probable que sea correo no deseado. |
 
 ## <a name="related-topics"></a>Temas relacionados
 

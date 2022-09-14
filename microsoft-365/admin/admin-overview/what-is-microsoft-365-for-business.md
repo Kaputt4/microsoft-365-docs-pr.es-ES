@@ -10,9 +10,11 @@ ms.topic: article
 ms.service: o365-administration
 ms.localizationpriority: medium
 ms.collection:
+- highpri
 - M365-subscription-management
 - Adm_O365
 ms.custom:
+- VSBFY23
 - AdminSurgePortfolio
 - adminvideo
 - intro-overview
@@ -21,12 +23,12 @@ search.appverid:
 description: Obtenga información sobre Microsoft 365 para empresas, un servicio de suscripción que se encarga de la parte de TI.
 feedback_system: None
 ms.date: ''
-ms.openlocfilehash: 9cd0c103950c75fb4fafc4e01e34e0688d93ef5d
-ms.sourcegitcommit: a7c1acfb3d2cbba913e32493b16ebd8cbfeee456
+ms.openlocfilehash: a175149d1674b8614572bc3aa221a2a86266654a
+ms.sourcegitcommit: 37e137535c4f70702afe1a5eeaa899c75ee02cfd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/13/2022
-ms.locfileid: "66998219"
+ms.lasthandoff: 09/13/2022
+ms.locfileid: "67662968"
 ---
 # <a name="what-is-microsoft-365-for-business"></a>Qué es Microsoft 365 para empresas
 

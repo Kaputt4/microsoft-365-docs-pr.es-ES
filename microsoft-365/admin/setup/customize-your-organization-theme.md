@@ -10,6 +10,7 @@ ms.topic: article
 ms.service: o365-administration
 ms.localizationpriority: medium
 ms.collection:
+- highpri
 - M365-subscription-management
 - Adm_O365
 - Adm_TOC
@@ -24,12 +25,12 @@ search.appverid:
 - MOE150
 ms.assetid: 8275da91-7a48-4591-94ab-3123a3f79530
 description: Aprenda a cambiar el tema predeterminado de la parte superior de la barra de navegación de Microsoft 365 y a personalizarlo para que coincida con el logotipo o el color de su empresa.
-ms.openlocfilehash: 6af086c9fff4ce30d52456103dac14d7fb93ee36
-ms.sourcegitcommit: 2f6a7410e9919f753a759c1ada441141e18f06fd
+ms.openlocfilehash: fe42d3750a97d475f2f3a6e4ea789fe725f2e204
+ms.sourcegitcommit: 37e137535c4f70702afe1a5eeaa899c75ee02cfd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/30/2022
-ms.locfileid: "67086569"
+ms.lasthandoff: 09/13/2022
+ms.locfileid: "67662847"
 ---
 # <a name="customize-the-microsoft-365-theme-for-your-organization"></a>Personalización del tema de Microsoft 365 para su organización
 
@@ -45,7 +46,7 @@ Puede agregar o actualizar un tema predeterminado que se aplique a todos los usu
 
 Todos los temas de la organización se pueden personalizar mediante las pestañas siguientes.
 
-|Pestaña|What can you do?|
+|Tab|What can you do?|
 |---|---|
 |[General](#general-modify-a-theme)|Modifique un nombre de tema y asígnelo a hasta cinco grupos (si procede).|
 |[Logotipos](#logos-specify-your-theme-logos)|Agregue el logotipo de la organización, incluido el logotipo alternativo para el tema oscuro.|
@@ -76,7 +77,7 @@ Puede crear hasta cuatro temas de grupo adicionales.
 
 2. En **Grupos**, puede seleccionar hasta 5 Grupos de Microsoft 365 que puedan ver el tema del grupo, en lugar de usar el tema predeterminado. También puede impedir que los usuarios reemplacen su tema y mostrar el nombre para mostrar del usuario.
 
-3. Seleccione **Guardar**.
+3. Haga clic en **Guardar**.
 
 :::image type="content" source="../../media/default-theme-general-users1.png" alt-text="Captura de pantalla: pestaña General que muestra el tema predeterminado para un grupo de usuarios de la organización":::
 
@@ -105,7 +106,7 @@ En la página **Colores** , puede establecer los colores predeterminados y elegi
 
 :::image type="content" source="../../media/default-theme-colors1.png" alt-text="Captura de pantalla: pestaña Colores que muestra los colores de tema predeterminados de su organización":::
 
-## <a name="frequently-asked-questions"></a>Preguntas frecuentes
+## <a name="frequently-asked-questions"></a>Preguntas más frecuentes
 
 ### <a name="my-organization-already-has-a-theme-for-all-employees-how-will-this-change"></a>Mi organización ya tiene un tema para todos los empleados. ¿Cómo cambiará esto?
 

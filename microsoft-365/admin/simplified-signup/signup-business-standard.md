@@ -10,17 +10,18 @@ ms.topic: article
 ms.service: o365-administration
 ms.localizationpriority: medium
 ms.collection:
+- highpri
 - Adm_TOC
 ms.custom:
 - AdminSurgePortfolio
 - VSBFY23
 description: Compre Microsoft 365 Empresa Estándar y configure su organización.
-ms.openlocfilehash: 83841af8a538b861b43003c39bfb92a24a4e47aa
-ms.sourcegitcommit: 2f6a7410e9919f753a759c1ada441141e18f06fd
+ms.openlocfilehash: f97d2d28b4ca85cacbbfa9cb02d27b1620c85269
+ms.sourcegitcommit: 37e137535c4f70702afe1a5eeaa899c75ee02cfd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/30/2022
-ms.locfileid: "67085079"
+ms.lasthandoff: 09/13/2022
+ms.locfileid: "67661089"
 ---
 # <a name="sign-up-for-a-microsoft-365-business-standard-subscription"></a>Registrarse para una suscripción a Microsoft 365 Empresa Estándar
 
@@ -119,7 +120,7 @@ Los términos de uso del registro simplificado se han actualizado recientemente 
 
 Si decide no aceptar los términos actualizados para el registro simplificado o agregar un dominio empresarial, su suscripción no se renovará automáticamente y, al final del contrato de suscripción actual, perderá el acceso a las aplicaciones de Office. Los datos de OneDrive se conservarán durante 90 días para que pueda hacer copias de ellos y, a continuación, se eliminarán.
 
-## <a name="frequently-asked-questions"></a>Preguntas frecuentes
+## <a name="frequently-asked-questions"></a>Preguntas más frecuentes
 
 ### <a name="what-is-a-business-email-and-what-are-the-advantages-to-setting-one-up"></a>¿Qué es un correo electrónico empresarial y cuáles son las ventajas de configurar uno?
 

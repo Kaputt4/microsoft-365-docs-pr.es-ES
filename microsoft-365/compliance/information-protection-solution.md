@@ -19,12 +19,12 @@ ms.collection:
 - m365initiative-compliance
 - zerotrust-solution
 description: Guía prescriptiva para implementar Microsoft Purview Information Protection en su organización.
-ms.openlocfilehash: 4954680126bc4390f88c28819950032aab36348b
-ms.sourcegitcommit: 57c2f5ba74e238543d6fd724ed79527547bd0780
-ms.translationtype: HT
+ms.openlocfilehash: f1d358454e54a41c2cb20ec4dc31ec47db5d92a8
+ms.sourcegitcommit: 37e137535c4f70702afe1a5eeaa899c75ee02cfd
+ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/28/2022
-ms.locfileid: "67069463"
+ms.lasthandoff: 09/13/2022
+ms.locfileid: "67663287"
 ---
 # <a name="deploy-an-information-protection-solution-with-microsoft-purview"></a>Implementación de una solución de protección de la información con Microsoft Purview
 
@@ -108,4 +108,4 @@ Módulos de aprendizaje para consultores y administradores:
 
 Si quiere ayudar a formar a los usuarios para que apliquen y usen las etiquetas de confidencialidad que configure para ellos, consulte [Documentación de usuario final para las etiquetas de confidencialidad](get-started-with-sensitivity-labels.md#end-user-documentation-for-sensitivity-labels).
 
-Al implementar directivas de prevención de pérdida de datos para Teams, es posible que le resulten útil la siguiente guía para el usuario final como introducción a esta tecnología con algunos mensajes potenciales que podrían ver: [Teams sobre prevención de pérdida de datos (DLP) y directivas de cumplimiento de comunicaciones ](https://support.microsoft.com/office/teams-messages-about-data-loss-prevention-dlp-and-communication-compliance-policies-c5631c3f-f61b-4306-a6ac-6603d9fc5ff0).
+Al implementar directivas de prevención de pérdida de datos para Teams, es posible que le resulte útil la siguiente guía para el usuario final como introducción a esta tecnología con algunos mensajes potenciales que podrían ver: [mensajes de Teams sobre la prevención de pérdida de datos (DLP) y directivas de cumplimiento de comunicaciones](https://support.microsoft.com/office/teams-messages-about-data-loss-prevention-dlp-and-communication-compliance-policies-c5631c3f-f61b-4306-a6ac-6603d9fc5ff0).

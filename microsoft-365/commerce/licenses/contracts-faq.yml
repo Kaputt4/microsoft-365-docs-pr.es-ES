@@ -12,12 +12,12 @@ metadata:
   ms.custom: commerce_vl
   ms.localizationpriority: medium
   description: Preguntas más frecuentes sobre los contratos de licencia de Microsoft 365.
-  ms.openlocfilehash: eb952324472e11bc541f972f324252a27d383655
-  ms.sourcegitcommit: 852075d8d8a4ca052f69e854396d1565ef713500
+  ms.openlocfilehash: 2bfe08ca51aad01a6bb21bd2a7d3f34ae1a073d2
+  ms.sourcegitcommit: 37e137535c4f70702afe1a5eeaa899c75ee02cfd
   ms.translationtype: MT
   ms.contentlocale: es-ES
-  ms.lasthandoff: 05/26/2022
-  ms.locfileid: "66998147"
+  ms.lasthandoff: 09/13/2022
+  ms.locfileid: "67663637"
 title: Preguntas más frecuentes sobre contratos
 summary: ''
 sections:
@@ -51,10 +51,10 @@ sections:
   - question: >
       ¿Dónde están mis contratos mpsa?
     answer: >
-      la información de licencia de Contrato de productos y servicios de Microsoft (MPSA) se administra en el [Centro de negocios de Microsoft](https://businessaccount.microsoft.com/Customer) o [en Microsoft Store para Empresas](https://businessstore.microsoft.com/store). No se muestra información de MPSA en esta lista de contratos. Para obtener más información sobre MPSA, consulte [Licencias por volumen](https://www.microsoft.com/Licensing/MPSA/default.aspx).
+      La información de licencia del Contrato de productos y servicios de Microsoft (MPSA) se administra en el [Centro de negocios de Microsoft](https://businessaccount.microsoft.com/Customer) o [Microsoft Store para Empresas](https://businessstore.microsoft.com/store). No se muestra información de MPSA en esta lista de contratos. Para obtener más información sobre MPSA, consulte [Licencias por volumen](https://www.microsoft.com/Licensing/MPSA/default.aspx).
   - question: >
       ¿Por qué algunos identificadores de licencia de mi organización no se muestran en la lista?
-    answer: "Solo se muestra un identificador de licencia si el usuario que ha iniciado sesión tiene permiso para ver los detalles del identificador de licencia. Se concede permiso para ver un identificador de licencia específico en nombre de su organización si cumple uno de los siguientes criterios:\n\n- Aparece como contacto para los contratos en un formulario legal del Programa de licencias por volumen. Entre los tipos de contacto se incluyen Contacto principal, Corresponsal de avisos, Contacto de acceso en línea, Administrador de Software Assurance, Administrador de servicios en línea o Administrador de suscripciones.\n- Es administrador con acceso a los contratos.\n\nPara obtener más información sobre los roles de permisos de licencias por volumen y sus acciones permitidas, consulte las [preguntas más frecuentes sobre permisos](https://docs.microsoft.com/licensing/permissions-faq). \n"
+    answer: "Solo se muestra un identificador de licencia si el usuario que ha iniciado sesión tiene permiso para ver los detalles del identificador de licencia. Se concede permiso para ver un identificador de licencia específico en nombre de su organización si cumple uno de los siguientes criterios:\n\n- Aparece como contacto para los contratos en un formulario legal del Programa de licencias por volumen. Entre los tipos de contacto se incluyen Contacto principal, Corresponsal de avisos, Contacto de acceso en línea, Administrador de Software Assurance, Administrador de servicios en línea o Administrador de suscripciones.\n- Es administrador con acceso a los contratos.\n\nPara obtener más información sobre los roles de permisos de licencias por volumen y sus acciones permitidas, consulte las [preguntas más frecuentes sobre permisos](/licensing/permissions-faq). \n"
   - question: >
       ¿Cuánto tiempo tardan los nuevos pedidos de licencia en aparecer en la lista de contratos?
     answer: >
@@ -148,4 +148,4 @@ sections:
       Las concesiones de licencias se reflejan en la lista Contratos y en Descargas & claves. En la lista de productos, los productos recibidos de concesiones de licencias se muestran con un asterisco (*) para indicar que no formaban parte de la compra original.
   - question: >
       ¿Cómo puedo ponerme en contacto con Soporte técnico de Microsoft?
-    answer: Para ponerse en contacto con el soporte técnico por teléfono o por formulario web, consulte [Contacto con nosotros](https://docs.microsoft.com/licensing/contact-us). Microsoft responde a los envíos de formularios web en un plazo de 24 horas.
+    answer: Para ponerse en contacto con el soporte técnico por teléfono o por formulario web, consulte [Contacto con nosotros](/licensing/contact-us). Microsoft responde a los envíos de formularios web en un plazo de 24 horas.
