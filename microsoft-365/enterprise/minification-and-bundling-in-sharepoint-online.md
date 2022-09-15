@@ -6,7 +6,7 @@ manager: scotv
 ms.date: 1/18/2022
 audience: Admin
 ms.topic: troubleshooting
-ms.service: o365-administration
+ms.service: microsoft-365-enterprise
 ms.localizationpriority: medium
 ms.collection:
 - Ent_O365
@@ -21,12 +21,12 @@ search.appverid:
 - MET150
 ms.assetid: 87a52468-994e-43a2-b155-7229ed659291
 description: Obtenga información sobre cómo usar técnicas de minificación y agrupación con Web Essentials para reducir las solicitudes HTTP y el tiempo necesario para cargar páginas en SharePoint Online.
-ms.openlocfilehash: b02cf095b1d7f05a82df1cf98a590ff762453f8a
-ms.sourcegitcommit: db1e48af88995193f15bbd5962f5101a6088074b
+ms.openlocfilehash: 38149275f2f3987fe5c989b355fc1f5aa5368f69
+ms.sourcegitcommit: 9b133379196da2b3a4bb311b07ff274f43780f68
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/23/2022
-ms.locfileid: "65637635"
+ms.lasthandoff: 09/14/2022
+ms.locfileid: "67694511"
 ---
 # <a name="minification-and-bundling-in-sharepoint-online"></a>Minificación y agrupación en SharePoint Online
 
@@ -41,7 +41,7 @@ En el caso de los archivos JavaScript y CSS, también puede usar un enfoque deno
 Puede usar software de terceros, como Web Essentials, para agrupar archivos CSS y JavaScript.
   
 > [!IMPORTANT]
-> Web Essentials es un proyecto de código abierto y basado en la comunidad de terceros. El software es una extensión para Visual Studio 2012 y Visual Studio 2013 y no es compatible con Microsoft. Para descargar Web Essentials, visite el sitio web en [Web Essentials 2012](https://marketplace.visualstudio.com/items?itemName=MadsKristensen.WebEssentials2012).
+> Web Essentials es un proyecto de código abierto y basado en la comunidad de terceros. El software es una extensión de Visual Studio 2012 y Visual Studio 2013 y no es compatible con Microsoft. Para descargar Web Essentials, visite el sitio web en [Web Essentials 2012](https://marketplace.visualstudio.com/items?itemName=MadsKristensen.WebEssentials2012).
   
 Web Essentials ofrece dos formas de agrupación:
  

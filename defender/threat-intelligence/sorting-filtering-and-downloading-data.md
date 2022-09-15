@@ -7,12 +7,12 @@ ms.service: threat-intelligence
 ms.topic: how-to
 ms.date: 08/02/2022
 ms.custom: template-how-to
-ms.openlocfilehash: 36648d50033cb00893e9f973641f421274e6e3d8
-ms.sourcegitcommit: 414682b9bf42dc19a89c893d3c515aee9765b6e4
+ms.openlocfilehash: 9b826bab435f293f48486bb533a77535b2f74037
+ms.sourcegitcommit: 9b133379196da2b3a4bb311b07ff274f43780f68
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/08/2022
-ms.locfileid: "67280385"
+ms.lasthandoff: 09/14/2022
+ms.locfileid: "67697427"
 ---
 # <a name="sorting-filtering-and-downloading-data"></a>Ordenar, filtrar y descargar datos
 
@@ -29,7 +29,6 @@ En este artículo de procedimientos, aprenderá a ordenar y filtrar datos para l
 - Seguidores
 - Componentes
 - Pares de host
-- Hashes
 - Cookies
 - Servicios
 - DNS
@@ -212,13 +211,6 @@ Los encabezados siguientes se exportan como resultado de la descarga de datos de
 | **attributeCause**         | Causa de la relación entre el nombre de host primario y secundario |
 | **Tags**                   | Etiquetas personalizadas o del sistema asociadas al artefacto |
 
-Los encabezados siguientes se exportan como resultado de la descarga de datos Hashes:
-
-| &nbsp;             | &nbsp;                     |
-|--------------------|----------------------------|
-| **source**         | Origen que observó el ejemplo de hash MD5 |
-| **Muestra**                  | Hash md5 |
-| **fecha de recopilación**         | Fecha de recopilación capturada por el origen |
 
 Los encabezados siguientes se exportan como resultado de la descarga de datos de cookies:
 
@@ -258,10 +250,10 @@ Los encabezados siguientes se exportan como resultado de la descarga de indicado
 
 | &nbsp;                     | &nbsp;                     |
 |----------------------------|----------------------------|
-| **type**                | Tipo de indicador (por ejemplo, ip, certificado, dominio, hash_sha256) |
+| **type**                | Tipo de indicador (por ejemplo, ip, certificado, dominio, _sha256) |
 | **value**               | Valor del indicador (por ejemplo, dirección IP, dominio, nombre de host) |
 | **source**              | Origen del indicador (RiskIQ o OSINT) |
 
-## <a name="next-steps"></a>Siguientes pasos
+## <a name="next-steps"></a>Pasos siguientes
 
 Para obtener más información, consulte [Conjuntos de datos](data-sets.md).

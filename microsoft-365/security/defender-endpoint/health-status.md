@@ -14,12 +14,13 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.subservice: mde
-ms.openlocfilehash: 8ae4ff58ae71ef51d09716761d2660d239f51083
-ms.sourcegitcommit: 228fa13973bf7c2d91504703fab757f552ae40dd
+search.appverid: met150
+ms.openlocfilehash: 0ff6d8074131e1595ee651c40e59a0b9b03eb063
+ms.sourcegitcommit: 9b133379196da2b3a4bb311b07ff274f43780f68
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/01/2022
-ms.locfileid: "67523828"
+ms.lasthandoff: 09/14/2022
+ms.locfileid: "67692605"
 ---
 # <a name="investigate-agent-health-issues"></a>Investigar problemas de estado del agente
 
@@ -38,10 +39,10 @@ En la tabla siguiente se proporciona información sobre los valores devueltos al
 |Valor|Descripción|
 |---|---|
 |automatic_definition_update_enabled|True si las actualizaciones automáticas de definiciones de antivirus están habilitadas, false en caso contrario.|
-|cloud_automatic_sample_submission_consent|Nivel de envío de ejemplo actual. Puede ser uno de los siguientes valores: <ul><li>**Ninguno**: no se envían muestras sospechosas a Microsoft.</li><li>**Seguro**: solo las muestras sospechosas que no contienen información de identificación personal (PII) se envían automáticamente. Este es el valor predeterminado para esta configuración.</li><li>**Todos**: todos los ejemplos sospechosos se envían a Microsoft.</li></ul>|
+|cloud_automatic_sample_submission_consent|Nivel de envío de ejemplo actual. Puede ser uno de los siguientes valores: <ul><li>**Ninguno**: no se envían muestras sospechosas a Microsoft.</li><li>**Seguro**: solo se envían automáticamente muestras sospechosas que no contienen información de identificación personal (PII). Este es el valor predeterminado para esta configuración.</li><li>**Todos**: todos los ejemplos sospechosos se envían a Microsoft.</li></ul>|
 |cloud_diagnostic_enabled|True si la recopilación de datos de diagnóstico opcional está habilitada, false en caso contrario. Para obtener más información relacionada con Defender para punto de conexión y otros productos y servicios como Antivirus de Microsoft Defender y Windows, consulte [Declaración de privacidad de Microsoft](https://go.microsoft.com/fwlink/?linkid=827576).|
 |cloud_enabled|True si la protección entregada en la nube está habilitada, en caso contrario, false.|
-|conflicting_applications|Lista de aplicaciones que posiblemente entren en conflicto con Microsoft Defender para punto de conexión. Esta lista incluye, entre otros, otros productos de seguridad y otras aplicaciones conocidas por causar problemas de compatibilidad.|
+|conflicting_applications|Lista de aplicaciones que posiblemente entren en conflicto con Microsoft Defender para punto de conexión. Esta lista incluye, pero no se limita a, otros productos de seguridad y otras aplicaciones conocidas por causar problemas de compatibilidad.|
 |definitions_status|Estado de las definiciones de antivirus.|
 |definitions_updated|Fecha y hora de la última actualización de definición de antivirus.|
 |definitions_updated_minutes_ago|Número de minutos desde la última actualización de definición de antivirus.|

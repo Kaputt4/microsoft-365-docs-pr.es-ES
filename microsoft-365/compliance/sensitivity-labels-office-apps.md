@@ -16,12 +16,12 @@ search.appverid:
 - MET150
 description: Información para que los administradores de TI administren las etiquetas de confidencialidad en las aplicaciones de Office para escritorio, móvil y web.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: c627d21c4416cecf5be98c6730e508d332dcad9b
-ms.sourcegitcommit: 37e137535c4f70702afe1a5eeaa899c75ee02cfd
+ms.openlocfilehash: 7bb760eb29f54554f58efedaa54ab9ca1cadf312
+ms.sourcegitcommit: 9b133379196da2b3a4bb311b07ff274f43780f68
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/13/2022
-ms.locfileid: "67663550"
+ms.lasthandoff: 09/14/2022
+ms.locfileid: "67696669"
 ---
 # <a name="manage-sensitivity-labels-in-office-apps"></a>Administrar etiquetas de confidencialidad en las aplicaciones de Office
 
@@ -193,7 +193,7 @@ Para una experiencia de etiquetado más uniforme con los informes significativos
 
 ## <a name="encryption-based-label-matching-for-documents"></a>Coincidencia de etiquetas basadas en cifrado para documentos
 
-Cuando se ha cifrado un documento con permisos definidos por el administrador, la información de cifrado incluye información sobre una etiqueta de confidencialidad coincidente. Como resultado, cuando un usuario abre ese documento en una aplicación de Office, la etiqueta coincidente se muestra en la aplicación de Office y se conserva si se guarda el documento.
+Cuando se ha cifrado un documento con permisos definidos por el administrador, la directiva de cifrado se inserta en el documento. Esto sucede independientemente del etiquetado. Por ejemplo, cuando un archivo adjunto de Office hereda el cifrado de un mensaje de correo electrónico o un usuario ha aplicado una plantilla de protección mediante Information Rights Management (IRM) en su aplicación de Office. Si una etiqueta de confidencialidad del inquilino coincide con esa misma directiva de cifrado, las aplicaciones de Office asignarán automáticamente esa etiqueta coincidente al documento.
 
 En este escenario, la etiqueta de confidencialidad coincidente puede etiquetar un documento sin etiquetar y reemplazar una etiqueta existente que no aplique el cifrado. Por ejemplo, la etiqueta **General** se reemplaza por **Confidencial/Todos los empleados**. Las marcas de contenido de la etiqueta coincidente no se aplican automáticamente, a menos que el documento no se haya etiquetado previamente y use el complemento AIP.
 
@@ -211,7 +211,7 @@ Sin embargo, también verá este comportamiento con un escenario de etiquetado p
     
     Como evento de auditoría que se muestra en el Explorador de actividades, este usuario aplicó la etiqueta, no el remitente del correo electrónico.
 
-La coincidencia de etiquetas basada en cifrado solo funciona dentro del inquilino, para los permisos definidos por el administrador, y la etiqueta de confidencialidad coincidente debe publicarse para el usuario que abre el documento.
+La coincidencia de etiquetas basada en cifrado solo funciona dentro del inquilino, para los permisos definidos por el administrador, y la etiqueta de confidencialidad coincidente debe publicarse para el usuario que abre el documento. La etiqueta coincidente se conserva si se guarda el documento.
 
 ## <a name="sensitivity-label-compatibility"></a>Compatibilidad con la etiqueta de confidencialidad
 

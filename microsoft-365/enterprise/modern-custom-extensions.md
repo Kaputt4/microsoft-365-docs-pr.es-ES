@@ -6,7 +6,7 @@ manager: scotv
 ms.date: 03/11/2020
 audience: Admin
 ms.topic: conceptual
-ms.service: o365-administration
+ms.service: microsoft-365-enterprise
 ms.localizationpriority: medium
 ms.collection:
 - Ent_O365
@@ -19,12 +19,12 @@ ms.reviewer: sstewart
 search.appverid:
 - MET150
 description: Obtenga información sobre cómo optimizar el rendimiento de extensiones personalizadas en páginas de sitio modernas de SharePoint Online.
-ms.openlocfilehash: a31b6e68227d433359537b9655d68c63b5893cce
-ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
+ms.openlocfilehash: b2d67e0cc75ea8645ac2dd018bf01fd4bb284364
+ms.sourcegitcommit: 9b133379196da2b3a4bb311b07ff274f43780f68
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "65093863"
+ms.lasthandoff: 09/14/2022
+ms.locfileid: "67693419"
 ---
 # <a name="optimize-custom-extension-performance-in-sharepoint-online-modern-site-pages"></a>Optimizar el rendimiento de extensiones personalizadas en páginas del sitio modernas de SharePoint Online
 
@@ -47,7 +47,7 @@ Puede encontrarse con los siguientes resultados:
 
 Si una extensión afecta al tiempo de carga de la página o hay demasiadas extensiones en la página, el resultado aparece en la sección **Atención requerida** de los resultados. Haga clic en el resultado para ver los detalles sobre la extensión que está demorando en cargar o la advertencia sobre la existencia de demasiadas extensiones. Las actualizaciones futuras de la herramienta Diagnóstico de páginas para SharePoint pueden incluir actualizaciones de las reglas de análisis, así que asegúrese de que siempre tiene la versión más reciente de la herramienta.
 
-![Resultados del tiempo de carga de la página.](../media/page-diagnostics-for-spo/pagediag-extensions-load-time.png)
+![Captura de pantalla que muestra los resultados del tiempo de carga de la página.](../media/page-diagnostics-for-spo/pagediag-extensions-load-time.png)
 
 La información disponible en los resultados incluye lo siguiente:
 
@@ -105,7 +105,7 @@ Los autores de páginas también pueden usar el resultado de auditoría para ver
 
 Antes de realizar revisiones de página para corregir problemas de rendimiento, anote el tiempo de carga de la página en los resultados del análisis. Ejecute la herramienta de nuevo después de la revisión y compruebe si los nuevos resultados están en línea con su valor de referencia. Luego, compruebe el nuevo tiempo de carga de la página para ver si se ha producido alguna mejora.
 
-![Resultados del tiempo de carga de la página.](../media/modern-portal-optimization/pagediag-page-load-time.png)
+![Ejemplo de resultados de tiempo de carga de página.](../media/modern-portal-optimization/pagediag-page-load-time.png)
 
 >[!NOTE]
 >El tiempo de carga de la página puede variar en función de varios factores, como la carga de la red, la hora del día y otras condiciones transitorias. Debe probar el tiempo de carga de la página varias veces, antes y después de realizar cambios, para obtener un promedio.

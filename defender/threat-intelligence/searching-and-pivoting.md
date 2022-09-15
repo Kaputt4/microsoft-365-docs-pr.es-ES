@@ -7,12 +7,12 @@ ms.service: threat-intelligence
 ms.topic: how-to
 ms.date: 08/02/2022
 ms.custom: template-how-to
-ms.openlocfilehash: e5c621eaf22b00a8d0c29aa17063882e2873be2b
-ms.sourcegitcommit: d09eb780dc41a01796eb8137fbe9267231af6746
+ms.openlocfilehash: dbd62f4455b29bd2c23061096e126454d5c0d089
+ms.sourcegitcommit: 9b133379196da2b3a4bb311b07ff274f43780f68
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/19/2022
-ms.locfileid: "67387207"
+ms.lasthandoff: 09/14/2022
+ms.locfileid: "67693607"
 ---
 # <a name="searching-and-pivoting"></a>Búsqueda y dinamización
 
@@ -228,11 +228,6 @@ Para obtener más información, consulte [Usar proyectos](using-projects.md).
 
 ![Proyectos de pestaña Resumen](media/summaryTabProjects.png)
 
-### <a name="hashes"></a>Hashes
-
-Microsoft se asocia con varios repositorios comerciales y de código abierto de datos de malware para emparejarlo con la infraestructura consultada para rellenar el conjunto de datos hash. Actualmente, los repositorios de malware incluyen las amenazas emergentes de Proofpoint, el análisis híbrido y VirusTotal. Estos datos ayudan a los usuarios a comprender las capacidades, la intención y los motivos de un atacante, a la vez que ayudan a conectar la infraestructura juntos. Cada resultado contiene un hash único. Nuestros datos hash incluyen el origen de detección, el ejemplo y la fecha de recopilación.
-
-![Hashes de pestaña de resumen](media/summaryTabHashes.png)
 
 ## <a name="data-tab"></a>Pestaña Datos
 
@@ -253,7 +248,6 @@ Los siguientes conjuntos de datos están disponibles en TI de Defender:
 - Subdominios
 - Componentes
 - Pares de host
-- Hashes
 - Cookies
 - Servicios
 - DNS
@@ -412,17 +406,6 @@ Nuestros datos de par de host incluyen lo siguiente:
 
 ![Pares de host de pestaña de datos](media/dataTabHostPairs.png)
 
-### <a name="hashes"></a>Hashes
-
-Microsoft se asocia con varios repositorios comerciales y de código abierto de datos de malware para emparejarlo con la infraestructura consultada para rellenar el conjunto de datos hash. Actualmente, los repositorios de malware incluyen las amenazas emergentes de Proofpoint, el análisis híbrido y VirusTotal. Estos datos ayudan a los usuarios a comprender las capacidades, la intención y los motivos de un atacante, a la vez que ayudan a conectar la infraestructura juntos. Cada resultado contiene un hash único.
-
-Nuestros datos hash incluyen lo siguiente:
-
-1. **Origen:** el origen usado para detectar el hash.
-2. **Ejemplo:** el código de identificación único para el hash detectado.
-3. **Fecha de recopilación:** el día en que el origen designado recopiló el ejemplo hash.
-
-![Hashes de pestaña de datos](media/dataTabHashes.png)
 
 ### <a name="cookies"></a>Cookies
 

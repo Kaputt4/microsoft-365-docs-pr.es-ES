@@ -15,12 +15,13 @@ ms.collection: M365-security-compliance
 ms.topic: article
 ms.subservice: mde
 ms.custom: api
-ms.openlocfilehash: 9468438b6d52842986521a1de311e32a7b0fed19
-ms.sourcegitcommit: 228fa13973bf7c2d91504703fab757f552ae40dd
+search.appverid: met150
+ms.openlocfilehash: 8d79cbcd8f2d83fefbecd1a85b996e395c9026be
+ms.sourcegitcommit: 9b133379196da2b3a4bb311b07ff274f43780f68
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/01/2022
-ms.locfileid: "67520566"
+ms.lasthandoff: 09/14/2022
+ms.locfileid: "67695284"
 ---
 # <a name="export-non-product-code-software-inventory-assessment-per-device"></a>Exportación de la evaluación del inventario de software que no es de código de producto por dispositivo
 

@@ -16,12 +16,13 @@ manager: dansimp
 ms.subservice: mde
 ms.collection: m365-security-compliance
 ms.date: ''
-ms.openlocfilehash: 6d911db34081d6e67cb5f1a562bfbed6964f29c2
-ms.sourcegitcommit: 228fa13973bf7c2d91504703fab757f552ae40dd
+search.appverid: met150
+ms.openlocfilehash: c78b1af1166af73bfec05928cd9ee9982dd4f9f1
+ms.sourcegitcommit: 9b133379196da2b3a4bb311b07ff274f43780f68
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/01/2022
-ms.locfileid: "67523366"
+ms.lasthandoff: 09/14/2022
+ms.locfileid: "67694929"
 ---
 # <a name="enable-controlled-folder-access"></a>Habilitar el acceso controlado a carpetas
 
