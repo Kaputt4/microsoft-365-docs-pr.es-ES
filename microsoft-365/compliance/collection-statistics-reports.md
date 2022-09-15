@@ -16,12 +16,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Obtenga información sobre cómo acceder y usar estadísticas e informes para colecciones y colecciones de borradores que se han confirmado en un conjunto de revisión en Microsoft Purview eDiscovery (Premium).
-ms.openlocfilehash: 1f9047a047e5c2c4abd01f0cac39ab6cb97e27da
-ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
+ms.openlocfilehash: 6e8374fb339c98aae9a34da9f5fc22488c37506a
+ms.sourcegitcommit: 9b133379196da2b3a4bb311b07ff274f43780f68
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/06/2022
-ms.locfileid: "66626851"
+ms.lasthandoff: 09/14/2022
+ms.locfileid: "67703486"
 ---
 # <a name="collection-statistics-and-reports-in-microsoft-purview-ediscovery-premium"></a>Estadísticas e informes de recopilación en Microsoft Purview eDiscovery (Premium)
 
@@ -139,5 +139,7 @@ Estas son otras razones por las que los resultados estimados de una colección d
 - **Cambios que se producen entre el momento en que se estiman y confirman colecciones de borradores**. Al confirmar una colección de borradores en un conjunto de revisión, la búsqueda se vuelve a ejecutar para recopilar los elementos más recientes del índice de búsqueda que cumplen los criterios de búsqueda. Es posible que se hayan creado, enviado o eliminado elementos adicionales que cumplan los criterios de búsqueda en el tiempo comprendido entre la última ejecución de la colección de borradores y la confirmación de la colección de borradores en un conjunto de revisión. También es posible que los elementos que estaban en el índice de búsqueda cuando se calcularon los resultados de la colección de borradores ya no estén allí porque se purgaron de un origen de datos antes de confirmar la colección. Una manera de mitigar este problema es especificar un intervalo de fechas para una colección. Otra manera es colocar una suspensión en las ubicaciones de contenido para que los elementos se conserven y no se puedan purgar.
 
 - **Elementos sin indexar**. Si la colección de borradores incluía la búsqueda en todos los buzones de Exchange o en todos los sitios de SharePoint, solo se agregarán al conjunto de revisión los elementos sin indexar de ubicaciones de contenido que contengan elementos que coincidan con los criterios de recopilación. En otras palabras, si no se encuentra ningún resultado en un buzón de correo o sitio, los elementos sin indexar de ese buzón o sitio no se agregarán al conjunto de revisión. Sin embargo, los elementos sin indexar de todas las ubicaciones de contenido (incluso aquellos que no contienen elementos que coinciden con la consulta de colección) se incluirán en los resultados de la colección estimados.
+
+- **Elementos indizados parcialmente**: la selección de esta opción agrega elementos parcialmente indizados de orígenes de datos adicionales al conjunto de revisión. Si la colección ha buscado orígenes de datos adicionales (como se especifica en la página **Ubicaciones adicionales** del Asistente para colecciones), es posible que haya elementos indizados parcialmente de estas ubicaciones que quiera agregar al conjunto de revisión. Los orígenes de datos custodios y no custodios normalmente no tienen elementos indizados parcialmente. Esto se debe a que el proceso de indexación avanzada vuelve a indexar elementos cuando se agregan orígenes de datos de custodia y no custodia a un caso. Además, agregar elementos parcialmente indizados aumentará el número de elementos agregados al conjunto de revisión. <p> Después de agregar elementos parcialmente indizados al conjunto de revisión, puede aplicar un filtro para ver específicamente estos elementos. Para obtener más información, vea [Filtrar elementos parcialmente indizados](review-set-search.md#filter-partially-indexed-items).
 
     Como alternativa, si la colección de borradores incluía ubicaciones de contenido específicas (lo que significa que se exportarán buzones o sitios específicos donde se especifiquen en la página **Ubicaciones adicionales** del Asistente para borradores de recopilación), se exportarán los elementos no indizados (que no se excluyen por los criterios de recopilación) de las ubicaciones de contenido especificadas en la búsqueda. En este caso, el número estimado de elementos sin indexar y el número de elementos no indexados que se agregan al conjunto de revisión deben ser los mismos.

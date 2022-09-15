@@ -6,7 +6,7 @@ manager: scotv
 ms.date: 2/14/2018
 audience: ITPro
 ms.topic: conceptual
-ms.service: o365-administration
+ms.service: microsoft-365-enterprise
 ms.localizationpriority: medium
 ms.collection: Ent_O365
 f1.keywords:
@@ -20,12 +20,12 @@ search.appverid:
 - BCS160
 ms.assetid: 103208f1-e788-4601-aa45-504f896511cd
 description: En este artículo, obtendrá información sobre Azure ExpressRoute para Office 365 y cómo usarlo para el planeamiento de red.
-ms.openlocfilehash: 59fa69a58bedf6babf2cf277a627d42293487ab1
-ms.sourcegitcommit: a7c1acfb3d2cbba913e32493b16ebd8cbfeee456
+ms.openlocfilehash: aa5890a6a735f3418a90ae7234173eb504ce16d7
+ms.sourcegitcommit: 9b133379196da2b3a4bb311b07ff274f43780f68
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/13/2022
-ms.locfileid: "66042922"
+ms.lasthandoff: 09/14/2022
+ms.locfileid: "67703420"
 ---
 # <a name="network-planning-with-expressroute-for-office-365"></a>Plan de red con ExpressRoute para Office 365
 
@@ -39,7 +39,7 @@ En la tabla siguiente se resaltan algunas diferencias entre las conexiones de In
 
 |**Diferencias en el planeamiento de red**|**Conexión de red a Internet**|**Conexión de red de ExpressRoute**|
 |:-----|:-----|:-----|
-| Acceso a los servicios de Internet necesarios, incluidos;  <br/>  Resolución de nombres DNS  <br/>  Comprobación de revocación de certificados  <br/>  Redes de entrega de contenido (CDN)  <br/> |Sí  <br/> |Las solicitudes a la infraestructura de DNS o CDN propiedad de Microsoft pueden usar la red ExpressRoute.  <br/> |
+| Acceso a los servicios de Internet necesarios, incluidos;  <br/>  Resolución de nombres DNS  <br/>  Comprobación de revocación de certificados  <br/>  Redes de entrega de contenido (CDN)  <br/> |Yes  <br/> |Las solicitudes a la infraestructura de DNS o CDN propiedad de Microsoft pueden usar la red ExpressRoute.  <br/> |
 | Acceso a Office 365 servicios, incluidos;  <br/>  Exchange Online  <br/>  SharePoint Online  <br/>  Skype Empresarial Online  <br/>  Office en un explorador  <br/>  Office 365 Portal y autenticación  <br/> |Sí, todas las aplicaciones y características  <br/> |Sí, [aplicaciones y características específicas](./urls-and-ip-address-ranges.md) <br/> |
 |Seguridad local en el perímetro.  <br/> |Sí  <br/> |Sí  <br/> |
 |Planeamiento de alta disponibilidad.  <br/> |Conmutación por error a una conexión de red de Internet alternativa  <br/> |Conmutación por error a una conexión de ExpressRoute alternativa  <br/> |

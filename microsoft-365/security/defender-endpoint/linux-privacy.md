@@ -14,12 +14,13 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.subservice: mde
-ms.openlocfilehash: 81eca3a28577786d1779f6061b5819f418c510db
-ms.sourcegitcommit: 228fa13973bf7c2d91504703fab757f552ae40dd
+search.appverid: met150
+ms.openlocfilehash: bd81c53bd392e161325fa3bc085f97ae15a493d0
+ms.sourcegitcommit: 9b133379196da2b3a4bb311b07ff274f43780f68
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/01/2022
-ms.locfileid: "67519806"
+ms.lasthandoff: 09/14/2022
+ms.locfileid: "67704598"
 ---
 # <a name="privacy-for-microsoft-defender-for-endpoint-on-linux"></a>Privacidad para Microsoft Defender para punto de conexión en Linux
 
@@ -86,7 +87,7 @@ Hay cierta información acerca de los eventos que es común a todos, independien
 
 Los campos siguientes se consideran comunes para todos los eventos:
 
-|Field|Descripción|
+|Campo|Descripción|
 |---|---|
 |plataforma|La amplia clasificación de la plataforma en la que se ejecuta la aplicación. Permite a Microsoft identificar en qué plataformas puede producirse un problema para que se pueda priorizar correctamente.|
 |machine_guid|Identificador único asociado al dispositivo. Permite a Microsoft identificar si los problemas afectan a un conjunto selecto de instalaciones y cuántos usuarios se ven afectados.|
@@ -111,7 +112,7 @@ Los datos de diagnóstico necesarios ayudan a identificar problemas con Microsof
 
 Se recopilan los campos siguientes: 
 
-|Field|Descripción|
+|Campo|Descripción|
 |---|---|
 |correlation_id|Identificador único asociado a la instalación.|
 |version|Versión del paquete.|
@@ -123,7 +124,7 @@ Se recopilan los campos siguientes:
 
 Se recopilan los campos siguientes: 
 
-|Field|Descripción|
+|Campo|Descripción|
 |---|---|
 |antivirus_engine.enable_real_time_protection|Si la protección en tiempo real está habilitada en el dispositivo o no.|
 |antivirus_engine.passive_mode|Si el modo pasivo está habilitado en el dispositivo o no.|
@@ -145,7 +146,7 @@ Se recopilan los campos siguientes:
 
 Se recopilan los campos siguientes: 
 
-|Field|Descripción|
+|Campo|Descripción|
 |---|---|
 |from_version|Versión de inteligencia de seguridad original.|
 |to_version|Nueva versión de inteligencia de seguridad.|
@@ -160,7 +161,7 @@ Se recopilan los campos siguientes:
 
 Se recopilan los campos siguientes: 
 
-|Field|Descripción|
+|Campo|Descripción|
 |---|---|
 |version|Versión de Defender para punto de conexión en Linux.|
 |instance_id|Identificador único generado durante el inicio de la extensión del kernel.|
@@ -194,7 +195,7 @@ Entre los ejemplos de datos de diagnóstico opcionales se incluyen los datos que
 
 Se recopilan los campos siguientes: 
 
-|Field|Descripción|
+|Campo|Descripción|
 |---|---|
 |connection_retry_timeout|Tiempo de espera de reintento de conexión cuando se comunica con la nube.|
 |file_hash_cache_maximum|Tamaño de la memoria caché del producto.|
@@ -216,7 +217,7 @@ Se recopilan los campos siguientes:
 
 Se recopilan los campos siguientes: 
 
-|Field|Descripción|
+|Campo|Descripción|
 |---|---|
 |how_to_check|Determina cómo se comprueban las actualizaciones del producto (por ejemplo, automáticas o manuales).|
 |channel_name|Actualice el canal asociado al dispositivo.|
@@ -229,7 +230,7 @@ Se recopilan los campos siguientes:
 
 Se recopilan los campos siguientes: 
 
-|Field|Descripción|
+|Campo|Descripción|
 |---|---|
 |sha256|Identificador SHA256 del registro de soporte técnico.|
 |size|Tamaño del registro de soporte técnico.|
@@ -240,7 +241,7 @@ Se recopilan los campos siguientes:
 
 Se recopilan los campos siguientes: 
 
-|Field|Descripción|
+|Campo|Descripción|
 |---|---|
 |request_id|Identificador de correlación para la solicitud de carga del registro de soporte técnico.|
 |sha256|Identificador SHA256 del registro de soporte técnico.|
@@ -256,7 +257,7 @@ Cierres de aplicación inesperados y el estado de la aplicación cuando esto ocu
 
 Se recopilan los campos siguientes: 
 
-|Field|Descripción|
+|Campo|Descripción|
 |---|---|
 |pkt_ack_timeout|Las propiedades siguientes son valores numéricos agregados, que representan el recuento de eventos que se produjeron desde el inicio de la extensión del kernel.|
 |pkt_ack_conn_timeout||

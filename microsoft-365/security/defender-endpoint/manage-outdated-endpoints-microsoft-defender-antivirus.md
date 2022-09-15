@@ -15,12 +15,13 @@ ms.reviewer: ''
 manager: dansimp
 ms.subservice: mde
 ms.collection: m365-security-compliance
-ms.openlocfilehash: f5acf05a95e8c3034bf963f8413693ec1aad057d
-ms.sourcegitcommit: 228fa13973bf7c2d91504703fab757f552ae40dd
+search.appverid: met150
+ms.openlocfilehash: 3414bbee58b176b1aa6da346235828c10c1b384d
+ms.sourcegitcommit: 9b133379196da2b3a4bb311b07ff274f43780f68
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/01/2022
-ms.locfileid: "67520739"
+ms.lasthandoff: 09/14/2022
+ms.locfileid: "67704444"
 ---
 # <a name="manage-microsoft-defender-antivirus-updates-and-scans-for-endpoints-that-are-out-of-date"></a>Administrar las actualizaciones y análisis del Antivirus de Windows Defender para puntos de conexión que están obsoletos
 

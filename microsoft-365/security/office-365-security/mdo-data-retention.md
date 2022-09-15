@@ -11,17 +11,17 @@ ms.topic: article
 ms.service: microsoft-365-security
 ms.subservice: mdo
 ms.localizationpriority: medium
-search.appverid: ''
+search.appverid: met150
 ms.collection:
 - M365-security-compliance
 ms.custom: ''
 description: Microsoft Defender para Office 365 información de retención de datosTreat Explorer/Real-Time detecciones
-ms.openlocfilehash: d57865649dbba96dc4e2d66c0618dc6d52d87205
-ms.sourcegitcommit: 2b89bcff547e00be3d38dc8d1e6cbcf8f41eba42
+ms.openlocfilehash: 350c4e41c8e2ae6ba008bdc9032dfc3994203487
+ms.sourcegitcommit: 9b133379196da2b3a4bb311b07ff274f43780f68
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/03/2022
-ms.locfileid: "67596410"
+ms.lasthandoff: 09/14/2022
+ms.locfileid: "67703630"
 ---
 # <a name="data-retention-information-for-microsoft-defender-for-office-365"></a>Información de retención de datos para Microsoft Defender para Office 365
 
@@ -50,7 +50,7 @@ Defender para Office 365 funcionalidades del plan 1, además de:
 |Característica|Período de retención|
 |---|---|
 |Centro de actividades | 180 días, 30 días (Centro de acción de Office)   |
-|Búsqueda avanzada de amenazas | 30 días |
+|Búsqueda avanzada | 30 días |
 |AIR (investigación y respuesta automatizadas) | 60 días (para los metadatos de las investigaciones)<br> 30 días (para metadatos de correo electrónico)  |
 |Datos de simulación de ataques | 18 meses |
 |Campañas | 30 días |
