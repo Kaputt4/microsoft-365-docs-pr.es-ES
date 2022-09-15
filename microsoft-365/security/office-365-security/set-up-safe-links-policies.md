@@ -19,12 +19,12 @@ ms.custom: ''
 description: Los administradores pueden aprender a ver, crear, modificar y eliminar directivas de vínculos seguros y la configuración global de vínculos seguros en Microsoft Defender para Office 365.
 ms.subservice: mdo
 ms.service: microsoft-365-security
-ms.openlocfilehash: ac2c6a2fb5ca151ba50176ae9faf06ec7b8cd0ab
-ms.sourcegitcommit: 651610ca73bfd1d008d97311b59782790df664fb
+ms.openlocfilehash: 7b251b20542762130aaeb25b49089a4a3e67cf58
+ms.sourcegitcommit: b1ed6470645455c2f1fcf467450debc622c40147
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/07/2022
-ms.locfileid: "67611331"
+ms.lasthandoff: 09/15/2022
+ms.locfileid: "67709231"
 ---
 # <a name="set-up-safe-links-policies-in-microsoft-defender-for-office-365"></a>Configurar directivas de vínculos seguros en Microsoft Defender para Office 365
 
@@ -141,7 +141,7 @@ La creación de una directiva de vínculos seguros personalizada en el portal de
        - **No vuelva a escribir las siguientes direcciones URL en la sección de correo electrónico** : haga clic en **Administrar (nn) direcciones URL** para permitir el acceso a direcciones URL específicas que, de lo contrario, estarían bloqueadas por vínculos seguros.
 
          > [!NOTE]
-         > Las entradas de la lista "No volver a escribir las siguientes direcciones URL" no se examinan ni encapsulan mediante vínculos seguros durante el flujo de correo. Use [las entradas de permiso de dirección URL en la lista de permitidos o bloqueados de inquilinos](allow-block-urls.md#use-the-microsoft-365-defender-portal-to-create-allow-entries-for-urls-in-the-submissions-portal) para que las direcciones URL no se examinen ni ajusten mediante vínculos seguros durante el flujo de correo _y_ en el momento de hacer clic.
+         > Las entradas de la lista "No volver a escribir las siguientes direcciones URL" no se examinan ni encapsulan mediante vínculos seguros durante el flujo de correo. Use [entradas de permiso de dirección URL en la lista de permitidos o bloqueados de inquilinos](allow-block-urls.md#use-the-microsoft-365-defender-portal-to-create-allow-entries-for-urls-in-the-submissions-portal) para invalidar el veredicto de dirección URL de vínculos seguros.
 
      1. En el control flotante **Administrar direcciones URL para no volver a escribir** que aparece, haga clic en ![el icono Agregar direcciones URL.](../../media/m365-cc-sc-create-icon.png) **Agregar direcciones URL**.
      2. En el control flotante **Agregar direcciones URL** que aparece, escriba la dirección URL o el valor que desee, seleccione la entrada que aparece debajo del cuadro y, a continuación, haga clic en **Guardar**. Repita este paso tantas veces como sea necesario.

@@ -1,5 +1,5 @@
 ---
-title: '10 formas principales de proteger los datos: procedimientos recomendados para pequeñas y medianas empresas'
+title: 10 formas principales de proteger su negocio
 f1.keywords:
 - CSH
 ms.author: deniseb
@@ -9,7 +9,7 @@ audience: Admin
 ms.topic: article
 ms.service: microsoft-365-business
 ms.localizationpriority: medium
-ms.date: 08/24/2022
+ms.date: 09/14/2022
 ms.collection:
 - highpri
 - Adm_O365
@@ -29,15 +29,15 @@ search.appverid:
 - BCS160
 - MET150
 - MOE150
-description: Obtenga información sobre las 10 principales formas de proteger su negocio, incluidos ransomware, phishing y datos adjuntos malintencionados.
-ms.openlocfilehash: fc3ce4ec991cea5096ac7806eda534a3b33dea5f
-ms.sourcegitcommit: 37e137535c4f70702afe1a5eeaa899c75ee02cfd
+description: Procedimientos recomendados para proteger su empresa frente a ransomware, phishing y direcciones URL o datos adjuntos malintencionados.
+ms.openlocfilehash: da1fba7bddabba0ccd95429dc36f06bfb302db48
+ms.sourcegitcommit: b1ed6470645455c2f1fcf467450debc622c40147
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/13/2022
-ms.locfileid: "67663419"
+ms.lasthandoff: 09/15/2022
+ms.locfileid: "67711485"
 ---
-# <a name="top-10-ways-to-secure-your-data---best-practices-for-small-and-medium-sized-businesses"></a>10 formas principales de proteger los datos: procedimientos recomendados para pequeñas y medianas empresas
+# <a name="top-10-ways-to-secure-your-business---best-practices-to-follow"></a>10 maneras principales de proteger su negocio: procedimientos recomendados a seguir
 
 **Se aplica a**
 
@@ -45,7 +45,10 @@ ms.locfileid: "67663419"
 - Microsoft 365 Empresa Estándar
 - Microsoft 365 Empresa Premium
 
-Los planes de Microsoft 365 para empresas incluyen funcionalidades de seguridad, como antifishing, antispam y protección antimalware. Microsoft 365 Empresa Premium incluye más funcionalidades, como la administración de dispositivos, la protección contra amenazas avanzada y la protección de la información. En este artículo se describen los pasos que puede seguir para proteger los datos [empresariales y se comparan las funcionalidades de Microsoft 365 para planes empresariales](#comparing-microsoft-365-for-business-plans).
+> [!NOTE]
+> Este artículo está diseñado para pequeñas y medianas empresas con hasta 300 usuarios. Si es una organización empresarial, consulte Implementación de [la protección contra ransomware para el inquilino de Microsoft 365](../../solutions/ransomware-protection-microsoft-365.md).
+
+Los planes de Microsoft 365 para empresas incluyen funcionalidades de seguridad, como antifishing, antispam y protección antimalware. Microsoft 365 Empresa Premium incluye aún más funcionalidades, como la seguridad de dispositivos, la protección contra amenazas avanzada y la protección de la información. En este artículo se describe cómo proteger su empresa y [se comparan las funcionalidades de Los planes empresariales de Microsoft 365](#comparing-microsoft-365-for-business-plans).
 
 :::image type="content" source="../../media/top-10-ways-secure-data.png" alt-text="Diagrama en el que se enumeran las 10 principales formas de proteger los datos empresariales.":::
 
@@ -64,7 +67,7 @@ Los planes de Microsoft 365 para empresas incluyen funcionalidades de seguridad,
 
 ## <a name="comparing-microsoft-365-for-business-plans"></a>Comparación de Microsoft 365 para planes empresariales
 
-Microsoft 365 para planes empresariales incluye Microsoft Exchange, Microsoft Teams, SharePoint y OneDrive para el correo electrónico seguro, la colaboración y el almacenamiento de archivos. Estos planes también incluyen protección antiphishing, antimalware y antispam. Con Microsoft 365 Empresa Premium, obtendrá más funcionalidades, como la administración de dispositivos, la protección contra amenazas avanzada y la protección de la información. 
+Microsoft 365 para planes empresariales incluye Microsoft Exchange, Microsoft Teams, SharePoint y OneDrive para el correo electrónico seguro, la colaboración y el almacenamiento de archivos. Estos planes también incluyen protección antifishing, antimalware y antispam de línea base. Con Microsoft 365 Empresa Premium, obtendrá más funcionalidades, como la administración de dispositivos, la protección contra amenazas avanzada y la protección de la información. 
 
 En la tabla siguiente se comparan las funcionalidades de Microsoft 365 para planes empresariales. 
 
@@ -81,11 +84,11 @@ En la tabla siguiente se comparan las funcionalidades de Microsoft 365 para plan
 
 (<a id="fn1">1</a>) Microsoft Publisher y Microsoft Access solo se ejecutan en equipos portátiles y escritorios Windows.
 
-(<a id="fn2">2</a>) Microsoft Intune se incluye con determinados planes de Microsoft 365. Las funcionalidades básicas de movilidad y seguridad forman parte de la Microsoft 365 Empresa Básico y estándar. [Elija entre Basic Mobility and Security o Intune](../basic-mobility-security/choose-between-basic-mobility-and-security-and-intune.md).
+(<a id="fn2">2</a>) Microsoft Intune se incluye con determinados planes de Microsoft 365, como Microsoft 365 Empresa Premium. Las funcionalidades básicas de movilidad y seguridad se incluyen en Microsoft 365 Empresa Básico y Estándar. [Elija entre Basic Mobility and Security o Intune](../basic-mobility-security/choose-between-basic-mobility-and-security-and-intune.md).
 
-(<a id="fn3">3</a>) Defender for Business se incluye en Microsoft 365 Empresa Premium. También se puede comprar como complemento para Microsoft 365 Empresa Básico o Microsoft 365 Empresa Estándar. Consulte [Obtención de Defender para empresas](/microsoft-365/security/defender-business/get-defender-business).
+(<a id="fn3">3</a>) Defender for Business se incluye en Microsoft 365 Empresa Premium. Defender para empresas también se puede agregar a Microsoft 365 Empresa Básico o Estándar. Consulte [Obtención de Defender para empresas](/microsoft-365/security/defender-business/get-defender-business).
 
-(<a id="fn4">4</a>) Defender para Office 365 Plan 1 está incluido en Microsoft 365 Empresa Premium. También se puede comprar como complemento para Microsoft 365 Empresa Básico o Microsoft 365 Empresa Estándar. Consulte [Defender para Office 365 Plan 1 y Plan 2](../../security/office-365-security/overview.md#microsoft-defender-for-office-365-plan-1-vs-plan-2-cheat-sheet).
+(<a id="fn4">4</a>) Defender para Office 365 Plan 1 está incluido en Microsoft 365 Empresa Premium. Defender para Office 365 Plan 1 también se puede agregar a Microsoft 365 Empresa Básico o Estándar. Consulte [Defender para Office 365 Plan 1 y Plan 2](../../security/office-365-security/overview.md#microsoft-defender-for-office-365-plan-1-vs-plan-2-cheat-sheet).
 
 > [!TIP]
 > Para obtener más información sobre lo que incluye cada plan, consulte [Reimagine productivity with Microsoft 365 and Microsoft Teams (Reimagine productividad con Microsoft 365 y Microsoft Teams](https://www.microsoft.com/en-us/microsoft-365/business/compare-all-microsoft-365-business-products-b?ef_id=8c2a86ec9ea514a008c6e419e036519c:G:s&OCID=AIDcmmwf9kwzdj_SEM_8c2a86ec9ea514a008c6e419e036519c:G:s&lnkd=Bing_O365SMB_Brand&msclkid=8c2a86ec9ea514a008c6e419e036519c)).

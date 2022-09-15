@@ -20,12 +20,12 @@ ms.custom:
 search.appverid: MET150
 description: Obtenga información sobre cómo los perfiles de facturación admiten facturas.
 ms.date: 04/02/2021
-ms.openlocfilehash: 18e1eb23d0fcbdfd6eb374032f780a4f89a48cee
-ms.sourcegitcommit: 1734c95ce72d9c8af695cb4b49b1e40d921a1fee
+ms.openlocfilehash: 34e56474106974e543640eb25b2cea4db0a2efc8
+ms.sourcegitcommit: b1ed6470645455c2f1fcf467450debc622c40147
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/07/2022
-ms.locfileid: "66685885"
+ms.lasthandoff: 09/15/2022
+ms.locfileid: "67711398"
 ---
 # <a name="understand-billing-profiles"></a>Entender los perfiles de facturación
 
@@ -33,7 +33,7 @@ Un perfil de facturación contiene un método de pago, información de facturaci
 
 > [!NOTE]
 >
-> No todas las cuentas tienen un perfil de facturación. Si no está seguro de si tiene uno, puede [ver una lista de los perfiles de facturación] (manage-billing-profiles.md#view-my-billing-profiles).
+> No todas las cuentas tienen un perfil de facturación. Si no está seguro de si tiene uno, puede [ver una lista de los perfiles de facturación](manage-billing-profiles.md#view-my-billing-profiles).
 
 ## <a name="what-are-billing-profile-roles"></a>¿Qué son los roles de perfil de facturación?
 

@@ -1,7 +1,7 @@
 ---
-title: Integración de Microsoft OneDrive LTI con Canvas
-ms.author: heidip
-author: MicrosoftHeidi
+title: Integración de LTI de Microsoft OneDrive con Canvas
+ms.author: danismith
+author: DaniEASmith
 manager: serdars
 ms.reviewer: amitman
 audience: admin
@@ -11,22 +11,21 @@ f1.keywords:
 - CSH
 ms.collection: M365-modern-desktop
 ms.localizationpriority: medium
-ROBOTS: NOINDEX, NOFOLLOW
-description: Crear y calificar asignaciones, compilar y mantener contenido del curso, y colaborar en archivos en tiempo real con la nueva aplicación de interoperabilidad de herramientas de Microsoft OneDrive Learning para Canvas.
-ms.openlocfilehash: 62df03d18081cf9c48e5b153ed7a3cfe6ee27901
-ms.sourcegitcommit: 612ce4d15d8a2fdbf7795393b50af477d81b6139
+description: Crear y calificar asignaciones, compilar y mantener contenido del curso, y colaborar en archivos en tiempo real con el LTI de Microsoft OneDrive para Canvas.
+ms.openlocfilehash: 659493f624b2c269c2e5eb51e1d902ab249e0cc7
+ms.sourcegitcommit: b1ed6470645455c2f1fcf467450debc622c40147
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/24/2022
-ms.locfileid: "65663412"
+ms.lasthandoff: 09/15/2022
+ms.locfileid: "67709539"
 ---
-# <a name="integrate-microsoft-onedrive-lti-with-canvas"></a>Integración de Microsoft OneDrive LTI con Canvas
+# <a name="integrate-microsoft-onedrive-lti-with-canvas"></a>Integración de LTI de Microsoft OneDrive con Canvas
 
-Este artículo está destinado a los administradores de TI educativos que necesitan configurar el LTI de Microsoft OneDrive para Canvas.
+Este artículo está destinado a administradores de TI educativos que necesitan configurar el LTI de Microsoft OneDrive para Canvas.
 
-Para obtener instrucciones para los formadores sobre cómo usar el LTI de OneDrive en Canvas, consulte [Uso de Microsoft OneDrive con LMS](https://support.microsoft.com/topic/use-microsoft-onedrive-with-your-lms-c2ddeb48-f695-4267-94f2-14f7ff1b7bdd).
+Para obtener instrucciones para los formadores sobre cómo usar el LTI de OneDrive en Canvas, consulte [Uso de Microsoft OneDrive con su LMS](https://support.microsoft.com/topic/use-microsoft-onedrive-with-your-lms-c2ddeb48-f695-4267-94f2-14f7ff1b7bdd).
 
-La integración de Microsoft OneDrive LTI con Canvas es un proceso de dos pasos. El primer paso habilita Microsoft OneDrive en Canvas y el segundo paso hace que el Microsoft OneDrive LTI esté disponible en los cursos de Canvas.
+La integración de LTI de Microsoft OneDrive con Canvas es un proceso de dos pasos. El primer paso habilita Microsoft OneDrive en Canvas y el segundo paso hace que el LTI de Microsoft OneDrive esté disponible en los cursos de Canvas.
 
 ## <a name="recommended-browser-settings"></a>Configuración recomendada del explorador
 
@@ -36,14 +35,14 @@ La integración de Microsoft OneDrive LTI con Canvas es un proceso de dos pasos.
 > [!NOTE]
 >
 > - Las cookies no están habilitadas de forma predeterminada en el modo de incógnito del explorador Chrome y tendrán que estar habilitadas.
-> - Microsoft OneDrive LTI funciona en modo privado en Microsoft Edge explorador. Asegúrese de que no ha bloqueado las cookies (que están habilitadas de forma predeterminada).
+> - Microsoft OneDrive LTI funciona en modo privado en el explorador Microsoft Edge. Asegúrese de que no ha bloqueado las cookies (que están habilitadas de forma predeterminada).
 
-## <a name="enable-microsoft-onedrive-lti-in-canvas"></a>Habilitación de Microsoft OneDrive LTI en Canvas
+## <a name="enable-microsoft-onedrive-lti-in-canvas"></a>Habilitación de LTI de Microsoft OneDrive en Canvas
 
 > [!IMPORTANT]
 > La persona que realiza esta integración debe ser administrador de Canvas y administrador del inquilino de Microsoft 365.
 
-1. Inicie sesión en el <a href="https://onedrivelti.microsoft.com/admin" target="_blank">portal de registro de LTI de Microsoft OneDrive</a>
+1. Inicie sesión en el <a href="https://onedrivelti.microsoft.com/admin" target="_blank">portal de registro de LTI de Microsoft OneDrive</a>.
 2. Seleccione el botón **Administración Consentimiento** y acepte los permisos.
 
    > [!CAUTION]
@@ -79,7 +78,7 @@ La integración de Microsoft OneDrive LTI con Canvas es un proceso de dos pasos.
 
    :::image type="content" source="media/OneDrive-LTI-19.png" alt-text="Página Lienzo con la clave establecida en un estado desactivado. Tendrá que estar activada y la clave deberá copiarse de la columna de detalles de esta página.":::
 
-9. Vuelva al portal de registro de Microsoft OneDrive LTI y pegue la clave en el campo **Id. de cliente de Canvas**. Seleccione **Siguiente** cuando esté listo.
+9. Vuelva al portal de registro de LTI de Microsoft OneDrive y pegue la clave en el campo **Id. de cliente de Canvas** . Seleccione **Siguiente** cuando esté listo.
 
    :::image type="content" source="media/OneDrive-LTI-20.png" alt-text="La página de registro del inquilino de LTI, que muestra el texto JSON y el cuadro de texto en el que se debe copiar la clave.":::
 
@@ -89,11 +88,11 @@ La integración de Microsoft OneDrive LTI con Canvas es un proceso de dos pasos.
 
 Las versiones futuras pueden requerir consentimiento adicional del administrador. En esos casos, solo tendrá que repetir los pasos 1 y 2.
 
-## <a name="enable-microsoft-onedrive-lti-in-canvas-courses"></a>Habilitación de Microsoft OneDrive LTI en los cursos de Lienzo
+## <a name="enable-microsoft-onedrive-lti-in-canvas-courses"></a>Habilitación de LTI de Microsoft OneDrive en los cursos de Canvas
 
-Un administrador de Canvas puede habilitar Microsoft OneDrive LTI para todos los cursos. Si se necesita Microsoft OneDrive LTI en un curso específico (y no en todos los cursos), el educador del curso debe seguir los mismos pasos dentro de la configuración del curso.
+Un administrador de Canvas puede habilitar Microsoft OneDrive LTI para todos los cursos. Si se necesita LTI de Microsoft OneDrive en un curso específico (y no en todos los cursos), el formador del curso debe seguir los mismos pasos dentro de la configuración del curso.
 
-1. Inicie sesión como administrador y vaya a la sección **Configuración**.
+1. Inicie sesión como administrador y vaya a la sección **Configuración** .
 2. Vaya a la sección **Aplicaciones** y seleccione el botón **Ver configuraciones de aplicaciones** .
 3. Seleccione el botón **Agregar aplicación** .
 4. En la lista desplegable **Tipo de configuración** , elija la opción **Por identificador de cliente** .
@@ -101,17 +100,17 @@ Un administrador de Canvas puede habilitar Microsoft OneDrive LTI para todos los
 
 :::image type="content" source="media/OneDrive-LTI-31.png" alt-text="La página Agregar aplicación, que muestra la opción Por identificador de cliente en el menú desplegable Tipo de configuración.":::
 
-## <a name="collaboration-settings-for-microsoft-onedrive-lti-in-canvas-courses"></a>Configuración de colaboración para Microsoft OneDrive LTI en cursos de lienzo
+## <a name="collaboration-settings-for-microsoft-onedrive-lti-in-canvas-courses"></a>Configuración de colaboración para LTI de Microsoft OneDrive en cursos de lienzo
 
-> [!NOTE]
-> Para que la colaboración funcione para educadores y alumnos, no debe habilitar la configuración de colaboración. Para asegurarse de que la configuración no está habilitada, siga estos pasos.
+Para que las colaboraciones de OneDrive funcionen para educadores y alumnos, asegúrese de que la opción **Herramientas de colaboración externa** está desactivada. Para desactivar la configuración **de la Herramienta de colaboraciones externas** , siga los pasos que se indican a continuación.
 
-1. Inicie sesión como administrador y vaya a la sección **Configuración**.
+1. Inicie sesión en Canvas como administrador y vaya a la sección **Configuración** .
 1. Vaya a la sección **Opciones de características** y, a continuación, vaya a la sección **Curso** .
-1. Establezca la característica **Herramienta de colaboraciones externas** en que no esté habilitada.
+1. Establezca el botón de alternancia **herramienta colaboraciones externas** en la posición de desactivación.
 
-> [!NOTE]
-> La colaboración se puede asignar a alumnos individuales y a grupos de alumnos. La asignación a alumnos individuales funciona de forma predeterminada. Para poder asignar la colaboración al grupo de alumnos, siga estos pasos:
+Las colaboraciones se pueden asignar a alumnos individuales y a grupos de alumnos en un curso. Actualmente no se admiten las colaboraciones en grupos de Lienzo.
 
-1. Inicie sesión como administrador y vaya a la sección **Claves de desarrollador** .
-1. Busque la clave con el valor 170000000000710 y establézcala **en Activado**.
+La asignación a alumnos individuales funciona de forma predeterminada. Para asignar colaboración a grupos de alumnos, siga estos pasos:
+
+1. Inicie sesión en Canvas como administrador y vaya a la sección **Claves de desarrollador** .
+1. Busque la clave con el valor `170000000000710` y establézcala **en Activado**.

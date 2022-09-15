@@ -16,12 +16,12 @@ search.appverid:
 - MET150
 description: Configure las etiquetas de confidencialidad para el cifrado que protege los datos con el acceso y uso restringido.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 091b78e2b11633eddec41809748e54ba333c09be
-ms.sourcegitcommit: 9b133379196da2b3a4bb311b07ff274f43780f68
+ms.openlocfilehash: fcd1dd49aa1bf985794d9bb2dd0c270de01e8bc2
+ms.sourcegitcommit: b1ed6470645455c2f1fcf467450debc622c40147
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/14/2022
-ms.locfileid: "67701080"
+ms.lasthandoff: 09/15/2022
+ms.locfileid: "67710552"
 ---
 # <a name="restrict-access-to-content-by-using-sensitivity-labels-to-apply-encryption"></a>Restringir el acceso al contenido mediante el uso de etiquetas de confidencialidad para aplicar el cifrado
 
@@ -67,6 +67,10 @@ Para poder usar el cifrado, es posible que tenga que realizar algunas tareas de 
 - Comprobar los requisitos de red
     
     Es posible que deba realizar algunos cambios en sus dispositivos de red, como firewalls. Para obtener más información, consulte [Firewalls y la infraestructura de red](/azure/information-protection/requirements#firewalls-and-network-infrastructure) de la documentación de Azure Information Protection.
+
+- Comprobación de la configuración de Azure AD
+    
+    Hay algunas configuraciones de Azure Active Directory (Azure AD) que pueden impedir el acceso autorizado al contenido cifrado. Por ejemplo, la configuración de acceso entre inquilinos y las directivas de acceso condicional. Para más información, consulte [Configuración de Azure AD para contenido cifrado](encryption-azure-ad-configuration.md).
 
 - Configurar Exchange para Azure Information Protection
     

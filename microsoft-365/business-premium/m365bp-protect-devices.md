@@ -10,7 +10,7 @@ ms.topic: overview
 ms.service: microsoft-365-business
 ms.subservice: business-premium
 ms.localizationpriority: high
-ms.date: 08/24/2022
+ms.date: 09/14/2022
 ms.collection:
 - M365-Campaigns
 - m365solution-smb
@@ -20,31 +20,31 @@ search.appverid:
 - BCS160
 - MET150
 description: Información general sobre cómo configurar y proteger dispositivos administrados frente a amenazas de seguridad y ciberataques. Implemente defensas de ciberseguridad y protección de puntos de conexión mediante la inscripción e incorporación de todos los dispositivos. Obtenga información sobre cómo configurar directivas de dispositivo y administrar grupos de dispositivos.
-ms.openlocfilehash: 7a70510655669ed8729d8155315948474893f730
-ms.sourcegitcommit: 651610ca73bfd1d008d97311b59782790df664fb
+ms.openlocfilehash: 18d240768d7cadaff4c02a0e7c1dbc4301039d3e
+ms.sourcegitcommit: b1ed6470645455c2f1fcf467450debc622c40147
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/07/2022
-ms.locfileid: "67612799"
+ms.lasthandoff: 09/15/2022
+ms.locfileid: "67711463"
 ---
 # <a name="set-up-and-secure-managed-devices"></a>Configuración y protección de dispositivos administrados
 
 :::image type="content" source="media/mission6.png" alt-text="Proteja los dispositivos administrados con Defender para empresas.":::
 
-Le damos la bienvenida a su misión crítica final. Aquí, incorporará e implementará la protección para todos los dispositivos administrados de su organización. [Incorpore sus dispositivos a Defender para empresas para](../security/defender-business/mdb-onboard-devices.md) asegurarse de que están protegidos contra ransomware, malware, phishing y otras amenazas. También puede asegurarse de que los dispositivos Windows están protegidos y listos para la implementación de Office. Cuando haya terminado, puede estar seguro, sabiendo que ha hecho su parte para proteger su organización cuando se han logrado estos objetivos.
+**Bienvenido a su misión crítica final**! Aquí, incorporará e implementará la protección para todos los dispositivos administrados de su organización. Microsoft Defender para Empresas funcionalidades ahora incluidas en Microsoft 365 Empresa Premium pueden ayudar a garantizar que los dispositivos de su organización estén protegidos contra ransomware, malware, suplantación de identidad (phishing) y otras amenazas. Cuando haya terminado de completar los objetivos, puede estar seguro, sabiendo que ha hecho su parte para proteger su organización.
 
 Sus objetivos son:
 
-- [Configurar dispositivos administrados](m365bp-managed-devices-setup.md)
-- [Abordar dispositivos inscritos y aplicar directivas](m365bp-onboard-devices-mdb.md)
-- [Protección de dispositivos Windows con la configuración predeterminada](m365bp-secure-windows-devices.md)
-- [Revista y edita las directivas de dispositivo](m365bp-view-edit-create-mdb-policies.md)
-- [Administrar grupos de dispositivos](m365bp-device-groups-mdb.md)
+- [Actualice los dispositivos Windows que ejecutan Windows 7 Pro, Windows 8 Pro o Windows 8.1 Pro a Windows 10 o 11 Pro](m365bp-upgrade-windows-10-pro.md).
+- [Incorporación de dispositivos a Defender for Business y aplicación de directivas de seguridad](m365bp-onboard-devices-mdb.md).
+- [Usa Windows Autopilot para configurar y configurar nuevos dispositivos, o para restablecer, reutilizar y recuperar dispositivos](/mem/autopilot/windows-autopilot).
+- [Instalar Aplicaciones Microsoft 365](../admin/setup/install-applications.md) en cualquier dispositivo que aún no tenga aplicaciones de Office
 
 Una vez que se han logrado estos objetivos, su misión general de proteger a su organización contra ataques cibernéticos y otras amenazas de ciberseguridad es un éxito. Ahora, asegúrese de configurar los equipos de respuesta para tratar cualquier situación que pueda surgir al defender la integridad del sistema. Vea sus próximos pasos
 
 ## <a name="next-steps"></a>Pasos siguientes
 
+- [Administración de dispositivos en Microsoft Defender para Empresas](../security/defender-business/mdb-manage-devices.md)
 - [Configure un proceso de operaciones de seguridad](m365bp-security-incident-quick-start.md).
 - [Obtenga información sobre la gestión de incidentes de seguridad](m365bp-security-incident-management.md).
 - [ Aprenda a mantener su entorno](m365bp-maintain-environment.md).

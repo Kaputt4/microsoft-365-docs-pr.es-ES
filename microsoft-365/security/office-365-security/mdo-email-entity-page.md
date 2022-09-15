@@ -11,18 +11,18 @@ ms.topic: article
 ms.service: microsoft-365-security
 ms.subservice: mdo
 ms.localizationpriority: medium
-search.appverid: ''
 ms.collection:
 - M365-security-compliance
 - m365initiative-defender-office365
 ms.custom: ''
 description: Microsoft Defender para Office 365 clientes de E5 y P1 y P2 ahora pueden obtener una vista de 360 grados de cada correo electrónico con la página de entidad de correo electrónico.
-ms.openlocfilehash: a6417173e25342fdef483bc38da64d6c1c48b96e
-ms.sourcegitcommit: 2b89bcff547e00be3d38dc8d1e6cbcf8f41eba42
+search.appverid: met150
+ms.openlocfilehash: eed9d53a290d4c8b22de533d6d66edd011806861
+ms.sourcegitcommit: b1ed6470645455c2f1fcf467450debc622c40147
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/03/2022
-ms.locfileid: "67598789"
+ms.lasthandoff: 09/15/2022
+ms.locfileid: "67711585"
 ---
 # <a name="the-email-entity-page"></a>Página de la entidad de correo electrónico
 
@@ -122,7 +122,7 @@ Los usuarios verán detalles de detonación enriquecidos para los datos adjuntos
 
 - *Invalidación principal: origen*: la invalidación principal y el origen hacen referencia a la configuración de inquilino o usuario que ha afectado a la entrega del correo electrónico, reemplazando la ubicación de entrega dada por el sistema (según la tecnología de amenazas y detección). Por ejemplo, podría tratarse de un correo electrónico bloqueado debido a una regla de transporte configurada por el inquilino o a un correo electrónico permitido debido a una configuración de usuario final para remitentes seguros. 
 
-- *Todas las invalidaciones*: todas las invalidaciones hacen referencia a la lista de invalidaciones (configuración de inquilino o usuario) que se aplicó en el correo electrónico, lo que puede o no haber afectado a la entrega de un correo electrónico. Por ejemplo, si una regla de transporte configurada por un inquilino, así como una configuración de directiva configurada por el inquilino (por ejemplo, de la lista Permitir bloque de inquilinos), se aplica a un correo electrónico, ambos aparecerán en este campo. Puede comprobar el campo de invalidación principal para determinar la configuración que ha afectado a la entrega del correo electrónico. 
+- *Todas las invalidaciones*: todas las invalidaciones hacen referencia a la lista de invalidaciones (configuración de inquilino o usuario) que se aplicó en el correo electrónico, lo que puede o no haber afectado a la entrega de un correo electrónico. Por ejemplo, si se aplica una regla de transporte configurada por un inquilino, así como una configuración de directiva configurada por el inquilino (por ejemplo, desde las listas De permitir bloques de inquilinos), se aplicarán a un correo electrónico, ambos aparecerán en este campo. Puede comprobar el campo de invalidación principal para determinar la configuración que ha afectado a la entrega del correo electrónico. 
 
 - *Nivel de queja masiva (BCL):* el nivel de queja masiva (BCL) del mensaje. Una BCL más alta indica que es más probable que un mensaje de correo masivo genere quejas (el resultado natural si es probable que el correo electrónico sea correo no deseado).
 
@@ -130,11 +130,11 @@ Los usuarios verán detalles de detonación enriquecidos para los datos adjuntos
 
 - *Tipo de cliente*: indica el tipo de cliente desde el que se envió el correo electrónico como REST.
 
-- *Reenvío*: en escenarios con autoforwaridng, indica el usuario de reenvío, así como el tipo de reenvío como ETR o el reenvío SMTP. 
+- *Reenvío*: en escenarios con reenvío automático, indica el usuario de reenvío, así como el tipo de reenvío, como ETR o el reenvío SMTP.
 
 - *Lista de distribución*: muestra la lista de distribución, si el destinatario recibió el correo electrónico como miembro de la lista. Muestra la lista de distribución de nivel superior si hay listas de distribución anidadas implicadas.  
 
-- *Para, Cc*: indica las direcciones que aparecen en los campos Para, Cc de un correo electrónico. La información de estos campos está restringida a 5000 caracteres. 
+- *Para, Cc*: indica las direcciones que aparecen en los campos Para, Cc de un correo electrónico. La información de estos campos está restringida a 5000 caracteres.
 
 - *Nombre de dominio*: es el nombre de dominio del remitente.
 
@@ -158,7 +158,7 @@ Los usuarios verán detalles de detonación enriquecidos para los datos adjuntos
 - Correo identificado de DomainKeys (**DKIM**):
   - Pasar: indica la comprobación DKIM del mensaje pasado.
   - Error (motivo): indica la comprobación DKIM del mensaje con error y por qué. Por ejemplo, si el mensaje no estaba firmado o no se verificó la firma.
-  - Ninguno: indica que el mensaje no se firmó. Esto podría indicar que el dominio tiene un registro DKIM o que el registro DKIM no proporciona ningún resultado, solo indica que el mensaje no estaba firmado.
+  - Ninguno: indica que el mensaje no se firmó. Esto puede indicar o no que el dominio tiene un registro DKIM o que el registro DKIM no se evalúa como un resultado, solo que este mensaje no se firmó.
 
 - Autenticación, informes y conformidad de mensajes basados en dominio (**DMARC**):
   - Pasar: indica la comprobación de DMARC para el mensaje pasado.
@@ -169,9 +169,9 @@ Los usuarios verán detalles de detonación enriquecidos para los datos adjuntos
 *Autenticación compuesta*: este es un valor usado por Microsoft 365 para combinar la autenticación de correo electrónico como SPF, DKIM y DMARC, para determinar si el mensaje es auténtico. Usa el dominio *From:* del correo como base de evaluación.
 ## <a name="actions-into-email-entity-page"></a>Acciones en Email página de entidad
 
-Los equipos de seguridad ahora pueden realizar acciones de correo electrónico, como la eliminación temporal y la eliminación rígida, pasar a correo no deseado, pasar a la bandeja de entrada, desencadenar una investigación, enviar a Microsoft para su revisión en línea y et cetera. **Las** acciones de bloque de nivel de inquilino, como el archivo y la dirección URL o el remitente, también se pueden clasificar desde Email página de entidad.  
+Los equipos de seguridad ahora pueden realizar acciones de correo electrónico, como la eliminación temporal y la eliminación rígida, pasar a correo no deseado, pasar a la bandeja de entrada, desencadenar una investigación, enviar a Microsoft para su revisión en línea y et cetera. **Las** acciones de bloque de nivel de inquilino, como el archivo y la dirección URL o el remitente, también se pueden desencadenar desde la página de entidad Email.  
 
-Podrá hacer clic en **Realizar acciones** desde la esquina superior derecha de la página de entidad y se abrirá el Asistente para acciones para que seleccione la acción específica que necesita. 
+Podrá seleccionar **Realizar acciones** en la esquina superior derecha de la página de entidad y se abrirá el Asistente para acciones para que seleccione la acción específica que necesita. 
 ![Realice una acción desde la página de la entidad.](../../media/Take-ActionWizard-Email-entity.png)
 
 En el Asistente para acciones, puede realizar acciones de correo electrónico, envíos de correo electrónico, bloquear el dominio remitente y remitente, acciones de investigación y aprobación en dos pasos (agregar a la corrección) en el mismo panel lateral. Esto sigue un flujo coherente para facilitar su uso. El Asistente para acciones usa el mismo sistema que las acciones del Explorador (para las acciones Eliminar, Envíos e Investigación), por ejemplo. Podrá ver y realizar un seguimiento de estas acciones en el [Centro de acciones unificadas](https://security.microsoft.com/action-center/history) (para correos electrónicos eliminados), en el [portal de envío](https://security.microsoft.com/reportsubmission) (para envíos) y en la página Listas de [permitidos o bloqueados de inquilinos](https://security.microsoft.com/tenantAllowBlockList) para (bloques TABL). 
@@ -198,9 +198,9 @@ El panel de resumen de correo electrónico se divide en las secciones siguientes
 
 - *Email detalles*: contiene información sobre las propiedades de correo electrónico, como el nombre del remitente, la dirección del remitente, la hora recibida, los detalles de autenticación y otros detalles.
 
-- *Direcciones URL*: de forma predeterminada, verá tres direcciones URL y sus amenazas correspondientes. Siempre puede hacer clic en **Ver todas las direcciones URL** para expandir y ver todas las direcciones URL y exportarlas.  
+- *Direcciones URL*: de forma predeterminada, verá tres direcciones URL y sus amenazas correspondientes. Siempre puede seleccionar **Ver todas las direcciones URL** para expandirlas y ver todas las direcciones URL y exportarlas.  
 
-- *Datos adjuntos*: de forma predeterminada, verá tres datos adjuntos. Siempre puede hacer clic en **Ver todos los datos adjuntos** para expandir y ver todos los datos adjuntos. 
+- *Datos adjuntos*: de forma predeterminada, verá tres datos adjuntos. Siempre puede seleccionar **Ver todos los datos adjuntos** para expandir y ver todos los datos adjuntos. 
 
 Además de las secciones anteriores, también verá secciones específicas de algunas experiencias que se integran con el panel de resumen: 
 

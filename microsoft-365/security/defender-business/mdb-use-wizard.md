@@ -18,12 +18,12 @@ ms.collection:
 - M365-security-compliance
 - m365-initiative-defender-business
 ms.custom: intro-get-started
-ms.openlocfilehash: c0b9666a280b159df4e1b985b733c73565477241
-ms.sourcegitcommit: 2b89bcff547e00be3d38dc8d1e6cbcf8f41eba42
+ms.openlocfilehash: f0b24d0476ad3efb579f3d86aabba9d0a94a372e
+ms.sourcegitcommit: b1ed6470645455c2f1fcf467450debc622c40147
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/03/2022
-ms.locfileid: "67597534"
+ms.lasthandoff: 09/15/2022
+ms.locfileid: "67710705"
 ---
 # <a name="use-the-setup-wizard-in-microsoft-defender-for-business"></a>Uso del asistente para la instalación en Microsoft Defender para Empresas
 
@@ -38,7 +38,7 @@ Defender para Empresas fue diseñado para ahorrar tiempo y esfuerzo a las peque�
 
 El asistente para la instalación está diseñado para ejecutarse la primera vez que alguien de la empresa inicia sesión en el portal de Microsoft 365 Defender ([https://security.microsoft.com](https://security.microsoft.com)). 
 
-Si su empresa ha estado usando Microsoft 365 Empresa Premium, el Asistente para la configuración de Defender para empresas se ejecutará la primera vez que alguien vaya al **inventario de** **dispositivos de puntos de conexión** > . 
+Si su empresa ha estado usando Microsoft 365 Empresa Premium, el Asistente para la configuración de Defender para empresas se ejecutará la primera vez que alguien vaya a **Dispositivos de recursos** > . 
 
 La pantalla de inicio del asistente para la instalación es similar a la siguiente imagen:
 

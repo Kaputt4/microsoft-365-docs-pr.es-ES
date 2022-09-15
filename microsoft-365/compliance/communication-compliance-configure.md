@@ -22,12 +22,12 @@ ms.custom: admindeeplinkCOMPLIANCE
 search.appverid:
 - MET150
 - MOE150
-ms.openlocfilehash: c641a8699f59454bcc756cb0910f18a125d953e6
-ms.sourcegitcommit: 221212fff9737e0ea386755deb8fed62ae9c254b
+ms.openlocfilehash: a63f93062a5941dbbb30202f6bb224de4ee10ee6
+ms.sourcegitcommit: b1ed6470645455c2f1fcf467450debc622c40147
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/14/2022
-ms.locfileid: "66787680"
+ms.lasthandoff: 09/15/2022
+ms.locfileid: "67710574"
 ---
 # <a name="get-started-with-communication-compliance"></a>Introducción al cumplimiento de las comunicaciones
 
@@ -54,15 +54,37 @@ Si no tiene un plan E5 Office 365 Enterprise existente y quiere probar el cumpli
 > [!NOTE]
 > Cumplimiento avanzado de Office 365 ya no se vende como una suscripción independiente. Cuando expiren las suscripciones actuales, los clientes deben realizar la transición a una de las suscripciones anteriores, que contienen las mismas características de cumplimiento o adicionales.
 
-## <a name="recommended-actions"></a>Acciones recomendadas
+## <a name="recommended-actions-preview"></a>Acciones recomendadas (versión preliminar)
 
-Las acciones recomendadas pueden ayudar a su organización a empezar a trabajar con las funcionalidades de cumplimiento de comunicaciones y sacar el máximo partido de las directivas existentes. Incluidas en la página **Directivas** , las acciones recomendadas proporcionan información detallada y resumen los tipos de información confidencial y las actividades de contenido inadecuado en las comunicaciones de su organización. Las conclusiones son compatibles con la [clasificación de datos](/microsoft-365/compliance/data-classification-overview) y la aplicación de etiquetas de confidencialidad, etiquetas de retención y clasificación de tipos de información confidencial. Estas conclusiones no incluyen ninguna información de identificación personal (PII) para los usuarios de su organización.
+Las acciones recomendadas pueden ayudar a su organización a empezar a trabajar rápidamente con el cumplimiento de las comunicaciones. Incluidas en la página **Información general** , las acciones recomendadas le ayudarán a seguir los pasos para configurar e implementar directivas.
+
+Las siguientes recomendaciones están disponibles para ayudarle a empezar a trabajar con o maximizar la configuración de cumplimiento de comunicaciones:
+
+- **Conocer el cumplimiento de las comunicaciones**: antes de configurar las cosas, revise nuestra documentación oficial para obtener información, planear e implementar el cumplimiento de las comunicaciones en su organización.
+- **Asigne permisos para asegurarse de que el equipo puede realizar sus trabajos**: asegúrese de que solo las partes interesadas adecuadas puedan acceder a la solución, mediante la asignación de miembros del equipo responsables de administrar las características de cumplimiento de comunicaciones e investigar y revisar alertas.
+- **Crear grupos de distribución para los usuarios cuyas comunicaciones quiera detectar**: se recomienda crear grupos de distribución que contengan usuarios que se incluirán en las directivas de cumplimiento de comunicaciones.
+- **Cree su primera directiva para empezar a detectar comunicaciones**: para investigar posibles infracciones de cumplimiento normativo, primero debe configurar una directiva que detecte posibles infracciones en las comunicaciones internas o externas de la organización.
+- **Revise las alertas para investigar los mensajes detectados y tomar medidas**: los mensajes que coincidan con las condiciones de una directiva desencadenarán alertas que proporcionan contexto en torno a una infracción de directiva para que pueda investigar y tomar medidas si es necesario.
+- **Revise los informes para obtener información rápida sobre el rendimiento de las directivas**: obtenga información rápida sobre el rendimiento de las directivas, vea informes detallados para explorar en profundidad más y exporte los resultados para un análisis posterior.
+
+Cada acción recomendada incluida en esta experiencia tiene tres atributos:
+
+- **Acción**: nombre y descripción de la acción recomendada.
+- **Recomendado, obligatorio u opcional**: si la acción recomendada es altamente recomendada, obligatoria u opcional para que las características de cumplimiento de comunicaciones funcionen según lo esperado.
+- **Tiempo estimado para completar**: tiempo estimado para completar la acción recomendada en minutos.
+
+Seleccione una recomendación de la lista para empezar a configurar el cumplimiento de las comunicaciones. Cada acción recomendada le guía por las actividades necesarias para la recomendación, incluidos los requisitos, qué esperar y el impacto de configurar la característica en su organización. Algunas acciones recomendadas se marcarán automáticamente como completadas cuando se configuren. Si no es así, deberá seleccionar manualmente la acción como completada cuando esté configurada.
+
+También se incluye en la página Directivas, las conclusiones de acciones recomendadas ayudan a resumir los tipos de información confidencial actuales y posibles infracciones de cumplimiento normativo en las comunicaciones de su organización. Las conclusiones son compatibles con la [clasificación de datos](/microsoft-365/compliance/data-classification-overview) y la aplicación de etiquetas de confidencialidad, etiquetas de retención y clasificación de tipos de información confidencial. Estas conclusiones se agregan y no incluyen información de identificación personal (PII) para los usuarios de su organización.
 
 ![Acciones recomendadas de cumplimiento de comunicaciones.](../media/communication-compliance-recommended-actions.png)
 
-La actividad en los mensajes que contienen contenido inadecuado se agrega mediante el [tipo de clasificador](/microsoft-365/compliance/communication-compliance-policies#classifiers) de las directivas existentes que usan la plantilla de contenido inapropiada o las directivas personalizadas que usan clasificadores para contenido inadecuado. Investigue las alertas de estos mensajes en el panel de alertas de las directivas.
+La actividad en los mensajes se agrega mediante el [tipo de clasificador](/microsoft-365/compliance/communication-compliance-policies#classifiers) de las directivas existentes que usan la plantilla Detección de directivas de *texto inapropiadas* o directivas personalizadas que usan clasificadores. Investigue las alertas de estos mensajes en el **panel de alertas** de las directivas.
 
-La actividad que implica [tipos de información confidencial](/microsoft-365/compliance/communication-compliance-policies#sensitive-information-types) se detecta en los mensajes cubiertos en las directivas existentes y en los mensajes que no están cubiertos por las directivas existentes. Las conclusiones se agregan para todos los tipos de información confidencial, incluidos los que su organización no ha definido previamente en una directiva de cumplimiento de comunicaciones existente. Use esta información para crear una nueva directiva de cumplimiento de comunicaciones o para actualizar las directivas existentes.
+La actividad que implica [tipos de información confidencial](/microsoft-365/compliance/communication-compliance-policies#sensitive-information-types) se detecta en los mensajes cubiertos en las directivas existentes y en los mensajes que no están cubiertos por las directivas existentes. Los mensajes de información que no están cubiertos por directivas existentes no se pueden investigar ni corregir, se debe crear una nueva directiva para detectar y corregir una actividad similar en mensajes futuros. Las conclusiones se agregan para todos los tipos de información confidencial, incluidos los que su organización no ha definido previamente en una directiva de cumplimiento de comunicaciones existente. Use esta información para crear una nueva directiva de cumplimiento de comunicaciones o para actualizar las directivas existentes. Después de crear una nueva directiva, es posible que las alertas de mensajes de esta directiva coincidan o no con un número igual de mensajes identificados en una información similar. La directiva puede tener condiciones diferentes, un número diferente de usuarios en el ámbito y solo detecta la actividad de mensaje que se produce después de que la directiva esté activa.
+
+>[!TIP]
+>¿No desea ver la información de acción recomendada? Abra una solicitud con Soporte técnico de Microsoft para deshabilitar la visualización de estos widgets de información para su organización.
 
 ## <a name="step-1-required-enable-permissions-for-communication-compliance"></a>Paso 1 (obligatorio): Habilitación de permisos para el cumplimiento de comunicaciones
 
@@ -294,7 +316,7 @@ También puede optar por habilitar la anonimización de los nombres de usuario m
 
 4. Para habilitar la anonimización, seleccione **Mostrar versiones anónimas de nombres de usuario**.
 
-5. Seleccione **Guardar**.
+5. Haga clic en **Guardar**.
 
 6. Vaya a la pestaña **Plantillas de aviso** y seleccione **Crear plantilla de aviso**.
 
@@ -319,13 +341,13 @@ Siga estos pasos para probar la directiva de cumplimiento de comunicaciones:
 2. Envíe un correo electrónico, un chat de Microsoft Teams o un mensaje de Yammer que cumpla los criterios que ha definido en la directiva de cumplimiento de comunicaciones. Esta prueba puede ser una palabra clave, un tamaño de datos adjuntos, un dominio, etc. Asegúrese de determinar si la configuración condicional configurada en la directiva es demasiado restrictiva o demasiado indulgente.
 
     > [!NOTE]
-    > Los mensajes de correo electrónico pueden tardar aproximadamente 24 horas en procesarse completamente en una directiva. Las comunicaciones en Microsoft Teams, Yammer y plataformas de terceros pueden tardar aproximadamente 48 horas en procesarse completamente en una directiva.
+    > Email mensajes pueden tardar aproximadamente 24 horas en procesarse completamente en una directiva. Las comunicaciones en Microsoft Teams, Yammer y plataformas de terceros pueden tardar aproximadamente 48 horas en procesarse completamente en una directiva.
 
 3. Inicie sesión en Microsoft 365 como revisor designado en la directiva de cumplimiento de comunicaciones. Vaya a **Alertas** de **cumplimiento** >  de comunicaciones para ver las alertas de las directivas.
 
 4. Corrija la alerta mediante los controles de corrección y compruebe que la alerta se haya resuelto correctamente.
 
-## <a name="next-steps"></a>Siguientes pasos
+## <a name="next-steps"></a>Pasos siguientes
 
 Una vez completados estos pasos para crear la primera directiva de cumplimiento de comunicaciones, comenzará a recibir alertas de indicadores de actividad después de 24-48 horas. Configure directivas adicionales según sea necesario mediante las instrucciones del paso 5 de este artículo.
 

@@ -16,19 +16,19 @@ search.appverid:
 - MOE150
 - MET150
 description: Configure una etiqueta de confidencialidad predeterminada para una biblioteca de documentos de SharePoint para documentos nuevos y sin etiquetar.
-ms.openlocfilehash: 4ffb0dacac36c79593a8cdfbeed0f4360e246f35
-ms.sourcegitcommit: cd9df1a681265905eef99c039f7036b2fa6e8b6d
+ms.openlocfilehash: 6f3146f8ce59f88eafc311cd9bf382f06103eb94
+ms.sourcegitcommit: b1ed6470645455c2f1fcf467450debc622c40147
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/07/2022
-ms.locfileid: "67276445"
+ms.lasthandoff: 09/15/2022
+ms.locfileid: "67710771"
 ---
 # <a name="configure-a-default-sensitivity-label-for-a-sharepoint-document-library"></a>Configurar una etiqueta de confidencialidad predeterminada para una biblioteca de documentos de SharePoint
 
->*[Guía de licencias de Microsoft 365 para la seguridad y el cumplimiento](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance).*
+>*[Instrucciones de licencias de Microsoft 365 para la seguridad y el cumplimiento](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance).*
 
 > [!NOTE]
-> Esta característica se está implementando gradualmente en versión preliminar y está sujeta a cambios. También es una característica premium con detalles de licencia que se proporcionarán cuando la característica esté disponible con carácter general (GA).
+> Esta característica se encuentra en versión preliminar y está sujeta a cambios. También es una característica premium con detalles de licencia que se proporcionarán cuando la característica esté disponible con carácter general (GA).
 > 
 > Para leer el anuncio de vista previa, consulte la [entrada de blog](https://techcommunity.microsoft.com/t5/security-compliance-and-identity/public-preview-default-label-for-a-document-library-in/ba-p/3585136).
 
@@ -41,10 +41,10 @@ Una etiqueta predeterminada ofrece un nivel de protección de línea base y una 
 - **Etiqueta de confidencialidad predeterminada para una biblioteca de documentos**: etiquetado basado en ubicación, aplicable solo para SharePoint. Invalida una etiqueta de prioridad inferior a menos que se aplique manualmente.
 - **Etiqueta de confidencialidad predeterminada de una directiva**: siempre aplicable para todas las ubicaciones. Nunca invalida una etiqueta existente.
 
-Cuando se usa Office en la Web para crear o editar un archivo, la etiqueta de confidencialidad predeterminada para una biblioteca de documentos se puede aplicar sin retrasos. Sin embargo, el etiquetado no es inmediato si carga un archivo o lo crea mediante Microsoft 365 应用版 en Windows, macOS, iOS o Android y, a continuación, guárdelo en SharePoint:
+Cuando se usa Office en la Web para crear o editar un archivo, la etiqueta de confidencialidad predeterminada para una biblioteca de documentos se puede aplicar sin retrasos. Sin embargo, el etiquetado no es inmediato si carga un archivo o lo crea mediante Aplicaciones Microsoft 365 en Windows, macOS, iOS o Android y, a continuación, guárdelo en SharePoint:
 
 - Carga de archivos: la etiqueta puede tardar unos minutos en aplicarse.
-- Microsoft 365 应用版: la etiqueta se aplica después de cerrar la aplicación.
+- Aplicaciones Microsoft 365: la etiqueta se aplica después de cerrar la aplicación.
 
 ## <a name="will-an-existing-label-be-overridden"></a>¿Se invalidará una etiqueta ya existente?
 
@@ -53,9 +53,9 @@ Resumen de los resultados:
 |Etiqueta ya existente |Invalidación con la etiqueta predeterminada de la biblioteca |
 |:-----|:-----|:-----|
 |Aplicado manualmente, cualquier prioridad| No |
-|Aplicado automáticamente, prioridad inferior | Sí |
+|Aplicado automáticamente, prioridad inferior | Yes |
 |Aplicado automáticamente, mayor prioridad | No |
-|Etiqueta predeterminada de la directiva, prioridad inferior | Sí |
+|Etiqueta predeterminada de la directiva, prioridad inferior | Yes |
 |Etiqueta predeterminada de la directiva, prioridad superior | No |
 
 ## <a name="requirements"></a>Requisitos
@@ -70,7 +70,7 @@ Resumen de los resultados:
 
 - A menos que haya [habilitado la coautoría de archivos cifrados con etiquetas de confidencialidad](sensitivity-labels-coauthoring.md), verá un retraso en la aplicación de la etiqueta de confidencialidad predeterminada para una biblioteca de documentos cuando los usuarios **seleccionen la** \> opción **Guardar como** archivo.
 
-- Al igual que con las etiquetas de confidencialidad para Office på nettet, algunas [configuraciones de etiquetas que aplican cifrado](encryption-sensitivity-labels.md#configure-encryption-settings) no son adecuadas para SharePoint, por lo que no admiten una etiqueta de confidencialidad predeterminada para una biblioteca de documentos de SharePoint:
+- Al igual que con las etiquetas de confidencialidad para Office para la Web, algunas [configuraciones de etiquetas que aplican cifrado](encryption-sensitivity-labels.md#configure-encryption-settings) no son adecuadas para SharePoint, por lo que no admiten una etiqueta de confidencialidad predeterminada para una biblioteca de documentos de SharePoint:
     - **Permitir que los usuarios asignen permisos cuando apliquen la etiqueta** y la casilla **En Word, PowerPoint y Excel, pedir a los usuarios que especifiquen permisos** seleccionada. A veces, esta configuración se conoce como "permisos definidos por el usuario".
     - **El acceso del usuario al contenido expira** establecido en un valor distinto de **Nunca**.
     - **Cifrado de clave doble** seleccionado.
@@ -89,8 +89,7 @@ Para una biblioteca de documentos existente:
 
 Si va a crear una nueva biblioteca de documentos, puede configurar la misma configuración de **etiquetas de confidencialidad predeterminadas** en el panel flotante **Crear biblioteca de documentos** .
 
-> [!NOTE]
-> Esta nueva configuración se está implementando gradualmente en los inquilinos. Si no los ve, inténtelo de nuevo en unos días.
+Los permisos necesarios para establecer y cambiar una etiqueta de confidencialidad predeterminada para una biblioteca de SharePoint se heredan. Al igual que con la capacidad de cambiar el nombre y la descripción de la biblioteca, cualquier miembro del sitio de SharePoint tiene este permiso.
 
 ## <a name="monitoring-application-of-library-default-sensitivity-labels"></a>Supervisión de la aplicación de etiquetas de confidencialidad predeterminadas de la biblioteca
 

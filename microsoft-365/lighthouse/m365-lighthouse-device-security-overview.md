@@ -1,5 +1,5 @@
 ---
-title: Información general de la página de Microsoft Defender para punto de conexión en Microsoft 365 Lighthouse
+title: Información general de la página Seguridad del dispositivo en Microsoft 365 Lighthouse
 f1.keywords: NOCSH
 ms.author: sharik
 author: SKjerland
@@ -17,35 +17,35 @@ ms.custom:
 - M365-Lighthouse
 search.appverid: MET150
 description: En el caso de los proveedores de servicios administrados (MSP) que usan Microsoft 365 Lighthouse, obtenga información sobre cómo ver los riesgos de seguridad.
-ms.openlocfilehash: fdcbd0ead4719015f90490d51cc499e5d7b95444
-ms.sourcegitcommit: 2b89bcff547e00be3d38dc8d1e6cbcf8f41eba42
+ms.openlocfilehash: cc50842f303d300f4e5e60f2c661d0edb8cf2ef4
+ms.sourcegitcommit: b1ed6470645455c2f1fcf467450debc622c40147
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/03/2022
-ms.locfileid: "67599415"
+ms.lasthandoff: 09/15/2022
+ms.locfileid: "67709159"
 ---
-# <a name="overview-of-the-microsoft-defender-for-endpoint-page-in-microsoft-365-lighthouse"></a>Información general de la página de Microsoft Defender para punto de conexión en Microsoft 365 Lighthouse
+# <a name="overview-of-the-device-security-page-in-microsoft-365-lighthouse"></a>Información general de la página Seguridad del dispositivo en Microsoft 365 Lighthouse
 
-Microsoft Defender para punto de conexión proporciona seguridad de punto de conexión para proteger los dispositivos de los clientes frente a ransomware, malware, phishing y otras amenazas. Microsoft 365 Lighthouse permite ver información e información de seguridad de los puntos de conexión para todos los inquilinos del cliente.
+Microsoft Defender para punto de conexión proporciona seguridad de punto de conexión para proteger los dispositivos de los clientes frente a ransomware, malware, phishing y otras amenazas. Microsoft 365 Lighthouse permite ver información e información de seguridad de los puntos de conexión de todos los inquilinos administrados.
 
-Puede acceder a la página Microsoft Defender para punto de conexión de Microsoft 365 Lighthouse desde la tarjeta **Incidentes de seguridad** de la página Inicio o desde el panel de navegación izquierdo seleccionando **Dispositivos** > **Seguridad del dispositivo**. Verá los incidentes de seguridad y las alertas en los inquilinos que necesitan atención y los dispositivos que se han incorporado a Microsoft Defender para punto de conexión.
+Puede acceder a la página Seguridad del dispositivo en Microsoft 365 Lighthouse desde la tarjeta **Incidentes de seguridad** de la página Inicio o desde el panel de navegación izquierdo; para ello, seleccione **Dispositivos** > **Seguridad del dispositivo**. Verá los incidentes de seguridad y las alertas en los inquilinos que necesitan atención y los dispositivos que se han incorporado a Microsoft Defender para punto de conexión.
 
 ## <a name="incidents-and-alerts-tab"></a>Pestaña Incidentes y alertas
 
-La pestaña Incidentes y alertas proporciona una cola de incidentes multiinquilino de incidentes y alertas que se marcaron desde dispositivos en la red de los clientes. De forma predeterminada, la cola muestra los incidentes activos detectados en los últimos 30 días. Puede seleccionar cualquier incidente o alerta para ver más información.
+La pestaña Incidentes y alertas proporciona una vista multiinquilino de incidentes y alertas que se marcaron desde dispositivos en la red de los clientes. De forma predeterminada, la pestaña muestra los incidentes activos detectados en los últimos 30 días. Puede seleccionar cualquier incidente o alerta para abrir el panel de detalles para ver más información. En el panel de detalles, también puede resolver el incidente o la alerta o asignarlo usted mismo.
 
-:::image type="content" source="../media/m365-lighthouse-device-compliance-page-overview/microsoft-defender-endpoint-incidents.png" alt-text="Microsoft Defender para punto de conexión incidentes y alertas":::
+:::image type="content" source="../media/m365-lighthouse-device-security-overview/device-security-incidents-and-alerts-tab.png" alt-text="Pestaña Incidentes y alertas en la página Seguridad del dispositivo.":::
 
 ## <a name="devices-tab"></a>Pestaña Dispositivos
 
-En la pestaña Dispositivos se enumeran todos los dispositivos de los inquilinos del cliente que se han incorporado a Microsoft Defender para punto de conexión. Esta lista incluye dispositivos administrados por Microsoft Endpoint Manager y Microsoft Defender para punto de conexión.
+En la pestaña Dispositivos se enumeran todos los dispositivos de los inquilinos administrados que se han incorporado a Microsoft Defender para punto de conexión. Esta lista incluye dispositivos administrados por Microsoft Endpoint Manager y Microsoft Defender para punto de conexión.
 
 La pestaña Dispositivos también incluye las siguientes opciones:
 
 - **Exportar**: seleccione esta opción para exportar los datos de cumplimiento de dispositivos a un archivo de valores separados por comas (.csv) de Excel.
 - **Búsqueda**: escriba palabras clave para localizar rápidamente un dispositivo específico en la lista.
 
-:::image type="content" source="../media/m365-lighthouse-device-compliance-page-overview/microsoft-defender-endpoint-devices.png" alt-text="Microsoft Defender para punto de conexión vista de dispositivos incorporados":::
+:::image type="content" source="../media/m365-lighthouse-device-security-overview/device-security-devices-tab.png" alt-text="Pestaña Dispositivos en la página Seguridad de dispositivos.":::
 
 ## <a name="related-content"></a>Contenido relacionado
 [Administrar incidentes Microsoft Defender para punto de conexión](../security/defender-endpoint/manage-incidents.md) (artículo)\

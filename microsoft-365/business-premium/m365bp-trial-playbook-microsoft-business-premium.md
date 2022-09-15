@@ -11,38 +11,38 @@ ms.collection: m365-security-compliance
 ms.service: microsoft-365-business
 ms.subservice: business-premium
 ms.localizationpriority: high
-ms.date: 08/24/2022
+ms.date: 09/14/2022
 search.appverid:
 - MOE150
 - MET150
 description: Sacar el máximo partido de la prueba de Microsoft 365 Empresa Premium. Pruebe algunas de las funcionalidades clave de productividad y seguridad.
-ms.openlocfilehash: 52b38d8145c43eac2eeef34b063a3a327f2d5a3f
-ms.sourcegitcommit: 651610ca73bfd1d008d97311b59782790df664fb
+ms.openlocfilehash: 7b8d3c2b0a0b090ee763c80acdcb2f5dc71fa495
+ms.sourcegitcommit: b1ed6470645455c2f1fcf467450debc622c40147
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/07/2022
-ms.locfileid: "67611856"
+ms.lasthandoff: 09/15/2022
+ms.locfileid: "67710639"
 ---
 # <a name="trial-playbook-microsoft-365-business-premium"></a>Cuaderno de estrategias de prueba: Microsoft 365 Empresa Premium
 
-Le damos la bienvenida al cuaderno de estrategias de prueba de Microsoft Empresa Premium. Este cuaderno de estrategias le ayudará a sacar el máximo partido a la prueba gratuita de 30 días brindándole la experiencia acerca de cómo Microsoft 365 Empresa Premium aumenta la productividad y ayuda a proteger a la organización con funcionalidades de seguridad avanzadas. Con las recomendaciones de Microsoft, obtenga información sobre cómo configurar las características de protección contra amenazas, analizar las amenazas detectadas y responder a los ciberataques.
+Bienvenido al cuaderno de estrategias de prueba de Microsoft Business Premium. Este cuaderno de estrategias te ayudará a sacar el máximo partido a tu evaluación gratuita de 30 días. Puede ver de primera mano cómo Microsoft 365 Empresa Premium aumenta la productividad y ayuda a proteger su organización con funcionalidades de seguridad avanzadas. Use este cuaderno de estrategias para configurar las características de protección contra amenazas, analizar las amenazas detectadas y responder a ciberataques.
 
 ## <a name="set-up-the-microsoft-365-business-premium-trial"></a>Configuración de la prueba de Microsoft 365 Empresa Premium
 
 Después de [iniciar una prueba o comprar Microsoft 365 Empresa Premium](get-microsoft-365-business-premium.md), el siguiente paso es configurarlo todo.
 
 > [!TIP]
-> Guarde este cuaderno de estrategias en los favoritos del explorador. Si los vínculos del cuaderno de estrategias le alejan de esta ubicación, simplemente vuelva a este cuaderno de estrategias para continuar.
+> Guarde este cuaderno de estrategias en los favoritos del explorador. Cuando los vínculos del cuaderno de estrategias te alejan de esta ubicación, será más fácil volver a este cuaderno de estrategias para continuar.
 
-En primer lugar, [configure la prueba](../business-premium/m365bp-setup.md).
+1. [¡Configure la versión de prueba](../business-premium/m365bp-setup.md)!
 
-Después de iniciar la prueba y completar el proceso de configuración, los cambios pueden tardar hasta dos horas en surtir efecto.
+   Después de iniciar la prueba y completar el proceso de configuración, los cambios pueden tardar hasta dos horas en surtir efecto.
 
-Microsoft 365 Empresa Premium incluye [directivas de seguridad preestablecidas](/security/office-365-security/preset-security-policies.md) que puede usar en su entorno. Estas directivas representan un perfil de protección de línea base adecuado para la mayoría de los usuarios. La protección estándar incluye:
+2. Use las [directivas de seguridad preestablecidas](/security/office-365-security/preset-security-policies.md). Estas directivas representan un perfil de protección de línea base adecuado para la mayoría de los usuarios. La protección estándar incluye:
 
-- [Vínculos seguros](../security/office-365-security/safe-links.md), [datos adjuntos seguros](../security/office-365-security/safe-attachments.md) y [directivas contra la suplantación de identidad](../security/office-365-security/anti-phishing-protection.md) que engloban todo el espacio empresarial o el subconjunto de usuarios que haya elegido durante el proceso de configuración de prueba. (La suscripción de prueba es para un máximo de 25 usuarios).
+   - [Vínculos seguros](../security/office-365-security/safe-links.md), [datos adjuntos seguros](../security/office-365-security/safe-attachments.md) y [directivas contra la suplantación de identidad](../security/office-365-security/anti-phishing-protection.md) que engloban todo el espacio empresarial o el subconjunto de usuarios que haya elegido durante el proceso de configuración de prueba. (La suscripción de prueba es para un máximo de 25 usuarios).
 
-- Protección para aplicaciones de productividad, como [SharePoint](/sharepoint/introduction), [OneDrive](/onedrive/one-drive-quickstart-small-business), [aplicaciones de Office](/deployoffice/about-microsoft-365-apps)y [Microsoft Teams](/microsoftteams/teams-overview).
+   - Protección para aplicaciones de productividad, como [SharePoint](/sharepoint/introduction), [OneDrive](/onedrive/one-drive-quickstart-small-business), [aplicaciones de Office](/deployoffice/about-microsoft-365-apps)y [Microsoft Teams](/microsoftteams/teams-overview).
 
 ## <a name="add-a-domain"></a>Agregar un dominio
 
@@ -70,7 +70,7 @@ Microsoft 365 Empresa Premium incluye Defender para empresas, una nueva solució
 
 1. Vaya al portal de Microsoft 365 Defender ([https://security.microsoft.com](https://security.microsoft.com)) e inicie sesión.
 
-2. Ejecute el [asistente para la instalación](../security/defender-business/mdb-use-wizard.md).
+2. Vaya a **Dispositivos activos** > . Si Defender for Business aún no está configurado, se le pedirá que ejecute el [asistente para la instalación](../security/defender-business/mdb-use-wizard.md).
 
 3. [Incorporar dispositivos](../security/defender-business/mdb-onboard-devices.md).
 

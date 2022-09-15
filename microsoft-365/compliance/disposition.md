@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Supervise y administre la eliminación de contenido, cuando usa una revisión para eliminación o los elementos marcados como registros se eliminan automáticamente de acuerdo con la configuración que haya establecido.
-ms.openlocfilehash: d72cc68bb093c3b49c7f79847916c5cbc5fe5a2d
-ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
-ms.translationtype: HT
+ms.openlocfilehash: 645c48ab13a54a6b95b5d0b0732213efcab59fd7
+ms.sourcegitcommit: b1ed6470645455c2f1fcf467450debc622c40147
+ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/06/2022
-ms.locfileid: "66630111"
+ms.lasthandoff: 09/15/2022
+ms.locfileid: "67710486"
 ---
 # <a name="disposition-of-content"></a>Eliminación de contenido
 
@@ -187,7 +187,7 @@ Como puede ver en el ejemplo que se muestra, las acciones admitidas son las sigu
   
 - **Aprobar eliminación**:
     - Cuando se selecciona esta acción para una fase provisional de revisión para eliminación (se han configurado varias fases): el elemento pasa a la siguiente fase de eliminación.
-    - Cuando esta acción se selecciona en la última fase de revisión para eliminación o en caso de que solo haya una fase de eliminación: el elemento se marca como apto para la eliminación permanente y un trabajo de temporizador lo activa dentro de 7 días. El tiempo exacto para que el elemento se elimine de forma permanente depende de la carga de trabajo. Para obtener más información, vea [Cómo funciona la retención para SharePoint y OneDrive](retention-policies-sharepoint.md#how-retention-works-for-sharepoint-and-onedrive) y [Cómo funciona la retención para Exchange](retention-policies-exchange.md#how-retention-works-for-exchange).
+    - Cuando se selecciona esta acción para la fase final de revisión de eliminación, o solo hay una fase de eliminación: el elemento se marca como apto para la eliminación permanente, lo que sucede en un plazo de 15 días.
 
 - **Volver a etiquetar**:
     - Cuando se selecciona esta acción, el elemento sale del proceso de revisión para eliminación de la etiqueta original. Después, el elemento está sujeto a la configuración de retención de la nueva etiqueta de retención seleccionada.

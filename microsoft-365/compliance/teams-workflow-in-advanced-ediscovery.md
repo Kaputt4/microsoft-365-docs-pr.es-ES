@@ -14,12 +14,12 @@ search.appverid:
 - MET150
 ms.collection: M365-security-compliance
 description: Obtenga información sobre cómo conservar, recopilar, revisar y exportar contenido de Microsoft Teams en eDiscovery (Premium).
-ms.openlocfilehash: ec3a1029c1a1b8de44a675d1856812aee0a77689
-ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
+ms.openlocfilehash: 2ac249426fad360d5f1dbb2ba2df14022c762e83
+ms.sourcegitcommit: b1ed6470645455c2f1fcf467450debc622c40147
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/06/2022
-ms.locfileid: "66629109"
+ms.lasthandoff: 09/15/2022
+ms.locfileid: "67710530"
 ---
 # <a name="ediscovery-premium-workflow-for-content-in-microsoft-teams"></a>Flujo de trabajo de eDiscovery (Premium) para contenido en Microsoft Teams
 
@@ -41,7 +41,11 @@ Hay seis categorías de contenido de Teams que puede recopilar y procesar median
 
 ## <a name="where-teams-content-is-stored"></a>Dónde se almacena el contenido de Teams
 
-Un requisito previo para administrar el contenido de Teams en eDiscovery (Premium) es comprender el tipo de contenido de Teams que puede recopilar, procesar y revisar en eDiscovery (Premium) y dónde se almacena ese contenido en Microsoft 365. En la tabla siguiente se muestra el tipo de contenido de Teams y dónde se almacena cada uno.
+Un requisito previo para administrar el contenido de Teams en eDiscovery (Premium) es comprender el tipo de contenido de Teams que puede recopilar, procesar y revisar en eDiscovery (Premium) y dónde se almacena ese contenido en Microsoft 365.
+
+Los datos de Teams se almacenan en Azure Cosmos DB. Los registros de cumplimiento de Teams capturados por el sustrato están en Exchange Online y están disponibles para ediscovery. 
+
+En la tabla siguiente se muestra el tipo de contenido de Teams y dónde se almacena cada uno con fines de queja. Los datos almacenados en Exchange Online están ocultos para los clientes. eDiscovery nunca funciona con los datos de mensajes reales de Teams, que permanecen en Azure Cosmos DB.
 
 |&nbsp;|Ubicación de mensajes y publicaciones de chat|Ubicación de archivos y datos adjuntos|
 |---|---|---|
@@ -267,7 +271,7 @@ En grandes conjuntos de revisiones con miles o millones de elementos, puede ser 
 
 En la tabla siguiente se describen las propiedades de metadatos del contenido de Teams.
 
-|Metadata (propiedad)|Description|
+|Metadata (propiedad)|Descripción|
 |---|---|
 |ContainsEditedMessage|Indica si un archivo de transcripción contiene un mensaje editado. Los mensajes editados se identifican al ver el archivo de transcripción.|
 |ConversationId|GUID que identifica la conversación a la que está asociado el elemento. Los archivos de transcripción y los datos adjuntos de la misma conversación tienen el mismo valor para esta propiedad.|

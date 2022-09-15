@@ -19,12 +19,12 @@ search.appverid:
 - BCS160
 - MET150
 description: 'Un conjunto de sugerencias sobre en qué centrar sus esfuerzos en el portal de Defender cuando se trata de operaciones diarias, semanales o mensuales. '
-ms.openlocfilehash: 2d7464741af66ba31764a1330e323c0fab08bf6b
-ms.sourcegitcommit: 651610ca73bfd1d008d97311b59782790df664fb
+ms.openlocfilehash: ab9d7eddd9f0150c8cfcb4596fc9f6772a9c37b0
+ms.sourcegitcommit: b1ed6470645455c2f1fcf467450debc622c40147
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/07/2022
-ms.locfileid: "67612821"
+ms.lasthandoff: 09/15/2022
+ms.locfileid: "67710991"
 ---
 # <a name="microsoft-365-business-premium-security-operations-guide"></a>Guía de operaciones de seguridad de Microsoft 365 Empresa Premium
 
@@ -224,7 +224,7 @@ Use el panel de análisis de amenazas para obtener información general sobre el
 
 Microsoft 365 Empresa Premium incluye varias acciones de corrección. Estas acciones incluyen acciones de contestación manual, acciones después de la investigación automatizada y acciones de respuesta inmediata.
 
-1. En el portal de Microsoft 365 Defender ([https://security.microsoft.com](https://security.microsoft.com)), en el panel de navegación, elija **Inventario de dispositivos**.
+1. En el portal de Microsoft 365 Defender ([https://security.microsoft.com](https://security.microsoft.com)), en el panel de navegación, vaya a **Dispositivos activos** > .
 
    :::image type="content" source="./../media/defender-business/mdb-deviceinventory.png" alt-text="Pantalla del inventario de dispositivos":::
 

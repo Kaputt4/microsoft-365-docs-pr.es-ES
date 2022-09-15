@@ -19,12 +19,12 @@ ms.collection:
 - m365-initiative-defender-endpoint
 ms.topic: article
 ms.subservice: mde
-ms.openlocfilehash: 39d6c455790d5f87adcd2b0791c5603e449de6d1
-ms.sourcegitcommit: 10e6abe740e27000e223378eb17d657a47555fa8
+ms.openlocfilehash: 6e0b53da9117577ec0d0cee98431e30d265f96dc
+ms.sourcegitcommit: b1ed6470645455c2f1fcf467450debc622c40147
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/31/2022
-ms.locfileid: "67680205"
+ms.lasthandoff: 09/15/2022
+ms.locfileid: "67711551"
 ---
 # <a name="onboard-windows-servers-to-the-microsoft-defender-for-endpoint-service"></a>Incorporación de servidores Windows al servicio Microsoft Defender para punto de conexión
 
@@ -115,6 +115,7 @@ Si previamente ha incorporado los servidores mediante MMA, siga las instruccione
 
 Los siguientes detalles se aplican al nuevo paquete de solución unificada para Windows Server 2012 R2 y 2016:
 
+- Una actualización del sistema operativo puede presentar un problema de instalación en máquinas con discos más lentos debido a un tiempo de espera con la instalación del servicio. Se produce un error en la instalación con el mensaje "No se encontró c:\archivos de programa\windows defender\mpasdesc.dll, - 310 WinDefend". Use el paquete de instalación más reciente, así como el script [ deinstall.ps1](https://github.com/microsoft/mdefordownlevelserver) más reciente para ayudar a borrar la instalación con errores si es necesario.
 - Asegúrese de que se cumplen los requisitos de conectividad especificados en [Habilitar el acceso a Microsoft Defender para punto de conexión direcciones URL del servicio en el servidor proxy](/microsoft-365/security/defender-endpoint/configure-proxy-internet?enable-access-to-microsoft-defender-for-endpoint-service-urls-in-the-proxy-server). Son equivalentes a esos requisitos para Windows Server 2019.
 - Hemos identificado un problema con la conectividad de Windows Server 2012 R2 a la nube cuando se usa TelemetryProxyServer estático **y** no se puede acceder a las direcciones URL de la lista de revocación de certificados (CRL) desde el contexto de la cuenta system. La mitigación inmediata consiste en usar una opción de proxy alternativa ("todo el sistema") que proporcione dicha conectividad o configurar el mismo proxy mediante la configuración de WinInet en el contexto de la cuenta SYSTEM.
 Como alternativa, use las instrucciones proporcionadas en [Solución alternativa para un problema conocido con TelemetryProxyServer en máquinas desconectadas](#workaround-for-a-known-issue-with-telemetryproxyserver-on-disconnected-machines) para instalar un certificado como solución alternativa.

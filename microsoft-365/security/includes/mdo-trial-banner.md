@@ -6,12 +6,13 @@ manager: dansimp
 ms.author: chrisda
 author: chrisda
 ms.prod: w10
-ms.openlocfilehash: 829ea09c3f7d1b7a4316e9ba19cf35cb12b3ca7b
-ms.sourcegitcommit: c4924bcad6648fae279076cafa505fae1194924a
+search.appverid: met150
+ms.openlocfilehash: 7a505da2ee019d9ca7471b54e7c2af2bafc8c02c
+ms.sourcegitcommit: 9b133379196da2b3a4bb311b07ff274f43780f68
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/21/2022
-ms.locfileid: "65647262"
+ms.lasthandoff: 09/14/2022
+ms.locfileid: "67708321"
 ---
 > [!TIP]
 > *¿Sabía que puede probar las características de Microsoft 365 Defender para Office 365 Plan 2 de forma gratuita?* Use la prueba de Defender para Office 365 de 90 días en el [centro de pruebas del portal de Microsoft 365 Defender](https://security.microsoft.com/trialHorizontalHub?sku=MDO&ref=DocsRef). Obtenga información sobre quién puede registrarse y los términos de prueba [aquí](../office-365-security/try-microsoft-defender-for-office-365.md).

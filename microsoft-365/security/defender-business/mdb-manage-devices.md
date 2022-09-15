@@ -10,19 +10,19 @@ ms.topic: how-to
 ms.service: microsoft-365-security
 ms.subservice: mdb
 ms.localizationpriority: medium
-ms.date: 08/11/2022
+ms.date: 09/14/2022
 ms.reviewer: shlomiakirav
 f1.keywords: NOCSH
 ms.collection:
 - SMB
 - M365-security-compliance
 - m365-initiative-defender-business
-ms.openlocfilehash: b45eae435abdc10d48aa88237b245a9287c57b35
-ms.sourcegitcommit: 2b89bcff547e00be3d38dc8d1e6cbcf8f41eba42
+ms.openlocfilehash: bb774fdc3b6fb2eac29c3fc09ec48cfc4841df7a
+ms.sourcegitcommit: b1ed6470645455c2f1fcf467450debc622c40147
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/03/2022
-ms.locfileid: "67596949"
+ms.lasthandoff: 09/15/2022
+ms.locfileid: "67710661"
 ---
 # <a name="manage-devices-in-microsoft-defender-for-business"></a>Administración de dispositivos en Microsoft Defender para Empresas
 
@@ -40,7 +40,7 @@ En Defender para empresas, puede administrar los dispositivos de la siguiente ma
 
 1. Vaya al portal de Microsoft 365 Defender ([https://security.microsoft.com](https://security.microsoft.com)) e inicie sesión.
 
-2. En el panel de navegación, elija **Inventario de dispositivos**.
+2. En el panel de navegación, vaya a **Dispositivos activos** > .
 
 3. Seleccione un dispositivo para abrir su panel flotante, donde puede obtener más información sobre su estado y tomar medidas. 
 
@@ -50,7 +50,7 @@ En Defender para empresas, puede administrar los dispositivos de la siguiente ma
 
 :::image type="content" source="../../media/defender-business/mdb-selected-device.png" alt-text="Captura de pantalla de un dispositivo seleccionado con detalles y acciones disponibles":::
 
-1. En el portal de Microsoft 365 Defender ([https://security.microsoft.com](https://security.microsoft.com)), en el panel de navegación, elija **Inventario de dispositivos**. 
+1. En el portal de Microsoft 365 Defender ([https://security.microsoft.com](https://security.microsoft.com)), en el panel de navegación, vaya a **Dispositivos activos** > . 
 
 2. Seleccione un dispositivo para abrir su panel flotante y revise la información que se muestra.
 

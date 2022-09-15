@@ -19,12 +19,12 @@ ms.collection:
 search.appverid:
 - MET150
 description: 'La prevención de pérdida de datos en punto de conexión amplía la supervisión de las actividades de archivo y las acciones de protección de esos archivos a los puntos de conexión. Los archivos se hacen visibles en las soluciones de cumplimiento '
-ms.openlocfilehash: adcfd8576d942581f2f4f0afae2e73e7dea2cf7e
-ms.sourcegitcommit: 651610ca73bfd1d008d97311b59782790df664fb
+ms.openlocfilehash: 862353d3b0f63cdaf6867ddbe1b9ff7e304096cc
+ms.sourcegitcommit: b1ed6470645455c2f1fcf467450debc622c40147
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/07/2022
-ms.locfileid: "67615218"
+ms.lasthandoff: 09/15/2022
+ms.locfileid: "67709209"
 ---
 # <a name="learn-about-endpoint-data-loss-prevention"></a>Obtener información sobre la Prevención de pérdida de datos en punto de conexión
 
@@ -77,7 +77,7 @@ DLP de punto de conexión admite la supervisión de estos tipos de archivo a tra
 - archivos .txt
 - archivos .rtf
 - archivos .c
-- archivos .class
+- Archivos .class (solo Windows)
 - archivos .cpp
 - archivos .cs
 - archivos .h
@@ -151,7 +151,7 @@ La incorporación y la retirada se controlan mediante scripts que se descargan d
 
  Use los procedimientos descritos en [Introducción a DLP en punto de conexión de Microsoft 365](endpoint-dlp-getting-started.md) para incorporar dispositivos.
 
-Si incorporó dispositivos a través de [Protección contra amenazas avanzada de Microsoft Defender](../security/defender-endpoint/configure-machines-onboarding.md), estos dispositivos se mostrarán automáticamente en la lista de dispositivos. Esto se debe a que la incorporación a Defender también incorpora dispositivos a DLP. Solo tiene que **activar la supervisión de dispositivos** para usar DLP de punto de conexión. .
+Si incorporó dispositivos a través de [Protección contra amenazas avanzada de Microsoft Defender](../security/defender-endpoint/configure-machines-onboarding.md), estos dispositivos se mostrarán automáticamente en la lista de dispositivos. Esto se debe a que la incorporación a Defender también incorpora dispositivos a DLP. Solo tiene que **activar la supervisión de dispositivos** para usar DLP de punto de conexión.
 
 > [!div class="mx-imgBorder"]
 > ![lista de dispositivos administrados.](../media/endpoint-dlp-learn-about-2-device-list.png)

@@ -10,26 +10,27 @@ ms.topic: overview
 ms.service: microsoft-365-business
 ms.subservice: business-premium
 ms.localizationpriority: high
+ms.date: 09/14/2022
 ms.reviewer: shlomiakirav
 f1.keywords: NOCSH
 ms.collection:
 - SMB
 - M365-security-compliance
-ms.openlocfilehash: 6ae58083c2bd0e239cda7dfe007ffbdca2711424
-ms.sourcegitcommit: 651610ca73bfd1d008d97311b59782790df664fb
+ms.openlocfilehash: 7956c330b2df483ae2459f2d4fc23a54e8387c4e
+ms.sourcegitcommit: b1ed6470645455c2f1fcf467450debc622c40147
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/07/2022
-ms.locfileid: "67613612"
+ms.lasthandoff: 09/15/2022
+ms.locfileid: "67710925"
 ---
 # <a name="view-and-edit-device-protection-policies"></a>Ver y editar directivas de protección de dispositivos
 
-En Microsoft 365 Empresa Premium, la configuración de seguridad de los dispositivos administrados se configura a través de las directivas de protección de dispositivos en el Centro de seguridad de Microsoft Defender o en el Centro de administración. Para simplificar la experiencia de configuración, hay una serie de directivas preconfiguradas que ayudan a proteger los dispositivos de la organización en cuanto se incorporan. Use las directivas predeterminadas, edite las directivas existentes o cree sus propias directivas.
+En Microsoft 365 Empresa Premium, la configuración de seguridad de los dispositivos administrados se configura mediante directivas de protección de dispositivos en el portal de Microsoft 365 Defender o en el Centro de administración de Microsoft Endpoint Manager. Para simplificar la experiencia de configuración, hay una serie de directivas preconfiguradas que ayudan a proteger los dispositivos de la organización en cuanto se incorporan. Use las directivas predeterminadas, edite las directivas existentes o cree sus propias directivas.
 
 **Esta guía indica cómo**:
 
 - Obtener información general de las directivas predeterminadas
-- Trabaje con las directivas del dispositivo en el Centro de seguridad de Defender, el Centro de administración e Intune.
+- Trabaje con directivas de dispositivo en el portal de Microsoft 365 Defender o en el Centro de administración de Microsoft Endpoint Manager (Intune).
 
 ## <a name="about-the-default-device-protection-policies"></a>Información sobre las directivas de protección del dispositivo predeterminadas
 
@@ -39,15 +40,15 @@ Microsoft 365 Empresa Premium incluye dos tipos principales de directivas para 
 
 - Las **directivas de firewall**, que determinan qué tipo tráfico de red puede fluir hacia y desde los dispositivos de la organización
 
-Estas directivas forman parte de Microsoft Defender para Empresas, que se incluye en la suscripción de Microsoft 365 Empresa Premium. Se proporciona información para trabajar con directivas en el Centro de seguridad de Microsoft Defender, así como para trabajar con directivas en el Centro de administración y en Intune.
+Estas directivas forman parte de Microsoft Defender para Empresas, que se incluye en la suscripción de Microsoft 365 Empresa Premium. Se proporciona información para trabajar con directivas en el portal de Microsoft 365 Defender o en el Centro de administración de Microsoft Endpoint Manager.
 
-## <a name="working-with-device-polices-in-the-microsoft-defender-security-center"></a>Trabajar con las directivas del dispositivo en el Centro de seguridad de Microsoft Defender
+## <a name="working-with-device-polices-in-the-microsoft-365-defender-portal"></a>Trabajar con directivas de dispositivo en el portal de Microsoft 365 Defender
 
 Los detalles siguientes se aplican al trabajo con las directivas en el Centro de seguridad.
 
 ### <a name="view-existing-device-protection-policies"></a>Ver las directivas de protección del dispositivo existentes
 
-Para ver las directivas de protección del dispositivo existentes en el Centro de seguridad:
+Para ver las directivas de protección de dispositivos existentes en el portal de Microsoft 365 Defender:
 
 1. Vaya al portal de Microsoft 365 Defender ([https://security.microsoft.com](https://security.microsoft.com)) e inicie sesión.
 
@@ -130,33 +131,7 @@ Para crear una nueva directiva de protección de dispositivos:
    - Si necesita realizar cambios, seleccione **Editar**.
    - Cuando esté listo para continuar, elija **Crear directiva**.
 
-## <a name="using-device-policies-in-the-admin-center"></a>Uso de las directivas del dispositivo en el Centro de administración
-
-La siguiente información describe cómo ver y administrar directivas en el Centro de administración de Microsoft 365 Empresa Premium.
-
-### <a name="working-with-device-policies"></a>Trabajar con las directivas del dispositivo
-
-Para trabajar con las directivas en el Centro de administración:
-
-1.  Vaya al Centro de administración en <a href="https://go.microsoft.com/fwlink/p/?linkid=837890" target="_blank">https://admin.microsoft.com</a>.
-
-1. En el panel de navegación izquierdo, elija **Dispositivos** \> **Directivas**.
-
-    En esta página, puede crear, editar, cambiar el grupo de destino o eliminar una directiva.
-
-    ![Recorte de pantalla de la página Directivas](../media/devicepolicies.png)
-  
-### <a name="view-and-manage-devices"></a>Ver y administrar dispositivos
-
-Para ver y administrar directivas:
-
-1. En el panel de navegación izquierdo, elija **Dispositivos** \> **Administrar**.
-
-    En esta página, puede seleccionar uno o varios dispositivos y quitar datos de la compañía. En el caso de los dispositivos con Windows 10 para los que tenga configuradas opciones de protección, también puede elegir restablecer la configuración de fábrica del dispositivo.
-  
-   ![Página Administrar dispositivos.](../media/devicesmanage.png)
-
-## <a name="working-with-device-policies-in-intune"></a>Trabajar con las directivas del dispositivo en Intune
+## <a name="working-with-device-policies-in-the-microsoft-endpoint-manager-admin-center"></a>Trabajar con directivas de dispositivo en el Centro de administración de Microsoft Endpoint Manager
 
 Use la siguiente información para crear y administrar las directivas del dispositivo en Intune a través de la seguridad de los puntos de conexión en el Centro de administración de Microsoft Endpoint Manager.
 

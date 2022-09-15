@@ -20,12 +20,12 @@ ms.custom: admindeeplinkCOMPLIANCE
 search.appverid:
 - MET150
 - MOE150
-ms.openlocfilehash: 8db03cbae752481166055a7b84a0dc248a1b3e84
-ms.sourcegitcommit: 221212fff9737e0ea386755deb8fed62ae9c254b
+ms.openlocfilehash: 1cf97b9d573ee5cdcd0c2c4ddcc5aba66a5f70bc
+ms.sourcegitcommit: b1ed6470645455c2f1fcf467450debc622c40147
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/14/2022
-ms.locfileid: "66787856"
+ms.lasthandoff: 09/15/2022
+ms.locfileid: "67710727"
 ---
 # <a name="investigate-and-remediate-communication-compliance-alerts"></a>Investigar y corregir las alertas de cumplimiento de las comunicaciones
 
@@ -104,7 +104,7 @@ Después de revisar los conceptos básicos del mensaje, es el momento de abrir u
 
 - **Datos adjuntos**: esta opción permite examinar los datos adjuntos modernos que coinciden con las condiciones de la directiva. El contenido de los datos adjuntos modernos se extrae como texto y se puede ver en el panel Alertas pendientes de una directiva. Para obtener más información, consulte la [referencia de características de cumplimiento de comunicaciones](/microsoft-365/compliance/communication-compliance-channels).
 - **Origen**: esta vista es la vista de mensajes estándar que se suele ver en la mayoría de las plataformas de mensajería basadas en web. La información del encabezado tiene el formato normal y el cuerpo del mensaje admite archivos gráficos inculcados y texto encapsulado por palabras. Si el [reconocimiento óptico de caracteres (OCR)](/microsoft-365/compliance/communication-compliance-policies#optical-character-recognition-ocr) está habilitado para la directiva, las imágenes que contienen texto impreso o manuscrito que coinciden con el condicional de la directiva se ven como un elemento secundario para el mensaje asociado en esta vista.
-- **Texto sin formato**: la vista Texto muestra una vista de solo texto numerada de línea del mensaje e incluye resaltado de palabras clave en mensajes y datos adjuntos para términos de tipo de información confidencial o palabras clave coincidentes en la directiva de cumplimiento de comunicaciones asociada. El resaltado de palabras clave puede ayudarle a examinar rápidamente los mensajes largos y los datos adjuntos del área de interés. En algunos casos, el texto resaltado puede estar solo en datos adjuntos para las condiciones de directiva de coincidencia de mensajes. El resaltado de palabras clave no se admite para los términos identificados por clasificadores integrados asignados a una directiva. No se muestran los archivos incrustados y la numeración de líneas de esta vista es útil para hacer referencia a los detalles pertinentes entre varios revisores.
+- **Texto sin formato**: vista de texto que muestra una vista de solo texto numerada de línea del mensaje e incluye resaltado de palabras clave en mensajes y datos adjuntos para términos de tipo de información confidencial, términos identificados por clasificadores integrados asignados a una directiva o para términos incluidos en un diccionario de palabras clave dedicado asignado a una directiva. El resaltado de palabras clave puede ayudarle a dirigirse al área de interés en mensajes largos y datos adjuntos. En algunos casos, el texto resaltado podría estar solo en datos adjuntos para las condiciones de directiva de coincidencia de mensajes. Los archivos incrustados no se muestran y la numeración de líneas en esta vista es útil para hacer referencia a los detalles pertinentes entre varios revisores.
 - **Conversación (versión preliminar):** disponible para los mensajes de chat de Microsoft Teams, esta vista muestra hasta cinco mensajes antes y después de un mensaje de alerta para ayudar a los revisores a ver la actividad en el contexto conversacional. Este contexto ayuda a los revisores a evaluar rápidamente los mensajes y tomar decisiones de resolución de mensajes más informadas. Se muestran adiciones de mensajes en tiempo real a las conversaciones, incluidas todas las imágenes insertadas, emojis y etiquetas engomadas disponibles en Teams. No se muestran los datos adjuntos de archivos de imagen o texto a los mensajes. Las notificaciones se muestran automáticamente para los mensajes que se han editado o para los mensajes que se han eliminado de la ventana de conversación. Cuando se resuelve un mensaje, los mensajes conversacionales asociados no se conservan con el mensaje resuelto. Los mensajes de conversación están disponibles hasta 60 días después de identificar el mensaje de alerta.
 - **Historial de usuario**: la vista Historial de usuario muestra todas las demás alertas generadas por cualquier directiva de cumplimiento de comunicaciones para que el usuario envíe el mensaje.
 - **Notificación detectada por patrón**: muchas acciones de acoso e intimidación a lo largo del tiempo e implican instancias recurrentes del mismo comportamiento por parte de un usuario. La notificación *patrón detectado* se muestra en los detalles de la alerta y llama la atención sobre la alerta. La detección de patrones se realiza por directiva y evalúa el comportamiento en los últimos 30 días cuando un remitente envía al menos dos mensajes al mismo destinatario. Los investigadores y revisores pueden usar esta notificación para identificar el comportamiento repetido para evaluar la alerta según corresponda.
@@ -209,11 +209,11 @@ Las plantillas de avisos son plantillas de correo electrónico personalizadas do
 
 |**Field**|**Required**| **Detalles** |
 |:-----|:-----|:-----|
-|**Nombre de la plantilla** | Sí | El nombre descriptivo de la plantilla de aviso que seleccionará en el flujo de trabajo de notificación durante la corrección, admite caracteres de texto. |
-| **Dirección del remitente** | Sí | Dirección de uno o varios usuarios o grupos que envían el mensaje al usuario con una coincidencia de directiva, seleccionada en Active Directory para la suscripción. |
+|**Nombre de la plantilla** | Yes | El nombre descriptivo de la plantilla de aviso que seleccionará en el flujo de trabajo de notificación durante la corrección, admite caracteres de texto. |
+| **Dirección del remitente** | Yes | Dirección de uno o varios usuarios o grupos que envían el mensaje al usuario con una coincidencia de directiva, seleccionada en Active Directory para la suscripción. |
 | **Direcciones CC y BCC** | No | Usuarios o grupos opcionales a los que se va a notificar la coincidencia de directiva, seleccionados en Active Directory para la suscripción. |
-| **Asunto** | Sí | La información que aparece en la línea de asunto del mensaje admite caracteres de texto. |
-| **Cuerpo del mensaje** | Sí | La información que aparece en el cuerpo del mensaje admite valores de texto o HTML. |
+| **Asunto** | Yes | La información que aparece en la línea de asunto del mensaje admite caracteres de texto. |
+| **Cuerpo del mensaje** | Yes | La información que aparece en el cuerpo del mensaje admite valores de texto o HTML. |
 
 ### <a name="html-for-notices"></a>HTML para avisos
 

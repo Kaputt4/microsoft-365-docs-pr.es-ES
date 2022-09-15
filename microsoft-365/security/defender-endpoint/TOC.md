@@ -269,7 +269,11 @@
 ##### [Personalizar el acceso controlado a carpetas](customize-controlled-folders.md)
 #### [Control de dispositivo]()
 ##### [Protección de almacenamiento extraíble](device-control-removable-storage-protection.md)
-##### [Control de acceso de almacenamiento extraíble](device-control-removable-storage-access-control.md)
+##### [Control de acceso de almacenamiento extraíble]()
+###### [Información general](device-control-removable-storage-access-control.md)
+###### [Implementación y administración mediante Intune](deploy-manage-removable-storage-intune.md)
+###### [Implementación y administración mediante la directiva de grupo](deploy-manage-removable-storage-group-policy.md)
+###### [Preguntas más frecuentes](device-control-removable-storage-access-control-faq.md)
 ##### [Instalación de dispositivo](mde-device-control-device-installation.md)
 ##### [Protección de la impresora de control de dispositivo](printer-protection.md)
 ##### [Informes de control de dispositivos](device-control-report.md)
@@ -525,8 +529,8 @@
 ####### [Exportar evaluación de vulnerabilidades de software](get-assessment-software-vulnerabilities.md)
 
 ###### [Extensiones del explorador]()
-####### [Exportación de la evaluación de extensiones de broswer](get-assessment-browser-extensions.md)
-####### [Obtener información de permisson de extenstions del explorador](get-browser-extensions-permission-info.md)
+####### [Exportación de la evaluación de extensiones del explorador](get-assessment-browser-extensions.md)
+####### [Obtener información de permisos de extensiones de explorador](get-browser-extensions-permission-info.md)
 
 ###### [Investigación automatizada]()
 ####### [Propiedades y métodos de investigación](investigation.md)

@@ -10,19 +10,19 @@ ms.topic: how-to
 ms.service: microsoft-365-security
 ms.subservice: mdb
 ms.localizationpriority: medium
-ms.date: 08/11/2022
+ms.date: 09/14/2022
 ms.reviewer: shlomiakirav
 f1.keywords: NOCSH
 ms.collection:
 - SMB
 - M365-security-compliance
 - m365-initiative-defender-business
-ms.openlocfilehash: ee0555ee8d08b66ad3121789520af662beeaa194
-ms.sourcegitcommit: 2b89bcff547e00be3d38dc8d1e6cbcf8f41eba42
+ms.openlocfilehash: f2a7f09807c4c17da30fab8fb3ca1eb2d6f4fa70
+ms.sourcegitcommit: b1ed6470645455c2f1fcf467450debc622c40147
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/03/2022
-ms.locfileid: "67598569"
+ms.lasthandoff: 09/15/2022
+ms.locfileid: "67710617"
 ---
 # <a name="respond-to-and-mitigate-threats-in-microsoft-defender-for-business"></a>Respuesta y mitigación de amenazas en Microsoft Defender para Empresas
 
@@ -37,11 +37,11 @@ El portal de Microsoft 365 Defender permite al equipo de seguridad responder y m
 
    :::image type="content" source="../../media/defender-business/mdb-examplecards.png" alt-text="Captura de pantalla de las tarjetas en el portal de Microsoft 365 Defender":::
 
-3. Seleccione un botón o vínculo en la tarjeta para ver más información y tomar medidas. Por ejemplo, nuestra tarjeta **Dispositivos en riesgo** incluye un botón **Ver detalles** . Al seleccionar ese botón, se nos lleva a la página **Inventario** de dispositivos, como se muestra en la siguiente imagen:
+3. Seleccione un botón o vínculo en la tarjeta para ver más información y tomar medidas. Por ejemplo, nuestra tarjeta **Dispositivos en riesgo** incluye un botón **Ver detalles** . Al seleccionar ese botón, se nos lleva a la lista **Dispositivos** , como se muestra en la siguiente imagen:
 
    :::image type="content" source="../../media/defender-business/mdb-deviceinventory.png" alt-text="Pantalla del inventario de dispositivos":::
 
-   En la página **Inventario de** dispositivos se enumeran los dispositivos de la empresa, junto con su nivel de riesgo y nivel de exposición.
+   En la página **Dispositivos** se enumeran los dispositivos de la empresa, junto con su nivel de riesgo y nivel de exposición.
 
 4. Seleccione un elemento, como un dispositivo. Se abre un panel flotante y muestra más información sobre las alertas e incidentes generados para ese elemento, como se muestra en la siguiente imagen:  
 

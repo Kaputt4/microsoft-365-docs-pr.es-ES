@@ -21,19 +21,19 @@ ms.collection:
 search.appverid:
 - MET150
 - MOE150
-ms.openlocfilehash: 42e7b179fe958b93e7ba3064cce55cb0add715ef
-ms.sourcegitcommit: 221212fff9737e0ea386755deb8fed62ae9c254b
+ms.openlocfilehash: 04047f078f887687db4cf9f10d49c620125fc4d6
+ms.sourcegitcommit: b1ed6470645455c2f1fcf467450debc622c40147
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/14/2022
-ms.locfileid: "66787174"
+ms.lasthandoff: 09/15/2022
+ms.locfileid: "67710508"
 ---
 # <a name="learn-about-communication-compliance"></a>Obtener más información sobre el cumplimiento de las comunicaciones
 
 > [!TIP]
 > *¿Sabía que puede probar las versiones premium de las nueve soluciones de Microsoft Purview de forma gratuita?* Utilice la prueba de 90 días de las soluciones Purview para explorar cómo las sólidas capacidades de Purview pueden ayudar a su organización a satisfacer sus necesidades de cumplimiento. Los clientes Microsoft 365 E3 y Office 365 E3 pueden empezar ahora en el [Centro de pruebas del portal de cumplimiento de Microsoft Purview](https://compliance.microsoft.com/trialHorizontalHub?sku=ComplianceE5&ref=DocsRef). Obtenga información sobre [las personas que pueden registrarse y los términos de la prueba](/microsoft-365/compliance/compliance-easy-trials).
 
-Cumplimiento de comunicaciones de Microsoft Purview es una solución de riesgo interno que ayuda a minimizar los riesgos de comunicación al ayudarle a detectar, capturar y actuar sobre mensajes inadecuados en su organización. Las directivas personalizadas y predefinidas le permiten examinar las comunicaciones internas y externas para ver las coincidencias de directivas y que los revisores designados puedan examinarlas. Los revisores pueden investigar el correo electrónico digitalizado, Microsoft Teams, Yammer o las comunicaciones de terceros de su organización y realizar las acciones adecuadas para asegurarse de que cumplen los estándares de mensajes de su organización.
+Cumplimiento de comunicaciones de Microsoft Purview es una solución de riesgo interno que ayuda a minimizar los riesgos de comunicación al ayudarle a detectar, capturar y actuar sobre mensajes inadecuados en su organización. Las directivas personalizadas y predefinidas le permiten examinar las comunicaciones internas y externas para ver las coincidencias de directivas y que los revisores designados puedan examinarlas. Los revisores pueden investigar los mensajes de correo electrónico analizados, Microsoft Teams, Yammer o las comunicaciones de terceros de su organización y tomar medidas apropiadas para asegurarse de que cumplen con los estándares de mensajería de su organización.
 
 Las directivas de Cumplimiento de comunicaciones en Microsoft 365 le ayudan a superar muchos desafíos modernos asociados con el cumplimiento y las comunicaciones internas y externas, entre los que se incluyen:
 
@@ -131,6 +131,10 @@ Las directivas de cumplimiento de comunicaciones examinan y capturan mensajes en
 
 Para más información sobre la compatibilidad con canales de mensajería en las directivas de cumplimiento de comunicaciones, consulte [Detección de señales de canal con cumplimiento de comunicaciones](/microsoft-365/compliance/communication-compliance-channels).
 
+## <a name="get-started-with-recommended-actions-preview"></a>Introducción a las acciones recomendadas (versión preliminar)
+
+Tanto si va a configurar el cumplimiento de las comunicaciones por primera vez como si está empezando a crear nuevas directivas, la nueva experiencia de [acciones recomendadas](/microsoft-365/compliance/communication-compliance-configure#recommended-actions-preview) puede ayudarle a sacar el máximo partido a las funcionalidades de cumplimiento de comunicaciones. Las acciones recomendadas incluyen la configuración de permisos, la creación de grupos de distribución, la creación de una directiva y mucho más
+
 ## <a name="workflow"></a>Flujo de trabajo
 
 El cumplimiento de las comunicaciones le ayuda a abordar los puntos críticos comunes asociados con el cumplimiento de las directivas internas y los requisitos de cumplimiento normativo. Con plantillas de directivas centradas y un flujo de trabajo flexible, puede usar información procesable para resolver rápidamente los problemas de cumplimiento detectados.
@@ -139,7 +143,7 @@ La identificación y resolución de problemas de cumplimiento con el cumplimient
 
 ![Flujo de trabajo de cumplimiento de comunicaciones.](../media/communication-compliance-workflow.png)
 
-### <a name="configure"></a>Configuración
+### <a name="configure"></a>Configurar
 
 En este paso de flujo de trabajo, identificará los requisitos de cumplimiento y configurará las directivas de cumplimiento de comunicaciones aplicables. Las plantillas de directiva son una excelente manera no solo de configurar rápidamente una nueva directiva de cumplimiento, sino también de modificar y actualizar directivas rápidamente a medida que cambian los requisitos. Por ejemplo, es posible que desee probar rápidamente una directiva de contenido inadecuado en las comunicaciones de un grupo pequeño de usuarios antes de configurar una directiva para todos los usuarios de su organización.
 
@@ -152,8 +156,8 @@ Puede elegir entre las siguientes plantillas de directiva del portal de cumplimi
 - **Supervisión de imágenes inapropiadas**: use esta plantilla para crear rápidamente una directiva que use clasificadores integrados para detectar automáticamente el contenido que contiene imágenes para adultos y desiguales que pueden considerarse inapropiadas en su organización.
 - **Supervisión de información confidencial**: use esta plantilla para crear rápidamente una directiva para examinar las comunicaciones que contienen tipos de información confidencial definidos o palabras clave para asegurarse de que los datos importantes no se comparten con personas que no deben tener acceso.
 - **Supervisión del cumplimiento normativo financiero**: use esta plantilla para crear rápidamente una directiva para examinar las comunicaciones en busca de referencias a términos financieros estándar asociados a estándares normativos.
-- **Supervisión de conflictos de interés**: use esta plantilla para crear rápidamente una directiva para detectar comunicaciones entre dos grupos o dos usuarios a fin de evitar conflictos de interés.
-- **Directiva personalizada**: use esta plantilla para configurar canales de comunicación específicos, condiciones de detección individuales y la cantidad de contenido que se va a detectar y revisar en su organización.
+- **Supervisión de conflictos de interés**: use esta plantilla para crear rápidamente una directiva para detectar comunicaciones entre dos grupos o dos usuarios con el fin de ayudar a evitar conflictos de interés.
+- **Directiva personalizada**: use esta plantilla para configurar canales de comunicación específicos, condiciones de detección individuales y la cantidad de contenido que se va a detectar y revisar en la organización.
 - **Directiva de mensajes notificados por el usuario**: esta directiva del sistema admite mensajes notificados por el usuario de mensajes de canal, grupo y chat privado. Habilitado de forma predeterminada en el Centro de administración de Teams.
 
 >[!TIP]
@@ -163,7 +167,7 @@ Puede elegir entre las siguientes plantillas de directiva del portal de cumplimi
 
 En este paso, se profundiza en los problemas detectados como coincidencias con las directivas de cumplimiento de la comunicación. Este paso incluye las siguientes acciones disponibles en el portal de cumplimiento Microsoft Purview:
 
-- **Alertas**: cuando un mensaje coincide con una directiva, se genera una alerta automáticamente. Para cada alerta, puede ver el estado, la gravedad, el tiempo detectado y si se asigna un caso de exhibición de documentos electrónicos (Premium) y su estado. Las alertas se muestran según la gravedad y aparecen en la página principal de cumplimiento de comunicaciones y en la página **Alertas**.
+- **Alertas**: cuando un mensaje coincide con una directiva, se genera una alerta automáticamente. Para cada alerta, puede ver el estado, la gravedad, la hora detectada y si se asigna un caso eDiscovery (Premium), así como su estado. Las alertas se muestran según la gravedad y aparecen en la página principal de cumplimiento de comunicaciones y en la página **Alertas**.
 - **Administración de problemas**: para cada alerta, puede tomar medidas de investigación para ayudar a corregir el problema detectado en el mensaje.
 - **Revisión del documento**: durante la investigación de un problema, puede usar varios tipos de vistas para ayudar a evaluar correctamente el problema detectado. Las vistas incluyen un resumen de conversación, solo texto y vistas detalladas de la conversación de comunicación.
 - **Revisión del historial de actividades del usuario**: vea el historial de actividades de mensajes de usuario y las acciones de corrección para ver si hay coincidencias de directivas, como notificaciones anteriores y escalaciones.

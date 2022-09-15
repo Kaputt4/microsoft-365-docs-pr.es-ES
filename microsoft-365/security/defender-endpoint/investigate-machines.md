@@ -15,12 +15,12 @@ ms.collection: m365-security-compliance
 ms.topic: article
 ms.subservice: mde
 search.appverid: met150
-ms.openlocfilehash: ad6cf3d61efec199d9a30ba67e06829b6f1feccb
-ms.sourcegitcommit: 9b133379196da2b3a4bb311b07ff274f43780f68
+ms.openlocfilehash: 6b8529338522df41c25dafb30d25b879a5790861
+ms.sourcegitcommit: b1ed6470645455c2f1fcf467450debc622c40147
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/14/2022
-ms.locfileid: "67688129"
+ms.lasthandoff: 09/15/2022
+ms.locfileid: "67709466"
 ---
 # <a name="investigate-devices-in-the-microsoft-defender-for-endpoint-devices-list"></a>Investigación de dispositivos en la lista de dispositivos Microsoft Defender para punto de conexión
 
@@ -200,7 +200,6 @@ La tarjeta **Evaluaciones de seguridad** muestra el nivel de exposición general
 
 :::image type="content" source="images/security-assessments.png" alt-text="La tarjeta de evaluaciones de seguridad" lightbox="images/security-assessments.png":::
 
-
 ### <a name="device-health-status"></a>Estado de mantenimiento del dispositivo
 
 La tarjeta **estado de mantenimiento** del dispositivo muestra un informe de estado resumido para el dispositivo específico. Uno de los siguientes mensajes se muestra en la parte superior de la tarjeta para indicar el estado general del dispositivo (en orden de mayor a menor prioridad):
@@ -223,14 +222,12 @@ Otra información de la tarjeta incluye: el último examen completo, el último 
 
 Tenga en cuenta que un círculo gris indica que los datos son desconocidos. 
 
->[!NOTE]
->El mensaje de estado general para dispositivos macOS y Linux aparece actualmente como "Estado no disponible para macOS & Linux". Actualmente, el resumen de estado solo está disponible para dispositivos Windows. Toda la otra información de la tabla está actualizada para mostrar los estados individuales de cada señal de estado de dispositivo para todas las plataformas admitidas. 
+> [!NOTE]
+> El mensaje de estado general para dispositivos macOS y Linux aparece actualmente como "Estado no disponible para macOS & Linux". Actualmente, el resumen de estado solo está disponible para dispositivos Windows. Toda la otra información de la tabla está actualizada para mostrar los estados individuales de cada señal de estado de dispositivo para todas las plataformas admitidas. 
 
 Para obtener una vista detallada del informe de estado del dispositivo, puede ir a **Informes > estado de dispositivos**. Para obtener más información, consulte [Informe de cumplimiento y estado del dispositivo en Microsoft Defender para punto de conexión](/microsoft-365/security/defender-endpoint/machine-reports). 
 
 :::image type="content" source="images/device-health-status.png"  alt-text="Tarjeta de estado de mantenimiento del dispositivo" lightbox="images/device-health-status.png":::
-
-
 
 ## <a name="related-topics"></a>Temas relacionados
 

@@ -10,7 +10,7 @@ ms.topic: conceptual
 ms.service: microsoft-365-business
 ms.subservice: business-premium
 ms.localizationpriority: high
-ms.date: 08/24/2022
+ms.date: 09/14/2022
 ms.collection:
 - M365-Campaigns
 - m365solution-smb
@@ -21,12 +21,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Más información sobre cómo Microsoft 365 Empresa Premium ayuda a su negocio con productividad y seguridad de manera más segura.
-ms.openlocfilehash: d448051cbe6769b72d8178a3f712ccb0cb42c81e
-ms.sourcegitcommit: 651610ca73bfd1d008d97311b59782790df664fb
+ms.openlocfilehash: 7f95b7b1341d2752d6a6ba84d5608914e37feb14
+ms.sourcegitcommit: b1ed6470645455c2f1fcf467450debc622c40147
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/07/2022
-ms.locfileid: "67611988"
+ms.lasthandoff: 09/15/2022
+ms.locfileid: "67711376"
 ---
 # <a name="productivity-and-security-for-small-and-medium-sized-businesses"></a>Productividad y seguridad para pequeñas y medianas empresas 
 
@@ -37,13 +37,7 @@ Microsoft 365 Empresa Premium es una solución completa de seguridad y productiv
 - **Defenderse de ciberamenazas sofisticadas y proteger sus datos empresariales** con protección avanzada contra phishing, ransomware y pérdida de datos.
 - **Administre y proteja los dispositivos** (Windows, Mac, iOS y Android) que se conectan a los datos y ayudan a mantener esos dispositivos actualizados.
 
-Microsoft 365 Empresa Premium le ofrece una solución completa para la productividad y la seguridad. Como administrador o profesional de TI, tiene todo lo que necesita en un solo lugar para encargarse de la administración, la facturación y el soporte técnico ininterrumpido, a la vez que reduce los costes y simplifica su negocio. En este artículo se incluyen las siguientes secciones:
-
-- [Vídeo: Cinco principales ventajas de Microsoft 365 Empresa Premium](#video-top-5-benefits-of-microsoft-365-business-premium)
-- [Funcionalidades de productividad y seguridad avanzadas](#productivity-and-security) que le permiten llevar su negocio de forma más segura, en todos los dispositivos y desde casi cualquier lugar
-- [Recursos para entrenar a su equipo y a todo el personal](#resources-to-train-your-users) sobre cómo trabajar de forma productiva al tiempo que se mantiene un entorno más seguro
-- Una [guía de amenazas digitales descargables](#download-the-digital-threats-guide) que describe diferentes tipos de amenazas y cómo protegerse contra ellas en su trabajo diario
-- [Pasos siguientes](#next-steps)
+Microsoft 365 Empresa Premium le ofrece una solución completa para la productividad y la seguridad. Como administrador o profesional de TI, tiene todo lo que necesita en un solo lugar para encargarse de la administración, la facturación y el soporte técnico ininterrumpido, a la vez que reduce los costes y simplifica su negocio. 
 
 ## <a name="video-top-5-benefits-of-microsoft-365-business-premium"></a>Vídeo: Cinco principales ventajas de Microsoft 365 Empresa Premium
 
@@ -52,26 +46,11 @@ Vea el siguiente vídeo para ver cómo Microsoft 365 Empresa Premium ayuda a su 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4Pq0G]
 
 > [!TIP]
-> Para más información, consulte [Microsoft 365 Empresa Premium](https://www.microsoft.com/microsoft-365/business/microsoft-365-business-premium?activetab=pivot:overviewtab).
-
-## <a name="productivity-and-security"></a>Productividad y seguridad
-
-Microsoft 365 Empresa Premium incluye sus aplicaciones de productividad de Office favoritas, herramientas de colaboración como Microsoft Teams y soluciones de seguridad, identidad y administración de dispositivos de nivel empresarial. Con Microsoft 365 Empresa Premium, puede llevar su negocio de forma más segura, en todos los dispositivos y desde prácticamente cualquier lugar. Microsoft 365 Empresa Premium incluye:
-
-- **Windows 10 y 11 Pro** para los dispositivos Windows de su empresa
-- **Office aplicaciones**, como Word, Excel y PowerPoint, que se pueden instalar en sus equipos (Windows y Mac) y en sus dispositivos móviles (Windows, iOS y Android). También obtiene Publisher y Acceso para sus dispositivos Windows.
-- **Microsoft Teams, Outlook y Exchange** para correo electrónico, calendarios, reuniones y colaboración
-- **SharePoint y OneDrive** para almacenar y administrar los archivos empresariales
-- **Protección sofisticada contra amenazas** como phishing, malware y protección contra ransomware
-- **Características de cumplimiento y privacidad** para proteger y controlar el acceso a su información confidencial y a la de sus clientes
-- **Funcionalidades de administración de dispositivos** que permiten que su equipo de seguridad mantengan los equipos, tabletas y teléfonos actualizados y seguros
-
-> [!TIP]
 > Para obtener información más detallada sobre lo que se incluye en Microsoft 365 Empresa Premium, consulte los [conjuntos de suscripciones de usuario de Microsoft 365 para pequeñas y medianas empresas ](https://query.prod.cms.rt.microsoft.com/cms/api/am/binary/RWR6bM).
 
 ## <a name="resources-to-train-your-users"></a>Recursos para entrenar a los usuarios
 
-Las recomendaciones de seguridad proporcionadas en estas misiones hacen que sea mucho más difícil para los ciberatacantes obtener acceso a su entorno. Sin embargo, una parte importante de la estrategia de seguridad incluye formación para los miembros de la organización&mdash;las personas de su empresa que usan los sistemas con regularidad. Los usuarios pueden ser la primera línea de defensa. Todo el mundo debe saber cómo trabajar de forma productiva mientras se mantiene un entorno más seguro.
+Las recomendaciones de seguridad proporcionadas en [esta guía](index.md) dificultan mucho más el acceso de los ciberattackers a su entorno. Sin embargo, una parte importante de la estrategia de seguridad incluye la formación de todos los miembros de la organización&mdash;a las personas de la empresa que usan los sistemas con regularidad. Los usuarios pueden ser su primera línea de defensa. Todo el mundo debe saber cómo trabajar de forma productiva mientras se mantiene un entorno más seguro.
 
 Los recursos están disponibles para ayudar a todos los usuarios de su organización a:
 
