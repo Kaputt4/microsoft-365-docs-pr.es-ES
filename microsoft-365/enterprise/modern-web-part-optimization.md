@@ -6,7 +6,7 @@ manager: scotv
 ms.date: 03/11/2020
 audience: Admin
 ms.topic: conceptual
-ms.service: o365-administration
+ms.service: microsoft-365-enterprise
 ms.localizationpriority: medium
 ms.collection:
 - Ent_O365
@@ -20,13 +20,13 @@ ms.custom:
 ms.reviewer: sstewart
 search.appverid:
 - MET150
-description: Obtenga información sobre cómo usar diagnósticos de página para optimizar el rendimiento de los elementos web en SharePoint páginas de sitio modernos en línea.
-ms.openlocfilehash: 543ee889831d08b2b465c077cc391a653fa0b9a9
-ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
+description: Obtenga información sobre cómo usar diagnósticos de página para optimizar el rendimiento de los elementos web en las páginas de sitio modernos de SharePoint Online.
+ms.openlocfilehash: 83cea5056e25d1743d22cc90fea0bedb16427ca9
+ms.sourcegitcommit: 9b133379196da2b3a4bb311b07ff274f43780f68
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "65093358"
+ms.lasthandoff: 09/14/2022
+ms.locfileid: "67700870"
 ---
 # <a name="optimize-web-part-performance-in-sharepoint-online-modern-site-pages"></a>Optimizar el rendimiento de elementos web en páginas del sitio modernas de SharePoint Online
 

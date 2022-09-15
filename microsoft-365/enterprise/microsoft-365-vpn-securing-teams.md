@@ -6,7 +6,7 @@ manager: scotv
 ms.date: 3/3/2022
 audience: Admin
 ms.topic: conceptual
-ms.service: o365-administration
+ms.service: microsoft-365-enterprise
 ms.localizationpriority: medium
 search.appverid:
 - MET150
@@ -17,41 +17,41 @@ ms.collection:
 f1.keywords:
 - NOCSH
 description: Protección del tráfico multimedia Teams para la tunelización dividida VPN
-ms.openlocfilehash: 715d5e02ef01db9ef1c75a063ef5a2771d425f5c
-ms.sourcegitcommit: 1c5f9d17a8b095cd88b23f4874539adc3ae021de
+ms.openlocfilehash: eb06696b35df6ddb923c6b1e9ae97abf01dccabe
+ms.sourcegitcommit: 9b133379196da2b3a4bb311b07ff274f43780f68
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/08/2022
-ms.locfileid: "64715393"
+ms.lasthandoff: 09/14/2022
+ms.locfileid: "67701156"
 ---
 # <a name="securing-teams-media-traffic-for-vpn-split-tunneling"></a>Protección del tráfico multimedia Teams para la tunelización dividida VPN
 
 >[!NOTE]
->Este artículo forma parte de un conjunto de artículos que abordan Microsoft 365 optimización para usuarios remotos.
+>Este artículo forma parte de un conjunto de artículos que abordan la optimización de Microsoft 365 para usuarios remotos.
 
->- Para obtener información general sobre el uso de la tunelización dividida de VPN para optimizar la conectividad Microsoft 365 para los usuarios remotos, consulte [Información general: Túnel dividido de VPN para Microsoft 365](microsoft-365-vpn-split-tunnel.md).
+>- Para obtener información general sobre el uso de la tunelización dividida de VPN para optimizar la conectividad de Microsoft 365 para usuarios remotos, consulte [Información general: Túnel dividido de VPN para Microsoft 365](microsoft-365-vpn-split-tunnel.md).
 >- Para obtener instrucciones detalladas sobre la implementación de la tunelización dividida de VPN, consulte [Implementación de la tunelización dividida de VPN para Microsoft 365](microsoft-365-vpn-implement-split-tunnel.md).
->- Para obtener una lista detallada de los escenarios de tunelización dividida de VPN, consulte [Escenarios comunes de tunelización dividida de VPN para Microsoft 365](microsoft-365-vpn-common-scenarios.md).
+>- Para obtener una lista detallada de escenarios de tunelización dividida de VPN, consulte [Escenarios comunes de tunelización dividida de VPN para Microsoft 365](microsoft-365-vpn-common-scenarios.md).
 >- Para obtener información sobre cómo configurar stream y eventos en directo en entornos VPN, consulte [Consideraciones especiales para stream y eventos en directo en entornos VPN](microsoft-365-vpn-stream-and-live-events.md).
->- Para obtener información sobre cómo optimizar Microsoft 365 rendimiento de inquilinos en todo el mundo para los usuarios de China, consulte [optimización del rendimiento de Microsoft 365 para los usuarios de China](microsoft-365-networking-china.md).
+>- Para obtener información sobre cómo optimizar el rendimiento de los inquilinos de Microsoft 365 en todo el mundo para los usuarios de China, consulte [Optimización del rendimiento de Microsoft 365 para los usuarios de China](microsoft-365-networking-china.md).
 
 Algunos administradores de Microsoft Teams pueden requerir información detallada sobre cómo funcionan los flujos de llamadas en Teams mediante un modelo de tunelización dividida y cómo se protegen las conexiones.
 
 ## <a name="configuration"></a>Configuración
 
-En el caso de las llamadas y reuniones, siempre y cuando las subredes IP de Optimización necesarias para Teams medios estén correctamente implementadas en la tabla de rutas, cuando Teams llama a la función [GetBestRoute](/windows/win32/api/iphlpapi/nf-iphlpapi-getbestroute) para determinar qué interfaz local corresponde a la ruta que debe usar para un destino determinado, la interfaz local se devolverá para los destinos de Microsoft en los bloques IP de Microsoft enumerados anteriormente.
+En el caso de las llamadas y reuniones, siempre y cuando las subredes IP necesarias para los medios de Teams estén correctamente implementadas en la tabla de rutas, cuando Teams llame a la función [GetBestRoute](/windows/win32/api/iphlpapi/nf-iphlpapi-getbestroute) para determinar qué interfaz local corresponde a la ruta que debe usar para un destino determinado, se devolverá la interfaz local para los destinos de Microsoft en los bloques IP de Microsoft enumerados anteriormente.
 
 Algunos programas de cliente de VPN permiten la manipulación del enrutamiento en función de la dirección URL. Pero el tráfico multimedia de Teams no tiene una dirección URL asociada, por lo que el control del enrutamiento para este tráfico tiene que realizarse mediante subredes IP.
 
 En determinadas situaciones, a menudo no relacionadas con la configuración del cliente de Teams, el tráfico multimedia atraviesa igualmente el túnel de VPN aunque se hayan dispuesto las rutas correctas. Si encuentra este escenario, debe bastar con usar una regla de firewall para impedir que las subredes o puertos IP de Teams usen la VPN.
 
 >[!IMPORTANT]
->Para asegurarse de que Teams tráfico multimedia se enruta a través del método deseado en todos los escenarios de VPN, asegúrese de que los usuarios ejecutan Microsoft Teams versión **de cliente 1.3.00.13565** o posterior. Esta versión incluye mejoras en la forma en que el cliente detecta las rutas de acceso de red disponibles.
+>Para asegurarse de que el tráfico multimedia de Teams se enruta a través del método deseado en todos los escenarios de VPN, asegúrese de que los usuarios ejecutan la versión de cliente de Microsoft Teams **1.3.00.13565** o posterior. Esta versión incluye mejoras en la forma en que el cliente detecta las rutas de acceso de red disponibles.
 
 El tráfico de señalización se realiza a través de HTTPS y no es tan sensible a la latencia como el tráfico multimedia y se marca como **Permitir** en los datos de DIRECCIÓN URL/IP y, por tanto, se puede enrutar de forma segura a través del cliente VPN si lo desea.
 
 >[!NOTE]
->Microsoft Edge **96 y versiones posteriores** también admite la tunelización dividida de VPN para el tráfico punto a punto. Esto significa que los clientes pueden beneficiarse de la tunelización dividida de VPN para Teams clientes web en Edge, por ejemplo. Los clientes que quieran configurarlo para sitios web que se ejecutan en Edge pueden lograrlo si toman el paso adicional de deshabilitar la directiva [Edge WebRtcRespectOsRoutingTableEnabled](/deployedge/microsoft-edge-policies#webrtcrespectosroutingtableenabled) .
+>Microsoft Edge **96 y versiones posteriores** también admiten la tunelización dividida de VPN para el tráfico punto a punto. Esto significa que los clientes pueden beneficiarse de la tunelización dividida de VPN para clientes web de Teams en Edge, por ejemplo. Los clientes que quieran configurarlo para sitios web que se ejecutan en Edge pueden lograrlo si toman el paso adicional de deshabilitar la directiva [Edge WebRtcRespectOsRoutingTableEnabled](/deployedge/microsoft-edge-policies#webrtcrespectosroutingtableenabled) .
 
 ### <a name="security"></a>Seguridad
 
@@ -63,7 +63,7 @@ El tráfico multimedia se cifra con SRTP, que usa una clave de sesión generada 
 
 Skype Empresarial Online genera nombres de usuario o contraseñas para proteger el acceso a relés multimedia mediante _retransmisiones de uso de recorrido por NAT (TURN)_. Los relés multimedia intercambian el nombre de usuario/contraseña a través de un canal SIP protegido con TLS. Vale la pena señalar que, aunque se pueda usar un túnel VPN para conectar el cliente a la red corporativa, el tráfico todavía debe fluir en su forma SRTP cuando sale de la red corporativa para llegar al servicio.
 
-La información sobre cómo Teams mitiga los problemas comunes de seguridad, como las utilidades de voz o de recorrido de sesión para ataques de amplificación _NAT (STUN),_ puede encontrarse en [Consideraciones de seguridad 5.1 para los implementadores](/openspecs/office_protocols/ms-ice2/69525351-8c68-4864-b8a6-04bfbc87785c).
+Puede encontrar información sobre cómo Teams mitiga problemas comunes de seguridad, como las utilidades de voz o de recorrido de sesión para ataques de amplificación _NAT (STUN),_ en [Consideraciones de seguridad 5.1 para los implementadores](/openspecs/office_protocols/ms-ice2/69525351-8c68-4864-b8a6-04bfbc87785c).
 
 También podrá obtener más información acerca de los controles de seguridad modernos en los escenarios de trabajo remoto en [Formas alternativas para que los profesionales de seguridad y de TI logren controles de seguridad modernos en los escenarios de trabajo remoto de hoy día (blog del Equipo de seguridad de Microsoft)](https://www.microsoft.com/security/blog/2020/03/26/alternative-security-professionals-it-achieve-modern-security-controls-todays-unique-remote-work-scenarios/).
 
@@ -85,7 +85,7 @@ Una vez implementada la directiva, debe confirmar que funciona según lo esperad
 
 ## <a name="additional-support-logs"></a>Registros de soporte adicional
 
-Si necesita más datos para solucionar problemas o bien asistencia del soporte técnico de Microsoft, la obtención de la siguiente información le permite acelerar la búsqueda de una solución. El conjunto de herramientas **TSS Windows script universal de TroubleShooting basado en CMD** del soporte técnico de Microsoft puede ayudarle a recopilar los registros pertinentes de forma sencilla. La herramienta y las instrucciones de uso se pueden encontrar en <https://aka.ms/TssTools>.
+Si necesita más datos para solucionar problemas o bien asistencia del soporte técnico de Microsoft, la obtención de la siguiente información le permite acelerar la búsqueda de una solución. El conjunto de herramientas **TSS Windows CMD universal de Microsoft TroubleShooting Script** puede ayudarle a recopilar los registros pertinentes de forma sencilla. La herramienta y las instrucciones de uso se pueden encontrar en <https://aka.ms/TssTools>.
 
 ## <a name="related-articles"></a>Artículos relacionados
 
@@ -97,13 +97,13 @@ Si necesita más datos para solucionar problemas o bien asistencia del soporte t
 
 [Consideraciones especiales para stream y eventos en directo en entornos VPN](microsoft-365-vpn-stream-and-live-events.md)
 
-[optimización del rendimiento de Microsoft 365 para los usuarios de China](microsoft-365-networking-china.md)
+[Optimización del rendimiento de Microsoft 365 para usuarios de China](microsoft-365-networking-china.md)
 
 [Principios de conectividad de red de Microsoft 365](microsoft-365-network-connectivity-principles.md)
 
 [Evaluar la conectividad de red de Microsoft 365](assessing-network-connectivity.md)
 
-[Microsoft 365 ajuste de red y rendimiento](network-planning-and-performance.md)
+[Optimización de rendimiento y red de Microsoft 365](network-planning-and-performance.md)
 
 [Formas alternativas para que los profesionales de seguridad y de TI logren controles de seguridad modernos en los escenarios de trabajo remoto específicos (blog del Equipo de Seguridad de Microsoft)](https://www.microsoft.com/security/blog/2020/03/26/alternative-security-professionals-it-achieve-modern-security-controls-todays-unique-remote-work-scenarios/)
 

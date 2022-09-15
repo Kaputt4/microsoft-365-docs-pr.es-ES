@@ -15,12 +15,13 @@ ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
 ms.custom: api
-ms.openlocfilehash: 7bda1310178759def39b6ba9baedb25de875fb11
-ms.sourcegitcommit: e4882e3c66166ea7b834ad2e8fafeab42293e07d
+search.appverid: met150
+ms.openlocfilehash: 8c7579eef9c3e688e16c66bcb1a6031715b6a6a9
+ms.sourcegitcommit: 9b133379196da2b3a4bb311b07ff274f43780f68
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/30/2022
-ms.locfileid: "67099159"
+ms.lasthandoff: 09/14/2022
+ms.locfileid: "67698295"
 ---
 # <a name="batch-update-alerts"></a>Alertas de actualización por lotes
 
@@ -57,7 +58,7 @@ Se requiere uno de los permisos siguientes para llamar a esta API. Para más inf
 
 Tipo de permiso | Permiso | Nombre para mostrar del permiso
 :---|:---|:---
-Aplicación | Alert.ReadWrite.All | "Leer y escribir todas las alertas"
+Application | Alert.ReadWrite.All | "Leer y escribir todas las alertas"
 Delegado (cuenta profesional o educativa) | Alert.ReadWrite | "Alertas de lectura y escritura"
 
 > [!NOTE]
@@ -76,7 +77,7 @@ POST /api/alerts/batchUpdate
 
 Nombre|Tipo|Descripción
 :---|:---|:---
-Authorization | String | Portador {token}. **Necesario**.
+Authorization | Cadena | Portador {token}. **Necesario**.
 Content-Type | Cadena | application/json. **Necesario**.
 
 ## <a name="request-body"></a>Cuerpo de solicitud
@@ -90,10 +91,10 @@ Para obtener el mejor rendimiento no debe incluir valores existentes que no haya
 Propiedad | Tipo | Descripción
 :---|:---|:---
 alertIds | Cadena de lista&lt;&gt;| Una lista de los identificadores de las alertas que se van a actualizar. **Required**
-status | String | Especifica el estado actualizado de las alertas especificadas. Los valores de propiedad son: "New", "InProgress" y "Resolved".
+status | Cadena | Especifica el estado actualizado de las alertas especificadas. Los valores de propiedad son: "New", "InProgress" y "Resolved".
 assignedTo | Cadena | Propietario de las alertas especificadas
 classification | String | Especifica la especificación de las alertas especificadas. Los valores de propiedad son: "True positive", "Informational, expected activity" y "False positive".
-determinación | Cadena | Especifica la determinación de las alertas especificadas. Los valores de propiedad son: 'NotAvailable', 'Apt', 'Malware', 'SecurityPersonnel', 'SecurityTesting', 'UnwantedSoftware', 'Other'
+Determinación | Cadena | Especifica la determinación de las alertas especificadas. Los valores de propiedad son: 'NotAvailable', 'Apt', 'Malware', 'SecurityPersonnel', 'SecurityTesting', 'UnwantedSoftware', 'Other'
 comment | String | Comentario que se va a agregar a las alertas especificadas.
 
 >[!NOTE]

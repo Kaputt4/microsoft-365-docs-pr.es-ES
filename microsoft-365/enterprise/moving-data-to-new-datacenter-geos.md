@@ -6,7 +6,7 @@ manager: scotv
 ms.date: 06/02/2022
 audience: ITPro
 ms.topic: article
-ms.service: o365-administration
+ms.service: microsoft-365-enterprise
 ms.localizationpriority: medium
 search.appverid:
 - MET150
@@ -15,12 +15,12 @@ f1.keywords:
 - NOCSH
 description: Obtenga información sobre las nuevas Office 365 geos del centro de datos y cómo usar la opción de residencia de datos para solicitar el traslado de los datos principales a una nueva ubicación geográfica.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: f93ba661f723a3f26473a8a08b81d408fd1b99d0
-ms.sourcegitcommit: 6e570b79944862c86735db455349b685d5b903b6
+ms.openlocfilehash: 7d17c0906d26b8b5ff0d1758255cb9f74ab94c82
+ms.sourcegitcommit: 9b133379196da2b3a4bb311b07ff274f43780f68
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/26/2022
-ms.locfileid: "67020393"
+ms.lasthandoff: 09/14/2022
+ms.locfileid: "67702256"
 ---
 # <a name="moving-core-data-to-new-microsoft-365-datacenter-geos"></a>Traslado de datos principales a nuevas geoáreas del centro de datos de Microsoft 365
 
@@ -40,7 +40,7 @@ Los clientes existentes que tienen sus datos principales de cliente almacenados 
 |**Japón**| Asia/Pacífico | Japón | Diciembre de 2014 |
 |**Australia, Nueva Zelanda, Fiji**| Asia/Pacífico | Australia | Marzo de 2015 |
 |**India**| Asia/Pacífico | India | Octubre de 2015 |
-|**Canadá**| Estados Unidos | Canadá | Mayo de 2016 |
+|**Canadá**| Estados Unidos | Canada | Mayo de 2016 |
 |**Reino Unido**| Unión Europea | Reino Unido | Septiembre de 2016 |
 |**Corea del Sur**| Asia/Pacífico | Corea del Sur | Abril de 2017 |
 |**Francia**| Unión Europea | Francia | Marzo de 2018 |
@@ -51,7 +51,7 @@ Los clientes existentes que tienen sus datos principales de cliente almacenados 
 |**Noruega**| Unión Europea | Noruega | Abril de 2020 |
 |**Brasil**| América | Brasil | Noviembre de 2020 |
 |**Suecia**| Unión Europea | Suecia | Noviembre de 2021 |
-|**Catar**| Unión Europea | Catar | Agosto de 2022 |
+|**Catar**| Unión Europea | Qatar | Agosto de 2022 |
 
 A partir del 1 de octubre de 2020, los clientes con una suscripción Office 365 Educación incluida en el inquilino no son aptos para la migración.
 

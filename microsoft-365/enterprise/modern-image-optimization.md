@@ -6,7 +6,7 @@ manager: scotv
 ms.date: 03/11/2020
 audience: ITPro
 ms.topic: conceptual
-ms.service: o365-administration
+ms.service: microsoft-365-enterprise
 ms.localizationpriority: medium
 ms.collection:
 - Ent_O365
@@ -20,13 +20,13 @@ ms.custom:
 ms.reviewer: sstewart
 search.appverid:
 - MET150
-description: Obtenga información sobre cómo usar las herramientas incluidas en SharePoint Online para optimizar las imágenes en SharePoint páginas de sitios modernos en línea.
-ms.openlocfilehash: 102555e25e48af19432a26e6e2a0cb17c78044b3
-ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
+description: Obtenga información sobre cómo usar las herramientas incluidas en SharePoint Online para optimizar las imágenes en páginas de sitios modernos de SharePoint Online.
+ms.openlocfilehash: 62a4b728d4b06b148fa24a3a3163fd980b027ce9
+ms.sourcegitcommit: 9b133379196da2b3a4bb311b07ff274f43780f68
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "65093841"
+ms.lasthandoff: 09/14/2022
+ms.locfileid: "67702124"
 ---
 # <a name="optimize-images-in-sharepoint-online-modern-site-pages"></a>Optimizar imágenes en páginas de sitio modernas de SharePoint Online
 

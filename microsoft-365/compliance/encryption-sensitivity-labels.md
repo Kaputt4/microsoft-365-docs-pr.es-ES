@@ -16,12 +16,12 @@ search.appverid:
 - MET150
 description: Configure las etiquetas de confidencialidad para el cifrado que protege los datos con el acceso y uso restringido.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 72cf2196add9e6c1ee58475c492136ca9be7ce37
-ms.sourcegitcommit: 60c6ce8cbdf539f8b6ff1c6029eb16f81461a3ad
+ms.openlocfilehash: 091b78e2b11633eddec41809748e54ba333c09be
+ms.sourcegitcommit: 9b133379196da2b3a4bb311b07ff274f43780f68
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/25/2022
-ms.locfileid: "67434381"
+ms.lasthandoff: 09/14/2022
+ms.locfileid: "67701080"
 ---
 # <a name="restrict-access-to-content-by-using-sensitivity-labels-to-apply-encryption"></a>Restringir el acceso al contenido mediante el uso de etiquetas de confidencialidad para aplicar el cifrado
 
@@ -91,9 +91,9 @@ Para poder usar el cifrado, es posible que tenga que realizar algunas tareas de 
 
 4.  En la página **Cifrado**, seleccione una de las siguientes opciones:
     
-    - **Quite el cifrado si el archivo o el correo electrónico están cifrados**: esta opción solo es compatible con azure Information Protection cliente de etiquetado unificado. Si selecciona esta opción y usa etiquetas integradas, es posible que la etiqueta no se muestre en las aplicaciones o que se muestre, pero no se realicen cambios de cifrado.
+    - **Quitar cifrado si el archivo o correo electrónico está cifrado**: al seleccionar esta opción, al aplicar la etiqueta se quitará el cifrado existente, incluso si se aplicó independientemente de una etiqueta de confidencialidad.
         
-        Para obtener más información sobre este escenario, vea la sección [¿Qué ocurre con el cifrado existente al aplicar una etiqueta?](#what-happens-to-existing-encryption-when-a-labels-applied) Es importante tener en cuenta que esta configuración puede dar lugar a que los usuarios no puedan aplicar una etiqueta de confidencialidad cuando no tienen permisos suficientes.
+        Es importante comprender que esta configuración puede dar lugar a una etiqueta de confidencialidad que es posible que los usuarios no puedan aplicar cuando no tengan permisos suficientes para quitar el cifrado existente. Para obtener más información sobre este escenario, vea la sección [¿Qué ocurre con el cifrado existente al aplicar una etiqueta?](#what-happens-to-existing-encryption-when-a-labels-applied)
     
     - **Configurar las opciones de cifrado**: activa el cifrado y hace que la configuración de cifrado sea visible:
         
@@ -102,9 +102,6 @@ Para poder usar el cifrado, es posible que tenga que realizar algunas tareas de 
         Las instrucciones para estas opciones de configuración están en la sección [Establecer la configuración de cifrado](#configure-encryption-settings).
 
 ### <a name="what-happens-to-existing-encryption-when-a-labels-applied"></a>Qué sucede con el cifrado existente al aplicar una etiqueta
-
-> [!NOTE]
-> La opción **Quitar cifrado si el archivo o correo electrónico está cifrado solo es** compatible con Azure Information Protection cliente de etiquetado unificado. Puede lograr el mismo efecto para los correos electrónicos mediante la [configuración de una regla de flujo de correo](define-mail-flow-rules-to-encrypt-email.md#use-the-eac-to-create-a-rule-to-remove-encryption-from-email-messages-with-microsoft-purview-message-encryption).
 
 Si se aplica una etiqueta de confidencialidad a contenido sin cifrar, el resultado de las opciones de cifrado que puede seleccionar se explica por sí mismo. Por ejemplo, si no ha seleccionado **Cifrar archivos y mensajes de correo electrónico**, el contenido permanecerá sin cifrar.
 
@@ -116,15 +113,11 @@ Sin embargo, es posible que el contenido ya esté cifrado. Por ejemplo, otro usu
 
 En la tabla siguiente se identifica lo que ocurre con el cifrado existente cuando se aplica una etiqueta de confidencialidad al contenido:
 
-| | Cifrado: no seleccionado | Cifrado: configurado | Cifrado: quitar <sup>\*</sup> |
+| | Cifrado: no seleccionado | Cifrado: configurado | Cifrado: quitar |
 |:-----|:-----|:-----|:-----|
 |**Permisos especificados por un usuario**|Se preserva el cifrado original|Se aplica el cifrado de la nueva etiqueta|Se quita el cifrado original|
 |**Plantilla de protección**|Se preserva el cifrado original|Se aplica el cifrado de la nueva etiqueta|Se quita el cifrado original|
 |**Etiqueta con permisos definidos por el administator**|Se quita el cifrado original|Se aplica el cifrado de la nueva etiqueta|Se quita el cifrado original|
-
-**Nota al pie.**
-
-<sup>\*</sup> Solo es compatible con el cliente de etiquetas unificado de Azure Information Protection
 
 En los casos en los que se aplica el cifrado de la nueva etiqueta o se elimina el cifrado original, esto solo se produce si el usuario que aplica la etiqueta tiene un derecho de uso o un rol que admite esta acción:
 

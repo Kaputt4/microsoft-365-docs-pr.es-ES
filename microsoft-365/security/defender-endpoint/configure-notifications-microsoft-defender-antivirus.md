@@ -16,12 +16,13 @@ ms.date: 10/18/2021
 ms.reviewer: ''
 manager: dansimp
 ms.collection: M365-security-compliance
-ms.openlocfilehash: af6889be3f64d45f7a7237453e2050664de301bf
-ms.sourcegitcommit: 10e6abe740e27000e223378eb17d657a47555fa8
+search.appverid: met150
+ms.openlocfilehash: bdf187bdfec2faa86c8cc99667a59e893cab8a1b
+ms.sourcegitcommit: 9b133379196da2b3a4bb311b07ff274f43780f68
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/31/2022
-ms.locfileid: "67473257"
+ms.lasthandoff: 09/14/2022
+ms.locfileid: "67699156"
 ---
 # <a name="configure-microsoft-defender-antivirus-notifications-that-appear-on-endpoints"></a>Configuración de notificaciones del Antivirus de Microsoft Defender que aparecen en puntos de conexión
 

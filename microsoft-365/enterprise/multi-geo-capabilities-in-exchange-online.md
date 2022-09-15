@@ -6,18 +6,18 @@ author: chrisda
 manager: serdars
 audience: ITPro
 ms.topic: article
-ms.service: o365-solutions
+ms.service: microsoft-365-enterprise
 f1.keywords:
 - NOCSH
 ms.custom: seo-marvel-apr2020
 ms.localizationpriority: medium
-description: Obtenga información sobre las funcionalidades multigeo en Exchange Online, como las limitaciones de características y la colocación de buzones.
-ms.openlocfilehash: c45c5c8e8856206fc2afc3e08005821f24dcd028
-ms.sourcegitcommit: 986ea76ecaceb5fe6b9616e553003e3c5b0df2e7
+description: Obtenga información sobre las funcionalidades multigeográficas en Exchange Online, como las limitaciones de características y la selección de ubicación del buzón.
+ms.openlocfilehash: 549cd033856e01375b5549dc0b674617d02188ff
+ms.sourcegitcommit: 9b133379196da2b3a4bb311b07ff274f43780f68
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/25/2022
-ms.locfileid: "62214098"
+ms.lasthandoff: 09/14/2022
+ms.locfileid: "67698361"
 ---
 # <a name="multi-geo-capabilities-in-exchange-online"></a>Capacidades multigeográficas en Exchange Online
 
@@ -43,7 +43,7 @@ Exchange Online sincroniza la propiedad **PreferredDataLocation** de Azure AD en
 
 - Cuando **PreferredDataLocation** no está especificada en un usuario, al aprovisionar el buzón, se aprovisionará en la ubicación geográfica central.
 
-- Si el **código PreferredDataLocation** es incorrecto (por ejemplo, un error tipográfico de NAN en lugar de NAM), el buzón se aprovisionará en la ubicación geográfica central.
+- Si el código **PreferredDataLocation** es incorrecto (por ejemplo, un error tipográfico de NAN en lugar de NAM), el buzón se aprovisionará en la ubicación geográfica central.
 
 **Nota**: las funciones de Multi-geo y las reuniones hospedadas regionalmente por Skype Empresarial Online utilizan la propiedad **PreferredDataLocation** en los objetos de usuario para buscar servicios. Si configura los valores de **PreferredDataLocation** en los objetos de usuario para reuniones hospedadas regionalmente, el buzón de correo de esos usuarios se moverá automáticamente a la ubicación geográfica especificada después de que se habilite en el espacio empresarial de Microsoft 365.
 
@@ -59,4 +59,4 @@ Exchange Online sincroniza la propiedad **PreferredDataLocation** de Azure AD en
 
 - Las carpetas públicas se admiten en organizaciones multigeográficas. Sin embargo, las carpetas públicas deben permanecer en la ubicación geográfica central. No puede mover carpetas públicas a ubicaciones geográficas satélite.
 
-- En un entorno multigeográfico, la auditoría de buzón multigeográfico no es compatible. Por ejemplo, si se asignan permisos a un usuario para tener acceso a un buzón compartido en una ubicación geográfica diferente, las acciones de buzón que realiza el usuario no se registran en el registro de auditoría del buzón de correo compartido. Exchange eventos de auditoría de administración también solo están disponibles para la ubicación predeterminada. Para más información, consulte [Administrar auditoría del buzón](../compliance/enable-mailbox-auditing.md)..
+- En un entorno multigeográfico, la auditoría de buzón multigeográfico no es compatible. Por ejemplo, si se asignan permisos a un usuario para tener acceso a un buzón compartido en una ubicación geográfica diferente, las acciones de buzón que realiza el usuario no se registran en el registro de auditoría del buzón de correo compartido. Los eventos de auditoría del administrador de Exchange también están disponibles para la ubicación predeterminada. Para más información, consulte [Administrar auditoría del buzón](../compliance/enable-mailbox-auditing.md)..

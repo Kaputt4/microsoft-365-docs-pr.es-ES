@@ -17,12 +17,13 @@ ms.custom:
 - admindeeplinkDEFENDER
 ms.collection: m365-security-compliance
 ms.technology: mde
-ms.openlocfilehash: f6544a14891a98523d202c19634d0e70a3e839e2
-ms.sourcegitcommit: ebbe8713297675db5dcb3e0d9c3ae5e746b99196
+search.appverid: met150
+ms.openlocfilehash: 203eaf79058908ff9814cdc0628d1fbe8214b9b0
+ms.sourcegitcommit: 9b133379196da2b3a4bb311b07ff274f43780f68
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/14/2022
-ms.locfileid: "65416802"
+ms.lasthandoff: 09/14/2022
+ms.locfileid: "67698251"
 ---
 # <a name="behavioral-blocking-and-containment"></a>Bloqueo y contención de comportamientos
 
@@ -34,19 +35,19 @@ ms.locfileid: "65416802"
 **Plataformas**
 - Windows
 
-> ¿Desea experimentar Defender para punto de conexión? [Regístrese para obtener una prueba gratuita.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-assignaccess-abovefoldlink)
+> ¿Quiere experimentar Defender para punto de conexión? [Regístrese para obtener una prueba gratuita.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-assignaccess-abovefoldlink)
 
 ## <a name="overview"></a>Información general
 
 El panorama de amenazas de hoy en día está saturado por [malware sin archivos](/windows/security/threat-protection/intelligence/fileless-threats) y que vive fuera de la tierra, amenazas altamente polimórficas que mutan más rápido de lo que las soluciones tradicionales pueden mantenerse al día, y ataques operados por humanos que se adaptan a lo que los adversarios encuentran en dispositivos en peligro. Las soluciones de seguridad tradicionales no son suficientes para detener estos ataques; necesita funcionalidades respaldadas por inteligencia artificial (IA) y aprendizaje de dispositivos (ML), como el bloqueo y la contención del comportamiento, incluidos en [Defender para punto de conexión](/windows/security).
 
-Las funcionalidades de bloqueo y contención del comportamiento pueden ayudar a identificar y detener amenazas, en función de sus comportamientos y de los árboles de proceso, incluso cuando la amenaza ha comenzado a ejecutarse. Los componentes y características de protección, EDR y Defender para punto de conexión de próxima generación funcionan juntos en las funcionalidades de bloqueo y contención del comportamiento.
+Las funcionalidades de bloqueo y contención del comportamiento pueden ayudar a identificar y detener amenazas, en función de sus comportamientos y de los árboles de proceso, incluso cuando la amenaza ha comenzado a ejecutarse. Las características y los componentes y características de protección de última generación, EDR y Defender para punto de conexión funcionan conjuntamente en capacidades de bloqueo y contención del comportamiento.
 
 :::image type="content" source="images/mdatp-next-gen-EDR-behavblockcontain.png" alt-text="Bloqueo y contención del comportamiento en el portal de ATP de Microsoft Defender" lightbox="images/mdatp-next-gen-EDR-behavblockcontain.png":::
 
 Las funcionalidades de bloqueo y contención del comportamiento funcionan con varios componentes y características de Defender for Endpoint para detener ataques inmediatamente e impedir que los ataques avancen.
 
-- [La protección de última generación](microsoft-defender-antivirus-in-windows-10.md) (que incluye Antivirus de Microsoft Defender) puede detectar amenazas mediante el análisis de comportamientos y detener las amenazas que han comenzado a ejecutarse.
+- [La protección de última generación](microsoft-defender-antivirus-in-windows-10.md) (que incluye el Antivirus de Microsoft Defender) puede detectar amenazas mediante el análisis de comportamientos y detener las amenazas que han comenzado a ejecutarse.
 
 - [La detección y respuesta de puntos de conexión](overview-endpoint-detection-response.md) (EDR) recibe señales de seguridad en toda la red, los dispositivos y el comportamiento del kernel. A medida que se detectan amenazas, se crean alertas. Varias alertas del mismo tipo se agregan a incidentes, lo que facilita que el equipo de operaciones de seguridad investigue y responda.
 
@@ -66,9 +67,9 @@ En la imagen siguiente se muestra un ejemplo de una alerta que se desencadenó m
 
 - **[Bloqueo de bucles de comentarios](feedback-loop-blocking.md)** (también conocido como protección rápida) Las detecciones de amenazas se observan a través de la inteligencia de comportamiento. Las amenazas se detienen y se impide que se ejecuten en otros puntos de conexión. (El bloqueo de bucles de comentarios está habilitado de forma predeterminada).
 
-- **[La detección y respuesta de puntos de conexión (EDR) en modo de bloque](edr-in-block-mode.md)** Los artefactos o comportamientos malintencionados que se observan a través de la protección posterior a la infracción se bloquean y contienen. EDR en modo de bloque funciona incluso si Antivirus de Microsoft Defender no es la solución antivirus principal. (EDR en modo de bloque no está habilitado de forma predeterminada; se activa en Microsoft 365 Defender).
+- **[Detección y respuesta de puntos de conexión (EDR) en modo de bloque](edr-in-block-mode.md)** Los artefactos malintencionados o los comportamientos que se observan a través de la protección posterior a la infracción se bloquean y contienen. EDR en modo de bloque funciona incluso si Antivirus de Microsoft Defender no es la solución antivirus principal. (EDR en modo de bloque no está habilitado de forma predeterminada; se activa en Microsoft 365 Defender).
 
-Espere más en el área de bloqueo y contención del comportamiento, ya que Microsoft sigue mejorando las características y funcionalidades de protección contra amenazas. Para ver lo que está planeado e implementar ahora, visite la [hoja de ruta Microsoft 365](https://www.microsoft.com/microsoft-365/roadmap).
+Espere más en el área de bloqueo y contención del comportamiento, ya que Microsoft sigue mejorando las características y funcionalidades de protección contra amenazas. Para ver lo que está planeado e implementar ahora, visite la [hoja de ruta de Microsoft 365](https://www.microsoft.com/microsoft-365/roadmap).
 
 ## <a name="examples-of-behavioral-blocking-and-containment-in-action"></a>Ejemplos de bloqueo y contención del comportamiento en acción
 
@@ -120,7 +121,7 @@ Unos minutos después de bloquear el artefacto, se bloquearon varias instancias 
 En este ejemplo se muestra que, con las funcionalidades de bloqueo y contención de comportamiento, las amenazas se detectan, contienen y bloquean automáticamente.
 
 > [!TIP]
-> Si busca información relacionada con antivirus para otras plataformas, consulte:
+> Si busca información relacionada con el antivirus para otras plataformas, consulte:
 > - [Establecer las preferencias para Microsoft Defender para punto de conexión en macOS](mac-preferences.md)
 > - [Microsoft Defender para punto de conexión en Mac](microsoft-defender-endpoint-mac.md)
 > - [Configuración de las directivas de antivirus de macOS para Antivirus de Microsoft Defender para Intune](/mem/intune/protect/antivirus-microsoft-defender-settings-macos)
@@ -135,7 +136,7 @@ En este ejemplo se muestra que, con las funcionalidades de bloqueo y contención
 
 - [Configuración de las reglas de reducción de superficie expuesta a ataques](attack-surface-reduction.md)
 
-- [Habilitar EDR en modo de bloque](edr-in-block-mode.md)
+- [Habilitación de EDR en modo de bloque](edr-in-block-mode.md)
 
 - [Consulte la actividad de amenazas global reciente.](https://www.microsoft.com/wdsi/threats)
 
