@@ -15,12 +15,12 @@ ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.subservice: mde
 search.appverid: met150
-ms.openlocfilehash: bd81c53bd392e161325fa3bc085f97ae15a493d0
-ms.sourcegitcommit: 9b133379196da2b3a4bb311b07ff274f43780f68
+ms.openlocfilehash: 6eea1b25da4a81f17ee1f22322f69dcd5088548d
+ms.sourcegitcommit: 0af064e8b6778060f1bd365378d69b16fc9949b5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/14/2022
-ms.locfileid: "67704598"
+ms.lasthandoff: 09/15/2022
+ms.locfileid: "67730537"
 ---
 # <a name="privacy-for-microsoft-defender-for-endpoint-on-linux"></a>Privacidad para Microsoft Defender para punto de conexión en Linux
 
@@ -179,7 +179,7 @@ Los registros de diagnóstico solo se recopilan con el consentimiento del usuari
 
 - Todos los archivos en */var/log/microsoft/mdatp*
 - Subconjunto de archivos en */etc/opt/microsoft/mdatp* creados y usados por Defender para punto de conexión en Linux
-- Registros de instalación y desinstalación del producto en */var/log/microsoft_mdatp_\*.log*
+- Registros de instalación y desinstalación de productos en /var/log/microsoft/mdatp/*.log
 
 ### <a name="optional-diagnostic-data"></a>Datos de diagnóstico opcionales
 

@@ -11,6 +11,7 @@ ms.localizationpriority: high
 search.appverid:
 - MET150
 ms.collection:
+- highpri
 - Ent_O365
 - Strat_O365_Enterprise
 - m365solution-3tiersprotection
@@ -21,12 +22,12 @@ ms.custom:
 - admindeeplinkSPO
 recommendations: false
 description: Obtenga información acerca de cómo implementar equipos con un nivel de protección de base de referencia.
-ms.openlocfilehash: 21fe46a9df9b67c41ff2c0a21fbbe175295e1fdf
-ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
-ms.translationtype: HT
+ms.openlocfilehash: 3b526568d58fbcb4ae85e938a42c46a386762741
+ms.sourcegitcommit: 0af064e8b6778060f1bd365378d69b16fc9949b5
+ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/08/2022
-ms.locfileid: "63312745"
+ms.lasthandoff: 09/15/2022
+ms.locfileid: "67731428"
 ---
 # <a name="configure-teams-with-baseline-protection"></a>Configure equipos con la protección de base de referencia
 

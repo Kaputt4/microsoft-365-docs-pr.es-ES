@@ -16,12 +16,12 @@ ms.collection: M365-security-compliance
 ms.topic: article
 ms.subservice: mde
 ms.custom: api
-ms.openlocfilehash: 06339d5313b0921a5560ef7db53d2b1dad1b771f
-ms.sourcegitcommit: 228fa13973bf7c2d91504703fab757f552ae40dd
+ms.openlocfilehash: eb9802a8036b8c5b49dc10b3f422dad2b22e683e
+ms.sourcegitcommit: 0af064e8b6778060f1bd365378d69b16fc9949b5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/01/2022
-ms.locfileid: "67520378"
+ms.lasthandoff: 09/15/2022
+ms.locfileid: "67728053"
 ---
 # <a name="export-device-antivirus-health-details-api-methods-and-properties"></a>Exportación de propiedades y métodos de API de detalles de estado del antivirus de dispositivo
 
@@ -62,7 +62,7 @@ Los datos recopilados mediante "_respuesta JSON_ o _a través de archivos_" son 
 
 > [!NOTE]
 >
-> Para obtener información sobre el uso de la herramienta de informes de **cumplimiento antivirus y estado del dispositivo** en el panel seguridad de Microsoft 365, vea: [Informe de cumplimiento del estado del dispositivo y antivirus en Microsoft Defender para punto de conexión](machine-reports.md).
+> Para obtener información sobre el uso de la herramienta de informes de **cumplimiento antivirus y estado del dispositivo** en el panel seguridad de Microsoft 365, vea: [Estado del dispositivo y informe antivirus en Microsoft Defender para punto de conexión](device-health-reports.md).
 >
 
 ### <a name="11-export-device-antivirus-health-details-api-methods"></a>1.1 Exportar métodos de API de detalles de estado del antivirus de dispositivo
@@ -77,14 +77,14 @@ Método|Tipo de datos|Descripción
 > [!NOTE]
 >
 > - Las propiedades definidas en la tabla siguiente se enumeran alfabéticamente, por identificador de propiedad. Al ejecutar esta API, la salida resultante no se devolverá necesariamente en el mismo orden que se muestra en esta tabla.
-> - Es posible que se devuelvan algunas columnas adicionales en la respuesta. Estas columnas son temporales y pueden quitarse, use solo las columnas documentadas.
+> - Es posible que se devuelvan algunas columnas adicionales en la respuesta. Estas columnas son temporales y pueden quitarse; use solo las columnas documentadas.
 
 | Propiedad (ID) | Tipo de datos | Descripción | Ejemplo de un valor devuelto |
 |:----|:----|:----|:----|
 | avEngineUpdateTime | DateTimeOffset | Fecha y hora en que se actualizó por última vez el motor av en el dispositivo | "2022-08-04T12:44:02Z" |
 | avEngineVersion | Cadena | Versión del motor antivirus | "1.1.19400.3" |
 | avIsEngineUpToDate | Cadena | Estado actualizado del motor de AV | "True", "False", "Unknown" |
-| avIsPlatformUpToDate | Cadena | Stauts actualizados de la plataforma av | "True", "False", "Unknown" |
+| avIsPlatformUpToDate | Cadena | Estado actualizado de la plataforma av | "True", "False", "Unknown" |
 | avIsSignatureUpToDate | Cadena | Estado actualizado de la firma de AV | "True", "False", "Unknown" |
 | avMode | Cadena | Modo antivirus. | Cada modo será un valor entero con tipo de cadena que va de 0 a 5. Consulte la asignación siguiente para ver el significado de su valor: <ul><li>'' = Otros</li><li> '0' = Activo</li><li> '1' = Pasivo</li><li> '2' = Deshabilitado</li><li> '3' = Otros</li><li> '4' = EDRBlocked</li><li>'5' = PassiveAudit</li></ul> |
 | avPlatformUpdateTime | DateTimeOffset | Fecha y hora en que se actualizó por última vez la plataforma av en el dispositivo | "2022-08-04T12:44:02Z" |
@@ -134,4 +134,4 @@ Método|Tipo de datos|Descripción
 
 [Exportar informe de estado del antivirus del dispositivo](device-health-export-antivirus-health-report-api.md)
 
-[Informes de cumplimiento y estado del dispositivo](machine-reports.md)
+[Informes de cumplimiento y estado del dispositivo](device-health-reports.md)

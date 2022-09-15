@@ -7,6 +7,7 @@ audience: ITPro
 ms.topic: article
 ms.service: microsoft-365-enterprise
 ms.collection:
+- highpri
 - SPO_Content
 - M365-security-compliance
 - m365solution-3tiersprotection
@@ -19,12 +20,12 @@ ms.localizationpriority: high
 f1.keywords: NOCSH
 recommendations: false
 description: Obtenga más información sobre las opciones disponibles para crear un entorno más seguro de uso compartido para invitados en Microsoft 365, al proporcionar accesos de invitado para mejorar la colaboración.
-ms.openlocfilehash: ce5564bef1e7f1ad1215f8ff1f41f3985e554d16
-ms.sourcegitcommit: d3ef9391f621e8f4ca70661184b3bb82c6cbda94
+ms.openlocfilehash: 469a430d589dfb912ee8ec4d4b7a24233295d65e
+ms.sourcegitcommit: 0af064e8b6778060f1bd365378d69b16fc9949b5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/02/2022
-ms.locfileid: "67577946"
+ms.lasthandoff: 09/15/2022
+ms.locfileid: "67730515"
 ---
 # <a name="create-a-more-secure-guest-sharing-environment"></a>Creación de un entorno de uso compartido de invitados más seguro
 

@@ -17,12 +17,12 @@ ms.collection:
 - M365-security-compliance
 - m365initiative-defender-endpoint
 ms.custom: intro-get-started
-ms.openlocfilehash: 77dca20a3168033df520a7735bcc9037d315790e
-ms.sourcegitcommit: 228fa13973bf7c2d91504703fab757f552ae40dd
+ms.openlocfilehash: 9e046c877eab1c422d660ba24b7ec2da45c2006a
+ms.sourcegitcommit: 0af064e8b6778060f1bd365378d69b16fc9949b5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/01/2022
-ms.locfileid: "67516574"
+ms.lasthandoff: 09/15/2022
+ms.locfileid: "67731086"
 ---
 # <a name="get-started-with-microsoft-defender-for-endpoint-plan-1"></a>Introducción al plan 1 de Microsoft Defender para punto de conexión
 
@@ -75,7 +75,7 @@ La barra de navegación del lado izquierdo de la pantalla le permite moverse fá
 |  **Extremos** >  **Líneas base de & de configuración** | Se expande para mostrar **las líneas base de seguridad** y **la administración de configuración**. |
 |  **Extremos** >  Líneas base  >  **de & de configuración** **Líneas base de seguridad** | Las líneas base de seguridad son directivas preconfiguradas y grupos de opciones de configuración que pueden ayudarle a aplicar la configuración de seguridad recomendada de forma eficaz y eficaz. Las líneas base incluyen configuraciones basadas en los procedimientos recomendados del sector. Puede mantener la configuración predeterminada o personalizar las líneas base para satisfacer las necesidades de su organización. <br/><br/> Para más información, consulte [Uso de líneas base de seguridad para configurar dispositivos Windows 10 en Intune](/mem/intune/protect/security-baselines). |
 |  **Extremos** >  Líneas base  >  **de & de configuración** **Administración de configuración** | Navega a la página **Administración de configuración** de dispositivos, donde puede ver información sobre los dispositivos incorporados y realizar pasos para incorporar más dispositivos. |
-| **Informes** | Navega a los informes, como el [informe de protección contra amenazas](threat-protection-reports.md), el [informe de cumplimiento y estado del dispositivo](machine-reports.md) y el [informe de protección web](web-protection-overview.md). |
+| **Informes** | Navega a los informes, como el [informe de protección contra amenazas](threat-protection-reports.md), el [informe de cumplimiento y estado del dispositivo](device-health-reports.md) y el [informe de protección web](web-protection-overview.md). |
 | **Estado** | Incluye vínculos al **Estado del servicio** y **al Centro de mensajes**.  |
 | **Salud** >  **Estado del servicio** | Navega a la página Estado del servicio del Centro de administración de Microsoft 365. Esta página le permite ver el estado de mantenimiento en todos los servicios disponibles con las suscripciones de su organización.   |
 | **Salud** >  **Centro de mensajes** | Navega al Centro de mensajes en el Centro de administración de Microsoft 365. El Centro de mensajes proporciona información sobre los cambios planeados. Cada mensaje describe lo que viene, cómo puede afectar a los usuarios y cómo administrar los cambios. |  
@@ -158,7 +158,7 @@ Para acceder al informe de estado del dispositivo, en el portal de Microsoft 365
 Desplácese hacia abajo para ver todas las vistas de cada lista. De forma predeterminada, las vistas de la columna **Tendencias del dispositivo** muestran datos de los últimos 30 días, pero puede cambiar una vista para mostrar los datos de los últimos tres meses, los últimos seis meses o un intervalo de tiempo personalizado (hasta 180 días). Las vistas **de resumen del dispositivo** son instantáneas del día laborable anterior.
 
 > [!TIP]
-> Para más información, consulte [Estado del dispositivo](machine-reports.md).
+> Para más información, consulte [Estado del dispositivo](device-health-reports.md).
 
 ### <a name="web-protection-report"></a>Informe de protección web
 

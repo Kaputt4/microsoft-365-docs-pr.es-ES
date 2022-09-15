@@ -20,16 +20,21 @@ ms.custom: admindeeplinkCOMPLIANCE
 search.appverid:
 - MET150
 - MOE150
-ms.openlocfilehash: 1cf97b9d573ee5cdcd0c2c4ddcc5aba66a5f70bc
-ms.sourcegitcommit: b1ed6470645455c2f1fcf467450debc622c40147
+ms.openlocfilehash: 1dffcf448bf3273cc845aae269a29ab3653a5bea
+ms.sourcegitcommit: 0af064e8b6778060f1bd365378d69b16fc9949b5
 ms.translationtype: MT
 ms.contentlocale: es-ES
 ms.lasthandoff: 09/15/2022
-ms.locfileid: "67710727"
+ms.locfileid: "67728152"
 ---
 # <a name="investigate-and-remediate-communication-compliance-alerts"></a>Investigar y corregir las alertas de cumplimiento de las comunicaciones
 
-Después de configurar [las directivas de cumplimiento de comunicaciones](/microsoft-365/compliance/communication-compliance-policies), comenzará a recibir alertas en el [portal de cumplimiento Microsoft Purview](https://compliance.microsoft.com) para los problemas de mensajes que coincidan con las condiciones de la directiva. Siga las instrucciones del flujo de trabajo aquí para investigar y corregir problemas de alerta.
+Después de configurar [las directivas de cumplimiento de comunicaciones](/microsoft-365/compliance/communication-compliance-policies), comenzará a recibir alertas en el [portal de cumplimiento Microsoft Purview](https://compliance.microsoft.com) para los problemas de mensajes que coincidan con las condiciones de la directiva. Para ver y actuar en alertas, los usuarios deben tener los permisos siguientes:
+
+- Se asigna a los *analistas de cumplimiento de comunicaciones* o al grupo de roles *Investigadores de cumplimiento de comunicaciones*
+- Se le asigna como revisor en la directiva asociada a la alerta.
+
+Después de tener los permisos necesarios, siga las instrucciones del flujo de trabajo aquí para investigar y corregir problemas de alerta.
 
 ## <a name="investigate-alerts"></a>Investigar alertas
 

@@ -13,18 +13,19 @@ ms.topic: article
 ms.service: microsoft-365-enterprise
 ms.localizationpriority: high
 ms.collection:
+- highpri
 - M365-security-compliance
 - m365solution-managedevices
 - m365solution-scenario
 - zerotrust-solution
 ms.custom: ''
 keywords: ''
-ms.openlocfilehash: 1ba63a147821da6e5d62629cff9083d688a6166a
-ms.sourcegitcommit: d3ef9391f621e8f4ca70661184b3bb82c6cbda94
+ms.openlocfilehash: ff626c2e8ef5d4a47bf8e3a206064aca3268b86e
+ms.sourcegitcommit: 0af064e8b6778060f1bd365378d69b16fc9949b5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/02/2022
-ms.locfileid: "67584692"
+ms.lasthandoff: 09/15/2022
+ms.locfileid: "67730405"
 ---
 # <a name="step-5-deploy-device-profiles-in-microsoft-intune"></a>Paso 5. Implementar perfiles de dispositivo en Microsoft Intune
 

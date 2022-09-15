@@ -11,6 +11,7 @@ ms.topic: article
 ms.service: microsoft-365-enterprise
 ms.localizationpriority: medium
 ms.collection:
+- highpri
 - M365-security-compliance
 - Strat_O365_Enterprise
 - m365solution-infoprotection
@@ -18,12 +19,12 @@ ms.collection:
 - zerotrust-solution
 ms.custom: ''
 description: Evite vulneraciones de datos personales con los servicios de protección contra amenazas, dispositivos y identidades de Microsoft 365.
-ms.openlocfilehash: da779767bedfccf7067b100e7e02cdde9faf12f9
-ms.sourcegitcommit: d3ef9391f621e8f4ca70661184b3bb82c6cbda94
+ms.openlocfilehash: 1769f67d9815a1a7a3e556e9078aace6366fbf4c
+ms.sourcegitcommit: 0af064e8b6778060f1bd365378d69b16fc9949b5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/02/2022
-ms.locfileid: "67582018"
+ms.lasthandoff: 09/15/2022
+ms.locfileid: "67731560"
 ---
 # <a name="use-identity-device-and-threat-protection-for-data-privacy-regulation"></a>Uso de la protección contra amenazas, dispositivos y identidades para la regulación de privacidad de datos
 

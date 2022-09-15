@@ -17,12 +17,12 @@ ms.custom:
 - M365-Lighthouse
 search.appverid: MET150
 description: En el caso de los proveedores de servicios administrados (MSP) que usan Microsoft 365 Lighthouse, obtenga información sobre cómo ver los riesgos de seguridad.
-ms.openlocfilehash: cc50842f303d300f4e5e60f2c661d0edb8cf2ef4
-ms.sourcegitcommit: b1ed6470645455c2f1fcf467450debc622c40147
+ms.openlocfilehash: 81a5b09f28d00bcde0915534e604429954774319
+ms.sourcegitcommit: 0af064e8b6778060f1bd365378d69b16fc9949b5
 ms.translationtype: MT
 ms.contentlocale: es-ES
 ms.lasthandoff: 09/15/2022
-ms.locfileid: "67709159"
+ms.locfileid: "67731108"
 ---
 # <a name="overview-of-the-device-security-page-in-microsoft-365-lighthouse"></a>Información general de la página Seguridad del dispositivo en Microsoft 365 Lighthouse
 
@@ -32,7 +32,7 @@ Puede acceder a la página Seguridad del dispositivo en Microsoft 365 Lighthouse
 
 ## <a name="incidents-and-alerts-tab"></a>Pestaña Incidentes y alertas
 
-La pestaña Incidentes y alertas proporciona una vista multiinquilino de incidentes y alertas que se marcaron desde dispositivos en la red de los clientes. De forma predeterminada, la pestaña muestra los incidentes activos detectados en los últimos 30 días. Puede seleccionar cualquier incidente o alerta para abrir el panel de detalles para ver más información. En el panel de detalles, también puede resolver el incidente o la alerta o asignarlo usted mismo.
+La pestaña Incidentes y alertas proporciona una vista multiinquilino de incidentes y alertas que se marcaron desde dispositivos en la red de los clientes. De forma predeterminada, la pestaña muestra los incidentes activos detectados en los últimos 30 días. Puede seleccionar cualquier incidente o alerta para abrir el panel de detalles para ver más información. En el panel de detalles, también puede resolver el incidente o la alerta, o asignarlo usted mismo.
 
 :::image type="content" source="../media/m365-lighthouse-device-security-overview/device-security-incidents-and-alerts-tab.png" alt-text="Pestaña Incidentes y alertas en la página Seguridad del dispositivo.":::
 

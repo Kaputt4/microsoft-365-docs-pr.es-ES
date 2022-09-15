@@ -11,6 +11,7 @@ ms.topic: article
 ms.service: microsoft-365-enterprise
 ms.localizationpriority: medium
 ms.collection:
+- highpri
 - M365-security-compliance
 - Strat_O365_Enterprise
 - m365solution-infoprotection
@@ -18,12 +19,12 @@ ms.collection:
 - zerotrust-solution
 ms.custom: ''
 description: Determine las regulaciones de privacidad de datos, los escenarios pertinentes, su preparación y los tipos de información confidencial que se encuentran en su entorno de Microsoft 365.
-ms.openlocfilehash: a9eb6e975e223014006d34ecea33851c116baab9
-ms.sourcegitcommit: d3ef9391f621e8f4ca70661184b3bb82c6cbda94
+ms.openlocfilehash: 8ce944c8caee3c89def04d7367efbd4f46bf51e7
+ms.sourcegitcommit: 0af064e8b6778060f1bd365378d69b16fc9949b5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/02/2022
-ms.locfileid: "67585496"
+ms.lasthandoff: 09/15/2022
+ms.locfileid: "67730801"
 ---
 # <a name="assess-data-privacy-risks-and-identify-sensitive-items-with-microsoft-365"></a>Evaluación de riesgos de privacidad de datos e identificación de elementos confidenciales con Microsoft 365
 

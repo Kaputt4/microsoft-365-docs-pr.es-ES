@@ -18,12 +18,12 @@ ms.collection:
 - m365-security-compliance
 ms.topic: conceptual
 ms.subservice: mde
-ms.openlocfilehash: 8930006a4748d090de15ef76c84fd39b8f7527ec
-ms.sourcegitcommit: 9b133379196da2b3a4bb311b07ff274f43780f68
+ms.openlocfilehash: fd587baa44a40b7c3543839116bc169a07873efc
+ms.sourcegitcommit: 0af064e8b6778060f1bd365378d69b16fc9949b5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/14/2022
-ms.locfileid: "67690825"
+ms.lasthandoff: 09/15/2022
+ms.locfileid: "67730229"
 ---
 # <a name="whats-new-in-microsoft-defender-for-endpoint"></a>Novedades de Microsoft Defender para punto de conexión
 
@@ -63,8 +63,7 @@ Para obtener más información sobre Microsoft Defender para punto de conexión 
 
 ## <a name="september-2022"></a>Septiembre de 2022
 
-- [Los informes de estado del dispositivo ya están disponibles con carácter general](machine-reports.md). <br/>El informe de estado del dispositivo proporciona información de alto nivel sobre el estado y la seguridad de los puntos de conexión. El informe incluye información de tendencias que muestra el estado de mantenimiento del sensor, el estado del antivirus, las plataformas del sistema operativo, las versiones de Windows 10 y las versiones de actualización del Antivirus de Microsoft Defender.
-- [El modo de solución de problemas](enable-troubleshooting-mode.md) ya está disponible para más sistemas operativos Windows, incluidos Windows Server 2012 R2 y versiones posteriores. Consulte el artículo para obtener más información sobre las actualizaciones necesarias.
+- [Los informes de estado del dispositivo ya están disponibles con carácter general](device-health-reports.md). <br/>El informe de estado del dispositivo proporciona información sobre el estado y la seguridad de los puntos de conexión. El informe incluye información de tendencias que muestra el estado de mantenimiento del sensor, el estado del antivirus, las plataformas del sistema operativo, las versiones de Windows 10 y las versiones de actualización del Antivirus de Microsoft Defender.
 
 ## <a name="august-2022"></a>Agosto de 2022
 
@@ -145,7 +144,7 @@ Para obtener más información sobre Microsoft Defender para punto de conexión 
 
 ## <a name="july-2021"></a>Julio de 2021
 
-- (versión preliminar) [Informe de cumplimiento y estado del dispositivo](machine-reports.md) <br>  El informe de estado y cumplimiento del dispositivo proporciona información de alto nivel sobre los dispositivos de su organización.
+- (versión preliminar) [Informe de cumplimiento y estado del dispositivo](device-health-reports.md) <br>  El informe de estado y cumplimiento del dispositivo proporciona información de alto nivel sobre los dispositivos de su organización.
 
 ## <a name="june-2021"></a>Junio de 2021
 
@@ -159,7 +158,7 @@ Para obtener más información sobre Microsoft Defender para punto de conexión 
 
 - [Las definiciones de grupos de](/microsoft-365/security/defender-endpoint/machine-groups) dispositivos ahora pueden incluir varios valores para cada condición. Puede establecer varias etiquetas, nombres de dispositivo y dominios en la definición de un único grupo de dispositivos.
 - [Compatibilidad con la administración de aplicaciones móviles](https://techcommunity.microsoft.com/t5/microsoft-defender-for-endpoint/announcing-new-capabilities-on-android-and-ios/ba-p/2442730) <br> Esta mejora permite Microsoft Defender para punto de conexión proteger los datos de una organización dentro de una aplicación administrada cuando se usa Intune para administrar aplicaciones móviles. Para obtener más información sobre la administración de aplicaciones móviles, consulte [esta documentación](/mem/intune/apps/mam-faq).
-- [Integración de VPN de Microsoft Tunnel](https://techcommunity.microsoft.com/t5/microsoft-defender-for-endpoint/announcing-new-capabilities-on-android-and-ios/ba-p/2442730) <br> Las funcionalidades de VPN de Microsoft Tunnel ahora se integran con Microsoft Defender para punto de conexión aplicación para Android. Esta unificación permite a las organizaciones ofrecer una experiencia de usuario final simplificada con una aplicación de seguridad, que ofrece tanto la defensa contra amenazas móviles como la capacidad de acceder a los recursos locales desde su dispositivo móvil, mientras que los equipos de seguridad y TI pueden mantener las mismas experiencias de administración con las que están familiarizados.
+- [Integración de VPN de Microsoft Tunnel](https://techcommunity.microsoft.com/t5/microsoft-defender-for-endpoint/announcing-new-capabilities-on-android-and-ios/ba-p/2442730) <br> Las funcionalidades de VPN de Microsoft Tunnel ahora se integran con Microsoft Defender para punto de conexión aplicación para Android. Esta unificación permite a las organizaciones ofrecer una experiencia de usuario final simplificada con una aplicación de seguridad, lo que ofrece tanto la defensa contra amenazas móviles como la capacidad de acceder a los recursos locales desde su dispositivo móvil, mientras que los equipos de seguridad y TI pueden mantener las mismas experiencias de administración con las que están familiarizados.
 - [Detección de jailbreak en iOS](/microsoft-365/security/defender-endpoint/ios-configure-features#conditional-access-with-defender-for-endpoint-on-ios) <br> La funcionalidad de detección de jailbreak en Microsoft Defender para punto de conexión en iOS ya está disponible con carácter general. Esto se suma a la protección contra suplantación de identidad (phishing) que ya existe.  Para obtener más información, consulte [Configuración de la directiva de acceso condicional en función de las señales de riesgo del dispositivo](/microsoft-365/security/defender-endpoint/ios-configure-features).
 
 

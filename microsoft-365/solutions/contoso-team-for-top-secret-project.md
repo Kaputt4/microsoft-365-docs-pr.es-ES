@@ -13,15 +13,16 @@ ms.localizationpriority: medium
 search.appverid:
 - MET150
 ms.collection:
+- highpri
 - M365-security-compliance
 ms.custom: Ent_Architecture
 description: 'Resumen: cómo Contoso usó un equipo con aislamiento de seguridad para un proyecto de alto secreto para desarrollar un nuevo conjunto de productos y servicios.'
-ms.openlocfilehash: 83f09050858651634f5c4dc7d2cfbdd374239ba9
-ms.sourcegitcommit: d3ef9391f621e8f4ca70661184b3bb82c6cbda94
+ms.openlocfilehash: 2afc993245e2ad1a67242855dd658a38de5e628a
+ms.sourcegitcommit: 0af064e8b6778060f1bd365378d69b16fc9949b5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/02/2022
-ms.locfileid: "67585100"
+ms.lasthandoff: 09/15/2022
+ms.locfileid: "67730669"
 ---
 # <a name="isolated-team-for-a-top-secret-project-of-the-contoso-corporation"></a>Equipo aislado para un proyecto secreto de Contoso Corporation
 

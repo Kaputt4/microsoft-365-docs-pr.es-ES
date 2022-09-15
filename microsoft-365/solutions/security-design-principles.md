@@ -9,17 +9,18 @@ ms.topic: article
 ms.service: microsoft-365-enterprise
 ms.localizationpriority: medium
 ms.collection:
+- highpri
 - M365-identity-device-management
 - M365-security-compliance
 - M365solutions
 ms.custom: seo-marvel-jun2020
 f1.keywords: NOCSH
-ms.openlocfilehash: 1b90b08218fff22c864b1307a3312eeff9bae003
-ms.sourcegitcommit: d3ef9391f621e8f4ca70661184b3bb82c6cbda94
+ms.openlocfilehash: 5e47cc11a72ba11f10c844f900dcf513afadaa2b
+ms.sourcegitcommit: 0af064e8b6778060f1bd365378d69b16fc9949b5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/02/2022
-ms.locfileid: "67586520"
+ms.lasthandoff: 09/15/2022
+ms.locfileid: "67730185"
 ---
 # <a name="security-hurdles-you-can-sail-overone-architects-viewpoint"></a>Obstáculos de seguridad por los que puede navegar: punto de vista de un arquitecto
 

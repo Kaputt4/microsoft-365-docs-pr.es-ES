@@ -11,6 +11,7 @@ ms.topic: article
 ms.service: microsoft-365-enterprise
 ms.localizationpriority: medium
 ms.collection:
+- highpri
 - M365-security-compliance
 - Strat_O365_Enterprise
 - m365solution-infoprotection
@@ -18,12 +19,12 @@ ms.collection:
 - zerotrust-solution
 ms.custom: ''
 description: Implemente las características de seguridad y cumplimiento de Microsoft 365 y proteja su información personal.
-ms.openlocfilehash: c6c3a824eba7f7a15df258157d45c4d46a6024dd
-ms.sourcegitcommit: d3ef9391f621e8f4ca70661184b3bb82c6cbda94
+ms.openlocfilehash: a75533e3417a2afa38d9904e62b93bb0f54f5c39
+ms.sourcegitcommit: 0af064e8b6778060f1bd365378d69b16fc9949b5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/02/2022
-ms.locfileid: "67575741"
+ms.lasthandoff: 09/15/2022
+ms.locfileid: "67731604"
 ---
 # <a name="protect-information-subject-to-data-privacy-regulation"></a>Protección de la información sujeta a la normativa de privacidad de datos
 

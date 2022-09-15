@@ -8,6 +8,7 @@ ms.topic: article
 ms.service: microsoft-365-enterprise
 ms.localizationpriority: medium
 ms.collection:
+- highpri
 - M365-subscription-management
 - Strat_O365_Enterprise
 - m365solution-tenantmanagement
@@ -16,12 +17,12 @@ ms.collection:
 ms.custom:
 - Ent_Solutions
 description: Implemente y administre uno o varios inquilinos de Microsoft 365, con opciones para ubicaciones multigeográficas y móviles.
-ms.openlocfilehash: 39f7a2d4fb8f41366d5e18b6e95b15aaf81a7931
-ms.sourcegitcommit: d3ef9391f621e8f4ca70661184b3bb82c6cbda94
+ms.openlocfilehash: a1fdf6cf86fd7e889712e020f5aaeb33284c96ae
+ms.sourcegitcommit: 0af064e8b6778060f1bd365378d69b16fc9949b5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/02/2022
-ms.locfileid: "67585012"
+ms.lasthandoff: 09/15/2022
+ms.locfileid: "67730581"
 ---
 # <a name="step-1-your-microsoft-365-for-enterprise-tenants"></a>Paso 1. Su microsoft 365 para inquilinos empresariales
 

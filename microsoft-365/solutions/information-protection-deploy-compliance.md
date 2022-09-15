@@ -11,6 +11,7 @@ ms.topic: article
 ms.service: microsoft-365-enterprise
 ms.localizationpriority: medium
 ms.collection:
+- highpri
 - M365-security-compliance
 - Strat_O365_Enterprise
 - m365solution-infoprotection
@@ -18,12 +19,12 @@ ms.collection:
 - zerotrust-solution
 ms.custom: admindeeplinkCOMPLIANCE
 description: Obtenga información sobre cómo usar la puntuación de cumplimiento y el Administrador de cumplimiento para mejorar el nivel de protección de los datos personales.
-ms.openlocfilehash: 29b11b6751e569494ff0e89f3ef577a72eaebf02
-ms.sourcegitcommit: d3ef9391f621e8f4ca70661184b3bb82c6cbda94
+ms.openlocfilehash: 65a69ca40df3bcbaff8092c50d74d32868b419b4
+ms.sourcegitcommit: 0af064e8b6778060f1bd365378d69b16fc9949b5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/02/2022
-ms.locfileid: "67582062"
+ms.lasthandoff: 09/15/2022
+ms.locfileid: "67730757"
 ---
 # <a name="use-compliance-manager-to-manage-improvement-actions"></a>Uso del Administrador de cumplimiento para administrar acciones de mejora
 

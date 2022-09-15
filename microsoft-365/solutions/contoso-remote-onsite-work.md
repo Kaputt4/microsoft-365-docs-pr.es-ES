@@ -10,16 +10,17 @@ ms.topic: article
 ms.service: microsoft-365-enterprise
 ms.localizationpriority: medium
 ms.collection:
+- highpri
 - M365-subscription-management
 - Strat_O365_Enterprise
 ms.custom: ''
 description: Comprenda cómo contoso Corporation respondió a la pandemia de COVID-19 y diseñó su infraestructura de instalación y actualización de software para el trabajo híbrido.
-ms.openlocfilehash: f856113b3e71220bedf06f9b1dd5ea44e422d81d
-ms.sourcegitcommit: 9b133379196da2b3a4bb311b07ff274f43780f68
+ms.openlocfilehash: 557d9b7bbfab2ea6db65fb1e033b190436590346
+ms.sourcegitcommit: 0af064e8b6778060f1bd365378d69b16fc9949b5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/14/2022
-ms.locfileid: "67691263"
+ms.lasthandoff: 09/15/2022
+ms.locfileid: "67730493"
 ---
 # <a name="contosos-covid-19-response-and-support-for-hybrid-work"></a>Respuesta de COVID-19 de Contoso y compatibilidad con el trabajo híbrido
 

@@ -10,6 +10,7 @@ ms.topic: article
 ms.service: microsoft-365-enterprise
 ms.localizationpriority: high
 ms.collection:
+- highpri
 - M365-security-compliance
 - Strat_O365_Enterprise
 - remotework
@@ -17,12 +18,12 @@ ms.collection:
 - m365solution-scenario
 ms.custom: ''
 description: Puede hacer que los usuarios sean más productivos utilizando Teams, Exchange, SharePoint y otros servicios de Microsoft 365.
-ms.openlocfilehash: 498157250d5d9adecf6d39a2a2cfc11167b907f5
-ms.sourcegitcommit: d3ef9391f621e8f4ca70661184b3bb82c6cbda94
+ms.openlocfilehash: 315058c31b221411ba8df81041e6dc4178128cb0
+ms.sourcegitcommit: 0af064e8b6778060f1bd365378d69b16fc9949b5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/02/2022
-ms.locfileid: "67581321"
+ms.lasthandoff: 09/15/2022
+ms.locfileid: "67728546"
 ---
 # <a name="step-5-deploy-hybrid-worker-productivity-apps-and-services"></a>Paso 5: Implementar servicios y aplicaciones de productividad para los trabajadores híbridos
 

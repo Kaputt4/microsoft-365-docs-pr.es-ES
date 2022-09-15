@@ -9,6 +9,7 @@ ms.topic: article
 ms.service: microsoft-365-enterprise
 ms.localizationpriority: medium
 ms.collection:
+- highpri
 - M365-collaboration
 - m365solution-collabgovernance
 ms.custom:
@@ -16,12 +17,12 @@ ms.custom:
 f1.keywords: NOCSH
 recommendations: false
 description: Obtenga información sobre cómo gobernar el acceso en grupos de Microsoft 365, Teams y SharePoint.
-ms.openlocfilehash: a3d852c07880e142266310a2ed656ab635d08b92
-ms.sourcegitcommit: d3ef9391f621e8f4ca70661184b3bb82c6cbda94
+ms.openlocfilehash: fc41c2556a84e77de7773d200249b11d120935b0
+ms.sourcegitcommit: 0af064e8b6778060f1bd365378d69b16fc9949b5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/02/2022
-ms.locfileid: "67582612"
+ms.lasthandoff: 09/15/2022
+ms.locfileid: "67728480"
 ---
 # <a name="governing-access-in-microsoft-365-groups-teams-and-sharepoint"></a>Administración del acceso en grupos de Microsoft 365, Teams y SharePoint
 

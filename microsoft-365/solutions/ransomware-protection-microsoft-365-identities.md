@@ -10,6 +10,7 @@ ms.topic: article
 ms.service: microsoft-365-enterprise
 ms.localizationpriority: high
 ms.collection:
+- highpri
 - M365-security-compliance
 - Strat_O365_Enterprise
 - ransomware
@@ -17,12 +18,12 @@ ms.collection:
 ms.custom: seo-marvel-jun2020
 keywords: ransomware, ransomware operado por humanos, HumOR, ataque de extorsión, ataque de ransomware, cifrado, criptovirología, confianza cero
 description: Use inicios de sesión seguros y Acceso condicional para proteger los recursos de Microsoft 365 frente a ataques de ransomware.
-ms.openlocfilehash: f2713231cb0b763339935de7d8b5f7abae6aa1de
-ms.sourcegitcommit: d3ef9391f621e8f4ca70661184b3bb82c6cbda94
+ms.openlocfilehash: 040c61447feffbdec4d03aac6d2b05aecc0f2175
+ms.sourcegitcommit: 0af064e8b6778060f1bd365378d69b16fc9949b5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/02/2022
-ms.locfileid: "67580059"
+ms.lasthandoff: 09/15/2022
+ms.locfileid: "67727664"
 ---
 # <a name="step-3-protect-identities"></a>Paso 3. Proteger identidades
 

@@ -7,6 +7,7 @@ audience: ITPro
 ms.topic: article
 ms.service: microsoft-365-enterprise
 ms.collection:
+- highpri
 - M365-collaboration
 - m365solution-securecollab
 - m365solution-scenario
@@ -18,12 +19,12 @@ localization_priority: Normal
 f1.keywords: NOCSH
 recommendations: false
 description: Obtenga información sobre la diferencia entre la colaboración de invitados y los canales compartidos en Teams y cómo elegir cuál usar.
-ms.openlocfilehash: bf381482939525c8c78d43c488439dbe72897f31
-ms.sourcegitcommit: d3ef9391f621e8f4ca70661184b3bb82c6cbda94
+ms.openlocfilehash: 28411531e46d5ef0ab10c1ce722c6c87ab658a1b
+ms.sourcegitcommit: 0af064e8b6778060f1bd365378d69b16fc9949b5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/02/2022
-ms.locfileid: "67576855"
+ms.lasthandoff: 09/15/2022
+ms.locfileid: "67730361"
 ---
 # <a name="plan-external-collaboration-with-channel-conversations-file-collaboration-and-shared-apps"></a>Planear la colaboración externa con conversaciones de canal, colaboración de archivos y aplicaciones compartidas
 

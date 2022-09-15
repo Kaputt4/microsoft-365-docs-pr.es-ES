@@ -16,12 +16,12 @@ ms.custom:
 - admindeeplinkEXCHANGE
 ms.collection:
 - M365-subscription-management
-ms.openlocfilehash: 560178688950de7c66a2dcb6093912520a7aed38
-ms.sourcegitcommit: b1ed6470645455c2f1fcf467450debc622c40147
+ms.openlocfilehash: 3867be6d179ee8b014563c898562c3eaeb20546e
+ms.sourcegitcommit: 0af064e8b6778060f1bd365378d69b16fc9949b5
 ms.translationtype: MT
 ms.contentlocale: es-ES
 ms.lasthandoff: 09/15/2022
-ms.locfileid: "67710464"
+ms.locfileid: "67731362"
 ---
 # <a name="cross-tenant-mailbox-migration-preview"></a>Migración de buzones entre inquilinos (versión preliminar)
 
@@ -375,7 +375,7 @@ El envío por lotes de migración también se admite desde el nuevo [Centro de a
 
 Una vez que el buzón se mueve de origen a destino, debe asegurarse de que los usuarios de correo local, tanto en el origen como en el destino, se actualizan con el nuevo targetAddress. En los ejemplos, se **contoso.onmicrosoft.com** el targetDeliveryDomain usado en el movimiento. Actualice los usuarios de correo con este targetAddress.
 
-## <a name="frequently-asked-questions"></a>Preguntas más frecuentes
+## <a name="frequently-asked-questions"></a>Preguntas frecuentes
 
 ### <a name="do-we-need-to-update-remotemailboxes-in-source-on-premises-after-the-move"></a>¿Es necesario actualizar RemoteMailboxes en el entorno local de origen después del traslado?
 
@@ -387,7 +387,7 @@ Las reuniones se moverán, pero la dirección URL de la reunión de Teams no se 
 
 ### <a name="does-the-teams-chat-folder-content-migrate-cross-tenant"></a>¿El contenido de la carpeta de chat de Teams migra entre inquilinos?
 
-No, el contenido de la carpeta de chat de Teams no migra entre inquilinos. Cuando se migra un buzón entre inquilinos con esta característica, se migra todo el correo electrónico, incluido el correo electrónico retenido para litigios. Después de la migración correcta, se elimina el buzón de origen. Esto significa que después de la migración, en ningún caso (incluidos los buzones de correo en suspensión por litigio o retención), es el buzón de origen disponible, reconocible o accesible en el inquilino de origen.
+No, el contenido de la carpeta de chat de Teams no migra entre inquilinos. Cuando se migra un buzón entre inquilinos con esta característica, se migra todo el correo electrónico, incluido el correo electrónico retenido para litigios. Después de la migración correcta, se elimina el buzón de origen. Esto significa que después de la migración, en ningún caso (incluidos los buzones de correo en suspensión por litigio o retención), es el buzón de origen disponible, reconocible o accesible en el inquilino de origen. Actualmente estamos investigando un problema en el que, en algunos escenarios, los datos de chat de Teams también se mantienen en el buzón, pero no se migran los datos de chat de Teams. Si se deben conservar los datos de chat de Teams, no use esta característica para migrar el buzón.
 
 ### <a name="how-can-i-see-just-moves-that-are-cross-tenant-moves-not-my-onboarding-and-off-boarding-moves"></a>¿Cómo puedo ver solo movimientos que son movimientos entre inquilinos, no mis movimientos de incorporación y desembarque?
 

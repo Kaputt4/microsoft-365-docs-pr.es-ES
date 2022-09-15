@@ -11,6 +11,7 @@ ms.topic: article
 ms.service: microsoft-365-enterprise
 ms.localizationpriority: medium
 ms.collection:
+- highpri
 - M365-security-compliance
 - Strat_O365_Enterprise
 - m365solution-infoprotection
@@ -18,12 +19,12 @@ ms.collection:
 - zerotrust-solution
 ms.custom: ''
 description: Use directivas de auditoría y alertas y solicitudes de interesados para supervisar y responder a incidentes de datos personales.
-ms.openlocfilehash: f86020a26842fed07e46cec70357cd3c7ade340b
-ms.sourcegitcommit: d3ef9391f621e8f4ca70661184b3bb82c6cbda94
+ms.openlocfilehash: a3e80c01154258fdd322b488cbf57637b817ac47
+ms.sourcegitcommit: 0af064e8b6778060f1bd365378d69b16fc9949b5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/02/2022
-ms.locfileid: "67581952"
+ms.lasthandoff: 09/15/2022
+ms.locfileid: "67730273"
 ---
 # <a name="monitor-and-respond-to-data-privacy-incidents-in-your-organization"></a>Supervisión y respuesta a incidentes de privacidad de datos en su organización
 

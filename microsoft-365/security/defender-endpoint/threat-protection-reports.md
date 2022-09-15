@@ -15,12 +15,12 @@ ms.collection: M365-security-compliance
 ms.topic: article
 ms.subservice: mde
 search.appverid: met150
-ms.openlocfilehash: 2e9fae2aa286204c51fdb485b8dd1dccac765110
-ms.sourcegitcommit: 9b133379196da2b3a4bb311b07ff274f43780f68
+ms.openlocfilehash: 11520c0ef4e565065e41d91bdfb300069618b83c
+ms.sourcegitcommit: 0af064e8b6778060f1bd365378d69b16fc9949b5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/14/2022
-ms.locfileid: "67689237"
+ms.lasthandoff: 09/15/2022
+ms.locfileid: "67727987"
 ---
 # <a name="threat-protection-report-in-microsoft-defender-for-endpoint"></a>Informe de protección contra amenazas en Microsoft Defender para punto de conexión
 
@@ -91,4 +91,4 @@ Por ejemplo, para mostrar solo datos sobre alertas de gravedad alta:
 
 ## <a name="related-topic"></a>Tema relacionado
 
-- [Cumplimiento normativo y estado del dispositivo](machine-reports.md)
+- [Cumplimiento normativo y estado del dispositivo](device-health-reports.md)

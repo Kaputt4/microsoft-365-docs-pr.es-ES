@@ -1,6 +1,6 @@
 ---
 title: Realizar acciones de respuesta en un dispositivo en Microsoft Defender para punto de conexión
-description: Realice acciones de respuesta en un dispositivo, como aislar dispositivos, recopilar un paquete de investigación, administrar etiquetas, ejecutar av scan y restringir la ejecución de la aplicación.
+description: Realice acciones de respuesta en un dispositivo, como aislar dispositivos, recopilar un paquete de investigación, administrar etiquetas, ejecutar un examen av y restringir la ejecución de la aplicación.
 keywords: respond, isolate, isolate device, collect investigation package, action center, restrict, manage tags, av scan, restrict app
 ms.service: microsoft-365-security
 ms.mktglfcycl: deploy
@@ -15,12 +15,12 @@ ms.collection: M365-security-compliance
 ms.topic: article
 ms.subservice: mde
 search.appverid: met150
-ms.openlocfilehash: 1fef5cebe54ce739604ce0084723b67a7504877b
-ms.sourcegitcommit: 9b133379196da2b3a4bb311b07ff274f43780f68
+ms.openlocfilehash: 2f5ef49d9b8fd1d558fb0b646295615d9352b915
+ms.sourcegitcommit: 0af064e8b6778060f1bd365378d69b16fc9949b5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/14/2022
-ms.locfileid: "67694047"
+ms.lasthandoff: 09/15/2022
+ms.locfileid: "67728678"
 ---
 # <a name="take-response-actions-on-a-device"></a>Realizar acciones de respuesta en un dispositivo
 
@@ -185,7 +185,7 @@ Cuando una aplicación está restringida, se muestra la siguiente notificación 
 En función de la gravedad del ataque y de la confidencialidad del dispositivo, es posible que desee aislar el dispositivo de la red. Esta acción puede ayudar a evitar que el atacante controle el dispositivo en peligro y realice otras actividades, como la filtración de datos y el movimiento lateral.
 
 > [!IMPORTANT]
-> - Actualmente no se admite el aislamiento de dispositivos de la red para dispositivos que ejecutan macOS o Linux. Use la respuesta activa para ejecutar la acción. Para obtener más información sobre la respuesta en vivo, consulte [Investigación de entidades en dispositivos que usan la respuesta en vivo](live-response.md).
+> - Actualmente no se admite el aislamiento de dispositivos de la red para dispositivos que ejecutan macOS o Linux. Para macOS, use la respuesta en directo para ejecutar la acción. Para obtener más información sobre la respuesta en vivo, consulte [Investigación de entidades en dispositivos que usan la respuesta en vivo](live-response.md).
 > - El aislamiento completo está disponible para los dispositivos que ejecutan Windows 11, Windows 10, versión 1703 o posterior, Windows Server 2022, Windows Server 2019 y Windows Server 2016.
 > - El aislamiento selectivo está disponible para los dispositivos que ejecutan Windows 10, versión 1709 o posterior y Windows 11.
 > - Al aislar un dispositivo, solo se permiten determinados procesos y destinos. Por lo tanto, los dispositivos que están detrás de un túnel VPN completo no podrán acceder al servicio en la nube Microsoft Defender para punto de conexión después de que el dispositivo esté aislado. Se recomienda usar una VPN de túnel dividido para Microsoft Defender para punto de conexión y el tráfico relacionado con la protección basada en la nube del Antivirus de Microsoft Defender.

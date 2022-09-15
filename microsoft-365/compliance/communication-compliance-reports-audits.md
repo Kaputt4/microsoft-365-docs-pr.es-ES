@@ -19,18 +19,20 @@ ms.collection:
 search.appverid:
 - MET150
 - MOE150
-ms.openlocfilehash: 4810f76d2d0fc7446c15c3c52fd6577e763918fe
-ms.sourcegitcommit: 1734c95ce72d9c8af695cb4b49b1e40d921a1fee
+ms.openlocfilehash: 13b5d83a5b5993e90938a774dff3063bc1da5f86
+ms.sourcegitcommit: 0af064e8b6778060f1bd365378d69b16fc9949b5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/07/2022
-ms.locfileid: "66686405"
+ms.lasthandoff: 09/15/2022
+ms.locfileid: "67731130"
 ---
 # <a name="use-communication-compliance-reports-and-audits"></a>Uso de informes y auditorías de cumplimiento de comunicaciones
 
 ## <a name="reports"></a>Informes
 
-El nuevo panel **Informes** es la ubicación central para ver todos los informes de cumplimiento de comunicaciones. Los widgets de informe proporcionan una vista rápida de la información más comúnmente necesaria para una evaluación general del estado de las actividades de cumplimiento de comunicaciones. La información contenida en los widgets de informe no se puede exportar. Los informes detallados proporcionan información detallada relacionada con áreas específicas de cumplimiento de comunicaciones y ofrecen la capacidad de filtrar, agrupar, ordenar y exportar información durante la revisión. 
+El panel **Informes** es la ubicación central para ver todos los informes de cumplimiento de comunicaciones. Para ver y administrar informes, los usuarios deben estar asignados al grupo de roles *Visores de cumplimiento de comunicaciones* .
+
+Los widgets de informe proporcionan una vista rápida de la información más comúnmente necesaria para una evaluación general del estado de las actividades de cumplimiento de comunicaciones. La información contenida en los widgets de informe no se puede exportar. Los informes detallados proporcionan información detallada relacionada con áreas específicas de cumplimiento de comunicaciones y ofrecen la capacidad de filtrar, agrupar, ordenar y exportar información durante la revisión.
 
 Para el filtro de intervalo de fechas, la fecha y hora de los eventos se enumeran en Hora universal coordinada (UTC). Al filtrar mensajes para informes, la fecha y hora local del usuario solicitante determina los resultados en función de la conversión de la fecha y hora local del usuario a UTC. Por ejemplo, si un usuario de la hora de verano del Pacífico (PDT) de Ee. UU. filtra un informe del 8/30/2021 al 8/31/2021 a las 00:00, el informe incluye mensajes de 8/30/2021 07:00 UTC a 8/31/2021 07:00 UTC. Si el mismo usuario estaba en la hora de verano del Este de EE. UU. (EDT) al filtrar a las 00:00, el informe incluye mensajes de 8/30/2021 04:00 UTC a 8/31/2021 04:00 UTC.
 
@@ -89,7 +91,7 @@ Use la opción *Exportar* para crear un archivo .csv que contenga los detalles d
 
 - **Tipo de información confidencial por ubicación** (versión preliminar): revise y exporte información sobre la detección de tipos de información confidencial y los orígenes asociados en las directivas de cumplimiento de comunicaciones. Incluye el total general y el desglose específico de las instancias de tipo de información confidencial en los orígenes configurados en la organización. Los valores de cada origen de terceros se muestran en columnas independientes en el archivo .csv. Los ejemplos son:
 
-    - **Correo electrónico**: tipos de información confidencial detectados en los mensajes de correo electrónico de Exchange.
+    - **Email**: tipos de información confidencial detectados en los mensajes de correo electrónico de Exchange.
     - **Teams**: tipos de información confidencial detectados en los canales y mensajes de chat de Microsoft Teams.
     - **Yammer**: tipos de información confidencial detectados en bandejas de entrada, publicaciones, chats y respuestas de Yammer.
     - **Orígenes de terceros**: se han detectado tipos de información confidencial para las actividades asociadas a conectores de terceros configurados en la organización. Para ver el desglose de orígenes de terceros para un tipo de información confidencial específico en el informe, mantenga el mouse sobre el valor del tipo de información confidencial de la columna Origen de terceros.

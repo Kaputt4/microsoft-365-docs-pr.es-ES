@@ -10,6 +10,7 @@ ms.topic: article
 ms.service: microsoft-365-enterprise
 ms.localizationpriority: high
 ms.collection:
+- highpri
 - M365-security-compliance
 - Strat_O365_Enterprise
 - ransomware
@@ -17,12 +18,12 @@ ms.collection:
 ms.custom: seo-marvel-jun2020
 keywords: ransomware, ransomware operado por humanos, HumOR, ataque de extorsión, ataque de ransomware, cifrado, criptovirología, confianza cero
 description: Use acceso controlado a carpetas, Microsoft Purview Information Protection, DLP y Microsoft Defender for Cloud Apps para proteger sus datos confidenciales de Microsoft 365.
-ms.openlocfilehash: 94d5a55178d5e13ad7ba22df1c4f7226a176c1c6
-ms.sourcegitcommit: d3ef9391f621e8f4ca70661184b3bb82c6cbda94
+ms.openlocfilehash: a52d06198f8a3cf4ea7e35cc569b8fa1d705d0d3
+ms.sourcegitcommit: 0af064e8b6778060f1bd365378d69b16fc9949b5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/02/2022
-ms.locfileid: "67575623"
+ms.lasthandoff: 09/15/2022
+ms.locfileid: "67728108"
 ---
 # <a name="step-5-protect-information"></a>Paso 5. Proteger información
 

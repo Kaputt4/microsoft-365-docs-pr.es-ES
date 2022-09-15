@@ -7,6 +7,7 @@ audience: ITPro
 ms.topic: article
 ms.service: microsoft-365-enterprise
 ms.collection:
+- highpri
 - SPO_Content
 - M365-collaboration
 - m365solution-securecollab
@@ -16,12 +17,12 @@ ms.localizationpriority: medium
 f1.keywords: NOCSH
 recommendations: false
 description: Obtenga información sobre cómo requerir que personas ajenas a su organización pasen comprobaciones de acceso condicional, como MFA y dispositivos compatibles.
-ms.openlocfilehash: 1beada2bb844804e380ed549c3d826169a21aa59
-ms.sourcegitcommit: d3ef9391f621e8f4ca70661184b3bb82c6cbda94
+ms.openlocfilehash: 9e424ef6dde16137a334f391efa71b6b61860dfb
+ms.sourcegitcommit: 0af064e8b6778060f1bd365378d69b16fc9949b5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/02/2022
-ms.locfileid: "67584990"
+ms.lasthandoff: 09/15/2022
+ms.locfileid: "67731450"
 ---
 # <a name="require-conditional-access-for-people-outside-your-organization"></a>Requerir acceso condicional para personas ajenas a la organización
 

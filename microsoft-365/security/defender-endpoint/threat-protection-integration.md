@@ -15,12 +15,12 @@ ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.subservice: mde
 search.appverid: met150
-ms.openlocfilehash: c24b990bacbe1d55aac5d735ad9e98059aecfb33
-ms.sourcegitcommit: 9b133379196da2b3a4bb311b07ff274f43780f68
+ms.openlocfilehash: 0aa33086c1db708d861351a2f4469f9bf3161a1d
+ms.sourcegitcommit: 0af064e8b6778060f1bd365378d69b16fc9949b5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/14/2022
-ms.locfileid: "67689259"
+ms.lasthandoff: 09/15/2022
+ms.locfileid: "67727996"
 ---
 # <a name="microsoft-defender-for-endpoint-and-other-microsoft-solutions"></a>Microsoft Defender para punto de conexión y otras soluciones de Microsoft
 
@@ -39,7 +39,7 @@ Microsoft Defender para punto de conexión se integra directamente con varias so
 
 ### <a name="microsoft-defender-for-cloud"></a>Microsoft Defender for Cloud
 
-Microsoft Defender para punto de conexión proporciona una solución de protección completa del servidor, incluidas las funcionalidades de detección y respuesta de puntos de conexión (EDR) en servidores Windows Server.
+Microsoft Defender for Cloud proporciona una solución completa de protección de servidores, incluidas las funcionalidades de detección y respuesta de puntos de conexión (EDR) en servidores Windows Server.
 
 ### <a name="microsoft-sentinel"></a>Microsoft Sentinel
 
