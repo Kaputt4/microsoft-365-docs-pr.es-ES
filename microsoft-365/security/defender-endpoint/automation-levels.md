@@ -19,12 +19,13 @@ ms.collection:
 ms.topic: conceptual
 ms.reviewer: ramarom, evaldm, isco, mabraitm, chriggs
 ms.custom: AIR
-ms.openlocfilehash: 787b636ec3834d258125e724be63aa9487c99081
-ms.sourcegitcommit: e6595be36bbaba244439bd59dbae935e2b258ded
+search.appverid: met150
+ms.openlocfilehash: b894e0f0be65db26c8dddc74dd7f5087c3bd2ff0
+ms.sourcegitcommit: 9b133379196da2b3a4bb311b07ff274f43780f68
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/27/2022
-ms.locfileid: "67450111"
+ms.lasthandoff: 09/14/2022
+ms.locfileid: "67702520"
 ---
 # <a name="automation-levels-in-automated-investigation-and-remediation-capabilities"></a>Niveles de automatización en las funcionalidades automatizadas de investigación y corrección
 
@@ -65,7 +66,7 @@ Las funcionalidades de investigación y corrección automatizadas (AIR) en Micro
 
 - Puede mantener la configuración de automatización predeterminada o cambiarla según sus necesidades organizativas. Para cambiar la configuración, [establezca el nivel de automatización](/microsoft-365/security/defender-endpoint/configure-automated-investigations-remediation#set-up-device-groups).
 
-## <a name="next-steps"></a>Siguientes pasos
+## <a name="next-steps"></a>Pasos siguientes
 
 - [Configuración de funcionalidades automatizadas de investigación y corrección en Defender para punto de conexión](configure-automated-investigations-remediation.md)
 - [Visite el Centro de acciones.](/microsoft-365/security/defender-endpoint/auto-investigation-action-center#the-action-center)
