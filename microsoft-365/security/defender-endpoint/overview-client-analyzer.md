@@ -15,14 +15,14 @@ manager: dansimp
 audience: ITPro
 ms.collection: m365-security-compliance
 ms.topic: conceptual
-ms.subservice: m365d
+ms.subservice: mde
 search.appverid: met150
-ms.openlocfilehash: 272fd53c36a748bb80f0c609ea00f932f9dd535c
-ms.sourcegitcommit: 9b133379196da2b3a4bb311b07ff274f43780f68
+ms.openlocfilehash: b730620c3a31fdc5451cb153a97520b9c98a4011
+ms.sourcegitcommit: c29af68260ba8676083674b3c70209bff2c2e362
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/14/2022
-ms.locfileid: "67693937"
+ms.lasthandoff: 09/16/2022
+ms.locfileid: "67736716"
 ---
 # <a name="troubleshoot-sensor-health-using-microsoft-defender-for-endpoint-client-analyzer"></a>Solución de problemas de estado del sensor mediante Microsoft Defender para punto de conexión Analizador de cliente
 

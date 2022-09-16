@@ -3,16 +3,17 @@ title: 'Inteligencia contra amenazas de Microsoft Defender (Ti de Defender): Enc
 description: En este artículo de concepto, obtenga información sobre el encadenamiento de infraestructura y cómo puede aplicar ese proceso para realizar análisis de infraestructura de amenazas mediante Inteligencia contra amenazas de Microsoft Defender (TI de Defender).
 author: alexroland24
 ms.author: aroland
+manager: dolmont
 ms.service: threat-intelligence
 ms.topic: conceptual
 ms.date: 08/02/2022
 ms.custom: template-concept
-ms.openlocfilehash: 13433c34e6aafe8d08d377876ba53e05324da258
-ms.sourcegitcommit: d7193ee954c01c4172e228d25b941026c8d92d30
+ms.openlocfilehash: 2f2187b2b49e41bf9751be46fab771f66b601995
+ms.sourcegitcommit: c29af68260ba8676083674b3c70209bff2c2e362
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/02/2022
-ms.locfileid: "67174661"
+ms.lasthandoff: 09/16/2022
+ms.locfileid: "67737156"
 ---
 # <a name="infrastructure-chaining"></a>Encadenamiento de infraestructura
 
@@ -37,5 +38,5 @@ Aproximarse e interactuar con las propiedades web y móviles como un usuario rea
 
 A medida que hay más datos de amenazas disponibles, se requieren más herramientas, educación y esfuerzo para que los analistas comprendan los conjuntos de datos y sus amenazas correspondientes. Inteligencia contra amenazas de Microsoft Defender (Ti de Defender) unifica estos esfuerzos proporcionando una vista única en varios orígenes de datos.
 
-## <a name="next-steps"></a>Siguientes pasos
+## <a name="next-steps"></a>Pasos siguientes
 Para obtener más información, consulte [Tutorial: Recopilación de inteligencia sobre amenazas y encadenamiento de infraestructura](gathering-threat-intelligence-and-infrastructure-chaining.md).

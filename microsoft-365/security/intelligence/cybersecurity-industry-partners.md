@@ -3,7 +3,7 @@ title: Programas de colaboración del sector
 ms.reviewer: ''
 description: 'Hay varios programas de colaboración relacionados con el antimalware en toda la industria de Microsoft: Virus Information Alliance (VIA), Microsoft Virus Initiative (MVI) y Coordinated Malware Eradication (CME)'
 keywords: seguridad, malware, sector antivirus, industria antimalware, programas de colaboración, alianzas, Alianza de información de virus, Iniciativa de virus de Microsoft, Erradicación coordinada de malware, WDSI, MMPC, Centro de protección contra malware de Microsoft, asociaciones
-ms.prod: m365-security
+ms.service: microsoft-365-security
 ms.mktglfcycl: secure
 ms.sitesec: library
 ms.localizationpriority: medium
@@ -13,14 +13,13 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
-ms.technology: m365d
 search.appverid: met150
-ms.openlocfilehash: fad3e5e95cfb8b0a07c1766b912aeff6e4ef4ca4
-ms.sourcegitcommit: b1ed6470645455c2f1fcf467450debc622c40147
+ms.openlocfilehash: 9c273652dbe0f074e112906d348eecbe65e31936
+ms.sourcegitcommit: c29af68260ba8676083674b3c70209bff2c2e362
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/15/2022
-ms.locfileid: "67711529"
+ms.lasthandoff: 09/16/2022
+ms.locfileid: "67738519"
 ---
 # <a name="industry-collaboration-programs"></a>Programas de colaboración del sector
 

@@ -15,14 +15,14 @@ manager: dansimp
 audience: ITPro
 ms.collection: m365-security-compliance
 ms.topic: conceptual
-ms.subservice: m365d
+ms.subservice: mde
 search.appverid: met150
-ms.openlocfilehash: 153294a78c5b9f9af8faca393a65ac7797209662
-ms.sourcegitcommit: 9b133379196da2b3a4bb311b07ff274f43780f68
+ms.openlocfilehash: 62a00f3ebfd981d2263c5adc2028983c68499125
+ms.sourcegitcommit: c29af68260ba8676083674b3c70209bff2c2e362
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/14/2022
-ms.locfileid: "67696339"
+ms.lasthandoff: 09/16/2022
+ms.locfileid: "67736352"
 ---
 # <a name="device-discovery-frequently-asked-questions"></a>Preguntas más frecuentes sobre la detección de dispositivos
 

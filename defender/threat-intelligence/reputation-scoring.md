@@ -3,22 +3,23 @@ title: Puntuación de reputación de Inteligencia contra amenazas de Microsoft D
 description: En este artículo de información general, obtenga información sobre la característica de puntuación de reputación de Inteligencia contra amenazas de Microsoft Defender (Defender TI).
 author: alexroland24
 ms.author: aroland
+manager: dolmont
 ms.service: threat-intelligence
 ms.topic: overview
 ms.date: 08/02/2022
 ms.custom: template-overview
-ms.openlocfilehash: af40ad00568cae2d69780ce06a8367bd21da6250
-ms.sourcegitcommit: 7e551fa4e9b8b25ed62b5f406143b6b1dae08cbf
+ms.openlocfilehash: 5563358e108c6461f44f777b5f2473b4f0bca0c7
+ms.sourcegitcommit: c29af68260ba8676083674b3c70209bff2c2e362
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/01/2022
-ms.locfileid: "67109693"
+ms.lasthandoff: 09/16/2022
+ms.locfileid: "67737926"
 ---
 # <a name="reputation-scoring"></a>Puntuación de reputación
 
-Inteligencia contra amenazas de Microsoft Defender (TI de Defender) proporciona puntuaciones de reputación propias para cualquier host, dominio o dirección IP. Tanto si se valida la reputación de una entidad conocida como desconocida, esta puntuación ayuda a los usuarios a comprender rápidamente los vínculos detectados con una infraestructura malintencionada o sospechosa. La plataforma proporciona información rápida sobre la actividad de estas entidades (por ejemplo, marcas de tiempo first y last seen, ASN, país, infraestructura asociada) y una lista de reglas que afectan a la puntuación de reputación cuando corresponda.
+Inteligencia contra amenazas de Microsoft Defender (TI de Defender) proporciona puntuaciones de reputación propias para cualquier host, dominio o dirección IP. Si se valida la reputación de una entidad conocida o desconocida, esta puntuación ayuda a los usuarios a comprender rápidamente los vínculos detectados a una infraestructura malintencionada o sospechosa. La plataforma proporciona información rápida sobre la actividad de estas entidades (por ejemplo, marcas de tiempo first y last seen, ASN, país, infraestructura asociada) y una lista de reglas que afectan a la puntuación de reputación cuando corresponda.
 
-Los datos de reputación son importantes para comprender la confiabilidad de su propia superficie expuesta a ataques y también es útil al evaluar hosts, dominios o direcciones IP desconocidos que aparecen en las investigaciones. Estas puntuaciones revelarán cualquier actividad malintencionada o sospechosa anterior que afectara a la entidad u otros indicadores conocidos de riesgo que se deben tener en cuenta.
+Los datos de reputación son importantes para comprender la confiabilidad de su propia superficie expuesta a ataques y también es útil al evaluar hosts, dominios o direcciones IP desconocidos que aparecen en las investigaciones. Estas puntuaciones descubrirán cualquier actividad malintencionada o sospechosa anterior que afecte a la entidad, u otros indicadores conocidos de riesgo que se deben tener en cuenta.
 
 ![Captura de pantalla de Reputation Edge](media/reputationEdgeScreenshot.png)
 ## <a name="understanding-reputation-scores"></a>Descripción de las puntuaciones de reputación
@@ -43,7 +44,7 @@ Las puntuaciones de reputación se muestran como una puntuación numérica con u
 
 ## <a name="detection-rules"></a>Reglas de detección
 
-Las puntuaciones de reputación se basan en muchos factores a los que un analista puede hacer referencia para determinar la calidad relativa de un dominio o dirección. Estos factores se reflejan en las reglas de aprendizaje automático que componen las puntuaciones de reputación. Por ejemplo, los dominios de nivel superior (TLD) ".xyz" o ".cc" suelen ser más sospechosos que los TLD de ".com" o ".org". Es más probable que un ASN (número de sistema autónomo) hospedado por un proveedor de hospedaje gratuito o de bajo costo esté asociado a actividades malintencionadas, al igual que un certificado SSL autofirmado. Este modelo de reputación se desarrolló examinando las repeticiones relativas de estas características entre indicadores malintencionados y benignos para puntuar la reputación general de una entidad.
+Las puntuaciones de reputación se basan en muchos factores a los que un analista puede hacer referencia para determinar la calidad relativa de un dominio o dirección. Estos factores se reflejan en las reglas de aprendizaje automático que componen las puntuaciones de reputación. Por ejemplo, los dominios de nivel superior (TLD) ".xyz" o ".cc" suelen ser más sospechosos que los TLD ".com" o ".org". Es más probable que un ASN (número de sistema autónomo) hospedado por un proveedor de hospedaje gratuito o de bajo costo esté asociado a actividades malintencionadas, al igual que un certificado SSL autofirmado. Este modelo de reputación se desarrolló examinando las repeticiones relativas de estas características entre indicadores malintencionados y benignos para puntuar la reputación general de una entidad.
 
 Consulte la lista siguiente para ver ejemplos de reglas usadas para determinar la sospecha de un host, dominio o dirección IP. Tenga en cuenta que esta lista no es completa y está cambiando constantemente; nuestra lógica de detección y las funcionalidades consiguientes son dinámicas, ya que reflejan el panorama de amenazas en constante evolución. Por este motivo, no publicamos una lista completa de las reglas de aprendizaje automático que se usan para evaluar la reputación de una entidad.
 
@@ -74,5 +75,5 @@ La puntuación de reputación, la clasificación, las reglas y la descripción d
 
 Los artículos asociados se pueden compartir con el equipo de inteligencia sobre ciberamenazas del analista, por lo que tienen una comprensión más clara de quién puede dirigirse a su organización.
 
-## <a name="next-steps"></a>Siguientes pasos
-Para obtener más información, consulte [Conclusiones de analistas](analyst-insights.md).
+## <a name="next-steps"></a>Pasos siguientes
+Para obtener más información, consulte [Información del analista](analyst-insights.md).

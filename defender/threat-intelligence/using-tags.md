@@ -3,19 +3,20 @@ title: Uso de etiquetas en Inteligencia contra amenazas de Microsoft Defender (T
 Description: En este artículo de procedimientos, obtenga información sobre los tipos de etiquetas y cómo agregar, modificar, eliminar y buscar etiquetas personalizadas en Inteligencia contra amenazas de Microsoft Defender (Ti de Defender).
 author: alexroland24
 ms.author: aroland
+manager: dolmont
 ms.service: threat-intelligence
 ms.topic: how-to
 ms.date: 08/02/2022
 ms.custom: template-how-to
-ms.openlocfilehash: d9e77b52e7f36bb0458a0638c0b0d2ee24e8bbff
-ms.sourcegitcommit: d7193ee954c01c4172e228d25b941026c8d92d30
+ms.openlocfilehash: e587702dcd3fef2dda0bb3a618c4db9cc90473d8
+ms.sourcegitcommit: c29af68260ba8676083674b3c70209bff2c2e362
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/02/2022
-ms.locfileid: "67175518"
+ms.lasthandoff: 09/16/2022
+ms.locfileid: "67738715"
 ---
 # <a name="using-tags"></a>Uso de etiquetas
-las etiquetas Inteligencia contra amenazas de Microsoft Defender (TI de Defender) se usan para proporcionar información rápida sobre un artefacto, ya sea derivado por el sistema o generado por otros usuarios. Las etiquetas ayudan a los analistas a conectar los puntos entre incidentes e investigaciones actuales y su contexto histórico para mejorar el análisis.
+las etiquetas Inteligencia contra amenazas de Microsoft Defender (TI de Defender) se usan para proporcionar información rápida sobre un artefacto, ya sea derivado por el sistema o generado por otros usuarios. Las etiquetas ayudan a los analistas a conectar los puntos entre los incidentes e investigaciones actuales y su contexto histórico para mejorar el análisis.
 
 La plataforma de TI de Defender ofrece dos tipos de etiquetas: etiquetas personalizadas y del sistema.
 
@@ -98,9 +99,9 @@ Flujo de trabajo de casos de uso de etiquetas comunes Supongamos que un analista
 
 Para más información, vea:
 
-- [¿Qué es Inteligencia contra amenazas de Microsoft Defender (TI de Defender)?](index.md)
+- [¿Qué es Inteligencia sobre amenazas de Microsoft Defender (Defender TI)?](index.md)
 - [Conjuntos de datos](data-sets.md)
-- [Ordenación, filtrado y descarga de datos](sorting-filtering-and-downloading-data.md)
+- [Ordenar, filtrar y descargar datos](sorting-filtering-and-downloading-data.md)
 - [Puntuación de reputación](reputation-scoring.md)
 - [Conclusiones de analistas](analyst-insights.md)
 - [Uso de proyectos](using-projects.md)

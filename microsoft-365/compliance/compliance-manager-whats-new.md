@@ -17,16 +17,24 @@ search.appverid:
 - MOE150
 - MET150
 description: Descubra las novedades de Compliance Manger y lo que va a venir. Obtenga información sobre evaluaciones actualizadas, nuevas plantillas de evaluación, nuevas acciones y mucho más.
-ms.openlocfilehash: be6527822798a518753897b5d104899077264ee3
-ms.sourcegitcommit: c1eaea74c8ffce2f9f477c9469342e88e4a70c14
+ms.openlocfilehash: 5da92b644397ef04212468d9d918bdab270c2760
+ms.sourcegitcommit: c29af68260ba8676083674b3c70209bff2c2e362
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/20/2022
-ms.locfileid: "66894347"
+ms.lasthandoff: 09/16/2022
+ms.locfileid: "67738212"
 ---
 # <a name="whats-new-in-microsoft-purview-compliance-manager"></a>Novedades del Administrador de cumplimiento de Microsoft Purview
 
 **En este artículo:** Obtenga información sobre las actualizaciones recientes en el Administrador de cumplimiento.
+
+## <a name="august-2022"></a>Agosto de 2022
+
+El Administrador de cumplimiento ha publicado la siguiente nueva plantilla de evaluación:
+
+- Australian Information Security Registered Assessor Program (IRAP) with ISM Version 3.5 - Official
+
+Vea nuestra [lista completa de plantillas de evaluación](compliance-manager-templates-list.md).
 
 ## <a name="july-2022"></a>Julio de 2022
 

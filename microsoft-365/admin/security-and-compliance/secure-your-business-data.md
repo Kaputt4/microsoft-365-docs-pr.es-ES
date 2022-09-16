@@ -4,12 +4,13 @@ f1.keywords:
 - CSH
 ms.author: deniseb
 author: denisebmsft
-manager: scotv
+manager: dansimp
 audience: Admin
 ms.topic: article
-ms.service: microsoft-365-business
+ms.service: microsoft-365-security
+ms.subservice: other
+ms.date: 09/15/2022
 ms.localizationpriority: medium
-ms.date: 09/14/2022
 ms.collection:
 - highpri
 - Adm_O365
@@ -30,12 +31,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Procedimientos recomendados para proteger su empresa frente a ransomware, phishing y direcciones URL o datos adjuntos malintencionados.
-ms.openlocfilehash: da1fba7bddabba0ccd95429dc36f06bfb302db48
-ms.sourcegitcommit: b1ed6470645455c2f1fcf467450debc622c40147
+ms.openlocfilehash: f9f28ec270a17761e7fd6fe1f7a06dfcc42f6946
+ms.sourcegitcommit: c29af68260ba8676083674b3c70209bff2c2e362
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/15/2022
-ms.locfileid: "67711485"
+ms.lasthandoff: 09/16/2022
+ms.locfileid: "67742791"
 ---
 # <a name="top-10-ways-to-secure-your-business---best-practices-to-follow"></a>10 maneras principales de proteger su negocio: procedimientos recomendados a seguir
 
@@ -88,7 +89,7 @@ En la tabla siguiente se comparan las funcionalidades de Microsoft 365 para plan
 
 (<a id="fn3">3</a>) Defender for Business se incluye en Microsoft 365 Empresa Premium. Defender para empresas también se puede agregar a Microsoft 365 Empresa Básico o Estándar. Consulte [Obtención de Defender para empresas](/microsoft-365/security/defender-business/get-defender-business).
 
-(<a id="fn4">4</a>) Defender para Office 365 Plan 1 está incluido en Microsoft 365 Empresa Premium. Defender para Office 365 Plan 1 también se puede agregar a Microsoft 365 Empresa Básico o Estándar. Consulte [Defender para Office 365 Plan 1 y Plan 2](../../security/office-365-security/overview.md#microsoft-defender-for-office-365-plan-1-vs-plan-2-cheat-sheet).
+(<a id="fn4">4</a>) Defender para Office 365 Plan 1 está incluido en Microsoft 365 Empresa Premium. Defender para Office 365 Plan 1 también se puede agregar a Microsoft 365 Empresa Básico o Estándar. Consulte [Defender para Office 365 Plan 1 y Plan 2](/microsoft-365/security/security/office-365-security/overview#microsoft-defender-for-office-365-plan-1-vs-plan-2-cheat-sheet).
 
 > [!TIP]
 > Para obtener más información sobre lo que incluye cada plan, consulte [Reimagine productivity with Microsoft 365 and Microsoft Teams (Reimagine productividad con Microsoft 365 y Microsoft Teams](https://www.microsoft.com/en-us/microsoft-365/business/compare-all-microsoft-365-business-products-b?ef_id=8c2a86ec9ea514a008c6e419e036519c:G:s&OCID=AIDcmmwf9kwzdj_SEM_8c2a86ec9ea514a008c6e419e036519c:G:s&lnkd=Bing_O365SMB_Brand&msclkid=8c2a86ec9ea514a008c6e419e036519c)).

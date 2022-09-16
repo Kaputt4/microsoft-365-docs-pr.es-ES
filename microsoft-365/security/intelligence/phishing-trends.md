@@ -1,9 +1,9 @@
 ---
-title: Tendencias y técnicas de phishing
+title: Tendencias y técnicas de suplantación de identidad (phishing)
 ms.reviewer: ''
 description: Obtenga información sobre cómo detectar técnicas de suplantación de identidad (phishing)
 keywords: seguridad, malware, phishing, información, estafa, ingeniería social, cebo, señuelo, protección, tendencias, ataque dirigido, phishing de lanza, caza de ballenas
-ms.prod: m365-security
+ms.service: microsoft-365-security
 ms.mktglfcycl: secure
 ms.sitesec: library
 ms.localizationpriority: medium
@@ -14,15 +14,14 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 search.appverid: met150
-ms.technology: m365d
-ms.openlocfilehash: 7bfad3fdad392c2ea0795d24e21d6f8c2848f70b
-ms.sourcegitcommit: 133bf9097785309da45df6f374a712a48b33f8e9
+ms.openlocfilehash: 5b821d79c4f4359c3548c2904ea2febb94308188
+ms.sourcegitcommit: c29af68260ba8676083674b3c70209bff2c2e362
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/10/2022
-ms.locfileid: "66016084"
+ms.lasthandoff: 09/16/2022
+ms.locfileid: "67743314"
 ---
-# <a name="phishing-trends-and-techniques"></a>Tendencias y técnicas de phishing
+# <a name="phishing-trends-and-techniques"></a>Tendencias y técnicas de suplantación de identidad (phishing)
 
 Los ataques de suplantación de identidad son estafas que a menudo usan cebo de ingeniería social o contenido de señuelo. La comunicación de apariencia legítima, normalmente el correo electrónico, que vincula a un sitio de suplantación de identidad es uno de los métodos más comunes que se usan en los ataques de suplantación de identidad (phishing). El sitio de suplantación de identidad suele imitar las páginas de inicio de sesión que requieren que los usuarios escriban credenciales e información de la cuenta. A continuación, el sitio de suplantación de identidad captura la información confidencial en cuanto el usuario la proporciona, lo que proporciona a los atacantes acceso a la información.
 

@@ -8,12 +8,12 @@ ms.topic: article
 ms.service: bookings
 ms.localizationpriority: medium
 description: Obtenga información sobre cómo configurar notificaciones de texto SMS para clientes, clientes y asociados en Microsoft Bookings.
-ms.openlocfilehash: e5c2b384898dfc4f20a6c57e076f8c3dc59e3c04
-ms.sourcegitcommit: 02a9c7f915d3a795a373b62dbdee2925966703f5
+ms.openlocfilehash: 6a3c777f786ae62ec4a40f2609bf80d73c5629f1
+ms.sourcegitcommit: c29af68260ba8676083674b3c70209bff2c2e362
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/08/2022
-ms.locfileid: "67623687"
+ms.lasthandoff: 09/16/2022
+ms.locfileid: "67737596"
 ---
 # <a name="configure-sms-text-notifications-and-reminders-in-microsoft-bookings"></a>Configurar notificaciones y avisos de texto SMS en Microsoft Bookings
 
@@ -22,7 +22,7 @@ Con Microsoft Bookings, puede configurar notificaciones de texto SMS que se envi
 Las notificaciones por SMS incluirán el vínculo de reunión de Teams para citas de reserva virtuales.
 
 > [!Note]
-> Proporcionaremos notificaciones SMS ilimitadas hasta el 30 de septiembre de 2022 para los clientes con licencias de Bookings. A medida que nos acerquemos al final del período de promoción, proporcionaremos detalles adicionales sobre los requisitos de licencia. Póngase en contacto con su equipo de cuenta o soporte técnico para recibir los detalles de precios después del período de promoción.
+> Proporcionaremos notificaciones SMS ilimitadas hasta el 30 de noviembre de 2022 para los clientes con licencias de Bookings. A medida que nos acerquemos al final del período de promoción, proporcionaremos detalles adicionales sobre los requisitos de licencia. Póngase en contacto con su equipo de cuenta o soporte técnico para recibir los detalles de precios después del período de promoción.
 
 ## <a name="before-you-begin"></a>Antes de empezar
 
@@ -41,7 +41,7 @@ Puede configurar la notificación SMS en Bookings de un par de maneras:
 > [!NOTE]
 > Debe ser administrador de Teams para ver los datos de Teams y Bookings en el Centro de administración de Teams.
 
-Puede realizar un seguimiento de los datos clave sobre el uso de notificaciones SMS en su organización en el Centro de administración de Teams. Los informes de uso incluyen datos como la hora y la fecha de envío, el número de origen, el tipo de mensaje, el tipo de evento y el estado de entrega. Puede usar la telemetría de notificaciones POR SMS durante el período promocional para ayudar a prever y presupuestar las notificaciones POR SMS después del 30 de septiembre de 2022.
+Puede realizar un seguimiento de los datos clave sobre el uso de notificaciones SMS en su organización en el Centro de administración de Teams. Los informes de uso incluyen datos como la hora y la fecha de envío, el número de origen, el tipo de mensaje, el tipo de evento y el estado de entrega. Puede usar la telemetría de notificaciones POR SMS durante el período promocional para ayudar a prever y presupuestar las notificaciones POR SMS después del 30 de noviembre de 2022.
 
 1. En el Centro de administración de Teams, **notificaciones sms de visitas virtuales**.
 

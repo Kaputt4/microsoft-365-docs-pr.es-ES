@@ -2,10 +2,10 @@
 metadata:
   title: Preguntas más frecuentes para desarrolladores de software
   ms.reviewer: 
-  description: Esta página proporciona respuestas a preguntas comunes que recibimos de desarrolladores de software
+  description: Esta página proporciona respuestas a preguntas comunes que recibimos de los desarrolladores de software.
   keywords: wdsi, software, developer, faq, dispute, false-positive, classify, installer, software, bundler, blocking
   search.product: eADQiWindows 10XVcnh
-  ms.prod: m365-security
+  ms.service: microsoft-365-security
   ms.mktglfcycl: deploy
   ms.sitesec: library
   ms.pagetype: security
@@ -17,43 +17,43 @@ metadata:
   ms.collection: M365-security-compliance
   ms.topic: faq
   ms.technology: m365d
-  ms.openlocfilehash: 732361669e667aeab4f6781c8a82e7989ecf5b03
-  ms.sourcegitcommit: b3530441288b2bc44342e00e9025a49721796903
+  ms.openlocfilehash: 79788aea9133d98097b5f944fa97b46450e665d0
+  ms.sourcegitcommit: c29af68260ba8676083674b3c70209bff2c2e362
   ms.translationtype: MT
   ms.contentlocale: es-ES
-  ms.lasthandoff: 03/20/2022
-  ms.locfileid: "63683943"
+  ms.lasthandoff: 09/16/2022
+  ms.locfileid: "67738541"
 title: Preguntas más frecuentes para desarrolladores de software
-summary: Esta página proporciona respuestas a preguntas comunes que recibimos de desarrolladores de software. Para obtener instrucciones generales sobre cómo enviar malware o archivos detectados incorrectamente, lea la guía de envío.
+summary: En esta página se proporcionan respuestas a preguntas comunes que recibimos de los desarrolladores de software. Para obtener instrucciones generales sobre el envío de malware o archivos detectados incorrectamente, lea la guía de envío.
 sections:
 - name: Ignorado
   questions:
   - question: >
-      ¿Microsoft acepta archivos para una lista conocida o un programa de prevención de falsos positivos?
+      ¿Acepta Microsoft archivos para una lista conocida o un programa de prevención de falsos positivos?
     answer: >
-      No. No aceptamos estas solicitudes de desarrolladores de software. Firmar los archivos del programa de forma coherente, con un certificado digital emitido por una autoridad raíz de confianza, ayuda a nuestro equipo de investigación a identificar rápidamente el origen de un programa y aplicar los conocimientos adquiridos anteriormente. En algunos casos, esto puede provocar que el programa se agregó rápidamente a la lista conocida. Con mucha menos frecuencia, in agregará el certificado digital a una lista de editores de confianza.
+      No. No aceptamos estas solicitudes de los desarrolladores de software. Firmar los archivos del programa de forma coherente, con un certificado digital emitido por una autoridad raíz de confianza, ayuda a nuestro equipo de investigación a identificar rápidamente el origen de un programa y a aplicar los conocimientos adquiridos anteriormente. En algunos casos, esto podría dar lugar a que el programa se agregue rápidamente a la lista conocida. Con mucha menos frecuencia, en agregará el certificado digital a una lista de publicadores de confianza.
   - question: >
-      ¿Cómo puedo impugnar la detección de mi programa?
+      Cómo disputa la detección de mi programa?
     answer: >
-      Envíe el archivo en cuestión como desarrollador de software. Espere hasta que el envío tenga una determinación final.
+      Envíe el archivo en cuestión como desarrollador de software. Espere hasta que su envío tenga una determinación final.
 
 
-      Si no está satisfecho con nuestra determinación del envío, use el formulario de contacto para desarrolladores proporcionado con los resultados del envío para llegar a Microsoft. Usaremos la información que proporciones para investigar más si es necesario.
+      Si no está satisfecho con nuestra determinación del envío, use el formulario de contacto para desarrolladores que se proporciona con los resultados del envío para llegar a Microsoft. Usaremos la información que proporcione para investigar más si es necesario.
 
 
-      Animamos a todos los proveedores de software y desarrolladores a leer acerca de cómo [Microsoft identifica el malware y las aplicaciones potencialmente no deseadas (PUA).](criteria.md).
+      Animamos a todos los proveedores y desarrolladores de software a leer sobre [cómo Microsoft identifica el malware y las aplicaciones potencialmente no deseadas (PUA).](criteria.md)
   - question: >
       ¿Por qué Microsoft pide una copia de mi programa?
     answer: >
-      Proporcionar copias puede ayudarnos con nuestro análisis. Los participantes del [Microsoft Active Protection Service (MAPS)](https://www.microsoft.com/msrc/mapp) pueden recibir ocasionalmente estas solicitudes. Las solicitudes se detendrán una vez que nuestros sistemas han recibido y procesado el archivo.
+      Proporcionar copias puede ayudarnos con nuestro análisis. Los participantes del [servicio Microsoft Active Protection (MAPS)](https://www.microsoft.com/msrc/mapp) pueden recibir ocasionalmente estas solicitudes. Las solicitudes se detendrán una vez que nuestros sistemas hayan recibido y procesado el archivo.
   - question: >
-      ¿Por qué Microsoft clasifica mi instalador como un empaquetador de software?
+      ¿Por qué Microsoft clasifica mi instalador como un paquete de software?
     answer: >
-      Contiene instrucciones para ofrecer un programa clasificado como software no deseado. Puede revisar los criterios [que usamos](criteria.md) para comprobar si las aplicaciones tienen comportamientos que se consideran no deseados.
+      Contiene instrucciones para ofrecer un programa clasificado como software no deseado. Puede revisar los [criterios](criteria.md) que usamos para comprobar si las aplicaciones tienen comportamientos que se consideran no deseados.
   - question: >
-      ¿Por qué el firewall Windows Defender mi programa?
+      ¿Por qué el firewall de Windows Defender bloquea mi programa?
     answer: >
-      Los bloques de firewall no están relacionados con Antivirus de Microsoft Defender y otros antimalware de Microsoft. [Obtenga información sobre Windows Defender Firewall](/windows/security/windows-firewall/windows-firewall-with-advanced-security.md).
+      Los bloques de firewall no están relacionados con el Antivirus de Microsoft Defender ni con otros antimalware de Microsoft. [Obtenga información sobre Windows Defender Firewall](/windows/security/windows-firewall/windows-firewall-with-advanced-security.md).
   - question: >
-      ¿Por qué SmartScreen de Microsoft Defender que mi programa no se descarga normalmente?
-    answer: Esto no está relacionado con Antivirus de Microsoft Defender y otros antimalware de Microsoft. [Obtenga información sobre SmartScreen de Microsoft Defender](/windows/security/microsoft-defender-smartscreen/microsoft-defender-smartscreen-overview.md)
+      ¿Por qué SmartScreen de Microsoft Defender dice que mi programa no se descarga con frecuencia?
+    answer: Esto no está relacionado con el Antivirus de Microsoft Defender ni con otros antimalware de Microsoft. [Más información sobre SmartScreen de Microsoft Defender](/windows/security/microsoft-defender-smartscreen/microsoft-defender-smartscreen-overview.md)

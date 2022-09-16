@@ -7,10 +7,10 @@ author: denisebmsft
 manager: dansimp
 audience: Admin
 ms.topic: conceptual
-ms.service: microsoft-365-business
-ms.subservice: business-premium
+ms.service: microsoft-365-security
+ms.subservice: other
+ms.date: 09/15/2022
 ms.localizationpriority: high
-ms.date: 08/11/2022
 ms.collection:
 - M365-Campaigns
 - m365solution-smb
@@ -21,12 +21,12 @@ search.appverid:
 - BCS160
 - MET150
 description: Información general sobre cómo colaborar y compartir archivos y comunicarse de forma segura con Teams en Microsoft 365 Empresa Premium. En el entorno cerrado proporcionado por Teams, los archivos y las comunicaciones están libres de ciberamenazas y ciberataques.
-ms.openlocfilehash: 5c2cff10d10ddaa10fee524e06889ad42eda0aca
-ms.sourcegitcommit: 651610ca73bfd1d008d97311b59782790df664fb
+ms.openlocfilehash: c313398dd1b142ae996739b359eb8b7ba7754d03
+ms.sourcegitcommit: c29af68260ba8676083674b3c70209bff2c2e362
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/07/2022
-ms.locfileid: "67614998"
+ms.lasthandoff: 09/16/2022
+ms.locfileid: "67738935"
 ---
 # <a name="collaborate-and-share-securely"></a>Colaborar y compartir de forma segura
 

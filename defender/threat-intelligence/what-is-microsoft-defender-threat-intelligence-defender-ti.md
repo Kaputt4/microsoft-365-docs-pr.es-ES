@@ -3,16 +3,17 @@ title: ¿Qué es Inteligencia sobre amenazas de Microsoft Defender (Defender T
 description: En este artículo de información general, obtendrá información sobre las características principales que se incluyen con inteligencia sobre amenazas de Microsoft Defender (TI de Defender).
 author: alexroland24
 ms.author: aroland
+manager: dolmont
 ms.service: threat-intelligence
 ms.topic: overview
 ms.date: 08/02/2022
 ms.custom: template-overview
-ms.openlocfilehash: 35dbabf839e6af0129b04b355771e70dfedeccfc
-ms.sourcegitcommit: 9b133379196da2b3a4bb311b07ff274f43780f68
+ms.openlocfilehash: 62e3df65479bec45896504dc8eda006e2a41d75b
+ms.sourcegitcommit: c29af68260ba8676083674b3c70209bff2c2e362
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/14/2022
-ms.locfileid: "67698703"
+ms.lasthandoff: 09/16/2022
+ms.locfileid: "67739276"
 ---
 # <a name="what-is-microsoft-defender-threat-intelligence-defender-ti"></a>¿Qué es Inteligencia sobre amenazas de Microsoft Defender (Defender TI)?
 

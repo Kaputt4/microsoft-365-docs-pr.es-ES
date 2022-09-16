@@ -1,7 +1,8 @@
 ---
 title: preguntas más frecuentes sobre el almacenamiento extraíble Microsoft Defender para punto de conexión Control de dispositivos
 description: Responde a las preguntas más frecuentes sobre el almacenamiento extraíble de control de dispositivos MDE.
-ms.prod: m365-security
+ms.service: microsoft-365-security
+ms.subservice: mde
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -13,16 +14,15 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.custom: admindeeplinkDEFENDER
 ms.topic: conceptual
-ms.technology: mde
 ms.date: 08/25/2022
 ms.reviewer: tewchen
 search.appverid: met150
-ms.openlocfilehash: 58eacc14e69a4d6c18b7f62be6d5209773a51f08
-ms.sourcegitcommit: b1ed6470645455c2f1fcf467450debc622c40147
+ms.openlocfilehash: 89b4b0f3712132b40050205a38fb761b0ba1db1d
+ms.sourcegitcommit: c29af68260ba8676083674b3c70209bff2c2e362
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/15/2022
-ms.locfileid: "67711866"
+ms.lasthandoff: 09/16/2022
+ms.locfileid: "67736055"
 ---
 # <a name="microsoft-defender-for-endpoint-device-control-removable-storage-frequently-asked-questions"></a>preguntas más frecuentes sobre el almacenamiento extraíble Microsoft Defender para punto de conexión Control de dispositivos
 

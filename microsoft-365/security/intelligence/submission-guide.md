@@ -3,7 +3,7 @@ title: Envío de archivos para su análisis por Parte de Microsoft
 description: Obtenga información sobre cómo enviar archivos a Microsoft para el análisis de malware, cómo realizar un seguimiento de los envíos y las detecciones de disputas.
 ms.reviewer: ''
 keywords: seguridad, ayuda de envío de ejemplo, archivo de malware, archivo de virus, archivo troyano, enviar, enviar a Microsoft, enviar una muestra, virus, troyano, gusano, no detectado, no detecta, correo electrónico microsoft, malware de correo electrónico, creo que se trata de malware, creo que es un virus, donde puedo enviar un virus, es este un virus, MSE, no detecta, sin firma, sin detección, archivo sospechoso,  MMPC, Centro de protección contra malware de Microsoft, investigadores, analista, WDSI, inteligencia de seguridad
-ms.prod: m365-security
+ms.service: microsoft-365-security
 ms.mktglfcycl: secure
 ms.sitesec: library
 ms.localizationpriority: medium
@@ -14,13 +14,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 search.appverid: met150
-ms.technology: m365d
-ms.openlocfilehash: 28dfb21cb918ca5f0b99579304f3135664e11533
-ms.sourcegitcommit: adc4e5707aa074fc4aa0cb9e8c2986fc8b88813c
+ms.openlocfilehash: 778fd439c7c886be558eaf058ae941267bf0d52c
+ms.sourcegitcommit: c29af68260ba8676083674b3c70209bff2c2e362
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/01/2022
-ms.locfileid: "67112051"
+ms.lasthandoff: 09/16/2022
+ms.locfileid: "67736020"
 ---
 # <a name="submit-files-for-analysis"></a>Enviar archivos para su análisis
 

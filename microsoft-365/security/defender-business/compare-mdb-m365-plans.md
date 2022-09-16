@@ -10,19 +10,19 @@ ms.topic: reference
 ms.service: microsoft-365-security
 ms.subservice: mdb
 ms.localizationpriority: medium
-ms.date: 08/30/2022
+ms.date: 09/15/2022
 ms.reviewer: shlomiakirav
 ms.collection:
 - SMB
 - m365-initiative-defender-business
 - m365-security-compliance
 f1.keywords: NOCSH
-ms.openlocfilehash: fb43a239584ea2439b6f5c1042675cf81e4b8adc
-ms.sourcegitcommit: b1ed6470645455c2f1fcf467450debc622c40147
+ms.openlocfilehash: e3255ed8e5e3d8a7d1ba1dcf34286a8c663da5f6
+ms.sourcegitcommit: c29af68260ba8676083674b3c70209bff2c2e362
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/15/2022
-ms.locfileid: "67710969"
+ms.lasthandoff: 09/16/2022
+ms.locfileid: "67736462"
 ---
 # <a name="compare-security-features-in-microsoft-365-plans-for-small-and-medium-sized-businesses"></a>Comparación de características de seguridad en planes de Microsoft 365 para pequeñas y medianas empresas
 
@@ -45,7 +45,7 @@ Microsoft ofrece una amplia variedad de soluciones y servicios en la nube, inclu
 | Plan | Descripción |
 |:---|:---|
 | **[Defender para empresas](mdb-overview.md)** (independiente) | **Protección antivirus, antimalware y ransomware para dispositivos**<ul><li>[Protección de última generación](../defender-endpoint/microsoft-defender-antivirus-in-windows-10.md) (protección antivirus/antimalware en dispositivos junto con protección en la nube)</li><li>[Reducción de la superficie expuesta a ataques](../defender-endpoint/overview-attack-surface-reduction.md) (protección de red, firewall y reglas de reducción de superficie expuesta a ataques) <sup>[[a](#fna)]</sup></li><li>[Detección y respuesta de puntos de conexión](../defender-endpoint/overview-endpoint-detection-response.md) (detección basada en comportamiento y acciones de respuesta manual)</li><li>[Investigación y respuesta automatizadas](../defender/m365d-autoir.md) (con recuperación automática para las amenazas detectadas)</li><li>[Administración de vulnerabilidades de Microsoft Defender](mdb-view-tvm-dashboard.md) (ver los dispositivos expuestos y las recomendaciones)</li><li>[Compatibilidad multiplataforma para dispositivos](mdb-onboard-devices.md) (Windows, Mac, iOS y Android) <sup>[[b](#fnb)]</sup></li><li>[Administración centralizada e informes](mdb-get-started.md) (portal de Microsoft 365 Defender)</li><li>[API para la integración](../defender-endpoint/management-apis.md) (para asociados de Microsoft o sus herramientas y aplicaciones personalizadas)</li></ul> |
-| **[Microsoft 365 Empresa Premium](../../business-premium/index.md)** | **Funcionalidades de Defender para empresas, junto con productividad y funcionalidades de seguridad adicionales**<ul><li>[Microsoft 365 Empresa Estándar](../../admin/admin-overview/what-is-microsoft-365-for-business.md) (aplicaciones y servicios de Office y Microsoft Teams)</li><li>[Activación de equipos compartidos](/deployoffice/overview-shared-computer-activation) (para implementar Aplicaciones Microsoft 365)</li><li>[Windows 10/11 Empresa](../../business-premium/m365bp-upgrade-windows-10-pro.md) (actualización de versiones anteriores de Windows Pro)</li><li>[Windows Autopilot](/mem/autopilot/windows-autopilot) (para configurar y configurar dispositivos Windows)</li><li>[Exchange Online Protection](../office-365-security/exchange-online-protection-overview.md) (antiphishing, antispam, antimalware e inteligencia spoof para correo electrónico)</li><li>[Microsoft Defender para Office 365 Plan 1](../office-365-security/overview.md) (antiphishing avanzado, detecciones en tiempo real, datos adjuntos seguros, vínculos seguros)</li><li>[Archivado de expansión automática](../../compliance/autoexpanding-archiving.md) (para correo electrónico)</li><li>[Azure Active Directory Premium Plan 1](/azure/active-directory/fundamentals/active-directory-whatis) (administración de identidades)</li><li>[Microsoft Intune](/mem/intune/fundamentals/what-is-intune) (incorporación y administración de dispositivos)</li><li>[Plan 1 de Azure Information Protection Premium](/azure/information-protection/what-is-information-protection) (protección para información confidencial)</li><li>[Azure Virtual Desktop](/azure/virtual-desktop/overview) (máquinas virtuales seguras y administradas de forma centralizada en la nube)</li></ul> |
+| **[Microsoft 365 Empresa Premium](../../business-premium/index.md)** | **Funcionalidades de Defender para empresas, junto con productividad y funcionalidades de seguridad adicionales**<ul><li>[Microsoft 365 Empresa Estándar](../../admin/admin-overview/what-is-microsoft-365-for-business.md) (aplicaciones y servicios de Office y Microsoft Teams)</li><li>[Activación de equipos compartidos](/deployoffice/overview-shared-computer-activation) (para implementar Aplicaciones Microsoft 365)</li><li>[Windows 10/11 Empresa](../../business-premium/m365bp-upgrade-windows-10-pro.md) (actualización de versiones anteriores de Windows Pro)</li><li>[Windows Autopilot](/mem/autopilot/windows-autopilot) (para configurar y configurar dispositivos Windows)</li><li>[Exchange Online Protection](../office-365-security/exchange-online-protection-overview.md) (antiphishing, antispam, antimalware e inteligencia spoof para correo electrónico)</li><li>[Microsoft Defender para Office 365 Plan 1](/microsoft-365/office-365-security/overview) (antiphishing avanzado, detecciones en tiempo real, datos adjuntos seguros, vínculos seguros)</li><li>[Archivado de expansión automática](../../compliance/autoexpanding-archiving.md) (para correo electrónico)</li><li>[Azure Active Directory Premium Plan 1](/azure/active-directory/fundamentals/active-directory-whatis) (administración de identidades)</li><li>[Microsoft Intune](/mem/intune/fundamentals/what-is-intune) (incorporación y administración de dispositivos)</li><li>[Plan 1 de Azure Information Protection Premium](/azure/information-protection/what-is-information-protection) (protección para información confidencial)</li><li>[Azure Virtual Desktop](/azure/virtual-desktop/overview) (máquinas virtuales seguras y administradas de forma centralizada en la nube)</li></ul> |
 
   
 (<a id="fna">a</a>) Microsoft Intune es necesario modificar o personalizar las reglas de reducción de superficie expuesta a ataques. Intune se puede agregar a la versión independiente de Defender para empresas. Intune se incluye en Microsoft 365 Empresa Premium.

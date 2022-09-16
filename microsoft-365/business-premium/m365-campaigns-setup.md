@@ -7,10 +7,10 @@ author: denisebmsft
 manager: dansimp
 audience: Admin
 ms.topic: overview
-ms.service: microsoft-365-business
-ms.subservice: business-premium
+ms.service: microsoft-365-security
+ms.subservice: other
+ms.date: 09/15/2022
 ms.localizationpriority: high
-ms.date: 08/05/2022
 ms.collection:
 - M365-Campaigns
 - m365solution-smb
@@ -21,12 +21,12 @@ search.appverid:
 - MET150
 ms.assetid: 496e690b-b75d-4ff5-bf34-cc32905d0364
 description: Introducción a la configuración de Microsoft 365 Empresa para campañas u otras empresas
-ms.openlocfilehash: d3bcf371961de8870f9892bd0818341b0288b385
-ms.sourcegitcommit: 651610ca73bfd1d008d97311b59782790df664fb
+ms.openlocfilehash: 6ea72b060d97185dcd4607e911f087c8791916b1
+ms.sourcegitcommit: c29af68260ba8676083674b3c70209bff2c2e362
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/07/2022
-ms.locfileid: "67613393"
+ms.lasthandoff: 09/16/2022
+ms.locfileid: "67739022"
 ---
 # <a name="setup-for-microsoft-365-business-for-campaigns"></a>Configuración de Microsoft 365 Empresa para campañas
 

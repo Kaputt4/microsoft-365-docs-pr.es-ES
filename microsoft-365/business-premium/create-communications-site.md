@@ -1,5 +1,5 @@
 ---
-title: Crear un sitio de comunicaciones de SharePoint en Teams para Microsoft 365 Empresa Premium
+title: Creación de un sitio de comunicaciones de SharePoint en Teams con Microsoft 365 para empresas
 f1.keywords:
 - NOCSH
 ms.author: deniseb
@@ -7,8 +7,9 @@ author: denisebmsft
 manager: dansimp
 ms.audience: Admin
 ms.topic: how-to
-ms.service: microsoft-365-business
-ms.subservice: business-premium
+ms.service: microsoft-365-security
+ms.subservice: other
+ms.date: 09/15/2022
 ms.localizationpriority: high
 ms.collection:
 - Adm_O365
@@ -24,13 +25,13 @@ search.appverid:
 - BCS160
 - MET150
 - MOE150
-description: Obtenga información sobre por qué y cómo crear un sitio de comunicaciones de SharePoint para su campaña o negocio con Microsoft 365 Empresa Premium, y proteja al equipo de ciberataques y ataques de malware y otras amenazas debido a un uso compartido incorrecto de archivos.
-ms.openlocfilehash: 63831f527aa63909ae055304cdeb7decc1ed62c5
-ms.sourcegitcommit: 651610ca73bfd1d008d97311b59782790df664fb
+description: Cree un sitio de comunicaciones de SharePoint para su campaña o negocio y proteja a su equipo de ciberataques e incursiones contra malware y otras amenazas debido al uso compartido de archivos inadecuado.
+ms.openlocfilehash: b70d2726a983d02ce5157815623936472077ad2b
+ms.sourcegitcommit: c29af68260ba8676083674b3c70209bff2c2e362
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/07/2022
-ms.locfileid: "67612997"
+ms.lasthandoff: 09/16/2022
+ms.locfileid: "67738102"
 ---
 # <a name="create-a-communications-site"></a>Crear un sitio de comunicaciones
 
@@ -52,7 +53,7 @@ Incluya los siguientes elementos en un sitio de comunicaciones:
 
 ![Diagrama de una página de comunicaciones de SharePoint con espacio para elementos comunes que una campaña necesitaría.](../media/m365-democracy-comms-site.png)
 
-## <a name="infographic-create-a-communications-site-infographic"></a>Infografía: Crear una infografía de sitio de comunicaciones
+## <a name="infographic-create-a-communications-site-infographic"></a>Infografía: Crear una infografía del sitio de comunicaciones
 
 Los siguientes vínculos para PowerPoint y PDF se pueden descargar e imprimir en formato tabloide (también conocido como libro de contabilidad, 11 x 17 o A3).
 
@@ -62,7 +63,7 @@ Los siguientes vínculos para PowerPoint y PDF se pueden descargar e imprimir en
 
 ## <a name="set-it-up"></a>Configúrelo
 
-1. Inicie sesión en https://Office.com.
+1. Inicie sesión en [https://Office.com](https://Office.com).
 
 2. En la esquina superior izquierda de la página, seleccione el icono del iniciador de aplicaciones y, después, seleccione el mosaico de **SharePoint**. Si no ve el mosaico de **SharePoint**, haga clic en el mosaico de **Sitios** o de **Todos** si SharePoint no aparece.
 

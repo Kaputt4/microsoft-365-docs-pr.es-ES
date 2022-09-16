@@ -12,12 +12,12 @@ ms.service: O365-seccomp
 ms.localizationpriority: high
 ms.collection: M365-security-compliance
 description: Configuración del acceso entre inquilinos de Azure AD y directivas de acceso condicional para el contenido cifrado por Microsoft Purview Information Protection.
-ms.openlocfilehash: 0a99dc12c8ff779008add2f37cdbe4ed7e1f263a
-ms.sourcegitcommit: d09eb780dc41a01796eb8137fbe9267231af6746
+ms.openlocfilehash: 70594e80518a83a8f7aabf05ab2e53da6c8b85f5
+ms.sourcegitcommit: c29af68260ba8676083674b3c70209bff2c2e362
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/19/2022
-ms.locfileid: "67384597"
+ms.lasthandoff: 09/16/2022
+ms.locfileid: "67735789"
 ---
 # <a name="azure-ad-configuration-for-encrypted-content"></a>Configuración de Azure AD para contenido cifrado
 
@@ -114,10 +114,14 @@ Sin embargo, la cuenta automática de invitado no se crea inmediatamente en este
 > [!TIP]
 > Dado que no puede estar seguro de que los usuarios externos vayan a utilizar una aplicación cliente de Office compatible, compartir enlaces desde SharePoint y OneDrive después de crear cuentas de invitado (para usuarios específicos) o cuando use la [integración de SharePoint y OneDrive con Azure AD B2B](/sharepoint/sharepoint-azureb2b-integration-preview) (para cualquier usuario autenticado) es un método más fiable para admitir la colaboración segura con usuarios externos.
 
-## <a name="next-steps"></a>Siguientes pasos
+## <a name="next-steps"></a>Pasos siguientes
 
-Si usa [etiquetas de confidencialidad](sensitivity-labels.md) para cifrar documentos y correos electrónicos, es posible que le interese [soporte técnico para usuarios externos y contenido etiquetado](sensitivity-labels-office-apps.md#support-for-external-users-and-labeled-content) para comprender qué configuración de etiquetas se aplica a todos los inquilinos. 
+Para ver las configuraciones que puede necesitar para los servicios de infraestructura de red, consulte [Firewalls e infraestructura de red](/azure/information-protection/requirements#firewalls-and-network-infrastructure).
 
-Si está interesado en obtener información sobre cómo y cuándo se accede al servicio de cifrado, consulte [Tutorial sobre cómo funciona Azure RMS: Primer uso, protección de contenido y consumo de contenido](/azure/information-protection/how-does-it-work#walkthrough-of-how-azure-rms-works-first-use-content-protection-content-consumption).
+Si usa [etiquetas de confidencialidad](sensitivity-labels.md) para cifrar documentos y correos electrónicos, es posible que le interese [soporte técnico para usuarios externos y contenido etiquetado](sensitivity-labels-office-apps.md#support-for-external-users-and-labeled-content) para comprender qué configuración de etiquetas se aplica a todos los inquilinos. Para obtener instrucciones de configuración para la configuración de cifrado de etiquetas, consulte [Restricción del acceso al contenido mediante etiquetas de confidencialidad para aplicar el cifrado](encryption-sensitivity-labels.md).
+
+¿Le interesa saber cómo y cuándo se accede al servicio de cifrado? Consulte [Tutorial sobre cómo funciona Azure RMS: Primer uso, protección de contenido y consumo de contenido](/azure/information-protection/how-does-it-work#walkthrough-of-how-azure-rms-works-first-use-content-protection-content-consumption).
+
+
 
 

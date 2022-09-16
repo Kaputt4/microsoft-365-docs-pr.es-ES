@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Obtenga información sobre cómo funciona la retención de Microsoft 365 para SharePoint y OneDrive, mediante directivas de retención y etiquetas de retención para administrar la retención o la eliminación automáticas de datos de su organización.
-ms.openlocfilehash: 3e21d720b2d4afa70a83011b1e2486151f6c3cd2
-ms.sourcegitcommit: 217108c59be41b01963a393b4f16d137636fe6a8
+ms.openlocfilehash: 98bef6ba43fd57b2533badcf4578668cd12860dd
+ms.sourcegitcommit: c29af68260ba8676083674b3c70209bff2c2e362
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/12/2022
-ms.locfileid: "67326439"
+ms.lasthandoff: 09/16/2022
+ms.locfileid: "67735832"
 ---
 # <a name="learn-about-retention-for-sharepoint-and-onedrive"></a>Obtenga más información sobre la retención para SharePoint y OneDrive
 
@@ -72,7 +72,7 @@ Un trabajo de temporizador se ejecuta periódicamente en la biblioteca de suspen
 
 Este comportamiento para copiar archivos en la biblioteca de suspensión para conservación se aplica al contenido que existe cuando se aplicó la configuración de retención. Además, para las directivas de retención, cualquier contenido nuevo que se cree o agregue al sitio después de incluirlo en la directiva se conservará en la biblioteca de conservación de documentos. Sin embargo, el nuevo contenido no se copia en la biblioteca de conservación de documentos la primera vez que se edita, solo cuando se elimina. Para conservar todas las versiones de un archivo el [control de versiones](#how-retention-works-with-document-versions) debe estar activado para el sitio original.
   
-Los usuarios ven un mensaje de error si intentan eliminar una biblioteca, lista, carpeta o sitio sujeto a retención. Pueden eliminar una carpeta si primero se mueven o eliminan los archivos en la carpeta que están sujetos a retención.
+Los usuarios ven un mensaje de error si intentan eliminar una biblioteca, lista, carpeta o sitio sujeto a retención. Pueden eliminar una carpeta sin etiquetar si primero mueven o eliminan los archivos de la carpeta que están sujetos a retención.
 
 Los usuarios también ven un mensaje de error si intentan eliminar un elemento etiquetado en cualquiera de las siguientes circunstancias. El elemento no se copia en la biblioteca de suspensión para conservación, pero permanece en la ubicación original:
 

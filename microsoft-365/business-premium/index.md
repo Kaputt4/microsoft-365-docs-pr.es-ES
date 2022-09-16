@@ -7,10 +7,10 @@ author: denisebmsft
 manager: dansimp
 ms.audience: Admin
 ms.topic: overview
-ms.service: microsoft-365-business
-ms.subservice: business-premium
+ms.service: microsoft-365-security
+ms.subservice: other
+ms.date: 09/15/2022
 ms.localizationpriority: high
-ms.date: 08/24/2022
 ms.collection:
 - M365-Campaigns
 - m365solution-overview
@@ -22,12 +22,12 @@ search.appverid:
 - BCS160
 - MET150
 description: Aprenda a implementar la ciberseguridad para pequeñas o medianas empresas con Microsoft 365 Empresa Premium. Las funcionalidades y características de ciberseguridad están optimizadas para evitar ciberataques y infracciones de seguridad, y ayudar a proteger los datos, los dispositivos y la información con ciberdefensas de alto nivel.
-ms.openlocfilehash: 057aff207ec19161ba9ecd1e078dd2fee6bbd533
-ms.sourcegitcommit: 651610ca73bfd1d008d97311b59782790df664fb
+ms.openlocfilehash: d65675f88d84a7ff982a2e2ab1e76c0452a406f5
+ms.sourcegitcommit: c29af68260ba8676083674b3c70209bff2c2e362
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/07/2022
-ms.locfileid: "67613436"
+ms.lasthandoff: 09/16/2022
+ms.locfileid: "67743074"
 ---
 # <a name="microsoft-365-business-premium--productivity-and-cybersecurity-for-small-business"></a>Microsoft 365 Empresa Premium: productividad y ciberseguridad para pequeñas empresas
 

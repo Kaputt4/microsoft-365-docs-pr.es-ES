@@ -1,5 +1,5 @@
 ---
-title: Administración del contenido activo en documentos de Office para administradores de TI
+title: Administrar contenido activo en documentos de Office para administradores de TI
 f1.keywords:
 - NOCSH
 ms.author: chrisda
@@ -8,36 +8,36 @@ manager: dansimp
 audience: Admin
 ms.topic: tutorial
 ms.localizationpriority: medium
-ms.prod: m365-security
+ms.service: microsoft-365-security
 ms.collection:
 - M365-security-compliance
 search.appverid:
 - MET150
 ROBOTS: NOINDEX,NOFOLOW
-description: Los administradores pueden aprender a crear directivas para bloquear el contenido activo en Office documentos
-ms.openlocfilehash: 7a24c56bdd388f2dc9a8f408b52b2de1c6805a0a
-ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
+description: Los administradores pueden aprender a crear directivas para bloquear el contenido activo en documentos de Office
+ms.openlocfilehash: 000e306fd2120fa2980d384ecdeda039f8d717f8
+ms.sourcegitcommit: c29af68260ba8676083674b3c70209bff2c2e362
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "65100949"
+ms.lasthandoff: 09/16/2022
+ms.locfileid: "67736396"
 ---
 # <a name="manage-active-content-in-office-documents"></a>Administrar contenido activo en documentos de Office
 
 > [!NOTE]
 > Las características que se describen en este artículo están en versión preliminar, no están disponibles para todos y están sujetas a cambios.
 
-Office documentos se pueden actualizar, actualizar o ejecutar automáticamente cuando contienen _contenido activo_. Algunos ejemplos de contenido activo son macros, controles de ActiveX y complementos de Office. El contenido activo puede proporcionar una funcionalidad eficaz y útil a los usuarios, pero los atacantes también pueden usar contenido activo para entregar malware.
+Los documentos de Office se pueden actualizar, actualizar o ejecutar automáticamente cuando contienen _contenido activo_. Algunos ejemplos de contenido activo son macros, controles ActiveX y complementos de Office. El contenido activo puede proporcionar una funcionalidad eficaz y útil a los usuarios, pero los atacantes también pueden usar contenido activo para entregar malware.
 
-Los administradores pueden crear directivas de organización (directivas de grupo o directivas en la nube) que limiten el uso de contenido activo a conjuntos específicos de usuarios o para deshabilitar completamente el contenido activo. Los usuarios pueden configurar sus propias opciones de seguridad y privacidad en el Centro de confianza de Office en sus aplicaciones de Office en el **Centro de confianza** **de opciones** \> **de archivo**\>.
+Los administradores pueden crear directivas de organización (directivas de grupo o directivas en la nube) que limiten el uso de contenido activo a conjuntos específicos de usuarios o para deshabilitar completamente el contenido activo. Los usuarios pueden configurar sus propias opciones de seguridad y privacidad en el Centro de confianza de Office en sus aplicaciones de Office en el **Centro de confianza** **de opciones** \> de **archivo**\>.
 
-Anteriormente, cuando los usuarios identificaban documentos como documentos de confianza, su selección permitía ejecutar contenido activo, incluso si un administrador configuraba directivas para bloquear el contenido activo en Office documentos. Ahora, las directivas establecidas por los administradores tienen prioridad sobre la identificación por parte del usuario de documentos de confianza. Este cambio en el comportamiento puede causar problemas a los usuarios.
+Anteriormente, cuando los usuarios identificaban documentos como documentos de confianza, su selección permitía que se ejecutara contenido activo, incluso si un administrador configuraba directivas para bloquear el contenido activo en documentos de Office. Ahora, las directivas establecidas por los administradores tienen prioridad sobre la identificación por parte del usuario de documentos de confianza. Este cambio en el comportamiento puede causar problemas a los usuarios.
 
 La lógica actualizada del Centro de confianza se describe en el diagrama siguiente:
 
 :::image type="content" source="../media/office-trust-center-flow.png" alt-text="Gráfico de flujo que describe la lógica del centro de confianza en el portal de Microsoft 365 Defender" lightbox="../media/office-trust-center-flow.png":::
 
-1. Un usuario abre un documento Office que contiene contenido activo.
+1. Un usuario abre un documento de Office que contiene contenido activo.
 
 2. Si el documento procede de una ubicación de confianza, el documento se abre con el contenido activo habilitado. Si el documento no procede de una ubicación de confianza, la evaluación continúa.
 
@@ -64,7 +64,7 @@ La lógica actualizada del Centro de confianza se describe en el diagrama siguie
 
 ## <a name="what-is-a-trusted-document"></a>¿Qué es un documento de confianza?
 
-Los documentos de confianza son Office documentos que se abren sin ninguna solicitud de seguridad para macros, controles de ActiveX y otros tipos de contenido activo en el documento. Vista protegida o Protección de aplicaciones no se usa para abrir el documento. Cuando los usuarios abren un documento de confianza y todo el contenido activo está habilitado. Incluso si el documento contiene nuevo contenido activo o actualizaciones del contenido activo existente, los usuarios no recibirán mensajes de seguridad la próxima vez que abran el documento.
+Los documentos de confianza son documentos de Office que se abren sin avisos de seguridad para macros, controles ActiveX y otros tipos de contenido activo en el documento. Vista protegida o Protección de aplicaciones no se usa para abrir el documento. Cuando los usuarios abren un documento de confianza y todo el contenido activo está habilitado. Incluso si el documento contiene nuevo contenido activo o actualizaciones del contenido activo existente, los usuarios no recibirán mensajes de seguridad la próxima vez que abran el documento.
 
 Debido a este comportamiento, los usuarios deben confiar claramente en los documentos solo si confían en el origen del documento.
 
@@ -80,17 +80,17 @@ Para más información, consulte los siguientes artículos:
 
 Los administradores tienen muchas maneras de configurar Office en una organización. Por ejemplo:
 
-- **Office servicio de directivas** en la nube: configure una directiva basada en el usuario que se aplique a un usuario en cualquier dispositivo que acceda a los archivos de Office aplicaciones con su cuenta de Azure AD. Consulte los pasos para [crear una configuración de directiva en la nube de Office](/DeployOffice/overview-office-cloud-policy-service) en [Office Cloud Policy Service](https://config.office.com/officeSettings/officePolicies).
-- **directivas de Office en Intune**: use el catálogo de Intune Configuración o plantillas administrativas para implementar directivas HKCU en equipos Windows 10: en el [Centro de administración de MEM](https://endpoint.microsoft.com/#blade/Microsoft_Intune_DeviceSettings/DevicesMenu/configurationProfiles), en **Perfiles de configuración** de **dispositivos**\>.
+- **Servicio de directivas** en la nube de Office: configure una directiva basada en el usuario que se aplique a un usuario en cualquier dispositivo que acceda a archivos de aplicaciones de Office con su cuenta de Azure AD. Consulte los pasos para [crear una configuración de directiva](/DeployOffice/overview-office-cloud-policy-service) en la nube de Office en el [servicio de directivas en la nube de Office](https://config.office.com/officeSettings/officePolicies).
+- **Directivas de Office en Intune**: use el catálogo de configuración de Intune o plantillas administrativas para implementar directivas HKCU en equipos Windows 10: en el [Centro de administración de MEM](https://endpoint.microsoft.com/#blade/Microsoft_Intune_DeviceSettings/DevicesMenu/configurationProfiles), en **Perfiles de configuración** de **dispositivos**\>.
   - ***Plantillas administrativas***: consulte las instrucciones para usar plantillas de Windows 10 para configurar [plantillas administrativas](/mem/intune/configuration/administrative-templates-windows).
-  - ***Configuración catálogo (versión preliminar):*** consulte las instrucciones para usar el [catálogo de Configuración (versión preliminar).](/mem/intune/configuration/settings-catalog)
-- **Directiva de grupo**: use active directory local para implementar objetos de directiva de grupo (GPO) en usuarios y equipos. Para crear un GPO para esta configuración, descargue los [archivos de plantilla administrativa más recientes (ADMX/ADML) y Office Herramienta de personalización para Aplicaciones Microsoft 365 para empresas, Office 2019 y Office 2016](https://www.microsoft.com/download/details.aspx?id=49030).
+  - ***Catálogo de configuración (versión preliminar):*** consulte las instrucciones para usar el [catálogo configuración (versión preliminar).](/mem/intune/configuration/settings-catalog)
+- **Directiva de grupo**: use active directory local para implementar objetos de directiva de grupo (GPO) en usuarios y equipos. Para crear un GPO para esta configuración, descargue los [archivos de plantilla administrativa más recientes (ADMX/ADML) y la Herramienta de personalización de Office para Aplicaciones Microsoft 365 para empresas, Office 2019 y Office 2016](https://www.microsoft.com/download/details.aspx?id=49030).
 
 ## <a name="known-issues"></a>Problemas conocidos
 
-- Cuando las **notificaciones de macro de VBA** de directiva (Access, PowerPoint, Visio, Word) o **Macro notifications** (Excel) se establecen en el valor **Deshabilitar todo excepto las macros firmadas digitalmente**, no se muestra la barra de confianza esperada y la información de **seguridad** en el backstage no enumera los detalles de las macros bloqueadas, aunque la configuración funcione según lo esperado. El equipo de Office está trabajando para resolver este problema.
+- Cuando las **notificaciones de macro de VBA** de la directiva (Access, PowerPoint, Visio, Word) o **Las notificaciones de macro** (Excel) se establecen en el valor **Deshabilitar todas excepto las macros firmadas digitalmente**, no se muestra la barra de confianza esperada y la **información de seguridad** en el backstage no muestra los detalles de las macros bloqueadas, aunque la configuración funcione según lo esperado. El equipo de Office está trabajando para resolver este problema.
 
-## <a name="admin-options-for-restricting-active-content"></a>Opciones de administración para restringir el contenido activo
+## <a name="admin-options-for-restricting-active-content"></a>Administración opciones para restringir el contenido activo
 
 Hay una gran diferencia en el nivel de confianza en el contenido creado internamente frente al contenido que los usuarios descargan de Internet. Considere la posibilidad de permitir el contenido activo en documentos internos y no permitir globalmente el contenido activo en documentos de Internet.
 
@@ -111,45 +111,45 @@ Las tablas de las secciones siguientes describen la configuración que controla 
 ****
 |Categoría|Aplicación|Nombre de la directiva|Línea base de seguridad<br>configuración (recomendado)|Configuración con el símbolo del usuario<br>e invalidar disponibles?|
 |---|---|---|---|---|
-|ActiveX|Office|Inicialización del control de ActiveX|**6**|**Sí** para los valores siguientes: <ul><li>**3**</li><li>**4**</li><li>**5**</li><li>**6**</li></ul>|
-|ActiveX|Office|Permitir formularios desactivados de X One activo|**Cargar sólo controles de Outlook**|No|
-|ActiveX|Office|Comprobar objetos ActiveX|No es una configuración de línea base de seguridad.|No|
-|ActiveX|Office|Deshabilitar todo ActiveX|No es una configuración de línea base de seguridad.|**Sí** para los valores siguientes: <ul><li>**Disabled**</li><li>**Sin configurar**</li></ul>|
-|ActiveX|Office|Cargar controles en Formularios3|**1**|**Sí** para los valores siguientes: <ul><li>**2**</li><li>**3**</li></ul>|
+|Activex|Oficina|Inicialización del control ActiveX|**6**|**Sí** para los valores siguientes: <ul><li>**3**</li><li>**4**</li><li>**5**</li><li>**6**</li></ul>|
+|Activex|Oficina|Permitir formularios desactivados de X One activo|**Cargar sólo controles de Outlook**|No|
+|Activex|Oficina|Comprobar objetos ActiveX|No es una configuración de línea base de seguridad.|No|
+|Activex|Oficina|Deshabilitar todo ActiveX|No es una configuración de línea base de seguridad.|**Sí** para los valores siguientes: <ul><li>**Disabled**</li><li>**Sin configurar**</li></ul>|
+|Activex|Oficina|Cargar controles en Formularios3|**1**|**Sí** para los valores siguientes: <ul><li>**2**</li><li>**3**</li></ul>|
 |Complementos & extensibilidad|Excel <p> PowerPoint <p> Project <p> Publisher <p> Visio <p> Word|Deshabilitar la notificación de la barra de confianza para complementos de aplicación sin firmar y bloquearlos|**Enabled**|**Sí** para el valor **Deshabilitado**.|
 |Complementos & extensibilidad|Excel <p> PowerPoint <p> Project <p> Publisher <p> Visio <p> Word|Requerir que un editor de confianza firme los complementos de aplicaciones|**Enabled**|No|
 |Complementos & extensibilidad|Excel|No mostrar alerta de advertencia de publicación automática|**Disabled**|No|
-|Complementos & extensibilidad|Excel|Notificación de función WEBSERVICE Configuración|**Deshabilitar todas con notificación**|**Sí** para los valores siguientes: <ul><li>**Deshabilitar todas con notificación**</li><li>**Disabled**</li><li>**Sin configurar**</li></ul>|
-|Complementos & extensibilidad|Office|Deshabilite el cliente de Office para que no sondee el servidor de SharePoint para ver los vínculos publicados.|**Disabled**|No|
-|Complementos & extensibilidad|Office|Deshabilitar la UI que procede de documentos y plantillas|No permitir en Word = True <p> No permitir en Project = False <p> No permitir en Excel = True <p> No permitir en Visio= False <p> No permitir en PowerPoint = True <p> No permitir en Access = True <p> No permitir en Outlook = True <p> No permitir en Publisher = True <p> No permitir en InfoPath = True|No|
+|Complementos & extensibilidad|Excel|Configuración de notificación de función WEBSERVICE|**Deshabilitar todas con notificación**|**Sí** para los valores siguientes: <ul><li>**Deshabilitar todas con notificación**</li><li>**Disabled**</li><li>**Sin configurar**</li></ul>|
+|Complementos & extensibilidad|Oficina|Deshabilitación del cliente de Office para que no sondee los vínculos publicados en SharePoint Server|**Disabled**|No|
+|Complementos & extensibilidad|Oficina|Deshabilitar la UI que procede de documentos y plantillas|No permitir en Word = True <p> No permitir en Project = False <p> No permitir en Excel = True <p> No permitir en Visio= False <p> No permitir en PowerPoint = True <p> No permitir en Access = True <p> No permitir en Outlook = True <p> No permitir en Publisher = True <p> No permitir en InfoPath = True|No|
 |Complementos & extensibilidad|Outlook|Configurar el texto del modelo de objetos de Outlook al obtener acceso a una libreta de direcciones|**Denegar automáticamente**|**Sí** para los valores siguientes: <ul><li>**Preguntar al usuario**</li><li>**Pedir confirmación del usuario en función de la seguridad del equipo**</li><li>**Disabled**</li><li>**Sin configurar**</li></ul>|
-|Complementos & extensibilidad|Outlook|Configurar Outlook símbolo del modelo de objetos al acceder a la propiedad Formula de un objeto UserProperty|**Denegar automáticamente**|**Sí** para los valores siguientes: <ul><li>**Preguntar al usuario**</li><li>**Pedir confirmación del usuario en función de la seguridad del equipo**</li><li>**Disabled**</li><li>**Sin configurar**</li></ul>|
+|Complementos & extensibilidad|Outlook|Configurar el símbolo del modelo de objetos de Outlook al acceder a la propiedad Formula de un objeto UserProperty|**Denegar automáticamente**|**Sí** para los valores siguientes: <ul><li>**Preguntar al usuario**</li><li>**Pedir confirmación del usuario en función de la seguridad del equipo**</li><li>**Disabled**</li><li>**Sin configurar**</li></ul>|
 |Complementos & extensibilidad|Outlook|Configurar el texto del modelo de objetos de Outlook al ejecutar Guardar como|**Denegar automáticamente**|**Sí** para los valores siguientes: <ul><li>**Preguntar al usuario**</li><li>**Pedir confirmación del usuario en función de la seguridad del equipo**</li><li>**Disabled**</li><li>**Sin configurar**</li></ul>|
 |Complementos & extensibilidad|Outlook|Configurar el texto del modelo de objetos de Outlook al leer la información de la dirección|**Denegar automáticamente**|**Sí** para los valores siguientes: <ul><li>**Preguntar al usuario**</li><li>**Pedir confirmación del usuario en función de la seguridad del equipo**</li><li>**Disabled**</li><li>**Sin configurar**</li></ul>|
 |Complementos & extensibilidad|Outlook|Configurar el texto del modelo de objetos de Outlook al responder a convocatorias de reunión y solicitudes de tarea|**Denegar automáticamente**|**Sí** para los valores siguientes: <ul><li>**Preguntar al usuario**</li><li>**Pedir confirmación del usuario en función de la seguridad del equipo**</li><li>**Disabled**</li><li>**Sin configurar**</li></ul>|
 |Complementos & extensibilidad|Outlook|Configurar el texto del modelo de objetos de Outlook al enviar correo|**Denegar automáticamente**|**Sí** para los valores siguientes: <ul><li>**Preguntar al usuario**</li><li>**Pedir confirmación del usuario en función de la seguridad del equipo**</li><li>**Disabled**</li><li>**Sin configurar**</li></ul>|
-|Complementos & extensibilidad|Outlook|Establecer Outlook símbolo del sistema de ejecución de acciones personalizadas del modelo de objetos|**Denegar automáticamente**|**Sí** para los valores siguientes: <ul><li>**Preguntar al usuario**</li><li>**Pedir confirmación del usuario en función de la seguridad del equipo**</li><li>**Disabled**</li><li>**Sin configurar**</li></ul>|
+|Complementos & extensibilidad|Outlook|Establecimiento del símbolo del sistema de ejecución de acciones personalizadas del modelo de objetos de Outlook|**Denegar automáticamente**|**Sí** para los valores siguientes: <ul><li>**Preguntar al usuario**</li><li>**Pedir confirmación del usuario en función de la seguridad del equipo**</li><li>**Disabled**</li><li>**Sin configurar**</li></ul>|
 |Complementos & extensibilidad|PowerPoint|Ejecución de programas|**disable (no ejecute ningún programa)**|**Sí** para el valor **Habilitar (preguntar al usuario antes de ejecutarlo)**|
 |Complementos & extensibilidad|Word <p> Excel|Deshabilitar el uso de manifiestos por parte de Smart Document|**Enabled**|No|
-|DDE|Excel|No permitir el inicio del servidor de Exchange de datos dinámicos (DDE) en Excel|**Enabled**|**Sí** para el valor **No configurado**.|
-|DDE|Excel|No permitir la búsqueda de servidores de datos dinámicos Exchange (DDE) en Excel|**Enabled**|**Sí** para los valores siguientes: <ul><li>**Disabled**</li><li>**Sin configurar**</li></ul>|
-|DDE|Word|Datos dinámicos Exchange|**Disabled**|No|
+|Dde|Excel|No permitir el inicio del servidor de Intercambio dinámico de datos (DDE) en Excel|**Enabled**|**Sí** para el valor **No configurado**.|
+|Dde|Excel|No permitir la búsqueda de servidores de Intercambio dinámico de datos (DDE) en Excel|**Enabled**|**Sí** para los valores siguientes: <ul><li>**Disabled**</li><li>**Sin configurar**</li></ul>|
+|Dde|Word|Intercambio dinámico de datos|**Disabled**|No|
 |Jscript & VBScript|Outlook|Permitir scripts en formularios de uso único de Outlook|**Disabled**|No|
-|Jscript & VBScript|Outlook|No permitir que Outlook scripts de modelo de objetos se ejecuten para carpetas públicas|**Enabled**|No|
-|Jscript & VBScript|Outlook|No permitir que Outlook scripts de modelo de objetos se ejecuten para carpetas compartidas|**Enabled**|No|
+|Jscript & VBScript|Outlook|No permitir que los scripts del modelo de objetos de Outlook se ejecuten para carpetas públicas|**Enabled**|No|
+|Jscript & VBScript|Outlook|No permitir que los scripts del modelo de objetos de Outlook se ejecuten para carpetas compartidas|**Enabled**|No|
 |Macros|Excel|Notificaciones de macro|**Deshabilitar todas las macros excepto las firmadas digitalmente**|**Sí** para los valores siguientes: <ul><li>**Disabled**</li><li>**Sin configurar**</li></ul>|
-|Macros|Acceso <p> PowerPoint <p> Project <p> Publisher <p> Visio <p> Word|Notificación de macros de VBA Configuración|**Deshabilitar todas las macros excepto las firmadas digitalmente** <p> y <p> **Requerir que las macros estén firmadas por un publicador de confianza**|**Sí** para los valores siguientes: <ul><li>**Disabled**</li><li>**Sin configurar**</li></ul>|
-|Macros|Access <p> Excel <p> PowerPoint <p> Visio <p> Word|Impedir que las macros se ejecuten en archivos Office desde Internet|**Enabled**|**Sí** para los valores siguientes: <ul><li>**Disabled**</li><li>**Sin configurar**</li></ul>|
-|Macros|Excel|Examinar macros cifradas en Excel libros Open XML|**Examinar macros cifradas (valor predeterminado)**|No|
-|Macros|Office|Permitir que VBA cargue referencias de biblioteca de tipos por ruta de acceso desde ubicaciones de intranet que no son de confianza|**Disabled**|No|
-|Macros|Office|Seguridad de automation|**Usar nivel de seguridad de macro de aplicación**|No|
-|Macros|Office|Deshabilitar otras comprobaciones de seguridad en referencias de biblioteca vba que puedan hacer referencia a ubicaciones no seguras en el equipo local|**Disabled**|No|
-|Macros|Office|Ámbito de examen en tiempo de ejecución de macros|**Habilitar para todos los documentos**|No|
-|Macros|Office|Solo las macros de VBA de confianza que usan firmas V3|No es una configuración de línea base de seguridad.|No|
-|Macros|Outlook|Outlook modo de seguridad|**Uso de Outlook security directiva de grupo**|Se requiere para habilitar toda la configuración de GPO de Outlook. <p> Se menciona como una dependencia (esta directiva no bloquea el contenido activo en sí).|
+|Macros|Acceso <p> PowerPoint <p> Project <p> Publisher <p> Visio <p> Word|Configuración de notificación de macros de VBA|**Deshabilitar todas las macros excepto las firmadas digitalmente** <p> y <p> **Requerir que las macros estén firmadas por un publicador de confianza**|**Sí** para los valores siguientes: <ul><li>**Disabled**</li><li>**Sin configurar**</li></ul>|
+|Macros|Access <p> Excel <p> PowerPoint <p> Visio <p> Word|Impedir que las macros se ejecuten en archivos de Office desde Internet|**Enabled**|**Sí** para los valores siguientes: <ul><li>**Disabled**</li><li>**Sin configurar**</li></ul>|
+|Macros|Excel|Examen de macros cifradas en libros De Excel Open XML|**Examinar macros cifradas (valor predeterminado)**|No|
+|Macros|Oficina|Permitir que VBA cargue referencias de biblioteca de tipos por ruta de acceso desde ubicaciones de intranet que no son de confianza|**Disabled**|No|
+|Macros|Oficina|Seguridad de automation|**Usar nivel de seguridad de macro de aplicación**|No|
+|Macros|Oficina|Deshabilitar otras comprobaciones de seguridad en referencias de biblioteca vba que puedan hacer referencia a ubicaciones no seguras en el equipo local|**Disabled**|No|
+|Macros|Oficina|Ámbito de examen en tiempo de ejecución de macros|**Habilitar para todos los documentos**|No|
+|Macros|Oficina|Solo las macros de VBA de confianza que usan firmas V3|No es una configuración de línea base de seguridad.|No|
+|Macros|Outlook|Modo de seguridad de Outlook|**Uso de Outlook Security directiva de grupo**|Necesario para habilitar toda la configuración de GPO de Outlook. <p> Se menciona como una dependencia (esta directiva no bloquea el contenido activo en sí).|
 |Macros|Outlook|Configuración de seguridad para macros|**Advertir para firmar, deshabilitar sin firmar**|**Sí** para los valores siguientes: <ul><li>**Advertir siempre**</li><li>**Advertir para firmar, deshabilitar sin firmar**</li><li>**Disabled**</li><li>**Sin configurar**</li></ul>|
-|Macros|PowerPoint|Examen de macros cifradas en presentaciones PowerPoint Open XML|**Examinar macros cifradas (valor predeterminado)**|No|
-|Macros|Publisher|Nivel de seguridad de automatización de Publisher|**Mediante interfaz de usuario (preguntado)**|No|
+|Macros|PowerPoint|Examen de macros cifradas en presentaciones de PowerPoint Open XML|**Examinar macros cifradas (valor predeterminado)**|No|
+|Macros|Publisher|Nivel de seguridad de Publisher Automation|**Mediante interfaz de usuario (preguntado)**|No|
 |Macros|Word|Examen de macros cifradas en documentos De Word Open XML|**Examinar macros cifradas (valor predeterminado)**|No|
 |
 
@@ -160,9 +160,9 @@ Las tablas de las secciones siguientes describen la configuración que controla 
 ****
 |Categoría|Aplicación|Nombre de la directiva|Línea base de seguridad<br>configuración (recomendado)|Configuración con el símbolo del usuario<br>e invalidar disponibles?|
 |---|---|---|---|---|
-|ActiveX|Office|Restringir instalación de ActiveX |excel.exe = True <p> exprwd.exe = True <p> groove.exe = True <p> msaccess.exe = True <p> mse7.exe = True <p> mspub.exe = True <p> onent.exe = True <p> outlook.exe = True <p> powerpnt.exe = True <p> pptview.exe = True <p> spDesign.exe = True <p> visio.exe = True <p> winproj.exe = True <p> winword.exe = True|No|
-|Complementos & extensibilidad|Office|Administración de complementos |excel.exe = True <p> exprwd.exe = True <p> groove.exe = True <p> msaccess.exe = True <p> mse7.exe = True <p> mspub.exe = True <p> onent.exe = True <p> outlook.exe = True <p> powerpnt.exe = True <p> pptview.exe = True <p> spDesign.exe = True <p> visio.exe = True <p> winproj.exe = True <p> winword.exe = True|No|
-|Complementos & extensibilidad|Office|Bloquear la activación flash en documentos Office|Consulte los archivos ADMX/ADML de la Guía de seguridad de Microsoft para obtener una lista de bits de eliminación COM para bloquear toda la activación de Flash en Microsoft 365 aplicaciones. Los archivos ADMX/ADML para líneas base de seguridad empresariales están disponibles en el [Toolkit de cumplimiento de seguridad](https://www.microsoft.com/download/details.aspx?id=55319).|No|
-|Jscript & VBScript|Office|Restricción de la ejecución de JScript heredada para Office|**Habilitado**: <p> Acceso: 69632 <p> Excel: 69632 <p> OneNote: 69632 <p> Outlook: 69632 <p> PowerPoint: 69632 <p> Project: 69632 <p> Publisher: 69632 <p> Visio: 69632 <p> Palabra: 69632|No|
-|Jscript & VBScript|Office|Restricciones de seguridad de ventanas con scripts |excel.exe = True <p> exprwd.exe = True <p> groove.exe = True <p> msaccess.exe = True <p> mse7.exe = True <p> mspub.exe = True <p> onent.exe = True <p> outlook.exe = True <p> powerpnt.exe = True <p> pptview.exe = True <p> spDesign.exe = True <p> visio.exe = True <p> winproj.exe = True <p> winword.exe = True|No|
+|Activex|Oficina|Restringir instalación de ActiveX |excel.exe = True <p> exprwd.exe = True <p> groove.exe = True <p> msaccess.exe = True <p> mse7.exe = True <p> mspub.exe = True <p> onent.exe = True <p> outlook.exe = True <p> powerpnt.exe = True <p> pptview.exe = True <p> spDesign.exe = True <p> visio.exe = True <p> winproj.exe = True <p> winword.exe = True|No|
+|Complementos & extensibilidad|Oficina|Administración de complementos |excel.exe = True <p> exprwd.exe = True <p> groove.exe = True <p> msaccess.exe = True <p> mse7.exe = True <p> mspub.exe = True <p> onent.exe = True <p> outlook.exe = True <p> powerpnt.exe = True <p> pptview.exe = True <p> spDesign.exe = True <p> visio.exe = True <p> winproj.exe = True <p> winword.exe = True|No|
+|Complementos & extensibilidad|Oficina|Bloquear la activación flash en documentos de Office|Consulte los archivos ADMX/ADML de la Guía de seguridad de Microsoft para obtener una lista de bits de eliminación COM para bloquear toda la activación de Flash en aplicaciones de Microsoft 365. Los archivos ADMX/ADML para líneas base de seguridad empresariales están disponibles en security [compliance toolkit](https://www.microsoft.com/download/details.aspx?id=55319).|No|
+|Jscript & VBScript|Oficina|Restricción de la ejecución de JScript heredada para Office|**Habilitado**: <p> Acceso: 69632 <p> Excel: 69632 <p> OneNote: 69632 <p> Outlook: 69632 <p> PowerPoint: 69632 <p> Proyecto: 69632 <p> Publicador: 69632 <p> Visio: 69632 <p> Palabra: 69632|No|
+|Jscript & VBScript|Oficina|Restricciones de seguridad de ventanas con scripts |excel.exe = True <p> exprwd.exe = True <p> groove.exe = True <p> msaccess.exe = True <p> mse7.exe = True <p> mspub.exe = True <p> onent.exe = True <p> outlook.exe = True <p> powerpnt.exe = True <p> pptview.exe = True <p> spDesign.exe = True <p> visio.exe = True <p> winproj.exe = True <p> winword.exe = True|No|
 |

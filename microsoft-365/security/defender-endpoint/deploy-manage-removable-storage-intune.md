@@ -1,7 +1,8 @@
 ---
 title: Implementación y administración de Access Control de almacenamiento extraíble mediante Intune
 description: Use Intune OMA-URI y Intune interfaz de usuario para implementar y administrar el control de acceso de almacenamiento extraíble.
-ms.prod: m365-security
+ms.service: microsoft-365-security
+ms.subservice: mde
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -13,16 +14,15 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.custom: admindeeplinkDEFENDER
 ms.topic: conceptual
-ms.technology: mde
 ms.date: 09/09/2022
 ms.reviewer: tewchen
 search.appverid: met150
-ms.openlocfilehash: 880be65c0d221d92af41d2835804f8252feb4e75
-ms.sourcegitcommit: b1ed6470645455c2f1fcf467450debc622c40147
+ms.openlocfilehash: d06d36f8b9fb3451f70b646c3969fa2bb7487f9f
+ms.sourcegitcommit: c29af68260ba8676083674b3c70209bff2c2e362
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/15/2022
-ms.locfileid: "67711870"
+ms.lasthandoff: 09/16/2022
+ms.locfileid: "67736849"
 ---
 # <a name="deploy-and-manage-removable-storage-access-control-using-intune"></a>Implementación y administración de Access Control de almacenamiento extraíble mediante Intune
 

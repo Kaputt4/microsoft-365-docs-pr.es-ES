@@ -2,7 +2,7 @@
 title: Uso de Microsoft Defender para Office 365 en SharePoint Online
 description: Los pasos para asegurarse de que puede usar y obtener el valor de Microsoft Defender para Office 365 en SharePoint Online y OneDrive para la Empresa
 search.product: ''
-ms.prod: m365-security
+ms.service: microsoft-365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -15,14 +15,14 @@ manager: dansimp
 audience: ITPro
 ms.collection: m365-guidance-templates
 ms.topic: how-to
-ms.technology: mdo
+ms.subservice: mdo
 search.appverid: met150
-ms.openlocfilehash: b2785d0f8f5fed637121ca77af9abb6ef933b3ab
-ms.sourcegitcommit: 9b133379196da2b3a4bb311b07ff274f43780f68
+ms.openlocfilehash: b6a4b5ff8b523860204225f7ae8020e7e8fca9ae
+ms.sourcegitcommit: c29af68260ba8676083674b3c70209bff2c2e362
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/14/2022
-ms.locfileid: "67687306"
+ms.lasthandoff: 09/16/2022
+ms.locfileid: "67737454"
 ---
 # <a name="use-microsoft-defender-for-office-365-with-sharepoint-online"></a>Uso de Microsoft Defender para Office 365 con SharePoint Online
 
@@ -43,8 +43,8 @@ Para obtener más información, lea [Paso 1: Usar el portal de Microsoft 365 Def
 1.  Inicie sesión en la [página de configuración de datos adjuntos seguros del centro de seguridad](https://security.microsoft.com/safeattachmentv2).
 1.  Seleccione **Configuración global**.
 1.  Asegúrese de que **Activar Defender para Office 365 para SharePoint, OneDrive y Microsoft Teams** está establecido **en Activado**.
-1.  Vaya a la [página de configuración Vínculos seguros del centro de seguridad](https://security.microsoft.com/safelinksv2).
 1.  Haga clic en **Guardar**.
+
 
 ## <a name="stop-infected-file-downloads-from-sharepoint-online"></a>Detener descargas de archivos infectados desde SharePoint Online
 

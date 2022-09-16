@@ -7,10 +7,10 @@ author: denisebmsft
 manager: dansimp
 audience: Admin
 ms.topic: overview
-ms.service: microsoft-365-business
-ms.subservice: business-premium
+ms.service: microsoft-365-security
+ms.subservice: other
+ms.date: 09/15/2022
 ms.localizationpriority: high
-ms.date: 09/14/2022
 ms.collection:
 - M365-Campaigns
 - m365solution-smb
@@ -20,12 +20,12 @@ search.appverid:
 - BCS160
 - MET150
 description: Información general sobre cómo configurar y proteger dispositivos administrados frente a amenazas de seguridad y ciberataques. Implemente defensas de ciberseguridad y protección de puntos de conexión mediante la inscripción e incorporación de todos los dispositivos. Obtenga información sobre cómo configurar directivas de dispositivo y administrar grupos de dispositivos.
-ms.openlocfilehash: 18d240768d7cadaff4c02a0e7c1dbc4301039d3e
-ms.sourcegitcommit: b1ed6470645455c2f1fcf467450debc622c40147
+ms.openlocfilehash: 031e4cea2493d9c24ff7df5e5d6a6c687e80dc9c
+ms.sourcegitcommit: c29af68260ba8676083674b3c70209bff2c2e362
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/15/2022
-ms.locfileid: "67711463"
+ms.lasthandoff: 09/16/2022
+ms.locfileid: "67742945"
 ---
 # <a name="set-up-and-secure-managed-devices"></a>Configuración y protección de dispositivos administrados
 

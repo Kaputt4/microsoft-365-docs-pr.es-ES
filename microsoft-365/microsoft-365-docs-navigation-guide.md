@@ -2,8 +2,7 @@
 title: Sugerencias de navegación de documentos de Microsoft 365
 description: 'Sugerencias y trucos para navegar por la documentación técnica de Microsoft 365: explica aspectos como la página central, la tabla de contenido, el encabezado, así como cómo usar las rutas de navegación y cómo usar el filtro de versión.'
 ms.date: 08/12/2020
-ms.prod: sql
-ms.technology: release-landing
+ms.service: microsoft-365-enterprise
 ms.reviewer: serdars
 ms.custom: ''
 ms.topic: conceptual
@@ -11,12 +10,12 @@ author: samanro
 ms.author: samanro
 manager: pamgreen
 ms.collection: Adm_TOC
-ms.openlocfilehash: c6a481497a682cbbad896a2d7ec9e88b84c64d10
-ms.sourcegitcommit: 37e137535c4f70702afe1a5eeaa899c75ee02cfd
+ms.openlocfilehash: 95b14f45925e1b26e876474fc1a41343882ec817
+ms.sourcegitcommit: c29af68260ba8676083674b3c70209bff2c2e362
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/13/2022
-ms.locfileid: "67660253"
+ms.lasthandoff: 09/16/2022
+ms.locfileid: "67737662"
 ---
 # <a name="microsoft-365-docs-navigation-guide"></a>Guía de navegación de documentos de Microsoft 365
 

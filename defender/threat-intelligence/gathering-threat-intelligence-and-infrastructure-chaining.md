@@ -3,16 +3,17 @@ title: 'Tutorial: Recopilación de inteligencia sobre amenazas y encadenamiento 
 description: En este tutorial, aprenderá a recopilar inteligencia sobre amenazas y cadena de infraestructura juntos indicadores de peligro en Inteligencia contra amenazas de Microsoft Defender (TI de Defender). En este artículo se tratará una investigación histórica de la vulneración de MyPillow Magecart.
 author: alexroland24
 ms.author: aroland
+manager: dolmont
 ms.service: threat-intelligence
 ms.topic: tutorial
 ms.date: 08/02/2022
 ms.custom: template-tutorial
-ms.openlocfilehash: 7cdb70d72253164b24cb55d57b20cc3edb7c5a7c
-ms.sourcegitcommit: 7e551fa4e9b8b25ed62b5f406143b6b1dae08cbf
+ms.openlocfilehash: d225345ee32e016c3e050d4dc26a94f7f47c7146
+ms.sourcegitcommit: c29af68260ba8676083674b3c70209bff2c2e362
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/01/2022
-ms.locfileid: "67108926"
+ms.lasthandoff: 09/16/2022
+ms.locfileid: "67736098"
 ---
 # <a name="tutorial-gathering-threat-intelligence-and-infrastructure-chaining"></a>Tutorial: Recopilación de inteligencia sobre amenazas y encadenamiento de infraestructura
 
@@ -73,10 +74,10 @@ Pero como nuestros usuarios virtuales capturan el DOM y encuentran todos los ví
     a. ¿Qué información está disponible sobre esta campaña relacionada?
       - Este artículo se publicó el 20 de marzo de 2019 y proporciona información sobre cómo myPillow fue violada por el grupo de actores de amenazas de Magecart en octubre de 2018. En el artículo se detalla cómo se ejecutó el ataque.
 5. Seleccione la pestaña Indicadores públicos. a. ¿Qué IOC se enumeran relacionados con esta campaña?
-      - amerisleep.github[.] Io
+      - amerisleep.github[.] io
       - cmytuok[.] Arriba
       - livechatinc[.] Org
-      - mypiltow[.] COM
+      - mypiltow[.] Com
 6. Seleccione Todo en la lista desplegable de la barra de búsqueda y consulte "mypillow.com". A continuación, vaya a la pestaña Datos. a . ¿Qué conjunto de datos puede ser útil para encontrar pruebas de una inyección de scripts?
      - Los pares de host revelan conexiones entre sitios web que los orígenes de datos tradicionales no aparecen (pDNS, Whois) y le permiten ver dónde se usan los recursos y viceversa.
 7. Seleccione la hoja Datos de pares de host, ordene por primera vez y filtre por script.src como causa. Page over hasta que encuentre las relaciones de par de hosts que tuvieron lugar en octubre de 2018.
@@ -117,7 +118,7 @@ Pero como nuestros usuarios virtuales capturan el DOM y encuentran todos los ví
         1. Si selecciona el registro whois de octubre de 2011, verá que el dominio es claramente propiedad de My Pillow Inc.
 
             ![Tutorial Infra Chain My Piltowcom 2 Whois](media/tutorialInfraChainMyPiltowcom2Whois.png)
-        2. mypiltow[.] COM
+        2. mypiltow[.] Com
         3. Si selecciona el registro whois de octubre de 2018, encontrará que mypiltow[.] com se registró en Hong Kong, China y está protegido por la protección de la privacidad por el Servicio escudo de id. de dominio CO.
         4. mypiltow[.] el registrador de com es OnlineNIC, Inc.
 
@@ -135,18 +136,18 @@ Pero como nuestros usuarios virtuales capturan el DOM y encuentran todos los ví
       - Direcciones URL
         1. hxxps://coffemokko[.] com/tr/, hxxps://freshdepor[.] com/tr/, hxxps://prodealscenter[.] com/tr/, hxxps://scriptoscript[.] com/tr/, hxxps://swappastore[.] com/tr/
         2. Dominios
-            - 3lift[.] org, abtasty[.] net, adaptivecss[.] org, adorebeauty[.] org, zapatillas de deporte[.] org, amerisleep.github[.] io, ar500arnor[.] com, authorizecdn[.] com, bannerbuzz[.] info, battery-force[.] org, batterynart[.] com, blackriverimaging[.] org, braincdn[.] org, btosports[.] net, cdnassels[.] com, cdnmage[.] com, polluelosaddlery[.] net, childsplayclothing[.] org, christohperward[.] org, citywlnery[.] org, closetlondon[.] org, cmytuok[.] top, coffemokko[.] com, coffetea[.] org, configsysrc[.] info, dahlie[.] org, davidsfootwear[.] org, dobell[.] su, elegrina[.] com, energycoffe[.] org, energytea[.] org, etradesupply[.] org, exrpesso[.] org, foodandcot[.] com, freshchat[.] info, freshdepor[.] com, greatfurnituretradingco[.] org, info-js[.] link, jewsondirect[.] com, js-cloud[.] com, kandypens[.] net, kikvape[.] org, labbe[.] biz, lamoodbighats[.] net, link js[.] link, livechatinc[.] org, londontea[.] net, mage-checkout[.] org, magejavascripts[.] com, magescripts[.] pw, magesecuritys[.] com, majsurplus[.] com, map-js[.] link, mcloudjs[.] com, mechat[.] info, melbounestorm[.] com, misshaus[.] org, mylrendyphone[.] com, mypiltow[.] com, nililotan[.] org, oakandfort[.] org, ottocap[.] org, parks[.] su, paypaypay[.] org, pmtonline[.] su, prodealscenter[.] com, replacemyremote[.] org, sagecdn[.] org, scriptoscript[.] com, security-payment[.] su, shop-rnib[.] org, slickjs[.] org, slickmin[.] com, smart-js[.] link, swappastore[.] com, teacoffe[.] net, top5value[.] com, track-js[.] link, ukcoffe[.] com, verywellfitnesse[.] com, walletgear[.] org, webanalyzer[.] net, zapaljs[.] com, zoplm[.] COM
+            - 3lift[.] org, abtasty[.] net, adaptivecss[.] org, adorebeauty[.] org, zapatillas de deporte[.] org, amerisleep.github[.] io, ar500arnor[.] com, authorizecdn[.] com, bannerbuzz[.] info, battery-force[.] org, batterynart[.] com, blackriverimaging[.] org, braincdn[.] org, btosports[.] net, cdnassels[.] com, cdnmage[.] com, polluelosaddlery[.] net, childsplayclothing[.] org, christohperward[.] org, citywlnery[.] org, closetlondon[.] org, cmytuok[.] top, coffemokko[.] com, coffetea[.] org, configsysrc[.] info, dahlie[.] org, davidsfootwear[.] org, dobell[.] su, elegrina[.] com, energycoffe[.] org, energytea[.] org, etradesupply[.] org, exrpesso[.] org, foodandcot[.] com, freshchat[.] info, freshdepor[.] com, greatfurnituretradingco[.] org, info-js[.] link, jewsondirect[.] com, js-cloud[.] com, kandypens[.] net, kikvape[.] org, labbe[.] biz, lamoodbighats[.] net, link js[.] link, livechatinc[.] org, londontea[.] net, mage-checkout[.] org, magejavascripts[.] com, magescripts[.] pw, magesecuritys[.] com, majsurplus[.] com, map-js[.] link, mcloudjs[.] com, mechat[.] info, melbounestorm[.] com, misshaus[.] org, mylrendyphone[.] com, mypiltow[.] com, nililotan[.] org, oakandfort[.] org, ottocap[.] org, parks[.] su, paypaypay[.] org, pmtonline[.] su, prodealscenter[.] com, replacemyremote[.] org, sagecdn[.] org, scriptoscript[.] com, security-payment[.] su, shop-rnib[.] org, slickjs[.] org, slickmin[.] com, smart-js[.] link, swappastore[.] com, teacoffe[.] net, top5value[.] com, track-js[.] link, ukcoffe[.] com, verywellfitnesse[.] com, walletgear[.] org, webanalyzer[.] net, zapaljs[.] com, zoplm[.] Com
 
 16. Busque mypillow.com en la página principal de Inteligencia sobre amenazas de Defender TI y seleccione la pestaña Datos. Seleccione la hoja Datos de pares de host. Ordene por primera vez y busque las relaciones de par de host que se produjeron en octubre de 2018.
 
-    a. ¿Observa una relación de script similar entre mypillow.com y secure.livechatinc[.]. que refleja la misma relación que mypillow.com tuvo con mypiltow[.] ¿COM?
+    a. ¿Observa una relación de script similar entre mypillow.com y secure.livechatinc[.]. que refleja la misma relación que mypillow.com tuvo con mypiltow[.] ¿Com?
       - Observe cómo se observó por primera vez www.mypillow.com llegar a secure.livechatinc[.] org el 26/10/2018, porque se observó una solicitud GET de script de www.mypillow.com a secure.livechatinc[.] Org. Esa relación duró hasta el 19/11/2018.
 
            ![Tutorial Infra Chain My Pillowcom Host Pairs Live Chat ScriptSrc](media/tutorialInfraChainMyPillowcomHostPairsLiveChatScriptSrc.gif) ii. Además, secure.livechatinc[.] la organización se ha puesto en contacto con www.mypillow.com para acceder al servidor de www.mypillow.com (xmlhttprequest).
-17. Revise las relaciones de par de host de mypillow.com más adelante.
+17. Revise aún más las relaciones de par de host de mypillow.com.
     a. ¿mypillow.com tiene alguna relación de par de host con un nombre de dominio similar a secure.livechatinc[.] ¿Org?
       - Sí. Hay varios tipos de relaciones observadas mypillow.com hosts tenían con los dominios siguientes:
-        1. cdn.livechatinc[.] com, secure.livechatinc[.] com, api.livechatinc[.] COM
+        1. cdn.livechatinc[.] com, secure.livechatinc[.] com, api.livechatinc[.] Com
      - Entre las causas de la relación se incluyen:
         1. script.src
         2. iframe.src
@@ -173,7 +174,7 @@ Pero como nuestros usuarios virtuales capturan el DOM y encuentran todos los ví
       - ns2.jino.ru
       - ns3.jino.ru
       - ns4.jino.ru
-        1. Estos eran los mismos servidores de nombres usados en el registro 10/01/2018 para mypiltow[.] COM. Los adversarios suelen usar los mismos servidores de nombres para segmentar su infraestructura.
+        1. Estos eran los mismos servidores de nombres usados en el registro 10/01/2018 para mypiltow[.] Com. Los adversarios suelen usar los mismos servidores de nombres para segmentar su infraestructura.
 
             ![Tutorial Infra Chain Secure Live Chat Inc Org Whois](media/tutorialInfraChainSecureLiveChatIncOrgWhois.png)
 

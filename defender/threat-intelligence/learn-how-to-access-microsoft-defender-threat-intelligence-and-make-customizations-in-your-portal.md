@@ -3,18 +3,19 @@ title: 'Inicio rápido: Acceso al portal de Inteligencia contra amenazas de Micr
 description: En este inicio rápido, aprenderá a configurar su perfil y preferencias y a acceder a los recursos de ayuda de TI de Defender mediante Inteligencia contra amenazas de Microsoft Defender (TI de Defender).
 author: alexroland24
 ms.author: aroland
+manager: dolmont
 ms.service: threat-intelligence
 ms.topic: quickstart
 ms.date: 08/02/2022
 ms.custom: template-quickstart
-ms.openlocfilehash: 6ef41802afd47a2e265a2617ed0eb498c7a1708a
-ms.sourcegitcommit: d7193ee954c01c4172e228d25b941026c8d92d30
+ms.openlocfilehash: 7ec540da8a0042bef95543ce2197c4655e8ce641
+ms.sourcegitcommit: c29af68260ba8676083674b3c70209bff2c2e362
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/02/2022
-ms.locfileid: "67174683"
+ms.lasthandoff: 09/16/2022
+ms.locfileid: "67737134"
 ---
-# <a name="quickstart-learn-how-to-access-microsoft-defender-threat-intelligence-and-make-customizations-in-your-portal"></a>Inicio rápido: Obtenga información sobre cómo acceder a Inteligencia contra amenazas de Microsoft Defender y realizar personalizaciones en el portal.
+# <a name="quickstart-learn-how-to-access-microsoft-defender-threat-intelligence-and-make-customizations-in-your-portal"></a>Guía de inicio rápido: Obtenga información sobre cómo acceder a la inteligencia sobre amenazas de Microsoft Defender y realizar personalizaciones en el portal
 
 Comprender cómo ajustar el tema en el portal de Inteligencia contra amenazas de Microsoft Defender (Defender TI) hará que sea más fácil para los ojos al usar nuestra plataforma. Además, esta guía le guiará a través de cómo habilitar los orígenes para el enriquecimiento, para que pueda ver más resultados al realizar búsquedas en nuestra plataforma. También aprenderá a iniciar sesión y cerrar sesión correctamente de Defender TI.
 

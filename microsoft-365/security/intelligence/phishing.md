@@ -3,7 +3,7 @@ title: Protección contra ataques de suplantación de identidad (phishing)
 ms.reviewer: ''
 description: Obtenga información sobre cómo funciona la suplantación de identidad (phishing), entrega de malware a los dispositivos y lo que puede hacer para protegerse
 keywords: seguridad, malware, phishing, información, estafa, ingeniería social, cebo, señuelo, protección, tendencias, ataque dirigido
-ms.prod: m365-security
+ms.service: microsoft-365-security
 ms.mktglfcycl: secure
 ms.sitesec: library
 ms.localizationpriority: medium
@@ -14,17 +14,16 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 search.appverid: met150
-ms.technology: m365d
-ms.openlocfilehash: 1f414c80d3c0b5478112cd402f8e3839908787d4
-ms.sourcegitcommit: 85ce5fd0698b6f00ea1ea189634588d00ea13508
+ms.openlocfilehash: dda1cd5d25d75132cb6e04ad5dd7c365c4bb15ed
+ms.sourcegitcommit: c29af68260ba8676083674b3c70209bff2c2e362
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/06/2022
-ms.locfileid: "64666776"
+ms.lasthandoff: 09/16/2022
+ms.locfileid: "67739044"
 ---
 # <a name="how-to-protect-against-phishing-attacks"></a>Protección contra ataques de suplantación de identidad (phishing)
 
-Los ataques de suplantación de identidad intentan robar información confidencial a través de correos electrónicos, sitios web, mensajes de texto u otras formas de comunicación electrónica. Intentan parecerse a la comunicación oficial de empresas o individuos legítimos.
+Los ataques de suplantación de identidad (phishing) son aquellos que intentan robar información confidencial a través de correos electrónicos, sitios web, mensajes de texto u otras formas de comunicación electrónica. Intentan parecerse a la comunicación oficial de empresas o individuos legítimos.
 
 Los cibercriminales suelen intentar robar nombres de usuario, contraseñas, detalles de tarjetas de crédito, información de la cuenta bancaria u otras credenciales. Usan información robada con fines malintencionados, como piratería, robo de identidad o robo de dinero directamente de cuentas bancarias y tarjetas de crédito. La información también se puede vender en los mercados subterráneos cibercriminales.
 
@@ -66,7 +65,7 @@ En caso de duda, póngase en contacto con la empresa por canales conocidos para 
 
 ## <a name="software-solutions-for-organizations"></a>Soluciones de software para organizaciones
 
-* [Microsoft Edge](/microsoft-edge/deploy/index) y [Protección de aplicaciones de Windows Defender](/windows/security/microsoft-defender-application-guard/md-app-guard-overview.md) ofrecen protección contra la amenaza creciente de ataques dirigidos mediante la tecnología de virtualización hyper-V líder del sector de Microsoft. Si se considera que un sitio web explorado no es de confianza, el contenedor de Hyper-V aislará ese dispositivo del resto de la red, lo que impedirá el acceso a los datos empresariales.
+* [Microsoft Edge](/microsoft-edge/deploy/index) y [Protección de aplicaciones de Windows Defender](/windows/security/microsoft-defender-application-guard/md-app-guard-overview.md) ofrecen protección frente a la amenaza creciente de ataques dirigidos mediante la tecnología de virtualización hyper-V líder del sector de Microsoft. Si se considera que un sitio web explorado no es de confianza, el contenedor de Hyper-V aislará ese dispositivo del resto de la red, lo que impedirá el acceso a los datos empresariales.
 
 * [Microsoft Exchange Online Protection (EOP)](https://products.office.com/exchange/exchange-email-security-spam-protection) ofrece confiabilidad y protección de clase empresarial contra el correo no deseado y el malware, a la vez que mantiene el acceso al correo electrónico durante y después de las emergencias.  Mediante el uso de varias capas de filtrado, EOP puede proporcionar diferentes controles para el filtrado de correo no deseado, como controles de correo masivo y correo no deseado internacional, que mejorarán aún más sus servicios de protección.
 
@@ -82,17 +81,17 @@ Si siente que ha sido víctima de un ataque de suplantación de identidad (phish
 
 ### <a name="reporting-spam"></a>Generación de informes de correo no deseado
 
-- **Outlook.com**: si recibe un mensaje de correo electrónico sospechoso que le pide información personal, active la casilla situada junto al mensaje en la bandeja de entrada de Outlook. Seleccione la flecha situada junto a **Correo no deseado** y, después **, phishing.**
+- **Outlook.com**: si recibe un mensaje de correo electrónico sospechoso que solicita información personal, active la casilla situada junto al mensaje en la bandeja de entrada de Outlook. Seleccione la flecha situada junto a **Correo no deseado** y, después **, phishing.**
 
 - **Microsoft Office Outlook**: mientras está en el mensaje sospechoso, seleccione **Mensaje** de informe en la cinta de opciones y, después **, phishing.**
 
-- **Microsoft 365**: use el [portal Envíos de Microsoft 365 Defender](/microsoft-365/security/office-365-security/report-junk-email-messages-to-microsoft) para enviar el ejemplo de correo no deseado o phishing a Microsoft para su análisis. Para obtener más información, consulte [Notificar mensajes y archivos a Microsoft](/microsoft-365/security/office-365-security/report-junk-email-messages-to-microsoft).
+- **Microsoft 365**: use el [portal envíos de Microsoft 365 Defender](/microsoft-365/security/office-365-security/report-junk-email-messages-to-microsoft) para enviar el ejemplo de correo no deseado o phishing a Microsoft para su análisis. Para obtener más información, consulte [Notificar mensajes y archivos a Microsoft](/microsoft-365/security/office-365-security/report-junk-email-messages-to-microsoft).
 
 - **Grupo de trabajo contra phishing**: phishing-report@us-cert.gov. El grupo usa informes generados a partir de correos electrónicos enviados para luchar contra estafas de phishing y hackers. Los ISP, los proveedores de seguridad, las instituciones financieras y las agencias de cumplimiento de la ley están involucrados.
 
 ### <a name="if-youre-on-a-suspicious-website"></a>Si está en un sitio web sospechoso
 
-- **Microsoft Edge**: Mientras se encuentra en un sitio sospechoso, seleccione el **icono** >  Más (...)**Help (Más (...)) y feedbackReport** >  **Unsafe site (Informar sitio no seguro**). Siga las instrucciones de la página web que se muestra para informar del sitio web.
+- **Microsoft Edge**: mientras se encuentra en un sitio sospechoso, seleccione el **icono** >  Más (...)**Ayuda y comentarios** > **Notificar sitio no seguro**. Siga las instrucciones de la página web que se muestra para informar del sitio web.
 
 - **Internet Explorer**: mientras se encuentra en un sitio sospechoso, seleccione el icono de engranaje, seleccione **Seguridad** y, después, informe **sitio web no seguro**. Siga las instrucciones de la página web que se muestra para informar del sitio web.
 

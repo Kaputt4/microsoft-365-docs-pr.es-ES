@@ -2,7 +2,7 @@
 title: Evaluación del impacto de los cambios de configuración de seguridad con el Explorador
 description: Ejemplos y tutoriales sobre el uso del Explorador para determinar el impacto de un cambio de control de seguridad (configuración) en Microsoft Defender para Office 365
 search.product: ''
-ms.prod: m365-security
+ms.service: microsoft-365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -15,14 +15,14 @@ manager: dansimp
 audience: ITPro
 ms.collection: m365-guidance-templates
 ms.topic: how-to
-ms.technology: mdo
+ms.subservice: mdo
 search.appverid: met150
-ms.openlocfilehash: 83dae83889862b20bde0a4d00f6a9bb3821bdeea
-ms.sourcegitcommit: 9b133379196da2b3a4bb311b07ff274f43780f68
+ms.openlocfilehash: acafd578f2b1a193ab006e7a799bdb01f7651feb
+ms.sourcegitcommit: c29af68260ba8676083674b3c70209bff2c2e362
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/14/2022
-ms.locfileid: "67687327"
+ms.lasthandoff: 09/16/2022
+ms.locfileid: "67743228"
 ---
 # <a name="assess-the-impact-of-security-configuration-changes-with-explorer"></a>Evaluación del impacto de los cambios de configuración de seguridad con el Explorador
 
@@ -43,7 +43,7 @@ Esta guía paso a paso le guiará a través de la evaluación de un cambio y la 
 1. Presione el botón **de filtro** (predeterminado en *Sender*) y seleccione **Phish confidence level (Nivel de confianza de Phish**).
 1. Seleccione el **nivel de confianza phish** normal.
 1. Agregue un **filtro** adicional de **ubicación de entrega original** establecida como **carpeta No deseado**.
-1. Presione **Actualizar**. El Explorador ahora se filtra para mostrar todo el correo que se detecta como *phish de alta confianza* y se entrega a la carpeta Junk debido a la configuración de la directiva contra correo no deseado.
+1. Presione **Actualizar**. El Explorador ahora se filtra para mostrar todo el correo que se detecta como *phish de confianza normal* y se entrega a la carpeta Junk debido a la configuración de la directiva contra correo no deseado.
 1. Si desea dinamizar los datos que se muestran en el gráfico, puede hacerlo mediante la **segmentación de datos de la parte superior izquierda del gráfico (valor predeterminado de *Acción de entrega*),** seleccionando datos útiles como **ip del remitente** o **dominio de remitente** para detectar tendencias y remitentes principales afectados.
 1. Debajo de la sección del gráfico, donde se muestran los correos electrónicos afectados, seleccione **Exportar lista de correo electrónico**, que generará un CSV para el análisis sin conexión. **Esta es una lista de los correos electrónicos que se ponerían en cuarentena si la acción de phish se cambiara a Cuarentena (cambio recomendado para valores preestablecidos estándar y estrictos).**
 

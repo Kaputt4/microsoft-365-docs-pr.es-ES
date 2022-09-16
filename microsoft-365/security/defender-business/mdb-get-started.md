@@ -10,7 +10,7 @@ ms.topic: article
 ms.service: microsoft-365-security
 ms.subservice: mdb
 ms.localizationpriority: medium
-ms.date: 08/15/2022
+ms.date: 09/15/2022
 ms.reviewer: shlomiakirav
 f1.keywords: NOCSH
 ms.collection:
@@ -18,12 +18,12 @@ ms.collection:
 - M365-security-compliance
 - m365-initiative-defender-business
 ms.custom: intro-get-started
-ms.openlocfilehash: 20d1bf0cb045e3ee2efc70a6b0c68fec8b8436ca
-ms.sourcegitcommit: 2b89bcff547e00be3d38dc8d1e6cbcf8f41eba42
+ms.openlocfilehash: 7d15b3fad4e9cb05fd49ae977e66206314a71235
+ms.sourcegitcommit: c29af68260ba8676083674b3c70209bff2c2e362
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/03/2022
-ms.locfileid: "67598096"
+ms.lasthandoff: 09/16/2022
+ms.locfileid: "67736484"
 ---
 # <a name="visit-the-microsoft-365-defender-portal"></a>Visitar el portal de Microsoft 365 Defender
 
@@ -50,7 +50,7 @@ Use la barra de navegación del lado izquierdo de la pantalla para acceder a los
 | **Extremos** >  **Tutoriales** | Proporciona acceso a tutoriales y simulaciones para ayudarle a obtener más información sobre cómo funcionan las características de protección contra amenazas. Seleccione el vínculo **Leer el tutorial** antes de intentar obtener el archivo de simulación para cada tutorial. Algunas simulaciones requieren aplicaciones de Office, como Microsoft Word, para leer el tutorial. |
 | **Extremos** >  **Administración de configuración** >  **Configuración del dispositivo** | Enumera las directivas de seguridad por sistema operativo y por tipo. Para obtener más información sobre las directivas de seguridad, consulte [Visualización o edición de directivas en Defender para empresas](mdb-view-edit-policies.md). |
 | **Extremos** >  **Administración de configuración** >  **Informes de administración de dispositivos** | Enumera los dispositivos que se incorporan a Defender for Business, junto con su versión del sistema operativo, el estado de mantenimiento del sensor y la última vez que se actualizaron. |
-| Email &**reglas de & de directivas de** **colaboración** >  | Si la suscripción incluye Exchange Online Protection o Microsoft Defender para Office 365, en esta sección se administrarán las directivas de seguridad y la configuración de los servicios de correo electrónico y colaboración. [Obtenga más información sobre Office 365 seguridad](../office-365-security/overview.md). *La versión independiente de Defender para empresas no incluye directivas de colaboración & correo electrónico, pero Microsoft 365 Empresa Premium incluye Exchange Online Protection y Defender para Office 365 Plan 1*. [Comparar las características de seguridad de los planes de Microsoft 365 para pequeñas y medianas empresas](compare-mdb-m365-plans.md).  |
+| Email &**reglas de & de directivas de** **colaboración** >  | Si la suscripción incluye Exchange Online Protection o Microsoft Defender para Office 365, en esta sección se administrarán las directivas de seguridad y la configuración de los servicios de correo electrónico y colaboración. [Obtenga más información sobre Office 365 seguridad](/microsoft-365/office-365-security/overview). *La versión independiente de Defender para empresas no incluye directivas de colaboración & correo electrónico, pero Microsoft 365 Empresa Premium incluye Exchange Online Protection y Defender para Office 365 Plan 1*. [Comparar las características de seguridad de los planes de Microsoft 365 para pequeñas y medianas empresas](compare-mdb-m365-plans.md).  |
 | **Aplicaciones en la nube** >  **Gobernanza de aplicaciones** | Si la suscripción incluye [Microsoft Defender for Cloud Apps](/defender-cloud-apps/what-is-defender-for-cloud-apps), puede agregar la [gobernanza](/defender-cloud-apps/app-governance-manage-app-governance) de aplicaciones y esta sección es donde verá y accederá a esas funcionalidades. *Defender para empresas y Microsoft 365 Empresa Premium no incluyen Defender for Cloud Apps*. |
 | **Informes** | Enumera los informes de seguridad disponibles. Estos informes le permiten ver las tendencias de seguridad, ver detalles sobre las detecciones y alertas de amenazas y obtener más información sobre los dispositivos vulnerables de su empresa. |
 | **Estado** | Permite ver el estado de mantenimiento del servicio y planear los próximos cambios. <br/>- Seleccione **Estado del servicio** para ver el estado de mantenimiento de los servicios de Microsoft 365 que se incluyen en la suscripción de su empresa.<br/>- Seleccione **Centro de** mensajes para obtener información sobre los cambios planeados y lo que se espera.  |

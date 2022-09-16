@@ -18,12 +18,12 @@ ms.collection:
 - m365-security-compliance
 ms.topic: conceptual
 ms.subservice: mde
-ms.openlocfilehash: fd587baa44a40b7c3543839116bc169a07873efc
-ms.sourcegitcommit: 0af064e8b6778060f1bd365378d69b16fc9949b5
+ms.openlocfilehash: 852677c02060e3c355ab15708b1be0a720fc5ed2
+ms.sourcegitcommit: c29af68260ba8676083674b3c70209bff2c2e362
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/15/2022
-ms.locfileid: "67730229"
+ms.lasthandoff: 09/16/2022
+ms.locfileid: "67736042"
 ---
 # <a name="whats-new-in-microsoft-defender-for-endpoint"></a>Novedades de Microsoft Defender para punto de conexión
 
@@ -64,6 +64,8 @@ Para obtener más información sobre Microsoft Defender para punto de conexión 
 ## <a name="september-2022"></a>Septiembre de 2022
 
 - [Los informes de estado del dispositivo ya están disponibles con carácter general](device-health-reports.md). <br/>El informe de estado del dispositivo proporciona información sobre el estado y la seguridad de los puntos de conexión. El informe incluye información de tendencias que muestra el estado de mantenimiento del sensor, el estado del antivirus, las plataformas del sistema operativo, las versiones de Windows 10 y las versiones de actualización del Antivirus de Microsoft Defender.
+
+- [El modo de solución de problemas](enable-troubleshooting-mode.md) ya está disponible para más sistemas operativos Windows, incluidos Windows Server 2012 R2 y versiones posteriores. Consulte el artículo para obtener más información sobre las actualizaciones necesarias.
 
 ## <a name="august-2022"></a>Agosto de 2022
 

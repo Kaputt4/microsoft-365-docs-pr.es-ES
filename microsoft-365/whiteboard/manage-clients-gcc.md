@@ -7,17 +7,17 @@ ms.reviewer: ''
 audience: admin
 ms.topic: article
 ms.custom: ''
-ms.prod: microsoft-365-enterprise
+ms.service: microsoft-365-enterprise
 search.appverid: MET150
 ms.collection: ''
 ms.localizationpriority: medium
 description: Obtenga información sobre qué clientes son compatibles actualmente con Whiteboard en entornos de GCC.
-ms.openlocfilehash: 2f473e7334d664d5d369e25164095ca0d3e0149b
-ms.sourcegitcommit: 37e137535c4f70702afe1a5eeaa899c75ee02cfd
+ms.openlocfilehash: 3cced3a58ca3e644d961344ca1c0b8da2b561bd3
+ms.sourcegitcommit: c29af68260ba8676083674b3c70209bff2c2e362
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/13/2022
-ms.locfileid: "67664494"
+ms.lasthandoff: 09/16/2022
+ms.locfileid: "67735711"
 ---
 # <a name="manage-clients-for-microsoft-whiteboard-in-gcc-environments"></a>Administración de clientes para Microsoft Whiteboard en entornos de GCC
 

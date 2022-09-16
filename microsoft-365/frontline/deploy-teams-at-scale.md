@@ -16,12 +16,12 @@ ms.collection:
 appliesto:
 - Microsoft Teams
 - Microsoft 365 for frontline workers
-ms.openlocfilehash: 76ee0b786c2435e57fc4991685c4456cf82fe3dd
-ms.sourcegitcommit: 651610ca73bfd1d008d97311b59782790df664fb
+ms.openlocfilehash: e1a3954c199c076a5f78e8488ad98fd6c8cfb492
+ms.sourcegitcommit: c29af68260ba8676083674b3c70209bff2c2e362
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/07/2022
-ms.locfileid: "67611134"
+ms.lasthandoff: 09/16/2022
+ms.locfileid: "67737618"
 ---
 # <a name="deploy-teams-at-scale-for-frontline-workers"></a>Implementación de Teams a escala para trabajadores de primera línea
 
@@ -119,7 +119,7 @@ Siga estos pasos para instalar y conectarse a la versión más reciente del mód
     ```
 
     Si recibe un mensaje de error, significa que ya está establecido. Vaya al paso siguiente.
-1. Descargue e instale la [versión más reciente del módulo de PowerShell de Teams](https://www.powershellgallery.com/packages/MicrosoftTeams). Debe ejecutar la versión 4.3.1 (versión preliminar) o una versión posterior.  
+1. Descargue e instale la [versión más reciente del módulo de PowerShell de Teams](https://www.powershellgallery.com/packages/MicrosoftTeams). Debe ejecutar la versión 4.7.0 (versión preliminar) o una versión posterior.  
 
 1. Ejecute lo siguiente para conectarse a Teams.
 

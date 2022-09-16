@@ -3,7 +3,7 @@ title: Descargar el Examen de seguridad de Microsoft
 ms.reviewer: ''
 description: Obtenga la herramienta Examen de seguridad de Microsoft para buscar y quitar malware de sus equipos Windows.
 keywords: seguridad, malware
-ms.prod: m365-security
+ms.service: microsoft-365-security
 ms.mktglfcycl: secure
 ms.sitesec: library
 ms.localizationpriority: medium
@@ -14,13 +14,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 search.appverid: met150
-ms.technology: m365d
-ms.openlocfilehash: 2f0e3fd84a9df907aa50339a1e3a2108d023db81
-ms.sourcegitcommit: b3530441288b2bc44342e00e9025a49721796903
-ms.translationtype: HT
+ms.openlocfilehash: 78118709bb503e13f15973b2283d6f756519c873
+ms.sourcegitcommit: c29af68260ba8676083674b3c70209bff2c2e362
+ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/20/2022
-ms.locfileid: "63683644"
+ms.lasthandoff: 09/16/2022
+ms.locfileid: "67736440"
 ---
 # <a name="microsoft-safety-scanner-download"></a>Descargar el Examen de seguridad de Microsoft
 

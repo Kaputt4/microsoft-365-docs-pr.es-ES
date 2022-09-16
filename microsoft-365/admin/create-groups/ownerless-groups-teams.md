@@ -21,18 +21,18 @@ search.appverid:
 - MET150
 - MOE150
 description: Obtenga información sobre cómo invitar automáticamente a los miembros a convertirse en propietarios de un grupo de Microsoft 365 sin propietario o de un equipo de Microsoft Teams.
-ms.openlocfilehash: 0c64aa01784e837be1f57e0ae2ad5b0db6317e9a
-ms.sourcegitcommit: 414682b9bf42dc19a89c893d3c515aee9765b6e4
+ms.openlocfilehash: 3d140c7080feca76382e54049918d5e7866e29d5
+ms.sourcegitcommit: c29af68260ba8676083674b3c70209bff2c2e362
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/08/2022
-ms.locfileid: "67280881"
+ms.lasthandoff: 09/16/2022
+ms.locfileid: "67743096"
 ---
 # <a name="manage-ownerless-microsoft-365-groups-and-teams"></a>Administración de grupos y equipos de Microsoft 365 sin propietario
 
 Un equipo de Microsoft Teams o un grupo de Microsoft 365 y sus servicios relacionados pueden quedar sin propietario si la cuenta de un propietario se elimina o deshabilita en Microsoft 365. Los grupos y equipos requieren que un propietario agregue o quite miembros y cambie la configuración del grupo.
 
-Un Administrador global puede crear una directiva que pregunte automáticamente a los miembros más activos de un grupo o equipo sin propietario si aceptarán la propiedad. Cuando un miembro acepta la invitación para convertirse en propietario, la acción se registra en el registro de auditoría del portal de cumplimiento. Nunca se invita a los huéspedes a ser propietarios.
+Un administrador global, un administrador de Exchange o un administrador de grupos puede crear una directiva que pregunte automáticamente a los miembros más activos de un grupo o equipo sin propietario si aceptarán la propiedad. Cuando un miembro acepta la invitación para convertirse en propietario, la acción se registra en el registro de auditoría del portal de cumplimiento. Nunca se invita a los huéspedes a ser propietarios.
 
 Al crear la directiva, puede especificar:
 - Si desea limitar quién puede ser invitado a ser propietario especificando un grupo de seguridad

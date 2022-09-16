@@ -2,7 +2,7 @@
 title: (Falsos negativos) Cómo controlar los correos electrónicos malintencionados que se entregan a los destinatarios mediante Microsoft Defender para Office 365
 description: Los pasos para controlar los correos electrónicos malintencionados que llegan a los usuarios finales y las bandejas de entrada (como falsos negativos) con Microsoft Defender para Office 365 con el fin de evitar la pérdida de negocio.
 search.product: ''
-ms.prod: m365-security
+ms.service: microsoft-365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -15,14 +15,14 @@ manager: jarogers
 audience: ITPro
 ms.collection: m365-guidance-templates
 ms.topic: how-to
-ms.technology: mdo
+ms.subservice: mdo
 search.appverid: met150
-ms.openlocfilehash: f93d210482fe66bddfbaee7ef059ec85afe0186b
-ms.sourcegitcommit: 9b133379196da2b3a4bb311b07ff274f43780f68
+ms.openlocfilehash: 5552fd65657117a5879407ddbe5bf175923747c9
+ms.sourcegitcommit: c29af68260ba8676083674b3c70209bff2c2e362
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/14/2022
-ms.locfileid: "67688239"
+ms.lasthandoff: 09/16/2022
+ms.locfileid: "67735954"
 ---
 # <a name="how-to-handle-malicious-emails-that-are-delivered-to-recipients-false-negatives-using-microsoft-defender-for-office-365"></a>Cómo controlar los correos electrónicos malintencionados que se entregan a los destinatarios (falsos negativos), mediante Microsoft Defender para Office 365
 

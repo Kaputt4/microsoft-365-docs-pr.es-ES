@@ -7,10 +7,10 @@ author: denisebmsft
 manager: dansimp
 audience: Admin
 ms.topic: overview
-ms.service: microsoft-365-business
-ms.subservice: business-premium
+ms.service: microsoft-365-security
+ms.subservice: other
+ms.date: 09/15/2022
 ms.localizationpriority: high
-ms.date: 08/08/2022
 ms.collection:
 - M365-Campaigns
 - m365solution-smb
@@ -20,12 +20,12 @@ search.appverid:
 - BCS160
 - MET150
 description: Información general de seguridad para Microsoft 365 Empresa Premium, que proporciona herramientas de ciberseguridad, como es la autenticación multifactor, que puede usar para prevenir ciberataques.
-ms.openlocfilehash: 3b6bac00ddd85b4db80ccca47e443c855991b1b8
-ms.sourcegitcommit: 651610ca73bfd1d008d97311b59782790df664fb
+ms.openlocfilehash: 70432332e9f5446765c5b39e59970dec38a4a3d0
+ms.sourcegitcommit: c29af68260ba8676083674b3c70209bff2c2e362
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/07/2022
-ms.locfileid: "67614602"
+ms.lasthandoff: 09/16/2022
+ms.locfileid: "67736892"
 ---
 # <a name="bump-up-security"></a>Aumentar la seguridad
 

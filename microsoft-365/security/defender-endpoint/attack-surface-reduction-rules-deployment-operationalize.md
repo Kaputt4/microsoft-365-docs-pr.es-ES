@@ -3,7 +3,8 @@ title: Operacionar reglas de reducción de la superficie expuesta a ataques (ASR
 description: Proporciona instrucciones para operacionalizar la implementación de reglas de reducción de superficie expuesta a ataques.
 keywords: Implementación de reglas de reducción de superficie expuesta a ataques, implementación de ASR, habilitación de reglas de asr, configuración de ASR, sistema de prevención de intrusiones de host, reglas de protección, reglas contra vulnerabilidades de seguridad, protección contra vulnerabilidades de seguridad, reglas de vulnerabilidad de seguridad, reglas de prevención de infecciones, Microsoft Defender para punto de conexión, configurar reglas asr
 search.product: eADQiWindows 10XVcnh
-ms.prod: m365-security
+ms.service: microsoft-365-security
+ms.subservice: mde
 ms.mktglfcycl: manage
 ms.sitesec: library
 ms.pagetype: security
@@ -14,7 +15,6 @@ ms.author: v-jweston
 ms.reviewer: oogunrinde, sugamar
 manager: dansimp
 ms.custom: asr
-ms.technology: mde
 ms.topic: article
 ms.collection:
 - M365-security-compliance
@@ -22,12 +22,12 @@ ms.collection:
 - highpri
 ms.date: 1/18/2022
 search.appverid: met150
-ms.openlocfilehash: f81d453a6bd1b8d63031c903fc264010fc070209
-ms.sourcegitcommit: 9b133379196da2b3a4bb311b07ff274f43780f68
+ms.openlocfilehash: ad94e2433d332d9a31c73af6ce2bced6d491fcb3
+ms.sourcegitcommit: c29af68260ba8676083674b3c70209bff2c2e362
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/14/2022
-ms.locfileid: "67698427"
+ms.lasthandoff: 09/16/2022
+ms.locfileid: "67742923"
 ---
 # <a name="operationalize-attack-surface-reduction-asr-rules"></a>Operacionar reglas de reducción de la superficie expuesta a ataques (ASR)
 
