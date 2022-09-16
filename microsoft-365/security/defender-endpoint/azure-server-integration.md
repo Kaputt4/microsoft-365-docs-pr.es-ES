@@ -1,10 +1,11 @@
 ---
 title: Integración con Microsoft Defender for Cloud
-description: Obtenga información sobre la integración de Microsoft Defender para endpoints con Microsoft Defender para la nube
-keywords: integración, servidor, azure, 2012r2, 2016, 2019, incorporación de servidores, administración de dispositivos, configuración de Microsoft Defender para servidores de extremo, incorporación de Servidores de Microsoft Defender para endpoints, incorporación de Microsoft Defender para servidores de extremo
+description: Más información sobre Microsoft Defender para punto de conexión integración con Microsoft Defender for Cloud
+keywords: integration, server, azure, 2012r2, 2016, 2019, server onboarding, device management, configure Microsoft Defender para punto de conexión servers, onboard Microsoft Defender para punto de conexión servers, onboard servidores de Microsoft Defender para punto de conexión
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
-ms.prod: m365-security
+ms.service: microsoft-365-security
+ms.subservice: mde
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -15,13 +16,12 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
-ms.technology: mde
-ms.openlocfilehash: 2ed9d25336cd7e8162849aa5d1d1a3e3382063fc
-ms.sourcegitcommit: 3fb76db6b34e24569417f4c8a41b99f46a780389
+ms.openlocfilehash: 115664732fee33890d8fd5270e5a6bca8c558d6c
+ms.sourcegitcommit: c29af68260ba8676083674b3c70209bff2c2e362
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/17/2022
-ms.locfileid: "63526682"
+ms.lasthandoff: 09/16/2022
+ms.locfileid: "67740168"
 ---
 # <a name="integration-with-microsoft-defender-for-cloud"></a>Integración con Microsoft Defender for Cloud
 
@@ -31,27 +31,27 @@ ms.locfileid: "63526682"
 - [Microsoft Defender para punto de conexión Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - Microsoft Defender for Cloud
 
-Microsoft Defender para endpoint se puede integrar con Microsoft Defender para la nube para proporcionar una solución completa Windows protección del servidor. Con esta integración, Microsoft Defender para la nube puede usar la potencia de Defender para Endpoint para proporcionar una mejor detección de amenazas para Windows Servidores.
+Microsoft Defender para punto de conexión se puede integrar con Microsoft Defender for Cloud para proporcionar una solución de protección completa de Windows Server. Con esta integración, Microsoft Defender for Cloud puede usar la eficacia de Defender para punto de conexión para proporcionar una detección de amenazas mejorada para servidores Windows.
 
 En esta integración se incluyen las siguientes funcionalidades:
 
-- Incorporación automatizada: el sensor Defender para endpoints se habilita automáticamente en servidores Windows que están incorporados a Microsoft Defender para la nube. Para obtener más información sobre la incorporación de Microsoft Defender para la nube, consulte [Use the integrated Microsoft Defender for Endpoint license](/azure/security-center/security-center-wdatp).
+- Incorporación automatizada: el sensor de Defender para punto de conexión se habilita automáticamente en servidores Windows que se incorporan a Microsoft Defender for Cloud. Para obtener más información sobre la incorporación de Microsoft Defender for Cloud, consulte [Uso de la licencia de Microsoft Defender para punto de conexión integrada](/azure/security-center/security-center-wdatp).
 
     > [!NOTE]
-    > La integración entre Microsoft Defender para servidores y Microsoft Defender para endpoint se ha expandido para admitir [Windows Server 2019 y Windows Virtual Desktop (WVD)](/azure/security-center/release-notes#microsoft-defender-for-endpoint-integration-with-azure-defender-now-supports-windows-server-2019-and-windows-10-virtual-desktop-wvd-in-preview).
+    > La integración entre Microsoft Defender para servidores y Microsoft Defender para punto de conexión se ha ampliado para admitir [Windows Server 2019 y Windows Virtual Desktop (WVD).](/azure/security-center/release-notes#microsoft-defender-for-endpoint-integration-with-azure-defender-now-supports-windows-server-2019-and-windows-10-virtual-desktop-wvd-in-preview)
 
-- Windows servidores supervisados por Microsoft Defender para la nube también estarán disponibles en Defender para endpoint: Microsoft Defender para la nube se conecta perfectamente al inquilino de Defender para endpoint, lo que proporciona una vista única entre clientes y servidores.  Además, las alertas de Defender para puntos de conexión estarán disponibles en la consola de Microsoft Defender para la nube.
-- Investigación del servidor: los clientes de Microsoft Defender para la nube pueden acceder al portal de Microsoft 365 Defender para realizar una investigación detallada para descubrir el ámbito de una posible infracción.
+- Los servidores Windows supervisados por Microsoft Defender for Cloud también estarán disponibles en Defender para punto de conexión: Microsoft Defender for Cloud se conecta sin problemas al inquilino de Defender para punto de conexión, lo que proporciona una vista única entre clientes y servidores.  Además, las alertas de Defender para punto de conexión estarán disponibles en la consola de Microsoft Defender for Cloud.
+- Investigación del servidor: los clientes de Microsoft Defender for Cloud pueden acceder al portal de Microsoft 365 Defender para realizar una investigación detallada con el fin de descubrir el ámbito de una posible vulneración.
 
 > [!IMPORTANT]
-> - Cuando usa Microsoft Defender para la nube para supervisar los servidores, se crea automáticamente un inquilino de Defender for Endpoint (en Estados Unidos para usuarios estadounidenses, en la UE para usuarios europeos y británicos).<br>
-Los datos recopilados por Defender para endpoint se almacenan en la ubicación geográfica del inquilino tal como se identifica durante el aprovisionamiento.
-> - Si usa Defender para endpoint antes de usar Microsoft Defender para la nube, los datos se almacenarán en la ubicación que especificó al crear el inquilino, incluso si se integra con Microsoft Defender para la nube más adelante.
-> - Una vez configurado, no se puede cambiar la ubicación donde se almacenan los datos. Si necesita mover los datos a otra ubicación, póngase en contacto con el soporte técnico de Microsoft para restablecer el espacio empresarial. <br>
-La supervisión de extremos de servidor que utiliza esta integración se ha deshabilitado para Office 365 GCC clientes.
+> - Cuando se usa Microsoft Defender for Cloud para supervisar servidores, se crea automáticamente un inquilino de Defender para punto de conexión (en EE. UU. para usuarios de EE. UU., en la UE para usuarios europeos y británicos).<br>
+Los datos recopilados por Defender para punto de conexión se almacenan en la ubicación geográfica del inquilino tal como se identifica durante el aprovisionamiento.
+> - Si usa Defender para punto de conexión antes de usar Microsoft Defender for Cloud, los datos se almacenarán en la ubicación que especificó al crear el inquilino, incluso si se integra con Microsoft Defender for Cloud más adelante.
+> - Una vez configurado, no se puede cambiar la ubicación donde se almacenan los datos. Si necesita mover los datos a otra ubicación, debe ponerse en contacto con Soporte técnico de Microsoft para restablecer el inquilino. <br>
+La supervisión de puntos de conexión de servidor que usan esta integración se ha deshabilitado para Office 365 clientes de GCC.
 
 
 
 ## <a name="related-topics"></a>Temas relacionados
 - [Incorporar versiones anteriores de Windows](onboard-downlevel.md)
-- [Onboard Windows Server 2012 R2, 2016, SAC version 1803, and 2019](configure-server-endpoints.md)
+- [Incorporación de Windows Server 2012 R2, 2016, SAC versión 1803 y 2019](configure-server-endpoints.md)

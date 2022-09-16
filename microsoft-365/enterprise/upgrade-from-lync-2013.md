@@ -6,7 +6,7 @@ manager: serdars
 ms.date: 11/10/2021
 audience: ITPro
 ms.topic: conceptual
-ms.prod: skype-for-business-itpro
+ms.service: microsoft-365-enterprise
 ms.collection:
 - Ent_O365
 search.appverid:
@@ -14,12 +14,12 @@ search.appverid:
 f1.keywords:
 - NOCSH
 description: Busque información y recursos para actualizar desde Lync Server 2013. El soporte técnico finaliza el 11 de abril de 2023.
-ms.openlocfilehash: 925b53d751cd559ce3ccdf28d823531021611551
-ms.sourcegitcommit: 997eb64f80da99b1099daba62994c722bbb25d72
+ms.openlocfilehash: 72b161c608ba9ac9430957b174b864943e691b76
+ms.sourcegitcommit: c29af68260ba8676083674b3c70209bff2c2e362
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/16/2022
-ms.locfileid: "66129149"
+ms.lasthandoff: 09/16/2022
+ms.locfileid: "67740771"
 ---
 # <a name="upgrading-from-lync-server-2013"></a>Actualización desde Lync Server 2013
 
@@ -58,15 +58,15 @@ Si no puede actualizar a Microsoft Teams, puede actualizar a Skype Empresarial S
 
 ### <a name="upgrade-to-microsoft-teams"></a>Actualizar a Microsoft Teams
 
-Tenemos instrucciones detalladas sobre cómo actualizar a Microsoft Teams desde la implementación local. En primer lugar, vamos a cubrir algunos requisitos técnicos clave. Tendrá que establecer la conectividad híbrida, lo que le permitirá mover a los usuarios a Teams. [Planear la conectividad híbrida](/SkypeForBusiness/hybrid/plan-hybrid-connectivity) proporciona información general sobre la configuración de un entorno híbrido. Aunque el artículo se centra en Skype Empresarial, todos los conceptos también se aplican a Lync Server 2013. Consulte la sección [de requisitos de versión del servidor](/SkypeForBusiness/hybrid/plan-hybrid-connectivity#server-version-requirements) para obtener detalles específicos de Lync Server 2013.
+Tenemos instrucciones detalladas sobre cómo actualizar a Microsoft Teams desde la implementación local. En primer lugar, vamos a cubrir algunos requisitos técnicos clave. Tendrá que establecer la conectividad híbrida, lo que le permitirá mover los usuarios a Teams. [Planear la conectividad híbrida](/SkypeForBusiness/hybrid/plan-hybrid-connectivity) proporciona información general sobre la configuración de un entorno híbrido. Aunque el artículo se centra en Skype Empresarial, todos los conceptos también se aplican a Lync Server 2013. Consulte la sección [de requisitos de versión del servidor](/SkypeForBusiness/hybrid/plan-hybrid-connectivity#server-version-requirements) para obtener detalles específicos de Lync Server 2013.
 
 También debe asegurarse de que la implementación de Lync Server 2013 está totalmente actualizada. Publicamos una [lista de todas las actualizaciones más recientes para Lync Server 2013](https://support.microsoft.com/topic/updates-for-lync-server-2013-a2a042ac-79f0-2665-7453-0a541fb25164) Sin embargo, la siguiente actualización es un requisito previo para una actualización a Microsoft Teams:
 
 - [Actualización acumulativa de septiembre de 2021 5.0.8308.1149 para Lync Server 2013, Componentes principales](https://support.microsoft.com/topic/september-2021-cumulative-update-5-0-8308-1149-for-lync-server-2013-core-components-6755903a-fc9a-44d2-b835-2a6d01f14043): esta actualización reemplaza la autenticación de Live ID por el protocolo de autenticación de OAuth para el `Move-CSUser` cmdlet, que se usa para mover usuarios locales a Microsoft Teams.
 
-Aunque la experiencia del usuario en Microsoft Teams es mucho más rica y superior a Lync, también es dramáticamente diferente. Por lo tanto, también tendrá que preparar la organización y los usuarios para garantizar una adopción rápida de Microsoft Teams. Tenemos una gran cantidad de información disponible sobre cómo preparar su organización, planear la actualización a Teams y garantizar un lanzamiento correcto.
+Aunque la experiencia del usuario en Microsoft Teams es mucho más rica y superior a Lync, también es dramáticamente diferente. Por lo tanto, también tendrá que preparar su organización y los usuarios para garantizar una adopción rápida de Microsoft Teams. Tenemos una gran cantidad de información disponible sobre cómo preparar su organización, planear la actualización a Teams y garantizar un lanzamiento correcto.
 
-**Le recomendamos que comience en nuestro [portal de actualización de Teams](/MicrosoftTeams/upgrade-skype-teams)**, donde puede encontrar información técnica, recursos de entrenamiento, vínculos a sesiones de Ignite, recursos de ayuda disponibles, casos prácticos y mucho más.
+**Le recomendamos que comience en nuestro [portal de actualización de Teams](/MicrosoftTeams/upgrade-skype-teams)** , donde puede encontrar información técnica, recursos de entrenamiento, vínculos a sesiones de Ignite, recursos de ayuda disponibles, casos prácticos y mucho más.
 
 :::image type="content" source="../media/teams-upgrade-portal.png" alt-text="Captura de pantalla del portal de actualización de Teams":::
 

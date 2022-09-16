@@ -2,7 +2,8 @@
 title: Compruebe el estado de mantenimiento del sensor en Microsoft Defender para punto de conexión
 description: Compruebe el estado del sensor en los dispositivos para identificar cuáles están mal configurados, inactivos o no informan de los datos del sensor.
 keywords: sensor, estado del sensor, mal configurado, inactivo, sin datos del sensor, datos del sensor, comunicaciones dañadas, comunicación
-ms.prod: m365-security
+ms.service: microsoft-365-security
+ms.subservice: mde
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -14,14 +15,13 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.date: 04/24/2018
-ms.technology: mde
 search.appverid: met150
-ms.openlocfilehash: 9437bbf498c53a250351b63b5b98eae45cfd92d8
-ms.sourcegitcommit: 9b133379196da2b3a4bb311b07ff274f43780f68
+ms.openlocfilehash: 685e36809809baf3fd45cabf8a160abb22f7d9b0
+ms.sourcegitcommit: c29af68260ba8676083674b3c70209bff2c2e362
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/14/2022
-ms.locfileid: "67698097"
+ms.lasthandoff: 09/16/2022
+ms.locfileid: "67740563"
 ---
 # <a name="check-sensor-health-state-at-microsoft-defender-for-endpoint"></a>Comprobación del estado del sensor en Microsoft Defender para punto de conexión
 

@@ -12,7 +12,7 @@ f1.keywords:
 - NOCSH
 ms.author: tracyp
 author: MSFTTracyP
-ms.date: 06/25/2021
+ms.date: 09/15/2022
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
@@ -23,12 +23,12 @@ ms.collection:
 - zerotrust-solution
 - highpri
 ms.topic: conceptual
-ms.openlocfilehash: 5689dd9f493ce148b02146ddca7ca7c570e005e4
-ms.sourcegitcommit: 10e6abe740e27000e223378eb17d657a47555fa8
+ms.openlocfilehash: d7e2a6e68f91be81bd53638c16f50ed250555217
+ms.sourcegitcommit: c29af68260ba8676083674b3c70209bff2c2e362
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/31/2022
-ms.locfileid: "67481666"
+ms.lasthandoff: 09/16/2022
+ms.locfileid: "67741486"
 ---
 # <a name="evaluate-and-pilot-microsoft-365-defender"></a>Evaluar Microsoft 365 Defender y realizar una prueba piloto
 
@@ -84,8 +84,8 @@ Microsoft 365 Defender se compone de estas tecnologías de seguridad, que funcio
 |Componente|Descripción|Material de referencia|
 |---|---|---|
 |Microsoft Defender for Identity|Microsoft Defender for Identity usa señales de Active Directory para identificar, detectar e investigar amenazas avanzadas, identidades en peligro y acciones internas malintencionadas dirigidas a su organización.|[¿Qué es Microsoft Defender for Identity?](/defender-for-identity/what-is)|
-|Exchange Online Protection|Exchange Online Protection es el servicio de filtrado y retransmisión SMTP basado en la nube nativo que ayuda a proteger su organización contra el correo no deseado y el malware.|[Introducción a Exchange Online Protection (EOP): Office 365](../office-365-security/overview.md)|
-|Microsoft Defender para Office 365|Microsoft Defender para Office 365 protege a su organización frente a amenazas malintencionadas planteadas por mensajes de correo electrónico, vínculos (DIRECCIONES URL) y herramientas de colaboración.|[Microsoft Defender para Office 365: Office 365](../office-365-security/overview.md)|
+|Exchange Online Protection|Exchange Online Protection es el servicio de filtrado y retransmisión SMTP basado en la nube nativo que ayuda a proteger su organización contra el correo no deseado y el malware.|[Introducción a Exchange Online Protection (EOP): Office 365](/microsoft-365/office-365-security/overview.md)|
+|Microsoft Defender para Office 365|Microsoft Defender para Office 365 protege a su organización frente a amenazas malintencionadas planteadas por mensajes de correo electrónico, vínculos (DIRECCIONES URL) y herramientas de colaboración.|[Microsoft Defender para Office 365: Office 365](/microsoft-365/office-365-security/overview.md)|
 |Microsoft Defender para punto de conexión|Microsoft Defender para punto de conexión es una plataforma unificada para la protección de dispositivos, la detección posterior a la vulneración, la investigación automatizada y la respuesta recomendada.|[Microsoft Defender para punto de conexión: seguridad de Windows](../defender-endpoint/microsoft-defender-endpoint.md)|
 |Microsoft Defender for Cloud Apps|Microsoft Defender for Cloud Apps es una solución completa entre SaaS que ofrece visibilidad profunda, controles de datos seguros y protección contra amenazas mejorada para las aplicaciones en la nube.|[¿Qué es Defender for Cloud Apps?](/cloud-app-security/what-is-cloud-app-security)|
 |Azure AD Identity Protection|Azure AD Identity Protection evalúa los datos de riesgo de miles de millones de intentos de inicio de sesión y usa estos datos para evaluar el riesgo de cada inicio de sesión en su entorno. Azure AD usa estos datos para permitir o impedir el acceso a la cuenta, en función de cómo se configuren las directivas de acceso condicional. Azure AD Identity Protection tiene licencia independiente de Microsoft 365 Defender. Se incluye con Azure Active Directory Premium P2.|[¿Qué es Identity Protection?](/azure/active-directory/identity-protection/overview-identity-protection)|

@@ -3,7 +3,8 @@ title: Cancelación de la API de acción de la máquina
 description: Obtenga información sobre cómo cancelar una acción de máquina ya iniciada
 keywords: apis, graph api,
 search.appverid: met150
-ms.prod: m365-security
+ms.service: microsoft-365-security
+ms.subservice: mde
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -16,14 +17,13 @@ manager: dansimp
 audience: ITPro
 ms.collection: m365-security-compliance
 ms.topic: article
-ms.technology: mde
 ms.custom: api
-ms.openlocfilehash: d5736ee3374b182f1b22f1b728ac2378eb66b66d
-ms.sourcegitcommit: 217108c59be41b01963a393b4f16d137636fe6a8
+ms.openlocfilehash: d57c9bbdfb0a649c1712af078ae5b45577cb24c6
+ms.sourcegitcommit: c29af68260ba8676083674b3c70209bff2c2e362
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/12/2022
-ms.locfileid: "67331893"
+ms.lasthandoff: 09/16/2022
+ms.locfileid: "67740300"
 ---
 # <a name="cancel-machine-action-api"></a>Cancelación de la API de acción de la máquina
 

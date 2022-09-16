@@ -3,7 +3,7 @@ title: Software no deseado
 ms.reviewer: ''
 description: Obtenga información sobre cómo el software no deseado cambia la configuración predeterminada sin su consentimiento y lo que puede hacer para protegerse a sí mismo.
 keywords: security, malware, protection, unwanted, software, alter, infect, unwanted software, software bundlers, browser modifiers, privacy, security, computing experience, prevent infection, solution, WDSI, MMPC, Centro de protección contra malware de Microsoft, virus research threats, research malware, pc protection, computer infection, virus infection, descriptions, remediation, latest Amenazas
-ms.prod: m365-security
+ms.service: microsoft-365-security
 ms.mktglfcycl: secure
 ms.sitesec: library
 ms.localizationpriority: medium
@@ -14,17 +14,16 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 search.appverid: met150
-ms.technology: m365d
-ms.openlocfilehash: 654730571de934552d983e1135f24a3299567741
-ms.sourcegitcommit: 85ce5fd0698b6f00ea1ea189634588d00ea13508
+ms.openlocfilehash: db9a37bf18296e23763e6652bc25d0c50fd282cc
+ms.sourcegitcommit: c29af68260ba8676083674b3c70209bff2c2e362
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/06/2022
-ms.locfileid: "64666688"
+ms.lasthandoff: 09/16/2022
+ms.locfileid: "67742319"
 ---
 # <a name="unwanted-software"></a>Software no deseado
 
-Software no deseado son programas que alteran la experiencia de Windows sin su consentimiento o control. Esto puede adoptar la forma de experiencia de exploración modificada, falta de control sobre descargas e instalación, mensajes engañosos o cambios no autorizados en Windows configuración.
+El software no deseado son programas que modifican la experiencia de Windows sin su consentimiento o control. Esto puede adoptar la forma de experiencia de exploración modificada, la falta de control sobre las descargas y la instalación, mensajes engañosos o cambios no autorizados en la configuración de Windows.
 
 ## <a name="how-unwanted-software-works"></a>Funcionamiento del software no deseado
 
@@ -46,11 +45,11 @@ Microsoft usa un amplio [criterio de evaluación](criteria.md) para identificar 
 
 ## <a name="how-to-protect-against-unwanted-software"></a>Protección contra software no deseado
 
-Para evitar la infección de software no deseado, descargar software sólo desde sitios web oficiales, o desde el Microsoft Store. Tenga cuidado con la descarga de software de sitios de terceros.
+Para evitar una infección de software no deseada, descargue software solo desde sitios web oficiales o desde Microsoft Store. Tenga cuidado con la descarga de software de sitios de terceros.
 
 Use [Microsoft Edge](/microsoft-edge/deploy/index) al navegar por Internet. Microsoft Edge incluye protecciones adicionales que bloquean eficazmente los modificadores de explorador que pueden cambiar la configuración del explorador. Microsoft Edge también bloquea los sitios web conocidos que hospedan software no deseado mediante [Windows Defender SmartScreen](/microsoft-edge/deploy/index) (también utilizado por Internet Explorer).
 
-Habilite [Antivirus de Microsoft Defender](/microsoft-365/security/defender-endpoint/microsoft-defender-antivirus-in-windows-10) en Windows 10. Proporciona protección en tiempo real contra amenazas y detecta y elimina software no deseado conocido.
+Habilite [antivirus de Microsoft Defender](/microsoft-365/security/defender-endpoint/microsoft-defender-antivirus-in-windows-10) en Windows 10. Proporciona protección en tiempo real contra amenazas y detecta y elimina software no deseado conocido.
 
 Descargue [Microsoft Security Essentials](https://www.microsoft.com/download/details.aspx?id=5201) para obtener protección en tiempo real en Windows 7 o Windows Vista.
 

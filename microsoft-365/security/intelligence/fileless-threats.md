@@ -3,7 +3,7 @@ title: Amenazas sin archivos
 ms.reviewer: ''
 description: Obtenga información sobre las categorías de amenazas sin archivos y malware que viven fuera de la tierra
 keywords: malware sin archivos, sin archivos, viviendo fuera de la tierra, lolbins, amsi, supervisión del comportamiento, examen de memoria, protección del sector de arranque, seguridad, malware, Windows Defender ATP, antivirus, AV, ATP de Microsoft Defender, protección de próxima generación
-ms.prod: m365-security
+ms.service: microsoft-365-security
 ms.mktglfcycl: secure
 ms.sitesec: library
 ms.localizationpriority: medium
@@ -14,13 +14,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 search.appverid: met150
-ms.technology: m365d
-ms.openlocfilehash: 4db82cfc20bb1e27b2ef9a75793170c451c3868a
-ms.sourcegitcommit: 85ce5fd0698b6f00ea1ea189634588d00ea13508
+ms.openlocfilehash: 35235e529e0c377c7799e22d6243ceffba532bfd
+ms.sourcegitcommit: c29af68260ba8676083674b3c70209bff2c2e362
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/06/2022
-ms.locfileid: "64665346"
+ms.lasthandoff: 09/16/2022
+ms.locfileid: "67742407"
 ---
 # <a name="fileless-threats"></a>Amenazas sin archivos
 
@@ -96,9 +95,9 @@ Además de ser vulnerables en el nivel de firmware, las CPU podrían fabricarse 
 
 **Basado en archivos** (tipo III: ejecutables, archivos DLL, archivos LNK, tareas programadas): este es el vector de ejecución estándar. Un archivo ejecutable simple se puede iniciar como un malware de primera fase para ejecutar una carga adicional en la memoria o se puede insertar en otros procesos de ejecución legítimos.
 
-**Basado en macros** (tipo III: Office documentos): el [lenguaje VBA](/office/vba/Library-Reference/Concepts/getting-started-with-vba-in-office) es una herramienta flexible y eficaz diseñada para automatizar las tareas de edición y agregar funcionalidad dinámica a los documentos. Como tal, los atacantes pueden abusar de él para llevar a cabo operaciones malintencionadas como descodificar, ejecutar o insertar una carga ejecutable, o incluso implementar un ransomware completo, como en [el caso de qkG](https://blog.trendmicro.com/trendlabs-security-intelligence/qkg-filecoder-self-replicating-document-encrypting-ransomware/). Las macros se ejecutan en el contexto de un proceso de Office (por ejemplo, Winword.exe) y se implementan en un lenguaje de scripting. No hay ningún archivo ejecutable binario que un antivirus pueda inspeccionar. Aunque Office aplicaciones requieren el consentimiento explícito del usuario para ejecutar macros desde un documento, los atacantes usan técnicas de ingeniería social para engañar a los usuarios para que permitan la ejecución de macros.
+**Basado en macros** (tipo III: documentos de Office): el [lenguaje VBA](/office/vba/Library-Reference/Concepts/getting-started-with-vba-in-office) es una herramienta flexible y eficaz diseñada para automatizar las tareas de edición y agregar funcionalidad dinámica a los documentos. Como tal, los atacantes pueden abusar de él para llevar a cabo operaciones malintencionadas como descodificar, ejecutar o insertar una carga ejecutable, o incluso implementar un ransomware completo, como en [el caso de qkG](https://blog.trendmicro.com/trendlabs-security-intelligence/qkg-filecoder-self-replicating-document-encrypting-ransomware/). Las macros se ejecutan en el contexto de un proceso de Office (por ejemplo, Winword.exe) y se implementan en un lenguaje de scripting. No hay ningún archivo ejecutable binario que un antivirus pueda inspeccionar. Aunque las aplicaciones de Office requieren el consentimiento explícito del usuario para ejecutar macros desde un documento, los atacantes usan técnicas de ingeniería social para engañar a los usuarios para que permitan la ejecución de macros.
 
-**Basado en scripts** (tipo II: archivo, servicio, registro, repositorio WMI, shell): los lenguajes de scripting de JavaScript, VBScript y PowerShell están disponibles de forma predeterminada en Windows plataformas. Los scripts tienen las mismas ventajas que las macros, son archivos textuales (no ejecutables binarios) y se ejecutan en el contexto del intérprete (como wscript.exe, powershell.exe), que es un componente limpio y legítimo. Los scripts son versátiles y se pueden ejecutar desde un archivo (haciendo doble clic en ellos) o ejecutarse directamente en la línea de comandos de un intérprete. La ejecución en la línea de comandos permite que el malware codifique scripts malintencionados como servicios de inicio automático dentro de [las claves del Registro de ejecución automática](https://www.gdatasoftware.com/blog/2014/07/23947-poweliks-the-persistent-malware-without-a-file) como [suscripciones de eventos WMI](https://www.fireeye.com/blog/threat-research/2017/03/dissecting_one_ofap.html) desde el repositorio WMI. Además, un atacante que haya obtenido acceso a una máquina infectada puede escribir el script en el símbolo del sistema.
+**Basado en scripts** (tipo II: archivo, servicio, registro, repositorio WMI, shell): los lenguajes de scripting de JavaScript, VBScript y PowerShell están disponibles de forma predeterminada en las plataformas Windows. Los scripts tienen las mismas ventajas que las macros, son archivos textuales (no ejecutables binarios) y se ejecutan en el contexto del intérprete (como wscript.exe, powershell.exe), que es un componente limpio y legítimo. Los scripts son versátiles y se pueden ejecutar desde un archivo (haciendo doble clic en ellos) o ejecutarse directamente en la línea de comandos de un intérprete. La ejecución en la línea de comandos permite que el malware codifique scripts malintencionados como servicios de inicio automático dentro de [las claves del Registro de ejecución automática](https://www.gdatasoftware.com/blog/2014/07/23947-poweliks-the-persistent-malware-without-a-file) como [suscripciones de eventos WMI](https://www.fireeye.com/blog/threat-research/2017/03/dissecting_one_ofap.html) desde el repositorio WMI. Además, un atacante que haya obtenido acceso a una máquina infectada puede escribir el script en el símbolo del sistema.
 
 **Basado en disco** (tipo II: registro de arranque): el registro de arranque es el primer sector de un disco o volumen y contiene el código ejecutable necesario para iniciar el proceso de arranque del sistema operativo. Amenazas como [Petya](https://cloudblogs.microsoft.com/microsoftsecure/2017/06/27/new-ransomware-old-techniques-petya-adds-worm-capabilities/?source=mmpc) son capaces de infectar el registro de arranque sobrescribiendo con código malintencionado. Cuando se inicia la máquina, el malware obtiene inmediatamente el control. El registro de arranque reside fuera del sistema de archivos, pero el sistema operativo puede acceder a él. Los productos antivirus modernos tienen la capacidad de examinarlo y restaurarlo.
 

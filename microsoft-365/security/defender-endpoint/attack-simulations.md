@@ -1,10 +1,11 @@
 ---
-title: Experiencia de Microsoft Defender para endpoint a través de ataques simulados
-description: Ejecute las simulaciones de escenario de ataque proporcionadas para experimentar cómo Microsoft Defender para Endpoint puede detectar, investigar y responder a infracciones.
-keywords: prueba, escenario, ataque, simulación, simulación, simulación, bricolaje, Microsoft Defender para endpoint
+title: Experiencia Microsoft Defender para punto de conexión a través de ataques simulados
+description: Ejecute las simulaciones de escenarios de ataque proporcionadas para experimentar cómo Microsoft Defender para punto de conexión puede detectar, investigar y responder a infracciones.
+keywords: prueba, escenario, ataque, simulación, simulado, bricolaje, Microsoft Defender para punto de conexión
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
-ms.prod: m365-security
+ms.service: microsoft-365-security
+ms.subservice: mde
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -16,58 +17,57 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.date: 11/20/2018
-ms.technology: mde
-ms.openlocfilehash: da02e1391b7624dc3e091ca1024a68c5756227a2
-ms.sourcegitcommit: 2b9d40e888ff2f2b3385e2a90b50d719bba1e653
+ms.openlocfilehash: 20ad6f155a0b9e5dbfc6ff00154f2d4012b80079
+ms.sourcegitcommit: c29af68260ba8676083674b3c70209bff2c2e362
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/25/2021
-ms.locfileid: "61171226"
+ms.lasthandoff: 09/16/2022
+ms.locfileid: "67743380"
 ---
-# <a name="experience-microsoft-defender-for-endpoint-through-simulated-attacks"></a>Experiencia de Microsoft Defender para endpoint a través de ataques simulados 
+# <a name="experience-microsoft-defender-for-endpoint-through-simulated-attacks"></a>Experiencia Microsoft Defender para punto de conexión a través de ataques simulados 
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
 **Se aplica a:**
-- [Plan 1 de Microsoft Defender para endpoint](https://go.microsoft.com/fwlink/?linkid=2154037)
-- [Plan 2 de Microsoft Defender para endpoint](https://go.microsoft.com/fwlink/?linkid=2154037)
+- [Microsoft Defender para punto de conexión Plan 1](https://go.microsoft.com/fwlink/?linkid=2154037)
+- [Microsoft Defender para punto de conexión Plan 2](https://go.microsoft.com/fwlink/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 
-> ¿Desea experimentar Defender for Endpoint? [Regístrese para obtener una prueba gratuita.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-attacksimulations-abovefoldlink)
+> ¿Quiere experimentar Defender para punto de conexión? [Regístrese para obtener una prueba gratuita.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-attacksimulations-abovefoldlink)
 
 > [!TIP]
 >
-> - Obtenga información sobre las mejoras más recientes en Microsoft Defender para endpoint: ¿Qué hay [de nuevo en Defender para endpoint?](https://cloudblogs.microsoft.com/microsoftsecure/2018/11/15/whats-new-in-windows-defender-atp/).
-> - Defender for Endpoint demostró las capacidades de detección y óptica líderes del sector en la reciente evaluación de MITRE. Lectura: [Insights de la evaluación basada en MITRE ATT&CK](https://cloudblogs.microsoft.com/microsoftsecure/2018/12/03/insights-from-the-mitre-attack-based-evaluation-of-windows-defender-atp/).
+> - Obtenga información sobre las mejoras más recientes en Microsoft Defender para punto de conexión: [¿Qué hay de nuevo en Defender para punto de conexión?](https://cloudblogs.microsoft.com/microsoftsecure/2018/11/15/whats-new-in-windows-defender-atp/).
+> - Defender para punto de conexión demostró las funcionalidades de óptica y detección líderes del sector en la evaluación reciente de MITRE. Lectura: [Insights de la evaluación basada en MITRE ATT&CK](https://cloudblogs.microsoft.com/microsoftsecure/2018/12/03/insights-from-the-mitre-attack-based-evaluation-of-windows-defender-atp/).
 
-Es posible que quieras experimentar Defender for Endpoint antes de incorporar más de unos pocos dispositivos al servicio. Para ello, puedes ejecutar simulaciones de ataque controlado en algunos dispositivos de prueba. Después de ejecutar los ataques simulados, puedes revisar cómo Defender for Endpoint muestra actividad malintencionada y explorar cómo habilita una respuesta eficaz.
+Es posible que quiera experimentar Defender para punto de conexión antes de incorporar más de unos pocos dispositivos al servicio. Para ello, puede ejecutar simulaciones de ataque controladas en algunos dispositivos de prueba. Después de ejecutar los ataques simulados, puede revisar cómo Defender for Endpoint expone la actividad malintencionada y explorar cómo permite una respuesta eficaz.
 
 ## <a name="before-you-begin"></a>Antes de empezar
 
 Para ejecutar cualquiera de las simulaciones proporcionadas, necesita al menos [un dispositivo incorporado](onboard-configure.md).
 
-Lea el documento del tutorial proporcionado con cada escenario de ataque. Cada documento incluye requisitos de sistema operativo y aplicación, así como instrucciones detalladas específicas para un escenario de ataque.
+Lea el documento del tutorial proporcionado con cada escenario de ataque. Cada documento incluye los requisitos del sistema operativo y de la aplicación, así como instrucciones detalladas específicas de un escenario de ataque.
 
-## <a name="run-a-simulation"></a>Ejecutar una simulación
+## <a name="run-a-simulation"></a>Ejecución de una simulación
 
-1. En **Endpoints** \> **Evaluation &** \> **tutoriales & simulaciones**, seleccione cuál de los escenarios de ataque disponibles desea simular:
-   - **Escenario 1: El documento deja la puerta trasera:** simula la entrega de un documento de señuelo de ingeniería social. El documento inicia una puerta trasera especialmente diseñada que proporciona control a los atacantes.
-   - **Escenario 2: Script** de PowerShell en ataque sin archivos: simula un ataque sin archivos que se basa en PowerShell, que muestra la reducción de superficie de ataque y la detección de aprendizaje de dispositivos de actividad de memoria malintencionada.
-   - **Escenario 3: Respuesta** automatizada a incidentes: desencadena la investigación automatizada, que busca y corrige automáticamente artefactos de infracción para escalar la capacidad de respuesta a incidentes.
+1. En **Evaluación de puntos** \> de conexión **& tutoriales Tutoriales** \> **& simulaciones**, seleccione cuál de los escenarios de ataque disponibles desea simular:
+   - **Escenario 1: El documento coloca la puerta trasera** : simula la entrega de un documento señuelo diseñado socialmente. El documento inicia una puerta trasera especialmente diseñada que proporciona control a los atacantes.
+   - **Escenario 2: Script de PowerShell en ataque sin archivos** : simula un ataque sin archivos que se basa en PowerShell, que muestra la reducción de la superficie expuesta a ataques y la detección de aprendizaje de dispositivos de actividad de memoria malintencionada.
+   - **Escenario 3: Respuesta a incidentes automatizada:** desencadena una investigación automatizada, que busca y corrige automáticamente los artefactos de infracción para escalar la capacidad de respuesta a incidentes.
 
 2. Descargue y lea el documento de tutorial correspondiente proporcionado con el escenario seleccionado.
 
-3. Para descargar el archivo de simulación o copiar el script de simulación, vaya a Tutoriales de evaluación **&** \> **tutoriales & simulaciones**. Puedes elegir descargar el archivo o script en el dispositivo de prueba, pero no es obligatorio.
+3. Descargue el archivo de simulación o copie el script de simulación; para ello, vaya a **Evaluación & tutoriales Tutoriales** \> **& simulaciones**. Puede optar por descargar el archivo o script en el dispositivo de prueba, pero no es obligatorio.
 
-4. Ejecute el archivo de simulación o el script en el dispositivo de prueba como se indica en el documento del tutorial.
+4. Ejecute el archivo o script de simulación en el dispositivo de prueba como se indica en el documento del tutorial.
 
 > [!NOTE]
-> Los archivos de simulación o scripts imitan la actividad de ataque, pero en realidad son benignos y no dañan ni comprometen el dispositivo de prueba.
+> Los archivos o scripts de simulación imitan la actividad de ataque, pero en realidad son benignos y no dañarán ni pondrán en peligro el dispositivo de prueba.
 >
-> ¿Desea experimentar Defender for Endpoint? [Regístrese para obtener una prueba gratuita.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-attacksimulations-belowfoldlink)
+> ¿Quiere experimentar Defender para punto de conexión? [Regístrese para obtener una prueba gratuita.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-attacksimulations-belowfoldlink)
 
 ## <a name="related-topics"></a>Temas relacionados
 
-- [Incorporar dispositivos](onboard-configure.md)
+- [Incorporación de dispositivos](onboard-configure.md)
 - [incorporar dispositivos Windows](configure-endpoints.md)

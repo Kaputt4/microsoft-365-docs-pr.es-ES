@@ -3,16 +3,17 @@ title: Búsqueda &amp; dinámica con Inteligencia contra amenazas de Microsoft D
 description: Obtenga información sobre cómo buscar y pivotar en conjuntos de datos de Internet, artículos sobre amenazas, artículos sobre vulnerabilidades y proyectos mediante Inteligencia contra amenazas de Microsoft Defender (TI de Defender).
 author: alexroland24
 ms.author: aroland
+manager: dolmont
 ms.service: threat-intelligence
 ms.topic: how-to
 ms.date: 08/02/2022
 ms.custom: template-how-to
-ms.openlocfilehash: dbd62f4455b29bd2c23061096e126454d5c0d089
-ms.sourcegitcommit: 9b133379196da2b3a4bb311b07ff274f43780f68
+ms.openlocfilehash: 6bb98e3427b902c6559f9f3fa88559f90152b540
+ms.sourcegitcommit: c29af68260ba8676083674b3c70209bff2c2e362
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/14/2022
-ms.locfileid: "67693607"
+ms.lasthandoff: 09/16/2022
+ms.locfileid: "67741684"
 ---
 # <a name="searching-and-pivoting"></a>Búsqueda y dinamización
 

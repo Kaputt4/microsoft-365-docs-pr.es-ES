@@ -2,7 +2,7 @@
 title: Buscar correos electrónicos y corregir amenazas mediante el Explorador de amenazas en Microsoft 365 Defender
 description: Los pasos para realizar la corrección manual en el Explorador de amenazas en Microsoft 365 Defender, incluido cómo obtener el mejor rendimiento y escenarios que llaman a la corrección.
 search.product: ''
-ms.prod: m365-security
+ms.service: microsoft-365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -15,14 +15,14 @@ manager: dansimp
 audience: ITPro
 ms.collection: m365-guidance-templates
 ms.topic: how-to
-ms.technology: mdo
+ms.subservice: mdo
 search.appverid: met150
-ms.openlocfilehash: bbce88b36c978785ea8abd28bff13a6c6d0c6da7
-ms.sourcegitcommit: 9b133379196da2b3a4bb311b07ff274f43780f68
+ms.openlocfilehash: 6dd6b38699e1a414f0db2c0ca872ff267b0747f6
+ms.sourcegitcommit: c29af68260ba8676083674b3c70209bff2c2e362
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/14/2022
-ms.locfileid: "67699552"
+ms.lasthandoff: 09/16/2022
+ms.locfileid: "67741135"
 ---
 # <a name="steps-to-use-manual-email-remediation-in-threat-explorer"></a>Pasos para usar la corrección manual de correo electrónico en el Explorador de amenazas
 

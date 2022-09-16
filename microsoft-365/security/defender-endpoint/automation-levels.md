@@ -2,8 +2,8 @@
 title: Niveles de automatización en investigación y corrección automatizadas
 description: Obtenga información general sobre los niveles de automatización y cómo funcionan en Microsoft Defender para punto de conexión
 keywords: automated, investigation, level, Microsoft Defender para punto de conexión
-ms.prod: m365-security
-ms.technology: mde
+ms.service: microsoft-365-security
+ms.subservice: mde
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -20,12 +20,12 @@ ms.topic: conceptual
 ms.reviewer: ramarom, evaldm, isco, mabraitm, chriggs
 ms.custom: AIR
 search.appverid: met150
-ms.openlocfilehash: b894e0f0be65db26c8dddc74dd7f5087c3bd2ff0
-ms.sourcegitcommit: 9b133379196da2b3a4bb311b07ff274f43780f68
+ms.openlocfilehash: e484f950624cb80583a02bfe8f868d78af8a8ae7
+ms.sourcegitcommit: c29af68260ba8676083674b3c70209bff2c2e362
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/14/2022
-ms.locfileid: "67702520"
+ms.lasthandoff: 09/16/2022
+ms.locfileid: "67741859"
 ---
 # <a name="automation-levels-in-automated-investigation-and-remediation-capabilities"></a>Niveles de automatización en las funcionalidades automatizadas de investigación y corrección
 

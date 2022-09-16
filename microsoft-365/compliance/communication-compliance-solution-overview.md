@@ -1,9 +1,9 @@
 ---
-title: Cumplimiento de comunicaciones
+title: Cumplimiento de las comunicaciones
 description: Obtenga información sobre cómo configurar el cumplimiento de las comunicaciones en Microsoft Purview.
 keywords: Microsoft 365, riesgo interno, cumplimiento
 ms.localizationpriority: medium
-ms.prod: microsoft-365-enterprise
+ms.service: microsoft-365-enterprise
 ms.topic: article
 f1.keywords:
 - NOCSH
@@ -16,14 +16,14 @@ ms.collection:
 - m365solution-insiderrisk
 - m365initiative-compliance
 - m365solution-scenario
-ms.openlocfilehash: cf6a2ec63de23eab72d33f9e9cbff13854f6cc3d
-ms.sourcegitcommit: 244ab1b8fe98363f2bfeec337bf68e88ab31d789
+ms.openlocfilehash: 9746255d67fe0a03ec9a537025c19d4a2cb06302
+ms.sourcegitcommit: c29af68260ba8676083674b3c70209bff2c2e362
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/07/2022
-ms.locfileid: "66687112"
+ms.lasthandoff: 09/16/2022
+ms.locfileid: "67741332"
 ---
-# <a name="communication-compliance"></a>Cumplimiento de comunicaciones
+# <a name="communication-compliance"></a>Cumplimiento de las comunicaciones
 
 La protección de información confidencial y la detección y actuación sobre incidentes de acoso en el lugar de trabajo es una parte importante del cumplimiento de las directivas y estándares internos. Cumplimiento de comunicaciones de Microsoft Purview ayuda a minimizar estos riesgos, ya que le ayuda a detectar, capturar y tomar medidas de corrección rápidamente para el correo electrónico y las comunicaciones de Microsoft Teams. Estas incluyen comunicaciones inapropiadas que contienen palabras soeces, amenazas y acoso y comunicaciones que comparten información confidencial dentro y fuera de su organización.
 

@@ -23,12 +23,12 @@ ms.topic: conceptual
 search.appverid:
 - MOE150
 - MET150
-ms.openlocfilehash: b930181681d5849af4e99bf41d2b8643329175a5
-ms.sourcegitcommit: 10e6abe740e27000e223378eb17d657a47555fa8
+ms.openlocfilehash: de77f14d998c0be2f174c74e4d95cc265ee94bfb
+ms.sourcegitcommit: c29af68260ba8676083674b3c70209bff2c2e362
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/31/2022
-ms.locfileid: "67482238"
+ms.lasthandoff: 09/16/2022
+ms.locfileid: "67740519"
 ---
 # <a name="step-1-triage-and-analyze-your-first-incident"></a>Paso 1. Evaluación y análisis del primer incidente
 
@@ -48,7 +48,7 @@ Microsoft 365 Defender recibe alertas y eventos de varias plataformas de segurid
 - [Microsoft Defender para punto de conexión](../defender-endpoint/microsoft-defender-endpoint.md) es una solución de detección y respuesta de puntos de conexión (EDR) que usa antivirus de Microsoft Defender y protección contra amenazas avanzada habilitada para la nube mediante Microsoft Security Graph. Defender for Endpoint es una plataforma unificada para la protección preventiva, la detección posterior a la vulneración, la investigación automatizada y la respuesta. Protege los puntos de conexión frente a ciberamenazas, detecta ataques avanzados e infracciones de datos, automatiza incidentes de seguridad y mejora la posición de seguridad.
 - [Microsoft Defender for Identity](/defender-for-identity/what-is) es una solución de seguridad basada en la nube que usa las señales de Active Directory local Domain Services (AD DS) para identificar, detectar e investigar amenazas avanzadas, identidades en peligro y acciones internas malintencionadas dirigidas a su organización.
 - [Microsoft Defender for Cloud Apps](/cloud-app-security/) actúa como portero para brokerar el acceso en tiempo real entre los usuarios empresariales y los recursos en la nube que usan, dondequiera que se encuentren los usuarios e independientemente del dispositivo que usen.
-- [Microsoft Defender para Office 365](../office-365-security/overview.md) protege a su organización frente a amenazas malintencionadas en mensajes de correo electrónico, vínculos (direcciones URL) y herramientas de colaboración.
+- [Microsoft Defender para Office 365](/microsoft-365/office-365-security/overview) protege a su organización frente a amenazas malintencionadas en mensajes de correo electrónico, vínculos (direcciones URL) y herramientas de colaboración.
 - [Azure Security Center](/azure/security-center/security-center-introduction) es un sistema unificado de administración de seguridad de la infraestructura que refuerza la posición de seguridad de los centros de datos y proporciona protección contra amenazas avanzada en las cargas de trabajo híbridas en la nube y en el entorno local.
 
 

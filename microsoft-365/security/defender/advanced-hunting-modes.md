@@ -19,12 +19,13 @@ ms.collection:
 - m365initiative-m365-defender
 ms.topic: conceptual
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 45bc2edc940c5681302c1d9266b437b0406913af
-ms.sourcegitcommit: 10e6abe740e27000e223378eb17d657a47555fa8
+search.appverid: met150
+ms.openlocfilehash: f65baf6052ebdad6fb5ca91179018736fa47dbf4
+ms.sourcegitcommit: 9b133379196da2b3a4bb311b07ff274f43780f68
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/31/2022
-ms.locfileid: "67471819"
+ms.lasthandoff: 09/14/2022
+ms.locfileid: "67742551"
 ---
 # <a name="choose-between-guided-and-advanced-modes-to-hunt-in-microsoft-365-defender"></a>Elija entre modos guiados y avanzados para cazar en Microsoft 365 Defender
 

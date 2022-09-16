@@ -2,7 +2,8 @@
 title: notas de la versión de la API de Microsoft Defender para punto de conexión
 description: Notas de la versión de las actualizaciones realizadas en el conjunto Microsoft Defender para punto de conexión de API.
 keywords: Microsoft Defender para punto de conexión notas de la versión de la API, mde, API, API de Microsoft Defender para punto de conexión, actualizaciones, notas, versión
-ms.prod: m365-security
+ms.service: microsoft-365-security
+ms.subservice: mde
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -13,15 +14,14 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
-ms.technology: mde
 ms.custom: api
 search.appverid: met150
-ms.openlocfilehash: 50eee5a10311e08a706c8cc412c4a01e95ffad57
-ms.sourcegitcommit: 9b133379196da2b3a4bb311b07ff274f43780f68
+ms.openlocfilehash: 1a0d5fc868c9b024125e4c5ff27adab24a033211
+ms.sourcegitcommit: c29af68260ba8676083674b3c70209bff2c2e362
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/14/2022
-ms.locfileid: "67698471"
+ms.lasthandoff: 09/16/2022
+ms.locfileid: "67742035"
 ---
 # <a name="microsoft-defender-for-endpoint-api-release-notes"></a>notas de la versión de la API de Microsoft Defender para punto de conexión
 

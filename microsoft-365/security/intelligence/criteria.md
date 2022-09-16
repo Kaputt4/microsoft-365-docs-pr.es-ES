@@ -3,7 +3,7 @@ title: Cómo Microsoft identifica el malware y las aplicaciones potencialmente n
 ms.reviewer: ''
 description: Obtenga información sobre cómo Microsoft revisa el software en busca de infracciones de privacidad y otro comportamiento negativo, para determinar si es malware o una aplicación potencialmente no deseada.
 keywords: security, malware, virus research threats, research malware, device protection, computer infection, virus infection, descriptions, remediation, latest threats, MMdevice, Centro de protección contra malware de Microsoft, PUA, potentially unwanted applications
-ms.prod: m365-security
+ms.service: microsoft-365-security
 ms.mktglfcycl: secure
 ms.sitesec: library
 ms.localizationpriority: medium
@@ -15,13 +15,12 @@ ms.collection: M365-security-compliance
 ms.topic: article
 ms.date: 12/13/2021
 search.appverid: met150
-ms.technology: m365d
-ms.openlocfilehash: 1f210ee98c8fc51cfa6900b19bb3cb5d5465dbb3
-ms.sourcegitcommit: 85ce5fd0698b6f00ea1ea189634588d00ea13508
+ms.openlocfilehash: 4938a221cd23f3d99a9bdd32b981a28828c0eff3
+ms.sourcegitcommit: c29af68260ba8676083674b3c70209bff2c2e362
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/06/2022
-ms.locfileid: "64663542"
+ms.lasthandoff: 09/16/2022
+ms.locfileid: "67739970"
 ---
 # <a name="how-microsoft-identifies-malware-and-potentially-unwanted-applications"></a>Cómo Microsoft identifica el malware y las aplicaciones potencialmente no deseadas
 
@@ -64,13 +63,13 @@ Microsoft clasifica la mayoría del software malintencionado en una de las sigui
 
 * **Hacktool:** Un tipo de herramienta que se puede usar para obtener acceso no autorizado al dispositivo.
 
-* **Virus de macro:** Un tipo de malware que se propaga a través de documentos infectados, como Microsoft Word o Excel documentos. El virus se ejecuta al abrir un documento infectado.
+* **Virus de macro:** Un tipo de malware que se propaga a través de documentos infectados, como documentos de Microsoft Word o Excel. El virus se ejecuta al abrir un documento infectado.
 
 * **Ofuscador:** Un tipo de malware que oculta su código y propósito, lo que dificulta la detección o eliminación del software de seguridad.
 
 * **Roba contraseñas:** Un tipo de malware que recopila su información personal, como nombres de usuario y contraseñas. A menudo funciona junto con un keylogger, que recopila y envía información sobre las teclas que presiona y sitios web que visita.
 
-* **Ransomware:** Un tipo de malware que cifra los archivos o realiza otras modificaciones que pueden impedir que use el dispositivo. A continuación, muestra una nota de rescate que indica que debe pagar dinero o realizar otras acciones antes de que pueda usar su dispositivo de nuevo. [Vea más información sobre ransomware](/security/compass/human-operated-ransomware).
+* **Ransomware:** Un tipo de malware que cifra los archivos o realiza otras modificaciones que pueden impedir que use el dispositivo. Luego, aparece una nota de rescate que indica que debe pagar o realizar otras acciones para poder volver a usar el dispositivo. [Vea más información sobre ransomware](/security/compass/human-operated-ransomware).
 
 * **Software de seguridad no autorizado:** Malware que pretende ser software de seguridad, pero no proporciona ninguna protección. Este tipo de malware suele mostrar alertas sobre amenazas inexistentes en el dispositivo. También intenta convencerle de que pague por sus servicios.
 
@@ -78,11 +77,11 @@ Microsoft clasifica la mayoría del software malintencionado en una de las sigui
 
 * **Clicker troyano:** Un tipo de troyano que hace clic automáticamente en botones o controles similares en sitios web o aplicaciones. Los atacantes pueden usar este troyano para hacer clic en anuncios en línea. Estos clics pueden sesgar sondeos en línea u otros sistemas de seguimiento e incluso pueden instalar aplicaciones en el dispositivo.
 
-* **Gusano:** Un tipo de malware que se propaga a otros dispositivos. Los gusanos pueden propagarse por correo electrónico, mensajería instantánea, plataformas de uso compartido de archivos, redes sociales, recursos compartidos de red y unidades extraíbles. Los gusanos sofisticados aprovechan las vulnerabilidades de software para propagarse.
+* **Gusano:** Un tipo de malware que se propaga a otros dispositivos. Los gusanos pueden propagarse por correo electrónico, mensajería instantánea, plataformas de uso compartido de archivos, redes sociales, recursos compartidos de red y unidades extraíbles. Los gusanos más sofisticados aprovechan las vulnerabilidades de software para propagarse.
 
 ### <a name="unwanted-software"></a>Software no deseado
 
-Microsoft cree que debe tener control sobre su experiencia de Windows. El software que se ejecuta en Windows debe mantener el control del dispositivo a través de opciones informadas y controles accesibles. Microsoft identifica los comportamientos de software que garantizan su control. Clasificamos el software que no demuestra completamente estos comportamientos como "software no deseado".
+Microsoft cree que debe tener control sobre la experiencia de Windows. El software que se ejecuta en Windows debe mantener el control del dispositivo a través de opciones informadas y controles accesibles. Microsoft identifica los comportamientos de software que garantizan su control. Clasificamos el software que no demuestra completamente estos comportamientos como "software no deseado".
 
 #### <a name="lack-of-choice"></a>Falta de elección
 
@@ -168,11 +167,11 @@ Los anuncios que se muestran a usted deben:
 
 #### <a name="consumer-opinion"></a>Opinión del consumidor
 
-Microsoft mantiene una red mundial de analistas y sistemas de inteligencia donde puede [enviar software para su análisis](https://www.microsoft.com/wdsi/filesubmission). Su participación ayuda a Microsoft a identificar malware nuevo rápidamente. Después del análisis, Microsoft crea inteligencia de seguridad para software que cumple los criterios descritos. Esta inteligencia de seguridad identifica el software como malware y está disponible para todos los usuarios a través de Antivirus de Microsoft Defender y otras soluciones antimalware de Microsoft.
+Microsoft mantiene una red mundial de analistas y sistemas de inteligencia donde puede [enviar software para su análisis](https://www.microsoft.com/wdsi/filesubmission). Su participación ayuda a Microsoft a identificar malware nuevo rápidamente. Después del análisis, Microsoft crea inteligencia de seguridad para software que cumple los criterios descritos. Esta inteligencia de seguridad identifica el software como malware y está disponible para todos los usuarios a través del Antivirus de Microsoft Defender y otras soluciones antimalware de Microsoft.
 
 ## <a name="potentially-unwanted-application-pua"></a>Aplicación potencialmente no deseada (PUA)
 
-Nuestra protección pua tiene como objetivo proteger la productividad del usuario y garantizar experiencias de Windows agradables. Esta protección ayuda a ofrecer experiencias de Windows más productivas, eficaces y encantadoras. Para obtener instrucciones sobre cómo habilitar la protección de PUA en Microsoft Edge y Antivirus de Microsoft Defender basados en Chromium, consulte [Detectar y bloquear aplicaciones potencialmente no deseadas](/microsoft-365/security/defender-endpoint/detect-block-potentially-unwanted-apps-microsoft-defender-antivirus).
+Nuestra protección pua tiene como objetivo proteger la productividad del usuario y garantizar experiencias agradables de Windows. Esta protección ayuda a ofrecer experiencias de Windows más productivas, eficaces y encantadoras. Para obtener instrucciones sobre cómo habilitar la protección de PUA en Microsoft Edge basado en Chromium y antivirus de Microsoft Defender, consulte [Detectar y bloquear aplicaciones potencialmente no deseadas](/microsoft-365/security/defender-endpoint/detect-block-potentially-unwanted-apps-microsoft-defender-antivirus).
 
 *Las PUA no se consideran malware.*
 
@@ -180,9 +179,9 @@ Microsoft usa categorías específicas y las definiciones de categorías para cl
 
 * **Software de publicidad:** Software que muestra anuncios o promociones, o le pide que complete encuestas para otros productos o servicios en software distinto de sí mismo. Esto incluye software que inserta anuncios en páginas web.
 
-* **Software torrent (solo Enterprise):** software que se usa para crear o descargar torrents u otros archivos usados específicamente con tecnologías de uso compartido de archivos punto a punto.
+* **Software torrent (solo enterprise):** Software que se usa para crear o descargar torrents u otros archivos que se usan específicamente con tecnologías de uso compartido de archivos punto a punto.
 
-* **Software criptográfico (solo Enterprise):** software que usa los recursos del dispositivo para extraer criptomonedas.
+* **Software cryptomining (solo enterprise):** Software que usa los recursos del dispositivo para extraer criptomonedas.
 
 * **Agrupación de software:** Software que ofrece instalar otro software que no está desarrollado por la misma entidad o no es necesario para que el software se ejecute. Además, el software que ofrece para instalar otro software que califica como PUA en función de los criterios descritos en este documento.
 

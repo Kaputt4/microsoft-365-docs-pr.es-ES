@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: El Administrador de cumplimiento de Microsoft Purview proporciona plantillas para crear evaluaciones que se ajustan a las normativas, estándares y leyes nacionales, regionales y del sector.
-ms.openlocfilehash: 2870378d25a66661cdc720c8073e5bbab283790b
-ms.sourcegitcommit: c1eaea74c8ffce2f9f477c9469342e88e4a70c14
+ms.openlocfilehash: e5f2b7665c7992daba367814d124595c255dfe3b
+ms.sourcegitcommit: c29af68260ba8676083674b3c70209bff2c2e362
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/20/2022
-ms.locfileid: "66895105"
+ms.lasthandoff: 09/16/2022
+ms.locfileid: "67741047"
 ---
 # <a name="compliance-manager-templates-list"></a>Lista de plantillas del Administrador de cumplimiento
 
@@ -138,7 +138,7 @@ La organización puede comprar las plantillas que se enumeran a continuación.
 - Reglamento de información financiera y de salud del consumidor, NAIC MDL-672, Q2 2017  
 - Revisiones de los principios para la gestión sólida del riesgo operativo (Riesgos operativos de Basilea III)  
 - Cuestionario de recopilación de información estandarizada (SIG)  
-- [Intercambio de evaluación de seguridad de la información de confianza](/compliance/regulatory/offering-tisax-germany)
+- [Intercambio de evaluación de seguridad de la información de confianza (TISAX) 5.1](/compliance/regulatory/offering-tisax-germany)
 
 ### <a name="us-government"></a>Gobierno de Estados Unidos
 
@@ -214,7 +214,7 @@ La organización puede comprar las plantillas que se enumeran a continuación.
 - Estatutos Generales de Connecticut: Disposiciones generales para contratistas estatales que reciben información confidencial  
 - Programa de seguridad de la información de Connecticut para proteger la información personal  
 - Ley estatal de Connecticut: violación de los datos de seguridad re computerizados que contienen información personal  
-- D.C. Ley 16-237- Ley de notificación de infracciones de seguridad de la información personal del consumidor  
+- D.c. Ley 16-237- Ley de notificación de infracciones de seguridad de la información personal del consumidor  
 - Delaware: Ley de protección de la privacidad de los datos de los estudiantes  
 - Infracciones de seguridad informática de Delaware- Subtítulo comercial y comercial II - 12B-100 a 12B-104
 - Título XXXII de Florida, Capítulo 501, Sección 501.171, Seguridad de la información personal confidencial  
@@ -251,7 +251,7 @@ La organización puede comprar las plantillas que se enumeran a continuación.
 - Nueva York - 23 NYCRR Parte 500  
 - Código administrativo de la ciudad de Nueva York: notificación de infracción de seguridad  
 - Ley General empresarial de Nueva York: Notificación de vulneración de seguridad de datos y protección de seguridad de datos  
-- Ley de privacidad de Nueva York - DRAFT  
+- Ley de privacidad de Nueva York  
 - Carolina del Norte- Ley de protección contra robo de identidad  
 - North Dakota Chapter 51-30 Notice of Security Breach for Personal Information  
 - Ohio: notificación de infracción de seguridad  
@@ -286,16 +286,18 @@ La organización puede comprar las plantillas que se enumeran a continuación.
 - Australia - Nivel de madurez 3 de ASD Essential 8
 - Australia - Ley de Archivos Nacionales
 - Australia - Public Records Office Victoria Recordkeeping Standards  
-- Australia - Ley de spam de 2003  
+- Australia - Ley de spam de 2003
 - Código de privacidad de Australia (informes de crédito)  
-- Ley de privacidad de Australia  
+- Ley de privacidad de Australia
+- Ley de registro público de Australia
 - Australian Energy Sector Cyber Security Framework (AESCSF)  
-- [Australian Information Security Registered Assessor Program (IRAP) Versión 3](/compliance/regulatory/offering-ccsl-irap-australia)  
+- [Australian Information Security Registered Assessor Program (IRAP) with ISM Version 3.5 - Official](/compliance/regulatory/offering-ccsl-irap-australia)
+- [Australian Information Security Registered Assessor Program (IRAP) with ISM Version 3.5 - Protected](/compliance/regulatory/offering-ccsl-irap-australia)
 - [Australian Prudential Regulation Authority CPS](/compliance/regulatory/offering-apra-australia)  
 - Estándares de seguridad de datos de protección victoriana V2.0 (VPDSS 2.0)  
 - Estándar de administración de la información para el Gobierno de Australia - Archivos Nacionales de Australia (NAA)  
 - China: Especificación de seguridad de la información personal  
-- Ley de ciberseguridad de la República Popular China
+- Ley de ciberseguridad de la República de China del Personas
 - Hong Kong- Código de práctica bancaria y tarjeta de pago
 - Hong Kong - Ordenanza de datos personales (privacidad)  
 - Reglas de tecnología de la información de la India (procedimientos y procedimientos de seguridad razonables y datos personales confidenciales o información)

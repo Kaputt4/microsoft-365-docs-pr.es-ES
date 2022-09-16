@@ -2,7 +2,7 @@
 title: Cómo priorizar y administrar investigaciones y respuestas automatizadas (AIR).
 description: Pasos para analizar y aprobar acciones de AIR directamente desde el Centro de acciones. Cuando se desencadenan alertas, la investigación y respuesta automatizadas (AIR) determina el ámbito de impacto de una amenaza en su organización y proporciona las acciones de corrección recomendadas.
 search.product: ''
-ms.prod: m365-security
+ms.service: microsoft-365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -15,14 +15,14 @@ manager: dansimp
 audience: ITPro
 ms.collection: m365-guidance-templates
 ms.topic: how-to
-ms.technology: mdo
+ms.subservice: mdo
 search.appverid: met150
-ms.openlocfilehash: bcd356394606bd0d1e5f4095d5abe5076ea4ff4d
-ms.sourcegitcommit: 9b133379196da2b3a4bb311b07ff274f43780f68
+ms.openlocfilehash: 6532def135183bb67a2d8e5d98e2561deb70bec0
+ms.sourcegitcommit: c29af68260ba8676083674b3c70209bff2c2e362
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/14/2022
-ms.locfileid: "67703464"
+ms.lasthandoff: 09/16/2022
+ms.locfileid: "67742145"
 ---
 # <a name="prioritize-and-manage-automated-investigations-and-response-air"></a>Priorizar y administrar investigaciones y respuestas automatizadas (AIR)
 

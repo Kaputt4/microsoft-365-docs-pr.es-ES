@@ -125,7 +125,7 @@
     - name: Microsoft Defender para Empresas
       href: ../security/defender-business/index.yml
     - name: Microsoft Defender para Office 365
-      href: ../security/office-365-security/overview.md
+      href: /microsoft-365/security/office-365-security/overview
     - name: Microsoft 365 Lighthouse
       href: ../lighthouse/m365-lighthouse-overview.md
     - name: Protección contra amenazas por antivirus de Microsoft Defender
