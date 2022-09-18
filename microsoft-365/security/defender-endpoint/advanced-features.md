@@ -15,12 +15,12 @@ ms.collection: M365-security-compliance
 ms.topic: article
 ms.subservice: mde
 search.appverid: met150
-ms.openlocfilehash: bba4c55065dac5409d95729118f47c4808b73c7d
-ms.sourcegitcommit: 9b133379196da2b3a4bb311b07ff274f43780f68
+ms.openlocfilehash: 8aafef819574d14871da0ee3199adfc5da6da2d0
+ms.sourcegitcommit: 2dedd0f594b817779e034afa6c4418def2382a22
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/14/2022
-ms.locfileid: "67697383"
+ms.lasthandoff: 09/18/2022
+ms.locfileid: "67798184"
 ---
 # <a name="configure-advanced-features-in-defender-for-endpoint"></a>Configuración de características avanzadas en Defender para punto de conexión
 
@@ -140,7 +140,6 @@ Mantenga activada la protección contra alteraciones para evitar cambios no dese
 
 Active esta característica para que pueda ver los detalles del usuario almacenados en Azure Active Directory. Los detalles incluyen la información de imagen, nombre, título y departamento de un usuario al investigar entidades de cuenta de usuario. Puede encontrar información de la cuenta de usuario en las vistas siguientes:
 
-- Panel de operaciones de seguridad
 - Cola de alertas
 - Página de detalles del dispositivo
 

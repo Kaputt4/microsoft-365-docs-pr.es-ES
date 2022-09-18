@@ -17,12 +17,12 @@ search.appverid:
 - MET150
 description: Crear el esquema para tipos de información confidencial basados en las coincidencias exactas de datos
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 87b90d2aabb3dd23e7f891a740bcaf98a5cb996a
-ms.sourcegitcommit: 23c7e96d8ec31c676c458e7c71f1cc8a1e40a0e4
+ms.openlocfilehash: 34ae4d9150ec29fdac4184c30f053b18ca58df74
+ms.sourcegitcommit: 2dedd0f594b817779e034afa6c4418def2382a22
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/16/2022
-ms.locfileid: "67359939"
+ms.lasthandoff: 09/18/2022
+ms.locfileid: "67799360"
 ---
 # <a name="create-the-schema-for-exact-data-match-based-sensitive-information-types"></a>Crear el esquema para tipos de información confidencial basados en las coincidencias exactas de datos
 
@@ -70,7 +70,7 @@ Puede usar este asistente para simplificar el proceso de creación de archivos d
     1. **Escriba delimitadores y signos de puntuación personalizados para este campo.**
 
    > [!IMPORTANT]
-   > Al menos uno, pero no más de cinco de los campos de su esquema deben ser designados como de búsqueda.
+   > Al menos uno, pero no se deben designar más de diez campos de esquema como búsqueda.
 
 7. Seleccione **Guardar**. El esquema ahora aparecerá en la lista y estará disponible para su uso.
 

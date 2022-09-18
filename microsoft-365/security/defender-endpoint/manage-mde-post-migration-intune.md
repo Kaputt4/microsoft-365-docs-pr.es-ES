@@ -18,12 +18,12 @@ ms.topic: article
 ms.date: 07/01/2022
 ms.reviewer: chventou
 search.appverid: met150
-ms.openlocfilehash: 4fd262b5590d0ce292f05e32d9681cac9d9e4bac
-ms.sourcegitcommit: 9b133379196da2b3a4bb311b07ff274f43780f68
+ms.openlocfilehash: deb5727f58e0345946295a7fa009c33e59f444cb
+ms.sourcegitcommit: 2dedd0f594b817779e034afa6c4418def2382a22
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/14/2022
-ms.locfileid: "67687019"
+ms.lasthandoff: 09/18/2022
+ms.locfileid: "67797434"
 ---
 # <a name="manage-microsoft-defender-for-endpoint-with-intune"></a>Administración de Microsoft Defender para punto de conexión con Intune
 
@@ -87,4 +87,4 @@ Si aún no lo ha hecho, configure el portal de Microsoft 365 Defender para ver a
 ## <a name="next-steps"></a>Pasos siguientes
 
 - [Obtenga información general sobre la administración de vulnerabilidades de Defender](/microsoft-365/security/defender-endpoint/next-gen-threat-and-vuln-mgt)
-- [Visite el panel de operaciones de seguridad del portal de Microsoft 365 Defender](/microsoft-365/security/defender-endpoint/security-operations-dashboard)
+

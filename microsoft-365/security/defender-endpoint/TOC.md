@@ -406,7 +406,6 @@
 ## [Investigar y responder a amenazas]()
 ### [EDR]()
 #### [Introducción a EDR](overview-endpoint-detection-response.md)
-#### [Panel de operaciones de seguridad](security-operations-dashboard.md)
 #### [Enviar archivos](admin-submissions-mde.md)
 #### [Cola de incidentes]()
 ##### [Ver y organizar la cola de incidentes](view-incidents-queue.md)

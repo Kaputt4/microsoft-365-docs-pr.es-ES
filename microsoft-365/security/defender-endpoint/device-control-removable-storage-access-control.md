@@ -14,15 +14,15 @@ ms.collection: M365-security-compliance
 ms.custom: admindeeplinkDEFENDER
 ms.topic: conceptual
 ms.subservice: mde
-ms.date: 09/09/2022
+ms.date: 09/15/2022
 ms.reviewer: tewchen
 search.appverid: met150
-ms.openlocfilehash: 649797295a4b1adae99315d69ac3fe5490bc398f
-ms.sourcegitcommit: b1ed6470645455c2f1fcf467450debc622c40147
+ms.openlocfilehash: 9a5add52188afcecc4df6a369f65468e79452e95
+ms.sourcegitcommit: 2dedd0f594b817779e034afa6c4418def2382a22
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/15/2022
-ms.locfileid: "67710683"
+ms.lasthandoff: 09/18/2022
+ms.locfileid: "67799404"
 ---
 # <a name="microsoft-defender-for-endpoint-device-control-removable-storage-access-control"></a>Microsoft Defender para punto de conexión almacenamiento extraíble de control de dispositivos Access Control
 
@@ -68,8 +68,9 @@ Implemente Access Control de almacenamiento extraíble en dispositivos Windows 1
 
 El Access Control De almacenamiento extraíble incluye la creación de grupos de almacenamiento extraíbles y la creación de reglas de directiva de acceso:
 
-   - El grupo de almacenamiento extraíble permite crear un grupo. Por ejemplo, grupo USB autorizado o grupo USB cifrado.
-   - La regla de directiva de acceso permite crear una directiva para restringir cada grupo de almacenamiento extraíble. Por ejemplo, solo permitir que el usuario autorizado escriba un grupo USB autorizado de acceso.
+- El grupo de almacenamiento extraíble permite crear un grupo. Por ejemplo, grupo USB autorizado o grupo USB cifrado.
+- La regla de directiva de acceso permite crear una directiva para restringir cada grupo de almacenamiento extraíble. Por ejemplo, solo permitir que el usuario autorizado escriba un grupo USB autorizado de acceso.
+- Para bloquear una clase de almacenamiento extraíble específica pero permitir medios específicos, puede usar "`IncludedIdList` un grupo a través `PrimaryId` de y `ExcludedIDList` un grupo a través`HardwareId``DeviceId`\/ de /etc.". Para obtener instrucciones adicionales, vea [Deploy Removable Storage Access Control by using Intune OMA-URI](deploy-manage-removable-storage-intune.md#deploy-removable-storage-access-control-by-using-intune-oma-uri).
 
 Estas son las propiedades que puede usar al crear los archivos XML de grupo y directiva.
 

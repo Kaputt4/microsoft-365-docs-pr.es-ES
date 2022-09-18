@@ -16,12 +16,12 @@ ms.collection: M365-security-compliance
 ms.topic: article
 ms.date: 04/24/2018
 search.appverid: met150
-ms.openlocfilehash: 685e36809809baf3fd45cabf8a160abb22f7d9b0
-ms.sourcegitcommit: c29af68260ba8676083674b3c70209bff2c2e362
+ms.openlocfilehash: 353dad94d14ccfd807a946161d3879815526899d
+ms.sourcegitcommit: 2dedd0f594b817779e034afa6c4418def2382a22
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/16/2022
-ms.locfileid: "67740563"
+ms.lasthandoff: 09/18/2022
+ms.locfileid: "67799096"
 ---
 # <a name="check-sensor-health-state-at-microsoft-defender-for-endpoint"></a>Comprobación del estado del sensor en Microsoft Defender para punto de conexión
 
@@ -34,7 +34,7 @@ ms.locfileid: "67740563"
 
 > ¿Quiere experimentar Defender para punto de conexión? [Regístrese para obtener una prueba gratuita.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-checksensor-abovefoldlink)
 
-El icono **Dispositivos con problemas de sensor** se encuentra en el panel Operaciones de seguridad. Este icono proporciona información sobre la capacidad de cada dispositivo de dar datos de sensores y comunicarse con el servicio Microsoft Defender para punto de conexión. Indica cuántos dispositivos requieren atención y le ayuda a identificar dispositivos problemáticos y tomar medidas para corregir los problemas conocidos.
+El icono **Dispositivos con problemas de sensor** proporciona información sobre la capacidad del dispositivo individual para proporcionar datos del sensor y comunicarse con el servicio Defender para punto de conexión. Indica cuántos dispositivos requieren atención y le ayuda a identificar dispositivos problemáticos y tomar medidas para corregir los problemas conocidos.
 
 Hay dos indicadores de estado en el icono que proporcionan información sobre el número de dispositivos que no informan correctamente al servicio:
 

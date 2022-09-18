@@ -15,12 +15,12 @@ ms.collection: M365-security-compliance
 ms.topic: article
 ms.subservice: mde
 search.appverid: met150
-ms.openlocfilehash: ff038a72cccf5b79432ef15aa8bd8b396e5fb991
-ms.sourcegitcommit: 9b133379196da2b3a4bb311b07ff274f43780f68
+ms.openlocfilehash: 55bb0d81199755dc92899a477ce165388704ffce
+ms.sourcegitcommit: 2dedd0f594b817779e034afa6c4418def2382a22
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/14/2022
-ms.locfileid: "67688625"
+ms.lasthandoff: 09/18/2022
+ms.locfileid: "67799238"
 ---
 # <a name="create-and-manage-device-groups"></a>Crear y administrar grupos de dispositivos
 
@@ -79,7 +79,7 @@ Como parte del proceso de creación de un grupo de dispositivos, hará lo siguie
 
 ## <a name="manage-device-groups"></a>Administrar grupos de dispositivos
 
-Puede promover o disminuir la clasificación de un grupo de dispositivos para que se le dé mayor o menor prioridad durante la coincidencia. Cuando un dispositivo coincide con más de un grupo, solo se agrega al grupo de clasificación más alto. También puede editar y eliminar grupos.
+Puede promover o disminuir la clasificación de un grupo de dispositivos para que se le dé mayor o menor prioridad durante la coincidencia. Un grupo de dispositivos con una clasificación de 1 es el grupo con mayor clasificación. Cuando un dispositivo coincide con más de un grupo, solo se agrega al grupo de clasificación más alto. También puede editar y eliminar grupos.
 
 > [!WARNING]
 > La eliminación de un grupo de dispositivos puede afectar a las reglas de notificación por correo electrónico. Si un grupo de dispositivos está configurado en una regla de notificación por correo electrónico, se quitará de esa regla. Si el grupo de dispositivos es el único grupo configurado para una notificación por correo electrónico, esa regla de notificación por correo electrónico se eliminará junto con el grupo de dispositivos.

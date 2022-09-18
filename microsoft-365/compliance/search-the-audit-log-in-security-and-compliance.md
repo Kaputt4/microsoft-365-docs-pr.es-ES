@@ -21,12 +21,12 @@ description: Use el portal de cumplimiento de Microsoft Purview para buscar en e
 ms.custom:
 - seo-marvel-apr2020
 - admindeeplinkMAC
-ms.openlocfilehash: 90a40127dd1a9efbf6334e8207ad35a6e5bd2231
-ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
-ms.translationtype: HT
+ms.openlocfilehash: d2e49138f03e82bfa2ef0130d72161b1de66d567
+ms.sourcegitcommit: 2dedd0f594b817779e034afa6c4418def2382a22
+ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/06/2022
-ms.locfileid: "66628669"
+ms.lasthandoff: 09/18/2022
+ms.locfileid: "67797468"
 ---
 # <a name="search-the-audit-log-in-the-compliance-portal"></a>Búsqueda del registro de auditoría en el portal de cumplimiento
 
@@ -196,7 +196,7 @@ Aquí se muestra el proceso para buscar el registro de auditoría en Microsoft 3
 
 - Haga clic en **Borrar** para borrar los criterios actuales de búsqueda. El intervalo de fecha vuelve al predeterminado de los últimos siete días. También puede hacer clic en **Borrar todo para mostrar los resultados de todas las actividades** para cancelar todas las actividades seleccionadas.
 
-- Si se encuentran 50 000 resultados, puede suponer que probablemente existen más de 50 000 eventos que cumplen los criterios de búsqueda. Puede restringir los criterios de búsqueda y volver a ejecutar la búsqueda para devolver menos resultados o puede exportar todos los resultados de búsqueda al seleccionar **Exportar resultado**\>**Descargar todos los resultados**.
+- Si se encuentran 50 000 resultados, puede suponer que probablemente existen más de 50 000 eventos que cumplen los criterios de búsqueda. Puede refinar los criterios de búsqueda y volver a ejecutar la búsqueda para devolver menos resultados, o bien puede exportar los 50 000 resultados de búsqueda seleccionando **Exportar resultados** \> **Descargar todos los resultados**.
 
 ### <a name="step-2-view-the-search-results"></a>Paso 2: Ver los resultados de la búsqueda
 

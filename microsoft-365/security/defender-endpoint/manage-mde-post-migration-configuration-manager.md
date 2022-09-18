@@ -19,12 +19,12 @@ ms.topic: article
 ms.date: 07/01/2022
 ms.reviewer: chventou
 search.appverid: met150
-ms.openlocfilehash: 32d9d741fe67de29d6cb9766c1f27119d33aa8d0
-ms.sourcegitcommit: 9b133379196da2b3a4bb311b07ff274f43780f68
+ms.openlocfilehash: bfa4e66337df11cf76e53829ee4aceffdc7db827
+ms.sourcegitcommit: 2dedd0f594b817779e034afa6c4418def2382a22
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/14/2022
-ms.locfileid: "67704488"
+ms.lasthandoff: 09/18/2022
+ms.locfileid: "67799074"
 ---
 # <a name="manage-microsoft-defender-for-endpoint-with-configuration-manager"></a>Administración de Microsoft Defender para punto de conexión con Configuration Manager
 
@@ -61,5 +61,4 @@ Si aún no lo ha hecho, configure el portal de Microsoft 365 Defender para ver a
 ## <a name="next-steps"></a>Pasos siguientes
 
 - [Obtenga información general sobre la administración de vulnerabilidades de Defender](/microsoft-365/security/defender-endpoint/next-gen-threat-and-vuln-mgt)
-- [Visite el panel de operaciones de seguridad del portal de Microsoft 365 Defender](/microsoft-365/security/defender-endpoint/security-operations-dashboard)
 - [Administración de Microsoft Defender para punto de conexión con Intune](manage-mde-post-migration-intune.md)

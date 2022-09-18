@@ -17,12 +17,12 @@ ms.topic: conceptual
 ms.date: 09/09/2022
 ms.reviewer: tewchen
 search.appverid: met150
-ms.openlocfilehash: d06d36f8b9fb3451f70b646c3969fa2bb7487f9f
-ms.sourcegitcommit: c29af68260ba8676083674b3c70209bff2c2e362
+ms.openlocfilehash: 45f2ca6ee7060403d6ccfa98e90b5e01256bfed4
+ms.sourcegitcommit: 2dedd0f594b817779e034afa6c4418def2382a22
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/16/2022
-ms.locfileid: "67736849"
+ms.lasthandoff: 09/18/2022
+ms.locfileid: "67799251"
 ---
 # <a name="deploy-and-manage-removable-storage-access-control-using-intune"></a>Implementación y administración de Access Control de almacenamiento extraíble mediante Intune
 
@@ -69,6 +69,8 @@ Vaya al Centro de administración de Microsoft Endpoint Manager () ><https://end
 2. Establecer aplicación predeterminada:
 
    Puede establecer el acceso predeterminado (Denegar o Permitir) para todas las características de Control de dispositivos (`RemovableMediaDevices`, `CdRomDevices`, `WpdDevices`, `PrinterDevices`).
+
+   Para bloquear una clase de almacenamiento extraíble específica pero permitir medios específicos, puede usar "`IncludedIdList` un grupo a través `PrimaryId` de y `ExcludedIDList` un grupo a través de `DeviceId`/`HardwareId`/etc.".  Para obtener más información, consulte [Microsoft Defender para punto de conexión Access Control de almacenamiento extraíble de Device Control](device-control-removable-storage-access-control.md).
 
    Por ejemplo, puede tener una directiva **Deny** o **Allow** para `RemovableMediaDevices`, pero no para `CdRomDevices` o `WpdDevices`. Puede establecer **La denegación predeterminada** a través de esta directiva y, a continuación, el acceso de lectura, escritura y ejecución a `CdRomDevices` o `WpdDevices` se bloqueará. Si solo desea administrar el almacenamiento, asegúrese de crear una directiva **Allow** para la impresora; De lo contrario, esta aplicación predeterminada también se aplicará a las impresoras.
 

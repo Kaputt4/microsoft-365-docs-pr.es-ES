@@ -19,12 +19,12 @@ ms.custom:
 description: Los administradores pueden aprender a ver y administrar mensajes en cuarentena para todos los usuarios de Exchange Online Protection (EOP). Los administradores de organizaciones con Microsoft Defender para Office 365 también pueden administrar archivos en cuarentena en SharePoint Online, OneDrive para la Empresa y Microsoft Teams.
 ms.subservice: mdo
 ms.service: microsoft-365-security
-ms.openlocfilehash: 8c28e4dc142136075e220ac6f011be4acf76e813
-ms.sourcegitcommit: 651610ca73bfd1d008d97311b59782790df664fb
+ms.openlocfilehash: fd1d9d60140ebce0f718a2f23e192ada37b2f3bd
+ms.sourcegitcommit: 2dedd0f594b817779e034afa6c4418def2382a22
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/07/2022
-ms.locfileid: "67611463"
+ms.lasthandoff: 09/18/2022
+ms.locfileid: "67797986"
 ---
 # <a name="manage-quarantined-messages-and-files-as-an-admin-in-eop"></a>Administración de mensajes en cuarentena y archivos como administrador en EOP
 
@@ -214,7 +214,11 @@ Las siguientes acciones están disponibles después de hacer clic en ![el icono 
 
 - ![Icono Eliminar de cuarentena.](../../media/m365-cc-sc-delete-icon.png) **Eliminar de la cuarentena**: después de hacer clic en **Sí** en la advertencia que aparece, el mensaje se elimina inmediatamente sin enviarse a los destinatarios originales.
 
-- ![Icono Descargar correo electrónico](../../media/m365-cc-sc-download-icon.png) **Descargar correo electrónico**: En el control flotante que aparece, seleccione **entiendo los riesgos que conlleva la descarga de este mensaje** y, a continuación, haga clic en **Descargar** para guardar una copia local del mensaje en formato .eml.
+- ![Icono Descargar correo electrónico.](../../media/m365-cc-sc-download-icon.png) **Descargar correo electrónico**: en el control flotante que aparece, configure los siguientes valores:
+  - **Motivo para descargar el archivo**: escriba texto descriptivo.
+  - **Crear contraseña** y **Confirmar contraseña**: escriba una contraseña necesaria para abrir el archivo de mensaje descargado.
+
+  Cuando haya terminado, haga clic en **Descargar** y, a continuación, en **Listo** para guardar una copia local del mensaje. El archivo de mensaje .eml se guarda en un archivo comprimido denominado Quarantined Messages.zip en la carpeta **Descargas** . Si el archivo .zip ya existe, se anexa un número al nombre de archivo (por ejemplo, Mensajes en cuarentena(1).zip).
 
 - ![Icono Bloquear remitente.](../../media/m365-cc-sc-block-sender-icon.png) Icono Bloquear remitente **Bloquear remitente**: añade el remitente a la lista de remitentes bloqueados del **Buzón**. Para más información, consulte [Bloquear un remitente de correo](https://support.microsoft.com/office/b29fd867-cac9-40d8-aed1-659e06a706e4).
 

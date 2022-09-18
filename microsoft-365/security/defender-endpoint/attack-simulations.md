@@ -4,10 +4,9 @@ description: Ejecute las simulaciones de escenarios de ataque proporcionadas par
 keywords: prueba, escenario, ataque, simulación, simulado, bricolaje, Microsoft Defender para punto de conexión
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
-ms.service: microsoft-365-security
-ms.subservice: mde
 ms.mktglfcycl: deploy
 ms.sitesec: library
+ms.prod: m365-security
 ms.pagetype: security
 ms.author: maccruz
 author: dansimp
@@ -17,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.date: 11/20/2018
-ms.openlocfilehash: 20ad6f155a0b9e5dbfc6ff00154f2d4012b80079
-ms.sourcegitcommit: c29af68260ba8676083674b3c70209bff2c2e362
+ms.openlocfilehash: ce1d6444fa96438be3ddc870089a4c5db834ca12
+ms.sourcegitcommit: 2dedd0f594b817779e034afa6c4418def2382a22
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/16/2022
-ms.locfileid: "67743380"
+ms.lasthandoff: 09/18/2022
+ms.locfileid: "67798140"
 ---
 # <a name="experience-microsoft-defender-for-endpoint-through-simulated-attacks"></a>Experiencia Microsoft Defender para punto de conexión a través de ataques simulados 
 

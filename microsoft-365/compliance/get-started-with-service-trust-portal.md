@@ -2,8 +2,8 @@
 title: Introducción al Portal de confianza de servicios de Microsoft
 f1.keywords:
 - NOCSH
-ms.author: chvukosw
-author: chvukosw
+ms.author: v-tophillips
+author: v-tophillips
 manager: laurawi
 audience: Admin
 ms.topic: overview
@@ -17,20 +17,20 @@ ms.custom:
 - admindeeplinkCOMPLIANCE
 ms.assetid: f30e2353-0bd6-41ed-8347-eea1fb8d2662
 description: Obtenga información sobre cómo acceder y usar el Portal de confianza de servicios de Microsoft para ayudar con las prácticas de seguridad, privacidad y cumplimiento.
-ms.openlocfilehash: 486f8fd26ee0b30c3155615e5fcb9b40fa714f75
-ms.sourcegitcommit: 85799f0efc06037c1ff309fe8e609bbd491f9b68
+ms.openlocfilehash: 9cd4f2281a1bdd6d5673ebe140ccbaf9e4b73be5
+ms.sourcegitcommit: 2dedd0f594b817779e034afa6c4418def2382a22
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/01/2022
-ms.locfileid: "66573821"
+ms.lasthandoff: 09/18/2022
+ms.locfileid: "67798952"
 ---
 # <a name="get-started-with-microsoft-service-trust-portal"></a>Introducción al Portal de confianza de servicios de Microsoft
 
-El Portal de confianza de servicios de Microsoft proporciona una variedad de contenido, herramientas y otros recursos sobre las prácticas de seguridad, privacidad y cumplimiento de Microsoft.
+El Portal de confianza de servicios de Microsoft proporciona una variedad de contenido, herramientas y otros recursos sobre cómo los servicios en la nube de Microsoft protegen los datos y cómo puede administrar la seguridad y el cumplimiento de los datos en la nube para su organización.
 
 ## <a name="accessing-the-service-trust-portal"></a>Acceso al Portal de confianza del servicio
 
-El Portal de confianza de servicios contiene detalles sobre la implementación de controles y procesos de Microsoft que protegen nuestros servicios en la nube y los datos de los clientes en esta. Para acceder a algunos de los recursos en el Portal de confianza de servicios, debe iniciar sesión como usuario autenticado con su cuenta de Servicios en la nube de Microsoft (cuenta de la organización de Azure Active Directory) y revisar y aceptar el Contrato de no divulgación de Microsoft para materiales de cumplimiento.
+El Portal de confianza de servicios es el sitio público de Microsoft para publicar informes de auditoría y otra información relacionada con el cumplimiento asociada a los servicios en la nube de Microsoft. Los usuarios de STP pueden descargar informes de auditoría generados por auditores externos y obtener información de las notas del producto creadas por Microsoft que proporcionan detalles sobre cómo los servicios en la nube de Microsoft protegen los datos y cómo puede administrar la seguridad y el cumplimiento de los datos en la nube para su organización. Para acceder a algunos de los recursos en el Portal de confianza de servicios, debe iniciar sesión como usuario autenticado con su cuenta de Servicios en la nube de Microsoft (cuenta de la organización de Azure Active Directory) y revisar y aceptar el Contrato de no divulgación de Microsoft para materiales de cumplimiento.
 
 ### <a name="existing-customers"></a>Clientes existentes
 
@@ -59,7 +59,7 @@ Al registrarse para obtener una evaluación gratuita o una suscripción, debe ha
 
 Se puede obtener acceso a las características y al contenido del Portal de confianza de servicios desde el menú principal.
 
-![Menú Portal de confianza de servicios.](../media/STPMenus1.png)
+![Portal de confianza de servicio: menú principal del Portal de confianza de servicios.](../media/86b754e1-c63c-4514-89ac-d014bf334140-2.png)
 
 En las secciones siguientes se describe cada elemento del menú principal.
 
@@ -67,72 +67,84 @@ En las secciones siguientes se describe cada elemento del menú principal.
 
 El vínculo **Portal de confianza** de servicios muestra la página principal. Proporciona una forma rápida de volver a la página principal.
 
-### <a name="compliance-manager"></a>Administrador de cumplimiento
+### <a name="certifications-regulations-and-standards"></a>Certificaciones, reglamentos y estándares
 
-> [!IMPORTANT]
-> El Administrador de cumplimiento se ha movido del Portal de confianza de servicios al <a href="https://go.microsoft.com/fwlink/p/?linkid=2077149" target="_blank">portal de cumplimiento Microsoft Purview</a>. Todos los datos del cliente se han trasladado a la nueva ubicación, por lo que puede seguir usando el Administrador de cumplimiento sin interrupción. Consulte la [documentación del Administrador de cumplimiento](compliance-manager.md) para obtener información sobre la configuración y obtener información sobre las nuevas características.
+Proporciona una gran cantidad de información de diseño e implementación de seguridad con el objetivo de facilitar el cumplimiento de los objetivos de cumplimiento normativo mediante la comprensión de cómo los servicios de Microsoft Cloud mantienen los datos seguros. Para revisar el contenido, seleccione uno de los iconos siguientes.
 
-### <a name="trust-documents"></a>Documentos de confianza
+- **ISO/IEC** - Organización Internacional de Normalización (ISO) / Comisión Electrotécnica Internacional (IEC)
+- **SOC** : informes de los controles de sistema y organización (SOC) 1, 2 y 3
+- **RGPD** : Reglamento general de protección de datos
+- **FedRAMP** - Programa federal de administración de riesgos y autorización
+- **PCI** : estándares de seguridad de datos del sector de tarjetas de pago (PCI) (DSS)
+- **CSA Star** - Cloud Security Alliance (CSA) Security, Trust and Assurance Registry (STAR)
+- **Australia IRAP** - Australia Information Security Registered Assesors Program (IRAP)
+- **Singapur MTCS** - Multi-Tier Cloud Security (MTCS) Singapore Standard
+- **Spain ENS** - Spain Esquema Nacional de Seguridad (ENS)
 
-Proporciona una gran cantidad de información de diseño e implementación de seguridad con el objetivo de facilitar el cumplimiento de los objetivos de cumplimiento normativo mediante la comprensión de cómo los servicios de Microsoft Cloud mantienen los datos seguros. Para revisar el contenido, seleccione una de las opciones siguientes en el menú desplegable **Documentos de confianza**.
+### <a name="reports-whitepapers-and-artifacts"></a>Informes, notas del producto y artefactos
 
-- **Informes de auditoría:** Se muestra una lista de informes de auditoría y evaluación independientes sobre los servicios en la nube de Microsoft. Estos informes proporcionan información sobre el cumplimiento de los servicios de Microsoft Cloud con los estándares de protección de datos y los requisitos normativos, como:
-  - Organización Internacional para la Normalización (ISO)
-  - Controles para la Organización de Servicios (SOC)
-  - Instituto Nacional de Normas y Tecnología (NIST)
-  - Programa Federal de Administración de Autorizaciones y Riesgo (FedRAMP)
-  - Reglamento general de protección de datos (RGPD)
-- **Protección de datos:** Contiene una gran cantidad de recursos, como controles auditados, notas del producto, preguntas más frecuentes, pruebas de penetración, herramientas de evaluación de riesgos y guías de cumplimiento.
-- **Planos técnicos de seguridad y cumplimiento de Azure:** Recursos que le ayudan a crear aplicaciones seguras y compatibles basadas en la nube. Esta área contiene directrices de plano técnico para verticales gubernamentales, financieras, sanitarias y minoristas.
+Documentos generales relativos a las siguientes categorías:
 
-### <a name="industries--regions"></a>Sectores y regiones
+- **BCP y recuperación ante desastres** : continuidad empresarial y recuperación ante desastres
+- **Pruebas de lápiz y evaluaciones de seguridad** : atestación de pruebas de penetración y evaluaciones de seguridad realizadas por terceros
+- **Privacidad y protección de datos** : recursos de privacidad y protección de datos
+- **Preguntas más frecuentes y notas del** producto: notas del producto y respuestas a las preguntas más frecuentes
 
-Proporciona información de cumplimiento específica del sector y de la región sobre los servicios de Microsoft Cloud.
+### <a name="industry-and-regional-resources"></a>Recursos industriales y regionales
 
-- **Industrias:** En este momento, esta página proporciona una página de aterrizaje específica del sector para el sector de servicios financieros. Contiene diversa información, como ofertas de cumplimiento, preguntas frecuentes y casos de éxito. Los recursos para más sectores se publicarán en el futuro, pero puede encontrar recursos para más sectores si va a la página **Trust Documents > Data Protection (Documentos de confianza > protección de datos** ) en STP.
-- **Regiones:** Proporciona opiniones legales sobre el cumplimiento de los servicios en la nube de Microsoft con diversas leyes de varios países. Estos países son, entre otros, Australia, Canadá, República Checa, Dinamarca, Alemania, Polonia, Rumanía, España y el Reino Unido.
+Documenta la aplicación a los siguientes sectores y regiones:
 
-### <a name="trust-center"></a>Centro de confianza
+- **Servicios financieros** : recursos que elaboran instrucciones de cumplimiento normativo para FSI (por país)
+- **Salud y ciencias de la vida** : funcionalidades ofrecidas por Microsoft para la industria sanitaria
+- **Medios y entretenimiento** : recursos de la industria de medios y entretenimiento
+- **Estados Unidos Government**: recursos exclusivamente para clientes del Gobierno de EE. UU.
+- **Recursos regionales**: documentos que describen el cumplimiento de las servicios en línea de Microsoft con diversas directivas y regulaciones regionales
 
-Vínculos al [Centro de confianza de Microsoft](https://www.microsoft.com/trust-center), que proporciona más información sobre seguridad, cumplimiento y privacidad en Microsoft Cloud. Esto incluye información sobre las funcionalidades de los servicios en la nube de Microsoft que puede usar para abordar requisitos específicos del RGPD, documentación útil para la responsabilidad del RGPD y para su comprensión de las medidas técnicas y organizativas que Microsoft ha tomado para admitir el RGPD.
+### <a name="resources-for-your-organization"></a>Recursos para su organización
 
-### <a name="my-library"></a>Mi biblioteca
+Documentos que se aplican a su organización (restringidos por inquilino).
 
-Esta característica le permite guardar (o *anclar*) documentos para que pueda acceder rápidamente a ellos en la página Mi biblioteca. También puede configurar notificaciones para que Microsoft le envíe un mensaje de correo electrónico cada vez que se actualicen los documentos de Mi biblioteca. Para obtener más información, consulte la sección [Mi biblioteca](#my-library-1) de este artículo.
+- **Recursos para su organización** : documentos basados en la suscripción y los permisos de su organización
 
-### <a name="more"></a>Más
+Los recursos con la marca de verificación de serie indican que el documento tiene varias versiones, que se pueden ver una vez que haga clic en el documento y haga clic en "Ver todas las versiones" en la página de descarga.  
 
-Vaya a **Más > Administración** para acceder a las funciones administrativas que solo están disponibles para la cuenta de administrador global. Esta opción solo está visible cuando ha iniciado sesión como administrador global. Hay dos opciones en el menú desplegable **Administración**:
+:::image type="content" source="../media/stp-series.png" alt-text="Las series de documentos están marcadas y se pueden ver en la página de descarga.":::
 
-- **Configuración:** Esta página le permite asignar roles de usuario para el Administrador de cumplimiento (clásico).
-- **Configuración de privacidad del usuario:** Esta página le permite exportar un informe que contiene asignaciones de elementos de acción en el Administrador de cumplimiento (clásico) para un usuario específico. También puede reasignar todos los elementos de acción a un usuario diferente y quitar cualquier elemento de acción asignado del usuario especificado.
+Filtrar por fecha y servicio en la nube: al ver los documentos disponibles, puede filtrar los resultados por intervalo de **fechas seleccionando Fechas** y, a continuación, seleccionando el intervalo que desea usar.
+
+:::image type="content" source="../media/stp-documents-filter-date.png" alt-text="Filtre los documentos disponibles por intervalo de fechas.":::
+
+Vista de descarga de documentos: al ver los documentos disponibles, puede filtrar los resultados por el **servicio en la nube** aplicable.
+
+:::image type="content" source="../media/stp-documents-filter-service.png" alt-text="Filtre los documentos disponibles por servicio en la nube.":::
+
+> [!NOTE]
+> Muchos de los archivos del STP requieren la aceptación de un contrato de licencia. Algunos visores DE PDF basados en explorador no permiten la ejecución de Javascript, lo que impide que se muestre el contrato de licencia y que se abra el archivo.
+
+### <a name="all-documents"></a>Todos los documentos
+
+En esta sección se muestran todos los documentos disponibles. Seleccione los documentos que desea guardar en la sección Mi biblioteca. Los documentos se ordenan en las mismas categorías que se muestran en Certificaciones, Estándares, Reglamentos y Recursos del Sector. Para ver todos los recursos de un servicio en la nube determinado, use el filtro Servicio en la **nube** .
 
 ### <a name="search"></a>Búsqueda
 
-De forma predeterminada, la búsqueda devuelve los resultados del documento. Puede filtrar los resultados mediante las listas desplegables para refinar la lista de documentos mostrados. Puede usar varios filtros para restringir la lista de documentos. Los filtros incluyen los servicios en la nube específicos, las categorías de prácticas de cumplimiento o seguridad, las regiones y los sectores. Haga clic en el vínculo nombre del documento para descargar el documento.
+Haga clic en la lupa de la esquina superior derecha de la página Portal de confianza del servicio para expandir el cuadro, escriba los términos de búsqueda y presione **Entrar**. Se muestra la página **Buscar** , con el término de búsqueda mostrado en el cuadro de búsqueda y los resultados de búsqueda que se enumeran a continuación.
+
+:::image type="content" source="../media/stp-search.png" alt-text="Busque documentos y filtre los resultados.":::
+
+De forma predeterminada, la búsqueda devuelve los resultados del documento. Puede filtrar los resultados mediante las listas desplegables para refinar la lista de documentos mostrados. Puede usar varios filtros para restringir la lista de documentos. Los filtros incluyen los servicios en la nube específicos y las regiones. Haga clic en el vínculo nombre del documento para descargar el documento.
 
 > [!NOTE]
 > Los informes y documentos del Portal de confianza de servicio están disponibles para descargar durante al menos 12 meses después de la publicación o hasta que esté disponible una nueva versión del documento.
 
 ## <a name="my-library"></a>Mi biblioteca
 
-Use la característica Mi biblioteca para agregar documentos y recursos en el Portal de confianza del servicio a la página Mi biblioteca. Esto le permite acceder a documentos que son relevantes para usted en un solo lugar.  Para agregar un documento a mi biblioteca, haga clic en el menú **...** situado a la derecha de un documento y, a continuación, seleccione **Guardar en la biblioteca**. Para agregar varios documentos a mi biblioteca, haga clic en la casilla situada junto a uno o más documentos y, a continuación, haga clic en Guardar en la **biblioteca** en la parte superior de la página.
+Use la característica Mi biblioteca para agregar documentos y recursos en el Portal de confianza del servicio a la página Mi biblioteca. Esto le permite acceder a documentos que son relevantes para usted en un solo lugar.  Para agregar un documento a mi biblioteca, haga clic en el menú de elipsis (**...**) situado a la derecha de un documento y, a continuación, seleccione **Guardar en la biblioteca**. Para agregar varios documentos a mi biblioteca, haga clic en la casilla situada junto a uno o más documentos y, a continuación, haga clic en Guardar en la **biblioteca** en la parte superior de la página.
 
-Además, la característica de notificaciones le permite configurar mi biblioteca para que se le envíe un mensaje de correo electrónico cada vez que Microsoft actualice un documento que ha agregado a mi biblioteca. Para configurar las notificaciones, vaya a Mi biblioteca y haga clic en **Configuración de notificaciones**. Puede elegir la frecuencia de las notificaciones y especificar una dirección de correo electrónico en su organización a la que enviar notificaciones. Las notificaciones por correo electrónico incluyen vínculos a los documentos que se han actualizado y una breve descripción de la actualización.
+Además, la característica de notificaciones le permite configurar mi biblioteca para que se le envíe un mensaje de correo electrónico cada vez que Microsoft actualice un documento que ha agregado a mi biblioteca. Para configurar las notificaciones, vaya a Mi biblioteca y haga clic en **Configuración de notificaciones**. Puede elegir la frecuencia de las notificaciones y especificar una dirección de correo electrónico en su organización a la que enviar notificaciones. Email notificaciones incluyen vínculos a los documentos que se han actualizado y una breve descripción de la actualización.
 
-Tenga en cuenta también que identificamos los documentos de mi biblioteca que se han actualizado en los últimos 30 días, independientemente de si activa o no las notificaciones. También se muestra una breve descripción de la actualización en una sugerencia de herramienta.
+Si un documento forma parte de una serie, se le suscribirá a la serie y recibirá notificaciones cuando haya una actualización de esa serie. Puede ver los documentos individuales y los documentos de serie a los que se ha suscrito, en 2 secciones, como se muestra a continuación:
 
-## <a name="starter-packs"></a>Paquetes de inicio
-
-Los paquetes de inicio son un conjunto de documentación mantenido por Microsoft sobre los servicios de Microsoft Cloud para sectores específicos. Actualmente, el Portal de confianza de servicios ofrece los tres paquetes de inicio siguientes para las organizaciones de servicios financieros. Estos paquetes de inicio ayudan a las organizaciones a evaluar y evaluar la seguridad, el cumplimiento y la privacidad en Microsoft Cloud y proporcionan instrucciones para ayudar a implementar servicios de Microsoft Cloud en el sector de servicios financieros altamente regulados.
-
-- **Paquete de inicio de evaluación:** Use para la evaluación temprana de la nube de Microsoft para organizaciones de servicios financieros.
-
-- **Paquete de inicio de evaluación:** Después de la evaluación, use las listas de comprobación y otras instrucciones de este paquete de inicio para ayudar a su organización a evaluar los riesgos relacionados con la seguridad, el cumplimiento y la privacidad.
-
-- **Paquete de inicio de auditoría:** Use este paquete de inicio para obtener instrucciones sobre el uso de controles de auditoría y otras herramientas para ayudar a guiar la implementación de servicios de Microsoft Cloud de forma que ayude a reducir la exposición de su organización al riesgo.
-
-Para acceder a estos paquetes de inicio, vaya a **Service Trust Portal > Industries & Regions > Industry Solutions > Financial Services**. Puede abrir o descargar documentos desde un paquete de inicio o guardarlos en mi biblioteca.
+:::image type="content" source="../media/stp-my-library.png" alt-text="Mi biblioteca muestra los documentos a los que se ha suscrito en dos secciones.":::
 
 ## <a name="localization-support"></a>Soporte de localización
 

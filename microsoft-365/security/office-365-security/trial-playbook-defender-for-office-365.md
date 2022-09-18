@@ -17,12 +17,12 @@ search.appverid:
 description: Soluciones para la versión de prueba del cuaderno de estrategias de Microsoft Defender para Office 365
 ms.subservice: mdo
 ms.custom: trial-playbook
-ms.openlocfilehash: cc54c427649fc98b9807522017830017f038264f
-ms.sourcegitcommit: 173f696dc8f81259d852775572a6938ec39f6115
+ms.openlocfilehash: f80a49e6f5b0181f625b4d5a6067f1a1ce30cf12
+ms.sourcegitcommit: 2dedd0f594b817779e034afa6c4418def2382a22
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/10/2022
-ms.locfileid: "67643859"
+ms.lasthandoff: 09/18/2022
+ms.locfileid: "67799216"
 ---
 # <a name="trial-playbook-microsoft-defender-for-office-365"></a>Versión de prueba del cuaderno de estrategias: Microsoft Defender para Office 365
 
@@ -186,7 +186,7 @@ Mira este vídeo para obtener más información: [Aprender a usar el portal de e
 
 Usa las funcionalidades de informe de Defender para Office 365 para obtener más detalles sobre tu entorno.
 
-- El [panel Evaluación](try-microsoft-defender-for-office-365.md#reports-for-audit-mode-only) proporciona una vista sencilla de las amenazas detectadas por Defender para Office 365 durante la evaluación.
+- El [panel Evaluación](try-microsoft-defender-for-office-365.md#reports-for-audit-mode) proporciona una vista sencilla de las amenazas detectadas por Defender para Office 365 durante la evaluación.
 - Comprende las amenazas recibidas en las herramientas de correo electrónico y de colaboración con el [Informe de estado de protección contra amenazas](view-email-security-reports.md#threat-protection-status-report).
 
 ### <a name="step-2-intermediate-steps-in-auditing-mode"></a>Paso 2: Pasos intermedios en modo auditoría
@@ -235,6 +235,6 @@ Proporciona los conocimientos adecuados a los usuarios para que identifiquen ame
 
 - **Guía interactiva:**¿No estás familiarizado con Defender para Office 365? Revisa la [guía interactiva](https://mslearn.cloudguides.com/guides/Safeguard%20your%20organization%20with%20Microsoft%20Defender%20for%20Office%20365) para saber cómo empezar.
 - **Guía de introducción a Fast Track\:[Microsoft Defender para Office 365](https://go.microsoft.com/fwlink/p/?linkid=2197415)
-- **Documentos de Microsoft**: Obtén información detallada sobre cómo funciona Defender para Office 365 y la mejor manera de implementarlo para su organización. Visite [Docs](overview.md).
+- **Documentos de Microsoft**: Obtén información detallada sobre cómo funciona Defender para Office 365 y la mejor manera de implementarlo para su organización. Visite [Docs](defender-for-office-365.md).
 - **Qué incluye**: Para ver todas las características de seguridad del correo electrónico de Office 365 ordenadas por nivel de producto, consulta la [Matriz de características](/office365/servicedescriptions/office-365-advanced-threat-protection-service-description#feature-availability).
 - **Por qué elegir Defender para Office 365**: La [hoja de datos de Defender para Office 365](https://query.prod.cms.rt.microsoft.com/cms/api/am/binary/RE4FCiy) muestra las 10 razones principales por las que los clientes eligen Microsoft.

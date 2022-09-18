@@ -20,12 +20,12 @@ ms.collection:
 - M365-security-compliance
 ms.date: ''
 search.appverid: met150
-ms.openlocfilehash: 0b113ec142314043c77c20d840f899e85603fbc8
-ms.sourcegitcommit: 9b133379196da2b3a4bb311b07ff274f43780f68
+ms.openlocfilehash: a472fae685503d742a4d8b6cf95dce2f0bb6619c
+ms.sourcegitcommit: 2dedd0f594b817779e034afa6c4418def2382a22
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/14/2022
-ms.locfileid: "67682844"
+ms.lasthandoff: 09/18/2022
+ms.locfileid: "67797921"
 ---
 # <a name="network-protection-for-linux"></a>Protección de red para Linux
 
@@ -98,7 +98,7 @@ sudo python3 MicrosoftDefenderATPOnboardingLinuxServer.py
 
 ### <a name="manually-enable-network-protection"></a>Habilitación manual de la protección de red
 
-1. Active la característica "networkProtection", edite "/etc/opt/microsoft/mdatp/wdacfg" y establezca **networkProtection** **en habilitado**.  
+1. Active la característica "networkProtection", edite "/etc/opt/microsoft/mdatp/wdavcfg" y establezca **networkProtection** **en habilitado**.  
 2. Reinicie el servicio mdatp ejecutando el siguiente comando:
 
 ```bash
@@ -132,7 +132,7 @@ mdatp health --field network_protection_status
 
 ### <a name="validation"></a>Validation
 
-R. Compruebe que La protección de red tiene efecto en sitios siempre bloqueados:
+A. Compruebe que La protección de red tiene efecto en sitios siempre bloqueados:
 
 - [http://www.smartscreentestratings2.net](http://www.smartscreentestratings2.net)
 - [https://www.smartscreentestratings2.net](https://www.smartscreentestratings2.net)

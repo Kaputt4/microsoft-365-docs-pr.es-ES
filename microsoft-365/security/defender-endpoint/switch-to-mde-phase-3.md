@@ -23,12 +23,12 @@ ms.topic: article
 ms.date: 04/01/2022
 ms.reviewer: jesquive, chventou, jonix, chriggs, owtho
 search.appverid: met150
-ms.openlocfilehash: b1dabf903c8e5aef8d83e89d544195b0fc91ae3a
-ms.sourcegitcommit: 9b133379196da2b3a4bb311b07ff274f43780f68
+ms.openlocfilehash: 63e3e56a9ddcf7645a37b791676a086b8ef2d592
+ms.sourcegitcommit: 2dedd0f594b817779e034afa6c4418def2382a22
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/14/2022
-ms.locfileid: "67689411"
+ms.lasthandoff: 09/18/2022
+ms.locfileid: "67797908"
 ---
 # <a name="switch-to-microsoft-defender-for-endpoint---phase-3-onboard"></a>Cambiar a Microsoft Defender para punto de conexión- Fase 3: Incorporación
 
@@ -171,6 +171,5 @@ Para más información, consulte [Inventario de dispositivos](machines-view-over
 
 **¡Enhorabuena**! Ha completado la [migración a Defender para punto de conexión](switch-to-mde-overview.md#the-migration-process).
 
-- [Visite el panel de operaciones de seguridad](security-operations-dashboard.md) en el portal de Microsoft 365 Defender ([https://security.microsoft.com](https://security.microsoft.com)).
 
 - [Administrar Defender para punto de conexión, después de la migración](manage-mde-post-migration.md).

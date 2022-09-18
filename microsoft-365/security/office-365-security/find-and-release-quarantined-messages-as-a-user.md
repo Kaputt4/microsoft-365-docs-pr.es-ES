@@ -21,12 +21,12 @@ description: Los usuarios pueden obtener información sobre cómo ver y administ
 ms.subservice: mdo
 ms.service: microsoft-365-security
 adobe-target: true
-ms.openlocfilehash: 69fa7f15aa95f85d298209d4e24e37ada6868bba
-ms.sourcegitcommit: 2b89bcff547e00be3d38dc8d1e6cbcf8f41eba42
+ms.openlocfilehash: eb53982c581dc44a4a8f0b4144803a43dfdc9aa0
+ms.sourcegitcommit: 2dedd0f594b817779e034afa6c4418def2382a22
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/03/2022
-ms.locfileid: "67597920"
+ms.lasthandoff: 09/18/2022
+ms.locfileid: "67796948"
 ---
 # <a name="find-and-release-quarantined-messages-as-a-user-in-eop"></a>Búsqueda y liberación de mensajes en cuarentena como usuario en EOP
 
@@ -191,7 +191,11 @@ Las siguientes acciones están disponibles después de hacer clic en el ![icono 
 
 - ![Icono Quitar de cuarentena](../../media/m365-cc-sc-delete-icon.png) **Quitar de la cuarentena**: Después de hacer clic en **Sí** en la advertencia que aparece, el mensaje se elimina inmediatamente sin enviarse a los destinatarios originales.
 
-- ![Icono Descargar correo electrónico](../../media/m365-cc-sc-download-icon.png) **Descargar correo electrónico**: En el control flotante que aparece, seleccione **entiendo los riesgos que conlleva la descarga de este mensaje** y, a continuación, haga clic en **Descargar** para guardar una copia local del mensaje en formato .eml.
+- ![Icono Descargar correo electrónico.](../../media/m365-cc-sc-download-icon.png) **Descargar correo electrónico**: en el control flotante que aparece, configure los siguientes valores:
+  - **Motivo para descargar el archivo**: escriba texto descriptivo.
+  - **Crear contraseña** y **Confirmar contraseña**: escriba una contraseña necesaria para abrir el archivo de mensaje descargado.
+
+  Cuando haya terminado, haga clic en **Descargar** y, a continuación, en **Listo** para guardar una copia local del mensaje. El archivo de mensaje .eml se guarda en un archivo comprimido denominado Quarantined Messages.zip en la carpeta **Descargas** . Si el archivo .zip ya existe, se anexa un número al nombre de archivo (por ejemplo, Mensajes en cuarentena(1).zip).
 
 - ![Icono Bloquear remitente.](../../media/m365-cc-sc-block-sender-icon.png) Icono Bloquear remitente **Bloquear remitente**: añade el remitente a la lista de remitentes bloqueados del **Buzón**. Para más información, consulte [Bloquear un remitente de correo](https://support.microsoft.com/office/b29fd867-cac9-40d8-aed1-659e06a706e4).
 

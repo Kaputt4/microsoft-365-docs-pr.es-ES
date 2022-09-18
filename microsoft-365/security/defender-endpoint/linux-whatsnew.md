@@ -16,12 +16,12 @@ ms.collection:
 ms.topic: reference
 ms.subservice: mde
 search.appverid: met150
-ms.openlocfilehash: 6c85535f5b79bef0bdc2782daf9111a307b648b0
-ms.sourcegitcommit: 9b133379196da2b3a4bb311b07ff274f43780f68
+ms.openlocfilehash: f1a77d7889411d5455140db68a5af4016747ee49
+ms.sourcegitcommit: 2dedd0f594b817779e034afa6c4418def2382a22
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/14/2022
-ms.locfileid: "67691131"
+ms.lasthandoff: 09/18/2022
+ms.locfileid: "67797820"
 ---
 # <a name="whats-new-in-microsoft-defender-for-endpoint-on-linux"></a>Novedades de Microsoft Defender para punto de conexión en Linux
 
@@ -49,6 +49,13 @@ Este artículo se actualiza con frecuencia para informarle de las novedades de l
 **Novedades**
 
 - Corrige un bloqueo del kernel observado en cargas de trabajo de clientes seleccionados que ejecutan la versión 101.75.43 de mdatp. Después de RCA, esto se atribuyó a una condición de carrera al liberar la propiedad de un descriptor de archivo de sensor. La condición de carrera se expuso debido a un cambio reciente del producto en la ruta de apagado. Este problema no afecta a los clientes de las versiones más recientes del kernel (5.1+).
+
+- Al actualizar desde la versión 101.75.43 de mdatp, ejecute los siguientes comandos antes de intentar actualizar a la versión 101.80.97.
+
+```
+sudo mdatp config real-time-protection --value=disabled
+sudo systemctl disable mdatp
+```
 </br>
 
 <br/><br/>

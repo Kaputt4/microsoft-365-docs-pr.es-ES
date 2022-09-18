@@ -2,11 +2,10 @@
 title: Uso de permisos básicos para acceder a Centro de seguridad de Microsoft Defender
 description: Obtenga información sobre cómo usar permisos básicos para acceder al portal de Microsoft Defender para punto de conexión.
 keywords: asignar roles de usuario, asignar acceso de lectura y escritura, asignar acceso de solo lectura, usuario, roles de usuario, roles
-ms.service: microsoft-365-security
-ms.subservice: mde
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
+ms.prod: m365-security
 ms.author: macapara
 author: mjcaparas
 ms.localizationpriority: medium
@@ -15,12 +14,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 search.appverid: met150
-ms.openlocfilehash: 3b2d8aa7fcb2142e114985037fcbfdc34f375168
-ms.sourcegitcommit: c29af68260ba8676083674b3c70209bff2c2e362
+ms.openlocfilehash: 57fec13384a825620633be7d59a312a4ff5926f8
+ms.sourcegitcommit: 2dedd0f594b817779e034afa6c4418def2382a22
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/16/2022
-ms.locfileid: "67741837"
+ms.lasthandoff: 09/18/2022
+ms.locfileid: "67797258"
 ---
 # <a name="use-basic-permissions-to-access-the-portal"></a>Uso de permisos básicos para acceder al portal
 

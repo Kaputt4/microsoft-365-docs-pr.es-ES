@@ -3,8 +3,6 @@ title: Ver los detalles y los resultados de una investigación automatizada
 description: Durante y después de una investigación automatizada, puede ver los resultados y los resultados clave
 keywords: automatizada, investigación, resultados, analizar, detalles, corrección, autoair
 search.appverid: met150
-ms.service: microsoft-365-security
-ms.subservice: mde
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -12,6 +10,7 @@ f1.keywords:
 - NOCSH
 author: dansimp
 ms.author: dansimp
+ms.prod: m365-security
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
@@ -23,12 +22,12 @@ ms.custom:
 - autoir
 - admindeeplinkDEFENDER
 ms.reviewer: evaldm, isco
-ms.openlocfilehash: 87f07e20862c2eb8f9bd841bce7448728360dad1
-ms.sourcegitcommit: c29af68260ba8676083674b3c70209bff2c2e362
+ms.openlocfilehash: aa295878f71b6dfbb4a8bbb61940eaccb760620e
+ms.sourcegitcommit: 2dedd0f594b817779e034afa6c4418def2382a22
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/16/2022
-ms.locfileid: "67741881"
+ms.lasthandoff: 09/18/2022
+ms.locfileid: "67799140"
 ---
 # <a name="view-the-details-and-results-of-an-automated-investigation"></a>Ver los detalles y los resultados de una investigación automatizada
 

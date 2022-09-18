@@ -2,11 +2,10 @@
 title: Referencia de reglas de reducción de superficie expuesta a ataques
 description: Enumera los detalles sobre las reglas de reducción de superficie expuesta a ataques por regla.
 keywords: Reglas de reducción de superficie expuesta a ataques, ASR, reglas de asr, caderas, sistema de prevención de intrusiones del host, reglas de protección, reglas contra vulnerabilidades de seguridad, antiexploit, reglas de vulnerabilidad de seguridad, reglas de prevención de infecciones, Microsoft Defender para punto de conexión, configurar reglas asr, descripción de la regla asr
-ms.service: microsoft-365-security
-ms.subservice: mde
 ms.mktglfcycl: manage
 ms.sitesec: library
 ms.pagetype: security
+ms.prod: m365-security
 ms.localizationpriority: medium
 audience: ITPro
 author: jweston-1
@@ -18,12 +17,12 @@ ms.topic: article
 ms.collection: M365-security-compliance
 ms.date: 08/10/2022
 search.appverid: met150
-ms.openlocfilehash: ac22b5ef9cfe8efa3729059643872342990ff1b8
-ms.sourcegitcommit: c29af68260ba8676083674b3c70209bff2c2e362
+ms.openlocfilehash: 9ccc7d5d2a14d35f1aef9dc3b8b242bfd9a49c6a
+ms.sourcegitcommit: 2dedd0f594b817779e034afa6c4418def2382a22
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/16/2022
-ms.locfileid: "67741947"
+ms.lasthandoff: 09/18/2022
+ms.locfileid: "67798745"
 ---
 # <a name="attack-surface-reduction-rules-reference"></a>Referencia de reglas de reducción de superficie expuesta a ataques
 

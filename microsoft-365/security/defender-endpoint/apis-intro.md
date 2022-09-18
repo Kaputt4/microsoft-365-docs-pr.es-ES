@@ -3,10 +3,9 @@ title: Acceder a las API de Microsoft Defender para punto de conexión
 ms.reviewer: ''
 description: Obtenga información sobre cómo puede usar las API para automatizar flujos de trabajo e innovar en función de las funcionalidades de Microsoft Defender para punto de conexión
 keywords: apis, api, wdatp, open api, microsoft defender for endpoint api, atp de Microsoft Defender, API pública, API admitidas, alertas, dispositivo, usuario, dominio, ip, archivo, búsqueda avanzada, consulta
-ms.service: microsoft-365-security
-ms.subservice: mde
 ms.mktglfcycl: deploy
 ms.sitesec: library
+ms.prod: m365-security
 ms.pagetype: security
 ms.author: macapara
 author: mjcaparas
@@ -17,12 +16,12 @@ ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.custom: api
 search.appverid: met150
-ms.openlocfilehash: d4e009f321e5990223f6c8cf49c260ee12908bd3
-ms.sourcegitcommit: c29af68260ba8676083674b3c70209bff2c2e362
+ms.openlocfilehash: 6c046c45eb9a25a13ab3d92335490e1abb60d907
+ms.sourcegitcommit: 2dedd0f594b817779e034afa6c4418def2382a22
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/16/2022
-ms.locfileid: "67740717"
+ms.lasthandoff: 09/18/2022
+ms.locfileid: "67797302"
 ---
 # <a name="access-the-microsoft-defender-for-endpoint-apis"></a>Acceder a las API de Microsoft Defender para punto de conexión
 

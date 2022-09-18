@@ -24,12 +24,12 @@ ms.custom:
 - FPFN
 - admindeeplinkDEFENDER
 search.appverid: met150
-ms.openlocfilehash: 4f6f015768873f698742b9b318965dc7a4466c7d
-ms.sourcegitcommit: c29af68260ba8676083674b3c70209bff2c2e362
+ms.openlocfilehash: 0c305a3dd19cd412238017649eae141c7e308326
+ms.sourcegitcommit: 2dedd0f594b817779e034afa6c4418def2382a22
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/16/2022
-ms.locfileid: "67736870"
+ms.lasthandoff: 09/18/2022
+ms.locfileid: "67798162"
 ---
 # <a name="address-false-positivesnegatives-in-microsoft-defender-for-endpoint"></a>Abordar falsos positivos/negativos en Microsoft Defender para punto de conexión
 
@@ -66,7 +66,7 @@ Puede obtener ayuda si sigue teniendo problemas con falsos positivos o negativos
 
 Si ve una [alerta](alerts.md) que se desencadenó porque se detectó algo como malintencionado o sospechoso que no debería haber sido, puede suprimir la alerta para esa entidad. También puede suprimir las alertas que no son necesariamente falsos positivos, pero que no son importantes. Se recomienda clasificar también las alertas.
 
-Administrar las alertas y clasificar los positivos verdaderos o falsos ayuda a entrenar la solución de protección contra amenazas y puede reducir el número de falsos positivos o falsos negativos a lo largo del tiempo. Realizar estos pasos también ayuda a reducir el ruido en el panel de operaciones de seguridad para que el equipo de seguridad pueda centrarse en los elementos de trabajo de mayor prioridad.
+Administrar las alertas y clasificar los positivos verdaderos o falsos ayuda a entrenar la solución de protección contra amenazas y puede reducir el número de falsos positivos o falsos negativos a lo largo del tiempo. Realizar estos pasos también ayuda a reducir el ruido en la cola para que el equipo de seguridad pueda centrarse en elementos de trabajo de mayor prioridad.
 
 ### <a name="determine-whether-an-alert-is-accurate"></a>Determinar si una alerta es precisa
 
@@ -103,7 +103,7 @@ Las alertas se pueden clasificar como falsos positivos o verdaderos positivos en
 
 ### <a name="suppress-an-alert"></a>Suprimir una alerta
 
-Si tiene alertas que son falsos positivos o que son verdaderos positivos, pero para eventos que no son importantes, puede suprimir esas alertas en Microsoft 365 Defender. La supresión de alertas ayuda a reducir el ruido en el panel de operaciones de seguridad.
+Si tiene alertas que son falsos positivos o que son verdaderos positivos, pero para eventos que no son importantes, puede suprimir esas alertas en Microsoft 365 Defender. La supresión de alertas ayuda a reducir el ruido en la cola.
 
 1. Vaya al portal de Microsoft 365 Defender ([https://security.microsoft.com](https://security.microsoft.com)) e inicie sesión.
 

@@ -15,12 +15,12 @@ ms.collection: M365-security-compliance
 ms.topic: article
 ms.subservice: mde
 search.appverid: met150
-ms.openlocfilehash: cd5fcbf5142926da0d3bef2753b08a560414ab44
-ms.sourcegitcommit: 9b133379196da2b3a4bb311b07ff274f43780f68
+ms.openlocfilehash: 1e1317826b208411536dcf79d71a29b3ae514aea
+ms.sourcegitcommit: 2dedd0f594b817779e034afa6c4418def2382a22
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/14/2022
-ms.locfileid: "67683151"
+ms.lasthandoff: 09/18/2022
+ms.locfileid: "67796877"
 ---
 # <a name="create-and-manage-device-tags"></a>Crear y administrar etiquetas de dispositivos
 
@@ -48,7 +48,6 @@ Para agregar etiquetas de dispositivo con la API, consulte [API para agregar o q
 
 1. Seleccione el dispositivo en el que quiere administrar las etiquetas. Puede seleccionar o buscar un dispositivo desde cualquiera de las siguientes vistas:
 
-   - **Panel de operaciones de seguridad** : seleccione el nombre del dispositivo en la sección Dispositivos principales con alertas activas.
    - **Cola de alertas**: seleccione el nombre del dispositivo junto al icono de dispositivo en la cola de alertas.
    - **Inventario de dispositivos** : seleccione el nombre del dispositivo en la lista de dispositivos.
    - **Cuadro de búsqueda**: seleccione Dispositivo en el menú desplegable y escriba el nombre del dispositivo.

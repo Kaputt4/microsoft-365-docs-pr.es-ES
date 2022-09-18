@@ -3,6 +3,7 @@ title: Conectar Microsoft Defender para Office 365 a Microsoft Sentinel
 description: Pasos para conectar Microsoft Defender para Office 365 a Sentinel. Agregue los datos de Microsoft Defender para Office 365 (*y* los datos del resto del conjunto de Microsoft 365 Defender), incluidos los incidentes, a Microsoft Sentinel para obtener un único panel de cristal en su seguridad.
 search.product: ''
 ms.service: microsoft-365-security
+ms.subservice: mdo
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -15,14 +16,13 @@ manager: dansimp
 audience: ITPro
 ms.collection: m365-guidance-templates
 ms.topic: how-to
-ms.subservice: mdo
 search.appverid: met150
-ms.openlocfilehash: 0a19cbb87d78de66e75b701ff64e23a831c2baf7
-ms.sourcegitcommit: c29af68260ba8676083674b3c70209bff2c2e362
+ms.openlocfilehash: 019dd5ff70dae2041955882ed0c63b13f20015cd
+ms.sourcegitcommit: 2dedd0f594b817779e034afa6c4418def2382a22
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/16/2022
-ms.locfileid: "67737200"
+ms.lasthandoff: 09/18/2022
+ms.locfileid: "67799316"
 ---
 # <a name="connect-microsoft-defender-for-office-365-to-microsoft-sentinel"></a>Conectar Microsoft Defender para Office 365 a Microsoft Sentinel
 
@@ -39,7 +39,7 @@ Aproveche la administración de eventos de información de seguridad (SIEM) enri
 - Permisos suficientes (administrador de seguridad en M365 & permisos de lectura y escritura en Sentinel).
 
 ## <a name="add-the-microsoft-365-defender-connector"></a>Agregar el conector de Microsoft 365 Defender
-1. [Inicie sesión en Azure Portal](https://portal.azure.com) y vaya a **Microsoft Sentinel** > Elija el área de trabajo pertinente para intercalar con Microsoft 365 Defender
+1. [Inicie sesión en Azure Portal](https://portal.azure.com) y vaya a **Microsoft Sentinel** > Elija el área de trabajo pertinente para integrarla con Microsoft 365 Defender
     1. En el menú de navegación izquierdo situado debajo del encabezado **Configuración** > elija **Conectores de datos**.
 2. Cuando se cargue la página, **busque** Microsoft 365 Defender **y seleccione el conector Microsoft 365 Defender (versión preliminar).**
 3. En el control flotante derecho, seleccione **Abrir página del conector**.

@@ -17,12 +17,12 @@ search.appverid:
 - MET150
 description: Creación de una nueva experiencia del paquete de reglas sit de EDM
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 5a948b00127098faf25419e75a1920ee70c01536
-ms.sourcegitcommit: 23c7e96d8ec31c676c458e7c71f1cc8a1e40a0e4
+ms.openlocfilehash: 4c0139fd6a14a24195679b77aa71321ec201a635
+ms.sourcegitcommit: 2dedd0f594b817779e034afa6c4418def2382a22
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/16/2022
-ms.locfileid: "67360768"
+ms.lasthandoff: 09/18/2022
+ms.locfileid: "67799442"
 ---
 # <a name="create-edm-sit-using-the-new-experience"></a>Creación de EDM SIT con la nueva experiencia
 
@@ -82,7 +82,7 @@ Si no está familiarizado con SITS basado en EDM o su implementación, es esenci
 
 > [!TIP]
 > - Seleccione los elementos principales cuyos valores hacen que esa fila sea única en la tabla. Por ejemplo, no elija campos como *FirstName* o *DateOfBirth* , ya que lo más probable es que haya muchas duplicaciones de nombres o fechas de nacimiento en el archivo de datos confidenciales real. En su lugar, elija elementos como *Social Security Number* y *BankAccountNumber* cuyo valor será único en la tabla y, por tanto, haga que la fila sea única en la tabla.
-> - Debe elegir un elemento principal, pero no más de cinco elementos primarios. Si tiene un campo de datos corroborativos de varios tokens, también debe asignarlo a una SIT base. Cuanto más pueda elegir que tengan valores únicos en la tabla de datos confidenciales reales, mejor será la precisión de su SIT de EDM. También mejorará el rendimiento y evitará los tiempos de espera causados por la sobrecarga de procesos. 
+> - Debe elegir un elemento principal, pero no más de diez elementos principales. Si tiene un campo de datos corroborativos de varios tokens, también debe asignarlo a una SIT base. Cuanto más pueda elegir que tengan valores únicos en la tabla de datos confidenciales reales, mejor será la precisión de su SIT de EDM. También mejorará el rendimiento y evitará los tiempos de espera causados por la sobrecarga de procesos. 
 > - Seleccione un tipo de información confidencial que coincida estrechamente con el formato del contenido que desea encontrar. Seleccionar una SIT que coincida con contenido innecesario, como una que coincida con todas las cadenas de texto o todos los números, puede provocar una carga excesiva en el sistema, lo que podría dar lugar a que se perdiese información confidencial.
 
 9. En los **campos Configure settings for data (Configurar opciones para los campos de datos** ), puede indicar cómo trata EDM los casos y qué delimitadores se deben omitir. Puede establecerlo para los valores de todos los valores de elementos o especificar la configuración de cada elemento individualmente. Elija **Siguiente**.

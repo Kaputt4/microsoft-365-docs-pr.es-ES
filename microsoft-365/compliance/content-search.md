@@ -21,12 +21,12 @@ ms.custom:
 - seo-marvel-apr2020
 - admindeeplinkCOMPLIANCE
 description: Utilice la herramienta de búsqueda de contenido de eDiscovery en el centro de cumplimiento de Microsoft para buscar contenido en diferentes servicios de Microsoft 365.
-ms.openlocfilehash: 3c5e4191c34db9d31ce54494f2677e75f3cae3bf
-ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
-ms.translationtype: HT
+ms.openlocfilehash: b2317012415929201c0a1cb8b20ef751bf85ed95
+ms.sourcegitcommit: 2dedd0f594b817779e034afa6c4418def2382a22
+ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/06/2022
-ms.locfileid: "66632627"
+ms.lasthandoff: 09/18/2022
+ms.locfileid: "67798833"
 ---
 # <a name="create-a-content-search"></a>Crear una búsqueda de contenido
 
@@ -64,13 +64,13 @@ Después de ejecutar una búsqueda, se mostrará el número de ubicaciones de co
 
 5. En la página **Ubicaciones**, elija las ubicaciones de contenido que quiere buscar. Puede buscar en buzones, sitios y carpetas públicas.
 
-    ![Elegir las ubicaciones de contenido para colocar en suspensión.](../media/ContentSearchLocations.png)
+    ![Elija las ubicaciones de contenido que desea buscar.](../media/ContentSearchLocations.png)
   
-   1. **Buzones de Exchange**: establezca el botón de alternancia en **Activado** y después haga clic en **Elegir usuarios, grupos o equipos** para especificar los buzones para colocar en suspensión. Use el cuadro de búsqueda para buscar buzones de usuario y grupos de distribución. También puede buscar en el buzón asociado a un equipo de Microsoft (para los mensajes del canal), grupo de Office 365 y grupo de Yammer. Para más información sobre los datos de la aplicación almacenados en buzones, vea [Contenido almacenado en buzones de eDiscovery](what-is-stored-in-exo-mailbox.md).
+   1. **Buzones de Exchange**: establezca el botón de alternancia **en Activado** y, a continuación, haga clic en **Elegir usuarios, grupos o equipos** para especificar los buzones de correo que se van a buscar. Use el cuadro de búsqueda para buscar buzones de usuario y grupos de distribución. También puede buscar en el buzón asociado a un equipo de Microsoft (para los mensajes del canal), grupo de Office 365 y grupo de Yammer. Para más información sobre los datos de la aplicación almacenados en buzones, vea [Contenido almacenado en buzones de eDiscovery](what-is-stored-in-exo-mailbox.md).
 
-   2. **Sitios de SharePoint**: establezca el botón de alternancia en **Activado** y haga clic en **Elegir sitios** para especificar los sitios de SharePoint y las cuentas de OneDrive que se deben colocar en suspensión. Escriba la dirección URL de cada sitio que quiere colocar en suspensión. También puede agregar la dirección URL del sitio de SharePoint para un equipo de Microsoft, un grupo de Office 365 o un grupo de Yammer.
+   2. **Sitios de SharePoint**: establezca el botón de alternancia **en Activado** y, a continuación, haga clic en **Elegir sitios** para especificar sitios de SharePoint y cuentas de OneDrive para buscar. Escriba la dirección URL de cada sitio en el que desee buscar. También puede agregar la dirección URL del sitio de SharePoint para un equipo de Microsoft, un grupo de Office 365 o un grupo de Yammer.
   
-   3. **Carpetas públicas de Exchange**: establezca la opción de alternancia en **Activado** para poner todas las carpetas públicas en su organización de Exchange Online en suspensión. No puede elegir carpetas públicas específicas para poner en suspensión. Deje el botón de alternancia desactivado si no quiere establecer una suspensión en las carpetas públicas.
+   3. **Carpetas públicas de Exchange**: establezca el botón de alternancia **en Activado** para buscar carpetas públicas en la organización de Exchange Online. No puede elegir carpetas públicas específicas para buscar. Deje desactivado el botón de alternancia si no quiere buscar carpetas públicas.
   
    4. Mantenga esta casilla seleccionada para buscar contenido de Teams para los usuarios locales. Por ejemplo, si busca en todos los buzones de Exchange de la organización y también selecciona esta casilla, el almacenamiento basado en la nube que se usa para almacenar los datos de chats de Teams para usuarios locales se incluirá en el ámbito de la búsqueda. Para más información, consulte [Buscar los datos de chat de Teams de usuarios locales](search-cloud-based-mailboxes-for-on-premises-users.md).
 

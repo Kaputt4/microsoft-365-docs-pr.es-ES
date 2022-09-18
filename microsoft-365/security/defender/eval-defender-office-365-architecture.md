@@ -23,12 +23,12 @@ ms.collection:
 - zerotrust-solution
 - highpri
 ms.topic: conceptual
-ms.openlocfilehash: e23324a7d779e2dd59beda8270099f3514d57746
-ms.sourcegitcommit: e9323a90a1156c10b037abca3e16d7367ef92dd7
+ms.openlocfilehash: 59486fdc30fa512f10126313076fc0be7ff257f5
+ms.sourcegitcommit: 2dedd0f594b817779e034afa6c4418def2382a22
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/02/2022
-ms.locfileid: "67567277"
+ms.lasthandoff: 09/18/2022
+ms.locfileid: "67796794"
 ---
 # <a name="review-microsoft-defender-for-office-365-architecture-requirements-and-key-concepts"></a>Revisión de los requisitos de arquitectura de Microsoft Defender para Office 365 y los conceptos clave
 
@@ -61,14 +61,14 @@ La integración local es común pero opcional. Si el entorno es solo en la nube,
 
 ## <a name="understand-key-concepts"></a>Descripción de los conceptos clave
 
-En la tabla siguiente se identificaron conceptos clave que son importantes comprender al evaluar, configurar e implementar MDO.
+En la tabla siguiente se identificaron conceptos clave que son importantes comprender al evaluar, configurar e implementar Defender para Office 365.
 
 |Concepto|Descripción|Más información|
 |---|---|---|
-|Exchange Online Protection|Exchange Online Protection (EOP) es el servicio de filtrado basado en la nube que ayuda a proteger su organización contra correo electrónico no deseado y malware. EOP se incluye en todas las licencias de Microsoft 365 que incluyen Exchange Online.|[Información general de Exchange Online Protection](../office-365-security/exchange-online-protection-overview.md)|
-|Protección antimalware|Las organizaciones con buzones de correo en EXO se protegen automáticamente contra malware.|[Protección contra malware en EOP](../office-365-security/anti-malware-protection.md)|
-|Protección contra correo no deseado|Las organizaciones con buzones de correo en EXO se protegen automáticamente contra las directivas de correo no deseado y correo no deseado.|[Protección contra correo no deseado en EOP](../office-365-security/anti-spam-protection.md)|
-|Protección contra phishing|MDO ofrece protección anti-phishing más avanzada relacionada con la suplantación de identidad (phishing), la caza de ballenas, el ransomware y otras actividades malintencionadas.|[Protección contra suplantación de identidad adicional en Microsoft Defender para Office 365](../office-365-security/anti-phishing-protection.md)|
+|Exchange Online Protection|Exchange Online Protection (EOP) es el servicio de filtrado basado en la nube que ayuda a proteger su organización contra el correo no deseado y el malware en el correo electrónico. EOP se incluye en todas las licencias de Microsoft 365 que incluyen Exchange Online.|[Información general de Exchange Online Protection](../office-365-security/exchange-online-protection-overview.md)|
+|Protección antimalware|Las organizaciones con buzones de Exchange Online se protegen automáticamente contra malware.|[Protección contra malware en EOP](../office-365-security/anti-malware-protection.md)|
+|Protección contra correo no deseado|Las organizaciones con buzones de Exchange Online se protegen automáticamente contra correo no deseado y correo no deseado.|[Protección contra correo no deseado en EOP](../office-365-security/anti-spam-protection.md)|
+|Protección contra phishing|Defender para Office 365 ofrece protección contra suplantación de identidad (phishing) más avanzada relacionada con la suplantación de identidad (phishing), la caza de ballenas, el ransomware y otras actividades malintencionadas.|[Protección contra suplantación de identidad adicional en Microsoft Defender para Office 365](../office-365-security/anti-phishing-protection.md)|
 |Protección contra la suplantación de identidad|EOP incluye características para ayudar a proteger su organización frente a remitentes falsificados (falsificados).|[Protección contra la suplantación de identidad en EOP](../office-365-security/anti-spoofing-protection.md)|
 |Datos adjuntos seguros|Datos adjuntos seguros proporciona una capa adicional de protección mediante el uso de un entorno virtual para comprobar y "detonar" los datos adjuntos en los mensajes de correo electrónico antes de que se entreguen.|[Datos adjuntos seguros en Microsoft Defender para Office 365](../office-365-security/safe-attachments.md)|
 |Datos adjuntos seguros para SharePoint, OneDrive y Microsoft Teams|Además, Los datos adjuntos seguros para SharePoint, OneDrive y Microsoft Teams ofrecen una capa adicional de protección para los archivos que se han cargado en repositorios de almacenamiento en la nube.|[Datos adjuntos seguros para SharePoint, OneDrive y Microsoft Teams](../office-365-security/mdo-for-spo-odb-and-teams.md)|
@@ -78,7 +78,7 @@ Para obtener información más detallada sobre las funcionalidades incluidas con
 
 ## <a name="review-architecture-requirements"></a>Revisión de los requisitos de arquitectura
 
-Una evaluación de MDO correcta o un piloto de producción asume los siguientes requisitos previos:
+Una evaluación correcta Defender para Office 365 o un piloto de producción asume los siguientes requisitos previos:
 
 - Todos los buzones de correo de destinatario están actualmente en Exchange Online.
 - El registro MX público se resuelve directamente en EOP o en una puerta de enlace SMTP de terceros que, a continuación, retransmite el correo electrónico externo entrante directamente a EOP.

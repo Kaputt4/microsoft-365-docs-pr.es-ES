@@ -3,6 +3,7 @@ title: Implementación y configuración del complemento de mensaje de informe
 description: Los pasos para implementar y configurar los complementos de informes de phish de Microsoft dirigidos a administradores de seguridad.
 search.product: ''
 ms.service: microsoft-365-security
+ms.subservice: mdo
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -15,14 +16,13 @@ manager: dansimp
 audience: ITPro
 ms.collection: m365-guidance-templates
 ms.topic: how-to
-ms.subservice: mdo
 search.appverid: met150
-ms.openlocfilehash: 3909f2c0d2aeb3ef2a8e71588be3e988b54d9203
-ms.sourcegitcommit: c29af68260ba8676083674b3c70209bff2c2e362
+ms.openlocfilehash: d247bcde276729dd6a47869e41ffd0d7e721e6b2
+ms.sourcegitcommit: 2dedd0f594b817779e034afa6c4418def2382a22
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/16/2022
-ms.locfileid: "67738803"
+ms.lasthandoff: 09/18/2022
+ms.locfileid: "67798767"
 ---
 # <a name="deploy-and-configure-the-report-message-add-in-to-users"></a>Implemente y configure el complemento de mensaje de informe para los usuarios.
 
@@ -49,7 +49,7 @@ En función de si tiene licencia para Defender para Office 365, también obtendr
 1.  En la página que se carga, presione **Obtener aplicaciones**.
 1.  En la página que aparece, en el cuadro de búsqueda superior derecho, escriba **Mensaje de informe** o **Suplantación de identidad de** informe y, a continuación, seleccione **Buscar**.
 1.  Presione **Obtener ahora** en la aplicación elegida dentro de los resultados de búsqueda (publisher es **Microsoft Corporation**).
-1.  En el control flotante que aparece, seleccione en quién implementar el complemento. Si quiere usar un grupo específico en las pruebas, configúrelo para toda la **organización** , cuando haya hecho una selección, presione **Siguiente**.
+1.  En el control flotante que aparece, seleccione en quién implementar el complemento. Si quiere usar un grupo específico para realizar pruebas, configúrelo para toda la **organización** , cuando haya hecho una selección, presione **Siguiente**.
 1.  Revise los permisos, la información y las funcionalidades y presione **Siguiente**.
 1.  Presione **Finalizar implementación** (el complemento puede tardar entre 12 y 24 horas en aparecer automáticamente en los clientes de Outlook).
 
@@ -66,9 +66,9 @@ En función de si tiene licencia para Defender para Office 365, también obtendr
 ## <a name="optional-steps--configure-notifications"></a>Pasos opcionales: configuración de notificaciones
 
 1.  En la página de configuración de los pasos anteriores, debajo de la **experiencia de informes de usuario**, configure el título y el cuerpo de los elementos emergentes antes y después si lo desea. Los usuarios finales verán el elemento emergente antes de informar si **preguntarme antes de informar** también está habilitado.
-2.  Si desea que las notificaciones procedan de un buzón organizativo interno, seleccione **Especificar Office 365 dirección de correo electrónico para usarla como remitente** y busque un buzón válido en su organización desde el que enviar las notificaciones.
+2.  Si desea que las notificaciones procedan de un buzón de correo interno de la organización, seleccione **Especificar Office 365 dirección de correo electrónico para usarla como remitente** y busque un buzón válido en su organización desde el que enviar las notificaciones.
 3.  Presione **Personalizar notificaciones** para configurar el texto enviado a los usuarios de informes después de que el administrador revise un mensaje notificado mediante Marcar & Notificar, configure las opciones **Phishing**, **No se** encontraron amenazas no **deseados** & .
-4.  En la pestaña **Pie de página** , seleccione el pie de página global que se enviará para recibir notificaciones, junto con el logotipo de su organización, si procede.
+4.  En la pestaña **Pie de página** , seleccione el pie de página global que se va a enviar para recibir notificaciones, junto con el logotipo de su organización, si procede.
 
 
 ### <a name="further-reading"></a>Lectura adicional

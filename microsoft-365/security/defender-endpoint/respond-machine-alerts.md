@@ -15,12 +15,12 @@ ms.collection: M365-security-compliance
 ms.topic: article
 ms.subservice: mde
 search.appverid: met150
-ms.openlocfilehash: 2f5ef49d9b8fd1d558fb0b646295615d9352b915
-ms.sourcegitcommit: 0af064e8b6778060f1bd365378d69b16fc9949b5
+ms.openlocfilehash: 1714469bcfaa35db17f7ad771aa2701d5e66d2d7
+ms.sourcegitcommit: 2dedd0f594b817779e034afa6c4418def2382a22
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/15/2022
-ms.locfileid: "67728678"
+ms.lasthandoff: 09/18/2022
+ms.locfileid: "67799118"
 ---
 # <a name="take-response-actions-on-a-device"></a>Realizar acciones de respuesta en un dispositivo
 
@@ -59,7 +59,6 @@ Las acciones de respuesta se ejecutan en la parte superior de una página de dis
 
  Puede encontrar páginas de dispositivo desde cualquiera de las vistas siguientes:
 
-- **Panel de operaciones de seguridad** : seleccione un nombre de dispositivo en la tarjeta Dispositivos en riesgo.
 - **Cola de alertas**: seleccione el nombre del dispositivo junto al icono de dispositivo en la cola de alertas.
 - **Lista de dispositivos** : seleccione el encabezado del nombre del dispositivo en la lista de dispositivos.
 - **Cuadro de búsqueda**: seleccione Dispositivo en el menú desplegable y escriba el nombre del dispositivo.
