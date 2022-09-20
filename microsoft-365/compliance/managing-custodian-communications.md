@@ -2,8 +2,8 @@
 title: Trabajar con comunicaciones en eDiscovery (Premium)
 f1.keywords:
 - NOCSH
-ms.author: v-tophillips
-author: v-tophillips
+ms.author: robmazz
+author: robmazz
 manager: laurawi
 ms.date: ''
 audience: Admin
@@ -16,12 +16,12 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: eDiscovery (Premium) facilita la administración del flujo de trabajo de notificaciones de suspensión legal en torno a la notificación a los custodios en investigaciones legales.
-ms.openlocfilehash: 371ede05fc1d17caf8ec8a449dab2f386ac53628
-ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
+ms.openlocfilehash: 5a654f115147d0b4596954ff6ded3556ba2d26fa
+ms.sourcegitcommit: 433f5b448a0149fcf462996bc5c9b45d17bd46c6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/06/2022
-ms.locfileid: "66635225"
+ms.lasthandoff: 09/20/2022
+ms.locfileid: "67826036"
 ---
 # <a name="work-with-communications-in-ediscovery-premium"></a>Trabajar con comunicaciones en eDiscovery (Premium)
 

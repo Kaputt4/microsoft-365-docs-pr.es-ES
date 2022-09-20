@@ -2,8 +2,8 @@
 title: Herramientas de exhibición de documentos electrónicos heredadas retiradas
 f1.keywords:
 - NOCSH
-ms.author: v-tophillips
-author: v-tophillips
+ms.author: robmazz
+author: robmazz
 manager: laurawi
 audience: Admin
 ms.topic: article
@@ -14,12 +14,12 @@ search.appverid:
 ms.collection: M365-security-compliance
 ms.custom: admindeeplinkCOMPLIANCE
 description: In-Place eDiscovery y In-Place Hold (y los cmdlets de PowerShell correspondientes) en Exchange Online se retirarán en el primer semestre de 2020. El cmdlet Search-Mailbox y Microsoft Purview eDiscovery (Premium) v1.0 también se retiran en el mismo período de tiempo.
-ms.openlocfilehash: 630d72c75f318e6d4f9e68b01c61d5069958a0a1
-ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
+ms.openlocfilehash: 29b2309223d2402a5e40756bbf02df3d085681a8
+ms.sourcegitcommit: 433f5b448a0149fcf462996bc5c9b45d17bd46c6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/06/2022
-ms.locfileid: "66636081"
+ms.lasthandoff: 09/20/2022
+ms.locfileid: "67826058"
 ---
 # <a name="retirement-of-legacy-ediscovery-tools"></a>Retirada de herramientas heredadas de eDiscovery
 
@@ -30,7 +30,7 @@ A lo largo de los años, Microsoft ha proporcionado herramientas de exhibición 
 
 Como resultado de esta nueva y mejorada funcionalidad de exhibición de documentos electrónicos en el portal de cumplimiento, retiramos las siguientes características y funcionalidades relacionadas con eDiscovery relacionadas con la búsqueda de contenido de correo electrónico en Exchange Online y Microsoft 365:
 
-- [eDiscovery local](/exchange/security-and-compliance/in-place-ediscovery/in-place-ediscovery) y [retenciones locales](/exchange/security-and-compliance/create-or-remove-in-place-holds) en el Centro de administración de Exchange.
+- [Exhibición de documentos electrónicos](/exchange/security-and-compliance/in-place-ediscovery/in-place-ediscovery) local y [retenciones locales](/exchange/security-and-compliance/create-or-remove-in-place-holds) en el Centro de administración de Exchange.
 
 - Los cmdlets de PowerShell Exchange Online que admiten In-Place eDiscovery y In-Place Holds (estos cmdlets se identifican colectivamente como cmdlets **-MailboxSearch*). Esto incluye los siguientes cmdlets:
 

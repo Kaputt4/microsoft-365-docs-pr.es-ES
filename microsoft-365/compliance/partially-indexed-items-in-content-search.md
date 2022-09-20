@@ -2,8 +2,8 @@
 title: Elementos parcialmente indizados en la búsqueda de contenido
 f1.keywords:
 - NOCSH
-ms.author: v-tophillips
-author: v-tophillips
+ms.author: robmazz
+author: robmazz
 manager: laurawi
 ms.date: 05/13/2022
 audience: Admin
@@ -21,12 +21,12 @@ search.appverid:
 - MET150
 ms.assetid: d1691de4-ca0d-446f-a0d0-373a4fc8487b
 description: Obtenga información sobre los elementos sin indexar en Exchange y SharePoint que puede incluir en una búsqueda de exhibición de documentos electrónicos que ejecute en el portal de cumplimiento Microsoft Purview.
-ms.openlocfilehash: e4bca9995dd173ef972522f273765db03dff3524
-ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
+ms.openlocfilehash: 4e8b22a21f9ab0b9bd38fb12c3d0a79a958c9440
+ms.sourcegitcommit: 433f5b448a0149fcf462996bc5c9b45d17bd46c6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/06/2022
-ms.locfileid: "66622489"
+ms.lasthandoff: 09/20/2022
+ms.locfileid: "67825552"
 ---
 # <a name="partially-indexed-items-in-ediscovery"></a>Elementos indizados parcialmente en eDiscovery
 
@@ -138,7 +138,7 @@ En la tabla siguiente se describen los límites de indexación que podrían dar 
   
 Para obtener una lista de límites de indexación para documentos de SharePoint, vea [Límites de búsqueda para SharePoint Online](/sharepoint/search-limits).
   
-|**Límite de indexación**|**Notas**|**Description**|
+|**Límite de indexación**|**Notas**|**Descripción**|
 |:-----|:-----|:-----|
 |Tamaño máximo de datos adjuntos (excepto los archivos de Excel)  <br/> |150 MB  <br/> |Tamaño máximo de los datos adjuntos de un correo electrónico que se analizarán para la indexación. Los datos adjuntos que sean mayores que este límite no se analizarán para la indexación y el mensaje con los datos adjuntos se marcará como indizado parcialmente.  <br/><br/> **Nota:** El análisis es el proceso en el que el servicio de indexación extrae texto de los datos adjuntos, quita caracteres innecesarios como signos de puntuación y espacios y, a continuación, divide el texto en palabras (en un proceso denominado tokenización) que, a continuación, se almacenan en el índice.           |
 |Tamaño máximo de los archivos de Excel  <br/> |4 MB  <br/> |Tamaño máximo de un archivo de Excel ubicado en un sitio o adjunto a un mensaje de correo electrónico que se analizará para la indexación. No se analizará ningún archivo de Excel que sea mayor que este límite y el archivo o el mensaje de correo electrónico con los datos adjuntos del archivo se marcarán como sin indexar.  <br/> |
@@ -162,9 +162,9 @@ Para obtener una lista de límites de indexación para documentos de SharePoint,
 
 - Los archivos que se cifran con [tecnologías de cifrado de Microsoft](encryption.md) y se adjuntan a un mensaje de correo electrónico que coincide con los criterios de una búsqueda se pueden obtener en versión preliminar y se descifrarán cuando se exporten. En este momento, los archivos cifrados con tecnologías de cifrado de Microsoft (y almacenados en SharePoint o OneDrive para la Empresa) se indizan parcialmente. 
 
-- Los mensajes de correo electrónico cifrados con S/MIME se indizan parcialmente. Esto incluye los mensajes cifrados con o sin datos adjuntos.
+- Email mensajes cifrados con S/MIME se indizan parcialmente. Esto incluye los mensajes cifrados con o sin datos adjuntos.
 
-- Los mensajes de correo electrónico protegidos mediante Azure Rights Management se indexan y se incluirán en los resultados de búsqueda si coinciden con la consulta de búsqueda. Los mensajes de correo electrónico protegidos con derechos se descifran y se pueden obtener en vista previa y exportar. Esta funcionalidad requiere que se le asigne el rol Descifrado de RMS, que se asigna de forma predeterminada al grupo de roles administrador de exhibición de documentos electrónicos.
+- Email mensajes protegidos mediante Azure Rights Management se indexan y se incluirán en los resultados de la búsqueda si coinciden con la consulta de búsqueda. Los mensajes de correo electrónico protegidos con derechos se descifran y se pueden obtener en vista previa y exportar. Esta funcionalidad requiere que se le asigne el rol Descifrado de RMS, que se asigna de forma predeterminada al grupo de roles administrador de exhibición de documentos electrónicos.
 
 - Si crea una suspensión basada en consultas asociada a un caso de exhibición de documentos electrónicos, todos los elementos indizados parcialmente se colocan en suspensión. Esto incluye elementos parcialmente indexados que no coinciden con los criterios de consulta de búsqueda para la suspensión. Para obtener más información sobre cómo crear retenciones de exhibición de documentos electrónicos basadas en consultas, vea [Crear una suspensión de eDiscovery](create-ediscovery-holds.md).
 

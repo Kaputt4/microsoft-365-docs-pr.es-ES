@@ -2,8 +2,8 @@
 title: Contenido almacenado en buzones de Exchange Online
 f1.keywords:
 - NOCSH
-ms.author: v-tophillips
-author: v-tophillips
+ms.author: robmazz
+author: robmazz
 manager: laurawi
 audience: Admin
 ms.topic: article
@@ -16,12 +16,12 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: El contenido generado por las aplicaciones basadas en la nube en Microsoft 365 se almacena o asocia con el buzón de Exchange Online de un usuario. Este contenido se puede buscar mediante las herramientas de Exhibición de documentos electrónicos de Microsoft.
-ms.openlocfilehash: a5006721166a2f56d8abae9b79442f4ad93276a4
-ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
+ms.openlocfilehash: 10caceac9bd5d3fdc499ea7132acecc4b72ff16f
+ms.sourcegitcommit: 433f5b448a0149fcf462996bc5c9b45d17bd46c6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/06/2022
-ms.locfileid: "66641062"
+ms.lasthandoff: 09/20/2022
+ms.locfileid: "67825772"
 ---
 # <a name="content-stored-in-exchange-online-mailboxes-for-ediscovery"></a>Contenido almacenado en buzones de Exchange Online para eDiscovery
 
@@ -36,9 +36,9 @@ En la tabla siguiente se enumeran las aplicaciones que almacenan o asocian datos
 |Aplicación de Microsoft 365|Descripción|
 |---|---|
 |Formas<sup>*</sup>|Los formularios y las respuestas a un formulario se almacenan en archivos adjuntos a mensajes de correo electrónico y almacenados en una carpeta oculta en el buzón del usuario que creó el formulario. Los formularios creados antes de abril de 2020 se almacenan como un archivo PDF. Los formularios creados después de 2020 se almacenan como un archivo JSON. Las respuestas a un formulario se almacenan en un archivo CSV. Al exportar contenido de Formularios en un archivo PST, estos datos se encuentran en la carpeta **ApplicationDataRoot** de una subcarpeta denominada con el siguiente guid (IDENTIFICADOR único global): **c9a559d2-7aab-4f13-a6ed-e7e9c52aec87**.|
-|Grupos de Microsoft 365|Los mensajes de correo electrónico, los elementos de calendario, los contactos (personas), las notas y las tareas se almacenan en el buzón asociado a un grupo de Microsoft 365.|
-|Outlook/Exchange Online|Los mensajes de correo electrónico, los elementos de calendario, los contactos (personas), las notas y las tareas se almacenan en el buzón de un usuario.|
-|Personas|Los contactos de la aplicación Personas (que son los mismos contactos que los accesibles en Outlook) se almacenan en el buzón de un usuario.|
+|Grupos de Microsoft 365|Email mensajes, elementos de calendario, contactos (Personas), notas y tareas se almacenan en el buzón asociado a un grupo de Microsoft 365.|
+|Outlook/Exchange Online|Email mensajes, elementos de calendario, contactos (Personas), notas y tareas se almacenan en el buzón de un usuario.|
+|Contactos|Los contactos de la aplicación Personas (que son los mismos contactos que los accesibles en Outlook) se almacenan en el buzón de un usuario.|
 |Programación de clases|Los planes creados en la programación de clases se almacenan en el buzón del grupo de Microsoft 365 correspondiente que se aprovisiona cuando se crea un nuevo plan. El alias del buzón de grupo es el nombre del plan.|
 |Skype Empresarial|Las conversaciones de Skype Empresarial se almacenan en la carpeta Historial de conversaciones del buzón de un usuario. Si el buzón de un participante de una reunión de Skype se coloca en suspensión por juicio o se asigna a una directiva de retención, los archivos adjuntos a una reunión se conservan en el buzón de los participantes.|
 |Sway<sup>*</sup>|Los Sways se almacenan como un archivo HTML que se adjunta a un mensaje de correo electrónico y se almacenan en una carpeta oculta en el buzón del usuario que creó el sway. Al exportar contenido de Sway en un archivo PST, estos datos se encuentran en la carpeta **ApplicationDataRoot** de una subcarpeta denominada con el siguiente GUID: **905fcf26-4eb7-48a0-9ff0-8dcc7194b5ba**.|

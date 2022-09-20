@@ -2,8 +2,8 @@
 title: Análisis de datos en un conjunto de revisión en eDiscovery (Premium)
 f1.keywords:
 - NOCSH
-ms.author: v-tophillips
-author: v-tophillips
+ms.author: robmazz
+author: robmazz
 manager: laurawi
 ms.date: ''
 audience: Admin
@@ -17,12 +17,12 @@ search.appverid:
 ms.assetid: ''
 description: Obtenga información sobre las herramientas disponibles para organizar conjuntos de documentos al analizar un caso de Microsoft Purview eDiscovery (Premium).
 ms.custom: seo-marvel-mar2020
-ms.openlocfilehash: 822c21c05b865bdf1208f7679eaff9ea35b10a9e
-ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
+ms.openlocfilehash: f5d88420c208caeec42ca44426b8b94f1dddcab0
+ms.sourcegitcommit: 433f5b448a0149fcf462996bc5c9b45d17bd46c6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/06/2022
-ms.locfileid: "66634839"
+ms.lasthandoff: 09/20/2022
+ms.locfileid: "67826366"
 ---
 # <a name="analyze-data-in-a-review-set-in-ediscovery-premium"></a>Análisis de datos en un conjunto de revisión en eDiscovery (Premium)
 
@@ -64,15 +64,15 @@ Esta es la sintaxis de la consulta de filtro **For Review** :
 
 En la lista siguiente se describe el resultado de la consulta de filtro en términos de qué contenido se muestra después de aplicarlo al conjunto de revisión.
 
-- **Correo electrónico**. Muestra los elementos marcados como **Inclusive** o **InclusiveMinus**. Un elemento inclusivo es el mensaje final de un subproceso de correo electrónico. Contiene todo el contenido anterior en el subproceso de correo electrónico. Un elemento inclusivo menos contiene uno o varios datos adjuntos asociados al mensaje específico en el subproceso de correo electrónico. Un revisor puede usar el valor menos inclusivo para determinar qué mensajes específicos del subproceso de correo electrónico tienen datos adjuntos asociados.
+- **Email**. Muestra los elementos marcados como **Inclusive** o **InclusiveMinus**. Un elemento inclusivo es el mensaje final de un subproceso de correo electrónico. Contiene todo el contenido anterior en el subproceso de correo electrónico. Un elemento inclusivo menos contiene uno o varios datos adjuntos asociados al mensaje específico en el subproceso de correo electrónico. Un revisor puede usar el valor menos inclusivo para determinar qué mensajes específicos del subproceso de correo electrónico tienen datos adjuntos asociados.
 
-- **Datos adjuntos**. Filtra los datos adjuntos duplicados en el mismo conjunto de correo electrónico. Solo se muestran los datos adjuntos que son únicos en un subproceso de correo electrónico.
+- **Datos adjuntos**. Filtra los datos adjuntos duplicados en el mismo conjunto de Email. Solo se muestran los datos adjuntos que son únicos en un subproceso de correo electrónico.
 
 - **Documentos y otros**. Filtra los documentos duplicados. Solo se muestran los documentos que son únicos en el conjunto de revisión.
 
 - **Conversaciones de Teams**. Se muestran todas las conversaciones de Teams (y Yammer) del conjunto de revisión.
 
-Para obtener más información sobre los tipos inclusivos y la unicidad del documento, vea [Subprocesos de correo electrónico en eDiscovery (Premium).](email-threading-in-advanced-ediscovery.md)
+Para obtener más información sobre los tipos inclusivos y la exclusividad del documento, vea [Email subprocesos en eDiscovery (Premium).](email-threading-in-advanced-ediscovery.md)
 
 > [!NOTE]
 > Durante la versión preliminar pública [del nuevo formato de caso](advanced-ediscovery-new-case-format.md) en eDiscovery (Premium), la consulta de filtro **For Review** no devolvió las conversaciones de Teams o Yammer para los conjuntos de revisión (en los casos que usan el formato de mayúsculas y minúsculas) creados antes del 4 de noviembre de 2021. Este problema se ha resuelto. Esto significa que si vuelve a aplicar la consulta **For Review** a un conjunto de revisión en un caso que usa el formato de mayúsculas y minúsculas, es posible que se muestren más elementos que coincidan con la consulta de filtro porque se incluyen todas las conversaciones de Teams o Yammer.

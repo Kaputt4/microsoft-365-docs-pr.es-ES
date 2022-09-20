@@ -2,8 +2,8 @@
 title: Configuración de límites de cumplimiento para las investigaciones de eDiscovery
 f1.keywords:
 - NOCSH
-ms.author: v-tophillips
-author: v-tophillips
+ms.author: robmazz
+author: robmazz
 manager: laurawi
 audience: Admin
 ms.topic: article
@@ -19,12 +19,12 @@ search.appverid:
 ms.assetid: 1b45c82f-26c8-44fb-9f3b-b45436fe2271
 description: Obtenga información sobre cómo usar límites de cumplimiento para crear límites lógicos que controlen las ubicaciones de contenido del usuario que un administrador de eDiscovery puede buscar en Microsoft 365.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: f65a1c85a4cadac646fdffee8403fb398e8c0081
-ms.sourcegitcommit: cd9df1a681265905eef99c039f7036b2fa6e8b6d
+ms.openlocfilehash: aff5b3de0f392a87650247300912355726ed864b
+ms.sourcegitcommit: 433f5b448a0149fcf462996bc5c9b45d17bd46c6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/07/2022
-ms.locfileid: "67275986"
+ms.lasthandoff: 09/20/2022
+ms.locfileid: "67819939"
 ---
 # <a name="set-up-compliance-boundaries-for-ediscovery-investigations"></a>Configuración de límites de cumplimiento para las investigaciones de eDiscovery
 
@@ -202,7 +202,7 @@ Los filtros de permisos de búsqueda también permiten controlar dónde se enrut
     |NAM  <br/> |Norteamérica (los centros de datos están en EE. UU.)  <br/> |
     |EUR  <br/> |Europa  <br/> |
     |APC  <br/> |Asia Pacífico  <br/> |
-    |CAN <br/> |Canadá|
+    |CAN <br/> |Canada|
     |||
 
 - **Enrutar búsquedas de contenido:** Puede enrutar las búsquedas de contenido de sitios de SharePoint y cuentas de OneDrive a un centro de datos satélite. Esto significa que puede especificar la ubicación del centro de datos donde se ejecutarán las búsquedas.
@@ -250,7 +250,7 @@ Tenga en cuenta lo siguiente al buscar y exportar contenido en entornos multigeo
 
 - Al buscar contenido en SharePoint y OneDrive, el parámetro *Region* dirige las búsquedas a la ubicación principal o satélite donde el administrador de exhibición de documentos electrónicos llevará a cabo investigaciones de eDiscovery. Si un administrador de eDiscovery busca sitios de SharePoint y OneDrive fuera de la región especificada en el filtro de permisos de búsqueda, no se devuelve ningún resultado de búsqueda.
 
-- Al exportar los resultados de búsqueda desde eDiscovery (Estándar), el contenido de todas las ubicaciones de contenido (incluidos Exchange, Skype for Business, SharePoint, OneDrive y otros servicios que puede buscar mediante la herramienta Búsqueda de contenido) se carga en la ubicación de Azure Storage en el centro de datos especificado por el parámetro *Region*. Esto ayuda a las organizaciones a mantenerse dentro del cumplimiento al no permitir que el contenido se exporte entre fronteras controladas. Si no se especifica ninguna región en el filtro de permisos de búsqueda, el contenido se carga en el centro de datos principal de la organización.
+- Al exportar los resultados de la búsqueda desde eDiscovery (Estándar), el contenido de todas las ubicaciones de contenido (incluidos Exchange, Skype Empresarial, SharePoint, OneDrive y otros servicios que puede buscar mediante la herramienta Búsqueda de contenido) se carga en la ubicación de Azure Storage del centro de datos especificado por el parámetro *Region*. Esto ayuda a las organizaciones a mantenerse dentro del cumplimiento al no permitir que el contenido se exporte entre fronteras controladas. Si no se especifica ninguna región en el filtro de permisos de búsqueda, el contenido se carga en el centro de datos principal de la organización.
 
   Al exportar contenido desde eDiscovery (Premium), no se puede controlar dónde se carga el contenido mediante el parámetro *Region* . El contenido se carga en una ubicación de Azure Storage en un centro de datos de la ubicación central de la organización. Para obtener una lista de ubicaciones geográficas basadas en su ubicación central, consulte [Configuración de eDiscovery multigeográfica de Microsoft 365](../enterprise/multi-geo-ediscovery-configuration.md).
 
@@ -298,7 +298,7 @@ Tenga en cuenta las siguientes limitaciones al administrar casos e investigacion
 
 - No se recomienda usar filtros de exclusión (como usar `-not()` en un filtro de permisos de búsqueda) para un límite de cumplimiento basado en contenido. El uso de un filtro de exclusión puede tener resultados inesperados si no se ha indexado el contenido con atributos actualizados recientemente.
 
-## <a name="frequently-asked-questions"></a>Preguntas más frecuentes
+## <a name="frequently-asked-questions"></a>Preguntas frecuentes
 
 **¿Quién puede crear y administrar filtros de permisos de búsqueda (mediante cmdlets de New-ComplianceSecurityFilter y Set-ComplianceSecurityFilter)?**
   

@@ -2,8 +2,8 @@
 title: Consultas de palabras clave y condiciones de búsqueda para eDiscovery
 f1.keywords:
 - NOCSH
-ms.author: v-tophillips
-author: v-tophillips
+ms.author: robmazz
+author: robmazz
 manager: laurawi
 audience: Admin
 ms.topic: article
@@ -22,12 +22,12 @@ ms.assetid: c4639c2e-7223-4302-8e0d-b6e10f1c3be3
 ms.custom:
 - seo-marvel-apr2020
 description: Obtenga información sobre las propiedades de correo electrónico y documentos que puede buscar mediante las herramientas de búsqueda de exhibición de documentos electrónicos de Microsoft 365.
-ms.openlocfilehash: ca824d0f812690711f8ec78cd21955e14b8cb47f
-ms.sourcegitcommit: 6f565d9e0f91ebc76fd13d7005619531391ab5f9
+ms.openlocfilehash: 98ff5faabbd91f2c4aa67a789b4d2c61aa7dc0b1
+ms.sourcegitcommit: 433f5b448a0149fcf462996bc5c9b45d17bd46c6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/25/2022
-ms.locfileid: "67439648"
+ms.lasthandoff: 09/20/2022
+ms.locfileid: "67826673"
 ---
 # <a name="keyword-queries-and-search-conditions-for-ediscovery"></a>Consultas de palabras clave y condiciones de búsqueda para eDiscovery
 
@@ -97,7 +97,7 @@ Para obtener una lista completa de las propiedades de SharePoint que se pueden b
 |---|---|---|---|
 |Autor|El campo de autor de los documentos de Office, que persiste si se copia un documento. Por ejemplo, si un usuario crea un documento y lo envía por correo electrónico a otra persona que luego lo carga en SharePoint, el documento conservará el autor original. Asegúrese de usar el nombre para mostrar del usuario para esta propiedad.|`author:"Garth Fort"`|Todos los documentos que se han creado por Juan Casanova.|
 |ContentType|Tipo de contenido de SharePoint de un elemento, como Item, Document o Video.|`contenttype:document`|Se devolverán todos los documentos.|
-|Created|La fecha en la que se crea un elemento.|`created>=2021-06-01`|Todos los elementos creados a partir del 1 de junio de 2021.|
+|Creados|La fecha en la que se crea un elemento.|`created>=2021-06-01`|Todos los elementos creados a partir del 1 de junio de 2021.|
 |CreatedBy|La persona que creó o cargó un elemento. Asegúrese de usar el nombre para mostrar del usuario para esta propiedad.|`createdby:"Garth Fort"`|Todos los elementos creados o cargados por Juan Casanova.|
 |DetectedLanguage|El idioma de un elemento.|`detectedlanguage:english`|Todos los elementos en inglés.|
 |DocumentLink|Ruta de acceso (URL) de una carpeta específica en un sitio de SharePoint o OneDrive para la Empresa. Si usa esta propiedad, asegúrese de buscar en el sitio en el que se encuentra la carpeta especificada. <p> Para devolver elementos ubicados en subcarpetas de la carpeta que especifique para la propiedad documentlink, debe agregar /\* a la dirección URL de la carpeta especificada; por ejemplo, `documentlink: "https://contoso.sharepoint.com/Shared Documents/*"` <p> <br/>Para obtener más información sobre cómo buscar la propiedad documentlink y usar un script para obtener las direcciones URL de vínculo de documento para carpetas en un sitio específico, vea [Usar búsqueda de contenido para colecciones de destino](use-content-search-for-targeted-collections.md).|`documentlink:"https://contoso-my.sharepoint.com/personal/garthf_contoso_com/Documents/Private"` <p> `documentlink:"https://contoso-my.sharepoint.com/personal/garthf_contoso_com/Documents/Shared with Everyone/*" AND filename:confidential`|En el primer ejemplo se devuelven todos los elementos de la carpeta OneDrive para la Empresa especificada. En el segundo ejemplo se devuelven documentos de la carpeta de sitio especificada (y todas las subcarpetas) que contienen la palabra "confidencial" en el nombre de archivo.|
@@ -239,7 +239,7 @@ Cree una condición mediante propiedades de documento al buscar documentos en Sh
 |---|---|
 |Autor|El campo de autor de los documentos de Office, que persiste si se copia un documento. Por ejemplo, si un usuario crea un documento y lo envía por correo electrónico a otra persona que luego lo carga en SharePoint, el documento conservará el autor original.|
 |Cargo|El título del documento. La propiedad Título son metadatos que se especifican en los documentos de Office. Es diferente del nombre de archivo del documento.|
-|Created|La fecha en la que se creó el documento.|
+|Creados|La fecha en la que se creó el documento.|
 |Última modificación|La fecha en la que el documento se modificó por última vez.|
 |Tipo de archivo|Extensión de un archivo; por ejemplo, docx, one, pptx o xlsx. Se trata de la misma propiedad que la propiedad del sitio FileExtension. <p> **Nota:** Si incluye una condición de tipo File mediante el operador **Equals** o **Equals en una consulta de** búsqueda, no puede usar una búsqueda de prefijo (incluyendo el carácter comodín ( \* ) al final del tipo de archivo) para devolver todas las versiones de un tipo de archivo. Si lo hace, se omitirá el carácter comodín. Por ejemplo, si incluye la condición `Equals any of doc*`, solo se devolverán los archivos con una extensión de `.doc` . Los archivos con una extensión de `.docx` no se devolverán. Para devolver todas las versiones de un tipo de archivo, se usa el par *property:value* en una consulta de palabras clave; por ejemplo, `filetype:doc*`.|
 

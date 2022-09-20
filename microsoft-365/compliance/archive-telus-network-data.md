@@ -2,8 +2,8 @@
 title: Configuración de un conector para archivar datos de la red TELUS en Microsoft 365
 f1.keywords:
 - NOCSH
-ms.author: v-tophillips
-author: v-tophillips
+ms.author: robmazz
+author: robmazz
 manager: laurawi
 ms.date: ''
 audience: Admin
@@ -12,12 +12,12 @@ ms.service: O365-seccomp
 ms.localizationpriority: medium
 ms.collection: M365-security-compliance
 description: Los administradores pueden configurar un conector TeleMessage para importar y archivar datos SMS desde la red TELUS en Microsoft 365. Esto le permite archivar datos de orígenes de datos de terceros en Microsoft 365 para que pueda usar características de cumplimiento como la suspensión legal, la búsqueda de contenido y las directivas de retención para administrar los datos de terceros de su organización.
-ms.openlocfilehash: 215f185aa655f031151799f77889976bca799766
-ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
+ms.openlocfilehash: 7143dafa54d1458b8ac860713c8ca7520128ff69
+ms.sourcegitcommit: 433f5b448a0149fcf462996bc5c9b45d17bd46c6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/06/2022
-ms.locfileid: "66628955"
+ms.lasthandoff: 09/20/2022
+ms.locfileid: "67822185"
 ---
 # <a name="set-up-a-connector-to-archive-telus-network-data"></a>Configuración de un conector para archivar datos de la red TELUS
 
@@ -37,9 +37,9 @@ En la información general siguiente se explica el proceso de uso de un conector
 
 3. El conector de red TELUS que se crea en el portal de cumplimiento se conecta al sitio de TeleMessage todos los días y transfiere los mensajes SMS de las 24 horas anteriores a una ubicación segura de Azure Storage en la nube de Microsoft. El conector también convierte el contenido de los mensajes SMS en un formato de mensaje de correo electrónico.
 
-4. El conector importa los elementos de comunicación móviles al buzón de un usuario específico. En el buzón de correo del usuario específico se crea una nueva carpeta denominada **TELUS SMS Network Archiver** y los elementos se importan a él. El conector realiza la asignación mediante el valor de la propiedad Dirección *de correo electrónico del usuario* . Cada mensaje SMS contiene esta propiedad, que se rellena con la dirección de correo electrónico de cada participante del mensaje SMS.
+4. El conector importa los elementos de comunicación móviles al buzón de un usuario específico. En el buzón de correo del usuario específico se crea una nueva carpeta denominada **TELUS SMS Network Archiver** y los elementos se importan a él. El conector realiza la asignación mediante el valor de la propiedad de *dirección Email del usuario*. Cada mensaje SMS contiene esta propiedad, que se rellena con la dirección de correo electrónico de cada participante del mensaje SMS.
 
-   Además de la asignación automática de usuarios mediante el valor de la propiedad Dirección *de correo electrónico del usuario* , también puede implementar la asignación personalizada mediante la carga de un archivo de asignación CSV. Este archivo de asignación contiene el número de teléfono móvil y la dirección de correo electrónico de Microsoft 365 correspondiente para los usuarios de su organización. Si habilita la asignación automática de usuarios y la asignación personalizada, para cada elemento TELUS, el conector primero examina el archivo de asignación personalizado. Si no encuentra un usuario válido de Microsoft 365 que se corresponda con el número de teléfono móvil de un usuario, el conector usará los valores de la propiedad de dirección de correo electrónico del elemento que intenta importar. Si el conector no encuentra un usuario válido de Microsoft 365 en el archivo de asignación personalizado o en la propiedad de dirección de correo electrónico del elemento TELUS, el elemento no se importará.
+   Además de la asignación automática de usuarios mediante el valor de la propiedad de *dirección Email del usuario*, también puede implementar la asignación personalizada mediante la carga de un archivo de asignación CSV. Este archivo de asignación contiene el número de teléfono móvil y la dirección de correo electrónico de Microsoft 365 correspondiente para los usuarios de su organización. Si habilita la asignación automática de usuarios y la asignación personalizada, para cada elemento TELUS, el conector primero examina el archivo de asignación personalizado. Si no encuentra un usuario válido de Microsoft 365 que se corresponda con el número de teléfono móvil de un usuario, el conector usará los valores de la propiedad de dirección de correo electrónico del elemento que intenta importar. Si el conector no encuentra un usuario válido de Microsoft 365 en el archivo de asignación personalizado o en la propiedad de dirección de correo electrónico del elemento TELUS, el elemento no se importará.
 
 ## <a name="before-you-set-up-a-connector"></a>Antes de configurar un conector
 

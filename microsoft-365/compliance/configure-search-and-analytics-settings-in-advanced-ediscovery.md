@@ -2,8 +2,8 @@
 title: 'Configuración de búsqueda y análisis: eDiscovery (Premium)'
 f1.keywords:
 - NOCSH
-ms.author: v-tophillips
-author: v-tophillips
+ms.author: robmazz
+author: robmazz
 manager: laurawi
 ms.date: ''
 audience: Admin
@@ -17,12 +17,12 @@ search.appverid:
 ms.assetid: ''
 ms.custom: seo-marvel-mar2020
 description: Configure los valores de Microsoft Purview eDiscovery (Premium) que se aplican a todos los conjuntos de revisión en un caso. Esto incluye la configuración para el análisis y el reconocimiento óptico de caracteres.
-ms.openlocfilehash: 315448606e99a768bacd8d7d4ac7f858c79c7bed
-ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
+ms.openlocfilehash: 28af9b3f8f91ea1237301cc0a7b5fc789844a158
+ms.sourcegitcommit: 433f5b448a0149fcf462996bc5c9b45d17bd46c6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/06/2022
-ms.locfileid: "66624573"
+ms.lasthandoff: 09/20/2022
+ms.locfileid: "67826520"
 ---
 # <a name="configure-search-and-analytics-settings-in-ediscovery-premium"></a>Configuración de búsqueda y análisis en eDiscovery (Premium)
 
@@ -50,7 +50,7 @@ Para configurar las opciones de búsqueda y análisis de un caso:
 
 ## <a name="near-duplicates-and-email-threading"></a>Casi duplicados y subprocesos de correo electrónico
 
-En esta sección, puede establecer parámetros para la detección de duplicados, la detección de duplicados cercana y el subproceso de correo electrónico. Para obtener más información, vea [Near duplicate detection (Detección de duplicados cercanos)](near-duplicate-detection-in-advanced-ediscovery.md) y [Email threading (Subprocesos de correo electrónico](email-threading-in-advanced-ediscovery.md)).
+En esta sección, puede establecer parámetros para la detección de duplicados, la detección de duplicados cercana y el subproceso de correo electrónico. Para obtener más información, vea Near duplicate detection and Email threading ([Detección casi de duplicados](near-duplicate-detection-in-advanced-ediscovery.md) y [subprocesos de Email](email-threading-in-advanced-ediscovery.md)).
 
 - **Subprocesos de correo electrónico o duplicados cercanos:** Cuando está activado, la detección de duplicados, la detección casi duplicada y el subproceso de correo electrónico se incluyen como parte del flujo de trabajo al ejecutar análisis en los datos de un conjunto de revisión.
 
@@ -90,7 +90,7 @@ Cuando esta configuración está activada, el procesamiento de OCR se ejecutará
 
 - Cuando el contenido de otros orígenes de datos (que no están asociados a un custodio y que se agregan al caso en un origen de datos que no es de custodia) se agrega a un conjunto de revisión.
 
-Una vez agregados los datos a un conjunto de revisión, se puede revisar, buscar, etiquetar y analizar el texto de la imagen. Puede ver el texto extraído en el Visor de texto del archivo de imagen seleccionado en el conjunto de revisión. Para más información, vea:
+Una vez agregados los datos a un conjunto de revisión, se puede revisar, buscar, etiquetar y analizar el texto de la imagen. Puede ver el texto extraído en el Visor de texto del archivo de imagen seleccionado en el conjunto de revisión. Para obtener más información, consulte:
 
 - [Clasificación avanzada de los datos de administración](indexing-custodian-data.md)
 

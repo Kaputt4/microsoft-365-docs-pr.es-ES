@@ -2,8 +2,8 @@
 title: Compatibilidad con CJK/Double Byte para eDiscovery (Premium)
 f1.keywords:
 - NOCSH
-ms.author: v-tophillips
-author: v-tophillips
+ms.author: robmazz
+author: robmazz
 manager: laurawi
 audience: Admin
 ms.topic: article
@@ -16,12 +16,12 @@ search.appverid:
 ms.custom:
 - seo-marvel-apr2020
 description: Obtenga información sobre cómo Microsoft Purview eDiscovery (Premium) en Microsoft 365 admite idiomas chino, japonés y coreano (CJK), que usan un juego de caracteres de doble byte.
-ms.openlocfilehash: a16f1f63deee7cbc77b105c9c49431a8eeda0e71
-ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
+ms.openlocfilehash: 6877e089f1faae21593a0f63336663540d04f470
+ms.sourcegitcommit: 433f5b448a0149fcf462996bc5c9b45d17bd46c6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/06/2022
-ms.locfileid: "66636213"
+ms.lasthandoff: 09/20/2022
+ms.locfileid: "67820534"
 ---
 # <a name="cjk-language-support-for-ediscovery-premium"></a>Compatibilidad del lenguaje CJK con eDiscovery (Premium)
 
@@ -75,7 +75,7 @@ Para obtener información sobre cómo cambiar el idioma de visualización y la z
 
 - OCR no admite caracteres CJK de archivos de imagen
 
-- Los archivos de correo electrónico (como *.eml y *.msg) en la [vista Anotar](view-documents-in-review-set.md#annotate-view) no son compatibles con los idiomas CJK.
+- Email archivos (como *.eml y *.msg) en [la vista Anotar](view-documents-in-review-set.md#annotate-view) no se admiten para los idiomas CJK.
 
 - El resaltado de aciertos de búsqueda en [la vista Texto](view-documents-in-review-set.md#text-view) no se admite para los idiomas CJK.
 

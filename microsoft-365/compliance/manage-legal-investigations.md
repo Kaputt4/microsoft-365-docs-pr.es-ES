@@ -2,8 +2,8 @@
 title: Administración de investigaciones legales en Microsoft 365
 f1.keywords:
 - NOCSH
-ms.author: v-tophillips
-author: v-tophillips
+ms.author: robmazz
+author: robmazz
 manager: laurawi
 audience: Admin
 ms.topic: conceptual
@@ -17,12 +17,12 @@ ms.assetid: 2e5fbe9f-ee4d-4178-8ff8-4356bc1b168e
 ms.custom:
 - seo-marvel-apr2020
 description: Use casos de eDiscovery en el portal de cumplimiento Microsoft Purview para administrar la investigación legal de su organización.
-ms.openlocfilehash: 9db3a1e9ad831c74c9468121eaa0800875c74e5a
-ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
+ms.openlocfilehash: 0af486cd0c1aa74a77acd90ca1b6af55028a6e99
+ms.sourcegitcommit: 433f5b448a0149fcf462996bc5c9b45d17bd46c6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/06/2022
-ms.locfileid: "66623813"
+ms.lasthandoff: 09/20/2022
+ms.locfileid: "67822625"
 ---
 # <a name="manage-legal-investigations-in-microsoft-365"></a>Administración de investigaciones legales en Microsoft 365
 

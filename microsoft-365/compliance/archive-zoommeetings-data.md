@@ -2,8 +2,8 @@
 title: Configuración de un conector para archivar los datos de Zoom Meetings en Microsoft 365
 f1.keywords:
 - NOCSH
-ms.author: v-tophillips
-author: v-tophillips
+ms.author: robmazz
+author: robmazz
 manager: laurawi
 ms.date: ''
 audience: Admin
@@ -12,12 +12,12 @@ ms.service: O365-seccomp
 ms.localizationpriority: medium
 ms.collection: M365-security-compliance
 description: Los administradores pueden configurar un conector para importar y archivar datos de Veritas Zoom Meetings en Microsoft 365. Esto le permite archivar datos de orígenes de datos de terceros en Microsoft 365 para que pueda usar características de cumplimiento como la suspensión legal, la búsqueda de contenido y las directivas de retención para administrar los datos de terceros de su organización.
-ms.openlocfilehash: 3a2d63071ba29baa40c8d7a656e7e7437f9348bd
-ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
+ms.openlocfilehash: 87163a3bc0ce46a1ba50df8803a01bedea9bc3b4
+ms.sourcegitcommit: 433f5b448a0149fcf462996bc5c9b45d17bd46c6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/06/2022
-ms.locfileid: "66631367"
+ms.lasthandoff: 09/20/2022
+ms.locfileid: "67820666"
 ---
 # <a name="set-up-a-connector-to-archive-zoom-meetings-data"></a>Configuración de un conector para archivar los datos de Zoom Meetings
 
@@ -37,7 +37,7 @@ En la información general siguiente se explica el proceso de uso de un conector
 
 3. El conector Zoom Meetings que se crea en el portal de cumplimiento, se conecta a Veritas Merge1 todos los días y transfiere los mensajes de reunión a una ubicación segura de Azure Storage en la nube de Microsoft.
 
-4. El conector importa los elementos de reunión convertidos a los buzones de usuarios específicos mediante el valor de la propiedad *Email* y la asignación automática de usuarios, como se describe en el paso 3. Se crea una nueva subcarpeta en la carpeta Bandeja de entrada denominada **Reuniones de Zoom en los buzones** de usuario y los elementos de reunión se importan a esa carpeta. Para ello, el conector usa el valor de la propiedad *Email* . Cada elemento de reunión contiene esta propiedad, que se rellena con la dirección de correo electrónico de cada participante de la reunión.
+4. El conector importa los elementos de reunión convertidos a los buzones de usuarios específicos mediante el valor de la propiedad *Email* y la asignación automática de usuarios, como se describe en el paso 3. Se crea una nueva subcarpeta en la carpeta Bandeja de entrada denominada **Reuniones de Zoom en los buzones** de usuario y los elementos de reunión se importan a esa carpeta. Para ello, el conector usa el valor de la propiedad *Email*. Cada elemento de reunión contiene esta propiedad, que se rellena con la dirección de correo electrónico de cada participante de la reunión.
 
 ## <a name="before-you-begin"></a>Antes de empezar
 
@@ -83,7 +83,7 @@ Después de hacer clic en **Guardar & finalizar**, se muestra la página **Asign
 
 1. En la página **Asignar usuarios externos a usuarios de Microsoft 365** , habilite la asignación automática de usuarios.
 
-   Los elementos de Zoom Meetings incluyen una propiedad denominada *Correo electrónico* que contiene direcciones de correo electrónico para los usuarios de la organización. Si el conector puede asociar esta dirección a un usuario de Microsoft 365, los elementos se importan al buzón de ese usuario.
+   Los elementos de Zoom Meetings incluyen una propiedad denominada *Email* que contiene direcciones de correo electrónico para los usuarios de la organización. Si el conector puede asociar esta dirección a un usuario de Microsoft 365, los elementos se importan al buzón de ese usuario.
 
 2. Haga clic en **Siguiente**, revise la configuración y vaya a la página **Conectores de datos** para ver el progreso del proceso de importación del nuevo conector.
 

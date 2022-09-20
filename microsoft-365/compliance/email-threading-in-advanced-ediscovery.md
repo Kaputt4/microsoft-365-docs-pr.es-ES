@@ -1,9 +1,9 @@
 ---
-title: Subprocesos de correo electrónico en eDiscovery (Premium)
+title: subprocesos de Email en eDiscovery (Premium)
 f1.keywords:
 - NOCSH
-ms.author: v-tophillips
-author: v-tophillips
+ms.author: robmazz
+author: robmazz
 manager: laurawi
 ms.date: ''
 audience: Admin
@@ -16,20 +16,20 @@ search.appverid:
 - MET150
 description: Al realizar un análisis de eDiscovery (Premium), el subproceso de correo electrónico analiza una conversación de correo electrónico y separa cada mensaje en categorías diferentes.
 ms.custom: seo-marvel-mar2020
-ms.openlocfilehash: a17f746cb0c88fb68e4654d0dd7de528135d62ee
-ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
+ms.openlocfilehash: 86a3fbcccb569713b8517a8813689fd1bd678577
+ms.sourcegitcommit: 433f5b448a0149fcf462996bc5c9b45d17bd46c6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/06/2022
-ms.locfileid: "66629715"
+ms.lasthandoff: 09/20/2022
+ms.locfileid: "67821657"
 ---
-# <a name="email-threading-in-ediscovery-premium"></a>Subprocesos de correo electrónico en eDiscovery (Premium)
+# <a name="email-threading-in-ediscovery-premium"></a>subprocesos de Email en eDiscovery (Premium)
 
-Considere la posibilidad de una conversación de correo electrónico que ha estado ocurriendo durante un tiempo. En la mayoría de los casos, el último mensaje del subproceso de correo electrónico incluirá el contenido de todos los mensajes anteriores. Por lo tanto, revisar el último mensaje proporcionará un contexto completo de la conversación que se produjo en el subproceso. El subproceso de correo electrónico identifica estos mensajes para que los revisores puedan revisar una fracción de los documentos recopilados sin perder ningún contexto.
+Considere la posibilidad de una conversación de correo electrónico que ha estado ocurriendo durante un tiempo. En la mayoría de los casos, el último mensaje del subproceso de correo electrónico incluirá el contenido de todos los mensajes anteriores. Por lo tanto, revisar el último mensaje proporcionará un contexto completo de la conversación que se produjo en el subproceso. Email subproceso identifica dichos mensajes para que los revisores puedan revisar una fracción de los documentos recopilados sin perder ningún contexto.
 
 ## <a name="what-does-email-threading-do"></a>¿Qué hace el subproceso de correo electrónico?
 
-El subproceso de correo electrónico analiza cada subproceso de correo electrónico y lo deconstruye en mensajes individuales. Cada subproceso de correo electrónico es una cadena de mensajes individuales. Microsoft Purview eDiscovery (Premium) analiza todos los mensajes de correo electrónico del conjunto de revisión para determinar si un mensaje de correo electrónico tiene contenido único o si la cadena (mensajes primarios) está totalmente contenida en el mensaje final en el subproceso de correo electrónico. Los mensajes de correo electrónico se dividen en cuatro valores inclusivos:
+Email subproceso analiza cada subproceso de correo electrónico y lo deconstruye en mensajes individuales. Cada subproceso de correo electrónico es una cadena de mensajes individuales. Microsoft Purview eDiscovery (Premium) analiza todos los mensajes de correo electrónico del conjunto de revisión para determinar si un mensaje de correo electrónico tiene contenido único o si la cadena (mensajes primarios) está totalmente contenida en el mensaje final en el subproceso de correo electrónico. Email mensajes se dividen en cuatro valores inclusivos:
 
 - **Inclusivo**: un correo electrónico *inclusivo* es el mensaje de correo electrónico final en un subproceso de correo electrónico y contiene todo el contenido anterior de ese subproceso de correo electrónico.
 

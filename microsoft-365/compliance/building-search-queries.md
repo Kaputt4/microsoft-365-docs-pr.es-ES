@@ -2,8 +2,8 @@
 title: Compilación de consultas de búsqueda en eDiscovery (Premium)
 f1.keywords:
 - NOCSH
-ms.author: v-tophillips
-author: v-tophillips
+ms.author: robmazz
+author: robmazz
 manager: laurawi
 ms.date: ''
 audience: Admin
@@ -16,12 +16,12 @@ search.appverid:
 - MET150
 ms.custom: seo-marvel-mar2020
 description: Use palabras clave y condiciones para restringir el ámbito de la búsqueda al buscar datos mediante eDiscovery (Premium) en Microsoft 365.
-ms.openlocfilehash: 05345580e2499d9a5910367ef39ddf66296c70e6
-ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
+ms.openlocfilehash: b0e570037a2626fc5582a1bbff9acceab1860650
+ms.sourcegitcommit: 433f5b448a0149fcf462996bc5c9b45d17bd46c6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/06/2022
-ms.locfileid: "66625619"
+ms.lasthandoff: 09/20/2022
+ms.locfileid: "67826959"
 ---
 # <a name="build-search-queries-for-collections-in-ediscovery-premium"></a>Compilación de consultas de búsqueda para colecciones en eDiscovery (Premium)
 

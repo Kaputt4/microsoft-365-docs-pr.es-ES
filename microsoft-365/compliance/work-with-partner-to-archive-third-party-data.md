@@ -2,8 +2,8 @@
 title: Trabajar con un socio para archivar datos de terceros
 f1.keywords:
 - NOCSH
-ms.author: v-tophillips
-author: v-tophillips
+ms.author: robmazz
+author: robmazz
 manager: laurawi
 ms.date: ''
 audience: Admin
@@ -17,12 +17,12 @@ ms.custom:
 - seo-marvel-apr2020
 - admindeeplinkEXCHANGE
 description: Obtenga información sobre cómo configurar un conector personalizado para importar datos de terceros desde orígenes de datos como Salesforce Chatter, Yahoo Messenger o Yammer.
-ms.openlocfilehash: 7b66c16da344a0254ecbc704311c6de5fe92c232
-ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
+ms.openlocfilehash: 5f2f58e3b67e10d76a3c0a1066037f54f787eefb
+ms.sourcegitcommit: 433f5b448a0149fcf462996bc5c9b45d17bd46c6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/06/2022
-ms.locfileid: "66637825"
+ms.lasthandoff: 09/20/2022
+ms.locfileid: "67826585"
 ---
 # <a name="work-with-a-partner-to-archive-third-party-data"></a>Trabajar con un socio para archivar datos de terceros
 
@@ -243,7 +243,7 @@ En las secciones siguientes se enumeran los asociados de Microsoft (y los oríge
 
 [Smarsh](https://www.smarsh.com) admite los siguientes orígenes de datos de terceros:
 
-- OBJETIVO
+- Objetivo
 
 - American Idol
 
@@ -331,7 +331,7 @@ En las secciones siguientes se enumeran los asociados de Microsoft (y los oríge
 
 - Instant Bloomberg
 
-- IRC
+- Irc
 
 - Jive
 
@@ -359,7 +359,7 @@ En las secciones siguientes se enumeran los asociados de Microsoft (y los oríge
 
 - Mobile Guard
 
-- MSN
+- Msn
 
 - My Space
 
@@ -387,7 +387,7 @@ En las secciones siguientes se enumeran los asociados de Microsoft (y los oríge
 
 - Tor
 
-- TTT
+- Ttt
 
 - Twitter
 
@@ -563,13 +563,13 @@ Para revocar el consentimiento para un conector de datos de terceros, puede elim
 
   |Propiedad del mensaje|¿Es obligatoria?|Descripción|Valor de ejemplo|
   |---|---|---|---|
-  |**FROM**|Sí|El usuario que originalmente ha creado o enviado el elemento en el origen de datos de terceros. El conector de asociado intenta asignar el identificador de usuario del elemento de origen (por ejemplo, un identificador de Twitter) a una cuenta de usuario para todos los participantes (usuarios en los campos FROM y TO). Una copia del mensaje se importará al buzón de cada participante. Si ninguno de los participantes del elemento se puede asignar a una cuenta de usuario, el elemento se importará al buzón de archivado de terceros en Microsoft 365.  <br/> <br/> El participante identificado como el remitente del elemento debe tener un buzón activo en la organización a la que se va a importar el elemento. Si el remitente no tiene un buzón activo, se devolverá el siguiente error:<br/><br/>  `One or more messages in the Request failed to be delivered to either From or Sender email address. You will need to resend your entire Request. Error: The request failed. The remote server returned an error: (401) Unauthorized.`|`bob@contoso.com`|
-  |**TO**|Sí|El usuario que ha recibido un elemento, si es aplicable a un elemento del origen de datos.|`bob@contoso.com`|
+  |**FROM**|Yes|El usuario que originalmente ha creado o enviado el elemento en el origen de datos de terceros. El conector de asociado intenta asignar el identificador de usuario del elemento de origen (por ejemplo, un identificador de Twitter) a una cuenta de usuario para todos los participantes (usuarios en los campos FROM y TO). Una copia del mensaje se importará al buzón de cada participante. Si ninguno de los participantes del elemento se puede asignar a una cuenta de usuario, el elemento se importará al buzón de archivado de terceros en Microsoft 365.  <br/> <br/> El participante identificado como el remitente del elemento debe tener un buzón activo en la organización a la que se va a importar el elemento. Si el remitente no tiene un buzón activo, se devolverá el siguiente error:<br/><br/>  `One or more messages in the Request failed to be delivered to either From or Sender email address. You will need to resend your entire Request. Error: The request failed. The remote server returned an error: (401) Unauthorized.`|`bob@contoso.com`|
+  |**TO**|Yes|El usuario que ha recibido un elemento, si es aplicable a un elemento del origen de datos.|`bob@contoso.com`|
   |**ASUNTO**|No|El asunto del elemento de origen.|`"Mega deals with Contoso coming your way! #ContosoHolidayDeals"`|
-  |**FECHA**|Sí|Fecha en que se creó o se publicó originalmente el elemento en el origen de datos del cliente. Por ejemplo, esa fecha en la que se tuiteó un mensaje de Twitter.|`01 NOV 2015`|
+  |**FECHA**|Yes|Fecha en que se creó o se publicó originalmente el elemento en el origen de datos del cliente. Por ejemplo, esa fecha en la que se tuiteó un mensaje de Twitter.|`01 NOV 2015`|
   |**CUERPO**|No|El contenido del mensaje o la publicación. En el caso de algunos orígenes de datos, el contenido de esta propiedad podría ser el mismo que el contenido de la propiedad **SUBJECT**. Durante el proceso de importación, el conector del asociado intenta mantener la fidelidad completa del origen de contenido lo más posible. Si es posible, los archivos, los gráficos u otro contenido del cuerpo del elemento de origen se incluyen en esta propiedad. Si no es así, el contenido del elemento de origen se incluye en la propiedad **ATTACHMENT**. El contenido de esta propiedad depende del conector del asociado y de la funcionalidad de la plataforma de origen.|`Author: bob@contoso.com` <br/>  `Date: 10 DEC 2014` <br/>  `Tweet: "Mega deals with Contoso coming your way! #ContosoHolidayDeals"` <br/>  `Date: 01 NOV 2015`|
   |**ARCHIVO ADJUNTO**|No|Si un elemento del origen de datos (como un tweet en Twitter o una conversación de mensajería instantánea) tiene un archivo adjunto o incluye imágenes, la conexión del asociado intentará primero incluir datos adjuntos en la propiedad **BODY** . Si no es posible, se agrega a la propiedad ** ATTACHMENT **. Otros ejemplos de datos adjuntos son los "Me gusta" de Facebook, los metadatos del origen del contenido y las respuestas a un mensaje o una publicación.|`image.gif`|
-  |**MESSAGECLASS**|Sí|Se trata de una propiedad de varios valores, que se crea y rellena mediante el conector del asociado. El formato de esta propiedad es  `IPM.NOTE.Source.Event`. (Esta propiedad debe comenzar por  `IPM.NOTE`. Este formato es similar al de la clase de  `IPM.NOTE.X` mensaje). Esta propiedad incluye la siguiente información:  <br/><br/>`Source`: indica el origen de datos de terceros; por ejemplo, Twitter, Facebook o BlackBerry.  <br/> <br/>  `Event`: indica el tipo de actividad que se realizó en el origen de datos de terceros que produjo los elementos; por ejemplo, un tweet en Twitter o una publicación en Facebook. Los eventos son específicos del origen de datos.  <br/> <br/>  Un objetivo de esta propiedad es filtrar elementos específicos en función del origen de datos en el que un elemento se originó o basó, o bien en función del tipo de evento. Por ejemplo, en una búsqueda de exhibición de documentos electrónicos podría crear una consulta de búsqueda para encontrar todos los tweets publicados por un usuario concreto.|`IPM.NOTE.Twitter.Tweet`|
+  |**MESSAGECLASS**|Yes|Se trata de una propiedad de varios valores, que se crea y rellena mediante el conector del asociado. El formato de esta propiedad es  `IPM.NOTE.Source.Event`. (Esta propiedad debe comenzar por  `IPM.NOTE`. Este formato es similar al de la clase de  `IPM.NOTE.X` mensaje). Esta propiedad incluye la siguiente información:  <br/><br/>`Source`: indica el origen de datos de terceros; por ejemplo, Twitter, Facebook o BlackBerry.  <br/> <br/>  `Event`: indica el tipo de actividad que se realizó en el origen de datos de terceros que produjo los elementos; por ejemplo, un tweet en Twitter o una publicación en Facebook. Los eventos son específicos del origen de datos.  <br/> <br/>  Un objetivo de esta propiedad es filtrar elementos específicos en función del origen de datos en el que un elemento se originó o basó, o bien en función del tipo de evento. Por ejemplo, en una búsqueda de exhibición de documentos electrónicos podría crear una consulta de búsqueda para encontrar todos los tweets publicados por un usuario concreto.|`IPM.NOTE.Twitter.Tweet`|
 
 - Cuando los elementos se importan correctamente en buzones de Microsoft 365, se devuelve un identificador único al autor de la llamada como parte de la respuesta HTTP. Este identificador, denominado  `x-IngestionCorrelationID`, se puede usar para la solución de problemas posteriores por parte de los asociados para realizar un seguimiento completo de los elementos. Se recomienda que los asociados capturen esta información y la registren según corresponda en su extremo. A continuación se incluye un ejemplo de una respuesta HTTP que muestra este identificador:
 

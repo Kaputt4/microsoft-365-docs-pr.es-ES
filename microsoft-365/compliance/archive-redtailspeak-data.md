@@ -2,8 +2,8 @@
 title: Configuración de un conector para archivar datos de Red tail Speak en Microsoft 365
 f1.keywords:
 - NOCSH
-ms.author: v-tophillips
-author: v-tophillips
+ms.author: robmazz
+author: robmazz
 manager: laurawi
 ms.date: ''
 audience: Admin
@@ -12,12 +12,12 @@ ms.service: O365-seccomp
 ms.localizationpriority: medium
 ms.collection: M365-security-compliance
 description: Los administradores pueden configurar un conector para importar y archivar datos de Red tail Speak desde Veritas a Microsoft 365. Este conector le permite archivar datos de orígenes de datos de terceros en Microsoft 365. Después de archivar estos datos, puede usar características de cumplimiento como la suspensión legal, la búsqueda de contenido y las directivas de retención para administrar datos de terceros.
-ms.openlocfilehash: 28fb3de980fd9520afb69c9ec74fb9392f14a0d6
-ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
+ms.openlocfilehash: 3036bc5762ee56a9b25f41ba25c50090cd66f1a4
+ms.sourcegitcommit: 433f5b448a0149fcf462996bc5c9b45d17bd46c6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/06/2022
-ms.locfileid: "66639234"
+ms.lasthandoff: 09/20/2022
+ms.locfileid: "67826849"
 ---
 # <a name="set-up-a-connector-to-archive-redtail-speak-data"></a>Configuración de un conector para archivar datos de Redtail Speak
 
@@ -37,7 +37,7 @@ En la información general siguiente se explica el proceso de uso de un conector
 
 3. El conector Redtail Speak que se crea en el portal de cumplimiento se conecta al sitio Veritas Merge1 todos los días y transfiere los mensajes a una ubicación segura de Azure Storage en la nube de Microsoft.
 
-4. El conector importa los elementos de Redtail Speak convertidos a los buzones de usuarios específicos mediante el valor de la propiedad *Email* de la asignación automática de usuarios, tal como se describe en [el paso 3](#step-3-map-users-and-complete-the-connector-setup). Se crea una subcarpeta en la carpeta Bandeja de entrada denominada **Redtail Speak** en los buzones de usuario y los elementos se importan a esa carpeta. El conector determina a qué buzón se van a importar elementos mediante el valor de la propiedad *Email* . Cada elemento Redtail Speak contiene esta propiedad, que se rellena con la dirección de correo electrónico de cada participante del elemento.
+4. El conector importa los elementos de Redtail Speak convertidos a los buzones de usuarios específicos mediante el valor de la propiedad *Email* de la asignación automática de usuarios, tal como se describe en el [paso 3](#step-3-map-users-and-complete-the-connector-setup). Se crea una subcarpeta en la carpeta Bandeja de entrada denominada **Redtail Speak** en los buzones de usuario y los elementos se importan a esa carpeta. El conector determina a qué buzón se van a importar elementos mediante el valor de la propiedad *Email*. Cada elemento Redtail Speak contiene esta propiedad, que se rellena con la dirección de correo electrónico de cada participante del elemento.
 
 ## <a name="before-you-begin"></a>Antes de empezar
 

@@ -2,8 +2,8 @@
 title: Descifrado en eDiscovery
 f1.keywords:
 - NOCSH
-ms.author: v-tophillips
-author: v-tophillips
+ms.author: robmazz
+author: robmazz
 manager: laurawi
 audience: Admin
 ms.topic: article
@@ -16,12 +16,12 @@ search.appverid:
 ms.custom:
 - seo-marvel-apr2020
 description: Obtenga información sobre cómo las herramientas de exhibición de documentos electrónicos de Microsoft 365 controlan documentos cifrados adjuntos a mensajes de correo electrónico y almacenados en SharePoint Online y OneDrive para la Empresa.
-ms.openlocfilehash: bec0b4c600f3bb7b08d10f2b32b00edb627a1165
-ms.sourcegitcommit: a209c9f86a7b4340a426c4cfed2d36a388c71124
+ms.openlocfilehash: d09b37fe87a32eca79a8b0573410d2fb1ddfa1b5
+ms.sourcegitcommit: 433f5b448a0149fcf462996bc5c9b45d17bd46c6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/15/2022
-ms.locfileid: "66798091"
+ms.lasthandoff: 09/20/2022
+ms.locfileid: "67821767"
 ---
 # <a name="decryption-in-microsoft-365-ediscovery-tools"></a>Descifrado en herramientas de exhibición de documentos electrónicos de Microsoft 365
 

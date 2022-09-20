@@ -2,8 +2,8 @@
 title: Introducción a las colecciones en eDiscovery (Premium)
 f1.keywords:
 - NOCSH
-ms.author: v-tophillips
-author: v-tophillips
+ms.author: robmazz
+author: robmazz
 ms.reviewer: nickrob
 manager: laurawi
 ms.date: 05/31/2022
@@ -16,12 +16,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Use colecciones en eDiscovery (Premium) para buscar y recopilar contenido relativo a su caso o investigación.
-ms.openlocfilehash: 71ee588a4199db74b19777acbaed2db3e9628eaf
-ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
+ms.openlocfilehash: a2dc850293f75217e75323196afa5af2b999e15a
+ms.sourcegitcommit: 433f5b448a0149fcf462996bc5c9b45d17bd46c6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/06/2022
-ms.locfileid: "66626807"
+ms.lasthandoff: 09/20/2022
+ms.locfileid: "67826212"
 ---
 # <a name="learn-about-collections-in-ediscovery-premium"></a>Más información sobre las colecciones en eDiscovery (Premium)
 

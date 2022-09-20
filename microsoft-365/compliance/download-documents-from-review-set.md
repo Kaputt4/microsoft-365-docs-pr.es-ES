@@ -2,8 +2,8 @@
 title: Descargar documentos desde un conjunto de revisión
 f1.keywords:
 - NOCSH
-ms.author: v-tophillips
-author: v-tophillips
+ms.author: robmazz
+author: robmazz
 manager: laurawi
 ms.date: ''
 audience: Admin
@@ -17,12 +17,12 @@ search.appverid:
 ms.assetid: ''
 description: Obtenga información sobre cómo seleccionar y descargar contenido de un conjunto de revisión en eDiscovery (Premium) para presentaciones o revisiones externas.
 ms.custom: seo-marvel-mar2020
-ms.openlocfilehash: 06fd66474238251302e56af756cab5ad9c5d576d
-ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
+ms.openlocfilehash: 58e57b9b39420967229f348386b367664dec128b
+ms.sourcegitcommit: 433f5b448a0149fcf462996bc5c9b45d17bd46c6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/06/2022
-ms.locfileid: "66627379"
+ms.lasthandoff: 09/20/2022
+ms.locfileid: "67826124"
 ---
 # <a name="download-selected-documents-from-a-review-set"></a>Descarga de documentos seleccionados de un conjunto de revisión
 

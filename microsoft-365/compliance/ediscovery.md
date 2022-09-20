@@ -2,8 +2,8 @@
 title: Soluciones de exhibición de documentos electrónicos de Microsoft Purview
 f1.keywords:
 - NOCSH
-ms.author: v-tophillips
-author: v-tophillips
+ms.author: robmazz
+author: robmazz
 manager: laurawi
 ms.date: 08/25/2022
 audience: Admin
@@ -20,12 +20,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Microsoft Purview ofrece tres herramientas de exhibición de documentos electrónicos que puede usar para buscar y exportar contenido que se encuentra en diferentes ubicaciones, como buzones de Exchange, sitios de SharePoint y OneDrive para la Empresa, Grupos de Microsoft 365, Microsoft Teams y conversaciones Skype Empresarial. eDiscovery (Estándar) y eDiscovery (Premium) proporcionan muchas características adicionales para ayudarle a administrar las investigaciones.
-ms.openlocfilehash: a0c30c95d92a6bd0cf1e3fd81c866fde8947ba31
-ms.sourcegitcommit: 078149c9645ce220911ccd6ce54f984a4c92ce53
+ms.openlocfilehash: 678500c2b44fbd3153e6fecb67073814cc2143a1
+ms.sourcegitcommit: 433f5b448a0149fcf462996bc5c9b45d17bd46c6
 ms.translationtype: MT
 ms.contentlocale: es-ES
 ms.lasthandoff: 09/20/2022
-ms.locfileid: "67812016"
+ms.locfileid: "67821723"
 ---
 # <a name="microsoft-purview-ediscovery-solutions"></a>Soluciones de exhibición de documentos electrónicos de Microsoft Purview
 

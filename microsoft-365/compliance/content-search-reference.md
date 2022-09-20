@@ -2,8 +2,8 @@
 title: Referencia de características para la búsqueda de contenido
 f1.keywords:
 - NOCSH
-ms.author: v-tophillips
-author: v-tophillips
+ms.author: robmazz
+author: robmazz
 manager: laurawi
 audience: Admin
 ms.topic: article
@@ -21,12 +21,12 @@ ms.custom:
 - seo-marvel-apr2020
 - admindeeplinkMAC
 description: Este artículo contiene información de referencia sobre la herramienta de exhibición de documentos electrónicos de búsqueda de contenido en el portal de cumplimiento de Microsoft Purview para ayudarle a obtener información sobre la búsqueda de contenido.
-ms.openlocfilehash: 7173e57eaed4f4fcaec9fe240385004419918f8e
-ms.sourcegitcommit: 702fba4b6e6210bb7933cdbff0ad72426fcb9ef2
+ms.openlocfilehash: 2f27903390691f3a503686c9f653f9f732590cf2
+ms.sourcegitcommit: 433f5b448a0149fcf462996bc5c9b45d17bd46c6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/13/2022
-ms.locfileid: "67335658"
+ms.lasthandoff: 09/20/2022
+ms.locfileid: "67826190"
 ---
 # <a name="feature-reference-for-content-search"></a>Referencia de características para la búsqueda de contenido
 

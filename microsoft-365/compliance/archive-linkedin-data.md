@@ -2,8 +2,8 @@
 title: Configurar un conector para archivar datos de LinkedIn
 f1.keywords:
 - NOCSH
-ms.author: v-tophillips
-author: v-tophillips
+ms.author: robmazz
+author: robmazz
 manager: laurawi
 ms.date: 04/06/2022
 audience: Admin
@@ -15,12 +15,12 @@ search.appverid:
 ms.collection: M365-security-compliance
 ms.custom: seo-marvel-apr2020
 description: Obtenga información sobre cómo los administradores pueden configurar & usar un conector nativo para importar datos de una página de empresa de LinkedIn a Microsoft 365.
-ms.openlocfilehash: 204d1da0a89ea0eb5afcb6b14ca2a5247093c8f5
-ms.sourcegitcommit: 651610ca73bfd1d008d97311b59782790df664fb
+ms.openlocfilehash: 890ae9e618728cded8035dc69afe23b95a33d526
+ms.sourcegitcommit: 433f5b448a0149fcf462996bc5c9b45d17bd46c6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/07/2022
-ms.locfileid: "67614558"
+ms.lasthandoff: 09/20/2022
+ms.locfileid: "67822273"
 ---
 # <a name="set-up-a-connector-to-archive-linkedin-data"></a>Configurar un conector para archivar datos de LinkedIn
 

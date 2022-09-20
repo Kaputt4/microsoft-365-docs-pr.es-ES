@@ -2,8 +2,8 @@
 title: Etiquetado y formación de relevancia en eDiscovery (Premium)
 f1.keywords:
 - NOCSH
-ms.author: v-tophillips
-author: v-tophillips
+ms.author: robmazz
+author: robmazz
 manager: laurawi
 titleSuffix: Office 365
 ms.date: ''
@@ -17,12 +17,12 @@ search.appverid:
 ms.assetid: 8576cc86-d51b-4285-b54b-67184714cc62
 ROBOTS: NOINDEX, NOFOLLOW
 description: Obtenga información sobre los pasos para etiquetar y, a continuación, trabajar con un ejemplo de entrenamiento de 40 archivos durante la fase de entrenamiento de relevancia de eDiscovery (Premium).
-ms.openlocfilehash: 8f3d92564d908344155b55b5f84dc6357324a388
-ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
+ms.openlocfilehash: b190b1e78622f93b82e5ec9db224b3f618c862d2
+ms.sourcegitcommit: 433f5b448a0149fcf462996bc5c9b45d17bd46c6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/06/2022
-ms.locfileid: "66627269"
+ms.lasthandoff: 09/20/2022
+ms.locfileid: "67821041"
 ---
 # <a name="tagging-and-relevance-training-in-ediscovery-premium"></a>Etiquetado y formación de relevancia en eDiscovery (Premium)
   
@@ -44,10 +44,10 @@ Una vez completada la evaluación en eDiscovery (Premium) y entra en la fase de 
 
 2. Determine la relevancia del archivo para el problema del caso y etiquete el archivo mediante los botones de icono de opción Etiquetado o los métodos abreviados de teclado, como se muestra en la tabla siguiente:
 
-   |**Opción de etiquetado**|**Description**|**Método abreviado de teclado**|**Método abreviado de teclado de etiquetado masivo (para varios problemas)**|
+   |**Opción de etiquetado**|**Descripción**|**Método abreviado de teclado**|**Método abreviado de teclado de etiquetado masivo (para varios problemas)**|
    |-----|-----|-----|-----|
    |R  <br/> |Relevante  <br/> |Z  <br/> |`Shift + Z`  <br/> |
-   |NR  <br/> |No es relevante  <br/> |X  <br/> |`Shift + X`  <br/> |
+   |Nr  <br/> |No es relevante  <br/> |X  <br/> |`Shift + X`  <br/> |
    |Saltar  <br/> |Saltar  <br/> |C  <br/> |`Shift + A`  <br/> |
    |||||
 

@@ -2,8 +2,8 @@
 title: Resultados de búsqueda de eDiscovery estimados y reales
 f1.keywords:
 - NOCSH
-ms.author: v-tophillips
-author: v-tophillips
+ms.author: robmazz
+author: robmazz
 manager: laurawi
 ms.date: ''
 audience: Admin
@@ -19,12 +19,12 @@ search.appverid:
 - MET150
 ms.assetid: 8f20ca4f-a908-46ec-99e6-9890d269ecf2
 description: Comprenda por qué los resultados de búsqueda estimados y reales pueden variar en las búsquedas que se ejecutan con las herramientas de exhibición de documentos electrónicos en Office 365.
-ms.openlocfilehash: db7026672af0e3abfcee524757a63c9747ff06e7
-ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
+ms.openlocfilehash: 45f39fd45bf50101bec2c87a999fc9cdc7bb8f44
+ms.sourcegitcommit: 433f5b448a0149fcf462996bc5c9b45d17bd46c6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/06/2022
-ms.locfileid: "66638574"
+ms.lasthandoff: 09/20/2022
+ms.locfileid: "67821811"
 ---
 # <a name="differences-between-estimated-and-actual-ediscovery-search-results"></a>Diferencias entre los resultados de búsqueda de eDiscovery estimados y reales
 

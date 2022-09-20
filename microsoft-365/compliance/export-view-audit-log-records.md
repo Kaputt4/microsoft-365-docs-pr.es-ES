@@ -2,8 +2,8 @@
 title: Exportar, configurar y ver registros de registro de auditoría
 f1.keywords:
 - NOCSH
-ms.author: v-tophillips
-author: v-tophillips
+ms.author: robmazz
+author: robmazz
 manager: laurawi
 audience: Admin
 ms.topic: how-to
@@ -18,12 +18,12 @@ search.appverid:
 ms.assetid: 0d4d0f35-390b-4518-800e-0c7ec95e946c
 ms.custom: seo-marvel-apr2020
 description: En este artículo, aprenderá a exportar, configurar y ver registros de auditoría de Microsoft 365.
-ms.openlocfilehash: b528dcd669749198490b028db4bbd18fe313f1ee
-ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
+ms.openlocfilehash: ea8161b7b73b53f49bbd27683798dc6c4720cf1d
+ms.sourcegitcommit: 433f5b448a0149fcf462996bc5c9b45d17bd46c6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/06/2022
-ms.locfileid: "66640102"
+ms.lasthandoff: 09/20/2022
+ms.locfileid: "67826476"
 ---
 # <a name="export-configure-and-view-audit-log-records"></a>Exportar, configurar y ver registros de registro de auditoría
 

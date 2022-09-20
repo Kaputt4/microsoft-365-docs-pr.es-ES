@@ -2,8 +2,8 @@
 title: Uso del registro de administración para conectores de datos para ver el estado de la importación de datos
 f1.keywords:
 - NOCSH
-ms.author: v-tophillips
-author: v-tophillips
+ms.author: robmazz
+author: robmazz
 manager: laurawi
 ms.date: ''
 audience: Admin
@@ -18,19 +18,19 @@ search.appverid:
 ms.custom:
 - seo-marvel-apr2020
 description: Obtenga información sobre cómo acceder y ver los registros de administración de los conectores de datos para obtener información de estado de los datos importados por el conector.
-ms.openlocfilehash: de8b1de56b5e44ad199db942c3d385dcc05e1160
-ms.sourcegitcommit: 7dc7e9fd76adf848f941919f86ca25eecc704015
+ms.openlocfilehash: 6caaebab80878f5a209ddeb57f59527f45ef0f93
+ms.sourcegitcommit: 433f5b448a0149fcf462996bc5c9b45d17bd46c6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/11/2022
-ms.locfileid: "65320974"
+ms.lasthandoff: 09/20/2022
+ms.locfileid: "67826783"
 ---
-# <a name="view-admin-logs-for-data-connectors"></a>Visualización de registros de administración para conectores de datos
+# <a name="view-admin-logs-for-data-connectors"></a>Visualización de registros de administración de conectores de datos
 
-Después de crear un conector de datos para importar datos que no sean de Microsoft a Microsoft Purview, puede supervisar el estado de importación diario del conector descargando los registros de administración del conector de datos.
+Después de crear un conector de datos para importar datos que no son de Microsoft a Microsoft Purview, puede supervisar el estado de importación diario del conector descargando los registros de administración del conector de datos.
 
 > [!IMPORTANT]
-> El registro de auditoría debe estar habilitado para que su organización vea el registro de administración. Está habilitado de forma predeterminada para Microsoft 365 y Office 365 organizaciones, pero se recomienda comprobar el estado de auditoría de la organización. Para obtener instrucciones para comprobar el estado de la auditoría, haga clic aquí. Para obtener instrucciones para activar la auditoría manualmente, haga clic aquí. Una vez activada la auditoría, los eventos de importación pueden tardar hasta 48 horas en registrarse. Se recomienda encarecidamente habilitar la auditoría antes de configurar un conector. Una vez configurado un conector, podría tardar hasta 72 horas en generar registros que contengan el resumen del estado de importación.
+> El registro de auditoría debe estar habilitado para que su organización vea el registro de administración. Está habilitado de forma predeterminada para Las organizaciones de Microsoft 365 y Office 365, pero se recomienda comprobar el estado de auditoría de la organización. Para obtener instrucciones para comprobar el estado de la auditoría, haga clic aquí. Para obtener instrucciones para activar la auditoría manualmente, haga clic aquí. Una vez activada la auditoría, los eventos de importación pueden tardar hasta 48 horas en registrarse. Se recomienda encarecidamente habilitar la auditoría antes de configurar un conector. Una vez configurado un conector, podría tardar hasta 72 horas en generar registros que contengan el resumen del estado de importación.
 
 ## <a name="before-you-view-admin-logs"></a>Antes de ver los registros de administrador
 
@@ -40,7 +40,7 @@ Después de crear un conector de datos para importar datos que no sean de Micros
 
 - Una vez creado un conector de datos, puede tardar hasta 72 horas en generar registros de administración que contengan el resumen de estado de importación.
 
-- Los registros de administración están disponibles durante los siete días anteriores.
+- Administración registros están disponibles durante los siete días anteriores.
 
 ## <a name="download-admin-logs-for-data-connectors"></a>Descarga de registros de administración para conectores de datos
 
@@ -48,7 +48,7 @@ Después de crear un conector de datos para importar datos que no sean de Micros
 
 2. Haga clic en la pestaña **Mis conectores** y, a continuación, seleccione un conector de datos para mostrar la página flotante, que contiene información y propiedades sobre el conector de datos.
 
-3. En **Registros de administración**, haga clic en el vínculo **Descargar registro** para abrir un registro de administrador.
+3. En **Administración registros**, haga clic en el vínculo **Descargar registro** para abrir un registro de administrador.
 
    ![Los registros de administradores se muestran en la página de control flotante del conector de datos.](..\media\Data-connector-admin-logs1.png)
 

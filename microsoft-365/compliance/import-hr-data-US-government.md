@@ -2,8 +2,8 @@
 title: Configuración de un conector para importar datos de RR. HH. a la nube del Gobierno de EE. UU.
 f1.keywords:
 - NOCSH
-ms.author: v-tophillips
-author: v-tophillips
+ms.author: robmazz
+author: robmazz
 manager: laurawi
 ms.date: ''
 audience: Admin
@@ -16,12 +16,12 @@ ms.collection: M365-security-compliance
 ms.custom: admindeeplinkCOMPLIANCE
 ROBOTS: NOINDEX, NOFOLLOW
 description: Los administradores de la nube del Gobierno de EE. UU. pueden configurar un conector de datos para importar datos de empleados desde el sistema de recursos humanos (RR. HH.) de su organización a Microsoft 365. Esto le permite usar datos de RR. HH. en directivas de administración de riesgos internos para ayudarle a detectar la actividad de usuarios específicos que pueden suponer una amenaza interna para su organización.
-ms.openlocfilehash: df9932af0588e95ea35fef24c8b9508676433d22
-ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
+ms.openlocfilehash: f8a8c302b226951631ab2bdd70a2f7cadf2e4657
+ms.sourcegitcommit: 433f5b448a0149fcf462996bc5c9b45d17bd46c6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/06/2022
-ms.locfileid: "66634321"
+ms.lasthandoff: 09/20/2022
+ms.locfileid: "67826454"
 ---
 # <a name="set-up-a-connector-to-import-hr-data-in-us-government"></a>Configuración de un conector para importar datos de RR. HH. en el Gobierno de EE. UU.
 

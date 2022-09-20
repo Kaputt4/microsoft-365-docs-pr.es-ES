@@ -2,8 +2,8 @@
 title: Configurar un conector para importar datos de RR.HH.
 f1.keywords:
 - NOCSH
-ms.author: v-tophillips
-author: v-tophillips
+ms.author: robmazz
+author: robmazz
 manager: laurawi
 ms.date: ''
 audience: Admin
@@ -15,12 +15,12 @@ search.appverid:
 ms.collection: M365-security-compliance
 ms.custom: admindeeplinkCOMPLIANCE
 description: Los administradores pueden configurar un conector de datos para importar datos de empleados desde el sistema de recursos humanos (RR. HH.) de su organización a Microsoft 365. Esto le permite usar datos de RR. HH. en directivas de administración de riesgos internos para ayudarle a detectar la actividad de usuarios específicos que pueden suponer una amenaza interna para su organización.
-ms.openlocfilehash: 6dd788b1e10648a1102294eb641188416e455c20
-ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
+ms.openlocfilehash: 8ba4b7df9125a9eb85806ebe7052d3556c6203d8
+ms.sourcegitcommit: 433f5b448a0149fcf462996bc5c9b45d17bd46c6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/06/2022
-ms.locfileid: "66629627"
+ms.lasthandoff: 09/20/2022
+ms.locfileid: "67820313"
 ---
 # <a name="set-up-a-connector-to-import-hr-data"></a>Configurar un conector para importar datos de RR.HH.
 
@@ -63,13 +63,13 @@ El tipo de datos de RR. HH. que se van a importar depende de la directiva de adm
 |:------------------------------|:--------------------------------|
 | Robo de datos por parte de los usuarios que abandonan la organización | Renuncias de empleados|
 | Filtraciones de datos generales                             | No aplicable|
-| Filtraciones de datos por parte de usuarios prioritarios                   | No es aplicable |
+| Filtraciones de datos por parte de usuarios prioritarios                   | No aplicable |
 | Filtraciones de datos por parte de usuarios inconformes                | Cambios en el nivel de trabajo, revisiones de rendimiento, planes de mejora del rendimiento|
-| Infracciones generales de la directiva de seguridad             | No es aplicable |
+| Infracciones generales de la directiva de seguridad             | No aplicable |
 | Infracciones de la directiva de seguridad por parte de los usuarios que abandonan la organización  | Renuncias de empleados|
-| Infracciones de la directiva de seguridad por parte de los usuarios prioritarios   | No es aplicable|
+| Infracciones de la directiva de seguridad por parte de los usuarios prioritarios   | No aplicable|
 | Infracciones de la directiva de seguridad por parte de usuarios inconformes| Cambios en el nivel de trabajo, revisiones de rendimiento, planes de mejora del rendimiento |
-| Lenguaje ofensivo en el correo electrónico                    | No es aplicable |
+| Lenguaje ofensivo en el correo electrónico                    | No aplicable |
 | Política sanitaria| Perfil de empleado |
 |||
 
@@ -240,7 +240,7 @@ Performance improvement plan,pillarp@contoso.com,,,2019-04-23T15:18:02.4675041+0
 
 ### <a name="adding-the-hrscenario-column-to-a-csv-file-that-contains-a-single-data-type"></a>Adición de la columna HRScenario a un archivo CSV que contiene un único tipo de datos
 
-En función de los sistemas de RR. HH. de la organización y de cómo exportará los datos de RR. HH. a un archivo CSV, es posible que tenga que crear varios archivos CSV que contengan un único tipo de datos de RR. HH. En este caso, todavía puede crear un único conector de RR. HH. para importar datos de diferentes archivos CSV. Para ello, solo tendrá que agregar una columna HRScenario al archivo CSV y especificar el tipo de datos de RR. HH. A continuación, puede ejecutar el script para cada archivo CSV, pero usar el mismo identificador de trabajo para el conector. Consulte [el paso 4](#step-4-run-the-sample-script-to-upload-your-hr-data).
+En función de los sistemas de RR. HH. de la organización y de cómo exportará los datos de RR. HH. a un archivo CSV, es posible que tenga que crear varios archivos CSV que contengan un único tipo de datos de RR. HH. En este caso, todavía puede crear un único conector de RR. HH. para importar datos de diferentes archivos CSV. Para ello, solo tendrá que agregar una columna HRScenario al archivo CSV y especificar el tipo de datos de RR. HH. A continuación, puede ejecutar el script para cada archivo CSV, pero usar el mismo identificador de trabajo para el conector. Vea el [Paso 4](#step-4-run-the-sample-script-to-upload-your-hr-data).
 
 ## <a name="step-2-create-an-app-in-azure-active-directory"></a>Paso 2: Creación de una aplicación en Azure Active Directory
 

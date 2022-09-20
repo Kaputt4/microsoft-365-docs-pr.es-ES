@@ -2,8 +2,8 @@
 title: Tipos de archivo admitidos en eDiscovery (Premium)
 f1.keywords:
 - NOCSH
-ms.author: v-tophillips
-author: v-tophillips
+ms.author: robmazz
+author: robmazz
 manager: laurawi
 ms.date: ''
 audience: Admin
@@ -16,12 +16,12 @@ search.appverid:
 - MET150
 description: Una lista de tipos de archivo admitidos en Microsoft 365 eDiscovery (Premium), incluidos los tipos de archivo de imagen compatibles con la funcionalidad OCR en eDiscovery (Premium).
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: faa367800653e320621336e98f9e8fc684b222ee
-ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
+ms.openlocfilehash: f3c96def7561bcbce2404dcff51aaf12c801ff85
+ms.sourcegitcommit: 433f5b448a0149fcf462996bc5c9b45d17bd46c6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/06/2022
-ms.locfileid: "66631037"
+ms.lasthandoff: 09/20/2022
+ms.locfileid: "67819895"
 ---
 # <a name="supported-file-types-in-ediscovery-premium"></a>Tipos de archivo admitidos en eDiscovery (Premium)
 
@@ -81,7 +81,7 @@ Microsoft Purview eDiscovery (Premium) admite muchos tipos de archivo en muchos 
 |text/vcard-contact|Sí|Sí|Sí|Sí|Sí|.vcf|
 |
 
-## <a name="email-container"></a>Contenedor de correo electrónico
+## <a name="email-container"></a>contenedor de Email
 
 <br>
 
@@ -248,7 +248,7 @@ Microsoft Purview eDiscovery (Premium) admite muchos tipos de archivo en muchos 
 |Tipo mime|Identificación de archivos|Extracción de metadatos|Extracción de texto|Visor nativo|Anotación del visor|Posibles extensiones|
 |---|:---:|:---:|:---:|:---:|:---:|:---:|
 |application/json|Sí|Sí|Sí|Sí|Sí|No aplicable|
-|application/octet-stream|Sí|No|No|No|No|.fluid|
+|application/octet-stream|Yes|No|No|No|No|.fluid|
 |application/vnd.ms-graph|Sí|Sí|No|No|No||
 |application/winhlp|Sí|Sí|No|No|No|.hlp|
 |application/x-tnef|Sí|Sí|No|No|No||

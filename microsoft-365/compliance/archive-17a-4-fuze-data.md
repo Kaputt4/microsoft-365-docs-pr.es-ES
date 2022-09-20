@@ -2,8 +2,8 @@
 title: Configuración de un conector para archivar datos de Fuze en Microsoft 365
 f1.keywords:
 - NOCSH
-ms.author: v-tophillips
-author: v-tophillips
+ms.author: robmazz
+author: robmazz
 manager: laurawi
 ms.date: ''
 audience: Admin
@@ -12,12 +12,12 @@ ms.service: O365-seccomp
 ms.localizationpriority: medium
 ms.collection: M365-security-compliance
 description: Obtenga información sobre cómo configurar y usar un conector Fuze DataParser de 17a-4 para importar y archivar datos de Fuze en Microsoft 365.
-ms.openlocfilehash: 07674ded2b464e45aebebe06317e57a50577a88a
-ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
+ms.openlocfilehash: 9f7946edcd52ccfe03ae34dbd0a164e488139866
+ms.sourcegitcommit: 433f5b448a0149fcf462996bc5c9b45d17bd46c6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/06/2022
-ms.locfileid: "66640212"
+ms.lasthandoff: 09/20/2022
+ms.locfileid: "67822339"
 ---
 # <a name="set-up-a-connector-to-archive-fuze-data"></a>Configuración de un conector para archivar datos de Fuze
 
@@ -37,7 +37,7 @@ En la información general siguiente se explica el proceso de uso de un conector
 
 3. El conector Fuze DataParser que se crea en el portal de cumplimiento Microsoft Purview se conecta a DataParser y transfiere los mensajes a una ubicación segura de Azure Storage en la nube de Microsoft.
 
-4. Se crea una subcarpeta en la carpeta Bandeja de entrada denominada **Fuze DataParser en los buzones** de usuario y los elementos de Fuze se importan a esa carpeta. El conector determina a qué buzón se van a importar elementos mediante el valor de la propiedad *Email* . Cada elemento fuze contiene esta propiedad, que se rellena con la dirección de correo electrónico de cada participante.
+4. Se crea una subcarpeta en la carpeta Bandeja de entrada denominada **Fuze DataParser en los buzones** de usuario y los elementos de Fuze se importan a esa carpeta. El conector determina a qué buzón se van a importar elementos mediante el valor de la propiedad *Email*. Cada elemento fuze contiene esta propiedad, que se rellena con la dirección de correo electrónico de cada participante.
 
 ## <a name="before-you-set-up-a-connector"></a>Antes de configurar un conector
 

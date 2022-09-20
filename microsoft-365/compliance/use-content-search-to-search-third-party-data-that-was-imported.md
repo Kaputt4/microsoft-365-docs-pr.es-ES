@@ -2,8 +2,8 @@
 title: Uso de búsqueda de contenido para buscar datos importados de terceros
 f1.keywords:
 - NOCSH
-ms.author: v-tophillips
-author: v-tophillips
+ms.author: robmazz
+author: robmazz
 manager: laurawi
 ms.date: ''
 audience: Admin
@@ -17,12 +17,12 @@ search.appverid:
 ms.assetid: ec2677ff-c4d7-4363-a9e7-22c80e015688
 description: Use la herramienta eDiscovery búsqueda de contenido para buscar elementos importados a buzones de Correo de Microsoft 365 desde un origen de datos de terceros mediante la creación de consultas.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 6d4475987cddb04e0ad49394eda14d638774c22e
-ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
+ms.openlocfilehash: ffbaf85769c5391bd1c8b1ae7b7dd2c546efb0c4
+ms.sourcegitcommit: 433f5b448a0149fcf462996bc5c9b45d17bd46c6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/06/2022
-ms.locfileid: "66624849"
+ms.lasthandoff: 09/20/2022
+ms.locfileid: "67820931"
 ---
 # <a name="use-content-search-to-search-third-party-data-imported-by-a-custom-partner-connector"></a>Uso de búsqueda de contenido para buscar datos de terceros importados por un conector de asociado personalizado
 
@@ -63,7 +63,7 @@ En la tabla siguiente se enumeran los tipos de datos de terceros que se pueden b
   
 |**Tipo de datos de terceros**|**Valor de la  `itemclass:` propiedad**|
 |:-----|:-----|
-|OBJETIVO  <br/> | `ipm.externaldata.AIM*` <br/> |
+|Objetivo  <br/> | `ipm.externaldata.AIM*` <br/> |
 |American Idol  <br/> | `ipm.externaldata.AmericanIdol*` <br/> |
 |AOL con cliente Pivot  <br/> | `ipm.externaldata.Pivot.IM` <br/> |
 |Apple Juice  <br/> | `ipm.externaldata.AppleJuice*` <br/> |
@@ -107,7 +107,7 @@ En la tabla siguiente se enumeran los tipos de datos de terceros que se pueden b
 |Instagram  <br/> | `ipm.externaldata.Instagram*` <br/> |
 |Instant Bloomberg  <br/> | `ipm.externaldata.InstantBloomberg*` <br/> |
 |InvestEdge  <br/> | `ipm.externaldata.InvestEdge*` <br/> |
-|IRC  <br/> | `ipm.externaldata.IRC*` <br/> |
+|Irc  <br/> | `ipm.externaldata.IRC*` <br/> |
 |Jive  <br/> | `ipm.externaldata.Jive*` <br/> |
 |JiveApiRetention  <br/> | `ipm.externaldata.JiveApiRetention*` <br/> |
 |JXTA  <br/> | `ipm.externaldata.JXTA*` <br/> |
@@ -116,7 +116,7 @@ En la tabla siguiente se enumeran los tipos de datos de terceros que se pueden b
 |Microsoft UC  <br/> | `ipm.externaldata.MicrosoftUC*` <br/> |
 |Alineación mental  <br/> | `ipm.externaldata.MindAlign*` <br/> |
 |Mobile Guard  <br/> | `ipm.externaldata.MobileGuard*` <br/> |
-|MSN  <br/> | `ipm.externaldata.MSN*` <br/> |
+|Msn  <br/> | `ipm.externaldata.MSN*` <br/> |
 |Myspace  <br/> | `ipm.externaldata.MySpace*` <br/> |
 |NEONetwork  <br/> | `ipm.externaldata.NEONetwork*` <br/> |
 |OpenNap  <br/> | `ipm.externaldata.OpenNap*` <br/> |
@@ -133,7 +133,7 @@ En la tabla siguiente se enumeran los tipos de datos de terceros que se pueden b
 |Thomson Reuters  <br/> | `ipm.externaldata.Reuters*` <br/> |
 | Thomson Reuters Eikon Messenger  <br/> | `ipm.externaldata.ReutersEikon*` <br/> |
 |Tor  <br/> | `ipm.externaldata.Tor*` <br/> |
-|TTT  <br/> | `ipm.externaldata.TTT*` <br/> |
+|Ttt  <br/> | `ipm.externaldata.TTT*` <br/> |
 |Twitter  <br/> | `ipm.externaldata.Twitter*` <br/> |
 |UBS Chat  <br/> | `ipm.externaldata.UBS*` <br/> |
 |Vimeo  <br/> | `ipm.externaldata.Vimeo*` <br/> |

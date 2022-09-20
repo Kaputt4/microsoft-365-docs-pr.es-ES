@@ -2,8 +2,8 @@
 title: Uso de la búsqueda de contenido para colecciones de destino
 f1.keywords:
 - NOCSH
-ms.author: v-tophillips
-author: v-tophillips
+ms.author: robmazz
+author: robmazz
 manager: laurawi
 ms.date: ''
 audience: Admin
@@ -19,12 +19,12 @@ search.appverid:
 ms.assetid: e3cbc79c-5e97-43d3-8371-9fbc398cd92e
 ms.custom: seo-marvel-apr2020
 description: Use búsqueda de contenido en el portal de cumplimiento Microsoft Purview para realizar una colección de destino, que busca elementos en un buzón o carpeta de sitio específico.
-ms.openlocfilehash: ab4fda56e3ccbd04ac8b7b820c4305e9c6e45093
-ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
+ms.openlocfilehash: 0960eb35182370bbf6ae51728a37822342cfb63d
+ms.sourcegitcommit: 433f5b448a0149fcf462996bc5c9b45d17bd46c6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/06/2022
-ms.locfileid: "66623681"
+ms.lasthandoff: 09/20/2022
+ms.locfileid: "67826629"
 ---
 # <a name="use-content-search-for-targeted-collections"></a>Uso de la búsqueda de contenido para colecciones de destino
 
@@ -57,7 +57,7 @@ La herramienta de búsqueda de contenido de la portal de cumplimiento Microsoft 
 
 El script que ejecute en este primer paso devolverá una lista de carpetas de buzón o carpetas de SharePoint y OneDrive para la Empresa, así como el identificador de carpeta o la ruta de acceso correspondientes para cada carpeta. Al ejecutar este script, se le pedirá la siguiente información.
 
-- **Dirección de correo electrónico o dirección URL del sitio**: escriba una dirección de correo electrónico del custodio para devolver una lista de carpetas y identificadores de carpeta de buzones de Exchange. O bien, escriba la dirección URL de un sitio de SharePoint o un sitio de OneDrive para la Empresa para devolver una lista de rutas de acceso para el sitio especificado. Estos son algunos ejemplos:
+- **Email dirección o dirección URL del sitio**: escriba una dirección de correo electrónico del custodio para devolver una lista de carpetas y identificadores de carpeta de buzones de Exchange. O bien, escriba la dirección URL de un sitio de SharePoint o un sitio de OneDrive para la Empresa para devolver una lista de rutas de acceso para el sitio especificado. Estos son algunos ejemplos:
 
   - **Exchange**: `stacig@contoso.onmicrosoft.com`
 

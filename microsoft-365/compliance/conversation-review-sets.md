@@ -2,8 +2,8 @@
 title: Revisar conversaciones en eDiscovery (Premium)
 f1.keywords:
 - NOCSH
-ms.author: v-tophillips
-author: v-tophillips
+ms.author: robmazz
+author: robmazz
 manager: laurawi
 ms.date: ''
 audience: Admin
@@ -17,12 +17,12 @@ search.appverid:
 ms.assetid: ''
 description: Obtenga información sobre la característica de reconstrucción de conversaciones en Microsoft Purview eDiscovery (Premium) (denominado subproceso de conversación) para reconstruir, revisar y exportar conversaciones de chat en grupos de Microsoft Teams y Yammer.
 ms.custom: seo-marvel-mar2020
-ms.openlocfilehash: 43b9bccd06ab9ca5ac94f48efa40b1c06707dde5
-ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
+ms.openlocfilehash: 5b5c56bd64041523b5fcbae8ddd741f99dac8e8a
+ms.sourcegitcommit: 433f5b448a0149fcf462996bc5c9b45d17bd46c6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/06/2022
-ms.locfileid: "66634795"
+ms.lasthandoff: 09/20/2022
+ms.locfileid: "67821349"
 ---
 # <a name="conversation-threading-in-ediscovery-premium"></a>Subprocesos de conversación en eDiscovery (Premium)
 

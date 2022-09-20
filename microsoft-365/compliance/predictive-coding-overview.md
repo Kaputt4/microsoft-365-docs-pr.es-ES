@@ -2,8 +2,8 @@
 title: Módulo de codificación predictiva para eDiscovery (Premium) (versión preliminar)
 f1.keywords:
 - NOCSH
-ms.author: v-tophillips
-author: v-tophillips
+ms.author: robmazz
+author: robmazz
 ms.reviewer: jefwan
 manager: laurawi
 audience: Admin
@@ -14,12 +14,12 @@ search.appverid:
 - MET150
 ms.collection: M365-security-compliance
 description: El nuevo módulo de codificación predictiva de eDiscovery (Premium) usa el aprendizaje automático para analizar los elementos de un conjunto de revisión para predecir qué elementos son relevantes para su caso o investigación.
-ms.openlocfilehash: 3ea3d59aa2387b1a762e66fd11942ed96a6288a2
-ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
+ms.openlocfilehash: 6c4ce223d4b5a8a422ee8075435a2f11989f03d1
+ms.sourcegitcommit: 433f5b448a0149fcf462996bc5c9b45d17bd46c6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/06/2022
-ms.locfileid: "66625047"
+ms.lasthandoff: 09/20/2022
+ms.locfileid: "67822603"
 ---
 # <a name="learn-about-predictive-coding-in-ediscovery-premium-preview"></a>Más información sobre la codificación predictiva en eDiscovery (Premium) (versión preliminar)
 

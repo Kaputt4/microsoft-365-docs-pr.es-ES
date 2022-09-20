@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Cuando use el cliente de etiquetado unificado de Azure Information Protection (AIP), comprenda las ventajas de usar el etiquetado integrado para aplicaciones Office en lugar del complemento AIP.
-ms.openlocfilehash: 0c2f4989407d4498df3d4e3401b935f5200b2412
-ms.sourcegitcommit: ecc04b5b8f84b34255a2d5e90b5ab596af0d16c7
+ms.openlocfilehash: 8d20190dd99c1d979f10a3f31d5616dabb652065
+ms.sourcegitcommit: 433f5b448a0149fcf462996bc5c9b45d17bd46c6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/01/2022
-ms.locfileid: "67497657"
+ms.lasthandoff: 09/20/2022
+ms.locfileid: "67825960"
 ---
 # <a name="why-choose-built-in-labeling-over-the-aip-add-in-for-office-apps"></a>Por qué elegir el etiquetado integrado en lugar del complemento de AIP para aplicaciones de Office
 
@@ -74,16 +74,21 @@ Algunas características solo son compatibles con el etiquetado integrado para l
     - Acceso a servicios de clasificación inteligentes que incluyen [clasificadores capacitados](classifier-learn-about.md), [coincidencia exacta de datos (EDM)](sit-learn-about-exact-data-match-based-sits.md) y [entidades con nombre](named-entities-learn.md)
     - Detección de información confidencial a medida que los usuarios escriben
     - En Word, los usuarios pueden revisar y quitar el contenido confidencial identificado
+- [La barra de confidencialidad](sensitivity-labels-office-apps.md#sensitivity-bar) se integra en flujos de trabajo de usuario existentes
 - [Compatibilidad con PDF](sensitivity-labels-office-apps.md#pdf-support)
 - En el caso de las etiquetas que permiten a los usuarios asignar permisos, se pueden conceder permisos diferentes (lectura o cambio) a usuarios o grupos
 - Solo cifrar para correos electrónicos
-- Visibilidad de etiquetas en la barra de estado
+- Visibilidad de las etiquetas en la barra de estado (se reemplazará por la barra de confidencialidad del título de la ventana).
 - Compatibilidad con el cambio de cuentas
 - Los usuarios no pueden deshabilitar el etiquetado
 
 Ejemplo que muestra cómo los usuarios pueden revisar y, opcionalmente, quitar contenido confidencial identificado en Word:
 
 ![Números de tarjeta de crédito identificados para los usuarios como contenido de confidencialidad con una opción para quitarlo.](../media/detect-sensitive-content.png)
+
+Ejemplo que muestra cómo se integran las etiquetas de confidencialidad en los flujos de trabajo de usuario:
+
+![Ejemplo que muestra el nombre y la descripción de la etiqueta de confidencialidad en el cuadro de diálogo Guardar este archivo.](../media/sensitivity-label-in-save-dialog.png)
 
 Para estar a la última con las nuevas funcionalidades de etiquetado disponibles para el etiquetado integrado, consulte las secciones [Novedades en Microsoft Purview](whats-new.md) y **Etiquetas de confidencialidad**.
 
@@ -135,8 +140,8 @@ Use la siguiente información para identificar si usa una característica del co
 |**Categoría: Experiencia del usuario** ||
 |Botón Etiquetado de la cinta de opciones|![Se admite.](../media/yes-icon.png)|
 |Compatibilidad con varios idiomas para nombres de etiquetas e información sobre herramientas| ![Se admite.](../media/yes-icon.png) <br>[Más información](create-sensitivity-labels.md#example-configuration-to-configure-a-sensitivity-label-for-different-languages) |
-|Colores de etiqueta| En planificación o desarrollo |
-|Visibilidad de etiquetas en la barra de herramientas| En planificación o desarrollo |
+|Visibilidad de etiquetas en una barra de herramientas| ![Se admite.](../media/yes-icon.png) <br>[Más información](sensitivity-labels-office-apps.md#sensitivity-bar) |
+|Colores de etiqueta| ![Se admite.](../media/yes-icon.png) <br>[Más información](sensitivity-labels-office-apps.md#label-colors) |
 |**Categoría: Acciones de etiquetado** ||
 |Etiquetado manual |  ![Se admite.](../media/yes-icon.png) <br>[Más información](https://support.microsoft.com/office/apply-sensitivity-labels-to-your-files-and-email-in-office-2f96e7cd-d5a4-403b-8bd7-4cc636bae0f9) |
 |Etiquetado obligatorio | ![Se admite.](../media/yes-icon.png) <br>[Más información](sensitivity-labels.md#what-label-policies-can-do)|

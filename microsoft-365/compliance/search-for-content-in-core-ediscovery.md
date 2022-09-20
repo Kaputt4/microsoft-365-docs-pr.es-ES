@@ -2,8 +2,8 @@
 title: Buscar contenido en un caso de exhibición de documentos electrónicos (estándar)
 f1.keywords:
 - NOCSH
-ms.author: v-tophillips
-author: v-tophillips
+ms.author: robmazz
+author: robmazz
 manager: laurawi
 audience: Admin
 ms.topic: article
@@ -17,18 +17,18 @@ search.appverid:
 - MOE150
 - MET150
 description: Busque contenido que pueda ser relevante para un caso de exhibición de documentos electrónicos (estándar).
-ms.openlocfilehash: 1c51475602e3a0807932501325e12d93a89fcba3
-ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
+ms.openlocfilehash: 1f35314b40ca86e29a198cad01ff856ecb69296b
+ms.sourcegitcommit: 433f5b448a0149fcf462996bc5c9b45d17bd46c6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/06/2022
-ms.locfileid: "66638133"
+ms.lasthandoff: 09/20/2022
+ms.locfileid: "67825354"
 ---
 # <a name="search-for-content-in-a-ediscovery-standard-case"></a>Buscar contenido en un caso de exhibición de documentos electrónicos (estándar)
 
 Una vez que se crea un caso de Microsoft Purview eDiscovery (estándar) y las personas de interés en el caso se colocan en espera, puede crear y ejecutar una o varias búsquedas de contenido relevante para el caso. Las búsquedas asociadas a un caso de exhibición de documentos electrónicos (estándar) no aparecen en la página **Búsqueda de contenido** del portal de cumplimiento Microsoft Purview. Estas búsquedas aparecen en la página **Búsquedas** del caso de exhibición de documentos electrónicos (estándar) al que están asociadas las búsquedas. Esto también significa que solo los miembros del caso pueden acceder a las búsquedas asociadas a un caso.
 
-Para crear una búsqueda de eDiscovery (estándar):
+Para crear una búsqueda de eDiscovery (Estándar):
   
 1. Vaya a <https://compliance.microsoft.com> e inicie sesión con las credenciales de la cuenta de usuario a la que se han asignado los permisos de exhibición de documentos electrónicos adecuados y es miembro del caso.
 

@@ -2,8 +2,8 @@
 title: Usar el envío de unidades para importar los archivos PST
 f1.keywords:
 - NOCSH
-ms.author: v-tophillips
-author: v-tophillips
+ms.author: robmazz
+author: robmazz
 manager: laurawi
 ms.date: ''
 audience: Admin
@@ -19,12 +19,12 @@ search.appverid:
 ms.assetid: 40829b57-793c-4d41-b171-e9270129173d
 ms.custom: seo-marvel-apr2020
 description: Administración puede aprender a importar archivos PST de forma masiva a buzones de Microsoft 365 copiando archivos PST en un disco duro y enviándolo a Microsoft.
-ms.openlocfilehash: a81755b4c36664f215387cfa11b149af03e307b3
-ms.sourcegitcommit: 702fba4b6e6210bb7933cdbff0ad72426fcb9ef2
+ms.openlocfilehash: e7b740e7eed2d50e426de75f94c624e6af3d0bcd
+ms.sourcegitcommit: 433f5b448a0149fcf462996bc5c9b45d17bd46c6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/13/2022
-ms.locfileid: "67335790"
+ms.lasthandoff: 09/20/2022
+ms.locfileid: "67826432"
 ---
 # <a name="use-drive-shipping-to-import-your-organizations-pst-files"></a>Usar el envío de unidades para importar los archivos PST de su organización
 

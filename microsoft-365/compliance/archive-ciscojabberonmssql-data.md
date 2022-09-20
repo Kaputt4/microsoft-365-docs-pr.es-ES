@@ -2,8 +2,8 @@
 title: Configuración de un conector para archivar Cisco Jabber en datos de MS SQL en Microsoft 365
 f1.keywords:
 - NOCSH
-ms.author: v-tophillips
-author: v-tophillips
+ms.author: robmazz
+author: robmazz
 manager: laurawi
 ms.date: ''
 audience: Admin
@@ -12,12 +12,12 @@ ms.service: O365-seccomp
 ms.localizationpriority: medium
 ms.collection: M365-security-compliance
 description: Los administradores pueden configurar un conector para importar y archivar Cisco Jabber en datos de MS SQL de Veritas en Microsoft 365. Este conector le permite archivar datos de orígenes de datos de terceros en Microsoft 365. Después de archivar estos datos, puede usar características de cumplimiento como la suspensión legal, la búsqueda de contenido y las directivas de retención para administrar datos de terceros.
-ms.openlocfilehash: 39a41ab4d89023c263cea43c2ac89a9b174f3235
-ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
+ms.openlocfilehash: 6ee97d1ea8d2c449645d9f7935039c8fed0abc0a
+ms.sourcegitcommit: 433f5b448a0149fcf462996bc5c9b45d17bd46c6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/06/2022
-ms.locfileid: "66636907"
+ms.lasthandoff: 09/20/2022
+ms.locfileid: "67827114"
 ---
 # <a name="set-up-a-connector-to-archive-cisco-jabber-on-ms-sql-data"></a>Configuración de un conector para archivar Cisco Jabber en datos de MS SQL
 
@@ -37,7 +37,7 @@ En la información general siguiente se explica el proceso de uso de un conector
 
 3. El conector Cisco Jabber que se crea en el portal de cumplimiento se conecta al sitio de Veritas Merge1 todos los días y transfiere los elementos a una ubicación segura de Azure Storage en la nube de Microsoft.
 
-4. La asignación automática de usuarios como conector importa elementos a los buzones de usuarios específicos mediante el valor de la propiedad *Email* del descrito en el [paso 3](#step-3-map-users-and-complete-the-connector-setup). Una subcarpeta en la carpeta bandeja de entrada denominada **Cisco Jabber en MS SQL** se crea en los buzones de usuario, y los elementos del mensaje se importan a esa carpeta. El conector determina a qué buzón se van a importar elementos mediante el valor de la propiedad *Email* . Cada elemento del Jabber de Cisco contiene esta propiedad, que se rellena con la dirección de correo electrónico de cada participante.
+4. La asignación automática de usuarios como conector importa elementos a los buzones de usuarios específicos mediante el valor de la propiedad *Email* del descrito en el [paso 3](#step-3-map-users-and-complete-the-connector-setup). Una subcarpeta en la carpeta bandeja de entrada denominada **Cisco Jabber en MS SQL** se crea en los buzones de usuario, y los elementos del mensaje se importan a esa carpeta. El conector determina a qué buzón se van a importar elementos mediante el valor de la propiedad *Email*. Cada elemento del Jabber de Cisco contiene esta propiedad, que se rellena con la dirección de correo electrónico de cada participante.
 
 ## <a name="before-you-begin"></a>Antes de empezar
 
@@ -73,7 +73,7 @@ Después de hacer clic en **Guardar & finalizar**, se muestra la página **Asign
 
 Para asignar usuarios y completar la configuración del conector en el portal de cumplimiento, siga estos pasos:
 
-1. En la página **Map Cisco Jabber on MS SQL users to Microsoft 365 users (Asignar cisco jabber en MS SQL a usuarios de Microsoft 365** ), habilite la asignación automática de usuarios. El Cisco Jabber en los elementos de MS SQL incluye una propiedad llamada *Correo electrónico*, que contiene direcciones de correo electrónico para los usuarios de su organización. Si el conector puede asociar esta dirección a un usuario de Microsoft 365, los elementos se importan al buzón de ese usuario.
+1. En la página **Map Cisco Jabber on MS SQL users to Microsoft 365 users (Asignar cisco jabber en MS SQL a usuarios de Microsoft 365** ), habilite la asignación automática de usuarios. El Cisco Jabber en los elementos de MS SQL incluye una propiedad llamada *Email*, que contiene direcciones de correo electrónico para los usuarios de su organización. Si el conector puede asociar esta dirección a un usuario de Microsoft 365, los elementos se importan al buzón de ese usuario.
 
 2. Haga clic en **Siguiente**, revise la configuración y vaya a la página **Conectores de datos** para ver el progreso del proceso de importación del nuevo conector.
 

@@ -2,8 +2,8 @@
 title: Configuración de un conector para importar datos físicos incorrectos
 f1.keywords:
 - NOCSH
-ms.author: v-tophillips
-author: v-tophillips
+ms.author: robmazz
+author: robmazz
 manager: laurawi
 ms.date: ''
 audience: Admin
@@ -15,12 +15,12 @@ search.appverid:
 ms.collection: M365-security-compliance
 ms.custom: admindeeplinkCOMPLIANCE
 description: Los administradores pueden configurar un conector de datos para importar datos desde el sistema de badging físico de su organización a Microsoft 365. Esto le permite usar estos datos en directivas de administración de riesgos internos para ayudarle a detectar el acceso a los edificios físicos por parte de usuarios específicos que pueden indicar una posible amenaza interna para su organización.
-ms.openlocfilehash: 9b4eeba7c89b5753b44e76d65dc3838182476766
-ms.sourcegitcommit: 61df6377a6185a8b55e668cfb81adbd8462a9cce
+ms.openlocfilehash: a04ae3c929948a7a30b3f7fb5b224ab14a193323
+ms.sourcegitcommit: 433f5b448a0149fcf462996bc5c9b45d17bd46c6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/29/2022
-ms.locfileid: "67071402"
+ms.lasthandoff: 09/20/2022
+ms.locfileid: "67826102"
 ---
 # <a name="set-up-a-connector-to-import-physical-badging-data-preview"></a>Configurar un conector para importar datos físicos incorrectos (versión preliminar)
 
@@ -77,7 +77,7 @@ El archivo JSON debe cumplir la definición de esquema requerida por el conector
 |AssetId|Identificador de referencia del recurso físico o punto de acceso físico.|Cadena alfanumérica|
 |AssetName|Nombre descriptivo del recurso físico o punto de acceso físico.|Cadena alfanumérica|
 |EventTime|Marca de tiempo de acceso.|Fecha y hora, en formato UTC|
-|AccessStatus|Valor de `Success` o `Failed`|String|
+|AccessStatus|Valor de `Success` o `Failed`|Cadena|
 |||
 
 Este es un ejemplo de un archivo JSON que se ajusta al esquema necesario:

@@ -2,8 +2,8 @@
 title: Campos de metadatos de documento en eDiscovery (Premium)
 f1.keywords:
 - NOCSH
-ms.author: v-tophillips
-author: v-tophillips
+ms.author: robmazz
+author: robmazz
 manager: laurawi
 ms.date: ''
 audience: Admin
@@ -16,12 +16,12 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: En este artículo se definen los campos de metadatos de los documentos de un conjunto de revisión en un caso de Microsoft Purview eDiscovery (Premium) en Microsoft 365.
-ms.openlocfilehash: a6fc8479d3ecd2b89c0331220fb7f88f46bda1e4
-ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
+ms.openlocfilehash: 6d882a7612046ad843b0c942e40ec7b9f8684120
+ms.sourcegitcommit: 433f5b448a0149fcf462996bc5c9b45d17bd46c6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/06/2022
-ms.locfileid: "66629759"
+ms.lasthandoff: 09/20/2022
+ms.locfileid: "67821789"
 ---
 # <a name="document-metadata-fields-in-ediscovery-premium"></a>Campos de metadatos de documento en eDiscovery (Premium)
 
@@ -42,7 +42,7 @@ En la tabla siguiente se enumeran los campos de metadatos de los documentos de u
 
 ****
 
-|Nombre del campo y Nombre del campo para mostrar|Nombre del campo en el que se puede buscar|Nombre del campo exportado|Description|
+|Nombre del campo y Nombre del campo para mostrar|Nombre del campo en el que se puede buscar|Nombre del campo exportado|Descripción|
 |---|---|---|---|
 |Identificador de contenido de datos adjuntos|AttachmentContentId||Identificador de contenido de datos adjuntos del elemento.|
 |Puntuación de privilegios de cliente de abogado|AttorneyClientPrivilegeScore||Puntuación de contenido del modelo de privilegios abogado-cliente.|
@@ -66,7 +66,7 @@ En la tabla siguiente se enumeran los campos de metadatos de los documentos de u
 |Título del anuncio de Teams|TeamsAnnouncementTitle|TeamsAnnouncementTitle|Título de un [anuncio de equipos](https://support.microsoft.com/office/send-an-announcement-to-a-channel-8f244ea6-235a-4dcc-9143-9c5b801b4992).|
 |||Converted_file_path|Ruta de acceso del archivo de exportación convertido. Solo para uso interno de Microsoft.|
 |Custodio|Custodio|Custodio|Nombre del custodio al que estaba asociado el elemento.|
-|Fecha|Fecha|Fecha|Date es un campo calculado que depende del tipo de archivo.<p>**Correo electrónico**: fecha de envío<br>**Datos adjuntos de correo electrónico**: fecha de última modificación del documento; si no está disponible, la fecha de envío del elemento primario<br>**Documentos incrustados**: fecha de última modificación del documento; si no está disponible, la fecha de última modificación del elemento primario<br>**Documentos SPO (incluye datos adjuntos modernos):** fecha de última modificación del documento; si no está disponible, fecha de última modificación de SharePoint<br>**Documentos no Office 365**: fecha de última modificación<br>**Reuniones**: fecha de inicio de la reunión<br>**VoiceMail**: fecha de envío<br>**MI**: fecha de envío<br>**Teams**: fecha de envío|
+|Fecha|Fecha|Fecha|Date es un campo calculado que depende del tipo de archivo.<p>**Email**: Fecha de envío<br>**Email datos adjuntos**: fecha de última modificación del documento; si no está disponible, la fecha de envío del elemento primario<br>**Documentos incrustados**: fecha de última modificación del documento; si no está disponible, la fecha de última modificación del elemento primario<br>**Documentos SPO (incluye datos adjuntos modernos):** fecha de última modificación del documento; si no está disponible, fecha de última modificación de SharePoint<br>**Documentos no Office 365**: fecha de última modificación<br>**Reuniones**: fecha de inicio de la reunión<br>**VoiceMail**: fecha de envío<br>**MI**: fecha de envío<br>**Teams**: fecha de envío|
 |Comentarios del documento|DocComments|Doc_comments|Comentarios de los metadatos del documento.|
 |Empresa de documentos||Doc_company|Empresa de los metadatos del documento.|
 |Fecha de creación del documento|CreatedTime|Doc_date_created|Cree la fecha a partir de los metadatos del documento.|
@@ -80,16 +80,16 @@ En la tabla siguiente se enumeran los campos de metadatos de los documentos de u
 |Tema dominante|DominantTheme|Dominant_theme|Tema dominante calculado para el análisis.|
 |Subconjunto duplicado||Duplicate_subset|Id. de grupo para duplicados exactos.|
 |EmailAction*||Email_action|Los valores son **None**, **Reply** o **Forward**; en función de la línea de asunto de un mensaje.|
-|Recibo de entrega por correo electrónico solicitado||Email_delivery_receipt|Dirección de correo electrónico proporcionada en Encabezados de Internet para el recibo de entrega.|
+|Email recibo de entrega solicitado||Email_delivery_receipt|Email dirección proporcionada en Encabezados de Internet para el recibo de entrega.|
 |Importancia|EmailImportance|Email_importance|Importancia del mensaje: **0** - Bajo; **1** - Normal; **2** - Alto|
 |Errores de procesamiento omitidos|ErrorIgnored|Error_Ignored|Se omitió el error y no se corrigió.|
 |EmailInternetHeaders|EmailInternetHeaders|Email_internet_headers|Conjunto completo de encabezados de correo electrónico del mensaje de correo electrónico|
 |EmailLevel*||Email_level|Indica el nivel de un mensaje dentro del subproceso de correo electrónico al que pertenece; los datos adjuntos heredan el valor de su mensaje primario.|
-|Id. de mensaje de correo electrónico||Email_message_ID|Identificador de mensaje de Internet del mensaje.|
-|EmailReadReceiptRequested||Email_read_receipt|Dirección de correo electrónico proporcionada en Encabezados de Internet para la recepción de lectura.|
-|Seguridad del correo electrónico|EmailSecurity|Email_security|Configuración de seguridad del mensaje: **0** - Ninguno; **1** - Firmado; **2** - Cifrado; **3** - Cifrado y firmado.|
-|Confidencialidad del correo electrónico|EmailSensitivity|email_sensitivity|Configuración de confidencialidad del mensaje: **0** - Ninguno; **1** Personal; **2** - Privado; **3** - CompanyConfidential.|
-|Conjunto de correo electrónico|EmailSet|Email_set|Id. de grupo para todos los mensajes del mismo conjunto de correo electrónico.|
+|Email id. de mensaje||Email_message_ID|Identificador de mensaje de Internet del mensaje.|
+|EmailReadReceiptRequested||Email_read_receipt|Email dirección proporcionada en Encabezados de Internet para la recepción de lectura.|
+|seguridad de Email|EmailSecurity|Email_security|Configuración de seguridad del mensaje: **0** - Ninguno; **1** - Firmado; **2** - Cifrado; **3** - Cifrado y firmado.|
+|Confidencialidad de Email|EmailSensitivity|email_sensitivity|Configuración de confidencialidad del mensaje: **0** - Ninguno; **1** Personal; **2** - Privado; **3** - CompanyConfidential.|
+|conjunto de Email|EmailSet|Email_set|Id. de grupo para todos los mensajes del mismo conjunto de correo electrónico.|
 |EmailThread*||Email_thread|Posición del mensaje dentro del conjunto de correo electrónico; consta de identificadores de nodo de la raíz al mensaje actual y están separados por puntos (.).|
 |||Export_native_path|Ruta de acceso del archivo exportado.|
 |Tipo de contenido extraído||Native_type|Tipo de contenido extraído, en forma de tipo mime; por ejemplo, **image/jpeg**|
@@ -98,7 +98,7 @@ En la tabla siguiente se enumeran los campos de metadatos de los documentos de u
 |FamilyDuplicateSet*||Family_duplicate_set|Identificador numérico de las familias que son duplicados exactos entre sí (el mismo contenido y todos los mismos datos adjuntos).|
 |Id. de familia|FamilyId|Family_ID|Agrupa los datos adjuntos y los elementos extraídos del correo electrónico y chats con su elemento primario. Esto incluye el chat o el correo electrónico y todos los datos adjuntos y los elementos extraídos.|
 |Tamaño de familia||Family_size|Número de documentos de la familia.|
-|Clase de archivo|FileClass|File_class|Para el contenido de SharePoint y OneDrive: **Documento**. <br>Para el contenido de Exchange: **correo electrónico** o **datos adjuntos**. <br>Para el contenido de Teams o Yammer: **conversaciones**.|
+|Clase de archivo|FileClass|File_class|Para el contenido de SharePoint y OneDrive: **Documento**. <br>Para el contenido de Exchange: **Email** o **datos adjuntos**. <br>Para el contenido de Teams o Yammer: **conversaciones**.|
 |Id. de archivo|FileId|File_ID|Identificador de documento único dentro del caso.|
 |Fecha de creación del sistema de archivos||File_system_date_created|Fecha de creación a partir del sistema de archivos (solo se aplica a datos que no son de Office 365).|
 |Fecha de modificación del sistema de archivos||File_system_date_modified|Fecha de modificación del sistema de archivos (solo se aplica a datos que no son Office 365).|
