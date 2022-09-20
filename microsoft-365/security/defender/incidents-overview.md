@@ -23,12 +23,12 @@ ms.topic: conceptual
 search.appverid:
 - MOE150
 - MET150
-ms.openlocfilehash: a797d0c96c708bd69b275cb5f9dfb7bbd669e367
-ms.sourcegitcommit: 10e6abe740e27000e223378eb17d657a47555fa8
+ms.openlocfilehash: 9293cf55f769f86d16a8f63aaebee7d1a524c32c
+ms.sourcegitcommit: 078149c9645ce220911ccd6ce54f984a4c92ce53
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/31/2022
-ms.locfileid: "67478759"
+ms.lasthandoff: 09/20/2022
+ms.locfileid: "67811556"
 ---
 # <a name="incident-response-with-microsoft-365-defender"></a>Respuesta a incidentes con Microsoft 365 Defender
 
@@ -240,7 +240,7 @@ Use este módulo de aprendizaje de Microsoft Learn para comprender cómo usar Mi
 |![Investigar incidentes con Microsoft 365 Defender icono de entrenamiento.](../../media/incidents-overview/m365-defender-address-security-investigation.svg)| Microsoft 365 Defender unifica los datos de amenazas de varios servicios y usa la inteligencia artificial para combinarlos en incidentes y alertas. Obtenga información sobre cómo minimizar el tiempo entre un incidente y su administración mediante respuesta y resolución posteriores. <p> 27 min - 6 unidades |
 
 > [!div class="nextstepaction"]
-> [Iniciar >](/learn/modules/defender-investigate-incidents/)
+> [Iniciar >](/training/modules/defender-investigate-incidents/)
 
 ## <a name="next-steps"></a>Pasos siguientes
 

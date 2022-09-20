@@ -20,12 +20,12 @@ ms.topic: conceptual
 search.appverid:
 - MOE150
 - MET150
-ms.openlocfilehash: 7f69ef59a91c368d51291080daa68517272bce74
-ms.sourcegitcommit: 10e6abe740e27000e223378eb17d657a47555fa8
+ms.openlocfilehash: 1032aef793295df2bb65d8a8ac4b3186544f5abe
+ms.sourcegitcommit: 078149c9645ce220911ccd6ce54f984a4c92ce53
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/31/2022
-ms.locfileid: "67476174"
+ms.lasthandoff: 09/20/2022
+ms.locfileid: "67811490"
 ---
 # <a name="set-the-time-zone-for-microsoft-365-defender"></a>Establecer la zona horaria para Microsoft 365 Defender
 
@@ -40,8 +40,9 @@ ms.locfileid: "67476174"
 Microsoft 365 Defender puede mostrar información de fecha y hora mediante la zona horaria local o utc. La zona horaria seleccionada se aplicará a toda la información de fecha y hora que se muestra en las siguientes características del portal de Microsoft 365 Defender:
 - Incidentes
 - Investigación y corrección automatizada, incluyendo el centro de actividades
+- Resultados de búsqueda avanzados
 
 Para establecer la zona horaria de estas características, vaya a **Configuración** >  **Microsoft 365 Defender** >  **Zona horaria**.
 
 > [!NOTE]
-> La búsqueda avanzada mantiene la información de fecha y hora de los resultados de la consulta en UTC, independientemente de la configuración de la zona horaria. 
+> El filtro de intervalo de tiempo personalizado en la búsqueda avanzada permanece en UTC independientemente de la configuración de zona horaria. 

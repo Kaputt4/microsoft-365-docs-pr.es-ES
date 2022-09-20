@@ -17,12 +17,12 @@ ms.collection:
 - m365-security-compliance
 ms.topic: conceptual
 ms.subservice: mde
-ms.openlocfilehash: 63dc2daa95af151571515fcc855aaa91477be14e
-ms.sourcegitcommit: d3ef9391f621e8f4ca70661184b3bb82c6cbda94
+ms.openlocfilehash: 25eb7c0c556218d205d1a9994a31ba657dc34bec
+ms.sourcegitcommit: 078149c9645ce220911ccd6ce54f984a4c92ce53
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/02/2022
-ms.locfileid: "67579190"
+ms.lasthandoff: 09/20/2022
+ms.locfileid: "67811360"
 ---
 # <a name="microsoft-defender-for-endpoint-preview-features"></a>características de Microsoft Defender para punto de conexión versión preliminar
 
@@ -40,7 +40,7 @@ El servicio Defender para punto de conexión se actualiza constantemente para in
 Obtenga información sobre las nuevas características de la versión preliminar de Defender para punto de conexión y entre los primeros en probar las próximas características activando la experiencia en versión preliminar.
 
 > [!TIP]
-> Reciba una notificación cuando esta página se actualice copiando y pegando la siguiente dirección URL en el lector de fuentes: `https://docs.microsoft.com/api/search/rss?search=%22In+the+navigation+pane%2C+select+Settings+%3E+Advanced+features+%3E+Preview+features.%22&locale=en-us&facet=`
+> Reciba una notificación cuando esta página se actualice copiando y pegando la siguiente dirección URL en el lector de fuentes: `https://learn.microsoft.com/api/search/rss?search=%22In+the+navigation+pane%2C+select+Settings+%3E+Advanced+features+%3E+Preview+features.%22&locale=en-us&facet=`
 
 Para obtener más información sobre las nuevas funcionalidades que están disponibles con carácter general, consulte [Novedades de Defender para punto de conexión](whats-new-in-microsoft-defender-endpoint.md).
 

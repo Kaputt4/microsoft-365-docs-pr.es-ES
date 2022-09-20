@@ -5,7 +5,7 @@ author: kelleyvice-msft
 manager: scotv
 audience: ITPro
 ms.topic: article
-ms.service: o365-solutions
+ms.service: microsoft-365-enterprise
 ms.localizationpriority: high
 search.appverid:
 - MET150
@@ -16,12 +16,12 @@ ms.custom:
 - Ent_TLGs
 ms.assetid: 706d5449-45e5-4b0c-a012-ab60501899ad
 description: Determine dónde se almacenan los datos del cliente de Microsoft 365 dentro de la Unión Europea
-ms.openlocfilehash: 03f67a91f25f8333a92334ef633687e2b41e80a6
-ms.sourcegitcommit: 6a981ca15bac84adbbed67341c89235029aad476
-ms.translationtype: HT
+ms.openlocfilehash: 33e898bdea6d32446630c9da97d7241a040b6916
+ms.sourcegitcommit: 078149c9645ce220911ccd6ce54f984a4c92ce53
+ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/27/2022
-ms.locfileid: "65753658"
+ms.lasthandoff: 09/20/2022
+ms.locfileid: "67811950"
 ---
 # <a name="data-locations-for-the-european-union"></a>Ubicaciones de datos en la Unión Europea
 
@@ -118,5 +118,5 @@ Para obtener más información, consulte [Preguntas más frecuentes](https://blo
 - [Protección de datos de confianza](https://query.prod.cms.rt.microsoft.com/cms/api/am/binary/RE4FhZn) ofrece información general sobre cómo Microsoft protege sus datos al usar los servicios en línea de Microsoft y los servicios profesionales de Microsoft. También se sugiere que consulte los [Términos de servicios en línea de Microsoft (OST) y el anexo de protección de datos (DPA)](https://www.microsoft.com/licensing/product-licensing/products) que rigen el uso de estos servicios.
 - Las [solicitudes de datos de Office 365 para el Reglamento general de protección de datos](/compliance/regulatory/gdpr-dsr-Office365) le ayuda a encontrar los datos personales o información personal y actuar sobre la base de estos para responder a los derechos sobre los datos (DSR) mediante productos, servicios y herramientas administrativas de Microsoft 365.
 - La guía [Evaluaciones de impacto en la protección de datos (EIPD): Guía para los controladores de datos que usan Microsoft Office 365](/compliance/regulatory/gdpr-dpia-office365) le ayuda a determinar si su organización necesita redactar una EIPD, ofrece instrucciones de "cómo" hacerlo, incluye una plantilla de documento EIPD personalizable, y proporciona una matriz de elementos de servicio de EIPD para varios servicios de Microsoft 365.
-- [Los módulos informativos](/learn/paths/audit-safeguard-customer-data/) están diseñados para las personas con roles de auditoria, cumplimiento, riesgo y jurídicos que buscan tener un conocimiento general. Además, proporcionan una revisión en profundidad de las prácticas básicas de seguridad y privacidad de Microsoft 365 para salvaguardar los datos del cliente.
+- [Los módulos informativos](/training/paths/audit-safeguard-customer-data/) están diseñados para las personas con roles de auditoria, cumplimiento, riesgo y jurídicos que buscan tener un conocimiento general. Además, proporcionan una revisión en profundidad de las prácticas básicas de seguridad y privacidad de Microsoft 365 para salvaguardar los datos del cliente.
 - Las [Ofertas de cumplimiento de Microsoft](/compliance/regulatory/offering-home) muestran cómo los servicios de Microsoft 365 ayudan a que su organización cumpla con los estándares de cumplimiento normativo.

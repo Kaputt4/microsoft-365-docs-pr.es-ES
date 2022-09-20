@@ -17,12 +17,12 @@ ms.reviewer: aaglick
 appliesto:
 - Microsoft Teams
 - Microsoft 365 for frontline workers
-ms.openlocfilehash: 12e155d9b5953dcd88c5051d97dfe37389e2ebda
-ms.sourcegitcommit: ecc04b5b8f84b34255a2d5e90b5ab596af0d16c7
+ms.openlocfilehash: 3dc183a73548d0fa8209438268373fa44de72659
+ms.sourcegitcommit: 078149c9645ce220911ccd6ce54f984a4c92ce53
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/01/2022
-ms.locfileid: "67497679"
+ms.lasthandoff: 09/20/2022
+ms.locfileid: "67812488"
 ---
 # <a name="get-started-with-microsoft-365-for-frontline-workers"></a>Introducción a Microsoft 365 para trabajadores de primera línea
 
@@ -90,8 +90,8 @@ Proteja su negocio con las mejores características de seguridad y cumplimiento 
 
 |Funcionalidad |Disponibilidad de licencias |
 |-----------|---------------------|
-|[Introducción a la seguridad en Microsoft 365](/learn/modules/security-in-m365/) |Enterprise, F1, F3 |
-|[Introducción a las herramientas de cumplimiento en Microsoft 365](/learn/modules/compliance-in-m365/) |Enterprise, F1, F3 |
+|[Introducción a la seguridad en Microsoft 365](/training/modules/security-in-m365/) |Enterprise, F1, F3 |
+|[Introducción a las herramientas de cumplimiento en Microsoft 365](/training/modules/compliance-in-m365/) |Enterprise, F1, F3 |
 |[Tareas rápidas para empezar a trabajar con Microsoft Purview](/microsoft-365/compliance/compliance-quick-tasks) |Enterprise, disponible como complemento para F3 |
 
 ### <a name="simplify-deployment-and-management-at-scale"></a>Simplificar la implementación y administración a escala

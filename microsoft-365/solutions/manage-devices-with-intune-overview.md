@@ -21,12 +21,12 @@ ms.collection:
 - zerotrust-solution
 ms.custom: ''
 keywords: ''
-ms.openlocfilehash: 6ec7b3e83ec170c617f12bd74cc875219c71a523
-ms.sourcegitcommit: 0af064e8b6778060f1bd365378d69b16fc9949b5
+ms.openlocfilehash: 5b003692f34e54944042ebae18b6a179e3665404
+ms.sourcegitcommit: 078149c9645ce220911ccd6ce54f984a4c92ce53
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/15/2022
-ms.locfileid: "67730295"
+ms.lasthandoff: 09/20/2022
+ms.locfileid: "67811250"
 ---
 # <a name="manage-devices-with-intune-overview"></a>Información general para administrar dispositivos con Intune
 
@@ -125,6 +125,6 @@ Tenga en cuenta que solo Intune administra dispositivos. La incorporación hace 
 
 Los siguientes recursos ayudan a los administradores a aprender conceptos sobre el uso de MEM e Intune.
 
-[Simplifica la administración de dispositivos con Microsoft Endpoint Manager](/learn/modules/simplify-device-management-with-microsoft-endpoint-manager/) Descripción: Obtén información sobre la administración moderna y el Microsoft Endpoint Manager y cómo las herramientas de administración empresarial de Microsoft 365 pueden simplificar la administración de todos los dispositivos.
+[Simplifica la administración de dispositivos con Microsoft Endpoint Manager](/training/modules/simplify-device-management-with-microsoft-endpoint-manager/) Descripción: Obtén información sobre la administración moderna y el Microsoft Endpoint Manager y cómo las herramientas de administración empresarial de Microsoft 365 pueden simplificar la administración de todos los dispositivos.
 
-[Configurar Microsoft Intune](/learn/modules/set-up-microsoft-intune/) Descripción: Microsoft Intune, que forma parte de Microsoft Endpoint Manager, te ayuda a proteger los dispositivos, las aplicaciones y los datos que usan las personas de tu organización para ser productivos. Después de completar este módulo, habrás configurado Microsoft Intune. La configuración incluye revisar las configuraciones admitidas, registrarse en Intune, agregar usuarios y grupos, asignar licencias a usuarios, conceder permisos de administrador y establecer la entidad de MDM.
+[Configurar Microsoft Intune](/training/modules/set-up-microsoft-intune/) Descripción: Microsoft Intune, que forma parte de Microsoft Endpoint Manager, te ayuda a proteger los dispositivos, las aplicaciones y los datos que usan las personas de tu organización para ser productivos. Después de completar este módulo, habrás configurado Microsoft Intune. La configuración incluye revisar las configuraciones admitidas, registrarse en Intune, agregar usuarios y grupos, asignar licencias a usuarios, conceder permisos de administrador y establecer la entidad de MDM.

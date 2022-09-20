@@ -247,6 +247,8 @@
 
 ### [Informes de firewalls de host en Microsoft Defender para punto de conexión](host-firewall-reporting.md)
 
+### [Protección integrada](built-in-protection.md)
+
 ### [Reducción de la superficie expuesta a ataques]()
 #### [Introducción a la reducción de la superficie expuesta a ataques](overview-attack-surface-reduction.md)
 #### [Reglas de la reducción de la superficie expuesta a ataques (ASR)]()

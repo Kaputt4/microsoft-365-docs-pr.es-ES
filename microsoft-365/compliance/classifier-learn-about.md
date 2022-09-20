@@ -19,12 +19,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Los clasificadores que se pueden entrenar pueden reconocer varios tipos de contenido para la aplicación de etiquetas o directivas proporcionándole ejemplos positivos y negativos a los que examinar.
-ms.openlocfilehash: 1699ab81ba0f8225312126f17430ab27764ae176
-ms.sourcegitcommit: 37e137535c4f70702afe1a5eeaa899c75ee02cfd
+ms.openlocfilehash: 09b02f948cc765901b098b1d2ec66ade7d4bfc5f
+ms.sourcegitcommit: 078149c9645ce220911ccd6ce54f984a4c92ce53
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/13/2022
-ms.locfileid: "67663615"
+ms.lasthandoff: 09/20/2022
+ms.locfileid: "67811172"
 ---
 # <a name="learn-about-trainable-classifiers"></a>Obtenga información sobre los clasificadores entrenables
 
@@ -161,6 +161,11 @@ Puede ayudar a mejorar la precisión de todos los clasificadores entrenables per
 > Los clasificadores previamente entrenados no se pueden volver a entrenar.
 
 ![flujo de trabajo de reentrenamiento del clasificador.](../media/classifier-retraining-workflow.png)
+
+## <a name="provide-matchnot-a-match-accuracy-feedback-in-trainable-classifiers"></a>Proporcionar comentarios de coincidencia o no de precisión de coincidencia en clasificadores entrenables
+
+Puede ver el número de coincidencias que tiene un clasificador entrenable en el **Explorador de contenido** y **en los láseres entrenables**. También puede proporcionar comentarios sobre si un elemento es realmente una coincidencia o no mediante el mecanismo de comentarios **Match**, **Not a Match** y usar esos comentarios para ajustar los clasificadores. Consulte [Aumento de la precisión del clasificador (versión preliminar)](data-classification-increase-accuracy.md) para obtener más información. 
+
 
 ## <a name="see-also"></a>Vea también
 

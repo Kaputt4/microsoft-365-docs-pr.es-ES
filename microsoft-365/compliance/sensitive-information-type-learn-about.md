@@ -16,12 +16,12 @@ ms.localizationpriority: medium
 ms.collection:
 - M365-security-compliance
 description: En este artículo se proporciona información general sobre los tipos de información confidencial y cómo detectan información confidencial, como el seguro social, la tarjeta de crédito o los números de cuenta bancaria para identificar elementos confidenciales.
-ms.openlocfilehash: 9cc42512109f0e939ac946b39a3cd6c060283347
-ms.sourcegitcommit: 771f7bbb241f910b3e16b4d1f9bbd9c0c8c6fa34
+ms.openlocfilehash: 8e921a61004a52c0ee33d7005993a51374ee8dde
+ms.sourcegitcommit: 078149c9645ce220911ccd6ce54f984a4c92ce53
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2022
-ms.locfileid: "67309799"
+ms.lasthandoff: 09/20/2022
+ms.locfileid: "67811512"
 ---
 # <a name="learn-about-sensitive-information-types"></a>Obtener más información acerca de los tipos de información confidencial
 
@@ -87,9 +87,9 @@ Cada entidad de tipo de información confidencial se define mediante estos campo
 
 ![Diagrama de evidencia corroborativa y ventana de proximidad.](../media/dc68e38e-dfa1-45b8-b204-89c8ba121f96.png)
 
-<!--Learn more about confidence levels in this short video.
+Obtenga más información sobre los niveles de confianza en este breve vídeo.
 
- > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4Hx60]-->
+ > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4Hx60]
 
 ### <a name="example-sensitive-information-type"></a>Ejemplo de tipo de información confidencial
 
@@ -199,6 +199,11 @@ Puede elegir entre varias opciones para crear tipos de información confidencial
 > `(?<!\d)([4][0-9]{3}[\-?\-\t]*[0-9]{4}`
 >
 > Se recomienda usar la coincidencia de cadena en lugar de la coincidencia de palabras en una lista de palabras clave.
+
+## <a name="provide-matchnot-a-match-accuracy-feedback-in-sensitive-info-types"></a>Proporcionar comentarios de coincidencia o no de precisión de coincidencia en tipos de información confidencial
+
+Puede ver el número de coincidencias que tiene una SIT en **Tipos de información confidencial** y **explorador de contenido**. También puede proporcionar comentarios sobre si un elemento es realmente una coincidencia o no mediante el mecanismo de comentarios **Match**, **Not a Match** y usar esos comentarios para ajustar los SIT. Consulte [Aumento de la precisión del clasificador (versión preliminar)](data-classification-increase-accuracy.md) para obtener más información. 
+
 
 ## <a name="for-further-information"></a>Para obtener más información
 

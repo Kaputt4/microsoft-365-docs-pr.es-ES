@@ -13,12 +13,12 @@ ms.collection:
 - m365initiative-syntex
 ms.localizationpriority: medium
 description: Obtenga información sobre cómo usar la compilación de IA para crear modelos de procesamiento de formularios en Microsoft SharePoint Syntex.
-ms.openlocfilehash: 8bcb5874ce62b8125e385fcf9eca8dbd2ca9f0fa
-ms.sourcegitcommit: d3ef9391f621e8f4ca70661184b3bb82c6cbda94
+ms.openlocfilehash: 327a8b91842f032a1176ab32e84b3f568079e8d2
+ms.sourcegitcommit: 078149c9645ce220911ccd6ce54f984a4c92ce53
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/02/2022
-ms.locfileid: "67585254"
+ms.lasthandoff: 09/20/2022
+ms.locfileid: "67812510"
 ---
 # <a name="form-processing-overview-in-microsoft-sharepoint-syntex"></a>Resumen del procesamiento de formularios en Microsoft SharePoint Syntex
 
@@ -68,4 +68,4 @@ Si usa un entorno personalizado (en lugar del entorno predeterminado) para el pr
 
 [Información general sobre la comprensión de documentos](document-understanding-overview.md)
 
-[Aprendizaje: mejorar el rendimiento empresarial con el generador de IA](/learn/paths/improve-business-performance-ai-builder/?source=learn)
+[Aprendizaje: mejorar el rendimiento empresarial con el generador de IA](/training/paths/improve-business-performance-ai-builder/?source=learn)

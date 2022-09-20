@@ -19,12 +19,12 @@ search.appverid:
 - MOE150
 - MET150
 description: El explorador de contenido le permite ver elementos etiquetados de forma nativa.
-ms.openlocfilehash: d00d8febe5c30b438d77e3c9b82b6a8bb6011812
-ms.sourcegitcommit: 23c7e96d8ec31c676c458e7c71f1cc8a1e40a0e4
+ms.openlocfilehash: 0fa17cd3f76290e130c768438733cd1db6515438
+ms.sourcegitcommit: 078149c9645ce220911ccd6ce54f984a4c92ce53
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/16/2022
-ms.locfileid: "67360465"
+ms.lasthandoff: 09/20/2022
+ms.locfileid: "67811150"
 ---
 # <a name="get-started-with-content-explorer"></a>Introducción al explorador de contenido
 
@@ -145,6 +145,10 @@ Puede buscar en:
 |texto al principio del nombre de archivo| `RES`|
 |texto después de un carácter de subrayado (_) en el nombre de archivo|`Resume` o `1234`| 
 |extensión de archivo|`txt`|
+
+## <a name="provide-matchnot-a-match-accuracy-feedback-in-content-explorer"></a>Proporcionar comentarios de coincidencia o no de precisión de coincidencia en el explorador de contenido
+
+Puede ver el número de coincidencias que tiene una SIT o un clasificador entrenable en el **Explorador de contenido**. También puede proporcionar comentarios sobre si un elemento es realmente una coincidencia o no mediante el mecanismo de comentarios **Match**, **Not a Match** y usar esos comentarios para ajustar los clasificadores. Consulte [Aumento de la precisión del clasificador (versión preliminar)](data-classification-increase-accuracy.md) para obtener más información. 
 
 
 ## <a name="see-also"></a>Recursos adicionales

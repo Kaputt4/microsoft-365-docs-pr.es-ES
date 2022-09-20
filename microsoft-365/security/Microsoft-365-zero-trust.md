@@ -9,7 +9,7 @@ manager: dansimp
 audience: Admin
 description: Obtenga información sobre cómo implementar la seguridad de Microsoft 365 Confianza cero en su entorno para defenderse frente a amenazas y proteger la información confidencial.
 ms.topic: tutorial
-ms.prod: m365-security
+ms.service: microsoft-365-security
 ms.localizationpriority: medium
 search.appverid:
 - MET150
@@ -18,12 +18,12 @@ ms.collection:
 - m365solution-overview
 - M365-security-compliance
 - zerotrust-solution
-ms.openlocfilehash: ae32e5a40417297a1cdaec69bddb1e6bad8f3353
-ms.sourcegitcommit: 2dedd0f594b817779e034afa6c4418def2382a22
+ms.openlocfilehash: 37b32968847e5948b1176c61b201ce2bce166bb3
+ms.sourcegitcommit: 078149c9645ce220911ccd6ce54f984a4c92ce53
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/18/2022
-ms.locfileid: "67799294"
+ms.lasthandoff: 09/20/2022
+ms.locfileid: "67811667"
 ---
 # <a name="microsoft-365-zero-trust-deployment-plan"></a>Plan de implementación de Confianza cero de Microsoft 365
 
@@ -52,7 +52,7 @@ En la ilustración:
 Para obtener más información sobre Confianza cero, consulte [_**el Centro de orientación de Confianza cero**_](/security/zero-trust) de Microsoft.
 
 <!---
-For more information about this architecture, including deployment objectives for your entire digital estate, see [Zero Trust Rapid Modernization Plan (RaMP)](https://review.docs.microsoft.com/security/zero-trust/zero-trust-ramp-overview?branch=zt-content-prototype).
+For more information about this architecture, including deployment objectives for your entire digital estate, see [Zero Trust Rapid Modernization Plan (RaMP)](https://review.learn.microsoft.com/security/zero-trust/zero-trust-ramp-overview?branch=zt-content-prototype).
 -->
 
 

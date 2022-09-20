@@ -18,12 +18,12 @@ ms.custom:
 f1.keywords: NOCSH
 recommendations: false
 description: Obtenga información sobre los procedimientos recomendados para configurar la colaboración y el uso compartido de archivos seguros en Teams para proteger los datos en función de su confidencialidad.
-ms.openlocfilehash: f222b52356b3dbcba83811b4e4bfbe862e773baa
-ms.sourcegitcommit: 0af064e8b6778060f1bd365378d69b16fc9949b5
+ms.openlocfilehash: 40346ded5af67c7aac11e0491bfc7bd296e13c3d
+ms.sourcegitcommit: 078149c9645ce220911ccd6ce54f984a4c92ce53
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/15/2022
-ms.locfileid: "67728568"
+ms.lasthandoff: 09/20/2022
+ms.locfileid: "67811228"
 ---
 # <a name="set-up-secure-file-sharing-and-collaboration-with-microsoft-teams"></a>Configuración del uso compartido de archivos seguro y la colaboración con Microsoft Teams
 
@@ -141,7 +141,7 @@ Estos módulos de entrenamiento de Microsoft Learn pueden ayudarle a aprender la
 |![Icono de entrenamiento de colaboración de Teams.](../media/manage-team-collaboration-with-microsoft-teams.svg)|Administración de la colaboración en grupo con Microsoft Teams le presenta las características y funciones de Microsoft Teams, el núcleo central para la colaboración en grupo de Microsoft 365. Aprenderá cómo puede usar Teams para facilitar el trabajo en equipo y la comunicación dentro de la organización, tanto en un entorno local como externo, en dispositivos muy diversos, desde equipos de escritorio a tabletas y teléfonos, a la vez que aprovecha toda la funcionalidad enriquecida de las aplicaciones de Office 365. Comprenderá cómo Teams ofrece un entorno completo y flexible para la colaboración en aplicaciones y dispositivos. Esta ruta de aprendizaje puede ayudarle a preparar el certificado Microsoft 365 Certified: Teams Administrator Associate.<p>2 h 17 minutos - Ruta de aprendizaje - 5 módulos|
 
 > [!div class="nextstepaction"]
-> [Iniciar >](/learn/modules/m365-teams-collab-prepare-deployment/introduction/)
+> [Iniciar >](/training/modules/m365-teams-collab-prepare-deployment/introduction/)
 
 ### <a name="sharepoint"></a>SharePoint
 
@@ -150,7 +150,7 @@ Estos módulos de entrenamiento de Microsoft Learn pueden ayudarle a aprender la
 |![Icono de entrenamiento de SharePoint.](../media/collaborate-with-sharepoint-in-microsoft-365.svg)|Administrar el contenido compartido con Microsoft SharePoint le ofrece una introducción a las características y funciones de SharePoint y cómo funciona con Microsoft 365. Obtendrá información sobre los distintos tipos de sitios de SharePoint, incluidos los sitios concentradores, así como la protección de la información, la creación de informes y la supervisión. También obtendrá información sobre cómo emplear el uso compartido de archivos y carpetas de SharePoint para optimizar la colaboración, cómo compartir archivos externamente y cómo administrar sitios de SharePoint en el centro de administración de SharePoint. Esta ruta de aprendizaje puede ayudarle a preparar el certificado Microsoft 365 Certified: Teamwork Administrator Associate.<p>1 h 14 min - Ruta de aprendizaje - 4 módulos|
 
 > [!div class="nextstepaction"]
-> [Iniciar >](/learn/modules/m365-teams-sharepoint-plan-sharepoint/introduction/)
+> [Iniciar >](/training/modules/m365-teams-sharepoint-plan-sharepoint/introduction/)
 
 ### <a name="information-protection"></a>Protección de la información
 
@@ -159,7 +159,7 @@ Estos módulos de entrenamiento de Microsoft Learn pueden ayudarle a aprender la
 |![Icono de entrenamiento de protección de información de Teams.](../media/protect-enterprise-information-microsoft-365.svg)|Proteger y asegurar la información de su organización es más difícil que nunca. La ruta de aprendizaje Proteger la información de la empresa con Microsoft 365 analiza cómo proteger su información confidencial de un uso excesivo o indebido accidental, cómo descubrir y clasificar los datos, cómo protegerlos con etiquetas de confidencialidad y cómo supervisar y analizar su información confidencial para protegerla contra su pérdida. Esta ruta de aprendizaje puede ayudarle a prepararse para las certificaciones Microsoft 365 Certified: Security Administrator Associate y Microsoft 365 Certified: Enterprise Administration Expert.<p>1 h - Ruta de aprendizaje: 5 módulos|
 
 > [!div class="nextstepaction"]
-> [Iniciar >](/learn/modules/m365-security-info-overview/introduction/)
+> [Iniciar >](/training/modules/m365-security-info-overview/introduction/)
 
 ### <a name="identity-and-access"></a>Identidad y acceso
 
@@ -168,7 +168,7 @@ Estos módulos de entrenamiento de Microsoft Learn pueden ayudarle a aprender la
 |![Icono de entrenamiento de identidad y acceso.](../media/protect-identity-and-access-with-microsoft-365.svg)|La Ruta de aprendizaje de identidad y acceso cubre las últimas tecnologías de identidad y acceso, herramientas para reforzar la autenticación y orientación sobre la protección de la identidad dentro de su organización. Las tecnologías de acceso e identidad de Microsoft le permiten asegurar la identidad de su organización, ya sea en sus instalaciones o en la nube, y permiten a sus usuarios trabajar de forma segura desde cualquier lugar. Esta ruta de aprendizaje puede ayudarle a preparar los certificados Microsoft 365 Certified: Security Administrator Associate y Microsoft 365 Certified: Enterprise Administration Expert.<p>2 h 52 min - Ruta de aprendizaje - 6 módulos|
 
 > [!div class="nextstepaction"]
-> [Iniciar >](/learn/modules/m365-identity-overview/introduction/)
+> [Iniciar >](/training/modules/m365-identity-overview/introduction/)
 
 ## <a name="training-for-end-users"></a>Entrenamiento para usuarios finales
 

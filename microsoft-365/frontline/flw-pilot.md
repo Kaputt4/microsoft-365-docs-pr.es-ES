@@ -15,12 +15,12 @@ ms.collection:
 appliesto:
 - Microsoft Teams
 - Microsoft 365 for frontline workers
-ms.openlocfilehash: 27456ce239e896c5beb2f988f1c1377c68c9c10c
-ms.sourcegitcommit: 651610ca73bfd1d008d97311b59782790df664fb
+ms.openlocfilehash: c916afef567c0edeebf4afe274cec5e3818f7204
+ms.sourcegitcommit: 078149c9645ce220911ccd6ce54f984a4c92ce53
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/07/2022
-ms.locfileid: "67614228"
+ms.lasthandoff: 09/20/2022
+ms.locfileid: "67811864"
 ---
 # <a name="start-with-a-pilot-deployment-of-microsoft-365-for-frontline-workers"></a>Comience con una implementación piloto de Microsoft 365 para los trabajadores de primera línea
 
@@ -44,7 +44,7 @@ La ejecución de un programa piloto forma parte del proceso de adopción general
 - [Habilitación de los trabajadores de primera línea con Microsoft Teams](https://adoption.microsoft.com/microsoft-teams/frontline-workers/)
 - [3 maneras de apoyar a los trabajadores de primera línea en un mundo híbrido](https://www.microsoft.com/microsoft-365/blog/2021/10/19/3-ways-to-support-frontline-workers-in-a-hybrid-world/)
 
-Se recomienda prepararse para la implementación completando esta ruta de aprendizaje de 30 minutos: [Preparación para una implementación de Teams con Microsoft 365](/learn/modules/m365-teams-collab-prepare-deployment/).
+Se recomienda prepararse para la implementación completando esta ruta de aprendizaje de 30 minutos: [Preparación para una implementación de Teams con Microsoft 365](/training/modules/m365-teams-collab-prepare-deployment/).
 
 ## <a name="steps-to-run-a-pilot-program"></a>Pasos para ejecutar un programa piloto
 

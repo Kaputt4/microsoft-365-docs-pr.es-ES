@@ -13,12 +13,12 @@ ms.collection:
 - m365initiative-syntex
 ms.localizationpriority: medium
 description: Obtenga información sobre las diferencias clave entre un modelo de comprensión de documentos y un modelo de procesamiento de formularios.
-ms.openlocfilehash: 18235caa31876aa4d9a7b1733885d924804f7e46
-ms.sourcegitcommit: d3ef9391f621e8f4ca70661184b3bb82c6cbda94
+ms.openlocfilehash: b17ab57cd7252c9a1cee7abb5a81359a965ca477
+ms.sourcegitcommit: 078149c9645ce220911ccd6ce54f984a4c92ce53
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/02/2022
-ms.locfileid: "67581820"
+ms.lasthandoff: 09/20/2022
+ms.locfileid: "67812104"
 ---
 # <a name="differences-between-custom-models-in-microsoft-sharepoint-syntex"></a>Diferencias entre modelos personalizados en Microsoft SharePoint Syntex 
 
@@ -89,7 +89,7 @@ Use la tabla siguiente para comprender cuándo usar el procesamiento de formular
 
 ## <a name="see-also"></a>Vea también
 
-[Aprendizaje: mejorar el rendimiento empresarial con AI Builder](/learn/paths/improve-business-performance-ai-builder/?source=learn)
+[Aprendizaje: mejorar el rendimiento empresarial con AI Builder](/training/paths/improve-business-performance-ai-builder/?source=learn)
 
 [Información general sobre la comprensión mediante documentos](document-understanding-overview.md)
 

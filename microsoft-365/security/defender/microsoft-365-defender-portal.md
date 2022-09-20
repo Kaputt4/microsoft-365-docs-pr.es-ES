@@ -24,12 +24,12 @@ ms.custom:
 - intro-overview
 ms.topic: conceptual
 adobe-target: true
-ms.openlocfilehash: 6c442d0a3a3394a29ad89e81add2a1608c4d675b
-ms.sourcegitcommit: 228fa13973bf7c2d91504703fab757f552ae40dd
+ms.openlocfilehash: 70a262cd53bed114bd8d4a8e737c796b13bd831a
+ms.sourcegitcommit: 078149c9645ce220911ccd6ce54f984a4c92ce53
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/01/2022
-ms.locfileid: "67516552"
+ms.lasthandoff: 09/20/2022
+ms.locfileid: "67809429"
 ---
 # <a name="microsoft-365-defender-portal"></a>Portal de Microsoft 365 Defender
 
@@ -146,7 +146,7 @@ Realice un seguimiento y responda a las amenazas emergentes con los siguientes M
 > Junto con el filtro Producto, se enumeran temas actuales, tipos de recursos (desde vídeos hasta seminarios web), niveles de familiaridad o experiencia con áreas de seguridad, roles de seguridad y características de producto.
 
 > [!TIP]
-> Hay muchas otras oportunidades de aprendizaje en [Microsoft Learn](/learn/). Encontrará formación de certificación como [Course MS-500T02-A: Implementing Microsoft 365 Threat Protection](/learn/certifications/courses/ms-500t02).
+> Hay muchas otras oportunidades de aprendizaje en [Microsoft Learn](/training/). Encontrará formación de certificación como [Course MS-500T02-A: Implementing Microsoft 365 Threat Protection](/training/certifications/courses/ms-500t02).
 
 ## <a name="send-us-your-feedback"></a>Envíenos sus comentarios
 
@@ -173,7 +173,7 @@ Con esta ruta de aprendizaje de Microsoft Learn, puede comprender Microsoft 365 
 |![Icono de aprendizaje de Microsoft 365 Defender.](../../media/microsoft-365-defender/m365-defender-secure-organization.svg)|Microsoft 365 Defender unifica las señales de amenazas entre puntos de conexión, identidades, correo electrónico y aplicaciones para proporcionar una protección integrada frente ataques cibernéticos sofisticados. Microsoft 365 Defender es una experiencia central desde la cual investigar y responder a incidentes y buscar proactivamente actividades de ciberseguridad malintencionadas en curso.<p> 1 h 38 min - Ruta de aprendizaje - 5 módulos|
 
 > [!div class="nextstepaction"]
-> [Iniciar >](/learn/paths/defender-detect-respond/)
+> [Iniciar >](/training/paths/defender-detect-respond/)
 
 
 ## <a name="see-also"></a>Vea también

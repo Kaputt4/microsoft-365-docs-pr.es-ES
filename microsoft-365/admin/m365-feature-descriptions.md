@@ -14,12 +14,12 @@ ms.custom:
 - Adm_ServiceDesc_top
 ms.assetid: 721676a0-5108-488e-ae0c-7316617d0006
 description: Obtenga información sobre la información disponible para las descripciones de características de Microsoft 365.
-ms.openlocfilehash: b0e9c5b1f0be3c5dc4d798efaf7c974ff55924be
-ms.sourcegitcommit: 80fddb7a071eee4801204929788531e93f7ba087
+ms.openlocfilehash: b2594cdf869073730c5483f995b3ee13259c579b
+ms.sourcegitcommit: 078149c9645ce220911ccd6ce54f984a4c92ce53
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/09/2022
-ms.locfileid: "67634698"
+ms.lasthandoff: 09/20/2022
+ms.locfileid: "67812038"
 ---
 # <a name="microsoft-365-feature-descriptions"></a>Descripciones de características de Microsoft 365
 
@@ -197,7 +197,7 @@ Microsoft Office 365 proporciona los siguientes recursos de ayuda y entrenamient
 
 **Ayuda en línea:** Los artículos y vídeos de ayuda están disponibles en cualquier vínculo de ayuda en línea del servicio, incluido el icono de ayuda de la barra de navegación superior del portal de Office 365 y Centro de administración de Microsoft 365. También puede buscar en toda la ayuda de Office 365 en [https://office.microsoft.com](https://go.microsoft.com/fwlink/p/?LinkId=272056).
 
-**Entrenamiento:** El entrenamiento está disponible a través de vídeos, eventos en directo grabados y clases que conducen a la certificación. Para obtener más información, consulte [Formación en vídeo de conceptos básicos de Microsoft 365](https://support.microsoft.com/office/microsoft-365-basics-video-training-396b8d9e-e118-42d0-8a0d-87d1f2f055fb), [Entrenamiento de Microsoft 365](https://support.microsoft.com/training), [para administradores y profesionales de TI](/learn/m365/), [para pequeñas empresas](/microsoft-365/admin/admin-video-library), [examinar el catálogo de aprendizaje completo](/learn/browse/), [obtener certificación de Microsoft](/learn/certifications/), [examinar todas las opciones de aprendizaje](/learn/browse/) y [ver eventos en directo y grabados](/learn/tv/).
+**Entrenamiento:** El entrenamiento está disponible a través de vídeos, eventos en directo grabados y clases que conducen a la certificación. Para obtener más información, consulte [Formación en vídeo de conceptos básicos de Microsoft 365](https://support.microsoft.com/office/microsoft-365-basics-video-training-396b8d9e-e118-42d0-8a0d-87d1f2f055fb), [Entrenamiento de Microsoft 365](https://support.microsoft.com/training), [para administradores y profesionales de TI](/training/m365/), [para pequeñas empresas](/microsoft-365/admin/admin-video-library), [examinar el catálogo de aprendizaje completo](/training/browse/), [obtener certificación de Microsoft](/certifications/), [examinar todas las opciones de aprendizaje](/training/browse/) y [ver eventos en directo y grabados](/training/tv/).
 
 **Comunidad:** La comunidad de Office 365 es un único destino para la información de soporte técnico de autoayuda. Dispone de la información más reciente para ayudar a los clientes a encontrar respuestas a una variedad de dudas técnicas, de facturación y de servicios a través de wikis, blogs y foros de soporte técnico. Los foros de ayuda los administra y modera un agente de soporte de Microsoft. En la página principal de Office 365 Community, los clientes pueden acceder a los siguientes recursos: foros, wikis, blogs. Para obtener más información, visite la [Comunidad de Office 365](https://techcommunity.microsoft.com/).
 

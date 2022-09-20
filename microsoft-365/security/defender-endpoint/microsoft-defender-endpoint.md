@@ -18,12 +18,12 @@ ms.custom: intro-overview
 ms.topic: conceptual
 ms.subservice: mde
 search.appverid: met150
-ms.openlocfilehash: 0d8d20777abbc211311502aa8c977a7adcc17e0b
-ms.sourcegitcommit: 9b133379196da2b3a4bb311b07ff274f43780f68
+ms.openlocfilehash: f55b7941eb180f9e3a2af7448cb92349af7e3a9c
+ms.sourcegitcommit: 078149c9645ce220911ccd6ce54f984a4c92ce53
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/14/2022
-ms.locfileid: "67700122"
+ms.lasthandoff: 09/20/2022
+ms.locfileid: "67809747"
 ---
 # <a name="microsoft-defender-for-endpoint"></a>Microsoft Defender para punto de conexión
 
@@ -173,4 +173,4 @@ Con esta ruta de aprendizaje de Microsoft Learn, podrá comprender Defender para
 |![Icono de aprendizaje de Microsoft 365 Defender.](../../media/microsoft-365-defender/m365-defender-secure-organization.svg)|Microsoft Defender para punto de conexión es una solución de seguridad de puntos de conexión que ofrece administración de amenazas y vulnerabilidades, protección de puntos de conexión, detección y respuesta de puntos de conexión, defensa contra amenazas móviles y servicios administrados en una única plataforma unificada.<p> 2 h 25 min - Ruta de aprendizaje - 9 módulos|
 
 > [!div class="nextstepaction"]
-> [Iniciar >](/learn/paths/defender-endpoint-fundamentals/)
+> [Iniciar >](/training/paths/defender-endpoint-fundamentals/)

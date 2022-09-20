@@ -15,12 +15,12 @@ ms.collection:
 - M365solutions
 ms.custom: seo-marvel-jun2020
 f1.keywords: NOCSH
-ms.openlocfilehash: 123f05cd89dbfc3c0e751b78695350cd41c1a2a9
-ms.sourcegitcommit: 0af064e8b6778060f1bd365378d69b16fc9949b5
+ms.openlocfilehash: 88eec0ad7b452f0624c298ef21812dd9d8587f37
+ms.sourcegitcommit: 078149c9645ce220911ccd6ce54f984a4c92ce53
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/15/2022
-ms.locfileid: "67730888"
+ms.lasthandoff: 09/20/2022
+ms.locfileid: "67810745"
 ---
 # <a name="to-identity-and-beyondone-architects-viewpoint"></a>A la identidad y más allá: punto de vista de un arquitecto
 
@@ -163,7 +163,7 @@ Obtenga información sobre [Microsoft Fluid Framework](https://techcommunity.mic
 
 En general, es cada vez más difícil trazar una línea clara entre Office 365 y otros servicios en las nubes de Microsoft. Lo veo como una gran ventaja para los clientes, ya que pueden beneficiarse de la innovación total en todo lo que hacemos incluso si usan un componente. Bastante genial y tiene implicaciones de gran alcance para muchos clientes.
 
-Hoy en día, me parece que muchos grupos de TI de clientes están estructurados en torno a "productos". Es lógico para un mundo local, ya que necesita un experto para cada producto específico. Sin embargo, estoy totalmente contento de que no tenga que depurar una base de datos de Active Directory o Exchange nunca más, ya que estos servicios se han movido a la nube. La automatización (qué tipo de nube es) elimina ciertos trabajos manuales repetitivos (mira lo que pasó con las fábricas). Sin embargo, estas tareas se reemplazan por requisitos más complejos para comprender la interacción entre servicios, el impacto, las necesidades empresariales, etc. Si está dispuesto a [aprender](/learn/), hay grandes oportunidades habilitadas por la transformación en la nube. Antes de saltar a la tecnología, a menudo hablo con los clientes sobre cómo administrar el cambio en las aptitudes de TI y las estructuras de equipo.
+Hoy en día, me parece que muchos grupos de TI de clientes están estructurados en torno a "productos". Es lógico para un mundo local, ya que necesita un experto para cada producto específico. Sin embargo, estoy totalmente contento de que no tenga que depurar una base de datos de Active Directory o Exchange nunca más, ya que estos servicios se han movido a la nube. La automatización (qué tipo de nube es) elimina ciertos trabajos manuales repetitivos (mira lo que pasó con las fábricas). Sin embargo, estas tareas se reemplazan por requisitos más complejos para comprender la interacción entre servicios, el impacto, las necesidades empresariales, etc. Si está dispuesto a [aprender](/training/), hay grandes oportunidades habilitadas por la transformación en la nube. Antes de saltar a la tecnología, a menudo hablo con los clientes sobre cómo administrar el cambio en las aptitudes de TI y las estructuras de equipo.
 
 Para todos los fans y desarrolladores de SharePoint, deje de preguntar "¿Cómo puedo hacer XYZ en SharePoint online?" Use [Power Automate](/power-automate/) (o Flow) para el flujo de trabajo, es una plataforma mucho más eficaz. Use [Azure Bot Framework](/azure/bot-service/) para crear una experiencia de usuario mejor para la lista de elementos 500-K. Empiece a usar [Microsoft Graph](https://developer.microsoft.com/graph/) en lugar de CSOM. [Microsoft Teams](/MicrosoftTeams/Teams-overview) incluye SharePoint, pero también un mundo más. Hay muchos otros ejemplos que puedo enumerar. Hay un universo vasto y maravilloso ahí fuera. Abra la puerta y [empiece a explorar]().
 

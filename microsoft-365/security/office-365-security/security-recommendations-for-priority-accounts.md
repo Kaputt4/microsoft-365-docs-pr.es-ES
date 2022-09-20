@@ -22,12 +22,12 @@ ms.custom: ''
 description: Los administradores pueden aprender a elevar la configuración de seguridad y usar informes, alertas e investigaciones para las cuentas de prioridad en sus organizaciones de Microsoft 365.
 ms.subservice: mdo
 ms.service: microsoft-365-security
-ms.openlocfilehash: 6193ebcce086c741b84af1f3dc701e6ac0340537
-ms.sourcegitcommit: 2b89bcff547e00be3d38dc8d1e6cbcf8f41eba42
+ms.openlocfilehash: 61a8dd68635c3ef71ca8573ce4d08451a581ba95
+ms.sourcegitcommit: 078149c9645ce220911ccd6ce54f984a4c92ce53
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/03/2022
-ms.locfileid: "67598920"
+ms.lasthandoff: 09/20/2022
+ms.locfileid: "67811338"
 ---
 # <a name="security-recommendations-for-priority-accounts-in-microsoft-365"></a>Recomendaciones de seguridad para cuentas prioritarias en Microsoft 365
 
@@ -115,7 +115,7 @@ Microsoft 365 proporciona los siguientes recursos para ayudar a informar a los u
 |Concepto|Recursos|Descripción|
 |---|---|---|
 |Microsoft 365|[Caminos de aprendizaje personalizables](/office365/customlearning/)|Estos recursos pueden ayudarle a organizar el entrenamiento para los usuarios de su organización.|
-|Centro de seguridad de Microsoft 365|[Módulo de aprendizaje: Protección de la organización con seguridad inteligente integrada de Microsoft 365](/learn/modules/security-with-microsoft-365)|Este módulo le permite describir cómo funcionan conjuntamente las características de seguridad de Microsoft 365 y articular las ventajas de estas características de seguridad.|
+|Centro de seguridad de Microsoft 365|[Módulo de aprendizaje: Protección de la organización con seguridad inteligente integrada de Microsoft 365](/training/modules/security-with-microsoft-365)|Este módulo le permite describir cómo funcionan conjuntamente las características de seguridad de Microsoft 365 y articular las ventajas de estas características de seguridad.|
 |Autenticación multifactor|[Verificación en dos pasos: ¿Cuál es la página de comprobación adicional?](/azure/active-directory/user-help/multi-factor-authentication-end-user-first-time)|Este artículo ayuda a los usuarios finales a comprender qué es la autenticación multifactor y por qué se usa en su organización.|
 |Aprendizaje de simulación de ataque|[Introducción al uso de aprendizaje de simulación de ataques](attack-simulation-training-get-started.md)|Entrenamiento de simulación de ataque en Microsoft Defender para Office 365 Plan 2 permite al administrador configurar, iniciar y realizar un seguimiento de ataques de suplantación de identidad simulados contra grupos específicos de usuarios.|
 

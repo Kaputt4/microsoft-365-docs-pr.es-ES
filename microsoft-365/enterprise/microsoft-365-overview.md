@@ -8,19 +8,19 @@ manager: scotv
 ms.date: 08/08/2022
 audience: ITPro
 ms.topic: article
-ms.service: o365-solutions
+ms.service: microsoft-365-enterprise
 ms.localizationpriority: high
 ms.collection: M365-subscription-management
 ms.custom:
 - it-pro
 - intro-overview
 description: Brinda una introducción a los componentes, planes y rutas de implementación de Microsoft 365 para empresas.
-ms.openlocfilehash: b4ebce35c1f642a6cfa8ee72489c1d8f531e3f67
-ms.sourcegitcommit: 702fba4b6e6210bb7933cdbff0ad72426fcb9ef2
+ms.openlocfilehash: a900a50738cb4e44b8be2e62cb8cfd7bc1d51ede
+ms.sourcegitcommit: 078149c9645ce220911ccd6ce54f984a4c92ce53
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/13/2022
-ms.locfileid: "67335768"
+ms.lasthandoff: 09/20/2022
+ms.locfileid: "67812082"
 ---
 # <a name="microsoft-365-for-enterprise-overview"></a>Información general de Microsoft 365 para empresas
 
@@ -154,7 +154,7 @@ Para más información y ejemplos de configuración de una pequeña y mediana em
 
 ![Aprendizaje de aspectos básicos de Microsoft 365.](../media/microsoft-365-overview/m365-fundamentals.svg)
 
-Para obtener más información sobre Microsoft 365 y sobre cómo obtener la certificación de Microsoft 365, puede empezar con los [Fundamentos de la certificación de Microsoft 365](/learn/paths/m365-fundamentals/).
+Para obtener más información sobre Microsoft 365 y sobre cómo obtener la certificación de Microsoft 365, puede empezar con los [Fundamentos de la certificación de Microsoft 365](/training/paths/m365-fundamentals/).
 
 ## <a name="see-also"></a>Consulte también
 

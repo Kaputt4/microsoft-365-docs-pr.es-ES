@@ -5,7 +5,8 @@ keywords: migrate server, server, 2012r2, 2016, server migration onboard Microso
 search.appverid: met150
 ms.mktglfcycl: deploy
 ms.sitesec: library
-ms.prod: m365-security
+ms.service: microsoft-365-security
+ms.subservice: mde
 ms.pagetype: security
 author: alekyaj
 ms.author: macapara
@@ -14,12 +15,12 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
-ms.openlocfilehash: 839966821d2137ab0a04af377b7444b2aaf14c08
-ms.sourcegitcommit: 2dedd0f594b817779e034afa6c4418def2382a22
+ms.openlocfilehash: feac94002669ae3e5fa1ddf58b8f191dc507f1c4
+ms.sourcegitcommit: 078149c9645ce220911ccd6ce54f984a4c92ce53
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/18/2022
-ms.locfileid: "67797092"
+ms.lasthandoff: 09/20/2022
+ms.locfileid: "67810832"
 ---
 # <a name="migrating-servers-from-microsoft-monitoring-agent-to-the-unified-solution"></a>Migrar servidores desde Microsoft Monitoring Agent a la solución unificada
 

@@ -21,12 +21,12 @@ search.appverid:
 - MOE150
 - MET150
 ms.custom: api
-ms.openlocfilehash: fbcf081bda20dd470837614c985de77d037673a3
-ms.sourcegitcommit: 10e6abe740e27000e223378eb17d657a47555fa8
+ms.openlocfilehash: 4040f5448768e191cfa4cfa71abb8380dee19ce3
+ms.sourcegitcommit: 078149c9645ce220911ccd6ce54f984a4c92ce53
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/31/2022
-ms.locfileid: "67471398"
+ms.lasthandoff: 09/20/2022
+ms.locfileid: "67812236"
 ---
 # <a name="create-an-app-to-access-microsoft-365-defender-without-a-user"></a>Creación de una aplicación para acceder a Microsoft 365 Defender sin un usuario
 
@@ -123,7 +123,7 @@ En este artículo se explica cómo:
 Para obtener más información sobre los tokens de Azure Active Directory, consulte el [tutorial de Azure AD](/azure/active-directory/develop/active-directory-v2-protocols-oauth-client-creds).
 
 > [!IMPORTANT]
-> Aunque los ejemplos de esta sección le animan a pegar valores secretos con fines de prueba, **nunca debe codificar de forma rígida los secretos** en una aplicación que se ejecuta en producción. Un tercero podría usar el secreto para acceder a los recursos. Puede ayudar a proteger los secretos de la aplicación mediante [Azure Key Vault](/azure/key-vault/general/about-keys-secrets-certificates). Para obtener un ejemplo práctico de cómo proteger la aplicación, consulte [Administración de secretos en las aplicaciones de servidor con Azure Key Vault](/learn/modules/manage-secrets-with-azure-key-vault/).
+> Aunque los ejemplos de esta sección le animan a pegar valores secretos con fines de prueba, **nunca debe codificar de forma rígida los secretos** en una aplicación que se ejecuta en producción. Un tercero podría usar el secreto para acceder a los recursos. Puede ayudar a proteger los secretos de la aplicación mediante [Azure Key Vault](/azure/key-vault/general/about-keys-secrets-certificates). Para obtener un ejemplo práctico de cómo proteger la aplicación, consulte [Administración de secretos en las aplicaciones de servidor con Azure Key Vault](/training/modules/manage-secrets-with-azure-key-vault/).
 
 ### <a name="get-an-access-token-using-powershell"></a>Obtención de un token de acceso mediante PowerShell
 
@@ -280,5 +280,5 @@ En el ejemplo siguiente se muestra cómo enviar una solicitud para obtener una l
 - [Creación de una aplicación con acceso de asociado multiinquilino a las API de Microsoft 365 Defender](api-partner-access.md)
 - [Más información sobre los límites de API y las licencias](api-terms.md)
 - [Descripción de los códigos de error](api-error-codes.md)
-- [Administración de secretos en las aplicaciones de servidor con Azure Key Vault](/learn/modules/manage-secrets-with-azure-key-vault/)
+- [Administración de secretos en las aplicaciones de servidor con Azure Key Vault](/training/modules/manage-secrets-with-azure-key-vault/)
 - [Autorización de OAuth 2.0 para el inicio de sesión de usuario y el acceso a la API](/azure/active-directory/develop/active-directory-v2-protocols-oauth-code)

@@ -20,12 +20,12 @@ search.appverid:
 - MET150
 description: Obtenga información sobre la solución eDiscovery (Premium) en Microsoft Purview. En este artículo se proporciona información general sobre eDiscovery (Premium) en Microsoft Purview, una herramienta que le ayudará a administrar investigaciones internas y externas. También se enmarcan los motivos empresariales para usar eDiscovery (Premium) para administrar las investigaciones legales.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 7d534012466300675a7143cdada0b43468027104
-ms.sourcegitcommit: 75d0403b4114bdd1d228ca05a284b9e514f6f2f3
+ms.openlocfilehash: 7f6841412402761d5eeb34162269bd659582e5e8
+ms.sourcegitcommit: 078149c9645ce220911ccd6ce54f984a4c92ce53
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/19/2022
-ms.locfileid: "66855095"
+ms.lasthandoff: 09/20/2022
+ms.locfileid: "67809625"
 ---
 # <a name="overview-of-microsoft-purview-ediscovery-premium"></a>Información general de Microsoft Purview eDiscovery (Premium)
 
@@ -123,4 +123,4 @@ Este es un diagrama de arquitectura de eDiscovery (Premium) que muestra el flujo
 
 ## <a name="training"></a>Formación
 
-Entrenar a los administradores de TI, los administradores de eDiscovery y los equipos de investigación de cumplimiento en los conceptos básicos de eDiscovery (Premium) puede ayudar a su organización a empezar a trabajar más rápidamente con las herramientas de eDiscovery de Microsoft 365. Microsoft 365 proporciona el siguiente recurso para ayudar a estos usuarios de su organización a empezar a trabajar con eDiscovery: [Describir las funcionalidades de eDiscovery y auditoría de Microsoft 365](/learn/modules/describe-ediscovery-capabilities-of-microsoft-365).
+Entrenar a los administradores de TI, los administradores de eDiscovery y los equipos de investigación de cumplimiento en los conceptos básicos de eDiscovery (Premium) puede ayudar a su organización a empezar a trabajar más rápidamente con las herramientas de eDiscovery de Microsoft 365. Microsoft 365 proporciona el siguiente recurso para ayudar a estos usuarios de su organización a empezar a trabajar con eDiscovery: [Describir las funcionalidades de eDiscovery y auditoría de Microsoft 365](/training/modules/describe-ediscovery-capabilities-of-microsoft-365).

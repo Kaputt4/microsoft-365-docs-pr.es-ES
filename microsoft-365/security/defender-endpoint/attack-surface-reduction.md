@@ -4,7 +4,8 @@ description: Las reglas de reducción de superficie expuesta a ataques pueden ay
 keywords: Reglas de reducción de superficie expuesta a ataques, asr, caderas, sistema de prevención de intrusiones del host, reglas de protección, anti-vulnerabilidad, antiexploit, vulnerabilidad de seguridad, prevención de infecciones, Microsoft Defender para punto de conexión
 ms.mktglfcycl: manage
 ms.sitesec: library
-ms.prod: m365-security
+ms.service: microsoft-365-security
+ms.subservice: mde
 ms.pagetype: security
 ms.localizationpriority: medium
 audience: ITPro
@@ -20,12 +21,12 @@ ms.collection:
 - m365initiative-m365-defender
 - M365-security-compliance
 search.appverid: met150
-ms.openlocfilehash: 0d8b70adb32cc20f0efc2b0df94ae4d6ebffefd1
-ms.sourcegitcommit: 2dedd0f594b817779e034afa6c4418def2382a22
+ms.openlocfilehash: 38b38a43c2531ab7ce4932ad9f00a04c9289fdc8
+ms.sourcegitcommit: 078149c9645ce220911ccd6ce54f984a4c92ce53
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/18/2022
-ms.locfileid: "67799272"
+ms.lasthandoff: 09/20/2022
+ms.locfileid: "67811777"
 ---
 # <a name="attack-surface-reduction-rules-overview"></a>Introducción a las reglas de reducción de superficie expuesta a ataques
 

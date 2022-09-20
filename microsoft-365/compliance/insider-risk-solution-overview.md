@@ -16,16 +16,16 @@ ms.collection:
 - m365solution-insiderrisk
 - m365initiative-compliance
 - m365solution-overview
-ms.openlocfilehash: 523aaf14d7eaecf1d69fd24587287aa4c9b89933
-ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
+ms.openlocfilehash: a6f7f2e33966898f98d1119dcffcc165bac19cb6
+ms.sourcegitcommit: 078149c9645ce220911ccd6ce54f984a4c92ce53
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/06/2022
-ms.locfileid: "66628757"
+ms.lasthandoff: 09/20/2022
+ms.locfileid: "67811972"
 ---
 # <a name="microsoft-purview-insider-risk-solutions"></a>Soluciones de riesgo interno de Microsoft Purview
 
-Los riesgos internos son una de las principales preocupaciones de los profesionales de seguridad y cumplimiento en el área de trabajo moderna. Los estudios del sector han demostrado que los riesgos internos a menudo se asocian a eventos o actividades específicos del usuario. La protección de su organización frente a estos riesgos puede ser difícil de identificar y difícil de mitigar. Los riesgos internos incluyen vulnerabilidades en una variedad de áreas y pueden causar problemas importantes para su organización, desde la pérdida de propiedad intelectual hasta el acoso en el lugar de trabajo, etc. En la ilustración siguiente se describen los riesgos internos comunes:
+Los riesgos internos son uno de los principales problemas de los profesionales de seguridad y cumplimiento en el área de trabajo moderna. Los estudios del sector han demostrado que los riesgos internos a menudo se asocian a eventos o actividades específicos del usuario. Proteger su organización frente a estos riesgos puede ser difícil a la hora de identificar y de mitigar. Los riesgos internos incluyen vulnerabilidades en una variedad de áreas y pueden causar problemas importantes para su organización, que van desde la pérdida de la propiedad intelectual hasta el acoso laboral, entre otros. En la ilustración siguiente se describen los riesgos internos comunes:
 
 ![Amenazas de riesgo internos.](../media/ir-solution-threats.png)
 
@@ -50,7 +50,7 @@ Las características de prevención de riesgos de Microsoft 365 están diseñada
 
 Para ayudar a proteger su organización frente a riesgos internos, use estas funcionalidades y características de Microsoft Purview.
 
-### <a name="communication-compliance"></a>Cumplimiento de comunicaciones
+### <a name="communication-compliance"></a>Cumplimiento de las comunicaciones
 
 [Cumplimiento de comunicaciones de Microsoft Purview](communication-compliance.md) ayuda a minimizar los riesgos de comunicación al ayudarle a detectar, capturar y actuar en mensajes inadecuados en su organización.
 
@@ -128,8 +128,8 @@ Microsoft proporciona los siguientes recursos para ayudar a informar y entrenar 
 
 | Solución o área | Recursos |
 |:------------------|:--------------|
-| Administrar el riesgo interno en Microsoft 365 |[Ruta de aprendizaje completa](/learn/paths/m365-compliance-insider) <br> Esta ruta de aprendizaje incluye todos los módulos de solución individuales para el cumplimiento de comunicaciones, la administración de riesgos internos, las barreras de información y la administración de acceso con privilegios. Seleccione esta ruta de aprendizaje para completar todos los módulos. |
-| Cumplimiento de comunicaciones | [Módulo de aprendizaje: Preparación del cumplimiento de la comunicación](/learn/modules/m365-compliance-insider-prepare-communication-compliance) <br> Este módulo le ayuda a aprender los conceptos básicos sobre cómo identificar y corregir infracciones de directivas de código de conducta con cumplimiento de comunicaciones, cubrir los requisitos previos necesarios antes de crear directivas de cumplimiento de comunicaciones y obtener información sobre los tipos de plantillas de directivas predefinidas integradas en el cumplimiento de la comunicación. |
-| Administración de riesgos internos | [Módulo de aprendizaje: Administración de riesgos internos](/learn/modules/m365-compliance-insider-manage-insider-risk) <br> Este módulo le ayuda a aprender cómo la administración de riesgos internos puede ayudar a prevenir, detectar y contener riesgos internos en una organización, a conocer los tipos de plantillas de directiva integradas predefinidas, a comprender los requisitos previos básicos necesarios antes de crear directivas de riesgo internos y a explicar los tipos de acciones que puede realizar en los casos de administración de riesgos internos. |
-| Barreras de información | [Módulo de aprendizaje: Planeamiento de barreras de información](/learn/modules/m365-compliance-insider-plan-information-barriers) <br> Este módulo le ayuda a aprender cómo las directivas de barreras de información pueden ayudar a su organización a mantener el cumplimiento de los estándares y regulaciones pertinentes del sector, enumera los tipos de situaciones en las que se aplicarían las barreras de información, ayuda a explicar el proceso de creación de una directiva de barrera de información y ayuda a explicar cómo solucionar problemas inesperados una vez que existen barreras de información. |
-| Administración del acceso con privilegios | [Módulo de aprendizaje: Implementación de la administración de acceso con privilegios](/learn/modules/m365-compliance-insider-implement-privileged-access-management) <br> Este módulo le ayuda a comprender la diferencia entre la administración de acceso con privilegios y la administración de identidades con privilegios, a comprender el flujo del proceso de administración de acceso con privilegios y a comprender los conceptos básicos sobre cómo configurar y habilitar la administración de acceso con privilegios. |
+| Administrar el riesgo interno en Microsoft 365 |[Ruta de aprendizaje completa](/training/paths/m365-compliance-insider) <br> Esta ruta de aprendizaje incluye todos los módulos de solución individuales para el cumplimiento de comunicaciones, la administración de riesgos internos, las barreras de información y la administración de acceso con privilegios. Seleccione esta ruta de aprendizaje para completar todos los módulos. |
+| Cumplimiento de las comunicaciones | [Módulo de aprendizaje: Preparación del cumplimiento de la comunicación](/training/modules/m365-compliance-insider-prepare-communication-compliance) <br> Este módulo le ayuda a aprender los conceptos básicos sobre cómo identificar y corregir infracciones de directivas de código de conducta con cumplimiento de comunicaciones, cubrir los requisitos previos necesarios antes de crear directivas de cumplimiento de comunicaciones y obtener información sobre los tipos de plantillas de directivas predefinidas integradas en el cumplimiento de la comunicación. |
+| Administración de riesgos internos | [Módulo de aprendizaje: Administración de riesgos internos](/training/modules/m365-compliance-insider-manage-insider-risk) <br> Este módulo le ayuda a aprender cómo la administración de riesgos internos puede ayudar a prevenir, detectar y contener riesgos internos en una organización, a conocer los tipos de plantillas de directiva integradas predefinidas, a comprender los requisitos previos básicos necesarios antes de crear directivas de riesgo internos y a explicar los tipos de acciones que puede realizar en los casos de administración de riesgos internos. |
+| Barreras de información | [Módulo de aprendizaje: Planeamiento de barreras de información](/training/modules/m365-compliance-insider-plan-information-barriers) <br> Este módulo le ayuda a aprender cómo las directivas de barreras de información pueden ayudar a su organización a mantener el cumplimiento de los estándares y regulaciones pertinentes del sector, enumera los tipos de situaciones en las que se aplicarían las barreras de información, ayuda a explicar el proceso de creación de una directiva de barrera de información y ayuda a explicar cómo solucionar problemas inesperados una vez que existen barreras de información. |
+| Administración del acceso con privilegios | [Módulo de aprendizaje: Implementación de la administración de acceso con privilegios](/training/modules/m365-compliance-insider-implement-privileged-access-management) <br> Este módulo le ayuda a comprender la diferencia entre la administración de acceso con privilegios y la administración de identidades con privilegios, a comprender el flujo del proceso de administración de acceso con privilegios y a comprender los conceptos básicos sobre cómo configurar y habilitar la administración de acceso con privilegios. |

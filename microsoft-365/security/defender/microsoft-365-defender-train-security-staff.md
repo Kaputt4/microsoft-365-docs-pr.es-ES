@@ -22,12 +22,12 @@ ms.topic: conceptual
 search.appverid:
 - MOE150
 - MET150
-ms.openlocfilehash: e619457ce420665ba1867480740a327aacdb618c
-ms.sourcegitcommit: 37e137535c4f70702afe1a5eeaa899c75ee02cfd
+ms.openlocfilehash: 3dcf5904bb4d1f620c9b4bbd44299408b6fc21eb
+ms.sourcegitcommit: 078149c9645ce220911ccd6ce54f984a4c92ce53
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/13/2022
-ms.locfileid: "67664689"
+ms.lasthandoff: 09/20/2022
+ms.locfileid: "67811928"
 ---
 # <a name="train-your-security-staff-for-microsoft-365-defender"></a>Entrenar al personal de seguridad para Microsoft 365 Defender
 
@@ -49,9 +49,9 @@ El contenido se estructura en tres niveles de conocimiento diferentes, con vario
 
 Use estas rutas de aprendizaje y sus módulos para comprender Microsoft 365 Defender y Microsoft Defender para punto de conexión, un módulo y una unidad a la vez.
 
- - [Detectar y responder a ataques cibernéticos con Microsoft 365 Defender](/learn/paths/defender-detect-respond/)
+ - [Detectar y responder a ataques cibernéticos con Microsoft 365 Defender](/training/paths/defender-detect-respond/)
 
- - [Proteja su organización con Microsoft Defender para punto de conexión](/learn/paths/defender-endpoint-fundamentals/)  
+ - [Proteja su organización con Microsoft Defender para punto de conexión](/training/paths/defender-endpoint-fundamentals/)  
 
 
 ## <a name="learning-paths-in-the-microsoft-365-defender-portal-learning-hub"></a>Rutas de aprendizaje en el centro de aprendizaje del portal de Microsoft 365 Defender

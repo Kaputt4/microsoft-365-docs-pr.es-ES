@@ -18,12 +18,12 @@ audience: ITPro
 ms.collection:
 - M365-security-compliance
 ms.topic: conceptual
-ms.openlocfilehash: 1d1eb2f292d5697eb3aabfbceaa89157e48473c3
-ms.sourcegitcommit: ecc04b5b8f84b34255a2d5e90b5ab596af0d16c7
+ms.openlocfilehash: 09c07fe5947d370c6641fac7b589dc96974d7b7d
+ms.sourcegitcommit: 078149c9645ce220911ccd6ce54f984a4c92ce53
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/01/2022
-ms.locfileid: "67495091"
+ms.lasthandoff: 09/20/2022
+ms.locfileid: "67811711"
 ---
 # <a name="whats-new-in-microsoft-365-defender"></a>Novedades de Microsoft 365 Defender
 
@@ -32,7 +32,7 @@ Enumera las nuevas características y funciones de Microsoft 365 Defender.
 Fuente RSS: para recibir notificaciones cuando esta página se actualice, copie y pegue la dirección URL siguiente en el lector de fuentes: 
 
 ```http
-https://docs.microsoft.com/api/search/rss?search=%22Lists+the+new+features+and+functionality+in+Microsoft+365+defender%22&locale=en-us
+https://learn.microsoft.com/api/search/rss?search=%22Lists+the+new+features+and+functionality+in+Microsoft+365+defender%22&locale=en-us
 ```
 
 Para obtener más información sobre las novedades de otros productos de seguridad de Microsoft Defender, consulte:
@@ -150,9 +150,8 @@ El equipo de operaciones de seguridad puede ver todas las acciones pendientes de
 
   El análisis de amenazas le ayuda a responder y minimizar el impacto de los ataques activos. También puede obtener información sobre los intentos de ataque bloqueados por Microsoft 365 Defender soluciones y tomar medidas preventivas que mitigan el riesgo de una mayor exposición y aumentan la resistencia. Como parte de la experiencia de seguridad unificada, el análisis de amenazas ahora está disponible para los titulares de licencias de Microsoft Defender para punto de conexión y Microsoft Defender para Office E5.
 
-## <a name="march-2021"></a>Marzo 2021
+## <a name="march-2021"></a>Marzo de 2021
 
 - [Tabla CloudAppEvents](advanced-hunting-cloudappevents-table.md)
 
   Busque información sobre eventos en varias aplicaciones y servicios en la nube cubiertos por Microsoft Defender for Cloud Apps. Esta tabla también incluye información disponible anteriormente en la `AppFileEvents` tabla.
-

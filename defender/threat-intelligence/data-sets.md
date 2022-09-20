@@ -8,12 +8,12 @@ ms.service: threat-intelligence
 ms.topic: conceptual
 ms.date: 08/02/2022
 ms.custom: template-concept
-ms.openlocfilehash: d9b7b7b14ceb6ffea0c844848e185f397e2c6da6
-ms.sourcegitcommit: c29af68260ba8676083674b3c70209bff2c2e362
+ms.openlocfilehash: 908d50e2fbf39bb953abbbcf7d004e78e836dd30
+ms.sourcegitcommit: 078149c9645ce220911ccd6ce54f984a4c92ce53
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/16/2022
-ms.locfileid: "67735732"
+ms.lasthandoff: 09/20/2022
+ms.locfileid: "67811206"
 ---
 # <a name="data-sets"></a>Conjuntos de datos
 
@@ -230,7 +230,7 @@ Cuando un usuario se expande en un hash SHA1, el usuario podrá ver detalles sob
 
 ## <a name="subdomains"></a>Subdominios
 
-Un subdominio es un dominio de Internet, que forma parte de un dominio principal. Los subdominios también se conocen como "hosts". Por ejemplo,`docs.microsoft.com` es un subdominio de `microsoft.com`. Para cada subdominio, podría haber un nuevo conjunto de direcciones IP en las que el dominio se resuelve y esto puede ser un excelente origen de datos para buscar la infraestructura relacionada.
+Un subdominio es un dominio de Internet, que forma parte de un dominio principal. Los subdominios también se conocen como "hosts". Por ejemplo,`learn.microsoft.com` es un subdominio de `microsoft.com`. Para cada subdominio, podría haber un nuevo conjunto de direcciones IP en las que el dominio se resuelve y esto puede ser un excelente origen de datos para buscar la infraestructura relacionada.
 
 Nuestros datos de subdominio incluyen lo siguiente:
 

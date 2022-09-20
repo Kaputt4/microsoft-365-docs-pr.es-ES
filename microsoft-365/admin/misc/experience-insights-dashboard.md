@@ -8,12 +8,12 @@ ms.topic: overview
 ms.service: o365-administration
 ms.localizationpriority: medium
 description: Obtenga un informe periódico sobre cómo los usuarios de su organización usan los servicios de Microsoft 365 y explore cada gráfico para obtener más información.
-ms.openlocfilehash: daedfcee251619df1adb1d228b13036150dea35d
-ms.sourcegitcommit: 10e6abe740e27000e223378eb17d657a47555fa8
+ms.openlocfilehash: e95fee4f393d9c73228b0e2f4c23fb7abedaf3a3
+ms.sourcegitcommit: 078149c9645ce220911ccd6ce54f984a4c92ce53
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/31/2022
-ms.locfileid: "67475447"
+ms.lasthandoff: 09/20/2022
+ms.locfileid: "67811185"
 ---
 # <a name="microsoft-365-experience-insights-dashboard"></a>Panel de información sobre la experiencia de Microsoft 365
 
@@ -95,7 +95,7 @@ La puntuación de adopción admite el recorrido hacia la transformación digital
 
 ### <a name="take-training-for-adoption-specialists"></a>Capacitación para especialistas en adopción
 
-En este curso introductorio, aprenderá los seis elementos críticos para impulsar la adopción de sus servicios en la nube de Microsoft para ofrecer valor a su empresa. Este curso es aplicable a cualquier empresa de tamaño y usa Office 365 y Microsoft Teams como servicio de ejemplo para crear escenarios reales. Para obtener más información sobre la formación para especialistas en adopción, consulte [Uso del marco de adopción de servicios de Microsoft para impulsar la adopción en su empresa](/learn/paths/m365-service-adoption).
+En este curso introductorio, aprenderá los seis elementos críticos para impulsar la adopción de sus servicios en la nube de Microsoft para ofrecer valor a su empresa. Este curso es aplicable a cualquier empresa de tamaño y usa Office 365 y Microsoft Teams como servicio de ejemplo para crear escenarios reales. Para obtener más información sobre la formación para especialistas en adopción, consulte [Uso del marco de adopción de servicios de Microsoft para impulsar la adopción en su empresa](/training/paths/m365-service-adoption).
 
 ### <a name="join-the-adoption-community"></a>Unirse a la comunidad de adopción
 

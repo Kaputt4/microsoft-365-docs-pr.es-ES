@@ -1026,6 +1026,8 @@
           href: data-classification-activity-explorer.md
         - name: Etiquetar acciones notificadas en el Explorador de actividades
           href: data-classification-activity-explorer-available-events.md
+        - name: Aumentar la precisión del clasificador
+          href: data-classification-increase-accuracy.md
     - name: Etiquetas de confidencialidad
       items:
         - name: Información sobre las etiquetas de confidencialidad

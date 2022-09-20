@@ -20,12 +20,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Microsoft Purview ofrece tres herramientas de exhibición de documentos electrónicos que puede usar para buscar y exportar contenido que se encuentra en diferentes ubicaciones, como buzones de Exchange, sitios de SharePoint y OneDrive para la Empresa, Grupos de Microsoft 365, Microsoft Teams y conversaciones Skype Empresarial. eDiscovery (Estándar) y eDiscovery (Premium) proporcionan muchas características adicionales para ayudarle a administrar las investigaciones.
-ms.openlocfilehash: c35b0c92ce38fecf0aac31b72037d9cbe3e05073
-ms.sourcegitcommit: ab32c6e19af08837aaa84a058653c3a209d366ba
+ms.openlocfilehash: a0c30c95d92a6bd0cf1e3fd81c866fde8947ba31
+ms.sourcegitcommit: 078149c9645ce220911ccd6ce54f984a4c92ce53
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/26/2022
-ms.locfileid: "67445168"
+ms.lasthandoff: 09/20/2022
+ms.locfileid: "67812016"
 ---
 # <a name="microsoft-purview-ediscovery-solutions"></a>Soluciones de exhibición de documentos electrónicos de Microsoft Purview
 
@@ -197,4 +197,4 @@ Para ver qué características de eDiscovery se han lanzado, se están implement
 
 ## <a name="training"></a>Formación
 
-El entrenamiento de los administradores de TI, los administradores de eDiscovery y los equipos de investigación de cumplimiento en los conceptos básicos de búsqueda de contenido, exhibición de documentos electrónicos (estándar) y exhibición de documentos electrónicos (Premium) puede ayudar a su organización a empezar a trabajar más rápidamente con las herramientas de eDiscovery de Microsoft 365. Microsoft 365 proporciona el siguiente recurso para ayudar a estos usuarios de su organización a empezar a trabajar con eDiscovery: [Describir las funcionalidades de eDiscovery y auditoría de Microsoft 365](/learn/modules/describe-ediscovery-capabilities-of-microsoft-365).
+El entrenamiento de los administradores de TI, los administradores de eDiscovery y los equipos de investigación de cumplimiento en los conceptos básicos de búsqueda de contenido, exhibición de documentos electrónicos (estándar) y exhibición de documentos electrónicos (Premium) puede ayudar a su organización a empezar a trabajar más rápidamente con las herramientas de eDiscovery de Microsoft 365. Microsoft 365 proporciona el siguiente recurso para ayudar a estos usuarios de su organización a empezar a trabajar con eDiscovery: [Describir las funcionalidades de eDiscovery y auditoría de Microsoft 365](/training/modules/describe-ediscovery-capabilities-of-microsoft-365).

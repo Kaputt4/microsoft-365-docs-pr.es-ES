@@ -20,12 +20,12 @@ ms.collection:
 ms.topic: article
 ms.custom: seo-marvel-apr2020
 search.appverid: met150
-ms.openlocfilehash: aaf1ab874eddaae385cf3eaf3f0e3fb0bea8d877
-ms.sourcegitcommit: 9b133379196da2b3a4bb311b07ff274f43780f68
+ms.openlocfilehash: 0203f5df758a530c48bee22d4a3ea6371f1f57a7
+ms.sourcegitcommit: 078149c9645ce220911ccd6ce54f984a4c92ce53
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/14/2022
-ms.locfileid: "67741574"
+ms.lasthandoff: 09/20/2022
+ms.locfileid: "67812544"
 ---
 # <a name="proactively-hunt-for-threats-with-advanced-hunting-in-microsoft-365-defender"></a>Búsqueda proactiva de amenazas con la búsqueda avanzada de Microsoft 365 Defender
 
@@ -71,8 +71,19 @@ Los datos de búsqueda avanzada se pueden clasificar en dos tipos distintos, cad
 - **Datos de eventos o de actividad**: rellena tablas sobre alertas, eventos de seguridad, eventos del sistema y evaluaciones rutinarias. La búsqueda avanzada recibe estos datos casi inmediatamente después de que los sensores que los recopilan los transmitan correctamente a los servicios en la nube correspondientes. Por ejemplo, puede consultar datos de eventos de sensores en buen estado en estaciones de trabajo o controladores de dominio casi inmediatamente después de que estén disponibles en Microsoft Defender para punto de conexión y Microsoft Defender for Identity.
 - **Datos de entidad**: rellena tablas con información sobre usuarios y dispositivos. Estos datos proceden tanto de orígenes de datos relativamente estáticos como de orígenes dinámicos, como entradas de Active Directory y registros de eventos. Para proporcionar datos nuevos, las tablas se actualizan con cualquier información nueva cada 15 minutos, agregando filas que podrían no estar completamente rellenadas. Cada 24 horas, los datos se consolidan para insertar un registro que contiene el conjunto de datos más reciente y completo sobre cada entidad.
 
+
 ## <a name="time-zone"></a>Zona horaria
-La información de la hora en la búsqueda avanzada está en la zona horaria UTC (Universal Time Coordinated).
+### <a name="queries"></a>Consultas
+Los datos de búsqueda avanzados usan la zona horaria UTC (coordenadas horarias universales). 
+![Captura de pantalla del intervalo de tiempo personalizado.](../../media/custom-time-range.png)
+
+Las consultas deben crearse en UTC.
+
+### <a name="results"></a>Resultados
+Los resultados de búsqueda avanzados se convierten en la [zona horaria](m365d-time-zone.md) establecida en Microsoft 365 Defender. 
+
+
+
 
 ## <a name="related-topics"></a>Temas relacionados
 - [Elegir entre modos de búsqueda guiados y avanzados](advanced-hunting-modes.md)

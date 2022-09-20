@@ -18,12 +18,12 @@ ms.custom:
 f1.keywords: NOCSH
 recommendations: false
 description: Obtenga información sobre los procedimientos recomendados de gobernanza para las herramientas de colaboración de Microsoft 365, incluidos Grupos de Microsoft 365, Teams, SharePoint y Yammer.
-ms.openlocfilehash: d67774bbf76665f7d278339e6dd24d0e9f195c6c
-ms.sourcegitcommit: 0af064e8b6778060f1bd365378d69b16fc9949b5
+ms.openlocfilehash: 326611359b7146405664c85623122de48204e9c7
+ms.sourcegitcommit: 078149c9645ce220911ccd6ce54f984a4c92ce53
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/15/2022
-ms.locfileid: "67730559"
+ms.lasthandoff: 09/20/2022
+ms.locfileid: "67811294"
 ---
 # <a name="what-is-collaboration-governance"></a>¿Qué es la gobernanza de la colaboración?
 
@@ -177,7 +177,7 @@ Estos módulos de entrenamiento de Microsoft Learn pueden ayudarle a aprender la
 |![Icono de entrenamiento de protección de la información.](../media/information-protection-governance.svg)|La cantidad de datos que se generan hoy está creciendo más rápido que nunca, los empleados quieren hacer su trabajo en todas partes y el panorama normativo cambia constantemente. Las soluciones de Microsoft para el gobierno y la protección de la información ayudan a las organizaciones a lograr el equilibrio adecuado entre mantener la protección de los datos y la productividad de los usuarios. Esta ruta de aprendizaje puede ayudarle a preparar los certificados Microsoft 365 Certified: Security Administrator Associate y Microsoft 365 Certified: Enterprise Administration Expert.<br><br>5 h 13 minutos - Ruta de aprendizaje - 7 módulos|
 
 > [!div class="nextstepaction"]
-> [Iniciar >](/learn/modules/m365-compliance-information-governance/introduction/)
+> [Iniciar >](/training/modules/m365-compliance-information-governance/introduction/)
 
 <br><br>
 
@@ -186,16 +186,16 @@ Estos módulos de entrenamiento de Microsoft Learn pueden ayudarle a aprender la
 |![Icono de entrenamiento de Teams.](../media/protect-enterprise-information-microsoft-365.svg)|Proteger y asegurar la información de su organización es más difícil que nunca. La ruta de aprendizaje Proteger la información de la empresa con Microsoft 365 analiza cómo proteger su información confidencial de un uso excesivo o indebido accidental, cómo descubrir y clasificar los datos, cómo protegerlos con etiquetas de confidencialidad y cómo supervisar y analizar su información confidencial para protegerla contra su pérdida. Esta ruta de aprendizaje puede ayudarle a prepararse para las certificaciones Microsoft 365 Certified: Security Administrator Associate y Microsoft 365 Certified: Enterprise Administration Expert.<br><br>1 h - Ruta de aprendizaje: 5 módulos|
 
 > [!div class="nextstepaction"]
-> [Iniciar >](/learn/modules/m365-security-info-overview/introduction/)
+> [Iniciar >](/training/modules/m365-security-info-overview/introduction/)
 
 #### <a name="security-and-compliance"></a>Seguridad y cumplimiento
 
 |Aprendizaje:|Demuestre conocimientos básicos de las funciones del Centro de seguridad y cumplimiento normativo de Microsoft 365|
 |:---|:---|
-|![Icono de entrenamiento de seguridad y cumplimiento.](../media/microsoft-365-security-and-compliance-capabilities.svg)|Obtenga información sobre las áreas de soluciones de seguridad y cumplimiento de Microsoft 365 y las funcionalidades disponibles para ayudar a las empresas a proteger sus empresas y cumplir con los requisitos reglamentarios. Si no está familiarizado con los conceptos básicos de informática en la nube, le recomendamos que tome [Conceptos en la nube: principios de la informática en la nube](/learn/modules/principles-cloud-computing/index).<br><br>3 h 11 min - Ruta de aprendizaje - 8 módulos|
+|![Icono de entrenamiento de seguridad y cumplimiento.](../media/microsoft-365-security-and-compliance-capabilities.svg)|Obtenga información sobre las áreas de soluciones de seguridad y cumplimiento de Microsoft 365 y las funcionalidades disponibles para ayudar a las empresas a proteger sus empresas y cumplir con los requisitos reglamentarios. Si no está familiarizado con los conceptos básicos de informática en la nube, le recomendamos que tome [Conceptos en la nube: principios de la informática en la nube](/training/modules/principles-cloud-computing/index).<br><br>3 h 11 min - Ruta de aprendizaje - 8 módulos|
 
 > [!div class="nextstepaction"]
-> [Iniciar >](/learn/modules/what-is-m365/1-introduction/)
+> [Iniciar >](/training/modules/what-is-m365/1-introduction/)
 
 ## <a name="illustrations"></a>Ilustraciones
 

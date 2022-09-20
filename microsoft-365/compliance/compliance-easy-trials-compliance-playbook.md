@@ -16,12 +16,12 @@ search.appverid:
 - MET150
 description: Cuaderno de estrategias de prueba de soluciones de Microsoft Purview.
 ms.custom: trial-playbook
-ms.openlocfilehash: e79986eb4b74e675770825fa621cdfdfd59ac047
-ms.sourcegitcommit: 173f696dc8f81259d852775572a6938ec39f6115
+ms.openlocfilehash: 484fddb8b9e8f4c09296a1bf67e116fa3ca1223a
+ms.sourcegitcommit: 078149c9645ce220911ccd6ce54f984a4c92ce53
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/10/2022
-ms.locfileid: "67643881"
+ms.lasthandoff: 09/20/2022
+ms.locfileid: "67809581"
 ---
 # <a name="trial-playbook-microsoft-purview-solutions"></a>Cuaderno de estrategias de prueba: soluciones de Microsoft Purview
 
@@ -356,7 +356,7 @@ Para acceder a eDiscovery (Premium) o ser agregado como miembro de un caso de eD
 
 Más organizaciones usan la solución eDiscovery (Premium) en Microsoft 365 para los procesos críticos de eDiscovery. Esto incluye responder a solicitudes normativas, investigaciones y litigios.
 
-1. Administrar eDiscovery (Premium): [obtenga información sobre cómo configurar eDiscovery (Premium), administrar casos mediante el Centro de cumplimiento de seguridad &, administrar un flujo de trabajo en Advanced eDiscovery y analizar Advanced eDiscovery resultados de búsqueda](/learn/modules/manage-advanced-ediscovery).
+1. Administrar eDiscovery (Premium): [obtenga información sobre cómo configurar eDiscovery (Premium), administrar casos mediante el Centro de cumplimiento de seguridad &, administrar un flujo de trabajo en Advanced eDiscovery y analizar Advanced eDiscovery resultados de búsqueda](/training/modules/manage-advanced-ediscovery).
 1. [Creación de un caso de eDiscovery](advanced-ediscovery-new-case-format.md) con el nuevo formato de caso de eDiscovery Premium
 1. [Cerrar o eliminar un caso](close-or-delete-case.md): cuando el caso o la investigación hayan terminado, puede cerrarlos o eliminarlos. También puede volver a abrir un caso cerrado.
 

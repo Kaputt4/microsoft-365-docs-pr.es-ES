@@ -22,12 +22,12 @@ ms.collection:
 ms.topic: conceptual
 ms.custom: autoir
 ms.reviewer: evaldm, isco
-ms.openlocfilehash: a72e5df2f6e46956d857160da72734b94a3b6a30
-ms.sourcegitcommit: 10e6abe740e27000e223378eb17d657a47555fa8
+ms.openlocfilehash: 102c67c4da898f0d6b80072e416f1bc5b141f9d5
+ms.sourcegitcommit: 078149c9645ce220911ccd6ce54f984a4c92ce53
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/31/2022
-ms.locfileid: "67481116"
+ms.lasthandoff: 09/20/2022
+ms.locfileid: "67812192"
 ---
 # <a name="automated-investigation-and-response-in-microsoft-365-defender"></a>Investigación y respuesta automatizadas en Microsoft 365 Defender
 
@@ -118,7 +118,7 @@ Use este módulo de aprendizaje de Microsoft Learn para comprender cómo Microso
 |![Automatice la recuperación automática con Microsoft 365 Defender icono de entrenamiento.](../../media/m365d-autoir/m365-defender-auto-self-healing.svg)| Microsoft 365 Defender usa la inteligencia artificial para automatizar la corrección de incidentes, lo que ayuda al equipo de operaciones de seguridad a abordar las amenazas de forma más eficaz y eficaz. <p> 11 min - 5 unidades |
 
 > [!div class="nextstepaction"]
-> [Iniciar >](/learn/modules/defender-self-healing/)
+> [Iniciar >](/training/modules/defender-self-healing/)
 
 ## <a name="next-steps"></a>Pasos siguientes
 
