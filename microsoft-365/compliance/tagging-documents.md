@@ -2,8 +2,8 @@
 title: Etiquetar documentos en un conjunto de revisión
 f1.keywords:
 - NOCSH
-ms.author: v-tophillips
-author: v-tophillips
+ms.author: robmazz
+author: robmazz
 manager: laurawi
 ms.date: ''
 audience: Admin
@@ -17,12 +17,12 @@ search.appverid:
 ms.assetid: ''
 description: El etiquetado de documentos en un conjunto de revisión ayuda a quitar contenido innecesario e identificar contenido relevante en un caso de exhibición de documentos electrónicos (Premium).
 ms.custom: seo-marvel-mar2020
-ms.openlocfilehash: 2cd1243f520be21cf27c810a5f2dc2e4a033a33f
-ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
+ms.openlocfilehash: f3b250dad79b7e22b2cea71d18fab6eb053e4ce8
+ms.sourcegitcommit: 433f5b448a0149fcf462996bc5c9b45d17bd46c6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/06/2022
-ms.locfileid: "66623747"
+ms.lasthandoff: 09/20/2022
+ms.locfileid: "67819191"
 ---
 # <a name="tag-documents-in-a-review-set-in-ediscovery-premium"></a>Etiquetar documentos en un conjunto de revisión en eDiscovery (Premium)
 

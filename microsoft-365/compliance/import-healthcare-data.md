@@ -2,8 +2,8 @@
 title: Configuración de un conector para importar datos genéricos de auditoría sanitaria
 f1.keywords:
 - NOCSH
-ms.author: v-tophillips
-author: v-tophillips
+ms.author: robmazz
+author: robmazz
 manager: laurawi
 ms.date: 07/15/2022
 audience: Admin
@@ -14,12 +14,12 @@ search.appverid:
 - MET150
 ms.collection: M365-security-compliance
 description: Los administradores pueden configurar un conector de datos para importar datos de registros médicos electrónicos (EHR) de su sistema sanitario a Microsoft 365. Esto le permite usar los datos de EHR en directivas de administración de riesgos internos para ayudarle a detectar la actividad de acceso no autorizado a los datos de los pacientes por parte de los empleados.
-ms.openlocfilehash: 00d0419a2db39642b87797254f89dc1c721b69e2
-ms.sourcegitcommit: 61df6377a6185a8b55e668cfb81adbd8462a9cce
+ms.openlocfilehash: c78d5c686bb8e3894363dd60818fb6ec011004fb
+ms.sourcegitcommit: 433f5b448a0149fcf462996bc5c9b45d17bd46c6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/29/2022
-ms.locfileid: "67071533"
+ms.lasthandoff: 09/20/2022
+ms.locfileid: "67823021"
 ---
 # <a name="set-up-a-connector-to-import-healthcare-ehr-audit-data-preview"></a>Configuración de un conector para importar datos de auditoría de EHR de atención sanitaria (versión preliminar)
 

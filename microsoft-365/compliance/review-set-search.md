@@ -2,8 +2,8 @@
 title: Consulta del contenido de un conjunto de revisión
 f1.keywords:
 - NOCSH
-ms.author: v-tophillips
-author: v-tophillips
+ms.author: robmazz
+author: robmazz
 manager: laurawi
 ms.date: ''
 audience: Admin
@@ -17,12 +17,12 @@ search.appverid:
 ms.assetid: ''
 description: Obtenga información sobre cómo crear y ejecutar una consulta en un conjunto de revisión para organizar el contenido para una revisión más eficaz en un caso de Microsoft Purview eDiscovery (Premium).
 ms.custom: seo-marvel-mar2020
-ms.openlocfilehash: b40ab6818b4063a0b160ab9a41fdded6f7e7d37e
-ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
+ms.openlocfilehash: 707d6c31567ea7179b0e055abf1108ee4777a7ef
+ms.sourcegitcommit: 433f5b448a0149fcf462996bc5c9b45d17bd46c6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/06/2022
-ms.locfileid: "66623769"
+ms.lasthandoff: 09/20/2022
+ms.locfileid: "67819235"
 ---
 # <a name="query-and-filter-content-in-a-review-set"></a>Consultar y filtrar el contenido de un conjunto de revisión
 

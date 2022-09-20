@@ -2,8 +2,8 @@
 title: Asignar permisos de exhibición de documentos electrónicos en el portal de cumplimiento Microsoft Purview
 f1.keywords:
 - NOCSH
-ms.author: v-tophillips
-author: v-tophillips
+ms.author: robmazz
+author: robmazz
 manager: laurawi
 audience: Admin
 ms.topic: article
@@ -20,12 +20,12 @@ description: Asigne los permisos necesarios para realizar tareas relacionadas co
 ms.custom:
 - seo-marvel-apr2020
 - admindeeplinkCOMPLIANCE
-ms.openlocfilehash: f8ba8873523372d599e6a40bccb5a1312b2bfe67
-ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
+ms.openlocfilehash: 4e1c1bdcda0f4912eefe65dc846338cceeae252f
+ms.sourcegitcommit: 433f5b448a0149fcf462996bc5c9b45d17bd46c6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/06/2022
-ms.locfileid: "66628911"
+ms.lasthandoff: 09/20/2022
+ms.locfileid: "67823329"
 ---
 # <a name="assign-ediscovery-permissions-in-the-compliance-portal"></a>Asignación de permisos de eDiscovery en el portal de cumplimiento
 
@@ -86,7 +86,7 @@ En la página **Permisos** del portal de cumplimiento, también puede asignar a 
 
 En la tabla siguiente se enumeran los roles RBAC relacionados con eDiscovery en el portal de cumplimiento e indican los grupos de roles integrados a los que se asigna cada rol de forma predeterminada.
   
-| Role | Administrador de cumplimiento | Administrador de eDiscovery & Administrador | Administración de la organización | Reviewer |
+| Rol | Administrador de cumplimiento | Administrador de eDiscovery & Administrador | Administración de la organización | Reviewer |
 |:-----|:-----:|:-----:|:-----:|:-----:|
 |Administración de casos|![Marca de verificación.](../media/checkmark.png)|![Marca de verificación.](../media/checkmark.png)|![Marca de verificación.](../media/checkmark.png)||
 |Comunicación||![Marca de verificación.](../media/checkmark.png)|||
@@ -105,7 +105,7 @@ En las secciones siguientes se describen cada uno de los roles de RBAC relaciona
 
 Este rol permite a los usuarios crear, editar, eliminar y controlar el acceso a casos de exhibición de documentos electrónicos (estándar) y exhibición de documentos electrónicos (Premium) en el portal de cumplimiento. Como se explicó anteriormente, se debe asignar a un usuario el rol Administración de casos para poder usar el cmdlet **Add-eDiscoveryCaseAdmin** para convertirlo en administrador de eDiscovery.
 
-Para más información, vea:
+Para obtener más información, consulte:
 
 - [Introducción a eDiscovery (Estándar)](get-started-core-ediscovery.md)
 

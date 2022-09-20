@@ -2,8 +2,8 @@
 title: Configuración de un conector para archivar datos de negociación de Reuters en Microsoft 365
 f1.keywords:
 - NOCSH
-ms.author: v-tophillips
-author: v-tophillips
+ms.author: robmazz
+author: robmazz
 manager: laurawi
 ms.date: ''
 audience: Admin
@@ -12,12 +12,12 @@ ms.service: O365-seccomp
 ms.localizationpriority: medium
 ms.collection: M365-security-compliance
 description: Los administradores pueden configurar un conector para importar y archivar datos de Reuters Dealing de Veritas a Microsoft 365. Este conector le permite archivar datos de orígenes de datos de terceros en Microsoft 365. Después de archivar estos datos, puede usar características de cumplimiento como la suspensión legal, la búsqueda de contenido y las directivas de retención para administrar datos de terceros.
-ms.openlocfilehash: 543d5680b61bda73af8057b983d33ee8c76c589a
-ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
+ms.openlocfilehash: 75555b090f44fcc5c1319bd3cd2cc62a1d509bb6
+ms.sourcegitcommit: 433f5b448a0149fcf462996bc5c9b45d17bd46c6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/06/2022
-ms.locfileid: "66632932"
+ms.lasthandoff: 09/20/2022
+ms.locfileid: "67822911"
 ---
 # <a name="set-up-a-connector-to-archive-reuters-dealing-data"></a>Configuración de un conector para archivar datos de negociación de Reuters
 
@@ -37,7 +37,7 @@ En la información general siguiente se explica el proceso de uso de un conector
 
 3. El conector Deuters Dealing que se crea en el portal de cumplimiento se conecta al sitio Veritas Merge1 todos los días y transfiere el contenido a una ubicación segura de Azure Storage en la nube de Microsoft.
 
-4. El conector importa elementos a los buzones de usuarios específicos mediante el valor de la propiedad *Email* de la asignación automática de usuarios, como se describe en [el paso 3](#step-3-map-users-and-complete-the-connector-setup). Se crea una subcarpeta en la carpeta Bandeja de entrada denominada **Reuters Dealing en los buzones** de usuario y los elementos se importan a esa carpeta. El conector determina a qué buzón se van a importar elementos mediante el valor de la propiedad *Email* . Cada elemento de negociación de Reuters contiene esta propiedad, que se rellena con la dirección de correo electrónico de cada participante del elemento.
+4. El conector importa elementos a los buzones de usuarios específicos mediante el valor de la propiedad *Email* de la asignación automática de usuarios, tal como se describe en el [paso 3](#step-3-map-users-and-complete-the-connector-setup). Se crea una subcarpeta en la carpeta Bandeja de entrada denominada **Reuters Dealing en los buzones** de usuario y los elementos se importan a esa carpeta. El conector determina a qué buzón se van a importar elementos mediante el valor de la propiedad *Email*. Cada elemento de negociación de Reuters contiene esta propiedad, que se rellena con la dirección de correo electrónico de cada participante del elemento.
 
 ## <a name="before-you-begin"></a>Antes de empezar
 
@@ -73,7 +73,7 @@ Para asignar usuarios y completar la configuración del conector en el portal de
 
 1. En la página **Map Reuters Dealing users to Microsoft 365 users (Asignar a los usuarios de Reuters a usuarios de Microsoft 365** ), habilite la asignación automática de usuarios.
 
-   Los elementos de negociación de Reuters incluyen una propiedad denominada *Email*, que contiene direcciones de correo electrónico para los usuarios de su organización. Si el conector puede asociar esta dirección a un usuario de Microsoft 365, los elementos se importan al buzón de ese usuario.
+   Los elementos de negociación de Reuters incluyen una propiedad denominada *Email*, que contiene direcciones de correo electrónico para los usuarios de la organización. Si el conector puede asociar esta dirección a un usuario de Microsoft 365, los elementos se importan al buzón de ese usuario.
 
 2. Haga clic en **Siguiente**, revise la configuración y vaya a la página **Conectores de datos** para ver el progreso del proceso de importación del nuevo conector.
 

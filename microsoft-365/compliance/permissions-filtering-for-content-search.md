@@ -2,8 +2,8 @@
 title: Configuración del filtrado de permisos para eDiscovery
 f1.keywords:
 - NOCSH
-ms.author: v-tophillips
-author: v-tophillips
+ms.author: robmazz
+author: robmazz
 manager: laurawi
 ms.date: ''
 audience: Admin
@@ -20,12 +20,12 @@ search.appverid:
 ms.assetid: 1adffc35-38e5-4f7d-8495-8e0e8721f377
 description: Use el filtrado de permisos de búsqueda para permitir que los administradores de eDiscovery busquen solo un subconjunto de buzones y sitios de la organización.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 4ebd42882c7b914fe661df589382482d9f0595bc
-ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
+ms.openlocfilehash: 0017e523f3e7a0011d5a83b199520eb0bd918c87
+ms.sourcegitcommit: 433f5b448a0149fcf462996bc5c9b45d17bd46c6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/06/2022
-ms.locfileid: "66625025"
+ms.lasthandoff: 09/20/2022
+ms.locfileid: "67817893"
 ---
 # <a name="configure-permissions-filtering-for-ediscovery"></a>Configuración del filtrado de permisos para eDiscovery
 
@@ -117,7 +117,7 @@ El parámetro  _Filters_ especifica los criterios de búsqueda para el filtro de
 
   Cualquier propiedad de destinatario filtrable admitida se puede usar para la propiedad  _MailboxPropertyName_ en un buzón o filtro de OneDrive. En la tabla siguiente se enumeran cuatro propiedades de destinatario usadas habitualmente para crear un buzón de correo o un filtro de OneDrive. La tabla también incluye un ejemplo de uso de la propiedad en un filtro.
 
-  |Nombre de la propiedad  |Ejemplo  |
+  |Nombre de propiedad  |Ejemplo  |
   |---------|---------|
   |Alias    |`"Mailbox_Alias -like 'v-'"`         |
   |Empresa  |`"Mailbox_Company -eq 'Contoso'"`        |

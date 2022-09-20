@@ -2,8 +2,8 @@
 title: Configuración de un conector para archivar datos de FactSet en Microsoft 365
 f1.keywords:
 - NOCSH
-ms.author: v-tophillips
-author: v-tophillips
+ms.author: robmazz
+author: robmazz
 manager: laurawi
 ms.date: ''
 audience: Admin
@@ -12,12 +12,12 @@ ms.service: O365-seccomp
 ms.localizationpriority: medium
 ms.collection: M365-security-compliance
 description: Obtenga información sobre cómo configurar y usar un conector DataParser FactSet 17a-4 para importar y archivar datos factSet en Microsoft 365.
-ms.openlocfilehash: e477545f157d4e175d4db12db6192fe40e2877d1
-ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
+ms.openlocfilehash: 350494d3e3c0ecc3bfb555d4ab486350d2955ccd
+ms.sourcegitcommit: 433f5b448a0149fcf462996bc5c9b45d17bd46c6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/06/2022
-ms.locfileid: "66636929"
+ms.lasthandoff: 09/20/2022
+ms.locfileid: "67823791"
 ---
 # <a name="set-up-a-connector-to-archive-factset-data"></a>Configuración de un conector para archivar datos de FactSet
 
@@ -37,7 +37,7 @@ En la información general siguiente se explica el proceso de uso de un conector
 
 3. El conector FactSet DataParser que se crea en el portal de cumplimiento Microsoft Purview se conecta a DataParser y transfiere los mensajes a una ubicación segura de Azure Storage en la nube de Microsoft.
 
-4. Se crea una subcarpeta en la carpeta Bandeja de entrada denominada **FactSet DataParser en los buzones** de usuario y los elementos FactSet se importan a esa carpeta. El conector determina a qué buzón se van a importar elementos mediante el valor de la propiedad *Email* . Cada elemento FactSet contiene esta propiedad, que se rellena con la dirección de correo electrónico de cada participante.
+4. Se crea una subcarpeta en la carpeta Bandeja de entrada denominada **FactSet DataParser en los buzones** de usuario y los elementos FactSet se importan a esa carpeta. El conector determina a qué buzón se van a importar elementos mediante el valor de la propiedad *Email*. Cada elemento FactSet contiene esta propiedad, que se rellena con la dirección de correo electrónico de cada participante.
 
 ## <a name="before-you-set-up-a-connector"></a>Antes de configurar un conector
 

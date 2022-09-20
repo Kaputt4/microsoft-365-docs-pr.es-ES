@@ -2,8 +2,8 @@
 title: Creación y administración de casos de eDiscovery (Premium) en Microsoft 365
 f1.keywords:
 - NOCSH
-ms.author: v-tophillips
-author: v-tophillips
+ms.author: robmazz
+author: robmazz
 manager: laurawi
 ms.date: 04/08/2022
 audience: Admin
@@ -20,12 +20,12 @@ search.appverid:
 - MOE150
 - MET150
 description: En este artículo se describe cómo crear y administrar casos de Microsoft Purview eDiscovery (Premium). El primer paso es crear un caso y empezar a usar características y funcionalidad de eDiscovery (Premium).
-ms.openlocfilehash: b8577a8d44cb6860cd595d3f2f13c731c290ba12
-ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
+ms.openlocfilehash: 585404a6ab7b3327f4b58dd011eb1f4ac6723b01
+ms.sourcegitcommit: 433f5b448a0149fcf462996bc5c9b45d17bd46c6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/06/2022
-ms.locfileid: "66630375"
+ms.lasthandoff: 09/20/2022
+ms.locfileid: "67817695"
 ---
 # <a name="create-and-manage-an-ediscovery-premium-case"></a>Creación y administración de un caso de eDiscovery (Premium)
 

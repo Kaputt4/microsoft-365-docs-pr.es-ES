@@ -68,7 +68,7 @@ ID | Categoría | EMERGENCIA | Addresses | Puertos
 67 | Predeterminada<BR>Opcional<BR>**Notas:** Exportación de eDiscovery del Centro de seguridad y cumplimiento | No | `*.blob.core.windows.net` | **TCP:** 443
 68 | Predeterminada<BR>Opcional<BR>**Notas:** Portal e infraestructura compartida: integración de Office de terceros (incluyendo CDN) | No | `firstpartyapps.oaspapps.com, prod.firstpartyapps.oaspapps.com.akadns.net, telemetryservice.firstpartyapps.oaspapps.com, wus-firstpartyapps.oaspapps.com` | **TCP:** 443
 69 | Predeterminada<BR>Obligatorio | No | `*.aria.microsoft.com, *.events.data.microsoft.com` | **TCP:** 443
-70 | Predeterminada<BR>Obligatorio | No | `*.o365weve.com, amp.azure.net, appsforoffice.microsoft.com, assets.onestore.ms, auth.gfx.ms, c1.microsoft.com, dgps.support.microsoft.com, docs.microsoft.com, msdn.microsoft.com, platform.linkedin.com, prod.msocdn.com, shellprod.msocdn.com, support.microsoft.com, technet.microsoft.com` | **TCP:** 443
+70 | Predeterminada<BR>Obligatorio | No | `*.o365weve.com, amp.azure.net, appsforoffice.microsoft.com, assets.onestore.ms, auth.gfx.ms, c1.microsoft.com, dgps.support.microsoft.com, learn.microsoft.com, msdn.microsoft.com, platform.linkedin.com, prod.msocdn.com, shellprod.msocdn.com, support.microsoft.com, technet.microsoft.com` | **TCP:** 443
 71 | Predeterminada<BR>Obligatorio | No | `*.office365.com` | **TCP:** 443, 80
 72 | Predeterminada<BR>Opcional<BR>**Notas:** Azure Rights Management (RMS) con clientes de Office 2010 | No | `*.cloudapp.net` | **TCP:** 443
 73 | Predeterminada<BR>Obligatorio | No | `*.aadrm.com, *.azurerms.com, *.informationprotection.azure.com, ecn.dev.virtualearth.net, informationprotection.hosting.portal.azure.net` | **TCP:** 443

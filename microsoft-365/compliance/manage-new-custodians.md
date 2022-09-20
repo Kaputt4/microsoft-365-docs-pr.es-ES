@@ -2,8 +2,8 @@
 title: Administración de custodios en un caso de exhibición de documentos electrónicos (Premium)
 f1.keywords:
 - NOCSH
-ms.author: v-tophillips
-author: v-tophillips
+ms.author: robmazz
+author: robmazz
 manager: laurawi
 ms.date: ''
 audience: Admin
@@ -17,12 +17,12 @@ search.appverid:
 ms.assetid: ''
 description: Obtenga información sobre cómo ver los detalles, editar y editar en bloque la lista de custodios en un caso de exhibición de documentos electrónicos (Premium).
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: baffcb9d601d95d4be78cf47fcbc3037daff86c8
-ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
+ms.openlocfilehash: 51677f7bf61eb5c7180a774de852f99d9479c0bb
+ms.sourcegitcommit: 433f5b448a0149fcf462996bc5c9b45d17bd46c6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/06/2022
-ms.locfileid: "66634036"
+ms.lasthandoff: 09/20/2022
+ms.locfileid: "67817386"
 ---
 # <a name="manage-custodians-in-an-ediscovery-premium-case"></a>Administración de custodios en un caso de exhibición de documentos electrónicos (Premium)
 
@@ -121,7 +121,7 @@ Para desencadenar el proceso de reindexación para abordar elementos parcialment
 
 La reindexación de datos de custodios es un proceso de ejecución prolongada; El trabajo correspondiente que se crea se denomina **Volver a indexar datos de custodios**. Puede realizar un seguimiento del progreso en la pestaña **Trabajos** o en la pestaña **Custodios** supervisando el estado en la columna **Estado del trabajo de indexación** .
 
-Para más información, vea:
+Para obtener más información, consulte:
 
 - [Trabajar con errores de proceso](processing-data-for-case.md)
 

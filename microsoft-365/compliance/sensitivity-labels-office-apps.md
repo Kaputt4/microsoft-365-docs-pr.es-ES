@@ -16,12 +16,12 @@ search.appverid:
 - MET150
 description: Información para que los administradores de TI administren las etiquetas de confidencialidad en las aplicaciones de Office para escritorio, móvil y web.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 7bb760eb29f54554f58efedaa54ab9ca1cadf312
-ms.sourcegitcommit: 9b133379196da2b3a4bb311b07ff274f43780f68
+ms.openlocfilehash: b8090ff49a8371b4ad264030f9ebb845bf23e690
+ms.sourcegitcommit: 433f5b448a0149fcf462996bc5c9b45d17bd46c6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/14/2022
-ms.locfileid: "67696669"
+ms.lasthandoff: 09/20/2022
+ms.locfileid: "67817848"
 ---
 # <a name="manage-sensitivity-labels-in-office-apps"></a>Administrar etiquetas de confidencialidad en las aplicaciones de Office
 
@@ -78,6 +78,7 @@ Los números indicados son las versiones mínimas de la aplicación Office reque
 |[Aplicar una etiqueta de confidencialidad automáticamente al contenido](apply-sensitivity-label-automatically.md) <br /> - Uso de clasificadores capacitados                    | Canal actual: 2105+ <br /><br> Canal mensual para empresas: 2105+ <br /><br> Canal semestral para empresas: 2108+ | 16.49+ | En revisión | En revisión | [Sí - participar](sensitivity-labels-sharepoint-onedrive-files.md) |
 |[Compatibilidad con la coautoría y el autoguardado](sensitivity-labels-coauthoring.md) documentos etiquetados y cifrados | Canal actual: 2107+ <br /><br> Canal mensual para empresas: 2107+ <br /><br> Canal semestral para empresas: 2202+ |  16.51+ | 2.58+ | 16.0.14931+  | [Sí - participar](sensitivity-labels-sharepoint-onedrive-files.md) |
 |[Compatibilidad con PDF](#pdf-support)| Canal actual: 2208+ <br /><br> Canal mensual de empresa: 2208+ <br /><br> Canal semestral para empresas: en revisión|  En revisión | En revisión | En revisión | En revisión |
+|[Barra de confidencialidad](#sensitivity-bar) y [color de la etiqueta de presentación](#label-colors) | Versión preliminar: implementando en [Canal Beta](https://office.com/insider) |  Versión preliminar: implementando en [Canal Beta](https://office.com/insider) | En revisión | En revisión | En revisión |
 
 ### <a name="sensitivity-label-capabilities-in-outlook"></a>Funciones de la etiqueta de confidencialidad en Outlook
 
@@ -105,6 +106,7 @@ Los números indicados son las versiones mínimas de la aplicación Office reque
 |[Diferentes opciones de configuración para etiquetas predeterminadas y etiquetas obligatorias](#outlook-specific-options-for-default-label-and-mandatory-labeling)                    | Canal actual: 2105+ <br /><br> Canal mensual para empresas: 2105+ <br /><br> Canal semestral para empresas: 2108+ | 16.43+ <sup>\*</sup>                   | 4.2111+           | 4.2111+               | Sí |
 |[Compatibilidad con PDF](#pdf-support) | Versión preliminar: implementando en [Canal Beta](https://office.com/insider)|  En revisión | En revisión | En revisión | En revisión |
 |[Aplicar protección S/MIME](#configure-a-label-to-apply-smime-protection-in-outlook) | Versión preliminar: implementando en [Canal Beta](https://office.com/insider) | Implementando: 16.61+ <sup>\*</sup>                   | Implementación: 4.2226+ | Implementación: 4.2203+ | En revisión |
+|[Barra de confidencialidad](#sensitivity-bar) y [color de la etiqueta de presentación](#label-colors) | En revisión |  En revisión | En revisión | En revisión | En revisión |
 
 **Notas al pie:**
 
@@ -390,7 +392,7 @@ Cuando la aplicación de Outlook no admita desactivar la etiqueta obligatoria: s
 > 
 > Si configura una etiqueta para aplicar la protección S/MIME, pero la aplicación de Outlook aún no la admite, la etiqueta se sigue mostrando en Outlook y se puede aplicar, pero se omite la configuración de S/MIME. No podrá seleccionar esta etiqueta para las directivas de etiquetado automático de Exchange.
 
-Esta configuración no está disponible en el Centro de cumplimiento de Microsoft Purview. Debe usar la configuración avanzada de PowerShell con el cmd [Set-Label](/powershell/module/exchange/set-label) o [New-Label](/powershell/module/exchange/new-label) después de [conectarse a Office 365 Centro de seguridad y cumplimiento PowerShell](/powershell/exchange/office-365-scc/connect-to-scc-powershell/connect-to-scc-powershell).
+Esta configuración no está disponible en el portal de cumplimiento Microsoft Purview. Debe usar la configuración avanzada de PowerShell con el cmd [Set-Label](/powershell/module/exchange/set-label) o [New-Label](/powershell/module/exchange/new-label) después de [conectarse a Office 365 Centro de seguridad y cumplimiento PowerShell](/powershell/exchange/office-365-scc/connect-to-scc-powershell/connect-to-scc-powershell).
 
 Use esta configuración solo cuando tenga una [implementación S/MIME](/microsoft-365/security/office-365-security/s-mime-for-message-signing-and-encryption) en funcionamiento y quiera que una etiqueta aplique automáticamente este método de protección para los correos electrónicos en lugar de la [protección predeterminada que usa el cifrado de la administración de derechos de Azure Information Protection](encryption-sensitivity-labels.md). La protección resultante será la misma que cuando un usuario selecciona manualmente las opciones S/MIME de Outlook.
 
@@ -447,6 +449,53 @@ Para más información sobre esta funcionalidad, vea el anuncio [Aplicar etiquet
 
 Para obtener documentación del usuario final, consulte [Creación de archivos PDF protegidos a partir de archivos de Office](https://support.microsoft.com/topic/aba7e367-e482-49e7-b746-a385e48d01e4).
 
+## <a name="sensitivity-bar"></a>Barra de confidencialidad
+
+Recién compatible con la versión preliminar para etiquetas integradas en Word, Excel y PowerPoint, pero aún no para Outlook o Office para la Web, vea las tablas de la sección [funcionalidades](#support-for-sensitivity-label-capabilities-in-apps) de esta página para identificar las versiones mínimas.
+
+En el caso de las aplicaciones admitidas, las etiquetas de confidencialidad ahora se muestran en una barra de confidencialidad, que se muestra junto al nombre de archivo en la barra de ventana superior.  Por ejemplo:
+
+![Etiquetas de confidencialidad en la barra de título de la ventana.](../media/sensitivity-bar-example.png)
+
+La información sobre las etiquetas y la capacidad de seleccionar o cambiar una etiqueta también se integran en flujos de trabajo de usuario que incluyen guardar y cambiar el nombre, exportar, compartir, imprimir y [convertir a PDF](#pdf-support).
+
+Como parte de esta alta visibilidad, estas etiquetas también admiten colores. Para más información, vea la sección siguiente.
+
+### <a name="label-colors"></a>Colores de etiqueta
+
+> [!IMPORTANT]
+> Si las aplicaciones de etiquetado no admiten esta funcionalidad, no muestran los colores de etiqueta configurados.
+> 
+> El cliente de etiquetado unificado de Azure Information Protection admite colores de etiqueta. Para el etiquetado integrado en Office, los colores de etiquetas se admiten actualmente en versión preliminar para Word, Excel y PowerPoint en Windows y macOS, pero no Outlook ni Office para la Web. Para obtener más información, consulte las tablas de la sección [funcionalidades](#support-for-sensitivity-label-capabilities-in-apps) de esta página.
+
+Las etiquetas recién creadas no tienen un color de forma predeterminada. Si las etiquetas se [migraron desde Azure Information Protection](/azure/information-protection/configure-policy-migrate-labels) o configuró los colores de etiqueta para azure Information Protection cliente de etiquetado unificado, estos colores de etiqueta ahora se muestran en las aplicaciones que las admiten.
+
+Use el portal de cumplimiento Microsoft Purview para seleccionar uno de los 10 colores estándar para las etiquetas de confidencialidad. Esta configuración se encuentra en la primera página de la configuración de la etiqueta después del nombre y la descripción de la etiqueta.
+
+No puede seleccionar los colores de las subetiquetas porque heredan automáticamente el color de la etiqueta de su etiqueta primaria.
+
+Si la etiqueta está configurada para un color diferente de uno de los 10 colores, verá una opción **Color personalizado** seleccionada y las opciones de color estándar no están disponibles:
+
+![Configuración de color de etiqueta de confidencialidad cuando la etiqueta tiene un color personalizado.](../media/label-custom-color-configuration.png)
+
+Puede cambiar el color personalizado a uno de los colores estándar quitando primero la selección de color personalizada y, a continuación, seleccionando uno de los colores estándar. Pero no puede usar el portal de cumplimiento para configurar un color personalizado diferente. En su lugar, use PowerShell, como se describe en la sección siguiente.
+
+#### <a name="configuring-custom-colors-by-using-powershell"></a>Configuración de colores personalizados mediante PowerShell 
+
+Puede usar el **color** de configuración avanzada [de PowerShell del Centro](/powershell/exchange/scc-powershell) de cumplimiento de Seguridad & para establecer un color para una etiqueta de confidencialidad. Esta configuración admite colores que no se pueden configurar en el portal de cumplimiento Microsoft Purview.
+
+Para especificar la elección de color, use un código hexadecimal de triplete para los componentes rojo, verde y azul (RGB) del color. Por ejemplo, #40e0d0 es el valor hexadecimal RGB para el turquesa.
+
+Para obtener más información sobre estos códigos, consulte la [\<color>](https://developer.mozilla.org/docs/Web/CSS/color_value) página de los documentos web de MSDN y también puede que [RapidTables](https://www.rapidtables.com/web/color/RGB_Color.html) le resulte útil. Puede identificar estos códigos en muchas aplicaciones que le permiten editar imágenes. Por ejemplo, Microsoft Paint le permite elegir un color personalizado de una paleta y los valores de RGB se muestran de forma automática, los que puede copiar luego.
+
+Comando de PowerShell de ejemplo, donde el GUID de la etiqueta de confidencialidad es **8faca7b8-8d20-48a3-8ea2-0f96310a848e**
+
+```PowerShell
+Set-Label -Identity 8faca7b8-8d20-48a3-8ea2-0f96310a848e -AdvancedSettings @{color="#40e0d0"}
+```
+
+Para obtener más información que le ayude a especificar la configuración avanzada de PowerShell para etiquetas de confidencialidad, consulte [Sugerencias de PowerShell para especificar la configuración avanzada](create-sensitivity-labels.md#powershell-tips-for-specifying-the-advanced-settings).
+
 ## <a name="auditing-labeling-activities"></a>Actividades de etiquetado de auditoría
 
 Para obtener información sobre los eventos de auditoría generados por las actividades de etiquetas de confidencialidad, vea la sección [Actividades de etiquetas de confidencialidad](search-the-audit-log-in-security-and-compliance.md#sensitivity-label-activities) de [Buscar en el registro de auditoría en el portal de cumplimiento de Microsoft Purview](search-the-audit-log-in-security-and-compliance.md).
@@ -458,7 +507,7 @@ También puede crear informes personalizados con su elección de administración
 > [!TIP]
 > Para ayudar a crear informes personalizados, consulte las siguientes entradas de blog:
 > - [Actividades de registro de auditoría de Microsoft Purview a través de la API de Administración de O365: parte 1](https://techcommunity.microsoft.com/t5/security-compliance-and-identity/microsoft-365-compliance-audit-log-activities-via-o365/ba-p/2957171)
-> - [Actividades de registro de auditoría de Microsoft Purview a través de la API de Administración de O365: parte 2](https://techcommunity.microsoft.com/t5/security-compliance-and-identity/microsoft-365-compliance-audit-log-activities-via-o365/ba-p/2957297)
+> - [Actividades de registro de auditoría de Microsoft Purview a través de la API de Administración de O365: parte 2](https://techcommunity.microsoft.com/t5/security-compliance-and-identity/microsoft-365-compliance-audit-log-activities-via-o365/ba-p/2957297) 
 
 ## <a name="end-user-documentation"></a>Documentación para el usuario final
 

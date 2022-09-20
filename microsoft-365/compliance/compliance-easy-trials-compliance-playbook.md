@@ -2,8 +2,8 @@
 title: Cuaderno de estrategias de prueba de soluciones de Microsoft Purview
 f1.keywords:
 - NOCSH
-ms.author: v-tophillips
-author: v-tophillips
+ms.author: robmazz
+author: robmazz
 manager: laurawi
 audience: Admin
 ms.topic: landing-page
@@ -16,12 +16,12 @@ search.appverid:
 - MET150
 description: Cuaderno de estrategias de prueba de soluciones de Microsoft Purview.
 ms.custom: trial-playbook
-ms.openlocfilehash: 484fddb8b9e8f4c09296a1bf67e116fa3ca1223a
-ms.sourcegitcommit: 078149c9645ce220911ccd6ce54f984a4c92ce53
+ms.openlocfilehash: d6863ce077a8db40821ebe8646b9b98fe5a1c4ff
+ms.sourcegitcommit: 433f5b448a0149fcf462996bc5c9b45d17bd46c6
 ms.translationtype: MT
 ms.contentlocale: es-ES
 ms.lasthandoff: 09/20/2022
-ms.locfileid: "67809581"
+ms.locfileid: "67823131"
 ---
 # <a name="trial-playbook-microsoft-purview-solutions"></a>Cuaderno de estrategias de prueba: soluciones de Microsoft Purview
 

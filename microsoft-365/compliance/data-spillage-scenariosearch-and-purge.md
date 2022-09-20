@@ -2,8 +2,8 @@
 title: 'Escenario de derrame de datos de la serie de soluciones eDiscovery: búsqueda y purga'
 f1.keywords:
 - NOCSH
-ms.author: v-tophillips
-author: v-tophillips
+ms.author: robmazz
+author: robmazz
 manager: laurawi
 audience: ITPro
 ms.topic: how-to
@@ -14,12 +14,12 @@ search.appverid:
 - MET150
 ms.assetid: d945f7dd-f62f-4ca7-b3e7-469824cfd493
 description: Use eDiscovery y herramientas de búsqueda para administrar y responder a un incidente de derrame de datos en su organización.
-ms.openlocfilehash: b65d6057921d310c3e22e5494218271c7693c162
-ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
+ms.openlocfilehash: 91fc68016e8d62b0b7172dd78f6ed9512545c527
+ms.sourcegitcommit: 433f5b448a0149fcf462996bc5c9b45d17bd46c6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/06/2022
-ms.locfileid: "66630199"
+ms.lasthandoff: 09/20/2022
+ms.locfileid: "67824231"
 ---
 # <a name="ediscovery-solution-series-data-spillage-scenario---search-and-purge"></a>Serie de soluciones de eDiscovery: escenario de desbordamiento de datos: búsqueda y purga
 
@@ -91,7 +91,7 @@ Si tiene más de 1000 buzones o más de 100 mensajes de correo electrónico por 
 
 Cuando encuentre un mensaje de correo electrónico que contenga datos derramados, compruebe los destinatarios del mensaje para determinar si se ha compartido externamente. Para realizar un seguimiento adicional de un mensaje, puede recopilar información del remitente y intervalos de fechas para poder usar los registros de seguimiento de mensajes. Este proceso se describe en [el paso 5](#step-5-use-message-trace-log-to-check-how-spilled-data-was-shared).
 
-Después de comprobar los resultados de la búsqueda, es posible que desee compartir sus conclusiones con otros usuarios para una revisión secundaria. Las personas que ha asignado al caso en el paso 1 pueden revisar el contenido del caso tanto en eDiscovery como en Microsoft Purview eDiscovery (Premium) y aprobar los resultados del caso. También puede generar un informe sin exportar el contenido real. También puede usar este mismo informe como prueba de eliminación, que se describe en [el paso 8](#step-8-verify-provide-a-proof-of-deletion-and-audit).
+Después de comprobar los resultados de la búsqueda, es posible que desee compartir sus conclusiones con otros usuarios para una revisión secundaria. Personas que asignó al caso en el paso 1 puede revisar el contenido del caso en eDiscovery y Microsoft Purview eDiscovery (Premium) y aprobar los resultados del caso. También puede generar un informe sin exportar el contenido real. También puede usar este mismo informe como prueba de eliminación, que se describe en [el paso 8](#step-8-verify-provide-a-proof-of-deletion-and-audit).
   
  **Para generar un informe estadístico:**
   
@@ -205,7 +205,7 @@ Si las palabras clave de la consulta de búsqueda que creó y usó en el paso 3 
 
 ### <a name="auditing-the-data-spillage-investigation-process"></a>Auditoría del proceso de investigación del derrame de datos
 
-Puede buscar en el registro de auditoría las actividades de exhibición de documentos electrónicos que se realizaron durante la investigación. También puede buscar en el registro de auditoría para devolver los registros de auditoría del comando **New-ComplianceSearchAction -Purge** que ejecutó en el paso 7 para eliminar los datos derramados. Para más información, vea:
+Puede buscar en el registro de auditoría las actividades de exhibición de documentos electrónicos que se realizaron durante la investigación. También puede buscar en el registro de auditoría para devolver los registros de auditoría del comando **New-ComplianceSearchAction -Purge** que ejecutó en el paso 7 para eliminar los datos derramados. Para obtener más información, consulte:
 
 - [Buscar en el registro de auditoría](search-the-audit-log-in-security-and-compliance.md)
 

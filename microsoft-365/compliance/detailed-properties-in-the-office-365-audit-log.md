@@ -2,8 +2,8 @@
 title: Propiedades detalladas del registro de auditoría
 f1.keywords:
 - NOCSH
-ms.author: v-tophillips
-author: v-tophillips
+ms.author: robmazz
+author: robmazz
 manager: laurawi
 audience: Admin
 ms.topic: article
@@ -19,12 +19,12 @@ search.appverid:
 ms.assetid: ce004100-9e7f-443e-942b-9b04098fcfc3
 description: En este artículo se proporcionan descripciones de propiedades adicionales incluidas al exportar los resultados de un registro de auditoría de Office 365.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: af20836a6800dedfc1bd04d9b049c28038108875
-ms.sourcegitcommit: d7193ee954c01c4172e228d25b941026c8d92d30
+ms.openlocfilehash: ba8f8df40edf484389a5a7e9cec789ab8a3fc7fe
+ms.sourcegitcommit: 433f5b448a0149fcf462996bc5c9b45d17bd46c6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/02/2022
-ms.locfileid: "67175364"
+ms.lasthandoff: 09/20/2022
+ms.locfileid: "67817342"
 ---
 # <a name="detailed-properties-in-the-audit-log"></a>Propiedades detalladas del registro de auditoría
 
@@ -55,7 +55,7 @@ En la tabla siguiente se describen las propiedades que se incluyen (en función 
 |EventSource|Identifica que un evento se produjo en SharePoint. Los valores posibles son **SharePoint** y **ObjectModel**.|SharePoint|
 |ExternalAccess|En el caso de la actividad de administrador de Exchange, especifica si el cmdlet lo ejecutó un usuario de su organización, el personal del centro de datos de Microsoft o una cuenta de servicio del centro de datos o un administrador delegado. El valor **False** indica que el cmdlet lo ejecutó algún usuario de su organización. El valor **True** indica que el cmdlet lo ejecutó el personal del centros de datos, una cuenta de servicio del centro de datos o un administrador delegado.  <br/> En el caso de la actividad de buzón de Exchange, especifica si un usuario fuera de la organización ha accedido a un buzón de correo.|Exchange|
 |ExtendedProperties|Propiedades extendidas para un evento de Azure Active Directory.|Azure Active Directory|
-|ID|Identificador de la entrada del informe. El identificador identifica de forma única la entrada del informe.|Todo|
+|Id.|Identificador de la entrada del informe. El identificador identifica de forma única la entrada del informe.|Todo|
 |InternalLogonType|Reservado para uso interno.|Exchange (actividad de buzón)|
 |ItemType|El tipo de objeto al que se obtuvo acceso o que se modificó. Entre los valores posibles se incluyen **File**, **Folder**, **Web**, **Site**, **Tenant** y **DocumentLibrary**.|SharePoint|
 |LoginStatus|Identifica los errores de inicio de sesión que podrían haberse producido.|Azure Active Directory|
@@ -67,7 +67,7 @@ En la tabla siguiente se describen las propiedades que se incluyen (en función 
 |ObjectId|Para el registro de auditoría de Exchange, el nombre del objeto modificado por el cmdlet.  <br/> Para la actividad de SharePoint, el nombre completo de la ruta de acceso url del archivo o carpeta al que accede un usuario.  <br/> Para la actividad de Azure AD, el nombre de la cuenta de usuario que se modificó.|Todo|
 |Operación|El nombre de la actividad de usuario o administrador. El valor de esta propiedad corresponde al valor que se seleccionó en la lista desplegable **Actividades** . Si se seleccionó **Mostrar resultados para todas las actividades** , el informe incluirá entradas para todas las actividades de usuario y administrador de todos los servicios. Para obtener una descripción de las operaciones o actividades que se registran en el registro de auditoría, consulte la pestaña **Actividades auditadas** en [Buscar el registro de auditoría en el Office 365](search-the-audit-log-in-security-and-compliance.md).  <br/> Esta propiedad identifica el nombre del cmdlet ejecutado para la actividad de administración de Exchange.|Todo|
 |OrganizationId|GUID de la organización.|Todo|
-|Ruta de acceso|El nombre de la carpeta del buzón donde se encuentra el mensaje al que se obtuvo acceso. Esta propiedad también identifica la carpeta en la que se crea un mensaje o se copia o se mueve a.|Exchange (actividad de buzón)|
+|Path|El nombre de la carpeta del buzón donde se encuentra el mensaje al que se obtuvo acceso. Esta propiedad también identifica la carpeta en la que se crea un mensaje o se copia o se mueve a.|Exchange (actividad de buzón)|
 |Parámetros|Para la actividad de administrador de Exchange, el nombre y el valor de todos los parámetros que se usaron con el cmdlet que se identifica en la propiedad Operation.|Exchange (actividad de administrador)|
 |RecordType|El tipo de operación indicado por el registro. Esta propiedad indica el servicio o característica en el que se desencadenó la operación. Para obtener una lista de tipos de registro y su valor ENUM correspondiente (que es el valor mostrado en la propiedad **RecordType** en un registro de auditoría), consulte [Tipo de registro de](/office/office-365-management-api/office-365-management-activity-api-schema#auditlogrecordtype) auditoría.| 
 |ResultStatus|Indica si la acción (especificada en la propiedad **Operation** ) se realizó correctamente o no.  <br/> Para la actividad de administrador de Exchange, el valor es **True** (correcto) o **False** (error).|Todo  <br/>|
@@ -85,7 +85,7 @@ En la tabla siguiente se describen las propiedades que se incluyen (en función 
 |TeamName|Nombre de un equipo en Microsoft Teams.|Microsoft Teams|
 |UserAgent|Información sobre el explorador del usuario. Esta información la proporciona el explorador.|SharePoint|
 |UserDomain|Información de identidad sobre la organización del inquilino del usuario (actor) que realizó la acción.|Azure Active Directory|
-|UserId|El usuario que realizó la acción (especificada en la propiedad **Operation** ) que provocó que se registrara el registro. Los registros de auditoría de la actividad realizada por las cuentas del sistema (como SHAREPOINT\system o NT AUTHORITY\SYSTEM) también se incluyen en el registro de auditoría. Otro valor común para la propiedad UserId es app@sharepoint. Esto indica que el "usuario" que llevó a cabo esta actividad era una aplicación que tiene los permisos necesarios en SharePoint para realizar acciones en toda la organización (como buscar en un sitio de SharePoint o en una cuenta de OneDrive) en nombre de un usuario, un administrador o un servicio. <br/><br/>Para más información, vea:<br/> [El usuario de SharePoint de la aplicación\@en los registros de auditoría](search-the-audit-log-in-security-and-compliance.md#the-appsharepoint-user-in-audit-records)<br/> o <br/>[Cuentas del sistema en registros de auditoría de buzones de Exchange](search-the-audit-log-in-security-and-compliance.md#system-accounts-in-exchange-mailbox-audit-records). |Todo|
+|UserId|El usuario que realizó la acción (especificada en la propiedad **Operation** ) que provocó que se registrara el registro. Los registros de auditoría de la actividad realizada por las cuentas del sistema (como SHAREPOINT\system o NT AUTHORITY\SYSTEM) también se incluyen en el registro de auditoría. Otro valor común para la propiedad UserId es app@sharepoint. Esto indica que el "usuario" que llevó a cabo esta actividad era una aplicación que tiene los permisos necesarios en SharePoint para realizar acciones en toda la organización (como buscar en un sitio de SharePoint o en una cuenta de OneDrive) en nombre de un usuario, un administrador o un servicio. <br/><br/>Para obtener más información, consulte:<br/> [El usuario de SharePoint de la aplicación\@en los registros de auditoría](search-the-audit-log-in-security-and-compliance.md#the-appsharepoint-user-in-audit-records)<br/> o <br/>[Cuentas del sistema en registros de auditoría de buzones de Exchange](search-the-audit-log-in-security-and-compliance.md#system-accounts-in-exchange-mailbox-audit-records). |Todo|
 |UserKey|Un identificador alternativo para el usuario identificado en la propiedad **UserID** . Por ejemplo, esta propiedad se rellena con el identificador único de passport (PUID) para los eventos realizados por los usuarios en SharePoint. Esta propiedad también puede especificar el mismo valor que la propiedad **UserID** para los eventos que se producen en otros servicios y eventos realizados por cuentas del sistema.|Todo|
 |UserType|El tipo de usuario que llevó a cabo la operación. Los siguientes valores indican el tipo de usuario. <br/> <br/> **0** : un usuario normal. <br/>**2** : administrador de la organización de Microsoft 365. <sup>1</sup> <br/>**3** : una cuenta de sistema de centro de datos o administrador del centro de datos de Microsoft. <br/>**4** - Una cuenta del sistema. <br/>**5** - Una aplicación. <br/>**6** - Una entidad de servicio.<br/>**7** - Una directiva personalizada.<br/>**8** - Una directiva del sistema.|Todo|
 |Versión|Indica el número de versión de la actividad (identificada por la propiedad **Operation** ) que se registra.|Todo|

@@ -2,8 +2,8 @@
 title: Introducción al Portal de confianza de servicios de Microsoft
 f1.keywords:
 - NOCSH
-ms.author: v-tophillips
-author: v-tophillips
+ms.author: robmazz
+author: robmazz
 manager: laurawi
 audience: Admin
 ms.topic: overview
@@ -17,12 +17,12 @@ ms.custom:
 - admindeeplinkCOMPLIANCE
 ms.assetid: f30e2353-0bd6-41ed-8347-eea1fb8d2662
 description: Obtenga información sobre cómo acceder y usar el Portal de confianza de servicios de Microsoft para ayudar con las prácticas de seguridad, privacidad y cumplimiento.
-ms.openlocfilehash: 9cd4f2281a1bdd6d5673ebe140ccbaf9e4b73be5
-ms.sourcegitcommit: 2dedd0f594b817779e034afa6c4418def2382a22
+ms.openlocfilehash: d5b59cf9a377c8a4980de0874985af35babe00c7
+ms.sourcegitcommit: 433f5b448a0149fcf462996bc5c9b45d17bd46c6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/18/2022
-ms.locfileid: "67798952"
+ms.lasthandoff: 09/20/2022
+ms.locfileid: "67822757"
 ---
 # <a name="get-started-with-microsoft-service-trust-portal"></a>Introducción al Portal de confianza de servicios de Microsoft
 

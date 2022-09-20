@@ -2,8 +2,8 @@
 title: Configuración de un conector para archivar los datos de Cisco Jabber en Oracle en Microsoft 365
 f1.keywords:
 - NOCSH
-ms.author: v-tophillips
-author: v-tophillips
+ms.author: robmazz
+author: robmazz
 manager: laurawi
 ms.date: ''
 audience: Admin
@@ -12,12 +12,12 @@ ms.service: O365-seccomp
 ms.localizationpriority: medium
 ms.collection: M365-security-compliance
 description: Aprenda a configurar y usar un conector en el portal de cumplimiento Microsoft Purview para importar y archivar datos de Cisco Jabber en Oracle a Microsoft 365.
-ms.openlocfilehash: 9920ade2b025824fe7308142ac033872a656ff7a
-ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
+ms.openlocfilehash: 0f7b0e4663d0f0f771d1853d4f9313aa43aab258
+ms.sourcegitcommit: 433f5b448a0149fcf462996bc5c9b45d17bd46c6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/06/2022
-ms.locfileid: "66636863"
+ms.lasthandoff: 09/20/2022
+ms.locfileid: "67818751"
 ---
 # <a name="set-up-a-connector-to-archive-cisco-jabber-on-oracle-data"></a>Configuración de un conector para archivar Cisco Jabber en datos de Oracle
 
@@ -37,7 +37,7 @@ En la información general siguiente se explica el proceso de uso de un conector
 
 3. El conector Cisco Jabber on Oracle que se crea en el portal de cumplimiento, se conecta al sitio de Veritas Merge1 todos los días y transfiere el contenido del Jabber a una ubicación segura de Azure Storage en la nube de Microsoft.
 
-4. El conector importa los elementos convertidos a los buzones de usuarios específicos mediante el valor de la propiedad *Email* de la asignación automática de usuarios, tal como se describe en [el paso 3](#step-3-map-users-and-complete-the-connector-setup). Se crea una subcarpeta en la carpeta Bandeja de entrada denominada **Cisco Jabber en Oracle** en los buzones de usuario, y los elementos se importan a esa carpeta. Para ello, el conector usa el valor de la propiedad *Email* . Cada elemento jabber contiene esta propiedad, que se rellena con la dirección de correo electrónico de cada participante del elemento.
+4. El conector importa los elementos convertidos a los buzones de usuarios específicos mediante el valor de la propiedad *Email* de la asignación automática de usuarios, tal como se describe en [el paso 3](#step-3-map-users-and-complete-the-connector-setup). Se crea una subcarpeta en la carpeta Bandeja de entrada denominada **Cisco Jabber en Oracle** en los buzones de usuario, y los elementos se importan a esa carpeta. Para ello, el conector usa el valor de la propiedad *Email*. Cada elemento jabber contiene esta propiedad, que se rellena con la dirección de correo electrónico de cada participante del elemento.
 
 ## <a name="before-you-begin"></a>Antes de empezar
 
@@ -71,7 +71,7 @@ Después de hacer clic en **Guardar & finalizar**, se muestra la página **Asign
 
 Para asignar usuarios y completar la configuración del conector en el portal de cumplimiento, siga estos pasos:
 
-1. En la página **Asignar Cisco Jabber en Oracle a los usuarios de Microsoft 365** , habilite la asignación automática de usuarios. El Jabber de Cisco en los elementos de Oracle incluye una propiedad llamada *Correo electrónico*, que contiene direcciones de correo electrónico para los usuarios de su organización. Si el conector puede asociar esta dirección a un usuario de Microsoft 365, los elementos se importan al buzón de ese usuario.
+1. En la página **Asignar Cisco Jabber en Oracle a los usuarios de Microsoft 365** , habilite la asignación automática de usuarios. El Jabber de Cisco en los elementos de Oracle incluye una propiedad llamada *Email*, que contiene direcciones de correo electrónico para los usuarios de su organización. Si el conector puede asociar esta dirección a un usuario de Microsoft 365, los elementos se importan al buzón de ese usuario.
 
 2. Haga clic en **Siguiente**, revise la configuración y, a continuación, vaya a la página **Conectores de datos** para ver el progreso del proceso de importación del nuevo conector.
 

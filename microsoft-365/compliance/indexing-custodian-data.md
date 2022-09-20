@@ -2,8 +2,8 @@
 title: Clasificación avanzada de los datos de administración
 f1.keywords:
 - NOCSH
-ms.author: v-tophillips
-author: v-tophillips
+ms.author: robmazz
+author: robmazz
 manager: laurawi
 ms.date: ''
 audience: Admin
@@ -16,12 +16,12 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: Cuando se agrega un custodio a un caso de exhibición de documentos electrónicos (Premium), cualquier contenido que se considere parcialmente indexado se vuelve a procesar para que se pueda buscar por completo.
-ms.openlocfilehash: 0d0474306415a59615960cc15580af0f67dc49aa
-ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
+ms.openlocfilehash: a52f9c226746148a39e7a2e699b98a231eacb4c4
+ms.sourcegitcommit: 433f5b448a0149fcf462996bc5c9b45d17bd46c6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/06/2022
-ms.locfileid: "66629561"
+ms.lasthandoff: 09/20/2022
+ms.locfileid: "67818267"
 ---
 # <a name="advanced-indexing-of-custodian-data"></a>Clasificación avanzada de los datos de administración
 
@@ -41,7 +41,7 @@ Para obtener más información sobre la compatibilidad con el procesamiento y lo
 
 Una vez completado el proceso de indexación avanzada, puede comprender la eficacia del reprocesamiento.  En la vista Resultados de indexación avanzada de la pestaña **Procesamiento** de un caso, el gráfico muestra el número de elementos agregados al *índice híbrido*.  El índice híbrido es donde eDiscovery (Premium) almacena el contenido que se ha vuelto a procesar.
 
-Esta vista también incluye el número de elementos que requieren corrección y otro gráfico de errores por tipo de archivo. Para más información, vea:
+Esta vista también incluye el número de elementos que requieren corrección y otro gráfico de errores por tipo de archivo. Para obtener más información, consulte:
 
 - [Corrección de errores al procesar los datos](error-remediation-when-processing-data-in-advanced-ediscovery.md)
 

@@ -2,8 +2,8 @@
 title: Administrar las notificaciones de retención
 f1.keywords:
 - NOCSH
-ms.author: v-tophillips
-author: v-tophillips
+ms.author: robmazz
+author: robmazz
 manager: laurawi
 ms.date: ''
 audience: Admin
@@ -16,12 +16,12 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: Use el flujo de trabajo de comunicaciones en eDiscovery (Premium) para realizar un seguimiento del estado de las notificaciones de suspensión legal y, si es necesario, actualizarlas y reenviarlas.
-ms.openlocfilehash: 161628061d27c17e9e606cb7f88fbbe52d22be8f
-ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
+ms.openlocfilehash: 1d424b903eeadb76f78649bbbbe3364a8ba25716
+ms.sourcegitcommit: 433f5b448a0149fcf462996bc5c9b45d17bd46c6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/06/2022
-ms.locfileid: "66632253"
+ms.lasthandoff: 09/20/2022
+ms.locfileid: "67818135"
 ---
 # <a name="manage-hold-notifications"></a>Administrar las notificaciones de retención
 

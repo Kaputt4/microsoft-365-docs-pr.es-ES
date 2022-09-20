@@ -2,8 +2,8 @@
 title: Configuración de etiquetas inteligentes en eDiscovery (Premium)
 f1.keywords:
 - NOCSH
-ms.author: v-tophillips
-author: v-tophillips
+ms.author: robmazz
+author: robmazz
 manager: laurawi
 ms.date: ''
 audience: Admin
@@ -17,12 +17,12 @@ search.appverid:
 ms.assetid: ''
 ROBOTS: NOINDEX, NOFOLLOW
 description: Las etiquetas inteligentes permiten aplicar las funcionalidades de aprendizaje automático al revisar el contenido en un caso de eDiscovery (Premium). Use grupos de etiquetas inteligentes para mostrar los resultados de los modelos de detección de aprendizaje automático, como el modelo de privilegios abogado-cliente.
-ms.openlocfilehash: 30d2d6f30f09fe8fb6772a4fb46c6895b174991f
-ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
+ms.openlocfilehash: 9b6cf8fc596a87ccdfd1bcab8f534e3c6923df29
+ms.sourcegitcommit: 433f5b448a0149fcf462996bc5c9b45d17bd46c6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/06/2022
-ms.locfileid: "66629087"
+ms.lasthandoff: 09/20/2022
+ms.locfileid: "67822999"
 ---
 # <a name="set-up-smart-tags-in-ediscovery-premium"></a>Configuración de etiquetas inteligentes en eDiscovery (Premium)
 

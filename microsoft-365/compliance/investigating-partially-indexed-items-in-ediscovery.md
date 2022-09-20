@@ -2,8 +2,8 @@
 title: Investigación de elementos parcialmente indexados en eDiscovery
 f1.keywords:
 - NOCSH
-ms.author: v-tophillips
-author: v-tophillips
+ms.author: robmazz
+author: robmazz
 manager: laurawi
 ms.date: 06/14/2022
 audience: Admin
@@ -18,18 +18,18 @@ ms.assetid: 4e8ff113-6361-41e2-915a-6338a7e2a1ed
 ms.custom:
 - seo-marvel-apr2020
 description: Obtenga información sobre cómo administrar elementos parcialmente indexados (también denominados elementos sin indexar) desde Exchange, SharePoint y OneDrive para la Empresa dentro de la organización.
-ms.openlocfilehash: 1e048cece931ecefe395a5a26bbfb840c8b831f6
-ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
+ms.openlocfilehash: 9e62f635c599f529369f6a037b2ee7946fc58f81
+ms.sourcegitcommit: 433f5b448a0149fcf462996bc5c9b45d17bd46c6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/06/2022
-ms.locfileid: "66625113"
+ms.lasthandoff: 09/20/2022
+ms.locfileid: "67818289"
 ---
 # <a name="investigating-partially-indexed-items-in-ediscovery"></a>Investigación de elementos parcialmente indexados en eDiscovery
 
 Una búsqueda de exhibición de documentos electrónicos que se ejecuta desde el portal de cumplimiento Microsoft Purview incluye automáticamente elementos parcialmente indexados en los resultados de búsqueda estimados al ejecutar una búsqueda. Los elementos indizados parcialmente son elementos y documentos de buzón de Exchange en SharePoint y OneDrive para la Empresa sitios que, por alguna razón, no estaban completamente indexados para la búsqueda. La mayoría de los mensajes de correo electrónico y documentos de sitio se indexan correctamente porque están dentro de los [límites de indexación de los mensajes de correo electrónico](limits-for-content-search.md#indexing-limits-for-email-messages). Sin embargo, algunos elementos pueden superar estos límites de indexación y se indizarán parcialmente. Estas son otras razones por las que los elementos no se pueden indexar para la búsqueda y se devuelven como elementos indizados parcialmente al ejecutar una búsqueda de exhibición de documentos electrónicos:
   
-- Los mensajes de correo electrónico tienen un archivo adjunto que no se puede abrir; esta es la causa más común de los elementos de correo electrónico parcialmente indexados.
+- Email mensajes tienen un archivo adjunto que no se puede abrir; esta es la causa más común de los elementos de correo electrónico parcialmente indexados.
 
 - Se han adjuntado demasiados archivos a un mensaje de correo electrónico.
 
@@ -94,7 +94,7 @@ Las etiquetas de error se componen de dos fragmentos de información: el error y
   
 A continuación se muestra una lista de errores de indexación y una descripción de la posible causa del error.
   
-| Etiqueta de error | Description |
+| Etiqueta de error | Descripción |
 |:-----|:-----|
 | `attachmentcount` <br/> |Un mensaje de correo electrónico tenía demasiados datos adjuntos y algunos de estos datos adjuntos no se procesaron.  <br/> |
 | `attachmentdepth` <br/> |El recuperador de contenido y el analizador de documentos encontraron demasiados niveles de datos adjuntos anidados dentro de otros datos adjuntos. Algunos de estos datos adjuntos no se procesaron.  <br/> |

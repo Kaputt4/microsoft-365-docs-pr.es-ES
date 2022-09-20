@@ -2,8 +2,8 @@
 title: Introducción a la solución eDiscovery (Premium) en Microsoft Purview
 f1.keywords:
 - NOCSH
-ms.author: v-tophillips
-author: v-tophillips
+ms.author: robmazz
+author: robmazz
 manager: laurawi
 ms.date: 07/08/2022
 audience: Admin
@@ -20,12 +20,12 @@ search.appverid:
 - MET150
 description: Obtenga información sobre la solución eDiscovery (Premium) en Microsoft Purview. En este artículo se proporciona información general sobre eDiscovery (Premium) en Microsoft Purview, una herramienta que le ayudará a administrar investigaciones internas y externas. También se enmarcan los motivos empresariales para usar eDiscovery (Premium) para administrar las investigaciones legales.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 7f6841412402761d5eeb34162269bd659582e5e8
-ms.sourcegitcommit: 078149c9645ce220911ccd6ce54f984a4c92ce53
+ms.openlocfilehash: d0f934f7629dc6e5ee46912bee76402ef357a148
+ms.sourcegitcommit: 433f5b448a0149fcf462996bc5c9b45d17bd46c6
 ms.translationtype: MT
 ms.contentlocale: es-ES
 ms.lasthandoff: 09/20/2022
-ms.locfileid: "67809625"
+ms.locfileid: "67817298"
 ---
 # <a name="overview-of-microsoft-purview-ediscovery-premium"></a>Información general de Microsoft Purview eDiscovery (Premium)
 

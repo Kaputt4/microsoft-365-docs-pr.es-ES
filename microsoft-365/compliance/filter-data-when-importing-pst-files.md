@@ -2,8 +2,8 @@
 title: Filtrar datos al importar archivos PST
 f1.keywords:
 - NOCSH
-ms.author: v-tophillips
-author: v-tophillips
+ms.author: robmazz
+author: robmazz
 manager: laurawi
 ms.date: ''
 audience: Admin
@@ -21,12 +21,12 @@ ms.custom:
 - seo-marvel-apr2020
 - admindeeplinkCOMPLIANCE
 description: Obtenga información sobre cómo filtrar datos mediante la característica de importación inteligente en el servicio de importación de Microsoft 365 al importar archivos PST a Microsoft 365.
-ms.openlocfilehash: b18db6e684df522e863219cac5c7dc5f0ec3179e
-ms.sourcegitcommit: 23c7e96d8ec31c676c458e7c71f1cc8a1e40a0e4
+ms.openlocfilehash: ce4d85bb88bcd7e36ef1d2c39b0f23eabd38ae7f
+ms.sourcegitcommit: 433f5b448a0149fcf462996bc5c9b45d17bd46c6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/16/2022
-ms.locfileid: "67360356"
+ms.lasthandoff: 09/20/2022
+ms.locfileid: "67818377"
 ---
 # <a name="filter-data-when-importing-pst-files"></a>Filtrar datos al importar archivos PST
 

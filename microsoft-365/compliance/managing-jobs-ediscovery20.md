@@ -2,8 +2,8 @@
 title: Administrar trabajos en eDiscovery (Premium)
 f1.keywords:
 - NOCSH
-ms.author: v-tophillips
-author: v-tophillips
+ms.author: robmazz
+author: robmazz
 manager: laurawi
 ms.date: ''
 audience: Admin
@@ -15,23 +15,23 @@ search.appverid:
 - MOE150
 - MET150
 description: Los trabajos de eDiscovery (Premium) le ayudan a realizar un seguimiento del estado de los procesos de larga duración relacionados con la realización de varias tareas de exhibición de documentos electrónicos (Premium).
-ms.openlocfilehash: 9be48325e3103e8f4e349c32cc559db36e42a05e
-ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
+ms.openlocfilehash: fc3899c8f94f4cd9f62ea7dfc0cf020d57e97991
+ms.sourcegitcommit: 433f5b448a0149fcf462996bc5c9b45d17bd46c6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/06/2022
-ms.locfileid: "66639740"
+ms.lasthandoff: 09/20/2022
+ms.locfileid: "67817959"
 ---
 # <a name="manage-jobs-in-ediscovery-premium"></a>Administrar trabajos en eDiscovery (Premium)
 
 Esta es una lista de los trabajos (que suelen ser procesos de larga duración) de los que se realiza un seguimiento en la pestaña **Trabajos** de un caso en Microsoft Purview eDiscovery (Premium). Estos trabajos se desencadenan mediante acciones del usuario al usar y administrar casos.
 
-|Tipo de trabajo|Description|
+|Tipo de trabajo|Descripción|
 |---|---|
 |Adición de datos a un conjunto de revisión|Un usuario agrega una colección a un conjunto de revisión. Este trabajo consta de dos sub jobs: <ul><li>**Exportar** : se genera una lista de elementos de la colección.</li><li>**Ingesta & indexación** : los elementos de la colección que coinciden con la consulta de búsqueda se copian en una ubicación de Azure Storage (en un proceso denominado *ingesta*) y, a continuación, esos elementos de la ubicación de Azure Storage se vuelven a indexar. Este nuevo índice se usa al consultar y analizar elementos del conjunto de datos.</li><ul> <p> Para obtener más información, vea [Agregar resultados de búsqueda a un conjunto de revisión](add-data-to-review-set.md).|
 |Adición de datos a otro conjunto de revisión|Un usuario agrega documentos de un conjunto de revisión a otro conjunto de revisión en el mismo caso. Para obtener más información, vea [Agregar datos a un conjunto de revisión de otro conjunto de revisión](add-data-to-review-set-from-another-review-set.md).|
 |Adición de datos que no son de Microsoft 365 a un conjunto de revisión|Un usuario carga datos que no son de Microsoft 365 en un conjunto de revisión. Los datos también se indizan durante este proceso. Por ejemplo, los archivos de un servidor de archivos local o de un equipo cliente se cargan en un conjunto de revisión. Para obtener más información, consulte [Carga de datos que no son de Microsoft 365 en un conjunto de revisión](load-non-office-365-data-into-a-review-set.md).|
-|Adición de datos corregidos a un conjunto de revisión|Los datos con errores de procesamiento se corrigen y se cargan de nuevo en un conjunto de revisión. Para más información, vea: <ul><li>[Corrección de errores al procesar los datos](error-remediation-when-processing-data-in-advanced-ediscovery.md)</li><li>[Corrección de errores de un único elemento](single-item-error-remediation.md)</li></ul>|
+|Adición de datos corregidos a un conjunto de revisión|Los datos con errores de procesamiento se corrigen y se cargan de nuevo en un conjunto de revisión. Para obtener más información, consulte: <ul><li>[Corrección de errores al procesar los datos](error-remediation-when-processing-data-in-advanced-ediscovery.md)</li><li>[Corrección de errores de un único elemento](single-item-error-remediation.md)</li></ul>|
 |Comparación de conjuntos de carga|Un usuario examina las diferencias entre los distintos conjuntos de carga de un conjunto de revisión. Un conjunto de carga es una instancia de agregar datos a un conjunto de revisión. Por ejemplo, si agrega los resultados de dos búsquedas diferentes al mismo conjunto de revisión, cada una representaría un conjunto de carga.|
 |Reconstrucción de conversaciones|Cuando un usuario agrega los resultados de una búsqueda a un conjunto de revisión de conversaciones, las conversaciones de mensajes instantáneos (también *denominadas conversaciones en subprocesos*) en servicios como Microsoft Teams se reconstruyeron en un archivo PDF. Este trabajo también se desencadena cuando un usuario hace clic en **Acción > Crear archivos PDF de conversación** en un conjunto de revisión. Para obtener más información, vea [Revisar conversaciones en eDiscovery (Premium).](conversation-review-sets.md)
 |Conversión de documentos redactados en PDF|Después de que un usuario anota un documento en un conjunto de revisión y redacta una parte del mismo, puede optar por convertir el documento redactado en un archivo PDF. Esto garantiza que la parte redactada no será visible si el documento se exporta para la presentación. Para obtener más información, vea [Ver documentos en un conjunto de revisión](view-documents-in-review-set.md).|

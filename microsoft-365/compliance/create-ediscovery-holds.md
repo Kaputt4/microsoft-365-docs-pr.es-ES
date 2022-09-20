@@ -2,8 +2,8 @@
 title: Creación de retenciones de eDiscovery en un caso de exhibición de documentos electrónicos (estándar)
 f1.keywords:
 - NOCSH
-ms.author: v-tophillips
-author: v-tophillips
+ms.author: robmazz
+author: robmazz
 manager: laurawi
 audience: Admin
 ms.topic: article
@@ -18,12 +18,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Puede crear una retención asociada a un caso de exhibición de documentos electrónicos (estándar) en Microsoft 365 para conservar el contenido relevante para una investigación o caso legal.
-ms.openlocfilehash: c395c1bae2a4640c98133bc3bd89d2762a493661
-ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
+ms.openlocfilehash: 0c479990282ffa6bb1193c3f977f56738dbadb3d
+ms.sourcegitcommit: 433f5b448a0149fcf462996bc5c9b45d17bd46c6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/06/2022
-ms.locfileid: "66637425"
+ms.lasthandoff: 09/20/2022
+ms.locfileid: "67818531"
 ---
 # <a name="create-an-ediscovery-hold"></a>Crear un caso de retención de eDiscovery
 
@@ -39,7 +39,7 @@ Al crear una suspensión, tiene las siguientes opciones para limitar el contenid
   
 ## <a name="how-to-create-an-ediscovery-hold"></a>Cómo crear una suspensión de eDiscovery
 
-Para crear una suspensión de eDiscovery asociada a un caso de exhibición de documentos electrónicos (estándar):
+Para crear una suspensión de eDiscovery asociada a un caso de eDiscovery (Estándar):
   
 1. Vaya a <a href="https://go.microsoft.com/fwlink/p/?linkid=2077149" target="_blank">portal de cumplimiento Microsoft Purview</a> e inicie sesión con las credenciales de la cuenta de usuario a la que se han asignado los permisos de exhibición de documentos electrónicos adecuados.
 
