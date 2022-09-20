@@ -2,8 +2,8 @@
 title: Uso de conectores de datos para importar y archivar datos de terceros en Microsoft 365
 f1.keywords:
 - NOCSH
-ms.author: v-tophillips
-author: v-tophillips
+ms.author: robmazz
+author: robmazz
 manager: laurawi
 ms.date: ''
 audience: Admin
@@ -21,12 +21,12 @@ ms.assetid: 0ce338d5-3666-4a18-86ab-c6910ff408cc
 ms.custom:
 - seo-marvel-apr2020
 description: Obtenga información sobre cómo importar y archivar datos de terceros desde plataformas de medios sociales, plataformas de mensajería instantánea y plataformas de colaboración de documentos en buzones de Microsoft 365.
-ms.openlocfilehash: 41a7b37980919e28ecb4dbfd6e28b5d08b905a3d
-ms.sourcegitcommit: 61df6377a6185a8b55e668cfb81adbd8462a9cce
+ms.openlocfilehash: 7653e51940c741ccc2f288c11428024f44022073
+ms.sourcegitcommit: 433f5b448a0149fcf462996bc5c9b45d17bd46c6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/29/2022
-ms.locfileid: "67071665"
+ms.lasthandoff: 09/20/2022
+ms.locfileid: "67819477"
 ---
 # <a name="learn-about-connectors-for-third-party-data"></a>Más información sobre los conectores para datos de terceros
 
@@ -205,7 +205,7 @@ Puede aplicar una [directiva de retención](retention.md) a los buzones de usuar
 
 La característica [de administración de registros](records-management.md) de Microsoft 365 le permite declarar datos de terceros como un registro. Esto lo pueden hacer manualmente los usuarios que aplican una etiqueta de retención que marca los datos de terceros en su buzón como registro. También puede aplicar automáticamente etiquetas de retención mediante la identificación de información confidencial, palabras clave o tipos de contenido en datos de terceros.
 
-### <a name="communication-compliance"></a>Cumplimiento de comunicaciones
+### <a name="communication-compliance"></a>Cumplimiento de las comunicaciones
 
 Puede usar [cumplimiento de comunicaciones](communication-compliance.md) para examinar datos de terceros a fin de asegurarse de que cumplen los estándares de datos de su organización. Para ello, detecte, capture y tome medidas correctivas para los mensajes inadecuados de su organización. Por ejemplo, puede supervisar los datos de terceros que importa para el lenguaje ofensivo, la información confidencial y el cumplimiento normativo.
 
@@ -271,84 +271,84 @@ Algunos conectores de datos están disponibles en la nube del Gobierno de EE. UU
 
 |Conector de datos  |GCC  |GCC High  |DoD  |
 |:---------|:---------|:---------|:---------|
-|CellTrust| Sí | No | No |
-|Cisco Jabber en MS SQL| Sí | No | No |
-|Cisco Jabber en Oracle| Sí | No | No |
-|Cisco Jabber en PostgreSQL| Sí | No | No |
-|EML| Sí | No | No |
-|Conectar FX| Sí | No | No |
-|Jive| Sí | No | No |
-|Base de datos SQL MS| Sí | No | No |
-|Documento principal| Sí | No | No |
-|Redtail Speak| Sí | No | No |
-|Reuters Dealing| Sí | No | No |
-|Reuters Eikon| Sí | No | No |
-|Reuters FX| Sí | No | No |
-|RingCentral| Sí | No | No |
-|Salesforce Chatter| Sí | No | No |
-|ServiceNow| Sí | No | No |
-|Skype for Business| Sí | No | No |
-|Margen de demora eDiscovery| Sí | No | No |
-|Symphony| Sí | No | No |
-|Texto delimitado| Sí | No | No |
-|Twitter| Sí | No | No |
-|Teams de Webex| Sí | No | No |
-|Páginas web| Sí | No | No |
-|Área de trabajo de Facebook| Sí | No | No |
-|XIP| Sí | No | No |
-|XSLT/XML| Sí | No | No |
-|Yieldbroker| Sí | No | No |
+|CellTrust| Yes | No | No |
+|Cisco Jabber en MS SQL| Yes | No | No |
+|Cisco Jabber en Oracle| Yes | No | No |
+|Cisco Jabber en PostgreSQL| Yes | No | No |
+|EML| Yes | No | No |
+|Conectar FX| Yes | No | No |
+|Jive| Yes | No | No |
+|Base de datos SQL MS| Yes | No | No |
+|Documento principal| Yes | No | No |
+|Redtail Speak| Yes | No | No |
+|Reuters Dealing| Yes | No | No |
+|Reuters Eikon| Yes | No | No |
+|Reuters FX| Yes | No | No |
+|RingCentral| Yes | No | No |
+|Salesforce Chatter| Yes | No | No |
+|ServiceNow| Yes | No | No |
+|Skype for Business| Yes | No | No |
+|Margen de demora eDiscovery| Yes | No | No |
+|Symphony| Yes | No | No |
+|Texto delimitado| Yes | No | No |
+|Twitter| Yes | No | No |
+|Teams de Webex| Yes | No | No |
+|Páginas web| Yes | No | No |
+|Área de trabajo de Facebook| Yes | No | No |
+|XIP| Yes | No | No |
+|XSLT/XML| Yes | No | No |
+|Yieldbroker| Yes | No | No |
 |YouTube| No | No | No |
-|Reuniones de Zoom| Sí | No | No |
+|Reuniones de Zoom| Yes | No | No |
 |||||
 
 ### <a name="telemessage-data-connectors-in-the-us-government-cloud"></a>Conectores de datos de TeleMessage en la nube del Gobierno de EE. UU.
 
 |Conector de datos  |GCC  |GCC High  |DoD  |
 |:---------|:---------|:---------|:---------|
-|Archivador de Android | Sí | No | No |
-|Archivador de red AT&T SMS/MMS | Sí | No | No |
-|Archivador de red SMS/MMS de Bell | Sí | No | No |
-|Archivador de números de empresa | Sí | No | No |
-|Archivo de red de voz y SMS de O2 | Sí         | No | No |
-|Archivador de red social | Sí         | No | No |
-|Archivador de Signal | Sí | No | No |
-|Archivador de Telegram | Sí | No | No |
-|Archivador de red de SMS de TELUS | Sí | No | No |
-|Archivador de red SMS/MMS de Verizon | Sí | No | No |
-|Archivador de WeChat | Sí | No | No |
-|Archivador de WhatsApp | Sí | No | No |
+|Archivador de Android | Yes | No | No |
+|Archivador de red AT&T SMS/MMS | Yes | No | No |
+|Archivador de red SMS/MMS de Bell | Yes | No | No |
+|Archivador de números de empresa | Yes | No | No |
+|Archivo de red de voz y SMS de O2 | Yes         | No | No |
+|Archivador de red social | Yes         | No | No |
+|Archivador de Signal | Yes | No | No |
+|Archivador de Telegram | Yes | No | No |
+|Archivador de red de SMS de TELUS | Yes | No | No |
+|Archivador de red SMS/MMS de Verizon | Yes | No | No |
+|Archivador de WeChat | Yes | No | No |
+|Archivador de WhatsApp | Yes | No | No |
 |||||
 
 ### <a name="17a-4-data-connectors-in-the-us-government-cloud"></a>Conectores de datos 17a-4 en la nube del Gobierno de EE. UU.
 
 |Conector de datos  |GCC  |GCC High  |DoD  |
 |:---------|:---------|:---------|:---------|
-|BlackBerry DataParser | Sí | No | No |
-|Bloomberg DataParser  | Sí | No | No |
-|Cisco Jabber DataParser  | Sí | No | No |
-|Cisco Webex DataParser  | Sí | No | No |
-|FactSet DataParser  | Sí | No | No |
-|Fuze DataParser  | Sí | No | No |
-|FX Connect DataParser  | Sí | No | No |
-|ICE DataParser  | Sí | No | No |
-|InvestEdge DataParser  | Sí | No | No |
-|DataParser de la Nube conversacional de LivePerson  | Sí | No | No |
-|Quip DataParser  | Sí | No | No |
-|DataParser de Refinitiv Eikon Messenger  | Sí | No | No |
-|ServiceNow DataParser  | Sí | No | No |
-|DataParser de Skype Empresarial Server | Sí | No | No |
-|Slack DataParser | Sí | No | No |
-|SQL DataParser  | Sí | No | No |
-|DataParser de Symphony | Sí | No | No |
-|Zoom DataParser | Sí | No | No |
+|BlackBerry DataParser | Yes | No | No |
+|Bloomberg DataParser  | Yes | No | No |
+|Cisco Jabber DataParser  | Yes | No | No |
+|Cisco Webex DataParser  | Yes | No | No |
+|FactSet DataParser  | Yes | No | No |
+|Fuze DataParser  | Yes | No | No |
+|FX Connect DataParser  | Yes | No | No |
+|ICE DataParser  | Yes | No | No |
+|InvestEdge DataParser  | Yes | No | No |
+|DataParser de la Nube conversacional de LivePerson  | Yes | No | No |
+|Quip DataParser  | Yes | No | No |
+|DataParser de Refinitiv Eikon Messenger  | Yes | No | No |
+|ServiceNow DataParser  | Yes | No | No |
+|DataParser de Skype Empresarial Server | Yes | No | No |
+|Slack DataParser | Yes | No | No |
+|SQL DataParser  | Yes | No | No |
+|DataParser de Symphony | Yes | No | No |
+|Zoom DataParser | Yes | No | No |
 |||||
 
 ### <a name="celltrust-data-connectors-in-the-us-government-cloud"></a>Conectores de datos de CellTrust en la nube del Gobierno de EE. UU.
 
 |Conector de datos  |GCC  |GCC High  |DoD  |
 |:---------|:---------|:---------|:---------|
-|CellTrust SL2 | Sí | No | No |
+|CellTrust SL2 | Yes | No | No |
 |||||
 
 ## <a name="working-with-a-microsoft-partner-to-archive-third-party-data"></a>Trabajar con un asociado de Microsoft para archivar datos de terceros

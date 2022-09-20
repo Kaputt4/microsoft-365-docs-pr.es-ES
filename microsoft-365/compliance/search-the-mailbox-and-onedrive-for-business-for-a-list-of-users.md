@@ -2,8 +2,8 @@
 title: Usar búsqueda de contenido para obtener una lista de usuarios en el buzón de correo & OneDrive para la Empresa sitio
 f1.keywords:
 - NOCSH
-ms.author: v-tophillips
-author: v-tophillips
+ms.author: robmazz
+author: robmazz
 manager: laurawi
 ms.date: 1/3/2017
 audience: Admin
@@ -19,12 +19,12 @@ search.appverid:
 ms.assetid: 5f4f8206-2d6a-4cb2-bbc6-7a0698703cc0
 description: Use búsqueda de contenido y el script de este artículo para buscar un grupo de usuarios en los buzones y OneDrive para la Empresa sitios.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 02ee9790d35eca411a9e27607a7e99ca962ddf05
-ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
+ms.openlocfilehash: e819ca7838e5db29ee72b90bf96e70ebcb36be9b
+ms.sourcegitcommit: 433f5b448a0149fcf462996bc5c9b45d17bd46c6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/06/2022
-ms.locfileid: "66629175"
+ms.lasthandoff: 09/20/2022
+ms.locfileid: "67825266"
 ---
 # <a name="use-content-search-to-search-the-mailbox-and-onedrive-for-business-site-for-a-list-of-users"></a>Usar búsqueda de contenido para buscar una lista de usuarios en el buzón y el sitio de OneDrive para la Empresa
 

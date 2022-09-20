@@ -2,8 +2,8 @@
 title: Agregar o quitar miembros de un caso
 f1.keywords:
 - NOCSH
-ms.author: v-tophillips
-author: v-tophillips
+ms.author: robmazz
+author: robmazz
 manager: laurawi
 ms.date: ''
 audience: Admin
@@ -17,12 +17,12 @@ search.appverid:
 ms.assetid: ''
 description: Obtenga información sobre cómo agregar o quitar los miembros que pueden acceder a un caso al administrar un caso de exhibición de documentos electrónicos (Premium).
 ms.custom: seo-marvel-mar2020
-ms.openlocfilehash: 0b3ed53ee897e88d70a7b1322999e5b81de8ed81
-ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
+ms.openlocfilehash: 3d21d7953b69f2e449a2318caee7e75bdd64fc33
+ms.sourcegitcommit: 433f5b448a0149fcf462996bc5c9b45d17bd46c6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/06/2022
-ms.locfileid: "66627721"
+ms.lasthandoff: 09/20/2022
+ms.locfileid: "67825178"
 ---
 # <a name="add-or-remove-members-from-a-case"></a>Agregar o quitar miembros de un caso
 

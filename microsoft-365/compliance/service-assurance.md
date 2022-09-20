@@ -2,8 +2,8 @@
 title: Garantía del servicio en el Centro de seguridad y cumplimiento
 f1.keywords:
 - NOCSH
-ms.author: v-tophillips
-author: v-tophillips
+ms.author: robmazz
+author: robmazz
 manager: laurawi
 ms.date: 6/29/2018
 audience: Admin
@@ -16,12 +16,12 @@ search.appverid:
 - MET150
 ms.assetid: 47e8b964-4b09-44f7-a2d7-b8a06e8e389c
 description: Descargue auditorías de terceros, descubra cómo Microsoft mantiene la seguridad de los datos de los clientes y sepa cómo puede cumplir con ISO, HIPAA, FINRA y FedRAMP cuando use Office 365.
-ms.openlocfilehash: fdd60478266ee4ef55f550aa04a62d9e1148856e
-ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
+ms.openlocfilehash: 05716bf15b06a41d63337754244f296ae9978dd3
+ms.sourcegitcommit: 433f5b448a0149fcf462996bc5c9b45d17bd46c6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/06/2022
-ms.locfileid: "66622401"
+ms.lasthandoff: 09/20/2022
+ms.locfileid: "67825222"
 ---
 # <a name="service-assurance-in-the-security--compliance-center"></a>Garantía del servicio en el Centro de seguridad y cumplimiento
 
@@ -84,7 +84,7 @@ Seleccione el informe que desea descargar y seleccione **Guardar** para descarga
 > [!NOTE]
 > Los informes y documentos de Service Assurance están disponibles para su descarga durante al menos doce meses después de la publicación o hasta que esté disponible una nueva versión del documento. 
   
-|**Página de garantía del servicio**|**Contenido disponible**|**Description**|
+|**Página de garantía del servicio**|**Contenido disponible**|**Descripción**|
 |:-----|:-----|:-----|
 |Informes de cumplimiento  <br/> | FedRamp  <br/>  Evaluación de GRC  <br/>  ISO  <br/>  SOC/SSAE  <br/> |Use informes de cumplimiento de servicios para revisar las evaluaciones de auditoría realizadas por auditores independientes de terceros de Office 365 Operaciones de entrega de servicios.  <br/> |
 |Documentos de confianza  <br/> | Preguntas más frecuentes y notas del producto  <br/>  Informes de administración de riesgos  <br/> |Use notas del producto, preguntas más frecuentes, informes de fin de año y otros recursos confidenciales de Microsoft que estén disponibles en virtud del acuerdo de no divulgación para sus evaluaciones de revisión y riesgo.  <br/> |
