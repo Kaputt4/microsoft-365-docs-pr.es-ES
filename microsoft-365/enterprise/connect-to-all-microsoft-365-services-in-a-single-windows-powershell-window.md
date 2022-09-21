@@ -18,12 +18,12 @@ ms.custom:
 - httpsfix
 ms.assetid: 53d3eef6-4a16-4fb9-903c-816d5d98d7e8
 description: 'Resumen: Conectarse a todos los servicios de Microsoft 365 en una sola ventana de Windows PowerShell.'
-ms.openlocfilehash: 67ee0831a0d78a971982f75653ca49e760e61692
-ms.sourcegitcommit: 62368e5a48e569c8e475b07d194d7d8ff7d167ab
+ms.openlocfilehash: b133a4d1535005cb48447037ee0ec04937143234
+ms.sourcegitcommit: 95ac076310ab9006ed92c69938f7ae771cd10826
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/02/2022
-ms.locfileid: "67560381"
+ms.lasthandoff: 09/20/2022
+ms.locfileid: "67851422"
 ---
 # <a name="connect-to-all-microsoft-365-services-in-a-single-powershell-window"></a>Conectarse a todos los servicios de Microsoft 365 en una sola ventana de Windows PowerShell
 
@@ -57,7 +57,7 @@ Antes de poder administrar todo Microsoft 365 desde una sola instancia de Window
   - [Azure Active Directory V2](connect-to-microsoft-365-powershell.md#connect-with-the-azure-active-directory-powershell-for-graph-module)
   - [Shell de administración de SharePoint Online](https://go.microsoft.com/fwlink/p/?LinkId=255251)
   - [Módulo de PowerShell de Teams](/microsoftteams/teams-powershell-overview)
-  - [Exchange Online PowerShell V2](/powershell/exchange/exchange-online-powershell-v2#install-and-maintain-the-exchange-online-powershell-v2-module)
+  - [Instalación y mantenimiento del módulo de PowerShell Exchange Online](/powershell/exchange/exchange-online-powershell-v2#install-and-maintain-the-exchange-online-powershell-module)
   - [Descripción de PowerShell para Teams](/microsoftteams/teams-powershell-overview)
 
 - PowerShell debe configurarse para ejecutar scripts firmados para Exchange Online, Defender para Office 365 y cumplimiento de Microsoft Purview. Ejecutar el siguiente comando en una sesión de PowerShell con privilegios elevados (una sesión de PowerShell que se abre seleccionando **Ejecutar como administrador**).

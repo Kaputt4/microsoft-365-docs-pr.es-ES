@@ -21,12 +21,12 @@ ms.custom:
 - seo-marvel-apr2020
 ms.subservice: mdo
 ms.service: microsoft-365-security
-ms.openlocfilehash: e318f44488492f3d0e3bd2a0457570387cfecc7b
-ms.sourcegitcommit: 437461fa1d38ff9bb95dd8a1c5f0b94e8111ada2
+ms.openlocfilehash: 8f0a7b8a13ebe47a7b95fa52ed06147f166d6d15
+ms.sourcegitcommit: 95ac076310ab9006ed92c69938f7ae771cd10826
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/14/2022
-ms.locfileid: "67670959"
+ms.lasthandoff: 09/20/2022
+ms.locfileid: "67851026"
 ---
 # <a name="view-defender-for-office-365-reports-in-the-microsoft-365-defender-portal"></a>Ver informes de Defender para Office 365 en el portal de Microsoft 365 Defender
 
@@ -249,8 +249,3 @@ Para obtener más información, consulte [Permisos en el portal de Microsoft 365
 
 Si no ve datos en los informes de Defender para Office 365, compruebe que las directivas están configuradas correctamente. Su organización debe tener definidas [directivas de vínculos seguros](set-up-safe-links-policies.md) y [directivas de datos adjuntos seguros](set-up-safe-attachments-policies.md) para que Defender para Office 365 protección esté en vigor. Consulte también [protección contra correo no deseado](anti-spam-protection.md) y [antimalware](anti-malware-protection.md).
 
-## <a name="related-topics"></a>Temas relacionados
-
-[Informes inteligentes e información en el portal de Microsoft 365 Defender](reports-and-insights-in-security-and-compliance.md)
-
-[Roles integrados de Azure AD](/azure/active-directory/roles/permissions-reference)

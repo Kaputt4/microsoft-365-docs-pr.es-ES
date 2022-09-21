@@ -21,12 +21,12 @@ search.appverid:
 ms.custom:
 - seo-marvel-apr2020
 - seo-marvel-jun2020
-ms.openlocfilehash: e5bea982a1cbc776a9529532bbbac4da4199fb4a
-ms.sourcegitcommit: 10e6abe740e27000e223378eb17d657a47555fa8
+ms.openlocfilehash: 15d8001e27ca2ddd365370deba1c92af389701ba
+ms.sourcegitcommit: 95ac076310ab9006ed92c69938f7ae771cd10826
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/31/2022
-ms.locfileid: "67482590"
+ms.lasthandoff: 09/20/2022
+ms.locfileid: "67850268"
 ---
 # <a name="whats-new-in-microsoft-secure-score"></a>Novedades de La puntuación segura de Microsoft
 
@@ -37,6 +37,27 @@ Para que La puntuación segura de Microsoft sea un mejor representante de su pos
 Cuantos más acciones de mejora realice, mayor será la puntuación de seguridad. Para obtener más información, consulte [Puntuación segura de Microsoft](microsoft-secure-score.md).
 
 La Puntuación de seguridad de Microsoft se puede encontrar en <https://security.microsoft.com/securescore> el [portal de Microsoft 365 Defender](microsoft-365-defender-portal.md).
+
+## <a name="september-2022"></a>Septiembre de 2022
+
+Ahora hay disponibles nuevas recomendaciones de Microsoft Defender para Office 365 para las directivas contra suplantación de identidad (phishing) como acciones de mejora de puntuación segura:
+
+- Establecer el umbral de nivel de correo electrónico de suplantación de identidad (phishing) en 2 o superior
+- Habilitación de la protección de usuarios suplantados
+- Habilitación de la protección de dominio suplantado
+- Asegúrese de que la inteligencia del buzón de correo está habilitada
+- Asegúrese de que la inteligencia para la protección de suplantación está habilitada
+- Mensajes de cuarentena que se detectan de usuarios suplantados
+- Mensajes de cuarentena que se detectan desde dominios suplantados
+- Traslado de mensajes detectados como usuarios suplantados por inteligencia de buzones
+- Habilitar la opción "mostrar la sugerencia de seguridad del primer contacto"
+- Habilitación de la sugerencia de seguridad de suplantación de usuario
+- Habilitación de la sugerencia de seguridad de suplantación de dominio
+- Habilitación de la sugerencia de seguridad de caracteres inusuales de suplantación de usuario
+
+Ahora hay disponible una nueva recomendación de SharePoint Online como una acción de mejora de puntuación segura:
+
+- Cerrar la sesión de usuarios inactivos en SharePoint Online
 
 ## <a name="august-2022"></a>Agosto de 2022
 

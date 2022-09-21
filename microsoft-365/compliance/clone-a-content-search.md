@@ -18,12 +18,12 @@ ms.assetid: 7b40eeaa-544c-4534-b89b-9f79998e374c
 ms.custom:
 - seo-marvel-apr2020
 description: Use el script de PowerShell de este artículo para clonar rápidamente una búsqueda de contenido existente en la portal de cumplimiento Microsoft Purview en Microsoft 365.
-ms.openlocfilehash: 0ded1b6b75d1d0d6b775cbbbd03b7d6b8b02e407
-ms.sourcegitcommit: 433f5b448a0149fcf462996bc5c9b45d17bd46c6
+ms.openlocfilehash: 3b784753d242e779711c10e8c4e5cf1835d59683
+ms.sourcegitcommit: 95ac076310ab9006ed92c69938f7ae771cd10826
 ms.translationtype: MT
 ms.contentlocale: es-ES
 ms.lasthandoff: 09/20/2022
-ms.locfileid: "67821921"
+ms.locfileid: "67851510"
 ---
 # <a name="clone-a-content-search"></a>Clonar una búsqueda de contenido
 
@@ -39,7 +39,7 @@ La creación de una búsqueda de contenido en el portal de cumplimiento Microsof
 
 ## <a name="script-information"></a>Información de script
 
-- Debe instalar el módulo Exchange Online V2. Para obtener instrucciones, consulte [Instalar y mantener el módulo EXO V2](/powershell/exchange/exchange-online-powershell-v2#install-and-maintain-the-exo-v2-module).
+- Debe instalar el módulo de PowerShell Exchange Online. Para obtener instrucciones, consulte [Instalación y mantenimiento del módulo de PowerShell Exchange Online](/powershell/exchange/exchange-online-powershell-v2#install-and-maintain-the-exchange-online-powershell-module).
 
 - Debe ser miembro del grupo de roles administrador de eDiscovery en el portal de cumplimiento Microsoft Purview para ejecutar el script descrito en este tema.
 

@@ -7,7 +7,7 @@ ms.author: deniseb
 manager: dansimp
 audience: Admin
 ms.topic: overview
-ms.date: 09/19/2022
+ms.date: 09/20/2022
 ms.service: microsoft-365-security
 ms.subservice: mde
 ms.localizationpriority: medium
@@ -15,12 +15,12 @@ ms.collection: ''
 ms.custom: ''
 ms.reviewer: joshbregman
 f1.keywords: NOCSH
-ms.openlocfilehash: a25311b2bd5583c17d48cc38bcab043fed3b759f
-ms.sourcegitcommit: 078149c9645ce220911ccd6ce54f984a4c92ce53
+ms.openlocfilehash: ebca659bf4f9f8b426ee88779532af1baa66afb0
+ms.sourcegitcommit: 95ac076310ab9006ed92c69938f7ae771cd10826
 ms.translationtype: MT
 ms.contentlocale: es-ES
 ms.lasthandoff: 09/20/2022
-ms.locfileid: "67811468"
+ms.locfileid: "67851357"
 ---
 # <a name="built-in-protection-helps-guard-against-ransomware"></a>La protección integrada ayuda a protegerse contra ransomware
 
@@ -35,7 +35,7 @@ ms.locfileid: "67811468"
 
 ## <a name="what-is-built-in-protection-and-how-does-it-work"></a>¿Qué es la protección integrada y cómo funciona?
 
-La protección integrada es un conjunto de configuraciones predeterminadas que se implementan para ayudar a garantizar que los dispositivos están protegidos. Esta configuración predeterminada está diseñada para proteger los dispositivos frente a ransomware y otras amenazas. Inicialmente, la protección integrada incluirá la activación de la [protección contra alteraciones](prevent-changes-to-security-settings-with-tamper-protection.md) para el inquilino, con otras opciones predeterminadas próximamente. 
+La protección integrada es un conjunto de configuraciones predeterminadas que se implementan para ayudar a garantizar que los dispositivos están protegidos. Esta configuración predeterminada está diseñada para proteger los dispositivos frente a ransomware y otras amenazas. Inicialmente, la protección integrada incluirá la activación de la [protección contra alteraciones](prevent-changes-to-security-settings-with-tamper-protection.md) para el inquilino, con otras opciones predeterminadas próximamente. Para obtener más información, consulte la entrada de blog de Tech Community, [La protección contra alteraciones se activará para todos los clientes empresariales](https://techcommunity.microsoft.com/t5/microsoft-defender-for-endpoint/tamper-protection-will-be-turned-on-for-all-enterprise-customers/ba-p/3616478).
 
 | Fase | Qué ocurre |
 |:---|:---|
@@ -88,6 +88,7 @@ La protección integrada es un conjunto de configuraciones predeterminadas. No e
 
 ## <a name="see-also"></a>Vea también
 
+- [Blog de tech community: la protección contra alteraciones se activará para todos los clientes empresariales](https://techcommunity.microsoft.com/t5/microsoft-defender-for-endpoint/tamper-protection-will-be-turned-on-for-all-enterprise-customers/ba-p/3616478)
 - [Configuración de seguridad de la protección con protección contra alteraciones](prevent-changes-to-security-settings-with-tamper-protection.md)
 - [Administración de seguridad de puntos de conexión en Microsoft Intune](/mem/intune/protect/endpoint-security)
 - [Configure icrosoft Defender para punto de conexión en Intune](/mem/intune/protect/advanced-threat-protection-configure)

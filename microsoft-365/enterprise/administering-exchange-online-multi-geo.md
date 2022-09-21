@@ -6,18 +6,18 @@ author: chrisda
 manager: serdars
 audience: ITPro
 ms.topic: article
-ms.service: o365-solutions
+ms.service: microsoft-365-enterprise
 f1.keywords:
 - NOCSH
 ms.custom: seo-marvel-mar2020
 ms.localizationpriority: medium
 description: Obtenga información sobre cómo administrar Exchange Online configuración multigeográfica en el entorno de Microsoft 365 con PowerShell.
-ms.openlocfilehash: 4b0b02fa9ea974784ec93efe83520faed5fd05bd
-ms.sourcegitcommit: fdd0294e6cda916392ee66f5a1d2a235fb7272f8
+ms.openlocfilehash: 9a8c9d82df0b5ded764b117583059c6ab0345d8a
+ms.sourcegitcommit: 95ac076310ab9006ed92c69938f7ae771cd10826
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/29/2022
-ms.locfileid: "65130875"
+ms.lasthandoff: 09/20/2022
+ms.locfileid: "67851488"
 ---
 # <a name="administering-exchange-online-mailboxes-in-a-multi-geo-environment"></a>Administración de buzones de correo de Exchange Online en un entorno multigeográfico
 
@@ -31,19 +31,19 @@ En Exchange Online entornos multigeográficos, no es necesario realizar ningún 
 
 Normalmente, el PowerShell de Exchange Online se conecta a la ubicación geográfica central. Sin embargo, también puede conectarse directamente a las ubicaciones geográficas satélite. Debido a las mejoras en el rendimiento, se recomienda conectarse directamente a la ubicación satélite si únicamente administra usuarios en esa ubicación.
 
-Los requisitos para instalar y usar el módulo EXO V2 se describen en [Instalar y mantener el módulo EXO V2](/powershell/exchange/exchange-online-powershell-v2#install-and-maintain-the-exo-v2-module).
+Los requisitos para instalar y usar el módulo de PowerShell Exchange Online se describen en [Instalación y mantenimiento del módulo de PowerShell Exchange Online](/powershell/exchange/exchange-online-powershell-v2#install-and-maintain-the-exchange-online-powershell-module).
 
-Para conectar Exchange Online PowerShell a una ubicación geográfica específica, el parámetro *ConnectionUri* es diferente de las instrucciones de conexión normales. El resto de comandos y valores son los mismos.
+Para conectar Exchange Online PowerShell a una ubicación geográfica específica, el parámetro _ConnectionUri_ es diferente de las instrucciones de conexión normales. El resto de comandos y valores son los mismos.
 
 En concreto, debe agregar el `?email=<emailaddress>` valor al final del valor _ConnectionUri_ . `<emailaddress>` es la dirección de correo electrónico de **cualquier** buzón en la ubicación geográfica de destino. Los permisos para ese buzón o la relación con sus credenciales no son un factor; la dirección de correo electrónico simplemente indica a Exchange Online PowerShell dónde conectarse.
 
-Microsoft 365 o Microsoft 365 GCC los clientes normalmente no necesitan usar el parámetro _ConnectionUri_ para conectarse a Exchange Online PowerShell. Sin embargo, para conectarse a una ubicación geográfica específica, debe usar el parámetro _ConnectionUri_ para poder usar `?email=<emailaddress>` en el valor.
+Los clientes de GCC de Microsoft 365 o Microsoft 365 normalmente no necesitan usar el parámetro _ConnectionUri_ para conectarse a Exchange Online PowerShell. Sin embargo, para conectarse a una ubicación geográfica específica, debe usar el parámetro _ConnectionUri_ para poder usar `?email=<emailaddress>` en el valor.
 
-### <a name="connect-to-a-geo-location-in-exchange-online-powershell"></a>Conectar a una ubicación geográfica en Exchange Online PowerShell
+### <a name="connect-to-a-geo-location-in-exchange-online-powershell"></a>Conexión a una ubicación geográfica en Exchange Online PowerShell
 
 Las siguientes instrucciones de conexión funcionan para las cuentas que están configuradas o no para la autenticación multifactor (MFA).
 
-1. En una ventana de Windows PowerShell, cargue el módulo EXO V2 ejecutando el comando siguiente:
+1. En una ventana de PowerShell, ejecute el siguiente comando para cargar el módulo de PowerShell Exchange Online:
 
    ```powershell
    Import-Module ExchangeOnlineManagement

@@ -15,12 +15,12 @@ ms.collection: M365-security-compliance
 ms.custom: admindeeplinkEXCHANGE
 ROBOTS: NOINDEX, NOFOLLOW
 description: ''
-ms.openlocfilehash: ac9533beef61ddbe373a1ebeb0f3088f06d1f96b
-ms.sourcegitcommit: 433f5b448a0149fcf462996bc5c9b45d17bd46c6
+ms.openlocfilehash: 2fbcc2946bb52fbf0f6d9f9cdd326e0ee3356730
+ms.sourcegitcommit: 95ac076310ab9006ed92c69938f7ae771cd10826
 ms.translationtype: MT
 ms.contentlocale: es-ES
 ms.lasthandoff: 09/20/2022
-ms.locfileid: "67817320"
+ms.locfileid: "67850312"
 ---
 # <a name="migrate-legacy-ediscovery-searches-and-holds-to-the-compliance-portal"></a>Migración de búsquedas y retenciones de eDiscovery heredadas al portal de cumplimiento
 
@@ -33,7 +33,7 @@ Para ayudar a los clientes a aprovechar las ventajas de la funcionalidad nueva y
 
 ## <a name="before-you-begin"></a>Antes de empezar
 
-- Debe instalar el módulo Exchange Online V2. Para obtener instrucciones, consulte [Instalar y mantener el módulo EXO V2](/powershell/exchange/exchange-online-powershell-v2#install-and-maintain-the-exo-v2-module).
+- Debe instalar el módulo de PowerShell Exchange Online. Para obtener instrucciones, consulte [Instalación y mantenimiento del módulo de PowerShell Exchange Online](/powershell/exchange/exchange-online-powershell-v2#install-and-maintain-the-exchange-online-powershell-module).
 
 - Debe ser miembro del grupo de roles administrador de eDiscovery en el portal de cumplimiento para ejecutar los comandos de PowerShell descritos en este artículo. También debe ser miembro del grupo de roles Administración de detección en el <a href="https://go.microsoft.com/fwlink/p/?linkid=2059104" target="_blank">Centro de administración de Exchange</a>.
 

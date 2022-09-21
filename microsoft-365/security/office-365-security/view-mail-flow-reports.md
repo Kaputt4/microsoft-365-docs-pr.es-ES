@@ -19,12 +19,12 @@ description: Los administradores pueden obtener información sobre los informes 
 ms.custom: ''
 ms.subservice: mdo
 ms.service: microsoft-365-security
-ms.openlocfilehash: 5dd1c851487efcc25c6a29975a3b3faa724329ac
-ms.sourcegitcommit: 437461fa1d38ff9bb95dd8a1c5f0b94e8111ada2
+ms.openlocfilehash: 26a6211e86266dad2705eb7024ad8a4b86e63e25
+ms.sourcegitcommit: 95ac076310ab9006ed92c69938f7ae771cd10826
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/14/2022
-ms.locfileid: "67671377"
+ms.lasthandoff: 09/20/2022
+ms.locfileid: "67851048"
 ---
 # <a name="view-mail-flow-reports-in-the-reports-dashboard-in-security--compliance-center"></a>Ver informes de flujo de correo en el panel Informes del Centro de cumplimiento de seguridad &
 
@@ -113,12 +113,3 @@ Para obtener más información, vea [Permisos en el Centro de seguridad y cumpli
 > [!NOTE]
 > Agregar usuarios al rol correspondiente de Azure Active Directory en el Centro de administración de Microsoft 365 otorga a los usuarios los permisos necesarios en el Centro de seguridad y cumplimiento _y_ permisos para otras características de Microsoft 365. Para obtener más información, vea [Sobre los roles de administrador](../../admin/add-users/about-admin-roles.md).
 
-## <a name="related-topics"></a>Temas relacionados
-
-[Informes inteligentes y reportes en el Centro de seguridad y cumplimiento](reports-and-insights-in-security-and-compliance.md)
-
-[Reportes de flujo de Correo en el Centro de seguridad y cumplimiento](mail-flow-insights-v2.md)
-
-[Ver informes de seguridad de correo electrónico en el Centro de seguridad y cumplimiento](view-email-security-reports.md)
-
-[Ver informes para Microsoft Defender para Office 365](view-reports-for-mdo.md)

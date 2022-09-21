@@ -19,12 +19,12 @@ ms.collection:
 search.appverid:
 - MET150
 - MOE150
-ms.openlocfilehash: 13b5d83a5b5993e90938a774dff3063bc1da5f86
-ms.sourcegitcommit: 0af064e8b6778060f1bd365378d69b16fc9949b5
+ms.openlocfilehash: a3348ccc2458252aca84762d89d58dbeb9ebe92a
+ms.sourcegitcommit: 95ac076310ab9006ed92c69938f7ae771cd10826
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/15/2022
-ms.locfileid: "67731130"
+ms.lasthandoff: 09/20/2022
+ms.locfileid: "67851598"
 ---
 # <a name="use-communication-compliance-reports-and-audits"></a>Uso de informes y auditorías de cumplimiento de comunicaciones
 
@@ -55,47 +55,47 @@ Use la opción *Exportar* para crear un archivo .csv que contenga los detalles d
 - **Configuración y estado** de la directiva: proporciona una vista detallada de la configuración y la configuración de la directiva, así como el estado general de cada una de las directivas (coincidencias y acciones) en los mensajes. Incluye información de directiva y cómo se asocian las directivas a usuarios y grupos, ubicaciones, porcentajes de revisión, revisores, estado y cuándo se modificó por última vez la directiva. Use la opción *Exportar* para crear un archivo .csv que contenga los detalles del informe.
 - **Elementos y acciones por directiva**: revise y exporte los elementos coincidentes y las acciones de corrección por directiva. Incluye información de directiva y cómo se asocian las directivas a:
 
-    - Elementos coincidentes
-    - Elementos escalados
-    - Elementos resueltos
-    - Etiquetado como compatible
-    - Etiquetado como no compatible
-    - Etiquetado como cuestionable
-    - Elementos pendientes de revisión
-    - Notificación del usuario
-    - Caso creado
+  - Elementos coincidentes
+  - Elementos escalados
+  - Elementos resueltos
+  - Etiquetado como compatible
+  - Etiquetado como no compatible
+  - Etiquetado como cuestionable
+  - Elementos pendientes de revisión
+  - Notificación del usuario
+  - Caso creado
 
 - **Elemento y acciones por ubicación**: revise y exporte los elementos coincidentes y las acciones de corrección por ubicación de Microsoft 365. Incluye información sobre cómo se asocian las plataformas de carga de trabajo a:
 
-    - Elementos coincidentes
-    - Elementos escalados
-    - Elementos resueltos
-    - Etiquetado como compatible
-    - Etiquetado como no compatible
-    - Etiquetado como cuestionable
-    - Elementos pendientes de revisión
-    - Notificación del usuario
-    - Caso creado
+  - Elementos coincidentes
+  - Elementos escalados
+  - Elementos resueltos
+  - Etiquetado como compatible
+  - Etiquetado como no compatible
+  - Etiquetado como cuestionable
+  - Elementos pendientes de revisión
+  - Notificación del usuario
+  - Caso creado
 
 - **Actividad por usuario**: revise y exporte elementos coincidentes y acciones de corrección por usuario. Incluye información sobre cómo se asocian los usuarios a:
 
-    - Elementos coincidentes
-    - Elementos escalados
-    - Elementos resueltos
-    - Etiquetado como compatible
-    - Etiquetado como no compatible
-    - Etiquetado como cuestionable
-    - Elementos pendientes de revisión
-    - Notificación del usuario
-    - Caso creado
+  - Elementos coincidentes
+  - Elementos escalados
+  - Elementos resueltos
+  - Etiquetado como compatible
+  - Etiquetado como no compatible
+  - Etiquetado como cuestionable
+  - Elementos pendientes de revisión
+  - Notificación del usuario
+  - Caso creado
 
 - **Tipo de información confidencial por ubicación** (versión preliminar): revise y exporte información sobre la detección de tipos de información confidencial y los orígenes asociados en las directivas de cumplimiento de comunicaciones. Incluye el total general y el desglose específico de las instancias de tipo de información confidencial en los orígenes configurados en la organización. Los valores de cada origen de terceros se muestran en columnas independientes en el archivo .csv. Los ejemplos son:
 
-    - **Email**: tipos de información confidencial detectados en los mensajes de correo electrónico de Exchange.
-    - **Teams**: tipos de información confidencial detectados en los canales y mensajes de chat de Microsoft Teams.
-    - **Yammer**: tipos de información confidencial detectados en bandejas de entrada, publicaciones, chats y respuestas de Yammer.
-    - **Orígenes de terceros**: se han detectado tipos de información confidencial para las actividades asociadas a conectores de terceros configurados en la organización. Para ver el desglose de orígenes de terceros para un tipo de información confidencial específico en el informe, mantenga el mouse sobre el valor del tipo de información confidencial de la columna Origen de terceros.
-    - **Otro**: tipos de información confidencial que se usan para el procesamiento interno del sistema. La selección o anulación de la selección de este origen para el informe no afectará a ningún valor.
+  - **Email**: tipos de información confidencial detectados en los mensajes de correo electrónico de Exchange.
+  - **Teams**: tipos de información confidencial detectados en los canales y mensajes de chat de Microsoft Teams.
+  - **Yammer**: tipos de información confidencial detectados en bandejas de entrada, publicaciones, chats y respuestas de Yammer.
+  - **Orígenes de terceros**: se han detectado tipos de información confidencial para las actividades asociadas a conectores de terceros configurados en la organización. Para ver el desglose de orígenes de terceros para un tipo de información confidencial específico en el informe, mantenga el mouse sobre el valor del tipo de información confidencial de la columna Origen de terceros.
+  - **Otro**: tipos de información confidencial que se usan para el procesamiento interno del sistema. La selección o anulación de la selección de este origen para el informe no afectará a ningún valor.
 
 ### <a name="message-details-report"></a>Informe de detalles del mensaje
 
@@ -147,8 +147,8 @@ En algunos casos, debe proporcionar información a los auditores normativos o de
 
 Para ver las actividades de actualización de directivas de cumplimiento de comunicaciones, seleccione el control **Exportar actualizaciones de directivas** en la página principal de cualquier directiva. Debe tener asignados los roles *globales de Administración* o *cumplimiento de comunicaciones Administración* para exportar las actividades de actualización. Esta acción genera un archivo de auditoría en el formato .csv que contiene la siguiente información:
 
-|**Field**|**Detalles**|
-|:-----|:-----|
+|Campo|Detalles|
+|---|---|
 | **CreationDate** | Fecha en que se realizó la actividad de actualización en una directiva. |
 | **UserIds** | El usuario que realizó la actividad de actualización en una directiva. |
 | **Operations** | Las operaciones de actualización realizadas en la directiva. |
@@ -156,8 +156,8 @@ Para ver las actividades de actualización de directivas de cumplimiento de comu
 
 Para ver las actividades de revisión de cumplimiento de comunicaciones de una directiva, seleccione el control **Exportar actividades de revisión** en la página **Información general** de una directiva específica. Debe tener asignados los roles *globales de Administración* o *cumplimiento de comunicaciones Administración* para exportar las actividades de revisión. Esta acción genera un archivo de auditoría en el formato .csv que contiene la siguiente información:
 
-|**Field**|**Detalles**|
-|:-----|:-----|
+|Campo|Detalles|
+|---|---|
 | **CreationDate** | La fecha en que se realizó la actividad de revisión en una directiva. |
 | **UserIds** | El usuario que realizó la actividad de revisión en una directiva. |
 | **Operations** | Las operaciones de revisión realizadas en la directiva. |
@@ -187,8 +187,8 @@ Las coincidencias de directivas de cumplimiento de comunicaciones se almacenan e
 
 Para comprobar el tamaño de un buzón de supervisión de una directiva, siga estos pasos:
 
-1. Use el cmdlet [Connect-ExchangeOnline](/powershell/module/exchange/connect-exchangeonline) en el módulo Exchange Online PowerShell V2 para conectarse a Exchange Online PowerShell mediante la autenticación moderna.
-2. Ejecute el siguiente comando en PowerShell:
+1. [Conéctese al PowerShell de Exchange Online](/powershell/exchange/connect-to-exchange-online-powershell).
+2. Ejecute el siguiente comando:
 
     ```PowerShell
     ForEach ($p in Get-SupervisoryReviewPolicyV2 | Sort-Object Name)

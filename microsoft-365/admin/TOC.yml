@@ -181,6 +181,8 @@
               href: add-users/let-users-reset-passwords.md
             - name: Establecer contraseñas para que no expiren nunca
               href: add-users/set-password-to-never-expire.md
+            - name: Recomendaciones de directiva de contraseñas
+              href: misc/password-policy-recommendations.md
             - name: Reenviar contraseña de usuario
               href: add-users/resend-user-password.md
             - name: Desactivar contraseñas seguras

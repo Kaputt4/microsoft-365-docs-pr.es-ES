@@ -18,12 +18,12 @@ ms.custom: ''
 description: Los administradores pueden aprender a identificar un buzón personalizado (también conocido como buzón de envíos de usuario) para recopilar mensajes de spam y phishing que notifican los usuarios. Otras configuraciones completan la experiencia de generación de informes para los usuarios cuando notifican mensajes.
 ms.subservice: mdo
 ms.service: microsoft-365-security
-ms.openlocfilehash: b2f3f9b07c0d2d6c856fc786bf437bda76399ca1
-ms.sourcegitcommit: 2b89bcff547e00be3d38dc8d1e6cbcf8f41eba42
+ms.openlocfilehash: e11b30d14a7aff37c6c33dd5e8ce36b0e922097b
+ms.sourcegitcommit: 95ac076310ab9006ed92c69938f7ae771cd10826
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/03/2022
-ms.locfileid: "67599569"
+ms.lasthandoff: 09/20/2022
+ms.locfileid: "67851070"
 ---
 # <a name="user-reported-message-settings"></a>Configuración del mensaje notificado por el usuario
 
@@ -154,14 +154,14 @@ Cuando el **botón Mensaje de informe de Microsoft Outlook** está **Activado** 
 
   - **Especifique Office 365 dirección de correo electrónico que se usará como remitente**: seleccione esta configuración y escriba la dirección de correo electrónico en el cuadro que aparece.
   
-  - **Personalizar notificaciones**: haga clic en este vínculo para personalizar la notificación por correo electrónico que se envía después de que un administrador revise y marque los mensajes notificados.
+  - **Personalizar notificaciones**: haga clic en este vínculo para personalizar la notificación por correo electrónico que se envía después de que un administrador revise y marque un mensaje notificado.
 
     En el control flotante **Personalizar mensaje de confirmación** que aparece, configure los siguientes valores:
 
     - **Pestañas de phishing**, **correo no deseado** y **No se encontraron amenazas** : en el **texto del resultado de la revisión** en algunas, ninguna o todas las pestañas, escriba el texto personalizado que se va a usar.
     - **Pestaña Pie de página** : están disponibles las siguientes opciones:
       - **Texto del pie de página**: escriba el texto del pie de página del mensaje personalizado que se va a usar.
-      - **Mostrar logotipo de empresa**: antes de seleccionar esta opción, debe seguir las instrucciones de [Personalización del tema de Microsoft 365 para que su organización](../../admin/setup/customize-your-organization-theme.md) cargue el logotipo personalizado.
+      - **Mostrar logotipo de la empresa**: antes de seleccionar esta opción, debe seguir las instrucciones de [Personalización del tema de Microsoft 365 para que su organización](../../admin/setup/customize-your-organization-theme.md) cargue el logotipo personalizado.
 
   Cuando haya terminado en el control flotante **Personalizar mensaje de confirmación** , haga clic en **Confirmar**.
 
@@ -199,6 +199,17 @@ Para identificar correctamente los mensajes adjuntos originales, los mensajes en
 Para especificar el motivo por el que se notificaron los mensajes adjuntos originales, los mensajes enviados al buzón de correo de envíos del usuario deben cumplir los criterios siguientes:
 
 - Los datos adjuntos del mensaje original no están modificados.
+- El mensaje notificado debe contener los siguientes encabezados necesarios:
+  - 1. X-Microsoft-Antispam-Message-Info
+  - 2. Id. de mensaje
+  - 3. X-Ms-Exchange-Organization-Network-Message-Id
+  - 4. X-Ms-Exchange-Crosstenant-Id
+
+> [!NOTE]
+> TenantId en `X-Ms-Exchange-Crosstenant-Id` debe ser el mismo que el inquilino.
+>
+> `X-Microsoft-Antispam-Message-Info` debe ser un xmi válido.
+
 - La línea asunto (título de sobre) de los mensajes enviados al buzón de envíos del usuario debe comenzar con uno de los siguientes valores de prefijo:
   - `1|` o `Junk:`.
   - `2|` o `Not junk:`.

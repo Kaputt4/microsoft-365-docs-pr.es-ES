@@ -21,12 +21,12 @@ search.appverid:
 description: Aprenda a reconocer y responder a una cuenta de correo electrónico comprometida utilizando las herramientas disponibles en Microsoft 365.
 ms.subservice: mdo
 ms.service: microsoft-365-security
-ms.openlocfilehash: 8a3ac455a70f4e84bf6ed4dae3893d491fa7d766
-ms.sourcegitcommit: ecc04b5b8f84b34255a2d5e90b5ab596af0d16c7
+ms.openlocfilehash: a4b491a8a1fa3b8db000874357c5d5dbfbe91d38
+ms.sourcegitcommit: 95ac076310ab9006ed92c69938f7ae771cd10826
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/01/2022
-ms.locfileid: "67496821"
+ms.lasthandoff: 09/20/2022
+ms.locfileid: "67850224"
 ---
 # <a name="responding-to-a-compromised-email-account"></a>Responder a una cuenta de correo electrónico en peligro
 
@@ -181,14 +181,6 @@ Para desbloquear el envío de correo de un buzón, siga los procedimientos descr
 2. Cualquier otro servicio que use esta cuenta de Exchange como cuenta de correo electrónico alternativa puede haberse comprometido también. En primer lugar, siga estos pasos para la suscripción de Microsoft 365 y, a continuación, siga estos pasos para sus otras cuentas.
 
 3. Asegúrese de que la información de contacto, como los números de teléfono y direcciones, es correcta.
-
-## <a name="secure-microsoft-365-like-a-cybersecurity-pro"></a>Proteger Microsoft 365 como un profesional de la ciberseguridad
-
-Su suscripción a Microsoft 365 incluye un potente conjunto de capacidades de seguridad que puede usar para proteger sus datos y los usuarios.  Use el [Plan de seguridad de Microsoft 365: principales prioridades para los primeros 30 días, 90 días y en adelante](security-roadmap.md) para implementar las prácticas recomendadas de Microsoft para proteger su espacio empresarial de Microsoft 365.
-
-- Tareas a realizar en los primeros 30 días. Estas tienen un efecto inmediato y de bajo impacto para los usuarios.
-- Tareas para llevar a cabo en 90 días. Estas tareas necesitan un poco más de tiempo para planearlas e implementarlas, pero mejoran considerablemente el nivel de seguridad.
-- Más de 90 días. Estas mejoras se crean en el trabajo de los 90 primeros días.
 
 ## <a name="see-also"></a>Vea también
 

@@ -9,12 +9,12 @@ ms.service: bookings
 ms.localizationpriority: medium
 ms.assetid: 8c3a913c-2247-4519-894d-b6263eeb9920
 description: Use el Centro de administración de Microsoft 365 o Windows PowerShell para eliminar calendarios de Bookings.
-ms.openlocfilehash: 57ad1ea0e7857a1d7af4f98d196a67f27f743dd0
-ms.sourcegitcommit: 13a1199fbfeb329da77ce87b2781d5cc77e4a201
+ms.openlocfilehash: b5cb74940bc68116673322c6d38e3fecd4002326
+ms.sourcegitcommit: 95ac076310ab9006ed92c69938f7ae771cd10826
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/27/2022
-ms.locfileid: "67037564"
+ms.lasthandoff: 09/20/2022
+ms.locfileid: "67851200"
 ---
 # <a name="delete-a-booking-calendar-in-bookings"></a>Eliminación de un calendario de reserva en Bookings
 
@@ -46,45 +46,24 @@ El calendario de reserva es donde se almacena toda la información pertinente so
 
 ## <a name="delete-a-booking-calendar-using-exchange-online-powershell"></a>Eliminación de un calendario de reserva mediante Exchange Online PowerShell
 
-Consulte [Conexión a Exchange Online PowerShell](/powershell/exchange/exchange-online-powershell-v2) para conocer los requisitos previos y las instrucciones para conectarse a Exchange Online PowerShell.
+1. [Conéctese al PowerShell de Exchange Online](/powershell/exchange/connect-to-exchange-online-powershell).
 
-Para realizar estos pasos, debe usar una ventana de comandos de Microsoft PowerShell activa que haya ejecutado eligiendo la opción "Ejecutar como administrador".
-
-1. En una ventana de PowerShell, cargue el módulo EXO V2 ejecutando el comando siguiente:
-
-   ```powershell
-   Import-Module ExchangeOnlineManagement
-   ```
-
-   > [!NOTE]
-   > Si ya [instaló el módulo EXO V2](/powershell/exchange/exchange-online-powershell-v2#install-and-maintain-the-exo-v2-module), el comando anterior funcionará como está escrito.
-   
-2. El comando que necesita ejecutar usa la sintaxis siguiente:
-
-   ```powershell
-   Connect-ExchangeOnline -UserPrincipalName <UPN> 
-   ```
-
-   - _\<UPN\>_ es su cuenta en el formato del nombre principal de usuario (por ejemplo, `john@contoso.com`).
-
-3. Cuando se le solicite, inicie sesión con las credenciales de administrador de inquilinos en el inquilino de Microsoft 365 que hospeda el calendario de reserva que desea eliminar permanentemente.
-
-4. Una vez que este comando haya terminado de procesarse, escriba el siguiente comando para obtener una lista de los buzones de reserva en el inquilino:
+2. Ejecute el siguiente comando para obtener una lista de los buzones de reserva del inquilino:
 
    ```powershell
    Get-EXOMailbox -RecipientTypeDetails SchedulingMailbox
    ```
 
-5. Escriba el siguiente comando:
+3. Reemplace por \<BookingCalendarToDelete\> el nombre exacto del alias de buzón de reserva que desea eliminar permanentemente y, a continuación, ejecute el siguiente comando:
 
    ```powershell
-   remove-mailbox [BookingCalendarToDelete]
+   Remove-Mailbox -Identity <BookingCalendarToDelete>
    ```
 
    > [!IMPORTANT]
    > Tenga cuidado de escribir el nombre exacto del alias del buzón de reserva que desea eliminar permanentemente.
 
-6. Para comprobar que el calendario se ha eliminado, escriba el siguiente comando:
+4. Para comprobar que el calendario se ha eliminado, ejecute el siguiente comando:
 
    ```powershell
     Get-EXOMailbox -RecipientTypeDetails SchedulingMailbox

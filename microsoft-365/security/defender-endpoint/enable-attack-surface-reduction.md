@@ -19,12 +19,12 @@ ms.collection:
 ms.custom: admindeeplinkDEFENDER
 ms.date: 1/18/2022
 search.appverid: met150
-ms.openlocfilehash: f312b426a94d1232f13157614e4a33a660d80a0b
-ms.sourcegitcommit: 9b133379196da2b3a4bb311b07ff274f43780f68
+ms.openlocfilehash: ec8a5c030e56e9faae5d94dc636bea4c9c2351a7
+ms.sourcegitcommit: 95ac076310ab9006ed92c69938f7ae771cd10826
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/14/2022
-ms.locfileid: "67702916"
+ms.lasthandoff: 09/20/2022
+ms.locfileid: "67850408"
 ---
 # <a name="enable-attack-surface-reduction-rules"></a>Habilitar reglas de reducción de superficie expuesta a ataques
 
@@ -281,6 +281,9 @@ Ejemplo:
 5. Revise la configuración y seleccione **Siguiente** para crear la directiva.
 
 6. Una vez creada la directiva, seleccione **Cerrar**.
+
+> [!WARNING]
+> Hay un problema conocido con la aplicabilidad de la reducción de superficie expuesta a ataques en las versiones del sistema operativo del servidor que se marca como conforme sin ninguna aplicación real. Actualmente, no hay ninguna ETA para cuando esto se corrigirá.
 
 ### <a name="group-policy"></a>Directiva de grupo
 

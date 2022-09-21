@@ -16,12 +16,12 @@ ms.topic: article
 ms.subservice: mde
 ms.custom: api
 search.appverid: met150
-ms.openlocfilehash: 246b97d6cef51d932e68b63b2d0dfae09d5862b2
-ms.sourcegitcommit: 9b133379196da2b3a4bb311b07ff274f43780f68
+ms.openlocfilehash: ffa155a0b1d9598d19af5842553f68372f30b076
+ms.sourcegitcommit: 95ac076310ab9006ed92c69938f7ae771cd10826
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/14/2022
-ms.locfileid: "67683063"
+ms.lasthandoff: 09/20/2022
+ms.locfileid: "67851730"
 ---
 # <a name="machine-resource-type"></a>Tipo de recurso de máquina
 
@@ -67,7 +67,7 @@ ms.locfileid: "67683063"
 |firstSeen|DateTimeOffset|Primera fecha y hora en que Microsoft Defender para punto de conexión observó la [máquina](machine.md).|
 |lastSeen|DateTimeOffset|Hora y fecha del último informe de dispositivo completo recibido. Normalmente, un dispositivo envía un informe completo cada 24 horas.|
 |osPlatform|Cadena|Plataforma del sistema operativo.|
-|onboardingstatus|Cadena|Estado de la incorporación de máquinas. Los valores posibles son: "onboarded" y "offboarded".|
+|onboardingstatus|Cadena|Estado de la incorporación de máquinas. Los valores posibles son: "onboarded", "CanBeOnboarded", "Unsupported" y "InsufficientInfo".|
 |osProcessor|Cadena|Procesador del sistema operativo. En su lugar, use la propiedad osArchitecture.|
 |version|Cadena|Versión del sistema operativo.|
 |osBuild|Long que admite valores NULL|Número de compilación del sistema operativo.|

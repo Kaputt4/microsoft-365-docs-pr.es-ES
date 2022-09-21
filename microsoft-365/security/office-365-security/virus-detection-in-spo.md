@@ -20,12 +20,12 @@ description: Obtenga información sobre cómo SharePoint Online detecta virus en
 ms.custom: seo-marvel-apr2020
 ms.subservice: mdo
 ms.service: microsoft-365-security
-ms.openlocfilehash: e24219c6ef4298410e02efb010cd49c6f2c1206f
-ms.sourcegitcommit: 437461fa1d38ff9bb95dd8a1c5f0b94e8111ada2
+ms.openlocfilehash: 948f5b58f7c5113f006c0fd6ccb4d84f0ce52c9d
+ms.sourcegitcommit: 95ac076310ab9006ed92c69938f7ae771cd10826
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/14/2022
-ms.locfileid: "67672807"
+ms.lasthandoff: 09/20/2022
+ms.locfileid: "67851004"
 ---
 # <a name="built-in-virus-protection-in-sharepoint-online-onedrive-and-microsoft-teams"></a>Protección antivirus integrada en SharePoint Online, OneDrive y Microsoft Teams
 
@@ -38,7 +38,7 @@ ms.locfileid: "67672807"
 Microsoft 365 usa un motor de detección de virus común para examinar archivos que los usuarios cargan en SharePoint Online, OneDrive y Microsoft Teams. Esta protección se incluye con todas las suscripciones que incluyen SharePoint Online, OneDrive y Microsoft Teams.
 
 > [!IMPORTANT]
-> Las funcionalidades antivirus integradas son una manera de ayudar a contener virus. No están pensadas como un único punto de defensa contra malware para su entorno. Animamos a todos los clientes a investigar e implementar la protección contra malware en varias capas y aplicar los procedimientos recomendados para proteger su infraestructura empresarial. Para obtener más información sobre estrategias y procedimientos recomendados, consulte [Plan de desarrollo de seguridad](security-roadmap.md).
+> Las funcionalidades antivirus integradas son una manera de ayudar a contener virus. No están pensadas como un único punto de defensa contra malware para su entorno. Animamos a todos los clientes a investigar e implementar la protección contra malware en varias capas y aplicar los procedimientos recomendados para proteger su infraestructura empresarial. 
 
 ## <a name="what-happens-if-an-infected-file-is-uploaded-to-sharepoint-online"></a>¿Qué ocurre si se carga un archivo infectado en SharePoint Online?
 

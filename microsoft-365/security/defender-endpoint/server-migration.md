@@ -11,18 +11,18 @@ ms.pagetype: security
 author: mjcaparas
 ms.author: macapara
 ms.localizationpriority: medium
-ms.date: 08/10/2022
+ms.date: 09/19/2022
 manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.subservice: mde
-ms.openlocfilehash: 38ac919e11160406f31606703153ce0208a3c416
-ms.sourcegitcommit: d3ef9391f621e8f4ca70661184b3bb82c6cbda94
+ms.openlocfilehash: 602b80f93d4c2c9b0f204eaa347a5f5e75941147
+ms.sourcegitcommit: 95ac076310ab9006ed92c69938f7ae771cd10826
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/02/2022
-ms.locfileid: "67584802"
+ms.lasthandoff: 09/20/2022
+ms.locfileid: "67850394"
 ---
 # <a name="server-migration-scenarios-from-the-previous-mma-based-microsoft-defender-for-endpoint-solution"></a>Escenarios de migración de servidores de la solución de Microsoft Defender para punto de conexión anterior basada en MMA
 
@@ -59,9 +59,11 @@ Para facilitar las actualizaciones cuando el Configuration Manager de punto de c
 4. Instale Microsoft Defender para punto de conexión.
 5. Aplique el script de incorporación **para su uso con directiva de grupo** descargados de [Microsoft 365 Defender](https://security.microsoft.com).
 
-Para usar el script, descárguelo en un directorio de instalación donde también haya colocado los paquetes de instalación e incorporación (consulte [Configuración de puntos de conexión de servidor](configure-server-endpoints.md).
+Para usar el script, descárguelo en un directorio de instalación donde también haya colocado los paquetes de instalación e incorporación (consulte [Configuración de puntos de conexión de servidor](configure-server-endpoints.md)).
 
 EJEMPLO: .\install.ps1 -RemoveMMA <YOUR_WORKSPACE_ID> -OnboardingScript ".\WindowsDefenderATPOnboardingScript.cmd"
+
+Para obtener más información sobre cómo usar el script, use el comando de PowerShell "get-help .\install.ps1".
 
 ## <a name="microsoft-endpoint-configuration-manager-migration-scenarios"></a>Escenarios de migración Configuration Manager punto de conexión de Microsoft 
 

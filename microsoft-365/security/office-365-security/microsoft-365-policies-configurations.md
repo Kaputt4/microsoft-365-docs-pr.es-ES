@@ -23,12 +23,12 @@ ms.collection:
 - highpri
 ms.subservice: mdo
 search.appverid: met150
-ms.openlocfilehash: 8030547629167f0d2ac8840ab150f988380aa196
-ms.sourcegitcommit: b1ed6470645455c2f1fcf467450debc622c40147
+ms.openlocfilehash: 811938ba4c4b4e174e594bd3855112524771ec5e
+ms.sourcegitcommit: 95ac076310ab9006ed92c69938f7ae771cd10826
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/15/2022
-ms.locfileid: "67710859"
+ms.lasthandoff: 09/20/2022
+ms.locfileid: "67851686"
 ---
 # <a name="zero-trust-identity-and-device-access-configurations"></a>Configuraciones de identidad y acceso a dispositivos de Confianza cero
 
@@ -89,7 +89,7 @@ Vea este vídeo para obtener información general rápida sobre las configuracio
 
 ## <a name="intended-audience"></a>Público objetivo
 
-Estas recomendaciones están pensadas para arquitectos empresariales y profesionales de TI que están familiarizados con los servicios de seguridad y productividad en la nube de Microsoft 365, que incluye Azure AD (identidad), Microsoft Intune (administración de dispositivos) y Microsoft Purview Information Protection (protección de datos).
+Estas recomendaciones están pensadas para arquitectos empresariales y profesionales de TI que están familiarizados con los servicios de productividad y seguridad en la nube de Microsoft 365, que incluyen Azure AD (identidad), Microsoft Intune (administración de dispositivos) y Microsoft Purview Information Protection (protección de datos).
 
 ### <a name="customer-environment"></a>Entorno del cliente
 
@@ -180,12 +180,6 @@ En esta guía se muestra cómo crear directivas recomendadas para aplicar el uso
 En esta guía se muestra cómo implementar un conjunto de directivas para proteger el acceso a los servicios en la nube de Microsoft 365, incluidos Microsoft Teams, Exchange, SharePoint y OneDrive. Además de implementar estas directivas, se recomienda aumentar también el nivel de protección para el inquilino mediante estos recursos:
 
 - [Configurar su espacio empresarial para aumentar la seguridad](tenant-wide-setup-for-increased-security.md)
-
-  Recomendaciones que se aplican a la seguridad del punto de partida para el inquilino.
-
-- [Hoja de ruta de seguridad: prioridades principales para los primeros 30 días, 90 días y posteriores](security-roadmap.md)
-
-  Recomendaciones que incluyen registro, gobernanza de datos, acceso de administrador y protección contra amenazas.
 
 ### <a name="windows-11-or-windows-10-with-microsoft-365-apps-for-enterprise"></a>Windows 11 o Windows 10 con Aplicaciones Microsoft 365 para empresas
 

@@ -19,12 +19,12 @@ ms.custom:
 - seo-marvel-apr2020
 ms.subservice: mdo
 ms.service: microsoft-365-security
-ms.openlocfilehash: 061760b71d46cd7ea90b90aa34d01e8b77ee5411
-ms.sourcegitcommit: 2b89bcff547e00be3d38dc8d1e6cbcf8f41eba42
+ms.openlocfilehash: 183fc5f26e50c1ca452540f683fd25c6af8e40bd
+ms.sourcegitcommit: 95ac076310ab9006ed92c69938f7ae771cd10826
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/03/2022
-ms.locfileid: "67596102"
+ms.lasthandoff: 09/20/2022
+ms.locfileid: "67850145"
 ---
 # <a name="detect-and-remediate-illicit-consent-grants"></a>Detección y corrección de concesiones de consentimiento ilícitas
 
@@ -160,14 +160,6 @@ Una vez que haya identificado una aplicación con permisos ilícitos, tiene vari
 - También puede deshabilitar por completo el inicio de sesión de la cuenta afectada, lo que, a su vez, deshabilitará el acceso de la aplicación a los datos de esa cuenta. Esto no es ideal para la productividad del usuario final, por supuesto, pero si está trabajando para limitar el impacto rápidamente, puede ser una corrección viable a corto plazo.
 
 - Puede desactivar las aplicaciones integradas para su inquilino. Se trata de un paso drástico que deshabilita la capacidad de los usuarios finales para conceder consentimiento en todo el inquilino. Esto impide que los usuarios concedan acceso involuntariamente a una aplicación malintencionada. Esto no es muy recomendable, ya que afecta gravemente a la capacidad de los usuarios para ser productivos con aplicaciones de terceros. Para ello, siga los pasos descritos en [Activar o desactivar aplicaciones integradas](../../admin/misc/user-consent.md).
-
-## <a name="secure-microsoft-365-like-a-cybersecurity-pro"></a>Proteger Microsoft 365 como un profesional de la ciberseguridad
-
-Su suscripción a Microsoft 365 incluye un potente conjunto de capacidades de seguridad que puede usar para proteger sus datos y los usuarios. Use el [Plan de seguridad de Microsoft 365: principales prioridades para los primeros 30 días, 90 días y en adelante](security-roadmap.md) para implementar las prácticas recomendadas de Microsoft para proteger su espacio empresarial de Microsoft 365.
-
-- Tareas a realizar en los primeros 30 días. Tienen un efecto inmediato y tienen un impacto bajo para los usuarios.
-- Tareas para llevar a cabo en 90 días. Estas tareas necesitan un poco más de tiempo para planearlas e implementarlas, pero mejoran considerablemente el nivel de seguridad.
-- Más de 90 días. Estas mejoras se crean en el trabajo de los 90 primeros días.
 
 ## <a name="see-also"></a>Vea también
 

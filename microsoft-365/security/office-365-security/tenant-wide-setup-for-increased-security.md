@@ -21,12 +21,12 @@ ms.custom:
 description: Este tema le guiará por la configuración recomendada para la configuración de todo el inquilino que afecta a la seguridad del entorno de Microsoft 365.
 ms.subservice: mdo
 ms.service: microsoft-365-security
-ms.openlocfilehash: e11248e7b1c45d09e6e6cd826720c7bf2019463d
-ms.sourcegitcommit: 2b89bcff547e00be3d38dc8d1e6cbcf8f41eba42
+ms.openlocfilehash: d855d5307ded135fdb583f5fb498d0114f8da5ab
+ms.sourcegitcommit: 95ac076310ab9006ed92c69938f7ae771cd10826
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/03/2022
-ms.locfileid: "67597247"
+ms.lasthandoff: 09/20/2022
+ms.locfileid: "67851532"
 ---
 # <a name="configure-your-microsoft-365-tenant-for-increased-security"></a>Configurar el inquilino de Microsoft 365 para aumentar la seguridad
 
@@ -39,9 +39,6 @@ ms.locfileid: "67597247"
 
 Este tema le guiará por la configuración recomendada para la configuración de todo el inquilino que afecta a la seguridad del entorno de Microsoft 365. Es posible que las necesidades de seguridad requieran más o menos seguridad. Use estas recomendaciones como punto de partida.
 
-## <a name="check-office-365-secure-score"></a>Comprobación de Office 365 puntuación segura
-
-Office 365 Puntuación de seguridad analiza la seguridad de su organización en función de las actividades normales y la configuración de seguridad y asigna una puntuación. Empiece por tomar nota de la puntuación actual. Ajustar algunas opciones de configuración de todo el inquilino aumentará la puntuación. El objetivo no es lograr la puntuación máxima, sino tener en cuenta las oportunidades de proteger el entorno que no afectan negativamente a la productividad de los usuarios. Consulte [Puntuación de seguridad de Microsoft](../defender/microsoft-secure-score.md).
 
 ## <a name="tune-threat-management-policies-in-the-microsoft-365-defender-portal"></a>Ajuste de las directivas de administración de amenazas en el portal de Microsoft 365 Defender
 

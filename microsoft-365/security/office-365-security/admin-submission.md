@@ -17,12 +17,12 @@ ms.custom: seo-marvel-apr2020
 description: Los administradores pueden aprender a usar el portal envíos en el portal de Microsoft 365 Defender para enviar correo electrónico legítimo bloqueado, correo electrónico sospechoso, sospecha de correo electrónico de phishing, correo no deseado, otros mensajes potencialmente dañinos, direcciones URL y datos adjuntos de correo electrónico a Microsoft para volver a examinar.
 ms.subservice: mdo
 ms.service: microsoft-365-security
-ms.openlocfilehash: 9013f8c336ec7179c3934d6e352afc1b8a862461
-ms.sourcegitcommit: db89873e22a12705ed313964c1bc2fa19d4fe719
+ms.openlocfilehash: 834f77a5c3631d7c61f287affb0347e293935d2d
+ms.sourcegitcommit: 95ac076310ab9006ed92c69938f7ae771cd10826
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/13/2022
-ms.locfileid: "67652437"
+ms.lasthandoff: 09/20/2022
+ms.locfileid: "67851752"
 ---
 # <a name="use-the-submissions-portal-to-submit-suspected-spam-phish-urls-legitimate-email-getting-blocked-and-email-attachments-to-microsoft"></a>Use el portal envíos para enviar sospechas de correo no deseado, mensajes no deseados, direcciones URL, bloqueo de correo electrónico legítimo y datos adjuntos de correo electrónico a Microsoft.
 
@@ -130,9 +130,6 @@ Vea este breve vídeo para aprender a usar envíos de administrador en Microsoft
 
    - **Archivo**: haga clic en **Examinar archivos** para buscar y seleccionar el archivo que se va a enviar.
 
-     > [!NOTE]
-     > Los envíos de archivos no están disponibles en nubes que no permiten que los datos salgan del entorno. **Examinar archivos** está atenuado.
-
    - **Seleccione un motivo para enviar a Microsoft**: Se **ha seleccionado Comprobar que se debería haber bloqueado (Falso negativo).**
 
      - **El correo electrónico debe haberse clasificado como**: Seleccione **Phish** o **Malware**. Si no está seguro, use su mejor juicio.
@@ -168,9 +165,6 @@ Vea este breve vídeo para aprender a usar envíos de administrador en Microsoft
    - **Seleccione el tipo de envío**: compruebe que la **dirección URL** del valor está seleccionada.
 
    - **DIRECCIÓN URL**: escriba la dirección URL completa (por ejemplo, ) y selecciónela `https://www.fabrikam.com/marketing.html`en el cuadro que aparece.
-
-     > [!NOTE]
-     > Los envíos de direcciones URL no están disponibles en nubes que no permiten que los datos salgan del entorno. **La dirección URL** está atenuada.
 
    - **Seleccione un motivo para enviar a Microsoft**: Se **ha seleccionado Comprobar que se debería haber bloqueado (Falso negativo).**
 
