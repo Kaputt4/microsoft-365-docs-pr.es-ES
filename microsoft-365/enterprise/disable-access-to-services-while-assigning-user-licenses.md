@@ -6,7 +6,9 @@ manager: scotv
 ms.date: 04/24/2020
 audience: Admin
 ms.topic: article
-ms.collection: Ent_O365
+ms.collection:
+- scotvorg
+- Ent_O365
 ms.service: microsoft-365-enterprise
 ms.localizationpriority: medium
 search.appverid:
@@ -18,12 +20,12 @@ ms.custom:
 - Ent_Office_Other
 ms.assetid: bb003bdb-3c22-4141-ae3b-f0656fc23b9c
 description: Obtenga información sobre cómo asignar licencias a cuentas de usuario y deshabilitar planes de servicio específicos al mismo tiempo mediante PowerShell para Microsoft 365.
-ms.openlocfilehash: ef469a39136e030a5ff769af9a40f397c0714043
-ms.sourcegitcommit: 62368e5a48e569c8e475b07d194d7d8ff7d167ab
+ms.openlocfilehash: fc6285c9f4df8a38fae8feb11bd0801d22728dc4
+ms.sourcegitcommit: 0b7070ec119e00e0dafe030bbfbef0ae5c9afa19
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/02/2022
-ms.locfileid: "67560205"
+ms.lasthandoff: 09/29/2022
+ms.locfileid: "68178853"
 ---
 # <a name="disable-access-to-microsoft-365-services-while-assigning-user-licenses"></a>Deshabilitar el acceso a los servicios de Microsoft 365 al asignar licencias de usuario
 

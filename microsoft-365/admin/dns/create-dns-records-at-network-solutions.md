@@ -7,9 +7,10 @@ author: efrene
 manager: scotv
 audience: Admin
 ms.topic: article
-ms.service: o365-administration
+ms.service: microsoft-365-business
 ms.localizationpriority: medium
 ms.collection:
+- scotvorg
 - M365-subscription-management
 - Adm_O365
 - Adm_NonTOC
@@ -21,12 +22,12 @@ search.appverid:
 - MOE150
 ms.assetid: 1dc55f9f-5309-450f-acc3-b2b4119c8be3
 description: Obtenga información sobre cómo comprobar su dominio y configurar registros DNS para correo electrónico, Skype Empresarial En línea y otros servicios en Soluciones de red para Microsoft.
-ms.openlocfilehash: 6ebe81c17d02c0cc6126f75f3b6471e01a334db4
-ms.sourcegitcommit: 8cd230e243eba452b27f725d66152becb6aff49b
+ms.openlocfilehash: 67939d1c221550ca702c9522541de8e455c1be72
+ms.sourcegitcommit: 0b7070ec119e00e0dafe030bbfbef0ae5c9afa19
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/30/2022
-ms.locfileid: "66563283"
+ms.lasthandoff: 09/29/2022
+ms.locfileid: "68178347"
 ---
 # <a name="connect-your-dns-records-at-network-solutions-to-microsoft-365"></a>Conexión de los registros DNS en Soluciones de red a Microsoft 365
 
@@ -37,16 +38,16 @@ Si Network Solutions es su proveedor de host DNS, siga los pasos de este artícu
 Después de agregar estos registros en Soluciones de red, el dominio se configurará para trabajar con servicios de Microsoft.
 
 > [!NOTE]
-> Por lo general, los cambios de DNS tardan unos 15 minutos en aplicarse. Sin embargo, a veces los cambios pueden necesitar más tiempo para aplicarse en todo el sistema DNS de Internet. Si tiene problemas con el flujo de correo u otros problemas después de agregar registros DNS, consulte [Solucionar problemas después de cambiar el nombre del dominio o los registros DNS](../get-help-with-domains/find-and-fix-issues.md).
+> Typically it takes about 15 minutes for DNS changes to take effect. However, it can occasionally take longer for a change you've made to update across the Internet's DNS system. If you're having trouble with mail flow or other issues after adding DNS records, see [Troubleshoot issues after changing your domain name or DNS records](../get-help-with-domains/find-and-fix-issues.md).
 
 ## <a name="add-a-txt-record-for-verification"></a>Agregar un registro TXT para verificación
 
-Antes de utilizar el dominio con Microsoft, tenemos que asegurarnos de que sea el propietario. Si puede iniciar sesión en la cuenta en el registrador de dominio y crear el registro DNS, Microsoft sabrá que es el propietario del dominio.
+Before you use your domain with Microsoft, we have to make sure that you own it. Your ability to log in to your account at your domain registrar and create the DNS record proves to Microsoft that you own the domain.
 
 > [!NOTE]
-> Este registro se usa exclusivamente para verificar si se es el propietario de un dominio; no afecta a nada más. Puede eliminarlo más adelante, si lo desea.
+> This record is used only to verify that you own your domain; it doesn't affect anything else. You can delete it later, if you like.
 
-1. Para empezar, vaya a la página de dominios en Network Solutions mediante [este vínculo](https://www.networksolutions.com/manage-it). Se le pedirá que inicie sesión.
+1. Para empezar, vaya a la página de dominios en Network Solutions mediante [este vínculo](https://www.networksolutions.com/manage-it). You'll be prompted to log in.
 
 1. En la página de aterrizaje, seleccione **Nombres de dominio**.
 
@@ -95,14 +96,14 @@ Para comprobar el registro en Microsoft 365:
 
 1. Seleccione **Continuar**.
 
-1. En la página **verificar dominio**, seleccione **verificar**.
+1. En la página **Verificar dominio**, elija **Verificar**.
 
 > [!NOTE]
-> Por lo general, los cambios de DNS tardan unos 15 minutos en aplicarse. Sin embargo, a veces los cambios pueden necesitar más tiempo para aplicarse en todo el sistema DNS de Internet. Si tiene problemas con el flujo de correo u otros problemas después de agregar registros DNS, consulte [Solucionar problemas después de cambiar el nombre del dominio o los registros DNS](../get-help-with-domains/find-and-fix-issues.md).
+> Typically it takes about 15 minutes for DNS changes to take effect. However, it can occasionally take longer for a change you've made to update across the Internet's DNS system. If you're having trouble with mail flow or other issues after adding DNS records, see [Troubleshoot issues after changing your domain name or DNS records](../get-help-with-domains/find-and-fix-issues.md).
 
 ## <a name="add-an-mx-record-so-email-for-your-domain-will-come-to-microsoft"></a>Agregar un registro MX para que el correo electrónico del dominio vaya a Microsoft
 
-1. Para empezar, vaya a la página de dominios en Network Solutions mediante [este vínculo](https://www.networksolutions.com/manage-it). Se le pedirá que inicie sesión.
+1. Para empezar, vaya a la página de dominios en Network Solutions mediante [este vínculo](https://www.networksolutions.com/manage-it). You'll be prompted to log in.
 
 1. En la página de aterrizaje, seleccione **Nombres de dominio**.
 
@@ -128,7 +129,7 @@ Para comprobar el registro en Microsoft 365:
 
    |Hace referencia a|Servidor de correo|Prioridad|TTL|
    |---|---|---|---|
-   |@|*\<domain-key\>*.mail.protection.outlook.com  <br/> **Este valor NO PUEDE terminar con un punto (.)** <br/> **Nota:** Obtenga su *\<domain-key\>* de su cuenta Microsoft. [¿Cómo puedo encontrarla?](../get-help-with-domains/information-for-dns-records.md)|0  <br/> Para obtener más información sobre la prioridad, consulte [¿Qué es una prioridad de MX?](../setup/domains-faq.yml)|1 hora|
+   |@|*\<domain-key\>*.mail.protection.outlook.com  <br/> **Este valor NO PUEDE terminar con un punto (.)** <br/> **Nota:** Obtenga su *\<domain-key\>* de su cuenta Microsoft. [¿Cómo puedo encontrar esto?](../get-help-with-domains/information-for-dns-records.md)|0  <br/> Para obtener más información sobre la prioridad, consulte [¿Qué es una prioridad de MX?](../setup/domains-faq.yml)|1 Hour|
 
 1. Seleccione **AGREGAR**.
 
@@ -143,7 +144,7 @@ Para comprobar el registro en Microsoft 365:
 
 ## <a name="add-the-cname-record-required-for-microsoft"></a>Agregar el registro CNAME necesario para Microsoft
 
-1. Para empezar, vaya a la página de dominios en Network Solutions mediante [este vínculo](https://www.networksolutions.com/manage-it). Se le pedirá que inicie sesión.
+1. Para empezar, vaya a la página de dominios en Network Solutions mediante [este vínculo](https://www.networksolutions.com/manage-it). You'll be prompted to log in.
 
 1. En la página de aterrizaje, seleccione **Nombres de dominio**.
 
@@ -185,7 +186,7 @@ Para comprobar el registro en Microsoft 365:
 > [!IMPORTANT]
 > No puede tener más de un registro TXT para el SPF de un dominio. Si su dominio tiene más de un registro de SPF, obtendrá errores de correo, así como problemas de clasificación de entrega y de correo no deseado. Si ya tiene un registro de SPF para su dominio, no cree uno nuevo para Microsoft. En su lugar, agregue los valores de Microsoft necesarios al registro actual para que tenga un  *único*  registro SPF que incluya ambos conjuntos de valores.
 
-1. Para empezar, vaya a la página de dominios en Network Solutions mediante [este vínculo](https://www.networksolutions.com/manage-it). Se le pedirá que inicie sesión.
+1. Para empezar, vaya a la página de dominios en Network Solutions mediante [este vínculo](https://www.networksolutions.com/manage-it). You'll be prompted to log in.
 
 1. En la página de aterrizaje, seleccione **Nombres de dominio**.
 
@@ -228,7 +229,7 @@ Solo seleccione esta opción si su organización usa Skype Empresarial para serv
 
 ### <a name="add-the-two-required-srv-records"></a>Agregar los dos registros SRV necesarios
 
-1. Para empezar, vaya a la página de dominios en Network Solutions mediante [este vínculo](https://www.networksolutions.com/manage-it). Se le pedirá que inicie sesión.
+1. Para empezar, vaya a la página de dominios en Network Solutions mediante [este vínculo](https://www.networksolutions.com/manage-it). You'll be prompted to log in.
 
 1. En la página de aterrizaje, seleccione **Nombres de dominio**.
 
@@ -258,8 +259,8 @@ Solo seleccione esta opción si su organización usa Skype Empresarial para serv
 
    |Tipo|Servicio|Protocolo|Peso|Puerto|Target|Prioridad|TTL|
    |---|---|---|---|---|---|---|---|
-   |SRV|_sip|TLS|100|443|sipdir.online.lync.com  <br/> **Este valor NO PUEDE terminar con un punto (.)**|1 |1 hora|
-   |SRV|_sipfederationtls|TCP|100|5061|sipfed.online.lync.com  <br/> **Este valor NO PUEDE terminar con un punto (.)**|1 |1 Hour|
+   |SRV|_sip|TLS|100|443|sipdir.online.lync.com  <br/> **Este valor NO PUEDE terminar con un punto (.)**|1|1 Hour|
+   |SRV|_sipfederationtls|TCP|100|5061|sipfed.online.lync.com  <br/> **Este valor NO PUEDE terminar con un punto (.)**|1|1 Hour|
 
 1. Seleccione **AGREGAR**.
 
@@ -275,7 +276,7 @@ Solo seleccione esta opción si su organización usa Skype Empresarial para serv
 
 ### <a name="add-the-two-required-cname-records-for-skype-for-business"></a>Agregue los dos registros CNAME necesarios para Skype Empresarial
 
-1. Para empezar, vaya a la página de dominios en Network Solutions mediante [este vínculo](https://www.networksolutions.com/manage-it). Se le pedirá que inicie sesión.
+1. Para empezar, vaya a la página de dominios en Network Solutions mediante [este vínculo](https://www.networksolutions.com/manage-it). You'll be prompted to log in.
 
 1. En la página de aterrizaje, seleccione **Nombres de dominio**.
 
@@ -303,7 +304,7 @@ Solo seleccione esta opción si su organización usa Skype Empresarial para serv
 
    |Tipo|Hace referencia a|Nombre de host|Alias para|TTL|
    |---|---|---|---|---|
-   |CNAME|Otro host|sip|sipdir.online.lync.com  <br/> **Este valor NO PUEDE terminar con un punto (.)**|1 hora|
+   |CNAME|Otro host|sip|sipdir.online.lync.com  <br/> **Este valor NO PUEDE terminar con un punto (.)**|1 Hour|
    |CNAME|Otro host|lyncdiscover|webdir.online.lync.com  <br/> **Este valor NO PUEDE terminar con un punto (.)**|1 Hour|
 
    :::image type="content" source="../../media/dns-networksolutions/networksolutions-domains-cname-values.png" alt-text="Escriba o copie y pegue los valores de CNAME de la tabla en la ventana.":::
@@ -316,7 +317,7 @@ Solo seleccione esta opción si su organización usa Skype Empresarial para serv
 1. Agregue el otro registro CNAME copiando los valores de la segunda fila de la tabla.
 
 > [!NOTE]
-> Por lo general, los cambios de DNS tardan unos 15 minutos en aplicarse. Sin embargo, a veces los cambios pueden necesitar más tiempo para aplicarse en todo el sistema DNS de Internet. Si tiene problemas con el flujo de correo u otros problemas después de agregar registros DNS, consulte [Solucionar problemas después de cambiar el nombre del dominio o los registros DNS](../get-help-with-domains/find-and-fix-issues.md).
+> Typically it takes about 15 minutes for DNS changes to take effect. However, it can occasionally take longer for a change you've made to update across the Internet's DNS system. If you're having trouble with mail flow or other issues after adding DNS records, see [Troubleshoot issues after changing your domain name or DNS records](../get-help-with-domains/find-and-fix-issues.md).
 
 ## <a name="advanced-option-intune-and-mobile-device-management-for-microsoft-365"></a>Opción avanzada: Intune y mobile Administración de dispositivos para Microsoft 365
 
@@ -324,7 +325,7 @@ Este servicio le ayuda a proteger y administrar de forma remota los dispositivos
 
 ### <a name="add-the-two-required-cname-records-for-mobile-device-management"></a>Agregue los dos registros CNAME necesarios para Mobile Administración de dispositivos
 
-1. Para empezar, vaya a la página de dominios en Network Solutions mediante [este vínculo](https://www.networksolutions.com/manage-it). Se le pedirá que inicie sesión.
+1. Para empezar, vaya a la página de dominios en Network Solutions mediante [este vínculo](https://www.networksolutions.com/manage-it). You'll be prompted to log in.
 
 1. En la página de aterrizaje, seleccione **Nombres de dominio**.
 
@@ -352,7 +353,7 @@ Este servicio le ayuda a proteger y administrar de forma remota los dispositivos
 
    |Tipo|Hace referencia a|Nombre de host|Alias para|TTL|
    |---|---|---|---|---|
-   |CNAME|Otro host|enterpriseregistration|enterpriseregistration.windows.net  <br/> **Este valor NO PUEDE terminar con un punto (.)**|1 hora|
+   |CNAME|Otro host|enterpriseregistration|enterpriseregistration.windows.net  <br/> **Este valor NO PUEDE terminar con un punto (.)**|1 Hour|
    |CNAME|Otro host|enterpriseenrollment|enterpriseenrollment-s.manage.microsoft.com  <br/> **Este valor NO PUEDE terminar con un punto (.)**|1 Hour|
 
    :::image type="content" source="../../media/dns-networksolutions/networksolutions-domains-cname-values.png" alt-text="Escriba o copie y pegue los valores de CNAME de la tabla en la ventana.":::
@@ -365,5 +366,5 @@ Este servicio le ayuda a proteger y administrar de forma remota los dispositivos
 1. Agregue el otro registro CNAME copiando los valores de la segunda fila de la tabla.
 
 > [!NOTE]
-> Por lo general, los cambios de DNS tardan unos 15 minutos en aplicarse. Sin embargo, a veces los cambios pueden necesitar más tiempo para aplicarse en todo el sistema DNS de Internet. Si tiene problemas con el flujo de correo u otros problemas después de agregar registros DNS, consulte [Solucionar problemas después de cambiar el nombre del dominio o los registros DNS](../get-help-with-domains/find-and-fix-issues.md).
+> Typically it takes about 15 minutes for DNS changes to take effect. However, it can occasionally take longer for a change you've made to update across the Internet's DNS system. If you're having trouble with mail flow or other issues after adding DNS records, see [Troubleshoot issues after changing your domain name or DNS records](../get-help-with-domains/find-and-fix-issues.md).
 

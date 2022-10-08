@@ -13,17 +13,17 @@ search.appverid:
 - MET150
 ms.assetid: 4a05898c-b8e4-4eab-bd70-ee912e349737
 ms.collection:
-- M365-security-compliance
+- m365-security
 - m365initiative-defender-office365
 description: Obtenga información sobre cómo configurar Domain-based Message Authentication, Reporting, and Conformance (DMARC) para validar mensajes enviados desde la organización.
 ms.subservice: mdo
 ms.service: microsoft-365-security
-ms.openlocfilehash: a2544943b861b991f976957d3b15fd080e2706ab
-ms.sourcegitcommit: 2b89bcff547e00be3d38dc8d1e6cbcf8f41eba42
+ms.openlocfilehash: c81843c9d8ed40cdd14d854e05f9d7b50de35229
+ms.sourcegitcommit: 12af9e8e3a6eaa090fda9e98ccb831dff65863a4
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/03/2022
-ms.locfileid: "67597700"
+ms.lasthandoff: 09/27/2022
+ms.locfileid: "68072313"
 ---
 # <a name="use-dmarc-to-validate-email"></a>Usar DMARC para validar el correo electrónico
 
@@ -46,7 +46,7 @@ DMARC garantiza que los sistemas de correo electrónico de destino confían en l
 
 ## <a name="how-do-spf-and-dmarc-work-together-to-protect-email-in-microsoft-365"></a>¿Cómo se coordinan SPF y DMARC para proteger el correo electrónico en Microsoft 365?
 
- Un mensaje de correo electrónico puede contener varias direcciones de remitentes, que se usan para distintos propósitos. Por ejemplo, observe las siguientes direcciones:
+ Un mensaje de correo electrónico puede contener varias direcciones de remitentes que se usan para distintos propósitos. Por ejemplo, observe las siguientes direcciones:
 
 - Dirección **"Correo de"**: identifica al remitente e indica dónde enviar notificaciones de devolución si se produce algún problema con la entrega del mensaje (por ejemplo, avisos de no entrega). *Dirección Correo de* aparece en la parte del sobre de un mensaje de correo electrónico y no se muestra en la aplicación de correo electrónico y, a veces, se denomina *dirección 5321.MailFrom* o *dirección de ruta de acceso inversa*.
 
@@ -87,7 +87,7 @@ Cuando se usa DMARC, el servidor receptor también realiza una comprobación en 
 
 ## <a name="what-is-a-dmarc-txt-record"></a>¿Qué es un registro TXT de DMARC?
 
-Al igual que los registros DNS para SPF, el registro para DMARC es un registro de texto (TXT) de DNS que ayuda a evitar la suplantación de identidad. Los registros TXT de DMARC se publican en DNS. Los registros TXT de DMARC validan el origen de los mensajes de correo electrónico contrastando la dirección IP del autor de un correo electrónico con el supuesto propietario del dominio de envío. El registro TXT de DMARC identifica los servidores de correo electrónico saliente autorizados. Así, los sistemas de correo electrónico de destino comprueban que los mensajes que reciben proceden de servidores de correo electrónico saliente autorizados.
+Like the DNS records for SPF, the record for DMARC is a DNS text (TXT) record that helps prevent spoofing and phishing. You publish DMARC TXT records in DNS. DMARC TXT records validate the origin of email messages by verifying the IP address of an email's author against the alleged owner of the sending domain. The DMARC TXT record identifies authorized outbound email servers. Destination email systems can then verify that messages they receive originate from authorized outbound email servers.
 
 El registro TXT de DMARC de Microsoft es algo así:
 
@@ -139,7 +139,7 @@ Como práctica recomendada, asegúrese de que el registro TXT de SPF tenga en cu
 
 Cuando haya configurado SPF, deberá configurar DKIM. DKIM le permite agregar una firma digital a los mensajes de correo electrónico en el encabezado del mensaje. Si no configura DKIM pero permite a Microsoft 365 usar la configuración predeterminada de DKIM en el dominio, DMARC puede dar errores. Este error puede producirse porque la configuración predeterminada de DKIM usa el dominio de *onmicrosoft.com* original como la dirección *5321.MailFrom*, no el dominio *personalizado*. Esto provoca una discrepancia entre las direcciones *5321.MailFrom* y *5322.From* en todos los correos electrónicos enviados desde su dominio.
 
-Si hay remitentes externos que envían correo en su nombre y el correo que envían tiene direcciones 5321.MailFrom y 5322.From que no coinciden, se producirá un error de DMARC para ese correo electrónico. Para evitar esto, tendrá que configurar DKIM para el dominio específicamente con ese remitente externo. Esto permite a Microsoft 365 autenticar el correo electrónico desde el servicio externo. Sin embargo, también permite a otros usuarios, por ejemplo, Yahoo, Gmail y Comcast, comprobar la validez del correo electrónico enviado por terceros como si lo hubiera enviado usted. Esto es beneficioso porque permite a los clientes generar relaciones de confianza con el dominio independientemente del sitio donde se encuentre su buzón y, al mismo tiempo, Microsoft 365 no marcará un mensaje como correo no deseado por suplantación de identidad, ya que pasa las comprobaciones de autenticación para el dominio.
+If you have third-party senders that send mail on your behalf and the mail they send has mismatched 5321.MailFrom and 5322.From addresses, DMARC will fail for that email. To avoid this, you need to set up DKIM for your domain specifically with that third-party sender. This allows Microsoft 365 to authenticate email from this 3rd-party service. However, it also allows others, for example, Yahoo, Gmail, and Comcast, to verify email sent to them by the third-party as if it was email sent by you. This is beneficial because it allows your customers to build trust with your domain no matter where their mailbox is located, and at the same time Microsoft 365 won't mark a message as spam due to spoofing because it passes authentication checks for your domain.
 
 Para ver las instrucciones sobre cómo configurar DKIM para el dominio, incluyendo cómo configurar DKIM para remitentes externos para que puedan suplantar la identidad de su dominio, consulte [Usar DKIM para validar el correo electrónico saliente enviado desde el dominio personalizado](use-dkim-to-validate-outbound-email.md).
 
@@ -153,13 +153,13 @@ _dmarc.domain  TTL  IN  TXT  "v=DMARC1; p=policy; pct=100"
 
 Donde:
 
-- *domain* es el dominio que quiere proteger. De forma predeterminada, el registro protege el correo del dominio y todos los subdominios. Por ejemplo, si especifica \_dmarc.contoso.com, DMARC protege correo del dominio y todos los subdominios, como housewares.contoso.com o plumbing.contoso.com.
+- *domain* is the domain you want to protect. By default, the record protects mail from the domain and all subdomains. For example, if you specify \_dmarc.contoso.com, then DMARC protects mail from the domain and all subdomains, such as housewares.contoso.com or plumbing.contoso.com.
 
-- *TTL* siempre debe ser el equivalente a una hora. La unidad usada para el TTL, ya sean las horas (1 hora), los minutos (60 minutos) o los segundos (3600 segundos), variará en función del registrador del dominio.
+- *TTL* should always be the equivalent of one hour. The unit used for TTL, either hours (1 hour), minutes (60 minutes), or seconds (3600 seconds), will vary depending on the registrar for your domain.
 
 - *pct=100* indica que esta regla debe usarse para el 100 % del correo electrónico.
 
-- *policy* especifica qué directiva quiere que el servidor de recepción siga si se produce un error en DMARC. Puede establecer la directiva en none, quarantine o reject.
+- *policy* specifies what policy you want the receiving server to follow if DMARC fails. You can set the policy to none, quarantine, or reject.
 
 Para obtener información sobre las opciones que se usan, familiarícese con los conceptos en [Procedimientos recomendados para la implementación de DMARC en Microsoft 365](#best-practices-for-implementing-dmarc-in-microsoft-365).
 
@@ -197,7 +197,7 @@ En este ejemplo de registro TXT de DMARC: `dmarc.microsoft.com.   3600    IN    
 
 ## <a name="best-practices-for-implementing-dmarc-in-microsoft-365"></a>Procedimientos recomendados para la implementación de DMARC en Microsoft 365
 
-DMARC se puede implementar gradualmente sin que esto afecte al resto del flujo de correo. Cree e implemente un plan de distribución con estos pasos de implementación. Realice cada uno de estos pasos primero con un subdominio, luego con otros subdominios y, finalmente, con el dominio de nivel superior de la organización antes de continuar con el paso siguiente.
+You can implement DMARC gradually without impacting the rest of your mail flow. Create and implement a roll-out plan that follows these steps. Do each of these steps first with a sub-domain, then other sub-domains, and finally with the top-level domain in your organization before moving on to the next step.
 
 1. Supervisar el impacto de implementar DMARC
 
@@ -211,13 +211,13 @@ DMARC se puede implementar gradualmente sin que esto afecte al resto del flujo d
 
 3. Solicitar que los sistemas de correo externos no aceptan mensajes que no superen las pruebas de DMARC
 
-    El último paso es implementar una directiva de rechazo. Una directiva de rechazo es un registro TXT de DMARC con una directiva establecida en reject (p=reject). Al hacerlo, pedimos a los receptores DMARC que no acepten los mensajes que no pasan las comprobaciones de DMARC.
+    The final step is implementing a reject policy. A reject policy is a DMARC TXT record that has its policy set to reject (p=reject). When you do this, you're asking DMARC receivers not to accept messages that fail the DMARC checks.
 
 4. ¿Cómo configuro DMARC para un subdominio?
 
    DMARC se implementa mediante la publicación de una directiva como un registro TXT en DNS y es jerárquica (por ejemplo, una directiva publicada para contoso.com se aplicará a sub.domain.contonos.com a menos que se defina explícitamente otra directiva para el subdominio). Esto es útil para que las organizaciones puedan especificar un número más reducido de registros de DMARC de alto nivel para un mayor alcance. Se debe prestar especial atención a la configuración de registros de DMARC de subdominios explícitos en los que no quiera que los subdominios hereden el registro de DMARC del dominio de nivel superior.
 
-   Además, puede agregar una directiva de tipo comodín para DMARC cuando los subdominios no deberían enviar correo electrónico, agregando el valor de `sp=reject`. Por ejemplo:
+   Asimismo, con el valor `sp=reject`, puede agregar una directiva de tipo comodín para DMARC cuando los subdominios no puedan enviar correos electrónicos. Por ejemplo:
 
    ```text
    _dmarc.contoso.com. TXT "v=DMARC1; p=reject; sp=reject; ruf=mailto:authfail@contoso.com; rua=mailto:aggrep@contoso.com"
@@ -266,7 +266,7 @@ Todo el correo electrónico o la mayor parte se enrutará primero a mail.contoso
 
 ## <a name="for-more-information"></a>Más información
 
-¿Quiere más información sobre DMARC? Estos recursos lo pueden ayudar.
+Want more information about DMARC? These resources can help.
 
 - Los [Encabezados de mensajes de correo no deseado](anti-spam-message-headers.md) incluyen la sintaxis y los campos de encabezado que usa Microsoft 365 para efectuar comprobaciones de DMARC.
 

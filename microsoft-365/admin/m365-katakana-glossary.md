@@ -7,19 +7,20 @@ manager: scotv
 ms.reviewer: tadaom
 audience: Admin
 ms.topic: reference
-ms.service: o365-administration
+ms.service: microsoft-365-business
 ms.localizationpriority: medium
 ms.collection:
 - Adm_O365
+- scotvorg
 ROBOTS: NOINDEX, NOFOLLOW
 description: Obtenga información sobre cómo ver el glosario de katakana japonés para el Centro de administración de Microsoft 365.
 ms.date: 09/14/2022
-ms.openlocfilehash: e10ded756867f5578d2b36d5c81c9270620acd87
-ms.sourcegitcommit: b1ed6470645455c2f1fcf467450debc622c40147
+ms.openlocfilehash: 06594439dd669dc36e236a4ba35926d03f2af001
+ms.sourcegitcommit: 12af9e8e3a6eaa090fda9e98ccb831dff65863a4
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/15/2022
-ms.locfileid: "67711862"
+ms.lasthandoff: 09/27/2022
+ms.locfileid: "68057533"
 ---
 <!-- DO NOT MAKE CHANGES TO THIS ARTICLE WITHOUT FIRST CONTACTING THE MS.REVIEWER -->
 

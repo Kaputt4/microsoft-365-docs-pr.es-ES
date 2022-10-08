@@ -11,18 +11,19 @@ ms.date: ''
 ms.localizationpriority: medium
 ms.assetid: 5a6f2d7f-d998-4f31-b4f5-f7cbf6f38578
 ms.collection:
-- M365-security-compliance
+- m365-security
 ms.custom:
 - seo-marvel-apr2020
 description: Los administradores pueden obtener información sobre las directivas contra phishing que están disponibles en Exchange Online Protection (EOP) y Microsoft Defender para Office 365.
 ms.subservice: mdo
 ms.service: microsoft-365-security
-ms.openlocfilehash: 1833f5394b5604685aad63b42c6623b6efc125b5
-ms.sourcegitcommit: 651610ca73bfd1d008d97311b59782790df664fb
+search.appverid: met150
+ms.openlocfilehash: 1c49e13e6942de8947b69e2bcb236cbe5ba6b493
+ms.sourcegitcommit: 12af9e8e3a6eaa090fda9e98ccb831dff65863a4
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/07/2022
-ms.locfileid: "67613458"
+ms.lasthandoff: 09/27/2022
+ms.locfileid: "68072357"
 ---
 # <a name="anti-phishing-policies-in-microsoft-365"></a>Directivas contra suplantación de identidad en Microsoft 365
 
@@ -239,11 +240,13 @@ La siguiente configuración de suplantación solo está disponible en las direct
 - **Agregar remitentes y dominios de confianza**: excepciones a la configuración de protección de suplantación. La directiva nunca clasifica los mensajes de los remitentes y dominios de remitente especificados como ataques basados en suplantación. En otras palabras, la acción para remitentes protegidos, dominios protegidos o protección de inteligencia de buzones no se aplica a estos remitentes o dominios de remitente de confianza. El límite máximo para estas listas es de 1024 entradas.
 
   > [!NOTE]
-  > Si los mensajes del sistema de Microsoft 365 de los siguientes remitentes se identifican como intentos de suplantación, puede agregar los remitentes a la lista de remitentes de confianza:
   >
-  > - `⁠noreply@email.teams.microsoft.com`
-  > - `noreply@emeaemail.teams.microsoft.com`
-  > - `no-reply@sharepointonline.com`
+  > - Si los mensajes del sistema de Microsoft 365 de los siguientes remitentes se identifican como intentos de suplantación, puede agregar los remitentes a la lista de remitentes de confianza:
+  >   - `⁠noreply@email.teams.microsoft.com`
+  >   - `noreply@emeaemail.teams.microsoft.com`
+  >   - `no-reply@sharepointonline.com`
+  >
+  > - Las entradas de dominio de confianza no incluyen subdominios del dominio especificado. Debe agregar una entrada para cada subdominio.
 
 ### <a name="advanced-phishing-thresholds-in-anti-phishing-policies-in-microsoft-defender-for-office-365"></a>Umbrales avanzados de suplantación de identidad (phishing) en las directivas contra suplantación de identidad (phishing) en Microsoft Defender para Office 365
 
