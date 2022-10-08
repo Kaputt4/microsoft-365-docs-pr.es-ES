@@ -11,26 +11,28 @@ ms.topic: article
 ms.service: O365-seccomp
 ms.localizationpriority: medium
 ms.collection:
-- Strat_O365_IP
-- M365-security-compliance
+- tier2
+- purview-compliance
 search.appverid:
 - MOE150
 - MET150
 ms.assetid: e2a789f2-9962-4960-9fd4-a00aa063559e
 description: 'Para administradores: obtenga información sobre cómo habilitar el archivado de expansión automática, que proporciona a los usuarios almacenamiento adicional para sus buzones de Exchange Online. Puede habilitar el archivado de expansión automática para toda la organización o solo para usuarios específicos.'
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 7edb246d2a2b9f765bcce6db8f8afa0485c423b3
-ms.sourcegitcommit: 23c7e96d8ec31c676c458e7c71f1cc8a1e40a0e4
+ms.openlocfilehash: 1714954d04f821bacd7ae28a9e10b81a30438b03
+ms.sourcegitcommit: fa570d90b00ed1bb40e1ca27b11c66a84c4204e9
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/16/2022
-ms.locfileid: "67359588"
+ms.lasthandoff: 10/05/2022
+ms.locfileid: "68476009"
 ---
 # <a name="enable-auto-expanding-archiving"></a>Habilitar el archivado de ampliación automática
 
 >*[Guía de licencias de Microsoft 365 para la seguridad y el cumplimiento](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance).*
 
 Puede usar la característica de archivado de expansión automática Exchange Online para habilitar espacio de almacenamiento adicional para los buzones de archivo. Cuando se activa el archivado de expansión automática, el espacio de almacenamiento adicional se agrega automáticamente al buzón de archivo de un usuario hasta que alcanza el límite de almacenamiento de 1,5 TB. Puede activar el archivado de expansión automática para todos los usuarios de la organización o solo para usuarios específicos. Para obtener más información sobre el archivado de expansión automática, consulte [Información sobre el archivado de expansión automática](autoexpanding-archiving.md).
+
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
 
 ## <a name="before-you-enable-auto-expanding-archiving"></a>Antes de habilitar el archivado de expansión automática
 
@@ -137,3 +139,7 @@ Tenga en cuenta lo siguiente después de habilitar el archivado de expansión au
 
 > [!IMPORTANT]
 > El archivado de expansión automática solo se admite para buzones usados por usuarios individuales o para buzones compartidos con una tasa de crecimiento que no supera 1 GB al día. No se permite usar el registro en diario, las reglas de transporte o las reglas de reenvío automático para copiar mensajes en un buzón de archivo con fines de archivado. El buzón de archivo de un usuario está diseñado exclusivamente para dicho usuario. Microsoft se reserva el derecho de denegar el archivado adicional en los casos en los que se usa el buzón de archivo de un usuario para almacenar datos de archivo para otros usuarios o en otros casos de uso inadecuado.
+
+## <a name="next-steps"></a>Pasos siguientes
+
+Asegúrese de preparar a los usuarios finales para los cambios que pueden esperar después de habilitar su buzón para la expansión automática de archivos.

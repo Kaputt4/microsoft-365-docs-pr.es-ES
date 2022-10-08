@@ -1,14 +1,15 @@
 ---
 title: Centro de administración de Microsoft 365 informes de actividad de usuario de Teams
-ms.author: kwekua
-author: kwekua
+ms.author: camillepack
+author: camillepack
 manager: scotv
 audience: Admin
 ms.topic: article
-ms.service: o365-administration
+ms.service: microsoft-365-business
 ms.localizationpriority: medium
 ROBOTS: NOINDEX, NOFOLLOW
 ms.collection:
+- scotvorg
 - M365-subscription-management
 - Adm_O365
 - Adm_NonTOC
@@ -19,12 +20,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Obtenga información sobre cómo obtener el informe de actividad del usuario de Microsoft Teams y obtener información sobre la actividad de Teams en su organización.
-ms.openlocfilehash: a799ef42fb0ecfd3b1c6aae6d4daa8a8da8415ab
-ms.sourcegitcommit: 5014666778b2d48912c68c2e06992cdb43cfaee3
+ms.openlocfilehash: c913c3969c5784f34cd8a1ca4644834eaf96f0a6
+ms.sourcegitcommit: 0b7070ec119e00e0dafe030bbfbef0ae5c9afa19
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/07/2022
-ms.locfileid: "66662754"
+ms.lasthandoff: 09/29/2022
+ms.locfileid: "68165369"
 ---
 # <a name="microsoft-365-reports-in-the-admin-center---microsoft-teams-user-activity"></a>Informes de Microsoft 365 en el Centro de administración: actividad de usuario de Microsoft Teams
 
@@ -50,11 +51,12 @@ Puede visualizar el informe **Actividad de los usuarios en Microsoft Teams** par
 
 Para garantizar la calidad de los datos, realizamos comprobaciones diarias de validación de datos durante los últimos tres días y rellenaremos las brechas detectadas. Es posible que observe diferencias en los datos históricos durante el proceso.
 
-|Item|Descripción|
+|Elemento|Descripción|
 |:-----|:-----|
 |**Métrica**|**Definición**|
 |Nombre de usuario  <br/> |La dirección de correo electrónico del usuario. Puede mostrar la dirección de correo electrónico real o hacer que este campo sea anónimo.   <br/> |
 |Nombre del inquilino  <br/> |Nombre de un inquilino interno o externo al que pertenece un usuario.   <br/> <br/> Si un usuario pertenece a un inquilino externo, las métricas de datos correspondientes (por ejemplo, mensajes de publicación, mensajes de respuesta, etc.) se calculan en función de sus interacciones en canales compartidos del inquilino del administrador. Las interacciones realizadas por el usuario en su propio inquilino (fuera de los canales compartidos del inquilino determinado) no se tienen en cuenta para el informe de uso del administrador de un inquilino determinado.  |
+|Es externo   <br/> |Indica si el usuario es un usuario externo o no.   <br/> |
 |Nombres de inquilino de canal compartido   <br/> |Nombres de inquilinos internos o externos de canales compartidos en los que participó el usuario.   <br/> |
 |Mensajes del canal   <br/> |Número de mensajes únicos que el usuario publicó en un chat de equipo durante el período de tiempo especificado. Esto incluye entradas y respuestas originales.   <br/> |
 |Posts   <br/> |Número de mensajes de publicación en todos los canales durante el período de tiempo especificado. Una publicación es el mensaje original en un chat de teams.<br/> |

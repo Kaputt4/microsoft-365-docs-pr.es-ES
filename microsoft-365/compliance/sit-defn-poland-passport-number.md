@@ -14,21 +14,24 @@ f1_keywords:
 ms.service: O365-seccomp
 ms.localizationpriority: medium
 ms.collection:
-- M365-security-compliance
+- tier3
+- purview-compliance
 hideEdit: true
 feedback_system: None
 recommendations: false
 description: Definición de entidad de tipo de información confidencial del número de pasaporte de Polonia.
-ms.openlocfilehash: 910084a1c4a2c97256a2045e25ac436c248899fd
-ms.sourcegitcommit: 5aed330d8af523f0dffe5e392f1c79f047e38172
+ms.openlocfilehash: 10f6b0b849053773059232f5faeba8300a02131d
+ms.sourcegitcommit: 176bbd29c92e1c0812e8bcd1e1e4938a3e1d7331
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/21/2022
-ms.locfileid: "67000301"
+ms.lasthandoff: 10/05/2022
+ms.locfileid: "68470022"
 ---
 # <a name="poland-passport-number"></a>Número de pasaporte de Polonia
 
 Esta entidad de tipo de información confidencial se incluye en el tipo de información confidencial Número de pasaporte de la UE. También está disponible como una entidad de tipo de información confidencial independiente.
+
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
 
 ## <a name="format"></a>Formato
 
@@ -90,12 +93,12 @@ Una directiva DLP tiene poca confianza en que se detecta este tipo de informaci�
 
 ### <a name="keywords_eu_passport_number"></a>Keywords_eu_passport_number
 
-- Pasaporte #
-- Pasaporte #
+- pasaporte#
+- pasaporte #
 - passportid
-- Pasaportes
+- pasaportes
 - passportno
-- passport no
+- pasaporte no
 - passportnumber
 - passport number
 - passportnumbers
@@ -107,7 +110,7 @@ Una directiva DLP tiene poca confianza en que se detecta este tipo de informaci�
 - numery paszportów
 - numery paszportowe
 - nr paszportu
-- Nr. paszportu
+- N.º paszportu
 - nr paszportów
 - n° passeport
 - passeport n°

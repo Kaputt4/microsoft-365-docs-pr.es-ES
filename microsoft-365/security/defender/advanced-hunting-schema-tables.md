@@ -16,14 +16,16 @@ author: schmurky
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
-ms.collection: m365-security-compliance
+ms.collection:
+- m365-security
+- tier3
 ms.topic: article
-ms.openlocfilehash: 11b0c3e76b7f14396ea2bd2b133d1b5a34ec0624
-ms.sourcegitcommit: 10e6abe740e27000e223378eb17d657a47555fa8
+ms.openlocfilehash: 53de014dd9b299c0e6a3d356b7c919c4d0a47379
+ms.sourcegitcommit: 12af9e8e3a6eaa090fda9e98ccb831dff65863a4
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/31/2022
-ms.locfileid: "67477305"
+ms.lasthandoff: 09/27/2022
+ms.locfileid: "68049042"
 ---
 # <a name="understand-the-advanced-hunting-schema"></a>Descripción del esquema de búsqueda avanzada
 
@@ -61,7 +63,7 @@ A continuación se enumeran todas las tablas del esquema. Cada nombre de tabla e
 | **[AlertEvidence](advanced-hunting-alertevidence-table.md)** | Archivos, direcciones IP, direcciones URL, usuarios o dispositivos asociados a alertas |
 | **[AlertInfo](advanced-hunting-alertinfo-table.md)** | Alertas de Microsoft Defender para punto de conexión, Microsoft Defender para Office 365, Microsoft Defender for Cloud Apps y Microsoft Defender for Identity , incluida la información de gravedad y la categorización de amenazas  |
 | **[CloudAppEvents](advanced-hunting-cloudappevents-table.md)** | Eventos relacionados con cuentas y objetos en Office 365 y otras aplicaciones y servicios en la nube |
-| **[DeviceEvents](advanced-hunting-deviceevents-table.md)** | Varios tipos de eventos, incluidos los eventos desencadenados por controles de seguridad como Antivirus de Microsoft Defender y protección contra vulnerabilidades de seguridad |
+| **[DeviceEvents](advanced-hunting-deviceevents-table.md)** | Varios tipos de eventos, incluidos los eventos desencadenados por controles de seguridad, como Microsoft Defender Antivirus y protección contra vulnerabilidades de seguridad |
 | **[DeviceFileCertificateInfo](advanced-hunting-DeviceFileCertificateInfo-table.md)** | Información de certificados de archivos firmados obtenidos de los eventos de comprobación de certificados en puntos de conexión |
 | **[DeviceFileEvents](advanced-hunting-devicefileevents-table.md)** | Creación y modificación de archivos y otros eventos del sistema de archivos |
 | **[DeviceImageLoadEvents](advanced-hunting-deviceimageloadevents-table.md)** | Eventos de carga de DLL |

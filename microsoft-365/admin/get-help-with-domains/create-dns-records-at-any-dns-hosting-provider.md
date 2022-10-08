@@ -7,9 +7,10 @@ author: efrene
 manager: scotv
 audience: Admin
 ms.topic: article
-ms.service: o365-administration
+ms.service: microsoft-365-business
 ms.localizationpriority: high
 ms.collection:
+- scotvorg
 - highpri
 - M365-subscription-management
 - Adm_O365
@@ -25,12 +26,12 @@ ms.custom:
 - AdminTemplateSet
 - business_assist
 - admindeeplinkMAC
-ms.openlocfilehash: 8382324c537c5cdc6b34c71354636535f0f20de6
-ms.sourcegitcommit: 37e137535c4f70702afe1a5eeaa899c75ee02cfd
+ms.openlocfilehash: 708a153f0af5bb4a8e43fd48a34401d127b40d73
+ms.sourcegitcommit: 0b7070ec119e00e0dafe030bbfbef0ae5c9afa19
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/13/2022
-ms.locfileid: "67664030"
+ms.lasthandoff: 09/29/2022
+ms.locfileid: "68164797"
 ---
 # <a name="add-dns-records-to-connect-your-domain"></a>Agregar registros DNS para conectarse a su dominio
 
@@ -181,7 +182,7 @@ Ejemplo: `_sip._tls`
 
 Si el proveedor de host no ofrece estos campos para los registros SRV, debe especificarlos en el campo **Destino** del registro. (Nota: en función de su proveedor de host, el campo **Destino** puede llamarse de otra forma, como: **Contenido**, **Dirección IP** o **Host de destino**).
 
-Para agregar estos valores, cree una sola cadena, con separación de los valores con espacios y *que terminen con un punto* (comuníquese con su proveedor si no está seguro). Los valores deben incluirse en este orden: Prioridad, Peso, Puerto, Destino.
+To add these values, create a single string, separating the values with spaces and *sometimes ending with a dot* (check with your provider if you are unsure). The values must be included in this order: Priority, Weight, Port, Target.
 
 - Ejemplo 1: `100 1 443 sipdir.online.lync.com.`
 - Ejemplo 2: `100 1 443 sipdir.online.lync.com`

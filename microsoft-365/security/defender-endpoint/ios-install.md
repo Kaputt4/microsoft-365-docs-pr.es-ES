@@ -13,16 +13,17 @@ ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection:
-- m365-security-compliance
+- m365-security
+- tier3
 ms.topic: conceptual
 ms.subservice: mde
 search.appverid: met150
-ms.openlocfilehash: 16b02f80d7475200229ddffb0ab8b4ac50a770f5
-ms.sourcegitcommit: 9b133379196da2b3a4bb311b07ff274f43780f68
+ms.openlocfilehash: 89720a8f0a2fa98bd98c4d950ac0f41540f1ba7d
+ms.sourcegitcommit: 2ff545246fec060ea7829da5afbc1cdc698d51ab
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/14/2022
-ms.locfileid: "67688151"
+ms.lasthandoff: 10/04/2022
+ms.locfileid: "68363000"
 ---
 # <a name="deploy-microsoft-defender-for-endpoint-on-ios"></a>Implementación de Microsoft Defender para punto de conexión en iOS
 
@@ -56,7 +57,7 @@ Implemente Defender para punto de conexión en iOS a través de Portal de empres
 
     > :::image type="content" source="images/ios-deploy-1.png" alt-text="La pestaña Agregar aplicaciones en el Centro de Endpoint Manager Administración de Microsoft" lightbox="images/ios-deploy-1.png":::
 
-1. En la página **Agregar aplicación**, haga clic en **Buscar en el App Store** y escriba **Microsoft Defender** en la barra de búsqueda. En la sección de resultados de búsqueda, haga clic en *Microsoft Defender* y haga clic en **Seleccionar**.
+1. En la página **Agregar aplicación**, haga clic en **Buscar en el App Store** y escriba **Microsoft Defender** en la barra de búsqueda. En la sección de resultados de la búsqueda, haga clic en *Microsoft Defender* y haga clic en **Seleccionar**.
 
 1. Seleccione **iOS 11.0** como sistema operativo mínimo. Revise el resto de la información sobre la aplicación y haga clic en **Siguiente**.
 
@@ -104,7 +105,7 @@ Configure el modo supervisado para la aplicación Defender para punto de conexi�
 1. En la siguiente pantalla, seleccione **Usar diseñador de configuración** como formato. Especifique la siguiente propiedad:
     - Clave de configuración: `issupervised`
     - Tipo de valor: String
-    - Valor de configuración: `issupervised`
+    - Valor de configuración: `{{issupervised}}`
 
     > [!div class="mx-imgBorder"]
     > ![Imagen de Microsoft Endpoint Manager Administración Center6.](images/ios-deploy-6.png)
@@ -135,6 +136,9 @@ Configure el modo supervisado para la aplicación Defender para punto de conexi�
 
 1. Proporcione un nombre del perfil. Cuando se le pida que importe un archivo de perfil de configuración, seleccione el descargado del paso anterior.
 1. En la sección **Asignación** , seleccione el grupo de dispositivos al que desea aplicar este perfil. Como procedimiento recomendado, esto debe aplicarse a todos los dispositivos iOS administrados. Seleccione **Siguiente**.
+    > [!NOTE]
+    > La creación de grupos de dispositivos se admite en El plan 1 y el plan 2 de Defender para punto de conexión
+
 1. Cuando haya terminado, elija **Crear** en la página **Revisar y crear**. El nuevo perfil se muestra en la lista de perfiles de configuración.
 
 
@@ -242,7 +246,7 @@ Intune permite configurar la aplicación Defender para iOS mediante una directiv
 1. En la siguiente pantalla, seleccione **Usar diseñador de configuración** como formato. Especifique la siguiente propiedad:
     - Clave de configuración: `issupervised`
     - Tipo de valor: String
-    - Valor de configuración: `issupervised`
+    - Valor de configuración: `{{issupervised}}`
 
     > :::image type="content" source="images/ios-deploy-6.png" alt-text="Página desde la que elegir el formato para la configuración de la directiva" lightbox="images/ios-deploy-6.png":::
 

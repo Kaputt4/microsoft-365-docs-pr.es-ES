@@ -14,19 +14,22 @@ f1_keywords:
 ms.service: O365-seccomp
 ms.localizationpriority: medium
 ms.collection:
-- M365-security-compliance
+- tier3
+- purview-compliance
 hideEdit: true
 feedback_system: None
 recommendations: false
 description: Definición de entidad de tipo de información confidencial de número de identificación multiuso unificado de Filipinas.
-ms.openlocfilehash: d5e880ff8c021cdcee195077f419f3b7ab87ed36
-ms.sourcegitcommit: 5aed330d8af523f0dffe5e392f1c79f047e38172
+ms.openlocfilehash: d3d19524e8eefa5549ea5a461a5dee7c9fe0d59c
+ms.sourcegitcommit: 176bbd29c92e1c0812e8bcd1e1e4938a3e1d7331
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/21/2022
-ms.locfileid: "67000319"
+ms.lasthandoff: 10/05/2022
+ms.locfileid: "68471703"
 ---
 # <a name="philippines-unified-multi-purpose-identification-number"></a>Número de identidad universal unificado de Filipinas
+
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
 
 ## <a name="format"></a>Formato
 
@@ -50,7 +53,7 @@ No
 
 Una política de DLP tiene confianza media en que ha detectado este tipo de información confidencial si, dentro de una proximidad de 300 caracteres:
 
-- La expresión `Regex_philippines_unified_id` regular busca contenido que coincida con el patrón.
+- La expresión regular `Regex_philippines_unified_id` encuentra contenido que coincide con el patrón.
 - Se encuentra una palabra clave de `Keyword_philippines_id`.
 
 ```xml

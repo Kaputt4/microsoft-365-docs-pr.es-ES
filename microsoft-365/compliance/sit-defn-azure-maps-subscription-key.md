@@ -14,19 +14,22 @@ f1_keywords:
 ms.service: O365-seccomp
 ms.localizationpriority: medium
 ms.collection:
-- M365-security-compliance
+- tier3
+- purview-compliance
 hideEdit: true
 feedback_system: None
 recommendations: false
 description: Azure Maps definición de entidad de tipo de información confidencial de la clave de suscripción.
-ms.openlocfilehash: f1ebfe0018fac9bd792dc102df39bb0aada84fdf
-ms.sourcegitcommit: 5aed330d8af523f0dffe5e392f1c79f047e38172
+ms.openlocfilehash: d8729175d86ecd37c9bb27f5ee8b1985eabed318
+ms.sourcegitcommit: fa570d90b00ed1bb40e1ca27b11c66a84c4204e9
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/21/2022
-ms.locfileid: "66999398"
+ms.lasthandoff: 10/05/2022
+ms.locfileid: "68476845"
 ---
 # <a name="azure-maps-subscription-key-preview"></a>Azure Maps clave de suscripción (versión preliminar)
+
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
 
 ## <a name="format"></a>Formato
 

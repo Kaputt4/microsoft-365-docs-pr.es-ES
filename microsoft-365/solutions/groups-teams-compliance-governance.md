@@ -6,7 +6,7 @@ author: MikePlumleyMSFT
 manager: serdars
 audience: Admin
 ms.topic: article
-ms.service: microsoft-365-enterprise
+ms.service: o365-solutions
 ms.localizationpriority: medium
 ms.collection:
 - highpri
@@ -17,12 +17,12 @@ ms.custom:
 f1.keywords: NOCSH
 recommendations: false
 description: Obtenga información sobre las opciones de cumplimiento para grupos de Microsoft 365, Teams y colaboración de SharePoint.
-ms.openlocfilehash: b7a350a8f41d0a4f19ed345bc62dab0014ad7b10
-ms.sourcegitcommit: 0af064e8b6778060f1bd365378d69b16fc9949b5
+ms.openlocfilehash: 428413ce876a1718f1237d3bce0d543aa5d47c62
+ms.sourcegitcommit: cbb9a89499d42f4a029e18780bee408946e1671d
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/15/2022
-ms.locfileid: "67731252"
+ms.lasthandoff: 09/27/2022
+ms.locfileid: "68026279"
 ---
 # <a name="compliance-options-for-microsoft-365-groups-teams-and-sharepoint-collaboration"></a>Opciones de cumplimiento para grupos de Microsoft 365, Teams y colaboración de SharePoint
 
@@ -64,7 +64,7 @@ Los chats de usuario se conservan indefinidamente incluso si se elimina una cuen
 
 - [Directivas de retención en Microsoft Teams](/microsoftteams/retention-policies)
 
-Se puede establecer una única directiva de retención para que se aplique a los mensajes de chat de Teams y de canal de Teams. 
+Se puede establecer una única directiva de retención para que se aplique a los mensajes de chat de Teams y de canal de Teams (incluidos los mensajes de canal compartido). Los mensajes de canal privado de Teams deben estar contenidos en su propia directiva de retención.
 
 Recursos adicionales:
 
@@ -126,6 +126,8 @@ Con Microsoft 365 Multi-Geo, puede aprovisionar y almacenar datos en reposo en l
 - [Plan para Microsoft 365 Multi-Geo](/microsoft-365/enterprise/plan-for-multi-geo)
 
 ## <a name="related-topics"></a>Temas relacionados
+
+[Guía de seguridad y cumplimiento de Microsoft 365](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance)
 
 [Recomendaciones de planeamiento de gobernanza de colaboración](collaboration-governance-overview.md#collaboration-governance-planning-recommendations)
 

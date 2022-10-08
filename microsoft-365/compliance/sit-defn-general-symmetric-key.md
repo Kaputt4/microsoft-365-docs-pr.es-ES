@@ -14,19 +14,22 @@ f1_keywords:
 ms.service: O365-seccomp
 ms.localizationpriority: medium
 ms.collection:
-- M365-security-compliance
+- tier3
+- purview-compliance
 hideEdit: true
 feedback_system: None
 recommendations: false
 description: Definición de entidad de tipo de información confidencial de clave simétrica general.
-ms.openlocfilehash: 539fe92e769442de430252d7d14b5fc1e5febfb8
-ms.sourcegitcommit: 5aed330d8af523f0dffe5e392f1c79f047e38172
+ms.openlocfilehash: eba81a451f8b39d08cd0419c970dc0fe894f2e45
+ms.sourcegitcommit: fa570d90b00ed1bb40e1ca27b11c66a84c4204e9
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/21/2022
-ms.locfileid: "66999128"
+ms.lasthandoff: 10/05/2022
+ms.locfileid: "68476747"
 ---
 # <a name="general-symmetric-key-preview"></a>Clave simétrica general (versión preliminar)
+
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
 
 ## <a name="format"></a>Formato
 
@@ -72,7 +75,7 @@ Esta SIT está diseñada para coincidir con la información de seguridad que se 
 
 Usa varios recursos principales:
 
-- Patrones de clave simétrica de 256 bits codificada en Base64.
+- Patrones de clave simétrica codificada en Base64 de 256 bits.
 - Patrones de clave simétrica codificada en Base64 de 512 bits.
 - Patrones de CredentialName, CredentialFeatures, AccountIdentityName, AccountIdentityValue, ResourceType, ResourceName, Id, AccountName.
 - Patrones de valores ficticios, censuras y marcadores de posición.

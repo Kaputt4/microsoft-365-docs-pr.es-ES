@@ -7,9 +7,10 @@ author: efrene
 manager: scotv
 audience: Admin
 ms.topic: article
-ms.service: o365-administration
+ms.service: microsoft-365-business
 ms.localizationpriority: medium
 ms.collection:
+- scotvorg
 - highpri
 - M365-subscription-management
 - Adm_O365
@@ -26,12 +27,12 @@ search.appverid:
 - GEA150
 ms.assetid: 1561140a-16a9-4a02-822d-a989250e479d
 description: Obtenga información sobre cómo comprar un nombre de dominio en Microsoft 365.
-ms.openlocfilehash: 78e43b13731839d791d00b93000567b12bd07a80
-ms.sourcegitcommit: 37e137535c4f70702afe1a5eeaa899c75ee02cfd
+ms.openlocfilehash: e43b71e0a88abd2755de6d0ca5871c39e694dbcf
+ms.sourcegitcommit: 0b7070ec119e00e0dafe030bbfbef0ae5c9afa19
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/13/2022
-ms.locfileid: "67661923"
+ms.lasthandoff: 09/29/2022
+ms.locfileid: "68164863"
 ---
 # <a name="buy-a-domain-name"></a>Comprar un nombre de dominio
 
@@ -50,23 +51,23 @@ ms.locfileid: "67661923"
     
 Puede elegir entre los siguientes dominios de nivel superior para el dominio.
   
-- .biz
+- .Biz
     
 - .com
     
-- .info
+- .Información
     
 - .me
     
-- .mobi
+- .Mobi
     
-- .net
+- .Red
     
-- .org
+- .Org
     
-- .tv
+- .Tv
     
-- .co.uk
+- .Co.uk
     
 - org.uk
     
@@ -86,7 +87,7 @@ Si desea comprar un dominio de un registrador de dominios que no sea [GoDaddy](h
    
 ## <a name="transfer-your-domain-to-a-different-domain-registrar"></a>Transferir su dominio a otro registrador de dominios
 
-Si su dominio lo administra un proveedor que no es compatible con todos los registros DNS necesarios, puede transferirlo a un registrador diferente. Cuando se transfiere el dominio, lo que se hace es cambiar los destinatarios del pago para poder renovar y mantener el nombre de su dominio.
+If your domain is managed by a provider that doesn't support all the necessary DNS records, you can transfer it to a different registrar. When you transfer the domain, you change who you send payments to in order to renew and keep your domain name.
   
 Solicite la transferencia en el registrador al cual desea mover su dominio. Busque en su sitio web una opción como **Transferir DNS**. Después de realizar los cambios, puede tardar unos días en actualizarse a través de Internet.
 
@@ -94,7 +95,7 @@ Solicite la transferencia en el registrador al cual desea mover su dominio. Busq
 
 ## <a name="how-to-buy-a-domain-for-office-365-operated-by-21vianet"></a>Cómo comprar un dominio de Office 365 ofrecido por 21Vianet
 
-Si aún no tiene su propio dominio, puede comprar fácilmente uno online en un registrador de nombres de dominio, en un revendedor de dominios o incluso en su proveedor de Internet actual. Obtendrá un nombre de dominio cuando se suscriba a Office 365 ofrecido por 21Vianet, por ejemplo, contoso.partner.onmschina.cn. Pero es posible que desee usar un nombre de dominio personalizado, como fourthcoffee.com.
+If you don't already have your own domain, you can easily buy one online at a domain name registrar, domain reseller, or even at your current Internet provider. You get a domain name when you sign up for Office 365 operated by 21Vianet, for example, contoso.partner.onmschina.cn. But you may want to use a custom domain name, like fourthcoffee.com.
   
 Para configurar un dominio en Microsoft 365, debe ser propietario de un dominio y cambiar algunos de los registros DNS del dominio.
   

@@ -17,19 +17,19 @@ ms.date: 07/27/2022
 manager: dansimp
 audience: ITPro
 ms.collection:
-- M365-security-compliance
-- m365initiative-m365-defender
+- m365-security
+- tier2
 ms.topic: how-to
 ms.custom:
 - autoir
 - admindeeplinkDEFENDER
 ms.reviewer: evaldm, isco
-ms.openlocfilehash: b6cd87846b9225ced8a818252ef5b0e90e562470
-ms.sourcegitcommit: 10e6abe740e27000e223378eb17d657a47555fa8
+ms.openlocfilehash: 100a2615d6da0843414f3a2243696e3997e209ae
+ms.sourcegitcommit: 12af9e8e3a6eaa090fda9e98ccb831dff65863a4
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/31/2022
-ms.locfileid: "67482084"
+ms.lasthandoff: 09/27/2022
+ms.locfileid: "68055378"
 ---
 # <a name="view-and-manage-actions-in-the-action-center"></a>Visualización y administración de acciones en el Centro de acciones
 
@@ -74,7 +74,7 @@ Si ha determinado que un dispositivo o un archivo no es una amenaza, puede desha
 
 | Origen de la acción | Acciones admitidas |
 |:---|:---|
-| - Investigación automatizada <br/>- Antivirus de Microsoft Defender <br/>- Acciones de respuesta manual | - Aislar el dispositivo <br/>- Restricción de la ejecución de código <br/>- Poner en cuarentena un archivo <br/>- Quitar una clave del registro <br/>- Detener un servicio <br/>- Deshabilitar un controlador <br/>- Quitar una tarea programada |
+| - Investigación automatizada <br/>- antivirus de Microsoft Defender <br/>- Acciones de respuesta manual | - Aislar el dispositivo <br/>- Restricción de la ejecución de código <br/>- Poner en cuarentena un archivo <br/>- Quitar una clave del registro <br/>- Detener un servicio <br/>- Deshabilitar un controlador <br/>- Quitar una tarea programada |
 
 ### <a name="undo-one-remediation-action"></a>Deshacer una acción de corrección
 

@@ -14,19 +14,22 @@ f1_keywords:
 ms.service: O365-seccomp
 ms.localizationpriority: medium
 ms.collection:
-- M365-security-compliance
+- tier3
+- purview-compliance
 hideEdit: true
 feedback_system: None
 recommendations: false
 description: Definición de entidad de tipo de información confidencial del identificador nacional de Suecia.
-ms.openlocfilehash: 77d0fd72a4293bdc8cae0aa806899b30baa21ed8
-ms.sourcegitcommit: 5aed330d8af523f0dffe5e392f1c79f047e38172
+ms.openlocfilehash: 9cc223e2e1f135ed1237a3f9f142ca46e51566af
+ms.sourcegitcommit: 176bbd29c92e1c0812e8bcd1e1e4938a3e1d7331
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/21/2022
-ms.locfileid: "67000226"
+ms.lasthandoff: 10/05/2022
+ms.locfileid: "68471791"
 ---
 # <a name="sweden-national-id"></a>Número del documento nacional de identidad de Suecia
+
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
 
 ## <a name="format"></a>Formato
 

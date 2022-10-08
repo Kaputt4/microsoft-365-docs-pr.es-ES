@@ -14,19 +14,22 @@ f1_keywords:
 ms.service: O365-seccomp
 ms.localizationpriority: medium
 ms.collection:
-- M365-security-compliance
+- tier3
+- purview-compliance
 hideEdit: true
 feedback_system: None
 recommendations: false
 description: Definición de entidad de tipo de información confidencial del id. nacional de Polonia (PESEL).
-ms.openlocfilehash: 1efb99b67cbe6fe035ad6da3538ac0a8e070a441
-ms.sourcegitcommit: 5aed330d8af523f0dffe5e392f1c79f047e38172
+ms.openlocfilehash: c88b36d71339e28d2c6954c0c1a266c0696f2996
+ms.sourcegitcommit: 176bbd29c92e1c0812e8bcd1e1e4938a3e1d7331
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/21/2022
-ms.locfileid: "67000130"
+ms.lasthandoff: 10/05/2022
+ms.locfileid: "68470093"
 ---
 # <a name="poland-national-id-pesel"></a>Número del documento nacional de identidad de Polonia (PESEL)
+
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
 
 ## <a name="format"></a>Formato
 

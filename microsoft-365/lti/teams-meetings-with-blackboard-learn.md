@@ -1,25 +1,25 @@
 ---
-title: Uso de reuniones de Microsoft Teams con Blackboard Learn
+title: Integración de reuniones de Microsoft Teams con Blackboard Learn
 ms.author: danismith
 author: cichur
 manager: serdars
 ms.reviewer: amitman
 audience: admin
 ms.topic: article
-ms.service: o365-administration
+ms.service: microsoft-365-business
 ms.collection:
 - M365-modern-desktop
 - m365initiative-edu
 ms.localizationpriority: medium
 description: Aprenda a configurar reuniones de Microsoft Teams con Blackboard Learn.
-ms.openlocfilehash: 35de28c7fd12379699dd03afa4d36a381f9ac926
-ms.sourcegitcommit: cd9df1a681265905eef99c039f7036b2fa6e8b6d
+ms.openlocfilehash: 6099eaf3657c13402fbc7ee968ee1c1e570fd136
+ms.sourcegitcommit: 176bbd29c92e1c0812e8bcd1e1e4938a3e1d7331
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/07/2022
-ms.locfileid: "67277267"
+ms.lasthandoff: 10/05/2022
+ms.locfileid: "68471846"
 ---
-# <a name="use-microsoft-teams-meetings-with-blackboard-learn"></a>Uso de reuniones de Microsoft Teams con Blackboard Learn
+# <a name="integrate-microsoft-teams-meetings-with-blackboard-learn"></a>Integración de reuniones de Microsoft Teams con Blackboard Learn
 
 En esta guía se proporcionan los pasos del administrador de TI para registrar la aplicación LTI de reuniones de Teams en Blackboard Learn.
 

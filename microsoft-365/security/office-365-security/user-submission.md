@@ -12,18 +12,18 @@ ms.localizationpriority: medium
 search.appverid:
 - MET150
 ms.collection:
-- M365-security-compliance
+- m365-security
 - m365initiative-defender-office365
 ms.custom: ''
 description: Los administradores pueden aprender a identificar un buzón personalizado (también conocido como buzón de envíos de usuario) para recopilar mensajes de spam y phishing que notifican los usuarios. Otras configuraciones completan la experiencia de generación de informes para los usuarios cuando notifican mensajes.
 ms.subservice: mdo
 ms.service: microsoft-365-security
-ms.openlocfilehash: e11b30d14a7aff37c6c33dd5e8ce36b0e922097b
-ms.sourcegitcommit: 95ac076310ab9006ed92c69938f7ae771cd10826
+ms.openlocfilehash: 9f983a18f893f8d7a79b6ae93c5930a7be3abb02
+ms.sourcegitcommit: fa570d90b00ed1bb40e1ca27b11c66a84c4204e9
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/20/2022
-ms.locfileid: "67851070"
+ms.lasthandoff: 10/05/2022
+ms.locfileid: "68476955"
 ---
 # <a name="user-reported-message-settings"></a>Configuración del mensaje notificado por el usuario
 
@@ -57,7 +57,7 @@ Antes de empezar, debe configurar Exchange Online Protection y Defender para Off
 
   - Desactive Purga automática de cero horas (ZAP) para malware (la sección \>**Configuración de protección** **Habilitar purga automática de cero horas para malware** no está seleccionada o `-ZapEnabled $false` en PowerShell).
 
-  - Desactivar el filtrado de datos adjuntos comunes (sección \>**Configuración de protección** **Habilitar el filtro de datos adjuntos comunes** no está seleccionado o `EnableFileFilter $false` en PowerShell).
+  - Desactivar el filtrado de datos adjuntos comunes (sección \>**Configuración de protección** **Habilitar el filtro de datos adjuntos comunes** no está seleccionado o `-EnableFileFilter $false` en PowerShell).
   
   Para obtener instrucciones, consulte [Creación de una directiva antimalware](configure-anti-malware-policies.md#use-the-microsoft-365-defender-portal-to-create-anti-malware-policies).
 
@@ -70,6 +70,8 @@ Antes de empezar, debe configurar Exchange Online Protection y Defender para Off
   - Cree una directiva de datos adjuntos seguros para el buzón de correo de envíos del usuario en el que el examen de datos adjuntos seguros, incluida la entrega dinámica, esté desactivado (**sección** \> Configuración \> **datos adjuntos seguros respuesta de malware desconocido** **Desactivado** o `-Enable $false` en PowerShell). Para obtener instrucciones, consulte [Configurar directivas de datos adjuntos seguros en Microsoft Defender para Office 365](set-up-safe-attachments-policies.md).
 
   - Cree una directiva de vínculos seguros para el buzón de correo de envíos de usuarios donde el examen de vínculos seguros en el correo electrónico está desactivado (**url & configuración de** \> protección de **clics Activada: Vínculos seguros comprueba una lista de vínculos malintencionados conocidos cuando los usuarios hacen clic en vínculos en el correo electrónico** no está seleccionado o `EnableSafeLinksForEmail $false` en PowerShell). Para obtener instrucciones, consulte [Configuración de directivas de vínculos seguros en Microsoft Defender para Office 365](set-up-safe-links-policies.md).
+
+- Si tiene prevención de pérdida de datos (DLP), excluya el buzón personalizado de él. Para obtener instrucciones, consulte [Creación de excepciones en DLP](/microsoft-365/compliance/dlp-conditions-and-exceptions).
 
 Después de comprobar que el buzón cumple estos requisitos, use el resto de las instrucciones de este artículo para identificar el buzón de correo de envíos de usuario y otras configuraciones de mensajes notificadas por el usuario.
 
@@ -205,10 +207,10 @@ Para especificar el motivo por el que se notificaron los mensajes adjuntos origi
   - 3. X-Ms-Exchange-Organization-Network-Message-Id
   - 4. X-Ms-Exchange-Crosstenant-Id
 
-> [!NOTE]
-> TenantId en `X-Ms-Exchange-Crosstenant-Id` debe ser el mismo que el inquilino.
->
-> `X-Microsoft-Antispam-Message-Info` debe ser un xmi válido.
+   > [!NOTE]
+   > TenantId en `X-Ms-Exchange-Crosstenant-Id` debe ser el mismo que el inquilino.
+   >
+   > `X-Microsoft-Antispam-Message-Info` debe ser un xmi válido.
 
 - La línea asunto (título de sobre) de los mensajes enviados al buzón de envíos del usuario debe comenzar con uno de los siguientes valores de prefijo:
   - `1|` o `Junk:`.

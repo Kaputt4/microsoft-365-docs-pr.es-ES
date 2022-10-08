@@ -14,19 +14,22 @@ f1_keywords:
 ms.service: O365-seccomp
 ms.localizationpriority: medium
 ms.collection:
-- M365-security-compliance
+- tier3
+- purview-compliance
 hideEdit: true
 feedback_system: None
 recommendations: false
 description: Definición de entidad de tipo de información confidencial del número de tarjeta de débito de la UE.
-ms.openlocfilehash: dc5d633255b534fc0da217f42766c2d34d9d6180
-ms.sourcegitcommit: 217108c59be41b01963a393b4f16d137636fe6a8
+ms.openlocfilehash: 6ed7607d59a9cfe53687b023fb2adbbafee42041
+ms.sourcegitcommit: 2ff545246fec060ea7829da5afbc1cdc698d51ab
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/12/2022
-ms.locfileid: "67322813"
+ms.lasthandoff: 10/04/2022
+ms.locfileid: "68363395"
 ---
 # <a name="eu-debit-card-number"></a>Número de tarjeta de débito de la UE
+
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
 
 ## <a name="format"></a>Formato
 
@@ -45,7 +48,7 @@ Sí
 Una política de DLP tiene una gran confianza en que ha detectado este tipo de información confidencial si, dentro de una proximidad de 300 caracteres:
 
 - La función `Func_eu_debit_card` encuentra contenido que coincide con el patrón.
-- Al menos una de las siguientes opciones es verdadera:
+- Al menos uno de los siguientes casos es true:
     - Se encuentra una palabra clave de `Keyword_eu_debit_card`.
     - Se encuentra una palabra clave de `Keyword_card_terms_dict`.
     - Se encuentra una palabra clave de `Keyword_card_security_terms_dict`.

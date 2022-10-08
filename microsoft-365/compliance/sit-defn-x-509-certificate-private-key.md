@@ -14,19 +14,22 @@ f1_keywords:
 ms.service: O365-seccomp
 ms.localizationpriority: medium
 ms.collection:
-- M365-security-compliance
+- tier3
+- purview-compliance
 hideEdit: true
 feedback_system: None
 recommendations: false
 description: Definición de entidad de tipo de información confidencial de clave privada del certificado X.509.
-ms.openlocfilehash: bdf6666060e62312ecfaa260ea2521161e2db7a6
-ms.sourcegitcommit: 5aed330d8af523f0dffe5e392f1c79f047e38172
+ms.openlocfilehash: 144eff9826dcbb3bcfc03930442a4d4e3a36e22c
+ms.sourcegitcommit: fa570d90b00ed1bb40e1ca27b11c66a84c4204e9
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/21/2022
-ms.locfileid: "66951005"
+ms.lasthandoff: 10/05/2022
+ms.locfileid: "68476141"
 ---
 # <a name="x509-certificate-private-key-preview"></a>Clave privada de certificado X.509 (versión preliminar)
+
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
 
 ## <a name="format"></a>Formato
 
@@ -53,7 +56,7 @@ Por ejemplo:
 
 o
 
-5 guiones (-)
+cinco guiones (-)
 
 Y una combinación de hasta 30 caracteres:
 
@@ -88,7 +91,7 @@ Los patrones están diseñados para que coincidan con las credenciales reales co
 
 ### <a name="keyword_base64encodedstringliteral"></a>Keyword_Base64EncodedStringLiteral:
 
-- MII
+- Mii
 
 ### <a name="keyword_certificateprivatekeyheader"></a>Keyword_CertificatePrivateKeyHeader:
 

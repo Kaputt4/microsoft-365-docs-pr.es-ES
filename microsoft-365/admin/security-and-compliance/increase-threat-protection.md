@@ -7,9 +7,10 @@ author: skjerland
 manager: scotv
 audience: Admin
 ms.topic: article
-ms.service: o365-administration
+ms.service: microsoft-365-business
 ms.localizationpriority: medium
 ms.collection:
+- scotvorg
 - highpri
 - M365-subscription-management
 - M365-identity-device-management
@@ -26,12 +27,12 @@ search.appverid:
 - BCS160
 - MET150
 description: Configure Microsoft Defender para Office 365 y proteja los datos confidenciales contra phishing, malware y otras amenazas.
-ms.openlocfilehash: 41eed29cdc87e4334270efdb4d0039147254988c
-ms.sourcegitcommit: 37e137535c4f70702afe1a5eeaa899c75ee02cfd
+ms.openlocfilehash: 4c848d7d027b65efcb46c488e162860b4c1a6e9e
+ms.sourcegitcommit: 0b7070ec119e00e0dafe030bbfbef0ae5c9afa19
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/13/2022
-ms.locfileid: "67661372"
+ms.lasthandoff: 09/29/2022
+ms.locfileid: "68166601"
 ---
 # <a name="increase-threat-protection-for-microsoft-365-for-business"></a>Aumentar la protección contra amenazas para Microsoft 365 para empresas
 
@@ -105,7 +106,7 @@ Para crear una regla de transporte de correo:
 
 5. Aplique la configuración de la siguiente tabla para la regla. Use los valores predeterminados para el resto de la configuración, a menos que desee cambiarlos.
 
-6. Haga clic en **Guardar**.
+6. Seleccione **Guardar**.
 
 |Setting|Advertir a los usuarios antes de abrir archivos adjuntos de Office|
 |---|---|
@@ -137,7 +138,7 @@ Para crear una regla de transporte de correo, siga estos pasos:
 
 5. Aplique la configuración de la tabla siguiente. Use los valores predeterminados para el resto de la configuración, a menos que desee cambiarlos.
 
-6. Haga clic en **Guardar**.
+6. Seleccione **Guardar**.
 
 |Setting|Advertir a los usuarios antes de abrir archivos adjuntos de Office|
 |---|---|
@@ -193,7 +194,7 @@ Los usuarios envían, reciben y comparten datos adjuntos con regularidad, como d
 1. Desplácese hacia abajo. Elija **Habilitar redirección** y escriba su dirección de correo electrónico o la dirección de la persona que desea revisar los datos adjuntos bloqueados.
 1. Seleccione **aplicado a** y, a continuación, seleccione el nombre de dominio.
 1. Elija los dominios adicionales que posea (como el dominio de onmicrosoft.com) a los que le gustaría aplicar la regla. Seleccione **Agregar** y, a continuación, **Aceptar**.
-1. Haga clic en **Guardar**.
+1. Seleccione **Guardar**.
 
 La regla de datos adjuntos seguros de ATP se ha actualizado. Ahora que la protección está en vigor, no podrá abrir un archivo malintencionado desde Outlook, OneDrive, SharePoint o Teams. Los archivos afectados tendrán escudos rojos junto a ellos. Si alguien intenta abrir un archivo bloqueado, recibirá un mensaje de advertencia.
 

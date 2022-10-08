@@ -1,11 +1,11 @@
 ---
-title: Administrar Microsoft 365 contraseñas de cuenta de usuario
+title: Administración de contraseñas de cuenta de usuario de Microsoft 365
 ms.author: kvice
 author: kelleyvice-msft
 manager: scotv
 audience: Admin
 ms.topic: overview
-ms.prod: office-online-server
+ms.service: microsoft-365-enterprise
 ms.localizationpriority: medium
 f1.keywords:
 - CSH
@@ -13,6 +13,7 @@ ms.custom:
 - Adm_O365
 - seo-marvel-mar2020
 ms.collection:
+- scotvorg
 - Ent_O365
 - M365-subscription-management
 search.appverid:
@@ -21,23 +22,23 @@ search.appverid:
 - MED150
 - BCS160
 ms.assetid: 98ca5b3f-f720-4d8e-91be-fe656548a25a
-description: Obtenga información sobre cómo administrar Microsoft 365 contraseñas de cuenta de usuario.
-ms.openlocfilehash: 689f88c2380f0655af70cea08404ed7163fa1239
-ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
+description: Obtenga información sobre cómo administrar contraseñas de cuenta de usuario de Microsoft 365.
+ms.openlocfilehash: 3c6683fb916ac066d9fff3b168299c50391cbe63
+ms.sourcegitcommit: 0b7070ec119e00e0dafe030bbfbef0ae5c9afa19
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "65094402"
+ms.lasthandoff: 09/29/2022
+ms.locfileid: "68163149"
 ---
-# <a name="manage-microsoft-365-user-account-passwords"></a>Administrar Microsoft 365 contraseñas de cuenta de usuario
+# <a name="manage-microsoft-365-user-account-passwords"></a>Administración de contraseñas de cuenta de usuario de Microsoft 365
 
-*Este artículo se aplica tanto a Microsoft 365 Enterprise como a Office 365 Enterprise.*
+*Este artículo afecta tanto a Office 365 Enterprise como a Microsoft 365 Enterprise*
 
-Puede administrar Microsoft 365 contraseñas de cuenta de usuario de varias maneras diferentes, en función de la configuración de identidad. Puede administrar cuentas de usuario en el [Centro de administración de Microsoft 365](/admin), en Servicios de dominio de Active Directory (AD DS) o en el centro de administración de Azure Active Directory (Azure AD).
+Puede administrar las contraseñas de cuenta de usuario de Microsoft 365 de varias maneras diferentes, en función de la configuración de su identidad. Puede administrar cuentas de usuario en el [Centro de administración de Microsoft 365](/admin), en Servicios de dominio de Active Directory (AD DS) o en el Centro de administración de Azure Active Directory (Azure AD).
 
 ## <a name="plan-for-where-and-how-you-will-manage-your-user-account-passwords"></a>Planear dónde y cómo administrará las contraseñas de la cuenta de usuario
 
-Dónde y cómo puede administrar las cuentas de usuario depende del modelo de identidad que quiera usar para la Microsoft 365. Los dos modelos son solo en la nube e híbridos.
+Dónde y cómo puede administrar las cuentas de usuario depende del modelo de identidad que quiera usar para Microsoft 365. Los dos modelos son solo en la nube e híbridos.
   
 ### <a name="cloud-only"></a>Solo de nube
 
@@ -48,7 +49,7 @@ Las contraseñas de cuenta de usuario se administran en:
     
 ### <a name="hybrid"></a>Híbrido
 
-Con la identidad híbrida, las contraseñas se almacenan en AD DS, por lo que debe usar herramientas de AD DS locales para administrar las contraseñas de cuenta de usuario. Incluso cuando se usa la sincronización de hash de contraseñas (PHS), en la que Azure AD almacena una versión hash de la versión ya con hash en AD DS, usted y los usuarios deben administrar sus contraseñas en AD DS.
+Con la identidad híbrida, las contraseñas se almacenan en AD DS, por lo que debe usar herramientas de AD DS locales para administrar las contraseñas de cuenta de usuario. Incluso cuando se usa la sincronización de hash de contraseñas (PHS), en la que Azure AD almacena una versión con hash de la versión ya con hash en AD DS, usted y los usuarios deben administrar sus contraseñas en AD DS.
 
 Con la [escritura diferida de contraseñas](#pw_writeback), los usuarios pueden cambiar sus contraseñas de AD DS a través de Azure AD.
 
@@ -68,7 +69,7 @@ Puede prohibir las contraseñas incorrectas [en la nube](/azure/active-directory
 
 ## <a name="simplify-user-sign-in"></a>Simplificar el inicio de sesión de usuario
 
-Azure AD single Sign-On de conexión directa (Azure AD sso de conexión directa) funciona con PHS y Pass-Through Authentication (PTA), para permitir que los usuarios inicien sesión en servicios que usan Azure AD cuentas de usuario sin tener que escribir sus contraseñas y, en muchos casos, sus nombres de usuario. Esto ofrece facilita a los usuarios el acceso a aplicaciones en la nube, como Office 365, sin necesidad de componentes locales adicionales, como los servidores de federación de identidades.
+Azure AD Seamless Single Sign-On (Sso de conexión directa de Azure AD) funciona con PHS y Pass-Through Authentication (PTA), para permitir que los usuarios inicien sesión en servicios que usan cuentas de usuario de Azure AD sin tener que escribir sus contraseñas y, en muchos casos, sus nombres de usuario. Esto ofrece facilita a los usuarios el acceso a aplicaciones en la nube, como Office 365, sin necesidad de componentes locales adicionales, como los servidores de federación de identidades.
 
 Configure el SSO de conexión directa de Azure AD con la herramienta Azure AD Connect. Vea las [instrucciones para configurar el SSO de conexión directa de Azure AD](/azure/active-directory/connect/active-directory-aadconnect-sso-quick-start).
 
@@ -82,7 +83,7 @@ La escritura diferida de contraseñas es necesaria para utilizar por completo la
 Para obtener más información e instrucciones de configuración, vea [Azure AD SSPR with password writeback](/azure/active-directory/active-directory-passwords-writeback) (SSPR de Azure AD con escritura diferida de contraseñas).
 
 >[!Note]
->Actualice a la última versión de Azure AD Connect para garantizar que tiene la mejor experiencia posible y nuevas características cuando se publican. Para obtener más información, vea [Instalación personalizada de Azure AD Connect](/azure/active-directory/connect/active-directory-aadconnect-get-started-custom).
+>Upgrade to the latest version of Azure AD Connect to ensure the best possible experience and new features as they are released. For more information, see [Custom installation of Azure AD Connect](/azure/active-directory/connect/active-directory-aadconnect-get-started-custom).
 >
 
 ## <a name="simplify-password-resets"></a>Simplificar los restablecimientos de contraseña

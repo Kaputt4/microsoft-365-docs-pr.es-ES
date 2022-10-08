@@ -14,23 +14,26 @@ f1_keywords:
 ms.service: O365-seccomp
 ms.localizationpriority: medium
 ms.collection:
-- M365-security-compliance
+- tier3
+- purview-compliance
 hideEdit: true
 feedback_system: None
 recommendations: false
 description: Definición de entidad de tipo de información confidencial de clave de acceso compartido de Azure IoT.
-ms.openlocfilehash: b619fd6b488727ea9d0c615e354ab19d7eaad34b
-ms.sourcegitcommit: 5aed330d8af523f0dffe5e392f1c79f047e38172
+ms.openlocfilehash: 54121aba01854f71a136dd224c3958030b8c8874
+ms.sourcegitcommit: fa570d90b00ed1bb40e1ca27b11c66a84c4204e9
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/21/2022
-ms.locfileid: "66999944"
+ms.lasthandoff: 10/05/2022
+ms.locfileid: "68476097"
 ---
 # <a name="azure-iot-shared-access-key"></a>Clave de acceso compartido de Azure IoT  
 
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
+
 ## <a name="format"></a>Formato
 
-Combinación de 44 caracteres que consta de letras, dígitos y caracteres especiales que terminan con signos e iguales que no forman parte del patrón.
+Combinación de 44 caracteres que consta de letras, dígitos y caracteres especiales que terminan con signos iguales y que no forman parte del patrón.
 
 ## <a name="pattern"></a>Patrón
 
@@ -56,8 +59,8 @@ Esta SIT está diseñada para coincidir con la información de seguridad que se 
 
 Usa varios recursos principales:
 
-- Patrones de clave simétrica de 256 bits codificada en Base64.
-- Patrones de CredentialName, CredentialFeatures, AccountIdentityName, AccountIdentityValue, ResourceType, ResourceName, Id.
+- Patrones de clave simétrica codificada en Base64 de 256 bits.
+- Patrones de CredentialName, CredentialFeatures, AccountIdentityName, AccountIdentityValue, ResourceType, ResourceName, ID.
 - Patrones de valores ficticios, censuras y marcadores de posición.
 - Diccionario de vocabulario.
 

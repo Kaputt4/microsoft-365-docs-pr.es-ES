@@ -7,17 +7,19 @@ ms.author: cmcatee
 manager: scotv
 audience: Admin
 ms.topic: reference
-ms.service: o365-administration
-ms.collection: Adm_Support
+ms.service: microsoft-365-business
+ms.collection:
+- scotvorg
+- Adm_Support
 ms.localizationpriority: medium
 description: Obtenga información acerca de cómo ponerse en contacto con el soporte técnico de su país o región.
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: cf092a0c5b98aeaf622edfe8c399569a0e1fd9ab
-ms.sourcegitcommit: 0ee2dabe402d44fecb6856af98a2ef7720d25189
+ms.openlocfilehash: 4595757e63e5251d65d3cf13303c9f1dc3db16d0
+ms.sourcegitcommit: 0b7070ec119e00e0dafe030bbfbef0ae5c9afa19
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/09/2021
-ms.locfileid: "61374153"
+ms.lasthandoff: 09/29/2022
+ms.locfileid: "68163930"
 ---
 # <a name="contact-support-for-switzerland"></a>Póngase en contacto con el soporte técnico de Suiza
 
@@ -39,14 +41,14 @@ Inglés: lunes a viernes de 9:00 a 17:00
 
 ### <a name="technical-support"></a>Soporte técnico:
 
-Francés: Mon-Fri 8 AM-9 PM
+Francés: Mon-Fri de 8:00 a.m. a 9 p. m.
 
-Alemán: Mon-Fri 8 AM-9 PM
+Alemán: Mon-Fri de 8:00 a.m. a 9 p. m.
 
-Italiano: Mon-Fri 8 AM-9 PM
+Italiano: Mon-Fri de 8:00 a 20:00
 
 Inglés: 24 horas al día, 7 días a la semana
 
-Número Teléfono alternativa: 022 76 141 14
+Número de teléfono alternativo: 022 76 141 14
 
 Se aplican tarifas de llamada local

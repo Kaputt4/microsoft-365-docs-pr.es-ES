@@ -14,19 +14,22 @@ f1_keywords:
 ms.service: O365-seccomp
 ms.localizationpriority: medium
 ms.collection:
-- M365-security-compliance
+- tier3
+- purview-compliance
 hideEdit: true
 feedback_system: None
 recommendations: false
 description: Definición general del tipo de información confidencial de contraseña.
-ms.openlocfilehash: ea800d6798a2068eb90ff02e1550e48606e7b1ea
-ms.sourcegitcommit: 5aed330d8af523f0dffe5e392f1c79f047e38172
+ms.openlocfilehash: 39a789fed5d0cf1467da4be0e05324dea3d5a12d
+ms.sourcegitcommit: fa570d90b00ed1bb40e1ca27b11c66a84c4204e9
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/21/2022
-ms.locfileid: "66999131"
+ms.lasthandoff: 10/05/2022
+ms.locfileid: "68476757"
 ---
 # <a name="general-password-preview"></a>Contraseña general (versión preliminar)
+
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
 
 ## <a name="format"></a>Formato
 
@@ -229,7 +232,7 @@ Sí
 
 ## <a name="description"></a>Descripción
 
-Este SIT está diseñado para coincidir con la información de seguridad que es como los nombres de usuario y las contraseñas que se usan en el proceso de inicio de sesión general del [proceso de inicio de sesión del usuario](/azure/key-vault/quick-create-portal). Usa varios recursos principales:
+Esta SIT está diseñada para coincidir con la información de seguridad que es como los nombres de usuario y las contraseñas que se usan en el proceso general de inicio de sesión del [usuario](/azure/key-vault/quick-create-portal). Usa varios recursos principales:
 
 - Patrones de literal de cadena codificada en Base64.
 - Patrones de contexto de contraseña en la línea de comandos.
@@ -252,7 +255,7 @@ Los patrones están diseñados para que coincidan con las credenciales reales co
 
 ### <a name="keyword_base64encodedstringliteral"></a>Keyword_Base64EncodedStringLiteral
 
-- MII
+- Mii
 
 ### <a name="keyword_passwordcontextincmdline"></a>Keyword_PasswordContextInCmdLine
 
@@ -268,7 +271,7 @@ Los patrones están diseñados para que coincidan con las credenciales reales co
 - AutoLogon
 - Ldifde
 - Rclone
-- --env
+- --Env
 - SignTool
 - Winexe
 - Red
@@ -319,7 +322,7 @@ Los patrones están diseñados para que coincidan con las credenciales reales co
 ### <a name="keyword_symmetrickey192"></a>Keyword_SymmetricKey192
 
 - contraseña
-- -p
+- -P
 - azurecr
 
 ### <a name="keyword_symmetrickey256"></a>Keyword_SymmetricKey256

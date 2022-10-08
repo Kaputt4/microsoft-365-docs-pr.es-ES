@@ -18,17 +18,18 @@ ms.collection:
 - m365solution-healthcare
 - m365solution-scenario
 - m365-frontline
+- highpri
 ms.reviewer: ''
 description: Recursos que le ayudarán a entrenar a los trabajadores de primera línea sobre las características de comunicación y colaboración en las aplicaciones de Teams y Teams.
 appliesto:
 - Microsoft Teams
 - Microsoft 365 for frontline workers
-ms.openlocfilehash: aa7a620382fc7ffa6f807518fdec53255c241364
-ms.sourcegitcommit: f09687dbbc68347bc421d0b686625b80ff3a6b20
+ms.openlocfilehash: 86be6c8021cfac99df618a28710efc77e049e3a8
+ms.sourcegitcommit: 674dfa2cb2f20546d2f7822e09bacf0e12e2718b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/25/2022
-ms.locfileid: "67432450"
+ms.lasthandoff: 09/27/2022
+ms.locfileid: "68038805"
 ---
 # <a name="help-your-frontline-workers-use-collaboration-apps-and-features"></a>Ayuda a los trabajadores de primera línea a usar aplicaciones y características de colaboración
 

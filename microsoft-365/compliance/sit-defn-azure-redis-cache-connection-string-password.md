@@ -14,19 +14,22 @@ f1_keywords:
 ms.service: O365-seccomp
 ms.localizationpriority: medium
 ms.collection:
-- M365-security-compliance
+- tier3
+- purview-compliance
 hideEdit: true
 feedback_system: None
 recommendations: false
 description: Definición de entidad de tipo de información confidencial de la cadena de conexión de caché de Azure Redis.
-ms.openlocfilehash: 04d79512c7740401e81ba5089b57734d7f8f1961
-ms.sourcegitcommit: 5aed330d8af523f0dffe5e392f1c79f047e38172
+ms.openlocfilehash: d65ec7a901b7e703279aec4d290718927f09e0d6
+ms.sourcegitcommit: fa570d90b00ed1bb40e1ca27b11c66a84c4204e9
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/21/2022
-ms.locfileid: "66999389"
+ms.lasthandoff: 10/05/2022
+ms.locfileid: "68476737"
 ---
 # <a name="azure-redis-cache-connection-string-password-preview"></a>Contraseña de cadena de conexión de Azure Redis Cache (versión preliminar)
+
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
 
 ## <a name="format"></a>Formato
 
@@ -76,8 +79,8 @@ Esta SIT está diseñada para coincidir con la información de seguridad que se 
 Usa varios recursos principales:
 
 - Patrones de literal de cadena codificada en Base64.
-- Patrones de clave simétrica de 256 bits codificada en Base64.
-- Patrones de CredentialName, CredentialFeatures, AccountIdentityName, AccountIdentityValue, ResourceType, ResourceName, Id.
+- Patrones de clave simétrica codificada en Base64 de 256 bits.
+- Patrones de CredentialName, CredentialFeatures, AccountIdentityName, AccountIdentityValue, ResourceType, ResourceName, ID.
 - Patrones de valores ficticios, censuras y marcadores de posición.
 - Diccionario de vocabulario.
 
@@ -87,7 +90,7 @@ Los patrones están diseñados para que coincidan con las credenciales reales co
 
 ### <a name="keyword_base64encodedstringliteral"></a>Keyword_Base64EncodedStringLiteral:
 
-- MII
+- Mii
 
 ### <a name="keyword_symmetrickey256"></a>Keyword_SymmetricKey256:
 

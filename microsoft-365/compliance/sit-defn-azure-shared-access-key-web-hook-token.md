@@ -14,19 +14,22 @@ f1_keywords:
 ms.service: O365-seccomp
 ms.localizationpriority: medium
 ms.collection:
-- M365-security-compliance
+- tier3
+- purview-compliance
 hideEdit: true
 feedback_system: None
 recommendations: false
 description: Definición de entidad de tipo de información confidencial de clave de acceso compartido de Azure o token de web hook.
-ms.openlocfilehash: 0ddb9585ba5bcec36785be8f722c484517254af0
-ms.sourcegitcommit: 5aed330d8af523f0dffe5e392f1c79f047e38172
+ms.openlocfilehash: a97bc484551cfd5a5ceb379b1e07aca2b9e53255
+ms.sourcegitcommit: fa570d90b00ed1bb40e1ca27b11c66a84c4204e9
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/21/2022
-ms.locfileid: "66999698"
+ms.lasthandoff: 10/05/2022
+ms.locfileid: "68476031"
 ---
 # <a name="azure-shared-access-key--web-hook-token-preview"></a>Clave de acceso compartido de Azure o token de web hook (versión preliminar) 
+
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
 
 ## <a name="format"></a>Formato
 
@@ -54,7 +57,7 @@ o
 
 Una combinación de 43 a 73 caracteres que consta de:
 
-- a-z (sin distinción entre mayúsculas y minúsculas)
+- a-z (no distingue mayúsculas de minúsculas)
 - 0-9
 - signos de porcentaje (%)
 - termina con un sufijo '%3d' (sin distinción entre mayúsculas y minúsculas)
@@ -73,9 +76,9 @@ Esta SIT está diseñada para coincidir con la información de seguridad que se 
 
 Usa varios recursos principales:
 
-- Patrones de clave simétrica de 256 bits codificada en Base64.
+- Patrones de clave simétrica codificada en Base64 de 256 bits.
 - Patrones de clave simétrica con codificación URL de 256 bits.
-- Patrones de CredentialName, CredentialFeatures, AccountIdentityName, AccountIdentityValue, ResourceType, ResourceName, Id.
+- Patrones de CredentialName, CredentialFeatures, AccountIdentityName, AccountIdentityValue, ResourceType, ResourceName, ID.
 - Patrones de valores ficticios, censuras y marcadores de posición.
 - Diccionario de vocabulario
 

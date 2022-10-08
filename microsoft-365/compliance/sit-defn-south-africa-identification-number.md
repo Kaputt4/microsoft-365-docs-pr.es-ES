@@ -14,23 +14,26 @@ f1_keywords:
 ms.service: O365-seccomp
 ms.localizationpriority: medium
 ms.collection:
-- M365-security-compliance
+- tier3
+- purview-compliance
 hideEdit: true
 feedback_system: None
 recommendations: false
 description: Definición de entidad de tipo de información confidencial del número de identificación de Sudáfrica.
-ms.openlocfilehash: 95fbf2baa8842f1654881d0435a0328b5593242a
-ms.sourcegitcommit: 5aed330d8af523f0dffe5e392f1c79f047e38172
+ms.openlocfilehash: ca385d9255ce5906769307ad1b29b5c377cec4bf
+ms.sourcegitcommit: 176bbd29c92e1c0812e8bcd1e1e4938a3e1d7331
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/21/2022
-ms.locfileid: "66999812"
+ms.lasthandoff: 10/05/2022
+ms.locfileid: "68472044"
 ---
 # <a name="south-africa-identification-number"></a>Número del documento de identidad de Sudáfrica
 
 ### <a name="format"></a>Formato
 
 13 dígitos que pueden contener espacios
+
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
 
 ## <a name="pattern"></a>Patrón
 
@@ -69,5 +72,5 @@ Una política de DLP tiene una gran confianza en que ha detectado este tipo de i
 ### <a name="keyword_south_africa_identification_number"></a>Keyword_south_africa_identification_number
 
 - tarjeta de identidad
-- ID
+- Id.
 - Identificación

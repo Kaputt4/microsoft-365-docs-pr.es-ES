@@ -14,19 +14,22 @@ f1_keywords:
 ms.service: O365-seccomp
 ms.localizationpriority: medium
 ms.collection:
-- M365-security-compliance
+- tier3
+- purview-compliance
 hideEdit: true
 feedback_system: None
 recommendations: false
 description: Definición de entidad de tipo de información confidencial de la tarjeta de identidad de Polonia.
-ms.openlocfilehash: 3e9e850259e3824fda7703f52088d9358b1e60b6
-ms.sourcegitcommit: 5aed330d8af523f0dffe5e392f1c79f047e38172
+ms.openlocfilehash: cf0cd4abe57c3b27bb97d17673be0f855c1bab96
+ms.sourcegitcommit: 176bbd29c92e1c0812e8bcd1e1e4938a3e1d7331
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/21/2022
-ms.locfileid: "67000157"
+ms.lasthandoff: 10/05/2022
+ms.locfileid: "68470011"
 ---
 # <a name="poland-identity-card"></a>Documento de identidad de Polonia
+
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
 
 ## <a name="format"></a>Formato
 

@@ -8,16 +8,16 @@ ms.service: threat-intelligence
 ms.topic: overview
 ms.date: 08/02/2022
 ms.custom: template-overview
-ms.openlocfilehash: 5563358e108c6461f44f777b5f2473b4f0bca0c7
-ms.sourcegitcommit: c29af68260ba8676083674b3c70209bff2c2e362
+ms.openlocfilehash: bdb1acd3ca60042978710b8e59f28865530213ae
+ms.sourcegitcommit: 0380a7cd5adb710b80a0ed6fcd349199f1571080
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/16/2022
-ms.locfileid: "67737926"
+ms.lasthandoff: 10/03/2022
+ms.locfileid: "68339716"
 ---
 # <a name="reputation-scoring"></a>Puntuación de reputación
 
-Inteligencia contra amenazas de Microsoft Defender (TI de Defender) proporciona puntuaciones de reputación propias para cualquier host, dominio o dirección IP. Si se valida la reputación de una entidad conocida o desconocida, esta puntuación ayuda a los usuarios a comprender rápidamente los vínculos detectados a una infraestructura malintencionada o sospechosa. La plataforma proporciona información rápida sobre la actividad de estas entidades (por ejemplo, marcas de tiempo first y last seen, ASN, país, infraestructura asociada) y una lista de reglas que afectan a la puntuación de reputación cuando corresponda.
+Inteligencia contra amenazas de Microsoft Defender (TI de Defender) proporciona puntuaciones de reputación propias para cualquier host, dominio o dirección IP. Si se valida la reputación de una entidad conocida o desconocida, esta puntuación ayuda a los usuarios a comprender rápidamente los vínculos detectados a una infraestructura malintencionada o sospechosa. La plataforma proporciona información rápida sobre la actividad de estas entidades (por ejemplo, marcas de tiempo first y last seen, ASN, infraestructura asociada) y una lista de reglas que afectan a la puntuación de reputación cuando corresponda.
 
 Los datos de reputación son importantes para comprender la confiabilidad de su propia superficie expuesta a ataques y también es útil al evaluar hosts, dominios o direcciones IP desconocidos que aparecen en las investigaciones. Estas puntuaciones descubrirán cualquier actividad malintencionada o sospechosa anterior que afecte a la entidad, u otros indicadores conocidos de riesgo que se deben tener en cuenta.
 
@@ -54,7 +54,6 @@ Consulte las reglas de puntuación de reputación de ejemplo siguientes:
 |------------------------------------|--------------------------------------------------------------------------------------------------------|
 |     SSL-Certificate Self-Signed    |     Los certificados autofirmados pueden indicar un comportamiento malintencionado                                         |
 |     Etiquetado como malintencionado            |     Etiquetado como malintencionado por un miembro de la organización                                         |
-|     País                        |     Es más probable que la infraestructura hospedada en este país sea malintencionada.                             |
 |     Componentes web observados        |     El número de componentes web observados puede indicar malintencion                                 |
 |     Servidor de nombres                    |     El dominio usa un servidor de nombres que es más probable que lo use la infraestructura malintencionada.         |
 |     Registrador                      |     Es más probable que los dominios registrados en este registrador sean malintencionados.                           |

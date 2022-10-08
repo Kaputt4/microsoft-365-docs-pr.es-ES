@@ -14,19 +14,22 @@ f1_keywords:
 ms.service: O365-seccomp
 ms.localizationpriority: medium
 ms.collection:
-- M365-security-compliance
+- tier3
+- purview-compliance
 hideEdit: true
 feedback_system: None
 recommendations: false
 description: Estados Unidos/Reino Unido Definición de entidad de tipo de información confidencial de número de passport.
-ms.openlocfilehash: 88caf63983d6f459f5ff201ae695f909489569cb
-ms.sourcegitcommit: 5aed330d8af523f0dffe5e392f1c79f047e38172
+ms.openlocfilehash: 96e3f270cfa49cc63a263b54960afb19c27aa3df
+ms.sourcegitcommit: 176bbd29c92e1c0812e8bcd1e1e4938a3e1d7331
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/21/2022
-ms.locfileid: "66951076"
+ms.lasthandoff: 10/05/2022
+ms.locfileid: "68471890"
 ---
 # <a name="usuk-passport-number"></a>Estados Unidos/Reino Unido passport number
+
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
 
 ## <a name="format"></a>Formato
 
@@ -34,7 +37,7 @@ nueve dígitos
 
 ## <a name="pattern"></a>Patrón
 
-- una letra o dígito
+- una letra o un dígito
 - ocho dígitos
 
 ## <a name="checksum"></a>Suma de comprobación
@@ -43,16 +46,16 @@ No
 
 ### <a name="definition"></a>Definición
 
-Una directiva DLP tiene una gran confianza en que se detecta este tipo de información confidencial si, dentro de una proximidad de 300 caracteres:
+Una política de DLP tiene una gran confianza en que ha detectado este tipo de información confidencial si, dentro de una proximidad de 300 caracteres:
 
-- La función `Func_usa_uk_passport` busca contenido que coincida con el patrón.
-- Se encuentra una palabra clave de `Keywords_eu_passport_number` o `Keywords_uk_eu_passport_number` .
+- La función `Func_usa_uk_passport` encuentra contenido que coincide con el patrón.
+- Se encuentra una palabra clave de `Keywords_eu_passport_number` o `Keywords_uk_eu_passport_number`.
 - Se encuentra una palabra clave de `Keywords_eu_passport_date`
 
-Una directiva DLP tiene confianza media en que se detecta este tipo de información confidencial si, dentro de una proximidad de 300 caracteres:
+Una política de DLP tiene confianza media en que ha detectado este tipo de información confidencial si, dentro de una proximidad de 300 caracteres:
 
-- La función `Func_usa_uk_passport` busca contenido que coincida con el patrón.
-- Se encuentra una palabra clave de `Keywords_eu_passport_number` o `Keywords_uk_eu_passport_number` .
+- La función `Func_usa_uk_passport` encuentra contenido que coincide con el patrón.
+- Se encuentra una palabra clave de `Keywords_eu_passport_number` o `Keywords_uk_eu_passport_number`.
 
 ```xml
     <!-- U.S. / U.K. Passport Number -->
@@ -79,12 +82,12 @@ Una directiva DLP tiene confianza media en que se detecta este tipo de informaci
 
 ### <a name="keywords_eu_passport_number"></a>Keywords_eu_passport_number
 
-- Pasaporte #
-- Pasaporte #
+- pasaporte#
+- pasaporte #
 - passportid
-- Pasaportes
+- pasaportes
 - passportno
-- passport no
+- pasaporte no
 - passportnumber
 - passport number
 - passportnumbers

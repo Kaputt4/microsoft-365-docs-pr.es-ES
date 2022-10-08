@@ -14,21 +14,24 @@ f1_keywords:
 ms.service: O365-seccomp
 ms.localizationpriority: medium
 ms.collection:
-- M365-security-compliance
+- tier3
+- purview-compliance
 hideEdit: true
 feedback_system: None
 recommendations: false
 description: Dinamarca aborda físicamente la definición de entidad del tipo de información confidencial.
-ms.openlocfilehash: 05adc8f09b26495de7c9ca0a0cf01e6682fad7ac
-ms.sourcegitcommit: 5aed330d8af523f0dffe5e392f1c79f047e38172
+ms.openlocfilehash: dbe2337a54b4ecef01030ddf736349749f863363
+ms.sourcegitcommit: 2ff545246fec060ea7829da5afbc1cdc698d51ab
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/21/2022
-ms.locfileid: "66999335"
+ms.lasthandoff: 10/04/2022
+ms.locfileid: "68361746"
 ---
 # <a name="denmark-physical-addresses"></a>Direcciones físicas de Dinamarca
 
-Esta entidad con nombre desagregada detecta patrones relacionados con la dirección física de Dinamarca. También se incluye en la entidad SIT con nombre [todas las direcciones físicas](sit-defn-all-physical-addresses.md) agrupadas.
+Esta entidad con nombre desagregada detecta patrones relacionados con la dirección física de Dinamarca. También se incluye en [Todas las direcciones físicas ](sit-defn-all-physical-addresses.md) en la entidad no agrupada denominada SIT.
+
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
 
 ## <a name="confidence-level"></a>Nivel de confianza
 

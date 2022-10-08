@@ -7,16 +7,18 @@ author: kwekua
 manager: scotv
 audience: Admin
 ms.topic: article
-ms.service: o365-administration
+ms.service: microsoft-365-business
 ms.localizationpriority: medium
-ms.collection: Adm_TOC
+ms.collection:
+- scotvorg
+- Adm_TOC
 description: Establezca cuánto tiempo durará la sesión del usuario en Microsoft 365 antes de que se agote el tiempo de espera.
-ms.openlocfilehash: 7dbc3f7cfeaa0997661849e6f2a36439c9f6973a
-ms.sourcegitcommit: 9a4b0bc6a3ba076ecc392260efe7d2e1b655cde8
+ms.openlocfilehash: cc275293187888c4f04878dc10071e0c82e97ea5
+ms.sourcegitcommit: 0b7070ec119e00e0dafe030bbfbef0ae5c9afa19
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/23/2022
-ms.locfileid: "67420098"
+ms.lasthandoff: 09/29/2022
+ms.locfileid: "68166711"
 ---
 # <a name="idle-session-timeout-for-microsoft-365"></a>Tiempo de espera de sesión inactiva para Microsoft 365
 
@@ -100,7 +102,7 @@ Para que el tiempo de espera de la sesión inactiva se desencadene solo en dispo
 
 6. Active la directiva y seleccione **Crear**.
 
-## <a name="frequently-asked-questions"></a>Preguntas más frecuentes
+## <a name="frequently-asked-questions"></a>Preguntas frecuentes
 
 ### <a name="are-there-any-browsers-or-browser-scenarios-in-which-idle-session-timeout-feature-doesnt-work"></a>¿Hay algún explorador o escenario de explorador en el que la característica de tiempo de espera de sesión inactiva no funcione?  
 

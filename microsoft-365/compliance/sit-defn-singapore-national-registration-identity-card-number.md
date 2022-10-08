@@ -14,19 +14,22 @@ f1_keywords:
 ms.service: O365-seccomp
 ms.localizationpriority: medium
 ms.collection:
-- M365-security-compliance
+- tier3
+- purview-compliance
 hideEdit: true
 feedback_system: None
 recommendations: false
 description: Definición de entidad de tipo de información confidencial del número de tarjeta de identidad de registro nacional (NRIC) de Singapur.
-ms.openlocfilehash: b2dfa68f3d69134f7d4eca67648c64075b5d1c44
-ms.sourcegitcommit: 5aed330d8af523f0dffe5e392f1c79f047e38172
+ms.openlocfilehash: f77564f85444f3928a3ed6d3437d04e19774c411
+ms.sourcegitcommit: 176bbd29c92e1c0812e8bcd1e1e4938a3e1d7331
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/21/2022
-ms.locfileid: "66999674"
+ms.lasthandoff: 10/05/2022
+ms.locfileid: "68471802"
 ---
 # <a name="singapore-national-registration-identity-card-nric-number"></a>Número del documento de identidad del registro nacional de Singapur (NRIC)
+
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
 
 ## <a name="format"></a>Formato
 
@@ -48,13 +51,13 @@ Sí
 
 Una política de DLP tiene una gran confianza en que ha detectado este tipo de información confidencial si, dentro de una proximidad de 300 caracteres:
 
-- La expresión `Regex_singapore_nric` regular busca contenido que coincida con el patrón.
+- La expresión regular `Regex_singapore_nric` encuentra contenido que coincide con el patrón.
 - Se encuentra una palabra clave de `Keyword_singapore_nric`.
 - Se supera la suma de comprobación.
 
 Una política de DLP tiene confianza media en que ha detectado este tipo de información confidencial si, dentro de una proximidad de 300 caracteres:
 
-- La expresión `Regex_singapore_nric` regular busca contenido que coincida con el patrón.
+- La expresión regular `Regex_singapore_nric` encuentra contenido que coincide con el patrón.
 - Se supera la suma de comprobación.
 
 ```xml
@@ -77,8 +80,8 @@ Una política de DLP tiene confianza media en que ha detectado este tipo de info
 - Tarjeta de identidad de registro nacional
 - Número de tarjeta de identidad
 - NRIC
-- IC
+- Ic
 - Número de identificación de extranjeros
-- ALETA
+- Aleta
 - 身份证
 - 身份證

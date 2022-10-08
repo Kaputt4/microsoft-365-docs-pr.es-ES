@@ -14,19 +14,22 @@ f1_keywords:
 ms.service: O365-seccomp
 ms.localizationpriority: medium
 ms.collection:
-- M365-security-compliance
+- tier3
+- purview-compliance
 hideEdit: true
 feedback_system: None
 recommendations: false
 description: La cuenta de Azure COSMOS DB tiene acceso a la definición de entidad de tipo de información confidencial de clave.
-ms.openlocfilehash: 7912a02ea7b041603955ab4d88fe00966ae9cf94
-ms.sourcegitcommit: 5aed330d8af523f0dffe5e392f1c79f047e38172
+ms.openlocfilehash: dccc5018c5d3a27f188f496cd0d13790b78707d2
+ms.sourcegitcommit: fa570d90b00ed1bb40e1ca27b11c66a84c4204e9
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/21/2022
-ms.locfileid: "66999458"
+ms.lasthandoff: 10/05/2022
+ms.locfileid: "68475987"
 ---
 # <a name="azure-cosmos-db-account-access-key-preview"></a>Clave de acceso de la cuenta de Azure COSMOS DB (versión preliminar)
+
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
 
 ## <a name="format"></a>Formato
 
@@ -57,7 +60,7 @@ Esta SIT está diseñada para coincidir con la información de seguridad que se 
 Usa varios recursos principales:
 
 - Patrones de clave simétrica codificada en Base64 de 512 bits.
-- Patrones de CredentialName, CredentialFeatures, AccountIdentityName, AccountIdentityValue, ResourceType, ResourceName, Id, AccountName.
+- Patrones de CredentialName, CredentialFeatures, AccountIdentityName, AccountIdentityValue, ResourceType, ResourceName, ID, AccountName.
 - Patrones de valores ficticios, censuras y marcadores de posición.
 - Diccionario de vocabulario.
 

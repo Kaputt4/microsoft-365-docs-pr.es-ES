@@ -1,13 +1,14 @@
 ---
 title: informes de uso de aplicaciones de Centro de administración de Microsoft 365
-ms.author: kwekua
-author: kwekua
+ms.author: camillepack
+author: camillepack
 manager: scotv
 audience: Admin
 ms.topic: article
-ms.service: o365-administration
+ms.service: microsoft-365-business
 ms.localizationpriority: medium
 ms.collection:
+- scotvorg
 - M365-subscription-management
 - Adm_O365
 - Adm_NonTOC
@@ -18,12 +19,12 @@ search.appverid:
 - MOE150
 - GEA150
 description: Obtenga información sobre cómo obtener un informe de uso de Aplicaciones Microsoft 365 para ver la actividad del usuario con licencia en todas las aplicaciones y cómo se usan las aplicaciones entre plataformas.
-ms.openlocfilehash: 0a3545c71627c666249b91f2080603ea32ae30f0
-ms.sourcegitcommit: 5014666778b2d48912c68c2e06992cdb43cfaee3
+ms.openlocfilehash: f8d9baf29089b7dd37a3655dec4c33dfb873bb67
+ms.sourcegitcommit: 0b7070ec119e00e0dafe030bbfbef0ae5c9afa19
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/07/2022
-ms.locfileid: "66662732"
+ms.lasthandoff: 09/29/2022
+ms.locfileid: "68165237"
 ---
 # <a name="microsoft-365-reports-in-the-admin-center---microsoft-365-apps-usage"></a>Informes de Microsoft 365 en el Centro de administración: uso Aplicaciones Microsoft 365
 
@@ -61,7 +62,7 @@ Puede filtrar la serie que ve en el gráfico seleccionando un elemento de la ley
 En la tabla, se muestra un desglose de los datos en el nivel de usuario. Puede agregar o quitar columnas de la tabla.
 
 
-|Item|Descripción|
+|Elemento|Descripción|
 |---|---|
 |Nombre de usuario|Dirección de correo electrónico del usuario que realizó la actividad en Microsoft Apps.|
 |Última fecha de activación (UTC)|La última fecha en la que el usuario activó su suscripción Aplicaciones Microsoft 365 en un equipo o inicia sesión en un equipo compartido e inicia la aplicación con su cuenta.|

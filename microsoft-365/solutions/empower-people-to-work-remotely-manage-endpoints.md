@@ -1,5 +1,5 @@
 ---
-title: Paso 4. Implementar la administración de puntos de conexión para sus dispositivos, PCs y otros puntos de conexión
+title: Step 4. Deploy endpoint management for your devices, PCs, and other endpoints
 f1.keywords:
 - NOCSH
 author: dansimp
@@ -7,7 +7,7 @@ ms.author: dansimp
 manager: dansimp
 audience: ITPro
 ms.topic: article
-ms.service: microsoft-365-enterprise
+ms.service: o365-solutions
 ms.localizationpriority: high
 ms.collection:
 - highpri
@@ -18,14 +18,14 @@ ms.collection:
 - m365solution-scenario
 ms.custom: ''
 description: Use Microsoft Endpoint Manager para administrar sus dispositivos, equipos y otros puntos de conexión.
-ms.openlocfilehash: 70377db41b9a35dd20d217bb207299cacf441b67
-ms.sourcegitcommit: 0af064e8b6778060f1bd365378d69b16fc9949b5
+ms.openlocfilehash: 16b17ab284e40e0276b3704287d3316749f0cfc0
+ms.sourcegitcommit: fce27da5140691b013a6f7c0ea9c88b4ea4b7c10
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/15/2022
-ms.locfileid: "67731296"
+ms.lasthandoff: 09/23/2022
+ms.locfileid: "67987046"
 ---
-# <a name="step-4-deploy-endpoint-management-for-your-devices-pcs-and-other-endpoints"></a>Paso 4. Implementar la administración de puntos de conexión para sus dispositivos, PCs y otros puntos de conexión
+# <a name="step-4-deploy-endpoint-management-for-your-devices-pcs-and-other-endpoints"></a>Paso 4. Implementar la administración de puntos de conexión para dispositivos, equipos y otros puntos de conexión
 
 Con los trabajadores remotos, es necesario admitir un número creciente de dispositivos personales. La administración de puntos de conexión es un planteamiento de seguridad basado en directivas que requiere que los dispositivos cumplan determinados criterios antes de que se les conceda acceso a los recursos. Microsoft Endpoint Manager ofrece funcionalidades de administración modernas para proteger los datos en la nube y en los entornos locales. 
 

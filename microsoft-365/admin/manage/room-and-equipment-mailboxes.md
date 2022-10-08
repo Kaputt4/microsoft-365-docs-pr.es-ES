@@ -7,9 +7,10 @@ author: twernermsft
 manager: scotv
 audience: Admin
 ms.topic: article
-ms.service: o365-administration
+ms.service: microsoft-365-business
 ms.localizationpriority: high
 ms.collection:
+- scotvorg
 - M365-subscription-management
 - Adm_O365
 ms.custom:
@@ -22,22 +23,22 @@ search.appverid:
 - MOE150
 ms.assetid: 9f518a6d-1e2c-4d44-93f3-e19013a1552b
 description: 'Cree un buzón de sala o equipamiento para que todos los usuarios de su organización puedan reservarlo para reuniones o eventos con Outlook. '
-ms.openlocfilehash: 654bd8779d7d66db5324e62c1397c3251da11945
-ms.sourcegitcommit: da6b3cb3b2ccfcdcd5091efce8290b6c486547db
-ms.translationtype: HT
+ms.openlocfilehash: 505aefa5a809f3e4d4c2dfc37f68b8df844e74bb
+ms.sourcegitcommit: 0b7070ec119e00e0dafe030bbfbef0ae5c9afa19
+ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/18/2022
-ms.locfileid: "65469159"
+ms.lasthandoff: 09/29/2022
+ms.locfileid: "68166645"
 ---
 # <a name="create-microsoft-365-room-and-equipment-mailboxes"></a>Crear buzones de sala y equipamiento de Microsoft 365
 
-Si tiene una sala de conferencias, un coche de la empresa o equipamiento que todos necesitan usar, entonces necesita encontrar una manera de hacer que todos los usuarios puedan reservar esos recursos. La mejor manera de hacerlo es crear un buzón de correo de equipamiento o de sala en Microsoft 365 para cada recurso. Puede crear uno para la sala de conferencias de la primera planta, el equipamiento multimedia o un camión de mudanza.
+If you have a conference room, company car, or equipment that everyone needs to use, then you need to come up with a way to make those resources reservable to everyone. The best way to do that is to create a room or equipment mailbox in Microsoft 365 for each resource. You might create one for your first floor conference room, media equipment, or a moving truck.
   
-Una vez que cree un buzón de sala o equipamiento, todas las personas de la empresa pueden reservarlo para reuniones o eventos con Outlook. Obtenga información **sobre cómo usarlo** y **cómo configurarlo** en las dos pestañas siguientes. Aquí se muestran otras preguntas comunes sobre los buzones de sala y equipamiento.
+Once you create a room or equipment mailbox, everyone in the company can reserve it for meetings or events using Outlook. Learn **how to use it** and **how to set it up** on the next two tabs. Here are some other common questions about room and equipment mailboxes.
   
 ## <a name="use-room-and-equipment-mailboxes"></a>Usar buzones de sala y equipamiento
 
-Para usar buzones de equipamiento o de sala, abra Outlook desde su equipo o inicie sesión en Outlook en la Web. Programe una reunión nueva y agregue la sala o el equipamiento a la reunión como haría al invitar a otros empleados o clientes. Ahora ya lo ha reservado.
+To use room or equipment mailboxes, open Outlook from your computer or sign in to Outlook on the web. Schedule a new meeting and add the room or equipment to the meeting like you would when inviting other employees or customers. You've now reserved it.
   
 1. Abra **Outlook** en el equipo.
 
@@ -49,7 +50,7 @@ Para usar buzones de equipamiento o de sala, abra Outlook desde su equipo o inic
     
 3. En el campo Para, escriba el nombre de la sala de conferencias o del equipamiento que quiere reservar, además de los asistentes a los que quiere invitar.
 
-   O bien seleccione **Para** y haga doble clic en la sala de conferencias o en el equipamiento de la lista. A continuación, seleccione **Aceptar**.
+   Or, select **To** then double-click the conference room or equipment from the list. Then select **OK**.
 
    ![Reservar un buzón de sala en Outlook.](../../media/4588c806-9fb9-46c9-b2d8-34caa943e28e.png)
   
@@ -57,7 +58,7 @@ Para usar buzones de equipamiento o de sala, abra Outlook desde su equipo o inic
     
 5. Cambie el valor de la **ubicación** o déjelo como está. 
     
-6. Cambie la **Hora de inicio** y la **Hora de finalización**. O bien pulse **Todo el día**. Para que se repita la reunión o la reserva, pulse **Periodicidad** en la parte superior.
+6. Change the **Start time** and **End time**. Or, select **All day event**. To make the meeting or reservation repeat, select **Recurrence** at the top.
  
    ![Reservar una hora de reunión.](../../media/4b72a0a6-4da2-449e-909e-85ea79f78e2c.png)
   
@@ -65,18 +66,18 @@ Para usar buzones de equipamiento o de sala, abra Outlook desde su equipo o inic
     
 8. Para permitir que otras personas se unan en línea o llamen a la reunión, seleccione **Reunión de Teams**.
     
-9. Para garantizar que tanto la sala como el equipamiento y las personas que haya invitado estén disponibles, seleccione **Asistente para programación** en la parte superior. A continuación, seleccione una hora que esté disponible en el calendario.
+9. To make sure the room, equipment, and people you've invited are available, select **Scheduling Assistant** at the top. Then select an available time in the calendar.
 
    ![Comprobar si el equipamiento de la sala está disponible.](../../media/eb0097c6-4263-4b63-bfca-f7c03ad99b4f.png)
 
    > [!TIP]
-   > En el calendario de la programación, azul significa que la sala o el equipamiento están reservados u ocupados. Seleccione el área libre o en blanco del calendario. 
+   > In the scheduling calendar, blue means the room or equipment is reserved, or busy. Select the white, or free, area on the calendar. 
   
 10. Cuando finalice, haga clic en **Enviar**.
     
 ## <a name="set-up-room-and-equipment-mailboxes"></a>Administrar buzones de sala y equipamiento
 
-Para configurar un buzón de sala o equipamiento, vaya al <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">Centro de administración de Microsoft 365</a>. (Necesitará tener permiso de administrador para hacer esto). Cree el buzón y dígales a todos que pueden comenzar a reservarlo para reuniones y eventos.
+To set up a room or equipment mailbox, go to the <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">Microsoft 365 admin center</a>. (You'll need to have admin permission to do this.) Create the mailbox and let everyone know they can start reserving it for meetings and events.
   
 1. En el centro de administración, vaya a la página **Recursos** \> [Salas y equipamiento](https://go.microsoft.com/fwlink/p/?linkid=2067334).
   
@@ -90,13 +91,13 @@ Para configurar un buzón de sala o equipamiento, vaya al <a href="https://go.mi
     
    - **Nombre**: un nombre descriptivo o incluso una descripción breve.
     
-   - **Correo electrónico**: el alias de correo electrónico de la sala o del equipamiento. Esto es necesario para enviar una solicitud de reunión a la sala o al equipamiento.
+   - **Email**: the email alias of the room or equipment. This is necessary to send a meeting request to the room or equipment.
     
    - **Capacidad**: el número de personas que pueden encontrarse en la sala o usar el equipamiento a la vez.
     
    - **Ubicación**: el número de la sala o la ubicación de esta en un edificio o región.
     
-   - **Número de teléfono**: el número de la sala. Esto es diferente del número de teléfono de la reunión que se ha generado al usar Microsoft Teams.
+   - **Phone number**: the number of the room itself. This is different from the meeting phone number generated when using Microsoft Teams.
     
 4. Seleccione **Agregar**.
     
@@ -111,19 +112,19 @@ Para configurar un buzón de sala o equipamiento, vaya al <a href="https://go.mi
 
 ### <a name="how-can-you-tell-when-the-room-or-equipment-is-available"></a>¿Cómo puede saber si la sala o el equipamiento está disponible?
 
-Abra Outlook y cree una nueva reunión. Agregue la sala o el equipamiento a la reunión como si se tratara de una persona y seleccione **Asistente para programación** para ver una vista dinámica del calendario con la disponibilidad de la sala o el equipamiento. Si la franja horaria está vacía, se encuentra disponible. Si está azul, está reservada. 
+Open Outlook and create a new meeting. Add the room or equipment to the meeting as if it were a person and select **Scheduling Assistant** to see a live calendar view of the room or equipment's availability. If the hour slot is clear, it's available; if it's blue, it's reserved. 
   
 ### <a name="how-do-you-cancel-a-room-or-equipment-request"></a>¿Cómo puede cancelar una solicitud de sala o equipamiento?
 
-Abra la reunión que ha programado en Outlook y, después, quite la sala o el equipamiento de la reunión como si fuera un asistente. Esto liberará la sala para que otros puedan reservarla.
+Open the meeting you scheduled in Outlook and then remove the room or equipment from the meeting like you would an attendee. This will free up the room for others to reserve.
   
 ### <a name="does-someone-have-to-accept-or-decline-every-room-or-equipment-request"></a>¿Alguien tiene que aceptar o rechazar cada solicitud de sala o equipamiento?
 
-No, no necesita que nadie acepte o rechace las solicitudes. Puede decidir si quiere permitir que la sala o el equipamiento se puedan reservar de manera automática o si prefiere que lo administre un miembro de la empresa. 
+No, you don't need someone to accept or decline requests. You can decide whether you want to let the room or equipment be automatically booked or managed by someone in your company. 
   
 ### <a name="does-a-room-mailbox-or-equipment-mailbox-need-a-product-license"></a>¿Un buzón de sala o un buzón de correo de equipamiento necesitan una licencia de producto?
 
-No. Aunque la mayoría de las personas de la organización necesitan una licencia para usar Microsoft 365, no es necesario asignar una licencia a un buzón de sala o un buzón de equipamiento, en caso de que el buzón de recursos no necesite tener un tamaño superior a 50 GB, o, en caso de que no se necesiten algunas características (directivas de retención de seguridad y cumplimiento, o retención de Exchange Online) o, en caso de que el buzón de recursos no necesite un archivo en línea adjunto.
+No. While most people in your organization need a license to use Microsoft 365, you don't need to assign a license to a room mailbox or equipment mailbox, in case the resource mailbox doesn't need to have a size bigger than 50 GB, or, in case some features aren't needed (Retention policies from Security and Compliance, or, Hold from Exchange Online), or, in case the resource mailbox doesn't need an Online Archive attached to it.
   
 ### <a name="do-i-need-an-owner-in-charge-of-booking-the-rooms-or-equipment"></a>¿Necesito un propietario que se encargue de reservar las salas o el equipamiento?
 

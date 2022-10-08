@@ -1,5 +1,5 @@
 ---
-title: Escriba la información empresarial de Bookings
+title: Escriba la información de su empresa de Bookings
 ms.author: kwekua
 author: kwekuako
 manager: scotv
@@ -7,33 +7,35 @@ audience: Admin
 ms.topic: article
 ms.service: bookings
 ms.localizationpriority: medium
+ms.collection:
+- scotvorg
 ms.assetid: 828a17db-956a-401e-bb62-d153b6dffd53
 description: Siga estas instrucciones para crear su página Acerca de nosotros con el nombre comercial, la dirección, el número de teléfono, la dirección URL del sitio web, el logotipo y el horario comercial en Microsoft Bookings.
-ms.openlocfilehash: 1c1b50215b1e81c0bb3af936ba00e1beefa7965c
-ms.sourcegitcommit: db1e48af88995193f15bbd5962f5101a6088074b
+ms.openlocfilehash: 1aca650aa4d2c783790af3f4d2531161afb912d4
+ms.sourcegitcommit: 0b7070ec119e00e0dafe030bbfbef0ae5c9afa19
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/23/2022
-ms.locfileid: "65637767"
+ms.lasthandoff: 09/29/2022
+ms.locfileid: "68163829"
 ---
 # <a name="enter-your-business-information-in-microsoft-bookings"></a>Escriba la información empresarial en Microsoft Bookings
 
 En Microsoft Bookings, la página Información empresarial de la aplicación web contiene todos los detalles que normalmente encontraría en la página "Acerca de nosotros" de una empresa. Estos detalles incluyen un nombre, dirección, número de teléfono, dirección URL del sitio web, dirección URL de la directiva de privacidad, logotipo y horario comercial pertinentes.
 
-La información que proporcione aquí se mostrará en la página que los clientes y clientes usan para reservar citas (conocida como página de reserva) y en los mensajes y recordatorios enviados a ellos por Bookings. A continuación se muestra un ejemplo de esta información en la página de reserva.
+La información que proporcione aquí se mostrará en la página que los clientes y clientes usan para reservar citas (conocida como página de reserva) y en los mensajes y recordatorios que Bookings les envía. A continuación se muestra un ejemplo de esta información en la página de reserva.
 
    ![Ejemplo de la página Imagen de información empresarial en Microsoft Bookings.](../media/bookings-business-info-2.png)
 
 > [!NOTE]
-> Para empezar, consulte [Obtención de acceso a Microsoft Bookings](get-access.md). Para activar o desactivar Bookings, consulte [Activar o desactivar Bookings para su organización](turn-bookings-on-or-off.md).
+> Para empezar, consulte [Obtención de acceso a Microsoft Bookings](get-access.md). Para activar o desactivar Bookings, consulte [Activar o desactivar reservas para su organización](turn-bookings-on-or-off.md).
 
 ## <a name="provide-business-name-and-contact-information"></a>Proporcione el nombre comercial y la información de contacto
 
 1. En Microsoft 365, seleccione el iniciador de aplicaciones y, a continuación, seleccione **Bookings**.
 
-1. En el panel de navegación, seleccione **Su calendarioInformación** >  **de negocio** en el panel izquierdo.
+1. En el panel de navegación, seleccione Información **empresarial** del **calendario** >  en el panel izquierdo.
 
-1. En la sección **Detalles básicos**, escriba el nombre de su empresa, la dirección y el número de teléfono que desea usar para el calendario de Bookings.
+1. En la sección **Detalles básicos** , escriba el nombre de su empresa, la dirección y el número de teléfono que desea usar para el calendario de Bookings.
 
 :::image type="content" source="../media/bookings-business-basic-details.png" alt-text="Captura de pantalla: página para escribir la información empresarial básica":::
 
@@ -43,19 +45,19 @@ En el campo **Url del sitio web** , escriba la dirección URL de la página prin
 
 Escriba la **directiva de privacidad** y **los términos & las** direcciones URL de condiciones.
 
-1. En la sección **Logotipo de empresa**, si aún no has cargado el logotipo de empresa en la aplicación Bookings, agrega tu logotipo de empresa.
+1. En la sección **Logotipo de empresa** , si aún no has cargado el logotipo de tu empresa en la aplicación Bookings, agrega el logotipo de tu empresa.
 
 1. En la sección **Set your business hours (Establecer el horario comercial** ), establezca el horario comercial en el horario operativo. Estas son las horas a las que están restringidas todas las reservas. Se pueden establecer restricciones de tiempo adicionales de cuándo se pueden reservar citas para cada servicio y para cada miembro del personal en las páginas **Servicios** y **Personal** .
 
 En la página Información empresarial, en Horas laborables, use las listas desplegables para seleccionar las horas de inicio y finalización de cada día. Haga clic **+** para agregar selectores de inicio y de hora de finalización.
 
-De forma predeterminada, el horario comercial de la aplicación Bookings se establece en 8 a.m. a las 5 p.m., de lunes a viernes. Los tiempos se proporcionan en incrementos de 15 minutos. La aplicación Bookings usa el reloj de 12 horas.
+De forma predeterminada, el horario laboral de la aplicación Bookings se establece en 8 a.m. a las 5 p.m., de lunes a viernes. Los tiempos se proporcionan en incrementos de 15 minutos. La aplicación Bookings usa el reloj de 12 horas.
 
-1. Haga clic en **Guardar**.
+1. Seleccione **Guardar**.
 
 ### <a name="how-to-set-hours-for-a-split-shift"></a>Cómo establecer horas para un turno dividido
 
-Es posible que deba bloquear una parte de cada día o semana para que el personal se reúna, actualice el inventario o se ocupe de otros detalles de ritmo de negocio. La aplicación Bookings le permite limitar las citas de cliente a las ranuras de tiempo especificadas.
+Es posible que deba bloquear una parte de cada día o semana para que el personal se reúna, actualice el inventario o se ocupe de otros detalles de ritmo de negocio. La aplicación Bookings permite limitar las citas de los clientes a las franjas horarias especificadas.
 
 Por ejemplo, tiene reuniones de personal todos los jueves de 1:00 a 2:30 y quiere bloquear ese tiempo para que todos los miembros del personal puedan asistir. Para hacerlo:
 
@@ -73,13 +75,13 @@ Por ejemplo, tiene reuniones de personal todos los jueves de 1:00 a 2:30 y quier
 
     Cuando un cliente vaya a su página de reservas, verá que su negocio está cerrado de 1 a 2:30 los jueves.
 
-## <a name="upload-your-logo"></a>Upload el logotipo
+## <a name="upload-your-logo"></a>Carga del logotipo
 
 Si aún no has cargado el logotipo de tu empresa en la aplicación Bookings, puedes hacerlo desde la página Información empresarial.
 
-1. En la página Información empresarial, en Upload logotipo, seleccione **Cambiar**.
+1. En la página Información empresarial, en Cargar logotipo, seleccione **Cambiar**.
 
-1. Seleccione **Upload foto**.
+1. Seleccione **Cargar foto**.
 
    ![Imagen del botón cargar foto.](../media/bookings-upload-photo.png)
 

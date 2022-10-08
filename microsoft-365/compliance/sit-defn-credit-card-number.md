@@ -14,19 +14,22 @@ f1_keywords:
 ms.service: O365-seccomp
 ms.localizationpriority: medium
 ms.collection:
-- M365-security-compliance
+- tier3
+- purview-compliance
 hideEdit: true
 feedback_system: None
 recommendations: false
 description: Definición de entidad de tipo de información confidencial de número de tarjeta de crédito.
-ms.openlocfilehash: 0d75c0af6c67c1d617db9f7f28fbc63c27e4d05a
-ms.sourcegitcommit: 5aed330d8af523f0dffe5e392f1c79f047e38172
+ms.openlocfilehash: d86612e539055bb33806c7ec8bdf893755ce4877
+ms.sourcegitcommit: fa570d90b00ed1bb40e1ca27b11c66a84c4204e9
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/21/2022
-ms.locfileid: "66999467"
+ms.lasthandoff: 10/05/2022
+ms.locfileid: "68476053"
 ---
 # <a name="credit-card-number"></a>Número de tarjeta de crédito
+
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
 
 ## <a name="format"></a>Formato
 
@@ -34,7 +37,7 @@ De 14 a 19 dígitos con formato o sin formato (ddddddddd) y que deben superar la
 
 ## <a name="pattern"></a>Patrón
 
-Detecta tarjetas de todas las principales marcas de todo el mundo, incluyendo Visa, MasterCard, Discover Card, JCB, American Express, tarjetas de regalo, tarjetas de comedor, Rupay y China UnionPay.
+Detecta tarjetas de todas las marcas principales, incluyendo Visa, MasterCard, Discover Card, JCB, American Express, tarjetas de regalo, tarjetas de comedor, Rupay y China UnionPay.
 
 ## <a name="checksum"></a>Suma de comprobación
 
@@ -48,7 +51,7 @@ Una política de DLP tiene una gran confianza en que ha detectado este tipo de i
 - Se cumple una de las condiciones siguientes:
   - Se encuentra una palabra clave de `Keyword_cc_verification`.
   - Se encuentra una palabra clave de `Keyword_cc_name`.
-  - La función `Func_expiration_date` busca una fecha en el formato de fecha correcto.
+  - La función `Func_expiration_date` encuentra una fecha en el formato de fecha correcto.
 - Se supera la suma de comprobación.
 
 Una directiva DLP tiene poca confianza en que se detecta este tipo de información confidencial si, dentro de una proximidad de 300 caracteres:
@@ -79,7 +82,7 @@ Una directiva DLP tiene poca confianza en que se detecta este tipo de informaci�
 
 - card verification
 - card identification number
-- Cvn
+- cvn
 - cid
 - cvc2
 - cvv2
@@ -101,21 +104,21 @@ Una directiva DLP tiene poca confianza en que se detecta este tipo de informaci�
 - sicherheitsnummer
 - verfalldatum
 - codice di verifica
-- Bacalao. Sicurezza
+- cod. sicurezza
 - cod sicurezza
 - n autorizzazione
 - código
 - codigo
-- Bacalao. seg
+- cod. seg
 - cod seg
 - código de segurança
 - codigo de seguranca
 - codigo de segurança
 - código de seguranca
-- cód. Segurança
-- Bacalao. Seguranca
-- Bacalao. Segurança
-- cód. Seguranca
+- cód. segurança
+- cod. seguranca
+- cod. segurança
+- cód. seguranca
 - cód segurança
 - cod seguranca
 - cod segurança
@@ -152,30 +155,30 @@ Una directiva DLP tiene poca confianza en que se detecta este tipo de informaci�
 
 ### <a name="keyword_cc_name"></a>Keyword_cc_name
 
-- Amex
+- amex
 - american express
 - americanexpress
 - americano espresso
 - Visa
-- Mastercard
+- mastercard
 - master card
-- Mc
-- Mastercard
+- mc
+- mastercards
 - master cards
 - diner's Club
 - diners club
 - dinersclub
-- Descubrir
+- detectar
 - discover card
-- discovercard
+- detectar tarjeta
 - discover cards
-- JCB
+- Jcb
 - Brandsmart
 - japanese card bureau
 - carte blanche
 - carteblanche
 - credit card
-- Cc #
+- cc#
 - cc#:
 
 - expiration date
@@ -191,22 +194,22 @@ Una directiva DLP tiene poca confianza en que se detecta este tipo de informaci�
 - cardnumber
 - cardnumbers
 - card numbers
-- Creditcard
+- creditcard
 - credit cards
-- tarjetas de crédito
-- Ccn
+- creditcards
+- número de tarjeta de crédito
 - card holder
-- Titular
+- cardholder
 - card holders
-- Titulares
+- cardholders
 - check card
 - checkcard
 - check cards
-- tarjetas de verificación
+- checkcards
 - debit card
-- tarjeta de débito
+- debitcard
 - debit cards
-- tarjetas de débito
+- debitcards
 - atm card
 - atmcard
 - atm cards
@@ -234,7 +237,7 @@ Una directiva DLP tiene poca confianza en que se detecta este tipo de informaci�
 - nº de la carte
 - nº de carte
 - kreditkarte
-- Karte
+- karte
 - karteninhaber
 - karteninhabers
 - kreditkarteninhaber
@@ -249,7 +252,7 @@ Una directiva DLP tiene poca confianza en que se detecta este tipo de informaci�
 - carta credito
 - N. carta
 - n carta
-- Nr. carta
+- N.º carta
 - nr carta
 - numero carta
 - numero della carta
@@ -265,7 +268,7 @@ Una directiva DLP tiene poca confianza en que se detecta este tipo de informaci�
 - tarjeta débito
 - tarjeta de débito
 - nº de tarjeta
-- No. de tarjeta
+- no. de tarjeta
 - no de tarjeta
 - numero de tarjeta
 - número de tarjeta
@@ -294,8 +297,8 @@ Una directiva DLP tiene poca confianza en que se detecta este tipo de informaci�
 - nº. do cartão
 - no do cartão
 - no do cartao
-- No. do cartão
-- No. do cartao
+- no. do cartão
+- no. do cartao
 - Rupay
 - pago del sindicato
 - Unionpay

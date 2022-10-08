@@ -10,18 +10,20 @@ audience: Admin
 ms.topic: conceptual
 ms.service: O365-seccomp
 ms.localizationpriority: high
-ms.collection: M365-security-compliance
+ms.collection:
+- purview-compliance
+- tier1
 search.appverid:
 - MOE150
 - MET150
 description: Información para que los administradores de TI administren las etiquetas de confidencialidad en las aplicaciones de Office para escritorio, móvil y web.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 2062f1d03d23c3a2de029c862a332a089f2dabcc
-ms.sourcegitcommit: 95ac076310ab9006ed92c69938f7ae771cd10826
+ms.openlocfilehash: 06c3ba12cbea34b4b81acf84b579c56cfc50cd22
+ms.sourcegitcommit: 2ff545246fec060ea7829da5afbc1cdc698d51ab
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/20/2022
-ms.locfileid: "67851620"
+ms.lasthandoff: 10/04/2022
+ms.locfileid: "68362868"
 ---
 # <a name="manage-sensitivity-labels-in-office-apps"></a>Administrar etiquetas de confidencialidad en las aplicaciones de Office
 
@@ -29,7 +31,9 @@ ms.locfileid: "67851620"
 
 Cuando haya [publicado](create-sensitivity-labels.md#publish-sensitivity-labels-by-creating-a-label-policy) etiquetas de confidencialidad desde el portal de cumplimiento de Microsoft Purview, empezarán a aparecer en las aplicaciones de Office para que los usuarios clasifiquen y protejan los datos a medida que se creen o editen.
 
-Use la información de este artículo como ayuda para administrar correctamente las etiquetas de confidencialidad en las aplicaciones de Office. Por ejemplo, identifique las versiones mínimas de las aplicaciones que necesitará para características específicas de etiquetado integrado, cualquier información de configuración adicional para estas características y, además, comprenda las interacciones con el cliente de etiquetado unificado de Azure Information Protection y otras aplicaciones y servicios.
+Use the information in this article to help you successfully manage sensitivity labels in Office apps. For example, identify the minimum versions of apps you need for features that are specific to built-in labeling, any additional configuration information for these features, and understand interactions with the Azure Information Protection unified labeling client and other apps and services.
+
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
 
 ## <a name="labeling-client-for-desktop-apps"></a>Cliente de etiquetado para aplicaciones de escritorio
 
@@ -57,7 +61,7 @@ Office para iOS y Office para Android: Las etiquetas de confidencialidad están 
 Los números indicados son las versiones mínimas de la aplicación Office requeridas para cada función. 
 
 > [!NOTE]
-> Para Windows y el Canal empresarial semestral, es posible que aún no se hayan publicado los números de versión mínimos admitidos. [Más información](/officeupdates/update-history-microsoft365-apps-by-date#supported-versions)
+> For Windows and the Semi-Annual Enterprise Channel, the minimum supported version numbers might not yet be released. [Learn more](/officeupdates/update-history-microsoft365-apps-by-date#supported-versions)
  
 |Funcionalidad |Windows |Mac |iOS |Android |Web |
 |-----------|-------:|----|----|--------|----|
@@ -71,7 +75,7 @@ Los números indicados son las versiones mínimas de la aplicación Office reque
 |[Marcados dinámicos con variables](#dynamic-markings-with-variables).                                              | Canal actual: 2010+ <br /><br> Canal mensual para empresas: 2010+ <br /><br> Canal semestral para empresas: 2102+ | 16.42+     | 2.42+ | 16.0.13328+ | [Sí - participar](sensitivity-labels-sharepoint-onedrive-files.md) |
 |[Asignar permisos ahora](encryption-sensitivity-labels.md#assign-permissions-now)                                 | Canal actual: 1910+ <br /><br> Canal mensual para empresas: 1910+ <br /><br> Canal semestral para empresas: 2002+ | 16.21+     | 2.21+ | 16.0.11231+ | [Sí - participar](sensitivity-labels-sharepoint-onedrive-files.md) |
 |[Permitir que los usuarios asignen permisos: <br /> - Solicitar permisos personalizados a los usuarios (usuarios y grupos)](encryption-sensitivity-labels.md#let-users-assign-permissions)                     |Canal actual: 2004+ <br /><br> Canal mensual para empresas: 2004+ <br /><br> Canal semestral para empresas: 2008+ | 16.35+   | En revisión   | En revisión         | En revisión                                                        |
-|[Permitir que los usuarios asignen permisos: <br /> - Solicitar permisos personalizados a los usuarios (usuarios, grupos y organizaciones)](encryption-sensitivity-labels.md#let-users-assign-permissions)                     |Versión preliminar: implementando en [Canal Beta](https://office.com/insider)  | En revisión   | En revisión   | En revisión         | En revisión                                                        |
+|[Permitir que los usuarios asignen permisos: <br /> - Solicitar permisos personalizados a los usuarios (usuarios, grupos y organizaciones)](encryption-sensitivity-labels.md#support-for-organization-wide-custom-permissions)                     |Versión preliminar: Implementando en [Canal actual (versión preliminar)](https://office.com/insider)  | En revisión   | En revisión   | En revisión         | En revisión                                                        |
 |[Auditoría de la actividad de los usuarios relacionada con las etiquetas](#auditing-labeling-activities)                      | Canal actual: 2011+ <br /><br> Canal mensual para empresas: 2011+ <br /><br> Canal semestral para empresas: 2108+ | 16.43+ | 2.46+ | 16.0.13628+ | Sí |
 |[Requerir a los usuarios que apliquen una etiqueta a sus correos electrónicos y documentos ](#require-users-to-apply-a-label-to-their-email-and-documents)   | Canal actual: 2101+ <br /><br> Canal mensual para empresas: 2101+ <br /><br> Canal semestral para empresas: 2108+ | 16.45+         | 2.47+ | 16.0.13628+ | [Sí - participar](sensitivity-labels-sharepoint-onedrive-files.md)                                            
 |[Aplicar una etiqueta de confidencialidad automáticamente al contenido](apply-sensitivity-label-automatically.md) <br /> - Uso de tipos de información confidencial                    | Canal actual: 2009+ <br /><br> Canal mensual para empresas: 2009+ <br /><br> Canal semestral para empresas: 2102+ | 16.44+ | En revisión | En revisión | [Sí - participar](sensitivity-labels-sharepoint-onedrive-files.md) |
@@ -85,7 +89,7 @@ Los números indicados son las versiones mínimas de la aplicación Office reque
 Los números indicados son las versiones mínimas de la aplicación Office requeridas para cada función. 
 
 > [!NOTE]
-> Para Windows y el Canal empresarial semestral, es posible que aún no se hayan publicado los números de versión mínimos admitidos. [Más información](/officeupdates/update-history-microsoft365-apps-by-date#supported-versions)
+> For Windows and the Semi-Annual Enterprise Channel, the minimum supported version numbers might not yet be released. [Learn more](/officeupdates/update-history-microsoft365-apps-by-date#supported-versions)
 
 |Funcionalidad |Outlook para Windows |Outlook para Mac |Outlook en iOS |Outlook en Android |Outlook en la Web |
 |-----------|-------------------:|----------------|---------------|-------------------|-------------------|
@@ -105,7 +109,7 @@ Los números indicados son las versiones mínimas de la aplicación Office reque
 |[Aplicar una etiqueta de confidencialidad automáticamente al contenido](apply-sensitivity-label-automatically.md) <br /> - Uso de clasificadores capacitados                    | Canal actual: 2105+ <br /><br> Canal mensual para empresas: 2105+ <br /><br> Canal semestral para empresas: 2108+ | 16.49+ | En revisión           | En revisión               | Sí |
 |[Diferentes opciones de configuración para etiquetas predeterminadas y etiquetas obligatorias](#outlook-specific-options-for-default-label-and-mandatory-labeling)                    | Canal actual: 2105+ <br /><br> Canal mensual para empresas: 2105+ <br /><br> Canal semestral para empresas: 2108+ | 16.43+ <sup>\*</sup>                   | 4.2111+           | 4.2111+               | Sí |
 |[Compatibilidad con PDF](#pdf-support) | Versión preliminar: implementando en [Canal Beta](https://office.com/insider)|  En revisión | En revisión | En revisión | En revisión |
-|[Aplicar protección S/MIME](#configure-a-label-to-apply-smime-protection-in-outlook) | Versión preliminar: implementando en [Canal Beta](https://office.com/insider) | Implementando: 16.61+ <sup>\*</sup>                   | Implementación: 4.2226+ | Implementación: 4.2203+ | En revisión |
+|[Aplicar protección S/MIME](#configure-a-label-to-apply-smime-protection-in-outlook) | Versión preliminar: implementando en [Canal Beta](https://office.com/insider) | 16.61+ <sup>\*</sup>                   | 4.2226+ | 4.2203+ | En revisión |
 |[Barra de confidencialidad](#sensitivity-bar) y [color de la etiqueta de presentación](#label-colors) | En revisión |  En revisión | En revisión | En revisión | En revisión |
 
 **Notas al pie:**
@@ -141,7 +145,7 @@ Dado que esta configuración es específica de las aplicaciones de Windows Offi
 
 ## <a name="office-file-types-supported"></a>Tipos de archivos compatibles con Office
 
-Las aplicaciones de Office que tienen etiquetado integrado para archivos de Word, Excel y PowerPoint admiten el formato Open XML (como .docx y .xlsx), pero no el formato de Microsoft Office 97-2003 (como .doc y .xls), formato de documento abierto (como .odt y .ods) u otros formatos. Cuando no se admite un tipo de archivo para el etiquetado integrado, el botón de **confidencialidad** no está disponible en la aplicación de Office.
+Office apps that have built-in labeling for Word, Excel, and PowerPoint files support the Open XML format (such as .docx and .xlsx) but not the Microsoft Office 97-2003 format (such as .doc and .xls), Open Document Format (such as .odt and .ods), or other formats. When a file type is not supported for built-in labeling, the **Sensitivity** button is not available in the Office app.
 
 El cliente de etiquetado unificado de Azure Information Protection es compatible tanto con el formato Open XML como con el formato de Microsoft Office 97-2003. Para obtener más información, consulte [Tipos de archivos compatibles con el cliente de etiquetado unificado de Azure Information Protection ](/azure/information-protection/rms-client/clientv2-admin-guide-file-types)en la guía de administración de dicho cliente.
 
@@ -160,7 +164,7 @@ Las etiquetas de confidencialidad que se configuran para aplicar el cifrado elim
 - Para un documento:  **Archivo** > **Información** > **Proteger documento** > **Restringir el acceso**
 - para un correo electrónico: en la pestaña **Opciones** > **Cifrar** 
   
-Cuando los usuarios etiquetan inicialmente un documento o correo electrónico, pueden anular los ajustes de configuración de la etiqueta con sus propios ajustes de cifrado. Por ejemplo:
+Cuando los usuarios etiquetan inicialmente un documento o correo electrónico, pueden invalidar la configuración de la etiqueta con su propia configuración de cifrado. Por ejemplo:
 
 - Un usuario aplica la etiqueta **Confidencial/todos los empleados** a un documento y esta etiqueta está configurada para aplicar la configuración de cifrado a todos los usuarios de la organización. A continuación, este usuario configura manualmente los ajustes del IRM para restringir el acceso a un usuario ajeno a su organización. El resultado final es un documento etiquetado como **Confidencial/todos los empleados** y encriptado, pero los usuarios de su organización no pueden abrirlo como se esperaba.
 
@@ -172,11 +176,11 @@ Cuando los usuarios etiquetan inicialmente un documento o correo electrónico, p
 
 Si el documento o el correo electrónico ya está etiquetado, un usuario puede realizar cualquiera de estas acciones si el contenido no está ya encriptado, o tiene el [derecho de uso ](/azure/information-protection/configure-usage-rights#usage-rights-and-descriptions) Exportar o Control total. 
 
-Para una experiencia de etiquetado más uniforme con los informes significativos, proporcione etiquetas y orientación adecuadas para que los usuarios apliquen solo etiquetas para proteger los documentos y correos electrónicos. Por ejemplo:
+For a more consistent label experience with meaningful reporting, provide appropriate labels and guidance for users to apply only labels to protect documents and emails. For example:
 
 - Para los casos excepcionales en los que los usuarios deben asignar sus propios permisos, proporcione etiquetas que [permitan a los usuarios asignar sus propios permisos](encryption-sensitivity-labels.md#let-users-assign-permissions). 
 
-- En lugar de que los usuarios eliminen manualmente el cifrado después de seleccionar una etiqueta que aplique cifrado, proporcione una alternativa de subetiqueta cuando los usuarios necesiten una etiqueta con la misma clasificación, pero sin cifrado. Como:
+- Instead of users manually removing encryption after selecting a label that applies encryption, provide a sublabel alternative when users need a label with the same classification, but no encryption. Such as:
     - **Confidencial/todos los empleados**
     - **Confidencial/cualquiera (sin cifrado)**
 
@@ -233,7 +237,7 @@ Cuando se etiqueta un documento o un correo electrónico, la etiqueta se almacen
 
 Esto significa que si comparte documentos con otra organización que utiliza nombres de etiquetas diferentes, cada organización puede aplicar y ver su propia etiqueta aplicada al documento. Sin embargo, los siguientes elementos de una etiqueta aplicada son visibles para los usuarios ajenos a su organización:
 
-- Marcas de contenido. Cuando una etiqueta aplica un encabezado, pie de página o marca de agua, estos se agregan directamente al contenido y permanecen visibles hasta que alguien los modifica o los elimina.
+- Content markings. When a label applies a header, footer, or watermark, these are added directly to the content and remain visible until somebody modifies or deletes them.
 
 - El nombre y la descripción de la plantilla de protección subyacente de una etiqueta que aplicó el cifrado. Esta información se muestra en una barra de mensajes en la parte superior del documento, para proporcionar información sobre quién está autorizado a abrir el documento, y sus derechos de uso para ese documento.
 
@@ -279,7 +283,7 @@ Para estos escenarios, utilizando sus aplicaciones de Office, un usuario con eti
 > [!IMPORTANT]
 > Si sus aplicaciones de Office no admiten esta capacidad, aplican las marcas como el texto original especificado en la configuración de la etiqueta, en lugar de resolver las variables.
 > 
-> El cliente de etiquetado unificado Azure Information Protection admite marcas dinámicas. Para el etiquetado integrado en Office, consulte las tablas de la sección [funcionalidades](#support-for-sensitivity-label-capabilities-in-apps) de esta página para ver las versiones mínimas admitidas.
+> The Azure Information Protection unified labeling client supports dynamic markings. For labeling built in to Office, see the tables in the [capabilities](#support-for-sensitivity-label-capabilities-in-apps) section on this page for minimum versions supported.
 
 Cuando se configura una etiqueta de confidencialidad para las marcas de contenido, se pueden utilizar las siguientes variables en la cadena de texto para su cabecera, pie de página o marca de agua:
 
@@ -331,7 +335,7 @@ Ejemplos:
 
 > [!IMPORTANT]
 > 
-> El [cliente de etiquetado unificado de Azure Information Protection](/azure/information-protection/rms-client/install-unifiedlabelingclient-app)es compatible con el etiquetado obligatorio. Para el etiquetado incorporado a las aplicaciones de Office, consulte las tablas de la sección de [funciones](#support-for-sensitivity-label-capabilities-in-apps) de esta página para ver las versiones mínimas.
+> The [Azure Information Protection unified labeling client](/azure/information-protection/rms-client/install-unifiedlabelingclient-app) supports this configuration that's also known as mandatory labeling. For labeling built in to Office apps, see the tables in the [capabilities](#support-for-sensitivity-label-capabilities-in-apps) section on this page for minimum versions.
 >
 > Para usar el etiquetado obligatorio para documentos pero no para correos electrónicos, consulte las instrucciones en la siguiente sección que explica cómo configurar las opciones específicas de Outlook.
 > 
@@ -366,7 +370,7 @@ Para obtener orientación sobre cuándo utilizar esta configuración, consulte l
 
 ## <a name="outlook-specific-options-for-default-label-and-mandatory-labeling"></a>Opciones específicas de Outlook para etiquetas predeterminadas y etiquetas obligatorias
 
-Para el etiquetado integrado, identifique las versiones mínimas de Outlook que admiten estas características mediante la tabla de [ capacidades para Outlook](#sensitivity-label-capabilities-in-outlook) en esta página, y la fila **Configuración diferente para la etiqueta predeterminada y el etiquetado obligatorio**. Todas las versiones de Azure Information Protection del cliente de etiquetado unificado admiten estas opciones específicas de Outlook.
+For built-in labeling, identify the minimum versions of Outlook that support these features by using the [capabilities table for Outlook](#sensitivity-label-capabilities-in-outlook) on this page, and the row **Different settings for default label and mandatory labeling**. All versions of the Azure Information Protection unified labeling client support these Outlook-specific options.
 
 Cuando la aplicación de Outlook sea compatible con una configuración de etiqueta predeterminada diferente a la configuración de etiqueta predeterminada para documentos:
 
@@ -388,9 +392,9 @@ Cuando la aplicación de Outlook no admita desactivar la etiqueta obligatoria: s
 ## <a name="configure-a-label-to-apply-smime-protection-in-outlook"></a>Configurar una etiqueta para aplicar la protección S/MIME en Outlook
 
 > [!NOTE]
-> Esta funcionalidad se está implementando actualmente para el etiquetado integrado. Identifique las versiones mínimas de Outlook que admiten esta característica mediante la [tabla de capacidades de Outlook](#sensitivity-label-capabilities-in-outlook) en esta página y la fila **Aplicar protección S/MIME**.
+> Esta funcionalidad se está implementando actualmente para el etiquetado integrado y en varias fases de lanzamiento en todas las plataformas. Identifique las versiones mínimas de Outlook que admiten esta característica mediante la [tabla de capacidades de Outlook](#sensitivity-label-capabilities-in-outlook) en esta página y la fila **Aplicar protección S/MIME**.
 > 
-> Si configura una etiqueta para aplicar la protección S/MIME, pero la aplicación de Outlook aún no la admite, la etiqueta se sigue mostrando en Outlook y se puede aplicar, pero se omite la configuración de S/MIME. No podrá seleccionar esta etiqueta para las directivas de etiquetado automático de Exchange.
+> Si configura una etiqueta para aplicar la protección S/MIME, pero Outlook en Windows aún no la admite, la etiqueta todavía se muestra y se puede aplicar, pero se omite la configuración de S/MIME. No podrá seleccionar esta etiqueta para las directivas de etiquetado automático de Exchange.
 
 Esta configuración no está disponible en el portal de cumplimiento Microsoft Purview. Debe usar la configuración avanzada de PowerShell con el cmd [Set-Label](/powershell/module/exchange/set-label) o [New-Label](/powershell/module/exchange/new-label) después de [conectarse a Office 365 Centro de seguridad y cumplimiento PowerShell](/powershell/exchange/office-365-scc/connect-to-scc-powershell/connect-to-scc-powershell).
 
@@ -466,7 +470,7 @@ Como parte de esta alta visibilidad, estas etiquetas también admiten colores. P
 > [!IMPORTANT]
 > Si las aplicaciones de etiquetado no admiten esta funcionalidad, no muestran los colores de etiqueta configurados.
 > 
-> El cliente de etiquetado unificado de Azure Information Protection admite colores de etiqueta. Para el etiquetado integrado en Office, los colores de etiquetas se admiten actualmente en versión preliminar para Word, Excel y PowerPoint en Windows y macOS, pero no Outlook ni Office para la Web. Para obtener más información, consulte las tablas de la sección [funcionalidades](#support-for-sensitivity-label-capabilities-in-apps) de esta página.
+> El cliente de etiquetado unificado de Azure Information Protection admite colores de etiqueta. Para el etiquetado integrado en Office, los colores de etiqueta se admiten actualmente en versión preliminar para Word, Excel y PowerPoint en Windows, pero aún no para Outlook, macOS o Office para la Web. Para obtener más información, consulte las tablas de la sección [funcionalidades](#support-for-sensitivity-label-capabilities-in-apps) de esta página.
 
 Las etiquetas recién creadas no tienen un color de forma predeterminada. Si las etiquetas se [migraron desde Azure Information Protection](/azure/information-protection/configure-policy-migrate-labels) o configuró los colores de etiqueta para azure Information Protection cliente de etiquetado unificado, estos colores de etiqueta ahora se muestran en las aplicaciones que las admiten.
 
@@ -502,7 +506,7 @@ Para obtener información sobre los eventos de auditoría generados por las acti
 
 Esta información de auditoría se representa visualmente en el [explorador de contenido](data-classification-content-explorer.md) y en el [explorador de actividades](data-classification-activity-explorer.md) para ayudarle a comprender cómo se usan las etiquetas de confidencialidad y dónde se encuentra el contenido etiquetado. 
 
-También puede crear informes personalizados con su elección de administración de eventos e información de seguridad (SIEM) al [exportar y configurar los registros de auditoría](export-view-audit-log-records.md). Para obtener soluciones de creación de informes a gran escala, consulte la [referencia de la API de Actividad de administración de Office 365](/office/office-365-management-api/office-365-management-activity-api-reference).
+You can also create custom reports with your choice of security information and event management (SIEM) software when you [export and configure the audit log records](export-view-audit-log-records.md). For larger-scale reporting solutions, see the [Office 365 Management Activity API reference](/office/office-365-management-api/office-365-management-activity-api-reference).
 
 > [!TIP]
 > Para ayudar a crear informes personalizados, consulte las siguientes entradas de blog:

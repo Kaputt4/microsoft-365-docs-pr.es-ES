@@ -14,19 +14,22 @@ f1_keywords:
 ms.service: O365-seccomp
 ms.localizationpriority: medium
 ms.collection:
-- M365-security-compliance
+- tier3
+- purview-compliance
 hideEdit: true
 feedback_system: None
 recommendations: false
 description: Definición de entidad de tipo de información confidencial de número de identificación personal (OIB) de Croacia.
-ms.openlocfilehash: b8f2dda49c515c4c6f73b60762d7848f1a76be20
-ms.sourcegitcommit: 5aed330d8af523f0dffe5e392f1c79f047e38172
+ms.openlocfilehash: 683ee32f3e12255583958766e1d94efd6eeedfb7
+ms.sourcegitcommit: 2ff545246fec060ea7829da5afbc1cdc698d51ab
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/21/2022
-ms.locfileid: "66951215"
+ms.lasthandoff: 10/04/2022
+ms.locfileid: "68362978"
 ---
-# <a name="croatia-personal-identification-oib-number"></a>Número de identificación personal (OIB) de Croacia
+# <a name="croatia-personal-identification-oib-number"></a>Número del documento de identidad de Croacia (OIB)
+
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
 
 ## <a name="format"></a>Formato
 
@@ -45,15 +48,15 @@ Sí
 
 ## <a name="definition"></a>Definición
 
-Una directiva DLP tiene una gran confianza en que se detecta este tipo de información confidencial si, dentro de una proximidad de 300 caracteres:
+Una política de DLP tiene una gran confianza en que ha detectado este tipo de información confidencial si, dentro de una proximidad de 300 caracteres:
 
-- La función `Func_croatia_oib_number` busca contenido que coincida con el patrón.
-- Se encuentra una palabra clave de `Keywords_croatia_eu_tax_file_number` .
+- La función `Func_croatia_oib_number` encuentra contenido que coincide con el patrón.
+- Se encuentra una palabra clave de `Keywords_croatia_eu_tax_file_number`.
 - Se supera la suma de comprobación.
 
-Una directiva DLP tiene confianza media en que se detecta este tipo de información confidencial si, dentro de una proximidad de 300 caracteres:
+Una política de DLP tiene confianza media en que ha detectado este tipo de información confidencial si, dentro de una proximidad de 300 caracteres:
 
-- La función `Func_croatia_oib_number` busca contenido que coincida con el patrón.
+- La función `Func_croatia_oib_number` encuentra contenido que coincide con el patrón.
 - Se supera la suma de comprobación.
 
 ```xml
@@ -86,18 +89,18 @@ Una directiva DLP tiene confianza media en que se detecta este tipo de informaci
 - porezni broj
 - porezni identifikacijski broj
 - tax id
-- identificación fiscal no
+- núm. identificación fiscal
 - número de identificación fiscal
-- impuestos no #
-- impuestos no
-- número de impuestos
+- n.º de id. fiscal#
+- n.º fiscal
+- número de id. fiscal
 - número de registro fiscal
-- taxid #
-- taxidno #
-- taxidnumber #
-- taxno #
-- taxnumber #
-- taxnumber
-- tin id
-- tin no
-- Lata #
+- Id.fiscal#
+- númidfiscal#
+- númeroidentificaciónfiscal#
+- núm.fiscal#
+- núm.id.fiscal#
+- núm.id.fisca
+- id. tributaria
+- n.º de id. tributario
+- Número de identificación tributaria

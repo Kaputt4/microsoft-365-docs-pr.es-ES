@@ -14,19 +14,22 @@ f1_keywords:
 ms.service: O365-seccomp
 ms.localizationpriority: medium
 ms.collection:
-- M365-security-compliance
+- tier3
+- purview-compliance
 hideEdit: true
 feedback_system: None
 recommendations: false
 description: Azure Batch definición de entidad de tipo de información confidencial de clave de acceso compartido.
-ms.openlocfilehash: 871ded96b900f8678b18daac1ca7c25cc85b8afa
-ms.sourcegitcommit: 5aed330d8af523f0dffe5e392f1c79f047e38172
+ms.openlocfilehash: 99011f6303947de601bd7252b5ce360822c22650
+ms.sourcegitcommit: fa570d90b00ed1bb40e1ca27b11c66a84c4204e9
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/21/2022
-ms.locfileid: "66999482"
+ms.lasthandoff: 10/05/2022
+ms.locfileid: "68476295"
 ---
 # <a name="azure-batch-shared-access-key-preview"></a>Azure Batch clave de acceso compartido (versión preliminar)
+
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
 
 ## <a name="format"></a>Formato
 
@@ -55,8 +58,8 @@ Esta SIT está diseñada para coincidir con la información de seguridad que se 
 
 Usa varios recursos principales:
 
-- Patrones de clave simétrica de 256 bits codificada en Base64.
-- Patrones de CredentialName, CredentialFeatures, AccountIdentityName, AccountIdentityValue, ResourceType, ResourceName, Id.
+- Patrones de clave simétrica codificada en Base64 de 256 bits.
+- Patrones de CredentialName, CredentialFeatures, AccountIdentityName, AccountIdentityValue, ResourceType, ResourceName, ID.
 - Patrones de valores ficticios, censuras y marcadores de posición.
 - Diccionario de vocabulario.
 

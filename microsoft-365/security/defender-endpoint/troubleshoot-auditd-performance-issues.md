@@ -13,17 +13,17 @@ ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection:
-- m365-security-compliance
-- m365-initiative-defender-endpoint
+- m365-security
+- tier3
 ms.topic: conceptual
 ms.subservice: mde
 search.appverid: met150
-ms.openlocfilehash: 03548e71f73259f241b77656e94958d22266538a
-ms.sourcegitcommit: 9b133379196da2b3a4bb311b07ff274f43780f68
+ms.openlocfilehash: 7d5056470331bc52318ca4a5e433edbe37cabf03
+ms.sourcegitcommit: 0380a7cd5adb710b80a0ed6fcd349199f1571080
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/14/2022
-ms.locfileid: "67691549"
+ms.lasthandoff: 10/03/2022
+ms.locfileid: "68337318"
 ---
 # <a name="troubleshoot-auditd-performance-issues-with-microsoft-defender-for-endpoint-on-linux"></a>Solución de problemas de rendimiento de AuditD con Microsoft Defender para punto de conexión en Linux 
 
@@ -54,10 +54,14 @@ Para solucionar estos problemas, empiece por [recopilar registros de MDEClientAn
 > [!NOTE]
 > Como procedimiento recomendado general, se recomienda actualizar el [agente de Microsoft Defender para punto de conexión a la versión más reciente disponible](linux-whatsnew.md) y confirmar que el problema persiste antes de investigar más.
 
+> [!NOTE]
+> Que hay configuraciones adicionales que pueden afectar a la tensión de CPU del subsistema AuditD. <BR>
+> En concreto, en [auditd.conf](https://linux.die.net/man/8/auditd.conf), el valor de **disp_qos** se puede establecer en "pérdida" para reducir el alto consumo de CPU. <BR>
+> Sin embargo, esto significa que algunos eventos pueden quitarse durante el consumo máximo de CPU. <BR>
 
 ## <a name="xmdeclientanalyzer"></a>XMDEClientAnalyzer 
 
-Cuando se usa XMDEClientAnalyzer, los siguientes archivos mostrarán la salida que proporciona información para ayudarle a solucionar problemas.
+Al usar [XMDEClientAnalyzer](run-analyzer-macos-linux.md), los siguientes archivos mostrarán la salida que proporciona información para ayudarle a solucionar problemas.
 - auditd_info.txt
 - auditd_log_analysis.txt
 

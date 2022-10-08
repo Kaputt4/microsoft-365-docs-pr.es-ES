@@ -14,21 +14,24 @@ f1_keywords:
 ms.service: O365-seccomp
 ms.localizationpriority: medium
 ms.collection:
-- M365-security-compliance
+- tier3
+- purview-compliance
 hideEdit: true
 feedback_system: None
 recommendations: false
 description: Definición de entidad de tipo de información confidencial del número de tarjeta de identidad de Croacia.
-ms.openlocfilehash: c1a281af470557623e649f29c98594992848779d
-ms.sourcegitcommit: 5aed330d8af523f0dffe5e392f1c79f047e38172
+ms.openlocfilehash: 9b657a4a59dfc9b1b142c7a68ce1e919a162a030
+ms.sourcegitcommit: 2ff545246fec060ea7829da5afbc1cdc698d51ab
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/21/2022
-ms.locfileid: "67000118"
+ms.lasthandoff: 10/04/2022
+ms.locfileid: "68363153"
 ---
 # <a name="croatia-identity-card-number"></a>Número del documento de identidad de Croacia
 
 Esta entidad se incluye en el tipo de información confidencial Número de identificación nacional de la UE. Está disponible como una entidad de tipo de información confidencial independiente.
+
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
 
 ## <a name="format"></a>Formato
 
@@ -76,18 +79,18 @@ Una política de DLP tiene confianza media en que ha detectado este tipo de info
 - porezni broj
 - porezni identifikacijski broj
 - tax id
-- identificación fiscal no
+- núm. identificación fiscal
 - número de identificación fiscal
-- impuestos no #
-- impuestos no
-- número de impuestos
+- n.º de id. fiscal#
+- n.º fiscal
+- número de id. fiscal
 - número de registro fiscal
-- taxid #
-- taxidno #
-- taxidnumber #
-- taxno #
-- taxnumber #
-- taxnumber
-- tin id
-- tin no
-- Lata #
+- Id.fiscal#
+- númidfiscal#
+- númeroidentificaciónfiscal#
+- núm.fiscal#
+- núm.id.fiscal#
+- núm.id.fisca
+- id. tributaria
+- n.º de id. tributario
+- Número de identificación tributaria

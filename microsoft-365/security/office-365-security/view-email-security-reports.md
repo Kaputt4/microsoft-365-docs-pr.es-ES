@@ -14,18 +14,18 @@ search.appverid:
 - MOE150
 ms.assetid: 3a137e28-1174-42d5-99af-f18868b43e86
 ms.collection:
-- M365-security-compliance
+- m365-security
 description: Los administradores pueden aprender a buscar y usar los informes de seguridad de correo electrónico que están disponibles en el portal de Microsoft 365 Defender.
 ms.custom:
 - seo-marvel-apr2020
 ms.subservice: mdo
 ms.service: microsoft-365-security
-ms.openlocfilehash: 6b34ab2617fdae4c57d3b40ab919668dd6b6ac2e
-ms.sourcegitcommit: 95ac076310ab9006ed92c69938f7ae771cd10826
+ms.openlocfilehash: 11d416108842bc15fc825af3068358b46eae36d3
+ms.sourcegitcommit: 0380a7cd5adb710b80a0ed6fcd349199f1571080
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/20/2022
-ms.locfileid: "67851135"
+ms.lasthandoff: 10/03/2022
+ms.locfileid: "68337494"
 ---
 # <a name="view-email-security-reports-in-the-microsoft-365-defender-portal"></a>Visualización de informes de seguridad de correo electrónico en el portal de Microsoft 365 Defender
 
@@ -344,7 +344,7 @@ El **informe latencia de correo** de Defender para Office 365 contiene informaci
 
 El informe **de detecciones de suplantación** de identidad muestra información sobre los mensajes bloqueados o permitidos debido a la suplantación de identidad. Para obtener más información sobre la suplantación de identidad, vea [Protección contra la suplantación de identidad en EOP](anti-spoofing-protection.md).
 
-La vista de agregado del informe permite 90 días de filtrado, mientras que la vista de detalles solo permite diez días de filtrado.
+Las vistas de agregado y detalle del informe permiten 90 días de filtrado.
 
 Para ver el informe en el portal de Microsoft 365 Defender, vaya a **Informes** \> **Email & colaboración** \> **Email & informes de colaboración**. En la página **Email & informes de colaboración**, busque **Detecciones de suplantación de identidad** y haga clic en **Ver detalles**. Para ir directamente al informe, abra <https://security.microsoft.com/reports/SpoofMailReport>.
 
@@ -518,7 +518,7 @@ En la tabla de detalles debajo del gráfico, está disponible la siguiente infor
 
 - **Date**
 - **Asunto**
-- **Remitente**
+- **Sender**
 - **Destinatarios**
 - **Tecnología de detección**: los mismos valores de tecnología de detección del gráfico.
 - **Estado de entrega**
@@ -569,7 +569,7 @@ En la tabla de detalles debajo del gráfico, está disponible la siguiente infor
 
 - **Date**
 - **Asunto**
-- **Remitente**
+- **Sender**
 - **Destinatarios**
 - **Tecnología de detección**: los mismos valores de tecnología de detección del gráfico.
 - **Estado de entrega**
@@ -625,7 +625,7 @@ En la tabla de detalles debajo del gráfico, está disponible la siguiente infor
 
 - **Date**
 - **Asunto**
-- **Remitente**
+- **Sender**
 - **Destinatarios**
 - **Tecnología de detección**: los mismos valores de tecnología de detección del gráfico.
 - **Estado de entrega**
@@ -675,7 +675,7 @@ En la tabla de detalles debajo del gráfico, está disponible la siguiente infor
 
 - **Date**
 - **Asunto**
-- **Remitente**
+- **Sender**
 - **Destinatarios**
 - **Tecnología de detección**: los mismos valores de tecnología de detección del gráfico.
 - **Estado de entrega**
@@ -730,7 +730,7 @@ En la tabla de detalles debajo del gráfico, está disponible la siguiente infor
 
 - **Date**
 - **Asunto**
-- **Remitente**
+- **Sender**
 - **Destinatarios**
 - **Tecnología de detección**: los mismos valores de tecnología de detección del gráfico.
 - **Estado de entrega**
@@ -815,7 +815,7 @@ En la tabla de detalles debajo del gráfico, está disponible la siguiente infor
 
 - **Date**
 - **Asunto**
-- **Remitente**
+- **Sender**
 - **Destinatarios**
 - **Invalidación del sistema**
 - **IP del remitente**
@@ -853,7 +853,7 @@ En la tabla de detalles debajo del gráfico, está disponible la siguiente infor
 
 - **Date**
 - **Asunto**
-- **Remitente**
+- **Sender**
 - **Destinatarios**
 - **Invalidación del sistema**
 - **IP del remitente**

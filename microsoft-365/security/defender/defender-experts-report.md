@@ -18,15 +18,16 @@ ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection:
-- M365-security-compliance
+- m365-security
+- tier1
 ms.topic: article
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: f54bc1b1f3569be0267e49971eae2ed4a84e213b
-ms.sourcegitcommit: 437461fa1d38ff9bb95dd8a1c5f0b94e8111ada2
+ms.openlocfilehash: 9a47884f4918359278b192c3314e5b2374d64f3f
+ms.sourcegitcommit: 2ff545246fec060ea7829da5afbc1cdc698d51ab
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/14/2022
-ms.locfileid: "67680249"
+ms.lasthandoff: 10/04/2022
+ms.locfileid: "68362846"
 ---
 # <a name="understand-the-defender-experts-for-hunting-report-in-microsoft-365-defender"></a>Descripción del informe expertos de Defender para la búsqueda en Microsoft 365 Defender
 
@@ -36,7 +37,7 @@ ms.locfileid: "67680249"
 
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
-Expertos de Microsoft Defender para la búsqueda de capas de inteligencia humana y tecnología entrenada por expertos para ayudar a Microsoft 365 Defender clientes a comprender las amenazas significativas a las que se enfrentan. Muestra cómo las aptitudes de búsqueda de amenazas de Defender Expert, la comprensión exhaustiva del panorama de amenazas y el conocimiento de las amenazas emergentes pueden ayudarle a identificar, priorizar y abordar esas amenazas en su entorno. 
+Microsoft Defender Expertos en Búsqueda de capas de inteligencia humana y tecnología entrenada por expertos para ayudar a Microsoft 365 Defender clientes a comprender las amenazas significativas a las que se enfrentan. Muestra cómo las aptitudes de búsqueda de amenazas de Defender Expert, la comprensión exhaustiva del panorama de amenazas y el conocimiento de las amenazas emergentes pueden ayudarle a identificar, priorizar y abordar esas amenazas en su entorno. 
 
 El servicio Expertos de Defender para la búsqueda publica informes mensuales para ayudarle a comprender todas las amenazas que el servicio de búsqueda ha surgido en su entorno, junto con las alertas generadas por los productos de Microsoft 365 Defender.
 
@@ -56,7 +57,7 @@ Cada sección del informe está diseñada para proporcionar más información so
 
 Consulte la siguiente captura de pantalla de un informe de ejemplo:
 
-![Captura de pantalla de un informe de expertos de Microsoft Defender para la búsqueda en Microsoft 365 Defender portal.](../../media/mte/defenderexperts/defender-experts-report.png)
+![Captura de pantalla de un informe de expertos en búsqueda de Microsoft Defender en Microsoft 365 Defender portal.](../../media/mte/defenderexperts/defender-experts-report.png)
 
 ## <a name="view-defender-experts-notifications"></a>Ver notificaciones de expertos de Defender
 
@@ -73,20 +74,20 @@ Este vínculo le redirige a la página de incidentes de Microsoft 365 Defender. 
 
 Las tácticas MITRE ATT&CK representan objetivos adversarios, lo que intentan lograr en cada fase de ataque. La sección **mitre att&tácticas de CK observada** del informe realiza un seguimiento de la progresión del ataque contra la fase que alcanzaron:
 
-1.  Reconocimiento
-2.  Desarrollo de recursos
-3.  Acceso inicial
-4.  Ejecución
-3.  Persistencia
-4.  Escalación de privilegios
-5.  Evasión de defensa
-6.  Acceso a credenciales
-7.  Descubrimiento
-8.  Movimiento lateral
-9.  Colección
-10. Comando y control
-11. Filtración
-12. Impacto
+1. Reconocimiento
+2. Desarrollo de recursos
+3. Acceso inicial
+4. Ejecución
+5. Persistencia
+6. Escalación de privilegios
+7. Evasión de defensa
+8. Acceso a credenciales
+9. Descubrimiento
+10. Movimiento lateral
+11. Colección
+12. Comando y control
+13. Filtración
+14. Impacto
 
 Las señales de Microsoft 365 Defender e investigaciones de expertos de Defender para la búsqueda ayudan a identificar estas tácticas, representadas en el gráfico de barras. Este gráfico le ayuda a visualizar dónde está el aumento y le proporciona la información que necesita para planear las acciones de contención y corrección correspondientes.
 
@@ -103,4 +104,3 @@ Entre las distintas categorías de amenazas disponibles, las siguientes categor�
 - Entrega
 
 Puede priorizar la corrección en función de la categoría más afectada, como se muestra en el gráfico de barras.
-

@@ -11,7 +11,7 @@ ms.service: O365-seccomp
 ms.localizationpriority: medium
 ms.collection:
 - Strat_O365_IP
-- M365-security-compliance
+- purview-compliance
 search.appverid:
 - MOE150
 - MET150
@@ -20,12 +20,12 @@ ms.custom:
 - seo-marvel-apr2020
 - admindeeplinkEXCHANGE
 description: El registro de auditoría de buzones está activado de forma predeterminada en Microsoft 365 (también denominado "auditoría predeterminada de buzones" o "auditoría de buzones de correo de forma predeterminada"). Esta configuración significa que ciertas acciones realizadas por propietarios, delegados y administradores de buzones de correo se registran automáticamente en un registro de auditoría de buzones, donde puede buscar actividades realizadas en el buzón.
-ms.openlocfilehash: edf73e41d5f8f2f977d9f1256ac9a2299be182d6
-ms.sourcegitcommit: 13a1199fbfeb329da77ce87b2781d5cc77e4a201
+ms.openlocfilehash: 542d3e40d97834ffa2fed6e7bd17a8152b5765d7
+ms.sourcegitcommit: fa570d90b00ed1bb40e1ca27b11c66a84c4204e9
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/27/2022
-ms.locfileid: "67037213"
+ms.lasthandoff: 10/05/2022
+ms.locfileid: "68476471"
 ---
 # <a name="manage-mailbox-auditing"></a>Administrar la auditoría de buzones de correo
 
@@ -41,7 +41,9 @@ Estas son algunas ventajas de la auditoría de buzones de correo en de forma pre
 > [!NOTE]
 >
 > - Lo importante que debe recordar sobre la versión de auditoría de buzones de correo en de forma predeterminada es: no es necesario hacer nada para administrar la auditoría de buzones. Sin embargo, para obtener más información, personalizar la auditoría de buzones de correo desde la configuración predeterminada o desactivarla por completo, este artículo puede ayudarle.
-> - De forma predeterminada, solo los eventos de auditoría de buzones para los usuarios de E5 están disponibles en las búsquedas de registros de auditoría en el portal de cumplimiento Microsoft Purview o a través de la API de actividad de administración de Office 365. Para obtener más información, consulte la sección [Más información](#more-information) de este artículo.
+> - De forma predeterminada, solo los eventos de auditoría de buzones de correo para los usuarios con licencias que incluyen [Auditoría de Microsoft Purview (Premium)](advanced-audit.md) están disponibles en las búsquedas de registros de auditoría en el portal de cumplimiento Microsoft Purview o a través de la API de actividad de administración de Office 365. Estas licencias se describen [aquí](auditing-solutions-overview.md#audit-premium-1). Para mayor brevedad, en este artículo se hará referencia colectivamente a las licencias que incluyen auditar (Premium) como *licencias E5/A5/G5*.
+
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
 
 ## <a name="verify-mailbox-auditing-on-by-default-is-turned-on"></a>Comprobar que la auditoría del buzón está activada de forma predeterminada
 
@@ -93,27 +95,27 @@ En la tabla siguiente se describen las acciones de buzón que están disponibles
 - Un asterisco ( <sup>\*</sup> ) después de la marca de verificación indica que la acción del buzón se registra de forma predeterminada para el tipo de inicio de sesión.
 - Recuerde que un administrador con permiso de acceso completo a un buzón se considera un delegado.
 
-|Acción buzón|Descripción|Admin|Delegado|Propietario|
+|Acción buzón|Descripción|Admin|Delegado|Owner|
 |---|---|:---:|:---:|:---:|
 |**AddFolderPermissions**|Aunque este valor se acepta como una acción de buzón de correo, ya se incluye en la acción **UpdateFolderPermissions** y no se audita por separado. En otras palabras, no use este valor.||||
 |**ApplyRecord**|Un elemento se etiqueta como un registro.|![Marca de verificación.](../media/checkmark.png)<sup>\*</sup>|![Marca de verificación.](../media/checkmark.png)<sup>\*</sup>|![Marca de verificación.](../media/checkmark.png)<sup>\*</sup>|
-|**Copiar**|Un mensaje se copió en otra carpeta.|![Marca de verificación.](../media/checkmark.png)|||
+|**Copy**|Se ha copiado un mensaje a otra carpeta.|![Marca de verificación.](../media/checkmark.png)|||
 |**Crear**|Se creó un elemento en la carpeta Calendario, Contactos, Borrador, Notas o Tareas del buzón (por ejemplo, se crea una nueva convocatoria de reunión). No se audita la creación, el envío ni la recepción de un mensaje. Además, no se audita la creación de una carpeta del buzón.|![Marca de verificación.](../media/checkmark.png)<sup>\*</sup>|![Marca de verificación.](../media/checkmark.png)<sup>\*</sup>|![Marca de verificación.](../media/checkmark.png)|
-|**FolderBind**|Se tuvo acceso a una carpeta de buzón de correo. Esta acción también se registra cuando el administrador o un delegado abren el buzón de correo.<br/><br/> **Nota**: Se consolidan los registros de auditoría de las acciones de enlace de carpeta realizadas por los delegados. Se genera un registro de auditoría para el acceso a carpetas individuales en un período de 24 horas.|![Marca de verificación.](../media/checkmark.png)|![Marca de verificación.](../media/checkmark.png)||
+|**FolderBind**|Se tuvo acceso a una carpeta de buzón de correo. Esta acción también se registra cuando el administrador o un delegado abren el buzón de correo. <br/><br/> **Nota**: Se consolidan los registros de auditoría de las acciones de enlace de carpeta realizadas por los delegados. Se genera un registro de auditoría para el acceso a carpetas individuales en un período de 24 horas.|![Marca de verificación.](../media/checkmark.png)|![Marca de verificación.](../media/checkmark.png)||
 |**HardDelete**|Un mensaje se purgó de la carpeta Elementos recuperables.|![Marca de verificación.](../media/checkmark.png)<sup>\*</sup>|![Marca de verificación.](../media/checkmark.png)<sup>\*</sup>|![Marca de verificación.](../media/checkmark.png)<sup>\*</sup>|
 |**MailboxLogin**|El usuario ha iniciado sesión en su buzón de correo.|||![Marca de verificación](../media/checkmark.png)|
 |**MailItemsAccessed**|**Nota**: Este valor solo está disponible para los usuarios con licencias E5/A5/G5. Para obtener más información, consulte [Configuración de Auditoría de Microsoft Purview (Premium).](set-up-advanced-audit.md) <br/><br/> Los clientes y protocolos de correo acceden a los datos de correo.|![Marca de verificación.](../media/checkmark.png)<sup>\*</sup>|![Marca de verificación.](../media/checkmark.png)<sup>\*</sup>|![Marca de verificación](../media/checkmark.png)<sup>\*</sup>|
 |**MessageBind**|**Nota**: Este valor solo está disponible para los usuarios *sin* licencias E5/A5/G5. <br/><br/> Un administrador ha visto un mensaje en el panel de vista previa o lo ha abierto.|![Marca de verificación](../media/checkmark.png)|||
 |**ModifyFolderPermissions**|Aunque este valor se acepta como una acción de buzón de correo, ya se incluye en la acción **UpdateFolderPermissions** y no se audita por separado. En otras palabras, no use este valor.||||
-|**Mover**|Un mensaje se movió a otra carpeta.|![Marca de verificación.](../media/checkmark.png)|![Marca de verificación](../media/checkmark.png)|![Marca de verificación](../media/checkmark.png)|
-|**MoveToDeletedItems**|Un mensaje se eliminó y se movió a la carpeta Elementos eliminados.|![Marca de verificación.](../media/checkmark.png)<sup>\*</sup>|![Marca de verificación.](../media/checkmark.png)<sup>\*</sup>|![Marca de verificación](../media/checkmark.png)<sup>\*</sup>|
+|**Move**|Se ha movido un mensaje a otra carpeta.|![Marca de verificación.](../media/checkmark.png)|![Marca de verificación](../media/checkmark.png)|![Marca de verificación](../media/checkmark.png)|
+|**MoveToDeletedItems**|Un mensaje se ha eliminado y movido a la carpeta Elementos eliminados.|![Marca de verificación.](../media/checkmark.png)<sup>\*</sup>|![Marca de verificación.](../media/checkmark.png)<sup>\*</sup>|![Marca de verificación](../media/checkmark.png)<sup>\*</sup>|
 |**RecordDelete**|Un elemento etiquetado como registro se eliminó temporalmente (se movió a la carpeta Elementos recuperables). Los elementos etiquetados como registros no se pueden eliminar permanentemente (se purgan de la carpeta Elementos recuperables).|![Marca de verificación.](../media/checkmark.png)|![Marca de verificación](../media/checkmark.png)|![Marca de verificación](../media/checkmark.png)|
 |**RemoveFolderPermissions**|Aunque este valor se acepta como una acción de buzón de correo, ya se incluye en la acción **UpdateFolderPermissions** y no se audita por separado. En otras palabras, no use este valor.||||
 |**SearchQueryInitiated**|**Nota**: Este valor solo está disponible para los usuarios con licencias E5/A5/G5. Para obtener más información, consulte [Configuración de Auditoría de Microsoft Purview (Premium).](set-up-advanced-audit.md) <br/><br/> Una persona usa Outlook (Windows, Mac, iOS, Android o Outlook en la Web) o la aplicación Correo para Windows 10 para buscar elementos en un buzón.|||![Marca de verificación](../media/checkmark.png)|
 |**Send**|**Nota**: Este valor solo está disponible para los usuarios con licencias E5/A5/G5. Para obtener más información, consulte [Configuración de Auditoría de Microsoft Purview (Premium).](set-up-advanced-audit.md) <br/><br/> El usuario envía un mensaje de correo electrónico, responde a un mensaje de correo electrónico o reenvía un mensaje de correo electrónico.|![Marca de verificación.](../media/checkmark.png)<sup>\*</sup>||![Marca de verificación](../media/checkmark.png)<sup>\*</sup>|
-|**SendAs**|Un mensaje se envió mediante el permiso SendAs. Esto significa que otro usuario envió el mensaje como si procediera del propietario del buzón.|![Marca de verificación.](../media/checkmark.png)<sup>\*</sup>|![Marca de verificación](../media/checkmark.png)<sup>\*</sup>||
-|**SendOnBehalf**|Un mensaje se envió mediante el permiso SendOnBehalf. Esto significa que otro usuario envió el mensaje en nombre del propietario del buzón. El mensaje indica el destinatario en nombre de quien se envió el mensaje y quién lo envió realmente.|![Marca de verificación.](../media/checkmark.png)<sup>\*</sup>|![Marca de verificación](../media/checkmark.png)<sup>\*</sup>||
-|**SoftDelete**|Un mensaje se eliminó permanentemente o se eliminó de la carpeta Elementos eliminados. Los elementos eliminados de forma temporal se mueven a la carpeta Elementos recuperables.|![Marca de verificación.](../media/checkmark.png)<sup>\*</sup>|![Marca de verificación.](../media/checkmark.png)<sup>\*</sup>|![Marca de verificación](../media/checkmark.png)<sup>\*</sup>|
+|**SendAs**|Un mensaje se ha enviado con el permiso Enviar como. Esto significa que otro usuario envió el mensaje como si procediera del propietario del buzón.|![Marca de verificación.](../media/checkmark.png)<sup>\*</sup>|![Marca de verificación](../media/checkmark.png)<sup>\*</sup>||
+|**SendOnBehalf**|A message was sent using the SendOnBehalf permission. This means another user sent the message on behalf of the mailbox owner. The message indicates to the recipient who the message was sent on behalf of and who actually sent the message.|![Marca de verificación.](../media/checkmark.png)<sup>\*</sup>|![Marca de verificación](../media/checkmark.png)<sup>\*</sup>||
+|**SoftDelete**|Un mensaje se ha eliminado de manera permanente o se ha eliminado de la carpeta Elementos eliminados. Los elementos eliminados de forma temporal se mueven a la carpeta Elementos recuperables.|![Marca de verificación.](../media/checkmark.png)<sup>\*</sup>|![Marca de verificación.](../media/checkmark.png)<sup>\*</sup>|![Marca de verificación](../media/checkmark.png)<sup>\*</sup>|
 |**Actualizar**|Se ha cambiado un mensaje o cualquiera de sus propiedades.|![Marca de verificación.](../media/checkmark.png)<sup>\*</sup>|![Marca de verificación.](../media/checkmark.png)<sup>\*</sup>|![Marca de verificación](../media/checkmark.png)<sup>\*</sup>|
 |**UpdateCalendarDelegation**|Se asignó una delegación de calendario a un buzón de correo. La delegación de calendario otorga a otra persona en la misma organización permisos para administrar el calendario del propietario del buzón.|![Marca de verificación.](../media/checkmark.png)<sup>\*</sup>||![Marca de verificación](../media/checkmark.png)<sup>\*</sup>|
 |**UpdateFolderPermissions**|Un permiso de la carpeta se ha cambiado. Los permisos de carpeta controlan qué usuarios de su organización pueden tener acceso las carpetas de un buzón de correo y los mensajes que contienen.|![Marca de verificación.](../media/checkmark.png)<sup>\*</sup>|![Marca de verificación.](../media/checkmark.png)<sup>\*</sup>|![Marca de verificación](../media/checkmark.png)<sup>\*</sup>|
@@ -130,14 +132,14 @@ En la tabla siguiente se describen las acciones de buzón que se registran de fo
 
 Recuerde que un administrador con permiso de acceso completo para un buzón de correo de grupo de Microsoft 365 se considera un delegado.
 
-|Acción buzón|Descripción|Admin|Delegado|Propietario|
+|Acción buzón|Descripción|Admin|Delegado|Owner|
 |---|---|:---:|:---:|:---:|
 |**Crear**|Creación de un elemento de calendario. No se audita la creación, el envío ni la recepción de un mensaje.|![Marca de verificación](../media/checkmark.png)<sup>\*</sup>|![Marca de verificación](../media/checkmark.png)<sup>\*</sup>||
 |**HardDelete**|Un mensaje se purgó de la carpeta Elementos recuperables.|![Marca de verificación.](../media/checkmark.png)<sup>\*</sup>|![Marca de verificación](../media/checkmark.png)<sup>\*</sup>|![Marca de verificación](../media/checkmark.png)<sup>\*</sup>|
-|**MoveToDeletedItems**|Un mensaje se eliminó y se movió a la carpeta Elementos eliminados.|![Marca de verificación.](../media/checkmark.png)<sup>\*</sup>|![Marca de verificación](../media/checkmark.png)<sup>\*</sup>|![Marca de verificación](../media/checkmark.png)<sup>\*</sup>|
+|**MoveToDeletedItems**|Un mensaje se ha eliminado y movido a la carpeta Elementos eliminados.|![Marca de verificación.](../media/checkmark.png)<sup>\*</sup>|![Marca de verificación](../media/checkmark.png)<sup>\*</sup>|![Marca de verificación](../media/checkmark.png)<sup>\*</sup>|
 |**SendAs**|Un mensaje se ha enviado con el permiso Enviar como.|![Marca de verificación](../media/checkmark.png)<sup>\*</sup>|![Marca de verificación](../media/checkmark.png)<sup>\*</sup>||
 |**SendOnBehalf**|Un mensaje se ha enviado con el permiso SendOnBehalf.|![Marca de verificación](../media/checkmark.png)<sup>\*</sup>|![Marca de verificación](../media/checkmark.png)<sup>\*</sup>||
-|**SoftDelete**|Un mensaje se eliminó permanentemente o se eliminó de la carpeta Elementos eliminados. Los elementos eliminados de forma temporal se mueven a la carpeta Elementos recuperables.|![Marca de verificación.](../media/checkmark.png)<sup>\*</sup>|![Marca de verificación](../media/checkmark.png)<sup>\*</sup>|![Marca de verificación](../media/checkmark.png)<sup>\*</sup>|
+|**SoftDelete**|Un mensaje se ha eliminado de manera permanente o se ha eliminado de la carpeta Elementos eliminados. Los elementos eliminados de forma temporal se mueven a la carpeta Elementos recuperables.|![Marca de verificación.](../media/checkmark.png)<sup>\*</sup>|![Marca de verificación](../media/checkmark.png)<sup>\*</sup>|![Marca de verificación](../media/checkmark.png)<sup>\*</sup>|
 |**Actualizar**|Se ha cambiado un mensaje o cualquiera de sus propiedades.|![Marca de verificación.](../media/checkmark.png)<sup>\*</sup>|![Marca de verificación](../media/checkmark.png)<sup>\*</sup>|![Marca de verificación](../media/checkmark.png)<sup>\*</sup>|
 
 ### <a name="verify-that-default-mailbox-actions-are-being-logged-for-each-logon-type"></a>Compruebe que las acciones predeterminadas del buzón de correo se registran para cada tipo de inicio de sesión.
@@ -319,7 +321,7 @@ El valor **True** indica que el registro de auditoría del buzón se omite para 
 
 ## <a name="more-information"></a>Más información
 
-- Aunque el registro de auditoría de buzones de correo está habilitado de forma predeterminada para todas las organizaciones, solo los usuarios con licencias E5 devolverán eventos de registro de auditoría de buzón [en las búsquedas de registros de auditoría en el portal de cumplimiento Microsoft Purview](search-the-audit-log-in-security-and-compliance.md) o a través de [la API de actividad de administración de Office 365](/office/office-365-management-api/office-365-management-activity-api-reference) **de forma predeterminada**.
+- Como se mencionó anteriormente, aunque el registro de auditoría de buzón de correo está habilitado de forma predeterminada para todas las organizaciones, solo los usuarios con [licencias que incluyan Auditoría (Premium) (](auditing-solutions-overview.md#audit-premium-1)a la que se hace referencia colectivamente en este artículo como *licencias E5/A5/G5*) devolverán eventos de registro de auditoría de buzón en [las búsquedas de registros de auditoría en el portal de cumplimiento Microsoft Purview](search-the-audit-log-in-security-and-compliance.md) o a través de la [ api de actividad de administración de Office 365](/office/office-365-management-api/office-365-management-activity-api-reference) **de forma predeterminada**.
 
   Para recuperar entradas de registro de auditoría de buzones para usuarios sin licencias E5/A5/G5, puede usar cualquiera de las siguientes soluciones alternativas:
 

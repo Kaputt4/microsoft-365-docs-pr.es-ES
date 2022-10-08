@@ -14,19 +14,22 @@ f1_keywords:
 ms.service: O365-seccomp
 ms.localizationpriority: medium
 ms.collection:
-- M365-security-compliance
+- tier3
+- purview-compliance
 hideEdit: true
 feedback_system: None
 recommendations: false
 description: Firma de acceso compartido de la cuenta de Azure Storage para la definición de entidad de tipo de información confidencial de recursos de alto riesgo.
-ms.openlocfilehash: 007016f38f0aa6409cd81c317653cb0acc71a881
-ms.sourcegitcommit: 5aed330d8af523f0dffe5e392f1c79f047e38172
+ms.openlocfilehash: a3413afd4bb397750f75646a7f1d4ba61e8888cc
+ms.sourcegitcommit: fa570d90b00ed1bb40e1ca27b11c66a84c4204e9
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/21/2022
-ms.locfileid: "66999608"
+ms.lasthandoff: 10/05/2022
+ms.locfileid: "68476911"
 ---
 # <a name="azure-storage-account-shared-access-signature-for-high-risk-resources-preview"></a>Firma de acceso compartido de la cuenta de Azure Storage para recursos de alto riesgo (versión preliminar)
+
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
 
 ## <a name="format"></a>Formato
 
@@ -73,7 +76,7 @@ Esta SIT está diseñada para coincidir con la información de seguridad que se 
 
 Usa varios recursos principales:
 
-- Patrones de clave simétrica de 256 bits codificada en Base64.
+- Patrones de clave simétrica codificada en Base64 de 256 bits.
 - Patrones de clave simétrica con codificación URL de 256 bits.
 - Patrones de CredentialName, CredentialFeatures, AccountIdentityName, AccountIdentityValue, ResourceType, ResourceName, Id.
 - Patrones de valores ficticios, censuras y marcadores de posición.

@@ -14,17 +14,17 @@ search.appverid:
 - MET150
 - MOE150
 ms.collection:
-- M365-security-compliance
+- m365-security
 ms.custom: ''
 ms.subservice: mdo
 ms.service: microsoft-365-security
 ROBOTS: ''
-ms.openlocfilehash: 0dc389f498587c0895399c2a2f2eee4624e1ee3d
-ms.sourcegitcommit: 2dedd0f594b817779e034afa6c4418def2382a22
+ms.openlocfilehash: 1171c30edc22df889973ac45d7c7f5905f5c2233
+ms.sourcegitcommit: fa570d90b00ed1bb40e1ca27b11c66a84c4204e9
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/18/2022
-ms.locfileid: "67799009"
+ms.lasthandoff: 10/05/2022
+ms.locfileid: "68476867"
 ---
 # <a name="try-microsoft-defender-for-office-365"></a>Pruebe Microsoft Defender para Office 365
 
@@ -80,7 +80,7 @@ Las directivas predeterminadas para estas características de EOP siempre están
 
 - **Modo de auditoría**: se crean *directivas de evaluación* especiales para la protección contra suplantación de identidad (que incluye protección contra suplantación), datos adjuntos seguros y vínculos seguros. Estas directivas de evaluación están configuradas para *detectar* solo amenazas. Defender para Office 365 detecta mensajes dañinos para los informes, pero los mensajes no se actúan sobre ellos (por ejemplo, los mensajes detectados no se ponen en cuarentena). La configuración de estas directivas de evaluación se describe en la sección [Directivas en modo de auditoría](#policies-in-audit-mode) más adelante en este artículo.
 
-  El modo auditoría proporciona acceso a informes personalizados para las amenazas detectadas por Defender para Office 365 en la página **Modo de evaluación** en<https://security.microsoft.com/atpEvaluation> .
+  El modo auditoría proporciona acceso a informes personalizados para las amenazas detectadas por Defender para Office 365 en la página **Modo de evaluación** en <https://security.microsoft.com/atpEvaluation>.
 
 - **Modo de bloqueo**: la plantilla Estándar para [directivas de seguridad preestablecidas](preset-security-policies.md) se activa y se usa para la prueba, y los usuarios que especifique incluir en la prueba se agregan a la directiva de seguridad preestablecida Estándar. Defender para Office 365 detecta y *toma medidas en* los mensajes *dañinos* (por ejemplo, los mensajes detectados están en cuarentena).
 
@@ -151,7 +151,7 @@ Recuerde que, al evaluar Defender para Office 365 en modo de auditoría, se crea
 
      Haga clic en el cuadro correspondiente, comience a escribir un valor y seleccione el valor que desee de los resultados. Repita este proceso tantas veces como sea necesario. Para quitar un valor existente, haga clic en Quitar ![Icono Quitar.](../../media/m365-cc-sc-remove-selection-icon.png) junto al valor.
 
-     Para los usuarios o grupos, puede utilizar la mayoría de los identificadores (nombre, nombre para mostrar, alias, dirección de correo electrónico, nombre de la cuenta, etc.), pero el nombre para mostrar correspondiente se muestra en los resultados. Para los usuarios, introduzca un asterisco (\*) por sí mismo para ver todos los valores disponibles.
+     For users or groups, you can use most identifiers (name, display name, alias, email address, account name, etc.), but the corresponding display name is shown in the results. For users, enter an asterisk (\*) by itself to see all available values.
 
    > [!NOTE]
    > Puede cambiar estas selecciones después de finalizar la configuración de la prueba, tal como se describe en la sección [Administrar la evaluación](#manage-your-evaluation-or-trial-of-defender-for-office-365) .
@@ -236,7 +236,7 @@ Recuerde que, al intentar Defender para Office 365 en modo de bloqueo, la seguri
 
      Haga clic en el cuadro correspondiente, comience a escribir un valor y seleccione el valor que desee de los resultados. Repita este proceso tantas veces como sea necesario. Para quitar un valor existente, haga clic en Quitar ![Icono Quitar.](../../media/m365-cc-sc-remove-selection-icon.png) junto al valor.
 
-     Para los usuarios o grupos, puede utilizar la mayoría de los identificadores (nombre, nombre para mostrar, alias, dirección de correo electrónico, nombre de la cuenta, etc.), pero el nombre para mostrar correspondiente se muestra en los resultados. Para los usuarios, introduzca un asterisco (\*) por sí mismo para ver todos los valores disponibles.
+     For users or groups, you can use most identifiers (name, display name, alias, email address, account name, etc.), but the corresponding display name is shown in the results. For users, enter an asterisk (\*) by itself to see all available values.
 
    > [!NOTE]
    > Puede cambiar estas selecciones después de finalizar la configuración de la prueba, tal como se describe en la sección [Administrar la evaluación](#manage-your-evaluation-or-trial-of-defender-for-office-365) .

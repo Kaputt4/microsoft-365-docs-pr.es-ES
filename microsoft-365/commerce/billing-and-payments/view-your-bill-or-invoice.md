@@ -8,10 +8,11 @@ manager: scotv
 ms.reviewer: jkinma, jmueller
 audience: Admin
 ms.topic: article
-ms.service: o365-administration
+ms.service: microsoft-365-business
 ms.localizationpriority: high
 search.appverid: GEA150
 ms.collection:
+- scotvorg
 - highpri
 - M365-subscription-management
 - Adm_O365
@@ -27,12 +28,12 @@ ms.custom:
 - adminvideo
 description: Busque la factura o el extracto en el Centro de administración de Microsoft 365. También puede guardar e imprimir una copia de la factura.
 ms.date: 01/25/2022
-ms.openlocfilehash: 123d70825f0d894d72d48fbe890652d37fe7d4b2
-ms.sourcegitcommit: 37e137535c4f70702afe1a5eeaa899c75ee02cfd
+ms.openlocfilehash: e04cf46ceba2886fc0e939ead05a49147e4aa759
+ms.sourcegitcommit: 0b7070ec119e00e0dafe030bbfbef0ae5c9afa19
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/13/2022
-ms.locfileid: "67664601"
+ms.lasthandoff: 09/29/2022
+ms.locfileid: "68165721"
 ---
 # <a name="view-your-microsoft-365-for-business-subscription-bill-or-invoice"></a>Ver la factura o la suscripción a Microsoft 365 para empresas
 
@@ -42,7 +43,7 @@ Este artículo está dirigido a las personas que tienen una suscripción a Micro
   
 Si necesita ayuda para interpretar los cargos que aparecen en su factura, vea [Entender la factura](understand-your-invoice2.md) para obtener una guía detallada.
   
-**Tiene algún problema con la factura?**[Póngase en contacto con el soporte técnico para productos empresariales](../../admin/get-help-support.md).
+**Have a problem with your bill?** [Contact support for business products](../../admin/get-help-support.md).
 
 ## <a name="before-you-begin"></a>Antes de empezar
 
@@ -50,12 +51,12 @@ Debe ser un administrador global o de facturación para realizar los pasos descr
   
 ## <a name="watch-view-download-or-print-your-bill"></a>Ver: Ver, descargar o imprimir su factura
 
-Consulte este vídeo y otros en nuestro [canal de YouTube](https://go.microsoft.com/fwlink/?linkid=2197915).
+Consulte este vídeo y otros en nuestro [canal de YouTube](https://go.microsoft.com/fwlink/?linkid=2209539).
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE1FGmo?autoplay=false]
 
 1. En el Centro de administración de Microsoft 365, seleccione **Facturación** en el panel de navegación izquierdo y, a continuación, seleccione la pestaña <a href="https://go.microsoft.com/fwlink/p/?linkid=2102895" target="_blank">**Facturas**</a>.
-1. Seleccione una factura para verla. Si no ve una factura, seleccione **Filtrar por: últimos 6 meses** en la lista desplegable.
+1. Select an invoice to view it. If you don't see an invoice, select **Filter by: Last 6 months** from the drop-down list.
 1. Para ver los detalles de la factura, seleccione **Descargar PDF** en la esquina superior derecha de la misma.
 
 ## <a name="view-a-bill-or-invoice"></a>Ver una factura

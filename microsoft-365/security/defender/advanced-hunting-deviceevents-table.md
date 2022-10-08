@@ -16,14 +16,16 @@ author: schmurky
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
-ms.collection: m365-security-compliance
+ms.collection:
+- m365-security
+- tier3
 ms.topic: article
-ms.openlocfilehash: aa6176e74b74d2b3fa8a259b9c8d129bb2a9715f
-ms.sourcegitcommit: 10e6abe740e27000e223378eb17d657a47555fa8
+ms.openlocfilehash: e5736296499cdf9ce63ead7b57505c9751c8c436
+ms.sourcegitcommit: 12af9e8e3a6eaa090fda9e98ccb831dff65863a4
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/31/2022
-ms.locfileid: "67483462"
+ms.lasthandoff: 09/27/2022
+ms.locfileid: "68051792"
 ---
 # <a name="deviceevents"></a>DeviceEvents
 
@@ -33,7 +35,7 @@ ms.locfileid: "67483462"
 - Microsoft 365 Defender
 - Microsoft Defender para punto de conexión
 
-Los diversos eventos de dispositivo o `DeviceEvents` la tabla del esquema [de búsqueda avanzada](advanced-hunting-overview.md) contienen información sobre varios tipos de eventos, incluidos los eventos desencadenados por controles de seguridad, como antivirus de Microsoft Defender y protección contra vulnerabilidades de seguridad. Utilice esta referencia para crear consultas que devuelvan información sobre la tabla.
+Los diversos eventos de dispositivo o `DeviceEvents` la tabla del esquema [de búsqueda avanzada](advanced-hunting-overview.md) contienen información sobre varios tipos de eventos, incluidos los eventos desencadenados por controles de seguridad, como Microsoft Defender Antivirus y protección contra vulnerabilidades de seguridad. Utilice esta referencia para crear consultas que devuelvan información sobre la tabla.
 
 >[!TIP]
 > Para obtener información detallada sobre los tipos de eventos (`ActionType` valores) admitidos por una tabla, use la referencia de esquema integrada disponible en Defender for Cloud.
@@ -97,7 +99,7 @@ Para obtener información sobre otras tablas del esquema de búsqueda avanzada, 
 | `InitiatingProcessParentCreationTime` | `datetime` | Fecha y hora en que se inició el elemento primario del proceso responsable del evento |
 | `InitiatingProcessLogonId` | `string` | Identificador de una sesión de inicio de sesión del proceso que inició el evento. Este identificador es único en la misma máquina solo entre reinicios |
 | `ReportId` | `long` | Identificador de eventos basado en un contador de repetición. Para identificar eventos únicos, esta columna debe usarse junto con las columnas DeviceName y Timestamp. |
-| `AppGuardContainerId` | `string` | Identificador del contenedor virtualizado usado por Application Guard para aislar la actividad del explorador |
+| `AppGuardContainerId` | `string` | Identificador del contenedor virtualizado usado por Protección de aplicaciones para aislar la actividad del explorador |
 | `AdditionalFields` | `string` | Información adicional sobre el evento en formato de matriz JSON |
 
 ## <a name="related-topics"></a>Temas relacionados

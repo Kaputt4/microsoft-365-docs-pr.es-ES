@@ -13,9 +13,10 @@ ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection:
-- M365-security-compliance
+- m365-security
 - m365solution-migratetomdatp
 - highpri
+- tier1
 ms.topic: article
 ms.custom:
 - migrationguides
@@ -23,12 +24,12 @@ ms.custom:
 ms.date: 04/01/2022
 ms.reviewer: jesquive, chventou, jonix, chriggs, owtho
 search.appverid: met150
-ms.openlocfilehash: 4ad0f36147682c1a6453941e148876b0246d8e1f
-ms.sourcegitcommit: 9b133379196da2b3a4bb311b07ff274f43780f68
+ms.openlocfilehash: 34bd2b66705114ad2bba8739cfae98ac8556e85e
+ms.sourcegitcommit: 2ff545246fec060ea7829da5afbc1cdc698d51ab
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/14/2022
-ms.locfileid: "67689457"
+ms.lasthandoff: 10/04/2022
+ms.locfileid: "68363285"
 ---
 # <a name="switch-to-microsoft-defender-for-endpoint---phase-1-prepare"></a>Cambiar a Microsoft Defender para punto de conexión- Fase 1: Preparación
 
@@ -52,7 +53,7 @@ Esta fase de migración incluye los pasos siguientes:
 
 ## <a name="get-and-deploy-updates-across-your-organizations-devices"></a>Obtención e implementación de actualizaciones en los dispositivos de la organización
 
-Como procedimiento recomendado, mantenga actualizados los dispositivos y puntos de conexión de la organización. Asegúrese de que la solución antivirus y la protección de puntos de conexión existentes están actualizadas y de que los sistemas operativos y las aplicaciones de su organización también tienen las actualizaciones más recientes. Esto ahora puede ayudar a evitar problemas más adelante al migrar a Defender para punto de conexión y Antivirus de Microsoft Defender.
+Como procedimiento recomendado, mantenga actualizados los dispositivos y puntos de conexión de la organización. Asegúrese de que la solución antivirus y la protección de puntos de conexión existentes están actualizadas y de que los sistemas operativos y las aplicaciones de su organización también tienen las actualizaciones más recientes. Esto ahora puede ayudar a evitar problemas más adelante al migrar a Defender para punto de conexión y Microsoft Defender Antivirus.
 
 ### <a name="make-sure-your-existing-solution-is-up-to-date"></a>Asegúrese de que la solución existente está actualizada
 
@@ -116,10 +117,10 @@ Para habilitar la comunicación entre los dispositivos y Defender para punto de 
 |Capacidades|Sistema operativo|Recursos|
 |---|---|---|
 |[Detección y respuesta de puntos de conexión](overview-endpoint-detection-response.md) (EDR)|[Windows 10](/windows/release-health/release-information) o posterior<br/><br/>Windows Server 2022 <br/><br/>[Windows Server 2019](/windows/release-health/status-windows-10-1809-and-windows-server-2019)<br/><br/>[Windows Server 1803 o posterior](/windows-server/get-started/whats-new-in-windows-server-1803)<br/><br/>[Windows Server 2016*](/windows/release-health/status-windows-10-1607-and-windows-server-2016)<br/><br/>[Windows Server 2012 R2*](/windows/release-health/status-windows-8.1-and-windows-server-2012-r2)|[Configuración del proxy de máquina y la conectividad a Internet](configure-proxy-internet.md)|
-|EDR[Windows Server 2008 R2 SP1](/windows/release-health/status-windows-7-and-windows-server-2008-r2-sp1)<br/><br/>[Windows 8.1](/windows/release-health/status-windows-8.1-and-windows-server-2012-r2)<br/><br/>[Windows 7 SP1](/windows/release-health/status-windows-7-and-windows-server-2008-r2-sp1)|[Configuración de proxy y conectividad a Internet](onboard-downlevel.md#configure-proxy-and-internet-connectivity-settings)|
-|Edr|macOS (consulte [Requisitos del sistema)](microsoft-defender-endpoint-mac.md)|[Defender para punto de conexión en macOS: conexiones de red](microsoft-defender-endpoint-mac.md#network-connections)|
+|Edr |[Windows Server 2008 R2 SP1](/windows/release-health/status-windows-7-and-windows-server-2008-r2-sp1)<br/><br/>[Windows 8.1](/windows/release-health/status-windows-8.1-and-windows-server-2012-r2)<br/><br/>[Windows 7 SP1](/windows/release-health/status-windows-7-and-windows-server-2008-r2-sp1)|[Configuración de proxy y conectividad a Internet](onboard-downlevel.md#configure-proxy-and-internet-connectivity-settings)|
+|Edr|macOS (consulte [Requisitos del sistema](microsoft-defender-endpoint-mac.md))|[Defender para punto de conexión en macOS: conexiones de red](microsoft-defender-endpoint-mac.md#network-connections)|
 |[Antivirus de Microsoft Defender](microsoft-defender-antivirus-in-windows-10.md)|[Windows 10](/windows/release-health/release-information) <br/><br/> [Windows Server 2019](/windows/release-health/status-windows-10-1809-and-windows-server-2019)<br/><br/> Windows Server 2022 <br/><br/> [Windows Server 1803 o posterior](/windows-server/get-started/whats-new-in-windows-server-1803) <br/><br/> [Windows Server 2016](/windows-server/get-started/whats-new-in-windows-server-2016)<br/><br/>[Windows Server 2012 R2*](/windows/release-health/status-windows-8.1-and-windows-server-2012-r2)|[Configurar y validar las conexiones de red del Antivirus de Windows Defender](configure-network-connections-microsoft-defender-antivirus.md)|
-|Antivirus|macOS (consulte [Requisitos del sistema)](microsoft-defender-endpoint-mac.md)|[Defender para punto de conexión en macOS: conexiones de red](microsoft-defender-endpoint-mac.md#network-connections)|
+|Antivirus|macOS (consulte [Requisitos del sistema](microsoft-defender-endpoint-mac.md))|[Defender para punto de conexión en macOS: conexiones de red](microsoft-defender-endpoint-mac.md#network-connections)|
 |Antivirus|Linux (consulte [Requisitos del sistema](microsoft-defender-endpoint-linux.md#system-requirements))|[Defender para punto de conexión en Linux: conexiones de red](microsoft-defender-endpoint-linux.md#network-connections)|
 
 *Requiere la instalación de la solución moderna y unificada para Windows Server 2012 R2 y 2016. Para obtener más información, vea [Incorporación de servidores Windows al servicio de Microsoft Defender para punto de conexión](/microsoft-365/security/defender-endpoint/configure-server-endpoints).

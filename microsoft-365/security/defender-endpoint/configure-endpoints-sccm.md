@@ -6,23 +6,25 @@ ms.service: microsoft-365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
-ms.author: macapara
-author: mjcaparas
+ms.author: siosulli
+author: siosulli
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
-ms.collection: M365-security-compliance
+ms.collection:
+- m365-security
+- tier1
 ms.custom: admindeeplinkDEFENDER
 ms.topic: article
 ms.date: 09/22/2021
 ms.subservice: mde
 search.appverid: met150
-ms.openlocfilehash: 873a9e471324b0c987bfb34e4798dc4b3b679fd2
-ms.sourcegitcommit: 9b133379196da2b3a4bb311b07ff274f43780f68
+ms.openlocfilehash: 2cfbb87d3ce2edad9156f73898fd7765f2aad3f3
+ms.sourcegitcommit: 2ff545246fec060ea7829da5afbc1cdc698d51ab
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/14/2022
-ms.locfileid: "67699222"
+ms.lasthandoff: 10/04/2022
+ms.locfileid: "68363329"
 ---
 # <a name="onboard-windows-devices-using-configuration-manager"></a>Incorporación de dispositivos Windows mediante Configuration Manager
 
@@ -38,6 +40,11 @@ ms.locfileid: "67699222"
 
 > ¿Quiere experimentar Defender para punto de conexión? [Regístrese para obtener una prueba gratuita.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-configureendpointssccm-abovefoldlink)
 
+## <a name="prerequisites"></a>Requisitos previos
+- [Rol de sistema de sitio de punto de Endpoint Protection](/mem/configmgr/protect/deploy-use/endpoint-protection-site-role)
+
+> [!IMPORTANT]
+> El rol de sistema de sitio de punto de Endpoint Protection es necesario para que las directivas de reducción de superficie expuesta a ataques y antivirus se implementen correctamente en los puntos de conexión de destino.  Sin este rol, los puntos de conexión de la colección de dispositivos no recibirán las directivas de reducción de superficie expuesta a ataques y antivirus configuradas.
 
 Puede usar Configuration Manager para incorporar puntos de conexión al servicio Microsoft Defender para punto de conexión. 
 
@@ -68,7 +75,7 @@ Para cada dispositivo, puede establecer un valor de configuración para indicar 
 
 Puede establecer una regla de cumplimiento para el elemento de configuración en Configuration Manager para cambiar la configuración del recurso compartido de ejemplo en un dispositivo.
 
-Esta regla debe *ser un elemento* de configuración de regla de cumplimiento que establezca el valor de una clave del Registro en los dispositivos de destino para asegurarse de que son quejas.
+Esta regla debe *ser un elemento* de configuración de regla de cumplimiento que establezca el valor de una clave del Registro en los dispositivos de destino para asegurarse de que son compatibles.
 
 La configuración se establece a través de la siguiente entrada de clave del Registro:
 
@@ -119,7 +126,7 @@ Configure todas las reglas disponibles en Auditar.
 > [!NOTE]
 > Bloquear estas actividades puede interrumpir procesos empresariales legítimos. El mejor enfoque es establecer todo para auditar, identificar cuáles son seguras de activar y, a continuación, habilitar esa configuración en puntos de conexión que no tienen detecciones de falsos positivos.
 
-Para implementar directivas de ANTIVIRUS y ASR a través de Microsoft System Center Configuration Manager (SCCM), siga estos pasos:
+Para implementar directivas antivirus (AV) y reducción de superficie expuesta a ataques (ASR) a través de Microsoft Endpoint Configuration Manager (SCCM), siga estos pasos:
 
 - Habilite Endpoint Protection y configure opciones de cliente personalizadas.
 - Instale el cliente de Endpoint Protection desde un símbolo del sistema.
