@@ -11,15 +11,20 @@ ms.author: robmazz
 author: robmazz
 manager: laurawi
 audience: itpro
-ms.collection: m365-security-compliance
-ms.openlocfilehash: c193325608feef3bc8114b50af9d5e5832eb9d66
-ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
+ms.collection:
+- tier1
+- purview-compliance
+ms.openlocfilehash: 9bcd30f68f73d3596a55e1cd74a77aff32889df7
+ms.sourcegitcommit: 50da6f1f6ef2274c17ed9729e7ad84395b0a9be2
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/06/2022
-ms.locfileid: "66642555"
+ms.lasthandoff: 10/08/2022
+ms.locfileid: "68503938"
 ---
 # <a name="insider-risk-management-content-explorer"></a>Explorador de contenido de administración de riesgos internos
+
+>[!IMPORTANT]
+>Administración de riesgos internos de Microsoft Purview correlaciona varias señales para identificar posibles riesgos internos malintencionados o involuntarios, como el robo de IP, la pérdida de datos y las infracciones de seguridad. La administración de riesgos internos permite a los clientes crear directivas para administrar la seguridad y el cumplimiento. Creados con privacidad por diseño, los usuarios se seudonimizan de forma predeterminada y los controles de acceso basados en roles y los registros de auditoría están en su lugar para ayudar a garantizar la privacidad del nivel de usuario.
 
 El **explorador de contenido** de administración de riesgos internos permite a los usuarios *asignados el rol Insider Risk Management Investigators* examinar el contexto y los detalles del contenido asociado a la actividad en las alertas. Los datos del caso en el Explorador de contenido se actualizan diariamente para incluir nueva actividad. Para todas las alertas que se confirman en un caso, las copias de los archivos de datos y mensajes se archivan como una instantánea en el tiempo de los elementos, a la vez que se mantienen los archivos y mensajes originales en los orígenes de almacenamiento. Si es necesario, los archivos de datos de casos se pueden exportar como un archivo de documento portátil (PDF) o en el formato de archivo original.
 
@@ -32,13 +37,15 @@ Si el contenido incluye permisos de Information Rights Management, estos permiso
 > [!NOTE]
 > El Explorador de contenido incluye actividades de usuario relacionadas con archivos de servicio de Microsoft 365, como la actividad de usuario en SharePoint, Exchange, Microsoft Teams y OneDrive para la Empresa.
 
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
+
 ## <a name="column-options"></a>Opciones de columna
 
 Para facilitar que los analistas e investigadores de riesgo revisen los datos y mensajes capturados y revisen el contexto del caso, se incluyen varias herramientas de filtrado y ordenación en el Explorador de contenido. Para la ordenación básica, las columnas de clase **Date** y **File** admiten la ordenación mediante los títulos de columna en el panel de cola de contenido. Hay otras columnas de cola disponibles para agregarlas a la vista para proporcionar diferentes dinámicas en los archivos y mensajes.
 
 Para agregar o quitar encabezados de columna para la cola de contenido, use el control **Editar columnas** y seleccione una de las siguientes opciones de columna. Estas columnas se asignan a las condiciones comunes, de correo electrónico y de propiedad de documento admitidas en el Explorador de contenido y que se enumeran más adelante en este artículo.
 
-| **Opción Columna** | **Description** |
+| **Opción Columna** | **Descripción** |
 |:------------------|:----------------|
 | **Author** | El campo de autor de los documentos de Office, que persiste si se copia un documento. Por ejemplo, si un usuario crea un documento y lo envía por correo electrónico a otra persona que luego lo carga en SharePoint, el documento conservará el autor original. |
 | **Bcc** | Disponibles para los mensajes de correo electrónico, los usuarios en el campo mensaje CCO. |
@@ -49,9 +56,9 @@ Para agregar o quitar encabezados de columna para la cola de contenido, use el c
 | **Tiempo de creación** | La hora en que se creó el archivo o el mensaje de correo electrónico. |
 | **Fecha (UTC)** | Para correo electrónico, la fecha en que un destinatario recibió un mensaje o en que un remitente envió un mensaje. En el caso de los documentos, la fecha en que se modificó por última vez un documento. La fecha está en hora universal coordinada (UTC).|
 | **Tema dominante** | Tema dominante calculado para el análisis. |
-| **Id. del conjunto de correo electrónico** | Id. de grupo para todos los mensajes del mismo conjunto de correo electrónico. |
+| **Email id. de conjunto** | Id. de grupo para todos los mensajes del mismo conjunto de correo electrónico. |
 | **Id. de familia** | Id. de familia agrupa todos los elementos; para el correo electrónico, esta columna incluye el mensaje y todos los datos adjuntos; para los documentos, esta columna incluye el documento y los elementos incrustados. |
-| **Clase de archivo** | Para el contenido de SharePoint y OneDrive: **Documento**; para el contenido de Exchange: **correo electrónico** o **datos adjuntos**. |
+| **Clase de archivo** | Para el contenido de SharePoint y OneDrive: **Documento**; para el contenido de Exchange: **Email** o **datos adjuntos**. |
 | **Id. de archivo** | Identificador de documento único dentro del caso. |
 | **Icono de tipo de archivo** | Extensión de un archivo; por ejemplo, docx, one, pptx o xlsx. Este campo es la misma propiedad que la propiedad de sitio FileExtension. |
 | **ID** | Identificador GUID del archivo. |
@@ -71,7 +78,7 @@ Para agregar o quitar encabezados de columna para la cola de contenido, use el c
 | **Etiquetas de confidencialidad** | Las etiquetas de confidencialidad aplicadas al contenido. |
 | **Sent** | La fecha en la que un remitente envió un mensaje de correo electrónico. Este campo es la misma propiedad que la propiedad Correo electrónico enviado. |
 | **Size** | Para los correos electrónicos y documentos, el tamaño del elemento (en bytes). |
-| **Subject** | El texto en la línea de asunto de un mensaje de correo electrónico. |
+| **Asunto** | El texto en la línea de asunto de un mensaje de correo electrónico. |
 | **Asunto o título** | Para correo electrónico, el texto en la línea de asunto de un mensaje. Para los documentos, el título del documento. Como se explicó anteriormente, la propiedad Title es metadatos especificados en documentos de Microsoft Office. Puede escribir el nombre de más de un asunto o título, separados por comas. Dos o más valores están conectados de forma lógica por el operador de OR. |
 | **Lista de temas** | Lista de temas calculada para el análisis. |
 | **Title** | El título del documento. La propiedad Título son metadatos que se especifican en los documentos de Office. Es diferente del nombre de archivo del documento. |
@@ -83,7 +90,7 @@ Puede usar uno o varios filtros para restringir el ámbito de una búsqueda y de
 
 ### <a name="common-filters"></a>Filtros comunes
 
-| **Filtro** | **Descripción** |
+| **Filter** | **Descripción** |
 |:---------------------|:----------------|
 | **Fecha (UTC)** | Para correo electrónico, la fecha en que un destinatario recibió un mensaje o en que un remitente envió un mensaje. En el caso de los documentos, la fecha en que se modificó por última vez un documento. |
 | **Remitente/autor** | Para correo electrónico, la persona que envió un mensaje. En el caso de los documentos, la persona citada en el campo *Autor* de documentos de Office. Puede escribir más de un nombre, separados por comas. |
@@ -92,7 +99,7 @@ Puede usar uno o varios filtros para restringir el ámbito de una búsqueda y de
 
 ### <a name="email-filters"></a>Filtros de correo electrónico
 
-| **Filtro** | **Descripción** |
+| **Filter** | **Descripción** |
 |:---------------------|:----------------|
 | **Bcc** | Campo CCO de un mensaje de correo electrónico. |
 | **Cc** | Campo Cc de un mensaje de correo electrónico. |
@@ -111,7 +118,7 @@ Puede usar uno o varios filtros para restringir el ámbito de una búsqueda y de
 
 ## <a name="document-filters"></a>Filtros de documento
 
-| **Filters** | **Description** |
+| **Filters** | **Descripción** |
 |:---------------------|:----------------|
 | **Etiquetas de cumplimiento** | Etiquetas de cumplimiento aplicadas en Office 365. |
 | **Hora de creación (UTC)** | Fecha y hora en que se creó el archivo o mensaje de correo electrónico. La fecha y hora están en hora universal coordinada (UTC). |

@@ -17,15 +17,15 @@ ms.custom: asr
 ms.subservice: mde
 ms.topic: overview
 ms.collection:
-- m365initiative-m365-defender
-- M365-security-compliance
+- m365-security
+- tier2
 search.appverid: met150
-ms.openlocfilehash: 3114dbd6d94d425c8117f24631dc65f8762fedf7
-ms.sourcegitcommit: 9b133379196da2b3a4bb311b07ff274f43780f68
+ms.openlocfilehash: 94a1e3646a8b10f6569d03d23becb0b683913a79
+ms.sourcegitcommit: 4e42bafee965446f44f7f57d1defed2b9b24fce8
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/14/2022
-ms.locfileid: "67687882"
+ms.lasthandoff: 09/30/2022
+ms.locfileid: "68226237"
 ---
 # <a name="protect-your-network"></a>Proteger la red
 
@@ -45,7 +45,7 @@ ms.locfileid: "67687882"
 
 ## <a name="overview-of-network-protection"></a>Introducción a la protección de red
 
-La protección de red ayuda a proteger los dispositivos frente a eventos basados en Internet. La protección de red es una capacidad de reducción de la superficie expuesta a ataques. Ayuda a evitar que los empleados accedan a dominios peligrosos a través de aplicaciones. Los dominios que hospedan estafas de phishing, vulnerabilidades de seguridad y otro contenido malintencionado en Internet se consideran peligrosos. La protección de red expande el ámbito de [SmartScreen de Microsoft Defender](/windows/security/threat-protection/microsoft-defender-smartscreen/microsoft-defender-smartscreen-overview) para bloquear todo el tráfico HTTP saliente que intenta conectarse a orígenes de baja reputación (en función del dominio o el nombre de host).
+La protección de red ayuda a proteger los dispositivos frente a eventos basados en Internet. La protección de red es una capacidad de reducción de la superficie expuesta a ataques. Ayuda a evitar que los empleados accedan a dominios peligrosos a través de aplicaciones. Los dominios que hospedan estafas de phishing, vulnerabilidades de seguridad y otro contenido malintencionado en Internet se consideran peligrosos. La protección de red expande el ámbito de [Microsoft Defender SmartScreen](/windows/security/threat-protection/microsoft-defender-smartscreen/microsoft-defender-smartscreen-overview) para bloquear todo el tráfico HTTP saliente que intenta conectarse a orígenes de baja reputación (en función del dominio o el nombre de host).
 
 La protección de red amplía la protección de la [protección web](web-protection-overview.md) al nivel del sistema operativo. Proporciona la funcionalidad de protección web que se encuentra en Microsoft Edge a otros exploradores compatibles y aplicaciones que no son de explorador. La protección de red también proporciona visibilidad y bloqueo de indicadores de riesgo (IOC) cuando se usan con la [detección y respuesta de puntos de conexión](overview-endpoint-detection-response.md). Por ejemplo, la protección de red funciona con [los indicadores personalizados](manage-indicators.md) que puede usar para bloquear dominios o nombres de host específicos.
 
@@ -65,11 +65,11 @@ Vea este vídeo para obtener información sobre cómo la protección de red ayud
 
 ## <a name="requirements-for-network-protection"></a>Requisitos para la protección de red
 
-La protección de red requiere Windows 10 o 11 (Pro o Enterprise), Windows Server versión 1803 o posterior, macOS versión 11 o posterior, o versiones de Linux compatibles con Defender y protección en tiempo real del Antivirus de Microsoft Defender.
+La protección de red requiere Windows 10 o 11 (Pro o Enterprise), Windows Server versión 1803 o posterior, macOS versión 11 o posterior, o versiones de Linux compatibles con Defender y Microsoft Defender protección antivirus en tiempo real.
 
 | Versión de Windows | Antivirus de Microsoft Defender |
 |:---|:---|
-| Windows 10 versión 1709 o posterior <br/> Windows 11 <br/> Windows Server 1803 o posterior | Asegúrese de que la [protección en tiempo real del Antivirus de Microsoft Defender](configure-real-time-protection-microsoft-defender-antivirus.md) y la [protección entregada en la nube](enable-cloud-protection-microsoft-defender-antivirus.md) están habilitadas (activas). |
+| Windows 10 versión 1709 o posterior <br/> Windows 11 <br/> Windows Server 1803 o posterior | Asegúrese de que [Microsoft Defender protección antivirus en tiempo real](configure-real-time-protection-microsoft-defender-antivirus.md) y [la protección entregada en la nube](enable-cloud-protection-microsoft-defender-antivirus.md) estén habilitadas (activas). |
 
 ## <a name="why-network-protection-is-important"></a>Por qué es importante la protección de red
 
@@ -170,7 +170,7 @@ Microsoft Defender para punto de conexión Los administradores pueden configurar
 La protección de red está habilitada por dispositivo, que normalmente se realiza mediante la infraestructura de administración. Para ver los métodos admitidos, consulte [Activar la protección de red](enable-network-protection.md).
 
 > [!NOTE]
-> Antivirus de Microsoft Defender debe estar activo para habilitar la protección de red.
+> Microsoft Defender Antivirus debe estar activo para habilitar la protección de red.
 
 Puede habilitar la protección de red en modo **auditoría** o **modo de bloqueo** . Si desea evaluar el impacto de habilitar la protección de red antes de bloquear realmente direcciones IP o direcciones URL, puede habilitar la protección de red en el modo auditoría durante un período de tiempo para recopilar datos sobre lo que se bloquearía. Registros de modo de auditoría cuando los usuarios finales se han conectado a una dirección o sitio que, de lo contrario, habrían sido bloqueados por la protección de red.
 
@@ -295,7 +295,7 @@ Este es un ejemplo de cómo funciona:
 
 1. Supongamos que un usuario intenta acceder a un sitio web en su dispositivo. El sitio se hospeda en un dominio peligroso y debe estar bloqueado por la protección de red.  
 
-2. Comienza el protocolo de enlace triple a través de TCP/IP. Antes de que se complete, se registra una `NetworkConnectionEvents` acción y su `ActionType` aparece como `ConnectionSuccess`. Sin embargo, tan pronto como se complete el proceso de protocolo de enlace de tres vías, la protección de red bloquea el acceso al sitio. Todo esto sucede rápidamente. Se produce un proceso similar con [SmartScreen de Microsoft Defender](/windows/security/threat-protection/microsoft-defender-smartscreen/microsoft-defender-smartscreen-overview); es cuando se completa el protocolo de enlace triple que se realiza una determinación y el acceso a un sitio está bloqueado o permitido.
+2. Comienza el protocolo de enlace triple a través de TCP/IP. Antes de que se complete, se registra una `NetworkConnectionEvents` acción y su `ActionType` aparece como `ConnectionSuccess`. Sin embargo, tan pronto como se complete el proceso de protocolo de enlace de tres vías, la protección de red bloquea el acceso al sitio. Todo esto sucede rápidamente. Se produce un proceso similar con [Microsoft Defender SmartScreen](/windows/security/threat-protection/microsoft-defender-smartscreen/microsoft-defender-smartscreen-overview); es cuando se completa el protocolo de enlace triple que se realiza una determinación y se bloquea o se permite el acceso a un sitio.
 
 3. En el portal de Microsoft 365 Defender, se muestra una alerta en la cola de [alertas](alerts-queue.md). Los detalles de esa alerta incluyen tanto `NetworkConnectionEvents` como `AlertEvents`. Puede ver que el sitio se bloqueó, aunque también tenga un `NetworkConnectionEvents` elemento con actiontype de `ConnectionSuccess`.
 
@@ -328,7 +328,7 @@ Para Windows Server versión 1803 o posterior y Windows 10 Enterprise Multi-Sess
 
 ## <a name="network-protection-troubleshooting"></a>Solución de problemas de protección de red
 
-Debido al entorno donde se ejecuta la protección de red, es posible que Microsoft no pueda detectar la configuración del proxy del sistema operativo. En algunos casos, los clientes de protección de red no pueden acceder al servicio en la nube. Para resolver el problema de conectividad, [configure un proxy estático para el Antivirus de Microsoft Defender](configure-proxy-internet.md#configure-a-static-proxy-for-microsoft-defender-antivirus).
+Debido al entorno donde se ejecuta la protección de red, es posible que Microsoft no pueda detectar la configuración del proxy del sistema operativo. En algunos casos, los clientes de protección de red no pueden acceder al servicio en la nube. Para resolver el problema de conectividad, [configure un proxy estático para Microsoft Defender Antivirus](configure-proxy-internet.md#configure-a-static-proxy-for-microsoft-defender-antivirus).
 
 ## <a name="optimizing-network-protection-performance"></a>Optimización del rendimiento de la protección de red
 

@@ -11,18 +11,19 @@ ms.topic: conceptual
 ms.service: O365-seccomp
 ms.localizationpriority: high
 ms.collection:
-- M365-security-compliance
+- purview-compliance
+- tier1
 - SPO_Content
 search.appverid:
 - MOE150
 - MET150
-description: Usar etiquetas de retención para declarar registros.
-ms.openlocfilehash: 6a68f63c3f304ed4a5f3d79445cd713125327bd2
-ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
-ms.translationtype: HT
+description: Para declarar documentos y correos electrónicos como registros, use etiquetas de retención de Microsoft 365 que marquen elementos como un registro o un registro normativo.
+ms.openlocfilehash: 53ff0da40f3c7b8916d3dd70cbb0fc0e4d9aaeb9
+ms.sourcegitcommit: 6df492719fecc2b213d55465dc1cd60ab4627ed6
+ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/06/2022
-ms.locfileid: "66624297"
+ms.lasthandoff: 10/04/2022
+ms.locfileid: "68382059"
 ---
 # <a name="declare-records-by-using-retention-labels"></a>Usar etiquetas de retención para declarar registros
 
@@ -33,6 +34,8 @@ Para declarar documentos y correos electrónicos como [registros](records-manage
 Si no está seguro de si debe usar un registro o un registro normativo, consulte [Comparar las restricciones de las acciones que se permiten o se bloquean](records-management.md#compare-restrictions-for-what-actions-are-allowed-or-blocked). Si necesita usar registros normativos, primero tiene que ejecutar un comando de PowerShell, como se describe en la sección siguiente.
 
 Podrá entonces, o bien publicar dichas etiquetas en una directiva de etiquetas de retención (de modo que los usuarios y administradores puedan aplicarlas al contenido), o bien, en el caso de las etiquetas que marcan elementos como registros (no como registros normativos), podrá aplicarlas automáticamente al contenido que desee declarar como registro.
+
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
 
 ## <a name="how-to-display-the-option-to-mark-content-as-a-regulatory-record"></a>Cómo mostrar la opción para marcar contenido como un registro normativo
 

@@ -24,12 +24,12 @@ search.appverid:
 - GEA150
 ms.assetid: 0d6dfb17-8582-4172-a9a9-aed798150263
 description: Obtenga un informe periódico de cómo usan los usuarios los servicios de Microsoft 365 y explore en profundidad cada gráfico para obtener más información.
-ms.openlocfilehash: 1961b1eae6222ed81765842f17c854a87cced40e
-ms.sourcegitcommit: 0b7070ec119e00e0dafe030bbfbef0ae5c9afa19
+ms.openlocfilehash: 1c1c5539b553b26680c826c0329f5a69a6d5c798
+ms.sourcegitcommit: 50da6f1f6ef2274c17ed9729e7ad84395b0a9be2
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/29/2022
-ms.locfileid: "68186203"
+ms.lasthandoff: 10/08/2022
+ms.locfileid: "68503850"
 ---
 # <a name="microsoft-365-reports-in-the-admin-center"></a>Informes de Microsoft 365 en el centro de administración
 
@@ -170,9 +170,9 @@ El informe solo contendrá una propiedad de configuración de privacidad. Para o
 
 Aplicar estos cambios a los informes del panel Informes puede tardar unos minutos. Esta configuración también se aplica a los informes de uso de Microsoft 365 en [Microsoft Graph](/graph/api/resources/report) y [Power BI](/microsoft-365/admin/usage-analytics/usage-analytics) y a los [informes de uso en el Centro de administración de Microsoft Teams](/microsoftteams/teams-analytics-and-reports/teams-reporting-reference). Mostrar información de usuario identificable es un evento registrado en el registro de auditoría del portal de cumplimiento de Microsoft Purview.
 
-## <a name="what-happens-to-usage-data-when-a-user-account-is-closed"></a>¿Qué ocurre con los datos de uso cuando se cierra una cuenta de usuario?
+## <a name="what-happens-to-usage-data-when-a-user-account-is-deleted"></a>¿Qué ocurre con los datos de uso cuando se elimina una cuenta de usuario?
 
-Siempre que cierre una cuenta de usuario, Microsoft eliminará los datos de uso de ese usuario en un plazo de 30 días. Ese usuario seguirá estando incluido en el total del gráfico de actividades durante los períodos de actividad, pero no aparecerá en la tabla Detalles del usuario.
+Cada vez que elimine la cuenta de un usuario, Microsoft eliminará los datos de uso de ese usuario en un plazo de 30 días. Los usuarios eliminados seguirán estando incluidos en los totales del gráfico de actividad para los períodos en los que estaban activos, pero no aparecerán en la tabla Detalles del usuario.
 
 Sin embargo, al seleccionar un día concreto, hasta 28 días a partir de la fecha actual, el informe muestra el uso del usuario para ese día en la tabla Detalles del usuario.
 

@@ -1,6 +1,6 @@
 ---
-title: 'Mejor juntos: Antivirus de Microsoft Defender y Office 365 (incluido OneDrive): mejor protección contra ransomware y ciberamenazas'
-description: Office 365, que incluye OneDrive, se une maravillosamente con antivirus de Microsoft Defender. Lea este artículo para obtener más información.
+title: Mejor juntos- Microsoft Defender Antivirus y Office 365 (incluido OneDrive) - mejor protección contra ransomware y ciberamenazas
+description: Office 365, que incluye OneDrive, se une maravillosamente con Microsoft Defender Antivirus. Lea este artículo para obtener más información.
 keywords: windows defender, antivirus, office 365, onedrive, restauración, ransomware
 ms.service: microsoft-365-security
 ms.mktglfcycl: manage
@@ -17,14 +17,16 @@ ms.custom:
 ms.reviewer: ''
 manager: dansimp
 ms.subservice: mde
-ms.collection: M365-security-compliance
+ms.collection:
+- m365-security
+- tier2
 search.appverid: met150
-ms.openlocfilehash: 6d059ffd745d0013e6e9e61ca22f12250a309bd8
-ms.sourcegitcommit: 9b133379196da2b3a4bb311b07ff274f43780f68
+ms.openlocfilehash: ea28a3f60be9fa27032e9f3273a3f6ad29fe56b1
+ms.sourcegitcommit: 4e42bafee965446f44f7f57d1defed2b9b24fce8
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/14/2022
-ms.locfileid: "67704312"
+ms.lasthandoff: 09/30/2022
+ms.locfileid: "68226128"
 ---
 # <a name="better-together-microsoft-defender-antivirus-and-office-365"></a>Mejor juntos: Antivirus de Microsoft Defender y Office 365
 
@@ -42,13 +44,13 @@ ms.locfileid: "67704312"
 
 Es posible que ya sepa lo siguiente:
 
-- **Antivirus de Microsoft Defender protege el dispositivo Windows frente a amenazas de software, como virus, malware y spyware**. Antivirus de Microsoft Defender es su protección completa y continua, integrada en Windows 10 y Windows 11, y lista para usar. [Antivirus de Microsoft Defender es la protección de última generación](./microsoft-defender-antivirus-in-windows-10.md). 
+- **Microsoft Defender Antivirus protege el dispositivo Windows frente a amenazas de software, como virus, malware y spyware**. Microsoft Defender Antivirus es su protección completa y continua, integrada en Windows 10 y Windows 11, y lista para usar. [Microsoft Defender Antivirus es la protección de última generación](./microsoft-defender-antivirus-in-windows-10.md). 
 
 - **Office 365 incluye protección antifishing, antispam y antimalware**. Con su suscripción Office 365, obtendrá correo electrónico premium y calendarios, aplicaciones de Office, 1 TB de almacenamiento en la nube (a través de OneDrive) y seguridad avanzada en todos los dispositivos. Esto se aplica a los usuarios domésticos y empresariales. Y si es un usuario empresarial y su organización usa Office 365 E5, obtendrá aún más protección a través de Microsoft Defender para Office 365 [Proteger contra amenazas con Office 365](/microsoft-365/security/office-365-security/protect-against-threats).
 
 - **OneDrive, incluido en Office 365, le permite almacenar sus archivos y carpetas en línea, y compartirlos como considere oportuno**. Puede trabajar junto con personas (por trabajo o diversión) y archivos coautores que se almacenan en OneDrive. También puede acceder a sus archivos en todos los dispositivos (su PC, teléfono y tableta). [Administrar el uso compartido en OneDrive](/OneDrive/manage-sharing).
 
-**¿Pero sabía que hay buenas razones de seguridad para usar el Antivirus de Microsoft Defender junto con Office 365**? A continuación se indican dos:
+**¿Pero sabía que hay buenas razones de seguridad para usar Microsoft Defender Antivirus junto con Office 365**? A continuación se indican dos:
 
  1. [Obtiene protección y recuperación de ransomware](#ransomware-protection-and-recovery).
 
@@ -58,11 +60,11 @@ Lea las secciones siguientes para obtener más información.
 
 ## <a name="ransomware-protection-and-recovery"></a>Protección y recuperación de ransomware
 
-Al guardar los archivos en [OneDrive](/onedrive) y antivirus de [Microsoft Defender](./microsoft-defender-antivirus-in-windows-10.md) detecta una amenaza de ransomware en el dispositivo, se producen las siguientes cosas:
+Al guardar los archivos en [OneDrive](/onedrive) y [Microsoft Defender Antivirus](./microsoft-defender-antivirus-in-windows-10.md) detecta una amenaza de ransomware en el dispositivo, se producen las siguientes cosas:
 
 1. **Se le habla de la amenaza**. (Si su organización usa [Microsoft Defender para punto de conexión](microsoft-defender-endpoint.md), también se notifica al equipo de operaciones de seguridad).
 
-2. **Antivirus de Microsoft Defender le ayuda (y al equipo de seguridad de su organización) a quitar el ransomware** de los dispositivos. (Si su organización usa Microsoft Defender para punto de conexión, el equipo de operaciones de seguridad puede determinar si otros dispositivos están infectados y tomar también las medidas adecuadas).
+2. **Microsoft Defender Antivirus le ayuda (y al equipo de seguridad de su organización) a quitar el ransomware** de los dispositivos. (Si su organización usa Microsoft Defender para punto de conexión, el equipo de operaciones de seguridad puede determinar si otros dispositivos están infectados y tomar también las medidas adecuadas).
 
 3. **Obtiene la opción de recuperar los archivos en OneDrive**. Con la característica de restauración de archivos de OneDrive, puede recuperar los archivos en OneDrive al estado en el que se encontraban antes de que se produjera el ataque de ransomware. Consulte [Detección de ransomware y recuperación de archivos](https://support.office.com/article/0d90ec50-6bfd-40f4-acc7-b8c12c73637f).
 

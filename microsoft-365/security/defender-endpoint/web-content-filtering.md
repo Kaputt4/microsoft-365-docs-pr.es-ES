@@ -11,17 +11,19 @@ author: denisebmsft
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
-ms.collection: M365-security-compliance
+ms.collection:
+- m365-security
+- tier2
 ms.custom: admindeeplinkDEFENDER
 ms.topic: article
 ms.subservice: mde
 search.appverid: met150
-ms.openlocfilehash: 4097a916e83905f717e24df0b3c6e0b6b9a24be9
-ms.sourcegitcommit: 9b133379196da2b3a4bb311b07ff274f43780f68
+ms.openlocfilehash: 3f4108bb160b814f584f42b0cbbd08cea504cfd9
+ms.sourcegitcommit: 4e42bafee965446f44f7f57d1defed2b9b24fce8
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/14/2022
-ms.locfileid: "67687557"
+ms.lasthandoff: 09/30/2022
+ms.locfileid: "68225908"
 ---
 # <a name="web-content-filtering"></a>Filtrado de contenido web
 
@@ -34,11 +36,15 @@ ms.locfileid: "67687557"
 > [!TIP]
 > ¿Quiere experimentar Microsoft Defender para punto de conexión? [Regístrese para obtener una prueba gratuita.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-main-abovefoldlink&rtc=1)
 
+
 ## <a name="what-is-web-content-filtering"></a>¿Qué es el filtrado de contenido web?
 
 El filtrado de contenido web forma parte de las funcionalidades de [protección web](web-protection-overview.md) en Microsoft Defender para punto de conexión y Microsoft Defender para Empresas. El filtrado de contenido web permite a su organización realizar un seguimiento y regular el acceso a sitios web en función de sus categorías de contenido. Muchos de estos sitios web (incluso si no son malintencionados) pueden ser problemáticos debido a las regulaciones de cumplimiento, el uso del ancho de banda u otros problemas.
 
 Configure directivas en los grupos de dispositivos para bloquear determinadas categorías. El bloqueo de una categoría impide que los usuarios de grupos de dispositivos especificados accedan a las direcciones URL asociadas a la categoría. Para cualquier categoría que no esté bloqueada, las direcciones URL se auditan automáticamente. Los usuarios pueden acceder a las direcciones URL sin interrupciones y recopilará estadísticas de acceso para ayudar a crear una decisión de directiva más personalizada. Los usuarios verán una notificación de bloque si un elemento de la página que están viendo realiza llamadas a un recurso bloqueado.
+
+> [!NOTE]
+> La creación de grupos de dispositivos se admite en El plan 1 y el plan 2 de Defender para punto de conexión.
 
 El filtrado de contenido web está disponible en los principales exploradores web, con bloques realizados por Windows Defender SmartScreen (Microsoft Edge) y Network Protection (Chrome, Firefox, Brave y Opera). Para obtener más información sobre la compatibilidad con exploradores, consulte la sección [requisitos previos](#prerequisites) .
 

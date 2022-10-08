@@ -14,15 +14,16 @@ ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection:
-- m365-security-compliance
+- m365-security
+- tier2
 ms.topic: conceptual
 ms.subservice: mde
-ms.openlocfilehash: 25eb7c0c556218d205d1a9994a31ba657dc34bec
-ms.sourcegitcommit: 078149c9645ce220911ccd6ce54f984a4c92ce53
+ms.openlocfilehash: 417638846fdda71039a3a139327a70e1e57ae6c7
+ms.sourcegitcommit: 4e42bafee965446f44f7f57d1defed2b9b24fce8
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/20/2022
-ms.locfileid: "67811360"
+ms.lasthandoff: 09/30/2022
+ms.locfileid: "68226567"
 ---
 # <a name="microsoft-defender-for-endpoint-preview-features"></a>características de Microsoft Defender para punto de conexión versión preliminar
 

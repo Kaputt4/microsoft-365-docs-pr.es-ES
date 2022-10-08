@@ -1,5 +1,5 @@
 ---
-title: Definición de entidad de encabezado de autorización HTTP (versión preliminar)
+title: Definición de entidad de encabezado de autorización HTTP
 f1.keywords:
 - CSH
 ms.author: chrfox
@@ -14,21 +14,26 @@ f1_keywords:
 ms.service: O365-seccomp
 ms.localizationpriority: medium
 ms.collection:
-- M365-security-compliance
+- tier3
+- purview-compliance
 hideEdit: true
 feedback_system: None
 recommendations: false
 description: Definición de entidad de tipo de información confidencial del encabezado de autorización HTTP.
-ms.openlocfilehash: b72934a88f85c0245320baa4b774d3c69196eb47
-ms.sourcegitcommit: 5aed330d8af523f0dffe5e392f1c79f047e38172
+ms.openlocfilehash: 052323c22f75a2ff9e843ed34b0340e11726aafa
+ms.sourcegitcommit: 50da6f1f6ef2274c17ed9729e7ad84395b0a9be2
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/21/2022
-ms.locfileid: "67000424"
+ms.lasthandoff: 10/08/2022
+ms.locfileid: "68503872"
 ---
-# <a name="http-authorization-header-preview"></a>Encabezado de autorización HTTP (versión preliminar)
+# <a name="http-authorization-header"></a>Encabezado de autorización HTTP
 
-## <a name="format"></a>Formato
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
+
+Esta SIT también se incluye en el SIT de [todas las credenciales](sit-defn-all-creds.md) agrupadas.
+
+ ## <a name="format"></a>Formato
 
 Encabezado de autorización usado en la solicitud HTTP.
 
@@ -41,9 +46,15 @@ Varios formatos de encabezado de autenticación, por ejemplo:
 `authorization: digest ********` <br>
 `authorization: negotiate ********` <br>
 
+## <a name="credential-example"></a>Ejemplo de credencial 
+
+`Authorization: Basic ABCDEFGHIJKLMNOPQRS0123456789;`
+
 ## <a name="checksum"></a>Suma de comprobación
 
 No
+
+Los SIT que tienen sumas de comprobación usan un cálculo único para comprobar si la información es válida. Esto significa que cuando el valor **de suma de comprobación** es **Sí**, el servicio puede realizar una detección positiva solo en función de los datos confidenciales. Cuando el valor **de suma de comprobación** es **No** se deben detectar elementos adicionales (secundarios) para que el servicio realice una detección positiva.
 
 ## <a name="definition"></a>Definición
 
