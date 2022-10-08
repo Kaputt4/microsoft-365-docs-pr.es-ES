@@ -8,9 +8,10 @@ manager: scotv
 ms.reviewer: mijeffer, jmueller
 audience: Admin
 ms.topic: article
-ms.service: o365-administration
+ms.service: microsoft-365-business
 ms.localizationpriority: medium
 ms.collection:
+- scotvorg
 - M365-subscription-management
 - Adm_O365
 ms.custom:
@@ -19,12 +20,12 @@ ms.custom:
 search.appverid: MET150
 description: Obtenga información sobre cómo administrar suscripciones de registro de autoservicio gratuitas para su organización.
 ms.date: 03/17/2021
-ms.openlocfilehash: 58c58c849b72c170e0ccf10de54389bd1245bced
-ms.sourcegitcommit: 3b194dd6f9ce531ae1b33d617ab45990d48bd3d0
+ms.openlocfilehash: ba7bfabd55f1b5d92cd4906c3be9f915255aa697
+ms.sourcegitcommit: 0b7070ec119e00e0dafe030bbfbef0ae5c9afa19
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/15/2022
-ms.locfileid: "66102358"
+ms.lasthandoff: 09/29/2022
+ms.locfileid: "68185609"
 ---
 # <a name="manage-self-service-sign-up-subscriptions"></a>Administración de suscripciones de registro de autoservicio
 
@@ -34,7 +35,7 @@ Hay un número limitado de suscripciones de registro de autoservicio gratuitas d
 
 ## <a name="view-a-list-of-self-service-sign-up-subscriptions"></a>Ver una lista de suscripciones de registro de autoservicio
 
-1. En el centro de administración, vaya a la página **Facturación** > <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">Sus productos</a>.
+1. En el centro de administración, vaya a la página de **Facturación** > <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">Sus productos</a>.
 2. En la pestaña **Productos** , seleccione el icono de filtro y, a continuación, seleccione **Gratis**. Se muestra una lista de todas las suscripciones de registro de autoservicio.
 
 ## <a name="how-are-these-subscriptions-different-from-self-service-purchase-subscriptions"></a>¿En qué se diferencian estas suscripciones de las suscripciones de compra de autoservicio?
@@ -50,7 +51,7 @@ Use el cmdlet [**Set-MsolCompanySettings**](/powershell/module/msonline/set-msol
 > [!IMPORTANT]
 > Al eliminar una suscripción de registro de autoservicio, se impide que todos los usuarios accedan a sus datos y correo electrónico, y se eliminan todos los datos y el correo electrónico.
 
-1. En el centro de administración, vaya a la página **Facturación** > <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">Sus productos</a>.
+1. En el centro de administración, vaya a la página de **Facturación** > <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">Sus productos</a>.
 2. En la pestaña **Productos** , seleccione el icono de filtro y, a continuación, seleccione **Gratis**.
 3. Seleccione la suscripción de registro de autoservicio que desea eliminar. 
 4. En la página de detalles de la suscripción, en la sección **Suscripciones y configuración de pago** , seleccione **Eliminar suscripción**.

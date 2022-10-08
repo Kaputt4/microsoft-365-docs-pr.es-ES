@@ -1,5 +1,5 @@
 ---
-title: Programar exámenes rápidos y completos normales con antivirus de Microsoft Defender
+title: Programar exámenes rápidos y completos normales con Microsoft Defender Antivirus
 description: Configurar exámenes periódicos (programados), incluidos cuándo se deben ejecutar y si se ejecutan como exámenes completos o rápidos
 keywords: examen rápido, examen completo, rápido frente a completo, examen programado, diario, semanal, tiempo, programado, periódico, regular
 ms.service: microsoft-365-security
@@ -15,14 +15,16 @@ ms.reviewer: pauhijbr, ksarens, mkaminska
 manager: dansimp
 ms.subservice: mde
 ms.topic: how-to
-ms.collection: M365-security-compliance
+ms.collection:
+- m365-security
+- tier3
 search.appverid: met150
-ms.openlocfilehash: 8335a7da5ebd37e572079ca75570b90dc40a45a7
-ms.sourcegitcommit: 9b133379196da2b3a4bb311b07ff274f43780f68
+ms.openlocfilehash: 8e3603887a7b4c1713c72bfe4640c63d71f44c1b
+ms.sourcegitcommit: 4e42bafee965446f44f7f57d1defed2b9b24fce8
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/14/2022
-ms.locfileid: "67689545"
+ms.lasthandoff: 09/30/2022
+ms.locfileid: "68219110"
 ---
 # <a name="configure-scheduled-quick-or-full-microsoft-defender-antivirus-scans"></a>Configurar los análisis programados rápidos o completos del Antivirus de Windows Defender
 
@@ -45,9 +47,9 @@ Además de la protección siempre activa en tiempo real y los exámenes [antivir
 
 ## <a name="keep-the-following-points-in-mind"></a>Tenga en cuenta los siguientes puntos
 
-- De forma predeterminada, antivirus de Microsoft Defender comprueba si hay una actualización 15 minutos antes de la hora de los exámenes programados. Puede [administrar la programación de cuándo se deben descargar y aplicar las actualizaciones de protección](manage-protection-update-schedule-microsoft-defender-antivirus.md) para invalidar este valor predeterminado.
+- De forma predeterminada, Microsoft Defender Antivirus comprueba si hay una actualización 15 minutos antes de la hora de los exámenes programados. Puede [administrar la programación de cuándo se deben descargar y aplicar las actualizaciones de protección](manage-protection-update-schedule-microsoft-defender-antivirus.md) para invalidar este valor predeterminado.
 
-- Si un dispositivo está desconectado y funcionando con batería durante un examen completo programado, el examen programado se detendrá con el evento 1002, que indica que el examen se detuvo antes de la finalización. Antivirus de Microsoft Defender ejecutará un examen completo en la próxima hora programada.
+- Si un dispositivo está desconectado y funcionando con batería durante un examen completo programado, el examen programado se detendrá con el evento 1002, que indica que el examen se detuvo antes de la finalización. Microsoft Defender Antivirus ejecutará un examen completo en la próxima hora programada.
 
 ## <a name="quick-scan-full-scan-and-custom-scan"></a>Examen rápido, examen completo y examen personalizado
 
@@ -71,7 +73,7 @@ Use la tabla siguiente para elegir un tipo de examen.
 |Las amenazas, como el malware, se detectan en un dispositivo individual|Examen rápido <p> En la mayoría de los casos, un examen rápido detectará y limpiará el malware detectado.|
 |Desea ejecutar un examen a [petición](run-scan-microsoft-defender-antivirus.md)|Examen rápido|
 |Quiere asegurarse de que un dispositivo portátil, como una unidad USB, no contenga malware.|Examen personalizado <p> Un examen personalizado le permite seleccionar ubicaciones, carpetas o archivos específicos y ejecuta un examen rápido.|
-| Acaba de instalar o volver a habilitar el Antivirus de Microsoft Defender. | Examen completo <p>La ejecución de un examen completo después de haber habilitado o instalado el Antivirus de Microsoft Defender ayuda a rellenar la memoria caché para exámenes futuros. El examen completo también puede ayudar a detectar amenazas existentes en el dispositivo. |
+| Acaba de instalar o volver a habilitar Microsoft Defender Antivirus | Examen completo <p>La ejecución de un examen completo después de haber habilitado o instalado Microsoft Defender Antivirus ayuda a rellenar la memoria caché para exámenes futuros. El examen completo también puede ayudar a detectar amenazas existentes en el dispositivo. |
 
 ## <a name="what-else-do-i-need-to-know-about-quick-and-full-scans"></a>¿Qué más necesito saber sobre los exámenes rápidos y completos?
 
@@ -79,11 +81,31 @@ Use la tabla siguiente para elegir un tipo de examen.
 
 - La protección de acceso con [protección proporcionada](cloud-protection-microsoft-defender-antivirus.md) en la nube ayuda a garantizar que todos los archivos a los que se accede en el sistema se examinan con los modelos más recientes de inteligencia de seguridad y aprendizaje automático en la nube.
 
-- Cuando la protección en tiempo real detecta malware y la extensión de los archivos afectados no se determina inicialmente, Antivirus de Microsoft Defender inicia un examen completo como parte del proceso de corrección.
+- Cuando la protección en tiempo real detecta malware y la extensión de los archivos afectados no se determina inicialmente, Microsoft Defender Antivirus inicia un examen completo como parte del proceso de corrección.
 
 - Un examen completo puede detectar archivos malintencionados que otros exámenes no detectaron, como un examen rápido. Sin embargo, un examen completo puede tardar un tiempo y usar recursos valiosos del sistema para completarse.
 
 - Si un dispositivo está sin conexión durante un período de tiempo prolongado, un examen completo puede tardar más tiempo en completarse.
+
+## <a name="scheduled-quick-scan-performance-optimization"></a>Optimización programada del rendimiento del examen rápido 
+
+Como optimización del rendimiento, Microsoft Defender Antivirus omitirá la ejecución de exámenes rápidos programados en algunas situaciones. Esta optimización solo se aplica a un examen rápido cuando se inicia mediante una programación; no afecta a un examen rápido iniciado por un examen [antivirus a petición](run-scan-microsoft-defender-antivirus.md) . Esta optimización reduce la degradación del rendimiento evitando ejecutar un examen rápido cuando no es necesario y no afectará a la protección.
+
+De forma predeterminada, si se ejecutó un examen rápido calificado en los últimos siete días, no se iniciará un nuevo examen rápido. Un examen rápido se considera calificado si se produce después de instalar la última [actualización de Inteligencia de seguridad](manage-updates-baselines-microsoft-defender-antivirus.md) , Real-Time Protección no se deshabilitó durante ese período y si la máquina se ha reiniciado.  
+
+Esta optimización no se aplica a las condiciones siguientes: 
+
+- Si Microsoft Defender para punto de conexión está [administrado](configuration-management-reference-microsoft-defender-antivirus.md)  
+
+- Si Microsoft Defender [detección y respuesta de puntos de conexión (EDR)](overview-endpoint-detection-response.md) está instalado 
+
+- Si el equipo se ha reiniciado desde el último examen rápido
+
+- Si Microsoft Defender para punto de conexión Real-Time Protección se ha deshabilitado desde que se produjo el último examen rápido, incluido si está deshabilitado actualmente 
+
+- Si no se completó el último examen rápido iniciado
+
+Esta optimización se aplica a las máquinas que ejecutan Windows 10 actualización de aniversario (versión 1607) y todas las versiones posteriores de Windows, así como a Windows Server 2016 (versión 1607) y versiones posteriores de Windows Server, pero no se aplica a las instalaciones de Core Server.  
 
 > [!TIP]
 > Si busca información relacionada con el antivirus para otras plataformas, consulte:

@@ -6,9 +6,10 @@ manager: scotv
 ms.date: 06/03/2020
 audience: Admin
 ms.topic: article
-ms.service: microsoft-365-enterprise
+ms.service: o365-administration
 ms.localizationpriority: medium
 ms.collection:
+- scotvorg
 - Ent_O365
 - SPO_Content
 search.appverid:
@@ -19,12 +20,12 @@ search.appverid:
 f1.keywords:
 - NOCSH
 description: Use la herramienta Diagnóstico de páginas para SharePoint para analizar el portal moderno de SharePoint Online y las páginas de publicación clásicas con un conjunto predefinido de criterios de rendimiento.
-ms.openlocfilehash: 0d89d16ead05a5a683fbfbf7b1dde35cde4dcde9
-ms.sourcegitcommit: 437461fa1d38ff9bb95dd8a1c5f0b94e8111ada2
+ms.openlocfilehash: c97a2a62cd75bdfe153f4794962c0f5f1ad22669
+ms.sourcegitcommit: 99b174a8d431092b3cf7d650593248671297fd91
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/14/2022
-ms.locfileid: "67670209"
+ms.lasthandoff: 09/30/2022
+ms.locfileid: "68300484"
 ---
 # <a name="use-the-page-diagnostics-for-sharepoint-tool"></a>Uso de la herramienta Diagnóstico de páginas para SharePoint
 
@@ -38,7 +39,10 @@ La herramienta Diagnósticos de página para SharePoint se puede instalar para:
 >[!TIP]
 >La versión **2.0.0** y posteriores incluye compatibilidad con páginas modernas, además de páginas de sitio clásicas. Si no está seguro de qué versión de la herramienta está usando, puede seleccionar el vínculo **Acerca** de o los puntos suspensivos (...) para comprobar la versión. **Actualice siempre a la versión más reciente** cuando use la herramienta.
 
-La herramienta de Diagnóstico de páginas para SharePoint es una extensión de explorador para los nuevos exploradores de Microsoft Edge (https://www.microsoft.com/edge) y Chrome que analiza las páginas del sitio de publicación clásicas y las modernas del portal de SharePoint Online. Esta herramienta solo funciona para SharePoint Online y no se puede usar en una página del sistema de SharePoint.
+La herramienta de Diagnóstico de páginas para SharePoint es una extensión de explorador para los nuevos exploradores de Microsoft Edge (https://www.microsoft.com/edge) y Chrome que analiza las páginas del sitio de publicación clásicas y las modernas del portal de SharePoint Online. 
+
+> [!IMPORTANT]
+> Esta herramienta solo funciona para SharePoint Online y no se puede usar en una página del sistema de SharePoint ni en una página de aplicación de SharePoint. El tipo de página Aplicación está diseñado para usarse para aplicaciones empresariales específicas dentro de SharePoint Online y no para portales. La herramienta está diseñada para optimizar las páginas del portal y las páginas de sitio de Teams.
 
 La herramienta genera un informe para cada página analizada que muestra cómo funciona la página con un conjunto predefinido de reglas y muestra información detallada cuando los resultados de una prueba quedan fuera del valor de línea base. Los administradores y diseñadores de SharePoint Online pueden usar la herramienta para solucionar problemas de rendimiento y asegurarse de que las páginas nuevas están optimizadas antes de la publicación.
 

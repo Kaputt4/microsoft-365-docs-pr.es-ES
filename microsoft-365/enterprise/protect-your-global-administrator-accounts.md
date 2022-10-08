@@ -9,11 +9,13 @@ ms.topic: article
 ms.service: microsoft-365-enterprise
 ms.localizationpriority: medium
 ms.collection:
+- scotvorg
 - Strat_O365_IP
 - m365initiative-coredeploy
 - m365solution-m365-identity
 - m365solution-scenario
 - zerotrust-solution
+- highpri
 search.appverid:
 - MET150
 - MOE150
@@ -25,12 +27,12 @@ f1.keywords:
 ms.assetid: 6b4ded77-ac8d-42ed-8606-c014fd947560
 description: En este artículo se proporciona información sobre cómo proteger el acceso con privilegios al inquilino de Microsoft 365.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 3639ca3ea132c900db38d5dd16278ce756a2cc24
-ms.sourcegitcommit: 437461fa1d38ff9bb95dd8a1c5f0b94e8111ada2
+ms.openlocfilehash: 8d8141ddda92f23a03cfe77c390b3a7c7b36a464
+ms.sourcegitcommit: 0b7070ec119e00e0dafe030bbfbef0ae5c9afa19
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/14/2022
-ms.locfileid: "67671179"
+ms.lasthandoff: 09/29/2022
+ms.locfileid: "68210314"
 ---
 # <a name="step-2-protect-your-microsoft-365-privileged-accounts"></a>Paso 2. Protección de las cuentas con privilegios de Microsoft 365
 
@@ -128,7 +130,7 @@ Para obtener más información, consulte:
 
 ### <a name="privileged-access-management"></a>Administración del acceso con privilegios
 
-La administración de acceso con privilegios se habilita configurando las directivas que especifiquen el acceso puntual para las actividades basadas en tareas en el espacio empresarial. Puede ayudar a proteger la organización contra infracciones que puedan usar las cuentas existentes de administrador con privilegios con acceso permanente a datos confidenciales o acceder a opciones de configuración críticas. Por ejemplo, puede configurar una directiva de administración de acceso con privilegios que requiera una autorización explícita para acceder y modificar la configuración del buzón de correo del espacio empresarial.
+Privileged access management is enabled by configuring policies that specify just-in-time access for task-based activities in your tenant. It can help protect your organization from breaches that may use existing privileged administrator accounts with standing access to sensitive data or access to critical configuration settings. For example, you could configure a privileged access management policy that requires explicit approval to access and change organization mailbox settings in your tenant.
 
 En este paso, habilitará la administración de acceso con privilegios en el inquilino y configurará directivas de acceso con privilegios que proporcionan seguridad adicional para el acceso basado en tareas a los datos y la configuración de la organización. Hay tres pasos básicos para empezar a usar el acceso con privilegios en su organización:
 

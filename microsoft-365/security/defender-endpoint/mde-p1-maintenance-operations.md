@@ -13,13 +13,15 @@ ms.subservice: mde
 ms.localizationpriority: medium
 ms.reviewer: inbadian
 f1.keywords: NOCSH
-ms.collection: M365-security-compliance
-ms.openlocfilehash: 41b76968dbaf868d200ab9841893300a36e80fc6
-ms.sourcegitcommit: 228fa13973bf7c2d91504703fab757f552ae40dd
+ms.collection:
+- m365-security
+- tier1
+ms.openlocfilehash: 90217023d016e08844898fdd3b43955e4d86be35
+ms.sourcegitcommit: 4e42bafee965446f44f7f57d1defed2b9b24fce8
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/01/2022
-ms.locfileid: "67514265"
+ms.lasthandoff: 09/30/2022
+ms.locfileid: "68228106"
 ---
 # <a name="manage-microsoft-defender-for-endpoint-plan-1"></a>Administrar Microsoft Defender para punto de conexión plan 1
 
@@ -34,12 +36,12 @@ Al usar el plan 1 de Defender para punto de conexión en su organización, el eq
 
 ## <a name="manage-security-intelligence-and-product-updates"></a>Administración de la inteligencia de seguridad y las actualizaciones de productos
 
-Mantener actualizado el Antivirus de Microsoft Defender es fundamental para protegerse contra nuevas técnicas de ataque y malware. Microsoft publica actualizaciones periódicas para la inteligencia de seguridad, el antivirus y la protección antimalware. Novedades se organizan en dos categorías: 
+Mantener Microsoft Defender Antivirus actualizado es fundamental para protegerse contra nuevas técnicas de ataque y malware. Microsoft publica actualizaciones periódicas para la inteligencia de seguridad, el antivirus y la protección antimalware. Novedades se organizan en dos categorías: 
 
 - Actualizaciones de inteligencia de seguridad
 - Actualizaciones de productos 
 
-Para administrar la inteligencia de seguridad y las actualizaciones de productos, consulte [Administración de actualizaciones del Antivirus de Microsoft Defender y aplicación de líneas base](manage-updates-baselines-microsoft-defender-antivirus.md).
+Para administrar la inteligencia de seguridad y las actualizaciones de productos, consulte [Administración de actualizaciones Microsoft Defender Antivirus y aplicación de líneas base](manage-updates-baselines-microsoft-defender-antivirus.md).
 
 ## <a name="fine-tune-and-adjust-defender-for-endpoint"></a>Ajuste y ajuste de Defender para punto de conexión
 

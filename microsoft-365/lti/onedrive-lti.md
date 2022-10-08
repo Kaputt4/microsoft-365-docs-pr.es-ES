@@ -6,18 +6,18 @@ manager: serdars
 ms.reviewer: amitman
 audience: admin
 ms.topic: article
-ms.service: o365-administration
+ms.service: microsoft-365-business
 f1.keywords:
 - CSH
 ms.collection: M365-modern-desktop
 ms.localizationpriority: medium
 description: Crear y calificar asignaciones, compilar y mantener contenido del curso, y colaborar en archivos en tiempo real con el LTI de Microsoft OneDrive para Canvas.
-ms.openlocfilehash: 659493f624b2c269c2e5eb51e1d902ab249e0cc7
-ms.sourcegitcommit: b1ed6470645455c2f1fcf467450debc622c40147
+ms.openlocfilehash: 405a47ee9ff510e452fa632eaef52b07aba2876b
+ms.sourcegitcommit: 0b7070ec119e00e0dafe030bbfbef0ae5c9afa19
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/15/2022
-ms.locfileid: "67709539"
+ms.lasthandoff: 09/29/2022
+ms.locfileid: "68203912"
 ---
 # <a name="integrate-microsoft-onedrive-lti-with-canvas"></a>Integración de LTI de Microsoft OneDrive con Canvas
 

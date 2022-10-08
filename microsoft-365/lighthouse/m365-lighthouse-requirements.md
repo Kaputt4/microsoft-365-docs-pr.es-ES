@@ -10,6 +10,7 @@ ms.topic: article
 ms.service: microsoft-365-lighthouse
 ms.localizationpriority: medium
 ms.collection:
+- scotvorg
 - M365-subscription-management
 - Adm_O365
 ms.custom:
@@ -17,12 +18,12 @@ ms.custom:
 - M365-Lighthouse
 search.appverid: MET150
 description: Para los proveedores de servicios administrados (MSP), obtenga una lista de los requisitos para usar Microsoft 365 Lighthouse.
-ms.openlocfilehash: 8fa936e453c4ae61d92591c2b3320b246cb5bd3b
-ms.sourcegitcommit: 2b89bcff547e00be3d38dc8d1e6cbcf8f41eba42
+ms.openlocfilehash: 224b5dcb1eb77fac1d582b75a75f10aa527cd247
+ms.sourcegitcommit: 99b174a8d431092b3cf7d650593248671297fd91
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/03/2022
-ms.locfileid: "67599250"
+ms.lasthandoff: 09/30/2022
+ms.locfileid: "68297758"
 ---
 # <a name="requirements-for-microsoft-365-lighthouse"></a>Requisitos para Microsoft 365 Lighthouse
 
@@ -36,7 +37,7 @@ Además, cada inquilino del cliente MSP debe calificar para Lighthouse cumpliend
 - Debe tener al menos un Microsoft 365 Empresa Premium, Microsoft 365 E3, Microsoft 365 E5, Windows 365 Business o Microsoft Defender para Empresas Licencia
 - No debe tener más de 2500 usuarios con licencia
 
- \*Se requiere privilegios de Administración delegados granulares (GDAP) más una relación de revendedor indirecto o una relación de privilegios delegados de Administración (DAP) para incorporar clientes a Lighthouse. Si DAP y GDAP coexisten en un inquilino de cliente, los permisos de GDAP tienen prioridad para los técnicos de MSP en grupos de seguridad habilitados para GDAP. Próximamente, los clientes con relaciones solo de GDAP (sin relaciones de revendedor indirecto) podrán incorporarse a Lighthouse.
+\*Se requiere privilegios de Administración delegados granulares (GDAP) o una relación de privilegios de Administración delegados (DAP) para incorporar clientes a Lighthouse. Ya no se requiere una relación de revendedor indirecto para incorporarse a Lighthouse. Si DAP y GDAP coexisten en un inquilino de cliente, los permisos de GDAP tienen prioridad para los técnicos de MSP en grupos de seguridad habilitados para GDAP.
 
 ## <a name="requirements-for-enabling-device-management"></a>Requisitos para habilitar la administración de dispositivos
 
@@ -51,14 +52,14 @@ Para que los datos de los clientes se muestren en los informes de las páginas d
 
 ## <a name="requirements-for-enabling-threat-management"></a>Requisitos para habilitar la administración de amenazas
 
-Para ver los dispositivos y amenazas de los inquilinos del cliente en las páginas de administración de amenazas, debe inscribir todos los dispositivos de inquilino del cliente en Microsoft Endpoint Manager (MEM) y protegerlos mediante la ejecución del Antivirus de Microsoft Defender.
+Para ver las amenazas y los dispositivos de inquilino del cliente en las páginas de administración de amenazas, debe inscribir todos los dispositivos de inquilino del cliente en Microsoft Endpoint Manager (MEM) y protegerlos mediante la ejecución de Microsoft Defender Antivirus.
 
 Para obtener más información, consulte [Inscripción de dispositivos en Microsoft Intune](/mem/intune/enrollment/).
 
-Antivirus de Microsoft Defender forma parte del sistema operativo Windows y está habilitado de forma predeterminada en dispositivos que ejecutan Windows 10.
+Microsoft Defender Antivirus forma parte del sistema operativo Windows y está habilitado de forma predeterminada en dispositivos que ejecutan Windows 10.
 
 > [!NOTE]
-> Si usa una solución antivirus que no es de Microsoft y no antivirus de Microsoft Defender, antivirus de Microsoft Defender se deshabilita automáticamente. Al desinstalar la solución antivirus que no es de Microsoft, el Antivirus de Microsoft Defender se activa automáticamente para proteger los dispositivos Windows frente a amenazas.
+> Si usa una solución antivirus que no es de Microsoft y no Microsoft Defender Antivirus, Microsoft Defender Antivirus se deshabilita automáticamente. Al desinstalar la solución antivirus que no es de Microsoft, Microsoft Defender Antivirus se activa automáticamente para proteger los dispositivos Windows frente a amenazas.
 
 ## <a name="related-content"></a>Contenido relacionado
 

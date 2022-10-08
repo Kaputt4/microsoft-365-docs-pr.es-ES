@@ -16,16 +16,16 @@ ms.custom: asr
 ms.subservice: mde
 ms.topic: overview
 ms.collection:
-- m365initiative-m365-defender
-- M365-security-compliance
+- m365-security
+- tier2
 ms.date: ''
 search.appverid: met150
-ms.openlocfilehash: a472fae685503d742a4d8b6cf95dce2f0bb6619c
-ms.sourcegitcommit: 2dedd0f594b817779e034afa6c4418def2382a22
+ms.openlocfilehash: 4f087588f122748220947f9d115f07f9e87b0577
+ms.sourcegitcommit: 4e42bafee965446f44f7f57d1defed2b9b24fce8
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/18/2022
-ms.locfileid: "67797921"
+ms.lasthandoff: 09/30/2022
+ms.locfileid: "68227160"
 ---
 # <a name="network-protection-for-linux"></a>Protección de red para Linux
 
@@ -50,7 +50,7 @@ La protección de red ayuda a reducir la superficie expuesta a ataques de los di
 - Hazañas
 - otro contenido malintencionado en Internet
 
-La protección de red amplía el ámbito de [SmartScreen](/windows/security/threat-protection/microsoft-defender-smartscreen/microsoft-defender-smartscreen-overview.md) de Microsoft Defender para bloquear todo el tráfico HTTP saliente que intenta conectarse a orígenes de baja reputación. Los bloques del tráfico HTTP saliente se basan en el dominio o el nombre de host.
+La protección de red amplía el ámbito de Microsoft Defender [SmartScreen](/windows/security/threat-protection/microsoft-defender-smartscreen/microsoft-defender-smartscreen-overview.md) para bloquear todo el tráfico HTTP saliente que intenta conectarse a orígenes de baja reputación. Los bloques del tráfico HTTP saliente se basan en el dominio o el nombre de host.
 
 ## <a name="web-content-filtering-for-linux"></a>Filtrado de contenido web para Linux
 
@@ -132,7 +132,7 @@ mdatp health --field network_protection_status
 
 ### <a name="validation"></a>Validation
 
-A. Compruebe que La protección de red tiene efecto en sitios siempre bloqueados:
+R. Compruebe que La protección de red tiene efecto en sitios siempre bloqueados:
 
 - [http://www.smartscreentestratings2.net](http://www.smartscreentestratings2.net)
 - [https://www.smartscreentestratings2.net](https://www.smartscreentestratings2.net)
@@ -172,9 +172,9 @@ El archivo de configuración también permite al usuario personalizar:
 
 Los valores predeterminados se probaron para todas las distribuciones, como se describe en [Microsoft Defender para punto de conexión en Linux](microsoft-defender-endpoint-linux.md).
 
-### <a name="microsoft-defender-portal"></a>Portal de Microsoft Defender
+### <a name="microsoft-defender-portal"></a>portal de Microsoft Defender
 
-Además, asegúrese de que en Las **características avanzadas** de **los** >  puntos de conexión de **Configuración** >  de **Microsoft Defender** >  se _establece la_ alternancia **"Indicadores de red personalizados"** habilitada.
+Además, asegúrese de que en las **características avanzadas** de puntos de conexión **de Microsoft Defender** >  **Settings** >  >  que la alternancia **"Indicadores de red personalizados"** esté _habilitada_.
 
 > [!IMPORTANT]
 > El botón de alternancia **"Indicadores de red personalizados"** anterior controla la habilitación de **indicadores personalizados** **para todas las plataformas con compatibilidad con protección de red, incluido Windows. Recuerde que, en Windows, para que los indicadores se apliquen también debe tener la protección de red habilitada explícitamente.
@@ -190,6 +190,9 @@ Además, asegúrese de que en Las **características avanzadas** de **los** >  p
    > [!NOTE]
    > Si va a quitar una directiva o cambiar grupos de dispositivos al mismo tiempo, esto podría provocar un retraso en la implementación de directivas.
    > Sugerencia profesional: puede implementar una directiva sin seleccionar ninguna categoría en un grupo de dispositivos. Esta acción creará una directiva de solo auditoría para ayudarle a comprender el comportamiento del usuario antes de crear una directiva de bloque.
+   >
+   > La creación de grupos de dispositivos se admite en El plan 1 y el plan 2 de Defender para punto de conexión.  
+ 
 4. [Integre Microsoft Defender para punto de conexión con Defender for Cloud Apps](/defender-cloud-apps/mde-integration) y los dispositivos macOS habilitados para la protección de red tendrán funcionalidades de cumplimiento de directivas de punto de conexión.
    > [!NOTE]
    > La detección y otras características no se admiten actualmente en estas plataformas.
@@ -218,7 +221,7 @@ El indicador de coincidencia de peligro (IoC) es una característica esencial en
 
 Cree indicadores que definan la detección, prevención y exclusión de entidades. Puede definir la acción que se va a realizar, así como la duración de la aplicación de la acción y el ámbito del grupo de dispositivos al que se va a aplicar.
 
-Los orígenes admitidos actualmente son el motor de detección en la nube de Defender para punto de conexión, el motor de investigación y corrección automatizado y el motor de prevención de puntos de conexión (Antivirus de Microsoft Defender).
+Los orígenes admitidos actualmente son el motor de detección en la nube de Defender para punto de conexión, el motor de investigación y corrección automatizado y el motor de prevención de puntos de conexión (Microsoft Defender Antivirus).
 
 >:::image type="content" source ="images/network-protection-add-url-domain-indicator.png" alt-text="Muestra el indicador de adición de dirección URL o dominio de protección de red." lightbox="images/network-protection-add-url-domain-indicator.png":::
 
@@ -236,9 +239,9 @@ El filtrado de contenido web está disponible en los principales exploradores we
 
 Para obtener más información sobre los informes, vea [Filtrado de contenido web](web-content-filtering.md).
 
-### <a name="microsoft-defender-for-cloud-applications"></a>Aplicaciones de Microsoft Defender para la nube
+### <a name="microsoft-defender-for-cloud-applications"></a>Microsoft Defender para aplicaciones en la nube
 
-Microsoft Defender for Cloud Applications/Cloud App Catalog identifica las aplicaciones que desea que se advierta a los usuarios finales al acceder con Microsoft 365 Defender para punto de conexión y las marque como _Supervisadas_. Los dominios enumerados en aplicaciones supervisadas se sincronizarán más adelante con Microsoft 365 Defender para punto de conexión:
+El Microsoft Defender para aplicaciones en la nube o catálogo de aplicaciones en la nube identifica las aplicaciones que desea que se advierta a los usuarios finales al acceder con Microsoft 365 Defender para punto de conexión y las marque como _Supervisadas_. Los dominios enumerados en aplicaciones supervisadas se sincronizarán más adelante con Microsoft 365 Defender para punto de conexión:
 
 > :::image type="content" source="images/network-protection-macos-mcas-monitored-apps.png" alt-text="Muestra las aplicaciones supervisadas de mcas de protección de red." lightbox="images/network-protection-macos-mcas-monitored-apps.png":::
 

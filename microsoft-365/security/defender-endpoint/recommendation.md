@@ -11,17 +11,19 @@ author: DulceMontemayor
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
-ms.collection: M365-security-compliance
+ms.collection:
+- m365-security
+- tier3
 ms.topic: article
 ms.subservice: mde
 ms.custom: api
 search.appverid: met150
-ms.openlocfilehash: 214e8e4d8246782df0478a12ee37097b496cc7d1
-ms.sourcegitcommit: 9b133379196da2b3a4bb311b07ff274f43780f68
+ms.openlocfilehash: fedb7d9a23e1344e8f1a32e94a7cc29ee4e3bda5
+ms.sourcegitcommit: 4e42bafee965446f44f7f57d1defed2b9b24fce8
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/14/2022
-ms.locfileid: "67681569"
+ms.lasthandoff: 09/30/2022
+ms.locfileid: "68227578"
 ---
 # <a name="recommendation-resource-type"></a>Tipo de recurso de recomendación
 
@@ -64,7 +66,7 @@ ms.locfileid: "67681569"
 |Propiedad|Tipo|Descripción|
 |---|---|---|
 |id|Cadena|Identificador de recomendación|
-|productName|cadena|Nombre de software relacionado|
+|productName|Cadena|Nombre de software relacionado|
 |recommendationName|Cadena|Nombre de la recomendación|
 |Debilidades|Long|Número de vulnerabilidades detectadas|
 |Proveedor|Cadena|Nombre del proveedor relacionado|

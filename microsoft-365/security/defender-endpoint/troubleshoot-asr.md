@@ -16,14 +16,16 @@ manager: dansimp
 ms.custom: asr
 ms.subservice: mde
 ms.topic: how-to
-ms.collection: M365-security-compliance
+ms.collection:
+- m365-security
+- tier3
 search.appverid: met150
-ms.openlocfilehash: ae7cd1e07ff4f8814b54c00a28d23d674b3dbd26
-ms.sourcegitcommit: 9b133379196da2b3a4bb311b07ff274f43780f68
+ms.openlocfilehash: 134cf426c0e1f38819d68a20fe58bc8f0fd89b90
+ms.sourcegitcommit: 4e42bafee965446f44f7f57d1defed2b9b24fce8
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/14/2022
-ms.locfileid: "67689171"
+ms.lasthandoff: 09/30/2022
+ms.locfileid: "68219176"
 ---
 # <a name="troubleshoot-attack-surface-reduction-rules"></a>Solución de problemas de reglas de reducción de superficie expuesta a ataques
 
@@ -55,7 +57,7 @@ Las reglas de reducción de superficie expuesta a ataques solo funcionarán en d
 
 - Los puntos de conexión ejecutan Windows 10 Enterprise, versión 1709 (también conocida como Fall Creators Update).
 
-- Los puntos de conexión usan antivirus de Microsoft Defender como única aplicación de protección antivirus. [El uso de cualquier otra aplicación antivirus hará que Antivirus de Microsoft Defender se deshabilite](/windows/security/threat-protection/microsoft-defender-antivirus/microsoft-defender-antivirus-compatibility).
+- Los puntos de conexión usan Microsoft Defender Antivirus como única aplicación de protección antivirus. [El uso de cualquier otra aplicación antivirus hará que Microsoft Defender Antivirus se deshabilite](/windows/security/threat-protection/microsoft-defender-antivirus/microsoft-defender-antivirus-compatibility).
 
 - [La protección en tiempo real](/windows/security/threat-protection/microsoft-defender-antivirus/configure-real-time-protection-microsoft-defender-antivirus) está habilitada.
 

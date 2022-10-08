@@ -5,7 +5,7 @@ author: kelleyvice-msft
 manager: scotv
 audience: Admin
 ms.topic: overview
-ms.prod: office-online-server
+ms.service: microsoft-365-enterprise
 ms.localizationpriority: medium
 f1.keywords:
 - CSH
@@ -13,6 +13,7 @@ ms.custom:
 - Adm_O365
 - seo-marvel-mar2020
 ms.collection:
+- scotvorg
 - Ent_O365
 - M365-subscription-management
 search.appverid:
@@ -22,22 +23,22 @@ search.appverid:
 - BCS160
 ms.assetid: 98ca5b3f-f720-4d8e-91be-fe656548a25a
 description: Obtenga información sobre cómo administrar grupos de Microsoft 365.
-ms.openlocfilehash: 0e7cef7d1b55f695af9a33f22393172f6eee6485
-ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
+ms.openlocfilehash: 28af0d9581753e1852c0274feb92123ec70b23fd
+ms.sourcegitcommit: 0b7070ec119e00e0dafe030bbfbef0ae5c9afa19
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "65100509"
+ms.lasthandoff: 09/29/2022
+ms.locfileid: "68185477"
 ---
 # <a name="manage-microsoft-365-groups"></a>Administrar grupos de Microsoft 365
 
-*Este artículo se aplica tanto a Microsoft 365 Enterprise como a Office 365 Enterprise.*
+*Este artículo afecta tanto a Office 365 Enterprise como a Microsoft 365 Enterprise*
 
-Puede administrar Microsoft 365 grupos de varias maneras diferentes, en función de la configuración. Puede administrar cuentas de usuario en el [Centro de administración de Microsoft 365](/admin), PowerShell, en Servicios de dominio de Active Directory (AD DS) o en el [Azure Active Directory (Azure AD) centro de administración](/azure/active-directory/fundamentals/active-directory-groups-create-azure-portal). 
+Puede administrar grupos de Microsoft 365 de varias maneras diferentes, en función de la configuración. Puede administrar cuentas de usuario en el [Centro de administración de Microsoft 365](/admin), PowerShell, en Servicios de dominio de Active Directory (AD DS) o en el Centro de administración de [Azure Active Directory (Azure AD).](/azure/active-directory/fundamentals/active-directory-groups-create-azure-portal) 
 
 ## <a name="plan-for-where-and-how-you-will-manage-your-groups"></a>Planear dónde y cómo administrará los grupos
 
-Dónde y cómo puede administrar las cuentas de usuario depende del modelo de identidad que quiera usar para la Microsoft 365. Los dos modelos generales son solo en la nube e híbridos.
+Dónde y cómo puede administrar las cuentas de usuario depende del modelo de identidad que quiera usar para Microsoft 365. Los dos modelos generales son solo en la nube e híbridos.
   
 ### <a name="cloud-only"></a>Solo de nube
 
@@ -49,9 +50,9 @@ Cree y administre grupos con:
     
 ### <a name="hybrid"></a>Híbrido
 
-Los grupos de AD DS se sincronizan con Microsoft 365 de AD DS, por lo que debe usar herramientas de AD DS locales para administrar estos grupos.
+Los grupos de AD DS se sincronizan con Microsoft 365 desde AD DS, por lo que debe usar herramientas de AD DS locales para administrar estos grupos.
 
-También puede crear y administrar Azure AD grupos que son independientes de los grupos de AD DS, pero que pueden contener usuarios y grupos de AD DS. En este caso, puede usar:
+También puede crear y administrar grupos de Azure AD independientes de los grupos de AD DS, pero que pueden contener usuarios y grupos de AD DS. En este caso, puede usar:
 
 - [El Centro de administración de Microsoft 365](/admin)
 - [PowerShell](maintain-group-membership-with-microsoft-365-powershell.md)
@@ -61,7 +62,7 @@ También puede crear y administrar Azure AD grupos que son independientes de los
 
 Azure AD permite grupos que pueden administrar los propietarios de grupos en lugar de los administradores de TI. Conocida como *administración autoservicio de grupos*, esta característica permite a los propietarios del grupo que no están asignados a un rol de administrador crear y administrar grupos de seguridad. 
 
-Los usuarios pueden solicitar la pertenencia a un grupo de seguridad y esa solicitud va al propietario del grupo, en lugar de un administrador de TI. Esto permite delegar el control diario de la pertenencia al grupo a los propietarios del equipo, proyecto o empresa que comprenden el uso empresarial del grupo y pueden administrar su pertenencia.
+Users can request membership in a security group and that request goes to the group owner, rather than an IT administrator. This allows the day-to-day control of group membership to be delegated to team, project, or business owners who understand the business use for the group and can manage its membership.
 
 >[!Note]
 >La administración de grupos de autoservicio está disponible solo para grupos de seguridad de Azure AD y Microsoft 365. No está disponible para grupos habilitados para correo, listas de distribución ni ningún grupo que se haya sincronizado desde AD DS.
@@ -80,7 +81,7 @@ Las reglas se aplican de esta forma:
 - Si una cuenta de usuario no coincide con todas las reglas del grupo, no se agregará al grupo.
 - Si una cuenta de usuario es miembro del grupo, pero sus atributos cambian, por lo que ya no coinciden con todas las reglas del grupo, se quitará como miembro del grupo.
 
-Para usar la pertenencia dinámica, primero necesita determinar los conjuntos de grupos que tienen un conjunto común de atributos de cuenta de usuario. Por ejemplo, todos los miembros del departamento de ventas necesitan estar en el grupo de Azure AD “Ventas”, basándose en el atributo de cuenta de usuario “Departamento” establecido en “Ventas”.
+To use dynamic membership, you must first determine the sets of groups that have a common set of user account attributes. For example, all members of the Sales department should be in the Sales Azure AD group, based on the user account attribute Department set to "Sales".
 
 Vea las [instrucciones para crear y configurar las reglas para un grupo de Azure AD dinámico](/azure/active-directory/active-directory-groups-dynamic-membership-azure-portal).
 

@@ -15,14 +15,16 @@ ms.reviewer: pauhijbr, ksarens
 manager: dansimp
 ms.subservice: mde
 ms.topic: how-to
-ms.collection: M365-security-compliance
+ms.collection:
+- m365-security
+- tier2
 search.appverid: met150
-ms.openlocfilehash: 3e98b12ab84729d6263ecf680ff244c93c208e72
-ms.sourcegitcommit: 9b133379196da2b3a4bb311b07ff274f43780f68
+ms.openlocfilehash: 505acc20e784a5110325f87eb96be656f5ea4e14
+ms.sourcegitcommit: 4e42bafee965446f44f7f57d1defed2b9b24fce8
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/14/2022
-ms.locfileid: "67704092"
+ms.lasthandoff: 09/30/2022
+ms.locfileid: "68227952"
 ---
 # <a name="schedule-antivirus-scans-using-group-policy"></a>Programar los exámenes de antivirus con la directiva de grupo
 
@@ -35,11 +37,11 @@ ms.locfileid: "67704092"
 **Plataformas**
 - Windows
 
-En este artículo se describe cómo configurar exámenes programados mediante directiva de grupo. Para más información sobre la programación de exámenes y sobre los tipos de examen, consulte [Configuración de exámenes programados rápidos o completos del Antivirus de Microsoft Defender](schedule-antivirus-scans.md). 
+En este artículo se describe cómo configurar exámenes programados mediante directiva de grupo. Para obtener más información sobre la programación de exámenes y sobre los tipos de examen, consulte [Configuración de exámenes programados rápidos o completos Microsoft Defender Antivirus](schedule-antivirus-scans.md). 
 
 ## <a name="configure-antivirus-scans-using-group-policy"></a>Configuración de exámenes antivirus mediante directiva de grupo
 
-1. En la máquina de administración de directiva de grupo, en el Editor de directiva de grupo, vaya a Configuración del **equipo** \> **Plantillas** \> administrativas **Componentes de Windows Antivirus** \> \> de **Microsoft Defender** **Examen**.
+1. En la máquina de administración de directiva de grupo, en el Editor de directiva de grupo, vaya a **Configuración** \> del equipo **Plantillas** \> administrativas **Componentes** \> de Windows **Microsoft Defender Examen antivirus**\>.
 
 2. Haga clic con el botón derecho en el objeto directiva de grupo que desea configurar y, a continuación, seleccione **Editar**.
 
@@ -63,7 +65,7 @@ Para obtener más información, consulte los temas [Administrar cuándo se deben
 | Examinar | Especificar el tipo de examen que se va a usar para un examen programado | Examen rápido |
 | Examinar | Especificar el día de la semana para ejecutar un examen programado | Especifique el día (o nunca) para ejecutar un examen. | Nunca |
 | Examinar | Especificar la hora del día para ejecutar un examen programado | Especifique el número de minutos después de medianoche (por ejemplo, escriba **60** para la 1 a.m.). | 2 a.m. |
-| Raíz | Aleatorizar los tiempos de las tareas programadas |En Antivirus de Microsoft Defender, aleatorice la hora de inicio del examen a cualquier intervalo de 0 a 23 horas. <p>En [SCEP](/mem/intune/protect/certificates-scep-configure), aleatorice los exámenes a cualquier intervalo más o menos 30 minutos. Esto puede ser útil en máquinas virtuales o implementaciones de VDI. | Habilitado |
+| Raíz | Aleatorizar los tiempos de las tareas programadas |En Microsoft Defender Antivirus, aleatorice la hora de inicio del examen a cualquier intervalo de 0 a 23 horas. <p>En [SCEP](/mem/intune/protect/certificates-scep-configure), aleatorice los exámenes a cualquier intervalo más o menos 30 minutos. Esto puede ser útil en máquinas virtuales o implementaciones de VDI. | Habilitado |
 
 ## <a name="group-policy-settings-for-scheduling-scans-for-when-an-endpoint-is-not-in-use"></a>directiva de grupo la configuración de los exámenes de programación para cuando un punto de conexión no está en uso
 

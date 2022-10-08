@@ -8,23 +8,22 @@ ms.date: 08/10/2020
 ms.topic: conceptual
 f1.keywords:
 - NOCSH
-ms.prod: microsoft-365-enterprise
-ms.service: ''
-ms.technology: ''
+ms.service: microsoft-365-enterprise
 ms.assetid: fb4182e6-5e78-45d0-9641-d791c4519441
 audience: ITPro
 ms.custom: microsoft-intune
-description: El plan de desarrollo para configurar la administración de dispositivos para Microsoft 365.
-ms.openlocfilehash: eeed1a69fc1724f3feb75f4bc096cad3a3c25cf0
-ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
+ms.collection: scotvorg
+description: La hoja de ruta para configurar la administración de dispositivos para Microsoft 365.
+ms.openlocfilehash: 2b4c67df00c3dc9675da9d24d55628abf3883173
+ms.sourcegitcommit: 0b7070ec119e00e0dafe030bbfbef0ae5c9afa19
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "65095320"
+ms.lasthandoff: 09/29/2022
+ms.locfileid: "68185631"
 ---
 # <a name="device-management-roadmap-for-microsoft-365"></a>Guía básica de administración de dispositivos para Microsoft 365
 
-Microsoft 365 para empresas incluye características que ayudan a administrar dispositivos y sus aplicaciones dentro de la organización. La administración de dispositivos móviles le ayuda a proteger y proteger los recursos de su organización.
+Microsoft 365 para empresas incluye características para ayudar a administrar dispositivos y sus aplicaciones dentro de la organización. La administración de dispositivos móviles le ayuda a proteger y proteger los recursos de su organización.
 
 Hay dos opciones para la administración de dispositivos:
 
@@ -41,7 +40,7 @@ También determinará cómo va a administrar los dispositivos personales y los d
 
 ## <a name="basic-mobility-and-security"></a>Movilidad y seguridad básicas
 
-Esto está integrado en Microsoft 365 y le ayuda a proteger y administrar los dispositivos móviles de sus usuarios como iPhones, iPads, Androids y teléfonos Windows. Puede crear y administrar directivas de seguridad de dispositivo, borrar un dispositivo de forma remota y ver informes detallados del dispositivo.
+Esto está integrado en Microsoft 365 y le ayuda a proteger y administrar los dispositivos móviles de los usuarios, como iPhones, iPads, Android y teléfonos Windows. Puede crear y administrar directivas de seguridad de dispositivo, borrar un dispositivo de forma remota y ver informes detallados del dispositivo.
 
 ## <a name="choose-between-the-two-options"></a>Elegir entre las dos opciones
 
@@ -59,6 +58,6 @@ Microsoft proporciona un conjunto de recomendaciones para el [acceso a identidad
 - [Requisitos previos](../security/office-365-security/identity-access-prerequisites.md)
 - [Directivas comunes de acceso a dispositivos e identidades](../security/office-365-security/identity-access-policies.md)
 
-## <a name="how-contoso-did-device-management-for-microsoft-365"></a>¿Cómo hizo Contoso la administración de dispositivos para Microsoft 365
+## <a name="how-contoso-did-device-management-for-microsoft-365"></a>Cómo contoso hizo la administración de dispositivos para Microsoft 365
 
-Para obtener información sobre cómo una empresa multinacional ficticia pero representativa implementó su infraestructura de administración de dispositivos móviles con Microsoft 365 servicios en la nube, consulte [Administración de dispositivos móviles para Contoso](contoso-mdm.md).
+Para obtener información sobre cómo una empresa multinacional ficticia pero representativa implementó su infraestructura de administración de dispositivos móviles con los servicios en la nube de Microsoft 365, consulte [Administración de dispositivos móviles para Contoso](contoso-mdm.md).

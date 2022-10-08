@@ -8,19 +8,20 @@ manager: scotv
 ms.date: 07/21/2020
 audience: ITPro
 ms.topic: article
-ms.service: o365-solutions
+ms.service: microsoft-365-enterprise
 ms.localizationpriority: medium
 ms.collection:
+- scotvorg
 - Strat_O365_Enterprise
 - M365-subscription-management
 ms.custom: ''
 description: Ejemplo de cómo las organizaciones implementan y actualizan usando canales.
-ms.openlocfilehash: 0080a1d31f56709ec8dafef17122f5a67aaa7145
-ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
+ms.openlocfilehash: 36e596603007cfebf4abdea6f279a21c1da979a3
+ms.sourcegitcommit: 0b7070ec119e00e0dafe030bbfbef0ae5c9afa19
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "65094822"
+ms.lasthandoff: 09/29/2022
+ms.locfileid: "68185587"
 ---
 # <a name="deployment-and-update-channel-example-configurations"></a>Ejemplo de configuraciones de canal de implementación y actualización
 

@@ -15,14 +15,16 @@ manager: dansimp
 ms.custom: asr
 ms.subservice: mde
 ms.topic: how-to
-ms.collection: m365-security-compliance
+ms.collection:
+- m365-security
+- tier2
 search.appverid: met150
-ms.openlocfilehash: 2085ca229880b96cf64609f8cd25f6454882ef42
-ms.sourcegitcommit: c29af68260ba8676083674b3c70209bff2c2e362
+ms.openlocfilehash: 43e9f995badfabd523ed37334e86bf2f559ef32d
+ms.sourcegitcommit: 0b7070ec119e00e0dafe030bbfbef0ae5c9afa19
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/16/2022
-ms.locfileid: "67742638"
+ms.lasthandoff: 09/29/2022
+ms.locfileid: "68203802"
 ---
 # <a name="protect-important-folders-with-controlled-folder-access"></a>Proteger carpetas importantes con acceso controlado a carpetas
 
@@ -104,7 +106,7 @@ Las carpetas predeterminadas aparecen en el perfil del usuario, en **Este equipo
 
 ## <a name="requirements-for-controlled-folder-access"></a>Requisitos para el acceso controlado a carpetas
 
-El acceso controlado a carpetas requiere habilitar la [protección en tiempo real del Antivirus de Microsoft Defender](configure-real-time-protection-microsoft-defender-antivirus.md).
+El acceso controlado a carpetas requiere habilitar [Microsoft Defender protección antivirus en tiempo real](configure-real-time-protection-microsoft-defender-antivirus.md).
 
 ## <a name="review-controlled-folder-access-events-in-the-microsoft-365-defender-portal"></a>Revisión de eventos de acceso controlado a carpetas en el portal de Microsoft 365 Defender
 

@@ -8,9 +8,10 @@ manager: scotv
 ms.reviewer: drjones, jmueller
 audience: Admin
 ms.topic: article
-ms.service: o365-administration
+ms.service: microsoft-365-business
 ms.localizationpriority: medium
 ms.collection:
+- scotvorg
 - M365-subscription-management
 - Adm_O365
 ms.custom:
@@ -20,12 +21,12 @@ ms.custom:
 search.appverid: MET150
 description: Obtenga información sobre cómo aplicar un código promocional a su suscripción de Microsoft 365 para reducir el precio y cómo solucionar problemas de código promocional en caso de error.
 ms.date: 03/17/2021
-ms.openlocfilehash: bff75666fc27895c3d4bdf08477aec677ccd927d
-ms.sourcegitcommit: d1b60ed9a11f5e6e35fbaf30ecaeb9dfd6dd197d
+ms.openlocfilehash: 5f170655359aab2b10089cb67735e2a91409dbba
+ms.sourcegitcommit: 0b7070ec119e00e0dafe030bbfbef0ae5c9afa19
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/29/2022
-ms.locfileid: "66489419"
+ms.lasthandoff: 09/29/2022
+ms.locfileid: "68177534"
 ---
 # <a name="use-your-microsoft-365-for-business-promo-code-to-reduce-the-price"></a>Usar el código de promoción de Microsoft 365 para empresas para reducir el precio
 
@@ -45,13 +46,13 @@ En cualquier momento después de completar la compra, puede ver el descuento cre
 Las siguientes directrices se aplican a los códigos de promoción de Microsoft 365 para suscripciones empresariales.
   
 - **Cantidad de códigos de promoción por suscripción** Puede utilizar un código de promoción para varias suscripciones en el mismo orden, pero no puede usar varios códigos de promoción para la misma suscripción.
-- **Duración del descuento** Una vez aplicado a su pedido, el descuento del código de promoción estará vigente el tiempo que dure el periodo de la suscripción. Si la suscripción es mensual, el descuento del código de promoción durará hasta el final del mes de facturación que ha especificado.Si la suscripción es anual (aunque se pague por mes), el descuento del código de promoción durará hasta el final del año de facturación que ha especificado.
-- **Límites de la licencia del código de promoción** Algunos códigos de promoción tienen un nivel máximo. El descuento se aplicará solo a las licencias que alcancen ese máximo. Puede confirmar si su código de promoción tiene estas limitaciones en los términos y condiciones.
-- **Fechas de finalización del código de promoción** La fecha de finalización de la promoción es el último día que se puede canjear el código de promoción para esa campaña. Una vez terminada la compra, el precio de descuento para la suscripción se aplicará a todo el periodo del pedido.
+- **Length of discount** Once applied to your order, the promo code discount lasts for the length of your subscription's term. If your subscription's term is month-to-month, the promo code discount lasts until the end of the billing month you entered it in. If your subscription's term is yearly (even if it's paid monthly), the promo code discount lasts until the end of the billing year you entered it in.
+- **Promo code license limits** Some promo codes have a maximum level. Only licenses up to that maximum are discounted. You can confirm whether your promo code has these limitations by looking at its Terms and Conditions.
+- **Promo code end dates** The promo end date is the last day a promo code for that campaign can be redeemed. Once your purchase is completed, the discounted price for your subscription applies for the whole term of the order.
 
 ## <a name="troubleshooting-promo-codes"></a>Solución de problemas de códigos de promoción
 
-Si recibe un mensaje de error después de escribir el código de promoción, puede deberse a varios motivos. La siguiente lista describe las causas más comunes de los mensajes de error.
+If you receive an error message after you enter your promo code, there may be a number of reasons. The following list describes the most common causes of error messages.
   
 - **Cometió un error tipográfico al escribir el código.** Preste especial atención a los guiones, las letras en mayúscula o minúscula, o los símbolos especiales del código de promoción. Los códigos de promoción deben introducirse con exactitud.
 - **Está intentando aplicar el código de promoción a una suscripción antigua.** Los códigos de promoción están destinados a suscripciones nuevas. Si está intentando usarlo en una suscripción que ya está activa, no verá la opción para aplicar el código de promoción. No hay forma de aplicar un código de promoción una vez finalizada la compra.

@@ -13,14 +13,16 @@ ms.topic: article
 manager: dansimp
 audience: ITPro
 ms.subservice: mde
-ms.collection: m365-security-compliance
+ms.collection:
+- m365-security
+- tier3
 search.appverid: met150
-ms.openlocfilehash: ebe0902d917ccc99dca7c8de97eb452b777f2e8c
-ms.sourcegitcommit: b1ed6470645455c2f1fcf467450debc622c40147
+ms.openlocfilehash: 245e49f22f4846c0a48a2ebfb0855a07d0b66841
+ms.sourcegitcommit: 0b7070ec119e00e0dafe030bbfbef0ae5c9afa19
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/15/2022
-ms.locfileid: "67711288"
+ms.lasthandoff: 09/29/2022
+ms.locfileid: "68210138"
 ---
 # <a name="device-control-report"></a>Informe de control de dispositivo
 

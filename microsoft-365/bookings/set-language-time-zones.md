@@ -1,5 +1,5 @@
 ---
-title: Establecer Bookings idioma y zonas horarias
+title: Establecimiento del idioma y las zonas horarias de Bookings
 ms.author: kwekua
 author: kwekuako
 manager: scotv
@@ -7,14 +7,16 @@ audience: Admin
 ms.topic: article
 ms.service: bookings
 ms.localizationpriority: medium
+ms.collection:
+- scotvorg
 ms.assetid: 94af3e22-aca6-4e91-8b91-1cd5a02a9ea8
-description: Cambie la configuración de idioma y zona horaria en Microsoft Bookings. Si las reservas se crean en un momento incorrecto, es posible que Bookings se establezca para la zona horaria incorrecta.
-ms.openlocfilehash: 13ff4f81bae50e390f8f7475147e335bf010683f
-ms.sourcegitcommit: db1e48af88995193f15bbd5962f5101a6088074b
+description: Cambie la configuración de idioma y zona horaria en Microsoft Bookings. Si las reservas se crean en un momento incorrecto, es posible que las reservas se establezcan para la zona horaria incorrecta.
+ms.openlocfilehash: da95c0e31ac906112e92c409f617be340d8cc80d
+ms.sourcegitcommit: 0b7070ec119e00e0dafe030bbfbef0ae5c9afa19
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/23/2022
-ms.locfileid: "65637569"
+ms.lasthandoff: 09/29/2022
+ms.locfileid: "68210754"
 ---
 # <a name="set-language-and-time-zones-in-microsoft-bookings"></a>Establecer zonas horarias y de idioma en Microsoft Bookings
 
@@ -28,15 +30,15 @@ El calendario de reserva usa la configuración de idioma y zona horaria del usua
 
 Para establecer el idioma y la zona horaria del calendario de reserva:
 
-1. Inicie sesión en Microsoft 365 y seleccione el icono de Outlook en la página de aterrizaje (como se muestra en la captura de pantalla siguiente) o en la Selector Microsoft 365 App.
+1. Inicie sesión en Microsoft 365 y seleccione el icono de Outlook en la página de aterrizaje (como se muestra en la captura de pantalla siguiente) o en el Iniciador de aplicaciones de Microsoft 365.
 
-   :::image type="content" source="../media/bookings-outlook-tile.png" alt-text="Outlook icono en Microsoft 365 página de aterrizaje.":::
+   :::image type="content" source="../media/bookings-outlook-tile.png" alt-text="Icono de Outlook en la página de aterrizaje de Microsoft 365.":::
 
-1. Después de Outlook se abre, seleccione el **icono de engranaje** en la esquina superior derecha de la pantalla para abrir la configuración personal y de la cuenta y, a continuación, busque "zona horaria" en el cuadro de búsqueda **del panel de Configuración**. El panel se actualizará para mostrar la configuración actual del idioma personal y la zona horaria de esta cuenta. Como se indicó anteriormente, esta configuración también controla el idioma y la zona horaria del calendario de reserva.
+1. Después de abrir Outlook, seleccione el **icono de engranaje** en la esquina superior derecha de la pantalla para abrir la configuración personal y de la cuenta y, a continuación, busque "zona horaria" en el cuadro de búsqueda del panel **Configuración** . El panel se actualizará para mostrar la configuración actual del idioma personal y la zona horaria de esta cuenta. Como se indicó anteriormente, esta configuración también controla el idioma y la zona horaria del calendario de reserva.
 
 1. Cambie el idioma o la zona horaria seleccionando la flecha desplegable en el cuadro **Idioma o Zona horaria actual** y eligiendo la configuración deseada.
 
-1. Haga clic en **Guardar**. El panel Configuración se cierra, se reinicia Outlook en la Web y se aplica la nueva configuración de idioma y zona horaria.
+1. Haga clic en **Guardar**. El panel Configuración se cierra, Outlook en la Web se reinicia y se aplica la nueva configuración de idioma y zona horaria.
 
 ## <a name="setting-the-language-and-time-zone-for-the-booking-page"></a>Establecer el idioma y la zona horaria de la página de reserva
 

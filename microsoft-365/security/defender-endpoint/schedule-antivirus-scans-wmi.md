@@ -15,14 +15,16 @@ ms.reviewer: pauhijbr, ksarens
 manager: dansimp
 ms.subservice: mde
 ms.topic: how-to
-ms.collection: M365-security-compliance
+ms.collection:
+- m365-security
+- tier3
 search.appverid: met150
-ms.openlocfilehash: 19612e81aad9b7437b677e6d48a0a2a05d48f83e
-ms.sourcegitcommit: 9b133379196da2b3a4bb311b07ff274f43780f68
+ms.openlocfilehash: 0d5e1e94e0e9b3535164dbfaa1b6399255718c1c
+ms.sourcegitcommit: 4e42bafee965446f44f7f57d1defed2b9b24fce8
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/14/2022
-ms.locfileid: "67686623"
+ms.lasthandoff: 09/30/2022
+ms.locfileid: "68227842"
 ---
 # <a name="schedule-antivirus-scans-using-windows-management-instrumentation-wmi"></a>Programar los exámenes de antivirus con Instrumental de administración de Windows (WMI)
 
@@ -34,7 +36,7 @@ ms.locfileid: "67686623"
 **Plataformas**
 - Windows
 
-En este artículo se describe cómo configurar exámenes programados mediante WMI. Para más información sobre la programación de exámenes y sobre los tipos de examen, consulte [Configuración de exámenes programados rápidos o completos del Antivirus de Microsoft Defender](schedule-antivirus-scans.md). 
+En este artículo se describe cómo configurar exámenes programados mediante WMI. Para obtener más información sobre la programación de exámenes y sobre los tipos de examen, consulte [Configuración de exámenes programados rápidos o completos Microsoft Defender Antivirus](schedule-antivirus-scans.md). 
 
 ## <a name="use-windows-management-instruction-wmi-to-schedule-scans"></a>Uso de Instrucciones de administración de Windows (WMI) para programar exámenes
 

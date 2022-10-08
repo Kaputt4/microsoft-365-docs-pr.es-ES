@@ -9,6 +9,7 @@ ms.topic: overview
 ms.service: microsoft-365-enterprise
 ms.localizationpriority: medium
 ms.collection:
+- scotvorg
 - Ent_O365
 - SPO_Content
 f1.keywords:
@@ -21,12 +22,12 @@ search.appverid:
 - MET150
 ms.assetid: adb92b80-b342-4ecb-99a1-da2a2b4782eb
 description: En este artículo se describen los sitios de opciones de navegación con la publicación de SharePoint habilitada en SharePoint Online.
-ms.openlocfilehash: d9790be9aa07c2fe8a13404aa0c52662c717ed93
-ms.sourcegitcommit: 9b133379196da2b3a4bb311b07ff274f43780f68
+ms.openlocfilehash: 7269aab053b234f46387eebdeeeb8096ba49dcad
+ms.sourcegitcommit: 0b7070ec119e00e0dafe030bbfbef0ae5c9afa19
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/14/2022
-ms.locfileid: "67705170"
+ms.lasthandoff: 09/29/2022
+ms.locfileid: "68210424"
 ---
 # <a name="navigation-options-for-sharepoint-online"></a>Opciones de navegación para SharePoint Online
 
@@ -99,7 +100,7 @@ Muchos sitios no requieren recorte de seguridad, ya que la estructura de navegac
 
 ### <a name="how-to-implement-managed-navigation-and-the-results"></a>Implementación de la navegación administrada y los resultados
 
-Hay varios artículos sobre Microsoft Docs sobre los detalles de la navegación administrada. Por ejemplo, vea [Información general sobre la navegación administrada en SharePoint Server](/sharepoint/administration/overview-of-managed-navigation).
+Hay varios artículos en Microsoft Learn sobre los detalles de la navegación administrada. Por ejemplo, vea [Información general sobre la navegación administrada en SharePoint Server](/sharepoint/administration/overview-of-managed-navigation).
 
 Para implementar la navegación administrada, configure términos con direcciones URL correspondientes a la estructura de navegación del sitio. La navegación administrada se puede incluso seleccionar manualmente para reemplazar la navegación estructural en muchos casos. Por ejemplo:
 
@@ -474,7 +475,7 @@ En la [implementación de ejemplo](#example-replace-the-out-of-the-box-navigatio
 
 El [código anterior](#about-the-javascript-file) tiene las siguientes dependencias:
 
-- jQuery: https://jquery.com/
+- Jquery- https://jquery.com/
 - KnockoutJS - https://knockoutjs.com/
 - Linq.js : `https://linqjs.codeplex.com/`o github.com/neuecc/linq.js
 

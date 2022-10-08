@@ -7,14 +7,16 @@ audience: Admin
 ms.topic: article
 ms.service: bookings
 ms.localizationpriority: medium
+ms.collection:
+- scotvorg
 ms.assetid: 5382dc07-aaa5-45c9-8767-502333b214ce
 description: Obtenga información sobre cómo obtener acceso a la característica Bookings en Microsoft 365.
-ms.openlocfilehash: 95e81f594dfcd01ec1163e577cf6f3dc38848d97
-ms.sourcegitcommit: 10e6abe740e27000e223378eb17d657a47555fa8
+ms.openlocfilehash: b3a59cb71ac90b6a5e50d3faa0f68a1fd54c30be
+ms.sourcegitcommit: 0b7070ec119e00e0dafe030bbfbef0ae5c9afa19
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/31/2022
-ms.locfileid: "67472664"
+ms.lasthandoff: 09/29/2022
+ms.locfileid: "68210710"
 ---
 # <a name="get-access-to-microsoft-bookings"></a>Obtener acceso a Microsoft Bookings
 

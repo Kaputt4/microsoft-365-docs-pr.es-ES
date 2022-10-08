@@ -14,15 +14,16 @@ ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection:
-- m365-security-compliance
+- m365-security
+- tier3
 ms.topic: article
 ms.subservice: mde
-ms.openlocfilehash: aa942a8751986ea7b9ed8e64c7772c9d62000375
-ms.sourcegitcommit: d3ef9391f621e8f4ca70661184b3bb82c6cbda94
+ms.openlocfilehash: 87f73410cfe5eef6d6e161f1943d5af3737cc087
+ms.sourcegitcommit: 4e42bafee965446f44f7f57d1defed2b9b24fce8
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/02/2022
-ms.locfileid: "67583074"
+ms.lasthandoff: 09/30/2022
+ms.locfileid: "68227358"
 ---
 # <a name="troubleshooting-mode-scenarios-in-microsoft-defender-for-endpoint"></a>Escenarios de modo de solución de problemas en Microsoft Defender para punto de conexión 
 
@@ -33,11 +34,11 @@ ms.locfileid: "67583074"
 
 > ¿Quiere experimentar Defender para punto de conexión? [Regístrese para obtener una prueba gratuita.](https://www.microsoft.com/WindowsForBusiness/windows-atp?ocid=docs-wdatp-configureendpointsscript-abovefoldlink)
 
-Microsoft Defender para punto de conexión modo de solución de problemas le permite solucionar problemas de varias características del Antivirus de Microsoft Defender al habilitarlas desde el dispositivo y probar diferentes escenarios, incluso si están controladas por la directiva de la organización. El modo de solución de problemas está deshabilitado de forma predeterminada y requiere que lo active para un dispositivo (o grupo de dispositivos) durante un tiempo limitado. Tenga en cuenta que se trata exclusivamente de una característica de solo empresa y requiere Microsoft 365 Defender acceso.
+Microsoft Defender para punto de conexión modo de solución de problemas le permite solucionar problemas de varias características Microsoft Defender Antivirus al habilitarlas desde el dispositivo y probar diferentes escenarios, incluso si están controladas por la directiva de la organización. El modo de solución de problemas está deshabilitado de forma predeterminada y requiere que lo active para un dispositivo (o grupo de dispositivos) durante un tiempo limitado. Tenga en cuenta que se trata exclusivamente de una característica de solo empresa y requiere Microsoft 365 Defender acceso.
 
 ## <a name="scenario-1-unable-to-install-application"></a>Escenario 1: No se puede instalar la aplicación
 
-Si quiere instalar una aplicación pero recibir un mensaje de error que indica que antivirus de Microsoft Defender y protección contra alteraciones están activados, siga los pasos que se indican a continuación para solucionar el problema.
+Si desea instalar una aplicación pero recibe un mensaje de error que indica que Microsoft Defender Antivirus y la protección contra alteraciones están activadas, siga los pasos que se indican a continuación para solucionar el problema.
 
 1. Solicite al administrador de seguridad que active el modo de solución de problemas. Recibirá una notificación Seguridad de Windows una vez que se inicie el modo de solución de problemas.  
 
@@ -81,7 +82,7 @@ Para obtener más información sobre Set-MpPreference preferencias de configurac
 
 ## <a name="scenario-3-application-taking-longer-to-perform-an-action"></a>Escenario 3: La aplicación tarda más en realizar una acción
 
-Cuando se activa la protección en tiempo real del Antivirus de Microsoft Defender, la aplicación tarda mucho tiempo en realizar tareas básicas. Para desactivar la protección en tiempo real y solucionar el problema, siga estos pasos. 
+Cuando Microsoft Defender protección antivirus en tiempo real está activada, la aplicación tarda mucho tiempo en realizar tareas básicas. Para desactivar la protección en tiempo real y solucionar el problema, siga estos pasos. 
 
 1. Solicite al administrador de seguridad que active el modo de solución de problemas en el dispositivo. 
 

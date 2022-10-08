@@ -10,19 +10,20 @@ ms.topic: reference
 ms.service: microsoft-365-security
 ms.subservice: mdb
 ms.localizationpriority: medium
-ms.date: 09/15/2022
+ms.date: 09/26/2022
 ms.reviewer: shlomiakirav
 ms.collection:
 - SMB
 - m365-initiative-defender-business
-- m365-security-compliance
+- m365-security
+- tier1
 f1.keywords: NOCSH
-ms.openlocfilehash: e3255ed8e5e3d8a7d1ba1dcf34286a8c663da5f6
-ms.sourcegitcommit: c29af68260ba8676083674b3c70209bff2c2e362
+ms.openlocfilehash: a944ed80c6fc5473fe2011dab05492c7cf122ebb
+ms.sourcegitcommit: 0283c436f3ba61a708b52b57a1955f5ea74376a3
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/16/2022
-ms.locfileid: "67736462"
+ms.lasthandoff: 09/28/2022
+ms.locfileid: "68097278"
 ---
 # <a name="compare-security-features-in-microsoft-365-plans-for-small-and-medium-sized-businesses"></a>Comparación de características de seguridad en planes de Microsoft 365 para pequeñas y medianas empresas
 
@@ -39,8 +40,11 @@ Microsoft ofrece una amplia variedad de soluciones y servicios en la nube, inclu
 
 ## <a name="compare-microsoft-defender-for-business-to-microsoft-365-business-premium"></a>Comparar Microsoft Defender para Empresas con Microsoft 365 Empresa Premium
 
-> [!NOTE]
-> En este artículo se proporciona información general de alto nivel de las características y funcionalidades que se incluyen en Microsoft Defender para Empresas (como un plan independiente) y Microsoft 365 Empresa Premium (que incluye Defender para empresas). No está pensado para ser una descripción del servicio o un documento de contrato de licencia. Para obtener información más detallada, consulte [Guía de licencias de Microsoft 365 para el cumplimiento de & de seguridad](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance).
+> [!IMPORTANT]
+> En este artículo se proporciona información general de alto nivel de las características y funcionalidades que se incluyen en Microsoft Defender para Empresas (como un plan independiente) y Microsoft 365 Empresa Premium (que incluye Defender para empresas). No está pensado para ser una descripción del servicio o un documento de contrato de licencia. Para obtener información más detallada, consulte los siguientes recursos:
+> - [Instrucciones de licencias de Microsoft 365 para la seguridad y el cumplimiento](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance)
+> - [Microsoft 365 Educación](/office365/servicedescriptions/office-365-platform-service-description/microsoft-365-education)
+
 
 | Plan | Descripción |
 |:---|:---|
@@ -93,7 +97,7 @@ Defender for Business ofrece las funcionalidades de nivel empresarial de Defende
 (<a id="fn8">8</a>) La capacidad de ver incidentes entre inquilinos mediante Defender para punto de conexión es nueva.
 
 > [!TIP]
-> Consulte también [Comparar planes de seguridad de puntos de conexión de Microsoft](../defender-endpoint/defender-endpoint-plan-1-2.md).
+> Consulte también [Comparación de planes de seguridad de puntos de conexión de Microsoft](../defender-endpoint/defender-endpoint-plan-1-2.md) y [Guía de licencias de Microsoft 365 para el cumplimiento de & de seguridad](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance).
 
 ## <a name="next-steps"></a>Pasos siguientes
 

@@ -11,17 +11,19 @@ author: mjcaparas
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
-ms.collection: M365-security-compliance
+ms.collection:
+- m365-security
+- tier3
 ms.topic: article
 ms.subservice: mde
 ms.custom: api
 search.appverid: met150
-ms.openlocfilehash: 7ae846f536042b8b1e58635c7f68bab3d7b04352
-ms.sourcegitcommit: 9b133379196da2b3a4bb311b07ff274f43780f68
+ms.openlocfilehash: 33cbe799c9263fa6d5d403eafb08447f264358ea
+ms.sourcegitcommit: 4e42bafee965446f44f7f57d1defed2b9b24fce8
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/14/2022
-ms.locfileid: "67694113"
+ms.lasthandoff: 09/30/2022
+ms.locfileid: "68228018"
 ---
 # <a name="offboard-machine-api"></a>API de máquina fuera del panel
 
@@ -67,6 +69,8 @@ Delegado (cuenta profesional o educativa)|Machine.Offboard|'Offboard machine'
 >
 > - El usuario necesita el rol de AD "Administración global"
 > - El usuario debe tener acceso al dispositivo en función de la configuración del grupo de dispositivos (consulte [Creación y administración de grupos de dispositivos](machine-groups.md) para obtener más información).
+>
+> La creación de grupos de dispositivos se admite en El plan 1 y el plan 2 de Defender para punto de conexión.  
 
 ## <a name="http-request"></a>Solicitud HTTP
 

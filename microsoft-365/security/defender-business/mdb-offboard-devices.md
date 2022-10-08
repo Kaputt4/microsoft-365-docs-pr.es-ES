@@ -15,14 +15,15 @@ ms.reviewer: shlomiakirav
 f1.keywords: NOCSH
 ms.collection:
 - SMB
-- M365-security-compliance
+- m365-security
 - m365-initiative-defender-business
-ms.openlocfilehash: 055cd0e6e6f2d3279d028e2af210f40b62f329ee
-ms.sourcegitcommit: 2b89bcff547e00be3d38dc8d1e6cbcf8f41eba42
+- tier1
+ms.openlocfilehash: 06e3e116886ef719f6c57c9711ef770704a53bfb
+ms.sourcegitcommit: 0283c436f3ba61a708b52b57a1955f5ea74376a3
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/03/2022
-ms.locfileid: "67598591"
+ms.lasthandoff: 09/28/2022
+ms.locfileid: "68096443"
 ---
 # <a name="offboard-a-device-from-microsoft-defender-for-business"></a>Desconectar un dispositivo de Microsoft Defender para Empresas
 
@@ -43,7 +44,7 @@ Si desea desconectar un dispositivo, use uno de los procedimientos siguientes:
 
 5. En la pantalla de confirmación, revise la información y elija **Descargar** para continuar.
 
-6. Seleccione **Descargar paquete de retirada**. Se recomienda guardar el paquete de retirada en una unidad extraíble.
+6. Select **Download offboarding package**. We recommend saving the offboarding package to a removable drive.
 
 7. Ejecute el script en cada dispositivo que quiera desincorporar.
 

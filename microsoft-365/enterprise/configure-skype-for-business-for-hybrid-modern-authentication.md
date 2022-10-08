@@ -6,29 +6,30 @@ manager: scotv
 ms.date: 12/3/2019
 audience: ITPro
 ms.topic: article
-ms.service: o365-administration
+ms.service: microsoft-365-enterprise
 ms.localizationpriority: medium
 search.appverid:
 - MET150
 ms.assetid: 522d5cec-4e1b-4cc3-937f-293570717bc6
 ms.collection:
+- scotvorg
 - M365-security-compliance
 f1.keywords:
 - NOCSH
 description: Obtenga información sobre cómo configurar Skype Empresarial local para usar la autenticación moderna híbrida (HMA), lo que le ofrece una autenticación y autorización de usuario más seguras.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 7f5e48905416f84ed1a4c48f7e6f1a4b6477f73e
-ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
+ms.openlocfilehash: 675998ee8a71817cc81f3ee9d8b1c8ae05aa0ec5
+ms.sourcegitcommit: 0b7070ec119e00e0dafe030bbfbef0ae5c9afa19
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "65093490"
+ms.lasthandoff: 09/29/2022
+ms.locfileid: "68198435"
 ---
 # <a name="how-to-configure-skype-for-business-on-premises-to-use-hybrid-modern-authentication"></a>Cómo configurar Skype Empresarial local para usar la autenticación moderna híbrida
 
-*Este artículo se aplica tanto a Microsoft 365 Enterprise como a Office 365 Enterprise.*
+*Este artículo afecta tanto a Office 365 Enterprise como a Microsoft 365 Enterprise*
 
-La autenticación moderna, es un método de administración de identidades que ofrece autenticación y autorización de usuario más seguras, está disponible para Skype Empresarial servidor local y Exchange servidor local, y híbridos de Skype Empresarial de dominio dividido.
+La autenticación moderna, es un método de administración de identidades que ofrece autenticación y autorización de usuario más seguras, está disponible para Skype Empresarial servidor local y exchange server local, y híbridos Skype Empresarial de dominio dividido.
 
 > [!IMPORTANT]
 > ¿Desea obtener más información sobre la autenticación moderna (MA) y por qué podría preferir usarla en su empresa u organización? Consulte [este documento](hybrid-modern-auth-overview.md) para obtener información general. Si necesita saber qué topologías de Skype Empresarial se admiten con MA, esto se documenta aquí.
@@ -69,7 +70,7 @@ Este resumen desglosa el proceso en pasos que, de lo contrario, podrían perders
 
 Estos pasos encienden MA para SFB, SFBO, EXCH y EXO, es decir, todos los productos que pueden participar en una configuración HMA de SFB y SFBO (incluidas las dependencias de EXCH/EXO). En otras palabras, si los usuarios están hospedados o tienen buzones creados en cualquier parte del híbrido (EXO + SFBO, EXO + SFB, EXCH + SFBO o EXCH + SFB), el producto terminado tendrá el siguiente aspecto:
 
-![Una topología de HMA mixta de 6 Skype para empresas tiene MA en en las cuatro ubicaciones posibles.](../media/ab89cdf2-160b-49ac-9b71-0160800acfc8.png)
+![Una topología mixta de HMA de Skype Empresarial 6 tiene MA en las cuatro ubicaciones posibles.](../media/ab89cdf2-160b-49ac-9b71-0160800acfc8.png)
 
 Como puede ver, hay cuatro lugares diferentes para activar MA! Para obtener la mejor experiencia de usuario, se recomienda activar MA en las cuatro ubicaciones. Si no puede activar MA en todas estas ubicaciones, ajuste los pasos para que active ma solo en las ubicaciones necesarias para su entorno.
 
@@ -102,7 +103,7 @@ Get-CsService -WebServer | Select-Object PoolFqdn, InternalFqdn, ExternalFqdn | 
 
 - Ej. Externos: https://lyncwebext01.contoso.com
 
-Si usa un servidor de Standard Edition, la dirección URL interna estará en blanco. En este caso, use el fqdn del grupo para la dirección URL interna.
+Si usa un servidor Standard Edition, la dirección URL interna estará en blanco. En este caso, use el fqdn del grupo para la dirección URL interna.
 
 ## <a name="turn-on-modern-authentication-for-exo"></a>Activar la autenticación moderna para EXO
 
@@ -118,7 +119,7 @@ Siga las instrucciones que se indican aquí: [Configuración de Exchange Server 
 
 ## <a name="turn-on-hybrid-modern-authentication-for-skype-for-business-on-premises"></a>Activar la autenticación moderna híbrida para Skype Empresarial local
 
-### <a name="add-on-premises-web-service-urls-as-spns-in-azure-active-directory"></a>Agregar direcciones URL de servicio web locales como SPN en Azure Active Directory
+### <a name="add-on-premises-web-service-urls-as-spns-in-azure-active-directory"></a>Incorporación de direcciones URL de servicio web locales como SPN en Azure Active Directory
 
 Ahora tendrá que ejecutar comandos para agregar las direcciones URL (recopiladas anteriormente) como entidades de servicio en SFBO.
 
@@ -131,7 +132,7 @@ Ahora tendrá que ejecutar comandos para agregar las direcciones URL (recopilada
 
    Tenga en cuenta que AppPrincipalId comienza por `00000004`. Esto corresponde a Skype Empresarial Online.
 
-   Tome nota de (y captura de pantalla para la comparación posterior) de la salida de este comando, que incluirá un SE y una dirección URL de WS, pero principalmente consta de SPN que comienzan por `00000004-0000-0ff1-ce00-000000000000/`.
+   Tome nota de (y captura de pantalla para la comparación posterior) de la salida de este comando, que incluirá una dirección URL de SE y WS, pero principalmente consta de SPN que comienzan por `00000004-0000-0ff1-ce00-000000000000/`.
 
    ```powershell
    Get-MsolServicePrincipal -AppPrincipalId 00000004-0000-0ff1-ce00-000000000000 | Select -ExpandProperty ServicePrincipalNames
@@ -170,16 +171,16 @@ Set-CsOAuthConfiguration -ClientAuthorizationOAuthServerIdentity evoSTS
 
 Una vez que habilite HMA, el siguiente inicio de sesión de un cliente usará el nuevo flujo de autenticación. Tenga en cuenta que al activar HMA no se desencadenará una nueva autenticación para ningún cliente. Los clientes vuelven a autenticarse en función de la duración de los tokens de autenticación o de los certificados que tengan.
 
-Para probar que HMA funciona después de habilitarlo, cierre la sesión de un sfb de prueba Windows cliente y asegúrese de hacer clic en "eliminar mis credenciales". Vuelva a iniciar sesión. El cliente ahora debe usar el flujo de autenticación moderna y el inicio de sesión ahora incluirá una **solicitud de Office 365** para una cuenta "Profesional o educativa", que se ve justo antes de que el cliente se pone en contacto con el servidor e inicia sesión.
+Para probar que HMA funciona después de habilitarlo, cierre la sesión de un cliente de Windows SFB de prueba y asegúrese de hacer clic en "Eliminar mis credenciales". Vuelva a iniciar sesión. El cliente ahora debe usar el flujo de autenticación moderna y el inicio de sesión ahora incluirá una **solicitud de Office 365** para una cuenta "Profesional o educativa", que se ve justo antes de que el cliente se pone en contacto con el servidor e inicia sesión.
 
-También debe comprobar la "Información de configuración" de los clientes de Skype Empresarial para obtener una "autoridad de OAuth". Para hacerlo en el equipo cliente, mantenga presionada la tecla CTRL al mismo tiempo que haga clic con el botón derecho en el icono de Skype Empresarial de la bandeja de notificaciones de Windows. Haga clic en **Información de configuración** en el menú que aparece. En la ventana "información de configuración de Skype Empresarial" que aparecerá en el escritorio, busque lo siguiente:
+También debe comprobar la "Información de configuración" de los clientes de Skype Empresarial para obtener una "autoridad de OAuth". Para hacerlo en el equipo cliente, mantenga presionada la tecla CTRL al mismo tiempo que haga clic con el botón derecho en el icono de Skype Empresarial en la bandeja de notificaciones de Windows. Haga clic en **Información de configuración** en el menú que aparece. En la ventana "información de configuración de Skype Empresarial" que aparecerá en el escritorio, busque lo siguiente:
 
 :::image type="content" alt-text="La información de configuración de un cliente de Skype Empresarial mediante la autenticación moderna muestra una dirección URL de autoridad de OAUTH de Lync y EWS de https://login.windows.net/common/oauth2/authorize." source="../media/4e54edf5-c8f8-4e7f-b032-5d413b0232de.png":::
 
-También debe mantener presionada la tecla CTRL al mismo tiempo que haga clic con el botón derecho en el icono del cliente de Outlook (también en la bandeja de notificaciones de Windows) y haga clic en "Estado de conexión". Busque la dirección SMTP del cliente en un tipo AuthN de "Portador\*", que representa el token de portador usado en OAuth.
+También debe mantener presionada la tecla CTRL al mismo tiempo que hace clic con el botón derecho en el icono del cliente de Outlook (también en la bandeja notificaciones de Windows) y haga clic en "Estado de conexión". Busque la dirección SMTP del cliente en un tipo AuthN de "Portador\*", que representa el token de portador usado en OAuth.
 
 ## <a name="related-articles"></a>Artículos relacionados
 
 [Vuelva a vincular a la introducción a la autenticación moderna](hybrid-modern-auth-overview.md).
 
-¿Necesita saber cómo usar la autenticación moderna para los clientes de Skype Empresarial? Aquí tenemos pasos: [Introducción a la autenticación moderna híbrida y requisitos previos para usarlo con servidores de Skype Empresarial y Exchange locales](./hybrid-modern-auth-overview.md).
+¿Necesita saber cómo usar la autenticación moderna para los clientes de Skype Empresarial? Aquí tenemos pasos: [Introducción a la autenticación moderna híbrida y requisitos previos para usarlo con servidores de Exchange y Skype Empresarial locales](./hybrid-modern-auth-overview.md).
