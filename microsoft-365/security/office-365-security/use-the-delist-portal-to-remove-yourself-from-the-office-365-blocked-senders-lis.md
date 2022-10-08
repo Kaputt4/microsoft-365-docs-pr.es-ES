@@ -13,19 +13,19 @@ search.appverid:
 - MET150
 ms.assetid: 0bcecdd4-3343-4cc0-9e58-e19d4de515e8
 ms.collection:
-- M365-security-compliance
+- m365-security
 - m365initiative-defender-office365
 ms.custom:
 - seo-marvel-apr2020
 description: En este artículo, aprenderá a usar el portal de deslist para quitarse de la lista de remitentes bloqueados de Microsoft 365. Esta es la mejor respuesta para solucionar los errores de acceso denegado 5.7.511.
 ms.subservice: mdo
 ms.service: microsoft-365-security
-ms.openlocfilehash: 3eb58e7620a0d79a4a4e8172b72fafd154df56a0
-ms.sourcegitcommit: 2b89bcff547e00be3d38dc8d1e6cbcf8f41eba42
+ms.openlocfilehash: a87c02b3ca8b48623c66f7d9606d03f7bb2bb9b3
+ms.sourcegitcommit: 12af9e8e3a6eaa090fda9e98ccb831dff65863a4
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/03/2022
-ms.locfileid: "67598898"
+ms.lasthandoff: 09/27/2022
+ms.locfileid: "68066374"
 ---
 # <a name="use-the-delist-portal-to-remove-yourself-from-the-blocked-senders-list-and-address-57511-access-denied-errors"></a>Use el portal de deslist para quitarse de la lista de remitentes bloqueados y la dirección 5.7.511 Errores de acceso denegado
 
@@ -57,7 +57,7 @@ Hay buenas razones para que los remitentes terminen en la lista de remitentes bl
 
 1. En un explorador web, vaya a <https://sender.office.com>.
 
-2. Siga las instrucciones que se indican en la página. Asegúrese de que usa la dirección de correo electrónico a la que se envió el mensaje de error, así como la dirección IP especificada en el mensaje de error. Solo se puede especificar una dirección de correo electrónico y una dirección IP por visita.
+2. Follow the instructions on the page. Ensure that you use the email address to which the error message was sent, and the IP address that is specified in the error message. You can only enter one email address and one IP address per visit.
 
 3. Haga clic en **Enviar**.
 

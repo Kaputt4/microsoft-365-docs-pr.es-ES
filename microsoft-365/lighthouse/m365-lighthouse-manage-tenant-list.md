@@ -10,6 +10,7 @@ ms.topic: article
 ms.service: microsoft-365-lighthouse
 ms.localizationpriority: medium
 ms.collection:
+- scotvorg
 - M365-subscription-management
 - Adm_O365
 ms.custom:
@@ -17,12 +18,12 @@ ms.custom:
 - M365-Lighthouse
 search.appverid: MET150
 description: En el caso de los proveedores de servicios administrados (MSP) que usan Microsoft 365 Lighthouse, obtenga información sobre cómo administrar la lista de inquilinos.
-ms.openlocfilehash: 2e7c20362a7746ec5cde78b4b405b4a0a6a22560
-ms.sourcegitcommit: 2b89bcff547e00be3d38dc8d1e6cbcf8f41eba42
+ms.openlocfilehash: 82dee70362c52e6046dbea0b02e5174476e00593
+ms.sourcegitcommit: 0b7070ec119e00e0dafe030bbfbef0ae5c9afa19
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/03/2022
-ms.locfileid: "67599272"
+ms.lasthandoff: 09/29/2022
+ms.locfileid: "68187655"
 ---
 # <a name="manage-your-tenant-list-in-microsoft-365-lighthouse"></a>Administrar la lista de inquilinos en Microsoft 365 Lighthouse
 
@@ -50,7 +51,7 @@ Para administrar las etiquetas de inquilino, debe:
 
 4. Escriba un nombre y una descripción.
 
-5. Haga clic en **Guardar**.
+5. Seleccione **Guardar**.
 
 ## <a name="edit-a-tag"></a>Edición de una etiqueta
 
@@ -62,7 +63,7 @@ Para administrar las etiquetas de inquilino, debe:
 
 4. Edite el nombre o la descripción según sea necesario.
 
-5. Haga clic en **Guardar**.
+5. Seleccione **Guardar**.
 
 ## <a name="assign-a-tag"></a>Asignación de una etiqueta
 

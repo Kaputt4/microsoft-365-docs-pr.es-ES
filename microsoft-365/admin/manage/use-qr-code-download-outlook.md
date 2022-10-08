@@ -7,20 +7,21 @@ author: kwekua
 manager: scotv
 audience: Admin
 ms.topic: article
-ms.service: o365-administration
+ms.service: microsoft-365-business
 ms.localizationpriority: high
 ms.collection:
+- scotvorg
 - Adm_O365
 ms.custom:
 - AdminSurgePortfolio
 - AdminTemplateSet
 description: Obtenga información sobre cómo usar un código QR para autenticar y descargar Outlook Mobile.
-ms.openlocfilehash: 736628fb97cf2a6f4f6c6d175384a30c41bf642d
-ms.sourcegitcommit: 7f0c5b55e2966c0c1ce6a153a4e6a7ec035bd818
-ms.translationtype: HT
+ms.openlocfilehash: 0816c88ca302e442999d84da094094c058c80025
+ms.sourcegitcommit: 0b7070ec119e00e0dafe030bbfbef0ae5c9afa19
+ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/22/2021
-ms.locfileid: "61137044"
+ms.lasthandoff: 09/29/2022
+ms.locfileid: "68203209"
 ---
 # <a name="use-a-qr-code-to-sign-in-to-the-outlook-mobile-apps"></a>Usar un código QR para iniciar sesión en las aplicaciones móviles de Outlook
 

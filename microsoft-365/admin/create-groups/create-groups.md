@@ -7,9 +7,10 @@ author: MikePlumleyMSFT
 manager: scotv
 audience: Admin
 ms.topic: article
-ms.service: o365-administration
+ms.service: microsoft-365-business
 ms.localizationpriority: medium
 ms.collection:
+- scotvorg
 - M365-subscription-management
 - Adm_O365
 - Adm_TOC
@@ -24,12 +25,12 @@ search.appverid:
 - MOE150
 ms.assetid: 74a1ef8b-3844-4d08-9980-9f8f7a36000f
 description: Aprenda a crear y eliminar grupos de Microsoft 365, a agregar y quitar miembros del grupo y a personalizar el funcionamiento del grupo.
-ms.openlocfilehash: c5faae3eb4234cfbc883a34f19f12e2d85b403bb
-ms.sourcegitcommit: 2f6a7410e9919f753a759c1ada441141e18f06fd
+ms.openlocfilehash: 0cb39f642676943172c684890162b9c39e484499
+ms.sourcegitcommit: 0b7070ec119e00e0dafe030bbfbef0ae5c9afa19
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/30/2022
-ms.locfileid: "67084309"
+ms.lasthandoff: 09/29/2022
+ms.locfileid: "68203385"
 ---
 # <a name="create-a-group-in-the-microsoft-365-admin-center"></a>Cree un grupo en el Centro de administración de Microsoft 365
   
@@ -84,7 +85,7 @@ Un miembro puede eliminar una conversación de correo electrónico de la bandeja
   
 Cuando se elimina un correo electrónico del buzón de grupo, no se elimina de ninguno de los buzones personales de los miembros del grupo.
 
-## <a name="next-steps"></a>Siguientes pasos
+## <a name="next-steps"></a>Pasos siguientes
 
 Después de crear un nuevo grupo y agregar miembros, puede configurar aún más el grupo, como editar el nombre o la descripción del grupo, cambiar propietarios o miembros y especificar si los remitentes externos pueden enviar por correo electrónico al grupo y si enviar copias de conversaciones de grupo a los miembros. Consulte [Administración de un grupo de Microsoft 365](manage-groups.md) para obtener información.
 

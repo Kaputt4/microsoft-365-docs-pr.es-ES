@@ -7,9 +7,10 @@ author: SKjerland
 manager: scotv
 audience: Admin
 ms.topic: article
-ms.service: o365-administration
+ms.service: microsoft-365-business
 ms.localizationpriority: medium
 ms.collection:
+- scotvorg
 - highpri
 - M365-subscription-management
 - Adm_O365
@@ -32,16 +33,16 @@ search.appverid:
 - ODB160
 ms.assetid: 7aa9cdc8-2245-4218-81ee-86fa7c35f1de
 description: Obtenga información sobre cómo usar OneDrive y un sitio de grupo para el almacenamiento de Microsoft 365 y el uso compartido de archivos de Microsoft 365.
-ms.openlocfilehash: 05011d66f3cb81520301ee2cef73d4dd602efa34
-ms.sourcegitcommit: 37e137535c4f70702afe1a5eeaa899c75ee02cfd
+ms.openlocfilehash: 591dea47ee8b73a7858fae79191b1338c08a8c0d
+ms.sourcegitcommit: 0b7070ec119e00e0dafe030bbfbef0ae5c9afa19
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/13/2022
-ms.locfileid: "67662781"
+ms.lasthandoff: 09/29/2022
+ms.locfileid: "68203187"
 ---
 # <a name="set-up-file-storage-and-sharing-in-microsoft-365"></a>Configurar el almacenamiento y el uso compartido de archivos de Microsoft 365
 
-Una de las mejores formas de configurar el almacenamiento y el uso compartido de archivos para su empresa es usar OneDrive y un sitio de grupo juntos. Esto es ideal si tiene una pequeña empresa con solo algunos empleados.
+One of the best ways to set up file storage and sharing for your business is to use OneDrive and a team site together. This is ideal if you have a small business with a few employees.
 
 ## <a name="watch-where-to-store-files-in-office-365"></a>Vea: Dónde almacenar archivos en Office 365
 
@@ -76,7 +77,7 @@ Estas son algunas recomendaciones sobre lo que puede almacenar en cada ubicació
 
 Todas las personas de la empresa que tengan asignada una licencia de Microsoft 365 (y SharePoint Online seleccionado) obtienen almacenamiento en la nube de OneDrive. Desde aquí, el usuario puede almacenar los archivos de trabajo para poder tener acceso a ellos desde cualquier dispositivo. Esos archivos solo estarán disponibles para ese usuario. Por ejemplo, puede almacenar un proyecto de propuesta, sus notas de reuniones o el texto de una presentación que vaya a realizar.
   
-Los empleados también pueden compartir archivos y carpetas de OneDrive. Si un empleado está ausente o abandona la empresa, otros usuarios pueden acceder a los archivos compartidos almacenados en OneDrive (uso compartido de carpetas de equipos de OneDrive).
+Employees can also share OneDrive files and folders. If an employee is away or leaves the company, others can access shared files stored in OneDrive (OneDrive team folder sharing).
   
 Aquí se muestra cómo los usuarios del equipo pueden configurar OneDrive y compartir archivos.
 
@@ -110,7 +111,7 @@ Los sitios de grupo incluyen un lugar para almacenar archivos, denominado biblio
   
 Estos son los pasos que debe seguir para agregar archivos:
   
-1. En la página principal del sitio de grupo, elija **Documentos** en el menú de navegación izquierdo. Esto le llevará a la **Biblioteca de documentos**.
+1. En la página principal del sitio de grupo, elija **Documentos** en el menú de navegación de la parte izquierda. Esto le llevará a la **biblioteca de documentos**.
   
 2. Con la sesión iniciada en Microsoft 365, abra el **Explorador de archivos** de Windows desde la barra de tareas o desde otra ubicación. Busque los archivos que quiera subir al sitio de grupo.
 
@@ -118,7 +119,7 @@ Estos son los pasos que debe seguir para agregar archivos:
   
 4. Cuando termine, los archivos se almacenarán en el sitio de grupo y en el equipo.
   
-5. Puede eliminar los archivos del equipo. En el paso siguiente, [Sincronizar archivos en línea con su PC o Mac](#sync-online-files-with-your-pc-or-mac), va a crear una nueva ubicación para estos archivos en el equipo.
+5. You can delete the files from your computer. In the next step, [Sync online files with your PC or Mac](#sync-online-files-with-your-pc-or-mac), you're going to create a new location for these files on your computer.
 
     Si tiene un gran número de archivos o archivos de gran tamaño que quiera subir al sitio de grupo, lea estas sugerencias sobre [cómo subir un gran número de archivos o archivos de gran tamaño a una biblioteca](https://support.microsoft.com/office/da549fb1-1fcb-4167-87d0-4693e93cb7a0#__toc384119242).
 
@@ -126,13 +127,13 @@ Estos son los pasos que debe seguir para agregar archivos:
 
 ### <a name="sync-online-files-with-your-pc-or-mac"></a>Sincronizar archivos en línea con su PC o Mac
 
-Ahora que tiene archivos en el sitio de grupo, puede configurarlos para que se sincronicen con su PC o Mac. De este modo, puede trabajar en sus archivos desde tu PC o Mac en lugar de trabajar en Microsoft Edge, Chrome u otro explorador. También es útil tener una versión de los archivos sincronizada en el equipo para situaciones en que necesite acceder a un archivo y no esté conectado a Internet.
+Now that you have files on your team site, you can set them up to sync with your PC or Mac. This way, you can work on your files from your PC or Mac instead of working in Microsoft Edge, Chrome, or another browser. It's also useful to have a version of your files synced on your computer for situations when you need to get to a file and you aren't connected to the Internet.
   
 Después de configurar los archivos que quiera sincronizar con el equipo, estos se sincronizarán automáticamente cuando esté conectado a Internet.
   
 Siga estos pasos para sincronizar archivos en el sitio de grupo con el equipo de escritorio:
   
-1. En la página principal del sitio de grupo, elija **Documentos** en el menú de navegación izquierdo. Esto le llevará a la biblioteca de Documentos.
+1. On the home page of your team site, choose **Documents** from the left-hand navigation menu. This takes you to your Documents library.
 
     > [!TIP]
     > Al sincronizar archivos en el sitio de grupo, se sincronizan las bibliotecas de archivos del sitio, no todo el sitio.
@@ -165,11 +166,11 @@ A continuación puede ver algunas sugerencias para sacar el máximo partido a On
 
 - **Copropiedades**: ambos propietarios usan OneDrive y comparten los archivos.
 
-- **Empresas con clientes o asociados externos que necesitan acceso a archivos**: crear un nuevo sitio de grupo para almacenar y compartir documentos destinados a un cliente específico. Configure el sitio para permitir el acceso únicamente a ese cliente. Después, no es necesario preocuparse de que un cliente obtenga acceso accidentalmente a la información destinada a otro cliente.
+- **Businesses with external clients or partners who need access to files**: Create a new team site to store and share documents intended for a specific customer. Set up the site to allow access to only that customer. You then don't need to worry that one customer will accidentally get access to information intended for another customer.
 
 ### <a name="keep-private-files-private"></a>Establecer que los archivos privados sigan siéndolo
 
-Cuando almacenas un archivo en OneDrive, solo usted puede acceder a él, a menos que lo comparta con otros usuarios. Al compartir archivos, puede elegir crear un vínculo que se pueda reenviar o compartir únicamente con personas específicas. También puede crear carpetas independientes en OneDrive para distintos propósitos, como son proyectos públicos, personales o individuales. Cada carpeta se puede compartir con otra persona o grupo, o con nadie más.
+When you store a file in OneDrive it's only accessible by you, unless you share it with others. When you share files, you can choose to create a link that can be forwarded, or to share with only specific people. You can also create separate folders in OneDrive for different purposes such as public, personal, or for individual projects. Each folder can be shared with a different person or group, or nobody else at all.
   
 Para obtener más información sobre el uso compartido, vea también [Compartir archivos y carpetas con Microsoft 365](https://support.microsoft.com/office/72f26d6c-bf9e-432c-8b96-e3c2437f5b65).
   
@@ -183,7 +184,7 @@ Aunque puede subir casi todos los tipos de archivos, algunos nombres de archivo 
   
 ### <a name="enable-or-disable-third-party-storage-services"></a>Habilitar o deshabilitar los servicios de almacenamiento de terceros
 
-Puede habilitar el almacenamiento de terceros para los usuarios en Microsoft 365 para que puedan almacenar y compartir documentos mediante servicios como es Dropbox, además de OneDrive y sitios de grupo. Esta puede ser una excelente manera de ofrecer servicios que los usuarios ya estén usando o que prefieran usar para proyectos empresariales. Si no quiere que los usuarios de su organización usen Office para abrir archivos en un servicio de terceros, siga estos pasos para desactivarlo.
+You can enable third-party storage for your users in Microsoft 365 so they can store and share documents using services like Dropbox in addition to OneDrive and team sites. This can be a great way to provide services that your users may already be using or prefer to use for business projects. If you don't want people in your organization using Office to open files in a third-party service, follow these steps to turn it off.
   
 > [!IMPORTANT]
 > El almacenamiento de terceros está habilitado de manera predeterminada, por lo que tiene que realizar estos pasos inmediatamente si no desea que esté disponible para sus usuarios.
@@ -198,9 +199,9 @@ Puede habilitar el almacenamiento de terceros para los usuarios en Microsoft 365
 
 ## <a name="next-steps"></a>Siguientes pasos
 
-- [Personalizar el sitio de grupo para el almacenamiento y el uso compartido de archivos](customize-team-site.md). En este tutorial paso a paso se muestra cómo puede aprovechar más funciones de almacenamiento y colaboración.
+- [Customize your team site for file storage and sharing](customize-team-site.md). This step-by-step tutorial shows you how to you can take advantage of more storage and collaboration features.
 
-- **Configure las aplicaciones de Office en sus tabletas y teléfonos.** Debe hacer esto para poder **editar** archivos almacenados en OneDrive y en sitios de grupo desde su tableta o teléfono. Si no instala las aplicaciones de Office para su tableta o teléfono, podrá ver los archivos, pero no editarlos.
+- **Set up Office apps on your tablets and phones.** You need to do this so you can **edit** files that are stored in OneDrive and on team sites from your tablet or phone. If you don't install the Office apps for your tablet or phone, you'll be able to view the files but not edit them.
 
   - [Instalar y configurar Office en un dispositivo Android con Microsoft 365](https://support.microsoft.com/office/cafe9d6f-8b0c-4b03-b20a-12438a82a22d)
 

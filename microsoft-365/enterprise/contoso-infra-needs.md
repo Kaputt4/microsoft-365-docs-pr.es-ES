@@ -7,19 +7,20 @@ ms.author: kvice
 manager: scotv
 audience: ITPro
 ms.topic: article
-ms.service: o365-solutions
+ms.service: microsoft-365-enterprise
 ms.localizationpriority: medium
 ms.collection:
+- scotvorg
 - M365-subscription-management
 - Strat_O365_Enterprise
 ms.custom: ''
-description: Comprenda la estructura básica de la infraestructura de TI local de Contoso y cómo se satisfacen las necesidades empresariales de la empresa Microsoft 365 para la empresa.
-ms.openlocfilehash: 793c867d47d76a03efad707d8447e04538c8ebb8
-ms.sourcegitcommit: db1e48af88995193f15bbd5962f5101a6088074b
+description: Comprenda la estructura básica de la infraestructura de TI local de Contoso y cómo Microsoft 365 para empresas satisface las necesidades empresariales de la empresa.
+ms.openlocfilehash: 6dff78cd3cbc7a4c1e27a647f98b0573a4ea3947
+ms.sourcegitcommit: 0b7070ec119e00e0dafe030bbfbef0ae5c9afa19
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/23/2022
-ms.locfileid: "65637503"
+ms.lasthandoff: 09/29/2022
+ms.locfileid: "68186763"
 ---
 # <a name="contoso-it-infrastructure-and-business-needs"></a>Infraestructura de TI y necesidades empresariales de Contoso
 
@@ -109,7 +110,7 @@ Las necesidades empresariales de Contoso se dividen en cinco categorías princip
 
   Automatice la instalación de actualizaciones en el sistema operativo Windows y Aplicaciones Microsoft 365 para empresas en toda la organización.
 
-## <a name="mapping-contoso-business-needs-to-microsoft-365-for-enterprise"></a>Asignación de las necesidades empresariales de Contoso para Microsoft 365 para empresas
+## <a name="mapping-contoso-business-needs-to-microsoft-365-for-enterprise"></a>Asignación de las necesidades empresariales de Contoso a Microsoft 365 para empresas
 
 El departamento de TI de Contoso determinó la siguiente asignación de las necesidades empresariales para Microsoft 365 E5 características antes de la implementación:
 
@@ -122,7 +123,7 @@ El departamento de TI de Contoso determinó la siguiente asignación de las nece
 |  | Aumentar la creatividad y la innovación | Windows Ink, Cortana en el trabajo, PowerPoint |
 | Seguridad |  |  |
 |  | Administración de identidad y acceso | Cuentas de administrador global dedicadas con Azure AD Multi-Factor Authentication (MFA) y Azure AD Privileged Identity Management (PIM) <br> MFA para todas las cuentas de usuario <br> Acceso condicional <br> Lector de seguridad <br> Windows Hello <br> Credential Guard de Windows Defender |
-|  | Protección contra amenazas | Advanced Threat Analytics <br> Windows Defender <br> Defender para Office 365 <br> Microsoft Defender para Office 365 <br> Microsoft 365 investigación y respuesta de amenazas <br> |
+|  | Protección contra amenazas | Advanced Threat Analytics <br> Windows Defender <br> Defender para Office 365 <br> Microsoft Defender para Office 365 <br> Investigación y respuesta de amenazas de Microsoft 365 <br> |
 |  | Protección de la información | Azure Information Protection <br> Prevención de pérdida de datos (DLP) <br> Windows Information Protection (WIP) <br> Microsoft Defender for Cloud Apps <br> Microsoft Intune |
 |  | Administración de seguridad | Microsoft Defender for Cloud  <br> Centro de seguridad de Windows Defender |
 | Acceso móvil y remoto, y socios comerciales |  |  |
@@ -137,9 +138,9 @@ El departamento de TI de Contoso determinó la siguiente asignación de las nece
 
 ## <a name="next-step"></a>Paso siguiente
 
-Obtenga información sobre la [red local](contoso-networking.md) de Contoso Corporation y cómo se ha optimizado para el acceso y la latencia para Microsoft 365 recursos basados en la nube.
+Obtenga información sobre la [red local](contoso-networking.md) de Contoso Corporation y cómo se ha optimizado para el acceso y la latencia a los recursos basados en la nube de Microsoft 365.
 
-## <a name="see-also"></a>Recursos adicionales
+## <a name="see-also"></a>Vea también
 
 [Información general de Microsoft 365 Enterprise](microsoft-365-overview.md)
 

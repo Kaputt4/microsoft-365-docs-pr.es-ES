@@ -1,16 +1,17 @@
 ---
-title: Microsoft 365 de prueba con guías de laboratorio de pruebas (TLG)
+title: Prueba de Microsoft 365 con guías de laboratorio de pruebas (TLG)
 ms.author: kvice
 author: kelleyvice-msft
 manager: scotv
 ms.date: 11/14/2019
 audience: ITPro
 ms.topic: landing-page
-ms.service: o365-solutions
+ms.service: microsoft-365-enterprise
 ms.localizationpriority: medium
 search.appverid:
 - MET150
 ms.collection:
+- scotvorg
 - Ent_O365
 - Strat_O365_Enterprise
 f1.keywords:
@@ -20,22 +21,22 @@ ms.custom:
 - seo-marvel-apr2020
 ms.assetid: 706d5449-45e5-4b0c-a012-ab60501899ad
 description: 'Resumen: use estas guías de laboratorio de pruebas (TLG) para configurar entornos de demostración, prueba de concepto o desarrollo/pruebas para Microsoft 365.'
-ms.openlocfilehash: 089bd5a069025a5969ec04905be25b228ef136aa
-ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
+ms.openlocfilehash: 7f05f7b9d84dc91ac581919f26e6737a056aa295
+ms.sourcegitcommit: 0b7070ec119e00e0dafe030bbfbef0ae5c9afa19
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "65090825"
+ms.lasthandoff: 09/29/2022
+ms.locfileid: "68170627"
 ---
-# <a name="test-microsoft-365-with-test-lab-guides-tlgs"></a>Microsoft 365 de prueba con guías de laboratorio de pruebas (TLG)
+# <a name="test-microsoft-365-with-test-lab-guides-tlgs"></a>Prueba de Microsoft 365 con guías de laboratorio de pruebas (TLG)
 
-Las TLG le permiten conocer los productos Microsoft de manera rápida. Son ideales para situaciones en las que necesita evaluar una tecnología o configuración antes de decidir si es adecuada y comenzar el diseño, planeación y lanzamiento para los usuarios. Esta experiencia práctica, que consiste en desarrollar la herramienta por sus propios medios y lograr que funcione, le permitirá entender los requisitos de implementación de un nuevo producto o solución, de modo que pueda planear mejor el hospedaje en la producción.
+TLGs help you quickly learn about Microsoft products. They're great for situations where you need to evaluate a technology or configuration before you decide whether it's right for you and before you begin the design, planning, and rollout to users. The "I built it out myself and it works" hands-on experience helps you understand the deployment requirements of a new product or solution so you can better plan for hosting it in production.
   
 Las guías del laboratorio de pruebas también crean entornos representativos para desarrollo y pruebas de aplicaciones, también conocidos como entornos de desarrollo y pruebas.
   
 ![Guías de laboratorio de prueba en la nube de Microsoft.](../media/24ad0d1b-3274-40fb-972a-b8188b7268d1.png)
   
-## <a name="microsoft-365-devtest-environment"></a>Microsoft 365 entorno de desarrollo y pruebas
+## <a name="microsoft-365-devtest-environment"></a>Entorno de desarrollo y pruebas de Microsoft 365
 
 Use estos artículos para compilar el entorno de desarrollo y pruebas de Microsoft 365:
   
@@ -45,11 +46,11 @@ Use estos artículos para compilar el entorno de desarrollo y pruebas de Microso
 
 - [Configuración básica empresarial simulada](simulated-ent-base-configuration-microsoft-365-enterprise.md)
     
-    Cree una intranet simplificada que se ejecute en Microsoft Azure servicios de infraestructura y una suscripción de prueba Microsoft 365 Enterprise E5. 
+    Cree una intranet simplificada que se ejecute en los servicios de infraestructura de Microsoft Azure y una suscripción de prueba Microsoft 365 Enterprise E5. 
 
     Este es un paso opcional y necesario si desea crear una configuración de la empresa simulada para una identidad híbrida.
     
-Para ver los TLC adicionales que se aplican a Office 365 y Microsoft 365, vaya a [Guías de laboratorio de pruebas](m365-enterprise-test-lab-guides.md).  
+Para ver otros TLG que se aplican tanto a Office 365 como a Microsoft 365, vaya a [Guías de laboratorio de pruebas](m365-enterprise-test-lab-guides.md).  
     
 ## <a name="related-topics"></a>Temas relacionados
 

@@ -2,14 +2,15 @@
 title: Informes de uso de Microsoft 365 OneDrive para la Empresa
 f1.keywords:
 - NOCSH
-ms.author: kwekua
-author: kwekua
+ms.author: camillepack
+author: camillepack
 manager: scotv
 audience: Admin
 ms.topic: article
-ms.service: o365-administration
+ms.service: microsoft-365-business
 ms.localizationpriority: medium
 ms.collection:
+- scotvorg
 - M365-subscription-management
 - Adm_O365
 - Adm_NonTOC
@@ -22,18 +23,18 @@ search.appverid:
 - MET150
 - MOE150
 description: Obtenga el informe de uso de OneDrive para la Empresa para obtener más información sobre el número total de archivos y almacenamiento que se usan en toda la organización.
-ms.openlocfilehash: 45d4bbb7d0b404715ff8a7f8f7923f45bf4abc3c
-ms.sourcegitcommit: 5014666778b2d48912c68c2e06992cdb43cfaee3
+ms.openlocfilehash: 5a1afc447d90e0da811d051c2fe56b36f6c641d4
+ms.sourcegitcommit: 0b7070ec119e00e0dafe030bbfbef0ae5c9afa19
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/07/2022
-ms.locfileid: "66662666"
+ms.lasthandoff: 09/29/2022
+ms.locfileid: "68196037"
 ---
 # <a name="microsoft-365-reports-in-the-admin-center---onedrive-for-business-usage"></a>Informes de Microsoft 365 en el Centro de administración: uso OneDrive para la Empresa
 
-En el panel Informes de Microsoft 365 se muestra la información general sobre la actividad en los productos de su organización. Le permite explorar informes individuales de nivel de producto para proporcionarle información más pormenorizada sobre la actividad dentro de cada producto. Consulte [el tema de información general de los informes](activity-reports.md).
+En el panel Informes de Microsoft 365 se muestra la información general sobre la actividad en los productos de su organización. Le permite explorar informes individuales de nivel de producto para proporcionarle información más pormenorizada sobre la actividad dentro de cada producto. Consulte [el tema de información general sobre los informes](activity-reports.md).
   
-Por ejemplo, la tarjeta de OneDrive en el panel le ofrece una vista general del valor que obtiene de OneDrive para la Empresa en cuanto al número total de archivos y almacenamiento que se usa en su organización. Después, puede explorarlo en profundidad para comprender las tendencias de las cuentas activas de OneDrive, con cuántos archivos interactúan los usuarios, así como el almacenamiento usado. También le ofrece los detalles de cada usuario de OneDrive.
+For example, the OneDrive card on the dashboard gives you a high-level view of the value you are getting from OneDrive for Business in terms of the total number of files and storage used across your organization. You can then drill into it to understand the trends of active OneDrive accounts, how many files are users interacting with as well as the storage used. It also gives you details for each user's OneDrive.
 
 ## <a name="how-do-i-get-to-the-onedrive-usage-report"></a>Cómo llegar al informe de uso de OneDrive?
 
@@ -54,12 +55,12 @@ También puede exportar los datos del informe a un archivo de excel .csv selecci
 
 El informe de **uso de OneDrive para la Empresa** se puede ver para ver las tendencias de los últimos 7 días, 30 días, 90 días o 180 días. Sin embargo, si selecciona un día determinado en el informe, la tabla mostrará los datos durante un máximo de 28 días a partir de la fecha actual (no la fecha en que se generó el informe).
   
-|Item|Descripción|
+|Elemento|Descripción|
 |:-----|:-----|
 |**Métrica**|**Definición**|
 |URL  <br/> |Dirección web de OneDrive del usuario. <br/> |
 |Deleted  <br/> |Estado de eliminación de OneDrive. Pueden pasar al menos 7 días hasta que las cuentas se marquen como eliminadas.  <br/> |
-|Propietario  <br/> |Nombre de usuario del administrador principal de OneDrive.   <br/> |
+|Owner  <br/> |Nombre de usuario del administrador principal de OneDrive.   <br/> |
 |Nombre principal del propietario  <br/> |Dirección de correo electrónico del propietario de OneDrive. <br/> |
 |Fecha de la última actividad (UTC)  <br/> | La última fecha en que se realizó una actividad de archivo en OneDrive. Si la OneDrive no ha tenido actividad de archivos, el valor se mostrará en blanco.  <br/> |
 |Archivos  <br/> |Número de archivos en OneDrive. <br/>|

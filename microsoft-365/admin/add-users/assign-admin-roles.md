@@ -7,9 +7,10 @@ author: kwekua
 manager: scotv
 audience: Admin
 ms.topic: article
-ms.service: o365-administration
+ms.service: microsoft-365-business
 ms.localizationpriority: medium
 ms.collection:
+- scotvorg
 - M365-subscription-management
 - Adm_O365
 - Adm_TOC
@@ -29,26 +30,26 @@ search.appverid:
 - GEA150
 ms.assetid: eac4d046-1afd-4f1a-85fc-8219c79e1504
 description: Obtenga información sobre cómo asignar roles de administrador a un usuario o a varios usuarios de su empresa para que puedan realizar tareas específicas en el centro de administración.
-ms.openlocfilehash: 62a860fd90104e475763494f84ca1b4546774757
-ms.sourcegitcommit: e9692a40dfe1f8c2047699ae3301c114a01b0d3a
+ms.openlocfilehash: 8b039d1ae1408a50dc1307e831f702576896427c
+ms.sourcegitcommit: 0b7070ec119e00e0dafe030bbfbef0ae5c9afa19
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/01/2022
-ms.locfileid: "66601529"
+ms.lasthandoff: 09/29/2022
+ms.locfileid: "68195971"
 ---
 # <a name="assign-admin-roles-in-the-microsoft-365-admin-center"></a>Asignar roles de administrador en el Centro de administración de Microsoft 365
 
-Consulte la [ayuda para pequeñas empresas de Microsoft 365](https://go.microsoft.com/fwlink/?linkid=2197659) en YouTube.
+Consulte [ayuda de Microsoft 365 para pequeñas empresas](https://go.microsoft.com/fwlink/?linkid=2197659) en YouTube.
 
 Si es la persona que compró su suscripción empresarial de Microsoft, es el administrador global. Esto significa que tiene control ilimitado sobre los productos de sus suscripciones y puede acceder a la mayoría de los datos.
 
-Para obtener más información, vea [Sobre los roles de administrador](about-admin-roles.md).
+Para más información, consulte[Sobre los roles de administrador](about-admin-roles.md).
 
 Al agregar nuevos usuarios, si no les asigna un rol de administrador, se encuentran en el *rol de usuario* y no tienen privilegios de administrador en ninguno de los centros de administración de Microsoft. Pero si necesita ayuda para hacer las cosas, puede asignar un rol de administrador a un usuario. Por ejemplo, si necesita que alguien le ayude a restablecer las contraseñas, no debe asignarle el rol de administrador global, debe asignarle el rol de administrador de contraseñas. Tener demasiados administradores globales, con acceso ilimitado a sus datos y empresa en línea, es un riesgo de seguridad.
 
 ## <a name="watch-add-an-admin"></a>Inspección: Agregar un administrador
 
-Echa un vistazo a este vídeo y a otros usuarios en nuestro [canal de YouTube](https://go.microsoft.com/fwlink/?linkid=2198030).
+Consulte este vídeo y otros en nuestro [canal de YouTube](https://go.microsoft.com/fwlink/?linkid=2198030).
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE1FOfO] 
 

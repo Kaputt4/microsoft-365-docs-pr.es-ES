@@ -6,9 +6,10 @@ manager: scotv
 ms.date: 08/12/2019
 audience: Admin
 ms.topic: conceptual
-ms.service: o365-administration
+ms.service: microsoft-365-enterprise
 ms.localizationpriority: medium
 ms.collection:
+- scotvorg
 - Ent_O365
 - M365-subscription-management
 f1.keywords:
@@ -22,12 +23,12 @@ search.appverid:
 - BCS160
 ms.assetid: 712fced7-f9d0-4fde-8b79-286262a5d0bc
 description: En este artículo se proporcionan listas de comprobación y otros recursos para planear la implementación de Microsoft 365 Enterprise.
-ms.openlocfilehash: 9c9ae59e1a54935d62c014d435e34984f0c24415
-ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
+ms.openlocfilehash: 36548b4f51c2916872c6f617391c5c0c4d97dcf4
+ms.sourcegitcommit: 0b7070ec119e00e0dafe030bbfbef0ae5c9afa19
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "65100993"
+ms.lasthandoff: 09/29/2022
+ms.locfileid: "68186709"
 ---
 # <a name="plan-for-microsoft-365-enterprise"></a>Planeamiento de Microsoft 365 Enterprise
 
@@ -41,7 +42,7 @@ Al mover una organización empresarial a Microsoft 365, es importante planear co
 >También puede obtener ayuda de un [asociado de Microsoft](https://www.microsoft.com/solution-providers/home).
 >
 
-## <a name="do-it-yourself-planning-for-microsoft-365"></a>Planeamiento de Microsoft 365
+## <a name="do-it-yourself-planning-for-microsoft-365"></a>Planeamiento para Microsoft 365
 
 Para planear Microsoft 365 por su cuenta, siga las decisiones de planeamiento y diseño de estas áreas:
 
@@ -55,10 +56,10 @@ Para planear Microsoft 365 por su cuenta, siga las decisiones de planeamiento y 
 
 - Compatibilidad con la autenticación moderna híbrida
 
-  Incluye la planeación de la autenticación moderna al usar configuraciones híbridas de aplicaciones clave Microsoft 365 productividad. Vaya a [Introducción a la autenticación moderna híbrida y requisitos previos](hybrid-modern-auth-overview.md) para obtener más información.
+  Incluye la planeación de la autenticación moderna al usar configuraciones híbridas de aplicaciones clave de productividad de Microsoft 365. Vaya a [Introducción a la autenticación moderna híbrida y requisitos previos](hybrid-modern-auth-overview.md) para obtener más información.
 
 - Servidores y clientes de Office anteriores
 
-  Incluye información de migración para los productos de cliente y servidor de Office 2007 y Office 2010. Vaya a [Planear la actualización](plan-upgrade-previous-versions-office.md) para obtener más información.
+  Incluye información de migración para productos de cliente y servidor de Office 2007 y Office 2010. Vaya a [Planear la actualización](plan-upgrade-previous-versions-office.md) para obtener más información.
 
-También puede iniciar sesión en su suscripción de Microsoft 365 y usar las [guías de configuración para los servicios de Microsoft 365 y Office 365](setup-guides-for-microsoft-365.md).
+También puede iniciar sesión en su suscripción de Microsoft 365 y usar las [guías de instalación de Microsoft 365 y Office 365 servicios](setup-guides-for-microsoft-365.md).

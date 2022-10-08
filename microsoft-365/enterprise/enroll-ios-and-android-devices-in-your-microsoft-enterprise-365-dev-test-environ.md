@@ -8,36 +8,38 @@ manager: scotv
 ms.date: 11/19/2020
 audience: ITPro
 ms.topic: article
-ms.service: o365-solutions
+ms.service: microsoft-365-enterprise
 ms.localizationpriority: medium
-ms.collection: M365-identity-device-management
+ms.collection:
+- scotvorg
+- M365-identity-device-management
 ms.custom: Ent_TLGs
 ms.assetid: 49c7758a-1c01-4153-9b63-5eae3f6305ce
 description: Use esta guía de laboratorio de pruebas para inscribir dispositivos en el entorno de prueba de Microsoft 365 y administrarlos de forma remota.
-ms.openlocfilehash: 5cefabf6b995754f6febe117776ad2de97443df0
-ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
+ms.openlocfilehash: d4516ac4901cbebed494571527ea5b018299223d
+ms.sourcegitcommit: 0b7070ec119e00e0dafe030bbfbef0ae5c9afa19
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "65092941"
+ms.lasthandoff: 09/29/2022
+ms.locfileid: "68186731"
 ---
 # <a name="enroll-ios-and-android-devices-in-your-microsoft-365-for-enterprise-test-environment"></a>Inscripción de dispositivos iOS y Android en el entorno de prueba de Microsoft 365 para empresas
 
-*Esta Guía de laboratorio de pruebas solo se puede usar para Microsoft 365 para entornos de prueba empresariales.*
+*Esta guía de laboratorio de pruebas solo se puede usar para Microsoft 365 para entornos de prueba empresariales.*
 
 En este artículo se describe cómo inscribir y probar funcionalidades básicas de administración de dispositivos móviles para dispositivos iOS/iPadOS y Android en el entorno de prueba de Microsoft 365 para empresas.
 
 La inscripción de dispositivos iOS/iPadOS y Android en el entorno de prueba implica tres fases:
-- [Fase 1: Compilación de la Microsoft 365 para el entorno de prueba empresarial](#phase-1-build-out-your-microsoft-365-for-enterprise-test-environment)
+- [Fase 1: Compilación del entorno de prueba de Microsoft 365 para empresas](#phase-1-build-out-your-microsoft-365-for-enterprise-test-environment)
 - [Fase 2: Inscripción de dispositivos iOS/iPadOS y Android](#phase-2-enroll-your-ios-and-android-devices)
 - [Fase 3: Administración remota de dispositivos iOS/iPadOS y Android](#phase-3-manage-your-ios-and-android-devices-remotely)
 
 ![Guías de laboratorio de prueba para la nube de Microsoft.](../media/m365-enterprise-test-lab-guides/cloud-tlg-icon.png)
   
 > [!TIP]
-> Para obtener un mapa visual de todos los artículos de la pila Microsoft 365 para la pila guía del laboratorio de pruebas empresarial, vaya a [Microsoft 365 para la pila de la guía del laboratorio de pruebas empresarial](../downloads/Microsoft365EnterpriseTLGStack.pdf).
+> Para obtener un mapa visual de todos los artículos de la pila guía del laboratorio de pruebas de Microsoft 365 para empresas, vaya a [Microsoft 365 para enterprise Test Lab Guide Stack (Pila de guía del laboratorio de pruebas empresariales).](../downloads/Microsoft365EnterpriseTLGStack.pdf)
 
-## <a name="phase-1-build-out-your-microsoft-365-for-enterprise-test-environment"></a>Fase 1: Compilación de la Microsoft 365 para el entorno de prueba empresarial
+## <a name="phase-1-build-out-your-microsoft-365-for-enterprise-test-environment"></a>Fase 1: Compilación del entorno de prueba de Microsoft 365 para empresas
 
 Si desea inscribir dispositivos iOS/iPadOS y Android de forma ligera con los requisitos mínimos, siga las instrucciones de [Configuración base ligera](lightweight-base-configuration-microsoft-365-enterprise.md).
   
@@ -74,7 +76,7 @@ Para ver tareas adicionales que puede ejecutar de forma remota, consulte [accion
 
 Explore características y funcionalidades adicionales de [administración de dispositivos móviles](m365-enterprise-test-lab-guides.md#mobile-device-management) en el entorno de prueba.
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulta también
 
 [Guías de entornos de pruebas de Microsoft 365 para empresas](m365-enterprise-test-lab-guides.md)
   

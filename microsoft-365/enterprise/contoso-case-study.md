@@ -10,16 +10,17 @@ ms.topic: article
 ms.service: microsoft-365-enterprise
 ms.localizationpriority: medium
 ms.collection:
+- scotvorg
 - Strat_O365_Enterprise
 - M365-subscription-management
 ms.custom: ''
 description: Cómo una organización global ficticia pero representativa adoptó Microsoft 365 para empresas.
-ms.openlocfilehash: 7a8b6ef18ef7d78705447063534671c80c7a6c25
-ms.sourcegitcommit: e9323a90a1156c10b037abca3e16d7367ef92dd7
+ms.openlocfilehash: 89f3509e8fd5e229455ebf0379a7334f05c07360
+ms.sourcegitcommit: 0b7070ec119e00e0dafe030bbfbef0ae5c9afa19
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/02/2022
-ms.locfileid: "67570103"
+ms.lasthandoff: 09/29/2022
+ms.locfileid: "68170605"
 ---
 # <a name="microsoft-365-for-enterprise-for-the-contoso-corporation"></a>Microsoft 365 para empresas para Contoso Corporation
 

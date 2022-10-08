@@ -7,9 +7,10 @@ author: efrene
 manager: scotv
 audience: Admin
 ms.topic: article
-ms.service: o365-administration
+ms.service: microsoft-365-business
 ms.localizationpriority: medium
 ms.collection:
+- scotvorg
 - M365-subscription-management
 - Adm_O365
 - Adm_NonTOC
@@ -21,12 +22,12 @@ search.appverid:
 - MOE150
 ms.assetid: 5762c3ca-1de2-4999-bfe5-4c5e25a8957e
 description: Obtenga información sobre cómo comprobar el dominio y configurar registros DNS para correo electrónico, Skype Empresarial En línea y otros servicios en 1&1 IONOS para Microsoft.
-ms.openlocfilehash: b9d7474fe0c442670be961a5436558ea168626dc
-ms.sourcegitcommit: 8cd230e243eba452b27f725d66152becb6aff49b
+ms.openlocfilehash: a17ee719f51dcd736e83c65beb7ff9a2073816fb
+ms.sourcegitcommit: 0b7070ec119e00e0dafe030bbfbef0ae5c9afa19
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/30/2022
-ms.locfileid: "66563437"
+ms.lasthandoff: 09/29/2022
+ms.locfileid: "68187413"
 ---
 # <a name="connect-your-dns-records-at-ionos-by-11-to-microsoft-365"></a>Conexión de los registros DNS en IONOS por 1&1 a Microsoft 365
 
@@ -79,10 +80,10 @@ Después de agregar estos registros a IONOS por 1&1, el dominio se configurará 
 
 ### <a name="add-a-txt-record-for-verification"></a>Agregar un registro TXT para verificación
 
-Antes de utilizar el dominio con Microsoft, tenemos que asegurarnos de que sea el propietario. Si puede iniciar sesión en la cuenta en el registrador de dominio y crear el registro DNS, Microsoft sabrá que es el propietario del dominio.
+Before you use your domain with Microsoft, we have to make sure that you own it. Your ability to log in to your account at your domain registrar and create the DNS record proves to Microsoft that you own the domain.
 
 > [!NOTE]
-> Este registro se usa exclusivamente para verificar si se es el propietario de un dominio; no afecta a nada más. Puede eliminarlo más adelante, si lo desea.
+> This record is used only to verify that you own your domain; it doesn't affect anything else. You can delete it later, if you like.
 
 1. Para empezar, vaya a la página dominios en IONOS 1&1 mediante [este vínculo](https://my.1and1.com/). You'll be prompted to log in.
 
@@ -126,10 +127,10 @@ Para comprobar el registro en Microsoft 365:
 
 1. Seleccione **Continuar**.
 
-1. En la página **verificar dominio**, seleccione **verificar**.
+1. En la página **Verificar dominio**, elija **Verificar**.
 
 > [!NOTE]
-> Por lo general, los cambios de DNS tardan unos 15 minutos en aplicarse. Sin embargo, a veces los cambios pueden necesitar más tiempo para aplicarse en todo el sistema DNS de Internet. Si tiene problemas con el flujo de correo u otros problemas después de agregar registros DNS, consulte [Solucionar problemas después de cambiar el nombre del dominio o los registros DNS](../get-help-with-domains/find-and-fix-issues.md).
+> Typically it takes about 15 minutes for DNS changes to take effect. However, it can occasionally take longer for a change you've made to update across the Internet's DNS system. If you're having trouble with mail flow or other issues after adding DNS records, see [Troubleshoot issues after changing your domain name or DNS records](../get-help-with-domains/find-and-fix-issues.md).
 
 ### <a name="add-an-mx-record-so-email-for-your-domain-will-come-to-microsoft"></a>Agregar un registro MX para que el correo electrónico del dominio vaya a Microsoft
 
@@ -158,7 +159,7 @@ Para comprobar el registro en Microsoft 365:
 
     |Nombre de host|Points to |Prioridad|TTL|
     |---|---|---|---|
-    |@|*\<domain-key\>*.mail.protection.outlook.com  <br/>  NOTA: Obtenga su \<domain-key\> de su cuenta Microsoft. [¿Cómo puedo encontrarla?](../get-help-with-domains/information-for-dns-records.md)|10   <br/> Para obtener más información sobre la prioridad, consulte [¿Qué es una prioridad de MX?](../setup/domains-faq.yml)|1 hora|
+    |@|*\<domain-key\>*.mail.protection.outlook.com  <br/>  NOTA: Obtenga su \<domain-key\> de su cuenta Microsoft. [¿Cómo puedo encontrar esto?](../get-help-with-domains/information-for-dns-records.md)|10  <br/> Para obtener más información sobre la prioridad, consulte [¿Qué es una prioridad de MX?](../setup/domains-faq.yml)|1 hora|
 
 1. Seleccione **Guardar**.
 
@@ -245,7 +246,7 @@ Para comprobar el registro en Microsoft 365:
 
     |Tipo|Nombre de host|Valor|TTL|
     |---|---|---|---|
-    |SPF (TXT)|(Deje este campo en blanco).|v=spf1 include:spf.protection.outlook.com -all  <br/> **Nota:** recomendamos copiar y pegar esta entrada, para que todo el espacio sea correcto.|1 hora|
+    |SPF (TXT)|(Leave this field empty.)|v=spf1 include:spf.protection.outlook.com -all  <br/> **Nota:** recomendamos copiar y pegar esta entrada, para que todo el espacio sea correcto.|1 hora|
 
 1. Seleccione **Guardar**.
 
@@ -348,8 +349,8 @@ Solo seleccione esta opción si su organización usa Skype Empresarial para serv
 
     |Tipo|Servicio|Protocolo|Nombre de host|Points to |Prioridad|Peso|Puerto|TTL|
     |---|---|---|---|---|---|---|---|---|
-    |SRV|_sip|_tls|(Deje este campo en blanco).|sipdir.online.lync.com|100|1 |443|1 hora|
-    |SRV|_sipfederationtls|tcp|(Deje este campo en blanco).|sipfed.online.lync.com|100|1 |5061|1 hora|
+    |SRV|_sip|_tls|(Deje este campo en blanco).|sipdir.online.lync.com|100|1|443|1 hora|
+    |SRV|_sipfederationtls|tcp|(Deje este campo en blanco).|sipfed.online.lync.com|100|1|5061|1 hora|
 
 1. Seleccione **Guardar**.
 

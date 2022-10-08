@@ -7,9 +7,10 @@ author: kwekua
 manager: scotv
 audience: Admin
 ms.topic: article
-ms.service: o365-administration
+ms.service: microsoft-365-business
 ms.localizationpriority: medium
 ms.collection:
+- scotvorg
 - M365-subscription-management
 - Adm_O365
 - Adm_TOC
@@ -22,12 +23,12 @@ search.appverid:
 - MOE150
 ms.assetid: b4527d49-4073-4b43-8274-31b7a3166f92
 description: Determine si el inquilino y los usuarios cumplen los requisitos, de modo que pueda usar la implementación centralizada para implementar complementos de Office.
-ms.openlocfilehash: f6dd5972dedebfa21d5770a789ae9477c8263801
-ms.sourcegitcommit: 13a1199fbfeb329da77ce87b2781d5cc77e4a201
+ms.openlocfilehash: c818a8824bb2c0ee49d6cc9cd27aba0b1f235475
+ms.sourcegitcommit: 0b7070ec119e00e0dafe030bbfbef0ae5c9afa19
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/27/2022
-ms.locfileid: "67037608"
+ms.lasthandoff: 09/29/2022
+ms.locfileid: "68187259"
 ---
 # <a name="determine-if-centralized-deployment-of-add-ins-works-for-your-organization"></a>Determinar si la implementación centralizada de complementos funciona para su organización
 
@@ -79,7 +80,7 @@ La implementación centralizada no es compatible con lo siguiente:
 
 Microsoft Exchange almacena los manifiestos de complemento dentro del inquilino de la organización. Los administradores que implementan complementos y los usuarios que reciben esos complementos deben estar en una versión de Exchange Online que admita la autenticación de OAuth.
 
-Póngase en contacto con el administrador de Exchange de su organización para averiguar qué configuración está en uso. La conectividad de OAuth por usuario puede comprobarse usando el cmdlet de PowerShell [Test-OAuthConnectivity](/powershell/module/exchange/test-oauthconnectivity).
+Check with your organization's Exchange admin to find out which configuration is in use. OAuth connectivity per user can be verified by using the [Test-OAuthConnectivity](/powershell/module/exchange/test-oauthconnectivity) PowerShell cmdlet.
 
 ### <a name="admin-requirements"></a>Requisitos de administrador
 
@@ -138,7 +139,7 @@ La característica Implementación centralizada admite actualmente la mayoría d
 
 La implementación centralizada admite asignaciones a usuarios individuales, grupos y todos los usuarios del inquilino. La implementación centralizada es compatible con usuarios en grupos de nivel superior o grupos sin grupo primario, pero no con usuarios en grupos anidados o grupos que forman parte de otros primarios.
 
-Eche un vistazo al siguiente ejemplo, en el que Sandra, Sheila y el grupo del departamento de ventas están asignados a un complemento. Como el departamento de ventas de la Costa Occidental es un grupo anidado, Bert y Fred no están asignados a un complemento.
+Take a look at the following example where Sandra, Sheila, and the Sales Department group are assigned to an add-in. Because the West Coast Sales Department is a nested group, Bert and Fred aren't assigned to an add-in.
 
 ![MicrosoftTeams-image](../../media/683094bb-1160-4cce-810d-26ef7264c592.png)
 
@@ -148,7 +149,7 @@ La forma más sencilla de detectar si un grupo contiene grupos anidados es ver l
 
 ![Pestaña Miembros de la tarjeta de contacto de Outlook.](../../media/d9db88c4-d752-426c-a480-b11a5b3adcd6.png)
 
-Puede realizar la consulta opuesta para comprobar si un grupo es miembro de cualquier otro. En el ejemplo siguiente, puede ver en la pestaña **Miembros** de la tarjeta de contacto de Outlook que el Subgrupo 1 es miembro del grupo de pruebas.
+You can do the opposite query by resolving the group to see if it's a member of any group. In the example below, you can see under the **Membership** tab of the Outlook contact card that Sub Group 1 is a member of the Test Group.
 
 ![Pestaña Pertenencia de la tarjeta de contacto de Outlook.](../../media/a9f9b6ab-9c19-4822-9e3d-414ca068c42f.png)
 

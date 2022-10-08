@@ -16,14 +16,16 @@ author: schmurky
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
-ms.collection: m365-security-compliance
+ms.collection:
+- m365-security
+- tier3
 ms.topic: article
-ms.openlocfilehash: 64962d5a6bfb3a051e64cb2658a073d9100c2b6b
-ms.sourcegitcommit: 10e6abe740e27000e223378eb17d657a47555fa8
+ms.openlocfilehash: 828068caa9838b45a5e1f9ae329205440dc77de0
+ms.sourcegitcommit: 12af9e8e3a6eaa090fda9e98ccb831dff65863a4
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/31/2022
-ms.locfileid: "67466929"
+ms.lasthandoff: 09/27/2022
+ms.locfileid: "68083063"
 ---
 # <a name="devicefileevents"></a>DeviceFileEvents
 
@@ -95,7 +97,7 @@ Para obtener información sobre otras tablas del esquema de búsqueda avanzada, 
 | `SensitivitySubLabel` | `string` | Subetiqueta aplicada a un correo electrónico, archivo u otro contenido para clasificarlo para la protección de la información; subetiquetas de confidencialidad se agrupan en etiquetas de confidencialidad, pero se tratan de forma independiente |
 | `IsAzureInfoProtectionApplied` | `boolean` | Indica si Azure Information Protection cifra el archivo |
 | `ReportId` | `long` | Identificador de eventos basado en un contador de repetición. Para identificar eventos únicos, esta columna debe usarse junto con las columnas DeviceName y Timestamp. |
-| `AppGuardContainerId` | `string` | Identificador del contenedor virtualizado usado por Application Guard para aislar la actividad del explorador |
+| `AppGuardContainerId` | `string` | Identificador del contenedor virtualizado usado por Protección de aplicaciones para aislar la actividad del explorador |
 | `AdditionalFields` | `string` | Información adicional sobre la entidad o el evento |
 >[!NOTE]
 > La información de hash de archivo siempre se mostrará cuando esté disponible. Sin embargo, hay varias razones posibles por las que un SHA1, SHA256 o MD5 no se puede calcular. Por ejemplo, el archivo puede encontrarse en el almacenamiento remoto, bloqueado por otro proceso, comprimido o marcado como virtual. En estos escenarios, la información de hash de archivo aparece vacía.

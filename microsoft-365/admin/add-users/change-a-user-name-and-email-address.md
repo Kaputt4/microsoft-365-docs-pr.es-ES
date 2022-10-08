@@ -7,9 +7,10 @@ author: kwekua
 manager: scotv
 audience: Admin
 ms.topic: article
-ms.service: o365-administration
+ms.service: microsoft-365-business
 ms.localizationpriority: high
 ms.collection:
+- scotvorg
 - M365-subscription-management
 - Adm_O365
 - Adm_TOC
@@ -26,12 +27,12 @@ search.appverid:
 - MOE150
 ms.assetid: fb5ac074-e203-4e1f-9843-b9d1a3e03297
 description: Obtenga información acerca de cómo un administrador global de Microsoft 365 puede cambiar la dirección de correo electrónico y el nombre para mostrar cuando cambie su nombre.
-ms.openlocfilehash: 420a25df1383bccd4fe93b2ea79d0eeb6f91d982
-ms.sourcegitcommit: e9692a40dfe1f8c2047699ae3301c114a01b0d3a
-ms.translationtype: HT
+ms.openlocfilehash: 261d853465897159f5a7c9a7dc8903eeccb27ef8
+ms.sourcegitcommit: 0b7070ec119e00e0dafe030bbfbef0ae5c9afa19
+ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/01/2022
-ms.locfileid: "66601122"
+ms.lasthandoff: 09/29/2022
+ms.locfileid: "68179183"
 ---
 # <a name="change-a-user-name-and-email-address"></a>Cambiar un nombre de usuario y una dirección de correo electrónico
 
@@ -75,7 +76,7 @@ Debe ser [administrador global](about-admin-roles.md) para completar estos pasos
 
 1. Seleccione el nombre de usuario y después, en la pestaña **Cuenta** seleccione **Administrar nombre de usuario**.
 
-1. En el primer cuadro, escriba la primera parte de la nueva dirección de correo electrónico. Si ha agregado su propio dominio a Microsoft 365, puede elegir el dominio para el nuevo alias de correo electrónico a través de la lista desplegable. [Obtenga información sobre cómo agregar un dominio](../setup/add-domain.md).
+1. In the first box, type the first part of the new email address. If you added your own domain to Microsoft 365, choose the domain for the new email alias by using the drop-down list. [Learn how to add a domain](../setup/add-domain.md).
 
 1. Seleccione **Guardar cambios**.
 
@@ -101,17 +102,17 @@ Debe ser [administrador global](about-admin-roles.md) para completar estos pasos
 3. Seleccione **Establecer como principal** para la dirección de correo electrónico que desea establecer como la dirección de correo electrónico principal de esa persona.
 
    > [!IMPORTANT]
-   > No verá la opción "Establecer como principal" si adquirió Microsoft 365 a través del servicio GoDaddy u otro partner que proporcione una consola de administración. En su lugar, inicie sesión en la consola de administración de GoDaddy o del partner para establecer el alias principal.
+   > You won't see this option to Set as Primary if you purchased Microsoft 365 from GoDaddy or another Partner service that provides a management console. Instead, sign in to the GoDaddy / partner's management console to set the primary alias.
    >
    > Además, solo verá esta opción si es un administrador global. Si no ve la opción, no tiene permisos para cambiar el nombre ni la dirección de correo electrónico principal del usuario.
 
-4. Verá una gran advertencia amarilla que le dice que va a cambiar la información de inicio de sesión del usuario. Seleccione **Guardar**, y a continuación, **Cerrar**.
+4. You'll see a big yellow warning that you're about to change the person's sign-in information. Select **Save**, then **Close**.
 
 5. Comunique a la persona la siguiente información:
 
    - Este cambio puede tardar un tiempo.
 
-   - Su nombre de usuario nuevo. Será necesario que inicie sesión en Microsoft 365.
+   - Their new username. They'll need it to sign in to Microsoft 365.
 
    - Si usan Skype Empresarial Online, deben programar otra vez cualquier reunión de Skype Empresarial Online que hayan organizado y comunicar a sus contactos externos que actualicen la información de contacto anterior.
 
@@ -139,38 +140,38 @@ Debe ser [administrador global](about-admin-roles.md) para completar estos pasos
 
    Si recibió el mensaje de error **No se pudo modificar el usuario. Revise la información de usuario y vuelva a intentarlo**, consulte [Resolver mensajes de error](#resolve-error-messages). 
 
-Este cambio puede tardar hasta 24 horas en surtir efecto en todos los servicios. Una vez que se aplique, la persona tendrá que iniciar sesión en Outlook, Skype Empresarial y SharePoint con su nombre de usuario actualizado.
+It might take up to 24 hours for this change to take effect across all services. After the change has taken effect, the person will have to sign in to Outlook, Skype for Business and SharePoint with their updated username.
 
 ## <a name="resolve-error-messages"></a>Resolver mensajes de error
 
 ### <a name="a-parameter-cannot-be-found-that-matches-parameter-name-emailaddresses"></a>"No se encuentra ningún parámetro que coincida con el nombre de parámetro `EmailAddresses´"
 
-Si recibe el mensaje de error "**No se encuentra ningún parámetro que coincida con el nombre de parámetro ‘EmailAddresses’"**, significa que la configuración de su espacio empresarial o de su dominio personalizado, si ha agregado alguno recientemente, está tardando un poco más de lo normal. El proceso de configuración puede tardar hasta 4 horas en completarse. Espere un poco para que el proceso de configuración tenga el tiempo suficiente para finalizarse y, a continuación, inténtelo de nuevo. Si el problema continúa, llame al [soporte técnico](../../business-video/get-help-support.md) y pídales que hagan una sincronización completa.
+If you get the error message " **A parameter cannot be found that matches parameter name 'EmailAddresses**" it means that it's taking a bit longer to finish setting up your tenant, or your custom domain if you recently added one. The setup process can take up to 4 hours to complete. Wait a while so the setup process has time to finish, and then try again. If the problem persists, call [support](../../business-video/get-help-support.md) and ask them to do a full sync for you.
 
-### <a name="were-sorry-the-user-couldnt-be-edited-review-the-user-information-and-try-again"></a>"Lo sentimos, no se pudo modificar el usuario. Revise la información de usuario y vuelva a intentarlo"
+### <a name="were-sorry-the-user-couldnt-be-edited-review-the-user-information-and-try-again"></a>"We're sorry, the user couldn't be edited. Review the user information and try again"
 
-Si recibe el mensaje de error "**Lo sentimos, no se pudo modificar el usuario. Revise la información de usuario y vuelva a intentarlo**.", significa que no es un administrador global y no tiene permisos para cambiar el nombre del usuario. Busque el administrador global de su empresa y pídale que realice el cambio.
+If you get the error message " **We're sorry, the user couldn't be edited. Review the user information and try again**." it means you aren't a global admin and you don't have permissions to change the user name. Find the global admin in your business and ask them to make the change.
 
 ## <a name="what-to-do-with-old-email-addresses"></a>Qué hacer con las direcciones de correo electrónico antiguas
 
-La dirección de correo electrónico principal anterior de la persona se conservará como dirección de correo electrónico adicional. **Recomendamos encarecidamente no quitar la dirección de correo electrónico antigua**.
+A person's previous primary email address is retained as an additional email address. **We strongly recommend that you don't remove the old email address.**
 
-Es probable que algunos usuarios continúen enviando correos electrónicos a la antigua dirección, por lo que eliminarla puede provocar errores NDR. Microsoft lo redirigirá automáticamente a la nueva dirección. Además, tampoco debe volver a usar direcciones de correo electrónico SMTP ni aplicarlas a nuevas cuentas. Esto también puede provocar errores NDR o que se realicen entregas en buzones no deseados.
+Some people might continue to send email to the person's old email address and deleting it may result in NDR failures. Microsoft automatically routes it to the new one. Also, do not reuse old SMTP email addresses and apply them to new accounts. This can also cause NDR failures or delivery to an unintended mailbox.
 
 ## <a name="what-if-the-persons-offline-address-book-wont-sync-with-the-global-address-list"></a>¿Qué sucede si la libreta de direcciones sin conexión de la persona no se sincroniza con la lista global de direcciones?
 
-Si el usuario está usando Exchange Online o si su cuenta está vinculada al entorno de Exchange local de su organización, es posible que vea este error al intentar cambiar un nombre de usuario y una dirección de correo electrónico: "Este usuario se sincroniza con su Active Directory local. Algunos detalles se pueden modificar solo a través de su Active Directory local".
+If they are using Exchange Online or if their account is linked with your organization's on-premises Exchange environment, you might see this error when you try to change a username and email address: "This user is synchronized with your local Active Directory. Some details can be edited only through your local Active Directory."
 
-Esto es debido a la dirección de enrutamiento de correo electrónico de Microsoft Online (MOERA). La dirección MOERA se crea a partir del atributo  _userPrincipalName_ de la persona en Active Directory y se asigna automáticamente a la cuenta de la nube durante la sincronización inicial. Una vez que se ha creado, no puede modificarse ni quitarse en Microsoft 365. Posteriormente, podrá cambiar el nombre de usuario en Active Directory, pero esto no cambiará la dirección MOERA. Además, es posible que se produzcan problemas al mostrar el nombre recién cambiado en la lista global de direcciones.
+This is due to the Microsoft Online Email Routing Address (MOERA). The MOERA is constructed from the person's  _userPrincipalName_ attribute in Active Directory and is automatically assigned to the cloud account during the initial sync and once created, it cannot be modified or removed in Microsoft 365. You can subsequently change the username in the Active Directory, but it doesn't change the MOERA and you may run into issues displaying the newly changed name in the Global Address List.
 
-Para corregir este error, inicie sesión en el [Módulo Microsoft Azure Active Directory para Windows PowerShell](https://go.microsoft.com/fwlink/?LinkId=823193) con sus credenciales de administrador de Microsoft 365 y use la sintaxis siguiente:
+To fix this, log in to the [Azure Active Directory Module for PowerShell](https://go.microsoft.com/fwlink/?LinkId=823193) with your Microsoft 365 administrator credentials. and use the following syntax:
 
 ```powershell
 Set-MsolUserPrincipalName -UserPrincipalName anne.wallace@contoso.onmicrosoft.com -NewUserPrincipalName anne.jones@contoso.com
 ```
 
 > [!TIP]
-> Esto cambia el atributo **userPrincipalName** de la persona y no afecta a su dirección de correo electrónico de Microsoft Online Email Routing Address (MOERA). Sin embargo, se recomienda que el UPN de inicio de sesión de la persona coincida con su dirección SMTP principal.
+> This changes the person's **userPrincipalName** attribute and has no bearing on their Microsoft Online Email Routing Address (MOERA) email address. It is best practice, however, to have the person's logon UPN match their primary SMTP address.
 
 Para obtener información sobre cómo cambiar el nombre de usuario de una persona en Active Directory, en Windows Server 2003 y en las versiones anteriores, vea [Cambiar el nombre de una cuenta de usuario](/previous-versions/windows/it-pro/windows-server-2003/cc772952(v=ws.10)).
 

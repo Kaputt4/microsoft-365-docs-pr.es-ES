@@ -7,9 +7,10 @@ author: kwekua
 manager: scotv
 audience: Admin
 ms.topic: article
-ms.service: o365-administration
+ms.service: microsoft-365-business
 ms.localizationpriority: medium
 ms.collection:
+- scotvorg
 - M365-subscription-management
 - Adm_O365
 - Adm_TOC
@@ -19,12 +20,12 @@ ms.custom:
 search.appverid:
 - MET150
 description: Use la movilidad básica y la seguridad integradas para quitar información de los dispositivos inscritos.
-ms.openlocfilehash: 5ecdfc691d85b86d882cf05dd5328d41dcdfa767
-ms.sourcegitcommit: 1fa0b15f86470c49dddf0d6de59d553a38ae259b
+ms.openlocfilehash: 314c9dcd4b68a3c809b1f59e60e061b9498e9834
+ms.sourcegitcommit: 0b7070ec119e00e0dafe030bbfbef0ae5c9afa19
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "65863062"
+ms.lasthandoff: 09/29/2022
+ms.locfileid: "68187391"
 ---
 # <a name="wipe-a-mobile-device-in-basic-mobility-and-security"></a>Borrado de un dispositivo móvil en Basic Mobility and Security
 
@@ -32,7 +33,7 @@ Puede usar basic mobility and security integrado para Microsoft 365 para quitar 
 
 ## <a name="before-you-begin"></a>Antes de empezar
 
-Los dispositivos móviles pueden almacenar información confidencial de la organización y proporcionar acceso a los recursos Microsoft 365 de la organización. Para ayudar a proteger la información de su organización, puede realizar el restablecimiento de fábrica o la eliminación de datos de la empresa:
+Los dispositivos móviles pueden almacenar información confidencial de la organización y proporcionar acceso a los recursos de Microsoft 365 de su organización. Para ayudar a proteger la información de su organización, puede realizar el restablecimiento de fábrica o la eliminación de datos de la empresa:
 
 - **Restablecimiento de fábrica**: elimina todos los datos del dispositivo móvil de un usuario, incluidas las aplicaciones instaladas, las fotos y la información personal. Una vez completado el borrado, el dispositivo se restaura a su configuración de fábrica.
 
@@ -57,7 +58,7 @@ Los dispositivos móviles pueden almacenar información confidencial de la organ
 1. Seleccione el tipo de eliminación remota que desea realizar.
 
     - Para realizar un borrado completo y restaurar el dispositivo a su configuración de fábrica, seleccione **Restablecimiento de fábrica**.
-    - Para realizar un borrado selectivo y eliminar solo Microsoft 365 información de la organización, seleccione **Quitar datos de la empresa**.
+    - Para realizar un borrado selectivo y eliminar solo la información de la organización de Microsoft 365, seleccione **Quitar datos de la empresa**.
     - Para quitar el dispositivo de la organización, seleccione **Quitar dispositivo**.
 
 1. Seleccione **Sí** para confirmar.
@@ -80,9 +81,9 @@ El borrado se envía inmediatamente al dispositivo móvil y el dispositivo se ma
 
 |Impacto en el contenido|iOS|Android|
 |---|---|---|
-|Microsoft 365 datos de la aplicación se borran si el dispositivo está protegido por Intune directivas de App Protection. Las aplicaciones no se quitan. En el caso de los dispositivos no protegidos por directivas de administración de aplicaciones móviles (MAM), Outlook y OneDrive no quitarán los datos almacenados en caché.<br/>**Nota** Para aplicar directivas de Intune Protección de aplicaciones, debe tener una licencia de Intune.|Sí|Sí|
+|Los datos de la aplicación de Microsoft 365 se borran si el dispositivo está protegido por Intune directivas de App Protection. Las aplicaciones no se quitan. En el caso de los dispositivos no protegidos por directivas de administración de aplicaciones móviles (MAM), Outlook y OneDrive no quitarán los datos almacenados en caché.<br/>**Nota** Para aplicar directivas de Intune Protección de aplicaciones, debe tener una licencia de Intune.|Sí|Sí|
 |La configuración de directiva aplicada por Basic Mobility and Security a los dispositivos ya no se aplica; los usuarios pueden cambiar la configuración.|Sí|Sí|
-|Los perfiles de correo electrónico creados por Basic Mobility and Security se quitan y se elimina el correo electrónico almacenado en caché en el dispositivo.|Sí|N/D|
+|Email perfiles creados por Basic Mobility and Security se quitan y se elimina el correo electrónico almacenado en caché en el dispositivo.|Sí|N/D|
 
 > [!NOTE]
-> Portal de empresa aplicación está disponible en el App Store para iOS y el Play Store para dispositivos Android.
+> Portal de empresa aplicación está disponible en el App Store para iOS y Play Store para dispositivos Android.

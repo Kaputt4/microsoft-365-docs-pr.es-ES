@@ -7,9 +7,10 @@ author: MikePlumleyMSFT
 manager: scotv
 audience: Admin
 ms.topic: article
-ms.service: o365-administration
+ms.service: microsoft-365-business
 ms.localizationpriority: medium
 ms.collection:
+- scotvorg
 - M365-subscription-management
 - Adm_O365
 - Adm_TOC
@@ -22,12 +23,12 @@ search.appverid:
 - MOE150
 ms.assetid: 9de497a9-2f5c-43d6-ae18-767f2e6fe6e0
 description: Obtenga información sobre cómo agregar invitados a un grupo de Microsoft 365, ver invitados y usar PowerShell para controlar el acceso de invitado.
-ms.openlocfilehash: c2545c4b6e0d87f3f143139887ff50126bf41d06
-ms.sourcegitcommit: cd9df1a681265905eef99c039f7036b2fa6e8b6d
+ms.openlocfilehash: 9d95b9fb4306942354e62cb7162830d154a02fee
+ms.sourcegitcommit: 0b7070ec119e00e0dafe030bbfbef0ae5c9afa19
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/07/2022
-ms.locfileid: "67274756"
+ms.lasthandoff: 09/29/2022
+ms.locfileid: "68187369"
 ---
 # <a name="manage-guest-access-in-microsoft-365-groups"></a>Administrar el acceso de invitado en grupos de Microsoft 365
 
@@ -50,9 +51,9 @@ El acceso de invitado en grupos se usa a menudo como parte de un escenario más 
 
 Si desea habilitar o deshabilitar el acceso de invitado en grupos, puede hacerlo en <a href="https://go.microsoft.com/fwlink/p/?linkid=2052855" target="_blank">**grupos**</a>.
 
-1. En el centro de administración, vaya a **Mostrar toda** \> la **configuración De** \> la **organización** y, en la <a href="https://go.microsoft.com/fwlink/p/?linkid=2053743" target="_blank">pestaña **Servicios**</a>, seleccione **Microsoft 365 组**.
+1. En el Centro de administración, vaya a **Mostrar toda** \> la **configuración Configuración** \> **Configuración De la organización** y, en la <a href="https://go.microsoft.com/fwlink/p/?linkid=2053743" target="_blank">pestaña **Servicios**</a>, seleccione **Grupos de Microsoft 365**.
   
-2. En la página **Microsoft 365 组**, elija si desea permitir que personas ajenas a su organización accedan a los recursos del grupo o permitir que los propietarios del grupo agreguen personas ajenas a la organización a grupos.
+2. En la página **Grupos de Microsoft 365**, elija si desea permitir que personas ajenas a su organización accedan a los recursos del grupo o permitir que los propietarios del grupo agreguen personas ajenas a la organización a grupos.
 
 ## <a name="add-guests-to-a-microsoft-365-group-from-the-admin-center"></a>Agregar invitados a un grupo de Microsoft 365 desde el Centro de administración
 
@@ -64,7 +65,7 @@ Si el invitado ya existe en el directorio, puede agregarlo a los grupos desde el
   
 3. Seleccione **Agregar miembros** y elija el nombre del invitado que desea agregar.
 
-4. Haga clic en **Guardar**.
+4. Seleccione **Guardar**.
 
 Si desea agregar un invitado directamente al directorio, puede [agregar usuarios de colaboración B2B de Azure Active Directory en el Azure Portal](/azure/active-directory/b2b/add-users-administrator).
 

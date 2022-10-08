@@ -7,9 +7,10 @@ author: efrene
 manager: scotv
 audience: Admin
 ms.topic: article
-ms.service: o365-administration
+ms.service: microsoft-365-business
 ms.localizationpriority: medium
 ms.collection:
+- scotvorg
 - M365-subscription-management
 - Adm_O365
 - Adm_NonTOC
@@ -21,12 +22,12 @@ search.appverid:
 - MOE150
 ms.assetid: 84acd4fc-6eec-4d00-8bed-568f036ae2af
 description: Obtenga información sobre cómo comprobar su dominio y configurar registros DNS para correo electrónico, Skype Empresarial En línea y otros servicios en Cloudflare para Microsoft.
-ms.openlocfilehash: 50dbee0ab2ca587ee628a40fdc9c032ec9c8820d
-ms.sourcegitcommit: 8cd230e243eba452b27f725d66152becb6aff49b
+ms.openlocfilehash: 22cbf5478bf7dab301eb29854755606970324389
+ms.sourcegitcommit: 0b7070ec119e00e0dafe030bbfbef0ae5c9afa19
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/30/2022
-ms.locfileid: "66563327"
+ms.lasthandoff: 09/29/2022
+ms.locfileid: "68187347"
 ---
 # <a name="connect-your-dns-records-at-cloudflare-to-microsoft-365"></a>Conexión de los registros DNS en Cloudflare a Microsoft 365
 
@@ -67,7 +68,7 @@ Siga estos pasos para comprobar y configurar automáticamente el dominio de Clou
 Después de agregar estos registros en Cloudflare, el dominio se configurará para trabajar con servicios de Microsoft 365.
 
 > [!NOTE]
-> Por lo general, los cambios de DNS tardan unos 15 minutos en aplicarse. Sin embargo, a veces los cambios pueden necesitar más tiempo para aplicarse en todo el sistema DNS de Internet. Si tiene problemas con el flujo de correo u otros problemas después de agregar registros DNS, consulte [Solucionar problemas después de cambiar el nombre del dominio o los registros DNS](../get-help-with-domains/find-and-fix-issues.md).
+> Typically it takes about 15 minutes for DNS changes to take effect. However, it can occasionally take longer for a change you've made to update across the Internet's DNS system. If you're having trouble with mail flow or other issues after adding DNS records, see [Troubleshoot issues after changing your domain name or DNS records](../get-help-with-domains/find-and-fix-issues.md).
 
 ### <a name="change-your-domains-nameserver-ns-records"></a>Cambiar los registros del servidor de nombres (o NS) de su dominio
 
@@ -99,10 +100,10 @@ Para cambiar los servidores DNS del dominio en el sitio web del registrador de d
 
 ### <a name="add-a-txt-record-for-verification"></a>Agregar un registro TXT para verificación
 
-Antes de utilizar el dominio con Microsoft, tenemos que asegurarnos de que sea el propietario. Si puede iniciar sesión en la cuenta en el registrador de dominio y crear el registro DNS, Microsoft sabrá que es el propietario del dominio.
+Before you use your domain with Microsoft, we have to make sure that you own it. Your ability to log in to your account at your domain registrar and create the DNS record proves to Microsoft that you own the domain.
 
 > [!NOTE]
-> Este registro se usa exclusivamente para verificar si se es el propietario de un dominio; no afecta a nada más. Puede eliminarlo más adelante, si lo desea.
+> This record is used only to verify that you own your domain; it doesn't affect anything else. You can delete it later, if you like.
 
 1. Para empezar, vaya a la página de dominios de Cloudflare mediante [este vínculo](https://www.cloudflare.com/a/login). Se le pedirá que inicie sesión primero .
 
@@ -142,10 +143,10 @@ Para comprobar el registro en Microsoft 365:
 
 1. Seleccione **Continuar**.
 
-1. En la página **verificar dominio**, seleccione **verificar**.
+1. En la página **Verificar dominio**, elija **Verificar**.
 
 > [!NOTE]
-> Por lo general, los cambios de DNS tardan unos 15 minutos en aplicarse. Sin embargo, a veces los cambios pueden necesitar más tiempo para aplicarse en todo el sistema DNS de Internet. Si tiene problemas con el flujo de correo u otros problemas después de agregar registros DNS, consulte [Solucionar problemas después de cambiar el nombre del dominio o los registros DNS](../get-help-with-domains/find-and-fix-issues.md).
+> Typically it takes about 15 minutes for DNS changes to take effect. However, it can occasionally take longer for a change you've made to update across the Internet's DNS system. If you're having trouble with mail flow or other issues after adding DNS records, see [Troubleshoot issues after changing your domain name or DNS records](../get-help-with-domains/find-and-fix-issues.md).
 
 ### <a name="add-an-mx-record-so-email-for-your-domain-will-come-to-microsoft"></a>Agregar un registro MX para que el correo electrónico del dominio vaya a Microsoft
 
@@ -167,7 +168,7 @@ Para comprobar el registro en Microsoft 365:
 
    |Tipo|Nombre|Servidor de correo|TTL|Prioridad|
    |---|---|---|---|---|
-   |MX|@|*\<domain-key\>*.mail.protection.outlook.com <br/> **Nota:** Obtenga su *\<domain-key\>* de su cuenta de Microsoft 365. [¿Cómo puedo encontrar esto?](../get-help-with-domains/information-for-dns-records.md)|30 minutos|1  <br/> Para obtener más información sobre la prioridad, consulte [¿Qué es una prioridad de MX?](../setup/domains-faq.yml) <br/>|
+   |MX|@|*\<domain-key\>*.mail.protection.outlook.com <br/> **Nota:** Obtenga su *\<domain-key\>* de su cuenta de Microsoft 365. [¿Cómo puedo encontrar esto?](../get-help-with-domains/information-for-dns-records.md)|30 minutos|1 <br/> Para obtener más información sobre la prioridad, consulte [¿Qué es una prioridad de MX?](../setup/domains-faq.yml) <br/>|
 
 1. Seleccione **Guardar**.
 
@@ -199,7 +200,7 @@ Para comprobar el registro en Microsoft 365:
 
     |Tipo|Nombre|Target|TTL|
     |---|---|---|---|
-    |CNAME|autodescubrir|autodiscover.outlook.com|Automático|
+    |CNAME|autodiscover|autodiscover.outlook.com|Automático|
 
 1. Seleccione **Guardar**.
 
@@ -261,8 +262,8 @@ Solo seleccione esta opción si su organización usa Skype Empresarial para serv
 
     |Tipo|Nombre|Servicio|Protocolo|TTL|Prioridad|Peso|Puerto|Target|
     |---|---|---|---|---|---|---|---|---|
-    |SRV|Use su *domain_name*; por ejemplo, contoso.com|_sip|TLS|30 minutos|100|1 |443|sipfed.online.lync.com|
-    |SRV|_sipfederationtls|TCP|Use su *domain_name*; por ejemplo, contoso.com|30 minutos|100|1 |5061|sipfed.online.lync.com|
+    |SRV|Use su *domain_name*; por ejemplo, contoso.com|_sip|TLS|30 minutos|100|1|443|sipfed.online.lync.com|
+    |SRV|_sipfederationtls|TCP|Use su *domain_name*; por ejemplo, contoso.com|30 minutos|100|1|5061|sipfed.online.lync.com|
 
 1. Seleccione **Guardar**.
 
@@ -271,7 +272,7 @@ Solo seleccione esta opción si su organización usa Skype Empresarial para serv
 1. Agregue el otro registro SRV copiando los valores de la segunda fila de la tabla.
 
 > [!NOTE]
-> Por lo general, los cambios de DNS tardan unos 15 minutos en aplicarse. Sin embargo, a veces los cambios pueden necesitar más tiempo para aplicarse en todo el sistema DNS de Internet. Si tiene problemas con el flujo de correo u otros problemas después de agregar registros DNS, consulte [Solucionar problemas después de cambiar el nombre del dominio o los registros DNS](../get-help-with-domains/find-and-fix-issues.md).
+> Typically it takes about 15 minutes for DNS changes to take effect. However, it can occasionally take longer for a change you've made to update across the Internet's DNS system. If you're having trouble with mail flow or other issues after adding DNS records, see [Troubleshoot issues after changing your domain name or DNS records](../get-help-with-domains/find-and-fix-issues.md).
 
 ### <a name="add-the-two-required-cname-records-for-skype-for-business"></a>Agregue los dos registros CNAME necesarios para Skype Empresarial
 
@@ -293,7 +294,7 @@ Solo seleccione esta opción si su organización usa Skype Empresarial para serv
 
     |Tipo|Nombre|Target|TTL|
     |---|---|---|---|
-    |CNAME|sip|sipdir.online.lync.com. <br/> **Este valor DEBE terminar en punto (.)**|1 hora|
+    |CNAME|sip|sipdir.online.lync.com. <br/> **Este valor DEBE terminar en punto (.)**|1 Hour|
     |CNAME|lyncdiscover|webdir.online.lync.com. <br/> **Este valor DEBE terminar en punto (.)**|1 Hour|
 
 1. Seleccione **Guardar**.
@@ -303,7 +304,7 @@ Solo seleccione esta opción si su organización usa Skype Empresarial para serv
 1. Agregue el otro registro CNAME copiando los valores de la segunda fila de la tabla.
 
 > [!NOTE]
-> Por lo general, los cambios de DNS tardan unos 15 minutos en aplicarse. Sin embargo, a veces los cambios pueden necesitar más tiempo para aplicarse en todo el sistema DNS de Internet. Si tiene problemas con el flujo de correo u otros problemas después de agregar registros DNS, consulte [Solucionar problemas después de cambiar el nombre del dominio o los registros DNS](../get-help-with-domains/find-and-fix-issues.md).
+> Typically it takes about 15 minutes for DNS changes to take effect. However, it can occasionally take longer for a change you've made to update across the Internet's DNS system. If you're having trouble with mail flow or other issues after adding DNS records, see [Troubleshoot issues after changing your domain name or DNS records](../get-help-with-domains/find-and-fix-issues.md).
 
 ## <a name="advanced-option-intune-and-mobile-device-management-for-microsoft-365"></a>Opción avanzada: Intune y mobile Administración de dispositivos para Microsoft 365
 
@@ -329,7 +330,7 @@ Este servicio le ayuda a proteger y administrar de forma remota los dispositivos
 
     |Tipo|Nombre|Target|TTL|
     |---|---|---|---|
-    |CNAME|enterpriseregistration|enterpriseregistration.windows.net. <br/> **Este valor DEBE terminar en punto (.)**|1 hora|
+    |CNAME|enterpriseregistration|enterpriseregistration.windows.net. <br/> **Este valor DEBE terminar en punto (.)**|1 Hour|
     |CNAME|enterpriseenrollment|enterpriseenrollment-s.manage.microsoft.com. <br/> **Este valor DEBE terminar en punto (.).**|1 Hour|
 
 1. Seleccione **Guardar**.
@@ -339,4 +340,4 @@ Este servicio le ayuda a proteger y administrar de forma remota los dispositivos
 1. Agregue el otro registro CNAME copiando los valores de la segunda fila de la tabla.
 
 > [!NOTE]
-> Por lo general, los cambios de DNS tardan unos 15 minutos en aplicarse. Sin embargo, a veces los cambios pueden necesitar más tiempo para aplicarse en todo el sistema DNS de Internet. Si tiene problemas con el flujo de correo u otros problemas después de agregar registros DNS, consulte [Solucionar problemas después de cambiar el nombre del dominio o los registros DNS](../get-help-with-domains/find-and-fix-issues.md).
+> Typically it takes about 15 minutes for DNS changes to take effect. However, it can occasionally take longer for a change you've made to update across the Internet's DNS system. If you're having trouble with mail flow or other issues after adding DNS records, see [Troubleshoot issues after changing your domain name or DNS records](../get-help-with-domains/find-and-fix-issues.md).

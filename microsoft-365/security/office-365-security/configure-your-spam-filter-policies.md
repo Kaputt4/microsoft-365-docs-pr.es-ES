@@ -13,17 +13,17 @@ search.appverid:
 - MET150
 ms.assetid: 316544cb-db1d-4c25-a5b9-c73bbcf53047
 ms.collection:
-- M365-security-compliance
+- m365-security
 ms.custom: ''
 description: Los administradores pueden aprender cómo ver, crear, modificar y eliminar directivas contra correo electrónico no deseado en Exchange Online Protection (EOP).
 ms.subservice: mdo
 ms.service: microsoft-365-security
-ms.openlocfilehash: 6c58afbaf6d8162c6c06e3ab69ec671ce4bf83e9
-ms.sourcegitcommit: 651610ca73bfd1d008d97311b59782790df664fb
+ms.openlocfilehash: a8c74764f2dc5be2aa78faf3e71eabbc925ed0fc
+ms.sourcegitcommit: 0b7070ec119e00e0dafe030bbfbef0ae5c9afa19
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/07/2022
-ms.locfileid: "67613217"
+ms.lasthandoff: 09/29/2022
+ms.locfileid: "68187589"
 ---
 # <a name="configure-anti-spam-policies-in-eop"></a>Configuración de directivas contra correo no deseado en EOP
 
@@ -48,7 +48,7 @@ Los elementos básicos de una directiva contra correo no deseado son:
 La diferencia entre estos dos elementos no es obvia cuando administra directivas contra correo no deseado en el portal de Microsoft 365 Defender:
 
 - Cuando crea una directiva contra correo no deseado, en realidad, está creando una regla de filtro de correo no deseado y, al mismo tiempo, la directiva de filtro de correo no deseado asociada a esta, con el mismo nombre para ambas.
-- Al modificar una directiva contra correo no deseado, las opciones de configuración relacionadas con el nombre, la prioridad, el activado o desactivado y los filtros de destinatarios modifican la regla de filtro de correo no deseado. Todas las demás opciones modifican la directiva de filtro de correo no deseado asociada.
+- When you modify an anti-spam policy, settings related to the name, priority, enabled or disabled, and recipient filters modify the spam filter rule. All other settings modify the associated spam filter policy.
 - Cuando se quita una directiva contra correo no deseado, se elimina la regla de filtro de correo no deseado y la directiva de filtro de correo no deseado asociada.
 
 En Exchange Online PowerShell o en un EOP PowerShell independiente, usted administra la directiva y la regla por separado. Para más información, consulte la sección [Uso de Exchange Online PowerShell o EOP PowerShell independiente para configurar directivas contra correo no deseado](#use-exchange-online-powershell-or-standalone-eop-powershell-to-configure-anti-spam-policies), que se muestra más adelante en este mismo artículo.
@@ -75,12 +75,12 @@ Para aumentar la eficacia del filtrado de correo no deseado, puede crear directi
 
   **Notas**:
 
-  - La adición de usuarios al rol correspondiente de Azure Active Directory en el Centro de administración de Microsoft 365 proporciona a los usuarios los permisos necesarios _y_ los permisos para otras características de Microsoft 365. Para obtener más información, consulte [Acerca de los roles de administrador](../../admin/add-users/about-admin-roles.md).
+  - Adding users to the corresponding Azure Active Directory role in the Microsoft 365 admin center gives users the required permissions _and_ permissions for other features in Microsoft 365. For more information, see [About admin roles](../../admin/add-users/about-admin-roles.md).
   - El grupo de roles **Administración de organización de solo lectura** en [Exchange Online](/Exchange/permissions-exo/permissions-exo#role-groups) también proporciona acceso de solo lectura a la característica.
 
 - Para saber la configuración recomendada para las directivas contra correo electrónico no deseado, consulte [Configuración de la directiva de correo no deseado de EOP](recommended-settings-for-eop-and-office365.md#eop-anti-spam-policy-settings).
 
-- No puede deshabilitar por completo el filtrado de spam, pero puede utilizar una regla de flujo de correo (también conocida como regla de transporte) para evitar la mayor parte del filtrado de spam en los mensajes entrantes (por ejemplo, si redirige el correo electrónico a través de un servicio o dispositivo de protección de terceros antes de entregarlo a Microsoft 365). Para obtener más información, vea [Usar reglas de flujo de mensajes para establecer el nivel de confianza de spam (SCL) en los mensajes](/exchange/security-and-compliance/mail-flow-rules/use-rules-to-set-scl).
+- You can't completely turn off spam filtering, but you can use a mail flow rule (also known as a transport rule) to bypass most spam filtering on incoming message (for example, if you route email through a third-party protection service or device before delivery to Microsoft 365). For more information, see [Use mail flow rules to set the spam confidence level (SCL) in messages](/exchange/security-and-compliance/mail-flow-rules/use-rules-to-set-scl).
   - Los mensajes de phishing de confianza elevada aún se filtran. Otras características de EOP no se ven afectadas (por ejemplo, los mensajes siempre se examinan en busca de malware).
   - Si necesita eludir los filtros de spam para los buzones de SecOps o las simulaciones de phishing, no use las reglas de flujo de correo. Para obtener más información, vea [Configurar la entrega de simulaciones de phishing de terceros a los usuarios y de mensajes no filtrados a los buzones de SecOps](configure-advanced-delivery.md).
 
@@ -90,9 +90,9 @@ La creación de una directiva contra correo no deseado en el portal de Microsoft
 
 1. En el portal de Microsoft 365 Defender en <https://security.microsoft.com>, vaya a **Correo electrónico y colaboración** \> **Directivas y reglas** \> **Directivas de amenazas** \> **Correo electrónico no deseado** en la sección **Directivas**. Para ir directamente a la página **Directivas contra correo no deseado**, use <https://security.microsoft.com/antispam>.
 
-2. En la página de **directivas antispam**, haga clic en el ![icono Crear.](../../media/m365-cc-sc-create-icon.png) **Crear directiva**, y luego, seleccione **Entrada** en la lista desplegable.
+2. En la página **Directivas contra correo no deseado** , haga clic en ![el icono Crear.](../../media/m365-cc-sc-create-icon.png) **Cree una directiva** y, a continuación, seleccione **Entrante** en la lista desplegable.
 
-3. Se abre el asistente de directivas. En la página **Nombre de la directiva**, configure estas opciones:
+3. The policy wizard opens. On the **Name your policy page**, configure these settings:
    - **Nombre**: escriba un nombre único y descriptivo para la directiva.
    - **Descripción**: escriba una descripción opcional para la directiva.
 
@@ -107,11 +107,11 @@ La creación de una directiva contra correo no deseado en el portal de Microsoft
 
    Haga clic en el cuadro correspondiente, comience a escribir un valor y seleccione el valor que desee de los resultados. Repita este proceso tantas veces como sea necesario. Para quitar un valor existente, haga clic en Quitar ![Icono Quitar.](../../media/m365-cc-sc-remove-selection-icon.png) junto al valor.
 
-   Para los usuarios o grupos, puede utilizar la mayoría de los identificadores (nombre, nombre para mostrar, alias, dirección de correo electrónico, nombre de la cuenta, etc.), pero el nombre para mostrar correspondiente se muestra en los resultados. Para los usuarios, introduzca un asterisco (\*) por sí mismo para ver todos los valores disponibles.
+   For users or groups, you can use most identifiers (name, display name, alias, email address, account name, etc.), but the corresponding display name is shown in the results. For users, enter an asterisk (\*) by itself to see all available values.
 
    Varios valores en la misma condición usan la lógica OR (por ejemplo, _\<recipient1\>_ o _\<recipient2\>_). Hay diferentes condiciones que usan la lógica AND (por ejemplo, _\<recipient1\>_ y _\<member of group 1\>_).
 
-   - **Excluir estos usuarios, grupos y dominios**: para agregar excepciones para los destinatarios internos a los que se aplica la directiva (excepciones de destinatarios), seleccione esta opción y configure las excepciones. La configuración y el comportamiento son exactamente iguales a las condiciones.
+   - **Exclude these users, groups, and domains**: To add exceptions for the internal recipients that the policy applies to (recipient exceptions), select this option and configure the exceptions. The settings and behavior are exactly like the conditions.
 
    > [!IMPORTANT]
    > Los diferentes tipos de condiciones o excepciones no son aditivos; son inclusivos. La directiva se aplica _solo_ a los destinatarios que coinciden con _todos_ los filtros de destinatarios especificados. Por ejemplo, se configura una condición de filtro de destinatario en la directiva con los siguientes valores:
@@ -157,22 +157,22 @@ La creación de una directiva contra correo no deseado en el portal de Microsoft
 
      En la siguiente tabla se describen las acciones disponibles en los veredictos de filtrado de correo no deseado.
 
-     - Una marca de verificación ( ![Marca de verificación.](../../media/checkmark.png)) indica que la acción está disponible (no todas las acciones están disponibles para todos los veredictos).
+     - Una marca de verificación ( ✔ ) indica que la acción está disponible (no todas las acciones están disponibles para todos los veredictos).
      - Un asterisco (<sup>\*</sup>) después de la marca de verificación indica la acción predeterminada para el veredicto de filtrado de correo no deseado.
 
      |Acción|Correo no deseado|Alto<br>confianza<br>correo no deseado|Suplantación de identidad (phishing)|Alto<br>confianza<br>suplantación de identidad (phishing)|Masivo|
      |---|:---:|:---:|:---:|:---:|:---:|
-     |**Mover el mensaje a la carpeta Correo no deseado**: el mensaje se entrega al buzón y se mueve a la carpeta Correo no deseado.<sup>1</sup>|![Marca de verificación.](../../media/checkmark.png)<sup>\*</sup>|![Marca de verificación.](../../media/checkmark.png)<sup>\*</sup>|![Marca de verificación.](../../media/checkmark.png)|![Marca de verificación](../../media/checkmark.png)|![Marca de verificación](../../media/checkmark.png)<sup>\*</sup>|
-     |**Agregar encabezado X**: agrega un encabezado X al encabezado del mensaje y entrega el mensaje al buzón. <p> Especifique el nombre de campo del encabezado X (no el valor) más adelante en el cuadro **Agregar este texto de encabezado X**. <p> Para los veredictos **Correo no deseado** y **Correo no deseado de alta confianza**, el mensaje se mueve a la carpeta Correo no deseado.<sup>1,2</sup>|![Marca de verificación.](../../media/checkmark.png)|![Marca de verificación](../../media/checkmark.png)|![Marca de verificación](../../media/checkmark.png)||![Marca de verificación](../../media/checkmark.png)|
-     |**Anteponer la línea de asunto al texto**: agrega texto al principio de la línea de asunto del mensaje. El mensaje se entrega al buzón y se mueve a la carpeta Correo no deseado.<sup>1,2</sup> <p> Especifique el texto más adelante en el cuadro **Prefijo de línea de asunto con este texto**.|![Marca de verificación.](../../media/checkmark.png)|![Marca de verificación](../../media/checkmark.png)|![Marca de verificación](../../media/checkmark.png)||![Marca de verificación](../../media/checkmark.png)|
-     |**Redirigir el mensaje a la dirección de correo electrónico**: envía el mensaje a otros destinatarios en vez de a los especificados. <p> Especifique los destinatarios más tarde en el cuadro **Redirigir a esta dirección de correo electrónico**.|![Marca de verificación.](../../media/checkmark.png)|![Marca de verificación](../../media/checkmark.png)|![Marca de verificación](../../media/checkmark.png)|![Marca de verificación](../../media/checkmark.png)|![Marca de verificación](../../media/checkmark.png)|
-     |**Eliminar mensaje**: elimina el mensaje completo, incluidos todos los datos adjuntos.|![Marca de verificación.](../../media/checkmark.png)|![Marca de verificación](../../media/checkmark.png)|![Marca de verificación](../../media/checkmark.png)||![Marca de verificación](../../media/checkmark.png)|
-     |**Colocar el mensaje en cuarentena**: envía el mensaje a la cuarentena en lugar de a los destinatarios. <p> Especifique cuánto tiempo se debe conservar el mensaje en cuarentena más adelante en el cuadro **Cuarentena**. <p> Se especifica la [directiva de cuarentena](quarantine-policies.md) que se aplica a los mensajes en cuarentena para el veredicto del filtro de spam en el cuadro **Seleccionar una directiva** que aparece. Para obtener más información, consulte [Directivas de cuarentena](quarantine-policies.md). <sup>3</sup> |![Marca de verificación.](../../media/checkmark.png)|![Marca de verificación](../../media/checkmark.png)|![Marca de verificación](../../media/checkmark.png)<sup>\*</sup>|![Marca de verificación](../../media/checkmark.png)<sup>\*</sup>|![Marca de verificación](../../media/checkmark.png)|
-     |**Ninguna acción**|||||![Marca de verificación](../../media/checkmark.png)|
+     |**Mover el mensaje a la carpeta Correo no deseado**: el mensaje se entrega al buzón y se mueve a la carpeta Correo no deseado.<sup>1</sup>|✔<sup>\*</sup>|✔<sup>\*</sup>|✔|✔|✔<sup>\*</sup>|
+     |**Agregar encabezado X**: agrega un encabezado X al encabezado del mensaje y entrega el mensaje al buzón. <p> Especifique el nombre de campo del encabezado X (no el valor) más adelante en el cuadro **Agregar este texto de encabezado X**. <p> Para los veredictos **Correo no deseado** y **Correo no deseado de alta confianza**, el mensaje se mueve a la carpeta Correo no deseado.<sup>1,2</sup>|✔|✔|✔||✔|
+     |**Anteponer la línea de asunto al texto**: agrega texto al principio de la línea de asunto del mensaje. El mensaje se entrega al buzón y se mueve a la carpeta Correo no deseado.<sup>1,2</sup> <p> Especifique el texto más adelante en el cuadro **Prefijo de línea de asunto con este texto**.|✔|✔|✔||✔|
+     |**Redirigir el mensaje a la dirección de correo electrónico**: envía el mensaje a otros destinatarios en vez de a los especificados. <p> Especifique los destinatarios más tarde en el cuadro **Redirigir a esta dirección de correo electrónico**.|✔|✔|✔|✔|✔|
+     |**Eliminar mensaje**: elimina el mensaje completo, incluidos todos los datos adjuntos.|✔|✔|✔||✔|
+     |**Colocar el mensaje en cuarentena**: envía el mensaje a la cuarentena en lugar de a los destinatarios. <p> Especifique cuánto tiempo se debe conservar el mensaje en cuarentena más adelante en el cuadro **Cuarentena**. <p> You specify the [quarantine policy](quarantine-policies.md) that applies to quarantined messages for the spam filter verdict in the **Select a policy** box that appears. For more information, see [Quarantine policies](quarantine-policies.md).<sup>3</sup>|✔|✔|✔<sup>\*</sup>|✔<sup>\*</sup>|✔|
+     |**Ninguna acción**|||||✔|
 
-     > <sup>1</sup> EOP ahora usa su propio agente de entrega de flujo de correo para enrutar mensajes a la carpeta de correo no deseado en lugar de usar la regla de correo no deseado. El parámetro _Enabled_ en el cmdlet **Set-MailboxJunkEmailConfiguration** ya no tiene ningún efecto en el flujo de correo. Para más información, consulte [Configuración de las opciones del correo no deseado en buzones de Exchange Online](configure-junk-email-settings-on-exo-mailboxes.md).
+     > <sup>1</sup> EOP ahora usa su propio agente de entrega de flujo de correo para enrutar los mensajes a la carpeta junk Email en lugar de usar la regla de correo no deseado en el buzón. El parámetro _Enabled_ en el cmdlet **Set-MailboxJunkEmailConfiguration** ya no tiene ningún efecto en el flujo de correo. Para más información, consulte [Configuración de las opciones del correo no deseado en buzones de Exchange Online](configure-junk-email-settings-on-exo-mailboxes.md).
      >
-     > En los entornos híbridos en los que EOP protege los buzones de correo de Exchange local, es necesario configurar las reglas de flujo de correo (también conocidas como reglas de transporte) en Exchange local. Estas reglas de flujos de correo traducen el veredicto de filtrado de correo no deseado de EOP para que la regla de correo no deseado pueda mover el mensaje a la carpeta de correo no deseado. Para más detalles, consulte [Configurar EOP para enviar correo no deseado a la carpeta de Correo no deseado en entornos híbridos](/exchange/standalone-eop/configure-eop-spam-protection-hybrid).
+     > In hybrid environments where EOP protects on-premises Exchange mailboxes, you need to configure mail flow rules (also known as transport rules) in on-premises Exchange. These mail flow rules translate the EOP spam filtering verdict so the junk email rule in the mailbox can move the message to the Junk Email folder. For details, see [Configure EOP to deliver spam to the Junk Email folder in hybrid environments](/exchange/standalone-eop/configure-eop-spam-protection-hybrid).
      >
      > <sup>2</sup> Puede usar este valor como condición en las reglas de flujo de correo (también conocidas como reglas de transporte) para filtrar o redirigir el mensaje.
      >
@@ -195,7 +195,7 @@ La creación de una directiva contra correo no deseado en el portal de Microsoft
 
      Si escribe un valor que contiene espacios o dos puntos (:), el valor que escriba se ignora y se agrega el encabezado X predeterminado al mensaje (`X-This-Is-Spam: This message appears to be spam.`).
 
-   - **Agregar este texto a la línea de asunto**: Esta casilla es obligatoria y sólo está disponible si ha seleccionado **Agregar texto a la línea de asunto** como acción para un veredicto de filtrado de spam. Introduzca el texto que se agregará al principio de la línea de asunto del mensaje.
+   - **Prepend subject line with this text**: This box is required and available only if you selected **Prepend subject line with text** as the action for a spam filtering verdict. Enter the text to add to the beginning of the message's subject line.
 
    - **Redirigir a esta dirección de correo electrónico**: este cuadro es obligatorio y solo está disponible si ha seleccionado la **Redirigir el mensaje a dirección de correo electrónico** como la acción para un veredicto de filtrado de correo no deseado. Escriba la dirección de correo electrónico a la que quiere enviar el mensaje. Puede especificar varios valores separados por punto y coma (;).
 
@@ -209,7 +209,7 @@ La creación de una directiva contra correo no deseado en el portal de Microsoft
      - **Habilitar ZAP para los mensajes de correo no deseado**: de forma predeterminada, ZAP está habilitada para la detección de correo no deseado, pero puede deshabilitarla si desactiva la casilla.
 
    > [!NOTE]
-   > Las notificaciones de correo no deseado del usuario final se han reemplazado por _notificaciones de cuarentena_ en directivas de cuarentena. Las notificaciones de cuarentena contienen información sobre los mensajes en cuarentena para todas las características de protección admitidas (no solo directivas contra correo no deseado y veredictos de directivas contra suplantación de identidad). Para más información, vea [directivas de cuarentena](quarantine-policies.md).
+   > End-user spam notifications have been replaced by _quarantine notifications_ in quarantine policies. Quarantine notifications contain information about quarantined messages for all supported protection features (not just anti-spam policy and anti-phishing policy verdicts). For more information, see [Quarantine policies](quarantine-policies.md).
 
    Cuando termine, haga clic en **Siguiente**.
 
@@ -236,7 +236,7 @@ La creación de una directiva contra correo no deseado en el portal de Microsoft
       - **Dominios** \> **bloqueados**: haga clic en **Bloquear dominios**.
 
    2. En el control flotante que aparece, siga los pasos siguientes:
-      1. Haga clic en el ![icono Crear.](../../media/m365-cc-sc-create-icon.png) **Agregar remitentes** o **Agregar dominios**.
+      1. Haga clic en ![el icono Crear.](../../media/m365-cc-sc-create-icon.png) **Agregar remitentes** o **Agregar dominios**.
       2. En el control flotante **Agregar remitentes** o **Agregar dominios** que aparece, escriba la dirección de correo electrónico del remitente en el cuadro **Remitente** o el dominio en el cuadro **Dominio**. Mientras escribe, el valor aparece debajo del cuadro. Cuando haya terminado de escribir la dirección de correo electrónico o el dominio, seleccione el valor debajo del cuadro.
       3. Repita el paso anterior tantas veces como sea necesario. Para quitar un valor existente, haga clic en Quitar ![Icono Quitar.](../../media/m365-cc-sc-remove-selection-icon.png) junto al valor.
 
@@ -298,8 +298,8 @@ No se puede deshabilitar la directiva contra correo no deseado predeterminada.
 2. En la página **Directivas contra correo no deseado**, seleccione una directiva con el **Valor de tipo** de **Directiva personalizada contra el correo no deseado** de la lista. Para ello, haga clic en el nombre.
 
 3. En la parte superior del control flotante de detalles de la directiva que aparece, verá uno de los siguientes valores:
-   - **Directiva desactivada**: para activar la directiva, haga clic en ![icono Activar.](../../media/m365-cc-sc-turn-on-off-icon.png) **Activar** .
-   - **Directiva activada**: para desactivar la directiva, haga clic en el ![Icono Desactivar](../../media/m365-cc-sc-turn-on-off-icon.png) **Desactivar**.
+   - **Policy off**: To turn on the policy, click ![Turn on icon.](../../media/m365-cc-sc-turn-on-off-icon.png) **Turn on** .
+   - **Policy on**: To turn off the policy, click ![Turn off icon.](../../media/m365-cc-sc-turn-on-off-icon.png) **Turn off**.
 
 4. En el cuadro de diálogo de confirmación que aparece, haga clic **Activar** o **Desactivar**.
 
@@ -311,11 +311,11 @@ De nuevo en la página principal de la directiva, el valor **Estado** de la dire
 
 De manera predeterminada, a las directivas contra correo no deseado se les asigna una prioridad en función del orden en que se crearon (las directivas más recientes tienen una prioridad menor que las directivas anteriores). Un número de prioridad más bajo indica una prioridad mayor de la directiva (0 es el más alto) y las directivas se procesan por orden de prioridad (las directivas de prioridad mayor se procesan antes que las directivas de prioridad menor). Ninguna de las dos directivas puede tener la misma prioridad, y el procesamiento de directivas se detendrá cuando se aplique la primera directiva.
 
-Para cambiar la prioridad de una directiva, haga clic en **Aumentar prioridad** o **Reducir prioridad** en las propiedades de la directiva (no puede modificar directamente el número de **Prioridad** en el portal de Microsoft 365 Defender). Cambiar la prioridad de una directiva sólo tiene sentido si tiene varias directivas.
+To change the priority of a policy, you click **Increase priority** or **Decrease priority** in the properties of the policy (you can't directly modify the **Priority** number in the Microsoft 365 Defender portal). Changing the priority of a policy only makes sense if you have multiple policies.
 
  **Notas**:
 
-- En el portal de Microsoft 365 Defender, solo puede cambiar la prioridad de la directiva contra el correo no deseado después de crearla. En PowerShell, puede invalidar la prioridad predeterminada al crear la regla de filtrado de correo no deseado (lo cual puede afectar a la prioridad de las reglas existentes).
+- In the Microsoft 365 Defender portal, you can only change the priority of the anti-spam policy after you create it. In PowerShell, you can override the default priority when you create the spam filter rule (which can affect the priority of existing rules).
 - Las directivas contra correo no deseado se procesan en el orden en el que se muestran (la primera directiva tiene el valor de **Prioridad** 0). La directiva predeterminada contra correo no deseado tiene el valor de prioridad **Más bajo** y no puede cambiarlo.
 
 1. En el portal de Microsoft 365 Defender en <https://security.microsoft.com>, vaya a **Correo electrónico y colaboración** \> **Directivas y reglas** \> **Directivas de amenazas** \> **Correo electrónico no deseado** en la sección **Directivas**. Para ir directamente a la página **Directivas contra correo no deseado**, use <https://security.microsoft.com/antispam>.
@@ -327,13 +327,13 @@ Para cambiar la prioridad de una directiva, haga clic en **Aumentar prioridad** 
    - La directiva contra correo no deseado con el valor de **Prioridad** inferior (por ejemplo, **3**) solo tiene disponible la opción **Aumentar la prioridad**.
    - Si tiene tres o más directivas contra correo no deseado, las directivas entre los valores de prioridad más alto y más bajo tienen disponibles tanto las opciones de **Aumentar la prioridad** como de **Disminuir la prioridad**.
 
-   Haga clic en el ![Icono Aumentar la prioridad.](../../media/m365-cc-sc-increase-icon.png) **Aumentar la prioridad** o en el ![Icono Disminuir la prioridad](../../media/m365-cc-sc-decrease-icon.png) **Reducir la prioridad** para cambiar el valor de **Prioridad**.
+   Click ![Increase priority icon.](../../media/m365-cc-sc-increase-icon.png) **Increase priority** or ![Decrease priority icon](../../media/m365-cc-sc-decrease-icon.png) **Decrease priority** to change the **Priority** value.
 
 4. Cuando haya terminado, haga clic en **Cerrar** en el control flotante de detalles de la directiva.
 
 ## <a name="use-the-microsoft-365-defender-portal-to-remove-custom-anti-spam-policies"></a>Usar el portal de Microsoft 365 Defender para quitar directivas contra correo no deseado personalizadas
 
-Cuando se utiliza el portal de Microsoft 365 Defender para eliminar una directiva antispam personalizada, se eliminan tanto la regla del filtro antispam como la directiva del filtro antispam correspondiente. No se puede eliminar la directiva antispam predeterminada.
+When you use the Microsoft 365 Defender portal to remove a custom anti-spam policy, the spam filter rule and the corresponding spam filter policy are both deleted. You can't remove the default anti-spam policy.
 
 1. En el portal de Microsoft 365 Defender en <https://security.microsoft.com>, vaya a **Correo electrónico y colaboración** \> **Directivas y reglas** \> **Directivas de amenazas** \> **Correo electrónico no deseado** en la sección **Directivas**. Para ir directamente a la página **Directivas contra correo no deseado**, use <https://security.microsoft.com/antispam>.
 
@@ -353,7 +353,7 @@ La diferencia entre las directivas de filtro de correo no deseado y las reglas d
 
 Las siguientes opciones de configuración de directivas contra correo no deseado solo están disponibles en PowerShell:
 
-- El parámetro _MarkAsSpamBulkMail_ que está `On` por defecto. Los efectos de este parámetro se explicaron en la sección [Usar el portal de Microsoft 365 Defender para crear directivas antispam](#use-the-microsoft-365-defender-portal-to-create-anti-spam-policies), anteriormente en este artículo.
+- The _MarkAsSpamBulkMail_ parameter that's `On` by default. The effects of this setting were explained in the [Use the Microsoft 365 Defender portal to create anti-spam policies](#use-the-microsoft-365-defender-portal-to-create-anti-spam-policies) section earlier in this article.
 - Las siguientes opciones de configuración del correo no deseado para el usuario final ponen las notificaciones en cuarentena:
   - El parámetro _DownloadLink_ que muestra u oculta el vínculo a la Herramienta de informes de correo no deseado para Outlook.
   - El parámetro _EndUserSpamNotificationCustomSubject_ que puede usar para personalizar la línea de asunto de la notificación.
@@ -495,7 +495,7 @@ Para obtener información detallada acerca de la sintaxis y los parámetros, con
 
 ### <a name="use-powershell-to-modify-spam-filter-rules"></a>Uso de PowerShell para modificar reglas de filtro de correo no deseado
 
-La única configuración que no está disponible cuando se modifica una regla de filtro de spam en PowerShell es el parámetro _Habilitado_, que permite crear una regla deshabilitada. Para activar o desactivar las reglas de filtro de spam existentes, consulte la siguiente sección
+The only setting that isn't available when you modify a spam filter rule in PowerShell is the _Enabled_ parameter that allows you to create a disabled rule. To enable or disable existing spam filter rules, see the next section.
 
 Por lo demás, no hay opciones de configuración adicionales disponibles al modificar una regla de filtro de correo no deseado en PowerShell. Están disponibles las mismas opciones de configuración cuando se crea una regla que las descritas en la sección [Paso 2: Usar PowerShell para crear una regla de filtro de correo no deseado](#step-2-use-powershell-to-create-a-spam-filter-rule) anteriormente en este tema.
 
@@ -539,7 +539,7 @@ Para obtener información detallada sobre la sintaxis y los parámetros, consult
 
 ### <a name="use-powershell-to-set-the-priority-of-spam-filter-rules"></a>Uso de PowerShell para establecer la prioridad de las reglas de filtro de correo no deseado
 
-El valor de prioridad máximo que se puede establecer en una regla es 0. El valor mínimo depende del número de reglas. Por ejemplo, si tiene cinco reglas, puede usar los valores de prioridad del 0 al 4. El cambio de prioridad de una regla existente puede tener un efecto cascada en otras reglas. Por ejemplo, si tiene cinco reglas personalizadas (prioridades del 0 al 4) y cambia la prioridad de una regla a 2, la regla existente de prioridad 2 cambia a prioridad 3 y la regla de prioridad 3 cambia a prioridad 4.
+The highest priority value you can set on a rule is 0. The lowest value you can set depends on the number of rules. For example, if you have five rules, you can use the priority values 0 through 4. Changing the priority of an existing rule can have a cascading effect on other rules. For example, if you have five custom rules (priorities 0 through 4), and you change the priority of a rule to 2, the existing rule with priority 2 is changed to priority 3, and the rule with priority 3 is changed to priority 4.
 
 A fin de establecer la prioridad de una regla para filtrar el correo no deseado en PowerShell, use la siguiente sintaxis:
 
@@ -547,7 +547,7 @@ A fin de establecer la prioridad de una regla para filtrar el correo no deseado 
 Set-HostedContentFilterRule -Identity "<RuleName>" -Priority <Number>
 ```
 
-En el ejemplo siguiente, la prioridad de la regla denominada "Marketing Department" se establece en 2. Todas las reglas existentes que tienen una prioridad menor o igual a 2 se reducen en 1 (sus números de prioridad aumentan en 1).
+This example sets the priority of the rule named Marketing Department to 2. All existing rules that have a priority less than or equal to 2 are decreased by 1 (their priority numbers are increased by 1).
 
 ```PowerShell
 Set-HostedContentFilterRule -Identity "Marketing Department" -Priority 2
@@ -599,7 +599,7 @@ Para obtener información detallada acerca de la sintaxis y los parámetros, con
 ### <a name="send-a-gtube-message-to-test-your-spam-policy-settings"></a>Envíe un mensaje GTUBE para comprobar la configuración de la directiva de correo no deseado
 
 > [!NOTE]
-> Estos pasos solo funcionarán si la organización de correo electrónico desde la que envía el mensaje GTUBE no detecta correo no deseado saliente. Si lo hace, no podrá enviar el mensaje de prueba.
+> These steps will only work if the email organization that you're sending the GTUBE message from doesn't scan for outbound spam. If it does, you can't send the test message.
 
 Prueba genérica de correo electrónico en masa no solicitado (GTUBE) es una cadena de texto que se incluye en un mensaje de prueba para comprobar la configuración del correo no deseado de la organización. Un mensaje GTUBE es similar al archivo de texto del European Institute of Computer virus Research (EICAR) para probar la configuración de malware.
 

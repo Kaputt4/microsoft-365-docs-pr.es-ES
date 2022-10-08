@@ -6,18 +6,18 @@ manager: serdars
 ms.reviewer: amitman
 audience: admin
 ms.topic: article
-ms.service: o365-administration
+ms.service: microsoft-365-business
 f1.keywords:
 - CSH
 ms.collection: M365-modern-desktop
 ms.localizationpriority: medium
 description: Obtenga información sobre cómo llevar a cabo tareas clave de administración de la puerta de enlace de Microsoft LMS, incluida la visualización, eliminación, edición y solución de problemas.
-ms.openlocfilehash: 77f89927a7beb7cd045c2325bd805efdf45996a0
-ms.sourcegitcommit: 5aed330d8af523f0dffe5e392f1c79f047e38172
+ms.openlocfilehash: ccf05bb497546bae153f2132e27440713661845b
+ms.sourcegitcommit: 0b7070ec119e00e0dafe030bbfbef0ae5c9afa19
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/21/2022
-ms.locfileid: "66944117"
+ms.lasthandoff: 09/29/2022
+ms.locfileid: "68187567"
 ---
 # <a name="manage-microsoft-lms-gateway-for-any-lms"></a>Administración de la puerta de enlace de Microsoft LMS para cualquier LMS
 

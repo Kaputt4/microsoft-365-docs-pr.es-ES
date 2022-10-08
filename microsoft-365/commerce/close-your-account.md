@@ -8,9 +8,10 @@ manager: scotv
 ms.reviewer: amberb, vikdesai
 audience: Admin
 ms.topic: article
-ms.service: o365-administration
+ms.service: microsoft-365-business
 ms.localizationpriority: medium
 ms.collection:
+- scotvorg
 - M365-subscription-management
 - Adm_O365
 ms.custom:
@@ -21,12 +22,12 @@ ms.custom:
 search.appverid: MET150
 description: Al cerrar la cuenta con Microsoft, se elimina toda la información relacionada con su cuenta, incluidas las licencias, los usuarios y los datos de usuario.
 ms.date: 04/02/2021
-ms.openlocfilehash: a14dd1153d8030dd953c58404902a891aeefdaf9
-ms.sourcegitcommit: d1b60ed9a11f5e6e35fbaf30ecaeb9dfd6dd197d
+ms.openlocfilehash: 6a3bc064b3b1658fd1bd9124a23e0ec8c5a4ac02
+ms.sourcegitcommit: 0b7070ec119e00e0dafe030bbfbef0ae5c9afa19
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/29/2022
-ms.locfileid: "66491767"
+ms.lasthandoff: 09/29/2022
+ms.locfileid: "68195817"
 ---
 # <a name="close-your-microsoft-account"></a>Cierre de la cuenta de Microsoft
 
@@ -52,7 +53,7 @@ Si su organización usa Active Directory que se sincroniza con Microsoft Azure A
 
 ## <a name="step-2-cancel-all-active-subscriptions"></a>Paso 2: Cancelar todas las suscripciones activas
 
-1. En el centro de administración, vaya a la página **Facturación** > <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">Sus productos</a>.
+1. En el centro de administración, vaya a la página de **Facturación** > <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">Sus productos</a>.
 2. En la pestaña **Productos** , busque una suscripción activa. Seleccione los tres puntos (más acciones) y, después, seleccione **Cancelar suscripción**.
 3. En el panel **Cancelar suscripción**, seleccione una razón por la que cancela. Opcionalmente, proporcione algún comentario.
 4. Seleccione **Guardar**.
@@ -60,7 +61,7 @@ Si su organización usa Active Directory que se sincroniza con Microsoft Azure A
 
 ## <a name="step-3-delete-all-disabled-subscriptions"></a>Paso 3: Eliminar todas las suscripciones deshabilitadas
 
-1. En el centro de administración, vaya a la página **Facturación** > <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">Sus productos</a>.
+1. En el centro de administración, vaya a la página de **Facturación** > <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">Sus productos</a>.
 2. En la pestaña **Productos** , seleccione una suscripción deshabilitada.
 3. En la página de detalles de la suscripción, en la sección **Configuración de suscripción y pago** , seleccione **Eliminar suscripción**.
 4. En el panel **Eliminar suscripción** , seleccione **Eliminar suscripción**.

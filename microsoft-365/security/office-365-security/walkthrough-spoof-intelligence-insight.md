@@ -14,19 +14,19 @@ search.appverid:
 - MOE150
 ms.assetid: 59a3ecaf-15ed-483b-b824-d98961d88bdd
 ms.collection:
-- M365-security-compliance
+- m365-security
 description: Los administradores pueden aprender a usar la directiva de inteligencia de suplantación de identidad y la información de inteligencia de suplantación de identidad para permitir o bloquear remitentes suplantados detectados.
 ms.custom:
 - seo-marvel-apr2020
 ms.subservice: mdo
 ms.service: microsoft-365-security
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: ed7c369dbb2adcd9664bb4d196f2984932b3905d
-ms.sourcegitcommit: 437461fa1d38ff9bb95dd8a1c5f0b94e8111ada2
+ms.openlocfilehash: 6cc9c53ab93d3f97e3547adb9b5354e52e6c4e98
+ms.sourcegitcommit: 12af9e8e3a6eaa090fda9e98ccb831dff65863a4
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/14/2022
-ms.locfileid: "67672763"
+ms.lasthandoff: 09/27/2022
+ms.locfileid: "68066330"
 ---
 # <a name="manage-spoofed-senders-using-the-spoof-intelligence-policy-and-spoof-intelligence-insight-in-eop"></a>Administración de remitentes suplantados mediante la directiva de inteligencia de suplantación de identidad y la información de inteligencia de suplantación de identidad en EOP
 
@@ -61,7 +61,7 @@ ms.locfileid: "67672763"
 
   **Notas**:
 
-  - La adición de usuarios al rol correspondiente de Azure Active Directory en el Centro de administración de Microsoft 365 proporciona a los usuarios los permisos necesarios _y_ los permisos para otras características de Microsoft 365. Para obtener más información, consulte [Acerca de los roles de administrador](../../admin/add-users/about-admin-roles.md).
+  - Adding users to the corresponding Azure Active Directory role in the Microsoft 365 admin center gives users the required permissions _and_ permissions for other features in Microsoft 365. For more information, see [About admin roles](../../admin/add-users/about-admin-roles.md).
   - El grupo de roles **Administración de organización de solo lectura** en [Exchange Online](/Exchange/permissions-exo/permissions-exo#role-groups) también proporciona acceso de solo lectura a la característica.
 
 - Las opciones de inteligencia sobre suplantación de identidad se describen en [Configuración de suplantación de identidad en directivas contra suplantación de identidad (phishing).](set-up-anti-phishing-policies.md#spoof-settings)
