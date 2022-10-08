@@ -12,20 +12,21 @@ ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection:
-- M365-security-compliance
+- m365-security
 - m365solution-endpointprotect
 - m365solution-scenario
 - m365-initiative-defender-endpoint
 - highpri
+- tier1
 ms.topic: article
 ms.subservice: mde
 search.appverid: met150
-ms.openlocfilehash: dfce50825b3cdf2c63dd90377672c7b843147859
-ms.sourcegitcommit: 9b133379196da2b3a4bb311b07ff274f43780f68
+ms.openlocfilehash: d0809a1efaa091c21e2cb88c0f085e978a7f048f
+ms.sourcegitcommit: 50da6f1f6ef2274c17ed9729e7ad84395b0a9be2
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/14/2022
-ms.locfileid: "67704246"
+ms.lasthandoff: 10/08/2022
+ms.locfileid: "68506508"
 ---
 # <a name="onboard-to-the-microsoft-defender-for-endpoint-service"></a>Incorporar al servicio Microsoft Defender para punto de conexión
 
@@ -81,10 +82,10 @@ Después de incorporar los puntos de conexión, configurará las funcionalidades
 |-|-|
 | [Respuesta & de detección de puntos de conexión (EDR)](overview-endpoint-detection-response.md) | Las funcionalidades de detección y respuesta de puntos de conexión de Defender para punto de conexión proporcionan detecciones avanzadas de ataques casi en tiempo real y accionables. Los analistas de seguridad pueden asignar prioridades a las alertas de forma eficaz, obtener visibilidad para todo el ámbito de la vulneración y llevar a cabo acciones de respuesta para corregir las amenazas. |
 | [Administración de vulnerabilidades de Microsoft Defender (MDVM)](next-gen-threat-and-vuln-mgt.md) | La administración de vulnerabilidades de Defender es un componente de Microsoft Defender para punto de conexión y proporciona a los administradores de seguridad y a los equipos de operaciones de seguridad un valor único, incluidos: - Información de respuesta y detección de puntos de conexión en tiempo real (EDR) correlacionada con vulnerabilidades de punto de conexión: contexto de vulnerabilidad de dispositivo invaluable durante las investigaciones de incidentes: procesos de corrección integrados a través de Microsoft Intune y Microsoft System Center Configuration Manager.  |
-| [Protección de última generación (NGP)](microsoft-defender-antivirus-windows.md) | Antivirus de Microsoft Defender es una solución antimalware integrada que proporciona protección de última generación para equipos de escritorio, equipos portátiles y servidores. El Antivirus de Microsoft Defender incluye:<br> <br>-Protección proporcionada en la nube para la detección casi instantánea y el bloqueo de amenazas nuevas y emergentes. Junto con Intelligent Security Graph y el aprendizaje automático, la protección en la nube forma parte de las tecnologías de última generación utilizadas por el Antivirus de Microsoft Defender.<br> <br> - Análisis always-on mediante la supervisión avanzada del comportamiento de archivos y procesos y otras heurísticas (también conocida como "protección en tiempo real").<br><br> - Actualizaciones de protección dedicadas basadas en el aprendizaje automático, el análisis de macrodatos humanos y automatizados, y la investigación en profundidad de la resistencia a amenazas. |
+| [Protección de última generación (NGP)](microsoft-defender-antivirus-windows.md) | Microsoft Defender Antivirus es una solución antimalware integrada que proporciona protección de última generación para equipos de escritorio, equipos portátiles y servidores. El Antivirus de Microsoft Defender incluye:<br> <br>-Protección proporcionada en la nube para la detección casi instantánea y el bloqueo de amenazas nuevas y emergentes. Junto con Intelligent Security Graph y el aprendizaje automático, la protección en la nube forma parte de las tecnologías de última generación utilizadas por el Antivirus de Microsoft Defender.<br> <br> - Análisis always-on mediante la supervisión avanzada del comportamiento de archivos y procesos y otras heurísticas (también conocida como "protección en tiempo real").<br><br> - Actualizaciones de protección dedicadas basadas en el aprendizaje automático, el análisis de macrodatos humanos y automatizados, y la investigación en profundidad de la resistencia a amenazas. |
 | [Reducción de la superficie expuesta a ataques (ASR)](overview-attack-surface-reduction.md) | Las funcionalidades de reducción de superficie expuesta a ataques en Microsoft Defender para punto de conexión ayudan a proteger los dispositivos y las aplicaciones de la organización frente a amenazas nuevas y emergentes. |
 | [Corrección de & de investigación automática (AIR)](automated-investigations.md) | Microsoft Defender para punto de conexión usa investigaciones automatizadas para reducir significativamente el volumen de alertas que deben investigarse individualmente. La característica de investigación automatizada aprovecha varios algoritmos de inspección y los procesos utilizados por los analistas (como cuadernos de estrategias) para examinar alertas y tomar medidas de corrección inmediatas para resolver infracciones. Esto reduce considerablemente el volumen de alertas, lo que facilita que los expertos de operaciones de seguridad puedan centrarse en amenazas más complejas y otras iniciativas de alto valor. |
-| [Expertos en amenazas de Microsoft (MTE)](microsoft-threat-experts.md) | Expertos en amenazas de Microsoft es un servicio de búsqueda administrado que proporciona centros de operaciones de seguridad (SOC) con supervisión y análisis de nivel experto para ayudarles a garantizar que las amenazas críticas en sus entornos únicos no se pierdan.      |
+| [Expertos en Microsoft Defender](microsoft-threat-experts.md) | Microsoft Defender Experts es un servicio de búsqueda administrado que proporciona centros de operaciones de seguridad (SOC) con supervisión y análisis de nivel experto para ayudarles a garantizar que las amenazas críticas en sus entornos únicos no se pierdan.      |
 
 Después de incorporar los puntos de conexión, configurará las distintas funcionalidades, como la detección y respuesta de puntos de conexión, la protección de próxima generación y la reducción de la superficie expuesta a ataques.
 

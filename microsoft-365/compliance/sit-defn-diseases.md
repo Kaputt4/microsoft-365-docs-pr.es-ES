@@ -14,21 +14,24 @@ f1_keywords:
 ms.service: O365-seccomp
 ms.localizationpriority: medium
 ms.collection:
-- M365-security-compliance
+- tier3
+- purview-compliance
 hideEdit: true
 feedback_system: None
 recommendations: false
-description: Definición de entidad de tipo de información confidencial de enfermedades.
-ms.openlocfilehash: bc31d0a0e4269241768db76770eacc443aea45d6
-ms.sourcegitcommit: 5aed330d8af523f0dffe5e392f1c79f047e38172
+description: Definición de entidad de tipo de información confidencial de enfermedades, esta entidad con nombre desagregada detecta texto que coincide con los nombres de enfermedad.
+ms.openlocfilehash: 56865df36d975b1caa0d5a97c5fcaa9eb8abec29
+ms.sourcegitcommit: 6df492719fecc2b213d55465dc1cd60ab4627ed6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/21/2022
-ms.locfileid: "66999332"
+ms.lasthandoff: 10/04/2022
+ms.locfileid: "68384281"
 ---
 # <a name="diseases"></a>Enfermedades
 
 Esta entidad con nombre desagregado detecta texto que coincide con los nombres de enfermedades, como *la diabetes*. Solo admite términos en inglés. También se incluye en todos [los términos y condiciones médicos](sit-defn-all-medical-terms-conditions.md) incluidos en la entidad con nombre SIT.
+
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
 
 ## <a name="confidence-level"></a>Nivel de confianza
 

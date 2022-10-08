@@ -10,17 +10,19 @@ audience: ITPro
 ms.topic: article
 ms.service: microsoft-365-enterprise
 ms.localizationpriority: medium
-ms.collection: M365-identity-device-management
+ms.collection:
+- scotvorg
+- M365-identity-device-management
 ms.custom:
 - TLG
 - Ent_TLGs
 description: Siga estos pasos para proteger las cuentas de administrador globales en el entorno de prueba de Microsoft 365 para empresas.
-ms.openlocfilehash: 2f4802529947d7f39545af7e8a54ba366a8cfcba
-ms.sourcegitcommit: 437461fa1d38ff9bb95dd8a1c5f0b94e8111ada2
+ms.openlocfilehash: 69f9f1a705986c24d013fe503b00714f13948764
+ms.sourcegitcommit: 0b7070ec119e00e0dafe030bbfbef0ae5c9afa19
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/14/2022
-ms.locfileid: "67673115"
+ms.lasthandoff: 09/29/2022
+ms.locfileid: "68200811"
 ---
 # <a name="protect-global-administrator-accounts-in-your-microsoft-365-for-enterprise-test-environment"></a>Protección de cuentas de administrador global en el entorno de prueba de Microsoft 365 para empresas
 

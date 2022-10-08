@@ -13,16 +13,19 @@ author: MSFTTracyP
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
-ms.collection: m365-guidance-templates
+ms.collection:
+- m365-guidance-templates
+- m365-security
+- tier3
 ms.topic: how-to
 ms.subservice: mdo
 search.appverid: met150
-ms.openlocfilehash: 5f181c20c4ed355279362811fdfff7d7d1a60c3e
-ms.sourcegitcommit: c29af68260ba8676083674b3c70209bff2c2e362
+ms.openlocfilehash: 484dfedf9563fc8100abc1abc477c6fc322ae25f
+ms.sourcegitcommit: 4e42bafee965446f44f7f57d1defed2b9b24fce8
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/16/2022
-ms.locfileid: "67735976"
+ms.lasthandoff: 09/30/2022
+ms.locfileid: "68231954"
 ---
 # <a name="how-to-configure-quarantine-permissions-and-policies"></a>Cómo configurar directivas y permisos de cuarentena
 

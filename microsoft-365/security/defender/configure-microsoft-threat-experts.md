@@ -18,14 +18,14 @@ ms.topic: article
 ms.collection:
 - m365-security
 - tier1
-ms.openlocfilehash: 7bd977ced10aa2c6823ffc3d766ac552c295e062
-ms.sourcegitcommit: 12af9e8e3a6eaa090fda9e98ccb831dff65863a4
+ms.openlocfilehash: b030c7ce4eb66f31e8c2d050715b2be71dcda6b6
+ms.sourcegitcommit: 50da6f1f6ef2274c17ed9729e7ad84395b0a9be2
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/27/2022
-ms.locfileid: "68048976"
+ms.lasthandoff: 10/08/2022
+ms.locfileid: "68506618"
 ---
-# <a name="configure-and-manage-microsoft-threat-experts-capabilities-through-microsoft-365-defender"></a>Configuración y administración de funcionalidades de Expertos en amenazas de Microsoft a través de Microsoft 365 Defender
+# <a name="configure-and-manage-microsoft-defender-experts-capabilities-through-microsoft-365-defender"></a>Configurar y administrar las funcionalidades de expertos de Microsoft Defender a través de Microsoft 365 Defender
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
 
@@ -41,9 +41,9 @@ ms.locfileid: "68048976"
 > [!IMPORTANT]
 > Antes de aplicar, asegúrese de analizar los requisitos de idoneidad para el servicio de búsqueda de amenazas administrada de notificaciones de ataque de punto de conexión con el proveedor de servicios técnicos de Microsoft y el equipo de la cuenta.
 
-Para recibir notificaciones de ataque de punto de conexión, deberá tener Microsoft 365 Defender implementados con dispositivos inscritos. A continuación, envíe una aplicación a través del portal de M365 para las notificaciones de ataque de punto de conexión.
+Para recibir notificaciones de ataque de punto de conexión, deberá tener Microsoft 365 Defender implementados con dispositivos inscritos. A continuación, envíe una aplicación a través del portal de Microsoft 365 Defender para notificaciones de ataque de punto de conexión.
 
-Póngase en contacto con el equipo de su cuenta o con el representante de Microsoft para suscribirse a Expertos en amenazas de Microsoft - Experts on Demand. Expertos a petición le permite consultar con nuestros expertos en amenazas sobre cómo proteger su organización frente a detecciones y adversarios pertinentes.
+Póngase en contacto con el equipo de su cuenta o con el representante de Microsoft para suscribirse a expertos Microsoft Defender expertos a petición. Expertos a petición le permite consultar con nuestros expertos en amenazas sobre cómo proteger su organización frente a detecciones y adversarios pertinentes.
 
 ## <a name="apply-for-endpoint-attack-notifications-service"></a>Solicitud para el servicio de notificaciones de ataque de punto de conexión
 
@@ -55,19 +55,19 @@ Si ya tiene Microsoft Defender para punto de conexión y Microsoft 365 Defender,
 
 3. Escriba su dirección de correo electrónico para que Microsoft pueda ponerse en contacto con usted sobre la aplicación.
 
-    :::image type="content" source="../../media/mte/mte-apply.png" alt-text="Página de la aplicación Expertos en amenazas de Microsoft en el portal de Microsoft 365 Defender" lightbox="../../media/mte/mte-apply.png":::
+    :::image type="content" source="../../media/mte/mte-apply.png" alt-text="Página de la aplicación expertos de Microsoft Defender en el portal de Microsoft 365 Defender" lightbox="../../media/mte/mte-apply.png":::
   
 4. Lea la [declaración de privacidad](https://privacy.microsoft.com/en-us/privacystatement) y, a continuación, seleccione **Enviar** cuando haya terminado. Recibirá un correo electrónico de bienvenida una vez aprobada la aplicación.
 
-    :::image type="content" source="../../media/mte/mte-applicationconfirmation.png" alt-text="Confirmación de la aplicación Expertos en amenazas de Microsoft en el portal de Microsoft 365 Defender" lightbox="../../media/mte/mte-applicationconfirmation.png":::
+    :::image type="content" source="../../media/mte/mte-applicationconfirmation.png" alt-text="Confirmación de la aplicación Microsoft Defender Experts en el portal de Microsoft 365 Defender" lightbox="../../media/mte/mte-applicationconfirmation.png":::
 
 5. Después de recibir el correo electrónico de bienvenida, comenzará automáticamente a recibir notificaciones de ataque de punto de conexión.
 
 6. Para comprobar el estado, visite **Configuración > puntos de conexión > Características generales > avanzadas**. Una vez aprobado, el botón de alternancia **Notificación de ataque de punto de conexión** será visible **y se** activará.
 
-## <a name="where-youll-see-the-endpoint-attack-notifications-from-microsoft-threat-experts"></a>Donde verá las notificaciones de ataque de punto de conexión de Expertos en amenazas de Microsoft
+## <a name="where-youll-see-the-endpoint-attack-notifications-from-microsoft-defender-experts"></a>Donde verá las notificaciones de ataque de punto de conexión de expertos de Microsoft Defender
 
-Puede recibir notificaciones de ataque de punto de conexión de Expertos en amenazas de Microsoft a través de los siguientes medios:
+Puede recibir notificaciones de ataque de punto de conexión de expertos de Microsoft Defender a través de los siguientes medios:
 
 - Página **Incidentes** del portal de Microsoft 365 Defender
 - Panel **de alertas** del portal de Microsoft 365 Defender
@@ -81,7 +81,7 @@ Puede crear reglas para enviar notificaciones por correo electrónico para los d
 
 ## <a name="view-endpoint-attack-notifications"></a>Ver notificaciones de ataque de punto de conexión
 
-Empezará a recibir notificaciones de ataque de punto de conexión de Expertos en amenazas de Microsoft en el correo electrónico después de haber configurado el sistema para recibir notificaciones por correo electrónico.
+Empezará a recibir notificaciones de ataque de punto de conexión de expertos de Microsoft Defender en el correo electrónico después de configurar el sistema para recibir notificaciones por correo electrónico.
 
 1. Seleccione el vínculo del correo electrónico para ir al contexto de alerta correspondiente en el panel etiquetado con **expertos de Defender**.
 
@@ -95,15 +95,15 @@ Puede filtrar los incidentes y las alertas si solo quiere ver las notificaciones
 2. Desplácese hacia abajo hasta el campo **Etiquetas** > active la casilla **Expertos de Defender** .
 3. Seleccione **Aplicar**.
 
-## <a name="subscribe-to-microsoft-threat-experts---experts-on-demand"></a>Suscribirse a Expertos en amenazas de Microsoft: expertos a petición
+## <a name="subscribe-to-microsoft-defender-experts---experts-on-demand"></a>Suscribirse a expertos de Microsoft Defender expertos a petición
 > [!NOTE]
 > Expertos a petición no es un servicio de respuesta a incidentes de seguridad. Está pensado para proporcionar una mejor comprensión de las amenazas complejas que afectan a su organización. Póngase en contacto con su propio equipo de respuesta a incidentes de seguridad para solucionar problemas urgentes de respuesta a incidentes de seguridad. Si no tiene su propio equipo de respuesta a incidentes de seguridad y desea la ayuda de Microsoft, cree una solicitud de soporte técnico en el [Centro de servicios Premier](/services-hub/).
 
-Si ya es un cliente Microsoft Defender para punto de conexión, puede ponerse en contacto con su representante de Microsoft para suscribirse a Expertos en amenazas de Microsoft - Expertos a petición.
+Si ya es un cliente Microsoft Defender para punto de conexión, puede ponerse en contacto con su representante de Microsoft para suscribirse a Microsoft Defender Experts - Experts on Demand.
 
 ## <a name="consult-a-microsoft-threat-expert-about-suspicious-cybersecurity-activities-in-your-organization"></a>Consulte a un experto en amenazas de Microsoft sobre actividades sospechosas de ciberseguridad en su organización.
 
-Puede ponerse en contacto con Expertos en amenazas de Microsoft desde el portal de Microsoft 365 Defender. Los expertos pueden ayudarle a comprender las amenazas complejas y las notificaciones de ataque de punto de conexión. Asóciate con expertos para obtener más detalles sobre alertas e incidentes, o consejos sobre el control de riesgos. Obtenga información sobre el contexto de inteligencia sobre amenazas descrito por el panel del portal.
+Puede ponerse en contacto con expertos de Microsoft Defender desde el portal de Microsoft 365 Defender. Los expertos pueden ayudarle a comprender las amenazas complejas y las notificaciones de ataque de punto de conexión. Asóciate con expertos para obtener más detalles sobre alertas e incidentes, o consejos sobre el control de riesgos. Obtenga información sobre el contexto de inteligencia sobre amenazas descrito por el panel del portal.
 
 > [!NOTE]
 >
@@ -112,11 +112,11 @@ Puede ponerse en contacto con Expertos en amenazas de Microsoft desde el portal 
 
 1. Vaya a la página del portal relacionada con la información que desea investigar: por ejemplo, **Dispositivo**, **Alerta** o **Incidente**. Asegúrese de que la página del portal relacionada con la consulta esté en vista antes de enviar una solicitud de investigación.
 
-2. En el menú superior, seleccione **? Pregunte a expertos de Defender**. Se abrirá una pantalla flotante. El encabezado indicará si tiene una suscripción de prueba o una suscripción completa Expertos en amenazas de Microsoft - Experts on Demand. El campo **Tema de investigación** ya se rellenará con el vínculo a la página correspondiente de la solicitud.
+2. En el menú superior, seleccione **? Pregunte a expertos de Defender**. Se abrirá una pantalla flotante. El encabezado indicará si tiene una suscripción de prueba o una suscripción completa Microsoft Defender Experts - Experts on Demand. El campo **Tema de investigación** ya se rellenará con el vínculo a la página correspondiente de la solicitud.
 
-3. En el campo siguiente, proporcione suficiente información para proporcionar al Expertos en amenazas de Microsoft contexto suficiente para iniciar la investigación.
+3. En el campo siguiente, proporcione suficiente información para proporcionar a los expertos de Microsoft Defender suficiente contexto para iniciar la investigación.
 
-4. Escriba la dirección de correo electrónico que desea usar para que se corresponda con Expertos en amenazas de Microsoft.
+4. Escriba la dirección de correo electrónico que desea usar para que se corresponda con Microsoft Defender Experts.
 
 > [!NOTE]
 > Si desea realizar un seguimiento del estado de los casos de Expertos a petición a través de Microsoft Services Hub, póngase en contacto con el administrador de cuentas técnico.
@@ -146,20 +146,20 @@ Vea este vídeo para obtener una introducción rápida al Centro de servicios de
 - Recientemente hemos visto una entrada de blog sobre una amenaza que está dirigida a nuestro sector. ¿Puede ayudarnos a comprender qué protección Microsoft 365 Defender proporciona contra este actor de amenazas?
 - Recientemente hemos observado una campaña de suplantación de identidad realizada contra nuestra organización. ¿Puede decirnos si se ha dirigido específicamente a nuestra empresa o vertical?
 
-### <a name="microsoft-threat-experts-alert-communications"></a>Comunicaciones de alerta de Expertos en amenazas de Microsoft
+### <a name="microsoft-defender-experts-alert-communications"></a>Comunicaciones de alerta de expertos en Microsoft Defender
 
 - ¿Puede el equipo de respuesta a incidentes ayudarnos a abordar la notificación de ataque dirigida que tenemos?
-- Hemos recibido notificaciones de ataque de punto de conexión de Expertos en amenazas de Microsoft. No tenemos nuestro propio equipo de respuesta a incidentes. ¿Qué podemos hacer ahora y cómo podemos contener el incidente?
-- Hemos recibido una notificación de ataque dirigida de Expertos en amenazas de Microsoft. ¿Qué datos puede proporcionarnos que podemos pasar a nuestro equipo de respuesta a incidentes?
+- Hemos recibido notificaciones de ataque de punto de conexión de expertos de Microsoft Defender. No tenemos nuestro propio equipo de respuesta a incidentes. ¿Qué podemos hacer ahora y cómo podemos contener el incidente?
+- Hemos recibido una notificación de ataque dirigida de Microsoft Defender Expertos. ¿Qué datos puede proporcionarnos que podemos pasar a nuestro equipo de respuesta a incidentes?
 
 > [!NOTE]
-> Expertos en amenazas de Microsoft es un servicio administrado de búsqueda de amenazas y no un servicio de respuesta a incidentes. Sin embargo, puede interactuar con su propio equipo de respuesta a incidentes para abordar los problemas que requieren una respuesta a incidentes. Si no tiene su propio equipo de respuesta a incidentes y desea la ayuda de Microsoft, puede interactuar con el equipo de respuesta a incidentes de ciberseguridad (CIRT) de CSS. Pueden abrir una incidencia para ayudar a abordar su consulta.
+> Microsoft Defender Experts es un servicio administrado de búsqueda de amenazas y no un servicio de respuesta a incidentes. Sin embargo, puede interactuar con su propio equipo de respuesta a incidentes para abordar los problemas que requieren una respuesta a incidentes. Si no tiene su propio equipo de respuesta a incidentes y desea la ayuda de Microsoft, puede interactuar con el equipo de respuesta a incidentes de ciberseguridad (CIRT) de CSS. Pueden abrir una incidencia para ayudar a abordar su consulta.
 
 ## <a name="scenario"></a>Escenario
 
 ### <a name="receive-a-progress-report-about-your-managed-hunting-inquiry"></a>Recepción de un informe de progreso sobre la consulta de búsqueda administrada
 
-La respuesta de Expertos en amenazas de Microsoft variará según su consulta. Por lo general, recibirá una de las siguientes respuestas:
+La respuesta de Microsoft Defender Expertos variará según su consulta. Por lo general, recibirá una de las siguientes respuestas:
 
 - Se necesita más información para continuar con la investigación
 - Se necesita un archivo o varios ejemplos de archivo para determinar el contexto técnico

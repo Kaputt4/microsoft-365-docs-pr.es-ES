@@ -8,7 +8,9 @@ audience: ITPro
 ms.topic: landing-page
 ms.service: microsoft-365-enterprise
 ms.localizationpriority: medium
-ms.collection: Ent_O365
+ms.collection:
+- scotvorg
+- Ent_O365
 f1.keywords:
 - CSH
 ms.custom:
@@ -16,12 +18,12 @@ ms.custom:
 - seo-marvel-apr2020
 ms.assetid: ebe0f5ff-fd17-487f-bbb6-271b5ea270bb
 description: En este artículo se proporcionan recursos de la comunidad para conectarse a sus compañeros y obtener ayuda para PowerShell para Microsoft 365.
-ms.openlocfilehash: 92515314796f455832ebfc3a6f9be36a9527501b
-ms.sourcegitcommit: e9323a90a1156c10b037abca3e16d7367ef92dd7
+ms.openlocfilehash: 0844fda2d1fc06f29b32e915ff1b4003c43dcaa1
+ms.sourcegitcommit: 0b7070ec119e00e0dafe030bbfbef0ae5c9afa19
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/02/2022
-ms.locfileid: "67570036"
+ms.lasthandoff: 09/29/2022
+ms.locfileid: "68180349"
 ---
 # <a name="microsoft-365-community-resources-for-powershell"></a>Recursos de la comunidad de Microsoft 365 para PowerShell
 

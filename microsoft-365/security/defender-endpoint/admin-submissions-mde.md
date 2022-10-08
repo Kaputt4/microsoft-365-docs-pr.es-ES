@@ -17,15 +17,15 @@ localization_priority: Normal
 audience: ITPro
 ms.topic: how-to
 ms.collection:
-- m365-security-compliance
-- m365initiative-defender-endpoint
+- m365-security
+- tier2
 ms.custom: FPFN
-ms.openlocfilehash: da714f4c6b2eb495e66d862558efaf15a2b9c1f2
-ms.sourcegitcommit: 10e6abe740e27000e223378eb17d657a47555fa8
+ms.openlocfilehash: 89da86f56b391179b27ccff9146de211062ccbfc
+ms.sourcegitcommit: b9282493c371d59c2e583b9803825096499b5e2c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/31/2022
-ms.locfileid: "67678699"
+ms.lasthandoff: 09/29/2022
+ms.locfileid: "68145851"
 ---
 # <a name="submit-files-in-microsoft-defender-for-endpoint"></a>Envío de archivos en Microsoft Defender para punto de conexión
 
@@ -42,7 +42,7 @@ En Microsoft Defender para punto de conexión, los administradores pueden usar l
 
 ## <a name="what-do-you-need-to-know-before-you-begin"></a>¿Qué necesita saber antes de empezar?
 
-- La nueva experiencia de envíos unificados solo está disponible en suscripciones que incluyen Microsoft 365 Defender, Microsoft Defender para punto de conexión Plan 2 o Microsoft Defender para Office Plan 2.
+- La nueva experiencia de envíos unificados solo está disponible en suscripciones que incluyen Microsoft 365 Defender, Microsoft Defender para punto de conexión plan 2 o Microsoft Defender para el plan 2 de Office.
 
 - Para enviar archivos a Microsoft, debe ser miembro de uno de los siguientes grupos de roles:
 

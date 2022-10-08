@@ -1,5 +1,5 @@
 ---
-title: Definición de entidad de cadena de conexión de IoT de Azure (versión preliminar)
+title: Definición de entidad de cadena de conexión de Azure IoT
 f1.keywords:
 - CSH
 ms.author: chrfox
@@ -14,23 +14,28 @@ f1_keywords:
 ms.service: O365-seccomp
 ms.localizationpriority: medium
 ms.collection:
-- M365-security-compliance
+- tier3
+- purview-compliance
 hideEdit: true
 feedback_system: None
 recommendations: false
 description: Definición de entidad de tipo de información confidencial de cadena de conexión de Azure IoT.
-ms.openlocfilehash: 89d2ab0170000285dc2c274f50ff9a5106b5bc59
-ms.sourcegitcommit: 5aed330d8af523f0dffe5e392f1c79f047e38172
+ms.openlocfilehash: 555ea8bd8a96afc46d5078e7fe30703ed86c8f92
+ms.sourcegitcommit: 50da6f1f6ef2274c17ed9729e7ad84395b0a9be2
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/21/2022
-ms.locfileid: "67000379"
+ms.lasthandoff: 10/08/2022
+ms.locfileid: "68506332"
 ---
-# <a name="azure-iot-connection-string-preview"></a>Cadena de conexión de IoT de Azure (versión preliminar)
+# <a name="azure-iot-connection-string"></a>Cadena de conexión de Azure IoT
 
-### <a name="format"></a>Formato
+#<a name="this-sit-is-also-included-in-the-all-credentials-bundled-sit"></a>Esta SIT también se incluye en el SIT de [todas las credenciales](sit-defn-all-creds.md) agrupadas.
+
+ ## <a name="format"></a>Formato
 
 `HostName` Cadena seguida de los caracteres y cadenas descritos en el patrón siguiente, incluidas las cadenas `azure-devices.net` y `SharedAccessKey`.
+
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
 
 ## <a name="pattern"></a>Patrón
 
@@ -48,15 +53,21 @@ ms.locfileid: "67000379"
 - cualquier combinación de 43 letras minúsculas o mayúsculas, dígitos, barra diagonal (/) o signo más (+)
 - un signo igual (=)
 
+## <a name="credential-example"></a>Ejemplo de credencial 
+
+`HostName=account.azure-devices.net;SharedAccessKeyName=key;SharedAccessKey=abcdefghijklmnopqrstuvwxyz0123456789/+ABCDE=`
+
 ## <a name="checksum"></a>Suma de comprobación
 
 No
+
+Los SIT que tienen sumas de comprobación usan un cálculo único para comprobar si la información es válida. Esto significa que cuando el valor **de suma de comprobación** es **Sí**, el servicio puede realizar una detección positiva solo en función de los datos confidenciales. Cuando el valor **de suma de comprobación** es **No** se deben detectar elementos adicionales (secundarios) para que el servicio realice una detección positiva.
 
 ### <a name="definition"></a>Definición
 
 Una política de DLP tiene una gran confianza en que ha detectado este tipo de información confidencial si, dentro de una proximidad de 300 caracteres:
 
-- La expresión `CEP_Regex_AzureIoTConnectionString` regular busca contenido que coincida con el patrón.
+- La expresión regular `CEP_Regex_AzureIoTConnectionString` encuentra contenido que coincide con el patrón.
 - La expresión `CEP_CommonExampleKeywords` regular no encuentra contenido que coincida con el patrón.
 
 ```xml

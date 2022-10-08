@@ -14,23 +14,28 @@ f1_keywords:
 ms.service: O365-seccomp
 ms.localizationpriority: medium
 ms.collection:
-- Strat_O365_IP
-- M365-security-compliance
+- tier1
+- purview-compliance
 search.appverid:
 - MET150
 - MOE150
-ms.openlocfilehash: 2413cee978fa2fe66a2672e307e8cad12a7b803b
-ms.sourcegitcommit: 221212fff9737e0ea386755deb8fed62ae9c254b
+ms.openlocfilehash: 0fbe9108f6f0f33ecaad3d44354c6c85f66c9195
+ms.sourcegitcommit: 50da6f1f6ef2274c17ed9729e7ad84395b0a9be2
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/14/2022
-ms.locfileid: "66787043"
+ms.lasthandoff: 10/08/2022
+ms.locfileid: "68506662"
 ---
 # <a name="use-communication-compliance-with-siem-solutions"></a>Usar el cumplimiento de comunicaciones con soluciones de SIEM
+
+>[!IMPORTANT]
+>Cumplimiento de comunicaciones de Microsoft Purview proporciona las herramientas para ayudar a las organizaciones a detectar infracciones de cumplimiento normativo (por ejemplo, SEC o FINRA), como información confidencial o confidencial, hostigamiento o amenazante del lenguaje y uso compartido de contenido para adultos. Creados con privacidad por diseño, los nombres de usuario se seudonimizan de forma predeterminada, los controles de acceso basados en roles se integran, los investigadores son admitidos por un administrador y los registros de auditoría están en vigor para garantizar la privacidad del nivel de usuario.
 
 [El cumplimiento de comunicaciones](/microsoft-365/compliance/communication-compliance) es una solución de riesgo interno en Microsoft Purview que ayuda a minimizar los riesgos de comunicación al ayudarle a detectar, capturar y actuar sobre mensajes inadecuados en su organización. Las soluciones de administración de eventos e información de seguridad (SIEM), como [Microsoft Sentinel](https://azure.microsoft.com/services/azure-sentinel) o [Splunk](https://www.splunk.com/) , se usan normalmente para agregar y realizar un seguimiento de las amenazas dentro de una organización.
 
 Una necesidad común para las organizaciones es integrar las alertas de cumplimiento de comunicaciones y estas soluciones SIEM. Con esta integración, las organizaciones pueden ver las alertas de cumplimiento de comunicaciones en su solución SIEM y, a continuación, corregir las alertas dentro del flujo de trabajo de cumplimiento de comunicaciones y la experiencia del usuario. Por ejemplo, un empleado envía un mensaje ofensivo a otro empleado y ese mensaje lo detecta una directiva de cumplimiento de comunicaciones para contenido inadecuado. La solución de cumplimiento de comunicaciones realiza un seguimiento de estos eventos en la auditoría de Microsoft 365 (también conocida como "registro de auditoría unificado") y se importa en la solución SIEM. A continuación, se desencadena una alerta en la solución SIEM para la organización a partir de eventos incluidos en La auditoría de Microsoft 365 que están asociados a las alertas de cumplimiento de comunicaciones. Los investigadores reciben una notificación de la alerta en las soluciones SIEM y, a continuación, investigan y corrigen la alerta en la solución de cumplimiento de comunicaciones.
+
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
 
 ## <a name="communication-compliance-alerts-in-microsoft-365-audit"></a>Alertas de cumplimiento de comunicaciones en la auditoría de Microsoft 365
 

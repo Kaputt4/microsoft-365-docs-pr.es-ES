@@ -14,16 +14,18 @@ author: mjcaparas
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
-ms.collection: m365-security-compliance
+ms.collection:
+- m365-security
+- tier2
 ms.topic: article
 ms.subservice: mde
 ms.custom: api
-ms.openlocfilehash: e815af864aa66173a7ce110948c4cd8e9e19be35
-ms.sourcegitcommit: d3ef9391f621e8f4ca70661184b3bb82c6cbda94
+ms.openlocfilehash: 205cce10d0f443724b6d99c83d4b2075e8031d4f
+ms.sourcegitcommit: 4e42bafee965446f44f7f57d1defed2b9b24fce8
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/02/2022
-ms.locfileid: "67577902"
+ms.lasthandoff: 09/30/2022
+ms.locfileid: "68227996"
 ---
 # <a name="run-live-response-commands-on-a-device"></a>Ejecución de comandos de respuesta en directo en un dispositivo
 
@@ -58,6 +60,8 @@ Ejecuta una secuencia de comandos de respuesta dinámica en un dispositivo.
 5. Los comandos de respuesta dinámica no se pueden poner en cola y solo se pueden ejecutar de uno en uno.
 
 6. Si la máquina que intenta ejecutar esta llamada API está en un grupo de dispositivos RBAC que no tiene asignado un nivel de corrección automatizado, deberá habilitar al menos el nivel de corrección mínimo para un grupo de dispositivos determinado.
+    > [!NOTE]
+    > La creación de grupos de dispositivos se admite en El plan 1 y el plan 2 de Defender para punto de conexión.  
 
 7. Se pueden ejecutar varios comandos de respuesta dinámica en una sola llamada API. Sin embargo, cuando se produce un error en un comando de respuesta dinámica, no se ejecutarán todas las acciones posteriores.
 
@@ -104,9 +108,9 @@ POST https://api.securitycenter.microsoft.com/API/machines/{machine_id}/runliver
 |Nombre|Tipo|Descripción|
 |---|---|---|
 |Authorization|Cadena|Portador\<token>\. Obligatorio.|
-|Content-Type|string|application/json. Obligatorio.|
+|Content-Type|string|application/json. Required.|
 
-## <a name="request-body"></a>Cuerpo de solicitud
+## <a name="request-body"></a>Cuerpo de la solicitud
 
 |Parámetro|Tipo|Descripción|
 |---|---|---|

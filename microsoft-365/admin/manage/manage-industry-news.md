@@ -7,9 +7,10 @@ author: efrene
 manager: scotv
 audience: Admin
 ms.topic: article
-ms.service: o365-administration
+ms.service: microsoft-365-business
 ms.localizationpriority: medium
 ms.collection:
+- scotvorg
 - M365-subscription-management
 - Adm_TOC
 ms.custom:
@@ -18,39 +19,39 @@ ms.custom:
 search.appverid:
 - MET150
 description: Proporcione a los usuarios titulares de noticias actualizados sobre el sector y la información de su organización, use el servicio de noticias para habilitar una fuente de noticias personalizada para su organización.
-ms.openlocfilehash: 0c0b3624953571505cf7660827cbc26602c3f1c5
-ms.sourcegitcommit: ac0ae5c2888e2b323e36bad041a4abef196c9c96
+ms.openlocfilehash: 40f0ee8ef17d7724a63c376267b49ad09a414234
+ms.sourcegitcommit: 0b7070ec119e00e0dafe030bbfbef0ae5c9afa19
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/12/2022
-ms.locfileid: "64782465"
+ms.lasthandoff: 09/29/2022
+ms.locfileid: "68206793"
 ---
 # <a name="manage-industry-news"></a>Administración de noticias del sector
 
 > [!NOTE] 
-> Bing noticias & Actualizaciones del sector solo están disponibles para en-US en este momento.
+> Las actualizaciones de bing news & Industry solo están disponibles para en-US en este momento.
 
-Para proporcionar a los usuarios titulares de noticias actualizados sobre el sector y la información de su organización, use el servicio de noticias para habilitar una fuente de noticias personalizada para su organización. También puede habilitar un correo electrónico diario de Actualizaciones del sector y administrar la configuración de la página principal de Bing y Microsoft Edge nueva página de pestaña.
+Para proporcionar a los usuarios titulares de noticias actualizados sobre el sector y la información de su organización, use el servicio de noticias para habilitar una fuente de noticias personalizada para su organización. También puede habilitar un correo electrónico Novedades diario del sector y administrar la configuración de la página principal de Bing y la página de nueva pestaña de Microsoft Edge.
 
 ## <a name="what-your-users-will-see"></a>Lo que verán los usuarios
 
-Tiene la opción de enviar a los usuarios un correo electrónico diario de actualizaciones del sector con titulares y vínculos a artículos completos. Los usuarios pueden personalizar sus actualizaciones de correo electrónico siguiendo temas adicionales, eligiendo cuándo se entrega la actualización, excluyendo los artículos detrás de los muros de pago y seleccionando el número de artículos que quieren ver.
+Tiene la opción de enviar a los usuarios un correo electrónico diario del sector Novedades con titulares y vínculos a artículos completos. Los usuarios pueden personalizar sus actualizaciones de correo electrónico siguiendo temas adicionales, eligiendo cuándo se entrega la actualización, excluyendo los artículos detrás de los muros de pago y seleccionando el número de artículos que quieren ver.
 
 Los usuarios que han iniciado sesión que van a la página principal de Bing ven la fuente de noticias del sector en la información personalizada de su organización.
 
 :::image type="content" source="../../media/manage-industry-news-2.jpg" alt-text="Captura de pantalla del carrusel de imágenes con noticias del sector de la web.":::
 
-:::image type="content" source="../../media/industry-updates-new.png" alt-text="Página Actualizaciones del sector con fecha y titulares.":::
+:::image type="content" source="../../media/industry-updates-new.png" alt-text="Página de Novedades del sector con fecha y titulares.":::
 
-También pueden ver noticias de empresa, industria e internas o información de trabajo personalizada en su Microsoft Edge nueva página de pestaña.
+También pueden ver noticias internas, de la empresa, del sector o de trabajo personalizado en su página de nueva pestaña de Microsoft Edge.
 
 :::image type="content" source="../../media/manage-industry-news-3.png" alt-text="Microsoft en la página principal de noticias.":::
 
 ## <a name="news-settings"></a>Configuración de noticias
 
-Como administrador, puede controlar la configuración de la fuente de noticias de su organización, incluido el sector seleccionado y la página principal de Bing, la página de Microsoft Edge nueva pestaña (a partir del lanzamiento de Edge 87) y las experiencias de correo electrónico. 
+Como administrador, puede controlar la configuración de la fuente de noticias de su organización, incluidos el sector seleccionado y la página principal de Bing, la página de nueva pestaña de Microsoft Edge (a partir de la versión de Edge 87) y las experiencias de correo electrónico. 
 
-1. En el Centro de administración de Microsoft 365, vaya a **configuración de Configuración** >  **OrgServicesNews** >  > .[](https://admin.microsoft.com/adminportal/home?#/Settings/Services/:/Settings/L1/BingNews)
+1. En el Centro de administración de Microsoft 365, vaya a **Configuración Configuración** > **De la organización** > **Servicios** > [**Noticias**](https://admin.microsoft.com/adminportal/home?#/Settings/Services/:/Settings/L1/BingNews).
 
 1. En el panel **Noticias** , haga clic en la pestaña **General** .
 
@@ -66,9 +67,9 @@ Como administrador, puede controlar la configuración de la fuente de noticias d
 
 Puede enviar una actualización diaria de correo electrónico con noticias relevantes del sector a las bandejas de entrada de los usuarios. Para establecer actualizaciones diarias de correo electrónico para los usuarios:
 
-1. En el Centro de administración de Microsoft 365, vaya a **configuración de Configuración** >  **OrgServicesNews** >  > .[](https://admin.microsoft.com/adminportal/home?#/Settings/Services/:/Settings/L1/BingNews) 
+1. En el Centro de administración de Microsoft 365, vaya a **Configuración Configuración** > **De la organización** > **Servicios** > [**Noticias**](https://admin.microsoft.com/adminportal/home?#/Settings/Services/:/Settings/L1/BingNews). 
 
-1. En el panel **Noticias** , haga clic en la pestaña **Actualizaciones del sector** . 
+1. En el panel **Noticias**, haga clic en la pestaña **Industria Novedades**. 
 1. Seleccione **Enviar actualizaciones diarias de correo electrónico** para enviar un correo electrónico a los usuarios.
 1. Para ofrecer a los usuarios la capacidad de personalizar las noticias que reciben en sus actualizaciones de correo electrónico, seleccione **Permitir a los usuarios personalizar sus propios temas**.
 
@@ -76,28 +77,28 @@ Puede enviar una actualización diaria de correo electrónico con noticias relev
 
 Puede personalizar la página principal de Bing para incluir noticias sobre su sector.
 
-### <a name="toggle-news-for-business-or-enterprise-plans"></a>Alternar noticias para empresas o planes de Enterprise
+### <a name="toggle-news-for-business-or-enterprise-plans"></a>Alternar noticias para planes empresariales o empresariales
 
-1. En el Centro de administración de Microsoft 365, vaya a **configuración de Configuración** >  **OrgServicesNews** >  > .[](https://admin.microsoft.com/adminportal/home?#/Settings/Services/:/Settings/L1/BingNews)
+1. En el Centro de administración de Microsoft 365, vaya a **Configuración Configuración** > **De la organización** > **Servicios** > [**Noticias**](https://admin.microsoft.com/adminportal/home?#/Settings/Services/:/Settings/L1/BingNews).
 
-1. En el panel **Noticias**, haga clic en la pestaña **Bing página principal** y seleccione **Incluir en Bing página principal**.
+1. En el panel **Noticias** , haga clic en la pestaña **Página principal de Bing** y seleccione **Incluir en la página principal de Bing**.
 
     Las noticias del sector aparecen en la información personalizada de su organización en Bing.com.
 
 ### <a name="toggle-news-types-for-education-plans"></a>Alternar tipos de noticias para planes educativos
 
-1. En el Centro de administración de Microsoft 365, vaya a **configuración de Configuración** >  **OrgServicesNews** >  > .[](https://admin.microsoft.com/adminportal/home?#/Settings/Services/:/Settings/L1/BingNews)
+1. En el Centro de administración de Microsoft 365, vaya a **Configuración Configuración** > **De la organización** > **Servicios** > [**Noticias**](https://admin.microsoft.com/adminportal/home?#/Settings/Services/:/Settings/L1/BingNews).
 
-1. En el panel **Noticias**, haga clic en la pestaña **Bing página principal** y tendrá la opción de seleccionar si las *noticias de tendencia* o la presentación de *noticias del sector* para los usuarios.
+1. En el panel **Noticias** , haga clic en la pestaña **página principal de Bing** y tiene la opción de seleccionar si las *noticias de tendencia* o la presentación de *noticias del sector* para los usuarios.
 
 :::image type="content" source="../../media/enable-news-for-edu.png" alt-text="Alternancia para noticias del sector y noticias de tendencias":::
 
-## <a name="microsoft-edge-new-tab-page"></a>Microsoft Edge nueva página de pestaña
+## <a name="microsoft-edge-new-tab-page"></a>Página de nueva pestaña de Microsoft Edge
 
 Cuando los usuarios inician sesión en Microsoft Edge (versión 87 o posterior) con una cuenta profesional o educativa válida, pueden ver noticias adaptadas a su organización.
 
-1. En el Centro de administración de Microsoft 365, vaya a **configuración de Configuración** >  **OrgServicesNews** >  > .[](https://admin.microsoft.com/adminportal/home?#/Settings/Services/:/Settings/L1/BingNews)
-2. En el panel **Noticias**, haga clic en **Microsoft Edge nueva página de pestaña**.
+1. En el Centro de administración de Microsoft 365, vaya a **Configuración Configuración** > **De la organización** > **Servicios** > [Noticias](https://admin.microsoft.com/adminportal/home?#/Settings/Services/:/Settings/L1/BingNews).
+2. En el panel **Noticias** , haga clic en la **página nueva pestaña Microsoft Edge**.
 3. Seleccione **Permitir Office 365 contenido en la nueva página de pestaña**. Cuando están habilitados, los usuarios pueden personalizar su nueva pestaña para mostrar información de Office 365, incluidos los archivos recomendados y recientes, junto con los sitios de SharePoint usados con frecuencia y otra información.
 4. Seleccione **Mostrar información de la empresa y noticias del sector en la nueva página de pestaña**. Aparecen artículos de noticias sobre la organización y el sector para los usuarios que deciden ver artículos en su nueva pestaña.
 

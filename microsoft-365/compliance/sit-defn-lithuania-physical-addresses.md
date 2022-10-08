@@ -14,21 +14,24 @@ f1_keywords:
 ms.service: O365-seccomp
 ms.localizationpriority: medium
 ms.collection:
-- M365-security-compliance
+- tier3
+- purview-compliance
 hideEdit: true
 feedback_system: None
 recommendations: false
 description: Lituania se ocupa físicamente de la definición de entidad de tipo de información confidencial.
-ms.openlocfilehash: 9f101d4089f642e60190e19b28592354aa1d7bca
-ms.sourcegitcommit: 5aed330d8af523f0dffe5e392f1c79f047e38172
+ms.openlocfilehash: 32c6b900c5d7450a8acb025c3277456d2a583547
+ms.sourcegitcommit: 6df492719fecc2b213d55465dc1cd60ab4627ed6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/21/2022
-ms.locfileid: "66999203"
+ms.lasthandoff: 10/04/2022
+ms.locfileid: "68384061"
 ---
 # <a name="lithuania-physical-addresses"></a>Direcciones físicas de Lituania
 
-Esta entidad con nombre desagregada detecta patrones relacionados con la dirección física de Lituania. También se incluye en la entidad SIT con nombre [todas las direcciones físicas](sit-defn-all-physical-addresses.md) agrupadas.
+Esta entidad con nombre desagregada detecta patrones relacionados con la dirección física de Lituania. También se incluye en [Todas las direcciones físicas ](sit-defn-all-physical-addresses.md) en la entidad no agrupada denominada SIT.
+
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
 
 ## <a name="confidence-level"></a>Nivel de confianza
 

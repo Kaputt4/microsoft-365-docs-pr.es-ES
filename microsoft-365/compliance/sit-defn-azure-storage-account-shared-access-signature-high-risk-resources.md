@@ -20,18 +20,20 @@ hideEdit: true
 feedback_system: None
 recommendations: false
 description: Firma de acceso compartido de la cuenta de Azure Storage para la definición de entidad de tipo de información confidencial de recursos de alto riesgo.
-ms.openlocfilehash: a3413afd4bb397750f75646a7f1d4ba61e8888cc
-ms.sourcegitcommit: fa570d90b00ed1bb40e1ca27b11c66a84c4204e9
+ms.openlocfilehash: 6730032323e86b138e4b124ca73c3413af91c9db
+ms.sourcegitcommit: 50da6f1f6ef2274c17ed9729e7ad84395b0a9be2
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/05/2022
-ms.locfileid: "68476911"
+ms.lasthandoff: 10/08/2022
+ms.locfileid: "68504410"
 ---
 # <a name="azure-storage-account-shared-access-signature-for-high-risk-resources-preview"></a>Firma de acceso compartido de la cuenta de Azure Storage para recursos de alto riesgo (versión preliminar)
 
 [!INCLUDE [purview-preview](../includes/purview-preview.md)]
 
-## <a name="format"></a>Formato
+Esta SIT también se incluye en el SIT de [todas las credenciales](sit-defn-all-creds.md) agrupadas.
+
+ ## <a name="format"></a>Formato
 
 Una combinación de 44 caracteres que consta de letras, dígitos y caracteres especiales.
 
@@ -66,9 +68,15 @@ Por ejemplo:
 
 `abcdefghijklmnopqrstuvwxyz0123456789%2F%2BABCDE%3D`
 
+## <a name="credential-example"></a>Ejemplo de credencial 
+
+`https://account.blob.core.windows.net/file.cspkg?...&sig=abcdefghijklmnopqrstuvwxyz0123456789%2F%2BABCDE%3D`
+
 ## <a name="checksum"></a>Suma de comprobación
 
 No
+
+Los SIT que tienen sumas de comprobación usan un cálculo único para comprobar si la información es válida. Esto significa que cuando el valor **de suma de comprobación** es **Sí**, el servicio puede realizar una detección positiva solo en función de los datos confidenciales. Cuando el valor **de suma de comprobación** es **No** se deben detectar elementos adicionales (secundarios) para que el servicio realice una detección positiva.
 
 ## <a name="definition"></a>Definición
 

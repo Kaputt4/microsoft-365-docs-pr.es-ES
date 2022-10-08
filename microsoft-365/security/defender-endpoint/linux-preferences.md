@@ -14,16 +14,17 @@ ms.date: 08/10/2022
 manager: dansimp
 audience: ITPro
 ms.collection:
-- m365-security-compliance
+- m365-security
+- tier3
 ms.topic: conceptual
 ms.subservice: mde
 search.appverid: met150
-ms.openlocfilehash: 561f5e5b4025d058b10b9e55b95edaad15e9cad8
-ms.sourcegitcommit: 9b133379196da2b3a4bb311b07ff274f43780f68
+ms.openlocfilehash: 38d8710b121a445c24abfb9a67a9e0f60cf520ec
+ms.sourcegitcommit: be2334dbcd4e1bf309349d981a68a30e06de0297
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/14/2022
-ms.locfileid: "67692385"
+ms.lasthandoff: 10/04/2022
+ms.locfileid: "68379994"
 ---
 # <a name="set-preferences-for-microsoft-defender-for-endpoint-on-linux"></a>Establecer preferencias para Microsoft Defender para punto de conexión en Linux
 
@@ -83,7 +84,7 @@ Especifica la preferencia de cumplimiento del motor antivirus. Hay tres valores 
 
 #### <a name="enabledisable-behavior-monitoring"></a>Habilitar o deshabilitar la supervisión del comportamiento 
 
-Determina si la funcionalidad de bloqueo y supervisión del comportamiento está habilitada en el dispositivo o no. Para mejorar la eficacia de la protección de seguridad, se recomienda mantener activada esta característica.
+Determina si la funcionalidad de bloqueo y supervisión del comportamiento está habilitada en el dispositivo o no. 
 
 <br>
 
@@ -388,7 +389,6 @@ El siguiente perfil de configuración:
 - Habilitación de actualizaciones automáticas de inteligencia de seguridad
 - Habilitar la protección proporcionada en la nube
 - Habilitación del envío automático de ejemplos en el `safe` nivel
-- Habilitación de la supervisión del comportamiento
 
 ### <a name="sample-profile"></a>Perfil de ejemplo
 

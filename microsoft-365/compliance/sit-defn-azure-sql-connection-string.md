@@ -1,5 +1,5 @@
 ---
-title: Azure SQL definición de entidad de cadena de conexión (versión preliminar)
+title: Azure SQL definición de entidad de cadena de conexión
 f1.keywords:
 - CSH
 ms.author: chrfox
@@ -14,21 +14,26 @@ f1_keywords:
 ms.service: O365-seccomp
 ms.localizationpriority: medium
 ms.collection:
-- M365-security-compliance
+- tier3
+- purview-compliance
 hideEdit: true
 feedback_system: None
 recommendations: false
 description: Azure SQL definición de entidad de tipo de información confidencial de cadena de conexión.
-ms.openlocfilehash: 7091c50d96f22370358f5743a3992a10025ea29f
-ms.sourcegitcommit: 5aed330d8af523f0dffe5e392f1c79f047e38172
+ms.openlocfilehash: 0e14e0d1616ff558e972418d3cc3a69d02dd3fb8
+ms.sourcegitcommit: 50da6f1f6ef2274c17ed9729e7ad84395b0a9be2
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/21/2022
-ms.locfileid: "66999617"
+ms.lasthandoff: 10/08/2022
+ms.locfileid: "68506266"
 ---
-# <a name="azure-sql-connection-string-preview"></a>Azure SQL cadena de conexión (versión preliminar)
+# <a name="azure-sql-connection-string"></a>Cadena de conexión de Azure SQL
 
-## <a name="format"></a>Formato
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
+
+Esta SIT también se incluye en el SIT de [todas las credenciales](sit-defn-all-creds.md) agrupadas.
+
+ ## <a name="format"></a>Formato
 
 Combinación de hasta 20 000 caracteres de letras, dígitos y caracteres especiales.
 
@@ -63,9 +68,15 @@ Formatos de nombre de usuario y contraseña variantes, por ejemplo:
 `Service Account=...;Password=********;` <br>
 
 
+## <a name="credential-example"></a>Ejemplo de credencial 
+
+`server=server.database.windows.net;database=database;user=user;pwd=ZYXWVU_2;`
+
 ## <a name="checksum"></a>Suma de comprobación
 
 Sí
+
+Los SIT que tienen sumas de comprobación usan un cálculo único para comprobar si la información es válida. Esto significa que cuando el valor **de suma de comprobación** es **Sí**, el servicio puede realizar una detección positiva solo en función de los datos confidenciales. Cuando el valor **de suma de comprobación** es **No** se deben detectar elementos adicionales (secundarios) para que el servicio realice una detección positiva.
 
 ## <a name="definition"></a>Definición
 
@@ -84,10 +95,10 @@ Los patrones están diseñados para que coincidan con las credenciales reales co
 
 ### <a name="keyword_base64encodedstringliteral"></a>Keyword_Base64EncodedStringLiteral:
 
-- MII
+- Mii
 
 ### <a name="keyword_logincredentials"></a>Keyword_LoginCredentials:
 
 - contraseña
 - Pw
-- DB_
+- Db_

@@ -7,19 +7,21 @@ ms.author: cmcatee
 manager: scotv
 audience: Admin
 ms.topic: reference
-ms.service: o365-administration
-ms.collection: Adm_Support
+ms.service: microsoft-365-business
+ms.collection:
+- scotvorg
+- Adm_Support
 ms.localizationpriority: medium
 description: Obtenga información acerca de cómo ponerse en contacto con el soporte técnico de su país o región.
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: afb1d6c9bcd8e21b9c0fa7bd2ee2aad1c5d19346
-ms.sourcegitcommit: 0ee2dabe402d44fecb6856af98a2ef7720d25189
+ms.openlocfilehash: 712114689398acd684830b1a0ddc42f774c1ed70
+ms.sourcegitcommit: 0b7070ec119e00e0dafe030bbfbef0ae5c9afa19
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/09/2021
-ms.locfileid: "61370817"
+ms.lasthandoff: 09/29/2022
+ms.locfileid: "68202835"
 ---
-# <a name="contact-support-for-algeria"></a>Póngase en contacto con el soporte técnico de Argelia
+# <a name="contact-support-for-algeria"></a>Póngase en contacto con el soporte técnico para Argelia
 
 [Buscar otro país o región](../get-help-support.md).
 
@@ -30,7 +32,7 @@ Seleccionar la opción 1
 
 Seleccionar la opción 9
 
-Escriba el código 7703
+Escriba el código 7703.
 
 ## <a name="hours"></a>Horas
 ### <a name="billing-support"></a>Soporte de facturación:
@@ -45,7 +47,7 @@ Inglés: lunes a viernes de 9:00 a 17:00
 
 Árabe: Sun-Thu 9 AM-5 PM
 
-Francés: Mon-Fri 8 AM-9 PM
+Francés: Mon-Fri de 8:00 a.m. a 9 p. m.
 
 Inglés: 24 horas al día, 7 días a la semana
 

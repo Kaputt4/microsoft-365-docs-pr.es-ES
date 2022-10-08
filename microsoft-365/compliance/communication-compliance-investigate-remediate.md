@@ -14,20 +14,23 @@ f1_keywords:
 ms.service: O365-seccomp
 ms.localizationpriority: medium
 ms.collection:
-- Strat_O365_IP
-- M365-security-compliance
+- tier1
+- purview-compliance
 ms.custom: admindeeplinkCOMPLIANCE
 search.appverid:
 - MET150
 - MOE150
-ms.openlocfilehash: 1dffcf448bf3273cc845aae269a29ab3653a5bea
-ms.sourcegitcommit: 0af064e8b6778060f1bd365378d69b16fc9949b5
+ms.openlocfilehash: 9b5a681f8ea8478c0cf8a84e0d76d138b721a973
+ms.sourcegitcommit: 50da6f1f6ef2274c17ed9729e7ad84395b0a9be2
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/15/2022
-ms.locfileid: "67728152"
+ms.lasthandoff: 10/08/2022
+ms.locfileid: "68506684"
 ---
 # <a name="investigate-and-remediate-communication-compliance-alerts"></a>Investigar y corregir las alertas de cumplimiento de las comunicaciones
+
+>[!IMPORTANT]
+>Cumplimiento de comunicaciones de Microsoft Purview proporciona las herramientas para ayudar a las organizaciones a detectar infracciones de cumplimiento normativo (por ejemplo, SEC o FINRA), como información confidencial o confidencial, hostigamiento o amenazante del lenguaje y uso compartido de contenido para adultos. Creados con privacidad por diseño, los nombres de usuario se seudonimizan de forma predeterminada, los controles de acceso basados en roles se integran, los investigadores son admitidos por un administrador y los registros de auditoría están en vigor para garantizar la privacidad del nivel de usuario.
 
 Después de configurar [las directivas de cumplimiento de comunicaciones](/microsoft-365/compliance/communication-compliance-policies), comenzará a recibir alertas en el [portal de cumplimiento Microsoft Purview](https://compliance.microsoft.com) para los problemas de mensajes que coincidan con las condiciones de la directiva. Para ver y actuar en alertas, los usuarios deben tener los permisos siguientes:
 
@@ -35,6 +38,8 @@ Después de configurar [las directivas de cumplimiento de comunicaciones](/micro
 - Se le asigna como revisor en la directiva asociada a la alerta.
 
 Después de tener los permisos necesarios, siga las instrucciones del flujo de trabajo aquí para investigar y corregir problemas de alerta.
+
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
 
 ## <a name="investigate-alerts"></a>Investigar alertas
 
@@ -214,7 +219,7 @@ Las plantillas de avisos son plantillas de correo electrónico personalizadas do
 
 |**Field**|**Required**| **Detalles** |
 |:-----|:-----|:-----|
-|**Nombre de la plantilla** | Yes | El nombre descriptivo de la plantilla de aviso que seleccionará en el flujo de trabajo de notificación durante la corrección, admite caracteres de texto. |
+|**Nombre de la plantilla** | Sí | El nombre descriptivo de la plantilla de aviso que seleccionará en el flujo de trabajo de notificación durante la corrección, admite caracteres de texto. |
 | **Dirección del remitente** | Yes | Dirección de uno o varios usuarios o grupos que envían el mensaje al usuario con una coincidencia de directiva, seleccionada en Active Directory para la suscripción. |
 | **Direcciones CC y BCC** | No | Usuarios o grupos opcionales a los que se va a notificar la coincidencia de directiva, seleccionados en Active Directory para la suscripción. |
 | **Asunto** | Yes | La información que aparece en la línea de asunto del mensaje admite caracteres de texto. |

@@ -13,15 +13,17 @@ author: siosulli
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
-ms.collection: M365-security-compliance
+ms.collection:
+- m365-security
+- tier3
 ms.topic: article
 ms.subservice: mde
-ms.openlocfilehash: 5e558b5488c0311d398b626321e2d1fa32d3f130
-ms.sourcegitcommit: 10e6abe740e27000e223378eb17d657a47555fa8
+ms.openlocfilehash: 01b584710aafb6f1f9d88a9870294fcc26d61a24
+ms.sourcegitcommit: 0b7070ec119e00e0dafe030bbfbef0ae5c9afa19
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/31/2022
-ms.locfileid: "67678589"
+ms.lasthandoff: 09/29/2022
+ms.locfileid: "68200547"
 ---
 # <a name="enable-corelight-data-integration"></a>Habilitar la integración de datos de Corelight
 
@@ -44,7 +46,7 @@ Con este origen de datos habilitado, todos los eventos de los dispositivos de re
 
 1. Para configurar la integración de datos de Corelight, el usuario debe tener los siguientes roles:
    - Administrador global de inquilinos en Azure Active Directory
-   - Administrador de seguridad de la suscripción de Azure que se usará para la integración de Microsoft Defender para IoT
+   - Administrador de seguridad de la suscripción de Azure que se usará para la Microsoft Defender para la integración de IoT
 2. Un plan de Defender para IoT incorporado. Para obtener más información, consulte [Incorporación de Microsoft Defender para IoT con Microsoft Defender para punto de conexión](enable-microsoft-defender-for-iot-integration.md).
 
 ## <a name="enabling-the-corelight-integration"></a>Habilitación de la integración de Corelight
@@ -84,7 +86,7 @@ Para habilitar la integración de Corelight, deberá realizar los pasos siguient
 
    :::image type="content" source="images/exporttodefender.png" alt-text="Exportación de kafka" lightbox="images/exporttodefender.png":::
 
-2. Habilite **Exportar a Microsoft Defender**.
+2. Habilite **Exportar para Microsoft Defender**.
 3. Escriba el identificador de inquilino de Microsoft 356 Defender.
 4. Opcionalmente, puede:
     - establezca los **registros de Zeek en Excluir**. El conjunto mínimo de registros que debe incluir son: dns, conn, files, http, ssl, ssh, x509, snmp, smtp, ftp, sip, dhcp y notice.

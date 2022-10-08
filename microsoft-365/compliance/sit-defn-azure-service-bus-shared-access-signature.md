@@ -1,5 +1,5 @@
 ---
-title: Definición de entidad de firma de acceso compartido de Azure Service Bus (versión preliminar)
+title: Definición de entidad de firma de acceso compartido de Azure Service Bus
 f1.keywords:
 - CSH
 ms.author: chrfox
@@ -20,18 +20,20 @@ hideEdit: true
 feedback_system: None
 recommendations: false
 description: Definición de entidad de tipo de información confidencial de firma de acceso compartido de Azure Service Bus.
-ms.openlocfilehash: e477900557087f5ed4383af8b7cc8d2c26d7bf2d
-ms.sourcegitcommit: fa570d90b00ed1bb40e1ca27b11c66a84c4204e9
+ms.openlocfilehash: 944f0474361acd3dbd61a5fa001528a1cadefa50
+ms.sourcegitcommit: 50da6f1f6ef2274c17ed9729e7ad84395b0a9be2
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/05/2022
-ms.locfileid: "68476707"
+ms.lasthandoff: 10/08/2022
+ms.locfileid: "68506322"
 ---
-# <a name="azure-service-bus-shared-access-signature-preview"></a>Firma de acceso compartido de Azure Service Bus (versión preliminar)
+# <a name="azure-service-bus-shared-access-signature"></a>Firma de acceso compartido de Azure Service Bus
 
 [!INCLUDE [purview-preview](../includes/purview-preview.md)]
 
-## <a name="format"></a>Formato
+Esta SIT también se incluye en el SIT de [todas las credenciales](sit-defn-all-creds.md) agrupadas.
+
+ ## <a name="format"></a>Formato
 
 Combinación de 44 caracteres que consta de letras, dígitos y caracteres especiales que terminan con un signo igual (=) que no forma parte del patrón.
 
@@ -66,9 +68,15 @@ Por ejemplo:
 
 `abcdefghijklmnopqrstuvwxyz0123456789%2F%2BABCDE%3D`
 
+## <a name="credential-example"></a>Ejemplo de credencial 
+
+`Endpoint=sb://account.servicebus.windows.net;SharedAccessKey=abcdefghijklmnopqrstuvwxyz0123456789/+ABCDE=`
+
 ## <a name="checksum"></a>Suma de comprobación
 
 No
+
+Los SIT que tienen sumas de comprobación usan un cálculo único para comprobar si la información es válida. Esto significa que cuando el valor **de suma de comprobación** es **Sí**, el servicio puede realizar una detección positiva solo en función de los datos confidenciales. Cuando el valor **de suma de comprobación** es **No** se deben detectar elementos adicionales (secundarios) para que el servicio realice una detección positiva.
 
 ## <a name="definition"></a>Definición
 

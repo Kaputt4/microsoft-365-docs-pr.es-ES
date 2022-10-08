@@ -11,16 +11,18 @@ author: mjcaparas
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
-ms.collection: M365-security-compliance
+ms.collection:
+- m365-security
+- tier2
 ms.topic: article
 ms.subservice: mde
 search.appverid: met150
-ms.openlocfilehash: da8876804d220081b7e8b637b08fb70a8ce03416
-ms.sourcegitcommit: 9b133379196da2b3a4bb311b07ff274f43780f68
+ms.openlocfilehash: f55ca70c94fa73c26cefd067f2006f174ce4b15c
+ms.sourcegitcommit: 4e42bafee965446f44f7f57d1defed2b9b24fce8
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/14/2022
-ms.locfileid: "67686711"
+ms.lasthandoff: 09/30/2022
+ms.locfileid: "68232680"
 ---
 # <a name="manage-portal-access-using-role-based-access-control"></a>Administración del acceso al portal mediante el control de acceso basado en rol
 
@@ -40,11 +42,11 @@ Con el control de acceso basado en rol (RBAC), puede crear roles y grupos dentro
 
 Los equipos de operaciones de seguridad distribuidas geográficamente de gran tamaño suelen adoptar un modelo basado en niveles para asignar y autorizar el acceso a los portales de seguridad. Los niveles típicos incluyen los tres niveles siguientes:
 
-Nivel|Descripción|
-:---|:---|
-Nivel 1|**Equipo de operaciones de seguridad local/equipo de TI** <br> Este equipo suele evaluar e investigar las alertas contenidas en su geolocalización y se escala al nivel 2 en los casos en los que se requiere una corrección activa.|
-Nivel 2|**Equipo de operaciones de seguridad regional** <br> Este equipo puede ver todos los dispositivos de su región y realizar acciones de corrección.|
-Nivel 3|**Equipo de operaciones de seguridad global** <br> Este equipo está formado por expertos en seguridad y está autorizado para ver y realizar todas las acciones desde el portal.|
+|Nivel |Descripción  |
+|---------|---------|
+|Nivel 1    | **Equipo de operaciones de seguridad local/equipo de TI** <br> Este equipo suele evaluar e investigar las alertas contenidas en su geolocalización y se escala al nivel 2 en los casos en los que se requiere una corrección activa.        |
+|Nivel 2    | **Equipo de operaciones de seguridad regional** <br> Este equipo puede ver todos los dispositivos de su región y realizar acciones de corrección.        |
+|Nivel 3     |**Equipo de operaciones de seguridad global** <br> Este equipo está formado por expertos en seguridad y está autorizado para ver y realizar todas las acciones desde el portal.         |
 
 > [!NOTE]
 > En el caso de los recursos de nivel 0, consulte [Privileged Identity Management](/azure/active-directory/privileged-identity-management/pim-configure) para administradores de seguridad para proporcionar un control más pormenorizado de Microsoft Defender para punto de conexión y Microsoft 365 Defender.  
@@ -55,6 +57,8 @@ RBAC de Defender para punto de conexión está diseñado para admitir el modelo 
   - Cree roles personalizados y controle a qué funcionalidades de Defender para punto de conexión pueden acceder con granularidad.
 - **Controlar quién puede ver información sobre grupos o grupos de dispositivos específicos**
   - [Cree grupos de dispositivos](machine-groups.md) por criterios específicos, como nombres, etiquetas, dominios y otros, y, a continuación, conceda acceso de rol a ellos mediante un grupo de usuarios específico de Azure Active Directory (Azure AD).
+    > [!NOTE]
+    > La creación de grupos de dispositivos se admite en El plan 1 y el plan 2 de Defender para punto de conexión.  
 
 Para implementar el acceso basado en rol, deberá definir roles de administrador, asignar los permisos correspondientes y asignar grupos de usuarios de Azure AD asignados a los roles.
 

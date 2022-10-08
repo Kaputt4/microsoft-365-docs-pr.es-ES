@@ -12,20 +12,27 @@ author: robmazz
 manager: laurawi
 audience: itpro
 ms.collection:
-- m365-security-compliance
+- tier1
+- purview-compliance
 - m365solution-insiderrisk
 - m365initiative-compliance
 - m365solution-scenario
-ms.openlocfilehash: 5d8f7d2b8315021f1bd3e539a8b130f80a14c72d
-ms.sourcegitcommit: 2dedd0f594b817779e034afa6c4418def2382a22
+- highpri
+ms.openlocfilehash: badccd4cce99de60221bdf4b3cdfa90d96ff3214
+ms.sourcegitcommit: 50da6f1f6ef2274c17ed9729e7ad84395b0a9be2
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/18/2022
-ms.locfileid: "67797214"
+ms.lasthandoff: 10/08/2022
+ms.locfileid: "68506596"
 ---
 # <a name="communication-compliance"></a>Cumplimiento de las comunicaciones
 
+>[!IMPORTANT]
+>Cumplimiento de comunicaciones de Microsoft Purview proporciona las herramientas para ayudar a las organizaciones a detectar infracciones de cumplimiento normativo (por ejemplo, SEC o FINRA), como información confidencial o confidencial, hostigamiento o amenazante del lenguaje y uso compartido de contenido para adultos. Creados con privacidad por diseño, los nombres de usuario se seudonimizan de forma predeterminada, los controles de acceso basados en roles se integran, los investigadores son admitidos por un administrador y los registros de auditoría están en vigor para garantizar la privacidad del nivel de usuario.
+
 La protección de información confidencial y la detección y actuación sobre incidentes de acoso en el lugar de trabajo es una parte importante del cumplimiento de las directivas y estándares internos. Cumplimiento de comunicaciones de Microsoft Purview ayuda a minimizar estos riesgos, ya que le ayuda a detectar, capturar y tomar medidas de corrección rápidamente para el correo electrónico y las comunicaciones de Microsoft Teams. Estas incluyen comunicaciones inapropiadas que contienen palabras soeces, amenazas y acoso y comunicaciones que comparten información confidencial dentro y fuera de su organización.
+
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
 
 ## <a name="configure-communication-compliance"></a>Configuración del cumplimiento de comunicaciones
 

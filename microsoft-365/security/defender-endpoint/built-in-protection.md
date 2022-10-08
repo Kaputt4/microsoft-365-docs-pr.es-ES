@@ -7,7 +7,7 @@ ms.author: deniseb
 manager: dansimp
 audience: Admin
 ms.topic: overview
-ms.date: 09/21/2022
+ms.date: 10/07/2022
 ms.service: microsoft-365-security
 ms.subservice: mde
 ms.localizationpriority: medium
@@ -17,12 +17,12 @@ ms.collection:
 ms.custom: ''
 ms.reviewer: joshbregman
 f1.keywords: NOCSH
-ms.openlocfilehash: 3a69a91b647bc5b94e11dd086314c05c67e5fd7f
-ms.sourcegitcommit: b9282493c371d59c2e583b9803825096499b5e2c
+ms.openlocfilehash: 662e53d4d0a590260936227776f9a17b733ee194
+ms.sourcegitcommit: 50da6f1f6ef2274c17ed9729e7ad84395b0a9be2
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/29/2022
-ms.locfileid: "68151659"
+ms.lasthandoff: 10/08/2022
+ms.locfileid: "68504927"
 ---
 # <a name="built-in-protection-helps-guard-against-ransomware"></a>La protección integrada ayuda a protegerse contra ransomware
 
@@ -32,7 +32,7 @@ ms.locfileid: "68151659"
 > **¡No tienes que esperar a que te llegue la protección integrada**! Ahora puede proteger los dispositivos de su organización mediante la configuración de estas funcionalidades:
 > - [Habilitación de la protección en la nube](why-cloud-protection-should-be-on-mdav.md)
 > - [Activar la protección contra alteraciones](prevent-changes-to-security-settings-with-tamper-protection.md)
-> - [Establecer reglas básicas de reducción de superficie expuesta a ataques en modo de bloque](attack-surface-reduction-rules-deployment.md)
+> - [Establecer reglas estándar de reducción de superficie expuesta a ataques en modo de bloque](attack-surface-reduction-rules-deployment.md)
 > - [Habilitación de la protección de red en modo de bloque](enable-network-protection.md)
 
 ## <a name="what-is-built-in-protection-and-how-does-it-work"></a>¿Qué es la protección integrada y cómo funciona?

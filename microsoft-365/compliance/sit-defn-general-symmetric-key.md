@@ -1,5 +1,5 @@
 ---
-title: Definición de entidad de clave simétrica general (versión preliminar)
+title: Definición de entidad de clave simétrica general
 f1.keywords:
 - CSH
 ms.author: chrfox
@@ -20,18 +20,20 @@ hideEdit: true
 feedback_system: None
 recommendations: false
 description: Definición de entidad de tipo de información confidencial de clave simétrica general.
-ms.openlocfilehash: eba81a451f8b39d08cd0419c970dc0fe894f2e45
-ms.sourcegitcommit: fa570d90b00ed1bb40e1ca27b11c66a84c4204e9
+ms.openlocfilehash: 827e23c31dcfcacd6121f3792d0b47cba7e29b0d
+ms.sourcegitcommit: 50da6f1f6ef2274c17ed9729e7ad84395b0a9be2
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/05/2022
-ms.locfileid: "68476747"
+ms.lasthandoff: 10/08/2022
+ms.locfileid: "68505430"
 ---
-# <a name="general-symmetric-key-preview"></a>Clave simétrica general (versión preliminar)
+# <a name="general-symmetric-key"></a>Clave simétrica general
 
 [!INCLUDE [purview-preview](../includes/purview-preview.md)]
 
-## <a name="format"></a>Formato
+Esta SIT también se incluye en el SIT de [todas las credenciales](sit-defn-all-creds.md) agrupadas.
+
+ ## <a name="format"></a>Formato
 
 Una combinación de 44 caracteres que consta de letras, dígitos y caracteres especiales.
 
@@ -65,9 +67,15 @@ Por ejemplo:
 
 `abcdefghijklmnopqrstuvwxyz0123456789/+ABCDEabcdefghijklmnopqrstuvwxyz0123456789/+ABCDE==`
 
+## <a name="credential-example"></a>Ejemplo de credencial 
+
+`key=abcdefghijklmnopqrstuvwxyz0123456789/+ABCDE=;`
+
 ## <a name="checksum"></a>Suma de comprobación
 
 No
+
+Los SIT que tienen sumas de comprobación usan un cálculo único para comprobar si la información es válida. Esto significa que cuando el valor **de suma de comprobación** es **Sí**, el servicio puede realizar una detección positiva solo en función de los datos confidenciales. Cuando el valor **de suma de comprobación** es **No** se deben detectar elementos adicionales (secundarios) para que el servicio realice una detección positiva.
 
 ## <a name="definition"></a>Definición
 

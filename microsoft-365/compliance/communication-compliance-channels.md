@@ -14,21 +14,26 @@ f1_keywords:
 ms.service: O365-seccomp
 ms.localizationpriority: medium
 ms.collection:
-- Strat_O365_IP
-- M365-security-compliance
+- tier1
+- purview-compliance
 search.appverid:
 - MET150
 - MOE150
-ms.openlocfilehash: af6b5af33ce6d10b66489f2d49ef5ed4ec1f9310
-ms.sourcegitcommit: 10e6abe740e27000e223378eb17d657a47555fa8
+ms.openlocfilehash: f6b914005ea02f04a43d61636fba2072512c030b
+ms.sourcegitcommit: 50da6f1f6ef2274c17ed9729e7ad84395b0a9be2
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/31/2022
-ms.locfileid: "67469215"
+ms.lasthandoff: 10/08/2022
+ms.locfileid: "68506640"
 ---
 # <a name="detect-channel-signals-with-communication-compliance"></a>Detección de señales de canal con cumplimiento de comunicaciones
 
+>[!IMPORTANT]
+>Cumplimiento de comunicaciones de Microsoft Purview proporciona las herramientas para ayudar a las organizaciones a detectar infracciones de cumplimiento normativo (por ejemplo, SEC o FINRA), como información confidencial o confidencial, hostigamiento o amenazante del lenguaje y uso compartido de contenido para adultos. Creados con privacidad por diseño, los nombres de usuario se seudonimizan de forma predeterminada, los controles de acceso basados en roles se integran, los investigadores son admitidos por un administrador y los registros de auditoría están en vigor para garantizar la privacidad del nivel de usuario.
+
 Con las directivas de cumplimiento de comunicaciones, puede elegir examinar los mensajes en una o varias de las siguientes plataformas de comunicación como un grupo o como orígenes independientes. Los mensajes originales capturados en estas plataformas se conservan en la ubicación de la plataforma original de acuerdo con las [directivas de retención y retención](/microsoft-365/compliance/information-governance) de su organización. Las copias de los mensajes utilizados por las directivas de cumplimiento de comunicaciones para el análisis y la investigación se conservan mientras la directiva esté en vigor, incluso si los usuarios abandonan la organización y se eliminan sus buzones. Cuando se elimina una directiva de comunicación, también se eliminan copias de los mensajes asociados a la directiva.
+
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
 
 ## <a name="microsoft-teams"></a>Microsoft Teams
 

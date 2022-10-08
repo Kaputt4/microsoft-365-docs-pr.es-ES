@@ -7,19 +7,21 @@ ms.author: cmcatee
 manager: scotv
 audience: Admin
 ms.topic: reference
-ms.service: o365-administration
-ms.collection: Adm_Support
+ms.service: microsoft-365-business
+ms.collection:
+- scotvorg
+- Adm_Support
 ms.localizationpriority: medium
 description: Obtenga información acerca de cómo ponerse en contacto con el soporte técnico de su país o región.
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: c78a8551a8c8306952615b9a4e0ccaca50042c38
-ms.sourcegitcommit: 0ee2dabe402d44fecb6856af98a2ef7720d25189
+ms.openlocfilehash: f845bd6069e49149483ede62bbb6966e9835182d
+ms.sourcegitcommit: 0b7070ec119e00e0dafe030bbfbef0ae5c9afa19
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/09/2021
-ms.locfileid: "61370481"
+ms.lasthandoff: 09/29/2022
+ms.locfileid: "68199645"
 ---
-# <a name="contact-support-for-kenya"></a>Póngase en contacto con el soporte técnico de Kenia
+# <a name="contact-support-for-kenya"></a>Póngase en contacto con el soporte técnico para Kenia
 
 [Buscar otro país o región](../get-help-support.md).
 
@@ -33,7 +35,7 @@ Presione 1 para Microsoft 365
 ## <a name="hours"></a>Horas
 ### <a name="billing-support"></a>Soporte de facturación:
 
-Inglés: Mon-Fri 10 AM-6 PM
+Inglés: Mon-Fri de 10:00 a 18:00
 
 ### <a name="technical-support"></a>Soporte técnico:
 

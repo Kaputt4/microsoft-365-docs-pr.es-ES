@@ -19,14 +19,14 @@ ms.topic: article
 ms.collection:
 - m365-security
 - tier1
-ms.openlocfilehash: 4ed40bbde797bd258af547dd7c5a48faad523b64
-ms.sourcegitcommit: 12af9e8e3a6eaa090fda9e98ccb831dff65863a4
+ms.openlocfilehash: 502f6b359c86a1bbb2574c794afa4ae28b40ed4a
+ms.sourcegitcommit: 50da6f1f6ef2274c17ed9729e7ad84395b0a9be2
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/27/2022
-ms.locfileid: "68091001"
+ms.lasthandoff: 10/08/2022
+ms.locfileid: "68506486"
 ---
-# <a name="microsoft-threat-experts-in-microsoft-365-overview"></a>Expertos en amenazas de Microsoft en Información general de Microsoft 365
+# <a name="microsoft-defender-experts-in-microsoft-365-overview"></a>Microsoft Defender Expertos en Información general de Microsoft 365
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
 
@@ -42,25 +42,25 @@ ms.locfileid: "68091001"
 
 Las notificaciones de ataque de punto de conexión (anteriormente conocidas como Expertos en amenazas de Microsoft: notificación de ataque dirigida) es un servicio de búsqueda de amenazas administrada. Una vez que se aplique y se acepte, recibirá notificaciones de ataque de punto de conexión de expertos en amenazas de Microsoft, por lo que no se perderá las amenazas críticas para su entorno. Estas notificaciones le ayudarán a proteger los puntos de conexión, el correo electrónico y las identidades de su organización.
 
-Expertos en amenazas de Microsoft: Expertos a petición le permite obtener consejos expertos sobre las amenazas a las que se enfrenta su organización. Puede ponerse en contacto con usted para obtener ayuda sobre las amenazas a las que se enfrenta su organización. Está disponible como servicio de suscripción.
+Microsoft Defender Experts – Experts on Demand le permite obtener consejos expertos sobre las amenazas a las que se enfrenta su organización. Puede ponerse en contacto con usted para obtener ayuda sobre las amenazas a las que se enfrenta su organización. Está disponible como servicio de suscripción.
 
 ## <a name="apply-for-endpoint-attack-notifications"></a>Solicitar notificaciones de ataque de punto de conexión
 
 > [!IMPORTANT]
 > Antes de aplicar, asegúrese de analizar los requisitos de idoneidad para las notificaciones de ataque de punto de conexión con el proveedor de servicios técnicos de Microsoft y el equipo de la cuenta.
 
-Si ya tiene Microsoft Defender para punto de conexión y Microsoft 365 Defender, puede solicitar notificaciones de ataque de punto de conexión a través de su portal de Microsoft 365 Defender. Vaya a **Configuración > puntos de conexión > General > Características avanzadas > Notificaciones de ataque de punto de conexión** y seleccione **Aplicar**. Consulte [Configuración de funcionalidades de Expertos en amenazas de Microsoft](./configure-microsoft-threat-experts.md) para obtener una descripción completa.
+Si ya tiene Microsoft Defender para punto de conexión y Microsoft 365 Defender, puede solicitar notificaciones de ataque de punto de conexión a través de su portal de Microsoft 365 Defender. Vaya a **Configuración > puntos de conexión > General > Características avanzadas > Notificaciones de ataque de punto de conexión** y seleccione **Aplicar**. Consulte [Configuración de las funcionalidades de expertos de Microsoft Defender](./configure-microsoft-threat-experts.md) para obtener una descripción completa.
 
-Una vez aprobada la aplicación, comenzará a recibir notificaciones de ataque de punto de conexión cada vez que los expertos en amenazas detecten una amenaza para su entorno.
+Una vez aprobada la aplicación, comenzará a recibir notificaciones de ataque de punto de conexión cada vez que los expertos de Defender detecten una amenaza para su entorno.
 
-## <a name="subscribe-to-microsoft-threat-experts---experts-on-demand"></a>Suscribirse a Expertos en amenazas de Microsoft: expertos a petición
+## <a name="subscribe-to-microsoft-defender-experts---experts-on-demand"></a>Suscribirse a expertos de Microsoft Defender expertos a petición
 
 > [!NOTE]
 > Expertos a petición no es un servicio de respuesta a incidentes de seguridad. Está pensado para proporcionar una mejor comprensión de las amenazas complejas que afectan a su organización. Póngase en contacto con su propio equipo de respuesta a incidentes de seguridad para solucionar problemas urgentes de respuesta a incidentes de seguridad. Si no tiene su propio equipo de respuesta a incidentes de seguridad y desea la ayuda de Microsoft, cree una solicitud de soporte técnico en el [Centro de servicios Premier](/services-hub/).
 
-Póngase en contacto con su representante de Microsoft para suscribirse a Expertos a petición.  Consulte [Configuración de funcionalidades de Expertos en amenazas de Microsoft](./configure-microsoft-threat-experts.md) para obtener más información.
+Póngase en contacto con su representante de Microsoft para suscribirse a Expertos a petición.  Consulte [Configuración de las funcionalidades de expertos de Microsoft Defender](./configure-microsoft-threat-experts.md) para obtener más información.
 
-## <a name="receive-endpoint-attack-notification"></a>Recepción de una notificación de ataque de punto de conexión
+## <a name="receive-endpoint-attack-notification"></a>Recibir notificación de ataque de punto de conexión
 
 La funcionalidad Notificación de ataque de punto de conexión proporciona búsqueda proactiva de las amenazas más importantes para la red. Nuestros expertos de Defender buscan intrusiones de adversarios humanos, ataques de teclado práctico y ataques avanzados, como ciberespionaje. Estas notificaciones se mostrarán como una nueva alerta. El servicio de búsqueda administrada incluye:
 
@@ -103,4 +103,4 @@ Vea este vídeo para obtener una introducción rápida al Centro de servicios de
 
 ## <a name="see-also"></a>Vea también
 
-- [Configuración de funcionalidades de Expertos en amenazas de Microsoft](./configure-microsoft-threat-experts.md)
+- [Configuración de las funcionalidades de expertos de Microsoft Defender](./configure-microsoft-threat-experts.md)

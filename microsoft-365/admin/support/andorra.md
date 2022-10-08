@@ -7,17 +7,19 @@ ms.author: cmcatee
 manager: scotv
 audience: Admin
 ms.topic: reference
-ms.service: o365-administration
-ms.collection: Adm_Support
+ms.service: microsoft-365-business
+ms.collection:
+- scotvorg
+- Adm_Support
 ms.localizationpriority: medium
 description: Obtenga información acerca de cómo ponerse en contacto con el soporte técnico de su país o región.
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: bb0cc9b552126038f1e337f039274d54c23b9231
-ms.sourcegitcommit: 0ee2dabe402d44fecb6856af98a2ef7720d25189
+ms.openlocfilehash: e2bde7e4350c5c61524a84d32d0657994f243d38
+ms.sourcegitcommit: 0b7070ec119e00e0dafe030bbfbef0ae5c9afa19
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/09/2021
-ms.locfileid: "61369929"
+ms.lasthandoff: 09/29/2022
+ms.locfileid: "68186071"
 ---
 # <a name="contact-support-for-andorra"></a>Póngase en contacto con el soporte técnico de Andorra
 
@@ -29,9 +31,9 @@ ms.locfileid: "61369929"
 ## <a name="hours"></a>Horas
 ### <a name="billing-support"></a>Soporte de facturación:
 
-Español: Mon-Fri 10 AM-6 PM
+Español: Mon-Fri de 10:00 a 18:00
 
-Inglés: Mon-Fri 10 AM-6 PM
+Inglés: Mon-Fri de 10:00 a 18:00
 
 ### <a name="technical-support"></a>Soporte técnico:
 

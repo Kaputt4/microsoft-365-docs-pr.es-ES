@@ -12,17 +12,22 @@ author: robmazz
 manager: laurawi
 audience: itpro
 ms.collection:
-- m365-security-compliance
+- purview-compliance
 - m365solution-insiderrisk
 - m365initiative-compliance
-ms.openlocfilehash: 20501814ccf87cfbbda6080b60515be374516cd2
-ms.sourcegitcommit: a6cbc057e757771cc0e7b53b184fab9fa53a658a
+- highpri
+- tier1
+ms.openlocfilehash: 5e0d29d96eeafe418d1773e20a73e33b402389fa
+ms.sourcegitcommit: 50da6f1f6ef2274c17ed9729e7ad84395b0a9be2
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/12/2022
-ms.locfileid: "67648623"
+ms.lasthandoff: 10/08/2022
+ms.locfileid: "68503498"
 ---
 # <a name="learn-about-and-configure-insider-risk-management-browser-signal-detection"></a>Información y configuración de la detección de señales del explorador de administración de riesgos internos
+
+>[!IMPORTANT]
+>Administración de riesgos internos de Microsoft Purview correlaciona varias señales para identificar posibles riesgos internos malintencionados o involuntarios, como el robo de IP, la pérdida de datos y las infracciones de seguridad. La administración de riesgos internos permite a los clientes crear directivas para administrar la seguridad y el cumplimiento. Creados con privacidad por diseño, los usuarios se seudonimizan de forma predeterminada y los controles de acceso basados en roles y los registros de auditoría están en su lugar para ayudar a garantizar la privacidad del nivel de usuario.
 
 Los exploradores web a menudo los usan los usuarios para acceder a archivos confidenciales y no confidenciales dentro de una organización. La administración de riesgos internos permite a su organización detectar y actuar sobre señales de filtración de exploradores para todos los archivos no ejecutables vistos en los exploradores [Microsoft Edge](https://www.microsoft.com/edge) y [Google Chrome](https://www.google.com/chrome) . Con estas señales, los analistas e investigadores pueden actuar rápidamente cuando los usuarios de directivas de ámbito realizan cualquiera de las siguientes actividades al usar estos exploradores:
 
@@ -43,6 +48,8 @@ En la tabla siguiente se resumen las actividades detectadas y la compatibilidad 
 | Archivos transferidos o copiados a un recurso compartido de red | Extensión          | Extensión         |
 | Archivos copiados en dispositivos USB                    | Extensión          | Extensión         |
 | Exploración de sitios web de riesgo                        | Extensión          | Extensión         |
+
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
 
 ## <a name="common-requirements"></a>Requisitos comunes
 

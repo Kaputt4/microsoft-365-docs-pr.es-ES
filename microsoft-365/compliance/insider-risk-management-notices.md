@@ -11,20 +11,27 @@ ms.author: robmazz
 author: robmazz
 manager: laurawi
 audience: itpro
-ms.collection: m365-security-compliance
+ms.collection:
+- tier1
+- purview-compliance
 ms.custom: admindeeplinkCOMPLIANCE
-ms.openlocfilehash: 7af1152d1393aaaf9eeb242c78b280cf0e9d80e6
-ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
+ms.openlocfilehash: 04117f0880266f934955c1285250e509667a8482
+ms.sourcegitcommit: 50da6f1f6ef2274c17ed9729e7ad84395b0a9be2
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/06/2022
-ms.locfileid: "66639806"
+ms.lasthandoff: 10/08/2022
+ms.locfileid: "68505211"
 ---
 # <a name="insider-risk-management-notice-templates"></a>Plantillas de aviso de administración de riesgos de Insider
+
+>[!IMPORTANT]
+>Administración de riesgos internos de Microsoft Purview correlaciona varias señales para identificar posibles riesgos internos malintencionados o involuntarios, como el robo de IP, la pérdida de datos y las infracciones de seguridad. La administración de riesgos internos permite a los clientes crear directivas para administrar la seguridad y el cumplimiento. Creados con privacidad por diseño, los usuarios se seudonimizan de forma predeterminada y los controles de acceso basados en roles y los registros de auditoría están en su lugar para ayudar a garantizar la privacidad del nivel de usuario.
 
 Las plantillas de aviso de administración de riesgos internos permiten enviar automáticamente mensajes de correo electrónico a los usuarios cuando se crea un caso para las actividades que han generado una coincidencia de directiva y una alerta confirmada. Para la mayoría de las alertas que generan casos, las acciones del usuario son el resultado de errores o actividades involuntarias sin mala intención. Los avisos sirven como recordatorios sencillos a los usuarios para tener más cuidado, para proporcionar vínculos a información para el entrenamiento del actualizador o a los recursos de directiva corporativa. Los avisos pueden ser una parte importante del programa de entrenamiento de cumplimiento interno y pueden ayudar a crear una pista de auditoría documentada para los usuarios con actividades de riesgo periódicas.
 
 Cree plantillas de aviso si desea enviar a los usuarios un aviso de aviso por correo electrónico para las coincidencias de directivas como parte del proceso de resolución de casos. Los avisos solo se pueden enviar a la dirección de correo electrónico del usuario asociada al caso específico que se está revisando. Al seleccionar una plantilla de aviso para aplicar a una coincidencia de directiva, puede optar por aceptar los valores de campo definidos en la plantilla o sobrescribir los campos según sea necesario.
+
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
 
 ## <a name="notice-templates-dashboard"></a>Panel de plantillas de aviso
 

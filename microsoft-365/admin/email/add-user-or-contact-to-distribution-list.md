@@ -7,9 +7,10 @@ author: kwekua
 manager: scotv
 audience: Admin
 ms.topic: article
-ms.service: o365-administration
+ms.service: microsoft-365-business
 ms.localizationpriority: medium
 ms.collection:
+- scotvorg
 - highpri
 - M365-subscription-management
 - Adm_O365
@@ -24,12 +25,12 @@ search.appverid:
 - MOE150
 ms.assetid: ba256583-03ca-429e-be4d-a92d9c221ad6
 description: Obtenga información sobre cómo agregar un usuario o contacto de Microsoft 365, como un empleado, asociado o proveedor, a un grupo de distribución de correo electrónico.
-ms.openlocfilehash: f7a41cbbb1b9bdf2f72fa74166826f65cabd59d9
-ms.sourcegitcommit: 37e137535c4f70702afe1a5eeaa899c75ee02cfd
+ms.openlocfilehash: 1d9036702df64ffae5275e214dcded0f7fe6ebb6
+ms.sourcegitcommit: 0b7070ec119e00e0dafe030bbfbef0ae5c9afa19
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/13/2022
-ms.locfileid: "67661967"
+ms.lasthandoff: 09/29/2022
+ms.locfileid: "68191219"
 ---
 # <a name="add-a-user-or-contact-to-a-microsoft-365-distribution-group"></a>Agregar un usuario o un contacto a un grupo de distribución de Microsoft 365
 

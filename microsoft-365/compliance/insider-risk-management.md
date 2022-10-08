@@ -12,20 +12,23 @@ author: robmazz
 manager: laurawi
 audience: itpro
 ms.collection:
-- m365-security-compliance
+- highpri
+- tier1
+- purview-compliance
 - m365solution-insiderrisk
 - m365initiative-compliance
-ms.openlocfilehash: 5b82aa83a790a96f8196f89f75f2aaf905fc0a14
-ms.sourcegitcommit: a6cbc057e757771cc0e7b53b184fab9fa53a658a
+- highpri
+ms.openlocfilehash: 26aa7bd217092ad28932ff91113f130122cdfeb2
+ms.sourcegitcommit: 50da6f1f6ef2274c17ed9729e7ad84395b0a9be2
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/12/2022
-ms.locfileid: "67648711"
+ms.lasthandoff: 10/08/2022
+ms.locfileid: "68506046"
 ---
 # <a name="learn-about-insider-risk-management"></a>Información sobre riesgos internos de Microsoft
 
-> [!TIP]
-> *¿Sabía que puede probar las versiones premium de las nueve soluciones de Microsoft Purview de forma gratuita?* Utilice la prueba de 90 días de las soluciones Purview para explorar cómo las sólidas capacidades de Purview pueden ayudar a su organización a satisfacer sus necesidades de cumplimiento. Los clientes Microsoft 365 E3 y Office 365 E3 pueden empezar ahora en el [Centro de pruebas del portal de cumplimiento de Microsoft Purview](https://compliance.microsoft.com/trialHorizontalHub?sku=ComplianceE5&ref=DocsRef). Obtenga información sobre [las personas que pueden registrarse y los términos de la prueba](compliance-easy-trials.md).
+>[!IMPORTANT]
+>Administración de riesgos internos de Microsoft Purview correlaciona varias señales para identificar posibles riesgos internos malintencionados o involuntarios, como el robo de IP, la pérdida de datos y las infracciones de seguridad. La administración de riesgos internos permite a los clientes crear directivas para administrar la seguridad y el cumplimiento. Creados con privacidad por diseño, los usuarios se seudonimizan de forma predeterminada y los controles de acceso basados en roles y los registros de auditoría están en su lugar para ayudar a garantizar la privacidad del nivel de usuario.
 
 La Administración de riesgos internos de Microsoft Purview es una solución de cumplimiento que ayuda a minimizar los riesgos internos, ya que le permite detectar, investigar y actuar en actividades malintencionadas e involuntarias en su organización. Las directivas de riesgos internos le permiten definir los tipos de riesgos a identificar y detectar en su organización, incluida la acción sobre casos y la elevación de casos a Microsoft eDiscovery (Premium) si es necesario. Los analistas de riesgo de su organización pueden tomar rápidamente las medidas adecuadas para asegurarse de que los usuarios cumplen los estándares de cumplimiento de su organización.
 
@@ -46,6 +49,8 @@ Consulte el [vídeo de Microsoft Mechanics](https://www.youtube.com/watch?v=Ynkf
 
 > [!IMPORTANT]
 > La administración de riesgos internos está disponible actualmente en inquilinos hospedados en regiones geográficas y países compatibles con las dependencias del servicio de Azure. Para comprobar que la administración de riesgos internos es compatible con su organización, consulte [Disponibilidad de dependencias de Azure por país o región](/troubleshoot/azure/general/dependency-availability-by-country).
+
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
 
 ## <a name="modern-risk-pain-points"></a>Puntos de dolor de riesgo modernos
 

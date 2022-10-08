@@ -1,5 +1,5 @@
 ---
-title: Definición de entidad de clave de AZURE Function Master/API (versión preliminar)
+title: Definición de entidad de clave de AZURE Function Master/API
 f1.keywords:
 - CSH
 ms.author: chrfox
@@ -20,18 +20,20 @@ hideEdit: true
 feedback_system: None
 recommendations: false
 description: Definición de entidad de tipo de información confidencial de clave de Azure Function Master/API.
-ms.openlocfilehash: 78a4af95c6390cc16f6a60bd3874be660e3cfa5c
-ms.sourcegitcommit: fa570d90b00ed1bb40e1ca27b11c66a84c4204e9
+ms.openlocfilehash: d16072cc3fdeeeb29b0a8bbf148efc91da611e9a
+ms.sourcegitcommit: 50da6f1f6ef2274c17ed9729e7ad84395b0a9be2
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/05/2022
-ms.locfileid: "68476395"
+ms.lasthandoff: 10/08/2022
+ms.locfileid: "68506398"
 ---
-# <a name="azure-function-master--api-key-preview"></a>Clave de API o maestro de funciones de Azure (versión preliminar)  
+# <a name="azure-function-master--api-key"></a>Clave de Azure Function Master / API   
 
 [!INCLUDE [purview-preview](../includes/purview-preview.md)]
 
-## <a name="format"></a>Formato
+Esta SIT también se incluye en el SIT de [todas las credenciales](sit-defn-all-creds.md) agrupadas.
+
+ ## <a name="format"></a>Formato
 
 Una combinación de 56 caracteres que consta de letras, dígitos y caracteres especiales.
 
@@ -67,9 +69,15 @@ Por ejemplo:
 abcdefghijklmnopqrstuvwxyz0123456789%2F%2BABCDEF0123456789%3D%3D
 
 
+## <a name="credential-example"></a>Ejemplo de credencial 
+
+`https://account.azurewebsites.net/api/function?code=abcdefghijklmnopqrstuvwxyz0123456789%2F%2BABCDEF0123456789%3D%3D`
+
 ## <a name="checksum"></a>Suma de comprobación
 
 No
+
+Los SIT que tienen sumas de comprobación usan un cálculo único para comprobar si la información es válida. Esto significa que cuando el valor **de suma de comprobación** es **Sí**, el servicio puede realizar una detección positiva solo en función de los datos confidenciales. Cuando el valor **de suma de comprobación** es **No** se deben detectar elementos adicionales (secundarios) para que el servicio realice una detección positiva.
 
 ## <a name="definition"></a>Definición
 

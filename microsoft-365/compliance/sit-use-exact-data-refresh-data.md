@@ -11,22 +11,23 @@ ms.service: O365-seccomp
 ms.date: ''
 ms.localizationpriority: medium
 ms.collection:
-- M365-security-compliance
+- tier1
+- purview-compliance
 search.appverid:
 - MOE150
 - MET150
-description: Actualice el archivo de tabla de origen de información confidencial.
+description: Obtenga información sobre cómo actualizar el archivo de tabla de origen de información confidencial una sola vez o configurar ciclos de actualización periódicos automatizados.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 310663caae55bb9b5e0d07cb38ba9fa4b45e8a73
-ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
+ms.openlocfilehash: ee802477f7d065bffd77439a4e814d3a8a7e815b
+ms.sourcegitcommit: 6df492719fecc2b213d55465dc1cd60ab4627ed6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/06/2022
-ms.locfileid: "66621675"
+ms.lasthandoff: 10/04/2022
+ms.locfileid: "68383879"
 ---
-# <a name="refresh-your-exact-data-match-sensitive-information-source-table-file"></a>Actualizar el archivo de tabla de origen de información confidencial de coincidencia exacta de datos 
+# <a name="refresh-your-exact-data-match-sensitive-information-source-table-file"></a>Actualizar el archivo de tabla de origen de información confidencial de coincidencia exacta de datos
 
-Puede actualizar la base de datos de información confidencial hasta 5 veces en cada período de 24 horas. Tendrá que volver a establecer y cargar la tabla de origen de información confidencial.
+Puede actualizar la base de datos de información confidencial hasta 5 veces en cada período de 24 horas. Tendrá que volver a establecer y cargar la tabla de origen de información confidencial. Al actualizar, se sobrescribe la tabla de origen de información confidencial existente con la nueva.
 
 1. Vuelva a exportar los datos confidenciales a una aplicación, como Microsoft Excel, y guarde el archivo en formato delimitado .csv, formato .tsv o canalización (|). Mantenga el mismo nombre de archivo y ubicación que usó cuando anteriormente ha cargado y ha cargado el archivo con hash. Consulte [Exportación de datos de origen para obtener información confidencial exacta basada en coincidencias de datos](sit-get-started-exact-data-match-export-data.md#export-source-data-for-exact-data-match-based-sensitive-information-type) para obtener más información sobre cómo exportar los datos confidenciales y obtenerlos en el formato correcto.
 
@@ -42,6 +43,8 @@ Puede actualizar la base de datos de información confidencial hasta 5 veces en 
    |PowerShell|Consulte la documentación [TareasProgramadas](/powershell/module/scheduledtasks/) y [script de PowerShell de ejemplo](#example-powershell-script-for-task-scheduler) de este artículo|
    |API del Programador de tareas|Consulte la documentación del [Programador de tareas](/windows/desktop/TaskSchd/using-the-task-scheduler)|
    |Interfaz de usuario de Windows|En Windows, haga clic en **Inicio** y escriba Programador de tareas. A continuación, en la lista de resultados, haga clic en **Programador de tareas** y **Ejecutar como administrador**.|
+
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
 
 ## <a name="example-powershell-script-for-task-scheduler"></a>Script de PowerShell de ejemplo para el Programador de tareas
 

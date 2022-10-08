@@ -11,17 +11,19 @@ author: mjcaparas
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
-ms.collection: M365-security-compliance
+ms.collection:
+- m365-security
+- tier3
 ms.topic: article
 ms.subservice: mde
 ms.custom: api
 search.appverid: met150
-ms.openlocfilehash: bb37a160f3ba008490ad7300c16c8325b8431d9f
-ms.sourcegitcommit: b1ed6470645455c2f1fcf467450debc622c40147
+ms.openlocfilehash: 1ba5ef73f311e4831c927c08b0f00ec606ed1f16
+ms.sourcegitcommit: 4e42bafee965446f44f7f57d1defed2b9b24fce8
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/15/2022
-ms.locfileid: "67710881"
+ms.lasthandoff: 09/30/2022
+ms.locfileid: "68232020"
 ---
 # <a name="start-investigation-api"></a>Iniciar la API de investigación
 
@@ -74,6 +76,8 @@ Delegado (cuenta profesional o educativa)|Alert.ReadWrite|"Alertas de lectura y 
 >
 > - El usuario debe tener al menos el siguiente permiso de rol: "Acciones de corrección activas" (consulte [Creación y administración de roles](user-roles.md) para obtener más información).
 > - El usuario debe tener acceso al dispositivo en función de la configuración del grupo de dispositivos (consulte [Creación y administración de grupos de dispositivos](machine-groups.md) para obtener más información).
+>
+> La creación de grupos de dispositivos se admite en El plan 1 y el plan 2 de Defender para punto de conexión. 
 
 ## <a name="http-request"></a>Solicitud HTTP
 

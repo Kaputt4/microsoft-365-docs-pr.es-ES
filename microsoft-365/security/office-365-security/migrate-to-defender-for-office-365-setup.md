@@ -13,19 +13,19 @@ search.appverid:
 - MET150
 - MOE150
 ms.collection:
-- M365-security-compliance
+- m365-security
 - m365solution-mdo-migration
 - highpri
 ms.custom: migrationguides
 description: Realice los pasos necesarios para empezar a migrar desde un dispositivo o servicio de protección de terceros a Microsoft Defender para Office 365 protección.
 ms.subservice: mdo
 ms.service: microsoft-365-security
-ms.openlocfilehash: 71ce240865a21eddf89a2ae2676d31d63525442b
-ms.sourcegitcommit: 2b89bcff547e00be3d38dc8d1e6cbcf8f41eba42
+ms.openlocfilehash: a5bf593ec697710e16396ed1755e3d9ae37e5a6e
+ms.sourcegitcommit: 12af9e8e3a6eaa090fda9e98ccb831dff65863a4
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/03/2022
-ms.locfileid: "67596388"
+ms.lasthandoff: 09/27/2022
+ms.locfileid: "68079917"
 ---
 # <a name="migrate-to-microsoft-defender-for-office-365---phase-2-setup"></a>Migración a Microsoft Defender para Office 365: fase 2: instalación
 

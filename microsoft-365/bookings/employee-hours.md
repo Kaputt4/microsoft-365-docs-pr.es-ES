@@ -7,14 +7,16 @@ audience: Admin
 ms.topic: article
 ms.service: bookings
 ms.localizationpriority: medium
+ms.collection:
+- scotvorg
 ms.assetid: 0968717e-b61f-4b06-987c-6c1464541782
 description: Establezca el horario laboral y la disponibilidad de empleados en Microsoft Bookings.
-ms.openlocfilehash: 1cd395b377d9d9b0a20ef1d01956a27c559afb42
-ms.sourcegitcommit: af2b570e76e074bbef98b665b5f9a731350eda58
+ms.openlocfilehash: 84627c77ab1f4f6e73a8efccce8141759695ab9b
+ms.sourcegitcommit: 0b7070ec119e00e0dafe030bbfbef0ae5c9afa19
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/21/2022
-ms.locfileid: "66185069"
+ms.lasthandoff: 09/29/2022
+ms.locfileid: "68169747"
 ---
 # <a name="employee-working-hours-in-microsoft-bookings"></a>Horario laboral de empleados en Microsoft Bookings
 
@@ -32,7 +34,7 @@ Vea este vídeo o siga los pasos siguientes para establecer el horario laboral d
 
 ## <a name="steps"></a>Pasos
 
-1. En Microsoft 365, seleccione el iniciador de aplicaciones y, a continuación, seleccione **Reservas**.
+1. En Microsoft 365, seleccione el iniciador de aplicaciones y, a continuación, seleccione **Bookings**.
 
 1. Elija el calendario.
 

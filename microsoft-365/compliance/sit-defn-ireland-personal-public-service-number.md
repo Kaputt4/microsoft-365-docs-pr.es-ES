@@ -14,19 +14,22 @@ f1_keywords:
 ms.service: O365-seccomp
 ms.localizationpriority: medium
 ms.collection:
-- M365-security-compliance
+- tier3
+- purview-compliance
 hideEdit: true
 feedback_system: None
 recommendations: false
 description: Definición de entidad de tipo de información confidencial de número de servicio público personal (PPS) de Irlanda.
-ms.openlocfilehash: 9473886085fe3ae5630becdeeb69efb82f428edd
-ms.sourcegitcommit: 5aed330d8af523f0dffe5e392f1c79f047e38172
+ms.openlocfilehash: da0451a437ad3ab7dd8437352c2f7b539b9d9a9c
+ms.sourcegitcommit: be2334dbcd4e1bf309349d981a68a30e06de0297
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/21/2022
-ms.locfileid: "66999962"
+ms.lasthandoff: 10/04/2022
+ms.locfileid: "68378322"
 ---
 # <a name="ireland-personal-public-service-pps-number"></a>Número de la seguridad social de Irlanda (PPS)
+
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
 
 ## <a name="format"></a>Formato
 
@@ -112,18 +115,18 @@ Una directiva DLP tiene poca confianza en que se detecta este tipo de informaci�
 - uimhir aitheantais phearsanta
 - uimhir phearsanta seirbhíse poiblí
 - tax id
-- identificación fiscal no
+- núm. identificación fiscal
 - número de identificación fiscal
-- impuestos no #
-- impuestos no
-- número de impuestos
+- n.º de id. fiscal#
+- n.º fiscal
+- número de id. fiscal
 - número de registro fiscal
-- taxid #
-- taxidno #
-- taxidnumber #
-- taxno #
-- taxnumber #
-- taxnumber
-- tin id
-- tin no
-- Lata #
+- Id.fiscal#
+- númidfiscal#
+- númeroidentificaciónfiscal#
+- núm.fiscal#
+- núm.id.fiscal#
+- núm.id.fisca
+- id. tributaria
+- n.º de id. tributario
+- Número de identificación tributaria

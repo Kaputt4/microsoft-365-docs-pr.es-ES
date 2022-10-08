@@ -11,20 +11,22 @@ ms.topic: article
 ms.service: microsoft-365-enterprise
 ms.localizationpriority: high
 ms.collection:
+- scotvorg
 - M365-security-compliance
 - Strat_O365_Enterprise
 - m365initiative-coredeploy
 - m365solution-m365-identity
 - m365solution-scenario
 - zerotrust-solution
+- highpri
 ms.custom: ''
 description: Requerir que los usuarios inicien sesión de forma segura con la autenticación multifactor (MFA) y otras características.
-ms.openlocfilehash: c0b78128ec9f08cd099bebcfa61a3bc2f25452b9
-ms.sourcegitcommit: 62368e5a48e569c8e475b07d194d7d8ff7d167ab
+ms.openlocfilehash: 1fea63ceed92067bfde621abfc0b591469353c25
+ms.sourcegitcommit: 0b7070ec119e00e0dafe030bbfbef0ae5c9afa19
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/02/2022
-ms.locfileid: "67556510"
+ms.lasthandoff: 09/29/2022
+ms.locfileid: "68178721"
 ---
 # <a name="step-3-protect-your-microsoft-365-user-accounts"></a>Paso 3: Proteger las cuentas de usuario de Microsoft 365
 
@@ -123,19 +125,19 @@ Las directivas de acceso a dispositivos e identidades están definidas para usar
 
 Estos niveles y sus configuraciones correspondientes proporcionan niveles de protección coherentes en los datos, las identidades y los dispositivos.
 
-Microsoft recomienda la configuración e implementación de directivas de acceso a dispositivos e identidades de confianza cero en la organización, incluidas las configuraciones específicas para Microsoft Teams, Exchange Online y SharePoint. Para más información, consulte las [Configuraciones de acceso a dispositivos e identidades de confianza cero](../security/office-365-security/microsoft-365-policies-configurations.md).
+Microsoft highly recommends configuring and rolling out Zero Trust identity and device access policies in your organization, including specific settings for Microsoft Teams, Exchange Online, and SharePoint. For more information, see [Zero Trust identity and device access configurations](../security/office-365-security/microsoft-365-policies-configurations.md).
 
 ## <a name="azure-ad-identity-protection"></a>Azure AD Identity Protection
 
-En este paso, obtendrá información sobre cómo configurar directivas para proteger contra credenciales en peligro, donde un atacante determina el nombre de la cuenta y la contraseña de un usuario para obtener acceso a los servicios y datos en la nube de una organización. Azure AD Identity Protection ofrece distintas formas de impedir que un atacante comprometa las credenciales de una cuenta de usuario.
+In this section, you'll learn how to configure policies that protect against credential compromise, where an attacker determines a user’s account name and password to gain access to an organization’s cloud services and data. Azure AD Identity Protection provides a number of ways to help prevent an attacker from compromising a user account's credentials.
 
 Con Azure AD Identity Protection, puede:
 
 |Funcionalidad|Descripción|
 |:---------|:---------|
-| Determinar y corregir posibles vulnerabilidades en las identidades de su organización | Azure AD usa el aprendizaje automático para detectar anomalías y actividades sospechosas como los inicios de sesión y actividades posteriores al inicio de sesión. Con estos datos, Azure AD Identity Protection genera informes y alertas que le permiten evaluar los problemas y tomar medidas.|
-|Detectar acciones sospechosas relacionadas con las identidades de su organización y responder a ellas automáticamente|Puede configurar directivas basadas en riesgos que responden automáticamente a los problemas que se hayan detectado cuando se alcanza un nivel de riesgo específico. Estas directivas, junto con otros controles de acceso condicional proporcionados por Azure AD y Microsoft Intune, pueden automáticamente impedir el acceso o realizar acciones correctivas como restablecer contraseñas y pedir la autenticación multifactor para los inicios de sesión posteriores. |
-| Investigar incidentes sospechosos y solucionarlos con acciones administrativas | Puede investigar eventos de riesgo con información sobre el incidente de seguridad. Hay disponibles flujos de trabajo básicos para realizar un seguimiento de las investigaciones e iniciar acciones de corrección, como restablecimientos de contraseña. |
+| Determinar y corregir posibles vulnerabilidades en las identidades de su organización | Azure AD uses machine learning to detect anomalies and suspicious activity, such as sign-ins and post-sign-in activities. Using this data, Azure AD Identity Protection generates reports and alerts that help you evaluate the issues and take action.|
+|Detectar acciones sospechosas relacionadas con las identidades de su organización y responder a ellas automáticamente|You can configure risk-based policies that automatically respond to detected issues when a specified risk level has been reached. These policies, in addition to other Conditional Access controls provided by Azure AD and Microsoft Intune, can either automatically block access or take corrective actions, including password resets and requiring Azure AD Multi-Factor Authentication for subsequent sign-ins. |
+| Investigar incidentes sospechosos y solucionarlos con acciones administrativas | You can investigate risk events using information about the security incident. Basic workflows are available to track investigations and initiate remediation actions, such as password resets. |
 |||
 
 Vea [más información sobre Azure AD Identity Protection](/azure/active-directory/identity-protection/overview-identity-protection).

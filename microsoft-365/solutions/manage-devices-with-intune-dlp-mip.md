@@ -1,5 +1,5 @@
 ---
-title: Paso 7. Implementar la prevención de pérdida de datos (DLP) con funcionalidades de protección de la información
+title: Step 7. Implement data loss prevention (DLP) with information protection capabilities
 ms.author: bcarter
 author: brendacarter
 f1.keywords:
@@ -9,7 +9,7 @@ f1.keywords:
 manager: dougeby
 audience: ITPro
 ms.topic: article
-ms.service: microsoft-365-enterprise
+ms.service: o365-solutions
 ms.localizationpriority: high
 ms.collection:
 - highpri
@@ -23,14 +23,14 @@ ms.collection:
 ms.custom: ''
 keywords: ''
 description: Implemente DLP para punto de conexión trabajando con el equipo de gobernanza y protección de la información para crear directivas DLP para su organización.
-ms.openlocfilehash: dcfb37cd1039495da811cb7b123522bdc28305a8
-ms.sourcegitcommit: 0af064e8b6778060f1bd365378d69b16fc9949b5
+ms.openlocfilehash: 0208f236e477affaebbea7c32c2cadf769128014
+ms.sourcegitcommit: fce27da5140691b013a6f7c0ea9c88b4ea4b7c10
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/15/2022
-ms.locfileid: "67731472"
+ms.lasthandoff: 09/23/2022
+ms.locfileid: "67986628"
 ---
-# <a name="step-7-implement-data-loss-prevention-dlp-with-information-protection-capabilities"></a>Paso 7. Implementar la prevención de pérdida de datos (DLP) con funcionalidades de protección de la información
+# <a name="step-7-implement-data-loss-prevention-dlp-with-information-protection-capabilities"></a>Step 7. Implement data loss prevention (DLP) with information protection capabilities
 
 
 Si su organización ya ha puesto el tiempo en comprender los datos, desarrollar un esquema de confidencialidad de datos y aplicar el esquema, es posible que esté listo para extender elementos de este esquema a los puntos de conexión mediante directivas de prevención de pérdida de datos (DLP) de Microsoft Purview. 
@@ -39,7 +39,7 @@ La prevención de pérdida de datos en punto de conexión (DLP de punto de conex
 - Windows 10, Windows 11
 - macOS
 
-El equipo de gobierno y protección de la información crea directivas DLP. Cada directiva DLP define qué elementos de un conjunto de datos se deben buscar, como etiquetas o tipos de información confidencial, y cómo proteger estos datos. 
+DLP policies are created by your information protection and governance team. Each DLP policy defines what elements within a data set to look for, like sensitive information types or labels, and how to protect this data. 
 
 Por ejemplo, una directiva DLP puede buscar datos personales como un número de pasaporte. La directiva DLP incluirá una condición que desencadena que la directiva tome medidas, como cuando se comparte un número de pasaporte con personas de fuera de la organización. La acción que realiza la directiva también se puede configurar. Las opciones van desde simplemente informar de la acción a los administradores, advertir a los usuarios o incluso impedir que se compartan los datos.
 
