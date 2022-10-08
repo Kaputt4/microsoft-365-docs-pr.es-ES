@@ -14,19 +14,22 @@ f1_keywords:
 ms.service: O365-seccomp
 ms.localizationpriority: medium
 ms.collection:
-- M365-security-compliance
+- tier3
+- purview-compliance
 hideEdit: true
 feedback_system: None
 recommendations: false
 description: Definición de entidad de tipo de información confidencial de dirección IP v4.
-ms.openlocfilehash: e145b4342c5b276b66d0ed463a2094b7ada47b01
-ms.sourcegitcommit: 5aed330d8af523f0dffe5e392f1c79f047e38172
+ms.openlocfilehash: 3d1ba439b6c4099ddad4951f6a927be4231cdaaa
+ms.sourcegitcommit: be2334dbcd4e1bf309349d981a68a30e06de0297
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/21/2022
-ms.locfileid: "67000001"
+ms.lasthandoff: 10/04/2022
+ms.locfileid: "68380192"
 ---
 # <a name="ip-address-v4"></a>Dirección IP v4
+
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
 
 ## <a name="format"></a>Formato
 
@@ -42,12 +45,12 @@ No
 
 Una política de DLP tiene una gran confianza en que ha detectado este tipo de información confidencial si, dentro de una proximidad de 300 caracteres:
 
-- La expresión `Regex_ipv4_address` regular busca contenido que coincida con el patrón.
+- La expresión regular `Regex_ipv4_address` encuentra contenido que coincide con el patrón.
 - Se encuentra una palabra clave de `Keyword_ipaddress`.
 
 Una política de DLP tiene confianza media en que ha detectado este tipo de información confidencial si, dentro de una proximidad de 300 caracteres:
 
-- La expresión `Regex_ipv4_address` regular busca contenido que coincida con el patrón.
+- La expresión regular `Regex_ipv4_address` encuentra contenido que coincide con el patrón.
 
 ```xml
       <!-- IP Address v4-->

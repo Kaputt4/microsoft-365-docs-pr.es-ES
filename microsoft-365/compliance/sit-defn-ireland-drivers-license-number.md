@@ -14,19 +14,22 @@ f1_keywords:
 ms.service: O365-seccomp
 ms.localizationpriority: medium
 ms.collection:
-- M365-security-compliance
+- tier3
+- purview-compliance
 hideEdit: true
 feedback_system: None
 recommendations: false
 description: Definición de entidad de tipo de información confidencial del número de licencia de conducir de Irlanda.
-ms.openlocfilehash: 807331dfb66300939ef8521125f9eb82ebd69f31
-ms.sourcegitcommit: 5aed330d8af523f0dffe5e392f1c79f047e38172
+ms.openlocfilehash: b472d83480eb68a4a2d440504f781f9498970180
+ms.sourcegitcommit: be2334dbcd4e1bf309349d981a68a30e06de0297
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/21/2022
-ms.locfileid: "66999989"
+ms.lasthandoff: 10/04/2022
+ms.locfileid: "68380434"
 ---
 # <a name="ireland-drivers-license-number"></a>Número del permiso de conducir de Irlanda
+
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
 
 ## <a name="format"></a>Formato
 
@@ -47,7 +50,7 @@ No
 
 Una política de DLP tiene confianza media en que ha detectado este tipo de información confidencial si, dentro de una proximidad de 300 caracteres:
 
-- La expresión `Regex_ireland_eu_driver's_license_number` regular busca contenido que coincida con el patrón.
+- La expresión regular `Regex_ireland_eu_driver's_license_number` encuentra contenido que coincide con el patrón.
 - Se encuentra una palabra clave de `Keywords_eu_driver's_license_number` o `Keywords_ireland_eu_driver's_license_number`.
 
 ```xml

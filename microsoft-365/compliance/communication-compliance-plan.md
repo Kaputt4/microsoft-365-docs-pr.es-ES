@@ -14,19 +14,22 @@ f1_keywords:
 ms.service: O365-seccomp
 ms.localizationpriority: medium
 ms.collection:
-- Strat_O365_IP
-- M365-security-compliance
+- tier1
+- purview-compliance
 search.appverid:
 - MET150
 - MOE150
-ms.openlocfilehash: 71537e949d68d2171d3c3fb0f6dff5d55fe5b3bf
-ms.sourcegitcommit: 221212fff9737e0ea386755deb8fed62ae9c254b
+ms.openlocfilehash: f491cbc346bf79824be782403b4ae3a7d54431a6
+ms.sourcegitcommit: 50da6f1f6ef2274c17ed9729e7ad84395b0a9be2
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/14/2022
-ms.locfileid: "66787086"
+ms.lasthandoff: 10/08/2022
+ms.locfileid: "68504026"
 ---
 # <a name="plan-for-communication-compliance"></a>Planear el cumplimiento de las comunicaciones
+
+>[!IMPORTANT]
+>Cumplimiento de comunicaciones de Microsoft Purview proporciona las herramientas para ayudar a las organizaciones a detectar infracciones de cumplimiento normativo (por ejemplo, SEC o FINRA), como información confidencial o confidencial, hostigamiento o amenazante del lenguaje y uso compartido de contenido para adultos. Creados con privacidad por diseño, los nombres de usuario se seudonimizan de forma predeterminada, los controles de acceso basados en roles se integran, los investigadores son admitidos por un administrador y los registros de auditoría están en vigor para garantizar la privacidad del nivel de usuario.
 
 Antes de empezar a trabajar con [el cumplimiento de la comunicación](/microsoft-365/compliance/communication-compliance) en su organización, hay importantes actividades y consideraciones de planeamiento que deben revisar los equipos de administración de la tecnología de la información y el cumplimiento. Comprender y planear exhaustivamente la implementación en las siguientes áreas ayudará a garantizar que la implementación y el uso de las características de cumplimiento de comunicaciones funcionen sin problemas y se alineen con los procedimientos recomendados para la solución.
 
@@ -36,6 +39,8 @@ También puede consultar el vídeo de [Microsoft Mechanics](https://www.youtube.
 
 > [!IMPORTANT]
 > El cumplimiento de comunicaciones está disponible actualmente en los inquilinos hospedados en regiones geográficas y países compatibles con las dependencias del servicio de Azure. Para comprobar que el cumplimiento de comunicaciones es compatible con su organización, consulte [Disponibilidad de dependencias de Azure por país o región](/troubleshoot/azure/general/dependency-availability-by-country).
+
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
 
 ## <a name="transitioning-from-supervision-in-office-365"></a>Transición de supervisión en Office 365
 

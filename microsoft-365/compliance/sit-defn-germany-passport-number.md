@@ -14,19 +14,22 @@ f1_keywords:
 ms.service: O365-seccomp
 ms.localizationpriority: medium
 ms.collection:
-- M365-security-compliance
+- tier3
+- purview-compliance
 hideEdit: true
 feedback_system: None
 recommendations: false
 description: Definición de entidad de tipo de información confidencial del número de pasaporte de Alemania.
-ms.openlocfilehash: 3e58ded04d1507903c890598a7f2c7d892ac45e7
-ms.sourcegitcommit: 5aed330d8af523f0dffe5e392f1c79f047e38172
+ms.openlocfilehash: 222d81c18785571676a9b698dbe8a778566cd432
+ms.sourcegitcommit: be2334dbcd4e1bf309349d981a68a30e06de0297
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/21/2022
-ms.locfileid: "66999860"
+ms.lasthandoff: 10/04/2022
+ms.locfileid: "68380522"
 ---
 # <a name="germany-passport-number"></a>Número de pasaporte de Alemania
+
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
 
 ## <a name="format"></a>Formato
 
@@ -102,12 +105,12 @@ Una directiva DLP tiene poca confianza en que se detecta este tipo de informaci�
 
 ### <a name="keywords_eu_passport_number_common"></a>Keywords_eu_passport_number_common
 
-- Pasaporte #
-- Pasaporte #
+- pasaporte#
+- pasaporte #
 - passportid
-- Pasaportes
+- pasaportes
 - passportno
-- passport no
+- pasaporte no
 - passportnumber
 - passport number
 - passportnumbers

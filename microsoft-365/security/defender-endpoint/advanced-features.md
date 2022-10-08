@@ -17,12 +17,12 @@ ms.collection:
 ms.topic: article
 ms.subservice: mde
 search.appverid: met150
-ms.openlocfilehash: af8846088531af68f921824fd2d9843dfa5ca4e6
-ms.sourcegitcommit: b9282493c371d59c2e583b9803825096499b5e2c
+ms.openlocfilehash: 89955b01c80ddc5734508b0dd71f09508e991e21
+ms.sourcegitcommit: 50da6f1f6ef2274c17ed9729e7ad84395b0a9be2
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/29/2022
-ms.locfileid: "68153947"
+ms.lasthandoff: 10/08/2022
+ms.locfileid: "68504070"
 ---
 # <a name="configure-advanced-features-in-defender-for-endpoint"></a>Configuración de características avanzadas en Defender para punto de conexión
 
@@ -41,7 +41,7 @@ En función de los productos de seguridad de Microsoft que use, es posible que h
 
 1. En el panel de navegación, seleccione **Configuración** \> **Puntos de conexión** **Características avanzadas**\>.
 2. Seleccione la característica avanzada que desea configurar y cambie la configuración entre **Activado** y **Desactivado**.
-3. Haga clic en **Guardar preferencias**.
+3. Seleccione **Guardar preferencias**.
 
 Use las siguientes características avanzadas para protegerse mejor frente a archivos potencialmente malintencionados y obtener una mejor información durante las investigaciones de seguridad.
 
@@ -174,12 +174,11 @@ Al activar esta característica, podrá incorporar datos de Microsoft Defender p
 
 Para recibir la integración contextual de dispositivos en Office 365 Threat Intelligence, deberá habilitar la configuración de Defender para punto de conexión en el panel Seguridad & cumplimiento. Para obtener más información, consulte [Investigación y respuesta de amenazas](/microsoft-365/security/office-365-security/office-365-ti).
 
-## <a name="microsoft-threat-experts---targeted-attack-notifications"></a>Expertos en amenazas de Microsoft: notificaciones de ataque dirigidas
+## <a name="endpoint-attack-notifications"></a>Notificaciones de ataque de punto de conexión
 
-De los dos componentes de Microsoft Threat Expert, la notificación de ataque dirigida está en disponibilidad general. La funcionalidad expertos a petición todavía está en versión preliminar. Solo puede usar la funcionalidad expertos a petición si ha solicitado la versión preliminar y la aplicación se ha aprobado. Puede recibir notificaciones de ataque dirigidas desde Expertos en amenazas de Microsoft a través del panel de alertas del portal de Defender para punto de conexión y por correo electrónico si lo configura.
+Las notificaciones de ataque de punto de conexión permiten a Microsoft buscar activamente amenazas críticas que se prioricen en función de la urgencia y el impacto sobre los datos del punto de conexión. 
 
-> [!NOTE]
-> La funcionalidad Expertos en amenazas de Microsoft de Defender para punto de conexión está disponible con una licencia E5 para [Enterprise Mobility + Security](https://www.microsoft.com/cloud-platform/enterprise-mobility-security).
+Para la búsqueda proactiva en todo el ámbito de Microsoft 365 Defender, incluidas las amenazas que abarcan el correo electrónico, la colaboración, la identidad, las aplicaciones en la nube y los puntos de conexión, [obtenga más información](https://aka.ms/DefenderExpertsForHuntingGetStarted) sobre Microsoft Defender Expertos.
 
 ## <a name="microsoft-defender-for-cloud-apps"></a>Microsoft Defender for Cloud Apps
 
@@ -194,9 +193,9 @@ Para recibir la integración contextual de dispositivos en Microsoft Defender fo
 
 1. Inicie sesión en el [portal de Microsoft Defender for Identity](https://portal.atp.azure.com/) con un rol administrador global o administrador de seguridad.
 
-2. Haga clic en **Crear instancia**.
+2. Seleccione **Crear la instancia**.
 
-3. Cambie la configuración de integración a **Activado** y haga clic en **Guardar**.
+3. Cambie el valor de Integración a **Activado** y seleccione **Guardar**.
 
 Después de completar los pasos de integración en ambos portales, podrá ver las alertas pertinentes en la página de detalles del dispositivo o de los detalles del usuario.
 

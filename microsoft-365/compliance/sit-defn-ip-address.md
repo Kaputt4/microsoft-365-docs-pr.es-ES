@@ -14,26 +14,29 @@ f1_keywords:
 ms.service: O365-seccomp
 ms.localizationpriority: medium
 ms.collection:
-- M365-security-compliance
+- tier3
+- purview-compliance
 hideEdit: true
 feedback_system: None
 recommendations: false
 description: Definición de entidad de tipo de información confidencial de direcciones IP.
-ms.openlocfilehash: 19c883cccdc45682514bcd553f1b8e4a09d90e12
-ms.sourcegitcommit: 5aed330d8af523f0dffe5e392f1c79f047e38172
+ms.openlocfilehash: 35ef4b8715fb7d49e40aa83bfacb75a817f88bab
+ms.sourcegitcommit: be2334dbcd4e1bf309349d981a68a30e06de0297
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/21/2022
-ms.locfileid: "66999995"
+ms.lasthandoff: 10/04/2022
+ms.locfileid: "68380456"
 ---
 # <a name="ip-address"></a>Dirección IP
 
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
+
 ## <a name="format"></a>Formato
 
-### <a name="ipv4"></a>IPv4:
+### <a name="ipv4"></a>IPv4: 
 Patrón complejo que tiene en cuenta las versiones con formato (puntos) y sin formato (sin puntos) de las direcciones IPv4
 
-### <a name="ipv6"></a>IPv6:
+### <a name="ipv6"></a>IPv6: 
 Patrón complejo que cuenta con números IPv6 con formato (que incluyen dos puntos)
 
 ## <a name="pattern"></a>Patrón
@@ -46,17 +49,17 @@ No
 
 Para IPv6, una directiva DLP tiene una gran confianza en que se detecta este tipo de información confidencial si, dentro de una proximidad de 300 caracteres:
 
-- La expresión `Regex_ipv6_address` regular busca contenido que coincida con el patrón.
+- La expresión regular `Regex_ipv6_address` encuentra contenido que coincide con el patrón.
 - No se encuentra ninguna palabra clave de `Keyword_ipaddress` .
 
 Para IPv4, una directiva DLP tiene una gran confianza en que se detecta este tipo de información confidencial si, dentro de una proximidad de 300 caracteres:
 
-- La expresión `Regex_ipv4_address` regular busca contenido que coincida con el patrón.
+- La expresión regular `Regex_ipv4_address` encuentra contenido que coincide con el patrón.
 - Se encuentra una palabra clave de `Keyword_ipaddress`.
 
 Para IPv6, una directiva DLP tiene una gran confianza en que se detecta este tipo de información confidencial si, dentro de una proximidad de 300 caracteres:
 
-- La expresión `Regex_ipv6_address` regular busca contenido que coincida con el patrón.
+- La expresión regular `Regex_ipv6_address` encuentra contenido que coincide con el patrón.
 - No se encuentra ninguna palabra clave de `Keyword_ipaddress` .
 
 ```xml

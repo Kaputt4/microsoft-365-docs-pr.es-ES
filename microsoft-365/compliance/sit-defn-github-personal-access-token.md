@@ -1,5 +1,5 @@
 ---
-title: Definición de entidad de token de acceso personal de GitHub (versión preliminar)
+title: Definición de entidad de token de acceso personal de GitHub
 f1.keywords:
 - CSH
 ms.author: chrfox
@@ -14,21 +14,26 @@ f1_keywords:
 ms.service: O365-seccomp
 ms.localizationpriority: medium
 ms.collection:
-- M365-security-compliance
+- tier3
+- purview-compliance
 hideEdit: true
 feedback_system: None
 recommendations: false
 description: Definición de entidad de tipo de información confidencial del token de acceso personal de GitHub.
-ms.openlocfilehash: e1da4eaf09ef480ad29928d8066dc91612cf779e
-ms.sourcegitcommit: 5aed330d8af523f0dffe5e392f1c79f047e38172
+ms.openlocfilehash: 9a887ec28d5e90ffc61a16a2a1975aa2d6f8e366
+ms.sourcegitcommit: 50da6f1f6ef2274c17ed9729e7ad84395b0a9be2
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/21/2022
-ms.locfileid: "66999797"
+ms.lasthandoff: 10/08/2022
+ms.locfileid: "68504048"
 ---
-# <a name="github-personal-access-token-preview"></a>Token de acceso personal de GitHub (versión preliminar)
+# <a name="github-personal-access-token"></a>Token de acceso personal de GitHub
 
-## <a name="format"></a>Formato
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
+
+Esta SIT también se incluye en el SIT de [todas las credenciales](sit-defn-all-creds.md) agrupadas.
+
+ ## <a name="format"></a>Formato
 
 Combinación de 40 caracteres que constan de letras, dígitos y caracteres especiales.
 
@@ -69,9 +74,15 @@ Por ejemplo:
 
 `abcdef0123456789abcdef0123456789abcdef01`
 
+## <a name="credential-example"></a>Ejemplo de credencial 
+
+`pat=ghp_abcdefghijklmnopqrstuvwxyzABCD012345`
+
 ## <a name="checksum"></a>Suma de comprobación
 
 Sí
+
+Los SIT que tienen sumas de comprobación usan un cálculo único para comprobar si la información es válida. Esto significa que cuando el valor **de suma de comprobación** es **Sí**, el servicio puede realizar una detección positiva solo en función de los datos confidenciales. Cuando el valor **de suma de comprobación** es **No** se deben detectar elementos adicionales (secundarios) para que el servicio realice una detección positiva.
 
 ## <a name="definition"></a>Definición
 
@@ -91,7 +102,7 @@ Los patrones están diseñados para que coincidan con las credenciales reales co
 
 ### <a name="keyword_githubpatidentifiablesecret"></a>Keyword_GitHubPatIdentifiableSecret:
 
-- gh_
+- Gh_
 
 ### <a name="keyword_logincredentialsinurl"></a>Keyword_LoginCredentialsInUrl:
 

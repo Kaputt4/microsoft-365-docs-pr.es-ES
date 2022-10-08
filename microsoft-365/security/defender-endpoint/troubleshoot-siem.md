@@ -11,16 +11,18 @@ author: mjcaparas
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
-ms.collection: M365-security-compliance
+ms.collection:
+- m365-security
+- tier3
 ms.topic: troubleshooting
 ms.subservice: mde
 search.appverid: met150
-ms.openlocfilehash: 2d703e3071cb9ea7bfe454d054d4d68beb695e1b
-ms.sourcegitcommit: 9b133379196da2b3a4bb311b07ff274f43780f68
+ms.openlocfilehash: 0027544968ccc056698b0e09ecce5ce8a0f97427
+ms.sourcegitcommit: 4e42bafee965446f44f7f57d1defed2b9b24fce8
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/14/2022
-ms.locfileid: "67703894"
+ms.lasthandoff: 09/30/2022
+ms.locfileid: "68228808"
 ---
 # <a name="troubleshoot-siem-tool-integration-issues"></a>Solucionar problemas de integración de la herramienta SIEM
 
