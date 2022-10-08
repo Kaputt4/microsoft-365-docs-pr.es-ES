@@ -11,19 +11,20 @@ ms.service: microsoft-365-security
 ms.subservice: other
 ms.date: 09/15/2022
 ms.localizationpriority: high
-ms.collection: ''
+ms.collection:
+- tier1
 ms.custom:
 - MiniMaven
 search.appverid:
 - BCS160
 - MET150
 description: Obtenga más información sobre cómo se asignan las características de protección de Microsoft 365 Empresa Premium a la configuración de Intune. La suscripción proporciona una licencia para modificar la configuración de Intune.
-ms.openlocfilehash: b4a6740262705cad0934b999eaff89b7ed95bfc6
-ms.sourcegitcommit: c29af68260ba8676083674b3c70209bff2c2e362
+ms.openlocfilehash: 185eda9e5b5e214716608d4232a0ea81c00d6b4b
+ms.sourcegitcommit: 0283c436f3ba61a708b52b57a1955f5ea74376a3
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/16/2022
-ms.locfileid: "67741706"
+ms.lasthandoff: 09/28/2022
+ms.locfileid: "68096377"
 ---
 # <a name="how-do-protection-features-in-microsoft-365-business-premium-map-to-intune-settings"></a>Cómo se asignan las características de protección de Microsoft 365 Empresa Premium a la configuración de Intune
 
@@ -35,7 +36,7 @@ Para buscar la configuración de Intune, inicie sesión con las credenciales de 
   
  > [!IMPORTANT]
  > 
- > La suscripción de Microsoft 365 Empresa Premium le ofrece una licencia para modificar toda la configuración de Intune. Consulte [Introducción a Intune.](/intune/introduction-intune)
+ > A Microsoft 365 Business Premium subscription gives you a license to modify all the Intune settings. See [Introduction to Intune to get started.](/intune/introduction-intune)
   
 Haga clic en el nombre de la directiva que desea &mdash;, por ejemplo, la directiva de aplicación para Android &mdash; y luego elija **Configuración de la directiva**.
   
@@ -64,7 +65,7 @@ En **Administrar la forma en la que los usuarios obtienen acceso a los archivos 
 
 La siguiente tabla detalla cómo se asigna a la configuración de Intune la configuración de directiva de aplicaciones de Windows 10.
   
-Para buscar la configuración de Intune, inicie sesión con sus credenciales de administrador de Microsoft 365 Empresa Premium, vaya al [portal de Azure](https://portal.azure.com), selecciome **Más servicios** y escriba Intune en el **Filtro**; seleccione **Intune App Protection** \> **Directiva de la aplicación**.
+To find the Intune setting, sign in with your Microsoft 365 Business Premium admin credentials, and go to [Azure portal](https://portal.azure.com). Select **More services**, and type Intune into the **Filter**. Select **Intune App Protection** \> **App Policy**.
   
  > [!IMPORTANT]
  > La suscripción de Microsoft 365 Empresa Premium le proporciona una licencia para modificar solo la configuración de Intune que se asigna a la configuración disponible en Microsoft 365 Empresa Premium. 
@@ -74,7 +75,7 @@ Haga clic en el nombre de la directiva que desea seleccionar y, a continuación,
 |**Configuración de directiva de aplicación de Windows 10**|**Configuración de Intune**|
 |:-----|:-----|
 |Cifrar los archivos de trabajo  |**Configuración avanzada** \> **Protección de datos**: **Revocar las claves de cifrado en la inscripción** y **Revocar acceso al dispositivo de datos protegidos inscrito a MDM** se establecen en **Activar**.  |
-|Impedir que los usuarios copien datos de la empresa en archivos personales.  |**Configuración necesaria** \> **Modo de protección de la información de Windows**. **Activado** en Microsoft 365 Empresa Premium se asigna a: **Ocultar reemplazo**, **Desactivado** en Microsoft 365 Business se asigna a: **Desactivado**.    |
+|Impedir que los usuarios copien datos de la empresa en archivos personales.  |**Required settings** \> **Windows Information Protection mode**. **On** in Microsoft 365 Business Premium maps to: **Hide Overrides**, **Off** in Microsoft 365 Business Premium maps to: **Off**.  |
 |Control de acceso a documentos de Office  | Si se establece en **Activado** en Microsoft 365 Empresa Premium, entonces  <br/> **Configuración avanzada** \> **Acceso**, **Usar Windows Hello para empresas como método para iniciar sesión en Windows** se establece en **Activar**, con la siguiente configuración adicional:  <br/> **Establecer el número mínimo de caracteres necesarios para el PIN** se establece en **4**.  <br/> **Configurar el uso de mayúsculas en el PIN de Windows Hello para empresas** se establece en **No se permite el uso de mayúsculas para el PIN**.  <br/> **Configurar el uso de minúsculas en el PIN de Windows Hello para empresas** se establece en **No se permite el uso de minúsculas para el PIN**.  <br/> **Configurar el uso de caracteres especiales en el PIN de Windows Hello para empresas** se establece en **No se permite el uso de caracteres especiales para el PIN**.  <br/> **Especificar el período de tiempo (en días) que se puede usar el PIN antes de que el sistema necesite que el usuario lo cambie** se establece en **0**.  <br/> **Especificar el número de PIN anteriores que pueden estar asociados a una cuenta de usuario que no se puede volver a utilizar** se establece en **0**.  <br/> **Número de errores de autenticación permitidos antes de que el dispositivo se borre** se establece en el mismo que en Microsoft 365 Business (5 de forma predeterminada).  <br/> **Cantidad máxima de tiempo (en minutos) permitido después de que el dispositivo esté inactivo que hará que el dispositivo se bloquee con la contraseña o el PIN** se establece en el mismo que en Microsoft 365 Business.  |
 |Habilitar la recuperación de datos protegidos  |**Configuración avanzada** \> **Protección de datos**: **Mostrar el icono de protección de datos de empresa** y **Usar Azure RMS para el trabajo en curso** se establecen en **Activar**.  |
 |Proteger las ubicaciones de la empresa y de la nube adicionales  |**Configuración avanzada** \> **Dominios protegidos** y **Recursos en nube** muestran los sitios de SharePoint y los dominios.  |
@@ -84,7 +85,7 @@ Haga clic en el nombre de la directiva que desea seleccionar y, a continuación,
 
 La siguiente tabla detalla cómo se asigna a la configuración de Intune los valores de configuración del dispositivo de Windows 10.
   
-Para buscar la configuración de Intune, inicie sesión con sus credenciales de administrador de Microsoft 365 Empresa Premium, vaya al [portal de Azure](https://portal.azure.com), seleccione **Más servicios** y escriba Intune en el **Filtro**; seleccione **Intune** \> **Configuración del dispositivo** \> **Perfiles**. A continuación, seleccione **Directiva de dispositivo para Windows 10** \> **Propiedades** \> **Configuración**.
+To find the Intune setting, sign in with your Microsoft 365 Business Premium admin credentials, and go to [Azure portal](https://portal.azure.com), then select **More services**, and type in Intune into the **Filter**, select **Intune** \> **Device configuration** \> **Profiles**. Then select **Device policy for Windows 10** \> **Properties** \> **Settings**.
   
 |**Configuración de la directiva de dispositivo de Windows 10**|**Configuración de Intune**|
 |:-----|:-----|

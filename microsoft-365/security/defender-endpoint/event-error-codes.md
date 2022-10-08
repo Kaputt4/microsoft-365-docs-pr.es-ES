@@ -11,17 +11,19 @@ author: mjcaparas
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
-ms.collection: M365-security-compliance
+ms.collection:
+- m365-security
+- tier3
 ms.topic: article
 ms.date: 05/21/2018
 ms.subservice: mde
 search.appverid: met150
-ms.openlocfilehash: b7d69821615fed5923dd5e69bc4da823fabceae4
-ms.sourcegitcommit: 9b133379196da2b3a4bb311b07ff274f43780f68
+ms.openlocfilehash: 13285e39548f86dada8b13cc78d9f972ae80a8f1
+ms.sourcegitcommit: 0b7070ec119e00e0dafe030bbfbef0ae5c9afa19
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/14/2022
-ms.locfileid: "67702762"
+ms.lasthandoff: 09/29/2022
+ms.locfileid: "68203605"
 ---
 # <a name="review-events-and-errors-using-event-viewer"></a>Revisar eventos y errores mediante Visor de eventos
 
@@ -127,7 +129,7 @@ Por ejemplo, si los dispositivos no aparecen en la **lista de dispositivos**, es
    |74|La etiqueta de dispositivo en el Registro supera el límite de longitud. Nombre de etiqueta: %2. Límite de longitud: %1.|La etiqueta de dispositivo supera el límite de longitud.|Use una etiqueta de dispositivo más corta.|
    |81|No se ha podido crear el registrador automático ETW de Microsoft Defender para punto de conexión. Código de error: %1|No se ha podido crear la sesión ETW.|Reinicie el dispositivo. Si este error persiste, póngase en contacto con el soporte técnico.|
    |82|No se ha podido quitar el registrador automático ETW de Microsoft Defender para punto de conexión. Código de error: %1|No se ha podido eliminar la sesión ETW.|Póngase en contacto con el soporte técnico.|
-   |84|Establezca el modo de ejecución del Antivirus de Microsoft Defender. Forzar modo pasivo: %1, código de resultado: %2.|Establece el modo de ejecución de Defender (activo o pasivo).|Notificación de funcionamiento normal; no se requiere ninguna acción.|
+   |84|Establezca Microsoft Defender modo de ejecución antivirus. Forzar modo pasivo: %1, código de resultado: %2.|Establece el modo de ejecución de Defender (activo o pasivo).|Notificación de funcionamiento normal; no se requiere ninguna acción.|
    |85|No se ha podido desencadenar el ejecutable de Microsoft Defender para punto de conexión. Código de error: %1|Error en el ejecutable SenseIR al marcar con estrella.|Reinicie el dispositivo. Si este error persiste, póngase en contacto con el soporte técnico.|
    |86|Al iniciar de nuevo se ha detenido el servicio externo que debería estar en marcha. Nombre: %1, código de salida: %2|Iniciando de nuevo el servicio externo.|Notificación de funcionamiento normal; no se requiere ninguna acción.|
    |87|No se puede iniciar el servicio externo. Nombre: %1|No se ha podido iniciar el servicio externo.|Póngase en contacto con el soporte técnico.|
@@ -156,7 +158,7 @@ Por ejemplo, si los dispositivos no aparecen en la **lista de dispositivos**, es
    |307| Error al actualizar los permisos de controlador Código de error: %1. |Se produce durante la incorporación.    |Póngase en contacto con el servicio de soporte técnico.   |
    |308 | Error al ACL en la carpeta %1 Código de error: %2.  |Se produce durante la incorporación.    | Póngase en contacto con el servicio de soporte técnico.  |
    |401  | Microsoft Defender para punto de conexión servicio no pudo generar la clave. Código de error: %1.  | No se pudo crear la clave criptográfica.|Si la máquina no está informando, póngase en contacto con el soporte técnico. De lo contrario, no se requiere ninguna acción.   |
-   |402 |Microsoft Defender para Endpointservice no pudo conservar el estado de autenticación. Código de error: %1.| No se pudo conservar el estado de autenticación.   | Si la máquina no está informando, póngase en contacto con el soporte técnico. De lo contrario, no se requiere ninguna acción.  |
+   |402 |Microsoft Defender de Endpointservice no pudo conservar el estado de autenticación. Código de error: %1.| No se pudo conservar el estado de autenticación.   | Si la máquina no está informando, póngase en contacto con el soporte técnico. De lo contrario, no se requiere ninguna acción.  |
    |403|Registro de Microsoft Defender para punto de conexión servicio completado.|Registro correcto en el servicio de autenticación.|Notificación de funcionamiento normal; no se requiere ninguna acción.|
    |404  |Microsoft Defender para punto de conexión servicio generó correctamente una clave.  |Generación correcta de claves criptográficas.  |Notificación de funcionamiento normal; no se requiere ninguna acción.|
    |405|No se pudo comunicar con el servicio de autenticación. Error en la solicitud %1, hresult: %2, código de error HTTP: %3. |No se pudo enviar la solicitud al servicio de autenticación.|Notificación de funcionamiento normal; no se requiere ninguna acción.|

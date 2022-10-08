@@ -14,18 +14,19 @@ ms.localizationpriority: high
 ms.reviewer: shlomiakirav
 f1.keywords: NOCSH
 ms.collection:
-- M365-security-compliance
+- m365-security
+- tier1
 ms.custom: intro-get-started
-ms.openlocfilehash: 04a1deb6666bec1f11264243c6dcc242bc48d0af
-ms.sourcegitcommit: c29af68260ba8676083674b3c70209bff2c2e362
+ms.openlocfilehash: 1a3d4ba96f7c470fc350ce212b6bb451f8ebdda0
+ms.sourcegitcommit: 0283c436f3ba61a708b52b57a1955f5ea74376a3
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/16/2022
-ms.locfileid: "67736076"
+ms.lasthandoff: 09/28/2022
+ms.locfileid: "68096355"
 ---
 # <a name="set-up-microsoft-365-business-premium"></a>Configuración de Microsoft 365 Empresa Premium
 
-Después de [iniciar una prueba o comprar Microsoft 365 Empresa Premium](get-microsoft-365-business-premium.md), el siguiente paso es configurar todo. Tiene varias opciones disponibles. Puede:
+After you have [started a trial or purchased Microsoft 365 Business Premium](get-microsoft-365-business-premium.md), your next step is to get everything set up. You have several options available. You can:
 
 - Comience con la [experiencia de configuración guiada](m365bp-setup.md#guided-setup-process) para la configuración básica, y luego proceda a [Incrementar seguridad ](m365bp-security-overview.md); o
 - [Trabaje con un partner de Microsoft](m365bp-setup.md#work-with-a-microsoft-partner) que pueda ayudarle a tener todo listo y configurado.
@@ -72,7 +73,7 @@ Si prefiere que un asociado de Microsoft le ayude a obtener y configurar Microso
 
    Tan pronto como seleccione uno o varios criterios, se actualizará la lista de partners.
 
-3. Revise la lista de resultados. Seleccione un proveedor para obtener más información sobre su experiencia y los servicios que proporcionan.
+3. Review the list of results. Select a provider to learn more about their expertise and the services they provide.
 
 ## <a name="see-also"></a>Vea también
 
