@@ -14,19 +14,22 @@ f1_keywords:
 ms.service: O365-seccomp
 ms.localizationpriority: medium
 ms.collection:
-- M365-security-compliance
+- tier3
+- purview-compliance
 hideEdit: true
 feedback_system: None
 recommendations: false
 description: Definición de entidad de tipo de información confidencial de número de cuenta bancaria internacional (IBAN).
-ms.openlocfilehash: 016196af1d36c3d246d275848f7339a74d0878a2
-ms.sourcegitcommit: 217108c59be41b01963a393b4f16d137636fe6a8
+ms.openlocfilehash: 2bd3eeaec0bffb8b75180e60782ecb3aeedc32a5
+ms.sourcegitcommit: be2334dbcd4e1bf309349d981a68a30e06de0297
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/12/2022
-ms.locfileid: "67322351"
+ms.lasthandoff: 10/04/2022
+ms.locfileid: "68378388"
 ---
 # <a name="international-banking-account-number-iban"></a>Número de cuenta bancaria internacional (IBAN)
+
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
 
 ## <a name="format"></a>Formato
 
@@ -35,7 +38,7 @@ Código de país (dos letras) más dígitos de control (dos dígitos), más el n
 
 ## <a name="pattern"></a>Patrón
 
-El patrón debe incluir todo lo siguiente:
+El patrón debe incluir todos estos patrones:
 
 - Código de país de dos letras
 - Dos dígitos de control (seguidos de un espacio opcional) 

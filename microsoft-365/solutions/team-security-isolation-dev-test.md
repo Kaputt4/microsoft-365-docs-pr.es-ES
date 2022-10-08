@@ -8,7 +8,7 @@ manager: serdars
 ms.date: 08/14/2020
 audience: ITPro
 ms.topic: article
-ms.service: microsoft-365-enterprise
+ms.service: o365-solutions
 ms.localizationpriority: high
 ms.collection:
 - highpri
@@ -19,12 +19,12 @@ ms.custom:
 - admindeeplinkCOMPLIANCE
 - admindeeplinkSPO
 description: Configure la infraestructura y seguridad que permita a los empleados trabajar de forma remota desde cualquier lugar y en cualquier momento.
-ms.openlocfilehash: d38a9459def8603322d32abc46b3802172fb811d
-ms.sourcegitcommit: 0af064e8b6778060f1bd365378d69b16fc9949b5
+ms.openlocfilehash: 97ceafca28ec3ac56c7b5dd7a4daec420046f24a
+ms.sourcegitcommit: fce27da5140691b013a6f7c0ea9c88b4ea4b7c10
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/15/2022
-ms.locfileid: "67731340"
+ms.lasthandoff: 09/23/2022
+ms.locfileid: "67986408"
 ---
 # <a name="configure-a-team-with-security-isolation-in-a-devtest-environment"></a>Configurar un equipo con aislamiento de seguridad en un entorno de desarrollo y pruebas
 
@@ -49,7 +49,7 @@ En esta fase se crea y configuran un grupo y usuarios de Azure AD para la organi
 
 En primer lugar, cree un grupo de seguridad con Azure Portal.
 
-1. Cree una pestaña independiente en el explorador y, a continuación, vaya al Azure Portal en [https://portal.azure.com](https://portal.azure.com). Si es necesario, inicie sesión con las credenciales de la cuenta de administrador global para su suscripción de prueba o de pago de Microsoft 365 E5.
+1. Create a separate tab in your browser, and then go to the Azure portal at [https://portal.azure.com](https://portal.azure.com). If needed, sign in with the credentials of the global administrator account for your Microsoft 365 E5 trial or paid subscription.
 
 2. En Azure Portal, haga clic en **Azure Active Directory > Grupos**.
 
@@ -101,7 +101,7 @@ Add-AzureADGroupMember -RefObjectId (Get-AzureADUser | Where { $_.DisplayName -e
 ```
 
 > [!NOTE]
-> El uso de una contraseña común aquí es para la automatización y la facilidad de configuración para un entorno de desarrollo / prueba. Obviamente, esto está muy desaconsejado para las suscripciones de producción.
+> The use of a common password here is for automation and ease of configuration for a dev/test environment. Obviously, this is highly discouraged for production subscriptions.
 
 Después, siga estos pasos para comprobar que la asignación de licencias basada en grupos funcione correctamente.
 
@@ -147,7 +147,11 @@ Siga estos pasos:
 1. Escriba **Estrategia de la empresa** en el nombre de la etiqueta.
 1. Escriba **Documentos de estrategia empresarial de la directiva** como información y, después, haga clic en **Siguiente**.
 1. En la página **Cifrado**, en el menú desplegable **Cifrado**, elija **Aplicar**.
-1. Para agregar los permisos de equipo:<br> a. Haga clic en **Asignar permisos**.<br> b. Haga clic en **Agregar usuarios o grupos**, seleccione **Estrategia de empresa** y, a continuación, haga clic en **Agregar**.<br> c. Haga clic en **Elegir permisos**.<br> d. Elija **coautor** en la lista desplegable y, a continuación, haga clic en **Guardar**.<br>
+1. Para agregar los permisos de equipo:<br>
+  a. Click **Assign permissions**.<br>
+  b. Click **Add users or groups**, select **Company Strategy**, and then click **Add**.<br>
+  c. Click **Choose permissions**.<br>
+  d. Choose **Co-Author** from the dropdown list, and then click **Save**.<br>
 1. Haga clic en **Siguiente**.
 1. En **Distintivo de contenido**, haga clic en **Siguiente**.
 1. En la página **Configuración de sitio y grupo**, establezca **Configuración de sitio y grupo** como **Activado**.

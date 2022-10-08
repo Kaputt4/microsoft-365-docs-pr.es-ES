@@ -5,7 +5,7 @@ author: MikePlumleyMSFT
 manager: serdars
 audience: ITPro
 ms.topic: article
-ms.service: microsoft-365-enterprise
+ms.service: o365-solutions
 ms.collection:
 - highpri
 - SPO_Content
@@ -17,12 +17,12 @@ ms.localizationpriority: medium
 f1.keywords: NOCSH
 recommendations: false
 description: Obtenga información sobre cómo limitar a qué usuarios se puede invitar como invitado o participante de canal compartido a una organización específica.
-ms.openlocfilehash: eac3d5d5a91a815bc8add458aceb43c849282bf6
-ms.sourcegitcommit: 0af064e8b6778060f1bd365378d69b16fc9949b5
+ms.openlocfilehash: 316b1d3c967b7f1fce15bb0b55ecc6cb785100c5
+ms.sourcegitcommit: fce27da5140691b013a6f7c0ea9c88b4ea4b7c10
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/15/2022
-ms.locfileid: "67728074"
+ms.lasthandoff: 09/23/2022
+ms.locfileid: "67986738"
 ---
 # <a name="limit-who-can-be-invited-by-an-organization"></a>Limitar a quién puede invitar una organización
 

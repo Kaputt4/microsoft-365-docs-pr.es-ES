@@ -7,7 +7,7 @@ ms.author: dansimp
 manager: dansimp
 audience: ITPro
 ms.topic: article
-ms.service: microsoft-365-enterprise
+ms.service: o365-solutions
 ms.localizationpriority: high
 ms.collection:
 - highpri
@@ -18,12 +18,12 @@ ms.collection:
 ms.custom: seo-marvel-jun2020
 keywords: ransomware, ransomware operado por humanos, HumOR, ataque de extorsión, ataque de ransomware, cifrado, criptovirología, confianza cero
 description: Use Windows Intune como proveedor de MDA y MAM y características de seguridad de Windows 10 para proteger los recursos de Microsoft 365 frente a ataques de ransomware.
-ms.openlocfilehash: fa53e9b286c0419a3f270f3a8ea650644d6de84a
-ms.sourcegitcommit: 0af064e8b6778060f1bd365378d69b16fc9949b5
+ms.openlocfilehash: e78fede93bfa08292128be57a3f0494c62f87782
+ms.sourcegitcommit: fce27da5140691b013a6f7c0ea9c88b4ea4b7c10
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/15/2022
-ms.locfileid: "67728218"
+ms.lasthandoff: 09/23/2022
+ms.locfileid: "67985507"
 ---
 # <a name="step-4-protect-devices"></a>Paso 4. Proteger dispositivos
 
@@ -59,7 +59,7 @@ Para ayudar a protegerse contra un atacante que ejecuta código como parte de un
 - Habilite el [Antivirus de Microsoft Defender](/mem/intune/user-help/turn-on-defender-windows).
 - [Bloquee las llamadas API de Win32 desde macros de Office](/microsoft-365/security/defender-endpoint/attack-surface-reduction-rules#block-win32-api-calls-from-office-macros).
 - Migre todos los libros heredados que requieren macros de Excel 4.0 al formato de macro VBA actualizado mediante [este proceso](https://www.microsoft.com/microsoft-365/blog/2010/02/16/migrating-excel-4-macros-to-vba/).
-- [Deshabilitar el uso de macros sin firmar](https://support.microsoft.com/topic/enable-or-disable-macros-in-office-files-12b036fd-d140-4e74-b45e-16fed1a7e5c6). Asegúrese de que todas las macros internas con necesidades empresariales están firmadas y aprovechando las [ubicaciones de confianza](/deployoffice/security/designate-trusted-locations-for-files-in-office) para asegurarse de que las macros desconocidas no se ejecutarán en su entorno.
+- [Disable use of unsigned macros](https://support.microsoft.com/topic/enable-or-disable-macros-in-office-files-12b036fd-d140-4e74-b45e-16fed1a7e5c6). Ensure all internal macros with business need are signed and leveraging [trusted locations](/deployoffice/security/designate-trusted-locations-for-files-in-office) to ensure unknown macros will not run in your environment.
 - Detenga macros XLM o VBA malintencionadas asegurándose de que el análisis de macros en tiempo de ejecución por parte de la [interfaz de examen antimalware](https://www.microsoft.com/security/blog/2021/03/03/xlm-amsi-new-runtime-defense-against-excel-4-0-macro-malware/) (AMSI) está activado. Esta característica (habilitada de forma predeterminada) está activada si la configuración de Directiva de grupo para el **Ámbito de examen de tiempo de ejecución de macros** está establecida en **Habilitar para todos los archivos** o **Habilitar para archivos de baja confianza**. Obtenga los archivos de plantilla de directiva de grupo más recientes.
 
 ## <a name="impact-on-users-and-change-management"></a>Impacto en los usuarios y administración de cambios

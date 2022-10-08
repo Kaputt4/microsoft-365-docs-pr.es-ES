@@ -14,21 +14,24 @@ f1_keywords:
 ms.service: O365-seccomp
 ms.localizationpriority: medium
 ms.collection:
-- M365-security-compliance
+- tier3
+- purview-compliance
 hideEdit: true
 feedback_system: None
 recommendations: false
 description: Chipre se ocupa físicamente de la definición de entidad de tipo de información confidencial.
-ms.openlocfilehash: de199d8151f57f920dd88781474b5a06d6f62f12
-ms.sourcegitcommit: 5aed330d8af523f0dffe5e392f1c79f047e38172
+ms.openlocfilehash: 46546a79dc4ef3d4530582fd0983e5513e5b2490
+ms.sourcegitcommit: 2ff545246fec060ea7829da5afbc1cdc698d51ab
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/21/2022
-ms.locfileid: "66951100"
+ms.lasthandoff: 10/04/2022
+ms.locfileid: "68363703"
 ---
 # <a name="cyprus-physical-addresses"></a>Direcciones físicas de Chipre
 
-Esta entidad con nombre desagregada detecta patrones relacionados con la dirección física de Chipre. También se incluye en la entidad SIT con nombre [todas las direcciones físicas](sit-defn-all-physical-addresses.md) agrupadas.
+Esta entidad con nombre desagregada detecta patrones relacionados con la dirección física de Chipre. También se incluye en [Todas las direcciones físicas ](sit-defn-all-physical-addresses.md) en la entidad no agrupada denominada SIT.
+
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
 
 ## <a name="confidence-level"></a>Nivel de confianza
 

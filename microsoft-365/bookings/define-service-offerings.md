@@ -7,14 +7,16 @@ audience: Admin
 ms.topic: article
 ms.service: bookings
 ms.localizationpriority: medium
+ms.collection:
+- scotvorg
 ms.assetid: 4a1c391e-524f-48e0-bef8-185df3a9634b
 description: Instrucciones para especificar información sobre ofertas de servicio, incluidos el nombre del servicio, la descripción, la ubicación, la duración y los precios. También puede etiquetar a los empleados calificados para proporcionar el servicio.
-ms.openlocfilehash: 2daae2139e3d2d4107f4aaed1b94ca655877000a
-ms.sourcegitcommit: af2b570e76e074bbef98b665b5f9a731350eda58
+ms.openlocfilehash: a97155f4639fb89773520a51f85cdd4518c45ff3
+ms.sourcegitcommit: 0b7070ec119e00e0dafe030bbfbef0ae5c9afa19
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/21/2022
-ms.locfileid: "66185091"
+ms.lasthandoff: 09/29/2022
+ms.locfileid: "68167745"
 ---
 # <a name="define-your-service-offerings-in-bookings"></a>Definición de las ofertas de servicio en Bookings
 
@@ -28,7 +30,7 @@ También puede agregar información personalizada y direcciones URL a la confirm
 
 ## <a name="steps"></a>Pasos
 
-1. En Microsoft 365, seleccione el iniciador de aplicaciones y, a continuación, seleccione **Reservas**.
+1. En Microsoft 365, seleccione el iniciador de aplicaciones y, a continuación, seleccione **Bookings**.
 
 2. Vaya a **Servicios de calendario** > **y seleccione** **Agregar nuevo servicio**.
 
@@ -40,19 +42,19 @@ También puede agregar información personalizada y direcciones URL a la confirm
 
    **Ubicación predeterminada**: esta ubicación es la que se mostrará en los correos electrónicos de confirmación y recordatorio para el personal y los clientes, y se mostrará en el evento de calendario creado para la reserva.
 
-   **Agregar reunión en línea**: esta configuración habilita o deshabilita las reuniones en línea para cada cita, ya sea a través de Teams o Skype, dependiendo de cuál configure como cliente predeterminado para el miembro del personal.
+   **Agregar reunión en línea**: esta configuración habilita o deshabilita las reuniones en línea para cada cita, ya sea a través de Teams o Skype, en función de cuál configure como cliente predeterminado para el miembro del personal.
 
    - Habilitado:
      - Se agregará un vínculo a una reunión de Teams o Skype, única para la reserva, al evento de calendario en los calendarios del personal y de los clientes, junto con información de acceso telefónico local.
      - El vínculo para unirse a la reunión se agregará a todos los correos electrónicos de confirmación y recordatorio, como se muestra en el ejemplo siguiente:
 
-       :::image type="content" source="media/bookings-teams-meeting-link.jpg" alt-text="Ejemplo de vínculo para unirse a Teams reunión en Bookings.":::
+       :::image type="content" source="media/bookings-teams-meeting-link.jpg" alt-text="Ejemplo de vínculo para unirse a la reunión de Teams en Bookings.":::
 
        > [!NOTE]
-       > Teams reuniones se pueden unir a través de la aplicación móvil Teams, la aplicación de escritorio Teams, en un explorador web o mediante el acceso telefónico local. Se recomienda encarecidamente habilitar Teams como el servicio de reuniones en línea predeterminado para su inquilino, para obtener la mejor experiencia en la reserva de citas virtuales.
+       > Las reuniones de Teams se pueden unir a través de la aplicación móvil de Teams, la aplicación de escritorio de Teams, en un explorador web o mediante el acceso telefónico local. Se recomienda encarecidamente habilitar Teams como el servicio de reuniones en línea predeterminado para su inquilino para obtener la mejor experiencia en la reserva de citas virtuales.
 
    - Deshabilitado:
-     - Citas no contendrá una opción de reunión y no se mostrarán todos los campos relacionados con la reunión que aparecen cuando se habilita **Agregar reunión en línea**.
+     - Las citas no contendrán una opción de reunión y no se mostrarán todos los campos relacionados con la reunión que aparecen cuando **se habilita Agregar reunión en línea** .
 
    **Duración**: es el tiempo durante el que se reservarán todas las reuniones. La hora se bloquea a partir de la hora de inicio, que se selecciona durante la reserva. La hora de la cita completa se bloqueará en los calendarios del personal.
 
@@ -102,17 +104,17 @@ También puede agregar información personalizada y direcciones URL a la confirm
 
    :::image type="content" source="media/bookings-remind-confirm-2.png" alt-text="Un correo electrónico de confirmación de Bookings.":::
 
-   Puede incluir cualquier texto adicional que desee aquí, como información sobre la reprogramación o lo que los clientes deben traer para la cita. A continuación se muestra un ejemplo de texto personalizado agregado al correo electrónico de confirmación original, que se muestra en el campo **Información adicional para confirmación por correo electrónico** :
+   Puede incluir cualquier texto adicional que desee aquí, como información sobre la reprogramación o lo que los clientes deben traer para la cita. A continuación se muestra un ejemplo de texto personalizado agregado al correo electrónico de confirmación original, que se muestra en el campo **Información adicional para Email confirmación**:
 
    :::image type="content" source="media/bookings-additional-info.jpg" alt-text="Información adicional en un correo electrónico de Bookings.":::
 
-9. **Habilitación de notificaciones de mensajes de texto para el cliente** Si se selecciona, SMS mensajes se envían al cliente, pero solo si optan por participar.
+9. **Habilitación de notificaciones de mensajes de texto para el cliente** Si se selecciona, los mensajes SMS se envían al cliente, pero solo si optan por participar.
 
    - Apartado de participación en la reserva manual y Self-Service Página:
 
      :::image type="content" source="media/bookings-opt-In-boc.jpg" alt-text="El apartado de participación de Bookings.":::
 
-   - Las notificaciones de mensajes de texto tendrán un aspecto similar al siguiente (tenga en cuenta que las notificaciones de SMS solo están disponibles actualmente en Norteamérica):
+   - Las notificaciones de mensajes de texto tendrán un aspecto similar al siguiente (tenga en cuenta que las notificaciones POR SMS solo están disponibles actualmente en Norteamérica):
 
      :::image type="content" source="media/bookings-text-notifications.jpg" alt-text="Una notificación de texto de Bookings.":::
 

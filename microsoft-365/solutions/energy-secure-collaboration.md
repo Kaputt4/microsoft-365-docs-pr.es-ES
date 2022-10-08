@@ -10,16 +10,16 @@ ms.collection:
 - Ent_O365
 - Strat_O365_Enterprise
 - M365-security-compliance
-ms.service: microsoft-365-enterprise
+ms.service: o365-solutions
 ms.localizationpriority: high
 description: Microsoft 365 ayuda a las organizaciones de energía a mudarse a una plataforma de colaboración moderna, mientras las ayuda a mantener sus datos y sistemas seguros y conforme a las normativas.
 ms.custom: seo-marvel-jun2020
-ms.openlocfilehash: 295a9f0b1345c2aa146090eea8dca616dfd6a084
-ms.sourcegitcommit: 0af064e8b6778060f1bd365378d69b16fc9949b5
+ms.openlocfilehash: a2a987bd7dc1176359f5c6781b0c053438ec8bf6
+ms.sourcegitcommit: fce27da5140691b013a6f7c0ea9c88b4ea4b7c10
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/15/2022
-ms.locfileid: "67727334"
+ms.lasthandoff: 09/23/2022
+ms.locfileid: "67986892"
 ---
 # <a name="key-compliance-and-security-considerations-for-the-energy-industry"></a>Consideraciones clave de cumplimiento y seguridad para la Industria energética
 
@@ -96,12 +96,12 @@ Microsoft 365 proporciona capacidades de directiva común para Microsoft Teams a
 
 **Directivas de nombramiento de Grupo de Office 365** ayudan a asegurar que los Grupos de Office 365 y, por lo tanto, de Microsoft Teams, sean nombrados de acuerdo a la directiva corporativa. El nombre de un equipo puede presentar problemas si no se le nombra de forma apropiada. Por ejemplo, es posible que los empleados no sepan en qué equipos trabajar o compartir información si tienen un nombre incorrecto. Las directivas de nombramiento de grupo ayudan a hacer cumplir una buena higiene y también pueden evitar el uso de palabras específicas, como palabras reservadas o terminología inapropiada. 
 
-**Las directivas de caducidad de grupos de Office 365** ayudan a garantizar que los Grupos de Office 365, y por tanto Microsoft Teams, no se conserven durante más tiempo del requerido por la organización. Esta capacidad ayuda a prevenir dos problemas clave de administración de la información:
+**Office 365 Group Expiration Policies** help to ensure that Office 365 Groups, and therefore Microsoft Teams, are not retained for longer periods of time than required by the organization. This capability helps to prevent two key information management issues:
 
 - La proliferación de Microsoft Teams que no son necesarios ni utilizados
 - La retención excesiva de datos que ya no son necesarios para la organización
 
-Los administradores pueden especificar un período de expiración en días para Grupos de Office 365 (por ejemplo, 90, 180 o 365 días). Si un servicio respaldado por un grupo de Office 365 está inactivo durante el período de expiración, se notificará a los propietarios del grupo y, si no se realiza ninguna acción, se eliminarán tanto el grupo de Office 365 como todos los servicios relacionados, incluido Microsoft Teams. 
+Administrators can specify an expiration period in days for Office 365 Groups (such as 90, 180 or 365 days). If a service backed by an Office 365 group is inactive for the expiration period, group owners are notified. If no action is taken, then the Office 365 Group and all its related services including Microsoft Teams are deleted. 
 
 La retención excesiva de datos en un equipo de Microsoft puede suponer riesgos de litigio para las organizaciones. El uso de directivas de expiración es un método recomendado para proteger la organización. En combinación con las etiquetas y directivas de retención incorporadas, Microsoft 365 ayuda a garantizar que las organizaciones sólo retengan los datos necesarios para cumplir con las obligaciones de cumplimiento normativo.
 
@@ -181,7 +181,7 @@ Implementar directivas de Information Protection de Microsoft Purview y DLP para
 
 Los reglamentos exigen a muchas organizaciones que administren la retención de los documentos clave de la organización de acuerdo con un calendario de retención empresarial gestionado. Las organizaciones se enfrentan a riesgos de cumplimiento de la normativa si los datos se retienen insuficientemente (se eliminan demasiado pronto), o a riesgos jurídicos si los datos se retienen en exceso (se conservan demasiado tiempo). Las estrategias eficaces de administración de registros ayudan a garantizar que los documentos de la organización se conserven de acuerdo con períodos de retención predeterminados, concebidos para reducir al mínimo el riesgo para la organización. Los períodos de retención se prescriben en una programación de retención de registros de la organización administrados de forma centralizada. Los períodos de retención se basan en la naturaleza de cada tipo de documento, los requisitos de cumplimiento normativo para retener tipos específicos de datos y en las directivas definidas de la organización. 
 
-Asignar períodos de retención de registros con precisión en los documentos de toda la organización puede ser un trabajo arduo que requiera un proceso pormenorizado donde se asignen períodos de retención de forma única a documentos individuales. La aplicación de directivas de retención de registros a escala puede ser difícil por muchas razones. Entre ellas se incluyen el gran número de documentos de las organizaciones del sector energético junto con el hecho de que, en muchos casos, los períodos de retención se pueden desencadenar mediante eventos organizativos (como contratos que expiran o un empleado que abandona la organización).
+Assigning record retention periods accurately across organizational documents may require a granular process which assigns retention periods uniquely to individual documents. Applying record retention policies at scale can be challenging for many reasons. These reasons include the vast number of documents within energy industry organizations together with the fact that, in many cases, retention periods can be triggered by organizational events (such as contracts expiring or an employee leaving the organization).
 
 Microsoft 365 proporciona funciones para definir etiquetas de retención y directivas para implementar fácilmente los requisitos de administración de registros. Un administrador de registros define una etiqueta de retención que representa un "tipo de registro" en una programación de retención tradicional. La etiqueta de retención contiene ajustes que definen:
 

@@ -11,7 +11,7 @@ manager: dougeby
 audience: ITPro
 ms.topic: article
 description: Inscriba los dispositivos de punto de conexión en Microsoft Intune como parte de la arquitectura de seguridad de Confianza cero, protegiendo contra ransomware mientras crea protección para trabajadores remotos.
-ms.service: microsoft-365-enterprise
+ms.service: o365-solutions
 ms.localizationpriority: high
 ms.collection:
 - highpri
@@ -21,12 +21,12 @@ ms.collection:
 - zerotrust-solution
 ms.custom: ''
 keywords: ''
-ms.openlocfilehash: 5b003692f34e54944042ebae18b6a179e3665404
-ms.sourcegitcommit: 078149c9645ce220911ccd6ce54f984a4c92ce53
+ms.openlocfilehash: 48664d319e146f65c0c10f1dd94ff11965c1358e
+ms.sourcegitcommit: fce27da5140691b013a6f7c0ea9c88b4ea4b7c10
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/20/2022
-ms.locfileid: "67811250"
+ms.lasthandoff: 09/23/2022
+ms.locfileid: "67986584"
 ---
 # <a name="manage-devices-with-intune-overview"></a>Información general para administrar dispositivos con Intune
 

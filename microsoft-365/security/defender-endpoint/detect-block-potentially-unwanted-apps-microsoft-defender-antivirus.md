@@ -14,14 +14,16 @@ ms.reviewer: mimilone, julih
 manager: dansimp
 ms.subservice: mde
 ms.topic: article
-ms.collection: m365-security-compliance
+ms.collection:
+- m365-security
+- tier2
 search.appverid: met150
-ms.openlocfilehash: fa5fdf8b7da64de21c8c984431a9caafdef56240
-ms.sourcegitcommit: 9b133379196da2b3a4bb311b07ff274f43780f68
+ms.openlocfilehash: d77f369e6247e1adf72fa060f38fe7efaa365572
+ms.sourcegitcommit: 0b7070ec119e00e0dafe030bbfbef0ae5c9afa19
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/14/2022
-ms.locfileid: "67701200"
+ms.lasthandoff: 09/29/2022
+ms.locfileid: "68167173"
 ---
 # <a name="detect-and-block-potentially-unwanted-applications"></a>Detectar y bloquear aplicaciones potencialmente no deseadas
 
@@ -122,7 +124,7 @@ Para System Center 2012 Configuration Manager, consulte [Cómo implementar una d
 
 7. Seleccione **Habilitado** para habilitar la protección contra PUA.
 
-8. En **opciones**, seleccione **Bloquear** para bloquear aplicaciones potencialmente no deseadas o seleccione **Modo auditoría** para probar cómo funciona la configuración en su entorno. Seleccione **De acuerdo**.
+8. In **Options**, select **Block** to block potentially unwanted applications, or select **Audit Mode** to test how the setting works in your environment. Select **OK**.
 
 9. Implemente el objeto de directiva de grupo como lo haría normalmente.
 
@@ -183,7 +185,7 @@ Consulte [Solucionar id. de evento](troubleshoot-microsoft-defender-antivirus.md
 
 ## <a name="view-pua-events-using-advanced-hunting"></a>Ver eventos de PUA con la búsqueda avanzada de amenazas
 
-Si usa [Microsoft Defender para punto de conexión](microsoft-defender-endpoint.md), puede usar una consulta de búsqueda avanzada de amenazas para ver eventos de PUA. Esta es una consulta de ejemplo:
+If you're using [Microsoft Defender for Endpoint](microsoft-defender-endpoint.md), you can use an advanced hunting query to view PUA events. Here's an example query:
 
 ```console
 DeviceEvents

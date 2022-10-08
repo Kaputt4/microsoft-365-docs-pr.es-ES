@@ -7,7 +7,7 @@ ms.author: dansimp
 manager: dansimp
 audience: ITPro
 ms.topic: article
-ms.service: microsoft-365-enterprise
+ms.service: o365-solutions
 ms.localizationpriority: high
 ms.collection:
 - highpri
@@ -20,12 +20,12 @@ ms.collection:
 ms.custom: seo-marvel-jun2020
 keywords: trabajar desde casa, trabajo desde casa, híbrido, trabajador remoto, trabajo híbrido, empleados remotos, conectividad híbrida, acceso remoto, trabajo remoto, teletrabajo, teletrabajar, trabajo móvil, trabajo remoto, empleo remoto, trabajar desde cualquier lugar, lugar de trabajo flexible
 description: Desplazarse por las capas de la infraestructura para que los trabajadores híbridos puedan acceder de forma segura a los recursos locales y de Microsoft 365..
-ms.openlocfilehash: 63d87eaeb1860d9d9e4860cd186f921b4e8138d5
-ms.sourcegitcommit: 0af064e8b6778060f1bd365378d69b16fc9949b5
+ms.openlocfilehash: b79c0096139633a2ff151adce71f69aea9780b6b
+ms.sourcegitcommit: fce27da5140691b013a6f7c0ea9c88b4ea4b7c10
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/15/2022
-ms.locfileid: "67728524"
+ms.lasthandoff: 09/23/2022
+ms.locfileid: "67986958"
 ---
 # <a name="set-up-your-infrastructure-for-hybrid-work-with-microsoft-365"></a>Configure su infraestructura para el trabajo híbrido con Microsoft 365
 
@@ -113,7 +113,7 @@ Puede permitir que todos sus trabajadores sean más productivos en cualquier lug
 
 - Un dispositivo moderno, como un portátil Surface y Windows 11 o 10, que tiene las características, seguridad y rendimiento para acceder a las aplicaciones y servicios en la nube de Microsoft 365 directamente a través de la web.
 
-- Cualquier dispositivo, incluidos los portátiles o equipos de escritorio antiguos que se usan desde casa, que puedan acceder a los servicios y aplicaciones de Microsoft 365 en la nube indirectamente a través de un [equipo basado en Windows 365 en la nube](empower-people-to-work-remotely-remote-access.md#deploy-windows-365-to-provide-remote-access-for-remote-workers-using-personal-devices). Esta opción proporciona un alto rendimiento, una seguridad sólida y una administración de TI simplificada.
+- Any device including older laptops or desktops used from home, which can access Microsoft 365 cloud apps and services indirectly through a [Windows 365 Cloud PC](empower-people-to-work-remotely-remote-access.md#deploy-windows-365-to-provide-remote-access-for-remote-workers-using-personal-devices). This option provides high performance, strong security, and simplified IT management.
 
 ## <a name="next-steps"></a>Pasos siguientes
 

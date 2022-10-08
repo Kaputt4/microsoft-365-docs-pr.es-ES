@@ -1,6 +1,6 @@
 ---
-title: Propiedades y métodos de API de detalles de estado del antivirus de exportación del antivirus de Microsoft Defender
-description: Obtenga información sobre cómo exportar una lista de detalles de estado del dispositivo antivirus de Microsoft Defender.
+title: Microsoft Defender Antivirus exportar los métodos y propiedades de la API de detalles de estado del antivirus de exportación de dispositivos
+description: Obtenga información sobre cómo exportar una lista de Microsoft Defender detalles de estado del dispositivo Antivirus.
 keywords: apis, graph api, api admitidas, get, device health api, Microsoft Defender para punto de conexión api report api microsoft defender reports api, microsoft defender for endpoint reporting api, windows defender reporting api, defender for endpoint reporting api, windows defender reporting api, windows defender reporting api, windows defender report api
 ms.service: microsoft-365-security
 ms.mktglfcycl: deploy
@@ -12,17 +12,20 @@ ms.localizationpriority: medium
 ms.date: 09/01/2022
 manager: dansimp
 audience: ITPro
-ms.collection: M365-security-compliance
+ms.collection:
+- m365-security
+- EngageScoreSep2022
+- tier3
 ms.topic: article
 ms.subservice: mde
 ms.custom: api
 search.appverid: met150
-ms.openlocfilehash: 7e86424e2b0e1d97878818a6ef836c20ddf8fd50
-ms.sourcegitcommit: c29af68260ba8676083674b3c70209bff2c2e362
+ms.openlocfilehash: d252a5cfa74924a34674ecc2dd4c81366b84a125
+ms.sourcegitcommit: 2ff545246fec060ea7829da5afbc1cdc698d51ab
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/16/2022
-ms.locfileid: "67739805"
+ms.lasthandoff: 10/04/2022
+ms.locfileid: "68363725"
 ---
 # <a name="export-device-antivirus-health-details-api-methods-and-properties"></a>Exportación de propiedades y métodos de API de detalles de estado del antivirus de dispositivo
 
@@ -41,7 +44,7 @@ ms.locfileid: "67739805"
 
 ## <a name="export-device-antivirus-health-details-api-description"></a>Exportación de la descripción de la API de detalles de estado del antivirus del dispositivo
 
-Recupera una lista de detalles de estado del dispositivo antivirus de Microsoft Defender. Esta API tiene diferentes llamadas API (métodos) para obtener diferentes tipos de datos. Dado que la cantidad de datos puede ser grande, hay dos maneras de recuperarlos:
+Recupera una lista de Microsoft Defender detalles de estado del dispositivo Antivirus. Esta API tiene diferentes llamadas API (métodos) para obtener diferentes tipos de datos. Dado que la cantidad de datos puede ser grande, hay dos maneras de recuperarlos:
 
 - **Respuesta JSON**  La API extrae todos los datos de la organización como respuestas JSON. Este método es mejor para _organizaciones pequeñas con menos de 100 K dispositivos_. La respuesta está paginada, por lo que puede usar el \@campo odata.nextLink de la respuesta para capturar los resultados siguientes.
 
@@ -56,22 +59,17 @@ Los datos recopilados mediante "_respuesta JSON_ o _a través de archivos_" son 
 > Actualmente, solo la **respuesta JSON de estado del antivirus** está disponible con carácter general. **Antivirus Health API a través de archivos** solo está disponible actualmente en versión preliminar pública.
 >
 > **La consulta personalizada de búsqueda avanzada** solo está disponible actualmente en versión preliminar pública, incluso si las consultas siguen estando visibles.
-
-> [!IMPORTANT]
 >
-> Para que Windows&nbsp;Server 2012 R2&nbsp;y Windows&nbsp;Server&nbsp;2016 aparezcan en los informes de estado del dispositivo, estos dispositivos deben incorporarse mediante el paquete de solución unificado&nbsp;moderno. Para obtener más información, consulte [Nueva funcionalidad en la solución unificada moderna para Windows Server 2012 R2 y 2016](/microsoft-365/security/defender-endpoint/configure-server-endpoints#new-windows-server-2012-r2-and-2016-functionality-in-the-modern-unified-solution).
-
-> [!NOTE]
+> Para que Windows Server 2012 R2 y Windows Server 2016 aparezcan en los informes de estado del dispositivo, estos dispositivos deben incorporarse mediante el paquete de solución unificado moderno. Para obtener más información, consulte [Nueva funcionalidad en la solución unificada moderna para Windows Server 2012 R2 y 2016](/microsoft-365/security/defender-endpoint/configure-server-endpoints#new-windows-server-2012-r2-and-2016-functionality-in-the-modern-unified-solution).
 >
 > Para obtener información sobre el uso de la herramienta de informes de **cumplimiento antivirus y estado del dispositivo** en el panel seguridad de Microsoft 365, vea: [Estado del dispositivo y informe antivirus en Microsoft Defender para punto de conexión](device-health-reports.md).
->
 
 ### <a name="11-export-device-antivirus-health-details-api-methods"></a>1.1 Exportar métodos de API de detalles de estado del antivirus de dispositivo
 
 Método|Tipo de datos|Descripción
 :---|:---|:---
-**(respuesta JSON)**|Estado del Antivirus de Microsoft Defender por recopilación de dispositivos. Consulte: [1.2 Exportación de propiedades de API de detalles de estado del antivirus de dispositivo (respuesta JSON)](#12-export-device-antivirus-health-details-api-properties-json-response)|Devuelve una tabla con una entrada para cada combinación única de DeviceId, ConfigurationId. | La API extrae todos los datos de la organización como respuestas JSON. Este método es mejor para organizaciones pequeñas con menos de 100 K dispositivos. La respuesta está paginada, por lo que puede usar el campo @odata.nextLink de la respuesta para capturar los resultados siguientes.
-**(a través de archivos)**|Estado del Antivirus de Microsoft Defender por recopilación de dispositivos. Consulte: [1.3 Exportación de propiedades \(de api de detalles de estado del antivirus de dispositivos a través de archivos\)](#13-export-device-antivirus-health-details-api-properties-via-files)|Devuelve una tabla con una entrada para cada combinación única de DeviceId, ConfigurationId. |Esta solución de API permite extraer grandes cantidades de datos de forma más rápida y confiable. Por lo tanto, se recomienda para organizaciones grandes, con más de 100 K dispositivos. Esta API extrae todos los datos de la organización como archivos de descarga. La respuesta contiene direcciones URL para descargar todos los datos de Azure Storage. Esta API le permite descargar todos los datos de Azure Storage de la siguiente manera: <ol><li>Llame a la API para obtener una lista de direcciones URL de descarga con todos los datos de la organización.</li><li>Descargue todos los archivos mediante las direcciones URL de descarga y procese los datos como desee.</li></ol>
+**(respuesta JSON)**|Microsoft Defender estado del antivirus por recopilación de dispositivos. Consulte: [1.2 Exportación de propiedades de API de detalles de estado del antivirus de dispositivo (respuesta JSON)](#12-export-device-antivirus-health-details-api-properties-json-response)|Devuelve una tabla con una entrada para cada combinación única de DeviceId, ConfigurationId. | La API extrae todos los datos de la organización como respuestas JSON. Este método es mejor para organizaciones pequeñas con menos de 100 K dispositivos. La respuesta está paginada, por lo que puede usar el campo @odata.nextLink de la respuesta para capturar los resultados siguientes.
+**(a través de archivos)**|Microsoft Defender estado del antivirus por recopilación de dispositivos. Consulte: [1.3 Exportación de propiedades \(de api de detalles de estado del antivirus de dispositivos a través de archivos\)](#13-export-device-antivirus-health-details-api-properties-via-files)|Devuelve una tabla con una entrada para cada combinación única de DeviceId, ConfigurationId. |Esta solución de API permite extraer grandes cantidades de datos de forma más rápida y confiable. Por lo tanto, se recomienda para organizaciones grandes, con más de 100 K dispositivos. Esta API extrae todos los datos de la organización como archivos de descarga. La respuesta contiene direcciones URL para descargar todos los datos de Azure Storage. Esta API le permite descargar todos los datos de Azure Storage de la siguiente manera: <ol><li>Llame a la API para obtener una lista de direcciones URL de descarga con todos los datos de la organización.</li><li>Descargue todos los archivos mediante las direcciones URL de descarga y procese los datos como desee.</li></ol>
 
 ### <a name="12-export-device-antivirus-health-details-api-properties-json-response"></a>1.2 Export device antivirus health details API properties (RESPUESTA JSON)
 
@@ -106,7 +104,7 @@ Método|Tipo de datos|Descripción
 | osVersion | Cadena | Versión del sistema operativo | 10.0.18363.1440, 12.4.0.0 |
 | quickScanError | Cadena | Códigos de error del examen rápido | "0x80508023" |
 | quickScanResult | Cadena | Resultado del examen rápido de este dispositivo | "Completado" <br>"Cancelado" <br>"Error" |
-| quickScanTime | DateTimeOffset | Fecha y hora en que se ha completado el examen rápido   | "2022-08-04T12:44:02Z" |
+| quickScanTime | DateTimeOffset | Fecha y hora en que se ha completado el examen rápido | "2022-08-04T12:44:02Z" |
 | rbacGroupId | Long | Identificador de grupo de dispositivos al que pertenece esta máquina | 712 |
 | rbacGroupName | Cadena | Nombre del grupo de dispositivos al que pertenece esta máquina | "SampleGroup" |
 

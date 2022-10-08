@@ -12,15 +12,17 @@ author: mjcaparas
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
-ms.collection: M365-security-compliance
+ms.collection:
+- m365-security
+- tier2
 ms.topic: article
 ms.subservice: mde
-ms.openlocfilehash: b00a9f02f4cd370985dfa5c094c6be36aa34ab1e
-ms.sourcegitcommit: 10e6abe740e27000e223378eb17d657a47555fa8
+ms.openlocfilehash: 9b153af03780b5803f622ee53faedc15ba20413c
+ms.sourcegitcommit: 2ff545246fec060ea7829da5afbc1cdc698d51ab
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/31/2022
-ms.locfileid: "67679523"
+ms.lasthandoff: 10/04/2022
+ms.locfileid: "68363681"
 ---
 # <a name="integrate-your-siem-tools-with-microsoft-defender-for-endpoint"></a>Integración de las herramientas siem con Microsoft Defender para punto de conexión
 
@@ -72,7 +74,7 @@ Uso del complemento Microsoft 365 Defender para Splunk que admite:
 - Ingesta de alertas de Microsoft Defender para punto de conexión
 - Actualización de alertas en Microsoft Defender para punto de conexión desde Splunk
 
-Para obtener más información sobre el complemento de Microsoft 365 Defender para Splunk, consulte [splunkbase](https://splunkbase.splunk.com/app/4959/).
+Para obtener más información sobre el complemento de Microsoft 365 Defender para Splunk, consulte [splunkbase](https://splunkbase.splunk.com/app/6207/).
 
 ### <a name="datadog"></a>Datadog
 
@@ -96,7 +98,7 @@ SmartConnector reemplaza al FlexConnector anterior para Microsoft 365 Defender.
 >[!NOTE]
 >La integración de IBM QRadar con Microsoft 365 Defender, que incluyen Microsoft Defender para punto de conexión, ahora es compatible con el nuevo módulo de compatibilidad de dispositivos de Microsoft 365 Defender (DSM) que llama al [Microsoft 365 Defender  API de streaming](../defender/streaming-api.md) que permite ingerir datos de eventos de streaming de productos de Microsoft 365 Defender, incluidos Microsoft Defender para punto de conexión. Para obtener más información sobre el nuevo QRadar Microsoft 365 Defender DSM, consulte [la documentación del producto IBM QRadar](https://www.ibm.com/docs/en/dsm?topic=microsoft-365-defender) y para obtener más información sobre los tipos de eventos compatibles con Streaming API, consulte [Tipos de eventos admitidos](../defender/supported-event-types.md).
 
-Los nuevos clientes ya no se incorporan con el módulo de soporte técnico de dispositivos de ATP (DSM) de Microsoft Defender de QRadar anterior, y se recomienda a los clientes existentes que adopten el nuevo Microsoft 365 Defender DSM como su único punto de integración con todos los productos Microsoft 365 Defender.
+Los nuevos clientes ya no se incorporan con el módulo de soporte técnico de dispositivos de ATP (DSM) de QRadar Microsoft Defender anterior, y se recomienda a los clientes existentes que adopten el nuevo Microsoft 365 Defender DSM como su único punto de integración con todos los productos Microsoft 365 Defender.
 
 ## <a name="ingesting-microsoft-defender-for-endpoint-events-from-the-microsoft-365-defender-event-streaming-api"></a>Ingesta de eventos Microsoft Defender para punto de conexión desde la API de streaming de eventos de Microsoft 365 Defender
 

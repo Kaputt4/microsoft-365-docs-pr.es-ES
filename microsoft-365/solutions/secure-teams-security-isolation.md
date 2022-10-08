@@ -5,7 +5,7 @@ ms.author: mikeplum
 author: MikePlumleyMSFT
 manager: serdars
 ms.topic: article
-ms.service: microsoft-365-enterprise
+ms.service: o365-solutions
 ms.localizationpriority: high
 ms.collection:
 - highpri
@@ -19,12 +19,12 @@ ms.custom:
 - admindeeplinkSPO
 recommendations: false
 description: Obtenga información acerca de cómo crear un equipo con una etiqueta de confidencialidad exclusiva para la seguridad.
-ms.openlocfilehash: f8e6ba02d21c380a21efe0f3551d3a1ad17c9e9a
-ms.sourcegitcommit: 0af064e8b6778060f1bd365378d69b16fc9949b5
+ms.openlocfilehash: 06a784a64cb62bb6c8fa395c42072399bfa443e7
+ms.sourcegitcommit: fce27da5140691b013a6f7c0ea9c88b4ea4b7c10
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/15/2022
-ms.locfileid: "67730823"
+ms.lasthandoff: 09/23/2022
+ms.locfileid: "67985968"
 ---
 # <a name="configure-a-team-with-security-isolation-by-using-a-unique-sensitivity-label"></a>Configue un equipo con aislamiento de seguridad mediante una etiqueta de confidencialidad única
 
@@ -89,7 +89,7 @@ Para crear un equipo para información confidencial
 3. Elija **Crear un equipo desde cero**.
 4. En la lista **Confidencialidad**, conserve el valor predeterminado.
 5. En **Privacidad**, haga clic en **Privado**.
-6. Escriba un nombre para el equipo relacionado con el proyecto confidencial. Por ejemplo, **Proyecto Saturno**.
+6. Type a name for the team that is related to your sensitive project. For example, **Project Saturn**.
 7. Haga clic en **Crear**.
 8. Agregue usuarios al equipo y, después, haga clic en **Cerrar**.
 
@@ -114,7 +114,7 @@ Crear una etiqueta de confidencialidad
 
 1. Abra el portal de cumplimiento de Microsoft Purview y, en **Soluciones**, seleccione <a href="https://go.microsoft.com/fwlink/p/?linkid=2174015" target="_blank">**Information Protection**</a>.
 1. Haga clic en **Crear una etiqueta**.
-1. Asigne un nombre a la etiqueta. Para ello, le recomendamos que use el nombre del equipo con la que lo vaya a emplear.
+1. Give the label a name. We suggest naming it after the team that you'll be using it with.
 1. Escriba un nombre y una descripción para el complemento y, a continuación, haga clic en **Siguiente**.
 1. En la página **Definir el ámbito de la página de la etiqueta**, seleccione **Archivos & mensajes de correo electrónico** y **Grupos & sitios** y haga clic en **Siguiente**.
 1. Luego, en la página **Elegir la configuración de protección para archivos y mensajes de correo electrónico**, asegúrese de seleccionar **Cifrar archivos y mensajes de correo electrónico** luego haga clic en **Siguiente**.

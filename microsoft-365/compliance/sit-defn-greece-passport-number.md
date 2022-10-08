@@ -14,19 +14,22 @@ f1_keywords:
 ms.service: O365-seccomp
 ms.localizationpriority: medium
 ms.collection:
-- M365-security-compliance
+- tier3
+- purview-compliance
 hideEdit: true
 feedback_system: None
 recommendations: false
 description: Definición de entidad de tipo de información confidencial del número de pasaporte de Grecia.
-ms.openlocfilehash: 5c58dab053aff298140e9c0e3f175a03df53826e
-ms.sourcegitcommit: 5aed330d8af523f0dffe5e392f1c79f047e38172
+ms.openlocfilehash: 5a3f1cb8fcd7b4f910104877e37523557b1a4f8b
+ms.sourcegitcommit: be2334dbcd4e1bf309349d981a68a30e06de0297
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/21/2022
-ms.locfileid: "66950966"
+ms.lasthandoff: 10/04/2022
+ms.locfileid: "68378432"
 ---
 # <a name="greece-passport-number"></a>Número de pasaporte de Grecia
+
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
 
 ## <a name="format"></a>Formato
 
@@ -42,16 +45,16 @@ No
 
 ## <a name="definition"></a>Definición
 
-Una directiva DLP tiene una gran confianza en que se detecta este tipo de información confidencial si, dentro de una proximidad de 300 caracteres:
+Una política de DLP tiene una gran confianza en que ha detectado este tipo de información confidencial si, dentro de una proximidad de 300 caracteres:
 
-- La expresión `Regex_greece_eu_passport_number` regular busca contenido que coincida con el patrón.
-- Se encuentra una palabra clave de `Keywords_eu_passport_number` o `Keywords_greece_eu_passport_number` .
+- La expresión regular `Regex_greece_eu_passport_number` encuentra contenido que coincide con el patrón.
+- Se encuentra una palabra clave de `Keywords_eu_passport_number` o `Keywords_greece_eu_passport_number`.
 - La expresión `Regex_greece_eu_passport_date` regular busca la fecha con el formato DD MMM YY (ejemplo: 28 ago 19) o se encuentra una palabra clave de .`Keywords_greece_eu_passport_date`
 
-Una directiva DLP tiene confianza media en que se detecta este tipo de información confidencial si, dentro de una proximidad de 300 caracteres:
+Una política de DLP tiene confianza media en que ha detectado este tipo de información confidencial si, dentro de una proximidad de 300 caracteres:
 
-- La expresión `Regex_greece_eu_passport_number` regular busca contenido que coincida con el patrón.
-- Se encuentra una palabra clave de `Keywords_eu_passport_number` o `Keywords_greece_eu_passport_number` .
+- La expresión regular `Regex_greece_eu_passport_number` encuentra contenido que coincide con el patrón.
+- Se encuentra una palabra clave de `Keywords_eu_passport_number` o `Keywords_greece_eu_passport_number`.
 
 ```xml
       <!-- Greece Passport Number -->
@@ -81,12 +84,12 @@ Una directiva DLP tiene confianza media en que se detecta este tipo de informaci
 
 ### <a name="keywords_eu_passport_number"></a>Keywords_eu_passport_number
 
-- Pasaporte #
-- Pasaporte #
+- pasaporte#
+- pasaporte #
 - passportid
-- Pasaportes
+- pasaportes
 - passportno
-- passport no
+- pasaporte no
 - passportnumber
 - passport number
 - passportnumbers

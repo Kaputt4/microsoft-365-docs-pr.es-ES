@@ -1,5 +1,5 @@
 ---
-title: Paso 6. Supervisar el riesgo del dispositivo y el cumplimiento de las líneas base de seguridad
+title: Step 6. Monitor device risk and compliance to security baselines
 ms.author: bcarter
 author: brendacarter
 f1.keywords:
@@ -11,7 +11,7 @@ manager: dougeby
 audience: ITPro
 description: Obtenga información sobre cómo conectar Microsoft Intune a Defender para punto de conexión y supervisar el riesgo del dispositivo como una condición de acceso.
 ms.topic: article
-ms.service: microsoft-365-enterprise
+ms.service: o365-solutions
 ms.localizationpriority: high
 ms.collection:
 - highpri
@@ -22,12 +22,12 @@ ms.collection:
 - zerotrust-solution
 ms.custom: ''
 keywords: ''
-ms.openlocfilehash: 10b6e23042b777e2e747899999b093bd7d26e689
-ms.sourcegitcommit: 0af064e8b6778060f1bd365378d69b16fc9949b5
+ms.openlocfilehash: a532477d25d0eb3de07af08033f13c7a8112454c
+ms.sourcegitcommit: fce27da5140691b013a6f7c0ea9c88b4ea4b7c10
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/15/2022
-ms.locfileid: "67730735"
+ms.lasthandoff: 09/23/2022
+ms.locfileid: "67986562"
 ---
 # <a name="step-6-monitor-device-risk-and-compliance-to-security-baselines"></a>Paso 6. Supervisar el riesgo del dispositivo y el cumplimiento de las líneas base de seguridad
 
@@ -55,7 +55,7 @@ Con Microsoft Defender para punto de conexión implementado, puede aprovechar la
 
 Para Android e iOS/iPadOS, se pueden usar señales de amenazas dentro de las directivas de protección de aplicaciones (APP). Para obtener información sobre cómo configurar esto, consulte [Crear y asignar directiva de protección de aplicaciones para establecer el nivel de riesgo del dispositivo](/mem/intune/protect/advanced-threat-protection-configure#create-and-assign-compliance-policy-to-set-device-risk-level).
 
-Para todas las plataformas, puede establecer el nivel de riesgo en las directivas de cumplimiento de dispositivos existentes. Consulte [Crear una directiva de acceso condicional](/mem/intune/protect/advanced-threat-protection-configure#create-a-conditional-access-policy).
+Para todas las plataformas, puede establecer el nivel de riesgo en las directivas de cumplimiento de dispositivos existentes. Consulte [Creación de una directiva de acceso condicional](/mem/intune/protect/advanced-threat-protection-configure#create-a-conditional-access-policy).
 
 ## <a name="deploy-security-baselines-and-monitor-compliance-to-these-settings"></a>Implementar líneas base de seguridad y supervisar el cumplimiento de esta configuración
 
@@ -77,7 +77,7 @@ Para implementar líneas base de seguridad y supervisar el cumplimiento de esta 
 |Paso  |Descripción  |
 |---------|---------|
 |1     |Revise los conceptos clave y compare Microsoft Defender para punto de conexión y las líneas base de seguridad de Windows Intune. <br><br>Consulte [Aumentar el cumplimiento de la línea de base de seguridad de Microsoft Defender para punto de conexión](../security/defender-endpoint/configure-machines-security-baseline.md) para obtener recomendaciones.<br><br>Consulte [Usar líneas base de seguridad para configurar dispositivos Windows en Intune ](/mem/intune/protect/security-baselines) revisar la lista de líneas base de seguridad disponibles y cómo evitar conflictos.         |
-|2     |  Implemente la configuración de línea de base de seguridad de Windows para Intune. Es posible que ya lo haya hecho si ha seguido las instrucciones de [Paso 5. Implementar perfiles de configuración](manage-devices-with-intune-configuration-profiles.md).        |
+|2     |  Deploy Windows security baseline settings for Intune. You might have already accomplished this if you followed the guidance in [Step 5. Deploy configuration profiles](manage-devices-with-intune-configuration-profiles.md).        |
 |3    |  Implemente la configuración de línea de base de Defender para punto de conexión para Intune. Consulte [Administrar perfiles de línea de base de seguridad en Microsoft Intune](/mem/intune/protect/security-baselines-configure) para crear el perfil y elegir la versión de línea base.<br><br>También puede seguir las instrucciones siguientes: [Revisar y asignar la línea base de seguridad de Microsoft Defender para punto de conexión](../security/defender-endpoint/configure-machines-security-baseline.md#review-and-assign-the-microsoft-defender-for-endpoint-security-baseline).     |
 |4     | En Defender para punto de conexión, revise la tarjeta de línea base de seguridad de [en la administración de la configuración de dispositivos](../security/defender-endpoint/configure-machines.md).          |
 

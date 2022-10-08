@@ -14,19 +14,22 @@ f1_keywords:
 ms.service: O365-seccomp
 ms.localizationpriority: medium
 ms.collection:
-- M365-security-compliance
+- tier3
+- purview-compliance
 hideEdit: true
 feedback_system: None
 recommendations: false
 description: Definición de entidad de tipo de información confidencial del número de identificación fiscal de Alemania.
-ms.openlocfilehash: 38dd5c85e052d0a42886c80eff35dd5e391020b0
-ms.sourcegitcommit: 5aed330d8af523f0dffe5e392f1c79f047e38172
+ms.openlocfilehash: 7bb5e62e885abc7f71f04dd899b1b7a6d86e70aa
+ms.sourcegitcommit: be2334dbcd4e1bf309349d981a68a30e06de0297
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/21/2022
-ms.locfileid: "66999122"
+ms.lasthandoff: 10/04/2022
+ms.locfileid: "68378498"
 ---
 # <a name="germany-tax-identification-number"></a>Número de identificación fiscal de Alemania
+
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
 
 ## <a name="format"></a>Formato
 
@@ -82,21 +85,21 @@ Una política de DLP tiene confianza media en que ha detectado este tipo de info
 - steueridentifikationsnummer
 - steuernummer
 - tax id
-- identificación fiscal no
+- núm. identificación fiscal
 - número de identificación fiscal
-- impuestos no #
-- impuestos no
-- número de impuestos
+- n.º de id. fiscal#
+- n.º fiscal
+- número de id. fiscal
 - número de registro fiscal
-- taxid #
-- taxidno #
-- taxidnumber #
-- taxno #
-- taxnumber #
-- taxnumber
-- tin id
-- tin no
-- Lata #
+- Id.fiscal#
+- númidfiscal#
+- númeroidentificaciónfiscal#
+- núm.fiscal#
+- núm.id.fiscal#
+- núm.id.fisca
+- id. tributaria
+- n.º de id. tributario
+- Número de identificación tributaria
 - Zinn #
 - Zinn
 - zinnnummer

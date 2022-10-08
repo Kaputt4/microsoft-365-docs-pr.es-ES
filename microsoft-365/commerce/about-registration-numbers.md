@@ -8,9 +8,10 @@ manager: scotv
 ms.reviewer: drjones, jmueller
 audience: Admin
 ms.topic: article
-ms.service: o365-administration
+ms.service: microsoft-365-business
 ms.localizationpriority: medium
 ms.collection:
+- scotvorg
 - M365-subscription-management
 - Adm_O365
 search.appverid: MET150
@@ -20,12 +21,12 @@ ms.custom:
 - AdminSurgePortfolio
 description: Obtenga información sobre los números de registro y las notificaciones de revisión al comprar productos o servicios de Microsoft.
 ms.date: 02/02/2022
-ms.openlocfilehash: f287903ae9cded49a81e1c775388e579f2a4f0b8
-ms.sourcegitcommit: 1c5f9d17a8b095cd88b23f4874539adc3ae021de
+ms.openlocfilehash: 70177ab7b8129e9623912b9d24360d7e28cd98f5
+ms.sourcegitcommit: 0b7070ec119e00e0dafe030bbfbef0ae5c9afa19
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/08/2022
-ms.locfileid: "64714205"
+ms.lasthandoff: 09/29/2022
+ms.locfileid: "68167723"
 ---
 # <a name="about-registration-numbers-and-under-review-notifications"></a>Acerca de los números de registro y las notificaciones de revisión
 
@@ -51,7 +52,7 @@ Si no tiene un número de registro válido, consulte [Números de identificació
 
 ## <a name="what-should-i-do-if-i-get-an-under-review-notification"></a>¿Qué debo hacer si recibo una notificación de revisión?  
 
-Cuando complete una compra, es posible que reciba una notificación de que su cuenta está bajo revisión. Durante el proceso de revisión, puede comprobar el estado; para ello, vaya a la página <a href="https://go.microsoft.com/fwlink/p/?linkid=2084771" target="_blank">BillingBilling accounts (Cuentas de</a> **facturación** > ) y seleccione la cuenta que usó para completar la compra.
+Cuando complete una compra, es posible que reciba una notificación de que su cuenta está bajo revisión. Durante el proceso de revisión, puede comprobar el estado; para ello, vaya a la página<a href="https://go.microsoft.com/fwlink/p/?linkid=2084771" target="_blank">Cuentas de facturación</a>  >  y seleccione la cuenta que usó para completar la compra.
 
 El proceso de revisión normalmente tarda aproximadamente un día en completarse, pero puede tardar más.
 

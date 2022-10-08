@@ -8,17 +8,17 @@ ms.topic: article
 ms.collection:
 - highpri
 - M365-security-compliance
-ms.service: microsoft-365-enterprise
+ms.service: o365-solutions
 ms.custom: seo-marvel-jun2020
 ms.localizationpriority: high
 description: Conozca la forma en que las instituciones de servicios financieros pueden mantener el cumplimiento de la seguridad financiera y colaborar de forma eficaz al usar Microsoft 365 y Teams.
 f1.keywords: NOCSH
-ms.openlocfilehash: 0b4ad914bf18de7d3cef36f35c6cb3a161ebe13a
-ms.sourcegitcommit: 0af064e8b6778060f1bd365378d69b16fc9949b5
+ms.openlocfilehash: d547e6b8c15716eb63baf748572640f844f1b1c5
+ms.sourcegitcommit: fce27da5140691b013a6f7c0ea9c88b4ea4b7c10
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/15/2022
-ms.locfileid: "67730954"
+ms.lasthandoff: 09/23/2022
+ms.locfileid: "67986870"
 ---
 # <a name="key-compliance-and-security-considerations-for-us-banking-and-capital-markets"></a>Consideraciones clave de cumplimiento y seguridad para los mercados de capital y los bancos de Estados Unidos
 
@@ -87,12 +87,12 @@ Microsoft 365 proporciona otras funciones de directiva comunes para Teams media
 
 **Las directivas de nomenclatura de grupo de Microsoft 365** ayudan a asegurarse de que los grupos de Microsoft 365 y, por tanto, los equipos, se denominen de acuerdo a la directiva empresarial. Los nombres pueden ser problemáticos si no son adecuados. Por ejemplo, es posible que los empleados no sepan con qué equipos trabajar o compartir información si los nombres no se aplicaron correctamente. Las directivas de nomenclatura de grupos (incluida la compatibilidad con directivas basadas en prefijos y sufijos o las palabras bloqueadas personalizadas) pueden exigir una "higiene" adecuada y evitar el uso de palabras específicas, como palabras reservadas o terminología inapropiada.
   
-**Las directivas de expiración de grupos de Microsoft 365** ayudan a garantizar que los grupos de Microsoft 365 y, por lo tanto, los equipos, no se conserven durante períodos de tiempo más largos de lo que la organización quiere o necesita. Esta función ayuda a evitar dos problemas clave de administración de la información:
+**Microsoft 365 group expiration policies** help ensure that Microsoft 365 groups and therefore teams, aren't retained for longer periods of time than the organization wants or needs. This capability helps prevent two key information-management issues:
 
 * Proliferación de equipos que no son necesarios ni se usan.
 * La retención excesiva de datos que ya no necesita o usa la organización (excepto en casos de conservación o preservación legal).
 
-Los administradores pueden especificar períodos de expiración para los grupos de Microsoft 365 de 90, 180 o 365 días. Si un servicio respaldado por un grupo de Microsoft 365 está inactivo durante el período de expiración, se notificará a los propietarios del grupo. Si no se realiza ninguna acción, se elimina el grupo de Microsoft 365 y todos sus servicios relacionados, incluido Teams.
+Administrators can specify an expiration period for Microsoft 365 groups, such as 90, 180, or 365 days. If a service that's backed by a Microsoft 365 group is inactive for the expiration period, group owners are notified. If no action is taken, the Microsoft 365 group and all its related services, including Teams, is deleted.
   
 La retención excesiva de los datos que se almacenan en Teams y otros servicios basados en grupos puede suponer riesgos para las organizaciones de servicios financieros. Las directivas de expiración del grupo de Microsoft 365 son una forma recomendada para ayudar a evitar la retención de datos que ya no son necesarios. Combinado con las etiquetas y directivas de retención integradas, Microsoft 365 le ayuda a garantizar que las organizaciones solo retienen los datos necesarios para cumplir con las obligaciones de las directivas corporativas y el cumplimiento normativo.
 
@@ -114,7 +114,7 @@ Entre los procedimientos eficaces recomendados por FINRA se incluyen los siguien
 
 Las conclusiones y observaciones de FINRA para las comunicaciones digitales se relacionan directamente con la capacidad de una organización para cumplir con la [Regla 17a-4 de la SEC](https://www.law.cornell.edu/cfr/text/17/240.17a-4) para conservar todas las comunicaciones relacionadas con la empresa, las Reglas de FINRA [3110](https://www.finra.org/rules-guidance/rulebooks/finra-rules/3110) y [3120](https://www.finra.org/rules-guidance/rulebooks/finra-rules/3120) para la supervisión y la revisión de las comunicaciones, y la Serie de reglas [4510](https://www.finra.org/rules-guidance/rulebooks/finra-rules/4510) para el mantenimiento de registros. La Comisión de Comercio de Futuros de Mercancías (CFTC) promulga requisitos similares bajo la Regla 17 CFR 131. Estas normas se tratan en profundidad más adelante en este artículo.
 
-***Teams, junto con la gama completa de ofertas de seguridad y cumplimiento de Microsoft 365, ofrece un canal de comunicación digital corporativo para que las instituciones de servicios financieros puedan hacer negocios de forma eficaz y cumpliendo la ley.*** El resto de este artículo describe cómo las capacidades integradas de Microsoft 365 para la administración de registros, la protección de la información, las barreras de la información y el control de supervisión proporcionan a Teams un conjunto de herramientas robusto para ayudarle a cumplir estos compromisos reglamentarios.
+***Teams, along with the comprehensive suite of Microsoft 365 security and compliance offerings, provides a corporate digital communication channel for financial services institutions to effectively conduct business and comply with regulations.*** The remainder of this article describes how Microsoft 365 built-in capabilities for records management, information protection, information barriers, and supervisory control gives Teams a robust toolset to help meet these regulatory obligations.
 
 ## <a name="protect-modern-collaboration-with-microsoft-365"></a>Proteger la colaboración moderna con Microsoft 365
 
@@ -147,7 +147,7 @@ Los métodos de Microsoft MFA que no tienen contraseñas son:
 
 [El acceso condicional de Azure AD](/azure/active-directory/conditional-access/) ofrece una solución robusta para automatizar las decisiones de control de acceso y exigir las directivas de la organización para proteger los activos de la empresa. Un ejemplo clásico es cuando un programador financiero quiere tener acceso a una aplicación que tiene datos confidenciales de los clientes. Se requieren automáticamente para realizar una autenticación multifactor para tener acceso específico a la aplicación y el acceso debe ser desde un dispositivo administrado por la empresa. El acceso condicional de Azure reúne las señales sobre la solicitud de acceso de un usuario, como las propiedades del usuario, el dispositivo, la ubicación, la red y la aplicación a la que el usuario está intentando acceder. Evalúa dinámicamente los intentos de acceso a la aplicación en directivas configuradas. Si se eleva el riesgo de un usuario o un dispositivo, o no se cumplen otras condiciones, Azure AD puede aplicar automáticamente directivas como requerir MFA, requerir el restablecimiento de una contraseña segura o restringir o bloquear el acceso. Esto permite garantizar que los activos confidenciales de la organización estén protegidos en entornos cambiantes.
  
-Azure AD y los servicios de seguridad relacionados de Microsoft 365 proporcionan la base en la que se puede implementar una plataforma de colaboración en la nube moderna para las instituciones financieras, de modo que se pueda proteger el acceso a los datos y las aplicaciones, y garantizar el cumplimiento de las obligaciones. Estas herramientas proporcionan las siguientes funciones clave:
+Azure AD, and the related Microsoft 365 security services, provide the foundation on which a modern cloud collaboration platform can be rolled out to financial institutions so that access to data and applications can be secured, and regulator compliance obligations can be met. These tools provide the following key capabilities:
 
 * Almacenar y administrar identidades de usuario de forma segura y centralizada.
 * Usar un protocolo de autenticación eficaz, incluida la autenticación multifactor, para autenticar usuarios en solicitudes de acceso y proporcionar una experiencia de autenticación coherente y robusta en todas las aplicaciones.
@@ -209,19 +209,19 @@ Los servicios de seguridad de Microsoft 365 usan la tecnología de Intelligent S
 
 [Microsoft Defender for Cloud Apps](/cloud-app-security/what-is-cloud-app-security) permite a las organizaciones aplicar directivas en un nivel granular y detectar anomalías en el comportamiento en función de los perfiles de usuario individuales que se definen automáticamente con el aprendizaje automático. Las directivas de Defender for Cloud Apps se pueden basar en directivas de acceso condicional de Azure para proteger los activos confidenciales de la empresa al evaluar otras señales relacionadas con el comportamiento del usuario y las propiedades de los documentos a los que se accede. Con el tiempo, Defender for Cloud Apps aprende el comportamiento habitual para cada empleado con respecto a los datos a los que acceden y a las aplicaciones que usan. Basándose en patrones de comportamiento aprendidos, las directivas pueden exigir de forma automática controles de seguridad si un empleado actúa fuera de ese perfil de comportamiento. Por ejemplo, si un empleado generalmente accede a una aplicación de contabilidad entre las 9:00 y las 17:00 de lunes a viernes, pero de repente comienza a acceder a esa aplicación un domingo por la tarde, Defender for Cloud Apps puede aplicar dinámicamente directivas para requerir que el usuario vuelva a autenticarse. Esto permite garantizar que las credenciales del usuario no se hayan visto comprometidas. Defender for Cloud Apps también pueden ayudar a identificar "shadow IT" en la organización, lo que permite a los equipos de seguridad de la información asegurarse de que los empleados usan herramientas autorizadas cuando trabajan con datos confidenciales. Por último, Defender for Cloud Apps puede proteger datos confidenciales en cualquier lugar de la nube, incluso fuera de la plataforma de Microsoft 365. Permite a las organizaciones autorizar (o no autorizar) aplicaciones externas específicas en la nube, controlar el acceso y supervisar el uso.
  
-[Microsoft Defender for Identity](/azure-advanced-threat-protection/what-is-atp) es una solución de seguridad basada en la nube que aprovecha las señales locales de Active Directory para identificar, detectar e investigar las amenazas avanzadas, las identidades vulnerables y las acciones internas malintencionadas dirigidas a su organización. AATP permite a los analistas de SecOp y a los profesionales de la seguridad detectar ataques avanzados en entornos híbridos para:
+[Microsoft Defender for Identity](/azure-advanced-threat-protection/what-is-atp) is a cloud-based security solution that leverages your on-premises Active Directory signals to identify, detect, and investigate advanced threats, compromised identities, and malicious insider actions directed at your organization. AATP enables SecOp analysts and security professionals detect advanced attacks in hybrid environments to:
 * Supervisar usuarios, el comportamiento de las entidades y las actividades mediante el análisis basado en aprendizaje.
 * Proteger las identidades de usuario y las credenciales almacenadas en Active Directory.
 * Identificar e investigar actividades de usuarios sospechosas y ataques avanzados en la cadena de eliminación.
 * Proporcionar información clara sobre el incidente en una escala de tiempo simple para una evaluación rápida.
 
-![Los trabajadores de la oficina se encuentran en una sala de conferencias pequeña. Uno ofrece una presentación.](../media/clo1717-corporate-office-021.jpg)
+![The office workers meet in a small conference room. One gives a presentation.](../media/clo1717-corporate-office-021.jpg)
  
 ## <a name="govern-data-and-manage-records"></a>Gobierno de datos y administración de registros
 
 Las instituciones financieras deben conservar sus registros y su información según sus obligaciones normativas, jurídicas y comerciales, como se representa en la programación de retención de su empresa. Por ejemplo, la [SEC exige períodos de retención](https://www.sec.gov/rules/interp/34-47806.htm) de entre tres y seis años, basándose en el tipo de registro, con accesibilidad inmediata para los dos primeros años. Las organizaciones se enfrentan a los riesgos legales y normativos si los datos se retienen menos tiempo (se descartan muy anticipadamente) y ahora también administran las normas que exigen la eliminación cuando ya no se necesita información. Una estrategia de administración de registros eficaz enfatiza un enfoque práctico y coherente para que la información se elimine de forma adecuada al tiempo que se reducen los costes y los riesgos para la organización.
  
-Además, los mandatos normativos del Departamento de Servicios Financieros del Estado de Nueva York exigen que las entidades cubiertas mantengan directivas y procedimientos para la eliminación de información no pública. Las limitaciones de la Sección 500.13 de 23 NYCRR 500 sobre la retención de datos requieren que "como parte de su programa de ciberseguridad, cada entidad cubierta incluirá directivas y procedimientos para la eliminación segura en una base periódica de cualquier información no pública identificada en la sección 500.01(g)(2)-(3) de esta Parte que ya no es necesaria para las operaciones de la empresa o para otros fines comerciales legítimos de la entidad cubierta, excepto cuando dicha información deba retenerse en virtud de la legislación o regulación".
+In addition, regulatory mandates from the New York State Department of Financial Services require covered entities to maintain policies and procedures for disposal of nonpublic information. 23 NYCRR 500, Section 500.13, Limitations on Data Retention requires that "As part of its cybersecurity program, each Covered Entity shall include policies and procedures for the secure disposal on a periodic basis of any Nonpublic Information identified in section 500.01(g)(2)-(3) of this Part that is no longer necessary for business operations or for other legitimate business purposes of the Covered Entity, except where such information is otherwise required to be retained by law or regulation."
  
 Las instituciones financieras administran una gran cantidad de datos. Y algunos períodos de retención se activan por eventos, como un contrato que expira o un empleado que abandona la organización. En esta atmósfera, puede resultar complicado aplicar directivas de retención de registros. Los métodos para asignar períodos de retención de registros de forma exacta en documentos de la organización pueden variar. Algunos aplican directivas de retención más amplias o aprovechan técnicas de clasificación y aprendizaje automáticos. Otros identifican un enfoque que necesita un proceso más pormenorizado que asigna períodos de retención de forma individual en cada documento.
 
@@ -240,12 +240,12 @@ La **Comisión de valores y bolsa (SEC)** requiere que los corredores de bolsa y
 * Ninguna organización vulneraría la exigencia en el párrafo (f)(2)(ii)(A) de la regla si usa un sistema de almacenamiento electrónico que impide que se sobrescriba, se borre o se altere de algún otro modo el registro durante el período de retención requerido mediante el uso de los códigos integrados de control de hardware y software.
 * Los sistemas de almacenamiento electrónico que simplemente "mitigan" el riesgo de que un registro se sobrescriba o se elimine (por ejemplo, al depender del control de acceso), no cumplen con los requisitos de la regla.
 
-Para ayudar a las instituciones financieras a cumplir los requisitos de la norma 17a-4 de la SEC, Microsoft 365 proporciona una combinación de las funciones relacionadas con el modo en que se conservan los datos, se configuran las directivas y se almacenan los datos en el servicio. Estas incluyen:
+To help financial institutions meet the requirements of SEC rule 17a-4, Microsoft 365 provides a combination of capabilities related to how data is retained, policies are configured, and data is stored within the service. These include:
 
 * **Preservación de datos (Norma 17a-4 (a), (b)(4))**: las etiquetas de retención y las directivas son flexibles para satisfacer las necesidades de la organización, y se pueden aplicar de forma automática o manual a diferentes tipos de datos, documentos e información. Se admiten una amplia variedad de tipos de datos y comunicaciones, incluidos los documentos de SharePoint y OneDrive para la Empresa, datos de buzones de Exchange Online y datos en Teams.  
 * **Un formato que no se puede volver a escribir y que no se puede eliminar (Regla 17a-4 (f)(2)(ii)(A))**: la capacidad de bloqueo de conservación para las directivas de retención permite a los administradores y administradores de registros configurar las directivas de retención para que sean restrictivas, de modo que ya no se puedan modificar. Esto prohíbe que se pueda quitar, deshabilitar o modificar la directiva de retención de ninguna manera. Esto quiere decir que, una vez que el bloqueo de conservación está habilitado, no se puede deshabilitar y no hay ningún método mediante el que los datos a los que se haya aplicado la directiva de retención se puedan sobrescribir, modificar o eliminar durante el período de retención. Además, el período de retención no se puede acortar. Sin embargo, el período de retención se puede alargar cuando existe un requisito legal para continuar la retención de datos.<br/><br/>Cuando se aplica un bloqueo de conservación a una directiva de retención, se restringen las acciones siguientes:
 
-  - El período de retención de la directiva solo se puede incrementar, no se puede acortar.
+  - The retention period of the policy can only be increased. It can't be shortened.
   - Se pueden agregar usuarios a la directiva, pero no se podrán quitar los usuarios existentes configurados en la directiva.
    - La directiva de retención no puede ser eliminada por ningún administrador dentro de la organización.
  
@@ -263,7 +263,7 @@ Por último, la Regla 17a-4 exige a las organizaciones que conserven los registr
  
 Previa solicitud, Microsoft proporcionará una carta de atestación del cumplimiento con la regla 17a-4 de la SEC cuando lo requiera una organización.
 
-Además, estas funciones también ayudan a que Microsoft 365 cumpla con los requisitos de almacenamiento de la [Regla 1.31 (c)-(d) de la CFTC](https://www.cftc.gov/sites/default/files/opa/press99/opa4266-99-attch.htm) de la **Comisión de Negociación de Futuros de Productos Básicos de Estados Unidos** y la [Serie de reglas 4510 de FINRA](https://www.finra.org/rules-guidance/rulebooks/finra-rules/4511) de la **Autoridad de Reglamentación del Sector Financiero.** De forma colectiva, estas reglas constituyen las directrices más prescriptivas a nivel global para que las instituciones financieras conserven registros.
+In addition, these capabilities also help Microsoft 365 meet storage requirements for [CFTC Rule 1.31(c)-(d)](https://www.cftc.gov/sites/default/files/opa/press99/opa4266-99-attch.htm) from the **U.S. Commodity Futures Trading Commission** and [FINRA Rule Series 4510](https://www.finra.org/rules-guidance/rulebooks/finra-rules/4511) from the **Financial Industry Regulatory Authority.** Collectively, these rules represent the most-prescriptive guidance globally for financial institutions to retain records.
 
 Hay más información sobre cómo Microsoft 365 cumple con la regla SEC 17a-4 y otras normativas disponibles en el documento de descarga [Office 365 - Evaluación de Cohasset - regla SEC 17a-4(f) - Almacenamiento inmutable para SharePoint, OneDrive, Exchange, Teams y Yammer (2022)](https://servicetrust.microsoft.com/ViewPage/TrustDocuments?command=Download&downloadType=Document&downloadId=9fa8349d-a0c9-47d9-93ad-472aa0fa44ec&docTab=6d000410-c9e9-11e7-9a91-892aae8839ad_FAQ_and_White_Papers).
 
@@ -289,9 +289,9 @@ Las barreras de la información son compatibles con conversaciones y archivos en
 
 ## <a name="implement-supervisory-control"></a>Implementar control de supervisión
 
-Las instituciones financieras suelen estar obligadas a establecer y mantener una función de supervisión en su organización con el fin de supervisar las actividades de los empleados y ayudar a TI a lograr el cumplimiento de las leyes de valores aplicables. En concreto, FINRA ha establecido estos requisitos de supervisión:
+Financial institutions are typically required to establish and maintain a supervisory function within their organizations to monitor the activities of employees and to help it achieve compliance with applicable securities laws. Specifically, FINRA has established these supervision requirements:
  
-* [La Norma 3110 de FINRA (Supervisión)](https://www.finra.org/rules-guidance/rulebooks/finra-rules/3110) exige a las empresas tener procedimientos de supervisión escritos (WSP) para controlar las actividades de sus empleados y los tipos de empresas en las que se desempeña. Además de otros requisitos, los procedimientos deben incluir:
+* [FINRA Rule 3110 (Supervision)](https://www.finra.org/rules-guidance/rulebooks/finra-rules/3110) requires firms to have written supervisory procedures (WSPs) to supervise activities of its employees and the types of businesses in which it engages. In addition to other requirements, procedures must include:
 
    - Supervisión de personal de supervisión
    - Revisión del banco de inversión, negocios de valores, comunicaciones internas e investigaciones internas de la empresa

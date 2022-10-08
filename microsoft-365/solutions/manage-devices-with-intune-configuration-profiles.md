@@ -1,5 +1,5 @@
 ---
-title: Paso 5. Implementar perfiles de dispositivo en Microsoft Intune
+title: Step 5. Deploy device profiles in Microsoft Intune
 ms.author: bcarter
 author: brendacarter
 f1.keywords:
@@ -10,7 +10,7 @@ manager: dougeby
 audience: ITPro
 description: Introducción a los perfiles de configuración para aplicar una configuración segura en los dispositivos que usan Intune para realizar la transición de estos controles de seguridad a la nube.
 ms.topic: article
-ms.service: microsoft-365-enterprise
+ms.service: o365-solutions
 ms.localizationpriority: high
 ms.collection:
 - highpri
@@ -20,12 +20,12 @@ ms.collection:
 - zerotrust-solution
 ms.custom: ''
 keywords: ''
-ms.openlocfilehash: ff626c2e8ef5d4a47bf8e3a206064aca3268b86e
-ms.sourcegitcommit: 0af064e8b6778060f1bd365378d69b16fc9949b5
+ms.openlocfilehash: 55de4c0efb13c8f80ff9b7c70a1ef8fea667e2b8
+ms.sourcegitcommit: fce27da5140691b013a6f7c0ea9c88b4ea4b7c10
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/15/2022
-ms.locfileid: "67730405"
+ms.lasthandoff: 09/23/2022
+ms.locfileid: "67986672"
 ---
 # <a name="step-5-deploy-device-profiles-in-microsoft-intune"></a>Paso 5. Implementar perfiles de dispositivo en Microsoft Intune
 

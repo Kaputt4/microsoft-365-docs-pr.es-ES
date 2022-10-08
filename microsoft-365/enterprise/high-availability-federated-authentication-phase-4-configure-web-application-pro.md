@@ -6,24 +6,26 @@ manager: scotv
 ms.date: 11/25/2019
 audience: ITPro
 ms.topic: article
-ms.service: o365-solutions
+ms.service: microsoft-365-enterprise
 ms.localizationpriority: medium
-ms.collection: Ent_O365
+ms.collection:
+- scotvorg
+- Ent_O365
 f1.keywords:
 - CSH
 ms.custom: Ent_Solutions
 ms.assetid: 1c903173-67cd-47da-86d9-d333972dda80
 description: 'Resumen: configure los servidores proxy de aplicación web para la autenticación federada de alta disponibilidad para Microsoft 365 en Microsoft Azure.'
-ms.openlocfilehash: 2200d4f7c0aafbaff11dd5d9b5b5b414fae06b5f
-ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
+ms.openlocfilehash: a2de5878fcc3d8de194331cd5f1b220d79b501ab
+ms.sourcegitcommit: 0b7070ec119e00e0dafe030bbfbef0ae5c9afa19
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "65091289"
+ms.lasthandoff: 09/29/2022
+ms.locfileid: "68167503"
 ---
 # <a name="high-availability-federated-authentication-phase-4-configure-web-application-proxies"></a>Fase 4 de la autenticación federada de alta disponibilidad: Configurar los proxy de aplicación web
 
-En esta fase de implementación de alta disponibilidad para Microsoft 365 autenticación federada en los servicios de infraestructura de Azure, creará un equilibrador de carga interno y dos servidores de AD FS.
+En esta fase de implementación de alta disponibilidad para la autenticación federada de Microsoft 365 en los servicios de infraestructura de Azure, creará un equilibrador de carga interno y dos servidores de AD FS.
   
 Debe completar esta fase antes de pasar a [Fase 5: Configuración de la autenticación federada para Microsoft 365](high-availability-federated-authentication-phase-5-configure-federated-authentic.md). Consulte Implementación de la [autenticación federada de alta disponibilidad para Microsoft 365 en Azure](deploy-high-availability-federated-authentication-for-microsoft-365-in-azure.md) para todas las fases.
   
@@ -32,12 +34,12 @@ Debe completar esta fase antes de pasar a [Fase 5: Configuración de la autentic
 Debe crear un equilibrador de carga accesible desde Internet para que Azure distribuya el tráfico de autenticación de cliente entrante desde Internet uniformemente entre los dos servidores proxy de aplicación web.
   
 > [!NOTE]
-> Los siguientes conjuntos de comandos utilizan la última versión de Azure PowerShell. Consulte [Comenzar con Azure PowerShell](/powershell/azure/get-started-azureps). 
+> Los siguientes conjuntos de comandos utilizan la última versión de Azure PowerShell. Consulte [Introducción a Azure PowerShell](/powershell/azure/get-started-azureps). 
   
 Cuando haya proporcionado valores de ubicación y grupo de recursos, ejecute el bloque resultante en el símbolo del sistema Azure PowerShell o en el ISE de PowerShell.
   
 > [!TIP]
-> Para generar bloques de comandos de PowerShell listos para ejecutarse en función de la configuración personalizada, use este [libro de configuración Microsoft Excel](https://github.com/MicrosoftDocs/OfficeDocs-Enterprise/raw/live/Enterprise/downloads/O365FedAuthInAzure_Config.xlsx). 
+> Para generar bloques de comandos de PowerShell listos para ejecutarse en función de la configuración personalizada, use este [libro de configuración de Microsoft Excel](https://github.com/MicrosoftDocs/OfficeDocs-Enterprise/raw/live/Enterprise/downloads/O365FedAuthInAzure_Config.xlsx). 
 
 ```powershell
 # Set up key variables
@@ -60,7 +62,7 @@ Write-Host (Get-AzPublicIpaddress -Name "WebProxyPublicIP" -ResourceGroup $rgNam
 
 ## <a name="determine-your-federation-service-fqdn-and-create-dns-records"></a>Determinación del FQDN del servicio de federación y creación de registros DNS
 
-Debe determinar el nombre DNS para identificar el nombre del servicio de federación en Internet. Azure AD Conectar configurará Microsoft 365 con este nombre en la fase 5, que pasará a formar parte de la dirección URL que Microsoft 365 envía a los clientes que se conectan para obtener un token de seguridad. Un ejemplo es fs.contoso.com (fs significa servicio de federación).
+Debe determinar el nombre DNS para identificar el nombre del servicio de federación en Internet. Azure AD Connect configurará Microsoft 365 con este nombre en la fase 5, que pasará a formar parte de la dirección URL que Microsoft 365 envía a los clientes que se conectan para obtener un token de seguridad. Un ejemplo es fs.contoso.com (fs significa servicio de federación).
   
 Una vez que tenga el servicio de federación FDQN, cree un registro A de dominio DNS público para el servicio de federación FDQN que se resuelva en la dirección IP pública del equilibrador de carga accesible desde Internet de Azure.
   
@@ -156,13 +158,13 @@ Esta es la configuración completada después de la finalización correcta de es
   
 **Fase 4: equilibrador de carga accesible desde Internet y servidores proxy de aplicación web para la infraestructura de autenticación federada de alta disponibilidad en Azure**
 
-![Fase 4 de la alta disponibilidad Microsoft 365 infraestructura de autenticación federada en Azure con los servidores proxy de aplicación web.](../media/7e03183f-3b3b-4cbe-9028-89cc3f195a63.png)
+![Fase 4 de la infraestructura de autenticación federada de Microsoft 365 de alta disponibilidad en Azure con los servidores proxy de aplicación web.](../media/7e03183f-3b3b-4cbe-9028-89cc3f195a63.png)
   
 ## <a name="next-step"></a>Paso siguiente
 
 Use [Fase 5: Configurar la autenticación federada para Microsoft 365](high-availability-federated-authentication-phase-5-configure-federated-authentic.md) para seguir configurando esta carga de trabajo.
   
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulta también
 
 [Implementar la autenticación federada de alta disponibilidad para Microsoft 365 en Azure](deploy-high-availability-federated-authentication-for-microsoft-365-in-azure.md)
   

@@ -6,22 +6,22 @@ manager: serdars
 ms.reviewer: amitman
 audience: admin
 ms.topic: article
-ms.service: o365-administration
+ms.service: microsoft-365-business
 f1.keywords:
 - CSH
 ms.collection: M365-modern-desktop
 ms.localizationpriority: medium
 description: Obtenga información sobre cómo permitir cookies para direcciones URL LMS en los exploradores Edge, Chrome y Firefox y Safari.
-ms.openlocfilehash: 84ba252f9d3854fad4e89bd6e9dac8d0b020cf3a
-ms.sourcegitcommit: ebbe8713297675db5dcb3e0d9c3ae5e746b99196
+ms.openlocfilehash: fcaae51c9cdbab3a052a3c29d24e5386f4f852ee
+ms.sourcegitcommit: 0b7070ec119e00e0dafe030bbfbef0ae5c9afa19
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/14/2022
-ms.locfileid: "65414787"
+ms.lasthandoff: 09/29/2022
+ms.locfileid: "68167371"
 ---
 # <a name="allow-cookies-for-lms-urls-in-your-browser"></a>Permitir cookies para direcciones URL de LMS en el explorador
 
-Se necesitan cookies de navegador de terceros para completar el protocolo de enlace LTI 1.3 de acuerdo con los estándares globales de IMS. Por lo tanto, al iniciar la herramienta LTI desde un sistema de administración de Learning (LMS), la configuración del explorador debe permitir cookies de terceros para la dirección URL de LMS.
+Se necesitan cookies de navegador de terceros para completar el protocolo de enlace LTI 1.3 de acuerdo con los estándares globales de IMS. Por lo tanto, al iniciar la herramienta LTI desde un sistema de administración de aprendizaje (LMS), la configuración del explorador debe permitir cookies de terceros para la dirección URL de LMS.
 
 Estos son los pasos para permitir las cookies en su navegador.
 
@@ -38,7 +38,7 @@ Si debe mantener bloqueadas las cookies de terceros:
 2. En **Permitir**, seleccione **Agregar** para agregar la dirección URL del dominio de la plataforma LMS.
    1. Por ejemplo, si la plataforma LMS está hospedada en `https://contoso.com`, esa dirección URL debe agregarse en **Permitir**.
 
-![Captura de pantalla de Microsoft Edge página de configuración de cookies](media/edge-cookies.png)
+![Captura de pantalla de la página de configuración de cookies de Microsoft Edge](media/edge-cookies.png)
 
 # <a name="google-chrome"></a>[Google Chrome](#tab/chrome)
 
