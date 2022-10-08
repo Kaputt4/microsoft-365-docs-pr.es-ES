@@ -1,6 +1,6 @@
 ---
 title: Más información acerca de las barreras de información
-description: Obtenga información sobre las barreras de información en Microsoft Purview.
+description: Obtenga información sobre las barreras de información en Microsoft Purview. Las barreras de información pueden ayudar a evitar conflictos de interés y a proteger la información interna entre los usuarios y las áreas organizativas.
 keywords: Microsoft 365, Microsoft Purview, cumplimiento, barreras de información
 ms.author: robmazz
 author: robmazz
@@ -10,19 +10,22 @@ audience: ITPro
 ms.topic: article
 ms.service: O365-seccomp
 ms.collection:
-- M365-security-compliance
+- highpri
+- tier2
+- purview-compliance
 - m365solution-mip
 - m365initiative-compliance
+- highpri
 ms.localizationpriority: ''
 f1.keywords:
 - NOCSH
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 4b2a45a667aa654a8ff3111313b542433e692f1f
-ms.sourcegitcommit: 5e5c2c1f7c321b5eb1c5b932c03bdd510005de13
+ms.openlocfilehash: 2c9bee62d8484c5fe8f096fb432955d2d04c00ed
+ms.sourcegitcommit: 6df492719fecc2b213d55465dc1cd60ab4627ed6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/15/2022
-ms.locfileid: "66823397"
+ms.lasthandoff: 10/04/2022
+ms.locfileid: "68383890"
 ---
 # <a name="learn-about-information-barriers"></a>Más información acerca de las barreras de información
 
@@ -40,6 +43,8 @@ Las directivas de IB pueden permitir o impedir la comunicación y la colaboraci�
 
 > [!IMPORTANT]
 > Las barreras de información **solo admiten** restricciones bidireccionales de comunicación y colaboración. Por ejemplo, **no se admite** un escenario en el que Marketing pueda comunicarse y colaborar con Day Traders, pero Day Traders no puede comunicarse ni colaborar con Marketing.
+
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
 
 ## <a name="information-barriers-and-microsoft-teams"></a>Barreras de información y Microsoft Teams
 

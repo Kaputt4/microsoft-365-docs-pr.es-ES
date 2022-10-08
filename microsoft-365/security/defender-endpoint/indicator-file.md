@@ -13,16 +13,18 @@ ms.localizationpriority: medium
 ms.date: 08/10/2022
 manager: dansimp
 audience: ITPro
-ms.collection: M365-security-compliance
+ms.collection:
+- m365-security
+- tier2
 ms.topic: article
 ms.subservice: mde
 search.appverid: met150
-ms.openlocfilehash: d3d533a3d4e1058eec5395c9f389926994b74e94
-ms.sourcegitcommit: 9b133379196da2b3a4bb311b07ff274f43780f68
+ms.openlocfilehash: b32a565455a632aa411c2aca053755238862b2c3
+ms.sourcegitcommit: 4e42bafee965446f44f7f57d1defed2b9b24fce8
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/14/2022
-ms.locfileid: "67700342"
+ms.lasthandoff: 09/30/2022
+ms.locfileid: "68228589"
 ---
 # <a name="create-indicators-for-files"></a>Crear indicadores para los archivos
 
@@ -50,7 +52,7 @@ Hay tres maneras de crear indicadores para los archivos:
 
 Es importante comprender los siguientes requisitos previos antes de crear indicadores para los archivos:
 
-- Esta característica está disponible si su organización usa **el Antivirus de Microsoft Defender (en modo activo)** y **la protección basada en la nube está habilitada**. Para obtener más información, consulte [Administración de la protección basada en la nube](/windows/security/threat-protection/microsoft-defender-antivirus/deploy-manage-report-microsoft-defender-antivirus).
+- Esta característica está disponible si su organización usa **Microsoft Defender Antivirus (en modo activo)** y **la protección basada en la nube está habilitada**. Para obtener más información, consulte [Administración de la protección basada en la nube](/windows/security/threat-protection/microsoft-defender-antivirus/deploy-manage-report-microsoft-defender-antivirus).
 
 - La versión de cliente de Antimalware debe ser 4.18.1901.x o posterior. Consulte [Versiones mensuales de la plataforma y del motor](manage-updates-baselines-microsoft-defender-antivirus.md#monthly-platform-and-engine-versions)
 
@@ -78,6 +80,8 @@ Esta característica está diseñada para evitar que se descargue malware sospec
     - Indicador: especifique los detalles de la entidad y defina la expiración del indicador.
     - Acción: especifique la acción que se va a realizar y proporcione una descripción.
     - Ámbito: defina el ámbito del grupo de dispositivos (el ámbito no está disponible en [Defender para empresas](../defender-business/mdb-overview.md)).
+        > [!NOTE]
+        > La creación de grupos de dispositivos se admite en El plan 1 y el plan 2 de Defender para punto de conexión
 
 5. Revise los detalles de la pestaña Resumen y, a continuación, seleccione **Guardar**.
 
@@ -152,14 +156,14 @@ La actividad de acción de respuesta también se puede ver en la escala de tiemp
 El control de directivas de IoC de certificados y archivos seguirá el orden siguiente:
 
 - Si el archivo no está permitido por Windows Defender directivas o directivas de aplicación de Control de aplicaciones y AppLocker, **bloquee**
-- De lo contrario, si el archivo está permitido por la exclusión del Antivirus de Microsoft Defender, **permitir**
+- De lo contrario, si el archivo está permitido por la exclusión Microsoft Defender Antivirus, **permitir**
 - De lo contrario, si el archivo está bloqueado o advertido por un bloque o un archivo de advertencia IoC, **bloquee o advierta**.
 - De lo contrario, si se permite el archivo mediante una directiva de IoC de archivo permitido **, permitir**
 - De lo contrario, si el archivo está bloqueado por reglas de ASR, CFA, AV, SmartScreen y, a continuación, **Bloquear**
 - De lo contrario **, permitir** (pasa Windows Defender control de aplicaciones & directiva de AppLocker, no se le aplican reglas de IoC)
 
 >[!NOTE]
-> En situaciones en las que Antivirus de Microsoft Defender está establecido en **Bloquear**, pero Defender para punto de conexión está establecido en **Permitir**, la directiva tendrá como valor predeterminado **Permitir**.
+> En situaciones en las que Microsoft Defender Antivirus está establecido en **Bloquear**, pero Defender para punto de conexión está establecido en **Permitir**, la directiva tendrá como valor predeterminado **Permitir**.
 
 Si hay directivas de IoC de archivos en conflicto con el mismo tipo de cumplimiento y destino, se aplicará la directiva del hash más seguro (es decir, más largo). Por ejemplo, una directiva ioC de hash de archivo SHA-256 obtendrá una directiva ioC de hash de archivo MD5 si ambos tipos hash definen el mismo archivo.
 
@@ -180,7 +184,7 @@ las características de aplicación vulnerables a bloques de Administración de 
 |Regla de reducción de superficie expuesta a ataques|Bloquear|Permitir|Permitir|
 |Control de aplicaciones de Windows Defender|Permitir|Bloquear|Permitir|
 |Control de aplicaciones de Windows Defender|Bloquear|Permitir|Bloquear|
-|Exclusión del Antivirus de Microsoft Defender|Permitir|Bloquear|Permitir|
+|Microsoft Defender exclusión de Antivirus|Permitir|Bloquear|Permitir|
 |
 
 ## <a name="see-also"></a>Vea también

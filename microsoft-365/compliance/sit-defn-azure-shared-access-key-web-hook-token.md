@@ -1,5 +1,5 @@
 ---
-title: Definición de entidad de firma de token de web hook o clave de acceso compartido de Azure (versión preliminar)
+title: Definición de entidad de firma de token de web hook o clave de acceso compartido de Azure
 f1.keywords:
 - CSH
 ms.author: chrfox
@@ -20,18 +20,20 @@ hideEdit: true
 feedback_system: None
 recommendations: false
 description: Definición de entidad de tipo de información confidencial de clave de acceso compartido de Azure o token de web hook.
-ms.openlocfilehash: a97bc484551cfd5a5ceb379b1e07aca2b9e53255
-ms.sourcegitcommit: fa570d90b00ed1bb40e1ca27b11c66a84c4204e9
+ms.openlocfilehash: a85b67c572ddc1633137d870e98235a06faf95dd
+ms.sourcegitcommit: 50da6f1f6ef2274c17ed9729e7ad84395b0a9be2
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/05/2022
-ms.locfileid: "68476031"
+ms.lasthandoff: 10/08/2022
+ms.locfileid: "68503036"
 ---
-# <a name="azure-shared-access-key--web-hook-token-preview"></a>Clave de acceso compartido de Azure o token de web hook (versión preliminar) 
+# <a name="azure-shared-access-key--web-hook-token"></a>Clave de acceso compartido de Azure / token de Web Hook 
 
 [!INCLUDE [purview-preview](../includes/purview-preview.md)]
 
-## <a name="format"></a>Formato
+Esta SIT también se incluye en el SIT de [todas las credenciales](sit-defn-all-creds.md) agrupadas.
+
+ ## <a name="format"></a>Formato
 
 Una combinación de 44 caracteres que consta de letras, dígitos y caracteres especiales.
 
@@ -66,9 +68,15 @@ Por ejemplo:
 
 `abcdefghijklmnopqrstuvwxyz0123456789%2F%2BABCDE%3D`
 
+## <a name="credential-example"></a>Ejemplo de credencial 
+
+`PrimaryKey=abcdefghijklmnopqrstuvwxyz0123456789/+ABCDE=;`
+
 ## <a name="checksum"></a>Suma de comprobación
 
 No
+
+Los SIT que tienen sumas de comprobación usan un cálculo único para comprobar si la información es válida. Esto significa que cuando el valor **de suma de comprobación** es **Sí**, el servicio puede realizar una detección positiva solo en función de los datos confidenciales. Cuando el valor **de suma de comprobación** es **No** se deben detectar elementos adicionales (secundarios) para que el servicio realice una detección positiva.
 
 ## <a name="definition"></a>Definición
 

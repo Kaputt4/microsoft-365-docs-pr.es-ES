@@ -1,5 +1,5 @@
 ---
-title: Definición de entidad de direcciones físicas de Noruega
+title: Definición de entidad de direcciones físicas de Japón
 f1.keywords:
 - CSH
 ms.author: chrfox
@@ -19,17 +19,17 @@ ms.collection:
 hideEdit: true
 feedback_system: None
 recommendations: false
-description: Noruega se ocupa físicamente de la definición de entidad de tipo de información confidencial.
-ms.openlocfilehash: 27c88d588b28ac2d8360c9f61a1d24a15da88df4
+description: Japón aborda la definición de entidad de tipo de información confidencial.
+ms.openlocfilehash: 5df6e0af4ca78c52e972e30e8834845df625efe4
 ms.sourcegitcommit: 6df492719fecc2b213d55465dc1cd60ab4627ed6
 ms.translationtype: MT
 ms.contentlocale: es-ES
 ms.lasthandoff: 10/04/2022
-ms.locfileid: "68383980"
+ms.locfileid: "68383929"
 ---
-# <a name="norway-physical-addresses"></a>Direcciones físicas de Noruega
+# <a name="japan-physical-addresses"></a>Direcciones físicas de Japón
 
-Esta entidad con nombre desagregada detecta patrones relacionados con la dirección física de Noruega. También se incluye en [Todas las direcciones físicas ](sit-defn-all-physical-addresses.md) en la entidad no agrupada denominada SIT.
+Esta entidad con nombre desagregada detecta patrones relacionados con la dirección física de Japón. También se incluye en [Todas las direcciones físicas ](sit-defn-all-physical-addresses.md) en la entidad no agrupada denominada SIT.
 
 [!INCLUDE [purview-preview](../includes/purview-preview.md)]
 

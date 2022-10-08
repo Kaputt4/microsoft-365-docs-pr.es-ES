@@ -1,7 +1,7 @@
 ---
 title: Solucionar problemas de rendimiento
 description: Solución de problemas de uso elevado de CPU relacionados con el servicio de protección en tiempo real en Microsoft Defender para punto de conexión.
-keywords: solución de problemas, rendimiento, uso elevado de CPU, uso elevado de CPU, error, corrección, cumplimiento de actualizaciones, oms, supervisión, informe, Antivirus de Microsoft Defender
+keywords: solución de problemas, rendimiento, uso elevado de CPU, uso elevado de CPU, error, corrección, cumplimiento de actualizaciones, oms, supervisión, informe, Microsoft Defender Antivirus
 search.appverid: met150
 ms.service: microsoft-365-security
 ms.mktglfcycl: manage
@@ -15,13 +15,15 @@ ms.date: 10/19/2021
 audience: ITPro
 ms.topic: troubleshooting
 ms.subservice: mde
-ms.collection: m365-security-compliance
-ms.openlocfilehash: 3f8e259a1f1c98d545bf839e6da94a92ee7af51e
-ms.sourcegitcommit: d3ef9391f621e8f4ca70661184b3bb82c6cbda94
+ms.collection:
+- m365-security
+- tier3
+ms.openlocfilehash: 349111793185dc1508437e048c24cd00823f97e3
+ms.sourcegitcommit: 4e42bafee965446f44f7f57d1defed2b9b24fce8
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/02/2022
-ms.locfileid: "67580323"
+ms.lasthandoff: 09/30/2022
+ms.locfileid: "68228238"
 ---
 # <a name="troubleshoot-performance-issues-related-to-real-time-protection"></a>Solucionar problemas de rendimiento relacionados con la protección en tiempo real
 
@@ -36,7 +38,7 @@ ms.locfileid: "67580323"
 **Plataformas**
 - Windows
 
-Si el sistema tiene problemas elevados de uso de CPU o rendimiento relacionados con el servicio de protección en tiempo real en Microsoft Defender para punto de conexión, puede enviar una incidencia al soporte técnico de Microsoft. Siga los pasos [descritos en Recopilación de datos de diagnóstico del Antivirus de Microsoft Defender](collect-diagnostic-data.md).
+Si el sistema tiene problemas elevados de uso de CPU o rendimiento relacionados con el servicio de protección en tiempo real en Microsoft Defender para punto de conexión, puede enviar una incidencia al soporte técnico de Microsoft. Siga los pasos [descritos en Recopilación de datos de diagnóstico Microsoft Defender Antivirus](collect-diagnostic-data.md).
 
 Como administrador, también puede solucionar estos problemas por su cuenta.
 
@@ -76,7 +78,7 @@ En **MPLog-xxxxxxxx-xxxxxx.log**, puede encontrar la información de impacto est
 |EstimatedImpact|El porcentaje de tiempo dedicado a los exámenes para los archivos a los que accede este proceso fuera del período en el que este proceso experimentó la actividad de examen|
 |
 
-Si el impacto en el rendimiento es alto, intente agregar el proceso a las exclusiones de ruta de acceso o proceso siguiendo los pasos [descritos en Configuración y validación de exclusiones para exámenes del Antivirus de Microsoft Defender](collect-diagnostic-data.md).
+Si el impacto en el rendimiento es alto, intente agregar el proceso a las exclusiones de ruta de acceso o proceso siguiendo los pasos [descritos en Configuración y validación de exclusiones para los exámenes de antivirus de Microsoft Defender](collect-diagnostic-data.md).
 
 Si el paso anterior no resuelve el problema, puede recopilar más información a través del Monitor de [procesos](#capture-process-logs-using-process-monitor) o la [Grabadora de rendimiento de Windows](#capture-performance-logs-using-windows-performance-recorder) en las secciones siguientes.
 
@@ -228,7 +230,7 @@ Como alternativa, también puede usar la herramienta de línea de comandos *wpr.
     > [!TIP]
     > Mantenga la recopilación de datos en no más de cinco minutos. De dos a tres minutos es un buen intervalo, ya que se recopilan muchos datos.
 
-12. Haga clic en **Guardar**.
+12. Seleccione **Guardar**.
 
     :::image type="content" source="images/wpr-10.png" alt-text="La opción Guardar" lightbox="images/wpr-10.png":::
 
@@ -237,7 +239,7 @@ Como alternativa, también puede usar la herramienta de línea de comandos *wpr.
     :::image type="content" source="images/wpr-12.png" alt-text="Panel en el que se rellena" lightbox="images/wpr-12.png":::
 
     1. Seleccione **Nombre de archivo:** para determinar dónde se guardará el archivo de seguimiento. De forma predeterminada, se guarda en `%user%\Documents\WPR Files\`.
-    1. Haga clic en **Guardar**.
+    1. Seleccione **Guardar**.
 
 14. Espere mientras se combina el seguimiento.
 
@@ -297,5 +299,5 @@ La herramienta de línea de comandos *wpr.exe* forma parte del sistema operativo
 
 ## <a name="see-also"></a>Vea también
 
-- [Recopilación de datos de diagnóstico del Antivirus de Microsoft Defender](collect-diagnostic-data.md)
-- [Configuración y validación de exclusiones para exámenes del Antivirus de Microsoft Defender](configure-exclusions-microsoft-defender-antivirus.md)
+- [Recopilación de datos de diagnóstico Microsoft Defender Antivirus](collect-diagnostic-data.md)
+- [Configuración y validación de exclusiones para exámenes de antivirus de Microsoft Defender](configure-exclusions-microsoft-defender-antivirus.md)

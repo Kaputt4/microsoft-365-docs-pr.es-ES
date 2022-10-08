@@ -12,16 +12,17 @@ ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection:
-- m365-security-compliance
+- m365-security
+- tier3
 ms.topic: conceptual
 ms.subservice: mde
 search.appverid: met150
-ms.openlocfilehash: cf892956a517591b8f55eb3b704056421c482a7c
-ms.sourcegitcommit: 9b133379196da2b3a4bb311b07ff274f43780f68
+ms.openlocfilehash: bafbce373ffdbdd8d5d7e4908f626d45282159c8
+ms.sourcegitcommit: 4e42bafee965446f44f7f57d1defed2b9b24fce8
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/14/2022
-ms.locfileid: "67684119"
+ms.lasthandoff: 09/30/2022
+ms.locfileid: "68228633"
 ---
 # <a name="set-up-the-microsoft-defender-for-endpoint-on-macos-policies-in-jamf-pro"></a>Configuración de la Microsoft Defender para punto de conexión en directivas de macOS en Jamf Pro
 
@@ -111,7 +112,7 @@ Tendrá que realizar los pasos siguientes:
 
    :::image type="content" source="images/jamfpro-targets.png" alt-text="Los destinos" lightbox="images/jamfpro-targets.png":::
 
-10. Haga clic en **Guardar**.
+10. Seleccione **Guardar**.
 
    :::image type="content" source="images/jamfpro-deployment-target.png" alt-text="Implementación de equipos de destino" lightbox="images/jamfpro-deployment-target.png":::
 
@@ -364,7 +365,7 @@ Todo lo que necesita hacer para tener actualizaciones es descargar un esquema ac
     >
     > :::image type="content" source="images/8e69f867664668796a3b2904896f0436.png" alt-text="El símbolo del sistema para cargar el archivo de Intune relacionado con la configuración" lightbox="images/8e69f867664668796a3b2904896f0436.png":::
 
-11. Haga clic en **Guardar**.
+11. Seleccione **Guardar**.
 
     :::image type="content" source="images/1b6b5a4edcb42d97f1e70a6a0fa48e3a.png" alt-text="Opción para guardar la imagen relacionada con los valores de configuración" lightbox="images/1b6b5a4edcb42d97f1e70a6a0fa48e3a.png":::
 
@@ -506,7 +507,7 @@ Estos pasos son aplicables a macOS 10.15 (Catalina) o posterior.
 
     :::image type="content" source="images/4ec20e72c8aed9a4c16912e01692436a.png" alt-text="Página en la que se muestra la opción de carga del archivo con respecto a la configuración" lightbox="images/4ec20e72c8aed9a4c16912e01692436a.png":::
 
-11. Haga clic en **Guardar**.
+11. Seleccione **Guardar**.
 
     :::image type="content" source="images/253274b33e74f3f5b8d475cf8692ce4e.png" alt-text="Página en la que se muestra la opción guardar del archivo con respecto a la configuración" lightbox="images/253274b33e74f3f5b8d475cf8692ce4e.png":::
 
@@ -606,7 +607,7 @@ Estos pasos son aplicables a macOS 10.15 (Catalina) o posterior.
 
 15. Seleccione **Agregar**.
 
-16. Haga clic en **Guardar**.
+16. Seleccione **Guardar**.
 
 17. Seleccione **Listo**.
 
@@ -660,7 +661,7 @@ Como alternativa, puede descargar [fulldisk.mobileconfig](https://github.com/mic
 
    :::image type="content" source="images/0dde8a4c41110dbc398c485433a81359.png" alt-text="Página en la que se definen valores adicionales para los valores de configuración" lightbox="images/0dde8a4c41110dbc398c485433a81359.png":::
 
-9. Haga clic en **Guardar**.
+9. Seleccione **Guardar**.
 
    :::image type="content" source="images/0add8019b85a453b47fa5c402c72761b.png" alt-text="Extensión de kernel MDAV de MDATP" lightbox="images/0add8019b85a453b47fa5c402c72761b.png":::
 
@@ -715,7 +716,7 @@ Como alternativa, puede descargar [kext.mobileconfig](https://github.com/microso
 
    :::image type="content" source="images/0dde8a4c41110dbc398c485433a81359.png" alt-text="Panel Nuevo perfil de configuración de macOS" lightbox="images/0dde8a4c41110dbc398c485433a81359.png":::
 
-9. Haga clic en **Guardar**.
+9. Seleccione **Guardar**.
 
    :::image type="content" source="images/sysext-scope.png" alt-text="Visualización de opciones relacionadas con las extensiones de sistema MDAV de MDATP" lightbox="images/sysext-scope.png":::
 
@@ -734,14 +735,14 @@ Estos pasos son aplicables a macOS 10.15 (Catalina) o posterior.
 2. Haga clic en **Nuevo** y escriba los siguientes detalles para **Opciones**:
 
     - Pestaña **General**:
-        - **Nombre**: Extensión de red de Microsoft Defender
+        - **Nombre**: Microsoft Defender extensión de red
         - **Descripción**: macOS 10.15 (Catalina) o posterior
         - **Categoría**: Ninguno *(valor predeterminado)*
         - **Método de distribución**: Instalar automáticamente *(valor predeterminado)*
         - **Nivel**: Nivel de equipo *(valor predeterminado)*
 
     - **Filtro de contenido de** pestaña:
-        - **Nombre del filtro**: filtro de contenido de Microsoft Defender
+        - **Nombre del filtro**: filtro de contenido Microsoft Defender
         - **Identificador**: `com.microsoft.wdav`
         - Deje **en blanco la dirección del servicio**, **la organización**, **el nombre de usuario**, la **contraseña**, **el certificado** (*no* está seleccionada **la opción Incluir**)
         - **Orden de filtro**: Inspector
@@ -765,7 +766,7 @@ Estos pasos son aplicables a macOS 10.15 (Catalina) o posterior.
 
    :::image type="content" source="images/0dde8a4c41110dbc398c485433a81359.png" alt-text="Los valores de configuración adim" lightbox="images/0dde8a4c41110dbc398c485433a81359.png":::
 
-7. Haga clic en **Guardar**.
+7. Seleccione **Guardar**.
 
    :::image type="content" source="images/netext-scope.png" alt-text="Panel Filtro de contenido" lightbox="images/netext-scope.png":::
 
@@ -813,7 +814,7 @@ Siga las instrucciones de [Programación de exámenes con Microsoft Defender par
 
     :::image type="content" source="images/1aa5aaa0a387f4e16ce55b66facc77d1.png" alt-text="Pantalla del equipo que muestra la descripción de un paquete generado automáticamente" lightbox="images/1aa5aaa0a387f4e16ce55b66facc77d1.png":::
 
-7. Seleccione **Abrir**. Establezca el **nombre para mostrar** en **Protección contra amenazas avanzada de Microsoft Defender y Antivirus de Microsoft Defender**.
+7. Seleccione **Abrir**. Establezca el **nombre para mostrar** en **Microsoft Defender Advanced Threat Protection y Microsoft Defender Antivirus**.
 
     **El archivo de manifiesto** no es necesario. Microsoft Defender para punto de conexión funciona sin archivo de manifiesto.
 
@@ -823,7 +824,7 @@ Siga las instrucciones de [Programación de exámenes con Microsoft Defender par
 
     :::image type="content" source="images/56dac54634d13b2d3948ab50e8d3ef21.png" alt-text="Pestaña de limitación de los valores de configuración" lightbox="images/56dac54634d13b2d3948ab50e8d3ef21.png":::
 
-8. Haga clic en **Guardar**. El paquete se carga en Jamf Pro.
+8. Seleccione **Guardar**. El paquete se carga en Jamf Pro.
 
    :::image type="content" source="images/33f1ecdc7d4872555418bbc3efe4b7a3.png" alt-text="Proceso de carga del paquete de configuración para el paquete relacionado con los valores de configuración" lightbox="images/33f1ecdc7d4872555418bbc3efe4b7a3.png":::
 
@@ -850,17 +851,17 @@ Siga las instrucciones de [Programación de exámenes con Microsoft Defender par
 
     :::image type="content" source="images/68bdbc5754dfc80aa1a024dde0fce7b0.png" alt-text="La comprobación periódica de los valores de configuración" lightbox="images/68bdbc5754dfc80aa1a024dde0fce7b0.png":::
 
-13. Haga clic en **Guardar**.
+13. Seleccione **Guardar**.
 
 14. Seleccione **Paquetes > Configurar**.
 
     :::image type="content" source="images/8fb4cc03721e1efb4a15867d5241ebfb.png" alt-text="La opción para configurar paquetes" lightbox="images/8fb4cc03721e1efb4a15867d5241ebfb.png":::
 
-15. Seleccione el botón **Agregar** situado junto a **Protección contra amenazas avanzada de Microsoft Defender y Antivirus de Microsoft Defender**.
+15. Seleccione el botón **Agregar** situado junto a **Microsoft Defender Advanced Threat Protection y Microsoft Defender Antivirus**.
 
     :::image type="content" source="images/526b83fbdbb31265b3d0c1e5fbbdc33a.png" alt-text="Opción para agregar más opciones a MDATP MDA" lightbox="images/526b83fbdbb31265b3d0c1e5fbbdc33a.png":::
 
-16. Haga clic en **Guardar**.
+16. Seleccione **Guardar**.
 
     :::image type="content" source="images/9d6e5386e652e00715ff348af72671c6.png" alt-text="Opción de guardar para los valores de configuración" lightbox="images/9d6e5386e652e00715ff348af72671c6.png":::
 
