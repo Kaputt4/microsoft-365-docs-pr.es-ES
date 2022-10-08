@@ -13,17 +13,17 @@ ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection:
-- m365-security-compliance
-- m365-initiative-defender-endpoint
+- m365-security
+- tier3
 ms.topic: conceptual
 ms.subservice: mde
 search.appverid: met150
-ms.openlocfilehash: ff26e621da3b364bd96ad6ed8b95a6dc9d092dc2
-ms.sourcegitcommit: 9b133379196da2b3a4bb311b07ff274f43780f68
+ms.openlocfilehash: 429a3a1bdfe6e762f81f585612ab2c538539f778
+ms.sourcegitcommit: 4e42bafee965446f44f7f57d1defed2b9b24fce8
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/14/2022
-ms.locfileid: "67683041"
+ms.lasthandoff: 09/30/2022
+ms.locfileid: "68222768"
 ---
 # <a name="microsoft-defender-for-endpoint-on-linux"></a>Microsoft Defender para punto de conexión en Linux
 
@@ -197,7 +197,7 @@ Después de habilitar el servicio, es posible que tenga que configurar la red o 
 
 ### <a name="configuring-exclusions"></a>Configuración de exclusiones
 
-Al agregar exclusiones al Antivirus de Microsoft Defender, debe tener en cuenta los errores comunes de [exclusión del Antivirus de Microsoft Defender](/microsoft-365/security/defender-endpoint/common-exclusion-mistakes-microsoft-defender-antivirus).
+Al agregar exclusiones a Microsoft Defender Antivirus, debe tener en cuenta [los errores comunes de exclusión de Microsoft Defender Antivirus](/microsoft-365/security/defender-endpoint/common-exclusion-mistakes-microsoft-defender-antivirus).
 
 ### <a name="network-connections"></a>Conexiones de red
 
@@ -239,7 +239,7 @@ Las instrucciones para configurar el producto en entornos empresariales están d
 
 ## <a name="common-applications-to-microsoft-defender-for-endpoint-can-impact"></a>Las aplicaciones comunes que se Microsoft Defender para punto de conexión pueden afectar
 
-Las cargas de trabajo de E/S elevadas de determinadas aplicaciones pueden experimentar problemas de rendimiento cuando se instala Microsoft Defender para punto de conexión. Estas incluyen aplicaciones para escenarios de desarrollador como Jenkins y Jira, y cargas de trabajo de base de datos como OracleDB y Postgres. Si experimenta una degradación del rendimiento, considere la posibilidad de establecer exclusiones para aplicaciones de confianza, teniendo en cuenta [los errores comunes de exclusión del Antivirus de Microsoft Defender](/microsoft-365/security/defender-endpoint/common-exclusion-mistakes-microsoft-defender-antivirus) . Para obtener instrucciones adicionales, considere la posibilidad de consultar documentación sobre exclusiones de antivirus de aplicaciones de terceros.
+Las cargas de trabajo de E/S elevadas de determinadas aplicaciones pueden experimentar problemas de rendimiento cuando se instala Microsoft Defender para punto de conexión. Estas incluyen aplicaciones para escenarios de desarrollador como Jenkins y Jira, y cargas de trabajo de base de datos como OracleDB y Postgres. Si experimenta una degradación del rendimiento, considere la posibilidad de establecer exclusiones para aplicaciones de confianza, teniendo en cuenta [los errores comunes de exclusión de Microsoft Defender Antivirus](/microsoft-365/security/defender-endpoint/common-exclusion-mistakes-microsoft-defender-antivirus). Para obtener instrucciones adicionales, considere la posibilidad de consultar documentación sobre exclusiones de antivirus de aplicaciones de terceros.
 
 ## <a name="resources"></a>Recursos
 
@@ -248,5 +248,5 @@ Las cargas de trabajo de E/S elevadas de determinadas aplicaciones pueden experi
 ## <a name="related-articles"></a>Artículos relacionados
   
 - [Protección de los puntos de conexión con la solución EDR integrada de Defender for Cloud: Microsoft Defender para punto de conexión](/azure/defender-for-cloud/integration-defender-for-endpoint)
-- [Conexión de máquinas que no son de Azure a Microsoft Defender for Cloud](/azure/defender-for-cloud/quickstart-onboard-machines)
+- [Conexión de las máquinas que no son de Azure a Microsoft Defender for Cloud](/azure/defender-for-cloud/quickstart-onboard-machines)
 - [Activar la protección de red para Linux](network-protection-linux.md)

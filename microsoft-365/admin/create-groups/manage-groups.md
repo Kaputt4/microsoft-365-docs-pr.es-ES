@@ -7,9 +7,10 @@ author: MikePlumleyMSFT
 manager: scotv
 audience: Admin
 ms.topic: article
-ms.service: o365-administration
+ms.service: microsoft-365-business
 ms.localizationpriority: medium
 ms.collection:
+- scotvorg
 - M365-subscription-management
 - Adm_O365
 - Adm_TOC
@@ -20,12 +21,12 @@ search.appverid:
 - MOE150
 ms.assetid: 74a1ef8b-3844-4d08-9980-9f8f7a36000f
 description: Aprenda a administrar Grupos de Microsoft 365, incluida la adición de quitar miembros del grupo, la edición de la dirección de correo electrónico, el nombre del grupo o la descripción y la personalización del funcionamiento del grupo.
-ms.openlocfilehash: 7dd17072beab3c8b1cf09f6a6263cf6eb9fa089c
-ms.sourcegitcommit: 2f6a7410e9919f753a759c1ada441141e18f06fd
+ms.openlocfilehash: 89acd3c8b4935b4b57873d9d8b2cf7786a430e78
+ms.sourcegitcommit: 0b7070ec119e00e0dafe030bbfbef0ae5c9afa19
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/30/2022
-ms.locfileid: "67084243"
+ms.lasthandoff: 09/29/2022
+ms.locfileid: "68206969"
 ---
 # <a name="manage-a-group-in-the-microsoft-365-admin-center"></a>Administración de un grupo en el Centro de administración de Microsoft 365
 
@@ -103,7 +104,7 @@ Para purgar el grupo, ejecute este comando en PowerShell:
 Remove-AzureADMSDeletedDirectoryObject -Id <objectId>
 ```
 
-Para confirmar que el grupo se ha purgado correctamente, ejecute el cmdlet  *Get-AzureADMSDeletedGroup*  de nuevo para confirmar que el grupo ya no aparece en la lista de grupos eliminados temporalmente. En algunos casos, la eliminación permanente del grupo y todos sus datos puede tardar hasta 24 horas. 
+To confirm that the group has been successfully purged, run the  *Get-AzureADMSDeletedGroup*  cmdlet again to confirm that the group no longer appears on the list of soft-deleted groups. In some cases it may take as long as 24 hours for the group and all of its data to be permanently deleted. 
   
 ## <a name="related-articles"></a>Artículos relacionados
 

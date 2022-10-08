@@ -7,9 +7,10 @@ author: kwekua
 manager: scotv
 audience: Admin
 ms.topic: article
-ms.service: o365-administration
+ms.service: microsoft-365-business
 ms.localizationpriority: medium
 ms.collection:
+- scotvorg
 - M365-subscription-management
 - Adm_O365
 - Adm_NonTOC
@@ -21,13 +22,13 @@ search.appverid:
 - MET150
 - MOE150
 ms.assetid: 9f7c2ff2-af65-4557-8840-0b84ce96d9bc
-description: Las publicaciones del centro de mensajes solo están en inglés, pero se pueden mostrar automáticamente en el idioma que especifique para Microsoft 365.
-ms.openlocfilehash: 23f94654e01697c3ebbc74df4f2409411ca14b9a
-ms.sourcegitcommit: 9255a7e8b398f92d8dae09886ae95dc8577bf29a
+description: Las publicaciones del Centro de mensajes solo están en inglés, pero se pueden mostrar automáticamente en el idioma que especifique para Microsoft 365.
+ms.openlocfilehash: 26f62d7579e2600b6fef3f6f53ffaff9cc22c74d
+ms.sourcegitcommit: 0b7070ec119e00e0dafe030bbfbef0ae5c9afa19
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/17/2022
-ms.locfileid: "65437599"
+ms.lasthandoff: 09/29/2022
+ms.locfileid: "68191175"
 ---
 # <a name="language-translation-for-microsoft-365-message-center-posts"></a>Traducción de idioma para publicaciones del Centro de mensajes de Microsoft 365
 
@@ -48,7 +49,7 @@ Las publicaciones del Centro de mensajes se escriben solo en inglés debido a la
 
 Cuando no se establece el idioma preferido en inglés, las opciones de traducción en el Centro de mensajes están disponibles.
   
-Si quiere configurar las publicaciones del Centro de mensajes para que se traduzcan automáticamente y se muestren en su idioma preferido, vaya a **Estado** \> **Centro de mensajes**. Verá un conmutador en la parte superior de la vista de lista de mensajes que sirve para activar o desactivar la traducción automática. Cuando esté desactivada, las publicaciones se mostrarán en inglés. En cambio, cuando esté activada, los mensajes se mostrarán en su idioma preferido. La configuración que elija se conservará en todas las visitas que haga al Centro de mensajes. 
+To set Message center posts to automatically machine-translate and display in your preferred language, go to **Health** \> **Message center**. You'll see a switch at the top of the message list view to toggle automatic translation on or off. When this setting is off, posts are shown in English. When this setting is on, messages display in your preferred language. The setting you choose will persist for each visit to Message center. 
 
 ## <a name="related-content"></a>Contenido relacionado
 

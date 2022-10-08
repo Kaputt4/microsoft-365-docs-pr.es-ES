@@ -7,7 +7,7 @@ manager: aljerabe
 ms.reviewer: akshah
 audience: Admin
 ms.topic: article
-ms.service: o365-administration
+ms.service: microsoft-365-business
 ms.localizationpriority: medium
 ms.collection:
 - M365-subscription-management
@@ -17,12 +17,12 @@ ms.custom:
 search.appverid: MET150
 description: Envíe correos electrónicos a los usuarios de alerta sobre los complementos de Office que ha implementado en ellos desde la página Aplicaciones integradas.
 ROBOTS: NOINDEX
-ms.openlocfilehash: c815011e5137dcf2725d13784126d0ad8f1fe8bb
-ms.sourcegitcommit: d1b60ed9a11f5e6e35fbaf30ecaeb9dfd6dd197d
+ms.openlocfilehash: 7bd654ef5840a45d29eba9864380e545a071a853
+ms.sourcegitcommit: 0b7070ec119e00e0dafe030bbfbef0ae5c9afa19
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/29/2022
-ms.locfileid: "66998312"
+ms.lasthandoff: 09/29/2022
+ms.locfileid: "68191153"
 ---
 # <a name="add-in-deployment-email-alerts"></a>Alertas de correo electrónico de implementación de complementos
 

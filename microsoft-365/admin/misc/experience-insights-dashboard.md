@@ -5,15 +5,17 @@ author: kwekua
 manager: scotv
 audience: Admin
 ms.topic: overview
-ms.service: o365-administration
+ms.service: microsoft-365-business
 ms.localizationpriority: medium
+ms.collection:
+- scotvorg
 description: Obtenga un informe periódico sobre cómo los usuarios de su organización usan los servicios de Microsoft 365 y explore cada gráfico para obtener más información.
-ms.openlocfilehash: e95fee4f393d9c73228b0e2f4c23fb7abedaf3a3
-ms.sourcegitcommit: 078149c9645ce220911ccd6ce54f984a4c92ce53
+ms.openlocfilehash: 54c0525c4cff5d02c18aa3a2a4defaf4a9e71ba6
+ms.sourcegitcommit: 0b7070ec119e00e0dafe030bbfbef0ae5c9afa19
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/20/2022
-ms.locfileid: "67811185"
+ms.lasthandoff: 09/29/2022
+ms.locfileid: "68191065"
 ---
 # <a name="microsoft-365-experience-insights-dashboard"></a>Panel de información sobre la experiencia de Microsoft 365
 

@@ -14,15 +14,18 @@ author: MSFTTracyP
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
-ms.collection: m365-guidance-templates
+ms.collection:
+- m365-guidance-templates
+- m365-security
+- tier3
 ms.topic: how-to
 search.appverid: met150
-ms.openlocfilehash: 019dd5ff70dae2041955882ed0c63b13f20015cd
-ms.sourcegitcommit: 2dedd0f594b817779e034afa6c4418def2382a22
+ms.openlocfilehash: dcc7d486b41d6a60a0fbda1c8398e81e8516d093
+ms.sourcegitcommit: 4e42bafee965446f44f7f57d1defed2b9b24fce8
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/18/2022
-ms.locfileid: "67799316"
+ms.lasthandoff: 09/30/2022
+ms.locfileid: "68222878"
 ---
 # <a name="connect-microsoft-defender-for-office-365-to-microsoft-sentinel"></a>Conectar Microsoft Defender para Office 365 a Microsoft Sentinel
 
@@ -48,7 +51,7 @@ Aproveche la administración de eventos de información de seguridad (SIEM) enri
 
 ## <a name="next-steps"></a>Pasos siguientes
 
-Ahora, los administradores podrán ver incidentes, alertas y datos sin procesar en Microsoft Sentinel y usar estos datos para la *búsqueda avanzada*, pivotando sobre los datos existentes y nuevos de Microsoft Defender.
+Ahora, los administradores podrán ver incidentes, alertas y datos sin procesar en Microsoft Sentinel y usar estos datos para la *búsqueda avanzada*, pivotando sobre los datos nuevos y existentes de Microsoft Defender.
 
 ## <a name="more-information"></a>Más información
 

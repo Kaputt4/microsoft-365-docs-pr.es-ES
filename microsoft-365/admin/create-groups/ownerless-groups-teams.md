@@ -7,7 +7,7 @@ author: MikePlumleyMSFT
 manager: serdars
 audience: Admin
 ms.topic: article
-ms.service: o365-administration
+ms.service: microsoft-365-business
 ms.localizationpriority: medium
 ms.collection:
 - M365-subscription-management
@@ -21,12 +21,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Obtenga información sobre cómo invitar automáticamente a los miembros a convertirse en propietarios de un grupo de Microsoft 365 sin propietario o de un equipo de Microsoft Teams.
-ms.openlocfilehash: 3d140c7080feca76382e54049918d5e7866e29d5
-ms.sourcegitcommit: c29af68260ba8676083674b3c70209bff2c2e362
+ms.openlocfilehash: b417634638142c749fad12b5e008f2f8d6ff5638
+ms.sourcegitcommit: 0b7070ec119e00e0dafe030bbfbef0ae5c9afa19
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/16/2022
-ms.locfileid: "67743096"
+ms.lasthandoff: 09/29/2022
+ms.locfileid: "68191351"
 ---
 # <a name="manage-ownerless-microsoft-365-groups-and-teams"></a>Administración de grupos y equipos de Microsoft 365 sin propietario
 
@@ -69,4 +69,6 @@ Las notificaciones se envían semanalmente a partir de las 24 horas posteriores 
 
 Hasta dos miembros del grupo por grupo pueden aceptar la invitación para convertirse en propietario. Si ningún miembro del grupo acepta, un administrador tendrá que [asignar un propietario de grupo](/admin/create-groups/add-or-remove-members-from-groups).
 
+## <a name="related-topics"></a>Temas relacionados
 
+[Preguntas más frecuentes sobre el grupo sin propietario](/exchange/troubleshoot/groups-and-distribution-lists/ownerless-group-policy)

@@ -1,7 +1,7 @@
 ---
-title: Activar la retirada de definiciones para el Antivirus de Microsoft Defender
-description: Active la retirada de definiciones para el Antivirus de Microsoft Defender.
-keywords: Antivirus de Microsoft Defender, antimalware, seguridad, defender, retirada de definiciones
+title: Activar la retirada de definiciones para Microsoft Defender Antivirus
+description: Active la retirada de definiciones para Microsoft Defender Antivirus.
+keywords: Microsoft Defender Antivirus, antimalware, seguridad, defender, retirada de definiciones
 search.product: eADQiWindows 10XVcnh
 ms.pagetype: security
 ms.service: microsoft-365-security
@@ -16,14 +16,16 @@ manager: dansimp
 ms.custom: nextgen
 ms.subservice: mde
 ms.topic: article
-ms.collection: m365-security-compliance
+ms.collection:
+- m365-security
+- tier3
 search.appverid: met150
-ms.openlocfilehash: 1401c9b58ee91d51fbf4a37463fb1f75c542d154
-ms.sourcegitcommit: 9b133379196da2b3a4bb311b07ff274f43780f68
+ms.openlocfilehash: 0507707d946ea14be53a12c7e45fc8f9b317e749
+ms.sourcegitcommit: 4e42bafee965446f44f7f57d1defed2b9b24fce8
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/14/2022
-ms.locfileid: "67684285"
+ms.lasthandoff: 09/30/2022
+ms.locfileid: "68222724"
 ---
 # <a name="turn-on-definition-retirement"></a>Activar la retirada de definiciones
 
@@ -39,7 +41,7 @@ Puede configurar la retirada de definiciones mediante directiva de grupo. La ret
 
 1. En el punto de conexión de administración de directiva de grupo, abra la [consola de administración de directiva de grupo](/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/cc731212(v=ws.11)).
 
-2. Vaya a **Configuración** \> del equipo **Plantillas** \> administrativas **Componentes de** \> Windows Sistema de **inspección de red** antivirus \> de **Microsoft Defender**.
+2. Vaya a **Configuración** \> del equipo **Plantillas** \> administrativas **Componentes** \> de Windows Microsoft Defender Sistema de **inspección de red** **antivirus**\>.
 
 3. Seleccione **Activar la retirada de definiciones**. Esta directiva está habilitada de modo predeterminado. Si se establece **No configurado**, se habilita la retirada de definiciones.
 

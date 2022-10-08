@@ -7,9 +7,10 @@ author: efrene
 manager: scotv
 audience: Admin
 ms.topic: article
-ms.service: o365-administration
+ms.service: microsoft-365-business
 ms.localizationpriority: medium
 ms.collection:
+- scotvorg
 - M365-subscription-management
 - Adm_O365
 - Adm_NonTOC
@@ -21,12 +22,12 @@ search.appverid:
 - MOE150
 ms.assetid: 54ae2002-b38e-43a1-82fa-3e49d78fda56
 description: Obtenga información sobre cómo comprobar su dominio y configurar registros DNS para correo electrónico, Skype Empresarial en línea y otros servicios en Namecheap para Microsoft.
-ms.openlocfilehash: 8af8b88cc2bdd0c819f349e2820d637b99e6d730
-ms.sourcegitcommit: 8cd230e243eba452b27f725d66152becb6aff49b
+ms.openlocfilehash: 51461cd7456de10358c8fb9644c8fe8682e11757
+ms.sourcegitcommit: 0b7070ec119e00e0dafe030bbfbef0ae5c9afa19
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/30/2022
-ms.locfileid: "66563349"
+ms.lasthandoff: 09/29/2022
+ms.locfileid: "68191483"
 ---
 # <a name="connect-your-dns-records-at-namecheap-to-microsoft-365"></a>Conexión de los registros DNS en Namecheap a Microsoft 365
 
@@ -37,14 +38,14 @@ Si Namecheap es el proveedor de hospedaje DNS, siga los pasos de este artículo 
 Después de agregar estos registros en Namecheap, el dominio se configurará para trabajar con servicios de Microsoft.
 
 > [!NOTE]
-> Por lo general, los cambios de DNS tardan unos 15 minutos en aplicarse. Sin embargo, a veces los cambios pueden necesitar más tiempo para aplicarse en todo el sistema DNS de Internet. Si tiene problemas con el flujo de correo u otros problemas después de agregar registros DNS, consulte [Solucionar problemas después de cambiar el nombre del dominio o los registros DNS](../get-help-with-domains/find-and-fix-issues.md).
+> Typically it takes about 15 minutes for DNS changes to take effect. However, it can occasionally take longer for a change you've made to update across the Internet's DNS system. If you're having trouble with mail flow or other issues after adding DNS records, see [Troubleshoot issues after changing your domain name or DNS records](../get-help-with-domains/find-and-fix-issues.md).
 
 ## <a name="add-a-txt-record-for-verification"></a>Agregar un registro TXT para verificación
 
-Antes de utilizar el dominio con Microsoft, tenemos que asegurarnos de que sea el propietario. Si puede iniciar sesión en la cuenta en el registrador de dominio y crear el registro DNS, Microsoft sabrá que es el propietario del dominio.
+Before you use your domain with Microsoft, we have to make sure that you own it. Your ability to log in to your account at your domain registrar and create the DNS record proves to Microsoft that you own the domain.
 
 > [!NOTE]
-> Este registro se usa exclusivamente para verificar si se es el propietario de un dominio; no afecta a nada más. Puede eliminarlo más adelante, si lo desea.
+> This record is used only to verify that you own your domain; it doesn't affect anything else. You can delete it later, if you like.
 
 1. Para empezar, vaya a la página de dominios en Namecheap mediante [este vínculo](https://www.namecheap.com/myaccount/login.aspx?ReturnUrl=%2f). Se le pedirá que inicie sesión y continúe.
 
@@ -101,10 +102,10 @@ Para comprobar el registro en Microsoft 365:
 
 1. Seleccione **Continuar**.
 
-1. En la página **verificar dominio**, seleccione **verificar**.
+1. En la página **Verificar dominio**, elija **Verificar**.
 
 > [!NOTE]
-> Por lo general, los cambios de DNS tardan unos 15 minutos en aplicarse. Sin embargo, a veces los cambios pueden necesitar más tiempo para aplicarse en todo el sistema DNS de Internet. Si tiene problemas con el flujo de correo u otros problemas después de agregar registros DNS, consulte [Solucionar problemas después de cambiar el nombre del dominio o los registros DNS](../get-help-with-domains/find-and-fix-issues.md).
+> Typically it takes about 15 minutes for DNS changes to take effect. However, it can occasionally take longer for a change you've made to update across the Internet's DNS system. If you're having trouble with mail flow or other issues after adding DNS records, see [Troubleshoot issues after changing your domain name or DNS records](../get-help-with-domains/find-and-fix-issues.md).
 
 ## <a name="add-an-mx-record-so-email-for-your-domain-will-come-to-microsoft"></a>Agregar un registro MX para que el correo electrónico del dominio vaya a Microsoft
 
@@ -124,7 +125,7 @@ Para comprobar el registro en Microsoft 365:
 
      :::image type="content" source="../../media/05a4f0b9-1d27-448e-9954-2b23304c5f65.png" alt-text="Seleccione DNS avanzado.":::
 
-1. En la sección **CONFIGURACIÓN DE CORREO** , seleccione **MX personalizado** en la lista desplegable **Reenvío de correo electrónico** .
+1. En la sección **CONFIGURACIÓN DE CORREO**, seleccione **MX personalizado** en la lista desplegable **reenvío de Email**.
 
     (Es posible que tenga que desplazarse hacia abajo).
 
@@ -140,7 +141,7 @@ Para comprobar el registro en Microsoft 365:
 
     |Tipo|Host|Valor|Prioridad|TTL|
     |---|---|---|---|---|
-    |Registro MX|@|\<*domain-key*\>.mail.protection.outlook.com.  <br/> **Este valor DEBE terminar en punto (.)** <br/> **Nota:** Obtenga su *\<domain-key\>* de su cuenta Microsoft.  [¿Cómo puedo encontrarla?](../get-help-with-domains/information-for-dns-records.md)|0  <br/> Para obtener más información sobre la prioridad, consulte [¿Qué es una prioridad de MX?](../setup/domains-faq.yml)|30 min|
+    |Registro MX|@|\<*domain-key*\>.mail.protection.outlook.com.  <br/> **Este valor DEBE terminar en punto (.)** <br/> **Nota:** Obtenga su *\<domain-key\>* de su cuenta Microsoft.  [¿Cómo puedo encontrar esto?](../get-help-with-domains/information-for-dns-records.md)|0  <br/> Para obtener más información sobre la prioridad, consulte [¿Qué es una prioridad de MX?](../setup/domains-faq.yml)|30 min|
 
      :::image type="content" source="../../media/f3b76d62-5022-48c1-901b-8615a8571309.png" alt-text="Copie y pegue los valores de la tabla.":::
 
@@ -282,8 +283,8 @@ Solo seleccione esta opción si su organización usa Skype Empresarial para serv
 
     |Servicio|Protocolo|Prioridad|Peso|Puerto|Target|TTL|
     |---|---|---|---|---|---|---|
-    |_sip|_tls|100|1 |443|sipdir.online.lync.com.  <br/> **Este valor DEBE terminar en punto (.)**|Automático|
-    |_sipfederationtls|_tcp|100|1 |5061|sipfed.online.lync.com.  <br/> **Este valor DEBE terminar en punto (.).**|Automático|
+    |_sip|_tls|100|1|443|sipdir.online.lync.com.  <br/> **Este valor DEBE terminar en punto (.)**|Automático|
+    |_sipfederationtls|_tcp|100|1|5061|sipfed.online.lync.com.  <br/> **Este valor DEBE terminar en punto (.)**|Automático|
 
      :::image type="content" source="../../media/ff9566ea-0096-4b7f-873c-027080a23b56.png" alt-text="Copie y pegue los valores de la tabla.":::
 
@@ -294,7 +295,7 @@ Solo seleccione esta opción si su organización usa Skype Empresarial para serv
 1. Agregue el otro registro SRV eligiendo los valores de la segunda fila de la tabla.
 
 > [!NOTE]
-> Por lo general, los cambios de DNS tardan unos 15 minutos en aplicarse. Sin embargo, a veces los cambios pueden necesitar más tiempo para aplicarse en todo el sistema DNS de Internet. Si tiene problemas con el flujo de correo u otros problemas después de agregar registros DNS, consulte [Solucionar problemas después de cambiar el nombre del dominio o los registros DNS](../get-help-with-domains/find-and-fix-issues.md).
+> Typically it takes about 15 minutes for DNS changes to take effect. However, it can occasionally take longer for a change you've made to update across the Internet's DNS system. If you're having trouble with mail flow or other issues after adding DNS records, see [Troubleshoot issues after changing your domain name or DNS records](../get-help-with-domains/find-and-fix-issues.md).
 
 ### <a name="add-the-two-required-cname-records-for-skype-for-business"></a>Agregue los dos registros CNAME necesarios para Skype Empresarial
 
@@ -325,7 +326,7 @@ Solo seleccione esta opción si su organización usa Skype Empresarial para serv
 1. Agregue el otro registro CNAME eligiendo los valores de la segunda fila de la tabla.
 
 > [!NOTE]
-> Por lo general, los cambios de DNS tardan unos 15 minutos en aplicarse. Sin embargo, a veces los cambios pueden necesitar más tiempo para aplicarse en todo el sistema DNS de Internet. Si tiene problemas con el flujo de correo u otros problemas después de agregar registros DNS, consulte [Solucionar problemas después de cambiar el nombre del dominio o los registros DNS](../get-help-with-domains/find-and-fix-issues.md).
+> Typically it takes about 15 minutes for DNS changes to take effect. However, it can occasionally take longer for a change you've made to update across the Internet's DNS system. If you're having trouble with mail flow or other issues after adding DNS records, see [Troubleshoot issues after changing your domain name or DNS records](../get-help-with-domains/find-and-fix-issues.md).
 
 ## <a name="advanced-option-intune-and-mobile-device-management-for-microsoft-365"></a>Opción avanzada: Intune y mobile Administración de dispositivos para Microsoft 365
 
@@ -376,4 +377,4 @@ Este servicio le ayuda a proteger y administrar de forma remota los dispositivos
 1. Agregue el otro registro CNAME eligiendo los valores de la segunda fila de la tabla.
 
 > [!NOTE]
-> Por lo general, los cambios de DNS tardan unos 15 minutos en aplicarse. Sin embargo, a veces los cambios pueden necesitar más tiempo para aplicarse en todo el sistema DNS de Internet. Si tiene problemas con el flujo de correo u otros problemas después de agregar registros DNS, consulte [Solucionar problemas después de cambiar el nombre del dominio o los registros DNS](../get-help-with-domains/find-and-fix-issues.md).
+> Typically it takes about 15 minutes for DNS changes to take effect. However, it can occasionally take longer for a change you've made to update across the Internet's DNS system. If you're having trouble with mail flow or other issues after adding DNS records, see [Troubleshoot issues after changing your domain name or DNS records](../get-help-with-domains/find-and-fix-issues.md).

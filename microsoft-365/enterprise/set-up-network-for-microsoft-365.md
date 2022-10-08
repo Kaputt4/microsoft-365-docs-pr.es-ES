@@ -11,6 +11,7 @@ ms.localizationpriority: medium
 search.appverid:
 - MET150
 ms.collection:
+- scotvorg
 - M365-subscription-management
 - Strat_O365_Enterprise
 f1.keywords:
@@ -20,12 +21,12 @@ ms.custom:
 - seo-marvel-apr2020
 ms.assetid: ''
 description: Busque vínculos a artículos con información que le ayude a configurar la red para Microsoft 365, incluida una introducción a la conectividad de red y una lista de puntos de conexión.
-ms.openlocfilehash: c15935d2b3801bb072c2fdf189726545fa6700ce
-ms.sourcegitcommit: 437461fa1d38ff9bb95dd8a1c5f0b94e8111ada2
+ms.openlocfilehash: 64b8a73d3e069f095b4f9615151920f152b94325
+ms.sourcegitcommit: 0b7070ec119e00e0dafe030bbfbef0ae5c9afa19
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/14/2022
-ms.locfileid: "67670871"
+ms.lasthandoff: 09/29/2022
+ms.locfileid: "68191901"
 ---
 # <a name="set-up-your-network-for-microsoft-365"></a>Configuración de la red para Microsoft 365
 
@@ -47,17 +48,17 @@ Para obtener consejos sobre cómo mejorar el rendimiento, consulte [Planeamiento
 
 ## <a name="support-microsoft-365-networking-as-a-network-equipment-vendor"></a>Compatibilidad con redes de Microsoft 365 como proveedor de equipos de red
 
-Si es un proveedor de equipos de red, únase al [Programa para partners de redes de Office 365](microsoft-365-networking-partner-program.md). Inscríbase en el programa para compilar principios de conectividad de red de Office 365 en sus productos y soluciones. 
+If you are a network equipment vendor, join the [Office 365 Networking Partner Program](microsoft-365-networking-partner-program.md). Enroll in the program to build Office 365 network connectivity principles into your products and solutions. 
 
 ## <a name="office-365-endpoints"></a>Puntos de conexión de Office 365
 
 Los puntos de conexión son el conjunto de direcciones IP de destino, nombres de dominio DNS y URL para el tráfico de Office 365 en Internet. 
 
-Para optimizar el rendimiento de los servicios basados en la nube de Office 365, algunos puntos de conexión necesitan un tratamiento especial por parte de los exploradores cliente y los dispositivos de la red perimetral. Estos dispositivos incluyen firewalls, inspección e interrupción SSL, dispositivos de inspección de paquetes y sistemas de prevención de pérdida de datos.
+To optimize performance to Office 365 cloud-based services, some endpoints need special handling by your client browsers and the devices in your edge network. These devices include firewalls, SSL Break and Inspect and packet inspection devices, and data loss prevention systems.
 
 Vea [Administrar puntos de conexión de Office 365](managing-office-365-endpoints.md) para obtener detalles.
 
-Actualmente, hay cinco nubes diferentes de Office 365. En esta tabla se le indicará la lista de puntos de conexión de cada una.
+Actualmente hay cinco nubes Office 365 diferentes. Esta tabla le lleva a la lista de puntos de conexión para cada uno de ellos.
 
 | Puntos de conexión | Descripción |
 |:-------|:-----|

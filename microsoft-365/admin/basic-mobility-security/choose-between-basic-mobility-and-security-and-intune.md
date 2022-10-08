@@ -7,9 +7,10 @@ author: kwekua
 manager: scotv
 audience: Admin
 ms.topic: article
-ms.service: o365-administration
+ms.service: microsoft-365-business
 ms.localizationpriority: medium
 ms.collection:
+- scotvorg
 - M365-subscription-management
 - Adm_O365
 - Adm_TOC
@@ -19,16 +20,16 @@ ms.custom:
 search.appverid:
 - MET150
 description: Basic Mobility and Security forma parte de los planes de Microsoft 365, mientras que Microsoft Intune es un producto independiente incluido con determinados planes de Microsoft 365.
-ms.openlocfilehash: 01d2717aa0368e3d1dc5ed17f3adfd6313880dfe
-ms.sourcegitcommit: db1e48af88995193f15bbd5962f5101a6088074b
+ms.openlocfilehash: 9d45209ac45aeddb05ae7524683c32e74ac35132
+ms.sourcegitcommit: 0b7070ec119e00e0dafe030bbfbef0ae5c9afa19
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/23/2022
-ms.locfileid: "65636116"
+ms.lasthandoff: 09/29/2022
+ms.locfileid: "68191439"
 ---
 # <a name="choose-between-basic-mobility-and-security-or-intune"></a>Elija entre Basic Mobility and Security o Intune
 
-[Microsoft Intune](/mem/intune/) es un producto independiente incluido con ciertos planes de Microsoft 365, mientras que Basic Mobility and Security forma parte de los planes de Microsoft 365.
+[Microsoft Intune](/mem/intune/) es un producto independiente incluido con determinados planes de Microsoft 365, mientras que Basic Mobility and Security forma parte de los planes de Microsoft 365.
 
  ## <a name="availability-of-basic-mobility-and-security-and-intune"></a>Disponibilidad de movilidad básica y seguridad y Intune
 
@@ -36,14 +37,14 @@ La movilidad básica y la seguridad y Intune se incluyen en varios planes, que s
 
 | Plan | Movilidad y seguridad básicas | Microsoft Intune |
 |:-----|:-----|:-----|
-|Aplicaciones de Microsoft 365|Sí|No|
-|Microsoft 365 Empresa Básico|Sí|No|
-|Microsoft 365 Empresa Estándar|Sí|No|
-|Office 365 E1 |Sí|No|
+|Aplicaciones de Microsoft 365|Yes|No|
+|Microsoft 365 Empresa Básico|Yes|No|
+|Microsoft 365 Empresa Estándar|Yes|No|
+|Office 365 E1 |Yes|No|
 |Office 365 E3 |Sí|No|
-|Office 365 E5 |Sí|No|
+|Office 365 E5 |Yes|No|
 |Microsoft 365 Empresa Premium |Sí|Sí|
-|Microsoft 365 primera línea 3 |Sí|Sí|
+|Primera línea 3 de Microsoft 365 |Sí|Sí|
 |Microsoft 365 Enterprise E3 |Sí|Sí|
 |Microsoft 365 Enterprise E5 |Sí|Sí|
 |Microsoft 365 Educación A1 |Sí|Sí|
@@ -56,7 +57,7 @@ La movilidad básica y la seguridad y Intune se incluyen en varios planes, que s
 > [!NOTE]
 > No puede empezar a usar Basic Mobility and Security si ya usa Microsoft Intune.
 
- Para obtener más información, consulte [Microsoft 365 y Office 365 descripciones del servicio de plataforma](/office365/servicedescriptions/office-365-platform-service-description/office-365-platform-service-description).
+ Para obtener más información, consulte [Descripciones del servicio de plataforma de Microsoft 365 y Office 365](/office365/servicedescriptions/office-365-platform-service-description/office-365-platform-service-description).
 
 ## <a name="differences-in-capabilities"></a>Diferencias en las capacidades
 
@@ -67,39 +68,39 @@ Microsoft Intune y basic mobility and security integrados le ofrecen la capacida
 
 | Área de característica | Resaltados de características | Movilidad y seguridad básicas | Microsoft Intune |
 |:-----|:-----|:-----|:-----|
-|Tipos de dispositivo|Administración de distintas plataformas del sistema operativo y variantes principales del modo de administración. |Windows<br/>iOS<br/>Android<br/>Android samsung KNOX<br/>|Windows<br/>iOS<br/>Android<br/>Android samsung KNOX<br/>mac OS, sistema operativo iPad|
-|Cumplimiento de dispositivos|Establezca y administre directivas de seguridad, como el bloqueo de PIN de nivel de dispositivo y la detección de jailbreak. |Limitaciones en Android dispositivos. Consulte [los detalles](capabilities.md). |Sí|
-|Acceso condicional basado en el cumplimiento del dispositivo |Impedir que los dispositivos no conformes accedan al correo electrónico corporativo y a los datos desde la nube. |No se admite en Windows 10.<br/>Limitado a controlar el acceso a Exchange Online, SharePoint Online y Outlook. |Sí |
-|Configuración de dispositivos  |Configurar la configuración del dispositivo (por ejemplo, deshabilitar la cámara)|Conjunto limitado de configuraciones.|Sí|
+|Tipos de dispositivo|Administración de distintas plataformas del sistema operativo y variantes principales del modo de administración. |Windows<br/>iOS<br/>Android<br/>Android Samsung KNOX<br/>|Windows<br/>iOS<br/>Android<br/>Android Samsung KNOX<br/>mac OS, iPad OS|
+|Cumplimiento de dispositivos|Establezca y administre directivas de seguridad, como el bloqueo de PIN de nivel de dispositivo y la detección de jailbreak. |Limitaciones en dispositivos Android. Consulte [los detalles](capabilities.md). |Yes|
+|Acceso condicional basado en el cumplimiento del dispositivo |Impedir que los dispositivos no conformes accedan al correo electrónico corporativo y a los datos desde la nube. |No se admite en Windows 10.<br/>Limitado a controlar el acceso a Exchange Online, SharePoint Online y Outlook. |Yes |
+|Configuración de dispositivos  |Configurar la configuración del dispositivo (por ejemplo, deshabilitar la cámara)|Conjunto limitado de configuraciones.|Yes|
 |Perfiles de correo electrónico  |Aprovisione un perfil de correo electrónico nativo en el dispositivo. |Sí|Sí|
 |Perfiles de WiFi |Aprovisione un perfil de WiFi nativo en el dispositivo. |No|Sí|
 |Perfiles de VPN |Aprovisione un perfil de VPN nativo en el dispositivo. |No|Sí|
 |Administración de aplicaciones móviles  |Implemente las aplicaciones de línea de negocio internas y desde las tiendas de aplicaciones a los usuarios. |No|Sí|
-|Protección de aplicaciones móviles  |Permitir que los usuarios accedan de forma segura a la información corporativa mediante las Office aplicaciones móviles y de línea de negocio que conocen, a la vez que garantizan la seguridad de los datos, ya que ayudan a restringir acciones como copiar, cortar, pegar y guardar como solo aquellas aplicaciones administradas aprobadas para datos corporativos. Funciona incluso si los dispositivos no están inscritos en Basic Mobility and Security. Consulte Protección de datos de aplicaciones mediante directivas MAM. |No|Sí|
+|Protección de aplicaciones móviles  |Permitir que los usuarios accedan de forma segura a la información corporativa mediante las aplicaciones móviles y de línea de negocio de Office que conocen, a la vez que garantizan la seguridad de los datos al ayudar a restringir acciones como copiar, cortar, pegar y guardar como solo aquellas aplicaciones administradas aprobadas para datos corporativos. Funciona incluso si los dispositivos no están inscritos en Basic Mobility and Security. Consulte Protección de datos de aplicaciones mediante directivas MAM. |No|Sí|
 |Explorador administrado  |Habilite la exploración web más segura mediante la aplicación Edge. |No|Sí|
 |Programas de inscripción táctil cero (AutoPilot) |Inscriba un gran número de dispositivos corporativos, a la vez que simplifica la configuración del usuario. |No|Sí|
 
-Además de las características enumeradas en la tabla anterior, Basic Mobility and Security y Intune incluyen un conjunto de acciones remotas que envían comandos a dispositivos a través de Internet. Por ejemplo, puede quitar Office datos del dispositivo de un empleado mientras deja los datos personales en su lugar (retirarse), quitar Office aplicaciones del dispositivo de un empleado (borrar) o restablecer un dispositivo a su configuración de fábrica (borrado completo).
+Además de las características enumeradas en la tabla anterior, Basic Mobility and Security y Intune incluyen un conjunto de acciones remotas que envían comandos a dispositivos a través de Internet. Por ejemplo, puede quitar datos de Office del dispositivo de un empleado mientras deja los datos personales en su lugar (retirar), quitar aplicaciones de Office del dispositivo de un empleado (borrar) o restablecer un dispositivo a su configuración de fábrica (borrado completo).
 
 Las acciones remotas básicas de movilidad y seguridad incluyen retirar, borrar y borrar completamente. Para obtener más información sobre las acciones básicas de movilidad y seguridad, consulte [Funcionalidades de movilidad y seguridad básicas](capabilities.md).
 
 Con Intune tiene el siguiente conjunto de acciones:
 
 - [Restablecimiento de Autopilot](/mem/autopilot/windows-autopilot-reset) (solo Windows)
-- [Recuperación de claves de BitLocker](https://support.microsoft.com/windows/finding-your-bitlocker-recovery-key-in-windows-6b71ad27-0b89-ea08-f143-056f5ab347d6) (solo Windows)
+- [Recuperación de claves de Bitlocker](https://support.microsoft.com/windows/finding-your-bitlocker-recovery-key-in-windows-6b71ad27-0b89-ea08-f143-056f5ab347d6) (solo Windows)
 - [Usar borrado, retirada o anulación manual de la inscripción del dispositivo](/mem/intune/remote-actions/devices-wipe#delete-devices-from-the-intune-portal)
 - [Deshabilitar el bloqueo de activación](/mem/intune/remote-actions/device-activation-lock-disable) (solo iOS)
 - [Inicio nuevo](/mem/intune/remote-actions/device-fresh-start) (solo Windows)
 - [Examen completo](/mem/intune/configuration/device-restrictions-windows-10#microsoft-defender-antivirus) (solo Windows 10)
 - [Buscar dispositivo](/mem/intune/remote-actions/device-locate) (solo para iOS)
-- [Modo perdido](/mem/intune/remote-actions/device-lost-mode) (solo iOS) - [Examen rápido](/mem/intune/configuration/device-restrictions-windows-10#microsoft-defender-antivirus) (solo Windows 10)
+- [Modo perdido](/mem/intune/remote-actions/device-lost-mode) (solo iOS): [examen rápido](/mem/intune/configuration/device-restrictions-windows-10#microsoft-defender-antivirus) (solo Windows 10)
 - [Control remoto en Android](/mem/intune/remote-actions/teamviewer-support)
 - [Bloqueo remoto](/mem/intune/remote-actions/device-remote-lock)
 - [Cambiar el nombre del dispositivo](/mem/intune/remote-actions/device-rename)
 - Restablecer [reinicio](/mem/intune/remote-actions/device-restart) [del código de acceso](/mem/intune/remote-actions/device-passcode-reset) (solo Windows)
 - [Actualizar Windows Defender Security Intelligence](https://www.microsoft.com/en-us/wdsi/defenderupdates) (solo Windows)
 - [Windows 10 restablecimiento del PIN](/windows/security/identity-protection/hello-for-business/hello-feature-pin-reset) (solo Windows)
-- [Enviar notificaciones personalizadas](/mem/intune/remote-actions/custom-notifications#send-a-custom-notification-to-a-single-device) (Android, iOS, iPad sistema operativo)
+- [Envío de notificaciones personalizadas](/mem/intune/remote-actions/custom-notifications#send-a-custom-notification-to-a-single-device) (Android, iOS, sistema operativo iPad)
 - [Sincronizar dispositivo](/mem/intune/remote-actions/device-sync)
 
 Para obtener más información sobre las acciones de Intune, consulte [Microsoft Intune documentación](/mem/intune/).

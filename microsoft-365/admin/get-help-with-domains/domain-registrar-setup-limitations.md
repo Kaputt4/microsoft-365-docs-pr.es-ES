@@ -7,9 +7,10 @@ author: pebaum
 manager: scotv
 audience: Admin
 ms.topic: article
-ms.service: o365-administration
+ms.service: microsoft-365-business
 ms.localizationpriority: high
 ms.collection:
+- scotvorg
 - M365-subscription-management
 - Adm_O365
 ms.custom:
@@ -20,12 +21,12 @@ search.appverid:
 - MET150
 ROBOTS: NOINDEX
 description: Algunos registradores de dominios ofrecen servicios limitados, lo que significa que no todas las características de Microsoft funcionarán con todos los dominios.
-ms.openlocfilehash: 2d192f03c5a586e4355c1f9a08d312a07af3d501
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
-ms.translationtype: HT
+ms.openlocfilehash: 361faf93e2b923b0c16ce7051f43663998be4dc7
+ms.sourcegitcommit: 0b7070ec119e00e0dafe030bbfbef0ae5c9afa19
+ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60164743"
+ms.lasthandoff: 09/29/2022
+ms.locfileid: "68191197"
 ---
 # <a name="domain-registrars-with-setup-limitations"></a>Registradores de dominios con limitaciones de configuración
 
@@ -41,7 +42,7 @@ Algunos registradores de dominios tienen limitaciones de servicio significativas
 
 ## <a name="create-dns-records-at-dnsmadeeasy-for-microsoft"></a>Crear registros DNS en DNSMadeEasy para Microsoft
 
-Para las cuentas de DNSMadeEasy, el dominio que agregó se compró de un registrador de dominios separado. DNSMadeEasy no ofrece servicios de registro de dominios. Su capacidad para iniciar sesión en DNSMadeEasy y crear el registro DNS es una prueba suficiente de que es el propietario.
+For DNSMadeEasy accounts, the domain you added was purchased from a separate domain registrar. DNSMadeEasy does not offer domain registration services. Your ability to log in at DNSMadeEasy and create the DNS record is sufficient proof of ownership.
 
 ## <a name="create-dns-records-at-easydns-for-microsoft"></a>Crear registros DNS en easyDNS para Microsoft
 
@@ -49,19 +50,19 @@ Los registros SRV no están disponibles actualmente en ningún paquete de servic
 
 ## <a name="create-dns-records-at-freenom-for-microsoft"></a>Crear registros DNS en Freenom para Microsoft
 
-El sitio web de Freenom no admite la adición de registros SRV, lo que significa que varias características de Teams y Correo electrónico no funcionarán. Independientemente del plan de Microsoft que use, existen limitaciones de servicio significativas y es posible que desee cambiar a otro proveedor de host DNS.
+The Freenom website doesn't support adding SRV records, which means that several Teams and Email features won't work. No matter which Microsoft plan you use, there are significant service limitations, and you may want to switch to a different DNS hosting provider.
 
 ## <a name="create-dns-records-at-mydomain-for-microsoft"></a>Crear registros DNS en MyDomain para Microsoft
 
-El sitio web MyDomain no admite registros SRV, lo que significa que varias características de Teams y Correo electrónico no funcionarán. Independientemente del plan de Microsoft que use, si administra los registros DNS en MyDomain, existen limitaciones de servicio significativas y es posible que quiera cambiar a otro proveedor de host DNS.
+The MyDomain website doesn't support SRV records, which means several Teams and Email features won't work. No matter which Microsoft plan you use, if you manage your DNS records at MyDomain, there are significant service limitations, and you might want to switch to a different DNS hosting provider.
 
 ## <a name="create-dns-records-for-microsoft-using-windows-based-dns"></a>Crear registros DNS para Microsoft con DNS basado en Windows
 
-Vaya a la página que tiene los registros DNS de su dominio. Si está trabajando en Windows Server 2008, vaya a **Iniciar**, **Ejecutar**. Si está trabajando en Windows Server 2012, presione la tecla **Windows** y **r**. Escriba **dnsmgmnt.msc** y, a continuación, seleccione **Aceptar**. En el Administrador de DNS, expanda **nombre del servidor DNS**,  **Zonas de búsqueda directa**. Seleccione el dominio. Ya está listo para crear los registros DNS.
+Go to the page that has the DNS records for your domain. If you're working in Windows Server 2008, go to **Start**, **Run**. If you're working in Windows Server 2012, press the **Windows key** and **r**. Type **dnsmgmnt.msc**, and then select **OK**. In DNS Manager, expand **DNS server name**,  **Forward Lookup Zones**. Select your domain. You're now ready to create the DNS records.
 
 ## <a name="create-dns-records-when-your-domain-is-managed-by-google-enom"></a>Crear registros DNS cuando Google (eNom) administra su dominio
 
-Si compró el dominio a través de Google mientras se registraba en su cuenta profesional de Google Apps, Google administra los registros DNS, aunque se registren con eNom. Puede acceder al eNom y crear un DNS a través de la página Google Domains.
+If you purchased your domain through Google while signing up for your Google Apps for Work account, your DNS records are managed by Google but registered with eNom. You can access eNom, and create DNS, through the Google Domains page.
 
 ## <a name="create-dns-records-at-11-ionos-for-microsoft"></a>Crear registros DNS en 1&1 IONOS para Microsoft
 
@@ -69,14 +70,14 @@ Si compró el dominio a través de Google mientras se registraba en su cuenta pr
 
 Si a pesar de esta limitación de servicio, decide administrar sus propios registros DNS de Microsoft en 1&1 IONOS, siga los pasos de este artículo para comprobar su dominio y configurar registros DNS para correo electrónico, Skype Empresarial Online, etc.
 
-1&1 IONOS requiere una solución alternativa para que pueda usar un registro MX junto con los registros CNAME necesarios para los servicios de correo electrónico de Microsoft. Esta solución alternativa requiere que cree un conjunto de subdominios en 1&1 IONOS y que los asigne a registros CNAME.
+1&1 IONOS requires a workaround so that you can use an MX record together with the CNAME records required for Microsoft email services. This workaround requires you to create a set of subdomains at 1&1 IONOS, and to assign them to CNAME records.
 
 > [!NOTE]
-> Asegúrese de que tiene al menos dos subdominios disponibles antes de iniciar este procedimiento. Se recomienda esta solución solo si ya tiene experiencia con la creación de subdominios en 1&1 IONOS.
+> Make sure that you have at least two available subdomains before starting this procedure. We recommend this solution only if you already have experience with creating subdomains at 1&1 IONOS.
 
 ### <a name="basic-cname-records"></a>Registros CNAME básicos
 
-1.  Para empezar, vaya a la página de dominios en 1&1 IONOS. Se le pedirá que inicie sesión.
+1.  To get started, go to your domains page at 1&1 IONOS. You'll be prompted to log in.
 
 1.  Seleccione **Administrar dominios**.
 
@@ -84,7 +85,7 @@ Si a pesar de esta limitación de servicio, decide administrar sus propios regis
 
 1.  En primer lugar, deberá crear el subdominio Autodiscover. En la sección **Información general de subdominio**, elija **Crear subdominio**.
 
-1.  En el cuadro **Crearde subdominio** para el nuevo subdominio, escriba o copie y pegue solo el valor **Crear subdominio** de la tabla siguiente. (Agregará el valor de **Alias** en un paso posterior).
+1.  In the **Create Subdomain** box for the new subdomain, type or copy and paste only the **Create Subdomain** value from the following table. (You'll add the **Alias** value at a later step.)
 
     |Crear subdominio|Alias|
     |:----|:----|
@@ -110,13 +111,13 @@ Si a pesar de esta limitación de servicio, decide administrar sus propios regis
 
 ### <a name="additional-cname-records"></a>Registros CNAME adicionales
 
-Los registros CNAME adicionales del procedimiento siguiente habilitan los servicios de Skype Empresarial Online. Siga los mismos pasos que usó para los dos registros CNAME que ya ha creado.
+The additional CNAME records in the following procedure enable Skype for Business Online services. Use the same steps that you used for the two CNAME records you already created.
 
 **Cree el tercer subdominio (Lyncdiscover)**
 
 1.  En la sección **Información general de subdominio**, seleccione **Crear subdominio**.
 
-1.  En el cuadro **Crearde subdominio** para el nuevo subdominio, escriba o copie y pegue solo el valor **Crear subdominio** de la tabla siguiente. (Agregará el valor de **Alias** en un paso posterior).
+1.  In the **Create Subdomain** box for the new subdomain, type or copy and paste only the **Create Subdomain** value from the following table. (You'll add the **Alias** value at a later step.)
 
     |Crear subdominio|Alias|
     |:----|:----|
@@ -126,7 +127,7 @@ Los registros CNAME adicionales del procedimiento siguiente habilitan los servic
 
 1.  En la página Centro de dominios, seleccione **Administrar subdominios**.
 
-1.  En la sección **información general de subdominio**, busque el subdominio lyncdiscover que acaba de crear y, a continuación, seleccione el control Panel (v) para ese subdominio. En el área **configuración de subdominio**, seleccione **Editar configuración DNS**.
+1.  In the **Subdomain Overview** section, find the lyncdiscover subdomain that you just created, and then select the Panel (v) control for that subdomain. In the **Subdomain Settings** area, select **Edit DNS Settings**.
 
 1.  En la sección **Registros A/AAAA (direcciones IP)**, en el área **Dirección IP (registro A)**, seleccione **CNAME**.
 
@@ -144,7 +145,7 @@ Los registros CNAME adicionales del procedimiento siguiente habilitan los servic
 
 1.  En la sección **Información general de subdominio**, elija **Crear subdominio**.
 
-1.  En el cuadro **Crear subdominio** para el nuevo subdominio, escriba o copie y pegue solo el valor **Crear subdominio** de la tabla siguiente. (Agregará el valor de **alia** en un paso posterior).
+1.  In the **Create Subdomain** box for the new subdomain, type or copy and paste only the **Create Subdomain** value from the following table. (You'll add the **Alias** value a later step.)
 
     |Crear subdominio|Alias|
     |:----|:----|

@@ -7,9 +7,10 @@ author: MikePlumleyMSFT
 manager: scotv
 audience: Admin
 ms.topic: article
-ms.service: o365-administration
+ms.service: microsoft-365-business
 ms.localizationpriority: high
 ms.collection:
+- scotvorg
 - M365-subscription-management
 - Adm_O365
 - Adm_TOC
@@ -24,12 +25,12 @@ search.appverid:
 - MOE150
 ms.assetid: 758759ad-63ee-4ea9-90a3-39f941897b7d
 description: Los miembros del Grupo de Microsoft 365 obtienen un correo electrónico de grupo y un área de trabajo compartida para las conversaciones, los archivos y los eventos de calendario, así como Stream y Planner.
-ms.openlocfilehash: 7876acf9785de9c4630f83a804b700f5d1db6ff2
-ms.sourcegitcommit: 2f6a7410e9919f753a759c1ada441141e18f06fd
-ms.translationtype: HT
+ms.openlocfilehash: 1065a9d8321f16391f01a2153c18ea11f7f52136
+ms.sourcegitcommit: 0b7070ec119e00e0dafe030bbfbef0ae5c9afa19
+ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/30/2022
-ms.locfileid: "67084331"
+ms.lasthandoff: 09/29/2022
+ms.locfileid: "68191373"
 ---
 # <a name="compare-groups"></a>Comparar grupos
 
@@ -83,13 +84,13 @@ Los Grupos de Microsoft 365 no pueden ser miembros de ningún grupo de distribuc
 
 Los [grupos de distribución dinámicos](/exchange/recipients-in-exchange-online/manage-dynamic-distribution-groups/manage-dynamic-distribution-groups) son grupos habilitados para correo que se usan para enviar correos a personas con atributos específicos, como departamento o ubicación. Estos atributos se definen en el Centro de administración de Exchange en lugar de en Azure AD.
 
-A diferencia de los grupos de distribución regular, que contienen un conjunto definido de miembros, la lista de miembros para grupos de distribución dinámica se calcula cada vez que se envía un mensaje al grupo, en base a los filtros y condiciones definidos. Cuando se envía un mensaje de correo electrónico a un grupo de distribución dinámico, éste se entrega a todos los destinatarios de la organización que coincidan con los criterios definidos para ese grupo.
+Unlike regular distribution groups that contain a defined set of members, the membership list for dynamic distribution groups is calculated each time a message is sent to the group, based on the filters and conditions that you define. When an email message is sent to a dynamic distribution group, it's delivered to all recipients in the organization that match the criteria defined for that group.
 
 ## <a name="security-groups"></a>Grupos de seguridad
 
 [Los grupos de seguridad](../email/create-edit-or-delete-a-security-group.md) se usan para conceder acceso a los recursos de Microsoft 365, como SharePoint. Pueden simplificar la administración, ya que solo necesita administrar el grupo, en lugar de agregar usuarios a cada recurso por separado.
 
-Los grupos de seguridad pueden contener usuarios o dispositivos. La creación de un grupo de seguridad para dispositivos se puede usar con los servicios de administración de dispositivos móviles, como Intune.
+Security groups can contain users or devices. Creating a security group for devices can be used with mobile device management services, such as Intune.
 
 Los grupos de seguridad se pueden [configuran para la pertenencia dinámica en Azure Active Directory](/azure/active-directory/users-groups-roles/groups-change-type), lo que permite que los miembros del grupo o los dispositivos se agreguen o eliminen automáticamente en función de los atributos del usuario, como el departamento, la ubicación o el título; o los atributos del dispositivo, como la versión del sistema operativo.
 

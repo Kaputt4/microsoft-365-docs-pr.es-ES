@@ -11,17 +11,19 @@ author: mjcaparas
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
-ms.collection: M365-security-compliance
+ms.collection:
+- m365-security
+- tier3
 ms.topic: article
 ms.subservice: mde
 ms.custom: api
 search.appverid: met150
-ms.openlocfilehash: 727389e9d6b1d21662e7ca0b8a1753fa242ec56e
-ms.sourcegitcommit: 9b133379196da2b3a4bb311b07ff274f43780f68
+ms.openlocfilehash: ea7c171a3c9c8f050b647b753addeee404a3bf94
+ms.sourcegitcommit: 4e42bafee965446f44f7f57d1defed2b9b24fce8
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/14/2022
-ms.locfileid: "67704686"
+ms.lasthandoff: 09/30/2022
+ms.locfileid: "68222146"
 ---
 # <a name="isolate-machine-api"></a>Aislar la API de máquina
 
@@ -54,7 +56,7 @@ Aísla un dispositivo del acceso a la red externa.
 >
 > - El aislamiento completo está disponible para dispositivos en Windows 10, versión 1703 y en Windows 11.
 > - El aislamiento selectivo está disponible para dispositivos en Windows 10, versión 1709 o posterior y en Windows 11.
-> - Al aislar un dispositivo, solo se permiten determinados procesos y destinos. Por lo tanto, los dispositivos que están detrás de un túnel VPN completo no podrán acceder al servicio en la nube Microsoft Defender para punto de conexión después de que el dispositivo esté aislado. Se recomienda usar una VPN de túnel dividido para Microsoft Defender para punto de conexión y el tráfico relacionado con la protección basada en la nube del Antivirus de Microsoft Defender.
+> - Al aislar un dispositivo, solo se permiten determinados procesos y destinos. Por lo tanto, los dispositivos que están detrás de un túnel VPN completo no podrán acceder al servicio en la nube Microsoft Defender para punto de conexión después de que el dispositivo esté aislado. Se recomienda usar una VPN de túnel dividido para Microsoft Defender para punto de conexión y Microsoft Defender tráfico relacionado con la protección basada en la nube de Antivirus.
 
 ## <a name="permissions"></a>Permisos
 
@@ -70,6 +72,8 @@ Delegado (cuenta profesional o educativa)|Machine.Isolate|"Aislar máquina"
 >
 > - El usuario debe tener al menos el siguiente permiso de rol: "Acciones de corrección activas" (consulte [Creación y administración de roles](user-roles.md) para obtener más información).
 > - El usuario debe tener acceso al dispositivo en función de la configuración del grupo de dispositivos (consulte [Creación y administración de grupos de dispositivos](machine-groups.md) para obtener más información).
+>
+> La creación de grupos de dispositivos se admite en El plan 1 y el plan 2 de Defender para punto de conexión. 
 
 ## <a name="http-request"></a>Solicitud HTTP
 

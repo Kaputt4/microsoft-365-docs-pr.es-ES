@@ -8,9 +8,10 @@ manager: scotv
 ms.reviewer: seemg, pablom
 audience: Admin
 ms.topic: article
-ms.service: o365-administration
+ms.service: microsoft-365-business
 ms.localizationpriority: medium
 ms.collection:
+- scotvorg
 - highpri
 - M365-subscription-management
 - Adm_O365
@@ -31,12 +32,12 @@ search.appverid:
 ROBOTS: NOINDEX
 description: Comprenda lo que necesita saber sobre las versiones más recientes de los programas de Office antes de pasar por el proceso de registro para Office 365.
 ms.date: 03/17/2021
-ms.openlocfilehash: f3749dd8f97e2304173f5b47ed377fcfbb9c2d7a
-ms.sourcegitcommit: 37e137535c4f70702afe1a5eeaa899c75ee02cfd
+ms.openlocfilehash: 455cb56535b3375547a0e408f6d338f4b0b49767
+ms.sourcegitcommit: 0b7070ec119e00e0dafe030bbfbef0ae5c9afa19
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/13/2022
-ms.locfileid: "67662946"
+ms.lasthandoff: 09/29/2022
+ms.locfileid: "68191571"
 ---
 # <a name="how-to-sign-up---admin-help"></a>Cómo registrarse: Ayuda de Administración
 
@@ -97,7 +98,7 @@ No es necesario cancelar la evaluación. Si no compra la suscripción de prueba,
 
   - **País** en el que se usarán los servicios. **No** podrá cambiar el país más adelante, ni siquiera durante el proceso de registro; tendrá que reiniciar el asistente de registro.
 
-  - **Correo electrónico** y **número de teléfono** para que podamos ponernos en contacto con usted, si es necesario, para asuntos relacionados con la suscripción. Por ejemplo, si olvida su contraseña, usaríamos esta información para enviarle una temporal. También podemos enviar su información de facturación a la dirección de correo electrónico que especifique.
+  - **Email** and **phone number** so we can contact you if needed about your subscription. For example, if you forget your password, we would use this information to send you a temporary one. We also send your billing information to the email address you specify.
 
     > [!NOTE]
     > La dirección de correo electrónico que escriba aquí es diferente de la dirección de correo electrónico de Microsoft 365 (su nombre de inicio de sesión, a continuación). Puesto que se trata de la dirección a la que enviaremos la información de facturación, le recomendamos que use una dirección de correo electrónico adecuada para recibir mensajes de trabajo.

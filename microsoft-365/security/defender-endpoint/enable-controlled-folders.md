@@ -14,15 +14,17 @@ ms.author: dansimp
 ms.reviewer: oogunrinde, sugamar
 manager: dansimp
 ms.subservice: mde
-ms.collection: m365-security-compliance
+ms.collection:
+- m365-security
+- tier3
 ms.date: ''
 search.appverid: met150
-ms.openlocfilehash: c78b1af1166af73bfec05928cd9ee9982dd4f9f1
-ms.sourcegitcommit: 9b133379196da2b3a4bb311b07ff274f43780f68
+ms.openlocfilehash: cab2e6b6031f91dfa21de44253f06ab7e1d58ddc
+ms.sourcegitcommit: 0b7070ec119e00e0dafe030bbfbef0ae5c9afa19
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/14/2022
-ms.locfileid: "67694929"
+ms.lasthandoff: 09/29/2022
+ms.locfileid: "68207432"
 ---
 # <a name="enable-controlled-folder-access"></a>Habilitar el acceso controlado a carpetas
 
@@ -54,10 +56,10 @@ Puede habilitar el acceso controlado a carpetas mediante cualquiera de estos mé
 
 directiva de grupo configuración que deshabilita la combinación de listas de administradores locales invalidará la configuración de acceso controlado a carpetas. También invalidan las carpetas protegidas y las aplicaciones permitidas establecidas por el administrador local mediante el acceso controlado a carpetas. Estas directivas incluyen:
 
-- Antivirus de Microsoft Defender **Configure local administrator merge behavior for lists**
+- Microsoft Defender Antivirus **Configurar el comportamiento de combinación de administrador local para listas**
 - System Center Endpoint Protection **Permitir a los usuarios agregar exclusiones e invalidaciones**
 
-Para obtener más información sobre cómo deshabilitar la combinación de listas locales, vea [Impedir o permitir que los usuarios modifiquen localmente la configuración de la directiva del Antivirus de Microsoft Defender](/windows/security/threat-protection/microsoft-defender-antivirus/configure-local-policy-overrides-microsoft-defender-antivirus).
+Para obtener más información sobre cómo deshabilitar la combinación de listas locales, vea [Impedir o permitir que los usuarios modifiquen localmente Microsoft Defender configuración de directivas de Antivirus](/windows/security/threat-protection/microsoft-defender-antivirus/configure-local-policy-overrides-microsoft-defender-antivirus).
 
 ## <a name="windows-security-app"></a>Aplicación Seguridad de Windows
 
@@ -126,7 +128,7 @@ Use el proveedor de servicios de configuración [./Vendor/MSFT/Policy/Config/Con
 
 2. En el **Editor de administración de directiva de grupo**, vaya a **Configuración del equipo** y seleccione **Plantillas administrativas**.
 
-3. Expanda el árbol a **componentes de Windows > Antivirus de Microsoft Defender > Windows Defender Exploit Guard > acceso controlado a carpetas**.
+3. Expanda el árbol a **componentes de Windows > Microsoft Defender Antivirus > Windows Defender Exploit Guard > acceso controlado a carpetas**.
 
 4. Haga doble clic en la opción **Configurar acceso controlado a** carpetas y establezca la opción **en Habilitado**. En la sección de opciones, debe especificar una de las siguientes opciones:
    - **Habilitar** : no se permitirá que las aplicaciones malintencionadas y sospechosas realicen cambios en los archivos de carpetas protegidas. Se proporcionará una notificación en el registro de eventos de Windows.

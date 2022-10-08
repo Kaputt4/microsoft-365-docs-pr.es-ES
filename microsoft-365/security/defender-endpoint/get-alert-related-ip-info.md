@@ -11,17 +11,19 @@ author: mjcaparas
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
-ms.collection: M365-security-compliance
+ms.collection:
+- m365-security
+- tier3
 ms.topic: article
 ms.subservice: mde
 ms.custom: api
 search.appverid: met150
-ms.openlocfilehash: 16b2c38722285f157849fbc9d6a25e0e4346121e
-ms.sourcegitcommit: 9b133379196da2b3a4bb311b07ff274f43780f68
+ms.openlocfilehash: e128f48574619f4e73df21ed855f4f5d3bd55322
+ms.sourcegitcommit: 0b7070ec119e00e0dafe030bbfbef0ae5c9afa19
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/14/2022
-ms.locfileid: "67696329"
+ms.lasthandoff: 09/29/2022
+ms.locfileid: "68207322"
 ---
 # <a name="get-alert-related-ips-information-api"></a>Obtención de la API de información de direcciones IP relacionadas con alertas
 
@@ -62,6 +64,8 @@ Delegado (cuenta profesional o educativa)|Ip.Read.All|"Leer perfiles de direcci�
 >
 > - El usuario debe tener al menos el siguiente permiso de rol: "Ver datos" (para obtener más información, consulte [Creación y administración de roles](user-roles.md)
 > - El usuario debe tener acceso al dispositivo asociado a la alerta, en función de la configuración del grupo de dispositivos (para obtener más información, consulte [Creación y administración de grupos de dispositivos](machine-groups.md)).
+>
+> La creación de grupos de dispositivos se admite en El plan 1 y el plan 2 de Defender para punto de conexión.
 
 ## <a name="http-request"></a>Solicitud HTTP
 
