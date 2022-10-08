@@ -1,5 +1,5 @@
 ---
-title: Definición de entidad secreta de cliente de Azure AD (versión preliminar)
+title: Definición de entidad secreta de cliente de Azure AD
 f1.keywords:
 - CSH
 ms.author: chrfox
@@ -14,21 +14,26 @@ f1_keywords:
 ms.service: O365-seccomp
 ms.localizationpriority: medium
 ms.collection:
-- M365-security-compliance
+- tier3
+- purview-compliance
 hideEdit: true
 feedback_system: None
 recommendations: false
 description: Definición de entidad de tipo de información confidencial del secreto de cliente de Azure AD.
-ms.openlocfilehash: ea597fc5493db6b6f919d907dcb61af115299ea1
-ms.sourcegitcommit: 5aed330d8af523f0dffe5e392f1c79f047e38172
+ms.openlocfilehash: b94130c5ec5a7125890c8fdd2fad4529e461bc5b
+ms.sourcegitcommit: 50da6f1f6ef2274c17ed9729e7ad84395b0a9be2
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/21/2022
-ms.locfileid: "66999515"
+ms.lasthandoff: 10/08/2022
+ms.locfileid: "68503454"
 ---
-# <a name="azure-ad-client-secret-preview"></a>Secreto de cliente de Azure AD (versión preliminar)
+# <a name="azure-ad-client-secret"></a>Secreto de cliente de Azure AD
 
-## <a name="format"></a>Formato
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
+
+Esta SIT también se incluye en el SIT de [todas las credenciales](sit-defn-all-creds.md) agrupadas.
+
+ ## <a name="format"></a>Formato
 
 Combinación de hasta 40 caracteres que constan de letras, dígitos y caracteres especiales.
 
@@ -47,9 +52,15 @@ Por ejemplo:
 
 `abc7Q~defghijklmnopqrs0t123456789-_.~`
 
+## <a name="credential-example"></a>Ejemplo de credencial 
+
+`"AppId=01234567-abcd-abcd-abcd-abcdef012345;AppSecret=abc7Q~defghijklmnopqrstuvwxyz-_.~0123"`
+
 ## <a name="checksum"></a>Suma de comprobación
 
 Sí
+
+Los SIT que tienen sumas de comprobación usan un cálculo único para comprobar si la información es válida. Esto significa que cuando el valor **de suma de comprobación** es **Sí**, el servicio puede realizar una detección positiva solo en función de los datos confidenciales. Cuando el valor **de suma de comprobación** es **No** se deben detectar elementos adicionales (secundarios) para que el servicio realice una detección positiva.
 
 ## <a name="definition"></a>Definición
 
@@ -69,6 +80,6 @@ Los patrones están diseñados para que coincidan con las credenciales reales co
 ### <a name="keyword_appsecret"></a>Keyword_AppSecret:
 
 - Secreto
-- assword
+- contraseña
 - clave
 

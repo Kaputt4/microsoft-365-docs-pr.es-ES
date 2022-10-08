@@ -11,17 +11,20 @@ ms.pagetype: security
 ms.author: macapara
 author: mjcaparas
 ms.localizationpriority: medium
+ms.date: 09/26/2022
 manager: dansimp
 audience: ITPro
-ms.collection: M365-security-compliance
+ms.collection:
+- m365-security
+- tier3
 ms.topic: conceptual
 ms.subservice: mde
-ms.openlocfilehash: 106bdd9deafe172ce31085cfee0f30f8a61bac0c
-ms.sourcegitcommit: 228fa13973bf7c2d91504703fab757f552ae40dd
+ms.openlocfilehash: 549cf88fe713b54ad3a37eb32deddda39cbe9e9a
+ms.sourcegitcommit: 4e42bafee965446f44f7f57d1defed2b9b24fce8
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/01/2022
-ms.locfileid: "67520399"
+ms.lasthandoff: 09/30/2022
+ms.locfileid: "68233692"
 ---
 # <a name="microsoft-defender-for-endpoint-for-us-government-customers"></a>Microsoft Defender para punto de conexión para clientes del Gobierno de los EE. UU
 
@@ -119,16 +122,17 @@ macOS|![Sí.](images/svg/check-yes.svg)|![Sí](images/svg/check-yes.svg)|![Sí](
 Android|![Sí.](images/svg/check-yes.svg) <br /> |![Sí](images/svg/check-yes.svg) <br /> |![Sí](images/svg/check-yes.svg) <br /> 
 iOS|![Sí.](images/svg/check-yes.svg) <br /> |![Sí](images/svg/check-yes.svg) <br /> |![Sí](images/svg/check-yes.svg) <br /> 
 
-> [!NOTE]
-> <sup>1</sup> La revisión debe implementarse antes de la incorporación del dispositivo para configurar Defender para punto de conexión en el entorno correcto.
->
-> <sup>2</sup> Obtenga información sobre la [solución moderna unificada para Windows 2016 y 2012 R2](configure-server-endpoints.md#new-windows-server-2012-r2-and-2016-functionality-in-the-modern-unified-solution). Si previamente ha incorporado los servidores mediante MMA, siga las instrucciones que se proporcionan en [Migración del servidor](server-migration.md) para migrar a la nueva solución.
->
-> <sup>3</sup> Al usar [Microsoft Monitoring Agent](onboard-downlevel.md#install-and-configure-microsoft-monitoring-agent-mma) , deberá elegir "Azure US Government" en "Azure Cloud" si usa el [Asistente para la instalación](/azure/log-analytics/log-analytics-windows-agents#install-agent-using-setup-wizard) o si usa una [línea de comandos](/azure/log-analytics/log-analytics-windows-agents#install-agent-using-command-line) o un [script](/azure/log-analytics/log-analytics-windows-agents#install-agent-using-dsc-in-azure-automation) : establezca el parámetro "OPINSIGHTS_WORKSPACE_AZURE_CLOUD_TYPE" en 1. <br /> La versión mínima compatible con MMA es 10.20.18029 (marzo de 2020).
+**Footnotes**
+
+<sup>1</sup> La revisión debe implementarse antes de la incorporación del dispositivo para configurar Defender para punto de conexión en el entorno correcto.
+
+<sup>2</sup> Obtenga información sobre la [solución moderna unificada para Windows 2016 y 2012 R2](configure-server-endpoints.md#new-windows-server-2012-r2-and-2016-functionality-in-the-modern-unified-solution). Si previamente ha incorporado los servidores mediante MMA, siga las instrucciones que se proporcionan en [Migración del servidor](server-migration.md) para migrar a la nueva solución.
+
+<sup>3</sup> Al usar [Microsoft Monitoring Agent](onboard-downlevel.md#install-and-configure-microsoft-monitoring-agent-mma) , deberá elegir "Azure US Government" en "Azure Cloud" si usa el [Asistente para la instalación](/azure/log-analytics/log-analytics-windows-agents#install-agent-using-setup-wizard) o si usa una [línea de comandos](/azure/log-analytics/log-analytics-windows-agents#install-agent-using-command-line) o un [script](/azure/log-analytics/log-analytics-windows-agents#install-agent-using-dsc-in-azure-automation) : establezca el parámetro "OPINSIGHTS_WORKSPACE_AZURE_CLOUD_TYPE" en 1. <br /> La versión mínima compatible con MMA es 10.20.18029 (marzo de 2020).
 
 ### <a name="os-versions-when-using-microsoft-defender-for-servers"></a>Versiones del sistema operativo al usar Microsoft Defender para servidores
 
-Se admiten las siguientes versiones del sistema operativo cuando se usa [Microsoft Defender para servidores](/azure/security-center/security-center-wdatp):
+Se admiten las siguientes versiones del sistema operativo al usar [Microsoft Defender para servidores](/azure/security-center/security-center-wdatp):
 
 <br />
 
@@ -139,7 +143,7 @@ Versión del sistema operativo|GCC|GCC High|DoD
 Windows Server 2022|![Sí.](images/svg/check-yes.svg)|![Sí](images/svg/check-yes.svg)|![Sí](images/svg/check-yes.svg)
 Windows Server 2019|![Sí.](images/svg/check-yes.svg)|![Sí](images/svg/check-yes.svg)|![Sí](images/svg/check-yes.svg)
 Windows Server 2016|![Sí.](images/svg/check-yes.svg)|![Sí](images/svg/check-yes.svg)|![Sí](images/svg/check-yes.svg)
-Windows Server 2012 R2|![Sí.](images/svg/check-yes.svg)|![Sí](images/svg/check-yes.svg)|![Sí](images/svg/check-yes.svg)
+Windows Server 2012 R2|![Sí.](images/svg/check-yes.svg)|![Sí](images/svg/check-yes.svg)|![Sí](images/svg/check-yes.svg)
 Windows Server 2008 R2 SP1|![Sí.](images/svg/check-yes.svg)|![Sí](images/svg/check-yes.svg)|![Sí](images/svg/check-yes.svg)
 
 ## <a name="required-connectivity-settings"></a>Configuración de conectividad necesaria
@@ -184,20 +188,18 @@ Estas son las brechas conocidas:
 ****
 
 |Nombre de la característica|GCC|GCC High|DoD|
-|---|:---:|:---:|:---:|
-|Informes: Estado del dispositivo|![No](images/svg/check-no.svg) En desarrollo|![No](images/svg/check-no.svg) En desarrollo|![No](images/svg/check-no.svg) En desarrollo|
-|Informes: Filtrado de contenido web|![Yes](images/svg/check-yes.svg)|![No](images/svg/check-no.svg) En desarrollo|![No](images/svg/check-no.svg) En desarrollo|
+|----|:---:|:---:|:---:|
+|Informes: Filtrado de contenido web|![Sí](images/svg/check-yes.svg)|![Sí](images/svg/check-yes.svg)|![Sí](images/svg/check-yes.svg)|
+|Informes: Estado del dispositivo|![Sí](images/svg/check-yes.svg)|![Sí](images/svg/check-yes.svg)|![Sí](images/svg/check-yes.svg)|
 |Puntuación de seguridad de Microsoft|![Sí](images/svg/check-yes.svg) <sup>1</sup>|![No](images/svg/check-no.svg)|![No](images/svg/check-no.svg)|  
 |Expertos en amenazas de Microsoft|![No](images/svg/check-no.svg)|![No](images/svg/check-no.svg)|![No](images/svg/check-no.svg)|  
-> [!NOTE]
-> <sup>1</sup> Aunque la Puntuación de seguridad de Microsoft está disponible para los clientes de GCC, hay algunas recomendaciones de seguridad que no están disponibles.
+
+**Nota**
+
+<sup>1</sup> Aunque la Puntuación de seguridad de Microsoft está disponible para los clientes de GCC, hay algunas recomendaciones de seguridad que no están disponibles.
 
 
 Estas son las características y las brechas conocidas de [Mobile Threat Defense (Microsoft Defender para punto de conexión en Android & iOS):](mtd.md)
-
-<br />
-
-****
 
 |Nombre de la característica|GCC|GCC High|DoD|
 |---|:---:|:---:|:---:|

@@ -14,19 +14,22 @@ f1_keywords:
 ms.service: O365-seccomp
 ms.localizationpriority: medium
 ms.collection:
-- M365-security-compliance
+- tier3
+- purview-compliance
 hideEdit: true
 feedback_system: None
 recommendations: false
 description: Definición de entidad de tipo de información confidencial de identificador nacional de Finlandia.
-ms.openlocfilehash: 7d196482051afb6a889d855c80616a4a15ce1df2
-ms.sourcegitcommit: 5aed330d8af523f0dffe5e392f1c79f047e38172
+ms.openlocfilehash: 6c8c42d63610d91165c909f67845bf75aa182537
+ms.sourcegitcommit: be2334dbcd4e1bf309349d981a68a30e06de0297
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/21/2022
-ms.locfileid: "67000265"
+ms.lasthandoff: 10/04/2022
+ms.locfileid: "68379673"
 ---
 # <a name="finland-national-id"></a>Documento de identidad de Finlandia
+
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
 
 ## <a name="format"></a>Formato
 
@@ -34,7 +37,7 @@ seis dígitos más un carácter que indica un siglo más tres dígitos más un d
 
 ## <a name="pattern"></a>Patrón
 
-El patrón debe incluir todo lo siguiente:
+El patrón debe incluir todos estos patrones:
 
 - seis dígitos en el formato DDMMYY, que son una fecha de nacimiento
 - marcador century (ya sea '-', '+' o 'a')
@@ -97,21 +100,21 @@ Una política de DLP tiene confianza media en que ha detectado este tipo de info
 - social security number
 - sosiaaliturvatunnus
 - tax id
-- identificación fiscal no
+- núm. identificación fiscal
 - número de identificación fiscal
-- impuestos no #
-- impuestos no
-- número de impuestos
+- n.º de id. fiscal#
+- n.º fiscal
+- número de id. fiscal
 - número de registro fiscal
-- taxid #
-- taxidno #
-- taxidnumber #
-- taxno #
-- taxnumber #
-- taxnumber
-- tin id
-- tin no
-- Lata #
+- Id.fiscal#
+- númidfiscal#
+- númeroidentificaciónfiscal#
+- núm.fiscal#
+- núm.id.fiscal#
+- núm.id.fisca
+- id. tributaria
+- n.º de id. tributario
+- Número de identificación tributaria
 - tunnistenumero
 - tunnus numero
 - tunnusluku

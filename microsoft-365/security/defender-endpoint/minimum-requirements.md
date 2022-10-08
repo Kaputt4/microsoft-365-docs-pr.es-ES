@@ -12,17 +12,17 @@ ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection:
-- M365-security-compliance
-- m365-initiative-defender-endpoint
+- m365-security
+- tier1
 ms.topic: conceptual
 ms.subservice: mde
 search.appverid: met150
-ms.openlocfilehash: 4239ffe6d9560514eb3e5d5123340c97dbc7d296
-ms.sourcegitcommit: c29af68260ba8676083674b3c70209bff2c2e362
+ms.openlocfilehash: 23c02b6df071c8eabd21ecce48d5d0ec2c33e3a2
+ms.sourcegitcommit: 4e42bafee965446f44f7f57d1defed2b9b24fce8
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/16/2022
-ms.locfileid: "67738628"
+ms.lasthandoff: 09/30/2022
+ms.locfileid: "68232218"
 ---
 # <a name="minimum-requirements-for-microsoft-defender-for-endpoint"></a>Requisitos mínimos para Microsoft Defender para punto de conexión
 
@@ -44,7 +44,7 @@ Hay algunos requisitos mínimos para incorporar dispositivos al servicio. Obteng
 
 ## <a name="licensing-requirements"></a>Requisitos de licencias
 
-Las versiones independientes de [Defender para el plan 1 y el plan 2](defender-endpoint-plan-1-2.md), incluso cuando se incluyen como parte de otros planes de Microsft 365, no incluyen licencias de servidor. Para incorporar servidores a esos planes, necesitará Defender for Servers Plan 1 o Plan 2 como parte de la oferta de [Defender for Cloud](/azure/defender-for-cloud/defender-for-cloud-introduction) . Para más información, consulte la introducción a [Microsoft Defender para servidores](/azure/defender-for-cloud/defender-for-servers-introduction).
+Las versiones independientes de [Defender para el plan 1 y el plan 2](defender-endpoint-plan-1-2.md), incluso cuando se incluyen como parte de otros planes de Microsft 365, no incluyen licencias de servidor. Para incorporar servidores a esos planes, necesitará Defender for Servers Plan 1 o Plan 2 como parte de la oferta de [Defender for Cloud](/azure/defender-for-cloud/defender-for-cloud-introduction) . Para obtener más información, consulte la introducción a [Microsoft Defender para servidores](/azure/defender-for-cloud/defender-for-servers-introduction).
 
 Para obtener información sobre los requisitos de licencia de Microsoft Defender para punto de conexión, consulte [Microsoft Defender para punto de conexión información de licencias](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance#microsoft-defender-for-endpoint).
 
@@ -188,26 +188,26 @@ Para obtener más información sobre las opciones de configuración de proxy adi
 
 Antes de incorporar dispositivos, el servicio de datos de diagnóstico debe estar habilitado. El servicio está habilitado de forma predeterminada en Windows 10 y Windows 11.
 
-## <a name="microsoft-defender-antivirus-configuration-requirement"></a>Requisito de configuración del Antivirus de Microsoft Defender
+## <a name="microsoft-defender-antivirus-configuration-requirement"></a>Microsoft Defender requisito de configuración de Antivirus
 
-El agente de Defender para punto de conexión depende de la capacidad del Antivirus de Microsoft Defender para examinar archivos y proporcionar información sobre ellos.
+El agente de Defender para punto de conexión depende de la capacidad de Microsoft Defender Antivirus para examinar archivos y proporcionar información sobre ellos.
 
-Configure actualizaciones de inteligencia de seguridad en los dispositivos de Defender para punto de conexión independientemente de si Antivirus de Microsoft Defender es el antimalware activo o no. Para obtener más información, consulte [Administración de actualizaciones del Antivirus de Microsoft Defender y aplicación de líneas base](/windows/security/threat-protection/microsoft-defender-antivirus/manage-updates-baselines-microsoft-defender-antivirus).
+Configure las actualizaciones de inteligencia de seguridad en los dispositivos de Defender para punto de conexión independientemente de si Microsoft Defender Antivirus es el antimalware activo o no. Para obtener más información, consulte [Administración de actualizaciones Microsoft Defender Antivirus y aplicación de líneas base](/windows/security/threat-protection/microsoft-defender-antivirus/manage-updates-baselines-microsoft-defender-antivirus).
 
-Cuando Antivirus de Microsoft Defender no es el antimalware activo de su organización y usa el servicio Defender para punto de conexión, antivirus de Microsoft Defender pasa al modo pasivo.
+Cuando Microsoft Defender Antivirus no es el antimalware activo de su organización y usa el servicio Defender para punto de conexión, Microsoft Defender Antivirus pasa al modo pasivo.
 
-Si su organización ha desactivado el Antivirus de Microsoft Defender a través de la directiva de grupo u otros métodos, los dispositivos incorporados deben excluirse de esta directiva de grupo.
+Si su organización ha desactivado Microsoft Defender Antivirus a través de la directiva de grupo u otros métodos, los dispositivos incorporados deben excluirse de esta directiva de grupo.
 
-Si va a incorporar servidores y el Antivirus de Microsoft Defender no es el antimalware activo en los servidores, el Antivirus de Microsoft Defender deberá configurarse para ir en modo pasivo o desinstalarse. La configuración depende de la versión del servidor. Para obtener más información, consulte [Compatibilidad del Antivirus de Microsoft Defender](microsoft-defender-antivirus-compatibility.md).
+Si va a incorporar servidores y Microsoft Defender Antivirus no es el antimalware activo en los servidores, Microsoft Defender Antivirus deberá configurarse para ir en modo pasivo o desinstalarse. La configuración depende de la versión del servidor. Para obtener más información, consulte [compatibilidad con Microsoft Defender Antivirus](microsoft-defender-antivirus-compatibility.md).
 
 > [!NOTE]
-> La directiva de grupo normal no se aplica a Tamper Protection y los cambios en la configuración del Antivirus de Microsoft Defender se omitirán cuando la protección contra alteraciones esté activada.
+> La directiva de grupo normal no se aplica a La protección contra alteraciones y los cambios en Microsoft Defender configuración del Antivirus se omitirán cuando la protección contra alteraciones esté activada.
 
-## <a name="microsoft-defender-antivirus-early-launch-antimalware-elam-driver-is-enabled"></a>El controlador antimalware de inicio anticipado (ELAM) del Antivirus de Microsoft Defender está habilitado
+## <a name="microsoft-defender-antivirus-early-launch-antimalware-elam-driver-is-enabled"></a>Microsoft Defender controlador antimalware de inicio anticipado del Antivirus (ELAM) está habilitado
 
-Si ejecuta Antivirus de Microsoft Defender como producto antimalware principal en los dispositivos, el agente de Defender para punto de conexión se incorporará correctamente.
+Si ejecuta Microsoft Defender Antivirus como producto antimalware principal en los dispositivos, el agente de Defender para punto de conexión se incorporará correctamente.
 
-Si ejecuta un cliente antimalware de terceros y usa soluciones de Mobile Administración de dispositivos o Microsoft Endpoint Manager (rama actual), deberá asegurarse de que el controlador ELAM del Antivirus de Microsoft Defender está habilitado. Para obtener más información, vea [Asegurarse de que el antivirus de Microsoft Defender no está deshabilitado por directiva](troubleshoot-onboarding.md#ensure-that-microsoft-defender-antivirus-is-not-disabled-by-a-policy).
+Si ejecuta un cliente antimalware de terceros y usa soluciones de Mobile Administración de dispositivos o Microsoft Endpoint Manager (rama actual), deberá asegurarse de que el controlador ELAM de antivirus de Microsoft Defender está habilitado. Para obtener más información, vea [Asegurarse de que Microsoft Defender Antivirus no está deshabilitado por directiva](troubleshoot-onboarding.md#ensure-that-microsoft-defender-antivirus-is-not-disabled-by-a-policy).
 
 ## <a name="related-topics"></a>Temas relacionados
 

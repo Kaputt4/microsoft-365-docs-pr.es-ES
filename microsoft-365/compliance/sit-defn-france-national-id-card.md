@@ -14,19 +14,22 @@ f1_keywords:
 ms.service: O365-seccomp
 ms.localizationpriority: medium
 ms.collection:
-- M365-security-compliance
+- tier3
+- purview-compliance
 hideEdit: true
 feedback_system: None
 recommendations: false
-description: Definición de entidad de tipo de información confidencial de la tarjeta de identificación nacional (CNI) de Francia.
-ms.openlocfilehash: 35a6481e657d20a83ed1b80a6d06ad8ebf1c9cdf
-ms.sourcegitcommit: 5aed330d8af523f0dffe5e392f1c79f047e38172
+description: Definición de entidad de tipo de información confidencial de la tarjeta nacional de identificación (CNI) de Francia.
+ms.openlocfilehash: fae2db81a39de5ff583a363ce426484f54a52230
+ms.sourcegitcommit: be2334dbcd4e1bf309349d981a68a30e06de0297
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/21/2022
-ms.locfileid: "66951324"
+ms.lasthandoff: 10/04/2022
+ms.locfileid: "68379598"
 ---
 # <a name="france-national-id-card-cni"></a>Tarjeta de identificación nacional de Francia (CNI)
+
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
 
 ## <a name="format"></a>Formato
 
@@ -44,8 +47,8 @@ No
 
 Una directiva DLP tiene poca confianza en que se detecta este tipo de información confidencial si, dentro de una proximidad de 300 caracteres:
 
-- La expresión `Regex_france_cni` regular busca contenido que coincida con el patrón.
-- Se encuentra una palabra clave de `Keywords_france_eu_national_id_card` .
+- La expresión regular `Regex_france_cni` encuentra contenido que coincide con el patrón.
+- Se encuentra una palabra clave de `Keywords_france_eu_national_id_card`.
 
 ```xml
     <!-- France CNI -->
@@ -69,6 +72,6 @@ Una directiva DLP tiene poca confianza en que se detecta este tipo de informaci�
 - compte bancaire
 - national identification number
 - identidad nacional
-- nationalidno #
+- nationalidno#
 - numéro d'assurance maladie
 - numéro de carte vitale

@@ -11,16 +11,18 @@ author: mjcaparas
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
-ms.collection: M365-security-compliance
+ms.collection:
+- m365-security
+- tier3
 ms.topic: troubleshooting
 ms.subservice: mde
 search.appverid: met150
-ms.openlocfilehash: eabaf627d882544d377e0cea61d83c5858fe3ac7
-ms.sourcegitcommit: 9b133379196da2b3a4bb311b07ff274f43780f68
+ms.openlocfilehash: 94e4fc6130e35097c7cae1f01ef00b5b706977d7
+ms.sourcegitcommit: 4e42bafee965446f44f7f57d1defed2b9b24fce8
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/14/2022
-ms.locfileid: "67690817"
+ms.lasthandoff: 09/30/2022
+ms.locfileid: "68233802"
 ---
 # <a name="troubleshoot-service-issues"></a>Solucionar problemas de servicio
 
@@ -57,7 +59,7 @@ Consulte [Revisar eventos y errores mediante Visor de eventos](event-error-codes
 
 Si la incorporación de dispositivos se completa correctamente, pero Microsoft Defender para punto de conexión no se inicia después de un reinicio y muestra el error 577, compruebe que una directiva no deshabilita Windows Defender.
 
-Para obtener más información, vea [Asegurarse de que el antivirus de Microsoft Defender no está deshabilitado por directiva](troubleshoot-onboarding.md#ensure-that-microsoft-defender-antivirus-is-not-disabled-by-a-policy).
+Para obtener más información, vea [Asegurarse de que Microsoft Defender Antivirus no está deshabilitado por directiva](troubleshoot-onboarding.md#ensure-that-microsoft-defender-antivirus-is-not-disabled-by-a-policy).
 
 ## <a name="known-issues-with-regional-formats"></a>Problemas conocidos con formatos regionales
 

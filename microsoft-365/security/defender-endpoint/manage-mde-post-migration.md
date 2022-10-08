@@ -13,17 +13,18 @@ ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection:
-- M365-security-compliance
+- m365-security
+- tier2
 ms.topic: conceptual
 ms.date: 07/01/2022
 ms.reviewer: chventou
 search.appverid: met150
-ms.openlocfilehash: 498ac097bfa829b13ef90c2db9433ac85b70ece4
-ms.sourcegitcommit: 9b133379196da2b3a4bb311b07ff274f43780f68
+ms.openlocfilehash: 879a5881ecf34c74a1f7cffb774a85bc734eec0d
+ms.sourcegitcommit: 4e42bafee965446f44f7f57d1defed2b9b24fce8
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/14/2022
-ms.locfileid: "67689861"
+ms.lasthandoff: 09/30/2022
+ms.locfileid: "68225072"
 ---
 # <a name="manage-microsoft-defender-for-endpoint-after-initial-setup-or-migration"></a>Administración de Microsoft Defender para punto de conexión después de la instalación o migración iniciales
 
@@ -44,7 +45,7 @@ En la tabla siguiente se enumeran varias herramientas o métodos que puede usar,
 |**[Microsoft Intune](/mem/intune/fundamentals/what-is-intune)** (recomendado)|Microsoft Intune (Intune), un componente de [Microsoft Endpoint Manager](/mem/endpoint-manager-overview), se centra en la administración de dispositivos móviles (MDM) y la administración de aplicaciones móviles (MAM). Con Intune, puede controlar cómo se usan los dispositivos de su organización, incluidos teléfonos móviles, tabletas y portátiles. También puede configurar directivas específicas para controlar las aplicaciones. <br/><br/> Consulte [Administración de Microsoft Defender para punto de conexión mediante Intune](manage-mde-post-migration-intune.md).|
 |**[Microsoft Endpoint Configuration Manager](/mem/configmgr/core/understand/introduction)**|Microsoft Endpoint Manager (Configuration Manager), anteriormente conocido como System Center Configuration Manager, es un componente de [Microsoft Endpoint Manager](/mem/endpoint-manager-overview). Configuration Manager es una herramienta eficaz para administrar los usuarios, dispositivos y software. <br/><br/> Consulte [Administración de Microsoft Defender para punto de conexión con Configuration Manager](manage-mde-post-migration-configuration-manager.md).|
 |**[objetos directiva de grupo en Azure Servicios de dominio de Active Directory](/azure/active-directory-domain-services/manage-group-policy)**|[Azure Servicios de dominio de Active Directory](/azure/active-directory-domain-services/overview) incluye objetos directiva de grupo integrados para usuarios y dispositivos. Puede personalizar los objetos de directiva de grupo integrados según sea necesario para su entorno, así como crear objetos de directiva de grupo personalizados y unidades organizativas (OU). <br/><br/> Consulte [Administración de Microsoft Defender para punto de conexión con objetos directiva de grupo](manage-mde-post-migration-group-policy-objects.md).|
-|**[PowerShell, WMI y MPCmdRun.exe](manage-mde-post-migration-other-tools.md)**|*Se recomienda usar Microsoft Endpoint Manager (que incluye Intune y Configuration Manager) para administrar las características de protección contra amenazas en los dispositivos de la organización. Sin embargo, puede configurar algunas opciones, como antivirus de Microsoft Defender en dispositivos individuales (puntos de conexión) con PowerShell, WMI o la herramienta de MPCmdRun.exe.* <br/><br/> Puede usar PowerShell para administrar el Antivirus de Microsoft Defender, la protección contra vulnerabilidades de seguridad y las reglas de reducción de la superficie expuesta a ataques. Consulte [Configuración de Microsoft Defender para punto de conexión con PowerShell](manage-mde-post-migration-other-tools.md#configure-microsoft-defender-for-endpoint-with-powershell). <br/><br/> Puede usar Instrumental de administración de Windows (WMI) para administrar el Antivirus de Microsoft Defender y las exclusiones. Consulte [Configuración de Microsoft Defender para punto de conexión con WMI](manage-mde-post-migration-other-tools.md#configure-microsoft-defender-for-endpoint-with-windows-management-instrumentation-wmi). <br/><br/> Puede usar la Utilidad de Command-Line de Protección contra malware de Microsoft (MPCmdRun.exe) para administrar antivirus y exclusiones de Microsoft Defender, así como validar las conexiones entre la red y la nube. Vea [Configurar Microsoft Defender para punto de conexión con MPCmdRun.exe](manage-mde-post-migration-other-tools.md#configure-microsoft-defender-for-endpoint-with-microsoft-malware-protection-command-line-utility-mpcmdrunexe).|
+|**[PowerShell, WMI y MPCmdRun.exe](manage-mde-post-migration-other-tools.md)**|*Se recomienda usar Microsoft Endpoint Manager (que incluye Intune y Configuration Manager) para administrar las características de protección contra amenazas en los dispositivos de la organización. Sin embargo, puede configurar algunas opciones, como Microsoft Defender antivirus en dispositivos individuales (puntos de conexión) con PowerShell, WMI o la herramienta MPCmdRun.exe.* <br/><br/> Puede usar PowerShell para administrar Microsoft Defender Antivirus, la protección contra vulnerabilidades de seguridad y las reglas de reducción de la superficie expuesta a ataques. Consulte [Configuración de Microsoft Defender para punto de conexión con PowerShell](manage-mde-post-migration-other-tools.md#configure-microsoft-defender-for-endpoint-with-powershell). <br/><br/> Puede usar Instrumental de administración de Windows (WMI) para administrar Microsoft Defender Antivirus y exclusiones. Consulte [Configuración de Microsoft Defender para punto de conexión con WMI](manage-mde-post-migration-other-tools.md#configure-microsoft-defender-for-endpoint-with-windows-management-instrumentation-wmi). <br/><br/> Puede usar microsoft Malware Protection Command-Line Utility (MPCmdRun.exe) para administrar Microsoft Defender Antivirus y exclusiones, así como para validar las conexiones entre la red y la nube. Vea [Configurar Microsoft Defender para punto de conexión con MPCmdRun.exe](manage-mde-post-migration-other-tools.md#configure-microsoft-defender-for-endpoint-with-microsoft-malware-protection-command-line-utility-mpcmdrunexe).|
 
 
 ## <a name="see-also"></a>Vea también

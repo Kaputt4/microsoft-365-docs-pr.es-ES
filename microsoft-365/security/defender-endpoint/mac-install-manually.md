@@ -12,17 +12,18 @@ ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection:
-- m365-security-compliance
+- m365-security
+- tier3
 ms.custom: admindeeplinkDEFENDER
 ms.topic: conceptual
 ms.subservice: mde
 search.appverid: met150
-ms.openlocfilehash: 58e259b0388aa33e5b457599c085dd0c6c74ee1f
-ms.sourcegitcommit: 9b133379196da2b3a4bb311b07ff274f43780f68
+ms.openlocfilehash: 55325d10fd444d34664ed11c63effd7b4e8b6aff
+ms.sourcegitcommit: 4e42bafee965446f44f7f57d1defed2b9b24fce8
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/14/2022
-ms.locfileid: "67704642"
+ms.lasthandoff: 09/30/2022
+ms.locfileid: "68233758"
 ---
 # <a name="manual-deployment-for-microsoft-defender-for-endpoint-on-macos"></a>Implementación manual para Microsoft Defender para punto de conexión en macOS
 
@@ -112,7 +113,7 @@ Para completar este proceso, debe tener privilegios de administrador en el dispo
 
    :::image type="content" source="images/monterey-install-4.png" alt-text="Preferencias de seguridad de la extensión del sistema2" lightbox="images/monterey-install-4.png":::
 
-7. Abra **Preferencias** \> del sistema **Seguridad & privacidad** y vaya a la pestaña **Privacidad** . Conceda permiso **de acceso total al disco** a **Microsoft Defender** y a la **extensión de seguridad del punto de conexión de Microsoft Defenders**.
+7. Abra **Preferencias** \> del sistema **Seguridad & privacidad** y vaya a la pestaña **Privacidad**. Conceda permiso **de acceso total al disco** para **Microsoft Defender** y **la extensión de seguridad del punto de conexión de Microsoft Defenders**.
 
    :::image type="content" source="images/monterey-install-5.png" alt-text="Acceso al disco completo" lightbox="images/monterey-install-5.png":::
 

@@ -10,19 +10,21 @@ author: dansimp
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
-ms.collection: M365-security-compliance
+ms.collection:
+- m365-security
+- tier3
 ms.custom: admindeeplinkDEFENDER
 ms.topic: conceptual
 ms.subservice: mde
-ms.date: 09/15/2022
+ms.date: 09/29/2022
 ms.reviewer: tewchen
 search.appverid: met150
-ms.openlocfilehash: 9a5add52188afcecc4df6a369f65468e79452e95
-ms.sourcegitcommit: 2dedd0f594b817779e034afa6c4418def2382a22
+ms.openlocfilehash: f84351b7f32edad98659ca27a9ae7e4d67f13364
+ms.sourcegitcommit: 4e42bafee965446f44f7f57d1defed2b9b24fce8
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/18/2022
-ms.locfileid: "67799404"
+ms.lasthandoff: 09/30/2022
+ms.locfileid: "68233868"
 ---
 # <a name="microsoft-defender-for-endpoint-device-control-removable-storage-access-control"></a>Microsoft Defender para punto de conexión almacenamiento extraíble de control de dispositivos Access Control
 
@@ -76,7 +78,7 @@ Estas son las propiedades que puede usar al crear los archivos XML de grupo y di
 
 ### <a name="removable-storage-group"></a>Grupo de almacenamiento extraíble
 
-|Nombre de propiedad|Descripción|Opciones|
+|Nombre de la propiedad|Descripción|Opciones|
 |---|---|---|
 |**Groupid**|GUID, un identificador único, representa el grupo y se usará en la directiva.||
 |**DescriptorIdList**|Enumere las propiedades del dispositivo que desea usar para cubrir en el grupo. Todas las propiedades distinguen mayúsculas de minúsculas. |**PrimaryId**: el identificador principal incluye `RemovableMediaDevices`, `CdRomDevices`, `WpdDevices`, `PrinterDevices`. <p>**InstancePathId**: InstancePathId es una cadena que identifica de forma única el dispositivo en el sistema, por ejemplo, `USBSTOR\DISK&VEN_GENERIC&PROD_FLASH_DISK&REV_8.07\8735B611&0`. Es en la `Device instance path` Administrador de dispositivos. El número al final (por ejemplo, &0) representa la ranura disponible y puede cambiar de dispositivo a dispositivo. Para obtener los mejores resultados, use un carácter comodín al final. Por ejemplo, `USBSTOR\DISK&VEN_GENERIC&PROD_FLASH_DISK&REV_8.07\8735B611*`. <p>**DeviceId**: para transformar `Device instance path` al formato de id. de dispositivo, consulte [Identificadores USB estándar](/windows-hardware/drivers/install/standard-usb-identifiers), por ejemplo, `USBSTOR\DISK&VEN_GENERIC&PROD_FLASH_DISK&REV_8.07` <p>**HardwareId**: cadena que identifica el dispositivo en el sistema, por ejemplo, `USBSTOR\DiskGeneric_Flash_Disk___8.07`. Está `Hardware Ids` en la Administrador de dispositivos. <br>**Nota**: El identificador de hardware no es único; diferentes dispositivos pueden compartir el mismo valor.<p>**FriendlyNameId**: es una cadena adjunta al dispositivo, por ejemplo, `Generic Flash Disk USB Device`. Es en la `Friendly name` Administrador de dispositivos. <p>**BusId**: por ejemplo, USB, SCSI <p>**SerialNumberId**: puede encontrar SerialNumberId en `Device instance path` el Administrador de dispositivos, por ejemplo, `03003324080520232521` es SerialNumberId en USBSTOR\DISK&VEN__USB&PROD__SANDISK_3.2GEN1&REV_1.00\\`03003324080520232521`&0 <p>**VID_PID**: Id. de proveedor es el código de proveedor de cuatro dígitos que el comité USB asigna al proveedor. Id. de producto es el código de producto de cuatro dígitos que el proveedor asigna al dispositivo. Admite caracteres comodín. Para transformar `Device instance path` a id. de proveedor y formato de id. de producto, consulte [Identificadores USB estándar](/windows-hardware/drivers/install/standard-usb-identifiers). Por ejemplo: <br>`0751_55E0`: coincide con este par VID/PID exacto<br>`_55E0`: coincide con cualquier medio con PID=55E0 <br>`0751_`: coincide con cualquier medio con VID=0751 <p> **Nota**: Consulte [Cómo buscar la propiedad media en el Administrador de dispositivos?](device-control-removable-storage-access-control-faq.md#how-do-i-find-the-media-property-in-the-device-manager) para comprender cómo encontrar la propiedad en Administrador de dispositivos.|
@@ -86,7 +88,7 @@ Estas son las propiedades que puede usar al crear los archivos XML de grupo y di
 
 Puede usar las siguientes propiedades para crear la directiva de control de acceso:
 
-| Nombre de propiedad | Descripción | Opciones |
+| Nombre de la propiedad | Descripción | Opciones |
 |---|---|---|
 | **Id. de PolicyRule** | GUID, un identificador único, representa la directiva y se usará en la generación de informes y la solución de problemas. | |
 | **IncludedIdList** | Los grupos a los que se aplicará la directiva. Si se agregan varios grupos, la directiva se aplicará a cualquier medio de todos esos grupos.|El identificador de grupo o GUID debe usarse en esta instancia. <p> En el ejemplo siguiente se muestra el uso de GroupID: <p> `<IncludedIdList> <GroupId> {EAA4CCE5-F6C9-4760-8BAD-FDCC76A2ACA1}</GroupId> </IncludedIdList>` |
@@ -130,7 +132,7 @@ DeviceEvents
 | extend MediaProductId = tostring(parsed.ProductId)
 | extend MediaVendorId = tostring(parsed.VendorId)
 | extend MediaSerialNumber = tostring(parsed.SerialNumber)
-|project Timestamp, DeviceId, DeviceName, InitiatingProcessAccountName, ActionType, RemovableStorageAccess, RemovableStoragePolicyVerdict, MediaBusType, MediaClassGuid, MediaClassName, MediaDeviceId, MediaInstanceId, MediaName, RemovableStoragePolicy, MediaProductId, MediaVendorId, MediaSerialNumber
+|project Timestamp, DeviceId, DeviceName, InitiatingProcessAccountName, ActionType, RemovableStorageAccess, RemovableStoragePolicyVerdict, MediaBusType, MediaClassGuid, MediaClassName, MediaDeviceId, MediaInstanceId, MediaName, RemovableStoragePolicy, MediaProductId, MediaVendorId, MediaSerialNumber, FolderPath, FileSize
 | order by Timestamp desc
 ```
 

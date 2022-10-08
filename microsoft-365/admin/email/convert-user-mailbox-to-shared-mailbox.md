@@ -7,9 +7,10 @@ author: SKjerland
 manager: scotv
 audience: Admin
 ms.topic: article
-ms.service: o365-administration
+ms.service: microsoft-365-business
 ms.localizationpriority: medium
 ms.collection:
+- scotvorg
 - M365-subscription-management
 - Adm_O365
 - Adm_TOC
@@ -24,19 +25,19 @@ search.appverid:
 - MOE150
 ms.assetid: 2e122487-e1f5-4f26-ba41-5689249d93ba
 description: 'Aprenda a convertir un buzón privado en un buzón compartido al que pueden acceder varias personas en lugar de una sola persona. '
-ms.openlocfilehash: 07b36e5c8b2cb7b2e88dfedd80b31353cb8f7e32
-ms.sourcegitcommit: da6b3cb3b2ccfcdcd5091efce8290b6c486547db
+ms.openlocfilehash: 1cc60feb7729d2ad57749b58bc246b3478fcf342
+ms.sourcegitcommit: 0b7070ec119e00e0dafe030bbfbef0ae5c9afa19
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/18/2022
-ms.locfileid: "65466226"
+ms.lasthandoff: 09/29/2022
+ms.locfileid: "68187281"
 ---
 # <a name="convert-a-user-mailbox-to-a-shared-mailbox"></a>Convertir un buzón de usuario en un buzón compartido
 
 Al convertir el buzón de un usuario en un buzón compartido, se conserva todo el correo electrónico y el calendario existentes. Solo ahora está en un buzón compartido donde varias personas podrán acceder a él en lugar de a una persona. En una fecha posterior, puede volver a convertir un buzón compartido en un buzón de usuario (privado).
 
 > [!TIP]
-> Si necesita ayuda con los pasos descritos en este tema, considere la posibilidad de [trabajar con un especialista de Microsoft Small Business](https://go.microsoft.com/fwlink/?linkid=2186871). Con Business Assist, usted y sus empleados obtienen acceso de forma ininterrumpida a especialistas de pequeñas empresas a medida que hace crecer su negocio, desde la incorporación hasta el uso diario.
+> Si necesita ayuda con los pasos que se describen en este tema, considere la posibilidad de [trabajar con un especialista en pequeñas empresas de Microsoft](https://go.microsoft.com/fwlink/?linkid=2186871). Con Business Assist, usted y sus empleados obtienen acceso de forma ininterrumpida a especialistas de pequeñas empresas a medida que hace crecer su negocio, desde la incorporación hasta el uso diario.
 
 ## <a name="before-you-begin"></a>Antes de empezar
 
@@ -58,7 +59,7 @@ Al convertir el buzón de un usuario en un buzón compartido, se conserva todo e
 
 - Para colocar una suspensión de In-Place o una suspensión por juicio en un buzón compartido, debe asignar una licencia de Exchange Online Plan 2 *o* una licencia del plan 1 de Exchange Online y una licencia de complemento de Archivado de Exchange Online al buzón compartido.
 
-## <a name="use-the-classic-exchange-admin-center-to-convert-a-mailbox"></a>Usar el Centro de administración de Exchange clásico para convertir un buzón
+## <a name="use-the-classic-exchange-admin-center-to-convert-a-mailbox"></a>Uso del Centro de administración de Exchange clásico para convertir un buzón
 
 1. Vaya al <a href="https://go.microsoft.com/fwlink/p/?linkid=2059104" target="_blank">Centro de administración de Exchange clásico</a>.
 
@@ -70,9 +71,9 @@ Al convertir el buzón de un usuario en un buzón compartido, se conserva todo e
 
 Para todo lo demás que necesita saber sobre los buzones compartidos, consulte [Acerca de los buzones compartidos](about-shared-mailboxes.md) y [Creación de un buzón compartido](create-a-shared-mailbox.md).
 
-## <a name="use-the-new-exchange-admin-center-to-convert-a-mailbox"></a>Usar el Nuevo centro de administración de Exchange para convertir un buzón
+## <a name="use-the-new-exchange-admin-center-to-convert-a-mailbox"></a>Uso del Nuevo Centro de administración de Exchange para convertir un buzón
 
-1. Vaya al <a href="https://admin.exchange.microsoft.com/#/homepage" target="_blank"> centro de administración de Exchange</a>.
+1. Vaya al <a href="https://admin.exchange.microsoft.com/#/homepage" target="_blank"> Centro de administración de Exchange</a>.
 
 2. Seleccione **Buzones de destinatarios**\>.
 
@@ -112,10 +113,10 @@ Después de eliminar una cuenta de usuario, siga estos pasos para convertir su b
 
 ## <a name="convert-a-users-mailbox-in-a-hybrid-environment"></a>Convertir el buzón de un usuario en un entorno híbrido
 
-Para obtener más información sobre cómo convertir un buzón de usuario en un buzón compartido en un entorno híbrido Exchange, consulte:
+Para obtener más información sobre cómo convertir un buzón de usuario en un buzón compartido en un entorno híbrido de Exchange, consulte:
 
 - [Cmdlets para crear o modificar un buzón compartido remoto en un entorno de Exchange local](https://support.microsoft.com/office/cmdlets-to-create-or-modify-a-remote-shared-mailbox-in-an-on-premises-exchange-environment-9e83fb59-c001-729c-a4c0-b2964c154b49)
-- [Los buzones compartidos se convierten inesperadamente en buzones de usuario después de que se ejecute la sincronización de directorios en una implementación híbrida Exchange](/exchange/troubleshoot/user-and-shared-mailboxes/shared-mailboxes-unexpectedly-converted-to-user-mailboxes)
+- [Los buzones compartidos se convierten inesperadamente en buzones de usuario después de que se ejecute la sincronización de directorios en una implementación híbrida de Exchange](/exchange/troubleshoot/user-and-shared-mailboxes/shared-mailboxes-unexpectedly-converted-to-user-mailboxes)
 
 > [!NOTE]
 > Si es miembro del grupo de roles Administración de la organización o Administración de destinatarios, puede usar el Shell de administración de Exchange para cambiar un buzón de usuario a un buzón compartido local. Por ejemplo, `Set-Mailbox -Identity mailbox1@contoso.com -Type Shared`.

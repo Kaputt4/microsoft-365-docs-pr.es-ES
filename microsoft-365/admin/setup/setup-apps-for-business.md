@@ -7,9 +7,10 @@ author: efrene
 manager: scotv
 audience: Admin
 ms.topic: article
-ms.service: o365-administration
+ms.service: microsoft-365-business
 ms.localizationpriority: high
 ms.collection:
+- scotvorg
 - highpri
 - M365-subscription-management
 - Adm_O365
@@ -26,12 +27,12 @@ search.appverid:
 - MOE150
 - BEA160
 description: Obtenga información acerca de cómo configurar su suscripción a Aplicaciones de Microsoft 365 para negocios.
-ms.openlocfilehash: 055f148617fb51a46739d61cc06ebb41be536649
-ms.sourcegitcommit: 37e137535c4f70702afe1a5eeaa899c75ee02cfd
+ms.openlocfilehash: 50d31891632be6612e7fe18d0072b4965b16fec1
+ms.sourcegitcommit: 0b7070ec119e00e0dafe030bbfbef0ae5c9afa19
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/13/2022
-ms.locfileid: "67664217"
+ms.lasthandoff: 09/29/2022
+ms.locfileid: "68186907"
 ---
 # <a name="set-up-microsoft-365-apps-for-business"></a>Configurar Aplicaciones de Microsoft 365 para negocios
 
@@ -53,7 +54,7 @@ Puede agregar usuarios en el asistente, pero también puede [agregarlos más ade
 
 2. Para iniciar el asistente, seleccione **Ir a la configuración**.
 
-3. En la primera página, tendrá la opción de instalar las aplicaciones de Office en su equipo. También puede hacerlo en otro momento.
+3. En la primera página, tendrá la opción de instalar las aplicaciones de Office en su equipo. También puede hacerlo más tarde.
 
 3. En la página siguiente, podrá agregar usuarios y se les asignará automáticamente la licencia de Aplicaciones de Microsoft para negocios. Una vez que haya agregado los usuarios, también verá una opción para compartir las credenciales con los nuevos usuarios que ha agregado. Puede elegir imprimirlas, enviarlas por correo electrónico o descargarlas.
 
@@ -61,7 +62,7 @@ Puede agregar usuarios en el asistente, pero también puede [agregarlos más ade
 
 ## <a name="install-office"></a>Instalar Office
 
-Cuando haya creado las cuentas para otros miembros de su empresa, todos los miembros de su equipo podrán instalar la versión de escritorio completa de Office (Word, Excel, Outlook, etc.) y cada usuario podrá instalar Office en un máximo de 5 equipos PC o Mac.
+Once you've created accounts for other people in your business, you and your team members will be able to install the full desktop version of Office (Word, Excel, Outlook, etc.). Each person can install Office on up to 5 PCs or Macs.
   
 ::: moniker range="o365-worldwide"
 
@@ -79,23 +80,23 @@ Si usa Office 365 ofrecido por 21Vianet, vaya a [https://portal.partner.microsof
 
 2. Haga clic en **Instalar**.
 
-¿Necesita pasos más detallados o quiere instalar la versión de 64 bits de Office? Consulte las [Instrucciones de instalación paso a paso](https://support.microsoft.com/office/4414eaaf-0478-48be-9c42-23adc4716658#BKMK_InstallSteps).
+Need more detailed steps or want to install the 64-bit version of Office? See [Step-by-step installation instructions](https://support.microsoft.com/office/4414eaaf-0478-48be-9c42-23adc4716658#BKMK_InstallSteps).
   
 ## <a name="set-up-mobile"></a>Configurar dispositivos móviles
 
-Instale Office en su dispositivo móvil y configure Outlook para trabajar con el nuevo buzón de Microsoft. Todos los miembros de su equipo tendrán que realizar este paso. Cada usuario puede instalar las aplicaciones móviles de Office en un máximo de 5 teléfonos y 5 tabletas.  
+Install Office on your mobile device, and set up Outlook to work with your new Microsoft mailbox. Everyone on your team will need to do this step. Each person can install the Office mobile apps on up to 5 phones and 5 tablets.
   
 Obtenga los pasos para el dispositivo: [Android](https://support.microsoft.com/office/6ef2ebf2-fc2d-474a-be4a-5a801365c87f) | [iOS](https://support.microsoft.com/office/0402b37e-49c4-4419-a030-f34c2013041f) | [Windows Phone](https://support.microsoft.com/office/9bccc8b8-a321-4d0d-a45e-6e06a3438e43)
   
 ## <a name="store-files-online"></a>Almacenar archivos en línea
 
-Microsoft facilita el almacenamiento de archivos en línea. Para saber qué ubicaciones de almacenamiento son las más adecuadas para su empresa, consulte [Dónde puede almacenar archivos en Office 365](https://support.microsoft.com/office/d18d21a0-1f9f-4f6c-ac45-d52afa0a4a2e).
+Microsoft makes online file storage easy. To learn which storage locations are best for your business, see [Where you can store files in Office 365](https://support.microsoft.com/office/d18d21a0-1f9f-4f6c-ac45-d52afa0a4a2e).
   
-Todos los usuarios obtienen automáticamente una ubicación de almacenamiento en la nube de **OneDrive** cuando les crea una cuenta de Microsoft. Con OneDrive, puede acceder a los archivos desde sus equipos, teléfonos y tabletas.
+Everyone gets a **OneDrive** cloud storage location automatically when you create Microsoft accounts for them. With OneDrive, you can access files across your computers, phones, and tablets.
   
-1. En el equipo, use el Explorador de archivos para abrir OneDrive. O, desde [Office 365](https://www.office.com), abra **OneDrive** en el iniciador de aplicaciones
+1. On your computer, use File Explorer to open OneDrive. Or, from [Office 365](https://www.office.com), open **OneDrive** from the app launcher.
 
-2. Vea y cargue archivos personales, o comparta documentos o carpetas seleccionando **Compartir** y luego invitando a otros a ver los documentos o enviándoles un enlace. Para obtener más información, consulte [Compartir archivos y carpetas de OneDrive](https://support.microsoft.com/office/9fcc2f7d-de0c-4cec-93b0-a82024800c07#OS_Type=OneDrive_-_Business).
+2. View and upload personal files, or share documents or folders by selecting **Share** and then either inviting others to view the documents or sending them a link. To learn more, see [Share OneDrive files and folders](https://support.microsoft.com/office/9fcc2f7d-de0c-4cec-93b0-a82024800c07#OS_Type=OneDrive_-_Business).
   
 Más información en [Cargar archivos a una biblioteca](https://support.microsoft.com/office/da549fb1-1fcb-4167-87d0-4693e93cb7a0).
   
@@ -155,5 +156,5 @@ También puede usar el centro de administración de Exchange para importar el co
 
 ## <a name="set-up-onedrive-for-business"></a>Configurar OneDrive para empresas
 
-Seleccione el icono de nube de OneDrive en la barra de tareas y siga los pasos para mover los archivos a la nueva carpeta OneDrive para la Empresa. Seleccione **Siguiente** para configurar Microsoft Teams.
+Select the OneDrive cloud icon from your taskbar and follow the steps to move your files to your new OneDrive for Business folder. Select **Next** to set up Microsoft Teams.
 

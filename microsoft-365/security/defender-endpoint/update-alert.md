@@ -11,17 +11,19 @@ author: mjcaparas
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
-ms.collection: M365-security-compliance
+ms.collection:
+- m365-security
+- tier3
 ms.topic: article
 ms.subservice: mde
 ms.custom: api
 search.appverid: met150
-ms.openlocfilehash: d397d17214f4a8ee4c58ef66ed7b8c0c37c287eb
-ms.sourcegitcommit: 9b133379196da2b3a4bb311b07ff274f43780f68
+ms.openlocfilehash: 99f17d9aacb67214703a4af2647385fa1778e88a
+ms.sourcegitcommit: 4e42bafee965446f44f7f57d1defed2b9b24fce8
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/14/2022
-ms.locfileid: "67686667"
+ms.lasthandoff: 09/30/2022
+ms.locfileid: "68221772"
 ---
 # <a name="update-alert"></a>Actualizar alerta
 
@@ -64,6 +66,8 @@ Delegado (cuenta profesional o educativa)|Alert.ReadWrite|"Alertas de lectura y 
 >
 > - El usuario debe tener al menos el siguiente permiso de rol: "Investigación de alertas" (para obtener más información, vea [Crear y administrar roles](user-roles.md) )
 > - El usuario debe tener acceso al dispositivo asociado a la alerta, en función de la configuración del grupo de dispositivos (para obtener más información, consulte [Creación y administración de grupos de dispositivos](machine-groups.md)).
+>
+> La creación de grupos de dispositivos se admite en El plan 1 y el plan 2 de Defender para punto de conexión.
 
 ## <a name="http-request"></a>Solicitud HTTP
 
@@ -86,16 +90,16 @@ Las propiedades existentes que no se incluyen en el cuerpo de la solicitud mante
 
 Para obtener el mejor rendimiento, no debe incluir valores existentes que no hayan cambiado.
 
-Propiedad|Tipo|Descripción
+Propiedad|Tipo|Descripción|
 :---|:---|:---
-Estado|Cadena|Especifica el estado actual de la alerta. Los valores de propiedad son: "New", "InProgress" y "Resolved".
-assignedTo|Cadena|Propietario de la alerta
-Clasificación|Cadena|Especifica la especificación de la alerta. Los valores de propiedad son: "Unknown", "FalsePositive", "TruePositive".
-Determinación|Cadena|Especifica la determinación de la alerta. Los valores de propiedad son: 'NotAvailable', 'Apt', 'Malware', 'SecurityPersonnel', 'SecurityTesting', 'UnwantedSoftware', 'Other'
-Comentario|Cadena|Comentario que se va a agregar a la alerta.
+Estado|Cadena|Especifica el estado actual de la alerta. Los valores de propiedad son: "New", "InProgress" y "Resolved".|
+assignedTo|Cadena|Propietario de la alerta|
+Clasificación|Cadena|Especifica la especificación de la alerta. Los valores de propiedad son: `TruePositive`, `Informational, expected activity`y `FalsePositive`.|
+Determinación|Cadena|Especifica la determinación de la alerta. <p>Los valores de determinación posibles para cada clasificación son: <br><li> <b>Verdadero positivo</b>: `Multistage attack` (MultiStagedAttack), `Malicious user activity` (MaliciousUserActivity), `Compromised account` (CompromisedUser): considere la posibilidad de cambiar el nombre de la enumeración en la API pública en consecuencia, `Malware` (Malware), `Phishing` (Phishing), `Unwanted software` (UnwantedSoftware) y `Other` (Other). <li> <b>Actividad informativa y esperada:</b> `Security test` (SecurityTesting), `Line-of-business application` (LineOfBusinessApplication), `Confirmed activity` (ConfirmedUserActivity): considere la posibilidad de cambiar el nombre de la enumeración en la API pública en consecuencia y `Other` (Otros). <li>  <b>Falso positivo:</b> `Not malicious` (Limpiar): considere la posibilidad de cambiar el nombre de la enumeración en la API pública en consecuencia, `Not enough data to validate` (InsufficientData) y `Other` (Other).|
+Comentario|Cadena|Comentario que se va a agregar a la alerta.|
 
 >[!NOTE]
->Alrededor del 29 de agosto de 2022, los valores de determinación de alertas admitidos anteriormente ("Apt" y "SecurityPersonnel") quedarán en desuso y ya no estarán disponibles a través de la API.
+>Alrededor del 29 de agosto de 2022, los valores de determinación de alertas admitidos anteriormente ("Apt" y "SecurityPersonnel") estarán en desuso y ya no estarán disponibles a través de la API.
 
 ## <a name="response"></a>Respuesta
 

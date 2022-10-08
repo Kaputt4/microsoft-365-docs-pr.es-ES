@@ -14,15 +14,15 @@ ms.localizationpriority: medium
 ms.reviewer: inbadian
 f1.keywords: NOCSH
 ms.collection:
-- M365-security-compliance
-- m365initiative-defender-endpoint
+- m365-security
+- tier1
 ms.custom: intro-get-started
-ms.openlocfilehash: 9e046c877eab1c422d660ba24b7ec2da45c2006a
-ms.sourcegitcommit: 0af064e8b6778060f1bd365378d69b16fc9949b5
+ms.openlocfilehash: 8ac45a98d31ff8ae1751104a78f3e2746b9afb03
+ms.sourcegitcommit: 4e42bafee965446f44f7f57d1defed2b9b24fce8
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/15/2022
-ms.locfileid: "67731086"
+ms.lasthandoff: 09/30/2022
+ms.locfileid: "68233670"
 ---
 # <a name="get-started-with-microsoft-defender-for-endpoint-plan-1"></a>Introducción al plan 1 de Microsoft Defender para punto de conexión
 
@@ -67,7 +67,7 @@ La barra de navegación del lado izquierdo de la pantalla le permite moverse fá
 | **Alertas de & incidentes** | Se expande para mostrar incidentes y **alertas**. |
 | **Alertas de &** >  incidentes **Incidentes** | Navega a la lista **Incidentes** . Los incidentes se crean cuando se desencadenan alertas o se detectan amenazas. De forma predeterminada, la lista Incidentes muestra los datos de los **últimos** 30 días, con el incidente más reciente en primer lugar. <br/><br/> Para más información, consulte [Incidentes](view-incidents-queue.md). |
 | **Alertas de &** >  incidentes **Alertas** | Navega a la lista **Alertas** (también denominada **cola de alertas**). Las alertas se desencadenan cuando se detecta un archivo, proceso o comportamiento sospechoso o malintencionado. De forma predeterminada, la lista **Alertas** muestra los datos de los últimos 30 días, con la alerta más reciente en primer lugar. <br/><br/> Para obtener más información, consulte [Alertas](alerts-queue.md). |
-| **Centro de acciones** | Navega al Centro de acciones, que realiza un seguimiento de las acciones de corrección y respuesta manual. El Centro de acciones realiza un seguimiento de actividades como las siguientes: <br/>- Antivirus de Microsoft Defender encuentra un archivo malintencionado y, a continuación, bloquea o quita ese archivo. <br/>- El equipo de seguridad aísla un dispositivo.<br/>- Defender para punto de conexión detecta y pone en cuarentena un archivo. <br/><br/> Para obtener más información, consulte [Centro de acciones](auto-investigation-action-center.md). |
+| **Centro de acciones** | Navega al Centro de acciones, que realiza un seguimiento de las acciones de corrección y respuesta manual. El Centro de acciones realiza un seguimiento de actividades como las siguientes: <br/>- Microsoft Defender Antivirus encuentra un archivo malintencionado y, a continuación, bloquea o quita ese archivo. <br/>- El equipo de seguridad aísla un dispositivo.<br/>- Defender para punto de conexión detecta y pone en cuarentena un archivo. <br/><br/> Para obtener más información, consulte [Centro de acciones](auto-investigation-action-center.md). |
 | **Puntuación de seguridad** | Muestra una representación de la posición de seguridad de la organización junto con una lista de acciones y métricas de mejora. <br/><br/> Para obtener más información, consulte [Puntuación de seguridad de Microsoft](../defender/microsoft-secure-score.md). |
 | **Centro de aprendizaje** | Navega a una lista de rutas de aprendizaje a las que puede acceder para obtener más información sobre las funcionalidades de seguridad de Microsoft 365.  |
 | **Extremos** >  **Búsqueda** | Navega a una página donde puede buscar dispositivos específicos por nombre de dispositivo. En la lista de resultados, puede ver detalles, como el nivel de riesgo y el estado de mantenimiento, de un vistazo. |

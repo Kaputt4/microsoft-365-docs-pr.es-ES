@@ -20,18 +20,20 @@ hideEdit: true
 feedback_system: None
 recommendations: false
 description: Definición de entidad de tipo de información confidencial de clave privada del certificado X.509.
-ms.openlocfilehash: 144eff9826dcbb3bcfc03930442a4d4e3a36e22c
-ms.sourcegitcommit: fa570d90b00ed1bb40e1ca27b11c66a84c4204e9
+ms.openlocfilehash: 4b847efe2b3b7495834cb8ec8d7a7c9e8f2b8232
+ms.sourcegitcommit: 50da6f1f6ef2274c17ed9729e7ad84395b0a9be2
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/05/2022
-ms.locfileid: "68476141"
+ms.lasthandoff: 10/08/2022
+ms.locfileid: "68503124"
 ---
 # <a name="x509-certificate-private-key-preview"></a>Clave privada de certificado X.509 (versión preliminar)
 
 [!INCLUDE [purview-preview](../includes/purview-preview.md)]
 
-## <a name="format"></a>Formato
+Esta SIT también se incluye en el SIT de [todas las credenciales](sit-defn-all-creds.md) agrupadas.
+
+ ## <a name="format"></a>Formato
 
 Combinación de hasta 20 000 caracteres que constan de letras, dígitos y caracteres especiales.
 
@@ -69,9 +71,18 @@ Por ejemplo:
 `-----BEGIN PRIVATE KEY-----`
 
 
+## <a name="credential-example"></a>Ejemplo de credencial 
+
+`-----BEGIN PRIVATE KEY----- MIIPuQIBAzCCD38GCSqGSIb3DQEHAaCCD3AEgg9sMIIPaDCCBZ8GCSqGSIb3DQEHBqCCBZAw...`
+
+> [!IMPORTANT]
+> Este ejemplo se ha truncado. No es un ejemplo detectable de este SIT.
+
 ## <a name="checksum"></a>Suma de comprobación
 
 Sí
+
+Los SIT que tienen sumas de comprobación usan un cálculo único para comprobar si la información es válida. Esto significa que cuando el valor **de suma de comprobación** es **Sí**, el servicio puede realizar una detección positiva solo en función de los datos confidenciales. Cuando el valor **de suma de comprobación** es **No** se deben detectar elementos adicionales (secundarios) para que el servicio realice una detección positiva.
 
 ## <a name="definition"></a>Definición
 

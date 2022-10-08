@@ -7,24 +7,26 @@ author: kelleyvice-msft
 manager: scotv
 audience: ITPro
 ms.topic: article
-ms.service: o365-solutions
+ms.service: microsoft-365-enterprise
 ms.localizationpriority: medium
 ms.collection:
+- scotvorg
 - M365-identity-device-management
 - Strat_O365_Enterprise
 - m365initiative-coredeploy
 - m365solution-m365-identity
 - m365solution-overview
 - zerotrust-solution
+- highpri
 ms.custom:
 - intro-overview
 description: Implemente la infraestructura de identidad para Microsoft 365.
-ms.openlocfilehash: 7140fc9a34855c39487474f160856bf671666f24
-ms.sourcegitcommit: 61b22df76e0f81e5ef11c587b129287886151c79
+ms.openlocfilehash: 7e88afa574073272b5a9915a77fee30b2ff470e9
+ms.sourcegitcommit: 0b7070ec119e00e0dafe030bbfbef0ae5c9afa19
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/12/2022
-ms.locfileid: "66748437"
+ms.lasthandoff: 09/29/2022
+ms.locfileid: "68209126"
 ---
 # <a name="deploy-your-identity-infrastructure-for-microsoft-365"></a>Implementación de la infraestructura de identidad para Microsoft 365
 
@@ -63,7 +65,7 @@ Esta solución admite los principios clave de [Confianza cero](https://www.micro
 - **Usar acceso con privilegios mínimos:** limite el acceso del usuario con acceso suficiente y justo a tiempo (JIT/JEA), directivas adaptables basadas en los riesgos y protección de datos.
 - **Asumir la vulneración:** minimice el radio de explosión y el acceso a los segmentos. Compruebe el cifrado de un extremo a otro y use análisis para obtener visibilidad, impulsar la detección de amenazas y mejorar las defensas.
 
-A diferencia del acceso convencional a la intranet, que confía en todo lo que hay detrás del firewall de una organización, Confianza cero trata cada inicio de sesión y acceso como si se originase desde una red no controlada, ya sea detrás del firewall de la organización o en Internet. Confianza cero requiere protección para la red, la infraestructura, las identidades, los puntos de conexión, las aplicaciones y los datos.
+Unlike conventional intranet access, which trusts everything behind an organization's firewall, Zero Trust treats each sign-in and access as though it originated from an uncontrolled network, whether it's behind the organization firewall or on the Internet. Zero Trust requires protection for the network, infrastructure, identities, endpoints, apps, and data.
 
 ## <a name="microsoft-365-capabilities-and-features"></a>Funcionalidades y características de Microsoft 365
 

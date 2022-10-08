@@ -11,16 +11,18 @@ author: mjcaparas
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
-ms.collection: M365-security-compliance
+ms.collection:
+- m365-security
+- tier2
 ms.topic: article
 ms.subservice: mde
 search.appverid: met150
-ms.openlocfilehash: 1714469bcfaa35db17f7ad771aa2701d5e66d2d7
-ms.sourcegitcommit: 2dedd0f594b817779e034afa6c4418def2382a22
+ms.openlocfilehash: 6c1af9c31add2d02886bab36e72ec3650dbebae7
+ms.sourcegitcommit: 4e42bafee965446f44f7f57d1defed2b9b24fce8
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/18/2022
-ms.locfileid: "67799118"
+ms.lasthandoff: 09/30/2022
+ms.locfileid: "68233604"
 ---
 # <a name="take-response-actions-on-a-device"></a>Realizar acciones de respuesta en un dispositivo
 
@@ -133,22 +135,22 @@ El paquete contiene las siguientes carpetas:
 |CollectionSummaryReport.xls|Este archivo es un resumen de la colección de paquetes de investigación, contiene la lista de puntos de datos, el comando usado para extraer los datos, el estado de ejecución y el código de error si se produce un error. Puede usar este informe para realizar un seguimiento de si el paquete incluye todos los datos esperados e identificar si se han producido errores.|
 |
 
-## <a name="run-microsoft-defender-antivirus-scan-on-devices"></a>Ejecución del examen del Antivirus de Microsoft Defender en dispositivos
+## <a name="run-microsoft-defender-antivirus-scan-on-devices"></a>Ejecución Microsoft Defender examen del Antivirus en dispositivos
 
 Como parte del proceso de investigación o respuesta, puede iniciar de forma remota un examen antivirus para ayudar a identificar y corregir el malware que podría estar presente en un dispositivo en peligro.
 
 > [!IMPORTANT]
 > - Esta acción no se admite actualmente para macOS y Linux. Use la respuesta activa para ejecutar la acción. Para obtener más información sobre la respuesta en vivo, consulte [Investigación de entidades en dispositivos con respuesta dinámica](live-response.md).
-> - Un examen del Antivirus de Microsoft Defender se puede ejecutar junto con otras soluciones antivirus, independientemente de si antivirus de Microsoft Defender es la solución antivirus activa o no. Antivirus de Microsoft Defender puede estar en modo pasivo. Para obtener más información, consulte [Compatibilidad del Antivirus de Microsoft Defender](/microsoft-365/security/defender-endpoint/microsoft-defender-antivirus-compatibility).
+> - Un examen Microsoft Defender Antivirus puede ejecutarse junto con otras soluciones antivirus, tanto si Microsoft Defender Antivirus es la solución antivirus activa como si no. Microsoft Defender Antivirus puede estar en modo pasivo. Para obtener más información, consulte [compatibilidad con Microsoft Defender Antivirus](/microsoft-365/security/defender-endpoint/microsoft-defender-antivirus-compatibility).
 
 Una vez que haya seleccionado **Ejecutar examen antivirus**, seleccione el tipo de examen que desea ejecutar (rápido o completo) y agregue un comentario antes de confirmar el examen.
 
 :::image type="content" source="images/run-antivirus.png" alt-text="Notificación para seleccionar examen rápido o examen completo y agregar comentario" lightbox="images/run-antivirus.png":::
 
-El Centro de acciones mostrará la información de examen y la escala de tiempo del dispositivo incluirá un nuevo evento, lo que refleja que se envió una acción de examen en el dispositivo. Las alertas del Antivirus de Microsoft Defender reflejarán las detecciones que aparecen durante el examen.
+El Centro de acciones mostrará la información de examen y la escala de tiempo del dispositivo incluirá un nuevo evento, lo que refleja que se envió una acción de examen en el dispositivo. Microsoft Defender alertas antivirus reflejarán las detecciones que aparecen durante el examen.
 
 > [!NOTE]
-> Al desencadenar un examen mediante la acción de respuesta de Defender para punto de conexión, el valor "ScanAvgCPULoadFactor" del antivirus de Microsoft Defender sigue aplicando y limita el impacto de la CPU del examen.
+> Al desencadenar un examen mediante la acción de respuesta de Defender para punto de conexión, Microsoft Defender valor del antivirus "ScanAvgCPULoadFactor" sigue aplicando y limita el impacto de la CPU del examen.
 > Si ScanAvgCPULoadFactor no está configurado, el valor predeterminado es un límite del 50 % de carga máxima de CPU durante un examen.
 > Para obtener más información, consulte [configure-advanced-scan-types-microsoft-defender-antivirus](/windows/security/threat-protection/microsoft-defender-antivirus/configure-advanced-scan-types-microsoft-defender-antivirus).
 
@@ -158,7 +160,7 @@ Además de contener un ataque mediante la detención de procesos malintencionado
 
 > [!IMPORTANT]
 > - Esta acción está disponible para dispositivos en Windows 10, versión 1709 o posterior, Windows 11 y Windows Server 2019 o posterior. 
-> - Esta característica está disponible si su organización usa el Antivirus de Microsoft Defender.
+> - Esta característica está disponible si su organización usa Microsoft Defender Antivirus.
 > - Esta acción debe cumplir los requisitos de firma y formatos de directiva de integridad de código Windows Defender Control de aplicaciones. Para obtener más información, vea [Formatos de directivas de integridad de código y firma](/windows/security/threat-protection/windows-defender-application-control/use-code-signing-to-simplify-application-control-for-classic-windows-applications)).
 
 Para impedir que una aplicación se ejecute, se aplica una directiva de integridad de código que solo permite que los archivos se ejecuten si están firmados por un certificado emitido por Microsoft. Este método de restricción puede ayudar a evitar que un atacante controle dispositivos en peligro y realice otras actividades malintencionadas.
@@ -187,7 +189,7 @@ En función de la gravedad del ataque y de la confidencialidad del dispositivo, 
 > - Actualmente no se admite el aislamiento de dispositivos de la red para dispositivos que ejecutan macOS o Linux. Para macOS, use la respuesta en directo para ejecutar la acción. Para obtener más información sobre la respuesta en vivo, consulte [Investigación de entidades en dispositivos que usan la respuesta en vivo](live-response.md).
 > - El aislamiento completo está disponible para los dispositivos que ejecutan Windows 11, Windows 10, versión 1703 o posterior, Windows Server 2022, Windows Server 2019 y Windows Server 2016.
 > - El aislamiento selectivo está disponible para los dispositivos que ejecutan Windows 10, versión 1709 o posterior y Windows 11.
-> - Al aislar un dispositivo, solo se permiten determinados procesos y destinos. Por lo tanto, los dispositivos que están detrás de un túnel VPN completo no podrán acceder al servicio en la nube Microsoft Defender para punto de conexión después de que el dispositivo esté aislado. Se recomienda usar una VPN de túnel dividido para Microsoft Defender para punto de conexión y el tráfico relacionado con la protección basada en la nube del Antivirus de Microsoft Defender.
+> - Al aislar un dispositivo, solo se permiten determinados procesos y destinos. Por lo tanto, los dispositivos que están detrás de un túnel VPN completo no podrán acceder al servicio en la nube Microsoft Defender para punto de conexión después de que el dispositivo esté aislado. Se recomienda usar una VPN de túnel dividido para Microsoft Defender para punto de conexión y Microsoft Defender tráfico relacionado con la protección basada en la nube de Antivirus.
 
 Esta característica de aislamiento de dispositivo desconecta el dispositivo en peligro de la red mientras conserva la conectividad con el servicio Defender para punto de conexión, que sigue supervisando el dispositivo.
 

@@ -7,6 +7,7 @@ ms.mktglfcycl: manage
 ms.sitesec: library
 ms.pagetype: security
 ms.localizationpriority: high
+ms.date: 10/03/2022
 ms.topic: article
 author: denisebmsft
 ms.author: deniseb
@@ -15,15 +16,15 @@ manager: dansimp
 ms.custom: nextgen
 ms.subservice: mde
 ms.collection:
-- M365-security-compliance
-- m365initiative-defender-endpoint
+- m365-security
+- tier2
 search.appverid: met150
-ms.openlocfilehash: 77e59d2b27c95ad41bc6d1997aa70f86353b9e4e
-ms.sourcegitcommit: 9b133379196da2b3a4bb311b07ff274f43780f68
+ms.openlocfilehash: 0e58a119cfd6dae272d5eae18a284e928f99235b
+ms.sourcegitcommit: 2ff545246fec060ea7829da5afbc1cdc698d51ab
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/14/2022
-ms.locfileid: "67689699"
+ms.lasthandoff: 10/04/2022
+ms.locfileid: "68363659"
 ---
 # <a name="microsoft-defender-antivirus-in-windows"></a>Antivirus de Microsoft Defender en Windows
 
@@ -82,9 +83,9 @@ Verá el nombre de la solución antivirus o antimalware en la página de proveed
 
    - **Modo pasivo** significa que el Antivirus de Microsoft Defender está ejecución, pero no es el producto antivirus/antimalware principal del dispositivo. El modo pasivo solo está disponible para los dispositivos que se incorporan a Microsoft Defender para punto de conexión y que cumplen determinados requisitos. Consulte [Requisitos para que el Antivirus de Microsoft Defender se ejecute en modo pasivo](microsoft-defender-antivirus-compatibility.md#requirements-for-microsoft-defender-antivirus-to-run-in-passive-mode).
 
-   - **Modo de bloqueo de EDR**: significa que el Antivirus de Microsoft Defender se está ejecutando y que está habilitada la [Detección y respuesta de puntos de conexión (EDR) en modo de bloqueo](edr-in-block-mode.md), una funcionalidad de Microsoft Defender para punto de conexión.
+   - **Modo de bloqueo de EDR**: significa que el Antivirus de Microsoft Defender se está ejecutando y que está habilitada la [Detección y respuesta de puntos de conexión (EDR) en modo de bloqueo](edr-in-block-mode.md), una funcionalidad de Microsoft Defender para punto de conexión. Compruebe la clave del Registro **ForceDefenderPassiveMode** . Si su valor es 0, se ejecuta en modo normal; De lo contrario, se ejecuta en modo pasivo.
 
-   - **Modo pasivo de SxS**: significa que el Antivirus de Microsoft Defender se está ejecutando junto con otro producto antivirus o antimalware y se está utilizando el [Examen periódico limitado](limited-periodic-scanning-microsoft-defender-antivirus.md).
+   - **El modo pasivo SxS** significa Microsoft Defender Antivirus se ejecuta junto con otro producto antivirus o antimalware y [se usa un examen periódico limitado](limited-periodic-scanning-microsoft-defender-antivirus.md).
 
 > [!TIP]
 > Para obtener más información sobre el cmdlet de Get-MpComputerStatus PowerShell, consulte el artículo de referencia [Get-MpComputerStatus](/powershell/module/defender/get-mpcomputerstatus).

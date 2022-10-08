@@ -12,18 +12,24 @@ author: robmazz
 manager: laurawi
 audience: itpro
 ms.collection:
-- m365-security-compliance
+- highpri
+- tier1
+- purview-compliance
 - m365solution-insiderrisk
 - m365initiative-compliance
+- highpri
 ms.custom: admindeeplinkCOMPLIANCE
-ms.openlocfilehash: f000ece5715667b07222d31a9e131fed3eab552f
-ms.sourcegitcommit: a6cbc057e757771cc0e7b53b184fab9fa53a658a
+ms.openlocfilehash: eb44b1ce51466af5c1478b894721c54c13e89b40
+ms.sourcegitcommit: 50da6f1f6ef2274c17ed9729e7ad84395b0a9be2
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/12/2022
-ms.locfileid: "67648689"
+ms.lasthandoff: 10/08/2022
+ms.locfileid: "68503564"
 ---
 # <a name="get-started-with-insider-risk-management"></a>Introducción a la administración de riesgos internos
+
+>[!IMPORTANT]
+>Administración de riesgos internos de Microsoft Purview correlaciona varias señales para identificar posibles riesgos internos malintencionados o involuntarios, como el robo de IP, la pérdida de datos y las infracciones de seguridad. La administración de riesgos internos permite a los clientes crear directivas para administrar la seguridad y el cumplimiento. Creados con privacidad por diseño, los usuarios se seudonimizan de forma predeterminada y los controles de acceso basados en roles y los registros de auditoría están en su lugar para ayudar a garantizar la privacidad del nivel de usuario.
 
 Use directivas de administración de riesgos internos para identificar las actividades de riesgo y las herramientas de administración para actuar sobre alertas de riesgo en su organización. Complete los pasos siguientes para configurar los requisitos previos y configurar una directiva de administración de riesgos internos.
 
@@ -31,6 +37,8 @@ Use directivas de administración de riesgos internos para identificar las activ
 > La solución de administración de riesgos internos proporciona una opción de nivel de inquilino para ayudar a los clientes a facilitar la gobernanza interna en el nivel de usuario. Los administradores de nivel de inquilino pueden configurar permisos para proporcionar acceso a esta solución a los miembros de la organización y configurar conectores de datos en el portal de cumplimiento Microsoft Purview importar datos pertinentes para admitir la identificación a nivel de usuario de actividad potencialmente arriesgada. Los clientes reconocen que el administrador puede calcular información relacionada con el comportamiento, el carácter o el rendimiento del usuario individual relacionada materialmente con el empleo y ponerla a disposición de otros usuarios de la organización. Además, los clientes reconocen que deben llevar a cabo su propia investigación completa relacionada con el comportamiento, el carácter o el rendimiento del usuario individual materialmente relacionados con el empleo, y no solo confiar en información del servicio de administración de riesgos internos. Los clientes son los únicos responsables de usar el servicio de administración de riesgos internos y cualquier característica o servicio asociado de conformidad con todas las leyes aplicables, incluidas las leyes relacionadas con la identificación individual del usuario y las acciones de corrección.
 
 Para obtener más información sobre cómo las directivas de riesgo internos pueden ayudarle a administrar los riesgos en su organización, consulte [Información sobre la administración de riesgos](insider-risk-management.md) internos.
+
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
 
 ## <a name="subscriptions-and-licensing"></a>Suscripciones y licencias
 
@@ -94,11 +102,11 @@ Al trabajar con la administración de riesgos internos, elegirá entre estas opc
 |---|---|---|---|---|---|
 |Configuración de directivas y opciones|Sí|Sí|No|No|No|
 |Información de análisis de acceso|Sí|Sí|Sí|No|No|
-|Acceso & investigar alertas|Yes|No|Sí|Sí|No|
+|Acceso & investigar alertas|Sí|No|Sí|Sí|No|
 |Acceso & investigar casos|Yes|No|Sí|Sí|No|
 |Acceso & ver el Explorador de contenido|Yes|No|No|Sí|No|
 |Configuración de plantillas de aviso|Yes|No|Sí|Sí|No|
-|Ver & exportar registros de auditoría|Yes|No|No|No|Sí|
+|Ver & exportar registros de auditoría|Sí|No|No|No|Sí|
 
 > [!IMPORTANT]
 > Asegúrese de tener siempre al menos un usuario en los grupos de roles *integrados Insider Risk Management* o *Insider Risk Management Administración* (según la opción que elija) para que la configuración de administración de riesgos internos no se incluya en un escenario de "administrador cero" si determinados usuarios abandonan la organización.

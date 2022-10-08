@@ -11,16 +11,21 @@ ms.author: robmazz
 author: robmazz
 manager: laurawi
 audience: itpro
-ms.collection: m365-security-compliance
+ms.collection:
+- tier1
+- purview-compliance
 ms.custom: admindeeplinkCOMPLIANCE
-ms.openlocfilehash: d117ba643ceb15cc867e0688675b56caa3d302f7
-ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
+ms.openlocfilehash: 6fe74108e484b158b292f86191425cd0aa73b0b4
+ms.sourcegitcommit: 50da6f1f6ef2274c17ed9729e7ad84395b0a9be2
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/06/2022
-ms.locfileid: "66637293"
+ms.lasthandoff: 10/08/2022
+ms.locfileid: "68503476"
 ---
 # <a name="plan-for-insider-risk-management"></a>Planificar la administración de riesgos internos
+
+>[!IMPORTANT]
+>Administración de riesgos internos de Microsoft Purview correlaciona varias señales para identificar posibles riesgos internos malintencionados o involuntarios, como el robo de IP, la pérdida de datos y las infracciones de seguridad. La administración de riesgos internos permite a los clientes crear directivas para administrar la seguridad y el cumplimiento. Creados con privacidad por diseño, los usuarios se seudonimizan de forma predeterminada y los controles de acceso basados en roles y los registros de auditoría están en su lugar para ayudar a garantizar la privacidad del nivel de usuario.
 
 Antes de empezar a trabajar con [la administración de riesgos](insider-risk-management.md) internos en su organización, hay importantes actividades y consideraciones de planeamiento que deben revisar los equipos de administración de cumplimiento y tecnología de la información. Comprender y planear exhaustivamente la implementación en las siguientes áreas ayudará a garantizar que la implementación y el uso de las características de administración de riesgos internos funcionen sin problemas y se alineen con los procedimientos recomendados para la solución. 
 
@@ -33,6 +38,8 @@ Vea el vídeo siguiente para obtener información sobre cómo el flujo de trabaj
 >[!VIDEO https://www.microsoft.com/videoplayer/embed/RE4OUXB]
 
 Consulte el [vídeo de Microsoft Mechanics](https://www.youtube.com/watch?v=Ynkfu8OF0wQ) sobre cómo funcionan conjuntamente la administración de riesgos internos y el cumplimiento de comunicaciones para ayudar a minimizar los riesgos de datos de los usuarios de su organización.
+
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
 
 ## <a name="work-with-stakeholders-in-your-organization"></a>Trabajar con las partes interesadas de la organización
 
@@ -61,11 +68,11 @@ Al trabajar con la administración de riesgos internos, elegirá entre estas opc
 |:----------|:--------------------------|:--------------------------------|:-----------------------------------|:----------------------------------------|:-----------------------------------|
 | Configuración de directivas y opciones | Sí | Sí | No | No | No |
 | Información de análisis de acceso | Sí | Sí | Sí | No | No |
-| Acceso & investigar alertas | Sí | No | Sí | Sí | No |
+| Acceso & investigar alertas | Yes | No | Sí | Sí | No |
 | Acceso & investigar casos | Sí | No | Sí | Sí | No |
-| Acceso & ver el Explorador de contenido | Sí | No | No | Sí | No |
+| Acceso & ver el Explorador de contenido | Yes | No | No | Sí | No |
 | Configuración de plantillas de aviso | Sí | No | Sí | Sí | No |
-| Ver & exportar registros de auditoría | Sí | No | No | No | Sí |
+| Ver & exportar registros de auditoría | Yes | No | No | No | Sí |
 
 >[!IMPORTANT]
 >Asegúrese de que siempre tiene al menos un usuario en *insider Risk Management* o *Insider Risk Management Administración* grupos de roles (según la opción que elija) para que la configuración de administración de riesgos internos no entre en un escenario de "administrador cero" si determinados usuarios abandonan la organización.

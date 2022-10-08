@@ -13,23 +13,27 @@ f1_keywords:
 ms.service: O365-seccomp
 ms.localizationpriority: high
 ms.collection:
-- M365-security-compliance
+- tier1
+- purview-compliance
 - m365solution-mip
 - m365initiative-compliance
+- highpri
 ms.custom: admindeeplinkCOMPLIANCE
 search.appverid:
 - MET150
-description: Prepárese para implementar e implemente DLP en ubicaciones de PowerBI.
-ms.openlocfilehash: e94ab7bce1fefc7ab370425a269f6e304aee165f
-ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
-ms.translationtype: HT
+description: Prepárese e implemente DLP en ubicaciones de PowerBI para ayudar a las organizaciones a detectar y proteger sus datos confidenciales.
+ms.openlocfilehash: 0d88ff7ec11ba5ce8dedae5f71d1166a1dff7cdc
+ms.sourcegitcommit: 6df492719fecc2b213d55465dc1cd60ab4627ed6
+ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/06/2022
-ms.locfileid: "66998399"
+ms.lasthandoff: 10/04/2022
+ms.locfileid: "68381729"
 ---
 # <a name="get-started-with-data-loss-prevention-policies-for-power-bi-preview"></a>Introducción a las directivas de prevención de pérdida de datos para Power BI (versión preliminar)
 
 Para ayudar a las organizaciones a detectar y proteger sus datos confidenciales, [las directivas de prevención de pérdidas de datos (DLP) de Microsoft Purview](/microsoft-365/compliance/dlp-learn-about-dlp) admiten Power BI. Cuando un conjunto de datos de Power BI coincide con los criterios de una directiva DLP, se puede desencadenar una alerta que explique la naturaleza del contenido confidencial. Esta alerta también se registra en la pestaña **Alertas** de prevención de pérdida de datos del portal de cumplimiento normativo de Microsoft para su supervisión y administración por parte de los administradores. Además, se pueden enviar alertas por correo electrónico a los administradores y usuarios especificados.
+
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
 
 ## <a name="considerations-and-limitations"></a>Consideraciones y limitaciones
 

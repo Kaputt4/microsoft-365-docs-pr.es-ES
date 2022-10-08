@@ -11,22 +11,23 @@ ms.date: ''
 ms.service: O365-seccomp
 ms.localizationpriority: medium
 ms.collection:
-- M365-security-compliance
+- purview-compliance
+- tier1
 - SPO_Content
 search.appverid:
 - MOE150
 - MET150
 description: Los administradores pueden habilitar la compatibilidad con etiquetas de confidencialidad para archivos de Word, Excel y PowerPoint en SharePoint y OneDrive.
-ms.openlocfilehash: b995d1b97676eb3251c33069ed20f9ce382a61bb
-ms.sourcegitcommit: 57c2f5ba74e238543d6fd724ed79527547bd0780
+ms.openlocfilehash: 9bba98b57c2d677cce9f6afcc4ab1a11a49e94e3
+ms.sourcegitcommit: 50da6f1f6ef2274c17ed9729e7ad84395b0a9be2
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/28/2022
-ms.locfileid: "67069677"
+ms.lasthandoff: 10/08/2022
+ms.locfileid: "68503542"
 ---
 # <a name="enable-sensitivity-labels-for-office-files-in-sharepoint-and-onedrive"></a>Habilitar etiquetas de confidencialidad para los archivos de Office en SharePoint y OneDrive
 
->*[Instrucciones de licencias de Microsoft 365 para la seguridad y el cumplimiento](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance).*
+>*[Guía de licencias de Microsoft 365 para la seguridad y el cumplimiento](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance).*
 
 Habilite el etiquetado integrado para [los archivos de Office admitidos](sensitivity-labels-office-apps.md#office-file-types-supported) en SharePoint y OneDrive para que los usuarios puedan aplicar [las etiquetas de confidencialidad](sensitivity-labels.md) en Office para la Web. Cuando esta característica está habilitada, los usuarios verán el botón **Confidencialidad** en la cinta de opciones para que puedan aplicar etiquetas y ver cualquier nombre de etiqueta aplicado en la barra de estado.
 
@@ -65,11 +66,29 @@ Siempre tiene la opción de deshabilitar etiquetas de confidencialidad para arch
 
 Si actualmente está protegiendo documentos en SharePoint mediante SharePoint Information Rights Management (IRM), asegúrese de comprobar la sección [SharePoint Information Rights Management (IRM) y las etiquetas de confidencialidad](#sharepoint-information-rights-management-irm-and-sensitivity-labels) de esta página.
 
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
+
 ## <a name="requirements"></a>Requisitos
 
 Estas nuevas funcionalidades solo funcionan con [etiquetas de confidencialidad](sensitivity-labels.md) . Si actualmente tiene etiquetas de Azure Information Protection, migrelas primero a etiquetas de confidencialidad para que pueda habilitar estas características para los nuevos archivos que cargue. Para obtener más información acerca de este proceso, consulte [Cómo migrar las etiquetas de Azure Information Protection a etiquetas de confidencialidad unificadas](/azure/information-protection/configure-policy-migrate-labels)
 
 Use la versión 19.002.0121.0008 o posterior de la aplicación Sincronización de OneDrive en Windows y la versión 19.002.0107.0008 o posterior en Mac. Ambas versiones se publicaron el 28 de enero de 2019 y actualmente se publican en todos los anillos. Para obtener más información, consulte las notas de la [versión de OneDrive](https://support.office.com/article/845dcf18-f921-435e-bf28-4e24b95e5fc0). Después de habilitar las etiquetas de confidencialidad para archivos de Office en SharePoint y OneDrive, se pedirá a los usuarios que ejecuten una versión anterior de la aplicación de sincronización que la actualicen.
+
+## <a name="supported-file-types"></a>Tipos de archivo compatibles
+
+Después de habilitar las etiquetas de confidencialidad para SharePoint y OneDrive, se admiten los siguientes tipos de archivo para escenarios de etiquetado de confidencialidad.
+
+Aplicar una etiqueta de confidencialidad en Office en la Web o en SharePoint:
+
+- **Palabra**: .docx, .docm
+- **Excel**: .xlsx, .xlsm, .xlsb
+- **PowerPoint**: .pptx, .ppsx
+
+Carga de un documento etiquetado y, a continuación, extracción y visualización de esa etiqueta de confidencialidad:
+
+- **Word**: doc, .docx, .docm, .dot, .dotx, .dotm
+- **Excel**: .xls, .xlt, .xla, .xlc, .xlm, .xlw, .xlsx, .xltx, .xlsm, .xltm, .xlam, .xlsb
+- **PowerPoint**: .ppt, .pot, .pps, .ppa, .pptx, .ppsx, .ppsxm, .potx, .ppam, .pptm, .potm, .ppsm
 
 ## <a name="limitations"></a>Limitaciones
 

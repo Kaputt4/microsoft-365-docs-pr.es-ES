@@ -6,22 +6,24 @@ ms.service: microsoft-365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
-ms.author: dansimp
-author: dansimp
+ms.author: siosulli
+author: siosulli
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
-ms.collection: M365-security-compliance
+ms.collection:
+- m365-security
+- tier3
 ms.topic: article
 ms.subservice: mde
 ms.custom: api
 search.appverid: met150
-ms.openlocfilehash: cbb0951b9fb7576e815ffcfc0a44ca2ad6e44fa1
-ms.sourcegitcommit: 9b133379196da2b3a4bb311b07ff274f43780f68
+ms.openlocfilehash: d292acd836936d0112d617d4881845b69816858b
+ms.sourcegitcommit: 4e42bafee965446f44f7f57d1defed2b9b24fce8
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/14/2022
-ms.locfileid: "67693915"
+ms.lasthandoff: 09/30/2022
+ms.locfileid: "68233824"
 ---
 # <a name="score-resource-type"></a>Puntuación del tipo de recurso
 
@@ -48,6 +50,9 @@ Método|Tipo de valor devuelto|Descripción
 [Obtener puntuación de exposición](get-exposure-score.md)|[Puntuación](score.md)|Obtenga la puntuación de exposición de la organización.
 [Obtener puntuación segura para dispositivos](get-device-secure-score.md)|[Puntuación](score.md)|Obtenga la puntuación de seguridad del dispositivo de la organización.
 [Enumeración de la puntuación de exposición por grupo de dispositivos](get-machine-group-exposure-score.md)|[Puntuación](score.md)|Enumera las puntuaciones por grupo de dispositivos.
+
+> [!NOTE]
+> La creación de grupos de dispositivos se admite en El plan 1 y el plan 2 de Defender para punto de conexión.  
 
 ## <a name="properties"></a>Propiedades
 

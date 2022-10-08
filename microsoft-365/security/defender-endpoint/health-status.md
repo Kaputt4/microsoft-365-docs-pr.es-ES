@@ -11,16 +11,18 @@ author: mjcaparas
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
-ms.collection: M365-security-compliance
+ms.collection:
+- m365-security
+- tier3
 ms.topic: article
 ms.subservice: mde
 search.appverid: met150
-ms.openlocfilehash: 0ff6d8074131e1595ee651c40e59a0b9b03eb063
-ms.sourcegitcommit: 9b133379196da2b3a4bb311b07ff274f43780f68
+ms.openlocfilehash: cfd86b27acfa359e4446d608c276601daf46e623
+ms.sourcegitcommit: 4e42bafee965446f44f7f57d1defed2b9b24fce8
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/14/2022
-ms.locfileid: "67692605"
+ms.lasthandoff: 09/30/2022
+ms.locfileid: "68233406"
 ---
 # <a name="investigate-agent-health-issues"></a>Investigar problemas de estado del agente
 
@@ -40,7 +42,7 @@ En la tabla siguiente se proporciona información sobre los valores devueltos al
 |---|---|
 |automatic_definition_update_enabled|True si las actualizaciones automáticas de definiciones de antivirus están habilitadas, false en caso contrario.|
 |cloud_automatic_sample_submission_consent|Nivel de envío de ejemplo actual. Puede ser uno de los siguientes valores: <ul><li>**Ninguno**: no se envían muestras sospechosas a Microsoft.</li><li>**Seguro**: solo se envían automáticamente muestras sospechosas que no contienen información de identificación personal (PII). Este es el valor predeterminado para esta configuración.</li><li>**Todos**: todos los ejemplos sospechosos se envían a Microsoft.</li></ul>|
-|cloud_diagnostic_enabled|True si la recopilación de datos de diagnóstico opcional está habilitada, false en caso contrario. Para obtener más información relacionada con Defender para punto de conexión y otros productos y servicios como Antivirus de Microsoft Defender y Windows, consulte [Declaración de privacidad de Microsoft](https://go.microsoft.com/fwlink/?linkid=827576).|
+|cloud_diagnostic_enabled|True si la recopilación de datos de diagnóstico opcional está habilitada, false en caso contrario. Para obtener más información relacionada con Defender para punto de conexión y otros productos y servicios como Microsoft Defender Antivirus y Windows, consulte [Declaración de privacidad de Microsoft](https://go.microsoft.com/fwlink/?linkid=827576).|
 |cloud_enabled|True si la protección entregada en la nube está habilitada, en caso contrario, false.|
 |conflicting_applications|Lista de aplicaciones que posiblemente entren en conflicto con Microsoft Defender para punto de conexión. Esta lista incluye, pero no se limita a, otros productos de seguridad y otras aplicaciones conocidas por causar problemas de compatibilidad.|
 |definitions_status|Estado de las definiciones de antivirus.|

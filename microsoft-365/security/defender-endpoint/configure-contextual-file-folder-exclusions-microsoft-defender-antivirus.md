@@ -1,7 +1,7 @@
 ---
 title: Exclusiones contextuales de archivos y carpetas
-description: Describe la funcionalidad de exclusiones de archivos y carpetas contextuales para Antivirus de Microsoft Defender en Windows. Esta funcionalidad le permite ser más específico al definir en qué contexto el Antivirus de Microsoft Defender no debe examinar un archivo o carpeta, aplicando restricciones.
-keywords: Antivirus de Microsoft Defender, proceso, exclusión, archivos, exámenes
+description: Describe la funcionalidad de exclusiones de archivos y carpetas contextuales para Microsoft Defender Antivirus en Windows. Esta funcionalidad le permite ser más específico al definir en qué contexto Microsoft Defender Antivirus no debe examinar un archivo o carpeta, aplicando restricciones
+keywords: Microsoft Defender Antivirus, proceso, exclusión, archivos, exámenes
 ms.service: microsoft-365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
@@ -12,20 +12,22 @@ ms.localizationpriority: medium
 ms.date: 08/25/2022
 manager: dansimp
 audience: ITPro
-ms.collection: M365-security-compliance
+ms.collection:
+- m365-security
+- tier2
 ms.topic: article
 ms.subservice: mde
 search.appverid: met150
-ms.openlocfilehash: 903cfb9e6a4bc618a6839b612cb3b15a840ebb8d
-ms.sourcegitcommit: 9b133379196da2b3a4bb311b07ff274f43780f68
+ms.openlocfilehash: 377383cb959fd53accf98c80a8637c05bb7832ff
+ms.sourcegitcommit: 0b7070ec119e00e0dafe030bbfbef0ae5c9afa19
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/14/2022
-ms.locfileid: "67699178"
+ms.lasthandoff: 09/29/2022
+ms.locfileid: "68200635"
 ---
 # <a name="contextual-file-and-folder-exclusions"></a>Exclusiones contextuales de archivos y carpetas
 
-En este artículo o sección se describe la funcionalidad de exclusiones de archivos y carpetas contextuales para antivirus de Microsoft Defender en Windows. Esta funcionalidad le permite ser más específico al definir en qué contexto el Antivirus de Microsoft Defender no debe examinar un archivo o carpeta mediante la aplicación de restricciones.
+En este artículo o sección se describe la funcionalidad de exclusiones de archivos y carpetas contextuales para Microsoft Defender Antivirus en Windows. Esta funcionalidad le permite ser más específico al definir en qué contexto Microsoft Defender Antivirus no debe examinar un archivo o carpeta, aplicando restricciones.
 
 ## <a name="overview"></a>Información general
 
@@ -47,14 +49,14 @@ Normalmente, las restricciones se aplican agregando el tipo de restricción a la
 
 | Restriction | TypeName | valor |
 |:---|:---|:---|
-| Archivo o carpeta  | PathType  | file <br> folder |
+| Archivo o carpeta  | PathType  | archivo <br> folder |
 | Tipo de examen | ScanType | Rápido <br> Completo |
 | Desencadenador de examen | ScanTrigger | Ondemand <br> OnAccess <br> Bm |
 | Proceso | Proceso | "<image_path>" |
 
 ### <a name="requirements"></a>Requisitos
 
-Esta funcionalidad requiere antivirus de Microsoft Defender:
+Esta funcionalidad requiere Microsoft Defender Antivirus:
 
 - Plataforma: **4.18.2205.7** o posterior
 - Motor: **1.1.19300.2** o posterior
@@ -158,4 +160,4 @@ Para excluir un archivo o carpeta solo cuando un proceso específico acceda a é
 
 Después de crear las exclusiones contextuales deseadas, puede usar la herramienta de administración existente para configurar las exclusiones de archivos y carpetas mediante la cadena que ha creado.
 
-Consulte: [Configuración y validación de exclusiones para exámenes del Antivirus de Microsoft Defender](configure-exclusions-microsoft-defender-antivirus.md)
+Consulte: [Configuración y validación de exclusiones para exámenes de antivirus de Microsoft Defender](configure-exclusions-microsoft-defender-antivirus.md)

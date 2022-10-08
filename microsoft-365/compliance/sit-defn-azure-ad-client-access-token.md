@@ -1,5 +1,5 @@
 ---
-title: Definición de entidad de token de acceso de cliente de Azure AD (versión preliminar)
+title: Definición de entidad de token de acceso de cliente de Azure AD
 f1.keywords:
 - CSH
 ms.author: chrfox
@@ -20,18 +20,20 @@ hideEdit: true
 feedback_system: None
 recommendations: false
 description: Definición de entidad de tipo de información confidencial del token de acceso de cliente de Azure AD.
-ms.openlocfilehash: 4a5a61d66316f4dda84d9f3fe93b2ffe113d5d78
-ms.sourcegitcommit: fa570d90b00ed1bb40e1ca27b11c66a84c4204e9
+ms.openlocfilehash: 99c60e5c6ff2f78b2bf4ecf610e860baea7f95d4
+ms.sourcegitcommit: 50da6f1f6ef2274c17ed9729e7ad84395b0a9be2
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/05/2022
-ms.locfileid: "68475977"
+ms.lasthandoff: 10/08/2022
+ms.locfileid: "68503432"
 ---
-# <a name="azure-ad-client-access-token-preview"></a>Token de acceso de cliente de Azure AD (versión preliminar)
+# <a name="azure-ad-client-access-token"></a>Token de acceso de cliente de Azure AD
 
 [!INCLUDE [purview-preview](../includes/purview-preview.md)]
 
-## <a name="format"></a>Formato
+Esta SIT también se incluye en el SIT de [todas las credenciales](sit-defn-all-creds.md) agrupadas.
+
+ ## <a name="format"></a>Formato
 
 Combinación de hasta 10 000 caracteres que constan de letras, dígitos y caracteres especiales.
 
@@ -84,13 +86,22 @@ Una combinación de hasta 1000 caracteres que consta de
 
 Por ejemplo:
 
-`eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiIsIng1dCI6Ing0Nzh4eU9wbHNNMUg3TlhrN1N4MTd4MXVwYyIsImtpZCI6Ing0Nzh4`
+`eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiIsIng1dCI6Ing0Nzh4eU9wbHNNMUg3TlhrN1N4MTd4MX...`
 
 
+
+## <a name="credential-example"></a>Ejemplo de credencial 
+
+`Authorization: Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiIsIng1dCI6Ing0Nzh4eU9wbHNNMUg3TlhrN1N4MTd4MX...`
+
+> [!IMPORTANT]
+> Este ejemplo se ha truncado. No es un ejemplo detectable de este SIT.
 
 ## <a name="checksum"></a>Suma de comprobación
 
 Sí
+
+Los SIT que tienen sumas de comprobación usan un cálculo único para comprobar si la información es válida. Esto significa que cuando el valor **de suma de comprobación** es **Sí**, el servicio puede realizar una detección positiva solo en función de los datos confidenciales. Cuando el valor **de suma de comprobación** es **No** se deben detectar elementos adicionales (secundarios) para que el servicio realice una detección positiva.
 
 ## <a name="definition"></a>Definición
 

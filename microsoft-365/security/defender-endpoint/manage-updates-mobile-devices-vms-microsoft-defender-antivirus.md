@@ -1,6 +1,6 @@
 ---
-title: Definir cómo se actualizan los dispositivos móviles mediante el Antivirus de Microsoft Defender
-description: Administre cómo se deben actualizar los dispositivos móviles, como los portátiles, con las actualizaciones de protección del Antivirus de Microsoft Defender.
+title: Definir cómo se actualizan los dispositivos móviles mediante Microsoft Defender Antivirus
+description: Administre cómo se deben actualizar los dispositivos móviles, como los portátiles, con Microsoft Defender actualizaciones de protección antivirus.
 keywords: updates, protection, schedule updates, battery, mobile device, laptop, notebook, opt-in, microsoft update, wsus, override
 ms.service: microsoft-365-security
 ms.mktglfcycl: manage
@@ -14,14 +14,16 @@ ms.custom: nextgen
 ms.reviewer: ''
 manager: dansimp
 ms.subservice: mde
-ms.collection: M365-security-compliance
+ms.collection:
+- m365-security
+- tier2
 search.appverid: met150
-ms.openlocfilehash: 928830dff9c58a1f645b1c677e0377bb22927484
-ms.sourcegitcommit: 9b133379196da2b3a4bb311b07ff274f43780f68
+ms.openlocfilehash: 77eaa6b2c251b08fc52c420dda5f139790903cdf
+ms.sourcegitcommit: 4e42bafee965446f44f7f57d1defed2b9b24fce8
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/14/2022
-ms.locfileid: "67692011"
+ms.lasthandoff: 09/30/2022
+ms.locfileid: "68232262"
 ---
 # <a name="manage-updates-for-mobile-devices-and-virtual-machines-vms"></a>Administrar las actualizaciones de dispositivos móviles y máquinas virtuales
 
@@ -51,7 +53,7 @@ Los artículos siguientes también pueden ser útiles en estas situaciones:
 
 ## <a name="opt-in-to-microsoft-update-on-mobile-computers-without-a-wsus-connection"></a>Participar en Microsoft Update en equipos móviles sin una conexión WSUS
 
-Puede usar Microsoft Update para mantener actualizada la inteligencia de seguridad en dispositivos móviles que ejecutan antivirus de Microsoft Defender cuando no están conectados a la red corporativa o no tienen una conexión WSUS.
+Puede usar Microsoft Update para mantener actualizada la inteligencia de seguridad en dispositivos móviles que ejecutan Microsoft Defender Antivirus cuando no están conectados a la red corporativa o no tienen una conexión WSUS.
 
 Esto significa que las actualizaciones de protección se pueden entregar a los dispositivos (a través de Microsoft Update), incluso si ha establecido WSUS para invalidar Microsoft Update.
 
@@ -69,7 +71,7 @@ Puede participar en Microsoft Update en el dispositivo móvil de una de las sigu
 
 3. Seleccione **Directivas** y plantillas **administrativas**.
 
-4. Expanda el árbol a **componentes** \> de Windows **Novedades firma** **del Antivirus** \> de Microsoft Defender.
+4. Expanda el árbol a **componentes** \> de Windows Microsoft Defender **Novedades de firma** **del antivirus**\>.
 
 5. Establezca **Permitir actualizaciones de inteligencia de seguridad de Microsoft Update** en **Habilitado** y, a continuación, seleccione  **Aceptar**.
 
@@ -89,7 +91,7 @@ Puede participar en Microsoft Update en el dispositivo móvil de una de las sigu
 
 ## <a name="prevent-security-intelligence-updates-when-running-on-battery-power"></a>Evitar actualizaciones de inteligencia de seguridad al ejecutarse con batería
 
-Puede configurar Antivirus de Microsoft Defender para que solo descargue las actualizaciones de protección cuando el equipo esté conectado a una fuente de alimentación cableada.
+Puede configurar Microsoft Defender Antivirus para que solo descargue las actualizaciones de protección cuando el equipo esté conectado a una fuente de alimentación cableada.
 
 ### <a name="use-group-policy-to-prevent-security-intelligence-updates-on-battery-power"></a>Uso de directiva de grupo para evitar actualizaciones de inteligencia de seguridad en la batería
 
@@ -99,7 +101,7 @@ Puede configurar Antivirus de Microsoft Defender para que solo descargue las act
 
 3. Seleccione **Directivas** y plantillas **administrativas**.
 
-4. Expanda el árbol a **componentes** \> de Windows **Novedades Firma** **del Antivirus** \> de Microsoft Defender y, a continuación, establezca **Permitir actualizaciones de inteligencia de seguridad al ejecutar la batería en** **Deshabilitado**. A continuación, seleccione **Aceptar**.
+4. Expanda el árbol a **componentes** \> de Windows Microsoft Defender **Novedades de firma** del **antivirus** \> y, a continuación, establezca **Permitir actualizaciones de inteligencia de seguridad al ejecutar la batería en** **Deshabilitado**. A continuación, seleccione **Aceptar**.
 
 Esta acción evita que las actualizaciones de protección se descarguen cuando el equipo esté encendido.
 
@@ -116,4 +118,4 @@ Esta acción evita que las actualizaciones de protección se descarguen cuando e
 ## <a name="related-articles"></a>Artículos relacionados
 
 - [Para obtener más información, consulte Administrar actualizaciones de Antivirus de Microsoft Defender y aplicar bases de referencia.](manage-updates-baselines-microsoft-defender-antivirus.md)
-- [Actualizar y administrar el Antivirus de Microsoft Defender en Windows 10](deploy-manage-report-microsoft-defender-antivirus.md)
+- [Actualizar y administrar Microsoft Defender Antivirus en Windows 10](deploy-manage-report-microsoft-defender-antivirus.md)

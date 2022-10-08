@@ -7,21 +7,23 @@ ms.service: microsoft-365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
-ms.author: macapara
-author: mjcaparas
+ms.author: siosulli
+author: siosulli
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
-ms.collection: M365-security-compliance
+ms.collection:
+- m365-security
+- tier2
 ms.topic: article
 ms.subservice: mde
 search.appverid: met150
-ms.openlocfilehash: 4581b3a635fdb37f359d20e547aed1893f794252
-ms.sourcegitcommit: 9b133379196da2b3a4bb311b07ff274f43780f68
+ms.openlocfilehash: 79d2109da8822d3859155f4b3b2867bdf3a8a15d
+ms.sourcegitcommit: 4e42bafee965446f44f7f57d1defed2b9b24fce8
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/14/2022
-ms.locfileid: "67691981"
+ms.lasthandoff: 09/30/2022
+ms.locfileid: "68232174"
 ---
 # <a name="onboard-devices-without-internet-access-to-microsoft-defender-for-endpoint"></a>Incorporación de dispositivos sin acceso a Internet a Microsoft Defender para punto de conexión
 
@@ -77,4 +79,4 @@ En función del sistema operativo, el proxy que se usará para Microsoft Defende
     Para obtener más información, consulte [Trabajar con directivas de seguridad](/azure/security-center/tutorial-security-policy).
 
 > [!NOTE]
-> Cualquier cliente que no tenga acceso a Internet no se puede incorporar al punto de conexión de Microsoft Defender. Un cliente debe tener acceso directamente a las direcciones URL necesarias o debe tener acceso a través de un proxy.
+> Cualquier cliente que no tenga acceso a Internet no se puede incorporar a Microsoft Defender punto de conexión. Un cliente debe tener acceso directamente a las direcciones URL necesarias o debe tener acceso a través de un proxy.

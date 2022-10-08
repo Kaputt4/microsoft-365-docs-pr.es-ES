@@ -11,15 +11,17 @@ ms.author: dansimp
 author: dansimp
 manager: dansimp
 audience: ITPro
-ms.collection: M365-security-compliance
+ms.collection:
+- m365-security
+- tier2
 ms.topic: article
 search.appverid: met150
-ms.openlocfilehash: dda1cd5d25d75132cb6e04ad5dd7c365c4bb15ed
-ms.sourcegitcommit: c29af68260ba8676083674b3c70209bff2c2e362
+ms.openlocfilehash: bb007a11f45742834f06d7b450272f7bdf16cbea
+ms.sourcegitcommit: 4e42bafee965446f44f7f57d1defed2b9b24fce8
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/16/2022
-ms.locfileid: "67739044"
+ms.lasthandoff: 09/30/2022
+ms.locfileid: "68233780"
 ---
 # <a name="how-to-protect-against-phishing-attacks"></a>Protección contra ataques de suplantación de identidad (phishing)
 
@@ -65,7 +67,7 @@ En caso de duda, póngase en contacto con la empresa por canales conocidos para 
 
 ## <a name="software-solutions-for-organizations"></a>Soluciones de software para organizaciones
 
-* [Microsoft Edge](/microsoft-edge/deploy/index) y [Protección de aplicaciones de Windows Defender](/windows/security/microsoft-defender-application-guard/md-app-guard-overview.md) ofrecen protección frente a la amenaza creciente de ataques dirigidos mediante la tecnología de virtualización hyper-V líder del sector de Microsoft. Si se considera que un sitio web explorado no es de confianza, el contenedor de Hyper-V aislará ese dispositivo del resto de la red, lo que impedirá el acceso a los datos empresariales.
+* [Microsoft Edge](/microsoft-edge/deploy/index) y [Windows Defender Protección de aplicaciones](/windows/security/microsoft-defender-application-guard/md-app-guard-overview.md) ofrecen protección contra la amenaza creciente de ataques dirigidos mediante la tecnología de virtualización hyper-V líder del sector de Microsoft. Si se considera que un sitio web explorado no es de confianza, el contenedor de Hyper-V aislará ese dispositivo del resto de la red, lo que impedirá el acceso a los datos empresariales.
 
 * [Microsoft Exchange Online Protection (EOP)](https://products.office.com/exchange/exchange-email-security-spam-protection) ofrece confiabilidad y protección de clase empresarial contra el correo no deseado y el malware, a la vez que mantiene el acceso al correo electrónico durante y después de las emergencias.  Mediante el uso de varias capas de filtrado, EOP puede proporcionar diferentes controles para el filtrado de correo no deseado, como controles de correo masivo y correo no deseado internacional, que mejorarán aún más sus servicios de protección.
 

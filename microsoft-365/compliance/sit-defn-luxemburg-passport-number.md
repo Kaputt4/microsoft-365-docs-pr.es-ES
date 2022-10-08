@@ -14,19 +14,22 @@ f1_keywords:
 ms.service: O365-seccomp
 ms.localizationpriority: medium
 ms.collection:
-- M365-security-compliance
+- tier3
+- purview-compliance
 hideEdit: true
 feedback_system: None
 recommendations: false
 description: Definición de entidad de tipo de información confidencial del número de pasaporte de Luxemburgo.
-ms.openlocfilehash: dc7fc8c7e54f265e7c6f1584dafedd2ea61418b7
-ms.sourcegitcommit: 5aed330d8af523f0dffe5e392f1c79f047e38172
+ms.openlocfilehash: d13296b0eab1663caac1f711dfa3ce8ea72ea7db
+ms.sourcegitcommit: 6df492719fecc2b213d55465dc1cd60ab4627ed6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/21/2022
-ms.locfileid: "66999941"
+ms.lasthandoff: 10/04/2022
+ms.locfileid: "68381619"
 ---
 # <a name="luxemburg-passport-number"></a>Número de pasaporte de Luxemburgo
+
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
 
 ## <a name="format"></a>Formato
 
@@ -44,13 +47,13 @@ No
 
 Una política de DLP tiene una gran confianza en que ha detectado este tipo de información confidencial si, dentro de una proximidad de 300 caracteres:
 
-- La expresión `Regex_luxemburg_eu_passport_number` regular busca contenido que coincida con el patrón.
+- La expresión regular `Regex_luxemburg_eu_passport_number` encuentra contenido que coincide con el patrón.
 - Se encuentra una palabra clave de `Keywords_eu_passport_number` o `Keywords_luxemburg_eu_passport_number`.
 - La expresión `Regex_eu_passport_date3` regular busca la fecha con el formato DD MM AAAA o se encuentra una palabra clave de .`Keywords_eu_passport_date`
 
 Una política de DLP tiene confianza media en que ha detectado este tipo de información confidencial si, dentro de una proximidad de 300 caracteres:
 
-- La expresión `Regex_luxemburg_eu_passport_number` regular busca contenido que coincida con el patrón.
+- La expresión regular `Regex_luxemburg_eu_passport_number` encuentra contenido que coincide con el patrón.
 - Se encuentra una palabra clave de `Keywords_eu_passport_number` o `Keywords_luxemburg_eu_passport_number`.
 
 ```xml
@@ -81,12 +84,12 @@ Una política de DLP tiene confianza media en que ha detectado este tipo de info
 
 ### <a name="keywords_eu_passport_number"></a>Keywords_eu_passport_number
 
-- Pasaporte #
-- Pasaporte #
+- pasaporte#
+- pasaporte #
 - passportid
-- Pasaportes
+- pasaportes
 - passportno
-- passport no
+- pasaporte no
 - passportnumber
 - passport number
 - passportnumbers

@@ -15,14 +15,16 @@ ms.reviewer: pauhijbr, ksarens
 manager: dansimp
 ms.subservice: mde
 ms.topic: how-to
-ms.collection: M365-security-compliance
+ms.collection:
+- m365-security
+- tier2
 search.appverid: met150
-ms.openlocfilehash: cdf9d45848cb2510b704d2933e86768682458466
-ms.sourcegitcommit: 9b133379196da2b3a4bb311b07ff274f43780f68
+ms.openlocfilehash: 5899b4280a4794799df9acc2d7a3701ff8553cdb
+ms.sourcegitcommit: 4e42bafee965446f44f7f57d1defed2b9b24fce8
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/14/2022
-ms.locfileid: "67687689"
+ms.lasthandoff: 09/30/2022
+ms.locfileid: "68233450"
 ---
 # <a name="schedule-antivirus-scans-using-powershell"></a>Programar los exámenes de antivirus con PowerShell
 
@@ -34,7 +36,7 @@ ms.locfileid: "67687689"
 **Plataformas**
 - Windows
 
-En este artículo se describe cómo configurar exámenes programados mediante cmdlets de PowerShell. Para más información sobre la programación de exámenes y sobre los tipos de examen, consulte [Configuración de exámenes programados rápidos o completos del Antivirus de Microsoft Defender](schedule-antivirus-scans.md). 
+En este artículo se describe cómo configurar exámenes programados mediante cmdlets de PowerShell. Para obtener más información sobre la programación de exámenes y sobre los tipos de examen, consulte [Configuración de exámenes programados rápidos o completos Microsoft Defender Antivirus](schedule-antivirus-scans.md). 
 
 ## <a name="use-powershell-cmdlets-to-schedule-scans"></a>Uso de cmdlets de PowerShell para programar exámenes
 
@@ -48,7 +50,7 @@ Set-MpPreference -RandomizeScheduleTaskTimes
 
 ```
 
-Para obtener más información, consulte [Uso de cmdlets de PowerShell para configurar y ejecutar cmdlets de Antivirus de Microsoft Defender](use-powershell-cmdlets-microsoft-defender-antivirus.md) y [Antivirus de Defender](/powershell/module/defender/) para obtener más información sobre cómo usar PowerShell con el Antivirus de Microsoft Defender.
+Para obtener más información, consulte [Uso de cmdlets de PowerShell para configurar y ejecutar Microsoft Defender](use-powershell-cmdlets-microsoft-defender-antivirus.md) [cmdlets antivirus y antivirus de Defender](/powershell/module/defender/) para obtener más información sobre cómo usar PowerShell con Microsoft Defender Antivirus.
 
 ## <a name="powershell-cmdlets-for-scheduling-scans-when-an-endpoint-is-not-in-use"></a>Cmdlets de PowerShell para la programación de exámenes cuando un punto de conexión no está en uso
 
@@ -72,7 +74,7 @@ Set-MpPreference -RemediationScheduleDay
 Set-MpPreference -RemediationScheduleTime
 ```
 
-Consulte [Uso de cmdlets de PowerShell para configurar y ejecutar antivirus de Microsoft Defender](use-powershell-cmdlets-microsoft-defender-antivirus.md) y [cmdlets de Antivirus de Defender](/powershell/module/defender/) para obtener más información sobre cómo usar PowerShell con el Antivirus de Microsoft Defender.
+Consulte [Uso de cmdlets de PowerShell para configurar y ejecutar cmdlets Microsoft Defender Antivirus](use-powershell-cmdlets-microsoft-defender-antivirus.md) y [Antivirus de Defender](/powershell/module/defender/) para obtener más información sobre cómo usar PowerShell con Microsoft Defender Antivirus.
 
 ## <a name="powershell-cmdlets-for-scheduling-daily-scans"></a>Cmdlets de PowerShell para programar exámenes diarios
 
@@ -82,7 +84,7 @@ Use los siguientes cmdlets:
 Set-MpPreference -ScanScheduleQuickScanTime
 ```
 
-Para obtener más información sobre cómo usar PowerShell con el Antivirus de Microsoft Defender, consulte [Uso de cmdlets de PowerShell para configurar y ejecutar antivirus de Microsoft Defender](use-powershell-cmdlets-microsoft-defender-antivirus.md) y [cmdlets de Antivirus de Defender](/powershell/module/defender/).
+Para obtener más información sobre cómo usar PowerShell con Microsoft Defender Antivirus, consulte [Uso de cmdlets de PowerShell para configurar y ejecutar cmdlets Microsoft Defender Antivirus](use-powershell-cmdlets-microsoft-defender-antivirus.md) y Antivirus de [Defender](/powershell/module/defender/).
 
 > [!TIP]
 > Si busca información relacionada con el antivirus para otras plataformas, consulte:

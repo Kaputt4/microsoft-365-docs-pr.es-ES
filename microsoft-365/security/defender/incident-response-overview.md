@@ -16,17 +16,18 @@ ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection:
-- M365-security-compliance
+- m365-security
+- tier1
 ms.topic: conceptual
 search.appverid:
 - MOE150
 - MET150
-ms.openlocfilehash: bb6189c92057b3c58a518bab3768011c4a1cffe4
-ms.sourcegitcommit: 10e6abe740e27000e223378eb17d657a47555fa8
+ms.openlocfilehash: 655858dab8b590909073f42c54148f7d0cbe4f06
+ms.sourcegitcommit: 50da6f1f6ef2274c17ed9729e7ad84395b0a9be2
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/31/2022
-ms.locfileid: "67480962"
+ms.lasthandoff: 10/08/2022
+ms.locfileid: "68503520"
 ---
 # <a name="investigate-and-respond-with-microsoft-365-defender"></a>Investigar y responder con Microsoft 365 Defender
 
@@ -55,7 +56,7 @@ Si su organización usa Microsoft 365 Defender, el equipo de operaciones de segu
 
 Cuando se completa una investigación automatizada, se llega a un veredicto por cada parte de evidencia de un incidente. En función del veredicto, se identifican las acciones de corrección. En algunos casos, las acciones de corrección se realizan automáticamente; en otros casos, las acciones de corrección esperan la aprobación a través del centro de Microsoft 365 Defender acción. 
 
-Consulte [Investigación y respuesta automatizadas en Microsoft 365 Defender](m365d-autoir.md) para obtener más información.
+Para obtener más información, consulte [Investigación y respuesta automatizadas en Microsoft 365 Defender](m365d-autoir.md).
 
 ## <a name="proactive-search-for-threats-with-advanced-hunting"></a>Búsqueda proactiva de amenazas con búsqueda avanzada
 
@@ -85,6 +86,6 @@ Para obtener más información, consulte [Análisis de amenazas en Microsoft 365
 
 ## <a name="collaborate-with-microsoft-experts"></a>Colaboración con expertos de Microsoft
 
-Expertos en amenazas de Microsoft: Las notificaciones de ataque dirigidas son un servicio de búsqueda de amenazas administrado. Una vez que se aplique y se acepte, recibirá notificaciones de ataque dirigidas de expertos en amenazas de Microsoft, por lo que no se perderá las amenazas críticas para su entorno. Estas notificaciones le ayudarán a proteger los puntos de conexión, el correo electrónico y las identidades de su organización. Expertos en amenazas de Microsoft: Expertos a petición le permite obtener consejos expertos sobre las amenazas a las que se enfrenta su organización y puede ponerse en contacto con usted para obtener ayuda sobre las amenazas a las que se enfrenta su organización. Está disponible como un servicio de suscripción adicional.
+Las notificaciones de ataque de punto de conexión (anteriormente conocidas como Expertos en amenazas de Microsoft: notificaciones de ataque dirigidas) es un servicio de búsqueda de amenazas administrada. Una vez que se aplique y se acepte, recibirá notificaciones de ataque de punto de conexión de expertos en amenazas de Microsoft, por lo que no se perderá las amenazas críticas para su entorno. Estas notificaciones le ayudarán a proteger los puntos de conexión, el correo electrónico y las identidades de su organización. Microsoft Defender Experts – Experts on Demand le permite obtener consejos expertos sobre las amenazas a las que se enfrenta su organización y puede ponerse en contacto con usted para obtener ayuda sobre las amenazas a las que se enfrenta su organización. Está disponible como un servicio de suscripción adicional.
 
-Para obtener más información, consulte [Expertos en amenazas de Microsoft en Información general de Microsoft 365](/microsoft-365/security/defender/microsoft-threat-experts).
+Para obtener más información, consulte [Microsoft Defender Experts in Microsoft 365 overview (Introducción a expertos en Microsoft 365).](/microsoft-365/security/defender/microsoft-threat-experts)

@@ -1,7 +1,7 @@
 ---
-title: Especificar conjuntos de definiciones adicionales para la inspección del tráfico de red para el Antivirus de Microsoft Defender
-description: Especifique conjuntos de definiciones adicionales para la inspección del tráfico de red para el Antivirus de Microsoft Defender.
-keywords: Antivirus de Microsoft Defender, antimalware, seguridad, defender, inspección de tráfico de red
+title: Especificar conjuntos de definiciones adicionales para la inspección del tráfico de red para Microsoft Defender Antivirus
+description: Especifique conjuntos de definiciones adicionales para la inspección del tráfico de red para Microsoft Defender Antivirus.
+keywords: Microsoft Defender Antivirus, antimalware, seguridad, defender, inspección de tráfico de red
 search.product: eADQiWindows 10XVcnh
 ms.pagetype: security
 ms.service: microsoft-365-security
@@ -16,14 +16,16 @@ manager: dansimp
 ms.custom: nextgen
 ms.subservice: mde
 ms.topic: article
-ms.collection: M365-security-compliance
+ms.collection:
+- m365-security
+- tier2
 search.appverid: met150
-ms.openlocfilehash: 6d997c609666ef306bc5595583d608f1190604b7
-ms.sourcegitcommit: 9b133379196da2b3a4bb311b07ff274f43780f68
+ms.openlocfilehash: 53bf1b15e2d9b76e755c3c8484c0b1f1b7ad5043
+ms.sourcegitcommit: 4e42bafee965446f44f7f57d1defed2b9b24fce8
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/14/2022
-ms.locfileid: "67689567"
+ms.lasthandoff: 09/30/2022
+ms.locfileid: "68221750"
 ---
 # <a name="specify-additional-definition-sets-for-network-traffic-inspection"></a>Especificar conjuntos de definiciones adicionales para la inspección del tráfico de red
 
@@ -39,7 +41,7 @@ Puede especificar conjuntos de definiciones adicionales para la inspección del 
 
 1. En el punto de conexión de administración de directiva de grupo, abra la [consola de administración de directiva de grupo](/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/cc731212(v=ws.11)).
 
-2. Vaya a **Componentes** \> de Windows Sistema de **inspección de red** antivirus \> de **Microsoft Defender**.
+2. Vaya a **Componentes** \> de Windows Microsoft Defender **Sistema de inspección de red** **antivirus**\>.
 
 3. Seleccione **Especificar conjuntos de definiciones adicionales para la inspección del tráfico de red**. De forma predeterminada, esta directiva se establece en **No configurada**.
 
