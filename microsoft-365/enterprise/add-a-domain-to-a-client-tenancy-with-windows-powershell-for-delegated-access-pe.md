@@ -5,11 +5,12 @@ author: kelleyvice-msft
 manager: scotv
 audience: Admin
 ms.topic: article
-ms.service: o365-administration
+ms.service: microsoft-365-enterprise
 ms.localizationpriority: medium
 search.appverid:
 - MET150
 ms.collection:
+- scotvorg
 - Ent_O365
 - M365-subscription-management
 f1.keywords:
@@ -19,23 +20,23 @@ ms.custom:
 - admindeeplinkMAC
 ms.assetid: f49b4d24-9aa0-48a6-95dd-6bae9cf53d2c
 description: 'Resumen: use PowerShell para Microsoft 365 para agregar un nombre de dominio alternativo a un inquilino de cliente existente.'
-ms.openlocfilehash: c4dcdb34f9065009ccaa77d23222601506b537b5
-ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
+ms.openlocfilehash: ad9633964066852acccd03700bd3e1164de19827
+ms.sourcegitcommit: 0b7070ec119e00e0dafe030bbfbef0ae5c9afa19
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "65099046"
+ms.lasthandoff: 09/29/2022
+ms.locfileid: "68197181"
 ---
 # <a name="add-a-domain-to-a-client-tenancy-with-windows-powershell-for-delegated-access-permission-dap-partners"></a>Agregar un dominio a un arrendamiento de cliente con Windows PowerShell para asociados con permiso de acceso delegado (DAP)
 
-*Este artículo se aplica tanto a Microsoft 365 Enterprise como a Office 365 Enterprise.*
+*Este artículo afecta tanto a Office 365 Enterprise como a Microsoft 365 Enterprise*
 
-Puede crear y asociar nuevos dominios con el inquilino del cliente con PowerShell para Microsoft 365 más rápido que el uso de la Centro de administración de Microsoft 365.
+Puede crear y asociar nuevos dominios con el inquilino del cliente con PowerShell para Microsoft 365 más rápido que con el Centro de administración de Microsoft 365.
 
-Los asociados con permiso de acceso delegado (DAP) son asociados de sindicación y proveedor de soluciones en la nube (CSP). Con frecuencia son los proveedores de red o de telecomunicaciones para otras compañías. Agrupan Microsoft 365 suscripciones en sus ofertas de servicio a sus clientes. Cuando venden una suscripción Microsoft 365, se les conceden automáticamente permisos de administración en nombre de (AOBO) a las tenencias del cliente para que puedan administrar e informar sobre las tenencias del cliente.
-## <a name="what-do-you-need-to-know-before-you-begin"></a>¿Qué necesita saber antes de comenzar?
+Los asociados con permiso de acceso delegado (DAP) son asociados de sindicación y proveedor de soluciones en la nube (CSP). Con frecuencia son los proveedores de red o de telecomunicaciones para otras compañías. Agrupan suscripciones de Microsoft 365 en sus ofertas de servicio a sus clientes. Cuando venden una suscripción de Microsoft 365, se les conceden automáticamente permisos de administración en nombre de (AOBO) a las tenencias del cliente para que puedan administrar e informar sobre las tenencias del cliente.
+## <a name="what-do-you-need-to-know-before-you-begin"></a>¿Qué necesita saber antes de empezar?
 
-Los procedimientos de este tema requieren que se conecte a [Conectar para Microsoft 365 con PowerShell](connect-to-microsoft-365-powershell.md).
+Los procedimientos de este tema requieren que se conecte a [Conectarse a Microsoft 365 con PowerShell](connect-to-microsoft-365-powershell.md).
 
 Necesita también las credenciales del administrador de inquilinos del asociado.
 
@@ -45,13 +46,13 @@ También necesitará la siguiente información:
 
 - Necesita el **TenantId** del cliente.
 
-- El FQDN debe estar registrado con un registrador del servicio de nombres de dominio (DNS), como GoDaddy. Para obtener más información sobre cómo registrar públicamente un nombre de dominio, vea [Cómo comprar un nombre de dominio](../admin/get-help-with-domains/buy-a-domain-name.md).
+- The FQDN must be registered with an Internet domain name service (DNS) registrar, such as GoDaddy. For more information on how to publically register a domain name, see [How to buy a domain name](../admin/get-help-with-domains/buy-a-domain-name.md).
 
 - Necesita saber cómo agregar un registro TXT a la zona DNS registrada para su registrador DNS. Para obtener más información sobre cómo agregar un registro TXT, vea [Agregar registros DNS para conectar el dominio](../admin/get-help-with-domains/create-dns-records-at-any-dns-hosting-provider.md). Si esos procedimientos no funcionan, necesitará encontrar los procedimientos de su registrador DNS.
 
 ## <a name="create-domains"></a>Crear dominios
 
- Sus clientes probablemente le pedirán crear dominios adicionales para asociar con su arrendamiento, ya que no desean que el dominio predeterminado \<domain>.onmicrosoft.com sea el dominio principal que represente su identidad corporativa en el mundo. En este procedimiento se explica cómo crear un nuevo dominio asociado con el arrendamiento de su cliente.
+ Your customers will likely ask you to create additional domains to associate with their tenancy because they don't want the default \<domain>.onmicrosoft.com domain to be the primary one that represents their corporate identities to the world. This procedure walks you through creating a new domain associated with your customer's tenancy.
 
 > [!NOTE]
 > Para realizar algunas de estas operaciones, la cuenta de administrador de asociados con la que inicia sesión debe establecerse en **Administración completa** para la opción **Asignar acceso administrativo a las empresas con las que se admite** en los detalles de la cuenta de administrador de la <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">Centro de administración de Microsoft 365</a>. Para obtener más información sobre la administración de roles de administrador de asociados, consulte [Partners: Administración delegada de ofertas](https://go.microsoft.com/fwlink/p/?LinkId=532435).
@@ -106,7 +107,7 @@ Se obtendrá el siguiente resultado:
 
 ### <a name="validate-domain-ownership-in-microsoft-365"></a>Validación de la propiedad del dominio en Microsoft 365
 
-En este último paso, validará para Microsoft 365 que posee el dominio registrado públicamente. Después de este paso, Microsoft 365 comenzará a aceptar el tráfico enrutado al nuevo nombre de dominio. Para completar la creación del dominio y el proceso de registro, ejecute este comando.
+En este último paso, validará a Microsoft 365 que posee el dominio registrado públicamente. Después de este paso, Microsoft 365 comenzará a aceptar el tráfico enrutado al nuevo nombre de dominio. Para completar la creación del dominio y el proceso de registro, ejecute este comando.
 
 ```powershell
 Confirm-MsolDomain -TenantId <customer TenantId> -DomainName <FQDN of new domain>

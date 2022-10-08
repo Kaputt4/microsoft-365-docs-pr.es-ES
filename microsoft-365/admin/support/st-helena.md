@@ -1,5 +1,5 @@
 ---
-title: Información de soporte técnico para Santa Elena
+title: Información de soporte técnico para St Helena
 author: cmcatee-MSFT
 f1.keywords:
 - NOCSH
@@ -7,19 +7,21 @@ ms.author: cmcatee
 manager: scotv
 audience: Admin
 ms.topic: reference
-ms.service: o365-administration
-ms.collection: Adm_Support
+ms.service: microsoft-365-business
+ms.collection:
+- scotvorg
+- Adm_Support
 ms.localizationpriority: medium
 description: Obtenga información acerca de cómo ponerse en contacto con el soporte técnico de su país o región.
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: 3edd7c7180057e17089b91b820214bdc1958eb9a
-ms.sourcegitcommit: 0ee2dabe402d44fecb6856af98a2ef7720d25189
+ms.openlocfilehash: 4050bb6cb3a4b6f5f1c135d48136fa91d1e84036
+ms.sourcegitcommit: 0b7070ec119e00e0dafe030bbfbef0ae5c9afa19
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/09/2021
-ms.locfileid: "61372077"
+ms.lasthandoff: 09/29/2022
+ms.locfileid: "68188249"
 ---
-# <a name="contact-support-for-st-helena"></a>Póngase en contacto con el soporte técnico de Santa Elena
+# <a name="contact-support-for-st-helena"></a>Póngase en contacto con el soporte técnico para St Helena
 
 [Buscar otro país o región](../get-help-support.md).
 

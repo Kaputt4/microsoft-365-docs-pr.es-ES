@@ -1,5 +1,5 @@
 ---
-title: Información de soporte técnico para Swazilandia
+title: Información de soporte técnico para Suazilandia
 author: cmcatee-MSFT
 f1.keywords:
 - NOCSH
@@ -7,19 +7,21 @@ ms.author: cmcatee
 manager: scotv
 audience: Admin
 ms.topic: reference
-ms.service: o365-administration
-ms.collection: Adm_Support
+ms.service: microsoft-365-business
+ms.collection:
+- scotvorg
+- Adm_Support
 ms.localizationpriority: medium
 description: Obtenga información acerca de cómo ponerse en contacto con el soporte técnico de su país o región.
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: 4a66c8ae4e894ca85bd94245887f3ad625f5782a
-ms.sourcegitcommit: 0ee2dabe402d44fecb6856af98a2ef7720d25189
+ms.openlocfilehash: 3d998429a17f7585bf531c693f60e1004be0161d
+ms.sourcegitcommit: 0b7070ec119e00e0dafe030bbfbef0ae5c9afa19
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/09/2021
-ms.locfileid: "61372053"
+ms.lasthandoff: 09/29/2022
+ms.locfileid: "68197445"
 ---
-# <a name="contact-support-for-swaziland"></a>Póngase en contacto con el soporte técnico de Swazilandia
+# <a name="contact-support-for-swaziland"></a>Póngase en contacto con el soporte técnico de Suazilandia
 
 [Buscar otro país o región](../get-help-support.md).
 
@@ -29,7 +31,7 @@ ms.locfileid: "61372053"
 ## <a name="hours"></a>Horas
 ### <a name="billing-support"></a>Soporte de facturación:
 
-Inglés: Mon-Fri 10 AM-6 PM
+Inglés: Mon-Fri de 10:00 a 18:00
 
 ### <a name="technical-support"></a>Soporte técnico:
 

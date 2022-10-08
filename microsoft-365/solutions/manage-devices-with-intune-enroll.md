@@ -1,5 +1,5 @@
 ---
-title: Paso 2. Inscribir dispositivos en la administración con Intune
+title: Step 2. Enroll devices into management with Intune
 ms.author: bcarter
 author: brendacarter
 f1.keywords:
@@ -10,7 +10,7 @@ manager: dougeby
 audience: ITPro
 description: Use Intune y Autopilot para inscribir dispositivos en la administración con el fin de asegurarse de que las aplicaciones que se ejecutan en ellos son compatibles y para evitar pérdidas de datos corporativos.
 ms.topic: article
-ms.service: microsoft-365-enterprise
+ms.service: o365-solutions
 ms.localizationpriority: high
 ms.collection:
 - highpri
@@ -20,12 +20,12 @@ ms.collection:
 - zerotrust-solution
 ms.custom: ''
 keywords: ''
-ms.openlocfilehash: 54e98ff38791b914467fe2dc97bf6f59f491190a
-ms.sourcegitcommit: 0af064e8b6778060f1bd365378d69b16fc9949b5
+ms.openlocfilehash: 0c6e49b3a654f29b76016487f88126ae77a2630c
+ms.sourcegitcommit: fce27da5140691b013a6f7c0ea9c88b4ea4b7c10
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/15/2022
-ms.locfileid: "67727246"
+ms.lasthandoff: 09/23/2022
+ms.locfileid: "67986606"
 ---
 # <a name="step-2-enroll-devices-to-intune"></a>Paso 2. Inscribir dispositivos en Intune
 
@@ -35,7 +35,7 @@ Tanto si un dispositivo es un dispositivo BYOD de propiedad personal como un dis
 
 El proceso de inscripción de dispositivos establece una relación entre el usuario, el dispositivo y el servicio Microsoft Intune. El uso de Microsoft Intune como un servicio independiente le permite usar una única consola de administración basada en la Web para administrar equipos Windows, macOS y las plataformas de dispositivos móviles más populares.
 
-En este artículo se recomiendan métodos para inscribir dispositivos en Intune. Para obtener más información sobre estos métodos y cómo implementar cada uno de ellos, consulte [Guía de implementación: Inscribir dispositivos en Microsoft Intune](/mem/intune/fundamentals/deployment-guide-enrollment).
+This article recommends methods for enrolling devices to Intune. For more information about these methods and how to deploy each one, see [Deployment guidance: Enroll devices in Microsoft Intune](/mem/intune/fundamentals/deployment-guide-enrollment).
 
 ![Pasos para administrar dispositivos](../media/devices/intune-mdm-steps-1.png#lightbox)
 
@@ -57,7 +57,7 @@ Para obtener más opciones, incluida la inscripción de dispositivos Windows BYO
 
 En el caso de los dispositivos de propiedad del usuario (BYOD), puede permitir que los usuarios inscriban sus dispositivos personales con Intune mediante uno de los métodos siguientes.
 - La inscripción de dispositivos es lo que puede considerar como una inscripción BYOD típica. Proporciona a los administradores una amplia gama de opciones de administración.
-- La inscripción de usuarios es un proceso de inscripción más simplificado que proporciona a los administradores un subconjunto de opciones de administración de dispositivos. Esta característica está actualmente en versión preliminar.
+- User enrollment is a more streamlined enrollment process that provides admins with a subset of device management options. This feature is currently in preview.
 
 Para las organizaciones que compran dispositivos para sus usuarios, Intune admite los siguientes métodos de inscripción de dispositivos propiedad de la empresa de iOS/iPadOS:
 - Inscripción de dispositivo automatizada (ADE) de Apple
@@ -69,7 +69,7 @@ Para obtener más información, consulte [Inscribir dispositivos iOS y iPadOS en
 
 ## <a name="android-enrollment"></a>Inscripción de Android 
 
-Existen varias opciones para la inscripción de Android en función del tipo de dispositivo, el tipo de inscripción que le gustaría admitir, así como aspectos como la versión de Android que usa o incluso el fabricante (en particular, Samsung). La mayoría de las organizaciones usan perfiles de Android Work para sus usuarios finales, especialmente en escenarios BYOD. 
+There are several options for Android Enrollment depending on the type of device, the type of enrollment you’d like to support, as well as things like the Android version you are using or even the manufacturer (particularly Samsung). Most organizations use Android Work profiles for their end users, particular in BYOD scenarios. 
 
 Con un perfil de trabajo Android, la información del usuario final se separa de forma distinta con contenedores de datos y aplicaciones independientes para uso personal y profesional. Esta es una manera ideal para que los usuarios inscriban su dispositivo a la vez que mantienen la privacidad de sus propios datos y la seguridad de los datos corporativos. 
 

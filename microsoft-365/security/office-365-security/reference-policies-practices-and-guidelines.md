@@ -13,16 +13,16 @@ search.appverid:
 - MET150
 ms.assetid: ff3f140b-b005-445f-bfe0-7bc3f328aaf0
 ms.collection:
-- M365-security-compliance
+- m365-security
 description: Microsoft ha desarrollado varias directivas, procedimientos y ha adoptado varios procedimientos recomendados del sector para ayudar a proteger a nuestros usuarios frente a correos electrónicos abusivos, no deseados o malintencionados.
 ms.subservice: mdo
 ms.service: microsoft-365-security
-ms.openlocfilehash: a2b047b7a7c528f76131f84ecf34203cb7be2352
-ms.sourcegitcommit: 2b89bcff547e00be3d38dc8d1e6cbcf8f41eba42
+ms.openlocfilehash: 8cea8a26c318c7832f28f9ffaa0a740837d5894c
+ms.sourcegitcommit: 12af9e8e3a6eaa090fda9e98ccb831dff65863a4
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/03/2022
-ms.locfileid: "67594197"
+ms.lasthandoff: 09/27/2022
+ms.locfileid: "68091705"
 ---
 # <a name="reference-policies-practices-and-guidelines"></a>Referencia: Políticas, prácticas y directrices
 
@@ -87,7 +87,7 @@ Los remitentes deben cumplir los límites de Microsoft 365 enumerados en [límit
 
 ## <a name="email-delivery-resources-and-organizations"></a>Organizaciones y recursos de entrega de correo electrónico
 
-Microsoft trabaja activamente con los organismos de la industria y los proveedores de servicios a fin de mejorar el ecosistema de Internet y correo electrónico. Estas organizaciones han publicado documentos sobre prácticas recomendadas con los que estamos de acuerdo y recomienda a los remitentes que sigan sus recomendaciones porque mejoran su capacidad para entregar correo electrónico entre varios proveedores de servicios de correo electrónico de todo el mundo.
+Microsoft actively works with industry bodies and service providers in order to improve the internet and email ecosystem. These organizations have published best practice documents that we support and recommend senders adhere to. This improves your ability to deliver email among several email service providers around the world.
 
 - [Messaging Malware Mobile Anti-Abuse Working Group](https://www.m3aawg.org/)
 

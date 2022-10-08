@@ -1,5 +1,5 @@
 ---
-title: Paso 2. Implementación de la detección y respuesta de ataques
+title: Step 2. Deploy attack detection and response
 author: dansimp
 f1.keywords:
 - NOCSH
@@ -7,7 +7,7 @@ ms.author: dansimp
 manager: dansimp
 audience: ITPro
 ms.topic: article
-ms.service: microsoft-365-enterprise
+ms.service: o365-solutions
 ms.localizationpriority: high
 ms.collection:
 - highpri
@@ -18,14 +18,14 @@ ms.collection:
 ms.custom: seo-marvel-jun2020
 keywords: ransomware, ransomware operado por humanos, HumOR, ataque de extorsión, ataque de ransomware, cifrado, criptovirología, confianza cero
 description: Usa Microsoft 365 Defender y sus orígenes de señal de seguridad para proteger los recursos de Microsoft 365 frente a ataques de ransomware.
-ms.openlocfilehash: e539bd15b3388c3fe9eae043a84441e514269c03
-ms.sourcegitcommit: 0af064e8b6778060f1bd365378d69b16fc9949b5
+ms.openlocfilehash: 882e138717e7bad8e71db3914d034edf5bc0b6c2
+ms.sourcegitcommit: fce27da5140691b013a6f7c0ea9c88b4ea4b7c10
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/15/2022
-ms.locfileid: "67728130"
+ms.lasthandoff: 09/23/2022
+ms.locfileid: "67986474"
 ---
-# <a name="step-2-deploy-attack-detection-and-response"></a>Paso 2. Implementación de la detección y respuesta de ataques
+# <a name="step-2-deploy-attack-detection-and-response"></a>Step 2. Deploy attack detection and response
 
 Como paso inicial recomendado para la detección y respuesta de ataques de ransomware en el espacio empresarial de Microsoft 365, [configure un entorno de prueba](/microsoft-365/security/defender/eval-overview) para evaluar las características y capacidades de Microsoft 365 Defender.
 

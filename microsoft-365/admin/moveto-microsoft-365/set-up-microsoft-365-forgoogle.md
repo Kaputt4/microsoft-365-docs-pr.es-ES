@@ -1,5 +1,5 @@
 ---
-title: Configuración de la migración de Microsoft 365 para Google Workspace
+title: Configurar Microsoft 365 para la migración a Google Workspace
 f1.keywords:
 - NOCSH
 ms.author: twerner
@@ -7,9 +7,10 @@ author: twernermsft
 manager: scotv
 audience: Admin
 ms.topic: article
-ms.service: o365-administration
+ms.service: microsoft-365-business
 ms.localizationpriority: medium
 ms.collection:
+- scotvorg
 - M365-subscription-management
 - Adm_O365
 ms.custom:
@@ -21,20 +22,20 @@ search.appverid:
 - MET150
 - MOE150
 description: Obtenga información sobre cómo configurar Microsoft 365 para que esté listo para la migración desde Google Workspace.
-ms.openlocfilehash: 17c34a06709167360ee2177307361882567195ae
-ms.sourcegitcommit: e9692a40dfe1f8c2047699ae3301c114a01b0d3a
+ms.openlocfilehash: f98c41818f2080af3952885e728f413cec8fee88
+ms.sourcegitcommit: 0b7070ec119e00e0dafe030bbfbef0ae5c9afa19
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/01/2022
-ms.locfileid: "66602102"
+ms.lasthandoff: 09/29/2022
+ms.locfileid: "68188381"
 ---
-# <a name="set-up-microsoft-365-for-google-workspace-migration"></a>Configuración de la migración de Microsoft 365 para Google Workspace
+# <a name="set-up-microsoft-365-for-google-workspace-migration"></a>Configurar Microsoft 365 para la migración a Google Workspace
 
-Consulte la [ayuda para pequeñas empresas de Microsoft 365](https://go.microsoft.com/fwlink/?linkid=2197659) en YouTube.
+Consulte [ayuda de Microsoft 365 para pequeñas empresas](https://go.microsoft.com/fwlink/?linkid=2197659) en YouTube.
 
 ## <a name="watch-set-up-microsoft-365-for-google-workspace-migration"></a>Inspección: Configuración de la migración de Microsoft 365 para Google Workspace
 
-Echa un vistazo a este vídeo y a otros usuarios en nuestro [canal de YouTube](https://go.microsoft.com/fwlink/?linkid=2198101).
+Consulte este vídeo y otros en nuestro [canal de YouTube](https://go.microsoft.com/fwlink/?linkid=2198101).
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4JD2Y?autoplay=false]
 

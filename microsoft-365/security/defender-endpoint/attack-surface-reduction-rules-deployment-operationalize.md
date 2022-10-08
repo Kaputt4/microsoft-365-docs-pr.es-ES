@@ -1,12 +1,13 @@
 ---
 title: Operacionar reglas de reducción de la superficie expuesta a ataques (ASR)
 description: Proporciona instrucciones para operacionalizar la implementación de reglas de reducción de superficie expuesta a ataques.
-keywords: Implementación de reglas de reducción de superficie expuesta a ataques, implementación de ASR, habilitación de reglas de asr, configuración de ASR, sistema de prevención de intrusiones de host, reglas de protección, reglas contra vulnerabilidades de seguridad, protección contra vulnerabilidades de seguridad, reglas de vulnerabilidad de seguridad, reglas de prevención de infecciones, Microsoft Defender para punto de conexión, configurar reglas asr
+keywords: Implementación de reglas de reducción de superficie expuesta a ataques (ASR), Microsoft ASR, administración de reglas de ASR de defender, supervisión de reglas de asr, búsqueda avanzada de reglas asr, informe de reglas de ASR, reglas de asr falsos positivos, configuración de ASR, sistema de prevención de intrusiones de host, reglas de protección, reglas contra vulnerabilidades de seguridad, protección contra vulnerabilidades de seguridad, reglas de prevención de infecciones, Microsoft Defender para punto de conexión, configurar reglas de ASR
 search.product: eADQiWindows 10XVcnh
 ms.mktglfcycl: manage
 ms.sitesec: library
 ms.pagetype: security
 ms.service: microsoft-365-security
+ms.subservice: mde
 ms.localizationpriority: medium
 audience: ITPro
 author: jweston-1
@@ -16,38 +17,38 @@ manager: dansimp
 ms.custom: asr
 ms.topic: article
 ms.collection:
-- M365-security-compliance
+- m365-security
 - m365solution-asr-rules
 - highpri
+- tier1
 ms.date: 1/18/2022
 search.appverid: met150
-ms.openlocfilehash: 325d233f9af34744b4249b68625a8c577a078ada
-ms.sourcegitcommit: 078149c9645ce220911ccd6ce54f984a4c92ce53
+ms.openlocfilehash: 2ff38c373548adf50a0ae8db91b46872c4d3e572
+ms.sourcegitcommit: b9282493c371d59c2e583b9803825096499b5e2c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/20/2022
-ms.locfileid: "67811799"
+ms.lasthandoff: 09/29/2022
+ms.locfileid: "68146599"
 ---
 # <a name="operationalize-attack-surface-reduction-asr-rules"></a>Operacionar reglas de reducción de la superficie expuesta a ataques (ASR)
 
-Una vez que haya implementado completamente las reglas de reducción de la superficie expuesta a ataques (ASR), es fundamental que tenga procesos en su lugar para supervisar y responder a las actividades relacionadas con ASR.
+Una vez que haya implementado completamente las reglas de reducción de la superficie expuesta a ataques (ASR), es fundamental que tenga procesos en su lugar para supervisar y responder a las actividades relacionadas con ASR. Las actividades incluyen: 
 
-## <a name="managing-false-positives"></a>Administración de falsos positivos
+## <a name="managing-asr-rules-false-positives"></a>Administración de falsos positivos de reglas de ASR
 
 Los falsos positivos o negativos pueden producirse con cualquier solución de protección contra amenazas. Los falsos positivos son casos en los que una entidad (como un archivo o proceso) se detecta y se identifica como malintencionada, aunque la entidad no es realmente una amenaza. Por el contrario, un falso negativo es una entidad que no se detectó como una amenaza, sino que es malintencionada. Para obtener más información sobre los falsos positivos y los falsos negativos, vea: [Abordar los falsos positivos o negativos en Microsoft Defender para punto de conexión](defender-endpoint-false-positives-negatives.md)
 
-## <a name="keeping-up-with-reports"></a>Mantenerse al día con los informes
+## <a name="keeping-up-with-asr-rules-reports"></a>Mantenerse al día con los informes de reglas de ASR
 
 La revisión constante y periódica de los informes es un aspecto esencial para mantener la implementación de las reglas de ASR y mantenerse al día de las amenazas recién emergentes. Su organización debe tener revisiones programadas de eventos de reglas de ASR con una cadencia que se mantendrá actualizada con los eventos notificados por reglas de ASR. En función del tamaño de la organización, las revisiones pueden ser diarias, por hora o de supervisión continua.
 
-## <a name="hunting"></a>Búsqueda
+## <a name="asr-rules-advanced-hunting"></a>Búsqueda avanzada de reglas de ASR
 
 Una de las características más eficaces de [Microsoft 365 Defender](https://security.microsoft.com) es la búsqueda avanzada. Si no está familiarizado con la búsqueda avanzada, consulte Búsqueda [proactiva de amenazas con la búsqueda avanzada](/windows/security/threat-protection/microsoft-defender-atp/advanced-hunting-overview).
 
-> [!div class="mx-imgBorder"]
-> :::image type="content" source="images/asr-defender365-advanced-hunting2.png" alt-text="Página Búsqueda avanzada en el portal de Microsoft 365 Defender" lightbox="images/asr-defender365-advanced-hunting2.png":::
+> :::image type="content" source="images/asr-defender365-advanced-hunting2.png" alt-text="Página Búsqueda avanzada del portal de Microsoft 365 Defender. Microsoft Defender para punto de conexión (MDE) ASR rules, ASR rules advanced hunting, asr rules reports, asr rules false positives, asr rules false positives," lightbox="images/asr-defender365-advanced-hunting2.png":::
 
-La búsqueda avanzada es una herramienta de búsqueda de amenazas basada en consultas (Lenguaje de consulta Kusto) que le permite explorar hasta 30 días de los datos capturados (sin procesar) que la detección y respuesta de puntos de conexión de ATP de Microsoft Defender (EDR) recopila de todas las máquinas. Mediante la búsqueda avanzada, puede inspeccionar eventos de forma proactiva con el fin de localizar indicadores y entidades interesantes. El acceso flexible a los datos facilita la búsqueda sin restricciones de las amenazas conocidas y potenciales.
+La búsqueda avanzada es una herramienta de búsqueda de amenazas basada en consultas (Lenguaje de consulta Kusto) que le permite explorar hasta 30 días de los datos capturados (sin procesar) que Microsoft Defender detección y respuesta de puntos de conexión de ATP (EDR) recopila de todas las máquinas. Mediante la búsqueda avanzada, puede inspeccionar eventos de forma proactiva con el fin de localizar indicadores y entidades interesantes. El acceso flexible a los datos facilita la búsqueda sin restricciones de las amenazas conocidas y potenciales.
 
 Mediante la búsqueda avanzada, es posible extraer información de reglas de ASR, crear informes y obtener información detallada sobre el contexto de un evento de bloque o auditoría de reglas de ASR determinado.
 

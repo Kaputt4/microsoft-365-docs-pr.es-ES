@@ -9,6 +9,7 @@ ms.topic: conceptual
 ms.service: microsoft-365-enterprise
 ms.localizationpriority: medium
 ms.collection:
+- scotvorg
 - Ent_O365
 - SPO_Content
 search.appverid:
@@ -27,12 +28,12 @@ f1.keywords:
 ms.custom:
 - seo-marvel-apr2020
 description: Este artículo contiene información para los usuarios que usan SharePoint Server 2007 para ayudarles a planear su actualización.
-ms.openlocfilehash: 2e53d7206ce77a1a4cbfb6f7dc69af34749db504
-ms.sourcegitcommit: 437461fa1d38ff9bb95dd8a1c5f0b94e8111ada2
+ms.openlocfilehash: 99ac785f85892ad4cd6a9ac65a9fe822b109d743
+ms.sourcegitcommit: 0b7070ec119e00e0dafe030bbfbef0ae5c9afa19
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/14/2022
-ms.locfileid: "67670661"
+ms.lasthandoff: 09/29/2022
+ms.locfileid: "68187787"
 ---
 # <a name="sharepoint-2007-migration-options-to-consider"></a>Opciones de migración de SharePoint 2007 que se deben tener en cuenta
 

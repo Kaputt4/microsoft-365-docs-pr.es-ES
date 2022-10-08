@@ -10,6 +10,7 @@ ms.topic: article
 ms.service: microsoft-365-lighthouse
 ms.localizationpriority: medium
 ms.collection:
+- scotvorg
 - M365-subscription-management
 - Adm_O365
 ms.custom:
@@ -17,12 +18,12 @@ ms.custom:
 - M365-Lighthouse
 search.appverid: MET150
 description: Para los proveedores de servicios administrados (MSP) que usan Microsoft 365 Lighthouse, consulte lo que se ha agregado, cambiado y corregido en Microsoft 365 Lighthouse cada mes.
-ms.openlocfilehash: 97692ae5d8520d0a6d228c0f80c685a6c45c7b78
-ms.sourcegitcommit: 2b89bcff547e00be3d38dc8d1e6cbcf8f41eba42
+ms.openlocfilehash: 65fba4d7cdef2b1afc8935f6833e10e04dee616f
+ms.sourcegitcommit: 0b7070ec119e00e0dafe030bbfbef0ae5c9afa19
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/03/2022
-ms.locfileid: "67597556"
+ms.lasthandoff: 09/29/2022
+ms.locfileid: "68197049"
 ---
 # <a name="whats-new-in-microsoft-365-lighthouse"></a>Novedades de Microsoft 365 Lighthouse
 
@@ -30,6 +31,20 @@ Estamos agregando continuamente nuevas características a [Microsoft 365 Lightho
 
 > [!NOTE]
 > Algunas características se implantan a diferentes velocidades para nuestros clientes. Si aún no ve una característica, debería verla pronto.
+
+## <a name="september-2022"></a>Septiembre de 2022
+
+### <a name="fully-automated-setup-of-microsoft-defender-for-business"></a>Configuración totalmente automatizada de Microsoft Defender para Empresas
+
+Hemos agregado un paso totalmente automatizado a la línea base predeterminada que le ayuda a configurar los inquilinos del cliente con Microsoft Defender para Empresas. Este paso aprovisiona automáticamente el inquilino para Microsoft Defender para Empresas e incorpora automáticamente dispositivos inscritos Intune a Microsoft Defender para Empresas.
+
+### <a name="capability-to-filter-the-multifactor-authentication-mfa-list-to-show-relevant-user-accounts"></a>Funcionalidad para filtrar la lista de autenticación multifactor (MFA) para mostrar las cuentas de usuario pertinentes
+
+La página Autenticación multifactor ahora admite el filtrado de la lista de cuentas de usuario por tipo de cuenta (por ejemplo, por Administración, miembro o invitado). También puede excluir otras cuentas de la lista, como cuentas de servicio o cuentas de acceso de emergencia. Para acceder a esta funcionalidad, vaya a Autenticación **multifactor** **de usuarios** > , seleccione un inquilino de la lista para abrir el panel de detalles del inquilino y, a continuación, seleccione la pestaña **Usuarios no registrados para MFA**. Estas funcionalidades de filtrado y exclusión le ayudan a centrarse en las cuentas de usuario pertinentes. 
+
+### <a name="capability-to-act-on-security-incidents-and-alerts"></a>Funcionalidad para actuar sobre incidentes de seguridad y alertas
+
+Ahora puede actuar sobre los incidentes y alertas que se muestran en la página **Incidentes y alertas** de **seguridad** >  del dispositivo. Las acciones admitidas actualmente incluyen la asignación del incidente o la alerta a usted mismo o la resolución del incidente o la alerta. 
 
 ## <a name="august-2022"></a>Agosto de 2022
 
@@ -135,15 +150,15 @@ Microsoft 365 Lighthouse ahora puede probar las configuraciones de inquilino par
 
 Esta nueva funcionalidad detecta las directivas existentes dentro de los inquilinos del cliente que administra y las compara con el plan de implementación. Microsoft 365 Lighthouse, a continuación, proporciona designaciones de estado para los pasos de implementación y los procesos de paso de implementación para ayudarle a comprender qué procesos de implementación ya se han completado, cuáles deben abordarse y dónde la configuración prescrita por el plan de implementación es igual, falta o entra en conflicto con la configuración incluida en las directivas existentes. Conocer esta información hace que la identificación, priorización y resolución de conflictos de directivas sea más rápida, fácil y eficaz.
 
-### <a name="deployment-step-to-configure-microsoft-defender-firewall"></a>Paso de implementación para configurar firewall de Microsoft Defender
+### <a name="deployment-step-to-configure-microsoft-defender-firewall"></a>Paso de implementación para configurar Microsoft Defender Firewall
 
-Microsoft 365 Lighthouse ha agregado el paso Configurar la implementación de Firewall de Microsoft Defender a su línea base predeterminada. Este paso ayuda a los MSP a proteger los dispositivos de inquilino del cliente a través de la configuración de firewall predeterminada para dispositivos Windows 10 (y versiones posteriores). Firewall de Microsoft Defender bloquea el tráfico de red no autorizado que entra o sale de los dispositivos de inquilino del cliente y reduce el riesgo de amenazas de seguridad de red. Actualmente se está desarrollando una característica de reglas de firewall de Microsoft Defender.
+Microsoft 365 Lighthouse ha agregado el paso Configurar la implementación de firewall de Microsoft Defender a su línea base predeterminada. Este paso ayuda a los MSP a proteger los dispositivos de inquilino del cliente a través de la configuración de firewall predeterminada para dispositivos Windows 10 (y versiones posteriores). Microsoft Defender Firewall bloquea el tráfico de red no autorizado que entra o sale de los dispositivos de inquilino del cliente y reduce el riesgo de amenazas de seguridad de red. Actualmente se está desarrollando una característica de reglas de firewall de Microsoft Defender.
 
-Firewall de Microsoft Defender está activado de forma predeterminada en Windows 10 (y versiones posteriores). Si el inquilino del cliente no tiene esto configurado, siga estos pasos:
+Microsoft Defender Firewall está activado de forma predeterminada en Windows 10 (y versiones posteriores). Si el inquilino del cliente no tiene esto configurado, siga estos pasos:
 
 1. En la página **Inquilinos** de Microsoft 365 Lighthouse, seleccione el inquilino del cliente para abrir la página **Información general** del inquilino.
 2. Seleccione la pestaña **Plan de implementación** .
-3. En la lista de pasos de implementación, seleccione **Configurar firewall de Microsoft Defender**.
+3. En la lista de pasos de implementación, seleccione **Configurar Microsoft Defender firewall**.
 4. Seleccione **Revisar e implementar** para implementar esta configuración en el inquilino del cliente. 
 
 ### <a name="increase-in-maximum-license-limit"></a>Aumento del límite máximo de licencias

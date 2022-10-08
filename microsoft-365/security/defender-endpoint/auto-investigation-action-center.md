@@ -13,18 +13,18 @@ ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection:
-- m365-security-compliance
-- m365initiative-defender-endpoint
+- m365-security
+- tier2
 ms.custom: admindeeplinkDEFENDER
 ms.topic: how-to
 ms.reviewer: ramarom, evaldm, isco, mabraitm, chriggs
 search.appverid: met150
-ms.openlocfilehash: 022c1311cd7ad95534de996baa14db2307bad64c
-ms.sourcegitcommit: 078149c9645ce220911ccd6ce54f984a4c92ce53
+ms.openlocfilehash: 84a25963943102ea33049e22fda334292a0aa3e4
+ms.sourcegitcommit: b9282493c371d59c2e583b9803825096499b5e2c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/20/2022
-ms.locfileid: "67811316"
+ms.lasthandoff: 09/29/2022
+ms.locfileid: "68142177"
 ---
 # <a name="visit-the-action-center-to-see-remediation-actions"></a>Visite el Centro de acciones para ver las acciones de corrección.
 
@@ -73,7 +73,7 @@ Para acceder al centro de acciones unificado en el portal de Microsoft 365 Defen
    |Pestaña|Descripción|
    |---|---|
    |**Pending**|Muestra una lista de acciones que requieren atención. Puede aprobar o rechazar acciones de una en una, o seleccionar varias acciones si tienen el mismo tipo de acción (como el **archivo de cuarentena**). <p> **SUGERENCIA**: Asegúrese de [revisar y aprobar (o rechazar) las acciones pendientes](manage-auto-investigation.md) lo antes posible para que las investigaciones automatizadas puedan completarse de forma oportuna.|
-   |**Historial**|Actúa como registro de auditoría para las acciones que se realizaron, como: <ul><li>Acciones de corrección que se realizaron como resultado de investigaciones automatizadas</li><li>Acciones de corrección aprobadas por el equipo de operaciones de seguridad</li><li>Comandos que se ejecutaron y acciones de corrección que se aplicaron durante las sesiones de live response</li><li>Acciones de corrección realizadas por las características de protección contra amenazas en el Antivirus de Microsoft Defender</li></ul> <p> Proporciona una manera de deshacer ciertas acciones (consulte [Deshacer acciones completadas](manage-auto-investigation.md#undo-completed-actions)).|
+   |**Historial**|Actúa como registro de auditoría para las acciones que se realizaron, como: <ul><li>Acciones de corrección que se realizaron como resultado de investigaciones automatizadas</li><li>Acciones de corrección aprobadas por el equipo de operaciones de seguridad</li><li>Comandos que se ejecutaron y acciones de corrección que se aplicaron durante las sesiones de live response</li><li>Acciones de corrección realizadas por las características de protección contra amenazas en Microsoft Defender Antivirus</li></ul> <p> Proporciona una manera de deshacer ciertas acciones (consulte [Deshacer acciones completadas](manage-auto-investigation.md#undo-completed-actions)).|
 
 4. Para personalizar, ordenar, filtrar y exportar datos en el Centro de acciones, realice uno o varios de los pasos siguientes:
 

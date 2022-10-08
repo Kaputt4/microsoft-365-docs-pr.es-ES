@@ -6,18 +6,18 @@ manager: serdars
 ms.reviewer: amitman
 audience: admin
 ms.topic: article
-ms.service: o365-administration
+ms.service: microsoft-365-business
 f1.keywords:
 - CSH
 ms.collection: M365-modern-desktop
 ms.localizationpriority: medium
 description: Prepárese para integrar Open LMS y Microsoft Teams mediante la configuración y configuración de los complementos de Moodle LMS.
-ms.openlocfilehash: dbc85e8643159552e3e9bf340deef1856b542aab
-ms.sourcegitcommit: 2f6a7410e9919f753a759c1ada441141e18f06fd
+ms.openlocfilehash: b0b02648b570548af993e414bdbe56eddbe21f88
+ms.sourcegitcommit: 0b7070ec119e00e0dafe030bbfbef0ae5c9afa19
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/30/2022
-ms.locfileid: "67085979"
+ms.lasthandoff: 09/29/2022
+ms.locfileid: "68167305"
 ---
 # <a name="set-up-and-configure-the-moodle-lms-plugins-for-open-lms"></a>Configuración y configuración de los complementos de Moodle LMS para Open LMS
 

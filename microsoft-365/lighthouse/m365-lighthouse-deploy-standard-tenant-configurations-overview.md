@@ -10,6 +10,7 @@ ms.topic: article
 ms.service: microsoft-365-lighthouse
 ms.localizationpriority: medium
 ms.collection:
+- scotvorg
 - M365-subscription-management
 - Adm_O365
 ms.custom:
@@ -17,12 +18,12 @@ ms.custom:
 - M365-Lighthouse
 search.appverid: MET150
 description: En el caso de los proveedores de servicios administrados (MSP) que usan Microsoft 365 Lighthouse, obtenga información sobre el uso de líneas base para implementar configuraciones de inquilino estándar.
-ms.openlocfilehash: 85a2e035ce2aae2b7e343d03f19a266cc3a08df5
-ms.sourcegitcommit: 2b89bcff547e00be3d38dc8d1e6cbcf8f41eba42
+ms.openlocfilehash: 301ceb0176075f4d79a6f3f1f539704f2db17e0d
+ms.sourcegitcommit: 0b7070ec119e00e0dafe030bbfbef0ae5c9afa19
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/03/2022
-ms.locfileid: "67599459"
+ms.lasthandoff: 09/29/2022
+ms.locfileid: "68187743"
 ---
 # <a name="overview-of-using-microsoft-365-lighthouse-baselines-to-deploy-standard-tenant-configurations"></a>Información general sobre el uso de líneas base de Microsoft 365 Lighthouse para implementar configuraciones de inquilino estándar 
 
@@ -46,8 +47,8 @@ Las configuraciones de línea base de Lighthouse están diseñadas para asegurar
 | Configuración de la inscripción de dispositivos | Inscripción de dispositivos para permitir que los dispositivos de inquilino se inscriban en Microsoft Endpoint Manager. Para ello, configure la inscripción automática entre Azure Active Directory y Microsoft Endpoint Manager. Para obtener más información acerca de esta línea base, consulte [Configuración de la inscripción para dispositivos Windows](/mem/intune/enrollment/windows-enroll). |
 | Configuración de Microsoft Defender para Empresas | Aprovisiona el inquilino para Microsoft Defender para Empresas e incorpora los dispositivos que ya están inscritos en Microsoft Endpoint Manager para Microsoft Defender para Empresas. Para obtener más información, consulte [¿Qué es Microsoft Defender para Empresas?](../security/defender-business/mdb-overview.md) |
 | Configurar Exchange Online Protection y Microsoft Defender para Office 365 | Directiva para aplicar directivas recomendadas contra correo no deseado, antimalware, anti phishing, vínculos seguros y directivas de datos adjuntos seguros a los inquilinos Exchange Online buzones. |
-| Configuración del Antivirus de Microsoft Defender para Windows 10 y versiones posteriores | Un perfil de configuración de dispositivo para dispositivos Windows con la configuración preconfigurada del Antivirus de Microsoft Defender. Para obtener más información sobre esta línea base, vea [Configurar Microsoft Defender para punto de conexión en Intune](/mem/intune/protect/advanced-threat-protection-configure).|
-| Configuración del firewall de Microsoft Defender para Windows 10 y versiones posteriores | Una directiva de firewall para ayudar a proteger los dispositivos mediante la prevención del tráfico de red no deseado y no autorizado. Para obtener más información sobre esta línea base, consulte [Procedimientos recomendados para configurar Windows Defender Firewall](/windows/security/threat-protection/windows-firewall/best-practices-configuring).  |
+| Configuración de Microsoft Defender Antivirus para Windows 10 y versiones posteriores | Un perfil de configuración de dispositivo para dispositivos Windows con la configuración preconfigurada Microsoft Defender Antivirus. Para obtener más información sobre esta línea base, vea [Configurar Microsoft Defender para punto de conexión en Intune](/mem/intune/protect/advanced-threat-protection-configure).|
+| Configuración de Microsoft Defender Firewall para Windows 10 y versiones posteriores | Una directiva de firewall para ayudar a proteger los dispositivos mediante la prevención del tráfico de red no deseado y no autorizado. Para obtener más información sobre esta línea base, consulte [Procedimientos recomendados para configurar Windows Defender Firewall](/windows/security/threat-protection/windows-firewall/best-practices-configuring).  |
 | Configuración de una directiva de cumplimiento de dispositivos para Windows 10 y versiones posteriores | Una directiva de dispositivo Windows con la configuración preconfigurada para cumplir los requisitos básicos de cumplimiento. Para obtener más información sobre esta línea base, consulte [Acceso condicional: Requerir dispositivo unido a Azure AD híbrido o compatible](/azure/active-directory/conditional-access/howto-conditional-access-policy-compliant-device). |
 | Configurar Microsoft Edge  | Una directiva de explorador de Microsoft Edge para Windows 10 o posterior con la configuración preconfigurada para mantenerse protegida frente a estafas de suplantación de identidad (phishing) y software malintencionado. Esta directiva también permite a Microsoft Edge guardar y supervisar contraseñas de forma segura y sugerir contraseñas seguras cuando sea necesario. |
 

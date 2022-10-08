@@ -7,19 +7,21 @@ ms.author: cmcatee
 manager: scotv
 audience: Admin
 ms.topic: reference
-ms.service: o365-administration
-ms.collection: Adm_Support
+ms.service: microsoft-365-business
+ms.collection:
+- scotvorg
+- Adm_Support
 ms.localizationpriority: medium
 description: Obtenga información acerca de cómo ponerse en contacto con el soporte técnico de su país o región.
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: a39a94ae4018316fc17ac21d3d785cd75d417e2a
-ms.sourcegitcommit: 0ee2dabe402d44fecb6856af98a2ef7720d25189
+ms.openlocfilehash: 39b164776e3a543ea5c4100231c4b4a716ebe62b
+ms.sourcegitcommit: 0b7070ec119e00e0dafe030bbfbef0ae5c9afa19
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/09/2021
-ms.locfileid: "61373793"
+ms.lasthandoff: 09/29/2022
+ms.locfileid: "68188118"
 ---
-# <a name="contact-support-for-united-kingdom"></a>Póngase en contacto con el soporte técnico para Reino Unido
+# <a name="contact-support-for-united-kingdom"></a>Póngase en contacto con el soporte técnico de Reino Unido
 
 [Buscar otro país o región](../get-help-support.md).
 
@@ -35,6 +37,6 @@ Inglés: lunes a viernes de 9:00 a 17:00
 
 Inglés: 24 horas al día, 7 días a la semana
 
-Número Teléfono alternativa: 0203 450 6455
+Número de teléfono alternativo: 0203 450 6455
 
 Se aplican tarifas de llamada local
