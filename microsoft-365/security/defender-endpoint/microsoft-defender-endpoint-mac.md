@@ -13,17 +13,17 @@ ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection:
-- m365-security-compliance
-- m365-initiative-defender-endpoint
+- m365-security
+- tier3
 ms.topic: conceptual
 ms.subservice: mde
 search.appverid: met150
-ms.openlocfilehash: 4e20220d23d5b36b27895662d2be1f4cbcdd0fe0
-ms.sourcegitcommit: 9b133379196da2b3a4bb311b07ff274f43780f68
+ms.openlocfilehash: d74b572d305718fe27cc1f74889cd4022d3705c7
+ms.sourcegitcommit: 4e42bafee965446f44f7f57d1defed2b9b24fce8
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/14/2022
-ms.locfileid: "67683019"
+ms.lasthandoff: 09/30/2022
+ms.locfileid: "68232746"
 ---
 # <a name="microsoft-defender-for-endpoint-on-mac"></a>Microsoft Defender para punto de conexión en Mac
 
@@ -106,7 +106,7 @@ Microsoft Defender para punto de conexión en Mac requiere una de las siguientes
 
 ### <a name="configuring-exclusions"></a>Configuración de exclusiones
 
-Al agregar exclusiones, tenga en cuenta los [errores comunes de exclusión de Antivirus de Microsoft Defender](/microsoft-365/security/defender-endpoint/common-exclusion-mistakes-microsoft-defender-antivirus).
+Al agregar exclusiones, tenga en cuenta los [errores comunes de exclusión de Microsoft Defender Antivirus](/microsoft-365/security/defender-endpoint/common-exclusion-mistakes-microsoft-defender-antivirus).
 
 ### <a name="network-connections"></a>Conexiones de red
 

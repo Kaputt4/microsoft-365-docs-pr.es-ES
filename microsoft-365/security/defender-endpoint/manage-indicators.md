@@ -12,16 +12,18 @@ author: mjcaparas
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
-ms.collection: M365-security-compliance
+ms.collection:
+- m365-security
+- tier2
 ms.topic: article
 ms.subservice: mde
 search.appverid: met150
-ms.openlocfilehash: 2cc23efadf5f8df7642ae0a64aebabda916ee6a2
-ms.sourcegitcommit: 9b133379196da2b3a4bb311b07ff274f43780f68
+ms.openlocfilehash: 248992f636434644ff79afba30b98d7198bdc119
+ms.sourcegitcommit: 4e42bafee965446f44f7f57d1defed2b9b24fce8
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/14/2022
-ms.locfileid: "67689927"
+ms.lasthandoff: 09/30/2022
+ms.locfileid: "68233010"
 ---
 # <a name="create-indicators"></a>Crear indicadores
 
@@ -41,7 +43,7 @@ El indicador de coincidencia de peligro (IoC) es una característica esencial en
 
 Cree indicadores que definan la detección, prevención y exclusión de entidades. Puede definir la acción que se va a realizar, así como la duración de la aplicación de la acción, así como el ámbito del grupo de dispositivos al que se va a aplicar.
 
-Los orígenes admitidos actualmente son el motor de detección en la nube de Defender para punto de conexión, el motor de investigación y corrección automatizado y el motor de prevención de puntos de conexión (Antivirus de Microsoft Defender).
+Los orígenes admitidos actualmente son el motor de detección en la nube de Defender para punto de conexión, el motor de investigación y corrección automatizado y el motor de prevención de puntos de conexión (Microsoft Defender Antivirus).
 
 ## <a name="cloud-detection-engine"></a>Motor de detección de nube
 
@@ -49,7 +51,7 @@ El motor de detección en la nube de Defender para punto de conexión examina pe
 
 ## <a name="endpoint-prevention-engine"></a>Motor de prevención de puntos de conexión
 
-El agente de prevención respeta la misma lista de indicadores. Es decir, si Antivirus de Microsoft Defender es el antivirus principal configurado, los indicadores coincidentes se tratarán según la configuración. Por ejemplo, si la acción es "Alerta y Bloqueo", Antivirus de Microsoft Defender impedirá las ejecuciones de archivos (bloquear y corregir) y se generará una alerta correspondiente. Por otro lado, si la acción está establecida en "Permitir", Antivirus de Microsoft Defender no detectará ni bloqueará la ejecución del archivo.
+El agente de prevención respeta la misma lista de indicadores. Es decir, si Microsoft Defender Antivirus es el antivirus principal configurado, los indicadores coincidentes se tratarán según la configuración. Por ejemplo, si la acción es "Alerta y Bloqueo", Microsoft Defender Antivirus impedirá las ejecuciones de archivos (bloquear y corregir) y se generará una alerta correspondiente. Por otro lado, si la acción está establecida en "Permitir", Microsoft Defender Antivirus no detectará ni bloqueará la ejecución del archivo.
 
 ## <a name="automated-investigation-and-remediation-engine"></a>Motor de investigación y corrección automatizado
 
@@ -91,7 +93,7 @@ La funcionalidad de los ioC preexistebles no cambiará. Sin embargo, se cambió 
 El esquema de la API de IoC y los identificadores de amenazas en la búsqueda anticipada se han actualizado para alinearse con el cambio de nombre de las acciones de respuesta de IoC. Los cambios del esquema de API se aplican a todos los tipos de IoC.
 
 > [!Note]
-> Hay un límite de 15 000 indicadores por inquilino. Los indicadores de archivo y certificado no [bloquean las exclusiones definidas para el Antivirus de Microsoft Defender](/windows/security/threat-protection/microsoft-defender-antivirus/configure-exclusions-microsoft-defender-antivirus). Los indicadores no se admiten en el Antivirus de Microsoft Defender cuando están en modo pasivo.
+> Hay un límite de 15 000 indicadores por inquilino. Los indicadores de archivo y certificado no [bloquean las exclusiones definidas para Microsoft Defender Antivirus](/windows/security/threat-protection/microsoft-defender-antivirus/configure-exclusions-microsoft-defender-antivirus). Los indicadores no se admiten en Microsoft Defender Antivirus cuando está en modo pasivo.
 >
 > El formato para importar nuevos indicadores (IoC) ha cambiado según la nueva configuración de alertas y acciones actualizadas. Se recomienda descargar el nuevo formato CSV que se encuentra en la parte inferior del panel de importación.
 

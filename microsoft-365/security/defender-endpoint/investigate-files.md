@@ -11,17 +11,19 @@ author: mjcaparas
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
-ms.collection: m365-security-compliance
+ms.collection:
+- m365-security
+- tier2
 ms.topic: article
 ms.date: 04/24/2018
 ms.subservice: mde
 search.appverid: met150
-ms.openlocfilehash: 9d7d3bd2636ff877c36656cc5769cb655e48f53b
-ms.sourcegitcommit: 9b133379196da2b3a4bb311b07ff274f43780f68
+ms.openlocfilehash: 04c8b9b2ac274d4d3f563241f13afd39a914d78e
+ms.sourcegitcommit: 4e42bafee965446f44f7f57d1defed2b9b24fce8
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/14/2022
-ms.locfileid: "67688953"
+ms.lasthandoff: 09/30/2022
+ms.locfileid: "68232416"
 ---
 # <a name="investigate-a-file-associated-with-a-microsoft-defender-for-endpoint-alert"></a>Investigación de un archivo asociado a una alerta de Microsoft Defender para punto de conexión
 
@@ -69,7 +71,7 @@ Para obtener más información sobre estas acciones, consulte [Acción de respue
 
 Los detalles del archivo, el incidente, la detección de malware y las tarjetas de prevalencia de archivos muestran varios atributos sobre el archivo.
 
-Verá detalles como md5 del archivo, la relación de detección total de virus y la detección de Antivirus de Microsoft Defender si está disponible y la prevalencia del archivo.
+Verá detalles como md5 del archivo, la relación de detección total de virus y Microsoft Defender detección de antivirus si está disponible y la prevalencia del archivo.
 
 La tarjeta de prevalencia de archivos muestra dónde se ha visto el archivo en los dispositivos de la organización y en todo el mundo. Puede girar fácilmente a los primeros y últimos dispositivos en los que se ha visto el archivo y continuar la investigación en la escala de tiempo del dispositivo. 
 

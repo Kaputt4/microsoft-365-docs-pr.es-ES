@@ -11,16 +11,18 @@ author: mjcaparas
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
-ms.collection: M365-security-compliance
+ms.collection:
+- m365-security
+- tier3
 ms.topic: troubleshooting
 ms.subservice: mde
 search.appverid: met150
-ms.openlocfilehash: 7b2253e356b4ed4fb905ec4637d3f976e6e38d21
-ms.sourcegitcommit: 9b133379196da2b3a4bb311b07ff274f43780f68
+ms.openlocfilehash: e1de2e186eea9fbe3b62e2e650f3419de43c6874
+ms.sourcegitcommit: 4e42bafee965446f44f7f57d1defed2b9b24fce8
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/14/2022
-ms.locfileid: "67686975"
+ms.lasthandoff: 09/30/2022
+ms.locfileid: "68232350"
 ---
 # <a name="troubleshoot-microsoft-defender-for-endpoint-onboarding-issues"></a>Solución de problemas de incorporación de Microsoft Defender para punto de conexión
 
@@ -91,7 +93,7 @@ Si se produce un error en el script y el evento es un error, puede comprobar el 
 |`5`|Se encontraron datos de eliminación, pero no se pudieron eliminar|Compruebe los permisos en el registro, específicamente <p> `HKLM\SOFTWARE\Policies\Microsoft\Windows Advanced Threat Protection`.|
 |`10`|Los datos de incorporación no se pudieron escribir en el registro|Compruebe los permisos en el registro, específicamente <p> `HKLM\SOFTWARE\Policies\Microsoft\Windows Advanced Threat Protection`. <p> Compruebe que el script se ha ejecutado como administrador.|
 |`15`|Error al iniciar el servicio SENSE|Compruebe el estado del servicio (`sc query sense` comando). Asegúrese de que no está en un estado intermedio (*'Pending_Stopped'*, *'Pending_Running'*) e intente volver a ejecutar el script (con derechos de administrador). <p> Si el dispositivo ejecuta Windows 10, la versión 1607 y la ejecución del comando `sc query sense` devuelve `START_PENDING`, reinicie el dispositivo. Si el reinicio del dispositivo no soluciona el problema, actualice a KB4015217 e intente volver a incorporarlo.|
-|`15`|Error al iniciar el servicio SENSE|Si el mensaje del error es: Error del sistema 577 o error 1058, debe habilitar el controlador ELAM del Antivirus de Microsoft Defender. Para obtener instrucciones, consulte [Asegúrese de que antivirus de Microsoft Defender no está deshabilitado por una directiva](#ensure-that-microsoft-defender-antivirus-is-not-disabled-by-a-policy) .|
+|`15`|Error al iniciar el servicio SENSE|Si el mensaje del error es: Error del sistema 577 o error 1058, debe habilitar el controlador ELAM Microsoft Defender Antivirus, consulte [Asegúrese de que Microsoft Defender Antivirus no está deshabilitado por una directiva](#ensure-that-microsoft-defender-antivirus-is-not-disabled-by-a-policy) para obtener instrucciones.|
 |`30`|El script no pudo esperar a que el servicio empezara a ejecutarse.|El servicio podría haber tardado más tiempo en iniciarse o ha encontrado errores al intentar iniciarse. Para obtener más información sobre los eventos y errores relacionados con SENSE, consulte [Revisión de eventos y errores mediante el Visor de eventos](event-error-codes.md).|
 |`35`|El script no pudo encontrar el valor necesario del Registro de estado de incorporación|Cuando el servicio SENSE se inicia por primera vez, escribe el estado de incorporación en la ubicación del Registro. <p> `HKLM\SOFTWARE\Microsoft\Windows Advanced Threat Protection\Status`. <p> El script no lo encontró después de varios segundos. Puede probarlo manualmente y comprobar si está allí. Para obtener más información sobre los eventos y errores relacionados con SENSE, consulte [Revisión de eventos y errores mediante el Visor de eventos](event-error-codes.md).|
 |`40`|El estado de incorporación del servicio SENSE no está establecido en **1**|El servicio SENSE no se ha incorporado correctamente. Para obtener más información sobre los eventos y errores relacionados con SENSE, consulte [Revisión de eventos y errores mediante el Visor de eventos](event-error-codes.md).|
@@ -167,7 +169,7 @@ Si las herramientas de implementación usadas no indican un error en el proceso 
 - [Asegúrese de que el servicio de datos de diagnóstico está habilitado](#ensure-the-diagnostics-service-is-enabled)
 - [Asegúrese de que el servicio está establecido para iniciarse.](#ensure-the-service-is-set-to-start)
 - [Asegurarse de que el dispositivo tiene una conexión a Internet](#ensure-the-device-has-an-internet-connection)
-- [Asegúrese de que el Antivirus de Microsoft Defender no está deshabilitado por una directiva](#ensure-that-microsoft-defender-antivirus-is-not-disabled-by-a-policy)
+- [Asegúrese de que Microsoft Defender Antivirus no está deshabilitado por una directiva](#ensure-that-microsoft-defender-antivirus-is-not-disabled-by-a-policy)
 
 ### <a name="view-agent-onboarding-errors-in-the-device-event-log"></a>Visualización de errores de incorporación de agentes en el registro de eventos del dispositivo
 
@@ -281,12 +283,12 @@ Para asegurarse de que el sensor tiene conectividad de servicio, siga los pasos 
 
 Si se produce un error en la comprobación y el entorno usa un proxy para conectarse a Internet, siga los pasos descritos en el tema [Configuración de la configuración de proxy y conectividad a Internet](configure-proxy-internet.md) .
 
-### <a name="ensure-that-microsoft-defender-antivirus-is-not-disabled-by-a-policy"></a>Asegúrese de que el Antivirus de Microsoft Defender no está deshabilitado por una directiva
+### <a name="ensure-that-microsoft-defender-antivirus-is-not-disabled-by-a-policy"></a>Asegúrese de que Microsoft Defender Antivirus no está deshabilitado por una directiva
 
 > [!IMPORTANT]
-> Lo siguiente solo se aplica a los dispositivos que aún **no** han recibido la actualización de agosto de 2020 (versión 4.18.2007.8) a Antivirus de Microsoft Defender.
+> Lo siguiente solo se aplica a los dispositivos que aún **no** han recibido la actualización de agosto de 2020 (versión 4.18.2007.8) a Microsoft Defender Antivirus.
 >
-> La actualización garantiza que el Antivirus de Microsoft Defender no se puede desactivar en los dispositivos cliente a través de la directiva del sistema.
+> La actualización garantiza que Microsoft Defender Antivirus no se pueda desactivar en los dispositivos cliente a través de la directiva del sistema.
 
 **Problema**: el servicio Microsoft Defender para punto de conexión no se inicia después de la incorporación.
 
@@ -305,13 +307,13 @@ Si se produce un error en la comprobación y el entorno usa un proxy para conect
   - `<Key Path="SOFTWARE\Policies\Microsoft\Windows Defender"><KeyValue Value="0" ValueKind="DWord" Name="DisableAntiVirus"/></Key>`
 
 > [!IMPORTANT]
-> La `disableAntiSpyware` configuración se interrumpe y se omitirá en todos los dispositivos Windows 10, a partir de la actualización de agosto de 2020 (versión 4.18.2007.8) a Antivirus de Microsoft Defender.
+> La `disableAntiSpyware` configuración se interrumpe y se omitirá en todos los dispositivos Windows 10, a partir de la actualización de agosto de 2020 (versión 4.18.2007.8) a Microsoft Defender Antivirus.
 
 - Después de borrar la directiva, vuelva a ejecutar los pasos de incorporación.
 
 - También puede comprobar los valores de clave del Registro anteriores para comprobar que la directiva está deshabilitada; para ello, abra la clave `HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows Defender`del Registro .
 
-  :::image type="content" source="images/atp-disableantispyware-regkey.png" alt-text="La clave del Registro del Antivirus de Microsoft Defender" lightbox="images/atp-disableantispyware-regkey.png":::
+  :::image type="content" source="images/atp-disableantispyware-regkey.png" alt-text="La clave del Registro para Microsoft Defender Antivirus" lightbox="images/atp-disableantispyware-regkey.png":::
 
    > [!NOTE]
    > Todos los servicios Windows Defender (wdboot, wdfilter, wdnisdrv, wdnissvc y windefend) deben estar en su estado predeterminado. No se admite el cambio del inicio de estos servicios y puede forzarle a volver a crear una imagen del sistema.

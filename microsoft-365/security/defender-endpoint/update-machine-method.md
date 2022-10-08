@@ -11,17 +11,19 @@ author: mjcaparas
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
-ms.collection: M365-security-compliance
+ms.collection:
+- m365-security
+- tier3
 ms.topic: article
 ms.subservice: mde
 ms.custom: api
 search.appverid: met150
-ms.openlocfilehash: feb35c91239540d8f1cf1e5e0c298bfc48463128
-ms.sourcegitcommit: 9b133379196da2b3a4bb311b07ff274f43780f68
+ms.openlocfilehash: 24a346074c32810b4c00a3c9386a4273ba5176c4
+ms.sourcegitcommit: 4e42bafee965446f44f7f57d1defed2b9b24fce8
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/14/2022
-ms.locfileid: "67684241"
+ms.lasthandoff: 09/30/2022
+ms.locfileid: "68225490"
 ---
 # <a name="update-machine"></a>Actualizar máquina 
 
@@ -63,6 +65,8 @@ Delegado (cuenta profesional o educativa)|Machine.ReadWrite|"Leer y escribir inf
 > Al obtener un token con credenciales de usuario:
 > - El usuario debe tener al menos el siguiente permiso de rol: "Investigación de alertas". Para obtener más información, consulte [Creación y administración de roles](user-roles.md).
 > - El usuario debe tener acceso al dispositivo asociado a la alerta, en función de la configuración del grupo de dispositivos. Para obtener más información, consulte [Creación y administración de grupos de dispositivos](machine-groups.md).
+>
+> La creación de grupos de dispositivos se admite en El plan 1 y el plan 2 de Defender para punto de conexión.
 
 ## <a name="http-request"></a>Solicitud HTTP
 

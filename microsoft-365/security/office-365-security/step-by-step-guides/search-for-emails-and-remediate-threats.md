@@ -13,16 +13,19 @@ author: MSFTTracyP
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
-ms.collection: m365-guidance-templates
+ms.collection:
+- m365-guidance-templates
+- m365-security
+- tier3
 ms.topic: how-to
 ms.subservice: mdo
 search.appverid: met150
-ms.openlocfilehash: 6dd6b38699e1a414f0db2c0ca872ff267b0747f6
-ms.sourcegitcommit: c29af68260ba8676083674b3c70209bff2c2e362
+ms.openlocfilehash: c55cad1ccca7f28806b724d26eb232fcc315ca7c
+ms.sourcegitcommit: 4e42bafee965446f44f7f57d1defed2b9b24fce8
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/16/2022
-ms.locfileid: "67741135"
+ms.lasthandoff: 09/30/2022
+ms.locfileid: "68224918"
 ---
 # <a name="steps-to-use-manual-email-remediation-in-threat-explorer"></a>Pasos para usar la corrección manual de correo electrónico en el Explorador de amenazas
 

@@ -14,21 +14,24 @@ f1_keywords:
 ms.service: O365-seccomp
 ms.localizationpriority: medium
 ms.collection:
-- M365-security-compliance
+- tier3
+- purview-compliance
 hideEdit: true
 feedback_system: None
 recommendations: false
 description: Definición de entidad de tipo de información confidencial del número de licencia de conducir de Grecia.
-ms.openlocfilehash: 334dbbbf09d1ba28c7842c22a87b4b38ba1df74d
-ms.sourcegitcommit: 5aed330d8af523f0dffe5e392f1c79f047e38172
+ms.openlocfilehash: c5a429a7739046b9bc273f7411895622d885b0ae
+ms.sourcegitcommit: be2334dbcd4e1bf309349d981a68a30e06de0297
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/21/2022
-ms.locfileid: "66999302"
+ms.lasthandoff: 10/04/2022
+ms.locfileid: "68380654"
 ---
 # <a name="greece-drivers-license-number"></a>Número del permiso de conducir de Grecia
 
 Esta entidad se incluye en el tipo de información confidencial Número de licencia de conducir de la UE. También está disponible como una entidad de tipo de información confidencial independiente.
+
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
 
 ## <a name="format"></a>Formato
 
@@ -46,7 +49,7 @@ No
 
 Una política de DLP tiene confianza media en que ha detectado este tipo de información confidencial si, dentro de una proximidad de 300 caracteres:
 
-- La expresión `Regex_greece_eu_driver's_license_number` regular busca contenido que coincida con el patrón.
+- La expresión regular `Regex_greece_eu_driver's_license_number` encuentra contenido que coincide con el patrón.
 - Se encuentra una palabra clave de `Keywords_eu_driver's_license_number` o `Keywords_greece_eu_driver's_license_number`.
 
 ```xml

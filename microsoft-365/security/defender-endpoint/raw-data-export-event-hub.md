@@ -11,17 +11,19 @@ author: mjcaparas
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
-ms.collection: M365-security-compliance
+ms.collection:
+- m365-security
+- tier3
 ms.topic: article
 ms.subservice: mde
 ms.custom: api
 search.appverid: met150
-ms.openlocfilehash: 7e3466e5a7ba8a5a8c0a5e2041d2022ffd9ce3ce
-ms.sourcegitcommit: 9b133379196da2b3a4bb311b07ff274f43780f68
+ms.openlocfilehash: 396ebb62e426a1e1ab9207fcc493ebf3d5d0c760
+ms.sourcegitcommit: 4e42bafee965446f44f7f57d1defed2b9b24fce8
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/14/2022
-ms.locfileid: "67686799"
+ms.lasthandoff: 09/30/2022
+ms.locfileid: "68232922"
 ---
 # <a name="configure-microsoft-defender-for-endpoint-to-stream-advanced-hunting-events-to-your-azure-event-hubs"></a>Configurar Microsoft Defender para punto de conexión para transmitir eventos de búsqueda avanzada a la Azure Event Hubs
 
@@ -82,6 +84,8 @@ ms.locfileid: "67686799"
 - Para obtener más información sobre el esquema de eventos de Microsoft Defender para punto de conexión, vea [Información general sobre la búsqueda avanzada](advanced-hunting-overview.md).
 
 - En búsqueda avanzada, la tabla **DeviceInfo** tiene una columna denominada **MachineGroup** que contiene el grupo del dispositivo. Aquí todos los eventos también se decorarán con esta columna. Consulte [Grupos de dispositivos](machine-groups.md) para obtener más información.
+    > [!NOTE]
+    > La creación de grupos de dispositivos se admite en El plan 1 y el plan 2 de Defender para punto de conexión.  
 
 ## <a name="data-types-mapping"></a>Asignación de tipos de datos
 

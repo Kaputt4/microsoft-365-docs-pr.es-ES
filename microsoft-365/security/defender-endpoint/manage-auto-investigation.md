@@ -13,18 +13,18 @@ ms.date: 07/20/2022
 manager: dansimp
 audience: ITPro
 ms.collection:
-- m365-security-compliance
-- m365initiative-defender-endpoint
+- m365-security
+- tier2
 ms.custom: admindeeplinkDEFENDER
 ms.topic: how-to
 ms.subservice: mde
 search.appverid: met150
-ms.openlocfilehash: 4bad45f7ed9e6c5e82f1bbc52603deeb6c104af1
-ms.sourcegitcommit: 9b133379196da2b3a4bb311b07ff274f43780f68
+ms.openlocfilehash: d996afc778196deebbd9250de811be525f993c3a
+ms.sourcegitcommit: 4e42bafee965446f44f7f57d1defed2b9b24fce8
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/14/2022
-ms.locfileid: "67689905"
+ms.lasthandoff: 09/30/2022
+ms.locfileid: "68233164"
 ---
 # <a name="review-remediation-actions-following-an-automated-investigation"></a>Revisar las acciones de corrección después de una investigación automatizada
 
@@ -43,6 +43,9 @@ Dependiendo
 - cómo se configuran los [grupos de dispositivos](/microsoft-365/security/defender-endpoint/machine-groups) de la organización,
 
 las acciones de corrección pueden producirse automáticamente o solo tras la aprobación por parte del equipo de operaciones de seguridad de la organización.
+
+> [!NOTE]
+> La creación de grupos de dispositivos se admite en El plan 1 y el plan 2 de Defender para punto de conexión.  
 
 Estos son algunos ejemplos:
 

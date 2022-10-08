@@ -1,7 +1,7 @@
 ---
-title: Especificación del nivel de protección en la nube para el Antivirus de Microsoft Defender
-description: Establezca el nivel de protección en la nube para el Antivirus de Microsoft Defender.
-keywords: Antivirus de Microsoft Defender, antimalware, seguridad, defender, nube, agresividad, nivel de protección
+title: Especificar el nivel de protección en la nube para Microsoft Defender Antivirus
+description: Establezca el nivel de protección en la nube para Microsoft Defender Antivirus.
+keywords: Microsoft Defender Antivirus, antimalware, seguridad, defender, nube, agresividad, nivel de protección
 ms.pagetype: security
 ms.service: microsoft-365-security
 ms.mktglfcycl: manage
@@ -15,14 +15,16 @@ ms.reviewer: mkaminska
 manager: dansimp
 ms.custom: nextgen
 ms.subservice: mde
-ms.collection: M365-security-compliance
+ms.collection:
+- m365-security
+- tier2
 search.appverid: met150
-ms.openlocfilehash: 0da317f8714e0057191d93067a6d3a0ae0aac953
-ms.sourcegitcommit: 9b133379196da2b3a4bb311b07ff274f43780f68
+ms.openlocfilehash: 3da72ec820ca7693d6f62daff9d36fd945f81c7a
+ms.sourcegitcommit: 4e42bafee965446f44f7f57d1defed2b9b24fce8
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/14/2022
-ms.locfileid: "67681503"
+ms.lasthandoff: 09/30/2022
+ms.locfileid: "68224984"
 ---
 # <a name="specify-the-cloud-protection-level"></a>Especificar el nivel de protección en la nube
 
@@ -35,7 +37,7 @@ ms.locfileid: "67681503"
 **Plataformas**
 - Windows
 
-La protección en la nube funciona junto con el Antivirus de Microsoft Defender para ofrecer protección a los puntos de conexión mucho más rápido que a través de las actualizaciones de inteligencia de seguridad tradicionales. Puede configurar el nivel de protección en la nube mediante Microsoft Endpoint Manager (recomendado) o directiva de grupo.
+La protección en la nube funciona junto con Microsoft Defender Antivirus para ofrecer protección a los puntos de conexión mucho más rápido que a través de las actualizaciones de inteligencia de seguridad tradicionales. Puede configurar el nivel de protección en la nube mediante Microsoft Endpoint Manager (recomendado) o directiva de grupo.
 
 > [!NOTE]
 > Al seleccionar **Alta**, **Alta +** o **Cero tolerancia** , se podrían detectar algunos archivos legítimos. Si esto sucede, puede desbloquear el archivo detectado o disputar esa detección en el portal de Microsoft 365 Defender.
@@ -73,7 +75,7 @@ La protección en la nube funciona junto con el Antivirus de Microsoft Defender 
 
 3. En directiva de grupo **Editor de administración**, vaya a **Configuración** \> del equipo **Plantillas administrativas**.
 
-4. Expanda el árbol a **Componentes** \> de Windows Antivirus \> de **Microsoft Defender** **MpEngine**.
+4. Expanda el árbol a **Componentes** \> **de Windows Microsoft Defender Antivirus** \> **MpEngine**.
 
 5. Haga doble clic en la opción **Seleccionar nivel de protección** en la nube y establézcala en **Habilitado**. Seleccione el nivel de protección:
 
@@ -103,4 +105,4 @@ La protección en la nube funciona junto con el Antivirus de Microsoft Defender 
   
 ## <a name="see-also"></a>Vea también
 
-[Por qué se debe habilitar la protección en la nube para el Antivirus de Microsoft Defender](why-cloud-protection-should-be-on-mdav.md)
+[Por qué se debe habilitar la protección en la nube para Microsoft Defender Antivirus](why-cloud-protection-should-be-on-mdav.md)

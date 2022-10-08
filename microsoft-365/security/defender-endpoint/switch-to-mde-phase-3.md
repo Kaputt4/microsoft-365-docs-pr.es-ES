@@ -13,22 +13,23 @@ ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection:
-- M365-security-compliance
+- m365-security
 - m365solution-migratetomdatp
 - highpri
+- tier1
 ms.custom:
 - migrationguides
 - admindeeplinkDEFENDER
 ms.topic: article
-ms.date: 04/01/2022
+ms.date: 09/22/2022
 ms.reviewer: jesquive, chventou, jonix, chriggs, owtho
 search.appverid: met150
-ms.openlocfilehash: 63e3e56a9ddcf7645a37b791676a086b8ef2d592
-ms.sourcegitcommit: 2dedd0f594b817779e034afa6c4418def2382a22
+ms.openlocfilehash: 3fa3691d20688796b98c506947a0b8c77f569e7c
+ms.sourcegitcommit: 4e42bafee965446f44f7f57d1defed2b9b24fce8
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/18/2022
-ms.locfileid: "67797908"
+ms.lasthandoff: 09/30/2022
+ms.locfileid: "68225336"
 ---
 # <a name="switch-to-microsoft-defender-for-endpoint---phase-3-onboard"></a>Cambiar a Microsoft Defender para punto de conexión- Fase 3: Incorporación
 
@@ -45,8 +46,8 @@ ms.locfileid: "67797908"
 
 1. [Incorporación de dispositivos a Defender para punto de conexión](#onboard-devices-to-microsoft-defender-for-endpoint).
 2. [Ejecute una prueba de detección](#run-a-detection-test).
-3. [Confirme que Antivirus de Microsoft Defender está en modo pasivo en los puntos de conexión](#confirm-that-microsoft-defender-antivirus-is-in-passive-mode-on-your-endpoints).
-4. [Obtenga actualizaciones para el Antivirus de Microsoft Defender](#get-updates-for-microsoft-defender-antivirus).
+3. [Confirme que Microsoft Defender Antivirus está en modo pasivo en los puntos de conexión](#confirm-that-microsoft-defender-antivirus-is-in-passive-mode-on-your-endpoints).
+4. [Obtenga actualizaciones para Microsoft Defender Antivirus](#get-updates-for-microsoft-defender-antivirus).
 5. [Desinstale la solución que no es de Microsoft](#uninstall-your-non-microsoft-solution).
 6. [Asegúrese de que Defender para punto de conexión funciona correctamente](#make-sure-defender-for-endpoint-is-working-correctly).
 
@@ -65,15 +66,12 @@ ms.locfileid: "67797908"
 
 ### <a name="onboarding-methods"></a>Métodos de incorporación
 
-> [!IMPORTANT]
-> Si usa Microsoft Defender for Cloud, consulte [Integración con Microsoft Defender for Cloud](configure-server-endpoints.md#integration-with-microsoft-defender-for-cloud).
-
 Los métodos de implementación varían según el sistema operativo y los métodos preferidos. En la tabla siguiente se enumeran los recursos que le ayudarán a incorporarse a Defender para punto de conexión:
 
 |Sistemas operativos  |Métodos  |
 |---------|---------|
 |Windows 10 o posterior<br/><br/>Windows Server 2019 o posterior<br/><br/>Windows Server, versión 1803 o posterior<br/><br/>Windows Server 2012 R2 y 2016<sup>[[1](#fn1)]<sup>  |   [Script local (hasta 10 dispositivos)](configure-endpoints-script.md)<br><br/>   [Directiva de grupo](configure-endpoints-gp.md)<br/><br/>[Microsoft Endpoint Configuration Manager](configure-endpoints-sccm.md)<br/><br/>[Microsoft Endpoint Manager/Mobile Administración de dispositivos (Intune)](configure-endpoints-mdm.md)<br>    [Scripts de VDI](configure-endpoints-vdi.md) <br><br> **NOTA**: Un script local es adecuado para una prueba de concepto, pero no debe usarse para la implementación de producción. Para una implementación de producción, se recomienda usar directiva de grupo, Configuration Manager de punto de conexión de Microsoft o Intune. |
-|Windows Server 2008 R2 SP1 | [Microsoft Monitoring Agent (MMA)](onboard-downlevel.md#install-and-configure-microsoft-monitoring-agent-mma)  o [Microsoft Defender for Cloud](/azure/security-center/security-center-wdatp) <br><br> **NOTA**: Microsoft Monitoring Agent es ahora el agente de Azure Log Analytics. Para más información, consulte [Introducción al agente de Log Analytics](/azure/azure-monitor/platform/log-analytics-agent).  |
+|Windows Server 2008 R2 SP1 | [Microsoft Monitoring Agent (MMA)](onboard-downlevel.md#install-and-configure-microsoft-monitoring-agent-mma) o [Microsoft Defender for Cloud](/azure/security-center/security-center-wdatp) <br><br> **NOTA**: Microsoft Monitoring Agent es ahora el agente de Azure Log Analytics. Para más información, consulte [Introducción al agente de Log Analytics](/azure/azure-monitor/platform/log-analytics-agent).  |
 |Windows 8.1 Enterprise<br/><br/>Windows 8.1 Pro<br/><br/>Windows 7 SP1 Pro<br/><br/>Windows 7 SP1| [Microsoft Monitoring Agent (MMA)](onboard-downlevel.md) <br><br> **NOTA**: Microsoft Monitoring Agent es ahora el agente de Azure Log Analytics. Para más información, consulte [Introducción al agente de Log Analytics](/azure/azure-monitor/platform/log-analytics-agent).  
 | macOS (consulte [Requisitos del sistema)](microsoft-defender-endpoint-mac.md) | [Script local](mac-install-manually.md)<br/><br/>[Microsoft Endpoint Manager](mac-install-with-intune.md)<br/><br/>[JAMF Pro](mac-install-with-jamf.md)<br/><br/>[Administración de dispositivos móviles](mac-install-with-other-mdm.md)   |
 | Linux (consulte [Requisitos del sistema](microsoft-defender-endpoint-linux.md#system-requirements)) |  [Script local](linux-install-manually.md) <br><br/> [Marioneta](linux-install-with-puppet.md) <br><br/> [Ansible](linux-install-with-ansible.md)|  
@@ -88,28 +86,28 @@ Para comprobar que los dispositivos incorporados están conectados correctamente
 
 |Sistema operativo|Instrucciones|
 |---|---|
-|Windows 10 o posterior<br/><br/>Windows Server 2022<br/><br/>Windows Server 2019<br/><br/>Windows Server, versión 1803 o posterior<br/><br/>Windows Server 2016<br/><br/>Windows Server 2012 R2|Consulte [Ejecución de una prueba de detección](run-detection-test.md).|
+|Windows 10 o posterior<br/><br/>Windows Server 2022<br/><br/>Windows Server 2019<br/><br/>Windows Server, versión 1803 o posterior<br/><br/>Windows Server 2016<br/><br/>Windows Server 2012 R2|Consulte [Ejecución de una prueba de detección](run-detection-test.md).|
 |macOS (consulte [Requisitos del sistema)](microsoft-defender-endpoint-mac.md)|Descargue y use la aplicación de bricolaje en <https://aka.ms/mdatpmacosdiy>. <br/><br/> Para obtener más información, consulte [Defender para punto de conexión en macOS](microsoft-defender-endpoint-mac.md).|
 |Linux (consulte [Requisitos del sistema](microsoft-defender-endpoint-linux.md#system-requirements))|1. Ejecute el siguiente comando y busque un resultado de **1**: `mdatp health --field real_time_protection_enabled`.<br/><br/>2. Abra una ventana terminal y ejecute el siguiente comando: `curl -o ~/Downloads/eicar.com.txt https://www.eicar.org/download/eicar.com.txt`.<br/><br/>3. Ejecute el siguiente comando para enumerar las amenazas detectadas: `mdatp threat list`.<br/><br/>Para obtener más información, consulte [Defender para punto de conexión en Linux](microsoft-defender-endpoint-linux.md).|
 
-## <a name="confirm-that-microsoft-defender-antivirus-is-in-passive-mode-on-your-endpoints"></a>Confirme que antivirus de Microsoft Defender está en modo pasivo en los puntos de conexión.
+## <a name="confirm-that-microsoft-defender-antivirus-is-in-passive-mode-on-your-endpoints"></a>Confirme que Microsoft Defender Antivirus está en modo pasivo en los puntos de conexión.
 
-Ahora que los puntos de conexión se han incorporado a Defender para punto de conexión, el siguiente paso es asegurarse de que antivirus de Microsoft Defender se ejecuta en modo pasivo. Puede usar uno de varios métodos, como se describe en la tabla siguiente:
+Ahora que los puntos de conexión se han incorporado a Defender para punto de conexión, el siguiente paso es asegurarse de que Microsoft Defender Antivirus se ejecuta en modo pasivo. Puede usar uno de varios métodos, como se describe en la tabla siguiente:
 
 |Método|Qué hacer|
 |---|---|
-|Símbolo del sistema|1. En un dispositivo Windows, abra el símbolo del sistema.<br/><br/>2. Escriba `sc query windefend`y presione Entrar.<br/><br/>3. Revise los resultados para confirmar que Antivirus de Microsoft Defender se ejecuta en modo pasivo.|
+|Símbolo del sistema|1. En un dispositivo Windows, abra el símbolo del sistema.<br/><br/>2. Escriba `sc query windefend`y presione Entrar.<br/><br/>3. Revise los resultados para confirmar que Microsoft Defender Antivirus se ejecuta en modo pasivo.|
 |PowerShell|1. En un dispositivo Windows, abra Windows PowerShell como administrador.<br/><br/>2. Ejecute el siguiente cmdlet de PowerShell: `Get-MpComputerStatus|select AMRunningMode`. <br/><br/>3. Revise los resultados. Debería ver **el modo pasivo**.|
-|Aplicación Seguridad de Windows|1. En un dispositivo Windows, abra la aplicación Seguridad de Windows.<br/><br/>2. Seleccione **Virus & protección contra amenazas**.<br/><br/>3. En **¿Quién me protege?** seleccione **Administrar proveedores**.<br/><br/>4. En la página **Proveedores de seguridad** , en **Antivirus**, busque **Antivirus de Microsoft Defender activado**.|
+|Aplicación Seguridad de Windows|1. En un dispositivo Windows, abra la aplicación Seguridad de Windows.<br/><br/>2. Seleccione **Virus & protección contra amenazas**.<br/><br/>3. En **¿Quién me protege?** seleccione **Administrar proveedores**.<br/><br/>4. En la página **Proveedores de seguridad**, en **Antivirus**, busque **Microsoft Defender Antivirus está activado**.|
 |Administrador de tareas|1. En un dispositivo Windows, abra la aplicación Administrador de tareas.<br/><br/>2. Seleccione la pestaña **Detalles** . Busque **MsMpEng.exe** en la lista.|
 
 > [!NOTE]
-> Es posible que vea *Antivirus de Windows Defender* en lugar de *Antivirus de Microsoft Defender* en algunas versiones de Windows.
-> Para obtener más información sobre el modo pasivo y el modo activo, consulte [Más detalles sobre los estados del Antivirus de Microsoft Defender](microsoft-defender-antivirus-compatibility.md#more-details-about-microsoft-defender-antivirus-states).
+> Es posible que vea *Windows Defender Antivirus* en lugar de *Microsoft Defender Antivirus* en algunas versiones de Windows.
+> Para obtener más información sobre el modo pasivo y el modo activo, consulte [Más detalles sobre Microsoft Defender estados del Antivirus](microsoft-defender-antivirus-compatibility.md#more-details-about-microsoft-defender-antivirus-states).
 
-### <a name="set-microsoft-defender-antivirus-on-windows-server-to-passive-mode-manually"></a>Establecer el Antivirus de Microsoft Defender en Windows Server en modo pasivo manualmente
+### <a name="set-microsoft-defender-antivirus-on-windows-server-to-passive-mode-manually"></a>Establecer Microsoft Defender Antivirus en Windows Server en modo pasivo manualmente
 
-Para establecer antivirus de Microsoft Defender en modo pasivo en Windows Server, versión 1803 o posterior, o Windows Server 2019 o Windows Server 2022, siga estos pasos:
+Para establecer Microsoft Defender Antivirus en modo pasivo en Windows Server, versión 1803 o posterior, o Windows Server 2019 o Windows Server 2022, siga estos pasos:
 
 1. Abra el Editor del Registro y, a continuación, vaya a `Computer\HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows Advanced Threat Protection`.
 
@@ -126,13 +124,13 @@ Para establecer antivirus de Microsoft Defender en modo pasivo en Windows Server
 > - [Herramienta objeto de directiva de grupo local](/windows/security/threat-protection/security-compliance-toolkit-10#what-is-the-local-group-policy-object-lgpo-tool)
 > - [Un paquete en Configuration Manager](/mem/configmgr/apps/deploy-use/packages-and-programs)
 
-### <a name="start-microsoft-defender-antivirus-on-windows-server-2016"></a>Inicio del Antivirus de Microsoft Defender en Windows Server 2016
+### <a name="start-microsoft-defender-antivirus-on-windows-server-2016"></a>Inicie Microsoft Defender Antivirus en Windows Server 2016
 
-Si usa Windows Server 2016, es posible que tenga que iniciar el Antivirus de Microsoft Defender manualmente. Puede realizar esta tarea mediante el cmdlet `mpcmdrun.exe -wdenable` de PowerShell en el dispositivo.
+Si usa Windows Server 2016, es posible que tenga que iniciar Microsoft Defender Antivirus manualmente. Puede realizar esta tarea mediante el cmdlet `mpcmdrun.exe -wdenable` de PowerShell en el dispositivo.
 
-## <a name="get-updates-for-microsoft-defender-antivirus"></a>Obtención de actualizaciones para el Antivirus de Microsoft Defender
+## <a name="get-updates-for-microsoft-defender-antivirus"></a>Obtención de actualizaciones para Microsoft Defender Antivirus
 
-Mantener actualizado el Antivirus de Microsoft Defender es fundamental para garantizar que los dispositivos tengan la tecnología y las características más recientes necesarias para protegerse contra nuevas técnicas de malware y ataque, incluso si el Antivirus de Microsoft Defender se ejecuta en modo pasivo. (Consulte [Compatibilidad del Antivirus de Microsoft Defender](microsoft-defender-antivirus-compatibility.md)).
+Mantener Microsoft Defender Antivirus actualizado es fundamental para garantizar que los dispositivos tengan la tecnología y las características más recientes necesarias para protegerse contra nuevas técnicas de malware y ataques, incluso si Microsoft Defender Antivirus se ejecuta en modo pasivo. (Consulte [compatibilidad con Microsoft Defender Antivirus](microsoft-defender-antivirus-compatibility.md)).
 
 Existen dos tipos de actualizaciones vinculadas a mantener el Antivirus de Microsoft Defender al día:
 
@@ -140,7 +138,7 @@ Existen dos tipos de actualizaciones vinculadas a mantener el Antivirus de Micro
 
 - Actualizaciones de productos
 
-Para obtener las actualizaciones, siga las instrucciones que se indican en [Administración de actualizaciones del Antivirus de Microsoft Defender y aplicación de líneas base](manage-updates-baselines-microsoft-defender-antivirus.md).
+Para obtener las actualizaciones, siga las instrucciones de [Administración de actualizaciones Microsoft Defender Antivirus y aplique líneas base](manage-updates-baselines-microsoft-defender-antivirus.md).
 
 ## <a name="uninstall-your-non-microsoft-solution"></a>Desinstalación de la solución que no es de Microsoft
 
@@ -148,12 +146,12 @@ Si en este momento tiene:
 
 - Incorporó los dispositivos de su organización a Defender para punto de conexión y
 
-- Antivirus de Microsoft Defender está instalado y habilitado,
+- Microsoft Defender Antivirus está instalado y habilitado,
 
-A continuación, el siguiente paso consiste en desinstalar la solución antivirus, antimalware y endpoint protection que no sea de Microsoft. Al desinstalar la solución que no es de Microsoft, antivirus de Microsoft Defender cambia del modo pasivo al modo activo. En la mayoría de los casos, esto sucede automáticamente. 
+A continuación, el siguiente paso consiste en desinstalar la solución antivirus, antimalware y endpoint protection que no sea de Microsoft. Al desinstalar la solución que no es de Microsoft, Microsoft Defender Antivirus cambia del modo pasivo al modo activo. En la mayoría de los casos, esto sucede automáticamente. 
 
 > [!IMPORTANT]
-> Si, por alguna razón, Antivirus de Microsoft Defender no entra en modo activo después de desinstalar la solución antivirus o antimalware que no es de Microsoft, consulte [Antivirus de Microsoft Defender parece estar bloqueado en modo pasivo](switch-to-mde-troubleshooting.md#microsoft-defender-antivirus-seems-to-be-stuck-in-passive-mode).
+> Si, por alguna razón, Microsoft Defender Antivirus no entra en modo activo después de desinstalar la solución antivirus o antimalware que no es de Microsoft, consulte [Microsoft Defender Antivirus parece estar bloqueado en modo pasivo](switch-to-mde-troubleshooting.md#microsoft-defender-antivirus-seems-to-be-stuck-in-passive-mode).
 
 Para obtener ayuda con la desinstalación de la solución que no es de Microsoft, póngase en contacto con su equipo de soporte técnico.
 

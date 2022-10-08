@@ -13,15 +13,17 @@ author: mjcaparas
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
-ms.collection: M365-security-compliance
+ms.collection:
+- m365-security
+- tier2
 ms.topic: article
 ms.subservice: mde
-ms.openlocfilehash: 6a4f74b0273f877d88e8e6700fa5aab7f6cc0d62
-ms.sourcegitcommit: d3ef9391f621e8f4ca70661184b3bb82c6cbda94
+ms.openlocfilehash: 4d6c6200434ce4121be495c743b75c686fb54557
+ms.sourcegitcommit: 4e42bafee965446f44f7f57d1defed2b9b24fce8
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/02/2022
-ms.locfileid: "67583680"
+ms.lasthandoff: 09/30/2022
+ms.locfileid: "68225600"
 ---
 # <a name="manage-microsoft-defender-for-endpoint-configuration-settings-on-devices-with-microsoft-endpoint-manager"></a>Administrar las opciones de configuración de Microsoft Defender para punto de conexión en dispositivos con Microsoft Endpoint Manager
 
@@ -38,7 +40,7 @@ ms.locfileid: "67583680"
 > ¿Quiere experimentar Defender para punto de conexión? [Regístrese para obtener una prueba gratuita.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-configureendpointsscript-abovefoldlink)
 
 
-Administración de seguridad para Microsoft Defender para punto de conexión es una funcionalidad para que los dispositivos que no están administrados por un Endpoint Manager de Microsoft reciban configuraciones de seguridad para Microsoft Defender directamente desde Endpoint Manager.
+Administración de seguridad para Microsoft Defender para punto de conexión es una funcionalidad para que los dispositivos que no están administrados por un Endpoint Manager de Microsoft reciban configuraciones de seguridad para Microsoft Defender directamente desde Endpoint Manager .
 
 
 Para obtener más información sobre la administración de configuración de seguridad, incluidos los requisitos previos, las plataformas admitidas, etc., consulte [Administración de Microsoft Defender para punto de conexión en dispositivos con Microsoft Endpoint Manager](/mem/intune/protect/mde-security-integration).

@@ -13,16 +13,17 @@ ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection:
-- M365-security-compliance
+- m365-security
+- tier2
 ms.topic: article
 ms.reviewer: chventou
 search.appverid: met150
-ms.openlocfilehash: aad517708cb786e4b0c385c86f28d120fd822414
-ms.sourcegitcommit: 2dedd0f594b817779e034afa6c4418def2382a22
+ms.openlocfilehash: 049d1358b600981fbaaf6d6f232e662f58890e64
+ms.sourcegitcommit: 4e42bafee965446f44f7f57d1defed2b9b24fce8
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/18/2022
-ms.locfileid: "67799382"
+ms.lasthandoff: 09/30/2022
+ms.locfileid: "68232966"
 ---
 # <a name="manage-microsoft-defender-for-endpoint-with-group-policy-objects"></a>Administración de Microsoft Defender para punto de conexión con objetos directiva de grupo
 
@@ -48,14 +49,14 @@ En la tabla siguiente se enumeran varias tareas que puede realizar para configur
 |Tarea|Recursos para obtener más información|
 |---|---|
 |**Administrar la configuración de los objetos de usuario y equipo** <br/><br/> *Personalice objetos directiva de grupo integrados o cree objetos de directiva de grupo personalizados y unidades organizativas para satisfacer sus necesidades organizativas.*|[Administración de directiva de grupo en un dominio administrado de Azure Servicios de dominio de Active Directory](/azure/active-directory-domain-services/manage-group-policy)|
-|**Configuración del Antivirus de Microsoft Defender** <br/><br/> *Configure características antivirus & funcionalidades, incluida la configuración de directivas, exclusiones, corrección y exámenes programados en los dispositivos de la organización (también conocidos como puntos de conexión).*|[Uso de directiva de grupo configuración para configurar y administrar antivirus de Microsoft Defender](/windows/security/threat-protection/microsoft-defender-antivirus/use-group-policy-microsoft-defender-antivirus) <br/><br/> [Uso de directiva de grupo para habilitar la protección entregada en la nube](/windows/security/threat-protection/microsoft-defender-antivirus/enable-cloud-protection-microsoft-defender-antivirus#use-group-policy-to-enable-cloud-delivered-protection)|
+|**Configurar Microsoft Defender Antivirus** <br/><br/> *Configure características antivirus & funcionalidades, incluida la configuración de directivas, exclusiones, corrección y exámenes programados en los dispositivos de la organización (también conocidos como puntos de conexión).*|[Usar directiva de grupo configuración para configurar y administrar Microsoft Defender Antivirus](/windows/security/threat-protection/microsoft-defender-antivirus/use-group-policy-microsoft-defender-antivirus) <br/><br/> [Uso de directiva de grupo para habilitar la protección entregada en la nube](/windows/security/threat-protection/microsoft-defender-antivirus/enable-cloud-protection-microsoft-defender-antivirus#use-group-policy-to-enable-cloud-delivered-protection)|
 |**Administrar las reglas de reducción de superficie expuesta a ataques de la organización** <br/><br/> *Personalice las reglas de reducción de la superficie expuesta a ataques excluyendo archivos & carpetas o agregando texto personalizado a las alertas de notificación que aparecen en los dispositivos de los usuarios.*|[Personalización de reglas de reducción de superficie expuesta a ataques con objetos directiva de grupo](/microsoft-365/security/defender-endpoint/attack-surface-reduction-rules-deployment-implement)|
 |**Administración de la configuración de protección contra vulnerabilidades** <br/><br/> *Puede personalizar la configuración de protección contra vulnerabilidades de seguridad, importar un archivo de configuración y, a continuación, usar directiva de grupo para implementar ese archivo de configuración.*|[Personalización de la configuración de protección contra vulnerabilidades](/microsoft-365/security/defender-endpoint/customize-exploit-protection) <br/><br/> [Importar, exportar e implementar configuraciones de protección de vulnerabilidades de seguridad](/microsoft-365/security/defender-endpoint/import-export-exploit-protection-emet-xml) <br/><br/> [Usar la directiva de grupo para distribuir la configuración](/microsoft-365/security/defender-endpoint/import-export-exploit-protection-emet-xml#use-group-policy-to-distribute-the-configuration)|
 |**Habilitar Protección de red** para evitar que los empleados usen aplicaciones que contengan contenido malintencionado en Internet <br/><br/> *Se recomienda usar el [modo de auditoría](/microsoft-365/security/defender-endpoint/evaluate-network-protection) al principio para la protección de red en un entorno de prueba para ver qué aplicaciones se bloquearían antes de implementarse.*|[Activar la protección de red mediante directiva de grupo](/microsoft-365/security/defender-endpoint/enable-network-protection#group-policy)|
 |**Configuración del acceso controlado a carpetas** para protegerse frente a ransomware <br/><br/> *[El acceso controlado a carpetas](/microsoft-365/security/defender-endpoint/controlled-folders) también se conoce como protección contra antiransomware.*|[Habilitación del acceso controlado a carpetas mediante directiva de grupo](/microsoft-365/security/defender-endpoint/enable-controlled-folders#group-policy)|
-|**Configure SmartScreen de Microsoft Defender** para protegerse frente a sitios y archivos malintencionados en Internet.|[Configuración de smartscreen de Microsoft Defender directiva de grupo y administración de dispositivos móviles (MDM) mediante directiva de grupo](/windows/security/threat-protection/microsoft-defender-smartscreen/microsoft-defender-smartscreen-available-settings#group-policy-settings)|
+|**Configure Microsoft Defender SmartScreen** para protegerse frente a sitios y archivos malintencionados en Internet.|[Configuración de Microsoft Defender smartscreen directiva de grupo y administración de dispositivos móviles (MDM) mediante directiva de grupo](/windows/security/threat-protection/microsoft-defender-smartscreen/microsoft-defender-smartscreen-available-settings#group-policy-settings)|
 |**Configuración del cifrado y BitLocker** para proteger la información sobre los dispositivos de la organización que ejecutan Windows|[Configuración de directiva de grupo de BitLocker](/windows/security/information-protection/bitlocker/bitlocker-group-policy-settings)|
-|**Configuración de Credential Guard de Microsoft Defender** para protegerse frente a ataques de robo de credenciales|[Habilitar Windows Defender Credential Guard mediante directiva de grupo](/windows/security/identity-protection/credential-guard/credential-guard-manage#enable-windows-defender-credential-guard-by-using-group-policy)|
+|**Configuración de Microsoft Defender Credential Guard** para protegerse frente a ataques de robo de credenciales|[Habilitar Windows Defender Credential Guard mediante directiva de grupo](/windows/security/identity-protection/credential-guard/credential-guard-manage#enable-windows-defender-credential-guard-by-using-group-policy)|
 
 ## <a name="configure-your-microsoft-365-defender-portal"></a>Configuración del portal de Microsoft 365 Defender
 

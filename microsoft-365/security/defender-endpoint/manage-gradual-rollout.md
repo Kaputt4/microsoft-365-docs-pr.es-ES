@@ -14,17 +14,17 @@ ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection:
-- M365-security-compliance
-- m365-initiative-defender-endpoint
+- m365-security
+- tier2
 ms.topic: conceptual
 ms.subservice: mde
 search.appverid: met150
-ms.openlocfilehash: 13361b7324afdc22324e0f114986a9baaea7da57
-ms.sourcegitcommit: c29af68260ba8676083674b3c70209bff2c2e362
+ms.openlocfilehash: 5557d4ad166b05cb38b83ec5f2bc6b84d81ee7d9
+ms.sourcegitcommit: 4e42bafee965446f44f7f57d1defed2b9b24fce8
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/16/2022
-ms.locfileid: "67739792"
+ms.lasthandoff: 09/30/2022
+ms.locfileid: "68233076"
 ---
 # <a name="manage-the-gradual-rollout-process-for-microsoft-defender-updates"></a>Administrar el proceso de implementación gradual para las actualizaciones de Microsoft Defender
 
@@ -49,7 +49,7 @@ Las funcionalidades se proporcionan a través de varios componentes:
 Novedades se publican mensualmente mediante un proceso de versión gradual. Este proceso ayuda a habilitar la detección temprana de errores para detectar el impacto a medida que se produce y abordarlo rápidamente antes de un lanzamiento mayor.
 
 > [!NOTE]
-> Para obtener más información sobre cómo controlar las actualizaciones diarias de inteligencia de seguridad, consulte [Programación de actualizaciones de protección del Antivirus de Microsoft Defender](manage-protection-update-schedule-microsoft-defender-antivirus.md). Novedades asegurarse de que la protección de próxima generación puede defenderse frente a nuevas amenazas, incluso si la protección entregada en la nube no está disponible para el punto de conexión.
+> Para obtener más información sobre cómo controlar las actualizaciones diarias de inteligencia de seguridad, consulte [Programación Microsoft Defender actualizaciones de protección del antivirus](manage-protection-update-schedule-microsoft-defender-antivirus.md). Novedades asegurarse de que la protección de próxima generación puede defenderse frente a nuevas amenazas, incluso si la protección entregada en la nube no está disponible para el punto de conexión.
 
 ## <a name="microsoft-gradual-rollout-model"></a>Modelo de lanzamiento gradual de Microsoft
 
@@ -70,13 +70,13 @@ Si las máquinas reciben actualizaciones de Defender de Windows Update, el proce
 
 Para las máquinas que reciben actualizaciones a través de, por ejemplo, Windows Server Update Services (WSUS) o Microsoft Endpoint Configuration Manager (MECM), hay más opciones disponibles para todas las actualizaciones de Windows, incluidas las opciones para Microsoft Defender para punto de conexión.
 
-- Obtenga más información sobre cómo usar una solución como WSUS, MECM para administrar la distribución y aplicación de actualizaciones en [Administrar actualizaciones del Antivirus de Microsoft Defender y aplicar líneas base: seguridad de Windows](manage-updates-baselines-microsoft-defender-antivirus.md#product-updates).
+- Obtenga más información sobre cómo usar una solución como WSUS, MECM para administrar la distribución y la aplicación de actualizaciones en [Administrar actualizaciones Microsoft Defender Antivirus y aplicar líneas base: seguridad de Windows](manage-updates-baselines-microsoft-defender-antivirus.md#product-updates).
 
 ## <a name="update-channels-for-monthly-updates"></a>Actualizar canales para actualizaciones mensuales
 
 Puede asignar una máquina a un canal de actualización para definir la cadencia en la que una máquina recibe actualizaciones mensuales del motor y de la plataforma.
 
-Para obtener más información sobre cómo configurar actualizaciones, consulte [Creación de un proceso de implementación gradual personalizado para las actualizaciones de Microsoft Defender](configure-updates.md).
+Para obtener más información sobre cómo configurar actualizaciones, consulte [Creación de un proceso de implementación gradual personalizado para Microsoft Defender actualizaciones](configure-updates.md).
 
 Están disponibles los siguientes canales de actualización:
 
@@ -138,7 +138,7 @@ Para crear su propio proceso de implementación gradual personalizado para las a
 - Microsoft Endpoint Manager
 - PowerShell
 
-Para obtener más información sobre cómo usar estas herramientas, consulte [Creación de un proceso de implementación gradual personalizado para las actualizaciones de Microsoft Defender](configure-updates.md).
+Para obtener más información sobre cómo usar estas herramientas, consulte [Creación de un proceso de implementación gradual personalizado para Microsoft Defender actualizaciones](configure-updates.md).
 
 > [!TIP]
 > Si busca información relacionada con el antivirus para otras plataformas, consulte:

@@ -15,16 +15,17 @@ ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection:
-- m365-security-compliance
+- m365-security
 - m365initiative-defender-endpoint
+- tier1
 ms.topic: article
 ms.subservice: mde
-ms.openlocfilehash: c043203c18e61a0a1c85b6bc15ab1a8944bb1a5b
-ms.sourcegitcommit: d3ef9391f621e8f4ca70661184b3bb82c6cbda94
+ms.openlocfilehash: f5bf80e4bc58b089ebfadfadef5bceb64c557ddf
+ms.sourcegitcommit: 4e42bafee965446f44f7f57d1defed2b9b24fce8
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/02/2022
-ms.locfileid: "67576459"
+ms.lasthandoff: 09/30/2022
+ms.locfileid: "68225512"
 ---
 # <a name="track-and-respond-to-emerging-threats-through-threat-analytics"></a>Seguimiento y respuesta a amenazas emergentes a través del análisis de amenazas
 
@@ -111,7 +112,7 @@ Vaya a la sección **Informe de analistas** para leer la escritura detallada de 
 En la sección **Mitigaciones** , revise la lista de recomendaciones que requieren acción específicas que pueden ayudarle a aumentar la resistencia de la organización frente a la amenaza. La lista de mitigaciones de seguimiento incluye:
 
 - **Actualizaciones de seguridad**: Implementación de actualizaciones de seguridad o revisiones para detectar vulnerabilidades
-- **Configuración del Antivirus de Microsoft Defender**
+- **configuración del antivirus de Microsoft Defender**
   - Versión de inteligencia de seguridad
   - Protección entregada en la nube
   - Protección de aplicaciones potencialmente no deseadas (PUA)
@@ -132,7 +133,7 @@ Al usar los informes, tenga en cuenta lo siguiente:
 - Los gráficos solo reflejan las mitigaciones de las que se realiza el seguimiento. Compruebe la información general del informe para ver mitigaciones adicionales que no se muestran en los gráficos.
 - Las mitigaciones no garantizan una resistencia completa. Las mitigaciones proporcionadas reflejan las mejores acciones posibles necesarias para mejorar la resistencia.
 - Los dispositivos se cuentan como "no disponibles" si no han transmitido datos al servicio.
-- Las estadísticas relacionadas con el antivirus se basan en la configuración del Antivirus de Microsoft Defender. Los dispositivos con soluciones antivirus de terceros pueden aparecer como "expuestos".
+- Las estadísticas relacionadas con el antivirus se basan en Microsoft Defender configuración del antivirus. Los dispositivos con soluciones antivirus de terceros pueden aparecer como "expuestos".
 
 ## <a name="related-topics"></a>Temas relacionados
 

@@ -11,17 +11,19 @@ author: mjcaparas
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
-ms.collection: M365-security-compliance
+ms.collection:
+- m365-security
+- tier2
 ms.custom: admindeeplinkDEFENDER
 ms.topic: article
 ms.subservice: mde
 search.appverid: met150
-ms.openlocfilehash: 868c3e17ed818c2599cefd8124f1f081cfd7ae9e
-ms.sourcegitcommit: 9b133379196da2b3a4bb311b07ff274f43780f68
+ms.openlocfilehash: e2229e0f0c4e34b71c054f352e4e94fc029daa51
+ms.sourcegitcommit: 4e42bafee965446f44f7f57d1defed2b9b24fce8
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/14/2022
-ms.locfileid: "67699675"
+ms.lasthandoff: 09/30/2022
+ms.locfileid: "68232856"
 ---
 # <a name="create-and-manage-roles-for-role-based-access-control"></a>Creación y administración de roles para el control de acceso basado en rol
 
@@ -58,6 +60,9 @@ Los pasos siguientes le guían sobre cómo crear roles en Microsoft 365 Defender
 
 > [!IMPORTANT]
 > Después de crear roles, deberá crear un grupo de dispositivos y proporcionar acceso al grupo de dispositivos mediante su asignación a un rol que acaba de crear.
+
+> [!NOTE]
+> La creación de grupos de dispositivos se admite en El plan 1 y el plan 2 de Defender para punto de conexión.
 
 ### <a name="permission-options"></a>Opciones de permiso
 

@@ -12,16 +12,18 @@ author: mjcaparas
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
-ms.collection: M365-security-compliance
+ms.collection:
+- m365-security
+- tier2
 ms.topic: article
 ms.subservice: mde
 search.appverid: met150
-ms.openlocfilehash: 7d89204e04d7ec8a2534118259a8a45a1782d05c
-ms.sourcegitcommit: 9b133379196da2b3a4bb311b07ff274f43780f68
+ms.openlocfilehash: ca15e36c0de968a2afddb14a5c8c74cffe969953
+ms.sourcegitcommit: 4e42bafee965446f44f7f57d1defed2b9b24fce8
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/14/2022
-ms.locfileid: "67688975"
+ms.lasthandoff: 09/30/2022
+ms.locfileid: "68232504"
 ---
 # <a name="create-indicators-based-on-certificates"></a>Creación de indicadores basados en certificados
 
@@ -43,7 +45,7 @@ Puede crear indicadores para los certificados. Algunos casos de uso comunes incl
 
 Es importante comprender los siguientes requisitos antes de crear indicadores de certificados:
 
-- Esta característica está disponible si su organización usa el Antivirus de Microsoft Defender y la protección basada en la nube está habilitada. Para obtener más información, consulte [Administración de la protección basada en la nube](/windows/security/threat-protection/microsoft-defender-antivirus/deploy-manage-report-microsoft-defender-antivirus).
+- Esta característica está disponible si la organización usa Microsoft Defender Antivirus y la protección basada en la nube está habilitada. Para obtener más información, consulte [Administración de la protección basada en la nube](/windows/security/threat-protection/microsoft-defender-antivirus/deploy-manage-report-microsoft-defender-antivirus).
 - La versión de cliente de Antimalware debe ser 4.18.1901.x o posterior.
 - Compatible con máquinas en Windows 10, versión 1703 o posterior, Windows Server 2019, Windows Server 2016, Windows Server 2012 R2 y Windows Server 2022.
     

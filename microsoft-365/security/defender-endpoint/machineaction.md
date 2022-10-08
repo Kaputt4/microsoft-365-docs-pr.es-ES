@@ -11,16 +11,18 @@ author: mjcaparas
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
-ms.collection: M365-security-compliance
+ms.collection:
+- m365-security
+- tier3
 ms.topic: article
 ms.subservice: mde
 search.appverid: met150
-ms.openlocfilehash: 036e3f00c20a100fe3a64c108cfee649c375f6c4
-ms.sourcegitcommit: 9b133379196da2b3a4bb311b07ff274f43780f68
+ms.openlocfilehash: e85038909d9cd68a96d2eb91ebea8fb9dbf6801e
+ms.sourcegitcommit: 4e42bafee965446f44f7f57d1defed2b9b24fce8
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/14/2022
-ms.locfileid: "67688603"
+ms.lasthandoff: 09/30/2022
+ms.locfileid: "68233208"
 ---
 # <a name="machineaction-resource-type"></a>Tipo de recurso MachineAction
 
@@ -66,7 +68,7 @@ ms.locfileid: "67688603"
 |---|---|---|
 |Id.|Guid|Identidad de la entidad [Machine Action](machineaction.md) .|
 |type|Enum|Tipo de la acción. Los valores posibles son: "RunAntiVirusScan", "Offboard", "Live Response", "CollectInvestigationPackage", "Isolate", "Unisolate", "StopAndQuarantineFile", "RestrictCodeExecution" y "UnrestrictCodeExecution".|
-|scope|cadena|Ámbito de la acción. "Full" o "Selective" for Isolation, "Quick" o "Full" para el examen antivirus.|
+|ámbito|string|Ámbito de la acción. "Full" o "Selective" for Isolation, "Quick" o "Full" para el examen antivirus.|
 |Solicitante|Cadena|Identidad de la persona que ejecutó la acción.|
 |externalID|Cadena|Identificador que el cliente puede enviar en la solicitud de correlación personalizada.|
 |requestSource|string|Nombre del usuario o aplicación que envió la acción.|
