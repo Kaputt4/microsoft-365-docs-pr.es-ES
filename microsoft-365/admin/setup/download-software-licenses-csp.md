@@ -8,9 +8,10 @@ manager: scotv
 ms.reviewer: mijeffer, jmueller
 audience: Admin
 ms.topic: article
-ms.service: o365-administration
+ms.service: microsoft-365-business
 ms.localizationpriority: medium
 ms.collection:
+- scotvorg
 - M365-subscription-management
 - Adm_O365
 - Adm_TOC
@@ -21,20 +22,20 @@ ms.custom:
 - admindeeplinkMAC
 description: Obtenga información sobre cómo descargar las claves de licencia de software y producto para el software perpetuo comprado a través del programa Proveedor de soluciones en la nube (CSP).
 ms.date: 01/27/2021
-ms.openlocfilehash: 58b35335e1d00207be664700694edfb46cc8fdec
-ms.sourcegitcommit: 3b194dd6f9ce531ae1b33d617ab45990d48bd3d0
+ms.openlocfilehash: 1864715638d9b6deb5574442e925eda93255291e
+ms.sourcegitcommit: 0b7070ec119e00e0dafe030bbfbef0ae5c9afa19
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/15/2022
-ms.locfileid: "66101896"
+ms.lasthandoff: 09/29/2022
+ms.locfileid: "68170121"
 ---
-# <a name="download-perpetual-software-and-product-license-keys-in-microsoft-365"></a>Descargue las claves de licencia de productos y software perpetuos en Microsoft 365
+# <a name="download-perpetual-software-and-product-license-keys-in-microsoft-365"></a>Descarga de claves de licencia de productos y software perpetuos en Microsoft 365
 
 En este artículo se explica cómo descargar claves de licencia de software y productos para software perpetuo comprado a través del programa Proveedor de soluciones en la nube (CSP).
 
 ## <a name="before-you-begin"></a>Antes de empezar
 
-Debe ser administrador global para realizar los pasos de este artículo. Para obtener más información, vea [Sobre los roles de administrador](../add-users/about-admin-roles.md).
+Debe ser administrador global para realizar los pasos de este artículo. Para más información, consulte[Sobre los roles de administrador](../add-users/about-admin-roles.md).
 
 ## <a name="download-software-and-product-license-keys"></a>Descarga de claves de licencia de software y productos
 

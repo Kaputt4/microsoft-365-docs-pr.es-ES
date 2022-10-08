@@ -12,16 +12,16 @@ ms.service: microsoft-365-security
 ms.subservice: mdo
 ms.localizationpriority: medium
 ms.collection:
-- M365-security-compliance
+- m365-security
 ms.custom: ''
 description: Microsoft Defender para Office 365 información de retención de datosTreat Explorer/Real-Time detecciones
 search.appverid: met150
-ms.openlocfilehash: 6dbda1cdbcc160e61ff4f05934165e1576229479
-ms.sourcegitcommit: b1ed6470645455c2f1fcf467450debc622c40147
+ms.openlocfilehash: 2bb7b03b87f090723c073cae103405c1902ba278
+ms.sourcegitcommit: 12af9e8e3a6eaa090fda9e98ccb831dff65863a4
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/15/2022
-ms.locfileid: "67710420"
+ms.lasthandoff: 09/27/2022
+ms.locfileid: "68092388"
 ---
 # <a name="data-retention-information-for-microsoft-defender-for-office-365"></a>Información de retención de datos para Microsoft Defender para Office 365
 
@@ -34,7 +34,7 @@ De forma predeterminada, los datos de distintas características se conservan du
 
 |Característica|Período de retención|
 |---|---|
-|Detalles de metadatos de alerta (alertas de Microsoft Defender para Office) | 90 días |
+|Detalles de metadatos de alerta (Microsoft Defender para alertas de Office) | 90 días |
 |Detalles de metadatos de entidad (correos electrónicos) | 30 días |
 |Detalles de alertas de actividad (registros de auditoría) | 7 días |
 |Página de la entidad de correo electrónico | 30 días |

@@ -11,16 +11,17 @@ ms.localizationpriority: medium
 ms.service: microsoft-365-security
 ms.collection:
 - M365-security-compliance
+- tier3
 search.appverid:
 - MET150
 ROBOTS: NOINDEX,NOFOLOW
 description: Los administradores pueden aprender a crear directivas para bloquear el contenido activo en documentos de Office
-ms.openlocfilehash: 000e306fd2120fa2980d384ecdeda039f8d717f8
-ms.sourcegitcommit: c29af68260ba8676083674b3c70209bff2c2e362
+ms.openlocfilehash: b9eba7b71c34b38ba40cd63d824026d1ae28a182
+ms.sourcegitcommit: 12af9e8e3a6eaa090fda9e98ccb831dff65863a4
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/16/2022
-ms.locfileid: "67736396"
+ms.lasthandoff: 09/27/2022
+ms.locfileid: "68063428"
 ---
 # <a name="manage-active-content-in-office-documents"></a>Administrar contenido activo en documentos de Office
 
@@ -139,7 +140,7 @@ Las tablas de las secciones siguientes describen la configuración que controla 
 |Jscript & VBScript|Outlook|No permitir que los scripts del modelo de objetos de Outlook se ejecuten para carpetas compartidas|**Enabled**|No|
 |Macros|Excel|Notificaciones de macro|**Deshabilitar todas las macros excepto las firmadas digitalmente**|**Sí** para los valores siguientes: <ul><li>**Disabled**</li><li>**Sin configurar**</li></ul>|
 |Macros|Acceso <p> PowerPoint <p> Project <p> Publisher <p> Visio <p> Word|Configuración de notificación de macros de VBA|**Deshabilitar todas las macros excepto las firmadas digitalmente** <p> y <p> **Requerir que las macros estén firmadas por un publicador de confianza**|**Sí** para los valores siguientes: <ul><li>**Disabled**</li><li>**Sin configurar**</li></ul>|
-|Macros|Access <p> Excel <p> PowerPoint <p> Visio <p> Word|Impedir que las macros se ejecuten en archivos de Office desde Internet|**Enabled**|**Sí** para los valores siguientes: <ul><li>**Disabled**</li><li>**Sin configurar**</li></ul>|
+|Macros|Acceso <p> Excel <p> PowerPoint <p> Visio <p> Word|Impedir que las macros se ejecuten en archivos de Office desde Internet|**Enabled**|**Sí** para los valores siguientes: <ul><li>**Disabled**</li><li>**Sin configurar**</li></ul>|
 |Macros|Excel|Examen de macros cifradas en libros De Excel Open XML|**Examinar macros cifradas (valor predeterminado)**|No|
 |Macros|Oficina|Permitir que VBA cargue referencias de biblioteca de tipos por ruta de acceso desde ubicaciones de intranet que no son de confianza|**Disabled**|No|
 |Macros|Oficina|Seguridad de automation|**Usar nivel de seguridad de macro de aplicación**|No|

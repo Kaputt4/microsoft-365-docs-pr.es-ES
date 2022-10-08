@@ -14,7 +14,7 @@ search.appverid:
 - MET150
 - MOE150
 ms.collection:
-- M365-security-compliance
+- m365-security
 - m365initiative-defender-office365
 description: Empiece a usar funcionalidades automatizadas de investigación y respuesta en Microsoft Defender para Office 365.
 ms.custom:
@@ -22,12 +22,12 @@ ms.custom:
 - seo-marvel-mar2020
 ms.subservice: mdo
 ms.service: microsoft-365-security
-ms.openlocfilehash: 9d7a486e97356ca960ad0ac519445e30a997750e
-ms.sourcegitcommit: 2b89bcff547e00be3d38dc8d1e6cbcf8f41eba42
+ms.openlocfilehash: 0e0d0366f3d66d8dddaa1457ece8fbc88542f6ab
+ms.sourcegitcommit: 12af9e8e3a6eaa090fda9e98ccb831dff65863a4
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/03/2022
-ms.locfileid: "67596366"
+ms.lasthandoff: 09/27/2022
+ms.locfileid: "68092278"
 ---
 # <a name="automated-investigation-and-response-air-in-microsoft-defender-for-office-365"></a>Investigación y respuesta automatizadas (AIR) en Microsoft Defender para Office 365
 

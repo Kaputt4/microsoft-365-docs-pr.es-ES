@@ -7,14 +7,16 @@ audience: Admin
 ms.topic: article
 ms.service: bookings
 ms.localizationpriority: medium
+ms.collection:
+- scotvorg
 ms.assetid: 116d7a84-a7a0-4911-a1e9-debb2cca7c43
 description: Cambie el tema de color de la página de reserva.
-ms.openlocfilehash: dacf7782ea8577badc309b8094c80521b566e10d
-ms.sourcegitcommit: 02a9c7f915d3a795a373b62dbdee2925966703f5
+ms.openlocfilehash: ecddaab39b39ee3f73b76e552336fc444c2f563e
+ms.sourcegitcommit: 0b7070ec119e00e0dafe030bbfbef0ae5c9afa19
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/08/2022
-ms.locfileid: "67623657"
+ms.lasthandoff: 09/29/2022
+ms.locfileid: "68190053"
 ---
 # <a name="customize-and-publish-your-booking-page"></a>Personalizar y publicar la página de reserva
 

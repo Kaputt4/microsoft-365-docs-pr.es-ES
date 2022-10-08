@@ -1,5 +1,5 @@
 ---
-title: Opciones para obtener acceso al correo electrónico desde el dispositivo móvil
+title: Opciones para acceder al correo electrónico desde el dispositivo móvil
 f1.keywords:
 - NOCSH
 ms.author: kwekua
@@ -7,39 +7,40 @@ author: kwekua
 manager: scotv
 audience: End User
 ms.topic: article
-ms.service: o365-administration
+ms.service: microsoft-365-business
 ms.localizationpriority: medium
 ms.collection:
+- scotvorg
 - Adm_O365
 - Adm_NonTOC
 ms.custom: AdminSurgePortfolio
 search.appverid: MET150
 ms.assetid: ba780859-0297-4114-a258-2b2809bab9e6
 ROBOTS: NOINDEX, NOFOLLOW
-description: Obtén información sobre cómo obtener acceso al correo electrónico desde tu dispositivo móvil.
-ms.openlocfilehash: c6ed0685dcb26dcb74bff3ccf8a28a6b9233afc3
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+description: Obtenga información sobre cómo acceder al correo electrónico desde el dispositivo móvil.
+ms.openlocfilehash: 4a7c760941dda48d83ea8789bd3e7ad10e2a4a29
+ms.sourcegitcommit: 0b7070ec119e00e0dafe030bbfbef0ae5c9afa19
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60165237"
+ms.lasthandoff: 09/29/2022
+ms.locfileid: "68173047"
 ---
-# <a name="options-for-accessing-email-from-your-mobile-device"></a>Opciones para obtener acceso al correo electrónico desde el dispositivo móvil
+# <a name="options-for-accessing-email-from-your-mobile-device"></a>Opciones para acceder al correo electrónico desde el dispositivo móvil
 
-Su organización configura opciones que controlan qué aplicaciones móviles puede usar para tener acceso a su cuenta de trabajo para correo electrónico, calendario y contactos.
+Su organización configura opciones que controlan qué aplicaciones móviles puede usar para acceder a su cuenta profesional por correo electrónico, calendario y contactos.
 
-Las Outlook para Android y Outlook para aplicaciones móviles de iOS están diseñadas para el correo electrónico del trabajo o la escuela. Estas aplicaciones proporcionan características como [Bandeja](https://support.microsoft.com/office/f445ad7f-02f4-4294-a82e-71d8964e3978)de entrada centrada, que mantiene correos electrónicos importantes delante y centro, y Asistente para programación , que te ayuda [a](https://support.microsoft.com/office/scheduling-made-easy-in-outlook-mobile-11c5bee5-d78a-4a2b-80c2-2b386ddb4470)encontrar horas de reunión que funcionan con compañeros y simplemente encuentra salas de conferencia disponibles.
+Las aplicaciones móviles de Outlook para Android y Outlook para iOS están diseñadas para su correo electrónico profesional o educativo. Estas aplicaciones proporcionan características como la [Bandeja de entrada centrada](https://support.microsoft.com/office/f445ad7f-02f4-4294-a82e-71d8964e3978), que mantiene correos electrónicos importantes delante y en el centro, y [asistente de programación](https://support.microsoft.com/office/scheduling-made-easy-in-outlook-mobile-11c5bee5-d78a-4a2b-80c2-2b386ddb4470), que le ayuda a encontrar horarios de reuniones que funcionan con compañeros y simplemente encuentra salas de conferencias disponibles.
   
 ## <a name="end-user-experience"></a>Experiencia del usuario final
 
-### <a name="outlook-only"></a>Outlook Solo
+### <a name="outlook-only"></a>Solo Outlook
 
-La organización requiere que use el Outlook para Android o Outlook aplicaciones móviles de iOS para tener acceso al correo electrónico, el calendario y los contactos de la empresa. Los datos empezarán a sincronizarse una vez que descargues e instales Outlook para Android o Outlook para iOS.
+Su organización requiere que use las aplicaciones móviles de Outlook para Android o Outlook para iOS para acceder al correo electrónico, el calendario y los contactos de la empresa. Los datos comenzarán a sincronizarse una vez que descargue e instale Outlook para Android o Outlook para iOS.
 
-![Ejemplo de correo electrónico para usar Outlook para sincronizar el correo electrónico.](../../media/798d942a-4181-4dcb-8039-cd9f2edd9723.png)
+![Correo electrónico de ejemplo para usar Outlook para sincronizar el correo electrónico.](../../media/798d942a-4181-4dcb-8039-cd9f2edd9723.png)
 
-Consulta [Optimizar la aplicación Outlook móvil para](https://support.microsoft.com/office/de075b19-b73c-4d8a-841b-459982c7e890) tu teléfono iOS o Android para obtener más Outlook características. And go to [Outlook for iOS and Android Help Center](https://support.microsoft.com/office/cd84214e-a5ac-4e95-9ea3-e07f78d0cde6) if you run into any issues.
+Consulte [Optimizar la aplicación móvil de Outlook para su teléfono iOS o Android](https://support.microsoft.com/office/de075b19-b73c-4d8a-841b-459982c7e890) para obtener más características de Outlook. Y vaya al [Centro de ayuda de Outlook para iOS y Android](https://support.microsoft.com/office/cd84214e-a5ac-4e95-9ea3-e07f78d0cde6) si tiene algún problema.
 
 ### <a name="any-email-app"></a>Cualquier aplicación de correo electrónico
 
-La organización recomienda usar la aplicación móvil Outlook para Android o iOS para tener acceso a tu cuenta laboral o educativa para correo electrónico, calendario y contactos. Si no realiza ninguna acción en las próximas horas, el correo electrónico empezará a sincronizarse automáticamente. Si eliges usar el Outlook para la aplicación móvil de Android o iOS, los datos solo se sincronizarán con el Outlook para Android o Outlook para la aplicación móvil de iOS. Si decides seguir usando la aplicación de terceros, los datos empezarán a sincronizarse al instante.
+Su organización recomienda usar la aplicación móvil de Outlook para Android o iOS para acceder a su cuenta profesional o educativa para el correo electrónico, el calendario y los contactos. Si no realiza ninguna acción en las próximas horas, el correo electrónico comenzará automáticamente a sincronizarse. Si decide usar la aplicación móvil de Outlook para Android o iOS, los datos solo se sincronizarán con la aplicación móvil Outlook para Android o Outlook para iOS. Si decide seguir usando la aplicación de terceros, los datos comenzarán a sincronizarse al instante.

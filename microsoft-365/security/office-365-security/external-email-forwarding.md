@@ -8,7 +8,7 @@ manager: dansimp
 ms.date: 08/18/2022
 audience: ITPro
 ms.topic: overview
-ms.collection: M365-security-compliance
+ms.collection: m365-security
 ms.localizationpriority: medium
 ms.assetid: ''
 ms.custom:
@@ -17,12 +17,13 @@ ms.custom:
 description: En este artículo se tratan temas como el reenvío de correo electrónico externo, el reenvío automático, los mensajes de acceso denegado 5.7.520, la deshabilitación del reenvío externo, los mensajes "Su administrador ha deshabilitado el reenvío externo", así como la directiva de correo no deseado saliente.
 ms.subservice: mdo
 ms.service: microsoft-365-security
-ms.openlocfilehash: 5a427236386c5afe4f289b8b1eb1ef4045f7f5d6
-ms.sourcegitcommit: 2b89bcff547e00be3d38dc8d1e6cbcf8f41eba42
+search.appverid: met150
+ms.openlocfilehash: 8c8e4f798d5e5ec0966f26d4983cce9003ba4e10
+ms.sourcegitcommit: 12af9e8e3a6eaa090fda9e98ccb831dff65863a4
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/03/2022
-ms.locfileid: "67598459"
+ms.lasthandoff: 09/27/2022
+ms.locfileid: "68092476"
 ---
 # <a name="control-automatic-external-email-forwarding-in-microsoft-365"></a>Control del reenvío automático de correo electrónico externo en Microsoft 365
 

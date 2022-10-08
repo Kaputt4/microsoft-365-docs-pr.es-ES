@@ -23,14 +23,15 @@ search.appverid:
 - BCS160
 ms.assetid: e4c45989-4b1a-462e-a81b-2a13191cf517
 ms.collection:
+- scotvorg
 - M365-security-compliance
 description: Obtenga información sobre cómo funcionan las características de autenticación modernas de Microsoft 365 de forma diferente para las aplicaciones cliente de Office 2013 y 2016.
-ms.openlocfilehash: 36bd7252394cb23b2e1f8d4999e4c09095734716
-ms.sourcegitcommit: 9b133379196da2b3a4bb311b07ff274f43780f68
+ms.openlocfilehash: 365a08db64e01274ff815ee908176878b64f68cc
+ms.sourcegitcommit: 0b7070ec119e00e0dafe030bbfbef0ae5c9afa19
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/14/2022
-ms.locfileid: "67690496"
+ms.lasthandoff: 09/29/2022
+ms.locfileid: "68170231"
 ---
 # <a name="how-modern-authentication-works-for-office-2013-office-2016-and-office-2019-client-apps"></a>Funcionamiento de la autenticación moderna para aplicaciones cliente de Office 2013, Office 2016 y Office 2019
 
@@ -58,7 +59,7 @@ Para los servicios de Microsoft 365, el estado predeterminado de la autenticaci�
 
 Las aplicaciones cliente de Office 2013 admiten la autenticación heredada de forma predeterminada. Heredado significa que admiten el Asistente de inicio de sesión de Microsoft Online o la autenticación básica. Para que estos clientes usen características de autenticación modernas, el cliente de Windows debe tener establecidas las claves del Registro. Para obtener instrucciones, vea [Habilitar la autenticación moderna para Office 2013 en dispositivos Windows](https://support.office.com/article/7dc1c01a-090f-4971-9677-f1b192d6c910).
 
-Para habilitar la autenticación moderna para cualquier dispositivo con Windows (por ejemplo, en portátiles y tabletas), que tienen Microsoft Office 2013 instalado, debe configurar las siguientes claves del registro. Las claves se tienen que establecer en cada dispositivo en el que quiera habilitar la autenticación moderna:
+To enable modern authentication for any devices running Windows (for example on laptops and tablets), that have Microsoft Office 2013 installed, you need to set the following registry keys. The keys have to be set on each device that you want to enable for modern authentication:
 
 |**Clave del registro**|**Tipo**|**Valor** |
 |:-------|:------:|--------:|
@@ -125,7 +126,7 @@ En la tabla siguiente se describe el comportamiento de autenticación de las apl
 |Office 2016  <br/> |Sí, EnableADAL = 1  <br/> |Yes  <br/> |Primero se intenta la autenticación moderna. Si el servidor rechaza una conexión de autenticación moderna, se usa microsoft online sign-in Assistant. El servidor rechaza la autenticación moderna cuando los inquilinos de Skype Empresarial online no están habilitados.  <br/> |Primero se intenta la autenticación moderna. Si el servidor rechaza una conexión de autenticación moderna, se usa microsoft online sign-in Assistant. El servidor rechaza la autenticación moderna cuando los inquilinos de Skype Empresarial online no están habilitados.  <br/> |
 |Office 2016  <br/> |Sí, EnableADAL = 0  <br/> |No  <br/> |Solo el Asistente de inicio de sesión de Microsoft Online.  <br/> |Solo el Asistente de inicio de sesión de Microsoft Online.  <br/> |
 |Office 2013  <br/> |No  <br/> |No  <br/> |Solo el Asistente de inicio de sesión de Microsoft Online.  <br/> |Solo el Asistente de inicio de sesión de Microsoft Online.  <br/> |
-|Office 2013  <br/> |Sí, EnableADAL = 1  <br/> |Yes  <br/> |Primero se intenta la autenticación moderna. Si el servidor rechaza una conexión de autenticación moderna, se usa microsoft online sign-in Assistant. El servidor rechaza la autenticación moderna cuando los inquilinos de Skype Empresarial online no están habilitados.  <br/> |Solo el Asistente de inicio de sesión de Microsoft Online.  <br/> |
+|Office 2013  <br/> |Sí, EnableADAL = 1  <br/> |Sí  <br/> |Primero se intenta la autenticación moderna. Si el servidor rechaza una conexión de autenticación moderna, se usa microsoft online sign-in Assistant. El servidor rechaza la autenticación moderna cuando los inquilinos de Skype Empresarial online no están habilitados.  <br/> |Solo el Asistente de inicio de sesión de Microsoft Online.  <br/> |
 
 ## <a name="see-also"></a>Vea también
 

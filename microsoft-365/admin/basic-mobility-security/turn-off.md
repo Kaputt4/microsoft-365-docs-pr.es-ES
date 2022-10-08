@@ -6,20 +6,21 @@ author: kwekua
 manager: scotv
 audience: Admin
 ms.topic: article
-ms.service: o365-administration
+ms.service: microsoft-365-business
 ms.localizationpriority: medium
 ms.collection:
+- scotvorg
 - M365-subscription-management
 - Adm_O365
 - Adm_TOC
 ms.custom: AdminSurgePortfolio
 description: Quite grupos o directivas para desactivar Basic Mobility and Security.
-ms.openlocfilehash: 59a54b9969bf16c7523a6862c6f0960bb1527e8a
-ms.sourcegitcommit: 1fa0b15f86470c49dddf0d6de59d553a38ae259b
+ms.openlocfilehash: 282e453c996978e98b12700a499adbaf02a75757
+ms.sourcegitcommit: 0b7070ec119e00e0dafe030bbfbef0ae5c9afa19
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "65863040"
+ms.lasthandoff: 09/29/2022
+ms.locfileid: "68190405"
 ---
 # <a name="turn-off-basic-mobility-and-security"></a>Desactivar Movilidad y seguridad básicas
 

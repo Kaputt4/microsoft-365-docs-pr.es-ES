@@ -14,17 +14,18 @@ search.appverid: MET150
 ms.collection:
 - M365-collaboration
 - m365-frontline
+- highpri
 description: Obtenga información sobre cómo usar el informe de citas virtuales del conector HCE de Teams en el Centro de administración de Microsoft Teams para obtener información general sobre el uso de citas virtuales integradas en HCE en su organización.
 appliesto:
 - Microsoft Teams
 - Microsoft 365 for frontline workers
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 5f609ebb1d48e1e7c9b55d2998c793403dec8fa0
-ms.sourcegitcommit: 5e5c2c1f7c321b5eb1c5b932c03bdd510005de13
-ms.translationtype: HT
+ms.openlocfilehash: 477562bc3b4bea61291e8bcce86dd028913ca3bc
+ms.sourcegitcommit: 12af9e8e3a6eaa090fda9e98ccb831dff65863a4
+ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/15/2022
-ms.locfileid: "66998849"
+ms.lasthandoff: 09/27/2022
+ms.locfileid: "68063494"
 ---
 # <a name="microsoft-teams-virtual-visits-usage-report"></a>Informe de uso de consultas virtuales de Teams
 

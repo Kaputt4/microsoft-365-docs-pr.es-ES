@@ -8,9 +8,10 @@ metadata:
   manager: scotv
   audience: Admin
   ms.topic: faq
-  ms.service: o365-administration
+  ms.service: microsoft-365-business
   ms.localizationpriority: medium
   ms.collection:
+  - scotvorg
   - M365-subscription-management
   - Adm_O365
   - Adm_NonTOC
@@ -21,12 +22,12 @@ metadata:
   - MET150
   - MOE150
   description: Revise las respuestas a preguntas frecuentes sobre la implementación centralizada desde el Centro de administración de Microsoft 365.
-  ms.openlocfilehash: 418b2f18b236f79f60ee97be30154c7addb26913
-  ms.sourcegitcommit: 2dedd0f594b817779e034afa6c4418def2382a22
+  ms.openlocfilehash: 5d8128bad13d5208a4f05ca7a694b7c071ec4065
+  ms.sourcegitcommit: 0b7070ec119e00e0dafe030bbfbef0ae5c9afa19
   ms.translationtype: MT
   ms.contentlocale: es-ES
-  ms.lasthandoff: 09/18/2022
-  ms.locfileid: "67797886"
+  ms.lasthandoff: 09/29/2022
+  ms.locfileid: "68173091"
 title: Preguntas frecuentes sobre la implementación centralizada
 summary: La implementación centralizada es la manera recomendada para que un administrador de Office 365 implemente complementos de Office (Word, Excel, PowerPoint y Outlook) en usuarios y grupos dentro de una organización, siempre que la organización cumpla todos los requisitos para usar la implementación centralizada, como se describe en este artículo.
 sections:
@@ -55,7 +56,7 @@ sections:
        - [Impedir descargas de complementos desactivando la Tienda Office en todos los clientes (excepto Outlook)](./manage-addins-in-the-admin-center.md#prevent-add-in-downloads-by-turning-off-the-office-store-across-all-clients-except-outlook)
        - [Especifique los administradores y los usuarios que pueden instalar y administrar complementos para Outlook](/Exchange/specify-who-can-install-and-manage-add-ins-2013-help)
   - question: "¿Proporcionará la implementación centralizada a los administradores la flexibilidad de elegir el método de implementación para los complementos de Outlook? \n"
-    answer: "Sí. La implementación centralizada proporciona a los administradores la flexibilidad de elegir uno de los dos métodos de implementación para los complementos de Outlook durante la implementación de complementos:\n         \n**Disponible** Los usuarios pueden instalar el complemento en Outlook eligiendo **Inicio > Obtener más complementos > Administración administrados**.\n \n**Opcional** El complemento se implementa automáticamente en los usuarios asignados, pero pueden optar por quitarlo.\n>[!NOTE]\n>Las aplicaciones integradas no tienen esta opción disponible; sin embargo, los administradores pueden seguir usando la página del complemento heredado para realizarlo en **Configuración** > **Complemento de** **aplicaciones** >  integradas.\n    \n"
+    answer: "Sí. La implementación centralizada proporciona a los administradores la flexibilidad de elegir uno de los tres métodos de implementación para los complementos de Outlook durante la implementación del complemento:\n         \n**Fijo** El complemento se implementará automáticamente en los usuarios asignados y no podrán quitarlo de la cinta de opciones.\n\n**Disponible** Los usuarios pueden instalar el complemento en Outlook eligiendo **Inicio > Obtener más complementos > Administración administrados**.\n \n**Opcional** El complemento se implementa automáticamente en los usuarios asignados, pero pueden optar por quitarlo.\n>[!NOTE]\n>Las aplicaciones integradas no tienen esta opción disponible; sin embargo, los administradores pueden seguir usando la página del complemento heredado para realizarlo en Aplicaciones **integradas** de **configuración** >  y, a continuación, seleccionar el vínculo **Complemento**.\n:::image type=\"content\" source=\"../../media/addin-links.png\" alt-text=\"Página Puntuación de adopción en Informes.\" lightbox=\"../../media/addin-links.png\":::  \n"
   - question: "¿Pueden los administradores actualizar complementos de línea de negocio (LOB)? \n"
     answer: "Sí. Los administradores pueden cargar un nuevo archivo de manifiesto para admitir los cambios de metadatos de los complementos LOB implementados por el administrador. El complemento se actualiza la próxima vez que se inician las aplicaciones de Office. La aplicación web puede cambiar en cualquier momento.\n \nPara obtener más información, consulte [complemento de línea de negocio](./manage-addins-in-the-admin-center.md).  \n"
   - question: "¿Pueden los administradores desactivar los complementos? \n"

@@ -5,11 +5,13 @@ author: kelleyvice-msft
 manager: scotv
 audience: Admin
 ms.topic: article
-ms.service: o365-administration
+ms.service: microsoft-365-enterprise
 ms.localizationpriority: medium
 search.appverid:
 - MET150
-ms.collection: Ent_O365
+ms.collection:
+- scotvorg
+- Ent_O365
 f1.keywords:
 - CSH
 ms.custom:
@@ -19,12 +21,12 @@ ms.custom:
 - seo-marvel-apr2020
 ms.assetid: 6770c5fa-b886-4512-8c67-ffd53226589e
 description: Cómo usar PowerShell para crear cuentas de usuario individuales o varias de Microsoft 365.
-ms.openlocfilehash: 9f96c5a96e014055622deb34c37cb8523f0041f8
-ms.sourcegitcommit: a5e75d7f7651313818bd2de292d5c38b290d8975
+ms.openlocfilehash: 7cdeaa3f88736d4444e2dd1d45cf73055c4b569f
+ms.sourcegitcommit: 0b7070ec119e00e0dafe030bbfbef0ae5c9afa19
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/07/2022
-ms.locfileid: "65930249"
+ms.lasthandoff: 09/29/2022
+ms.locfileid: "68168779"
 ---
 # <a name="create-microsoft-365-user-accounts-with-powershell"></a>Creación de cuentas de usuario de Microsoft 365 con PowerShell
 
@@ -37,12 +39,12 @@ Al crear cuentas de usuario en PowerShell, siempre se requieren ciertas propieda
 |**Nombre de propiedad**|**Obligatorio**|**Descripción**|
 |:-----|:-----|:-----|
 |**DisplayName** <br/> |Sí  <br/> |Este es el nombre para mostrar que se usa en los servicios de Microsoft 365. Por ejemplo, *Caleb Sills*. <br/> |
-|**UserPrincipalName** <br/> |Sí  <br/> |Este es el nombre de cuenta que se usa para iniciar sesión en los servicios de Microsoft 365. Por ejemplo, *CalebS\@contoso.onmicrosoft.com*.  <br/> |
+|**UserPrincipalName** <br/> |Yes  <br/> |Este es el nombre de cuenta que se usa para iniciar sesión en los servicios de Microsoft 365. Por ejemplo, *CalebS\@contoso.onmicrosoft.com*.  <br/> |
 |**FirstName** <br/> |No  <br/> ||
 |**Apellidos** <br/> |No  <br/> ||
 |**LicenseAssignment** <br/> |No  <br/> |Este es el plan de licencias (también conocido como [plan de licencias o SKU](/azure/active-directory/enterprise-users/licensing-service-plan-reference)) desde el que se asigna una licencia disponible a la cuenta de usuario. La licencia define los servicios de Microsoft 365 que están disponibles para la cuenta. No es necesario asignar una licencia a un usuario al crear la cuenta, pero la cuenta debe tener una licencia para acceder a los servicios de Microsoft 365. Dispone de 30 días para conceder una licencia a la cuenta de usuario después de crearla. |
 |**Password** <br/> |No  <br/> | Si no especifica una contraseña, se asignará una contraseña aleatoria a la cuenta de usuario y la contraseña será visible en los resultados del comando. Si especifica una contraseña, debe tener entre 8 y 16 caracteres de texto ASCII de los siguientes tipos: letras minúsculas, letras mayúsculas, números y símbolos.<br/> |
-|**UsageLocation** <br/> |No  <br/> |Se trata de un código de país válido ISO 3166-1 alpha-2. Por ejemplo, *EE. UU.* para Estados Unidos y *FR* para Francia. Es importante proporcionar este valor, ya que algunos servicios de Microsoft 365 no están disponibles en determinados países. No puede asignar una licencia a una cuenta de usuario a menos que la cuenta tenga configurado este valor. Para obtener más información, consulte [Sobre las restricciones de licencia](https://go.microsoft.com/fwlink/p/?LinkId=691730).<br/> |
+|**UsageLocation** <br/> |No  <br/> |Se trata de un código de país válido ISO 3166-1 alpha-2. Por ejemplo, *EE. UU.* para el Estados Unidos y *FR* para Francia. Es importante proporcionar este valor, ya que algunos servicios de Microsoft 365 no están disponibles en determinados países. No puede asignar una licencia a una cuenta de usuario a menos que la cuenta tenga configurado este valor. Para obtener más información, consulte [Sobre las restricciones de licencia](https://go.microsoft.com/fwlink/p/?LinkId=691730).<br/> |
 
 >[!Note]
 >[Obtenga información sobre cómo crear cuentas de usuario](../admin/add-users/add-users.md) mediante el Centro de administración de Microsoft 365.
@@ -83,7 +85,7 @@ New-MsolUser -DisplayName <display name> -FirstName <first name> -LastName <last
 ```
 
 >[!Note]
->PowerShell Core no admite el módulo De Microsoft Azure Active Directory para Windows PowerShell y los cmdlets que tienen *Msol* en su nombre. Ejecute estos cmdlets desde Windows PowerShell.
+>PowerShell Core no admite el módulo Microsoft Azure Active Directory para Windows PowerShell módulo y cmdlets que tengan *Msol* en su nombre. Ejecute estos cmdlets desde Windows PowerShell.
 >
 
 Para enumerar los [nombres del plan de licencias](/azure/active-directory/enterprise-users/licensing-service-plan-reference) disponibles, use este comando:
@@ -92,7 +94,7 @@ Para enumerar los [nombres del plan de licencias](/azure/active-directory/enterp
 Get-MsolAccountSku
 ````
 
-En este ejemplo se crea una cuenta para el usuario estadounidense *Caleb Sills* y se asigna una licencia del `contoso:ENTERPRISEPACK` plan de licencias (Office 365 Enterprise E3).
+En este ejemplo se crea una cuenta para el usuario estadounidense *Caleb Sills* y se asigna una licencia del plan de `contoso:ENTERPRISEPACK` licencias (Office 365 Enterprise E3).
   
 ```powershell
 New-MsolUser -DisplayName "Caleb Sills" -FirstName Caleb -LastName Sills -UserPrincipalName calebs@contoso.onmicrosoft.com -UsageLocation US -LicenseAssignment contoso:ENTERPRISEPACK
@@ -126,7 +128,7 @@ New-MsolUser -DisplayName "Caleb Sills" -FirstName Caleb -LastName Sills -UserPr
 
 3. Revise el archivo de salida para ver los resultados. No se especificaron contraseñas, por lo que las contraseñas aleatorias generadas por Microsoft 365 están visibles en el archivo de salida.
     
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 [Administrar cuentas de usuario, licencias y grupos de Microsoft 365 con PowerShell](manage-user-accounts-and-licenses-with-microsoft-365-powershell.md)
   

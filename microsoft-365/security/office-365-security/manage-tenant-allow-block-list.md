@@ -12,17 +12,17 @@ ms.date: 08/11/2022
 search.appverid:
 - MET150
 ms.collection:
-- M365-security-compliance
+- m365-security
 ms.custom: ''
 description: Obtenga información sobre cómo administrar los bloques y los permitidos en la lista de permitidos o bloqueados de inquilinos en el portal de seguridad.
 ms.subservice: mdo
 ms.service: microsoft-365-security
-ms.openlocfilehash: 1eae7f137d9457ca507efb592414127223af4f87
-ms.sourcegitcommit: 2b89bcff547e00be3d38dc8d1e6cbcf8f41eba42
+ms.openlocfilehash: 5d26a013199156b5aeff9ca21dcbebea5c64ebbf
+ms.sourcegitcommit: 12af9e8e3a6eaa090fda9e98ccb831dff65863a4
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/03/2022
-ms.locfileid: "67598986"
+ms.lasthandoff: 09/27/2022
+ms.locfileid: "68092432"
 ---
 # <a name="manage-your-allows-and-blocks-in-the-tenant-allowblock-list"></a>Administrar los bloques y los permitidos en la lista de permitidos o bloqueados de inquilinos
 
@@ -53,7 +53,7 @@ Use el portal envíos (también conocido como *envío de administrador*) en <htt
 
 - **Dominios y direcciones de correo electrónico**:
   - Email mensajes de estos remitentes se marcan como *spam de alta confianza* (SCL = 9). Lo que sucede con los mensajes viene determinado por la [directiva antispam](configure-your-spam-filter-policies.md) que detectó el mensaje para el destinatario. En la directiva de antispam predeterminada y en las nuevas directivas personalizadas, los mensajes marcados como correo no deseado de alta confianza se entregan de forma predeterminada a la carpeta Junk Email. En las [directivas de seguridad preestablecidas](preset-security-policies.md) Estándar y Estricta, los mensajes de spam de alta confianza se ponen en cuarentena.
-  - Los usuarios de la organización no pueden enviar correo electrónico a estos dominios y direcciones bloqueados. Recibirán el siguiente informe de no entrega (también conocido como NDR o mensaje de devolución): `5.7.1  Your message can't be delivered because one or more recipients are blocked by your organization's tenant allow/block list policy.`
+  - Los usuarios de la organización no pueden enviar correo electrónico a estos dominios y direcciones bloqueados. Recibirán el siguiente informe de no entrega (también conocido como NDR o mensaje de devolución): `5.7.1  Your message can't be delivered because one or more recipients are blocked by your organization's tenant allow/block list policy.` todo el mensaje se bloquea a todos los destinatarios si el correo electrónico se envía a cualquiera de las entradas de la lista.
 
 - **Archivos**: Email mensajes que contienen estos archivos bloqueados se bloquean como *malware*.
 
@@ -85,7 +85,7 @@ En la lista siguiente se describe lo que sucede en la lista de permitidos o bloq
 
   - Si la [inteligencia de suplantación](learn-about-spoof-intelligence.md) de identidad bloqueó el mensaje, se crea una entrada de permiso para el remitente y aparece en la pestaña **Remitentes suplantados de la Lista de bloqueos permitidos** de inquilinos.
 
-  - Si la [protección de suplantación de usuario o dominio](set-up-anti-phishing-policies.md#impersonation-settings-in-anti-phishing-policies-in-microsoft-defender-for-office-365) bloqueó el mensaje en Defender para Office 365, no se crea una entrada allow en la lista de permitidos o bloqueados de inquilinos. En su lugar, el dominio o el remitente se agrega a la **sección Remitentes y dominios de confianza** de la [directiva anti-phishing](configure-mdo-anti-phishing-policies.md#use-the-microsoft-365-defender-portal-to-modify-anti-phishing-policies) que detectó el mensaje.
+  - Si la [protección de suplantación de usuario o dominio](set-up-anti-phishing-policies.md#impersonation-settings-in-anti-phishing-policies-in-microsoft-defender-for-office-365) bloqueó el mensaje en Defender para Office 365, no se crea una entrada de permitido en la lista de permitidos o bloqueados de inquilinos. En su lugar, el dominio o el remitente se agrega a la **sección Remitentes y dominios de confianza** de la [directiva anti-phishing](configure-mdo-anti-phishing-policies.md#use-the-microsoft-365-defender-portal-to-modify-anti-phishing-policies) que detectó el mensaje.
 
   - Si el mensaje se bloqueó por otros motivos, se crea una entrada de permiso para el remitente y aparece en la pestaña **Dominios & direcciones** de la Lista de bloqueos permitidos de inquilinos.
 
@@ -104,6 +104,6 @@ De forma predeterminada, permitir entradas para **dominios y direcciones de corr
 
 ## <a name="what-to-expect-after-you-add-an-allow-or-block-entry"></a>Qué esperar después de agregar una entrada de permitir o bloquear
 
-Después de agregar una entrada de permitir a través del portal envíos o una entrada de bloque en la lista de permitidos o bloqueados de inquilinos, la entrada debería empezar a funcionar inmediatamente.
+Después de agregar una entrada de permiso a través del portal envíos o una entrada de bloque en la lista de permitidos o bloqueados de inquilinos, la entrada debería empezar a funcionar inmediatamente el 99,999 % del tiempo. Para el resto, podría tardar hasta 24 horas.
 
 Se recomienda permitir que las entradas expiren automáticamente después de 30 días para ver si el sistema ha obtenido información sobre el permiso o el bloque. Si no es así, debe realizar otra entrada para dar al sistema otros 30 días para aprender.

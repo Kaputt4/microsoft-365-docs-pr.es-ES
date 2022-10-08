@@ -8,9 +8,10 @@ manager: scotv
 ms.reviewer: shegu, nicholak
 audience: Admin
 ms.topic: article
-ms.service: o365-administration
+ms.service: microsoft-365-business
 ms.localizationpriority: medium
 ms.collection:
+- scotvorg
 - M365-subscription-management
 - Adm_O365
 ms.custom:
@@ -20,12 +21,12 @@ ms.custom:
 search.appverid: MET150
 description: Obtenga información sobre cómo mover usuarios entre suscripciones.
 ms.date: 05/12/2022
-ms.openlocfilehash: c3450cecf4219f825740d5777cebeb05782b3dc4
-ms.sourcegitcommit: 217108c59be41b01963a393b4f16d137636fe6a8
+ms.openlocfilehash: b0a69cb06f180facfc002fe5e33b6042966708e7
+ms.sourcegitcommit: 0b7070ec119e00e0dafe030bbfbef0ae5c9afa19
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/12/2022
-ms.locfileid: "67322637"
+ms.lasthandoff: 09/29/2022
+ms.locfileid: "68189987"
 ---
 # <a name="move-users-to-a-different-subscription"></a>Mover usuarios a una suscripción diferente
 
@@ -33,7 +34,7 @@ Si tiene más de un producto, tiene usuarios con una licencia para un producto, 
 
 ## <a name="before-you-begin"></a>Antes de empezar
 
-Debe ser administrador global, de licencia o de usuario para asignar licencias. Para obtener más información, vea [Acerca de Microsoft 365 roles de administrador](../../admin/add-users/about-admin-roles.md).
+Debe ser un administrador global, de licencia o de usuarios para asignar licencias. Para obtener más información, consulte [Acerca de los roles de administrador de Microsoft 365](../../admin/add-users/about-admin-roles.md).
 
 ## <a name="move-users-to-a-different-subscription"></a>Mover usuarios a una suscripción diferente
 
@@ -98,7 +99,7 @@ Por ejemplo, si el dominio de la organización está contoso.onmicrosoft.com, la
   
 Por supuesto, los usuarios también pueden descargar documentos de SharePoint Online desde el sitio del equipo de SharePoint a su equipo local o a otra ubicación en cualquier momento.
 
-## <a name="next-steps"></a>Siguientes pasos
+## <a name="next-steps"></a>Pasos siguientes
 
 Si no va a [reasignar las licencias sin usar a otros usuarios](../../managed-desktop/get-started/assign-licenses.md), considere la posibilidad [de quitar las licencias de la suscripción](../../commerce/licenses/buy-licenses.md) para que no pague más licencias de las que necesita.
 
