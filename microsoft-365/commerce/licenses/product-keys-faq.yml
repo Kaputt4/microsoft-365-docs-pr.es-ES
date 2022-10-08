@@ -8,16 +8,17 @@ metadata:
   ms.date: 07/22/2021
   audience: Admin
   ms.topic: faq
-  ms.service: o365-administration
+  ms.service: microsoft-365-business
   ms.custom: commerce_vl
+  ms.collection: scotvorg
   ms.localizationpriority: medium
   description: Preguntas más frecuentes sobre las claves de producto
-  ms.openlocfilehash: aac4f6aeed6fb8320929d333cdc7b58addfbd221
-  ms.sourcegitcommit: 7ac54e1952383d5cd5f084c6a9d247eb747d4904
+  ms.openlocfilehash: cb0ac08baa863fcca478f1f27be5c8d8c723a842
+  ms.sourcegitcommit: 0b7070ec119e00e0dafe030bbfbef0ae5c9afa19
   ms.translationtype: MT
   ms.contentlocale: es-ES
-  ms.lasthandoff: 06/17/2022
-  ms.locfileid: "66139659"
+  ms.lasthandoff: 09/29/2022
+  ms.locfileid: "68189239"
 title: Preguntas más frecuentes sobre las claves de producto
 summary: ''
 sections:
@@ -35,14 +36,14 @@ sections:
       Para obtener más información, consulte [Preguntas más frecuentes sobre la activación del servicio en línea para programas abiertos](/licensing/online-service-activation-faq).
   - question: >
       Cómo encontrar las claves de producto en el Centro de administración de Microsoft 365?
-    answer: "1. Inicie sesión en el Centro de administración de Microsoft 365. \n2. Vaya a **Facturación** > **Sus productos** >  Descargas de **licencias** >  por volumen **& claves** > mantenga el mouse sobre el producto y seleccione **Ver claves**.\n\nEncontrará información de clave de producto para cada producto, el tipo de licencia (clave de licencia por volumen, Servicio de administración de claves (KMS) y clave de activación múltiple (MAK)) y el número de activaciones MAK usadas y disponibles.\n\nSeleccione **Descargar todas las claves de producto** para descargar las claves mostradas para una licencia en una unidad local.\n"
+    answer: "1. Inicie sesión en el Centro de administración de Microsoft 365. \n2. Vaya a **Facturación** > **Sus productos** >  Descargas de **licencias** >  por volumen **& claves** > mantenga el mouse sobre el producto y seleccione **Ver claves**.\n\nEncontrará información de clave de producto para cada producto, el tipo de licencia (clave de licencia por volumen, servicio de administración de claves (KMS) y clave de activación múltiple (MAK)) y el número de activaciones MAK usadas y disponibles.\n\nSeleccione **Descargar todas las claves de producto** para descargar las claves mostradas para una licencia en una unidad local.\n"
   - question: >
       Cómo encontrar SQL Server claves de producto?
     answer: >
-      La clave de licencia de SQL se inserta en el asistente de activación del software en lugar de mostrarse en el centro de administración y se detecta automáticamente durante la instalación. Para obtener más información, consulte [La guía de instalación de SQL Server](/sql/database-engine/install-windows/install-sql-server).
+      La clave de licencia sql se inserta en el asistente de activación del software en lugar de mostrarse en el centro de administración y se detecta automáticamente durante la instalación. Para obtener más información, consulte [La guía de instalación de SQL Server](/sql/database-engine/install-windows/install-sql-server).
 
 
-      También puede encontrar la clave descargando el archivo ISO de SQL del centro de administración > .. \x64 carpeta > DefaultSetup.ini archivo. Asegúrese de realizar una copia de seguridad de cualquier versión existente antes de instalar o actualizar SQL ediciones. Si necesita ayuda para solucionar problemas técnicos durante la instalación del producto o la activación del servicio en línea, póngase en contacto con soporte técnico de Microsoft enviando una [solicitud de soporte técnico](https://support.microsoft.com/oas).
+      También puede encontrar la clave descargando el archivo ISO de SQL del centro de administración > .. \x64 carpeta > DefaultSetup.ini archivo. Asegúrese de realizar una copia de seguridad de cualquier versión existente antes de instalar o actualizar las ediciones SQL. Si necesita ayuda para solucionar problemas técnicos durante la instalación del producto o la activación del servicio en línea, póngase en contacto con soporte técnico de Microsoft enviando una [solicitud de soporte técnico](https://support.microsoft.com/oas).
   - question: >
       Cómo encontrar una clave de producto para la compra de licencias por volumen?
     answer: "Si el contrato autoriza el acceso a un producto que requiere una clave, puede encontrar esas claves si va a **Facturación** > **Sus productos** >  Descargas de **licencias** >  por volumen **& claves**. \n\nSin embargo, algunos productos no requieren una clave de producto. Esta información aparece en la descripción del producto en el catálogo Descargas y claves.\n\nPara determinar si el producto requiere una clave, vaya a [Activación del producto e información de clave](https://licensingapps.microsoft.com/product-activation). En Buscar productos, elija un producto o busque el nombre del producto.\n"
@@ -52,7 +53,7 @@ sections:
       Se usa una clave de configuración para cada combinación de producto o versión para desbloquear el producto omitiendo la activación. Puede obtener una clave de configuración de una de estas dos maneras:
 
         - **Cumplimiento físico** En el caso de los productos adquiridos a través del suministro físico, la clave de configuración se imprime en el manguito multimedia.
-        - **Descarga del suministro** Para los productos adquiridos mediante descarga desde el centro de administración, la clave de configuración se muestra en la pantalla de descarga y podría ir acompañada del siguiente texto: Algunos productos disponibles para descarga requieren claves de configuración. Tenga en cuenta la clave de configuración, ya que es necesaria durante la instalación del producto. Para obtener más información sobre las claves de instalación, consulte [KMS claves de configuración de cliente](/windows-server/get-started/kmsclientkeys).
+        - **Descarga del suministro** Para los productos adquiridos mediante descarga desde el centro de administración, la clave de configuración se muestra en la pantalla de descarga y podría ir acompañada del siguiente texto: Algunos productos disponibles para descarga requieren claves de configuración. Tenga en cuenta la clave de configuración, ya que es necesaria durante la instalación del producto. Para más información sobre las claves de instalación, consulte [Claves de configuración de cliente de KMS](/windows-server/get-started/kmsclientkeys).
   - question: >
       ¿Qué determina qué claves de producto están asociadas a mis contratos?
     answer: >
@@ -73,7 +74,7 @@ sections:
   - question: >
       ¿Qué es la activación por volumen?
     answer: >
-      La activación por volumen es una solución configurable que ayuda a automatizar y administrar el proceso de activación del producto en equipos que ejecutan Windows sistemas operativos con licencia bajo un programa de licencias por volumen. La activación por volumen también se usa con otro software de Microsoft, incluidos los conjuntos de Office, que se venden en virtud de contratos de licencias por volumen y que admiten la activación por volumen. Para más información, vea:
+      La activación por volumen es una solución configurable que ayuda a automatizar y administrar el proceso de activación del producto en equipos que ejecutan sistemas operativos Windows con licencia bajo un programa de licencias por volumen. La activación por volumen también se usa con otro software de Microsoft, incluidos los conjuntos de aplicaciones de Office, que se venden en virtud de contratos de licencias por volumen y que admiten la activación por volumen. Para obtener más información, consulte:
         - [Herramientas para administrar la activación por volumen de Office](/deployoffice/vlactivation/tools-to-manage-volume-activation-of-office)
         - [Activación por volumen para Windows 10](/windows/deployment/volume-activation/volume-activation-windows-10)
 
@@ -81,33 +82,33 @@ sections:
 
 
       La activación por volumen proporciona dos maneras de completar las activaciones de volumen. Los clientes pueden usar ambos tipos de clave para activar sistemas en su organización:
-        - Servicio de administración de claves (KMS) permite a las organizaciones activar sistemas dentro de su propia red.
+        - Key Management Service (KMS) permite a las organizaciones activar sistemas dentro de su propia red.
         - La clave de activación múltiple (MAK) activa los sistemas una sola vez mediante los servicios de activación hospedados por Microsoft.
   - question: >
-      ¿Cuál es el Servicio de administración de claves (KMS)?
+      ¿Qué es el servicio de administración de claves (KMS)?
     answer: >
       KMS es un servicio de activación que permite a las organizaciones activar sistemas dentro de su propia red mediante la eliminación de la necesidad de que los equipos individuales se conecten a Microsoft para la activación del producto. No requiere un sistema dedicado y se puede hospedar conjuntamente en un sistema que proporciona otros servicios.
 
 
-      KMS requiere un número mínimo de equipos físicos o virtuales en un entorno de red. Estos mínimos, denominados umbrales de activación, se establecen para que Enterprise clientes los cumplan fácilmente.
+      KMS requiere un número mínimo de equipos físicos o virtuales en un entorno de red. Estos mínimos, denominados umbrales de activación, se establecen para que los clientes enterprise puedan cumplirlos fácilmente.
 
         - Umbrales de activación para Windows
           - La organización debe tener al menos 5 equipos para activar los servidores que ejecutan Windows Server.
-          - La organización debe tener al menos 25 equipos para activar los sistemas cliente que ejecutan Windows.
+          - Su organización debe tener al menos 25 equipos para activar los sistemas cliente que ejecutan Windows.
         - Umbrales de activación para Office
-          - La organización debe tener al menos 5 equipos que ejecuten una edición de Office para activar los productos Office instalados mediante KMS.
+          - Su organización debe tener al menos 5 equipos que ejecuten una edición de Office para activar los productos de Office instalados mediante KMS.
 
       Para obtener más información sobre los umbrales de activación, consulte la [Guía de planeamiento de activación por volumen](/windows/deployment/volume-activation/volume-activation-windows-10).
   - question: >
-      ¿Qué es una clave de host KMS?
+      ¿Qué es una clave de host de KMS?
     answer: >
-      Se usa una clave de KMS para activar el equipo host KMS con un servidor de activación de Microsoft y puede activar hasta 6 hosts KMS con 10 activaciones por host. Cada host KMS puede activar un número ilimitado de equipos.
+      Se usa una clave KMS para activar el equipo host de KMS con un servidor de activación de Microsoft y puede activar hasta 6 hosts de KMS con 10 activaciones por host. Cada host de KMS puede activar un número ilimitado de equipos.
   - question: >
-      ¿Por qué no se muestra ninguna clave KMS en Centro de administración de Microsoft 365 para los clientes de Open License?
-    answer: "KMS claves ya no se asignan previamente a los contratos open, ya que el uso de la clave de activación múltiple (MAK) es el método preferido para la activación.\n\nLas claves KSM se pueden asignar, por excepción, a los clientes de Open que cumplan el umbral mínimo de activación de KMS para Windows Server, OS y Office. Para solicitar una excepción, envíe una solicitud de formulario web a Soporte técnico de Microsoft.\n\nPara solicitar una excepción, debe tener permisos de administrador de VLSC, administrador de claves o visor de claves y proporcionar la siguiente información:\n  \n  - Número de contrato/inscripción o id. de licencia y autorización.\n  - Nombre del producto (incluida la versión y la edición).\n  - Últimos 5 caracteres de la clave de producto.\n  - Número de activaciones de host necesarias.\n  - Justificación empresarial o motivo de la implementación.\n"
+      ¿Por qué no se muestra ninguna clave de KMS en Centro de administración de Microsoft 365 para los clientes de Open License?
+    answer: "Las claves de KMS ya no se asignan previamente a los contratos open, ya que el uso de la clave de activación múltiple (MAK) es el método preferido para la activación.\n\nLas claves KSM se pueden asignar, por excepción, a los clientes de Open que cumplan el umbral mínimo de activación de KMS para Windows Server, el sistema operativo y Office. Para solicitar una excepción, envíe una solicitud de formulario web a Soporte técnico de Microsoft.\n\nPara solicitar una excepción, debe tener permisos de administrador de VLSC, administrador de claves o visor de claves y proporcionar la siguiente información:\n  \n  - Número de contrato/inscripción o id. de licencia y autorización.\n  - Nombre del producto (incluida la versión y la edición).\n  - Últimos 5 caracteres de la clave de producto.\n  - Número de activaciones de host necesarias.\n  - Justificación empresarial o motivo de la implementación.\n"
   - question: >
-      ¿Qué ocurre si necesito hosts KMS adicionales?
-    answer: "Si necesita activaciones de KMS adicionales para activar más de 6 hosts KMS, envíe una solicitud de formulario web para Centro de administración de Microsoft 365 soporte técnico. \n\nPara solicitar una excepción, debe tener permisos de administrador de VLSC, administrador de claves o visor de claves y proporcionar la siguiente información:\n  \n  - Número de contrato/inscripción o id. de licencia y autorización.\n  - Nombre del producto (incluida la versión y la edición).\n  - Últimos 5 caracteres de la clave de producto.\n  - Número de activaciones de host necesarias.\n  - Justificación empresarial o motivo de la implementación.\n"
+      ¿Qué ocurre si necesito hosts de KMS adicionales?
+    answer: "Si necesita activaciones de KMS adicionales para activar más de 6 hosts de KMS, envíe una solicitud de formulario web para Centro de administración de Microsoft 365 soporte técnico. \n\nPara solicitar una excepción, debe tener permisos de administrador de VLSC, administrador de claves o visor de claves y proporcionar la siguiente información:\n  \n  - Número de contrato/inscripción o id. de licencia y autorización.\n  - Nombre del producto (incluida la versión y la edición).\n  - Últimos 5 caracteres de la clave de producto.\n  - Número de activaciones de host necesarias.\n  - Justificación empresarial o motivo de la implementación.\n"
   - question: >
       ¿Qué es una clave de activación múltiple (MAK)?
     answer: >
@@ -131,33 +132,33 @@ sections:
       Puede activar licencias de una de estas dos maneras mediante MAK:
 
         - Activación independiente de MAK Cada equipo se conecta individualmente a Microsoft mediante la web o el teléfono para completar la activación.
-        - Activación del proxy MAK Una solicitud de activación centralizada se realiza en nombre de varios equipos con una única conexión a Microsoft en línea o por teléfono. Este método usa el Herramienta de administración de activación por volumen (VAMT), que forma parte del kit de instalación automatizada (WAIK) de Windows. VAMT permite a los profesionales de TI automatizar y administrar de forma centralizada el proceso de activación por volumen mediante MAK e incluye una comprobación del número de activaciones en la MAK.
+        - Activación del proxy MAK Una solicitud de activación centralizada se realiza en nombre de varios equipos con una única conexión a Microsoft en línea o por teléfono. Este método usa el Herramienta de administración de activación por volumen (VAMT), que forma parte del Kit de instalación automatizada (WAIK) de Windows. VAMT permite a los profesionales de TI automatizar y administrar de forma centralizada el proceso de activación por volumen mediante MAK e incluye una comprobación del número de activaciones en la MAK.
   - question: >
       ¿Cuál es el Herramienta de administración de activación por volumen (VAMT)?
     answer: >
-      El Herramienta de administración de activación por volumen (VAMT) es una herramienta que permite a los administradores de red y a otros profesionales de TI automatizar y administrar de forma centralizada el proceso de activación por volumen y minorista para Windows, Microsoft Office y seleccionar otros Productos de Microsoft. VAMT puede administrar la activación por volumen mediante varias claves de activación (MAK) o el Windows Servicio de administración de claves (KMS). VAMT es un complemento estándar de Microsoft Management Console (MMC) que requiere Microsoft Management Console (MMC) 3.0.
+      El Herramienta de administración de activación por volumen (VAMT) es una herramienta que permite a los administradores de red y a otros profesionales de TI automatizar y administrar de forma centralizada el proceso de activación por volumen y minorista para Windows, Microsoft Office y seleccionar otros productos de Microsoft. VAMT puede administrar la activación por volumen mediante varias claves de activación (MAK) o el servicio de administración de claves de Windows (KMS). VAMT es un complemento estándar de Microsoft Management Console (MMC) que requiere Microsoft Management Console (MMC) 3.0.
 
 
-      Para obtener información sobre VAMT, consulte:
+      Para obtener información sobre VAMT, vea:
 
         - [Referencia técnica de Herramienta de administración de activación por volumen (VAMT)](/windows/deployment/volume-activation/volume-activation-management-tool)
         - [Administración de la activación mediante el Herramienta de administración de activación por volumen (VAMT)](/previous-versions/tn-archive/ff686876(v=technet.10))
         - Descargar [Herramienta de administración de activación por volumen (VAMT)](https://www.microsoft.com/download/details.aspx?id=11936)
   - question: >
-      ¿Qué debo saber sobre el uso de Windows Server como host de KMS para activar Windows clientes?
-    answer: "Si implementa Windows mediante Servicio de administración de claves (KMS) como método de activación, tenga en cuenta lo siguiente:\n  \n  - Windows Server no se admite como host de KMS para activar Windows.\n  - Se requiere una clave de KMS de Windows Server para obtener una revisión que permita la activación de Windows máquinas cliente. Para obtener la revisión más reciente, consulte [Configuración de un equipo host KMS para activar las versiones con licencia de volumen de Office](/deployoffice/vlactivation/configure-a-kms-host-computer-for-office). \n\nSi usa Windows Server como host de KMS, puede hacer lo siguiente:\n  \n  - Actualice la máquina host de KMS a Windows Server.\n  - Degradar la máquina a Windows Server 2003.\n  - Ejecute el host de KMS en una máquina de edición de volumen Windows.\n  - Ejecute una máquina virtual Windows Server.\n"
+      ¿Qué debo saber sobre el uso de Windows Server como host de KMS para activar clientes Windows?
+    answer: "Si implementa Windows mediante Key Management Service (KMS) como método de activación, tenga en cuenta lo siguiente:\n  \n  - Windows Server no se admite como host de KMS para activar Windows.\n  - Se requiere una clave kms de Windows Server para obtener una revisión para permitir la activación de máquinas cliente de Windows. Para obtener la revisión más reciente, consulte [Configuración de un equipo host de KMS para activar las versiones con licencia de volumen de Office](/deployoffice/vlactivation/configure-a-kms-host-computer-for-office). \n\nSi usa Windows Server como host de KMS, puede hacer lo siguiente:\n  \n  - Actualice la máquina host de KMS a Windows Server.\n  - Degradar la máquina a Windows Server 2003.\n  - Ejecute el host de KMS en una máquina de edición de volumen de Windows.\n  - Ejecute una máquina virtual de Windows Server.\n"
   - question: >
       ¿Qué debo saber sobre la activación por volumen para Office, Project y Visio?
     answer: >
       Los siguientes cambios de activación por volumen están relacionados con Office, Project y Visio:
         - Office KMS Host activa cualquier conjunto o aplicación de Office.
-        - Solo se debe instalar y usar una clave Office KMS para la activación.
+        - Solo se debe instalar y usar una clave de KMS de Office para la activación.
 
-      Si implementa Office mediante Servicio de administración de claves (KMS) como método de activación, tenga en cuenta lo siguiente:
-        - No puede activar Office mediante KMS si usa Windows Server como host de KMS.
-        - Una revisión no está disponible para permitir la activación de Office clientes.
+      Si implementa Office mediante el Servicio de administración de claves (KMS) como método de activación, tenga en cuenta lo siguiente:
+        - No puede activar Office con KMS si usa Windows Server como host de KMS.
+        - Una revisión no está disponible para permitir la activación de clientes de Office.
 
-      Si usa Windows Server 2008 como host KMS, puede hacer lo siguiente:
+      Si usa Windows Server 2008 como host de KMS, puede hacer lo siguiente:
         - Actualice la máquina host de KMS a Windows Server.
         - Degradar la máquina a una versión anterior de Windows Server.
         - Ejecute el host de KMS en un equipo Windows.

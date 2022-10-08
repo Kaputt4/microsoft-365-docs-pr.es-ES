@@ -15,13 +15,14 @@ ms.reviewer: shlomiakirav
 f1.keywords: NOCSH
 ms.collection:
 - SMB
-- M365-security-compliance
-ms.openlocfilehash: 12d39ec59ee4f8773bb040d1721e63422d274344
-ms.sourcegitcommit: c29af68260ba8676083674b3c70209bff2c2e362
+- m365-security
+- tier1
+ms.openlocfilehash: ad7b0728cbba3a59d58b0bbd8706aca3431ff253
+ms.sourcegitcommit: 0283c436f3ba61a708b52b57a1955f5ea74376a3
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/16/2022
-ms.locfileid: "67739870"
+ms.lasthandoff: 09/28/2022
+ms.locfileid: "68096993"
 ---
 # <a name="view-and-edit-device-protection-policies"></a>Ver y editar directivas de protección de dispositivos
 
@@ -52,7 +53,7 @@ Para ver las directivas de protección de dispositivos existentes en el portal d
 
 1. Vaya al portal de Microsoft 365 Defender ([https://security.microsoft.com](https://security.microsoft.com)) e inicie sesión.
 
-1. En el panel de navegación, elija **Configuración del dispositivo**. Las directivas se organizan por sistema operativo (como **Cliente de Windows**) y por tipo de directiva (como **Protección de última generación** y **Firewall**).
+1. In the navigation pane, choose **Device configuration**. Policies are organized by operating system (such as **Windows client**) and policy type (such as **Next-generation protection** and **Firewall**).
 
     :::image type="content" source="../media/mdb-deviceconfiguration.png" lightbox="../media/mdb-deviceconfiguration.png" alt-text="Página de configuración del dispositivo.":::
 
@@ -68,7 +69,7 @@ Para editar una directiva de dispositivo:
 
 1. Vaya al portal de Microsoft 365 Defender ([https://security.microsoft.com](https://security.microsoft.com)) e inicie sesión.
 
-1. En el panel de navegación, elija **Configuración del dispositivo**. Las directivas se organizan por sistema operativo (como **Cliente de Windows**) y por tipo de directiva (como **Protección de última generación** y **Firewall**).
+1. In the navigation pane, choose **Device configuration**. Policies are organized by operating system (such as **Windows client**) and policy type (such as **Next-generation protection** and **Firewall**).
 
 1. Seleccione una pestaña del sistema operativo (por ejemplo, **clientes de Windows**) y, a continuación, revise la lista de directivas en las categorías **Protección de última generación** y **Firewall**.
 
@@ -103,7 +104,7 @@ Para crear una nueva directiva de protección de dispositivos:
 
 1. Vaya al portal de Microsoft 365 Defender ([https://security.microsoft.com](https://security.microsoft.com)) e inicie sesión.
 
-1. En el panel de navegación, elija **Configuración del dispositivo**. Las directivas se organizan por sistema operativo (como **Cliente de Windows**) y por tipo de directiva (como **Protección de última generación** y **Firewall**).
+1. In the navigation pane, choose **Device configuration**. Policies are organized by operating system (such as **Windows client**) and policy type (such as **Next-generation protection** and **Firewall**).
 
 1. Seleccione una pestaña del sistema operativo (por ejemplo, **clientes de Windows**) y, a continuación, revise la lista de directivas de **Protección de última generación**.
 
@@ -111,13 +112,13 @@ Para crear una nueva directiva de protección de dispositivos:
 
 1. En la pestaña **Información general**, siga estos pasos:
 
-   1. Especifique un nombre y una descripción. Esta información le ayudará a usted y a los miembros de su equipo a identificarla más adelante.
+   1. Especifique un nombre y una descripción. Esta información le ayudará a usted y a su equipo a identificar la directiva más adelante.
    2. Revise el orden de la directiva y edítelo si fuera necesario. (Para obtener más información, consulte [Orden de directiva](../security/defender-business/mdb-policy-order.md)).
    3. Elija **Siguiente**.
 
 1. En la pestaña **Grupos de dispositivos**, cree un nuevo grupo de dispositivos o use un grupo existente. Las directivas se asignan a los dispositivos a través de grupos de dispositivos. Estos son algunos aspectos que debe tener en cuenta:
 
-   - Inicialmente, es posible que solo tenga el grupo de dispositivos predeterminado, lo que incluye a los dispositivos que usan los usuarios de la organización para acceder a los datos y el correo electrónico de la organización. Puede mantener y usar el grupo de dispositivos predeterminado.
+   - Initially, you might only have your default device group, which includes the devices people in your organization are using to access organization data and email. You can keep and use your default device group.
    - Cree un nuevo grupo de dispositivos para aplicar una directiva con una configuración específica que sea diferente de la directiva predeterminada.
    - Al configurar el grupo de dispositivos, se especifican determinados criterios, como la versión del sistema operativo. Los dispositivos que cumplen los criterios se incluyen en ese grupo de dispositivos, a menos que se excluyan.
    - Todos los grupos de dispositivos, incluidos los grupos de dispositivos predeterminados y personalizados que defina, se almacenan en Azure Active Directory (Azure AD).
@@ -179,7 +180,7 @@ Para duplicar una directiva en Intune:
 
 1. Inicie sesión en el Centro de administración de Microsoft Endpoint Manager.
 
-1. Seleccione la directiva que desea copiar. A continuación, seleccione **Duplicar** o seleccione el paréntesis **(...)** a la derecha de la directiva y seleccione **Duplicar**.
+1. Select the policy that you want to copy. Next, select **Duplicate** or select the ellipsis **(...)** to the right of the policy and select **Duplicate**.
 1. Proporcione un Nuevo nombre a la directiva y seleccione **Guardar**.
 
 Para editar una directiva:

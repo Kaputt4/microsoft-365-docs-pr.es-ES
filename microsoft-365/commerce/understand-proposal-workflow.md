@@ -8,9 +8,10 @@ manager: scotv
 ms.reviewer: presharm, jmueller
 audience: Admin
 ms.topic: conceptual
-ms.service: o365-administration
+ms.service: microsoft-365-business
 ms.localizationpriority: medium
 ms.collection:
+- scotvorg
 - M365-subscription-management
 - Adm_O365
 ms.custom:
@@ -20,12 +21,12 @@ search.appverid: MET150
 description: Obtenga información sobre las propuestas que le ayudarán a comprar productos y servicios de Microsoft.
 ROBOTS: NOINDEX
 ms.date: 07/11/2022
-ms.openlocfilehash: e6e24d56346f67c40f114cf7ab23345d4511b026
-ms.sourcegitcommit: 9fdb5c5b9eaf0c8a8d62b579a5fb5a5dc2d29fa9
+ms.openlocfilehash: b1b8efb8f4d07cac1071fe3f280af59b242eb0c7
+ms.sourcegitcommit: 0b7070ec119e00e0dafe030bbfbef0ae5c9afa19
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/11/2022
-ms.locfileid: "66714079"
+ms.lasthandoff: 09/29/2022
+ms.locfileid: "68206089"
 ---
 # <a name="understand-the-microsoft-proposal-workflow"></a>Descripción del flujo de trabajo de propuestas de Microsoft
 
@@ -135,7 +136,7 @@ La propuesta contiene la siguiente información:
 |---|---|
 | Nombre de la organización | Nombre de la organización para la que se preparó la propuesta. |
 | Válido hasta la fecha | Fecha en la que expira la oferta de propuesta. Si se pierde esta fecha de expiración, póngase en contacto con su representante de Microsoft para informarle de que todavía le interesa la propuesta. |
-| Moneda | Moneda utilizada para calcular el costo de los artículos de la propuesta. |
+| Divisa | Moneda utilizada para calcular el costo de los artículos de la propuesta. |
 | Preparado para | El nombre de la cuenta de facturación, la dirección, la dirección de correo electrónico de contacto y el número de teléfono de la persona que solicitó la propuesta. |
 | Preparado por | Dirección de correo electrónico del representante de Microsoft que preparó la propuesta. |
 | Resumen | Muestra el subtotal asociado a la propuesta. Si es necesario, también mostrará la tasa de divisas (FX) que se usa para calcular los costos. |

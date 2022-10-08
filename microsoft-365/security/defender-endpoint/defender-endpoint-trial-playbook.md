@@ -8,17 +8,20 @@ manager: dansimp
 audience: ITPro
 ms.topic: how-to
 ms.date: 07/07/2022
+ms.collection:
+- m365-security
+- tier2
 ms.service: microsoft-365-security
 ms.subservice: mde
 ms.localizationpriority: medium
 ms.reviewer: ''
 f1.keywords: NOCSH
-ms.openlocfilehash: 280541647409916f45208b8ddfbb98c03f91383c
-ms.sourcegitcommit: 10e6abe740e27000e223378eb17d657a47555fa8
+ms.openlocfilehash: 2432a7aea0f9c2d2431d1fc189fcd9393d689b27
+ms.sourcegitcommit: 0b7070ec119e00e0dafe030bbfbef0ae5c9afa19
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/31/2022
-ms.locfileid: "67476866"
+ms.lasthandoff: 09/29/2022
+ms.locfileid: "68205451"
 ---
 # <a name="trial-playbook-microsoft-defender-for-endpoint"></a>Cuaderno de estrategias de prueba: Microsoft Defender para punto de conexión
 
@@ -84,6 +87,9 @@ Defender for Endpoint admite dos maneras de administrar permisos:
 
 - Administración básica de permisos: establezca los permisos en acceso completo o de solo lectura. Los usuarios con roles de administrador global o administrador de seguridad en Azure Active Directory tienen acceso completo. El rol Lector de seguridad tiene acceso de solo lectura y no concede acceso para ver el inventario de máquinas o dispositivos.
 - Control de acceso basado en rol (RBAC): establezca permisos granulares mediante la definición de roles, la asignación de grupos de usuarios de Azure AD a los roles y la concesión de acceso a los grupos de usuarios a los grupos de dispositivos. Para obtener más información, consulte [Administración del acceso al portal mediante el control de acceso basado en rol](rbac.md).
+
+    > [!NOTE]
+    > La creación de grupos de dispositivos se admite en El plan 1 y el plan 2 de Defender para punto de conexión.
 
 ## <a name="step-3-visit-the-microsoft-365-defender-portal"></a>Paso 3: Visitar el portal de Microsoft 365 Defender
 

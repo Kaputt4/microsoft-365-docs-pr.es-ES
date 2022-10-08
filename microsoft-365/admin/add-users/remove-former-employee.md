@@ -7,9 +7,10 @@ author: kwekua
 manager: scotv
 audience: Admin
 ms.topic: article
-ms.service: o365-administration
+ms.service: microsoft-365-business
 ms.localizationpriority: medium
 ms.collection:
+- scotvorg
 - M365-subscription-management
 - Adm_O365
 - Adm_TOC
@@ -28,12 +29,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Bloquee el acceso a Microsoft 365 para que un antiguo empleado no pueda iniciar sesión, proteger los datos de la organización y permitir que otros empleados accedan a su correo electrónico y a los datos de OneDrive.
-ms.openlocfilehash: 163cb427ce66f9c1f583681895f18fc67d0745dc
-ms.sourcegitcommit: ecc04b5b8f84b34255a2d5e90b5ab596af0d16c7
+ms.openlocfilehash: 6d30438f156a888f43fbf51b13f797450bd4097c
+ms.sourcegitcommit: 0b7070ec119e00e0dafe030bbfbef0ae5c9afa19
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/01/2022
-ms.locfileid: "67496601"
+ms.lasthandoff: 09/29/2022
+ms.locfileid: "68205209"
 ---
 # <a name="overview-remove-a-former-employee-and-secure-data"></a>Información general: Eliminación de un empleado anterior y protección de datos
 
@@ -75,9 +76,9 @@ Para completar los pasos de esta serie, use estas funcionalidades y característ
 |[Paso 1: Impedir que un antiguo empleado inicie sesión y bloquee el acceso a los servicios de Microsoft 365](remove-former-employee-step-1.md)|Esto impide que el antiguo empleado inicie sesión en Microsoft 365 e impide que la persona acceda a los servicios de Microsoft 365.|
 |[Paso 2: Guardar el contenido del buzón de un empleado anterior](remove-former-employee-step-2.md)|Esto es útil para la persona que va a asumir el trabajo del empleado, o si hay litigios.|
 |[Paso 3: Borrar y bloquear el dispositivo móvil de un antiguo empleado](remove-former-employee-step-3.md)|Quita los datos profesionales del teléfono o de la tableta.|
-|[Paso 4: Reenviar el correo electrónico de un antiguo empleado a otro empleado o convertirlo en un buzón compartido](remove-former-employee-step-4.md)|Esta opción permite mantener activa la dirección de correo electrónico de su antiguo empleado. Si tiene clientes o socios que siguen enviando correos electrónicos a la dirección del antiguo empleado, con esta opción el correo llegará a la persona que ahora se encarga del trabajo.|
+|[Paso 4: Reenviar el correo electrónico de un antiguo empleado a otro empleado o convertirlo en un buzón compartido](remove-former-employee-step-4.md)|This lets you keep the former employee's email address active. If you have customers or partners still sending email to the former employee's address, this gets them to the person taking over the work.|
 |[Paso 5: Dar a otro empleado acceso a los datos de OneDrive y Outlook](remove-former-employee-step-5.md)|Si solo quita la licencia de un usuario, pero no elimina la cuenta, podrá obtener acceso al contenido de OneDrive del usuario incluso hasta 30 días después. <p> Antes de eliminar la cuenta, debe conceder acceso de OneDrive y Outlook a otro usuario. Después de eliminar la cuenta de un empleado, el contenido de Su OneDrive y Outlook se conserva durante **30** días. Sin embargo, durante esos 30 días, puede restaurar la cuenta del usuario y obtener acceso a su contenido. Si restaura la cuenta del usuario, el contenido de OneDrive y Outlook seguirá siendo accesible incluso después de 30 días.| 
-|[Paso 6: Eliminación y eliminación de la licencia de Microsoft 365 de un empleado anterior](remove-former-employee-step-6.md)|Cuando quita una licencia, puede asignarla a otra persona. O bien, puede eliminar la licencia para no pagar por ella hasta que contrate a otra persona.  <p> Al quitar o eliminar una licencia, el correo electrónico, los contactos y el calendario antiguos del usuario se conservan durante **30 días** y, después, se eliminan permanentemente. Si quita o elimina una licencia, pero no elimina la cuenta, podrá obtener acceso al contenido de OneDrive del usuario incluso hasta 30 días después.  |
+|[Paso 6: Eliminación y eliminación de la licencia de Microsoft 365 de un empleado anterior](remove-former-employee-step-6.md)|When you remove a license, you can assign it to someone else. Or, you can delete the license so you don't pay for it until you hire another person. <p> When you remove or delete a license, the user's old email, contacts, and calendar are retained for **30 days**, then permanently deleted. If you remove or delete a license but don't delete the account, the content in the user's OneDrive will remain accessible to you even after 30 days.|
 |[Paso 7: Eliminación de la cuenta de usuario de un antiguo empleado](remove-former-employee-step-7.md)|Esto quita la cuenta del centro de administración. Mantiene todo organizado.|
 
 ## <a name="watch-delete-a-user"></a>Inspección: Eliminación de un usuario

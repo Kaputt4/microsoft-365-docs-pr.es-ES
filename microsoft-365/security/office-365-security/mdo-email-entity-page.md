@@ -12,17 +12,17 @@ ms.service: microsoft-365-security
 ms.subservice: mdo
 ms.localizationpriority: medium
 ms.collection:
-- M365-security-compliance
+- m365-security
 - m365initiative-defender-office365
 ms.custom: ''
 description: Microsoft Defender para Office 365 clientes de E5 y P1 y P2 ahora pueden obtener una vista de 360 grados de cada correo electrónico con la página de entidad de correo electrónico.
 search.appverid: met150
-ms.openlocfilehash: eed9d53a290d4c8b22de533d6d66edd011806861
-ms.sourcegitcommit: b1ed6470645455c2f1fcf467450debc622c40147
+ms.openlocfilehash: 1ba5117de0b87d4d151733c7869110d3b93b3a43
+ms.sourcegitcommit: 12af9e8e3a6eaa090fda9e98ccb831dff65863a4
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/15/2022
-ms.locfileid: "67711585"
+ms.lasthandoff: 09/27/2022
+ms.locfileid: "68082689"
 ---
 # <a name="the-email-entity-page"></a>Página de la entidad de correo electrónico
 

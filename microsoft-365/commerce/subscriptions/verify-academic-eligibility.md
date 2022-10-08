@@ -9,9 +9,10 @@ manager: scotv
 ms.reviewer: pablom, pablom
 audience: Admin
 ms.topic: article
-ms.service: o365-administration
+ms.service: microsoft-365-business
 ms.localizationpriority: medium
 ms.collection:
+- scotvorg
 - M365-subscription-management
 - Adm_O365
 ms.custom:
@@ -21,29 +22,29 @@ ms.custom:
 search.appverid: MET150
 description: Obtenga información sobre cómo comprobar la elegibilidad de su escuela para Microsoft 365 Educación precios académicos.
 ms.date: 07/21/2020
-ms.openlocfilehash: 9cbcd9790d521f1d94c2324b2e73d5ecedbaa12e
-ms.sourcegitcommit: 1c5f9d17a8b095cd88b23f4874539adc3ae021de
+ms.openlocfilehash: 56bd38bb0a9dc37ee2a98264a9e5e2d8218e1531
+ms.sourcegitcommit: 0b7070ec119e00e0dafe030bbfbef0ae5c9afa19
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/08/2022
-ms.locfileid: "64713809"
+ms.lasthandoff: 09/29/2022
+ms.locfileid: "68206111"
 ---
 # <a name="verify-academic-eligibility-for-microsoft-365-education-subscriptions"></a>Comprobación de la idoneidad académica para suscripciones de Microsoft 365 Educación
 
-Si forma parte de una institución académica, puede registrarse para obtener una evaluación gratuita de Microsoft 365 Educación. Una vez que Microsoft compruebe la idoneidad académica de su escuela, puede comprar Microsoft 365 productos a precios académicos. Esto incluye productos que están disponibles de forma gratuita, como Office 365 A1 para profesores y Office 365 A1 para los estudiantes. Tiene hasta el final de la evaluación gratuita para convertirla en una suscripción de pago a precios académicos.
+Si forma parte de una institución académica, puede registrarse para obtener una evaluación gratuita de Microsoft 365 Educación. Una vez que Microsoft compruebe la idoneidad académica de su escuela, puede comprar productos de Microsoft 365 a precios académicos. Esto incluye productos que están disponibles de forma gratuita, como Office 365 A1 para profesores y Office 365 A1 para los estudiantes. Tiene hasta el final de la evaluación gratuita para convertirla en una suscripción de pago a precios académicos.
 
 En este artículo se describe cómo comprobar la elegibilidad académica de su escuela, comprobar el estado de elegibilidad y comprar suscripciones a precios académicos después de que se apruebe la escuela.
 
 ## <a name="before-you-begin"></a>Antes de empezar
 
-Ya debe tener una suscripción de prueba de Microsoft 365 Educación. Si no tiene una suscripción de prueba, [visite esta página web](https://www.microsoft.com/microsoft-365/academic/compare-office-365-education-plans?activetab=tab%3aprimaryr1) y seleccione **Comenzar de forma gratuita**.
+Ya debe tener una suscripción de prueba de Microsoft 365 Educación. Si no tiene una suscripción de prueba, [visite esta página web](https://www.microsoft.com/microsoft-365/academic/compare-office-365-education-plans?activetab=tab%3aprimaryr1) y seleccione **Introducción gratuita**.
 
 ## <a name="verify-that-you-have-a-trial-subscription"></a>Comprobación de que tiene una suscripción de prueba
 
 Si no está seguro de si tiene una suscripción de prueba Microsoft 365 Educación, siga estos pasos para comprobar que lo hace.
 
 1. En el Centro de administración de Microsoft 365, vaya a la página **Facturación** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">Sus productos</a>.
-2. Busque **Office 365 A1 para la evaluación de profesores** y **Office 365 A1 para la evaluación de los alumnos**. Si no encuentra estas suscripciones, [visite esta página web](https://www.microsoft.com/microsoft-365/academic/compare-office-365-education-plans?activetab=tab%3aprimaryr1) y seleccione **Comenzar de forma gratuita**.
+2. Busque **Office 365 A1 para la evaluación de profesores** y **Office 365 A1 para la evaluación de los alumnos**. Si no encuentra estas suscripciones, [visite esta página web](https://www.microsoft.com/microsoft-365/academic/compare-office-365-education-plans?activetab=tab%3aprimaryr1) y seleccione **Introducción gratuita**.
 
 ## <a name="verify-your-schools-academic-eligibility"></a>Comprobación de la elegibilidad académica de la escuela
 
@@ -65,7 +66,7 @@ Después de tener una evaluación de Microsoft 365 Educación, puede comprobar e
     La tarjeta **facturación** indica el estado del proceso de verificación. La tarjeta muestra uno de los siguientes estados: aprobado, pendiente, rechazado o agregado el dominio.
 
     > [!NOTE]
-    > Si no ve uno de esos estados, significa que no tiene una suscripción de prueba de Microsoft 365 Educación. Para iniciar una evaluación gratuita, [visite esta página web](https://www.microsoft.com/microsoft-365/academic/compare-office-365-education-plans?activetab=tab%3aprimaryr1) y seleccione **Comenzar de forma gratuita**.
+    > Si no ve uno de esos estados, significa que no tiene una suscripción de prueba de Microsoft 365 Educación. Para iniciar una evaluación gratuita, [visite esta página web](https://www.microsoft.com/microsoft-365/academic/compare-office-365-education-plans?activetab=tab%3aprimaryr1) y seleccione **Empezar de forma gratuita**.
 
 ## <a name="buy-subscriptions-at-academic-prices"></a>Comprar suscripciones a precios académicos
 

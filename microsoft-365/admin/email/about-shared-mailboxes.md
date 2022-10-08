@@ -7,9 +7,10 @@ author: SKjerland
 manager: scotv
 audience: Admin
 ms.topic: article
-ms.service: o365-administration
+ms.service: microsoft-365-business
 ms.localizationpriority: medium
 ms.collection:
+- scotvorg
 - M365-subscription-management
 - Adm_O365
 - Adm_TOC
@@ -23,12 +24,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Los buzones compartidos se usan cuando varias personas necesitan acceder al mismo buzón. Obtenga información sobre lo que debe saber antes de crear un buzón compartido.
-ms.openlocfilehash: 3db111179b0a85a0836ae429785233089d78bec1
-ms.sourcegitcommit: 7374c7b013890744d74e5214f7f8d69ca7874466
+ms.openlocfilehash: d7d4bf06fa9e91bca7a3847a9db99aee0a6ca97f
+ms.sourcegitcommit: 0b7070ec119e00e0dafe030bbfbef0ae5c9afa19
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/23/2022
-ms.locfileid: "67408007"
+ms.lasthandoff: 09/29/2022
+ms.locfileid: "68204967"
 ---
 # <a name="about-shared-mailboxes"></a>Acerca de los buzones compartidos
 
@@ -42,9 +43,9 @@ Antes de [crear un buzón compartido](create-a-shared-mailbox.md), estas son alg
 
 - **Licencias:** El buzón compartido puede almacenar hasta 50 GB de datos sin que usted tenga que asignarle una licencia. Una vez superado ese límite, necesitará asignar una licencia al buzón para poder almacenar más datos. Para obtener más información sobre las licencias de los buzones compartidos, consulte [Límites de Exchange Online](/office365/servicedescriptions/exchange-online-service-description/exchange-online-limits#StorageLimits). Cuando un buzón compartido alcanza el límite de almacenamiento, podrá recibir correo electrónico durante un tiempo, pero no podrá enviarlo. Después, dejará de recibir correo electrónico. Los remitentes del buzón recibirán un aviso de no entrega.
 
-- **Permisos de usuario:** Debe dar a los usuarios permisos (suscripciones) para usar el buzón compartido. Solo las personas de su organización pueden usar los buzones de correo compartidos.
+- **User permissions:** You need to give users permissions (membership) to use the shared mailbox. Only people inside your organization can use a shared mailbox.
 
-- **Usuarios externos:** No puede proporcionar acceso a su buzón compartido a usuarios ajenos a su negocio (como gente con una cuenta de Gmail). Si quiere hacerlo, le recomendamos que cree un grupo para Outlook. Para obtener más información, consulte [Crear un grupo de Microsoft 365 en el centro de administración](../create-groups/create-groups.md)
+- **External users:** You can't give people outside your business (such as people with a Gmail account) access to your shared mailbox. If you want to do this, consider creating a group for Outlook instead. To learn more, see [Create a Microsoft 365 group in the admin center](../create-groups/create-groups.md).
 
 - **Usar con Outlook:** Además de usar Outlook en la Web desde el explorador para acceder a los buzones compartidos, también puede usar la aplicación Outlook para iOS o la aplicación Outlook para Android. Para obtener más información, consulte [Agregar un buzón compartido para Outlook Móvil](https://support.microsoft.com/office/f866242c-81b2-472e-8776-6c49c5473c9f). Otra opción es crear un grupo para el buzón compartido. Para obtener más información, vea [Comparar Grupos](../create-groups/compare-groups.md).
 

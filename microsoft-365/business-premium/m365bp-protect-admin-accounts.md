@@ -14,22 +14,24 @@ ms.localizationpriority: high
 ms.collection:
 - M365-Campaigns
 - m365solution-smb
+- highpri
+- tier1
 ms.custom:
 - MiniMaven
 search.appverid:
 - BCS160
 - MET150
 description: Obtenga información sobre cómo configurar y proteger las cuentas de administrador en Microsoft 365 Empresa Premium.
-ms.openlocfilehash: c713cde9953995bd1176f42858bb5ad7c1b955a2
-ms.sourcegitcommit: c29af68260ba8676083674b3c70209bff2c2e362
+ms.openlocfilehash: c1d7358fd0c117b20b35870b2a04cfd03885bf7a
+ms.sourcegitcommit: 0283c436f3ba61a708b52b57a1955f5ea74376a3
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/16/2022
-ms.locfileid: "67742857"
+ms.lasthandoff: 09/28/2022
+ms.locfileid: "68097059"
 ---
 # <a name="protect-your-administrator-accounts-in-microsoft-365-business-premium"></a>Proteger las cuentas de administrador en Microsoft 365 Empresa Premium
 
-Dado que las cuentas de administrador incluyen privilegios elevados, son un objetivo de valor para hackers y ciberdelincuentes. En este artículo se describe:
+Because admin accounts come with elevated privileges, they're valuable targets for hackers and cyber criminals. This article describes:
 
 - [ Cómo configurar otra cuenta de administrador para emergencias](#create-other-admin-accounts).
 - [Crear una cuenta de administrador de emergencia](#create-an-emergency-admin-account).

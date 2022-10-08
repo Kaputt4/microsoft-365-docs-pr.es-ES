@@ -8,17 +8,17 @@ ms.topic: how-to
 ms.service: microsoft-365-security
 ms.localizationpriority: medium
 ms.collection:
-- M365-security-compliance
+- m365-security
 - m365initiative-defender-office365
 description: Los administradores pueden aprender a crear y administrar páginas de inicio de sesión para ataques de suplantación de identidad simulados en Microsoft Defender para Office 365 Plan 2.
 ms.subservice: mdo
 search.appverid: met150
-ms.openlocfilehash: 34c662665fcd70bf6314fcd6832643693358b26a
-ms.sourcegitcommit: 9b133379196da2b3a4bb311b07ff274f43780f68
+ms.openlocfilehash: 315c33a58ffad266ae75e5ae8ccabb013255bdea
+ms.sourcegitcommit: 12af9e8e3a6eaa090fda9e98ccb831dff65863a4
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/14/2022
-ms.locfileid: "67690901"
+ms.lasthandoff: 09/27/2022
+ms.locfileid: "68082879"
 ---
 # <a name="login-pages-in-attack-simulation-training"></a>Páginas de inicio de sesión en el aprendizaje de simulación de ataques
 

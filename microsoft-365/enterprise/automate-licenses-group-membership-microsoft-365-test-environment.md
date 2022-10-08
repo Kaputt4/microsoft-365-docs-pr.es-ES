@@ -10,17 +10,19 @@ audience: ITPro
 ms.topic: article
 ms.service: microsoft-365-enterprise
 ms.localizationpriority: medium
-ms.collection: M365-identity-device-management
+ms.collection:
+- scotvorg
+- M365-identity-device-management
 ms.custom:
 - TLG
 - Ent_TLGs
 description: Configure las licencias basadas en grupos y la pertenencia dinámica a grupos en el entorno de prueba de Microsoft 365 para empresas.
-ms.openlocfilehash: ba980e0fe6553993cf701bab4d4fb2e4f9826da4
-ms.sourcegitcommit: 62368e5a48e569c8e475b07d194d7d8ff7d167ab
+ms.openlocfilehash: 66d82b1436662253c742c6e2aebcb5c16fbbed88
+ms.sourcegitcommit: 0b7070ec119e00e0dafe030bbfbef0ae5c9afa19
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/02/2022
-ms.locfileid: "67560139"
+ms.lasthandoff: 09/29/2022
+ms.locfileid: "68197159"
 ---
 # <a name="automate-licensing-and-group-membership-for-your-microsoft-365-for-enterprise-test-environment"></a>Automatización de licencias y pertenencia a grupos para el entorno de prueba de Microsoft 365 para empresas
 
@@ -63,7 +65,7 @@ En primer lugar, cree un nuevo grupo denominado Ventas y agregue una regla de pe
    - Seleccione la propiedad **department** .
    - Seleccione el operador **Equals** .
    - En el cuadro **Valor** , escriba **Ventas**.
-10. Haga clic en **Guardar**.
+10. Seleccione **Guardar**.
 11. Seleccione **Crear**.
 
 A continuación, configure el grupo Ventas para que a los miembros se les asigne automáticamente la licencia de Microsoft 365 E5.

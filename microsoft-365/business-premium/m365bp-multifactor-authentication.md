@@ -14,6 +14,8 @@ ms.localizationpriority: high
 ms.collection:
 - M365-Campaigns
 - m365solution-smb
+- highpri
+- tier1
 ms.custom:
 - MiniMaven
 search.appverid:
@@ -21,12 +23,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Configure la autenticación multifactor para teléfonos en Microsoft Empresa Premium. Aumente la seguridad mediante las características de MFA de Microsoft Empresa Premium para su teléfono.
-ms.openlocfilehash: 63894dd5a62a1ee23e9f690f32761cfecdb23008
-ms.sourcegitcommit: c29af68260ba8676083674b3c70209bff2c2e362
+ms.openlocfilehash: 455a1d673ca53ccf9bcfa18dd6223795358360a2
+ms.sourcegitcommit: 0283c436f3ba61a708b52b57a1955f5ea74376a3
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/16/2022
-ms.locfileid: "67741596"
+ms.lasthandoff: 09/28/2022
+ms.locfileid: "68097125"
 ---
 # <a name="set-up-mfa"></a>Configurar MFA
 

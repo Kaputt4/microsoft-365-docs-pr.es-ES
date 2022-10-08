@@ -11,18 +11,18 @@ ms.localizationpriority: medium
 search.appverid:
 - MET150
 ms.collection:
-- M365-security-compliance
+- m365-security
 - m365initiative-defender-office365
 ms.custom: seo-marvel-apr2020
 description: Los administradores pueden aprender a usar el portal envíos en el portal de Microsoft 365 Defender para enviar correo electrónico legítimo bloqueado, correo electrónico sospechoso, sospecha de correo electrónico de phishing, correo no deseado, otros mensajes potencialmente dañinos, direcciones URL y datos adjuntos de correo electrónico a Microsoft para volver a examinar.
 ms.subservice: mdo
 ms.service: microsoft-365-security
-ms.openlocfilehash: 834f77a5c3631d7c61f287affb0347e293935d2d
-ms.sourcegitcommit: 95ac076310ab9006ed92c69938f7ae771cd10826
+ms.openlocfilehash: a9b8c64e989c14d0e5bfd9c3b8ca03dbcd93ae20
+ms.sourcegitcommit: 12af9e8e3a6eaa090fda9e98ccb831dff65863a4
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/20/2022
-ms.locfileid: "67851752"
+ms.lasthandoff: 09/27/2022
+ms.locfileid: "68072797"
 ---
 # <a name="use-the-submissions-portal-to-submit-suspected-spam-phish-urls-legitimate-email-getting-blocked-and-email-attachments-to-microsoft"></a>Use el portal envíos para enviar sospechas de correo no deseado, mensajes no deseados, direcciones URL, bloqueo de correo electrónico legítimo y datos adjuntos de correo electrónico a Microsoft.
 

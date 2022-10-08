@@ -19,15 +19,16 @@ search.appverid:
 - BCS160
 ms.assetid: e241e5d9-b1d8-4f1d-a5c8-4106b7325f8c
 ms.collection:
+- scotvorg
 - M365-security-compliance
 - Ent_O365
 description: Este artículo puede ayudarle a solucionar Office 365 problemas de rendimiento e incluso corregir algunos de los problemas más comunes.
-ms.openlocfilehash: f60f9964753e7974121d1a7b3951352fedd2bf5f
-ms.sourcegitcommit: 437461fa1d38ff9bb95dd8a1c5f0b94e8111ada2
+ms.openlocfilehash: fff11d47f2eb1085e7cc93e749234868567738be
+ms.sourcegitcommit: 0b7070ec119e00e0dafe030bbfbef0ae5c9afa19
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/14/2022
-ms.locfileid: "67672829"
+ms.lasthandoff: 09/29/2022
+ms.locfileid: "68205957"
 ---
 # <a name="performance-troubleshooting-plan-for-office-365"></a>Plan de solución de problemas de rendimiento para Office 365
 

@@ -7,9 +7,10 @@ author: kwekua
 manager: scotv
 audience: Admin
 ms.topic: article
-ms.service: o365-administration
+ms.service: microsoft-365-business
 ms.localizationpriority: medium
 ms.collection:
+- scotvorg
 - M365-subscription-management
 - Adm_O365
 - Adm_TOC
@@ -19,12 +20,12 @@ ms.custom:
 search.appverid:
 - MET150
 description: Inicie sesión en Microsoft 365 y configure Basic Mobility and Security para usar la administración integrada de dispositivos móviles para proteger y administrar los dispositivos móviles de los usuarios.
-ms.openlocfilehash: b84c97302743177f0a69978ebf358c0fbd1045a8
-ms.sourcegitcommit: 1fa0b15f86470c49dddf0d6de59d553a38ae259b
+ms.openlocfilehash: d9021534e6d4290fcfdfe6d387fc932898027124
+ms.sourcegitcommit: 0b7070ec119e00e0dafe030bbfbef0ae5c9afa19
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "65863574"
+ms.lasthandoff: 09/29/2022
+ms.locfileid: "68204989"
 ---
 # <a name="manage-devices-enrolled-in-mobile-device-management-in-microsoft-365"></a>Administración de dispositivos inscritos en Mobile Administración de dispositivos en Microsoft 365
 
@@ -44,7 +45,7 @@ Para acceder al panel de administración de dispositivos, siga estos pasos:
 
 Después de configurar Basic Mobility and Security, estas son algunas maneras de administrar los dispositivos móviles de la organización.
 
-|Para|Haga esto…|
+|Para|Haga esto|
 |---|---|
 |Eliminar los datos de un dispositivo|En el panel Administración de dispositivos, seleccione *nombre del dispositivo* y, a continuación, **Borrado completo** para eliminar toda la información o **Borrado selectivo** para eliminar solo la información de la organización en el dispositivo. Para obtener más información, consulta [Borrar un dispositivo móvil en Basic Mobility and Security](wipe-mobile-device.md).|
 |Bloquear el acceso de dispositivos no compatibles al correo electrónico de Exchange con Exchange ActiveSync|En el panel Administración de dispositivos, seleccione **Bloquear**.|

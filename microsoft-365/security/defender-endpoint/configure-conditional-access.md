@@ -11,16 +11,18 @@ author: mjcaparas
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
-ms.collection: M365-security-compliance
+ms.collection:
+- m365-security
+- tier2
 ms.topic: article
 ms.subservice: mde
 search.appverid: met150
-ms.openlocfilehash: 5cf63f594d8e1d4b165ea435547d95786a12a0f4
-ms.sourcegitcommit: 9b133379196da2b3a4bb311b07ff274f43780f68
+ms.openlocfilehash: f22af8b0835ff0b93297484f695f51925e07ff55
+ms.sourcegitcommit: 0b7070ec119e00e0dafe030bbfbef0ae5c9afa19
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/14/2022
-ms.locfileid: "67703004"
+ms.lasthandoff: 09/29/2022
+ms.locfileid: "68205693"
 ---
 # <a name="configure-conditional-access-in-microsoft-defender-for-endpoint"></a>Configuración del acceso condicional en Microsoft Defender para punto de conexión
 
@@ -75,8 +77,8 @@ Siga estos pasos para habilitar el acceso condicional:
 ### <a name="step-2-turn-on-the-defender-for-endpoint-integration-in-intune"></a>Paso 2: Activar la integración de Defender para punto de conexión en Intune
 
 1. Inicie sesión en el [portal de Azure](https://portal.azure.com).
-2. Seleccione **Cumplimiento de dispositivos** \> **ATP de Microsoft Defender**.
-3. Establezca **Conectar dispositivos Windows 10.0.15063+ en Protección contra amenazas avanzada de Microsoft Defender** **en Activado**.
+2. Seleccione **Cumplimiento de dispositivos** \> **Microsoft Defender ATP**.
+3. Establezca **Conectar dispositivos Windows 10.0.15063+ en Microsoft Defender Advanced Threat Protection** **en Activado**.
 4. Haga clic en **Guardar**.
 
 ### <a name="step-3-create-the-compliance-policy-in-intune"></a>Paso 3: Crear la directiva de cumplimiento en Intune
