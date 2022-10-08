@@ -7,9 +7,10 @@ author: kwekua
 manager: scotv
 audience: Admin
 ms.topic: article
-ms.service: o365-administration
+ms.service: microsoft-365-business
 ms.localizationpriority: high
 ms.collection:
+- scotvorg
 - M365-subscription-management
 - Adm_O365
 - Adm_TOC
@@ -23,12 +24,12 @@ search.appverid:
 - MOE150
 ms.assetid: 613a845c-4b71-41de-b331-acdcf5b6625d
 description: Si es el responsable de configurar las opciones de correo electrónico para todos los usuarios de una empresa, en este artículo se explica cómo configurar Bandeja de entrada Prioritarios para los usuarios.
-ms.openlocfilehash: 9c3b17c632c2316f3c36a4f79362895d790b1c7b
-ms.sourcegitcommit: 133bf9097785309da45df6f374a712a48b33f8e9
-ms.translationtype: HT
+ms.openlocfilehash: fd2a8e82297eb7b3298688e72a0f01f7c0b98fc6
+ms.sourcegitcommit: 0b7070ec119e00e0dafe030bbfbef0ae5c9afa19
+ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/10/2022
-ms.locfileid: "66010220"
+ms.lasthandoff: 09/29/2022
+ms.locfileid: "68169109"
 ---
 # <a name="configure-focused-inbox-for-everyone-in-your-organization"></a>Configurar la Bandeja de entrada Prioritarios para todos los usuarios de la organización
 
@@ -36,7 +37,7 @@ Si es el responsable de configurar el modo en que el correo electrónico trabaja
 
 Si quiere desactivar la Bandeja de entrada Prioritarios solo para usted, vea [Desactivar la Bandeja de entrada Prioritarios](https://support.microsoft.com/office/f714d94d-9e63-4217-9ccb-6cb2986aa1b2).  
 
-Si quiere asegurarse de que los usuarios reciben mensajes de correo electrónico específicos de un aspecto de la empresa como, por ejemplo, los recursos humanos o las nóminas, puede configurar la Bandeja de entrada Prioritarios para que estos mensajes se muestren en la vista Prioritarios. También puede controlar si los usuarios de su organización pueden ver la Bandeja de entrada Prioritarios en su buzón.
+If you want to be sure that your users receive business-specific email messages, for example, from HR or payroll, you can configure Focused Inbox so these messages reach the Focused view. You can also control whether users in your organization see the Focused Inbox in their mailbox.
   
 ## <a name="turn-focused-inbox-on-or-off-in-your-organization"></a>Activar o desactivar la Bandeja de entrada Prioritarios en su organización
 
@@ -44,11 +45,11 @@ Use PowerShell para activar o desactivar la Bandeja de entrada Prioritarios para
   
 **Para desactivar la Bandeja de entrada Prioritarios:**
   
-En el siguiente ejemplo de PowerShell se **desactiva** la Bandeja de entrada Prioritarios de la organización. Sin embargo, no se bloquea la disponibilidad de la característica para los usuarios. Si quieren, pueden volver a habilitar la Bandeja de entrada Prioritarios en cada uno de sus clientes.  
+The following PowerShell example turns Focused Inbox **Off** in your organization. However, it doesn't block the availability of the feature for your users. If they want, they can still re-enable Focused Inbox again on each of their clients. 
   
 1. [Conéctese al PowerShell de Exchange Online](/powershell/exchange/connect-to-exchange-online-powershell).
 
-2. Debe tener permisos asignados para poder realizar estos procedimientos. Para ver qué permisos necesita, consulte la entrada "Reglas de transporte" de [Permisos de directivas de mensajería y conformidad](/exchange/messaging-policy-and-compliance-permissions-exchange-2013-help).
+2. You need to be assigned permissions before you can perform this procedure or procedures. To see what permissions you need, see the "Transport rules" entry in [Messaging policy and compliance permissions](/exchange/messaging-policy-and-compliance-permissions-exchange-2013-help).
 
 3. Ejecute el cmdlet **Get-OrganizationConfig**. 
 
@@ -78,23 +79,23 @@ En el siguiente ejemplo de PowerShell se **desactiva** la Bandeja de entrada Pri
     
 ## <a name="what-do-users-see-after-i-turn-on-focused-inbox"></a>¿Qué ven los usuarios después de que se active la Bandeja de entrada Prioritarios? 
 
-Los usuarios verán la vista Prioritarios solo tras cerrar y reiniciar Outlook. Cuando reinicien Outlook, verán una sugerencia en la interfaz de usuario de Outlook, en la que se les dará la opción de usar la nueva Bandeja de entrada Prioritarios. 
+Your users will see the Focused view only after they close and restart Outlook. When they restart Outlook, they'll see a Tip in the Outlook user interface giving them to the option to use the new Focused Inbox.
   
 ![Imagen del aspecto de la Bandeja de entrada Prioritarios cuando un usuario abre por primera vez Outlook en la web.](../../media/f6ef79e7-0f4c-4a23-b6f0-7c15d927b5f0.png)
   
-Si va a cambiar de Otros correos a Bandeja de entrada Prioritarios, los usuarios podrán decidir si habilitan (en "Probar") o si descartan la característica. Si el usuario tiene varios clientes (compatibles), puede habilitar o deshabilitar la Bandeja de entrada Prioritarios de forma individual para cada uno de ellos. La sugerencia tiene un aspecto similar a este:
+If you're switching from Clutter to Focused Inbox, they can decide to enable it ("Try it") or dismiss the feature. If the user has multiple (supported) clients, they can enable/disable Focused Inbox individually on each one. The tip looks like this:
   
 ![Se vuelve a abrir una imagen del aspecto de la Bandeja de entrada Prioritarios cuando se implementa para los usuarios y Outlook.](../../media/c034f969-d650-4333-88f1-dd10ade0a94c.png)
   
-Cuando un usuario decide empezar a usar la Bandeja de entrada Prioritarios, Otros correos se deshabilita automáticamente. La carpeta Otros correos se convierte en una carpeta estándar que el usuario puede renombrar o eliminar.
+When a user decides to start using Focused Inbox, Clutter gets disabled automatically. The Clutter folder gets converted into a standard folder, that allows the user to rename or delete it.
   
 ## <a name="turn-focused-inbox-on-or-off-for-specific-users"></a>Activar o desactivar la Bandeja de entrada Prioritarios para usuarios específicos
 
-En este ejemplo **se desactiva** la bandeja de entrada Prioritarios para Tim Runtimes en la organización Contoso. Sin embargo, no bloquea la disponibilidad de la característica para él. Si lo desea, todavía puede volver a habilitar la Bandeja de entrada Prioritarios en cada uno de sus clientes. 
+This example turns Focused Inbox **Off** for Tim Matthews in the Contoso organization. However, it doesn't block the availability of the feature to him. If he wants, he can still re-enable Focused Inbox again on each of his clients. 
   
 1. [Conéctese al PowerShell de Exchange Online](/powershell/exchange/connect-to-exchange-online-powershell).
 
-2. Debe tener permisos asignados antes de poder realizar estos procedimientos. Para ver qué permisos necesita, consulte la entrada "Reglas de transporte" del tema Permisos de directivas de mensajería y conformidad.
+2. You need to be assigned permissions before you can perform this procedure or procedures. To see what permissions you need, see the "Transport rules" entry in the Messaging policy and compliance permissions topic.
 
 3. Ejecute el cmdlet **Get-FocusedInbox**, por ejemplo: 
 
@@ -122,7 +123,7 @@ En este ejemplo **se desactiva** la bandeja de entrada Prioritarios para Tim Run
 
 1. Vaya al <a href="https://go.microsoft.com/fwlink/p/?linkid=2059104" target="_blank">Centro de administración de Exchange</a>.
 
-2. Vaya a **flujo de correo**\>**reglas**. Seleccione ![icono Agregar EAC.](../../media/795e5bdd-48bb-433f-8e07-3c7a19f8eca2.gif) y, a continuación, seleccione **Crear una nueva regla...**. 
+2. Navigate to **mail flow** \> **Rules**. Select ![EAC Add icon.](../../media/795e5bdd-48bb-433f-8e07-3c7a19f8eca2.gif) and then select **Create a new rule...**. 
 
 3. Cuando termine de crear la regla, seleccione **Guardar** para iniciarla.
 
@@ -137,7 +138,7 @@ En este ejemplo **se desactiva** la bandeja de entrada Prioritarios para Tim Run
 
 1. [Conéctese al PowerShell de Exchange Online](/powershell/exchange/connect-to-exchange-online-powershell).
 
-2. Debe tener permisos asignados para poder realizar estos procedimientos. Para ver qué permisos necesita, consulte la entrada "Reglas de transporte" de [Permisos de directivas de mensajería y conformidad](/exchange/messaging-policy-and-compliance-permissions-exchange-2013-help).
+2. You need to be assigned permissions before you can perform this procedure or procedures. To see what permissions you need, see the "Transport rules" entry in [Messaging policy and compliance permissions](/exchange/messaging-policy-and-compliance-permissions-exchange-2013-help).
 
 3. Ejecute el comando siguiente para permitir que todos los mensajes del "Departamento de nóminas", por ejemplo, se entreguen en la Bandeja de entrada Prioritarios.
 
@@ -159,7 +160,7 @@ Si se aplica una regla de transporte, se mostrará una notificación para la inv
 
 ## <a name="turn-onoff-clutter"></a>Desactivar o activar Otros correos
 
-Hemos recibido informes en los que se indica que Otros correos dejó de funcionar para algunos usuarios. Si esto ocurre, puede volver a habilitar la carpeta para usuarios específicos. Vea [Configurar Otros correos para su organización](../email/configure-clutter.md).
+We've received reports that Clutter suddenly stopped working for some users. If this happens, you can enable it again for specific users. See [Configure Clutter for your organization](../email/configure-clutter.md).
 
 ## <a name="faq-for-focused-inbox"></a>Preguntas más frecuentes sobre la Bandeja de entrada Prioritarios
 
@@ -167,11 +168,11 @@ Aquí encontrará respuestas a las preguntas más frecuentes sobre la Bandeja de
 
 ### <a name="can-i-control-how-i-roll-out-focused-inbox-in-my-organization"></a>¿Puedo controlar la implementación de la Bandeja de entrada Prioritarios en mi organización?
 
-Sí. Puede activar o desactivar la Bandeja de entrada Prioritarios para toda la organización. También puede activarla o desactivarla para usuarios específicos. Vea la información que aparece más arriba.
+Yes. You can turn Focused Inbox on or off for your entire organization, or you can turn it on or off for specified users. See above.
   
 ### <a name="is-the-focused-inbox-feature-only-available-for-office-2016-clients"></a>¿La característica Bandeja de entrada Prioritarios solo está disponible para los clientes de Office 2016?
 
-Sí, esto afecta solo los usuarios de Office 2016. Esta característica no se incorporará a Outlook 2013 ni a las versiones anteriores.
+Yes, only users with Office 2016 are affected. The feature is not going to be backported to Outlook 2013 or earlier.
   
 ### <a name="how-long-does-it-take-for-focused-inbox-changes-to-take-place-in-outlook"></a>¿Cuánto tiempo tardan los cambios de la Bandeja de entrada Prioritarios en aplicarse en Outlook?
 
@@ -179,17 +180,17 @@ Cuando haya activado o desactivado la Bandeja de entrada Prioritarios, la config
   
 ### <a name="what-happens-to-clutter-once-i-turn-on-focused-inbox"></a>¿Qué pasa con Otros correos cuando activo la Bandeja de entrada Prioritarios?
 
-Después de cambiar, ya no recibirá el correo electrónico que requiere menos acciones en la carpeta Otros correos. En su lugar, el correo electrónico se dividirá entre las pestañas Prioritarios y Otros de la bandeja de entrada. La Bandeja de entrada Prioritarios usa el mismo algoritmo que movía elementos a la carpeta Otros correos, por lo que los mensajes que antes se movían a Otros correos se moverán ahora a Otros. Los mensajes que ya están en la carpeta Otros correos permanecerán en ella hasta que decida moverlos o eliminarlos.
+After switching, you'll no longer receive less actionable email in the Clutter folder. Instead, email will be split between the Focused and Other tabs in your inbox. The same algorithm that moved items to the Clutter folder now powers Focused Inbox, meaning that any emails that were set to move to Clutter will now be moved to Other. Any messages already in your Clutter folder will remain there until you decide to delete or move them.
   
 Lea esta publicación de [Tony Redmond](https://www.petri.com/author/tony-redmond), MVP (Most Valuable Professional) de Microsoft: [La Bandeja de entrada Prioritarios sustituye a Otros correos en Office 365](https://www.petri.com/focused-inbox-office-365).
   
-### <a name="can-i-keep-users-on-clutter-what-is-microsofts-recommendation-when-it-comes-to-using-clutter-vs-focused-inbox"></a>¿Puedo mantener a los usuarios en Otros correos? ¿Qué recomienda Microsoft: Otros correos o la Bandeja de entrada Prioritarios?
+### <a name="can-i-keep-users-on-clutter-what-is-microsofts-recommendation-when-it-comes-to-using-clutter-vs-focused-inbox"></a>Can I keep users on Clutter? What is Microsoft's recommendation when it comes to using Clutter vs Focused Inbox?
 
-Sí, puede mantener a los usuarios en Otros correos y deshabilitar la Bandeja de entrada Prioritarios. Sin embargo, la Bandeja de entrada Prioritarios sustituirá a Otros correos tarde o temprano, por lo que Microsoft recomienda cambiar a la Bandeja de entrada Prioritarios. Para obtener más información sobre cuándo usar Otros correos con Exchange Online, consulte la entrada de blog: [Actualización de la Bandeja de entrada Prioritarios y planes para Otros correos](https://techcommunity.microsoft.com/t5/Outlook-Blog/Update-on-Focused-Inbox-and-our-plans-for-Clutter/ba-p/136448).
+Yes, you can keep users on Clutter and disable Focused Inbox, however, eventually Clutter will be fully replaced with Focused Inbox so Microsoft's recommends moving to Focused Inbox now. To learn more about when you use Clutter with Exchange Online, see this blog post: [Update on Focused Inbox and our plans for Clutter](https://techcommunity.microsoft.com/t5/Outlook-Blog/Update-on-Focused-Inbox-and-our-plans-for-Clutter/ba-p/136448).
   
 ### <a name="should-i-disable-clutter-for-my-end-users-if-we-are-going-to-move-everyone-to-focused-inbox"></a>¿Si quiero cambiar toda la organización a la Bandeja de entrada Prioritarios, tendré que deshabilitar Otros correos para mis usuarios finales?
 
-No. Puede deshabilitar Otros correos para un buzón específico ejecutando el cmdlet Set-Clutter. Sin embargo, si lo hace, el propietario del buzón verá que los mensajes previamente redirigidos a la carpeta Otros correos se quedan en la bandeja de entrada, y deberá procesarlos hasta que se actualice su cliente a una versión compatible con la Bandeja de entrada Prioritarios. Por tanto, es mejor no deshabilitar Otros correos hasta que los clientes actualizados están disponibles.
+No. It's possible to disable Clutter for a mailbox explicitly by running the Set-Clutter cmdlet. However, if you do this, the mailbox owner will see messages that were previously redirected to the Clutter folder remain in the Inbox and they'll have to process those messages until their client is upgraded to a version that supports the Focused Inbox. It's therefore best not to disable Clutter until the upgraded clients are available.
   
 ### <a name="why-are-there-two-different-cmdlets-for-managing-focused-inbox"></a>¿Por qué hay dos cmdlets diferentes para administrar la Bandeja de entrada Prioritarios?
 
@@ -201,15 +202,15 @@ Hay dos estados asociados a la Bandeja de entrada Prioritarios.
 
 ### <a name="how-does-outlook-decide-to-show-the-focused-inbox-experience-with-these-two-states"></a>¿Cómo decide Outlook el estado con el que mostrar la experiencia de la Bandeja de entrada Prioritarios?
 
-Outlook decide mostrar la experiencia seleccionando el cmdlet con la marca de tiempo más reciente. De forma predeterminada, ambas marcas de tiempo son "null" y, en ese caso, la característica está inhabilitada.
+Outlook decides to show the experience by choosing which cmdlet has the latest time stamp. By default, both time stamps are "null" and in this case, the feature is enabled.
   
 ### <a name="why-does-the-get-focusedinbox-cmdlet-return-true-when-ive-turned-focused-inbox-off-in-my-organization"></a>¿Por qué el cmdlet Get-FocusedInbox devuelve “true” si he desactivado la Bandeja de entrada Prioritarios en la organización?
 
-Existen dos cmdlets para controlar la Bandeja de entrada Prioritarios. Al ejecutar el cmdlet Get-FocusedInbox para un buzón, devuelve el estado de nivel de buzón de la característica. La experiencia de Outlook se elige según el estado de cmdlet que se modificó por última vez.
+There are two cmdlets for controlling Focused Inbox. When you run Get-FocusedInbox for a mailbox, it returns the mailbox level state of the feature. The experience in Outlook is chosen based on which cmdlet state was last modified.
   
 ### <a name="can-i-run-a-script-to-see-who-has-turned-on-focused-inbox"></a>¿Puedo ejecutar un script para ver quién tiene activada la Bandeja de entrada Prioritarios?
 
-No, y no se puede cambiar. La habilitación de la Bandeja de entrada Prioritarios es una configuración del cliente, por lo que los cmdlets solo pueden decirle si el buzón del usuario puede activar o no la experiencia del cliente. Es posible que esté habilitada en algunos clientes y en otros deshabilitada, por ejemplo, habilitada en la aplicación Outlook y Outlook Mobile, pero deshabilitada en Outlook en la Web.
+No, and this is by design. Focused Inbox enablement is a client-side setting, so all the cmdlet can do is tell you if the user's mailbox is eligible for the client experience. It is possible for it to be simultaneously enabled in some clients and disabled in others, for example, enabled in Outlook app and Outlook Mobile but disabled in Outlook on the web.
 
 ## <a name="related-content"></a>Contenido relacionado
 

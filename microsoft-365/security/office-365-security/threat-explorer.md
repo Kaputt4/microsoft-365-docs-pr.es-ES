@@ -13,19 +13,19 @@ search.appverid:
 - MOE150
 ms.assetid: 82ac9922-939c-41be-9c8a-7c75b0a4e27d
 ms.collection:
-- M365-security-compliance
+- m365-security
 - m365initiative-defender-office365
 description: Use el Explorador y las detecciones en tiempo real en el portal de Microsoft 365 Defender para investigar y responder a las amenazas de forma eficaz.
 ms.custom:
 - seo-marvel-apr2020
 ms.subservice: mdo
 ms.service: microsoft-365-security
-ms.openlocfilehash: 7710b2eb156845ccc0e79550a76a9b61ac90327f
-ms.sourcegitcommit: 2b89bcff547e00be3d38dc8d1e6cbcf8f41eba42
+ms.openlocfilehash: a8f0c4267c915930da60887540b1d58aaa65b4bb
+ms.sourcegitcommit: 99b174a8d431092b3cf7d650593248671297fd91
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/03/2022
-ms.locfileid: "67597269"
+ms.lasthandoff: 09/30/2022
+ms.locfileid: "68298043"
 ---
 # <a name="threat-explorer-and-real-time-detections"></a>Explorador de amenazas y detecciones en tiempo real
 
@@ -35,7 +35,7 @@ ms.locfileid: "67597269"
 - [Plan 1 y Plan 2 de Microsoft Defender para Office 365](defender-for-office-365.md)
 - [Microsoft 365 Defender](../defender/microsoft-365-defender.md)
 
-Si su organización tiene [Microsoft Defender para Office 365](defender-for-office-365.md) y tiene los [permisos necesarios](#required-licenses-and-permissions), tiene detecciones de **Explorador** o **en tiempo real** (anteriormente *informes en tiempo real*, [consulte las novedades](#new-features-in-threat-explorer-and-real-time-detections)). En el Centro de cumplimiento de seguridad &, vaya a **Administración de amenazas** y elija **Explorador** _o_ **Detecciones en tiempo real**.
+Si su organización tiene [Microsoft Defender para Office 365](defender-for-office-365.md) y tiene los [permisos necesarios](#required-licenses-and-permissions), tiene detecciones de **Explorador** o **en tiempo real** (anteriormente *informes en tiempo real*, [consulte las novedades](#new-features-in-threat-explorer-and-real-time-detections)). Vaya a **Administración de amenazas** y elija **Explorador** _o_ **Detecciones en tiempo real**.
 
 |Con Microsoft Defender para Office 365 plan 2, verá lo siguiente:|Con Microsoft Defender para Office 365 plan 1, verá lo siguiente:|
 |---|---|
@@ -43,7 +43,7 @@ Si su organización tiene [Microsoft Defender para Office 365](defender-for-offi
 
 Las detecciones en tiempo real o explorador ayudan al equipo de operaciones de seguridad a investigar y responder a las amenazas de forma eficaz. El informe es similar a la siguiente imagen:
 
-:::image type="content" source="../../media/cab32fa2-66f1-4ad5-bc1d-2bac4dbeb48c.png" alt-text="Elemento de menú Explorador en el portal de cumplimiento de seguridad &" lightbox="../../media/cab32fa2-66f1-4ad5-bc1d-2bac4dbeb48c.png":::
+:::image type="content" source="../../media/cab32fa2-66f1-4ad5-bc1d-2bac4dbeb48c.png" alt-text="Captura de pantalla que muestra el elemento de menú Explorador." lightbox="../../media/cab32fa2-66f1-4ad5-bc1d-2bac4dbeb48c.png":::
 
 Con este informe, puede:
 
@@ -58,8 +58,6 @@ Con este informe, puede:
 
 Hoy en día, si navega desde una alerta al Explorador de amenazas, se abre una vista filtrada en el Explorador, con la vista filtrada por identificador de directiva de alerta (el identificador de directiva es un identificador único para una directiva de alerta).
 Estamos haciendo que esta integración sea más relevante mediante la introducción del identificador de alerta (consulte un ejemplo de identificador de alerta a continuación) en el Explorador de amenazas y detecciones en tiempo real para que vea los mensajes que son relevantes para la alerta específica, así como un recuento de correos electrónicos. También podrá ver si un mensaje formaba parte de una alerta, así como navegar desde ese mensaje a la alerta específica.
-
-El identificador de alerta está disponible en la dirección URL cuando se ve una alerta individual; un ejemplo es `https://protection.office.com/viewalerts?id=372c9b5b-a6c3-5847-fa00-08d8abb04ef1`.
 
 > [!div class="mx-imgBorder"]
 > :::image type="content" source="../../media/AlertID-Filter.png" alt-text="Filtrado del identificador de alerta" lightbox="../../media/AlertID-Filter.png":::
@@ -325,7 +323,7 @@ Para revisar los mensajes de phish y buscar usuarios o dominios suplantados, use
 
 En este ejemplo se usa el Explorador de amenazas.
 
-1. En el [Centro de cumplimiento de seguridad &](https://protection.office.com) (https://protection.office.com), elija Administración de amenazas > Explorer (o Detecciones en tiempo real).
+1. En el portal de Microsoft 365 Defender ([https://security.microsoft.com](https://security.microsoft.com)), elija **Explorador de administración** >  de amenazas (o **Detecciones en tiempo real**).
 
 2. En el menú Ver, elija Email > Phish.
 
@@ -419,7 +417,7 @@ Siga esta ruta de acceso para llegar a la misma ubicación en el informe Detecci
 
 Supongamos que desea ver el malware detectado en el correo electrónico ordenado por la tecnología de Microsoft 365. Para ello, use la vista [Email > Malware](threat-explorer-views.md#email--malware) del Explorador (o detecciones en tiempo real).
 
-1. En el Centro de cumplimiento de seguridad & (<https://protection.office.com>), elija **Explorador** **de administración** \> de amenazas (o **Detecciones en tiempo real**). (En este ejemplo se usa el Explorador).
+1. En el portal de Microsoft 365 Defender ([https://security.microsoft.com](https://security.microsoft.com)), elija **Explorador de administración** \> de amenazas (o **Detecciones en tiempo real**). (En este ejemplo se usa el Explorador).
 
 2. En el menú **Ver**, elija **Email** \> **Malware**.
 
@@ -446,7 +444,7 @@ Supongamos que desea ver los intentos de suplantación de identidad a través de
 
 Para revisar las direcciones URL de phish en los mensajes y hacer clic en las direcciones URL de los mensajes phish, use la vista [**Email** >  **Phish**](threat-explorer-views.md#email--phish) de las detecciones del Explorador o en tiempo real.
 
-1. En el Centro de cumplimiento de seguridad & (<https://protection.office.com>), elija **Explorador** **de administración** \> de amenazas (o **Detecciones en tiempo real**). (En este ejemplo se usa el Explorador).
+1. En el portal de Microsoft 365 Defender ([https://security.microsoft.com](https://security.microsoft.com)), elija **Explorador de administración** \> de amenazas (o **Detecciones en tiempo real**). (En este ejemplo se usa el Explorador).
 
 2. En el menú **Ver**, elija **Email** \> **Phish**.
 
@@ -493,7 +491,7 @@ Dentro de los controles flotantes Email o URL, los clics superiores, así como d
 
 Supongamos que desea ver mensajes de correo electrónico que los usuarios de su organización notificaron como *No deseado*, *No no deseado* o *Phishing* a través del [complemento Mensaje](enable-the-report-message-add-in.md) de informe o el [complemento De suplantación de identidad](enable-the-report-phish-add-in.md) de informe. Para verlos, use la vista [**Email** >  **Submissions**](threat-explorer-views.md#email--submissions) del Explorador (o detecciones en tiempo real).
 
-1. En el Centro de cumplimiento de seguridad & (<https://protection.office.com>), elija **Explorador** **de administración** \> de amenazas (o **Detecciones en tiempo real**). (En este ejemplo se usa el Explorador).
+1. En el portal de Microsoft 365 Defender ([https://security.microsoft.com](https://security.microsoft.com)), elija **Explorador de administración** \> de amenazas (o **Detecciones en tiempo real**). (En este ejemplo se usa el Explorador).
 
 2. En el menú **Ver**, elija **Email** \> **Envíos**.
 
@@ -536,7 +534,7 @@ Debe tener [Microsoft Defender para Office 365](defender-for-office-365.md) para
 
 Para ver y usar el Explorador o las detecciones en tiempo real, debe tener los permisos adecuados, como los concedidos a un administrador de seguridad o a un lector de seguridad.
 
-- Para el Centro de cumplimiento de seguridad &, debe tener asignado uno de los siguientes roles:
+- Para el portal de Microsoft 365 Defender, debe tener asignado uno de los siguientes roles:
 
   - Administración de la organización
   - Administrador de seguridad (esto se puede asignar en el Centro de administración de Azure Active Directory (<https://aad.portal.azure.com>)

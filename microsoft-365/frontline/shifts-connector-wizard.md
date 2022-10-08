@@ -13,31 +13,26 @@ ms.localizationpriority: high
 ms.collection:
 - M365-collaboration
 - m365-frontline
+- highpri
 appliesto:
 - Microsoft Teams
 - Microsoft 365 for frontline workers
-ms.openlocfilehash: 8c4aa1036af00eaaf7d776c267648141bf4db733
-ms.sourcegitcommit: 5e5c2c1f7c321b5eb1c5b932c03bdd510005de13
-ms.translationtype: HT
+ms.openlocfilehash: 6a1062fe9e06e0b73f2c8eebd8f17b87684c0709
+ms.sourcegitcommit: 99b174a8d431092b3cf7d650593248671297fd91
+ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/15/2022
-ms.locfileid: "66998603"
+ms.lasthandoff: 09/30/2022
+ms.locfileid: "68300458"
 ---
 # <a name="use-the-shifts-connector-wizard-to-connect-shifts-to-blue-yonder-workforce-management"></a>Use el asistente del conector Turnos para conectar Turnos a Blue Yonder Workforce Management
 
 ## <a name="overview"></a>Información general
 
-El asistente para conectores de Turnos de la Centro de administración de Microsoft 365 permite integrar la aplicación Turnos en Microsoft Teams con el sistema de administración del personal (WFM). Después de configurar una conexión, los trabajadores de primera línea pueden ver y administrar sin problemas sus programaciones en Blue Yonder WFM desde Turnos.
-
-El asistente configura el conector Shifts, crea una conexión con el sistema WFM y aplica la configuración de sincronización y las asignaciones de equipo que elija. La configuración de sincronización determina las características habilitadas en Turnos y la información de programación que se sincroniza entre Blue Yonder WFM y Turnos. Las asignaciones definen la relación de sincronización entre las instancias de Blue Yonder WFM y los equipos de Teams. Puede asignar a los equipos existentes y a los nuevos equipos.
-
-Puede configurar varias conexiones, cada una con una configuración de sincronización diferente. Por ejemplo, si su organización tiene varias ubicaciones con requisitos de programación diferentes, cree una conexión con una configuración de sincronización única para cada ubicación. Tenga en cuenta que una instancia de Blue Yonder WFM solo se puede asignar a un equipo en un momento dado. Si una instancia ya está asignada a un equipo, no se puede asignar a otro equipo.
-
-Con Blue Yonder WFM como sistema de registro, los trabajadores de primera línea pueden ver e intercambiar turnos, administrar su disponibilidad y solicitar permisos en turnos en sus dispositivos. Los administradores de primera línea pueden seguir usando Blue Yonder WFM para configurar programaciones.
+[!INCLUDE [shifts-connector-wizard-intro](includes/shifts-connector-wizard-intro.md)]
 
 ## <a name="integrate-shifts-with-blue-yonder-workforce-management"></a>Integración de turnos con Blue Yonder Workforce Management
 
-Actualmente, el asistente admite el [conector Turnos de Microsoft Teams para Blue Yonder](shifts-connectors.md#microsoft-teams-shifts-connector-for-blue-yonder). Este conector le permite integrar Shifts con Blue Yonder Workforce Management (Blue Yonder WFM) para administrar las programaciones y mantenerlas actualizadas. En este artículo, le guiaremos a través de cómo ejecutar el asistente para configurar una conexión a Blue Yonder WFM a través del conector.
+El [conector Shifts de Microsoft Teams para Blue Yonder](shifts-connectors.md#microsoft-teams-shifts-connector-for-blue-yonder) le permite integrar Shifts con Blue Yonder Workforce Management (Blue Yonder WFM) para administrar las programaciones y mantenerlas actualizadas. En este artículo, le guiaremos a través de cómo ejecutar el asistente para configurar una conexión a Blue Yonder WFM a través del conector.
 
 > [!NOTE]
 > También puede usar PowerShell para integrar Shifts con Blue Yonder WFM. Para obtener más información, consulte [Usar PowerShell para administrar la conexión de Turnos a Workforce Management de Blue Yonder](shifts-connector-blue-yonder-powershell-setup.md).
@@ -60,7 +55,7 @@ Debe ser administrador global de Microsoft 365 para ejecutar el asistente.
 
 Use PowerShell para quitar programaciones de los equipos.
 
-1. En primer lugar, tendrá que instalar los módulos de PowerShell y configurarse. Siga estos pasos para [configurar su entorno](shifts-connector-powershell-manage.md#set-up-your-environment):
+1. En primer lugar, tendrá que instalar los módulos de PowerShell y configurarse. Siga los pasos para [configurar el entorno](shifts-connector-powershell-manage.md#set-up-your-environment).
 1. Ejecute el comando siguiente:
 
     ```powershell
@@ -79,7 +74,7 @@ Para más información, vea [Remove-CsTeamsShiftsScheduleRecord](/powershell/mod
 1. Seleccione **Conectar el sistema de administración de la fuerza de trabajo**. Aquí puede obtener más información sobre los conectores Shifts y la experiencia de trabajo y administrador de primera línea al conectar turnos al sistema de WFM.
     :::image type="content" source="media/shifts-connector-wizard-get-started.png" alt-text="Captura de pantalla de la página de detalles del Asistente para conectores Shifts en el Centro de administración de Microsoft 365." lightbox="media/shifts-connector-wizard-get-started.png":::
 1. Cuando esté listo, seleccione **Comenzar**.
-1. Seleccione **Siguiente** para crear una conexión WFM Blue Yonder.
+1. En la página Elegir el conector, elija **Blue Yonder Workforce Management** y, a continuación, seleccione **Siguiente** para crear una conexión WFM Blue Yonder.
 
 ### <a name="enter-connection-details"></a>Escriba los detalles de la conexión.
 <a name="connection_details"> </a>
@@ -100,7 +95,8 @@ En la página Configuración de sincronización, elija la información que se va
 1. En **Notificaciones de correo electrónico de los destinatarios**, elija quién recibe notificaciones por correo electrónico sobre esta conexión. Puede agregar tanto usuarios individuales como grupos de seguridad a estos grupos. Las notificaciones por correo electrónico contienen información sobre el estado de la configuración de la conexión y cualquier problema o error que pueda producirse después de configurar la conexión.
 1. Elija la configuración de sincronización:
     1. En **Programación y turnos**, elija los datos de Blue Yonder WFM que los usuarios de Turnos pueden ver o cambiar y, a continuación, establezca la frecuencia de sincronización.
-    2. En **Solicitudes**, elija los tipos de solicitudes que los usuarios de Turnos pueden ver y crear.
+    1. En **Tarjeta de tiempo**, elija la acción que los usuarios pueden hacer con las entradas de tiempo.
+    1. En **Solicitudes**, elija los tipos de solicitudes que los usuarios de Turnos pueden ver y crear.
 
     > [!IMPORTANT]
     > Si eligió cualquiera de las siguientes opciones para deshabilitar los turnos abiertos, las solicitudes de turnos abiertos, las solicitudes de intercambio o las solicitudes de tiempo de expiración, hay otro paso que debe realizar para ocultar la funcionalidad en Turnos.
@@ -130,25 +126,7 @@ Seleccione las instancias que desea asignar.
 <a name="search_teams"> </a> A continuación, asigne cada instancia a un equipo de Teams. Puede asignar una instancia a un equipo existente o puede crear un nuevo equipo.
 :::image type="content" source="media/shifts-connector-wizard-search-team.png" alt-text="Captura de pantalla del panel en la que se muestra la opción de equipo de búsqueda y se crea una nueva opción de equipo." lightbox="media/shifts-connector-wizard-search-team.png":::
 
-##### <a name="to-map-an-instance-to-an-existing-team"></a>Para asignar una instancia a un equipo existente
-
-1. Seleccione el nombre de la instancia.
-2. En el panel, busque el equipo y selecciónelo. Tenga en cuenta que los equipos que ya están asignados a una instancia de esta conexión no aparecen en la búsqueda.
-3. Elija la zona horaria y la ciudad más cercana.
-4. Seleccione la opción **Guardar** y, a continuación, el botón **Siguiente**.
-
-##### <a name="to-map-an-instance-to-a-new-team"></a>Para asignar una instancia a un nuevo equipo
-
-1. Seleccione el nombre de la instancia.
-2. En el panel, elija **Crear un nuevo equipo**. Se le llevará a una nueva pestaña en el explorador, donde puede crear un nuevo equipo en el Centro de administración de Microsoft 365.
-    1. Escriba un nombre y una descripción opcional para la búsqueda.
-    1. Agregue uno o varios propietarios de equipo. Asegúrese de agregar la cuenta del sistema de Microsoft 365 como propietario.
-    1. Agregar miembros del equipo.
-    1. Agregue una dirección de correo electrónico del equipo y elija una configuración de privacidad.
-    1. Revise la configuración y, a continuación, elija **Agregar equipo**. Cuando se cree el equipo, elija **Cerrar**.
-3. Volver al asistente, busque y seleccione el nuevo equipo que creó.
-4. Elija la zona horaria y la ciudad más cercana.
-5. Seleccione la opción **Guardar** y, a continuación, el botón **Siguiente**.
+[!INCLUDE [shifts-connector-manually-map-instances](includes/shifts-connector-manually-map-instances.md)]
 
 #### <a name="use-a-csv-file-to-map-instances-to-teams"></a>Uso de un archivo CSV para asignar instancias a equipos
 
@@ -219,13 +197,22 @@ Para ocultar turnos abiertos, solicitudes de intercambio y solicitudes de tiempo
 
 Para ocultar las solicitudes de turnos abiertos en Turnos, vaya a **Configuración** en Turnos y, a continuación, desactive la opción **Abrir turnos**.
 
-## <a name="if-you-need-to-make-changes-to-a-connection"></a>Si necesita realizar cambios en una conexión
+## <a name="manage-your-connection"></a>Administrar la conexión
 <a name="update_connection"> </a>
 
-Una vez configurada una conexión, use PowerShell para realizar cambios en ella. Por ejemplo, puede actualizar la configuración de sincronización, las asignaciones de equipo y deshabilitar la sincronización para una conexión. Para obtener información paso a paso, consulte [Usar PowerShell para administrar la conexión de Turnos a Workforce Management de Blue Yonder](shifts-connector-powershell-manage.md).
+Una vez configurada una conexión, puede administrar y realizar cambios en ella en el Centro de administración de Microsoft 365 o mediante PowerShell.
+
+### <a name="use-the-microsoft-365-admin-center"></a>Use el Centro de administración de Microsoft 365
+
+La página Administración de conectores muestra cada conexión que ha configurado, junto con información como el estado de mantenimiento y los detalles del intervalo de sincronización. También puede acceder al asistente para realizar cambios en cualquiera de las conexiones. Por ejemplo, puede actualizar la configuración de sincronización y las asignaciones de equipo.
+
+Para más información, consulte [Uso de la Centro de administración de Microsoft 365 para administrar la conexión de Shifts a Blue Yonder Workforce Management](shifts-connector-blue-yonder-admin-center-manage.md).
+
+### <a name="use-powershell"></a>Usar PowerShell
+
+Puede usar PowerShell para ver un informe de errores, cambiar la configuración de conexión, deshabilitar la sincronización, etc. Para obtener información paso a paso, consulte [Usar PowerShell para administrar la conexión de Turnos a Workforce Management de Blue Yonder](shifts-connector-powershell-manage.md).
 
 ## <a name="related-articles"></a>Artículos relacionados
 
 - [Conectores de Turnos](shifts-connectors.md)
-- [Usar PowerShell para administrar la conexión de Turnos a Workforce Management de Blue Yonder](shifts-connector-powershell-manage.md)
 - [Administrar la aplicación Turnos para su organización en Teams](/microsoftteams/expand-teams-across-your-org/shifts/manage-the-shifts-app-for-your-organization-in-teams?bc=/microsoft-365/frontline/breadcrumb/toc.json&toc=/microsoft-365/frontline/toc.json)

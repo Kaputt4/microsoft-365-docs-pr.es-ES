@@ -16,19 +16,19 @@ ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection:
-- M365-security-compliance
-- m365initiative-m365-defender
+- m365-security
+- tier1
 ms.custom: admindeeplinkDEFENDER
 ms.topic: conceptual
 search.appverid:
 - MOE150
 - MET150
-ms.openlocfilehash: 9293cf55f769f86d16a8f63aaebee7d1a524c32c
-ms.sourcegitcommit: 078149c9645ce220911ccd6ce54f984a4c92ce53
+ms.openlocfilehash: d1c43e36c4f05bfd6d3324453e641a7120ac2771
+ms.sourcegitcommit: 12af9e8e3a6eaa090fda9e98ccb831dff65863a4
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/20/2022
-ms.locfileid: "67811556"
+ms.lasthandoff: 09/27/2022
+ms.locfileid: "68060920"
 ---
 # <a name="incident-response-with-microsoft-365-defender"></a>Respuesta a incidentes con Microsoft 365 Defender
 
@@ -196,7 +196,7 @@ Puede configurar Microsoft 365 Defender para notificar a su personal un correo e
  
 **Obtener más granularidad con orígenes de detección específicos**: solo puede obtener notificaciones para un origen de detección específico. 
 
-**Establecer la gravedad por detección o origen de servicio**: puede elegir obtener notificaciones por correo electrónico solo en gravedades específicas por origen. Por ejemplo, puede recibir notificaciones de alertas medias y altas para EDR y todas las gravedades de los expertos de Microsoft Defender.  
+**Establecer la gravedad por detección o origen de servicio**: puede elegir obtener notificaciones por correo electrónico solo en gravedades específicas por origen. Por ejemplo, puede recibir notificaciones de alertas medias y altas para EDR y todas las gravedades de Microsoft Defender Experts.  
 
 La notificación por correo electrónico contiene detalles importantes sobre el incidente, como el nombre del incidente, la gravedad y las categorías, entre otros. También puede ir directamente al incidente e iniciar el análisis de inmediato. Para obtener más información, consulte [Investigación de incidentes](investigate-incidents.md).
 

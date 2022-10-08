@@ -11,6 +11,7 @@ ms.localizationpriority: high
 search.appverid:
 - MET150
 ms.collection:
+- scotvorg
 - Ent_O365
 - Strat_O365_Enterprise
 ms.custom:
@@ -18,12 +19,12 @@ ms.custom:
 - admindeeplinkMAC
 ms.assetid: 706d5449-45e5-4b0c-a012-ab60501899ad
 description: Determinar dónde se almacenan los datos del cliente de Microsoft 365 en todo el mundo
-ms.openlocfilehash: 88cd23d805d52762ca0d3bb4e7e0ea8fa0c57022
-ms.sourcegitcommit: 437461fa1d38ff9bb95dd8a1c5f0b94e8111ada2
+ms.openlocfilehash: b16e3dd298b5106446d882b1d950b8aacd68d708
+ms.sourcegitcommit: 99b174a8d431092b3cf7d650593248671297fd91
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/14/2022
-ms.locfileid: "67671267"
+ms.lasthandoff: 09/30/2022
+ms.locfileid: "68298087"
 ---
 # <a name="where-your-microsoft-365-customer-data-is-stored"></a>¿Dónde se almacenan los datos de los clientes de Microsoft 365?
 
@@ -136,7 +137,7 @@ Microsoft no almacenará los datos del cliente de Intune en reposo fuera de la z
 - Es necesario que Microsoft proporcione asistencia al cliente, solucione problemas del servicio o cumpla los requisitos legales.
 - El cliente configura una cuenta para permitir dicho almacenamiento de datos de clientes, incluido el uso de los siguientes:
   - Características diseñadas para funcionar de forma global, como Content Delivery Network (CDN), que proporciona un servicio de almacenamiento en caché global y almacena datos de clientes en ubicaciones periféricas en todo el mundo.
-  - Azure Active Directory (Azure AD), que puede almacenar datos de directorios a nivel mundial. Esto no aplica a las implementaciones de Azure AD en Estados Unidos (donde los datos de Azure AD se almacenan únicamente en los Estados Unidos) o en Europa (donde los datos de Azure AD se almacenan en Europa o en Estados Unidos).
+  - Azure Active Directory (Azure AD), which may store directory data globally. This does not apply to Azure AD deployments in the United States (where Azure AD data is stored solely in the United States) or in Europe (where Azure AD data is stored in Europe or the United States).
   - Versión preliminar, beta u otros servicios preliminares, que, por lo general, almacenan datos de clientes en Estados Unidos, pero pueden almacenarlos de forma global.
 
 En cualquier caso, Microsoft no controla ni limita la geoárea desde la cual los clientes o usuarios finales pueden tener acceso a los datos de los clientes. Del mismo modo, cuando los datos del cliente de otros servicios se integren posteriormente en Intune, los datos del cliente de origen seguirán almacenados según los compromisos geográficos del otro servicio (si los hubiera); solo la copia de los datos del cliente integrada en Intune se almacenará en la configuración geográfica de Intune indicada.
@@ -580,7 +581,7 @@ Los nuevos espacios empresariales de Microsoft 365 se asocian de forma predeterm
 | Forms | Estados Unidos |
 | Viva Connections | Australia |
 | Temas Viva | Australia |
-| Viva Learning | Geografía global 2: Asia Pacífico |
+| Viva Learning | Australia |
 | Ideas Microsoft Viva: Personal | Australia |
 | Ideas Microsoft Viva: solo administrador/líder de datos de AAD de la organización | Geografía global 2: Asia Pacífico |
 | Ideas Microsoft Viva: solo administrador/líder con datos de recursos humanos de terceros | Estados Unidos |

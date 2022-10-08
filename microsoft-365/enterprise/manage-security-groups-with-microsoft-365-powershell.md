@@ -5,11 +5,13 @@ author: kelleyvice-msft
 manager: scotv
 audience: Admin
 ms.topic: article
-ms.service: o365-administration
+ms.service: microsoft-365-enterprise
 ms.localizationpriority: medium
 search.appverid:
 - MET150
-ms.collection: Ent_O365
+ms.collection:
+- scotvorg
+- Ent_O365
 f1.keywords:
 - CSH
 ms.custom:
@@ -17,16 +19,16 @@ ms.custom:
 - Ent_Office_Other
 - O365ITProTrain
 description: Obtenga información sobre cómo usar PowerShell para administrar grupos de seguridad.
-ms.openlocfilehash: c1ae74e60eb00e74efe5ad881e9ce3c0ebb3cf12
-ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
+ms.openlocfilehash: 18f2f7760b5b827f6c013ebe3ec23a7a636db68a
+ms.sourcegitcommit: 0b7070ec119e00e0dafe030bbfbef0ae5c9afa19
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "65099419"
+ms.lasthandoff: 09/29/2022
+ms.locfileid: "68194728"
 ---
 # <a name="manage-security-groups-with-powershell"></a>Administración de grupos de seguridad con PowerShell
 
-*Este artículo se aplica tanto a Microsoft 365 Enterprise como a Office 365 Enterprise.*
+*Este artículo afecta tanto a Office 365 Enterprise como a Microsoft 365 Enterprise*
 
 Puede usar PowerShell para Microsoft 365 como alternativa a la Centro de administración de Microsoft 365 para administrar grupos de seguridad. 
 
@@ -34,7 +36,7 @@ En este artículo se describe la descripción, creación, cambio de configuraci�
 
 Cuando un bloque de comandos de este artículo requiera que especifique valores de variable, siga estos pasos.
 
-1. Copie el bloque de comandos en el Portapapeles y péguelo en Bloc de notas o en el entorno de script integrado (ISE) de PowerShell.
+1. Copie el bloque de comandos en el Portapapeles y péguelo en el Bloc de notas o en el Entorno de script integrado (ISE) de PowerShell.
 2. Rellene los valores de variable y quite los caracteres "<" y ">".
 3. Ejecute los comandos en la ventana de PowerShell o el ISE de PowerShell.
 
@@ -42,7 +44,7 @@ Consulte [Mantener la pertenencia a grupos de seguridad](maintain-group-membersh
 
 ## <a name="use-the-azure-active-directory-powershell-for-graph-module"></a>Use el módulo de PowerShell Azure Active Directory para Graph
 
-En primer lugar, [conéctese al inquilino de Microsoft 365](connect-to-microsoft-365-powershell.md#connect-with-the-azure-active-directory-powershell-for-graph-module).
+En primer lugar, [conéctese a su inquilino de Microsoft 365](connect-to-microsoft-365-powershell.md#connect-with-the-azure-active-directory-powershell-for-graph-module).
 
 ### <a name="list-your-groups"></a>Enumerar los grupos
 
@@ -126,7 +128,7 @@ Remove-AzureADGroupOwner -ObjectId (Get-AzureADGroup | Where { $_.DisplayName -e
 
 ## <a name="use-the-microsoft-azure-active-directory-module-for-windows-powershell"></a>Use el Módulo Microsoft Azure Active Directory para Windows PowerShell
 
-En primer lugar, [conéctese al inquilino de Microsoft 365](connect-to-microsoft-365-powershell.md#connect-with-the-microsoft-azure-active-directory-module-for-windows-powershell).
+En primer lugar, [conéctese a su inquilino de Microsoft 365](connect-to-microsoft-365-powershell.md#connect-with-the-microsoft-azure-active-directory-module-for-windows-powershell).
 
 ### <a name="list-your-groups"></a>Enumerar los grupos
 

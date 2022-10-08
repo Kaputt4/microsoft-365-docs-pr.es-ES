@@ -5,9 +5,10 @@ author: kwekua
 manager: scotv
 audience: Admin
 ms.topic: article
-ms.service: o365-administration
+ms.service: microsoft-365-business
 ms.localizationpriority: medium
 ms.collection:
+- scotvorg
 - M365-subscription-management
 - Adm_O365
 - Adm_NonTOC
@@ -19,14 +20,14 @@ search.appverid:
 - GEA150
 ms.assetid: 1cbe2c00-ca65-4fb9-9663-1bbfa58ebe44
 description: Obtenga información sobre cómo obtener un informe de actividad de correo electrónico y comprender las tendencias de correo electrónico del usuario mediante el panel Informes de Microsoft 365 de la Centro de administración de Microsoft 365.
-ms.openlocfilehash: 2cbea5265976f46be41379843981afb5a5a057de
-ms.sourcegitcommit: 5014666778b2d48912c68c2e06992cdb43cfaee3
+ms.openlocfilehash: b443dc43449ec3de0db0fad135269a9d297c8554
+ms.sourcegitcommit: 0b7070ec119e00e0dafe030bbfbef0ae5c9afa19
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/07/2022
-ms.locfileid: "66662127"
+ms.lasthandoff: 09/29/2022
+ms.locfileid: "68195289"
 ---
-# <a name="microsoft-365-reports-in-the-admin-center---email-activity"></a>Informes de Microsoft 365 en el Centro de administración: actividad de correo electrónico
+# <a name="microsoft-365-reports-in-the-admin-center---email-activity"></a>Informes de Microsoft 365 en el Centro de administración: actividad de Email
 
 En el panel Informes de Microsoft 365 se muestra la información general sobre la actividad en los productos de su organización. Le permite explorar informes individuales de nivel de producto para proporcionarle información más pormenorizada sobre la actividad dentro de cada producto. Consulte [el tema de información general de los informes](activity-reports.md).
   
@@ -35,14 +36,14 @@ Por ejemplo, puede obtener una vista de alto nivel del tráfico de correo electr
 ## <a name="how-to-get-to-the-email-activity-report"></a>Obtener acceso al informe de actividad de correo electrónico
 
 1. En el centro de administración de, vaya a **Informes** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=2074756" target="_blank">página</a> uso.
-2. Seleccione **Ver más** en **Actividad de correo electrónico**. 
-3. En la lista desplegable **Actividad de correo electrónico**, seleccione **Actividad de correo electrónico** **de Exchange**\>.
+2. Seleccione **Ver más** en **Email actividad**. 
+3. En la lista desplegable **Email actividad**, seleccione **Exchange** \> **Email actividad**.
   
 ## <a name="interpret-the-email-activity-report"></a>Interpretar el informe de actividad de correo electrónico
 
 Puede obtener una vista de la actividad de correo electrónico de su usuario consultando los gráficos **Actividad** y **Usuarios**. 
   
-![Informe de actividad de correo electrónico.](../../media/5eb1d9e9-8106-4843-acb7-c0238c0da816.png)
+![Email informe de actividad.](../../media/5eb1d9e9-8106-4843-acb7-c0238c0da816.png)
 
 El informe **Actividad de correo electrónico** se puede visualizar para las tendencias de los últimos 7 días, 30 días, 90 días o 180 días. Sin embargo, si selecciona un día determinado en el informe, la tabla mostrará los datos durante un máximo de 28 días a partir de la fecha actual (no la fecha en que se generó el informe). Los datos de cada informe suelen cubrir hasta las últimas 24 a 48 horas.
 
@@ -61,7 +62,7 @@ Puede filtrar la serie que ve en el gráfico seleccionando un elemento de la ley
  En la tabla se muestra un desglose de las actividades de correo electrónico en el nivel de usuario. Se muestran todos los usuarios que tienen asignado un producto de Exchange y sus actividades de correo electrónico.
 
   
-|Item|Descripción|
+|Elemento|Descripción|
 |:-----|:-----|
 |Nombre de usuario  |La dirección de correo electrónico del usuario. |
 |Nombre para mostrar |Nombre completo del usuario. |
@@ -80,9 +81,9 @@ Si las directivas de la organización le impiden ver los informes en los que la 
 
 Seleccione **Elegir columnas** para agregar o quitar columnas del informe.  
 
-![Informe de actividad de correo electrónico: elija columnas.](../../media/80ffa0ad-61c5-4a6f-8a1d-5f6730ff7da9.png)
+![Email informe de actividad: elija columnas.](../../media/80ffa0ad-61c5-4a6f-8a1d-5f6730ff7da9.png)
 
 También puede exportar los datos del informe a un archivo .csv de Excel; para ello, seleccione el vínculo **Exportar** . Se exportarán los datos de todos los usuarios y podrá efectuar una ordenación y un filtrado sencillos para un análisis más detallado. 
    
 > [!NOTE]
-> El informe de actividad de correo electrónico solo está disponible para los buzones que están asociados a usuarios que tienen licencias.
+> El informe de actividad de Email solo está disponible para los buzones asociados a usuarios que tienen licencias.

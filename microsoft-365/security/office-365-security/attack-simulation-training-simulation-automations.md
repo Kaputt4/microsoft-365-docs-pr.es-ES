@@ -8,16 +8,17 @@ ms.topic: how-to
 ms.service: microsoft-365-security
 ms.localizationpriority: medium
 ms.collection:
-- M365-security-compliance
+- m365-security
 - m365initiative-defender-office365
 description: Los administradores pueden aprender a crear simulaciones automatizadas que contienen técnicas y cargas específicas que se inician cuando se cumplen las condiciones especificadas en Microsoft Defender para Office 365 plan 2.
 ms.subservice: mdo
-ms.openlocfilehash: 0099373996cee691eacab8b6469d368d711128eb
-ms.sourcegitcommit: 10e6abe740e27000e223378eb17d657a47555fa8
+search.appverid: met150
+ms.openlocfilehash: 0fb6e45150d04e8a376964584506fc4ac876bd08
+ms.sourcegitcommit: 12af9e8e3a6eaa090fda9e98ccb831dff65863a4
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/31/2022
-ms.locfileid: "67476152"
+ms.lasthandoff: 09/27/2022
+ms.locfileid: "68060634"
 ---
 # <a name="simulation-automations-for-attack-simulation-training"></a>Automatizaciones de simulación para Entrenamiento de simulación de ataque
 
@@ -89,7 +90,7 @@ Si selecciona **Seleccionar manualmente**, debe seleccionar una o varias cargas 
 - **Técnica**: debe seleccionar al menos una carga por técnica que seleccionó en la página anterior.
 - **Idioma**: Los valores disponibles son: **inglés**, **español**, **alemán**, **japonés**, **francés**, **portugués**, **holandés**, **italiano**, **sueco**, **chino (simplificado),** **noruego Bokmål**, **polaco**, **ruso**, **finés**, **coreano**, **turco**, **húngaro**, **hebreo**, **tailandés**, **árabe**, **vietnamita**, **eslovaco**, **griego**, **indonesio**, **rumano**, **esloveno**, **croata**, **catalán** u **otro**.
 - **Tasa de clics**: cuántas personas han hecho clic en esta carga.
-- **Tasa de riesgo prevista**: datos históricos de la carga útil en Microsoft 365 que predice el porcentaje de personas que se verán comprometidas por esta carga.
+- **Tasa de riesgo prevista**: datos históricos en Microsoft 365 que predice el porcentaje de personas que se verán comprometidas por esta carga (usuarios en peligro o número total de usuarios que reciben la carga).
 - **Las simulaciones iniciadas** cuentan el número de veces que se usó esta carga en otras simulaciones.
 
 En el ![icono Buscar.](../../media/m365-cc-sc-search-icon.png) **Cuadro de búsqueda** , puede escribir parte del nombre de carga útil y presionar Entrar para filtrar los resultados.

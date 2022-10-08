@@ -13,15 +13,16 @@ ms.localizationpriority: high
 ms.collection:
 - M365-collaboration
 - m365-frontline
+- highpri
 appliesto:
 - Microsoft Teams
 - Microsoft 365 for frontline workers
-ms.openlocfilehash: 1064401dee3a25a7d1749db6e4a36a110f21da0b
-ms.sourcegitcommit: 5e5c2c1f7c321b5eb1c5b932c03bdd510005de13
-ms.translationtype: HT
+ms.openlocfilehash: 19161f8b797f73ec2e724e19bd0a1aefd127fb8f
+ms.sourcegitcommit: 99b174a8d431092b3cf7d650593248671297fd91
+ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/15/2022
-ms.locfileid: "66998609"
+ms.lasthandoff: 09/30/2022
+ms.locfileid: "68300418"
 ---
 # <a name="use-powershell-to-manage-your-shifts-connection-to-blue-yonder-workforce-management"></a>Usar PowerShell para administrar la conexión de Turnos a Workforce Management de Blue Yonder
 
@@ -40,8 +41,10 @@ En este artículo, se describe cómo hacer lo siguiente:
 - [Desajustar un equipo de una conexión y asignarlo a otra conexión](#unmap-a-team-from-one-connection-and-map-it-to-another-connection)
 - [Deshabilitar la sincronización para una conexión](#disable-sync-for-a-connection)
 
+En este artículo se supone que ya ha configurado una conexión a Blue Yonder WFM, ya sea mediante el asistente o PowerShell.
+
 > [!NOTE]
-> En este artículo se supone que ya ha configurado una conexión a Blue Yonder WFM, ya sea mediante el asistente o PowerShell.
+> También puede administrar la conexión en el Centro de administración de Microsoft 365. Por ejemplo, puede comprobar el estado de mantenimiento y acceder al asistente para cambiar la configuración de conexión. Para más información, consulte [Uso de la Centro de administración de Microsoft 365 para administrar la conexión de Shifts a Blue Yonder Workforce Management](shifts-connector-blue-yonder-admin-center-manage.md).
 
 ## <a name="before-you-begin"></a>Antes de empezar
 
@@ -63,46 +66,23 @@ En este artículo, se describe cómo hacer lo siguiente:
     Cuando se le solicite, inicie sesión con sus credenciales de administrador. Ahora está configurado para ejecutar los scripts de este artículo y los cmdlets del conector Turnos.
 
 ## <a name="check-connection-setup-status"></a>Comprobar el estado de la configuración de la conexión
-
 <a name="setup_status"> </a>
 
-Para comprobar el estado de la conexión que configuró mediante el identificador de operación que recibió en el correo electrónico:
-
-1. [Configure el entorno](#set-up-your-environment) (si aún no lo ha hecho).
-1. Ejecuta el siguiente comando. Este comando proporciona el estado general de las asignaciones de equipo para la conexión.
-
-    ``` powershell
-    Get-CsTeamsShiftsConnectionOperation -OperationId <YourOperationId>
-    ```
-
-Para obtener más información, consulte [Get-CsTeamsShiftsConnectionOperation](/powershell/module/teams/get-csteamsshiftsconnectionoperation).
+[!INCLUDE [shifts-connector-check-setup-status](includes/shifts-connector-check-setup-status.md)]
 
 ## <a name="view-an-error-report-for-a-connection"></a>Visualizar un informe de errores para una conexión
-
 <a name="error_report"> </a>
 
-Puede ejecutar un informe que muestre los detalles del error de una conexión. En el informe se enumeran las asignaciones de usuario y de equipo que se realizaron correctamente y con errores. También proporciona información sobre los problemas relacionados con las cuentas asociadas a la conexión.
+[!INCLUDE [shifts-connector-view-error-report](includes/shifts-connector-view-error-report.md)]
 
-1. [Configure el entorno](#set-up-your-environment) (si aún no lo ha hecho).
-1. Obtener una lista de informes de errores para una conexión.
-
-    ``` powershell
-    Get-CsTeamsShiftsConnectionErrorReport -ConnectorInstanceId <ConnectorInstanceId>
-    ```
-
-1. Para ver un informe de errores específico, ejecute el siguiente comando:
-
-    ``` powershell
-    Get-CsTeamsShiftsConnectionErrorReport -ErrorReportId <ErrorReportId>
-    ```
-
-Para obtener más información vea [Permisos](/powershell/module/teams/get-csteamsshiftsconnectionerrorreport).
+> [!NOTE]
+> Para obtener una lista completa de mensajes de error, consulte [Lista de mensajes de error](#list-of-error-messages) más adelante en este artículo.
 
 ## <a name="resolve-connection-errors"></a>Resolver errores de conexión
 
 ### <a name="user-mapping-errors"></a>Errores de asignación de usuarios
 
-Pueden producirse errores de asignación de usuarios si uno o varios usuarios de una instancia de Blue Yonder WFM no son miembros del equipo asignado en Teams. Para resolver este problema, asegúrese de que los usuarios del equipo asignado coincidan con los usuarios de la instancia de Blue Yonder WFM.
+Pueden producirse errores de asignación de usuarios si uno o varios usuarios de una instancia de WFM no son miembros del equipo asignado en Teams. Para resolver este problema, asegúrese de que los usuarios del equipo asignado coincidan con los usuarios de la instancia de WFM.
 
 Para ver los detalles de los usuarios sin asignar, [configure el entorno](#set-up-your-environment) (si aún no lo ha hecho) y, a continuación, ejecute el siguiente script.
 
@@ -114,7 +94,7 @@ Start-Sleep 1
 #Ensure Teams module is of version x
 Write-Host "Checking Teams module version"
 try {
-    Get-InstalledModule -Name "MicrosoftTeams" -MinimumVersion 4.1.0
+    Get-InstalledModule -Name "MicrosoftTeams" -MinimumVersion 4.7.0
 } catch {
     throw
 }
@@ -152,37 +132,24 @@ ForEach ($mapping in $mappings){
 
 ### <a name="account-authorization-errors"></a>Errores de autorización de la cuenta
 
-Pueden producirse errores de autorización de cuenta si las credenciales de la cuenta de servicio de Blue Yonder WFM o de Microsoft 365 son incorrectas o no tienen los permisos necesarios.
-
-Para cambiar las credenciales de la cuenta de servicio de Blue Yonder WFM o de la cuenta del sistema de Microsoft 365 para la conexión, puede ejecutar el cmdlet [Set-CsTeamsShiftsConnectionInstance](/powershell/module/teams/set-csteamsshiftsconnectioninstance) o usar el script de PowerShell en la sección [Cambiar configuración de conexión](#change-connection-settings) de este artículo.
+[!INCLUDE [shifts-connector-account-authorization-errors](includes/shifts-connector-account-authorization-errors.md)]
 
 ## <a name="change-connection-settings"></a>Cambiar la configuración de conexión
 <a name="change_settings"> </a>
 
-Use este script para cambiar la configuración de conexión. La configuración que puede cambiar incluye la cuenta de servicio y la contraseña de Blue Yonder WFM, la cuenta del sistema de Microsoft 365, las asignaciones de equipo y la configuración de sincronización.
-
-Esta configuración incluye la frecuencia de sincronización (en minutos) y los datos de programación que se sincronizan entre Blue Yonder WFM y Turnos. Los datos de programación se definen en los parámetros siguientes, que puede ver mediante la ejecución de [Get-CsTeamsShiftsConnectionConnector](/powershell/module/teams/get-csteamsshiftsconnectionconnector).
-
-- El parámetro **enabledConnectorScenarios** define los datos que se sincronizan entre Blue Yonder WFM y Turnos. Las opciones son `Shift`, `SwapRequest`, `UserShiftPreferences`, `OpenShift`, `OpenShiftRequest`, `TimeOff` `TimeOffRequest`.
-- El parámetro **enabledWfiScenarios** define los datos que se sincronizan desde Turnos a Blue Yonder WFM. Las opciones son `SwapRequest`, `OpenShiftRequest`, `TimeOffRequest`, `UserShiftPreferences`.
-
-    > [!NOTE]
-    > Si decide no sincronizar turnos abiertos, solicitudes de turnos abiertas, solicitudes de intercambio o solicitudes de tiempo de expiración entre turnos y Blue Yonder WFM, hay otro paso que debe hacer para ocultar la funcionalidad en Turnos. Después de ejecutar este script, asegúrese de seguir los pasos de la sección [Deshabilitar turnos abiertos, solicitudes de turnos abiertos, solicitudes de intercambio y solicitudes de tiempo de expiración](#disable-open-shifts-open-shifts-requests-swap-requests-and-time-off-requests) más adelante en este artículo.
-
-> [!IMPORTANT]
-> Para la configuración que no desea cambiar, tendrá que volver a escribir la configuración original cuando se le solicite el script.
+[!INCLUDE [shifts-connector-change-connection-settings](includes/shifts-connector-change-connection-settings.md)]
 
 [Configure el entorno](#set-up-your-environment) (si aún no lo ha hecho) y, a continuación, ejecute el siguiente script.
 
 ```powershell
 #Update connector instance and mapping script
-Write-Host "Update connector instance and mapping"
+Write-Host "Update Connector instance and mapping"
 Start-Sleep 1
 
 #Ensure Teams module is at least version x
 Write-Host "Checking Teams module version"
 try {
-    Get-InstalledModule -Name "MicrosoftTeams" -MinimumVersion 4.1.0
+    Get-InstalledModule -Name "MicrosoftTeams" -MinimumVersion 4.7.0
 } catch {
     throw
 }
@@ -199,7 +166,7 @@ $blueYonder = $connectors | where {$_.Id -match $BlueYonderId}
 
 #List connection instances available
 Write-Host "Listing connection instances available"
-$InstanceList = Get-CsTeamsShiftsConnectionInstance
+$InstanceList = Get-CsTeamsShiftsConnectionInstance | where {$_.ConnectorId -match $BlueYonderId}
 write $InstanceList
 
 #Prompt for the WFM username and password
@@ -208,7 +175,6 @@ $WfmPwd = Read-Host -Prompt 'Input your WFM password' -AsSecureString
 $plainPwd =[Runtime.InteropServices.Marshal]::PtrToStringAuto([Runtime.InteropServices.Marshal]::SecureStringToBSTR($WfmPwd))
 
 #Get the instance ID
-$BlueYonderId = "6A51B888-FF44-4FEA-82E1-839401E9CD74"
 $InstanceId = Read-Host -Prompt 'Input the instance ID that you want to update'
 $Instance = Get-CsTeamsShiftsConnectionInstance -ConnectorInstanceId $InstanceId
 $Etag = $Instance.etag
@@ -248,8 +214,33 @@ if ($decision -eq 1) {
     break
 }
 }
-$UpdatedInstance = Set-CsTeamsShiftsConnectionInstance -ConnectorId $BlueYonderId -ConnectorInstanceId $InstanceId -ConnectorSpecificSettingAdminApiUrl $adminApiUrl -ConnectorSpecificSettingCookieAuthUrl $cookieAuthUrl -ConnectorSpecificSettingEssApiUrl $essApiUrl -ConnectorSpecificSettingFederatedAuthUrl $federatedAuthUrl -ConnectorSpecificSettingLoginPwd $plainPwd -ConnectorSpecificSettingLoginUserName $WfmUserName -ConnectorSpecificSettingRetailWebApiUrl $retailWebApiUrl -ConnectorSpecificSettingSiteManagerUrl $siteManagerUrl -DesignatedActorId $teamsUserId -EnabledConnectorScenario $updatedConnectorScenario -EnabledWfiScenario $updatedWfiScenario -Name $UpdatedInstanceName -SyncFrequencyInMin $syncFreq -IfMatch $Etag -ConnectorAdminEmail $AdminEmailList
-
+$UpdatedInstance = Set-CsTeamsShiftsConnectionInstance `
+    -ConnectorInstanceId $InstanceId `
+    -ConnectorId $BlueYonderId `
+    -ConnectorAdminEmail $AdminEmailList `
+    -DesignatedActorId $teamsUserId `
+    -EnabledConnectorScenario $updatedConnectorScenario `
+    -EnabledWfiScenario $updatedWfiScenario `
+    -Name $UpdatedInstanceName `
+    -SyncFrequencyInMin $syncFreq `
+    -ConnectorSpecificSettings (New-Object Microsoft.Teams.ConfigAPI.Cmdlets.Generated.Models.ConnectorSpecificBlueYonderSettingsRequest `
+    -Property @{
+        AdminApiUrl = $adminApiUrl
+        SiteManagerUrl = $siteManagerUrl
+        EssApiUrl = $essApiUrl
+        RetailWebApiUrl = $retailWebApiUrl
+        CookieAuthUrl = $cookieAuthUrl
+        FederatedAuthUrl = $federatedAuthUrl
+        LoginUserName = $WfmUserName
+        LoginPwd = $plainPwd
+    }) `
+    -IfMatch $Etag
+if ($UpdatedInstance.Id -ne $null) {
+    Write-Host "Success"
+}
+else {
+    throw "Update instance failed"
+}
 #Get a list of the mappings
 Write-Host "Listing mappings"
 $TeamMaps = Get-CsTeamsShiftsConnectionTeamMap -ConnectorInstanceId $InstanceId
@@ -273,65 +264,35 @@ Write-Host "Success"
 
 ## <a name="disable-open-shifts-open-shifts-requests-swap-requests-and-time-off-requests"></a>Deshabilitar turnos abiertos, solicitudes de turnos abiertos, solicitudes de intercambio y solicitudes de tiempo de expiración
 
-> [!IMPORTANT]
-> Siga estos pasos solo si eligió deshabilitar turnos abiertos, solicitudes de turnos abiertos, solicitudes de intercambio o solicitudes de tiempo de expiración mediante el script de la sección [Cambiar configuración de conexión](#change-connection-settings) anteriormente en este artículo o mediante el cmdlet [Set-CsTeamsShiftsConnectionInstance](/powershell/module/teams/set-csteamsshiftsconnectioninstance). Al completar este paso, se oculta la funcionalidad en Turnos. Sin este segundo paso, los usuarios seguirán viendo la funcionalidad en Turnos y recibirán un mensaje de error de “operación no admitida” si intentan usarlo.
-
-Para ocultar turnos abiertos, solicitudes de intercambio y solicitudes de tiempo de espera en Turnos, use el tipo de [recurso de programación](/graph/api/resources/schedule) Graph API para establecer los parámetros ```false``` siguientes en para cada equipo que haya asignado a una instancia de Blue Yonder WFM:
-
-- Abrir turnos: ```openShiftsEnabled```
-- Solicitudes de intercambio:  ```swapShiftsRequestsEnabled```
-- Solicitudes de tiempo libre: ```timeOffRequestsEnabled```
-
-Para ocultar las solicitudes de turnos abiertos en Turnos, vaya a **Configuración** en Turnos y, a continuación, desactive la opción **Abrir turnos**.
+[!INCLUDE [shifts-connector-disable-shifts-requests](includes/shifts-connector-disable-shifts-requests.md)]
 
 ## <a name="unmap-a-team-from-one-connection-and-map-it-to-another-connection"></a>Desajustar un equipo de una conexión y asignarlo a otra conexión
 
-> [!NOTE]
-> La cuenta del sistema de Microsoft 365 debe ser la misma para ambas conexiones. Si no es así, recibirá un mensaje de error "Este perfil de actor designado no tiene privilegios de propiedad de equipo".
-
-Si desea desajustar un equipo de una conexión y asignarlo a otra conexión:
-
-1. [Configure el entorno](#set-up-your-environment) (si aún no lo ha hecho).
-1. Vea una lista de todas las asignaciones de equipo para una conexión.
-
-    ```powershell
-    Get-CsTeamsShiftsConnectionTeamMap -ConnectorInstanceId <ConnectorInstanceId>
-    ```
-
-1. Quite una asignación de equipo de la conexión.
-
-    ```powershell
-    Remove-CsTeamsShiftsConnectionTeamMap -ConnectorInstanceId <ConnectorInstanceId> -TeamId <TeamId>
-    ```
-
-1. Asigne el equipo a otra conexión.
-
-    ```powershell
-    New-CsTeamsShiftsConnectionTeamMap -ConnectorInstanceId <ConnectorInstanceId> -TeamId <TeamId> -WfmTeamId <SiteId> -TimeZone <TimeZone>
-    ```
-
-Para obtener más información, consulte [Get-CsTeamsShiftsConnectionTeamMap](/powershell/module/teams/get-csteamsshiftsconnectionteammap), [Remove-CsTeamsShiftsConnectionTeamMap](/powershell/module/teams/remove-csteamsshiftsconnectionteammap) y [New-CsTeamsShiftsConnectionTeamMap](/powershell/module/teams/new-csteamsshiftsconnectionteammap).
+[!INCLUDE [shifts-connector-unmap-a-team](includes/shifts-connector-unmap-a-team.md)]
 
 ## <a name="disable-sync-for-a-connection"></a>Deshabilitar la sincronización para una conexión
 
-Use este script para deshabilitar la sincronización de una conexión. Tenga en cuenta que este script no quita ni elimina una conexión. Desactiva la sincronización para que no se sincronice ningún dato entre Turnos y Blue Yonder WFM para la conexión que especifique.
+Use este script para deshabilitar la sincronización de una conexión. Tenga en cuenta que este script no quita ni elimina una conexión. Desactiva la sincronización para que no se sincronice ningún dato entre Shifts y el sistema de WFM para la conexión que especifique.
 
 [Configure el entorno](#set-up-your-environment) (si aún no lo ha hecho) y, a continuación, ejecute el siguiente script.
 
 ```powershell
 #Disable sync script
 Write-Host "Disable sync"
+Start-Sleep 1
+
 #Ensure Teams module is at least version x
 Write-Host "Checking Teams module version"
 try {
-    Get-InstalledModule -Name "MicrosoftTeams" -MinimumVersion 4.1.0
+    Get-InstalledModule -Name "MicrosoftTeams" -MinimumVersion 4.7.0
 } catch {
     throw
 }
 
 #List connection instances available
+$BlueYonderId = "6A51B888-FF44-4FEA-82E1-839401E9CD74"
 Write-Host "Listing connection instances"
-$InstanceList = Get-CsTeamsShiftsConnectionInstance
+$InstanceList = Get-CsTeamsShiftsConnectionInstance | where {$_.ConnectorId -match $BlueYonderId}
 write $InstanceList
 
 #Get an instance
@@ -361,7 +322,27 @@ $WfmUserName = Read-Host -Prompt 'Input your WFM user name'
 $WfmPwd = Read-Host -Prompt 'Input your WFM password' -AsSecureString
 $plainPwd =[Runtime.InteropServices.Marshal]::PtrToStringAuto([Runtime.InteropServices.Marshal]::SecureStringToBSTR($WfmPwd))
 
-$UpdatedInstance = Set-CsTeamsShiftsConnectionInstance -ConnectorId $BlueYonderId -ConnectorInstanceId $InstanceId -ConnectorSpecificSettingAdminApiUrl $adminApiUrl -ConnectorSpecificSettingCookieAuthUrl $cookieAuthUrl -ConnectorSpecificSettingEssApiUrl $essApiUrl -ConnectorSpecificSettingFederatedAuthUrl $federatedAuthUrl -ConnectorSpecificSettingLoginPwd $plainPwd -ConnectorSpecificSettingLoginUserName $WfmUserName -ConnectorSpecificSettingRetailWebApiUrl $retailWebApiUrl -ConnectorSpecificSettingSiteManagerUrl $siteManagerUrl -DesignatedActorId $DesignatedActorId -EnabledConnectorScenario @() -EnabledWfiScenario @() -Name $UpdatedInstanceName -SyncFrequencyInMin 60 -IfMatch $Etag -ConnectorAdminEmail $ConnectorAdminEmail
+$UpdatedInstance = Set-CsTeamsShiftsConnectionInstance `
+    -ConnectorInstanceId $InstanceId `
+    -ConnectorId $BlueYonderId `
+    -ConnectorAdminEmail $ConnectorAdminEmail `
+    -DesignatedActorId $DesignatedActorId `
+    -EnabledConnectorScenario @() `
+    -EnabledWfiScenario @() `
+    -Name $UpdatedInstanceName `
+    -SyncFrequencyInMin 10 `
+    -ConnectorSpecificSettings (New-Object Microsoft.Teams.ConfigAPI.Cmdlets.Generated.Models.ConnectorSpecificBlueYonderSettingsRequest `
+        -Property @{
+            AdminApiUrl = $adminApiUrl
+            SiteManagerUrl = $siteManagerUrl
+            EssApiUrl = $essApiUrl
+            RetailWebApiUrl = $retailWebApiUrl
+            CookieAuthUrl = $cookieAuthUrl
+            FederatedAuthUrl = $federatedAuthUrl
+            LoginUserName = $WfmUserName
+            LoginPwd = $plainPwd
+        }) `
+    -IfMatch $Etag
 
 if ($UpdatedInstance.Id -ne $null) {
     Write-Host "Success"
@@ -370,6 +351,20 @@ else {
     throw "Update instance failed"
 }
 ```
+## <a name="list-of-error-messages"></a>Lista de mensajes de error
+
+Esta es la lista de mensajes de error que puede encontrar e información para ayudarle a resolverlos.
+
+|Tipo de error |Detalles del error |Solución |
+|---------|---------|---------|
+|No se puede autenticar el sistema de administración de la fuerza de trabajo.|Las credenciales de la cuenta del sistema de administración del personal que ha proporcionado no son válidas o esta cuenta no tiene los permisos necesarios.|Actualice las credenciales de la cuenta de servicio de WFM en la configuración de conexión. Para ello, siga uno de estos procedimientos:<ul><li>En el Centro de administración de Microsoft 365, elija **Editar** en la página Administración de conectores o en la página de detalles de conexión para ir al Asistente para conectores de turnos.</li><li>Use el cmdlet [Set-CsTeamsShiftsConnectionInstance](/powershell/module/teams/set-csteamsshiftsconnectioninstance) o Update-CsTeamsShiftConnectionInstance.</li><li>Use [este script de PowerShell](#change-connection-settings).</li></ul>|
+|No se puede autenticar Graph. |Error de autenticación. Asegúrese de que ha escrito credenciales válidas para el actor designado y que tiene los permisos necesarios.|Asegúrese de que la cuenta del sistema de Microsoft 365 (también conocida como actor designado) se agrega como propietario del equipo.<br> O bien, actualice las credenciales de la cuenta del sistema de Microsoft 365 en la configuración de conexión.|
+|Algunos usuarios no se han asignado correctamente|Error en la asignación de algunos usuarios: \<X\> usuarios de AAD correctos, \<X\> con errores y \<X\> usuarios del sistema de administración de fuerza de trabajo con errores.|Use el cmdlet [Get-CsTeamsShiftsConnectionSyncResult](/powershell/module/teams/get-csteamsshiftsconnectionsyncresult) o [este script de PowerShell](#user-mapping-errors) para identificar a los usuarios para los que se produjo un error en la asignación. Asegúrese de que los usuarios del equipo asignado coincidan con los usuarios de la instancia de WFM.|
+|No se puede asignar un equipo o equipos en este lote. |Este perfil de actor designado no tiene privilegios de propiedad de equipo. |Asegúrese de que la cuenta del sistema de Microsoft 365 (también conocida como actor designado) se agrega como propietario del equipo.<br>Si ha cambiado la cuenta del sistema de Microsoft 365, agregue esa cuenta como propietario del equipo y actualice la configuración de conexión para usarla.|
+|    |Este equipo ya está asignado a una instancia de conector existente. |Quite la asignación del equipo de la conexión existente mediante el cmdlet [Remove-CsTeamsShiftsConnectionTeamMap](/powershell/module/teams/remove-csteamsshiftsconnectionteammap) . O bien, cree una nueva conexión para volver a asignar el equipo.|
+|    |Esta zona horaria no es válida. La zona horaria pasada no usa el formato de base de datos tz.|Asegúrese de que la zona horaria es correcta y, a continuación, vuelva a asignar el equipo.|
+|    |No podemos encontrar esta instancia del conector.|Asigne el equipo a una conexión existente.|
+|    |No se encontró este equipo de AAD.|Asegúrese de que el equipo existe o cree un nuevo equipo.|
 
 ## <a name="shifts-connector-cmdlets"></a>Cmdlets del conector Turnos
 
@@ -396,5 +391,6 @@ Para obtener ayuda con los cmdlets del conector Turnos, incluidos los cmdlets us
 - [Conectores de Turnos](shifts-connectors.md)
 - [Use el asistente del conector de Turnos para conectar Turnos a Blue Yonder Workforce Management](shifts-connector-wizard.md)
 - [Uso de PowerShell para conectar Turnos a Workforce Management de Blue Yonder](shifts-connector-blue-yonder-powershell-setup.md)
+- [Use la Centro de administración de Microsoft 365 para administrar la conexión de Shifts a Blue Yonder Workforce Management](shifts-connector-blue-yonder-admin-center-manage.md)
 - [Administrar la aplicación Turnos para su organización en Teams](/microsoftteams/expand-teams-across-your-org/shifts/manage-the-shifts-app-for-your-organization-in-teams?bc=/microsoft-365/frontline/breadcrumb/toc.json&toc=/microsoft-365/frontline/toc.json)
 - [Descripción de PowerShell para Teams](/microsoftteams/teams-powershell-overview)

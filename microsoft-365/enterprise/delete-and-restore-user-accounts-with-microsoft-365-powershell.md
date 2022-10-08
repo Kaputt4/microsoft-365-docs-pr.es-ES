@@ -10,7 +10,9 @@ ms.service: microsoft-365-enterprise
 ms.localizationpriority: medium
 search.appverid:
 - MET150
-ms.collection: Ent_O365
+ms.collection:
+- scotvorg
+- Ent_O365
 f1.keywords:
 - CSH
 ms.custom:
@@ -20,12 +22,12 @@ ms.custom:
 - seo-marvel-apr2020
 ms.assetid: 209c9868-448c-49bc-baae-11e28b923a39
 description: Obtenga información sobre cómo usar diferentes módulos en PowerShell para eliminar cuentas de usuario de Microsoft 365.
-ms.openlocfilehash: 3ee58698400944b27f6e19d154d7a9d0c8bfccc1
-ms.sourcegitcommit: 62368e5a48e569c8e475b07d194d7d8ff7d167ab
+ms.openlocfilehash: d804e39da078189baea22aaa0ae5d68fb9b69163
+ms.sourcegitcommit: 0b7070ec119e00e0dafe030bbfbef0ae5c9afa19
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/02/2022
-ms.locfileid: "67560227"
+ms.lasthandoff: 09/29/2022
+ms.locfileid: "68168735"
 ---
 # <a name="delete-microsoft-365-user-accounts-with-powershell"></a>Eliminación de cuentas de usuario de Microsoft 365 con PowerShell
 
@@ -90,7 +92,7 @@ Remove-MsolUser -UserPrincipalName <sign-in name>
 ```
 
 >[!Note]
->PowerShell Core no admite el Módulo Microsoft Azure Active Directory para Windows PowerShell ni los cmdlets con *Msol* en su nombre. Ejecute estos cmdlets desde Windows PowerShell.
+>PowerShell Core doesn't support the Microsoft Azure Active Directory Module for Windows PowerShell module and cmdlets with *Msol* in their name. Run these cmdlets from Windows PowerShell.
 >
 
 En este ejemplo se elimina la cuenta de usuario *BelindaN@litwareinc.com*.

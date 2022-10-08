@@ -15,7 +15,7 @@ ms.custom:
 - goldenconfig
 ms.collection:
 - M365-identity-device-management
-- M365-security-compliance
+- m365-security
 - remotework
 - m365solution-identitydevice
 - m365solution-scenario
@@ -23,12 +23,12 @@ ms.collection:
 - highpri
 ms.subservice: mdo
 search.appverid: met150
-ms.openlocfilehash: dd0182bda8e23537a1c7914270037ea61c16feaa
-ms.sourcegitcommit: 9b133379196da2b3a4bb311b07ff274f43780f68
+ms.openlocfilehash: 8b956258393dbd9f79e219b6cd13e83ec6fa1bf4
+ms.sourcegitcommit: 12af9e8e3a6eaa090fda9e98ccb831dff65863a4
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/14/2022
-ms.locfileid: "67686645"
+ms.lasthandoff: 09/27/2022
+ms.locfileid: "68060480"
 ---
 # <a name="common-zero-trust-identity-and-device-access-policies"></a>Directivas comunes de acceso a dispositivos e identidades de Confianza cero
 
@@ -377,7 +377,7 @@ Para **Seguridad del sistema**, consulte esta tabla.
 ||Antiespía|Obligatoria|Seleccionar <p> Esta configuración requiere una solución anti spyware registrada con la aplicación Seguridad de Windows.|
 |Defender for Cloud|Antimalware de Microsoft Defender|Obligatoria|Seleccionar|
 ||Versión mínima de Antimalware de Microsoft Defender||Tipo <p> Solo se admite para Windows 10 escritorio. Microsoft recomienda versiones no más de cinco detrás de la versión más reciente.|
-||Firma antimalware de Microsoft Defender actualizada|Obligatoria|Seleccionar|
+||Microsoft Defender firma antimalware actualizada|Obligatoria|Seleccionar|
 ||Protección en tiempo real|Obligatoria|Seleccionar <p> Solo se admite para el escritorio de Windows 10 y versiones posteriores|
 
 #### <a name="microsoft-defender-for-endpoint"></a>Microsoft Defender para punto de conexión

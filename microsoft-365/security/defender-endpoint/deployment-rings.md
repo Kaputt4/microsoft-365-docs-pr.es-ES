@@ -12,18 +12,19 @@ ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection:
-- M365-security-compliance
+- m365-security
 - m365solution-endpointprotect
 - highpri
-ms.topic: article
+- tier1
+ms.topic: conceptual
 ms.subservice: mde
 search.appverid: met150
-ms.openlocfilehash: f87554eccfbd4123d36c3cb5800997ddc7613f50
-ms.sourcegitcommit: 9b133379196da2b3a4bb311b07ff274f43780f68
+ms.openlocfilehash: 25332c75c9f4362e456f34999f77ef7d83fb8c4e
+ms.sourcegitcommit: 0b7070ec119e00e0dafe030bbfbef0ae5c9afa19
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/14/2022
-ms.locfileid: "67698016"
+ms.lasthandoff: 09/29/2022
+ms.locfileid: "68194365"
 ---
 # <a name="deploy-microsoft-defender-for-endpoint-in-rings"></a>Implementación de Microsoft Defender para punto de conexión en anillos
 
@@ -81,7 +82,7 @@ En la tabla siguiente se muestran los puntos de conexión admitidos y la herrami
 
 |Punto de conexión|Herramienta de implementación|
 |---|---|
-|**Windows**|[Script local (hasta 10 dispositivos)](configure-endpoints-script.md) <br> NOTA: Si desea implementar más de 10 dispositivos en un entorno de producción, use el método directiva de grupo en su lugar o las demás herramientas admitidas que se enumeran a continuación.<br>  [Directiva de grupo](configure-endpoints-gp.md) <br>  [Microsoft Endpoint Manager/Mobile Administrador de dispositivos](configure-endpoints-mdm.md) <br>   [Microsoft Endpoint Configuration Manager](configure-endpoints-sccm.md) <br> [Scripts de VDI](configure-endpoints-vdi.md) <br> [Integración con Microsoft Defender for Cloud](configure-server-endpoints.md#integration-with-microsoft-defender-for-cloud)|
+|**Windows**|[Script local (hasta 10 dispositivos)](configure-endpoints-script.md) <br> NOTA: Si desea implementar más de 10 dispositivos en un entorno de producción, use el método directiva de grupo en su lugar o las demás herramientas admitidas que se enumeran a continuación.<br>  [Directiva de grupo](configure-endpoints-gp.md) <br>  [Microsoft Endpoint Manager/Mobile Administrador de dispositivos](configure-endpoints-mdm.md) <br>   [Microsoft Endpoint Configuration Manager](configure-endpoints-sccm.md) <br> [Scripts de VDI](configure-endpoints-vdi.md) |
 |**macOS**|[Script local](mac-install-manually.md) <br> [Microsoft Endpoint Manager](mac-install-with-intune.md) <br> [JAMF Pro](mac-install-with-jamf.md) <br> [Administración de dispositivos móviles](mac-install-with-other-mdm.md)|
 |**Servidor Linux**|[Script local](linux-install-manually.md) <br> [Marioneta](linux-install-with-puppet.md) <br> [Ansible](linux-install-with-ansible.md)|
 |**iOS**|[Microsoft Endpoint Manager](ios-install.md)|

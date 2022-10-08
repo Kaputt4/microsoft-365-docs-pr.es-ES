@@ -8,9 +8,10 @@ manager: scotv
 ms.reviewer: jkinma, jmueller
 audience: Admin
 ms.topic: article
-ms.service: o365-administration
+ms.service: microsoft-365-business
 ms.localizationpriority: medium
 ms.collection:
+- scotvorg
 - M365-subscription-management
 - Adm_O365
 search.appverid: MET150
@@ -20,12 +21,12 @@ ms.custom:
 - okr_SMB
 - AdminSurgePortfolio
 ms.date: 05/26/2022
-ms.openlocfilehash: cb7d4bec9ae41d05be5b588f78a5197ed9ccbac0
-ms.sourcegitcommit: 1734c95ce72d9c8af695cb4b49b1e40d921a1fee
+ms.openlocfilehash: 1124d4041f8d8e230b2a530732a9a21a29d9852c
+ms.sourcegitcommit: 0b7070ec119e00e0dafe030bbfbef0ae5c9afa19
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/07/2022
-ms.locfileid: "66685643"
+ms.lasthandoff: 09/29/2022
+ms.locfileid: "68195003"
 ---
 # <a name="how-to-pay-for-your-subscription-with-a-billing-profile"></a>Cómo pagar la suscripción con un perfil de facturación
 
@@ -59,13 +60,13 @@ Para poder pagar con factura, debe:
 - Tener un coste de suscripción que supere una cantidad determinada (esta cantidad varía según la ubicación del servicio)
 - Pasar una comprobación de crédito
 
-Si se requiere una comprobación de crédito, recibirá una notificación cuando compre la suscripción. Si acepta que se comuniquen con usted, recibirá un correo electrónico que incluye más información sobre cómo solicitar la aprobación de crédito. Las comprobaciones de crédito suelen completarse en un plazo de dos días laborables.
+If a credit check is required, you’re notified when you buy your subscription. If you agree to be contacted, you get an email that includes more information about applying for credit approval. Credit checks are usually completed within two business days.
 
 Si el perfil de facturación está respaldado por una factura, recibirá un correo electrónico cuando el extracto de facturación esté listo para su visualización. Este correo electrónico no contiene una copia del extracto de facturación. Sin embargo, puede elegir [recibir las facturas de su organización como datos adjuntos de correo electrónico](manage-billing-notifications.md#receive-your-organizations-invoices-as-email-attachments). El extracto de facturación incluye información sobre las opciones de pago, además de dónde debe enviarse. Si escribe un número de pedido de compra (PO) en su perfil de facturación, el número aparece en el extracto de facturación. Para información sobre cómo acceder a los extractos de facturación, vea [Ver su factura](view-your-bill-or-invoice.md).
 
 ## <a name="where-do-i-send-my-check-or-eft-payment"></a>¿Dónde envío mi cheque o pago por EFT?
 
-[Compruebe la factura](view-your-bill-or-invoice.md) para obtener instrucciones de pago para su país o región. Si no está seguro de cuánto debe, puede comprobar la factura y el historial de facturación en línea en la pestaña **Facturas** de la página <a href="https://go.microsoft.com/fwlink/p/?linkid=2102895" target="_blank"> Facturas y pagos</a>.
+[Check your invoice](view-your-bill-or-invoice.md) for payment instructions for your country or region. If you're not sure how much you owe, you can check your bill and billing history online on the **Invoices** tab of the <a href="https://go.microsoft.com/fwlink/p/?linkid=2102895" target="_blank">Bills & payments</a> page.
 
 > [!NOTE]
 > El pago con cheque solo está disponible en algunos países.

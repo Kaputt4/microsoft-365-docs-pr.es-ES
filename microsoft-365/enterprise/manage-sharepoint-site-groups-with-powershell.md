@@ -6,11 +6,13 @@ manager: scotv
 ms.date: 12/17/2019
 audience: Admin
 ms.topic: landing-page
-ms.service: o365-administration
+ms.service: microsoft-365-enterprise
 ms.localizationpriority: medium
 search.appverid:
 - MET150
-ms.collection: Ent_O365
+ms.collection:
+- scotvorg
+- Ent_O365
 f1.keywords:
 - CSH
 ms.custom:
@@ -19,29 +21,29 @@ ms.custom:
 - SPO_Content
 - seo-marvel-apr2020
 ms.assetid: d0d3877a-831f-4744-96b0-d8167f06cca2
-description: En este artículo, busque procedimientos para usar PowerShell para Microsoft 365 para administrar SharePoint grupos de sitios en línea.
-ms.openlocfilehash: 411ab477668b7956a63843d0b58b8d6d9bfc9059
-ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
+description: En este artículo, busque procedimientos para usar PowerShell para Microsoft 365 para administrar grupos de sitios de SharePoint Online.
+ms.openlocfilehash: 1fd9e87b49248dfef6a451f681267a2aaf02269e
+ms.sourcegitcommit: 0b7070ec119e00e0dafe030bbfbef0ae5c9afa19
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "65096444"
+ms.lasthandoff: 09/29/2022
+ms.locfileid: "68194673"
 ---
 # <a name="manage-sharepoint-online-site-groups-with-powershell"></a>Administrar grupos de sitio de SharePoint Online con PowerShell
 
-*Este artículo se aplica tanto a Microsoft 365 Enterprise como a Office 365 Enterprise.*
+*Este artículo afecta tanto a Office 365 Enterprise como a Microsoft 365 Enterprise*
 
-Aunque puede usar la Centro de administración de Microsoft 365, también puede usar PowerShell para Microsoft 365 para administrar los grupos de sitios de SharePoint Online.
+Aunque puede usar el Centro de administración de Microsoft 365, también puede usar PowerShell para Microsoft 365 para administrar los grupos de sitios de SharePoint Online.
 
 ## <a name="before-you-begin"></a>Antes de empezar
 
 Los procedimientos de este artículo requieren que se conecte a SharePoint Online. Para obtener instrucciones, consulte [Connect to SharePoint Online PowerShell](/powershell/sharepoint/sharepoint-online/connect-sharepoint-online).
 
-## <a name="view-sharepoint-online-with-powershell-for-microsoft-365"></a>Ver SharePoint en línea con PowerShell para Microsoft 365
+## <a name="view-sharepoint-online-with-powershell-for-microsoft-365"></a>Visualización de SharePoint Online con PowerShell para Microsoft 365
 
-El centro de administración de SharePoint Online tiene algunos métodos fáciles de usar para administrar grupos de sitios. Por ejemplo, supongamos que desea examinar los grupos y los miembros del grupo para el `https://litwareinc.sharepoint.com/sites/finance` sitio. Esto es lo que tienes que hacer para:
+El Centro de administración de SharePoint Online tiene algunos métodos fáciles de usar para administrar grupos de sitios. Por ejemplo, supongamos que desea examinar los grupos y los miembros del grupo para el `https://litwareinc.sharepoint.com/sites/finance` sitio. Esto es lo que tienes que hacer para:
 
-1. En el centro de administración de SharePoint, seleccione <a href="https://go.microsoft.com/fwlink/?linkid=2185220" target="_blank">**Sitios activos**</a> y, a continuación, seleccione la dirección URL del sitio.
+1. En el Centro de administración de SharePoint, seleccione <a href="https://go.microsoft.com/fwlink/?linkid=2185220" target="_blank">**Sitios activos**</a> y, a continuación, seleccione la dirección URL del sitio.
 2. En la página del sitio, seleccione <a href="https://go.microsoft.com/fwlink/?linkid=2185072" target="_blank">**Configuración**</a> (que se encuentra en la esquina superior derecha de la página) y, a continuación, seleccione **Permisos del sitio**.
 
 Y, así, repita el proceso con el siguiente sitio que quiera ver.
@@ -59,10 +61,10 @@ foreach ($y in $x)
     }
 ```
 
-Hay dos maneras de ejecutar este conjunto de comandos en el símbolo del sistema del Shell de administración en línea de SharePoint:
+Hay dos maneras de ejecutar este conjunto de comandos en el símbolo del sistema del Shell de administración de SharePoint Online:
 
-- Copie los comandos en Bloc de notas (u otro editor de texto), modifique el valor de la variable **$siteURL**, seleccione los comandos y péguelos en el símbolo del sistema del Shell de administración en línea de SharePoint. Cuando lo haga, PowerShell se detendrá a **>>** petición. Presione Entrar para ejecutar el `foreach` comando.<br/>
-- Copie los comandos en el Bloc de notas (u otro editor de texto), modifique el valor de la variable **$siteURL** y después guarde este archivo de texto con un nombre y la extensión. ps1 en la carpeta adecuada. A continuación, ejecute el script desde el símbolo del sistema del Shell de administración en línea de SharePoint especificando su ruta de acceso y su nombre de archivo. A continuación se muestra un ejemplo:
+- Copie los comandos en el Bloc de notas (u otro editor de texto), modifique el valor de la variable **$siteURL** , seleccione los comandos y péguelos en el símbolo del sistema del Shell de administración de SharePoint Online. Cuando lo haga, PowerShell se detendrá a **>>** petición. Presione Entrar para ejecutar el `foreach` comando.<br/>
+- Copie los comandos en el Bloc de notas (u otro editor de texto), modifique el valor de la variable **$siteURL** y después guarde este archivo de texto con un nombre y la extensión. ps1 en la carpeta adecuada. A continuación, ejecute el script desde el símbolo del sistema del Shell de administración de SharePoint Online especificando su ruta de acceso y su nombre de archivo. A continuación se muestra un ejemplo:
 
 ```powershell
 C:\Scripts\SiteGroupsAndUsers.ps1
@@ -70,7 +72,7 @@ C:\Scripts\SiteGroupsAndUsers.ps1
 
 En ambos casos, el resultado será parecido a lo siguiente:
 
-![SharePoint grupos de sitios en línea.](../media/SPO-site-groups.png)
+![Grupos de sitios de SharePoint Online.](../media/SPO-site-groups.png)
 
 Estos son todos los grupos que se han creado para el sitio `https://litwareinc.sharepoint.com/sites/finance`y todos los usuarios asignados a esos grupos. Los nombres de grupo están en amarillo para ayudarle a separar los nombres de grupo de sus miembros.
 

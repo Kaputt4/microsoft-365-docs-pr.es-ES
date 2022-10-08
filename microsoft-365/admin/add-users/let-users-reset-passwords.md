@@ -7,9 +7,10 @@ author: kwekua
 manager: scotv
 audience: Admin
 ms.topic: article
-ms.service: o365-administration
+ms.service: microsoft-365-business
 ms.localizationpriority: medium
 ms.collection:
+- scotvorg
 - highpri
 - M365-subscription-management
 - Adm_O365
@@ -30,12 +31,12 @@ search.appverid:
 - MOE150
 ms.assetid: 5bc3f460-13cc-48c0-abd6-b80bae72d04a
 description: Obtenga información sobre cómo puede establecer una directiva en el Centro de administración de Microsoft 365 para permitir que los usuarios restablezcan sus propias contraseñas mediante la herramienta de autoservicio de restablecimiento de contraseña.
-ms.openlocfilehash: 7ee0d3aa8053c4156eba999a77a5ea5d1643cd98
-ms.sourcegitcommit: 37e137535c4f70702afe1a5eeaa899c75ee02cfd
+ms.openlocfilehash: d9c962b26343cf5e2ddd6c1f4b2c8126b2b157fa
+ms.sourcegitcommit: 0b7070ec119e00e0dafe030bbfbef0ae5c9afa19
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/13/2022
-ms.locfileid: "67662341"
+ms.lasthandoff: 09/29/2022
+ms.locfileid: "68195201"
 ---
 # <a name="let-users-reset-their-own-passwords"></a>Permitir que los usuarios puedan restablecer sus propias contraseñas
 
@@ -64,7 +65,7 @@ Si este vídeo le ha sido de ayuda, consulte la [serie completa de aprendizaje p
   
 - Obtiene el autoservicio de restablecimiento de contraseña para los usuarios en la nube **gratis** con cualquier plan de pago para empresas, educación o organizaciones sin ánimo de lucro de Microsoft 365. No funciona con la versión de prueba de Microsoft 365.
 
-- Usa Azure. Recibirá esta característica automáticamente en Azure **gratis** cuando realice estos pasos. No le costará nada activar el autoservicio de restablecimiento de contraseñas si no usa otras características de Azure.
+- It uses Azure. You'll automatically get this feature in Azure for **free** when you do these steps. It won't cost you anything to turn on self-service password reset if you don't use other Azure features.
 
 - **Si usa un Active Directory local**, no se aplican los dos puntos anteriores. En su lugar, puede **configurarlo, pero requiere una suscripción de pago a Azure AD Premium**.
 

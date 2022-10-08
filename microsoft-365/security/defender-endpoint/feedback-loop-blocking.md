@@ -15,14 +15,16 @@ ms.custom:
 - next-gen
 - edr
 ms.subservice: mde
-ms.collection: m365-security-compliance
+ms.collection:
+- m365-security
+- tier2
 search.appverid: met150
-ms.openlocfilehash: 63d9ca3d3dcfed45aa62f88430f0d07ff86e7982
-ms.sourcegitcommit: 9b133379196da2b3a4bb311b07ff274f43780f68
+ms.openlocfilehash: 42e3a8ac53d407e19457ab84cad85a1a3bcbcc92
+ms.sourcegitcommit: 0b7070ec119e00e0dafe030bbfbef0ae5c9afa19
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/14/2022
-ms.locfileid: "67697043"
+ms.lasthandoff: 09/29/2022
+ms.locfileid: "68194321"
 ---
 # <a name="feedback-loop-blocking"></a>Bloqueo de bucles de distribución de comentarios
 
@@ -42,7 +44,7 @@ El bloqueo de bucles de comentarios, también conocido como protección rápida,
 
 ## <a name="how-feedback-loop-blocking-works"></a>Funcionamiento del bloqueo de bucles de comentarios
 
-Cuando se detecta un comportamiento o un archivo sospechosos, como el [Antivirus de Microsoft Defender](/windows/security/threat-protection/microsoft-defender-antivirus/microsoft-defender-antivirus-in-windows-10), la información sobre ese artefacto se envía a varios clasificadores. El motor de bucle de protección rápida inspecciona y correlaciona la información con otras señales para llegar a una decisión sobre si bloquear un archivo. La comprobación y clasificación de artefactos se produce rápidamente. Esto provoca un bloqueo rápido del malware confirmado y impulsa la protección en todo el ecosistema. 
+Cuando se detecta un comportamiento o archivo sospechoso, como por [Microsoft Defender Antivirus](/windows/security/threat-protection/microsoft-defender-antivirus/microsoft-defender-antivirus-in-windows-10), se envía información sobre ese artefacto a varios clasificadores. El motor de bucle de protección rápida inspecciona y correlaciona la información con otras señales para llegar a una decisión sobre si bloquear un archivo. La comprobación y clasificación de artefactos se produce rápidamente. Esto provoca un bloqueo rápido del malware confirmado y impulsa la protección en todo el ecosistema. 
 
 Con una protección rápida, se puede detener un ataque en un dispositivo, otros dispositivos de la organización y dispositivos de otras organizaciones, a medida que un ataque intenta ampliar su posición.
 

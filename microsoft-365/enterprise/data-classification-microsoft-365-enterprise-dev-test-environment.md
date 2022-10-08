@@ -1,5 +1,5 @@
 ---
-title: Clasificación de datos de la Microsoft 365 para el entorno de prueba empresarial
+title: Clasificación de datos para el entorno de prueba de Microsoft 365 para empresas
 f1.keywords:
 - NOCSH
 ms.author: kvice
@@ -8,39 +8,41 @@ manager: scotv
 ms.date: 12/10/2019
 audience: ITPro
 ms.topic: article
-ms.service: o365-solutions
+ms.service: microsoft-365-enterprise
 ms.localizationpriority: medium
-ms.collection: M365-security-compliance
+ms.collection:
+- scotvorg
+- M365-security-compliance
 ms.custom:
 - Ent_TLGs
 - admindeeplinkMAC
 - admindeeplinkDEFENDER
 ms.assetid: 1aa9639b-2862-49c4-bc33-1586dda636b8
-description: Use esta guía de laboratorio de pruebas para crear y usar etiquetas de retención en documentos de la Microsoft 365 para el entorno de prueba empresarial.
-ms.openlocfilehash: f5bcde88be148ed883b4ad10e3b8116ed21c9fa8
-ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
+description: Use esta guía de laboratorio de pruebas para crear y usar etiquetas de retención en documentos del entorno de prueba de Microsoft 365 para empresas.
+ms.openlocfilehash: 959492fc2cd8402165b5222dbafc6d718fc9d14b
+ms.sourcegitcommit: 0b7070ec119e00e0dafe030bbfbef0ae5c9afa19
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "65096818"
+ms.lasthandoff: 09/29/2022
+ms.locfileid: "68168801"
 ---
-# <a name="data-classification-for-your-microsoft-365-for-enterprise-test-environment"></a>Clasificación de datos de la Microsoft 365 para el entorno de prueba empresarial
+# <a name="data-classification-for-your-microsoft-365-for-enterprise-test-environment"></a>Clasificación de datos para el entorno de prueba de Microsoft 365 para empresas
 
 *Esta guía de laboratorio de pruebas se puede usar para Microsoft 365 para entornos de prueba empresariales y Office 365 Enterprise.*
 
-En este artículo se describe cómo configurar la clasificación de datos mediante etiquetas de retención en la Microsoft 365 para el entorno de prueba empresarial.
+En este artículo se describe cómo configurar la clasificación de datos mediante etiquetas de retención en el entorno de prueba de Microsoft 365 para empresas.
 
 La clasificación de datos en el entorno de prueba implica tres fases:
-- [Fase 1: Compilación de la Microsoft 365 para el entorno de prueba empresarial](#phase-1-build-out-your-microsoft-365-for-enterprise-test-environment)
+- [Fase 1: Compilación del entorno de prueba de Microsoft 365 para empresas](#phase-1-build-out-your-microsoft-365-for-enterprise-test-environment)
 - [Fase 2: Creación de etiquetas de retención](#phase-2-create-retention-labels)
 - [Fase 3: Aplicación de etiquetas de retención a documentos](#phase-3-apply-retention-labels-to-documents)
 
 ![Guías de laboratorio de prueba para la nube de Microsoft.](../media/m365-enterprise-test-lab-guides/cloud-tlg-icon.png)
 
 > [!TIP]
-> Para obtener un mapa visual de todos los artículos de la pila Microsoft 365 para la pila guía del laboratorio de pruebas empresarial, vaya a [Microsoft 365 para la pila de la guía del laboratorio de pruebas empresarial](../downloads/Microsoft365EnterpriseTLGStack.pdf).
+> Para obtener un mapa visual de todos los artículos de la pila guía del laboratorio de pruebas de Microsoft 365 para empresas, vaya a [Microsoft 365 para enterprise Test Lab Guide Stack (Pila de guía del laboratorio de pruebas empresariales).](../downloads/Microsoft365EnterpriseTLGStack.pdf)
   
-## <a name="phase-1-build-out-your-microsoft-365-for-enterprise-test-environment"></a>Fase 1: Compilación de la Microsoft 365 para el entorno de prueba empresarial
+## <a name="phase-1-build-out-your-microsoft-365-for-enterprise-test-environment"></a>Fase 1: Compilación del entorno de prueba de Microsoft 365 para empresas
 
 Si solo quiere configurar las etiquetas de retención de forma ligera con los requisitos mínimos, siga las instrucciones de [Configuración base ligera](lightweight-base-configuration-microsoft-365-enterprise.md).
   
@@ -51,10 +53,10 @@ Si desea configurar etiquetas de retención en una empresa simulada, siga las in
 
 ## <a name="phase-2-create-retention-labels"></a>Fase 2: Creación de etiquetas de retención
 
-En esta fase, cree las etiquetas de retención para los distintos niveles de retención para SharePoint carpetas de documentos en línea:
+En esta fase, cree las etiquetas de retención para los distintos niveles de retención para carpetas de documentos de SharePoint Online:
 
 1. Inicie sesión en el <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">portal de Microsoft 365 Defender</a> con su cuenta de administrador global.
-1. En la pestaña **Inicio- Microsoft 365 seguridad** del explorador, seleccione **ClasificaciónEtiquetas** >  **de** protección.
+1. En la pestaña **Inicio: Seguridad de Microsoft 365** del explorador, seleccione **Etiquetas de retención** de **clasificación** > .
 1. Seleccione **Crear una etiqueta**.
 1. En el panel **Nombre de la etiqueta** , escriba **Público interno** en **Nombre de la etiqueta** y, a continuación, seleccione **Siguiente**.
 1. En el panel **Descriptores del plan de** archivos, seleccione **Siguiente**.
@@ -79,16 +81,16 @@ Las etiquetas de retención pueden tardar unos minutos en publicarse.
 
 En esta fase, detectará el comportamiento predeterminado de la etiqueta de retención de los archivos de la carpeta Documentos de un sitio de SharePoint Online y cambiará manualmente la etiqueta de retención de un documento.
 
-En primer lugar, cree un sitio de grupo de nivel confidencial SharePoint Online:
+En primer lugar, cree un sitio de grupo de SharePoint Online de nivel confidencial:
   
 1. Con una instancia privada del explorador, inicie sesión en el <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">Centro de administración de Microsoft 365</a> con su cuenta de administrador global.
 1. En la lista de iconos, seleccione **SharePoint**.
-1. En la nueva pestaña **SharePoint** del explorador, seleccione **Crear sitio**.
+1. En la nueva pestaña **De SharePoint** en el explorador, seleccione **Crear sitio**.
 1. En la página **Crear un sitio**, seleccione **Sitio de grupo**.
 1. En el cuadro **Nombre del sitio del equipo** , escriba **SensitiveFiles**.
-1. En el cuadro **Descripción del sitio del equipo**, escriba **SharePoint sitio para archivos confidenciales**.
+1. En el cuadro **Descripción del sitio del equipo** , escriba Sitio de **SharePoint para archivos confidenciales**.
 1. En **Configuración de privacidad**, seleccione **Privado: solo los miembros pueden acceder a este sitio** y, a continuación, seleccione **Siguiente**.
-1. En el panel **Quién ¿desea agregar?** , seleccione **Finalizar**.
+1. En el panel **¿Quién desea agregar?** , seleccione **Finalizar**.
     
 A continuación, configure la carpeta Documentos del sitio de equipo SensitiveFiles para la etiqueta de retención confidencial.
   
@@ -99,7 +101,7 @@ A continuación, configure la carpeta Documentos del sitio de equipo SensitiveFi
 
 A continuación, cree un nuevo documento en el sitio SensitiveFiles y cambie su etiqueta de retención.
     
-1. En la carpeta documentos, seleccione **NewWord** document (Nuevo  > **documento deWord**).
+1. En la carpeta documentos, seleccione **Nuevo** > **documento de Word**.
 1. Escriba texto en el documento en blanco. Espere a que se guarde el texto.
 1. En la barra de menús, seleccione **Documentos compartidos**.
 1. Junto al nombre de archivo **Document.docx** , seleccione los puntos suspensivos verticales y, a continuación, seleccione **Detalles**.

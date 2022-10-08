@@ -13,16 +13,16 @@ search.appverid:
 - MBS150
 - MET150
 ms.collection:
-- M365-security-compliance
+- m365-security
 description: Los administradores pueden aprender a configurar los valores de correo no deseado en Exchange Online buzones. Muchos de estos valores están disponibles para los usuarios en Outlook o Outlook en la Web.
 ms.subservice: mdo
 ms.service: microsoft-365-security
-ms.openlocfilehash: 9f8c5ed64526b03cb4a47b06962be94274517789
-ms.sourcegitcommit: 10e6abe740e27000e223378eb17d657a47555fa8
+ms.openlocfilehash: 2a96902e16ef372e5d9cd1198f15ce2541943aa1
+ms.sourcegitcommit: 12af9e8e3a6eaa090fda9e98ccb831dff65863a4
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/31/2022
-ms.locfileid: "67483484"
+ms.lasthandoff: 09/27/2022
+ms.locfileid: "68060524"
 ---
 # <a name="configure-junk-email-settings-on-exchange-online-mailboxes"></a>Configurar las opciones del correo no deseado en buzones de Exchange Online
 
@@ -57,7 +57,7 @@ Los administradores pueden usar Exchange Online PowerShell para configurar entra
 
 - Debe tener asignados permisos en Exchange Online para poder realizar los procedimientos de este artículo. En concreto, necesita el rol **Destinatarios de correo** (que se asigna a los grupos de roles Administración de la **organización**, **Administración de destinatarios** y **Destinatarios de correo personalizado** de forma predeterminada) o el rol Opciones de **usuario** (que se asigna a los grupos de roles **Administración de la organización** y Departamento de **soporte técnico** de forma predeterminada). Para agregar usuarios a grupos de roles en Exchange Online, consulte [Modificar grupos de roles en Exchange Online](/Exchange/permissions-exo/role-groups#modify-role-groups). Tenga en cuenta que los usuarios con permisos predeterminados pueden realizar estos mismos procedimientos en su propio buzón, siempre y cuando tengan [acceso a Exchange Online PowerShell](/powershell/exchange/disable-access-to-exchange-online-powershell).
 
-- En los entornos híbridos en los que EOP protege los buzones de correo de Exchange local, es necesario configurar las reglas de flujo de correo (también conocidas como reglas de transporte) en Exchange local. Estas reglas de flujos de correo traducen el veredicto de filtrado de correo no deseado de EOP para que la regla de correo no deseado pueda mover el mensaje a la carpeta de correo no deseado. Para más detalles, consulte [Configurar EOP para enviar correo no deseado a la carpeta de Correo no deseado en entornos híbridos](/exchange/standalone-eop/configure-eop-spam-protection-hybrid).
+- In hybrid environments where EOP protects on-premises Exchange mailboxes, you need to configure mail flow rules (also known as transport rules) in on-premises Exchange. These mail flow rules translate the EOP spam filtering verdict so the junk email rule in the mailbox can move the message to the Junk Email folder. For details, see [Configure EOP to deliver spam to the Junk Email folder in hybrid environments](/exchange/standalone-eop/configure-eop-spam-protection-hybrid).
 
 - Los remitentes seguros para buzones compartidos no se sincronizan con Azure AD y EOP por diseño.
 

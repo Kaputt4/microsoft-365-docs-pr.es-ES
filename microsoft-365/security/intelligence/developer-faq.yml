@@ -14,15 +14,15 @@ metadata:
   ms.localizationpriority: medium
   manager: dansimp
   audience: ITPro
-  ms.collection: M365-security-compliance
+  ms.collection: m365-security
   ms.topic: faq
   ms.technology: m365d
-  ms.openlocfilehash: 79788aea9133d98097b5f944fa97b46450e665d0
-  ms.sourcegitcommit: c29af68260ba8676083674b3c70209bff2c2e362
+  ms.openlocfilehash: 3981dbd7d01f5a2cb5053de5bb462a68f07dc590
+  ms.sourcegitcommit: 12af9e8e3a6eaa090fda9e98ccb831dff65863a4
   ms.translationtype: MT
   ms.contentlocale: es-ES
-  ms.lasthandoff: 09/16/2022
-  ms.locfileid: "67738541"
+  ms.lasthandoff: 09/27/2022
+  ms.locfileid: "68060700"
 title: Preguntas más frecuentes para desarrolladores de software
 summary: En esta página se proporcionan respuestas a preguntas comunes que recibimos de los desarrolladores de software. Para obtener instrucciones generales sobre el envío de malware o archivos detectados incorrectamente, lea la guía de envío.
 sections:
@@ -53,7 +53,7 @@ sections:
   - question: >
       ¿Por qué el firewall de Windows Defender bloquea mi programa?
     answer: >
-      Los bloques de firewall no están relacionados con el Antivirus de Microsoft Defender ni con otros antimalware de Microsoft. [Obtenga información sobre Windows Defender Firewall](/windows/security/windows-firewall/windows-firewall-with-advanced-security.md).
+      Los bloques de firewall no están relacionados con Microsoft Defender Antivirus y otros antimalware de Microsoft. [Obtenga información sobre Windows Defender Firewall](/windows/security/windows-firewall/windows-firewall-with-advanced-security.md).
   - question: >
-      ¿Por qué SmartScreen de Microsoft Defender dice que mi programa no se descarga con frecuencia?
-    answer: Esto no está relacionado con el Antivirus de Microsoft Defender ni con otros antimalware de Microsoft. [Más información sobre SmartScreen de Microsoft Defender](/windows/security/microsoft-defender-smartscreen/microsoft-defender-smartscreen-overview.md)
+      ¿Por qué el Microsoft Defender SmartScreen dice que mi programa no se descarga con frecuencia?
+    answer: Esto no está relacionado con Microsoft Defender Antivirus y otros antimalware de Microsoft. [Más información sobre Microsoft Defender SmartScreen](/windows/security/microsoft-defender-smartscreen/microsoft-defender-smartscreen-overview.md)

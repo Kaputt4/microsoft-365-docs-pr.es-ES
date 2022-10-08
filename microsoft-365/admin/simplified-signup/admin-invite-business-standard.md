@@ -7,19 +7,20 @@ author: kwekua
 manager: scotv
 audience: Admin
 ms.topic: article
-ms.service: o365-administration
+ms.service: microsoft-365-business
 ms.localizationpriority: medium
 ms.collection:
+- scotvorg
 - Adm_TOC
 ms.custom:
 - AdminSurgePortfolio
 description: Invitar a los usuarios a unirse a Microsoft 365 Empresa Estándar organización
-ms.openlocfilehash: 30896a963c3a60e3124e0d1a750bb17a44941037
-ms.sourcegitcommit: 173f696dc8f81259d852775572a6938ec39f6115
+ms.openlocfilehash: 3ebee814a0241a6f4c6f7bc13e21209693cda6b8
+ms.sourcegitcommit: 0b7070ec119e00e0dafe030bbfbef0ae5c9afa19
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/10/2022
-ms.locfileid: "67644255"
+ms.lasthandoff: 09/29/2022
+ms.locfileid: "68168933"
 ---
 # <a name="invite-users-to-a-microsoft-365-for-business-subscription-admin"></a>Invitar a usuarios a una suscripción de Microsoft 365 para empresas (Administración)
 
@@ -51,7 +52,7 @@ Asegúrese de que ya se ha [registrado para Microsoft 365 Empresa Estándar](sig
 
 Realice un seguimiento con los usuarios y asegúrese de que recibieron la invitación por correo electrónico que envió sobre cómo compartir su suscripción Microsoft 365 Empresa Estándar.
 
-## <a name="frequently-asked-questions"></a>Preguntas más frecuentes
+## <a name="frequently-asked-questions"></a>Preguntas frecuentes
 
 ### <a name="i-shared-an-email-invite-but-the-user-didnt-receive-the-email"></a>He compartido una invitación por correo electrónico, pero el usuario no ha recibido el correo electrónico.
 

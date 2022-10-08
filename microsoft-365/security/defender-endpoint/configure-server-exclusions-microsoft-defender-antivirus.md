@@ -1,9 +1,9 @@
 ---
-title: Configuración de exclusiones del Antivirus de Microsoft Defender en Windows Server
+title: Configuración de exclusiones de antivirus de Microsoft Defender en Windows Server
 ms.reviewer: pahuijbr
 manager: dansimp
 description: Windows Server incluye exclusiones automáticas basadas en el rol de servidor. También puede agregar exclusiones personalizadas.
-keywords: exclusiones, servidor, exclusiones automáticas, automáticas, personalizadas, exámenes, Antivirus de Microsoft Defender
+keywords: exclusiones, servidor, exclusiones automáticas, automáticas, personalizadas, exámenes, Microsoft Defender Antivirus
 ms.service: microsoft-365-security
 ms.subservice: mde
 ms.mktglfcycl: manage
@@ -14,16 +14,18 @@ author: denisebmsft
 ms.author: deniseb
 ms.topic: article
 ms.custom: nextgen
-ms.collection: M365-security-compliance
+ms.collection:
+- m365-security
+- tier2
 search.appverid: met150
-ms.openlocfilehash: 29fc3af1509d471db9fef89e972940d095986022
-ms.sourcegitcommit: 9b133379196da2b3a4bb311b07ff274f43780f68
+ms.openlocfilehash: 53b06977889d58d7a61985f2eb86d05fa268bdfd
+ms.sourcegitcommit: 0b7070ec119e00e0dafe030bbfbef0ae5c9afa19
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/14/2022
-ms.locfileid: "67701640"
+ms.lasthandoff: 09/29/2022
+ms.locfileid: "68194387"
 ---
-# <a name="configure-microsoft-defender-antivirus-exclusions-on-windows-server"></a>Configuración de exclusiones del Antivirus de Microsoft Defender en Windows Server
+# <a name="configure-microsoft-defender-antivirus-exclusions-on-windows-server"></a>Configuración de exclusiones de antivirus de Microsoft Defender en Windows Server
 
 
 **Se aplica a:**
@@ -34,7 +36,7 @@ ms.locfileid: "67701640"
 **Plataformas**
 - Windows
 
-Antivirus de Microsoft Defender en Windows Server 2016 y Windows Server 2019 le inscribe automáticamente en determinadas exclusiones, según lo definido por el rol de servidor especificado. Estas exclusiones no aparecen en las listas de exclusión estándar que se muestran en la [aplicación Seguridad de Windows](microsoft-defender-security-center-antivirus.md).
+Microsoft Defender Antivirus en Windows Server 2016 y Windows Server 2019 le inscribe automáticamente en determinadas exclusiones, tal como se define en el rol de servidor especificado. Estas exclusiones no aparecen en las listas de exclusión estándar que se muestran en la [aplicación Seguridad de Windows](microsoft-defender-security-center-antivirus.md).
 
 Además de las exclusiones automáticas definidas por rol del servidor, puede agregar o quitar exclusiones personalizadas. Para ello, consulte estos artículos:
 - [Configuración y validación de exclusiones basadas en el nombre de archivo, la extensión y la ubicación de la carpeta](configure-extension-file-exclusions-microsoft-defender-antivirus.md)
@@ -46,13 +48,13 @@ Además de las exclusiones automáticas definidas por rol del servidor, puede ag
 - Las exclusiones automáticas solo se aplican al examen [de protección en tiempo real (RTP](configure-protection-features-microsoft-defender-antivirus.md) ). 
 - Las exclusiones automáticas no se respetan durante un [examen completo, rápido o a petición](schedule-antivirus-scans.md#quick-scan-full-scan-and-custom-scan).
 - Las exclusiones personalizadas y duplicadas no entran en conflicto con las exclusiones automáticas.
-- Antivirus de Microsoft Defender usa las herramientas de administración y mantenimiento de imágenes de implementación (DISM) para determinar qué roles están instalados en el equipo.
+- Microsoft Defender Antivirus usa las herramientas de administración y mantenimiento de imágenes de implementación (DISM) para determinar qué roles están instalados en el equipo.
 - Se deben establecer exclusiones adecuadas para el software que no se incluye con el sistema operativo.
-- Windows Server 2012 R2 no tiene antivirus de Microsoft Defender como característica instalable. Al incorporar esos servidores a Defender para punto de conexión, instalará Antivirus de Microsoft Defender y se aplicarán las exclusiones predeterminadas para los archivos del sistema operativo. Sin embargo, las exclusiones de los roles de servidor (como se especifica a continuación) no se aplican automáticamente y debe configurar estas exclusiones según corresponda. Para obtener más información, consulta [Incorporación de servidores Windows al servicio Microsoft Defender para punto de conexión](configure-server-endpoints.md).
+- Windows Server 2012 R2 no tiene Microsoft Defender Antivirus como característica instalable. Al incorporar esos servidores a Defender para punto de conexión, instalará Microsoft Defender Antivirus y se aplicarán exclusiones predeterminadas para los archivos del sistema operativo. Sin embargo, las exclusiones de los roles de servidor (como se especifica a continuación) no se aplican automáticamente y debe configurar estas exclusiones según corresponda. Para obtener más información, consulta [Incorporación de servidores Windows al servicio Microsoft Defender para punto de conexión](configure-server-endpoints.md).
 
-En este artículo se proporciona información general sobre las exclusiones de Antivirus de Microsoft Defender en Windows Server 2016 o versiones posteriores.
+En este artículo se proporciona información general sobre las exclusiones de Microsoft Defender Antivirus en Windows Server 2016 o versiones posteriores.
 
-Dado que Antivirus de Microsoft Defender está integrado en Windows Server 2016 y versiones posteriores, las exclusiones de los archivos del sistema operativo y los roles de servidor se producen automáticamente. Sin embargo, puede definir exclusiones personalizadas. También puede optar por no participar en exclusiones automáticas si es necesario.
+Dado que Microsoft Defender Antivirus está integrado en Windows Server 2016 y versiones posteriores, las exclusiones de los archivos del sistema operativo y los roles de servidor se producen automáticamente. Sin embargo, puede definir exclusiones personalizadas. También puede optar por no participar en exclusiones automáticas si es necesario.
 
 En este artículo se incluyen las siguientes secciones:
 
@@ -69,7 +71,7 @@ En Windows Server 2016 o posterior, no es necesario definir las siguientes exclu
 - Archivos de sistema operativo
 - Roles de servidor y cualquier archivo que se agregue a través de roles de servidor
 
-Dado que antivirus de Microsoft Defender está integrado, no requiere exclusiones para los archivos del sistema operativo en Windows Server 2016 o versiones posteriores. Además, al ejecutar Windows Server 2016 o posterior e instalar un rol, Antivirus de Microsoft Defender incluye exclusiones automáticas para el rol de servidor y los archivos que se agregan al instalar el rol.
+Dado que Microsoft Defender Antivirus está integrado, no requiere exclusiones para los archivos del sistema operativo en Windows Server 2016 o versiones posteriores. Además, al ejecutar Windows Server 2016 o posterior e instalar un rol, Microsoft Defender Antivirus incluye exclusiones automáticas para el rol de servidor y los archivos que se agregan al instalar el rol.
 
 Las exclusiones del sistema operativo y las exclusiones de roles de servidor no aparecen en las listas de exclusión estándar que se muestran en la [aplicación Seguridad de Windows](microsoft-defender-security-center-antivirus.md).
 
@@ -341,7 +343,7 @@ Puede deshabilitar las listas de exclusión automática con directiva de grupo, 
 
 2. En el **Editor de administración de directiva de grupo**, vaya a **Configuración del equipo** y, a continuación, seleccione **Plantillas administrativas**.
 
-3. Expanda el árbol a **componentes** \> de Windows **Exclusiones** **del Antivirus** \> de Microsoft Defender.
+3. Expanda el árbol a **componentes** \> de Windows Microsoft Defender **Exclusiones** **del antivirus**\>.
 
 4. Haga doble clic en **Desactivar exclusiones automáticas** y establezca la opción **en Habilitado**. A continuación, seleccione **Aceptar**.
 
@@ -355,8 +357,8 @@ Set-MpPreference -DisableAutoExclusions $true
 
 Para obtener más información, consulte los siguientes recursos:
 
-- [Use cmdlets de PowerShell para configurar y ejecutar el Antivirus de Microsoft Defender](use-powershell-cmdlets-microsoft-defender-antivirus.md).
-- [Use PowerShell con el Antivirus de Microsoft Defender](/powershell/module/defender/).
+- [Use cmdlets de PowerShell para configurar y ejecutar Microsoft Defender Antivirus](use-powershell-cmdlets-microsoft-defender-antivirus.md).
+- [Use PowerShell con Microsoft Defender Antivirus](/powershell/module/defender/).
 
 ### <a name="use-windows-management-instruction-wmi-to-disable-the-auto-exclusions-list-on-windows-server"></a>Usar instrucciones de administración de Windows (WMI) para deshabilitar la lista de exclusiones automáticas en Windows Server
 
@@ -389,9 +391,9 @@ Si es necesario, puede agregar o quitar exclusiones personalizadas. Para ello, c
 
 ## <a name="see-also"></a>Vea también
 
-- [Configuración y validación de exclusiones para exámenes del Antivirus de Microsoft Defender](configure-exclusions-microsoft-defender-antivirus.md)
+- [Configuración y validación de exclusiones para exámenes de antivirus de Microsoft Defender](configure-exclusions-microsoft-defender-antivirus.md)
 - [Configuración y validación de exclusiones basadas en el nombre de archivo, la extensión y la ubicación de la carpeta](configure-extension-file-exclusions-microsoft-defender-antivirus.md)
 - [Configuración y validación de exclusiones para archivos abiertos por procesos](configure-process-opened-file-exclusions-microsoft-defender-antivirus.md)
 - [Errores comunes para evitarlos cuando se definen exclusiones](common-exclusion-mistakes-microsoft-defender-antivirus.md)
-- [Personalización, inicio y revisión de los resultados de los exámenes y correcciones del Antivirus de Microsoft Defender](customize-run-review-remediate-scans-microsoft-defender-antivirus.md)
+- [Personalización, inicio y revisión de los resultados de los exámenes y correcciones de Microsoft Defender Antivirus](customize-run-review-remediate-scans-microsoft-defender-antivirus.md)
 - [Antivirus de Microsoft Defender en Windows 10](microsoft-defender-antivirus-in-windows-10.md)

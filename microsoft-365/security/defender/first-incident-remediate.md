@@ -16,19 +16,20 @@ ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection:
-- M365-security-compliance
+- m365-security
 - m365solution-firstincident
 - highpri
+- tier1
 ms.topic: conceptual
 search.appverid:
 - MOE150
 - MET150
-ms.openlocfilehash: 63c9e47f30e113a6b79e0b290d19b8fe9e9a6399
-ms.sourcegitcommit: 10e6abe740e27000e223378eb17d657a47555fa8
+ms.openlocfilehash: 9352f54e54966850484caf2b3a116710c41b248a
+ms.sourcegitcommit: 12af9e8e3a6eaa090fda9e98ccb831dff65863a4
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/31/2022
-ms.locfileid: "67482304"
+ms.lasthandoff: 09/27/2022
+ms.locfileid: "68060876"
 ---
 # <a name="step-2-remediate-your-first-incident"></a>Paso 2. Corrección del primer incidente
 
@@ -45,7 +46,7 @@ Microsoft 365 Defender ofrece varias acciones de corrección que los analistas p
 
 - **Aislar el dispositivo** : esta actividad bloquea inmediatamente todo el tráfico de red (internet e interno) para minimizar la propagación de malware y permitir que los analistas continúen el análisis sin que un actor malintencionado pueda continuar con un ataque. La única conexión permitida es a la nube del servicio Microsoft Defender for Identity, por lo que Microsoft Defender for Identity puede seguir supervisando el dispositivo. 
 - **Restringir la ejecución** de aplicaciones: para restringir la ejecución de una aplicación, se aplica una directiva de integridad de código que solo permite ejecutar archivos si están firmados por un certificado emitido por Microsoft. Este método de restricción puede ayudar a evitar que un atacante controle dispositivos en peligro y realice otras actividades malintencionadas.
-- **Ejecutar examen antivirus** : un examen antivirus de Microsoft Defender puede ejecutarse junto con otras soluciones antivirus, independientemente de si Antivirus de Defender es la solución antivirus activa o no. Si otro producto de proveedor de antivirus es la solución de endpoint protection principal, puede ejecutar Antivirus de Defender en modo pasivo.
+- **Ejecutar examen antivirus**: un examen Microsoft Defender Antivirus puede ejecutarse junto con otras soluciones antivirus, independientemente de si Antivirus de Defender es la solución antivirus activa o no. Si otro producto de proveedor de antivirus es la solución de endpoint protection principal, puede ejecutar Antivirus de Defender en modo pasivo.
 - **Iniciar investigación automatizada** : puede iniciar una nueva investigación automatizada de uso general en el dispositivo. Mientras se ejecuta una investigación, cualquier otra alerta generada desde el dispositivo se agregará a una investigación automatizada en curso hasta que se complete esa investigación. Además, si se ve la misma amenaza en otros dispositivos, esos dispositivos se agregan a la investigación.
 - **Iniciar respuesta en directo** : la respuesta en directo es una funcionalidad que proporciona acceso instantáneo a un dispositivo mediante una conexión de shell remoto. Esto le ofrece la capacidad de realizar un trabajo de investigación en profundidad y tomar medidas de respuesta inmediatas para contener rápidamente amenazas identificadas en tiempo real. La respuesta en directo está diseñada para mejorar las investigaciones, ya que le permite recopilar datos forenses, ejecutar scripts, enviar entidades sospechosas para su análisis, corregir amenazas y buscar amenazas emergentes de forma proactiva.
 - **Recopilar paquete de investigación** : como parte del proceso de investigación o respuesta, puede recopilar un paquete de investigación de un dispositivo. Al recopilar el paquete de investigación, puede identificar el estado actual del dispositivo y comprender aún más las herramientas y técnicas usadas por el atacante. 
