@@ -12,16 +12,17 @@ ms.localizationpriority: medium
 manager: sunasing
 audience: ITPro
 ms.collection:
-- m365-security-compliance
+- m365-security
+- tier3
 ms.topic: reference
 ms.subservice: mde
 search.appverid: met150
-ms.openlocfilehash: 9892b5eafdbcbabf2038a287a7ae4e58081f72bc
-ms.sourcegitcommit: 9b133379196da2b3a4bb311b07ff274f43780f68
+ms.openlocfilehash: e7b7117703fccd95c40f2ec6ec979cca526d6319
+ms.sourcegitcommit: 4e42bafee965446f44f7f57d1defed2b9b24fce8
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/14/2022
-ms.locfileid: "67688823"
+ms.lasthandoff: 09/30/2022
+ms.locfileid: "68221200"
 ---
 # <a name="whats-new-in-microsoft-defender-for-endpoint-on-ios"></a>Novedades de Microsoft Defender para punto de conexión en iOS
 
@@ -34,13 +35,17 @@ ms.locfileid: "67688823"
 
 ¿Quiere experimentar Microsoft Defender para punto de conexión? [Regístrese para obtener una prueba gratuita.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-exposedapis-abovefoldlink)
 
+## <a name="vulnerability-assessment-of-apps"></a>Evaluación de vulnerabilidades de las aplicaciones
+
+La evaluación de vulnerabilidades de las aplicaciones en Microsoft Defender para punto de conexión para iOS está ahora en versión preliminar pública. Defender para punto de conexión en iOS admite evaluaciones de vulnerabilidades de aplicaciones solo para dispositivos inscritos (MDM). Para obtener más información, consulte [Configuración de la evaluación de vulnerabilidades de las aplicaciones](/microsoft-365/security/defender-endpoint/ios-configure-features#configure-vulnerability-assessment-of-apps). Si está interesado en participar en la versión preliminar, comparta el nombre y el identificador del inquilino con nosotros: mdatpmobile@microsoft.com.
+
 ## <a name="network-protection"></a>Protección de red
 
 La protección de red en Microsoft Defender para punto de conexión está ahora en versión preliminar pública. La protección de red proporciona protección contra amenazas no autorizadas Wi-Fi relacionadas, hardware no autorizado como dispositivos de piña y notifica al usuario si se detecta una amenaza relacionada. Los usuarios también verán una experiencia guiada para conectarse a redes seguras y cambiar las redes cuando estén conectadas a una conexión no segura.
 
 Incluye varios controles de administración para ofrecer flexibilidad, como la capacidad de configurar la característica desde el Centro de microsoft Endpoint Manager Administración. Los administradores también pueden habilitar los controles de privacidad para configurar los datos enviados por Defender para punto de conexión desde dispositivos iOS. Para obtener más información, consulte [Configurar protección de red](/microsoft-365/security/defender-endpoint/ios-configure-features#configure-network-protection).
 
-La protección de red para iOS ya está habilitada para el inquilino. Los usuarios finales que prueban la característica protección de red pueden instalar la versión preliminar de la aplicación a través de TestFlight. Vaya a https://aka.ms/mdeiospp en el dispositivo iOS. Esto le pedirá que instale la aplicación TestFlight en el dispositivo o abra TestFlight en caso de que ya esté instalada. En la aplicación TestFlight, siga las instrucciones en pantalla para instalar el punto de conexión de Microsoft Defender. Compruebe que el número de versión de MDE es 1.1.29270104.
+La protección de red para iOS ya está habilitada para el inquilino. Los usuarios finales que prueban la característica protección de red pueden instalar la versión preliminar de la aplicación a través de TestFlight. Vaya a https://aka.ms/mdeiospp en el dispositivo iOS. Esto le pedirá que instale la aplicación TestFlight en el dispositivo o abra TestFlight en caso de que ya esté instalada. En la aplicación TestFlight, siga las instrucciones en pantalla para instalar Microsoft Defender punto de conexión. Compruebe que el número de versión de MDE es 1.1.29270104.
 
 ## <a name="privacy-controls"></a>Controles de privacidad
 
@@ -60,9 +65,9 @@ Microsoft Defender para punto de conexión en iOS ahora se puede integrar con Mi
 
 Microsoft Defender para punto de conexión en iOS ahora tiene una capacidad especializada en dispositivos iOS/iPadOS supervisados, dadas las mayores funcionalidades de administración proporcionadas por la plataforma en estos tipos de dispositivos. También puede proporcionar protección web **sin configurar una VPN local en el dispositivo**. Esto proporciona a los usuarios finales una experiencia sin problemas mientras siguen protegidos contra suplantación de identidad (phishing) y otros ataques basados en web. Para obtener más información, visite [esta documentación](ios-install.md#complete-deployment-for-supervised-devices).
 
-## <a name="microsoft-defender-for-endpoint-is-now-microsoft-defender-in-the-app-store"></a>Microsoft Defender para punto de conexión ahora es Microsoft Defender en app store
+## <a name="microsoft-defender-for-endpoint-is-now-microsoft-defender-in-the-app-store"></a>Microsoft Defender para punto de conexión ahora está Microsoft Defender en app store
 
-Microsoft Defender para punto de conexión ahora está disponible como **Microsoft Defender** en la tienda de aplicaciones. Con esta actualización, la aplicación estará disponible como versión preliminar para **consumidores en la región de EE. UU**. En función de cómo inicie sesión en la aplicación con su cuenta profesional o personal, tendrá acceso a las características de Microsoft Defender para punto de conexión o a las características de Microsoft Defender para usuarios individuales. Para obtener más información, consulte [este blog](https://www.microsoft.com/microsoft-365/microsoft-defender-for-individuals).
+Microsoft Defender para punto de conexión ahora está disponible como **Microsoft Defender** en la tienda de aplicaciones. Con esta actualización, la aplicación estará disponible como versión preliminar para **consumidores en la región de EE. UU**. En función de cómo inicie sesión en la aplicación con su cuenta profesional o personal, tendrá acceso a las características de Microsoft Defender para punto de conexión o a las características de Microsoft Defender para las personas. Para obtener más información, consulte [este blog](https://www.microsoft.com/microsoft-365/microsoft-defender-for-individuals).
 
 ## <a name="vulnerability-management"></a>Administración de vulnerabilidades
 
@@ -91,7 +96,7 @@ El 25 de enero de 2022, anunciamos la disponibilidad general de la administraci�
 
 ## <a name="1120240103"></a>1.1.20240103
 - Tarjeta de estado del dispositivo: la tarjeta device health notifica a los usuarios finales sobre las actualizaciones de software pendientes.
-- Mejoras de facilidad de uso: los usuarios finales ahora pueden deshabilitar la VPN de Defender para punto de conexión desde la propia aplicación de Microsoft Defender. Antes de esta actualización, los usuarios finales tenían que deshabilitar la VPN solo desde la aplicación Configuración.
+- Mejoras de facilidad de uso: los usuarios finales ahora pueden deshabilitar la VPN de Defender para punto de conexión desde la propia aplicación Microsoft Defender. Antes de esta actualización, los usuarios finales tenían que deshabilitar la VPN solo desde la aplicación Configuración.
 - Correcciones de errores.
 
 ## <a name="1120020101"></a>1.1.20020101
@@ -108,7 +113,7 @@ El 25 de enero de 2022, anunciamos la disponibilidad general de la administraci�
 
 - **La detección de jailbreak** está en versión preliminar. Para obtener más información, consulte [Configuración de la directiva de acceso condicional en función de las señales de riesgo del dispositivo](ios-configure-features.md#conditional-access-with-defender-for-endpoint-on-ios).
 - **La configuración automática del perfil de VPN** está en versión preliminar para dispositivos inscritos a través de Microsoft Endpoint Manager (Intune). Para obtener más información, consulte [Configuración automática del perfil de VPN para dispositivos iOS inscritos](ios-install.md#auto-onboarding-of-vpn-profile-simplified-onboarding).
-- El nombre del producto atp de Microsoft Defender se ha actualizado para Microsoft Defender para punto de conexión en la tienda de aplicaciones.
+- El nombre del producto Microsoft Defender ATP se ha actualizado para Microsoft Defender para punto de conexión en la tienda de aplicaciones.
 - Experiencia de inicio de sesión mejorada.
 - Correcciones de errores.
 

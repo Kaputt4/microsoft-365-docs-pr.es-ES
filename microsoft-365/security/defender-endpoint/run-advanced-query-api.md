@@ -12,17 +12,19 @@ author: mjcaparas
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
-ms.collection: M365-security-compliance
+ms.collection:
+- m365-security
+- tier3
 ms.topic: article
 ms.subservice: mde
 ms.custom: api
 search.appverid: met150
-ms.openlocfilehash: cc23d418fb75a132d0de510ae5035922b800ec5a
-ms.sourcegitcommit: 9b133379196da2b3a4bb311b07ff274f43780f68
+ms.openlocfilehash: 45765e6b848697bc960c0da363b2cc61659ae801
+ms.sourcegitcommit: 4e42bafee965446f44f7f57d1defed2b9b24fce8
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/14/2022
-ms.locfileid: "67684395"
+ms.lasthandoff: 09/30/2022
+ms.locfileid: "68229292"
 ---
 # <a name="advanced-hunting-api"></a>API de búsqueda avanzada
 
@@ -71,6 +73,8 @@ Delegado (cuenta profesional o educativa)|AdvancedQuery.Read|"Ejecutar consultas
 >
 > - El usuario debe tener el rol "Ver datos" de AD
 > - El usuario debe tener acceso al dispositivo en función de la configuración del grupo de dispositivos (consulte [Creación y administración de grupos de dispositivos](machine-groups.md) para obtener más información).
+>
+> La creación de grupos de dispositivos se admite en El plan 1 y el plan 2 de Defender para punto de conexión.  
 
 ## <a name="http-request"></a>Solicitud HTTP
 

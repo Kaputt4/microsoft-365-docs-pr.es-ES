@@ -11,17 +11,19 @@ author: mjcaparas
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
-ms.collection: M365-security-compliance
+ms.collection:
+- m365-security
+- tier3
 ms.topic: article
 ms.subservice: mde
 ms.custom: api
 search.appverid: met150
-ms.openlocfilehash: b93330f549089cd0a5252fa871a0ef63c8249a3b
-ms.sourcegitcommit: 9b133379196da2b3a4bb311b07ff274f43780f68
+ms.openlocfilehash: a50aa7c1771469f7ba55f93d02deaaee98824deb
+ms.sourcegitcommit: 4e42bafee965446f44f7f57d1defed2b9b24fce8
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/14/2022
-ms.locfileid: "67684495"
+ms.lasthandoff: 09/30/2022
+ms.locfileid: "68229402"
 ---
 # <a name="restrict-app-execution-api"></a>Restricción de la API de ejecución de aplicaciones
 
@@ -53,7 +55,7 @@ Restrinja la ejecución de todas las aplicaciones del dispositivo excepto un con
 > [!IMPORTANT]
 >
 > - Esta acción está disponible para dispositivos en Windows 10, versión 1709 o posterior, y en Windows 11.
-> - Esta característica está disponible si su organización usa el Antivirus de Microsoft Defender.
+> - Esta característica está disponible si su organización usa Microsoft Defender Antivirus.
 > - Esta acción debe cumplir los requisitos de firma y formatos de directiva de integridad de código Windows Defender Control de aplicaciones. Para obtener más información, consulte [Formatos y firma de directivas de integridad de código](/windows/device-security/device-guard/requirements-and-deployment-planning-guidelines-for-device-guard#code-integrity-policy-formats-and-signing).
 
 ## <a name="permissions"></a>Permisos
@@ -70,6 +72,8 @@ Delegado (cuenta profesional o educativa)|Machine.RestrictExecution|"Restringir 
 >
 > - El usuario debe tener al menos el siguiente permiso de rol: "Acciones de corrección activas" (consulte [Creación y administración de roles](user-roles.md) para obtener más información).
 > - El usuario debe tener acceso al dispositivo en función de la configuración del grupo de dispositivos (consulte [Creación y administración de grupos de dispositivos](machine-groups.md) para obtener más información).
+>
+> La creación de grupos de dispositivos se admite en El plan 1 y el plan 2 de Defender para punto de conexión.  
 
 ## <a name="http-request"></a>Solicitud HTTP
 

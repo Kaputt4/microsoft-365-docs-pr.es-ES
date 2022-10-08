@@ -13,16 +13,17 @@ ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection:
-- m365-security-compliance
+- m365-security
+- tier3
 ms.topic: conceptual
 ms.subservice: mde
 search.appverid: met150
-ms.openlocfilehash: a15b15b5fabeb51a5ce3445ad3e98e9f7d843f3d
-ms.sourcegitcommit: 9b133379196da2b3a4bb311b07ff274f43780f68
+ms.openlocfilehash: 5c0c5e4eea9a639364f1750c960102740d071163
+ms.sourcegitcommit: 4e42bafee965446f44f7f57d1defed2b9b24fce8
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/14/2022
-ms.locfileid: "67692473"
+ms.lasthandoff: 09/30/2022
+ms.locfileid: "68229490"
 ---
 # <a name="deploy-microsoft-defender-for-endpoint-on-linux-with-ansible"></a>Implementación de Microsoft Defender para punto de conexión en Linux con Ansible
 
@@ -52,7 +53,7 @@ Además, para la implementación de Ansible, debe estar familiarizado con las ta
 - SSH debe configurarse para una cuenta de administrador entre el nodo de control y todos los nodos administrados (dispositivos que tendrán Defender para punto de conexión instalado en ellos) y se recomienda configurarlo con autenticación de clave pública.
 - El software siguiente debe instalarse en todos los nodos administrados:
   - Enrollamiento
-  - python-apt
+  - python-apt (si va a implementar en distribuciones mediante apt como administrador de paquetes)
 
 - Todos los nodos administrados deben aparecer en el siguiente formato en el archivo o en el `/etc/ansible/hosts` archivo correspondiente:
 

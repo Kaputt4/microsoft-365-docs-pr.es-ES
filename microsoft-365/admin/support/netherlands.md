@@ -7,21 +7,23 @@ ms.author: cmcatee
 manager: scotv
 audience: Admin
 ms.topic: reference
-ms.service: o365-administration
-ms.collection: Adm_Support
+ms.service: microsoft-365-business
+ms.collection:
+- scotvorg
+- Adm_Support
 ms.localizationpriority: medium
 description: Obtenga información acerca de cómo ponerse en contacto con el soporte técnico de su país o región.
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: 7b241b2007e7ddcb0809e086bdb6cfa4c774fc74
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 5473a974ad523000d03ff30fd6adc7a830ccb443
+ms.sourcegitcommit: 0b7070ec119e00e0dafe030bbfbef0ae5c9afa19
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60192528"
+ms.lasthandoff: 09/29/2022
+ms.locfileid: "68199535"
 ---
-# <a name="contact-support-for-netherlands"></a>Póngase en contacto con el soporte técnico de Países Bajos
+# <a name="contact-support-for-netherlands"></a>Póngase en contacto con el soporte técnico para Países Bajos
 
-[Buscar otro país o región](../../business-video/get-help-support.md).
+[Buscar otro país o región](../get-help-support.md).
 
 ## <a name="phone-number"></a>Número de teléfono
 0800 020 2546
@@ -29,7 +31,7 @@ ms.locfileid: "60192528"
 ## <a name="hours"></a>Horas
 ### <a name="billing-support"></a>Soporte de facturación:
 
-Neerlandés: Mon-Fri 9 AM-5 PM
+Neerlandés: Mon-Fri de 9:00 a.m. a 5 p. m.
 
 Inglés: lunes a viernes de 9:00 a 17:00
 
@@ -37,6 +39,6 @@ Inglés: lunes a viernes de 9:00 a 17:00
 
 Inglés: 24 horas al día, 7 días a la semana
 
-Número Teléfono alternativa: 020 203 5362
+Número de teléfono alternativo: 020 203 5362
 
 Se aplican tarifas de llamada local

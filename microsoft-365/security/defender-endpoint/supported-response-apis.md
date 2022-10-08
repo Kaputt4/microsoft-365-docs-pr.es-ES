@@ -13,15 +13,18 @@ author: mjcaparas
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
-ms.collection: M365-security-compliance
+ms.collection:
+- m365-security
+- tier3
+ms.custom: api
 ms.topic: conceptual
 ms.subservice: mde
-ms.openlocfilehash: cc13b1fcb9c396133d63cb0019a49933d34e10f9
-ms.sourcegitcommit: d3ef9391f621e8f4ca70661184b3bb82c6cbda94
+ms.openlocfilehash: 9086bae05ecfcea2bd055de23137fbe147e77be4
+ms.sourcegitcommit: 4e42bafee965446f44f7f57d1defed2b9b24fce8
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/02/2022
-ms.locfileid: "67585914"
+ms.lasthandoff: 09/30/2022
+ms.locfileid: "68221420"
 ---
 # <a name="supported-microsoft-defender-for-endpoint-query-apis"></a>API de consulta de Microsoft Defender para punto de conexión admitidas
 
@@ -54,7 +57,7 @@ Obtenga información sobre las llamadas API compatibles relacionadas con la resp
 |Detener y poner en cuarentena un archivo|Ejecute esta llamada para detener la ejecución de procesos, poner en cuarentena los archivos y eliminar la persistencia, como las claves del Registro.|
 |Solicitar ejemplo|Ejecute esta llamada para solicitar un ejemplo de un archivo desde un dispositivo específico. El archivo se recopilará del dispositivo y se cargará en un almacenamiento seguro.|
 |Bloquear archivo|Ejecute esta API para evitar la propagación de un ataque en su organización mediante la prohibición de archivos potencialmente malintencionados o sospechas de malware.|
-|Desbloquear archivo|Permitir la ejecución de un archivo en la organización mediante el Antivirus de Microsoft Defender.|
+|Desbloquear archivo|Permitir la ejecución de un archivo en la organización mediante Microsoft Defender Antivirus.|
 |Obtención del URI de SAS del paquete|Ejecute esta API para obtener un URI que permita descargar un paquete de investigación.|
 |Get MachineAction (objeto)|Ejecute esta API para obtener el objeto MachineAction.|
 |Obtención de la colección MachineActions|Ejecute esta opción para obtener la colección MachineAction.|

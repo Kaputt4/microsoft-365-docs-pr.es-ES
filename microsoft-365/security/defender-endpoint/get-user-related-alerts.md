@@ -11,17 +11,19 @@ author: mjcaparas
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
-ms.collection: M365-security-compliance
+ms.collection:
+- m365-security
+- tier3
 ms.topic: article
 ms.subservice: mde
 ms.custom: api
 search.appverid: met150
-ms.openlocfilehash: 055b6082a771f0105daa4bf3d4cf1499ff2e5faf
-ms.sourcegitcommit: 9b133379196da2b3a4bb311b07ff274f43780f68
+ms.openlocfilehash: b1c598b9710596930c645b88ea822324a744c70d
+ms.sourcegitcommit: 0b7070ec119e00e0dafe030bbfbef0ae5c9afa19
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/14/2022
-ms.locfileid: "67694533"
+ms.lasthandoff: 09/29/2022
+ms.locfileid: "68190625"
 ---
 # <a name="get-user-related-alerts-api"></a>Obtención de la API de alertas relacionadas con el usuario
 
@@ -62,6 +64,8 @@ Delegado (cuenta profesional o educativa) | Alert.ReadWrite | "Alertas de lectur
 >
 > - El usuario debe tener al menos el siguiente permiso de rol: "Ver datos". Para obtener más información, consulte [Creación y administración de roles](user-roles.md).
 > - La respuesta incluirá solo alertas asociadas a dispositivos a las que el usuario tenga acceso, según la configuración del grupo de dispositivos (consulte [Creación y administración de grupos de dispositivos](machine-groups.md) para obtener más información).
+>
+> La creación de grupos de dispositivos se admite en El plan 1 y el plan 2 de Defender para punto de conexión. 
 
 ## <a name="http-request"></a>Solicitud HTTP
 

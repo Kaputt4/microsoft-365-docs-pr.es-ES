@@ -8,9 +8,10 @@ manager: scotv
 ms.reviewer: tugu, jmueller
 audience: Admin
 ms.topic: article
-ms.service: o365-administration
+ms.service: microsoft-365-business
 ms.localizationpriority: medium
 ms.collection:
+- scotvorg
 - M365-subscription-management
 - Adm_O365
 ms.custom:
@@ -21,12 +22,12 @@ ms.custom:
 search.appverid: MET150
 description: Obtenga información sobre cómo actualizar las direcciones de facturación o la dirección de correo electrónico que se usa para recibir notificaciones de facturación de Microsoft 365 para empresas.
 ms.date: 01/24/2022
-ms.openlocfilehash: 3421cdfa1951d4bcde91d8b0eb97612054980ced
-ms.sourcegitcommit: d1b60ed9a11f5e6e35fbaf30ecaeb9dfd6dd197d
+ms.openlocfilehash: 6a15d5e1b2f13f4cf7dd8f9757ff1616d9b4bc9b
+ms.sourcegitcommit: 0b7070ec119e00e0dafe030bbfbef0ae5c9afa19
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/29/2022
-ms.locfileid: "66493383"
+ms.lasthandoff: 09/29/2022
+ms.locfileid: "68206265"
 ---
 # <a name="change-your-microsoft-365-for-business-billing-addresses"></a>Cambio de las direcciones de facturación de Microsoft 365 para empresas
 
@@ -36,7 +37,7 @@ La factura o factura contiene tres direcciones:
 
 - **Dirección de facturación** Esta es la dirección de su departamento de facturación y suele ser la misma que la dirección del **solicitante**.
 
-- **Dirección de uso del servicio** La dirección donde se usa el servicio, normalmente es la misma que la dirección **del solicitante**. Si su organización tiene usuarios remotos o varias oficinas, use la dirección en la que se encuentran la mayoría de sus usuarios.
+- **Service Usage Address** The address where the service is being used, usually the same as the **Sold-To** address. If your organization has remote users or multiple offices, use the address where the majority of your users are located.
 
 En la mayoría de los casos, estas direcciones son las mismas. Si tiene que cambiar una o varias de estas direcciones, puede hacerlo. También puede proporcionar una dirección de correo electrónico alternativa para recibir notificaciones de facturación y cambiar la dirección de correo electrónico alternativa para otros administradores.
 
@@ -105,7 +106,7 @@ Para obtener más información sobre la factura o la factura, consulte [Visualiz
 
 ## <a name="related-content"></a>Contenido relacionado
 
-[Vea su factura o recibo](view-your-bill-or-invoice.md) (artículo)\
+[Vea su factura o recibo](view-your-bill-or-invoice.md) (artículo)
 [Descripción de la factura o factura](understand-your-invoice2.md) (artículo)\
 [Pagar por la suscripción](pay-for-your-subscription.md) (artículo)\
 [Suscripciones y facturación: Ayuda Administración](../index.yml) (página de vínculo)

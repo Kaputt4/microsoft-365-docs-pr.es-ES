@@ -11,25 +11,27 @@ ms.service: microsoft-365-security
 ms.subservice: other
 ms.date: 09/15/2022
 ms.localizationpriority: high
-ms.collection: ''
+ms.collection:
+- m365-security
+- tier1
 ms.custom:
 - MiniMaven
 search.appverid:
 - BCS160
 - MET150
 description: Descubre cómo usar Microsoft 365 para empresas para quitar los datos de la empresa que los usuarios tienen en sus dispositivos o equipos Windows.
-ms.openlocfilehash: 1b9da1fc53bbef1321118a9e7d554cb0a6a0b8d1
-ms.sourcegitcommit: c29af68260ba8676083674b3c70209bff2c2e362
+ms.openlocfilehash: 3b198e962f90cf7a0293bf8fe32f1ff2d511c111
+ms.sourcegitcommit: 0283c436f3ba61a708b52b57a1955f5ea74376a3
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/16/2022
-ms.locfileid: "67742835"
+ms.lasthandoff: 09/28/2022
+ms.locfileid: "68093504"
 ---
 # <a name="remove-company-data-from-devices"></a>Eliminar datos de la empresa de dispositivos
 
 ## <a name="remove-company-data"></a>Quitar datos de la empresa
 
-Puede usar Microsoft 365 para empresas para eliminar los datos de la empresa que los usuarios tienen en sus [dispositivos](m365bp-app-protection-settings-for-android-and-ios.md) o [PC Windows](m365bp-protection-settings-for-windows-10-devices.md) protegidos por Microsoft 365. **Si elimina los datos de la empresa de un dispositivo, no los podrá restaurar más adelante**. 
+You can use Microsoft 365 for business to remove company data that your users have on their [devices](m365bp-app-protection-settings-for-android-and-ios.md) or [Windows PCs](m365bp-protection-settings-for-windows-10-devices.md) that are protected by Microsoft 365. **If you remove company data from a device, you cannot restore it later**. 
   
 1. Vaya al Centro de administración en <a href="https://go.microsoft.com/fwlink/p/?linkid=837890" target="_blank">https://admin.microsoft.com</a>.
     

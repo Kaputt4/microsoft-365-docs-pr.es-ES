@@ -7,9 +7,10 @@ author: efrene
 manager: scotv
 audience: Admin
 ms.topic: overview
-ms.service: o365-administration
+ms.service: microsoft-365-business
 ms.localizationpriority: medium
 ms.collection:
+- scotvorg
 - M365-subscription-management
 - Adm_O365
 ms.custom:
@@ -21,20 +22,20 @@ search.appverid:
 - MOE150
 - GEA150
 ms.assetid: 097ae285-c4af-4319-9770-e2559d66e4c8
-description: Exchange administradores administran el correo electrónico y los buzones de correo de la organización y, por ejemplo, recuperan los elementos eliminados en el buzón de un usuario.
-ms.openlocfilehash: 375e2d6a1bf08ab310da28233deaf5dbbbae9be7
-ms.sourcegitcommit: 7ab324551afac4fd82abc015247371ebfe6ccac2
+description: Los administradores de Exchange administran el correo electrónico y los buzones de su organización y, por ejemplo, recuperan los elementos eliminados en el buzón de correo de un usuario.
+ms.openlocfilehash: 4a70afe1a6b65926ce8afa2ac125d0dd18d6db79
+ms.sourcegitcommit: 0b7070ec119e00e0dafe030bbfbef0ae5c9afa19
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/02/2022
-ms.locfileid: "65842265"
+ms.lasthandoff: 09/29/2022
+ms.locfileid: "68190559"
 ---
 # <a name="about-the-exchange-administrator-role"></a>Acerca del rol de administrador de Exchange
 
-Para ayudarle a administrar Microsoft 365, puede [asignar](assign-admin-roles.md) permisos a los usuarios para administrar el correo electrónico y los buzones de correo de su organización desde el <a href="https://go.microsoft.com/fwlink/p/?linkid=2059104" target="_blank">centro de administración de Exchange</a>. Para ello, asígnelos al rol de administrador de Exchange.
+Para ayudarle a administrar Microsoft 365, puede [asignar](assign-admin-roles.md) permisos a los usuarios para administrar el correo electrónico y los buzones de correo de su organización desde el <a href="https://go.microsoft.com/fwlink/p/?linkid=2059104" target="_blank">Centro de administración de Exchange</a>. Para ello, asígnelos al rol administrador de Exchange.
   
 > [!TIP]
-> Al asignar a alguien al rol de administrador de Exchange, se recomienda asignarlo al rol Administrador de soporte técnico de servicio. De esta forma, podrá ver información importante en el Centro de administración de Microsoft 365, como el estado del servicio Exchange Online, y notificaciones de cambio y lanzamiento.
+> Al asignar a alguien al rol administrador de Exchange, se recomienda asignarlo al rol Administrador de soporte técnico de servicio. De esta forma, podrá ver información importante en el Centro de administración de Microsoft 365, como el estado del servicio Exchange Online, y notificaciones de cambio y lanzamiento.
 
 Estas son algunas de las tareas clave que los usuarios pueden realizar cuando se les asigna el rol de administrador de Exchange:
   
@@ -48,13 +49,13 @@ Estas son algunas de las tareas clave que los usuarios pueden realizar cuando se
 
 - [Cree un buzón compartido](../email/create-a-shared-mailbox.md) para que un grupo de personas pueda supervisar y enviar correo electrónico desde una dirección de correo electrónico común.
 
-- [Protección contra correo electrónico no deseado](../../security/office-365-security/anti-spam-protection.md) y filtros de malware para la organización.
+- [Email filtros de protección contra correo no deseado](../../security/office-365-security/anti-spam-protection.md) y malware para la organización.
 
 - Administrar grupos de Microsoft 365
 
 ## <a name="exchange-online-role-groups"></a>Exchange Online grupos de roles
 
-Si tiene una organización grande, es posible que el administrador de Exchange quiera asignar usuarios a Exchange grupos de roles. Cuando un administrador agrega un usuario a un grupo de roles, obtiene permisos para realizar determinadas funciones empresariales que solo pueden hacer los miembros de ese grupo.
+Si tiene una organización grande, es posible que el administrador de Exchange quiera asignar usuarios a grupos de roles de Exchange. Cuando un administrador agrega un usuario a un grupo de roles, obtiene permisos para realizar determinadas funciones empresariales que solo pueden hacer los miembros de ese grupo.
   
  Por ejemplo, el administrador de Exchange podría asignar a alguien al grupo de roles Administración de detección para que pueda realizar búsquedas de buzones de correo en busca de datos que cumplan determinados criterios. Para obtener más información, consulte [Permisos en Exchange Online](/exchange/permissions-exo/permissions-exo) y [Administrar grupos de roles](/exchange/manage-role-groups-exchange-2013-help).
   
@@ -66,4 +67,4 @@ Si tiene una organización grande, es posible que el administrador de Exchange q
 
 - [Acerca del rol de administrador de Skype Empresarial](/skypeforbusiness/skype-for-business-online)
 
-- [Usar Microsoft Teams rol de administrador](/MicrosoftTeams/using-admin-roles)
+- [Uso del rol de administrador de Microsoft Teams](/MicrosoftTeams/using-admin-roles)

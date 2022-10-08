@@ -14,7 +14,7 @@ search.appverid:
 - MOE150
 ms.assetid: 26261670-db33-4c53-b125-af0662c34607
 ms.collection:
-- M365-security-compliance
+- m365-security
 - SPO_Content
 - m365initiative-defender-office365
 ms.custom:
@@ -23,12 +23,12 @@ ms.custom:
 description: Obtenga información sobre Microsoft Defender para Office 365 de archivos en SharePoint Online, OneDrive para la Empresa y Microsoft Teams.
 ms.subservice: mdo
 ms.service: microsoft-365-security
-ms.openlocfilehash: 6767abfc3c658675484c05d506ee69ca9d198539
-ms.sourcegitcommit: 2b89bcff547e00be3d38dc8d1e6cbcf8f41eba42
+ms.openlocfilehash: e236fab4e3120e114f288e58ab3c7fe27aa1f6f4
+ms.sourcegitcommit: 12af9e8e3a6eaa090fda9e98ccb831dff65863a4
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/03/2022
-ms.locfileid: "67597512"
+ms.lasthandoff: 09/27/2022
+ms.locfileid: "68087077"
 ---
 # <a name="safe-attachments-for-sharepoint-onedrive-and-microsoft-teams"></a>Datos adjuntos seguros para SharePoint, OneDrive y Microsoft Teams
 

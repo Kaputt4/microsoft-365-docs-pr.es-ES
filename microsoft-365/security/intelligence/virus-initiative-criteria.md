@@ -11,15 +11,17 @@ ms.author: dansimp
 author: dansimp
 manager: dansimp
 audience: ITPro
-ms.collection: M365-security-compliance
+ms.collection:
+- m365-security
+- tier2
 ms.topic: article
 search.appverid: met150
-ms.openlocfilehash: d309293425149252d45b686b9f8a74006f714cc1
-ms.sourcegitcommit: c29af68260ba8676083674b3c70209bff2c2e362
+ms.openlocfilehash: 11fa05644d5f65ee4f835027636d41da1dd37adc
+ms.sourcegitcommit: 4e42bafee965446f44f7f57d1defed2b9b24fce8
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/16/2022
-ms.locfileid: "67737178"
+ms.lasthandoff: 09/30/2022
+ms.locfileid: "68229534"
 ---
 # <a name="microsoft-virus-initiative"></a>Iniciativa de virus de Microsoft
 
@@ -31,7 +33,7 @@ Puede solicitar la pertenencia si es un representante de una organización que d
 
 Para calificar para el programa MVI, su organización debe cumplir todos los requisitos siguientes:
 
-1. La solución de seguridad reemplaza o complementa el Antivirus de Microsoft Defender.
+1. La solución de seguridad reemplaza o complementa Microsoft Defender Antivirus.
 
 2. Su organización es responsable de desarrollar y distribuir actualizaciones de aplicaciones a los clientes finales que abordan la compatibilidad con Windows.
 

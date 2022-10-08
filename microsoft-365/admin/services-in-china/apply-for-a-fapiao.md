@@ -8,9 +8,10 @@ manager: scotv
 ms.reviewer: lishepar, vikdesai
 audience: Admin
 ms.topic: article
-ms.service: o365-administration
+ms.service: microsoft-365-business
 ms.localizationpriority: medium
 ms.collection:
+- scotvorg
 - M365-subscription-management
 - Adm_O365
 ms.custom:
@@ -22,12 +23,12 @@ search.appverid:
 description: Obtenga información sobre cómo enviar su solicitud de Fapiao al sistema de gestión 21Vianet Fapiao después de realizar un pago en el Office 365 operado por 21Vianet en China.
 monikerRange: o365-21vianet
 ms.date: 03/30/2021
-ms.openlocfilehash: 8d74a40502fbe1af04a34acfde005980e3784053
-ms.sourcegitcommit: 3b194dd6f9ce531ae1b33d617ab45990d48bd3d0
+ms.openlocfilehash: 48184de0ba5a2e1d253bdc0567e7ae87717b0889
+ms.sourcegitcommit: 0b7070ec119e00e0dafe030bbfbef0ae5c9afa19
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/15/2022
-ms.locfileid: "66101940"
+ms.lasthandoff: 09/29/2022
+ms.locfileid: "68206815"
 ---
 # <a name="apply-for-a-fapiao-for-office-365-operated-by-21vianet"></a>Solicitar un Fapiao para Office 365 operado por 21Vianet
 
@@ -41,7 +42,7 @@ Hay dos maneras de solicitar un Fapiao:
   
 1. Después de realizar un pago en el Office 365 operado por el sitio web de 21Vianet, recibirá un correo electrónico de confirmación del pedido que contiene su número de pedido y un vínculo al sistema de gestión de Fapiao. Puede usar el vínculo en el correo electrónico para crear una cuenta en el <a href="https://go.microsoft.com/fwlink/p/?linkid=837466" target="_blank">sistema de administración de información 21Vianet Fapiao</a>.
 
-    O bien:
+    O bien
 
 2. Puede solicitar un Fapiao desde el centro de <a href="https://go.microsoft.com/fwlink/p/?linkid=850627" target="_blank">administración</a>.
 

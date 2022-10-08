@@ -11,15 +11,17 @@ ms.author: dansimp
 author: dansimp
 manager: dansimp
 audience: ITPro
-ms.collection: M365-security-compliance
+ms.collection:
+- m365-security
+- tier2
 ms.topic: article
 search.appverid: met150
-ms.openlocfilehash: db9a37bf18296e23763e6652bc25d0c50fd282cc
-ms.sourcegitcommit: c29af68260ba8676083674b3c70209bff2c2e362
+ms.openlocfilehash: 5d40a1862e65f0028fe72a41a6ae3f6ac8e4e266
+ms.sourcegitcommit: 4e42bafee965446f44f7f57d1defed2b9b24fce8
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/16/2022
-ms.locfileid: "67742319"
+ms.lasthandoff: 09/30/2022
+ms.locfileid: "68229600"
 ---
 # <a name="unwanted-software"></a>Software no deseado
 
@@ -49,7 +51,7 @@ Para evitar una infección de software no deseada, descargue software solo desde
 
 Use [Microsoft Edge](/microsoft-edge/deploy/index) al navegar por Internet. Microsoft Edge incluye protecciones adicionales que bloquean eficazmente los modificadores de explorador que pueden cambiar la configuración del explorador. Microsoft Edge también bloquea los sitios web conocidos que hospedan software no deseado mediante [Windows Defender SmartScreen](/microsoft-edge/deploy/index) (también utilizado por Internet Explorer).
 
-Habilite [antivirus de Microsoft Defender](/microsoft-365/security/defender-endpoint/microsoft-defender-antivirus-in-windows-10) en Windows 10. Proporciona protección en tiempo real contra amenazas y detecta y elimina software no deseado conocido.
+Habilite [Microsoft Defender Antivirus](/microsoft-365/security/defender-endpoint/microsoft-defender-antivirus-in-windows-10) en Windows 10. Proporciona protección en tiempo real contra amenazas y detecta y elimina software no deseado conocido.
 
 Descargue [Microsoft Security Essentials](https://www.microsoft.com/download/details.aspx?id=5201) para obtener protección en tiempo real en Windows 7 o Windows Vista.
 

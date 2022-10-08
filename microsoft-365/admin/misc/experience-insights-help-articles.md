@@ -5,15 +5,17 @@ author: kwekua
 manager: scotv
 audience: Admin
 ms.topic: overview
-ms.service: o365-administration
+ms.service: microsoft-365-business
 ms.localizationpriority: medium
+ms.collection:
+- scotvorg
 description: Obtenga un informe de los artículos de ayuda de Microsoft 365 que los usuarios de su organización están leyendo.
-ms.openlocfilehash: c1169d54300295eb9c1ecbd727052b5c10466915
-ms.sourcegitcommit: 414682b9bf42dc19a89c893d3c515aee9765b6e4
+ms.openlocfilehash: 7cb78d1ed33e9978b69747699b64ceefced373a3
+ms.sourcegitcommit: 0b7070ec119e00e0dafe030bbfbef0ae5c9afa19
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/08/2022
-ms.locfileid: "67282107"
+ms.lasthandoff: 09/29/2022
+ms.locfileid: "68189635"
 ---
 # <a name="experience-insights-help-article-report"></a>Informe del artículo de ayuda de Información de experiencia
 

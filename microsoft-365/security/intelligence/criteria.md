@@ -11,16 +11,18 @@ ms.author: dansimp
 author: dansimp
 manager: dansimp
 audience: ITPro
-ms.collection: M365-security-compliance
+ms.collection:
+- m365-security
+- tier2
 ms.topic: article
 ms.date: 12/13/2021
 search.appverid: met150
-ms.openlocfilehash: 4938a221cd23f3d99a9bdd32b981a28828c0eff3
-ms.sourcegitcommit: c29af68260ba8676083674b3c70209bff2c2e362
+ms.openlocfilehash: d4ac6d95335bbdef0e897dc4995af3b8074ecfd0
+ms.sourcegitcommit: 4e42bafee965446f44f7f57d1defed2b9b24fce8
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/16/2022
-ms.locfileid: "67739970"
+ms.lasthandoff: 09/30/2022
+ms.locfileid: "68221156"
 ---
 # <a name="how-microsoft-identifies-malware-and-potentially-unwanted-applications"></a>Cómo Microsoft identifica el malware y las aplicaciones potencialmente no deseadas
 
@@ -167,11 +169,11 @@ Los anuncios que se muestran a usted deben:
 
 #### <a name="consumer-opinion"></a>Opinión del consumidor
 
-Microsoft mantiene una red mundial de analistas y sistemas de inteligencia donde puede [enviar software para su análisis](https://www.microsoft.com/wdsi/filesubmission). Su participación ayuda a Microsoft a identificar malware nuevo rápidamente. Después del análisis, Microsoft crea inteligencia de seguridad para software que cumple los criterios descritos. Esta inteligencia de seguridad identifica el software como malware y está disponible para todos los usuarios a través del Antivirus de Microsoft Defender y otras soluciones antimalware de Microsoft.
+Microsoft mantiene una red mundial de analistas y sistemas de inteligencia donde puede [enviar software para su análisis](https://www.microsoft.com/wdsi/filesubmission). Su participación ayuda a Microsoft a identificar malware nuevo rápidamente. Después del análisis, Microsoft crea inteligencia de seguridad para software que cumple los criterios descritos. Esta inteligencia de seguridad identifica el software como malware y está disponible para todos los usuarios a través de Microsoft Defender Antivirus y otras soluciones antimalware de Microsoft.
 
 ## <a name="potentially-unwanted-application-pua"></a>Aplicación potencialmente no deseada (PUA)
 
-Nuestra protección pua tiene como objetivo proteger la productividad del usuario y garantizar experiencias agradables de Windows. Esta protección ayuda a ofrecer experiencias de Windows más productivas, eficaces y encantadoras. Para obtener instrucciones sobre cómo habilitar la protección de PUA en Microsoft Edge basado en Chromium y antivirus de Microsoft Defender, consulte [Detectar y bloquear aplicaciones potencialmente no deseadas](/microsoft-365/security/defender-endpoint/detect-block-potentially-unwanted-apps-microsoft-defender-antivirus).
+Nuestra protección pua tiene como objetivo proteger la productividad del usuario y garantizar experiencias agradables de Windows. Esta protección ayuda a ofrecer experiencias de Windows más productivas, eficaces y encantadoras. Para obtener instrucciones sobre cómo habilitar la protección de PUA en Microsoft Edge basado en Chromium y Microsoft Defender Antivirus, consulte [Detectar y bloquear aplicaciones potencialmente no deseadas](/microsoft-365/security/defender-endpoint/detect-block-potentially-unwanted-apps-microsoft-defender-antivirus).
 
 *Las PUA no se consideran malware.*
 

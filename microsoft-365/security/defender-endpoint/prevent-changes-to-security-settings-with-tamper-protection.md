@@ -9,8 +9,9 @@ ms.service: microsoft-365-security
 ms.mktglfcycl: manage
 ms.sitesec: library
 ms.localizationpriority: medium
+ms.date: 09/23/2022
 audience: ITPro
-ms.topic: article
+ms.topic: conceptual
 author: denisebmsft
 ms.author: deniseb
 ms.custom:
@@ -18,15 +19,15 @@ ms.custom:
 - admindeeplinkDEFENDER
 ms.subservice: mde
 ms.collection:
-- M365-security-compliance
-- m365initiative-defender-endpoint
+- m365-security
+- tier2
 search.appverid: met150
-ms.openlocfilehash: 486b77e2f4c60508170bfe2f119880e4b30033b8
-ms.sourcegitcommit: 9b133379196da2b3a4bb311b07ff274f43780f68
+ms.openlocfilehash: 5f2a87f1fa8ff8130e460f46c9ac94275ba0735d
+ms.sourcegitcommit: 4e42bafee965446f44f7f57d1defed2b9b24fce8
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/14/2022
-ms.locfileid: "67686786"
+ms.lasthandoff: 09/30/2022
+ms.locfileid: "68221332"
 ---
 # <a name="protect-security-settings-with-tamper-protection"></a>Configuración de seguridad de la protección con protección contra alteraciones
 
@@ -49,7 +50,7 @@ La protección contra alteraciones está disponible para los dispositivos que ej
 - Windows Server 2019
 - Windows Server, versión 1803 o posterior
 - Windows Server 2016
-- Windows Server 2012 R2
+- Windows Server 2012 R2
 
 > [!NOTE]
 > La protección contra alteraciones en Windows Server 2012 R2 está disponible para los dispositivos incorporados mediante el paquete de solución unificado moderno. Para obtener más información, vea [Incorporación de servidores Windows al servicio de Microsoft Defender para punto de conexión](/microsoft-365/security/defender-endpoint/configure-server-endpoints).
@@ -68,9 +69,14 @@ Durante algunos tipos de ciberataques, los actores malintencionados intentan des
 - Supresión de notificaciones en la aplicación Seguridad de Windows
 - Deshabilitación del examen de archivos y archivos de red
 
+> [!IMPORTANT]
+> La protección integrada (versión preliminar) incluye activar la protección contra alteraciones de forma predeterminada. Para más información sobre la protección integrada, consulte:
+> - [La protección integrada ayuda a protegerse contra ransomware](built-in-protection.md) (artículo)
+> - [La protección contra alteraciones se activará para todos los clientes empresariales](https://techcommunity.microsoft.com/t5/microsoft-defender-for-endpoint/tamper-protection-will-be-turned-on-for-all-enterprise-customers/ba-p/3616478) (entrada de blog de Tech Community)
+
 ### <a name="how-it-works"></a>Cómo funciona
 
-La protección contra alteraciones básicamente bloquea el Antivirus de Microsoft Defender a sus valores seguros y predeterminados e impide que la configuración de seguridad se cambie a través de aplicaciones y métodos como:
+La protección contra alteraciones básicamente bloquea Microsoft Defender Antivirus a sus valores seguros y predeterminados e impide que la configuración de seguridad se cambie a través de aplicaciones y métodos como:
 
 - Configuración de opciones en el Editor del Registro en el dispositivo Windows
 - Cambio de la configuración mediante cmdlets de PowerShell

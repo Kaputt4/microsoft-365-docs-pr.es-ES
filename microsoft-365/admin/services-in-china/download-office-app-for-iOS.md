@@ -1,5 +1,5 @@
 ---
-title: Descargar Aplicación de Office para iOS para Office 365 operado por 21Vianet
+title: Descarga de la aplicación de Office para iOS para Office 365 operada por 21Vianet
 f1.keywords:
 - NOCSH
 ms.author: sharik
@@ -7,9 +7,10 @@ author: skjerland
 manager: scotv
 audience: Admin
 ms.topic: overview
-ms.service: o365-administration
+ms.service: microsoft-365-business
 ms.localizationpriority: medium
 ms.collection:
+- scotvorg
 - M365-subscription-management
 - Adm_O365
 - Adm_NonTOC
@@ -18,39 +19,39 @@ search.appverid:
 - MET150
 - GEU150
 - GEA150
-description: Obtenga más información sobre la aplicación Microsoft Office para iOS para Office 365 operado por 21Vianet y cómo descargarla para clientes en China.
+description: Obtenga más información sobre la aplicación de Microsoft Office para iOS para Office 365 operada por 21Vianet y cómo descargarla para los clientes de China.
 monikerRange: o365-21vianet
-ms.openlocfilehash: f2156c83ce312da42de864c8df8d00a84e05d02c
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 851e325c357b59f0c7d34b21a4006f531c1cf4e3
+ms.sourcegitcommit: 0b7070ec119e00e0dafe030bbfbef0ae5c9afa19
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60193894"
+ms.lasthandoff: 09/29/2022
+ms.locfileid: "68206749"
 ---
-# <a name="office-app-for-ios-for-office-365-operated-by-21vianet"></a>Aplicación de Office para iOS para Office 365 operado por 21Vianet
+# <a name="office-app-for-ios-for-office-365-operated-by-21vianet"></a>Aplicación de Office para iOS para Office 365 operada por 21Vianet
 
-La Microsoft Office para iOS combina Word, Excel y PowerPoint aplicaciones móviles en una sola aplicación disponible para su descarga para teléfonos iOS. Con el Aplicación de Office para iOS, puedes conectarte a Office 365 igual que lo harías con las aplicaciones móviles de Word, Excel y PowerPoint móviles. La Aplicación de Office para la descarga de iOS no afectará a ninguna instalación existente de Word, Excel y PowerPoint.
+La aplicación de Microsoft Office para iOS combina aplicaciones móviles de Word, Excel y PowerPoint en una sola aplicación disponible para su descarga para teléfonos iOS. Con la aplicación de Office para iOS, puede conectarse a Office 365 como lo haría con las aplicaciones móviles de Word, Excel y PowerPoint. La descarga de la aplicación de Office para iOS no afectará a las instalaciones existentes de Word, Excel y PowerPoint.
 
-Algunos Aplicación de Office para las características de iOS no están disponibles para Office 365 los clientes de 21Vianet:
+Algunas características de aplicaciones de Office para iOS no están disponibles para Office 365 operados por 21 clientes deVianet:
 
 - Imagen a texto e Imagen a tabla 
-- Convertir fotos en documentos de Word desde Lens 
+- Conversión de fotos en documentos de Word desde Lens 
 - Acción Transferir archivos 
-- Las notas siguen siendo locales y no se sincronizan con el servidor
-- Vista previa de vínculos dentro de Scan QR
+- Las notas permanecen locales y no se sincronizan con el servidor
+- Vista previa de vínculos en Scan QR
 - Tarjetas de persona en directo en la sección Me
 - Clasificación, etiquetado y protección (CLP)
 
 
-## <a name="download-the-office-app-for-ios"></a>Descargar el Aplicación de Office para iOS
+## <a name="download-the-office-app-for-ios"></a>Descarga de la aplicación de Office para iOS
 
-- Descargue el Aplicación de Office para iPhones desde la [Tienda de aplicaciones.](https://products.office.com/mobile/office?rtc=2) 
+- Descargue la aplicación de Office para iPhones desde el [App Store](https://products.office.com/mobile/office?rtc=2). 
 
 > [!NOTE]
-> La Aplicación de Office para iOS está disponible actualmente para iPhone solo. La compatibilidad iPad se agregará más adelante. 
+> La aplicación de Office para iOS está disponible actualmente solo para iPhone. La compatibilidad con iPad se agregará más adelante. 
 
 ## <a name="security-considerations"></a>Consideraciones acerca de la seguridad
 
-Si tu organización inserta aplicaciones en dispositivos móviles de empleados, te recomendamos que reemplaces las aplicaciones word, Excel y PowerPoint por la Aplicación de Office para iOS.  
+Si su organización inserta aplicaciones en dispositivos móviles de empleados, se recomienda reemplazar las aplicaciones de Word, Excel y PowerPoint por la aplicación de Office para iOS.  
 
 

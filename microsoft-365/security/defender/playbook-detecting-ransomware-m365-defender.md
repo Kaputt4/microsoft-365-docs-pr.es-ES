@@ -11,14 +11,16 @@ ms.date: 05/30/2022
 ms.service: microsoft-365-security
 ms.subservice: m365d
 ms.localizationpriority: medium
-ms.collection: M365-security-compliance.
+ms.collection:
+- m365-security
+- tier1
 f1.keywords: NOCSH
-ms.openlocfilehash: f982c6771e165b42bf8e99876909608ca3200953
-ms.sourcegitcommit: 10e6abe740e27000e223378eb17d657a47555fa8
+ms.openlocfilehash: 73c83b6a5880943793fc22bba84b3cc6b608aeac
+ms.sourcegitcommit: 12af9e8e3a6eaa090fda9e98ccb831dff65863a4
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/31/2022
-ms.locfileid: "67481974"
+ms.lasthandoff: 09/27/2022
+ms.locfileid: "68087132"
 ---
 # <a name="detecting-human-operated-ransomware-attacks-with-microsoft-365-defender"></a>Detección de ataques de ransomware operados por personas con Microsoft 365 Defender
 
@@ -240,7 +242,7 @@ En la sección **Detalles de detección** de muchos informes de análisis de ame
 
 ### <a name="microsoft-365-defender-apis"></a>Las API de Microsoft 365 Defender
 
-También puede usar las API de Microsoft 365 Defender para consultar los datos de alertas y incidentes de Microsoft 365 Defender en el inquilino. Una aplicación personalizada puede filtrar los datos, filtrarlos según la configuración personalizada y, a continuación, proporcionar una lista filtrada de vínculos a alertas e incidentes que puede seleccionar fácilmente para ir directamente a esa alerta o incidente. Consulte [Enumeración de la API de incidentes en Microsoft 365 Defender | Microsoft Docs](/api-list-incidents.md). También puede integrar SIEM con Microsoft Defender; consulte [Integración de las herramientas SIEM con Microsoft 365 Defender](/configure-siem-defender.md).
+También puede usar las API de Microsoft 365 Defender para consultar los datos de alertas y incidentes de Microsoft 365 Defender en el inquilino. Una aplicación personalizada puede filtrar los datos, filtrarlos según la configuración personalizada y, a continuación, proporcionar una lista filtrada de vínculos a alertas e incidentes que puede seleccionar fácilmente para ir directamente a esa alerta o incidente. Consulte [Enumeración de la API de incidentes en Microsoft 365 Defender | Microsoft Docs](/api-list-incidents.md). También puede integrar siem con Microsoft Defender, consulte [Integración de las herramientas siem con Microsoft 365 Defender](/configure-siem-defender.md).
 
 ### <a name="microsoft-365-defender-sentinel-integration"></a>Integración de Microsoft 365 Defender Sentinel
 

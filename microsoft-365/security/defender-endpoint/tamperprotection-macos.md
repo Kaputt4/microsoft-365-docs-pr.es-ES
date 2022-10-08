@@ -12,16 +12,17 @@ ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection:
-- M365-security-compliance
+- m365-security
+- tier3
 ms.topic: article
 ms.subservice: mde
 search.appverid: met150
-ms.openlocfilehash: d27272464938b4dc3a5a53bc447fcb227614f345
-ms.sourcegitcommit: 9b133379196da2b3a4bb311b07ff274f43780f68
+ms.openlocfilehash: 1eea32f9f8844e89ce2572e856366a8de39b2f65
+ms.sourcegitcommit: 4e42bafee965446f44f7f57d1defed2b9b24fce8
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/14/2022
-ms.locfileid: "67689394"
+ms.lasthandoff: 09/30/2022
+ms.locfileid: "68229050"
 ---
 # <a name="protect-macos-security-settings-with-tamper-protection"></a>Protección de la configuración de seguridad de macOS con protección contra alteraciones
 
@@ -79,7 +80,6 @@ Puede configurar el modo de protección contra alteraciones proporcionando el no
 
 - Versiones de macOS compatibles: Monterey (12), Big Sur (11), Catalina (10.15+).
 - Versión mínima necesaria para Defender para punto de conexión: 101.70.19.
-- Debe estar en un canal de actualización que no sea de producción ([versión preliminar o beta](/deployoffice/office-insider/deploy/microsoft-autoupdate)), mientras que la característica Protección contra alteraciones está en versión preliminar. Si está en el canal de producción, se omitirá el modo de protección contra alteraciones configurado.
 
 **Configuración muy recomendada:**
 

@@ -11,15 +11,17 @@ ms.author: dansimp
 author: dansimp
 manager: dansimp
 audience: ITPro
-ms.collection: M365-security-compliance
+ms.collection:
+- m365-security
+- tier2
 ms.topic: article
 search.appverid: met150
-ms.openlocfilehash: 78118709bb503e13f15973b2283d6f756519c873
-ms.sourcegitcommit: c29af68260ba8676083674b3c70209bff2c2e362
+ms.openlocfilehash: 6d733c7b27528a25097bd8aa666f14a60989cbfc
+ms.sourcegitcommit: 4e42bafee965446f44f7f57d1defed2b9b24fce8
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/16/2022
-ms.locfileid: "67736440"
+ms.lasthandoff: 09/30/2022
+ms.locfileid: "68221046"
 ---
 # <a name="microsoft-safety-scanner-download"></a>Descargar el Examen de seguridad de Microsoft
 

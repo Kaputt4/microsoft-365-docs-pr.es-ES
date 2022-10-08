@@ -7,9 +7,10 @@ author: kwekua
 manager: scotv
 audience: Admin
 ms.topic: article
-ms.service: o365-administration
+ms.service: microsoft-365-business
 ms.localizationpriority: medium
 ms.collection:
+- scotvorg
 - M365-subscription-management
 - Adm_O365
 - Adm_TOC
@@ -18,12 +19,12 @@ ms.custom:
 search.appverid:
 - MET150
 description: En el caso de los dispositivos que no se pueden administrar con Basic Mobility and Security, bloquee Exchange ActiveSync acceso de la aplicación al correo electrónico y use PowerShell de Azure AD para obtener detalles sobre los dispositivos de la organización.
-ms.openlocfilehash: 4e66ee6aff2ce3df43eee0c6fa8a83699732378a
-ms.sourcegitcommit: 974922d1d8d9ce7bc2eb49ab80ecca9da4a911f9
+ms.openlocfilehash: 22b4afd36043c10b093e3afaf6ff76f337ad5a7d
+ms.sourcegitcommit: 0b7070ec119e00e0dafe030bbfbef0ae5c9afa19
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/13/2022
-ms.locfileid: "67651368"
+ms.lasthandoff: 09/29/2022
+ms.locfileid: "68190537"
 ---
 # <a name="manage-device-access-settings-in-basic-mobility-and-security"></a>Administración de la configuración de acceso a dispositivos en Basic Mobility and Security
 
@@ -44,7 +45,7 @@ Siga estos pasos:
 
     :::image type="content" source="../../media/basic-mobility-security/basic-mobility-access.png" alt-text="La casilla De movilidad básica y seguridad bloquea el acceso.":::
 
-5. Haga clic en **Guardar**.
+5. Seleccione **Guardar**.
 
 Para obtener información sobre qué dispositivos admite Basic Mobility and Security, consulte [Funcionalidades de movilidad y seguridad básicas](capabilities.md).
 
@@ -94,7 +95,7 @@ Para obtener más información sobre estos pasos, consulte [Conexión a Microsof
 
 2. En el cuadro de diálogo Windows PowerShell solicitud de credenciales, escriba el nombre de usuario y la contraseña de la cuenta de administrador global de Microsoft 365 y, a continuación, seleccione **Aceptar**.
 
-3. Ejecute el comando siguiente.
+3. Ejecuta el siguiente comando.
 
    ```powershell
    Connect-MsolService -Credential $UserCredential
@@ -109,7 +110,7 @@ Para ejecutar el script de Get-MsolUserDeviceComplianceStatus.ps1, debe habilita
 
 1. En el escritorio de Windows, seleccione **Inicio** y, a continuación, escriba Windows PowerShell. Haga clic con el botón derecho en Windows PowerShell y, a continuación, seleccione **Ejecutar como administrador**.
 
-2. Ejecute el comando siguiente.
+2. Ejecuta el siguiente comando.
 
    ```powershell
    Set-ExecutionPolicy RemoteSigned
@@ -121,7 +122,7 @@ Para ejecutar el script de Get-MsolUserDeviceComplianceStatus.ps1, debe habilita
 
 1. Abra el Módulo Microsoft Azure Active Directory para Windows PowerShell.
 
-2. Ejecute el comando siguiente.
+2. Ejecuta el siguiente comando.
 
    ```powershell
    Get-MsolDevice -All -ReturnRegisteredOwners | Where-Object {$_.RegisteredOwners.Count -gt 0}
