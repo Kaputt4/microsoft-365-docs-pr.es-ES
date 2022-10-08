@@ -14,19 +14,22 @@ f1_keywords:
 ms.service: O365-seccomp
 ms.localizationpriority: medium
 ms.collection:
-- M365-security-compliance
+- tier3
+- purview-compliance
 hideEdit: true
 feedback_system: None
 recommendations: false
 description: Definición de entidad de tipo de información confidencial del número de impuestos agregado de Alemania.
-ms.openlocfilehash: 67522ff0fe1e18b878624f151cc7fcf9e4f346d2
-ms.sourcegitcommit: 72d10d0bc29ecc8b19c395f1815dc48b549096d9
+ms.openlocfilehash: 53fc7e75d2a9758336d4ba65acdfef6fbad68a08
+ms.sourcegitcommit: be2334dbcd4e1bf309349d981a68a30e06de0297
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/17/2022
-ms.locfileid: "67368551"
+ms.lasthandoff: 10/04/2022
+ms.locfileid: "68378828"
 ---
 # <a name="germany-value-added-tax-number"></a>Número del impuesto sobre el valor añadido de Alemania
+
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
 
 ## <a name="format"></a>Formato
 

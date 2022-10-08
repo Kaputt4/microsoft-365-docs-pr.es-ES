@@ -1,14 +1,15 @@
 ---
 title: 'actividad del proyecto de Centro de administración de Microsoft 365 '
-ms.author: efrene
-author: efrene
+ms.author: camillepack
+author: camillepack
 manager: scotv
 audience: Admin
 ms.topic: article
-ms.service: o365-administration
+ms.service: microsoft-365-business
 ms.localizationpriority: medium
 ROBOTS: NOINDEX, NOFOLLOW
 ms.collection:
+- scotvorg
 - M365-subscription-management
 - Adm_O365
 - Adm_NonTOC
@@ -19,12 +20,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Obtenga información sobre cómo obtener el informe de actividad de Project y obtener información sobre la actividad de Project en su organización.
-ms.openlocfilehash: 202f9e0655f2d96e6897f2803a43264741343381
-ms.sourcegitcommit: d1b60ed9a11f5e6e35fbaf30ecaeb9dfd6dd197d
+ms.openlocfilehash: 4493b67cb11c784a6d84dc1cf0fdb260684400dc
+ms.sourcegitcommit: 0b7070ec119e00e0dafe030bbfbef0ae5c9afa19
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/29/2022
-ms.locfileid: "66486241"
+ms.lasthandoff: 09/29/2022
+ms.locfileid: "68186159"
 ---
 # <a name="microsoft-365-reports-in-the-admin-center---project-activity"></a>Informes de Microsoft 365 en el Centro de administración: actividad del proyecto
 
@@ -41,9 +42,9 @@ En el **informe de actividad de Project**, puede comprender la actividad de cada
 
 Puede usar este informe para ver la actividad y el uso de Project en su entorno. Verá cuatro gráficos de resumen en este informe:  <br/>![Informes de Microsoft 365: actividad del proyecto.](../../media/project-activity.png)
 
-- **Usuarios activos** : muestra los usuarios activos diarios de cada día a lo largo del tiempo. Actualmente, esto solo incluye Project for the Web y Project Online cliente de escritorio.
-- **Usuarios activos (por cliente):** muestra los usuarios activos diarios de cada día a lo largo del tiempo, desglosados por el cliente (Project for the Web frente a Project Online desktop client).
-- **Actividad del proyecto**: muestra el número de sesiones diarias de Project a lo largo del tiempo para cada cliente (Project para web y Project Online cliente de escritorio).
+- **Usuarios activos** : muestra los usuarios activos diarios de cada día a lo largo del tiempo. Actualmente, esto solo incluye Project for the Web y cliente de escritorio de Project Online.
+- **Usuarios activos (por cliente):** muestra los usuarios activos diarios de cada día a lo largo del tiempo, desglosados por el cliente (Project for the Web frente a cliente de escritorio de Project Online).
+- **Actividad del proyecto**: muestra el número de sesiones diarias de Project a lo largo del tiempo para cada cliente (Project for the Web y cliente de escritorio de Project Online).
 - **Actividad de tarea** : muestra el número diario de tareas creadas o editadas a lo largo del tiempo en Project for the Web
 
 El informe también tiene una tabla que muestra la actividad de cada usuario del proyecto en su entorno.
@@ -58,20 +59,20 @@ El informe **de actividad del proyecto** se puede ver para ver las tendencias de
 
 ### <a name="privacy-settings-impact-on-the-dashboard"></a>Impacto en la configuración de privacidad en el panel
 
-Si los usuarios o administradores tienen su configuración de privacidad establecida en **Ninguno**, no tenemos métricas precisas para el gráfico de **actividad de Project** para el cliente de escritorio Project Online. Los números mostrados serán infracuestados. Para obtener más información sobre la configuración de privacidad, consulte Uso de la [configuración de directivas para administrar controles de privacidad para Aplicaciones Microsoft 365 para empresas](/deployoffice/privacy/manage-privacy-controls.md).
+Si los usuarios o administradores tienen su configuración de privacidad establecida en **Ninguno**, no tenemos métricas precisas para el gráfico de **actividad de Project** para el cliente de escritorio de Project Online. Los números mostrados serán infracuestados. Para obtener más información sobre la configuración de privacidad, consulte Uso de la [configuración de directivas para administrar controles de privacidad para Aplicaciones Microsoft 365 para empresas](/deployoffice/privacy/manage-privacy-controls.md).
 
 ## <a name="user-activity-table"></a>Tabla de actividad de usuario
 
 A continuación se muestran las definiciones de cada métrica de la tabla de actividad del usuario.
 
-|Item|Descripción|
+|Elemento|Descripción|
 |:-----|:-----|
 |**Métrica**|**Definición**|
 |Nombre de usuario|El nombre principal del usuario.|
 |Nombre para mostrar|Nombre completo del usuario.|
 |Fecha de la última actividad|La fecha más reciente en la que el usuario de esa fila tenía actividad en Project, incluidas las actividades de los informes de resumen.|
-|Proyectos visitados (escritorio)|Número de proyectos abiertos por el usuario en el Project Online cliente de escritorio durante el intervalo de tiempo seleccionado en la parte superior derecha de la página.|
+|Proyectos visitados (escritorio)|Número de proyectos abiertos por el usuario en el cliente de escritorio de Project Online durante el intervalo de tiempo seleccionado en la parte superior derecha de la página.|
 |Proyectos visitados (Web)| Número de tareas creadas por el usuario en Project for the Web durante el intervalo de tiempo seleccionado en la parte superior derecha de la página.|
 |Tareas creadas (Web)|Número de tareas creadas por el usuario en Project for the Web durante el intervalo de tiempo seleccionado en la parte superior derecha de la página.|
 |Tareas editadas (Web)|Número de tareas editadas por el usuario en Project for the Web durante el intervalo de tiempo seleccionado en la parte superior derecha de la página.|
-|Otros|Este valor es true si el usuario ha realizado una actividad en Project Online cliente de escritorio o en Project for the Web (que no está cubierto por las demás columnas) en el intervalo de tiempo seleccionado en la parte superior derecha de la página. Si el usuario no lo ha hecho, este valor es false.|
+|Otros|Este valor es true si el usuario ha realizado una actividad en cliente de escritorio de Project Online o en Project for the Web (que no está cubierta por las demás columnas) en el intervalo de tiempo seleccionado en la parte superior derecha de la página. Si el usuario no lo ha hecho, este valor es false.|

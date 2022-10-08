@@ -11,24 +11,22 @@ ms.subservice: other
 ms.date: 09/15/2022
 ms.localizationpriority: medium
 ms.collection:
-- M365-subscription-management
-- Adm_O365
-- Adm_TOC
-ms.custom: AdminSurgePortfolio
+- m365-security
+- tier1
 search.appverid: MET150
-description: Obtenga información sobre cómo revisar y administrar las amenazas detectadas por el Antivirus de Microsoft Defender en los dispositivos Windows.
-ms.openlocfilehash: 446a51c0d6bb1c595ae40674cffb1108f9f89a4b
-ms.sourcegitcommit: c29af68260ba8676083674b3c70209bff2c2e362
+description: Obtenga información sobre cómo revisar y administrar las amenazas detectadas por Microsoft Defender Antivirus en los dispositivos Windows.
+ms.openlocfilehash: c9dab2a71d7ce8ce352ae1315be9ff0453215108
+ms.sourcegitcommit: 0283c436f3ba61a708b52b57a1955f5ea74376a3
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/16/2022
-ms.locfileid: "67739926"
+ms.lasthandoff: 09/28/2022
+ms.locfileid: "68097673"
 ---
 # <a name="review-detected-threats"></a>Revisión de las amenazas detectadas
 
 En cuanto se detecta un archivo o software malintencionado, Microsoft Defender lo bloquea e impide que se ejecute. Y con la protección entregada en la nube activada, las amenazas recién detectadas se agregan al motor antivirus y antimalware para que los demás dispositivos y usuarios también estén protegidos.
 
-Antivirus de Microsoft Defender detecta y protege contra los siguientes tipos de amenazas:
+Microsoft Defender Antivirus detecta y protege contra los siguientes tipos de amenazas:
 
 - Virus, malware y amenazas basadas en web en dispositivos
 - Intentos de suplantación de identidad

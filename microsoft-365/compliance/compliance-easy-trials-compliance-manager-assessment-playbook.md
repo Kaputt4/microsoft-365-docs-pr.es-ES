@@ -1,5 +1,5 @@
 ---
-title: Cuaderno de estrategias de prueba de evaluaciones premium del Administrador de cumplimiento de Microsoft Purview
+title: Guía del usuario de evaluación premium del Administrador de cumplimiento de Microsoft Purview
 f1.keywords:
 - NOCSH
 ms.author: chvukosw
@@ -8,28 +8,32 @@ manager: laurawi
 audience: Admin
 ms.topic: landing-page
 ms.service: O365-seccomp
-ms.collection: m365-security-compliance
+ms.collection:
+- purview-compliance
+- tier3
 ms.localizationpriority: high
 ROBOTS: NOINDEX, NOFOLLOW
 search.appverid:
 - MOE150
 - MET150
-description: Cuaderno de estrategias de prueba de evaluaciones premium del Administrador de cumplimiento de Microsoft Purview.
+description: Guía de usuario de evaluación de microsoft Purview Compliance Manager premium assessments.
 ms.custom: trial-playbook
-ms.openlocfilehash: 6f788bf3e69aa088e87b0d1e6dfc3e0356b7984e
-ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
-ms.translationtype: HT
+ms.openlocfilehash: 1ac89c8a139c0decde42aa2a87733e02f9def957
+ms.sourcegitcommit: 3e1fc1919f64aff2e1ce83aa67bd415fe51604c1
+ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/06/2022
-ms.locfileid: "66626389"
+ms.lasthandoff: 10/07/2022
+ms.locfileid: "68500040"
 ---
-# <a name="trial-playbook-microsoft-purview-compliance-manager-premium-assessments"></a>Cuaderno de estrategias: evaluaciones premium del Administrador de cumplimiento de Microsoft Purview
+# <a name="trial-user-guide-microsoft-purview-compliance-manager-premium-assessments"></a>Guía del usuario de prueba: Evaluaciones premium de Microsoft Purview Compliance Manager
 
-Le damos la bienvenida al cuaderno de estrategias de prueba de la evaluación premium del Administrador de cumplimiento de Microsoft.
+Le damos la bienvenida a la guía de usuario de evaluación premium de Microsoft Purview Compliance Manager.
 
 Este cuaderno de estrategias le ayudará a sacar el máximo partido de su evaluación gratuita de 90 días enseñándole a usar el conjunto completo de plantillas de evaluación premium (complemento).
 
 Con las recomendaciones de Microsoft, verá rápidamente cómo las plantillas de evaluación premium pueden ayudar a su organización a evaluar los riesgos y responder eficazmente a los requisitos normativos globales, regionales e industriales.
+
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
 
 ## <a name="step-1-get-to-know-compliance-manager"></a>Paso 1: Conocer el Administrador de cumplimiento
 
@@ -71,7 +75,7 @@ Hay dos maneras de habilitar la prueba del complemento de evaluación premium: a
 
 ### <a name="enable-trial-via-the-compliance-trial"></a>Habilitar la prueba a través de la prueba de cumplimiento
 
-1. En el Centro de cumplimiento, seleccione **Pruebas** en el panel de navegación izquierdo. Se mostrarán las pruebas disponibles.
+1. In the Compliance Center, select **Trials** in the left navigation pane. The available trials will display.
 1. Elija **Pruebe ahora** para las evaluaciones premium del Administrador de cumplimiento.
 1. Se le mostrará una página de información y la capacidad de obtener más información antes de configurar la prueba.
 1. Al elegir **Configurar**, los cambios pueden tardar hasta dos horas en surtir efecto. Tendrá que iniciar sesión de nuevo para ver las plantillas disponibles.
@@ -88,7 +92,7 @@ Después de iniciar la evaluación premium, verá un resumen en el panel en el q
 
 ## <a name="additional-resources"></a>Recursos adicionales
 
-**Microsoft Docs**: obtenga información detallada sobre cómo funcionan las evaluaciones premium del Administrador de cumplimiento y cómo implementarlas mejor para su organización. Visite [Docs](compliance-manager-templates.md).
+**Microsoft Learn**: obtenga información detallada sobre cómo funcionan las evaluaciones premium del Administrador de cumplimiento y cómo implementarlas mejor para su organización. Visita [Documentos](compliance-manager-templates.md).
 
 **Vídeos de procedimientos**: Consulte los siguientes vídeos para obtener más información:
 

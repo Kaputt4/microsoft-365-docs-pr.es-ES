@@ -13,14 +13,16 @@ ms.reviewer: oogunrinde, dbodorin, vladiso, nixanm, anvascon
 manager: dansimp
 ms.subservice: mde
 ms.topic: how-to
-ms.collection: M365-security-compliance
+ms.collection:
+- m365-security
+- tier2
 search.appverid: met150
-ms.openlocfilehash: 711696d8b5ca745d55dc8dc7cac9259e4fe22807
-ms.sourcegitcommit: c29af68260ba8676083674b3c70209bff2c2e362
+ms.openlocfilehash: 72f590aafb4500a871278e8ce2c438fb6ec6a385
+ms.sourcegitcommit: 0b7070ec119e00e0dafe030bbfbef0ae5c9afa19
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/16/2022
-ms.locfileid: "67742616"
+ms.lasthandoff: 09/29/2022
+ms.locfileid: "68200503"
 ---
 # <a name="customize-controlled-folder-access"></a>Personalizar el acceso controlado a carpetas
 
@@ -77,7 +79,7 @@ Puede usar la aplicación de Seguridad de Windows, directiva de grupo, cmdlets d
 
 3. En **el Editor de administración de directiva de grupo**, vaya a **Directivas** \> de **configuración** \> del equipo **Plantillas administrativas**.
 
-4. Expanda el árbol a **componentes** \> de **Windows Antivirus** \> de Microsoft Defender Windows Defender **acceso a carpetas controladas** de **Protección contra vulnerabilidades** \> de seguridad. <br/>**NOTA**: En versiones anteriores de Windows, es posible que vea **Antivirus de Windows Defender** en lugar de **Antivirus de Microsoft Defender**.
+4. Expanda el árbol a **componentes** \> de Windows **Microsoft Defender Antivirus** \> Windows Defender **acceso a carpetas controladas** de **Exploit Guard**\>. <br/>**NOTA**: En versiones anteriores de Windows, es posible que vea **Windows Defender Antivirus** en lugar de **Microsoft Defender Antivirus**.
 
 5. Haga doble clic en **Carpetas protegidas configuradas** y, a continuación, establezca la opción **en Habilitado**. Seleccione **Mostrar** y especifique cada carpeta que quiera proteger.
 
@@ -132,7 +134,7 @@ Una aplicación o servicio permitidos solo tiene acceso de escritura a una carpe
 
 2. En el **Editor de administración de directiva de grupo**, vaya a **Configuración del equipo** y seleccione **Plantillas administrativas**.
 
-3. Expanda el árbol a **componentes** \> de **Windows Antivirus** \> de Microsoft Defender Windows Defender **acceso a carpetas controladas** de **Protección contra vulnerabilidades** \> de seguridad.
+3. Expanda el árbol a **componentes** \> de Windows **Microsoft Defender Antivirus** \> Windows Defender **acceso a carpetas controladas** de **Exploit Guard**\>.
 
 4. Haga doble clic en la opción **Configurar aplicaciones permitidas** y establezca la opción **en Habilitado**. Seleccione **Mostrar** y escriba cada aplicación.
 

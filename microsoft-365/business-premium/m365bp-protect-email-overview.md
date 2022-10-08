@@ -14,18 +14,21 @@ ms.localizationpriority: high
 ms.collection:
 - M365-Campaigns
 - m365solution-smb
+- highpri
+- m365-security
+- tier1
 ms.custom:
 - MiniMaven
 search.appverid:
 - BCS160
 - MET150
 description: Saber qué se debe supervisar en el correo electrónico. Entrene a su equipo para protegerse contra malware, phishing y otros ciberataques malintencionados mediante las herramientas de ciberseguridad incluidas con Microsoft 365 Empresa Premium.
-ms.openlocfilehash: 461887abfc17647cda62b1822a8a6c6626b4ffa4
-ms.sourcegitcommit: c29af68260ba8676083674b3c70209bff2c2e362
+ms.openlocfilehash: 5a6bfa6aa12a28b29e220c3cddf754bc1553664f
+ms.sourcegitcommit: 0283c436f3ba61a708b52b57a1955f5ea74376a3
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/16/2022
-ms.locfileid: "67740815"
+ms.lasthandoff: 09/28/2022
+ms.locfileid: "68097454"
 ---
 # <a name="protect-all-email"></a>Proteger todo el correo electrónico
 

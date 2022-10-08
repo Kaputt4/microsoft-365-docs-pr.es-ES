@@ -1,5 +1,5 @@
 ---
-title: Cancelar la suscripción empresarial
+title: Cancelación de la suscripción empresarial de Microsoft
 f1.keywords:
 - NOCSH
 author: cmcatee-MSFT
@@ -8,9 +8,10 @@ manager: scotv
 ms.reviewer: jkinma, jmueller
 audience: Admin
 ms.topic: article
-ms.service: o365-administration
+ms.service: microsoft-365-business
 ms.localizationpriority: high
 ms.collection:
+- scotvorg
 - highpri
 - M365-subscription-management
 - Adm_O365
@@ -23,14 +24,14 @@ ms.custom:
 search.appverid: MET150
 description: Descubra cómo cancelar sus suscripciones de prueba o de pago de Dynamics 365, Intune, Power Platform y Microsoft 365 para empresas en el Centro de administración de Microsoft 365.
 ms.date: 07/07/2022
-ms.openlocfilehash: b78054d4da625fdc78b86b26aa3c7ba9b8b186a6
-ms.sourcegitcommit: 37e137535c4f70702afe1a5eeaa899c75ee02cfd
+ms.openlocfilehash: 7bce380b2814c9a4235e1e95d78a1caf242df66c
+ms.sourcegitcommit: 0b7070ec119e00e0dafe030bbfbef0ae5c9afa19
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/13/2022
-ms.locfileid: "67660913"
+ms.lasthandoff: 09/29/2022
+ms.locfileid: "68185829"
 ---
-# <a name="cancel-your-microsoft-subscription"></a>Cancelar la suscripción a Microsoft
+# <a name="cancel-your-microsoft-business-subscription"></a>Cancelación de la suscripción empresarial de Microsoft
 
 Si quiere cancelar la suscripción, la manera más fácil de hacerlo es [desactivar la facturación periódica](renew-your-subscription.md). Al desactivar la facturación periódica, puede seguir usando la suscripción hasta que expire al final del período de suscripción. Si desea cancelar inmediatamente, use la información y los pasos de este artículo para hacerlo.
 
@@ -43,7 +44,7 @@ Puede cancelar la evaluación gratuita en cualquier momento para evitar futuros 
 
 ## <a name="before-you-begin"></a>Antes de empezar
 
-- Debe ser un administrador global o de facturación para realizar las tareas de este artículo. Para obtener más información, consulte [Acerca de los roles de administrador](../../admin/add-users/about-admin-roles.md).
+- You must be a Global or Billing admin to do the tasks in this article. For more information, see [About admin roles](../../admin/add-users/about-admin-roles.md).
 - Antes de cancelar una suscripción, asegúrese de que los usuarios [guarden sus datos](#save-your-data).
 - Si ha agregado su propio nombre de dominio para usarlo con su suscripción, deberá[quitar el dominio](../../admin/get-help-with-domains/remove-a-domain.md) antes de cancelar la suscripción.
 - Si tiene una suscripción de dominio, para evitar cualquier otro cargo por esa suscripción, [desactive la facturación periódica](renew-your-subscription.md).
@@ -93,20 +94,20 @@ Si no puede cancelar la suscripción, [póngase en contacto con el servicio de s
 
 ::: moniker-end
 
-2. Busque la suscripción que desea cancelar. Seleccione los tres puntos (más acciones), y luego, seleccione **Cancelar suscripción**.
+2. Find the subscription that you want to cancel. Select the three dots (more actions), then select **Cancel subscription**.
 
-3. En el panel **Cancelar suscripción**, seleccione una razón por la que cancela. Opcionalmente, proporcione algún comentario.
+3. In the **Cancel subscription** pane, choose a reason why you're canceling. Optionally, provide any feedback.
 
 4. Seleccione **Guardar**.
 
-Su suscripción aparece ahora en estado **Desactivado**, y tiene una funcionalidad reducida hasta que se elimine. Para obtener más información sobre lo que puede esperar cuando se cancela una suscripción de pago a Microsoft 365 para empresas, consulte [¿Qué ocurre con mis datos y mi acceso cuando finaliza mi suscripción a Microsoft 365 para empresas?](what-if-my-subscription-expires.md) 
+Your subscription now appears in a **Disabled** state, and has reduced functionality until it's deleted. For more information about what you can expect when a paid Microsoft 365 for business subscription is canceled, see [What happens to my data and access when my Microsoft 365 for business subscription ends?](what-if-my-subscription-expires.md)
 
 > [!IMPORTANT]
 > Si elimina explícitamente una suscripción, omite las fases **Expirada** y **Deshabilitada** y los datos y el contenido de SharePoint Online, incluido OneDrive, se eliminan inmediatamente.
 
 ## <a name="save-your-data"></a>Guardar sus datos
 
-Cuando la cancelación se haga efectiva, los usuarios perderán el acceso a sus datos. Antes de cancelar la suscripción, recomiende a sus usuarios guardar sus archivos de OneDrive para la Empresa o SharePoint Online en otra ubicación. Cualquier dato de cliente que deje fuera de esta copia podría eliminarse entre los siguientes 30 y 180 días después de la cancelación.
+When the cancellation becomes effective, your users lose access to their data. Before you cancel the subscription, have them save their OneDrive for Business or SharePoint Online files to another location. Any customer data that you leave behind might be deleted after 30 days, and is deleted no later than 180 days after cancellation.
 
 - Para mover el correo electrónico, los contactos, las tareas y la información de calendario a otra cuenta, vea [Exportar o realizar copias de seguridad de correo electrónico, contactos y calendario en un archivo .pst de Outlook](https://support.microsoft.com/office/14252b52-3075-4e9b-be4e-ff9ef1068f91).
 - Para guardar una biblioteca de documentos o el contenido de una lista (como los contactos) de un entorno de SharePoint Online (sitios de grupo o OneDrive para la Empresa) en recursos compartidos de archivos o en un equipo local, consulte[Información sobre la migración manual de contenido de SharePoint Online](/sharepoint/troubleshoot/migration-tool/content-manual-migration).
@@ -115,7 +116,7 @@ Cuando la cancelación se haga efectiva, los usuarios perderán el acceso a sus 
 
 ### <a name="uninstall-office-optional"></a>Desinstalar Office (opcional)
 
-Si ha cancelado la suscripción y no ha [movido los usuarios a otra suscripción](move-users-different-subscription.md) que incluya Microsoft 365, Microsoft 365 se ejecutará en modo de funcionalidad reducida. Cuando esto sucede, los usuarios solo pueden leer e imprimir documentos y las aplicaciones de MIcrosoft 365 mostrarán [notificaciones de producto sin licencia](https://support.microsoft.com/office/0d23d3c0-c19c-4b2f-9845-5344fedc4380). Para evitar confusiones, solicite a los usuarios que [desinstalen Office](https://support.microsoft.com/office/9dd49b83-264a-477a-8fcc-2fdf5dbf61d8) de sus equipos.
+If you canceled your subscription, and didn't [move users to a different subscription](move-users-different-subscription.md) that includes Microsoft 365, Microsoft 365 runs in reduced functionality mode. When this happens, users can only read and print documents, and Microsoft 365 applications display [Unlicensed Product notifications](https://support.microsoft.com/office/0d23d3c0-c19c-4b2f-9845-5344fedc4380). To avoid any confusion, have your users [uninstall Office](https://support.microsoft.com/office/9dd49b83-264a-477a-8fcc-2fdf5dbf61d8) from their machines.
 
 ### <a name="close-your-account-optional"></a>Cerrar la cuenta (opcional)
 

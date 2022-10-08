@@ -8,9 +8,10 @@ manager: scotv
 ms.reviewer: jkinma, jmueller
 audience: Admin
 ms.topic: article
-ms.service: o365-administration
+ms.service: microsoft-365-business
 ms.localizationpriority: medium
 ms.collection:
+- scotvorg
 - M365-subscription-management
 - Adm_O365
 ms.custom:
@@ -21,12 +22,12 @@ ms.custom:
 search.appverid: MET150
 description: Obtenga información sobre cómo cambiar la frecuencia con la que se le factura por su suscripción empresarial.
 ms.date: 05/24/2022
-ms.openlocfilehash: d3d226eea1972daf7bede15b47c87dad1442530c
-ms.sourcegitcommit: 414682b9bf42dc19a89c893d3c515aee9765b6e4
+ms.openlocfilehash: ed25b3aed803683fbc68547cdd168f2998fe70fa
+ms.sourcegitcommit: 0b7070ec119e00e0dafe030bbfbef0ae5c9afa19
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/08/2022
-ms.locfileid: "67280859"
+ms.lasthandoff: 09/29/2022
+ms.locfileid: "68185895"
 ---
 # <a name="change-your-microsoft-365-subscription-billing-frequency"></a>Cambiar la frecuencia de facturación de la suscripción de Microsoft 365
 
@@ -42,7 +43,7 @@ Al comprar una suscripción, selecciona una frecuencia de facturación. Para cam
 
 ## <a name="related-content"></a>Contenido relacionado
 
-[Vea su factura o recibo](../../commerce/billing-and-payments/view-your-bill-or-invoice.md) (artículo)\
+[Vea su factura o recibo](../../commerce/billing-and-payments/view-your-bill-or-invoice.md) (artículo)
 [Pagar por la suscripción](../../commerce/billing-and-payments/pay-for-your-subscription.md) (artículo)\
 [Obtenga más información sobre cómo encontrar y ver su factura](view-your-bill-or-invoice.md) (artículo)\
 [Cambiar las direcciones de facturación](change-your-billing-addresses.md) (artículo)

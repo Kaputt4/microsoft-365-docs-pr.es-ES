@@ -15,15 +15,16 @@ ms.reviewer: shlomiakirav
 f1.keywords: NOCSH
 ms.collection:
 - SMB
-- M365-security-compliance
+- m365-security
 - m365-initiative-defender-business
+- tier1
 ms.custom: intro-overview
-ms.openlocfilehash: 51c480016244dca6aaaa0c65601376ba574478f1
-ms.sourcegitcommit: 2b89bcff547e00be3d38dc8d1e6cbcf8f41eba42
+ms.openlocfilehash: 007707ce6fe21a7fa7e9d7263ef1d9e23e0ecc74
+ms.sourcegitcommit: 9f5cf8cf8a2e25cfd07b23b7f6d7f9d138a9cd16
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/03/2022
-ms.locfileid: "67598074"
+ms.lasthandoff: 10/07/2022
+ms.locfileid: "68501302"
 ---
 # <a name="what-is-microsoft-defender-for-business"></a>¿Qué es Microsoft Defender para Empresas?
 
@@ -61,7 +62,7 @@ Con Defender para empresas, puede ayudar a proteger los dispositivos y los datos
    - [Obtenga información sobre cómo obtener Defender para empresas](get-defender-business.md).
 
 - **Obtenga información sobre cómo configurar las funcionalidades de protección contra amenazas**. 
-   - [Use el cuaderno de estrategias de prueba: Defender para empresas](trial-playbook-defender-business.md).
+   - [Consulte la guía del usuario de prueba: Defender para empresas](trial-playbook-defender-business.md).
    - [Obtenga información sobre el proceso de configuración simplificado](mdb-simplified-configuration.md).
    - [Vea cómo configurar Defender para empresas y cómo configurarlo](mdb-setup-configuration.md).
 

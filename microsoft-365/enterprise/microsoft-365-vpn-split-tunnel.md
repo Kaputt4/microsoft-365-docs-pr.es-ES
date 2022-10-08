@@ -11,6 +11,7 @@ ms.localizationpriority: medium
 search.appverid:
 - MET150
 ms.collection:
+- scotvorg
 - Ent_O365
 - Strat_O365_Enterprise
 - remotework
@@ -18,12 +19,12 @@ ms.collection:
 f1.keywords:
 - NOCSH
 description: Información general sobre la tunelización dividida de VPN con Microsoft 365 para optimizar la conectividad de los usuarios remotos.
-ms.openlocfilehash: bec540182e72c40d5229afe8b35f092da4c5797e
-ms.sourcegitcommit: 9b133379196da2b3a4bb311b07ff274f43780f68
+ms.openlocfilehash: ab719109756da721ac46a1ecba069a02ce85fb68
+ms.sourcegitcommit: 0b7070ec119e00e0dafe030bbfbef0ae5c9afa19
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/14/2022
-ms.locfileid: "67696647"
+ms.lasthandoff: 09/29/2022
+ms.locfileid: "68200987"
 ---
 # <a name="overview-vpn-split-tunneling-for-microsoft-365"></a>Información general: Túnel dividido de VPN para Microsoft 365
 
@@ -151,7 +152,7 @@ Entonces se puede desencadenar una directiva como aprobar, activar MFA o bloquea
 
 De nuevo, Microsoft 365 proporciona protección para los puntos de conexión marcados de Optimize en varias capas del propio servicio, [que se describen en este documento](/office365/Enterprise/office-365-malware-and-ransomware-protection). Como se indicó, es mucho más eficaz proporcionar estos elementos de seguridad en el propio servicio en lugar de intentar hacerlo en línea con los dispositivos que pueden no comprender completamente los protocolos o el tráfico. De forma predeterminada, SharePoint Online [examina automáticamente las cargas de archivos](../security/office-365-security/virus-detection-in-spo.md) en busca de malware conocido.
 
-Para los puntos de conexión de Exchange enumerados anteriormente, [Exchange Online Protection](/office365/servicedescriptions/exchange-online-protection-service-description/exchange-online-protection-service-description) y [Microsoft Defender para Microsoft 365](/office365/servicedescriptions/office-365-advanced-threat-protection-service-description) realizan un excelente trabajo para proporcionar seguridad del tráfico al servicio.
+Para los puntos de conexión de Exchange enumerados anteriormente, [Exchange Online Protection](/office365/servicedescriptions/exchange-online-protection-service-description/exchange-online-protection-service-description) y [Microsoft Defender para Microsoft 365](/office365/servicedescriptions/office-365-advanced-threat-protection-service-description) realizan un excelente trabajo de proporcionar seguridad del tráfico al servicio.
 
 ### <a name="can-i-send-more-than-just-the-optimize-traffic-direct"></a>¿Puedo enviar algo más de forma directa que el tráfico de Optimizar?
 

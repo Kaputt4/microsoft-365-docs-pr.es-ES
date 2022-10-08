@@ -11,17 +11,18 @@ ms.service: microsoft-365-security
 ms.subservice: mdb
 ms.localizationpriority: none
 ms.date: 08/11/2022
-ms.reviewer: shlomiakirav
-f1.keywords: NOCSH
 ms.collection:
 - SMB
-- m365-security-compliance
-ms.openlocfilehash: 416fe2501b6e3a30f3384d443327d801002e7284
-ms.sourcegitcommit: 511d15831b97d02e5a0f5e11834ad52617abd0f6
+- m365-security
+- tier1
+ms.reviewer: shlomiakirav
+f1.keywords: NOCSH
+ms.openlocfilehash: c3663464314a764330ec7cf8c5b4c8ec67d99c6a
+ms.sourcegitcommit: 9f5cf8cf8a2e25cfd07b23b7f6d7f9d138a9cd16
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/03/2022
-ms.locfileid: "67600452"
+ms.lasthandoff: 10/07/2022
+ms.locfileid: "68501497"
 ---
 # <a name="how-to-get-microsoft-defender-for-business-servers-preview"></a>Obtención de servidores Microsoft Defender para Empresas (versión preliminar)
 
@@ -48,7 +49,7 @@ A continuación se muestra cómo obtener servidores de Microsoft Defender para E
 
 ## <a name="see-also"></a>Vea también
 
-- [Consulte el cuaderno de estrategias de prueba: Microsoft Defender para Empresas](trial-playbook-defender-business.md).
+- [Consulte la guía del usuario de prueba: Microsoft Defender para Empresas](trial-playbook-defender-business.md).
 - [Use el asistente de instalación en Microsoft Defender para Empresas](mdb-use-wizard.md).
 - [Consulte el proceso de configuración y configuración de Defender para empresas](mdb-setup-configuration.md).
 - [Vea cómo obtener ayuda y soporte técnico para Defender para empresas](mdb-get-help.md) (por si necesita ayuda).

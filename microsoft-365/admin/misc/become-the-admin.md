@@ -7,9 +7,10 @@ author: efrene
 manager: scotv
 audience: Admin
 ms.topic: article
-ms.service: o365-administration
+ms.service: microsoft-365-business
 ms.localizationpriority: medium
 ms.collection:
+- scotvorg
 - M365-subscription-management
 - Adm_O365
 - Adm_NonTOC
@@ -22,12 +23,12 @@ search.appverid:
 - MOE150
 ms.assetid: b9707ec8-2247-4e25-9bad-f11ddbc686e4
 description: Obtenga información sobre cómo comprobar la propiedad del dominio y el correo electrónico para hacerse cargo de una cuenta no administrada creada por un registro de usuario de autoservicio en Microsoft 365.
-ms.openlocfilehash: b930e9d4774dc9271d4bcbd93ffb9e5ced577dab
-ms.sourcegitcommit: 8a0de6240facfe26ee391a14076b7fe534ee6598
+ms.openlocfilehash: d83e1f0ef8cc7317281d1da060deaa602d314b9a
+ms.sourcegitcommit: 0b7070ec119e00e0dafe030bbfbef0ae5c9afa19
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/07/2022
-ms.locfileid: "65922139"
+ms.lasthandoff: 09/29/2022
+ms.locfileid: "68199887"
 ---
 # <a name="internal-admin-takeover"></a>Adquisición del administrador interno
 
@@ -47,7 +48,7 @@ Cuando un usuario se registra en los servicios de Microsoft 365 mediante una dir
 > [!NOTE]
 > Si el autoservicio está habilitado en su cuenta, los usuarios pueden suscribirse a servicios gratuitos, como Power BI, por su cuenta. Estos servicios se usan específicamente en casos en los que una suscripción de usuario de autoservicio ha creado la cuenta no administrada que quiere asumir como administrador. En el paso 1, cree una cuenta de usuario para el dominio que desea quitar mediante Power BI para iniciar el Asistente para la adquisición de administrador para que pueda convertirse en el administrador de la cuenta de dominio no administrada.
 
-1. Para registrarse en Power BI, vaya al [sitio de Power BI](https://powerbi.com) y seleccione **Iniciar** evaluación **gratuita de inicio gratuito** >  (en el cuadro Compartir con Power BI Pro). 
+1. Para registrarse en Power BI, vaya al [sitio de Power BI](https://powerbi.com) y seleccione **Iniciar** prueba **gratuita de inicio gratis** >  (en el cuadro Compartir con Power BI Pro). 
 
 2. Regístrese con una cuenta de usuario que use el nombre de dominio de su organización (por ejemplo `powerbiadmin@contoso.com`, ). Si su cuenta ya está en uso, inicie sesión con la contraseña actual.
 
@@ -77,7 +78,7 @@ Cuando un usuario se registra en los servicios de Microsoft 365 mediante una dir
   
 ## <a name="related-content"></a>Contenido relacionado
 
-YouTube: [tres pasos para realizar una adquisición de administrador de TI para Power BI y Microsoft 365](https://www.youtube.com/watch?v=xt5EsrQBZZk) (vídeo)\
-[Adquisición de administración en Azure AD](/azure/active-directory/users-groups-roles/domains-admin-takeover) (artículo)\
+YouTube: [tres pasos para realizar una adquisición de ti Administración para Power BI y Microsoft 365](https://www.youtube.com/watch?v=xt5EsrQBZZk) (vídeo)\
+[Administración adquisición en Azure AD](/azure/active-directory/users-groups-roles/domains-admin-takeover) (artículo)\
 [Uso del registro de autoservicio en su organización](self-service-sign-up.md) (artículo)\
-[Descripción del rol de administrador del servicio Power BI](/power-bi/service-admin-role) (artículo)
+[Descripción del rol de administrador servicio Power BI](/power-bi/service-admin-role) (artículo)

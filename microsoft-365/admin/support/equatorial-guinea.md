@@ -7,19 +7,21 @@ ms.author: cmcatee
 manager: scotv
 audience: Admin
 ms.topic: reference
-ms.service: o365-administration
-ms.collection: Adm_Support
+ms.service: microsoft-365-business
+ms.collection:
+- scotvorg
+- Adm_Support
 ms.localizationpriority: medium
 description: Obtenga información acerca de cómo ponerse en contacto con el soporte técnico de su país o región.
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: 658022e072870c90f1ee4f2bfe731360836c56db
-ms.sourcegitcommit: 0ee2dabe402d44fecb6856af98a2ef7720d25189
+ms.openlocfilehash: b14d7c8544fe72a1e07efaa7a4fe2beeca86b1cc
+ms.sourcegitcommit: 0b7070ec119e00e0dafe030bbfbef0ae5c9afa19
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/09/2021
-ms.locfileid: "61374489"
+ms.lasthandoff: 09/29/2022
+ms.locfileid: "68192407"
 ---
-# <a name="contact-support-for-equatorial-guinea"></a>Póngase en contacto con el soporte técnico de Guinea Ecuatorial
+# <a name="contact-support-for-equatorial-guinea"></a>Póngase en contacto con el equipo de soporte técnico de Guinea Ecuatorial
 
 [Buscar otro país o región](../get-help-support.md).
 

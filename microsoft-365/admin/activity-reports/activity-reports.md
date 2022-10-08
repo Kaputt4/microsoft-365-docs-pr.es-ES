@@ -7,9 +7,10 @@ author: camillepack
 manager: scotv
 audience: Admin
 ms.topic: overview
-ms.service: o365-administration
+ms.service: microsoft-365-business
 ms.localizationpriority: high
 ms.collection:
+- scotvorg
 - M365-subscription-management
 - Adm_O365
 - Adm_TOC
@@ -23,20 +24,20 @@ search.appverid:
 - GEA150
 ms.assetid: 0d6dfb17-8582-4172-a9a9-aed798150263
 description: Obtenga un informe periódico de cómo usan los usuarios los servicios de Microsoft 365 y explore en profundidad cada gráfico para obtener más información.
-ms.openlocfilehash: 79c4c4bcdb7036fcf32e8d8ee98f29ce49e4c3dd
-ms.sourcegitcommit: 6d86713c3b1da2db338c78fa60bd7d93e24aa6f4
+ms.openlocfilehash: 1961b1eae6222ed81765842f17c854a87cced40e
+ms.sourcegitcommit: 0b7070ec119e00e0dafe030bbfbef0ae5c9afa19
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/09/2022
-ms.locfileid: "67639600"
+ms.lasthandoff: 09/29/2022
+ms.locfileid: "68186203"
 ---
 # <a name="microsoft-365-reports-in-the-admin-center"></a>Informes de Microsoft 365 en el centro de administración
 
 Consulte la [ayuda de Microsoft 365 para pequeñas empresas](https://go.microsoft.com/fwlink/?linkid=2197659) en YouTube.
 
-Puede ver fácilmente el uso que hacen de los servicios de Microsoft 365 los usuarios de su empresa. Por ejemplo, puede identificar quién los usa con más frecuencia y ha alcanzado el límite o aquellos que no necesiten una licencia de Microsoft 365 en absoluto. El modelo de licencia perpetua no se incluirá en los informes. 
+You can easily see how people in your business are using Microsoft 365 services. For example, you can identify who is using a service a lot and reaching quotas, or who may not need a Microsoft 365 license at all. Perpetual license model will not be included in the reports. 
   
-Los informes están disponibles para los últimos 7, 30, 90 o 180 días. Los datos no estarán disponibles para todos los períodos de informes al instante. Los informes están disponibles en 48 horas.
+Reports are available for the last 7 days, 30 days, 90 days, and 180 days. Data won't exist for all reporting periods right away. The reports become available within 48 hours.
 
 ## <a name="watch-act-on-a-usage-report-in-microsoft-365"></a>Inspección: Actuar sobre un informe de uso en Microsoft 365
   
@@ -58,7 +59,7 @@ Consulte este vídeo y otros en nuestro [canal de YouTube](https://go.microsoft.
 
 ::: moniker-end
 
-2. Haga clic en el botón **Ver más** de la tarjeta de actividad en un vistazo de un servicio (como correo electrónico o OneDrive) para ver la página de detalles del informe. En esa página, se proporcionan diferentes informes para el servicio.
+2. Click the **View more** button from the at-a-glance activity card for a service (such as email or OneDrive) to see the report detail page. On that page, different reports for the service are provided in tabs.
 
    :::image type="content" alt-text="Panel de utilización." source="../../media/4c0f966d-9d2b-4a6f-a106-a6e2b9a2de07.png" lightbox="../../media/4c0f966d-9d2b-4a6f-a106-a6e2b9a2de07.png":::
 
@@ -66,7 +67,7 @@ Consulte este vídeo y otros en nuestro [canal de YouTube](https://go.microsoft.
 
 Usuarios que tengan los permisos siguientes:
 
-- Administradores globales: le recomendamos que solo unos pocos usuarios de su empresa tengan este rol, pues reduce el riesgo de su empresa.
+- Global admins: We recommend that only a few people in your company have this role. It reduces the risk to your business.
 
 - Administradores de Exchange
 
@@ -131,7 +132,7 @@ N/D<sup>2</sup>: El servicio no está disponible en el entorno, por lo que no ti
 
 ## <a name="how-to-view-usage-information-for-a-specific-user"></a>Cómo ver la información de uso de un usuario en concreto
 
-Use los informes de servicio para buscar cuánto utiliza un servicio un usuario en concreto. Por ejemplo, para ver cuánto espacio de almacenamiento del buzón ha consumido un usuario en concreto, abra el informe de uso del buzón y ordene los usuarios por nombre. Si tiene miles de usuarios, exporte el informe a Excel para filtrar la lista rápidamente.
+Use the service reports to research how much a specific user is using the service. For example, to find out how much mailbox storage a specific user has consumed, open the Mailbox usage report, and sort the users by name. If you have thousands of users, export the report to Excel so you filter through the list quickly.
 
 No puede generar un informe en el que especifique una cuenta de usuario, y después obtener una lista de los servicios que están utilizando y el tiempo de uso.
 

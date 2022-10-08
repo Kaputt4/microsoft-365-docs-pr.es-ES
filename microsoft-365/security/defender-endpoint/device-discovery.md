@@ -14,19 +14,20 @@ ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection:
-- M365-security-compliance
+- m365-security
 - m365initiative-m365-defender
 - m365-initiative-defender-endpoint
+- tier1
 ms.custom: admindeeplinkDEFENDER
 ms.topic: conceptual
 ms.subservice: mde
 search.appverid: met150
-ms.openlocfilehash: a3bb9420773c61258a53a547ec9181c652a6e526
-ms.sourcegitcommit: c29af68260ba8676083674b3c70209bff2c2e362
+ms.openlocfilehash: 12e814a6013e67b7fdfd1de44d561262150c7401
+ms.sourcegitcommit: 0b7070ec119e00e0dafe030bbfbef0ae5c9afa19
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/16/2022
-ms.locfileid: "67739848"
+ms.lasthandoff: 09/29/2022
+ms.locfileid: "68200525"
 ---
 # <a name="device-discovery-overview"></a>Información general de la detección de dispositivo
 
@@ -105,7 +106,7 @@ Para abordar el desafío de obtener suficiente visibilidad para localizar, ident
 
 - **Corelight**: Microsoft se ha asociado con Corelight para recibir datos de dispositivos de red corelight. Esto proporciona Microsoft 365 Defender con mayor visibilidad sobre las actividades de red de los dispositivos no administrados, incluida la comunicación con otros dispositivos no administrados o redes externas. Para obtener más información, consulte [Habilitación de la integración de datos de Corelight](corelight-integration.md).
 
-- **Microsoft Defender para IoT**: esta integración combina las funcionalidades de detección de dispositivos de Microsoft Defender para punto de conexión, con las funcionalidades de supervisión sin agente de Microsoft Defender para IoT, para proteger los dispositivos IoT empresariales conectados a una red de TI (por ejemplo, Protocolo de voz a través de Internet (VoIP), impresoras y televisores inteligentes. Para obtener más información, consulte [Habilitación de la integración de Microsoft Defender para IoT](enable-microsoft-defender-for-iot-integration.md).
+- **Microsoft Defender para IoT**: esta integración combina las funcionalidades de detección de dispositivos de Microsoft Defender para punto de conexión, con las funcionalidades de supervisión sin agente de Microsoft Defender  para IoT, para proteger los dispositivos IoT empresariales conectados a una red de TI (por ejemplo, Voice over Internet Protocol (VoIP), impresoras y televisores inteligentes. Para obtener más información, consulte [Habilitación de Microsoft Defender para la integración de IoT](enable-microsoft-defender-for-iot-integration.md).
 
 ## <a name="vulnerability-assessment-on-discovered-devices"></a>Evaluación de vulnerabilidades en dispositivos detectados
 

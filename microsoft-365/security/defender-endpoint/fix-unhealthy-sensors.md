@@ -11,17 +11,19 @@ author: mjcaparas
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
-ms.collection: M365-security-compliance
+ms.collection:
+- m365-security
+- tier2
 ms.topic: article
 ms.date: 11/23/2020
 ms.subservice: mde
 search.appverid: met150
-ms.openlocfilehash: d9df75e54807435351ff043da7f94c791e41d1a9
-ms.sourcegitcommit: 9b133379196da2b3a4bb311b07ff274f43780f68
+ms.openlocfilehash: 60be2727624dbe78a96d626d47c01401c5460b42
+ms.sourcegitcommit: 0b7070ec119e00e0dafe030bbfbef0ae5c9afa19
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/14/2022
-ms.locfileid: "67704884"
+ms.lasthandoff: 09/29/2022
+ms.locfileid: "68209984"
 ---
 # <a name="fix-unhealthy-sensors-in-microsoft-defender-for-endpoint"></a>Corrección de sensores incorrectos en Microsoft Defender para punto de conexión
 
@@ -93,8 +95,8 @@ Siga estas acciones para corregir problemas conocidos relacionados con un dispos
 - [Asegúrese de que el servicio de datos de diagnóstico está habilitado](troubleshoot-onboarding.md#ensure-the-diagnostics-service-is-enabled)</br>
 Si los dispositivos no informan correctamente, debe comprobar que el servicio de datos de diagnóstico de Windows está establecido para iniciarse automáticamente. Compruebe también que el servicio de datos de diagnóstico de Windows se ejecuta en el punto de conexión.
 
-- [Asegúrese de que la directiva no deshabilita el Antivirus de Microsoft Defender](troubleshoot-onboarding.md#ensure-that-microsoft-defender-antivirus-is-not-disabled-by-a-policy)</br>
-Si los dispositivos ejecutan un cliente antimalware de terceros, el agente de Defender para punto de conexión requiere que el controlador Antimalware de inicio anticipado (ELAM) del Antivirus de Microsoft Defender esté habilitado.
+- [Asegúrese de que la directiva no deshabilita Microsoft Defender Antivirus](troubleshoot-onboarding.md#ensure-that-microsoft-defender-antivirus-is-not-disabled-by-a-policy)</br>
+Si los dispositivos ejecutan un cliente antimalware de terceros, el agente de Defender para punto de conexión requiere que el controlador antimalware de inicio anticipado (ELAM) de Microsoft Defender Antivirus esté habilitado.
 
 Si ha realizado acciones correctivas y el estado del dispositivo sigue mal configurado, [abra una incidencia de soporte](https://go.microsoft.com/fwlink/?LinkID=761093&clcid=0x409) técnico.
 

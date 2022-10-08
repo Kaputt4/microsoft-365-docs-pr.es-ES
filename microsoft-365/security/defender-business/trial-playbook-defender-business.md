@@ -1,33 +1,36 @@
 ---
-title: Cuaderno de estrategias de la edición de prueba de Microsoft Defender para Empresas
+title: Microsoft Defender para Empresas guía del usuario de prueba
 f1.keywords:
 - NOCSH
 ms.author: deniseb
 author: denisebmsft
 manager: dansimp
 audience: Admin
-ms.topic: article
-ms.collection: m365-security-compliance
+ms.topic: how-to
+ms.collection:
+- m365-security
+- tier1
 ms.localizationpriority: high
+ms.date: 10/07/2022
 ms.service: microsoft-365-security
 ms.subservice: mdb
 search.appverid:
 - MOE150
 - MET150
-description: Saque el máximo partido de la edición de prueba de Defender para Empresas con este cuaderno de estrategias. Prepárese rápidamente y comience a usar sus nuevas funcionalidades de seguridad.
+description: Aprovechar al máximo la prueba de Defender para empresas con esta guía. Prepárese rápidamente y comience a usar sus nuevas funcionalidades de seguridad.
 ms.custom: trial-playbook
-ms.openlocfilehash: f03b444b685d4f2bc39a5a0e73d2488b88db6dec
-ms.sourcegitcommit: 511d15831b97d02e5a0f5e11834ad52617abd0f6
+ms.openlocfilehash: 290c5eb2f6ced1816a7955fc8528a3c6cadcccc2
+ms.sourcegitcommit: 9f5cf8cf8a2e25cfd07b23b7f6d7f9d138a9cd16
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/03/2022
-ms.locfileid: "67600387"
+ms.lasthandoff: 10/07/2022
+ms.locfileid: "68501540"
 ---
-# <a name="trial-playbook-microsoft-defender-for-business"></a>Edición de prueba del cuaderno de estrategias de Microsoft Defender para Empresas
+# <a name="trial-user-guide-microsoft-defender-for-business"></a>Guía del usuario de prueba: Microsoft Defender para Empresas
 
-**Le damos la bienvenida a la edición de prueba del cuaderno de estrategias de Defender para Empresas.**
+**Bienvenido a la guía del usuario de prueba de Defender for Business.**
 
-Este cuaderno de estrategias es una guía sencilla que le ayudará a sacar el máximo partido a su prueba gratuita de 30 días. Use las recomendaciones de este artículo del equipo de Microsoft Defender para obtener información sobre cómo Defender for Business puede ayudar a elevar la seguridad de la protección antivirus tradicional a la protección de última generación, la detección y respuesta de puntos de conexión y la administración de vulnerabilidades.
+Esta guía le ayudará a configurar y usar características clave de la evaluación gratuita. Con las recomendaciones de este artículo del equipo de Microsoft Defender, obtenga información sobre cómo Defender for Business puede ayudar a elevar la seguridad de la protección antivirus tradicional a la protección de última generación, la detección y respuesta de puntos de conexión y la administración de vulnerabilidades.
 
 ## <a name="what-is-defender-for-business"></a>¿Qué es Defender para Empresas?
 
@@ -54,7 +57,7 @@ Después de registrarse en Defender para Empresas, el primer paso es **[agregar 
 > Debe ser administrador global para realizar esta tarea. La persona que haya registrado su empresa en Microsoft 365 o Defender para Empresas será el administrador global de forma predeterminada. [Más información acerca de los roles y permisos](mdb-roles-permissions.md).
 
 ### <a name="step-2-visit-the-microsoft-365-defender-portal"></a>Paso 2: Visitar el portal de Microsoft 365 Defender
- 
+
 El portal de Microsoft 365 Defender ([https://security.microsoft.com](https://security.microsoft.com)) es una tienda integral donde se usa y administra Defender para Empresas. Incluye llamadas de ayuda para empezar a usar el programa, tarjetas que muestran información relevante y una barra de navegación que proporciona acceso fácil a las distintas características y funcionalidades.
 
 - **[Visitar el portal de Microsoft 365 Defender](mdb-get-started.md)**.
@@ -70,7 +73,7 @@ Defender para Empresas fue diseñado para ahorrar tiempo y esfuerzo a las peque�
 #### <a name="setup-wizard-flow-what-to-expect"></a>Flujo del asistente de configuración: qué esperar
 
 > [!TIP]
-> **El uso del asistente de configuración es opcional.** (Vea [¿Qué pasa si no uso el asistente?](mdb-use-wizard.md#what-happens-if-i-dont-use-the-wizard)) Si decide no usar el asistente o si el asistente se cierra antes de que se complete el proceso de configuración, puede completar el proceso de instalación y configuración por su cuenta. Vea el [Paso 4](#step-4-set-up-and-configure-defender-for-business). 
+> **El uso del asistente de configuración es opcional.** (Consulte [¿Qué ocurre si no uso el asistente?](mdb-use-wizard.md#what-happens-if-i-dont-use-the-wizard)). Si decide no usar el asistente o si el asistente se cierra antes de que se complete el proceso de instalación, puede completar el proceso de instalación y configuración por su cuenta. Consulte [Paso 4: Configurar y configurar Defender para empresas](#step-4-set-up-and-configure-defender-for-business).
 
 1. **[Asignar permisos de usuario](mdb-roles-permissions.md#view-or-edit-role-assignments)**. Conceda a su equipo de seguridad acceso al portal de Microsoft 365 Defender.
 
@@ -80,10 +83,10 @@ Defender para Empresas fue diseñado para ahorrar tiempo y esfuerzo a las peque�
 
    > [!NOTE]
    > Cuando se usa el asistente de configuración, el sistema detecta si tiene dispositivos Windows que ya estén inscritos en Intune. Se le preguntará si quiere usar la incorporación automática para todos los dispositivos Windows o solo para algunos de ellos. Puede incorporar todos los dispositivos Windows a la vez o seleccionar dispositivos específicos con los cuales empezar y, a continuación, agregar más dispositivos después. [Más información sobre la incorporación automática](mdb-use-wizard.md#what-is-automatic-onboarding).
-   
+
    Para incorporar otros dispositivos, consulte el [paso 4](#step-4-set-up-and-configure-defender-for-business).
 
-4.  **[Ver y editar directivas de seguridad](mdb-configure-security-settings.md)**. Defender para Empresas incluye directivas de seguridad predeterminadas para una protección de próxima generación y protección de firewall que se pueden aplicar a los dispositivos de la empresa. Estas directivas de seguridad preconfiguradas usan la configuración recomendada, por lo que estará protegido apenas incorpore los dispositivos a Defender para Empresas. Y también puede editar las directivas o crear otras nuevas.
+4. **[Ver y editar directivas de seguridad](mdb-configure-security-settings.md)**. Defender para Empresas incluye directivas de seguridad predeterminadas para una protección de próxima generación y protección de firewall que se pueden aplicar a los dispositivos de la empresa. Estas directivas de seguridad preconfiguradas usan la configuración recomendada, por lo que estará protegido apenas incorpore los dispositivos a Defender para Empresas. Y también puede editar las directivas o crear otras nuevas.
 
 ### <a name="step-4-set-up-and-configure-defender-for-business"></a>Paso 4: Configurar Defender para Empresas
 
@@ -91,9 +94,9 @@ Si decide no usar el asistente de configuración, vea el siguiente diagrama que 
 
 [:::image type="content" source="media/mdb-setup-process-2.png" alt-text="Proceso de ajuste y configuración de Defender para Empresas.":::](mdb-setup-configuration.md)
 
-Si ya usó el asistente de configuración pero necesita incorporar más dispositivos, como dispositivos que no son de Windows, vaya directamente al paso 4 del procedimiento siguiente:
+Si usó el asistente para la instalación, pero necesita incorporar más dispositivos, como dispositivos que no son de Windows, vaya directamente al [paso 4](mdb-onboard-devices.md) en el procedimiento siguiente:
 
-1. **[Revisar los requisitos](mdb-requirements.md)** para configurar y usar Defender para Empresas. 
+1. **[Revisar los requisitos](mdb-requirements.md)** para configurar y usar Defender para Empresas.
 
 2. **[Asignar roles y permisos](mdb-roles-permissions.md)** en el portal de Microsoft 365 Defender.
 
@@ -105,65 +108,57 @@ Si ya usó el asistente de configuración pero necesita incorporar más disposit
    - [Obtener información sobre los tipos de notificaciones por correo electrónico](mdb-email-notifications.md#types-of-email-notifications).
    - [Ver y editar la configuración de notificaciones por correo electrónico](mdb-email-notifications.md#view-and-edit-email-notifications).
 
-4. **[Incorporar dispositivos](mdb-onboard-devices.md)**. Con Defender para Empresas, tiene varias opciones entre las cuales elegir para incorporar los dispositivos de su empresa. En primer lugar, seleccione el sistema operativo que desea incorporar.
+4. **[Incorporar dispositivos](mdb-onboard-devices.md)**. Para incorporar clientes Windows y Mac, puede usar un script local.
 
-   | Tipo de dispositivo | Métodos de incorporación |
-   |:---|:---|
-   | [Clientes de Windows](mdb-onboard-devices.md) | Elija una de las siguientes opciones para incorporar dispositivos cliente de Windows en Defender para Empresas:<ul><li>Script local (para la incorporación manual de dispositivos en el portal de Microsoft 365 Defender)</li><li>Directiva de grupo (si ya usa la directiva de grupo y prefiere este método)</li><li>Microsoft Intune (*recomendando*; incluido en [Microsoft 365 Empresa Premium](../../business-premium/index.md))</li></ul> |
-   | [Mac](mdb-onboard-devices.md) | Elija una de las siguientes opciones para incorporar Mac:<ul><li>Script local para Mac (*recomendado*)</li><li>Microsoft Intune para Mac (Intune se incluye en [Microsoft 365 Empresa Premium](../../business-premium/index.md))</li></ul><p>Se recomienda usar un script local para incorporar Mac. Aunque puede [configurar la inscripción para dispositivos Mac en Intune](/mem/intune/enrollment/macos-enroll), el script local es el método más sencillo para incorporar dispositivos Mac en Defender para Empresas. |
-   | Servidores Windows Server y Linux | *La capacidad de incorporar una instancia de Windows Server o de un servidor de Linux se encuentra actualmente en versión preliminar y requiere una licencia adicional*. Para obtener más información, vea los artículos siguientes: <ul><li>[Requisitos de Defender para Empresas](mdb-requirements.md)</li><li>[Incorporar dispositivos a Defender para Empresas](mdb-onboard-devices.md)</li></ul> |
-   | [Dispositivos móviles](mdb-onboard-devices.md) | Necesita Microsoft Intune para incorporar dispositivos móviles, como dispositivos Android e iOS/iPadOS. Si tiene [Microsoft 365 Empresa Premium](../../business-premium/index.md), Intune forma parte de su suscripción. Intune también se puede comprar por separado. Consulte los siguientes recursos para obtener ayuda para inscribir estos dispositivos en Intune:<ul><li>[Inscribir dispositivos Android](/mem/intune/enrollment/android-enroll)</li><li>[Inscribir dispositivos iOS o iPadOS](/mem/intune/enrollment/ios-enroll)</li></ul> |
+5. **[Ver y configurar directivas de seguridad](mdb-configure-security-settings.md)**. Después de incorporar los dispositivos de la empresa a Defender para Empresas, el siguiente paso es ver y editar las directivas de seguridad y la configuración. 
 
-5. **[Ver y configurar directivas de seguridad](mdb-configure-security-settings.md)**. Después de incorporar los dispositivos de la empresa a Defender para Empresas, el siguiente paso es ver y editar las directivas de seguridad y la configuración. Defender para Empresas incluye directivas de seguridad preconfiguradas que usan los ajustes recomendados. Aunque también puede editar la configuración para adaptarla a sus necesidades empresariales.
+Defender for Business incluye directivas de seguridad preconfiguradas que usan la configuración recomendada. Aunque también puede editar la configuración para adaptarla a sus necesidades empresariales.
 
-   | Acción | Descripción |
-   |:---|:---|
-   | [Elija dónde administrar sus directivas de seguridad y dispositivos](mdb-configure-security-settings.md#choose-where-to-manage-security-policies-and-devices). | Si selecciona el [proceso de configuración simplificado](mdb-simplified-configuration.md), podrá ver y administrar las directivas de seguridad en el portal de Microsoft 365 Defender ([https://security.microsoft.com](https://security.microsoft.com)). Sin embargo, no está limitado a esta opción. Si ha estado usando [Intune](/mem/intune/protect/), puede seguir usando el Centro de administración de Microsoft Endpoint Manager para administrar sus dispositivos y directivas de seguridad. |
-   | [Ver o editar las directivas de protección de próxima generación](mdb-configure-security-settings.md#view-or-edit-your-next-generation-protection-policies). | La configuración de protección de próxima generación incluye protección en tiempo real, bloqueo a primera vista, protección de red, acciones a realizar en aplicaciones potencialmente indeseadas y exámenes programados de antivirus.  |
-   | [Ver o editar las directivas de firewall](mdb-configure-security-settings.md#view-or-edit-your-firewall-policies-and-custom-rules). | La protección del firewall determina qué tráfico de red puede fluir hacia y desde los dispositivos de la empresa. [Se pueden usar reglas personalizadas](mdb-custom-rules-firewall.md) para definir las excepciones para las directivas de firewall. |
-   | [Configurar el filtrado de contenido web](mdb-configure-security-settings.md#set-up-web-content-filtering). | El filtrado de contenido web permite a su equipo de seguridad realizar seguimiento y regular el acceso a los sitios web en función de sus categorías de contenido, como contenido para adultos, ancho de banda alto, responsabilidad legal, ocio o no categorizado. |
-   | [Revisar la configuración para las características avanzadas](mdb-configure-security-settings.md#review-settings-for-advanced-features). | En Defender para Empresas, las características de seguridad están preconfiguradas con los ajustes recomendados. Puede revisar y editar la configuración para adaptarla a sus necesidades empresariales. <br/><br/>Para acceder a la configuración de las características avanzadas, en el portal de Microsoft 365 Defender ([https://security.microsoft.com](https://security.microsoft.com)) vaya a **Configuración** > **Puntos de conexión** > **General** > **Características avanzadas**. |
-   | Puede [Ver y editar otras opciones de configuración](mdb-configure-security-settings.md#access-your-settings-in-the-microsoft-365-defender-portal) en el portal de Microsoft 365 Defender. | Además de las directivas de seguridad que se aplican a los dispositivos, hay otras opciones que puede ver y editar en Defender para Empresas. Por ejemplo, se especifica la zona horaria que se va a usar y se pueden incorporar (o desincorporar) dispositivos. |
+Las directivas de seguridad que se van a revisar y configurar incluyen:
+
+- [Directivas de protección de última generación](mdb-configure-security-settings.md#view-or-edit-your-next-generation-protection-policies) que determinan la protección antivirus y antimalware para los dispositivos de la empresa
+- [Protección del firewall y reglas](mdb-configure-security-settings.md#view-or-edit-your-firewall-policies-and-custom-rules) que determinan qué tráfico de red puede fluir hacia y desde los dispositivos de la empresa
+- [Filtrado de contenido web](mdb-configure-security-settings.md#set-up-web-content-filtering)que impide que las personas visiten determinados sitios web (DIRECCIONES URL) en función de categorías, como contenido para adultos o responsabilidad legal
+- [Características avanzadas](mdb-configure-security-settings.md#review-settings-for-advanced-features) como investigación y respuesta automatizadas y detección y respuesta de puntos de conexión (EDR) en modo de bloque
 
 ## <a name="start-using-defender-for-business"></a>Empezar a usar Defender para Empresas
 
-En los próximos 30 días, le recomendamos probar las nuevas funcionalidades de seguridad según se describen en las secciones siguientes:
+En los próximos 30 días, el equipo del producto le guía sobre las características clave para probar:
 
-- [Uso del panel de Administración de vulnerabilidades de Microsoft Defender](#use-the-defender-vulnerability-management-dashboard) 
-- [Ver y responder a las amenazas detectadas](#view-and-respond-to-detected-threats)
-- [Revisar las directivas de seguridad](#review-security-policies)
-- [Prepararse para la administración de seguridad continua](#prepare-for-ongoing-security-management)
+1. [Use el panel de Administración de vulnerabilidades de Microsoft Defender](#1-use-the-defender-vulnerability-management-dashboard). 
 
-### <a name="use-the-defender-vulnerability-management-dashboard"></a>Uso del panel de Administración de vulnerabilidades de Defender
+2. [Ver y responder a las amenazas detectadas](#2-view-and-respond-to-detected-threats).
 
-Defender for Business incluye un panel de Administración de vulnerabilidades de Defender diseñado para ahorrar tiempo y esfuerzo al equipo de seguridad. [Use el panel de Administración de vulnerabilidades de Defender](mdb-view-tvm-dashboard.md).
+3. [Revisar directivas de seguridad](#3-review-security-policies).
+
+4. [Prepárese para la administración de seguridad en curso](#4-prepare-for-ongoing-security-management).
+
+5. [Pruebe el tutorial Document Drops Backdoor](#5-try-the-document-drops-backdoor-tutorial).
+
+### <a name="1-use-the-defender-vulnerability-management-dashboard"></a>1. Uso del panel de administración de vulnerabilidades de Defender
+
+Defender for Business incluye un panel de Administración de vulnerabilidades de Defender diseñado para ahorrar tiempo y esfuerzo al equipo de seguridad. Obtenga información sobre cómo [usar el panel de Administración de vulnerabilidades de Defender](mdb-view-tvm-dashboard.md).
 
 - Vea la puntuación de exposición que se asocia a los dispositivos de su organización.
 - Vea las principales recomendaciones de seguridad, como abordar las comunicaciones deficientes con los dispositivos, activar la protección del firewall o actualizar las definiciones del antivirus de Microsoft Defender.
 - Vea las actividades de corrección, como los archivos enviados a cuarentena o las vulnerabilidades encontradas en los dispositivos.
 
-### <a name="view-and-respond-to-detected-threats"></a>Ver y responder a las amenazas detectadas
+### <a name="2-view-and-respond-to-detected-threats"></a>2. Ver y responder a las amenazas detectadas
 
-A medida que se detectan amenazas y se generan alertas, se crean incidentes. El equipo de seguridad de su organización puede ver y administrar incidentes en el portal de Microsoft 365 Defender. [Ver y responder a las amenazas detectadas](mdb-view-manage-incidents.md). 
+A medida que se detectan amenazas y se generan alertas, se crean incidentes. El equipo de seguridad de su organización puede ver y administrar incidentes en el portal de Microsoft 365 Defender. Obtenga información sobre cómo [ver y responder a las amenazas detectadas](mdb-view-manage-incidents.md). 
 
 - [Ver y administrar incidentes](mdb-view-manage-incidents.md).
 - [Responder a las amenazas y mitigarlas](mdb-respond-mitigate-threats.md).
 - [Revisar las acciones de mediación en el Centro de actividades](mdb-review-remediation-actions.md).
 - [Visualización y uso de los informes](mdb-reports.md).
 
-### <a name="review-security-policies"></a>Revisión de las directivas de seguridad
+### <a name="3-review-security-policies"></a>3. Revisar las directivas de seguridad
 
-En Defender para Empresas, la configuración de seguridad se ajusta mediante directivas que se aplican a los dispositivos. Defender para Empresas incluye directivas preconfiguradas para ayudar a proteger los dispositivos de la empresa apenas se incorporan, protegiendo su organización contra amenazas de seguridad de identidad, dispositivo, aplicación y documentos. [Revisar directivas de seguridad](mdb-view-edit-create-policies.md).
+En Defender para Empresas, la configuración de seguridad se ajusta mediante directivas que se aplican a los dispositivos. Defender for Business incluye directivas preconfiguradas para ayudar a proteger los dispositivos de su empresa en cuanto se incorporan, lo que protege a su organización frente a amenazas de seguridad de identidades, dispositivos, aplicaciones y documentos. 
 
-- [Más información sobre las directivas predeterminadas](mdb-view-edit-create-policies.md#default-policies-in-defender-for-business).
-- [Ver las directivas existentes](mdb-view-edit-create-policies.md#view-your-existing-policies).
-- [Comprender el orden de las directivas](mdb-policy-order.md). 
-- [Comprender las opciones de configuración de última generación](mdb-next-gen-configuration-settings.md).
-- [Revisar la configuración predeterminada del firewall](mdb-firewall.md#default-firewall-settings-in-defender-for-business).
-- [Comprender la configuración del firewall que puede configurar](mdb-firewall.md#firewall-settings-you-can-configure-in-defender-for-business).
-- [Configurar el filtrado de contenido web](mdb-configure-security-settings.md#set-up-web-content-filtering). El filtrado de contenido web permite al equipo de seguridad realizar un seguimiento y regular el acceso a los sitios web en función de sus categorías de contenido. Esta funcionalidad no está activada de forma predeterminada, por lo que debe configurarla si la desea para su organización.
-  
-### <a name="prepare-for-ongoing-security-management"></a>Prepararse para la administración de seguridad continua
+Obtenga información sobre cómo [revisar las directivas de seguridad](mdb-view-edit-create-policies.md).
+
+### <a name="4-prepare-for-ongoing-security-management"></a>4. Prepararse para la administración de seguridad en curso
 
 Los nuevos eventos de seguridad, como la detección de amenazas en un dispositivo, la adición de nuevos dispositivos y los empleados que se unan o abandonen la organización, requerirán que administre la seguridad. En Defender para Empresas, hay muchas maneras de administrar la seguridad de los dispositivos.
 
@@ -171,6 +166,23 @@ Los nuevos eventos de seguridad, como la detección de amenazas en un dispositiv
 - [Tomar medidas en un dispositivo](mdb-manage-devices.md#take-action-on-a-device-that-has-threat-detections) con detecciones de amenazas.
 - [Incorporar un dispositivo a Defender para Empresas](mdb-manage-devices.md#onboard-a-device).
 - [Desincorporar un dispositivo de Defender para Empresas](mdb-manage-devices.md#offboard-a-device).
+
+### <a name="5-try-the-document-drops-backdoor-tutorial"></a>5. Pruebe el tutorial Document Drops Backdoor
+
+Para ver rápidamente cómo funciona Defender para empresas, pruebe un tutorial.
+
+Simular un ataque que introduce malware basado en archivos en un dispositivo de prueba. En el tutorial se describe cómo usar el archivo de simulación y qué se debe observar en el portal de Microsoft 365 Defender.
+
+>[!NOTE]
+> Este tutorial requiere que Microsoft Word esté instalado en el dispositivo de prueba.
+
+Para acceder al tutorial, haga lo siguiente:
+
+1. Vaya al [portal de Microsoft 365 Defender](https://security.microsoft.com) e inicie sesión.
+
+2. En el panel de navegación, en **Puntos de conexión**, elija **Tutoriales**.
+
+3. Elija **Document Drops Backdoor (Puerta trasera de eliminación de documentos**).
 
 ## <a name="additional-resources"></a>Recursos adicionales
 

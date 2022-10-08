@@ -1,5 +1,5 @@
 ---
-title: Ejecución y personalización de exámenes a petición en el Antivirus de Microsoft Defender
+title: Ejecución y personalización de exámenes a petición en Microsoft Defender Antivirus
 description: Ejecución y configuración de exámenes a petición mediante PowerShell, Instrumental de administración de Windows o individualmente en puntos de conexión con la aplicación Seguridad de Windows
 keywords: examen, a petición, dos, intune, examen instantáneo
 ms.service: microsoft-365-security
@@ -15,14 +15,16 @@ ms.date: 10/22/2021
 ms.reviewer: ''
 manager: dansimp
 ms.subservice: mde
-ms.collection: M365-security-compliance
+ms.collection:
+- m365-security
+- tier2
 search.appverid: met150
-ms.openlocfilehash: 20ba75d7d3cf7b9b2921b14ee902ed6ff1f272b2
-ms.sourcegitcommit: 9b133379196da2b3a4bb311b07ff274f43780f68
+ms.openlocfilehash: 47ad4df4995aad0889ad220b4c7a8b77853a382e
+ms.sourcegitcommit: 4e42bafee965446f44f7f57d1defed2b9b24fce8
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/14/2022
-ms.locfileid: "67690989"
+ms.lasthandoff: 09/30/2022
+ms.locfileid: "68229666"
 ---
 # <a name="configure-and-run-on-demand-microsoft-defender-antivirus-scans"></a>Configurar y ejecutar análisis bajo petición en el Antivirus de Microsoft Defender
 
@@ -39,7 +41,7 @@ Puede ejecutar un examen a petición en puntos de conexión individuales. Estos 
 Combinado con la protección siempre activa en tiempo real, que revisa los archivos cuando se abren y cierran, y cada vez que un usuario navega a una carpeta, un examen rápido ayuda a proporcionar una protección segura contra el malware que comienza con el sistema y el malware de nivel de kernel. En la mayoría de los casos, un examen rápido es suficiente y es la opción recomendada para los exámenes programados o a petición. [Obtenga más información sobre los tipos de examen](schedule-antivirus-scans.md#quick-scan-full-scan-and-custom-scan).
 
 > [!IMPORTANT]
-> El Antivirus de Microsoft Defender se ejecuta en el contexto de la cuenta [LocalSystem](/windows/win32/services/localsystem-account) al realizar un examen local. En el caso de los exámenes de red, usa el contexto de la cuenta de dispositivo. Si la cuenta de dispositivo de dominio no tiene los permisos adecuados para acceder al recurso compartido, el examen no funcionará. Asegúrese de que el dispositivo tiene permisos para el recurso compartido de red de acceso.
+> Microsoft Defender Antivirus se ejecuta en el contexto de la cuenta [LocalSystem](/windows/win32/services/localsystem-account) al realizar un examen local. En el caso de los exámenes de red, usa el contexto de la cuenta de dispositivo. Si la cuenta de dispositivo de dominio no tiene los permisos adecuados para acceder al recurso compartido, el examen no funcionará. Asegúrese de que el dispositivo tiene permisos para el recurso compartido de red de acceso.
 
 ## <a name="use-microsoft-endpoint-manager-to-run-a-scan"></a>Uso de Microsoft Endpoint Manager para ejecutar un examen
 
@@ -64,7 +66,7 @@ Use el parámetro siguiente `-scan` :
 mpcmdrun.exe -scan -scantype 1
 ```
 
-Para obtener más información sobre cómo usar la herramienta y parámetros adicionales, como iniciar un examen completo o definir rutas de acceso, consulte [Uso de la herramienta de línea de comandos mpcmdrun.exe para configurar y administrar antivirus de Microsoft Defender](command-line-arguments-microsoft-defender-antivirus.md).
+Para obtener más información sobre cómo usar la herramienta y parámetros adicionales, como iniciar un examen completo o definir rutas de acceso, consulte [Uso de la herramienta de línea de comandos mpcmdrun.exe para configurar y administrar Microsoft Defender Antivirus](command-line-arguments-microsoft-defender-antivirus.md).
 
 ## <a name="use-microsoft-intune-to-run-a-scan"></a>Uso de Microsoft Intune para ejecutar un examen
 
@@ -86,7 +88,7 @@ Use el siguiente cmdlet:
 Start-MpScan
 ```
 
-Para obtener más información sobre cómo usar PowerShell con el Antivirus de Microsoft Defender, consulte [Uso de cmdlets de PowerShell para configurar y ejecutar antivirus de Microsoft Defender](use-powershell-cmdlets-microsoft-defender-antivirus.md) y [cmdlets de Antivirus de Defender](/powershell/module/defender/).
+Para obtener más información sobre cómo usar PowerShell con Microsoft Defender Antivirus, consulte [Uso de cmdlets de PowerShell para configurar y ejecutar cmdlets Microsoft Defender Antivirus](use-powershell-cmdlets-microsoft-defender-antivirus.md) y [Antivirus de Defender](/powershell/module/defender/).
 
 ## <a name="use-windows-management-instruction-wmi-to-run-a-scan"></a>Uso de Instrucciones de administración de Windows (WMI) para ejecutar un examen
 

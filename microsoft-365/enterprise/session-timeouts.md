@@ -21,14 +21,15 @@ search.appverid:
 - BCS160
 ms.assetid: 37a5c116-5b07-4f70-8333-5b86fd2c3c40
 ms.collection:
+- scotvorg
 - M365-security-compliance
 description: Obtenga información sobre cómo se usan los tiempos de espera de sesión para equilibrar la seguridad y la facilidad de acceso en las aplicaciones cliente de Microsoft 365.
-ms.openlocfilehash: 910c0eaed754c7d41329741ecb24f15b9ac7364c
-ms.sourcegitcommit: 437461fa1d38ff9bb95dd8a1c5f0b94e8111ada2
+ms.openlocfilehash: f14d28e1cba153afcf3afda6f9c7a646079c3002
+ms.sourcegitcommit: 0b7070ec119e00e0dafe030bbfbef0ae5c9afa19
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/14/2022
-ms.locfileid: "67669087"
+ms.lasthandoff: 09/29/2022
+ms.locfileid: "68200723"
 ---
 # <a name="session-timeouts-for-microsoft-365"></a>Tiempos de espera de sesión para Microsoft 365
 

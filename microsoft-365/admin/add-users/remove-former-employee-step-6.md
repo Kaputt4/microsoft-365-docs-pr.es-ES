@@ -7,9 +7,10 @@ author: kwekua
 manager: scotv
 audience: Admin
 ms.topic: article
-ms.service: o365-administration
+ms.service: microsoft-365-business
 ms.localizationpriority: medium
 ms.collection:
+- scotvorg
 - M365-subscription-management
 - Adm_O365
 - Adm_TOC
@@ -24,13 +25,13 @@ search.appverid:
 - BCS160
 - MET150
 - MOE150
-description: Puede quitar la licencia de Microsoft 365 de un empleado anterior y, a continuación, eliminarla de la suscripción o asignarla a otro usuario.
-ms.openlocfilehash: 95f95403a316e176f91c7f120ce5a26487a7a59f
-ms.sourcegitcommit: 9255a7e8b398f92d8dae09886ae95dc8577bf29a
+description: Puede quitar la licencia de Microsoft 365 de un empleado anterior y, a continuación, eliminarla de su suscripción o asignarla a otro usuario.
+ms.openlocfilehash: 8d1c903a9f829605b15887b2b67e7ea61962cbfe
+ms.sourcegitcommit: 0b7070ec119e00e0dafe030bbfbef0ae5c9afa19
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/17/2022
-ms.locfileid: "65436237"
+ms.lasthandoff: 09/29/2022
+ms.locfileid: "68186115"
 ---
 # <a name="step-6---remove-and-delete-the-microsoft-365-license-from-a-former-employee"></a>Paso 6: Eliminación y eliminación de la licencia de Microsoft 365 de un empleado anterior
 
@@ -58,10 +59,10 @@ Para obtener más información sobre cómo administrar licencias de usuario para
   
 ## <a name="how-the-deleted-employee-account-affects-skype-for-business"></a>Cómo afectan las cuentas de empleados eliminadas a Skype Empresarial
 
-Al quitar una licencia de usuario de Office 365, el número de RTC asociado con este se liberará. Puede asignarlo a otro usuario.
+When you remove a user's license from Office 365, the PSTN calling number associated with the user will be released. You can assign it to another user.
   
-Si el usuario pertenece a un grupo de cola, ya no será un destino apto de los agentes de cola de llamadas. Por lo tanto, le recomendamos quitar también al usuario de los grupos asociados con la cola de llamadas.
+If the user belongs to a queue group, they will no longer be a viable target of the call queue agents. So, we recommend also removing the user from the groups associated with the call queue.
 
 ## <a name="set-up-call-forwarding-to-people-in-your-organization"></a>Configuración del reenvío de llamadas a personas de la organización
 
-Si necesita configurar el reenvío de llamadas para el número de teléfono del empleado terminado, la configuración de reenvío de llamadas en las directivas de llamada puede configurar el reenvío donde las llamadas entrantes se pueden reenviar a otros usuarios o pueden llamar a otra persona al mismo tiempo. Para obtener más información, vea [Directivas de llamada en Microsoft Teams](/microsoftteams/teams-calling-policy).
+Si necesita configurar el reenvío de llamadas para el número de teléfono del empleado terminado, la configuración de reenvío de llamadas en las directivas de llamada puede configurar el reenvío donde las llamadas entrantes se pueden reenviar a otros usuarios o pueden llamar a otra persona al mismo tiempo. Para obtener más información, consulte [Directivas de llamada en Microsoft Teams](/microsoftteams/teams-calling-policy).

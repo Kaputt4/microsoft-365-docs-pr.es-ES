@@ -15,13 +15,14 @@ ms.reviewer: shlomiakirav
 f1.keywords: NOCSH
 ms.collection:
 - SMB
-- m365-security-compliance
-ms.openlocfilehash: f12d264e97f966f450ea4bc74ed7b0a2967d5d4c
-ms.sourcegitcommit: 2b89bcff547e00be3d38dc8d1e6cbcf8f41eba42
+- m365-security
+- tier1
+ms.openlocfilehash: c03c92a213b5cf4fe14bbd98094ff3816ab1beab
+ms.sourcegitcommit: 9f5cf8cf8a2e25cfd07b23b7f6d7f9d138a9cd16
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/03/2022
-ms.locfileid: "67598635"
+ms.lasthandoff: 10/07/2022
+ms.locfileid: "68501454"
 ---
 # <a name="get-microsoft-defender-for-business"></a>Obtener Microsoft Defender para Empresas
 
@@ -45,7 +46,7 @@ Si se ha registrado para obtener una evaluación, después de recibir el correo 
 3. Vaya a [Agregar usuarios y asigne licencias](mdb-add-users.md).
 
 > [!TIP]
-> Consulte el [cuaderno de estrategias de prueba para Defender para empresas](trial-playbook-defender-business.md).
+> Consulte la [Guía del usuario de prueba para Defender para empresas](trial-playbook-defender-business.md).
 
 ## <a name="get-microsoft-365-business-premium"></a>Obtención de Microsoft 365 Empresa Premium
 
@@ -106,7 +107,7 @@ Cuando esté listo para empezar, trabajará con dos portales principales: el Cen
 
 ## <a name="next-steps"></a>Pasos siguientes
 
-- [Consulte el cuaderno de estrategias de prueba: Microsoft Defender para Empresas](trial-playbook-defender-business.md).
+- [Consulte la guía del usuario de prueba: Microsoft Defender para Empresas](trial-playbook-defender-business.md).
 - [Use el asistente de instalación en Microsoft Defender para Empresas](mdb-use-wizard.md).
 - [Consulte el proceso de configuración y configuración de Defender para empresas](mdb-setup-configuration.md).
 - [Vea cómo obtener ayuda y soporte técnico para Defender para empresas](mdb-get-help.md) (por si necesita ayuda).
