@@ -7,9 +7,10 @@ author: kwekua
 manager: scotv
 audience: Admin
 ms.topic: overview
-ms.service: o365-administration
+ms.service: microsoft-365-business
 ms.localizationpriority: medium
 ms.collection:
+- scotvorg
 - M365-subscription-management
 - Adm_O365
 - Adm_NonTOC
@@ -23,14 +24,14 @@ search.appverid:
 ms.assetid: 932e3676-2491-49f0-9177-d893d2f5276e
 ROBOTS: NOINDEX
 description: Obtenga información sobre cómo crear un archivo CSV para AutoPilot en Microsoft 365 para empresas.
-ms.openlocfilehash: af695448e31ea93d36b36a8831702acb84a92410
-ms.sourcegitcommit: da6b3cb3b2ccfcdcd5091efce8290b6c486547db
+ms.openlocfilehash: 63aaf46256e12abb4503127f4e457eef573e3e37
+ms.sourcegitcommit: 0b7070ec119e00e0dafe030bbfbef0ae5c9afa19
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/18/2022
-ms.locfileid: "65469566"
+ms.lasthandoff: 09/29/2022
+ms.locfileid: "68208334"
 ---
-# <a name="windows-autopilot-device-list-csv-file"></a>Windows archivo CSV de lista de dispositivos Autopilot
+# <a name="windows-autopilot-device-list-csv-file"></a>Archivo CSV de lista de dispositivos Windows Autopilot
 
 ## <a name="device-list-csv-file-format"></a>Formato de archivo .csv lista de dispositivos
 
@@ -50,6 +51,6 @@ Al agregar dispositivos, también debe agregarlos a un perfil. Un perfil se usa 
   
 ## <a name="related-content"></a>Contenido relacionado
 
-[Microsoft 365 para la documentación y los recursos empresariales](../../index.yml)
+[Documentación y recursos de Microsoft 365 para empresas](../../index.yml)
   
-[Comenzar con Microsoft 365 para empresas](../../admin/admin-overview/what-is-microsoft-365.md)
+[Introducción a Microsoft 365 para empresas](../../admin/admin-overview/what-is-microsoft-365.md)

@@ -13,15 +13,16 @@ author: dansimp
 manager: dansimp
 audience: ITPro
 ms.collection:
-- M365-security-compliance
+- m365-security
+- tier2
 ms.topic: article
 search.appverid: met150
-ms.openlocfilehash: f0ca8e03bf89afd148611c0af26c9ad4ca30f269
-ms.sourcegitcommit: 10e6abe740e27000e223378eb17d657a47555fa8
+ms.openlocfilehash: dd22c4dd782cf4fed54b7c61dc3c68bc0a0da640
+ms.sourcegitcommit: 12af9e8e3a6eaa090fda9e98ccb831dff65863a4
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/31/2022
-ms.locfileid: "67479762"
+ms.lasthandoff: 09/27/2022
+ms.locfileid: "68084669"
 ---
 # <a name="microsoft-security-portals-and-admin-centers"></a>Portales de seguridad y centros de administración de Microsoft
 
@@ -42,7 +43,7 @@ Los operadores y administradores de seguridad pueden ir a los siguientes portale
 | Portal de Microsoft 365 Defender | Supervise y responda a la actividad de amenazas y refuerce la posición de seguridad en las identidades, el correo electrónico, los datos, los puntos de conexión y las aplicaciones con [Microsoft 365 Defender](microsoft-365-defender.md) | [security.microsoft.com](https://security.microsoft.com/) |
 | Centro de seguridad de Microsoft Defender | Supervise y responda a la actividad de amenazas en los puntos de conexión mediante las funcionalidades proporcionadas con [Microsoft Defender para punto de conexión](/microsoft-365/security/defender-endpoint/microsoft-defender-endpoint).  **NOTA:** Ahora, la mayoría de los inquilinos deben redirigirse al portal de Microsoft 365 Defender en [security.microsoft.com](https://security.microsoft.com/).  | [securitycenter.windows.com](https://securitycenter.windows.com) |
 | Centro de seguridad y cumplimiento de Office 365 | Administre [Exchange Online Protection](../office-365-security/exchange-online-protection-overview.md) y [Microsoft Defender para Office 365](/microsoft-365/security/office-365-security/defender-for-office-365) para proteger sus servicios de correo electrónico y colaboración, y garantizar el cumplimiento de diversas regulaciones de control de datos.  **NOTA:** La mayoría de los inquilinos que usan las secciones de seguridad del Centro de cumplimiento de Office 365 Security & ahora deben redirigirse al portal de Microsoft 365 Defender en [security.microsoft.com](https://security.microsoft.com/). | [protection.office.com](https://protection.office.com) |
-| Portal de Defender for Cloud | Uso de [Microsoft Defender for Cloud para](/azure/security-center/security-center-intro) reforzar la posición de seguridad de los centros de datos y las cargas de trabajo híbridas en la nube | [portal.azure.com/#blade/Microsoft_Azure_Security](https://portal.azure.com/#blade/Microsoft_Azure_Security/SecurityMenuBlade/0) |
+| Portal de Defender for Cloud | Uso [de Microsoft Defender for Cloud para](/azure/security-center/security-center-intro) reforzar la posición de seguridad de los centros de datos y las cargas de trabajo híbridas en la nube | [portal.azure.com/#blade/Microsoft_Azure_Security](https://portal.azure.com/#blade/Microsoft_Azure_Security/SecurityMenuBlade/0) |
 | Portal de Microsoft Defender for Identity | Identificar, detectar e investigar amenazas avanzadas, identidades en peligro y acciones internas malintencionadas mediante señales de Active Directory con [Microsoft Defender for Identity](/azure-advanced-threat-protection/what-is-atp) | [portal.atp.azure.com](https://portal.atp.azure.com/) |
 | Portal de Defender para Aplicaciones en la nube | Use [Microsoft Defender for Cloud Apps](/cloud-app-security/what-is-cloud-app-security) para obtener una visibilidad enriquecida, control sobre los viajes de datos y análisis sofisticados para identificar y combatir ciberamenazas en los servicios en la nube. | [portal.cloudappsecurity.com](https://portal.cloudappsecurity.com/) |
 | portal de Inteligencia de seguridad de Microsoft | Obtener actualizaciones de inteligencia de seguridad para Microsoft Defender para punto de conexión, enviar ejemplos y explorar la enciclopedia de amenazas | [microsoft.com/wdsi](https://microsoft.com/wdsi) |

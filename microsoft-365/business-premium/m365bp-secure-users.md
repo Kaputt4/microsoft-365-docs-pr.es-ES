@@ -14,6 +14,8 @@ ms.localizationpriority: high
 ms.collection:
 - M365-Campaigns
 - m365solution-smb
+- highpri
+- tier1
 ms.custom:
 - MiniMaven
 search.appverid:
@@ -21,12 +23,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Más información sobre cómo Microsoft 365 Empresa Premium ayuda a su negocio con productividad y seguridad de manera más segura.
-ms.openlocfilehash: a41c6fe50092dd71131b7ea33d9d63fc1957fc6a
-ms.sourcegitcommit: c29af68260ba8676083674b3c70209bff2c2e362
+ms.openlocfilehash: 460bd7deae249e74acbba5148aaf1ed3b80cc051
+ms.sourcegitcommit: 0283c436f3ba61a708b52b57a1955f5ea74376a3
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/16/2022
-ms.locfileid: "67738913"
+ms.lasthandoff: 09/28/2022
+ms.locfileid: "68098091"
 ---
 # <a name="productivity-and-security-for-small-and-medium-sized-businesses"></a>Productividad y seguridad para pequeñas y medianas empresas 
 

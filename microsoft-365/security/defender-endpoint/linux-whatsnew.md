@@ -12,16 +12,17 @@ ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection:
-- m365-security-compliance
+- m365-security
+- tier3
 ms.topic: reference
 ms.subservice: mde
 search.appverid: met150
-ms.openlocfilehash: f1a77d7889411d5455140db68a5af4016747ee49
-ms.sourcegitcommit: 2dedd0f594b817779e034afa6c4418def2382a22
+ms.openlocfilehash: 90e6977d6660cb475a4172d863080878957407f5
+ms.sourcegitcommit: 4e42bafee965446f44f7f57d1defed2b9b24fce8
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/18/2022
-ms.locfileid: "67797820"
+ms.lasthandoff: 09/30/2022
+ms.locfileid: "68223708"
 ---
 # <a name="whats-new-in-microsoft-defender-for-endpoint-on-linux"></a>Novedades de Microsoft Defender para punto de conexión en Linux
 
@@ -50,7 +51,7 @@ Este artículo se actualiza con frecuencia para informarle de las novedades de l
 
 - Corrige un bloqueo del kernel observado en cargas de trabajo de clientes seleccionados que ejecutan la versión 101.75.43 de mdatp. Después de RCA, esto se atribuyó a una condición de carrera al liberar la propiedad de un descriptor de archivo de sensor. La condición de carrera se expuso debido a un cambio reciente del producto en la ruta de apagado. Este problema no afecta a los clientes de las versiones más recientes del kernel (5.1+).
 
-- Al actualizar desde la versión 101.75.43 de mdatp, ejecute los siguientes comandos antes de intentar actualizar a la versión 101.80.97.
+- Al actualizar desde mdatp versión 101.75.43 o 101.78.13, ejecute los siguientes comandos antes de intentar actualizar a la versión 101.80.97.
 
 ```
 sudo mdatp config real-time-protection --value=disabled
@@ -60,6 +61,25 @@ sudo systemctl disable mdatp
 
 <br/><br/>
 </details>
+
+<details>
+   <summary>Ago-2022 (compilación: 101.78.13, | Versión de lanzamiento: 30.122072.17813.0)</summary>
+
+ &ensp;Fecha de lanzamiento: **24 de agosto de 2022**<br/>
+ &ensp;Publicado: **24 de agosto de 2022**<br/>
+ &ensp;Compilación: **101.78.13**<br/>
+ &ensp;Versión: **30.122072.17813.0**<br/>
+ &ensp;Versión del motor: **1.1.19300.3**<br/>
+ &ensp;Versión de firma: **1.369.395.0**<br/>
+
+ **Novedades**
+
+ - Revierta debido a problemas de confiabilidad
+
+ </br>
+
+ <br/><br/>
+ </details>
 
 <details>
   <summary>Ago-2022 (compilación: 101.75.43 | Versión de lanzamiento: 30.122071.17543.0)</summary>

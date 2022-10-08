@@ -7,9 +7,10 @@ author: kwekua
 manager: scotv
 audience: Admin
 ms.topic: conceptual
-ms.service: o365-administration
+ms.service: microsoft-365-business
 ms.localizationpriority: medium
 ms.collection:
+- scotvorg
 - M365-subscription-management
 - Adm_O365
 - Adm_TOC
@@ -25,50 +26,50 @@ search.appverid:
 ms.assetid: 043807b2-21db-4d5c-b430-c8a6dee0e6ba
 ROBOTS: NOINDEX, NOFOLLOW
 description: La autenticación multifactor (MFA) usa una contraseña, que debe ser segura, y un método de verificación adicional.
-ms.openlocfilehash: cabb7d3efc6d99c69e7e125c9170ac7367fc3929
-ms.sourcegitcommit: a7c1acfb3d2cbba913e32493b16ebd8cbfeee456
+ms.openlocfilehash: 0b61fea661b0c0a3652d2b5b2c74b4450e83bd4b
+ms.sourcegitcommit: 0b7070ec119e00e0dafe030bbfbef0ae5c9afa19
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/13/2022
-ms.locfileid: "66044068"
+ms.lasthandoff: 09/29/2022
+ms.locfileid: "68201383"
 ---
 # <a name="multifactor-authentication-for-microsoft-365"></a>Autenticación multifactor para Microsoft 365
 
-Las contraseñas son el método más común para autenticar un inicio de sesión en un equipo o servicio en línea, pero también son los más vulnerables. Las personas pueden elegir contraseñas fáciles y usar las mismas contraseñas para varios inicios de sesión en diferentes equipos y servicios.
+Las contraseñas son el método más común para autenticar un inicio de sesión en un equipo o en un servicio en línea, pero también el más vulnerable. Las personas pueden elegir contraseñas fáciles y usar las mismas contraseñas para múltiples inicios de sesión en distintos equipos y servicios.
 
 Para proporcionar un nivel adicional de seguridad para los inicios de sesión, debe usar la autenticación multifactor (MFA), que usa una contraseña, que debe ser segura, y un método de verificación adicional basado en:
 
-- Algo que tiene con usted que no se duplica fácilmente, como un teléfono inteligente.
-- Algo que tiene de forma única y biológica, como las huellas digitales, la cara u otro atributo biométrico.
+- Algo que tiene con usted y que no se duplica fácilmente, como un smartphone.
+- Algo que tiene de forma exclusiva y natural, como las huellas digitales, la cara u otro atributo biométrico.
 
-El método de comprobación adicional no se emplea hasta después de comprobar la contraseña del usuario. Con MFA, incluso si una contraseña de usuario segura está en peligro, el atacante no tiene su teléfono inteligente ni su huella digital para completar el inicio de sesión.
+El método de comprobación adicional no se emplea hasta después de comprobar la contraseña del usuario. Con la MFA, incluso si una contraseña de usuario segura está en peligro, el atacante no tendrá su smartphone ni su huella digital para completar el inicio de sesión.
 
 ## <a name="mfa-support-in-microsoft-365"></a>Compatibilidad con MFA en Microsoft 365
 
 De forma predeterminada, Microsoft 365 y Office 365 admiten MFA para cuentas de usuario mediante:
 
-- Mensaje de texto enviado a un teléfono que requiere que el usuario escriba un código de verificación.
-- Una llamada telefónica.
-- La aplicación de teléfono inteligente Microsoft Authenticator.
+- Un mensaje de texto enviado a un teléfono que requiere que el usuario escriba un código de verificación.
+- Una llamada de teléfono
+- La aplicación para teléfonos inteligentes Microsoft Authenticator.
 
 En ambos casos, el inicio de sesión de MFA usa el método "algo que tiene con usted que no se duplica fácilmente" para la comprobación adicional. Hay varias maneras de habilitar MFA para Microsoft 365 y Office 365:
 
 - Con valores predeterminados de seguridad
 - Con directivas de acceso condicional
-- Para cada cuenta de usuario individual (no se recomienda)
+- Para cada cuenta de usuario individual (no recomendado)
 
 Estas formas se basan en el plan de Microsoft 365.
 
 |Plan|Recomendación|Tipo de cliente|
 |---|---|---|
-|Todos los planes de Microsoft 365|Use valores predeterminados de seguridad, que requieren MFA para todas las cuentas de usuario. <p> También puede configurar MFA por usuario en cuentas de usuario individuales, pero no se recomienda.|Empresa pequeña|
-|Microsoft 365 Empresa Premium <p> Microsoft 365 E3 <p> licencias de Azure Active Directory (Azure AD) Premium P1|Use [valores predeterminados de seguridad o directivas de acceso condicional](/microsoft-365/business-premium/m365bp-conditional-access) para requerir MFA para las cuentas de usuario en función de la pertenencia a grupos, las aplicaciones u otros criterios.|Pequeña empresa a empresa|
+|Todos los planes de Microsoft 365|Use los valores predeterminados de seguridad, que requieren MFA para todas las cuentas de usuario. <p> También puede configurar MFA por usuario en cuentas de usuario individuales, pero no se recomienda.|Empresa pequeña|
+|Microsoft 365 Empresa Premium <p> Microsoft 365 E3 <p> Licencias Premium P1 de Azure Active Directory (Azure AD)|Use [valores predeterminados de seguridad o directivas de acceso condicional](/microsoft-365/business-premium/m365bp-conditional-access) para requerir MFA para las cuentas de usuario en función de la pertenencia a grupos, las aplicaciones u otros criterios.|De pequeñas a grandes empresas|
 |Microsoft 365 E5 <p> licencias de Azure AD Premium P2|Use Azure AD Identity Protection para requerir MFA en función de los criterios de riesgo de inicio de sesión.|Enterprise|
 ||||
 
 ### <a name="security-defaults"></a>Valores predeterminados de seguridad
 
-Los valores predeterminados de seguridad son una nueva característica para las suscripciones pago o de prueba de Microsoft 365 y Office 365 creadas después del 21 de octubre de 2019. Estas suscripciones tienen activados los valores predeterminados de seguridad, que:
+Los valores predeterminados de seguridad son una nueva característica para las suscripciones pago o de prueba de Microsoft 365 y Office 365 creadas después del 21 de octubre de 2019. Estas suscripciones tienen los valores predeterminados de seguridad activados, lo que:
 
 - Requiere que todos los usuarios usen MFA con la aplicación Microsoft Authenticator.
 - Bloquea la autenticación heredada.
@@ -81,7 +82,7 @@ Habilite o deshabilite los valores predeterminados de seguridad en el panel **Pr
 
 ![Imagen de la página de propiedades del directorio.](../../media/multi-factor-authentication-microsoft-365/security-defaults-mfa.png)
 
-Puede usar los valores predeterminados de seguridad con cualquier plan de Microsoft 365.
+Puede usar valores predeterminados de seguridad con cualquier plan de Microsoft 365.
 
 Para más información, vea esta [información general de los valores predeterminados de seguridad](/azure/active-directory/fundamentals/concept-fundamentals-security-defaults).
 
@@ -91,7 +92,7 @@ Las directivas de acceso condicional son un conjunto de reglas que especifican l
 
 - Si el nombre de la cuenta de usuario es miembro de un grupo de usuarios a los que se han asignado los roles de administrador de Exchange, de usuarios, de contraseñas, de seguridad, de SharePoint o global, requerir MFA antes de permitir el acceso.
 
-Esta directiva permite requerir MFA en función de la pertenencia a grupos, en lugar de intentar configurar cuentas de usuario individuales para MFA cuando se asignan o no se asignan a estos roles de administrador.
+Esta directiva le permite exigir la MFA en función de la pertenencia a grupos, en lugar de intentar configurar cuentas de usuario individuales para la MFA cuando se asignan o se quitan estos roles de administrador.
 
 También puede usar directivas de acceso condicional para funcionalidades más avanzadas, como requerir MFA para aplicaciones específicas o que el inicio de sesión se realice desde un dispositivo compatible, como el equipo portátil que ejecuta Windows 10.
 
@@ -99,27 +100,27 @@ Las directivas de acceso condicional se configuran en el panel **Seguridad** de 
 
 ![Imagen de la opción de menú para el acceso condicional.](../../media/multi-factor-authentication-microsoft-365/conditional-access-mfa.png)
 
-Puede usar directivas de acceso condicional con:
+Las directivas de acceso condicional se pueden usar con:
 
 - Microsoft 365 Empresa Premium
 - Microsoft 365 E3 y E5
-- licencias de Azure AD Premium P1 y Azure AD Premium P2
+- Licencias de Azure AD Premium P1 y Azure AD Premium P2
 
-Para pequeñas empresas con Microsoft 365 Empresa Premium, puede usar fácilmente directivas de acceso condicional con los pasos siguientes:
+Las pequeñas empresas que usan Microsoft 365 Empresa Premium pueden usar fácilmente las directivas de acceso condicional con estos pasos:
 
-1. Cree un grupo para que contenga las cuentas de usuario que requieren MFA.
-2. Habilite la directiva **Requerir MFA para administradores globales** .
-3. Cree una directiva de acceso condicional basada en grupos con esta configuración:
+1. Cree un grupo que contenga las cuentas de usuario que requieren MFA.
+2. Habilite la directiva **Requerir MFA para administradores globales**.
+3. Cree una directiva de acceso condicional basada en el grupo con estas opciones:
     - Asignaciones > Usuarios y grupos: el nombre del grupo del paso 1 anterior.
     - Asignaciones > aplicaciones o acciones en la nube: todas las aplicaciones en la nube.
     - Controles de acceso > Conceder > Conceder acceso > Requerir autenticación multifactor.
 4. Habilite la directiva.
-5. Agregue una cuenta de usuario al grupo creado en el paso 1 anterior y pruebe.
+5. Agregue una cuenta de usuario al grupo creado en el paso 1 y haga una prueba.
 6. Para requerir MFA para cuentas de usuario adicionales, agréguelas al grupo creado en el paso 1.
 
 Esta directiva de acceso condicional le permite implementar el requisito de MFA para los usuarios a su propio ritmo.
 
-Las empresas deben usar [directivas de acceso condicional común](/azure/active-directory/conditional-access/concept-conditional-access-policy-common) para configurar las siguientes directivas:
+Las grandes empresas deben usar las [Directivas comunes de acceso condicional](/azure/active-directory/conditional-access/concept-conditional-access-policy-common) para configurar las directivas siguientes:
 
 - [Requerir MFA para los administradores](/azure/active-directory/conditional-access/howto-conditional-access-policy-admin-mfa)
 - [Requerir MFA para todos los usuarios](/azure/active-directory/conditional-access/howto-conditional-access-policy-all-users-mfa)
@@ -138,7 +139,7 @@ Puede usar Azure AD Identity Protection y directivas de acceso condicional basad
 
 Para más información, vea esta [información general sobre la protección de identidad de Azure AD Identity Protection](/azure/active-directory/identity-protection/overview-identity-protection).
 
-### <a name="legacy-per-user-mfa-not-recommended"></a>MFA heredado por usuario (no recomendado)
+### <a name="legacy-per-user-mfa-not-recommended"></a>MFA heredada por usuario (no recomendado)
 
 Debe usar valores predeterminados de seguridad o directivas de acceso condicional para requerir MFA para los inicios de sesión de la cuenta de usuario. Sin embargo, si no se puede usar cualquiera de ellas, Microsoft recomienda encarecidamente MFA para las cuentas de usuario que tienen roles de administrador, especialmente el rol de administrador global, para cualquier suscripción de tamaño.
 
@@ -156,10 +157,10 @@ Esta tabla muestra los resultados de habilitar MFA con los valores predeterminad
 |---|---|---|---|
 |**Valores predeterminados de seguridad**|No se pueden usar directivas de acceso condicional|Se pueden usar directivas de acceso condicional|Aplicación Microsoft Authenticator|
 |**Directivas de acceso condicional**|Si hay alguno habilitado, no puede habilitar los valores predeterminados de seguridad.|Si se deshabilitan todos, puede habilitar los valores predeterminados de seguridad|Especificado por el usuario durante el registro de MFA|
-|**MFA heredado por usuario (no recomendado)**|Invalida los valores predeterminados de seguridad y las directivas de acceso condicional que requieren MFA en cada inicio de sesión|Invalidado por valores predeterminados de seguridad y directivas de acceso condicional|Especificado por el usuario durante el registro de MFA|
+|**MFA heredada por usuario (no recomendado)**|Invalida los valores predeterminados de seguridad y las directivas de acceso condicional que requieren MFA en cada inicio de sesión|Invalidado por valores predeterminados de seguridad y directivas de acceso condicional|Especificado por el usuario durante el registro de MFA|
 ||||
 
-Si se habilitan los valores predeterminados de seguridad, se pedirá a todos los nuevos usuarios el registro de MFA y el uso de la aplicación Microsoft Authenticator en su siguiente inicio de sesión.
+Si los valores predeterminados de seguridad están habilitados, se le pedirá al usuario que registre la MFA y use la aplicación Microsoft Authenticator para el siguiente inicio de sesión.
 
 ## <a name="ways-to-manage-mfa-settings"></a>Formas de administrar la configuración de MFA
 

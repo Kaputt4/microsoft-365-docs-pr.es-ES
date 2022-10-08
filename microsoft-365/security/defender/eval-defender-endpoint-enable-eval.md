@@ -12,23 +12,24 @@ f1.keywords:
 - NOCSH
 ms.author: macapara
 author: mjcaparas
-ms.date: 07/09/2021
+ms.date: 09/22/2022
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection:
-- M365-security-compliance
+- m365-security
 - m365solution-scenario
 - m365solution-evalutatemtp
 - zerotrust-solution
 - highpri
+- tier1
 ms.topic: conceptual
-ms.openlocfilehash: d441c2c5d985ebf19a20af68ce9924106b5259c6
-ms.sourcegitcommit: 10e6abe740e27000e223378eb17d657a47555fa8
+ms.openlocfilehash: 2d4de8ce1507635187c140830e92fd50ad8ec3e6
+ms.sourcegitcommit: 12af9e8e3a6eaa090fda9e98ccb831dff65863a4
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/31/2022
-ms.locfileid: "67480391"
+ms.lasthandoff: 09/27/2022
+ms.locfileid: "68084823"
 ---
 # <a name="enable-microsoft-defender-for-endpoint-evaluation-environment"></a>Habilitar Microsoft Defender para punto de conexión entorno de evaluación
 
@@ -41,7 +42,7 @@ En este artículo se le guiará por los pasos para configurar el entorno de eval
 
 Siga estos pasos para habilitar la evaluación para Microsoft Defender para punto de conexión.
 
-:::image type="content" source="../../media/defender/m365-defender-endpoint-eval-enable-steps.png" alt-text="Los pasos para habilitar Microsoft Defender para punto de conexión en el entorno de evaluación de Microsoft Defender" lightbox="../../media/defender/m365-defender-endpoint-eval-enable-steps.png":::
+:::image type="content" source="../../media/defender/m365-defender-endpoint-eval-enable-steps.png" alt-text="Pasos para habilitar Microsoft Defender para punto de conexión en el entorno de evaluación de Microsoft Defender" lightbox="../../media/defender/m365-defender-endpoint-eval-enable-steps.png":::
 
 - [Paso 1. Comprobación del estado de la licencia](#step-1-check-license-state)
 - [Paso 2. Incorporación de puntos de conexión](#step-2-onboard-endpoints-using-any-of-the-supported-management-tools)
@@ -81,13 +82,13 @@ Vea este vídeo para obtener una introducción rápida al proceso de incorporaci
 
 En la tabla siguiente se enumeran las herramientas disponibles en función del punto de conexión que necesita incorporar.
 
-Punto de conexión | Opciones de herramientas
-:---|:---
-**Windows** | [Script local (hasta 10 dispositivos),](../defender-endpoint/configure-endpoints-script.md) [directiva de grupo](../defender-endpoint/configure-endpoints-gp.md), [Microsoft Endpoint Manager/Mobile Administrador de dispositivos](../defender-endpoint/configure-endpoints-mdm.md), [Microsoft Endpoint Configuration Manager](../defender-endpoint/configure-endpoints-sccm.md), [scripts VDI](../defender-endpoint/configure-endpoints-vdi.md), [Integración con Microsoft Defender for Cloud](../defender-endpoint/configure-server-endpoints.md#integration-with-microsoft-defender-for-cloud)
-**macOS** | [Scripts locales](../defender-endpoint/mac-install-manually.md), [Microsoft Endpoint Manager](../defender-endpoint/mac-install-with-intune.md), [JAMF Pro](../defender-endpoint/mac-install-with-jamf.md), [Mobile Administración de dispositivos](../defender-endpoint/mac-install-with-other-mdm.md)
-**Servidor Linux** | [Script local](../defender-endpoint/linux-install-manually.md),  [Puppet](../defender-endpoint/linux-install-with-puppet.md),  [Ansible](../defender-endpoint/linux-install-with-ansible.md)
-**iOS** | [Basado en aplicaciones](../defender-endpoint/ios-install.md)
-**Android** | [Microsoft Endpoint Manager](../defender-endpoint/android-intune.md)
+| Punto de conexión | Opciones de herramientas |
+|:---|:---|
+| **Windows** |- [Script local (hasta 10 dispositivos)](../defender-endpoint/configure-endpoints-script.md)<br/>- [directiva de grupo](../defender-endpoint/configure-endpoints-gp.md)<br/>- [Microsoft Endpoint Manager/Mobile Administrador de dispositivos](../defender-endpoint/configure-endpoints-mdm.md)<br/>- [Configuration Manager de punto de conexión de Microsoft](../defender-endpoint/configure-endpoints-sccm.md)<br/>- [Scripts de VDI](../defender-endpoint/configure-endpoints-vdi.md) |
+| **macOS** | - [Scripts locales](../defender-endpoint/mac-install-manually.md)<br/>- [Microsoft Endpoint Manager](../defender-endpoint/mac-install-with-intune.md)<br/>- [JAMF Pro](../defender-endpoint/mac-install-with-jamf.md)<br/>- [Administración de dispositivos móvil](../defender-endpoint/mac-install-with-other-mdm.md) |
+| **Servidor Linux** | - [Script local](../defender-endpoint/linux-install-manually.md)<br/>- [Marioneta](../defender-endpoint/linux-install-with-puppet.md)<br/>- [Ansible](../defender-endpoint/linux-install-with-ansible.md) |
+| **iOS** | [Basado en aplicaciones](../defender-endpoint/ios-install.md) |
+| **Android** | [Microsoft Endpoint Manager](../defender-endpoint/android-intune.md) |
 
 
 

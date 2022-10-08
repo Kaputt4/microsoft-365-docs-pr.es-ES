@@ -17,18 +17,19 @@ ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection:
-- M365-security-compliance
+- m365-security
 - m365solution-scenario
 - m365solution-evalutatemtp
 - zerotrust-solution
 - highpri
+- tier1
 ms.topic: conceptual
-ms.openlocfilehash: b6cf54408fff8139f1cd06a303f91c9785cca98a
-ms.sourcegitcommit: 10e6abe740e27000e223378eb17d657a47555fa8
+ms.openlocfilehash: c5ca701732bd76eff22eeeadf64502f11e2ca5cc
+ms.sourcegitcommit: 12af9e8e3a6eaa090fda9e98ccb831dff65863a4
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/31/2022
-ms.locfileid: "67481292"
+ms.lasthandoff: 09/27/2022
+ms.locfileid: "68086099"
 ---
 # <a name="pilot-microsoft-defender-for-identity"></a>Microsoft Defender for Identity piloto
 
@@ -38,9 +39,9 @@ ms.locfileid: "67481292"
 
 Este artículo es el [paso 3 del 3](eval-defender-identity-overview.md) en el proceso de configuración del entorno de evaluación para Microsoft Defender for Identity. Para obtener más información sobre este proceso, consulte el [artículo de información general](eval-defender-identity-overview.md).
 
-Siga estos pasos para configurar y configurar el piloto de Microsoft Defender para identidad. Tenga en cuenta que las recomendaciones no incluyen la configuración de un grupo piloto. El procedimiento recomendado es continuar e instalar el sensor en todos los servidores que ejecutan Servicios de dominio de Active Directory (AD DS) y Servicios federados de Active Directory (AD FS).
+Siga estos pasos para configurar y configurar el piloto de Microsoft Defender para la identidad. Tenga en cuenta que las recomendaciones no incluyen la configuración de un grupo piloto. El procedimiento recomendado es continuar e instalar el sensor en todos los servidores que ejecutan Servicios de dominio de Active Directory (AD DS) y Servicios federados de Active Directory (AD FS).
 
-:::image type="content" source="../../media/defender/m365-defender-identity-pilot-steps.png" alt-text="Los pasos para pilotar Microsoft Defender for Identity en el entorno de evaluación de Microsoft Defender" lightbox="../../media/defender/m365-defender-identity-pilot-steps.png":::
+:::image type="content" source="../../media/defender/m365-defender-identity-pilot-steps.png" alt-text="Los pasos para la Microsoft Defender for Identity piloto en el entorno de evaluación de Microsoft Defender" lightbox="../../media/defender/m365-defender-identity-pilot-steps.png":::
 
 En la tabla siguiente se describen los pasos de la ilustración.
 

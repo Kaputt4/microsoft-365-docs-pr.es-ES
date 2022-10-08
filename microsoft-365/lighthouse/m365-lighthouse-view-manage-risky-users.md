@@ -10,6 +10,7 @@ ms.topic: article
 ms.service: microsoft-365-lighthouse
 ms.localizationpriority: medium
 ms.collection:
+- scotvorg
 - M365-subscription-management
 - Adm_O365
 ms.custom:
@@ -17,12 +18,12 @@ ms.custom:
 - M365-Lighthouse
 search.appverid: MET150
 description: En el caso de los proveedores de servicios administrados (MSP) que usan Microsoft 365 Lighthouse, obtenga información sobre cómo ver y administrar usuarios de riesgo.
-ms.openlocfilehash: 4c141794e0f6a5592e7b0c48fd39494f702c6a02
-ms.sourcegitcommit: 2b89bcff547e00be3d38dc8d1e6cbcf8f41eba42
+ms.openlocfilehash: 5562a6c4178f9bbe0108817cb12be0354dc87d90
+ms.sourcegitcommit: 0b7070ec119e00e0dafe030bbfbef0ae5c9afa19
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/03/2022
-ms.locfileid: "67599074"
+ms.lasthandoff: 09/29/2022
+ms.locfileid: "68208510"
 ---
 # <a name="view-and-manage-risky-users-in-microsoft-365-lighthouse"></a>Visualización y administración de usuarios de riesgo en Microsoft 365 Lighthouse
 

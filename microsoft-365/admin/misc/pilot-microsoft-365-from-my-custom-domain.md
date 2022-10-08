@@ -7,9 +7,10 @@ author: efrene
 manager: scotv
 audience: Admin
 ms.topic: article
-ms.service: o365-administration
+ms.service: microsoft-365-business
 ms.localizationpriority: high
 ms.collection:
+- scotvorg
 - Adm_O365
 - Adm_TOC
 ms.custom:
@@ -20,12 +21,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Obtenga información acerca de cómo probar la funcionalidad de correo electrónico de mi dominio personalizado en un buzón de Microsoft 365 usando solo dos cuentas de prueba.
-ms.openlocfilehash: cc977afd32c1b3b660ec01285c36132a8e1d27b2
-ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
-ms.translationtype: HT
+ms.openlocfilehash: f48da1748b8ace33e291054cb698e3887fd23684
+ms.sourcegitcommit: 0b7070ec119e00e0dafe030bbfbef0ae5c9afa19
+ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/08/2022
-ms.locfileid: "63323743"
+ms.lasthandoff: 09/29/2022
+ms.locfileid: "68192671"
 ---
 # <a name="pilot-microsoft-365-from-my-custom-domain"></a>Prueba piloto de Microsoft 365 desde mi dominio personalizado
 
@@ -137,7 +138,7 @@ Asegúrese de que ha realizado lo siguiente en Microsoft 365 u Office 365:
 
 ### <a name="2-set-up-a-connector-from-microsoft-365-or-office-365-to-your-email-server"></a>2. Configurar un conector desde Microsoft 365 u Office 365 hacia su servidor de correo electrónico
 
-Para crear un conector en Microsoft 365 u Office 365, seleccione **Administrador** > **Exchange** para ir al Centro de administración de Exchange. A continuación, seleccione **flujo de correo** > <a href="https://go.microsoft.com/fwlink/?linkid=2183136" target="_blank">**Conectores**</a>.
+To create a connector in Microsoft 365 or Office 365, select **Admin** > **Exchange** to go to the Exchange admin center. Next, select **mail flow** > <a href="https://go.microsoft.com/fwlink/?linkid=2183136" target="_blank">**Connectors**</a>.
 
 Configure los conectores con el asistente.
 
@@ -159,7 +160,7 @@ Inicie sesión en el sitio web de su proveedor de host DNS y siga las instruccio
 
     Por ejemplo, "v=spf1 mx include:adatum.com include:spf.protection.outlook.com ~all".
 
-    Si no tiene un registro de SPF, modifique el que recomienda Microsoft 365 para que incluya el dominio de su proveedor de correo electrónico actual, más spf.protection.outlook.com. Esto autoriza los mensajes salientes de ambos sistemas de correo electrónico.
+    If you don't have an SPF record, modify the one recommended by Microsoft 365 to include the domain for your current email provider, and add spf.protection.outlook.com. This authorizes outgoing messages from both email systems.
 
 ### <a name="step-8-set-up-email-forwarding-at-your-current-provider"></a>Paso 8: configurar el reenvío de correo electrónico en su proveedor actual
 
@@ -190,6 +191,6 @@ Cuando finalice este paso, todo el correo electrónico enviado a usera@yourcompa
 
 ### <a name="step-10-move-mailbox-contents"></a>Paso 10: mover contenido del buzón de correo
 
-Dado que solo va a mover dos usuarios de prueba y los usuarios A y B usan Outlook, puede mover el correo electrónico abriendo el antiguo . Archivo PST en el nuevo perfil de Outlook y copiando los mensajes, elementos de calendario, contactos, etc. Para obtener más información, vea [Importar correo electrónico, contactos y calendario desde un archivo .pst de Outlook](https://support.microsoft.com/office/import-email-contacts-and-calendar-from-an-outlook-pst-file-431a8e9a-f99f-4d5f-ae48-ded54b3440ac).
+Because you are moving only two test users, and User A and User B are both using Outlook, you can move the email by opening the old .PST file in the new Outlook profile and copying the messages, calendar items, contacts, and so on. For more information, see [Import email, contacts, and calendar from an Outlook .pst file](https://support.microsoft.com/office/import-email-contacts-and-calendar-from-an-outlook-pst-file-431a8e9a-f99f-4d5f-ae48-ded54b3440ac).
 
 Una vez que se importan a las ubicaciones adecuadas en el buzón de correo de Microsoft 365, se puede acceder a ellos desde cualquier dispositivo y en cualquier lugar.

@@ -16,6 +16,7 @@ ms.collection:
 - M365-subscription-management
 - M365-identity-device-management
 - M365-Campaigns
+- tier1
 ms.custom:
 - Adm_O365
 - MiniMaven
@@ -26,12 +27,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Cree un sitio de comunicaciones de SharePoint para su campaña o negocio y proteja a su equipo de ciberataques e incursiones contra malware y otras amenazas debido al uso compartido de archivos inadecuado.
-ms.openlocfilehash: b70d2726a983d02ce5157815623936472077ad2b
-ms.sourcegitcommit: c29af68260ba8676083674b3c70209bff2c2e362
+ms.openlocfilehash: c4cd224eb127063453d080a8db8a645e4b4e468b
+ms.sourcegitcommit: 0283c436f3ba61a708b52b57a1955f5ea74376a3
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/16/2022
-ms.locfileid: "67738102"
+ms.lasthandoff: 09/28/2022
+ms.locfileid: "68097739"
 ---
 # <a name="create-a-communications-site"></a>Crear un sitio de comunicaciones
 
@@ -65,7 +66,7 @@ Los siguientes vínculos para PowerPoint y PDF se pueden descargar e imprimir en
 
 1. Inicie sesión en [https://Office.com](https://Office.com).
 
-2. En la esquina superior izquierda de la página, seleccione el icono del iniciador de aplicaciones y, después, seleccione el mosaico de **SharePoint**. Si no ve el mosaico de **SharePoint**, haga clic en el mosaico de **Sitios** o de **Todos** si SharePoint no aparece.
+2. In the top-left corner of the page, select the app launcher icon and then select the **SharePoint** tile. If you don't see the **SharePoint** tile, click the **Sites** tile or **All** if SharePoint isn't visible.
 
 3. En la parte superior de la página principal de SharePoint, haga clic en **+ Crear sitio** y elija la opción **Sitio de comunicaciones**.
 
@@ -77,4 +78,4 @@ Si no ve el vínculo de **+ Crear sitio**, es posible que la creación de sitios
 
 ## <a name="next-mission"></a>Próxima misión
 
-Enhorabuena &mdash; ha completado la misión. Ahora, de inmediato, centre su atención en [proteger los dispositivos administrados](m365bp-protect-devices.md) para toda la organización.
+Congratulations &mdash; you've completed the mission! Now, immediately turn your focus toward [protecting the managed devices](m365bp-protect-devices.md) for the entire org!

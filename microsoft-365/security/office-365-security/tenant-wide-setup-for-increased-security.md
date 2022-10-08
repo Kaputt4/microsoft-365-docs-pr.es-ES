@@ -12,7 +12,7 @@ ms.localizationpriority: medium
 ms.collection:
 - Ent_O365
 - Strat_O365_IP
-- M365-security-compliance
+- m365-security
 search.appverid: MET150
 ms.assetid: 8d274fe3-db51-4107-ba64-865e7155b355
 ms.custom:
@@ -21,12 +21,12 @@ ms.custom:
 description: Este tema le guiará por la configuración recomendada para la configuración de todo el inquilino que afecta a la seguridad del entorno de Microsoft 365.
 ms.subservice: mdo
 ms.service: microsoft-365-security
-ms.openlocfilehash: d855d5307ded135fdb583f5fb498d0114f8da5ab
-ms.sourcegitcommit: 95ac076310ab9006ed92c69938f7ae771cd10826
+ms.openlocfilehash: 196ef4299f371e00a662b6e6bd0a38cc04955bb5
+ms.sourcegitcommit: 12af9e8e3a6eaa090fda9e98ccb831dff65863a4
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/20/2022
-ms.locfileid: "67851532"
+ms.lasthandoff: 09/27/2022
+ms.locfileid: "68086539"
 ---
 # <a name="configure-your-microsoft-365-tenant-for-increased-security"></a>Configurar el inquilino de Microsoft 365 para aumentar la seguridad
 
@@ -46,7 +46,7 @@ El portal de Microsoft 365 Defender incluye funcionalidades que protegen el ento
 
 |Área|¿Directiva predeterminada?|Recomendación|
 |---|---|---|
-|**Anti-phishing**|Yes|Configure la directiva de anti phishing predeterminada como se describe aquí: [Configure las opciones de protección contra suplantación de identidad en EOP y Defender para Office 365](protect-against-threats.md#part-2---anti-phishing-protection-in-eop-and-defender-for-office-365). <p> Más información: <ul><li>[Directivas contra suplantación de identidad en Microsoft 365](set-up-anti-phishing-policies.md)</li><li>[Configuración recomendada de directivas contra suplantación de identidad (phishing) en Microsoft Defender para Office 365](recommended-settings-for-eop-and-office365.md#anti-phishing-policy-settings-in-microsoft-defender-for-office-365)</li><li> [Información sobre la suplantación](impersonation-insight.md)</li><li>[Información de inteligencia sobre suplantación de identidad en EOP](learn-about-spoof-intelligence.md)</li><li>[Administre la lista de permitidos o bloqueados de inquilinos](manage-tenant-allow-block-list.md).</li></ul>|
+|**Anti-phishing**|Sí|Configure la directiva de anti phishing predeterminada como se describe aquí: [Configure las opciones de protección contra suplantación de identidad en EOP y Defender para Office 365](protect-against-threats.md#part-2---anti-phishing-protection-in-eop-and-defender-for-office-365). <p> Más información: <ul><li>[Directivas contra suplantación de identidad en Microsoft 365](set-up-anti-phishing-policies.md)</li><li>[Configuración recomendada de directivas contra suplantación de identidad (phishing) en Microsoft Defender para Office 365](recommended-settings-for-eop-and-office365.md#anti-phishing-policy-settings-in-microsoft-defender-for-office-365)</li><li> [Información sobre la suplantación](impersonation-insight.md)</li><li>[Información de inteligencia sobre suplantación de identidad en EOP](learn-about-spoof-intelligence.md)</li><li>[Administre la lista de permitidos o bloqueados de inquilinos](manage-tenant-allow-block-list.md).</li></ul>|
 |**Motor antimalware**|Yes|Configure la directiva antimalware predeterminada como se describe aquí: [Configure anti-malware protection settings in EOP (Configuración de la protección antimalware en EOP](protect-against-threats.md#part-1---anti-malware-protection-in-eop)). <p> Más información: <ul><li>[Protección contra malware](anti-malware-protection.md)</li><li>[Configuración recomendada de directivas antimalware](recommended-settings-for-eop-and-office365.md#eop-anti-malware-policy-settings)</li><li>[Configurar directivas antimalware](configure-anti-malware-policies.md)</li></ul>|
 |**Datos adjuntos seguros en Microsoft Defender para Office 365**|No|Configure la configuración global de Datos adjuntos seguros y cree una directiva de datos adjuntos seguros como se describe aquí: [Configurar los datos adjuntos seguros en Microsoft Defender para Office 365](protect-against-threats.md#safe-attachments-policies-in-microsoft-defender-for-office-365). <p> Más información: <ul><li>[Configuración recomendada de datos adjuntos seguros](recommended-settings-for-eop-and-office365.md#safe-attachments-settings)</li><li>[Datos adjuntos seguros en Microsoft Defender para Office 365](safe-attachments.md)</li><li>[Configurar directivas de datos adjuntos seguros](set-up-safe-attachments-policies.md)</li><li>[Datos adjuntos seguros para SharePoint, OneDrive y Microsoft Teams](mdo-for-spo-odb-and-teams.md)</li><li>[Documentos seguros en Microsoft 365 E5](safe-docs.md)</li></ul>|
 |**Vínculos seguros en Microsoft Defender para Office 365**|No|Cree una directiva de vínculos seguros como se describe aquí: [Configure Safe Links settings in Microsoft Defender para Office 365 (Configurar vínculos seguros en Microsoft Defender para Office 365](protect-against-threats.md#safe-links-policies-in-microsoft-defender-for-office-365)). <p> Más información: <ul><li>[Configuración de vínculos seguros recomendados](recommended-settings-for-eop-and-office365.md#safe-links-settings)</li><li>[Configurar directivas de vínculos seguros](set-up-safe-links-policies.md)</li><li>[Vínculos seguros en Microsoft Defender para Office 365](safe-links.md)</li></ul>|

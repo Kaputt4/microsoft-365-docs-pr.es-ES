@@ -6,25 +6,27 @@ ms.service: microsoft-365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
-ms.author: macapara
-author: mjcaparas
+ms.author: siosulli
+author: siosulli
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection:
-- M365-security-compliance
+- m365-security
 - m365solution-endpointprotect
 - m365solution-scenario
+- highpri
+- tier1
 ms.custom: admindeeplinkDEFENDER
 ms.topic: article
 ms.subservice: mde
 search.appverid: met150
-ms.openlocfilehash: bc950e1f850dab3a5d3474566145979be34b6ab9
-ms.sourcegitcommit: 9b133379196da2b3a4bb311b07ff274f43780f68
+ms.openlocfilehash: d213154ded15187e5041b6dda55a30245b0b34fe
+ms.sourcegitcommit: 4e42bafee965446f44f7f57d1defed2b9b24fce8
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/14/2022
-ms.locfileid: "67688669"
+ms.lasthandoff: 09/30/2022
+ms.locfileid: "68223554"
 ---
 # <a name="onboarding-using-microsoft-endpoint-configuration-manager"></a>Incorporación mediante Microsoft Endpoint Configuration Manager
 
@@ -135,9 +137,9 @@ Desde el portal de Microsoft 365 Defender es posible descargar la `.onboarding` 
    :::image type="content" source="images/mdatp-download-package.png" alt-text="Asistente para Configuration Manager de punto de conexión de Microsoft11" lightbox="images/mdatp-download-package.png":::
 
 4. Guarde el paquete en una ubicación accesible.
-5. En Microsoft Endpoint Configuration Manager, vaya a: **Recursos y compatibilidad > Información general > Endpoint Protection > Directivas de ATP de Microsoft Defender**.
+5. En Microsoft Endpoint Configuration Manager, vaya a: **Assets and Compliance > Overview > Endpoint Protection > Microsoft Defender ATP Policies (Información general sobre los recursos y el cumplimiento > > directivas de ATP de Endpoint Protection**).
 
-6. Haga clic con el botón derecho en **Directivas de ATP de Microsoft Defender** y seleccione **Crear directiva de ATP de Microsoft Defender**.
+6. Haga clic con el botón derecho en **Microsoft Defender directivas de ATP** y seleccione **Crear Microsoft Defender directiva de ATP**.
 
     :::image type="content" source="images/configmgr-create-policy.png" alt-text="Asistente para Configuration Manager de punto de conexión de Microsoft12" lightbox="images/configmgr-create-policy.png":::
 
@@ -196,7 +198,7 @@ Siga los pasos siguientes para identificar el identificador del área de trabajo
    - Windows 8.1
    - Windows 7
    - Windows Server 2016
-   - Windows Server 2012 R2
+   - Windows Server 2012 R2
    - Windows Server 2008 R2
 
    En concreto, para Windows 7 SP1, se deben instalar las siguientes revisiones:
@@ -210,7 +212,7 @@ Una vez completado, debería ver los puntos de conexión incorporados en el port
 
 ### <a name="next-generation-protection"></a>Protección de última generación
 
-Antivirus de Microsoft Defender es una solución antimalware integrada que proporciona protección de próxima generación para equipos de escritorio, equipos portátiles y servidores.
+Microsoft Defender Antivirus es una solución antimalware integrada que proporciona protección de próxima generación para equipos de escritorio, equipos portátiles y servidores.
 
 1. En la consola de Microsoft Endpoint Configuration Manager, vaya a **Assets and Compliance Overview Endpoint Protection Antimalware Polices (Directivas antimalware de Endpoint Protection \> de Información general \> sobre activos y cumplimiento\>**) y elija **Create Antimalware Policy (Crear directiva antimalware**).
 
@@ -250,7 +252,7 @@ Antivirus de Microsoft Defender es una solución antimalware integrada que propo
 
     :::image type="content" source="images/configmgr-select-collection.png" alt-text="Panel de protección de próxima generación11" lightbox="images/configmgr-select-collection.png":::
 
-Después de completar esta tarea, ahora ha configurado correctamente el Antivirus de Microsoft Defender.
+Después de completar esta tarea, ahora ha configurado correctamente Microsoft Defender Antivirus.
 
 ### <a name="attack-surface-reduction"></a>Reducción de la superficie expuesta a ataques
 

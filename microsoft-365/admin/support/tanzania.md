@@ -7,17 +7,19 @@ ms.author: cmcatee
 manager: scotv
 audience: Admin
 ms.topic: reference
-ms.service: o365-administration
-ms.collection: Adm_Support
+ms.service: microsoft-365-business
+ms.collection:
+- scotvorg
+- Adm_Support
 ms.localizationpriority: medium
 description: Obtenga información acerca de cómo ponerse en contacto con el soporte técnico de su país o región.
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: 62966f1f3da863c1f9bd71bb543c345701269d3a
-ms.sourcegitcommit: 0ee2dabe402d44fecb6856af98a2ef7720d25189
+ms.openlocfilehash: a7dc6626da8e923f68dd49023cbc1cd5ae1183c5
+ms.sourcegitcommit: 0b7070ec119e00e0dafe030bbfbef0ae5c9afa19
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/09/2021
-ms.locfileid: "61372797"
+ms.lasthandoff: 09/29/2022
+ms.locfileid: "68202417"
 ---
 # <a name="contact-support-for-tanzania"></a>Póngase en contacto con el soporte técnico de Tanzania
 
@@ -28,12 +30,12 @@ ms.locfileid: "61372797"
 
 Seleccionar la opción 9
 
-Escriba el código 7704
+Escriba el código 7704.
 
 ## <a name="hours"></a>Horas
 ### <a name="billing-support"></a>Soporte de facturación:
 
-Inglés: Mon-Fri 10 AM-6 PM
+Inglés: Mon-Fri de 10:00 a 18:00
 
 ### <a name="technical-support"></a>Soporte técnico:
 

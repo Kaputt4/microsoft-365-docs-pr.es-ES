@@ -7,9 +7,10 @@ author: skjerland
 manager: scotv
 audience: Admin
 ms.topic: overview
-ms.service: o365-administration
+ms.service: microsoft-365-business
 ms.localizationpriority: medium
 ms.collection:
+- scotvorg
 - M365-subscription-management
 - Adm_O365
 - Adm_NonTOC
@@ -20,12 +21,12 @@ search.appverid:
 - GEA150
 description: Obtenga más información sobre Azure Information Protection (AIP) para Office 365 operados por 21Vianet y cómo configurarlo para clientes en China.
 monikerRange: o365-21vianet
-ms.openlocfilehash: 80cd8d9b848235fc3486ad1952fa58f9d7d1570d
-ms.sourcegitcommit: c6f1486617b39565bfd8f662ee6ad65a9cefd3e3
+ms.openlocfilehash: b1e140b1862cdfaa8662a3c3794125cd9e156f47
+ms.sourcegitcommit: 0b7070ec119e00e0dafe030bbfbef0ae5c9afa19
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/29/2022
-ms.locfileid: "66530176"
+ms.lasthandoff: 09/29/2022
+ms.locfileid: "68192649"
 ---
 # <a name="azure-information-protection-support-for-office-365-operated-by-21vianet"></a>Soporte técnico de Azure Information Protection para Office 365 operados por 21Vianet
 
@@ -149,7 +150,7 @@ Inicie sesión en el proveedor de DNS, vaya a la configuración dns del dominio 
 
 Descargue e instale el cliente de etiquetado unificado de AIP desde el [Centro de descarga de Microsoft](https://www.microsoft.com/download/details.aspx?id=53018).
 
-Para más información, vea:
+Para obtener más información, consulte:
 
 - [Documentación de AIP](/azure/information-protection/)
 - [Historial de versiones de AIP y directiva de soporte técnico](/azure/information-protection/rms-client/unifiedlabelingclient-version-release-history)
@@ -229,7 +230,7 @@ Para obtener más información, consulte [¿Qué es el analizador de etiquetado 
 
     El analizador ahora tiene un token para autenticarse en Azure AD. Este token es válido durante un año, dos años o nunca, según la configuración del secreto de cliente de la **aplicación web /API** en Azure AD. Cuando expire el token, debe repetir este procedimiento.
 
-1. Ejecute el cmdlet [Set-AIPScannerConfiguration](/powershell/module/azureinformationprotection/set-aipscannerconfiguration) para establecer que el analizador funcione en modo sin conexión. Ejecutar:
+1. Ejecute el cmdlet [Set-AIPScannerConfiguration](/powershell/module/azureinformationprotection/set-aipscannerconfiguration) para establecer que el analizador funcione en modo sin conexión. Ejecute: 
 
     ```powershell
     Set-AIPScannerConfiguration -OnlineConfiguration Off
@@ -293,7 +294,7 @@ En la tabla siguiente se enumeran los cmdlets de PowerShell que son pertinentes 
 | [Set-AIPScannerRepository](/powershell/module/azureinformationprotection/set-aipscannerrepository) | Define la configuración de un repositorio existente en el trabajo de examen de contenido. |
 | | |
 
-Para más información, vea:
+Para obtener más información, consulte:
 
 - [¿Qué es el analizador de etiquetado unificado de Azure Information Protection?](/azure/information-protection/deploy-aip-scanner)
 - [Configuración e instalación del analizador de etiquetado unificado de Azure Information Protection (AIP)](/azure/information-protection/deploy-aip-scanner-configure-install?tabs=powershell-only)

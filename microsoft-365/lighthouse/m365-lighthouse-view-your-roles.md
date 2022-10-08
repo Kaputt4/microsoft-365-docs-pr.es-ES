@@ -10,6 +10,7 @@ ms.topic: article
 ms.service: microsoft-365-lighthouse
 ms.localizationpriority: medium
 ms.collection:
+- scotvorg
 - M365-subscription-management
 - Adm_O365
 ms.custom:
@@ -17,12 +18,12 @@ ms.custom:
 - M365-Lighthouse
 search.appverid: MET150
 description: En el caso de los técnicos del proveedor de servicios administrados (MSP) que usan Microsoft 365 Lighthouse, aprenda a ver los roles de Azure Active Directory (Azure AD) en los distintos inquilinos de cliente que administra su organización.
-ms.openlocfilehash: acae37322ef74a150a9ec6189119ca90187f08d2
-ms.sourcegitcommit: 2b89bcff547e00be3d38dc8d1e6cbcf8f41eba42
+ms.openlocfilehash: cdc38d77a7397c1b4a79f59b9050f4522ad21abb
+ms.sourcegitcommit: 0b7070ec119e00e0dafe030bbfbef0ae5c9afa19
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/03/2022
-ms.locfileid: "67590664"
+ms.lasthandoff: 09/29/2022
+ms.locfileid: "68201999"
 ---
 # <a name="view-your-azure-active-directory-roles-in-microsoft-365-lighthouse"></a>Visualización de los roles de Azure Active Directory en Microsoft 365 Lighthouse
 

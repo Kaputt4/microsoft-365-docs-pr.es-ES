@@ -10,6 +10,9 @@ ms.topic: how-to
 ms.service: microsoft-365-security
 ms.subservice: other
 ms.date: 09/15/2022
+ms.collection:
+- m365-security
+- tier1
 ms.localizationpriority: medium
 search.appverid:
 - BCS160
@@ -18,12 +21,12 @@ search.appverid:
 - BEA160
 - GEA150
 description: Restablezca las contraseñas de los usuarios de Microsoft 365 Empresa Premium.
-ms.openlocfilehash: 1d38b19222280d14ce953fb793c4be903f0a8793
-ms.sourcegitcommit: c29af68260ba8676083674b3c70209bff2c2e362
+ms.openlocfilehash: 8290635be546f576c0b71960413f71dc3dfca87c
+ms.sourcegitcommit: 0283c436f3ba61a708b52b57a1955f5ea74376a3
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/16/2022
-ms.locfileid: "67739948"
+ms.lasthandoff: 09/28/2022
+ms.locfileid: "68098113"
 ---
 # <a name="reset-passwords-in-microsoft-365-business-premium"></a>Restablecer contraseñas en Microsoft 365 Empresa Premium
 

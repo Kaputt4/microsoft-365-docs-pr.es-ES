@@ -7,17 +7,19 @@ ms.author: cmcatee
 manager: scotv
 audience: Admin
 ms.topic: reference
-ms.service: o365-administration
-ms.collection: Adm_Support
+ms.service: microsoft-365-business
+ms.collection:
+- scotvorg
+- Adm_Support
 ms.localizationpriority: medium
 description: Obtenga información acerca de cómo ponerse en contacto con el soporte técnico de su país o región.
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: 52944fc0c7d69ce313d9202ec79e7bed754c93c3
-ms.sourcegitcommit: 0ee2dabe402d44fecb6856af98a2ef7720d25189
+ms.openlocfilehash: dbc33ac6b6e181130e28599b9b6b2f5759564fe7
+ms.sourcegitcommit: 0b7070ec119e00e0dafe030bbfbef0ae5c9afa19
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/09/2021
-ms.locfileid: "61371573"
+ms.lasthandoff: 09/29/2022
+ms.locfileid: "68208048"
 ---
 # <a name="contact-support-for-poland"></a>Póngase en contacto con el soporte técnico de Polonia
 
@@ -29,16 +31,16 @@ ms.locfileid: "61371573"
 ## <a name="hours"></a>Horas
 ### <a name="billing-support"></a>Soporte de facturación:
 
-Polaco: Mon-Fri 8 AM-6 PM
+Polaco: Mon-Fri 8:00-18:00
 
-Inglés: Mon-Fri 8 AM-6 PM
+Inglés: Mon-Fri 8:00-18:00
 
 ### <a name="technical-support"></a>Soporte técnico:
 
-Polaco: Mon-Fri 8 AM-6 PM
+Polaco: Mon-Fri 8:00-18:00
 
 Inglés: 24 horas al día, 7 días a la semana
 
-Número Teléfono alternativa: 022 306 05 17
+Número de teléfono alternativo: 022 306 05 17
 
 Se aplican tarifas de llamada local

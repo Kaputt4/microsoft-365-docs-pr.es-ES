@@ -6,7 +6,7 @@ author: samanro
 manager: bcarter
 ms.audience: ITPro
 ms.topic: article
-ms.service: microsoft-365-enterprise
+ms.service: o365-solutions
 ms.localizationpriority: medium
 ms.collection:
 - highpri
@@ -14,12 +14,12 @@ ms.collection:
 - M365solutions
 ms.custom: seo-marvel-jun2020
 f1.keywords: NOCSH
-ms.openlocfilehash: 10e28ee10f47087627533ff4f74e7c255d4e735a
-ms.sourcegitcommit: 0af064e8b6778060f1bd365378d69b16fc9949b5
+ms.openlocfilehash: 7ee555ea6f4351c8a7dde96f0775b215515c662a
+ms.sourcegitcommit: 0b7070ec119e00e0dafe030bbfbef0ae5c9afa19
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/15/2022
-ms.locfileid: "67728087"
+ms.lasthandoff: 09/29/2022
+ms.locfileid: "68208488"
 ---
 # <a name="microsoft-365-solutions-for-the-financial-services-industry"></a>Soluciones de Microsoft 365 para el sector de servicios financieros
 
@@ -38,7 +38,7 @@ Obtenga información sobre cómo puede usar Microsoft 365, Dynamics 365 y Azure 
 |Recurso |Descripción  |
 |---------|---------|
 |[Consideraciones clave de cumplimiento y seguridad para los mercados de capital y los bancos de Estados Unidos](financial-services-secure-collaboration.md) | Obtenga información sobre cómo la plataforma de Microsoft 365 ayuda a los servicios financieros a pasar a una plataforma de colaboración moderna, a la vez que ayuda a mantener los datos y los sistemas seguros y conformes a las normativas. |
-|[Microsoft 365 para servicios financieros](/frontline/teams-for-financial-services)    | Obtenga información sobre cómo la organización de servicios financieros puede comunicarse dentro y entre ubicaciones, simplificar los procesos empresariales, incorporar y entrenar a los empleados y reforzar las comunicaciones corporativas con Microsoft 365.      |
+|[Microsoft 365 para servicios financieros](/microsoft-365/frontline/teams-for-financial-services)    | Obtenga información sobre cómo la organización de servicios financieros puede comunicarse dentro y entre ubicaciones, simplificar los procesos empresariales, incorporar y entrenar a los empleados y reforzar las comunicaciones corporativas con Microsoft 365.      |
 |[Microsoft Cloud for Financial Services](/industry/financial-services/overview)  | Obtenga información sobre Microsoft Cloud for Financial Services y cómo reúne funcionalidades de confianza para clientes y asociados que mejoran las experiencias de clientes y empleados y ayudan a proteger las cuentas y las compras.     |
 | [Arquitectura y soluciones de Azure para servicios financieros](/azure/architecture/industries/finance)| Obtenga información sobre cómo puede usar los servicios de Microsoft Azure para digitalizar, modernizar y mejorar la solución de servicios financieros en Azure para servicios financieros.|
 

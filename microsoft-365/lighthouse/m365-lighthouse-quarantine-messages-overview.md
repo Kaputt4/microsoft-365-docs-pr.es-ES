@@ -10,6 +10,7 @@ ms.topic: article
 ms.service: microsoft-365-lighthouse
 ms.localizationpriority: medium
 ms.collection:
+- scotvorg
 - M365-subscription-management
 - Adm_O365
 ms.custom:
@@ -17,16 +18,16 @@ ms.custom:
 - M365-Lighthouse
 search.appverid: MET150
 description: En el caso de los proveedores de servicios administrados (MSP) que usan Microsoft 365 Lighthouse, aprenda a administrar los mensajes en cuarentena.
-ms.openlocfilehash: beead122e36f7282e1857bec32d0a1be8d09a473
-ms.sourcegitcommit: 2b89bcff547e00be3d38dc8d1e6cbcf8f41eba42
+ms.openlocfilehash: 90e77f972b40c43ea707824f46443f7126425ebf
+ms.sourcegitcommit: 0b7070ec119e00e0dafe030bbfbef0ae5c9afa19
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/03/2022
-ms.locfileid: "67599393"
+ms.lasthandoff: 09/29/2022
+ms.locfileid: "68202043"
 ---
 # <a name="overview-of-quarantined-messages-in-microsoft-365-lighthouse"></a>Introducción a los mensajes en cuarentena en Microsoft 365 Lighthouse
 
-Microsoft 365 Lighthouse le permite ver información e información sobre los correos electrónicos en cuarentena en todos los inquilinos del cliente. Desde una sola vista, puede evaluar los correos electrónicos en cuarentena y realizar las acciones adecuadas. Los datos están disponibles si el inquilino ha implementado Exchange Online Protection (EOP) y Microsoft Defender para Office365 Plan 1 (MDO).
+Microsoft 365 Lighthouse le permite ver información e información sobre los correos electrónicos en cuarentena en todos los inquilinos del cliente. Desde una sola vista, puede evaluar los correos electrónicos en cuarentena y realizar las acciones adecuadas. Los datos están disponibles si el inquilino ha implementado Exchange Online Protection (EOP) y Microsoft Defender para el plan 1 (MDO) de Office365.
 
 Puede acceder a la información seleccionando **Inicio** en el panel de navegación izquierdo o seleccionando Protección de **datos** en el panel de navegación izquierdo para abrir la página Mensajes en cuarentena.
 
@@ -44,7 +45,7 @@ La sección **Estado de los mensajes** proporciona una vista consolidada entre l
 
 Los datos reflejan los últimos 30 días; sin embargo, puede usar el filtro **Intervalo de tiempo** para modificar la vista.
 
-La sección **Motivo de cuarentena** contiene un desglose de los recuentos de cuarentena por Exchange Online Protection (EOP) y el tipo de directiva del plan 1 (MDO) de Microsoft Defender para Office365. Estos tipos incluyen
+La sección **Motivo de cuarentena** contiene un desglose de los recuentos de cuarentena por Exchange Online Protection (EOP) y Microsoft Defender para el tipo de directiva plan 1 (MDO) de Office365. Estos tipos incluyen
 
 - Malware
 - Suplantación de identidad (phishing)
