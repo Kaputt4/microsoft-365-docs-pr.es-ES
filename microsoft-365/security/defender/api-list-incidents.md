@@ -15,18 +15,20 @@ author: mjcaparas
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
-ms.collection: M365-security-compliance
+ms.collection:
+- m365-security
+- tier3
 ms.topic: conceptual
 search.appverid:
 - MOE150
 - MET150
 ms.custom: api
-ms.openlocfilehash: d86c26af54c4cd69e65cd5af952556a2553b728e
-ms.sourcegitcommit: 10e6abe740e27000e223378eb17d657a47555fa8
+ms.openlocfilehash: 3ee24adb21dfbfb8882cc553aec477130a999cd7
+ms.sourcegitcommit: 12af9e8e3a6eaa090fda9e98ccb831dff65863a4
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/31/2022
-ms.locfileid: "67483066"
+ms.lasthandoff: 09/27/2022
+ms.locfileid: "68091287"
 ---
 # <a name="list-incidents-api-in-microsoft-365-defender"></a>Enumerar la API de incidentes en Microsoft 365 Defender
 
@@ -84,7 +86,7 @@ Nombre|Tipo|Descripción
 ---|---|---
 Authorization|Cadena|Portador {token}. **Required**
 
-## <a name="request-body"></a>Cuerpo de la solicitud
+## <a name="request-body"></a>Cuerpo de solicitud
 
 Ninguna.
 
@@ -177,7 +179,7 @@ aadUserId|Disponible si entityType es *User*.|fc8f7484-f813-4db2-afab-bc1507913f
 userPrincipalName|Disponible si entityType es *User*/*MailBox*/*MailMessage*.|testUser2@contoso.com
 mailboxDisplayName|Disponible si entityType es *MailBox*.|probar User2
 mailboxAddress|Disponible si entityType es *User*/*MailBox*/*MailMessage*.|testUser2@contoso.com
-clusterBy|Disponible si entityType es  *MailCluster*.|Sujeto; P2SenderDomain; Contenttype
+clusterBy|Disponible si entityType es  *MailCluster*.|Asunto; P2SenderDomain; Contenttype
 sender|Disponible si entityType es *User*/*MailBox*/*MailMessage*.|user.abc@mail.contoso.co.in
 destinatario|Disponible si entityType es *MailMessage*.|testUser2@contoso.com
 subject|Disponible si entityType es *MailMessage*.|\[Atención externa\]

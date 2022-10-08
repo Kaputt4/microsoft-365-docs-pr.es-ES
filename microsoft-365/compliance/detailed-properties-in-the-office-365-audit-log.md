@@ -1,5 +1,6 @@
 ---
 title: Propiedades detalladas del registro de auditoría
+description: En este artículo se proporcionan descripciones de propiedades adicionales incluidas al exportar los resultados de un registro de auditoría de Office 365.
 f1.keywords:
 - NOCSH
 ms.author: robmazz
@@ -10,21 +11,20 @@ ms.topic: article
 ms.service: O365-seccomp
 ms.localizationpriority: medium
 ms.collection:
-- Strat_O365_IP
-- M365-security-compliance
+- tier1
+- purview-compliance
+- audit
 search.appverid:
 - MOE150
 - BCS160
 - MET150
-ms.assetid: ce004100-9e7f-443e-942b-9b04098fcfc3
-description: En este artículo se proporcionan descripciones de propiedades adicionales incluidas al exportar los resultados de un registro de auditoría de Office 365.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: ba8f8df40edf484389a5a7e9cec789ab8a3fc7fe
-ms.sourcegitcommit: 433f5b448a0149fcf462996bc5c9b45d17bd46c6
+ms.openlocfilehash: 59e5e3b5317cd2497563a1b0842361eb387e43a1
+ms.sourcegitcommit: 4dfb5de8c61847b8ddd10410ad20d34860eed8f6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/20/2022
-ms.locfileid: "67817342"
+ms.lasthandoff: 09/28/2022
+ms.locfileid: "68129769"
 ---
 # <a name="detailed-properties-in-the-audit-log"></a>Propiedades detalladas del registro de auditoría
 
@@ -68,7 +68,7 @@ En la tabla siguiente se describen las propiedades que se incluyen (en función 
 |Operación|El nombre de la actividad de usuario o administrador. El valor de esta propiedad corresponde al valor que se seleccionó en la lista desplegable **Actividades** . Si se seleccionó **Mostrar resultados para todas las actividades** , el informe incluirá entradas para todas las actividades de usuario y administrador de todos los servicios. Para obtener una descripción de las operaciones o actividades que se registran en el registro de auditoría, consulte la pestaña **Actividades auditadas** en [Buscar el registro de auditoría en el Office 365](search-the-audit-log-in-security-and-compliance.md).  <br/> Esta propiedad identifica el nombre del cmdlet ejecutado para la actividad de administración de Exchange.|Todo|
 |OrganizationId|GUID de la organización.|Todo|
 |Path|El nombre de la carpeta del buzón donde se encuentra el mensaje al que se obtuvo acceso. Esta propiedad también identifica la carpeta en la que se crea un mensaje o se copia o se mueve a.|Exchange (actividad de buzón)|
-|Parámetros|Para la actividad de administrador de Exchange, el nombre y el valor de todos los parámetros que se usaron con el cmdlet que se identifica en la propiedad Operation.|Exchange (actividad de administrador)|
+|Parameters|Para la actividad de administrador de Exchange, el nombre y el valor de todos los parámetros que se usaron con el cmdlet que se identifica en la propiedad Operation.|Exchange (actividad de administrador)|
 |RecordType|El tipo de operación indicado por el registro. Esta propiedad indica el servicio o característica en el que se desencadenó la operación. Para obtener una lista de tipos de registro y su valor ENUM correspondiente (que es el valor mostrado en la propiedad **RecordType** en un registro de auditoría), consulte [Tipo de registro de](/office/office-365-management-api/office-365-management-activity-api-schema#auditlogrecordtype) auditoría.| 
 |ResultStatus|Indica si la acción (especificada en la propiedad **Operation** ) se realizó correctamente o no.  <br/> Para la actividad de administrador de Exchange, el valor es **True** (correcto) o **False** (error).|Todo  <br/>|
 |SecurityComplianceCenterEventType|Indica que la actividad era un evento del portal de cumplimiento. Todas las actividades del centro de cumplimiento tendrán un valor de **0** para esta propiedad.|Centro de seguridad y cumplimiento|

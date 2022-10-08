@@ -10,15 +10,17 @@ ms.author: dansimp
 author: martyav
 manager: dansimp
 audience: ITPro
-ms.collection: M365-security-compliance
+ms.collection:
+- m365-security
+- tier2
 ms.topic: article
 search.appverid: met150
-ms.openlocfilehash: b701d93aefcab19ff352830815c7894fc062140a
-ms.sourcegitcommit: 10e6abe740e27000e223378eb17d657a47555fa8
+ms.openlocfilehash: e84e53a2883348c7a233d2225058aed2b495b07d
+ms.sourcegitcommit: 12af9e8e3a6eaa090fda9e98ccb831dff65863a4
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/31/2022
-ms.locfileid: "67466973"
+ms.lasthandoff: 09/27/2022
+ms.locfileid: "68091265"
 ---
 # <a name="device-profile-page"></a>Página perfil de dispositivo
 
@@ -78,7 +80,7 @@ Entre las acciones disponibles en la página del perfil del dispositivo se inclu
 * **Aislar dispositivo**: aísla el dispositivo de la red de la organización mientras lo mantiene conectado a Microsoft Defender para punto de conexión. Puede optar por permitir que Outlook, Teams y Skype Empresarial se ejecuten mientras el dispositivo está aislado, con fines de comunicación.
 * **Centro de acciones** : vea el estado de las acciones enviadas. Solo está disponible si ya se ha seleccionado otra acción.
 * **Restringir la ejecución** de aplicaciones: impide que se ejecuten las aplicaciones que no están firmadas por Microsoft.
-* **Ejecución del examen antivirus**: Novedades definiciones de Antivirus de Microsoft Defender y ejecuta inmediatamente un examen antivirus. Elija entre Examen rápido o Examen completo.
+* **Ejecución del examen antivirus**: Novedades Microsoft Defender definiciones de antivirus y ejecuta inmediatamente un examen antivirus. Elija entre Examen rápido o Examen completo.
 * **Recopilar paquete de investigación** : recopila información sobre el dispositivo. Una vez completada la investigación, puede descargarla.
 * **Iniciar sesión de respuesta** activa: carga un shell remoto en el dispositivo para [realizar investigaciones de seguridad detalladas](/microsoft-365/security/defender-endpoint/live-response).
 * **Iniciar una investigación automatizada** : [investiga y corrige automáticamente las amenazas](../office-365-security/office-365-air.md). Aunque puede desencadenar manualmente investigaciones automatizadas para que se ejecuten desde esta página, [ciertas directivas de alerta](../../compliance/alert-policies.md#default-alert-policies) desencadenan investigaciones automáticas por sí solas.

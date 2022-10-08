@@ -12,16 +12,16 @@ ms.localizationpriority: medium
 search.appverid:
 - MET150
 ms.collection:
-- M365-security-compliance
+- m365-security
 description: Los administradores pueden aprender a permitir o bloquear correos electrónicos y entradas de remitente suplantados en la lista de permitidos o bloqueados de inquilinos en el portal de seguridad.
 ms.subservice: mdo
 ms.service: microsoft-365-security
-ms.openlocfilehash: 752877aab39ce6c06b10b76c192b2188a9fb138d
-ms.sourcegitcommit: 173f696dc8f81259d852775572a6938ec39f6115
+ms.openlocfilehash: 9a954b820b584d9fdb6b210971423e9f17c15de6
+ms.sourcegitcommit: 12af9e8e3a6eaa090fda9e98ccb831dff65863a4
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/10/2022
-ms.locfileid: "67644013"
+ms.lasthandoff: 09/27/2022
+ms.locfileid: "68066814"
 ---
 # <a name="allow-or-block-emails-using-the-tenant-allowblock-list"></a>Permitir o bloquear correos electrónicos mediante la lista de bloqueados y permitidos del espacio empresarial
 
@@ -65,7 +65,7 @@ Puede administrar las entradas de permitir y bloquear para el correo electrónic
 
   **Notas**:
 
-  - La adición de usuarios al rol correspondiente de Azure Active Directory en el Centro de administración de Microsoft 365 proporciona a los usuarios los permisos necesarios *y* los permisos para otras características de Microsoft 365. Para obtener más información, consulte [Acerca de los roles de administrador](../../admin/add-users/about-admin-roles.md).
+  - Adding users to the corresponding Azure Active Directory role in the Microsoft 365 admin center gives users the required permissions *and* permissions for other features in Microsoft 365. For more information, see [About admin roles](../../admin/add-users/about-admin-roles.md).
   - El grupo de roles **Administración de organización de solo lectura** en [Exchange Online](/Exchange/permissions-exo/permissions-exo#role-groups) también proporciona acceso de solo lectura a la característica.
 
 ## <a name="domains-and-email-addresses-in-the-tenant-allowblock-list"></a>Dominios y direcciones de correo electrónico en la lista de inquilinos permitidos o bloqueados
@@ -512,7 +512,7 @@ Solo los mensajes de ese dominio *y* el par de infraestructura de envío pueden 
 
 En las organizaciones con Microsoft Defender para Office 365, no puede crear entradas permitidas en la lista de inquilinos, permitidos o bloqueados para los mensajes detectados como suplantación por [la protección de suplantación de dominio o remitente](set-up-anti-phishing-policies.md#impersonation-settings-in-anti-phishing-policies-in-microsoft-defender-for-office-365).
 
-La notificación de un mensaje que se bloqueó incorrectamente como suplantación en el portal envíos en <https://security.microsoft.com/reportsubmission>  no agrega el remitente o dominio como una entrada permitida en la lista de permitidos o bloqueados de inquilinos.
+La notificación de un mensaje que se bloqueó incorrectamente como suplantación en el portal envíos en <https://security.microsoft.com/reportsubmission> no agrega el remitente o dominio como una entrada permitida en la lista de permitidos o bloqueados de inquilinos.
 
 En su lugar, el dominio o el remitente se agrega a la **sección Remitentes y dominios de confianza** de la [directiva anti-phishing](configure-mdo-anti-phishing-policies.md#use-the-microsoft-365-defender-portal-to-modify-anti-phishing-policies) que detectó el mensaje.
 

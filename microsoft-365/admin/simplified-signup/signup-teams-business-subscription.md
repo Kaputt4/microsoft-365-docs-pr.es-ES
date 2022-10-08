@@ -7,21 +7,22 @@ author: kwekua
 manager: scotv
 audience: Admin
 ms.topic: article
-ms.service: o365-administration
+ms.service: microsoft-365-business
 ms.localizationpriority: medium
 ms.collection:
+- scotvorg
 - highpri
 - Adm_TOC
 ms.custom:
 - VSBFY23
 - AdminSurgePortfolio
 description: Siga los pasos de este artículo para registrarse en Microsoft Teams como parte de una suscripción empresarial.
-ms.openlocfilehash: 12c6de03fb012aa73e459bff6d356ff2d6c35d4f
-ms.sourcegitcommit: 37e137535c4f70702afe1a5eeaa899c75ee02cfd
+ms.openlocfilehash: e9581f357c85fabd5f27d29255d9188075ca795b
+ms.sourcegitcommit: 0b7070ec119e00e0dafe030bbfbef0ae5c9afa19
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/13/2022
-ms.locfileid: "67660955"
+ms.lasthandoff: 09/29/2022
+ms.locfileid: "68186885"
 ---
 # <a name="sign-up-for-microsoft-teams-as-part-of-a-business-subscription"></a>Registrarse en Microsoft Teams como parte de una suscripción empresarial
 
@@ -45,7 +46,7 @@ Consulte la tabla siguiente para ver las opciones de registro y los servicios qu
 |Conocimientos necesarios|Comencemos sin conocimientos técnicos necesarios para ejecutar un dominio.|Requiere que compre un dominio o que posea un dominio. Si desea usar un dominio existente, necesitará credenciales de acceso para el dominio y es posible que necesite conocimientos técnicos para demostrar la propiedad.|
 |Acuerdo de gobierno y control de datos|Disponible en el Complemento al [Contrato de Servicios de Microsoft](https://go.microsoft.com/fwlink/p/?linkid=2180702) y **es mejor para empresas que desean algunas herramientas de trabajo y colaboración remotas y se sienten cómodos con Microsoft que actúa como controlador** de sus datos en virtud de la [Declaración de privacidad de Microsoft](https://go.microsoft.com/fwlink/?LinkId=521839). Los suscriptores ("usted") a los servicios que usan esta opción no tendrán acceso al contenido ni a los datos de otro usuario invitado ("usuarios invitados). <br/><br/> Por ejemplo, si trabaja en colaboración con otros usuarios invitados en un documento almacenado en su cuenta, pueden optar por que esos documentos no sean accesibles para usted. <br/><br> Por separado, los usuarios invitados pueden optar por no transferir documentos en su cuenta de Sign-Up simplificada a la suscripción de la cuenta de dominio, incluso después de invitarlos a hacerlo. Esto significa que es posible que sus documentos no sean accesibles incluso si agrega una cuenta de dominio más adelante. Como tal, debe evaluar las consideraciones de propiedad de datos y derechos de propiedad intelectual en consecuencia.|Disponible en virtud del [Contrato de suscripción de Microsoft Online](https://go.microsoft.com/fwlink/p/?linkid=2180430) y es **mejor para las empresas que necesitan que Microsoft actúe como procesador** de sus datos en nuestro [Anexo de protección de datos](https://go.microsoft.com/fwlink/p/?linkid=2180314) y necesiten nuestro conjunto completo de herramientas de trabajo y colaboración remotas. **Los suscriptores que están en sectores regulados o buscan más control, tanto sobre el uso de los servicios por parte de los empleados como sobre el procesamiento de datos relacionados por parte de Microsoft, deben elegir Registrarse en la cuenta de dominio con Microsoft Business Business Basic** y registrarse en el contrato de nivel empresarial de la cuenta de dominio.|
 
-## <a name="frequently-asked-questions"></a>Preguntas más frecuentes
+## <a name="frequently-asked-questions"></a>Preguntas frecuentes
 
 ### <a name="what-is-a-business-email-and-what-are-the-advantages-to-setting-one-up"></a>¿Qué es un correo electrónico empresarial y cuáles son las ventajas de configurar uno?
 

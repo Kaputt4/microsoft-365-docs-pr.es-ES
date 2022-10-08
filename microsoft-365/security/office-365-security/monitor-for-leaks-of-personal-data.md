@@ -12,37 +12,37 @@ ms.collection:
 - Strat_O365_Enterprise
 - Ent_O365
 - GDPR
-- M365-security-compliance
+- m365-security
 ms.localizationpriority: high
 search.appverid:
 - MET150
 description: Obtenga información sobre las tres herramientas que puede usar para supervisar pérdidas de datos personales.
 ms.subservice: mdo
 ms.service: microsoft-365-security
-ms.openlocfilehash: 2ce8dcae988e99d7697ba14f296704ffaaeafd5d
-ms.sourcegitcommit: 2b89bcff547e00be3d38dc8d1e6cbcf8f41eba42
+ms.openlocfilehash: dd25ee58f219a18544b05969e2c0a51eb7788a13
+ms.sourcegitcommit: 12af9e8e3a6eaa090fda9e98ccb831dff65863a4
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/03/2022
-ms.locfileid: "67598942"
+ms.lasthandoff: 09/27/2022
+ms.locfileid: "68069015"
 ---
 # <a name="monitor-for-leaks-of-personal-data"></a>Supervisar pérdidas de datos personales
 
-Existen muchas herramientas que pueden usarse para supervisar el uso y transporte de datos personales. En este tema se describen tres herramientas que funcionan bien.
+There are many tools that can be used to monitor the use and transport of personal data. This topic describes three tools that work well.
 
 :::image type="content" source="../../media/Monitor-for-leaks-of-personal-data-image1.png" alt-text="Las herramientas para supervisar el uso y el transporte de datos personales" lightbox="../../media/Monitor-for-leaks-of-personal-data-image1.png":::
 
 En la ilustración:
 
-- Comience con los informes de prevención de pérdida de datos de Microsoft Purview para supervisar datos personales en SharePoint Online, OneDrive para la Empresa y correo electrónico en tránsito. Estos informes proporcionan mayor nivel de detalle para la supervisión de datos personales. No obstante, los informes no incluyen todos los servicios de Office 365.
+- Start with Microsoft Purview data loss prevention reports for monitoring personal data in SharePoint Online, OneDrive for Business, and email in transit. These reports provide the greatest level of detail for monitoring personal data. However, these reports don't include all services in Office 365.
 
-- Después, use directivas de alerta y el registro de auditoría para supervisar la actividad de los servicios. Configure la supervisión continua o busque el registro de auditoría para investigar un incidente. El registro de auditoría funciona en todos los servicios: Sway, Power BI, eDiscovery, Dynamics 365, Microsoft Flow, Microsoft Teams, actividad administrativa, OneDrive para la Empresa, SharePoint Online, correo electrónico en tránsito, y buzones de correo en reposo. Las conversaciones de Skype se incluyen en los buzones en reposo.
+- Next, use alert policies and the audit log to monitor activity across services. Set up ongoing monitoring or search the audit log to investigate an incident. The audit log works across services—Sway, Power BI, eDiscovery, Dynamics 365, Power Automate, Microsoft Teams, Admin activity, OneDrive for Business, SharePoint Online, mail in transit, and mailboxes at rest. Skype conversations are included in mailboxes at rest.
 
-- Por último, use Microsoft Defender for Cloud Apps para supervisar los archivos con datos confidenciales de otros proveedores SaaS. Próximamente, se podrán usar los tipos de información confidencial y las etiquetas unificadas en Azure Information Protection y Office con Defender for Cloud Apps. Puede configurar directivas que se apliquen a todas las aplicaciones específicas (como Box) o a aplicaciones SaaS. Defender for Cloud Apps no busca archivos en Exchange Online, incluidos los archivos adjuntos de correo electrónico.
+- Finally, Use Microsoft Defender for Cloud Apps to monitor files with sensitive data in other SaaS providers. Coming soon is the ability to use sensitive information types and unified labels across Azure Information Protection and Office with Defender for Cloud Apps. You can set up policies that apply to all of your SaaS apps or specific apps (like Box). Defender for Cloud Apps doesn't discover files in Exchange Online, including files attached to email.
 
 ## <a name="data-loss-prevention-reports"></a>Informes de prevención de pérdida de datos
 
-Después de crear las directivas de prevención de pérdida de datos (DLP), deberá comprobar que su funcionamiento es el deseado y que le ayudan a cumplir las normativas. Con los informes DLP en Office 365, puede ver rápidamente el número de coincidencias de directivas DLP, reemplazos o falsos positivos; comprobar si la tendencia es ascendente o descendente a lo largo del tiempo; filtrar el informe de maneras diferentes; y ver más detalles seleccionando un punto en una línea del gráfico.
+After you create your data loss prevention (DLP) policies, you'll want to verify that they're working as you intended and helping you to stay compliant. With the DLP reports in Office 365, you can quickly view the number of DLP policy matches, overrides, or false positives; see whether they're trending up or down over time; filter the report in different ways; and view more details by selecting a point on a line on the graph.
 
 Puede usar los informes DLP para lo siguiente:
 
@@ -55,7 +55,7 @@ Puede usar los informes DLP para lo siguiente:
 
 Además, puede usar los informes DLP para ajustar las directivas DLP a medida que las ejecuta en modo de prueba.
 
-Los informes DLP se encuentran en el portal de cumplimiento de Microsoft Purview. Vaya a **Informes** \> en la sección **Datos de la organización** para encontrar los informes de **coincidencias con la directiva de DLP**, **incidentes de DLP** y **falsos positivos e invalidaciones de DLP**.
+DLP reports are in the Microsoft Purview compliance portal. Go to **Reports** \> **Organizational data** section to find the **DLP policy matches**, **DLP incidents**, and **DLP false positives and overrides** reports.
 
 Para obtener más información, consulte [Ver los informes de prevención de pérdida de datos](../../compliance/view-the-dlp-reports.md).
 
@@ -68,13 +68,13 @@ El registro de auditoría contiene eventos de Exchange Online, SharePoint Online
 El portal de Microsoft 365 Defender y el portal de cumplimiento de Microsoft Purview ofrecen dos formas de supervisar e informar en el registro de auditoría:
 
 - Configurar directivas de alerta, ver alertas y supervisar tendencias: use las herramientas de directiva de alertas y del panel de alertas en el portal de Microsoft 365 Defender o en el portal de cumplimiento de Microsoft Purview.
-- Buscar el registro de auditoría directamente: Busque todos los eventos en un intervalo de fechas definido, o filtre los resultados basándose en criterios específicos, como la acción, el usuario que la realizó o el objeto de destino.
+- Search the audit log directly: Search for all events in a specified date rage. Or you can filter the results based on specific criteria, such as the user who performed the action, the action, or the target object.
 
-Los equipos de cumplimiento y seguridad de la información pueden usar estas herramientas para revisar proactivamente las actividades realizadas por los usuarios finales y los administradores en los servicios. Pueden configurarse alertas automáticas para enviar notificaciones por correo electrónico cuando se producen ciertas actividades en colecciones de sitios específicos, por ejemplo, cuando se comparte el contenido de los sitios que se sabe que contienen información relacionada con RGPD. Esto permite que los equipos contacten con usuarios para asegurarse de que se siguen directivas de seguridad corporativa, o que proporcionen aprendizaje adicional.
+Information compliance and security teams can use these tools to proactively review activities performed by both end users and administrators across services. Automatic alerts can be configured to send email notifications when certain activities occur on specific site collections - for example when content is shared from sites known to contain GDPR-related information. This allows those teams to follow up with users to ensure that corporate security policies are followed, or to provide additional training.
 
-Los equipos de seguridad de información también pueden buscar en el registro de auditoría para investigar las posibles infracciones de datos y determinar la causa raíz y la extensión de la infracción. Esta función integrada facilita el cumplimiento de los artículos 33 y 34 del RGPD, que requieren que se proporcionen notificaciones a la autoridad de control del RGPD y a los propietarios de los datos sujetos a una infracción en un período de tiempo determinado. Las entradas del registro de auditoría solo se conservan durante 90 días en el servicio, por lo que a menudo se recomienda, y muchas organizaciones lo requieren, que estos registros se conserven durante largos períodos de tiempo.
+Information security teams can also search the audit log to investigate suspected data breaches and determine both root cause and the extent of the breach. This built-in capability facilitates compliance with article 33 and 34 of the GDPR, which require notifications be provided to the GDPR supervisory authority and to the data subjects themselves of a data breach within a specific time period. Audit log entries are only retained for 90 days within the service - it is often recommended and many organizations required that these logs be retained for longer periods of time.
 
-Existen soluciones que se adhieren a los Registros de auditoría unificados mediante la API de actividad de administración de Microsoft y pueden almacenar entradas de registro según sea necesario, y proporcionar paneles avanzados y alertas. Un ejemplo es el [Microsoft Operations Management Suite (OMS)](/azure/operations-management-suite/oms-solution-office-365).
+Solutions are available that subscribe to the Unified Audit Logs through the Microsoft Management Activity API and can both store log entries as needed, and provide advanced dashboards and alerts. One example is [Microsoft Operations Management Suite (OMS)](/azure/operations-management-suite/oms-solution-office-365).
 
 Más información sobre las directivas de alerta y buscar en el registro de auditoría:
 
@@ -89,9 +89,9 @@ Más información sobre las directivas de alerta y buscar en el registro de audi
 
 Microsoft Defender for Cloud Apps le ayuda a descubrir otras aplicaciones SaaS en uso en las redes y los datos confidenciales que se envían a estas aplicaciones y desde las mismas.
 
-Microsoft Defender for Cloud Apps es un servicio completo que proporciona mayor visibilidad, controles pormenorizados y protección contra amenazas mejorada para las aplicaciones en la nube. Identifica más de 15 000 aplicaciones en la nube en la red de todos los dispositivos, y le proporciona puntuación de riesgo y análisis y evaluación continuos de riesgos. No se requieren agentes: la información se recopila de los firewalls y servidores proxy para proporcionarle visibilidad completa y un contexto de uso en la nube y shadow IT.
+Microsoft Defender for Cloud Apps is a comprehensive service providing deep visibility, granular controls, and enhanced threat protection for your cloud apps. It identifies more than 15,000 cloud applications in your network-from all devices-and provides risk scoring and ongoing risk assessment and analytics. No agents required: information is collected from your firewalls and proxies to give you complete visibility and context for cloud usage and shadow IT.
 
-Para entender mejor su entorno de nube, la característica de investigación de Defender for Cloud Apps proporciona visibilidad detallada de todas las actividades, archivos y cuentas para las aplicaciones administradas y autorizadas. Puede obtener información detallada a nivel del archivo y descubrir a dónde se transfieren los datos en las aplicaciones en la nube.
+To better understand your cloud environment, the Defender for Cloud Apps investigate feature provides deep visibility into all activities, files, and accounts for sanctioned and managed apps. You can gain detailed information on a file level and discover where data travels in the cloud apps.
 
 Para obtener ejemplos, la siguiente ilustración muestra dos directivas de Defender for Cloud Apps que pueden ayudarle con el RGPD.
 
@@ -99,7 +99,7 @@ Para obtener ejemplos, la siguiente ilustración muestra dos directivas de Defen
 
 Las primera directiva envía una alerta cuando se comparten archivos con un atributo DCP predefinido o una expresión personalizada que elija fuera de la organización desde las aplicaciones SaaS que elija.
 
-La segunda directiva bloquea las descargas de archivos en cualquier dispositivo no administrado. Usted elige los atributos de los archivos que se buscarán y las aplicaciones SaaS a las que desee que se aplique la directiva.
+The second policy blocks downloads of files to any unmanaged device. You choose the attributes within the files to look for and the SaaS apps you want the policy to apply to.
 
 Estos tipos de atributos estarán disponibles próximamente en Defender for Cloud Apps:
 
@@ -108,10 +108,10 @@ Estos tipos de atributos estarán disponibles próximamente en Defender for Clou
 
 ### <a name="defender-for-cloud-apps-dashboard"></a>Panel de Microsoft Defender for Cloud Apps
 
-Si todavía no ha empezado a utilizar Defender for Cloud Apps, empiece por iniciarlo. Para acceder a Defender for Cloud Apps: <https://portal.cloudappsecurity.com>.
+If you haven't yet started to use Defender for Cloud Apps, begin by starting it up. To access Defender for Cloud Apps: <https://portal.cloudappsecurity.com>.
 
 > [!NOTE]
-> No olvide habilitar "Analizar automáticamente archivos de etiquetas de clasificación de Azure Information Protection" (en la configuración General) al comenzar a usar Defender for Cloud Apps o antes de asignar etiquetas. Tras la configuración, Defender for Cloud Apps no vuelve a examinar los archivos existentes hasta que se modifican.
+> Be sure to enable 'Automatically scan files for Azure Information Protection classification labels' (in General settings) when getting started with Defender for Cloud Apps or before you assign labels. After setup, Defender for Cloud Apps does not scan existing files again until they are modified.
 
 :::image type="content" source="../../media/Monitor-for-leaks-of-personal-data-image4.png" alt-text="Panel que muestra información sobre las alertas" lightbox="../../media/Monitor-for-leaks-of-personal-data-image4.png":::
 

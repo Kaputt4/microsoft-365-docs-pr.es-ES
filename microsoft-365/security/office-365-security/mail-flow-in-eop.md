@@ -15,13 +15,14 @@ ms.custom:
 description: Administración puede obtener información sobre las opciones para configurar el flujo de correo y el enrutamiento en Exchange Online Protection (EOP).
 ms.subservice: mdo
 ms.service: microsoft-365-security
-ms.collection: M365-security-compliance
-ms.openlocfilehash: 15a0bf969a1b1c8254845be3c4c06eb556366bf1
-ms.sourcegitcommit: 2b89bcff547e00be3d38dc8d1e6cbcf8f41eba42
+ms.collection: m365-security
+search.appverid: met150
+ms.openlocfilehash: e95a0afe2cafdcf26c1adf51fb96922eba7250ff
+ms.sourcegitcommit: 12af9e8e3a6eaa090fda9e98ccb831dff65863a4
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/03/2022
-ms.locfileid: "67597876"
+ms.lasthandoff: 09/27/2022
+ms.locfileid: "68091947"
 ---
 # <a name="mail-flow-in-eop"></a>Flujo de correo en EOP
 
@@ -52,6 +53,6 @@ En entornos híbridos donde EOP protege los buzones de Exchange locales, debe co
 
 ## <a name="verify-mail-flow"></a>Comprobar el flujo de correo
 
-Para comprobar que la configuración de EOP, incluida la configuración de conectores, esté funcionando correctamente, consulte la sección "¿Cómo sabe si esta tarea se ha completado correctamente?" en [Configurar un servicio de EOP](/exchange/standalone-eop/set-up-your-eop-service).
+To verify that your EOP setup, including your connector configuration, is working correctly, see the "How do you know this task worked?" section in [Set up your EOP service](/exchange/standalone-eop/set-up-your-eop-service).
 
 [Probar el flujo de correo mediante la validación de los conectores de Microsoft 365](/exchange/mail-flow-best-practices/test-mail-flow) proporciona instrucciones para probar que el flujo de correo está configurado correctamente.

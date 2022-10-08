@@ -5,9 +5,10 @@ author: sarahwxy
 manager: scotv
 audience: Admin
 ms.topic: article
-ms.service: o365-administration
+ms.service: microsoft-365-business
 ms.localizationpriority: medium
 ms.collection:
+- scotvorg
 - M365-subscription-management
 - Adm_O365
 - Adm_NonTOC
@@ -18,12 +19,12 @@ search.appverid:
 - MOE150
 - GEA150
 description: Obtenga información sobre cómo obtener un informe de uso del explorador microsoft mediante el panel Informes de Microsoft 365 en el Centro de administración de Microsoft 365.
-ms.openlocfilehash: 2444a93a1a68cd994da19325a8a00af868b6ba16
-ms.sourcegitcommit: d09eb780dc41a01796eb8137fbe9267231af6746
+ms.openlocfilehash: 4807fe7a86b62460bb5506ef096d6574a57b12ad
+ms.sourcegitcommit: 0b7070ec119e00e0dafe030bbfbef0ae5c9afa19
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/19/2022
-ms.locfileid: "67386525"
+ms.lasthandoff: 09/29/2022
+ms.locfileid: "68172145"
 ---
 # <a name="microsoft-365-reports-in-the-admin-center---microsoft-browser-usage"></a>Informes de Microsoft 365 en el Centro de administración: uso del explorador microsoft
 

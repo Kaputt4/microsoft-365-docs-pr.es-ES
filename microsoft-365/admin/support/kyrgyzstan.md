@@ -7,17 +7,19 @@ ms.author: cmcatee
 manager: scotv
 audience: Admin
 ms.topic: reference
-ms.service: o365-administration
-ms.collection: Adm_Support
+ms.service: microsoft-365-business
+ms.collection:
+- scotvorg
+- Adm_Support
 ms.localizationpriority: medium
 description: Obtenga información acerca de cómo ponerse en contacto con el soporte técnico de su país o región.
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: f255e9c1bc6a194ae5ad58fda55bbf6db755f843
-ms.sourcegitcommit: 0ee2dabe402d44fecb6856af98a2ef7720d25189
+ms.openlocfilehash: eca8137ba89626e58c42449143dc06b10154d457
+ms.sourcegitcommit: 0b7070ec119e00e0dafe030bbfbef0ae5c9afa19
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/09/2021
-ms.locfileid: "61374453"
+ms.lasthandoff: 09/29/2022
+ms.locfileid: "68196653"
 ---
 # <a name="contact-support-for-kyrgyzstan"></a>Póngase en contacto con el soporte técnico de Kirguistán
 
@@ -31,7 +33,7 @@ ms.locfileid: "61374453"
 
 Ruso: Mon-Fri 10 AM-7 PM Moscú
 
-Inglés: Mon-Fri 9 AM-5 PM London
+Inglés: Mon-Fri 9 AM-5 PM Londres
 
 ### <a name="technical-support"></a>Soporte técnico:
 

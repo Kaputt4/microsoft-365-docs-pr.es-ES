@@ -15,19 +15,19 @@ search.appverid:
 - MET150
 ms.assetid: 4c234874-015e-4768-8495-98fcccfc639b
 ms.collection:
-- M365-security-compliance
+- m365-security
 - m365initiative-defender-office365
 ms.custom:
 - seo-marvel-apr2020
 description: Los administradores pueden obtener información sobre la cuarentena en Exchange Online Protection (EOP) que contiene mensajes potencialmente peligrosos o no deseados.
 ms.subservice: mdo
 ms.service: microsoft-365-security
-ms.openlocfilehash: fde70d38090b3069c404d904b10a16bf056f67a0
-ms.sourcegitcommit: 651610ca73bfd1d008d97311b59782790df664fb
+ms.openlocfilehash: 000b6d37dea1280371bef2a2e32e9c2b5e61383c
+ms.sourcegitcommit: 12af9e8e3a6eaa090fda9e98ccb831dff65863a4
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/07/2022
-ms.locfileid: "67612733"
+ms.lasthandoff: 09/27/2022
+ms.locfileid: "68091749"
 ---
 # <a name="quarantined-email-messages-in-eop-and-defender-for-office-365"></a>Mensajes de correo electrónico en cuarentena en EOP y Defender para Office 365
 
@@ -61,7 +61,7 @@ Tanto los usuarios como los administradores pueden trabajar con mensajes en cuar
   |Motivo de la cuarentena:|Período de retención predeterminado|¿Personalizable?|Comentarios|
   |---|---|:---:|---|
   |Mensajes en cuarentena por directivas antispam: correo no deseado, spam de alta confianza, suplantación de identidad (phishing), suplantación de identidad (phishing) de alta confianza o de forma masiva.|15 días: <ul><li>En la directiva de antispam predeterminada.</li><li>En las directivas contra correo no deseado que se crean en PowerShell.</li></ul> <p> 30 días en las directivas contra correo no deseado que cree en el portal de Microsoft 365 Defender.|Yes|Puede configurar (inferior) este valor en las directivas contra correo no deseado. Para obtener más información, consulte la configuración **Retener correo no deseado en cuarentena para estos muchos días** (_QuarantineRetentionPeriod_) en [Configurar directivas de antispam](configure-your-spam-filter-policies.md).|
-  |Mensajes en cuarentena por directivas anti phishing: inteligencia de suplantación de identidad en EOP; suplantación de usuario, suplantación de dominio o inteligencia de buzón de correo en Defender para Office 365.|30 días|Yes|Este período de retención también se controla mediante la configuración **Retener correo no deseado en cuarentena durante estos muchos días** (_QuarantineRetentionPeriod_) en las **directivas de antispam** . El período de retención que se usa es el valor de la primera directiva **antispam** coincidente en la que se define el destinatario.|
+  |Mensajes en cuarentena por directivas anti phishing: inteligencia de suplantación de identidad en EOP; suplantación de usuario, suplantación de dominio o inteligencia de buzón de correo en Defender para Office 365.|30 días|Sí|Este período de retención también se controla mediante la configuración **Retener correo no deseado en cuarentena durante estos muchos días** (_QuarantineRetentionPeriod_) en las **directivas de antispam** . El período de retención que se usa es el valor de la primera directiva **antispam** coincidente en la que se define el destinatario.|
   |Mensajes en cuarentena por directivas antimalware (mensajes de malware).|30 días|No||
   |Mensajes en cuarentena por directivas de datos adjuntos seguros en Defender para Office 365 (mensajes de malware).|30 días|No||
   |Mensajes en cuarentena por reglas de flujo de correo: la acción es **Entregar el mensaje a la cuarentena hospedada** (_cuarentena_).|30 días|No||

@@ -6,21 +6,23 @@ ms.service: microsoft-365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
-ms.author: dansimp
-author: dansimp
+ms.author: siosulli
+author: siosulli
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
-ms.collection: M365-security-compliance
+ms.collection:
+- m365-security
+- tier2
 ms.topic: article
 ms.subservice: mde
 search.appverid: met150
-ms.openlocfilehash: 1ce8e10269e90c7b48a541e806847cc5f896e971
-ms.sourcegitcommit: 9b133379196da2b3a4bb311b07ff274f43780f68
+ms.openlocfilehash: eced2495ce75faa78fd7923b871b3a3b00f5fc3a
+ms.sourcegitcommit: 0b7070ec119e00e0dafe030bbfbef0ae5c9afa19
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/14/2022
-ms.locfileid: "67695723"
+ms.lasthandoff: 09/29/2022
+ms.locfileid: "68172255"
 ---
 # <a name="get-devices-onboarded-to-microsoft-defender-for-endpoint"></a>Incorporación de dispositivos a Microsoft Defender para punto de conexión
 
@@ -65,7 +67,7 @@ En la tarjeta **Incorporación**, seleccione **Incorporar más dispositivos** pa
 *Microsoft Defender para punto de conexión página de cumplimiento de dispositivos en Intune administración de dispositivos*
 
 > [!TIP]
-> Como alternativa, puede navegar a la página Cumplimiento de incorporación de Defender para punto de conexión en [Microsoft Azure Portal](https://portal.azure.com/) desde **Todos los servicios > Intune > Cumplimiento de dispositivos > ATP de Microsoft Defender**.
+> Como alternativa, puede navegar a la página Cumplimiento de incorporación de Defender para punto de conexión en [Microsoft Azure Portal](https://portal.azure.com/) desde **Todos los servicios > Intune > Cumplimiento de dispositivos > Microsoft Defender ATP**.
 
 > [!NOTE]
 > Si desea ver los datos del dispositivo más actualizados, haga clic en **Lista de dispositivos sin sensor ATP**.

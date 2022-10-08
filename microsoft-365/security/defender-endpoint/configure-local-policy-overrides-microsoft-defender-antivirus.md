@@ -1,6 +1,6 @@
 ---
-title: Configuración de invalidaciones locales para la configuración del Antivirus de Microsoft Defender
-description: Habilite o deshabilite a los usuarios para que cambien localmente la configuración en el Antivirus de Microsoft Defender.
+title: Configuración de invalidaciones locales para Microsoft Defender configuración del Antivirus
+description: Habilite o deshabilite a los usuarios para que cambien localmente la configuración en Microsoft Defender Antivirus.
 keywords: invalidación local, directiva local, directiva de grupo, gpo, bloqueo, combinación, listas
 ms.service: microsoft-365-security
 ms.subservice: mde
@@ -15,16 +15,18 @@ ms.custom: nextgen
 ms.date: 08/02/2022
 ms.reviewer: ''
 manager: dansimp
-ms.collection: M365-security-compliance
+ms.collection:
+- m365-security
+- tier2
 search.appverid: met150
-ms.openlocfilehash: 8e6ad128b16ba548672b805bef1db06a9891e9db
-ms.sourcegitcommit: 9b133379196da2b3a4bb311b07ff274f43780f68
+ms.openlocfilehash: 5d1857105c8043a38b486f435506a4dca017fee4
+ms.sourcegitcommit: 0b7070ec119e00e0dafe030bbfbef0ae5c9afa19
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/14/2022
-ms.locfileid: "67701860"
+ms.lasthandoff: 09/29/2022
+ms.locfileid: "68172233"
 ---
-# <a name="prevent-or-allow-users-to-locally-modify-microsoft-defender-antivirus-policy-settings"></a>Impedir o permitir que los usuarios modifiquen localmente la configuración de la directiva del Antivirus de Microsoft Defender
+# <a name="prevent-or-allow-users-to-locally-modify-microsoft-defender-antivirus-policy-settings"></a>Impedir o permitir que los usuarios modifiquen localmente Microsoft Defender configuración de directivas antivirus
 
 
 **Se aplica a:**
@@ -36,9 +38,9 @@ ms.locfileid: "67701860"
 **Plataformas**
 - Windows
 
-De forma predeterminada, la configuración del Antivirus de Microsoft Defender que se implementa a través de un objeto directiva de grupo en los puntos de conexión de la red impedirá que los usuarios cambien localmente la configuración. Puede cambiar esta configuración en algunos casos. Por ejemplo, podría ser necesario permitir que determinados grupos de usuarios, como investigadores de seguridad e investigadores de amenazas, tengan un mayor control sobre la configuración individual en los puntos de conexión que usan.
+De forma predeterminada, Microsoft Defender configuración de Antivirus que se implementa a través de un objeto directiva de grupo en los puntos de conexión de la red impedirá que los usuarios cambien localmente la configuración. Puede cambiar esta configuración en algunos casos. Por ejemplo, podría ser necesario permitir que determinados grupos de usuarios, como investigadores de seguridad e investigadores de amenazas, tengan un mayor control sobre la configuración individual en los puntos de conexión que usan.
 
-## <a name="configure-local-overrides-for-microsoft-defender-antivirus-settings"></a>Configuración de invalidaciones locales para la configuración del Antivirus de Microsoft Defender
+## <a name="configure-local-overrides-for-microsoft-defender-antivirus-settings"></a>Configuración de invalidaciones locales para Microsoft Defender configuración del Antivirus
 
 La configuración predeterminada para estas directivas de invalidación local es **Deshabilitado**.
 
@@ -52,7 +54,7 @@ Para configurar estas opciones:
 
 2. En el **Editor de administración de directiva de grupo**, vaya a **Configuración del equipo** y seleccione **Plantillas administrativas**.
 
-3. Expanda el árbol a **componentes** >  de Windows **Antivirus de Microsoft Defender** y, a continuación, la **ubicación** especificada en la [sección tabla de configuración](#table-of-settings) (en este artículo).
+3. Expanda el árbol a **componentes** >  de Windows **Microsoft Defender Antivirus** y, a continuación, la **ubicación** especificada en la [sección tabla de configuración](#table-of-settings) (en este artículo).
 
 4. Haga doble clic en la **configuración de** directiva como se especifica en la tabla siguiente y establezca la opción en la configuración deseada. Seleccione **Aceptar** y repita para cualquier otra configuración.
 
@@ -64,11 +66,11 @@ Para configurar estas opciones:
 |---|---|---|---|
 | MAPAS |Configuración de la invalidación de configuración local para informar a Microsoft MAPS|[Habilitar la protección proporcionada en la nube](enable-cloud-protection-microsoft-defender-antivirus.md) |
 | Quarantine|Configuración de la invalidación de configuración local para la eliminación de elementos de la carpeta Cuarentena|[Configuración de la corrección de exámenes](configure-remediation-microsoft-defender-antivirus.md) |
-| Protección en tiempo real|Configuración de la invalidación de configuración local para supervisar la actividad de archivos y programas en el equipo|[Habilitación y configuración de la protección y supervisión always-on del Antivirus de Microsoft Defender](configure-real-time-protection-microsoft-defender-antivirus.md) |
-| Protección en tiempo real|Configuración de la invalidación de configuración local para la supervisión de la actividad de archivo entrante y saliente | [Habilitación y configuración de la protección y supervisión always-on del Antivirus de Microsoft Defender](configure-real-time-protection-microsoft-defender-antivirus.md) |
-| Protección en tiempo real|Configuración de la invalidación de configuración local para examinar todos los archivos y datos adjuntos descargados|[Habilitación y configuración de la protección y supervisión always-on del Antivirus de Microsoft Defender](configure-real-time-protection-microsoft-defender-antivirus.md) |
-| Protección en tiempo real|Configuración de la invalidación de configuración local para activar la supervisión del comportamiento|[Habilitación y configuración de la protección y supervisión always-on del Antivirus de Microsoft Defender](configure-real-time-protection-microsoft-defender-antivirus.md) |
-| Protección en tiempo real|Configuración de la invalidación de configuración local para activar la protección en tiempo real|[Habilitación y configuración de la protección y supervisión always-on del Antivirus de Microsoft Defender](configure-real-time-protection-microsoft-defender-antivirus.md) |
+| Protección en tiempo real|Configuración de la invalidación de configuración local para supervisar la actividad de archivos y programas en el equipo|[Habilitación y configuración de Microsoft Defender protección y supervisión always-on del Antivirus](configure-real-time-protection-microsoft-defender-antivirus.md) |
+| Protección en tiempo real|Configuración de la invalidación de configuración local para la supervisión de la actividad de archivo entrante y saliente | [Habilitación y configuración de Microsoft Defender protección y supervisión always-on del Antivirus](configure-real-time-protection-microsoft-defender-antivirus.md) |
+| Protección en tiempo real|Configuración de la invalidación de configuración local para examinar todos los archivos y datos adjuntos descargados|[Habilitación y configuración de Microsoft Defender protección y supervisión always-on del Antivirus](configure-real-time-protection-microsoft-defender-antivirus.md) |
+| Protección en tiempo real|Configuración de la invalidación de configuración local para activar la supervisión del comportamiento|[Habilitación y configuración de Microsoft Defender protección y supervisión always-on del Antivirus](configure-real-time-protection-microsoft-defender-antivirus.md) |
+| Protección en tiempo real|Configuración de la invalidación de configuración local para activar la protección en tiempo real|[Habilitación y configuración de Microsoft Defender protección y supervisión always-on del Antivirus](configure-real-time-protection-microsoft-defender-antivirus.md) |
 | Remediación|Configuración de la invalidación de configuración local para la hora del día para ejecutar un examen completo programado para completar la corrección|[Configuración de la corrección de exámenes](configure-remediation-microsoft-defender-antivirus.md) |
 | Examinar|Configuración de la invalidación de configuración local para el porcentaje máximo de uso de CPU|[Configuración y ejecución de exámenes](run-scan-microsoft-defender-antivirus.md) |
 | Examinar|Configuración de la invalidación de configuración local para el día del examen de programación|[Configuración de exámenes programados](scheduled-catch-up-scans-microsoft-defender-antivirus.md) |
@@ -90,7 +92,7 @@ De forma predeterminada, las listas que se han configurado en la directiva de gr
 
 2. En el **Editor de administración de directiva de grupo**, vaya a **Configuración del equipo** y seleccione **Plantillas administrativas**.
 
-3. Expanda el árbol a **componentes** >  de Windows **Antivirus de Microsoft Defender**.
+3. Expanda el árbol a **componentes** >  **de Windows Microsoft Defender Antivirus**.
 
 4. Haga doble clic en **Configurar el comportamiento de combinación de administrador local para listas** y establezca la opción **en Deshabilitado**. A continuación, seleccione **Aceptar**.
 
@@ -98,7 +100,7 @@ De forma predeterminada, las listas que se han configurado en la directiva de gr
 
 1. En el [Centro de administración de Microsoft Endpoint Manager](https://endpoint.microsoft.com), seleccione **Antivirus** **de seguridad** >  de puntos de conexión.
 
-2. Elija **Crear directiva** o modifique una directiva existente de Antivirus de Microsoft Defender.
+2. Elija **Crear directiva** o modifique una directiva de antivirus de Microsoft Defender existente.
 
 3. En **Configuración**, seleccione la lista desplegable situada junto a **Deshabilitar combinación de Administración local** y seleccione **Deshabilitar combinación local Administración**.
 
@@ -119,4 +121,4 @@ De forma predeterminada, las listas que se han configurado en la directiva de gr
 
 - [Microsoft Endpoint Manager](/mem/endpoint-manager-overview)
 - [Antivirus de Microsoft Defender en Windows](microsoft-defender-antivirus-in-windows-10.md)
-- [Configuración de la interacción del usuario final con el Antivirus de Microsoft Defender](configure-end-user-interaction-microsoft-defender-antivirus.md)
+- [Configuración de la interacción del usuario final con Microsoft Defender Antivirus](configure-end-user-interaction-microsoft-defender-antivirus.md)

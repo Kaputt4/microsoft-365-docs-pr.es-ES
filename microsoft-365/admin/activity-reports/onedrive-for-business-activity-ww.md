@@ -2,14 +2,15 @@
 title: Informes de actividad OneDrive para la Empresa de Microsoft 365
 f1.keywords:
 - NOCSH
-ms.author: kwekua
-author: kwekua
+ms.author: camillepack
+author: camillepack
 manager: scotv
 audience: Admin
 ms.topic: article
-ms.service: o365-administration
+ms.service: microsoft-365-business
 ms.localizationpriority: medium
 ms.collection:
+- scotvorg
 - M365-subscription-management
 - Adm_O365
 - Adm_NonTOC
@@ -20,18 +21,18 @@ search.appverid:
 - MET150
 - MOE150
 description: Obtenga el informe de uso de OneDrive para su organización y descubra la actividad de cada usuario de OneDrive, el número de archivos compartidos y el uso del almacenamiento.
-ms.openlocfilehash: 02290333af41ee5e5773c0979fef1c282f2e0e21
-ms.sourcegitcommit: 5014666778b2d48912c68c2e06992cdb43cfaee3
+ms.openlocfilehash: 840e7ea1aec87273940294aaf30c362f1a80dd83
+ms.sourcegitcommit: 0b7070ec119e00e0dafe030bbfbef0ae5c9afa19
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/07/2022
-ms.locfileid: "66662644"
+ms.lasthandoff: 09/29/2022
+ms.locfileid: "68196961"
 ---
 # <a name="microsoft-365-reports-in-the-admin-center---onedrive-for-business-activity"></a>Informes de Microsoft 365 en el Centro de administración: actividad de OneDrive para la Empresa
 
 En el panel Informes de Microsoft 365 se muestra la información general sobre la actividad en los productos de su organización. Le permite explorar informes individuales de nivel de producto para proporcionarle más información pormenorizada acerca de las actividades dentro de cada producto. Consulte [el tema de información general de los informes](activity-reports.md).
   
-Por ejemplo, podrá comprender la actividad de cada usuario con licencia para usar OneDrive consultando su interacción con los archivos en OneDrive. También le ayuda a entender el nivel de colaboración actual observando el número de archivos compartidos.
+For example, you can understand the activity of every user licensed to use OneDrive by looking at their interaction with files on OneDrive. It also helps you to understand the level of collaboration going on by looking at the number of files shared.
 
 ## <a name="how-do-i-get-to-the-onedrive-activity-report"></a>¿Cómo puedo tener acceso al informe de actividades de OneDrive?
 
@@ -48,7 +49,7 @@ También puede exportar los datos del informe a un archivo de excel .csv selecci
 
 Puede visualizar el informe de **actividad de OneDrive para la Empresa** para ver las tendencias de los últimos 7, 30, 90 o 180 días. Sin embargo, si selecciona un día determinado en el informe, la tabla mostrará los datos durante un máximo de 28 días a partir de la fecha actual (no la fecha en que se generó el informe).
   
-|Item|Descripción|
+|Elemento|Descripción|
 |:-----|:-----|
 |**Métrica**|**Definición**|
 |Nombre de usuario  <br/> |Nombre de usuario del propietario de la cuenta de OneDrive.  <br/> |

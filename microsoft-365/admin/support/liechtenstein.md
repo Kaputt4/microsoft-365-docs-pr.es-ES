@@ -7,17 +7,19 @@ ms.author: cmcatee
 manager: scotv
 audience: Admin
 ms.topic: reference
-ms.service: o365-administration
-ms.collection: Adm_Support
+ms.service: microsoft-365-business
+ms.collection:
+- scotvorg
+- Adm_Support
 ms.localizationpriority: medium
 description: Obtenga información acerca de cómo ponerse en contacto con el soporte técnico de su país o región.
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: 2f086f8a04514feadfd2dd47af7cbafe15cd07bf
-ms.sourcegitcommit: 0ee2dabe402d44fecb6856af98a2ef7720d25189
+ms.openlocfilehash: 3aed4a44aa2a629d872a37c2cecdb75970ebf6e2
+ms.sourcegitcommit: 0b7070ec119e00e0dafe030bbfbef0ae5c9afa19
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/09/2021
-ms.locfileid: "61374801"
+ms.lasthandoff: 09/29/2022
+ms.locfileid: "68196543"
 ---
 # <a name="contact-support-for-liechtenstein"></a>Póngase en contacto con el soporte técnico de Liechtenstein
 
@@ -35,10 +37,10 @@ Inglés: lunes a viernes de 9:00 a 17:00
 
 ### <a name="technical-support"></a>Soporte técnico:
 
-Alemán: Mon-Fri 8 AM-9 PM
+Alemán: Mon-Fri de 8:00 a.m. a 9 p. m.
 
 Inglés: 24 horas al día, 7 días a la semana
 
-Número Teléfono alternativa: +41 22 76 141 14
+Número de teléfono alternativo: +41 22 76 141 14
 
 Se aplican tarifas de llamada local

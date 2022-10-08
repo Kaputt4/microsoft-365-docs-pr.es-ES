@@ -1,5 +1,5 @@
 ---
-title: 'Paso 5: Implementar servicios y aplicaciones de productividad para los trabajadores híbridos'
+title: Step 5. Deploy hybrid worker productivity apps and services
 f1.keywords:
 - NOCSH
 author: dansimp
@@ -7,7 +7,7 @@ ms.author: dansimp
 manager: dansimp
 audience: ITPro
 ms.topic: article
-ms.service: microsoft-365-enterprise
+ms.service: o365-solutions
 ms.localizationpriority: high
 ms.collection:
 - highpri
@@ -17,15 +17,15 @@ ms.collection:
 - m365solution-remotework
 - m365solution-scenario
 ms.custom: ''
-description: Puede hacer que los usuarios sean más productivos utilizando Teams, Exchange, SharePoint y otros servicios de Microsoft 365.
-ms.openlocfilehash: 315058c31b221411ba8df81041e6dc4178128cb0
-ms.sourcegitcommit: 0af064e8b6778060f1bd365378d69b16fc9949b5
+description: Facilite a los usuarios ser productivos con Teams, Exchange, SharePoint y otros servicios de Microsoft 365.
+ms.openlocfilehash: b79e5c19b6f5176d1d079da5438846ccec19c19a
+ms.sourcegitcommit: fce27da5140691b013a6f7c0ea9c88b4ea4b7c10
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/15/2022
-ms.locfileid: "67728546"
+ms.lasthandoff: 09/23/2022
+ms.locfileid: "67986980"
 ---
-# <a name="step-5-deploy-hybrid-worker-productivity-apps-and-services"></a>Paso 5: Implementar servicios y aplicaciones de productividad para los trabajadores híbridos
+# <a name="step-5-deploy-hybrid-worker-productivity-apps-and-services"></a>Paso 5. Implementar aplicaciones y servicios de productividad para trabajadores híbridos
 
 Para tener productividad, los usuarios deben comunicarse y colaborar entre sí. Necesitan reunirse y charlar con voz y texto, crear contenidos nuevos y compartir información y archivos, intercambiar correos electrónicos y administrar calendarios y tareas. Microsoft 365 proporciona servicios basados en la nube para todas estas funciones clave:
 

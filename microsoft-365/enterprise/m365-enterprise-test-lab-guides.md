@@ -11,6 +11,7 @@ ms.topic: landing-page
 ms.service: microsoft-365-enterprise
 ms.localizationpriority: medium
 ms.collection:
+- scotvorg
 - M365-subscription-management
 - Strat_O365_Enterprise
 ms.custom:
@@ -18,18 +19,18 @@ ms.custom:
 - seo-marvel-apr2020
 ms.assetid: 706d5449-45e5-4b0c-a012-ab60501899ad
 description: Utilice estas guías de laboratorio de pruebas para configurar una demostración, prueba de concepto o entornos de desarrollo/prueba en Microsoft 365 para empresas.
-ms.openlocfilehash: 8c0d66e0a3ee2cfee3d387d2aa233e0d6a6d40c6
-ms.sourcegitcommit: 62368e5a48e569c8e475b07d194d7d8ff7d167ab
+ms.openlocfilehash: 3463ab0fd1506578a7ae67a2d435524ea7e68295
+ms.sourcegitcommit: 0b7070ec119e00e0dafe030bbfbef0ae5c9afa19
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/02/2022
-ms.locfileid: "67560293"
+ms.lasthandoff: 09/29/2022
+ms.locfileid: "68172695"
 ---
 # <a name="microsoft-365-for-enterprise-test-lab-guides"></a>Guías de laboratorio para pruebas de Microsoft 365 para empresas
 
 *Esto se aplica tanto a Microsoft 365 para empresas como a Office 365 Enterprise.*
 
-Las Guías del laboratorio de pruebas (TLG) le ayudan a obtener información rápidamente sobre productos de Microsoft. Proporcionan instrucciones prescriptivas para configurar entornos de pruebas representativos pero simplificados. Puede usar estos entornos para la demostración, la personalización o la creación de pruebas de concepto complejas durante el tiempo que dure una suscripción de prueba o de pago.
+Test Lab Guides (TLGs) help you quickly learn about Microsoft products. They provide prescriptive instructions to configure simplified but representative test environments. You can use these environments for demonstration, customization, or creation of complex proofs of concept for the duration of a trial or paid subscription.
 
 Los TLG están diseñados para ser modulares. Se basan entre sí para crear varias configuraciones que coincidan más estrechamente con sus necesidades de aprendizaje o configuración de prueba. La experiencia práctica "Lo he creado yo mismo y funciona" le ayuda a comprender los requisitos de implementación de un nuevo producto o escenario, de modo que pueda planear mejor su hospedaje en producción.
 

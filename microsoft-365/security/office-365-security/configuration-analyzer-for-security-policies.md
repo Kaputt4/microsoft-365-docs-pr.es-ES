@@ -14,17 +14,17 @@ search.appverid:
 - MET150
 ms.assetid: ''
 ms.collection:
-- M365-security-compliance
+- m365-security
 ms.custom: ''
 description: Los administradores pueden aprender a usar el analizador de configuración para buscar y corregir directivas de seguridad que están por debajo de la configuración de Protección estándar y Protección estricta en directivas de seguridad preestablecidas.
 ms.subservice: mdo
 ms.service: microsoft-365-security
-ms.openlocfilehash: b5f33bb7b30f63ad5d6705b7a9cbffb38f280a2c
-ms.sourcegitcommit: 10e6abe740e27000e223378eb17d657a47555fa8
+ms.openlocfilehash: 1d53ee6b0eb163be2552eee42ed4851520b62f98
+ms.sourcegitcommit: 12af9e8e3a6eaa090fda9e98ccb831dff65863a4
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/31/2022
-ms.locfileid: "67479167"
+ms.lasthandoff: 09/27/2022
+ms.locfileid: "68069103"
 ---
 # <a name="configuration-analyzer-for-protection-policies-in-eop-and-microsoft-defender-for-office-365"></a>Analizador de configuración para directivas de protección en EOP y Microsoft Defender para Office 365
 

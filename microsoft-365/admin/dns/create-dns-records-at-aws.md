@@ -7,9 +7,10 @@ author: efrene
 manager: scotv
 audience: Admin
 ms.topic: article
-ms.service: o365-administration
+ms.service: microsoft-365-business
 ms.localizationpriority: medium
 ms.collection:
+- scotvorg
 - M365-subscription-management
 - Adm_O365
 - Adm_NonTOC
@@ -21,12 +22,12 @@ search.appverid:
 - MOE150
 ms.assetid: 7a2efd75-0771-4897-ba7b-082fe5bfa9da
 description: Aprenda a comprobar su dominio y a configurar registros DNS para correo electrónico, Skype Empresarial Online y otros servicios en Amazon Web Services (AWS) para Microsoft.
-ms.openlocfilehash: 2f14bb3234ca48f61cf3fabc0942d35f44b61b60
-ms.sourcegitcommit: 8cd230e243eba452b27f725d66152becb6aff49b
+ms.openlocfilehash: 7450eabe057eb5abea67d7902d494b0e40bebf6e
+ms.sourcegitcommit: 0b7070ec119e00e0dafe030bbfbef0ae5c9afa19
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/30/2022
-ms.locfileid: "66563261"
+ms.lasthandoff: 09/29/2022
+ms.locfileid: "68172079"
 ---
 # <a name="connect-your-dns-records-at-amazon-web-services-aws-to-microsoft-365"></a>Conexión de los registros DNS en Amazon Web Services (AWS) a Microsoft 365
 
@@ -41,12 +42,12 @@ Después de agregar estos registros a AWS, el dominio se configurará para traba
 
 ## <a name="add-a-txt-record-for-verification"></a>Agregar un registro TXT para verificación
 
-Antes de utilizar el dominio con Microsoft, tenemos que asegurarnos de que sea el propietario. Si puede iniciar sesión en la cuenta en el registrador de dominio y crear el registro DNS, Microsoft sabrá que es el propietario del dominio.
+Before you use your domain with Microsoft, we have to make sure that you own it. Your ability to log in to your account at your domain registrar and create the DNS record proves to Microsoft that you own the domain.
 
 > [!NOTE]
-> Este registro se usa exclusivamente para verificar si se es el propietario de un dominio; no afecta a nada más. Puede eliminarlo más adelante, si lo desea.
+> This record is used only to verify that you own your domain; it doesn't affect anything else. You can delete it later, if you like.
 
-1. Para empezar, vaya a su página de dominios en AWS a través de [este vínculo](https://console.aws.amazon.com/route53/home). Se le pedirá que inicie sesión primero.
+1. Para empezar, vaya a su página de dominios en AWS a través de [este vínculo](https://console.aws.amazon.com/route53/home). Se le pedirá que inicie sesión primero .
 
 1. En la página de aterrizaje, en **Dominios**, seleccione **Dominios registrados**.
 
@@ -104,7 +105,7 @@ Para comprobar el registro en Microsoft 365:
 
 ## <a name="add-an-mx-record-so-email-for-your-domain-will-come-to-microsoft-365"></a>Agregue un registro MX para que el correo electrónico de su dominio llegue a Microsoft 365.
 
-1. Para empezar, vaya a su página de dominios en AWS a través de [este vínculo](https://console.aws.amazon.com/route53/home). Se le pedirá que inicie sesión primero.
+1. Para empezar, vaya a su página de dominios en AWS a través de [este vínculo](https://console.aws.amazon.com/route53/home). Se le pedirá que inicie sesión primero .
 
 1. En la página de aterrizaje, en **Dominios**, seleccione **Dominios registrados**.
 
@@ -135,7 +136,7 @@ Para comprobar el registro en Microsoft 365:
 
     |Nombre del registro|Tipo de registro|Valor|TTL (Seconds)|Directiva de enrutamiento|
     |:-----|:-----|:-----|:-----|:-----|
-    |(Leave this field empty.)|MX: especifica los servidores de correo|0 *\<domain-key\>*.mail.protection.outlook.com. <br/> El 0 es el valor de prioridad MX. Agréguelo al principio del valor MX, separado del resto del valor por un espacio.  <br/> **Este valor DEBE terminar en punto (.).** <br/> **Nota:** Obtenga su \<*domain-key*\> de su cuenta de Microsoft 365. [¿Cómo puedo encontrar esto?](../get-help-with-domains/information-for-dns-records.md)|300|Enrutamiento simple|
+    |(Leave this field empty.)|MX: especifica los servidores de correo|0 *\<domain-key\>*.mail.protection.outlook.com. <br/> The 0 is the MX priority value. Add it to the beginning of the MX value, separated from the remainder of the value by a space. <br/> **Este valor DEBE terminar en punto (.)** <br/> **Nota:** Obtenga su \<*domain-key*\> de su cuenta de Microsoft 365. [¿Cómo puedo encontrar esto?](../get-help-with-domains/information-for-dns-records.md)|300|Enrutamiento simple|
 
 1. Seleccione **Crear registros**.
 
@@ -145,7 +146,7 @@ Para comprobar el registro en Microsoft 365:
 
 ## <a name="add-the-cname-record-required-for-microsoft-365"></a>Agregar el registro CNAME necesario para Microsoft 365
 
-1. Para empezar, vaya a su página de dominios en AWS a través de [este vínculo](https://console.aws.amazon.com/route53/home). Se le pedirá que inicie sesión primero.
+1. Para empezar, vaya a su página de dominios en AWS a través de [este vínculo](https://console.aws.amazon.com/route53/home). Se le pedirá que inicie sesión primero .
 
 1. En la página de aterrizaje, en **Dominios**, seleccione **Dominios registrados**.
 
@@ -184,7 +185,7 @@ Para comprobar el registro en Microsoft 365:
 > [!IMPORTANT]
 > No puede tener más de un registro TXT para el SPF de un dominio. Si su dominio tiene más de un registro de SPF, obtendrá errores de correo, así como problemas de clasificación de entrega y de correo no deseado. Si ya tiene un registro de SPF para su dominio, no cree uno nuevo para Microsoft. En su lugar, agregue los valores de Microsoft necesarios al registro actual para que tenga un *único* registro SPF que incluya ambos conjuntos de valores. ¿Necesita ejemplos? Consulte los [Registros externos del sistema de nombres de dominio para Microsoft](../../enterprise/external-domain-name-system-records.md). Para validar el registro SPF, puede usar una de estas[herramientas de validación de SPF](../setup/domains-faq.yml).
 
-1. Para empezar, vaya a su página de dominios en AWS a través de [este vínculo](https://console.aws.amazon.com/route53/home). Se le pedirá que inicie sesión primero.
+1. Para empezar, vaya a su página de dominios en AWS a través de [este vínculo](https://console.aws.amazon.com/route53/home). Se le pedirá que inicie sesión primero .
 
 1. En la página de aterrizaje, en **Dominios**, seleccione **Dominios registrados**.
 
@@ -212,7 +213,7 @@ Para comprobar el registro en Microsoft 365:
 
     |Tipo de registro|Valor|
     |:-----|:-----|
-    |TXT: se usa para comprobar los remitentes de correo electrónico y para los valores específicos de la aplicación|v=spf1 include:spf.protection.outlook.com -all <br/> (Las comillas necesarias por las instrucciones en pantalla aparecen automáticamente. No es necesario escribirlas manualmente).  <br/> **Nota:** recomendamos copiar y pegar esta entrada, para que todo el espacio sea correcto.|
+    |TXT: se usa para comprobar los remitentes de correo electrónico y para los valores específicos de la aplicación|v=spf1 include:spf.protection.outlook.com -all <br/> (Las comillas necesarias por las instrucciones en pantalla aparecen automáticamente. No es necesario escribirlas manualmente). <br/> **Nota:** recomendamos copiar y pegar esta entrada, para que todo el espacio sea correcto.|
 
 1. Seleccione **Crear registros**.
 
@@ -224,7 +225,7 @@ Solo seleccione esta opción si su organización usa Skype Empresarial para serv
 
 ### <a name="add-the-two-required-srv-records"></a>Agregar los dos registros SRV necesarios
 
-1. Para empezar, vaya a su página de dominios en AWS a través de [este vínculo](https://console.aws.amazon.com/route53/home). Se le pedirá que inicie sesión primero.
+1. Para empezar, vaya a su página de dominios en AWS a través de [este vínculo](https://console.aws.amazon.com/route53/home). Se le pedirá que inicie sesión primero .
 
 1. En la página de aterrizaje, en **Dominios**, seleccione **Dominios registrados**.
 
@@ -264,7 +265,7 @@ Solo seleccione esta opción si su organización usa Skype Empresarial para serv
 
 ### <a name="add-the-two-required-cname-records-for-skype-for-business"></a>Agregue los dos registros CNAME necesarios para Skype Empresarial
 
-1. Para empezar, vaya a su página de dominios en AWS a través de [este vínculo](https://console.aws.amazon.com/route53/home). Se le pedirá que inicie sesión primero.
+1. Para empezar, vaya a su página de dominios en AWS a través de [este vínculo](https://console.aws.amazon.com/route53/home). Se le pedirá que inicie sesión primero .
 
 1. En la página de aterrizaje, en **Dominios**, seleccione **Dominios registrados**.
 
@@ -302,7 +303,7 @@ Solo seleccione esta opción si su organización usa Skype Empresarial para serv
    :::image type="content" source="../../media/dns-aws/aws-domains-cname-create-records.png" alt-text="Seleccione Crear registros.":::
 
 > [!NOTE]
-> Por lo general, los cambios de DNS tardan unos 15 minutos en aplicarse. Sin embargo, a veces los cambios pueden necesitar más tiempo para aplicarse en todo el sistema DNS de Internet. Si tiene problemas con el flujo de correo u otros problemas después de agregar registros DNS, consulte [Solucionar problemas después de cambiar el nombre del dominio o los registros DNS](../get-help-with-domains/find-and-fix-issues.md).
+> Typically it takes about 15 minutes for DNS changes to take effect. However, it can occasionally take longer for a change you've made to update across the Internet's DNS system. If you're having trouble with mail flow or other issues after adding DNS records, see [Troubleshoot issues after changing your domain name or DNS records](../get-help-with-domains/find-and-fix-issues.md).
 
 ## <a name="advanced-option-intune-and-mobile-device-management-for-microsoft-365"></a>Opción avanzada: Intune y mobile Administración de dispositivos para Microsoft 365
 
@@ -310,7 +311,7 @@ Este servicio le ayuda a proteger y administrar de forma remota los dispositivos
 
 ### <a name="add-the-two-required-cname-records-for-mobile-device-management"></a>Agregue los dos registros CNAME necesarios para Mobile Administración de dispositivos
 
-1. Para empezar, vaya a su página de dominios en AWS a través de [este vínculo](https://console.aws.amazon.com/route53/home). Se le pedirá que inicie sesión primero.
+1. Para empezar, vaya a su página de dominios en AWS a través de [este vínculo](https://console.aws.amazon.com/route53/home). Se le pedirá que inicie sesión primero .
 
 1. En la página de aterrizaje, en **Dominios**, seleccione **Dominios registrados**.
 
@@ -348,4 +349,4 @@ Este servicio le ayuda a proteger y administrar de forma remota los dispositivos
    :::image type="content" source="../../media/dns-aws/aws-domains-cname-create-records.png" alt-text="Seleccione Crear registros.":::
 
 > [!NOTE]
-> Por lo general, los cambios de DNS tardan unos 15 minutos en aplicarse. Sin embargo, a veces los cambios pueden necesitar más tiempo para aplicarse en todo el sistema DNS de Internet. Si tiene problemas con el flujo de correo u otros problemas después de agregar registros DNS, consulte [Solucionar problemas después de cambiar el nombre del dominio o los registros DNS](../get-help-with-domains/find-and-fix-issues.md).
+> Typically it takes about 15 minutes for DNS changes to take effect. However, it can occasionally take longer for a change you've made to update across the Internet's DNS system. If you're having trouble with mail flow or other issues after adding DNS records, see [Troubleshoot issues after changing your domain name or DNS records](../get-help-with-domains/find-and-fix-issues.md).

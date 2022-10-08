@@ -13,16 +13,18 @@ author: mjcaparas
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
-ms.collection: m365-security-compliance
+ms.collection:
+- m365-security
+- tier2
 ms.topic: conceptual
 ms.subservice: mde
 search.appverid: met150
-ms.openlocfilehash: 225466eb1e022ebbea7602ed073ee4e201e65714
-ms.sourcegitcommit: c29af68260ba8676083674b3c70209bff2c2e362
+ms.openlocfilehash: 444f28eac9243aa5aca42b8584d910fbeed94971
+ms.sourcegitcommit: 0b7070ec119e00e0dafe030bbfbef0ae5c9afa19
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/16/2022
-ms.locfileid: "67742538"
+ms.lasthandoff: 09/29/2022
+ms.locfileid: "68168383"
 ---
 # <a name="data-collection-for-advanced-troubleshooting-on-windows"></a> Recopilación de datos para solucionar problemas avanzados en Windows
 
@@ -37,7 +39,7 @@ Ejecute '**MDEClientAnalyzer.cmd /?**' para ver la lista de parámetros disponib
 :::image type="content" source="images/d89a1c04cf8441e4df72005879871bd0.png" alt-text="Parámetros de MDEClientAnalyzer.cmd" lightbox="images/d89a1c04cf8441e4df72005879871bd0.png":::
 
 > [!NOTE]
-> Cuando se usa cualquier parámetro de solución de problemas avanzado, el analizador también llama a [MpCmdRun.exe](/microsoft-365/security/defender-endpoint/command-line-arguments-microsoft-defender-antivirus) para recopilar registros de soporte técnico relacionados con el Antivirus de Microsoft Defender.
+> Cuando se usa cualquier parámetro de solución de problemas avanzado, el analizador también llama a [MpCmdRun.exe](/microsoft-365/security/defender-endpoint/command-line-arguments-microsoft-defender-antivirus) para recopilar Microsoft Defender registros de soporte técnico relacionados con antivirus.
 
 **-h** : llama a [Windows Performance Recorder](/windows-hardware/test/wpt/wpr-command-line-options) para recopilar un seguimiento detallado del rendimiento general además del conjunto de registros estándar.
 
@@ -82,4 +84,4 @@ El analizador y todas las marcas de escenario anteriores se pueden iniciar de fo
 >
 >   - **-r** : indica que la herramienta se está ejecutando desde un contexto remoto (o no interactivo)
 >   - **-i** : marca de escenario para la recopilación de seguimiento de red junto con otros registros relacionados
->   - **-m** \# - El número de minutos que se van a ejecutar (5 minutos en el ejemplo anterior)
+>   - **-M** \# - El número de minutos que se van a ejecutar (5 minutos en el ejemplo anterior)

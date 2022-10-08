@@ -17,13 +17,14 @@ manager: dansimp
 audience: ITPro
 ms.collection:
 - M365-security-compliance
+- tier1
 ms.topic: conceptual
-ms.openlocfilehash: 09c07fe5947d370c6641fac7b589dc96974d7b7d
-ms.sourcegitcommit: 078149c9645ce220911ccd6ce54f984a4c92ce53
+ms.openlocfilehash: 77dd7dd7442e5e3bf585f9c6d52f194714a7d722
+ms.sourcegitcommit: 12af9e8e3a6eaa090fda9e98ccb831dff65863a4
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/20/2022
-ms.locfileid: "67811711"
+ms.lasthandoff: 09/27/2022
+ms.locfileid: "68069565"
 ---
 # <a name="whats-new-in-microsoft-365-defender"></a>Novedades de Microsoft 365 Defender
 
@@ -45,11 +46,11 @@ Para obtener más información sobre las novedades de otros productos de segurid
 También puede obtener actualizaciones de productos y notificaciones importantes a través del [centro de mensajes](https://admin.microsoft.com/Adminportal/Home#/MessageCenter).
 
 ## <a name="august-2022"></a>Agosto de 2022
-- (GA) [Expertos de Microsoft Defender para la búsqueda](defender-experts-for-hunting.md) ya está disponible con carácter general. Si es un cliente Microsoft 365 Defender con un sólido centro de operaciones de seguridad, pero quiere que Microsoft le ayude a buscar amenazas de forma proactiva entre puntos de conexión, Office 365, aplicaciones en la nube e identidad mediante datos de Microsoft Defender, obtenga más información sobre cómo aplicar, configurar y usar el servicio. Defender Experts for Hunting se vende por separado de otros productos Microsoft 365 Defender.
+- (GA) [Microsoft Defender Expertos en Caza](defender-experts-for-hunting.md) ya está disponible con carácter general. Si es un cliente Microsoft 365 Defender con un centro de operaciones de seguridad sólido, pero quiere que Microsoft le ayude a buscar amenazas de forma proactiva entre puntos de conexión, Office 365, aplicaciones en la nube e identidad mediante Microsoft Defender datos, obtenga más información sobre cómo aplicar, configurar y usar el servicio. Defender Experts for Hunting se vende por separado de otros productos Microsoft 365 Defender.
 - (versión preliminar) [El modo guiado](advanced-hunting-modes.md#get-started-with-guided-hunting-mode) ya está disponible para la versión preliminar pública en la búsqueda avanzada. Los analistas ahora pueden empezar a consultar su base de datos en busca de puntos de conexión, identidades, correo electrónico & colaboración y datos de aplicaciones en la nube *sin conocer Lenguaje de consulta Kusto (KQL).*  El modo guiado cuenta con un estilo de bloque de creación sencillo y fácil de usar de construir consultas a través de menús desplegables que contienen filtros y condiciones disponibles. Consulte [Introducción al generador de consultas](advanced-hunting-query-builder.md).
 
 ## <a name="july-2022"></a>Julio de 2022
-- (versión preliminar) Los participantes de la versión preliminar pública de Microsoft Defender Experts for Hunting ahora pueden esperar recibir informes mensuales para ayudarles a comprender las amenazas que el servicio de búsqueda anunció en su entorno, junto con las alertas generadas por sus productos de Microsoft 365 Defender. Para obtener más información, consulte [Descripción del informe de expertos de Defender para la búsqueda en Microsoft 365 Defender](defender-experts-report.md).
+- (versión preliminar) Microsoft Defender expertos para la búsqueda de participantes en la versión preliminar pública ahora pueden esperar recibir informes mensuales para ayudarles a comprender las amenazas que el servicio de búsqueda anunció en su entorno, junto con las alertas generadas por sus productos de Microsoft 365 Defender. Para obtener más información, consulte [Descripción del informe de expertos de Defender para la búsqueda en Microsoft 365 Defender](defender-experts-report.md).
 
 ## <a name="june-2022"></a>Junio de 2022
 - (versión preliminar) Las tablas [DeviceTvmInfoGathering](advanced-hunting-devicetvminfogathering-table.md) y [DeviceTvmInfoGatheringKB](advanced-hunting-devicetvminfogatheringkb-table.md) ya están disponibles en el esquema de búsqueda avanzada. Use estas tablas para buscar eventos de evaluación en Defender Vulnerability Management, incluido el estado de varias configuraciones y los estados de área expuesta a ataques de los dispositivos.
@@ -59,7 +60,7 @@ El equipo de operaciones de seguridad puede ver todas las acciones pendientes de
 
 
 ## <a name="may-2022"></a>Mayo de 2022
-- (versión preliminar) En línea con la expansión anunciada recientemente en una nueva categoría de servicio denominada [Expertos en seguridad de Microsoft](https://aka.ms/MicrosoftSecurityExperts), presentamos la disponibilidad de [expertos de Microsoft Defender para la búsqueda](defenderexpertsforhuntingprev.md) (expertos de Defender para la búsqueda) para la versión preliminar pública. Expertos de Defender para la búsqueda es para clientes que tienen un sólido centro de operaciones de seguridad, pero quieren que Microsoft les ayude a buscar amenazas de forma proactiva en los datos de Microsoft Defender, incluidos puntos de conexión, Office 365, aplicaciones en la nube e identidad. 
+- (versión preliminar) En consonancia con la expansión anunciada recientemente en una nueva categoría de servicio denominada [Microsoft Security Experts](https://aka.ms/MicrosoftSecurityExperts), presentamos la disponibilidad de [Microsoft Defender Experts for Hunting](defenderexpertsforhuntingprev.md) (Defender Experts for Hunting) para la versión preliminar pública. Expertos de Defender para la búsqueda es para clientes que tienen un sólido centro de operaciones de seguridad, pero quieren que Microsoft les ayude a buscar amenazas de forma proactiva en Microsoft Defender datos, incluidos puntos de conexión, Office 365, aplicaciones en la nube e identidad. 
 
 ## <a name="april-2022"></a>Abril de 2022
 - (versión preliminar) [Ahora](advanced-hunting-take-action.md) se pueden realizar acciones en los mensajes de correo electrónico directamente desde los resultados de la consulta de búsqueda. Los correos electrónicos se pueden mover a otras carpetas o eliminarse de forma permanente. 
@@ -148,7 +149,7 @@ El equipo de operaciones de seguridad puede ver todas las acciones pendientes de
 
 - [Microsoft 365 Defender informe de análisis de amenazas](threat-analytics.md)
 
-  El análisis de amenazas le ayuda a responder y minimizar el impacto de los ataques activos. También puede obtener información sobre los intentos de ataque bloqueados por Microsoft 365 Defender soluciones y tomar medidas preventivas que mitigan el riesgo de una mayor exposición y aumentan la resistencia. Como parte de la experiencia de seguridad unificada, el análisis de amenazas ahora está disponible para los titulares de licencias de Microsoft Defender para punto de conexión y Microsoft Defender para Office E5.
+  El análisis de amenazas le ayuda a responder y minimizar el impacto de los ataques activos. También puede obtener información sobre los intentos de ataque bloqueados por Microsoft 365 Defender soluciones y tomar medidas preventivas que mitigan el riesgo de una mayor exposición y aumentan la resistencia. Como parte de la experiencia de seguridad unificada, el análisis de amenazas ahora está disponible para Microsoft Defender para punto de conexión y Microsoft Defender para los titulares de licencias de Office E5.
 
 ## <a name="march-2021"></a>Marzo de 2021
 

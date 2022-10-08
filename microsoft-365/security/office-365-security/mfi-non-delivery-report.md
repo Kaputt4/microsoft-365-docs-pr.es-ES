@@ -7,7 +7,7 @@ author: dansimp
 manager: dansimp
 audience: ITPro
 ms.topic: conceptual
-ms.collection: M365-security-compliance
+ms.collection: m365-security
 ms.localizationpriority: medium
 ms.assetid: ''
 ms.custom:
@@ -15,12 +15,13 @@ ms.custom:
 description: Los administradores pueden aprender a usar el informe Detalles de no entrega en el panel Flujo de correo del Centro de cumplimiento de seguridad & para supervisar los códigos de error que se encuentran con más frecuencia en los informes de no entrega (también conocidos como NDR o mensajes de rebote) de los remitentes de su organización.
 ms.subservice: mdo
 ms.service: microsoft-365-security
-ms.openlocfilehash: a9b7b12ece4f860051e2c6f2b7800370a64062c7
-ms.sourcegitcommit: 2b89bcff547e00be3d38dc8d1e6cbcf8f41eba42
+search.appverid: met150
+ms.openlocfilehash: 6c2069a0896fc77191602b9df8b6c24cc2bdb007
+ms.sourcegitcommit: 12af9e8e3a6eaa090fda9e98ccb831dff65863a4
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/03/2022
-ms.locfileid: "67597446"
+ms.lasthandoff: 09/27/2022
+ms.locfileid: "68091793"
 ---
 # <a name="non-delivery-report-in-the-security--compliance-center"></a>Informe de no entrega en el Centro de cumplimiento de seguridad &
 

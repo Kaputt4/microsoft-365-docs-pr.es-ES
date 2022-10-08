@@ -10,7 +10,9 @@ ms.service: microsoft-365-enterprise
 ms.localizationpriority: medium
 search.appverid:
 - MET150
-ms.collection: Ent_O365
+ms.collection:
+- scotvorg
+- Ent_O365
 f1.keywords:
 - CSH
 ms.custom:
@@ -20,12 +22,12 @@ ms.custom:
 - O365ITProTrain
 ms.assetid: e7e4dc5e-e299-482c-9414-c265e145134f
 description: Explica cómo usar PowerShell para quitar licencias de Microsoft 365 que se asignaron anteriormente a los usuarios.
-ms.openlocfilehash: e726136fb2661d4855b3dcc828537b7be6e35c6c
-ms.sourcegitcommit: 437461fa1d38ff9bb95dd8a1c5f0b94e8111ada2
+ms.openlocfilehash: 7d36526253780d0d1baba4a12820a409123fc2d0
+ms.sourcegitcommit: 0b7070ec119e00e0dafe030bbfbef0ae5c9afa19
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/14/2022
-ms.locfileid: "67670727"
+ms.lasthandoff: 09/29/2022
+ms.locfileid: "68172277"
 ---
 # <a name="remove-microsoft-365-licenses-from-user-accounts-with-powershell"></a>Eliminación de licencias de Microsoft 365 de cuentas de usuario con PowerShell
 
@@ -201,7 +203,7 @@ tjohnston@contoso.com
 kakers@contoso.com
   ```
 
-2. Utilice la sintaxis siguiente:
+2. Utilice la siguiente sintaxis:
     
   ```powershell
   $x=Get-Content "<FileNameAndPath>"

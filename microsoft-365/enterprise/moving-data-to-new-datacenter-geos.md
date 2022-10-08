@@ -3,7 +3,7 @@ title: Traslado de datos principales a nuevas geoáreas del centro de datos de M
 ms.author: kvice
 author: kelleyvice-msft
 manager: scotv
-ms.date: 06/02/2022
+ms.date: 09/23/2022
 audience: ITPro
 ms.topic: article
 ms.service: microsoft-365-enterprise
@@ -15,12 +15,13 @@ f1.keywords:
 - NOCSH
 description: Obtenga información sobre las nuevas Office 365 geos del centro de datos y cómo usar la opción de residencia de datos para solicitar el traslado de los datos principales a una nueva ubicación geográfica.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 7d17c0906d26b8b5ff0d1758255cb9f74ab94c82
-ms.sourcegitcommit: 9b133379196da2b3a4bb311b07ff274f43780f68
+ms.collection: scotvorg
+ms.openlocfilehash: 084753e838f02eccd228603cbb6540c1b01d85bc
+ms.sourcegitcommit: 0b7070ec119e00e0dafe030bbfbef0ae5c9afa19
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/14/2022
-ms.locfileid: "67702256"
+ms.lasthandoff: 09/29/2022
+ms.locfileid: "68172431"
 ---
 # <a name="moving-core-data-to-new-microsoft-365-datacenter-geos"></a>Traslado de datos principales a nuevas geoáreas del centro de datos de Microsoft 365
 
@@ -68,6 +69,8 @@ La complejidad, precisión y escala a la que necesitamos realizar movimientos de
 Los movimientos de datos son una operación de servicio back-end con un impacto mínimo para los usuarios finales. Las características que pueden verse afectadas aparecen en la página [Durante y después del movimiento de datos](during-and-after-your-data-move.md) . Nos adherimos al [Contrato de nivel de servicio (SLA) de Microsoft Online Services](https://go.microsoft.com/fwlink/p/?LinkId=523897) para la disponibilidad, por lo que no hay nada que los clientes necesiten preparar o supervisar durante el traslado. La notificación de cualquier mantenimiento del servicio se realiza si es necesario.
 
 Los movimientos de datos a la nueva ubicación geográfica del centro de datos se completan sin ningún costo adicional para el cliente.
+
+Durante el proceso de migración, Microsoft copia temporalmente los datos de la libreta de direcciones en recursos globales de Microsoft donde se cifran y solo se usan para admitir operaciones de continuidad empresarial y recuperación ante desastres (BCDR). Una vez que Microsoft ha completado el movimiento de los datos del buzón, Microsoft elimina esos datos temporales de los recursos globales. Microsoft continúa invirtiendo en recursos globales y regionales de forma periódica. En el año natural 2023, Microsoft planea usar recursos regionales con fines BCDR durante el proceso de migración.
 
 ## <a name="related-topics"></a>Temas relacionados
 

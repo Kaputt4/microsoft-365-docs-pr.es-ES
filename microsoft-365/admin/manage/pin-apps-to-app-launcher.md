@@ -8,19 +8,20 @@ manager: scotv
 audience: Admin
 ms.topic: article
 ms.collection:
+- scotvorg
 - Adm_O365
 - M365-subscription-management
 - Adm_TOC
-ms.service: o365-administration
+ms.service: microsoft-365-business
 ms.custom: admindeeplinkMAC
 ms.localizationpriority: medium
 description: Como administrador global, puede anclar hasta tres aplicaciones al iniciador de aplicaciones de los usuarios.
-ms.openlocfilehash: a1f0fb9caab7c32936b5b0e99196decb965ab9f5
-ms.sourcegitcommit: 23c7e96d8ec31c676c458e7c71f1cc8a1e40a0e4
+ms.openlocfilehash: 0d187c6dfb9bf9422465865033d1eb623d6b7c07
+ms.sourcegitcommit: 0b7070ec119e00e0dafe030bbfbef0ae5c9afa19
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/16/2022
-ms.locfileid: "67359217"
+ms.lasthandoff: 09/29/2022
+ms.locfileid: "68187193"
 ---
 # <a name="pin-apps-to-your-users-app-launcher"></a>Anclar aplicaciones al iniciador de aplicaciones de los usuarios
 

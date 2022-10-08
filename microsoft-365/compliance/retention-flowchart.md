@@ -11,18 +11,19 @@ ms.topic: conceptual
 ms.service: O365-seccomp
 ms.localizationpriority: high
 ms.collection:
-- M365-security-compliance
+- purview-compliance
+- tier1
 - SPO_Content
 search.appverid:
 - MOE150
 - MET150
 description: Usar un diagrama de flujo para determinar el resultado cuando un elemento en Microsoft 365 tenga varias directivas de retención o una etiqueta de retención y directivas de retención
-ms.openlocfilehash: 96c92dc8c0e9d87a152605dbe1dd74a220f20cc6
-ms.sourcegitcommit: 5aed330d8af523f0dffe5e392f1c79f047e38172
-ms.translationtype: HT
+ms.openlocfilehash: a864b11c355c8e9b1fc50aed262f771a6a580c12
+ms.sourcegitcommit: 4dfb5de8c61847b8ddd10410ad20d34860eed8f6
+ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/21/2022
-ms.locfileid: "66942746"
+ms.lasthandoff: 09/28/2022
+ms.locfileid: "68129417"
 ---
 # <a name="flowchart-to-determine-when-an-item-will-be-retained-or-permanently-deleted"></a>Diagrama de flujo para determinar cuándo se conservará o eliminará permanentemente un elemento
 

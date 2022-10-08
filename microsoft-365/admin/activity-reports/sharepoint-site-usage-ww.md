@@ -2,14 +2,15 @@
 title: Centro de administración de Microsoft 365 informes de uso del sitio de SharePoint
 f1.keywords:
 - NOCSH
-ms.author: kwekua
-author: kwekua
+ms.author: camillepack
+author: camillepack
 manager: scotv
 audience: Admin
 ms.topic: article
-ms.service: o365-administration
+ms.service: microsoft-365-business
 ms.localizationpriority: medium
 ms.collection:
+- scotvorg
 - M365-subscription-management
 - Adm_O365
 - Adm_NonTOC
@@ -22,12 +23,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Obtenga el informe de uso del sitio de SharePoint para saber cuántos archivos almacenan los usuarios en sitios de SharePoint, cuántos se usan activamente y el almacenamiento total consumido.
-ms.openlocfilehash: 0be00d712ba4a65ff14b10aadd6f74f2d5f82b43
-ms.sourcegitcommit: 5014666778b2d48912c68c2e06992cdb43cfaee3
+ms.openlocfilehash: e0d61ce924c09f8ee782a314629089978e42348f
+ms.sourcegitcommit: 0b7070ec119e00e0dafe030bbfbef0ae5c9afa19
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/07/2022
-ms.locfileid: "66662710"
+ms.lasthandoff: 09/29/2022
+ms.locfileid: "68172123"
 ---
 # <a name="microsoft-365-reports-in-the-admin-center---sharepoint-site-usage"></a>Informes de Microsoft 365 en el Centro de administración: uso del sitio de SharePoint
 
