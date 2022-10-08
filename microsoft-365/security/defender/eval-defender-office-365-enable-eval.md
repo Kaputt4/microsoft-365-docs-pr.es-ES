@@ -17,18 +17,19 @@ ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection:
-- M365-security-compliance
+- m365-security
 - m365solution-scenario
 - m365solution-evalutatemtp
 - zerotrust-solution
 - highpri
+- tier1
 ms.topic: how-to
-ms.openlocfilehash: a88c98e345e6ac1caa2a31a724c4f62fcf47151c
-ms.sourcegitcommit: e9323a90a1156c10b037abca3e16d7367ef92dd7
+ms.openlocfilehash: 2bf372cb9836b5565a5e311a17806d6f52d3945a
+ms.sourcegitcommit: 12af9e8e3a6eaa090fda9e98ccb831dff65863a4
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/02/2022
-ms.locfileid: "67566508"
+ms.lasthandoff: 09/27/2022
+ms.locfileid: "68072973"
 ---
 # <a name="enable-the-evaluation-environment"></a>Habilitación del entorno de evaluación
 
@@ -39,7 +40,7 @@ Este artículo es el [paso 2 del 3](eval-defender-office-365-overview.md) en el 
 
 Siga estos pasos para habilitar la evaluación para Microsoft Defender para Office 365.
 
-:::image type="content" source="../../media/defender/m365-defender-office-eval-enable-steps.png" alt-text="Los pasos para habilitar Microsoft Defender para Office 365 en el entorno de evaluación de Microsoft Defender." lightbox="../../media/defender/m365-defender-office-eval-enable-steps.png":::
+:::image type="content" source="../../media/defender/m365-defender-office-eval-enable-steps.png" alt-text="Pasos para habilitar Microsoft Defender para Office 365 en el entorno de evaluación de Microsoft Defender." lightbox="../../media/defender/m365-defender-office-eval-enable-steps.png":::
 
 - [Paso 1: Auditar y comprobar el registro MX público](#step-1-audit-and-verify-the-public-mx-record)
 - [Paso 2: Auditar dominios aceptados](#step-2-audit-accepted-domains)

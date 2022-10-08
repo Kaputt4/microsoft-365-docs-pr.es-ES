@@ -16,18 +16,18 @@ search.appverid:
 - MET150
 ms.assetid: 96deb75f-64e8-4c10-b570-84c99c674e15
 ms.collection:
-- M365-security-compliance
+- m365-security
 ms.custom:
 - seo-marvel-apr2020
 description: La purga automática de cero horas (ZAP) mueve retroactivamente los mensajes entregados en un buzón de Exchange Online a la carpeta de correo no deseado Email o a la cuarentena que se encuentran como correo no deseado, suplantación de identidad (phishing) o que contienen malware después de la entrega.
 ms.subservice: mdo
 ms.service: microsoft-365-security
-ms.openlocfilehash: 98319549aca7fbef06237b720aaf54291706d623
-ms.sourcegitcommit: 437461fa1d38ff9bb95dd8a1c5f0b94e8111ada2
+ms.openlocfilehash: 0517a0fff88486315815b1a68458e968c2860f5e
+ms.sourcegitcommit: 12af9e8e3a6eaa090fda9e98ccb831dff65863a4
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/14/2022
-ms.locfileid: "67671641"
+ms.lasthandoff: 09/27/2022
+ms.locfileid: "68072379"
 ---
 # <a name="zero-hour-auto-purge-zap-in-exchange-online"></a>Purga automática de cero horas (ZAP) en Exchange Online
 

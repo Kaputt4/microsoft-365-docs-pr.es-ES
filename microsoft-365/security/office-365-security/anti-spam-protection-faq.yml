@@ -13,19 +13,19 @@ metadata:
   - MET150
   ms.assetid: c534a35d-b121-45da-9d0a-ce738ce51fce
   ms.collection:
-  - M365-security-compliance
+  - m365-security
   - m365initiative-defender-office365
   ms.custom:
   - seo-marvel-apr2020
   description: Los administradores pueden ver las preguntas y respuestas más frecuentes sobre la protección contra correo no deseado en Exchange Online Protection (EOP).
   ms.subservice: mdo
   ms.service: microsoft-365-security
-  ms.openlocfilehash: e83f0baa9ee41201c41643a6143e50d5424b6edb
-  ms.sourcegitcommit: 10e6abe740e27000e223378eb17d657a47555fa8
+  ms.openlocfilehash: 449a58b9be0f62638cf18099d680b8033cf26aa3
+  ms.sourcegitcommit: 12af9e8e3a6eaa090fda9e98ccb831dff65863a4
   ms.translationtype: MT
   ms.contentlocale: es-ES
-  ms.lasthandoff: 08/31/2022
-  ms.locfileid: "67483220"
+  ms.lasthandoff: 09/27/2022
+  ms.locfileid: "68090891"
 title: Preguntas más frecuentes sobre protección contra correo electrónico no deseado
 summary: >
   [!INCLUDE [MDO Trial banner](../includes/mdo-trial-banner.md)]
@@ -128,7 +128,7 @@ sections:
       Si más de la mitad del correo que se envía desde un usuario a través del servicio dentro de un período de tiempo determinado (por ejemplo, por hora), se determina que es correo no deseado por parte de EOP, el usuario no podrá enviar mensajes. En la mayoría de los casos, si se determina que un mensaje saliente es correo no deseado, se redirige a través del grupo de entrega de alto riesgo, lo cual reduce la probabilidad de que el grupo de IP saliente normal se agregue a una lista de bloqueados.
 
 
-      Puede enviar una notificación a la dirección de correo electrónico especificada cuando se bloquee un remitente por enviar correo electrónico no deseado. Para más información sobre esta configuración, consulte [Configurar la directiva de correo no deseado saliente](configure-the-outbound-spam-policy.md).
+      You can send a notification to a specified email address when a sender is blocked sending outbound spam. For more information about this setting, see [Configure the outbound spam policy](configure-the-outbound-spam-policy.md).
   - question: >
       ¿Puedo usar un proveedor contra correo no deseado y contra malware de terceros junto con Exchange Online?
     answer: >
@@ -169,7 +169,7 @@ sections:
 
       - **Asegúrese de que los registros de SPF apropiados estén configurados en DNS.**
 
-        Los registros de SPF son un mecanismo para validar que el correo enviado desde un dominio realmente proviene de ese domino y no es una suplantación. Para obtener más información acerca de los registros de SPF, consulte los siguientes vínculos:
+        SPF records are a mechanism for validating that mail sent from a domain really is coming from that domain and is not spoofed. For more information about SPF records, see the following links:
 
         [Configurar SPF para ayudar a evitar la suplantación de identidad](set-up-spf-in-office-365-to-help-prevent-spoofing.md)
 
@@ -177,7 +177,7 @@ sections:
 
       - **Firma de correo electrónico con DKIM, firma con la resolución de nombres canónicos relajada.**
 
-        Si un remitente desea firmar sus mensajes con un Correo identificado con claves de dominio (DKIM) y desea enviar correo saliente mediante el servicio, para firmar debe utilizar el algoritmo de resolución de nombres canónicos relajada del encabezado. Firmar con una resolución de nombres canónicos del encabezado estricta puede invalidar la firma cuando pase por el servicio.
+        If a sender wants to sign their messages using Domain Keys Identified Mail (DKIM) and they want to send outbound mail through the service, they should sign using the relaxed header canonicalization algorithm. Signing with strict header canonicalization may invalidate the signature when it passes through the service.
 
       - **Los propietarios de dominio deben disponer de información precisa en la base de datos WHOIS.**
 
@@ -185,7 +185,7 @@ sections:
 
       - **Para el envío masivo de correo, el nombre De: debe reflejar quién envía el mensaje, mientras que la línea de asunto del mensaje debe ser un resumen del tema del mensaje.**
 
-        El cuerpo del mensaje debe tener un indicación clara de la oferta, el servicio o el producto. Por ejemplo, si el remitente envía correo masivamente para la empresa Contoso, los campos De y Asunto del correo electrónico deberían ser parecidos a lo siguiente:
+        The message body should have a clear indication of the offering, service, or product. For example, if a sender is sending out a bulk mailing for the Contoso company, the following is what the email From and Subject should resemble:
 
         > De: marketing@contoso.com <br> Asunto: ¡Nuevo catálogo actualizado para la temporada de Navidad!
 
@@ -225,11 +225,11 @@ sections:
 
       - **Elimine las direcciones de correo electrónico rebotadas de los usuarios inexistentes.**
 
-        Si recibe un informe de no entrega que le indica que una dirección de correo electrónico ya no se utiliza, elimine el alias de correo no existente de su lista. Las direcciones de correo electrónico cambian con el tiempo, y la gente a veces deja de utilizarlas.
+        If you receive an NDR indicating that an email address is no longer in use, remove the non-existent email alias from your list. Email addresses change over time, and people sometimes discard them.
 
       - **Utilice el programa de Servicios de datos de red inteligente (SNDS) de Hotmail.**
 
-        Hotmail utiliza un programa denominado Servicios de datos de red inteligente que permite a los remitentes comprobar los reclamos enviados por los usuarios finales. SNDS es el portal principal para solucionar problemas de entrega a Hotmail.
+        Hotmail uses a program called Smart Network Data Services that allows senders to check complaints submitted by end users. The SNDS is the primary portal for troubleshooting delivery problems to Hotmail.
   - question: >
       Cómo desactivar el filtrado de correo no deseado?
     answer: >-

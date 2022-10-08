@@ -18,19 +18,20 @@ ms.date: 07/09/2021
 manager: dansimp
 audience: ITPro
 ms.collection:
-- M365-security-compliance
+- m365-security
 - m365solution-scenario
 - m365solution-evalutatemtp
 - zerotrust-solution
 - highpri
+- tier1
 ms.custom: admindeeplinkDEFENDER
 ms.topic: conceptual
-ms.openlocfilehash: 5dbda4df04d47d4069a60fd7925dde2390708aba
-ms.sourcegitcommit: 10e6abe740e27000e223378eb17d657a47555fa8
+ms.openlocfilehash: 5250120aeca42aeed0670a1c4e5dcd1696a1459f
+ms.sourcegitcommit: 12af9e8e3a6eaa090fda9e98ccb831dff65863a4
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/31/2022
-ms.locfileid: "67473643"
+ms.lasthandoff: 09/27/2022
+ms.locfileid: "68061118"
 ---
 # <a name="try-microsoft-365-defender-incident-response-capabilities-in-a-pilot-environment"></a>Pruebe Microsoft 365 Defender capacidades de respuesta a incidentes en un entorno piloto
 
@@ -158,7 +159,7 @@ Hay un único buzón interno y dispositivo necesarios para esta simulación. Tam
 
     b. Unir el dispositivo de prueba al dominio de prueba.
 
-    c. [Active antivirus de Microsoft Defender](/windows/security/threat-protection/windows-defender-antivirus/configure-windows-defender-antivirus-features). Si tiene problemas para habilitar el Antivirus de Microsoft Defender, consulte [este tema de solución de problemas](/windows/security/threat-protection/microsoft-defender-atp/troubleshoot-onboarding#ensure-that-microsoft-defender-antivirus-is-not-disabled-by-a-policy).
+    c. [Active Microsoft Defender Antivirus](/windows/security/threat-protection/windows-defender-antivirus/configure-windows-defender-antivirus-features). Si tiene problemas para habilitar Microsoft Defender Antivirus, consulte [este tema de solución de problemas](/windows/security/threat-protection/microsoft-defender-atp/troubleshoot-onboarding#ensure-that-microsoft-defender-antivirus-is-not-disabled-by-a-policy).
 
     d. [Incorporación a Microsoft Defender para punto de conexión](/windows/security/threat-protection/microsoft-defender-atp/configure-endpoints).
 

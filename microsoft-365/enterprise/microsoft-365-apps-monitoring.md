@@ -5,23 +5,24 @@ author: kelleyvice-msft
 manager: scotv
 audience: Admin
 ms.topic: article
-ms.service: o365-administration
+ms.service: microsoft-365-enterprise
 ms.localizationpriority: mediumn
 search.appverid:
 - MET150
 ms.collection:
+- scotvorg
 - Ent_O365
 - Strat_O365_Enterprise
 ms.custom: admindeeplinkMAC
 f1.keywords:
 - NOCSH
 description: Use la supervisión de aplicaciones para obtener información sobre incidentes o avisos relacionados con Aplicaciones Microsoft 365.
-ms.openlocfilehash: 5d1b930d7dec33c05234a5349c881355e2574120
-ms.sourcegitcommit: 0ae89b71b202aceabd5061f0d5b46d030d93e931
+ms.openlocfilehash: 95f7da9cc66f42d00cbaccf29eae36a258441cf9
+ms.sourcegitcommit: 0b7070ec119e00e0dafe030bbfbef0ae5c9afa19
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/29/2022
-ms.locfileid: "66997805"
+ms.lasthandoff: 09/29/2022
+ms.locfileid: "68180481"
 ---
 # <a name="microsoft-365-apps-monitoring"></a>Supervisión de aplicaciones de Microsoft 365
 

@@ -6,9 +6,10 @@ manager: scotv
 ms.date: 6/22/2018
 audience: Admin
 ms.topic: overview
-ms.service: o365-administration
+ms.service: microsoft-365-enterprise
 ms.localizationpriority: medium
 ms.collection:
+- scotvorg
 - Ent_O365
 - SPO_Content
 f1.keywords:
@@ -17,20 +18,20 @@ ms.custom: Adm_O365
 search.appverid: SPO160
 ms.assetid: 81c4be5f-327e-435d-a568-526d68cffef0
 description: En este artículo se explican los aspectos específicos que debe tener en cuenta al diseñar páginas para obtener el mejor rendimiento en SharePoint Online.
-ms.openlocfilehash: b31696766d3201b6677bf0c63108fad72c3ed49d
-ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
+ms.openlocfilehash: e5e63d3d290d8b3b4eca60d86277b6d0cb2d8d88
+ms.sourcegitcommit: 0b7070ec119e00e0dafe030bbfbef0ae5c9afa19
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "65100751"
+ms.lasthandoff: 09/29/2022
+ms.locfileid: "68180657"
 ---
 # <a name="introduction-to-performance-tuning-for-sharepoint-online"></a>Introducción al ajuste del rendimiento para SharePoint Online
 
 En este artículo se explican los aspectos específicos que debe tener en cuenta al diseñar páginas para obtener el mejor rendimiento en SharePoint Online.
      
-## <a name="sharepoint-online-metrics"></a>métricas de SharePoint Online
+## <a name="sharepoint-online-metrics"></a>Métricas de SharePoint Online
 
-Las siguientes métricas generales para SharePoint Online proporcionan datos reales sobre el rendimiento:
+Las siguientes métricas amplias para SharePoint Online proporcionan datos reales sobre el rendimiento:
   
 - Velocidad de carga de las páginas
     
@@ -50,21 +51,21 @@ Los datos nos indican:
     
 - OneDrive para la Empresa, los sitios de equipo y las páginas del sistema, como _layouts, etc., son rápidos de cargar.
     
-- El 1 % más lento de SharePoint páginas en línea tarda más de 5000 milisegundos en cargarse.
+- El 1 % más lento de las páginas de SharePoint Online tarda más de 5000 milisegundos en cargarse.
     
 Una prueba comparativa sencilla que puede usar sería medir el rendimiento comparando el tiempo de carga de su propio portal con el tiempo de carga de la página principal de OneDrive para la Empresa, ya que usa algunas características personalizadas. A menudo, este será el primer paso que el soporte técnico le pedirá que complete al solucionar problemas de rendimiento de red.
   
 ## <a name="use-a-standard-user-account-when-checking-performance"></a>Uso de una cuenta de usuario estándar al comprobar el rendimiento
 
-Un administrador de la colección de sitios, un propietario del sitio, un editor o un colaborador pertenecen a otros grupos de seguridad, tienen más permisos y, por tanto, tienen elementos adicionales que SharePoint cargan en una página.
+Un administrador de la colección de sitios, el propietario del sitio, el editor o el colaborador pertenecen a otros grupos de seguridad, tienen más permisos y, por tanto, tienen elementos adicionales que SharePoint carga en una página.
   
-Esto es aplicable a SharePoint local y SharePoint En línea, pero en un escenario local las diferencias no se notarán tan fácilmente como en SharePoint Online.
+Esto es aplicable a SharePoint local y SharePoint Online, pero en un escenario local las diferencias no se notarán tan fácilmente como en SharePoint Online.
   
 Para evaluar correctamente cómo funcionará una página para los usuarios, debe usar una cuenta de usuario estándar para evitar cargar los controles de creación y el tráfico adicional relacionado con los grupos de seguridad.
   
 ## <a name="connection-categories-for-performance-tuning"></a>Categorías de conexión para el ajuste del rendimiento
 
-Puede clasificar las conexiones entre el servidor y el usuario en tres componentes principales. Tenga en cuenta esto al diseñar SharePoint páginas en línea para obtener información sobre los tiempos de carga.
+Puede clasificar las conexiones entre el servidor y el usuario en tres componentes principales. Tenga en cuenta esto al diseñar páginas de SharePoint Online para obtener información sobre los tiempos de carga.
   
 - **Servidor** Servidores que Microsoft hospeda en centros de datos.
     
@@ -86,9 +87,9 @@ Dentro de estas tres conexiones, normalmente hay cinco motivos que provocan el 9
     
 ### <a name="server-connection"></a>Conexión del servidor
 
-Muchos de los problemas que afectan al rendimiento con SharePoint locales también se aplican a SharePoint Online.
+Muchos de los problemas que afectan al rendimiento con SharePoint local también se aplican a SharePoint Online.
   
-Como cabría esperar, tiene mucho más control sobre cómo funcionan los servidores con SharePoint locales. Con SharePoint las cosas en línea son un poco diferentes. Cuanto más trabajo realice un servidor, más tiempo se tarda en representar una página. Con SharePoint, los principales culpables en este sentido son páginas complejas con varios elementos web.
+Como cabría esperar, tiene mucho más control sobre el rendimiento de los servidores con SharePoint local. Con SharePoint Online las cosas son un poco diferentes. Cuanto más trabajo realice un servidor, más tiempo se tarda en representar una página. Con SharePoint, los principales culpables en este sentido son las páginas complejas con varios elementos web.
   
 SharePoint Server local
   
@@ -98,19 +99,19 @@ SharePoint Online
   
 ![Captura de pantalla del servidor en línea.](../media/46b27ded-d8a4-4287-b3e0-2603a764b8f8.png)
   
-Con SharePoint Online, es posible que algunas solicitudes de página terminen llamando a varios servidores. Podría terminar con una matriz de solicitudes entre servidores para una solicitud individual. Estas interacciones son costosas desde la perspectiva de la carga de páginas y harán que las cosas sean lentas.
+Con SharePoint Online, algunas solicitudes de página pueden terminar llamando a varios servidores. Podría terminar con una matriz de solicitudes entre servidores para una solicitud individual. Estas interacciones son costosas desde la perspectiva de la carga de páginas y harán que las cosas sean lentas.
   
 Algunos ejemplos de estas interacciones de servidor a servidor son:
   
-- Servidores web a SQL
+- Web a SERVIDORES SQL Server
     
 - Web a servidores de aplicaciones
     
-La otra cosa que puede ralentizar las interacciones del servidor son las faltas de caché. A diferencia de los SharePoint locales, existe una pequeña posibilidad de que llegue al mismo servidor para una página que ha visitado anteriormente; esto hace que el almacenamiento en caché de objetos esté obsoleto.
+La otra cosa que puede ralentizar las interacciones del servidor son las faltas de caché. A diferencia de SharePoint local, hay una pequeña posibilidad de que llegue al mismo servidor para una página que ha visitado anteriormente; esto hace que el almacenamiento en caché de objetos sea obsoleto.
   
 ### <a name="network-connection"></a>Conexión de red 
 
-Con SharePoint locales que no usan una WAN, puede usar una conexión de alta velocidad entre el centro de datos y los usuarios finales. Por lo general, las cosas son fáciles de administrar desde la perspectiva de la red.
+Con SharePoint local que no usa una WAN, puede usar una conexión de alta velocidad entre el centro de datos y los usuarios finales. Por lo general, las cosas son fáciles de administrar desde la perspectiva de la red.
   
 Con SharePoint Online, hay algunos factores más a tener en cuenta; por ejemplo:
   
@@ -128,7 +129,7 @@ Independientemente de la versión de SharePoint (y de la red) que use, entre los
     
 - Gran distancia física al servidor
     
-Una característica que puede usar en SharePoint Online es microsoft CDN (Content Delivery Network). Un CDN es básicamente una colección distribuida de servidores implementados en varios centros de datos. Con un CDN, el contenido de las páginas se puede hospedar en un servidor cercano al cliente, incluso si el cliente está lejos del servidor de SharePoint de origen. Microsoft lo usará más en el futuro para almacenar instancias locales de páginas que no se pueden personalizar, por ejemplo, la página principal del administrador en línea de SharePoint. Para obtener más información sobre las redes CDN, consulte [Redes de entrega de contenido](content-delivery-networks.md).
+Una característica que puede usar en SharePoint Online es Microsoft CDN (Content Delivery Network). Una red CDN es básicamente una colección distribuida de servidores implementados en varios centros de datos. Con una red CDN, el contenido de las páginas se puede hospedar en un servidor cercano al cliente, incluso si el cliente está lejos del servidor de SharePoint server de origen. Microsoft lo usará más en el futuro para almacenar instancias locales de páginas que no se pueden personalizar, por ejemplo, la página principal del administrador de SharePoint Online. Para obtener más información sobre las redes CDN, consulte [Redes de entrega de contenido](content-delivery-networks.md).
   
 Algo que debe tener en cuenta, pero que puede que no pueda hacer mucho, es la velocidad de conexión de su ISP. Una sencilla herramienta de prueba de velocidad le indicará la velocidad de conexión.
   
@@ -140,11 +141,11 @@ Visitar páginas complejas afectará al rendimiento. La mayoría de los explorad
   
 El ancho de banda también puede ser un problema. Por ejemplo, si un usuario está viendo vídeos en otra sesión, esto afectará al rendimiento de la página de SharePoint. Aunque no puede impedir que los usuarios transmita contenido multimedia, puede controlar la forma en que se cargará una página para los usuarios.
   
-Consulte los artículos siguientes para obtener diferentes técnicas de personalización de páginas en línea SharePoint y otros procedimientos recomendados para ayudarle a lograr un rendimiento óptimo.
+Consulte los siguientes artículos para conocer las diferentes técnicas de personalización de páginas de SharePoint Online y otros procedimientos recomendados que le ayudarán a lograr un rendimiento óptimo.
   
 - [Opciones de navegación para SharePoint Online](navigation-options-for-sharepoint-online.md)
     
-- [Uso de la herramienta Diagnóstico de página para SharePoint Online](page-diagnostics-for-spo.md)
+- [Uso de la herramienta de diagnóstico de páginas para SharePoint Online](page-diagnostics-for-spo.md)
     
 - [Optimización de imágenes para SharePoint Online](image-optimization-for-sharepoint-online.md)
     

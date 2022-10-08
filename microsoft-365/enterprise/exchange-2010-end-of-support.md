@@ -5,23 +5,25 @@ author: dstrome
 manager: scotv
 audience: ITPro
 ms.topic: conceptual
-ms.service: o365-administration
+ms.service: microsoft-365-enterprise
 ms.localizationpriority: medium
-ms.collection: Ent_O365
+ms.collection:
+- scotvorg
+- Ent_O365
 ms.assetid: e150e7b9-c432-4c8d-a0ae-c11847129a7d
 f1.keywords:
 - NOCSH
 description: Exchange 2010 ha llegado al final del soporte técnico. Use este plan de planificación para prepararse para actualizar a Exchange Online o a una versión más reciente de Exchange Server local.
-ms.openlocfilehash: f8515aa6f743927f25bf3dffa3c5bed0306816ac
-ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
+ms.openlocfilehash: 02472f5d1ed1a4008e43bd89d227753465dcc409
+ms.sourcegitcommit: 0b7070ec119e00e0dafe030bbfbef0ae5c9afa19
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "65095298"
+ms.lasthandoff: 09/29/2022
+ms.locfileid: "68171243"
 ---
 # <a name="exchange-2010-end-of-support-roadmap"></a>Plan de final del soporte técnico de Exchange 2010
 
-*Este artículo se aplica tanto a Microsoft 365 Enterprise como a Office 365 Enterprise.*
+*Este artículo afecta tanto a Office 365 Enterprise como a Microsoft 365 Enterprise*
 
 Exchange Server 2010 llegó a su fin el **13 de octubre de 2020**. Si aún no ha iniciado la migración de Exchange 2010 a Microsoft 365, Office 365 o Exchange 2016, ahora es el momento de empezar a planear.
 
@@ -36,7 +38,7 @@ La mayoría de los productos de Microsoft tienen un ciclo de vida de soporte té
 
 Tu instalación de Exchange 2010 seguirá ejecutándose después de esta fecha. Pero debido a los cambios enumerados anteriormente, se recomienda encarecidamente migrar desde Exchange 2010 lo antes posible.
 
-Para obtener más información sobre cómo acercar el final del soporte técnico, consulte [Recursos para ayudarle a actualizar desde Office servidores y clientes de 2010](upgrade-from-office-2010-servers-and-products.md).
+Para obtener más información sobre cómo acercar el final del soporte técnico, vea [Recursos para ayudarle a actualizar desde clientes y servidores de Office 2010](upgrade-from-office-2010-servers-and-products.md).
 
 ## <a name="what-are-my-options"></a>¿Cuáles son mis opciones?
 
@@ -46,13 +48,13 @@ Es un buen momento para explorar las opciones y preparar un plan de migración. 
 - Migre los servidores de Exchange 2010 a Exchange 2016 en los servidores locales.
 
 > [!IMPORTANT]
-> Si su organización decide migrar buzones a Microsoft 365, pero planea mantener DirSync o Azure AD Conectar en su lugar para seguir administrando cuentas de usuario desde Active Directory local, debe mantener al menos un servidor de Microsoft Exchange local. Si quita todos los servidores Exchange, no podrá realizar cambios en Exchange destinatarios en Exchange Online porque el origen de autoridad permanece en el Active Directory local. Los cambios deben realizarse allí. En este escenario, tiene las siguientes opciones:
+> Si su organización decide migrar buzones a Microsoft 365, pero planea mantener DirSync o Azure AD Connect en su lugar para seguir administrando cuentas de usuario desde Active Directory local, debe mantener al menos un servidor de Microsoft Exchange local. Si quita todos los servidores de Exchange, no podrá realizar cambios en los destinatarios de Exchange en Exchange Online porque el origen de autoridad permanece en el Active Directory local. Los cambios deben realizarse allí. En este escenario, tiene las siguientes opciones:
 >
-> - *Recomienda:* Si migró los buzones a Microsoft 365 y actualizó los servidores antes del 13 de octubre de 2020, use Exchange 2010 para conectarse a Microsoft 365 y migrar buzones. A continuación, migre Exchange 2010 a Exchange 2016 y retire los servidores Exchange 2010 restantes.
-> - Si no completó la migración del buzón de correo ni la actualización del servidor local antes del 13 de octubre de 2020, actualice primero los servidores locales Exchange 2010 a Exchange 2016. A continuación, use Exchange 2016 para conectarse a Microsoft 365 y migrar buzones.
+> - *Recomienda:* Si migró los buzones a Microsoft 365 y actualizó los servidores antes del 13 de octubre de 2020, use Exchange 2010 para conectarse a Microsoft 365 y migrar buzones. A continuación, migre Exchange 2010 a Exchange 2016 y retire los servidores de Exchange 2010 restantes.
+> - Si no completó la migración de buzones y la actualización del servidor local antes del 13 de octubre de 2020, actualice primero los servidores locales de Exchange 2010 a Exchange 2016. A continuación, use Exchange 2016 para conectarse a Microsoft 365 y migrar buzones.
 
 > [!NOTE]
-> Es poco más complicado, pero también puede migrar buzones a Microsoft 365 al migrar los servidores locales Exchange 2010 a Exchange 2016.
+> Es poco más complicado, pero también puede migrar buzones a Microsoft 365 al migrar los servidores locales de Exchange 2010 a Exchange 2016.
 
 Estas son las tres rutas de acceso que puede tomar para evitar el final de la compatibilidad con Exchange Server 2010.
 
@@ -70,7 +72,7 @@ Migrar el correo electrónico a Microsoft 365 es la mejor y más sencilla opció
 - Bandeja de entrada centrada.
 - MyAnalytics.
 
-Microsoft 365 también obtiene nuevas características y experiencias en primer lugar, de modo que su organización pueda empezar a usarlas de inmediato. Además, no tendrá que preocuparse por lo siguiente:
+Microsoft 365 también obtiene primero nuevas características y experiencias, por lo que su organización puede empezar a usarlas de inmediato. Además, no tendrá que preocuparse por lo siguiente:
 
 - Compra y mantenimiento de hardware.
 - Pagar por calentar y enfriar los servidores.
@@ -100,11 +102,11 @@ En las secciones siguientes se proporciona información general sobre estos mét
 
 En una migración de transición, se migran todos los buzones, grupos de distribución, contactos, etc., para Office 365 en una fecha y hora establecidas. Cuando haya terminado, apagará los servidores de Exchange locales y comenzará a usar Microsoft 365 exclusivamente.
 
-La migración de transición es ideal para las organizaciones pequeñas que no tienen muchos buzones de correo, quieren llegar a Microsoft 365 rápidamente y no quieren lidiar con la complejidad de los otros métodos. Pero debe completarse en una semana o menos. Además, requiere que los usuarios vuelvan a configurar sus perfiles de Outlook. La migración de transición puede migrar hasta 2000 buzones, pero se recomienda usarla para un máximo de 150. Si intenta migrar más, podría quedar sin tiempo para transferir todos los buzones antes de la fecha límite, y el personal de soporte técnico de TI puede verse abrumado por las solicitudes para ayudar a los usuarios a volver a configurar Outlook.
+La migración de transición es ideal para organizaciones pequeñas que no tienen muchos buzones de correo, quieren llegar a Microsoft 365 rápidamente y no quieren lidiar con la complejidad de los otros métodos. Pero debe completarse en una semana o menos. Y requiere que los usuarios vuelvan a configurar sus perfiles de Outlook. La migración de transición puede migrar hasta 2000 buzones, pero se recomienda usarla para un máximo de 150. Si intenta migrar más, podría quedar sin tiempo para transferir todos los buzones antes de la fecha límite, y el personal de soporte técnico de TI puede verse abrumado por las solicitudes para ayudar a los usuarios a volver a configurar Outlook.
 
 Estas son las cosas que se deben tener en cuenta sobre la migración de transición:
 
-- Microsoft 365 tendrá que conectarse a los servidores de Exchange 2010 mediante Outlook Anywhere a través del puerto TCP 443.
+- Microsoft 365 tendrá que conectarse a los servidores de Exchange 2010 mediante Outlook En cualquier lugar a través del puerto TCP 443.
 - Todos los buzones locales se moverán a Microsoft 365.
 - Necesitará una cuenta de administrador local que tenga acceso de lectura a los buzones de los usuarios.
 - Los dominios aceptados de Exchange 2010 que desea usar en Microsoft 365 deben agregarse como dominios comprobados en el servicio.
@@ -120,9 +122,9 @@ Para obtener más información sobre la migración de transición, consulte:
 
 ### <a name="minimal-hybrid-migration"></a>Migración híbrida mínima
 
-En una migración híbrida o rápida mínima, mueve unos cientos de buzones a Microsoft 365 en unas pocas semanas. Este método no admite características avanzadas de migración híbrida, como la información de calendario de disponibilidad compartida.
+En una migración híbrida o rápida mínima, mueve unos cientos de buzones a Microsoft 365 en pocas semanas. Este método no admite características avanzadas de migración híbrida, como la información de calendario de disponibilidad compartida.
 
-La migración híbrida mínima es ideal para las organizaciones que necesitan más tiempo para migrar sus buzones a Microsoft 365, pero que aún planean completar la migración en unas semanas. Obtendrá algunas de las ventajas de la *migración híbrida completa* más avanzada sin gran parte de la complejidad. Puede controlar cuántos y qué buzones se van a migrar en un momento determinado. Microsoft 365 buzones se crearán con los nombres de usuario y contraseñas de las cuentas locales. Además, a diferencia de las migraciones de transición, los usuarios no tienen que volver a crear sus perfiles de Outlook.
+La migración híbrida mínima es ideal para las organizaciones que necesitan más tiempo para migrar sus buzones de correo a Microsoft 365, pero aún así planean completar la migración en unas semanas. Obtendrá algunas de las ventajas de la *migración híbrida completa* más avanzada sin gran parte de la complejidad. Puede controlar cuántos y qué buzones se van a migrar en un momento determinado. Los buzones de Microsoft 365 se crearán con los nombres de usuario y contraseñas de las cuentas locales. Y, a diferencia de las migraciones de transición, los usuarios no tienen que volver a crear sus perfiles de Outlook.
 
 Estas son las cosas que se deben tener en cuenta sobre la migración híbrida mínima:
 
@@ -131,32 +133,32 @@ Estas son las cosas que se deben tener en cuenta sobre la migración híbrida m�
 - Necesitará una licencia de Microsoft 365 que incluya Exchange Online para cada buzón de usuario que migre.
 - Los usuarios no tendrán que configurar un nuevo perfil de Outlook en la mayoría de sus dispositivos, aunque algunos teléfonos Android anteriores podrían necesitar un nuevo perfil. Los usuarios no tendrán que volver a descargar su correo electrónico.
 
-Para obtener más información, vea [Usar híbrido mínimo para migrar rápidamente Exchange buzones de correo a Office 365](/Exchange/mailbox-migration/use-minimal-hybrid-to-quickly-migrate).
+Para obtener más información, vea [Usar híbrido mínimo para migrar rápidamente buzones de Exchange a Office 365](/Exchange/mailbox-migration/use-minimal-hybrid-to-quickly-migrate).
 
 ### <a name="full-hybrid"></a>Híbrido completo
 
 En una migración híbrida completa, tiene muchos cientos, hasta decenas de miles, de buzones de correo y mueve algunos o todos a Microsoft 365. Como estas migraciones suelen ser a largo plazo, las migraciones híbridas permiten:
 
 - Muestre a los usuarios locales la información del calendario de disponibilidad para los usuarios de Microsoft 365 y viceversa.
-- Vea una lista de direcciones global unificada que contenga destinatarios tanto en el entorno local como en Microsoft 365.
-- Vea las propiedades completas de Outlook destinatario para todos los usuarios, independientemente de si son locales o en Microsoft 365.
-- Proteger la comunicación por correo electrónico entre servidores de Exchange locales y Office 365 mediante TLS y certificados.
+- Vea una lista global unificada de direcciones que contiene destinatarios tanto en el entorno local como en Microsoft 365.
+- Vea las propiedades completas del destinatario de Outlook para todos los usuarios, independientemente de si son locales o en Microsoft 365.
+- Proteja la comunicación por correo electrónico entre servidores de Exchange locales y Office 365 mediante TLS y certificados.
 - Trate los mensajes enviados entre servidores de Exchange locales y Microsoft 365 como internos, lo que les permite:
   - Los agentes de transporte y cumplimiento deben evaluar y procesar correctamente los mensajes internos.
   - Omita los filtros antispam.
 
-Las migraciones híbridas completas son las mejores para las organizaciones que esperan permanecer en una configuración híbrida durante muchos meses o más. Obtendrá las características enumeradas anteriormente en esta sección, además de la sincronización de directorios, las características de cumplimiento integradas y la capacidad de mover buzones hacia y desde Microsoft 365 mediante movimientos de buzones en línea. Microsoft 365 se convierte en una extensión de la organización local.
+Las migraciones híbridas completas son las mejores para las organizaciones que esperan permanecer en una configuración híbrida durante muchos meses o más. Obtendrá las características enumeradas anteriormente en esta sección, además de la sincronización de directorios, las mejores características de cumplimiento integrado y la capacidad de mover buzones hacia y desde Microsoft 365 mediante movimientos de buzones en línea. Microsoft 365 se convierte en una extensión de la organización local.
 
 Aspectos a tener en cuenta sobre la migración híbrida completa:
 
 - No son adecuadas para todas las organizaciones. Debido a la complejidad de las migraciones híbridas completas, las organizaciones con menos de unos cientos de buzones no suelen ver ventajas que justifiquen el esfuerzo y el costo implicados. En tales casos, se recomienda considerar la migración híbrida de transición o mínima en su lugar.
-- Debe configurar la sincronización de directorios mediante Conectar de Azure Active Directory (Azure AD) entre los servidores de Active Directory local y Microsoft 365.
-- Los usuarios podrán iniciar sesión en su buzón de Microsoft 365 con el mismo nombre de usuario y contraseña que usan al iniciar sesión en la red local. (Esta funcionalidad requiere Azure AD Conectar con sincronización de contraseñas o Servicios de federación de Active Directory (AD FS)).
+- Debe configurar la sincronización de directorios mediante Azure Active Directory (Azure AD) Connect entre los servidores de Active Directory local y Microsoft 365.
+- Los usuarios podrán iniciar sesión en su buzón de Microsoft 365 con el mismo nombre de usuario y contraseña que usan al iniciar sesión en la red local. (Esta funcionalidad requiere Azure AD Connect con sincronización de contraseñas o Servicios de federación de Active Directory (AD FS)).
 - Necesita una licencia de Microsoft 365 que incluya Exchange Online para cada buzón de usuario que migre.
-- Los usuarios no necesitan configurar un nuevo perfil de Outlook en la mayoría de sus dispositivos, aunque algunos teléfonos Android más antiguos podrían necesitar un nuevo perfil. Los usuarios no tendrán que volver a descargar su correo electrónico.
+- Los usuarios no necesitan configurar un nuevo perfil de Outlook en la mayoría de sus dispositivos, aunque algunos teléfonos Android anteriores podrían necesitar un nuevo perfil. Los usuarios no tendrán que volver a descargar su correo electrónico.
 
 > [!IMPORTANT]
-> Si su organización decide migrar buzones a Microsoft 365, pero planea mantener DirSync o Azure AD Conectar en su lugar para seguir administrando las cuentas de usuario desde Active Directory local, debe mantener al menos un servidor Exchange local. Si se quitan todos los servidores Exchange, no podrá realizar cambios en Exchange destinatarios en Exchange Online. Esto se debe a que el origen de la autoridad permanece en el Active Directory local y es necesario realizar cambios allí.
+> Si su organización decide migrar buzones a Microsoft 365, pero planea mantener DirSync o Azure AD Connect en su lugar para seguir administrando cuentas de usuario desde Active Directory local, debe mantener al menos un servidor exchange local. Si se quitan todos los servidores de Exchange, no podrá realizar cambios en los destinatarios de Exchange en Exchange Online. Esto se debe a que el origen de la autoridad permanece en el Active Directory local y es necesario realizar cambios allí.
 
 Si una migración híbrida completa le parece adecuada, consulte los siguientes recursos útiles:
 
@@ -174,7 +176,7 @@ Para obtener la mejor experiencia, se recomienda actualizar el entorno local res
 
 Exchange 2016 incluye todas las características de las versiones anteriores de Exchange. Coincide con la experiencia disponible con Microsoft 365, aunque algunas características solo están disponibles en Microsoft 365. Echa un vistazo a algunas de las cosas que te han faltado:
 
-|Exchange versión|Características|
+|Versión de Exchange|Características|
 |---|---|
 |**Exchange 2013**|La arquitectura simplificada reduce el número de roles de servidor a tres (buzón, acceso de cliente, transporte perimetral)|
 ||Directivas de prevención de pérdida de datos (DLP) que ayudan a evitar que se filtre información confidencial|
@@ -188,13 +190,13 @@ Exchange 2016 incluye todas las características de las versiones anteriores de 
 
 |Consideración|Más información|
 |---|---|
-|Fechas de finalización del soporte técnico|Al igual que Exchange 2010, cada versión de Exchange tiene su propia fecha de finalización de soporte técnico: <br/><br/> Exchange 2013 - Abril de 2023 <br/><br/> Exchange 2016 - Octubre de 2025 <br/><br/> Cuanto antes finalice la fecha de finalización del soporte técnico, antes tendrá que realizar otra migración. ¡Abril de 2023 está mucho más cerca de lo que crees!|
-|Ruta de migración a Exchange 2013 o 2016|La ruta de migración de Exchange 2010 a una versión más reciente es la misma si elige Exchange 2013 o Exchange 2016: <br/><br/> Instale Exchange 2013 o 2016 en la organización de Exchange 2010 existente. <br/><br/> Mueva servicios y otra infraestructura a Exchange 2013 o 2016. <br/><br/> Mueva buzones de correo y carpetas públicas a Exchange 2013 o 2016 Retirar los servidores restantes Exchange 2010.|
-|Coexistencia de versiones|Al migrar a Exchange 2013 o Exchange 2016, puede instalar cualquiera de las versiones en una organización de Exchange 2010 existente. Esto le permite instalar uno o varios Exchange servidores de 2013 o Exchange 2016 y realizar la migración.|
-|Hardware de servidor|Los requisitos de hardware del servidor han cambiado a partir de Exchange 2010. Asegúrese de que el hardware es compatible. Obtenga más información sobre los requisitos de hardware para cada versión aquí: <br/><br/> [Requisitos del sistema para Exchange 2016](/Exchange/plan-and-deploy/system-requirements?view=exchserver-2016&preserve-view=true) <br/><br/> [Requisitos del sistema para Exchange 2013](/Exchange/exchange-2013-system-requirements-exchange-2013-help) <br/><br/> Con las mejoras significativas en el rendimiento de Exchange y el aumento de la potencia informática y la capacidad de almacenamiento en servidores más recientes, es probable que necesite menos servidores para admitir el mismo número de buzones.|
-|Versión del sistema operativo|Las versiones mínimas del sistema operativo admitidas para cada versión son: <br/><br/> Exchange 2016: Windows Server 2012 <br/><br/> Exchange 2013: Windows Server 2008 R2 SP1 <br/><br/> Puede encontrar más información sobre la compatibilidad del sistema operativo en [Exchange Matriz de compatibilidad](/exchange/plan-and-deploy/supportability-matrix).|
-|Nivel funcional del bosque de Active Directory|Los niveles funcionales mínimos admitidos del bosque de Active Directory para cada versión son: <br/><br/> Exchange 2016: Windows Server 2008 R2 SP1 <br/><br/> Exchange 2013: Windows Server 2003 <br/><br/> Puede encontrar más información sobre la compatibilidad de nivel funcional del bosque en [Exchange Matriz de compatibilidad](/exchange/plan-and-deploy/supportability-matrix).|
-|Office versiones de cliente|Las versiones de cliente Office mínimas admitidas para cada versión son: <br/><br/> Exchange 2016: Office 2010 (con las actualizaciones más recientes) <br/><br/> Exchange 2013: Office 2007 SP3 <br/><br/> Obtenga más información sobre Office compatibilidad con clientes en [Exchange Matriz de compatibilidad](/exchange/plan-and-deploy/supportability-matrix).|
+|Fechas de finalización del soporte técnico|Al igual que Exchange 2010, cada versión de Exchange tiene su propia fecha de finalización de soporte técnico: <br/><br/> Exchange 2013 : abril de 2023 <br/><br/> Exchange 2016 - Octubre de 2025 <br/><br/> Cuanto antes finalice la fecha de finalización del soporte técnico, antes tendrá que realizar otra migración. ¡Abril de 2023 está mucho más cerca de lo que crees!|
+|Ruta de migración a Exchange 2013 o 2016|La ruta de migración de Exchange 2010 a una versión más reciente es la misma si elige Exchange 2013 o Exchange 2016: <br/><br/> Instale Exchange 2013 o 2016 en la organización de Exchange 2010 existente. <br/><br/> Mueva servicios y otra infraestructura a Exchange 2013 o 2016. <br/><br/> Mueva buzones de correo y carpetas públicas a Exchange 2013 o 2016 Retirar los servidores restantes de Exchange 2010.|
+|Coexistencia de versiones|Al migrar a Exchange 2013 o Exchange 2016, puede instalar cualquiera de las versiones en una organización existente de Exchange 2010. Esto le permite instalar uno o varios servidores de Exchange 2013 o Exchange 2016 y realizar la migración.|
+|Hardware de servidor|Los requisitos de hardware del servidor han cambiado desde Exchange 2010. Asegúrese de que el hardware es compatible. Obtenga más información sobre los requisitos de hardware para cada versión aquí: <br/><br/> [Requisitos del sistema para Exchange 2016](/Exchange/plan-and-deploy/system-requirements?view=exchserver-2016&preserve-view=true) <br/><br/> [Requisitos del sistema para Exchange 2013](/Exchange/exchange-2013-system-requirements-exchange-2013-help) <br/><br/> Con las mejoras significativas en el rendimiento de Exchange y el aumento de la potencia informática y la capacidad de almacenamiento en servidores más recientes, es probable que necesite menos servidores para admitir el mismo número de buzones.|
+|Versión del sistema operativo|Las versiones mínimas del sistema operativo admitidas para cada versión son: <br/><br/> Exchange 2016: Windows Server 2012 <br/><br/> Exchange 2013: Windows Server 2008 R2 SP1 <br/><br/> Puede encontrar más información sobre la compatibilidad del sistema operativo en [Matriz de compatibilidad de Exchange](/exchange/plan-and-deploy/supportability-matrix).|
+|Nivel funcional del bosque de Active Directory|Los niveles funcionales mínimos admitidos del bosque de Active Directory para cada versión son: <br/><br/> Exchange 2016: Windows Server 2008 R2 SP1 <br/><br/> Exchange 2013: Windows Server 2003 <br/><br/> Puede encontrar más información sobre la compatibilidad de nivel funcional de bosque en [Matriz de compatibilidad de Exchange](/exchange/plan-and-deploy/supportability-matrix).|
+|Versiones de cliente de Office|Las versiones mínimas de cliente de Office admitidas para cada versión son: <br/><br/> Exchange 2016: Office 2010 (con las actualizaciones más recientes) <br/><br/> Exchange 2013: Office 2007 SP3 <br/><br/> Obtenga más información sobre la compatibilidad con clientes de Office en [Matriz de compatibilidad de Exchange](/exchange/plan-and-deploy/supportability-matrix).|
 
 Use los siguientes recursos para ayudar con la migración:
 
@@ -203,13 +205,13 @@ Use los siguientes recursos para ayudar con la migración:
 - Requisitos del sistema para Exchange [2016](/exchange/plan-and-deploy/system-requirements?view=exchserver-2016&preserve-view=true), [2013](/Exchange/exchange-2013-system-requirements-exchange-2013-help)
 - Requisitos previos para Exchange [2016](/exchange/plan-and-deploy/prerequisites?view=exchserver-2016&preserve-view=true), [2013](/Exchange/exchange-2013-prerequisites-exchange-2013-help)
 
-## <a name="summary-of-options-for-office-2010-client-and-servers-and-windows-7"></a>Resumen de las opciones para Office cliente y servidores de 2010 y Windows 7
+## <a name="summary-of-options-for-office-2010-client-and-servers-and-windows-7"></a>Resumen de las opciones para el cliente y los servidores de Office 2010 y Windows 7
 
 Para obtener un resumen visual de las opciones de actualización y migración a la nube para clientes de Office 2010 y servidores de Windows 7, consulte el [póster de final del soporte técnico.](../downloads/Office2010Windows7EndOfSupport.pdf)
 
-[![Fin de la compatibilidad con clientes y servidores de Office 2010 y Windows póster 7.](../media/microsoft-365-overview/office2010-windows7-end-of-support.png)](../downloads/Office2010Windows7EndOfSupport.pdf)
+[![Fin del soporte técnico para clientes y servidores de Office 2010 y póster de Windows 7.](../media/microsoft-365-overview/office2010-windows7-end-of-support.png)](../downloads/Office2010Windows7EndOfSupport.pdf)
 
-Este póster de una página muestra las distintas rutas de acceso que puede tomar para responder a Office productos de cliente y servidor de 2010 y Windows 7 llegando al final del soporte técnico, con rutas de acceso preferidas y compatibilidad con opciones en Microsoft 365 Enterprise resaltadas.
+Este póster de una página muestra las distintas rutas de acceso que puede tomar para responder a los productos de cliente y servidor de Office 2010 y Windows 7 llegando al final del soporte técnico, con rutas de acceso preferidas y compatibilidad con opciones en Microsoft 365 Enterprise resaltadas.
 
 También puede [descargar](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/downloads/Office2010Windows7EndOfSupport.pdf) este póster e imprimirlo en formato de letra, legal o tabloide (11 x 17).
 

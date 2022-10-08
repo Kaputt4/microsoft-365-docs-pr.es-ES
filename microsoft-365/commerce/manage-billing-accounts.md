@@ -8,9 +8,10 @@ manager: scotv
 ms.reviewer: mijeffer, jmueller
 audience: Admin
 ms.topic: article
-ms.service: o365-administration
+ms.service: microsoft-365-business
 ms.localizationpriority: medium
 ms.collection:
+- scotvorg
 - M365-subscription-management
 - Adm_O365
 ms.custom:
@@ -21,22 +22,22 @@ ms.custom:
 search.appverid: MET150
 description: Obtenga información sobre las cuentas de facturación y cómo se usan para administrar la configuración de la cuenta, las facturas, los métodos de pago y las compras.
 ms.date: 05/24/2022
-ms.openlocfilehash: 4630ee028a298d3c901a0e66cde41df58bebece2
-ms.sourcegitcommit: d1b60ed9a11f5e6e35fbaf30ecaeb9dfd6dd197d
+ms.openlocfilehash: 081c80f343abfc19f3f25e349f8128e407e86d6e
+ms.sourcegitcommit: 0b7070ec119e00e0dafe030bbfbef0ae5c9afa19
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/29/2022
-ms.locfileid: "66493627"
+ms.lasthandoff: 09/29/2022
+ms.locfileid: "68189217"
 ---
 # <a name="understand-your-microsoft-billing-accounts"></a>Descripción de las cuentas de facturación de Microsoft
 
-Cuando se registra para probar o comprar productos de Microsoft, se crea una cuenta de facturación. Usa su cuenta de facturación para administrar la configuración de la cuenta, las facturas, los métodos de pago y las compras. Puede tener acceso a varias cuentas de facturación. Por ejemplo, se registró en Microsoft 365 directamente, o bien tiene acceso a la Enterprise Agreement de su organización, al Contrato de servicios de & de productos de Microsoft o a Contrato de cliente de Microsoft. Para cada uno de estos escenarios, tendría una cuenta de facturación independiente.
+Cuando se registra para probar o comprar productos de Microsoft, se crea una cuenta de facturación. Use su cuenta de facturación para administrar la configuración de la cuenta, facturas, métodos de pago y compras. Puede tener acceso a varias cuentas de facturación. Por ejemplo, se registró en Microsoft 365 directamente, o bien tiene acceso a la Enterprise Agreement de su organización, al Contrato de servicios de & de productos de Microsoft o a Contrato de cliente de Microsoft. Para cada uno de estos escenarios, tendría una cuenta de facturación independiente.
 
-Actualmente<a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">, el Centro de administración de Microsoft 365</a> admite el siguiente tipo de cuentas de facturación:
+Actualmente el <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">Centro de administración de Microsoft 365</a> admite los siguientes tipos de cuentas de facturación:
 
 - Programa de servicios en línea de Microsoft: esta cuenta de facturación se crea al registrarse para obtener una suscripción a Microsoft 365 directamente.
 - Programa de contrato de servicios de & de productos de Microsoft (MPSA): esta cuenta de facturación se crea cuando su organización firma un contrato de licencias por volumen de MPSA para comprar software y servicios en línea.
-- Contrato de cliente de Microsoft: esta cuenta de facturación se crea cuando su organización trabaja con un representante de Microsoft, un asociado autorizado o realiza compras de forma independiente.
+- Contrato de cliente de Microsoft: Esta cuenta de facturación se crea cuando su organización trabaja con un representante de Microsoft, un partner autorizado o realiza compras de forma independiente.
 
 La página <a href="https://go.microsoft.com/fwlink/p/?linkid=2084771" target="_blank">Cuentas de facturación</a> proporciona una vista de las cuentas comerciales con Microsoft. De forma predeterminada, su organización tiene al menos una cuenta de facturación asociada a un contrato que se acepta en el momento de una compra directa o a través de un acuerdo de licencias por volumen.
 

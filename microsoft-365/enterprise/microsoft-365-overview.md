@@ -10,17 +10,19 @@ audience: ITPro
 ms.topic: article
 ms.service: microsoft-365-enterprise
 ms.localizationpriority: high
-ms.collection: M365-subscription-management
+ms.collection:
+- scotvorg
+- M365-subscription-management
 ms.custom:
 - it-pro
 - intro-overview
 description: Brinda una introducción a los componentes, planes y rutas de implementación de Microsoft 365 para empresas.
-ms.openlocfilehash: a900a50738cb4e44b8be2e62cb8cfd7bc1d51ede
-ms.sourcegitcommit: 078149c9645ce220911ccd6ce54f984a4c92ce53
+ms.openlocfilehash: fc9d2e5bda348300245062875143a96c8f876ac0
+ms.sourcegitcommit: 0b7070ec119e00e0dafe030bbfbef0ae5c9afa19
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/20/2022
-ms.locfileid: "67812082"
+ms.lasthandoff: 09/29/2022
+ms.locfileid: "68180437"
 ---
 # <a name="microsoft-365-for-enterprise-overview"></a>Información general de Microsoft 365 para empresas
 
@@ -35,7 +37,7 @@ Microsoft 365 para empresas consiste en lo siguiente:
 |Servicios|Descripción|
 |---|---|
 |Aplicaciones locales y basadas en la nube, y servicios de productividad|Incluye tanto las aplicaciones de Microsoft 365 para empresas como las aplicaciones de Office más recientes para su equipo PC y Mac (por ejemplo, Word, Excel, PowerPoint, Outlook, etc.) y un conjunto completo de servicios en línea para el correo electrónico, el almacenamiento de archivos y la colaboración, reuniones, entre otros.|
-|Windows 10 Enterprise|Satisface las necesidades tanto de las organizaciones grandes como de las medianas. Se trata de la versión más productiva y segura de Windows tanto para usuarios como para profesionales de IT, a los que proporciona una administración completa de aplicaciones, dispositivos e implementación.|
+|Windows 10 Enterprise|Meets the needs of both large and midsize organizations. It's the most productive and secure version of Windows for users. For IT professionals, it also provides comprehensive deployment, device, and app management.|
 |Servicios de seguridad avanzada y administración de dispositivos|Incluye Microsoft Intune, un servicio de administración de movilidad empresarial basado en la nube que ayuda a los empleados a ser productivos mientras protegen los datos de su organización.|
 
 ## <a name="plans"></a>Planes
@@ -106,7 +108,7 @@ Existen tres formas de planear e implementar los productos, las características
 
 - En asociación con FastTrack
 
-   Con FastTrack, los ingenieros de Microsoft le ayudan a moverse a la nube a su propio ritmo. Vea [FastTrack para Microsoft 365](https://fasttrack.microsoft.com/microsoft365).
+   With FastTrack, Microsoft engineers help you move to the cloud at your own pace. See [FastTrack for Microsoft 365](https://fasttrack.microsoft.com/microsoft365).
 
 - Con la ayuda de los Servicios de consultoría de Microsoft o de un [asociado de Microsoft](https://partner.microsoft.com/)
 
@@ -134,7 +136,7 @@ Para obtener un ejemplo de cómo una organización multinacional ficticia pero r
 
 ## <a name="best-together-with-surface-and-the-edge-browser"></a>Mejor con Surface y el explorador Microsoft Edge
 
-Optimice la productividad segura e integrada del usuario con la combinación óptima de Microsoft 365 para empresas, dispositivos Microsoft Surface y el explorador Microsoft Edge. Esta integración de productos le proporciona:
+Optimize your user’s integrated and secure productivity with the best-together combination of Microsoft 365 for enterprise, Microsoft Surface devices, and the Microsoft Edge browser. This cross-product integration provides:
 
 - Una infraestructura de seguridad de identidad e inicio de sesión común.
 - Aplicaciones locales y en la nube integradas para búsquedas, colaboración, productividad y cumplimiento.

@@ -14,17 +14,17 @@ search.appverid:
 ms.assetid: eb56b69b-3170-4086-82cf-ba40a530fa1b
 ms.date: 08/21/2020
 ms.collection:
-- M365-security-compliance
+- m365-security
 description: Integre el servidor SIEM de su organización con Microsoft Defender para Office 365 y eventos de amenazas relacionados en la API de administración de actividad de Office 365.
 ms.custom: seo-marvel-apr2020
 ms.subservice: mdo
 ms.service: microsoft-365-security
-ms.openlocfilehash: 90a3b87b4ce2c52a26c2d95b6f607816ff26afa4
-ms.sourcegitcommit: ecc04b5b8f84b34255a2d5e90b5ab596af0d16c7
+ms.openlocfilehash: 16f6ac9c711220c4afc32cc23fe9193ae0afef8c
+ms.sourcegitcommit: 12af9e8e3a6eaa090fda9e98ccb831dff65863a4
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/01/2022
-ms.locfileid: "67497387"
+ms.lasthandoff: 09/27/2022
+ms.locfileid: "68061932"
 ---
 # <a name="siem-integration-with-microsoft-defender-for-office-365"></a>Integración de SIEM con Microsoft Defender para Office 365
 

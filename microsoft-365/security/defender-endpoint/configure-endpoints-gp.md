@@ -6,23 +6,25 @@ ms.service: microsoft-365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
-ms.author: macapara
-author: mjcaparas
+ms.author: siosulli
+author: siosulli
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
-ms.collection: M365-security-compliance
+ms.collection:
+- m365-security
+- tier1
 ms.custom: admindeeplinkDEFENDER
 ms.topic: article
 ms.date: 12/07/2021
 ms.subservice: mde
 search.appverid: met150
-ms.openlocfilehash: 0afaf3d635e04a4592f2cadb24ab582da3a94727
-ms.sourcegitcommit: 9b133379196da2b3a4bb311b07ff274f43780f68
+ms.openlocfilehash: 3aa8872609f07e9382c9b7e2040a417a99221c63
+ms.sourcegitcommit: 0b7070ec119e00e0dafe030bbfbef0ae5c9afa19
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/14/2022
-ms.locfileid: "67683701"
+ms.lasthandoff: 09/29/2022
+ms.locfileid: "68180525"
 ---
 # <a name="onboard-windows-devices-using-group-policy"></a>Incorporar dispositivos Windows mediante directiva de grupo 
 
@@ -120,7 +122,7 @@ Puede usar directiva de grupo (GP) para configurar opciones, como la configuraci
 
 ### <a name="update-endpoint-protection-configuration"></a>Actualización de la configuración de Endpoint Protection
 
-Después de configurar el script de incorporación, siga editando la misma directiva de grupo para agregar configuraciones de endpoint protection. Realice modificaciones de directivas de grupo desde un sistema que ejecute Windows 10 o Server 2019, Windows 11 o Windows Server 2022 para asegurarse de que tiene todas las funcionalidades necesarias de Antivirus de Microsoft Defender. Es posible que tenga que cerrar y volver a abrir el objeto de directiva de grupo para registrar la configuración de ATP de Defender.
+Después de configurar el script de incorporación, siga editando la misma directiva de grupo para agregar configuraciones de endpoint protection. Realice modificaciones de directivas de grupo desde un sistema que ejecute Windows 10, Server 2019, Windows 11 o Windows Server 2022 para asegurarse de que tiene todas las funcionalidades necesarias Microsoft Defender Antivirus. Es posible que tenga que cerrar y volver a abrir el objeto de directiva de grupo para registrar la configuración de ATP de Defender.
 
 Todas las directivas se encuentran en `Computer Configuration\Policies\Administrative Templates`.
 
@@ -132,7 +134,7 @@ Enable\Disable Sample collection|Habilitado: activada la opción "Habilitar reco
 
 <br>
 
-**Ubicación de directiva:**  \Componentes de Windows\Antivirus de Microsoft Defender
+**Ubicación de directiva:** \Componentes de Windows\Microsoft Defender Antivirus
 
 Policy|Setting
 ---|---
@@ -140,7 +142,7 @@ Configuración de la detección para aplicaciones potencialmente no deseadas|Hab
 
 <br>
 
-**Ubicación de directiva:** \Componentes de Windows\Antivirus de Microsoft Defender\MAPS
+**Ubicación de directiva:** \Componentes de Windows\Microsoft Defender Antivirus\MAPS
 
 Policy|Setting
 ---|---
@@ -149,7 +151,7 @@ Envío de ejemplos de archivos cuando se requiera un análisis adicional | Habil
 
 <br>
 
-**Ubicación de directiva:** \Componentes de Windows\Antivirus de Microsoft Defender\Protección en tiempo real
+**Ubicación de directiva:** \Componentes de Windows\Microsoft Defender Antivirus\Protección en tiempo real
 
 Policy|Setting
 ---|---
@@ -160,7 +162,7 @@ Supervisión de la actividad de archivos y programas en el equipo|Habilitado
 
 <br>
 
-**Ubicación de directiva:**  \Componentes de Windows\Antivirus de Microsoft Defender\Examen
+**Ubicación de directiva:** \Componentes de Windows\Microsoft Defender Antivirus\Scan
 
 Esta configuración configura exámenes periódicos del punto de conexión. Se recomienda realizar un examen rápido semanal, lo que permite el rendimiento.
 
@@ -170,7 +172,7 @@ Comprobación de la inteligencia de seguridad de virus y spyware más reciente a
 
 <br>
 
-**Ubicación de directiva:** \Componentes de Windows\Antivirus de Microsoft Defender\Protección contra vulnerabilidades de seguridad de Microsoft Defender\Reducción de superficie expuesta a ataques
+**Ubicación de la directiva:** \Componentes de Windows\Microsoft Defender Antivirus\Microsoft Defender Protección contra vulnerabilidades de seguridad\Reducción de superficie expuesta a ataques
 
 Obtenga la lista actual de reglas de reducción de superficie expuesta a ataques GUID de la [implementación de reglas de reducción de superficie expuesta a ataques Paso 3: Implementar reglas ASR](attack-surface-reduction-rules-deployment-implement.md). Para obtener más detalles, por reglas, consulte [Referencia de reglas de reducción de superficie expuesta a ataques](attack-surface-reduction-rules-reference.md).
 
@@ -188,7 +190,7 @@ Obtenga la lista actual de reglas de reducción de superficie expuesta a ataques
 
 Policy|Ubicación|Setting
 ---|---|---
-Configuración del acceso controlado a carpetas| \Componentes de Windows\Antivirus de Microsoft Defender\Protección contra vulnerabilidades de seguridad de Microsoft Defender\Acceso controlado a carpetas| Habilitado, Modo de auditoría
+Configuración del acceso controlado a carpetas| \Componentes de Windows\Microsoft Defender Antivirus\Microsoft Defender Protección contra vulnerabilidades de seguridad\Acceso controlado a carpetas| Habilitado, Modo de auditoría
 
 ## <a name="run-a-detection-test-to-verify-onboarding"></a>Ejecución de una prueba de detección para comprobar la incorporación
 
@@ -247,11 +249,11 @@ Con directiva de grupo no hay una opción para supervisar la implementación de 
 
 ## <a name="setup-defender-av-policies"></a>Configuración de directivas de Antivirus de Defender
 
-Cree un nuevo directiva de grupo o agrupe esta configuración con las demás directivas. Esto depende del entorno de los clientes y de cómo les gustaría implementar el servicio mediante el destino de distintas unidades organizativas (UNIDADES organizativas).
+Cree un nuevo directiva de grupo o agrupe esta configuración con las demás directivas. Esto depende del entorno del cliente y de cómo le gustaría implementar el servicio dirigiendo las unidades organizativas (OU) diferentes.
 
 1. Después de elegir el GP o crear uno nuevo, edite el GP.
 
-2. Vaya a **Directivas** >  **de configuración** >  del equipo **Plantillas** >  administrativas **Componentes** >  de Windows Antivirus  >  de **Microsoft Defender****Protección en tiempo real**.
+2. Vaya a **Directivas** >  **de configuración** >  del equipo **Plantillas** >  administrativas **Componentes** >  de Windows **Microsoft Defender Antivirus** > **Protección en tiempo real**.
 
     :::image type="content" source="images/realtime-protect.png" alt-text="Protección en tiempo real" lightbox="images/realtime-protect.png":::
 
@@ -267,7 +269,7 @@ Cree un nuevo directiva de grupo o agrupe esta configuración con las demás dir
 
 ### <a name="monitor-all-files-in-real-time-protection"></a>Supervisión de todos los archivos en la protección en tiempo real
 
-Vaya a **Directivas** \> **de configuración** \> del equipo **Plantillas** \> administrativas **Componentes** \> de Windows Antivirus \> de **Microsoft Defender** **Protección en tiempo real**.
+Vaya a **Directivas** \> **de configuración** \> del equipo **Plantillas** \> administrativas **Componentes** \> **de Windows Microsoft Defender Antivirus** \> **Protección en tiempo real**.
 
 :::image type="content" source="images/config-monitor-incoming-outgoing-file-act.png" alt-text="Configuración de la supervisión de la actividad de archivo saliente entrante" lightbox="images/config-monitor-incoming-outgoing-file-act.png":::
 
@@ -283,7 +285,7 @@ Vaya a **Directivas** \> **de configuración** \> del equipo **Plantillas** \> a
 
 ### <a name="configure-potentially-unwanted-applications"></a>Configuración de aplicaciones potencialmente no deseadas
 
-Vaya a **Directivas** \> **de configuración** \> del equipo **Plantillas** \> administrativas **Componentes de** \> Windows **Antivirus de Microsoft Defender**.
+Vaya a **Directivas** \> **de configuración** \> del equipo **Plantillas** \> administrativas **Componentes** \> **de Windows Microsoft Defender Antivirus**.
 
 :::image type="content" source="images/config-potential-unwanted-apps.png" alt-text="Configuración de una posible aplicación no deseada" lightbox="images/config-potential-unwanted-apps.png":::
 
@@ -291,7 +293,7 @@ Vaya a **Directivas** \> **de configuración** \> del equipo **Plantillas** \> a
 
 ### <a name="configure-cloud-deliver-protection-and-send-samples-automatically"></a>Configuración de Cloud Deliver Protection y envío automático de ejemplos
 
-Vaya a **Directivas** \> **de configuración** \> del equipo **Plantillas** \> administrativas **Componentes de** \> Windows **Antivirus de** \> Microsoft Defender **MAPS**.
+Vaya a **Directivas** \> **de configuración** \> del equipo **Plantillas** \> administrativas **Componentes** \> **de Windows Microsoft Defender Antivirus** \> **MAPS**.
 
 :::image type="content" source="images/gpo-maps1.png" alt-text="Mapas" lightbox="images/gpo-maps1.png":::
 
@@ -305,11 +307,11 @@ Vaya a **Directivas** \> **de configuración** \> del equipo **Plantillas** \> a
 > La opción **Enviar todos los ejemplos** proporcionará la mayor parte del análisis de archivos binarios, scripts o documentos, lo que aumenta la posición de seguridad.
 La opción **Enviar ejemplos seguros** limita el tipo de archivos binarios, scripts o documentos que se están analizando y reduce la posición de seguridad. 
 
-Para obtener más información, consulte [Activar la protección en la nube en el Antivirus de Microsoft Defender](enable-cloud-protection-microsoft-defender-antivirus.md) y [Protección en la nube y envío de ejemplo en Antivirus de Microsoft Defender.](cloud-protection-microsoft-antivirus-sample-submission.md)
+Para obtener más información, consulte [Activar la protección en la nube en Microsoft Defender Antivirus](enable-cloud-protection-microsoft-defender-antivirus.md) y [Protección en la nube y envío de ejemplo en Microsoft Defender Antivirus.](cloud-protection-microsoft-antivirus-sample-submission.md)
 
 ### <a name="check-for-signature-update"></a>Comprobación de la actualización de firma
 
-Vaya a **Directivas** \> **de configuración** \> del equipo **Plantillas** \> administrativas **Componentes** \> de Windows Antivirus \> de **Microsoft Defender** **Inteligencia de seguridad Novedades**.
+Vaya a **Directivas** \> **de configuración** \> del equipo **Plantillas** \> administrativas **Componentes** \> de Windows **Microsoft Defender Antivirus** \> **Security Intelligence Novedades**.
 
 :::image type="content" source="images/signature-update-1.png" alt-text="Actualización de firma" lightbox="images/signature-update-1.png":::
 
@@ -317,8 +319,8 @@ Vaya a **Directivas** \> **de configuración** \> del equipo **Plantillas** \> a
 
 ### <a name="configure-cloud-deliver-timeout-and-protection-level"></a>Configuración del tiempo de espera y el nivel de protección de entrega en la nube
 
-Vaya a **Directivas** \> **de configuración** \> del equipo **Plantillas** \> administrativas **Componentes de** \> Windows Antivirus \> de **Microsoft Defender** **MpEngine**.
-Al configurar la directiva de nivel de protección en la nube en **La directiva predeterminada de bloqueo del Antivirus de Microsoft Defender** , se deshabilitará la directiva. Esto es lo que se necesita para establecer el nivel de protección en el valor predeterminado de Windows.
+Vaya a **Directivas** \> **de configuración** \> del equipo **Plantillas** \> administrativas **Componentes** \> **de Windows Microsoft Defender Antivirus** \> **MpEngine**.
+Al configurar la directiva de nivel de protección en la nube en **Predeterminada Microsoft Defender directiva de bloqueo antivirus**, se deshabilitará la directiva. Esto es lo que se necesita para establecer el nivel de protección en el valor predeterminado de Windows.
 
 :::image type="content" source="images/config-extended-cloud-check.png" alt-text="comprobación de la nube extendida de config" lightbox="images/config-extended-cloud-check.png":::
 

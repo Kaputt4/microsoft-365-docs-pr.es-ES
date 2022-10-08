@@ -15,18 +15,20 @@ author: mjcaparas
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
-ms.collection: M365-security-compliance
+ms.collection:
+- m365-security
+- tier3
 ms.topic: conceptual
 search.appverid:
 - MOE150
 - MET150
 ms.custom: api
-ms.openlocfilehash: 8531a2f647f9f8adaeb952c08cae596142fc884f
-ms.sourcegitcommit: 10e6abe740e27000e223378eb17d657a47555fa8
+ms.openlocfilehash: 749d4a5c5884275a664a032b1f423e7e0fbdfafc
+ms.sourcegitcommit: 12af9e8e3a6eaa090fda9e98ccb831dff65863a4
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/31/2022
-ms.locfileid: "67471376"
+ms.lasthandoff: 09/27/2022
+ms.locfileid: "68062152"
 ---
 # <a name="microsoft-365-defender-incidents-api-and-the-incidents-resource-type"></a>Microsoft 365 Defender API de incidentes y el tipo de recurso incidents
 
@@ -75,14 +77,14 @@ lastUpdateTime | DateTimeOffset | Fecha y hora (en UTC) que el incidente se actu
 assignedTo | string | Propietario del incidente.
 severity | Enum | Gravedad del incidente. Los valores posibles son: ```UnSpecified```, ```Informational```, ```Low```, ```Medium```y ```High```.
 status | Enum | Especifica el estado actual del incidente. Los valores posibles son ```Active```, ```InProgress```, ```Resolved``` y ```Redirected```
-classification | Enum | Especificación del incidente. Los valores posibles son: ```Unknown```, ```FalsePositive``` y ```TruePositive```.
-Determinación | Enum | Especifica la determinación del incidente. Valores posibles: ```NotAvailable```, ```Apt```, ```Malware```, ```SecurityPersonnel```, ```SecurityTesting```, ```UnwantedSoftware```, ```Other```.
-tags | string List | Lista de etiquetas de incidentes.
+classification | Enum | Especificación del incidente. Los valores posibles son: `TruePositive`, `Informational, expected activity`y `FalsePositive`.
+Determinación | Enum | Especifica la determinación del incidente. <p>Los valores de determinación posibles para cada clasificación son: <br><li> <b>Verdadero positivo</b>: `Multistage attack` (MultiStagedAttack), `Malicious user activity` (MaliciousUserActivity), `Compromised account` (CompromisedUser): considere la posibilidad de cambiar el nombre de la enumeración en la API pública en consecuencia, `Malware` (Malware), `Phishing` (Phishing), `Unwanted software` (UnwantedSoftware) y `Other` (Other). <li> <b>Actividad informativa y esperada:</b> `Security test` (SecurityTesting), `Line-of-business application` (LineOfBusinessApplication), `Confirmed activity` (ConfirmedUserActivity): considere la posibilidad de cambiar el nombre de la enumeración en la API pública en consecuencia y `Other` (Otros). <li>  <b>Falso positivo:</b> `Not malicious` (Limpiar): considere la posibilidad de cambiar el nombre de la enumeración en la API pública en consecuencia, `Not enough data to validate` (InsufficientData) y `Other` (Other).
+tags | lista de cadenas | Lista de etiquetas de incidentes.
 comments | Lista de comentarios de incidentes | El objeto Incident Comment contiene: cadena de comentario, cadena createdBy y fecha y hora de createTime.
-alertas | Lista de alertas | Lista de alertas relacionadas. Consulte ejemplos en [la documentación de la API De lista de incidentes](api-list-incidents.md) .
+alertas | lista de alertas | Lista de alertas relacionadas. Consulte ejemplos en [la documentación de la API De lista de incidentes](api-list-incidents.md) .
 
 >[!NOTE]
->Alrededor del 29 de agosto de 2022, los valores de determinación de alertas admitidos anteriormente ("Apt" y "SecurityPersonnel") quedarán en desuso y ya no estarán disponibles a través de la API.
+>Alrededor del 29 de agosto de 2022, los valores de determinación de alertas admitidos anteriormente ("Apt" y "SecurityPersonnel") estarán en desuso y ya no estarán disponibles a través de la API.
 
 ## <a name="related-articles"></a>Artículos relacionados
 

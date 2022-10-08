@@ -7,9 +7,10 @@ author: kwekua
 manager: scotv
 audience: Admin
 ms.topic: article
-ms.service: o365-administration
+ms.service: microsoft-365-business
 ms.localizationpriority: medium
 ms.collection:
+- scotvorg
 - M365-subscription-management
 - Adm_O365
 - Adm_TOC
@@ -23,16 +24,16 @@ search.appverid:
 - MOE150
 ms.assetid: 767349fa-f646-46d9-9dab-4a65049bdd1f
 description: Actualice el número de teléfono y la dirección de correo electrónico del administrador en el centro de administración si desea restablecer su propia contraseña de administrador.
-ms.openlocfilehash: 8e20aa49bc5d48ebf4e3434f2d5c294bfba5a08f
-ms.sourcegitcommit: da6b3cb3b2ccfcdcd5091efce8290b6c486547db
+ms.openlocfilehash: 0bc1f019b3eea8e7e89d84303447725b9801278f
+ms.sourcegitcommit: 0b7070ec119e00e0dafe030bbfbef0ae5c9afa19
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/18/2022
-ms.locfileid: "65468446"
+ms.lasthandoff: 09/29/2022
+ms.locfileid: "68188601"
 ---
 # <a name="update-your-microsoft-365-admin-phone-number-and-email-address"></a>Actualizar el número de teléfono y la dirección de correo electrónico del administrador de Microsoft 365
 
-En este artículo se explica cómo usted, el administrador, puede cambiar su teléfono empresarial y dirección de correo electrónico en Microsoft 365.
+En este artículo se explica cómo usted, el administrador, puede cambiar el teléfono empresarial y la dirección de correo electrónico en Microsoft 365.
   
 Si está buscando información sobre cómo cambiar la información de perfil de la empresa, como puede ser el nombre, la dirección de la empresa, el número de teléfono de la empresa, y la información de contacto técnico, consulte [Cambiar la dirección de su organización, el correo electrónico de contacto técnico y otra información](change-address-contact-and-more.md).
 
@@ -46,7 +47,7 @@ Use la página **Información de seguridad** para cambiar el número de teléfon
 
 2. En el encabezado, seleccione el icono \> de perfil **Mi cuenta** \> **Información de seguridad**.
 
-3. En la pestaña **Información de seguridad**, seleccione **Agregar método** \> **Teléfono** \> **Teléfono alternativo** o **Correo electrónico** para agregar detalles. Para actualizar los detalles de la dirección de correo electrónico alternativa, el teléfono y el móvil, seleccione **Cambiar**. Asegúrese de usar algo distinto de su dirección de correo electrónico de Microsoft para su dirección de correo electrónico alternativa.
+3. En la pestaña **Información de seguridad**, seleccione **Agregar teléfono** \> **alternativo** de **método** \> o **Email** para agregar detalles. Para actualizar los detalles de la dirección de correo electrónico alternativa, el teléfono y el móvil, seleccione **Cambiar**. Asegúrese de usar algo distinto de su dirección de correo electrónico de Microsoft para su dirección de correo electrónico alternativa.
 
     > [!IMPORTANT]
     > La dirección de correo electrónico alternativa y el número de teléfono móvil son necesarios para restablecer la contraseña de administrador (no la contraseña de administrador del equipo).

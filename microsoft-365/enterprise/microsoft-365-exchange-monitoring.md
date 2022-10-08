@@ -5,23 +5,24 @@ author: kelleyvice-msft
 manager: scotv
 audience: Admin
 ms.topic: article
-ms.service: o365-administration
+ms.service: microsoft-365-enterprise
 ms.localizationpriority: high
 search.appverid:
 - MET150
 ms.collection:
+- scotvorg
 - Ent_O365
 - Strat_O365_Enterprise
 ms.custom: admindeeplinkMAC
 f1.keywords:
 - NOCSH
 description: Usar supervisión de Exchange Online para obtener información sobre avisos o incidentes de correo electrónico en Microsoft 365.
-ms.openlocfilehash: 07d43a6f61ffe3e38f927d47e09d0a9685925f73
-ms.sourcegitcommit: 0ae89b71b202aceabd5061f0d5b46d030d93e931
-ms.translationtype: HT
+ms.openlocfilehash: 97500a7ad2eb801d4bbcad622cce8ca222ae363e
+ms.sourcegitcommit: 0b7070ec119e00e0dafe030bbfbef0ae5c9afa19
+ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/29/2022
-ms.locfileid: "64520729"
+ms.lasthandoff: 09/29/2022
+ms.locfileid: "68180569"
 ---
 # <a name="exchange-online-monitoring-for-microsoft-365"></a>Supervisión de Exchange Online para Microsoft 365
 
@@ -40,7 +41,7 @@ La supervisión de Exchange Online admite los siguientes escenarios de nivel de
    >[!Note]
    > El recuento de usuarios activos se mide por una única actividad, por ejemplo, cuando un usuario lee un correo electrónico. Solo se tienen en cuenta los últimos 30 minutos de actividad.
 
-- **Conectividad de la aplicación**: la conectividad estimada se basa en el porcentaje de conexiones sintéticas exitosas entre los dispositivos de su organización y Exchange Online, y puede incluir problemas fuera del control de Microsoft. Para obtener más información, consulte [Óptica de conectividad de Microsoft 365](microsoft-365-connectivity-optics.md).
+- **App connectivity**: Estimated connectivity is based on the percentage of successful, synthetic connections between your organization's devices and Exchange Online, and may include issues outside of Microsoft's control. To learn more, see [Microsoft 365 Connectivity Optics](microsoft-365-connectivity-optics.md).
 
 - **Autenticación básica y autenticación moderna**: número de usuarios validados correctamente en el servicio de Exchange Online.
 
@@ -90,11 +91,11 @@ En estos escenarios, puede ver avisos e incidentes, activos y resueltos, que afe
 
 En el panel de cuentas afectadas, la columna **Estado** tiene estos valores:
 
-- Corregido: se ha solucionado el problema que causaba el aviso o incidente para la cuenta de prioridad. Ya no hay ningún problema. 
+- Fixed: The issue causing the advisory or incident has been addressed for the priority account. There's no longer an issue. 
 
-- Activo: el problema que causa el aviso o incidente está en curso para la cuenta de prioridad. El problema persiste. 
+- Active: The issue causing the advisory or incident is ongoing for the priority account. The issue remains. 
 
-- Retrasado: el problema que causa el aviso o incidente no se ha solucionado para la cuenta prioritaria en 96 horas, por lo que se ha suspendido. El problema sigue sin solucionarse. 
+- Delayed: The issue causing the advisory or incident hasn't been addressed for the priority account in 96 hours, so it's suspended. The issue remains. 
 
 Por ejemplo:
 
@@ -110,4 +111,4 @@ El recuento de usuarios activos que se muestra en la supervisión se basa en una
 
 ### <a name="2-where-is-the-data-instrumented-for-the-scenarios-that-show-activity-trends"></a>2. ¿Dónde están los datos instrumentados para los escenarios que muestran las tendencias de actividad?
 
-Los datos se usan en el servicio de Exchange Online. Si se produce un error antes de que la solicitud llegue a Exchange Online o existe un error en Exchange Online, verá una caída en la señal de actividad.
+The data is instrumented in the Exchange Online service. If there's a failure that happens before the request reaches Exchange Online or there's a failure in Exchange Online, you'll see a drop in the activity signal.

@@ -7,19 +7,20 @@ ms.author: kvice
 manager: scotv
 audience: ITPro
 ms.topic: article
-ms.service: o365-solutions
+ms.service: microsoft-365-enterprise
 ms.localizationpriority: medium
 ms.collection:
+- scotvorg
 - M365-modern-desktop
 - Strat_O365_Enterprise
 ms.custom: ''
 description: Entienda cómo Contoso usó Configuration Manager de Microsoft Endpoint para implementar las actualizaciones locales de Windows 10 Enterprise.
-ms.openlocfilehash: 082c60de614c5a125a1fd2af6ba9d187f21ca39e
-ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
+ms.openlocfilehash: 2d71bb45aff9a61e80470ee834dbfe645298a218
+ms.sourcegitcommit: 0b7070ec119e00e0dafe030bbfbef0ae5c9afa19
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "65095364"
+ms.lasthandoff: 09/29/2022
+ms.locfileid: "68171419"
 ---
 # <a name="windows-10-enterprise-deployment-for-contoso"></a>Implementación de Windows 10 Enterprise para Contoso
 
@@ -50,7 +51,7 @@ Antes y durante las actualizaciones locales de Windows 10 Enterprise, Contoso us
 
   Identifica los dispositivos que se bloquean con frecuencia y que quizás deban volver a crearse o reemplazarse, y los controladores de dispositivos que estén causando bloqueos en los mismos, y ofrece sugerencias de versiones alternativas de dichos controladores que pueden reducir el número de bloqueos. Proporciona una notificación de las configuraciones incorrectas de Windows Information Protection que envía avisos a los usuarios finales.
  
-Contoso tiene una infraestructura existente de Configuration Manager (Rama actual). Configuration Manager se escala en entornos de gran tamaño y proporciona un amplio control sobre la instalación, las actualizaciones y la configuración. También incluye características integradas para que sea más fácil y eficaz implementar y administrar Windows 10 Enterprise.
+Contoso has an existing Configuration Manager (Current Branch) infrastructure. Configuration Manager scales for large environments and provides extensive control over installation, updates, and settings. It also has built-in features to make it easier and more efficient to deploy and manage Windows 10 Enterprise.
 
 ## <a name="planning-process"></a>Proceso de planeación
 
@@ -62,9 +63,9 @@ Para completar la implementación de actualizaciones locales de Windows 10 Enter
 
 1. Habilitó la caché del mismo nivel para Configuration Manager.
 2. Creó paquetes de Windows personalizados en función de imágenes del Centro de servicios de licencias por volumen.
-3. Se usa Configuration Manager para implementar los paquetes de Windows en puntos de distribución de su red y compilaciones implementadas en los tres grupos de ensayo de validación e implementación.
+3. Se usa Configuration Manager para implementar los paquetes de Windows en puntos de distribución en su red y compilaciones implementadas en los tres grupos de ensayo de validación e implementación.
 4. Evaluó el éxito de los equipos y dispositivos en los tres anillos de validación y pruebas de implementación mediante las soluciones Estado del dispositivo y Update Compliance de Windows Analytics.
-5. En función de la información de Windows Analytics, Contoso determinó la versión de Windows 10 Enterprise para implementar en el amplio grupo de implementación.
+5. En función de la información de Windows Analytics, Contoso determinó la versión de Windows 10 Enterprise que se va a implementar en el amplio grupo de implementación.
 6. Ejecutó las secuencias de tareas de implementación Configuration Manager para implementar el paquete de Windows seleccionado en el amplio grupo de implementación.
 7. Equipos y dispositivos supervisados en el amplio grupo de implementación mediante las soluciones Estado de los dispositivos y Cumplimiento de actualizaciones para solucionar problemas.
 
@@ -78,7 +79,7 @@ Esta infraestructura consta de:
   - Obtiene imágenes de paquetes de Windows 10 Enterprise del Centro de servicios de licencias por volumen de Microsoft en Microsoft Network.
   - Es el punto de administración central para los paquetes de implementación.
 - Puntos de distribución regionales que normalmente se encuentran en las oficinas centrales regionales de Contoso.
-- Windows equipos y dispositivos en varias ubicaciones que reciben e instalan los paquetes de implementación para la actualización local o las actualizaciones continuas basadas en la pertenencia a grupos.
+- Equipos y dispositivos Windows en varias ubicaciones que reciben e instalan los paquetes de implementación para la actualización local o las actualizaciones en curso basadas en la pertenencia a grupos.
 
 ## <a name="next-step"></a>Paso siguiente
 

@@ -13,13 +13,14 @@ ms.assetid: 64535a0a-1044-413f-8bc2-ed8e8a0bc54c
 description: Microsoft ofrece ayuda para EOP en diversos lugares y a través de varios métodos, incluido el autosoporte o el soporte asistido.
 ms.subservice: mdo
 ms.service: microsoft-365-security
-ms.collection: M365-security-compliance
-ms.openlocfilehash: 8b1b96df91081f2fd8bff3f4d80f8c4c8e016b46
-ms.sourcegitcommit: 2b89bcff547e00be3d38dc8d1e6cbcf8f41eba42
+ms.collection: m365-security
+search.appverid: met150
+ms.openlocfilehash: f7bf32eec4a29a242c8783f248955ec7546fa75d
+ms.sourcegitcommit: 12af9e8e3a6eaa090fda9e98ccb831dff65863a4
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/03/2022
-ms.locfileid: "67595793"
+ms.lasthandoff: 09/27/2022
+ms.locfileid: "68075084"
 ---
 # <a name="help-and-support-for-eop"></a>Ayuda y soporte técnico para EOP
 
@@ -52,7 +53,7 @@ Puede obtener ayuda de Microsoft iniciando una nueva solicitud de servicio dentr
 
 ### <a name="support-for-microsoft-premier-support-subscribers"></a>Soporte para suscriptores de soporte premier de Microsoft
 
-Si es un cliente de EOP y también tiene un contrato de soporte premier de Microsoft, puede obtener soporte a través de los canales normales de soporte premier de Microsoft. Esto le permite recibir acceso a todos los procesos y recursos disponibles para clientes de soporte premier, como al administrador de cuentas de soporte técnico premier (TAM) y al envío de casos. El soporte premier para Microsoft Online Services amplía el marco de trabajo de soporte premier de los productos locales a los productos en línea, lo que le proporciona una experiencia de soporte unificada en todos los productos y servicios. Este servicio ayuda a garantizar que los clientes puedan resolver los problemas rápidamente y simplifica la tarea de administrar el soporte para distintos componentes de una infraestructura de TI.
+If you are an EOP customer and also have a Microsoft Premier Support contract, you can get support through the normal Microsoft Premier Support channels. This allows you to receive access to all processes and resources available to Premier Support customers, such as a Premier Technical Account Manager (TAM) and case submission. Premier Support for Microsoft Online Services extends the Premier Support framework beyond on-premises products to online services, providing you with a unified support experience across all products and services. This service helps ensure that customers can resolve issues quickly and simplifies the task of managing support for different components of an IT infrastructure.
 
 Para obtener más información sobre cómo el soporte técnico Premier puede ayudar a su organización a maximizar el valor de sus inversiones de TI, consulte [Soporte técnico premier para partners](https://partner.microsoft.com/support/microsoft-services-premier-support).
 
@@ -80,13 +81,13 @@ Microsoft proporciona números de teléfono locales o gratuitos para el soporte 
 
 |País o región|Preguntas previas a la compra y de facturación|Preguntas de soporte técnico|
 |---|---|---|
-|Brasil|Gratuito: 08007621146 <br> Local: 1147001999|Mismo|
-|Francia|Gratuito: 0805 540 594 <br> Local: 01 57 32 42 97|Mismo|
-|Alemania|Gratuito: 0800 589 2332 <br>  Local: 069 380 789 508|Mismo|
+|Brasil|Gratuito: 08007621146 <br> Local: 1147001999|Igual|
+|Francia|Gratuito: 0805 540 594 <br> Local: 01 57 32 42 97|Igual|
+|Alemania|Gratuito: 0800 589 2332 <br>  Local: 069 380 789 508|Igual|
 |Japón|Gratuito: 0120-628860 <br> Local: 343326257|Gratuito: 0120-996680 <br> Local: 357679793|
-|Corea|Gratuito: 080-495-0880 <br> Local: 234831937|Mismo|
-|España|Gratuito: 900 814 197 <br> Local: 912 718 160|Mismo|
-|Reino Unido|Gratuito: 0800 032 6417 <br> Local: 0203 450 6455|Mismo|
+|Corea|Gratuito: 080-495-0880 <br> Local: 234831937|Igual|
+|España|Gratuito: 900 814 197 <br> Local: 912 718 160|Igual|
+|Reino Unido|Gratuito: 0800 032 6417 <br> Local: 0203 450 6455|Igual|
 |Estados Unidos|Gratuito: 1-877-913-2707|Gratuito: 1-800-865-9408|
 
 ## <a name="for-more-information-about-eop-documentation"></a>Más información acerca de la documentación de EOP

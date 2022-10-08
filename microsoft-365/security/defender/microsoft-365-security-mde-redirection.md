@@ -17,15 +17,16 @@ ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection:
-- M365-security-compliance
+- m365-security
+- tier2
 ms.custom: admindeeplinkDEFENDER
 ms.topic: article
-ms.openlocfilehash: 90ddf53090f79c3d372aa2119330e71919849bc0
-ms.sourcegitcommit: 10e6abe740e27000e223378eb17d657a47555fa8
+ms.openlocfilehash: 3f7d7bab51a8dfb29b25701ccc87e49b437529ab
+ms.sourcegitcommit: 12af9e8e3a6eaa090fda9e98ccb831dff65863a4
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/31/2022
-ms.locfileid: "67479982"
+ms.lasthandoff: 09/27/2022
+ms.locfileid: "68072621"
 ---
 # <a name="redirecting-accounts-from-microsoft-defender-for-endpoint-to-microsoft-365-defender"></a>Redirigir cuentas de Microsoft Defender para punto de conexión a Microsoft 365 Defender
 
@@ -35,7 +36,7 @@ ms.locfileid: "67479982"
 - Microsoft 365 Defender
 - Defender para punto de conexión
 
-En consonancia con el enfoque entre dominios de Microsoft para la protección contra amenazas con SIEM y la detección y respuesta extendidas (XDR), hemos cambiado el nombre de Protección contra amenazas avanzada de Microsoft Defender como Microsoft Defender para punto de conexión y la hemos unificado en un único portal integrado: Microsoft 365 Defender.
+En consonancia con el enfoque entre dominios de Microsoft para la protección contra amenazas con SIEM y la detección y respuesta extendidas (XDR), hemos cambiado el nombre de Microsoft Defender Advanced Threat Protection como Microsoft Defender para punto de conexión y lo hemos unificado en un único portal integrado: Microsoft 365 Defender.
 
 En esta guía se explica cómo enrutar las cuentas a Microsoft 365 Defender habilitando el redireccionamiento automático desde el portal de Microsoft Defender para punto de conexión anterior (securitycenter.windows.com o securitycenter.microsoft.com) a <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">Microsoft 365 Defender </a>.
 

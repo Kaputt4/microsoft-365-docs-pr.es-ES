@@ -10,19 +10,20 @@ ms.topic: article
 ms.date: 05/05/2021
 ms.localizationpriority: medium
 ms.collection:
-- M365-security-compliance
+- m365-security
 - m365initiative-defender-office365
 description: Vea e investigue los intentos de suplantación de identidad de malware.
 ms.custom:
 - seo-marvel-apr2020
 ms.subservice: mdo
 ms.service: microsoft-365-security
-ms.openlocfilehash: cd3d2ca5dee7d3857bb889ded9dc83e6279f2e51
-ms.sourcegitcommit: 2b89bcff547e00be3d38dc8d1e6cbcf8f41eba42
+search.appverid: met150
+ms.openlocfilehash: 4d2e67ba581c1855ec4b4d7ad7b7f8b89dffe321
+ms.sourcegitcommit: 12af9e8e3a6eaa090fda9e98ccb831dff65863a4
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/03/2022
-ms.locfileid: "67596035"
+ms.lasthandoff: 09/27/2022
+ms.locfileid: "68062108"
 ---
 # <a name="email-security-with-threat-explorer-in-microsoft-defender-for-office-365"></a>Email seguridad con el Explorador de amenazas en Microsoft Defender para Office 365
 

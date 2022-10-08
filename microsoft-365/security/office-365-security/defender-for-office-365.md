@@ -12,7 +12,7 @@ search.appverid:
 - MOE150
 ms.assetid: e100fe7c-f2a1-4b7d-9e08-622330b83653
 ms.collection:
-- M365-security-compliance
+- m365-security
 - m365initiative-defender-office365
 ms.custom:
 - seo-marvel-apr2020
@@ -20,12 +20,12 @@ ms.custom:
 description: Microsoft Defender para Office 365 incluye archivos adjuntos seguros, vínculos seguros, herramientas avanzadas antiphishing, herramientas de creación de informes y funciones de inteligencia sobre amenazas.
 ms.subservice: mdo
 ms.service: microsoft-365-security
-ms.openlocfilehash: a67dd69c4b533fc63536a43f40921dfe0babde12
-ms.sourcegitcommit: 95ac076310ab9006ed92c69938f7ae771cd10826
+ms.openlocfilehash: a7dd841c3d74f123d6fdadf152b36afe4be3a825
+ms.sourcegitcommit: 12af9e8e3a6eaa090fda9e98ccb831dff65863a4
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/20/2022
-ms.locfileid: "67851708"
+ms.lasthandoff: 09/27/2022
+ms.locfileid: "68072511"
 ---
 # <a name="microsoft-defender-for-office-365"></a>Microsoft Defender para Office 365
 
@@ -36,9 +36,9 @@ ms.locfileid: "67851708"
 - [Microsoft 365 Defender](../defender/microsoft-365-defender.md)
 
 > [!IMPORTANT]
-> Este artículo está destinado a clientes empresariales que tienen [de Microsoft Defender para Office 365](/office365/servicedescriptions/office-365-advanced-threat-protection-service-description). Si usa Outlook.com, Microsoft 365 Familia o Microsoft 365 Personal, y está buscando información sobre vínculos seguros o datos adjuntos seguros en Outlook, vea [Seguridad avanzada de Outlook para suscriptores de Microsoft 365](https://support.microsoft.com/office/882d2243-eab9-4545-a58a-b36fee4a46e2).
+> This article is intended for business customers who have [Microsoft Defender for Office 365](/office365/servicedescriptions/office-365-advanced-threat-protection-service-description). If you are using Outlook.com, Microsoft 365 Family, or Microsoft 365 Personal, and you're looking for information about Safe Links or Safe Attachments in Outlook, see [Advanced Outlook.com security for Microsoft 365 subscribers](https://support.microsoft.com/office/882d2243-eab9-4545-a58a-b36fee4a46e2).
 
-Microsoft Defender para Office 365 protege su organización frente a las amenazas dañinas que representan los mensajes de correo electrónico, vínculos (URL) y herramientas de colaboración. Microsoft Defender para Office 365 incluye:
+Microsoft Defender for Office 365 safeguards your organization against malicious threats posed by email messages, links (URLs), and collaboration tools. Defender for Office 365 includes:
 
 - **[Directivas de protección contra amenazas](#configure-microsoft-defender-for-office-365-policies)**: defina directivas de protección contra amenazas para establecer el nivel de protección adecuado para su organización.
 
@@ -56,7 +56,7 @@ En esta guía interactiva, aprenderá cómo proteger su organización con Micros
 
 ## <a name="getting-started"></a>Introducción
 
-Si no está familiarizado con Microsoft Defender para Office 365 o prefiere *aprender mediante la práctica*, puede que le convenga analizar por partes la configuración inicial de Microsoft Defender para Office 365, investigar y consultar informes utilizando este artículo como referencia. Estos son fragmentos lógicos de configuración temprana:
+If you're new to Microsoft Defender for Office 365 or learn best by *doing*, you may benefit from breaking initial Defender for Office 365 configuration into chunks, investigating, and viewing reports using this article as a reference. Here are logical early configuration chunks:
 
 - Configure todo con "*anti*" en el nombre.
   - antimalware
@@ -134,7 +134,7 @@ El Plan 2 de Microsoft Defender para Office 365 incluye las mejores [herramienta
 
 - **[Los rastreadores de amenazas](threat-trackers.md)** proporcionar la información más reciente sobre los problemas de ciberseguridad existentes. Por ejemplo, puede ver información sobre el malware más reciente y tomar medidas antes de que se convierta en una amenaza real para su organización. Entre los rastreadores disponibles se incluyen [Rastreadores destacados](threat-trackers.md#noteworthy-trackers), [Rastreadores en tendencia](threat-trackers.md#trending-trackers), [Consultas rastreadas](threat-trackers.md#tracked-queries) y [Consultas guardadas](threat-trackers.md#saved-queries).
 
-- **[explorador de amenazas (o detecciones en tiempo real)](threat-explorer.md)** (también conocido como Explorador) es un informe en tiempo real que permite identificar y analizar amenazas recientes. Puede configurar el Explorador para mostrar los datos de períodos personalizados.
+- **[Threat Explorer (or real-time detections)](threat-explorer.md)** (also referred to as Explorer) is a real-time report that allows you to identify and analyze recent threats. You can configure Explorer to show data for custom periods.
 
 - **[El aprendizaje del simulador de ataques](attack-simulation-training.md)** le permite ejecutar escenarios de ataque realistas en su organización para identificar vulnerabilidades. Están disponibles las simulaciones de los tipos de ataques actuales, incluidos los de phishing de objetivo definido (robo de credenciales), ataques de difusión de contraseña y por fuerza bruta.
 
@@ -144,7 +144,7 @@ El Plan 2 de Microsoft Defender para Office 365 incluye las mejores [herramienta
 
 ## <a name="permissions-required-to-use-microsoft-defender-for-office-365-features"></a>Permisos necesarios para usar las características de Microsoft Defender para Office 365
 
-Para obtener acceso a las características de Microsoft Defender para Office 365, debe tener asignado un rol adecuado. En la tabla siguiente se incluyen algunos ejemplos:
+To access Microsoft Defender for Office 365 features, you must be assigned an appropriate role. The following table includes some examples:
 
 |Rol o grupo de roles|Recursos para obtener más información|
 |---|---|

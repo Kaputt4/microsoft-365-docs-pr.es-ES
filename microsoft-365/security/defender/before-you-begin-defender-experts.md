@@ -1,8 +1,8 @@
 ---
-title: Requisitos clave de infraestructura antes de inscribirse en el servicio Microsoft Defender Experts for Hunting
+title: Requisitos clave de infraestructura antes de inscribirse en el servicio expertos en búsqueda de Microsoft Defender
 ms.reviewer: ''
 description: En esta sección se describen los requisitos clave de infraestructura que debe cumplir e información importante sobre el acceso y el cumplimiento de los datos.
-keywords: servicio de búsqueda de amenazas administrada, búsqueda de amenazas administrada, servicio de detección y respuesta administrada (MDR), MTE, Expertos en amenazas de Microsoft, MTE-TAN, notificación de expertos de defender, notificación de ataque dirigido, expertos de Microsoft Defender para la búsqueda, búsqueda y análisis de amenazas.
+keywords: servicio de búsqueda de amenazas administrada, búsqueda de amenazas administrada, servicio de detección y respuesta administrada (MDR), MTE, Expertos en amenazas de Microsoft, MTE-TAN, notificación de expertos de defender, notificación de ataque dirigido, Microsoft Defender Expertos para la búsqueda, la búsqueda de amenazas y el análisis.
 search.product: Windows 10
 ms.service: microsoft-365-security
 ms.subservice: m365d
@@ -15,16 +15,17 @@ ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection:
-- m365-security-compliance
+- m365-security
 - m365initiative-defender-endpoint
+- tier1
 ms.topic: conceptual
 search.appverid: met150
-ms.openlocfilehash: 05b88bdb0d77f1844d70d3d1954dff192fe43135
-ms.sourcegitcommit: 9b133379196da2b3a4bb311b07ff274f43780f68
+ms.openlocfilehash: 24518a28165b18c3afe26fff397095178252ad95
+ms.sourcegitcommit: 12af9e8e3a6eaa090fda9e98ccb831dff65863a4
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/14/2022
-ms.locfileid: "67687469"
+ms.lasthandoff: 09/27/2022
+ms.locfileid: "68062097"
 ---
 # <a name="before-you-begin-using-defender-experts-for-hunting"></a>Antes de empezar a usar Expertos de Defender para la búsqueda
 
@@ -34,11 +35,11 @@ ms.locfileid: "67687469"
 
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
-En este documento se describen los requisitos clave de infraestructura que debe cumplir e información importante sobre el acceso a datos y el cumplimiento que debe conocer antes de inscribirse en el servicio Expertos de Microsoft Defender para la búsqueda. Microsoft entiende que los clientes que usan nuestros servicios administrados nos confían su recurso más valioso, sus datos.
+En este documento se describen los requisitos clave de infraestructura que debe cumplir y la información importante sobre el acceso a datos y el cumplimiento que debe conocer antes de inscribirse en el servicio de Microsoft Defender Experts for Hunting. Microsoft entiende que los clientes que usan nuestros servicios administrados nos confían su recurso más valioso, sus datos.
 
 ## <a name="check-if-your-environment-meets-licensing-and-access-prerequisites"></a>Compruebe si el entorno cumple los requisitos previos de licencia y acceso.
 
-Expertos de Microsoft Defender para la búsqueda es un servicio independiente de los productos de Defender existentes. Antes de inscribirse en este servicio, asegúrese de que tiene la licencia y el acceso necesarios. 
+Microsoft Defender Experts for Hunting es un servicio independiente de los productos de Defender existentes. Antes de inscribirse en este servicio, asegúrese de que tiene la licencia y el acceso necesarios. 
 
 ### <a name="eligibility-and-licensing"></a>Elegibilidad y licencias
 
@@ -48,13 +49,13 @@ Para obtener más información sobre los términos de licencia comercial de Micr
 
 ### <a name="access-requirements"></a>Requisitos de acceso
 
-Cualquier persona de su organización puede completar el formulario de interés del cliente para el servicio Expertos de Microsoft Defender para la búsqueda; sin embargo, debe trabajar con su ejecutivo comercial para realizar transacciones con la SKU. Es posible que necesite determinados roles y permisos para acceder completamente a las funcionalidades del servicio. Consulte [Roles personalizados en el control de acceso basado en rol para obtener Microsoft 365 Defender](custom-roles.md) para obtener más información.
+Cualquier persona de su organización puede completar el formulario de interés del cliente para Microsoft Defender servicio Experts for Hunting; sin embargo, debe trabajar con su ejecutivo comercial para realizar transacciones con la SKU. Es posible que necesite determinados roles y permisos para acceder completamente a las funcionalidades del servicio. Consulte [Roles personalizados en el control de acceso basado en rol para obtener Microsoft 365 Defender](custom-roles.md) para obtener más información.
 
 ## <a name="understand-the-services-availability-and-data-access-requirements"></a>Descripción de los requisitos de disponibilidad y acceso a datos del servicio
 
 Expertos de Defender para la búsqueda es un servicio de búsqueda de amenazas administrado que busca amenazas de forma proactiva en los puntos de conexión, el correo electrónico, la identidad y las aplicaciones en la nube. Para llevar a cabo la búsqueda en su nombre, los expertos de Microsoft necesitan acceso a sus Microsoft 365 Defender datos de búsqueda avanzados. Inscribirse en este servicio significa que concede permiso a expertos de Microsoft para acceder a dichos datos.
 
-En las secciones siguientes se enumera información adicional sobre el uso, el cumplimiento y la disponibilidad de los datos del servicio. Para obtener más información sobre el compromiso de Microsoft en la valoración y protección de los datos, visite el [Centro de confianza](https://aka.ms/trustcenter-dex4hunting) > desplácese hacia abajo hasta **Productos y servicios** >  adicionales **de Servicios de seguridad** > [**administrados Experto en Microsoft Defender para la búsqueda**](https://query.prod.cms.rt.microsoft.com/cms/api/am/binary/RE51fRH).
+En las secciones siguientes se enumera información adicional sobre el uso, el cumplimiento y la disponibilidad de los datos del servicio. Para obtener más información sobre el compromiso de Microsoft en la valoración y protección de los datos, visite el [Centro de confianza](https://aka.ms/trustcenter-dex4hunting) > desplácese hacia abajo hasta **Productos y servicios** >  adicionales **de Managed Security Services** >  [**Microsoft Defender Expert for Hunting**](https://query.prod.cms.rt.microsoft.com/cms/api/am/binary/RE51fRH).
 
 ### <a name="data-collection-usage-and-retention"></a>Recopilación, uso y retención de datos
 
@@ -78,7 +79,7 @@ Este servicio está disponible en todo el mundo para los clientes en nuestras nu
 
 Este servicio solo se ofrece actualmente en inglés.
 
-## <a name="apply-for-microsoft-defender-experts-for-hunting-service"></a>Solicitud para expertos de Microsoft Defender para el servicio de búsqueda
+## <a name="apply-for-microsoft-defender-experts-for-hunting-service"></a>Solicitar Microsoft Defender expertos para el servicio de búsqueda
 
 Si aún no lo ha hecho, puede completar el formulario de interés del cliente para expertos de Defender para la búsqueda:
 

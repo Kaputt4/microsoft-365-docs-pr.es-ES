@@ -1,5 +1,5 @@
 ---
-title: Habilitar la autenticación moderna para Office 2013 en Windows dispositivos
+title: Habilitar la autenticación moderna para Office 2013 en dispositivos Windows
 f1.keywords:
 - NOCSH
 ms.author: sharik
@@ -7,9 +7,10 @@ author: skjerland
 manager: scotv
 audience: Admin
 ms.topic: article
-ms.service: o365-administration
+ms.service: microsoft-365-business
 ms.localizationpriority: medium
 ms.collection:
+- scotvorg
 - M365-subscription-management
 - Adm_O365
 - Adm_TOC
@@ -22,17 +23,17 @@ search.appverid:
 - MET150
 - MOE150
 ms.assetid: 7dc1c01a-090f-4971-9677-f1b192d6c910
-description: Aprenda a establecer claves del Registro para habilitar la autenticación moderna para dispositivos que Microsoft Office 2013 instalados.
-ms.openlocfilehash: 468658c3b346c7923937ff9595699a20306ed6a9
-ms.sourcegitcommit: d32654bdfaf08de45715dd362a7d42199bdc1ee7
+description: Aprenda a establecer claves del Registro para habilitar la autenticación moderna para los dispositivos que tienen instalado Microsoft Office 2013.
+ms.openlocfilehash: 3643db4b8d255809fc0ad125b76173b7d3b1a3d3
+ms.sourcegitcommit: 0b7070ec119e00e0dafe030bbfbef0ae5c9afa19
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/23/2022
-ms.locfileid: "63754191"
+ms.lasthandoff: 09/29/2022
+ms.locfileid: "68188337"
 ---
-# <a name="enable-modern-authentication-for-office-2013-on-windows-devices"></a>Habilitar la autenticación moderna para Office 2013 en Windows dispositivos
+# <a name="enable-modern-authentication-for-office-2013-on-windows-devices"></a>Habilitar la autenticación moderna para Office 2013 en dispositivos Windows
 
-Microsoft Office 2013 en Microsoft Windows equipos admiten la autenticación moderna. Pero, para activarlo, debe configurar las siguientes claves del Registro:
+Microsoft Office 2013 en equipos de Microsoft Windows admite la autenticación moderna. Pero, para activarlo, debe configurar las siguientes claves del Registro:
 
 |Clave del Registro|Tipo|Valor|
 |:---|:---:|:---:|
@@ -41,13 +42,13 @@ Microsoft Office 2013 en Microsoft Windows equipos admiten la autenticación mod
 |HKEY_CURRENT_USER\Software\Microsoft\Office\15.0\Common\Identity\Version|REG_DWORD|1|
 
 > [!NOTE]
-> La autenticación moderna ya está habilitada Office 2016 o posterior. No es necesario establecer estas claves del Registro para versiones posteriores de Office.
+> La autenticación moderna ya está habilitada en Office 2016 o posterior. No es necesario establecer estas claves del Registro para versiones posteriores de Office.
 
 ## <a name="enable-modern-authentication-for-office-2013-clients"></a>Habilitar la autenticación moderna para los clientes de Office 2013
 
 1. Cierre Outlook.
 
-2. Copie y pegue el siguiente texto en Bloc de notas:
+2. Copie y pegue el texto siguiente en el Bloc de notas:
 
    ```text
    Windows Registry Editor Version 5.00
@@ -64,19 +65,19 @@ Microsoft Office 2013 en Microsoft Windows equipos admiten la autenticación mod
 
 3. Guarde el archivo con la extensión de archivo .reg en lugar de .txt en una ubicación que sea fácil de encontrar. Por ejemplo, `C:\Data\Office2013_Enable_ModernAuth.reg`.
 
-4. Abra el Explorador de archivos (anteriormente conocido como Windows Explorer), vaya a la ubicación del archivo .reg que acaba de guardar y, a continuación, haga doble clic en él.
+4. Abra Explorador de archivos (anteriormente conocido como Explorador de Windows), vaya a la ubicación del archivo .reg que acaba de guardar y haga doble clic en él.
 
-5. En el **cuadro de diálogo Control de cuenta** de usuario que aparece, haz clic en **Sí** para permitir que la aplicación realice cambios en el dispositivo.
+5. En el cuadro de diálogo **Control de cuentas** de usuario que aparece, haga clic en **Sí** para permitir que la aplicación realice cambios en el dispositivo.
 
-6. En el **cuadro de diálogo de advertencia del Editor** del Registro que aparece, haga clic **en Sí** para aceptar los cambios.
+6. En el cuadro **de diálogo de advertencia del Editor del Registro** que aparece, haga clic en **Sí** para aceptar los cambios.
 
-Una vez establecidas las claves del Registro, puede establecer Office aplicaciones de 2013 para que usen la autenticación multifactor (MFA) con Microsoft 365. Para obtener más información, vea [Configurar la autenticación multifactor](set-up-multi-factor-authentication.md).
+Una vez que haya establecido las claves del Registro, puede establecer aplicaciones de Office 2013 para usar la autenticación multifactor (MFA) con Microsoft 365. Para obtener más información, consulte [Configuración de la autenticación multifactor](set-up-multi-factor-authentication.md).
 
-Si actualmente has iniciado sesión en cualquiera de las Office cliente, debes cerrar sesión y volver a iniciar sesión para que el cambio suba a efecto. De lo contrario, la configuración de MRU y itinerancia no estará disponible hasta que se establezca la identidad.
+Si ha iniciado sesión actualmente en cualquiera de las aplicaciones cliente de Office, debe cerrar la sesión y volver a iniciar sesión para que el cambio surta efecto. De lo contrario, la configuración de MRU y itinerancia no estará disponible hasta que se establezca la identidad.
 
 ## <a name="disable-modern-authentication-on-devices"></a>Deshabilitar la autenticación moderna en los dispositivos
 
-El procedimiento para deshabilitar la autenticación moderna en un dispositivo es muy similar, pero se requieren menos claves del Registro y debes establecer sus valores en 0.
+El procedimiento para deshabilitar la autenticación moderna en un dispositivo es muy similar, pero se requieren menos claves del Registro y debe establecer sus valores en 0.
 
 |Clave del Registro|Tipo|Valor|
 |---|:---:|:---:|

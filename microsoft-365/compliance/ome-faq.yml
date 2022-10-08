@@ -16,12 +16,12 @@ metadata:
   ms.assetid: 0432dce9-d9b6-4e73-8a13-4a932eb0081e
   description: ¿Tienes alguna pregunta sobre cómo funciona Cifrado de mensajes de Microsoft Purview? Busque una respuesta aquí.
   ms.custom: seo-marvel-apr2020
-  ms.openlocfilehash: 8e869b9602e91706630fae622afe54e390a88a74
-  ms.sourcegitcommit: f09687dbbc68347bc421d0b686625b80ff3a6b20
+  ms.openlocfilehash: f2eab62af7b88f7ac6b1c4c7aa8956bea940d3f1
+  ms.sourcegitcommit: 0b7070ec119e00e0dafe030bbfbef0ae5c9afa19
   ms.translationtype: MT
   ms.contentlocale: es-ES
-  ms.lasthandoff: 08/25/2022
-  ms.locfileid: "67432361"
+  ms.lasthandoff: 09/29/2022
+  ms.locfileid: "68189019"
 title: Preguntas más frecuentes sobre el cifrado de mensajes
 summary: "\n¿Tiene alguna pregunta sobre cómo funcionan las nuevas funcionalidades de protección de mensajes? Busque una respuesta aquí. Además, eche un vistazo a [las preguntas más frecuentes sobre la protección de datos en Azure Information Protection](/information-protection/get-started/faqs-rms) para obtener respuestas a las preguntas sobre el servicio de protección de datos, Azure Rights Management, en Azure Information Protection.\n"
 sections:
@@ -115,7 +115,9 @@ sections:
   - question: >
       ¿Puedo quitar automáticamente el cifrado en el correo entrante y saliente?
     answer: >
-      Los administradores pueden configurar una regla de flujo de correo para quitar el cifrado del correo saliente. Solo puede configurar una regla para quitar el cifrado del correo entrante que se origina en su organización.
+      Los administradores pueden configurar una regla de flujo de correo para quitar el cifrado del correo saliente. Solo puede configurar una regla para quitar el cifrado del correo entrante que se origina en la organización Exchange Online.
+  - question: "\n¿Puedo quitar automáticamente el cifrado en el correo del diario?\n"
+    answer: "Para un buzón de Exchange Online, los administradores deben habilitar el descifrado de diario y configurar una regla de registro en diario de Exchange Online para generar una copia descifrada del correo en el buzón de registro en diario. La regla de registro en diario tomará cualquier correo o datos adjuntos que tengan cifrado y enviará el original más una copia descifrada al buzón de registro en diario. Solo puede configurar una regla de registro en diario que pueda descifrar el correo o los datos adjuntos cuando el elemento cifrado se origine en su organización.  \nPara habilitar Exchange Online registro en diario:\n\n```powershell\nSet-IRMConfiguration -JournalReportDecryptionEnabled $true\n```\n"
   - question: >
       ¿Puedo cifrar automáticamente los mensajes mediante la configuración de directivas en Prevención de pérdida de datos (DLP) mediante el portal de cumplimiento Microsoft Purview?
     answer: >
@@ -133,10 +135,6 @@ sections:
       ¿Puedo usar el cifrado de mensajes con características de cumplimiento como eDiscovery?
     answer: >
       Sí, la mayoría de los mensajes protegidos por Cifrado de mensajes de Microsoft Purview son reconocibles. Cifrado de mensajes de Microsoft Purview correo protegido que recibe de otra organización de Microsoft 365 que tiene la personalización de marca aplicada a través de una regla de flujo de correo no es reconocible por el servicio eDiscovery. En otras palabras, si el correo no es accesible a través del buzón del usuario, sino que aparece solo a través de un vínculo al portal de mensajes cifrados, el correo no se puede buscar. Consulte [las actividades de eDiscovery que admiten elementos cifrados](/microsoft-365/compliance/ediscovery-decryption#ediscovery-activities-that-support-encrypted-items) para obtener más información.
-  - question: >
-      ¿Puedo quitar el cifrado del correo electrónico?
-    answer: >
-      Los administradores pueden configurar una regla de flujo de correo para quitar el cifrado. No se puede quitar el cifrado mediante una regla de flujo de correo del correo que aplica otra organización.
   - question: >
       ¿Puedo enviar como buzón compartido y cifrar correos electrónicos?
     answer: >

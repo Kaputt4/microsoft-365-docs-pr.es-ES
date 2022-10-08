@@ -7,25 +7,26 @@ ms.author: kvice
 manager: scotv
 audience: ITPro
 ms.topic: article
-ms.service: o365-solutions
+ms.service: microsoft-365-enterprise
 ms.localizationpriority: medium
 ms.collection:
+- scotvorg
 - M365-subscription-management
 - Strat_O365_Enterprise
 ms.custom: ''
 description: Cree un entorno de Microsoft 365 para probar el acceso de dispositivos e identidades con los requisitos previos de autenticación solo para la nube.
-ms.openlocfilehash: 88138600e516412b74c38234647147197742f2de
-ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
+ms.openlocfilehash: e97dfcb269fbaa9d7b3f0c68e14df9fa392303fd
+ms.sourcegitcommit: 0b7070ec119e00e0dafe030bbfbef0ae5c9afa19
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "65097522"
+ms.lasthandoff: 09/29/2022
+ms.locfileid: "68171551"
 ---
 # <a name="identity-and-device-access-prerequisites-for-cloud-only-in-your-microsoft-365-test-environment"></a>Requisitos previos de acceso de dispositivos e identidades solo para la nube en el entorno de prueba de Microsoft 365
 
-*Esta Guía de laboratorio de pruebas solo se puede usar para Microsoft 365 para entornos de prueba empresariales.*
+*Esta guía de laboratorio de pruebas solo se puede usar para Microsoft 365 para entornos de prueba empresariales.*
 
-[Las configuraciones de acceso a dispositivos e identidades](../security/office-365-security/microsoft-365-policies-configurations.md) son un conjunto de configuraciones recomendadas y directivas de acceso condicional para proteger el acceso a todos los servicios integrados con Azure Active Directory (Azure AD).
+[Las configuraciones de acceso a dispositivos y identidades](../security/office-365-security/microsoft-365-policies-configurations.md) son un conjunto de configuraciones recomendadas y directivas de acceso condicional para proteger el acceso a todos los servicios integrados con Azure Active Directory (Azure AD).
 
 En este artículo describe cómo configurar un entorno de prueba de Microsoft 365 que cumpla con los requisitos de la [configuración de requisitos previos solo para la nube](../security/office-365-security/identity-access-prerequisites.md#prerequisites) para el acceso de dispositivos e identidades.
 
@@ -36,7 +37,7 @@ Existen ocho fases para configurar el entorno de pruebas:
 3. Configurar el autoservicio de restablecimiento de contraseñas
 4. Configurar la autenticación multifactor
 5. Habilitación del registro automático de dispositivos de equipos Windows unidos a un dominio
-6. Configuración de Azure AD protección con contraseña 
+6. Configuración de la protección con contraseña de Azure AD 
 7. Habilitar Azure AD Identity Protection
 8. Habilitar la autenticación moderna para Exchange Online y Skype Empresarial Online
 
@@ -81,7 +82,7 @@ Pruebe la autenticación multifactor solo para la cuenta Usuario 2.
 
 Siga [estas instrucciones](/azure/active-directory/devices/hybrid-azuread-join-plan) para habilitar el registro automático de dispositivos de equipos Windows unidos a un dominio.
 
-## <a name="phase-6-configure-azure-ad-password-protection"></a>Fase 6: Configuración de Azure AD protección con contraseña 
+## <a name="phase-6-configure-azure-ad-password-protection"></a>Fase 6: Configuración de la protección con contraseña de Azure AD 
 
 Siga [estas instrucciones](/azure/active-directory/authentication/concept-password-ban-bad) para bloquear las contraseñas no seguras conocidas y sus variantes.
 
