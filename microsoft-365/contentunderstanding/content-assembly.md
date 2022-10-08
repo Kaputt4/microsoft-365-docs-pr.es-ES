@@ -6,23 +6,23 @@ manager: pamgreen
 audience: admin
 ms.reviewer: anrasto, shrganguly
 ms.topic: article
-ms.prod: microsoft-365-enterprise
+ms.service: microsoft-365-enterprise
 search.appverid: ''
 ms.collection:
 - enabler-strategic
 - m365initiative-syntex
 ms.localizationpriority: medium
 description: Obtenga información sobre cómo crear automáticamente documentos y otro contenido mediante una plantilla moderna en Microsoft SharePoint Syntex.
-ms.openlocfilehash: bce344a5a8daf36c9408a846f2ab289f14695d82
-ms.sourcegitcommit: 9a4b0bc6a3ba076ecc392260efe7d2e1b655cde8
+ms.openlocfilehash: 9aaaea0c4bba533ea3ba27753b167aea1a4cf489
+ms.sourcegitcommit: 4e42bafee965446f44f7f57d1defed2b9b24fce8
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/23/2022
-ms.locfileid: "67420120"
+ms.lasthandoff: 09/30/2022
+ms.locfileid: "68224170"
 ---
 # <a name="create-documents-using-content-assembly-in-microsoft-sharepoint-syntex"></a>Creación de documentos mediante el ensamblado de contenido en Microsoft SharePoint Syntex
 
-Puede usar SharePoint Syntex para ayudarle a generar automáticamente documentos empresariales repetitivos estándar, como contratos, declaraciones de trabajo, contratos de servicio, cartas de consentimiento, lanzamientos de ventas y correspondencia. Puede hacer todo esto de forma más rápida, coherente y con menos errores mediante el uso del ensamblado de contenido en SharePoint Syntex.
+Puede usar SharePoint Syntex para ayudarle a generar automáticamente documentos empresariales repetitivos estándar, como contratos, declaraciones de trabajo, contratos de servicio, cartas de consentimiento, lanzamientos de ventas y correspondencia. Puede hacer todo esto más rápido, de forma más coherente y con menos errores mediante el uso del ensamblado de contenido en SharePoint Syntex.
 
 Con el ensamblado de contenido, puede usar un documento existente para crear una *plantilla moderna* y, a continuación, usar esa plantilla para generar automáticamente contenido nuevo mediante listas de SharePoint o entradas manuales como origen de datos.
 

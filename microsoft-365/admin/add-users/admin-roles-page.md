@@ -1,5 +1,5 @@
 ---
-title: Acerca de la página de roles de administrador de Microsoft 365
+title: Acerca de la página de roles de administrador en Microsoft 365
 f1.keywords:
 - NOCSH
 ms.author: kwekua
@@ -7,9 +7,10 @@ author: kwekua
 manager: scotv
 audience: Admin
 ms.topic: overview
-ms.service: o365-administration
+ms.service: microsoft-365-business
 ms.localizationpriority: medium
 ms.collection:
+- scotvorg
 - M365-subscription-management
 - Adm_O365W
 ms.custom:
@@ -21,14 +22,14 @@ search.appverid:
 - MET150
 - MOE150
 description: Obtenga información sobre los roles de administrador, como el administrador de servicios que abre vales de soporte técnico, que se asignan a las funciones empresariales y tienen permisos para las tareas en el centro de administración.
-ms.openlocfilehash: 58bbc4b15f3fd477b72c8dac3f0f624b1e152a2a
-ms.sourcegitcommit: da6b3cb3b2ccfcdcd5091efce8290b6c486547db
+ms.openlocfilehash: d7d2f9521d89c2ae8d0d3a53e2615ff80dc0b713
+ms.sourcegitcommit: 0b7070ec119e00e0dafe030bbfbef0ae5c9afa19
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/18/2022
-ms.locfileid: "65466776"
+ms.lasthandoff: 09/29/2022
+ms.locfileid: "68185125"
 ---
-# <a name="get-started-with-the-microsoft-365-admin-roles-page"></a>Comenzar con la página roles de administrador de Microsoft 365
+# <a name="get-started-with-the-microsoft-365-admin-roles-page"></a>Introducción a la página Roles de administrador de Microsoft 365
 
 En la página Roles, puede conceder a los usuarios permisos para realizar tareas en los centros de administración. Esto ayuda a su organización a distribuir las tareas a las personas adecuadas y ayuda a mantener los datos seguros.
 
@@ -43,7 +44,7 @@ Puede exportar la lista de administradores, así como buscar y filtrar por rol.
 
 ![Filtrar o importar roles de administrador.](../../media/admin-role-page-options.png)
 
-- Use Exportar lista de administradores para obtener una lista completa de todos los usuarios administradores de su organización. La lista se almacena en un archivo Excel .csv.
+- Use Exportar lista de administradores para obtener una lista completa de todos los usuarios administradores de su organización. La lista se almacena en un archivo .csv de Excel.
 
 - Use Buscar para buscar un rol de administrador y ver los usuarios que están asignados a ese rol.
 
@@ -59,7 +60,7 @@ Esta no es una lista exhaustiva de todos los permisos que tienen estos roles. Se
 
 ### <a name="exchange-admin"></a>Administrador de Exchange
 
-Asigne el rol de administrador de Exchange a los usuarios que necesitan ver y administrar los buzones de correo electrónico del usuario, Microsoft 365 grupos y Exchange Online. También pueden abrir y administrar solicitudes de soporte técnico al soporte técnico de Microsoft. [Más información](/microsoft-365/admin/add-users/about-exchange-online-admin-role)
+Asigne el rol de administrador de Exchange a los usuarios que necesiten ver y administrar los buzones de correo electrónico del usuario, los grupos de Microsoft 365 y Exchange Online. También pueden abrir y administrar solicitudes de soporte técnico al soporte técnico de Microsoft. [Más información](/microsoft-365/admin/add-users/about-exchange-online-admin-role)
 
 ### <a name="global-admin"></a>Administrador global
 
@@ -75,15 +76,15 @@ Asigne el rol de administrador del departamento de soporte técnico a los usuari
 
 ### <a name="service-admin"></a>Administrador de servicios
 
-Asigne el rol de administrador de servicio a los usuarios que necesitan crear solicitudes de soporte técnico para los servicios de Azure, Microsoft 365 y Office 365. [Más información](/microsoft-365/admin/add-users/about-admin-roles#roles-available-in-the-microsoft-365-admin-center)
+Asigne el rol de administrador de servicio a los usuarios que necesitan crear solicitudes de soporte técnico para Los servicios de Azure, Microsoft 365 y Office 365. [Más información](/microsoft-365/admin/add-users/about-admin-roles#roles-available-in-the-microsoft-365-admin-center)
 
 ### <a name="sharepoint-admin"></a>Administrador de SharePoint
 
-Al comprar una suscripción Microsoft 365, se crea automáticamente un sitio de equipo y el administrador global se establece como administrador de la colección de sitios principal. Asigne el rol de administrador de SharePoint a los usuarios a los que quiera acceder al <a href="https://go.microsoft.com/fwlink/?linkid=2185219" target="_blank">centro de administración de SharePoint</a>. Los usuarios con el rol de administrador SharePoint pueden crear y administrar colecciones de sitios, designar administradores de colecciones de sitios y administrar perfiles de usuario. Los usuarios con el rol de administrador SharePoint también pueden administrar grupos de Microsoft 365 y abrir solicitudes de soporte técnico a través del soporte técnico de Microsoft. [Más información](/sharepoint/sharepoint-admin-role)
+Al comprar una suscripción de Microsoft 365, se crea automáticamente un sitio de equipo y el administrador global se establece como administrador de la colección de sitios principal. Asigne el rol de administrador de SharePoint a los usuarios a los que quiera acceder al <a href="https://go.microsoft.com/fwlink/?linkid=2185219" target="_blank">Centro de administración de SharePoint</a>. Los usuarios con el rol de administrador de SharePoint pueden crear y administrar colecciones de sitios, designar administradores de colecciones de sitios y administrar perfiles de usuario. Los usuarios con el rol de administrador de SharePoint también pueden administrar grupos de Microsoft 365 y abrir solicitudes de soporte técnico a través del soporte técnico de Microsoft. [Más información](/sharepoint/sharepoint-admin-role)
 
 ### <a name="teams-service-admin"></a>Administrador de servicios de Teams
 
-Asigne el rol de administrador de Teams a los usuarios a los que quiera acceder y administrar el centro de administración de Teams & Skype. Los usuarios con el rol de administrador Teams también pueden administrar grupos de Microsoft 365 y abrir solicitudes de soporte técnico a través del soporte técnico de Microsoft. [Más información](/MicrosoftTeams/using-admin-roles)
+Asigne el rol de administrador de Teams a los usuarios a los que quiera acceder y administrar el Centro de administración de Teams & Skype. Los usuarios con el rol de administrador de Teams también pueden administrar grupos de Microsoft 365 y abrir solicitudes de soporte técnico a través del soporte técnico de Microsoft. [Más información](/MicrosoftTeams/using-admin-roles)
 
 ### <a name="user-admin"></a>Administrador de usuarios
 

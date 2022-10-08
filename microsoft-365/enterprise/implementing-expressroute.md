@@ -8,7 +8,9 @@ audience: ITPro
 ms.topic: conceptual
 ms.service: microsoft-365-enterprise
 ms.localizationpriority: medium
-ms.collection: Ent_O365
+ms.collection:
+- scotvorg
+- Ent_O365
 f1.keywords:
 - CSH
 ms.custom:
@@ -20,12 +22,12 @@ search.appverid:
 - BCS160
 ms.assetid: 77735c9d-8b80-4d2f-890e-a8598547dea6
 description: Obtenga información sobre cómo implementar ExpressRoute para Office 365, que proporciona una ruta de acceso de enrutamiento alternativa a muchos servicios de Office 365 accesibles desde Internet.
-ms.openlocfilehash: 07f79298749784bda9362410e8790f27407bb55a
-ms.sourcegitcommit: 37e137535c4f70702afe1a5eeaa899c75ee02cfd
+ms.openlocfilehash: b4c43ff624625b9c962edd054b2d5906a324af2a
+ms.sourcegitcommit: 0b7070ec119e00e0dafe030bbfbef0ae5c9afa19
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/13/2022
-ms.locfileid: "67663265"
+ms.lasthandoff: 09/29/2022
+ms.locfileid: "68208950"
 ---
 # <a name="implementing-expressroute-for-office-365"></a>Implementar ExpressRoute para Office 365
 
@@ -113,7 +115,7 @@ Este es un ejemplo del nivel de detalle necesario. En este caso, Exchange Hybrid
 |**Punto de conexión local público (destino)** <br/> |5.5.5.5  <br/> |
 |**Entrada DNS pública (Internet)** <br/> |Autodiscover.contoso.com  <br/> |
 |**¿Usarán este punto de conexión local para otros servicios de Microsoft (no Office 365)** <br/> |No  <br/> |
-|**¿Usarán este punto de conexión local los usuarios o sistemas en Internet?** <br/> |Yes  <br/> |
+|**¿Usarán este punto de conexión local los usuarios o sistemas en Internet?** <br/> |Sí  <br/> |
 |**Sistemas internos publicados a través de puntos de conexión públicos** <br/> |Exchange Server rol de acceso de cliente (local) 192.168.101, 192.168.102, 192.168.103  <br/> |
 |**Anuncio de IP del punto de conexión público** <br/> |**A Internet**: 5.5.0.0/16 **a ExpressRoute**: 5.5.5.0/24  <br/> |
 |**Controles de seguridad y perímetro** <br/> |**Ruta de acceso a Internet**: DeviceID_002  **ruta de acceso de ExpressRoute**: DeviceID_003  <br/> |

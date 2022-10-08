@@ -1,14 +1,15 @@
 ---
-title: Optimización de imágenes para SharePoint sitios de publicación clásicos en línea
+title: Optimización de imágenes para sitios de publicación clásicos de SharePoint Online
 ms.author: kvice
 author: kelleyvice-msft
 manager: scotv
 ms.date: 9/18/2019
 audience: Admin
 ms.topic: troubleshooting
-ms.service: o365-administration
+ms.service: microsoft-365-enterprise
 ms.localizationpriority: medium
 ms.collection:
+- scotvorg
 - Ent_O365
 - SPO_Content
 f1.keywords:
@@ -19,19 +20,19 @@ search.appverid:
 - MET150
 ms.assetid: c7edb02a-fdab-4f91-9a20-cba01dad28ef
 description: Obtenga información sobre cómo usar representaciones y sprites para mejorar el rendimiento de las imágenes en los sitios de publicación clásicos de SharePoint Online.
-ms.openlocfilehash: 39d0e4c26339ecf70c922636f82dcef82dd4b13e
-ms.sourcegitcommit: 6a981ca15bac84adbbed67341c89235029aad476
+ms.openlocfilehash: aa9bb42bab72aecdbe25ab5b4888ec0ed61453cf
+ms.sourcegitcommit: 0b7070ec119e00e0dafe030bbfbef0ae5c9afa19
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/27/2022
-ms.locfileid: "65754430"
+ms.lasthandoff: 09/29/2022
+ms.locfileid: "68196235"
 ---
-# <a name="image-optimization-for-sharepoint-online-classic-publishing-sites"></a>Optimización de imágenes para SharePoint sitios de publicación clásicos en línea
+# <a name="image-optimization-for-sharepoint-online-classic-publishing-sites"></a>Optimización de imágenes para sitios de publicación clásicos de SharePoint Online
 
-La velocidad de carga de una página web depende del tamaño combinado de todos los componentes necesarios para representar la página, incluidas las imágenes, HTML, JavaScript y CSS. Las imágenes son una excelente manera de hacer que su sitio sea más atractivo, pero su tamaño puede afectar al rendimiento. Mediante la optimización de las imágenes con compresión y cambio de tamaño, y el uso de sprites, puede compensar los efectos de las imágenes grandes. Con SharePoint representaciones de imágenes, puede cargar una sola imagen grande y mostrar las secciones de la imagen, lo que permite reutilizarla en lugar de volver a cargarla.
+La velocidad de carga de una página web depende del tamaño combinado de todos los componentes necesarios para representar la página, incluidas las imágenes, HTML, JavaScript y CSS. Las imágenes son una excelente manera de hacer que su sitio sea más atractivo, pero su tamaño puede afectar al rendimiento. Mediante la optimización de las imágenes con compresión y cambio de tamaño, y el uso de sprites, puede compensar los efectos de las imágenes grandes. Con las representaciones de imágenes de SharePoint, puede cargar una sola imagen grande y mostrar las secciones de la imagen, lo que permite reutilizarla en lugar de volver a cargarla.
 
 >[!NOTE]
->Este tema se aplica a SharePoint sitios de publicación clásicos en línea, no a sitios de portal modernos. Para obtener información sobre la optimización de imágenes en SharePoint sitios del portal moderno en línea, vea [Optimizar imágenes en SharePoint páginas del portal moderno en línea](modern-image-optimization.md).
+>Este tema se aplica a sitios de publicación clásicos de SharePoint Online, no a sitios de portal modernos. Para obtener información sobre la optimización de imágenes en sitios de portal modernos de SharePoint Online, vea [Optimizar imágenes en páginas del portal moderno de SharePoint Online](modern-image-optimization.md).
   
 ## <a name="using-sprites-to-speed-up-image-loading"></a>Uso de sprites para acelerar la carga de imágenes
 
@@ -42,9 +43,9 @@ Un sprite de imagen contiene muchas imágenes más pequeñas. Con CSS, seleccion
 Lo que se trata aquí:
 - Compresión de imágenes
 - Optimización de imágenes
-- SharePoint representaciones de imágenes
+- Representaciones de imágenes de SharePoint
    
-Esto puede aumentar el rendimiento porque solo se descarga una imagen en lugar de varias y, a continuación, se almacena en caché y se reutiliza esa imagen. Incluso si la imagen no permanece almacenada en caché, al tener una sola imagen en lugar de varias imágenes, este método reduce el número total de solicitudes HTTP al servidor, lo que reducirá los tiempos de carga de páginas. Esta es realmente una forma de agrupación de imágenes. Se trata de una técnica útil si las imágenes no cambian con frecuencia, por ejemplo, iconos, como se muestra en el SharePoint ejemplo proporcionado anteriormente. Puede ver cómo usar [Web Essentials](https://vswebessentials.com/), un proyecto de código abierto y basado en la comunidad de terceros para lograr esto fácilmente en Microsoft Visual Studio. Para obtener más información, vea [Minification and bundling in SharePoint Online(Minification and bundling in SharePoint Online](./minification-and-bundling-in-sharepoint-online.md)).
+Esto puede aumentar el rendimiento porque solo se descarga una imagen en lugar de varias y, a continuación, se almacena en caché y se reutiliza esa imagen. Incluso si la imagen no permanece almacenada en caché, al tener una sola imagen en lugar de varias imágenes, este método reduce el número total de solicitudes HTTP al servidor, lo que reducirá los tiempos de carga de páginas. Esta es realmente una forma de agrupación de imágenes. Se trata de una técnica útil si las imágenes no cambian con frecuencia, por ejemplo, iconos, como se muestra en el ejemplo de SharePoint proporcionado anteriormente. Puede ver cómo usar [Web Essentials](https://vswebessentials.com/), un proyecto de código abierto y basado en la comunidad de terceros para lograrlo fácilmente en Microsoft Visual Studio. Para obtener más información, vea [Minification and bundling in SharePoint Online(Minification and bundling in SharePoint Online](./minification-and-bundling-in-sharepoint-online.md)).
   
 ## <a name="using-image-compression-and-optimization-to-speed-up-page-loading"></a>Uso de la compresión y optimización de imágenes para acelerar la carga de páginas
 
@@ -52,16 +53,16 @@ La compresión y optimización de imágenes consiste en reducir el tamaño de ar
   
 Una vez que las imágenes tienen el tamaño correcto, el siguiente paso es optimizar la compresión de estas imágenes. Hay varias herramientas disponibles para su compresión y optimización, como Photo Gallery y herramientas de terceros. La clave para la compresión es reducir el tamaño del archivo tanto como sea posible sin perder ninguna calidad discernible para los usuarios finales. Asegúrese de probar los archivos comprimidos en una pantalla de alta definición para asegurarse de que seguirán teniendo buen aspecto.
   
-## <a name="speed-up-page-downloads-by-using-sharepoint-image-renditions"></a>Acelerar las descargas de páginas mediante SharePoint representaciones de imágenes
+## <a name="speed-up-page-downloads-by-using-sharepoint-image-renditions"></a>Acelerar las descargas de páginas mediante representaciones de imágenes de SharePoint
 
 Las representaciones de imágenes son una característica de SharePoint Online que permite ofrecer diferentes versiones de imágenes basadas en dimensiones de imagen predefinidas. Esto es especialmente importante cuando el css del sitio fija el contenido de la imagen generada por el usuario o las dimensiones de la imagen, como el ancho y el alto. Incluso si CSS fija una imagen, la imagen de resolución completa se sigue cargando. En este caso, el tamaño del archivo se puede reducir mediante representaciones de imágenes.
   
 > [!NOTE]
-> Las representaciones solo están disponibles para SharePoint cuando la publicación está habilitada. Puede habilitar la publicación en Configuración \> sitio Configuración \> Administrar características \> del sitio SharePoint Server Publishing. De lo contrario, la opción no aparecerá.
+> Las representaciones solo están disponibles para SharePoint cuando la publicación está habilitada. Puede habilitar la publicación en Configuración \> Configuración Del \> sitio Administrar características \> del sitio Publicación de SharePoint Server. De lo contrario, la opción no aparecerá.
   
 El cambio de tamaño de la representación de imágenes funciona tomando la dimensión más pequeña que defina, ya sea ancho o alto, y, a continuación, cambiando el tamaño de la imagen para que la otra dimensión cambie de tamaño automáticamente en función de la relación de aspecto bloqueada. De forma predeterminada, recortará la imagen del centro por las dimensiones restantes. Por ejemplo, si define una representación de 100 píxeles de ancho y 50 píxeles de alto y la imagen original tiene 1000 px de ancho y 800 px de alto, se cambiará el tamaño para que la dimensión de 800 px sea ahora de 50 px y la dimensión de 1000 px (ahora 62,5 px) se recorte desde el centro de la imagen.
   
-Los pasos son relativamente sencillos, pero para que las imágenes usen las representaciones, las representaciones deben estar en el sitio SharePoint antes de agregar las imágenes. Además, también debe tener activadas las características SharePoint Server Publishing Infrastructure (Site Collection Level) y SharePoint Server Publishing (Site Level).
+Los pasos son relativamente sencillos, pero para que las imágenes usen las representaciones, las representaciones deben estar en el sitio de SharePoint antes de agregar las imágenes. Además, también debe tener activadas las características Infraestructura de publicación de SharePoint Server (nivel de colección de sitios) y Publicación de SharePoint Server (nivel de sitio).
   
 ### <a name="add-an-image-rendition-to-speed-up-page-loading"></a>Adición de una representación de imágenes para acelerar la carga de páginas
   
@@ -71,7 +72,7 @@ Los pasos son relativamente sencillos, pero para que las imágenes usen las repr
 
 3. Elija el icono **Configuración**.
 
-4. En la página **Sitio Configuración**, en la sección **Apariencia**, verá las representaciones de imágenes integradas.
+4. En la página **Configuración del sitio** , en la sección **Apariencia** , verá las representaciones de imágenes integradas.
 
     Puede usar las representaciones predefinidas o elegir **Representaciones** de imágenes para crear una nueva.
 

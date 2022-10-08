@@ -7,19 +7,21 @@ ms.author: cmcatee
 manager: scotv
 audience: Admin
 ms.topic: reference
-ms.service: o365-administration
-ms.collection: Adm_Support
+ms.service: microsoft-365-business
+ms.collection:
+- scotvorg
+- Adm_Support
 ms.localizationpriority: medium
 description: Obtenga información acerca de cómo ponerse en contacto con el soporte técnico de su país o región.
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: e016c10111144a11980900e6aeea7ef8a4b0a6f0
-ms.sourcegitcommit: 0ee2dabe402d44fecb6856af98a2ef7720d25189
+ms.openlocfilehash: a92aefc65fd57b2c6335dca1db5d5f1cdebf96f1
+ms.sourcegitcommit: 0b7070ec119e00e0dafe030bbfbef0ae5c9afa19
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/09/2021
-ms.locfileid: "61372677"
+ms.lasthandoff: 09/29/2022
+ms.locfileid: "68196455"
 ---
-# <a name="contact-support-for-senegal"></a>Póngase en contacto con el soporte técnico de Senegal
+# <a name="contact-support-for-senegal"></a>Póngase en contacto con el soporte técnico para Senegal
 
 [Buscar otro país o región](../get-help-support.md).
 

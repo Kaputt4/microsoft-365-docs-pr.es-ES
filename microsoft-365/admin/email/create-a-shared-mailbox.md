@@ -7,9 +7,10 @@ author: SKjerland
 manager: scotv
 audience: Admin
 ms.topic: article
-ms.service: o365-administration
+ms.service: microsoft-365-business
 ms.localizationpriority: high
 ms.collection:
+- scotvorg
 - M365-subscription-management
 - Adm_O365
 - Adm_TOC
@@ -26,23 +27,23 @@ search.appverid:
 - MOE150
 ms.assetid: 871a246d-3acd-4bba-948e-5de8be0544c9
 description: Cree un buzón compartido para permitir que varios usuarios de su empresa puedan compartir la responsabilidad de leer y responder correo electrónico enviado a una dirección.
-ms.openlocfilehash: 444be08a2083bf184d61ee206dfaa8ab53657b0b
-ms.sourcegitcommit: 5fe7f2954a89406245416fc1a218cf4bf19abb85
-ms.translationtype: HT
+ms.openlocfilehash: 80ff53bc6c98760fe59001574f3e334f7d6dd738
+ms.sourcegitcommit: 0b7070ec119e00e0dafe030bbfbef0ae5c9afa19
+ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "65864570"
+ms.lasthandoff: 09/29/2022
+ms.locfileid: "68198083"
 ---
 # <a name="create-a-shared-mailbox"></a>Creación de un buzón compartido 
 
 > [!NOTE]
-> Si su organización usa un entorno híbrido de Exchange, debe usar el <a href="https://go.microsoft.com/fwlink/p/?linkid=2059104" target="_blank">Centro de administración de Exchange</a> local para crear y administrar buzones compartidos. Consulte [Crear buzones compartidos en el Centro de administración de Exchange](/Exchange/collaboration/shared-mailboxes/create-shared-mailboxes?preserve-view=true.&view=exchserver-2019)
+> If your organization uses a hybrid Exchange environment, you should use the on-premises <a href="https://go.microsoft.com/fwlink/p/?linkid=2059104" target="_blank">Exchange admin center</a> to create and manage shared mailboxes. See [Create shared mailboxes in the Exchange admin center](/Exchange/collaboration/shared-mailboxes/create-shared-mailboxes?preserve-view=true.&view=exchserver-2019)
 >
 > Si no está seguro de si debería crear un buzón compartido o un grupo de Microsoft 365 para Outlook, vea [Comparar grupos](../create-groups/compare-groups.md) para tener más clara su decisión. Tenga en cuenta que no es posible migrar un buzón compartido a un grupo de Microsoft 365 en este momento. Si esto le interesaría, indíquelo [votando aquí](https://go.microsoft.com/fwlink/?linkid=871518).
 
-Es fácil crear buzones compartidos de Office 365 para que un grupo de personas pueda supervisar y enviar correos electrónicos desde una dirección de correo electrónico común, como, por ejemplo, info@contoso.com. Cuando un miembro del grupo responde a un mensaje enviado al buzón compartido, parece que el correo electrónico procede del buzón compartido y no de un usuario individual.
+It's easy to create shared mailboxes so a group of people can monitor and send email from a common email addresses, like info@contoso.com. When a person in the group replies to a message sent to the shared mailbox, the email appears to be from the shared mailbox, not from the individual user.
 
-Los buzones compartidos incluyen un calendario compartido. A una gran cantidad de pequeñas empresas le gusta usar el calendario compartido como un lugar en el que todos los usuarios pueden insertar sus citas. Por ejemplo, si tiene 3 personas que realizan visitas a clientes, todas ellas pueden usar el calendario compartido para insertar las citas. Esta es una forma sencilla de mantener a todos informados.
+Shared mailboxes include a shared calendar. A lot of small businesses like to use the shared calendar as a place for everyone to enter their appointments. For example, if you have 3 people who do customer visits, all can use the shared calendar to enter the appointments. This is an easy way to keep everyone informed where people are.
 
 Antes de crear un buzón compartido, asegúrese de leer [acerca de los buzones compartidos](about-shared-mailboxes.md) para obtener más información.
 
@@ -51,7 +52,7 @@ Antes de crear un buzón compartido, asegúrese de leer [acerca de los buzones c
 
 ## <a name="create-a-shared-mailbox-and-add-members"></a>Crear un buzón compartido y agregar miembros
   
-1. Inicie sesión con una cuenta de administrador global o una cuenta de administrador de Exchange. Si recibe el mensaje "**No tiene permiso para acceder a esta página o realizar esta acción**", no es administrador. 
+1. Sign in with a global admin account or Exchange admin account. If you get the message "**You don't have permission to access this page or perform this action**," then you aren't an admin. 
 
 ::: moniker range="o365-worldwide"
 
@@ -69,13 +70,13 @@ Antes de crear un buzón compartido, asegúrese de leer [acerca de los buzones c
     
     ![Asigne un nombre a su buzón compartido.](../../media/e3035132-8986-4ec7-b7c0-f2752080d2c0.png)
   
-4. Seleccione **Guardar cambios**. Puede tardar unos minutos en agregar miembros.
+4. Select **Save changes**. It may take a few minutes before you can add members.
 
-5. En **Pasos siguientes**, seleccione **Agregar miembros a este buzón**. Los miembros son las personas que podrán ver el correo entrante en este buzón compartido y las respuestas salientes.
+5. Under **Next steps**, select **Add members to this mailbox**. Members are the people who will be able to view the incoming mail to this shared mailbox, and the outgoing replies.
 
    ![Seleccione Agregar miembros.](../../media/a2a72e3d-6170-40fe-a94f-0af8fbef8ab2.png)
 
-6. Seleccione el botón **+Agregar miembros**. Coloque una marca de verificación junto a las personas que desea usar este buzón compartido y, a continuación, seleccione **Guardar**.
+6. Select the **+Add members** button. Put a check mark next to the people who you want to use this shared mailbox, and then select **Save**.
 
    ![Asignar miembros al buzón compartido.](../../media/e6c58953-f6d7-4f0b-97ba-308516bf2a94.png)
 
@@ -87,11 +88,11 @@ Tiene un buzón compartido que incluye un calendario compartido. Vaya al siguien
 
 Puede usar los siguientes permisos con un buzón compartido:
 
-- **Acceso completo**: el permiso de Acceso completo permite al usuario iniciar sesión en el buzón compartido y actuar como el propietario de ese buzón. Después de tener acceso al buzón compartido, el usuario puede crear elementos de calendario; leer, ver, eliminar y modificar mensajes de correo electrónico y crear tareas y contactos del calendario. Sin embargo, un usuario con un permiso de Acceso completo no puede enviar mensajes de correo electrónico desde el buzón compartido a menos que tenga un permiso para Enviar como o En nombre de.
+- **Full Access**: The Full Access permission lets a user open the shared mailbox and act as the owner of that mailbox. After accessing the shared mailbox, a user can create calendar items, read, view, delete, and change email messages, and create tasks and calendar contacts. However, a user with Full Access permission can't send email from the shared mailbox unless they also have Send As or Send on Behalf permission.
 
-- **Enviar como**: el permiso Enviar como permite al usuario suplantar el buzón compartido al enviar correo. Por ejemplo, si Katerina inicia sesión en el buzón compartido del departamento de marketing y envía un correo electrónico, parecerá que el departamento de marketing envió el correo electrónico.
+- **Send As**: The Send As permission lets a user impersonate the shared mailbox when sending mail. For example, if Katerina logs into the shared mailbox Marketing Department and sends an email, it will look like the Marketing Department sent the email.
 
-- **Enviar en nombre de**: el permiso Enviar en nombre de permite a los usuarios enviar correo electrónico en nombre del buzón compartido. Por ejemplo, si Juan inicia sesión en el buzón compartido de la recepción del edificio n.º 32 y envía un correo electrónico, el remitente será "Juan en nombre de la recepción del edificio n.º 32". No puede usar el CEF para conceder permisos Enviar en nombre de. En este caso, debe utilizar el cmdlet **Set-Mailbox** con el parámetro _GrantSendonBehalf_.
+- **Send on Behalf**: The Send on Behalf permission lets a user send email on behalf of the shared mailbox. For example, if John logs into the shared mailbox Reception Building 32 and sends an email, it will look like the mail was sent by "John on behalf of Reception Building 32". You can't use the EAC to grant Send on Behalf permissions, you must use the **Set-Mailbox** cmdlet with the _GrantSendonBehalf_ parameter.
 
 > [!NOTE]
 > Los permisos **Enviar como** y **Enviar en nombre de** no funcionan en el cliente de escritorio de Outlook con el parámetro *HiddenFromAddressListsEnabled* en el buzón establecido en **True**, ya que requieren que el buzón esté visible en Outlook a través de la lista global de direcciones.
@@ -102,10 +103,10 @@ Puede usar los siguientes permisos con un buzón compartido:
 
 2. En **Permisos de buzón** de correo, seleccione **Administrar delegación de buzones**.
 
-3. Para conceder o quitar los permisos de Acceso total y Enviar como, seleccione **Agregar** ![Icono Agregar](../../media/ITPro-EAC-AddIcon.png) o **Quitar** ![Icono de Quitar](../../media/ITPro-EAC-RemoveIcon.gif), y luego seleccione los usuarios a los que quiera conceder los permisos.
+3. To grant or remove Full Access and Send As permissions, select **Add** ![Add Icon.](../../media/ITPro-EAC-AddIcon.png) or **Remove** ![Remove icon](../../media/ITPro-EAC-RemoveIcon.gif) and then select the users you want to grant permissions to.
 
    > [!NOTE]
-   > El permiso de Acceso completo permite a los usuarios abrir el buzón, así como crear y modificar sus elementos. El permiso Enviar como permite a cualquiera que no sea el propietario del buzón enviar correo electrónico desde este buzón compartido. Ambos permisos son necesarios para que el buzón compartido funcione correctamente.
+   > The Full Access permission allows a user to open the mailbox as well as create and modify items in it. The Send As permission allows anyone other than the mailbox owner to send email from this shared mailbox. Both permissions are required for successful shared mailbox operation.
 
 4. Seleccione **Guardar** para guardar los cambios.
 
@@ -172,7 +173,7 @@ Puede obtener acceso a un buzón compartido en un dispositivo móvil de dos mane
 
 ## <a name="use-the-shared-calendar"></a>Usar el calendario compartido.
 
-Al crear el buzón compartido, creó automáticamente un calendario compartido. Preferimos usar el calendario de buzón compartido, en lugar de un calendario de SharePoint, para realizar el seguimiento de las citas y de la ubicación de los usuarios. En Outlook está integrado un calendario compartido y es mucho más fácil de usar que un calendario de SharePoint.
+When you created the shared mailbox, you automatically created a shared calendar. We like the shared mailbox calendar rather than a SharePoint calendar for keeping track of appointments and where people are. A shared calendar is integrated with Outlook and it's much easier to use than a SharePoint calendar.
 
 1. En la aplicación de Outlook, vaya a la vista de calendario y seleccione el buzón compartido.
 

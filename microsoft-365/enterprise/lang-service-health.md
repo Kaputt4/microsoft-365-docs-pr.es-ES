@@ -1,11 +1,11 @@
 ---
-title: Traducción de idiomas para el panel de mantenimiento del servicio
+title: Traducción de idioma para Estado del servicio panel
 ms.author: kwekua
 author: kwekuako
 manager: scotv
 audience: Admin
 ms.topic: article
-ms.service: o365-administration
+ms.service: microsoft-365-enterprise
 ms.localizationpriority: medium
 f1.keywords:
 - CSH
@@ -17,6 +17,7 @@ ms.custom:
 - O365E_ServiceHealthModern
 - seo-marvel-apr2020
 ms.collection:
+- scotvorg
 - Ent_O365
 - M365-subscription-management
 search.appverid:
@@ -24,17 +25,17 @@ search.appverid:
 - MOE150
 - BCS160
 - IWA160
-description: Las publicaciones del panel de estado del servicio solo están en inglés, pero se pueden mostrar automáticamente en el idioma que especifique para Microsoft 365.
-ms.openlocfilehash: f8f4877fcfb12200ea3f540fe52472d0310cd46e
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+description: Estado del servicio publicaciones del panel solo están en inglés, pero se pueden mostrar automáticamente en el idioma que especifique para Microsoft 365.
+ms.openlocfilehash: c2eb949fbe58cc14ea4d67a60d0be1604b7e4b1d
+ms.sourcegitcommit: 0b7070ec119e00e0dafe030bbfbef0ae5c9afa19
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60168595"
+ms.lasthandoff: 09/29/2022
+ms.locfileid: "68208840"
 ---
-# <a name="language-translation-for-service-health-dashboard"></a>Traducción de idiomas para el panel de mantenimiento del servicio
+# <a name="language-translation-for-service-health-dashboard"></a>Traducción de idioma para Estado del servicio panel
 
-Las publicaciones del panel de mantenimiento del servicio se escriben solo en inglés debido a la escala de tiempo de la información que publicamos, pero se pueden mostrar automáticamente en el idioma especificado por la configuración de idioma personal para Microsoft 365. Si estableces el idioma preferido en cualquier otra cosa que no sea inglés, verás una opción en el panel estado del servicio para traducir automáticamente las publicaciones. Los mensajes se traducen en máquina al idioma preferido, lo que significa que un equipo hizo la traducción. Con esta opción se controla la vista predeterminada, pero también puede usar el menú desplegable para traducir y mostrar publicaciones en cualquiera de los idiomas admitidos. Si selecciona el inglés, revertiremos el mensaje a la versión original en inglés.
+Estado del servicio publicaciones del panel se escriben solo en inglés debido a la escala de tiempo de la información que publicamos, pero se pueden mostrar automáticamente en el idioma especificado por la configuración de idioma personal para Microsoft 365. Si establece su idioma preferido en cualquier otro idioma que no sea inglés, verá una opción en el panel de Estado del servicio para traducir automáticamente las publicaciones. Los mensajes se traducen automáticamente al idioma que prefiera, lo que significa que un equipo realizó la traducción. Con esta opción se controla la vista predeterminada, pero también puede usar el menú desplegable para traducir y mostrar publicaciones en cualquiera de los idiomas admitidos. Si selecciona el inglés, revertiremos el mensaje a la versión original en inglés.
 
 ## <a name="before-you-begin"></a>Antes de empezar
 
@@ -43,15 +44,15 @@ Las publicaciones del panel de mantenimiento del servicio se escriben solo en in
 
 ## <a name="set-your-preferred-language"></a>Establezca el idioma de su preferencia
 
-1. Vaya a la Centro de administración de Microsoft 365 , o página principal, seleccione el icono de configuración en la esquina superior [https://admin.microsoft.com](https://go.microsoft.com/fwlink/p/?linkid=2024339) derecha de la página.
+1. Vaya a la página principal de Centro de administración de Microsoft 365 [https://admin.microsoft.com](https://go.microsoft.com/fwlink/p/?linkid=2024339)o , seleccione el icono de configuración en la esquina superior derecha de la página.
 
 1. En **Idioma y zona horaria**, seleccione **Ver todo** mostrar las opciones disponibles. Seleccione el idioma que quiera en el menú desplegable y, después, **Guardar**. Microsoft 365 intentará actualizar y mostrar el nuevo idioma. Si esto no se produce de forma inmediata o si parece que tarda demasiado tiempo, puede actualizar el explorador o cerrar la sesión y, después, volver a iniciarla.
 
-## <a name="machine-translation-in-service-health-dashboard"></a>Traducción automática en el panel de mantenimiento del servicio
+## <a name="machine-translation-in-service-health-dashboard"></a>Traducción automática en Estado del servicio panel
 
-Cuando el idioma preferido no está establecido en inglés, las opciones de traducción están disponibles.
+Cuando su idioma preferido no está establecido en inglés, las opciones de traducción están disponibles.
 
-Para establecer las publicaciones del panel de mantenimiento del servicio para que se traduzcan automáticamente y se muestren en el idioma que prefiera, vaya a Panel de mantenimiento > estado del servicio. Verá un modificador en la parte superior de la vista para activar o desactivar la traducción automática. Cuando esté desactivada, las publicaciones se mostrarán en inglés. En cambio, cuando esté activada, los mensajes se mostrarán en su idioma preferido. La configuración que elija persistirá para cada visita.
+Para establecer Estado del servicio publicaciones del panel para que se traduzcan automáticamente y se muestren en el idioma que prefiera, vaya al panel health > Estado del servicio. Verá un modificador en la parte superior de la vista para activar o desactivar la traducción automática. Cuando esté desactivada, las publicaciones se mostrarán en inglés. En cambio, cuando esté activada, los mensajes se mostrarán en su idioma preferido. La configuración que elija se conservará para cada visita.
 
 ## <a name="related-topics"></a>Temas relacionados
 

@@ -8,19 +8,20 @@ manager: scotv
 ms.date: 10/02/2019
 audience: ITPro
 ms.topic: article
-ms.service: o365-solutions
+ms.service: microsoft-365-enterprise
 ms.localizationpriority: medium
 ms.collection:
+- scotvorg
 - M365-security-compliance
 - Strat_O365_Enterprise
 ms.custom: ''
 description: Cómo Contoso usa las características de seguridad de Microsoft 365 para empresas.
-ms.openlocfilehash: 46611f5321c893466448b39a9990501d9b3fafc2
-ms.sourcegitcommit: d09eb780dc41a01796eb8137fbe9267231af6746
+ms.openlocfilehash: 9bd6dce1b0f8aa7f6c2920ef5199232605f0688c
+ms.sourcegitcommit: 0b7070ec119e00e0dafe030bbfbef0ae5c9afa19
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/19/2022
-ms.locfileid: "67385471"
+ms.lasthandoff: 09/29/2022
+ms.locfileid: "68194783"
 ---
 # <a name="summary-of-microsoft-365-for-enterprise-security-for-the-contoso-corporation"></a>Resumen de Microsoft 365 para la seguridad empresarial de Contoso Corporation
 
@@ -73,7 +74,7 @@ Para seguir los procedimientos recomendados de seguridad y Microsoft 365 para lo
 
 - Acceso de dispositivos y aplicaciones más seguro con las directivas de Acceso Condicional
 
-  Contoso usa [directivas de Acceso Condicional](../security/office-365-security/microsoft-365-policies-configurations.md) para la identidad, los dispositivos, Exchange Online y SharePoint. Las directivas de Acceso Condicional de identidad incluyen exigir cambios de contraseña para los usuarios de riesgo elevado e impedir que los clientes usen aplicaciones que no admiten la autenticación moderna. Las directivas condicionales de dispositivo incluyen la definición de aplicaciones aprobadas y la exigencia de equipos y dispositivos móviles compatibles. Las directivas de Acceso Condicional de Exchange Online incluyen el bloqueo de los clientes de ActiveSync y la configuración del cifrado de mensajes de Office 365. Las directivas de acceso condicional de SharePoint Online incluyen una protección adicional para sitios confidenciales y altamente regulados.
+  Contoso is using [Conditional Access policies](../security/office-365-security/microsoft-365-policies-configurations.md) for identity, devices, Exchange Online, and SharePoint. Identity Conditional Access policies include requiring password changes for high-risk users and blocking clients from using apps that don't support modern authentication. Device policies include the definition of approved apps and requiring compliant PCs and mobile devices. Exchange Online Conditional Access policies include blocking ActiveSync clients and setting up Office 365 message encryption. SharePoint Conditional Access policies include additional protection for sensitive and highly regulated sites.
 
 - Windows Hello para empresas
 
@@ -85,9 +86,9 @@ Para seguir los procedimientos recomendados de seguridad y Microsoft 365 para lo
 
 ## <a name="threat-protection"></a>Protección contra amenazas
 
-- Protección contra malware con antivirus de Microsoft Defender
+- Protección contra malware con Microsoft Defender Antivirus
 
-  Contoso usa [el Antivirus de Microsoft Defender](/windows/security/threat-protection/windows-defender-antivirus/windows-defender-antivirus-in-windows-10) para la protección contra malware y la administración contra malware para equipos y dispositivos que ejecutan Windows 10 Enterprise.
+  Contoso usa [Microsoft Defender Antivirus](/windows/security/threat-protection/windows-defender-antivirus/windows-defender-antivirus-in-windows-10) para la protección contra malware y la administración antimalware para equipos y dispositivos que ejecutan Windows 10 Enterprise.
 
 - Proteger el flujo de correo electrónico y el registro de auditoría de buzones con Microsoft Defender para Office 365 
 
@@ -101,7 +102,7 @@ Para seguir los procedimientos recomendados de seguridad y Microsoft 365 para lo
 
 - Protección contra ataques más complejos con Advanced Threat Analytics
 
-  Contoso usa [Advanced Threat Analytics (ATA)](/advanced-threat-analytics/what-is-ata) para protegerse de ataques dirigidos avanzados. De forma automática, ATA analiza, aprende e identifica el comportamiento de entidades normales e irregulares (usuarios, dispositivos y recursos).
+  Contoso is using [Advanced Threat Analytics (ATA)](/advanced-threat-analytics/what-is-ata) to protect itself from advanced targeted attacks.  ATA automatically analyzes, learns, and identifies normal and abnormal entity (user, devices, and resources) behavior.
 
 ## <a name="information-protection"></a>Protección de la información
 
@@ -123,13 +124,13 @@ Para seguir los procedimientos recomendados de seguridad y Microsoft 365 para lo
 
 - Administración de dispositivos con Microsoft Intune
 
-  Contoso usa [Microsoft Intune](/intune/introduction-intune) para inscribir, administrar, y configurar el acceso a los dispositivos móviles y las aplicaciones que se ejecutan en ellos. Los dispositivos basados en políticas de Acceso Condicional también requieren aplicaciones autorizadas, PCs y dispositivos móviles compatibles.
+  Contoso uses [Microsoft Intune](/intune/introduction-intune) to enroll, manage, and configure access to mobile devices and the apps that run on them. Device-based Conditional Access policies also require approved apps and compliant PCs and mobile devices.
 
 ## <a name="security-management"></a>Administración de seguridad
 
 - Panel de seguridad central para TI con Microsoft Defender for Cloud
 
-  Contoso usa [Microsoft Defender for Cloud](https://azure.microsoft.com/services/security-center/) para presentar una visión unificada de la seguridad y la protección contra amenazas, para administrar directivas de seguridad en sus cargas de trabajo y para responder a ciberataques.
+  Contoso usa el [Microsoft Defender for Cloud](https://azure.microsoft.com/services/security-center/) para presentar una visión unificada de la seguridad y la protección contra amenazas, para administrar las directivas de seguridad en sus cargas de trabajo y para responder a los ciberataques.
 
 - Panel de seguridad central para los usuarios con Seguridad de Windows
 

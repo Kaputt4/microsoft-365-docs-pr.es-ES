@@ -7,17 +7,19 @@ ms.author: cmcatee
 manager: scotv
 audience: Admin
 ms.topic: reference
-ms.service: o365-administration
-ms.collection: Adm_Support
+ms.service: microsoft-365-business
+ms.collection:
+- scotvorg
+- Adm_Support
 ms.localizationpriority: medium
 description: Obtenga información acerca de cómo ponerse en contacto con el soporte técnico de su país o región.
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: 4bf33c9bcd07f6f85ab0a38bb8e9229a06cfbf8d
-ms.sourcegitcommit: 0ee2dabe402d44fecb6856af98a2ef7720d25189
+ms.openlocfilehash: f82270e0f2c018301dd0e34e23bcc74858029e4d
+ms.sourcegitcommit: 0b7070ec119e00e0dafe030bbfbef0ae5c9afa19
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/09/2021
-ms.locfileid: "61371393"
+ms.lasthandoff: 09/29/2022
+ms.locfileid: "68195860"
 ---
 # <a name="contact-support-for-denmark"></a>Póngase en contacto con el soporte técnico de Dinamarca
 
@@ -35,6 +37,6 @@ Inglés: lunes a viernes de 9:00 a 17:00
 
 Inglés: 24 horas al día, 7 días a la semana
 
-Número Teléfono alternativa: 38 48 70 67
+Número de teléfono alternativo: 38 48 70 67
 
 Se aplican tarifas de llamada local

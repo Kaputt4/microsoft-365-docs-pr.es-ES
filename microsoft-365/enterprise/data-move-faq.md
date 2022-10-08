@@ -6,20 +6,22 @@ manager: scotv
 ms.date: 05/31/2022
 audience: ITPro
 ms.topic: faq
-ms.service: o365-administration
+ms.service: microsoft-365-enterprise
 ms.localizationpriority: medium
 search.appverid:
 - MET150
 f1.keywords:
 - NOCSH
-description: Encuentre respuestas a las preguntas más frecuentes sobre cómo mover datos principales a una nueva Office 365 ubicación geográfica del centro de datos.
 ms.custom: seo-marvel-mar2020
-ms.openlocfilehash: 3164612238010e72eb02510e1264cca528b80f38
-ms.sourcegitcommit: 35f167725bec5fd4fe131781a53d96b060cf232d
+ms.collection:
+- scotvorg
+description: Encuentre respuestas a las preguntas más frecuentes sobre cómo mover datos principales a una nueva Office 365 ubicación geográfica del centro de datos.
+ms.openlocfilehash: af07ee89ffb8948ac2961db179112e70f3d0cfb4
+ms.sourcegitcommit: 0b7070ec119e00e0dafe030bbfbef0ae5c9afa19
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "66998192"
+ms.lasthandoff: 09/29/2022
+ms.locfileid: "68209016"
 ---
 # <a name="data-move-general-faq"></a>Preguntas más frecuentes sobre el movimiento de datos
 

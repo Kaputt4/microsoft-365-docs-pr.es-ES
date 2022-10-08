@@ -6,26 +6,28 @@ manager: scotv
 ms.date: 07/17/2020
 audience: ITPro
 ms.topic: article
-ms.service: o365-administration
+ms.service: microsoft-365-enterprise
 ms.localizationpriority: medium
-ms.collection: Ent_O365
+ms.collection:
+- scotvorg
+- Ent_O365
 f1.keywords:
 - NOCSH
 ms.custom: ''
 ms.assetid: ff93a341-6f0f-4f06-9690-726052e1be64
 description: 'Resumen: use PowerShell para administrar las propiedades de la cuenta de usuario de Skype Empresarial Online con directivas.'
-ms.openlocfilehash: 71ced77947efda0f587fe7a20af85a73dea73f6c
-ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
+ms.openlocfilehash: 1ea469ec5477ea90fc6e8086360db724eddf3863
+ms.sourcegitcommit: 0b7070ec119e00e0dafe030bbfbef0ae5c9afa19
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "65094358"
+ms.lasthandoff: 09/29/2022
+ms.locfileid: "68185367"
 ---
 # <a name="manage-skype-for-business-online-policies-with-powershell"></a>Administrar las directivas de Skype Empresarial Online con PowerShell
 
-*Este artículo se aplica tanto a Microsoft 365 Enterprise como a Office 365 Enterprise.*
+*Este artículo afecta tanto a Office 365 Enterprise como a Microsoft 365 Enterprise*
 
-Para administrar muchas propiedades de la cuenta de usuario para Skype Empresarial Online, debe especificarlas como propiedades de directivas con PowerShell para Microsoft 365.
+Para administrar muchas propiedades de la cuenta de usuario para Skype Empresarial Online, debe especificarlas como propiedades de las directivas con PowerShell para Microsoft 365.
   
 ## <a name="before-you-begin"></a>Antes de empezar
 
@@ -72,7 +74,7 @@ En este ejemplo, los valores de esta directiva determinan lo que un uso puede o 
     
 - **EnablePublicCloudAccess** indica si el usuario puede comunicarse con usuarios de Windows Live.
     
-Por lo tanto, no cambia directamente las propiedades relacionadas con la federación en las cuentas de usuario (por ejemplo, **Set-CsUser -EnableFederationAccess $True**). En su lugar, asigne a una cuenta una directiva de acceso externo que tenga preconfigurados los valores de propiedad deseados. Si queremos que un usuario pueda comunicarse con usuarios federados y con Windows usuarios activos, se debe asignar a esa cuenta de usuario una directiva que permita esos tipos de comunicación.
+Por lo tanto, no cambia directamente las propiedades relacionadas con la federación en las cuentas de usuario (por ejemplo, **Set-CsUser -EnableFederationAccess $True**). En su lugar, asigne a una cuenta una directiva de acceso externo que tenga preconfigurados los valores de propiedad deseados. Si queremos que un usuario pueda comunicarse con usuarios federados y con usuarios de Windows Live, esa cuenta de usuario debe tener asignada una directiva que permita esos tipos de comunicación.
   
 Si quiere saber si alguien puede comunicarse con usuarios de fuera de la organización, debe:
   
@@ -98,7 +100,7 @@ Para administrar las directivas de Skype Empresarial Online con PowerShell, cons
 
 
 > [!NOTE]
-> Un plan de marcado Skype Empresarial online es una directiva en todos los aspectos, excepto el nombre. Se eligió el nombre "plan de marcado" en lugar de, por ejemplo, "directiva de marcado" para proporcionar compatibilidad con versiones anteriores con Office Communications Server y con Exchange. 
+> Un plan de marcado Skype Empresarial online es una directiva en todos los aspectos, excepto el nombre. El nombre "plan de marcado" se eligió en lugar de, por ejemplo, "directiva de marcado" para proporcionar compatibilidad con versiones anteriores con Office Communications Server y Con Exchange. 
   
 Por ejemplo, para ver todas las directivas de voz disponibles para su uso, ejecute este comando:
   
@@ -114,7 +116,7 @@ Get-CsConferencingPolicy -ApplicableTo "Alex Darrow"
 Get-CsExternalAccessPolicy -ApplicableTo "Alex Darrow"
 ```
 
-El parámetro ApplicableTo limita los datos devueltos a las directivas que se pueden asignar al usuario especificado (por ejemplo, Alex Darrow). Según las licencias y las restricciones de ubicación de uso, eso puede representar un subconjunto de todas las directivas disponibles. 
+The ApplicableTo parameter limits the returned data to policies that can be assigned to the specified user (for example, Alex Darrow). Depending on licensing and usage location restrictions, that might represent a subset of all the available policies. 
   
 En algunos casos, las propiedades de las directivas no se usan con Microsoft 365, mientras que otras solo pueden ser administradas por el personal de soporte técnico de Microsoft. 
   

@@ -11,17 +11,19 @@ author: mjcaparas
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
-ms.collection: M365-security-compliance
+ms.collection:
+- m365-security
+- tier3
 ms.topic: article
 ms.subservice: mde
 ms.custom: api
 search.appverid: met150
-ms.openlocfilehash: 4e301b2b73b2a30b40ca281e2e383cadedbe19ff
-ms.sourcegitcommit: 9b133379196da2b3a4bb311b07ff274f43780f68
+ms.openlocfilehash: f1d24fd86502fdf363a1efe30ec17accce1922ff
+ms.sourcegitcommit: 4e42bafee965446f44f7f57d1defed2b9b24fce8
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/14/2022
-ms.locfileid: "67704026"
+ms.lasthandoff: 09/30/2022
+ms.locfileid: "68224148"
 ---
 # <a name="stop-and-quarantine-file-api"></a>API de archivo de detención y cuarentena
 
@@ -52,7 +54,7 @@ Detenga la ejecución de un archivo en un dispositivo y elimínelo.
 >
 > - El dispositivo en el que va a realizar la acción ejecuta Windows 10, versión 1703 o posterior, o Windows 11
 > - El archivo no pertenece a editores de terceros de confianza o no está firmado por Microsoft
-> - Antivirus de Microsoft Defender debe ejecutarse al menos en modo pasivo. Para obtener más información, consulte [Compatibilidad del Antivirus de Microsoft Defender](/windows/security/threat-protection/microsoft-defender-antivirus/microsoft-defender-antivirus-compatibility).
+> - Microsoft Defender Antivirus debe ejecutarse al menos en modo pasivo. Para obtener más información, consulte [compatibilidad con Microsoft Defender Antivirus](/windows/security/threat-protection/microsoft-defender-antivirus/microsoft-defender-antivirus-compatibility).
 
 
 ## <a name="permissions"></a>Permisos
@@ -71,6 +73,8 @@ Delegado (cuenta profesional o educativa)|Machine.StopAndQuarantine|"Detener y p
 >
 > - El usuario debe tener al menos el siguiente permiso de rol: "Acciones de corrección activas" (consulte [Creación y administración de roles](user-roles.md) para obtener más información).
 > - El usuario debe tener acceso al dispositivo en función de la configuración del grupo de dispositivos (consulte [Creación y administración de grupos de dispositivos](machine-groups.md) para obtener más información).
+>
+> La creación de grupos de dispositivos se admite en El plan 1 y el plan 2 de Defender para punto de conexión.  
 
 ## <a name="http-request"></a>Solicitud HTTP
 

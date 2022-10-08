@@ -15,16 +15,17 @@ manager: dansimp
 ms.subservice: mde
 ms.topic: how-to
 ms.collection:
-- M365-security-compliance
+- m365-security
+- tier2
 ms.custom: admindeeplinkDEFENDER
 ms.date: 1/18/2022
 search.appverid: met150
-ms.openlocfilehash: ec8a5c030e56e9faae5d94dc636bea4c9c2351a7
-ms.sourcegitcommit: 95ac076310ab9006ed92c69938f7ae771cd10826
+ms.openlocfilehash: b1eaf92219ba5641cd676e69558189a9cb377f51
+ms.sourcegitcommit: 0b7070ec119e00e0dafe030bbfbef0ae5c9afa19
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/20/2022
-ms.locfileid: "67850408"
+ms.lasthandoff: 09/29/2022
+ms.locfileid: "68175004"
 ---
 # <a name="enable-attack-surface-reduction-rules"></a>Habilitar reglas de reducción de superficie expuesta a ataques
 
@@ -60,7 +61,7 @@ Puede establecer reglas de reducción de superficie expuesta a ataques para disp
 
 Para usar todo el conjunto de características de las reglas de reducción de superficie expuesta a ataques, necesita:
 
-- Antivirus de Microsoft Defender como antivirus principal (protección en tiempo real activada)
+- Microsoft Defender Antivirus como antivirus principal (protección en tiempo real activada)
 - [Cloud-Delivery Protection](/windows/security/threat-protection/microsoft-defender-antivirus/enable-cloud-protection-microsoft-defender-antivirus) en (algunas reglas lo requieren)
 - Windows 10 Enterprise licencia E5 o E3
 
@@ -108,9 +109,9 @@ Las reglas de ASR admiten variables de entorno y caracteres comodín. Para obten
 
 2. Las reglas de reducción de superficie expuesta a ataques para dispositivos administrados por MEM ahora admiten el comportamiento de la fusión de la configuración de diferentes directivas, con el fin de crear un superconjunto de directivas para cada dispositivo. Solo se combinan las opciones de configuración que no están en conflicto, mientras que las que están en conflicto no se agregan al superconjunto de reglas. Anteriormente, si dos directivas incluían conflictos para una sola configuración, ambas directivas se marcaban como en conflicto y no se implementaría ninguna configuración de ninguno de los perfiles. El comportamiento de combinación de reglas de reducción de superficie expuesta a ataques es el siguiente:
    - Las reglas de reducción de superficie expuesta a ataques de los perfiles siguientes se evalúan para cada dispositivo al que se aplican las reglas:
-     - Dispositivos > directiva de configuración > perfil de Endpoint Protection >[reducción de la superficie expuesta a ataques](/mem/intune/protect/endpoint-protection-windows-10#attack-surface-reduction-rules) de **Protección contra vulnerabilidades** >  de seguridad de Microsoft Defender.
+     - Directiva de configuración de dispositivos > > perfil de Endpoint Protection > Microsoft Defender [reducción de la superficie expuesta a ataques](/mem/intune/protect/endpoint-protection-windows-10#attack-surface-reduction-rules) de **Exploit Guard** > .
      - Directiva de reducción de superficie expuesta a ataques > seguridad del punto de conexión Reglas de **reducción** >  de [superficie expuesta a ataques](/mem/intune/protect/endpoint-security-asr-policy#devices-managed-by-intune).
-     - Líneas base de seguridad > seguridad de puntos de conexión >[reglas de reducción de superficie expuesta a ataques](/mem/intune/protect/security-baseline-settings-defender-atp#attack-surface-reduction-rules) **de base** >  de ATP de Microsoft Defender.
+     - Las líneas base de seguridad > seguridad de los puntos de conexión > Microsoft Defender [reglas de reducción de superficie expuesta a ataques](/mem/intune/protect/security-baseline-settings-defender-atp#attack-surface-reduction-rules) **de base** >  de ATP.
    - La configuración que no tiene conflictos se agrega a un superconjunto de directivas para el dispositivo.
    - Cuando dos o más directivas tienen una configuración en conflicto, la configuración en conflicto no se agrega a la directiva combinada, mientras que la configuración que no entra en conflicto se agrega a la directiva de superconjunto que se aplica a un dispositivo.
    - Solo se retienen las configuraciones de configuración en conflicto.
@@ -200,7 +201,7 @@ Puede usar OMA-URI de Microsoft Endpoint Manager (MEM) para configurar reglas AS
    > [!div class="mx-imgBorder"]
    > :::image type="content" source="images/mem05-add-row-oma-uri.png" alt-text="Configuración del URI de OMA en el portal del Centro de administración de Microsoft Endpoint Manager" lightbox="images/mem05-add-row-oma-uri.png":::
 
-6. Haga clic en **Guardar**. **Agregar fila** se cierra. En **Personalizado**, seleccione **Siguiente**. En el paso **3 Etiquetas de ámbito**, las etiquetas de ámbito son opcionales. Realiza una de las siguientes acciones:
+6. Seleccione **Guardar**. **Agregar fila** se cierra. En **Personalizado**, seleccione **Siguiente**. En el paso **3 Etiquetas de ámbito**, las etiquetas de ámbito son opcionales. Realiza una de las siguientes acciones:
 
    - Seleccione **Seleccionar etiquetas de ámbito**, seleccione la etiqueta de ámbito (opcional) y, a continuación, seleccione **Siguiente**.
    - O bien, seleccione **Siguiente.**
@@ -294,7 +295,7 @@ Ejemplo:
 
 2. En el **Editor de administración de directiva de grupo**, vaya a **Configuración del equipo** y seleccione **Plantillas administrativas**.
 
-3. Expanda el árbol a **componentes** \> de **Windows Antivirus** \> de Microsoft Defender **Reducción de la superficie de ataque** de **Protección contra vulnerabilidades** \> de seguridad de Microsoft Defender.
+3. Expanda el árbol a **componentes** \> de Windows **Microsoft Defender Antivirus** \> Microsoft Defender **reducción de la superficie de ataque** de **Protección contra vulnerabilidades** \> de seguridad.
 
 4. Seleccione **Configurar reglas de reducción de superficie expuesta a ataques** y seleccione **Habilitado**. A continuación, puede establecer el estado individual de cada regla en la sección de opciones. Seleccione **Mostrar...** y escriba el identificador de regla en la columna **Nombre** del valor y el estado elegido en la columna **Valor** de la siguiente manera:
 

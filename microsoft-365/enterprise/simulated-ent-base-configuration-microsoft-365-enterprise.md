@@ -11,6 +11,7 @@ ms.topic: article
 ms.service: microsoft-365-enterprise
 ms.localizationpriority: medium
 ms.collection:
+- scotvorg
 - M365-subscription-management
 - Strat_O365_Enterprise
 ms.custom:
@@ -18,12 +19,12 @@ ms.custom:
 - seo-marvel-apr2020
 ms.assetid: 6f916a77-301c-4be2-b407-6cec4d80df76
 description: Use esta guía de laboratorio de pruebas para crear un entorno de prueba empresarial simulado para Microsoft 365 para empresas.
-ms.openlocfilehash: 7f90046c75c2b95c288cdf2134734d1cc9898125
-ms.sourcegitcommit: 437461fa1d38ff9bb95dd8a1c5f0b94e8111ada2
+ms.openlocfilehash: e59d037185009125f64bc457d7fc17be497b432d
+ms.sourcegitcommit: 0b7070ec119e00e0dafe030bbfbef0ae5c9afa19
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/14/2022
-ms.locfileid: "67672983"
+ms.lasthandoff: 09/29/2022
+ms.locfileid: "68185169"
 ---
 # <a name="the-simulated-enterprise-base-configuration"></a>La configuración básica empresarial simulada
 
@@ -60,7 +61,7 @@ En este método, usará una plantilla de Azure Resource Manager para compilar la
 Antes de implementar la plantilla, lea la [página LÉAME](https://github.com/maxskunkworks/TLG/tree/master/tlg-base-config_3-vm.m365-ems) de la plantilla y tenga lista la siguiente información:
 
 - Nombre de dominio DNS público del entorno de prueba (testlab).\<*your public domain*> Escribirá este nombre en el campo **Nombre de dominio** de la página **Implementación personalizada** .
-- Un prefijo de etiqueta DNS para las URL de las direcciones IP públicas de sus máquinas virtuales. Tendrá que escribir esta etiqueta en el campo **Prefijo de etiqueta Dns** de la página **implementación personalizada**.
+- A DNS label prefix for the URLs of the public IP addresses of your virtual machines. You'll need to enter this label in the **Dns Label Prefix** field of the **Custom deployment** page.
 
 Después de leer las instrucciones, seleccione **Implementar en Azure** en la [página LÉAME de plantilla](https://github.com/maxskunkworks/TLG/tree/master/tlg-base-config_3-vm.m365-ems) para empezar.
 
@@ -75,7 +76,7 @@ Una vez completada la plantilla, la configuración tendrá el siguiente aspecto:
 
 En este método, utilizará Windows PowerShell y el módulo de Azure PowerShell para crear la infraestructura de red, las máquinas virtuales y su configuración.
 
-Use este método si quiere obtener experiencia en la creación de elementos de una infraestructura de Azure paso a paso con PowerShell. Puede personalizar los bloques de comandos de PowerShell para la implementación de otras máquinas virtuales en Azure.
+Use this method if you want to get experience creating elements of Azure infrastructure one step at a time with PowerShell. You can then customize the PowerShell command blocks for your own deployment of other virtual machines in Azure.
 
 #### <a name="step-1-create-dc1"></a>Paso 1: Crear DC1
 
@@ -84,7 +85,7 @@ En este paso, creará una red virtual de Azure y agregará DC1, una máquina vir
 En primer lugar, inicie un símbolo del sistema de Windows PowerShell en el equipo local.
   
 > [!NOTE]
-> Los siguientes conjuntos de comandos utilizan la última versión de Azure PowerShell. Visite [Get started with Azure PowerShell cmdlets (Introducción a los cmdlets de Azure)](/powershell/azureps-cmdlets-docs/). 
+> The following command sets use the latest version of Azure PowerShell. See [Get started with Azure PowerShell cmdlets](/powershell/azureps-cmdlets-docs/). 
   
 Inicie sesión en su cuenta de Azure con el siguiente comando.
   
@@ -105,7 +106,7 @@ $subscr="<subscription name>"
 Get-AzSubscription -SubscriptionName $subscr | Select-AzSubscription
 ```
 
-Después, cree un nuevo grupo de recursos para su entorno de pruebas empresarial simulado. Para determinar un nombre único de grupo de recursos, use este comando a fin de enumerar los grupos de recursos existentes.
+Next, create a new resource group for your simulated enterprise test lab. To determine a unique resource group name, use this command to list your existing resource groups.
   
 ```powershell
 Get-AzResourceGroup | Sort ResourceGroupName | Select ResourceGroupName
@@ -156,7 +157,7 @@ $vm=Add-AzVMDataDisk -VM $vm -Name "DC1-DataDisk1" -CreateOption Attach -Managed
 New-AzVM -ResourceGroupName $rgName -Location $locName -VM $vm
 ```
 
-Se le pedirá un nombre de usuario y una contraseña para la cuenta de administrador local en DC1. Use una contraseña segura y registre el nombre de usuario y la contraseña en una ubicación segura.
+You will be prompted for a user name and password for the local administrator account on DC1. Use a strong password and record both the name and password in a secure location.
   
 A continuación, conéctese a la máquina virtual DC1:
   
@@ -215,7 +216,7 @@ New-ADUser -SamAccountName User1 -AccountPassword (read-host "Set user password"
 
 Tenga en cuenta que este comando le solicita que proporcione la contraseña de la cuenta User1. Esta cuenta se usará para las conexiones de escritorio remoto para todos los equipos miembros del dominio TESTLAB, por lo que elija una contraseña segura. Anote la contraseña de la cuenta User1 y almacénela en una ubicación segura.
   
-Después, configure la nueva cuenta User1 como administrador de esquema, empresa o dominio. En un símbolo del sistema de Windows PowerShell con nivel de administrador, ejecute este comando.
+A continuación, configure la nueva cuenta User1 como administrador de dominio, empresa y esquema. En un símbolo del sistema de Windows PowerShell con el nivel de administrador, ejecute este comando:
   
 ```powershell
 $yourDomain="<your public domain>"
@@ -298,7 +299,7 @@ La configuración actual tiene este aspecto:
 En este paso, creará y configurará CLIENT1, que actúa como un equipo de escritorio, una tableta o un portátil típico de la intranet.
 
 > [!NOTE]  
-> El siguiente conjunto de comandos crea CLIENT1 con Windows Server 2016 Datacenter, lo que se puede realizar en todos los tipos de suscripciones de Azure. Si tiene una suscripción de Azure basada en Visual Studio, puede crear CLIENT1 con Windows 10 en [Azure Portal](https://portal.azure.com).
+> The following command set creates CLIENT1 running Windows Server 2016 Datacenter, which can be done for all types of Azure subscriptions. If you have a Visual Studio-based Azure subscription, you can create CLIENT1 running Windows 10 with the [Azure portal](https://portal.azure.com).
   
 Para crear una máquina virtual de Azure para CLIENT1, rellene el nombre del grupo de recursos y ejecute estos comandos en el símbolo del sistema del equipo local.
   
@@ -359,11 +360,11 @@ La configuración actual tiene este aspecto:
 
 ## <a name="phase-2-create-your-microsoft-365-e5-subscription"></a>Fase 2: crear la suscripción a Microsoft 365 E5
 
-En esta fase, creará una nueva suscripción a Microsoft 365 E5 que usa un nuevo espacio empresarial de Azure AD, que es independiente de su suscripción de producción. Puede hacer esto de dos maneras:
+In this phase, you create a new Microsoft 365 E5 subscription that uses a new Azure AD tenant, one that is separate from your production subscription. You can do this in two ways:
 
 - Usar una suscripción de prueba de Microsoft 365 E5.
 
-  La suscripción de prueba de Microsoft 365 E5 es de 30 días, que puede ampliarse fácilmente a 60 días. Cuando la suscripción de prueba expire, debe convertirla en suscripción de pago o crear una nueva suscripción de prueba. Crear nuevas suscripciones de prueba significa que perderá la configuración, que podría incluir escenarios complejos.  
+  The Microsoft 365 E5 trial subscription is 30 days, which can be easily extended to 60 days. When the trial subscription expires, you must either convert it to a paid subscription or create a new trial subscription. Creating new trial subscriptions means you will leave your configuration, which could include complex scenarios, behind.  
 
 - Usar una suscripción de producción independiente de Microsoft 365 E5 con un pequeño número de licencias.
 

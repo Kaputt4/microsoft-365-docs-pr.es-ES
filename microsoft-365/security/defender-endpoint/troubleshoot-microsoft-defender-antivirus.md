@@ -1,6 +1,6 @@
 ---
-title: Identificadores de eventos y códigos de error del Antivirus de Microsoft Defender
-description: Buscar las causas y soluciones de los identificadores y errores de eventos del Antivirus de Microsoft Defender
+title: Microsoft Defender códigos de error y identificadores de eventos de Antivirus
+description: Buscar las causas y soluciones de los identificadores de eventos y errores de Microsoft Defender Antivirus
 keywords: event, error code, siem, logging, troubleshooting, wef, windows event forwarding
 ms.service: microsoft-365-security
 ms.mktglfcycl: manage
@@ -14,14 +14,16 @@ ms.date: 08/04/2022
 ms.reviewer: ''
 manager: dansimp
 ms.subservice: mde
-ms.collection: M365-security-compliance
+ms.collection:
+- m365-security
+- tier3
 search.appverid: met150
-ms.openlocfilehash: 14eef61a330c1317dd5eb9e98694fec18ad2ce41
-ms.sourcegitcommit: 9b133379196da2b3a4bb311b07ff274f43780f68
+ms.openlocfilehash: bc2cdc24b3d2001ba04b38e52e19c1ef02071736
+ms.sourcegitcommit: 4e42bafee965446f44f7f57d1defed2b9b24fce8
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/14/2022
-ms.locfileid: "67686689"
+ms.lasthandoff: 09/30/2022
+ms.locfileid: "68224082"
 ---
 # <a name="review-event-logs-and-error-codes-to-troubleshoot-issues-with-microsoft-defender-antivirus"></a>Revisar registros de sucesos y códigos de error para solucionar problemas del Antivirus de Windows Defender
 
@@ -35,23 +37,23 @@ ms.locfileid: "67686689"
 **Plataformas**
 - Windows
 
-Si encuentra un problema con el Antivirus de Microsoft Defender, puede buscar en las tablas de este tema para encontrar un problema coincidente y una posible solución.
+Si encuentra un problema con Microsoft Defender Antivirus, puede buscar en las tablas de este tema para encontrar un problema coincidente y una posible solución.
 
 La lista de tablas:
 
-- [Identificadores de eventos del Antivirus de Microsoft Defender](#windows-defender-av-ids) (se aplican a Windows 10, Windows 11 y Windows Server 2016)
-- [Códigos de error de cliente del Antivirus de Microsoft Defender](#error-codes)
-- [Códigos de error internos del cliente del Antivirus de Microsoft Defender (utilizados por Microsoft durante el desarrollo y las pruebas)](#internal-error-codes)
+- [Microsoft Defender identificadores de eventos de Antivirus](#windows-defender-av-ids) (se aplican a Windows 10, Windows 11 y Windows Server 2016)
+- [códigos de error de cliente Microsoft Defender Antivirus](#error-codes)
+- [Códigos de error de cliente Microsoft Defender Antivirus internos (utilizados por Microsoft durante el desarrollo y las pruebas)](#internal-error-codes)
 
 
 <a id="windows-defender-av-ids"></a>
-## <a name="microsoft-defender-antivirus-event-ids"></a>Identificadores de eventos del Antivirus de Microsoft Defender
+## <a name="microsoft-defender-antivirus-event-ids"></a>identificadores de eventos Microsoft Defender Antivirus
 
-Antivirus de Microsoft Defender registra los identificadores de evento en el registro de eventos de Windows.
+Microsoft Defender Antivirus registra los identificadores de evento en el registro de eventos de Windows.
 
-Puede ver directamente el registro de eventos o, si tiene una herramienta de administración de eventos e información de seguridad (SIEM) de terceros, también puede usar [identificadores de eventos de cliente del Antivirus de Microsoft Defender](troubleshoot-microsoft-defender-antivirus.md#windows-defender-av-ids) para revisar eventos y errores específicos de los puntos de conexión.
+Puede ver directamente el registro de eventos o, si tiene una herramienta de administración de eventos e información de seguridad (SIEM) de terceros, también puede usar [Microsoft Defender identificadores de eventos de cliente antivirus](troubleshoot-microsoft-defender-antivirus.md#windows-defender-av-ids) para revisar eventos y errores específicos de los puntos de conexión.
 
-En la tabla de esta sección se enumeran los identificadores de eventos principales del Antivirus de Microsoft Defender y, siempre que sea posible, se proporcionan soluciones sugeridas para corregir o resolver el error.
+En la tabla de esta sección se enumeran los principales identificadores de eventos Microsoft Defender Antivirus y, siempre que sea posible, se proporcionan soluciones sugeridas para corregir o resolver el error.
 
 ## <a name="to-view-a-microsoft-defender-antivirus-event"></a>Para ver un evento antivirus de Microsoft Defender
 
@@ -190,7 +192,7 @@ Descripción:
 </td>
 </tr>
 <tr>
-<th colspan="2">Identificador de evento: 1003</th>
+<th colspan="2">Id. de evento: 1003</th>
 </tr>
 <tr><td>
 Nombre simbólico:
@@ -319,7 +321,7 @@ Descripción:
 Acción del usuario:
 </td>
 <td >
-El cliente antivirus encontró un error y el examen actual se ha detenido. Es posible que se produzca un error en el examen debido a un problema del lado cliente. Este registro de eventos incluye el identificador de examen, el tipo de examen (Antivirus de Microsoft Defender, antispyware, antimalware), los parámetros de examen, el usuario que inició el examen, el código de error y una descripción del error.
+El cliente antivirus encontró un error y el examen actual se ha detenido. Es posible que se produzca un error en el examen debido a un problema del lado cliente. Este registro de eventos incluye el identificador de examen, el tipo de examen (Microsoft Defender Antivirus, antispyware, antimalware), los parámetros de examen, el usuario que inició el examen, el código de error y una descripción del error.
 Para solucionar este evento:
 <ol>
 <li>Vuelva a ejecutar el examen.</li>
@@ -423,7 +425,7 @@ Mensaje:
 Descripción:
 </td>
 <td >
-Antivirus de Microsoft Defender ha tomado medidas para proteger esta máquina contra malware u otro software potencialmente no deseado. Para obtener más información, vea los artículos siguientes: 
+Microsoft Defender Antivirus ha tomado medidas para proteger esta máquina contra malware u otro software potencialmente no deseado. Para obtener más información, vea los artículos siguientes: 
 <dl>
 <dt>Usuario: &lt; Dominio&gt;\&lt; Nombre de usuario&gt;</dt>
 <dt>: &lt;Id. de nombre&gt;de amenaza</dt>
@@ -475,7 +477,7 @@ Mensaje:
 Descripción:
 </td>
 <td >
-Antivirus de Microsoft Defender ha encontrado un error al tomar medidas sobre malware u otro software potencialmente no deseado. Para obtener más información, vea los artículos siguientes: 
+Microsoft Defender Antivirus ha encontrado un error al tomar medidas sobre malware u otro software potencialmente no deseado. Para obtener más información, vea los artículos siguientes: 
 <dl>
 <dt>Usuario: &lt; Dominio&gt;\&lt; Nombre de usuario&gt;</dt>
 <dt>: &lt;Id. de nombre&gt;de amenaza</dt>
@@ -530,7 +532,7 @@ Mensaje:
 Descripción:
 </td>
 <td >
-Antivirus de Microsoft Defender ha restaurado un elemento de la cuarentena. Para obtener más información, vea los artículos siguientes: 
+Microsoft Defender Antivirus ha restaurado un elemento de la cuarentena. Para obtener más información, vea los artículos siguientes: 
 <dl>
 <dt>Nombre: &lt; Id. de nombre&gt;</dt> de 
 <dt>amenaza: &lt;Gravedad del identificador&gt;</dt>
@@ -572,7 +574,7 @@ Mensaje:
 Descripción:
 </td>
 <td >
-Antivirus de Microsoft Defender ha encontrado un error al intentar restaurar un elemento de la cuarentena. Para obtener más información, vea los artículos siguientes: 
+Microsoft Defender Antivirus ha encontrado un error al intentar restaurar un elemento de la cuarentena. Para obtener más información, vea los artículos siguientes: 
 <dl>
 <dt>Nombre: &lt; Id. de nombre&gt;</dt> de 
 <dt>amenaza: &lt;Gravedad del identificador&gt;</dt>
@@ -616,7 +618,7 @@ Mensaje:
 Descripción:
 </td>
 <td >
-Antivirus de Microsoft Defender ha eliminado un elemento de la cuarentena.<br/>Para obtener más información, vea los artículos siguientes: 
+Microsoft Defender Antivirus ha eliminado un elemento de la cuarentena.<br/>Para obtener más información, vea los artículos siguientes: 
 <dl>
 <dt>Nombre: &lt; Id. de nombre&gt;</dt> de 
 <dt>amenaza: &lt;Gravedad del identificador&gt;</dt>
@@ -658,7 +660,7 @@ Mensaje:
 Descripción:
 </td>
 <td >
-Antivirus de Microsoft Defender ha encontrado un error al intentar eliminar un elemento de la cuarentena.
+Microsoft Defender Antivirus ha encontrado un error al intentar eliminar un elemento de la cuarentena.
 Para obtener más información, vea los artículos siguientes: 
 <dl>
 <dt>Nombre: &lt; Id. de nombre&gt;</dt> de 
@@ -703,7 +705,7 @@ Mensaje:
 Descripción:
 </td>
 <td >
-Antivirus de Microsoft Defender ha quitado el historial de malware y otro software potencialmente no deseado.
+Microsoft Defender Antivirus ha eliminado el historial de malware y otro software potencialmente no deseado.
 <dl>
 <dt>Hora: la hora en que se produjo el evento, por ejemplo, cuando se purga el historial. Este parámetro no se usa en eventos de amenaza para que no haya ninguna confusión con respecto a si es el tiempo de corrección o el tiempo de infección. Para ellos, los llamamos específicamente tiempo de acción o tiempo de detección.</dt> 
 <dt>Usuario: &lt; Dominio&gt;\&lt; Usuario&gt;</dt>
@@ -733,7 +735,7 @@ La plataforma antimalware no pudo eliminar el historial de malware y otro softwa
 Descripción:
 </td>
 <td >
-Antivirus de Microsoft Defender ha encontrado un error al intentar quitar el historial de malware y otro software potencialmente no deseado.
+Microsoft Defender Antivirus ha encontrado un error al intentar eliminar el historial de malware y otro software potencialmente no deseado.
 <dl>
 <dt>Hora: la hora en que se produjo el evento, por ejemplo, cuando se purga el historial. Este parámetro no se usa en eventos de amenaza para que no haya ninguna confusión con respecto a si es el tiempo de corrección o el tiempo de infección. Para ellos, los llamamos específicamente tiempo de acción o tiempo de detección.</dt> 
 <dt>Usuario: &lt; Dominio&gt;\&lt; Código de error del usuario&gt;</dt>
@@ -765,7 +767,7 @@ Mensaje:
 Descripción:
 </td>
 <td >
-Antivirus de Microsoft Defender ha detectado un comportamiento sospechoso.<br/>Para obtener más información, vea los artículos siguientes: 
+Microsoft Defender Antivirus ha detectado un comportamiento sospechoso.<br/>Para obtener más información, vea los artículos siguientes: 
 <dl>
 <dt>Nombre: &lt; Id. de nombre&gt;</dt> de 
 <dt>amenaza: &lt;Gravedad del identificador&gt;</dt>
@@ -840,7 +842,7 @@ Mensaje:
 Descripción:
 </td>
 <td >
-Antivirus de Microsoft Defender ha detectado malware u otro software potencialmente no deseado.<br/>Para obtener más información, vea los artículos siguientes: 
+Microsoft Defender Antivirus ha detectado malware u otro software potencialmente no deseado.<br/>Para obtener más información, vea los artículos siguientes: 
 <dl>
 <dt>Nombre: &lt; Id. de nombre&gt;</dt> de 
 <dt>amenaza: &lt;Gravedad del identificador&gt;</dt>
@@ -893,7 +895,7 @@ Usuario de UAC</dt>
 Acción del usuario:
 </td>
 <td >
-No se requiere ninguna acción. Antivirus de Microsoft Defender puede suspender y realizar acciones rutinarias en esta amenaza. Si desea quitar la amenaza manualmente, en la interfaz antivirus de Microsoft Defender, haga clic en <b>Limpiar equipo</b>.
+No se requiere ninguna acción. Microsoft Defender Antivirus puede suspender y realizar acciones rutinarias en esta amenaza. Si desea quitar la amenaza manualmente, en la interfaz Microsoft Defender Antivirus, haga clic en <b>Limpiar equipo</b>.
 </td>
 </tr>
 <tr>
@@ -919,7 +921,7 @@ Mensaje:
 Descripción:
 </td>
 <td >
-Antivirus de Microsoft Defender ha tomado medidas para proteger esta máquina contra malware u otro software potencialmente no deseado.<br/>Para obtener más información, vea los artículos siguientes: 
+Microsoft Defender Antivirus ha tomado medidas para proteger esta máquina contra malware u otro software potencialmente no deseado.<br/>Para obtener más información, vea los artículos siguientes: 
 <dl>
 <dt>Nombre: &lt; Id. de nombre&gt;</dt> de 
 <dt>amenaza: &lt;Gravedad del identificador&gt;</dt>
@@ -976,7 +978,7 @@ Usuario de UAC</dt>
 <dt>error: &lt;código&gt; de error Código de resultado asociado con el estado de la amenaza. Valores HRESULT estándar.</dt> 
 <dt>Descripción del error: &lt; Descripción&gt; del error Descripción del error. </dt> 
 <dt>Versión de firma: &lt; &gt;Versión de definición</dt>
-<dt>Versión del motor: &lt;Antimalware Engine versión&gt;</dt> NOTA: Siempre que antivirus de Microsoft Defender, Microsoft Security Essentials, herramienta de eliminación de software malintencionado o System Center Endpoint Protection detecte un malware, restaurará los siguientes servicios y configuración del sistema que el malware podría tener. Cambiado:<ul>
+<dt>Versión del motor: &lt;Antimalware Engine versión&gt;</dt> NOTA: Siempre que Microsoft Defender Antivirus, Microsoft Security Essentials, Herramienta de eliminación de software malintencionado o System Center Endpoint Protection  detecta un malware, restaurará los siguientes servicios y configuración del sistema que el malware podría haber cambiado:<ul>
 <li>Configuración predeterminada de Internet Explorer o Microsoft Edge</li>
 <li>Configuración de Access Control de usuario</li>
 <li>Configuración de Chrome</li>
@@ -1015,7 +1017,7 @@ Windows Server 2008, Windows Server 2008 R2, Windows Server 2012 y Windows Serve
 Acción del usuario:
 </td>
 <td >
-No es necesario realizar ninguna acción. Antivirus de Microsoft Defender quitó o pone en cuarentena una amenaza.
+No es necesario realizar ninguna acción. Microsoft Defender Antivirus quitó o pone en cuarentena una amenaza.
 </td>
 </tr>
 <tr>
@@ -1041,7 +1043,7 @@ Mensaje:
 Descripción:
 </td>
 <td >
-Antivirus de Microsoft Defender ha encontrado un error no crítico al tomar medidas sobre malware u otro software potencialmente no deseado.<br/>Para obtener más información, vea los artículos siguientes: 
+Microsoft Defender Antivirus ha encontrado un error no crítico al tomar medidas sobre malware u otro software potencialmente no deseado.<br/>Para obtener más información, vea los artículos siguientes: 
 <dl>
 <dt>Nombre: &lt; Id. de nombre&gt;</dt> de 
 <dt>amenaza: &lt;Gravedad del identificador&gt;</dt>
@@ -1107,7 +1109,7 @@ Usuario de UAC</dt>
 Acción del usuario:
 </td>
 <td >
-No es necesario realizar ninguna acción. Antivirus de Microsoft Defender no pudo completar una tarea relacionada con la corrección de malware. Esto no es un error crítico.
+No es necesario realizar ninguna acción. Microsoft Defender Antivirus no pudo completar una tarea relacionada con la corrección de malware. Esto no es un error crítico.
 </td>
 </tr>
 <tr>
@@ -1133,7 +1135,7 @@ Mensaje:
 Descripción:
 </td>
 <td >
-Antivirus de Microsoft Defender ha encontrado un error crítico al tomar medidas sobre malware u otro software potencialmente no deseado.<br/>Para obtener más información, vea los artículos siguientes: 
+Microsoft Defender Antivirus ha encontrado un error crítico al tomar medidas sobre malware u otro software potencialmente no deseado.<br/>Para obtener más información, vea los artículos siguientes: 
 <dl>
 <dt>Nombre: &lt; Id. de nombre&gt;</dt> de 
 <dt>amenaza: &lt;Gravedad del identificador&gt;</dt>
@@ -1199,7 +1201,7 @@ Usuario de UAC</dt>
 Acción del usuario:
 </td>
 <td >
-El cliente antivirus de Microsoft Defender encontró este error debido a problemas críticos. Es posible que el punto de conexión no esté protegido. Revise la descripción del error y, a continuación, siga los pasos pertinentes <b>de la acción Usuario</b> que se indican a continuación.
+El cliente Microsoft Defender Antivirus encontró este error debido a problemas críticos. Es posible que el punto de conexión no esté protegido. Revise la descripción del error y, a continuación, siga los pasos pertinentes <b>de la acción Usuario</b> que se indican a continuación.
 <table>
 <tr>
 <th>Acción</th>
@@ -1262,7 +1264,7 @@ Nombre simbólico:
 Mensaje:
 </td>
 <td >
-<b>Antivirus de Microsoft Defender ha deducido los hashes de un recurso de amenaza.</b>
+<b>Microsoft Defender Antivirus ha deducido los hashes de un recurso de amenaza.</b>
 </td>
 </tr>
 <tr>
@@ -1270,7 +1272,7 @@ Mensaje:
 Descripción:
 </td>
 <td >
-El cliente antivirus de Microsoft Defender está en funcionamiento en un estado correcto.
+Microsoft Defender cliente antivirus está en funcionamiento en un estado correcto.
 <dl>
 <dt>Versión actual de la plataforma: &lt; Versión actual de la plataforma&gt;</dt>
 <dt>Ruta de acceso del recurso de amenazas: &lt;hashes de ruta de acceso&gt;</dt>
@@ -1320,10 +1322,10 @@ El acceso controlado a carpetas ha bloqueado un proceso que no es de confianza p
 <dt>: &lt;Canal&gt; de eventos, por ejemplo: Microsoft-Windows- Windows Defender/Equipo operativo</dt>
 <dt>: &lt;Nombre&gt;de equipo</dt>
 <dt>UserID de seguridad: &lt;Nombre de producto de UserID&gt;de seguridad</dt>
-<dt>: &lt;Nombre&gt; del producto, por ejemplo:</dt> Versión del producto antivirus de Microsoft Defender: 
-<dt>Tiempo de detección de la versión del producto: &lt;tiempo&gt; de detección, hora en que CFA bloqueó un proceso que no es de confianza</dt> Usuario: 
-<dt>Dominio lt;&gt;&lt;</dt>
-<dt>&gt;\&&lt; Ruta de acceso de usuario&gt;</dt>
+<dt>: &lt;Nombre&gt; del producto, por ejemplo: Microsoft Defender</dt>
+<dt>Versión del producto antivirus: &lt;Tiempo de detección de la versión&gt;del producto</dt>
+<dt>: &lt;Tiempo&gt; de detección, hora en que CFA bloqueó un proceso que no es de confianza </dt>
+<dt>Usuario: &lt;Dominio&gt;\&lt; Ruta de acceso de usuario&gt;</dt>
 <dt>: &lt;nombre&gt; del dispositivo, nombre del dispositivo o disco al que se ha accedido a un proceso que no es de confianza para modificar</dt> nombre del proceso
 <dt>: &lt;ruta de acceso&gt; del proceso, nombre de la ruta de acceso del proceso al que CFA ha bloqueado el acceso al dispositivo o al disco para modificar</dt>
 <dt>la versión de Security Intelligence: &lt;Versión&gt;del</dt> motor de inteligencia de seguridad
@@ -1362,7 +1364,7 @@ Mensaje:
 Descripción:
 </td>
 <td >
-El cliente antivirus de Microsoft Defender está en funcionamiento en un estado correcto.
+Microsoft Defender cliente antivirus está en funcionamiento en un estado correcto.
 <dl>
 <dt>Versión de la plataforma: &lt; Versión actual de la plataforma&gt;</dt>
 <dt>Versión de firma: &lt;Versión&gt;de definición</dt>
@@ -1375,7 +1377,7 @@ El cliente antivirus de Microsoft Defender está en funcionamiento en un estado 
 Acción del usuario:
 </td>
 <td >
-No es necesario realizar ninguna acción. El cliente antivirus de Microsoft Defender está en un estado correcto. Este evento se notifica cada hora.
+No es necesario realizar ninguna acción. El cliente Microsoft Defender Antivirus está en un estado correcto. Este evento se notifica cada hora.
 </td>
 </tr>
 
@@ -1477,7 +1479,7 @@ Se ha actualizado la versión de firma del antivirus.
 Acción del usuario:
 </td>
 <td >
-No es necesario realizar ninguna acción. El cliente antivirus de Microsoft Defender está en un estado correcto. Este evento se notifica cuando las firmas se actualizan correctamente.
+No es necesario realizar ninguna acción. El cliente Microsoft Defender Antivirus está en un estado correcto. Este evento se notifica cuando las firmas se actualizan correctamente.
 </td>
 </tr>
 <tr>
@@ -1503,7 +1505,7 @@ Mensaje:
 Descripción:
 </td>
 <td >
-Antivirus de Microsoft Defender ha encontrado un error al intentar actualizar las firmas.
+Microsoft Defender Antivirus ha encontrado un error al intentar actualizar las firmas.
 <dl>
 <dt>Nueva versión de inteligencia de seguridad: &lt; Nuevo número de&gt;versión</dt>
 <dt>Versión anterior de inteligencia de seguridad: &lt;Versión&gt;</dt>
@@ -1578,7 +1580,7 @@ Mensaje:
 Descripción:
 </td>
 <td >
-Se ha actualizado la versión del motor del Antivirus de Microsoft Defender.
+Microsoft Defender versión del motor antivirus se ha actualizado.
 <dl>
 <dt>Versión actual del motor: &lt; Versión actual del motor&gt;</dt>
 <dt>Versión anterior del motor: &lt;Versión&gt;anterior del motor</dt>
@@ -1592,7 +1594,7 @@ Se ha actualizado la versión del motor del Antivirus de Microsoft Defender.
 Acción del usuario:
 </td>
 <td >
-No es necesario realizar ninguna acción. El cliente antivirus de Microsoft Defender está en un estado correcto. Este evento se notifica cuando el motor antimalware se actualiza correctamente.
+No es necesario realizar ninguna acción. El cliente Microsoft Defender Antivirus está en un estado correcto. Este evento se notifica cuando el motor antimalware se actualiza correctamente.
 </td>
 </tr>
 <tr>
@@ -1618,7 +1620,7 @@ Mensaje:
 Descripción:
 </td>
 <td >
-Antivirus de Microsoft Defender ha encontrado un error al intentar actualizar el motor.
+Microsoft Defender Antivirus ha encontrado un error al intentar actualizar el motor.
 <dl>
 <dt>Nueva versión del motor:</dt>
 <dt>Versión anterior del motor: &lt;Versión anterior del motor Tipo de motor&gt;</dt>
@@ -1634,7 +1636,7 @@ Antivirus de Microsoft Defender ha encontrado un error al intentar actualizar el
 Acción del usuario:
 </td>
 <td >
-Error en la actualización del cliente del Antivirus de Microsoft Defender. Este evento se produce cuando el cliente no se actualiza a sí mismo. Este evento suele deberse a una interrupción de la conectividad de red durante una actualización.
+Error en la actualización del cliente Microsoft Defender Antivirus. Este evento se produce cuando el cliente no se actualiza a sí mismo. Este evento suele deberse a una interrupción de la conectividad de red durante una actualización.
 Para solucionar este evento:
 <ol>
 <li><a href="manage-updates-baselines-microsoft-defender-antivirus.md" data-raw-source="[Update definitions](manage-updates-baselines-microsoft-defender-antivirus.md)">Actualice las definiciones</a> y fuerce un nuevo análisis directamente en el punto de conexión.</li>
@@ -1666,7 +1668,7 @@ Mensaje:
 Descripción:
 </td>
 <td >
-Antivirus de Microsoft Defender ha encontrado un error al intentar cargar firmas y intentará revertir a un conjunto de firmas conocido y correcto.
+Microsoft Defender Antivirus ha encontrado un error al intentar cargar firmas y intentará revertir a un buen conjunto de firmas conocido.
 <dl>
 <dt>Firmas tentativas:</dt>
 <dt>Código de error: &lt;código&gt; de error Código de error Código de resultado asociado con el estado de amenaza. Valores HRESULT estándar.</dt> 
@@ -1681,7 +1683,7 @@ Antivirus de Microsoft Defender ha encontrado un error al intentar cargar firmas
 Acción del usuario:
 </td>
 <td >
-El cliente antivirus de Microsoft Defender intentó descargar e instalar el archivo de definiciones más reciente y produjo un error. Este error puede producirse cuando el cliente encuentra un error al intentar cargar las definiciones o si el archivo está dañado. Antivirus de Microsoft Defender intentará revertir a un conjunto de definiciones conocido y correcto.
+El cliente Microsoft Defender Antivirus intentó descargar e instalar el archivo de definiciones más reciente y produjo un error. Este error puede producirse cuando el cliente encuentra un error al intentar cargar las definiciones o si el archivo está dañado. Microsoft Defender Antivirus intentará revertir a un buen conjunto de definiciones conocido.
 Para solucionar este evento:
 <ol>
 <li>Reinicie el equipo e inténtelo de nuevo.</li>
@@ -1716,7 +1718,7 @@ Mensaje:
 Descripción:
 </td>
 <td >
-Antivirus de Microsoft Defender no pudo cargar el motor antimalware porque no se admite la versión actual de la plataforma. Antivirus de Microsoft Defender volverá al último motor conocido y se intentará realizar una actualización de la plataforma.
+Microsoft Defender Antivirus no pudo cargar el motor antimalware porque no se admite la versión actual de la plataforma. Microsoft Defender Antivirus volverá al último motor correcto conocido y se intentará una actualización de la plataforma.
 <dl>
 <dt>Versión actual de la plataforma: &lt;versión actual de la plataforma&gt;</dt>
 </dl>
@@ -1745,7 +1747,7 @@ Mensaje:
 Descripción:
 </td>
 <td >
-Antivirus de Microsoft Defender ha encontrado un error al intentar actualizar la plataforma.
+Microsoft Defender Antivirus ha encontrado un error al intentar actualizar la plataforma.
 <dl>
 <dt>Versión actual de la plataforma: &lt; Versión actual de la plataforma&gt;</dt>
 <dt>Código de error: &lt;código de error Código&gt; de resultado asociado al estado de la amenaza. Valores HRESULT estándar.</dt> 
@@ -1776,7 +1778,7 @@ Mensaje:
 Descripción:
 </td>
 <td >
-Antivirus de Microsoft Defender necesitará pronto una versión más reciente de la plataforma para admitir futuras versiones del motor antimalware. Descargue la plataforma antivirus de Microsoft Defender más reciente para mantener el mejor nivel de protección disponible.
+Microsoft Defender Antivirus necesitará pronto una versión más reciente de la plataforma para admitir versiones futuras del motor antimalware. Descargue la plataforma antivirus de Microsoft Defender más reciente para mantener el mejor nivel de protección disponible.
 <dl>
 <dt>Versión actual de la plataforma: &lt;versión actual de la plataforma&gt;</dt>
 </dl>
@@ -1805,7 +1807,7 @@ Mensaje:
 Descripción:
 </td>
 <td >
-Antivirus de Microsoft Defender <i>usó el servicio de firma dinámica</i> para recuperar firmas adicionales para ayudar a proteger el equipo.
+Microsoft Defender Antivirus <i>usó El servicio de firma dinámica</i> para recuperar firmas adicionales para ayudar a proteger el equipo.
 <dl>
 <dt>Versión de firma actual: &lt; Tipo de firma de versión&gt;de firma actual</dt>: &lt;tipo&gt; de firma, por ejemplo:
 <dt> <ul>
@@ -1861,7 +1863,7 @@ Mensaje:
 Descripción:
 </td>
 <td >
-Antivirus de Microsoft Defender <i>usó el servicio de firma dinámica</i> para descartar firmas obsoletas.
+Microsoft Defender Antivirus usó <i>el servicio de firma dinámica</i> para descartar firmas obsoletas.
 <dl>
 <dt>Versión de firma actual: &lt; Tipo de firma de versión&gt;de firma actual</dt>: &lt;tipo&gt; de firma, por ejemplo:
 <dt> <ul>
@@ -1900,7 +1902,7 @@ Antivirus de Microsoft Defender <i>usó el servicio de firma dinámica</i> para 
 Acción del usuario:
 </td>
 <td >
-No es necesario realizar ninguna acción. El cliente antivirus de Microsoft Defender está en un estado correcto. Este evento se notifica cuando el servicio de firma dinámica elimina correctamente las definiciones dinámicas obsoletas.
+No es necesario realizar ninguna acción. El cliente Microsoft Defender Antivirus está en un estado correcto. Este evento se notifica cuando el servicio de firma dinámica elimina correctamente las definiciones dinámicas obsoletas.
 </td>
 </tr>
 <tr>
@@ -1926,7 +1928,7 @@ Mensaje:
 Descripción:
 </td>
 <td >
-Antivirus de Microsoft Defender ha encontrado un error al intentar usar <i>el servicio de firma dinámica</i>.
+Microsoft Defender Antivirus ha encontrado un error al intentar usar <i>el servicio de firma dinámica</i>.
 <dl>
 <dt>Versión de firma actual: &lt; Tipo de firma de versión&gt;de firma actual</dt>: &lt;tipo&gt; de firma, por ejemplo:
 <dt> <ul>
@@ -1992,7 +1994,7 @@ Mensaje:
 Descripción:
 </td>
 <td >
-Antivirus de Microsoft Defender ha descartado todas las firmas <i>del servicio de firma dinámica</i> .
+Microsoft Defender Antivirus ha descartado todas las firmas del <i>servicio de firma dinámica</i>.
 <dl>
 <dt>Versión de firma actual: &lt;versión de firma actual&gt;</dt>
 </dl>
@@ -2021,7 +2023,7 @@ Mensaje:
 Descripción:
 </td>
 <td >
-Antivirus de Microsoft Defender descargó un archivo limpio.
+Microsoft Defender Antivirus descargó un archivo limpio.
 <dl>
 <dt>Nombre: &lt; &gt; Nombre de archivo Nombre del archivo.</dt> 
 <dt>Versión de firma actual: &lt; Versión&gt;de firma actual</dt>
@@ -2052,7 +2054,7 @@ Mensaje:
 Descripción:
 </td>
 <td >
-Antivirus de Microsoft Defender ha encontrado un error al intentar descargar un archivo limpio.
+Microsoft Defender Antivirus ha encontrado un error al intentar descargar un archivo limpio.
 <dl>
 <dt>Nombre: &lt; &gt; Nombre de archivo Nombre del archivo.</dt> 
 <dt>Versión de firma actual: &lt; Versión de firma&gt;</dt>
@@ -2068,7 +2070,7 @@ Acción del usuario:
 </td>
 <td >
 Compruebe la configuración de conectividad a Internet.
-El cliente antivirus de Microsoft Defender encontró un error al usar el servicio de firma dinámica para descargar las definiciones más recientes en una amenaza específica. Es probable que este error se deba a un problema de conectividad de red.
+El cliente Microsoft Defender Antivirus encontró un error al usar el servicio de firma dinámica para descargar las definiciones más recientes en una amenaza específica. Es probable que este error se deba a un problema de conectividad de red.
 </td>
 </tr>
 <tr>
@@ -2094,7 +2096,7 @@ Mensaje:
 Descripción:
 </td>
 <td >
-Antivirus de Microsoft Defender descargó y configuró el antivirus sin conexión para ejecutarse en el siguiente reinicio.
+Microsoft Defender Antivirus descargado y configurado antivirus sin conexión para ejecutarse en el siguiente reinicio.
 </td>
 </tr>
 <tr>
@@ -2120,7 +2122,7 @@ Mensaje:
 Descripción:
 </td>
 <td >
-Antivirus de Microsoft Defender ha encontrado un error al intentar descargar y configurar el antivirus sin conexión.
+Microsoft Defender Antivirus ha encontrado un error al intentar descargar y configurar el antivirus sin conexión.
 <dl>
 <dt>Código de error: &lt; Código&gt; de error Código de resultado asociado al estado de la amenaza. Valores HRESULT estándar.</dt> 
 <dt>Descripción del error: &lt; Descripción&gt; del error Descripción del error. </dt>
@@ -2150,7 +2152,7 @@ Mensaje:
 Descripción:
 </td>
 <td >
-La compatibilidad con el sistema operativo expirará en breve. La ejecución del Antivirus de Microsoft Defender en un sistema operativo fuera de soporte técnico no es una solución adecuada para protegerse frente a amenazas.
+La compatibilidad con el sistema operativo expirará en breve. La ejecución de Microsoft Defender Antivirus en un sistema operativo que no es compatible no es una solución adecuada para protegerse frente a amenazas.
 </td>
 </tr>
 <tr>
@@ -2176,7 +2178,7 @@ Mensaje:
 Descripción:
 </td>
 <td >
-La compatibilidad con el sistema operativo ha expirado. La ejecución del Antivirus de Microsoft Defender en un sistema operativo fuera de soporte técnico no es una solución adecuada para protegerse frente a amenazas.
+La compatibilidad con el sistema operativo ha expirado. La ejecución de Microsoft Defender Antivirus en un sistema operativo que no es compatible no es una solución adecuada para protegerse frente a amenazas.
 </td>
 </tr>
 <tr>
@@ -2202,7 +2204,7 @@ Mensaje:
 Descripción:
 </td>
 <td >
-La compatibilidad con el sistema operativo ha expirado. Antivirus de Microsoft Defender ya no se admite en el sistema operativo, ha dejado de funcionar y no protege contra amenazas de malware.
+La compatibilidad con el sistema operativo ha expirado. Microsoft Defender Antivirus ya no se admite en el sistema operativo, ha dejado de funcionar y no protege contra amenazas de malware.
 </td>
 </tr>
 <tr>
@@ -2228,7 +2230,7 @@ Mensaje:
 Descripción:
 </td>
 <td >
-La característica Antivirus Real-Time Protection de Microsoft Defender ha encontrado un error y ha producido un error.
+Microsoft Defender característica Antivirus Real-Time Protection ha encontrado un error y ha producido un error.
 <dl>
 <dt>Característica: &lt;característica&gt;, por ejemplo:
 <ul>
@@ -2240,7 +2242,7 @@ La característica Antivirus Real-Time Protection de Microsoft Defender ha encon
 </dt>
 <dt>Código de error: &lt; Código&gt; de error Código de resultado asociado al estado de la amenaza. Valores HRESULT estándar.</dt> 
 <dt>Descripción del error: &lt; Descripción&gt; del error Descripción del error. </dt> 
-<dt>Motivo: la razón por la que la protección en tiempo real del Antivirus de Microsoft Defender ha reiniciado una característica.</dt>
+<dt>Motivo: La razón por la que Microsoft Defender protección antivirus en tiempo real ha reiniciado una característica.</dt>
 </dl>
 </td>
 </tr>
@@ -2250,7 +2252,7 @@ Acción del usuario:
 </td>
 <td >
 Debe reiniciar el sistema y, a continuación, ejecutar un examen completo porque es posible que el sistema no esté protegido durante algún tiempo.
-La característica de protección en tiempo real del cliente antivirus de Microsoft Defender encontró un error porque uno de los servicios no se pudo iniciar.
+La característica de protección en tiempo real del cliente Microsoft Defender Antivirus encontró un error porque uno de los servicios no se pudo iniciar.
 Si va seguido de un identificador de evento 3007, el error fue temporal y el cliente antimalware se recuperó del error.
 </td>
 </tr>
@@ -2277,7 +2279,7 @@ Mensaje:
 Descripción:
 </td>
 <td >
-Antivirus de Microsoft Defender Protección en tiempo real ha reiniciado una característica. Se recomienda ejecutar un examen completo del sistema para detectar los elementos que se hayan perdido mientras este agente estaba inactivo.
+Microsoft Defender Antivirus Protección en tiempo real ha reiniciado una característica. Se recomienda ejecutar un examen completo del sistema para detectar los elementos que se hayan perdido mientras este agente estaba inactivo.
 <dl>
 <dt>Característica: &lt;característica&gt;, por ejemplo:
 <ul>
@@ -2287,7 +2289,7 @@ Antivirus de Microsoft Defender Protección en tiempo real ha reiniciado una car
 <li>Sistema de inspección de red</li>
 </ul>
 </dt>
-<dt>Motivo: la razón por la que la protección en tiempo real del Antivirus de Microsoft Defender ha reiniciado una característica.</dt>
+<dt>Motivo: La razón por la que Microsoft Defender protección antivirus en tiempo real ha reiniciado una característica.</dt>
 </dl>
 </td>
 </tr>
@@ -2322,7 +2324,7 @@ Mensaje:
 Descripción:
 </td>
 <td >
-Se ha habilitado el examen de protección en tiempo real del Antivirus de Microsoft Defender para detectar malware y otro software potencialmente no deseado.
+Microsoft Defender Se ha habilitado la protección antivirus en tiempo real para detectar malware y otro software potencialmente no deseado.
 </td>
 </tr>
 <tr>
@@ -2348,7 +2350,7 @@ Mensaje:
 Descripción:
 </td>
 <td >
-Se deshabilitó el examen de protección en tiempo real del Antivirus de Microsoft Defender para detectar malware y otro software potencialmente no deseado.
+Microsoft Defender Análisis de protección antivirus en tiempo real para detectar malware y otro software potencialmente no deseado se deshabilitó.
 </td>
 </tr>
 <tr>
@@ -2374,7 +2376,7 @@ Mensaje:
 Descripción:
 </td>
 <td >
-La configuración de la característica de protección en tiempo real del Antivirus de Microsoft Defender ha cambiado.
+Microsoft Defender ha cambiado la configuración de las características de protección en tiempo real del antivirus.
 <dl>
 <dt>Característica: &lt;característica&gt;, por ejemplo:
 <ul>
@@ -2411,7 +2413,7 @@ Mensaje:
 Descripción:
 </td>
 <td >
-La configuración del Antivirus de Microsoft Defender ha cambiado. Si se trata de un evento inesperado, debe revisar la configuración, ya que puede ser el resultado de malware.
+Microsoft Defender ha cambiado la configuración del Antivirus. Si se trata de un evento inesperado, debe revisar la configuración, ya que puede ser el resultado de malware.
 <dl>
 <dt>Valor anterior: &lt; Número de&gt; valor antiguo Valor de configuración del antivirus antiguo.</dt> 
 <dt>Nuevo valor: &lt; Nuevo número de&gt; valor Nuevo valor de configuración del antivirus.</dt>
@@ -2441,7 +2443,7 @@ Mensaje:
 Descripción:
 </td>
 <td >
-El motor antivirus de Microsoft Defender se ha terminado debido a un error inesperado.
+Microsoft Defender motor antivirus se ha terminado debido a un error inesperado.
 <dl>
 <dt>Tipo de error: &lt; &gt;Tipo de error, por ejemplo: Código de excepción de bloqueo o bloqueo</dt>
 <dt>: &lt;recurso de código&gt;de error</dt>
@@ -2470,7 +2472,7 @@ Para solucionar este evento:<ol>
 Acción del usuario:
 </td>
 <td >
-El motor de cliente antivirus de Microsoft Defender se detuvo debido a un error inesperado.
+El motor de cliente Microsoft Defender Antivirus se detuvo debido a un error inesperado.
 Para solucionar este evento:
 <ol>
 <li>Vuelva a ejecutar el examen.</li>
@@ -2503,7 +2505,7 @@ Mensaje:
 Descripción:
 </td>
 <td >
-Se ha habilitado el examen del Antivirus de Microsoft Defender para detectar malware y otro software potencialmente no deseado.
+Microsoft Defender Se ha habilitado el análisis del antivirus para detectar malware y otro software potencialmente no deseado.
 </td>
 </tr>
 <tr>
@@ -2529,7 +2531,7 @@ Mensaje:
 Descripción:
 </td>
 <td >
-El examen del Antivirus de Microsoft Defender en busca de malware y otro software potencialmente no deseado está deshabilitado.
+Microsoft Defender Antivirus de búsqueda de malware y otro software potencialmente no deseado está deshabilitado.
 </td>
 </tr>
 <tr>
@@ -2555,7 +2557,7 @@ Mensaje:
 Descripción:
 </td>
 <td >
-Se ha habilitado el examen del Antivirus de Microsoft Defender en busca de virus.
+Microsoft Defender Se ha habilitado el examen antivirus en busca de virus.
 </td>
 </tr>
 <tr>
@@ -2581,7 +2583,7 @@ Mensaje:
 Descripción:
 </td>
 <td >
-El examen del Antivirus de Microsoft Defender en busca de virus está deshabilitado.
+Microsoft Defender El examen del antivirus en busca de virus está deshabilitado.
 </td>
 </tr>
 <tr>
@@ -2600,7 +2602,7 @@ Nombre simbólico:
 Mensaje:
 </td>
 <td >
-<b>La protección contra alteraciones bloqueó un cambio en el Antivirus de Microsoft Defender. </b>
+<b>Protección contra alteraciones bloqueó un cambio en Microsoft Defender Antivirus.</b>
 </td>
 </tr>
 <tr>
@@ -2634,10 +2636,10 @@ Mensaje:
 Descripción:
 </td>
 <td >
-Antivirus de Microsoft Defender ha entrado en un período de gracia y pronto expirará. Después de la expiración, este programa deshabilitará la protección contra virus, spyware y otro software potencialmente no deseado.
+Microsoft Defender Antivirus ha entrado en un período de gracia y pronto expirará. Después de la expiración, este programa deshabilitará la protección contra virus, spyware y otro software potencialmente no deseado.
 <dl>
-<dt>Motivo de expiración: motivo por el que expirará el Antivirus de Microsoft Defender.</dt> 
-<dt>Fecha de expiración: fecha de expiración del Antivirus de Microsoft Defender.</dt>
+<dt>Motivo de expiración: el motivo Microsoft Defender Antivirus expirará.</dt> 
+<dt>Fecha de expiración: la fecha Microsoft Defender Antivirus expirará.</dt>
 </dl>
 </td>
 </tr>
@@ -2664,7 +2666,7 @@ Mensaje:
 Descripción:
 </td>
 <td >
-El período de gracia del Antivirus de Microsoft Defender ha expirado. La protección contra virus, spyware y otro software potencialmente no deseado está deshabilitada.
+Microsoft Defender período de gracia del antivirus ha expirado. La protección contra virus, spyware y otro software potencialmente no deseado está deshabilitada.
 <dl>
 <dt>Motivo de expiración:</dt>
 <dt>Fecha de expiración: </dt>
@@ -2676,10 +2678,10 @@ El período de gracia del Antivirus de Microsoft Defender ha expirado. La protec
 </table>
 
 <a id="error-codes"></a>
-## Códigos de error de cliente del Antivirus de Microsoft Defender Si Antivirus de Microsoft Defender experimenta algún problema, normalmente le proporcionará un código de error para ayudarle a solucionar el problema. Con frecuencia, un error significa que se produjo un problema al instalar una actualización. En esta sección se proporciona la siguiente información sobre los errores de cliente del Antivirus de Microsoft Defender.
+##Microsoft Defender códigos de error de cliente antivirus Si Microsoft Defender Antivirus experimenta algún problema, normalmente le proporcionará un código de error para ayudarle a solucionar el problema. Con frecuencia, un error significa que se produjo un problema al instalar una actualización. En esta sección se proporciona la siguiente información sobre Microsoft Defender errores de cliente antivirus.
 - El código de - error El posible motivo del error - Consejo sobre lo que debe hacer ahora
 
-Use la información de estas tablas para ayudar a solucionar problemas de códigos de error del Antivirus de Microsoft Defender.
+Use la información de estas tablas para ayudar a solucionar Microsoft Defender códigos de error del Antivirus.
 
 
 <table>
@@ -2751,7 +2753,7 @@ Este error indica que podría haber un error de configuración del motor; Normal
 <td><b>ERR_MP_QUARANTINE_FAILED </b>
 </td></tr><tr><td>Posible motivo</td>
 <td>
-Este error indica que el Antivirus de Microsoft Defender no pudo poner en cuarentena una amenaza.
+Este error indica que Microsoft Defender Antivirus no pudo poner en cuarentena una amenaza.
 </td>
 </tr>
 <tr>
@@ -2813,7 +2815,7 @@ Siga los pasos de corrección manual descritos en la <a href="https://www.micros
 <td>
 Este error indica que es posible que no se admita la eliminación dentro del tipo de contenedor.
 </td></tr><tr><td>Solución</td><td>
-Antivirus de Microsoft Defender no puede corregir las amenazas detectadas dentro del archivo. Considere la posibilidad de quitar manualmente los recursos detectados.
+Microsoft Defender Antivirus no puede corregir las amenazas detectadas dentro del archivo. Considere la posibilidad de quitar manualmente los recursos detectados.
 </td>
 </tr>
 <tr>
@@ -2849,7 +2851,7 @@ Ejecute un examen completo del sistema.
 <td>
 Este error indica que se requiere un examen sin conexión.
 </td></tr><tr><td>Solución</td><td>
-Ejecute el Antivirus de Microsoft Defender sin conexión. Puede leer sobre cómo hacerlo en el <a href="https://windows.microsoft.com/windows/what-is-windows-defender-offline">artículo Antivirus de Microsoft Defender sin conexión</a>.
+Ejecute Microsoft Defender Antivirus sin conexión. Puede leer sobre cómo hacerlo en el <a href="https://windows.microsoft.com/windows/what-is-windows-defender-offline">artículo antivirus de Microsoft Defender sin conexión</a>.
 </td>
 </tr>
 <tr>
@@ -2859,13 +2861,13 @@ Ejecute el Antivirus de Microsoft Defender sin conexión. Puede leer sobre cómo
 <td><b>ERROR_MP_PLATFORM_OUTDATED<br/></b>
 </td></tr><tr><td>Posible motivo</td>
 <td>
-Este error indica que Antivirus de Microsoft Defender no admite la versión actual de la plataforma y requiere una nueva versión de la plataforma.
+Este error indica que Microsoft Defender Antivirus no admite la versión actual de la plataforma y requiere una nueva versión de la plataforma.
 </td></tr><tr><td>Solución</td><td>
-Solo puede usar el Antivirus de Microsoft Defender en Windows 10 y Windows 11. Para Windows 8, Windows 7 y Windows Vista, puedes usar <a href="https://www.microsoft.com/server-cloud/system-center/endpoint-protection-2012.aspx">System Center Endpoint Protection</a>.<br/></td>
+Solo puede usar Microsoft Defender Antivirus en Windows 10 y Windows 11. Para Windows 8, Windows 7 y Windows Vista, puedes usar <a href="https://www.microsoft.com/server-cloud/system-center/endpoint-protection-2012.aspx">System Center Endpoint Protection</a>.<br/></td>
 </tr>
 </table>
 
-<a id="internal-error-codes"></a> Los siguientes códigos de error se usan durante las pruebas internas del Antivirus de Microsoft Defender.
+<a id="internal-error-codes"></a>Los siguientes códigos de error se usan durante las pruebas internas de Microsoft Defender Antivirus.
 
 Si ve estos errores, puede intentar [actualizar las definiciones](manage-updates-baselines-microsoft-defender-antivirus.md) y forzar un nuevo análisis directamente en el punto de conexión.
 
@@ -3205,5 +3207,5 @@ Se trata de un error interno. Es posible que se haya desencadenado cuando un exa
 
 ## <a name="related-topics"></a>Temas relacionados
 
-- [Informe sobre la protección antivirus de Microsoft Defender](report-monitor-microsoft-defender-antivirus.md)
+- [Informe sobre Microsoft Defender protección antivirus](report-monitor-microsoft-defender-antivirus.md)
 - [Antivirus de Microsoft Defender en Windows 10](microsoft-defender-antivirus-in-windows-10.md)

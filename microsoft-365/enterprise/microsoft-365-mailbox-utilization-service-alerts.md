@@ -6,11 +6,12 @@ manager: scotv
 ms.date: ''
 audience: Admin
 ms.topic: article
-ms.service: o365-administration
+ms.service: microsoft-365-enterprise
 ms.localizationpriority: medium
 search.appverid:
 - MET150
 ms.collection:
+- scotvorg
 - Ent_O365
 - Strat_O365_Enterprise
 ms.custom:
@@ -19,12 +20,12 @@ ms.custom:
 f1.keywords:
 - NOCSH
 description: Use avisos de servicio de uso de buzones para supervisar los buzones en espera que alcanzan su cuota de buzón.
-ms.openlocfilehash: 58cbd5880b32b5297f0faae26a5a3369a2e6b66c
-ms.sourcegitcommit: 6e570b79944862c86735db455349b685d5b903b6
+ms.openlocfilehash: 35bff697727a77abc27555898e48106bc7070142
+ms.sourcegitcommit: 0b7070ec119e00e0dafe030bbfbef0ae5c9afa19
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/26/2022
-ms.locfileid: "67019975"
+ms.lasthandoff: 09/29/2022
+ms.locfileid: "68185411"
 ---
 # <a name="service-advisories-for-mailbox-utilization-in-exchange-online-monitoring"></a>Avisos de servicio para el uso del buzón de correo en la supervisión de Exchange Online
 
@@ -87,9 +88,9 @@ Los avisos de servicio para el uso del buzón de correo también pueden contener
 
 | RetentionPolicyGuid | MailboxType | HasMoveDumpsterToArchiveTag | HasMovePrimaryToArchiveTag | HasPersonalArchiveTag |  Buzones |
 |:--------------|:--------------|:---------------|:---------------|:---------------|:--------------- |
-| 6c041498-1611-5011-a058-1156ce60890c | PrimaryWithArchive | True | False | True | 398 |
-| 6c041498-1611-5011-a058-1156ce60890c | Principal | True | False | True | 10 |
-| 749ceecc-d49d-4000-a9d5-594dbaea1e56 | PrimaryWithArchive | False | True | False | 7  |
+| 6c041498-1611-5011-a058-1156ce60890c | PrimaryWithArchive | True | False | Verdadero | 398 |
+| 6c041498-1611-5011-a058-1156ce60890c | Principal | True | False | Verdadero | 10 |
+| 749ceecc-d49d-4000-a9d5-594dbaea1e56 | PrimaryWithArchive | Falso | True | False | 7  |
 | 269f6a85-1234-4648-8cde-59bbc7bc67d0 | PrimaryWithArchive | True | True | True | 1 |
 | 13fb778d-e1cb-4c44-5768-ad4282906c1f | PrimaryWithArchive | True | True  | False | 1 |
 |||||||

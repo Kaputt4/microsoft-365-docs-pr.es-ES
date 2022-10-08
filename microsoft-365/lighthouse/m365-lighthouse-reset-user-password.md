@@ -10,6 +10,7 @@ ms.topic: article
 ms.service: microsoft-365-lighthouse
 ms.localizationpriority: medium
 ms.collection:
+- scotvorg
 - M365-subscription-management
 - Adm_O365
 ms.custom:
@@ -17,12 +18,12 @@ ms.custom:
 - M365-Lighthouse
 search.appverid: MET150
 description: En el caso de los proveedores de servicios administrados (MSP) que usan Microsoft 365 Lighthouse, aprenda a restablecer una contraseña para un solo usuario o para varios usuarios de riesgo en distintos inquilinos.
-ms.openlocfilehash: 3fde5fe900ebd5f89c334087ae9305bc06f71989
-ms.sourcegitcommit: 2b89bcff547e00be3d38dc8d1e6cbcf8f41eba42
+ms.openlocfilehash: 79616f6523189e870cf2369f8c7b696904cfe46b
+ms.sourcegitcommit: 0b7070ec119e00e0dafe030bbfbef0ae5c9afa19
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/03/2022
-ms.locfileid: "67599745"
+ms.lasthandoff: 09/29/2022
+ms.locfileid: "68198149"
 ---
 # <a name="reset-a-user-password-in-microsoft-365-lighthouse"></a>Restablecer una contraseña de usuario en Microsoft 365 Lighthouse
 

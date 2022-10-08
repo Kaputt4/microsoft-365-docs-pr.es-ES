@@ -6,18 +6,18 @@ manager: serdars
 ms.reviewer: amitman
 audience: admin
 ms.topic: article
-ms.service: o365-administration
+ms.service: microsoft-365-business
 ms.collection:
 - M365-modern-desktop
 - m365initiative-edu
 ms.localizationpriority: medium
 description: Cree y administre clases y reuniones de Teams con Microsoft Learning Tools Interoperability (LTI) para Desire2Learn (D2L) Brightspace LMS.
-ms.openlocfilehash: c3d551fcdc866c08437564addb1cd3cb9b144a75
-ms.sourcegitcommit: 5aed330d8af523f0dffe5e392f1c79f047e38172
+ms.openlocfilehash: 92fc3cbc8f243ed67c01fbc76dc3eea5dcd61f09
+ms.sourcegitcommit: 0b7070ec119e00e0dafe030bbfbef0ae5c9afa19
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/21/2022
-ms.locfileid: "66951255"
+ms.lasthandoff: 09/29/2022
+ms.locfileid: "68203780"
 ---
 # <a name="integrate-microsoft-teams-classes-and-meetings-lti-apps-within-desire2learn-brightspace-lms"></a>Integración de clases y reuniones de Aplicaciones LTI de Microsoft Teams en Desire2Learn Brightspace LMS
 

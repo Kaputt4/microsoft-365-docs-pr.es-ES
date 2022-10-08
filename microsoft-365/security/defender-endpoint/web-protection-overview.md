@@ -13,15 +13,17 @@ ms.localizationpriority: medium
 ms.date: 07/25/2022
 manager: dansimp
 audience: ITPro
-ms.collection: M365-security-compliance
+ms.collection:
+- m365-security
+- tier2
 ms.topic: article
 ms.subservice: mde
-ms.openlocfilehash: d2d689117c614c4fb2f786a303ea9070eac5fedc
-ms.sourcegitcommit: d3ef9391f621e8f4ca70661184b3bb82c6cbda94
+ms.openlocfilehash: e2353ce3ae89d4377584d1e9c7f37ed320a7833d
+ms.sourcegitcommit: 4e42bafee965446f44f7f57d1defed2b9b24fce8
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/02/2022
-ms.locfileid: "67586212"
+ms.lasthandoff: 09/30/2022
+ms.locfileid: "68224038"
 ---
 # <a name="web-protection"></a>Protección web
 
@@ -84,6 +86,8 @@ El filtrado de contenido web incluye:
 
 - Se impide que los usuarios accedan a sitios web en categorías bloqueadas, ya sea que naveguen de forma local o fuera.
 - Puede implementar directivas variadas en varios conjuntos de usuarios mediante los grupos de dispositivos definidos en la [configuración de control de acceso basado en rol Microsoft Defender para punto de conexión](/microsoft-365/security/defender-endpoint/rbac).
+    > [!NOTE]
+    > La creación de grupos de dispositivos se admite en El plan 1 y el plan 2 de Defender para punto de conexión.
 - Puede acceder a los informes web en la misma ubicación central, con visibilidad sobre los bloques reales y el uso web.
 
 Para obtener más información, vea [Filtrado de contenido web](web-content-filtering.md).

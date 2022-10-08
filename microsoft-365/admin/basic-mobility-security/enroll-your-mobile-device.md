@@ -7,9 +7,10 @@ author: kwekua
 manager: scotv
 audience: Admin
 ms.topic: article
-ms.service: o365-administration
+ms.service: microsoft-365-business
 ms.localizationpriority: medium
 ms.collection:
+- scotvorg
 - M365-subscription-management
 - Adm_O365
 - Adm_TOC
@@ -19,12 +20,12 @@ ms.custom:
 search.appverid:
 - MET150
 description: Para poder usar los servicios de Microsoft 365 con el dispositivo, es posible que primero tenga que inscribirlo en Basic Mobility and Security para Microsoft 365.
-ms.openlocfilehash: c507f307325cd8ac7245df80c0fa7afcef8e519d
-ms.sourcegitcommit: 974922d1d8d9ce7bc2eb49ab80ecca9da4a911f9
+ms.openlocfilehash: f7e028b44041232ea7c5ef3a9343b6b0204d37a0
+ms.sourcegitcommit: 0b7070ec119e00e0dafe030bbfbef0ae5c9afa19
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/13/2022
-ms.locfileid: "67651390"
+ms.lasthandoff: 09/29/2022
+ms.locfileid: "68198039"
 ---
 # <a name="enroll-your-mobile-device-using-basic-mobility-and-security"></a>Inscripción del dispositivo móvil mediante Basic Mobility and Security
 

@@ -15,12 +15,13 @@ f1.keywords:
 - NOCSH
 description: Los clientes Office 365 existentes deben enviar una solicitud antes de la fecha límite para que su país mueva los datos de sus servicios de Microsoft 365 a su nueva ubicación geográfica.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: c4a3c2fb77fe3efb26f77ce7e905bba3c43724a0
-ms.sourcegitcommit: 437461fa1d38ff9bb95dd8a1c5f0b94e8111ada2
+ms.collection: scotvorg
+ms.openlocfilehash: bffd6c99f4df0cc89ae064d49fcc9c97d9e4dd3c
+ms.sourcegitcommit: 0b7070ec119e00e0dafe030bbfbef0ae5c9afa19
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/14/2022
-ms.locfileid: "67671113"
+ms.lasthandoff: 09/29/2022
+ms.locfileid: "68208708"
 ---
 # <a name="how-to-request-your-data-move"></a>Cómo solicitar el movimiento de datos
 
