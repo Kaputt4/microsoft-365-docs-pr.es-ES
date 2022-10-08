@@ -8,22 +8,24 @@ ms.service: microsoft-365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
-ms.author: macapara
-author: mjcaparas
+ms.author: siosulli
+author: siosulli
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
-ms.collection: M365-security-compliance
+ms.collection:
+- m365-security
+- tier2
 ms.custom: admindeeplinkDEFENDER
 ms.topic: article
 ms.date: 04/15/2022
 ms.subservice: mde
-ms.openlocfilehash: ca5e4ac05df410f15c12acc8254c782cdda4f042
-ms.sourcegitcommit: 95ac076310ab9006ed92c69938f7ae771cd10826
+ms.openlocfilehash: 75077f656b9e15850f46509ee5c3705461638033
+ms.sourcegitcommit: 0b7070ec119e00e0dafe030bbfbef0ae5c9afa19
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/20/2022
-ms.locfileid: "67850422"
+ms.lasthandoff: 09/29/2022
+ms.locfileid: "68177622"
 ---
 # <a name="onboard-non-persistent-virtual-desktop-infrastructure-vdi-devices-in-microsoft-365-defender"></a>Incorporación de dispositivos de infraestructura de escritorio virtual (VDI) no persistente en Microsoft 365 Defender
 
@@ -146,7 +148,7 @@ Los pasos siguientes le guiarán a través de la incorporación de dispositivos 
 
 Con la capacidad de implementar fácilmente actualizaciones en máquinas virtuales que se ejecutan en VDIs, hemos acortado esta guía para centrarse en cómo puede obtener actualizaciones en las máquinas de forma rápida y sencilla. Ya no es necesario crear y sellar imágenes doradas periódicamente, ya que las actualizaciones se expanden en sus bits de componente en el servidor host y, a continuación, se descargan directamente en la máquina virtual cuando está activada.
 
-Para obtener más información, siga las instrucciones de la [Guía de implementación de Antivirus de Microsoft Defender en un entorno de Infraestructura de escritorio virtual (VDI).](/microsoft-365/security/defender-endpoint/deployment-vdi-microsoft-defender-antivirus)
+Para obtener más información, siga las instrucciones de la [Guía de implementación de Microsoft Defender Antivirus en un entorno de Infraestructura de escritorio virtual (VDI).](/microsoft-365/security/defender-endpoint/deployment-vdi-microsoft-defender-antivirus)
 
    > [!NOTE]
    > Si ha incorporado la imagen maestra del entorno de VDI (se está ejecutando el servicio SENSE), debe desconectar y borrar algunos datos antes de volver a poner la imagen en producción.
@@ -227,10 +229,10 @@ Se recomiendan los siguientes valores de configuración:
 - Deje otras opciones de configuración en estado predeterminado.
 
 #### <a name="user-experience"></a>Experiencia del usuario
-- Permitir el acceso del usuario a la aplicación Microsoft Defender: No configurado
+- Permitir el acceso del usuario a Microsoft Defender aplicación: No configurado
 
 #### <a name="enable-tamper-protection"></a>Habilitación de la protección contra alteraciones
-- Habilitar la protección contra alteraciones para evitar que Microsoft Defender se deshabilite: Habilitar
+- Habilitar la protección contra alteraciones para evitar que se deshabilite Microsoft Defender: Habilitar
 
 #### <a name="attack-surface-reduction"></a>Reducción de la superficie expuesta a ataques
 

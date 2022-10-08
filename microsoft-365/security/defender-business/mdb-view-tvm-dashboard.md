@@ -6,7 +6,7 @@ author: denisebmsft
 ms.author: deniseb
 manager: dansimp
 audience: Admin
-ms.topic: article
+ms.topic: conceptual
 ms.service: microsoft-365-security
 ms.subservice: mdb
 ms.localizationpriority: medium
@@ -15,21 +15,22 @@ ms.reviewer: shlomiakirav
 f1.keywords: NOCSH
 ms.collection:
 - SMB
-- M365-security-compliance
+- m365-security
+- tier1
 ms.custom: intro-get-started
-ms.openlocfilehash: b0b14216737eea49c7a5875b62d2ba93c1fc422e
-ms.sourcegitcommit: 2b89bcff547e00be3d38dc8d1e6cbcf8f41eba42
+ms.openlocfilehash: d3bfaa93e390a61d7c70e3763929247398a59481
+ms.sourcegitcommit: 4dfb5de8c61847b8ddd10410ad20d34860eed8f6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/03/2022
-ms.locfileid: "67597964"
+ms.lasthandoff: 09/28/2022
+ms.locfileid: "68110609"
 ---
 # <a name="use-your-vulnerability-management-dashboard-in-microsoft-defender-for-business"></a>Use el panel de administración de vulnerabilidades en Microsoft Defender para Empresas
 
 Defender for Business incluye un panel de administración de vulnerabilidades diseñado para ahorrar tiempo y esfuerzo al equipo de seguridad. Además de proporcionar una puntuación de exposición, ese panel le permite ver información sobre los dispositivos expuestos y ver las recomendaciones de seguridad pertinentes. Puede usar el panel de Administración de vulnerabilidades de Defender para:
 
 - Vea la puntuación de exposición, que está asociada a los dispositivos de su empresa.
-- Vea las principales recomendaciones de seguridad, como solucionar problemas de comunicación con dispositivos, activar la protección del firewall o actualizar las definiciones del Antivirus de Microsoft Defender.
+- Vea las principales recomendaciones de seguridad, como solucionar problemas de comunicación con dispositivos, activar la protección del firewall o actualizar las definiciones Microsoft Defender Antivirus.
 - Vea las actividades de corrección, como los archivos enviados a cuarentena o las vulnerabilidades encontradas en los dispositivos.
 
 ## <a name="vulnerability-management-features-and-capabilities"></a>Características y funcionalidades de administración de vulnerabilidades

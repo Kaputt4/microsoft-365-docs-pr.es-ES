@@ -11,17 +11,19 @@ author: mjcaparas
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
-ms.collection: M365-security-compliance
+ms.collection:
+- m365-security
+- tier3
 ms.topic: conceptual
 ms.date: 04/24/2018
 ms.subservice: mde
 search.appverid: met150
-ms.openlocfilehash: 68d1d7335f0a6f7c20759ae2bb8a52a84b465773
-ms.sourcegitcommit: 9b133379196da2b3a4bb311b07ff274f43780f68
+ms.openlocfilehash: 57a4e27fdd340514b8135734631ee179242d98c8
+ms.sourcegitcommit: b9282493c371d59c2e583b9803825096499b5e2c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/14/2022
-ms.locfileid: "67693243"
+ms.lasthandoff: 09/29/2022
+ms.locfileid: "68157422"
 ---
 # <a name="access-the-microsoft-defender-for-endpoint-community-center"></a>Acceder al Centro de comunidad de Microsoft Defender para punto de conexión
 

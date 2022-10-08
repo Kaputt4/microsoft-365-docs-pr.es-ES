@@ -11,17 +11,19 @@ author: mjcaparas
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
-ms.collection: M365-security-compliance
+ms.collection:
+- m365-security
+- tier3
 ms.topic: article
 ms.subservice: mde
 ms.custom: api
 search.appverid: met150
-ms.openlocfilehash: 31b8f1a7e4a4def4641d5330ad16d05318192828
-ms.sourcegitcommit: 9b133379196da2b3a4bb311b07ff274f43780f68
+ms.openlocfilehash: abd9d821c60655c9df5f632dd45bed77772b16ac
+ms.sourcegitcommit: b9282493c371d59c2e583b9803825096499b5e2c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/14/2022
-ms.locfileid: "67701904"
+ms.lasthandoff: 09/29/2022
+ms.locfileid: "68151637"
 ---
 # <a name="collect-investigation-package-api"></a>Recopilación de la API del paquete de investigación
 
@@ -65,6 +67,8 @@ Delegado (cuenta profesional o educativa)|Machine.CollectForensics|"Recopilar an
 >
 > - El usuario debe tener al menos el siguiente permiso de rol: "Investigación de alertas" (consulte [Creación y administración de roles](user-roles.md) para obtener más información).
 > - El usuario debe tener acceso al dispositivo en función de la configuración del grupo de dispositivos (consulte [Creación y administración de grupos de dispositivos](machine-groups.md) para obtener más información).
+>
+> La creación de grupos de dispositivos se admite en El plan 1 y el plan 2 de Defender para punto de conexión.
 
 ## <a name="http-request"></a>Solicitud HTTP
 

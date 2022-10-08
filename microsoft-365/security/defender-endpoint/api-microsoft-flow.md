@@ -12,17 +12,19 @@ author: mjcaparas
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
-ms.collection: M365-security-compliance
+ms.collection:
+- m365-security
+- tier3
 ms.topic: how-to
 ms.subservice: mde
 ms.custom: api
 search.appverid: met150
-ms.openlocfilehash: 0b90fd4ecade2f79cac895c61a4a7327de8aaf66
-ms.sourcegitcommit: 9b133379196da2b3a4bb311b07ff274f43780f68
+ms.openlocfilehash: eea3d1b8adb1a89072b741dba6314e5287777e32
+ms.sourcegitcommit: b9282493c371d59c2e583b9803825096499b5e2c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/14/2022
-ms.locfileid: "67701970"
+ms.lasthandoff: 09/29/2022
+ms.locfileid: "68151879"
 ---
 # <a name="how-to-use-power-automate-connector-to-set-up-a-flow-for-events"></a>Uso del conector de Power Automate para configurar un flujo para eventos
 
@@ -37,7 +39,7 @@ ms.locfileid: "67701970"
 
 La automatización de los procedimientos de seguridad es un requisito estándar para cada centro de operaciones de seguridad (SOC) moderno. Para que los equipos de SOC funcionen de la manera más eficaz, la automatización es imprescindible. Use Microsoft Power Automate para ayudarle a crear flujos de trabajo automatizados y a crear una automatización de procedimientos de un extremo a otro en unos minutos. Microsoft Power Automate admite diferentes conectores que se crearon exactamente para eso.  
 
-Use este artículo para guiarle en la creación de automatizaciones desencadenadas por un evento, como cuando se crea una nueva alerta en el inquilino. La API de Microsoft Defender tiene un conector oficial de Power Automate con muchas funcionalidades. 
+Use este artículo para guiarle en la creación de automatizaciones desencadenadas por un evento, como cuando se crea una nueva alerta en el inquilino. Microsoft Defender API tiene un conector oficial de Power Automate con muchas funcionalidades. 
 
 :::image type="content" source="images/api-flow-0.png" alt-text="Página Acciones del portal de Microsoft Defender 365" lightbox="images/api-flow-0.png" :::
 
@@ -52,11 +54,11 @@ En el ejemplo siguiente se muestra cómo crear un flujo que se desencadena cada 
 
 2. Vaya a **Mis flujos** \> **Nuevo** \> **automatizado desde blanco**.
 
-    :::image type="content" source="images/api-flow-1.png" alt-text="El panel Nuevo flujo en el elemento de menú Mis flujos del portal de Microsoft Defender 365" lightbox="images/api-flow-1.png":::
+    :::image type="content" source="images/api-flow-1.png" alt-text="El panel Nuevo flujo, en el elemento de menú Mis flujos del portal de Microsoft Defender 365" lightbox="images/api-flow-1.png":::
 
-3. Elija un nombre para el flujo, busque "Desencadenadores de ATP de Microsoft Defender" como desencadenador y, a continuación, seleccione el nuevo desencadenador alertas.
+3. Elija un nombre para flow, busque "Microsoft Defender desencadenadores de ATP" como desencadenador y, a continuación, seleccione el nuevo desencadenador de alertas.
 
-    :::image type="content" source="images/api-flow-2.png" alt-text=" La sección Elegir el desencadenador del flujo en el portal de Microsoft Defender 365" lightbox="images/api-flow-2.png" :::
+    :::image type="content" source="images/api-flow-2.png" alt-text="La sección Elegir el desencadenador del flujo en el portal de Microsoft Defender 365" lightbox="images/api-flow-2.png" :::
 
 Ahora tiene un flujo que se desencadena cada vez que se produce una nueva alerta.
 
@@ -68,7 +70,7 @@ El desencadenador de alerta proporciona solo el identificador de alerta y el ide
 
 ### <a name="get-the-alert-entity-using-the-connector"></a>Obtención de la entidad Alert mediante el conector
 
-1. Elija **ATP de Microsoft Defender** para el nuevo paso.
+1. Elija **Microsoft Defender ATP** para el nuevo paso.
 
 2. Elija **Alertas: Obtener api de alerta única**.
 
@@ -82,7 +84,7 @@ El desencadenador de alerta proporciona solo el identificador de alerta y el ide
 
 2. Compruebe si la gravedad de la alerta **es igual a** Alta.
 
-   Si es así, agregue la acción **ATP de Microsoft Defender: Aislar la máquina** con el id. de equipo y un comentario.
+   Si es así, agregue la **acción Microsoft Defender ATP - Aislar la máquina** con el id. de máquina y un comentario.
 
     :::image type="content" source="images/api-flow-5.png" alt-text="Panel Acciones"  lightbox="images/api-flow-5.png":::
 

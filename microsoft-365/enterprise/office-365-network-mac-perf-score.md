@@ -11,15 +11,16 @@ ms.localizationpriority: medium
 search.appverid:
 - MET150
 ms.collection:
+- scotvorg
 - Ent_O365
 - Strat_O365_Enterprise
 description: Evaluación de red de Microsoft 365
-ms.openlocfilehash: 8c5e6d41e5aa8ba6eaa1c38454f6f2e1d428f9d0
-ms.sourcegitcommit: 437461fa1d38ff9bb95dd8a1c5f0b94e8111ada2
+ms.openlocfilehash: 641b1b756872a6addfa5050276cc78cc257e4c86
+ms.sourcegitcommit: 0b7070ec119e00e0dafe030bbfbef0ae5c9afa19
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/14/2022
-ms.locfileid: "67670441"
+ms.lasthandoff: 09/29/2022
+ms.locfileid: "68169417"
 ---
 # <a name="microsoft-365-network-assessment"></a>Evaluación de red de Microsoft 365
 

@@ -13,16 +13,16 @@ search.appverid:
 - MET150
 ms.assetid: 19fd3e0f-8dbf-4049-a810-2c8ee6cefd48
 ms.collection:
-- M365-security-compliance
+- m365-security
 description: Para ayudar a mantener la confianza del usuario en el uso del correo electrónico, Microsoft ha puesto en marcha distintas políticas y tecnologías para ayudar a proteger a nuestros usuarios.
 ms.subservice: mdo
 ms.service: microsoft-365-security
-ms.openlocfilehash: 8fb45e71d79458c6d990f226d8c2d81d7efe3681
-ms.sourcegitcommit: ecc04b5b8f84b34255a2d5e90b5ab596af0d16c7
+ms.openlocfilehash: 428e1c0096811fa13674a47fec2cdf777642e12f
+ms.sourcegitcommit: 12af9e8e3a6eaa090fda9e98ccb831dff65863a4
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/01/2022
-ms.locfileid: "67496755"
+ms.lasthandoff: 09/27/2022
+ms.locfileid: "68088473"
 ---
 # <a name="services-for-non-customers-sending-mail-to-microsoft-365"></a>Servicios para clientes que no envían correo a Microsoft 365
 
@@ -36,7 +36,7 @@ Esta información general proporciona información sobre las ventajas que propor
 |---|---|
 |En este contenido de la Ayuda en línea|se ofrece: <ul><li>Punto de partida para cualquier pregunta relacionada con la entrega de comunicaciones a los usuarios de EOP.</li><li>Incluye una guía en línea sencilla con nuestras directivas y requisitos.</li><li>Información general de los filtros de correo electrónico no deseado y las tecnologías de autenticación empleadas por Microsoft.</li><ul>|
 |[Soporte técnico de Microsoft](#microsoft-support)|Proporciona soporte de autoayuda y escalamiento para problemas de entrega.|
-|[Portal de lista de direcciones IP no deseados](#anti-spam-ip-delist-portal)|Una herramienta para enviar solicitudes de eliminación de IP de la lista. Antes de enviar esta solicitud, es responsabilidad del remitente asegurarse de que cualquier otro mensaje procedente de la dirección IP en cuestión no es abusivo ni malintencionado.|
+|[Portal de lista de direcciones IP no deseados](#anti-spam-ip-delist-portal)|A tool to submit IP delist request. Before submitting this request it is the sender's responsibility to ensure that any further mail originating from the IP in question is not abusive or malicious.|
 |[Notificación de abusos y spam relativos a correos electrónicos no deseados procedentes de Exchange Online](#abuse-and-spam-reporting-for-junk-email-originating-from-exchange-online)|Evita que el correo no deseado y otros correos no deseados se envíen desde Exchange Online y abarrotando Internet y su sistema de correo.|
 
 ## <a name="microsoft-support"></a>Soporte técnico de Microsoft

@@ -16,17 +16,18 @@ ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection:
-- M365-security-compliance
+- m365-security
 - m365initiative-m365-defender
+- tier1
 ms.topic: article
 ms.custom: seo-marvel-apr2020
 search.appverid: met150
-ms.openlocfilehash: 951fd10307b1ceff61285f2a006845339d9d90d4
-ms.sourcegitcommit: 9b133379196da2b3a4bb311b07ff274f43780f68
+ms.openlocfilehash: 2e88c8ba70f966a63d734f07249250c708b772ca
+ms.sourcegitcommit: 12af9e8e3a6eaa090fda9e98ccb831dff65863a4
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/14/2022
-ms.locfileid: "67740036"
+ms.lasthandoff: 09/27/2022
+ms.locfileid: "68069807"
 ---
 # <a name="threat-analytics-in-microsoft-365-defender"></a>Análisis de amenazas en Microsoft 365 Defender
 
@@ -245,14 +246,14 @@ Para configurar notificaciones por correo electrónico para informes de análisi
 ## <a name="additional-report-details-and-limitations"></a>Detalles y limitaciones adicionales del informe
 
 > [!NOTE]
-> Como parte de la experiencia de seguridad unificada, el análisis de amenazas ahora está disponible no solo para Microsoft Defender para punto de conexión, sino también para los titulares de licencias de Microsoft Defender para Office E5.
+> Como parte de la experiencia de seguridad unificada, el análisis de amenazas ahora está disponible no solo para Microsoft Defender para punto de conexión, sino también para Microsoft Defender para los titulares de licencias de Office E5.
 >
-> Si no usa el portal de seguridad de Microsoft 365 (Microsoft 365 Defender), también puede ver los detalles del informe (sin los datos de Microsoft Defender para Office) en el portal de Centro de seguridad de Microsoft Defender ( Microsoft Defender para punto de conexión).
+> Si no usa el portal de seguridad de Microsoft 365 (Microsoft 365 Defender), también puede ver los detalles del informe (sin el Microsoft Defender para datos de Office) en el portal de Centro de seguridad de Microsoft Defender ( Microsoft Defender para punto de conexión).
 
 Para acceder a los informes de análisis de amenazas, necesita determinados roles y permisos. Consulte [Roles personalizados en el control de acceso basado en rol para obtener Microsoft 365 Defender](custom-roles.md) para obtener más información.
 
 - Para ver alertas, incidentes o datos de recursos afectados, debe tener permisos para Microsoft Defender para Office o Microsoft Defender para punto de conexión datos de alertas, o ambos.
-- Para ver los intentos de correo electrónico impedidos, debe tener permisos para los datos de búsqueda de Microsoft Defender para Office.
+- Para ver los intentos de correo electrónico impedidos, debe tener permisos para Microsoft Defender para los datos de búsqueda de Office.
 - Para ver las mitigaciones, debe tener permisos para los datos de Administración de vulnerabilidades de Defender en Microsoft Defender para punto de conexión.
 
 Al examinar los datos de análisis de amenazas, recuerde los siguientes factores:
@@ -260,7 +261,7 @@ Al examinar los datos de análisis de amenazas, recuerde los siguientes factores
 - Los gráficos solo reflejan las mitigaciones de las que se realiza el seguimiento. Compruebe la información general del informe para ver las mitigaciones adicionales que no se muestran en los gráficos.
 - Las mitigaciones no garantizan una resistencia completa. Las mitigaciones proporcionadas reflejan las mejores acciones posibles necesarias para mejorar la resistencia.
 - Los dispositivos se cuentan como "no disponibles" si no han transmitido datos al servicio.
-- Las estadísticas relacionadas con el antivirus se basan en la configuración del Antivirus de Microsoft Defender. Los dispositivos con soluciones antivirus de terceros pueden aparecer como "expuestos".
+- Las estadísticas relacionadas con el antivirus se basan en Microsoft Defender configuración del antivirus. Los dispositivos con soluciones antivirus de terceros pueden aparecer como "expuestos".
 
 ## <a name="related-articles"></a>Artículos relacionados
 

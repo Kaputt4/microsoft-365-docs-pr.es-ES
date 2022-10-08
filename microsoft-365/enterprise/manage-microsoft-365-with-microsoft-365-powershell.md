@@ -5,11 +5,13 @@ author: kelleyvice-msft
 manager: scotv
 audience: Admin
 ms.topic: landing-page
-ms.service: o365-administration
+ms.service: microsoft-365-enterprise
 ms.localizationpriority: medium
 search.appverid:
 - MET150
-ms.collection: Ent_O365
+ms.collection:
+- scotvorg
+- Ent_O365
 f1.keywords:
 - CSH
 ms.custom:
@@ -18,21 +20,21 @@ ms.custom:
 - Ent_Office_Other
 - seo-marvel-apr2020
 ms.assetid: 932d57c0-1520-4f0f-8ec9-9966d646480f
-description: Obtenga información sobre cómo administrar Microsoft 365 usuarios, licencias y 365 aplicaciones con PowerShell.
-ms.openlocfilehash: 147115df77685e50ef4a8d6f99fcf579db96102d
-ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
+description: Obtenga información sobre cómo administrar usuarios, licencias y aplicaciones de Microsoft 365 con PowerShell.
+ms.openlocfilehash: 0dda11f2831368ed6e3d41c1a9eae20181edfc14
+ms.sourcegitcommit: 0b7070ec119e00e0dafe030bbfbef0ae5c9afa19
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "65096466"
+ms.lasthandoff: 09/29/2022
+ms.locfileid: "68169505"
 ---
 # <a name="manage-microsoft-365-with-powershell"></a>Administrar Microsoft 365 con PowerShell
 
-*Este artículo se aplica tanto a Microsoft 365 Enterprise como a Office 365 Enterprise.*
+*Este artículo afecta tanto a Office 365 Enterprise como a Microsoft 365 Enterprise*
 
-PowerShell para Microsoft 365 es una herramienta de administración eficaz que complementa el Centro de administración de Microsoft 365. Por ejemplo, puede usar la automatización de PowerShell para administrar fácilmente varias cuentas de usuario y licencias y para crear informes.
+PowerShell para Microsoft 365 es una eficaz herramienta de administración que complementa la Centro de administración de Microsoft 365. Por ejemplo, puede usar la automatización de PowerShell para administrar fácilmente varias cuentas de usuario y licencias y para crear informes.
 
-Seleccione uno de los temas siguientes para obtener información sobre cómo usar PowerShell para administrar Microsoft 365:
+Seleccione uno de los temas siguientes para aprender a usar PowerShell para administrar Microsoft 365:
   
 - [**Introducción**](getting-started-with-microsoft-365-powershell.md)
 
@@ -60,8 +62,8 @@ Seleccione uno de los temas siguientes para obtener información sobre cómo usa
 
 - [**Asociados de permisos de acceso delegado (DAP)**](manage-microsoft-365-with-windows-powershell-for-delegated-access-permissions-dap-p.md)
 
-    Comience aquí si desea usar asociados de distribución y Proveedor de soluciones en la nube (CSP) para administrar los inquilinos de Microsoft 365 cliente.
+    Comience aquí si desea usar asociados de proveedor de soluciones en la nube (CSP) y de distribución para administrar los inquilinos de clientes de Microsoft 365.
 
-- [**Skype Empresarial en línea**](manage-skype-for-business-online-with-microsoft-365-powershell.md)
+- [**Skype Empresarial Online**](manage-skype-for-business-online-with-microsoft-365-powershell.md)
 
     Comience aquí para administrar Skype Empresarial Online.

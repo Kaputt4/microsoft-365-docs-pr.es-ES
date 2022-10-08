@@ -14,16 +14,16 @@ ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection:
-- m365-security-compliance
-- m365-initiative-defender-endpoint
-ms.topic: article
+- m365-security
+- tier1
+ms.topic: conceptual
 ms.subservice: mde
-ms.openlocfilehash: 4ec9f997cca5b118745a82ea11e7557383303ba5
-ms.sourcegitcommit: 9b133379196da2b3a4bb311b07ff274f43780f68
+ms.openlocfilehash: 7d76deeb278e460a2518cb922b0a087273e16d6b
+ms.sourcegitcommit: 0b7070ec119e00e0dafe030bbfbef0ae5c9afa19
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/14/2022
-ms.locfileid: "67702938"
+ms.lasthandoff: 09/29/2022
+ms.locfileid: "68186599"
 ---
 # <a name="configure-device-proxy-and-internet-connectivity-settings"></a>Configurar las opciones de proxy de dispositivo y de conectividad a Internet
 
@@ -96,7 +96,7 @@ El proxy estático se puede configurar a través de la directiva de grupo (GP), 
 | Configuración de telemetría y experiencias de usuario conectadas | `HKLM\Software\Policies\Microsoft\Windows\DataCollection` | `TelemetryProxyServer` | ```servername:port or ip:port``` <br> <br> Por ejemplo: ```10.0.0.6:8080``` (REG_SZ) |
 
 > [!NOTE]
-> Si usa la configuración "TelemetryProxyServer" en dispositivos que, de lo contrario, están **completamente sin conexión**, se recomienda agregar la configuración `PreferStaticProxyForHttpRequest` adicional del Registro con un valor de `1`.<br>
+> Si usa la configuración "TelemetryProxyServer" en dispositivos que, de lo contrario, están **completamente sin conexión**, lo que significa que el sistema operativo no puede conectarse para la lista de revocación de certificados en línea o Windows Update, se recomienda agregar la configuración `PreferStaticProxyForHttpRequest` adicional del Registro con un valor de `1`.<br>
 > La ubicación de la ruta de acceso del Registro principal para "PreferStaticProxyForHttpRequest" es "HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows Advanced Threat Protection"<br>
 > El siguiente comando se puede usar para insertar el valor del Registro en la ubicación correcta:<br>
 > ```reg add "HKLM\SOFTWARE\Policies\Microsoft\Windows Advanced Threat Protection" /v PreferStaticProxyForHttpRequest /t REG_DWORD /d 1 /f```<br>
@@ -104,17 +104,17 @@ El proxy estático se puede configurar a través de la directiva de grupo (GP), 
 
 
 
-## <a name="configure-a-static-proxy-for-microsoft-defender-antivirus"></a>Configuración de un proxy estático para el Antivirus de Microsoft Defender
+## <a name="configure-a-static-proxy-for-microsoft-defender-antivirus"></a>Configuración de un proxy estático para Microsoft Defender Antivirus
 
-La [protección proporcionada en la nube del](cloud-protection-microsoft-defender-antivirus.md) Antivirus de Microsoft Defender proporciona protección casi instantánea y automatizada contra amenazas nuevas y emergentes. Tenga en cuenta que la conectividad es necesaria para [los indicadores personalizados](manage-indicators.md) cuando Antivirus de Defender es la solución antimalware activa. Para [EDR en modo de bloque](edr-in-block-mode.md) tiene una solución antimalware principal cuando se usa una solución que no es de Microsoft.
+Microsoft Defender [protección antivirus entregada en la nube](cloud-protection-microsoft-defender-antivirus.md) proporciona protección casi instantánea y automatizada contra amenazas nuevas y emergentes. Tenga en cuenta que la conectividad es necesaria para [los indicadores personalizados](manage-indicators.md) cuando Antivirus de Defender es la solución antimalware activa. Para [EDR en modo de bloque](edr-in-block-mode.md) tiene una solución antimalware principal cuando se usa una solución que no es de Microsoft.
 
 Configure el proxy estático mediante el directiva de grupo disponible en Plantillas administrativas:
 
-1. **Plantillas administrativas > componentes de Windows > Antivirus de Microsoft Defender > Definir servidor proxy para conectarse a la red**. 
+1. **Plantillas administrativas > componentes de Windows > Microsoft Defender Antivirus > Definir servidor proxy para conectarse a la red**. 
 
-2. Establézcalo en **Habilitado** y defina el servidor proxy. Tenga en cuenta que la dirección URL debe tener http:// o https://. Para ver las versiones admitidas para https://, consulte [Administración de actualizaciones del Antivirus de Microsoft Defender](manage-updates-baselines-microsoft-defender-antivirus.md).
+2. Establézcalo en **Habilitado** y defina el servidor proxy. Tenga en cuenta que la dirección URL debe tener http:// o https://. Para ver las versiones admitidas para https://, consulte [Administrar actualizaciones de antivirus de Microsoft Defender](manage-updates-baselines-microsoft-defender-antivirus.md).
 
-   :::image type="content" source="images/proxy-server-mdav.png" alt-text="Servidor proxy para antivirus de Microsoft Defender" lightbox="images/proxy-server-mdav.png":::
+   :::image type="content" source="images/proxy-server-mdav.png" alt-text="Servidor proxy para Microsoft Defender Antivirus" lightbox="images/proxy-server-mdav.png":::
 
 3. En la clave `HKLM\Software\Policies\Microsoft\Windows Defender`del Registro , la directiva establece el valor `ProxyServer` del Registro como REG_SZ. 
 
@@ -128,11 +128,11 @@ Configure el proxy estático mediante el directiva de grupo disponible en Planti
 
 > [!NOTE]
 >
-> Con fines de resistencia y la naturaleza en tiempo real de la protección entregada en la nube, Antivirus de Microsoft Defender almacenará en caché el último proxy de trabajo conocido. Asegúrese de que la solución de proxy no realiza la inspección SSL. Esto interrumpirá la conexión segura a la nube. 
+> Para fines de resistencia y la naturaleza en tiempo real de la protección entregada en la nube, Microsoft Defender Antivirus almacenará en caché el último proxy de trabajo conocido. Asegúrese de que la solución de proxy no realiza la inspección SSL. Esto interrumpirá la conexión segura a la nube. 
 >
-> Antivirus de Microsoft Defender no usará el proxy estático para conectarse a Windows Update o Microsoft Update para descargar actualizaciones. En su lugar, usará un proxy de todo el sistema si está configurado para usar Windows Update o el origen de actualización interno configurado según el [orden de reserva configurado](manage-protection-updates-microsoft-defender-antivirus.md). 
+> Microsoft Defender Antivirus no usará el proxy estático para conectarse a Windows Update o Microsoft Update para descargar actualizaciones. En su lugar, usará un proxy de todo el sistema si está configurado para usar Windows Update o el origen de actualización interno configurado según el [orden de reserva configurado](manage-protection-updates-microsoft-defender-antivirus.md). 
 >
-> Si es necesario, puede usar **plantillas administrativas > componentes de Windows > Antivirus de Microsoft Defender > Definir configuración automática de proxy (.pac)** para conectarse a la red. Si necesita configurar configuraciones avanzadas con varios servidores proxy, use **Plantillas administrativas > componentes de Windows > Antivirus de Microsoft Defender > Definir direcciones** para omitir el servidor proxy e impedir que Antivirus de Microsoft Defender use un servidor proxy para esos destinos. 
+> Si es necesario, puede usar **plantillas administrativas > componentes de Windows > Microsoft Defender Antivirus > Definir configuración automática de proxy (.pac)** para conectarse a la red. Si necesita configurar configuraciones avanzadas con varios servidores proxy, use **Plantillas administrativas > Componentes de Windows > Microsoft Defender Antivirus > Definir direcciones** para omitir el servidor proxy e impedir que Microsoft Defender Antivirus use un servidor proxy para esos destinos. 
 >
 > Puede usar PowerShell con el `Set-MpPreference` cmdlet para configurar estas opciones: 
 >
@@ -293,6 +293,6 @@ Pero si los resultados de la comprobación de conectividad indican un error, se 
 
 ## <a name="related-articles"></a>Artículos relacionados
 
-- [Uso de directiva de grupo configuración para configurar y administrar antivirus de Microsoft Defender](use-group-policy-microsoft-defender-antivirus.md)
+- [Usar directiva de grupo configuración para configurar y administrar Microsoft Defender Antivirus](use-group-policy-microsoft-defender-antivirus.md)
 - [incorporar dispositivos Windows](configure-endpoints.md)
 - [Solución de problemas de incorporación de Microsoft Defender para punto de conexión](troubleshoot-onboarding.md)

@@ -1,8 +1,8 @@
 ---
-title: Cómo suscribirse a expertos de Microsoft Defender para la búsqueda
+title: Cómo suscribirse a expertos de Microsoft Defender para la caza
 ms.reviewer: ''
 description: Si no está familiarizado con los expertos de Microsoft 365 Defender y Defender para la búsqueda, así es como se suscribe.
-keywords: servicio de búsqueda de amenazas administrada, búsqueda de amenazas administrada, servicio de detección y respuesta administrada (MDR), MTE, Expertos en amenazas de Microsoft, MTE-TAN, notificación de ataque dirigida, notificaciones de expertos de defender, notificaciones de ataque de punto de conexión, expertos de Microsoft Defender para búsqueda, búsqueda y análisis de amenazas.
+keywords: servicio de búsqueda de amenazas administrada, búsqueda de amenazas administrada, servicio de detección y respuesta administrada (MDR), MTE, Expertos en amenazas de Microsoft, MTE-TAN, notificación de ataque dirigida, notificaciones de expertos de defender, notificaciones de ataque de punto de conexión, Microsoft Defender Expertos para la búsqueda, la búsqueda y el análisis de amenazas.
 search.product: Windows 10
 ms.service: microsoft-365-security
 ms.subservice: m365d
@@ -15,16 +15,16 @@ ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection:
-- m365-security-compliance
-- m365initiative-defender-endpoint
+- m365-security
+- tier1
 ms.topic: conceptual
 search.appverid: met150
-ms.openlocfilehash: e8aa0cab5f3b7c756b2b4baf5cab046cf35287e0
-ms.sourcegitcommit: 9b133379196da2b3a4bb311b07ff274f43780f68
+ms.openlocfilehash: 8b13a000f40cc7728716b6121767996b305f2db6
+ms.sourcegitcommit: 12af9e8e3a6eaa090fda9e98ccb831dff65863a4
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/14/2022
-ms.locfileid: "67684053"
+ms.lasthandoff: 09/27/2022
+ms.locfileid: "68088935"
 ---
 # <a name="start-using-microsoft-defender-experts-for-hunting"></a>Empezar a usar expertos de Microsoft Defender para la búsqueda
 
@@ -41,7 +41,7 @@ Si no está familiarizado con los expertos de Microsoft 365 Defender y Defender 
 1. Al recibir el correo electrónico de bienvenida, seleccione **Iniciar sesión en Microsoft 365 Defender**.
 2. Inicie sesión si ya tiene una cuenta microsoft. Si no hay ninguno, cree uno.
 3. El Microsoft 365 Defender recorrido rápido le familiarizará con el conjunto de seguridad, donde están las funcionalidades y lo importantes que son. Seleccione **Realizar un recorrido rápido**.  
-4. Lea las breves descripciones sobre cuál es el servicio Expertos de Microsoft Defender y las funcionalidades que proporciona. Seleccione **Siguiente**. Verá la página de bienvenida:
+4. Lea las breves descripciones sobre cuál es el servicio de expertos de Microsoft Defender y las funcionalidades que proporciona. Seleccione **Siguiente**. Verá la página de bienvenida:
 
 ![Captura de pantalla de la página de bienvenida Microsoft 365 Defender con una tarjeta para el servicio Defender Experts for Hunting.](../../media/mte/defenderexperts/start-using-defender-experts-for-hunting.png)
 
@@ -127,11 +127,11 @@ La opción **preguntar a expertos de Defender** está disponible en varios lugar
 - Recientemente hemos visto una entrada de blog sobre una amenaza que está dirigida a nuestro sector. ¿Puede ayudarnos a comprender qué protección Microsoft 365 Defender proporciona contra este actor de amenazas?
 - Recientemente hemos observado una campaña de suplantación de identidad realizada contra nuestra organización. ¿Puede decirnos si se ha dirigido específicamente a nuestra empresa o vertical?
 
-### <a name="microsoft-defender-experts-for-hunting-alert-communications"></a>Comunicaciones de alertas de expertos de Microsoft Defender para la búsqueda
+### <a name="microsoft-defender-experts-for-hunting-alert-communications"></a>Microsoft Defender Expertos en comunicaciones de alertas de búsqueda
 
 - ¿Puede el equipo de respuesta a incidentes ayudarnos a abordar la notificación de expertos de Defender que tenemos?
-- Hemos recibido esta notificación de expertos de Defender de expertos de Microsoft Defender para la búsqueda. No tenemos nuestro propio equipo de respuesta a incidentes. ¿Qué podemos hacer ahora y cómo podemos contener el incidente?
-- Hemos recibido una notificación de expertos de Defender de expertos de Microsoft Defender para la búsqueda. ¿Qué datos puede proporcionarnos que podemos pasar a nuestro equipo de respuesta a incidentes?
+- Recibimos esta notificación de expertos de Defender de expertos de Microsoft Defender expertos para la caza. No tenemos nuestro propio equipo de respuesta a incidentes. ¿Qué podemos hacer ahora y cómo podemos contener el incidente?
+- Recibimos una notificación de expertos de Defender de expertos de Microsoft Defender expertos para la caza. ¿Qué datos puede proporcionarnos que podemos pasar a nuestro equipo de respuesta a incidentes?
 
 ### <a name="next-step"></a>Paso siguiente
 

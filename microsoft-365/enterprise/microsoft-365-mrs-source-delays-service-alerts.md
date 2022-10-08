@@ -6,26 +6,27 @@ manager: scotv
 ms.date: ''
 audience: Admin
 ms.topic: article
-ms.service: o365-administration
+ms.service: microsoft-365-enterprise
 ms.localizationpriority: medium
 search.appveyor:
 - MET150
 ms.collection:
+- scotvorg
 - Ent_O365
 - Strat_O365_Enterprise
 f1.keywords:
 - NOCSH
 description: Use avisos del servicio de migración de buzones para supervisar los retrasos en las solicitudes de migración de buzones de correo en su organización.
-ms.openlocfilehash: fe6f60b75fb7d27781d442faf82ff981ac54808a
-ms.sourcegitcommit: aff1732dfa21e9283b173d8e5ca5bcbeeaaa26d8
+ms.openlocfilehash: 1be39c430b790a63263d668edd198ccd80401799
+ms.sourcegitcommit: 0b7070ec119e00e0dafe030bbfbef0ae5c9afa19
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/01/2022
-ms.locfileid: "65810745"
+ms.lasthandoff: 09/29/2022
+ms.locfileid: "68169439"
 ---
 # <a name="service-advisories-for-mrs-source-delays-in-exchange-online-monitoring"></a>Avisos de servicio para retrasos de origen MRS en la supervisión de Exchange Online
 
-Los avisos de servicio de retraso de origen del Servicio de replicación de buzones de correo (MRS) le informan de las limitaciones de almacenamiento o de los problemas de uso elevado del procesador en el inquilino (origen de migración) que podrían retrasar las migraciones de buzones en la organización de Microsoft 365. Estos avisos de servicio también incluyen vínculos a recursos de Microsoft para ayudarle a resolver estos problemas.
+Los avisos de servicio de retraso de origen del Servicio de replicación de buzones (MRS) le informan de las limitaciones de almacenamiento o de los problemas de uso elevado del procesador en el inquilino (origen de migración) que podrían retrasar las migraciones de buzones en la organización de Microsoft 365. Estos avisos de servicio también incluyen vínculos a recursos de Microsoft para ayudarle a resolver estos problemas.
 
 Estos avisos de servicio se muestran en el Centro de administración de Microsoft 365. Para ver estos avisos de servicio, vaya a **Estado** >  <a href="https://go.microsoft.com/fwlink/p/?linkid=842900" target="_blank">**Estado del servicio**</a> >  **Exchange Online** y, a continuación, haga clic en la pestaña **Problemas activos**.
 
@@ -62,7 +63,7 @@ Para obtener más información sobre MRS y las migraciones de buzones de correo,
 
 - [El buzón se mueve en Exchange](/exchange/recipients/mailbox-moves)
 
-- [procedimientos recomendados y rendimiento de migración de Microsoft 365 y Office 365](/exchange/mailbox-migration/office-365-migration-best-practices)
+- [Rendimiento y procedimientos recomendados de migración de Microsoft 365 y Office 365](/exchange/mailbox-migration/office-365-migration-best-practices)
 
 - [Análisis de rendimiento de la migración de buzones](https://techcommunity.microsoft.com/t5/exchange-team-blog/mailbox-migration-performance-analysis/ba-p/587134)
 

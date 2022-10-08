@@ -11,16 +11,18 @@ author: mjcaparas
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
-ms.collection: M365-security-compliance
+ms.collection:
+- m365-security
+- tier2
 ms.topic: article
 ms.subservice: mde
 search.appverid: met150
-ms.openlocfilehash: 8aafef819574d14871da0ee3199adfc5da6da2d0
-ms.sourcegitcommit: 2dedd0f594b817779e034afa6c4418def2382a22
+ms.openlocfilehash: af8846088531af68f921824fd2d9843dfa5ca4e6
+ms.sourcegitcommit: b9282493c371d59c2e583b9803825096499b5e2c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/18/2022
-ms.locfileid: "67798184"
+ms.lasthandoff: 09/29/2022
+ms.locfileid: "68153947"
 ---
 # <a name="configure-advanced-features-in-defender-for-endpoint"></a>Configuración de características avanzadas en Defender para punto de conexión
 
@@ -77,11 +79,13 @@ Active esta característica para que las aplicaciones potencialmente no deseadas
 Esta configuración se puede usar para escenarios en los que las operaciones soc locales desean limitar las correlaciones de alertas solo a los grupos de dispositivos a los que pueden acceder. Al activar esta configuración, un incidente compuesto por alertas de que los grupos entre dispositivos ya no se considerarán un único incidente. A continuación, el SOC local puede tomar medidas sobre el incidente porque tienen acceso a uno de los grupos de dispositivos implicados. Sin embargo, soc global verá varios incidentes diferentes por grupo de dispositivos en lugar de un incidente. No se recomienda activar esta configuración a menos que hacerlo supere las ventajas de la correlación de incidentes en toda la organización.
 
 > [!NOTE]
-> Cambiar esta configuración afecta solo a las correlaciones de alertas futuras.
+> - Cambiar esta configuración afecta solo a las correlaciones de alertas futuras.
+>
+> - La creación de grupos de dispositivos se admite en El plan 1 y el plan 2 de Defender para punto de conexión.
 
 ## <a name="enable-edr-in-block-mode"></a>Habilitación de EDR en modo de bloque
 
-La detección y respuesta de puntos de conexión (EDR) en modo de bloque proporciona protección contra artefactos malintencionados, incluso cuando el Antivirus de Microsoft Defender se ejecuta en modo pasivo. Cuando está activado, EDR en modo de bloque bloquea los artefactos malintencionados o los comportamientos detectados en un dispositivo. EDR en modo de bloque funciona en segundo plano para corregir artefactos malintencionados que se detectan después de la infracción.
+La detección y respuesta de puntos de conexión (EDR) en modo de bloque proporciona protección contra artefactos malintencionados, incluso cuando Microsoft Defender Antivirus se ejecuta en modo pasivo. Cuando está activado, EDR en modo de bloque bloquea los artefactos malintencionados o los comportamientos detectados en un dispositivo. EDR en modo de bloque funciona en segundo plano para corregir artefactos malintencionados que se detectan después de la infracción.
 
 ## <a name="autoresolve-remediated-alerts"></a>Alertas corregidas de Autoresolve
 
@@ -99,7 +103,7 @@ En el caso de los inquilinos creados en o después de Windows 10, versión 1809,
 
 El bloqueo solo está disponible si su organización cumple estos requisitos:
 
-- Usa antivirus de Microsoft Defender como solución antimalware activa y,
+- Usa Microsoft Defender Antivirus como solución antimalware activa y,
 - La característica de protección basada en la nube está habilitada
 
 Esta característica le permite bloquear archivos potencialmente malintencionados en la red. El bloqueo de un archivo impedirá que se lea, escriba o ejecute en dispositivos de la organización.
@@ -130,9 +134,9 @@ Para obtener más información, vea [Administrar indicadores](manage-indicators.
 ## <a name="tamper-protection"></a>Protección contra alteraciones
 Durante algunos tipos de ciberataques, los actores malintencionados intentan deshabilitar las características de seguridad, como la protección antivirus, en las máquinas. A los actores incorrectos les gusta deshabilitar las características de seguridad para obtener un acceso más fácil a los datos, para instalar malware o para aprovechar los datos, la identidad y los dispositivos.
 
-La protección contra alteraciones básicamente bloquea el Antivirus de Microsoft Defender e impide que la configuración de seguridad se cambie a través de aplicaciones y métodos.
+La protección contra alteraciones básicamente bloquea Microsoft Defender Antivirus e impide que la configuración de seguridad se cambie a través de aplicaciones y métodos.
 
-Esta característica está disponible si su organización usa el Antivirus de Microsoft Defender y la protección basada en la nube está habilitada. Para obtener más información, consulte [Uso de tecnologías de última generación en antivirus de Microsoft Defender mediante la protección proporcionada en la nube](cloud-protection-microsoft-defender-antivirus.md).
+Esta característica está disponible si la organización usa Microsoft Defender Antivirus y la protección basada en la nube está habilitada. Para obtener más información, consulte [Uso de tecnologías de última generación en Microsoft Defender Antivirus mediante la protección proporcionada en la nube](cloud-protection-microsoft-defender-antivirus.md).
 
 Mantenga activada la protección contra alteraciones para evitar cambios no deseados en la solución de seguridad y sus características esenciales.
 

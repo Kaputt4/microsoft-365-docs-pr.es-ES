@@ -13,17 +13,17 @@ search.appverid:
 - MET150
 - MOE150
 ms.collection:
-- M365-security-compliance
+- m365-security
 ms.custom: ''
 description: Un cuaderno de estrategias prescriptivo para que el personal de SecOps administre Microsoft Defender para Office 365.
 ms.subservice: mdo
 ms.service: microsoft-365-security
-ms.openlocfilehash: 2c22dd6e0d6fef3607bc51325d66691e2b9fc979
-ms.sourcegitcommit: 2b89bcff547e00be3d38dc8d1e6cbcf8f41eba42
+ms.openlocfilehash: 0e21a534ef438396bb94221df992e8c343dbda4b
+ms.sourcegitcommit: 12af9e8e3a6eaa090fda9e98ccb831dff65863a4
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/03/2022
-ms.locfileid: "67595771"
+ms.lasthandoff: 09/27/2022
+ms.locfileid: "68072283"
 ---
 # <a name="microsoft-defender-for-office-365-security-operations-guide"></a>Guía de operaciones de seguridad de Microsoft Defender para Office 365
 
@@ -90,7 +90,7 @@ La administración de falsos positivos y falsos negativos y las personas respons
 |Envíe falsos positivos y falsos negativos a Microsoft en <https://security.microsoft.com/reportsubmission>.|Diario|Proporcione señales a Microsoft mediante la notificación de detecciones incorrectas de correo electrónico, dirección URL y archivos.|Equipo de operaciones de seguridad|
 |Analice los detalles del envío del administrador.|Diario|Comprenda los siguientes factores para los envíos que realiza a Microsoft: <ul><li>¿Qué causó el falso positivo o falso negativo?</li><li>Estado de la configuración de Defender para Office 365 en el momento del envío.</li><li>Si necesita realizar cambios en la configuración de Defender para Office 365.</li></ul>|Equipo de operaciones de seguridad <br/><br/> Administración de seguridad|
 |Agregue entradas de bloque en la lista de permitidos o bloqueados de inquilinos en <https://security.microsoft.com/tenantAllowBlockList>.|Diario|Use la lista de permitidos o bloqueados de inquilinos para agregar entradas de bloque para las detecciones de direcciones URL negativas falsas, archivos o remitentes según sea necesario.|Equipo de operaciones de seguridad|
-|Libere los falsos negativos de la cuarentena.|Diario|Después de que el destinatario confirme que el mensaje se puso en cuarentena incorrectamente, puede liberar o aprobar solicitudes de versión para los usuarios. <br/><br/> Para controlar lo que los usuarios pueden hacer con sus propios mensajes en cuarentena (incluida la versión o la solicitud de lanzamiento), consulte [Directivas de cuarentena](quarantine-policies.md).|Equipo de operaciones de seguridad <br/><br/> Equipo de mensajería|
+|Libere el falso positivo de la cuarentena.|Diario|Después de que el destinatario confirme que el mensaje se puso en cuarentena incorrectamente, puede liberar o aprobar solicitudes de versión para los usuarios. <br/><br/> Para controlar lo que los usuarios pueden hacer con sus propios mensajes en cuarentena (incluida la versión o la solicitud de lanzamiento), consulte [Directivas de cuarentena](quarantine-policies.md).|Equipo de operaciones de seguridad <br/><br/> Equipo de mensajería|
 
 ### <a name="review-phishing-and-malware-campaigns-that-resulted-in-delivered-mail"></a>Revisar las campañas de suplantación de identidad (phishing) y malware que dieron lugar a la entrega de correo
 
@@ -155,7 +155,7 @@ Las vistas de campaña revelan ataques de malware y suplantación de identidad (
 
 |Actividad|Cadencia|Descripción|Persona|
 |---|---|---|---|
-|Revise la configuración de las directivas de Defender para Office 365 en <https://security.microsoft.com/configurationAnalyzer>.|Ad hoc <br/><br/> Mensualmente|Use el [Analizador de configuración](configuration-analyzer-for-security-policies.md) para comparar la configuración de directiva existente con los [valores Estándar o Estricto recomendados para Defender para Office 365](recommended-settings-for-eop-and-office365.md). El analizador de configuración identifica cambios accidentales o malintencionados que pueden reducir la posición de seguridad de la organización. <br/><br/> O yu puede usar la [herramienta ORCA](https://aka.ms/getorca) basada en PowerShell.|Administración de seguridad <br/><br/> Equipo de mensajería|
+|Revise la configuración de las directivas de Defender para Office 365 en <https://security.microsoft.com/configurationAnalyzer>.|Ad hoc <br/><br/> Mensualmente|Use el [Analizador de configuración](configuration-analyzer-for-security-policies.md) para comparar la configuración de directiva existente con los [valores Estándar o Estricto recomendados para Defender para Office 365](recommended-settings-for-eop-and-office365.md). El analizador de configuración identifica cambios accidentales o malintencionados que pueden reducir la posición de seguridad de la organización. <br/><br/> También puede usar la [herramienta ORCA](https://aka.ms/getorca) basada en PowerShell.|Administración de seguridad <br/><br/> Equipo de mensajería|
 |Revisión de las invalidaciones de detección en Defender para Office 365 en<https://security.microsoft.com/reports/TPSMessageOverrideReportATP>|Ad hoc <br/><br/> Mensualmente|Use la [vista Ver datos por invalidación \> del sistema Desglose del gráfico por motivo](view-email-security-reports.md#view-data-by-system-override-and-chart-breakdown-by-reason) en el **informe de estado de Protección contra amenazas** para revisar el correo electrónico que se detectó como suplantación de identidad (phishing) pero que se entregó debido a la configuración de invalidación de usuario o directiva. <br/><br/> Investigue, quite o ajuste de forma activa las invalidaciones para evitar la entrega de correo electrónico que se determinó que era malintencionado.|Administración de seguridad <br/><br/> Equipo de mensajería|
 
 ### <a name="review-spoof-and-impersonation-detections"></a>Revisión de las detecciones de suplantación y suplantación
@@ -238,7 +238,7 @@ Defender para Office 365 expone la mayoría de sus datos a través de un conjunt
 
 Para conectar Defender para Office 365 incidentes y datos sin procesar con Microsoft Sentinel, puede usar el [conector de Microsoft 365 Defender (M365D)](/azure/sentinel/connect-microsoft-365-defender?tabs=MDO)
 
-Puede usar este sencillo ejemplo de "Hola mundo" para probar el acceso de api a las API de Microsoft Defender: [Hola mundo para Microsoft 365 Defender API REST](/microsoft-365/security/defender/api-hello-world).
+Puede usar este sencillo ejemplo de "Hola mundo" para probar el acceso de la API a las API de Microsoft Defender: [Hola mundo para Microsoft 365 Defender API REST](/microsoft-365/security/defender/api-hello-world).
 
 Para obtener más información sobre la integración de herramientas SIEM, consulte [Integración de las herramientas SIEM con Microsoft 365 Defender](/microsoft-365/security/defender/configure-siem-defender).
 

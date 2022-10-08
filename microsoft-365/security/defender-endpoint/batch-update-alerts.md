@@ -12,16 +12,18 @@ author: mjcaparas
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
-ms.collection: M365-security-compliance
+ms.collection:
+- m365-security
+- tier3
 ms.topic: article
 ms.custom: api
 search.appverid: met150
-ms.openlocfilehash: db35b357844c8af944449cbaaa57dfc0ad2ee188
-ms.sourcegitcommit: c29af68260ba8676083674b3c70209bff2c2e362
+ms.openlocfilehash: 502d5a72fdde17a18f11cf9a3e20069a6664e677
+ms.sourcegitcommit: b9282493c371d59c2e583b9803825096499b5e2c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/16/2022
-ms.locfileid: "67740541"
+ms.lasthandoff: 09/29/2022
+ms.locfileid: "68153331"
 ---
 # <a name="batch-update-alerts"></a>Alertas de actualización por lotes
 
@@ -66,6 +68,8 @@ Delegado (cuenta profesional o educativa) | Alert.ReadWrite | "Alertas de lectur
 >
 > - El usuario debe tener al menos el siguiente permiso de rol: "Investigación de alertas" (consulte [Creación y administración de roles](user-roles.md) para obtener más información).
 > - El usuario debe tener acceso al dispositivo asociado a la alerta, en función de la configuración del grupo de dispositivos (consulte [Creación y administración de grupos de dispositivos](machine-groups.md) para obtener más información).
+>
+> La creación de grupos de dispositivos se admite en El plan 1 y el plan 2 de Defender para punto de conexión.
 
 ## <a name="http-request"></a>Solicitud HTTP
 
@@ -93,12 +97,12 @@ Propiedad | Tipo | Descripción
 alertIds | Cadena de lista&lt;&gt;| Una lista de los identificadores de las alertas que se van a actualizar. **Required**
 status | Cadena | Especifica el estado actualizado de las alertas especificadas. Los valores de propiedad son: "New", "InProgress" y "Resolved".
 assignedTo | Cadena | Propietario de las alertas especificadas
-classification | String | Especifica la especificación de las alertas especificadas. Los valores de propiedad son: "True positive", "Informational, expected activity" y "False positive".
-Determinación | Cadena | Especifica la determinación de las alertas especificadas. Los valores de propiedad son: 'NotAvailable', 'Apt', 'Malware', 'SecurityPersonnel', 'SecurityTesting', 'UnwantedSoftware', 'Other'
-comment | String | Comentario que se va a agregar a las alertas especificadas.
+classification | String | Especifica la especificación de las alertas especificadas. Los valores de propiedad son: `TruePositive`, `Informational, expected activity`y `FalsePositive`.
+Determinación | Cadena | Especifica la determinación de las alertas especificadas. <p>Los valores de determinación posibles para cada clasificación son: <br><li> <b>Verdadero positivo</b>: `Multistage attack` (MultiStagedAttack), `Malicious user activity` (MaliciousUserActivity), `Compromised account` (CompromisedUser): considere la posibilidad de cambiar el nombre de la enumeración en la API pública en consecuencia, `Malware` (Malware), `Phishing` (Phishing), `Unwanted software` (UnwantedSoftware) y `Other` (Other). <li> <b>Actividad informativa y esperada:</b> `Security test` (SecurityTesting), `Line-of-business application` (LineOfBusinessApplication), `Confirmed activity` (ConfirmedUserActivity): considere la posibilidad de cambiar el nombre de la enumeración en la API pública en consecuencia y `Other` (Otros). <li>  <b>Falso positivo:</b> `Not malicious` (Limpiar): considere la posibilidad de cambiar el nombre de la enumeración en la API pública en consecuencia, `Not enough data to validate` (InsufficientData) y `Other` (Other).
+comentario | Cadena | Comentario que se va a agregar a las alertas especificadas.
 
 >[!NOTE]
->Alrededor del 29 de agosto de 2022, los valores de determinación de alertas admitidos anteriormente ("Apt" y "SecurityPersonnel") quedarán en desuso y ya no estarán disponibles a través de la API.
+>Alrededor del 29 de agosto de 2022, los valores de determinación de alertas admitidos anteriormente ("Apt" y "SecurityPersonnel") estarán en desuso y ya no estarán disponibles a través de la API.
 
 ## <a name="response"></a>Respuesta
 

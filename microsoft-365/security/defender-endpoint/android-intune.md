@@ -12,16 +12,17 @@ ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection:
-- m365-security-compliance
+- m365-security
+- tier3
 ms.topic: conceptual
 ms.subservice: mde
 search.appverid: met150
-ms.openlocfilehash: 389912b3df98ad23c553f3f24d2c55859116bc4c
-ms.sourcegitcommit: 9b133379196da2b3a4bb311b07ff274f43780f68
+ms.openlocfilehash: 69dbf0631750f90c63d4d21b034e4594b2bfafa6
+ms.sourcegitcommit: b9282493c371d59c2e583b9803825096499b5e2c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/14/2022
-ms.locfileid: "67683811"
+ms.lasthandoff: 09/29/2022
+ms.locfileid: "68157554"
 ---
 # <a name="deploy-microsoft-defender-for-endpoint-on-android-with-microsoft-intune"></a>Implementar Microsoft Defender para punto de conexión en Android con Microsoft Intune
 
@@ -85,7 +86,7 @@ Obtenga información sobre cómo implementar Defender para punto de conexión en
 
 1. Una vez instalado Defender para punto de conexión en Android en el dispositivo, verá el icono de aplicación.
 
-   :::image type="content" source="images/7cf9311ad676ec5142002a4d0c2323ca.jpg" alt-text="Icono de ATP de Microsoft Defender que aparece en el panel Búsqueda" lightbox="images/7cf9311ad676ec5142002a4d0c2323ca.jpg":::
+   :::image type="content" source="images/7cf9311ad676ec5142002a4d0c2323ca.jpg" alt-text="Icono de ATP de Microsoft Defender que aparece en el panel Buscar" lightbox="images/7cf9311ad676ec5142002a4d0c2323ca.jpg":::
 
 2. Pulse el icono Microsoft Defender para punto de conexión aplicación y siga las instrucciones en pantalla para completar la incorporación de la aplicación. Los detalles incluyen la aceptación por parte del usuario final de los permisos de Android requeridos por Defender para punto de conexión en Android.
 
@@ -127,7 +128,7 @@ Siga los pasos siguientes para agregar Microsoft Defender para punto de conexió
     De forma predeterminada, Google Play administrado selecciona **Mantener aprobado cuando la aplicación solicita nuevos permisos**.
 
     > [!div class="mx-imgBorder"]
-    > :::image type="content" source="images/ffecfdda1c4df14148f1526c22cc0236.png" alt-text=" Página de finalización de la configuración de la configuración de aprobación en el portal de Microsoft Defender 365" lightbox="images/ffecfdda1c4df14148f1526c22cc0236.png":::
+    > :::image type="content" source="images/ffecfdda1c4df14148f1526c22cc0236.png" alt-text="Página de finalización de la configuración de la configuración de aprobación en el portal de Microsoft Defender 365" lightbox="images/ffecfdda1c4df14148f1526c22cc0236.png":::
 
 6. Una vez realizada la selección de control de permisos, seleccione **Sincronizar** para sincronizar Microsoft Defender para punto de conexión con la lista de aplicaciones.
 
@@ -136,7 +137,7 @@ Siga los pasos siguientes para agregar Microsoft Defender para punto de conexió
 
 7. La sincronización se completará en unos minutos.
 
-    :::image type="content" source="images/9fc07ffc150171f169dc6e57fe6f1c74.png" alt-text="Panel de estado de sincronización de aplicaciones en la página Aplicaciones de Android en el portal de Microsoft Defender 365"  lightbox="images/9fc07ffc150171f169dc6e57fe6f1c74.png":::
+    :::image type="content" source="images/9fc07ffc150171f169dc6e57fe6f1c74.png" alt-text="Panel de estado de sincronización de aplicaciones en la página Aplicaciones de Android del portal de Microsoft Defender 365"  lightbox="images/9fc07ffc150171f169dc6e57fe6f1c74.png":::
 
 8. Seleccione el botón **Actualizar** en la pantalla Aplicaciones de Android y Microsoft Defender para punto de conexión debe estar visible en la lista de aplicaciones.
 
@@ -152,8 +153,8 @@ Siga los pasos siguientes para agregar Microsoft Defender para punto de conexió
 
         - Nombre: Microsoft Defender para punto de conexión.
         - Elija **Android Enterprise** como plataforma.
-        - Elija **Perfil de trabajo solo** como Tipo de perfil.
-        - Haga clic en **Seleccionar aplicación**, elija **ATP de Microsoft Defender**, seleccione **Aceptar** y, a continuación, **Siguiente**.
+        - Elija **Solo perfil de trabajo de propiedad personal** o perfil de **trabajo totalmente administrado, dedicado y corporativo solo** como tipo de perfil.
+        - Haga clic en **Seleccionar aplicación**, elija **Microsoft Defender**, seleccione **Aceptar** y, a continuación, **Siguiente**.
 
         :::image type="content" source="images/android-create-app.png" alt-text=" Captura de pantalla del panel de detalles de la aplicación asociada." lightbox="images/android-create-app.png":::
      
@@ -164,7 +165,7 @@ Siga los pasos siguientes para agregar Microsoft Defender para punto de conexió
        - **Concesión automática** : se aprueba automáticamente sin notificar al usuario.
        - **Denegación automática** : deniega automáticamente sin notificar al usuario. 
 
-    1. En la página **Configuración** , vaya a la sección **Configuración** y elija **"Usar diseñador de configuración"** en Formato de configuración. 
+    1. Vaya a la sección **Configuración** y elija **"Usar diseñador de configuración"** en Formato de configuración. 
 
        :::image type="content" alt-text="Imagen de la directiva de configuración de la aplicación de creación de Android." source="images/configurationformat.png" lightbox="images/configurationformat.png":::
 
@@ -182,12 +183,10 @@ Siga los pasos siguientes para agregar Microsoft Defender para punto de conexió
 
     1. En la página **Revisar y crear** que aparece a continuación, revise toda la información y, a continuación, seleccione **Crear**.
 
-        La directiva de configuración de la aplicación para Defender para punto de conexión que autograna el permiso de almacenamiento ahora se asigna al grupo de usuarios seleccionado.
+        La directiva de configuración de la aplicación para Defender para punto de conexión ahora se asigna al grupo de usuarios seleccionado.
 
-        > [!div class="mx-imgBorder"]
-        > :::image type="content" source="images/android-review-create.png" alt-text="La pestaña Revisar y crear de la página Crear directiva de configuración de aplicaciones" lightbox="images/android-review-create.png":::
 
-10. Seleccione la aplicación **ATP de Microsoft Defender** en la lista \> **Edición de asignaciones de** \> **propiedades**\>.
+10. Seleccione **Microsoft Defender** aplicación en la lista \> **Edición** **de asignaciones de** \> **propiedades**\>.
 
     :::image type="content" source="images/mda-properties.png" alt-text="La opción Editar de la página Propiedades" lightbox="images/mda-properties.png":::
 
@@ -269,7 +268,7 @@ El perfil de configuración del dispositivo ahora se asigna al grupo de usuarios
 
 ### <a name="set-up-microsoft-defender-in-personal-profile"></a>Configuración de Microsoft Defender en perfil personal
 
-Los administradores pueden ir al [Centro de administración de Microsoft Endpoint Management](https://endpoint.microsoft.com) para configurar y configurar la compatibilidad con Microsoft Defender en perfiles personales siguiendo estos pasos:
+Los administradores pueden ir al [Centro de administración de Microsoft Endpoint Management](https://endpoint.microsoft.com) para configurar y configurar Microsoft Defender compatibilidad con perfiles personales siguiendo estos pasos:
 
 1. Vaya a **Aplicaciones> Directivas de configuración de aplicaciones** y haga clic en **Agregar**. Seleccione **Dispositivos administrados**.
 
@@ -281,12 +280,12 @@ Los administradores pueden ir al [Centro de administración de Microsoft Endpoin
     > [!div class="mx-imgBorder"]
     > ![Imagen de la directiva de configuración de nomenclatura.](images/selectapp.png)
 
-1. En la página de configuración, en **"Formato de configuración"**, seleccione **"Usar diseñador de configuración"** y haga clic en **Agregar**. En la lista de configuraciones que se muestran, seleccione **"Microsoft Defender en perfil personal"**.
+1. En la página de configuración, en **"Formato de configuración"**, seleccione **"Usar diseñador de configuración"** y haga clic en **Agregar**. En la lista de configuraciones que se muestran, seleccione **"Microsoft Defender en Perfil personal"**.
 
     > [!div class="mx-imgBorder"]
     > ![Imagen de la configuración del perfil personal.](images/addconfiguration.png)
 
-1. Se mostrará la configuración seleccionada. Cambie el **valor de configuración a 1** para habilitar los perfiles personales de soporte técnico de Microsoft Defender. Aparecerá una notificación informando al administrador sobre lo mismo. Haga clic en **Siguiente**.
+1. Se mostrará la configuración seleccionada. Cambie el **valor de configuración a 1** para habilitar Microsoft Defender admitir perfiles personales. Aparecerá una notificación informando al administrador sobre lo mismo. Haga clic en **Siguiente**.
 
     > [!div class="mx-imgBorder"]
     > ![Imagen del cambio del valor de configuración.](images/changeconfigvalue.png)
@@ -300,11 +299,11 @@ Los administradores también pueden configurar **controles de privacidad** desde
 
 Las organizaciones pueden comunicarse con sus usuarios para proteger el perfil personal con Microsoft Defender en sus dispositivos BYOD inscritos.
 
-- Requisito previo: Microsoft Defender ya debe estar instalado y activo en el perfil de trabajo para habilitar Microsoft Defender en perfiles personales.
+- Requisito previo: Microsoft Defender debe estar ya instalado y activo en el perfil de trabajo para habilitar Microsoft Defender en perfiles personales.
 
 ### <a name="to-complete-onboarding-a-device"></a>Para completar la incorporación de un dispositivo
 
-1. Instale la aplicación de Microsoft Defender en un perfil personal con una cuenta personal de Google Play Store.
+1. Instale la aplicación Microsoft Defender en un perfil personal con una cuenta personal de Google Play Store.
 2. Instale la aplicación portal de empresa en el perfil personal. No se requiere ningún inicio de sesión.
 3. Cuando un usuario inicie la aplicación, verá la pantalla de inicio de sesión. **Inicie sesión solo con una cuenta corporativa**.
 4. En un inicio de sesión correcto, los usuarios verán las siguientes pantallas:

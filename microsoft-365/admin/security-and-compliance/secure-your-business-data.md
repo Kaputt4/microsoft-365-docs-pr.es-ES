@@ -6,7 +6,7 @@ ms.author: deniseb
 author: denisebmsft
 manager: dansimp
 audience: Admin
-ms.topic: article
+ms.topic: conceptual
 ms.service: microsoft-365-security
 ms.subservice: other
 ms.date: 09/15/2022
@@ -15,6 +15,8 @@ ms.collection:
 - highpri
 - Adm_O365
 - Adm_TOC
+- m365-security
+- tier1
 ms.custom:
 - VSBFY23
 - MSStore_Link
@@ -30,15 +32,15 @@ search.appverid:
 - BCS160
 - MET150
 - MOE150
-description: Procedimientos recomendados para proteger su empresa frente a ransomware, phishing y direcciones URL o datos adjuntos malintencionados.
-ms.openlocfilehash: f9f28ec270a17761e7fd6fe1f7a06dfcc42f6946
-ms.sourcegitcommit: c29af68260ba8676083674b3c70209bff2c2e362
+description: Procedimientos recomendados para proteger su pequeña o mediana empresa frente a ransomware, phishing y direcciones URL o datos adjuntos malintencionados.
+ms.openlocfilehash: d90e2cf8f85ba812c59aac5033c2fb8c9bee8ab1
+ms.sourcegitcommit: 4dfb5de8c61847b8ddd10410ad20d34860eed8f6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/16/2022
-ms.locfileid: "67742791"
+ms.lasthandoff: 09/28/2022
+ms.locfileid: "68117515"
 ---
-# <a name="top-10-ways-to-secure-your-business---best-practices-to-follow"></a>10 maneras principales de proteger su negocio: procedimientos recomendados a seguir
+# <a name="top-10-ways-to-secure-your-data---best-practices-for-small-and-medium-sized-businesses"></a>10 formas principales de proteger los datos: procedimientos recomendados para pequeñas y medianas empresas
 
 **Se aplica a**
 
@@ -49,7 +51,7 @@ ms.locfileid: "67742791"
 > [!NOTE]
 > Este artículo está diseñado para pequeñas y medianas empresas con hasta 300 usuarios. Si es una organización empresarial, consulte Implementación de [la protección contra ransomware para el inquilino de Microsoft 365](../../solutions/ransomware-protection-microsoft-365.md).
 
-Los planes de Microsoft 365 para empresas incluyen funcionalidades de seguridad, como antifishing, antispam y protección antimalware. Microsoft 365 Empresa Premium incluye aún más funcionalidades, como la seguridad de dispositivos, la protección contra amenazas avanzada y la protección de la información. En este artículo se describe cómo proteger su empresa y [se comparan las funcionalidades de Los planes empresariales de Microsoft 365](#comparing-microsoft-365-for-business-plans).
+Los planes de Microsoft 365 para empresas incluyen funcionalidades de seguridad, como antifishing, antispam y protección antimalware. Microsoft 365 Empresa Premium incluye aún más funcionalidades, como la seguridad de dispositivos, la protección contra amenazas avanzada y la protección de la información. En este artículo se describe cómo proteger los datos con Microsoft 365 para empresas. En este artículo también se incluye una sección en la que puede [comparar las funcionalidades de Los planes empresariales de Microsoft 365](#comparing-microsoft-365-for-business-plans).
 
 :::image type="content" source="../../media/top-10-ways-secure-data.png" alt-text="Diagrama en el que se enumeran las 10 principales formas de proteger los datos empresariales.":::
 

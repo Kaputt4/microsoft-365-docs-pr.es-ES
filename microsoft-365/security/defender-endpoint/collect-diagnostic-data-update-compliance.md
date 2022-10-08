@@ -1,7 +1,7 @@
 ---
 title: Recopilación de datos de diagnóstico para las actualizaciones de cumplimiento y Antivirus de Microsoft Defender
-description: Use una herramienta para recopilar datos para solucionar problemas de cumplimiento de actualizaciones al usar el complemento Evaluación del antivirus de Microsoft Defender.
-keywords: solución de problemas, error, corrección, cumplimiento de actualizaciones, oms, supervisión, informe, Antivirus de Microsoft Defender, Antivirus de Microsoft Defender
+description: Use una herramienta para recopilar datos para solucionar problemas de cumplimiento de actualizaciones al usar el complemento Microsoft Defender Antivirus Assessment.
+keywords: solucionar problemas, errores, corregir, actualizar el cumplimiento, oms, supervisar, informar, Microsoft Defender ANTIVIRUS, Microsoft Defender Antivirus
 search.product: eADQiWindows 10XVcnh
 ms.service: microsoft-365-security
 ms.mktglfcycl: manage
@@ -16,16 +16,18 @@ ms.reviewer: ''
 manager: dansimp
 ms.subservice: mde
 ms.topic: article
-ms.collection: M365-security-compliance
+ms.collection:
+- m365-security
+- tier2
 search.appverid: met150
-ms.openlocfilehash: 0cf46c7cdb7b36d07fafb87e1ad5b114e66ec51b
-ms.sourcegitcommit: 9b133379196da2b3a4bb311b07ff274f43780f68
+ms.openlocfilehash: ac85a1860fa86a05cf4aed6db6ced0e2ce84b904
+ms.sourcegitcommit: b9282493c371d59c2e583b9803825096499b5e2c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/14/2022
-ms.locfileid: "67703190"
+ms.lasthandoff: 09/29/2022
+ms.locfileid: "68157444"
 ---
-# <a name="collect-update-compliance-diagnostic-data-for-microsoft-defender-antivirus-assessment"></a>Recopilación de datos de diagnóstico de cumplimiento de actualizaciones para la evaluación del Antivirus de Microsoft Defender
+# <a name="collect-update-compliance-diagnostic-data-for-microsoft-defender-antivirus-assessment"></a>Recopilación de datos de diagnóstico de cumplimiento de actualizaciones para la evaluación de Microsoft Defender Antivirus
 
 
 **Se aplica a:**
@@ -33,9 +35,9 @@ ms.locfileid: "67703190"
 - [Microsoft Defender para punto de conexión Plan 1](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft Defender para punto de conexión Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 
-En este artículo se describe cómo recopilar datos de diagnóstico que pueden usar los equipos de ingeniería y soporte técnico de Microsoft para ayudar a solucionar problemas que puede encontrar al usar la sección Evaluación del antivirus de Microsoft Defender en el complemento De cumplimiento de actualizaciones.
+En este artículo se describe cómo recopilar datos de diagnóstico que pueden usar los equipos de ingeniería y soporte técnico de Microsoft para ayudar a solucionar problemas que puede encontrar al usar la sección evaluación de antivirus de Microsoft Defender en el complemento De cumplimiento de actualizaciones.
 
-Antes de intentar este proceso, asegúrese de que ha leído [Solución de problemas de informes del Antivirus de Microsoft Defender](troubleshoot-reporting.md), ha cumplido todos los requisitos previos necesarios y ha tomado cualquier otro paso de solución de problemas sugerido.
+Antes de intentar este proceso, asegúrese de que ha leído [Solución de problemas Microsoft Defender informes de Antivirus](troubleshoot-reporting.md), ha cumplido todos los requisitos previos necesarios y ha tomado cualquier otro paso sugerido de solución de problemas.
 
 En al menos dos dispositivos que no informan ni aparecen en Cumplimiento de actualizaciones, obtenga el archivo de diagnóstico .cab siguiendo estos pasos:
 
@@ -73,4 +75,4 @@ En al menos dos dispositivos que no informan ni aparecen en Cumplimiento de actu
 
 ## <a name="see-also"></a>Vea también
 
-- [Solución de problemas de informes del Antivirus de Microsoft Defender](troubleshoot-reporting.md)
+- [Solución de problemas de informes de antivirus de Microsoft Defender](troubleshoot-reporting.md)

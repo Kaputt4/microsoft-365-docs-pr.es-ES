@@ -12,18 +12,18 @@ search.appverid:
 - MET150
 - MOE150
 ms.assetid: ''
-ms.collection: m365-security-compliance
+ms.collection: m365-security
 ms.custom:
 - seo-marvel-apr2020
 description: Los administradores pueden obtener información sobre las consideraciones de implementación y las preguntas más frecuentes sobre la simulación de ataques y el entrenamiento en organizaciones de Microsoft 365 E5 o Microsoft Defender para Office 365 Plan 2.
 ms.subservice: mdo
 ms.service: microsoft-365-security
-ms.openlocfilehash: f0a4bf3f408b48a4feb48ae4fad39cfe1e11420d
-ms.sourcegitcommit: 10e6abe740e27000e223378eb17d657a47555fa8
+ms.openlocfilehash: 75dfa3281785dc06906ed66384e63d3867f617b2
+ms.sourcegitcommit: 12af9e8e3a6eaa090fda9e98ccb831dff65863a4
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/31/2022
-ms.locfileid: "67480611"
+ms.lasthandoff: 09/27/2022
+ms.locfileid: "68088715"
 ---
 # <a name="attack-simulation-training-deployment-considerations-and-faq"></a>Implementación y preguntas más frecuentes del aprendizaje de simulación de ataques  
 
@@ -185,7 +185,7 @@ R: No. Actualmente, no se admiten simulaciones entre inquilinos. Compruebe que t
 
 ### <a name="q-how-does-region-aware-delivery-work"></a>P: ¿Cómo funciona la entrega con reconocimiento de la región?
 
-R: La entrega compatible con la región usa el atributo TimeZone del buzón de correo del usuario de destino y la lógica "no antes" para determinar cuándo entregar el mensaje. Por ejemplo, tenga en cuenta el siguiente escenario:
+R: La entrega compatible con la región usa el atributo TimeZone del buzón de correo del usuario de destino y la lógica "no antes" para determinar cuándo entregar el mensaje. Por ejemplo, imagine la situación siguiente:
 
 - A las 7:00 am en la zona horaria del Pacífico (UTC-8), un administrador crea y programa una campaña para que comience a las 9:00 AM del mismo día.
 - UserA está en la zona horaria oriental (UTC-5).

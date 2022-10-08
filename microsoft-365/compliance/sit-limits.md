@@ -11,18 +11,19 @@ ms.service: O365-seccomp
 ms.date: ''
 ms.localizationpriority: medium
 ms.collection:
-- M365-security-compliance
+- tier1
+- purview-compliance
 search.appverid:
 - MOE150
 - MET150
 description: Más información sobre el número de instancias y otros límites de tipos de información confidencial
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 4a1f01e26fa36496affbc696befaba60effa6c08
-ms.sourcegitcommit: 10e6abe740e27000e223378eb17d657a47555fa8
+ms.openlocfilehash: a09a2b81d04e706996cdee1fcd2a19a56f6aa990
+ms.sourcegitcommit: 4dfb5de8c61847b8ddd10410ad20d34860eed8f6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/31/2022
-ms.locfileid: "67478000"
+ms.lasthandoff: 09/28/2022
+ms.locfileid: "68117559"
 ---
 # <a name="sensitive-information-type-limits"></a>Límites de tipos de información confidencial
 

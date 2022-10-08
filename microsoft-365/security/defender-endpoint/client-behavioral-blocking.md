@@ -15,14 +15,16 @@ ms.localizationpriority: medium
 ms.custom:
 - next-gen
 - edr
-ms.collection: m365-security-compliance
+ms.collection:
+- m365-security
+- tier2
 search.appverid: met150
-ms.openlocfilehash: 4eef4374a9ec528204ea3ba9431e2cbe105a5104
-ms.sourcegitcommit: c29af68260ba8676083674b3c70209bff2c2e362
+ms.openlocfilehash: 6a58cef549f8a3e9453d923f5db08503eb8e727d
+ms.sourcegitcommit: b9282493c371d59c2e583b9803825096499b5e2c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/16/2022
-ms.locfileid: "67740190"
+ms.lasthandoff: 09/29/2022
+ms.locfileid: "68151593"
 ---
 # <a name="client-behavioral-blocking"></a>Contención y bloqueo de comportamiento del cliente
 
@@ -46,7 +48,7 @@ La protección antivirus funciona mejor cuando se empareja con la protección en
 
 ## <a name="how-client-behavioral-blocking-works"></a>Funcionamiento del bloqueo del comportamiento del cliente
 
-[Antivirus de Microsoft Defender](microsoft-defender-antivirus-in-windows-10.md) puede detectar comportamientos sospechosos, código malintencionado, ataques sin archivos y en memoria, etc. en un dispositivo. Cuando se detectan comportamientos sospechosos, Antivirus de Microsoft Defender supervisa y envía esos comportamientos sospechosos y sus árboles de procesos al servicio de protección en la nube. El aprendizaje automático diferencia entre las aplicaciones malintencionadas y los buenos comportamientos en milisegundos y clasifica cada artefacto. En tiempo casi real, en cuanto se detecta que un artefacto es malintencionado, se bloquea en el dispositivo.
+[Microsoft Defender Antivirus](microsoft-defender-antivirus-in-windows-10.md) puede detectar comportamientos sospechosos, código malintencionado, ataques sin archivos y en memoria, etc. en un dispositivo. Cuando se detectan comportamientos sospechosos, Microsoft Defender Antivirus supervisa y envía esos comportamientos sospechosos y sus árboles de procesos al servicio de protección en la nube. El aprendizaje automático diferencia entre las aplicaciones malintencionadas y los buenos comportamientos en milisegundos y clasifica cada artefacto. En tiempo casi real, en cuanto se detecta que un artefacto es malintencionado, se bloquea en el dispositivo.
 
 Cada vez que se detecta un comportamiento sospechoso, se genera una [alerta](alerts-queue.md) y es visible mientras se detectó y detuvo el ataque; las alertas, como una "alerta de acceso inicial", se desencadenan y aparecen en el [portal de Microsoft 365 Defender](/microsoft-365/security/defender/microsoft-365-defender) (anteriormente Microsoft 365 Defender).
 

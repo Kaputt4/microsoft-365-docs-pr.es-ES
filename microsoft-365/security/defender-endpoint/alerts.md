@@ -11,17 +11,19 @@ author: mjcaparas
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
-ms.collection: M365-security-compliance
+ms.collection:
+- m365-security
+- tier1
 ms.topic: article
 ms.subservice: mde
 ms.custom: api
 search.appverid: met150
-ms.openlocfilehash: 9b30c6180bbdffa2538bb78f2a4d0a75bdc8266b
-ms.sourcegitcommit: 9b133379196da2b3a4bb311b07ff274f43780f68
+ms.openlocfilehash: 551c29054747498a1728399b280381cfa7331f23
+ms.sourcegitcommit: b9282493c371d59c2e583b9803825096499b5e2c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/14/2022
-ms.locfileid: "67701662"
+ms.lasthandoff: 09/29/2022
+ms.locfileid: "68157510"
 ---
 # <a name="alert-resource-type"></a>Tipo de recurso de alerta
 
@@ -72,8 +74,8 @@ ms.locfileid: "67701662"
 |relatedUser|Cadena|Detalles del usuario relacionados con una alerta específica.|
 |severity|Enum|Gravedad de la alerta. Los valores posibles son: "UnSpecified", "Informational", "Low", "Medium" y "High".|
 |status|Enum|Especifica el estado actual de la alerta. Los valores posibles son: "Unknown", "New", "InProgress" y "Resolved".|
-|classification|Enumeración que acepta valores NULL|Especificación de la alerta. Los valores posibles son: "Unknown", "FalsePositive", "TruePositive".|
-|Determinación|Enumeración que acepta valores NULL|Especifica la determinación de la alerta. Los valores posibles son: "NotAvailable", "Apt", "Malware", "SecurityPersonnel", "SecurityTesting", "UnwantedSoftware", "Other".|
+|classification|Enumeración que acepta valores NULL|Especificación de la alerta. Los valores posibles son: `TruePositive`, `Informational, expected activity`y `FalsePositive`.|
+|Determinación|Enumeración que acepta valores NULL|Especifica la determinación de la alerta. <p>Los valores de determinación posibles para cada clasificación son: <br><li> <b>Verdadero positivo</b>: `Multistage attack` (MultiStagedAttack), `Malicious user activity` (MaliciousUserActivity), `Compromised account` (CompromisedUser): considere la posibilidad de cambiar el nombre de la enumeración en la API pública en consecuencia, `Malware` (Malware), `Phishing` (Phishing), `Unwanted software` (UnwantedSoftware) y `Other` (Other). <li> <b>Actividad informativa y esperada:</b> `Security test` (SecurityTesting), `Line-of-business application` (LineOfBusinessApplication), `Confirmed activity` (ConfirmedUserActivity): considere la posibilidad de cambiar el nombre de la enumeración en la API pública en consecuencia y `Other` (Otros). <li>  <b>Falso positivo:</b> `Not malicious` (Limpiar): considere la posibilidad de cambiar el nombre de la enumeración en la API pública en consecuencia, `Not enough data to validate` (InsufficientData) y `Other` (Other).|
 |categoría|Cadena|Categoría de la alerta.|
 |detectionSource|Cadena|Origen de detección.|
 |threatFamilyName|Cadena|Familia de amenazas.|
@@ -86,7 +88,7 @@ ms.locfileid: "67701662"
 |Evidencia|Lista de pruebas de alerta|Evidencia relacionada con la alerta. Vea el ejemplo abajo.|
 
 >[!NOTE]
->Alrededor del 29 de agosto de 2022, los valores de determinación de alertas admitidos anteriormente ("Apt" y "SecurityPersonnel") quedarán en desuso y ya no estarán disponibles a través de la API.
+>Alrededor del 29 de agosto de 2022, los valores de determinación de alertas admitidos anteriormente ("Apt" y "SecurityPersonnel") estarán en desuso y ya no estarán disponibles a través de la API.
 
 ### <a name="response-example-for-getting-single-alert"></a>Ejemplo de respuesta para obtener una única alerta:
 

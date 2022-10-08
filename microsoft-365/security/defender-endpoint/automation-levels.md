@@ -14,18 +14,18 @@ ms.date: 08/22/2022
 manager: dansimp
 audience: ITPro
 ms.collection:
-- m365-security-compliance
-- m365initiative-defender-endpoint
+- m365-security
+- tier2
 ms.topic: conceptual
 ms.reviewer: ramarom, evaldm, isco, mabraitm, chriggs
 ms.custom: AIR
 search.appverid: met150
-ms.openlocfilehash: 1113bfe2707a92601317d6d5d7508226d953f264
-ms.sourcegitcommit: 078149c9645ce220911ccd6ce54f984a4c92ce53
+ms.openlocfilehash: 4f00523c62846f5341fe2c17a5fd26ea255d60b5
+ms.sourcegitcommit: b9282493c371d59c2e583b9803825096499b5e2c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/20/2022
-ms.locfileid: "67812576"
+ms.lasthandoff: 09/29/2022
+ms.locfileid: "68151615"
 ---
 # <a name="automation-levels-in-automated-investigation-and-remediation-capabilities"></a>Niveles de automatización en las funcionalidades automatizadas de investigación y corrección
 
@@ -43,6 +43,9 @@ Las funcionalidades de investigación y corrección automatizadas (AIR) en Micro
 
 > [!TIP]
 > Para obtener los mejores resultados, se recomienda usar la automatización completa al [configurar AIR](configure-automated-investigations-remediation.md). Los datos recopilados y analizados durante el último año muestran que los clientes que usan la automatización completa han quitado un 40 % más muestras de malware de alta confianza que los clientes que usan niveles inferiores de automatización. La automatización completa puede ayudar a liberar los recursos de operaciones de seguridad para centrarse más en sus iniciativas estratégicas.
+
+> [!NOTE]
+> La creación de grupos de dispositivos se admite en El plan 1 y el plan 2 de Defender para punto de conexión.
 
 ## <a name="levels-of-automation"></a>Niveles de automatización
 

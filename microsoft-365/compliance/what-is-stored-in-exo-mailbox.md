@@ -1,5 +1,6 @@
 ---
 title: Contenido almacenado en buzones de Exchange Online
+description: El contenido generado por las aplicaciones basadas en la nube en Microsoft 365 se almacena o asocia con el buzón de Exchange Online de un usuario. Este contenido se puede buscar mediante las herramientas de Exhibición de documentos electrónicos de Microsoft.
 f1.keywords:
 - NOCSH
 ms.author: robmazz
@@ -9,19 +10,20 @@ audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
 ms.localizationpriority: medium
-ms.collection: M365-security-compliance
+ms.collection:
+- tier1
+- purview-compliance
+- ediscovery
 search.appverid:
 - MOE150
 - MED150
 - MET150
-ms.assetid: ''
-description: El contenido generado por las aplicaciones basadas en la nube en Microsoft 365 se almacena o asocia con el buzón de Exchange Online de un usuario. Este contenido se puede buscar mediante las herramientas de Exhibición de documentos electrónicos de Microsoft.
-ms.openlocfilehash: 10caceac9bd5d3fdc499ea7132acecc4b72ff16f
-ms.sourcegitcommit: 433f5b448a0149fcf462996bc5c9b45d17bd46c6
+ms.openlocfilehash: 47fef9022ecfc5ef2d3a36de637ab4e48c63358f
+ms.sourcegitcommit: 4dfb5de8c61847b8ddd10410ad20d34860eed8f6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/20/2022
-ms.locfileid: "67825772"
+ms.lasthandoff: 09/28/2022
+ms.locfileid: "68121101"
 ---
 # <a name="content-stored-in-exchange-online-mailboxes-for-ediscovery"></a>Contenido almacenado en buzones de Exchange Online para eDiscovery
 
