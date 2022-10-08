@@ -12,16 +12,17 @@ ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection:
-- m365-security-compliance
+- m365-security
+- tier3
 ms.topic: reference
 ms.subservice: mde
 search.appverid: met150
-ms.openlocfilehash: 3e8b7829a899f3be851ca1d0640eddcce6d00a81
-ms.sourcegitcommit: 9b133379196da2b3a4bb311b07ff274f43780f68
+ms.openlocfilehash: 66b34f4b158bc23467a0f147e57330e7ee736f5a
+ms.sourcegitcommit: 4e42bafee965446f44f7f57d1defed2b9b24fce8
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/14/2022
-ms.locfileid: "67689993"
+ms.lasthandoff: 09/30/2022
+ms.locfileid: "68224786"
 ---
 # <a name="whats-new-in-microsoft-defender-for-endpoint-on-mac"></a>Novedades de Microsoft Defender para punto de conexión en Mac
 
@@ -275,9 +276,9 @@ Para obtener más información sobre Microsoft Defender para punto de conexión 
 
 **Novedades**
 
-- Se ha cambiado el nombre de la aplicación de "ATP de Microsoft Defender" a "Microsoft Defender". Los usuarios finales observarán los siguientes cambios:
+- Se ha cambiado el nombre de la aplicación de "Microsoft Defender ATP" a "Microsoft Defender". Los usuarios finales observarán los siguientes cambios:
 - La ruta de instalación de la aplicación se ha cambiado de `/Application/Microsoft Defender ATP.app` a `/Applications/Microsoft Defender.app`.
-- Dentro de la experiencia del usuario, las apariciones de "ATP de Microsoft Defender" se han reemplazado por "Microsoft Defender"
+- Dentro de la experiencia del usuario, las repeticiones de "Microsoft Defender ATP" se han reemplazado por "Microsoft Defender"
 - Se ha resuelto un problema por el que algunas aplicaciones VPN no se podían conectar debido al filtro de contenido de red que se distribuye con Microsoft Defender para punto de conexión para Mac
 - Se ha corregido un problema detectado en macOS 12.2 beta 2 en el que no se pudo abrir el paquete de instalación debido a un cambio en el sistema operativo (SO) que impide la instalación de paquetes con ciertas características. Aunque parece que este cambio del sistema operativo no está incluido en la versión final de macOS 12.2, es probable que se vuelva a introducir en una versión futura de macOS. Por lo tanto, animamos a todos los administradores empresariales a actualizar el paquete de Microsoft Defender para punto de conexión en su consola de administración a esta versión del producto (o a una versión más reciente).
 - Se ha corregido un problema detectado en algunos dispositivos M1 en los que el producto se bloqueaba con definiciones antimalware no válidas y no se podía actualizar correctamente a un conjunto de definiciones de trabajo.

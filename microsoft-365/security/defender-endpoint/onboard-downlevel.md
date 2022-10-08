@@ -6,21 +6,23 @@ ms.service: microsoft-365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
-ms.author: macapara
-author: mjcaparas
+ms.author: siosulli
+author: siosulli
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
-ms.collection: M365-security-compliance
+ms.collection:
+- m365-security
+- tier2
 ms.topic: article
 ms.subservice: mde
 search.appverid: met150
-ms.openlocfilehash: 9a06824d606cc84e5e552f99a2d2d0b9c0652e04
-ms.sourcegitcommit: 9b133379196da2b3a4bb311b07ff274f43780f68
+ms.openlocfilehash: ac09bb1478ea3b8a0dea18ad38388d5960a18240
+ms.sourcegitcommit: 4e42bafee965446f44f7f57d1defed2b9b24fce8
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/14/2022
-ms.locfileid: "67692055"
+ms.lasthandoff: 09/30/2022
+ms.locfileid: "68231778"
 ---
 # <a name="onboard-previous-versions-of-windows"></a>Incorporar versiones anteriores de Windows
 
@@ -47,10 +49,10 @@ Para incorporar puntos de conexión de cliente de Windows de nivel inferior a De
 - [Configuración y actualización de clientes System Center Endpoint Protection](#configure-and-update-system-center-endpoint-protection-clients)
 - [Instalación y configuración de Microsoft Monitoring Agent (MMA) para informar de los datos del sensor](#install-and-configure-microsoft-monitoring-agent-mma)
 
-Para Windows Server 2008 R2 SP1, tiene la opción de [incorporarse a través de Microsoft Defender for Cloud](#onboard-windows-servers-through-microsoft-defender-for-cloud).
+Para Windows Server 2008 R2 SP1, tiene la opción de [incorporar a través de Microsoft Defender para la nube](#onboard-windows-servers-through-microsoft-defender-for-cloud).
 
 > [!NOTE]
-> Se requiere una licencia de servidor independiente de Defender para punto de conexión, por nodo, para incorporar un servidor de Windows a través de Microsoft Monitoring Agent (opción 1). Como alternativa, se requiere una licencia de Microsoft Defender para servidores, por nodo, para incorporar un servidor de Windows a través de Microsoft Defender for Cloud (opción 2), consulte [Características admitidas disponibles en Microsoft Defender for Cloud](/azure/defender-for-cloud/supported-machines-endpoint-solutions-clouds-servers).
+> Se requiere una licencia de servidor independiente de Defender para punto de conexión, por nodo, para incorporar un servidor de Windows a través de Microsoft Monitoring Agent (opción 1). Como alternativa, se requiere una licencia de Microsoft Defender para servidores, por nodo, para incorporar un servidor Windows a través de Microsoft Defender for Cloud (opción 2), consulte [Características admitidas disponibles en Microsoft Defender para la nube](/azure/defender-for-cloud/supported-machines-endpoint-solutions-clouds-servers).
 
 > [!TIP]
 > Después de incorporar el dispositivo, puede optar por ejecutar una prueba de detección para comprobar que está incorporado correctamente al servicio. Para obtener más información, consulte [Ejecución de una prueba de detección en un punto de conexión de Defender para punto de conexión recién incorporado](run-detection-test.md).
@@ -66,7 +68,7 @@ Los pasos siguientes son necesarios para habilitar esta integración:
 
 - Instalación de la actualización de la [plataforma antimalware de enero de 2017 para clientes de Endpoint Protection](https://support.microsoft.com/help/3209361/january-2017-anti-malware-platform-update-for-endpoint-protection-clie)
 - Configuración de la pertenencia del servicio de protección en la nube del cliente SCEP a la configuración **avanzada**
-- Configure la red para permitir conexiones a la nube del Antivirus de Microsoft Defender. Para obtener más información, consulte [Configuración y validación de conexiones de red del Antivirus de Microsoft Defender](/microsoft-365/security/defender-endpoint/configure-network-connections-microsoft-defender-antivirus).
+- Configure la red para permitir conexiones a la nube Microsoft Defender Antivirus. Para obtener más información, consulte [Configuración y validación de conexiones de red Microsoft Defender Antivirus](/microsoft-365/security/defender-endpoint/configure-network-connections-microsoft-defender-antivirus)
 
 ## <a name="install-and-configure-microsoft-monitoring-agent-mma"></a>Instalación y configuración de Microsoft Monitoring Agent (MMA)
 
@@ -137,15 +139,15 @@ Una vez completado, debería ver los servidores de Windows incorporados en el po
 
 2. Seleccione **Windows Server 2008 R2 SP1** como sistema operativo.
 
-3. Haga clic **en Incorporar servidores en Microsoft Defender for Cloud**.
+3. Haga clic **en Incorporar servidores en Microsoft Defender para la nube**.
 
-4. Siga las instrucciones de incorporación de [Microsoft Defender para punto de conexión con Microsoft Defender for Cloud](/azure/security-center/security-center-wdatp) y, si usa Azure ARC, siga las instrucciones de incorporación en [Habilitación de la integración de Microsoft Defender para punto de conexión](/azure/security-center/security-center-wdatp#enabling-the-microsoft-defender-for-endpoint-integration).
+4. Siga las instrucciones de incorporación de [Microsoft Defender para punto de conexión con Microsoft Defender for Cloud](/azure/security-center/security-center-wdatp) y, si usa Azure ARC, siga las instrucciones de incorporación en [Habilitación de Microsoft Defender para punto de conexión integración](/azure/security-center/security-center-wdatp#enabling-the-microsoft-defender-for-endpoint-integration).
 
 Después de completar los pasos de incorporación, deberá [configurar y actualizar System Center Endpoint Protection clientes](#configure-and-update-system-center-endpoint-protection-clients).
 
 > [!NOTE]
 >
-> - Para que la incorporación a través de Microsoft Defender para que los servidores funcionen según lo esperado, el servidor debe tener un área de trabajo y una clave adecuadas configuradas dentro de la configuración del Agente de supervisión de Microsoft (MMA).
+> - Para la incorporación a través de Microsoft Defender para que los servidores funcionen según lo previsto, el servidor debe tener un área de trabajo y una clave adecuadas configuradas dentro de la configuración del Agente de supervisión de Microsoft (MMA).
 > - Una vez configurado, el módulo de administración en la nube adecuado se implementa en la máquina y el proceso del sensor (MsSenseS.exe) se implementará e iniciará.
 > - Esto también es necesario si el servidor está configurado para usar un servidor de puerta de enlace de OMS como proxy.
 
@@ -153,18 +155,18 @@ Después de completar los pasos de incorporación, deberá [configurar y actuali
 
 ## <a name="verify-onboarding"></a>Comprobación de la incorporación
 
-Compruebe que antivirus de Microsoft Defender y Microsoft Defender para punto de conexión están en ejecución. 
+Compruebe que Microsoft Defender Antivirus y Microsoft Defender para punto de conexión están en ejecución. 
 
 > [!NOTE]
-> La ejecución del Antivirus de Microsoft Defender no es necesaria, pero se recomienda. Si otro producto de proveedor de antivirus es la solución de endpoint protection principal, puede ejecutar Antivirus de Defender en modo pasivo. Solo puede confirmar que el modo pasivo está activado después de comprobar que se está ejecutando Microsoft Defender para punto de conexión sensor (SENSE). 
+> No es necesario ejecutar Microsoft Defender Antivirus, pero se recomienda. Si otro producto de proveedor de antivirus es la solución de endpoint protection principal, puede ejecutar Antivirus de Defender en modo pasivo. Solo puede confirmar que el modo pasivo está activado después de comprobar que se está ejecutando Microsoft Defender para punto de conexión sensor (SENSE). 
 
-1. Ejecute el siguiente comando para comprobar que antivirus de Microsoft Defender está instalado:
+1. Ejecute el siguiente comando para comprobar que Microsoft Defender Antivirus está instalado:
 
    ```sc.exe query Windefend```
 
-    Si el resultado es "El servicio especificado no existe como un servicio instalado", deberá instalar el Antivirus de Microsoft Defender. Para obtener más información, consulte [Antivirus de Microsoft Defender en Windows 10](microsoft-defender-antivirus-windows.md).
+    Si el resultado es "El servicio especificado no existe como un servicio instalado", deberá instalar Microsoft Defender Antivirus. Para obtener más información, consulte [Microsoft Defender Antivirus en Windows 10](microsoft-defender-antivirus-windows.md).
 
-    Para obtener información sobre cómo usar directiva de grupo para configurar y administrar el Antivirus de Microsoft Defender en los servidores de Windows, consulte [Uso de directiva de grupo configuración para configurar y administrar el Antivirus de Microsoft Defender](use-group-policy-microsoft-defender-antivirus.md).
+    Para obtener información sobre cómo usar directiva de grupo para configurar y administrar Microsoft Defender Antivirus en los servidores windows, consulte [Uso de directiva de grupo configuración para configurar y administrar Microsoft Defender Antivirus](use-group-policy-microsoft-defender-antivirus.md).
 
 
 2. Ejecute el siguiente comando para comprobar que Microsoft Defender para punto de conexión se está ejecutando:

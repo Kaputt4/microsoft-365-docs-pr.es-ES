@@ -7,9 +7,10 @@ author: kwekua
 manager: scotv
 audience: Admin
 ms.topic: overview
-ms.service: o365-administration
+ms.service: microsoft-365-business
 ms.localizationpriority: medium
 ms.collection:
+- scotvorg
 - highpri
 - M365-subscription-management
 - Adm_O365
@@ -27,12 +28,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Obtén la aplicación Administración de Microsoft 365, tu compañero de la Centro de administración de Microsoft 365 basada en web, para administrar tu organización en línea desde tu teléfono o tableta.
-ms.openlocfilehash: b0934c773df4d9fb2efcb1065d4c279501212c91
-ms.sourcegitcommit: 37e137535c4f70702afe1a5eeaa899c75ee02cfd
+ms.openlocfilehash: 8f3fc892c94e69d6a7090ed5905f420ae7893673
+ms.sourcegitcommit: 0b7070ec119e00e0dafe030bbfbef0ae5c9afa19
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/13/2022
-ms.locfileid: "67662055"
+ms.lasthandoff: 09/29/2022
+ms.locfileid: "68200129"
 ---
 # <a name="about-the-microsoft-365-admin-mobile-app"></a>Acerca de la aplicación móvil Administración de Microsoft 365
 
@@ -78,7 +79,7 @@ Debe ser administrador de una organización de Microsoft 365 para usar la aplica
 
 [Google Play Store](https://play.google.com/store/apps/details?id=com.ms.office365admin&referrer=utm_source%3Ddocsaboutadminapp%26utm_campaign%25docsaboutadminapp).
 
-## <a name="frequently-asked-questions"></a>Preguntas más frecuentes
+## <a name="frequently-asked-questions"></a>Preguntas frecuentes
 
 A continuación, le mostramos las respuestas a algunas preguntas frecuentes.
 

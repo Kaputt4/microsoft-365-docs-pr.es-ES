@@ -11,16 +11,18 @@ author: mjcaparas
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
-ms.collection: M365-security-compliance
+ms.collection:
+- m365-security
+- tier3
 ms.topic: article
 ms.subservice: mde
 search.appverid: met150
-ms.openlocfilehash: c163244cae52455718049195cd198ee403abd522
-ms.sourcegitcommit: 9b133379196da2b3a4bb311b07ff274f43780f68
+ms.openlocfilehash: 749e0a4646a467a0d8c13b6252a902a51bc4f3bc
+ms.sourcegitcommit: 4e42bafee965446f44f7f57d1defed2b9b24fce8
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/14/2022
-ms.locfileid: "67688765"
+ms.lasthandoff: 09/30/2022
+ms.locfileid: "68224434"
 ---
 # <a name="investigate-entities-on-devices-using-live-response"></a>Investigación de entidades en dispositivos mediante respuesta dinámica
 
@@ -95,6 +97,8 @@ Antes de iniciar una sesión en un dispositivo, asegúrese de cumplir los siguie
 - **Asegúrese de que el dispositivo tiene asignado un nivel de corrección de Automation**.
 
   Tendrá que habilitar, al menos, el nivel de corrección mínimo para un grupo de dispositivos determinado. De lo contrario, no podrá establecer una sesión de respuesta dinámica a un miembro de ese grupo.
+  > [!NOTE]
+  > La creación del grupo de dispositivos se admite tanto en El plan 1 de Defender para punto de conexión como en el plan 2. 
 
   Recibirá el siguiente error:
 
@@ -229,7 +233,7 @@ Estos son algunos ejemplos:
 
 ****
 
-|Comando|Qué hace|
+|Get-Help|Qué hace|
 |---|---|
 |`getfile "C:\windows\some_file.exe" &`|Comienza a descargar un archivo denominado *some_file.exe* en segundo plano.|
 |`fg 1234`|Devuelve una descarga con el identificador *de comando 1234* en primer plano.|

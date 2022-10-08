@@ -14,6 +14,8 @@ ms.localizationpriority: high
 ms.collection:
 - M365-Campaigns
 - m365solution-smb
+- highpri
+- tier1
 ms.custom:
 - MiniMaven
 search.appverid:
@@ -21,12 +23,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Configure reuniones en línea con Microsoft Teams en Microsoft Empresa Premium.
-ms.openlocfilehash: 643edb18a7918b01962d8fcd7eadf017bd2d73d8
-ms.sourcegitcommit: c29af68260ba8676083674b3c70209bff2c2e362
+ms.openlocfilehash: 1e00c4abd3f0df54a3621d6d30ff903039889f2d
+ms.sourcegitcommit: 0283c436f3ba61a708b52b57a1955f5ea74376a3
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/16/2022
-ms.locfileid: "67736836"
+ms.lasthandoff: 09/28/2022
+ms.locfileid: "68096509"
 ---
 # <a name="set-up-meetings-with-microsoft-teams"></a>Configurar reuniones con Microsoft Teams
 
@@ -42,8 +44,8 @@ Descargue una infografía en [PDF](https://go.microsoft.com/fwlink/?linkid=20787
 
 Siga estos procedimientos recomendados para las reuniones en línea:
 
-- Programe sus reuniones en línea directamente en Microsoft Teams. Puedes elegir un equipo y un canal, y Teams invitará a los participantes de ese equipo o canal de manera automática.
-- ¿Necesita una reunión improvisada? Si está en un chat individual, elija **Reunirse ahora** para iniciar una videollamada o una llamada de audio con la persona con la que estás chateando.
+- Schedule your online meetings right in Microsoft Teams. You can choose a team and channel, and Teams will invite the participants in that team or channel automatically.
+- Need an impromptu meeting? If you're in a one-on-one chat, choose **Meet now** to start a video or audio call with the person you're chatting with.
 
 ## <a name="schedule-a-meeting"></a>Programar una reunión
 

@@ -13,14 +13,14 @@ ms.localizationpriority: medium
 ms.reviewer: inbadian
 f1.keywords: NOCSH
 ms.collection:
-- M365-security-compliance
-- m365initiative-defender-endpoint
-ms.openlocfilehash: bdc3d7c2f78b1f94c0f65950a8b36519a2e520a6
-ms.sourcegitcommit: 228fa13973bf7c2d91504703fab757f552ae40dd
+- m365-security
+- tier2
+ms.openlocfilehash: 7fa78f808bf8a49c32ddcc7b54b2174beeaaeac0
+ms.sourcegitcommit: 4e42bafee965446f44f7f57d1defed2b9b24fce8
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/01/2022
-ms.locfileid: "67521925"
+ms.lasthandoff: 09/30/2022
+ms.locfileid: "68223120"
 ---
 # <a name="set-up-and-configure-microsoft-defender-for-endpoint-plan-1"></a>Configuración y configuración de Microsoft Defender para punto de conexión Plan 1
 
@@ -55,7 +55,7 @@ En la tabla siguiente se enumeran los requisitos básicos del plan 1 de Defender
 | Requisitos de licencias | Plan 1 de Defender para punto de conexión (independiente o como parte de Microsoft 365 E3 o A3) |
 | Requisitos de los exploradores | Microsoft Edge <br/> Versión 11 de Internet Explorer <br/> Google Chrome |
 | Sistemas operativos | Windows 11, o Windows 10, versión 1709 o posterior <br/>macOS (se admiten las tres versiones más recientes) <br/>iOS <br/>Sistema operativo Android <br/><br/>Tenga en cuenta que la versión independiente del plan 1 de Defender para punto de conexión no incluye licencias de servidor. Para incorporar servidores, necesitará El plan 1 o el plan 2 de Defender para servidores como parte de la oferta de [Defender for Cloud](/azure/defender-for-cloud/defender-for-cloud-introduction) . Para obtener más información. consulte [Información general de Microsoft Defender para servidores](/azure/defender-for-cloud/defender-for-servers-introduction). |
-| Datacenter | Una de las siguientes ubicaciones del centro de datos: <br/>- Unión Europea <br/>- Reino Unido <br/>- Estados Unidos |
+| Datacenter | Una de las siguientes ubicaciones del centro de datos: <br/>- Unión Europea <br/>-Reino Unido <br/>- Estados Unidos |
 
 
 ## <a name="plan-your-deployment"></a>Planear la implementación
@@ -139,7 +139,7 @@ Para configurar la protección de última generación en Microsoft Endpoint Mana
 
 3. Establezca o cambie la configuración del antivirus. ¿Necesita ayuda? Consulte los siguientes recursos: <br/>
 
-   - [Configuración de Windows 10 directiva del Antivirus de Microsoft Defender en Microsoft Intune](/mem/intune/protect/antivirus-microsoft-defender-settings-windows)
+   - [Configuración de Windows 10 Microsoft Defender directiva antivirus en Microsoft Intune](/mem/intune/protect/antivirus-microsoft-defender-settings-windows)
    - [Configuración de Defender para punto de conexión en características de iOS](ios-configure-features.md)
 
 4. Cuando haya terminado de especificar la configuración, elija **Revisar y guardar**.
@@ -275,7 +275,7 @@ Con la protección de red, puede ayudar a proteger su organización contra domin
 
 4. En la pestaña **Aspectos básicos** , asigne un nombre a la directiva y agregue una descripción. Seleccione **Siguiente**. 
 
-5. En la pestaña **Configuración** , expanda **Protección contra vulnerabilidades de seguridad de Microsoft Defender** y, a continuación, expanda **Filtrado de red**.
+5. En la pestaña **Configuración**, expanda **Microsoft Defender Protección contra vulnerabilidades** de seguridad y, a continuación, expanda **Filtrado de red**.
 
    Establezca **Protección de red** en **Habilitar**. (También puede elegir **Auditar** para ver cómo funcionará la protección de red en el entorno al principio).
 
@@ -359,17 +359,17 @@ Para configurar los valores básicos del firewall, siga estos pasos:
 
 2. Elija **Firewall** de **seguridad** >  de punto de conexión y, a continuación, **elija + Crear directiva**.
 
-3. Seleccione una plataforma, como **Windows 10 y versiones posteriores**, seleccione el perfil **firewall de Microsoft Defender** y, a continuación, elija **Crear**. 
+3. Seleccione una plataforma, como **Windows 10 y versiones posteriores**, seleccione el perfil **Microsoft Defender Firewall** y, a continuación, elija **Crear**. 
 
 4. En la pestaña **Aspectos básicos** , especifique un nombre y una descripción y, a continuación, elija **Siguiente**.
 
-5. Expanda **Firewall de Microsoft Defender** y desplácese hacia abajo hasta la parte inferior de la lista.
+5. Expanda **Microsoft Defender Firewall** y desplácese hacia abajo hasta la parte inferior de la lista.
 
 6. Establezca cada una de las opciones siguientes en **Sí**:
 
-   - **Activar firewall de Microsoft Defender para redes de dominio** 
-   - **Activar firewall de Microsoft Defender para redes privadas**
-   - **Activar firewall de Microsoft Defender para redes públicas**
+   - **Activar Microsoft Defender Firewall para redes de dominio** 
+   - **Activar Microsoft Defender Firewall para redes privadas**
+   - **Activar Microsoft Defender Firewall para redes públicas**
    
    Revise la lista de configuraciones en cada una de las redes de dominio, redes privadas y redes públicas. Puede dejarlos establecidos en **No configurados** o cambiarlos para que se adapten a las necesidades de su organización.
 

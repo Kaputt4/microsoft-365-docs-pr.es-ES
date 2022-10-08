@@ -1,6 +1,6 @@
 ---
-title: Informes de estado del antivirus de exportación de dispositivos antivirus de Microsoft Defender Antivirus
-description: Presenta métodos para recuperar los detalles del estado del dispositivo antivirus de Microsoft Defender.
+title: Microsoft Defender informes de estado del antivirus de exportación de dispositivos antivirus de Antivirus Device Health
+description: Presenta métodos para recuperar Microsoft Defender detalles de estado del dispositivo Antivirus.
 keywords: apis, graph api, api admitidas, get, device health api, Microsoft Defender para punto de conexión api report api microsoft defender reports api, microsoft defender for endpoint reporting api, windows defender reporting api, defender for endpoint reporting api, windows defender reporting api, windows defender reporting api, windows defender report api
 ms.service: microsoft-365-security
 ms.mktglfcycl: deploy
@@ -12,17 +12,19 @@ ms.localizationpriority: medium
 ms.date: 09/01/2022
 manager: dansimp
 audience: ITPro
-ms.collection: M365-security-compliance
+ms.collection:
+- m365-security
+- tier2
 ms.topic: article
 ms.subservice: mde
 ms.custom: api
 search.appverid: met150
-ms.openlocfilehash: 56568bc702ffba5e762df877d2ed3f7f80a6b0f4
-ms.sourcegitcommit: 0af064e8b6778060f1bd365378d69b16fc9949b5
+ms.openlocfilehash: 53562757025102c4f62e7d22b246892e5f54da56
+ms.sourcegitcommit: 0b7070ec119e00e0dafe030bbfbef0ae5c9afa19
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/15/2022
-ms.locfileid: "67731209"
+ms.lasthandoff: 09/29/2022
+ms.locfileid: "68207454"
 ---
 # <a name="export-device-antivirus-health-report"></a>Exportar informe de estado del antivirus del dispositivo
 
@@ -41,7 +43,7 @@ ms.locfileid: "67731209"
 
 [!include[Prerelease information](../../includes/prerelease.md)]
 
-Esta API tiene dos métodos para recuperar los detalles de estado del antivirus del dispositivo Antivirus de Microsoft Defender:
+Esta API tiene dos métodos para recuperar Microsoft Defender detalles de estado del antivirus del dispositivo Antivirus:
 
 - **Método uno:** [1 Exportación de **la respuesta**\) JSON de informes de \( mantenimiento](#1-export-health-reporting-json-response) El método extrae todos los datos de la organización como respuestas JSON. Este método es mejor para _organizaciones pequeñas con menos de 100 K dispositivos_. La respuesta está paginada, por lo que puede usar el \@campo odata.nextLink de la respuesta para capturar los resultados siguientes.
 
@@ -70,7 +72,7 @@ Los datos recopilados mediante "_respuesta JSON_ o _a través de archivos_" son 
 
 ### <a name="11-api-method-description"></a>Descripción del método de API 1.1
 
-Esta API recupera una lista de detalles de estado del antivirus del dispositivo Antivirus de Microsoft Defender. Devuelve una tabla con una entrada para cada combinación única de:
+Esta API recupera una lista de Microsoft Defender detalles de estado del antivirus del dispositivo Antivirus. Devuelve una tabla con una entrada para cada combinación única de:
 
 - DeviceId
 - Nombre del dispositivo

@@ -1,7 +1,7 @@
 ---
 title: Migración de servidores de Microsoft Defender para punto de conexión a Microsoft Defender for Cloud
 description: Obtenga información sobre cómo migrar servidores de Microsoft Defender para punto de conexión a Microsoft Defender for Cloud.
-keywords: migrate server, server, Microsoft Defender para punto de conexión server, Microsoft Defender for Cloud, MDE, azure, azure cloud, CSPM, CWP, cloud workload protection, threat protection, advanced threat protection, Microsoft Azure, multi-cloud connector
+keywords: migrar servidor, servidor, servidor Microsoft Defender para punto de conexión, Microsoft Defender para la nube, MDE, azure, azure cloud, CSPM, CWP, protección contra cargas de trabajo en la nube, protección contra amenazas, protección contra amenazas avanzada, Microsoft Azure, conector multin cloud
 author: alekyaj
 ms.author: dansimp
 manager: dansimp
@@ -10,17 +10,18 @@ ms.topic: article
 ms.service: microsoft-365-security
 ms.localizationpriority: medium
 ms.collection:
-- M365-security-compliance
+- m365-security
+- tier2
 ms.custom: migrationguides
 ms.date: 07/19/2022
 ms.subservice: mde
 search.appverid: met150
-ms.openlocfilehash: 1d4130d2e96964f3ed70ed742e7a9f7cd8a2f230
-ms.sourcegitcommit: 9b133379196da2b3a4bb311b07ff274f43780f68
+ms.openlocfilehash: 66e64fb83af5e0ad22d21b9d96ecec6ab14640c4
+ms.sourcegitcommit: 4e42bafee965446f44f7f57d1defed2b9b24fce8
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/14/2022
-ms.locfileid: "67688493"
+ms.lasthandoff: 09/30/2022
+ms.locfileid: "68224324"
 ---
 # <a name="migrating-servers-from-microsoft-defender-for-endpoint-to-microsoft-defender-for-cloud"></a>Migración de servidores de Microsoft Defender para punto de conexión a Microsoft Defender for Cloud
 
@@ -41,7 +42,7 @@ Aunque ambos productos ofrecen funcionalidades de protección de servidores, Mic
 
 Si tiene servidores incorporados a Defender para punto de conexión, el proceso de migración varía según el tipo de máquina, pero hay un conjunto de requisitos previos compartidos. 
 
-Microsoft Defender for Cloud es un servicio basado en suscripciones en microsoft Azure Portal. Por lo tanto, Defender for Cloud y los planes subyacentes, como El plan 2 de Microsoft Defender para servidores, deben estar habilitados en las suscripciones de Azure.
+Microsoft Defender for Cloud es un servicio basado en suscripciones en Microsoft Azure Portal. Por lo tanto, Defender for Cloud y los planes subyacentes, como Microsoft Defender para el plan 2 de servidores, deben estar habilitados en las suscripciones de Azure.
 
 Para habilitar Defender para servidores para máquinas virtuales de Azure y máquinas que no son de Azure conectadas a través de [servidores habilitados para Azure Arc](/azure/azure-arc/servers/overview), siga esta guía:
 
@@ -49,7 +50,7 @@ Para habilitar Defender para servidores para máquinas virtuales de Azure y máq
 
 2. Habilite [Microsoft Defender for Cloud](/azure/defender-for-cloud/get-started) en sus suscripciones.
 
-3. Habilite uno de los planes de Microsoft Defender for Server en [sus suscripciones](/azure/defender-for-cloud/enable-enhanced-security). En caso de que use el plan 2 de Defender para servidores, asegúrese de habilitarlo también en el área de trabajo de Log Analytics a la que están conectadas las máquinas; le permitirá usar características opcionales como supervisión de integridad de archivos, controles de aplicación adaptables y mucho más.
+3. Habilite uno de los planes de Microsoft Defender for Server en [las suscripciones](/azure/defender-for-cloud/enable-enhanced-security). En caso de que use el plan 2 de Defender para servidores, asegúrese de habilitarlo también en el área de trabajo de Log Analytics a la que están conectadas las máquinas; le permitirá usar características opcionales como supervisión de integridad de archivos, controles de aplicación adaptables y mucho más.
 
 4. Asegúrese de que la [integración de MDE](/azure/defender-for-cloud/integration-defender-for-endpoint?tabs=windows) está habilitada en la suscripción. Si tiene suscripciones de Azure preexistedas, es posible que vea uno (o ambos) de los dos botones de participación que se muestran en la imagen siguiente.
 
@@ -85,8 +86,8 @@ Una vez cumplidos todos los requisitos previos, [conecte](/azure/defender-for-cl
 
 ## <a name="what-happens-once-all-migration-steps-are-completed"></a>¿Qué ocurre una vez completados todos los pasos de migración?
 
-Una vez completados los pasos de migración pertinentes, Microsoft Defender for Cloud implementará la `MDE.Windows` extensión o `MDE.Linux` en las máquinas virtuales de Azure y las máquinas que no son de Azure conectadas a través de Azure Arc (incluidas las máquinas virtuales en proceso de AWS y GCP).
+Una vez que haya completado los pasos de migración pertinentes, Microsoft Defender for Cloud implementará la `MDE.Windows` extensión o `MDE.Linux` en las máquinas virtuales de Azure y las máquinas que no son de Azure conectadas a través de Azure Arc (incluidas las máquinas virtuales en proceso de AWS y GCP).
 
 La extensión actúa como interfaz de administración e implementación, que orquestará y encapsulará los scripts de instalación de MDE dentro del sistema operativo y reflejará su estado de aprovisionamiento en el plano de administración de Azure. El proceso de instalación reconocerá una instalación existente de Defender para punto de conexión y la conectará a Defender for Cloud agregando automáticamente etiquetas de servicio de Defender para punto de conexión.
 
-En caso de que tenga Windows Server 2012 máquinas R2 o 2016 aprovisionadas con la solución Microsoft Defender para punto de conexión heredada basada en Log Analytics, el proceso de implementación de Microsoft Defender for Cloud implementará la [solución unificada](configure-server-endpoints.md#new-windows-server-2012-r2-and-2016-functionality-in-the-modern-unified-solution) de Defender para punto de conexión. Después de una implementación correcta, detendrá y deshabilitará el proceso heredado de Defender para punto de conexión en estas máquinas.
+En caso de que tenga Windows Server 2012 máquinas R2 o 2016 aprovisionadas con la solución Microsoft Defender para punto de conexión heredada basada en Log Analytics, Microsoft Defender para el proceso de implementación de Cloud implementará la [solución unificada](configure-server-endpoints.md#new-windows-server-2012-r2-and-2016-functionality-in-the-modern-unified-solution) de Defender para punto de conexión. Después de una implementación correcta, detendrá y deshabilitará el proceso heredado de Defender para punto de conexión en estas máquinas.

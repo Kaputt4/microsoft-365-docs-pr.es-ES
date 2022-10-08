@@ -14,15 +14,17 @@ ms.author: dansimp
 ms.custom: nextgen
 ms.reviewer: ''
 manager: dansimp
-ms.collection: M365-security-compliance
+ms.collection:
+- m365-security
+- tier3
 ms.subservice: mde
 search.appverid: met150
-ms.openlocfilehash: 3c32a0bcde769084055b550431e14f80cff3d477
-ms.sourcegitcommit: 9b133379196da2b3a4bb311b07ff274f43780f68
+ms.openlocfilehash: a4af85a358d51b039d9a8596bd911eaf12f3d54f
+ms.sourcegitcommit: 4e42bafee965446f44f7f57d1defed2b9b24fce8
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/14/2022
-ms.locfileid: "67691923"
+ms.lasthandoff: 09/30/2022
+ms.locfileid: "68231624"
 ---
 # <a name="onboard-windows-devices-in-azure-virtual-desktop"></a>Incorporación de dispositivos Windows en Azure Virtual Desktop
 
@@ -157,7 +159,7 @@ Además, si usa perfiles de usuario de FSlogix, se recomienda excluir los siguie
 
 #### <a name="licensing-requirements"></a>Requisitos de licencias
 
-Nota sobre las licencias: Al usar windows Enterprise multisesión, en función de sus requisitos, puede optar por tener a todos los usuarios con licencia a través de Microsoft Defender para punto de conexión (por usuario), Windows Enterprise E5, Microsoft 365 Security o Microsoft 365 E5, o bien tener la máquina virtual con licencia a través de Microsoft Defender for Cloud.
+Nota sobre las licencias: Al usar windows Enterprise multisesión, en función de sus requisitos, puede optar por tener a todos los usuarios con licencia a través de Microsoft Defender para punto de conexión (por usuario), Windows Enterprise E5, Microsoft 365 Security o Microsoft 365 E5, o bien tener la máquina virtual con licencia a través de Microsoft Defender para la nube.
 Los requisitos de licencia para Microsoft Defender para punto de conexión se pueden encontrar en: [Requisitos de licencia](minimum-requirements.md#licensing-requirements).
 
 ### <a name="known-issues-and-limitations"></a>Problemas y limitaciones conocidos

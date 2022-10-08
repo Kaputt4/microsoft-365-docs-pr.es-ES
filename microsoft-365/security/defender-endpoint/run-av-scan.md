@@ -11,17 +11,19 @@ author: mjcaparas
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
-ms.collection: M365-security-compliance
+mms.collection:
+- m365-security
+- tier3
 ms.topic: article
 ms.subservice: mde
 ms.custom: api
 search.appverid: met150
-ms.openlocfilehash: c1351c4a6e758666a9ff3f00f9e5a573b2bdf79d
-ms.sourcegitcommit: 9b133379196da2b3a4bb311b07ff274f43780f68
+ms.openlocfilehash: 54f2c0941edeb7db8e0d2dd36f02145895673230
+ms.sourcegitcommit: 4e42bafee965446f44f7f57d1defed2b9b24fce8
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/14/2022
-ms.locfileid: "67704180"
+ms.lasthandoff: 09/30/2022
+ms.locfileid: "68223076"
 ---
 # <a name="run-antivirus-scan-api"></a>Ejecución de la API de examen antivirus
 
@@ -39,7 +41,7 @@ ms.locfileid: "67704180"
 
 ## <a name="api-description"></a>Descripción de la API
 
-Inicie el examen del Antivirus de Microsoft Defender en un dispositivo.
+Inicie Microsoft Defender examen antivirus en un dispositivo.
 
 ## <a name="limitations"></a>Limitaciones
 
@@ -50,7 +52,7 @@ Inicie el examen del Antivirus de Microsoft Defender en un dispositivo.
 > [!IMPORTANT]
 >
 > - Esta acción está disponible para dispositivos en Windows 10, versión 1709 o posterior, y en Windows 11.
-> - Un examen del Antivirus de Microsoft Defender se puede ejecutar junto con otras soluciones antivirus, independientemente de si antivirus de Microsoft Defender es la solución antivirus activa o no. Antivirus de Microsoft Defender puede estar en modo pasivo. Para obtener más información, consulte [Compatibilidad del Antivirus de Microsoft Defender](/microsoft-365/security/defender-endpoint/microsoft-defender-antivirus-compatibility).
+> - Un examen Microsoft Defender Antivirus puede ejecutarse junto con otras soluciones antivirus, tanto si Microsoft Defender Antivirus es la solución antivirus activa como si no. Microsoft Defender Antivirus puede estar en modo pasivo. Para obtener más información, consulte [compatibilidad con Microsoft Defender Antivirus](/microsoft-365/security/defender-endpoint/microsoft-defender-antivirus-compatibility).
 
 ## <a name="permissions"></a>Permisos
 
@@ -66,6 +68,8 @@ Delegado (cuenta profesional o educativa)|Machine.Scan|"Máquina de examen"
 >
 > - El usuario debe tener al menos el siguiente permiso de rol: "Acciones de corrección activas" (consulte [Creación y administración de roles](user-roles.md) para obtener más información).
 > - El usuario debe tener acceso al dispositivo en función de la configuración del grupo de dispositivos (consulte [Creación y administración de grupos de dispositivos](machine-groups.md) para obtener más información).
+> 
+> La creación de grupos de dispositivos se admite en El plan 1 y el plan 2 de Defender para punto de conexión.  
 
 ## <a name="http-request"></a>Solicitud HTTP
 

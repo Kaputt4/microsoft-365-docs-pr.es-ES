@@ -11,7 +11,8 @@ ms.service: microsoft-365-security
 ms.subservice: other
 ms.date: 09/15/2022
 ms.localizationpriority: high
-ms.collection: ''
+ms.collection:
+- tier1
 ms.custom:
 - MiniMaven
 - OKR_SMB_M365
@@ -19,12 +20,12 @@ search.appverid:
 - BCS160
 - MET150
 description: Cómo agregar un nuevo empleado o usuario a la red y a los sistemas internos de la organización. Cuando un nuevo empleado se une a su empresa, debe agregarlo de forma segura a la red.
-ms.openlocfilehash: 56635c487020133e5d71edc321b2762d41535881
-ms.sourcegitcommit: c29af68260ba8676083674b3c70209bff2c2e362
+ms.openlocfilehash: f9a35302dd5f26d30aa1be84c5f6c01fee8e490d
+ms.sourcegitcommit: 0283c436f3ba61a708b52b57a1955f5ea74376a3
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/16/2022
-ms.locfileid: "67739000"
+ms.lasthandoff: 09/28/2022
+ms.locfileid: "68096553"
 ---
 # <a name="add-a-new-employee-in-microsoft-365-business-premium"></a>Agregar un nuevo empleado en Microsoft 365 Empresa Premium
 

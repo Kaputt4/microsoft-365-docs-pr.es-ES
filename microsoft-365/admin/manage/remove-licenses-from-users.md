@@ -8,9 +8,10 @@ manager: scotv
 ms.reviewer: sinakassaw, nicholak
 audience: Admin
 ms.topic: article
-ms.service: o365-administration
+ms.service: microsoft-365-business
 ms.localizationpriority: medium
 ms.collection:
+- scotvorg
 - M365-subscription-management
 - Adm_O365
 - Adm_TOC
@@ -23,12 +24,12 @@ ms.custom:
 search.appverid: MET150
 description: El método que use para anular la asignación de licencias de productos depende de si anula la asignación de licencias de usuarios específicos o de un producto específico.
 ms.date: 07/12/2022
-ms.openlocfilehash: b6459030c376bb891ea32b9cb096d26449dfa0d1
-ms.sourcegitcommit: 61b22df76e0f81e5ef11c587b129287886151c79
+ms.openlocfilehash: 667cc1167bbb3f479b7aab6ab6066f8b7448d948
+ms.sourcegitcommit: 0b7070ec119e00e0dafe030bbfbef0ae5c9afa19
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/12/2022
-ms.locfileid: "66748393"
+ms.lasthandoff: 09/29/2022
+ms.locfileid: "68199909"
 ---
 # <a name="unassign-microsoft-365-licenses-from-users"></a>Anulación de la asignación de licencias de Microsoft 365 de los usuarios
 
@@ -50,7 +51,7 @@ Puede anular la asignación de licencias de los usuarios en la página **Usuario
 
 La página **Licencias** le permite asignar o cancelar la asignación de licencias para un máximo de 20 usuarios a la vez. En la página se muestran los productos de su propiedad, el número de licencias disponibles para cada producto y el número de licencias asignadas del total de licencias disponibles.
 
-La página **Licencias** muestra un total agregado de licencias para todas las suscripciones con el mismo nombre de producto. Por ejemplo, podría tener una suscripción para Microsoft 365 Empresa Premium que tenga 5 licencias y otra suscripción que tenga 8 licencias para el mismo producto. En la página **Licencias** se muestra que tiene un total de 13 licencias para Microsoft 365 Empresa Premium en todas sus suscripciones. Esto es diferente de lo que ve en la página **Sus productos**, que muestra una fila para cada suscripción de su propiedad, incluso si son para el mismo producto.
+La página de **licencias** muestra un total agregado de licencias para todas las suscripciones para el mismo nombre de producto. Por ejemplo, podría tener una suscripción para Microsoft 365 Empresa Premium que tenga 5 licencias y otra suscripción que tenga 8 licencias para el mismo producto. En la página **Licencias** se muestra que tiene un total de 13 licencias para Microsoft 365 Empresa Premium en todas sus suscripciones. Esto es diferente de lo que ve en la página **Sus productos**, que muestra una fila para cada suscripción de su propiedad, incluso si son para el mismo producto.
 
 ::: moniker range="o365-worldwide"
 
@@ -127,7 +128,7 @@ Cuando se usa la página **Usuarios activos** para anular la asignación de lice
 - Para obtener información sobre cómo bloquear el acceso de un usuario a los datos de Microsoft 365 después de quitar su licencia y cómo obtener acceso a los datos posteriormente, consulte [Eliminación de un empleado anterior](../add-users/remove-former-employee.md).
 - Si quita la licencia de un usuario y sigue teniendo instaladas aplicaciones de Office, verá [errores de activación y producto sin licencia en Office](https://support.microsoft.com/office/0d23d3c0-c19c-4b2f-9845-5344fedc4380) cuando usan aplicaciones de Office.
 
-## <a name="next-steps"></a>Siguientes pasos
+## <a name="next-steps"></a>Pasos siguientes
 
 Si no va a [reasignar las licencias sin usar a otros usuarios](assign-licenses-to-users.md), considere la posibilidad [de quitar las licencias de la suscripción](../../commerce/licenses/buy-licenses.md) para que no pague más licencias de las que necesita.
 

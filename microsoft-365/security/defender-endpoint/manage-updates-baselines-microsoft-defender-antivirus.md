@@ -7,7 +7,7 @@ ms.mktglfcycl: manage
 ms.sitesec: library
 ms.pagetype: security
 ms.localizationpriority: high
-ms.date: 09/13/2022
+ms.date: 09/27/2022
 audience: ITPro
 ms.topic: reference
 author: denisebmsft
@@ -17,15 +17,15 @@ ms.reviewer: pahuijbr, mkaminska, v-vutrieu
 manager: dansimp
 ms.subservice: mde
 ms.collection:
-- M365-security-compliance
-- m365initiative-defender-endpoint
+- m365-security
+- tier2
 search.appverid: met150
-ms.openlocfilehash: d4056a8c780b649c03980ec1cfa8d7ab9928b45f
-ms.sourcegitcommit: 9b133379196da2b3a4bb311b07ff274f43780f68
+ms.openlocfilehash: 317f2b6e59ee5c0a787dd78e23d7a96f7377efb5
+ms.sourcegitcommit: 4e42bafee965446f44f7f57d1defed2b9b24fce8
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/14/2022
-ms.locfileid: "67686953"
+ms.lasthandoff: 09/30/2022
+ms.locfileid: "68231844"
 ---
 # <a name="manage-microsoft-defender-antivirus-updates-and-apply-baselines"></a>Para obtener más información, consulte Administrar actualizaciones de Antivirus de Microsoft Defender y aplicar bases de referencia.
 
@@ -279,9 +279,9 @@ Versión de actualización de inteligencia de seguridad: 1.357.8.0 <br/>
 - Mejoras en la supervisión del comportamiento en el rendimiento del filtrado
 - Protección de TrustedInstaller
 - Mejoras en la protección contra alteraciones
-- Se ha reemplazado `ScanScheduleTime` con un nuevo `ScanScheduleOffest`cmdlet en [Set-MpPreference](/powershell/module/defender/set-mppreference). Esta directiva configura el número de minutos después de la medianoche para hacer un escaneo digitalizado.
-- Se ha agregado la configuración de `-ServiceHealthReportInterval` a [Set-MpPreference](/powershell/module/defender/set-mppreference). Esta instrucción configura el intervalo de tiempo (en minutos) para realizar un análisis programado. 
-- Se ha agregado la configuración de `AllowSwitchToAsyncInspection` a [Set-MpPreference](/powershell/module/defender/set-mppreference). Esta directiva permite una optimización del rendimiento, que permite que los flujos de red inspeccionados sincrónicamente, cambien a la inspección asincrónica una vez que se han comprobado y validado.
+- Replaced `ScanScheduleTime` with new `ScanScheduleOffest` cmdlet in [Set-MpPreference](/powershell/module/defender/set-mppreference). This policy configures the number of minutes after midnight to perform a scheduled scan.
+- Added the `-ServiceHealthReportInterval` setting to [Set-MpPreference](/powershell/module/defender/set-mppreference). This policy configures the time interval (in minutes) to perform a scheduled scan.
+- Added the `AllowSwitchToAsyncInspection` setting to [Set-MpPreference](/powershell/module/defender/set-mppreference). This policy enables a performance optimization, that allows synchronously inspected network flows, to switch to async inspection once they've been checked and validated.
 - Actualizaciones del analizador de rendimiento v2: se ha agregado compatibilidad con PowerShell remoto y PowerShell 7.x. Consulte [Analizador de rendimiento para Antivirus de Microsoft Defender](tune-performance-defender-antivirus.md).
 - Se ha corregido un posible error de duplicación de paquetes en el controlador del sistema de inspección de red de Antivirus de Microsoft Defender.
 
@@ -579,7 +579,7 @@ No hay problemas conocidos
 - Supervisión de comportamiento mejorada para exploración de memoria
 - Análisis mejorado de secuencias de macros
 - Se agregó `AMRunningMode` to Get-MpComputerStatus PowerShell cmdlet
-- [DisableAntiSpyware](/windows-hardware/customize/desktop/unattend/security-malware-windows-defender-disableantispyware) se ignora. El antivirus de Microsoft Defender se desactiva automáticamente cuando detecta otro programa antivirus.
+- [DisableAntiSpyware](/windows-hardware/customize/desktop/unattend/security-malware-windows-defender-disableantispyware) is ignored. Microsoft Defender Antivirus automatically turns itself off when it detects another antivirus program.
 
 
 ### <a name="known-issues"></a>Problemas conocidos
@@ -792,24 +792,39 @@ En la tabla siguiente se proporcionan las versiones de plataforma y motor Antivi
 
 |Versión de Windows 10  |Versión de la plataforma  |Versión del motor |Fase de soporte técnico |
 |:---|:---|:---|:---|
-|2004 (20H1/20H2) |4.18.1909.6. |1.1.17000.2 | Soporte técnico de actualización (únicamente) |
-|1909 (19H2) |4.18.1902.5 |1.1.16700.3 | Soporte técnico de actualización (únicamente) |
-|1903  (19H1) |4.18.1902.5 |1.1.15600.4 | Soporte técnico de actualización (únicamente) |
-|1809 (RS5) |4.18.1807.18075. |1.1.15000.2 | Soporte técnico de actualización (únicamente) |
-|1803  (RS4) |4.13.17134.1 |1.1.14600.4 | Soporte técnico de actualización (únicamente) |
-|1709  (RS3) |4.12.16299.15 |1.1.14104.0 | Soporte técnico de actualización (únicamente) |
-|1703  (RS2) |4.11.15603.2 |1.1.13504.0. | Soporte técnico de actualización (únicamente) |
-|1607 (RS1) |4.10.14393.3683 |1.1.12805.0 | Soporte técnico de actualización (únicamente) |
+|2004 (20H1/20H2) | `4.18.1909.6` | `1.1.17000.2` | Soporte técnico de actualización (únicamente) |
+|1909 (19H2) |`4.18.1902.5` |`1.1.16700.3` | Soporte técnico de actualización (únicamente) |
+|1903  (19H1) |`4.18.1902.5` |`1.1.15600.4` | Soporte técnico de actualización (únicamente) |
+|1809 (RS5) |`4.18.1807.1807`5 |`1.1.15000.2` | Soporte técnico de actualización (únicamente) |
+|1803  (RS4) |`4.13.17134.1` |`1.1.14600.4` | Soporte técnico de actualización (únicamente) |
+|1709  (RS3) |`4.12.16299.15` |`1.1.14104.0` | Soporte técnico de actualización (únicamente) |
+|1703  (RS2) |`4.11.15603.2` |`1.1.13504.0` | Soporte técnico de actualización (únicamente) |
+|1607 (RS1) |`4.10.14393.3683` |`1.1.12805.0` | Soporte técnico de actualización (únicamente) |
 
 Para obtener información sobre la versión de Windows 10 [consulte la hoja informativa sobre el ciclo de vida de Windows](https://support.microsoft.com/help/13853/windows-lifecycle-fact-sheet).
 
 ## <a name="updates-for-deployment-image-servicing-and-management-dism"></a>Actualizaciones para el Servicio y Gestión de Imágenes de Despliegue (DISM)
 
-Se recomienda actualizar las imágenes de instalación del sistema operativo Windows 10 (ediciones Enterprise, Pro y Home), Windows Server 2019, Windows Server 2022 y Windows Server 2016 con las actualizaciones antivirus y antimalware más recientes. Mantener actualizadas las imágenes de instalación del sistema operativo ayuda a evitar una brecha en la protección.
+We recommend updating your Windows 10 (Enterprise, Pro, and Home editions), Windows Server 2019, Windows Server 2022, and Windows Server 2016 OS installation images with the latest antivirus and antimalware updates. Keeping your OS installation images up to date helps avoid a gap in protection.
 
 Para obtener más información, vea [las imágenes de instalación de Microsoft Defender para el sistema operativo Windows](https://support.microsoft.com/help/4568292/defender-update-for-windows-operating-system-installation-images).
 
 <details>
+<summary>20220925.2</summary>
+
+&ensp;Versión del paquete: **2020925.2**<br/>
+&ensp;Versión de la plataforma: **4.18.2207.7**<br/>
+&ensp;Versión del motor: **1.1.19600.3**<br/>
+&ensp;Versión de firma: **1.373.1371.0**<br/>
+
+### <a name="fixes"></a>Correcciones
+- Ninguno
+
+### <a name="additional-information"></a>Información adicional
+- Ninguno
+
+<br/>
+</details><details>
 <summary>20220901.4</summary>
 
 &ensp;Versión del paquete: **20220901.4**<br/>

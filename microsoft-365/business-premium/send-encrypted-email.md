@@ -14,22 +14,24 @@ ms.localizationpriority: high
 ms.collection:
 - M365-Campaigns
 - m365solution-smb
+- highpri
+- tier1
 ms.custom:
 - MiniMaven
 search.appverid:
 - BCS160
 - MET150
 description: Obtenga información sobre cómo enviar un correo electrónico cifrado mediante Outlook.
-ms.openlocfilehash: bb33bed554786a8879e861ff88a4f5f5de60179e
-ms.sourcegitcommit: c29af68260ba8676083674b3c70209bff2c2e362
+ms.openlocfilehash: 481f40321a56ba398c25601a1c5da1a91daae67b
+ms.sourcegitcommit: 0283c436f3ba61a708b52b57a1955f5ea74376a3
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/16/2022
-ms.locfileid: "67738671"
+ms.lasthandoff: 09/28/2022
+ms.locfileid: "68097256"
 ---
 # <a name="encrypt-or-label-your-sensitive-email-in-microsoft-365"></a>Cifrar o etiquetar el correo electrónico confidencial en Microsoft 365
 
-Los datos y la información son importantes y, a menudo, confidenciales. El objetivo es ayudar a proteger esta información confidencial asegurándose de que todos usen etiquetas de confidencialidad para que los destinatarios del correo electrónico traten la información con la máxima confidencialidad.
+Your data and information is important, and often, confidential. The objective here is to help protect this sensitive information by ensuring everyone is using sensitivity labels so that email recipients treat the information with the utmost sensitivity.
 
 ## <a name="best-practices"></a>Procedimientos recomendados
 

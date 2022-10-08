@@ -12,16 +12,18 @@ author: schmurky
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
-ms.collection: M365-security-compliance
+ms.collection:
+- m365-security
+- tier2
 ms.topic: article
 ms.subservice: mde
 search.appverid: met150
-ms.openlocfilehash: 1d47b966ccce5a22a2d61f18353cefa77c7a58c3
-ms.sourcegitcommit: 9b133379196da2b3a4bb311b07ff274f43780f68
+ms.openlocfilehash: 221703cfa0161d0f0dfc18d7ee3da9dea67d0826
+ms.sourcegitcommit: 4e42bafee965446f44f7f57d1defed2b9b24fce8
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/14/2022
-ms.locfileid: "67689303"
+ms.lasthandoff: 09/30/2022
+ms.locfileid: "68224698"
 ---
 # <a name="the-analyst-report-in-threat-analytics"></a>Informe de analistas en análisis de amenazas
 
@@ -75,11 +77,11 @@ Aunque puede usar la pestaña **Mitigaciones** para evaluar la posición de segu
 
 ## <a name="understand-how-each-threat-can-be-detected"></a>Comprender cómo se puede detectar cada amenaza
 
-El informe de analistas también proporciona las detecciones del Antivirus de Microsoft Defender y las funcionalidades _de detección y respuesta de puntos de conexión_ (EDR).
+El informe del analista también proporciona las detecciones de Microsoft Defender antivirus y las funcionalidades _de detección y respuesta de puntos de conexión_ (EDR).
 
 ### <a name="antivirus-detections"></a>Detecciones antivirus
 
-Estas detecciones están disponibles en dispositivos con [antivirus de Microsoft Defender](/windows/security/threat-protection/microsoft-defender-antivirus/microsoft-defender-antivirus-in-windows-10) activado. Cuando estas detecciones se producen en dispositivos que se han incorporado a Microsoft Defender para punto de conexión, también desencadenan alertas que iluminan los gráficos del informe.
+Estas detecciones están disponibles en dispositivos con [Microsoft Defender Antivirus](/windows/security/threat-protection/microsoft-defender-antivirus/microsoft-defender-antivirus-in-windows-10) activado. Cuando estas detecciones se producen en dispositivos que se han incorporado a Microsoft Defender para punto de conexión, también desencadenan alertas que iluminan los gráficos del informe.
 
 > [!NOTE]
 > El informe de analistas también enumera **detecciones genéricas** que pueden identificar una amplia gama de amenazas, además de componentes o comportamientos específicos de la amenaza de seguimiento. Estas detecciones genéricas no se reflejan en los gráficos.

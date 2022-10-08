@@ -14,14 +14,16 @@ ms.author: dansimp
 manager: dansimp
 ms.custom: asr
 ms.subservice: mde
-ms.collection: M365-security-compliance
+ms.collection:
+- m365-security
+- tier2
 search.appverid: met150
-ms.openlocfilehash: aa00aa4652edb3fa253573c451292c199617410e
-ms.sourcegitcommit: 9b133379196da2b3a4bb311b07ff274f43780f68
+ms.openlocfilehash: edbf7121a23bd5effda50256fdc07a6d58e09493
+ms.sourcegitcommit: 4e42bafee965446f44f7f57d1defed2b9b24fce8
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/14/2022
-ms.locfileid: "67688449"
+ms.lasthandoff: 09/30/2022
+ms.locfileid: "68231646"
 ---
 # <a name="migrating-from-a-third-party-hips-to-asr-rules"></a>Migración de un HIPS de terceros a reglas de ASR
 
@@ -39,7 +41,7 @@ Este artículo le ayuda a asignar reglas comunes a Microsoft Defender para punto
 - **Operación**: creación de archivos
 - **Ejemplos de archivos/carpetas, claves/valores del Registro, procesos, servicios**- *.zepto, *.odin, *.locky, *.jaff, *.lukitus, *.wnry, *.krab
 - **Reglas de reducción de superficie** expuesta a ataques: las reglas de ASR bloquean las técnicas de ataque y no los indicadores de compromiso (IOC). Bloquear una extensión de archivo específica no siempre es útil, ya que no impide que un dispositivo se ponga en peligro. Solo frustra parcialmente un ataque hasta que los atacantes crean un nuevo tipo de extensión para la carga.
-- **Otras características recomendadas**: se recomienda encarecidamente tener habilitado el Antivirus de Microsoft Defender, junto con Cloud Protection y análisis de comportamiento. Se recomienda usar otra prevención, como la regla ASR "Usar protección avanzada contra ransomware". Esto proporciona un mayor nivel de protección contra ataques de ransomware. Además, muchas de estas claves del Registro se supervisan mediante Microsoft Defender para punto de conexión, como técnicas ASEP, que desencadenarán alertas específicas. Las claves del Registro usadas requieren un mínimo de privilegios de Administración local o instalador de confianza. Se recomienda usar un entorno bloqueado, con derechos o cuentas administrativas mínimos. Se pueden habilitar otras configuraciones del sistema, como "Deshabilitar SeDebug para roles no necesarios" que forman parte de nuestras recomendaciones de seguridad más amplias.
+- **Otras características recomendadas**: se recomienda encarecidamente tener habilitado Microsoft Defender Antivirus, junto con Cloud Protection y análisis de comportamiento. Se recomienda usar otra prevención, como la regla ASR "Usar protección avanzada contra ransomware". Esto proporciona un mayor nivel de protección contra ataques de ransomware. Además, muchas de estas claves del Registro se supervisan mediante Microsoft Defender para punto de conexión, como técnicas ASEP, que desencadenarán alertas específicas. Las claves del Registro usadas requieren un mínimo de privilegios de Administración local o instalador de confianza. Se recomienda usar un entorno bloqueado, con derechos o cuentas administrativas mínimos. Se pueden habilitar otras configuraciones del sistema, como "Deshabilitar SeDebug para roles no necesarios" que forman parte de nuestras recomendaciones de seguridad más amplias.
 
 ### <a name="block-creation-of-specific-registry-keys"></a>Bloquear la creación de claves específicas del Registro
 
@@ -48,7 +50,7 @@ Este artículo le ayuda a asignar reglas comunes a Microsoft Defender para punto
 - **Operación**: modificaciones del Registro
 - **Ejemplos de archivos o carpetas, claves o valores del Registro, procesos, servicios**-  *\Software,HKCU*\Environment\UserInitMprLogonScript,HKLM\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Accessibility\ATs *\StartExe, HKLM\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Image File Execution Options*\Debugger, HKEY_CURRENT_USER\Software\Microsoft\HtmlHelp Author\location, HKLM\SOFTWARE\Microsoft\Windows NT\CurrentVersion\SilentProcessExit*\MonitorProcess
 - **Reglas de reducción de superficie** expuesta a ataques: las reglas de ASR bloquean las técnicas de ataque y no los indicadores de compromiso (IOC). Bloquear una extensión de archivo específica no siempre es útil, ya que no impide que un dispositivo se ponga en peligro. Solo frustra parcialmente un ataque hasta que los atacantes crean un nuevo tipo de extensión para la carga.
-- **Otras características recomendadas**: se recomienda encarecidamente tener habilitado el Antivirus de Microsoft Defender, junto con Cloud Protection y análisis de comportamiento. Se recomienda usar la prevención adicional, como la regla ASR "Usar la protección avanzada contra ransomware". Esto proporciona un mayor nivel de protección contra ataques de ransomware. Además, varias de estas claves del Registro se supervisan mediante Microsoft Defender para punto de conexión, como técnicas ASEP, que desencadenarán alertas específicas. Además, las claves del Registro usadas requieren un mínimo de privilegios de Administración local o instalador de confianza. Se recomienda usar un entorno bloqueado, con derechos o cuentas administrativas mínimos. Se pueden habilitar otras configuraciones del sistema, como "Deshabilitar SeDebug para roles no necesarios" que forman parte de nuestras recomendaciones de seguridad más amplias.
+- **Otras características recomendadas**: se recomienda encarecidamente tener habilitado Microsoft Defender Antivirus, junto con Cloud Protection y análisis de comportamiento. Se recomienda usar la prevención adicional, como la regla ASR "Usar la protección avanzada contra ransomware". Esto proporciona un mayor nivel de protección contra ataques de ransomware. Además, varias de estas claves del Registro se supervisan mediante Microsoft Defender para punto de conexión, como técnicas ASEP, que desencadenarán alertas específicas. Además, las claves del Registro usadas requieren un mínimo de privilegios de Administración local o instalador de confianza. Se recomienda usar un entorno bloqueado, con derechos o cuentas administrativas mínimos. Se pueden habilitar otras configuraciones del sistema, como "Deshabilitar SeDebug para roles no necesarios" que forman parte de nuestras recomendaciones de seguridad más amplias.
 
 ### <a name="block-untrusted-programs-from-running-from-removable-drives"></a>Impedir que los programas que no son de confianza se ejecuten desde unidades extraíbles
 
@@ -118,8 +120,8 @@ Este artículo le ayuda a asignar reglas comunes a Microsoft Defender para punto
 - **Procesos**: certutil.exe
 - **Operación**: creación de archivos
 - **Ejemplos de archivos/carpetas, claves/valores del Registro, procesos, servicios**- *.exe
-- **Reglas de reducción de superficie expuesta a ataques**: las reglas de ASR no admiten estos escenarios porque forman parte de la protección antivirus de Microsoft Defender.
-- **Otras características recomendadas**: Antivirus de Microsoft Defender impide que CertUtil cree o descargue contenido ejecutable.
+- **Reglas de reducción de superficie expuesta a ataques**: las reglas de ASR no admiten estos escenarios porque forman parte de Microsoft Defender protección antivirus.
+- **Otras características recomendadas**: Microsoft Defender Antivirus impide que CertUtil cree o descargue contenido ejecutable.
 
 ### <a name="block-processes-from-stopping-critical-system-components"></a>Impedir que los procesos detengan componentes críticos del sistema
 
@@ -128,7 +130,7 @@ Este artículo le ayuda a asignar reglas comunes a Microsoft Defender para punto
 - **Operación**: finalización del proceso
 - **Ejemplos de archivos o carpetas, claves o valores del Registro, procesos, servicios** MsSense.exe, MsMpEng.exe, NisSrv.exe, svchost.exe*, services.exe, csrss.exe, smss.exe, wininit.exe, etc.
 - **Reglas de reducción de superficie expuesta a ataques**: las reglas de ASR no admiten estos escenarios porque están protegidas con protecciones de seguridad integradas de Windows.
-- **Otras características recomendadas**: ELAM (Early Launch AntiMalware), PPL (Protection Process Light), PPL AntiMalware Light y System Guard.
+- **Otras características recomendadas**: ELAM (Early Launch AntiMalware), PPL (Protection Process Light), PPL AntiMalware Light y Protección del sistema.
 
 ### <a name="block-specific-launch-process-attempt"></a>Bloquear intento de proceso de inicio específico
 
@@ -139,7 +141,7 @@ Este artículo le ayuda a asignar reglas comunes a Microsoft Defender para punto
 - **Reglas de reducción de superficie expuesta a ataques**: en general, las reglas de ASR no están diseñadas para funcionar como administrador de aplicaciones.
 - **Otras características recomendadas**: para evitar que los usuarios inicien procesos o programas específicos, se recomienda usar Windows Defender Application Control. Microsoft Defender para punto de conexión los indicadores de archivo y certificado, se pueden usar en un escenario de respuesta a incidentes (no debe verse como un mecanismo de control de aplicaciones).
 
-### <a name="block-unauthorized-changes-to-microsoft-defender-antivirus-configurations"></a>Bloquear cambios no autorizados en las configuraciones del Antivirus de Microsoft Defender
+### <a name="block-unauthorized-changes-to-microsoft-defender-antivirus-configurations"></a>Bloquear cambios no autorizados en las configuraciones de Microsoft Defender Antivirus
 
 - **Se aplica a** todos los procesos
 - **Procesos**- *

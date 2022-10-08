@@ -14,6 +14,8 @@ ms.localizationpriority: high
 ms.collection:
 - M365-Campaigns
 - m365solution-smb
+- highpri
+- tier1
 ms.custom:
 - MiniMaven
 search.appverid:
@@ -21,12 +23,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Cómo instalar Office en todos los dispositivos de Microsoft 365 Empresa Premium.
-ms.openlocfilehash: a5e2dbd00066c30d70df6ee74575b2b3f72fed13
-ms.sourcegitcommit: c29af68260ba8676083674b3c70209bff2c2e362
+ms.openlocfilehash: cb879c21b0b7c60536ed977305f727888b0bf560
+ms.sourcegitcommit: 0283c436f3ba61a708b52b57a1955f5ea74376a3
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/16/2022
-ms.locfileid: "67735610"
+ms.lasthandoff: 09/28/2022
+ms.locfileid: "68096597"
 ---
 # <a name="install-office-apps-on-all-devices"></a>Instalar aplicaciones de Office en todos los dispositivos
 
@@ -48,9 +50,9 @@ Pídales que realicen lo siguiente:
 
 ## <a name="set-up-mobile-devices-for-microsoft-365-business-premium-users"></a>Configurar dispositivos móviles para los usuarios de Microsoft 365 Empresa Premium
 
-Siga las instrucciones en las pestañas para instalar Office en un iPhone o un teléfono Android. Después de seguir estos pasos, sus archivos de trabajo creados en aplicaciones de Office estarán protegidos por Microsoft 365 Business.
+Use the following instructions to install Office on an iPhone or an Android phone. After you follow these steps, your work files created in Office apps will be protected by Microsoft 365 for business.
 
-Este ejemplo se aplica a Outlook, pero también a cualquier otra aplicación de Office que quiera instalar.
+El ejemplo es para Outlook, pero se aplica a cualquier otra aplicación de Office que quiera instalar.
 
 ## <a name="iphone"></a>[iPhone](#tab/iPhone)
   
@@ -76,11 +78,11 @@ Escriba su dirección de correo electrónico de trabajo en la pantalla **Agregar
   
 :::image type="content" source="media/sign-in-m365account.png" alt-text="Iniciar sesión en tu cuenta profesional.":::
   
-Si su organización protege los archivos de las aplicaciones, verá un cuadro de diálogo que indica que su organización ahora protege los datos de la aplicación y tiene que reiniciarla para seguir usándola. Pulse **Aceptar** y cierre Outlook. 
+If your organization is protecting files in apps, you'll see a dialog stating that your organization is now protecting the data in the app and you need to restart the app to continue to use it. Tap **OK** and close Outlook. 
   
 :::image type="content" source="media/outlook-protected.png" alt-text="Captura de pantalla que muestra a tu empresa protegiendo tu app de Outlook.":::
   
-Busque Outlook en el iPhone y reinícielo. Cuando se le pida, introduzca un PIN y confírmelo. Ya puede usar su Outlook para iPhone.
+Locate Outlook on the iPhone, and restart it. When prompted, enter a PIN and verify it. Outlook on your iPhone is now ready to be used.
   
 :::image type="content" source="media/set-pin.png" alt-text="Configura un PIN para acceder a los datos de tu empresa.":::
 
@@ -106,7 +108,7 @@ Para comenzar la configuración en su teléfono Android, vaya a la Play Store.
   
 :::image type="content" source="media/aos-play-store.png" alt-text="On the Android home screen, tap Play Store":::
   
-Escriba Microsoft Outlook en el cuadro de búsqueda de Google Play y pulse **Instalar**.Cuando Outlook haya terminado de instalarse, pulse **Abrir**.
+Enter Microsoft Outlook in the Google Play search box and tap **Install**. Once Outlook is done installing, tap **Open**.
   
 :::image type="content" source="media/aos-install-outlook.png" alt-text="Tap Open to open Outlook app.":::
   
@@ -122,7 +124,7 @@ Instale Portal de empresa de Intune desde Play Store.
   
 :::image type="content" source="media/intune-app-google-play-store.png" alt-text="Botón de instalación para Portal de empresa de Intune en Google Play Store.":::
   
-Vuelva a abrir Outlook e introduzca y confirme un PIN. La aplicación de Outlook ya está lista para que la use.
+Open Outlook again, and enter and confirm a PIN. Your Outlook app is now ready for use.
   
 :::image type="content" source="media/aos-outlook-pin.png" alt-text="Configurar el PIN para Outlook en Android.":::
 

@@ -6,17 +6,19 @@ audience: ITPro
 author: dansimp
 ms.author: dansimp
 manager: dansimp
-ms.collection: M365-security-compliance
+ms.collection:
+- m365-security
+- tier2
 ms.topic: article
 ms.localizationpriority: medium
 ms.reviewer: ''
 search.appverid: met150
-ms.openlocfilehash: 6763fbbf9d241d67df8b5966576cdf5d5d403d73
-ms.sourcegitcommit: c29af68260ba8676083674b3c70209bff2c2e362
+ms.openlocfilehash: ec068b440762355e8218f0488d0dce8e77758210
+ms.sourcegitcommit: 4e42bafee965446f44f7f57d1defed2b9b24fce8
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/16/2022
-ms.locfileid: "67735776"
+ms.lasthandoff: 09/30/2022
+ms.locfileid: "68224676"
 ---
 # <a name="about-the-microsoft-bug-bounty-program"></a>Acerca del programa de recompensas por errores de Microsoft
 
