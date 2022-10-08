@@ -9,23 +9,26 @@ audience: Admin
 ms.topic: how-to
 ms.service: microsoft-365-security
 ms.subservice: other
-ms.date: 09/15/2022
+ms.date: 10/05/2022
 ms.localizationpriority: high
 ms.collection:
 - M365-Campaigns
 - m365solution-smb
+- highpri
+- m365-security
+- tier1
 ms.custom:
 - MiniMaven
 search.appverid:
 - BCS160
 - MET150
 description: Obtenga ayuda para aumentar el nivel de protección en Microsoft 365 Empresa Premium
-ms.openlocfilehash: acb132d401a4f2ad2754db9e448140ccad692a31
-ms.sourcegitcommit: c29af68260ba8676083674b3c70209bff2c2e362
+ms.openlocfilehash: e6220e0cf8ff8208efe1a0f036300fa631fdd201
+ms.sourcegitcommit: edc9d4dec92ca81cff39bbf9590f1cd3a75ec436
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/16/2022
-ms.locfileid: "67737948"
+ms.lasthandoff: 10/06/2022
+ms.locfileid: "68484399"
 ---
 # <a name="protect-against-malware-and-other-cyberthreats-with-microsoft-365-business-premium"></a>Protección contra malware y otras ciberamenazas con Microsoft 365 Empresa Premium
 
@@ -49,7 +52,7 @@ La suscripción incluye [directivas de seguridad preestablecidas](../security/of
 
 ### <a name="what-are-preset-security-policies"></a>¿Qué son las directivas de seguridad preestablecidas?
 
-Las directivas de seguridad preestablecidas proporcionan protección para el contenido de sus correos electrónicos y colaboraciones. Estas directivas constan de:
+Preset security policies provide protection for your email and collaboration content. These policies consist of:
 
 - *Perfiles*, que determinan el nivel de protección
 - *Directivas* (como antispam, antimalware, antiphishing, configuración de suplantación, suplantación, datos adjuntos seguros y vínculos seguros)
@@ -68,7 +71,7 @@ En la tabla siguiente se resumen los niveles de protección y los tipos de direc
 
 ### <a name="policy-order-of-priority"></a>Orden de prioridad de la directiva
 
-Si a los usuarios se les asignan varias directivas, se usa un orden de prioridad para aplicar las directivas. El orden de prioridad funciona de la siguiente manera:
+If users are assigned multiple policies, an order of priority is used to apply the policies. The order of priority works as follows:
 
 1. **La protección estricta** recibe la prioridad más alta e invalida todas las demás directivas.
 
@@ -99,7 +102,7 @@ Para asignar directivas de seguridad preestablecidas, siga estos pasos:
 
 2. Vaya a **Correo electrónico y colaboración** \> **Directivas y reglas** \> **Directivas de amenazas** \> **Directivas de seguridad prestablecidas** en la sección **Directivas con plantilla**. (Para ir directamente a la página de **Directivas de seguridad preestablecidas**, use <https://security.microsoft.com/presetSecurityPolicies>.)
 
-3. En la página **Directivas de seguridad preestablecidas**, en la sección **Protección estándar** o **Protección estricta**, cambie el botón de alternancia de **Deshabilitado** a **Habilitado** y, a continuación, seleccione **Administrar**.
+3. En la página **Directivas de seguridad preestablecidas** , en la sección **Protección estándar** o **Protección estricta** , seleccione **Administrar configuración de protección**.
 
 4. El asistente **Aplicar protección estándar** o **Aplicar protección estricta** se inicia en un control flotante. En la página **Protecciones de EOP que se aplican a**, identifique los destinatarios internos a los que se aplican las directivas (condiciones de destinatario):
    - **Usuarios**
@@ -108,7 +111,7 @@ Para asignar directivas de seguridad preestablecidas, siga estos pasos:
 
    Haga clic en el cuadro correspondiente, comience a escribir un valor y seleccione el valor que desee de los resultados. Repita este proceso tantas veces como sea necesario. Para quitar un valor existente, haga clic en el icono **Quitar** junto al valor.
 
-   Para los usuarios o grupos, puede utilizar la mayoría de los identificadores (nombre, nombre para mostrar, alias, dirección de correo electrónico, nombre de la cuenta, etc.), pero el nombre para mostrar correspondiente se muestra en los resultados. Para los usuarios, introduzca un asterisco (\*) por sí mismo para ver todos los valores disponibles.
+   For users or groups, you can use most identifiers (name, display name, alias, email address, account name, etc.), but the corresponding display name is shown in the results. For users, type an asterisk (\*) by itself to see all available values.
 
    Para especificar una exclusión, active la casilla **Excluir estos usuarios, grupos y dominios** y, a continuación, especifique los usuarios, grupos o dominios que se van a excluir.
 
@@ -180,7 +183,7 @@ Puede ver las alertas en el portal de Microsoft 365 Defender o en el portal de c
 
 | Tipo de la alerta.  | Qué hacer  |
 |---------|---------|
-| Alerta de seguridad, como cuando un usuario hace clic en un vínculo malintencionado, se notifica un correo electrónico como malware o phish, o se detecta que un dispositivo contiene malware.     | Vaya al <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">portal de Microsoft 365 Defender</a> y, en **Correo electrónico & colaboración**, seleccione **Directivas & reglas** > **Directiva de alertas**. Como alternativa, puede ir directamente a <https://security.microsoft.com/alertpolicies>. |
+| Alerta de seguridad, como cuando un usuario hace clic en un vínculo malintencionado, se notifica un correo electrónico como malware o phish, o se detecta que un dispositivo contiene malware.     | Go to the <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">Microsoft 365 Defender portal</a> and under **Email & collaboration** select **Policies & rules** > **Alert policy**. Alternatively, you can go directly to <https://security.microsoft.com/alertpolicies>. |
 | Alerta de cumplimiento, como cuando un usuario comparte información delicada o confidencial (alerta de prevención de pérdida de datos) o hay un volumen inusual de uso compartido de archivos externos (alerta de gobernanza de la información)    | Vaya al <a href="https://go.microsoft.com/fwlink/p/?linkid=2077149" target="_blank">Portal de cumplimiento de Microsoft Purview</a> y, a continuación, seleccione **Directivas** > **Alerta** > **Directivas de alerta**.  |
 
 Para obtener más información, vea [Ver alertas](../compliance/alert-policies.md#view-alerts).

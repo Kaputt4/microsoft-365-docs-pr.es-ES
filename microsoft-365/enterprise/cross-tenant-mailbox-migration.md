@@ -15,13 +15,14 @@ ms.custom:
 - admindeeplinkMAC
 - admindeeplinkEXCHANGE
 ms.collection:
+- scotvorg
 - M365-subscription-management
-ms.openlocfilehash: 3867be6d179ee8b014563c898562c3eaeb20546e
-ms.sourcegitcommit: 0af064e8b6778060f1bd365378d69b16fc9949b5
+ms.openlocfilehash: 7809e71165216f4b18ffae5e0151cdd941681832
+ms.sourcegitcommit: edc9d4dec92ca81cff39bbf9590f1cd3a75ec436
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/15/2022
-ms.locfileid: "67731362"
+ms.lasthandoff: 10/06/2022
+ms.locfileid: "68484616"
 ---
 # <a name="cross-tenant-mailbox-migration-preview"></a>Migración de buzones entre inquilinos (versión preliminar)
 
@@ -42,7 +43,7 @@ En este artículo se describe el proceso de traslados de buzones entre inquilino
 > Actualmente estamos investigando un problema en el que, en algunos escenarios, los datos de chat de Teams también se mantienen en el buzón, pero no se migran los datos de chat de Teams. Si se deben conservar los datos de chat de Teams, no use esta característica para migrar el buzón.
 
 > [!NOTE]
-> Si está interesado en obtener una vista previa de nuestra nueva característica Uso compartido de dominios para correo electrónico junto con las migraciones de buzones entre inquilinos, complete el formulario en [aka.ms/domainshringpreview](https://aka.ms/domainshringpreview). El uso compartido de dominios para correo electrónico permite a los usuarios de inquilinos independientes de Microsoft 365 enviar y recibir correo electrónico mediante direcciones del mismo dominio personalizado. La característica está pensada para resolver escenarios en los que los usuarios de inquilinos independientes necesitan representar una marca corporativa común en sus direcciones de correo electrónico. La versión preliminar actual admite el uso compartido de dominios de forma indefinida y dominios compartidos durante la coexistencia de migración de buzones entre inquilinos.
+> Si está interesado en obtener una vista previa de nuestra nueva característica Uso compartido de dominios para correo electrónico junto con las migraciones de buzones entre inquilinos, complete el formulario en [aka.ms/domainsharingpreview](https://aka.ms/domainsharingpreview). El uso compartido de dominios para correo electrónico permite a los usuarios de inquilinos independientes de Microsoft 365 enviar y recibir correo electrónico mediante direcciones del mismo dominio personalizado. La característica está pensada para resolver escenarios en los que los usuarios de inquilinos independientes necesitan representar una marca corporativa común en sus direcciones de correo electrónico. La versión preliminar actual admite el uso compartido de dominios de forma indefinida y dominios compartidos durante la coexistencia de migración de buzones entre inquilinos.
 
 ## <a name="preparing-source-and-target-tenants"></a>Preparación de inquilinos de origen y destino
 
@@ -189,7 +190,8 @@ Para obtener el identificador de inquilino de una suscripción, inicie sesión e
 
 2. Acepte la aplicación cuando aparezca el elemento emergente. También puede iniciar sesión en el portal de Azure Active Directory y buscar la aplicación en Aplicaciones empresariales.
 
-3. Cree una nueva relación de organización o edite el objeto de relación de la organización existente con el inquilino de destino (destino) en Exchange Online PowerShell:
+3. [Conéctese a Exchange Online PowerShell](/powershell/exchange/connect-to-exchange-online-powershell) en el inquilino de origen Exchange Online.
+4. Cree una nueva relación de organización o edite el objeto de relación de la organización existente con el inquilino de destino (destino) en Exchange Online PowerShell:
 
    ```powershell
    $targetTenantId="[tenant id of your trusted partner, where the mailboxes are being moved to]"
@@ -215,7 +217,7 @@ Para obtener el identificador de inquilino de una suscripción, inicie sesión e
 Puede comprobar la configuración de migración de buzones entre inquilinos ejecutando el cmdlet [Test-MigrationServerAvailability](/powershell/module/exchange/Test-MigrationServerAvailability) en el extremo de migración entre inquilinos que creó en el inquilino de destino.
 
 ```powershell
-Test-MigrationServerAvailability -EndPoint "Migration endpoint for cross-tenant mailbox moves" - TestMailbox "Primary SMTP of MailUser object in target tenant"
+Test-MigrationServerAvailability -EndPoint "Migration endpoint for cross-tenant mailbox moves" -TestMailbox "Primary SMTP of MailUser object in target tenant"
 ```
 
 ### <a name="move-mailboxes-back-to-the-original-source"></a>Volver a mover los buzones al origen original
@@ -363,11 +365,20 @@ T2Tbatch                   Syncing ExchangeRemoteMove 1
 ```
 
 > [!NOTE]
-> La dirección de correo electrónico del archivo CSV debe ser la especificada en el inquilino de destino, no el inquilino de origen.
+> La dirección de correo electrónico del archivo CSV debe ser la especificada en el inquilino de destino (por ejemplo, userA@targettenant.onmicrosoft.com), no la del inquilino de origen.
 >
 > [Para obtener más información sobre el cmdlet, haga clic aquí.](/powershell/module/exchange/new-migrationbatch)
 >
-> [Para ver un archivo CSV de ejemplo, haga clic aquí.](/exchange/csv-files-for-mailbox-migration-exchange-2013-help)
+> [Para obtener información de archivo CSV de ejemplo, haga clic aquí.](/exchange/csv-files-for-mailbox-migration-exchange-2013-help)
+
+A continuación se muestra un archivo CSV de ejemplo mínimo:
+
+```csv
+EmailAddress
+userA@targettenant.onmicrosoft.com
+userB@targettenant.onmicrosoft.com
+userC@targettenant.onmicrosoft.com
+```
 
 El envío por lotes de migración también se admite desde el nuevo [Centro de administración de Exchange](https://go.microsoft.com/fwlink/p/?linkid=2059104) al seleccionar la opción entre inquilinos.
 
@@ -513,9 +524,9 @@ No, los nombres de dominio de inquilino de origen y de inquilino de destino debe
 
 Sí, sin embargo, solo conservamos los permisos de almacén como se describe en estos artículos:
 
-- [Microsoft Docs | Administración de permisos para destinatarios en Exchange Online](/exchange/recipients-in-exchange-online/manage-permissions-for-recipients)
+- [Administración de permisos para destinatarios en Exchange Online](/exchange/recipients-in-exchange-online/manage-permissions-for-recipients)
 
-- [Soporte técnico de Microsoft | Cómo conceder permisos de buzón de Exchange y Outlook en Office 365 dedicado](https://support.microsoft.com/topic/how-to-grant-exchange-and-outlook-mailbox-permissions-in-office-365-dedicated-bac01b2c-08ff-2eac-e1c8-6dd01cf77287)
+- [Cómo conceder permisos de buzón de Exchange y Outlook en Office 365 dedicado](https://support.microsoft.com/topic/how-to-grant-exchange-and-outlook-mailbox-permissions-in-office-365-dedicated-bac01b2c-08ff-2eac-e1c8-6dd01cf77287)
 
 ### <a name="do-you-have-any-recommendations-for-batches"></a>¿Tiene alguna recomendación para lotes?
 
@@ -554,6 +565,15 @@ Estas conversiones se producen automáticamente durante el proceso de migración
 ### <a name="at-which-step-should-i-assign-the-exchange-online-license-to-destination-mailusers"></a>¿En qué paso debo asignar la licencia de Exchange Online a mailUsers de destino?
 
 Esto se puede hacer antes de que se complete la migración, pero no debe asignar una licencia antes de marcar el atributo _ExchangeGuid_ o se producirá un error en la conversión del objeto MailUser al buzón y, en su lugar, se creará un nuevo buzón. Para mitigar este riesgo, es mejor esperar hasta que se complete la migración y asignar licencias durante el período de gracia de 30 días.
+
+### <a name="can-i-use-azure-ad-connect-to-sync-users-to-the-new-tenant-if-i-am-keeping-the-on-prem-active-directory"></a>¿Puedo usar Azure AD Connect para sincronizar usuarios con el nuevo inquilino si mantengo la instancia local de Active Directory?
+
+Sí. Es posible que dos instancias de Azure AD Connect se sincronicen con inquilinos diferentes.
+Sin embargo, hay algunas cosas que debe tener en cuenta.
+
+- No se debe aprovisionar previamente las cuentas del usuario con el script proporcionado en este artículo. En su lugar, se puede realizar una sincronización de unidad organizativa selectiva de los usuarios en el ámbito de la migración para rellenar el inquilino de destino; recibirá una advertencia sobre que el UPN no coincide durante la configuración de Azure AD Connect.
+- En función del estado actual de Hybrid Exchange, debe comprobar que los objetos de directorio local tienen los atributos necesarios (como msExchMailboxGUID y proxyAddresses) rellenados correctamente antes de intentar sincronizar con otro inquilino, o se producirán problemas con buzones dobles y errores de migración.
+- Debe realizar algunos pasos adicionales para administrar la transición de UPN y cambiarla localmente una vez completada la migración para un usuario, a menos que también mueva el dominio personalizado durante una migración de paso a paso.
 
 ## <a name="known-issues"></a>Problemas conocidos
 

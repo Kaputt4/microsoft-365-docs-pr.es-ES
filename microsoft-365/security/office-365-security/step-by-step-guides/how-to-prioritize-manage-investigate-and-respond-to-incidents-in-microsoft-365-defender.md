@@ -13,16 +13,19 @@ author: MSFTTracyP
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
-ms.collection: m365-guidance-templates
+ms.collection:
+- m365-guidance-templates
+- m365-security
+- tier3
 ms.topic: how-to
 ms.subservice: mdo
 search.appverid: met150
-ms.openlocfilehash: 942a0d6462e59d843bd3473936b1620b6af7b797
-ms.sourcegitcommit: c29af68260ba8676083674b3c70209bff2c2e362
+ms.openlocfilehash: 171f4f5d727d98ee1f00af697e75992ff6dbe911
+ms.sourcegitcommit: edc9d4dec92ca81cff39bbf9590f1cd3a75ec436
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/16/2022
-ms.locfileid: "67737222"
+ms.lasthandoff: 10/06/2022
+ms.locfileid: "68484223"
 ---
 # <a name="prioritize-manage-investigate--respond-to-incidents-in-microsoft-365-defender"></a>Priorizar, administrar, investigar & responder a incidentes en Microsoft 365 Defender
 
@@ -41,7 +44,7 @@ Cuando se carga la página Incidente, puede filtrar y priorizar haciendo clic en
 
 Ahora tiene una lista con prioridad de incidentes, desde la que puede seleccionar cambiar el nombre, asignar, clasificar, etiquetar, cambiar el estado o agregar comentarios mediante el botón Administrar incidentes.
 
-Use los filtros para asegurarse de que se incluyen los elementos de Microsoft Defender para Office.
+Use los filtros para asegurarse de que se incluyen Microsoft Defender para los elementos de Office.
 
 Si busca alertas específicas, use la funcionalidad de búsqueda de incidentes (*buscar nombre o identificador*) o considere la posibilidad de usar el filtrado de cola de alertas en una alerta específica.
 

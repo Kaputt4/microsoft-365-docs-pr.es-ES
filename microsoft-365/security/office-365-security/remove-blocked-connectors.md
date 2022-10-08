@@ -11,17 +11,18 @@ ms.date: ''
 ms.localizationpriority: medium
 ms.assetid: ''
 ms.collection:
-- M365-security-compliance
+- m365-security
 ms.custom: ''
 description: Obtenga información sobre cómo quitar conectores bloqueados en Microsoft 365 Defender.
 ms.subservice: mdo
 ms.service: microsoft-365-security
-ms.openlocfilehash: f15a782d9acac240a091e4a6670e00d83bead517
-ms.sourcegitcommit: ecc04b5b8f84b34255a2d5e90b5ab596af0d16c7
+search.appverid: met150
+ms.openlocfilehash: e376676045a68d4127fbdd7eb05e0000c6e0788d
+ms.sourcegitcommit: edc9d4dec92ca81cff39bbf9590f1cd3a75ec436
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/01/2022
-ms.locfileid: "67495827"
+ms.lasthandoff: 10/06/2022
+ms.locfileid: "68484311"
 ---
 # <a name="remove-blocked-connectors-from-the-restricted-entities-portal"></a>Eliminación de conectores bloqueados del portal de entidades restringidas
 
@@ -60,11 +61,11 @@ Hay 2 tipos de entidades restringidas:
   - Para quitar conectores del portal de entidades restringidas, debe ser miembro de los grupos de roles Administración de la **organización** o **Administrador de seguridad** .
   - Para el acceso de solo lectura al portal de entidades restringidas, debe ser miembro de los grupos de roles **Lector global** o **Lector de seguridad** .
 
-  Para obtener más información, vea los [permisos en Exchange Online](/exchange/permissions-exo/permissions-exo).
+  Para obtener más información, consulte los [permisos en Exchange Online](/exchange/permissions-exo/permissions-exo).
 
   > [!NOTE]
   >
-  > - La adición de usuarios al rol correspondiente de Azure Active Directory en el Centro de administración de Microsoft 365 proporciona a los usuarios los permisos necesarios _y_ los permisos para otras características de Microsoft 365. Para obtener más información, consulte [Acerca de los roles de administrador](../../admin/add-users/about-admin-roles.md).
+  > - Adding users to the corresponding Azure Active Directory role in the Microsoft 365 admin center gives users the required permissions _and_ permissions for other features in Microsoft 365. For more information, see [About admin roles](../../admin/add-users/about-admin-roles.md).
   >
   > - El grupo de roles **Administración de organización de solo lectura** en [Exchange Online](/Exchange/permissions-exo/permissions-exo#role-groups) también proporciona acceso de solo lectura a la característica.
 

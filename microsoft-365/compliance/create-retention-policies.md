@@ -11,19 +11,20 @@ ms.topic: conceptual
 ms.service: O365-seccomp
 ms.localizationpriority: high
 ms.collection:
-- M365-security-compliance
+- purview-compliance
+- tier1
 - SPO_Content
 ms.custom: admindeeplinkCOMPLIANCE
 search.appverid:
 - MOE150
 - MET150
 description: Use una directiva de retención para controlar de forma eficaz el contenido que los usuarios generan con el correo electrónico, los documentos y las conversaciones. Conserve lo que desee y libérese de lo que no quiere.
-ms.openlocfilehash: a6b8e346547d246322593c67a07a0eaeb9f13c18
-ms.sourcegitcommit: 702fba4b6e6210bb7933cdbff0ad72426fcb9ef2
+ms.openlocfilehash: e8efe7834f20b651d875a17cf59413edb63bd6b1
+ms.sourcegitcommit: edc9d4dec92ca81cff39bbf9590f1cd3a75ec436
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/13/2022
-ms.locfileid: "67336318"
+ms.lasthandoff: 10/06/2022
+ms.locfileid: "68484267"
 ---
 # <a name="create-and-configure-retention-policies"></a>Crear y configurar directivas de retención
 
@@ -37,6 +38,8 @@ Para obtener más información sobre las directivas de retención y cómo funcio
 
 > [!NOTE]
 > La información de esta página es para los administradores de cumplimiento normativo. Si no es administrador y quiere entender cómo se configuraron las directivas de retención para las aplicaciones que usa, póngase en contacto con el departamento de soporte técnico, el departamento de TI o el administrador. Si ve mensajes sobre directivas de retención en los chats de Teams y en los mensajes de canal, puede serle útil revisar [Mensajes de Teams sobre directivas de retención](https://support.microsoft.com/office/teams-messages-about-retention-policies-c151fa2f-1558-4cf9-8e51-854e925b483b).
+
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
 
 ## <a name="before-you-begin"></a>Antes de empezar
 
@@ -69,7 +72,7 @@ Cuando selecciona una de las ubicaciones de Teams o Yammer durante la creación 
 > [!NOTE]
 > Al usar directivas adaptables en lugar de estáticas, puede configurar una única directiva de retención que incluya tanto ubicaciones de Teams como de Yammer. No sucede lo mismo con las directivas estáticas, ya que las ubicaciones de Teams y Yammer requieren su propia directiva de retención.
 
-Si tiene más de una directiva de retención y, además, utiliza etiquetas de retención, consulte [Los principios de la retención o qué tiene prioridad](retention.md#the-principles-of-retention-or-what-takes-precedence) para entender qué resultado se obtiene cuando varias configuraciones de retención se aplican al mismo contenido.
+Cuando tiene más de una directiva de retención y cuando también usa etiquetas de retención, consulte [Los principios de retención o ¿qué tiene prioridad?](retention.md#the-principles-of-retention-or-what-takes-precedence) para comprender el resultado cuando se aplican varias configuraciones de retención al mismo contenido.
 
 ### <a name="retention-policy-for-teams-locations"></a>Directiva de retención para ubicaciones de Teams
 
@@ -84,18 +87,18 @@ Si tiene más de una directiva de retención y, además, utiliza etiquetas de re
 
 4. Según el ámbito seleccionado:
     
-    - Si ha elegido **Adaptable**: en la página **Elegir ámbitos y ubicaciones de directivas adaptables**, seleccione **Agregar ámbitos** y seleccione uno o varios ámbitos adaptables que se hayan creado. A continuación, seleccione una o más ubicaciones. Las ubicaciones que podrá seleccionar dependen de los [tipos de ámbito](retention-settings.md#configuration-information-for-adaptive-scopes) que se hayan agregado. Por ejemplo, si solo ha agregado un tipo de ámbito de **Usuario**, podrá seleccionar **chats de Teams** pero no **mensajes de canal de Teams**. 
+    - Si ha elegido **Adaptable**: en la página **Elegir ámbitos y ubicaciones de directivas adaptables**, seleccione **Agregar ámbitos** y seleccione uno o varios ámbitos adaptables que se hayan creado. A continuación, seleccione una o más ubicaciones. Las ubicaciones que podrá seleccionar dependen de los [tipos de ámbito](retention-settings.md#configuration-information-for-adaptive-scopes) que se hayan agregado. Por ejemplo, si solo ha agregado un tipo de ámbito de **Usuario**, podrá seleccionar **chats de Teams** , pero no mensajes de **canal de Teams**. 
     
     - Si ha elegido **Estática**: en la página **Elegir ubicaciones para aplicar la directiva**, seleccione una o más ubicaciones para Teams:
         - **mensajes de canal de Teams**: mensajes de chats de canales estándar y compartidos, y reuniones de canales estándar y compartidos, pero no de [canales privados](/microsoftteams/private-channels) que tienen su propia ubicación de directiva.
-        - **Chats de Teams**: mensajes de chats privados 1:1, chats grupales y chats de reunión.
+        - **Chats de Teams**: mensajes de chats privados 1:1, chats de grupo, chats de reuniones y chat con usted mismo.
         - **Mensajes del canal privado de Teams**: Mensajes de chats de canales privados y reuniones de canales privados. Si selecciona esta opción, no podrá seleccionar las demás ubicaciones de Teams en la misma directiva de retención.
         
        De forma predeterminada, [se seleccionan todos los equipos y todos los usuarios](retention-settings.md#a-policy-that-applies-to-entire-locations), pero puede refinar esto al seleccionar la [**Elegir** y **Excluir** opciones](retention-settings.md#a-policy-with-specific-inclusions-or-exclusions).
 
 5. En la página **Decidir si quiere conservar el contenido, eliminarlo, o ambos**, especifique las opciones de configuración para conservar y eliminar el contenido.
 
-   Puede crear una directiva de retención que sólo retenga el contenido sin eliminarlo, que retenga y luego elimine después de un período de tiempo determinado, o que sólo elimine el contenido después de un período de tiempo determinado. Para saber más, vea la [Configuración para conservar y eliminar contenido](retention-settings.md#settings-for-retaining-and-deleting-content).
+   You can create a retention policy that just retains content without deleting, retains and then deletes after a specified period of time, or just deletes content after a specified period of time. For more information, see [Settings for retaining and deleting content](retention-settings.md#settings-for-retaining-and-deleting-content).
 
 6. Complete la configuración y guarde los ajustes.
 
@@ -103,7 +106,7 @@ Para obtener instrucciones sobre cuándo usar directivas de retención para Team
 
 Para obtener detalles técnicos sobre el funcionamiento de la retención de Teams, incluidos los elementos de los mensajes admitidos para la retención e información sobre los períodos de tiempo con tutoriales de ejemplo, vea [Más información sobre la retención de Microsoft Teams](retention-policies-teams.md).
 
-#### <a name="known-configuration-issues"></a>Problemas de configuración conocidos
+#### <a name="known-configuration-issues-for-teams-retention-policies"></a>Problemas de configuración conocidos para las directivas de retención de Teams
 
 - Aunque puede seleccionar la opción para iniciar el período de retención en el que se modificaron los elementos por última vez, siempre se usa el valor **Cuando se crearon los elementos**. Para los mensajes que se editan, se guarda una copia del mensaje original con la marca de tiempo original para identificar cuándo se creó este mensaje antes de editar, y el mensaje después de editar tiene una marca de tiempo más reciente.
 
@@ -140,7 +143,7 @@ Es posible que una directiva de retención que se aplique a los grupos de Micros
 
 4. Según el ámbito seleccionado:
     
-    - Si ha elegido **Adaptable**: en la página **Elegir ámbitos y ubicaciones de directivas adaptables**, seleccione **Agregar ámbitos** y seleccione uno o varios ámbitos adaptables que se hayan creado. A continuación, seleccione una o más ubicaciones. Las ubicaciones que podrá seleccionar dependen de los [tipos de ámbito](retention-settings.md#configuration-information-for-adaptive-scopes) que se hayan agregado. Por ejemplo, si solo ha agregado un tipo de ámbito de **Usuario**, podrá seleccionar **mensajes de usuario de Yammer** pero no **mensajes de la comunidad de Yammer**. 
+    - Si ha elegido **Adaptable**: en la página **Elegir ámbitos y ubicaciones de directivas adaptables**, seleccione **Agregar ámbitos** y seleccione uno o varios ámbitos adaptables que se hayan creado. A continuación, seleccione una o más ubicaciones. Las ubicaciones que podrá seleccionar dependen de los [tipos de ámbito](retention-settings.md#configuration-information-for-adaptive-scopes) que se hayan agregado. Por ejemplo, si solo ha agregado un tipo de ámbito de **Usuario**, podrá seleccionar mensajes de usuario de **Yammer** , pero no **mensajes de la comunidad de Yammer**. 
     
     - Si ha elegido **Estática**: en la página **Elegir ubicaciones para aplicar la directiva**, alterne entre una o ambas ubicaciones para Yammer: **mensajes de la comunidad de Yammer** y **mensajes de usuario de Yammer**.
         
@@ -152,15 +155,21 @@ Es posible que una directiva de retención que se aplique a los grupos de Micros
 
 5. En la página **Decidir si quiere conservar el contenido, eliminarlo, o ambos**, especifique las opciones de configuración para conservar y eliminar el contenido. 
     
-    Puede crear una directiva de retención que sólo retenga el contenido sin eliminarlo, que retenga y luego elimine después de un período de tiempo determinado, o que sólo elimine el contenido después de un período de tiempo determinado. Para saber más, vea la [Configuración para conservar y eliminar contenido](retention-settings.md#settings-for-retaining-and-deleting-content).
+    You can create a retention policy that just retains content without deleting, retains and then deletes after a specified period of time, or just deletes content after a specified period of time. For more information, see [Settings for retaining and deleting content](retention-settings.md#settings-for-retaining-and-deleting-content).
 
 6. Complete la configuración y guarde los ajustes.
 
-Para obtener más información sobre cómo funcionan las directivas de retención de Yammer, consulte [Obtener información sobre la retención para Yammer](retention-policies-yammer.md).
+Para obtener detalles técnicos sobre cómo funciona la retención para Yammer, incluidos los elementos de los mensajes que se admiten para la información de retención y tiempo con tutoriales de ejemplo, consulte [Información sobre la retención para Yammer](retention-policies-yammer.md).
+
+#### <a name="known-configuration-issues-for-yammer-retention-policies"></a>Problemas de configuración conocidos para las directivas de retención de Yammer
+
+- Aunque puede seleccionar la opción para iniciar el período de retención en el que se modificaron los elementos por última vez, siempre se usa el valor **Cuando se crearon los elementos**. Para los mensajes que se editan, se guarda una copia del mensaje original con la marca de tiempo original para identificar cuándo se creó este mensaje antes de editar, y el mensaje después de editar tiene una marca de tiempo más reciente.
+
+- Al seleccionar **Editar** para la ubicación de los mensajes del usuario de Yammer, es posible que pueda ver a los invitados y a los usuarios sin buzón de correo. Las directivas de retención no están diseñadas para estos usuarios, así que no los seleccione.
 
 #### <a name="additional-retention-policies-needed-to-support-yammer"></a>Directivas de retención adicionales que se necesitan para admitir Yammer
 
-Yammer ofrece elementos que van más allá de los mensajes de comunidad y los mensajes privados. Para conservar y eliminar los mensajes de correo electrónico de su red de Yammer, configure una directiva de retención adicional que incluya a los grupos de Microsoft 365 que se usan para Yammer, mediante la ubicación de los **Grupos de Microsoft 365**.
+Yammer is more than just community messages and private messages. To retain and delete email messages for your Yammer network, configure an additional retention policy that includes any Microsoft 365 groups that are used for Yammer, by using the **Microsoft 365 Groups** location.
 
 Esta ubicación también incluirá archivos que se cargan en comunidades de Yammer. Estos archivos se almacenan en el sitio de SharePoint conectado a grupos para la comunidad de Yammer.
 
@@ -184,7 +193,7 @@ Use las siguientes instrucciones para crear directivas de retención que aplique
 
 4. Según el ámbito seleccionado:
     
-    - Si ha elegido **Adaptable**: en la página **Elegir ámbitos y ubicaciones de directivas adaptables**, seleccione **Agregar ámbitos** y seleccione uno o varios ámbitos adaptables que se hayan creado. A continuación, seleccione una o más ubicaciones. Las ubicaciones que podrá seleccionar dependen de los [tipos de ámbito](retention-settings.md#configuration-information-for-adaptive-scopes) que se hayan agregado. Por ejemplo, si solo ha agregado un tipo de ámbito de **Usuario**, podrá seleccionar **correo de Exchange** pero no **sitios de SharePoint**. 
+    - Si ha elegido **Adaptable**: en la página **Elegir ámbitos y ubicaciones de directivas adaptables**, seleccione **Agregar ámbitos** y seleccione uno o varios ámbitos adaptables que se hayan creado. A continuación, seleccione una o más ubicaciones. Las ubicaciones que podrá seleccionar dependen de los [tipos de ámbito](retention-settings.md#configuration-information-for-adaptive-scopes) que se hayan agregado. Por ejemplo, si solo ha agregado un tipo de ámbito de **Usuario**, podrá seleccionar **correo electrónico de Exchange** , pero no **sitios de SharePoint**. 
     
     - Si ha elegido **Estático**: en la página **Elegir ubicaciones**, active o desactive cualquiera de las ubicaciones excepto las de Teams y Yammer. Para cada ubicación, puede dejar de forma predeterminada [aplicar la directiva a toda la ubicación](retention-settings.md#a-policy-that-applies-to-entire-locations), o [especificar lo que se incluye y excluye](retention-settings.md#a-policy-with-specific-inclusions-or-exclusions).
     
@@ -196,7 +205,7 @@ Use las siguientes instrucciones para crear directivas de retención que aplique
 
 5. En la página **Decidir si quiere conservar el contenido, eliminarlo, o ambos**, especifique las opciones de configuración para conservar y eliminar el contenido.
     
-    Puede crear una directiva de retención que sólo retenga el contenido sin eliminarlo, que retenga y luego elimine después de un período de tiempo determinado, o que sólo elimine el contenido después de un período de tiempo determinado. Para más información, consulte [Configuración para retener y eliminar contenido](retention-settings.md#settings-for-retaining-and-deleting-content) en esta página.
+    You can create a retention policy that just retains content without deleting, retains and then deletes after a specified period of time, or just deletes content after a specified period of time. For more information, see [Settings for retaining and deleting content](retention-settings.md#settings-for-retaining-and-deleting-content) on this page.
 
 6. Complete la configuración y guarde los ajustes.
 
