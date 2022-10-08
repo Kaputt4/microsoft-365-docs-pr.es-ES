@@ -5,7 +5,7 @@ author: MikePlumleyMSFT
 manager: serdars
 audience: ITPro
 ms.topic: article
-ms.service: microsoft-365-enterprise
+ms.service: o365-solutions
 ms.collection:
 - highpri
 - SPO_Content
@@ -22,12 +22,12 @@ ms.localizationpriority: high
 f1.keywords: NOCSH
 recommendations: false
 description: Obtenga información sobre los pasos de configuración necesarios para Microsoft 365 para configurar un equipo para la colaboración en tareas, conversaciones y documentación con invitados en Teams.
-ms.openlocfilehash: aacf03129f5b383bddae5424830e524d0f2058cb
-ms.sourcegitcommit: 0af064e8b6778060f1bd365378d69b16fc9949b5
+ms.openlocfilehash: 753b02ef45e0937c09c8707913a2074a26750ae6
+ms.sourcegitcommit: fce27da5140691b013a6f7c0ea9c88b4ea4b7c10
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/15/2022
-ms.locfileid: "67730339"
+ms.lasthandoff: 09/23/2022
+ms.locfileid: "67983176"
 ---
 # <a name="collaborate-with-guests-in-a-team"></a>Colaborar con invitados en un equipo
 
@@ -69,7 +69,7 @@ Si trabaja con invitados de varias organizaciones, tal vez quiera restringir su 
 
 Teams tiene un modificador principal para el acceso de invitados y una amplia variedad de opciones de configuración disponibles para controlar lo que pueden hacer los invitados en un equipo. El modificador principal, **Permitir el acceso de invitados en Teams** debe estar **Activado** para que el acceso de invitados funcione en Teams.
 
-Compruebe que el acceso de invitados esté habilitado en Teams y realice ajustes en la configuración de invitados según las necesidades de la empresa. Tenga en cuenta que esta configuración afecta a todos los equipos.
+Check to ensure that guest access is enabled in Teams and make any adjustment to the guest settings based on your business needs. Keep in mind that these settings affect all teams.
 
 ![Captura de pantalla de la opción de acceso de invitados de Teams.](../media/teams-guest-access-toggle-on.png)
 
@@ -89,7 +89,7 @@ Una vez activado el acceso de invitados de Teams, de manera opcional puede contr
 
 ## <a name="microsoft-365-groups-guest-settings"></a>Configuración de invitados de Grupos de Microsoft 365
 
-Teams usa Grupos de Microsoft 365 para la pertenencia a equipos. La configuración de invitados de Grupos de Microsoft 365 debe estar activada para que funcione el acceso de invitados en Teams.
+Teams uses Microsoft 365 Groups for team membership. The Microsoft 365 Groups guest settings must be turned on in order for guest access in Teams to work.
 
 ![Captura de pantalla de la configuración de invitados de Grupos de Microsoft 365 en el Centro de administración de Microsoft 365.](../media/office-365-groups-guest-settings.png)
 
@@ -154,7 +154,7 @@ Para crear un equipo
 5. Escriba un nombre y una descripción para el equipo y haga clic en **Crear**.
 6. Haga clic **Omitir**.
 
-Invitaremos a los usuarios más tarde. A continuación, es importante comprobar la configuración de uso compartido a nivel de sitio para el sitio de SharePoint asociado al equipo.
+We'll invite users later. Next, it's important to check the site-level sharing settings for the SharePoint site that is associated with the team.
 
 ## <a name="sharepoint-site-level-sharing-settings"></a>Configuración de uso compartido de nivel de sitio de SharePoint
 

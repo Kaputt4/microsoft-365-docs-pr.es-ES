@@ -13,16 +13,19 @@ author: MSFTBen
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
-ms.collection: m365-guidance-templates
+ms.collection:
+- m365-guidance-templates
+- m365-security
+- tier3
 ms.topic: how-to
 ms.subservice: mdo
 search.appverid: met150
-ms.openlocfilehash: b6a4b5ff8b523860204225f7ae8020e7e8fca9ae
-ms.sourcegitcommit: c29af68260ba8676083674b3c70209bff2c2e362
+ms.openlocfilehash: a6f527c8cbc7815da0c54d0958a24b459e0bb8f9
+ms.sourcegitcommit: 2ff545246fec060ea7829da5afbc1cdc698d51ab
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/16/2022
-ms.locfileid: "67737454"
+ms.lasthandoff: 10/04/2022
+ms.locfileid: "68363571"
 ---
 # <a name="use-microsoft-defender-for-office-365-with-sharepoint-online"></a>Uso de Microsoft Defender para Office 365 con SharePoint Online
 
@@ -36,24 +39,25 @@ Microsoft Office SharePoint Online es una herramienta de colaboración de usuari
 - De cinco a diez minutos para realizar estos pasos.
 
 ## <a name="turn-on-microsoft-defender-for-office-365-in-sharepoint-online"></a>Activar Microsoft Defender para Office 365 en SharePoint Online
+
 Si tiene licencia para Microsoft Defender para Office 365 **(evaluación gratuita de 90 días disponible en aka.ms/trymdo)** puede garantizar una protección sin problemas contra el malware de día cero y la hora de la protección contra clics en Microsoft Teams.
 
 Para obtener más información, lea [Paso 1: Usar el portal de Microsoft 365 Defender para activar Datos adjuntos seguros para SharePoint, OneDrive y Microsoft Teams](/microsoft-365/security/office-365-security/turn-on-mdo-for-spo-odb-and-teams#step-1-use-the-microsoft-365-defender-portal-to-turn-on-safe-attachments-for-sharepoint-onedrive-and-microsoft-teams).
 
-1.  Inicie sesión en la [página de configuración de datos adjuntos seguros del centro de seguridad](https://security.microsoft.com/safeattachmentv2).
-1.  Seleccione **Configuración global**.
-1.  Asegúrese de que **Activar Defender para Office 365 para SharePoint, OneDrive y Microsoft Teams** está establecido **en Activado**.
-1.  Haga clic en **Guardar**.
-
+1. Inicie sesión en la [página de configuración de datos adjuntos seguros del centro de seguridad](https://security.microsoft.com/safeattachmentv2).
+1. Seleccione **Configuración global**.
+1. Asegúrese de que **Activar Defender para Office 365 para SharePoint, OneDrive y Microsoft Teams** está establecido **en Activado**.
+1. Seleccione **Guardar**.
 
 ## <a name="stop-infected-file-downloads-from-sharepoint-online"></a>Detener descargas de archivos infectados desde SharePoint Online
 
-De forma predeterminada, los usuarios no pueden abrir, mover, copiar ni compartir archivos malintencionados detectados por datos adjuntos seguros para SharePoint, OneDrive y Microsoft Teams. Sin embargo, la opción *Descargar* sigue estando disponible y debe *deshabilitarse*. 
+De forma predeterminada, los usuarios no pueden abrir, mover, copiar ni compartir archivos malintencionados detectados por datos adjuntos seguros para SharePoint, OneDrive y Microsoft Teams. Sin embargo, la opción *Descargar* sigue estando disponible y debe *deshabilitarse*.
 
 Para obtener más información, lea [Paso 2: (*Recomendado*) Uso de PowerShell de SharePoint Online para evitar que los usuarios descarguen archivos malintencionados](/microsoft-365/security/office-365-security/turn-on-mdo-for-spo-odb-and-teams#step-2-recommended-use-sharepoint-online-powershell-to-prevent-users-from-downloading-malicious-files).
 
-1.  Abra y conéctese a [PowerShell de SharePoint Online](/powershell/sharepoint/sharepoint-online/connect-sharepoint-online).
-1.  Ejecute el siguiente comando: **Set-SPOTenant -DisallowInfectedFileDownload $true**.
+1. Abra y conéctese a [PowerShell de SharePoint Online](/powershell/sharepoint/sharepoint-online/connect-sharepoint-online).
+1. Ejecute el siguiente comando: **Set-SPOTenant -DisallowInfectedFileDownload $true**.
 
 ### <a name="further-reading"></a>Lectura adicional
+
 [Recomendaciones de directiva para proteger archivos y sitios de SharePoint](/microsoft-365/security/office-365-security/sharepoint-file-access-policies)

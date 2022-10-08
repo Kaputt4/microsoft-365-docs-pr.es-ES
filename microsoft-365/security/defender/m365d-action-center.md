@@ -17,19 +17,19 @@ ms.date: 07/27/2022
 manager: dansimp
 audience: ITPro
 ms.collection:
-- M365-security-compliance
-- m365initiative-m365-defender
+- m365-security
+- tier2
 ms.topic: how-to
 ms.custom:
 - autoir
 - admindeeplinkDEFENDER
 ms.reviewer: evaldm, isco
-ms.openlocfilehash: 9a44ea87a38228c5ec012f0fe507bb3c9d6f66bb
-ms.sourcegitcommit: 10e6abe740e27000e223378eb17d657a47555fa8
+ms.openlocfilehash: 884c0af44414e56109995bad4f9ee0bdd6e0f487
+ms.sourcegitcommit: 99b174a8d431092b3cf7d650593248671297fd91
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/31/2022
-ms.locfileid: "67475490"
+ms.lasthandoff: 09/30/2022
+ms.locfileid: "68300374"
 ---
 # <a name="the-action-center"></a>El Centro de actividades
 
@@ -52,7 +52,6 @@ El Centro de acciones unificado ([https://security.microsoft.com/action-center](
 
 Por ejemplo: 
 
-- Si anteriormente usaba el Centro de cumplimiento de Office 365 Security & ([https://protection.office.com](https://protection.office.com)), pruebe el Centro de acciones unificado en el <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">portal de Microsoft 365 Defender</a>.
 - Si usaba el Centro de acciones en el Centro de seguridad de Microsoft Defender ([https://securitycenter.windows.com/action-center](https://securitycenter.windows.com/action-center)), pruebe el Centro de acciones unificado en el <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">portal de Microsoft 365 Defender</a>.
 - Si ya usaba el <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">portal de Microsoft 365 Defender</a>, verá varias mejoras en el Centro de acciones ([https://security.microsoft.com/action-center](https://security.microsoft.com/action-center)).
 
@@ -135,7 +134,7 @@ Para realizar tareas, como aprobar o rechazar acciones pendientes en el Centro d
 |Acción de corrección |Permisos y roles necesarios |
 |--|----|
 |Microsoft Defender para punto de conexión corrección (dispositivos) |**Rol administrador de seguridad** asignado en Azure Active Directory (Azure AD) ([https://portal.azure.com](https://portal.azure.com)) o el Centro de administración de Microsoft 365 ([https://admin.microsoft.com](https://admin.microsoft.com))<br/>--- o ---<br/>**Rol de acciones de corrección activo** asignado en Microsoft Defender para punto de conexión <br/> <br/> Para obtener más información, consulte los siguientes recursos: <br/>- [Roles integrados de Azure AD](/azure/active-directory/roles/permissions-reference)<br/>- [Creación y administración de roles para el control de acceso basado en rol (Microsoft Defender para punto de conexión)](../defender-endpoint/user-roles.md)  |
-|Microsoft Defender para Office 365 corrección (contenido y correo electrónico de Office)  |**Rol administrador de seguridad** asignado en Azure AD ([https://portal.azure.com](https://portal.azure.com)) o en el Centro de administración de Microsoft 365 ([https://admin.microsoft.com](https://admin.microsoft.com))<br/>--- y --- <br/>**Rol de búsqueda y purga** asignado en el Centro de cumplimiento de seguridad & ([https://protection.office.com](https://protection.office.com)) <br/><br/>**IMPORTANTE**: Si tiene asignado el rol **Administrador de seguridad** solo en Office 365 Security & Compliance Center ([https://protection.office.com](https://protection.office.com)), no podrá acceder al Centro de acciones ni a las funcionalidades de Microsoft 365 Defender. Debe tener asignado el rol **Administrador de seguridad** en Azure AD o el Centro de administración de Microsoft 365. <br/><br/>Para obtener más información, consulte los siguientes recursos: <br/>- [Roles integrados de Azure AD](/azure/active-directory/roles/permissions-reference)<br/>- [Permisos en el Centro de cumplimiento de & de seguridad](/microsoft-365/security/office-365-security/permissions-in-the-security-and-compliance-center) |
+|Microsoft Defender para Office 365 corrección (contenido y correo electrónico de Office)  |**Rol administrador de seguridad** asignado en Azure AD ([https://portal.azure.com](https://portal.azure.com)) o en el Centro de administración de Microsoft 365 ([https://admin.microsoft.com](https://admin.microsoft.com))<br/>--- y --- <br/>**Rol de búsqueda y purga** asignado en los roles de [colaboración Email & Microsoft 365 Defender >](https://security.microsoft.com/emailandcollabpermissions) <br/><br/>**IMPORTANTE**: Si tiene asignado el rol **Administrador de seguridad** solo en el Microsoft 365 Defender > [Email & roles de colaboración](https://security.microsoft.com/emailandcollabpermissions), no podrá acceder al Centro de acciones ni a las funcionalidades de Microsoft 365 Defender. Debe tener asignado el rol Administrador de seguridad en Azure AD o el Centro de administración de Microsoft 365. <br/><br/>Para obtener más información, consulte los siguientes recursos: <br/>- [Roles integrados de Azure AD](/azure/active-directory/roles/permissions-reference)<br/>- [Permisos en el Centro de cumplimiento de & de seguridad](/microsoft-365/security/office-365-security/permissions-in-the-security-and-compliance-center) |
 
 > [!TIP]
 > Los usuarios que tengan asignado el rol **de administrador global** en Azure AD pueden aprobar o rechazar cualquier acción pendiente en el Centro de acciones. Sin embargo, como procedimiento recomendado, la organización debe limitar el número de personas que tienen asignado el rol **de administrador global** . Se recomienda usar el **administrador de seguridad**, **las acciones de corrección activas** y los roles **de búsqueda y purga** enumerados en la tabla anterior para los permisos del Centro de acciones.

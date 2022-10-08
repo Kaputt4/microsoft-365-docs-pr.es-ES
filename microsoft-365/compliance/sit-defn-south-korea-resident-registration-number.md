@@ -14,19 +14,22 @@ f1_keywords:
 ms.service: O365-seccomp
 ms.localizationpriority: medium
 ms.collection:
-- M365-security-compliance
+- tier3
+- purview-compliance
 hideEdit: true
 feedback_system: None
 recommendations: false
 description: Definición de entidad de tipo de información confidencial del número de registro residente de Corea del Sur.
-ms.openlocfilehash: 94de2ebb31e8bd7a0d9c175e318e166da691bbca
-ms.sourcegitcommit: 5aed330d8af523f0dffe5e392f1c79f047e38172
+ms.openlocfilehash: d775cadefa4007b2770b42901530c8a78e7f0eb2
+ms.sourcegitcommit: 176bbd29c92e1c0812e8bcd1e1e4938a3e1d7331
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/21/2022
-ms.locfileid: "66999086"
+ms.lasthandoff: 10/05/2022
+ms.locfileid: "68472451"
 ---
 # <a name="south-korea-resident-registration-number"></a>Número de registro de residente de Corea del Sur
+
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
 
 ## <a name="format"></a>Formato
 
@@ -80,5 +83,5 @@ Una política de DLP tiene confianza media en que ha detectado este tipo de info
 - Tarjeta de id. nacional
 - Número de registro de ciudadano
 - Jumin deungnok beonho
-- RRN
+- Rrn
 - 주민등록번호

@@ -14,21 +14,24 @@ f1_keywords:
 ms.service: O365-seccomp
 ms.localizationpriority: medium
 ms.collection:
-- M365-security-compliance
+- tier3
+- purview-compliance
 hideEdit: true
 feedback_system: None
 recommendations: false
 description: Eslovaquia aborda físicamente la definición de entidad de tipo de información confidencial.
-ms.openlocfilehash: 681036c9d8b21585f6458b8656b91f5bae1d4a81
-ms.sourcegitcommit: 5aed330d8af523f0dffe5e392f1c79f047e38172
+ms.openlocfilehash: 25a41b1da13ef3711b092f0b7cf21e38ca017eda
+ms.sourcegitcommit: 176bbd29c92e1c0812e8bcd1e1e4938a3e1d7331
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/21/2022
-ms.locfileid: "66950903"
+ms.lasthandoff: 10/05/2022
+ms.locfileid: "68472231"
 ---
 # <a name="slovakia-physical-addresses"></a>Direcciones físicas de Eslovaquia
 
-Esta entidad con nombre desagregada detecta patrones relacionados con la dirección física de Eslovaquia. También se incluye en la entidad SIT con nombre [todas las direcciones físicas](sit-defn-all-physical-addresses.md) agrupadas.
+Esta entidad con nombre desagregada detecta patrones relacionados con la dirección física de Eslovaquia. También se incluye en [Todas las direcciones físicas ](sit-defn-all-physical-addresses.md) en la entidad no agrupada denominada SIT.
+
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
 
 ## <a name="confidence-level"></a>Nivel de confianza
 

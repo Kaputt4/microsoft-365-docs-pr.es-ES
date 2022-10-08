@@ -7,9 +7,10 @@ author: kwekua
 manager: scotv
 audience: Admin
 ms.topic: article
-ms.service: o365-administration
+ms.service: microsoft-365-business
 ms.localizationpriority: medium
 ms.collection:
+- scotvorg
 - M365-subscription-management
 - Adm_O365
 - Adm_TOC
@@ -19,18 +20,18 @@ ms.custom:
 search.appverid:
 - MET150
 description: Basic Mobility and Security le ayuda a proteger y administrar dispositivos móviles con directivas que controlan el acceso a documentos y correo electrónico de Microsoft 365 de la organización.
-ms.openlocfilehash: 540d4de54deff7236313fca3471e836c293a9665
-ms.sourcegitcommit: 2dedd0f594b817779e034afa6c4418def2382a22
+ms.openlocfilehash: e0a59651974c22428738e38ed42ece0beda2936f
+ms.sourcegitcommit: 0b7070ec119e00e0dafe030bbfbef0ae5c9afa19
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/18/2022
-ms.locfileid: "67796816"
+ms.lasthandoff: 09/29/2022
+ms.locfileid: "68166909"
 ---
 # <a name="capabilities-of-basic-mobility-and-security"></a>Capacidades de Movilidad y seguridad básicas
 
 Basic Mobility and Security puede ayudarle a proteger y administrar dispositivos móviles como iPhones, iPads, Android y Teléfonos Windows usados por usuarios con licencia de Microsoft 365 en su organización. Puede crear directivas de administración de dispositivos móviles con una configuración que pueda ayudar a controlar el acceso al correo electrónico de Microsoft 365 de su organización y a los documentos para dispositivos móviles y aplicaciones compatibles. Si un dispositivo se pierde o se lo roban, puede borrarlo de forma remota para quitar la información confidencial de la organización.
 
-## <a name="supported-operating-systems"></a>Sistemas operativos compatibles 
+## <a name="supported-operating-systems"></a>Sistemas operativos admitidos
 
 Siga la guía de sistemas operativos Microsoft Intune para los sistemas operativos mínimos admitidos para dispositivos por Basic Mobility and Security. Para obtener más información, consulte [Intune sistemas operativos compatibles](/mem/intune/fundamentals/supported-devices-browsers).
 
@@ -95,11 +96,11 @@ En las secciones siguientes se muestra la configuración de directiva que puede 
 
 ## <a name="security-settings"></a>Configuración de seguridad
 
-|Nombre de la opción de configuración|iOS|Android|Samsung Knox|
+|Nombre de valor de configuración|iOS|Android|Samsung Knox|
 |---|---|---|---|
 |Requerir contraseña|Sí|No|No|
 |Evitar contraseña simple|Yes|No|No|
-|Requerir una contraseña alfanumérica|Yes|No|No|
+|Requerir una contraseña alfanumérica|Sí|No|No|
 |Longitud mínima de la contraseña|Sí|Sí|Sí|
 |Número de errores de inicio de sesión antes borrar el dispositivo|Sí|Sí|Sí|
 |Minutos de inactividad antes de bloquear el dispositivo|Sí|Sí|Sí|
@@ -108,7 +109,7 @@ En las secciones siguientes se muestra la configuración de directiva que puede 
 
 ## <a name="encryption-settings"></a>Configuración de cifrado
 
-|Nombre de la configuración|iOS|Android|Samsung Knox|
+|Nombre de valor de configuración|iOS|Android|Samsung Knox|
 |---|---|---|---|
 |Requerir cifrado de datos en dispositivos<sup>1</sup>|No|Sí|Sí|
 
@@ -116,7 +117,7 @@ En las secciones siguientes se muestra la configuración de directiva que puede 
 
 ## <a name="jail-broken-setting"></a>Configuración de descodificación
 
-|Nombre de la configuración|iOS|Android|Samsung Knox|
+|Nombre de valor de configuración|iOS|Android|Samsung Knox|
 |---|---|---|---|
 |El dispositivo no se puede descodificar ni descifrar|Sí|Sí|Sí|
 
@@ -130,12 +131,12 @@ La siguiente opción puede impedir que los usuarios accedan a su correo electró
 
 ## <a name="cloud-settings"></a>Configuración de nube
 
-|Nombre de la configuración|iOS|Android|Samsung Knox|
+|Nombre de valor de configuración|iOS|Android|Samsung Knox|
 |---|---|---|---|
-|Requerir copia de seguridad cifrada|Yes|No|No|
-|Bloquear copia de seguridad en la nube<sup>1</sup>|Yes|No|No|
-|Bloquear la sincronización<sup>de documentos 1</sup>|Yes|No|No|
-|Bloquear sincronización de fotos|Yes|No|No|
+|Requerir copia de seguridad cifrada|Sí|No|No|
+|Bloquear copia de seguridad en la nube<sup>1</sup>|Sí|No|No|
+|Bloquear la sincronización<sup>de documentos 1</sup>|Sí|No|No|
+|Bloquear sincronización de fotos|Sí|No|No|
 |Permitir copia de seguridad de Google|N/D|No|Sí|
 |Permitir la sincronización automática de la cuenta de Google|N/D|No|Sí|
 
@@ -143,29 +144,29 @@ La siguiente opción puede impedir que los usuarios accedan a su correo electró
 
 ## <a name="system-settings"></a>Configuración del sistema
 
-|Nombre de la configuración|iOS|Android|Samsung Knox|
+|Nombre de valor de configuración|iOS|Android|Samsung Knox|
 |---|---|---|---|
-|Bloquear captura de pantalla|Yes|No|Sí|
-|Bloquear el envío de datos de diagnóstico de dispositivos|Yes|No|Sí|
+|Bloquear captura de pantalla|Sí|No|Sí|
+|Bloquear el envío de datos de diagnóstico de dispositivos|Sí|No|Sí|
 
 ## <a name="application-settings"></a>Configuración de aplicaciones
 
-|Nombre de la configuración|iOS|Android|Samsung Knox|
+|Nombre de valor de configuración|iOS|Android|Samsung Knox|
 |---|---|---|---|
 |Bloquear videoconferencias en el dispositivo<sup>1</sup>|Yes|No|No|
-|Bloquear el acceso al almacén<sup>de aplicaciones 1</sup>|Yes|No|Sí|
+|Bloquear el acceso al almacén<sup>de aplicaciones 1</sup>|Sí|No|Sí|
 |Requerir contraseña al acceder a la tienda de aplicaciones|No|Sí|Sí|
 
 <sup>1</sup> Para funcionar, esta configuración requiere dispositivos iOS supervisados. 
 
 ## <a name="device-capabilities-settings"></a>Configuración de las funcionalidades del dispositivo
 
-|Nombre de la configuración|iOS|Android|Samsung Knox|
+|Nombre de valor de configuración|iOS|Android|Samsung Knox|
 |---|---|---|---|
 |Bloquear conexión con almacenamiento extraíble|No|No|Sí|
 |Bloquear conexión Bluetooth|No|No|Sí|
 
-## <a name="additional-settings"></a>Configuración adicional
+## <a name="additional-settings"></a>Otras configuraciones
 
 Puede establecer la siguiente configuración de directiva adicional mediante cmdlets de PowerShell de cumplimiento de seguridad &. Para obtener más información, consulte [Security & Compliance PowerShell](/powershell/exchange/scc-powershell).
 
@@ -173,14 +174,14 @@ Puede establecer la siguiente configuración de directiva adicional mediante cmd
 |---|---|---|
 |CameraEnabled|Sí|Sí|
 |RegionRatings|Yes|No|
-|MoviesRatings|Yes|No|
+|MoviesRatings|Sí|No|
 |TVShowsRating|Yes|No|
-|AppsRatings|Yes|No|
+|AppsRatings|Sí|No|
 |AllowVoiceDialing|Yes|No|
-|AllowVoiceAssistant|Yes|No|
-|AllowAssistantWhileLocked|Yes|No|
-|AllowPassbookWhileLocked|Yes|No|
-|MaxPasswordGracePeriod|Yes|No|
+|AllowVoiceAssistant|Sí|No|
+|AllowAssistantWhileLocked|Sí|No|
+|AllowPassbookWhileLocked|Sí|No|
+|MaxPasswordGracePeriod|Sí|No|
 |PasswordQuality|No|Sí|
 |SystemSecurityTLS|Yes|No|
 |WLANEnabled|No|No|

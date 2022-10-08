@@ -13,16 +13,18 @@ author: mjcaparas
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
-ms.collection: m365-security-compliance
+ms.collection:
+- m365-security
+- tier2
 ms.topic: conceptual
 ms.subservice: mde
 search.appverid: met150
-ms.openlocfilehash: 4e8d05844f812ee91f135deaf339f62dd90493d6
-ms.sourcegitcommit: c29af68260ba8676083674b3c70209bff2c2e362
+ms.openlocfilehash: f7c3bc6abbb4340ae04f94b2f1fb0e031e69fa9d
+ms.sourcegitcommit: d0557f757cfa48330ed57e966033891d10f03688
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/16/2022
-ms.locfileid: "67741815"
+ms.lasthandoff: 10/06/2022
+ms.locfileid: "68492233"
 ---
 # <a name="run-the-client-analyzer-on-macos-and-linux"></a>Ejecutar el analizador de clientes en macOS o Linux
 
@@ -36,7 +38,7 @@ ms.locfileid: "67741815"
 1. Descargue la herramienta [XMDE Client Analyzer](https://aka.ms/XMDEClientAnalyzer) en la máquina macOS o Linux que necesita investigar.
 
    > [!NOTE]
-   > El hash SHA256 actual de "XMDEClientAnalyzer.zip" que se descarga del vínculo anterior es: "bf102a79626c88fe58b5be3034640835f96f54230292486716d72f515875966c".
+   > El hash SHA256 actual de "XMDEClientAnalyzer.zip" que se descarga del vínculo anterior es: "BF102A79626C88FE58B5BE3034640835F96F54230292486716D72F515875966C"
 
 2. Extraiga el contenido de XMDEClientAnalyzer.zip en el equipo.
 
@@ -71,7 +73,7 @@ Abra un terminal o SSH en la máquina correspondiente y ejecute los siguientes c
 > - Además, la herramienta requiere actualmente la versión 3 o posterior de Python para instalarse.
 >
 > - Si se ejecuta en un equipo que no puede usar Python 3 ni capturar el componente lxml, puede descargar una versión basada en binario del analizador que no tenga ninguno de los requisitos: [Binario del analizador de cliente XMDE](https://aka.ms/XMDEClientAnalyzerBinary). <br> Tenga en cuenta que el binario está sin signo actualmente. Para permitir que el paquete se ejecute en MacOS, deberá usar la sintaxis : "spctl --add /Path/To/Application.app".
-> - El hash SHA256 actual de "XMDEClientAnalyzerBinary.zip" que se descarga del vínculo anterior es: "7FE67373CDF493BF2748FD778BD106EE85A71C968D594BCC67C7374620506EF2"
+> - El hash SHA256 actual de "XMDEClientAnalyzerBinary.zip" que se descarga del vínculo anterior es: "6FEB44EF2D9FEB8C8093A016FAB2B5F3ED580931008066BF134E8B1E04CAB222"
 >
 > - Si el dispositivo está detrás de un proxy, simplemente puede pasar el servidor proxy como variable de entorno al script mde_support_tool.sh. Por ejemplo: `https_proxy=https://myproxy.contoso.com:8080 ./mde_support_tool.sh"`
 
@@ -81,7 +83,7 @@ Ejemplo:
 
 Ayuda de sintaxis adicional:
 
-**-h** \# Ayuda<br>
+**-H** \# Ayuda<br>
 \# Mostrar mensaje de ayuda
 
 **Rendimiento** \# Rendimiento<br>
@@ -90,10 +92,10 @@ Ayuda de sintaxis adicional:
 **-o** \# Salida<br>
 \# Especificar la ruta de acceso de destino para el archivo de resultados
 
-**-nz** \# No-Zip<br>
+**-Nz** \# No-Zip<br>
 \# Si se establece, se creará un directorio en lugar de un archivo de archivo resultante.
 
-**-f** \# Fuerza<br>
+**-F** \# Fuerza<br>
 \# Sobrescribir si la salida ya existe en la ruta de acceso de destino
 
 ## <a name="result-package-contents-on-macos-and-linux"></a>Contenido del paquete de resultados en macOS y Linux

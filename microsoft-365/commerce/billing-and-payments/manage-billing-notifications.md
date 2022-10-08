@@ -5,12 +5,13 @@ f1.keywords:
 author: cmcatee-MSFT
 ms.author: cmcatee
 manager: scotv
-ms.reviewer: prkalid, guyb
+ms.reviewer: prkalid, vijayav
 audience: Admin
 ms.topic: article
-ms.service: o365-administration
+ms.service: microsoft-365-business
 ms.localizationpriority: medium
 ms.collection:
+- scotvorg
 - M365-subscription-management
 - Adm_O365
 ms.custom:
@@ -21,12 +22,12 @@ search.appverid:
 - MET150
 description: Obtenga información sobre cómo administrar quién recibe mensajes de correo electrónico de notificación de facturación y datos adjuntos de factura.
 ms.date: 03/17/2021
-ms.openlocfilehash: 11fecb1f5f33810c2bef2425fda845981c2c3193
-ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
+ms.openlocfilehash: 3affe1bea7f9ceebd777a9d54e4a7f7973fae6e9
+ms.sourcegitcommit: 176bbd29c92e1c0812e8bcd1e1e4938a3e1d7331
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/08/2022
-ms.locfileid: "63321577"
+ms.lasthandoff: 10/05/2022
+ms.locfileid: "68472725"
 ---
 # <a name="manage-billing-notifications-and-invoice-attachments"></a>Administrar las notificaciones de facturación y los datos adjuntos en las facturas
 
@@ -88,7 +89,7 @@ Además de los administradores globales y de facturación, enviamos notificacion
 > [!NOTE]
 > Los administradores de facturación también pueden seguir los pasos de esta sección.
 
-Puede tener una copia de la factura de la organización adjuntada como archivo PDF para enviar correos electrónicos de notificación mediante factura cuando esté lista una nueva factura. Siga estos pasos para recibir las facturas como datos adjuntos.
+You can have a copy of your organization's invoice attached as a PDF file to invoice notification emails when a new invoice is ready. Use the following steps to receive invoices as attachments.
 
 1. En el Centro de administración, vaya a la página **Facturación** > <a href="https://go.microsoft.com/fwlink/p/?linkid=853212" target="_blank">Notificaciones de facturación</a>.
 2. En **Configuración de notificaciones de facturación**, seleccione **Editar la configuración de notificaciones**.
@@ -126,7 +127,7 @@ Para recibir sus facturas como datos adjuntos de en las notificaciones de factur
 
 ## <a name="related-content"></a>Contenido relacionado
 
-[Vea su factura o recibo](view-your-bill-or-invoice.md) (artículo)\
+[Vea su factura o recibo](view-your-bill-or-invoice.md) (artículo)
 [Información de facturación de Microsoft 365 para empresas en México](mexico-billing-info.md) (artículo)\
 [Conozca su factura o recibo por la compra de Microsoft 365 para Empresas](understand-your-invoice2.md) (artículo)\
 [Agregar usuarios y asignar licencias al mismo tiempo](../../admin/add-users/add-users.md) (artículo)

@@ -16,19 +16,20 @@ ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection:
-- M365-security-compliance
+- m365-security
 - m365solution-firstincident
 - highpri
+- tier1
 ms.topic: conceptual
 search.appverid:
 - MOE150
 - MET150
-ms.openlocfilehash: da2c331dcbe3b76a6c546eaac62684f0709f6ebd
-ms.sourcegitcommit: 10e6abe740e27000e223378eb17d657a47555fa8
+ms.openlocfilehash: bb7476a4608d7d89fa522529914a0f075311b8cd
+ms.sourcegitcommit: 99b174a8d431092b3cf7d650593248671297fd91
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/31/2022
-ms.locfileid: "67480896"
+ms.lasthandoff: 09/30/2022
+ms.locfileid: "68297868"
 ---
 # <a name="example-of-a-phishing-email-attack"></a>Ejemplo de ataque de correo electrónico de suplantación de identidad
 
@@ -37,7 +38,7 @@ ms.locfileid: "67480896"
 **Se aplica a:**
 - Microsoft 365 Defender
 
-Microsoft 365 Defender puede ayudar a detectar datos adjuntos malintencionados entregados por correo electrónico. Dado que el [Centro de seguridad y cumplimiento de Office 365](https://protection.office.com/) se integra con Microsoft 365 Defender, los analistas de seguridad pueden tener visibilidad sobre las amenazas procedentes de Office 365, como a través de datos adjuntos de correo electrónico.
+Microsoft 365 Defender puede ayudar a detectar datos adjuntos malintencionados que se entregan por correo electrónico y los analistas de seguridad pueden tener visibilidad sobre las amenazas procedentes de Office 365, como a través de datos adjuntos de correo electrónico.
 
 Por ejemplo, a un analista se le asignó un incidente de varias fases.
  

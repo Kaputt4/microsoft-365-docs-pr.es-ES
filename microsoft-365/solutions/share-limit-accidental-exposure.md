@@ -5,7 +5,7 @@ author: MikePlumleyMSFT
 manager: serdars
 audience: ITPro
 ms.topic: article
-ms.service: microsoft-365-enterprise
+ms.service: o365-solutions
 ms.collection:
 - highpri
 - SPO_Content
@@ -18,12 +18,12 @@ ms.localizationpriority: high
 f1.keywords: NOCSH
 recommendations: false
 description: Obtenga información sobre cómo limitar la exposición accidental de información al compartir archivos con usuarios externos a la organización.
-ms.openlocfilehash: 8d9410f1eaffd926bed810b8193df70f0898301d
-ms.sourcegitcommit: 0af064e8b6778060f1bd365378d69b16fc9949b5
+ms.openlocfilehash: 6053f0a9e01a485709fb61f0d12fdb33f123e693
+ms.sourcegitcommit: fce27da5140691b013a6f7c0ea9c88b4ea4b7c10
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/15/2022
-ms.locfileid: "67727224"
+ms.lasthandoff: 09/23/2022
+ms.locfileid: "67985441"
 ---
 # <a name="limit-accidental-exposure-to-files-when-sharing-with-people-outside-your-organization"></a>Limitar la exposición accidental de archivos al compartirlos con usuarios externos a la organización
 
@@ -37,7 +37,7 @@ Si los usuarios de su organización necesitan llevar a cabo un uso compartido si
 
 Se recomienda dejar habilitados los vínculos de tipo *Cualquiera* para el contenido adecuado, ya que es la manera más sencilla de compartir y puede ayudar a reducir el riesgo de que los usuarios soliciten otras soluciones que no están controladas por el departamento de TI. Los vínculos de tipo *Cualquiera* se pueden reenviar a otros usuarios, pero el acceso al archivo solo está disponible para los usuarios que tengan el vínculo.
 
-Si quiere que los usuarios externos a la organización siempre tengan que autenticarse al obtener acceso al contenido de SharePoint, Grupos o Teams, puede desactivar el uso compartido de tipo *Cualquiera*. Esto evitará que los usuarios compartan contenido sin autenticar.
+If you always want people outside your organization to authenticate when accessing content in SharePoint, Groups, or Teams, you can turn off *Anyone* sharing. This will prevent users from unauthenticated sharing of content.
 
 Si deshabilita los vínculos de tipo *Cualquiera*, los usuarios podrán seguir compartiendo con los invitados mediante los vínculos de *Personas específicas*. En este caso, todos los usuarios externos a la organización tendrán que autenticarse antes de poder tener acceso al contenido compartido.
 
@@ -99,7 +99,7 @@ Para limitar el uso compartido externo a los miembros de un grupo de seguridad
 
     ![Captura de pantalla del panel Administrar grupos de seguridad.](/sharepoint/sharepointonline/media/manage-security-groups.png)
 
-4. En el cuadro **Agregar un grupo de seguridad**, escriba un nombre para un grupo de seguridad. Aparece el cuadro de grupo de seguridad.
+4. In the **Add a security group** box, enter a name for a security group. The security group box appears.
 
 5. Junto al nombre del grupo de seguridad, en el menú **Puede compartir con**, seleccione:
 

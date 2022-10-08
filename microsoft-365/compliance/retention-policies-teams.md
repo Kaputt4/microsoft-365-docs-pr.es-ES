@@ -11,18 +11,19 @@ ms.topic: conceptual
 ms.service: O365-seccomp
 ms.localizationpriority: high
 ms.collection:
-- M365-security-compliance
+- purview-compliance
+- tier1
 - SPO_Content
 search.appverid:
 - MOE150
 - MET150
 description: Obtenga información sobre las directivas de retención de Microsoft 365 que se aplican a Microsoft Teams para que pueda administrar la retención automática o la eliminación de mensajes de Teams para su organización.
-ms.openlocfilehash: da8275ff3a5792df3cbc72aea7b8e483a0a5f4f3
-ms.sourcegitcommit: 031b3e963478f642a0d23be37a01f23a01cb3d84
+ms.openlocfilehash: 799556ea2f36f2c90c8182ae5cef0b5311cd9a75
+ms.sourcegitcommit: 7828a1e78c3e6bd8d10289f1ad6c8b6769da0966
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/26/2022
-ms.locfileid: "67441826"
+ms.lasthandoff: 10/07/2022
+ms.locfileid: "68495152"
 ---
 # <a name="learn-about-retention-for-microsoft-teams"></a>Más información sobre la retención para Microsoft Teams
 
@@ -41,16 +42,20 @@ Para otras cargas de trabajo, vea:
 - [Más información sobre la retención para Yammer](retention-policies-yammer.md)
 - [Más información sobre las directivas de retención de Exchange](retention-policies-exchange.md)
 
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
+
 ## <a name="whats-included-for-retention-and-deletion"></a>Qué se incluye para la retención y eliminación
 
 > [!NOTE]
 > Las directivas de retención admiten [ canales compartidos](/MicrosoftTeams/shared-channels). Los canales compartidos heredan la configuración de retención del canal primario.
+> 
+> Las directivas de retención también admiten los mensajes publicados con la característica [chat con usted mismo](https://support.microsoft.com/office/start-a-chat-in-teams-0c71b32b-c050-4930-a887-5afbe742b3d8?storagetype=live#bkmk_chatwithself) .
 
-Los mensajes de los chats de Teams, los mensajes de canal y los mensajes de canal privado se pueden eliminar mediante directivas de retención para Teams y, además del texto de los mensajes, se pueden conservar los elementos siguientes por motivos de cumplimiento: imágenes incrustadas, tablas, vínculos de hipertexto, vínculos a otros mensajes y archivos de Teams y [contenido de tarjetas](/microsoftteams/platform/task-modules-and-cards/what-are-cards). Los mensajes de chat y los mensajes de canal privado incluyen todos los nombres de las personas de la conversación, y los mensajes de canal incluyen el nombre del equipo y el título del mensaje (si se proporciona). 
+Los mensajes de chat de Teams, los mensajes de canal y los mensajes de canal privado se pueden eliminar mediante directivas de retención para Teams y, además del texto de los mensajes, se pueden conservar los siguientes elementos por motivos de cumplimiento: clips de vídeo, imágenes incrustadas, tablas, vínculos de hipertexto, vínculos a otros mensajes y archivos de Teams y [contenido de tarjeta](/microsoftteams/platform/task-modules-and-cards/what-are-cards). Los mensajes de chat y los mensajes de canal privado incluyen todos los nombres de las personas de la conversación, y los mensajes de canal incluyen el nombre del equipo y el título del mensaje (si se proporciona). 
 
 Los fragmentos de código, notas de voz grabadas del cliente móvil de Teams, las miniaturas, las imágenes de anuncios y las reacciones de otros usuarios en forma de emoticonos no se conservan cuando usa las directivas de retención para Teams.
 
-Los correos electrónicos y archivos que usa con Teams no se incluyen en las políticas de retención de Teams. Estos elementos tienen sus propias políticas de retención.
+Emails and files that you use with Teams aren't included in retention policies for Teams. These items have their own retention policies.
 
 ## <a name="how-retention-works-with-microsoft-teams"></a>Cómo funciona la retención con Microsoft Teams
 
@@ -188,7 +193,7 @@ Como muestra este ejemplo, aunque puede configurar una política de retención p
 
 Cuando una conversación de Skype Empresarial llega a Teams, se convierte en un mensaje en un hilo de conversación de Teams y se ingiere en el buzón correspondiente. Las directivas de retención de Teams se aplicarán a estos mensajes del hilo de Teams. 
 
-Sin embargo, si el historial de conversaciones está activado para Skype Empresarial y desde el lado del cliente de Skype Empresarial, ese historial se guarda en un buzón de correo, los datos de chat no se controlan mediante una directiva de retención de Teams. Para este contenido, use una directiva de retención configurada para Skype Empresarial.
+However, if conversation history is turned on for Skype for Business and from the Skype for Business client side that history is being saved into a mailbox, that chat data isn't handled by a Teams retention policy. For this content, use a retention policy that's configured for Skype for Business.
 
 ## <a name="messages-and-external-users"></a>Mensajes y usuarios externos
 

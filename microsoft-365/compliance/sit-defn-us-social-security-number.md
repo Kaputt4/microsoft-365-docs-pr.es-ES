@@ -14,19 +14,22 @@ f1_keywords:
 ms.service: O365-seccomp
 ms.localizationpriority: medium
 ms.collection:
-- M365-security-compliance
+- tier3
+- purview-compliance
 hideEdit: true
 feedback_system: None
 recommendations: false
 description: Definición de entidad de tipo de información confidencial del número de seguridad social (SSN) de EE. UU.
-ms.openlocfilehash: 2644ff5be51d8316007d20ec3c8918ce0e2003c1
-ms.sourcegitcommit: 5aed330d8af523f0dffe5e392f1c79f047e38172
+ms.openlocfilehash: 4efa2b71c062f03a93c568641e894281666d078c
+ms.sourcegitcommit: 176bbd29c92e1c0812e8bcd1e1e4938a3e1d7331
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/21/2022
-ms.locfileid: "66951011"
+ms.lasthandoff: 10/05/2022
+ms.locfileid: "68472242"
 ---
-# <a name="us-social-security-number-ssn"></a>Número de seguro social (SSN) de EE. UU.
+# <a name="us-social-security-number-ssn"></a>Número de seguridad social de EE. UU. (SSN)
+
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
 
 ## <a name="format"></a>Formato
 
@@ -50,20 +53,20 @@ No
 
 ## <a name="definition"></a>Definición
 
-Una directiva DLP tiene una gran confianza en que se detecta este tipo de información confidencial si, dentro de una proximidad de 300 caracteres:
+Una política de DLP tiene una gran confianza en que ha detectado este tipo de información confidencial si, dentro de una proximidad de 300 caracteres:
 
-- La función `Func_ssn` busca contenido que coincida con el patrón.
-- Se encuentra una palabra clave de `Keyword_ssn` .
+- La función `Func_ssn` encuentra contenido que coincide con el patrón.
+- Se encuentra una palabra clave de `Keyword_ssn`.
 
-Una directiva DLP tiene confianza media en que se detecta este tipo de información confidencial si, dentro de una proximidad de 300 caracteres:
+Una política de DLP tiene confianza media en que ha detectado este tipo de información confidencial si, dentro de una proximidad de 300 caracteres:
 
-- La función `Func_unformatted_ssn` busca contenido que coincida con el patrón.
-- Se encuentra una palabra clave de `Keyword_ssn` .
+- La función `Func_unformatted_ssn` encuentra contenido que coincide con el patrón.
+- Se encuentra una palabra clave de `Keyword_ssn`.
 
 Una directiva DLP tiene poca confianza en que se detecta este tipo de información confidencial si, dentro de una proximidad de 300 caracteres:
 
-- La función `Func_randomized_formatted_ssn` o `Func_randomized_unformatted_ssn` busca contenido que coincida con el patrón.
-- Se encuentra una palabra clave de `Keyword_ssn` .
+- La función `Func_randomized_formatted_ssn` o `Func_randomized_unformatted_ssn` encuentra contenido que coincide con el patrón.
+- Se encuentra una palabra clave de `Keyword_ssn`.
 
 ```xml
 <!-- U.S. Social Security Number (SSN) -->
@@ -95,11 +98,11 @@ Una directiva DLP tiene poca confianza en que se detecta este tipo de informaci�
 - social security number
 - seguridad social #
 - seguridad social #
-- seguridad social no
+- nro. seguridad social
 - Social Security#
 - Soc Sec
+- Ssn
 - SSN
-- SSN
-- SSN #
-- SS #
+- Ssn #
+- Ss #
 - SSID

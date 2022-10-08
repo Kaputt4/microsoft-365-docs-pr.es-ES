@@ -7,7 +7,7 @@ ms.author: dansimp
 manager: dansimp
 audience: ITPro
 ms.topic: article
-ms.service: microsoft-365-enterprise
+ms.service: o365-solutions
 ms.localizationpriority: high
 ms.collection:
 - highpri
@@ -18,12 +18,12 @@ ms.collection:
 ms.custom: seo-marvel-jun2020
 keywords: ransomware, ransomware operado por humanos, ransomware operado por seres humanos, HumOR, ataque de extorsión, ataque ransomware, cifrado, criptovirología, confianza cero
 description: Use las líneas base de seguridad para proteger los recursos de Microsoft 365 frente a ataques de ransomware.
-ms.openlocfilehash: 11a2c88773c8601c99975d14ca0e1288f5dd4721
-ms.sourcegitcommit: 0af064e8b6778060f1bd365378d69b16fc9949b5
+ms.openlocfilehash: db1733e326de45597b0b69638bb2033e7e8892be
+ms.sourcegitcommit: fce27da5140691b013a6f7c0ea9c88b4ea4b7c10
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/15/2022
-ms.locfileid: "67731384"
+ms.lasthandoff: 09/23/2022
+ms.locfileid: "67986034"
 ---
 # <a name="step-1-configure-security-baselines"></a>Paso 1. Configurar las líneas base de seguridad
 
@@ -39,7 +39,7 @@ Estas líneas base contienen opciones de configuración y reglas conocidas por l
 
 En primer lugar, evalúe y mida su posición de seguridad mediante la [Puntuación de seguridad de Microsoft](/microsoft-365/security/defender/microsoft-secure-score) y siga las instrucciones para mejorarla según sea necesario.
 
-A continuación, use las [reglas de reducción de la superficie expuesta a ataques](/microsoft-365/security/defender-endpoint/attack-surface-reduction-rules-deployment) para ayudar a bloquear la actividad sospechosa y el contenido vulnerable. Estas reglas incluyen la prevención de lo siguiente:
+Next, use [attack surface reduction rules](/microsoft-365/security/defender-endpoint/attack-surface-reduction-rules-deployment) to help block suspicious activity and vulnerable content. These rules include preventing:
 
 - Las aplicaciones de Office creen procesos secundarios
 - El contenido ejecutable del cliente de correo electrónico y el correo web

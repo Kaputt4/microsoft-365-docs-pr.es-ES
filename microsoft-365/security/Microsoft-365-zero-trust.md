@@ -16,14 +16,16 @@ search.appverid:
 ms.collection:
 - m365solution-zerotrust
 - m365solution-overview
-- M365-security-compliance
+- m365-security
 - zerotrust-solution
-ms.openlocfilehash: 37b32968847e5948b1176c61b201ce2bce166bb3
-ms.sourcegitcommit: 078149c9645ce220911ccd6ce54f984a4c92ce53
+- highpri
+- tier1
+ms.openlocfilehash: 7293085f5a16c05d5657246de481857fe6675d26
+ms.sourcegitcommit: d0557f757cfa48330ed57e966033891d10f03688
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/20/2022
-ms.locfileid: "67811667"
+ms.lasthandoff: 10/06/2022
+ms.locfileid: "68492299"
 ---
 # <a name="microsoft-365-zero-trust-deployment-plan"></a>Plan de implementación de Confianza cero de Microsoft 365
 
@@ -52,10 +54,8 @@ En la ilustración:
 Para obtener más información sobre Confianza cero, consulte [_**el Centro de orientación de Confianza cero**_](/security/zero-trust) de Microsoft.
 
 <!---
-For more information about this architecture, including deployment objectives for your entire digital estate, see [Zero Trust Rapid Modernization Plan (RaMP)](https://review.learn.microsoft.com/security/zero-trust/zero-trust-ramp-overview?branch=zt-content-prototype).
+For more information about this architecture, including deployment objectives for your entire digital estate, see [Zero Trust Rapid Modernization Plan (RaMP)](/security/zero-trust/zero-trust-ramp-overview).
 -->
-
-
 
 ## <a name="deploying-zero-trust-for-microsoft-365"></a>Implementación de Confianza cero para Microsoft 365
 

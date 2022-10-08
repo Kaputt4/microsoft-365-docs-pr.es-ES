@@ -8,14 +8,16 @@ manager: scotv
 ms.reviewer: jkinma, jmueller
 audience: Admin
 ms.topic: article
-ms.service: o365-administration
+ms.service: microsoft-365-business
 ms.localizationpriority: high
 ms.collection:
+- ContentEngagementFY23
+- scotvorg
 - highpri
 - M365-subscription-management
 - Adm_O365
 search.appverid: MET150
-description: Use una tarjeta de crédito o débito o una cuenta bancaria para pagar la suscripción de Microsoft 365 para empresas. O bien, en algunos casos puede pagar mediante factura.
+description: Use una tarjeta de crédito o débito o una cuenta bancaria para pagar su suscripción de Microsoft 365 para empresas.
 ms.custom:
 - commerce_billing
 - VSBFY23
@@ -24,13 +26,13 @@ ms.custom:
 - AdminSurgePortfolio
 - business_assist
 - AdminTemplateSet
-ms.date: 08/04/2022
-ms.openlocfilehash: 6e56a5386cbc78b1fbe241c2afef0fdb1f7d2847
-ms.sourcegitcommit: 37e137535c4f70702afe1a5eeaa899c75ee02cfd
+ms.date: 09/28/2022
+ms.openlocfilehash: 76223238cda024c5748e9228dd4940778f1d69aa
+ms.sourcegitcommit: d0557f757cfa48330ed57e966033891d10f03688
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/13/2022
-ms.locfileid: "67660231"
+ms.lasthandoff: 10/06/2022
+ms.locfileid: "68492602"
 ---
 # <a name="how-to-pay-for-your-subscription"></a>Cómo pagar la suscripción
 
@@ -46,18 +48,45 @@ Puede pagar la suscripción con tarjeta de crédito, débito o una cuenta bancar
 
 ## <a name="before-you-begin"></a>Antes de empezar
 
-- Debe ser un administrador global o de facturación para realizar los pasos descritos en este artículo. Para más información, consulte [Acerca de los roles de administrador](../../admin/add-users/about-admin-roles.md).
-- El método de pago que elija durante la finalización de la compra es el método de pago que usamos para todos los períodos de facturación futuros. Puede cambiarlo en cualquier momento.
+- You must be a Global or Billing admin to do the steps described in this article. For more information, see [About admin roles](../../admin/add-users/about-admin-roles.md).
+- The payment method that you choose during checkout is the payment method that we use for all future billing periods. You can change it at any time.
 
 ## <a name="directives-from-the-reserve-bank-of-india"></a>Directivas del Banco de Reserva de India
 
-Actualmente, algunas transacciones con tarjeta de crédito, especialmente las transacciones que superan los 5 000 INR, están bloqueadas debido a una directiva del Banco de Reserva de India. Esto puede afectar a los pagos automáticos, lo que significa que es posible que tenga que realizar pagos manualmente en el Centro de administración de Microsoft 365. Esta directiva no afecta a los cargos de uso. 
+Actualmente, algunas transacciones con tarjeta de crédito, especialmente las transacciones que superan los 5 000 INR, están bloqueadas debido a una directiva del Banco de Reserva de India. Esto puede afectar a los pagos automáticos, lo que significa que es posible que tenga que realizar pagos manualmente en el Centro de administración de Microsoft 365. Esta directiva no afecta a los cargos de uso.
 
 [Obtenga más información sobre la directiva del Banco de Reserva de India para los pagos periódicos](https://www.rbi.org.in/Scripts/NotificationUser.aspx?Id=11668&Mode=0).
 
 El 30 de septiembre de 2022, Microsoft y otros comerciantes en línea ya no almacenarán la información de la tarjeta de crédito. Microsoft quitará todos los detalles almacenados de tarjetas del Centro de administración de Microsoft 365. Para evitar la interrupción del servicio, debe agregar y comprobar un método de pago para todas las suscripciones y perfiles de facturación.
 
 [Obtenga información sobre la directiva del Banco de Reserva de India para el almacenamiento de tarjetas](https://www.rbi.org.in/Scripts/NotificationUser.aspx?Id=12211).
+
+> [!IMPORTANT]
+> Debido a la eliminación de la información de la tarjeta de crédito, al ver la lista de métodos de pago, las columnas **Fecha de expiración** y **Estado** solo dicen "Desconocido".
+
+### <a name="upi-and-netbanking-payment-options"></a>Opciones de pago de UPI y NetBanking
+
+El Centro de administración de Microsoft 365 admite dos opciones de pago alternativas para los clientes de la India:
+
+- El pago de UPI (Unified Pagos Interface) es un método de pago en tiempo real.
+- NetBanking (Banca por Internet) proporciona a los clientes acceso a los servicios bancarios en una plataforma en línea.
+
+> [!IMPORTANT]
+> UPI y NetBanking solo se admiten para transacciones únicas.
+
+#### <a name="how-do-i-make-a-payment-with-upi-or-netbanking"></a>Cómo realizar un pago con UPI o NetBanking?
+
+1. Si es un cliente que devuelve, cuando realice un pago, seleccione **UPI /NetBanking** en la lista desplegable **Método de pago** y, a continuación, seleccione M **ake payment (M ake payment).** Continúe con el paso 4.
+2. En el caso de los nuevos clientes, cuando realice el primer pago, seleccione **Agregar método de pago**.
+3. Seleccione **UPI /NetBanking** y, a continuación, seleccione **Realizar pago**.
+4. Se le redirigirá al asociado de pago, BillDesk, donde elegirá UPI o NetBanking para su método de pago.
+5. Siga las instrucciones de BillDesk para completar la transacción.
+
+Después de enviar el pago, espere a que el pago aparezca en el centro de administración.
+
+#### <a name="how-am-i-refunded-if-i-made-a-payment-with-upi-or-netbanking"></a>¿Cómo me reembolsan si he realizado un pago con UPI o NetBanking?
+
+Los reembolsos se tratan como un cargo regular y se reembolsan a su cuenta bancaria.
 
 ## <a name="paying-by-credit-or-debit-card-or-bank-account"></a>Pagar con tarjeta de crédito/débito o cuenta bancaria
 
@@ -95,15 +124,15 @@ Si no podemos cargar el método de pago en el archivo, le enviaremos un correo e
 Si ha agregado personalmente dicho método de pago, puede usar **Liquidar saldo** para realizar un pago. El método de pago que use para pagar el saldo vencido se convertirá en el nuevo método de pago para todas las suscripciones que usaban el método de pago rechazado.
 
 1. En el Centro de administración, vaya a la página **Facturación** > **Facturación y pagos** y seleccione la pestaña <a href="https://go.microsoft.com/fwlink/p/?linkid=2018806" target="_blank">Métodos de pago</a>.
-1. Un mensaje de advertencia indica qué método de pago se ha rechazado. Seleccione **Liquidar saldo**.
-1. En el panel derecho, elija otro método de pago o seleccione la opción **Agregar un nuevo método de pago**.
-1. Después de actualizar la información del método de pago, seleccione **Guardar**.
+2. A warning message says which payment method was declined. Select **Settle balance**.
+3. En el panel derecho, elija otro método de pago o seleccione la opción **Agregar un nuevo método de pago**.
+4. Después de actualizar la información del método de pago, seleccione **Guardar**.
 
 Si no agregó el método de pago usado para pagar la suscripción, debe reemplazar el método de pago por uno que agregó anteriormente o por uno nuevo.
 
 ## <a name="where-do-i-send-my-check-or-eft-payment"></a>¿Dónde envío mi cheque o pago por EFT?
 
-[Compruebe la factura](view-your-bill-or-invoice.md) para obtener instrucciones de pago para su país o región. Si no está seguro de cuánto debe, puede comprobar la factura y el historial de facturación en línea en la pestaña **Facturas** de la página <a href="https://go.microsoft.com/fwlink/p/?linkid=2102895" target="_blank"> Facturas y pagos</a>.
+[Check your invoice](view-your-bill-or-invoice.md) for payment instructions for your country or region. If you're not sure how much you owe, you can check your bill and billing history online on the **Invoices** tab of the <a href="https://go.microsoft.com/fwlink/p/?linkid=2102895" target="_blank">Bills & payments</a> page.
 
 > [!NOTE]
 > - El pago con cheque solo está disponible en algunos países.

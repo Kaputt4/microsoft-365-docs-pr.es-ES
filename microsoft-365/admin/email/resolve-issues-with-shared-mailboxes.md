@@ -7,9 +7,10 @@ author: SKjerland
 manager: scotv
 audience: Admin
 ms.topic: article
-ms.service: o365-administration
+ms.service: microsoft-365-business
 ms.localizationpriority: medium
 ms.collection:
+- scotvorg
 - M365-subscription-management
 - Adm_O365
 - Adm_TOC
@@ -23,12 +24,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Es posible que se produzcan errores al configurar buzones compartidos. Pruebe estas soluciones si experimenta problemas con los buzones compartidos.
-ms.openlocfilehash: 08b5bbaa1ea952ee2b9bb6c626328fdb6b91d71c
-ms.sourcegitcommit: 133bf9097785309da45df6f374a712a48b33f8e9
+ms.openlocfilehash: bc272dcd9ad74b4f9ab7e93915fd9fa9becd33aa
+ms.sourcegitcommit: 99b174a8d431092b3cf7d650593248671297fd91
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/10/2022
-ms.locfileid: "66008587"
+ms.lasthandoff: 09/30/2022
+ms.locfileid: "68298218"
 ---
 # <a name="resolve-issues-with-shared-mailboxes"></a>Resolver problemas con los buzones compartidos
 
@@ -38,7 +39,7 @@ Si ve mensajes de error al crear o usar un buzón compartido, pruebe estas posib
 
 Si ve el mensaje de error, **las direcciones proxy o LegacyExchangeDN de "\<name>" ya usan la dirección de proxy "smtp:<nombre\> de buzón compartido". Elija otra dirección de proxy**, lo que significa que está intentando asignar al buzón compartido un nombre que ya esté en uso. Por ejemplo, supongamos que desea los buzones compartidos denominados info@domain1 y info@domain2. Hay dos formas de hacerlo:
 
-- Use Exchange Online PowerShell. Consulte esta entrada de blog para obtener instrucciones: [Creación de buzones compartidos con el mismo alias en dominios diferentes](https://www.cogmotive.com/blog/office-365-tips/create-shared-mailboxes-with-same-alias-at-different-domains-in-office-365)
+- Use Exchange Online PowerShell. Consulte esta entrada de blog para obtener instrucciones: [Creación de buzones compartidos con el mismo alias en dominios diferentes](https://blog.quadrotech-it.com/blog/create-shared-mailboxes-with-same-alias-at-different-domains-in-office-365/)
 
 - Asigne al segundo buzón compartido un nombre diferente del inicio para evitar el error. A continuación, en el centro de administración, cambie el nombre del buzón compartido por el que quiera que sea.
 

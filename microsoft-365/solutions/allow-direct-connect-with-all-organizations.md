@@ -5,7 +5,7 @@ author: MikePlumleyMSFT
 manager: serdars
 audience: ITPro
 ms.topic: article
-ms.service: microsoft-365-enterprise
+ms.service: o365-solutions
 ms.collection:
 - highpri
 - SPO_Content
@@ -17,12 +17,12 @@ ms.localizationpriority: medium
 f1.keywords: NOCSH
 recommendations: false
 description: Aprenda a habilitar canales compartidos con todas las demás organizaciones de Microsoft 365 y Azure Active Directory.
-ms.openlocfilehash: fb4bacbd8a0e9d3134f9922b3c18713be54fc0e2
-ms.sourcegitcommit: 0af064e8b6778060f1bd365378d69b16fc9949b5
+ms.openlocfilehash: 36184a9ab743ee1aac2cc76e5b61fc83752ee163
+ms.sourcegitcommit: fce27da5140691b013a6f7c0ea9c88b4ea4b7c10
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/15/2022
-ms.locfileid: "67728425"
+ms.lasthandoff: 09/23/2022
+ms.locfileid: "67985770"
 ---
 # <a name="enable-shared-channels-with-all-external-organizations"></a>Habilitar canales compartidos con todas las organizaciones externas
 
@@ -49,10 +49,10 @@ Para permitir a los usuarios invitar a participantes de conexión directa B2B de
 1. Seleccione la pestaña **Conexión directa B2B** .
 1. En la pestaña **Usuarios y grupos** , en **Estado de acceso**, elija **Permitir acceso**.
 1. En la pestaña **Aplicaciones externas** , en **Estado de acceso**, elija **Permitir acceso**.
-1. Haga clic en **Guardar**.
+1. Seleccione **Guardar**.
 1. Seleccione la pestaña **Configuración de confianza** .
 1. Elija si desea confiar en la autenticación multifactor, los dispositivos compatibles o los dispositivos unidos a Azure AD híbrido de otras organizaciones.
-1. Haga clic en **Guardar**.
+1. Seleccione **Guardar**.
 1. Cierre la hoja **Configuración predeterminada** .
 
 ## <a name="allow-users-to-participate-in-shared-channels-in-other-organizations"></a>Permitir que los usuarios participen en canales compartidos en otras organizaciones
@@ -65,7 +65,7 @@ Para permitir que los usuarios accedan al recurso desde otras organizaciones de 
 1. Seleccione la pestaña **Conexión directa B2B** .
 1. En la pestaña **Usuarios y grupos** , en **Estado de acceso**, elija **Permitir acceso**.
 1. En la pestaña **Aplicaciones externas** , en **Estado de acceso**, elija **Permitir acceso**.
-1. Haga clic en **Guardar**.
+1. Seleccione **Guardar**.
 1. Cierre la hoja **Configuración predeterminada** .
 
 ## <a name="related-topics"></a>Temas relacionados

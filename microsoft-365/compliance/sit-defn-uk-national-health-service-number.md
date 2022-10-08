@@ -14,19 +14,22 @@ f1_keywords:
 ms.service: O365-seccomp
 ms.localizationpriority: medium
 ms.collection:
-- M365-security-compliance
+- tier3
+- purview-compliance
 hideEdit: true
 feedback_system: None
 recommendations: false
 description: Reino Unido national health service number sensitive information type entity definition.
-ms.openlocfilehash: d636be281b1652934fa7b4b83b3a4b5da7794a09
-ms.sourcegitcommit: 5aed330d8af523f0dffe5e392f1c79f047e38172
+ms.openlocfilehash: b16ac1cc66b53bff232967aedc8b9f5265908d0e
+ms.sourcegitcommit: 176bbd29c92e1c0812e8bcd1e1e4938a3e1d7331
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/21/2022
-ms.locfileid: "66999248"
+ms.lasthandoff: 10/05/2022
+ms.locfileid: "68472264"
 ---
 # <a name="uk-national-health-service-number"></a>Reino Unido número del servicio nacional de salud
+
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
 
 ## <a name="format"></a>Formato
 
@@ -51,7 +54,7 @@ Sí
 Una política de DLP tiene una gran confianza en que ha detectado este tipo de información confidencial si, dentro de una proximidad de 300 caracteres:
 
 - La función `Func_uk_nhs_number` encuentra contenido que coincide con el patrón.
-- Una de las siguientes opciones es verdadera:
+- Uno de los siguientes casos es true:
     - Se encuentra una palabra clave de `Keyword_uk_nhs_number`.
     - Se encuentra una palabra clave de `Keyword_uk_nhs_number1`.
     - Se encuentra una palabra clave de `Keyword_uk_nhs_number_dob`.
@@ -89,8 +92,8 @@ Una política de DLP tiene una gran confianza en que ha detectado este tipo de i
 
 ### <a name="keyword_uk_nhs_number_dob"></a>Keyword_uk_nhs_number_dob
 
-- GP
-- DOB
+- Gp
+- Dob
 - D.O.B
 - Fecha de nacimiento
 - Fecha de nacimiento

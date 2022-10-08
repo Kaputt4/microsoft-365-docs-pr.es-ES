@@ -14,19 +14,22 @@ f1_keywords:
 ms.service: O365-seccomp
 ms.localizationpriority: medium
 ms.collection:
-- M365-security-compliance
+- tier3
+- purview-compliance
 hideEdit: true
 feedback_system: None
 recommendations: false
 description: Definición de entidad de tipo de información confidencial del número de identificación nacional de Taiwán.
-ms.openlocfilehash: 214f8358db951e9fcd6e93c640082ea158b6626a
-ms.sourcegitcommit: 5aed330d8af523f0dffe5e392f1c79f047e38172
+ms.openlocfilehash: 52f8bbd3f7d43cc57d655febdef7c218453581d8
+ms.sourcegitcommit: 176bbd29c92e1c0812e8bcd1e1e4938a3e1d7331
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/21/2022
-ms.locfileid: "67000421"
+ms.lasthandoff: 10/05/2022
+ms.locfileid: "68472330"
 ---
 # <a name="taiwan-national-identification-number"></a>Número de identificación nacional de Taiwán
+
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
 
 ## <a name="format"></a>Formato
 

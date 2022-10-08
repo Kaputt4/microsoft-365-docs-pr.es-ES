@@ -14,19 +14,22 @@ f1_keywords:
 ms.service: O365-seccomp
 ms.localizationpriority: medium
 ms.collection:
-- M365-security-compliance
+- tier3
+- purview-compliance
 hideEdit: true
 feedback_system: None
 recommendations: false
 description: Definición de entidad de tipo de información confidencial del número de licencia de conducir de Eslovenia.
-ms.openlocfilehash: 760972a7780ef6438b9e1c3109be26ddcba75dcb
-ms.sourcegitcommit: 5aed330d8af523f0dffe5e392f1c79f047e38172
+ms.openlocfilehash: 22b0eb92d1be845bca8ebde1b887eb8494a44de6
+ms.sourcegitcommit: 176bbd29c92e1c0812e8bcd1e1e4938a3e1d7331
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/21/2022
-ms.locfileid: "66950900"
+ms.lasthandoff: 10/05/2022
+ms.locfileid: "68473010"
 ---
-# <a name="slovenia-drivers-license-number"></a>Número de licencia de conducir de Eslovenia
+# <a name="slovenia-drivers-license-number"></a>Número del permiso de conducir de Eslovenia
+
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
 
 ## <a name="format"></a>Formato
 
@@ -42,10 +45,10 @@ No
 
 ## <a name="definition"></a>Definición
 
-Una directiva DLP tiene confianza media en que se detecta este tipo de información confidencial si, dentro de una proximidad de 300 caracteres:
+Una política de DLP tiene confianza media en que ha detectado este tipo de información confidencial si, dentro de una proximidad de 300 caracteres:
 
-- La expresión `Regex_slovenia_eu_driver's_license_number` regular busca contenido que coincida con el patrón.
-- Se encuentra una palabra clave de `Keywords_eu_driver's_license_number` o `Keywords_slovenia_eu_driver's_license_number` .
+- La expresión regular `Regex_slovenia_eu_driver's_license_number` encuentra contenido que coincide con el patrón.
+- Se encuentra una palabra clave de `Keywords_eu_driver's_license_number` o `Keywords_slovenia_eu_driver's_license_number`.
 
 ```xml
       <!-- Slovenia Driver's License Number -->
@@ -71,11 +74,11 @@ Una directiva DLP tiene confianza media en que se detecta este tipo de informaci
 - driverlicence
 - driverlicences
 - driver lic
-- lics del conductor
+- driver lics
 - driver license
 - driver licenses
-- permiso de conducir
-- licencias de conducir
+- driver licence
+- driver licences
 - driverslic
 - driverslics
 - driverslicence
@@ -87,98 +90,98 @@ Una directiva DLP tiene confianza media en que se detecta este tipo de informaci
 - drivers license
 - drivers licenses
 - drivers licence
-- licencias de conducir
+- drivers licences
 - driver'lic
 - driver'lics
 - driver'license
-- licencias de conducir
-- permiso de conducir
-- licencias de conducir
-- lic del conductor
-- lics del conductor
-- licencia de conducir
-- licencias de conducir
-- permiso de conducir
-- licencias de conducir
+- driver'licenses
+- driver'licence
+- driver'licences
+- driver' lic
+- driver' lics
+- driver' license
+- driver' licenses
+- driver' licence
+- driver' licences
 - driver'slic
-- slics del conductor
+- driver'slics
 - driver'slicense
 - driver'slicenses
 - driver'slicence
 - driver'slicences
-- lic del conductor
-- lics del conductor
+- driver's lic
+- driver's lics
 - driver's license
 - driver's licenses
 - driver's licence
-- licencias de conducir
-- Dl #
-- Dls #
-- driverlic #
-- driverlics #
-- driverlicense #
-- driverlicenses #
-- driverlicence #
-- driverlicences #
-- driver lic #
-- lics del conductor #
-- licencia de conducir #
-- licencias de conducir #
-- licencias de conducir #
-- driverslic #
-- driverslics #
-- driverslicense #
-- driverslicenses #
-- driverslicence #
-- driverslicences #
-- drivers lic #
-- drivers lics #
-- licencia de conducir #
-- licencias de conducir #
-- permiso de conducir #
-- licencias de conducir #
-- driver'lic #
-- driver'lics #
-- driver'license #
-- licencias de conducir #
-- permiso de conducir #
-- licencias de conducir #
-- lic del conductor #
-- lics del conductor #
-- licencia de conducir #
-- licencias de conducir #
-- permiso de conducir #
-- licencias de conducir #
-- driver'slic #
-- slics del conductor #
-- driver'slicense #
-- driver'slicenses #
-- driver'slicence #
-- driver'slicences #
-- lic del conductor #
-- lics del conductor #
-- licencia de conducir #
-- licencias de conducir #
-- permiso de conducir #
-- licencias de conducir #
+- driver's licences
+- dl#
+- dls#
+- driverlic#
+- driverlics#
+- driverlicense#
+- driverlicenses#
+- driverlicence#
+- driverlicences#
+- driver lic#
+- driver lics#
+- driver license#
+- driver licenses#
+- driver licences#
+- driverslic#
+- driverslics#
+- driverslicense#
+- driverslicenses#
+- driverslicence#
+- driverslicences#
+- drivers lic#
+- drivers lics#
+- drivers license#
+- drivers licenses#
+- drivers licence#
+- drivers licences#
+- driver'lic#
+- driver'lics#
+- driver'license#
+- driver'licenses#
+- driver'licence#
+- driver'licences#
+- driver' lic#
+- driver' lics#
+- driver' license#
+- driver' licenses#
+- driver' licence#
+- driver' licences#
+- driver'slic#
+- driver'slics#
+- driver'slicense#
+- driver'slicenses#
+- driver'slicence#
+- driver'slicences#
+- driver's lic#
+- driver's lics#
+- driver's license#
+- driver's licenses#
+- driver's licence#
+- driver's licences#
 - driving licence
 - driving license
-- dlno #
+- dlno#
 - driv lic
 - driv licen
-- licencia driv
-- licencias de driv
-- licencia driv
-- licencias de driv
+- driv license
+- driv licenses
+- driv licence
+- driv licences
 - driver licen
 - drivers licen
-- licencia de conductor
-- conducir lic
-- conducir licen
-- licencias de conducir
+- driver's licen
+- driving lic
+- driving licen
+- driving licenses
 - driving licence
 - driving licences
-- permiso de conducir
+- driving permit
 - dl no
 - dlno
 - dl number

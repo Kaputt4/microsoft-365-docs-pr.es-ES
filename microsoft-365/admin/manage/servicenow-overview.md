@@ -7,9 +7,10 @@ author: efrene
 manager: scotv
 audience: Admin
 ms.topic: article
-ms.service: o365-administration
+ms.service: microsoft-365-business
 ms.localizationpriority: medium
 ms.collection:
+- scotvorg
 - M365-subscription-management
 - Adm_TOC
 ms.custom: AdminSurgePortfolio
@@ -17,12 +18,12 @@ ROBOTS: NOINDEX, NOFOLLOW
 search.appverid:
 - MET150
 description: Guía de instalación y configuración de aplicaciones con ámbito certificado para ServiceNow.
-ms.openlocfilehash: 898b6a8f15d67fbf3530f6db269f47d5031f3676
-ms.sourcegitcommit: 23c7e96d8ec31c676c458e7c71f1cc8a1e40a0e4
+ms.openlocfilehash: 4ff41bba3f2b0302e6608781c34bc60973eebf37
+ms.sourcegitcommit: 3e1fc1919f64aff2e1ce83aa67bd415fe51604c1
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/16/2022
-ms.locfileid: "67359239"
+ms.lasthandoff: 10/07/2022
+ms.locfileid: "68499932"
 ---
 # <a name="microsoft-365-support-integration-with-servicenow-configuration-overview"></a>Información general de configuración de compatibilidad de Microsoft 365 con ServiceNow
 
@@ -38,15 +39,17 @@ Estas son las características clave que obtendrá con la aplicación de integra
 
 - Incidentes de mantenimiento del servicio: información sobre incidentes conocidos de mantenimiento del servicio de Microsoft, incluidos el impacto del usuario, el ámbito, el estado actual y la próxima actualización esperada. Con el aprendizaje automático, los incidentes de ServiceNow coinciden con los incidentes de mantenimiento del servicio de Microsoft en función del campo de descripción breve.
 
-    :::image type="content" source="../../media/ServiceNow-guide/servicenow-overview-description-field-1.png" lightbox="../../media/ServiceNow-guide/servicenow-overview-description-field-1.png" alt-text="Campo de descripción de incidentes de mantenimiento del servicio.":::
+    :::image type="content" source="../../media/ServiceNow-guide/servicenow_service_health_incidents.png" lightbox="../../media/ServiceNow-guide/servicenow_service_health_incidents.png" alt-text="Campo de descripción de incidentes de mantenimiento del servicio.":::
 
 - Soluciones recomendadas: se usan descripciones de tareas e incidentes para recomendar soluciones específicas y artículos pertinentes de Microsoft con tecnología de aprendizaje automático. También puede usar Buscar para buscar otras soluciones, si es necesario.
 
-    :::image type="content" source="../../media/ServiceNow-guide/servicenow-overview-description-field-2.png" lightbox="../../media/ServiceNow-guide/servicenow-overview-description-field-2.png" alt-text="Campo de descripción de soluciones recomendadas.":::
+    :::image type="content" source="../../media/ServiceNow-guide/servicenow_recommended_articles.png" lightbox="../../media/ServiceNow-guide/servicenow_recommended_articles.png" alt-text="Campo de descripción de soluciones recomendadas.":::
 
-- Solicitud de servicio de Microsoft: escale los problemas a los agentes de soporte técnico de Microsoft y reciba actualizaciones de estado para su caso.
+- Solicitud de servicio de Microsoft: escale los problemas a los agentes de soporte técnico de Microsoft y reciba actualizaciones de estado para su solicitud. Con un flujo de trabajo actualizado, ahora puede crear una solicitud de servicio agregando su título, descripción e información de contacto preferidas similares a las que se encuentran en el portal de administración de Microsoft 365.
 
-    :::image type="content" source="../../media/ServiceNow-guide/servicenow-overview-service-request.png" lightbox="../../media/ServiceNow-guide/servicenow-overview-service-request.png" alt-text="Formulario de solicitud de servicio.":::
+    :::image type="content" source="../../media/ServiceNow-guide/SNOW_escalation.png" lightbox="../../media/ServiceNow-guide/SNOW_escalation.png" alt-text="Captura de pantalla que muestra el campo de descripción de soluciones recomendadas.":::
+
+    :::image type="content" source="../../media/ServiceNow-guide/SNOW_escalation2.png" lightbox="../../media/ServiceNow-guide/SNOW_escalation2.png" alt-text="Captura de pantalla que muestra el campo de descripción de soluciones recomendadas.":::
 
 ## <a name="prerequisites"></a>Requisitos previos
 
@@ -82,12 +85,17 @@ Permisos necesarios:
 
 Una vez instalada la aplicación de integración de soporte técnico de Microsoft 365, se crean dos accesos entre ámbitos de aplicación. Si no se crean correctamente, créelas manualmente.
 
-## <a name="setup-the-integration"></a>Configuración de la integración
+## <a name="set-up-the-integration"></a>Configuración de la integración
 
 Después de descargar la aplicación, vaya al Asistente para la instalación de Microsoft 365 en el entorno de SNOW para completar el proceso de instalación.
-:::image type="content" source="../../media/154124985-76e13e7d-b32e-4741-830b-bbb110d3ecbf.png" alt-text="Asistente para instalación de nieve":::
+
+:::image type="content" source="../../media/ServiceNow-guide/Agree.png" lightbox="../../media/ServiceNow-guide/Agree.png" alt-text="Captura de pantalla que muestra el campo de descripción de soluciones recomendadas.":::
 
 Para obtener más información sobre los pasos, visite las páginas siguientes:
+- Si desea empezar a trabajar sin configurar la aplicación de integración de soporte técnico de Microsoft 365, puede seleccionar la opción **Continuar sin ninguna configuración** . Esta opción seguirá proporcionando soluciones recomendadas básicas.
+
+    :::image type="content" source="../../media/ServiceNow-guide/No_setup.png" lightbox="../../media/ServiceNow-guide/No_setup.png" alt-text="Campo de descripción de soluciones recomendadas.":::
+    
 - Si el entorno de ServiceNow permite la autenticación básica (acceso con credenciales de usuario de ServiceNow) para las llamadas de servicio web entrantes, siga las instrucciones de Configuración de la [integración de soporte técnico de Microsoft 365 con la autenticación básica de ServiceNow](servicenow-basic-authentication.md).
 - Si el entorno de ServiceNow NO permite la autenticación básica (acceso con credenciales de usuario de ServiceNow) para las llamadas de servicio web entrantes, siga las instrucciones de Configuración de la [integración de soporte técnico de Microsoft 365 con el token de autenticación de Azure AD](servicenow-aad-oauth-token.md).
   - Esta configuración requerirá un inquilino de SSO para que el token de autenticación de AAD funcione correctamente.

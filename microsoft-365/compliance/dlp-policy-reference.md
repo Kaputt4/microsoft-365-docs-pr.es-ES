@@ -4,7 +4,7 @@ f1.keywords: CSH
 ms.author: chrfox
 author: chrfox
 manager: laurawi
-ms.date: 03/02/2022
+ms.date: ''
 audience: Admin
 ms.topic: reference
 ms.service: O365-seccomp
@@ -14,23 +14,27 @@ search.appverid:
 - MET150
 ms.assetid: 6501b5ef-6bf7-43df-b60d-f65781847d6c
 ms.collection:
-- M365-security-compliance
+- tier1
+- highpri
+- purview-compliance
 - SPO_Content
 recommendations: false
-description: Componente de directiva DLP y referencia de configuración
+description: Componente de directiva DLP y referencia de configuración. En este artículo se proporciona una anatomía detallada de una directiva DLP.
 ms.custom: seo-marvel-apr2021
-ms.openlocfilehash: 6368a534f40606d906efa2b8a9f6ca920fcd6ce1
-ms.sourcegitcommit: 078149c9645ce220911ccd6ce54f984a4c92ce53
+ms.openlocfilehash: d566d924240878e967a308b5940989c949ce76b4
+ms.sourcegitcommit: d0557f757cfa48330ed57e966033891d10f03688
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/20/2022
-ms.locfileid: "67812126"
+ms.lasthandoff: 10/06/2022
+ms.locfileid: "68492580"
 ---
 # <a name="data-loss-prevention-policy-reference"></a>Referencia de directiva de prevención de pérdida de datos
 
 las directivas de Prevención de pérdida de datos de Microsoft Purview (DLP) tienen muchos componentes que configurar. Para crear una directiva eficaz, debe comprender cuál es el propósito de cada componente y cómo su configuración modifica el comportamiento de la directiva. En este artículo se proporciona una anatomía detallada de una directiva DLP.
 
-## <a name="policy-templates"></a>Plantillas de directiva 
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
+
+## <a name="policy-templates"></a>Plantillas de directiva
 
 Las plantillas de directiva DLP se ordenan previamente en cuatro categorías:
 
@@ -39,7 +43,7 @@ Las plantillas de directiva DLP se ordenan previamente en cuatro categorías:
 - Aquellas que pueden detectar y proteger tipos de información de **privacidad** .
 - Plantilla **personalizada** que puede usar para crear su propia directiva si una de las demás no satisface las necesidades de las organizaciones.
 
-En esta tabla se enumeran todas las plantillas de directiva y los tipos de información confidencial (SIT) que cubren. 
+En esta tabla se enumeran todas las plantillas de directiva y los tipos de información confidencial (SIT) que cubren.
 
 actualizado: 23/06/2021
 
@@ -77,8 +81,8 @@ actualizado: 23/06/2021
 |Privacidad| Información de identificación personal (PII) de Francia|- [Número de seguridad social de Francia (INSEE)](sit-defn-france-social-security-number.md) </br> - [Número de licencia de conducir de Francia](sit-defn-france-drivers-license-number.md) </br> - [Número de pasaporte de Francia](sit-defn-france-passport-number.md) </br> - [Tarjeta de identificación nacional de Francia (CNI)](sit-defn-france-national-id-card.md)|
 |Privacidad| Reglamento general de protección de datos (RGPD) mejorado|- [Direcciones físicas de Austria](sit-defn-austria-physical-addresses.md) </br> - [Direcciones físicas de Bélgica](sit-defn-belgium-physical-addresses.md) </br> - [Direcciones físicas de Bulgaria](sit-defn-bulgaria-physical-addresses.md) </br> - [Direcciones físicas de Croacia](sit-defn-croatia-physical-addresses.md) </br> - [Direcciones físicas de Chipre](sit-defn-cyprus-physical-addresses.md) </br> - [Direcciones físicas de la República Checa](sit-defn-czech-republic-physical-addresses.md)</br> - [Direcciones físicas de Dinamarca](sit-defn-denmark-physical-addresses.md)</br> - [Direcciones físicas de Estonia](sit-defn-estonia-physical-addresses.md)</br> - [Direcciones físicas de Finlandia](sit-defn-finland-physical-addresses.md)</br> - [Direcciones físicas de Francia](sit-defn-france-physical-addresses.md)</br> - [Direcciones físicas de Alemania](sit-defn-germany-physical-addresses.md)</br> - [Direcciones físicas de Grecia](sit-defn-greece-physical-addresses.md)</br> - [Direcciones físicas de Hungría](sit-defn-hungary-physical-addresses.md)</br> - [Direcciones físicas de Irlanda](sit-defn-ireland-physical-addresses.md)</br> - [Direcciones físicas de Italia](sit-defn-italy-physical-addresses.md)</br> - [Direcciones físicas de Letonia](sit-defn-latvia-physical-addresses.md)</br> - [Direcciones físicas de Lituania](sit-defn-lithuania-physical-addresses.md)</br> - [Direcciones físicas de Luxemburgo](sit-defn-luxemburg-physical-addresses.md)</br> - [Direcciones físicas de Malta](sit-defn-malta-physical-addresses.md)</br> - [Direcciones físicas de Países Bajos](sit-defn-netherlands-physical-addresses.md)</br> - [Direcciones físicas de Polonia](sit-defn-poland-physical-addresses.md)</br> - [Direcciones físicas portuguesas](sit-defn-portugal-physical-addresses.md)</br> - [Direcciones físicas de Rumania](sit-defn-romania-physical-addresses.md)</br> - [Direcciones físicas de Eslovaquia](sit-defn-slovakia-physical-addresses.md)</br> - [Direcciones físicas de Eslovenia](sit-defn-slovenia-physical-addresses.md)</br> - [Direcciones físicas de España](sit-defn-spain-physical-addresses.md)</br> - [Direcciones físicas de Suecia](sit-defn-sweden-physical-addresses.md)</br> - [Número de seguro social de Austria](sit-defn-austria-social-security-number.md) </br> - [Número de seguro social de Francia (INSEE)](sit-defn-france-social-security-number.md)</br> - [Número de seguro social de Grecia (AMKA)](sit-defn-greece-social-security-number.md)</br> - [Número de seguro social húngaro (TAJ)](sit-defn-hungary-social-security-number.md)</br> - [Número de seguridad social de España (SSN)](sit-defn-spain-social-security-number.md)</br> - [Tarjeta de identidad de Austria](sit-defn-austria-identity-card.md) </br> - [Tarjeta de identidad de Chipre](sit-defn-cyprus-identity-card.md) </br> - [Número de tarjeta de identidad de Alemania](sit-defn-germany-identity-card-number.md)</br> - [Número de tarjeta de identidad de Malta](sit-defn-malta-identity-card-number.md)</br> - [Tarjeta nacional de identificación de Francia (CNI)](sit-defn-france-national-id-card.md)</br> - [Tarjeta nacional de identificación de Grecia](sit-defn-greece-national-id-card.md)</br> - [Id. nacional de Finlandia](sit-defn-finland-national-id.md)</br> - [Id. nacional de Polonia (PESEL)](sit-defn-poland-national-id.md)</br> - [Id. nacional de Suecia](sit-defn-sweden-national-id.md)</br> - [Número de identificación personal (OIB) de Croacia](sit-defn-croatia-personal-identification-number.md) </br> - [Número de identidad personal checo](sit-defn-czech-personal-identity-number.md)</br> - [Número de identificación personal de Dinamarca](sit-defn-denmark-personal-identification-number.md)</br> - [Código de identificación personal de Estonia](sit-defn-estonia-personal-identification-code.md)</br> - [Número de identificación personal de Hungría](sit-defn-hungary-personal-identification-number.md)</br> - [Número de identificación nacional de Luxemburgo: personas físicas](sit-defn-luxemburg-national-identification-number-natural-persons.md)</br> - [Número de identificación nacional de Luxemburgo (personas no físicas)](sit-defn-luxemburg-national-identification-number-non-natural-persons.md)</br> - [Código fiscal de Italia](sit-defn-italy-fiscal-code.md)</br> - [Código personal de Letonia](sit-defn-latvia-personal-code.md)</br> - [Código personal de Lituania](sit-defn-lithuania-personal-code.md)</br> - [Código numérico personal (CNP) de Rumania](sit-defn-romania-personal-numeric-code.md)</br> - [Número de servicio de ciudadanos de Países Bajos (BSN)](sit-defn-netherlands-citizens-service-number.md)</br> - [Número de servicio público personal (PPS) de Irlanda](sit-defn-ireland-personal-public-service-number.md)</br> - [Número civil uniforme de Bulgaria](sit-defn-bulgaria-uniform-civil-number.md) </br> - [Número nacional de Bélgica](sit-defn-belgium-national-number.md) </br> - [DNI de España](sit-defn-spain-dni.md)</br> - [Número de ciudadano maestro único de Eslovenia](sit-defn-slovenia-unique-master-citizen-number.md)</br> - [Número personal de Eslovaquia](sit-defn-slovakia-personal-number.md)</br> - [Número de tarjeta de ciudadano de Portugal](sit-defn-portugal-citizen-card-number.md)</br> - [Número de identificación fiscal de Malta](sit-defn-malta-tax-identification-number.md)</br> - [Número de identificación fiscal de Austria](sit-defn-austria-tax-identification-number.md) </br> - [Número de identificación fiscal de Chipre](sit-defn-cyprus-tax-identification-number.md) </br> -[Número de identificación fiscal de Francia (numéro SPI.)](sit-defn-france-tax-identification-number.md)</br> - [Número de identificación fiscal de Alemania](sit-defn-germany-tax-identification-number.md)</br> - [Número de identificación fiscal griega](sit-defn-greece-tax-identification-number.md)</br> - [Número de identificación fiscal de Hungría](sit-defn-hungary-tax-identification-number.md)</br> - [Número de identificación fiscal de Países Bajos](sit-defn-netherlands-tax-identification-number.md)</br> - [Número de identificación fiscal de Polonia](sit-defn-poland-tax-identification-number.md)</br> - [Número de identificación fiscal de Portugal](sit-defn-portugal-tax-identification-number.md)</br> - [Número de identificación fiscal de Eslovenia](sit-defn-slovenia-tax-identification-number.md)</br> - [Número de identificación fiscal de España](sit-defn-spain-tax-identification-number.md)</br> - [Número de identificación fiscal de Suecia](sit-defn-sweden-tax-identification-number.md)</br> - [Licencia de conducir de Austria](sit-defn-austria-drivers-license-number.md) </br> - [Número de licencia de conducir de Bélgica](sit-defn-belgium-drivers-license-number.md) </br> - [Número de licencia de conducir de Bulgaria](sit-defn-bulgaria-drivers-license-number.md) </br> - [Número de licencia de conducir de Croacia](sit-defn-croatia-drivers-license-number.md) </br> - [Número de licencia de conducir de Chipre](sit-defn-cyprus-drivers-license-number.md) </br> - [Número de licencia de conducir checo](sit-defn-czech-drivers-license-number.md) </br> - [Número de licencia de conducir de Dinamarca](sit-defn-denmark-drivers-license-number.md)</br> - [Número de licencia de conducir de Estonia](sit-defn-estonia-drivers-license-number.md)</br> - [Número de licencia de conducir de Finlandia](sit-defn-finland-drivers-license-number.md)</br> - [Número de licencia de conducir de Francia](sit-defn-france-drivers-license-number.md)</br> - [Número de licencia de conducir alemán](sit-defn-germany-drivers-license-number.md)</br> - [Número de licencia de conducir de Grecia](sit-defn-greece-drivers-license-number.md) </br> - [Número de licencia de conducir de Hungría](sit-defn-hungary-drivers-license-number.md)</br> - [Número de licencia de conducir de Irlanda](sit-defn-ireland-drivers-license-number.md)</br> - [Número de licencia de conducir de Italia](sit-defn-italy-drivers-license-number.md)</br> - [Número de licencia de conducir de Letonia](sit-defn-latvia-drivers-license-number.md)</br> - [Número de licencia de conducir de Lituania](sit-defn-lithuania-drivers-license-number.md)</br> - [Número de licencia de conducir de Luxemburgo](sit-defn-luxemburg-drivers-license-number.md)</br> - [Número de licencia de conducir de Malta](sit-defn-malta-drivers-license-number.md)</br> - [Número de licencia de conducir de Países Bajos](sit-defn-netherlands-drivers-license-number.md)</br> - [Número de licencia de conducir de Polonia](sit-defn-poland-drivers-license-number.md)</br> - [Número de licencia de conducir de Portugal](sit-defn-portugal-drivers-license-number.md)</br> - [Número de licencia de conducir de Rumania](sit-defn-romania-drivers-license-number.md)</br> - [Número de licencia de conducir de Eslovaquia](sit-defn-slovakia-drivers-license-number.md)</br> - [Número de licencia de conducir de Eslovenia](sit-defn-slovenia-drivers-license-number.md)</br> - [Número de licencia de conducir de España](sit-defn-spain-drivers-license-number.md)</br> - [Número de licencia de conducir de Suecia](sit-defn-sweden-drivers-license-number.md)</br> - [Número de pasaporte de Austria](sit-defn-austria-passport-number.md) </br> - [Número de pasaporte de Bélgica](sit-defn-belgium-passport-number.md) </br> - [Número de pasaporte de Bulgaria](sit-defn-bulgaria-passport-number.md) </br> - [Número de pasaporte de Croacia](sit-defn-croatia-passport-number.md) </br> - [Número de pasaporte de Chipre](sit-defn-cyprus-passport-number.md) </br> - [Número de pasaporte de la República Checa](sit-defn-czech-passport-number.md) </br> - [Número de pasaporte de Dinamarca](sit-defn-denmark-passport-number.md)</br> - [Número de pasaporte de Estonia](sit-defn-estonia-passport-number.md)</br> - [Número de pasaporte de Finlandia](sit-defn-finland-passport-number.md)</br> - [Número de pasaporte de Francia](sit-defn-france-passport-number.md)</br> - [Número de pasaporte alemán](sit-defn-germany-passport-number.md)</br> - [Número de pasaporte de Grecia](sit-defn-greece-passport-number.md)</br> - [Número de pasaporte de Hungría](sit-defn-hungary-passport-number.md)</br> - [Número de pasaporte de Irlanda](sit-defn-ireland-passport-number.md)</br> - [Número de pasaporte de Italia](sit-defn-italy-passport-number.md)</br> - [Número de pasaporte de Letonia](sit-defn-latvia-passport-number.md)</br> - [Número de pasaporte de Lituania](sit-defn-lithuania-passport-number.md)</br> - [Número de pasaporte de Luxemburgo](sit-defn-luxemburg-passport-number.md)</br> - [Número de pasaporte de Malta](sit-defn-malta-passport-number.md)</br> - [Número de pasaporte neerlandés](sit-defn-netherlands-passport-number.md)</br> - [Pasaporte de Polonia](sit-defn-poland-passport-number.md)</br> - [Número de pasaporte de Portugal](sit-defn-portugal-passport-number.md)</br> - [Número de pasaporte de Rumania](sit-defn-romania-passport-number.md)</br> - [Número de pasaporte de Eslovaquia](sit-defn-slovakia-passport-number.md)</br> - [Número de pasaporte de Eslovenia](sit-defn-slovenia-passport-number.md)</br> - [Número de pasaporte de España](sit-defn-spain-passport-number.md)</br> - [Número de pasaporte de Suecia](sit-defn-sweden-passport-number.md)</br> - [Número de tarjeta de débito de la UE](sit-defn-eu-debit-card-number.md)</br> - [Todos los nombres completos](sit-defn-all-full-names.md)|
 |Privacidad| Reglamento general de protección de datos (RGPD)|- [Número de tarjeta de débito de la UE](sit-defn-eu-debit-card-number.md) </br> - [Número de licencia de conducir de la UE](sit-defn-eu-drivers-license-number.md) </br> - [Número de identificación nacional de la UE](sit-defn-eu-national-identification-number.md)</br> - [Número de pasaporte de la UE](sit-defn-eu-passport-number.md) </br> - [Número de seguridad social de la UE o identificación equivalente](sit-defn-eu-social-security-number-equivalent-identification.md)</br> - [Número de identificación fiscal de la UE](sit-defn-eu-tax-identification-number.md)|
-|Privacidad| Información de identificación personal (PII) de Alemania|- [Número de licencia de conducir de Alemania](sit-defn-germany-drivers-license-number.md) </br> - [Número de pasaporte de Alemania](sit-defn-germany-passport-number.md)| 
-|Privacidad| Información de identificación personal (PII) de Israel|- [Número de identificación nacional de Israel](sit-defn-israel-national-identification-number.md)| 
+|Privacidad| Información de identificación personal (PII) de Alemania|- [Número de licencia de conducir de Alemania](sit-defn-germany-drivers-license-number.md) </br> - [Número de pasaporte de Alemania](sit-defn-germany-passport-number.md)|
+|Privacidad| Información de identificación personal (PII) de Israel|- [Número de identificación nacional de Israel](sit-defn-israel-national-identification-number.md)|
 |Privacidad| Protección de privacidad en Israel|- [Número de identificación nacional de Israel](sit-defn-israel-national-identification-number.md)</br> - [Número de cuenta bancaria de Israel](sit-defn-israel-bank-account-number.md)|
 |Privacidad| Información de identificación personal (PII) de Japón mejorada|- [Número de seguro social de Japón (SIN)](sit-defn-japan-social-insurance-number.md)</br> - [Japón Mi número - Personal](sit-defn-japan-my-number-personal.md)</br> - [Número de pasaporte de Japón](sit-defn-japan-passport-number.md)</br> - [Número de licencia de conducir de Japón](sit-defn-japan-drivers-license-number.md)</br> - [Todos los nombres completos](sit-defn-all-full-names.md)</br> - [Direcciones físicas de Japón](sit-defn-all-physical-addresses.md)|
 |Privacidad| Datos de identificación personal (PII) de Japón|- [Número de registro de residente de Japón](sit-defn-japan-resident-registration-number.md) </br> - [Número de seguro social de Japón (SIN)](sit-defn-japan-social-insurance-number.md)|
@@ -120,7 +124,7 @@ Si decide incluir o excluir grupos o cuentas de OneDrive específicas, una direc
 
 ### <a name="location-support-for-how-content-can-be-defined"></a>Compatibilidad con la ubicación de cómo se puede definir el contenido
 
-Las directivas DLP detectan elementos confidenciales si coinciden con un tipo de información confidencial (SIT), con una etiqueta de confidencialidad o con una etiqueta de retención. Cada ubicación admite diferentes métodos para definir contenido confidencial. Al combinar ubicaciones en una directiva, la forma en que se puede definir el contenido puede cambiar a partir de cómo se puede definir mediante una sola ubicación. 
+Las directivas DLP detectan elementos confidenciales si coinciden con un tipo de información confidencial (SIT), con una etiqueta de confidencialidad o con una etiqueta de retención. Cada ubicación admite diferentes métodos para definir contenido confidencial. Al combinar ubicaciones en una directiva, la forma en que se puede definir el contenido puede cambiar a partir de cómo se puede definir mediante una sola ubicación.
 
 > [!IMPORTANT]
 > Al seleccionar varias ubicaciones para una directiva, un valor "no" para una categoría de definición de contenido tiene prioridad sobre el valor "sí". Por ejemplo, al seleccionar solo sitios de SharePoint, la directiva admitirá la detección de elementos confidenciales por uno o varios de SIT, por etiqueta de confidencialidad o por etiqueta de retención. Sin embargo, al seleccionar sitios de SharePoint ***y*** ubicaciones de mensajes de chat y canal de Teams, la directiva solo admitirá la detección de elementos confidenciales por SIT.
@@ -169,11 +173,11 @@ Las reglas son la lógica de negocios de las directivas DLP. Constan de:
 #### <a name="hosted-service-workloads"></a>Cargas de trabajo de servicio hospedadas
 
 Para las cargas de trabajo de servicio hospedadas, como Exchange Online, SharePoint Online y OneDrive para la Empresa, a cada regla se le asigna una prioridad en el orden en que se crea. Esto significa que la regla creada primero tiene la primera prioridad, la regla creada en segundo lugar tiene segunda prioridad, etc.
-  
+
 ![Reglas en orden de prioridad](../media/dlp-rules-in-priority-order.png)
 
 Cuando se evalúa el contenido frente a reglas, estas se procesan en orden de prioridad. Si el contenido coincide con varias reglas, se aplica la primera regla evaluada que tiene la acción *más* restrictiva. Por ejemplo, si el contenido coincide con todas las reglas siguientes, se aplica la *regla 3* porque es la regla más restrictiva y de mayor prioridad:
-  
+
 - Regla 1: solo notifica a los usuarios
 - Regla 2: notifica a los usuarios, restringe el acceso y permite invalidaciones de usuario
 - *Regla 3: notifica a los usuarios, restringe el acceso y no permite invalidaciones de usuario.*
@@ -182,14 +186,14 @@ Cuando se evalúa el contenido frente a reglas, estas se procesan en orden de pr
 Las reglas 1, 2 y 4 se evaluarán, pero no se aplicarán. En este ejemplo, las coincidencias de todas las reglas se registran en los registros de auditoría y se muestran en los informes DLP, aunque solo se aplique la regla más restrictiva.
 
 Puede usar una regla para satisfacer un requisito de protección específico y después usar una directiva DLP para agrupar los requisitos de protección comunes, como todas las reglas necesarias para cumplir una normativa específica.
-  
+
 Por ejemplo, podría tener una directiva DLP que ayude a detectar la presencia de información sujeta a la Ley de transferencia y responsabilidad de seguros de salud (HIPAA). Esta directiva DLP podría ayudar a proteger los datos HIPAA (el qué) en todos los sitios de SharePoint Online y OneDrive para la Empresa (el dónde) al buscar cualquier documento que contenga información confidencial y que se comparte con personas de fuera de la organización (las condiciones) y, a continuación, bloquear el acceso al documento y enviar una notificación (las acciones). Estos requisitos se almacenan como reglas individuales y se agrupan de forma conjunta como directiva DLP para simplificar la administración y la creación de informes.
-  
+
 ![El diagrama muestra que la directiva DLP contiene ubicaciones y reglas](../media/c006860c-2d00-42cb-aaa4-5b5638d139f7.png)
 
 #### <a name="for-endpoints"></a>Para puntos de conexión
 
-La prioridad de las reglas en los puntos de conexión también se asigna según el orden en que se crea. Esto significa que la regla creada primero tiene la primera prioridad, la regla creada en segundo lugar tiene segunda prioridad, etc. 
+La prioridad de las reglas en los puntos de conexión también se asigna según el orden en que se crea. Esto significa que la regla creada primero tiene la primera prioridad, la regla creada en segundo lugar tiene segunda prioridad, etc.
 
 Cuando un archivo de un punto de conexión coincide con varias directivas DLP, la primera regla habilitada con la aplicación más restrictiva en las [actividades de punto de conexión](endpoint-dlp-learn-about.md#endpoint-activities-you-can-monitor-and-take-action-on) es la que se aplica en el contenido. Por ejemplo, si el contenido coincide con todas las reglas siguientes, la regla 2 tiene prioridad sobre las demás reglas, ya que es la más restrictiva.
 
@@ -211,7 +215,7 @@ Todas las demás reglas se evalúan, pero sus acciones no se aplican. Los regist
 Las condiciones son inclusivas y son donde se define lo que quiere que busque la regla y el contexto en el que se usan esos elementos. Indican a la regla &#8212; cuando se encuentra un elemento similar a *este* y se *usa así &#8212;* es una coincidencia y el resto de las acciones de la directiva se deben realizar en ella. Puede usar condiciones para asignar acciones diferentes a distintos niveles de riesgo. Por ejemplo, el contenido confidencial compartido internamente podría ser de menor riesgo y necesitar menos acciones que el contenido confidencial compartido con personas de fuera de la organización.
 
 > [!NOTE]
-> Los usuarios que tienen cuentas que no son de invitado en el espacio empresarial de Active Directory o de Azure Active Directory de una organización anfitriona se consideran como personas dentro de la organización. 
+> Los usuarios que tienen cuentas que no son de invitado en el espacio empresarial de Active Directory o de Azure Active Directory de una organización anfitriona se consideran como personas dentro de la organización.
 
 #### <a name="content-contains"></a>El contenido contiene
 
@@ -220,7 +224,7 @@ Las condiciones son inclusivas y son donde se define lo que quiere que busque la
 - [tipos de información confidencial](sensitive-information-type-learn-about.md#learn-about-sensitive-information-types)
 - [etiquetas de confidencialidad](sensitivity-labels.md)
 - [etiquetas de retención](retention.md#using-a-retention-label-as-a-condition-in-a-dlp-policy)
-- [Clasificadores entrenables](classifier-learn-about.md) (en versión preliminar) 
+- [Clasificadores entrenables](classifier-learn-about.md) (en versión preliminar)
 
 dependiendo de las [ubicaciones](#location-support-for-how-content-can-be-defined) a las que elija aplicar la directiva.
 
@@ -278,7 +282,7 @@ Las opciones de contexto disponibles cambian en función de la ubicación que el
 - La importancia del mensaje es
 
 ##### <a name="conditions-sharepoint-supports"></a>Condiciones que admite SharePoint
- 
+
 - El contenido contiene
 - El contenido se comparte desde Microsoft 365
 - Documento creado por
@@ -305,17 +309,17 @@ Las opciones de contexto disponibles cambian en función de la ubicación que el
 
 - El contenido contiene
 - El contenido se comparte desde Microsoft 365
-- El remitente es 
-- El dominio del remitente es 
-- El dominio del destinatario es 
-- El destinatario es 
+- El remitente es
+- El dominio del remitente es
+- El dominio del destinatario es
+- El destinatario es
 
 ##### <a name="conditions-devices-supports"></a>Condiciones que admiten los dispositivos
 
 - El contenido contiene
-- (versión preliminar) El documento o los datos adjuntos están protegidos con contraseña (.pdf, los archivos de Office y los archivos cifrados de Symantec PGP son totalmente compatibles). Este predicado no detecta archivos cifrados con derechos digitales administrados (DRM) ni protegidos por permisos. 
+- (versión preliminar) El documento o los datos adjuntos están protegidos con contraseña (.pdf, los archivos de Office y los archivos cifrados de Symantec PGP son totalmente compatibles). Este predicado no detecta archivos cifrados con derechos digitales administrados (DRM) ni protegidos por permisos.
 - (versión preliminar) El contenido no está etiquetado (.pdf, los archivos de Office son totalmente compatibles). Este predicado detecta el contenido que no tiene una etiqueta de confidencialidad aplicada. Para ayudar a garantizar que solo se detecten tipos de archivo admitidos, debe usar esta condición con la **extensión Archivo es** o **El tipo de archivo es** condiciones.
-- (versión preliminar) El usuario accedió a un sitio web confidencial desde Edge. Vea [Escenario 6 Supervisar o restringir las actividades de usuario en dominios de servicio confidencial (versión preliminar)](endpoint-dlp-using.md#scenario-6-monitor-or-restrict-user-activities-on-sensitive-service-domains) para más información. 
+- (versión preliminar) El usuario accedió a un sitio web confidencial desde Edge. Vea [Escenario 6 Supervisar o restringir las actividades de usuario en dominios de servicio confidencial (versión preliminar)](endpoint-dlp-using.md#scenario-6-monitor-or-restrict-user-activities-on-sensitive-service-domains) para más información.
 - La extensión de archivo es
 - El tipo de archivo es
 - Consulte las [actividades de punto de conexión en las que puede supervisar y tomar medidas.](endpoint-dlp-learn-about.md#endpoint-activities-you-can-monitor-and-take-action-on)
@@ -340,15 +344,15 @@ Las opciones de contexto disponibles cambian en función de la ubicación que el
 A veces, necesita una regla para identificar solo una cosa, como todo el contenido que contiene un número de seguro social de EE. UU., que se define mediante una sola SIT. Pero en muchos escenarios, donde los tipos de elementos que intenta identificar son más complejos y, por lo tanto, más difíciles de definir, se requiere más flexibilidad para definir condiciones.
 
 Por ejemplo, para identificar el contenido sujeto a la Ley de seguros de salud (HIPAA) de Estados Unidos, debe buscar:
-  
+
 - Contenido que incluye tipos concretos de información confidencial, como un Número de la Seguridad social o un Número de la Agencia antidroga (DEA) de Estados Unidos.
-    
+
     Y
-    
+
 - Contenido que es más difícil identificar, como las comunicaciones sobre la atención a un paciente o las descripciones de los servicios médicos proporcionados. La identificación de este tipo de contenido requiere que coincida con las palabras clave de una lista grande, como la Clasificación internacional de enfermedades (ICD-9-CM o ICD-10-CM).
-    
+
 Puede identificar este tipo de datos mediante la agrupación de condiciones y el uso de operadores lógicos (AND, OR) entre los grupos.
-    
+
 En el caso de la **Ley de Seguro De Salud (HIPPA) de los Estados Unidos**, las condiciones se agrupan de la siguiente manera:
 
 ![Condiciones de la directiva HIPPA](../media/dlp-rules-condition-groups-booleans.png)
@@ -357,7 +361,7 @@ El primer grupo contiene los SIT que identifican e individualmente y el segundo 
 
 ### <a name="exceptions"></a>Excepciones
 
-En las reglas, las excepciones definen condiciones que se usan para excluir un elemento de la directiva. Lógicamente, las condiciones exclusivas que se evalúan después de las condiciones inclusivas y el contexto. Le indican a la regla &#8212; cuando encuentra un elemento similar a *este* y se usa como *si* fuera una coincidencia y el resto de las acciones de la directiva se deben realizar en ella ***excepto si***... &#8212; 
+En las reglas, las excepciones definen condiciones que se usan para excluir un elemento de la directiva. Lógicamente, las condiciones exclusivas que se evalúan después de las condiciones inclusivas y el contexto. Le indican a la regla &#8212; cuando encuentra un elemento similar a *este* y se usa como *si* fuera una coincidencia y el resto de las acciones de la directiva se deben realizar en ella ***excepto si***... &#8212;
 
 Por ejemplo, manteniendo la directiva HIPPA, podríamos modificar la regla para excluir cualquier elemento que contenga un número de licencia de conducir de Bélgica, como este:
 
@@ -371,15 +375,15 @@ Igual que todas las ubicaciones admiten la condición inclusiva:
 
 la excepción sería:
 
-- **Excepto si** el contenido contiene 
+- **Excepto si** el contenido contiene
 
-### <a name="actions"></a>Acciones 
+### <a name="actions"></a>Acciones
 
 Cualquier elemento que lo realice a través de los filtros de ***condiciones** _ _*_inclusivos y excepciones exclusivas_*_ tendrá las _*_acciones_*_ definidas en la regla que se le aplica. Tendrá que configurar las opciones necesarias para admitir la acción. Por ejemplo, si selecciona Exchange con la acción _ *Restringir acceso o cifrar el contenido en ubicaciones de Microsoft 365**, debe elegir entre estas opciones:
 
 - Impedir que los usuarios accedan al contenido compartido de SharePoint, OneDrive y Teams
-    - Bloquear a todos. Solo el propietario del contenido, el último modificador y el administrador del sitio seguirán teniendo acceso
-    - Bloquee solo a personas de fuera de la organización. Los usuarios de la organización seguirán teniendo acceso.
+  - Bloquear a todos. Solo el propietario del contenido, el último modificador y el administrador del sitio seguirán teniendo acceso
+  - Bloquee solo a personas de fuera de la organización. Los usuarios de la organización seguirán teniendo acceso.
 - Cifrar mensajes de correo electrónico (solo se aplica al contenido de Exchange)
 
 Las acciones que están disponibles en una regla dependen de las ubicaciones que se han seleccionado. Si selecciona solo una ubicación a la que se va a aplicar la directiva, las acciones disponibles se enumeran a continuación.
@@ -441,14 +445,13 @@ Al configurar los dominios de servicio en la **nube Allow/Block** y la lista **E
 Con la opción **Actividades de archivo para todas las aplicaciones** , seleccione **No restringir las actividades de archivo** o **Aplicar restricciones a actividades específicas**. Al seleccionar aplicar restricciones a actividades específicas, las acciones que seleccione aquí se aplicarán cuando un usuario tenga acceso a un elemento protegido DLP. Puede indicar dlp a `Audit only`, `Block with override`, `Block` (las acciones) en estas actividades de usuario:
 
 - **Copiar en el portapapeles**
-- **Copia en una unidad extraíble USB** 
+- **Copia en una unidad extraíble USB**
 - **Copia en un recurso compartido de red**
 - **Print**
 - **Copiar o mover mediante una aplicación Bluetooth no permitida**
 - **Servicios de Escritorio remoto**
 
-
-##### <a name="restricted-app-activities"></a>Actividades de aplicación restringidas  
+##### <a name="restricted-app-activities"></a>Actividades de aplicación restringidas
 
 Anteriormente denominadas aplicaciones no permitidas, se define una lista de aplicaciones en la configuración dlp de punto de conexión en la que quiere aplicar restricciones. Cuando un usuario intenta acceder a un archivo protegido dlp mediante una aplicación que se encuentra en la lista, puede , `Audit only``Block with override`o `Block` la actividad . Las acciones DLP definidas en **las actividades de aplicaciones restringidas** se invalidan si la aplicación es miembro del grupo de aplicaciones restringido. A continuación, se aplican las acciones definidas en el grupo de aplicaciones restringidas.
 
@@ -462,7 +465,7 @@ Defina los grupos de aplicaciones restringidos en la configuración dlp de punto
 
 Al seleccionar cualquiera de las opciones *Aplicar restricciones* y un usuario intenta acceder a un archivo protegido dlp mediante una aplicación que se encuentra en el grupo de aplicaciones restringidas, puede , `Audit only``Block with override`o `Block` por actividad. Las acciones DLP que defina aquí invalidan las acciones definidas en **actividades de aplicación restringidas** y **actividades de archivo para todas las aplicaciones** de la aplicación.
 
-Consulte Aplicaciones [restringidas y grupos de aplicaciones](dlp-configure-endpoint-settings.md#restricted-apps-and-app-groups) para obtener más información. 
+Consulte Aplicaciones [restringidas y grupos de aplicaciones](dlp-configure-endpoint-settings.md#restricted-apps-and-app-groups) para obtener más información.
 
 #### <a name="microsoft-defender-for-cloud-apps-actions"></a>acciones de Microsoft Defender for Cloud Apps
 
@@ -496,7 +499,7 @@ Si selecciona dos o más ubicaciones que no son de Exchange a las que se va a ap
 
 Y
 
-- todas las acciones para ubicaciones que no son de Exchange 
+- todas las acciones para ubicaciones que no son de Exchange
 
 las acciones estarán disponibles.
 
@@ -511,18 +514,16 @@ Si selecciona Dispositivos y Microsoft Defender for Cloud Apps, estas acciones e
 - Auditoría o restricción de actividades en dispositivos Windows
 - Restricción de aplicaciones de terceros
 
-Si una acción surte efecto o no depende de cómo configure el modo de la directiva. Puede elegir ejecutar la directiva en modo de prueba con o sin mostrar la sugerencia de directiva seleccionando la opción **Probar primero** . Elija ejecutar la directiva tan pronto como una hora después de crearla seleccionando la opción **Activar inmediatamente** , o bien puede optar por guardarla y volver a ella más tarde seleccionando la opción **Mantenerla desactivada** . 
-
+Si una acción surte efecto o no depende de cómo configure el modo de la directiva. Puede elegir ejecutar la directiva en modo de prueba con o sin mostrar la sugerencia de directiva seleccionando la opción **Probar primero** . Elija ejecutar la directiva tan pronto como una hora después de crearla seleccionando la opción **Activar inmediatamente** , o bien puede optar por guardarla y volver a ella más tarde seleccionando la opción **Mantenerla desactivada** .
 
 <!-- This section needs to explain that the actions available depend on the locations selected AND that the observed behavior of a policy is produced through an interaction of the configured actions AND the configured status (off, test, apply) of a policy. It will detail the purpose of each of the available actions and the location/desired outcome interaction and provide examples eg. how to use the Restrict Third Party apps in the context of a policy that is applied to endpoints so that users can't use a upload content to a third party site or the interaction of on-premises scanner with restrict access or remove on-premises files.  Also what happens when I select multiple locations? provide abundant examples for most common scenarios-->
 
-
 ### <a name="user-notifications-and-policy-tips"></a>Sugerencias de directivas y notificaciones de usuario
 
-<!--This section introduces the business need for user notifications, what they are, their benefit, how to use them, how to customize them, and links out to 
+<!--This section introduces the business need for user notifications, what they are, their benefit, how to use them, how to customize them, and links out to
 
-- https://learn.microsoft.com/microsoft-365/compliance/use-notifications-and-policy-tips?view=o365-worldwide
-- https://learn.microsoft.com/microsoft-365/compliance/dlp-policy-tips-reference?view=o365-worldwide
+- /microsoft-365/compliance/use-notifications-and-policy-tips
+- /microsoft-365/compliance/dlp-policy-tips-reference
 
 for where they are used/expected behavior-->
 
@@ -535,6 +536,7 @@ Por ejemplo, contenido como un libro de Excel en un sitio OneDrive para la Empre
 ![La barra de mensajes muestra sugerencia de directiva en Excel 2016](../media/7002ff54-1656-4a6c-993f-37427d6508c8.png)
 
 > [!IMPORTANT]
+>
 > - Los correos electrónicos de notificación se envían desprotegidos.
 > - Email notificaciones solo se admiten para los servicios de Microsoft 365.
 
@@ -544,13 +546,13 @@ Por ejemplo, contenido como un libro de Excel en un sitio OneDrive para la Empre
 |---------|---------|
 |Dispositivos     |- No compatible         |
 |Exchange y dispositivos     |- Compatible con Exchange </br>- No se admite para dispositivos  |
-|Exchange    |- Compatible        |
+|Exchange    |-Apoyado        |
 |SharePoint + Dispositivos  |- Compatible con SharePoint </br>- No se admite para dispositivos         |
-|SharePoint    |- Compatible |
+|SharePoint    |-Apoyado |
 |Exchange y SharePoint    |- Compatible con Exchange </br>- Compatible con SharePoint  |
 |Dispositivos + SharePoint + Exchange    |- No se admite para dispositivos </br>- Compatible con SharePoint </br> Compatible con Exchange |
 |Teams    |- No compatible |
-|OneDrive para la Empresa   |- Compatible         |
+|OneDrive para la Empresa   |-Apoyado         |
 |OneDrive para la Empresa y dispositivos     |- Compatible con OneDrive para la Empresa </br>- No se admite para dispositivos         |
 |Power-BI|- No compatible|
 |Microsoft Defender for Cloud Apps|- No compatible|
@@ -566,15 +568,11 @@ Las opciones de configuración de notificaciones de usuario y sugerencias de dir
 - Chat y canal de Teams
 - Defender for Cloud Apps
 
-
-
-
-
 Puede habilitar o deshabilitar las notificaciones de usuario para varias aplicaciones de Microsoft; consulte [Referencia de sugerencias de directivas de prevención de pérdida de datos](dlp-policy-tips-reference.md#data-loss-prevention-policy-tips-reference).
 
 - Puede habilitar o deshabilitar las notificaciones con una sugerencia de directiva.
-    - notificaciones por correo electrónico al usuario que envió, compartió o modificó por última vez el contenido O
-    - notificar a personas específicas
+  - notificaciones por correo electrónico al usuario que envió, compartió o modificó por última vez el contenido O
+  - notificar a personas específicas
 
 y personalizar el texto del correo electrónico, el asunto y el texto de la sugerencia de directiva.
 
@@ -582,7 +580,7 @@ y personalizar el texto del correo electrónico, el asunto y el texto de la suge
 
 Si seleccionó Solo dispositivos, obtendrá todas las mismas opciones que están disponibles para Exchange, SharePoint, OneDrive, Teams Chat y Channel y Defender for Cloud Apps, además de la opción de personalizar el título y el contenido de la notificación que aparece en el dispositivo Windows 10.
 
-![Opciones de configuración de sugerencias de directiva y notificación de usuario que están disponibles para dispositivos](../media/dlp-user-notification-devices.png)  
+![Opciones de configuración de sugerencias de directiva y notificación de usuario que están disponibles para dispositivos](../media/dlp-user-notification-devices.png)
 
 Puede personalizar el título y el cuerpo del texto con estos parámetros. El texto del cuerpo admite lo siguiente:
 
@@ -594,7 +592,6 @@ Puede personalizar el título y el cuerpo del texto con estos parámetros. El te
 |acción | %%AppliedActions%% | pegar contenido del documento desde el Portapapeles a otra aplicación |
 
 **%%AppliedActions%%** sustituye estos valores en el cuerpo del mensaje:
-
 
 |nombre común de acción |valor sustituido por el parámetro %%AppliedActions%% |
 |---------|---------|
@@ -610,36 +607,35 @@ Puede personalizar el título y el cuerpo del texto con estos parámetros. El te
 
 Uso de este texto personalizado
 
-*La organización no permite %%AppliedActions%% Nombre de archivo %%FileName%% a través de %%ProcessName%%. Haga clic en "Permitir" si desea omitir la directiva %%PolicyName%%* 
+*La organización no permite %%AppliedActions%% Nombre de archivo %%FileName%% a través de %%ProcessName%%. Haga clic en "Permitir" si desea omitir la directiva %%PolicyName%%*
 
 genera este texto en la notificación personalizada:
 
 *Pegar desde el nombre de archivo del portapapeles: la organización no permite contoso doc 1 a través de WINWORD.EXE. Haga clic en el botón "Permitir" si desea omitir la directiva Contoso extremadamente confidencial*
- 
 
 > [!NOTE]
 > Las notificaciones de usuario y las sugerencias de directiva no están disponibles para la ubicación local.
-
-> [!NOTE]
+>
 > Solo se mostrará la sugerencia de directiva de la regla más restrictiva y con mayor prioridad. Por ejemplo, una sugerencia de directiva de una regla que bloquea el acceso al contenido se mostrará por encima de una sugerencia de directiva de una regla que simplemente envía una notificación. Esto impide que las personas vean una cascada de sugerencias de directiva.
 
-Para obtener más información sobre la configuración y el uso de notificaciones de usuario y sugerencias de directiva, incluido cómo personalizar la notificación y el texto de la sugerencia, consulte 
+Para obtener más información sobre la configuración y el uso de notificaciones de usuario y sugerencias de directiva, incluido cómo personalizar la notificación y el texto de la sugerencia, consulte
+
 - [Enviar notificaciones por correo electrónico y mostrar sugerencias de directivas para directivas DLP](use-notifications-and-policy-tips.md#send-email-notifications-and-show-policy-tips-for-dlp-policies).
-  
+
 <!--The email can notify the person who sent, shared, or last modified the content and, for site content, the primary site collection administrator and document owner. In addition, you can add or remove whomever you choose from the email notification.
-  
+
 In addition to sending an email notification, a user notification displays a policy tip:
-  
+
 - In Outlook and Outlook on the web.
-    
+
 - For the document on a SharePoint Online or OneDrive for Business site.
-    
+
 - In Excel, PowerPoint, and Word, when the document is stored on a site included in a DLP policy.
-    
+
 The email notification and policy tip explain why content conflicts with a DLP policy. If you choose, the email notification and policy tip can allow users to override a rule by reporting a false positive or providing a business justification. This can help you educate users about your DLP policies and enforce them without preventing people from doing their work. Information about overrides and false positives is also logged for reporting (see below about the DLP reports) and included in the incident reports (next section), so that the compliance officer can regularly review this information.
-  
+
 Here's what a policy tip looks like in a OneDrive for Business account.
-  
+
 ![Policy tip for a document in a OneDrive account](../media/f9834d35-94f0-4511-8555-0fe69855ce6d.png)
 
  To learn more about user notifications and policy tips in DLP policies, see [Use notifications and policy tips](use-notifications-and-policy-tips.md).
@@ -660,24 +656,23 @@ En esta tabla se muestra el comportamiento de bloqueo y notificación dlp para l
 |- **El contenido se comparte desde Microsoft 365** </br>- **con personas ajenas a mi organización** |  - Se ha seleccionado **Restringir el acceso o cifrar el contenido en ubicaciones de Microsoft 365**. </br>- Se ha seleccionado **Impedir que los usuarios reciban correo electrónico o accedan a archivos compartidos de SharePoint, OneDrive y Teams**. </br>- **Bloquear a todos está** seleccionado        | - **Notificaciones de usuario establecidas** en **Activado** </br>- **Se selecciona Notificar a los usuarios en Office 365 servicio con una sugerencia de directiva** </br>- **Notificar al usuario que envió, compartió o modificó por última vez el contenido** está seleccionado         | - **Enviar una alerta a los administradores cuando se produce una coincidencia de regla** establecida en **Activado** </br>- **Enviar alerta cada vez que una actividad coincide con la regla** seleccionada </br>- **Usar informes de incidentes de correo electrónico para notificarle cuando se produce una coincidencia de directiva establecida** en **Activado**        |Las notificaciones se envían cuando un archivo se comparte con un usuario externo y un usuario externo accede a ese archivo.         |
 |- **El contenido se comparte desde Microsoft 365** </br>- **con personas ajenas a mi organización**     |- Se ha seleccionado **Restringir el acceso o cifrar el contenido en ubicaciones de Microsoft 365**. </br>- **Bloquear solo a las personas a las que se les dio acceso al contenido mediante la opción "Cualquiera con el vínculo"** está seleccionada.         |  - **Notificaciones de usuario establecidas** en **Activado** </br>- **Se selecciona Notificar a los usuarios de Office 365 servicio con una sugerencia de directiva**.  </br>- **Notificar al usuario que envió, compartió o modificó por última vez el contenido** está seleccionado     |- **Enviar una alerta a los administradores cuando se produce una coincidencia de regla** establecida en **Activado**   </br>- **Enviar alerta cada vez que una actividad coincide con la regla** seleccionada </br>- **Usar informes de incidentes de correo electrónico para notificarle cuando se produce una coincidencia de directiva establecida** en **Activado**       |Las notificaciones se envían en cuanto se carga un archivo         |
 
-
 ### <a name="user-overrides"></a>Invalidaciones de usuario
 
-La intención de **las invalidaciones de usuario** es proporcionar a los usuarios una manera de omitir, con justificación, las acciones de bloqueo de directiva DLP en elementos confidenciales en Exchange, SharePoint, OneDrive o Teams para que puedan continuar con su trabajo. Las invalidaciones de usuario solo se habilitan cuando **notificar a los usuarios de Office 365 servicios con una sugerencia de directiva** está habilitado, por lo que las invalidaciones de usuario van de la mano con notificaciones y sugerencias de directiva. 
+La intención de **las invalidaciones de usuario** es proporcionar a los usuarios una manera de omitir, con justificación, las acciones de bloqueo de directiva DLP en elementos confidenciales en Exchange, SharePoint, OneDrive o Teams para que puedan continuar con su trabajo. Las invalidaciones de usuario solo se habilitan cuando **notificar a los usuarios de Office 365 servicios con una sugerencia de directiva** está habilitado, por lo que las invalidaciones de usuario van de la mano con notificaciones y sugerencias de directiva.
 
 ![Opciones de invalidación de usuario para una directiva DLP](../media/dlp-user-overrides.png)
 
 > [!NOTE]
 > Las invalidaciones de usuario no están disponibles para la ubicación de repositorios locales.
 
-Normalmente, las invalidaciones de usuario son útiles cuando la organización implementa por primera vez una directiva. Los comentarios que se obtienen de cualquier justificación de invalidación e identificación de falsos positivos ayudan a ajustar la directiva. 
+Normalmente, las invalidaciones de usuario son útiles cuando la organización implementa por primera vez una directiva. Los comentarios que se obtienen de cualquier justificación de invalidación e identificación de falsos positivos ayudan a ajustar la directiva.
 
-<!-- This section covers what they are and how to best use them in conjunction with Test/Turn it on right away and link out to where to find the business justification for the override (DLP reports?  https://learn.microsoft.com/microsoft-365/compliance/view-the-dlp-reports?view=o365-worldwide)  https://learn.microsoft.com/microsoft-365/compliance/view-the-dlp-reports?view=o365-worldwide#view-the-justification-submitted-by-a-user-for-an-override-->
+<!-- This section covers what they are and how to best use them in conjunction with Test/Turn it on right away and link out to where to find the business justification for the override (DLP reports?  /microsoft-365/compliance/view-the-dlp-reports?view=o365-worldwide)  /microsoft-365/compliance/view-the-dlp-reports?view=o365-worldwide#view-the-justification-submitted-by-a-user-for-an-override-->
 
 - Si las sugerencias de directiva en la regla más restrictiva permite que los usuarios invaliden la regla, la invalidación de esta regla invalida también otras reglas que coinciden con el contenido.
- 
+
 <!--![User notifications and user overrides sections of DLP rule editor](../media/37b560d4-6e4e-489e-9134-d4b9daf60296.png)-->
- 
+
 Para obtener más información sobre las invalidaciones de usuario, consulte:
 
 - [Visualización de la justificación enviada por un usuario para una invalidación](view-the-dlp-reports.md#view-the-justification-submitted-by-a-user-for-an-override)
@@ -686,9 +681,8 @@ Para obtener más información sobre las invalidaciones de usuario, consulte:
 
 <!--DLP interacts with other M365 information protection services, like IR. Link this to a process outline for triaging/managing/resolving DLP incidents
 
-
-https://learn.microsoft.com/microsoft-365/compliance/view-the-dlp-reports?view=o365-worldwide
-https://learn.microsoft.com/microsoft-365/compliance/dlp-configure-view-alerts-policies?view=o365-worldwide-->
+/microsoft-365/compliance/view-the-dlp-reports?view=o365-worldwide
+/microsoft-365/compliance/dlp-configure-view-alerts-policies?view=o365-worldwide-->
 
 Cuando una regla coincide, puede enviar un informe de incidentes a su responsable de cumplimento normativo (o a la persona que elija) con los detalles del evento. El informe incluye información sobre el elemento coincidente, el contenido real que coincidió con la regla y el nombre de la persona que modificó por última vez el contenido. Para los mensajes de correo electrónico, el informe también incluye el mensaje original que coincide con una directiva DLP como datos adjuntos.
 

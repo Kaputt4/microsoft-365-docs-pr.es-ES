@@ -5,7 +5,7 @@ author: MikePlumleyMSFT
 manager: serdars
 audience: ITPro
 ms.topic: article
-ms.service: microsoft-365-enterprise
+ms.service: o365-solutions
 ms.collection:
 - highpri
 - SPO_Content
@@ -17,12 +17,12 @@ ms.localizationpriority: medium
 f1.keywords: NOCSH
 recommendations: false
 description: Aprenda a limitar el uso compartido de invitados a organizaciones específicas de Azure AD o Microsoft 365.
-ms.openlocfilehash: baad796304090844d379d9c924f10b94245c7796
-ms.sourcegitcommit: 0af064e8b6778060f1bd365378d69b16fc9949b5
+ms.openlocfilehash: 7dbd4a8dd872837af61cc8ed5d78b45bc83a4be9
+ms.sourcegitcommit: fce27da5140691b013a6f7c0ea9c88b4ea4b7c10
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/15/2022
-ms.locfileid: "67727268"
+ms.lasthandoff: 09/23/2022
+ms.locfileid: "67985551"
 ---
 # <a name="limit-guest-sharing-to-specific-organizations"></a>Limitar el uso compartido de invitados a organizaciones específicas
 
@@ -50,7 +50,7 @@ Para bloquear la colaboración B2B de entrada de forma predeterminada
 1. En **Estado de acceso**, elija **Bloquear acceso**.
 1. Seleccione la pestaña **Acceso externo** .
 1. En **Estado de acceso**, elija **Bloquear acceso**.
-1. Haga clic en **Guardar**.
+1. Seleccione **Guardar**.
 1. Cierre la hoja **Configuración predeterminada** .
 
 ### <a name="add-the-organization-where-you-want-to-allow-guest-invitations"></a>Agregue la organización en la que desea permitir invitaciones de invitado.
@@ -89,7 +89,7 @@ Para deshabilitar la característica de código de acceso de un solo uso de corr
 1. En el panel de navegación, seleccione **Azure Active Directory**.
 1. Seleccione **Identidades externas** > **Todos los proveedores de identidades**.
 1. Seleccione **Email código de acceso único** y, a continuación, en **Email código de acceso único para invitados**, seleccione **Deshabilitar código de acceso de un solo uso de correo electrónico para invitados** (o **No** si la característica se ha habilitado, deshabilitado o optado anteriormente durante la versión preliminar).
-1. Haga clic en **Guardar**.
+1. Seleccione **Guardar**.
 
 ## <a name="related-topics"></a>Temas relacionados
 

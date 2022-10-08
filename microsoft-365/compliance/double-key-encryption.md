@@ -11,14 +11,14 @@ audience: Admin
 ms.reviewer: esaggese
 ms.localizationpriority: medium
 ms.collection:
-- M365-security-compliance
+- purview-compliance
 ms.custom: admindeeplinkCOMPLIANCE
-ms.openlocfilehash: 631df77a6f10c15dafcb78e58a715a029d32bb73
-ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
+ms.openlocfilehash: 60769757cbfc4c6f31131fde070a393201bc6031
+ms.sourcegitcommit: 176bbd29c92e1c0812e8bcd1e1e4938a3e1d7331
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/06/2022
-ms.locfileid: "66627555"
+ms.lasthandoff: 10/05/2022
+ms.locfileid: "68472201"
 ---
 # <a name="double-key-encryption"></a>Cifrado de claves doble
 
@@ -33,6 +33,8 @@ El cifrado de doble clave (DKE) usa dos claves juntas para acceder al contenido 
 Double Key Encryption admite implementaciones tanto en la nube como en el entorno local. Estas implementaciones ayudan a garantizar que los datos cifrados permanezcan opacos dondequiera que almacene los datos protegidos.
 
 Para obtener más información sobre las claves raíz de inquilino predeterminadas basadas en la nube, consulte [Planeamiento e implementación de la clave de inquilino de Azure Information Protection](/azure/information-protection/plan-implement-tenant-key).
+
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
 
 ## <a name="when-your-organization-should-adopt-dke"></a>Cuándo la organización debe adoptar DKE
 
@@ -64,15 +66,17 @@ Si las organizaciones tienen cualquiera de los siguientes requisitos, puede usar
 
 Las etiquetas de confidencialidad de DKE están disponibles para los usuarios finales mediante el botón de confidencialidad del cliente de etiquetado unificado de AIP en Aplicaciones de escritorio de Office. Instale estos requisitos previos en cada equipo cliente donde quiera proteger y consumir documentos protegidos.
 
-**Aplicaciones de Microsoft Office para empresas** versión 2009 o posterior (versiones de escritorio de Word, PowerPoint y Excel) en Windows.
+**Aplicaciones de Microsoft Office para empresas** versión 2009 o posterior (versiones de escritorio de Word, Excel, PowerPoint y Outlook) en Windows.
 
-**Azure Information Protection las** versiones 2.7.93.0 o posterior del cliente de etiquetado unificado. Descargue e instale el cliente de etiquetado unificado desde el [centro de descarga de Microsoft](https://www.microsoft.com/download/details.aspx?id=53018).
+**Azure Information Protection unified Labeling Client** versions 2.14.93.0 o posterior. Descargue e instale el cliente de etiquetado unificado desde el [centro de descarga de Microsoft](https://www.microsoft.com/download/details.aspx?id=53018).
 
 ## <a name="supported-environments-for-storing-and-viewing-dke-protected-content"></a>Entornos admitidos para almacenar y ver contenido protegido por DKE
 
-**Aplicaciones admitidas**. [Aplicaciones Microsoft 365 para empresas](https://www.microsoft.com/microsoft-365/business/microsoft-365-apps-for-enterprise-product) clientes en Windows, incluidos Word, Excel y PowerPoint.
+**Aplicaciones admitidas**. [Aplicaciones Microsoft 365 para empresas](https://www.microsoft.com/microsoft-365/business/microsoft-365-apps-for-enterprise-product) clientes en Windows, incluidos Word, Excel, PowerPoint y Outlook.
 
 **Compatibilidad con contenido en línea**. Puede almacenar documentos y archivos protegidos con el cifrado de doble clave en línea en Microsoft SharePoint y OneDrive para la Empresa. Debe etiquetar y proteger documentos y archivos con DKE mediante aplicaciones admitidas antes de cargarlos en estas ubicaciones. Puede compartir contenido cifrado por correo electrónico, pero no puede ver documentos y archivos cifrados en línea. En su lugar, debe ver el contenido protegido mediante las aplicaciones de escritorio y los clientes admitidos en el equipo local.
+
+**Solo cifrado de Outlook y no reenviar escenarios** La configuración de DKE para escenarios admitidos creará una advertencia en la experiencia de configuración de etiquetas. Solo para el cifrado y no reenviar, estos escenarios no admitidos no tienen ninguna advertencia en la experiencia de configuración de etiquetas.
 
 ## <a name="overview-of-deploying-dke"></a>Introducción a la implementación de DKE
 
@@ -179,7 +183,7 @@ La configuración de la aplicación se modifica en el archivo appsettings.json. 
 
 Elija si desea usar el correo electrónico o la autorización de roles. DKE solo admite uno de estos métodos de autenticación a la vez.
 
-- **Autorización por correo electrónico**. Permite que su organización autorice el acceso a las claves solo en función de las direcciones de correo electrónico.
+- **Email autorización**. Permite que su organización autorice el acceso a las claves solo en función de las direcciones de correo electrónico.
 
 - **Autorización de roles**. Permite que su organización autorice el acceso a claves basadas en grupos de Active Directory y requiere que el servicio web pueda consultar LDAP.
 

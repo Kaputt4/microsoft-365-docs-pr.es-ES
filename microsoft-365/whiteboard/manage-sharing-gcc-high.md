@@ -12,12 +12,12 @@ search.appverid: MET150
 ms.collection: ''
 ms.localizationpriority: medium
 description: Obtenga información sobre cómo administrar el uso compartido para Microsoft Whiteboard en entornos de GCC High.
-ms.openlocfilehash: 2c87290fb7a6ebbcf9c27ac95e76c8b5ae5f0d88
-ms.sourcegitcommit: 2b89bcff547e00be3d38dc8d1e6cbcf8f41eba42
+ms.openlocfilehash: 4da8d87e13cfbe46e340f0a69e8b25cdf9e6c54b
+ms.sourcegitcommit: 99b174a8d431092b3cf7d650593248671297fd91
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/03/2022
-ms.locfileid: "67598183"
+ms.lasthandoff: 09/30/2022
+ms.locfileid: "68300308"
 ---
 # <a name="manage-sharing-for-microsoft-whiteboard-in-gcc-high-environments"></a>Administración del uso compartido para Microsoft Whiteboard en entornos de GCC High
 
@@ -32,9 +32,7 @@ La mayoría de las cuentas de dispositivo externas y compartidas tienen más cap
 
 En este caso, Whiteboard proporciona visualización y colaboración temporales en la pizarra solo durante la reunión de Teams. No se crea un vínculo de recurso compartido y Whiteboard no concede acceso al archivo.
 
-Si tiene habilitado el uso compartido externo para OneDrive para la Empresa, no se requiere ninguna acción adicional.
-
-Si restringe el uso compartido externo para OneDrive para la Empresa, puede mantenerlo restringido y simplemente habilitar una nueva configuración para que funcionen las cuentas de dispositivo externas y compartidas. Para hacerlo, siga estos pasos:
+Para habilitar este comportamiento, siga estos pasos:
 
 1. Asegúrese de que Whiteboard está habilitado para su organización. Para obtener más información, vea [Administrar el acceso a Whiteboard](manage-whiteboard-access-gcc-high.md).
 

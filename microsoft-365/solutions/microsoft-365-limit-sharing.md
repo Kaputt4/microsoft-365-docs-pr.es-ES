@@ -5,7 +5,7 @@ author: MikePlumleyMSFT
 manager: serdars
 audience: ITPro
 ms.topic: article
-ms.service: microsoft-365-enterprise
+ms.service: o365-solutions
 ms.collection:
 - highpri
 - SPO_Content
@@ -24,12 +24,12 @@ ms.custom:
 ms.localizationpriority: high
 recommendations: false
 description: Obtenga más información sobre las opciones para limitar o deshabilitar el uso compartido de Microsoft 365.
-ms.openlocfilehash: c2d7233afadc49ea5f8e465783106b9d3f38a252
-ms.sourcegitcommit: 0af064e8b6778060f1bd365378d69b16fc9949b5
+ms.openlocfilehash: f9833e1c033644e117a4009720a627d783e4e946
+ms.sourcegitcommit: fce27da5140691b013a6f7c0ea9c88b4ea4b7c10
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/15/2022
-ms.locfileid: "67731042"
+ms.lasthandoff: 09/23/2022
+ms.locfileid: "67985617"
 ---
 # <a name="limit-sharing-in-microsoft-365"></a>Limitar el uso compartido en Microsoft 365
 
@@ -50,7 +50,7 @@ Los métodos para compartir archivos se muestran en la tabla siguiente. Haga cli
 
 También puede restringir las condiciones en las que los usuarios acceden al contenido compartido. Vea el [acceso condicional](#conditional-access) más adelante en este artículo para más información.
 
-Aunque puede usar los controles de administración descritos en este artículo para limitar el uso compartido en su organización, le recomendamos que considere usar las características de seguridad y cumplimiento disponibles en Microsoft 365 para crear un entorno de uso compartido seguro. Consulte [Colaboración de archivos en SharePoint con Microsoft 365](/sharepoint/deploy-file-collaboration) y [Configurar un equipo con aislamiento de seguridad](secure-teams-security-isolation.md) para más información.
+While you can use the admin controls described in this article to limit sharing in your organization, we highly recommend that you consider using the security and compliance features available in Microsoft 365 to create a secure sharing environment. See [File collaboration in SharePoint with Microsoft 365](/sharepoint/deploy-file-collaboration) and [Configure a team with security isolation](secure-teams-security-isolation.md) for information.
 
 Para comprender cómo se usa el uso compartido en su organización, [ejecute un informe sobre el uso compartido de archivos y carpetas](/sharepoint/sharing-reports).
 
@@ -124,7 +124,7 @@ Para limitar el uso compartido del sitio por dominio
 
 ### <a name="block-access-to-a-site"></a>Bloquear el acceso a un sitio
 
-Puede bloquear el acceso a un sitio o hacer que un sitio sea de solo lectura cambiando el estado de bloqueo del sitio. Para más información, consulte [Bloquear y desbloquear sitios](/sharepoint/manage-lock-status).
+You can block access to a site or make a site read-only by changing the lock state of the site. For details, see [Lock and unlock sites](/sharepoint/manage-lock-status).
 
 ### <a name="permissions-inheritance"></a>Herencia de permisos
 
@@ -186,7 +186,7 @@ Desactivar los vínculos de tipo *Cualquiera*
 
 ## <a name="people-in-your-organization-sharing-links"></a>Vínculos de uso compartido de *Personas de su organización*
 
-De forma predeterminada, los miembros de un sitio pueden compartir archivos y carpetas con otras personas de su organización con un vínculo de *Personas de su organización*. Puede deshabilitar vínculos de *Personas de su organización* mediante PowerShell:
+By default, members of a site can share files and folders with other people in your organization by using a *People in your organization* link. You can disable *People in your organization* links by using PowerShell:
 
 ```powershell
 Set-SPOSite -Identity <site> -DisableCompanyWideSharingLinks Disabled
@@ -218,9 +218,9 @@ Los usuarios que tienen acceso a los archivos y carpetas de Microsoft 365 pueden
 
 ## <a name="conditional-access"></a>Acceso condicional
 
-El acceso condicional de Azure Active Directory proporciona opciones para limitar o impedir el uso compartido con personas en función de la ubicación de la red, el estado del dispositivo, el riesgo de inicio de sesión y otros factores. Vea [¿Qué es el acceso condicional?](/azure/active-directory/conditional-access/overview).
+Azure Active Directory conditional access provides options to limit or prevent sharing with people based on network location, device health, sign-in risk, and other factors. See [What is Conditional Access?](/azure/active-directory/conditional-access/overview).
 
-SharePoint proporciona integración directa con acceso condicional de Azure AD para dispositivos no administrados y la ubicación de red. Vea las referencias siguientes para obtener más información:
+SharePoint provides direct integration with Azure AD conditional access for both unmanaged devices and network location. See the following references for details:
 
 - [Control de acceso desde dispositivos no administrados](/sharepoint/control-access-from-unmanaged-devices)
 - [Controlar el acceso a los datos de SharePoint y OneDrive en función de la ubicación de red](/sharepoint/control-access-based-on-network-location)

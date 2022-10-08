@@ -1,5 +1,5 @@
 ---
-title: Paso 5. Proteger información
+title: Step 5. Protect information
 author: dansimp
 f1.keywords:
 - NOCSH
@@ -7,7 +7,7 @@ ms.author: dansimp
 manager: dansimp
 audience: ITPro
 ms.topic: article
-ms.service: microsoft-365-enterprise
+ms.service: o365-solutions
 ms.localizationpriority: high
 ms.collection:
 - highpri
@@ -18,14 +18,14 @@ ms.collection:
 ms.custom: seo-marvel-jun2020
 keywords: ransomware, ransomware operado por humanos, HumOR, ataque de extorsión, ataque de ransomware, cifrado, criptovirología, confianza cero
 description: Use acceso controlado a carpetas, Microsoft Purview Information Protection, DLP y Microsoft Defender for Cloud Apps para proteger sus datos confidenciales de Microsoft 365.
-ms.openlocfilehash: a52d06198f8a3cf4ea7e35cc569b8fa1d705d0d3
-ms.sourcegitcommit: 0af064e8b6778060f1bd365378d69b16fc9949b5
+ms.openlocfilehash: 4200d7bdf5acb71710047478704f9083d83579aa
+ms.sourcegitcommit: fce27da5140691b013a6f7c0ea9c88b4ea4b7c10
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/15/2022
-ms.locfileid: "67728108"
+ms.lasthandoff: 09/23/2022
+ms.locfileid: "67986056"
 ---
-# <a name="step-5-protect-information"></a>Paso 5. Proteger información
+# <a name="step-5-protect-information"></a>Paso 5. Protección de la información
 
 Dado que los atacantes de ransomware también examinarán los datos locales ubicados en archivos, bases de datos y otros tipos de servidores, una de las mejores formas de proteger esos datos es migrarlos a su espacio empresarial de Microsoft 365. Una vez allí, se pueden proteger mediante características integradas de mitigación y recuperación, como [control de versiones, papelera de reciclaje y la restauración de archivos](ransomware-protection-microsoft-365.md#ransomware-mitigation-and-recovery-capabilities-provided-with-microsoft-365).
 
@@ -70,7 +70,7 @@ Una vez que un atacante ransomware se ha infiltrado en su inquilino, intentan au
 En función de este comportamiento típico del atacante, hay dos niveles de dificultad para el atacante:
 
 - **Bajo:** un atacante puede usar una cuenta con permisos reducidos y detectar la información confidencial debido a un amplio acceso en todo el espacio empresarial.
-- **Más alto:** Un atacante no puede usar una cuenta con permisos bajos y detectar la información confidencial debido a permisos estrictos. Deben escalar sus permisos determinando y, a continuación, poniendo en peligro las credenciales de una cuenta que tiene acceso a una ubicación con información confidencial, pero es posible que solo puedan realizar un conjunto limitado de acciones.
+- **Higher:** An attacker can't use a low-permission account and discover your sensitive information because of strict permissions. They must escalate their permissions by determining and then compromising the credentials of an account that has access to a location with sensitive information, but then may only be able to do a limited set of actions.
 
 En el caso de la información confidencial, debe hacer que el nivel de dificultad sea lo más alto posible.
 

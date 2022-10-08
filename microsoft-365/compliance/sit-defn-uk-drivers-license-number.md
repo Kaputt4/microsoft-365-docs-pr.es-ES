@@ -14,19 +14,22 @@ f1_keywords:
 ms.service: O365-seccomp
 ms.localizationpriority: medium
 ms.collection:
-- M365-security-compliance
+- tier3
+- purview-compliance
 hideEdit: true
 feedback_system: None
 recommendations: false
 description: Reino Unido Definición de entidad de tipo de información confidencial del número de licencia del controlador.
-ms.openlocfilehash: 7608cb8e4ffd16be6e381ff8a38ceb6f559ab36d
-ms.sourcegitcommit: 5aed330d8af523f0dffe5e392f1c79f047e38172
+ms.openlocfilehash: 813fa073465e31f2bdd11ac53a6b5e59ec4ae8b4
+ms.sourcegitcommit: 176bbd29c92e1c0812e8bcd1e1e4938a3e1d7331
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/21/2022
-ms.locfileid: "66999254"
+ms.lasthandoff: 10/05/2022
+ms.locfileid: "68472944"
 ---
 # <a name="uk-drivers-license-number"></a>Reino Unido número de licencia de conducir
+
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
 
 ## <a name="format"></a>Formato
 

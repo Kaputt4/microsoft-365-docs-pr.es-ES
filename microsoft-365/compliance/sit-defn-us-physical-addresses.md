@@ -14,21 +14,24 @@ f1_keywords:
 ms.service: O365-seccomp
 ms.localizationpriority: medium
 ms.collection:
-- M365-security-compliance
+- tier3
+- purview-compliance
 hideEdit: true
 feedback_system: None
 recommendations: false
 description: Las direcciones físicas de EE. UU. abordan la definición de entidad de tipo de información confidencial.
-ms.openlocfilehash: a819fc23dc17971d4004fb7d437950798da448ed
-ms.sourcegitcommit: 5aed330d8af523f0dffe5e392f1c79f047e38172
+ms.openlocfilehash: c8c79679fdae5e9e5893cb62307310dc6a6d5161
+ms.sourcegitcommit: 176bbd29c92e1c0812e8bcd1e1e4938a3e1d7331
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/21/2022
-ms.locfileid: "66951060"
+ms.lasthandoff: 10/05/2022
+ms.locfileid: "68472506"
 ---
-# <a name="us-physical-addresses"></a>Direcciones físicas de EE. UU.
+# <a name="us-physical-addresses"></a>Direcciones físicas de Estados Unidos
 
-Esta entidad con nombre desagregada detecta patrones relacionados con la dirección física de los Estados Unidos. También se incluye en la entidad SIT con nombre [todas las direcciones físicas](sit-defn-all-physical-addresses.md) agrupadas.
+Esta entidad con nombre desagregada detecta patrones relacionados con la dirección física de los Estados Unidos. También se incluye en [Todas las direcciones físicas ](sit-defn-all-physical-addresses.md) en la entidad no agrupada denominada SIT.
+
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
 
 ## <a name="confidence-level"></a>Nivel de confianza
 

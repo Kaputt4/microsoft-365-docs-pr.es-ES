@@ -5,7 +5,7 @@ author: MikePlumleyMSFT
 manager: serdars
 audience: ITPro
 ms.topic: article
-ms.service: microsoft-365-enterprise
+ms.service: o365-solutions
 ms.collection:
 - highpri
 - SPO_Content
@@ -20,18 +20,18 @@ ms.localizationpriority: high
 f1.keywords: NOCSH
 recommendations: false
 description: En este artículo, obtendrá información sobre los procedimientos recomendados para compartir archivos y carpetas con usuarios no autenticados.
-ms.openlocfilehash: 2eccf02ee2481eb1e44230148aa778d1d43eeb52
-ms.sourcegitcommit: 0af064e8b6778060f1bd365378d69b16fc9949b5
+ms.openlocfilehash: 289255c9a572b660b276c22b2df996e65d743944
+ms.sourcegitcommit: fce27da5140691b013a6f7c0ea9c88b4ea4b7c10
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/15/2022
-ms.locfileid: "67731174"
+ms.lasthandoff: 09/23/2022
+ms.locfileid: "67983462"
 ---
 # <a name="best-practices-for-sharing-files-and-folders-with-unauthenticated-users"></a>Prácticas recomendadas para compartir archivos y carpetas con usuarios no autenticados.
 
 El uso compartido no autenticado (los vínculos para *Cualquiera*) puede ser práctico y útil en diversos escenarios. Los vínculos para *Cualquiera* son la manera más fácil de compartir: los usuarios pueden abrir el vínculo sin autenticación y tienen la libertad de compartirlo con otros usuarios.
 
-Normalmente, no todo el contenido de una organización es apropiado para compartir sin autenticar. Este artículo trata de las opciones disponibles para ayudarle a crear un entorno en el que sus usuarios puedan usar el uso compartido no autenticado de archivos y carpetas, pero en el que haya salvaguardas para ayudar a proteger el contenido de su organización.
+Usually, not all content in an organization is appropriate for unauthenticated sharing. This article covers the options available to help you create an environment where your users can use unauthenticated sharing of files and folders, but where there are safeguards in place to help protect your organization's content.
 
 > [!NOTE]
 > Para que funcione el uso compartido sin autenticarse, debe habilitarlo para su organización y para el sitio individual o el equipo que lo utilizará. Consulte [Colaborar con personas fuera de su organización](collaborate-with-people-outside-your-organization.md) para ver el escenario que quiere habilitar.
@@ -70,7 +70,7 @@ Set-SPOSite -Identity https://contoso.sharepoint.com/sites/marketing -OverrideTe
 
 ## <a name="set-link-permissions"></a>Establezca permisos de vínculos
 
-De forma predeterminada, los vínculos para *Cualquiera* para un archivo permiten a los usuarios editar el archivo, mientras que los vínculos para *Cualquiera* para una carpeta permiten a los usuarios ver, editar los archivos, y cargar archivos nuevos en la carpeta.
+By default, *Anyone* links for a file allow people to edit the file, and *Anyone* links for a folder allow people to edit and view files, and upload new files to the folder. You can change these permissions for files and for folders independently to view-only.
 
 Si desea permitir el uso compartido sin autenticarse, pero le preocupa que los usuarios sin autenticación modifiquen el contenido de su organización, considere la posibilidad de configurar los permisos de archivos y carpetas al modo **Vista**.
 

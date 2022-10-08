@@ -14,17 +14,18 @@ f1_keywords:
 ms.service: O365-seccomp
 ms.localizationpriority: medium
 ms.collection:
-- M365-security-compliance
+- tier3
+- purview-compliance
 hideEdit: true
 feedback_system: None
 recommendations: false
 description: Definición de entidad de tipo de información confidencial de contraseña de configuración de publicación de Azure.
-ms.openlocfilehash: 9cbca08dc1414241f494a415cf3aafea9e505a6e
-ms.sourcegitcommit: 5aed330d8af523f0dffe5e392f1c79f047e38172
+ms.openlocfilehash: bb26108257a1105d5a3ce1a90bf30fc1b39fe252
+ms.sourcegitcommit: 99b174a8d431092b3cf7d650593248671297fd91
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/21/2022
-ms.locfileid: "66999392"
+ms.lasthandoff: 09/30/2022
+ms.locfileid: "68298702"
 ---
 # <a name="azure-publish-setting-password"></a>Contraseña de configuración de publicación de Azure
 
@@ -46,7 +47,7 @@ No
 
 Una política de DLP tiene una gran confianza en que ha detectado este tipo de información confidencial si, dentro de una proximidad de 300 caracteres:
 
-- La expresión `CEP_Regex_AzurePublishSettingPasswords` regular busca contenido que coincida con el patrón.
+- La expresión regular `CEP_Regex_AzurePublishSettingPasswords` encuentra contenido que coincide con el patrón.
 - La expresión `CEP_CommonExampleKeywords` regular no encuentra contenido que coincida con el patrón.
 
 ```xml

@@ -7,9 +7,11 @@ author: kwekua
 manager: scotv
 audience: Admin
 ms.topic: article
-ms.service: o365-administration
+ms.service: microsoft-365-business
 ms.localizationpriority: high
 ms.collection:
+- ContentEngagementFY23
+- scotvorg
 - highpri
 - Adm_O365
 - Adm_NonTOC
@@ -24,12 +26,12 @@ search.appverid:
 - MOE150
 ms.assetid: 9fa2539a-2211-41fd-85a0-bc37b9619ca4
 description: Haga que su organización sea más segura contra ataques a contraseñas y prohíba las contraseñas comunes y habilite la autenticación multifactor basada en riesgos.
-ms.openlocfilehash: ab997d544a2789a4e2c6e28caa6a601a51a32bc7
-ms.sourcegitcommit: 437461fa1d38ff9bb95dd8a1c5f0b94e8111ada2
+ms.openlocfilehash: b8315b24592bb25a2df4377a0f73c5787ff9577d
+ms.sourcegitcommit: d0557f757cfa48330ed57e966033891d10f03688
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/14/2022
-ms.locfileid: "67670761"
+ms.lasthandoff: 10/06/2022
+ms.locfileid: "68492277"
 ---
 # <a name="password-policy-recommendations-for-microsoft-365-passwords"></a>Recomendaciones de directiva de contraseñas para contraseñas de Microsoft 365
 
@@ -48,6 +50,8 @@ Para obtener más información acerca de las contraseñas de Microsoft 365, vea:
 [Permitir que los usuarios puedan restablecer sus propias contraseñas](../add-users/let-users-reset-passwords.md) (artículo)
 
 [Volver a enviar la contraseña de un usuario: ayuda para administradores](../add-users/resend-user-password.md) (artículo)
+
+[Hora de repensar los cambios obligatorios de contraseña](https://go.microsoft.com/fwlink/p/?linkid=861018).
   
 ## <a name="understanding-password-recommendations"></a>Comprender las recomendaciones de contraseña
 
@@ -79,7 +83,7 @@ El principal objetivo de un sistema de contraseña más seguro es la diversidad 
 
 ### <a name="password-guidance-for-your-users"></a>Guía de contraseñas para los usuarios
 
-Esta es una guía sobre contraseñas para los usuarios de su organización. Asegúrese de que los usuarios sepan estas recomendaciones y apliquen las directivas de contraseñas recomendadas a nivel de la organización.
+Here's some password guidance for users in your organization. Make sure to let your users know about these recommendations and enforce the recommended password policies at the organizational level.
   
 - No use una contraseña igual o similar a una que use en otros sitios web
 
@@ -93,7 +97,7 @@ Esta es una guía sobre contraseñas para los usuarios de su organización. Aseg
   
 ### <a name="password-expiration-requirements-for-users"></a>Requisitos de expiración de contraseña para usuarios
 
-Los requisitos de expiración de contraseñas no ayudan, ya que estos requisitos hacen que los usuarios seleccionen contraseñas predecibles, compuestas de palabras secuenciales y números estrechamente relacionados entre sí. En estos casos, la contraseña siguiente puede predecirse en función de la contraseña anterior. Los requisitos de expiración de contraseñas no ofrecen ventajas de contención, ya que los ciberdelincuentes casi siempre usan las credenciales en cuanto las obtienen. Consulte [Momento para reconsiderar los cambios en la contraseña obligatoria](https://go.microsoft.com/fwlink/p/?linkid=861018) para más información.
+Los requisitos de expiración de contraseñas no ayudan, ya que estos requisitos hacen que los usuarios seleccionen contraseñas predecibles, compuestas de palabras secuenciales y números estrechamente relacionados entre sí. En estos casos, la contraseña siguiente puede predecirse en función de la contraseña anterior. Los requisitos de expiración de contraseñas no ofrecen ventajas de contención, ya que los ciberdelincuentes casi siempre usan las credenciales en cuanto las obtienen. 
   
 ### <a name="minimum-password-length-requirements"></a>Requisitos mínimos de longitud de contraseña
 
@@ -119,7 +123,7 @@ En cambio, estas son algunas recomendaciones para favorecer la diversidad de con
   
 ### <a name="ban-common-passwords"></a>Prohibir contraseñas comunes
 
-El requisito de contraseña más importante que debe aplicar a los usuarios al crear contraseñas es prohibir el uso de contraseñas comunes para reducir la susceptibilidad de su organización a ataques de contraseña por fuerza bruta. Las contraseñas de usuario comunes incluyen: **abcdefg**, **contraseña**, **monkey**.
+The most important password requirement you should put on your users when creating passwords is to ban the use of common passwords to reduce your organization's susceptibility to brute force password attacks. Common user passwords include: **abcdefg**, **password**, **monkey**.
   
 ### <a name="educate-users-to-not-reuse-organization-passwords-anywhere-else"></a>Instruya a los usuarios para que no usen las contraseñas de la organización en otro sitio
 

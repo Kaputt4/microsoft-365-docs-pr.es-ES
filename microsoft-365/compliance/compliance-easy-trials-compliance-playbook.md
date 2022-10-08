@@ -1,31 +1,35 @@
 ---
-title: Cuaderno de estrategias de prueba de soluciones de Microsoft Purview
+title: Guía del usuario de prueba de soluciones de Microsoft Purview
 f1.keywords:
 - NOCSH
-ms.author: robmazz
-author: robmazz
+ms.author: chvukosw
+author: chvukosw
 manager: laurawi
 audience: Admin
 ms.topic: landing-page
 ms.service: O365-seccomp
-ms.collection: m365-security-compliance
+ms.collection:
+- purview-compliance
+- tier3
 ms.localizationpriority: high
 ROBOTS: NOINDEX, NOFOLLOW
 search.appverid:
 - MOE150
 - MET150
-description: Cuaderno de estrategias de prueba de soluciones de Microsoft Purview.
+description: Guía del usuario de prueba de soluciones de Microsoft Purview.
 ms.custom: trial-playbook
-ms.openlocfilehash: d6863ce077a8db40821ebe8646b9b98fe5a1c4ff
-ms.sourcegitcommit: 433f5b448a0149fcf462996bc5c9b45d17bd46c6
+ms.openlocfilehash: 8cbfe44551d1d6a38b5d84e05d00ef391127f388
+ms.sourcegitcommit: 3e1fc1919f64aff2e1ce83aa67bd415fe51604c1
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/20/2022
-ms.locfileid: "67823131"
+ms.lasthandoff: 10/07/2022
+ms.locfileid: "68499822"
 ---
-# <a name="trial-playbook-microsoft-purview-solutions"></a>Cuaderno de estrategias de prueba: soluciones de Microsoft Purview
+# <a name="trial-user-guide-microsoft-purview-solutions"></a>Guía del usuario de prueba: Soluciones de Microsoft Purview
 
-Le damos la bienvenida al cuaderno de estrategias de prueba de soluciones de Microsoft Purview. Este cuaderno de estrategias le ayudará a sacar el máximo partido a su evaluación gratuita, ya que le ayudará a descubrir funcionalidades sólidas y completas de Microsoft Purview y productos de seguridad.
+Le damos la bienvenida a la guía de usuario de prueba de soluciones de Microsoft Purview. Este cuaderno de estrategias le ayudará a sacar el máximo partido a su evaluación gratuita, ya que le ayudará a descubrir funcionalidades sólidas y completas de Microsoft Purview y productos de seguridad.
+
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
 
 ## <a name="compliance-actions-with-microsoft-purview"></a>Acciones de cumplimiento con Microsoft Purview
 
@@ -297,7 +301,7 @@ Cada acción recomendada le guía por las actividades necesarias para la recomen
 
 Tenga en cuenta que los pasos recomendados en el cuaderno de estrategias (anterior) también se pueden incluir en las acciones recomendadas que se muestran en el portal.
 
-Las recomendaciones de configuración también están disponibles en la página de documentos de Microsoft, a través de la [Guía de configuración de Administración de riesgos internos de Microsoft Purview](https://go.microsoft.com/fwlink/?linkid=2197153).
+Las recomendaciones de instalación también están disponibles en Microsoft Learn a través de la [Guía de configuración de Administración de riesgos internos de Microsoft Purview](https://go.microsoft.com/fwlink/?linkid=2197153).
 
 Para aprovechar al máximo la funcionalidad de Insider Risk Management, se recomienda configurar directivas para su organización para identificar mejor las posibles acciones de riesgo que pueden provocar un incidente de seguridad, aprovechando las plantillas para fugas de datos o robo de datos.  
 
@@ -358,7 +362,7 @@ Más organizaciones usan la solución eDiscovery (Premium) en Microsoft 365 para
 
 1. Administrar eDiscovery (Premium): [obtenga información sobre cómo configurar eDiscovery (Premium), administrar casos mediante el Centro de cumplimiento de seguridad &, administrar un flujo de trabajo en Advanced eDiscovery y analizar Advanced eDiscovery resultados de búsqueda](/training/modules/manage-advanced-ediscovery).
 1. [Creación de un caso de eDiscovery](advanced-ediscovery-new-case-format.md) con el nuevo formato de caso de eDiscovery Premium
-1. [Cerrar o eliminar un caso](close-or-delete-case.md): cuando el caso o la investigación hayan terminado, puede cerrarlos o eliminarlos. También puede volver a abrir un caso cerrado.
+1. [Close or delete a case](close-or-delete-case.md) - When the legal case or investigation is completed, you can close or delete. You can also reopen a closed case.
 
 ### <a name="step-3-optional-settings"></a>Paso 3 (opcional): configuración
 
@@ -409,7 +413,7 @@ Las directivas de retención de registros de auditoría forman parte de las nuev
 
 1. Antes de crear una directiva de retención de registros de auditoría: [aspectos clave que debe conocer](audit-log-retention-policies.md#before-you-create-an-audit-log-retention-policy) antes de crear la directiva.
 1. [Cree una directiva de retención de registros de auditoría](audit-log-retention-policies.md#create-an-audit-log-retention-policy).
-1. [Administrar directivas de retención de registros de auditoría en el portal de cumplimiento de Microsoft Purview](audit-log-retention-policies.md#manage-audit-log-retention-policies-in-the-compliance-portal): las directivas de retención de registros de Auditoría se muestran en la pestaña Directivas de retención de Auditoría (también denominada panel). Puede usar el panel para ver, editar y eliminar directivas de retención de auditoría.
+1. [Manage audit log retention policies in the Microsoft Purview compliance portal](audit-log-retention-policies.md#manage-audit-log-retention-policies-in-the-compliance-portal) - Audit log retention policies are listed on the Audit retention policies tab (also called the dashboard). You can use the dashboard to view, edit, and delete audit retention policies.
 1. [Creación y administración de directivas de retención de registros de auditoría en PowerShell](audit-log-retention-policies.md#create-and-manage-audit-log-retention-policies-in-powershell) : también puede usar PowerShell del Centro de cumplimiento de seguridad & para crear y administrar directivas de retención de registros de auditoría. Una razón para usar PowerShell es crear una directiva para un tipo de registro o actividad que no está disponible en la interfaz de usuario.
 
 ## <a name="additional-trials-and-add-ons"></a>Pruebas y complementos adicionales
@@ -422,7 +426,7 @@ Ayude a su organización a evaluar los riesgos y a responder eficazmente a los r
 
 [Más información sobre la evaluación premium del Administrador de cumplimiento](compliance-easy-trials-compliance-manager-assessments.md).
 
-[Cuaderno de estrategias: evaluaciones premium del Administrador de cumplimiento de Microsoft Purview](compliance-easy-trials-compliance-manager-assessment-playbook.md)
+[Guía del usuario de prueba: Evaluaciones premium de Microsoft Purview Compliance Manager](compliance-easy-trials-compliance-manager-assessment-playbook.md)
 
 ### <a name="microsoft-priva-privacy-risk-management-and-microsoft-priva-subject-rights-requests"></a>Administración de riesgo de privacidad Priva y Solicitudes de los interesados Priva
 
@@ -432,12 +436,12 @@ Identifique y proteja de forma proactiva los riesgos para la privacidad, como el
 
 [Obtenga más información sobre Microsoft Priva](/privacy/solutions/privacymanagement/privacy-management).
 
-[Cuaderno de estrategias de prueba: Microsoft Priva](/privacy/solutions/privacymanagement/privacy-management-trial-playbook)
+[Guía del usuario de prueba: Microsoft Priva](/privacy/solutions/privacymanagement/privacy-management-trial-playbook)
 
 ## <a name="additional-resources"></a>Recursos adicionales
 
 **¿Qué se incluye?**: para obtener una lista completa de las características y soluciones de Microsoft Purview enumeradas por nivel de producto, vea la [Matriz de característica](https://go.microsoft.com/fwlink/?linkid=2139145).
 
-**Biblioteca de contenido técnico de Seguridad de Microsoft**: explore esta biblioteca para buscar guías interactivas y otro contenido de aprendizaje que se adecue a sus necesidades. [Visitar la biblioteca](/security).
+**Microsoft Security Technical Content Library**: Explore this library to find interactive guides and other learning content relevant to your needs. [Visit Library](/security).
 
 **Recursos de Seguridad de Microsoft**: desde antimalware hasta Confianza cero, obtenga todos los recursos importantes para cubrir las necesidades de seguridad de la organización.

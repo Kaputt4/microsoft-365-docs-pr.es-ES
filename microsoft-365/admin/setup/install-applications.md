@@ -6,10 +6,12 @@ ms.author: efrene
 author: efrene
 manager: scotv
 audience: Admin
-ms.topic: landing-page
-ms.service: o365-administration
+ms.topic: article
+ms.service: microsoft-365-business
 ms.localizationpriority: medium
 ms.collection:
+- ContentEngagementFY23
+- scotvorg
 - highpri
 - M365-subscription-management
 - Adm_O365
@@ -26,12 +28,12 @@ ms.custom:
 - AdminTemplateSet
 - adminvideo
 description: Ahora que ha configurado Microsoft 365, aprenda a instalar aplicaciones de Office individuales en su Mac, PC o dispositivos móviles.
-ms.openlocfilehash: b7580925962ff0f632c4597becfc33aeb4e94373
-ms.sourcegitcommit: 37e137535c4f70702afe1a5eeaa899c75ee02cfd
+ms.openlocfilehash: 7b2e6a981ddaa0e2497fb722687d3ad0774c830c
+ms.sourcegitcommit: d0557f757cfa48330ed57e966033891d10f03688
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/13/2022
-ms.locfileid: "67661111"
+ms.lasthandoff: 10/06/2022
+ms.locfileid: "68492211"
 ---
 # <a name="install-office-applications"></a>Instalar aplicaciones de Office
 
@@ -45,7 +47,7 @@ Ahora que ha configurado Microsoft 365, puede instalar aplicaciones de Office in
 
 Las aplicaciones de Microsoft Office se pueden encontrar en el menú **Inicio**. Si no los ve, puede instalarlos usted mismo.
 
-1. Vaya a office.com. Es posible que deba iniciar sesión con su cuenta profesional.
+1. Vaya a Office.com. Es posible que deba iniciar sesión con su cuenta profesional.
 2. Seleccione **Instalar aplicaciones de Office**  >  **de Microsoft 365**  >  **Ejecutar** y, a continuación, seleccione **Sí**.
 3. Las aplicaciones de Office están instaladas. Es posible que este proceso tarde varios minutos. Cuando finalice, seleccione  **Cerrar**.
 4. Para instalar Microsoft Teams, vaya a la página office.com y elija  **Teams**.

@@ -2,24 +2,27 @@
 title: Acerca de la prueba de soluciones de Microsoft Purview
 f1.keywords:
 - NOCSH
-ms.author: robmazz
-author: robmazz
+ms.author: chvukosw
+author: chvukosw
 manager: laurawi
 audience: Admin
 ms.topic: landing-page
 ms.service: O365-seccomp
-ms.collection: m365-security-compliance
+ms.collection:
+- purview-compliance
+- highpri
+- tier1
 ms.localizationpriority: high
 search.appverid:
 - MOE150
 - MET150
-description: Obtenga más información sobre la prueba de soluciones de Microsoft Purview y sobre cómo registrarse.
-ms.openlocfilehash: 73a92591c360f71833b4a1dbf6d05f955c64d7dc
-ms.sourcegitcommit: 433f5b448a0149fcf462996bc5c9b45d17bd46c6
+description: Obtenga información sobre cómo unirse a la evaluación gratuita de soluciones de Microsoft Purview. Pruebe todas las funcionalidades premium de las soluciones de Purview en el nivel E5, como auditar y Information Protection, para ayudar a su organización a administrar las necesidades de cumplimiento y seguridad de los datos. Obtenga detalles sobre la elegibilidad y cómo registrarse hoy mismo.
+ms.openlocfilehash: 809c73d2773b1608e7d99a915bb89a4ce5e7d703
+ms.sourcegitcommit: 3e1fc1919f64aff2e1ce83aa67bd415fe51604c1
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/20/2022
-ms.locfileid: "67825728"
+ms.lasthandoff: 10/07/2022
+ms.locfileid: "68499800"
 ---
 # <a name="about-the-microsoft-purview-solutions-trial"></a>Acerca de la prueba de soluciones de Microsoft Purview
 
@@ -27,17 +30,19 @@ Las soluciones de Microsoft Purview ayudan a proteger su organización frente a 
 
 La prueba de soluciones de Microsoft Purview es la manera más sencilla de probar las funcionalidades de las soluciones de Microsoft Purview. Solo tardará un par de minutos en configurarla. Una vez completada la configuración de prueba, todas las características del paquete de licencia de Microsoft E5 estarán disponibles para que las use durante un máximo de 90 días.
 
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
+
 ## <a name="terms-and-conditions"></a>Términos y condiciones
 
 Consulte los [términos y condiciones](/legal/microsoft-365/microsoft-365-trial) de las pruebas gratuitas de Microsoft 365.
 
 ## <a name="eligibility"></a>Requisitos de idoneidad
 
-Los clientes de Microsoft 365 E3 y Office 365 E3 que aún no tienen un paquete de licencia de Microsoft E5 cumplen los requisitos para la prueba de soluciones de Purview. La prueba no está disponible para los clientes de Microsoft 365 Government.
+Microsoft 365 E3 and Office 365 E3 customers who don't already have a Microsoft E5 license package are eligible for the Purview solutions trial. The trial isn't available for Microsoft 365 Government customers.
 
 ## <a name="licensing"></a>Licencias
 
-Las licencias de cumplimiento de 300 Microsoft 365 E5 se aplican automáticamente a su organización como parte de la configuración de la prueba. Las licencias están activas durante 90 días.
+As part of the trial setup, 300 Microsoft 365 E5 compliance licenses are automatically applied to your organization. The licenses are active for 90 days.
 
 ## <a name="required-roles-for-starting-the-trial"></a>Roles necesarios para iniciar la prueba
 
@@ -65,11 +70,11 @@ La prueba estará disponible de inmediato durante un período de 90 días. Todas
 
 Puede empezar a usar soluciones de Purview tan pronto como las vea en el portal de cumplimiento de Microsoft Purview. No se crea nada automáticamente y los usuarios no se verán afectados. Al navegar por cada solución, es posible que se le indique que realice configuraciones de ajustes adicionales para empezar a usar las características.
 
-Use nuestro [cuaderno de estrategias de prueba](compliance-easy-trials-compliance-playbook.md) para ayudarle a empezar.
+Use nuestra [guía de usuario de prueba](compliance-easy-trials-compliance-playbook.md) para ayudarle a empezar.
 
 #### <a name="finding-support"></a>Búsqueda de soporte
 
-Las organizaciones pueden usar FastTrack para la compatibilidad con la implementación de la prueba si el inquilino tiene al menos 150 licencias. Obtenga más [información sobre FastTrack](/fasttrack/introduction).
+Organizations may use FastTrack for trial deployment support if the tenant has at least 150 licenses. Get more [details about FastTrack](/fasttrack/introduction).
 
 #### <a name="extending-the-trial"></a>Ampliación de la prueba
 
@@ -79,7 +84,7 @@ Puede ampliar la prueba en los últimos 15 días del período de prueba. Hay un 
 
 Los administradores pueden deshabilitar la prueba en cualquier momento desde la tarjeta **Prueba de soluciones de Purview** en el centro de pruebas de Microsoft 365 (consulte [Cómo registrarse para la prueba](#how-to-sign-up-for-the-trial)) y seleccionando **Finalizar evaluación**.
 
-Si decide no actualizar a las soluciones de nivel E5, a menos que se indique lo contrario para la solución, los datos de prueba se conservarán durante un período de tiempo, normalmente 180 días, antes de eliminarse permanentemente. Puede seguir accediendo a los datos recopilados durante la prueba hasta ese momento.
+If you decide not to upgrade to the E5 level solutions, unless stated otherwise for the solution your trial data will be maintained for a period of time, usually 180 days, before being permanently deleted. You may continue to access the data gathered during the trial until that time.
 
 ## <a name="learn-more-about-purview-solutions"></a>Más información sobre las soluciones de Purview
 
@@ -87,15 +92,15 @@ Si decide no actualizar a las soluciones de nivel E5, a menos que se indique lo 
 
 - **Auditoría**
 
-  La auditoría de Microsoft Purview (Premium) permite a las organizaciones dirigir investigaciones forenses y de cumplimiento incrementando la retención necesaria de registros de auditoría para dirigir una investigación, ofreciendo acceso a eventos fundamentales que ayuden a determinar el alcance del compromiso y agilizar el acceso a la API de Actividad de administración de Office 365. Más información acerca de [Auditoría](advanced-audit.md).
+  Microsoft Purview Audit (Premium) helps organizations to conduct forensic and compliance investigations by increasing audit log retention required to conduct an investigation, providing access to crucial events that help determine scope of compromise, and faster access to Office 365 Management Activity API. Learn more about [Audit](advanced-audit.md)
 
 - **Cumplimiento de comunicaciones**
 
-  El cumplimiento de comunicaciones de Microsoft Purview le ayuda a superar los desafíos de cumplimiento modernos asociados a las comunicaciones internas y externas, ya que le ayuda a capturar automáticamente mensajes inadecuados, investigar posibles infracciones de directivas y tomar medidas para corregirlos. Más información sobre el [Cumplimiento de comunicaciones](communication-compliance.md).
+  Microsoft Purview Communication Compliance helps you overcome modern compliance challenges associated with internal and external communications by helping you automatically capture inappropriate messages, investigate possible policy violations, and take steps to remediate. Learn more about [Communication Compliance](communication-compliance.md)
 
 - **Administrador de cumplimiento**
 
-  El Administrador de cumplimiento de Microsoft Purview puede ayudarle a lo largo del proceso de cumplimiento, desde realizar un inventario de los riesgos de protección de datos hasta administrar las complejidades de la implementación de controles, estar al corriente de las normativas y certificaciones e informar a los auditores. Más información sobre el [Administrador de cumplimiento](compliance-manager.md).
+  Microsoft Purview Compliance Manager can help you throughout your compliance journey, from taking inventory of your data protection risks to managing the complexities of implementing controls, staying current with regulations and certifications, and reporting to auditors. Learn more about [Compliance Manager](compliance-manager.md)
 
 - **Administración del ciclo de vida de los datos**
 
@@ -132,7 +137,7 @@ Si decide no actualizar a las soluciones de nivel E5, a menos que se indique lo 
 
 - **Administración de riesgos internos**
 
-  Aproveche la inteligencia artificial para identificar, evaluar y corregir rápidamente los riesgos internos. Con los registros de Microsoft 365 y los servicios de Azure, puede definir directivas que supervisen las señales de riesgo y luego realizar acciones de corrección, como promover la formación de los usuarios o iniciar una investigación. Más información sobre [Administración de riesgos internos](insider-risk-management-solution-overview.md)
+  Leverage artificial intelligence to help you quickly identify, triage, and remediate internal risks. Using logs from Microsoft 365 and Azure services, you can define policies that monitor for risk signals, then take remediation actions such as promoting user education or initiating an investigation. Learn more about [Insider Risk Management](insider-risk-management-solution-overview.md)
 
 <!--
 - **privacy management**

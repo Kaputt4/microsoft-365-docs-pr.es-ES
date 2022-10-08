@@ -14,12 +14,12 @@ ms.collection:
 - m365initiative-syntex
 ms.localizationpriority: medium
 description: Obtenga información sobre la comprensión de documentos en Microsoft SharePoint Syntex.
-ms.openlocfilehash: 7ee016f228a050cf36d048ccd37c3ad8615823ed
-ms.sourcegitcommit: 6d86713c3b1da2db338c78fa60bd7d93e24aa6f4
+ms.openlocfilehash: 345ca5aea2e575c7d893ff225e8d8ec06b9e847d
+ms.sourcegitcommit: 99b174a8d431092b3cf7d650593248671297fd91
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/09/2022
-ms.locfileid: "67639578"
+ms.lasthandoff: 09/30/2022
+ms.locfileid: "68300286"
 ---
 # <a name="document-understanding-overview-in-microsoft-sharepoint-syntex"></a>Introducción a la comprensión de documentos en Microsoft SharePoint Syntex
 
@@ -84,6 +84,7 @@ El procesamiento de OCR funciona mejor en documentos que cumplen los siguientes 
 
 Los modelos de comprensión mediante documentos admiten los siguientes tipos de archivo:
 
+- Csv
 - doc
 - docx
 - eml

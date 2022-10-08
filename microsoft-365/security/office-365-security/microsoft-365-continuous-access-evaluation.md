@@ -14,18 +14,18 @@ ms.custom:
 - goldenconfig
 ms.collection:
 - M365-identity-device-management
-- M365-security-compliance
+- m365-security
 - m365solution-identitydevice
 - m365solution-scenario
 - highpri
 ms.subservice: mdo
 search.appverid: met150
-ms.openlocfilehash: 7e47cfc93c3514ed206cd7235dcbb1d31e64b89b
-ms.sourcegitcommit: b1ed6470645455c2f1fcf467450debc622c40147
+ms.openlocfilehash: 3de2fd16014c1347c70ad8500090d85e18a672a6
+ms.sourcegitcommit: 99b174a8d431092b3cf7d650593248671297fd91
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/15/2022
-ms.locfileid: "67710793"
+ms.lasthandoff: 09/30/2022
+ms.locfileid: "68297736"
 ---
 # <a name="continuous-access-evaluation-for-microsoft-365"></a>Evaluación de acceso continuo para Microsoft 365
 
@@ -82,11 +82,13 @@ Los siguientes servicios de Microsoft 365 admiten actualmente la evaluación con
 |---|---|---|---|
 |**Eventos críticos:**||||
 |Revocación de usuarios|Compatible|Compatible|Compatible|
-|Riesgo de usuario|Compatible|No se admite|No compatible|
+|Riesgo de usuario|Compatible|No se admite|Compatible|
 |**Evaluación de directivas de acceso condicional:**||||
-|Directiva de ubicación de direcciones IP|Compatible|Compatible\*|Compatible|
+|Directiva de ubicación de direcciones IP|Compatible|Compatible\*|Apoyado\**|
 
 \* El acceso al explorador web de Office de SharePoint admite la aplicación instantánea de directivas IP al habilitar el modo estricto. Sin el modo estricto, la duración del token de acceso es de una hora.
+
+\** Las llamadas, reuniones y chat en Teams no se ajustan a las directivas de acceso condicional basadas en IP.
 
 Para obtener más información sobre cómo configurar una directiva de acceso condicional, consulte [este artículo](/azure/active-directory/conditional-access/overview).
 

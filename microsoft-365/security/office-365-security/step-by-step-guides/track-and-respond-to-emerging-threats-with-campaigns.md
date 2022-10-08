@@ -13,22 +13,26 @@ author: MSFTTracyP
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
-ms.collection: m365-guidance-templates
+ms.collection:
+- m365-guidance-templates
+- m365-security
+- tier3
 ms.topic: how-to
 ms.subservice: mdo
 search.appverid: met150
-ms.openlocfilehash: a3ed51bc721b526065035000e88a7478becc539c
-ms.sourcegitcommit: c29af68260ba8676083674b3c70209bff2c2e362
+ms.openlocfilehash: 9e903fc0099d6b3eba6520ba46764dcbdba1d4b5
+ms.sourcegitcommit: 2ff545246fec060ea7829da5afbc1cdc698d51ab
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/16/2022
-ms.locfileid: "67737488"
+ms.lasthandoff: 10/04/2022
+ms.locfileid: "68363593"
 ---
 # <a name="track-and-respond-to-emerging-threats-with-campaigns-in-microsoft-defender-for-office-365"></a>Seguimiento y respuesta a amenazas emergentes con campañas en Microsoft Defender para Office 365
 
-Las campañas se pueden usar para realizar un seguimiento y responder a amenazas emergentes, ya que las campañas permiten investigar un ataque de correo electrónico coordinado contra su organización. A medida que las nuevas amenazas se dirigen a su organización, Microsoft Defender para Office 365 detectará y correlacionará automáticamente los mensajes malintencionados. 
+Las campañas se pueden usar para realizar un seguimiento y responder a amenazas emergentes, ya que las campañas permiten investigar un ataque de correo electrónico coordinado contra su organización. A medida que las nuevas amenazas se dirigen a su organización, Microsoft Defender para Office 365 detectará y correlacionará automáticamente los mensajes malintencionados.
 
 ## <a name="what-you-will-need"></a>Lo que necesitará
+
 - Microsoft Defender para Office 365 Plan 2 (incluido en los planes E5).
 - Permisos suficientes (rol lector de seguridad).
 - De cinco a diez minutos para realizar estos pasos.
@@ -55,14 +59,16 @@ Una campaña puede ser de corta duración o puede abarcar varios días, semanas 
 
 ## <a name="investigating-a-suspicious-email-campaign-using-threat-reports"></a>Investigación de una campaña de correo electrónico sospechosa mediante informes de amenazas
 
-En caso de que una campaña se haya dirigido a su organización y le gustaría obtener más información sobre el impacto: 
+En caso de que una campaña se haya dirigido a su organización y le gustaría obtener más información sobre el impacto:
+
 1. Vaya a la [página](https://security.microsoft.com/campaigns) de la campaña.
-1. Seleccione el nombre de la campaña que desea investigar. 
+1. Seleccione el nombre de la campaña que desea investigar.
 1. Al abrir el control flotante, seleccione **Descargar informe de amenazas**.
-1. Abra el informe de amenazas y proporcionará más información sobre la campaña. La información del informe incluye: 
-- **Resumen ejecutivo:** Resumen de alto nivel del tipo de campaña y el número de usuarios destinados en su organización. 
-- **Análisis:** Gráfico de escala de tiempo de cuándo se inició la campaña, el recuento de mensajes dirigidos a su organización y el destino y los veredictos de los mensajes. 
-- **Origen del ataque:** Principales direcciones IP y dominios de envío con un recuento de mensajes que se entregaron a las bandejas de entrada de la organización. Esto le permite investigar quién se dirige a su organización. 
+1. Abra el informe de amenazas y proporcionará más información sobre la campaña. La información del informe incluye:
+   - **Resumen ejecutivo:** Resumen de alto nivel del tipo de campaña y el número de usuarios destinados en su organización.
+   - **Análisis:** Gráfico de escala de tiempo de cuándo se inició la campaña, el recuento de mensajes dirigidos a su organización y el destino y los veredictos de los mensajes.
+
+- **Origen del ataque:** Principales direcciones IP y dominios de envío con un recuento de mensajes que se entregaron a las bandejas de entrada de la organización. Esto le permite investigar quién se dirige a su organización.
 - **Email plantilla y carga útil:** la línea de asunto de los correos electrónicos que formaban parte de la campaña y las direcciones URL (y su frecuencia) presentes como parte de la campaña.
 - **Recomendaciones:** Recomendaciones para los pasos siguientes para corregir los mensajes.
 
@@ -72,10 +78,10 @@ En caso de que una campaña se haya dirigido a su organización y le gustaría o
 1. Desplácese por la lista de campañas en la **vista Detalles**, debajo del gráfico.
 1. Seleccione el nombre de la campaña que desea investigar. Si la campaña tiene un recuento de clics de más de cero, esto indica que un usuario de su organización ha hecho clic en una dirección URL o ha descargado un archivo del correo electrónico.
 1. El control flotante de la campaña muestra más información sobre la campaña, el gráfico muestra una escala de tiempo de la campaña de principio a fin de la campaña y el diagrama de flujo horizontal muestra las fases de la campaña desde su origen, el veredicto y la ubicación actual de los mensajes.
-1. Debajo del diagrama de flujo, seleccione la pestaña **Clics de dirección URL** para mostrar información sobre el clic. Aquí puede ver el usuario que ha hecho clic en una dirección URL, si el usuario está etiquetado como usuario de cuenta de prioridad, la propia dirección URL y la hora de clic. 
-1. Si desea obtener más información sobre los mensajes bandeja de entrada y en los que se ha hecho clic, seleccione **Explorar mensajes** > **bandeja de entrada**. Se abrirá una nueva pestaña y navegará al Explorador de amenazas. 
-1. En la **vista de detalles** del Explorador, puede hacer referencia a **la entrega más reciente** para determinar si un mensaje sigue en la bandeja de entrada o si el sistema ZAP ha movido a la cuarentena. _Para obtener más detalles sobre el mensaje específico, seleccione el mensaje. El control flotante proporciona información adicional. Al seleccionar la **página Abrir entidad de correo electrónico** en la parte superior izquierda del control flotante, se abrirá una nueva pestaña que le proporcionará más información sobre el mensaje._
-1.  Si desea realizar una acción y sacar los mensajes de la bandeja de entrada, puede seleccionar el mensaje y, a continuación, seleccionar **Acciones** >  de mensaje **Mover a la carpeta no deseada**. Esto garantizará que el usuario no siga interactuando con el mensaje malintencionado que podría dar lugar a una posible vulneración. 
+1. Debajo del diagrama de flujo, seleccione la pestaña **Clics de dirección URL** para mostrar información sobre el clic. Aquí puede ver el usuario que ha hecho clic en una dirección URL, si el usuario está etiquetado como usuario de cuenta de prioridad, la propia dirección URL y la hora de clic.
+1. Si desea obtener más información sobre los mensajes bandeja de entrada y en los que se ha hecho clic, seleccione **Explorar mensajes** \> **bandeja de entrada**. Se abrirá una nueva pestaña y navegará al Explorador de amenazas.
+1. En la **vista de detalles** del Explorador, puede hacer referencia a **la entrega más reciente** para determinar si un mensaje sigue en la bandeja de entrada o si el sistema ZAP ha movido a la cuarentena. *Para obtener más detalles sobre el mensaje específico, seleccione el mensaje. El control flotante proporciona información adicional. Al seleccionar la **página Abrir entidad de correo electrónico** en la parte superior izquierda del control flotante, se abrirá una nueva pestaña que le proporcionará más información sobre el mensaje.*
+1. Si desea realizar una acción y sacar los mensajes de la bandeja de entrada, puede seleccionar el mensaje y, a continuación, seleccionar **Acciones** \> de mensaje **Mover a la carpeta no deseada**. Esto garantizará que el usuario no siga interactuando con el mensaje malintencionado que podría dar lugar a una posible vulneración.
 
 ## <a name="next-steps"></a>Pasos siguientes
 

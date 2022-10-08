@@ -5,7 +5,7 @@ author: MikePlumleyMSFT
 manager: serdars
 ms.audience: ITPro
 ms.topic: article
-ms.service: microsoft-365-enterprise
+ms.service: o365-solutions
 ms.localizationpriority: medium
 ms.collection:
 - highpri
@@ -18,12 +18,12 @@ ms.custom:
 f1.keywords: NOCSH
 recommendations: false
 description: Obtenga información sobre los procedimientos recomendados para configurar la colaboración y el uso compartido de archivos seguros en Teams para proteger los datos en función de su confidencialidad.
-ms.openlocfilehash: 40346ded5af67c7aac11e0491bfc7bd296e13c3d
-ms.sourcegitcommit: 078149c9645ce220911ccd6ce54f984a4c92ce53
+ms.openlocfilehash: ab3d57f45aed00ab2b9500a7cdb80b3adda76483
+ms.sourcegitcommit: fce27da5140691b013a6f7c0ea9c88b4ea4b7c10
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/20/2022
-ms.locfileid: "67811228"
+ms.lasthandoff: 09/23/2022
+ms.locfileid: "67985990"
 ---
 # <a name="set-up-secure-file-sharing-and-collaboration-with-microsoft-teams"></a>Configuración del uso compartido de archivos seguro y la colaboración con Microsoft Teams
 
@@ -156,7 +156,7 @@ Estos módulos de entrenamiento de Microsoft Learn pueden ayudarle a aprender la
 
 |Aprendizaje:|Proteger la información de la empresa con Microsoft 365|
 |---|---|
-|![Icono de entrenamiento de protección de información de Teams.](../media/protect-enterprise-information-microsoft-365.svg)|Proteger y asegurar la información de su organización es más difícil que nunca. La ruta de aprendizaje Proteger la información de la empresa con Microsoft 365 analiza cómo proteger su información confidencial de un uso excesivo o indebido accidental, cómo descubrir y clasificar los datos, cómo protegerlos con etiquetas de confidencialidad y cómo supervisar y analizar su información confidencial para protegerla contra su pérdida. Esta ruta de aprendizaje puede ayudarle a prepararse para las certificaciones Microsoft 365 Certified: Security Administrator Associate y Microsoft 365 Certified: Enterprise Administration Expert.<p>1 h - Ruta de aprendizaje: 5 módulos|
+|![Icono de entrenamiento de protección de información de Teams.](../media/protect-enterprise-information-microsoft-365.svg)|Protecting and securing your organization's information is more challenging than ever. The Protect enterprise information with Microsoft 365 learning path discusses how to protect your sensitive information from accidental oversharing or misuse, how to discover and classify data, how to protect it with sensitivity labels, and how to both monitor and analyze your sensitive information to protect against its loss. This learning path can help you prepare for the Microsoft 365 Certified: Security Administrator Associate and Microsoft 365 Certified: Enterprise Administration Expert certifications.<p>1 h - Ruta de aprendizaje: 5 módulos|
 
 > [!div class="nextstepaction"]
 > [Iniciar >](/training/modules/m365-security-info-overview/introduction/)

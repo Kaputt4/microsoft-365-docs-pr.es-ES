@@ -1,5 +1,5 @@
 ---
-title: Versión de prueba del cuaderno de estrategias de Microsoft Defender para Office 365
+title: Microsoft Defender para Office 365 guía del usuario de prueba
 f1.keywords:
 - NOCSH
 ms.author: chrisda
@@ -7,24 +7,23 @@ author: chrisda
 manager: dansimp
 audience: Admin
 ms.topic: conceptual
-ms.collection: m365-security-compliance
+ms.collection: m365-security
 ms.localizationpriority: high
-ROBOTS: NOINDEX, NOFOLLOW
 ms.service: microsoft-365-security
 search.appverid:
 - MOE150
 - MET150
-description: Soluciones para la versión de prueba del cuaderno de estrategias de Microsoft Defender para Office 365
+description: Microsoft Defender para Office 365 guía del usuario de prueba de soluciones.
 ms.subservice: mdo
 ms.custom: trial-playbook
-ms.openlocfilehash: f80a49e6f5b0181f625b4d5a6067f1a1ce30cf12
-ms.sourcegitcommit: 2dedd0f594b817779e034afa6c4418def2382a22
+ms.openlocfilehash: 145ebc155b2ae10bfdd2b6cdb05e35746969ad2f
+ms.sourcegitcommit: 7828a1e78c3e6bd8d10289f1ad6c8b6769da0966
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/18/2022
-ms.locfileid: "67799216"
+ms.lasthandoff: 10/07/2022
+ms.locfileid: "68495174"
 ---
-# <a name="trial-playbook-microsoft-defender-for-office-365"></a>Versión de prueba del cuaderno de estrategias: Microsoft Defender para Office 365
+# <a name="trial-user-guide-microsoft-defender-for-office-365"></a>Guía del usuario de prueba: Microsoft Defender para Office 365
 
 [!INCLUDE [MDO Trial banner](../includes/mdo-trial-banner.md)]
 
@@ -32,21 +31,45 @@ ms.locfileid: "67799216"
 - [Plan 1 y Plan 2 de Microsoft Defender para Office 365](defender-for-office-365.md)
 - [Microsoft 365 Defender](../defender/microsoft-365-defender.md)
 
-Bienvenido a la versión de prueba del cuaderno de estrategias de Microsoft Defender para Office 365. Este cuaderno de estrategias te ayudará a sacarle el máximo partido a tu prueba gratuita de 90 días al enseñarte cómo proteger tu organización con Defender para Office 365.
+Bienvenido a la guía del usuario de prueba de Microsoft Defender para Office 365! Esta guía del usuario le ayudará a sacar el máximo partido a su evaluación gratuita enseñándole a proteger su organización frente a amenazas malintencionadas que suponen los mensajes de correo electrónico, los vínculos (URL) y las herramientas de colaboración.
 
-Ahora tiene la opción de probar Defender para Office 365 de una de estas dos maneras:
+## <a name="what-is-defender-for-office-365"></a>¿Qué es Defender para Office 365?
 
-- **Modo de bloqueo (recomendado)**: si el registro del intercambio de correo (MX) apunta a Microsoft 365, puede evaluar las funcionalidades de Defender para Office 365 en modo de bloqueo. Defender para Office 365 aplica automáticamente la configuración de la[directiva de seguridad estándar preestablecida](preset-security-policies.md).
+Defender para Office 365 ayuda a las organizaciones a proteger su empresa al ofrecer una lista completa de funcionalidades, incluidas las directivas de protección contra amenazas, los informes, las funcionalidades de investigación y respuesta de amenazas y las funcionalidades automatizadas de investigación y respuesta.
 
-  A lo largo del período de evaluación, puede elegir en cualquier momento optar por una plantilla de protección superior (nuestra configuración de directiva de seguridad preestablecida estricta) o crear sus propias directivas de protección individuales para que se adapten a sus necesidades.
+:::image type="content" source="../../media/microsoft-defender-for-office-365.png" alt-text="Microsoft Defender para Office 365 diagrama conceptual." lightbox="../../media/microsoft-defender-for-office-365.png":::
 
-- **Modo de Auditoría**: si el registro MX apunta a otro lugar distinto de Microsoft 365 (por ejemplo, una puerta de enlace de correo electrónico de terceros), puede evaluar Defender para Office 365 en modo auditoría. Defender para Office 365 no realizará ninguna acción de bloqueo en los mensajes que determinemos que son perjudiciales.
+Además de la detección de amenazas avanzadas, el siguiente vídeo muestra cómo las funcionalidades de SecOps de Defender para Office 365 pueden ayudar a su equipo a responder a las amenazas:
 
-  Estas amenazas se registrarán y estarán disponibles para su revisión a través del [Informe de estado de protección contra amenazas](view-email-security-reports.md#threat-protection-status-report), que proporciona información detallada sobre los tipos de amenazas detectadas, a quién se dirigen las amenazas y mucho más. Estas "capturas" adicionales indican las capacidades de protección adicionales de Defender para Office 365 sobre las capacidades estándar de Exchange Online Protection (EOP) o las capacidades de otras puertas de enlace de correo electrónico de terceros. Una vez que esté satisfecho y listo para usar Defender para Office 365, puede [migrar a Defender para Office 365](migrate-to-defender-for-office-365.md).
+> [!VIDEO https://www.microsoft.com/videoplayer/embed/RWMmIe]
 
-:::image type="content" source="../../media/mdo-trial-playbook-what-is-mdo.png" alt-text="Representación gráfica de todos los componentes de Microsoft Defender para Office 365" lightbox="../../media/mdo-trial-playbook-what-is-mdo.png":::
+### <a name="audit-mode-vs-blocking-mode-for-defender-for-office-365"></a>Modo de auditoría frente a modo de bloqueo para Defender para Office 365
 
-Con las recomendaciones de esta guía, aprenderá cómo Defender para Office 365 puede ayudarle a definir directivas de protección, analizar amenazas para su organización y responder a ataques.
+¿Desea que su experiencia de Defender para Office 365 sea activa o pasiva? Estos son los dos modos entre los que puede seleccionar:
+
+- **Modo de auditoría**: se crean *directivas de evaluación* especiales para la protección contra suplantación de identidad (que incluye protección contra suplantación), datos adjuntos seguros y vínculos seguros. Estas directivas de evaluación están configuradas para *detectar* solo amenazas. Defender para Office 365 detecta mensajes dañinos para los informes, pero los mensajes no se actúan sobre ellos (por ejemplo, los mensajes detectados no se ponen en cuarentena). La configuración de estas directivas de evaluación se describe en la sección [Directivas en modo de auditoría](try-microsoft-defender-for-office-365.md#policies-in-audit-mode) más adelante en este artículo.
+
+  El modo auditoría proporciona acceso a informes personalizados para las amenazas detectadas por Defender para Office 365 en la página **Modo de evaluación** en <https://security.microsoft.com/atpEvaluation>.
+
+- **Modo de bloqueo**: la plantilla Estándar para [directivas de seguridad preestablecidas](preset-security-policies.md) se activa y se usa para la prueba, y los usuarios que especifique incluir en la prueba se agregan a la directiva de seguridad preestablecida Estándar. Defender para Office 365 detecta y *toma medidas en* los mensajes *dañinos* (por ejemplo, los mensajes detectados están en cuarentena).
+
+  La selección predeterminada y recomendada es limitar estas directivas de Defender para Office 365 a todos los usuarios de la organización. Pero durante o después de la configuración de la prueba, puede cambiar la asignación de directivas a usuarios, grupos o dominios de correo electrónico específicos en el portal de Microsoft 365 Defender o en [la configuración de directiva asociada a Defender para Office 365 pruebas](try-microsoft-defender-for-office-365.md#policy-settings-associated-with-defender-for-office-365-trials).
+
+  El modo de bloqueo no proporciona informes personalizados para las amenazas detectadas por Defender para Office 365. En su lugar, la información está disponible en los informes normales y las características de investigación de Defender para Office 365 Plan 2.
+
+Un factor clave en el modo de auditoría frente al modo de bloqueo es cómo se entrega el correo electrónico a la organización de Microsoft 365:
+
+- El correo de Internet fluye directamente en Microsoft 365, pero la suscripción actual solo tiene [Exchange Online Protection (EOP)](exchange-online-protection-overview.md) o [Defender para Office 365 Plan 1](overview.md#microsoft-defender-for-office-365-plan-1-vs-plan-2-cheat-sheet).
+
+  ![El correo fluye desde Internet a Microsoft 365, con protección contra EOP o Defender para Office 365 Plan 1.](../../media/mdo-trial-mail-flow.png)
+
+  En estos entornos, puede seleccionar **el modo de auditoría** o **el modo de bloqueo**.
+
+- Actualmente usa un servicio o dispositivo de terceros para la protección por correo electrónico de los buzones de Microsoft 365. El correo de Internet fluye a través del servicio de protección antes de su entrega a la organización de Microsoft 365. La protección de Microsoft 365 es lo más baja posible (nunca está completamente desactivada; por ejemplo, siempre se aplica la protección contra malware).
+
+  ![El correo fluye desde Internet a través del dispositivo o servicio de protección de terceros antes de su entrega a Microsoft 365.](../../media/mdo-migration-before.png)
+
+  En estos entornos, solo puede seleccionar **el modo de auditoría** . No es necesario cambiar el flujo de correo (registros MX).
 
 Comencemos
 
@@ -113,7 +136,7 @@ Mira este vídeo para obtener más información: [Detectar y responder a un peli
 
 #### <a name="use-threat-explorer-to-investigate-malicious-email"></a>Usa el Explorador de amenazas para investigar el correo electrónico malintencionado
 
-Defender para Office 365 permite investigar las actividades que ponen en peligro a las personas de la organización y tomar medidas para proteger la organización. Puedes hacerlo con el [Explorador de amenazas o (detecciones en tiempo real)](threat-explorer.md)
+Defender for Office 365 enables you to investigate activities that put people in your organization at risk and to take action to protect your organization. You can do this using [Threat Explorer](threat-explorer.md).
 
 - [Buscar correo electrónico sospechoso que haya sido entregado](investigate-malicious-email-that-was-delivered.md#find-suspicious-email-that-was-delivered): buscar y eliminar mensajes, identificar la dirección IP de un remitente de correo electrónico malintencionado o abrir un incidente para una investigación posterior.
 - [Comprobar la acción de entrega y la ubicación](investigate-malicious-email-that-was-delivered.md#check-the-delivery-action-and-location): esta comprobación te permite conocer la ubicación de los mensajes de correo electrónico problemáticos.
@@ -135,7 +158,7 @@ Mira este vídeo para obtener más información: [Vistas de campaña en Microsof
 
 Responde de forma eficaz mediante la investigación y respuesta automatizadas (AIR) para revisar, priorizar y responder a las amenazas.
 
-- [Más información](automated-investigation-response-office.md) sobre los cuadernos de prueba de investigación.
+- [Obtenga más información](automated-investigation-response-office.md) sobre las guías de usuario de investigación.
 - [Ver los detalles y resultados](email-analysis-investigations.md) de una investigación.
 - Elimina las amenazas [mediante la aprobación de acciones de corrección](air-remediation-actions.md).
 
@@ -145,7 +168,7 @@ Responde de forma eficaz mediante la investigación y respuesta automatizadas (A
 
 #### <a name="dive-deep-into-data-with-query-based-hunting"></a>Profundiza en los datos con la búsqueda basada en consultas
 
-Usa la búsqueda avanzada para escribir reglas de detección personalizadas, inspeccionar proactivamente los eventos de tu entorno y localizar indicadores de amenazas. Explora los datos sin procesar del entorno.
+Use Advanced hunting to write custom detection rules, proactively inspect events in your environment, and locate threat indicators. Explore raw data in your environment.
 
 - [Crea reglas de detección personalizadas](../defender/custom-detections-overview.md).
 - [Accede a consultas compartidas](../defender/advanced-hunting-shared-queries.md) creadas por otros usuarios.
@@ -193,7 +216,7 @@ Usa las funcionalidades de informe de Defender para Office 365 para obtener más
 
 #### <a name="use-threat-explorer-to-investigate-malicious-email-in-auditing-mode"></a>Usar el Explorador de amenazas para investigar el correo electrónico malintencionado en modo de auditoría
 
-Defender para Office 365 permite investigar las actividades que ponen en peligro a las personas de la organización y tomar medidas para proteger la organización. Puedes hacerlo con el [Explorador de amenazas o (detecciones en tiempo real)](threat-explorer.md)
+Defender for Office 365 enables you to investigate activities that put people in your organization at risk and to take action to protect your organization. You can do this using [Threat Explorer](threat-explorer.md).
 
 - [Buscar correo electrónico sospechoso que haya sido entregado](investigate-malicious-email-that-was-delivered.md#find-suspicious-email-that-was-delivered): buscar y eliminar mensajes, identificar la dirección IP de un remitente de correo electrónico malintencionado o abrir un incidente para una investigación posterior.
 - [Comprobar la acción de entrega y la ubicación](investigate-malicious-email-that-was-delivered.md#check-the-delivery-action-and-location): esta comprobación te permite conocer la ubicación de los mensajes de correo electrónico problemáticos.
@@ -235,6 +258,6 @@ Proporciona los conocimientos adecuados a los usuarios para que identifiquen ame
 
 - **Guía interactiva:**¿No estás familiarizado con Defender para Office 365? Revisa la [guía interactiva](https://mslearn.cloudguides.com/guides/Safeguard%20your%20organization%20with%20Microsoft%20Defender%20for%20Office%20365) para saber cómo empezar.
 - **Guía de introducción a Fast Track\:[Microsoft Defender para Office 365](https://go.microsoft.com/fwlink/p/?linkid=2197415)
-- **Documentos de Microsoft**: Obtén información detallada sobre cómo funciona Defender para Office 365 y la mejor manera de implementarlo para su organización. Visite [Docs](defender-for-office-365.md).
+- **Microsoft Defender para Office 365 documentación**: obtenga información detallada sobre cómo funciona Defender para Office 365 y cómo implementarla mejor para su organización. Visite la [documentación de Microsoft Defender para Office 365](defender-for-office-365.md).
 - **Qué incluye**: Para ver todas las características de seguridad del correo electrónico de Office 365 ordenadas por nivel de producto, consulta la [Matriz de características](/office365/servicedescriptions/office-365-advanced-threat-protection-service-description#feature-availability).
 - **Por qué elegir Defender para Office 365**: La [hoja de datos de Defender para Office 365](https://query.prod.cms.rt.microsoft.com/cms/api/am/binary/RE4FCiy) muestra las 10 razones principales por las que los clientes eligen Microsoft.

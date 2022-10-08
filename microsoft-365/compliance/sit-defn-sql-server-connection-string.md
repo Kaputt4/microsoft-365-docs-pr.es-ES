@@ -14,19 +14,22 @@ f1_keywords:
 ms.service: O365-seccomp
 ms.localizationpriority: medium
 ms.collection:
-- M365-security-compliance
+- tier3
+- purview-compliance
 hideEdit: true
 feedback_system: None
 recommendations: false
 description: SQL Server definición de entidad de tipo de información confidencial de cadena de conexión.
-ms.openlocfilehash: 503b2bae244cec8de5da29228f6517433a162ca1
-ms.sourcegitcommit: 5aed330d8af523f0dffe5e392f1c79f047e38172
+ms.openlocfilehash: df9c851653606cf1d2cb4f14e7e0d7c57a0f761c
+ms.sourcegitcommit: 176bbd29c92e1c0812e8bcd1e1e4938a3e1d7331
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/21/2022
-ms.locfileid: "67000073"
+ms.lasthandoff: 10/05/2022
+ms.locfileid: "68472396"
 ---
 # <a name="sql-server-connection-string"></a>Cadena de conexión de SQL Server
+
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
 
 ## <a name="format"></a>Formato
 
@@ -50,7 +53,7 @@ No
 
 Una política de DLP tiene una gran confianza en que ha detectado este tipo de información confidencial si, dentro de una proximidad de 300 caracteres:
 
-- La expresión `CEP_Regex_SQLServerConnectionString` regular busca contenido que coincida con el patrón.
+- La expresión regular `CEP_Regex_SQLServerConnectionString` encuentra contenido que coincide con el patrón.
 - No se encuentra una palabra clave de `CEP_GlobalFilter` .
 - La expresión `CEP_PasswordPlaceHolder` regular no encuentra contenido que coincida con el patrón.
 - La expresión `CEP_CommonExampleKeywords` regular no encuentra contenido que coincida con el patrón.

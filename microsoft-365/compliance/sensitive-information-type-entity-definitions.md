@@ -14,17 +14,18 @@ f1_keywords:
 ms.service: O365-seccomp
 ms.localizationpriority: medium
 ms.collection:
-- M365-security-compliance
+- tier2
+- purview-compliance
 hideEdit: true
 feedback_system: None
 recommendations: false
 description: Hay muchos tipos de información confidencial que están listos para su uso en las directivas DLP. Este artículo es una lista de todas estas definiciones de entidad de tipo de información confidencial.
-ms.openlocfilehash: 9a40147bd92ac9904924664a018faac40a61a020
-ms.sourcegitcommit: cd044e28516c5e024700f89fb15b92c1ea5269b0
+ms.openlocfilehash: 2e59fb2090989709dfd2d51d839aaae46e84b7ec
+ms.sourcegitcommit: 7828a1e78c3e6bd8d10289f1ad6c8b6769da0966
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/16/2022
-ms.locfileid: "67361589"
+ms.lasthandoff: 10/07/2022
+ms.locfileid: "68495065"
 ---
 # <a name="sensitive-information-type-entity-definitions"></a>Definiciones de entidad de tipos de información confidencial
 
@@ -123,7 +124,6 @@ Este artículo es una lista de todas las definiciones de entidad de tipo de info
 - [Número del documento de identidad de Chile](sit-defn-chile-identity-card-number.md)
 - [Número del documento de identidad de residente de China (PRC)](sit-defn-china-resident-identity-card-number.md)
 - [Secreto de cliente/clave de API (versión preliminar)](sit-defn-client-secret-api-key.md)
-- [Credenciales de URL](sit-defn-credentials-in-url.md)
 - [Número de tarjeta de crédito](sit-defn-credit-card-number.md)
 - [Número de licencia de conducir de Croacia](sit-defn-croatia-drivers-license-number.md)
 - [Número del documento de identidad de Croacia](sit-defn-croatia-identity-card-number.md)
@@ -224,6 +224,7 @@ Este artículo es una lista de todas las definiciones de entidad de tipo de info
 - [Código de identificación fiscal de Japón](sit-defn-japan-my-number-corporate.md)
 - [Número de identificación fiscal de Japón](sit-defn-japan-my-number-personal.md)
 - [Número de pasaporte de Japón](sit-defn-japan-passport-number.md)
+- [Direcciones físicas de Japón](sit-defn-japan-physical-addresses.md)
 - [Número de tarjeta de residencia de Japón](sit-defn-japan-residence-card-number.md)
 - [Número de registro de residente de Japón](sit-defn-japan-resident-registration-number.md)
 - [Número de la seguridad social de Japón (SIN)](sit-defn-japan-social-insurance-number.md)

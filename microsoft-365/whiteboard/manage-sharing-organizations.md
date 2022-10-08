@@ -12,12 +12,12 @@ search.appverid: MET150
 ms.collection: ''
 ms.localizationpriority: medium
 description: Obtenga información sobre cómo administrar el uso compartido para La pizarra de Microsoft.
-ms.openlocfilehash: 2aba307ceae06639e67c8af35e2452edd648f451
-ms.sourcegitcommit: 173f696dc8f81259d852775572a6938ec39f6115
+ms.openlocfilehash: aeb6da3d6bd66c02468ff19efa072af4d7084389
+ms.sourcegitcommit: d0557f757cfa48330ed57e966033891d10f03688
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/10/2022
-ms.locfileid: "67644277"
+ms.lasthandoff: 10/06/2022
+ms.locfileid: "68492516"
 ---
 # <a name="manage-sharing-for-microsoft-whiteboard"></a>Administración del uso compartido para La pizarra de Microsoft
 
@@ -31,9 +31,7 @@ Hay más capacidad para la colaboración temporal por parte de cuentas de dispos
 
 En este caso, Whiteboard proporciona visualización y colaboración temporales en la pizarra solo durante la reunión de Teams. No se crea un vínculo de recurso compartido y Whiteboard no concede acceso al archivo.
 
-Si tiene habilitado el uso compartido externo para OneDrive para la Empresa, no se requiere ninguna acción adicional.
-
-Si restringe el uso compartido externo para OneDrive para la Empresa, puede mantenerlo restringido y simplemente habilitar una nueva configuración para que funcionen las cuentas de dispositivo externas y compartidas. Para hacerlo, siga estos pasos:
+Para habilitar este comportamiento, siga estos pasos:
 
 1. Asegúrese de que Whiteboard está habilitado para su organización. Para obtener más información, vea [Administrar el acceso a Whiteboard](manage-whiteboard-access-organizations.md).
 
@@ -65,9 +63,7 @@ Estos cambios deben tardar aproximadamente 60 minutos en aplicarse en todo el in
 |Inicie la pizarra desde surface hub o Salas de Microsoft Teams|Almacenamiento: Azure (los archivos de pizarra se moverán a OneDrive para la Empresa en el futuro)<br><br>Propietario: Participante de la reunión|No aplicable|Usuarios en el inquilino: pueden iniciar, ver y colaborar<br><br>Usuarios externos: solo pueden ver y colaborar durante la reunión.<br><br> Cuentas de dispositivo compartido: solo puede ver y colaborar durante la reunión.|
 
 > [!NOTE]
->Si una pizarra se almacena en OneDrive y ya está asociada a una reunión, no se puede iniciar en un dispositivo Surface Hub o Salas de Microsoft Teams. Un usuario autenticado en otro dispositivo tendrá que hacerlo. Tenemos previsto habilitar esta funcionalidad en una versión futura.
-
-
+> Si una pizarra se almacena en OneDrive y ya está asociada a una reunión, no se puede iniciar en un dispositivo Surface Hub o Salas de Microsoft Teams. Un usuario autenticado en otro dispositivo tendrá que hacerlo. Tenemos previsto habilitar esta funcionalidad en una versión futura.
 
 ## <a name="add-as-a-tab-in-teams-channels-and-chats"></a>Agregar como pestaña en canales y chats de Teams
 
@@ -95,5 +91,7 @@ Al compartir pizarras desde clientes web, de escritorio o móviles, puede elegir
 [Administración del acceso a Whiteboard](manage-whiteboard-access-organizations.md)
 
 [Administración de datos para Whiteboard](manage-data-organizations.md)
+
+[Requisitos de red para Microsoft Defender de Cloud Apps](/defender-cloud-apps/network-requirements)
 
 [Implementación de pizarra en Windows](deploy-on-windows-organizations.md)

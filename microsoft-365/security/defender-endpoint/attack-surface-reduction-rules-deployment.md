@@ -1,7 +1,7 @@
 ---
-title: Introducción a la implementación de reglas de reducción de la superficie expuesta a ataques (ASR)
-description: Proporciona información general y instrucciones de requisitos previos sobre la implementación de reglas de reducción de superficie expuesta a ataques (ASR).
-keywords: Implementación de reglas de reducción de superficie expuesta a ataques, implementación de ASR, habilitación de reglas de asr, configuración de ASR, sistema de prevención de intrusiones de host, reglas de protección, reglas contra vulnerabilidades de seguridad, protección contra vulnerabilidades de seguridad, reglas de vulnerabilidad de seguridad, reglas de prevención de infecciones, Microsoft Defender para punto de conexión, configurar reglas asr
+title: Introducción a la implementación de reglas de reducción de superficie expuesta a ataques (ASR) de Microsoft Defender para punto de conexión (MDE)
+description: Proporciona información general y instrucciones de requisitos previos sobre la implementación de reglas de reducción de superficie expuesta a ataques (ASR) de Microsoft Defender para punto de conexión (MDE). Vínculos a temas que muestran cómo planear y implementar ASR, probar reglas de ASR, configurar reglas de ASR y habilitar reglas de ASR.
+keywords: Microsoft Defender para punto de conexión (MDE) reglas de reducción de superficie expuesta a ataques, reglas de ASR intune, reglas de ASR de defender, reglas de ASR de Windows 10, reglas de defender asr, informe de reglas de ASR, implementación de reglas de reducción de superficie de ataque de microsoft, visor de eventos de reglas de ASR, habilitar reglas asr, configurar ASR, sistema de prevención de intrusiones de host, reglas de protección, reglas contra vulnerabilidades de seguridad, anti-exploit, reglas de vulnerabilidad de seguridad, reglas de prevención de infecciones, Microsoft Defender para punto de conexión, configurar reglas de ASR
 search.product: eADQiWindows 10XVcnh
 ms.mktglfcycl: manage
 ms.sitesec: library
@@ -17,21 +17,22 @@ manager: dansimp
 ms.custom: asr
 ms.topic: article
 ms.collection:
-- M365-security-compliance
+- m365-security
 - m365solution-asr-rules
 - highpri
+- tier1
 ms.date: 09/18/2022
 search.appverid: met150
-ms.openlocfilehash: 0b1b0573db6742676fe5496856e2fd66798d7d11
-ms.sourcegitcommit: 078149c9645ce220911ccd6ce54f984a4c92ce53
+ms.openlocfilehash: 5901bdcaa2f7d31a77db19f11a4caf9bb31dd6b6
+ms.sourcegitcommit: 7828a1e78c3e6bd8d10289f1ad6c8b6769da0966
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/20/2022
-ms.locfileid: "67811600"
+ms.lasthandoff: 10/07/2022
+ms.locfileid: "68495217"
 ---
 # <a name="attack-surface-reduction-asr-rules-deployment-overview"></a>Introducción a la implementación de reglas de reducción de la superficie expuesta a ataques (ASR)
 
-Las superficies expuestas a ataques son todos los lugares donde su organización es vulnerable a ciberamenazas y ataques. Las superficies expuestas a ataques de su organización incluyen todos los lugares donde un atacante podría poner en peligro los dispositivos o redes de su organización. Reducir la superficie expuesta a ataques significa proteger los dispositivos y la red de su organización, lo que deja a los atacantes con menos formas de atacar. La configuración de reglas de reducción de la superficie expuesta a ataques (ASR), una de las muchas características de seguridad que se encuentran en Microsoft Defender para punto de conexión, puede ayudar.
+Las superficies expuestas a ataques son todos los lugares donde su organización es vulnerable a ciberamenazas y ataques. Reducir la superficie expuesta a ataques significa proteger los dispositivos y la red de su organización, lo que deja a los atacantes con menos formas de atacar. La configuración de reglas de reducción de superficie expuesta a ataques (ASR) de Microsoft Defender para punto de conexión (MDE) puede ayudar.
 
 Las reglas de ASR tienen como destino determinados comportamientos de software, como:
 
@@ -41,18 +42,47 @@ Las reglas de ASR tienen como destino determinados comportamientos de software, 
 
 Al reducir las distintas superficies de ataque, puedes ayudar a evitar que se produzcan ataques en primer lugar.
 
-## <a name="before-you-begin"></a>Antes de empezar
+Esta colección de implementación proporciona información sobre los siguientes aspectos de las reglas de ASR de MDE:
+
+- Requisitos de reglas de ASR
+- plan para la implementación de reglas de ASR
+- probar reglas de ASR
+- configurar y habilitar reglas de asr
+- Procedimientos recomendados de las reglas de reducción de superficie expuesta a ataques
+- Búsqueda avanzada de reglas de ASR
+- Visor de eventos de reglas de ASR
+
+## <a name="asr-rules-deployment-steps"></a>Pasos de implementación de reglas de ASR
+
+Al igual que con cualquier nueva implementación a gran escala que pueda afectar potencialmente a las operaciones de línea de negocio, es importante ser metódico en su planeamiento e implementación. Debido a las eficaces funcionalidades de las reglas de ASR para evitar el malware, es necesario planear e implementar cuidadosamente estas reglas para asegurarse de que funcionan mejor para los flujos de trabajo de clientes únicos. Para trabajar en su entorno, debe planear, probar, implementar y poner en funcionamiento las reglas de ASR cuidadosamente.  
+
+> :::image type="content" source="images/asr-rules-deployment-phases.png" alt-text="Planee las reglas de reducción de superficie expuesta a ataques (ASR) de Microsoft Defender para punto de conexión (MDE), pruebe las reglas de ASR de MDE, habilite las reglas de ASR de MDE y mantenga las reglas de ASR." lightbox="images/asr-rules-deployment-phases.png":::
+
+## <a name="important-pre-deployment-caveat"></a>Advertencia importante previa a la implementación
+
+Mientras pasa por el proceso de planeamiento, auditoría y habilitación de reglas asr, se recomienda habilitar las tres _reglas de protección estándar_ siguientes. Consulta [Reglas de reducción de superficie expuesta a ataques por tipo](attack-surface-reduction-rules-reference.md#attack-surface-reduction-rules-by-type) para obtener detalles importantes sobre los dos tipos de reglas de ASR.
+
+- [Bloquear el robo de credenciales del subsistema de autoridad de seguridad local de Windows (lsass.exe)](attack-surface-reduction-rules-reference.md#block-credential-stealing-from-the-windows-local-security-authority-subsystem)
+- [Bloquear el abuso de controladores firmados vulnerables explotados](attack-surface-reduction-rules-reference.md#block-abuse-of-exploited-vulnerable-signed-drivers)
+- [Bloquear la persistencia a través de la suscripción de eventos de Instrumental de administración de Windows (WMI)](attack-surface-reduction-rules-reference.md#block-persistence-through-wmi-event-subscription)
+
+Normalmente, puede habilitar las reglas de protección estándar con un impacto mínimo a no perceptible para el usuario final. Para obtener un método sencillo para habilitar las reglas de protección estándar, consulte: [Opción de protección estándar simplificada](attack-surface-reduction-rules-report.md#simplified-standard-protection-option).
+
+> [!NOTE]
+> Para los clientes que usan hips que no son de Microsoft y están realizando la transición a Microsoft Defender para punto de conexión reglas de reducción de superficie expuesta a ataques: Microsoft aconseja a los clientes que ejecuten su solución HIPS en paralelo con su implementación de reglas de ASR hasta el momento en que cambie del modo Auditoría a Modo de bloque. Tenga en cuenta que debe ponerse en contacto con el proveedor de antivirus de terceros para obtener recomendaciones de exclusión.  
+
+## <a name="before-you-begin-testing-or-enabling-asr-rules"></a>Antes de empezar a probar o habilitar reglas de ASR
 
 Durante la preparación inicial, es fundamental que comprenda las capacidades de los sistemas que va a poner en marcha. Comprender las funcionalidades le ayudará a determinar qué reglas de ASR son más importantes para proteger su organización. Además, hay varios requisitos previos a los que debe atender para preparar la implementación de ASR.
 
->[!IMPORTANT]
->En esta guía se proporcionan imágenes y ejemplos que le ayudarán a decidir cómo configurar reglas de ASR; Es posible que estas imágenes y ejemplos no reflejen las mejores opciones de configuración para su entorno.
+> [!IMPORTANT]
+> En esta guía se proporcionan imágenes y ejemplos que le ayudarán a decidir cómo configurar reglas de ASR; Es posible que estas imágenes y ejemplos no reflejen las mejores opciones de configuración para su entorno.
 
 Antes de empezar, revise [Introducción a la reducción de la superficie expuesta a ataques](overview-attack-surface-reduction.md) y [Desmitificar las reglas de reducción de la superficie expuesta a ataques: Parte 1](https://techcommunity.microsoft.com/t5/microsoft-defender-for-endpoint/demystifying-attack-surface-reduction-rules-part-1/ba-p/1306420) para obtener información fundamental. Para comprender las áreas de cobertura y el impacto potencial, familiarícese con el conjunto actual de reglas de ASR; consulte [Referencia de reglas de reducción de superficie expuesta a ataques](attack-surface-reduction-rules-reference.md).  Mientras se familiariza con el conjunto de reglas de ASR, tome nota de las asignaciones de GUID por regla; vea: [regla ASR a matriz GUID](attack-surface-reduction-rules-reference.md#asr-rule-to-guid-matrix).
 
 Las reglas de ASR son solo una funcionalidad de las capacidades de reducción de superficie expuesta a ataques dentro de Microsoft Defender para punto de conexión. Este documento profundizará más en la implementación de reglas de ASR de forma eficaz para detener amenazas avanzadas, como ransomware operados por personas y otras amenazas.  
 
-### <a name="rules-by-category"></a>Reglas por categoría
+### <a name="asr-rules-list-by-category"></a>Lista de reglas de ASR por categoría
 
 Como se describe en [Usar reglas de reducción de superficie expuesta a ataques para evitar la infección por malware](attack-surface-reduction.md), hay varias reglas de reducción de superficie expuesta a ataques dentro de MDE que puede habilitar para proteger su organización. A continuación se muestran las reglas desglosadas por categoría:
 
@@ -69,7 +99,7 @@ Como se describe en [Usar reglas de reducción de superficie expuesta a ataques 
 
 (<a id="fn1">2</a>) Algunas reglas de ASR generan ruido considerable, pero no bloquean la funcionalidad. Por ejemplo, si va a actualizar Chrome; Chrome accederá a lsass.exe; las contraseñas se almacenan en lsass en el dispositivo. Sin embargo, Chrome no debe tener acceso a lsass.exe de dispositivo local. Si habilita la regla para bloquear el acceso a lsass, generará una gran cantidad de eventos. Estos eventos son buenos eventos porque el proceso de actualización de software no debe tener acceso a lsass.exe. La habilitación de esta regla impedirá que las actualizaciones de Chrome accedan a lsass, pero no impedirá que Chrome se actualice; esto también sucede con otras aplicaciones que realizan llamadas innecesarias a lsass.exe. El _acceso en bloque a la regla lsass_ bloqueará las llamadas innecesarias a lsass, pero no bloqueará la ejecución de la aplicación.
 
-### <a name="infrastructure-requirements"></a>Requisitos de infraestructura
+### <a name="asr-infrastructure-requirements"></a>Requisitos de infraestructura de ASR
 
 Aunque son posibles varios métodos de implementación de reglas ASR, esta guía se basa en una infraestructura que consta de:
 
@@ -86,48 +116,38 @@ Para aprovechar al máximo las reglas de ASR y los informes, se recomienda usar 
 
 ### <a name="asr-rules-dependencies"></a>Dependencias de reglas de ASR
 
-Antivirus de Microsoft Defender debe estar habilitado y configurado como solución antivirus principal y debe estar en el modo siguiente:
+Microsoft Defender Antivirus debe estar habilitado y configurado como solución antivirus principal y debe estar en el modo siguiente:
 
 - Solución antivirus/antimalware principal  
 - Estado: modo activo
 
-El Antivirus de Microsoft Defender no debe estar en ninguno de los modos siguientes:
+Microsoft Defender Antivirus no debe estar en ninguno de los modos siguientes:
 
 - Pasiva
 - Modo pasivo con detección y respuesta de puntos de conexión (EDR) en modo de bloque
 - Examen periódico limitado (LPS)
-- Desactivada
+- Desactivado
 
-Consulte: [Protección entregada en la nube y Antivirus de Microsoft Defender](cloud-protection-microsoft-defender-antivirus.md).
+Consulte: [Protección entregada en la nube y antivirus de Microsoft Defender](cloud-protection-microsoft-defender-antivirus.md).
 
-### <a name="cloud-protection-maps-must-be-enabled"></a>Cloud Protection (MAPS) debe estar habilitado
+### <a name="cloud-protection-maps-must-be-enabled-to-enable-asr-rules"></a>Cloud Protection (MAPS) debe estar habilitado para habilitar las reglas de ASR.
 
-Antivirus de Microsoft Defender funciona sin problemas con los servicios en la nube de Microsoft. Estos servicios de protección en la nube, también conocidos como Microsoft Advanced Protection Service (MAPS), mejoran la protección estándar en tiempo real, posiblemente proporcionando la mejor defensa antivirus. La protección en la nube es fundamental para evitar infracciones de malware y un componente crítico de las reglas de ASR.
-[Active la protección entregada en la nube en el Antivirus de Microsoft Defender](enable-cloud-protection-microsoft-defender-antivirus.md).
+Microsoft Defender Antivirus funciona sin problemas con los servicios en la nube de Microsoft. Estos servicios de protección en la nube, también conocidos como Microsoft Advanced Protection Service (MAPS), mejoran la protección estándar en tiempo real, posiblemente proporcionando la mejor defensa antivirus. La protección en la nube es fundamental para evitar infracciones de malware y un componente crítico de las reglas de ASR.
+[Active la protección proporcionada en la nube en Microsoft Defender Antivirus](enable-cloud-protection-microsoft-defender-antivirus.md).
 
-### <a name="microsoft-defender-antivirus-components-must-be-current-versions"></a>Los componentes del Antivirus de Microsoft Defender deben ser versiones actuales
+### <a name="microsoft-defender-antivirus-components-must-be-current-versions-for-asr-rules"></a>Microsoft Defender los componentes de Antivirus deben ser versiones actuales de las reglas de ASR
 
-Las siguientes versiones del componente Antivirus de Microsoft Defender no deben tener más de dos versiones anteriores a la versión más disponible actualmente:
+Las siguientes versiones Microsoft Defender componentes antivirus no deben tener más de dos versiones anteriores a la versión más disponible actualmente:
 
-- **Versión de actualización de la Plataforma antivirus de Microsoft Defender**  : la plataforma Antivirus de Microsoft Defender se actualiza mensualmente.
-- **Versión del motor antivirus de Microsoft Defender** : el motor antivirus de Microsoft Defender se actualiza mensualmente.
-- **Inteligencia de seguridad del Antivirus de Microsoft Defender** : Microsoft actualiza continuamente la inteligencia de seguridad de Microsoft Defender (también conocida como definición y firma) para abordar las amenazas más recientes y para refinar la lógica de detección.
+- **Microsoft Defender versión de actualización de la plataforma antivirus**: Microsoft Defender plataforma antivirus se actualiza mensualmente.
+- **Microsoft Defender versión del motor antivirus**: Microsoft Defender motor antivirus se actualiza mensualmente.
+- **Microsoft Defender Inteligencia de seguridad antivirus**: Microsoft actualiza continuamente Microsoft Defender inteligencia de seguridad (también conocida como, definición y firma) para abordar las amenazas más recientes y para refinar la lógica de detección.
 
-Mantener actualizadas las versiones del Antivirus de Microsoft Defender ayuda a reducir los resultados falsos positivos de las reglas de ASR y mejora las funcionalidades de detección del Antivirus de Microsoft Defender. Para obtener más información sobre las versiones actuales y cómo actualizar los distintos componentes del Antivirus de Microsoft Defender, visite [Compatibilidad con la plataforma Antivirus de Microsoft Defender](manage-updates-baselines-microsoft-defender-antivirus.md).
+Mantener Microsoft Defender versiones de Antivirus actualizadas ayuda a reducir los resultados falsos positivos de las reglas de ASR y mejora Microsoft Defender capacidades de detección de antivirus. Para obtener más información sobre las versiones actuales y cómo actualizar los diferentes componentes de antivirus de Microsoft Defender, visite [Microsoft Defender compatibilidad con la plataforma antivirus](manage-updates-baselines-microsoft-defender-antivirus.md).
 
 ### <a name="caveat"></a>Advertencia
 
 Algunas reglas no funcionan bien si la aplicación y los scripts no firmados y desarrollados internamente tienen un uso elevado. Es más difícil implementar reglas ASR si no se aplica la firma de código.
-
-## <a name="asr-rules-deployment-steps"></a>Pasos de implementación de reglas de ASR
-
-Al igual que con cualquier nueva implementación a gran escala que pueda afectar potencialmente a las operaciones de línea de negocio, es importante ser metódico en su planeamiento e implementación. Debido a las eficaces funcionalidades de las reglas de ASR para evitar el malware, es necesario planear e implementar cuidadosamente estas reglas para asegurarse de que funcionan mejor para los flujos de trabajo de clientes únicos. Para trabajar en su entorno, debe planear, probar, implementar y poner en funcionamiento las reglas de ASR cuidadosamente.  
-
-> [!div class="mx-imgBorder"]
-> :::image type="content" source="images/asr-rules-deployment-phases.png" alt-text="Fases de implementación de reglas de ASR" lightbox="images/asr-rules-deployment-phases.png":::
-
->[!Note]
->Para los clientes que usan hips que no son de Microsoft y están realizando la transición a Microsoft Defender para punto de conexión reglas de reducción de superficie expuesta a ataques: Microsoft aconseja a los clientes que ejecuten su solución HIPS en paralelo con su implementación de reglas de ASR hasta el momento en que cambie del modo Auditoría a Modo de bloque. Tenga en cuenta que debe ponerse en contacto con el proveedor de antivirus de terceros para obtener recomendaciones de exclusión.  
 
 ## <a name="additional-topics-in-this-deployment-collection"></a>Temas adicionales de esta colección de implementación
 
@@ -151,7 +171,7 @@ Al igual que con cualquier nueva implementación a gran escala que pueda afectar
 
 [Reglas de reducción de superficie expuesta a ataques desmitificantes: Parte 4](https://techcommunity.microsoft.com/t5/microsoft-defender-for-endpoint/demystifying-attack-surface-reduction-rules-part-4/ba-p/1384425)
 
-### <a name="asr-collection"></a>Colección ASR
+### <a name="asr-rules-collection"></a>Colección de reglas de ASR
 
 [Introducción a la reducción de la superficie expuesta a ataques](overview-attack-surface-reduction.md)
 
@@ -169,7 +189,7 @@ Al igual que con cualquier nueva implementación a gran escala que pueda afectar
 
 [Protección proporcionada en la nube y Antivirus de Windows Defender](cloud-protection-microsoft-defender-antivirus.md)
 
-[Activar la protección proporcionada en la nube en el Antivirus de Microsoft Defender](enable-cloud-protection-microsoft-defender-antivirus.md)
+[Activar la protección proporcionada en la nube en Microsoft Defender Antivirus](enable-cloud-protection-microsoft-defender-antivirus.md)
 
 [Configuración y validación de exclusiones basadas en la extensión, el nombre o la ubicación](configure-extension-file-exclusions-microsoft-defender-antivirus.md)
 
