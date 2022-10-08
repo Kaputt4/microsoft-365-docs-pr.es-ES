@@ -8,7 +8,7 @@ manager: scotv
 ms.date: 06/17/2020
 audience: ITPro
 ms.topic: article
-ms.service: microsoft-365-enterprise
+ms.service: o365-solutions
 ms.localizationpriority: high
 ms.collection:
 - highpri
@@ -16,16 +16,16 @@ ms.collection:
 - M365-subscription-management
 ms.custom: ''
 description: Cómo una organización global ficticia, aunque representativa, ha implementado soluciones de Microsoft 365.
-ms.openlocfilehash: 56170c8af66c39d34c3e863b69af74991f41b156
-ms.sourcegitcommit: 0af064e8b6778060f1bd365378d69b16fc9949b5
+ms.openlocfilehash: 66e09b53a8997ac4aa3769a4b39d46ca0feeeb19
+ms.sourcegitcommit: fce27da5140691b013a6f7c0ea9c88b4ea4b7c10
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/15/2022
-ms.locfileid: "67730647"
+ms.lasthandoff: 09/23/2022
+ms.locfileid: "67987178"
 ---
 # <a name="microsoft-365-solutions-for-the-contoso-corporation"></a>Soluciones de Microsoft 365 para Contoso Corporation
 
-Contoso Corporation es un conglomerado industrial a nivel mundial ficticio pero representativo, con sede central en París, Francia. Contoso ha implementado Microsoft 365 Enterprise y ha adoptado importantes decisiones sobre el diseño y los detalles de implementación de redes, identidades, Windows 10 Enterprise, Aplicaciones de Microsoft 365 para empresas, administración de dispositivos móviles, protección de la información y seguridad. 
+The Contoso Corporation is a fictional but representative global manufacturing conglomerate with its headquarters in Paris, France. Contoso has deployed Microsoft 365 Enterprise and addressed major design decisions and implementation details for networking, identity, Windows 10 Enterprise, Microsoft 365 Apps for enterprise, mobile device management, information protection, and security. 
 
 El objetivo general de Contoso para Microsoft 365 Enterprise es acelerar su transformación digital mediante servicios en la nube con el fin de integrar empleados, partners, datos y procesos para aumentar el valor para el cliente y mantener su ventaja competitiva en un mundo digital.
 

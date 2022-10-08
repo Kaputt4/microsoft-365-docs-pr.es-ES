@@ -13,8 +13,10 @@ ms.collection:
 - M365-collaboration
 - microsoftcloud-financial-services
 - m365-frontline
+- highpri
 - m365solution-financialservices
 - m365solution-overview
+- highpri
 ms.localizationpriority: high
 search.appverid: MET150
 searchScope:
@@ -23,20 +25,20 @@ searchScope:
 appliesto:
 - Microsoft Teams
 - Microsoft 365 for frontline workers
-ms.openlocfilehash: 67be94b826011160715917a8b37a964e88d4a48a
-ms.sourcegitcommit: 1efb75d033860977239b479f92e7eaf274b5fbf0
-ms.translationtype: HT
+ms.openlocfilehash: 35774f5c8b220225f0f51badfdbff1d2d3362e04
+ms.sourcegitcommit: 12af9e8e3a6eaa090fda9e98ccb831dff65863a4
+ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/16/2022
-ms.locfileid: "66998864"
+ms.lasthandoff: 09/27/2022
+ms.locfileid: "68054388"
 ---
 # <a name="get-started-with-microsoft-365-for-financial-services"></a>Introducción a Microsoft 365 para servicios financieros
 
 Los trabajadores de primera línea del sector de servicios financieros tienen necesidades únicas para comunicarse y colaborar en función de los servicios que ofrecen. Para obtener el máximo beneficio para su personal de primera línea, primero elija qué escenarios puede ayudarle Microsoft 365 en sus operaciones empresariales diarias y, a continuación, asegúrese de preparar su entorno con los aspectos básicos, los equipos y las aplicaciones adecuados para admitir esos escenarios.
 
 1. [Elija los escenarios](#choose-your-scenarios) que desea implementar para su empresa.
-2. [Configuración de Microsoft 365](flw-setup-microsoft-365.md): configure los elementos principales de Microsoft 365, Microsoft Teams y cualquier otro servicio que necesite.
-3. [Configurar servicios y aplicaciones](#configure-services-and-apps): use plantillas de equipo para configurar los equipos que necesita rápidamente, incluidos los canales y las aplicaciones que necesita para su empresa. Agregue otras aplicaciones de Microsoft según sea necesario para admitir sus escenarios.
+2. [Configuración de Microsoft 365](flw-setup-microsoft-365.md): configurar los elementos principales de Microsoft 365, Microsoft Teams y cualquier otro servicio que se necesite.
+3. [Configurar servicios y aplicaciones](#configure-services-and-apps): usar plantillas de equipo para configurar los equipos que se necesitan rápidamente, incluidos los canales y las aplicaciones que la empresa necesita. Agregar otras aplicaciones de Microsoft según sea necesario para dar soporte a los escenarios.
 
 ## <a name="choose-your-scenarios"></a>Elegir los escenarios
 
@@ -117,13 +119,13 @@ En el caso de los entornos de servicios financieros, las siguientes aplicaciones
 
 | Aplicaciones y servicios de Teams | Descripción | Administrar | Ayuda |
 | ----- | ----- | ----- | ----- |
-| Aprobaciones | Optimice el proceso de cierre de sesión mediante la integración de aprobaciones en el chat. | [Administrar aprobaciones](/microsoftteams/approval-admin?bc=/microsoft-365/frontline/breadcrumb/toc.json&toc=/microsoft-365/frontline/toc.json) | [Usar aprobaciones](https://support.microsoft.com/office/what-is-approvals-a9a01c95-e0bf-4d20-9ada-f7be3fc283d3) |
+| Aprobaciones | Optimice el proceso de cierre de sesión mediante la integración de aprobaciones en el chat. | [Administrar aprobaciones](/microsoftteams/approval-admin?bc=/microsoft-365/frontline/breadcrumb/toc.json&toc=/microsoft-365/frontline/toc.json) | [Usar Aprobaciones](https://support.microsoft.com/office/what-is-approvals-a9a01c95-e0bf-4d20-9ada-f7be3fc283d3) |
 | Chat | Habilite conversaciones rápidas entre el personal con chat seguro en Teams. | [Chat, equipos, canales y aplicaciones en Microsoft Teams](/microsoftteams/deploy-chat-teams-channels-microsoft-teams-landing-page) | [Chatear en Teams](https://support.microsoft.com/office/start-and-pin-chats-a864b052-5e4b-4ccf-b046-2e26f40e21b5?wt.mc_id=otc_microsoft_teams) |
 | Documentos y archivos | Comparta procedimientos operativos estándar, directivas de cumplimiento normativo, directivas de empresa y hojas de datos de productos financieros. | [Integración de Teams y SharePoint](/sharepoint/teams-connected-sites) | [Compartir archivos](https://support.microsoft.com/office/upload-and-share-files-57b669db-678e-424e-b0a0-15d19215cb12) |
-| Elogios | Reconozca a sus compañeros de trabajo por su excelente trabajo en equipo con la aplicación Elogiar. | [Administrar la aplicación Elogiar](/microsoftteams/manage-praise-app?bc=/microsoft-365/frontline/breadcrumb/toc.json&toc=/microsoft-365/frontline/toc.json) | [Enviar elogios a las personas](https://support.microsoft.com/office/send-praise-to-people-50f26b47-565f-40fe-8642-5ca2a5ed261e) |
-| Turnos | Administre las programaciones y el reloj de entrada y salida con Turnos. | [Administrar la aplicación Turnos para su organización en Teams](/microsoftteams/expand-teams-across-your-org/shifts/manage-the-shifts-app-for-your-organization-in-teams?bc=/microsoft-365/frontline/breadcrumb/toc.json&toc=/microsoft-365/frontline/toc.json) | [Usar Turnos](https://support.microsoft.com/office/what-is-shifts-f8efe6e4-ddb3-4d23-b81b-bb812296b821) |
-| Tareas | Ayude a los empleados a saber en qué deben centrarse cuando no están con los clientes asignándoles tareas. La oficina corporativa puede usar la [publicación de tareas](/microsoftteams/manage-tasks-app?bc=/microsoft-365/frontline/breadcrumb/toc.json&toc=/microsoft-365/frontline/toc.json#task-publishing) para enviar tareas a ubicaciones y realizar un seguimiento del progreso en esas ubicaciones. | [Administrar la aplicación Tareas](/microsoftteams/manage-tasks-app?bc=/microsoft-365/frontline/breadcrumb/toc.json&toc=/microsoft-365/frontline/toc.json) | [Usar Tareas](https://support.microsoft.com/office/use-the-tasks-app-in-teams-e32639f3-2e07-4b62-9a8c-fd706c12c070) |
-| Actualizaciones | Compruebe las prioridades periódicas o puntuales, como los recuentos diarios. Los administradores pueden crear plantillas para que los empleados las rellenen y las envíen. | [Administrar la aplicación Actualizaciones](/microsoftteams/manage-updates-app?bc=/microsoft-365/frontline/breadcrumb/toc.json&toc=/microsoft-365/frontline/toc.json). | [Uso de Actualizaciones](https://support.microsoft.com/office/get-started-in-updates-c03a079e-e660-42dc-817b-ca4cfd602e5a) |
+| Elogios | Reconozca a sus compañeros de trabajo por su excelente trabajo en equipo con la aplicación Elogio. | [Administrar la aplicación Elogiar](/microsoftteams/manage-praise-app?bc=/microsoft-365/frontline/breadcrumb/toc.json&toc=/microsoft-365/frontline/toc.json) | [Enviar elogios a las personas](https://support.microsoft.com/office/send-praise-to-people-50f26b47-565f-40fe-8642-5ca2a5ed261e) |
+| Turnos | Administre las programaciones y los registros de entrada y salida con Turnos. | [Administrar la aplicación Turnos para su organización en Teams](/microsoftteams/expand-teams-across-your-org/shifts/manage-the-shifts-app-for-your-organization-in-teams?bc=/microsoft-365/frontline/breadcrumb/toc.json&toc=/microsoft-365/frontline/toc.json) | [Usar Turnos](https://support.microsoft.com/office/what-is-shifts-f8efe6e4-ddb3-4d23-b81b-bb812296b821) |
+| Tareas | Ayude a los empleados a saber en qué deben centrarse cuando no están con los clientes asignándoles tareas. La oficina corporativa puede usar la [publicación de tareas](/microsoftteams/manage-tasks-app?bc=/microsoft-365/frontline/breadcrumb/toc.json&toc=/microsoft-365/frontline/toc.json#task-publishing) para enviar tareas a ubicaciones y realizar un seguimiento del progreso en esas ubicaciones. | [Administrar la aplicación Tareas](/microsoftteams/manage-tasks-app?bc=/microsoft-365/frontline/breadcrumb/toc.json&toc=/microsoft-365/frontline/toc.json) | [Usar Tasks](https://support.microsoft.com/office/use-the-tasks-app-in-teams-e32639f3-2e07-4b62-9a8c-fd706c12c070) |
+| Actualizaciones | Compruebe las prioridades periódicas o puntuales, como los recuentos diarios. Los administradores pueden crear plantillas para que los empleados las rellenen y las envíen. | [Administrar la aplicación Actualizaciones](/microsoftteams/manage-updates-app?bc=/microsoft-365/frontline/breadcrumb/toc.json&toc=/microsoft-365/frontline/toc.json). | [Usar Novedades](https://support.microsoft.com/office/get-started-in-updates-c03a079e-e660-42dc-817b-ca4cfd602e5a) |
 
 | Más aplicaciones y servicios de Microsoft | Descripción | Administrar | Ayuda |
 | ----- | ----- | ----- | ----- |
@@ -132,6 +134,6 @@ En el caso de los entornos de servicios financieros, las siguientes aplicaciones
 | SharePoint | Se crea un nuevo sitio de SharePoint conectado cada vez que se crea un nuevo equipo. Puede usar SharePoint para almacenar archivos, publicar noticias y asegurarse de que los trabajadores tengan acceso a información importante. | [Integración de Teams y SharePoint](/sharepoint/teams-connected-sites) | [Agregar una página, lista o biblioteca de documentos de SharePoint como una pestaña en Teams](https://support.microsoft.com/office/add-a-sharepoint-page-list-or-document-library-as-a-tab-in-teams-131edef1-455f-4c67-a8ce-efa2ebf25f0b)|
 | Viva Connections | Conexiones Viva crea un centro en Teams en el que el equipo de primera línea puede ver una fuente de noticias personalizada de su organización y un panel personalizado con los recursos que necesita. | [Información general sobre Conexiones Microsoft Viva](/sharepoint/viva-connections-overview) | [Conexiones Viva en Microsoft Teams](https://support.microsoft.com/office/your-intranet-is-now-in-microsoft-teams-8b4e7f76-f305-49a9-b6d2-09378476f95b) |
 | Viva Learning | Proporcione formación inicial y continua para asegurarse de que la base de las habilidades y conocimientos de los empleados esté actualizada. | [Administrar Aprendizaje Viva](/microsoft-365/learning/) | [Usar Aprendizaje Viva](https://support.microsoft.com/office/viva-learning-preview-01bfed12-c327-41e0-a68f-7fa527dcc98a) |
-| Yammer | Conecte toda la organización y habilite la comunicación entre departamentos y regiones. | [Administrar Yammer](/yammer) | [Use Yammer](https://support.microsoft.com/office/what-is-yammer-1b0f3b3e-89ee-4b66-aac5-30def12f287c) |
+| Yammer | Conecte toda la organización y habilite la comunicación entre departamentos y regiones. | [Administrar Yammer](/yammer) | [Usar Yammer](https://support.microsoft.com/office/what-is-yammer-1b0f3b3e-89ee-4b66-aac5-30def12f287c) |
 
 Para obtener más información sobre cómo implementar y adoptar correctamente Teams, vea [Adoptar Microsoft Teams](/microsoftteams/adopt-microsoft-teams-landing-page).

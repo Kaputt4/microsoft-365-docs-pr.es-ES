@@ -1,5 +1,5 @@
 ---
-title: 'Paso 2: Proporcionar acceso remoto a los servicios y aplicaciones locales'
+title: Step 2. Provide remote access to on-premises apps and services
 f1.keywords:
 - NOCSH
 author: dansimp
@@ -7,7 +7,7 @@ ms.author: dansimp
 manager: dansimp
 audience: ITPro
 ms.topic: article
-ms.service: microsoft-365-enterprise
+ms.service: o365-solutions
 ms.localizationpriority: high
 ms.collection:
 - highpri
@@ -18,16 +18,16 @@ ms.collection:
 - m365solution-scenario
 ms.custom: ''
 description: Asegúrese de que los trabajadores remotos puedan tener acceso a los recursos locales y optimizar el acceso a los servicios en la nube de Microsoft 365.
-ms.openlocfilehash: 8482de846405f6ff4b0f786d2863bc208f0ed5cf
-ms.sourcegitcommit: 0af064e8b6778060f1bd365378d69b16fc9949b5
+ms.openlocfilehash: f0614a6f74d3857bfbcbeb802b588ad5477524e3
+ms.sourcegitcommit: fce27da5140691b013a6f7c0ea9c88b4ea4b7c10
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/15/2022
-ms.locfileid: "67730713"
+ms.lasthandoff: 09/23/2022
+ms.locfileid: "67987068"
 ---
-# <a name="step-2-provide-remote-access-to-on-premises-apps-and-services"></a>Paso 2: Proporcionar acceso remoto a los servicios y aplicaciones locales
+# <a name="step-2-provide-remote-access-to-on-premises-apps-and-services"></a>Step 2. Provide remote access to on-premises apps and services
 
-Si su organización usa una solución VPN de acceso remoto, generalmente con servidores VPN en el borde de su red y clientes VPN instalados en los dispositivos de sus usuarios, sus usuarios pueden usar conexiones VPN de acceso remoto para acceder a aplicaciones y servidores locales. Pero es posible que deba optimizar el tráfico a los servicios basados ​​en la nube de Microsoft 365.
+If your organization uses a remote access VPN solution, typically with VPN servers on the edge of your network and VPN clients installed on your users' devices, your users can use remote access VPN connections to access on-premises apps and servers. But you may need to optimize traffic to Microsoft 365 cloud-based services.
 
 Si los usuarios no usan una solución de VPN, puede usar el proxy de aplicación de Azure Active Directory (Azure AD) y la VPN de punto a sitio de Azure (P2S) para ofrecer acceso en función de si todas las aplicaciones se basan en la web.
 
@@ -52,7 +52,7 @@ Sin el túnel dividido, todo el tráfico de trabajo remoto se envía por la cone
 
 :::image type="content" source="../media/empower-people-to-work-remotely-remote-access/empower-people-to-work-remotely-remote-access-before-tunneling.png" alt-text="Tráfico de red de clientes de VPN sin túneles." lightbox="../media/empower-people-to-work-remotely-remote-access/empower-people-to-work-remotely-remote-access-before-tunneling.png":::
 
-El tráfico de Microsoft 365 debe tomar una ruta indirecta a través de su organización, que podría reenviarse a un punto de entrada de la red de Microsoft lejos de la ubicación física del cliente VPN. Esta ruta indirecta agrega latencia al tráfico de la red y disminuye el rendimiento general.
+Microsoft 365 traffic must take an indirect route through your organization, which could be forwarded to a Microsoft network entry point far away from the VPN client’s physical location. This indirect path adds latency to the network traffic and decreases overall performance.
 
 Con el túnel dividido, puede configurar el cliente VPN para excluir determinados tipos de tráfico de la conexión VPN a la red de la organización.
 
@@ -68,7 +68,7 @@ Para obtener más información e instrucciones, consulte [Optimizar la conectivi
 
 ## <a name="deploy-remote-access-when-all-your-apps-are-web-apps-and-you-have-hybrid-identity"></a>Implementación del acceso remoto cuando todas las aplicaciones son aplicaciones web y tiene una identidad híbrida
 
-Si los trabajadores remotos no usan un cliente VPN tradicional y las cuentas de usuario y grupos locales se sincronizan con Azure AD, puede usar el Proxy de aplicación de Azure AD para proporcionar acceso remoto seguro a las aplicaciones basadas en web hospedadas en servidores locales. Las aplicaciones basadas en web incluyen sitios de SharePoint Server, servidores de Outlook Web Access o cualquier otra aplicación de línea de negocio basada en web.
+If your remote workers are not using a traditional VPN client and your on-premises user accounts and groups are synchronized with Azure AD, you can use Azure AD Application Proxy to provide secure remote access for web-based applications hosted on on-premises servers. Web-based applications include SharePoint Server sites, Outlook Web Access servers, or any other web-based line of business applications.
 
 Estos son los componentes del proxy de la aplicación Azure AD.
 
@@ -94,7 +94,7 @@ Para obtener más información, vea esta [introducción a la red virtual privada
 
 ## <a name="deploy-windows-365-to-provide-remote-access-for-remote-workers-using-personal-devices"></a>Implementación de Windows 365 para proporcionar acceso remoto para trabajadores remotos con dispositivos personales
 
-Para dar servicio a los trabajadores remotos que solo pueden usar sus dispositivos personales y no administrados, use Windows 365 para crear y asignar escritorios virtuales para que los usuarios puedan usarlos desde casa. Con una conexión de red local (OPNC), los equipos en la nube de Windows 365 pueden actuar igual que los equipos conectados a la red de su organización.
+To support remote workers who can only use their personal and unmanaged devices, use Windows 365 to create and allocate virtual desktops for your users to use from home. With an on-premises network connection (OPNC), Windows 365 Cloud PCs can act just like PCs connected to your organization's network.
 
 :::image type="content" source="../media/empower-people-to-work-remotely-remote-access/empower-people-to-work-remotely-remote-access-windows-365.png" alt-text="Componentes de Windows 365." lightbox="../media/empower-people-to-work-remotely-remote-access/empower-people-to-work-remotely-remote-access-windows-365.png":::
 

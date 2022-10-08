@@ -14,19 +14,22 @@ f1_keywords:
 ms.service: O365-seccomp
 ms.localizationpriority: medium
 ms.collection:
-- M365-security-compliance
+- tier3
+- purview-compliance
 hideEdit: true
 feedback_system: None
 recommendations: false
 description: Definición de entidad de tipo de información confidencial del número de pasaporte checo.
-ms.openlocfilehash: 310a057914b047d1e6e99bbfaf495ad5547fe8e9
-ms.sourcegitcommit: 5aed330d8af523f0dffe5e392f1c79f047e38172
+ms.openlocfilehash: afc5fb2c3831fc57ca72aede35f0f87cf143f529
+ms.sourcegitcommit: 2ff545246fec060ea7829da5afbc1cdc698d51ab
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/21/2022
-ms.locfileid: "66951079"
+ms.lasthandoff: 10/04/2022
+ms.locfileid: "68363066"
 ---
-# <a name="czech-passport-number"></a>Número de pasaporte checo
+# <a name="czech-passport-number"></a>Número de pasaporte de la República Checa
+
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
 
 ## <a name="format"></a>Formato
 
@@ -42,16 +45,16 @@ No
 
 ## <a name="definition"></a>Definición
 
-Una directiva DLP tiene una gran confianza en que se detecta este tipo de información confidencial si, dentro de una proximidad de 300 caracteres:
+Una política de DLP tiene una gran confianza en que ha detectado este tipo de información confidencial si, dentro de una proximidad de 300 caracteres:
 
-- La expresión `Regex_czech_republic_eu_passport_number` regular busca contenido que coincida con el patrón.
-- Se encuentra una palabra clave de `Keywords_eu_passport_number` o `Keywords_czech_republic_eu_passport_number` .
+- La expresión regular `Regex_czech_republic_eu_passport_number` encuentra contenido que coincide con el patrón.
+- Se encuentra una palabra clave de `Keywords_eu_passport_number` o `Keywords_czech_republic_eu_passport_number`.
 - La expresión `Regex_eu_passport_date1` regular busca la fecha con el formato DD.MM.AAAA o se encuentra una palabra clave de .`Keywords_eu_passport_date`
 
-Una directiva DLP tiene confianza media en que se detecta este tipo de información confidencial si, dentro de una proximidad de 300 caracteres:
+Una política de DLP tiene confianza media en que ha detectado este tipo de información confidencial si, dentro de una proximidad de 300 caracteres:
 
-- La expresión `Regex_czech_republic_eu_passport_number` regular busca contenido que coincida con el patrón.
-- Se encuentra una palabra clave de `Keywords_eu_passport_number` o `Keywords_czech_republic_eu_passport_number` .
+- La expresión regular `Regex_czech_republic_eu_passport_number` encuentra contenido que coincide con el patrón.
+- Se encuentra una palabra clave de `Keywords_eu_passport_number` o `Keywords_czech_republic_eu_passport_number`.
 
 ```xml
       <!-- Czech Republic Passport Number -->
@@ -81,12 +84,12 @@ Una directiva DLP tiene confianza media en que se detecta este tipo de informaci
 
 ### <a name="keywords_eu_passport_number_common"></a>Keywords_eu_passport_number_common
 
-- Pasaporte #
-- Pasaporte #
+- pasaporte#
+- pasaporte #
 - passportid
-- Pasaportes
+- pasaportes
 - passportno
-- passport no
+- pasaporte no
 - passportnumber
 - passport number
 - passportnumbers

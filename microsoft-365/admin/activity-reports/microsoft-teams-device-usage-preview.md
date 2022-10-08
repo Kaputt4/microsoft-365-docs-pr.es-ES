@@ -2,14 +2,15 @@
 title: Centro de administración de Microsoft 365 informes de uso de aplicaciones de Teams
 f1.keywords:
 - NOCSH
-ms.author: kwekua
-author: kwekua
+ms.author: camillepack
+author: camillepack
 manager: scotv
 audience: Admin
 ms.topic: article
-ms.service: o365-administration
+ms.service: microsoft-365-business
 ms.localizationpriority: medium
 ms.collection:
+- scotvorg
 - M365-subscription-management
 - Adm_O365
 - Adm_NonTOC
@@ -21,12 +22,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Obtenga información sobre las aplicaciones de Microsoft Teams que se usan en su organización obteniendo el informe de uso de aplicaciones de Microsoft Teams de informes de Microsoft 365.
-ms.openlocfilehash: 22e176235a455b288e078cfd5cd135beff5d668d
-ms.sourcegitcommit: 5014666778b2d48912c68c2e06992cdb43cfaee3
+ms.openlocfilehash: 20cf31e5ef7724b87aa369c11bb15ad46b9d8490
+ms.sourcegitcommit: 0b7070ec119e00e0dafe030bbfbef0ae5c9afa19
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/07/2022
-ms.locfileid: "66663006"
+ms.lasthandoff: 09/29/2022
+ms.locfileid: "68194079"
 ---
 # <a name="microsoft-365-reports-in-the-admin-center---microsoft-teams-device-usage"></a>Informes de Microsoft 365 en el Centro de administración: uso de dispositivos de Microsoft Teams
 
@@ -49,7 +50,7 @@ También puede exportar los datos del informe a un archivo de excel .csv selecci
 
 Puede visualizar el informe **Uso de dispositivos de Microsoft Teams** para ver las tendencias de los últimos 7, 30, 90 o 180 días. Sin embargo, si selecciona un día determinado en el informe, la tabla mostrará los datos durante un máximo de 28 días a partir de la fecha actual (no la fecha en que se generó el informe).
   
-|Item|Descripción|
+|Elemento|Descripción|
 |:-----|:-----|
 |**Métrica**|**Definición**|
 |Nombre de usuario  <br/> |El nombre para mostrar del usuario.  <br/> |
@@ -63,7 +64,7 @@ Puede visualizar el informe **Uso de dispositivos de Microsoft Teams** para ver 
 |Fecha de la última actividad (UTC)  <br/> |La última fecha (UTC) en la que el usuario participó en una actividad de Teams.  <br/> |
 |Tiene licencia|Seleccionado si el usuario tiene licencia para usar Teams.|
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 [Informe de actividad de usuario de Microsoft Teams](../activity-reports/microsoft-teams-user-activity-preview.md) 
 
 [Informe de actividad de uso de Microsoft Teams](../activity-reports/microsoft-teams-usage-activity.md) 

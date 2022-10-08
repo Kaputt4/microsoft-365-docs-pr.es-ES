@@ -16,14 +16,16 @@ ms.custom:
 - next-gen
 - edr
 - admindeeplinkDEFENDER
-ms.collection: m365-security-compliance
+ms.collection:
+- m365-security
+- tier2
 search.appverid: met150
-ms.openlocfilehash: ba259111f758bfb2ce34210e436f9838c0ccf060
-ms.sourcegitcommit: c29af68260ba8676083674b3c70209bff2c2e362
+ms.openlocfilehash: 8871a9ebaa683a81ceaa4123d2f9cc52bbac9222
+ms.sourcegitcommit: b9282493c371d59c2e583b9803825096499b5e2c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/16/2022
-ms.locfileid: "67740497"
+ms.lasthandoff: 09/29/2022
+ms.locfileid: "68142089"
 ---
 # <a name="behavioral-blocking-and-containment"></a>Bloqueo y contención de comportamientos
 
@@ -47,7 +49,7 @@ Las funcionalidades de bloqueo y contención del comportamiento pueden ayudar a 
 
 Las funcionalidades de bloqueo y contención del comportamiento funcionan con varios componentes y características de Defender for Endpoint para detener ataques inmediatamente e impedir que los ataques avancen.
 
-- [La protección de última generación](microsoft-defender-antivirus-in-windows-10.md) (que incluye el Antivirus de Microsoft Defender) puede detectar amenazas mediante el análisis de comportamientos y detener las amenazas que han comenzado a ejecutarse.
+- [La protección de última generación](microsoft-defender-antivirus-in-windows-10.md) (que incluye Microsoft Defender Antivirus) puede detectar amenazas mediante el análisis de comportamientos y detener las amenazas que han comenzado a ejecutarse.
 
 - [La detección y respuesta de puntos de conexión](overview-endpoint-detection-response.md) (EDR) recibe señales de seguridad en toda la red, los dispositivos y el comportamiento del kernel. A medida que se detectan amenazas, se crean alertas. Varias alertas del mismo tipo se agregan a incidentes, lo que facilita que el equipo de operaciones de seguridad investigue y responda.
 
@@ -67,7 +69,7 @@ En la imagen siguiente se muestra un ejemplo de una alerta que se desencadenó m
 
 - **[Bloqueo de bucles de comentarios](feedback-loop-blocking.md)** (también conocido como protección rápida) Las detecciones de amenazas se observan a través de la inteligencia de comportamiento. Las amenazas se detienen y se impide que se ejecuten en otros puntos de conexión. (El bloqueo de bucles de comentarios está habilitado de forma predeterminada).
 
-- **[Detección y respuesta de puntos de conexión (EDR) en modo de bloque](edr-in-block-mode.md)** Los artefactos malintencionados o los comportamientos que se observan a través de la protección posterior a la infracción se bloquean y contienen. EDR en modo de bloque funciona incluso si Antivirus de Microsoft Defender no es la solución antivirus principal. (EDR en modo de bloque no está habilitado de forma predeterminada; se activa en Microsoft 365 Defender).
+- **[Detección y respuesta de puntos de conexión (EDR) en modo de bloque](edr-in-block-mode.md)** Los artefactos malintencionados o los comportamientos que se observan a través de la protección posterior a la infracción se bloquean y contienen. EDR en modo de bloque funciona incluso si Microsoft Defender Antivirus no es la solución antivirus principal. (EDR en modo de bloque no está habilitado de forma predeterminada; se activa en Microsoft 365 Defender).
 
 Espere más en el área de bloqueo y contención del comportamiento, ya que Microsoft sigue mejorando las características y funcionalidades de protección contra amenazas. Para ver lo que está planeado e implementar ahora, visite la [hoja de ruta de Microsoft 365](https://www.microsoft.com/microsoft-365/roadmap).
 

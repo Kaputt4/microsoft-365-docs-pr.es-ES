@@ -18,18 +18,20 @@ ms.collection:
 - Teams_ITAdmin_Healthcare
 - microsoftcloud-healthcare
 - m365-frontline
+- highpri
+- EngageScoreSep2022
 appliesto:
 - Microsoft Teams
 - Microsoft 365 for frontline workers
 ms.reviewer: acolonna
 description: Obtenga información sobre cómo un usuario con estado Away o Do Not Disturb puede establecer explícitamente otro usuario como delegado en su mensaje de estado.
 ms.custom: seo-marvel-mar2020
-ms.openlocfilehash: 33622e118bfb19a927dad8c4c559bdc234ff0937
-ms.sourcegitcommit: c29af68260ba8676083674b3c70209bff2c2e362
+ms.openlocfilehash: 327c0d5a5bd0e3149cbf418da97ae82c5a03b2ce
+ms.sourcegitcommit: 12af9e8e3a6eaa090fda9e98ccb831dff65863a4
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/16/2022
-ms.locfileid: "67736770"
+ms.lasthandoff: 09/27/2022
+ms.locfileid: "68079521"
 ---
 # <a name="message-delegation"></a>Delegación de mensajes
 

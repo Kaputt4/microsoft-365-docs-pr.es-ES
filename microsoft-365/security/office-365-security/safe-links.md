@@ -13,7 +13,7 @@ ms.date: 09/08/2021
 ms.localizationpriority: medium
 ms.collection:
 - Strat_O365_IP
-- M365-security-compliance
+- m365-security
 - m365initiative-defender-office365
 ms.custom:
 - seo-marvel-apr2020
@@ -28,12 +28,12 @@ ms.assetid: dd6a1fef-ec4a-4cf4-a25a-bb591c5811e3
 description: Obtenga información sobre la protección de vínculos seguros en Defender para Office 365 para proteger una organización contra suplantación de identidad (phishing) y otros ataques que usan direcciones URL malintencionadas. Descubra vínculos seguros de Teams y vea los gráficos de los mensajes de vínculos seguros.
 ms.subservice: mdo
 ms.service: microsoft-365-security
-ms.openlocfilehash: 501e75e2c81d12d99b1f093991b864c7ad43519e
-ms.sourcegitcommit: 651610ca73bfd1d008d97311b59782790df664fb
+ms.openlocfilehash: 048de0ae500dfbeeb9f4981af50d4297a80b6e9c
+ms.sourcegitcommit: c550d73b153ad4856188c9109d9d80f02ca989b6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/07/2022
-ms.locfileid: "67612909"
+ms.lasthandoff: 09/29/2022
+ms.locfileid: "68140928"
 ---
 # <a name="safe-links-in-microsoft-defender-for-office-365"></a>Vínculos seguros en Microsoft Defender para Office 365
 
@@ -90,6 +90,9 @@ En este artículo se incluyen descripciones detalladas de los siguientes tipos d
 
   - [Lista "Bloquear las siguientes direcciones URL" para vínculos seguros](#block-the-following-urls-list-for-safe-links)
 
+  > [!NOTE]
+  > El menú **Configuración global** y la lista **Bloquear las siguientes direcciones URL** para vínculos seguros están en desuso. En su lugar, use entradas de bloque para las direcciones URL de la [lista de permitidos o bloqueados de inquilinos](allow-block-urls.md#use-the-microsoft-365-defender-portal-to-create-block-entries-for-urls-in-the-tenant-allowblock-list) .
+
 En la tabla siguiente se describen los escenarios de vínculos seguros en Microsoft 365 y Office 365 organizaciones que incluyen Defender para Office 365 (tenga en cuenta que la falta de licencias nunca es un problema en los ejemplos).
 
 |Escenario|Resultado|
@@ -97,7 +100,6 @@ En la tabla siguiente se describen los escenarios de vínculos seguros en Micros
 |Jean es miembro del departamento de marketing. La protección de vínculos seguros para aplicaciones de Office está activada en una directiva de vínculos seguros que se aplica a los miembros del departamento de marketing. Jean abre una presentación de PowerPoint en un mensaje de correo electrónico y, a continuación, hace clic en una dirección URL en la presentación.|Jean está protegido por vínculos seguros. <p> Jean se incluye en una directiva de vínculos seguros en la que está activada la protección de vínculos seguros para aplicaciones de Office. <p> Para obtener más información sobre los requisitos de protección de vínculos seguros en aplicaciones de Office, consulte la sección [Configuración de vínculos seguros para aplicaciones de Office](#safe-links-settings-for-office-apps) más adelante en este artículo.|
 |La organización Microsoft 365 E5 de Chris no tiene configuradas directivas de vínculos seguros. Chris recibe un correo electrónico de un remitente externo que contiene una dirección URL a un sitio web malintencionado en el que, en última instancia, hace clic.|Chris está protegido por vínculos seguros. <p> La directiva de seguridad preestablecida **de protección integrada** proporciona protección de vínculos seguros a todos los destinatarios (usuarios que no están definidos en las directivas de seguridad preestablecidas Estándar o Estricta o en directivas de vínculos seguros personalizadas). Para obtener más información, vea [Directivas de seguridad preestablecidas en EOP y Microsoft Defender para Office 365](preset-security-policies.md).|
 |En la organización de Pat, los administradores han creado una directiva de vínculos seguros que aplica Pat, pero la protección de vínculos seguros para aplicaciones de Office está desactivada. Pat abre un documento de Word y hace clic en una dirección URL en el archivo.|Pat no está protegido por vínculos seguros. <p> Aunque Pat se incluye en una directiva de vínculos seguros activa, la protección de vínculos seguros para aplicaciones de Office está desactivada en esa directiva, por lo que no se puede aplicar la protección.|
-|En la organización de Lee, `https://tailspintoys.com` se configura en la lista **Bloquear las siguientes direcciones URL** en la configuración global de Vínculos seguros. Ya existe una directiva de vínculos seguros que incluye Lee. Lee recibe un mensaje de correo electrónico que contiene la dirección URL `https://tailspintoys.com/aboutus/trythispage`. Lee hace clic en la dirección URL.|Es posible que la dirección URL se bloquee automáticamente para Lee; depende de la entrada de dirección URL de la lista y del cliente de correo electrónico que usó Lee. Para obtener más información, consulte la [sección "Bloquear las siguientes direcciones URL" para vínculos seguros](#block-the-following-urls-list-for-safe-links) más adelante en este artículo.|
 |Jamie y Julia trabajan para contoso.com. Hace mucho tiempo, los administradores configuraron directivas de vínculos seguros que se aplican tanto a Jamie como a Julia. Jamie envía un correo electrónico a Julia, sin saber que el correo electrónico contiene una dirección URL malintencionada.|Julia está protegida por vínculos seguros **si** la directiva vínculos seguros que se aplica a ella está configurada para aplicarse a los mensajes entre destinatarios internos. Para obtener más información, consulte la sección [Configuración de vínculos seguros para mensajes de correo electrónico](#safe-links-settings-for-email-messages) más adelante en este artículo.|
 
 ## <a name="recipient-filters-in-safe-links-policies"></a>Filtros de destinatarios en directivas de vínculos seguros
@@ -164,8 +166,6 @@ En un nivel alto, aquí se muestra cómo funciona la protección de vínculos se
 2. El usuario abre el mensaje en su buzón y hace clic en una dirección URL del mensaje.
 
 3. Vínculos seguros comprueba inmediatamente la dirección URL antes de abrir el sitio web:
-
-   - Si la dirección URL se incluye en la lista **Bloquear las siguientes direcciones URL** , se abre una [advertencia de dirección URL bloqueada](#blocked-url-warning) .
 
    - Si la dirección URL apunta a un sitio web que se ha determinado que es malintencionado, se abre una página de [advertencia de sitio web malintencionado](#malicious-website-warning) (o una página de advertencia diferente).
 
@@ -275,7 +275,7 @@ Para obtener más información sobre el orden de precedencia y cómo se evalúan
 ## <a name="block-the-following-urls-list-for-safe-links"></a>Lista "Bloquear las siguientes direcciones URL" para vínculos seguros
 
 > [!NOTE]
-> Ahora puede administrar las entradas de dirección URL de bloque en la [lista de permitidos o bloqueados de inquilinos](allow-block-urls.md#use-the-microsoft-365-defender-portal-to-create-block-entries-for-urls-in-the-tenant-allowblock-list). La lista "Bloquear las siguientes direcciones URL" está en desuso. Intentaremos migrar las entradas existentes de la lista "Bloquear las siguientes direcciones URL" para bloquear las entradas de dirección URL en la lista de permitidos o bloqueados de inquilinos. Los mensajes que contienen la dirección URL bloqueada se pondrán en cuarentena.
+> La lista **Bloquear las siguientes direcciones URL** para vínculos seguros está en desuso. En su lugar, use entradas de bloque para las direcciones URL de la [lista de permitidos o bloqueados de inquilinos](allow-block-urls.md#use-the-microsoft-365-defender-portal-to-create-block-entries-for-urls-in-the-tenant-allowblock-list) . Los mensajes que contienen la dirección URL bloqueada se ponen en cuarentena.
 
 La lista **Bloquear las siguientes direcciones URL** define los vínculos que siempre están bloqueados por el examen de vínculos seguros en las siguientes ubicaciones:
 

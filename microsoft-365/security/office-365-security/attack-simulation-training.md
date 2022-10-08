@@ -8,17 +8,18 @@ ms.topic: how-to
 ms.service: microsoft-365-security
 ms.localizationpriority: medium
 ms.collection:
-- M365-security-compliance
+- m365-security
 - m365initiative-defender-office365
 ms.custom: ''
 description: Los administradores pueden aprender a simular ataques de suplantación de identidad (phishing) y entrenar a sus usuarios en la prevención de suplantación de identidad mediante Entrenamiento de simulación de ataque en Microsoft Defender para Office 365 Plan 2.
 ms.subservice: mdo
-ms.openlocfilehash: 7983e1767565870cec1fb3457fc3466e99b0d8db
-ms.sourcegitcommit: 10e6abe740e27000e223378eb17d657a47555fa8
+search.appverid: met150
+ms.openlocfilehash: cfd17d6aeb21b05aef13c95489780ddcd209fbf0
+ms.sourcegitcommit: 12af9e8e3a6eaa090fda9e98ccb831dff65863a4
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/31/2022
-ms.locfileid: "67474213"
+ms.lasthandoff: 09/27/2022
+ms.locfileid: "68048932"
 ---
 # <a name="simulate-a-phishing-attack-with-attack-simulation-training-in-defender-for-office-365"></a>Simulación de un ataque de suplantación de identidad (phishing) con Entrenamiento de simulación de ataque en Defender para Office 365
 
@@ -84,7 +85,7 @@ Se muestran los detalles siguientes para cada carga:
 - **Nombre de carga**
 - **Idioma**: idioma del contenido de la carga. El catálogo de cargas de Microsoft (global) proporciona cargas en más de 10 idiomas que también se pueden filtrar.
 - **Tasa de clics**: cuántas personas han hecho clic en esta carga.
-- **Tasa de riesgo prevista**: datos históricos de la carga útil en Microsoft 365 que predice el porcentaje de personas que se verán comprometidas por esta carga.
+- **Tasa de riesgo prevista**: datos históricos en Microsoft 365 que predice el porcentaje de personas que se verán comprometidas por esta carga (usuarios en peligro o número total de usuarios que reciben la carga).
 - **Las simulaciones iniciadas** cuentan el número de veces que se usó esta carga en otras simulaciones.
 
 En el ![icono Buscar.](../../media/m365-cc-sc-search-icon.png) **Cuadro de búsqueda** , puede escribir parte del nombre de carga útil y presionar Entrar para filtrar los resultados.

@@ -14,14 +14,16 @@ ms.author: macapara
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
-ms.collection: M365-security-compliance
+ms.collection:
+- m365-security
+- tier3
 ms.topic: article
-ms.openlocfilehash: e0e01cbb2d565f6daab6570b723e491b1fc1e179
-ms.sourcegitcommit: 078149c9645ce220911ccd6ce54f984a4c92ce53
+ms.openlocfilehash: 44e49bab1f0db3eda9216f3b5f6ec0deaac24306
+ms.sourcegitcommit: b9282493c371d59c2e583b9803825096499b5e2c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/20/2022
-ms.locfileid: "67811755"
+ms.lasthandoff: 09/29/2022
+ms.locfileid: "68149855"
 ---
 # <a name="integration-with-microsoft-defender-for-cloud"></a>Integración con Microsoft Defender for Cloud
 
@@ -31,17 +33,17 @@ ms.locfileid: "67811755"
 - [Microsoft Defender para punto de conexión Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - Microsoft Defender for Cloud
 
-Microsoft Defender para punto de conexión se puede integrar con Microsoft Defender for Cloud para proporcionar una solución de protección completa de Windows Server. Con esta integración, Microsoft Defender for Cloud puede usar la eficacia de Defender para punto de conexión para proporcionar una detección de amenazas mejorada para servidores Windows.
+Microsoft Defender para punto de conexión se puede integrar con Microsoft Defender for Cloud para proporcionar una solución de protección completa de windows server. Con esta integración, Microsoft Defender for Cloud puede usar la eficacia de Defender para punto de conexión para proporcionar una detección de amenazas mejorada para servidores Windows.
 
 En esta integración se incluyen las siguientes funcionalidades:
 
-- Incorporación automatizada: el sensor de Defender para punto de conexión se habilita automáticamente en servidores Windows que se incorporan a Microsoft Defender for Cloud. Para obtener más información sobre la incorporación de Microsoft Defender for Cloud, consulte [Uso de la licencia de Microsoft Defender para punto de conexión integrada](/azure/security-center/security-center-wdatp).
+- Incorporación automatizada: el sensor de Defender para punto de conexión se habilita automáticamente en servidores Windows que se incorporan a Microsoft Defender para la nube. Para obtener más información sobre Microsoft Defender para la incorporación a la nube, consulte [Uso de la licencia de Microsoft Defender para punto de conexión integrada](/azure/security-center/security-center-wdatp).
 
     > [!NOTE]
     > La integración entre Microsoft Defender para servidores y Microsoft Defender para punto de conexión se ha ampliado para admitir [Windows Server 2019 y Windows Virtual Desktop (WVD).](/azure/security-center/release-notes#microsoft-defender-for-endpoint-integration-with-azure-defender-now-supports-windows-server-2019-and-windows-10-virtual-desktop-wvd-in-preview)
 
 - Los servidores Windows supervisados por Microsoft Defender for Cloud también estarán disponibles en Defender para punto de conexión: Microsoft Defender for Cloud se conecta sin problemas al inquilino de Defender para punto de conexión, lo que proporciona una vista única entre clientes y servidores.  Además, las alertas de Defender para punto de conexión estarán disponibles en la consola de Microsoft Defender for Cloud.
-- Investigación del servidor: los clientes de Microsoft Defender for Cloud pueden acceder al portal de Microsoft 365 Defender para realizar una investigación detallada con el fin de descubrir el ámbito de una posible vulneración.
+- Investigación del servidor: los clientes de Microsoft Defender for Cloud pueden acceder al portal de Microsoft 365 Defender para realizar una investigación detallada con el fin de descubrir el ámbito de una posible infracción.
 
 > [!IMPORTANT]
 > - Cuando se usa Microsoft Defender for Cloud para supervisar servidores, se crea automáticamente un inquilino de Defender para punto de conexión (en EE. UU. para usuarios de EE. UU., en la UE para usuarios europeos y británicos).<br>

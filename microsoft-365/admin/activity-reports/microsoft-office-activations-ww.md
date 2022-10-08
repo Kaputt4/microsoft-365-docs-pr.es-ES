@@ -5,9 +5,10 @@ author: kwekua
 manager: scotv
 audience: Admin
 ms.topic: overview
-ms.service: o365-administration
+ms.service: microsoft-365-business
 ms.localizationpriority: medium
 ms.collection:
+- scotvorg
 - M365-subscription-management
 - Adm_O365
 - Adm_NonTOC
@@ -19,12 +20,12 @@ search.appverid:
 - GEA150
 ms.assetid: 87c24ae2-82e0-4d1e-be01-c3bcc3f18c60
 description: Obtenga información sobre cómo obtener un informe de activación de Office para saber qué usuarios han activado su suscripción de Office e identificar a los usuarios que podrían necesitar ayuda adicional.
-ms.openlocfilehash: b859aace7ee0c71fb6d162b27ec7b7bc81a00208
-ms.sourcegitcommit: 5014666778b2d48912c68c2e06992cdb43cfaee3
+ms.openlocfilehash: dd5080e235e4c564a3c4c492245c54a6e9116dbe
+ms.sourcegitcommit: 0b7070ec119e00e0dafe030bbfbef0ae5c9afa19
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/07/2022
-ms.locfileid: "66663160"
+ms.lasthandoff: 09/29/2022
+ms.locfileid: "68194145"
 ---
 # <a name="microsoft-365-reports-in-the-admin-center---microsoft-office-activations"></a>Informes de Microsoft 365 en el Centro de administración: activaciones de Microsoft Office
 
@@ -47,7 +48,7 @@ Seleccione **Elegir columnas** para agregar o quitar columnas del informe.
 
 También puede exportar los datos del informe a un archivo de excel .csv seleccionando el vínculo **Exportar** . Se exportarán los datos de todos los usuarios y podrá efectuar una ordenación y un filtrado sencillos para un análisis más detallado. 
 
-|Item|Descripción|
+|Elemento|Descripción|
 |:-----|:-----|
 |**Métrica**|**Definición**|
 |Nombre de usuario  <br/> |La dirección de correo electrónico del usuario.  <br/> |

@@ -6,7 +6,7 @@ author: MikePlumleyMSFT
 manager: serdars
 audience: ITPro
 ms.topic: article
-ms.service: O365-seccomp
+ms.service: o365-solutions
 ms.localizationpriority: high
 search.appverid:
 - MET150
@@ -21,18 +21,18 @@ ms.custom:
 - admindeeplinkSPO
 recommendations: false
 description: Obtenga información sobre cómo implementar equipos con la protección de datos confidenciales.
-ms.openlocfilehash: 9d340079dd60337c8071d31cec137524cf173f66
-ms.sourcegitcommit: 0af064e8b6778060f1bd365378d69b16fc9949b5
+ms.openlocfilehash: 23c9d4761ce20cc003c91b2fea329ca74b2bc835
+ms.sourcegitcommit: fce27da5140691b013a6f7c0ea9c88b4ea4b7c10
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/15/2022
-ms.locfileid: "67731406"
+ms.lasthandoff: 09/23/2022
+ms.locfileid: "67987222"
 ---
 # <a name="configure-teams-with-protection-for-sensitive-data"></a>Configure equipos con protección de datos confidenciales
 
 En este artículo, observamos la configuración de un equipo con un nivel de protección confidencial. Asegúrese de que ha completado los pasos descritos en [Implementar equipos con la protección de línea base](configure-teams-baseline-protection.md) antes de seguir los pasos de este artículo. El nivel confidencial ofrece las siguientes protecciones adicionales al nivel de línea base:
 
-- Una etiqueta de confidencialidad para el equipo que le permite activar o desactivar el uso compartido de invitados, y limita el acceso al contenido de SharePoint a solo web para dispositivos no administrados. Esta etiqueta también se puede usar para clasificar archivos.
+- A sensitivity label for the team that allows you to turn guest sharing on or off and limits access to SharePoint content to web-only for unmanaged devices. This label can also be used to classify files.
 - Un tipo de vínculo para compartir predeterminado más restrictivo
 - Solo los propietarios del equipo podrán crear canales privados.
 
@@ -68,7 +68,7 @@ Crear una etiqueta de confidencialidad
 1. Abra el [portal de cumplimiento de Microsoft Purview](https://compliance.microsoft.com).
 2. En **Soluciones**, haga clic en **Protección de la información**.
 3. Haga clic en **Crear una etiqueta**.
-4. Póngale un nombre a la etiqueta. Le sugerimos **Confidencial**, pero puede elegir otro nombre si ya está en uso.
+4. Give the label a name. We suggest **Sensitive**, but you can choose a different name if that one is already in use.
 5. Escriba un nombre y una descripción para el complemento y, a continuación, haga clic en **Siguiente**.
 6. En la página **Definir el ámbito de la página de la etiqueta**, seleccione **Archivos & mensajes de correo electrónico** y **Grupos & sitios** y haga clic en **Siguiente**.
 7. En la página **Elija la configuración de protección de archivos y mensajes de correo electrónico**, haga clic en **Siguiente**.
@@ -112,7 +112,7 @@ También puede usar [Directivas de equipos](/MicrosoftTeams/teams-policies) para
 
 ## <a name="shared-channel-settings"></a>Configuración del canal compartido
 
-Los [canales compartidos](/MicrosoftTeams/shared-channels) no tienen configuración a nivel de equipo. Las opciones de configuración del canal compartido que establezca en el Centro de administración de Teams y en Azure AD se aplicará a todos los equipos independientemente de la confidencialidad.
+[Shared channels](/MicrosoftTeams/shared-channels) doesn't have team-level settings. The shared channel settings you configure in the Teams admin center and Azure AD apply to all teams regardless of sensitivity.
 
 ## <a name="sharepoint-settings"></a>Configuración de SharePoint
 

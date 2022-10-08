@@ -17,18 +17,19 @@ ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection:
-- M365-security-compliance
+- m365-security
 - m365solution-scenario
 - m365solution-evalutatemtp
 - zerotrust-solution
 - highpri
+- tier1
 ms.topic: conceptual
-ms.openlocfilehash: e012ee5c94a37456a67dc5624e2aae0a2a460548
-ms.sourcegitcommit: 10e6abe740e27000e223378eb17d657a47555fa8
+ms.openlocfilehash: 30e7d46cfc07035b073b39f878a6dc8c11040817
+ms.sourcegitcommit: 12af9e8e3a6eaa090fda9e98ccb831dff65863a4
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/31/2022
-ms.locfileid: "67473818"
+ms.lasthandoff: 09/27/2022
+ms.locfileid: "68048954"
 ---
 # <a name="review-architecture-requirements-and-key-concepts-for-microsoft-defender-for-cloud-apps"></a>Revise los requisitos de arquitectura y los conceptos clave para Microsoft Defender for Cloud Apps
 

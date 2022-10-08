@@ -7,9 +7,10 @@ author: SKjerland
 manager: scotv
 audience: Admin
 ms.topic: article
-ms.service: o365-administration
+ms.service: microsoft-365-business
 ms.localizationpriority: medium
 ms.collection:
+- scotvorg
 - M365-subscription-management
 - Adm_O365
 - Adm_TOC
@@ -22,14 +23,14 @@ search.appverid:
 - MET150
 - MOE150
 description: Cree un buzón compartido y configure algunas opciones para sus usuarios, como el reenvío de correo electrónico y las respuestas automáticas.
-ms.openlocfilehash: b3de51a8407c8f9786d6a1677137f2a564744ac0
-ms.sourcegitcommit: 9255a7e8b398f92d8dae09886ae95dc8577bf29a
+ms.openlocfilehash: ff17c9d16f84da5ef93d777e10eaf1fcfb99c55f
+ms.sourcegitcommit: 0b7070ec119e00e0dafe030bbfbef0ae5c9afa19
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/17/2022
-ms.locfileid: "65437159"
+ms.lasthandoff: 09/29/2022
+ms.locfileid: "68194013"
 ---
-# <a name="configure-microsoft-365-shared-mailbox-settings"></a>Configuración de Microsoft 365 configuración del buzón compartido
+# <a name="configure-microsoft-365-shared-mailbox-settings"></a>Configuración del buzón compartido de Microsoft 365
 
 Después de [crear un buzón compartido](create-a-shared-mailbox.md), querrá configurar algunas opciones para los usuarios del buzón, como el reenvío de correo electrónico y las respuestas automáticas. Más adelante, es posible que quiera cambiar otra configuración, como el nombre del buzón, los miembros o los permisos de miembro. 
 
@@ -37,7 +38,7 @@ Después de [crear un buzón compartido](create-a-shared-mailbox.md), querrá co
 
 1. En el centro de administración, vaya a la página **Grupos** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=2066847" target="_blank">Buzones compartidos</a>.
 
-2. Seleccione el buzón compartido que desea editar y, a continuación, seleccione **Editar** junto a **Nombre, Correo electrónico, Alias de correo electrónico**.
+2. Seleccione el buzón compartido que desea editar y, a continuación, seleccione **Editar** junto a **Nombre, Email, Email alias**.
 
 3. Escriba un nuevo nombre o agregue otro alias. Si desea cambiar la dirección de correo electrónico principal, el buzón debe tener más de un alias de correo electrónico.
 
@@ -49,7 +50,7 @@ No es necesario asignar una licencia al buzón compartido para reenviar el corre
 
 1. En el centro de administración, vaya a la página **Grupos** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=2066847" target="_blank">Buzones compartidos</a>.
 
-2. Seleccione el buzón compartido que desea editar y, a continuación, seleccione **Edición de reenvío de** \> correo electrónico.
+2. Seleccione el buzón compartido que desea editar y, a continuación, seleccione **Email edición de** \> reenvío.
     
 3. Establezca el botón de alternancia **en Activado** y escriba una dirección de correo electrónico a la que reenviar los mensajes. Puede ser cualquier dirección de correo electrónico válida. Para reenviar a varias direcciones, debe [crear un grupo de distribución](/office365/admin/setup/create-distribution-lists) para las direcciones y, a continuación, escribir el nombre del grupo en este cuadro.
     
@@ -71,7 +72,7 @@ No es necesario asignar una licencia al buzón compartido para reenviar el corre
 
 ## <a name="allow-everyone-to-see-the-sent-email-the-replies"></a>Permitir que cualquier usuario vea el correo enviado (las respuestas)
 
-De forma predeterminada, los mensajes enviados al buzón compartido no se guardan en la carpeta Elementos enviados del buzón compartido. En su lugar, se guardan en la carpeta Elementos enviados de la persona que envió el mensaje.
+By default, messages sent from the shared mailbox aren't saved to the Sent Items folder of the shared mailbox. Instead, they are saved to the Sent Items folder of the person who sent the message.
 
 Si desea permitir que todos vean el correo electrónico enviado, en el centro de administración, edite la configuración del buzón compartido y seleccione **Editar elementos enviados**\>.
 
@@ -80,7 +81,7 @@ Si desea permitir que todos vean el correo electrónico enviado, en el centro de
 
 1. En el centro de administración, vaya a la página **Grupos** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=2066847" target="_blank">Buzones compartidos</a>.
 
-2. Seleccione el buzón compartido que desea editar y, a continuación, seleccione **Editar** **aplicaciones** \> de correo electrónico.
+2. Seleccione el buzón compartido que desea editar y, a continuación, seleccione **editar Email aplicaciones** \> **.**
 
 3. Establezca el botón de alternancia **en Activado** para todas las aplicaciones que quiera que los miembros puedan usar para acceder al buzón compartido. Establezca el botón de alternancia en **Desactivado** para las aplicaciones que no quiera que usen. 
 

@@ -17,15 +17,15 @@ ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection:
-- M365-security-compliance
-- m365initiative-m365-defender
+- m365-security
+- tier2
 ms.topic: conceptual
-ms.openlocfilehash: 1ec67ba3dd912851425a06066dac0648418bf58e
-ms.sourcegitcommit: 10e6abe740e27000e223378eb17d657a47555fa8
+ms.openlocfilehash: b054bd3518d9cdc1bdbb4a11f59dfff70832b701
+ms.sourcegitcommit: 12af9e8e3a6eaa090fda9e98ccb831dff65863a4
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/31/2022
-ms.locfileid: "67475369"
+ms.lasthandoff: 09/27/2022
+ms.locfileid: "68080181"
 ---
 # <a name="build-hunting-queries-using-guided-mode-in-microsoft-365-defender"></a>Compilación de consultas de búsqueda mediante el modo guiado en Microsoft 365 Defender
 

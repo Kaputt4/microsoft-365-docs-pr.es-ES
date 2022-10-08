@@ -20,17 +20,18 @@ ms.collection:
 - m365solution-healthcare
 - m365solution-scenario
 - m365-frontline
+- highpri
 ms.reviewer: hafarmer
 description: Obtenga más información sobre la experiencia de unión para las citas virtuales de Teams en los exploradores.
 appliesto:
 - Microsoft Teams
 - Microsoft 365 for frontline workers
-ms.openlocfilehash: 869e554ed202f5e2ef24cf75e3dc2338c65de554
-ms.sourcegitcommit: 5e5c2c1f7c321b5eb1c5b932c03bdd510005de13
-ms.translationtype: HT
+ms.openlocfilehash: d9a64032610a3ef49b8d8bc5367901be80c7702a
+ms.sourcegitcommit: 674dfa2cb2f20546d2f7822e09bacf0e12e2718b
+ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/15/2022
-ms.locfileid: "66998633"
+ms.lasthandoff: 09/27/2022
+ms.locfileid: "68038849"
 ---
 # <a name="manage-the-join-experience-for-teams-virtual-appointments-on-browsers"></a>Administrar la experiencia de unión para las citas virtuales de Teams en los exploradores
 

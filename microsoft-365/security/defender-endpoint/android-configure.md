@@ -12,16 +12,17 @@ ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection:
-- m365-security-compliance
+- m365-security
+- tier3
 ms.topic: conceptual
 ms.subservice: mde
 search.appverid: met150
-ms.openlocfilehash: 8f2d1200d3d703e89959dbe8446838f266d1731a
-ms.sourcegitcommit: 9b133379196da2b3a4bb311b07ff274f43780f68
+ms.openlocfilehash: e6a97b532098631a14850be0afd06b9bc9e2e11d
+ms.sourcegitcommit: b9282493c371d59c2e583b9803825096499b5e2c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/14/2022
-ms.locfileid: "67703376"
+ms.lasthandoff: 09/29/2022
+ms.locfileid: "68150119"
 ---
 # <a name="configure-defender-for-endpoint-on-android-features"></a>Configurar Defender para punto de conexión en características de Android
 
@@ -62,12 +63,12 @@ Esta característica proporciona protección contra amenazas no autorizadas Wi-F
 
 Incluye varios controles de administración para ofrecer flexibilidad, como la capacidad de configurar la característica desde el centro de microsoft Endpoint Manager Administración, así como agregar certificados de confianza. Los administradores también pueden habilitar [los controles de privacidad](/microsoft-365/security/defender-endpoint/android-configure#privacy-controls) para configurar los datos enviados por Defender para punto de conexión desde dispositivos Android.
 
-La protección de red en Microsoft Defender para punto de conexión está habilitada de forma predeterminada. Los administradores pueden usar los pasos siguientes para **configurar la protección de red en dispositivos Android.**
+La protección de red en Microsoft Defender para el punto de conexión está habilitada de forma predeterminada. Los administradores pueden usar los pasos siguientes para **configurar la protección de red en dispositivos Android.**
 
 1. En Microsoft Endpoint Manager Administración, vaya a Aplicaciones > Directivas de configuración de aplicaciones. Cree una nueva directiva de configuración de aplicaciones.
     > [!div class="mx-imgBorder"]
     > ![Imagen de cómo crear una directiva.](images/android-mem.png)
-1. Proporcione un nombre y una descripción para identificar de forma única la directiva. Seleccione **"Android Enterprise"** como plataforma y **"Solo perfil de trabajo de propiedad personal"** como tipo de perfil y **"Microsoft Defender"** como aplicación de destino.
+1. Proporcione un nombre y una descripción para identificar de forma única la directiva. Seleccione **"Android Enterprise"** como plataforma y **"Solo perfil de trabajo de propiedad personal"** como tipo de perfil y **"Microsoft Defender"** como aplicación dirigida.
     > [!div class="mx-imgBorder"]
     > ![Imagen de los detalles de la directiva.](images/appconfigdetails.png)
 1. En la página Configuración, seleccione **"Usar diseñador de configuración"** y agregue **"Habilitar protección de red en Microsoft Defender"** como clave y valor como **"0"** para deshabilitar la protección de red. (La protección de red está habilitada de forma predeterminada)

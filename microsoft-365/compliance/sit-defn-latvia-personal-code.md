@@ -14,19 +14,22 @@ f1_keywords:
 ms.service: O365-seccomp
 ms.localizationpriority: medium
 ms.collection:
-- M365-security-compliance
+- tier3
+- purview-compliance
 hideEdit: true
 feedback_system: None
 recommendations: false
 description: Definición de entidad de tipo de información confidencial de código personal de Letonia.
-ms.openlocfilehash: 16e736220fa402df6ebcb87e947e75090b4a0f57
-ms.sourcegitcommit: 5aed330d8af523f0dffe5e392f1c79f047e38172
+ms.openlocfilehash: cfcd9dd792494154601a9cafda179be64fb08078
+ms.sourcegitcommit: 6df492719fecc2b213d55465dc1cd60ab4627ed6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/21/2022
-ms.locfileid: "66999074"
+ms.lasthandoff: 10/04/2022
+ms.locfileid: "68384193"
 ---
 # <a name="latvia-personal-code"></a>Número del documento de identidad de Letonia
+
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
 
 ## <a name="format"></a>Formato
 
@@ -143,18 +146,18 @@ Una política de DLP tiene confianza media en que ha detectado este tipo de info
 - código de impuestos estatales
 - tax file number
 - tax id
-- identificación fiscal no
+- núm. identificación fiscal
 - número de identificación fiscal
-- impuestos no #
-- impuestos no
-- número de impuestos
-- taxid #
-- taxidno #
-- taxidnumber #
-- taxno #
-- taxnumber #
-- taxnumber
-- tin id
-- tin no
-- Lata #
+- n.º de id. fiscal#
+- n.º fiscal
+- número de id. fiscal
+- Id.fiscal#
+- númidfiscal#
+- númeroidentificaciónfiscal#
+- núm.fiscal#
+- núm.id.fiscal#
+- núm.id.fisca
+- id. tributaria
+- n.º de id. tributario
+- Número de identificación tributaria
 - número de elector

@@ -18,15 +18,15 @@ ms.custom:
 - admindeeplinkDEFENDER
 ms.topic: article
 ms.collection:
-- m365initiative-m365-defender
-- M365-security-compliance
+- m365-security
+- tier2
 search.appverid: met150
-ms.openlocfilehash: 38b38a43c2531ab7ce4932ad9f00a04c9289fdc8
-ms.sourcegitcommit: 078149c9645ce220911ccd6ce54f984a4c92ce53
+ms.openlocfilehash: c0bd85618ec90b193728b9705d473eadc45712af
+ms.sourcegitcommit: b9282493c371d59c2e583b9803825096499b5e2c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/20/2022
-ms.locfileid: "67811777"
+ms.lasthandoff: 09/29/2022
+ms.locfileid: "68148733"
 ---
 # <a name="attack-surface-reduction-rules-overview"></a>Introducción a las reglas de reducción de superficie expuesta a ataques
 
@@ -51,7 +51,13 @@ Las reglas de reducción de superficie expuesta a ataques tienen como objetivo d
 
 Estos comportamientos de software a veces se ven en aplicaciones legítimas. Sin embargo, estos comportamientos a menudo se consideran de riesgo porque suelen ser objeto de abuso por parte de los atacantes a través de malware. Las reglas de reducción de la superficie expuesta a ataques pueden restringir los comportamientos de riesgo basados en software y ayudar a mantener la seguridad de la organización.
 
-Para obtener más información sobre cómo configurar reglas de reducción de superficie expuesta a ataques, consulte [Habilitar reglas de reducción de superficie expuesta a ataques](enable-attack-surface-reduction.md).
+Para ver un proceso secuencial de un extremo a otro de cómo administrar reglas ASR, consulte:
+
+- [Introducción a la implementación de reglas de reducción de la superficie expuesta a ataques (ASR)](attack-surface-reduction-rules-deployment.md)
+- [Planear la implementación de reglas de reducción de la superficie expuesta a ataques (ASR)](attack-surface-reduction-rules-deployment-plan.md)
+- [Probar las reglas de reducción de la superficie expuesta a ataques (ASR)](attack-surface-reduction-rules-deployment-test.md)
+- [Habilitar reglas de la reducción de la superficie expuesta a ataques (ASR)](attack-surface-reduction-rules-deployment-implement.md)
+- [Operacionar reglas de reducción de la superficie expuesta a ataques (ASR)](attack-surface-reduction-rules-deployment-operationalize.md)
 
 ## <a name="assess-rule-impact-before-deployment"></a>Evaluación del impacto de la regla antes de la implementación
 
@@ -81,14 +87,14 @@ El modo de advertencia se admite en dispositivos que ejecutan las siguientes ver
 - Windows 11
 - [Windows Server, versión 1809](/windows-server/get-started/whats-new-in-windows-server-1809) o posterior
 
-Antivirus de Microsoft Defender debe ejecutarse con protección en tiempo real en [modo activo](/windows/security/threat-protection/microsoft-defender-antivirus/microsoft-defender-antivirus-compatibility#functionality-and-features-available-in-each-state).
+Microsoft Defender Antivirus debe ejecutarse con protección en tiempo real en [modo activo](/windows/security/threat-protection/microsoft-defender-antivirus/microsoft-defender-antivirus-compatibility#functionality-and-features-available-in-each-state).
 
-Además, asegúrese de que están instaladas [las actualizaciones antivirus y antimalware de Microsoft Defender](/windows/security/threat-protection/microsoft-defender-antivirus/manage-updates-baselines-microsoft-defender-antivirus#monthly-platform-and-engine-versions) .
+Además, asegúrese de que Microsoft Defender están instaladas [las actualizaciones antivirus y antimalware](/windows/security/threat-protection/microsoft-defender-antivirus/manage-updates-baselines-microsoft-defender-antivirus#monthly-platform-and-engine-versions).
 
 - Requisito mínimo de versión de plataforma: `4.18.2008.9`
 - Requisito mínimo de versión del motor: `1.1.17400.5`
 
-Para obtener más información y obtener las actualizaciones, consulte [Actualización para la plataforma antimalware de Microsoft Defender](https://support.microsoft.com/help/4052623/update-for-microsoft-defender-antimalware-platform).
+Para obtener más información y obtener las actualizaciones, consulte [Actualización para Microsoft Defender plataforma antimalware](https://support.microsoft.com/help/4052623/update-for-microsoft-defender-antimalware-platform).
 
 ### <a name="cases-where-warn-mode-is-not-supported"></a>Casos en los que no se admite el modo de advertencia
 
@@ -108,7 +114,7 @@ Además, cuando se desencadenan determinadas reglas de reducción de superficie 
 
 Las notificaciones y las alertas generadas se pueden ver en el <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">portal de Microsoft 365 Defender</a>.
 
-Para obtener detalles específicos sobre la funcionalidad de notificaciones y alertas, consulte: [Por alerta de regla y detalles de notificación](attack-surface-reduction-rules-reference.md#per-rule-alert-and-notification-details), en el artículo **Referencia de reglas de reducción de superficie expuesta a ataques**.
+Para obtener detalles específicos sobre la funcionalidad de notificaciones y alertas, consulte: [Por alerta de regla y detalles de notificación](attack-surface-reduction-rules-reference.md#per-asr-rule-alert-and-notification-details), en el artículo **Referencia de reglas de reducción de superficie expuesta a ataques**.
 
 ## <a name="advanced-hunting-and-attack-surface-reduction-events"></a>Eventos avanzados de reducción de la superficie expuesta a ataques y búsqueda
 
@@ -137,7 +143,7 @@ Aunque las reglas de reducción de superficie expuesta a ataques no requieren un
 - Supervisión, análisis y flujos de trabajo disponibles en [Defender para punto de conexión](microsoft-defender-endpoint.md)
 - Funcionalidades de generación de informes y configuración en [Microsoft 365 Defender](/microsoft-365/security/defender/overview-security-center).
 
-Estas funcionalidades avanzadas no están disponibles con una licencia de Windows Professional o Windows E3. Sin embargo, si tiene esas licencias, puede usar Visor de eventos y los registros del Antivirus de Microsoft Defender para revisar los eventos de la regla de reducción de la superficie expuesta a ataques.
+Estas funcionalidades avanzadas no están disponibles con una licencia de Windows Professional o Windows E3. Sin embargo, si tiene esas licencias, puede usar los registros Visor de eventos y Microsoft Defender Antivirus para revisar los eventos de regla de reducción de la superficie expuesta a ataques.
 
 ## <a name="review-attack-surface-reduction-events-in-the-microsoft-365-defender-portal"></a>Revisar los eventos de reducción de superficie expuesta a ataques en el portal de Microsoft 365 Defender
 
@@ -176,8 +182,18 @@ Puede crear una vista personalizada que filtre los eventos para mostrar solo los
 
 La "versión del motor" que aparece para los eventos de reducción de la superficie expuesta a ataques en el registro de eventos la genera Defender for Endpoint, no el sistema operativo. Defender para punto de conexión se integra con Windows 10 y Windows 11, por lo que esta característica funciona en todos los dispositivos con Windows 10 o Windows 11 instalados.
 
+## <a name="see-also"></a>Vea también
+
+- [Introducción a la implementación de reglas de reducción de la superficie expuesta a ataques (ASR)](attack-surface-reduction-rules-deployment.md)
+- [Planear la implementación de reglas de reducción de la superficie expuesta a ataques (ASR)](attack-surface-reduction-rules-deployment-plan.md)
+- [Probar las reglas de reducción de la superficie expuesta a ataques (ASR)](attack-surface-reduction-rules-deployment-test.md)
+- [Habilitar reglas de la reducción de la superficie expuesta a ataques (ASR)](attack-surface-reduction-rules-deployment-implement.md)
+- [Operacionar reglas de reducción de la superficie expuesta a ataques (ASR)](attack-surface-reduction-rules-deployment-operationalize.md)
+- [Informe de reglas de ASR\) de reducción \(de superficie expuesta a ataques](attack-surface-reduction-rules-report.md)
+
 > [!TIP]
 > Si busca información relacionada con el antivirus para otras plataformas, consulte:
+>
 > - [Establecer las preferencias para Microsoft Defender para punto de conexión en macOS](mac-preferences.md)
 > - [Microsoft Defender para punto de conexión en Mac](microsoft-defender-endpoint-mac.md)
 > - [Configuración de las directivas de antivirus de macOS para Antivirus de Microsoft Defender para Intune](/mem/intune/protect/antivirus-microsoft-defender-settings-macos)

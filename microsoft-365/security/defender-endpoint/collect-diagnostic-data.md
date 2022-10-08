@@ -1,7 +1,7 @@
 ---
 title: Recopilación de datos de diagnóstico de Antivirus de Microsoft Defender
-description: Uso de una herramienta para recopilar datos para solucionar problemas del Antivirus de Microsoft Defender
-keywords: solución de problemas, error, corrección, cumplimiento de actualizaciones, oms, monitor, informe, av de Microsoft Defender, objeto de directiva de grupo, configuración, datos de diagnóstico, Antivirus de Microsoft Defender
+description: Uso de una herramienta para recopilar datos para solucionar problemas de Microsoft Defender Antivirus
+keywords: troubleshooting, error, fix, update compliance, oms, monitor, report, Microsoft Defender av, group policy object, setting, diagnostic data, Microsoft Defender Antivirus
 search.product: eADQiWindows 10XVcnh
 ms.service: microsoft-365-security
 ms.mktglfcycl: manage
@@ -16,16 +16,18 @@ ms.reviewer: ''
 manager: dansimp
 ms.subservice: mde
 ms.topic: article
-ms.collection: M365-security-compliance
+ms.collection:
+- m365-security
+- tier2
 search.appverid: met150
-ms.openlocfilehash: c57cabf3e4de59b572dd880aeffa2f1b723fe155
-ms.sourcegitcommit: 9b133379196da2b3a4bb311b07ff274f43780f68
+ms.openlocfilehash: 5b9f1a5bc1df8564c5f4f028dc9fefee6c05e1a6
+ms.sourcegitcommit: b9282493c371d59c2e583b9803825096499b5e2c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/14/2022
-ms.locfileid: "67699266"
+ms.lasthandoff: 09/29/2022
+ms.locfileid: "68148689"
 ---
-# <a name="collect-microsoft-defender-antivirus-diagnostic-data"></a>Recopilación de datos de diagnóstico del Antivirus de Microsoft Defender
+# <a name="collect-microsoft-defender-antivirus-diagnostic-data"></a>Recopilación de datos de diagnóstico Microsoft Defender Antivirus
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
@@ -35,7 +37,7 @@ ms.locfileid: "67699266"
 - [Microsoft Defender para punto de conexión Plan 1](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft Defender para punto de conexión Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 
-En este artículo se describe cómo recopilar datos de diagnóstico que pueden usar los equipos de ingeniería y soporte técnico de Microsoft para ayudar a solucionar problemas que pueda encontrar al usar el Antivirus de Microsoft Defender.
+En este artículo se describe cómo recopilar datos de diagnóstico que pueden usar los equipos de ingeniería y soporte técnico de Microsoft para ayudar a solucionar problemas que pueda encontrar al usar el antivirus de Microsoft Defender.
 
 > [!NOTE]
 > Como parte del proceso de investigación o respuesta, puede recopilar un paquete de investigación de un dispositivo. A continuación se muestra cómo: [Recopilar el paquete de investigación de los dispositivos](/windows/security/threat-protection/microsoft-defender-atp/respond-machine-alerts#collect-investigation-package-from-devices).
@@ -50,10 +52,10 @@ En al menos dos dispositivos que experimentan el mismo problema, obtenga el arch
 
     c. Especifique las credenciales de administrador o apruebe el símbolo del sistema.
 
-2. Vaya al directorio del Antivirus de Microsoft Defender. El valor predeterminado es `C:\Program Files\Windows Defender`
+2. Vaya al directorio de Microsoft Defender Antivirus. El valor predeterminado es `C:\Program Files\Windows Defender`
 
    > [!NOTE]
-   > Si ejecuta una [versión actualizada de la plataforma antimalware de Microsoft Defender](https://support.microsoft.com/help/4052623/update-for-microsoft-defender-antimalware-platform), ejecute `MpCmdRun` desde la siguiente ubicación: `C:\ProgramData\Microsoft\Windows Defender\Platform\<version>`.
+   > Si ejecuta una [versión actualizada Microsoft Defender plataforma antimalware](https://support.microsoft.com/help/4052623/update-for-microsoft-defender-antimalware-platform), ejecute `MpCmdRun` desde la siguiente ubicación: `C:\ProgramData\Microsoft\Windows Defender\Platform\<version>`.
 
 3. Escriba el comando siguiente y, a continuación, presione **Entrar.**
 
@@ -75,7 +77,7 @@ En al menos dos dispositivos que experimentan el mismo problema, obtenga el arch
 > [!NOTE]
 > Si tiene un problema con el cumplimiento de actualizaciones, envíe un correo electrónico con la <a href="mailto:ucsupport@microsoft.com?subject=WDAV assessment issue&body=I%20am%20encountering%20the%20following%20issue%20when%20using%20Windows%20Defender%20AV%20in%20Update%20Compliance%3a%20%0d%0aI%20have%20provided%20at%20least%202%20support%20.cab%20files%20at%20the%20following%20location%3a%20%3Caccessible%20share%2c%20including%20access%20details%20such%20as%20password%3E%0d%0aMy%20OMS%20workspace%20ID%20is%3a%20%0d%0aPlease%20contact%20me%20at%3a">plantilla de correo electrónico de soporte técnico de cumplimiento</a> de actualizaciones y rellene la plantilla con la siguiente información:
 >
-> Estoy experimentando el siguiente problema al usar el Antivirus de Microsoft Defender en Cumplimiento de actualizaciones:
+> Estoy experimentando el siguiente problema al usar Microsoft Defender Antivirus en Cumplimiento de actualizaciones:
 >
 > He proporcionado al menos 2 archivos de soporte técnico .cab en la siguiente ubicación:
 >
@@ -140,4 +142,4 @@ También puede especificar dónde se creará el archivo de .cab de diagnóstico 
 
 ## <a name="see-also"></a>Vea también
 
-- [Solución de problemas de informes del Antivirus de Microsoft Defender](troubleshoot-reporting.md)
+- [Solución de problemas de informes de antivirus de Microsoft Defender](troubleshoot-reporting.md)

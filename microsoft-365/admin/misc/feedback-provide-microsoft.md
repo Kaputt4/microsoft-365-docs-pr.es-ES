@@ -7,15 +7,17 @@ author: Kwekua
 manager: scotv
 audience: Admin
 ms.topic: article
-ms.service: o365-administration
+ms.service: microsoft-365-business
 ms.localizationpriority: medium
+ms.collection:
+- scotvorg
 description: Obtenga información sobre las distintas formas en que puede proporcionar comentarios a Microsoft sobre los productos y servicios de Microsoft.
-ms.openlocfilehash: 5544ebcf5ae484a262056cae7ff44364a93cdaf5
-ms.sourcegitcommit: db1e48af88995193f15bbd5962f5101a6088074b
+ms.openlocfilehash: 8322d4a7797a6b09faecb0b2a8fa3a4fa07b3d92
+ms.sourcegitcommit: 0b7070ec119e00e0dafe030bbfbef0ae5c9afa19
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/23/2022
-ms.locfileid: "65637370"
+ms.lasthandoff: 09/29/2022
+ms.locfileid: "68164753"
 ---
 # <a name="learn-about-how-to-provide-feedback-to-microsoft"></a>Más información sobre cómo proporcionar comentarios a Microsoft
 
@@ -43,7 +45,7 @@ En función de la plataforma y la aplicación, es posible que pueda enviar regis
 
 ### <a name="sending-feedback-from-feedback-our-community-feedback-web-portal"></a>Enviar comentarios de comentarios, nuestro portal web de comentarios de la comunidad
 
-Si usa [comentarios](https://feedbackportal.microsoft.com/), puede proporcionar comentarios directamente en el portal web.  Community comentarios le permiten examinar o votar los comentarios de la comunidad. Los comentarios de la comunidad se muestran públicamente en diferentes foros. Los comentarios que envíes públicamente o los comentarios que proporciones mostrarán tu nombre de usuario.
+Si usa [comentarios](https://feedbackportal.microsoft.com/), puede proporcionar comentarios directamente en el portal web.  Los comentarios de la comunidad le permiten examinar o votar los comentarios de la comunidad. Los comentarios de la comunidad se muestran públicamente en diferentes foros. Los comentarios que envíes públicamente o los comentarios que proporciones mostrarán tu nombre de usuario.
 
 :::image type="content" source="../../media/sending-feedback-community-portal.png" alt-text="Captura de pantalla: Selección de productos de Microsoft en los que puede enviar comentarios":::
 
@@ -70,7 +72,7 @@ A través de Centro de opiniones sobre Windows y el portal web comentarios, Micr
 
 Verá cada tarjeta de comentarios en el portal de comentarios etiquetado con uno de los estados siguientes. Puede encontrar esta etiqueta de estado como se muestra en la captura de pantalla siguiente.
 
-:::image type="content" source="../../media/ink-to-text-conversion.png" alt-text="Captura de pantalla: ejemplo de tarjeta de comentarios en la conversión de lápiz a texto en un iPad":::
+:::image type="content" source="../../media/ink-to-text-conversion.png" alt-text="Captura de pantalla: Ejemplo de tarjeta de comentarios en la conversión de lápiz a texto en un iPad":::
 
 **Lo tenemos.**  Sus comentarios se enviaron correctamente. Aunque no podemos responder a cada envío, supervisamos todos los envíos de comentarios.
 Este es el estado predeterminado de los comentarios una vez enviados y significa que los comentarios se enviaron correctamente a nuestro sistema.

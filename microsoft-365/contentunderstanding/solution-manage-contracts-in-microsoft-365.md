@@ -11,16 +11,18 @@ ms.service: microsoft-365-enterprise
 ms.collection:
 - m365solution-managecontracts
 - m365solution-overview
+- highpri
+- m365initiative-syntex
 search.appverid: ''
 ms.localizationpriority: medium
 ROBOTS: ''
 description: Obtenga información sobre cómo administrar contratos mediante una solución de Microsoft 365 de SharePoint Syntex, listas de SharePoint, Microsoft Teams y Power Automate.
-ms.openlocfilehash: 6d925999c70e49ec17dcb04925256a2b229007bf
-ms.sourcegitcommit: 078149c9645ce220911ccd6ce54f984a4c92ce53
+ms.openlocfilehash: edb05502ff9f4a84f194e4f991307886ce85bd46
+ms.sourcegitcommit: 674dfa2cb2f20546d2f7822e09bacf0e12e2718b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/20/2022
-ms.locfileid: "67812268"
+ms.lasthandoff: 09/27/2022
+ms.locfileid: "68041181"
 ---
 # <a name="manage-contracts-using-a-microsoft-365-solution"></a>Administrar contratos con una solución de Microsoft 365
 

@@ -14,14 +14,16 @@ author: mjcaparas
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
-ms.collection: M365-security-compliance
+ms.collection:
+- m365-security
+- tier2
 ms.topic: article
-ms.openlocfilehash: 1a02bcd596043ee27fc250f60ab68e627246bf62
-ms.sourcegitcommit: 078149c9645ce220911ccd6ce54f984a4c92ce53
+ms.openlocfilehash: aca5eb43b29076e0a320b472e55f35abfbaa42a6
+ms.sourcegitcommit: b9282493c371d59c2e583b9803825096499b5e2c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/20/2022
-ms.locfileid: "67811644"
+ms.lasthandoff: 09/29/2022
+ms.locfileid: "68146819"
 ---
 # <a name="assign-user-access-to-microsoft-defender-security-center"></a>Asignar el acceso de usuario al Centro de seguridad de Microsoft Defender
 
@@ -44,10 +46,11 @@ Defender for Endpoint admite dos maneras de administrar permisos:
 
 > [!NOTE]
 > Si ya ha asignado permisos básicos, puede cambiar a RBAC en cualquier momento. Tenga en cuenta lo siguiente antes de realizar el cambio:
->
 > - A los usuarios con acceso completo (a los usuarios a los que se les asigna el rol de directorio Administrador global o Administrador de seguridad en Azure AD), se les asigna automáticamente el rol de administrador predeterminado de Defender para punto de conexión, que también tiene acceso completo. Se pueden asignar grupos de usuarios de Azure AD adicionales al rol de administrador de Defender para punto de conexión después de cambiar a RBAC. Solo los usuarios asignados al rol de administrador de Defender para punto de conexión pueden administrar permisos mediante RBAC. 
 > - Los usuarios que tienen acceso de solo lectura (lectores de seguridad) perderán el acceso al portal hasta que se les asigne un rol. Tenga en cuenta que solo se puede asignar un rol a los grupos de usuarios de Azure AD en RBAC.
 > - Después de cambiar a RBAC, no podrá volver a usar la administración básica de permisos.
+>
+>  La creación de grupos de dispositivos se admite en El plan 1 y el plan 2 de Defender para punto de conexión.
 
 ## <a name="related-topics"></a>Temas relacionados
 

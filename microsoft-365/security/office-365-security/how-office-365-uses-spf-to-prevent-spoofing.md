@@ -12,18 +12,18 @@ search.appverid:
 - MET150
 ms.assetid: 3aff33c5-1416-4867-a23b-e0c0c5b4d2be
 ms.collection:
-- M365-security-compliance
+- m365-security
 ms.custom:
 - seo-marvel-apr2020
 description: Obtenga información sobre cómo Microsoft 365 usa el registro TXT del Marco de directivas de remitente (SPF) en DNS para asegurarse de que los sistemas de correo electrónico de destino confían en los mensajes enviados desde el dominio personalizado.
 ms.subservice: mdo
 ms.service: microsoft-365-security
-ms.openlocfilehash: c530bc191218d283922cda144de3d247cc182330
-ms.sourcegitcommit: 2b89bcff547e00be3d38dc8d1e6cbcf8f41eba42
+ms.openlocfilehash: c657f86656da005aba416159217d01ca6eb636cb
+ms.sourcegitcommit: 12af9e8e3a6eaa090fda9e98ccb831dff65863a4
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/03/2022
-ms.locfileid: "67596883"
+ms.lasthandoff: 09/27/2022
+ms.locfileid: "68055004"
 ---
 # <a name="how-microsoft-365-uses-sender-policy-framework-spf-to-prevent-spoofing"></a>Cómo Microsoft 365 usa el marco de directivas de remitente (SPF) para evitar la suplantación de identidad
 
@@ -36,10 +36,10 @@ ms.locfileid: "67596883"
 
  **Resumen:** En este artículo se describe cómo Microsoft 365 usa el registro TXT del Marco de directivas de remitente (SPF) en DNS para garantizar que los sistemas de correo electrónico de destino confíen en los mensajes enviados desde el dominio personalizado. Esto se aplica al correo saliente enviado desde Microsoft 365. Los mensajes enviados desde Microsoft 365 a un destinatario dentro de Microsoft 365 siempre pasarán SPF.
 
-Un registro TXT SPF es un registro DNS que ayuda a evitar la suplantación de IP y la suplantación de identidad mediante la comprobación del nombre del dominio desde el que se envían los mensajes de correo electrónico. Para validar el origen de los mensajes de correo electrónico, SPF contrasta la dirección IP del remitente con el supuesto propietario del dominio de envío.
+An SPF TXT record is a DNS record that helps prevent spoofing and phishing by verifying the domain name from which email messages are sent. SPF validates the origin of email messages by verifying the IP address of the sender against the alleged owner of the sending domain.
 
 > [!NOTE]
-> El Grupo de trabajo de ingeniería de Internet (IETF) consideró en desuso los tipos de registro SPF en 2014. En su lugar, asegúrese de que usa registros TXT en DNS para publicar la información SPF. El resto del artículo usa el término registro TXT SPF para mayor claridad.
+> SPF record types were deprecated by the Internet Engineering Task Force (IETF) in 2014. Instead, ensure that you use TXT records in DNS to publish your SPF information. The rest of this article uses the term SPF TXT record for clarity.
 
 Los administradores de dominio publican información SPF en registros TXT de DNS. La información SPF identifica los servidores autorizados de correo electrónico saliente. Los sistemas de correo electrónico de destino comprueban que los mensajes proceden de servidores de correo electrónico saliente autorizados. Si ya está familiarizado con SPF o tiene una implementación sencilla y solo necesita saber qué incluir en el registro TXT de SPF en DNS para Microsoft 365, puede ir a [Configurar SPF en Microsoft 365 para ayudar a evitar la suplantación de identidad](set-up-spf-in-office-365-to-help-prevent-spoofing.md). Si no tiene una implementación totalmente hospedada en Microsoft 365, o quiere obtener más información sobre cómo funciona SPF o cómo solucionar problemas de SPF para Microsoft 365, siga leyendo.
 
@@ -72,15 +72,15 @@ En este ejemplo, la regla SPF indica al servidor de correo electrónico de recep
 
 - IP address #3
 
-Esta regla SPF indica al servidor de correo electrónico de recepción que si un mensaje proviene de contoso.com, pero no de una de estas tres direcciones IP, el servidor de recepción debe aplicar la regla de cumplimiento en el mensaje. Normalmente, la regla de cumplimiento es una de estas opciones:
+This SPF rule tells the receiving email server that if a message comes from contoso.com, but not from one of these three IP addresses, the receiving server should apply the enforcement rule to the message. The enforcement rule is usually one of these options:
 
-- **Error grave.** Marca el mensaje con "error grave" en el sobre del mensaje y, después, sigue la política de correo no deseado configurada en el servidor de recepción para este tipo de mensaje.
+- **Hard fail.** Mark the message with 'hard fail' in the message envelope and then follow the receiving server's configured spam policy for this type of message.
 
 - **Error leve.** Marca el mensaje con "error leve" en el sobre del mensaje. Normalmente, los servidores de correo electrónico están configurados para enviar estos mensajes de todos modos. La mayoría de los usuarios finales no ven esta marca.
 
 - **Neutro.** No hagas nada, es decir, no marques el sobre del mensaje. Esto está reservado para fines de prueba y rara vez se usa.
 
-Los ejemplos siguientes muestran cómo funciona SPF en diferentes situaciones. En estos ejemplos, contoso.com es el remitente y woodgrovebank.com es el receptor.
+The following examples show how SPF works in different situations. In these examples, contoso.com is the sender and woodgrovebank.com is the receiver.
 
 ### <a name="example-1-email-authentication-of-a-message-sent-directly-from-sender-to-receiver"></a>Ejemplo 1: Autenticación de correo electrónico de un mensaje enviado directamente del remitente al receptor
 <a name="spfExample1"> </a>
@@ -103,7 +103,7 @@ Dado que la dirección IP n.º 12 no está en el registro TXT de SPF de contoso.
 ### <a name="example-3-spf-and-forwarded-messages"></a>Ejemplo 3: SPF y los mensajes reenviados
 <a name="spfExample3"> </a>
 
-Un inconveniente de SPF es que no funciona cuando se ha reenviado un correo electrónico. Por ejemplo, supongamos que el usuario de woodgrovebank.com ha configurado una regla de reenvío para enviar todo el correo electrónico a una cuenta de outlook.com:
+One drawback of SPF is that it doesn't work when an email has been forwarded. For example, suppose the user at woodgrovebank.com has set up a forwarding rule to send all email to an outlook.com account:
 
 ![Diagrama que muestra que SPF no puede autenticar el correo electrónico cuando se reenvía el mensaje.](../../media/6e92acd6-463e-4a1b-8327-fb1cf861f356.jpg)
 
@@ -200,7 +200,7 @@ v=spf1 ip4:192.168.0.1 include:spf.protection.outlook.com -all
 ### <a name="example-spf-txt-record-for-multiple-outbound-on-premises-mail-servers-and-microsoft-365"></a>Ejemplo: registro TXT de SPF para varios servidores de correo local salientes y Microsoft 365
 <a name="ExampleSPFMultipleMailServerO365"> </a>
 
-Si dispone de varios servidores de correo saliente, incluya la dirección IP de cada servidor de correo en el registro SPF TXT separando cada dirección con un espacio seguido de "ip4": instrucción. Por ejemplo:
+If you have multiple outbound mail servers, include the IP address for each mail server in the SPF TXT record and separate each IP address with a space followed by an "ip4:" statement. For example:
 
 ```text
 v=spf1 ip4:192.168.0.1 ip4:192.168.0.2 ip4:192.168.0.3 include:spf.protection.outlook.com -all
@@ -216,7 +216,7 @@ Aunque SPF está diseñado para ayudar a evitar la suplantación de identidad, p
 ## <a name="troubleshooting-best-practices-for-spf-in-microsoft-365"></a>Solución de problemas: procedimientos recomendados para SPF en Microsoft 365
 <a name="SPFTroubleshoot"> </a>
 
-Solo puede crear un registro TXT SPF para su dominio personalizado. La creación de varios registros provoca una situación de round robin y SPF producirá un error. Para evitar esto, puede crear registros independientes para cada subdominio. Por ejemplo, cree un registro para contoso.com y otro registro para bulkmail.contoso.com.
+You can only create one SPF TXT record for your custom domain. Creating multiple records causes a round robin situation and SPF will fail. To avoid this, you can create separate records for each subdomain. For example, create one record for contoso.com and another record for bulkmail.contoso.com.
 
 Si un mensaje de correo electrónico provoca más de 10 búsquedas DNS antes de que se entregue, el servidor de correo receptor responderá con un error permanente, también denominado  _permerror_, y hará que el mensaje no cumpla la comprobación de SPF. El servidor de recepción también puede responder con un informe de no entrega (NDR) que contiene un error similar a los siguientes:
 
@@ -227,7 +227,7 @@ Si un mensaje de correo electrónico provoca más de 10 búsquedas DNS antes de 
 ## <a name="avoiding-the-too-many-lookups-error-when-you-use-third-party-domains-with-microsoft-365"></a>Evitar el error de "demasiadas búsquedas" al usar dominios de terceros con Microsoft 365
 <a name="SPFTroubleshoot"> </a>
 
-Algunos registros TXT SPF para dominios de terceros ordenan al servidor de recepción que realicen un gran número de búsquedas DNS. Por ejemplo, en el momento de escribir este artículo, Salesforce.com contiene 5 instrucciones Include en el registro:
+Some SPF TXT records for third-party domains direct the receiving server to perform a large number of DNS lookups. For example, at the time of this writing, Salesforce.com contains 5 include statements in its record:
 
 ```text
 v=spf1 include:_spf.google.com
@@ -237,9 +237,9 @@ include:_spfblock1.salesforce.com
 include:spf.mandrillapp.com mx ~all
 ```
 
-Para evitar el error, puede implementar una directiva donde cualquier usuario pueda enviar correo masivo, por ejemplo, tiene que usar específicamente un subdominio para este propósito. Después, defina un registro TXT SPF diferente para el subdominio que incluye el correo masivo.
+To avoid the error, you can implement a policy where anyone sending bulk email, for example, has to use a subdomain specifically for this purpose. You then define a different SPF TXT record for the subdomain that includes the bulk email.
 
- En algunos casos, como en el ejemplo de salesforce.com, tiene que usar el dominio en el registro TXT SPF, pero en otros casos, puede que el tercero ya haya creado un subdominio para que lo use para este propósito. Por ejemplo, exacttarget.com ha creado un subdominio que debe usar para el registro TXT SPF:
+ In some cases, like the salesforce.com example, you have to use the domain in your SPF TXT record, but in other cases, the third-party may have already created a subdomain for you to use for this purpose. For example, exacttarget.com has created a subdomain that you need to use for your SPF TXT record:
 
 ```text
 cust-spf.exacttarget.com

@@ -7,9 +7,10 @@ author: kwekua
 manager: scotv
 audience: Admin
 ms.topic: article
-ms.service: o365-administration
+ms.service: microsoft-365-business
 ms.localizationpriority: medium
 ms.collection:
+- scotvorg
 - M365-subscription-management
 - Adm_O365
 - Adm_TOC
@@ -21,24 +22,24 @@ search.appverid:
 - MET150
 - MOE150
 ms.assetid: 832276bd-d024-47b6-a80a-a6b884907a5b
-description: 'Aprenda a habilitar o deshabilitar la característica Clutter para todos o usuarios específicos de la organización mediante Exchange PowerShell. '
-ms.openlocfilehash: 64c11b2a8bbce3747727c458a4427f5c0e1b135b
-ms.sourcegitcommit: 9255a7e8b398f92d8dae09886ae95dc8577bf29a
+description: 'Aprenda a habilitar o deshabilitar la característica Clutter para todos o usuarios específicos de su organización mediante Exchange PowerShell. '
+ms.openlocfilehash: 5c625bda18a1e1b30ecd33edd868ffbb040af1ef
+ms.sourcegitcommit: 0b7070ec119e00e0dafe030bbfbef0ae5c9afa19
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/17/2022
-ms.locfileid: "65437203"
+ms.lasthandoff: 09/29/2022
+ms.locfileid: "68193991"
 ---
 # <a name="configure-microsoft-365-clutter-for-your-organization"></a>Configuración de Microsoft 365 Clutter para su organización
 
 > [!TIP]
 > [La Bandeja de entrada centrada](../setup/configure-focused-inbox.md) va a reemplazar a Clutter. Más información: [Actualización de la bandeja de entrada centrada y nuestros planes para Clutter](https://techcommunity.microsoft.com/t5/Outlook-Blog/Update-on-Focused-Inbox-and-our-plans-for-Clutter/ba-p/136448)
   
-Como administrador, es posible que tenga que administrar la característica Clutter en Microsoft 365. Para activar o desactivar la característica Clutter para los usuarios de la organización, debe usar Exchange PowerShell. (Los usuarios pueden activarlo o desactivarlo con estas instrucciones: [Desactivar o activar El desorden en Outlook](https://support.microsoft.com/office/a9c72a77-1bc4-40e6-ba6d-103c1d1aba4c).
+Como administrador, es posible que tenga que administrar la característica Clutter en Microsoft 365. Para activar o desactivar la característica Clutter para los usuarios de su organización, debe usar Exchange PowerShell. (Los usuarios pueden activarlo o desactivarlo con estas instrucciones: [Desactivar o activar El desorden en Outlook](https://support.microsoft.com/office/a9c72a77-1bc4-40e6-ba6d-103c1d1aba4c).
   
-Consulte [Uso de PowerShell con Exchange Online](/powershell/exchange/exchange-online-powershell) y [Conectar para Exchange Online PowerShell](/powershell/exchange/connect-to-exchange-online-powershell) para obtener más información sobre el uso de Exchange PowerShell. Debe tener una cuenta que tenga al menos el rol de administrador del servicio Exchange y la capacidad de conectarse a Exchange Online con PowerShell. 
+Consulte [Uso de PowerShell con Exchange Online](/powershell/exchange/exchange-online-powershell) y [Conexión a Exchange Online PowerShell](/powershell/exchange/connect-to-exchange-online-powershell) para obtener más información sobre el uso de Exchange PowerShell. Debe tener una cuenta que tenga al menos el rol de administrador del servicio Exchange y la capacidad de conectarse a Exchange Online con PowerShell. 
   
-## <a name="turn-clutter-on-using-exchange-powershell"></a>Activar Clutter con Exchange PowerShell
+## <a name="turn-clutter-on-using-exchange-powershell"></a>Activar el desorden con Exchange PowerShell
 
 Puede habilitar Clutter manualmente para un buzón mediante la ejecución del cmdlet [Set-Clutter](/powershell/module/exchange/set-clutter) . También puede ver la configuración de Clutter para los buzones de su organización mediante la ejecución del cmdlet [Get-Clutter](/powershell/module/exchange/get-clutter) . 
   
@@ -74,7 +75,7 @@ Como administrador, puede volver a habilitar Clutter mediante Exchange PowerShel
     
 - Si no está habilitada la bandeja de entrada de Clutter o Focused: 
     
-  - Tanto Clutter como Focused Inbox aparecen como opciones en mail Configuración del usuario
+  - Tanto Clutter como Focused Inbox aparecen como opciones en la configuración de correo del usuario.
     
  **Si usa Outlook.com:**
   
@@ -88,7 +89,7 @@ Como administrador, puede volver a habilitar Clutter mediante Exchange PowerShel
     
 - Si no está habilitada la bandeja de entrada de Clutter o Focused: 
     
-  - Tanto Clutter como Focused Inbox aparecen como opciones en mail Configuración del usuario
+  - Tanto Clutter como Focused Inbox aparecen como opciones en la configuración de correo del usuario.
     
 - Si el usuario ha habilitado la Bandeja de entrada centrada en algún momento del pasado:
     
@@ -100,6 +101,6 @@ Como administrador, puede volver a habilitar Clutter mediante Exchange PowerShel
     
 ## <a name="related-content"></a>Contenido relacionado
 
-[Use Clutter para ordenar mensajes de prioridad baja en Outlook](https://support.microsoft.com/office/7b50c5db-7704-4e55-8a1b-dfc7bf1eafa0) (artículo)\
+[Uso de Clutter para ordenar mensajes de prioridad baja en Outlook](https://support.microsoft.com/office/7b50c5db-7704-4e55-8a1b-dfc7bf1eafa0) (artículo)\
 [Use Clutter para ordenar mensajes de prioridad baja en OWA](https://support.microsoft.com/office/fe4d64ca-bf73-48f1-91b4-9a659e008bce) (artículo)\
 [Desactivar el desorden en Outlook](https://support.microsoft.com/office/a9c72a77-1bc4-40e6-ba6d-103c1d1aba4c) (artículo)

@@ -10,19 +10,20 @@ ms.topic: article
 ms.date: 05/05/2021
 ms.localizationpriority: medium
 ms.collection:
-- M365-security-compliance
+- m365-security
 - m365initiative-defender-office365
 description: Use el Explorador de amenazas o las detecciones en tiempo real en el portal de Microsoft 365 Defender para investigar y responder a las amenazas de forma eficaz.
 ms.custom:
 - seo-marvel-apr2020
 ms.subservice: mdo
 ms.service: microsoft-365-security
-ms.openlocfilehash: c1fa07fd22d0bb03cf9713dd210e24de8fa66e2b
-ms.sourcegitcommit: 2b89bcff547e00be3d38dc8d1e6cbcf8f41eba42
+search.appverid: met150
+ms.openlocfilehash: 4e581dadd7b17552aee277fa978b788f914607f3
+ms.sourcegitcommit: 12af9e8e3a6eaa090fda9e98ccb831dff65863a4
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/03/2022
-ms.locfileid: "67598701"
+ms.lasthandoff: 09/27/2022
+ms.locfileid: "68054762"
 ---
 # <a name="threat-hunting-in-threat-explorer-for-microsoft-defender-for-office-365"></a>Búsqueda de amenazas en el Explorador de amenazas para Microsoft Defender para Office 365
 

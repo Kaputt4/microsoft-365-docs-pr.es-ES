@@ -16,19 +16,19 @@ ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection:
-- M365-security-compliance
-- m365initiative-m365-defender
+- m365-security
+- tier2
 ms.topic: conceptual
 ms.custom:
 - autoir
 - admindeeplinkDEFENDER
 ms.reviewer: evaldm, isco
-ms.openlocfilehash: 2dba3d88b2df64a5d3ee9890e42116fb239b41b4
-ms.sourcegitcommit: 078149c9645ce220911ccd6ce54f984a4c92ce53
+ms.openlocfilehash: 9bef9d4503ed409d9bca0a094b69201ed3509efb
+ms.sourcegitcommit: b9282493c371d59c2e583b9803825096499b5e2c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/20/2022
-ms.locfileid: "67811272"
+ms.lasthandoff: 09/29/2022
+ms.locfileid: "68142133"
 ---
 # <a name="view-the-details-and-results-of-an-automated-investigation"></a>Ver los detalles y los resultados de una investigación automatizada
 
@@ -81,7 +81,9 @@ Use la vista detalles de la investigación para ver la actividad pasada, actual 
 En la vista de detalles de la investigación, puede ver información en las pestañas **gráfico de investigación**, **alertas**, **dispositivos**, **identidades**, **resultados clave**, **entidades**, **registro**, y **acciones pendientes**, que se describen en la siguiente tabla.
 
 > [!NOTE]
-> Las pestañas específicas que vea en una página de detalles de investigación dependen de lo que incluya su suscripción. Por ejemplo, si la suscripción no incluye Microsoft Defender para Office 365 plan 2, no verá una pestaña **Buzones**.
+> - Las pestañas específicas que vea en una página de detalles de investigación dependen de lo que incluya su suscripción. Por ejemplo, si la suscripción no incluye Microsoft Defender para Office 365 plan 2, no verá una pestaña **Buzones**.
+>
+> - La creación de grupos de dispositivos se admite en El plan 1 y el plan 2 de Defender para punto de conexión.
 
 |Pestaña|Descripción|
 |---|---|
@@ -114,27 +116,27 @@ Para proporcionar más contexto sobre cómo se muestran los estados de investiga
 |-----------|----------|---------------------|--------|----------|
 |Se detectó malware en un archivo de imagen de disco wim|Informativo|Benigno|Resuelto|Malware|
 |Se detectó malware en un archivo de archivo rar|Informativo|PendingResource|Nuevo|Malware|
-|Se detectó malware en un archivo de archivo rar|Informativo|UnsupportedAlertType|Nueva|Malware|
 |Se detectó malware en un archivo de archivo rar|Informativo|UnsupportedAlertType|Nuevo|Malware|
-|Se detectó malware en un archivo de archivo rar|Informativo|UnsupportedAlertType|Nueva|Malware|
+|Se detectó malware en un archivo de archivo rar|Informativo|UnsupportedAlertType|Nuevo|Malware|
+|Se detectó malware en un archivo de archivo rar|Informativo|UnsupportedAlertType|Nuevo|Malware|
 |Se detectó malware en un archivo zip|Informativo|PendingResource|Nuevo|Malware|
-|Se detectó malware en un archivo zip|Informativo|PendingResource|Nuevo|Malware|
-|Se detectó malware en un archivo zip|Informativo|PendingResource|Nuevo|Malware|
-|Se detectó malware en un archivo zip|Informativo|PendingResource|Nuevo|Malware|
+|Se detectó malware en un archivo zip|Informativo|PendingResource|Nueva|Malware|
+|Se detectó malware en un archivo zip|Informativo|PendingResource|Nueva|Malware|
+|Se detectó malware en un archivo zip|Informativo|PendingResource|Nueva|Malware|
 |Wpakill hacktool se ha evitado|Bajo|Error|Nuevo|Malware|
 |GendowsBatch hacktool se ha evitado|Bajo|Error|Nuevo|Malware|
 |Keygen hacktool se ha evitado|Bajo|Error|Nuevo|Malware|
 |Se detectó malware en un archivo zip|Informativo|PendingResource|Nueva|Malware|
-|Se detectó malware en un archivo de archivo rar|Informativo|PendingResource|Nuevo|Malware|
 |Se detectó malware en un archivo de archivo rar|Informativo|PendingResource|Nueva|Malware|
-|Se detectó malware en un archivo zip|Informativo|PendingResource|Nuevo|Malware|
 |Se detectó malware en un archivo de archivo rar|Informativo|PendingResource|Nueva|Malware|
-|Se detectó malware en un archivo de archivo rar|Informativo|PendingResource|Nuevo|Malware|
+|Se detectó malware en un archivo zip|Informativo|PendingResource|Nueva|Malware|
+|Se detectó malware en un archivo de archivo rar|Informativo|PendingResource|Nueva|Malware|
+|Se detectó malware en un archivo de archivo rar|Informativo|PendingResource|Nueva|Malware|
 |Se detectó malware en un archivo de imagen de disco iso.|Informativo|PendingResource|Nueva|Malware|
-|Se detectó malware en un archivo de imagen de disco iso.|Informativo|PendingResource|Nuevo|Malware|
-|Se detectó malware en un archivo de datos de Outlook pst|Informativo|UnsupportedAlertType|Nuevo|Malware|
+|Se detectó malware en un archivo de imagen de disco iso.|Informativo|PendingResource|Nueva|Malware|
 |Se detectó malware en un archivo de datos de Outlook pst|Informativo|UnsupportedAlertType|Nueva|Malware|
-|MediaGet detectado|Mediano|Parcialmente invertido|Nuevo|Malware|
+|Se detectó malware en un archivo de datos de Outlook pst|Informativo|UnsupportedAlertType|Nuevo|Malware|
+|MediaGet detectado|Mediano|Parcialmente invertido|Nueva|Malware|
 |TrojanEmailFile|Mediano|CorrectamenteRemediated|Resuelto|Malware|
 |Se ha evitado el malware CustomEnterpriseBlock|Informativo|CorrectamenteRemediated|Resuelto|Malware|
 |Se bloqueó un malware CustomEnterpriseBlock activo|Bajo|CorrectamenteRemediated|Resuelto|Malware|

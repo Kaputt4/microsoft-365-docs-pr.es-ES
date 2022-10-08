@@ -15,17 +15,18 @@ ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection:
-- M365-security-compliance
+- m365-security
 - m365initiative-m365-defender
+- tier2
 ms.topic: conceptual
 ms.custom: seo-marvel-apr2020
 search.appverid: met150
-ms.openlocfilehash: f65baf6052ebdad6fb5ca91179018736fa47dbf4
-ms.sourcegitcommit: 9b133379196da2b3a4bb311b07ff274f43780f68
+ms.openlocfilehash: 1c47ebc606c4dc2e4fd0b7e5d41a5e7a5ea035d1
+ms.sourcegitcommit: 12af9e8e3a6eaa090fda9e98ccb831dff65863a4
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/14/2022
-ms.locfileid: "67742551"
+ms.lasthandoff: 09/27/2022
+ms.locfileid: "68078217"
 ---
 # <a name="choose-between-guided-and-advanced-modes-to-hunt-in-microsoft-365-defender"></a>Elija entre modos guiados y avanzados para cazar en Microsoft 365 Defender
 

@@ -15,19 +15,19 @@ ms.custom:
 - goldenconfig
 ms.collection:
 - M365-identity-device-management
-- M365-security-compliance
+- m365-security
 - m365solution-identitydevice
 - m365solution-scenario
 - zerotrust-solution
 - highpri
 ms.subservice: mdo
 search.appverid: met150
-ms.openlocfilehash: 522836485d9c7759fd1044f47b11ac577c03f2f8
-ms.sourcegitcommit: 9b133379196da2b3a4bb311b07ff274f43780f68
+ms.openlocfilehash: 02b5bfc9c4a1384996b4fbf305f6a212a6ac3e6c
+ms.sourcegitcommit: 12af9e8e3a6eaa090fda9e98ccb831dff65863a4
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/14/2022
-ms.locfileid: "67686579"
+ms.lasthandoff: 09/27/2022
+ms.locfileid: "68054982"
 ---
 # <a name="prerequisite-work-for-implementing-zero-trust-identity-and-device-access-policies"></a>Trabajo de requisitos previos para implementar directivas de acceso a dispositivos e identidades de Confianza cero
 
@@ -96,11 +96,11 @@ Se recomiendan los siguientes clientes cuando se ha aplicado una directiva de do
 
 |Plataforma|Word/Excel/PowerPoint|OneNote|Aplicación OneDrive|Aplicación SharePoint|[Cliente de sincronización de OneDrive](/onedrive/enable-conditional-access)|
 |---|---|---|---|---|---|
-|Windows 11 o Windows 10|Compatible|Compatible|N/D|N/D|Compatible|
-|Windows 8.1|Compatible|Compatible|N/D|N/D|Compatible|
-|Android|Compatible|Compatible|Compatible|Compatible|No aplicable|
-|iOS|Compatible|Compatible|Compatible|Compatible|No aplicable|
-|macOS|Compatible|Compatible|N/D|N/D|No compatible|
+|Windows 11 o Windows 10|Compatible|Compatible.|No aplicable|N/D|Compatible|
+|Windows 8.1|Compatible.|Compatible.|No aplicable|N/D|Compatible|
+|Android|Compatible.|Compatible|Compatible|Compatible.|No aplicable|
+|iOS|Compatible.|Compatible|Compatible|Compatible.|No aplicable|
+|macOS|Compatible|Compatible.|No aplicable|No aplicable|No compatible|
 |Linux|No compatible|No compatible|No compatible|No compatible|No compatible|
 
 ### <a name="microsoft-365-client-support"></a>Soporte técnico para el cliente de Microsoft 365

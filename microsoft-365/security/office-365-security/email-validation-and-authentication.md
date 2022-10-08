@@ -12,19 +12,19 @@ search.appverid:
 - MET150
 ms.assetid: ''
 ms.collection:
-- M365-security-compliance
+- m365-security
 - Strat_O365_IP
 ms.custom: TopSMBIssues
 ms.localizationpriority: high
 description: Los administradores pueden obtener información sobre cómo EOP usa la autenticación de correo electrónico (SPF, DKIM y DMARC) para ayudar a evitar la suplantación de identidad, el phishing y el correo no deseado.
 ms.subservice: mdo
 ms.service: microsoft-365-security
-ms.openlocfilehash: 95d448337034eb9e7a20cbad4247a30367abcd5c
-ms.sourcegitcommit: 2b89bcff547e00be3d38dc8d1e6cbcf8f41eba42
+ms.openlocfilehash: 5cc522d887d7a7a82e5781f1d1c52f2eeb0bcfa7
+ms.sourcegitcommit: 12af9e8e3a6eaa090fda9e98ccb831dff65863a4
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/03/2022
-ms.locfileid: "67597942"
+ms.lasthandoff: 09/27/2022
+ms.locfileid: "68055158"
 ---
 # <a name="email-authentication-in-eop"></a>Autenticación de correo electrónico en EOP
 
@@ -55,7 +55,7 @@ En marzo de 2018, sólo un 9 % de los dominios de las empresas en la Fortune 5
 
 ![Directivas DMARC de las empresas en Fortune 500.](../../media/84e77d34-2073-4a8e-9f39-f109b32d06df.jpg)
 
-La proporción de pequeñas y medianas empresas que publican directivas de autenticación de correo electrónico seguras es menor y es incluso más pequeña para los dominios de correo electrónico que están fuera de Norteamérica y Europa occidental.
+The proportion of small-to-medium sized companies that publish strong email authentication policies is smaller. And the number is even smaller for email domains outside North America and western Europe.
 
 La falta de directivas de autenticación de correo electrónico seguras es un gran problema. Aunque es posible que las organizaciones no sepan cómo funciona la autenticación de correo electrónico, los atacantes si lo saben y se aprovechan de ello. Debido a preocupaciones con respecto al phishing y a una adopción de directivas de autenticación de correo electrónico seguras tan limitada, Microsoft usa *autenticación de correo electrónico implícita* para comprobar el correo electrónico entrante.
 
@@ -86,7 +86,7 @@ Depender solo de los registros de autenticación de correo electrónico para det
 
 Las autenticaciones compuestas pueden superar estas limitaciones pasando mensajes que, de otra forma, no superarían las comprobaciones de autenticación de correo electrónico.
 
-Para simplificar, los ejemplos siguientes se centran en los resultados de la autenticación de correo electrónico. Otros factores de inteligencia de back-end podrían identificar mensajes que pasan la autenticación de correo electrónico como suplantados o mensajes que la suspenden como legítimos.
+For simplicity, the following examples concentrate on email authentication results. Other back-end intelligence factors could identify messages that pass email authentication as spoofed, or messages that fail email authentication as legitimate.
 
 Por ejemplo, el dominio fabrikam.com no tiene registros SPF, DKIM o DMARC. Los mensajes de los remitentes del dominio fabrikam.com pueden producir un error en la autenticación compuesta (tenga en cuenta que el valor  y razón de `compauth`):
 
@@ -99,7 +99,7 @@ From: chris@fabrikam.com
 To: michelle@contoso.com
 ```
 
-Si fabrikam.com configura un SPF sin un registro DKIM, este mensaje no produciría un error de autenticación compuesta. El dominio de la dirección en De se alinea con el dominio que no ha producido un error de SPF:
+If fabrikam.com configures an SPF without a DKIM record, the message can pass composite authentication. The domain that passed SPF checks is aligned with the domain in the From address:
 
 ```text
 Authentication-Results: spf=pass (sender IP is 10.2.3.4)
@@ -110,7 +110,7 @@ From: chris@fabrikam.com
 To: michelle@contoso.com
 ```
 
-Si fabrikam.com configura un registro DKIM sin un registro DKIM, este mensaje no produciría un error de autenticación compuesta. El dominio de la dirección en De se alinea con el dominio de la firma de DKIM:
+If fabrikam.com configures a DKIM record without an SPF record, the message can pass composite authentication. The domain in the DKIM signature is aligned with the domain in the From address:
 
 ```text
 Authentication-Results: spf=none (sender IP is 10.2.3.4)
@@ -182,7 +182,7 @@ Por el problema del correo no deseado y la suplantación de identidad, Microsoft
 
 - Aunque no tuviesen necesidad de publicar registros de autenticación de correo electrónico en el pasado, deben hacerlo si envían correo electrónico a Microsoft.
 
-- Configure SPF para publicar direcciones IP de envío y configurar DKIM (si disponible) para firmar digitalmente los mensajes. También deberían considerar la configuración de los registros DMARC.
+- Set up SPF to publish the domain's sending IP addresses, and set up DKIM (if available) to digitally sign messages. They should also consider setting up DMARC records.
 
 - Si usan remitentes en masa para enviar mensajes de correo electrónico en su nombre, compruebe que el dominio de la dirección De (si les pertenece) se alinee con el dominio que supera el SPF o el DMARC.
 

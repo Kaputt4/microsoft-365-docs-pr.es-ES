@@ -1,22 +1,24 @@
 ---
 title: Importar un conjunto de términos con un formato basado en SKOS
-description: Obtenga información sobre cómo importar un conjunto de términos con un formato basado en SKOS
+description: Obtenga información sobre cómo importar un conjunto de términos mediante un formato basado en SKOS.
 ms.author: mikeplum
 author: MikePlumleyMSFT
 manager: serdars
 audience: admin
 ms.service: microsoft-365-enterprise
 ms.topic: article
-ms.collection: enabler-strategic
+ms.collection:
+- enabler-strategic
+- m365initiative-syntex
 ms.custom: admindeeplinkSPO
 search.appverid: ''
 ms.localizationpriority: high
-ms.openlocfilehash: 4e9d091eaf92940b2bdfce95712a9d5e4947cf92
-ms.sourcegitcommit: d3ef9391f621e8f4ca70661184b3bb82c6cbda94
+ms.openlocfilehash: 411c4e3303d6bb20370d540de998f9e6ea95105d
+ms.sourcegitcommit: cbb9a89499d42f4a029e18780bee408946e1671d
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/02/2022
-ms.locfileid: "67580934"
+ms.lasthandoff: 09/27/2022
+ms.locfileid: "68026038"
 ---
 # <a name="import-a-term-set-using-a-skos-based-format"></a>Importar un conjunto de términos con un formato basado en SKOS
 
@@ -38,7 +40,7 @@ Le recomendamos mantener sus archivos de importación con menos de 20 000 térmi
 
 7. Haga clic en **Examinar**, desplácese al archivo de importación y agréguelo.
 
-8. Haga clic en **Importar**. No cierre el panel hasta que se complete la importación.
+8. Click **Import**. Do not close the panel until the import completes.
 
 Si la importación del archivo se ha realizado correctamente, se mostrará un mensaje que así lo indicará, se actualizará el almacén de términos y podrá navegar a los conjuntos de términos recién creados.
 

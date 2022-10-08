@@ -7,17 +7,19 @@ ms.author: cmcatee
 manager: scotv
 audience: Admin
 ms.topic: reference
-ms.service: o365-administration
-ms.collection: Adm_Support
+ms.service: microsoft-365-business
+ms.collection:
+- scotvorg
+- Adm_Support
 ms.localizationpriority: medium
 description: Obtenga información acerca de cómo ponerse en contacto con el soporte técnico de su país o región.
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: e02b2126c44d9bbc072015e337bd2e6decc6bbed
-ms.sourcegitcommit: 0ee2dabe402d44fecb6856af98a2ef7720d25189
+ms.openlocfilehash: 6607c848bccb76f9326e9a4ec58ccf79d5cecf23
+ms.sourcegitcommit: 0b7070ec119e00e0dafe030bbfbef0ae5c9afa19
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/09/2021
-ms.locfileid: "61374141"
+ms.lasthandoff: 09/29/2022
+ms.locfileid: "68163894"
 ---
 # <a name="contact-support-for-taiwan"></a>Póngase en contacto con el soporte técnico de Taiwán
 
@@ -29,16 +31,16 @@ ms.locfileid: "61374141"
 ## <a name="hours"></a>Horas
 ### <a name="billing-support"></a>Soporte de facturación:
 
-Chino (mandarín): Mon-Fri 9 AM-6 PM
+Chino (mandarín): Mon-Fri de 9:00 a.m. a 6 p. m.
 
-Inglés: Mon-Fri 9 AM-6 PM Local
+Inglés: Mon-Fri de 9:00 a.m. a 6 p. m. local
 
 ### <a name="technical-support"></a>Soporte técnico:
 
-Chino (mandarín): Mon-Fri 9 AM-6 PM
+Chino (mandarín): Mon-Fri de 9:00 a.m. a 6 p. m.
 
 Inglés: 24 horas al día, 7 días a la semana
 
-Número Teléfono alternativa: 02 2656 7301
+Número de teléfono alternativo: 02 2656 7301
 
 Se aplican tarifas de llamada local

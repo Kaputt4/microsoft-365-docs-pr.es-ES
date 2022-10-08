@@ -13,16 +13,16 @@ search.appverid:
 - MET150
 - MOE150
 ms.collection:
-- M365-security-compliance
+- m365-security
 description: Más información sobre la configuración segura de forma predeterminada en Exchange Online Protection (EOP)
 ms.subservice: mdo
 ms.service: microsoft-365-security
-ms.openlocfilehash: b70e3639df2cfa1b2099cc5e61efe43b216b4afe
-ms.sourcegitcommit: ecc04b5b8f84b34255a2d5e90b5ab596af0d16c7
+ms.openlocfilehash: b12adb910e031a6cbdebfe80e38bafaafa9e372f
+ms.sourcegitcommit: 12af9e8e3a6eaa090fda9e98ccb831dff65863a4
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/01/2022
-ms.locfileid: "67497321"
+ms.lasthandoff: 09/27/2022
+ms.locfileid: "68048668"
 ---
 # <a name="secure-by-default-in-office-365"></a>Proteger de forma predeterminada en Office 365
 
@@ -48,7 +48,7 @@ Microsoft 365 organizaciones con buzones en Exchange Online están protegidas po
 
 Para obtener más información sobre EOP, consulte [Información general de Exchange Online Protection](exchange-online-protection-overview.md)
 
-Debido a que Microsoft quiere mantener seguros a nuestros clientes de forma predeterminada, algunas anulaciones de inquilinos no se aplican para malware o phishing de alta confianza. Estas anulaciones incluyen:
+Because Microsoft wants to keep our customers secure by default, some tenants overrides are not applied for malware or high confidence phishing. These overrides include:
 
 - Listas de remitentes permitidos o listas de dominios permitidos (directivas contra correo no deseado)
 - Remitentes seguros de Outlook

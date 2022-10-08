@@ -18,17 +18,18 @@ ms.collection:
 - m365solution-healthcare
 - m365solution-scenario
 - m365-frontline
+- highpri
 ms.reviewer: ''
 description: Recursos personalizables e infografías que puede agregar a su sitio web para ayudar a los clientes a comprender cómo usar las citas virtuales con su organización.
 appliesto:
 - Microsoft Teams
 - Microsoft 365 for frontline workers
-ms.openlocfilehash: e0ac855943bb0cd9ddb7279252b1df6ae9440ffc
-ms.sourcegitcommit: cd9df1a681265905eef99c039f7036b2fa6e8b6d
-ms.translationtype: HT
+ms.openlocfilehash: a0844c3602af089660d4bbf1be8a5e475f8fe208
+ms.sourcegitcommit: 597aad78b6952b4a5642a84dddf3fe3c8cc8eeff
+ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/07/2022
-ms.locfileid: "67277057"
+ms.lasthandoff: 09/23/2022
+ms.locfileid: "67999889"
 ---
 # <a name="help-your-clients-and-customers-use-virtual-appointments"></a>Ayude a sus clientes a usar citas virtuales
 

@@ -17,17 +17,18 @@ manager: dansimp
 ms.custom: asr
 ms.topic: article
 ms.collection:
-- M365-security-compliance
+- m365-security
 - m365solution-asr-rules
 - highpri
+- tier1
 ms.date: 09/19/2022
 search.appverid: met150
-ms.openlocfilehash: dbfdf76791309f637e3380d748ff4c6533d1daa8
-ms.sourcegitcommit: 078149c9645ce220911ccd6ce54f984a4c92ce53
+ms.openlocfilehash: 347392494d920da486f8928380310b3b75abbbd1
+ms.sourcegitcommit: b9282493c371d59c2e583b9803825096499b5e2c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/20/2022
-ms.locfileid: "67811821"
+ms.lasthandoff: 09/29/2022
+ms.locfileid: "68146577"
 ---
 # <a name="enable-attack-surface-reduction-asr-rules"></a>Habilitar reglas de la reducción de la superficie expuesta a ataques (ASR)
 
@@ -101,7 +102,7 @@ Consulte el tema [de referencia de las reglas de reducción de superficie expues
 
 2. En el **Editor de administración de directiva de grupo**, vaya a **Configuración del equipo** y haga clic en **Plantillas administrativas**.
 
-3. Expanda el árbol a **componentes** \> de **Windows Antivirus** \> de Microsoft Defender **Reducción de la superficie de ataque** de **Protección contra vulnerabilidades** \> de seguridad de Microsoft Defender.
+3. Expanda el árbol a **componentes** \> de Windows **Microsoft Defender Antivirus** \> Microsoft Defender **reducción de la superficie de ataque** de **Protección contra vulnerabilidades** \> de seguridad.
 
 4. Haga doble clic en la opción **Excluir archivos y rutas de acceso de Reglas de reducción de superficie expuesta a ataques** y establezca la opción **en Habilitado**. Seleccione **Mostrar** y escriba cada archivo o carpeta en la columna **Nombre de valor** . Escriba **0** en la columna **Valor** de cada elemento.
 

@@ -13,19 +13,19 @@ search.appverid:
 - MET150
 ms.assetid: 56fee1c7-dc37-470e-9b09-33fff6d94617
 ms.collection:
-- M365-security-compliance
+- m365-security
 - m365initiative-defender-office365
 ms.custom:
 - seo-marvel-apr2020
 description: Aprenda a integrar Azure PIM para conceder acceso Just-In-Time limitado a los usuarios para que realicen tareas con privilegios elevados en Microsoft Defender para Office 365 y reducir así el riesgo para los datos.
 ms.subservice: mdo
 ms.service: microsoft-365-security
-ms.openlocfilehash: 6a198c25fd329c0bce79e85af8831a673b30cd1a
-ms.sourcegitcommit: 2b89bcff547e00be3d38dc8d1e6cbcf8f41eba42
+ms.openlocfilehash: ed82f1bcf609605acf72cb33387b4439dc16e5c3
+ms.sourcegitcommit: 12af9e8e3a6eaa090fda9e98ccb831dff65863a4
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/03/2022
-ms.locfileid: "67597678"
+ms.lasthandoff: 09/27/2022
+ms.locfileid: "68054674"
 ---
 <!--A-->
 # <a name="privileged-identity-management-pim-and-why-to-use-it-with-microsoft-defender-for-office-365"></a>Privileged Identity Management (PIM) y por qué usarlo con Microsoft Defender para Office 365
@@ -37,14 +37,14 @@ Privileged Identity Management (PIM) es una característica de Azure que, una ve
 
 ## <a name="steps-to-use-pim-to-grant-just-in-time-access-to-defender-for-office-365-related-tasks"></a>Pasos para usar PIM para conceder acceso just-In-Time a las tareas relacionadas con Defender para Office 365
 
-Al configurar PIM para que funcione con Defender para Office 365, los administradores crean un proceso para que un usuario solicite acceso para realizar las acciones que necesita. El usuario debe *justificar* la necesidad de la elevación de sus privilegios.
+By setting up PIM to work with Defender for Office 365, admins create a process for a user to request access to take the actions they need. The user must *justify* the need for the elevation of their privileges.
 
 En este ejemplo, configuraremos a “Alex”, un miembro de nuestro equipo de seguridad que no tendrá acceso permanente en Office 365, pero que puede elevarse a un rol necesario para las operaciones cotidianas normales (como la [búsqueda de amenazas](threat-hunting-in-threat-explorer.md)) y, a continuación, a un mayor nivel de privilegios cuando se requieran operaciones menos frecuentes pero confidenciales, como la [corrección de correo electrónico malintencionado](remediate-malicious-email-delivered-office-365.md).
 
 > [!NOTE]
 > Esto le llevará a través de los pasos necesarios para configurar PIM para un analista de seguridad que requiere la capacidad de purgar correos electrónicos con el Explorador de amenazas en Microsoft Defender para Office 365, pero se pueden usar los mismos pasos para otros roles RBAC dentro del portal de seguridad y cumplimiento. Por ejemplo, este proceso podría usarse para un trabajador de la información que necesita acceso diario en eDiscovery para realizar búsquedas y casos de trabajo, pero solo en ocasiones necesita el derecho elevado para exportar datos desde el inquilino.
 
-***Paso 1***. En la consola de Azure PIM de la suscripción, agregue al usuario (Alex) al rol lector de seguridad de Azure y configure las opciones de seguridad relacionadas con la activación.
+***Step 1***. In the Azure PIM console for your subscription, add the user (Alex) to the Azure Security Reader role and configure the security settings related to activation.
 
 1. Inicie sesión en el [Centro de administración de Azure AD](https://aad.portal.azure.com/) y seleccione **Azure Active Directory** > **Roles y administradores**.
 2. Seleccione **Lector de seguridad** en la lista de roles y, a continuación,**Editar**  > **Configuración**
@@ -60,7 +60,7 @@ El nombre de su usuario (aquí "Alex") aparecerá en Asignaciones Aptas en la p�
 
 :::image type="content" source="../../media/pim-mdo-role-setting-details-for-security-reader-show-8-hr-duration.png" alt-text="Detalles de la configuración de roles: página de Lector de seguridad" lightbox="../../media/pim-mdo-role-setting-details-for-security-reader-show-8-hr-duration.png":::
 
-***Paso 2***. Cree el segundo grupo de permisos necesario (con privilegios elevados) para tareas adicionales y asigne elegibilidad.
+***Step 2***. Create the required second (elevated) permission group for additional tasks and assign eligibility.
 
 Con los [Grupos de acceso con privilegios](/azure/active-directory/privileged-identity-management/groups-features), ya se pueden crear grupos personalizados y combinar permisos o aumentar la granularidad cuando sea necesario para satisfacer las prácticas y necesidades de la organización.
 

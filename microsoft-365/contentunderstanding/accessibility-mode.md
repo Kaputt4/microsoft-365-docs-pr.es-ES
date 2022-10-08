@@ -1,22 +1,26 @@
 ---
-title: Modo de accesibilidad en SharePoint Syntex
+title: Modo de accesibilidad en Microsoft SharePoint Syntex
 ms.author: chucked
 author: chuckedmonson
 manager: pamgreen
+ms.reviewer: ssquires
 audience: admin
 ms.topic: article
-ms.prod: microsoft-365-enterprise
+ms.service: microsoft-365-enterprise
 search.appverid: ''
+ms.collection:
+- enabler-strategic
+- m365initiative-syntex
 ms.localizationpriority: medium
 description: Aprenda a usar el modo de características de accesibilidad al entrenar y trabajar con modelos en SharePoint Syntex.
-ms.openlocfilehash: 567abb862af27457c1eb9395e32bf68d98446887
-ms.sourcegitcommit: 23e186b46b27a6a4863f507a52a11105afae9726
+ms.openlocfilehash: 1355e48b42ab74c9d03f5b2944f3a7d146b4dd18
+ms.sourcegitcommit: cbb9a89499d42f4a029e18780bee408946e1671d
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/15/2022
-ms.locfileid: "64882338"
+ms.lasthandoff: 09/27/2022
+ms.locfileid: "68026455"
 ---
-# <a name="accessibility-mode-in-sharepoint-syntex"></a>Modo de accesibilidad en SharePoint Syntex
+# <a name="accessibility-mode-in-microsoft-sharepoint-syntex"></a>Modo de accesibilidad en Microsoft SharePoint Syntex
 
 En [SharePoint Syntex](index.md), los usuarios pueden activar el modo de accesibilidad en todas las fases del entrenamiento del modelo (etiqueta, entrenamiento, prueba) al trabajar con documentos de ejemplo. El uso del modo de accesibilidad puede ayudar a los usuarios con poca vista a tener una accesibilidad de teclado más sencilla a medida que navegan y etiquetan elementos en el visor de documentos.
 
@@ -59,7 +63,7 @@ A medida que navegue por los documentos de ejemplo y los valores de cadena de et
 
 Después de etiquetar una cadena o quitar una etiqueta en el visor, el audio del narrador le advertirá de que guarde los cambios antes de salir.
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 [Crear un extractor](create-an-extractor.md)
 

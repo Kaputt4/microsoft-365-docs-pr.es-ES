@@ -6,7 +6,7 @@ author: MikePlumleyMSFT
 manager: serdars
 audience: ITPro
 ms.topic: conceptual
-ms.service: O365-seccomp
+ms.service: o365-solutions
 ms.localizationpriority: high
 search.appverid:
 - MET150
@@ -23,18 +23,18 @@ ms.custom:
 ms.assetid: 1d51bd87-17bf-457c-b698-61821de3afa0
 recommendations: false
 description: Obtenga información acerca de cómo configurar Teams para mejorar la seguridad del uso compartido de sus archivos al usar tres niveles de protección y equilibrar la seguridad con la simplicidad en la colaboración.
-ms.openlocfilehash: bea49c19489a14e86af169454d7c84283eef41d4
-ms.sourcegitcommit: 0af064e8b6778060f1bd365378d69b16fc9949b5
+ms.openlocfilehash: 46c078a0ccb44b1c13877065886862dcfa9a67bf
+ms.sourcegitcommit: fce27da5140691b013a6f7c0ea9c88b4ea4b7c10
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/15/2022
-ms.locfileid: "67730427"
+ms.lasthandoff: 09/23/2022
+ms.locfileid: "67987200"
 ---
 # <a name="configure-teams-with-three-tiers-of-protection"></a>Configurar Teams con tres niveles de protección
 
 En los artículo de esta serie se ofrecen recomendaciones para configurar equipos en Microsoft Teams y sus sitios de SharePoint asociados, de forma que se equilibre la seguridad con la facilidad de colaboración.
 
-En este artículo se definen cuatro configuraciones diferentes, comenzando por un equipo público con las directivas de uso compartido más abiertas. Cada configuración adicional representa un paso significativo en la protección, mientras que la capacidad para obtener acceso y colaborar en archivos almacenados en equipos se reduce al conjunto relevante de miembros del equipo. 
+This article defines four different configurations, starting with a public team with the most open sharing policies. Each additional configuration represents a meaningful step up in protection, while the ability to access and collaborate on files stored within teams is reduced to the relevant set of team members. 
 
 Las configuraciones que se explican en este artículo concuerdan con las recomendaciones de Microsoft para los tres niveles de protección de datos, identidades y dispositivos:
 
@@ -89,7 +89,7 @@ Los permisos resultantes permiten lo siguiente:
 
 De forma predeterminada, los propietarios y miembros del equipo pueden compartir el sitio con personas ajenas al equipo sin tener que agregarlos al equipo. Se recomienda no hacerlo ya que complica la administración de usuarios y puede dar lugar a que personas que no son miembros del equipo tengan acceso a los archivos del equipo sin que los propietarios del equipo se den cuenta. Para ayudar a evitar esto, comenzando por el nivel de línea base de protección, se recomienda permitir que solo los propietarios puedan compartir el sitio directamente.
 
-Aunque los equipos no tienen una opción de permisos de solo lectura, el sitio de SharePoint sí. Si tiene partes interesadas de grupos de partners que necesitan poder ver los archivos del equipo pero no modificarlos, considere la posibilidad de agregarlos directamente al sitio de SharePoint con permisos de lectura.
+While teams do not have a read-only permission option, the SharePoint site does. If you have stakeholders of partner groups who need to be able to view team files but not edit them, consider adding them directly to the SharePoint site with Read permissions.
 
 ## <a name="sharing-files-and-folders"></a>Compartir archivos y carpetas
 
@@ -124,7 +124,7 @@ Vea las siguientes referencias para crear un entorno de uso compartido de invita
 
 Para los niveles confidenciales y altamente confidenciales, restringimos el acceso al contenido de SharePoint con etiquetas de confidencialidad. El acceso condicional de Azure AD ofrece muchas opciones para determinar cómo los usuarios acceden a Microsoft 365, incluyendo limitaciones basadas en la ubicación, el riesgo, el cumplimiento de dispositivos y otros factores. Se recomienda leer [¿Qué es el acceso condicional?](/azure/active-directory/conditional-access/overview) y considerar otras directivas que podrían ser adecuadas para su organización.
 
-No olvide que los invitados a menudo no tienen dispositivos administrados por su organización. Si permite invitados en cualquiera de los niveles, tenga en cuenta qué tipos de dispositivos usarán para acceder a equipos y sitios, y establezca las directivas de dispositivos no administrados en consecuencia.
+Note that guests often don't have devices that are managed by your organization. If you allow guests in any of the tiers, consider what kinds of devices they'll be using to access teams and sites and set your unmanaged device policies accordingly.
 
 ### <a name="control-device-access-across-microsoft-365"></a>Controlar el acceso a dispositivos en Microsoft 365
 
@@ -132,7 +132,7 @@ La configuración de dispositivos no administrados en etiquetas de confidenciali
 
 ![Recorte de pantalla de la aplicación en la nube de Office 365 en una directiva de acceso condicional de Azure Active Directory.](/sharepoint/sharepointonline/media/azure-ca-office365-policy.png)
 
-El uso de una directiva que afecta a todos los servicios de Microsoft 365 puede dar lugar a una mejor seguridad y una mejor experiencia para los usuarios. Por ejemplo, cuando bloquea el acceso a dispositivos no administrados solo en SharePoint, los usuarios pueden acceder al chat en un equipo con un dispositivo no administrado, pero perderán el acceso cuando intenten acceder a la pestaña **Archivos**. El uso de la aplicación en la nube de Office 365 ayuda a evitar problemas con las [dependencias de servicio](/azure/active-directory/conditional-access/service-dependencies).
+Using a policy that affects all Microsoft 365 services can lead to better security and a better experience for your users. For example, when you block access to unmanaged devices in SharePoint only, users can access the chat in a team with an unmanaged device, but will lose access when they try to access the **Files** tab. Using the Office 365 cloud app helps avoid issues with [service dependencies](/azure/active-directory/conditional-access/service-dependencies).
 
 ## <a name="next-step"></a>Paso siguiente
 

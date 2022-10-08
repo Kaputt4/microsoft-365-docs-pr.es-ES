@@ -13,12 +13,12 @@ ms.collection:
 - m365initiative-syntex
 ms.localizationpriority: medium
 description: Obtener información sobre cómo crear un extractor en Microsoft SharePoint Syntex.
-ms.openlocfilehash: 590ea0154a057051202e19b0bf6ff67c3b540d08
-ms.sourcegitcommit: d3ef9391f621e8f4ca70661184b3bb82c6cbda94
+ms.openlocfilehash: e80100c7a1f5614c3057188a630ae81182e87f7c
+ms.sourcegitcommit: cbb9a89499d42f4a029e18780bee408946e1671d
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/02/2022
-ms.locfileid: "67583745"
+ms.lasthandoff: 09/27/2022
+ms.locfileid: "68026543"
 ---
 # <a name="create-an-extractor-in-microsoft-sharepoint-syntex"></a>Crear un extractor en Microsoft SharePoint Syntex
 
@@ -57,7 +57,7 @@ Es necesario crear un extractor para cada entidad del documento que se desea ext
 
 El siguiente paso es etiquetar la entidad que desea extraer en sus archivos de entrenamiento de ejemplo.
 
-Crear el extractor abre la página del extractor. Aquí, podrá ver una lista de los archivos de muestra; el primer archivo de la lista se mostrará en el visor.
+Creating the extractor opens the extractor page. Here you see a list of your sample files, with the first file on the list displayed in the viewer.
 
 1. En el visor, seleccione los datos que desea extraer de los archivos. Por ejemplo, si se quiere extraer la *Fecha de inicio del servicio*, se resalta el valor de la fecha en el primer archivo (*lunes 14 de octubre de 2019*). y, a continuación, seleccione **Guardar**. Debería ver la visualización del valor del archivo en la lista de ejemplos etiquetados, bajo la columna **Etiqueta**.
 2. Seleccione **Siguiente archivo** para guardar automáticamente y abra el siguiente archivo en la lista en el visor. O seleccione **Guardar** y luego seleccione otro archivo de la lista de **Ejemplos etiquetados**.

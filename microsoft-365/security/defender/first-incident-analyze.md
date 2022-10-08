@@ -16,19 +16,20 @@ ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection:
-- M365-security-compliance
+- m365-security
 - m365solution-firstincident
 - highpri
+- tier1
 ms.topic: conceptual
 search.appverid:
 - MOE150
 - MET150
-ms.openlocfilehash: de77f14d998c0be2f174c74e4d95cc265ee94bfb
-ms.sourcegitcommit: c29af68260ba8676083674b3c70209bff2c2e362
+ms.openlocfilehash: b2e10cd5e3d615495a688484dd8351cecb1564f4
+ms.sourcegitcommit: 12af9e8e3a6eaa090fda9e98ccb831dff65863a4
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/16/2022
-ms.locfileid: "67740519"
+ms.lasthandoff: 09/27/2022
+ms.locfileid: "68080049"
 ---
 # <a name="step-1-triage-and-analyze-your-first-incident"></a>Paso 1. Evaluación y análisis del primer incidente
 
@@ -45,7 +46,7 @@ Una vez detectado un incidente de seguridad, Microsoft 365 Defender presenta det
 
 Microsoft 365 Defender recibe alertas y eventos de varias plataformas de seguridad de Microsoft como orígenes de detección para crear una imagen holística y un contexto de actividad malintencionada. Los posibles orígenes de detección son:
 
-- [Microsoft Defender para punto de conexión](../defender-endpoint/microsoft-defender-endpoint.md) es una solución de detección y respuesta de puntos de conexión (EDR) que usa antivirus de Microsoft Defender y protección contra amenazas avanzada habilitada para la nube mediante Microsoft Security Graph. Defender for Endpoint es una plataforma unificada para la protección preventiva, la detección posterior a la vulneración, la investigación automatizada y la respuesta. Protege los puntos de conexión frente a ciberamenazas, detecta ataques avanzados e infracciones de datos, automatiza incidentes de seguridad y mejora la posición de seguridad.
+- [Microsoft Defender para punto de conexión](../defender-endpoint/microsoft-defender-endpoint.md) es una solución de detección y respuesta de puntos de conexión (EDR) que usa Microsoft Defender antivirus y protección contra amenazas avanzada habilitada para la nube mediante Microsoft Security Graph. Defender for Endpoint es una plataforma unificada para la protección preventiva, la detección posterior a la vulneración, la investigación automatizada y la respuesta. Protege los puntos de conexión frente a ciberamenazas, detecta ataques avanzados e infracciones de datos, automatiza incidentes de seguridad y mejora la posición de seguridad.
 - [Microsoft Defender for Identity](/defender-for-identity/what-is) es una solución de seguridad basada en la nube que usa las señales de Active Directory local Domain Services (AD DS) para identificar, detectar e investigar amenazas avanzadas, identidades en peligro y acciones internas malintencionadas dirigidas a su organización.
 - [Microsoft Defender for Cloud Apps](/cloud-app-security/) actúa como portero para brokerar el acceso en tiempo real entre los usuarios empresariales y los recursos en la nube que usan, dondequiera que se encuentren los usuarios e independientemente del dispositivo que usen.
 - [Microsoft Defender para Office 365](/microsoft-365/office-365-security/overview) protege a su organización frente a amenazas malintencionadas en mensajes de correo electrónico, vínculos (direcciones URL) y herramientas de colaboración.

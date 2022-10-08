@@ -13,18 +13,18 @@ search.appverid:
 - MET150
 ms.assetid: 065cc2cf-2f3a-47fd-a434-2a20b8f51d0c
 ms.collection:
-- M365-security-compliance
+- m365-security
 ms.custom:
 - seo-marvel-apr2020
 description: Los administradores pueden aprender a ver y administrar mensajes en cuarentena para todos los usuarios de Exchange Online Protection (EOP). Los administradores de organizaciones con Microsoft Defender para Office 365 también pueden administrar archivos en cuarentena en SharePoint Online, OneDrive para la Empresa y Microsoft Teams.
 ms.subservice: mdo
 ms.service: microsoft-365-security
-ms.openlocfilehash: fd1d9d60140ebce0f718a2f23e192ada37b2f3bd
-ms.sourcegitcommit: 2dedd0f594b817779e034afa6c4418def2382a22
+ms.openlocfilehash: 8147dfbc5e93f6297a48c5080bf64c5744ec1837
+ms.sourcegitcommit: 12af9e8e3a6eaa090fda9e98ccb831dff65863a4
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/18/2022
-ms.locfileid: "67797986"
+ms.lasthandoff: 09/27/2022
+ms.locfileid: "68082725"
 ---
 # <a name="manage-quarantined-messages-and-files-as-an-admin-in-eop"></a>Administración de mensajes en cuarentena y archivos como administrador en EOP
 
@@ -62,7 +62,7 @@ Vea este breve vídeo para aprender a administrar los mensajes en cuarentena com
 
   **Notas**:
 
-  - La adición de usuarios al rol correspondiente de Azure Active Directory en el Centro de administración de Microsoft 365 proporciona a los usuarios los permisos necesarios _y_ los permisos para otras características de Microsoft 365. Para obtener más información, consulte [Acerca de los roles de administrador](../../admin/add-users/about-admin-roles.md).
+  - Adding users to the corresponding Azure Active Directory role in the Microsoft 365 admin center gives users the required permissions _and_ permissions for other features in Microsoft 365. For more information, see [About admin roles](../../admin/add-users/about-admin-roles.md).
   - El grupo de roles **Administración de organización de solo lectura** en [Exchange Online](/Exchange/permissions-exo/permissions-exo#role-groups) también proporciona acceso de solo lectura a la característica.
   - <sup>\*</sup>Los miembros del grupo de roles **Administrador de cuarentena** de Email & roles de **colaboración** en el [portal de Microsoft 365 Defender](permissions-microsoft-365-security-center.md#email--collaboration-roles-in-the-microsoft-365-defender-portal) también deben ser miembros del grupo de roles Administración de **higiene** de [Exchange Online](/Exchange/permissions-exo/permissions-exo#role-groups) para realizar procedimientos de cuarentena en Exchange Online PowerShell .
 
@@ -208,7 +208,7 @@ Las siguientes acciones están disponibles después de hacer clic en ![el icono 
   - **Copiar el encabezado de mensaje**: Haga clic en este vínculo para copiar el encabezado de mensaje (todos los campos de encabezado) en el portapapeles.
   - **Analizador de encabezados de mensajes de Microsoft**: Para analizar los campos de encabezado y los valores en profundidad, haga clic en este vínculo para ir al Analizador de encabezados de mensajes. Pegue el encabezado del mensaje en la sección **Inserte el encabezado del mensaje que desea analizar** (CTRL+V o haga clic con el botón derecho del ratón y elija **Pegar**) y, a continuación, haga clic en **Analizar encabezados**.
 
-- ![Icono de vista previa de mensaje](../../media/m365-cc-sc-preview-message-icon.png) **Vista previa de mensaje**: en el control flotante que aparece, elija una de las siguientes pestañas:
+- ![Icono Vista previa de mensaje.](../../media/m365-cc-sc-preview-message-icon.png) **Mensaje de vista previa**: en el control flotante que aparece, elija una de las pestañas siguientes:
   - **Código fuente**: Muestra la versión HTML del cuerpo del mensaje con todos los vínculos desactivados.
   - **Texto sin formato**: Muestra el cuerpo del mensaje como texto sin formato.
 

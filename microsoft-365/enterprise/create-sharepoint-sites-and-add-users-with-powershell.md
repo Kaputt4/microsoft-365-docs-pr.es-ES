@@ -5,11 +5,13 @@ author: kelleyvice-msft
 manager: scotv
 audience: Admin
 ms.topic: landing-page
-ms.service: o365-administration
+ms.service: microsoft-365-enterprise
 ms.localizationpriority: medium
 search.appverid:
 - MET150
-ms.collection: Ent_O365
+ms.collection:
+- scotvorg
+- Ent_O365
 f1.keywords:
 - CSH
 ms.custom:
@@ -18,27 +20,27 @@ ms.custom:
 - SPO_Content
 - seo-marvel-apr2020
 ms.assetid: d0d3877a-831f-4744-96b0-d8167f06cca2
-description: 'Resumen: use PowerShell para crear nuevos sitios SharePoint en línea y, a continuación, agregar usuarios y grupos a esos sitios.'
-ms.openlocfilehash: 9d99f98825d88e2d2e63f106a7b5704c773c8be1
-ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
+description: 'Resumen: use PowerShell para crear nuevos sitios de SharePoint Online y, a continuación, agregar usuarios y grupos a esos sitios.'
+ms.openlocfilehash: f640b7abcba9f05460e77fb11b8578c15b0a76fc
+ms.sourcegitcommit: 0b7070ec119e00e0dafe030bbfbef0ae5c9afa19
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "65101345"
+ms.lasthandoff: 09/29/2022
+ms.locfileid: "68167547"
 ---
 # <a name="create-sharepoint-online-sites-and-add-users-with-powershell"></a>Crear sitios de SharePoint Online y agregar usuarios con PowerShell
 
-*Este artículo se aplica tanto a Microsoft 365 Enterprise como a Office 365 Enterprise.*
+*Este artículo afecta tanto a Office 365 Enterprise como a Microsoft 365 Enterprise*
 
-Al usar PowerShell para Microsoft 365 para crear sitios de SharePoint Online y agregar usuarios, puede realizar tareas de forma rápida y repetida mucho más rápido de lo que puede en el Centro de administración de Microsoft 365. También puede realizar tareas que no son posibles realizar en el Centro de administración de Microsoft 365.
+Cuando se usa PowerShell para Microsoft 365 para crear sitios de SharePoint Online y agregar usuarios, puede realizar tareas de forma rápida y repetida mucho más rápido de lo que puede en el Centro de administración de Microsoft 365. También puede realizar tareas que no son posibles realizar en el Centro de administración de Microsoft 365.
 
 ## <a name="connect-to-sharepoint-online"></a>Conexión a SharePoint Online
 
-Los procedimientos de este tema requieren que se conecte a SharePoint Online. Para obtener instrucciones, consulte [Conectar para SharePoint PowerShell en línea](/powershell/sharepoint/sharepoint-online/connect-sharepoint-online).
+Los procedimientos de este tema requieren que se conecte a SharePoint Online. Para obtener instrucciones, consulte [Conexión a PowerShell de SharePoint Online](/powershell/sharepoint/sharepoint-online/connect-sharepoint-online).
 
 ## <a name="step-1-create-new-site-collections-using-powershell"></a>Paso 1: Creación de nuevas colecciones de sitios mediante PowerShell
 
-Cree varios sitios mediante PowerShell y un archivo de .csv que cree con el código de ejemplo proporcionado y Bloc de notas. Para este procedimiento, reemplazará la información de marcador de posición que se muestra entre corchetes por su propia información específica del sitio y del inquilino. Este proceso le permite crear un único archivo y ejecutar un único comando de PowerShell que use ese archivo. Esto hace que las acciones realizadas sean repetibles y portátiles y elimina muchos errores, si no todos, que pueden proceder de escribir comandos largos en el shell de administración en línea de SharePoint. Hay dos partes de este procedimiento. En primer lugar, creará un archivo .csv y, a continuación, hará referencia a ese archivo .csv mediante PowerShell, que usará su contenido para crear los sitios.
+Cree varios sitios mediante PowerShell y un archivo .csv que cree con el código de ejemplo proporcionado y el Bloc de notas. Para este procedimiento, reemplazará la información de marcador de posición que se muestra entre corchetes por su propia información específica del sitio y del inquilino. Este proceso le permite crear un único archivo y ejecutar un único comando de PowerShell que use ese archivo. Esto hace que las acciones realizadas sean repetibles y portátiles y elimina muchos errores, si no todos, que pueden provenir de escribir comandos largos en el Shell de administración de SharePoint Online. Hay dos partes de este procedimiento. En primer lugar, creará un archivo .csv y, a continuación, hará referencia a ese archivo .csv mediante PowerShell, que usará su contenido para crear los sitios.
 
 El cmdlet de PowerShell importa el archivo .csv y lo canaliza a un bucle dentro de los corchetes que lee la primera línea del archivo como encabezados de columna. A continuación, el cmdlet de PowerShell recorre en iteración los registros restantes, crea una nueva colección de sitios para cada registro y asigna propiedades de la colección de sitios según los encabezados de columna.
 
@@ -59,7 +61,7 @@ El cmdlet de PowerShell importa el archivo .csv y lo canaliza a un bucle dentro 
 
    Donde *inquilino* es el nombre del inquilino y *propietario* es el nombre de usuario del usuario del inquilino al que desea conceder el rol de administrador de la colección de sitios principal.
 
-   (Puede presionar Ctrl+H cuando use Bloc de notas para reemplazar en masa más rápido).
+   (Puede presionar Ctrl+H cuando use el Bloc de notas para reemplazar de forma masiva más rápido).
 
 2. Guarde el archivo en el escritorio como **SiteCollections.csv**.
 
@@ -90,7 +92,7 @@ Eso es todo. Ha creado varias colecciones de sitios mediante el archivo .csv que
 
 ## <a name="step-2-add-users-and-groups"></a>Paso 2: agregar usuarios y grupos
 
-Ahora vamos a crear usuarios y a agregarlos a un grupo de colecciones de sitios. Luego, usaremos un archivo .csv para cargar los nuevos usuarios y grupos de forma masiva.
+Now you’re going to create users and add them to a site collection group. You will then use a .csv file to bulk upload new groups and users.
 
 Los procedimientos siguientes siguen usando los sitios de ejemplo TeamSite01, Blog01, Project01 y Community01.
 
@@ -165,7 +167,7 @@ Ya puede ejecutar el script UsersAndGroup.ps1 para agregar usuarios y grupos a v
 
    Donde *MyAlias* es igual a su nombre de usuario.
 
-5. Antes de continuar, espere a que el símbolo del sistema vuelva. Primero verá que los grupos aparecen según se han creado y, luego, verá la lista de grupos repetida a medida que se vayan agregando usuarios.
+5. Wait for the prompt to return before moving on. You will first see the groups appear as they are created. Then you will see the group list repeated as users are added.
 
 ## <a name="see-also"></a>Vea también
 

@@ -8,7 +8,7 @@ manager: serdars
 ms.date: 08/14/2020
 audience: ITPro
 ms.topic: overview
-ms.service: microsoft-365-enterprise
+ms.service: o365-solutions
 ms.localizationpriority: medium
 search.appverid:
 - MET150
@@ -17,12 +17,12 @@ ms.collection:
 - M365-security-compliance
 ms.custom: Ent_Architecture
 description: 'Resumen: cómo Contoso usó un equipo con aislamiento de seguridad para un proyecto de alto secreto para desarrollar un nuevo conjunto de productos y servicios.'
-ms.openlocfilehash: 2afc993245e2ad1a67242855dd658a38de5e628a
-ms.sourcegitcommit: 0af064e8b6778060f1bd365378d69b16fc9949b5
+ms.openlocfilehash: 33a13b778c51690200e5e590fb2c56faeff8de0f
+ms.sourcegitcommit: fce27da5140691b013a6f7c0ea9c88b4ea4b7c10
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/15/2022
-ms.locfileid: "67730669"
+ms.lasthandoff: 09/23/2022
+ms.locfileid: "67987134"
 ---
 # <a name="isolated-team-for-a-top-secret-project-of-the-contoso-corporation"></a>Equipo aislado para un proyecto secreto de Contoso Corporation
 

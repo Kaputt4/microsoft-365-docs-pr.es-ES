@@ -7,9 +7,10 @@ author: kwekua
 manager: scotv
 audience: Admin
 ms.topic: overview
-ms.service: o365-administration
+ms.service: microsoft-365-business
 ms.localizationpriority: medium
 ms.collection:
+- scotvorg
 - M365-subscription-management
 - Adm_O365
 - Adm_TOC
@@ -22,12 +23,12 @@ ms.custom:
 - AdminSurgePortfolio
 - admindeeplinkMAC
 description: 'El Centro de administración de Microsoft 365: obtenga información sobre las características que se agregaron este mes.'
-ms.openlocfilehash: 588e5d405bb0a343d95014892d23b62f2e1f28f4
-ms.sourcegitcommit: d09eb780dc41a01796eb8137fbe9267231af6746
+ms.openlocfilehash: 4f1c26dbcedc1057157e782b7e7489b5b6ed478e
+ms.sourcegitcommit: 0b7070ec119e00e0dafe030bbfbef0ae5c9afa19
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/19/2022
-ms.locfileid: "67388889"
+ms.lasthandoff: 09/29/2022
+ms.locfileid: "68164027"
 ---
 # <a name="whats-new-in-the-microsoft-365-admin-center"></a>Novedades de la Centro de administración de Microsoft 365
 
@@ -50,6 +51,37 @@ Y si desea saber las novedades de otros servicios en la nube de Microsoft:
 - [Novedades del Centro de administración de SharePoint](/sharepoint/what-s-new-in-admin-center)
 - [Actualizaciones de Office](/OfficeUpdates/)
 - [Cómo comprobar el estado de la versión de Windows](/windows/deployment/update/check-release-health)
+
+## <a name="august-2022"></a>Agosto de 2022
+
+### <a name="date-filter-in-the-net-promoter-score-nps-survey-insights-dashboard"></a>Filtro de fecha en el panel de conclusiones de encuestas de Net Promoter Score (NPS)
+
+En función de sus comentarios, presentamos una nueva función en el panel de conclusiones de encuestas de NPS que permite a los administradores como usted filtrar los datos de puntuación neta del patrocinador (NPS) y la información por fecha, para que pueda acceder a los detalles en función de su preferencia de intervalo de fechas.
+
+Con este cambio, podrá ver la información de la encuesta NPS en función de los siguientes intervalos de fechas:
+
+- Últimos 30 días
+- Últimos 90 días
+- Últimos 180 días
+
+Para obtener acceso, **vaya a la** > **pestaña Información de la encuesta npS** **de comentarios** >  del producto de mantenimiento.
+
+:::image type="content" source="../media/nps-date-filter.png" alt-text="Captura de pantalla: Filtro de fecha en el panel de conclusiones de encuestas de NPS" lightbox="../media/nps-date-filter.png":::
+
+Obtenga más información sobre la [información de encuestas de NPS](/microsoft-365/admin/manage/manage-feedback-product-insights).
+
+Para preguntas o comentarios relacionados con las conclusiones de encuestas de NPS, póngase en contacto con nosotros en Prosight@microsoft.com.
+
+
+## <a name="july-2022"></a>Julio de 2022
+
+### <a name="multi-tenant-billing-relationships"></a>Relaciones de facturación multiinquilino
+
+Ahora puede crear relaciones de facturación multiinquilino con otros inquilinos. Una relación de facturación multiinquilino le permite compartir de forma segura la cuenta de facturación de su organización con otros inquilinos, a la vez que mantiene el control sobre los datos de facturación.
+
+Esta característica está disponible para los clientes de cuentas de la organización con un Contrato de cliente de Microsoft.
+
+Para obtener más información, consulte [Administración de la facturación entre varios inquilinos en el Centro de administración de Microsoft 365](../commerce/billing-and-payments/manage-multi-tenant-billing.md).
 
 ## <a name="may-2022"></a>Mayo de 2022
 

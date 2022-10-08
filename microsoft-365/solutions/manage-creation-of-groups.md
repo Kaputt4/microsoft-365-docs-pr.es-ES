@@ -7,7 +7,7 @@ author: MikePlumleyMSFT
 manager: serdars
 audience: Admin
 ms.topic: article
-ms.service: microsoft-365-enterprise
+ms.service: o365-solutions
 ms.localizationpriority: medium
 ms.collection:
 - highpri
@@ -19,12 +19,12 @@ search.appverid:
 ms.assetid: 4c46c8cb-17d0-44b5-9776-005fced8e618
 recommendations: false
 description: Obtenga información sobre cómo controlar qué usuarios pueden crear Grupos de Microsoft 365.
-ms.openlocfilehash: e1927c0a2d9ca76f98d4c2f2e60646c2f3a1eae1
-ms.sourcegitcommit: 0af064e8b6778060f1bd365378d69b16fc9949b5
+ms.openlocfilehash: 18899bfe1936f3cdd4f5dea29259cb3605abb0d8
+ms.sourcegitcommit: c550d73b153ad4856188c9109d9d80f02ca989b6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/15/2022
-ms.locfileid: "67728040"
+ms.lasthandoff: 09/29/2022
+ms.locfileid: "68140840"
 ---
 # <a name="manage-who-can-create-microsoft-365-groups"></a>Administrar quién puede crear grupos de Microsoft 365
 

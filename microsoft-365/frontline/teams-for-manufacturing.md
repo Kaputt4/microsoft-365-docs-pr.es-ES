@@ -13,8 +13,10 @@ ms.collection:
 - M365-collaboration
 - microsoftcloud-manufacturing
 - m365-frontline
+- highpri
 - m365solution-manufacturing
 - m365solution-overview
+- highpri
 ms.localizationpriority: high
 search.appverid: MET150
 searchScope:
@@ -23,12 +25,12 @@ searchScope:
 appliesto:
 - Microsoft Teams
 - Microsoft 365 for frontline workers
-ms.openlocfilehash: 20dc1e5305e41e97501ce9d654c74f1afd0ee5b2
-ms.sourcegitcommit: 1efb75d033860977239b479f92e7eaf274b5fbf0
-ms.translationtype: HT
+ms.openlocfilehash: 74f4f51c53964b75f046a9afa9666a41530ae97f
+ms.sourcegitcommit: 12af9e8e3a6eaa090fda9e98ccb831dff65863a4
+ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/16/2022
-ms.locfileid: "66998873"
+ms.lasthandoff: 09/27/2022
+ms.locfileid: "68054278"
 ---
 # <a name="get-started-with-microsoft-365-for-manufacturing"></a>Introducción a Microsoft 365 para producción
 
@@ -106,7 +108,7 @@ En los entornos de producción, las siguientes aplicaciones y servicios pueden a
 | Aprobaciones | Optimice el proceso de cierre de sesión al integrar Aprobaciones en el chat. Por ejemplo, los técnicos y operadores pueden solicitar aprobación para realizar un ajuste en algún equipamiento. | [Administrar Aprobaciones](/microsoftteams/approval-admin?bc=/microsoft-365/frontline/breadcrumb/toc.json&toc=/microsoft-365/frontline/toc.json) | [Usar Aprobaciones](https://support.microsoft.com/office/what-is-approvals-a9a01c95-e0bf-4d20-9ada-f7be3fc283d3) |
 | Chat | Habilite conversaciones rápidas entre el personal y los supervisores con chats seguros en Teams. | [Chat, equipos, canales y aplicaciones en Microsoft Teams](/microsoftteams/deploy-chat-teams-channels-microsoft-teams-landing-page) | [Chatear en Teams](https://support.microsoft.com/office/start-and-pin-chats-a864b052-5e4b-4ccf-b046-2e26f40e21b5?wt.mc_id=otc_microsoft_teams) |
 | Documentos y archivos | Comparta procedimientos operativos estándar, manuales, diagramas, registros de inspección y mucho más. | [Integración de Teams y SharePoint](/sharepoint/teams-connected-sites) | [Compartir archivos](https://support.microsoft.com/office/upload-and-share-files-57b669db-678e-424e-b0a0-15d19215cb12) |
-| Elogio | Reconozca a sus compañeros de trabajo por su excelente trabajo en equipo con la aplicación Elogio. | [Administrar la aplicación Elogiar](/microsoftteams/manage-praise-app?bc=/microsoft-365/frontline/breadcrumb/toc.json&toc=/microsoft-365/frontline/toc.json) | [Enviar elogios a las personas](https://support.microsoft.com/office/send-praise-to-people-50f26b47-565f-40fe-8642-5ca2a5ed261e) |
+| Elogios | Reconozca a sus compañeros de trabajo por su excelente trabajo en equipo con la aplicación Elogio. | [Administrar la aplicación Elogiar](/microsoftteams/manage-praise-app?bc=/microsoft-365/frontline/breadcrumb/toc.json&toc=/microsoft-365/frontline/toc.json) | [Enviar elogios a las personas](https://support.microsoft.com/office/send-praise-to-people-50f26b47-565f-40fe-8642-5ca2a5ed261e) |
 | Turnos | Administre las programaciones y los registros de entrada y salida con Turnos. | [Administrar la aplicación Turnos para su organización en Teams](/microsoftteams/expand-teams-across-your-org/shifts/manage-the-shifts-app-for-your-organization-in-teams?bc=/microsoft-365/frontline/breadcrumb/toc.json&toc=/microsoft-365/frontline/toc.json) | [Usar Turnos](https://support.microsoft.com/office/what-is-shifts-f8efe6e4-ddb3-4d23-b81b-bb812296b821) |
 | Tasks | Los encargados y supervisores pueden asignar tareas para que los trabajadores sepan en qué deben centrarse. La oficina central de la organización puede usar la [publicación de tareas](/microsoftteams/manage-tasks-app?bc=/microsoft-365/frontline/breadcrumb/toc.json&toc=/microsoft-365/frontline/toc.json#task-publishing) para enviar tareas a ubicaciones y realizar un seguimiento del progreso en esas ubicaciones. | [Administrar la aplicación Tasks](/microsoftteams/manage-tasks-app?bc=/microsoft-365/frontline/breadcrumb/toc.json&toc=/microsoft-365/frontline/toc.json) | [Usar Tasks](https://support.microsoft.com/office/use-the-tasks-app-in-teams-e32639f3-2e07-4b62-9a8c-fd706c12c070) |
 | Actualizaciones | Compruebe las prioridades habituales y puntuales, como reparaciones e inspecciones de maquinaria. Los supervisores pueden crear plantillas para que los empleados rellenen y envíen. | [Administrar la aplicación Novedades](/microsoftteams/manage-updates-app?bc=/microsoft-365/frontline/breadcrumb/toc.json&toc=/microsoft-365/frontline/toc.json) | [Usar Novedades](https://support.microsoft.com/office/get-started-in-updates-c03a079e-e660-42dc-817b-ca4cfd602e5a) |

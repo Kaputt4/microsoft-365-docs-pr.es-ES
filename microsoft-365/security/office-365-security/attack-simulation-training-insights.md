@@ -8,17 +8,18 @@ ms.topic: conceptual
 ms.service: microsoft-365-security
 ms.localizationpriority: medium
 ms.collection:
-- M365-security-compliance
+- m365-security
 - m365initiative-defender-office365
 ms.custom: ''
 description: Los administradores pueden aprender cómo Entrenamiento de simulación de ataque en el portal de Microsoft 365 Defender afecta a los usuarios y pueden obtener información sobre los resultados de simulación y entrenamiento.
 ms.subservice: mdo
-ms.openlocfilehash: af3a1e9f7a2b991b7ece6f36595e2f7759eccb9d
-ms.sourcegitcommit: 10e6abe740e27000e223378eb17d657a47555fa8
+search.appverid: met150
+ms.openlocfilehash: 2e6ac342a5d9bdc1b7a2c1476b64a25080272277
+ms.sourcegitcommit: 12af9e8e3a6eaa090fda9e98ccb831dff65863a4
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/31/2022
-ms.locfileid: "67483132"
+ms.lasthandoff: 09/27/2022
+ms.locfileid: "68077807"
 ---
 # <a name="insights-and-reports-for-attack-simulation-training-in-defender-for-office-365"></a>Conclusiones e informes para Entrenamiento de simulación de ataque en Defender para Office 365
 
@@ -26,7 +27,7 @@ ms.locfileid: "67483132"
 
 **Se aplica a** [Microsoft Defender para Office 365 plan 2](defender-for-office-365.md)
 
-En Entrenamiento de simulación de ataque en El plan 2 o Microsoft 365 E5 de Microsoft Defender para Office, Microsoft proporciona información e informes de los resultados de las simulaciones y los entrenamientos correspondientes. Esta información le mantiene informado sobre el progreso de preparación de amenazas de los usuarios, así como los pasos siguientes recomendados para preparar mejor a los usuarios para futuros ataques.
+En Entrenamiento de simulación de ataque en Microsoft Defender para Office Plan 2 o Microsoft 365 E5, Microsoft proporciona información e informes de los resultados de las simulaciones y los entrenamientos correspondientes. Esta información le mantiene informado sobre el progreso de preparación de amenazas de los usuarios, así como los pasos siguientes recomendados para preparar mejor a los usuarios para futuros ataques.
 
 Las conclusiones y los informes están disponibles en las siguientes ubicaciones de Entrenamiento de simulación de ataque en el portal de Microsoft 365 Defender:
 
@@ -61,8 +62,8 @@ La tarjeta **Impacto del comportamiento en la tasa de riesgo** de la pestaña **
 
 Los propios datos del gráfico muestran la siguiente información:
 
-- **Tasa**<sup>\*</sup> de riesgo prevista: la tasa de riesgo promedio para Entrenamiento de simulación de ataque simulaciones que usan el mismo tipo de carga en todas las demás organizaciones de Microsoft 365.
-- Tasa <sup>\*</sup>**de compromiso real**: el porcentaje real de usuarios que se redujo para la simulación.
+- **Tasa de riesgo prevista**: datos históricos en Microsoft 365 que predice el porcentaje de personas que se verán comprometidas por esta simulación (usuarios en peligro o número total de usuarios que reciben la simulación).
+- **Tasa de compromiso real**: porcentaje real de personas que se vieron comprometidas por la simulación (usuarios reales en peligro o número total de usuarios de la organización que recibieron la simulación).
 
 Si mantiene el puntero sobre un punto de datos del gráfico, se muestran los valores de porcentaje reales.
 

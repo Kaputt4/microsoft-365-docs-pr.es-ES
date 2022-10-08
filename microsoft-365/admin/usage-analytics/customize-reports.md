@@ -1,5 +1,5 @@
 ---
-title: Personalizar los informes en el análisis Microsoft 365 de uso
+title: Personalización de los informes en análisis de uso de Microsoft 365
 f1.keywords:
 - NOCSH
 ms.author: efrene
@@ -7,9 +7,10 @@ author: efrene
 manager: scotv
 audience: Admin
 ms.topic: article
-ms.service: o365-administration
+ms.service: microsoft-365-business
 ms.localizationpriority: medium
 ms.collection:
+- scotvorg
 - M365-subscription-management
 - Adm_O365
 - Adm_TOC
@@ -20,16 +21,16 @@ search.appverid:
 - MOE150
 ms.assetid: 9b76065f-29b9-4b89-8059-c5f9db9ddbf6
 description: Aprenda a personalizar los informes en el explorador y Power BI Desktop.
-ms.openlocfilehash: 32cf44c8d72160a583a841e26c2ad6934bd7eef2
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 97ff462478b7172382aa797e8c4acb3a863bbe3f
+ms.sourcegitcommit: 0b7070ec119e00e0dafe030bbfbef0ae5c9afa19
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60175736"
+ms.lasthandoff: 09/29/2022
+ms.locfileid: "68193529"
 ---
-# <a name="customize-the-reports-in-microsoft-365-usage-analytics"></a>Personalizar los informes en el análisis Microsoft 365 de uso
+# <a name="customize-the-reports-in-microsoft-365-usage-analytics"></a>Personalización de los informes en análisis de uso de Microsoft 365
 
-Microsoft 365 análisis de uso proporciona un panel en Power BI que ofrece información sobre cómo los usuarios adoptan y usan Microsoft 365. El panel es tan solo un punto de inicio para interactuar con los datos de uso. Los informes se pueden ajustar para obtener información más personalizada.
+El análisis de uso de Microsoft 365 proporciona un panel en Power BI que ofrece información sobre cómo los usuarios adoptan y usan Microsoft 365. El panel es tan solo un punto de inicio para interactuar con los datos de uso. Los informes se pueden ajustar para obtener información más personalizada.
 
 También puede usar Power BI Desktop para personalizar aún más los informes al conectarlos a otros orígenes de datos para obtener información avanzada sobre su negocio.
 
@@ -39,41 +40,41 @@ En los dos ejemplos siguientes se muestra cómo modificar un objeto visual exist
 
 ### <a name="modify-an-existing-visual"></a>Modificar un objeto visual existente
 
-En este ejemplo se muestra cómo modificar la pestaña **Activación** del **informe Activación/Licencias.**
+En este ejemplo se muestra cómo modificar la pestaña **Activación** en el informe **Activación/Licencias** .
 
-1. Dentro del **informe Activación/licencias,** seleccione la **pestaña** Activación.
+1. En el informe **Activación/licencias** , seleccione la pestaña **Activación** .
 
-2. Para entrar en el  modo de edición, elija el botón Editar en la parte superior a través del botón Más ![ página de Power BI.](../../media/d8da3c19-3f2d-4bf6-811e-faa804f74770.png) .
+2. Escriba el modo de edición eligiendo el botón **Editar** de la parte superior a través del ![botón La página más de Power BI.](../../media/d8da3c19-3f2d-4bf6-811e-faa804f74770.png) .
 
-    ![Haga clic en Editar informe en la navegación superior derecha.](../../media/e2c16663-1fbd-4d7f-887c-0cbb891d3b3d.png)
+    ![Haga clic en Editar informe en el panel de navegación superior derecho.](../../media/e2c16663-1fbd-4d7f-887c-0cbb891d3b3d.png)
 
 3. En la parte superior derecha, elija **Duplicar esta página**.
 
     ![Elija Duplicar esta página.](../../media/b2d18dcd-6b82-4ce7-ab79-1b24e3721309.png)
 
-4. En la parte inferior derecha, elija cualquiera de los gráficos de barras que muestran el recuento de usuarios que se activan en función del sistema operativo, como Android, iOS, Mac, etc.
+4. En la parte inferior derecha, elija cualquiera de los gráficos de barras que muestran el número de usuarios que se activan en función del sistema operativo, como Android, iOS, Mac, etc.
 
-5. En el **área Visualizaciones** a la derecha, para quitar **Mac Count** del objeto visual, selecciona **la X** junto a él.
+5. En el área **Visualizaciones** de la derecha, para quitar **Mac Count** del objeto visual, seleccione la **X** situada junto a él.
 
-    ![Quitar recuento de Mac.](../../media/ce3d8358-df57-4f64-bd25-ac5be7fc8713.png)
+    ![Quitar Recuento de Mac.](../../media/ce3d8358-df57-4f64-bd25-ac5be7fc8713.png)
 
 ### <a name="create-a-new-visual"></a>Crear un objeto visual
 
 En el ejemplo siguiente se muestra cómo crear un objeto visual para realizar un seguimiento de nuevos usuarios de Yammer de forma mensual.
 
-1. Vaya al informe **de uso del** producto con la navegación izquierda y seleccione Yammer pestaña. 
+1. Vaya al informe **De uso del producto** con la navegación izquierda y seleccione la pestaña **Yammer** .
 
-2. Cambie al modo de edición seleccionando El botón Más ![ página de Power BI.](../../media/d8da3c19-3f2d-4bf6-811e-faa804f74770.png) y **Editar**.
+2. Cambie al modo de edición eligiendo el ![botón La página más en Power BI.](../../media/d8da3c19-3f2d-4bf6-811e-faa804f74770.png) y **Editar**.
 
-3. En la parte inferior de la página, seleccione el ![El botón agregar página en Power BI.](../../media/d3b8c117-17d4-4f53-b078-8fefc2155b24.png) para crear una nueva página.
+3. En la parte inferior de la página, seleccione ![Botón Agregar página en Power BI.](../../media/d3b8c117-17d4-4f53-b078-8fefc2155b24.png) para crear una nueva página.
 
-4. En el **área Visualizaciones** a la derecha, elija el gráfico de barras **apiladas** (fila superior, primero desde la izquierda).
+4. En el área **Visualizaciones** de la derecha, elija el **gráfico de barras apiladas** (fila superior, primero a la izquierda).
 
     ![Seleccione Gráfico de barras.](../../media/214c3fed-6eae-43e6-83fb-708a2d74406e.png)
 
-5. Seleccione la parte inferior derecha de esa visualización y arrástrela para hacerla más grande.
+5. Seleccione la parte inferior derecha de esa visualización y arrástrela para que sea más grande.
 
-6. En el **área Campos** a la derecha, expanda la **tabla** Calendario.
+6. En el área **Campos** de la derecha, expanda la tabla **Calendario** .
 
 7. Arrastre **MonthName** al área de campos, directamente debajo del título **Ejes**, en el área **Visualizaciones**.
 
@@ -87,9 +88,9 @@ En el ejemplo siguiente se muestra cómo crear un objeto visual para realizar un
 
 11. En el área **Tipo de filtro** que se muestre, active la casilla **Yammer**.
 
-    ![Seleccione Yammer casilla de verificación.](../../media/82e99730-0de9-42da-928a-76aab0c3e609.png)
+    ![Seleccione la casilla Yammer.](../../media/82e99730-0de9-42da-928a-76aab0c3e609.png)
 
-12. Justo debajo de la lista de visualizaciones, elija **el** icono Formato icono Formato en ![ Power BI Visualizaions. ](../../media/ee0602f3-3df5-4930-b862-db1d90ae4ae2.png) .
+12. Justo debajo de la lista de visualizaciones, elija el icono ![**Formato** icono Formato en Visualizaciones de Power BI.](../../media/ee0602f3-3df5-4930-b862-db1d90ae4ae2.png)
 
 13. Expanda el título y cambie el valor de **Texto del título** a **Nuevos usuarios de Yammer por mes**.
 
@@ -97,27 +98,27 @@ En el ejemplo siguiente se muestra cómo crear un objeto visual para realizar un
 
 15. Cambie el título de la nueva página editando el nombre de la página en la parte inferior derecha.
 
-16. Guarde el informe haciendo clic en **la vista de lectura** en la parte superior y, a continuación, **guarde**.
+16. Guarde el informe haciendo clic en **La vista de lectura** en la parte superior y, a continuación, **guardar**.
 
 ## <a name="customizing-the-reports-in-power-bi-desktop"></a>Personalizar los informes en Power BI Desktop
 
-Para la mayoría de los clientes, modificar los informes y los objetos visuales de gráficos en la web de Power BI será suficiente. Otros, en cambio, puede que necesiten combinar estos datos con otros orígenes de datos para obtener información contextual más avanzada para su propio negocio; en ese caso, pueden personalizar y crear informes adicionales con Power BI Desktop. Puede descargar [Power BI Desktop](https://go.microsoft.com/fwlink/p/?linkid=849797) de forma gratuita.
+For most customers modifying the reports and chart visuals in Power BI web will be sufficient. For some however, there may be a need to join this data with other data sources to gain richer insights contextual to their own business, in which case they can customize and build additional reports using Power BI Desktop. You can download [Power BI Desktop](https://go.microsoft.com/fwlink/p/?linkid=849797) for free.
 
 ### <a name="use-the-reporting-apis"></a>Usar las API de informes
 
-Para empezar, puede conectarse directamente a las API de informes de ODATA Microsoft 365 que enciendan estos informes.
+Para empezar, puede conectarse directamente a las API de informes de ODATA desde Microsoft 365 que alimentan estos informes.
 
 1. Vaya a **Obtener datos** \> **Otros** \> **Fuente de OData** \> **Conectar**.
 
-2. En la ventana dirección URL, escriba "https:// <i></i> \<tenantid\> reports.office.com/pbi/v1.0/"
+2. En la ventana URL, escriba "https://<i></i> reports.office.com/pbi/v1.0/\<tenantid\>"
 
-    **NOTA:** Las API de informes están en versión preliminar y están sujetas a cambios hasta que entren en producción.
+    **NOTA:** Las API de informes están en versión preliminar y están sujetas a cambios hasta que entran en producción.
 
-    ![Dirección URL de fuente OData para Power BI escritorio.](../../media/c0ef967e-a454-4eba-bc8e-61e113170053.png)
+    ![Dirección URL de fuente de OData para Power BI Desktop.](../../media/c0ef967e-a454-4eba-bc8e-61e113170053.png)
 
-3. Escriba sus Microsoft 365 de administrador (organización o escuela) para autenticarse en Microsoft 365 cuando se le pida.
+3. Escriba las credenciales de administrador de Microsoft 365 (organización o escuela) para autenticarse en Microsoft 365 cuando se le solicite.
 
-    Consulta las [preguntas más](usage-analytics.md#faq) frecuentes para obtener más información acerca de quién tiene permiso para acceder a los Microsoft 365 de aplicación de plantilla de adopción.
+    Consulte las [preguntas más frecuentes](usage-analytics.md#faq) para obtener más información sobre quién tiene permiso para acceder a los informes de aplicaciones de plantilla de adopción de Microsoft 365.
 
 4. Cuando se autorice la conexión, verá la ventana Navegador, donde se muestran los conjuntos de datos a los que puede conectarse.
 
@@ -125,26 +126,26 @@ Para empezar, puede conectarse directamente a las API de informes de ODATA Micro
 
     Se descargarán los datos en Power BI Desktop. Guarde el archivo y, después, ya podrá empezar a crear los informes que necesite.
 
-    ![Valores ODATA disponibles en la API de informes.](../../media/545b4d17-dbbd-4cfc-b75a-a8b27283d438.png)
+    ![Valores de ODATA disponibles en la API de informes.](../../media/545b4d17-dbbd-4cfc-b75a-a8b27283d438.png)
 
-### <a name="use-the-microsoft-365-usage-analytics-template"></a>Usar la plantilla Microsoft 365 análisis de uso
+### <a name="use-the-microsoft-365-usage-analytics-template"></a>Uso de la plantilla de análisis de uso de Microsoft 365
 
-También puede usar el archivo de plantilla Power BI que corresponde a los informes Microsoft 365 análisis de uso como punto de partida para conectarse a los datos. La ventaja de usar el archivo pbit es que ya tiene establecida la cadena de conexión. También puede aprovecharse de todas las medidas personalizadas creadas, además de los datos devueltos por el esquema base.
+También puede usar el archivo de plantilla de Power BI correspondiente a los informes de análisis de uso de Microsoft 365 como punto de partida para conectarse a los datos. La ventaja de usar el archivo pbit es que ya tiene establecida la cadena de conexión. También puede aprovecharse de todas las medidas personalizadas creadas, además de los datos devueltos por el esquema base.
 
-Puede descargar el archivo Power BI de plantilla desde el [Centro de descarga de Microsoft](https://download.microsoft.com/download/7/8/2/782ba8a7-8d89-4958-a315-dab04c3b620c/Microsoft%20365%20Usage%20Analytics.pbit). Después de descargar el archivo Power BI plantilla, siga estos pasos para empezar:
+Puede descargar el archivo de plantilla de Power BI desde el [Centro de descarga de Microsoft](https://download.microsoft.com/download/7/8/2/782ba8a7-8d89-4958-a315-dab04c3b620c/Microsoft%20365%20Usage%20Analytics.pbit). Después de descargar el archivo de plantilla de Power BI, siga estos pasos para empezar:
 
 1. Abra el archivo pbit.
 
 2. Escriba el valor del id. de espacio empresarial en el cuadro de diálogo.
 
-    ![Escriba su identificador de inquilino para abrir el archivo pbit.](../../media/071ed0bf-8b9d-49c6-81fc-fd4c6cc85bd3.png)
+    ![Escriba el identificador de inquilino para abrir el archivo pbit.](../../media/071ed0bf-8b9d-49c6-81fc-fd4c6cc85bd3.png)
 
-3. Escriba sus credenciales de administrador para autenticarse en Microsoft 365 cuando se le pida.
+3. Escriba las credenciales de administrador para autenticarse en Microsoft 365 cuando se le solicite.
 
-     para obtener más información sobre quién tiene permiso para acceder a los Microsoft 365 de análisis de uso.
+     para obtener más información sobre quién puede acceder a los informes de análisis de uso de Microsoft 365.
 
     Cuando reciba la autorización, los datos se actualizarán en el archivo de Power BI.
 
     La carga de datos puede tardar un tiempo; cuando se complete, puede guardar el archivo como .pbix y seguir personalizando los informes, o bien puede agregar un origen de datos adicional al informe.
 
-4. Vea la documentación en [Introducción a Power BI](/power-bi/fundamentals/desktop-getting-started) para conocer cómo crear informes, publicarlos en el servicio de Power BI y compartirlos con su organización. Para seguir estos pasos de personalización y uso compartido, puede que necesite licencias adicionales de Power BI. Para obtener más información, vea la [guía de licencia](https://go.microsoft.com/fwlink/p/?linkid=849803) de Power BI.
+4. Follow [Getting started with Power BI](/power-bi/fundamentals/desktop-getting-started) documentation to understand how to build reports, publish them to the Power BI service, and share with your organization. Following this path for customization and sharing may require additional Power BI licenses. See Power BI [licensing guidance](https://go.microsoft.com/fwlink/p/?linkid=849803) for details.

@@ -13,15 +13,15 @@ ms.localizationpriority: medium
 ms.reviewer: inbadian
 f1.keywords: NOCSH
 ms.collection:
-- M365-security-compliance
-- m365initiative-defender-endpoint
+- m365-security
+- tier1
 ms.custom: intro-overview
-ms.openlocfilehash: d3d0118c75f2ac183b6a7c6b6eef599b2a943b1f
-ms.sourcegitcommit: 10e6abe740e27000e223378eb17d657a47555fa8
+ms.openlocfilehash: 82d6c29609c3c1d2ef6d9c908901ecf4f762606a
+ms.sourcegitcommit: 0b7070ec119e00e0dafe030bbfbef0ae5c9afa19
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/31/2022
-ms.locfileid: "67468909"
+ms.lasthandoff: 09/29/2022
+ms.locfileid: "68193155"
 ---
 # <a name="overview-of-microsoft-defender-for-endpoint-plan-1"></a>Introducción al plan 1 de Microsoft Defender para punto de conexión
 
@@ -67,7 +67,7 @@ La protección de última generación incluye protección antivirus y antimalwar
 
 - Protección antivirus basada en comportamientos, heurística y en tiempo real 
 - Protección proporcionada por la nube, que incluye detección casi instantánea y bloqueo de amenazas nuevas y emergentes 
-- Protección dedicada y actualizaciones de productos, incluidas las actualizaciones relacionadas con el Antivirus de Microsoft Defender 
+- Protección dedicada y actualizaciones de productos, incluidas las actualizaciones relacionadas con Microsoft Defender Antivirus 
 
 Para más información, consulte [Introducción a la protección de próxima generación](next-generation-protection.md).
 

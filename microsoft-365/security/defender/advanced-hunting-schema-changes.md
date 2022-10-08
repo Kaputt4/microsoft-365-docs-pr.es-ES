@@ -16,14 +16,16 @@ author: schmurky
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
-ms.collection: m365-security-compliance
+ms.collection:
+- m365-security
+- tier3
 ms.topic: article
-ms.openlocfilehash: 12653741e10eaba0e8a658e24d3001e16af4e5d5
-ms.sourcegitcommit: 10e6abe740e27000e223378eb17d657a47555fa8
+ms.openlocfilehash: 1360ba4535dc9eaa18c320313382b1500cd8cee6
+ms.sourcegitcommit: 12af9e8e3a6eaa090fda9e98ccb831dff65863a4
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/31/2022
-ms.locfileid: "67482524"
+ms.lasthandoff: 09/27/2022
+ms.locfileid: "68049130"
 ---
 # <a name="advanced-hunting-schema---naming-changes"></a>Esquema de búsqueda avanzada: cambios de nomenclatura
 
@@ -97,7 +99,7 @@ Los cambios de nomenclatura se aplican automáticamente a las consultas que se g
     | `DeviceEvents` | `UsbDriveUnmount` | `UsbDriveUnmounted` | Comentarios del cliente |
     | `DeviceEvents` | `WriteProcessMemoryApiCall` | `WriteToLsassProcessMemory` | Comentarios del cliente |
 
-## <a name="march-2021"></a>Marzo 2021
+## <a name="march-2021"></a>Marzo de 2021
 
 La `DeviceTvmSoftwareInventoryVulnerabilities` tabla ha quedado en desuso. Reemplazarlo son las `DeviceTvmSoftwareInventory` tablas y `DeviceTvmSoftwareVulnerabilities` .
 

@@ -14,19 +14,22 @@ f1_keywords:
 ms.service: O365-seccomp
 ms.localizationpriority: medium
 ms.collection:
-- M365-security-compliance
+- tier3
+- purview-compliance
 hideEdit: true
 feedback_system: None
 recommendations: false
 description: Definición de entidad de tipo de información confidencial del número de pasaporte de Suecia.
-ms.openlocfilehash: 497965aea803a162fc97bb64fa456191f8788aab
-ms.sourcegitcommit: 5aed330d8af523f0dffe5e392f1c79f047e38172
+ms.openlocfilehash: 7328b3ebae0a59c5a9c8e23446e4d5302924da09
+ms.sourcegitcommit: 176bbd29c92e1c0812e8bcd1e1e4938a3e1d7331
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/21/2022
-ms.locfileid: "66999080"
+ms.lasthandoff: 10/05/2022
+ms.locfileid: "68472132"
 ---
 # <a name="sweden-passport-number"></a>Número de pasaporte de Suecia
+
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
 
 ## <a name="format"></a>Formato
 
@@ -81,12 +84,12 @@ Una política de DLP tiene confianza media en que ha detectado este tipo de info
 
 ### <a name="keywords_eu_passport_number"></a>Keywords_eu_passport_number
 
-- Pasaporte #
-- Pasaporte #
+- pasaporte#
+- pasaporte #
 - passportid
-- Pasaportes
+- pasaportes
 - passportno
-- passport no
+- pasaporte no
 - passportnumber
 - passport number
 - passportnumbers

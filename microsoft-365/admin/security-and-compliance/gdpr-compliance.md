@@ -7,9 +7,10 @@ author: efrene
 manager: scotv
 audience: Admin
 ms.topic: overview
-ms.service: o365-administration
+ms.service: microsoft-365-business
 ms.localizationpriority: high
 ms.collection:
+- scotvorg
 - highpri
 - M365-subscription-management
 - Adm_O365
@@ -22,12 +23,12 @@ search.appverid:
 - MET150
 ms.assetid: 211c5c90-9719-4d73-9ad9-1925bb80f5f6
 description: Obtenga información sobre cómo Microsoft 365 para empresas puede ayudarle con el proceso de reglamento general de protección de datos (RGPD).
-ms.openlocfilehash: b0d0131c807d111a3b5f9b5024a07040ca47fdfd
-ms.sourcegitcommit: 37e137535c4f70702afe1a5eeaa899c75ee02cfd
+ms.openlocfilehash: c89efa8b64dcfc5392a9be2da8fecf708197fb8e
+ms.sourcegitcommit: 0b7070ec119e00e0dafe030bbfbef0ae5c9afa19
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/13/2022
-ms.locfileid: "67664283"
+ms.lasthandoff: 09/29/2022
+ms.locfileid: "68193815"
 ---
 # <a name="gdpr-simplified-a-guide-for-your-small-business"></a>RGPD simplificado: Una guía para su pequeña empresa
 
@@ -92,12 +93,12 @@ En esta sección se describen los pasos que una pequeña empresa puede seguir pa
 Una buena manera para que una pequeña empresa empiece con el RGPD es asegurarse de aplicar los siguientes principios clave al recopilar datos personales:
 
 - Recopile datos personales con fines claramente definidos para su uso y no los use para nada más. Por ejemplo, si les pide a sus clientes que proporcionen sus direcciones de correo electrónico para que puedan recibir sus nuevas ofertas o promociones, solo puede usar sus direcciones de correo electrónico para ese propósito específico.
-- No recopile más datos de los que sean necesarios. Por ejemplo, si su empresa requiere una dirección de envío para poder entregar productos, necesita la dirección del cliente y el nombre, pero no es necesario saber el estado civil de la persona.
+- Don’t collect more data than you need. For example, if your business requires a mailing address for you to deliver goods, you need a customer's address and a name, but you don’t need to know the person's marital status.
 
 
 ### <a name="step-1-know-the-personal-data-that-you-collect-and-use-within-your-business-and-the-reasons-you-need-it"></a>Paso 1: conocer los datos personales que recopila y usa en su empresa y los motivos por los que los necesita
 
-Como pequeña empresa, uno de los primeros pasos que debe seguir es realizar un inventario de los datos personales que recopila y usa en la empresa y definir porqué son necesarios. Nos referimos tanto a los datos de los empleados como a los de los clientes.
+As a small business, one of the first steps you should take is to make an inventory of the personal data you collect and use within your business, and why it's needed. This includes data on both your employees and your customers.
 
 Por ejemplo, es posible que necesite los datos personales de su empleado en función del contrato laboral y por motivos legales (por ejemplo, declarar impuestos al Servicio de Impuestos Internos).
 
@@ -109,7 +110,7 @@ Como otro ejemplo, puede administrar listas de clientes individuales para enviar
 
 ### <a name="step-2-inform-your-customers-employees-and-other-individuals-when-you-need-to-collect-their-personal-data"></a>Paso 2: Informar a sus clientes, empleados y otras personas cuando necesite recopilar sus datos personales
 
-Las personas tienen derecho a saber con qué finalidad se procesan sus datos personales. Por ejemplo, si un cliente necesita crear un perfil de cliente para acceder al sitio web de su empresa, asegúrese de indicarle  expresamente para qué quiere esa información.
+Individuals must know that you process their personal data and for which purpose. For example, if a customer needs to create a customer profile to access your business's online site, make sure you state specifically what you intend to do with their information.
 
 Pero no es necesario informar a los usuarios cuando ya saben cómo se usarán los datos. Por ejemplo, cuando le proporcionan una dirección particular para hacer una entrega que han solicitado.
 
@@ -127,10 +128,10 @@ Elimine los datos cuando ya no sean necesarios para los fines para los que los r
 
 ### <a name="step-4-secure-the-personal-data-you-are-processing"></a>Paso 4: Proteger los datos personales que está procesando
 
-Si almacena datos personales en un sistema de TI, limite el acceso a los archivos que contienen los datos utilizando, por ejemplo, una contraseña segura. Actualice la configuración de seguridad del sistema de forma periódica.
+If you store personal data on an IT system, limit the access to the files containing the data, for example, by a strong password. Regularly update the security settings of your system.
 
 > [!NOTE]
-> El RGPD no ordena el uso de ningún sistema de TI específico, sino que hace que el sistema tenga el nivel de seguridad adecuado. Consulte [artículo 32 de GDRP: Seguridad del procesamiento](https://gdpr.eu/article-32-security-of-processing/) para obtener más información.
+> The GDPR does not prescribe the use of any specific IT system, but make that the system has the appropriate level of security. See [GDRP Article 32: Security of Processing](https://gdpr.eu/article-32-security-of-processing/) for more information.
 
 Si almacena documentos físicos con datos personales, asegúrese de que no sean accesibles para personas no autorizadas.
 
@@ -171,7 +172,7 @@ Si subcontrata el procesamiento de datos personales a otra empresa, solo use un 
  
 Para proteger mejor los datos personales, es posible que las organizaciones tengan que designar un <b>Delegado de protección de datos (DPO)</b>. Sin embargo, es posible que no tenga que designar un Delegado de protección de datos si el procesamiento de datos personales no es una parte fundamental de su empresa o si es una pequeña empresa. Por ejemplo, si su empresa solo recopila datos de los clientes para la entrega en casa, no debería tener que designar un DPO. Incluso si necesita hacer uso de un DPO, estas tareas pueden asignarse a un empleado existente, además de sus otras tareas. O bien, podría elegir contratar a un consultor externo para este trabajo, según sea necesario.
 
-Normalmente no es necesario llevar a cabo una [evaluación del impacto de la protección de datos](https://gdpr.eu/article-35-impact-assessment/). Esto está reservado para las empresas que suponen más riesgo para los datos personales (por ejemplo, si realizan una supervisión a gran escala de un área de acceso público, como la vigilancia de vídeo).
+You normally don’t need to carry out a [Data Protection Impact Assessment](https://gdpr.eu/article-35-impact-assessment/). This is reserved for businesses that pose more risk to personal data (for example, if they do a large-scale monitoring of a publicly accessible area, such as video-surveillance).
 
 Si es una pequeña empresa que administra los salarios de los empleados y una lista de clientes, normalmente no es necesario realizar una Evaluación del impacto en la protección de datos.  
  

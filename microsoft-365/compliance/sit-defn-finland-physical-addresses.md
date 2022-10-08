@@ -14,21 +14,24 @@ f1_keywords:
 ms.service: O365-seccomp
 ms.localizationpriority: medium
 ms.collection:
-- M365-security-compliance
+- tier3
+- purview-compliance
 hideEdit: true
 feedback_system: None
 recommendations: false
 description: Finlandia aborda la definición de entidad del tipo de información confidencial.
-ms.openlocfilehash: 736f98d7d31e3d9b6b2788c40d047d1a6a60ffd2
-ms.sourcegitcommit: 5aed330d8af523f0dffe5e392f1c79f047e38172
+ms.openlocfilehash: 7764641aaad6d8e2514882e2863765ff6126a3d8
+ms.sourcegitcommit: be2334dbcd4e1bf309349d981a68a30e06de0297
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/21/2022
-ms.locfileid: "66951002"
+ms.lasthandoff: 10/04/2022
+ms.locfileid: "68380258"
 ---
 # <a name="finland-physical-addresses"></a>Direcciones físicas de Finlandia
 
-Esta entidad con nombre desagregada detecta patrones relacionados con la dirección física de Finlandia. También se incluye en la entidad SIT con nombre [todas las direcciones físicas](sit-defn-all-physical-addresses.md) agrupadas.
+Esta entidad con nombre desagregada detecta patrones relacionados con la dirección física de Finlandia. También se incluye en [Todas las direcciones físicas ](sit-defn-all-physical-addresses.md) en la entidad no agrupada denominada SIT.
+
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
 
 ## <a name="confidence-level"></a>Nivel de confianza
 

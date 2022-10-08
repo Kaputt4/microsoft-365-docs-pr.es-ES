@@ -1,6 +1,6 @@
 ---
-title: Configuración de opciones de examen para antivirus de Microsoft Defender
-description: Puede configurar antivirus de Microsoft Defender para examinar archivos de almacenamiento de correo electrónico, puntos de copia de seguridad o de reanálisis, archivos de red y archivos archivados (por ejemplo, archivos .zip).
+title: Configuración de opciones de examen para Microsoft Defender Antivirus
+description: Puede configurar Microsoft Defender Antivirus para examinar archivos de almacenamiento de correo electrónico, puntos de copia de seguridad o de reanálisis, archivos de red y archivos archivados (por ejemplo, archivos .zip).
 keywords: análisis avanzados, escaneo, correo electrónico, archivo, zip, rar, archivo, examen de repetición de análisis
 ms.pagetype: security
 ms.service: microsoft-365-security
@@ -14,15 +14,17 @@ ms.reviewer: ''
 manager: dansimp
 ms.subservice: mde
 ms.date: 12/03/2021
-ms.collection: M365-security-compliance
+ms.collection:
+- m365-security
+- tier2
 ms.topic: how-to
 search.appverid: met150
-ms.openlocfilehash: 8e169a8b63d0e19ccc4e199500ff93a562f7a792
-ms.sourcegitcommit: 9b133379196da2b3a4bb311b07ff274f43780f68
+ms.openlocfilehash: 9280bb06c6701c05b42be5fa5c5686bfedfaf434
+ms.sourcegitcommit: b9282493c371d59c2e583b9803825096499b5e2c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/14/2022
-ms.locfileid: "67697943"
+ms.lasthandoff: 09/29/2022
+ms.locfileid: "68151483"
 ---
 # <a name="configure-microsoft-defender-antivirus-scanning-options"></a>Configurar opciones de análisis del Antivirus de Microsoft Defender
 
@@ -36,7 +38,7 @@ ms.locfileid: "67697943"
 
 ## <a name="use-microsoft-intune-to-configure-scanning-options"></a>Uso de Microsoft Intune para configurar opciones de examen
 
-Para obtener más información, consulte [Configuración de las opciones de restricción de dispositivos en Microsoft Intune](/intune/device-restrictions-configure) y Configuración [de restricciones de dispositivos del Antivirus de Microsoft Defender para Windows 10 en Intune](/intune/device-restrictions-windows-10#microsoft-defender-antivirus).
+Para obtener más información, consulte [Configuración de las opciones de restricción de dispositivos en Microsoft Intune](/intune/device-restrictions-configure) y [Microsoft Defender Configuración de restricciones de dispositivos antivirus para Windows 10 en Intune](/intune/device-restrictions-windows-10#microsoft-defender-antivirus).
 
 ## <a name="use-microsoft-endpoint-manager-to-configure-scanning-options"></a>Uso de Microsoft Endpoint Manager para configurar opciones de examen
 
@@ -55,7 +57,7 @@ Para obtener más información sobre cómo configurar Microsoft Endpoint Manager
 
 3. En el **Editor de administración de directiva de grupo**, vaya a **Configuración del equipo** y haga clic en **Plantillas administrativas**.
 
-4. Expanda el árbol a **componentes** \> de Windows **Antivirus de Microsoft Defender** y, a continuación, seleccione una ubicación (consulte [Configuración y ubicaciones](#settings-and-locations) de este artículo).
+4. Expanda el árbol a **componentes** \> **de Windows Microsoft Defender Antivirus** y, a continuación, seleccione una ubicación (consulte [Configuración y ubicaciones](#settings-and-locations) de este artículo).
 
 5. Edite el objeto de directiva.
 
@@ -83,10 +85,10 @@ Para obtener más información sobre cómo configurar Microsoft Endpoint Manager
 
 ## <a name="use-powershell-to-configure-scanning-options"></a>Uso de PowerShell para configurar opciones de examen
 
-Para obtener más información sobre cómo usar PowerShell con el Antivirus de Microsoft Defender, consulte
+Para obtener más información sobre cómo usar PowerShell con Microsoft Defender Antivirus, consulte
 
-- [Administración del Antivirus de Microsoft Defender con cmdlets de PowerShell](use-powershell-cmdlets-microsoft-defender-antivirus.md)
-- [Cmdlets del Antivirus de Microsoft Defender](/powershell/module/defender/)
+- [Administración de Microsoft Defender Antivirus con cmdlets de PowerShell](use-powershell-cmdlets-microsoft-defender-antivirus.md)
+- [cmdlets Microsoft Defender Antivirus](/powershell/module/defender/)
 
 ## <a name="use-wmi-to-configure-scanning-options"></a>Uso de WMI para configurar opciones de examen
 
@@ -100,9 +102,9 @@ Email examen permite examinar los archivos de correo electrónico utilizados por
 - Mbx
 - MIME
 
-Los archivos PST usados por Outlook 2003 o versiones anteriores (donde el tipo de archivo está establecido en no Unicode) también se examinan, pero Antivirus de Microsoft Defender no puede corregir las amenazas que se detectan dentro de archivos PST.
+Los archivos PST utilizados por Outlook 2003 o versiones anteriores (donde el tipo de archivo está establecido en no Unicode) también se examinan, pero Microsoft Defender Antivirus no puede corregir las amenazas que se detectan dentro de los archivos PST.
 
-Si Antivirus de Microsoft Defender detecta una amenaza dentro de un mensaje de correo electrónico, le mostrará la siguiente información para ayudarle a identificar el correo electrónico en peligro, de modo que pueda corregir la amenaza manualmente:
+Si Microsoft Defender Antivirus detecta una amenaza dentro de un mensaje de correo electrónico, le mostrará la siguiente información para ayudarle a identificar el correo electrónico en peligro, de modo que pueda corregir la amenaza manualmente:
 
 - Asunto del correo electrónico
 - Nombre de datos adjuntos
@@ -123,7 +125,7 @@ En cualquier sistema operativo, solo se examinan las unidades de red asignadas e
 
 ## <a name="see-also"></a>Vea también
 
-- [Personalización, inicio y revisión de los resultados de los exámenes y correcciones del Antivirus de Microsoft Defender](customize-run-review-remediate-scans-microsoft-defender-antivirus.md)
+- [Personalización, inicio y revisión de los resultados de los exámenes y correcciones de Microsoft Defender Antivirus](customize-run-review-remediate-scans-microsoft-defender-antivirus.md)
 - [Configurar y ejecutar análisis bajo petición en el Antivirus de Microsoft Defender](run-scan-microsoft-defender-antivirus.md)
-- [Configuración de exámenes programados del Antivirus de Microsoft Defender](scheduled-catch-up-scans-microsoft-defender-antivirus.md)
+- [Configuración de exámenes programados Microsoft Defender Antivirus](scheduled-catch-up-scans-microsoft-defender-antivirus.md)
 - [Antivirus de Microsoft Defender en Windows 10](microsoft-defender-antivirus-in-windows-10.md)

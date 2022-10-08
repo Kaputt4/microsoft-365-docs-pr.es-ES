@@ -14,19 +14,22 @@ f1_keywords:
 ms.service: O365-seccomp
 ms.localizationpriority: medium
 ms.collection:
-- M365-security-compliance
+- tier3
+- purview-compliance
 hideEdit: true
 feedback_system: None
 recommendations: false
 description: Definición de entidad de tipo de información confidencial del número de licencia de conducir de Malta.
-ms.openlocfilehash: af50ea8bd508053b922cd55d26f299aa080e2bc3
-ms.sourcegitcommit: 5aed330d8af523f0dffe5e392f1c79f047e38172
+ms.openlocfilehash: dc6ebef773d306ba69f880d309bb64b086e45575
+ms.sourcegitcommit: 6df492719fecc2b213d55465dc1cd60ab4627ed6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/21/2022
-ms.locfileid: "67000474"
+ms.lasthandoff: 10/04/2022
+ms.locfileid: "68382257"
 ---
 # <a name="malta-drivers-license-number"></a>Número del permiso de conducir de Malta
+
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
 
 ## <a name="format"></a>Formato
 
@@ -50,7 +53,7 @@ No
 
 Una política de DLP tiene confianza media en que ha detectado este tipo de información confidencial si, dentro de una proximidad de 300 caracteres:
 
-- La expresión `Regex_malta_eu_driver's_license_number` regular busca contenido que coincida con el patrón.
+- La expresión regular `Regex_malta_eu_driver's_license_number` encuentra contenido que coincide con el patrón.
 - Se encuentra una palabra clave de `Keywords_eu_driver's_license_number` o `Keywords_malta_eu_driver's_license_number`.
 
 ```xml

@@ -11,17 +11,19 @@ author: siosulli
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
-ms.collection: M365-security-compliance
+ms.collection:
+- m365-security
+- tier3
 ms.topic: article
 ms.subservice: mde
 ms.custom: api
 search.appverid: met150
-ms.openlocfilehash: 5aa9ba2cc42784c39f183346f41b72f24424f6a9
-ms.sourcegitcommit: 9b133379196da2b3a4bb311b07ff274f43780f68
+ms.openlocfilehash: 71c005591d1dda839c9db2cf2d0d5454a73f5229
+ms.sourcegitcommit: 0b7070ec119e00e0dafe030bbfbef0ae5c9afa19
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/14/2022
-ms.locfileid: "67694599"
+ms.lasthandoff: 09/29/2022
+ms.locfileid: "68192847"
 ---
 # <a name="list-all-security-baselines-assessment-profiles"></a>Enumerar todos los perfiles de evaluación de líneas de base de seguridad
 
@@ -69,7 +71,7 @@ Authorization|Cadena|Portador {token}. **Necesario**.
 |Referencia | Cadena | La prueba comparativa del perfil.
 |version | Cadena | La versión del perfil.
 |operatingSystem|Cadena|El perfil del sistema operativo aplicable.
-|operatingSystemVersion|String|La versión del sistema operativo aplicable al perfil.
+|operatingSystemVersion|Cadena|La versión del sistema operativo aplicable al perfil.
 |status|Boolean|Indica si el perfil está activo o no
 |complianceLevel|Cadena|Nivel de cumplimiento elegido para el perfil.
 |settingsNumber|Int|Número de configuraciones seleccionadas en el perfil.

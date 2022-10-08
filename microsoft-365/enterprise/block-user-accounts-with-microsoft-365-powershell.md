@@ -1,16 +1,18 @@
 ---
-title: Bloquear Microsoft 365 cuentas de usuario con PowerShell
+title: Bloquear cuentas de usuario de Microsoft 365 con PowerShell
 ms.author: kvice
 author: kelleyvice-msft
 manager: scotv
 ms.date: 07/16/2020
 audience: Admin
 ms.topic: article
-ms.service: o365-administration
+ms.service: microsoft-365-enterprise
 ms.localizationpriority: medium
 search.appverid:
 - MET150
-ms.collection: Ent_O365
+ms.collection:
+- scotvorg
+- Ent_O365
 f1.keywords:
 - CSH
 ms.custom:
@@ -18,23 +20,23 @@ ms.custom:
 - PowerShell
 - seo-marvel-apr2020
 ms.assetid: 04e58c2a-400b-496a-acd4-8ec5d37236dc
-description: Cómo usar PowerShell para bloquear y desbloquear el acceso a cuentas de Microsoft 365.
-ms.openlocfilehash: ffeac03f9f48e6531443a8f90a3d5fd3506172fe
-ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
+description: Cómo usar PowerShell para bloquear y desbloquear el acceso a las cuentas de Microsoft 365.
+ms.openlocfilehash: ab212909aa0fa664bee42ac7d5ca74b4b29f7994
+ms.sourcegitcommit: 0b7070ec119e00e0dafe030bbfbef0ae5c9afa19
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "65091619"
+ms.lasthandoff: 09/29/2022
+ms.locfileid: "68163456"
 ---
-# <a name="block-microsoft-365-user-accounts-with-powershell"></a>Bloquear Microsoft 365 cuentas de usuario con PowerShell
+# <a name="block-microsoft-365-user-accounts-with-powershell"></a>Bloquear cuentas de usuario de Microsoft 365 con PowerShell
 
-*Este artículo se aplica tanto a Microsoft 365 Enterprise como a Office 365 Enterprise.*
+*Este artículo afecta tanto a Office 365 Enterprise como a Microsoft 365 Enterprise*
 
-Al bloquear el acceso a una cuenta de Microsoft 365, impide que nadie use la cuenta para iniciar sesión y acceder a los servicios y datos de la organización Microsoft 365. Puede usar PowerShell para bloquear el acceso a cuentas de usuario individuales o varias.
+Al bloquear el acceso a una cuenta de Microsoft 365, impide que nadie use la cuenta para iniciar sesión y acceder a los servicios y datos de su organización de Microsoft 365. Puede usar PowerShell para bloquear el acceso a cuentas de usuario individuales o varias.
 
 ## <a name="use-the-azure-active-directory-powershell-for-graph-module"></a>Use el módulo de PowerShell Azure Active Directory para Graph
 
-En primer lugar, [conéctese al inquilino de Microsoft 365](connect-to-microsoft-365-powershell.md#connect-with-the-azure-active-directory-powershell-for-graph-module).
+En primer lugar, [conéctese a su inquilino de Microsoft 365](connect-to-microsoft-365-powershell.md#connect-with-the-azure-active-directory-powershell-for-graph-module).
 
 ### <a name="block-access-to-individual-user-accounts"></a>Bloquear el acceso a cuentas de usuario individuales
 
@@ -114,7 +116,7 @@ Get-Content "C:\My Documents\Accounts.txt" | ForEach {Set-AzureADUser -ObjectID 
 
 ## <a name="use-the-microsoft-azure-active-directory-module-for-windows-powershell"></a>Use el Módulo Microsoft Azure Active Directory para Windows PowerShell
 
-En primer lugar, [conéctese al inquilino de Microsoft 365](connect-to-microsoft-365-powershell.md#connect-with-the-microsoft-azure-active-directory-module-for-windows-powershell).
+En primer lugar, [conéctese a su inquilino de Microsoft 365](connect-to-microsoft-365-powershell.md#connect-with-the-microsoft-azure-active-directory-module-for-windows-powershell).
 
 ### <a name="block-individual-user-accounts"></a>Bloquear cuentas de usuario individuales
 
@@ -127,7 +129,7 @@ Set-MsolUser -UserPrincipalName <sign-in name of user account>  -BlockCredential
 >[!Note]
 >PowerShell Core no admite el módulo Microsoft Azure Active Directory para Windows PowerShell módulo y cmdlets que tengan *Msol* en su nombre. Debe ejecutar estos cmdlets desde Windows PowerShell.
 
-En este ejemplo se bloquea el acceso a la cuenta de usuario *fabricec\@ litwareinc.com*.
+En este ejemplo se bloquea el acceso a la cuenta de usuario *fabricec\@litwareinc.com*.
 
 ```powershell
 Set-MsolUser -UserPrincipalName fabricec@litwareinc.com -BlockCredential $true
@@ -168,7 +170,7 @@ Para desbloquear las cuentas enumeradas en el archivo de texto, ejecute el sigui
   Get-Content "C:\My Documents\Accounts.txt" | ForEach { Set-MsolUser -UserPrincipalName $_ -BlockCredential $false }
   ```
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 [Administrar cuentas de usuario, licencias y grupos de Microsoft 365 con PowerShell](manage-user-accounts-and-licenses-with-microsoft-365-powershell.md)
 

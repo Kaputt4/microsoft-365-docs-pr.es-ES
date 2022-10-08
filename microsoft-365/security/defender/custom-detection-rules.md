@@ -17,15 +17,16 @@ ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection:
-- M365-security-compliance
+- m365-security
 - m365initiative-m365-defender
+- tier2
 ms.topic: article
-ms.openlocfilehash: 100eb64b5c99cb2292c7b10bb2345ebf634b61e6
-ms.sourcegitcommit: 10e6abe740e27000e223378eb17d657a47555fa8
+ms.openlocfilehash: 304883b0d0ba554c5f2f0d4044c03445662d5fe9
+ms.sourcegitcommit: ef0c7a914782999d148c79240b2d3f7be53e5690
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/31/2022
-ms.locfileid: "67477899"
+ms.lasthandoff: 09/28/2022
+ms.locfileid: "68138175"
 ---
 # <a name="create-and-manage-custom-detections-rules"></a>Creación y administración de reglas de detecciones personalizadas
 
@@ -127,9 +128,9 @@ Con la consulta en el editor de consultas, seleccione **Crear regla de detecció
 Al guardar una nueva regla, se ejecuta y comprueba si hay coincidencias de los últimos 30 días de datos. A continuación, la regla se ejecuta de nuevo a intervalos fijos, aplicando una duración de devolución de la vista en función de la frecuencia que elija:
 
 - **Cada 24 horas**: se ejecuta cada 24 horas, comprobando los datos de los últimos 30 días
-- **Cada 12 horas**: se ejecuta cada 12 horas, comprobando los datos de las últimas 24 horas
-- **Cada 3 horas**: se ejecuta cada 3 horas, comprobando los datos de las últimas 6 horas
-- **Cada hora**: se ejecuta por hora, comprobando los datos de las últimas 2 horas
+- **Cada 12 horas**: se ejecuta cada 12 horas, comprobando los datos de las últimas 48 horas
+- **Cada 3 horas**: se ejecuta cada 3 horas, comprobando los datos de las últimas 12 horas
+- **Cada hora**: se ejecuta por hora, comprobando los datos de las últimas 4 horas
 
 Al editar una regla, se ejecutará con los cambios aplicados en la siguiente hora de ejecución programada según la frecuencia que establezca. La frecuencia de la regla se basa en la marca de tiempo del evento y no en el tiempo de ingesta.
 
@@ -152,7 +153,7 @@ La regla de detección personalizada puede realizar automáticamente acciones en
 Estas acciones se aplican a los dispositivos de la `DeviceId` columna de los resultados de la consulta:
 - **Aislar dispositivo**: usa Microsoft Defender para punto de conexión para aplicar aislamiento de red completo, lo que impide que el dispositivo se conecte a cualquier aplicación o servicio. [Más información sobre Microsoft Defender para punto de conexión aislamiento de máquina](/windows/security/threat-protection/microsoft-defender-atp/respond-machine-alerts#isolate-devices-from-the-network)
 - **Recopilar paquete de investigación**: recopila información del dispositivo en un archivo ZIP. [Más información sobre el paquete de investigación de Microsoft Defender para punto de conexión](/windows/security/threat-protection/microsoft-defender-atp/respond-machine-alerts#collect-investigation-package-from-devices)
-- **Ejecución del examen antivirus**: realiza un examen completo del Antivirus de Microsoft Defender en el dispositivo
+- **Ejecutar examen antivirus**: realiza un examen completo Microsoft Defender antivirus en el dispositivo
 - **Iniciar investigación**: inicia una [investigación automatizada](m365d-autoir.md) en el dispositivo
 - **Restringir la ejecución** de aplicaciones: establece restricciones en el dispositivo para permitir que solo se ejecuten los archivos que están firmados con un certificado emitido por Microsoft. [Más información sobre las restricciones de aplicaciones con Microsoft Defender para punto de conexión](/microsoft-365/security/defender-endpoint/respond-machine-alerts#restrict-app-execution)
 

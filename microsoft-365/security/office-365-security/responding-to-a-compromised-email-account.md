@@ -9,7 +9,7 @@ audience: ITPro
 ms.topic: how-to
 ms.collection:
 - o365_security_incident_response
-- M365-security-compliance
+- m365-security
 - m365solution-smb
 - highpri
 ms.custom:
@@ -21,12 +21,12 @@ search.appverid:
 description: Aprenda a reconocer y responder a una cuenta de correo electrónico comprometida utilizando las herramientas disponibles en Microsoft 365.
 ms.subservice: mdo
 ms.service: microsoft-365-security
-ms.openlocfilehash: a4b491a8a1fa3b8db000874357c5d5dbfbe91d38
-ms.sourcegitcommit: 95ac076310ab9006ed92c69938f7ae771cd10826
+ms.openlocfilehash: c2bc977d80cb2226f3348cf4d53715c5e079756e
+ms.sourcegitcommit: 12af9e8e3a6eaa090fda9e98ccb831dff65863a4
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/20/2022
-ms.locfileid: "67850224"
+ms.lasthandoff: 09/27/2022
+ms.locfileid: "68054938"
 ---
 # <a name="responding-to-a-compromised-email-account"></a>Responder a una cuenta de correo electrónico en peligro
 
@@ -47,7 +47,7 @@ Con las credenciales robadas, el atacante puede obtener acceso a archivos en One
 
 ## <a name="symptoms-of-a-compromised-microsoft-email-account"></a>Síntomas de una cuenta de correo electrónico de Microsoft en peligro
 
-Es posible que los usuarios observen y notifiquen actividades inusuales en sus buzones de Microsoft 365. Estos son algunos síntomas comunes:
+Users might notice and report unusual activity in their Microsoft 365 mailboxes. Here are some common symptoms:
 
 - Actividad sospechosa, como correos electrónicos eliminados o que faltan.
 - Otros usuarios pueden recibir correos electrónicos de la cuenta en peligro sin que el correo electrónico correspondiente aparezca en la carpeta **Elementos enviados** del remitente.
@@ -88,7 +88,7 @@ Siga los procedimientos que se describen en [Restablecer una contraseña de empr
 >
 > - Asegúrese de que la contraseña es segura y que contiene al menos un carácter especial, al menos un número y letras mayúsculas y minúsculas.
 >
-> - No vuelva a usar ninguna de las últimas cinco contraseñas. Aunque el requisito de historial de contraseña le permite volver a usar una contraseña más reciente, debería seleccionar algo que el atacante no pueda adivinar.
+> - Don't reuse any of your last five passwords. Even though the password history requirement lets you reuse a more recent password, you should select something that the attacker can't guess.
 >
 > - Si la identidad local se federa con Microsoft 365, debe cambiar la contraseña en el entorno local y, a continuación, debe notificar el peligro a su administrador.
 >
@@ -158,7 +158,7 @@ Para desbloquear el envío de correo de un buzón, siga los procedimientos descr
 
 2. En el portal de Microsoft 365 Defender en <https://security.microsoft.com>, siga estos pasos:
    1. Vaya a **Permisos y roles** \> **Correo electrónico y roles de colaboración** \> **Roles**. Para ir directamente a la página **Permisos**, use <https://security.microsoft.com/emailandcollabpermissions>.
-   2. En la página **Permisos**, seleccione cada grupo de roles de la lista y busque la cuenta de usuario en la sección **Miembros** del menú flotante de detalles que aparece. Si el grupo de roles contiene la cuenta de usuario, siga estos pasos:
+   2. On the **Permissions** page, select each role group in the list and look for the user account in the **Members** section of the details flyout that appears. If the role group contains the user account, do the following steps:
       1. En la sección **Miembros**, haga clic en **Editar**.
       2. En el control flotante **Editar Elegir miembros** que aparece, haga clic en **Editar**.
       3. En el control flotante **Elegir miembros** que aparece, haga clic en **Quitar**.

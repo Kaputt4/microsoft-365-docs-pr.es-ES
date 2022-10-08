@@ -13,17 +13,17 @@ search.appverid:
 - MOE150
 ms.assetid: 078eb946-819a-4e13-8673-fe0c0ad3a775
 ms.collection:
-- M365-security-compliance
+- m365-security
 description: Obtenga información sobre cómo definir directivas de datos adjuntos seguros para proteger su organización de archivos malintencionados en el correo electrónico.
 ms.custom: seo-marvel-apr2020
 ms.subservice: mdo
 ms.service: microsoft-365-security
-ms.openlocfilehash: 11d6a276d40441092b3d4f060933cfb2968e0a8e
-ms.sourcegitcommit: 173f696dc8f81259d852775572a6938ec39f6115
+ms.openlocfilehash: 0ab079d36a8f750975ee2b60f273e119cdfa5392
+ms.sourcegitcommit: 12af9e8e3a6eaa090fda9e98ccb831dff65863a4
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/10/2022
-ms.locfileid: "67644211"
+ms.lasthandoff: 09/27/2022
+ms.locfileid: "68048814"
 ---
 # <a name="set-up-safe-attachments-policies-in-microsoft-defender-for-office-365"></a>Configuración de directivas de datos adjuntos seguros en Microsoft Defender para Office 365
 
@@ -102,11 +102,11 @@ La creación de una directiva de datos adjuntos seguros personalizados en el por
 
    Haga clic en el cuadro correspondiente, comience a escribir un valor y seleccione el valor que desee de los resultados. Repita este proceso tantas veces como sea necesario. Para quitar un valor existente, haga clic en Quitar ![Icono Quitar.](../../media/m365-cc-sc-remove-selection-icon.png) junto al valor.
 
-   Para los usuarios o grupos, puede utilizar la mayoría de los identificadores (nombre, nombre para mostrar, alias, dirección de correo electrónico, nombre de la cuenta, etc.), pero el nombre para mostrar correspondiente se muestra en los resultados. Para los usuarios, introduzca un asterisco (\*) por sí mismo para ver todos los valores disponibles.
+   For users or groups, you can use most identifiers (name, display name, alias, email address, account name, etc.), but the corresponding display name is shown in the results. For users, enter an asterisk (\*) by itself to see all available values.
 
    Varios valores en la misma condición usan la lógica OR (por ejemplo, _\<recipient1\>_ o _\<recipient2\>_). Hay diferentes condiciones que usan la lógica AND (por ejemplo, _\<recipient1\>_ y _\<member of group 1\>_).
 
-   - **Excluir estos usuarios, grupos y dominios**: para agregar excepciones para los destinatarios internos a los que se aplica la directiva (excepciones de destinatarios), seleccione esta opción y configure las excepciones. La configuración y el comportamiento son exactamente iguales a las condiciones.
+   - **Exclude these users, groups, and domains**: To add exceptions for the internal recipients that the policy applies to (recipient exceptions), select this option and configure the exceptions. The settings and behavior are exactly like the conditions.
 
    > [!IMPORTANT]
    > Los diferentes tipos de condiciones o excepciones no son aditivos; son inclusivos. La directiva se aplica _solo_ a los destinatarios que coinciden con _todos_ los filtros de destinatarios especificados. Por ejemplo, se configura una condición de filtro de destinatario en la directiva con los siguientes valores:
@@ -178,8 +178,8 @@ Para habilitar o deshabilitar una directiva o establecer el orden de prioridad d
 2. En la página **Datos adjuntos seguros** , haga clic en el nombre para seleccionar una directiva de la lista.
 
 3. En la parte superior del control flotante de detalles de la directiva que aparece, verá uno de los siguientes valores:
-   - **Directiva desactivada**: para activar la directiva, haga clic en ![icono Activar.](../../media/m365-cc-sc-turn-on-off-icon.png) **Activar** .
-   - **Directiva activada**: para desactivar la directiva, haga clic en el ![Icono Desactivar](../../media/m365-cc-sc-turn-on-off-icon.png) **Desactivar**.
+   - **Policy off**: To turn on the policy, click ![Turn on icon.](../../media/m365-cc-sc-turn-on-off-icon.png) **Turn on** .
+   - **Policy on**: To turn off the policy, click ![Turn off icon.](../../media/m365-cc-sc-turn-on-off-icon.png) **Turn off**.
 
 4. En el cuadro de diálogo de confirmación que aparece, haga clic **Activar** o **Desactivar**.
 
@@ -197,7 +197,7 @@ Las directivas de datos adjuntos seguros se muestran en el orden en que se proce
 
 **Nota**: En el portal de Microsoft 365 Defender, solo puede cambiar la prioridad de la directiva datos adjuntos seguros después de crearla. En PowerShell, puede invalidar la prioridad predeterminada al crear la regla de datos adjuntos seguros (que puede afectar a la prioridad de las reglas existentes).
 
-Para cambiar la prioridad de una directiva, haga clic en **Aumentar prioridad** o **Reducir prioridad** en las propiedades de la directiva (no puede modificar directamente el número de **Prioridad** en el portal de Microsoft 365 Defender). Cambiar la prioridad de una directiva sólo tiene sentido si tiene varias directivas.
+To change the priority of a policy, you click **Increase priority** or **Decrease priority** in the properties of the policy (you can't directly modify the **Priority** number in the Microsoft 365 Defender portal). Changing the priority of a policy only makes sense if you have multiple policies.
 
 1. En el portal de Microsoft 365 Defender, vaya a Email & Directivas de **colaboración** \> **& Reglas** \> Directivas de **amenazas** \> **Datos adjuntos seguros** en la sección **Directivas**.
 
@@ -208,7 +208,7 @@ Para cambiar la prioridad de una directiva, haga clic en **Aumentar prioridad** 
    - La directiva con el valor **de prioridad** más bajo (por ejemplo, **3**) solo tiene la opción **Aumentar prioridad** disponible.
    - Si tiene tres o más directivas, las directivas entre los valores de prioridad más altos y más bajos tienen disponibles las opciones **Aumentar prioridad** y **Reducir prioridad** .
 
-   Haga clic en el ![Icono Aumentar la prioridad.](../../media/m365-cc-sc-increase-icon.png) **Aumentar la prioridad** o en el ![Icono Disminuir la prioridad](../../media/m365-cc-sc-decrease-icon.png) **Reducir la prioridad** para cambiar el valor de **Prioridad**.
+   Haga clic en ![el icono Aumentar prioridad.](../../media/m365-cc-sc-increase-icon.png) **Icono Aumentar prioridad** o ![Reducir prioridad](../../media/m365-cc-sc-decrease-icon.png) **Disminución de prioridad** para cambiar el valor **de Prioridad** .
 
 4. Cuando haya terminado, haga clic en **Cerrar** en el control flotante de detalles de la directiva.
 
@@ -405,7 +405,7 @@ Para obtener información detallada sobre la sintaxis y los parámetros, vea [En
 
 ### <a name="use-powershell-to-set-the-priority-of-safe-attachment-rules"></a>Uso de PowerShell para establecer la prioridad de las reglas de datos adjuntos seguros
 
-El valor de prioridad máximo que se puede establecer en una regla es 0. El valor mínimo depende del número de reglas. Por ejemplo, si tiene cinco reglas, puede usar los valores de prioridad del 0 al 4. El cambio de prioridad de una regla existente puede tener un efecto cascada en otras reglas. Por ejemplo, si tiene cinco reglas personalizadas (prioridades del 0 al 4) y cambia la prioridad de una regla a 2, la regla existente de prioridad 2 cambia a prioridad 3 y la regla de prioridad 3 cambia a prioridad 4.
+The highest priority value you can set on a rule is 0. The lowest value you can set depends on the number of rules. For example, if you have five rules, you can use the priority values 0 through 4. Changing the priority of an existing rule can have a cascading effect on other rules. For example, if you have five custom rules (priorities 0 through 4), and you change the priority of a rule to 2, the existing rule with priority 2 is changed to priority 3, and the rule with priority 3 is changed to priority 4.
 
 Para establecer la prioridad de una regla de datos adjuntos seguros en PowerShell, use la sintaxis siguiente:
 
@@ -413,7 +413,7 @@ Para establecer la prioridad de una regla de datos adjuntos seguros en PowerShel
 Set-SafeAttachmentRule -Identity "<RuleName>" -Priority <Number>
 ```
 
-En el ejemplo siguiente, la prioridad de la regla denominada "Marketing Department" se establece en 2. Todas las reglas existentes que tienen una prioridad menor o igual a 2 se reducen en 1 (sus números de prioridad aumentan en 1).
+This example sets the priority of the rule named Marketing Department to 2. All existing rules that have a priority less than or equal to 2 are decreased by 1 (their priority numbers are increased by 1).
 
 ```PowerShell
 Set-SafeAttachmentRule -Identity "Marketing Department" -Priority 2

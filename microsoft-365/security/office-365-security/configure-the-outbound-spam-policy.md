@@ -13,18 +13,18 @@ search.appverid:
 - MET150
 ms.assetid: a44764e9-a5d2-4c67-8888-e7fb871c17c7
 ms.collection:
-- M365-security-compliance
+- m365-security
 ms.custom:
 - seo-marvel-apr2020
 description: Los administradores pueden aprender a ver, crear, modificar y eliminar directivas de correo no deseado saliente en Exchange Online Protection (EOP).
 ms.subservice: mdo
 ms.service: microsoft-365-security
-ms.openlocfilehash: 03b6769e91ce667cafe2318a5ea4a7a44550bc67
-ms.sourcegitcommit: 651610ca73bfd1d008d97311b59782790df664fb
+ms.openlocfilehash: a39fd3fa850ffa82c5ff0d44b61d1828bf1dbf4a
+ms.sourcegitcommit: 12af9e8e3a6eaa090fda9e98ccb831dff65863a4
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/07/2022
-ms.locfileid: "67613480"
+ms.lasthandoff: 09/27/2022
+ms.locfileid: "68082645"
 ---
 # <a name="configure-outbound-spam-filtering-in-eop"></a>Configuración del filtrado de correo no deseado saliente en EOP
 
@@ -80,7 +80,7 @@ Para aumentar la eficacia del filtrado de correo no deseado saliente, puede crea
 
   **Notas**:
 
-  - La adición de usuarios al rol correspondiente de Azure Active Directory en el Centro de administración de Microsoft 365 proporciona a los usuarios los permisos necesarios _y_ los permisos para otras características de Microsoft 365. Para obtener más información, consulte [Acerca de los roles de administrador](../../admin/add-users/about-admin-roles.md).
+  - Adding users to the corresponding Azure Active Directory role in the Microsoft 365 admin center gives users the required permissions _and_ permissions for other features in Microsoft 365. For more information, see [About admin roles](../../admin/add-users/about-admin-roles.md).
   - El grupo de roles **Administración de organización de solo lectura** en [Exchange Online](/Exchange/permissions-exo/permissions-exo#role-groups) también proporciona acceso de solo lectura a la característica.
 
 - Para ver nuestra configuración recomendada para las directivas de correo no deseado saliente, consulte [Configuración de la directiva de filtro de correo no deseado saliente de EOP](recommended-settings-for-eop-and-office365.md#eop-outbound-spam-policy-settings).
@@ -95,7 +95,7 @@ La creación de una directiva de correo no deseado de salida personalizada en el
 
 2. En la página **Directivas contra correo no deseado** , haga clic en ![el icono Crear.](../../media/m365-cc-sc-create-icon.png) **Cree una directiva** y, a continuación, seleccione **Saliente** en la lista desplegable.
 
-3. Se abre el asistente de directivas. En la página **Nombre de la directiva**, configure estas opciones:
+3. Se abrirá el asistente para directivas. En la **página Asigne un nombre a la directiva**, configure estas opciones:
    - **Nombre**: escriba un nombre único y descriptivo para la directiva.
    - **Descripción**: escriba una descripción opcional para la directiva.
 
@@ -110,7 +110,7 @@ La creación de una directiva de correo no deseado de salida personalizada en el
 
    Haga clic en el cuadro correspondiente, comience a escribir un valor y seleccione el valor que desee de los resultados. Repita este proceso tantas veces como sea necesario. Para quitar un valor existente, haga clic en Quitar ![Icono Quitar.](../../media/m365-cc-sc-remove-selection-icon.png) junto al valor.
 
-   Para los usuarios o grupos, puede utilizar la mayoría de los identificadores (nombre, nombre para mostrar, alias, dirección de correo electrónico, nombre de la cuenta, etc.), pero el nombre para mostrar correspondiente se muestra en los resultados. Para los usuarios, introduzca un asterisco (\*) por sí mismo para ver todos los valores disponibles.
+   For users or groups, you can use most identifiers (name, display name, alias, email address, account name, etc.), but the corresponding display name is shown in the results. For users, enter an asterisk (\*) by itself to see all available values.
 
    Varios valores en la misma condición usan la lógica OR (por ejemplo, _\<sender1\>_ o _\<sender2\>_). Hay diferentes condiciones que usan la lógica AND (por ejemplo, _\<sender1\>_ y _\<member of group 1\>_).
 
@@ -227,8 +227,8 @@ No puede deshabilitar la directiva de correo no deseado saliente predeterminada.
 2. En la página **Directivas contra correo no deseado** , seleccione una directiva con el **valor Tipo** de Directiva de **correo no deseado de salida personalizada** de la lista haciendo clic en el nombre.
 
 3. En la parte superior del control flotante de detalles de la directiva que aparece, verá uno de los siguientes valores:
-   - **Directiva desactivada**: para activar la directiva, haga clic en ![icono Activar.](../../media/m365-cc-sc-turn-on-off-icon.png) **Activar** .
-   - **Directiva activada**: para desactivar la directiva, haga clic en el ![Icono Desactivar](../../media/m365-cc-sc-turn-on-off-icon.png) **Desactivar**.
+   - **Policy off**: To turn on the policy, click ![Turn on icon.](../../media/m365-cc-sc-turn-on-off-icon.png) **Turn on** .
+   - **Policy on**: To turn off the policy, click ![Turn off icon.](../../media/m365-cc-sc-turn-on-off-icon.png) **Turn off**.
 
 4. En el cuadro de diálogo de confirmación que aparece, haga clic **Activar** o **Desactivar**.
 
@@ -240,7 +240,7 @@ De nuevo en la página principal de la directiva, el valor **Estado** de la dire
 
 De forma predeterminada, las directivas de correo no deseado saliente tienen una prioridad que se basa en el orden en el que se crearon (las directivas más recientes son menos prioritarias que las directivas anteriores). Un número de prioridad más bajo indica una prioridad mayor de la directiva (0 es el más alto) y las directivas se procesan por orden de prioridad (las directivas de prioridad mayor se procesan antes que las directivas de prioridad menor). Ninguna de las dos directivas puede tener la misma prioridad, y el procesamiento de directivas se detendrá cuando se aplique la primera directiva.
 
-Para cambiar la prioridad de una directiva, haga clic en **Aumentar prioridad** o **Reducir prioridad** en las propiedades de la directiva (no puede modificar directamente el número de **Prioridad** en el portal de Microsoft 365 Defender). Cambiar la prioridad de una directiva sólo tiene sentido si tiene varias directivas.
+To change the priority of a policy, you click **Increase priority** or **Decrease priority** in the properties of the policy (you can't directly modify the **Priority** number in the Microsoft 365 Defender portal). Changing the priority of a policy only makes sense if you have multiple policies.
 
  **Notas**:
 
@@ -256,7 +256,7 @@ Para cambiar la prioridad de una directiva, haga clic en **Aumentar prioridad** 
    - La directiva de correo no deseado saliente con el valor **de prioridad** más bajo (por ejemplo, **3**) solo tiene la opción **Aumentar prioridad** disponible.
    - Si tiene tres o más directivas de correo no deseado saliente, las directivas entre los valores de prioridad más alta y más baja tienen disponibles las opciones **Aumentar prioridad** y **Reducir prioridad** .
 
-   Haga clic en el ![Icono Aumentar la prioridad.](../../media/m365-cc-sc-increase-icon.png) **Aumentar la prioridad** o en el ![Icono Disminuir la prioridad](../../media/m365-cc-sc-decrease-icon.png) **Reducir la prioridad** para cambiar el valor de **Prioridad**.
+   Haga clic en ![el icono Aumentar prioridad.](../../media/m365-cc-sc-increase-icon.png) **Icono Aumentar prioridad** o ![Reducir prioridad](../../media/m365-cc-sc-decrease-icon.png) **Disminución de prioridad** para cambiar el valor **de Prioridad** .
 
 4. Cuando haya terminado, haga clic en **Cerrar** en el control flotante de detalles de la directiva.
 
@@ -449,7 +449,7 @@ Para obtener información detallada sobre la sintaxis y los parámetros, vea [En
 
 ### <a name="use-powershell-to-set-the-priority-of-outbound-spam-filter-rules"></a>Uso de PowerShell para establecer la prioridad de las reglas de filtro de correo no deseado saliente
 
-El valor de prioridad máximo que se puede establecer en una regla es 0. El valor mínimo depende del número de reglas. Por ejemplo, si tiene cinco reglas, puede usar los valores de prioridad del 0 al 4. El cambio de prioridad de una regla existente puede tener un efecto cascada en otras reglas. Por ejemplo, si tiene cinco reglas personalizadas (prioridades del 0 al 4) y cambia la prioridad de una regla a 2, la regla existente de prioridad 2 cambia a prioridad 3 y la regla de prioridad 3 cambia a prioridad 4.
+The highest priority value you can set on a rule is 0. The lowest value you can set depends on the number of rules. For example, if you have five rules, you can use the priority values 0 through 4. Changing the priority of an existing rule can have a cascading effect on other rules. For example, if you have five custom rules (priorities 0 through 4), and you change the priority of a rule to 2, the existing rule with priority 2 is changed to priority 3, and the rule with priority 3 is changed to priority 4.
 
 Para establecer la prioridad de una regla de filtro de correo no deseado saliente en PowerShell, use la sintaxis siguiente:
 
@@ -457,7 +457,7 @@ Para establecer la prioridad de una regla de filtro de correo no deseado salient
 Set-HostedOutboundSpamFilterRule -Identity "<RuleName>" -Priority <Number>
 ```
 
-En el ejemplo siguiente, la prioridad de la regla denominada "Marketing Department" se establece en 2. Todas las reglas existentes que tienen una prioridad menor o igual a 2 se reducen en 1 (sus números de prioridad aumentan en 1).
+This example sets the priority of the rule named Marketing Department to 2. All existing rules that have a priority less than or equal to 2 are decreased by 1 (their priority numbers are increased by 1).
 
 ```PowerShell
 Set-HostedOutboundSpamFilterRule -Identity "Marketing Department" -Priority 2

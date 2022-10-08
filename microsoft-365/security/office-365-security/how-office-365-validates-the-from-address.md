@@ -14,17 +14,17 @@ search.appverid:
 - MET150
 ms.assetid: eef8408b-54d3-4d7d-9cf7-ad2af10b2e0e
 ms.collection:
-- M365-security-compliance
+- m365-security
 description: Los administradores pueden obtener información sobre los tipos de direcciones de correo electrónico aceptadas o rechazadas por Exchange Online Protection (EOP) y Outlook.com para ayudar a evitar la suplantación de identidad (phishing).
 ms.custom: seo-marvel-apr2020
 ms.subservice: mdo
 ms.service: microsoft-365-security
-ms.openlocfilehash: a4687ca9d9135a8feef66f4caabfcb7a3a2313b4
-ms.sourcegitcommit: 2b89bcff547e00be3d38dc8d1e6cbcf8f41eba42
+ms.openlocfilehash: 873f529e6dff8e805e947e3be3366c56215e1661
+ms.sourcegitcommit: 12af9e8e3a6eaa090fda9e98ccb831dff65863a4
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/03/2022
-ms.locfileid: "67598415"
+ms.lasthandoff: 09/27/2022
+ms.locfileid: "68077653"
 ---
 # <a name="how-eop-validates-the-from-address-to-prevent-phishing"></a>Cómo EOP valida la dirección Desde para evitar la suplantación de identidad (phishing)
 

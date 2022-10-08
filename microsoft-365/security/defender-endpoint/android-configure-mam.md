@@ -14,15 +14,16 @@ manager: dansimp
 ms.localizationpriority: medium
 audience: ITPro
 ms.collection:
-- m365-security-compliance
+- m365-security
+- tier3
 ms.topic: conceptual
 ms.subservice: mde
-ms.openlocfilehash: f8417501dbf1583cf2eb3e062e39822e6b0c2108
-ms.sourcegitcommit: 437461fa1d38ff9bb95dd8a1c5f0b94e8111ada2
+ms.openlocfilehash: 8465046f816880b68f51211ee0c9b2ffb209909e
+ms.sourcegitcommit: b9282493c371d59c2e583b9803825096499b5e2c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/14/2022
-ms.locfileid: "67679677"
+ms.lasthandoff: 09/29/2022
+ms.locfileid: "68145873"
 ---
 # <a name="configure-microsoft-defender-for-endpoint-risk-signals-using-app-protection-policies-mam"></a>Configuración de señales de riesgo Microsoft Defender para punto de conexión mediante directivas de protección de aplicaciones (MAM)
 
@@ -50,7 +51,7 @@ Los usuarios finales también deben realizar pasos para instalar Microsoft Defen
 
 ## <a name="admin-prerequisites"></a>Administración requisitos previos
 
-- **Validar que el conector de Microsoft Defender para Endpoint-Intune está habilitado**
+- **Validar que el Microsoft Defender para Endpoint-Intune conector está habilitado**
 
   a. Ve a security.microsoft.com. 
 
@@ -60,7 +61,7 @@ Los usuarios finales también deben realizar pasos para instalar Microsoft Defen
 
   :::image type="content" source="images/enable-intune-connection.png" alt-text="La sección Características avanzadas del portal de Microsoft 365 Defender" lightbox="images/enable-intune-connection.png":::
 
-  d. Vaya a **Microsoft Endpoint Manager (Intune)** y valide si el conector de Microsoft Defender para Endpoint-Intune está habilitado.
+  d. Vaya a **Microsoft Endpoint Manager (Intune)** y valide si Microsoft Defender para Endpoint-Intune conector está habilitado.
 
   :::image type="content" source="images/validate-intune-connector.png" alt-text="Panel de estado de intune-connector en el portal de Microsoft 365 Defender" lightbox="images/validate-intune-connector.png":::
 
@@ -79,7 +80,7 @@ Los usuarios finales también deben realizar pasos para instalar Microsoft Defen
 - **Crear una directiva de protección de aplicaciones** 
  
 Bloquee el acceso o borre los datos de una aplicación administrada en función de Microsoft Defender para punto de conexión señales de riesgo mediante la creación de una directiva de protección de aplicaciones.
-Microsoft Defender para punto de conexión se puede configurar para enviar señales de amenaza que se usarán en las directivas de protección de aplicaciones (APP, también conocida como MAM). Con esta funcionalidad, puede usar Microsoft Defender para punto de conexión para proteger las aplicaciones administradas.
+Microsoft Defender para punto de conexión se puede configurar para enviar señales de amenaza que se usarán en las directivas de protección de aplicaciones (APP, también conocida como MAM). Con esta funcionalidad, puede usar Microsoft Defender para punto de conexión para proteger las aplicaciones administradas. 
 
 1. Crear una directiva <br>
 Las directivas de protección de aplicaciones (APP) que garantizan los datos de la organización siguen siendo seguras o se encuentran en una aplicación administrada. Una directiva puede ser una regla que se aplica cuando el usuario intenta acceder o mover datos "corporativos", o un conjunto de acciones que se prohíben o supervisan cuando el usuario está dentro de la aplicación. 
@@ -133,11 +134,34 @@ Seleccione **Establecer > nivel máximo de amenaza de dispositivo permitido** en
 
 6. Seleccione **Continuar** para iniciar sesión en la aplicación administrada. 
 
-## <a name="configure-privacy-controls"></a>Configuración de controles de privacidad 
->[!IMPORTANT]
->Los controles de privacidad en Microsoft Defender para punto de conexión en MAM están en versión preliminar pública. La siguiente información se refiere al producto preliminar que puede modificarse sustancialmente antes de su lanzamiento comercial. Microsoft no otorga garantías, expresas o implícitas, con respecto a la información que aquí se proporciona.
->**Si desea probar esta característica o proporcionar comentarios, póngase en contacto con nosotros en mdatpmobile@microsoft.com.**
+## <a name="configure-web-protection"></a>Configuración de la protección web 
+Defender para punto de conexión en Android permite a los administradores de TI configurar la protección web. La protección web está disponible en el [Centro de Endpoint Manager Administración de Microsoft](https://endpoint.microsoft.com).
 
+La protección web ayuda a proteger los dispositivos frente a las amenazas web y a los usuarios frente a ataques de suplantación de identidad. Tenga en cuenta que los indicadores personalizados y contra la suplantación de identidad (URL y direcciones IP) se admiten como parte de la protección web. El filtrado de contenido web no se admite actualmente en plataformas móviles.
+
+1. En el Centro de administración de Microsoft Endpoint Manager, vaya a **Aplicaciones > Directivas de configuración de aplicaciones > Agregar aplicaciones administradas >**.
+
+2. Asignar a la directiva un **nombre**.
+
+3. En **Seleccionar aplicaciones públicas**, elija **Microsoft Defender para punto de conexión** como la aplicación de destino.
+
+4. En la página **Configuración** , en **Configuración general**, agregue las siguientes claves y establezca su valor según sea necesario.
+    - **antiphishing** 
+    - **vpn** 
+    
+   Para deshabilitar la protección web, escriba 0 para los valores de antiphishing y VPN.
+   Para deshabilitar solo el uso de VPN por protección web, escriba estos valores:
+    - 0 para vpn
+    - 1 para la antiphishing
+    
+1. Agregue la clave **DefenderMAMConfigs** y establezca el valor en 1.
+
+5. Asigne esta directiva a los usuarios. De forma predeterminada, este valor se establece en false.
+
+6. Revise y cree la directiva.
+
+
+## <a name="configure-privacy-controls"></a>Configuración de controles de privacidad
 Los administradores pueden usar los pasos siguientes para habilitar la privacidad y no recopilar el nombre de dominio, los detalles de la aplicación y la información de red como parte del informe de alertas de las amenazas correspondientes.
 
 1. En el Centro de administración de Microsoft Endpoint Manager, vaya a **Aplicaciones > Directivas de configuración de aplicaciones > Agregar aplicaciones administradas >**.
@@ -146,17 +170,15 @@ Los administradores pueden usar los pasos siguientes para habilitar la privacida
 
 3. En Seleccionar aplicaciones públicas, elija **Microsoft Defender para punto de conexión** como la aplicación de destino.
 
-4. En la página Configuración, en Configuración general, agregue **DefenderExcludeURLInReport**, **DefenderExcludeAppInReport** como las claves y el valor como true.
+4. En la página Configuración, en Configuración general, agregue **DefenderExcludeURLInReport**, **DefenderExcludeAppInReport** como las claves y el valor como true. 
+
+1. Agregue la clave **DefenderMAMConfigs** y establezca el valor en 1.
 
 5. Asigne esta directiva a los usuarios. De forma predeterminada, este valor se establece en false.
 
 6. Revise y cree la directiva.
 
 ## <a name="optional-permissions"></a>Permisos opcionales 
->[!IMPORTANT]
->Permisos opcionales en Microsoft Defender para punto de conexión está en versión preliminar pública. La siguiente información se refiere al producto preliminar que puede modificarse sustancialmente antes de su lanzamiento comercial. Microsoft no otorga garantías, expresas o implícitas, con respecto a la información que aquí se proporciona.
->**Si desea probar esta característica o proporcionar comentarios, póngase en contacto con nosotros en mdatpmobile@microsoft.com.**
-
 Microsoft Defender para punto de conexión en Android habilita permisos opcionales en el flujo de incorporación. Actualmente, los permisos requeridos por MDE son obligatorios en el flujo de incorporación. Con esta característica, el administrador puede implementar MDE en dispositivos Android con directivas MAM sin aplicar los permisos obligatorios de VPN y accesibilidad durante la incorporación. Los usuarios finales pueden incorporar la aplicación sin los permisos obligatorios y pueden revisarlos más adelante. 
 
 ### <a name="configure-optional-permission"></a>Configuración del permiso opcional
@@ -169,7 +191,9 @@ Siga estos pasos para habilitar permisos opcionales para dispositivos.
 
 3. Seleccione **Microsoft Defender para punto de conexión*** en aplicaciones públicas.
 
-4. En la página Configuración, seleccione **Usar diseñador de configuración** y agregue **DefenderOptionalVPN** o **DefenderOptionalAccessibility** o **como** tipo de clave y valor como booleano. 
+4. En la página Configuración, seleccione **Usar diseñador de configuración** y **DefenderOptionalVPN** o **DefenderOptionalAccessibility** o **como** tipo de clave y valor como booleano. 
+
+1. Agregue la clave **DefenderMAMConfigs** y establezca el valor en 1.
 
 5. Para habilitar permisos opcionales, escriba el valor como **true** y asigne esta directiva a los usuarios. De forma predeterminada, este valor se establece en false.
 Para los usuarios con el conjunto de claves como true, los usuarios podrán incorporar la aplicación sin conceder estos permisos.

@@ -5,7 +5,7 @@ author: MikePlumleyMSFT
 manager: serdars
 audience: ITPro
 ms.topic: article
-ms.service: microsoft-365-enterprise
+ms.service: o365-solutions
 ms.collection:
 - highpri
 - SPO_Content
@@ -20,12 +20,12 @@ ms.localizationpriority: high
 f1.keywords: NOCSH
 recommendations: false
 description: Obtenga más información sobre las opciones disponibles para crear un entorno más seguro de uso compartido para invitados en Microsoft 365, al proporcionar accesos de invitado para mejorar la colaboración.
-ms.openlocfilehash: 469a430d589dfb912ee8ec4d4b7a24233295d65e
-ms.sourcegitcommit: 0af064e8b6778060f1bd365378d69b16fc9949b5
+ms.openlocfilehash: abde1acb80477a06aab70908c6176e898105d442
+ms.sourcegitcommit: fce27da5140691b013a6f7c0ea9c88b4ea4b7c10
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/15/2022
-ms.locfileid: "67730515"
+ms.lasthandoff: 09/23/2022
+ms.locfileid: "67987112"
 ---
 # <a name="create-a-more-secure-guest-sharing-environment"></a>Creación de un entorno de uso compartido de invitados más seguro
 
@@ -75,7 +75,7 @@ Ahora, el invitado deberá inscribirse en la autenticación multifactor para acc
 
 En determinadas situaciones, puede que los invitados no hayan firmado contratos de no divulgación ni otros acuerdos jurídicos con su organización. Puede obligar a los invitados a aceptar sus términos de uso antes de darles acceso a los archivos compartidos. Los términos de uso se les pueden mostrar la primera vez que intenten acceder a un archivo o sitio compartido.
 
-Para crearlos, primero elabore el documento en Word u otro programa de creación y, luego, guárdelo como un archivo PDF. A continuación, el archivo se puede cargar a Azure AD.
+To create a terms of use, you first need to create the document in Word or another authoring program, and then save it as a .pdf file. This file can then be uploaded to Azure AD.
 
 ¿Por qué crear términos de uso de Azure AD?
 
@@ -170,7 +170,7 @@ Cómo restringir el acceso de los invitados a solo web para Grupos y Equipos:
 8. En la hoja **Seleccionar**, elija **Microsoft Teams** y **Outlook Groups** y, a continuación, haga clic en **Seleccionar**.
 9. En **Tareas**, haga clic en **Condiciones**.
 10. En la hoja **Condiciones**, haga clic en **Aplicaciones cliente**.
-11. En la hoja de **Aplicaciones cliente**, haga clic en **Sí** para **Configurar**, y luego, seleccione las opciones **Aplicaciones móviles y clientes de escritorio**, **Clientes de Exchange ActiveSync**, y **Otros clientes**. Desactive la casilla **Navegador**.
+11. On the **Client apps** blade, click **Yes** for **Configure**, and then select the **Mobile apps and desktop clients**, **Exchange ActiveSync clients**, and **Other clients** settings. Clear the **Browser** check box.
 
     ![Captura de pantalla de la configuración de acceso condicional para aplicaciones cliente en Azure AD.](../media/azure-ad-conditional-access-client-mobile.png)
 

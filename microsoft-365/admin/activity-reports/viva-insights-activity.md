@@ -1,13 +1,14 @@
 ---
 title: informes de actividad de Centro de administración de Microsoft 365 Ideas Viva
-ms.author: efrene
-author: efrene
+ms.author: camillepack
+author: camillepack
 manager: scotv
 audience: Admin
 ms.topic: article
-ms.service: o365-administration
+ms.service: microsoft-365-business
 ms.localizationpriority: medium
 ms.collection:
+- scotvorg
 - M365-subscription-management
 - Adm_O365
 - Adm_NonTOC
@@ -18,12 +19,12 @@ search.appverid:
 - MOE150
 - GEA150
 description: Obtenga información sobre cómo obtener un Aplicaciones Microsoft 365 para el informe de uso para obtener más información, por ejemplo, sobre la adopción por parte del usuario de Ideas Viva por parte de los usuarios activos.
-ms.openlocfilehash: 4de137fe18020d637316b858ccc68c812b043e3f
-ms.sourcegitcommit: 5014666778b2d48912c68c2e06992cdb43cfaee3
+ms.openlocfilehash: abdc884dc59636974760db131ee53c8434af767c
+ms.sourcegitcommit: 0b7070ec119e00e0dafe030bbfbef0ae5c9afa19
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/07/2022
-ms.locfileid: "66663138"
+ms.lasthandoff: 09/29/2022
+ms.locfileid: "68194057"
 ---
 # <a name="microsoft-365-reports-in-the-admin-center---viva-insights-activity"></a>Informes de Microsoft 365 en el Centro de administración: actividad de Ideas Viva
 

@@ -16,14 +16,14 @@ manager: dansimp
 audience: ITPro
 ms.topic: article
 ms.collection:
-- M365-security-compliance
-- m365initiative-m365-defender
-ms.openlocfilehash: 6a4d665e4800e5f3aaf07129f9d5dbff1d3bfd2a
-ms.sourcegitcommit: ecc04b5b8f84b34255a2d5e90b5ab596af0d16c7
+- m365-security
+- tier1
+ms.openlocfilehash: 7bd977ced10aa2c6823ffc3d766ac552c295e062
+ms.sourcegitcommit: 12af9e8e3a6eaa090fda9e98ccb831dff65863a4
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/01/2022
-ms.locfileid: "67496579"
+ms.lasthandoff: 09/27/2022
+ms.locfileid: "68048976"
 ---
 # <a name="configure-and-manage-microsoft-threat-experts-capabilities-through-microsoft-365-defender"></a>Configuración y administración de funcionalidades de Expertos en amenazas de Microsoft a través de Microsoft 365 Defender
 
@@ -170,4 +170,4 @@ Si un experto solicita más información o ejemplos de archivos, es fundamental 
 
 ## <a name="to-proactively-hunt-threats-across-endpoints-office-365-cloud-applications-and-identity-refer-to"></a>Para buscar amenazas de forma proactiva entre puntos de conexión, Office 365, aplicaciones en la nube e identidad, consulte: 
 
-- [Introducción a expertos de Microsoft Defender para la búsqueda](defender-experts-for-hunting.md)
+- [Introducción a los expertos de Microsoft Defender para la búsqueda](defender-experts-for-hunting.md)

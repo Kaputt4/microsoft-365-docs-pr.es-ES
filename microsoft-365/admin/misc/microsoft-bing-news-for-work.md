@@ -1,5 +1,5 @@
 ---
-title: Actualizaciones del sector de Microsoft
+title: Microsoft Industry Novedades
 f1.keywords:
 - NOCSH
 ms.author: pebaum
@@ -7,36 +7,38 @@ author: pebaum
 manager: scotv
 audience: Admin
 ms.topic: article
-ms.service: o365-administration
+ms.service: microsoft-365-business
 ms.localizationpriority: medium
+ms.collection:
+- scotvorg
 ms.custom: AdminSurgePortfolio
 ROBOTS: NOINDEX, NOFOLLOW
-description: Un resumen diario de noticias, tendencias e historias relacionadas con su empresa, trabajo o industria entregados de forma fresca a la bandeja de entrada.
-ms.openlocfilehash: 55e01005994099211b6aab64b837f27bc7881c81
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+description: Un resumen diario de noticias, tendencias e historias relacionadas con su empresa, trabajo o sector entregados de nuevo a su bandeja de entrada.
+ms.openlocfilehash: 7ce83e824197f94466b55837bcedfc7be440105f
+ms.sourcegitcommit: 0b7070ec119e00e0dafe030bbfbef0ae5c9afa19
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60167995"
+ms.lasthandoff: 09/29/2022
+ms.locfileid: "68164709"
 ---
-# <a name="microsoft-industry-updates"></a>Actualizaciones del sector de Microsoft
+# <a name="microsoft-industry-updates"></a>Microsoft Industry Novedades
 
-Manténgase al día con lo que está sucediendo en su sector. Cada mañana, podrá obtener un resumen de noticias, tendencias interesantes e historias relacionadas con su empresa, trabajo o industria, que se entregan de forma fresca en la bandeja de entrada. [Suscríbase ahora](https://www.bing.com/news/professional?pn=setting&mkt=en-us&asnl=1&form).
+Manténgase al día de lo que sucede en su sector. Cada mañana, obtendrá una serie de noticias, tendencias interesantes e historias relacionadas con su empresa, trabajo o sector, que se entregan a la bandeja de entrada. [Suscríbase ahora](https://www.bing.com/news/professional?pn=setting&mkt=en-us&asnl=1&form).
 
 ## <a name="what-is-it"></a>¿Qué es?
 
-Aprovechando el poder del motor de búsqueda Bing de Microsoft, Las actualizaciones del sector es una recopilación de las noticias de trabajo más importantes de toda la web, seleccionadas solo para usted.
+Aprovechando la eficacia del motor de búsqueda de Bing de Microsoft, Industry Novedades es una colección de las noticias de trabajo más importantes de toda la web, seleccionadas solo para usted.
 
 ## <a name="how-does-it-work"></a>¿Cómo funciona?
 
-Personalice su experiencia siguiendo temas e intereses. Obtén noticias sobre tu empresa, realiza un seguimiento de las tendencias del sector y sé el primero en conocer los lanzamientos clave de productos. Además, obtén conocimientos e información que necesitarás para aumentar tu carrera profesional.
+Personalice su experiencia siguiendo temas e intereses. Obtenga noticias sobre su empresa, realice un seguimiento de las tendencias del sector y sea el primero en conocer los lanzamientos de productos clave. Además, póngase al día con las habilidades y la información que necesitará para hacer crecer su carrera profesional.
 
-## <a name="how-do-i-customize-my-industry-updates-email"></a>¿Cómo puedo personalizar el correo electrónico de actualizaciones del sector?
+## <a name="how-do-i-customize-my-industry-updates-email"></a>Cómo personalizar mi correo electrónico de Novedades sector?
 
-Para personalizar tu experiencia, visita la página de configuración para seguir los temas e intereses importantes para ti. Para acceder a la página de configuración personal, marca el marcador Personalizar el contenido en el [boletín Bing, Actualizaciones](https://www.bing.com/news/professional?pn=setting&mkt=en-us&form=BAWLOG&frb=1) perimetrales y del sector o haciendo clic en el botón configuración del correo electrónico actualizaciones del sector.
+Para personalizar su experiencia, visite la página de configuración para seguir los temas e intereses importantes para usted. Accede a tu página de configuración personal marcando [Personalizar tu contenido en bing, Edge y boletín de Novedades industria](https://www.bing.com/news/professional?pn=setting&mkt=en-us&form=BAWLOG&frb=1) o haciendo clic en el botón de configuración en tu correo electrónico de Novedades sector.
 
-[Suscribirse](https://www.bing.com/news/professional?pn=setting&mkt=en-us&asnl=1&form=BAWLOG&frb=1) y obtener el correo electrónico de actualizaciones del sector entregado a su bandeja de entrada hoy mismo.
+[Suscríbase](https://www.bing.com/news/professional?pn=setting&mkt=en-us&asnl=1&form=BAWLOG&frb=1) y obtenga el correo electrónico de Novedades industria entregado hoy en su bandeja de entrada!
 
 ## <a name="contact-us"></a>Póngase en contacto con nosotros
 
-Si tiene más preguntas o comentarios, envíe un correo electrónico <IndustryNewsSupport@microsoft.com> .
+Si tiene más preguntas o comentarios, envíe un correo electrónico <IndustryNewsSupport@microsoft.com>a .

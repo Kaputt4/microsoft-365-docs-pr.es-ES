@@ -20,17 +20,18 @@ ms.collection:
 - m365solution-healthcare
 - m365solution-scenario
 - m365-frontline
+- highpri
 appliesto:
 - Microsoft Teams
 - Microsoft 365 for frontline workers
 ms.reviewer: ansantam
 description: Obtenga información sobre cómo integrar el conector HCE de Teams que permita a los proveedores de atención sanitaria de su organización realizar citas virtuales con pacientes u otros proveedores en Teams directamente desde el sistema de HCE de Epic.
-ms.openlocfilehash: 6cf48c01e804a6a8a473ae42883c000a9577ea01
-ms.sourcegitcommit: 0c8934129b5ed147fb873fc3f4d201042c313571
+ms.openlocfilehash: f3da13d4b44c29d5f2f4145060e771737e2d9c2b
+ms.sourcegitcommit: 674dfa2cb2f20546d2f7822e09bacf0e12e2718b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/12/2022
-ms.locfileid: "67333794"
+ms.lasthandoff: 09/27/2022
+ms.locfileid: "68041049"
 ---
 # <a name="virtual-appointments-with-teams---integration-into-epic-ehr"></a>Citas virtuales con Teams: integración en Epic EHR
 

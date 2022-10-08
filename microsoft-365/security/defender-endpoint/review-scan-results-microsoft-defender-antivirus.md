@@ -1,5 +1,5 @@
 ---
-title: Revisión de los resultados de los exámenes del Antivirus de Microsoft Defender
+title: Revisión de los resultados de los exámenes de Microsoft Defender Antivirus
 description: Revise los resultados de los exámenes mediante Configuration Manager de punto de conexión de Microsoft, Microsoft Intune o la aplicación Seguridad de Windows
 keywords: resultados del examen, corrección, examen completo, examen rápido
 ms.service: microsoft-365-security
@@ -15,16 +15,18 @@ ms.reviewer: ''
 manager: dansimp
 ms.subservice: mde
 ms.topic: article
-ms.collection: M365-security-compliance
+ms.collection:
+- m365-security
+- tier2
 search.appverid: met150
-ms.openlocfilehash: 4e7ca073690074efcb84c594ea533f068f904af2
-ms.sourcegitcommit: 9b133379196da2b3a4bb311b07ff274f43780f68
+ms.openlocfilehash: fb507f6249a5a421675908ede074267d389313ba
+ms.sourcegitcommit: 4e42bafee965446f44f7f57d1defed2b9b24fce8
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/14/2022
-ms.locfileid: "67689721"
+ms.lasthandoff: 09/30/2022
+ms.locfileid: "68231712"
 ---
-# <a name="review-microsoft-defender-antivirus-scan-results"></a>Revisión de los resultados del examen del Antivirus de Microsoft Defender
+# <a name="review-microsoft-defender-antivirus-scan-results"></a>Revisión de los resultados del examen de Microsoft Defender Antivirus
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
@@ -37,7 +39,7 @@ ms.locfileid: "67689721"
 **Plataformas**
 - Windows
 
-Una vez completado un examen del Antivirus de Microsoft Defender, ya sea un [examen a](scheduled-catch-up-scans-microsoft-defender-antivirus.md) [petición](run-scan-microsoft-defender-antivirus.md) o programado, los resultados se registran y puede ver los resultados. 
+Una vez completado un examen antivirus de Microsoft Defender, ya sea un [examen a](scheduled-catch-up-scans-microsoft-defender-antivirus.md) [petición](run-scan-microsoft-defender-antivirus.md) o programado, los resultados se registran y puede ver los resultados. 
 
 
 ## <a name="use-configuration-manager-to-review-scan-results"></a>Uso de Configuration Manager para revisar los resultados del examen
@@ -64,7 +66,7 @@ Get-MpThreat
 
 :::image type="content" source="../../media/wdav-get-mpthreat.png" alt-text="El código de PowerShell" lightbox="../../media/wdav-get-mpthreat.png":::
 
-Consulte [Uso de cmdlets de PowerShell para configurar y ejecutar antivirus de Microsoft Defender](use-powershell-cmdlets-microsoft-defender-antivirus.md) y [cmdlets de Antivirus de Defender](/powershell/module/defender/) para obtener más información sobre cómo usar PowerShell con el Antivirus de Microsoft Defender.
+Consulte [Uso de cmdlets de PowerShell para configurar y ejecutar cmdlets Microsoft Defender Antivirus](use-powershell-cmdlets-microsoft-defender-antivirus.md) y [Antivirus de Defender](/powershell/module/defender/) para obtener más información sobre cómo usar PowerShell con Microsoft Defender Antivirus.
 
 ## <a name="use-windows-management-instruction-wmi-to-review-scan-results"></a>Uso de Instrucciones de administración de Windows (WMI) para revisar los resultados del examen
 
@@ -83,5 +85,5 @@ Use el [método **Get** de las clases **MSFT_MpThreat** y **MSFT_MpThreatDetecti
 
 ## <a name="related-articles"></a>Artículos relacionados
 
-- [Personalización, inicio y revisión de los resultados de los exámenes y correcciones del Antivirus de Microsoft Defender](customize-run-review-remediate-scans-microsoft-defender-antivirus.md)
+- [Personalización, inicio y revisión de los resultados de los exámenes y correcciones de Microsoft Defender Antivirus](customize-run-review-remediate-scans-microsoft-defender-antivirus.md)
 - [Antivirus de Microsoft Defender en Windows 10](microsoft-defender-antivirus-in-windows-10.md)

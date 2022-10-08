@@ -11,17 +11,19 @@ author: mjcaparas
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
-ms.collection: M365-security-compliance
+ms.collection:
+- m365-security
+- tier1
 ms.topic: article
 ms.date: 03/27/2020
 ms.subservice: mde
 search.appverid: met150
-ms.openlocfilehash: 45b40cd4f893ca9fab4f07f2bd1e36f7c8690b81
-ms.sourcegitcommit: 9b133379196da2b3a4bb311b07ff274f43780f68
+ms.openlocfilehash: e9623dbf66826d3654e987ef41ca9006c0548888
+ms.sourcegitcommit: b9282493c371d59c2e583b9803825096499b5e2c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/14/2022
-ms.locfileid: "67703344"
+ms.lasthandoff: 09/29/2022
+ms.locfileid: "68145807"
 ---
 # <a name="view-and-organize-the-microsoft-defender-for-endpoint-alerts-queue"></a>Ver y organizar la cola de alertas de Microsoft Defender para punto de conexión
 
@@ -64,16 +66,16 @@ Informativo <br> (Gris)|Alertas que podrían no considerarse perjudiciales para 
 
 #### <a name="understanding-alert-severity"></a>Descripción de la gravedad de la alerta
 
-Las gravedades de las alertas de Antivirus de Microsoft Defender y Defender para punto de conexión son diferentes porque representan ámbitos diferentes.
+Microsoft Defender gravedad de las alertas de Antivirus y Defender para punto de conexión son diferentes porque representan ámbitos diferentes.
 
-La gravedad de la amenaza del Antivirus de Microsoft Defender representa la gravedad absoluta de la amenaza detectada (malware) y se asigna en función del riesgo potencial para el dispositivo individual, si está infectado.
+La gravedad de la amenaza Microsoft Defender Antivirus representa la gravedad absoluta de la amenaza detectada (malware) y se asigna en función del riesgo potencial para el dispositivo individual, si está infectado.
 
 La gravedad de la alerta de Defender para punto de conexión representa la gravedad del comportamiento detectado, el riesgo real para el dispositivo pero, lo que es más importante, el riesgo potencial para la organización.
 
 Por ejemplo:
 
-- La gravedad de una alerta de Defender para punto de conexión sobre una amenaza detectada por el Antivirus de Microsoft Defender que se impidió y no infectó el dispositivo se clasifica como "Informativo" porque no se produjo ningún daño real.
-- Se detectó una alerta sobre un malware comercial durante la ejecución, pero bloqueada y corregida por el Antivirus de Microsoft Defender, se clasifica como "Baja" porque puede haber causado algún daño al dispositivo individual pero no supone ninguna amenaza organizativa.
+- La gravedad de una alerta de Defender para punto de conexión sobre una amenaza detectada por Microsoft Defender Antivirus que se impidió y no infectó el dispositivo se clasifica como "Informativo" porque no se produjo ningún daño real.
+- Una alerta sobre un malware comercial se detectó durante la ejecución, pero bloqueada y corregida por Microsoft Defender Antivirus, se clasifica como "Baja" porque puede haber causado algún daño al dispositivo individual pero no supone ninguna amenaza organizativa.
 - Una alerta sobre malware detectado durante la ejecución que puede suponer una amenaza no solo para el dispositivo individual, sino también para la organización, independientemente de si finalmente se bloqueó, puede clasificarse como "Medio" o "Alto".
 - Las alertas de comportamiento sospechosas, que no se bloquearon ni corregiron, se clasificarán como "Baja", "Media" o "Alta" siguiendo las mismas consideraciones de amenazas de la organización.
 
@@ -103,7 +105,7 @@ Filtre las alertas en función de los siguientes orígenes de servicio:
 - AAD Identity Protection
 
 > [!NOTE]
-> El filtro Antivirus solo aparecerá si los dispositivos usan antivirus de Microsoft Defender como el producto antimalware de protección en tiempo real predeterminado.
+> El filtro Antivirus solo aparecerá si los dispositivos usan Microsoft Defender Antivirus como producto antimalware de protección en tiempo real predeterminado.
 
 ### <a name="tags"></a>Etiquetas
 

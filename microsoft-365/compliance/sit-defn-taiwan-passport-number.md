@@ -14,19 +14,22 @@ f1_keywords:
 ms.service: O365-seccomp
 ms.localizationpriority: medium
 ms.collection:
-- M365-security-compliance
+- tier3
+- purview-compliance
 hideEdit: true
 feedback_system: None
 recommendations: false
 description: Definición de entidad de tipo de información confidencial del número de pasaporte de Taiwán.
-ms.openlocfilehash: b899fbe560ea6cba19c66bafea819c769ece2634
-ms.sourcegitcommit: 5aed330d8af523f0dffe5e392f1c79f047e38172
+ms.openlocfilehash: ab4284b88be490c7c56c058fa9b73ce337516b7a
+ms.sourcegitcommit: 176bbd29c92e1c0812e8bcd1e1e4938a3e1d7331
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/21/2022
-ms.locfileid: "66999902"
+ms.lasthandoff: 10/05/2022
+ms.locfileid: "68472000"
 ---
 # <a name="taiwan-passport-number"></a>Número de pasaporte de Taiwán
+
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
 
 ## <a name="format"></a>Formato
 
@@ -52,7 +55,7 @@ No
 
 Una política de DLP tiene confianza media en que ha detectado este tipo de información confidencial si, dentro de una proximidad de 300 caracteres:
 
-- La expresión `Regex_taiwan_passport` regular busca contenido que coincida con el patrón.
+- La expresión regular `Regex_taiwan_passport` encuentra contenido que coincide con el patrón.
 - Se encuentra una palabra clave de `Keyword_taiwan_passport`.
 
 ```xml
@@ -71,8 +74,7 @@ Una política de DLP tiene confianza media en que ha detectado este tipo de info
 
 - Número de pasaporte ROC
 - Número de pasaporte
-- Núm. pasaporte
-
+- Passport no
 - N.ro pasaporte
 - N.º de pasaporte
 - 护照

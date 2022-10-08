@@ -14,18 +14,18 @@ ms.date: 08/31/2022
 manager: dansimp
 audience: ITPro
 ms.collection:
-- m365-security-compliance
-- m365initiative-defender-endpoint
+- m365-security
+- tier2
 ms.topic: how-to
 ms.reviewer: ramarom, evaldm, isco, mabraitm, chriggs
 ms.custom: AIR
 search.appverid: met150
-ms.openlocfilehash: cd89030a72f025c620d75506554f305e342e9d50
-ms.sourcegitcommit: 078149c9645ce220911ccd6ce54f984a4c92ce53
+ms.openlocfilehash: 9d9c8429d5bc2ca21576c42cc60f0dd94ea53e41
+ms.sourcegitcommit: b9282493c371d59c2e583b9803825096499b5e2c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/20/2022
-ms.locfileid: "67812400"
+ms.lasthandoff: 09/29/2022
+ms.locfileid: "68143915"
 ---
 # <a name="overview-of-automated-investigations"></a>Introducción a las investigaciones automatizadas
 
@@ -87,7 +87,7 @@ Todas las acciones de corrección, ya sean pendientes o completadas, se realizan
 La suscripción debe incluir [Defender para punto de conexión](microsoft-defender-endpoint.md) o [Defender para empresas](../defender-business/mdb-overview.md).
 
 > [!NOTE]
-> La investigación y la respuesta automatizadas requieren antivirus de Microsoft Defender para ejecutarse en modo pasivo o en modo activo. Si antivirus de Microsoft Defender está deshabilitado o desinstalado, la investigación y la respuesta automatizadas no funcionarán correctamente.
+> La investigación y la respuesta automatizadas requieren Microsoft Defender Antivirus para ejecutarse en modo pasivo o en modo activo. Si Microsoft Defender Antivirus está deshabilitado o desinstalado, la investigación y la respuesta automatizadas no funcionarán correctamente.
 
 Actualmente, AIR solo admite las siguientes versiones del sistema operativo:
 

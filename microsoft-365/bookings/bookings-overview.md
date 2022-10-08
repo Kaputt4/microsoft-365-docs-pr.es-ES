@@ -8,15 +8,17 @@ ms.topic: article
 ms.service: bookings
 ms.localizationpriority: medium
 ms.assetid: 47403d64-a067-4754-9ae9-00157244c27d
-ms.collection: highpri
+ms.collection:
+- scotvorg
+- highpri
 ms.custom: VSBFY23
 description: Información general de la aplicación de Microsoft Bookings, que incluye un calendario de reservas basado en web y se integra con Outlook para optimizar el calendario del personal y dar a los clientes flexibilidad para reservar citas.
-ms.openlocfilehash: f42b147315aa25f43cf6788740a4015ab87cca1d
-ms.sourcegitcommit: 37e137535c4f70702afe1a5eeaa899c75ee02cfd
+ms.openlocfilehash: 897f1294ee678cc2fd1c4c8b5c01be2c0c2cf651
+ms.sourcegitcommit: 0b7070ec119e00e0dafe030bbfbef0ae5c9afa19
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/13/2022
-ms.locfileid: "67662737"
+ms.lasthandoff: 09/29/2022
+ms.locfileid: "68193419"
 ---
 # <a name="microsoft-bookings"></a>Microsoft Bookings
 

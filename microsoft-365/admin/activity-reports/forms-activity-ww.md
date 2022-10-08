@@ -7,9 +7,10 @@ author: kwekua
 manager: scotv
 audience: Admin
 ms.topic: article
-ms.service: o365-administration
+ms.service: microsoft-365-business
 ms.localizationpriority: medium
 ms.collection:
+- scotvorg
 - M365-subscription-management
 - Adm_O365
 - Adm_NonTOC
@@ -20,12 +21,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Obtenga información sobre cómo obtener un informe de actividad de Microsoft Forms mediante el panel Informes de Microsoft 365 y averiguar cómo interactúan los usuarios con licencia con los formularios.
-ms.openlocfilehash: 106baca93a3cd7078c97d3ca3f5430efc540d4af
-ms.sourcegitcommit: 5014666778b2d48912c68c2e06992cdb43cfaee3
+ms.openlocfilehash: 90a7ec26defaaca832411a775f71d32c2333ecef
+ms.sourcegitcommit: 0b7070ec119e00e0dafe030bbfbef0ae5c9afa19
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/07/2022
-ms.locfileid: "66662138"
+ms.lasthandoff: 09/29/2022
+ms.locfileid: "68194167"
 ---
 # <a name="microsoft-365-reports-in-the-admin-center---forms-activity"></a>Informes de Microsoft 365 en el Centro de administración: actividad de formularios
 
@@ -52,7 +53,7 @@ También puede exportar los datos del informe a un archivo de excel .csv selecci
 
 El informe de **actividad Formularios** se puede ver para ver las tendencias de los últimos 7 días, 30 días, 90 días o 180 días. Sin embargo, si selecciona un día determinado en el informe, la tabla mostrará los datos durante un máximo de 28 días a partir de la fecha actual (no la fecha en que se generó el informe).
   
-|Item|Descripción|
+|Elemento|Descripción|
 |:-----|:-----|
 |Métrica|Definición|
 |Nombre de usuario   |Dirección de correo electrónico del usuario que realizó la actividad en Microsoft Forms.   |

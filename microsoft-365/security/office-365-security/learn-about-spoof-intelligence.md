@@ -14,18 +14,18 @@ search.appverid:
 - MET150
 ms.assetid: 978c3173-3578-4286-aaf4-8a10951978bf
 ms.collection:
-- M365-security-compliance
+- m365-security
 ms.custom:
 - seo-marvel-apr2020
 description: Los administradores pueden obtener información sobre la información de inteligencia sobre suplantación de identidad en Exchange Online Protection (EOP).
 ms.subservice: mdo
 ms.service: microsoft-365-security
-ms.openlocfilehash: 048ec6feaeca081704fef7a4e5a14f6b375f1f6f
-ms.sourcegitcommit: 2b89bcff547e00be3d38dc8d1e6cbcf8f41eba42
+ms.openlocfilehash: 3846db81cf6378e7e1bb5570927f452068ee2431
+ms.sourcegitcommit: 12af9e8e3a6eaa090fda9e98ccb831dff65863a4
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/03/2022
-ms.locfileid: "67597898"
+ms.lasthandoff: 09/27/2022
+ms.locfileid: "68048624"
 ---
 # <a name="spoof-intelligence-insight-in-eop"></a>Información de inteligencia sobre suplantación de identidad en EOP
 
@@ -80,11 +80,11 @@ En el resto de este artículo se explica cómo usar la información de inteligen
     - **Administrador de seguridad** <u>y</u> **Configuración de solo vista** o **Administración de la organización de solo vista**.
   - Para obtener acceso de solo lectura a la directiva de inteligencia de suplantación de identidad, debe ser miembro de los grupos de roles **Lector global** o **Lector de seguridad** .
 
-  Para obtener más información, vea los [permisos en Exchange Online](/exchange/permissions-exo/permissions-exo).
+  Para obtener más información, consulte los [permisos en Exchange Online](/exchange/permissions-exo/permissions-exo).
 
   > [!NOTE]
   >
-  > - La adición de usuarios al rol correspondiente de Azure Active Directory en el Centro de administración de Microsoft 365 proporciona a los usuarios los permisos necesarios _y_ los permisos para otras características de Microsoft 365. Para obtener más información, consulte [Acerca de los roles de administrador](../../admin/add-users/about-admin-roles.md).
+  > - Adding users to the corresponding Azure Active Directory role in the Microsoft 365 admin center gives users the required permissions _and_ permissions for other features in Microsoft 365. For more information, see [About admin roles](../../admin/add-users/about-admin-roles.md).
   > - El grupo de roles **Administración de organización de solo lectura** en [Exchange Online](/Exchange/permissions-exo/permissions-exo#role-groups) también proporciona acceso de solo lectura a la característica.
 
 - Habilite y deshabilite la inteligencia de suplantación de identidad en las directivas contra suplantación de identidad en EOP y Microsoft Defender para Office 365. La inteligencia de suplantación de identidad está habilitada de forma predeterminada. Para obtener más información, vea [Configurar directivas contra suplantación de identidad en EOP](configure-anti-phishing-policies-eop.md) o [Configurar directivas contra suplantación de identidad en Microsoft Defender para Office 365](configure-mdo-anti-phishing-policies.md).

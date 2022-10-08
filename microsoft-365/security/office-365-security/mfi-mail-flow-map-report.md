@@ -7,7 +7,7 @@ author: dansimp
 manager: dansimp
 audience: ITPro
 ms.topic: conceptual
-ms.collection: M365-security-compliance
+ms.collection: m365-security
 ms.localizationpriority: medium
 ms.assetid: ''
 ms.custom:
@@ -15,12 +15,13 @@ ms.custom:
 description: Los administradores pueden aprender a usar el mapa flujo de correo en el panel Flujo de correo del Centro de cumplimiento de seguridad & para visualizar y realizar un seguimiento de cómo fluye el correo hacia y desde su organización a través de conectores y sin usar conectores.
 ms.subservice: mdo
 ms.service: microsoft-365-security
-ms.openlocfilehash: 36ab396e626f50adc2e5d420563fe100d579bbfc
-ms.sourcegitcommit: 2b89bcff547e00be3d38dc8d1e6cbcf8f41eba42
+search.appverid: met150
+ms.openlocfilehash: 46b9fbf868d12a92b505bd6470cee53ed53f15b7
+ms.sourcegitcommit: 12af9e8e3a6eaa090fda9e98ccb831dff65863a4
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/03/2022
-ms.locfileid: "67597854"
+ms.lasthandoff: 09/27/2022
+ms.locfileid: "68077697"
 ---
 # <a name="mail-flow-map-in-the-security--compliance-center"></a>Mapa de flujo de correo en el Centro de cumplimiento de seguridad &
 

@@ -13,16 +13,18 @@ author: mjcaparas
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
-ms.collection: m365-security-compliance
+ms.collection:
+- m365-security
+- tier3
 ms.topic: conceptual
 ms.subservice: mde
 search.appverid: met150
-ms.openlocfilehash: c9ba1865710dbaaf0c35cfbd37c4985ad4fa1ad1
-ms.sourcegitcommit: 9b133379196da2b3a4bb311b07ff274f43780f68
+ms.openlocfilehash: 4628f6bdc5bd3b38665fa044150e38c756db0059
+ms.sourcegitcommit: b9282493c371d59c2e583b9803825096499b5e2c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/14/2022
-ms.locfileid: "67702608"
+ms.lasthandoff: 09/29/2022
+ms.locfileid: "68145785"
 ---
 # <a name="understand-the-client-analyzer-html-report"></a>Descripción del informe HTML del analizador de cliente
 
@@ -40,9 +42,9 @@ Use el ejemplo siguiente para comprender el informe.
 
 - Además, la versión del script y el tiempo de ejecución del script aparecen como referencia.
 - La sección **Información del dispositivo** proporciona identificadores básicos del sistema operativo y del dispositivo para identificar de forma única el dispositivo en el que se ha ejecutado el analizador.
-- **Los detalles de seguridad del punto de conexión** proporcionan información general sobre los procesos relacionados con Microsoft Defender para punto de conexión, incluidos el Antivirus de Microsoft Defender y el proceso del sensor. Si los procesos importantes no están en línea como se esperaba, el color cambiará a rojo.
+- **Los detalles de seguridad del punto de conexión** proporcionan información general sobre los procesos relacionados con Microsoft Defender para punto de conexión, incluidos Microsoft Defender Antivirus y el proceso del sensor. Si los procesos importantes no están en línea como se esperaba, el color cambiará a rojo.
   
--   **Los detalles de seguridad del punto de conexión** proporcionan información general sobre los procesos relacionados con Microsoft Defender para punto de conexión, incluidos el Antivirus de Microsoft Defender y el proceso del sensor. Si los procesos importantes no están en línea como se esperaba, el color cambiará a rojo.
+-   **Los detalles de seguridad del punto de conexión** proporcionan información general sobre los procesos relacionados con Microsoft Defender para punto de conexión, incluidos Microsoft Defender Antivirus y el proceso del sensor. Si los procesos importantes no están en línea como se esperaba, el color cambiará a rojo.
 
     :::image type="content" source="images/85f56004dc6bd1679c3d2c063e36cb80.png" alt-text="Página Resumen de resultados de comprobación" lightbox="images/85f56004dc6bd1679c3d2c063e36cb80.png":::
 
