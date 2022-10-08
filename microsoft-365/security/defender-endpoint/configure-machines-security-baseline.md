@@ -1,7 +1,7 @@
 ---
 title: Aumento del cumplimiento de la línea base de seguridad Microsoft Defender para punto de conexión
 description: La línea base de seguridad Microsoft Defender para punto de conexión establece controles de seguridad para proporcionar una protección óptima.
-keywords: Intune administración, Microsoft Defender para punto de conexión, Microsoft Defender, ASR de Microsoft Defender para punto de conexión, línea base de seguridad
+keywords: Intune administración, Microsoft Defender para punto de conexión, Microsoft Defender, Microsoft Defender para punto de conexión ASR, línea base de seguridad
 ms.service: microsoft-365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
@@ -11,16 +11,18 @@ author: dansimp
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
-ms.collection: M365-security-compliance
+ms.collection:
+- m365-security
+- tier3
 ms.topic: article
 ms.subservice: mde
 search.appverid: met150
-ms.openlocfilehash: 4140822e058987cd845b41711e9e325f442ccabb
-ms.sourcegitcommit: 9b133379196da2b3a4bb311b07ff274f43780f68
+ms.openlocfilehash: 01833461638859ff1d4025851f0c8b0201e4eedb
+ms.sourcegitcommit: 0b7070ec119e00e0dafe030bbfbef0ae5c9afa19
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/14/2022
-ms.locfileid: "67697153"
+ms.lasthandoff: 09/29/2022
+ms.locfileid: "68201889"
 ---
 # <a name="increase-compliance-to-the-microsoft-defender-for-endpoint-security-baseline"></a>Aumento del cumplimiento de la línea base de seguridad Microsoft Defender para punto de conexión
 
@@ -44,7 +46,7 @@ Para poder implementar y realizar un seguimiento del cumplimiento de las líneas
 
 ## <a name="compare-the-microsoft-defender-for-endpoint-and-the-windows-intune-security-baselines"></a>Comparación de las líneas base de seguridad Microsoft Defender para punto de conexión y windows Intune
 
-La línea de base de seguridad de Windows Intune proporciona un conjunto completo de opciones recomendadas necesarias para configurar de forma segura los dispositivos que ejecutan Windows, incluida la configuración del explorador, la configuración de PowerShell y la configuración de algunas características de seguridad, como el Antivirus de Microsoft Defender. Por el contrario, la línea base de Defender para punto de conexión proporciona una configuración que optimiza todos los controles de seguridad de la pila de Defender para punto de conexión, incluida la configuración para la detección y respuesta de puntos de conexión (EDR), así como la configuración que también se encuentra en la línea base de seguridad de Windows Intune. Para obtener más información sobre cada línea base, consulte:
+La línea de base de seguridad de Windows Intune proporciona un conjunto completo de opciones recomendadas necesarias para configurar de forma segura los dispositivos que ejecutan Windows, incluida la configuración del explorador, la configuración de PowerShell y la configuración de algunas características de seguridad, como Microsoft Defender Antivirus. Por el contrario, la línea base de Defender para punto de conexión proporciona una configuración que optimiza todos los controles de seguridad de la pila de Defender para punto de conexión, incluida la configuración para la detección y respuesta de puntos de conexión (EDR), así como la configuración que también se encuentra en la línea base de seguridad de Windows Intune. Para obtener más información sobre cada línea base, consulte:
 
 - [Configuración de línea base de seguridad de Windows para Intune](/intune/security-baseline-settings-windows)
 - [Microsoft Defender para punto de conexión configuración de línea base para Intune](/intune/security-baseline-settings-defender-atp)
@@ -81,7 +83,7 @@ La administración de configuración de dispositivos supervisa el cumplimiento d
 1. Seleccione **Configurar línea de base de seguridad** en la tarjeta **Base de referencia** de seguridad para ir a Intune administración de dispositivos. Se muestra una introducción similar al cumplimiento de la línea base.
 
    > [!TIP]
-   > Como alternativa, puede navegar a la línea de base de seguridad de Defender para punto de conexión en Microsoft Azure Portal desde **Todos los servicios > Intune > Las líneas base de seguridad > seguridad de dispositivos > línea base de ATP de Microsoft Defender**.
+   > Como alternativa, puede navegar a la línea base de seguridad de Defender para punto de conexión en Microsoft Azure Portal desde **Todos los servicios > Intune > Las líneas base de seguridad > seguridad de dispositivos > Microsoft Defender línea base de ATP**.
 
 2. Cree un nuevo perfil.
 

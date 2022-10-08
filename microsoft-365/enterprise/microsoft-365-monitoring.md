@@ -5,23 +5,24 @@ author: kelleyvice-msft
 manager: scotv
 audience: Admin
 ms.topic: article
-ms.service: o365-administration
+ms.service: microsoft-365-enterprise
 ms.localizationpriority: mediumn
 search.appverid:
 - MET150
 ms.collection:
+- scotvorg
 - Ent_O365
 - Strat_O365_Enterprise
 ms.custom: admindeeplinkMAC
 f1.keywords:
 - NOCSH
 description: Use la supervisión de Microsoft 365 para obtener información sobre incidentes o avisos en Microsoft 365.
-ms.openlocfilehash: 47f54859d7dd0973814a0ad9229a902bddcb8587
-ms.sourcegitcommit: 195e4734d9a6e8e72bd355ee9f8bca1f18577615
+ms.openlocfilehash: 021f1f9d366e3b469b0732cd55048b023f09c15e
+ms.sourcegitcommit: 0b7070ec119e00e0dafe030bbfbef0ae5c9afa19
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/13/2022
-ms.locfileid: "66997841"
+ms.lasthandoff: 09/29/2022
+ms.locfileid: "68170385"
 ---
 # <a name="learn-about-microsoft-365-monitoring"></a>Más información sobre la supervisión de Microsoft 365
 
@@ -39,7 +40,7 @@ Este es un ejemplo de la página **Estado del servicio** de la Centro de adminis
 
 **Los problemas de la organización** se identificarán y usarán mediante la supervisión de nivel organizativo y la supervisión de cuentas prioritarias.
 
-El valor de la columna **Estado** en **Problemas de la organización** indica si la infraestructura de la organización o el software de terceros afectan a la experiencia del estado del servicio de los usuarios de la organización o de las cuentas prioritarias en Exchange Online. Las advertencias o incidentes requieren que sus acciones se resuelvan
+The value of the **Health** column under **Issues in your organization** indicates whether your organization's infrastructure or third-party software affects the service health experience of your organization's users and/or priority accounts in Exchange Online. Advisories or incidents require your actions to resolve.
 
 El valor de la columna **Estado** en **Estado del servicio Microsoft** indica que el servicio está en buen estado o tiene avisos o incidentes basados en los servicios en la nube que mantiene Microsoft.
 
@@ -105,7 +106,7 @@ El plan de Microsoft es recopilar sus comentarios sobre la experiencia en versi�
 
 ### <a name="4-is-this-a-free-included-or-paid-extra-feature"></a>4. ¿Se trata de una característica gratuita (incluida) o de pago (adicional)?
 
-Esta es una característica gratuita que está en versión preliminar y solo está disponible para los clientes que cumplen los requisitos de la pregunta 1. No existe una opción de pago para recibir este contenido.
+This is a free feature that is in preview and only available for customers that meet the requirements in question 1. There isn't a paid option to receive this content.
 
 ### <a name="5-how-do-i-provide-feedback"></a>5. Cómo proporcionar comentarios?
 

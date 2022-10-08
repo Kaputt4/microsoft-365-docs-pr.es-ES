@@ -11,18 +11,20 @@ author: dansimp
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
-ms.collection: M365-security-compliance
+ms.collection:
+- m365-security
+- tier3
 ms.custom: admindeeplinkDEFENDER
 ms.topic: conceptual
 ms.date: 08/25/2022
 ms.reviewer: tewchen
 search.appverid: met150
-ms.openlocfilehash: 89b4b0f3712132b40050205a38fb761b0ba1db1d
-ms.sourcegitcommit: c29af68260ba8676083674b3c70209bff2c2e362
+ms.openlocfilehash: 2b76369567e111e429c86a942bd11ab626606ca1
+ms.sourcegitcommit: 0b7070ec119e00e0dafe030bbfbef0ae5c9afa19
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/16/2022
-ms.locfileid: "67736055"
+ms.lasthandoff: 09/29/2022
+ms.locfileid: "68201559"
 ---
 # <a name="microsoft-defender-for-endpoint-device-control-removable-storage-frequently-asked-questions"></a>preguntas más frecuentes sobre el almacenamiento extraíble Microsoft Defender para punto de conexión Control de dispositivos
 

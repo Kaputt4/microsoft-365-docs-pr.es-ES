@@ -1,8 +1,8 @@
 ---
-title: ¿Qué es la oferta de expertos de Microsoft Defender para la búsqueda?
+title: ¿Qué es Microsoft Defender la oferta de expertos en caza?
 ms.reviewer: ''
 description: Expertos de Defender para la búsqueda es un servicio proactivo de búsqueda de amenazas que va más allá del punto de conexión para buscar entre puntos de conexión.
-keywords: notificaciones de expertos de defender, búsqueda de amenazas administrada, servicio de detección y respuesta administrada (MDR), MTE, Expertos en amenazas de Microsoft, MTE-TAN, notificación de ataque dirigida, Notificación de ataque dirigida, Expertos de Microsoft Defender para búsqueda, búsqueda y análisis de amenazas.
+keywords: notificaciones de expertos de defender, búsqueda de amenazas administrada, servicio de detección y respuesta administrada (MDR), MTE, Expertos en amenazas de Microsoft, MTE-TAN, notificación de ataque dirigida, notificación de ataque dirigido, Microsoft Defender Expertos en búsqueda, búsqueda y análisis de amenazas.
 search.product: Windows 10
 ms.service: microsoft-365-security
 ms.subservice: m365d
@@ -15,18 +15,18 @@ ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection:
-- m365-security-compliance
-- m365initiative-defender-endpoint
+- m365-security
+- tier1
 ms.topic: conceptual
 search.appverid: met150
-ms.openlocfilehash: d78682a9ed8706a2a5546d17febde3faf041d7db
-ms.sourcegitcommit: 9b133379196da2b3a4bb311b07ff274f43780f68
+ms.openlocfilehash: f57f1d59812f855ea92e3683424a3bee9cc601f1
+ms.sourcegitcommit: 12af9e8e3a6eaa090fda9e98ccb831dff65863a4
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/14/2022
-ms.locfileid: "67687425"
+ms.lasthandoff: 09/27/2022
+ms.locfileid: "68064396"
 ---
-# <a name="microsoft-defender-experts-for-hunting"></a>Expertos de Microsoft Defender para la búsqueda
+# <a name="microsoft-defender-experts-for-hunting"></a>expertos en Microsoft Defender para la caza
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
@@ -34,7 +34,7 @@ ms.locfileid: "67687425"
 
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
-Expertos de Defender para la búsqueda se creó para los clientes que tienen un sólido centro de operaciones de seguridad, pero quieren que Microsoft les ayude a buscar amenazas de forma proactiva mediante datos de Microsoft Defender. Expertos de Defender para la búsqueda es un servicio proactivo de búsqueda de amenazas que va más allá del punto de conexión para buscar entre puntos de conexión, Office 365, aplicaciones en la nube e identidad. Nuestros expertos investigarán todo lo que encuentren y, a continuación, entregarán la información de alerta contextual junto con las instrucciones de corrección para que pueda responder rápidamente.
+Los expertos de Defender para la búsqueda se crearon para los clientes que tienen un sólido centro de operaciones de seguridad, pero quieren que Microsoft les ayude a buscar amenazas de forma proactiva mediante Microsoft Defender datos. Expertos de Defender para la búsqueda es un servicio proactivo de búsqueda de amenazas que va más allá del punto de conexión para buscar entre puntos de conexión, Office 365, aplicaciones en la nube e identidad. Nuestros expertos investigarán todo lo que encuentren y, a continuación, entregarán la información de alerta contextual junto con las instrucciones de corrección para que pueda responder rápidamente.
 
 Las siguientes funcionalidades incluidas en este servicio de búsqueda de amenazas administrada también podrían ayudar con el trabajo diario de SecOps:
 
@@ -44,7 +44,7 @@ Las siguientes funcionalidades incluidas en este servicio de búsqueda de amenaz
 - **IA entrenada por cazadores** : nuestros expertos de Defender para la caza comparten su aprendizaje en las herramientas automatizadas que usan para mejorar la detección y priorización de amenazas.
 - **Informes** : un informe interactivo que resume lo que hemos buscado y lo que hemos encontrado.
 
-[Vea este breve vídeo](https://youtu.be/4t1JgE0X0jc) para obtener más información sobre cómo los expertos de Microsoft Defender para la búsqueda pueden ayudarle a realizar un seguimiento de las amenazas avanzadas más recientes en su entorno.
+[Vea este breve vídeo](https://youtu.be/4t1JgE0X0jc) para obtener más información sobre cómo Microsoft Defender Expertos en Caza puede ayudarle a realizar un seguimiento de las amenazas avanzadas más recientes en su entorno.
 
 Defender Experts for Hunting se vende por separado de otros productos Microsoft 365 Defender. Si es un cliente Microsoft 365 Defender y está interesado en comprar expertos de Defender para la búsqueda, complete un formulario de [interés para el cliente](https://aka.ms/DEX4HuntingCustomerInterestForm).
 

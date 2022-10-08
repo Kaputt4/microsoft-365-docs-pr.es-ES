@@ -12,18 +12,19 @@ ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection:
-- M365-security-compliance
+- m365-security
 - m365solution-evalutatemtp
 - highpri
+- tier1
 ms.topic: article
 ms.subservice: mde
 search.appverid: met150
-ms.openlocfilehash: 2920bd6c5d8c9426bf33a17e574fe2c08b82f468
-ms.sourcegitcommit: 9b133379196da2b3a4bb311b07ff274f43780f68
+ms.openlocfilehash: e939fc616c2ffc0120fcfa5fcba5366b46f4e7ac
+ms.sourcegitcommit: 0b7070ec119e00e0dafe030bbfbef0ae5c9afa19
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/14/2022
-ms.locfileid: "67693001"
+ms.lasthandoff: 09/29/2022
+ms.locfileid: "68201691"
 ---
 # <a name="microsoft-defender-for-endpoint-evaluation-lab"></a>laboratorio de evaluación de Microsoft Defender para punto de conexión
 
@@ -127,7 +128,7 @@ Los siguientes componentes de seguridad están preconfigurados en los dispositiv
 - [SmartScreen de Microsoft Defender](/windows/security/threat-protection/microsoft-defender-smartscreen/microsoft-defender-smartscreen-overview)
 
 > [!NOTE]
-> Antivirus de Microsoft Defender estará activado (no en modo de auditoría). Si Antivirus de Microsoft Defender impide que ejecute la simulación, puede desactivar la protección en tiempo real en el dispositivo a través de Seguridad de Windows. Para obtener más información, vea [Configurar la protección always-on](configure-real-time-protection-microsoft-defender-antivirus.md).
+> Microsoft Defender Antivirus estará activado (no en modo de auditoría). Si Microsoft Defender Antivirus le impide ejecutar la simulación, puede desactivar la protección en tiempo real en el dispositivo a través de Seguridad de Windows. Para obtener más información, vea [Configurar la protección always-on](configure-real-time-protection-microsoft-defender-antivirus.md).
 
 La configuración de investigación automatizada dependerá de la configuración del inquilino. Se configurará para que esté semiauto automatizado de forma predeterminada. Para obtener más información, consulte [Introducción a las investigaciones automatizadas](automated-investigations.md).
 

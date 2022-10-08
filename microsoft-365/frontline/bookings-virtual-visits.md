@@ -20,17 +20,19 @@ ms.collection:
 - m365solution-healthcare
 - m365solution-scenario
 - m365-frontline
+- highpri
+- EngageScoreSep2022
 ms.reviewer: ''
 description: Obtenga información sobre cómo programar, administrar y realizar citas virtuales mediante la aplicación Bookings en Teams.
 appliesto:
 - Microsoft Teams
 - Microsoft 365 for frontline workers
-ms.openlocfilehash: ef4ca09cac8cc411e6b9b33b32b27c01265ddccf
-ms.sourcegitcommit: 5e5c2c1f7c321b5eb1c5b932c03bdd510005de13
-ms.translationtype: HT
+ms.openlocfilehash: 2c9439e17ce62b7fdbb0186f4efc2c52ab13232e
+ms.sourcegitcommit: 12af9e8e3a6eaa090fda9e98ccb831dff65863a4
+ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/15/2022
-ms.locfileid: "66998765"
+ms.lasthandoff: 09/27/2022
+ms.locfileid: "68063604"
 ---
 # <a name="virtual-appointments-with-microsoft-teams-and-the-bookings-app"></a>Citas virtuales con Microsoft Teams y la aplicación Bookings
 
@@ -60,7 +62,7 @@ En este artículo se proporciona información general sobre cómo programar, adm
 
 Si es administrador, consulte [Administrar la aplicación Bookings en Teams](/microsoftteams/bookings-app-admin?bc=/microsoft-365/frontline/breadcrumb/toc.json&toc=/microsoft-365/frontline/toc.json) para obtener información sobre los requisitos previos para usar la aplicación Bookings en Teams, cómo controlar el acceso a Bookings en su organización y la configuración recomendada de directivas y administradores.
 
-Recuerde que solo los programadores de la organización necesitan tener instalada la aplicación Bookings en Teams. El personal que realice o participe en citas virtuales no necesita la aplicación. Se unen a citas desde su calendario de Teams o Outlook, o bien usando el vínculo para la reunión en su correo electrónico de confirmación de reserva.
+Recuerde que solo los programadores de la organización necesitan tener instalada la aplicación Bookings en Teams. El personal que realiza o participa en citas virtuales no necesita la aplicación. Se unen a citas desde su calendario de Teams o Outlook, o bien usando el vínculo para la reunión en su correo electrónico de confirmación de reserva.
 
 ## <a name="set-up-a-new-booking-calendar"></a>Configurar un nuevo calendario de reservas
 

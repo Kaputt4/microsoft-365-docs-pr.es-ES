@@ -17,19 +17,20 @@ ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection:
-- M365-security-compliance
+- m365-security
 - m365solution-scenario
 - m365solution-evalutatemtp
 - zerotrust-solution
 - highpri
+- tier1
 ms.custom: admindeeplinkEXCHANGE
 ms.topic: how-to
-ms.openlocfilehash: 72197d6543a297bf5b17c48e5d26fb29059e9d64
-ms.sourcegitcommit: 2dedd0f594b817779e034afa6c4418def2382a22
+ms.openlocfilehash: cb1f96b5882f1f0554200053c6032c2649c60e35
+ms.sourcegitcommit: 12af9e8e3a6eaa090fda9e98ccb831dff65863a4
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/18/2022
-ms.locfileid: "67798987"
+ms.lasthandoff: 09/27/2022
+ms.locfileid: "68064352"
 ---
 # <a name="pilot-microsoft-defender-for-office-365"></a>Microsoft Defender para Office 365 piloto
 
@@ -120,12 +121,12 @@ En la tabla siguiente se proporcionan referencias y más instrucciones para conf
 |Directivas contra correo electrónico no deseado|Proteja a los usuarios del correo no deseado de correo electrónico, incluidas las acciones que se realizarán si se detecta correo no deseado.|Sí|Sí|[Configuración de directivas contra correo no deseado en Defender para Office 365](../office-365-security/configure-your-spam-filter-policies.md)|
 |Protección contra la suplantación de identidad|Proteja a los usuarios de los intentos de suplantación de identidad mediante la inteligencia suplantada y la información de inteligencia de suplantación de identidad.|Sí|Sí|[Configuración de la inteligencia de suplantación de identidad en Defender para Office 365](../office-365-security/learn-about-spoof-intelligence.md) <br><br> [Configuración de directivas contra phishing en EOP](../office-365-security/configure-anti-phishing-policies-eop.md)|
 |Protección contra suplantación|Protección de los usuarios frente a ataques de suplantación de identidad (phishing) y configuración de sugerencias de seguridad en mensajes sospechosos|Sí, pero se requiere alguna configuración.|Sí, pero se requiere alguna configuración.|[Configuración de suplantación en directivas contra suplantación de identidad en Microsoft Defender para Office 365](../office-365-security/set-up-anti-phishing-policies.md#impersonation-settings-in-anti-phishing-policies-in-microsoft-defender-for-office-365) <br><br> [Información de suplantación en Defender para Office 365](../office-365-security/impersonation-insight.md) <br><br> [Configuración de directivas contra phishing en Microsoft Defender para Office 365](../office-365-security/configure-mdo-anti-phishing-policies.md)|
-|Directivas de datos adjuntos seguros|Proteja a los usuarios de contenido malintencionado en archivos y datos adjuntos de correo electrónico en SharePoint, OneDrive y Teams.|Yes|De forma eficaz, a través de la protección integrada|[Configuración de directivas de datos adjuntos seguros en Defender para Office 365](../office-365-security/set-up-safe-attachments-policies.md)|
+|Directivas de datos adjuntos seguros|Proteja a los usuarios de contenido malintencionado en archivos y datos adjuntos de correo electrónico en SharePoint, OneDrive y Teams.|Sí|De forma eficaz, a través de la protección integrada|[Configuración de directivas de datos adjuntos seguros en Defender para Office 365](../office-365-security/set-up-safe-attachments-policies.md)|
 |Directivas de vínculos seguros|Proteja a los usuarios de la apertura y el uso compartido de vínculos malintencionados en mensajes de correo electrónico o aplicaciones de Office compatibles.|Yes|De forma eficaz, a través de la protección integrada|[Configurar directivas de Vínculos seguros en Microsoft Defender para Office 365](../office-365-security/set-up-safe-links-policies.md)|
 
 ## <a name="step-3-try-out-capabilities-and-get-familiar-with-simulation-monitoring-and-metrics"></a>Paso 3: Probar las funcionalidades y familiarizarse con la simulación, la supervisión y las métricas
 
-Ahora que el piloto está configurado y configurado, resulta útil familiarizarse con las herramientas de generación de informes, supervisión y simulación de ataques que son exclusivas de Microsoft Defender para Microsoft 365.
+Ahora que el piloto está configurado y configurado, resulta útil familiarizarse con las herramientas de informes, supervisión y simulación de ataques que son únicas para Microsoft Defender para Microsoft 365.
 
 |Funcionalidad|Descripción|Más información|
 |---|---|---|

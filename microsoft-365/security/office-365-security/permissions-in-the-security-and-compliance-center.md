@@ -10,7 +10,7 @@ audience: Admin
 ms.topic: conceptual
 f1_keywords:
 - ms.o365.cc.AdminRoleGroups
-ms.collection: M365-security-compliance
+ms.collection: m365-security
 ms.localizationpriority: medium
 search.appverid:
 - MOE150
@@ -20,12 +20,12 @@ ms.custom:
 - seo-marvel-apr2020
 ms.subservice: mdo
 ms.service: microsoft-365-security
-ms.openlocfilehash: fb0d5496acddebb591d368d78f35f1be567773a9
-ms.sourcegitcommit: 2b89bcff547e00be3d38dc8d1e6cbcf8f41eba42
+ms.openlocfilehash: 491f3cdff9667a77dcdb45bab470a9f7ee15d91b
+ms.sourcegitcommit: 12af9e8e3a6eaa090fda9e98ccb831dff65863a4
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/03/2022
-ms.locfileid: "67595991"
+ms.lasthandoff: 09/27/2022
+ms.locfileid: "68063824"
 ---
 # <a name="permissions-in-the-security--compliance-center"></a>Permisos en el Centro de seguridad y cumplimiento
 
@@ -88,12 +88,11 @@ Para ver cómo conceder acceso al Centro de cumplimiento de seguridad &, consult
 |**Analistas de Information Protection**|Acceda y administre las alertas DLP y el explorador de actividad. Acceso de solo visualización a directivas DLP, etiquetas de confidencialidad y sus directivas y todos los tipos de clasificador.|Visor de lista de clasificación de datos <br/><br/> Analista de Information Protection|
 |**Investigadores de Information Protection**|Acceso y administración de alertas DLP, explorador de actividad y explorador de contenido. Acceso de solo visualización a directivas DLP, etiquetas de confidencialidad y sus directivas y todos los tipos de clasificador.|Visor de contenido de clasificación de datos <br/><br/> Analista de Information Protection <br/><br/> Investigador de protección de información|
 |**Lectores de Information Protection**|Acceso de solo visualización a informes para directivas DLP y etiquetas de confidencialidad y sus directivas.|Lector de protección de información|
-|**Administración de riesgos internos**|Use este grupo de roles para administrar la administración de riesgos internos para su organización en un solo grupo. Al agregar todas las cuentas de usuario de los administradores, analistas e investigadores designados, puede configurar permisos de administración de riesgos internos en un solo grupo. Este grupo de roles contiene todos los roles de permisos de administración de riesgos internos. Esta es la forma más sencilla de empezar a trabajar rápidamente con la administración de riesgos internos y es un buen ajuste para las organizaciones que no necesitan permisos independientes definidos para grupos de usuarios independientes.|Administración de casos <br/><br/> Administración del conector de datos <br/><br/> Administración de riesgos internos Administración <br/><br/> Análisis de administración de riesgos internos <br/><br/> Auditoría de administración de riesgos internos <br/><br/> Investigación de administración de riesgos internos <br/><br/> Sesiones de administración de riesgos internos <br/><br/> caso View-Only|
+|**Administración de riesgos internos**|Use este grupo de roles para administrar la administración de riesgos internos para su organización en un solo grupo. Al agregar todas las cuentas de usuario de los administradores, analistas e investigadores designados, puede configurar permisos de administración de riesgos internos en un solo grupo. Este grupo de roles contiene todos los roles de permisos de administración de riesgos internos. Esta es la forma más sencilla de empezar a trabajar rápidamente con la administración de riesgos internos y es un buen ajuste para las organizaciones que no necesitan permisos independientes definidos para grupos de usuarios independientes.|Administración de casos <br/><br/> Administración del conector de datos <br/><br/> Administración de riesgos internos Administración <br/><br/> Análisis de administración de riesgos internos <br/><br/> Auditoría de administración de riesgos internos <br/><br/> Investigación de administración de riesgos internos <br/><br/> caso View-Only|
 |**Administradores de administración de riesgos internos**|Use este grupo de roles para configurar inicialmente la administración de riesgos internos y, posteriormente, para separar a los administradores de riesgos internos en un grupo definido. Los usuarios de este grupo de roles pueden crear, leer, actualizar y eliminar directivas de administración de riesgos internos, configuraciones globales y asignaciones de grupos de roles.|Administración de casos <br/><br/> Administración del conector de datos <br/><br/> Administración de riesgos internos Administración <br/><br/> caso View-Only|
 |**Analistas de administración de riesgos internos**|Use este grupo para asignar permisos a los usuarios que actuarán como analistas de casos de administración de riesgos internos. Los usuarios de este grupo de roles pueden acceder a todas las plantillas de alertas, casos y avisos de administración de riesgos internos. No tienen acceso al Explorador de contenido de riesgos internos.|Administración de casos <br/><br/> Análisis de administración de riesgos internos <br/><br/> caso View-Only|
 |**Auditores de administración de riesgos internos**|Use este grupo para asignar permisos a los usuarios que auditarán las actividades de administración de riesgos internos. Los usuarios de este grupo de roles pueden acceder al registro de auditoría de riesgos internos.|Auditoría de administración de riesgos internos|
 |**Investigadores de administración de riesgos internos**|Use este grupo para asignar permisos a usuarios que actúen como investigadores de datos de riesgos internos. Los usuarios de este grupo de roles pueden acceder a todas las plantillas de alertas, casos y avisos de administración de riesgos internos, así como al Explorador de contenido.|Administración de casos <br/><br/> Investigación de administración de riesgos internos <br/><br/> caso View-Only|
-|**Aprobadores de sesión de Administración de riesgos internos**|Administrar las solicitudes de modificación de grupo para la grabación de sesión.|Sesiones de administración de riesgos internos|
 |**Colaboradores de IRM**|Este grupo de roles es visible, pero solo lo usan los servicios en segundo plano.|Contribución permanente de Administración de riesgos internos <br/><br/> Contribución temporal de Administración de riesgos internos|
 |**Administradores de conocimientos**|Configure el conocimiento, el aprendizaje, la asignación de entrenamientos y otras características inteligentes.|Administración de conocimiento|
 |**Administrador de MailFlow**|Los miembros pueden supervisar y ver informes e información de flujo de correo en el Centro de cumplimiento de seguridad &. Los administradores globales pueden agregar usuarios normales a este grupo, pero, si el usuario no es miembro del grupo de exchange Administración, el usuario no tendrá acceso a las tareas relacionadas con el administrador de Exchange.|Destinatarios con permiso de vista|
@@ -149,7 +148,6 @@ Tenga en cuenta que los siguientes roles no están asignados al grupo de roles A
 - Auditoría de administración de riesgos internos
 - Investigación de administración de riesgos internos
 - Contribución permanente de Administración de riesgos internos
-- Sesiones de administración de riesgos internos
 - Contribución temporal de Administración de riesgos internos
 - Administración de conocimiento
 - Preview
@@ -205,7 +203,6 @@ Tenga en cuenta que los siguientes roles no están asignados al grupo de roles A
 |**Auditoría de administración de riesgos internos**|Permite ver los seguimientos de auditoría de Insider Risk.|Administración de riesgos de Insider <br/><br/> Auditores de administración de riesgos internos|
 |**Investigación de administración de riesgos internos**|Acceda a todas las alertas de administración de riesgos internos, los casos, las plantillas de avisos y el Explorador de contenido para todos los casos.|Administración de riesgos de Insider <br/><br/> Investigadores de administración de riesgos internos|
 |**Contribución permanente de Administración de riesgos internos**|Este grupo de roles es visible, pero solo lo usan los servicios en segundo plano.|Colaboradores de IRM|
-|**Sesiones de administración de riesgos internos**|Permitir la administración de solicitudes de modificación de grupo para la grabación de sesión.|Administración de riesgos de Insider <br/><br/> Aprobadores de sesión de Administración de riesgos internos|
 |**Contribución temporal de Administración de riesgos internos**|Este grupo de roles es visible, pero solo lo usan los servicios en segundo plano.|Colaboradores de IRM|
 |**Administración de conocimiento**|Configure el conocimiento, el aprendizaje, la asignación de entrenamientos y otras características inteligentes.|Administradores de conocimientos|
 |**Administrar alertas**|Ver y editar la configuración y los informes de las alertas.|Administrador de cumplimiento <p><p> Administrador de datos de cumplimiento <p> Administración de la organización <p> Administrador de seguridad <p> Operador de seguridad|

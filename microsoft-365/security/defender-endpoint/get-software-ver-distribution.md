@@ -11,17 +11,19 @@ author: DulceMontemayor
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
-ms.collection: M365-security-compliance
+ms.collection:
+- m365-security
+- tier3
 ms.topic: article
 ms.subservice: mde
 ms.custom: api
 search.appverid: met150
-ms.openlocfilehash: f8df12664848a7a8570cef473baa740c1bc7fea5
-ms.sourcegitcommit: 9b133379196da2b3a4bb311b07ff274f43780f68
+ms.openlocfilehash: e1c58e36a6b4b07301cca2cbe5bd95c7123c7a36
+ms.sourcegitcommit: 0b7070ec119e00e0dafe030bbfbef0ae5c9afa19
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/14/2022
-ms.locfileid: "67701024"
+ms.lasthandoff: 09/29/2022
+ms.locfileid: "68201449"
 ---
 # <a name="list-software-version-distribution"></a>Enumerar distribución de versión de software
 

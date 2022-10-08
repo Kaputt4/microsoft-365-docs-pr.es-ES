@@ -13,13 +13,14 @@ ms.assetid: 37640c80-ce6f-47e2-afd1-bc1d3c50e637
 description: Los administradores pueden aprender a usar el widget Colas en el panel Flujo de correo del Centro de cumplimiento de seguridad & para supervisar el flujo de correo incorrecto a sus organizaciones locales o asociadas a través de conectores salientes.
 ms.subservice: mdo
 ms.service: microsoft-365-security
-ms.collection: M365-security-compliance
-ms.openlocfilehash: 2d9e35e90870ef8b9dba97f8b10fa4d09090551a
-ms.sourcegitcommit: 2b89bcff547e00be3d38dc8d1e6cbcf8f41eba42
+ms.collection: m365-security
+search.appverid: met150
+ms.openlocfilehash: a1f6a57a471430cedd934ccfc36f7e78fa356945
+ms.sourcegitcommit: 12af9e8e3a6eaa090fda9e98ccb831dff65863a4
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/03/2022
-ms.locfileid: "67597402"
+ms.lasthandoff: 09/27/2022
+ms.locfileid: "68063934"
 ---
 # <a name="queues-insight-in-the-security--compliance-center"></a>Información sobre colas en el Centro de cumplimiento de seguridad &
 

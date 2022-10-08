@@ -7,9 +7,10 @@ author: cmcatee-MSFT
 manager: scotv
 audience: Admin
 ms.topic: article
-ms.service: o365-administration
+ms.service: microsoft-365-business
 ms.localizationpriority: medium
 ms.collection:
+- scotvorg
 - M365-subscription-management
 - Adm_O365
 - Adm_TOC
@@ -20,12 +21,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Puede crear y usar una plantilla para ahorrar tiempo y estandarizar la configuración al agregar varios usuarios en el Centro de administración de Microsoft 365.
-ms.openlocfilehash: 0f0d737bcf600acb4084c5e2b85e5595c6387fee
-ms.sourcegitcommit: 9255a7e8b398f92d8dae09886ae95dc8577bf29a
+ms.openlocfilehash: 2bd20c6d68d71156d2ea307c7b39abc504907c13
+ms.sourcegitcommit: 0b7070ec119e00e0dafe030bbfbef0ae5c9afa19
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/17/2022
-ms.locfileid: "65436999"
+ms.lasthandoff: 09/29/2022
+ms.locfileid: "68201405"
 ---
 # <a name="create-and-use-a-template-to-add-users"></a>Crear y usar una plantilla para agregar usuarios
 
@@ -33,7 +34,7 @@ Puede crear y usar una plantilla para ahorrar tiempo y estandarizar la configura
 
 ## <a name="create-a-template"></a>Creación de una plantilla
 
-Las plantillas son fáciles de crear&mdash; Puede seleccionar **UsuariosUsuarios** >  activos  > **Plantillas** de usuario y, a continuación, seleccione **Agregar una plantilla** en la lista desplegable, o bien puede agregar un nuevo usuario y, cuando haya terminado, tendrá la opción de guardar la entrada como plantilla.
+Las plantillas son fáciles de crear&mdash;, puede seleccionar **Usuarios** > **usuarios activos** > **Plantillas de usuario** y, a continuación, seleccionar **Agregar una plantilla** en la lista desplegable, o bien puede agregar un nuevo usuario y, cuando haya terminado, tendrá la opción de guardar la entrada como plantilla.
 
 Al crear una plantilla después de agregar un usuario, los valores que elija para la siguiente configuración se guardan en la plantilla:
 
@@ -44,7 +45,7 @@ Al crear una plantilla después de agregar un usuario, los valores que elija par
 - Opciones de licencia
 - Opciones de aplicación
 - Rol
-- La mayoría de la información de perfil, como **perfil de trabajo**, **departamento**, **Office**, **teléfono Office** y **dirección de calle** 
+- La mayoría de la información de perfil, como **perfil de trabajo**, **departamento**, **oficina**, **teléfono de Office** y **dirección postal** 
 
 La siguiente información es específica del usuario y no se guarda en la plantilla:
 
@@ -62,12 +63,12 @@ Al crear una plantilla seleccionando la opción **Agregar una plantilla** , pued
 
 Para usar una plantilla existente para agregar un usuario:
 
-1. En el Centro de administración, seleccione **UsuariosUsuarios** >  **activos**.
+1. En el centro de administración, seleccione **Usuarios** > **usuarios activos**.
 
 2. Seleccione **Plantillas de usuario** y, a continuación, seleccione una plantilla en la lista desplegable. (La lista contendrá solo las plantillas que creó, no las creadas por otros administradores).
 
    > [!NOTE]
-   > También puede usar una plantilla para agregar un usuario seleccionando **Plantillas** >  de **usuarioAdministrar plantillas**, seleccionando una plantilla y, a continuación, seleccionando **Usar plantilla**.
+   > También puede usar una plantilla para agregar un usuario seleccionando **Plantillas** >  de usuario **Administrar plantillas**, seleccionando una plantilla y, a continuación, seleccionando **Usar plantilla**.
 
 3. Siga los pasos para crear un usuario a partir de la plantilla seleccionada.
 
@@ -78,7 +79,7 @@ Para usar una plantilla existente para agregar un usuario:
 
 Solo puede eliminar plantillas que ya no necesite y agregar otras nuevas. Para eliminar una plantilla:
 
-1. En el Centro de administración, seleccione **UsuariosUsuarios** >  **activos**.
+1. En el centro de administración, seleccione **Usuarios** > **usuarios activos**.
 
 2. Seleccione **Plantillas** y, a continuación, seleccione **Administrar plantillas** en la lista desplegable.
 

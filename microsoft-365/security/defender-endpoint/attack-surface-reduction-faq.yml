@@ -16,14 +16,14 @@ metadata:
   manager: dansimp
   ms.custom: asr
   ms.topic: faq
-  ms.collection: m365-security-compliance
+  ms.collection: m365-security
   ms.date: 09/13/2022
-  ms.openlocfilehash: be90f7724ad4e2a5d91532aecacef4d0a22ebdef
-  ms.sourcegitcommit: c29af68260ba8676083674b3c70209bff2c2e362
+  ms.openlocfilehash: 413863eee617bb9d741ca700b37b931e345253fd
+  ms.sourcegitcommit: 12af9e8e3a6eaa090fda9e98ccb831dff65863a4
   ms.translationtype: MT
   ms.contentlocale: es-ES
-  ms.lasthandoff: 09/16/2022
-  ms.locfileid: "67741969"
+  ms.lasthandoff: 09/27/2022
+  ms.locfileid: "68065978"
 title: Preguntas más frecuentes sobre la reducción de la superficie expuesta a ataques
 summary: >
   [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
@@ -40,11 +40,11 @@ sections:
   - question: >
       ¿La reducción de la superficie expuesta a ataques (ASR) forma parte de Windows?
     answer: >
-      ASR era originalmente una característica del conjunto de características de protección contra vulnerabilidades introducidas como una actualización principal del Antivirus de Microsoft Defender, en Windows 10, versión 1709. Antivirus de Microsoft Defender es el componente antimalware nativo de Windows. Sin embargo, el conjunto de características de ASR completo solo está disponible con una licencia de Windows Enterprise. Tenga en cuenta también que las exclusiones de reglas de ASR se administran por separado de las exclusiones del Antivirus de Microsoft Defender.
+      ASR era originalmente una característica del conjunto de características de protección contra vulnerabilidades introducidas como una actualización principal de Microsoft Defender Antivirus, en Windows 10, versión 1709. Microsoft Defender Antivirus es el componente antimalware nativo de Windows. Sin embargo, el conjunto de características de ASR completo solo está disponible con una licencia de Windows Enterprise. Tenga en cuenta también que las exclusiones de reglas de ASR se administran por separado de Microsoft Defender exclusiones de Antivirus.
   - question: >
       ¿Es necesario tener una licencia empresarial para ejecutar reglas de ASR?
     answer: >
-      El conjunto completo de reglas y características de ASR solo se admite si tiene una licencia empresarial para Windows 10 o Windows 11. Un número limitado de reglas puede funcionar sin una licencia de empresa. Si tiene Microsoft 365 Empresa, establezca Antivirus de Microsoft Defender como solución de seguridad principal y habilite las reglas a través de PowerShell. No se admite oficialmente el uso de ASR sin una licencia empresarial y no podrá usar todas las funcionalidades de ASR.
+      El conjunto completo de reglas y características de ASR solo se admite si tiene una licencia empresarial para Windows 10 o Windows 11. Un número limitado de reglas puede funcionar sin una licencia de empresa. Si tiene Microsoft 365 Empresa, establezca Microsoft Defender Antivirus como solución de seguridad principal y habilite las reglas a través de PowerShell. No se admite oficialmente el uso de ASR sin una licencia empresarial y no podrá usar todas las funcionalidades de ASR.
 
 
       Para obtener más información sobre las licencias de Windows, consulta [licencias de Windows 10](https://www.microsoft.com/licensing/product-licensing/windows10?activetab=windows10-pivot:primaryr5) y obtén la [guía de licencias por volumen para Windows 10](https://download.microsoft.com/download/2/D/1/2D14FE17-66C2-4D4C-AF73-E122930B60F6/Windows-10-Volume-Licensing-Guide.pdf).
@@ -79,7 +79,7 @@ sections:
       Tenga en cuenta los siguientes elementos sobre las exclusiones de reglas de ASR (incluidos los caracteres comodín y env. variables):
 
 
-      - Las exclusiones de reglas de ASR son independientes de las exclusiones del Antivirus de Microsoft Defender.
+      - Las exclusiones de reglas de ASR son independientes de las exclusiones de Microsoft Defender Antivirus.
 
       - No se pueden usar caracteres comodín para definir una letra de unidad.
 
@@ -189,7 +189,7 @@ sections:
   - question: >
       ¿ASR admite soluciones de seguridad de terceros?
     answer: >
-      ASR usa antivirus de Microsoft Defender para bloquear aplicaciones. No es posible configurar ASR para usar otra solución de seguridad para el bloqueo en este momento.
+      ASR usa Microsoft Defender Antivirus para bloquear aplicaciones. No es posible configurar ASR para usar otra solución de seguridad para el bloqueo en este momento.
   - question: >
       Tengo una licencia E5 y he habilitado algunas reglas de ASR junto con Defender para punto de conexión. ¿Es posible que un evento ASR no aparezca en la escala de tiempo de eventos de Defender para punto de conexión?
     answer: >
@@ -237,4 +237,4 @@ sections:
 
       * [Habilitar las reglas de la reducción de superficie expuesta a ataques](enable-attack-surface-reduction.md)
 
-      * [Compatibilidad del Antivirus de Microsoft Defender con otros antivirus o antimalware](/windows/security/threat-protection/microsoft-defender-antivirus/microsoft-defender-antivirus-compatibility)
+      * [Compatibilidad de Microsoft Defender Antivirus con otros antivirus o antimalware](/windows/security/threat-protection/microsoft-defender-antivirus/microsoft-defender-antivirus-compatibility)

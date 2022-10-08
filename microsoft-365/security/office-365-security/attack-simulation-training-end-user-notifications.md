@@ -8,16 +8,17 @@ ms.topic: how-to
 ms.service: microsoft-365-security
 ms.localizationpriority: medium
 ms.collection:
-- M365-security-compliance
+- m365-security
 - m365initiative-defender-office365
 description: Los administradores pueden aprender a crear mensajes de correo electrónico de notificación del usuario final para Entrenamiento de simulación de ataque en Microsoft Defender para Office 365 plan 2.
 ms.subservice: mdo
-ms.openlocfilehash: 6297fafeb572c807a49161b1bd3e11a0820b7686
-ms.sourcegitcommit: 10e6abe740e27000e223378eb17d657a47555fa8
+search.appverid: met150
+ms.openlocfilehash: f4105f1a68c57982fc6762b8179b8eed8008e4d5
+ms.sourcegitcommit: 12af9e8e3a6eaa090fda9e98ccb831dff65863a4
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/31/2022
-ms.locfileid: "67481072"
+ms.lasthandoff: 09/27/2022
+ms.locfileid: "68064132"
 ---
 # <a name="end-user-notifications-for-attack-simulation-training"></a>Notificaciones del usuario final para el aprendizaje de simulación de ataques
 

@@ -10,18 +10,18 @@ ms.localizationpriority: medium
 search.appverid:
 - MET150
 - MOE150
-ms.collection: M365-security-compliance
+ms.collection: m365-security
 ms.custom: ''
 ms.date: 06/10/2021
 description: Obtenga información sobre cómo acelerar el proceso de detección y direccionamiento de cuentas de usuario en peligro con funcionalidades automatizadas de investigación y respuesta en Microsoft Defender para Office 365 Plan 2.
 ms.subservice: mdo
 ms.service: microsoft-365-security
-ms.openlocfilehash: 5c6bd48759382209375201b2e95ac71ccce4d0f4
-ms.sourcegitcommit: 10e6abe740e27000e223378eb17d657a47555fa8
+ms.openlocfilehash: 5cf0574629bc39f987ab5ee4ad2968937ed4bc64
+ms.sourcegitcommit: 12af9e8e3a6eaa090fda9e98ccb831dff65863a4
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/31/2022
-ms.locfileid: "67482216"
+ms.lasthandoff: 09/27/2022
+ms.locfileid: "68064198"
 ---
 # <a name="address-compromised-user-accounts-with-automated-investigation-and-response"></a>Abordar las cuentas de usuario en peligro con una investigación y respuesta automatizadas
 

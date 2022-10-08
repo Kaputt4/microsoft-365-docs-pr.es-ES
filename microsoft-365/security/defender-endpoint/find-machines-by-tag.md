@@ -11,17 +11,19 @@ author: mjcaparas
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
-ms.collection: M365-security-compliance
+ms.collection:
+- m365-security
+- tier3
 ms.topic: article
 ms.subservice: mde
 ms.custom: api
 search.appverid: met150
-ms.openlocfilehash: edad0a83ff773fa6530b1ec3051f5f7eeceb647a
-ms.sourcegitcommit: 9b133379196da2b3a4bb311b07ff274f43780f68
+ms.openlocfilehash: f1ebce553d82273fb9d17d686d84f487ff3cf743
+ms.sourcegitcommit: 0b7070ec119e00e0dafe030bbfbef0ae5c9afa19
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/14/2022
-ms.locfileid: "67697559"
+ms.lasthandoff: 09/29/2022
+ms.locfileid: "68201647"
 ---
 # <a name="find-devices-by-tag-api"></a>Buscar dispositivos por API de etiquetas
 
@@ -65,6 +67,8 @@ Delegado (cuenta profesional o educativa)|Machine.ReadWrite|"Leer y escribir inf
 > - La respuesta incluirá solo los dispositivos a los que el usuario tenga acceso en función de la configuración del grupo de dispositivos (consulte [Creación y administración de grupos de dispositivos](machine-groups.md) para obtener más información).
 > - El usuario debe tener al menos el siguiente permiso de rol: "Ver datos" (consulte [Creación y administración de roles](user-roles.md) para obtener más información).
 > - La respuesta incluirá solo los dispositivos a los que el usuario tenga acceso en función de la configuración del grupo de dispositivos (consulte [Creación y administración de grupos de dispositivos](machine-groups.md) para obtener más información).
+>
+> La creación de grupos de dispositivos se admite en El plan 1 y el plan 2 de Defender para punto de conexión.
 
 ## <a name="http-request"></a>Solicitud HTTP
 

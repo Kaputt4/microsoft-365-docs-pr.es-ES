@@ -6,9 +6,10 @@ manager: scotv
 ms.date: 8/6/2019
 audience: ITPro
 ms.topic: conceptual
-ms.service: o365-administration
+ms.service: microsoft-365-enterprise
 ms.localizationpriority: high
 ms.collection:
+- scotvorg
 - Ent_O365
 - Strat_O365_Enterprise
 - m365initiative-coredeploy
@@ -23,18 +24,18 @@ search.appverid:
 - MOE150
 - BCS160
 description: Aprenda a usar la dirección IP de Office 365 y el servicio web URL para identificar y diferenciar mejor el tráfico de red de Office 365.
-ms.openlocfilehash: b13377c6230c869231b7cecda8375f663cbcd33b
-ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
-ms.translationtype: HT
+ms.openlocfilehash: cc7b060c2566ed437d286a0d0cf7c165b534556e
+ms.sourcegitcommit: 0b7070ec119e00e0dafe030bbfbef0ae5c9afa19
+ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "65100641"
+ms.lasthandoff: 09/29/2022
+ms.locfileid: "68170407"
 ---
 # <a name="office-365-ip-address-and-url-web-service"></a>El servicio web de URL y dirección IP de Office 365
 
-Para ayudarle a identificar y diferenciar el tráfico de red de Office 365, un nuevo servicio web publica puntos de conexión de Office 365, con lo cual le resultará más fácil evaluar, configurar y mantenerse al día con los cambios. Este nuevo servicio web reemplaza los archivos XML descargables que están disponibles actualmente. Se prevé la eliminación gradual del formato XML para el 2 de octubre de 2018.
+The Office 365 IP Address and URL web service helps you better identify and differentiate Office 365 network traffic, making it easier for you to evaluate, configure, and stay up to date with changes. This REST-based web service replaces the previous XML downloadable files, which were phased out on October 2, 2018.
 
-Como cliente o proveedor de dispositivos de red perimetral, usted puede crear el nuevo servicio web basado en REST para las entradas FQDN y la dirección IP de Office 365. Puede obtener acceso a los datos directamente en un explorador web con estas direcciones URL:
+As a customer or a network perimeter device vendor, you can build against the web service for Office 365 IP address and FQDN entries. You can access the data directly in a web browser using these URLs:
 
 - Para obtener la versión más reciente de los intervalos de direcciones IP y URL de Office 365, use [https://endpoints.office.com/version](https://endpoints.office.com/version?clientrequestid=b10c5ed1-bad1-445f-b386-b919946339a7).
 - Si desea ver los datos de la página de intervalos de direcciones IP y URL de Office 365 para los firewalls y servidores proxy, use [https://endpoints.office.com/endpoints/worldwide](https://endpoints.office.com/endpoints/worldwide?clientrequestid=b10c5ed1-bad1-445f-b386-b919946339a7).
@@ -63,8 +64,8 @@ Para obtener más información, vea:
 
 Estos parámetros son comunes a todos los métodos de servicio web:
 
-- **format=\<JSON \| CSV\>** —De forma predeterminada, el formato de los datos devueltos es JSON. Use este parámetro opcional para devolver los datos en formato de valores separados por comas (CSV).
-- **ClientRequestId=\<guid\>** —Un GUID necesario que se genera para la asociación de clientes. Debe generar un GUID para cada equipo que llama al servicio web. No use los GUID que se muestran en los ejemplos siguientes, porque el servicio web podría bloquearlos en el futuro. El formato de GUID es _xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx_, donde x representa un número hexadecimal.
+- **format=\<JSON \| CSV\>** —By default, the returned data format is JSON. Use this optional parameter to return the data in comma-separated values (CSV) format.
+- **ClientRequestId=\<guid\>** —A required GUID that you generate for client association. Generate a unique GUID for each machine that calls the web service (the scripts included on this page generate a GUID for you). Do not use the GUIDs shown in the following examples because they might be blocked by the web service in the future. GUID format is _xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx_, where x represents a hexadecimal number.
 
   Para generar un GUID, puede usar el comando de PowerShell [New-GUID](/powershell/module/microsoft.powershell.utility/new-guid) o usar un servicio en línea como el [Generador GUID en línea](https://www.guidgenerator.com/).
 
@@ -72,25 +73,25 @@ Estos parámetros son comunes a todos los métodos de servicio web:
 
 Microsoft actualiza las entradas de direcciones IP y FQDN de Office 365 al principio de cada mes. En ocasiones, las actualizaciones fuera de banda se publican debido a incidencias de soporte técnico, actualizaciones de seguridad u otros requisitos operativos.
 
-Los datos de cada instancia publicada se asignan a un número de versión y el método web de versión le permite buscar la versión más reciente de cada una de las instancias del servicio de Office 365.
+The data for each published instance is assigned a version number, and the version web method enables you to check for the latest version of each Office 365 service instance. We recommend that you check the version not more than once an hour.
 
 Los parámetros del método web de versión son:
 
 - **AllVersions=\<true \| false\>**: de forma predeterminada, la versión devuelta es la más reciente. Incluya este parámetro opcional para solicitar todas las versiones publicadas desde la primera publicación del servicio web.
-- **Format=\<JSON \| CSV \| RSS\>** —Además de los formatos JSON y CSV, el método web de versión también es compatible con RSS. Puede usarlo junto con el parámetro _AllVersions=true_ para solicitar una fuente RSS, que se puede usar con Outlook y otros lectores RSS.
-- **Instance=\<Worldwide \| China \| USGovDoD \| USGovGCCHigh\>** —Este parámetro opcional especifica la instancia para la que se devolverá la versión. Si se omite, se devolverán todas las instancias. Las instancias válidas son: Worldwide, China, USGovDoD, USGovGCCHigh.
+- **Format=\<JSON \| CSV \| RSS\>** —In addition to the JSON and CSV formats, the version web method also supports RSS. You can use this optional parameter along with the _AllVersions=true_ parameter to request an RSS feed that can be used with Outlook or other RSS readers.
+- **Instance=\<Worldwide \| China \| USGovDoD \| USGovGCCHigh\>** —This optional parameter specifies the instance to return the version for. If omitted, all instances are returned. Valid instances are: Worldwide, China, USGovDoD, USGovGCCHigh.
 
-El método web de versión no tiene una tasa limitada y no devuelve nunca códigos de respuesta HTTP 429. La respuesta al método web de versión incluye un encabezado de control de caché que recomienda el almacenamiento en caché de los datos durante una hora. El resultado del método web de versión puede ser un registro único o una matriz de registros. Los elementos de cada registro son:
+The version web method is not rate limited and does not ever return 429 HTTP Response Codes. The response to the version web method does include a cache-control header recommending caching of the data for 1 hour. The result from the version web method can be a single record or an array of records. The elements of each record are:
 
 - instance: el nombre corto de la instancia de servicio de Office 365.
 - latest: la versión más reciente de los puntos de conexión de la instancia especificada.
-- versions: una lista de todas las versiones anteriores de la instancia especificada. Este elemento solo se incluye si el parámetro _AllVersions_ es verdadero.
+- versions—A list of all previous versions for the specified instance. This element is only included if the _AllVersions_ parameter is true.
 
 ### <a name="version-web-method-examples"></a>Ejemplos de método web de versión
 
 Ejemplo 1 de URI de solicitud: <https://endpoints.office.com/version?ClientRequestId=b10c5ed1-bad1-445f-b386-b919946339a7>
 
-Este URI devuelve la versión más reciente de cada instancia de servicio de Office 365. Resultado de ejemplo:
+This URI returns the latest version of each Office 365 service instance. Example result:
 
 ```json
 [
@@ -114,11 +115,11 @@ Este URI devuelve la versión más reciente de cada instancia de servicio de Off
 ```
 
 > [!IMPORTANT]
-> El GUID para el parámetro ClientRequestID en estos URI es solo un ejemplo. Para probar los URI de servicio web, genere su propio GUID. El servicio web podría bloquear en el futuro los GUID que se muestran en estos ejemplos.
+> The GUID for the ClientRequestID parameter in these URIs are only an example. To try the web service URIs out, generate your own GUID. The GUIDs shown in these examples may be blocked by the web service in the future.
 
 Ejemplo 2 de URI de solicitud: <https://endpoints.office.com/version/Worldwide?ClientRequestId=b10c5ed1-bad1-445f-b386-b919946339a7>
 
-Este URI devuelve la versión más reciente de la instancia de servicio especificada de Office 365. Resultado de ejemplo:
+This URI returns the latest version of the specified Office 365 service instance. Example result:
 
 ```json
 {
@@ -129,7 +130,7 @@ Este URI devuelve la versión más reciente de la instancia de servicio especifi
 
 Ejemplo 3 de URI de solicitud: <https://endpoints.office.com/version/Worldwide?Format=CSV&ClientRequestId=b10c5ed1-bad1-445f-b386-b919946339a7>
 
-Este URI muestra los resultados en formato CSV. Resultado de ejemplo:
+This URI shows output in CSV format. Example result:
 
 ```csv
 instance,latest
@@ -138,7 +139,7 @@ Worldwide,2018063000
 
 Ejemplo 4 de URI de solicitud: <https://endpoints.office.com/version/Worldwide?AllVersions=true&ClientRequestId=b10c5ed1-bad1-445f-b386-b919946339a7>
 
-Este URI muestra todas las versiones anteriores que se han publicado para la instancia de servicio de Office 365 en todo el mundo. Resultado de ejemplo:
+This URI shows all prior versions that have been published for the Office 365 worldwide service instance. Example result:
 
 ```json
 {
@@ -153,7 +154,7 @@ Este URI muestra todas las versiones anteriores que se han publicado para la ins
 
 Ejemplo 5 de URI de fuente RSS: <https://endpoints.office.com/version/worldwide?clientRequestId=b10c5ed1-bad1-445f-b386-b919946339a7&allVersions=true&format=RSS>
 
-Este URI muestra una fuente RSS de las versiones publicadas que incluyen vínculos a la lista de cambios de cada versión. Resultado de ejemplo:
+This URI shows an RSS feed of the published versions that include links to the list of changes for each version. Example result:
 
 ```xml
 <?xml version="1.0" encoding="ISO-8859-1"?>
@@ -176,31 +177,31 @@ El método web de puntos de conexión devuelve todos los registros de intervalos
 
 Los parámetros del método web de puntos de conexión son:
 
-- **ServiceAreas=\<Common \| Exchange \| SharePoint \| Skype\>** —Una lista de valores separados por comas de áreas de servicio. Los elementos válidos son _Common_, _Exchange_, _SharePoint_ y _Skype_. Como los elementos del área de servicio _Common_ son un requisito previo para todas las demás áreas de servicio, el servicio web siempre los incluirá. Si no incluye este parámetro, se devolverán todas las áreas de servicio.
-- **TenantName=\<tenant_name\>** —El nombre de la cuenta empresarial de Office 365. El servicio web tiene el nombre especificado y lo inserta en partes de las direcciones URL que incluyen el nombre del inquilino. Si no proporciona un nombre de cuenta empresarial, esas partes de las direcciones URL tienen el carácter comodín (\*).
+- **ServiceAreas=\<Common \| Exchange \| SharePoint \| Skype\>** —A comma-separated list of service areas. Valid items are _Common_, _Exchange_, _SharePoint_, and _Skype_. Because _Common_ service area items are a prerequisite for all other service areas, the web service always includes them. If you do not include this parameter, all service areas are returned.
+- **TenantName=\<tenant_name\>** —Your Office 365 tenant name. The web service takes your provided name and inserts it in parts of URLs that include the tenant name. If you don't provide a tenant name, those parts of URLs have the wildcard character (\*).
 - **NoIPv6=\<true \| false\>**: establezca el valor en _true_ para excluir direcciones IPv6 del resultado si no usa IPv6 en la red.
-- **Instance=\<Worldwide \| China \| USGovDoD \| USGovGCCHigh\>** —Este parámetro obligatorio especifica la instancia para la que se devolverán los extremos. Las instancias válidas son: _Worldwide_, _China_, _USGovDoD_ y _USGovGCCHigh_.
+- **Instance=\<Worldwide \| China \| USGovDoD \| USGovGCCHigh\>** —This required parameter specifies the instance from which to return the endpoints. Valid instances are: _Worldwide_, _China_, _USGovDoD_, and _USGovGCCHigh_.
 
 Si llama al método web de puntos de conexión demasiadas veces desde la misma dirección IP de cliente, es posible que reciba el código de respuesta HTTP _429 (Demasiadas solicitudes)_. Si recibe este código de respuesta, espere 1 hora antes de repetir la solicitud o genere un nuevo GUID. Como recomendación general, solo debe llamar al método web de puntos de conexión cuando el método web de versión indica que hay una nueva versión disponible.
 
-El resultado del método web de extremos es una matriz de registros en la que cada registro representa un conjunto de extremos. Los elementos de cada registro son:
+The result from the endpoints web method is an array of records in which each record represents a specific endpoint set. The elements for each record are:
 
 - id: el número de identificador inmutable del conjunto de puntos de conexión.
 - serviceArea: el área de servicio que forma parte de: _Common_, _Exchange_, _SharePoint_ o _Skype_.
-- urls: las direcciones URL del conjunto de puntos de conexión. Una matriz de JSON de registros DNS. Se omite si está en blanco.
-- tcpPorts: los puertos TCP del conjunto de puntos de conexión. Todos los elementos de los puertos tienen formato de lista de valores separados por comas de puertos o intervalos de puertos separados por un carácter de guión (-). Los puertos se aplican a todas las direcciones IP y todas las direcciones URL en ese conjunto de puntos de conexión para esa categoría. Se omite si está en blanco.
-- udpPorts: los puertos UDP para los intervalos de direcciones IP en este conjunto de puntos de conexión. Se omite si está en blanco.
-- ips: los intervalos de direcciones IP asociados a este conjunto de puntos de conexión que se establece como asociado a los puertos TCP o UDP mencionados. Una matriz de JSON de intervalos de direcciones IP. Se omite si está en blanco.
-- category: la categoría de conectividad para el conjunto de puntos de conexión. Los valores válidos son _Optimizar_, _Permitir_ y _Predeterminado_. Si realiza una búsqueda del resultado del método web de puntos de conexión para la categoría de una dirección IP o URL específica, es posible que la consulta muestre varias categorías. En ese caso, siga la recomendación para la categoría de prioridad más alta. Por ejemplo, si el punto de conexión aparece tanto en _Optimizar_ como en _Permitir_, debe seguir los requisitos para _Optimizar_. Obligatorio.
+- urls—URLs for the endpoint set. A JSON array of DNS records. Omitted if blank.
+- tcpPorts—TCP ports for the endpoint set. All ports elements are formatted as a comma-separated list of ports or port ranges separated by a dash character (-). Ports apply to all IP addresses and all URLs in the endpoint set for a given category. Omitted if blank.
+- udpPorts—UDP ports for the IP address ranges in this endpoint set. Omitted if blank.
+- ips —The IP address ranges associated with this endpoint set as associated with the listed TCP or UDP ports. A JSON array of IP address ranges. Omitted if blank.
+- category—The connectivity category for the endpoint set. Valid values are _Optimize_, _Allow_, and _Default_. If you search the endpoints web method output for the category of a specific IP address or URL, it is possible that your query will return multiple categories. In such a case, follow the recommendation for the highest priority category. For example, if the endpoint appears in both _Optimize_ and _Allow_, you should follow the requirements for _Optimize_. Required.
 - expressRoute: _True_ si este conjunto de puntos de conexión se enruta a través de ExpressRoute; _False_ en caso contrario.
-- required: _verdadero_ si se requiere que el conjunto de extremos tenga conectividad para Office 365 para ser compatible. _Falso_ si el conjunto de extremos es opcional.
-- notes: para puntos de conexión opcionales, este texto describe la funcionalidad de Office 365 que no estará disponible si no se puede tener acceso a las direcciones IP o a las direcciones URL en el conjunto de puntos de conexión en el nivel de red. Se omite si está en blanco.
+- required — _True_ if this endpoint set is required to have connectivity for Office 365 to be supported. _False_ if this endpoint set is optional.
+- notes—For optional endpoints, this text describes Office 365 functionality that would be unavailable if IP addresses or URLs in this endpoint set cannot be accessed at the network layer. Omitted if blank.
 
 ### <a name="endpoints-web-method-examples"></a>Ejemplos de método web de puntos de conexión
 
 Ejemplo 1 de URI de solicitud: <https://endpoints.office.com/endpoints/Worldwide?ClientRequestId=b10c5ed1-bad1-445f-b386-b919946339a7>
 
-Este URI obtiene todos los extremos de la instancia worldwide de Office 365 para todas las cargas de trabajo. El resultado de ejemplo que muestra un fragmento de salida:
+This URI obtains all endpoints for the Office 365 worldwide instance for all workloads. Example result that shows an excerpt of the output:
 
 ```json
 [
@@ -250,7 +251,7 @@ El parámetro obligatorio del método web de cambios es:
 
 El método de web de cambios tiene una tasa limitada al igual que el método web de puntos de conexión.  Si recibe un código de respuesta HTTP 429, espere 1 hora antes de repetir la solicitud o genere un nuevo GUID.
 
-El resultado del método web de cambios es una matriz de registros en la que cada registro representa un cambio en una versión específica de los extremos. Los elementos de cada registro son:
+The result from the changes web method is an array of records in which each record represents a change in a specific version of the endpoints. The elements for each record are:
 
 - id: el identificador inmutable del registro de cambios.
 - endpointSetId: el identificador del registro del conjunto de puntos de conexión que se ha modificado.
@@ -263,9 +264,9 @@ El resultado del método web de cambios es una matriz de registros en la que cad
   MovedIpOrUrl: se ha pasado una dirección IP o una dirección URL entre este conjunto de puntos de conexión y otro. Por lo general, no es necesario realizar ninguna acción.
   RemovedDuplicateIpOrUrl: se ha eliminado una dirección IP o URL duplicada, pero aún está publicada para Office 365. Por lo general, no es necesario realizar ninguna acción.
   OtherNonPriorityChanges: se ha cambiado algo menos importante que todas las demás opciones, como el contenido de un campo de nota.
-- version: la versión del conjunto de puntos de conexión publicado en la cual se introdujo el cambio. Los números de versión están en el formato _AAAAMMDDNN_, donde _NN_ es un número natural que se incrementa si hay varias versiones que deben publicarse en un solo día.
-- anterior—Una subestructura en la que se detallan los valores anteriores de los elementos modificados en el conjunto de extremos. Esto no se incluye para los conjuntos de extremos recién añadidos. Incluye _ExpressRoute_, _serviceArea_, _category_, _required_, _tcpPorts_, _udpPorts_ y _notes_.
-- current—Una subestructura en la que se detallan los valores actualizados de los elementos de cambios en el conjunto de extremos. Incluye _ExpressRoute_, _serviceArea_, _category_, _required_, _tcpPorts_, _udpPorts_ y _notes_.
+- version—The version of the published endpoint set in which the change was introduced. Version numbers are of the format _YYYYMMDDNN_, where _NN_ is a natural number incremented if there are multiple versions required to be published on a single day.
+- previous—A substructure detailing previous values of changed elements on the endpoint set. This will not be included for newly added endpoint sets. Includes  _ExpressRoute_, _serviceArea_, _category_, _required_, _tcpPorts_, _udpPorts_, and _notes_.
+- current—A substructure detailing updated values of changes elements on the endpoint set. Includes _ExpressRoute_, _serviceArea_, _category_, _required_, _tcpPorts_, _udpPorts_, and _notes_.
 - add: una subestructura en la que se detallan los elementos que se agregarán a colecciones de conjuntos de puntos de conexión. Se omite si no hay adiciones.
   effectiveDate: define la fecha en que las adiciones estarán disponibles en el servicio.
   ips: los elementos que se agregarán a la matriz _ips_.
@@ -278,7 +279,7 @@ El resultado del método web de cambios es una matriz de registros en la que cad
 
 Ejemplo 1 de URI de solicitud: <https://endpoints.office.com/changes/worldwide/0000000000?ClientRequestId=b10c5ed1-bad1-445f-b386-b919946339a7>
 
-Se solicitan todos los cambios anteriores a la instancia de servicio de Office 365 en todo el mundo. Resultado de ejemplo:
+This requests all previous changes to the Office 365 worldwide service instance. Example result:
 
 ```json
 [
@@ -316,7 +317,7 @@ Se solicitan todos los cambios anteriores a la instancia de servicio de Office 3
 
 Ejemplo 2 de URI de solicitud: <https://endpoints.office.com/changes/worldwide/2018062700?ClientRequestId=b10c5ed1-bad1-445f-b386-b919946339a7>
 
-Se solicitan los cambios desde la versión especificada a la instancia Worldwide de Office 365. En este caso, la versión especificada es la más reciente. Resultado de ejemplo:
+This requests changes since the specified version to the Office 365 Worldwide instance. In this case, the version specified is the latest. Example result:
 
 ```json
 [
@@ -353,7 +354,7 @@ Este script hace lo siguiente:
 
 - Comprueba el número de versión de los puntos de conexión de las instancias Worldwide de Office 365 actuales llamando a la API de REST del servicio web.
 - Comprueba si hay un archivo de versión actual en _$env:TEMP\O365_endpoints_latestversion.txt_. La ruta de acceso de la variable global **$env:Temp** es, por lo general, _C:\Users\\ <nombre_usuario\>\AppData\Local\Temp_.
-- Si esta es la primera vez que se ejecuta el script, este devuelve la versión actual y todas las direcciones IP y URL actuales, escribe la versión de los puntos de conexión en el archivo _$env:TEMP\O365_endpoints_latestversion.txt_ y el resultado de los datos de los puntos de conexión en el archivo _$env:TEMP\O365_endpoints_data.txt_. Puede modificar la ruta o el nombre del archivo de resultado mediante la edición de las líneas siguientes:
+- If this is the first time the script has been run, the script returns the current version and all current IP addresses and URLs, writes the endpoints version to the file _$Env:TEMP\O365_endpoints_latestversion.txt_ and the endpoints data output to the file _$Env:TEMP\O365_endpoints_data.txt_. You can modify the path and/or name of the output file by editing these lines:
 
     ``` powershell
     $versionpath = $Env:TEMP + "\O365_endpoints_latestversion.txt"
@@ -363,7 +364,7 @@ Este script hace lo siguiente:
 - En cada ejecución subsiguiente del script, si la versión más reciente del servicio web es la misma que la versión del archivo _O365_endpoints_latestversion.txt_, el script saldrá sin realizar cambios.
 - Si la versión más reciente del servicio web es más reciente que la versión del archivo _O365_endpoints_latestversion.txt_, el script devuelve los puntos de conexión y los filtros de los puntos de conexión de las categorías **Allow** y **Optimize**, actualiza la versión en el archivo _O365_endpoints_latestversion.txt_ y escribe los datos actualizados en el archivo _O365_endpoints_data.txt_.
 
-El script genera un _ClientRequestId_ único para el equipo en el que se ejecuta y reutiliza este id. en varias llamadas. Este id. se almacena en el archivo _O365_endpoints_latestversion.txt_.
+The script generates a unique _ClientRequestId_ for the computer it is executed on, and reuses this ID across multiple calls. This ID is stored in the _O365_endpoints_latestversion.txt_ file.
 
 ### <a name="to-run-the-powershell-script"></a>Ejecución del script de PowerShell
 
@@ -524,7 +525,7 @@ else {
 
 ## <a name="example-python-script"></a>Ejemplo de script de Python
 
-Este es un script de Python, probado con Python 3.6.3 en Windows 10, que puede ejecutar para ver si debe realizar alguna acción para los datos actualizados. Este script comprueba el número de versión de los puntos de conexión de la instancia Worldwide de Office 365. Cuando se produce un cambio, se descargan los puntos de conexión y filtros de los puntos de conexión de categoría _Permitir_ y _Optimizar_. También se usa un único ClientRequestId en varias llamadas y se guarda la versión más reciente que se encuentra en un archivo temporal. Debe llamar a este script una vez por hora para comprobar si hay una actualización de versión.
+Here is a Python script, tested with Python 3.6.3 on Windows 10, that you can run to see if there are actions you need to take for updated data. This script checks the version number for the Office 365 Worldwide instance endpoints. When there is a change, it downloads the endpoints and filters for the _Allow_ and _Optimize_ category endpoints. It also uses a unique ClientRequestId across multiple calls and saves the latest version found in a temporary file. Call this script once an hour to check for a version update.
 
 ```python
 import json
@@ -591,7 +592,7 @@ else:
 
 ## <a name="web-service-interface-versioning"></a>Control de versiones de la interfaz de servicio web
 
-Las actualizaciones de los parámetros o los resultados de estos métodos de servicio web pueden ser necesarias en el futuro. Después de que se publica la versión de disponibilidad general de estos servicios web, Microsoft realizará esfuerzos razonables para proporcionar un aviso por adelantado de las actualizaciones materiales al servicio web. Cuando Microsoft considere que una actualización requerirá cambios en los clientes con el servicio web, Microsoft conservará la versión anterior (versión inmediatamente anterior) del servicio de web disponible durante al menos 12 meses después del lanzamiento de la nueva versión. Es posible que los clientes que no actualicen durante ese tiempo no puedan consultar el servicio web y sus métodos. Los clientes deben asegurarse de que los clientes del servicio web continuarán trabajando sin errores si se realizan los cambios siguientes en la firma de interfaz del servicio web:
+Updates to the parameters or results for these web service methods may be required in the future. After the general availability version of these web services is published, Microsoft will make reasonable efforts to provide advance notice of material updates to the web service. When Microsoft believes that an update will require changes to clients using the web service, Microsoft will keep the previous version (one version back) of the web service available for at least 12 months after the release of the new version. Customers who do not upgrade during that time may be unable to access the web service and its methods. Customers must ensure that clients of the web service continue working without error if the following changes are made to the web service interface signature:
 
 - Agregar un nuevo parámetro opcional a un método web existente que no tenga que facilitarse mediante clientes antiguos y que no afecte al resultado que recibe un cliente anterior.
 - Agregar un nuevo atributo con nombre en uno de los elementos REST de respuesta u otras columnas al CSV de respuesta.
