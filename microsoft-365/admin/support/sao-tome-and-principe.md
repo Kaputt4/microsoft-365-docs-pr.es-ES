@@ -1,5 +1,5 @@
 ---
-title: Información de soporte técnico para Santo Tome y Príncipe
+title: Información de soporte técnico para Santo Tomé y Príncipe
 author: cmcatee-MSFT
 f1.keywords:
 - NOCSH
@@ -7,17 +7,19 @@ ms.author: cmcatee
 manager: scotv
 audience: Admin
 ms.topic: reference
-ms.service: o365-administration
-ms.collection: Adm_Support
+ms.service: microsoft-365-business
+ms.collection:
+- scotvorg
+- Adm_Support
 ms.localizationpriority: medium
 description: Obtenga información acerca de cómo ponerse en contacto con el soporte técnico de su país o región.
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: a765c3fe18f9416d7afa733a3d61ed0d40a5d675
-ms.sourcegitcommit: 0ee2dabe402d44fecb6856af98a2ef7720d25189
+ms.openlocfilehash: e163de35f54994be1cfd4e689805ce259058cb80
+ms.sourcegitcommit: 0b7070ec119e00e0dafe030bbfbef0ae5c9afa19
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/09/2021
-ms.locfileid: "61372101"
+ms.lasthandoff: 09/29/2022
+ms.locfileid: "68177798"
 ---
 # <a name="contact-support-for-sao-tome-and-principe"></a>Póngase en contacto con el soporte técnico de Santo Tomé y Príncipe
 

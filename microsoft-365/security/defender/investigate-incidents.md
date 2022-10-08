@@ -15,17 +15,18 @@ ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection:
-- M365-security-compliance
+- m365-security
+- tier1
 ms.topic: conceptual
 search.appverid:
 - MOE150
 - MET150
-ms.openlocfilehash: 53d458fdd15a403984fd6636a3b0c3cb54d0398d
-ms.sourcegitcommit: b1ed6470645455c2f1fcf467450debc622c40147
+ms.openlocfilehash: 2dbc3bc965a1c975b354a5698b3fa0c67e2cd39c
+ms.sourcegitcommit: 12af9e8e3a6eaa090fda9e98ccb831dff65863a4
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/15/2022
-ms.locfileid: "67711156"
+ms.lasthandoff: 09/27/2022
+ms.locfileid: "68055444"
 ---
 # <a name="investigate-incidents-in-microsoft-365-defender"></a>Investigar incidentes con Microsoft 365 Defender
 
@@ -123,7 +124,7 @@ Puede seleccionar la marca de verificación de un dispositivo para ver los detal
 En la página del dispositivo, puede recopilar información adicional sobre el dispositivo, como todas sus alertas, una escala de tiempo y recomendaciones de seguridad. Por ejemplo, desde la pestaña **Escala de tiempo** , puede desplazarse por la escala de tiempo de la máquina y ver todos los eventos y comportamientos observados en la máquina en orden cronológico, intercalados con las alertas desencadenadas.
 
 > [!TIP]
-> Puede realizar exámenes a petición en una página del dispositivo. En el portal de Microsoft 365 Defender, elija Puntos de **conexión > inventario de dispositivos**. Seleccione un dispositivo que tenga alertas y, a continuación, ejecute un examen antivirus. Se realiza un seguimiento de las acciones, como los exámenes antivirus, y se muestran en la página **Inventario de** dispositivos. Para más información, consulte [Ejecución del examen del Antivirus de Microsoft Defender en dispositivos](/microsoft-365/security/defender-endpoint/respond-machine-alerts#run-microsoft-defender-antivirus-scan-on-devices).
+> Puede realizar exámenes a petición en una página del dispositivo. En el portal de Microsoft 365 Defender, elija Puntos de **conexión > inventario de dispositivos**. Seleccione un dispositivo que tenga alertas y, a continuación, ejecute un examen antivirus. Se realiza un seguimiento de las acciones, como los exámenes antivirus, y se muestran en la página **Inventario de** dispositivos. Para más información, consulte [Run Microsoft Defender Antivirus scan on devices (Ejecución Microsoft Defender examen del antivirus en dispositivos](/microsoft-365/security/defender-endpoint/respond-machine-alerts#run-microsoft-defender-antivirus-scan-on-devices)).
 
 ## <a name="users"></a>Usuarios
 

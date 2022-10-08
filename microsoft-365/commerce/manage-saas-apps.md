@@ -8,9 +8,10 @@ manager: scotv
 ms.reviewer: jamitche, jmueller
 audience: Admin
 ms.topic: article
-ms.service: o365-administration
+ms.service: microsoft-365-business
 ms.localizationpriority: medium
 ms.collection:
+- scotvorg
 - M365-subscription-management
 - Adm_O365
 ms.custom:
@@ -20,12 +21,12 @@ ms.custom:
 search.appverid: MET150
 description: Obtenga información sobre cómo activar y administrar aplicaciones de terceros en Centro de administración de Microsoft 365.
 ms.date: 04/15/2021
-ms.openlocfilehash: c85a0c93ee7f17953f7877cc1fd97765e0e63afd
-ms.sourcegitcommit: 1c5f9d17a8b095cd88b23f4874539adc3ae021de
+ms.openlocfilehash: fa4afd0b6b5e26c29c26277b236302081a55a9f0
+ms.sourcegitcommit: 0b7070ec119e00e0dafe030bbfbef0ae5c9afa19
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/08/2022
-ms.locfileid: "64713875"
+ms.lasthandoff: 09/29/2022
+ms.locfileid: "68179601"
 ---
 # <a name="manage-third-party-app-subscriptions-for-your-organization"></a>Administración de suscripciones de aplicaciones de terceros para su organización
 
@@ -67,9 +68,9 @@ La compatibilidad con aplicaciones de terceros está disponible en estas regione
 
 Los administradores deben activar aplicaciones de terceros antes de asignarlas a los usuarios. Estas aplicaciones se activan en el portal del publicador de terceros.
 
-1. En el centro de administración, vaya a la página **FacturaciónSu** >  <a href="https://go.microsoft.com/fwlink/p/?linkid=2125823" target="_blank">productosApps</a> > .
+1. En el centro de administración, vaya a la página **Facturación** >  de <a href="https://go.microsoft.com/fwlink/p/?linkid=2125823" target="_blank">aplicaciones</a> **de productos** > .
 2. Busque y seleccione la aplicación que desea administrar.
-3. En **acciones Configuración &**, seleccione **Administrar en el portal del publicador**.
+3. En **Configuración & acciones**, seleccione **Administrar en el portal del publicador**.
 
 Se le dirigirá al sitio del publicador de la aplicación, donde puede activar la aplicación.
 
@@ -89,15 +90,15 @@ Después de activar la aplicación, permanece activa a menos que se cancele, exp
 
 Los administradores deben activar aplicaciones de terceros antes de asignarlas a los usuarios. Se activan en el portal del publicador de terceros. En la página de la aplicación, en **Configuración & acciones**, seleccione el vínculo para asignar licencias.
 
-1. En el centro de administración, vaya a la página **FacturaciónSu** >  <a href="https://go.microsoft.com/fwlink/p/?linkid=2125823" target="_blank">productosApps</a> > .
+1. En el centro de administración, vaya a la página **Facturación** >  de <a href="https://go.microsoft.com/fwlink/p/?linkid=2125823" target="_blank">aplicaciones</a> **de productos** > .
 2. Busque y seleccione la aplicación que desea administrar.
-3. En **acciones Configuración &**, seleccione el vínculo a **Administrar en el portal del publicador**.
+3. En **Configuración & acciones**, seleccione el vínculo **Administrar en el portal del publicador**.
 
 ## <a name="change-license-quantity"></a>Cambio de la cantidad de licencia
 
 Los administradores pueden cambiar el número de licencias que pertenecen a su organización. Esto solo se aplica a las aplicaciones compradas con precios basados en puestos.
 
-1. En el centro de administración, vaya a la página **FacturaciónSu** >  <a href="https://go.microsoft.com/fwlink/p/?linkid=2125823" target="_blank">productosApps</a> > .
+1. En el centro de administración, vaya a la página **Facturación** >  de <a href="https://go.microsoft.com/fwlink/p/?linkid=2125823" target="_blank">aplicaciones</a> **de productos** > .
 2. Busque y seleccione la aplicación que desea administrar.
 3. Seleccione **Cambiar cantidad de licencia**.
 
@@ -113,7 +114,7 @@ Para obtener más información sobre los perfiles de facturación, consulte [Des
 
 ### <a name="change-the-billing-profile-on-a-software-as-a-service-app-subscription"></a>Cambio del perfil de facturación en una suscripción de aplicación de software como servicio
 
-1. En el centro de administración, vaya a la página **FacturaciónSu** >  <a href="https://go.microsoft.com/fwlink/p/?linkid=2125823" target="_blank">productosApps</a> > .
+1. En el centro de administración, vaya a la página **Facturación** >  de <a href="https://go.microsoft.com/fwlink/p/?linkid=2125823" target="_blank">aplicaciones</a> **de productos** > .
 2. Busque y seleccione la aplicación que desea administrar.
 3. Junto a **Perfil de facturación**, seleccione **Editar**.
 
@@ -123,6 +124,6 @@ Para obtener más información sobre las facturas, consulte [Descripción de la 
 
 Puede cancelar una aplicación de software como servicio desde la página de la aplicación.
 
-1. En el centro de administración, vaya a la página **FacturaciónSu** >  <a href="https://go.microsoft.com/fwlink/p/?linkid=2125823" target="_blank">productosApps</a> > .
+1. En el centro de administración, vaya a la página **Facturación** >  de <a href="https://go.microsoft.com/fwlink/p/?linkid=2125823" target="_blank">aplicaciones</a> **de productos** > .
 2. Busque y seleccione la aplicación que desea administrar.
-3. En **acciones Configuración &**, seleccione **Cancelar suscripción**.
+3. En **Configuración & acciones**, seleccione **Cancelar suscripción**.

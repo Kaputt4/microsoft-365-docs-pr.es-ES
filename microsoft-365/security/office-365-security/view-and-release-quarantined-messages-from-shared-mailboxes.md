@@ -12,16 +12,16 @@ search.appverid:
 - MET150
 ms.assetid: ''
 ms.collection:
-- M365-security-compliance
+- m365-security
 description: Los usuarios pueden aprender a ver y actuar en los mensajes en cuarentena que se enviaron a buzones compartidos a los que tienen permisos.
 ms.subservice: mdo
 ms.service: microsoft-365-security
-ms.openlocfilehash: 65e26cfe0fbe12967fbf08b8c12ef81b0b687843
-ms.sourcegitcommit: 2b89bcff547e00be3d38dc8d1e6cbcf8f41eba42
+ms.openlocfilehash: 933a61c75177d5df114aea0241a05a2614fa47f4
+ms.sourcegitcommit: 12af9e8e3a6eaa090fda9e98ccb831dff65863a4
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/03/2022
-ms.locfileid: "67599525"
+ms.lasthandoff: 09/27/2022
+ms.locfileid: "68057664"
 ---
 # <a name="view-and-release-quarantined-messages-from-shared-mailboxes"></a>Visualización y liberación de mensajes en cuarentena desde buzones compartidos
 
@@ -38,7 +38,13 @@ Anteriormente, la capacidad de los usuarios para administrar los mensajes en cua
 
 Ahora, la asignación automática ya no es necesaria para que los usuarios administren los mensajes en cuarentena que se enviaron a buzones compartidos. Sólo funciona. Hay dos métodos diferentes para acceder a los mensajes en cuarentena que se enviaron a un buzón compartido:
 
-- Si el administrador ha configurado [directivas de cuarentena](quarantine-policies.md) para permitir notificaciones de cuarentena (anteriormente conocidas como notificaciones de correo no deseado del usuario final), cualquier usuario que tenga acceso a las notificaciones de cuarentena en el buzón compartido puede hacer clic en el botón **Revisar** de la notificación para ir a cuarentena en el portal de Microsoft 365 Defender. Tenga en cuenta que este método solo permite a los usuarios administrar los mensajes en cuarentena que se enviaron al buzón compartido. Los usuarios no pueden administrar sus propios mensajes de cuarentena en este contexto.
+- Si todas las instrucciones siguientes son verdaderas:
+  - Un administrador ha configurado [directivas de cuarentena](quarantine-policies.md) para permitir notificaciones de cuarentena (anteriormente conocidas como notificaciones de correo no deseado del usuario final).
+  - El usuario tiene acceso a las notificaciones de cuarentena del buzón compartido.
+  - El usuario tiene permisos de acceso total para el buzón compartido (directamente o a través de un grupo de seguridad).
+
+  El usuario puede hacer clic en el botón **Revisar** de la notificación para ir a cuarentena en el portal de Microsoft 365 Defender. Este método solo permite el acceso a los mensajes en cuarentena que se enviaron al buzón compartido. Los usuarios no pueden administrar sus propios mensajes de cuarentena en este contexto.
+
 - El usuario puede [ir a cuarentena en el portal de Microsoft 365 Defender](find-and-release-quarantined-messages-as-a-user.md) y hacer clic en **Filtrar** para filtrar los resultados por **dirección de destinatario** (la dirección de correo electrónico del buzón compartido). En la página **Cuarentena** principal, puede hacer clic en la columna **Destinatario** para ordenar por mensajes que se enviaron al buzón compartido.
 
 ## <a name="things-to-keep-in-mind"></a>Aspectos importantes

@@ -18,18 +18,19 @@ ms.collection:
 - Teams_ITAdmin_Healthcare
 - microsoftcloud-healthcare
 - m365-frontline
+- highpri
 appliesto:
 - Microsoft Teams
 - Microsoft 365 for frontline workers
 ms.reviewer: ''
 description: Aprenda a personalizar una directiva de mensajería segura para Microsoft Teams que pueda incluir confirmaciones de lectura y notificaciones de prioridad.
 ms.custom: seo-marvel-mar2020
-ms.openlocfilehash: 2116434f4149a8fdb7985ecaa7b5cf67eb686a81
-ms.sourcegitcommit: 5e5c2c1f7c321b5eb1c5b932c03bdd510005de13
-ms.translationtype: HT
+ms.openlocfilehash: 59e6690e7ff9eb36e531d4a1254503ba98bb07e6
+ms.sourcegitcommit: 12af9e8e3a6eaa090fda9e98ccb831dff65863a4
+ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/15/2022
-ms.locfileid: "66998804"
+ms.lasthandoff: 09/27/2022
+ms.locfileid: "68057269"
 ---
 # <a name="secure-messaging-for-healthcare-organizations"></a>Mensajería segura para organizaciones sanitarias
 

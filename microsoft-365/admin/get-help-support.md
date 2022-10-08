@@ -7,9 +7,10 @@ author: cmcatee-MSFT
 manager: scotv
 audience: Admin
 ms.topic: article
-ms.service: o365-administration
+ms.service: microsoft-365-business
 ms.localizationpriority: high
 ms.collection:
+- scotvorg
 - highpri
 - Adm_O365
 - Adm_TOC
@@ -24,12 +25,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Obtenga información sobre cómo obtener soporte técnico en línea o por teléfono para su suscripción Microsoft 365 para empresas. Debe ser el administrador de una suscripción de empresa para poder usar el soporte técnico.
-ms.openlocfilehash: 4684daccf74e54a16c61a9a6f5982cee3f61659b
-ms.sourcegitcommit: 37e137535c4f70702afe1a5eeaa899c75ee02cfd
+ms.openlocfilehash: 0dd352b8c4cc4399805a80132ba288bc76949e5d
+ms.sourcegitcommit: 0b7070ec119e00e0dafe030bbfbef0ae5c9afa19
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/13/2022
-ms.locfileid: "67661571"
+ms.lasthandoff: 09/29/2022
+ms.locfileid: "68178259"
 ---
 # <a name="get-support-for-microsoft-365-for-business"></a>Obtener soporte técnico para Microsoft 365 para empresas
 
@@ -52,11 +53,11 @@ Comience por [comprobar el estado actual de los servicios](../enterprise/view-se
 
 ## <a name="online-support"></a>Soporte en línea
 
-Ahorre tiempo iniciando su solicitud de servicio en línea. Le ayudaremos a encontrar una solución o le pondremos en contacto con el soporte técnico.
+Save time by starting your service request online. We'll help you find a solution or connect you to technical support.
 
-1. Vaya al centro de administración en <a href="https://go.microsoft.com/fwlink/p/?linkid=2166757" target="_blank">https://admin.microsoft.com</a>. Si recibe un mensaje que indica que no tiene permiso para acceder a esta página o realizar esta acción, no es administrador. Para obtener más información, consulte [¿Quién tiene permisos de administrador en mi empresa?](../admin/admin-overview/admin-center-overview.md#who-has-admin-permissions-in-my-business).
+1. Go to the admin center at <a href="https://go.microsoft.com/fwlink/p/?linkid=2166757" target="_blank">https://admin.microsoft.com</a>. If you get a message that says you don't have permission to access this page or perform this action, you aren't an admin. For more information, see [Who has admin permissions in my business?](../admin/admin-overview/admin-center-overview.md#who-has-admin-permissions-in-my-business).
 2. En la parte inferior derecha de la página, seleccione **Ayuda y soporte técnico**.
-3. Escriba una pregunta o palabra clave en el cuadro de texto. Si aparece una lista desplegable, seleccione la que más se acerque a su pregunta, o siga escribiendo su pregunta, y luego pulse **Aceptar**.
+3. Type a question or keyword into the text box. If you get a drop-down list, select the one closest to your question, or continue typing your question, then press **Enter**.
 4. Si los resultados no ayudan, en la parte inferior, seleccione **Ponerse en contacto con el soporte técnico**.
 5. Escriba la descripción del problema, confirme su número de contacto y dirección de correo electrónico, seleccione el método de contacto que prefiere y, después, seleccione **Ponerse en contacto conmigo**. El tiempo de espera se indicará en el panel de **Ponerse en contacto con el soporte técnico**.
 
@@ -88,29 +89,29 @@ Administradores, tengan los datos de su cuenta preparados cuando llamen.
 
 Saque el máximo partido a su suscripción con consejos expertos de especialistas en pequeñas empresas.
 
-Business Assist para Microsoft 365 está diseñado para que las pequeñas empresas tengan acceso a los especialistas en pequeñas empresas las 24 horas del día a medida que crece su negocio, desde la incorporación hasta el uso diario. Para obtener más información, consulte [Business Assist](../admin/misc/business-assist.md).
+Business Assist for Microsoft 365 is designed for small businesses to give you and your employees around-the-clock access to small business specialists as you grow your business, from onboarding to everyday use. To learn more, see [Business Assist](../admin/misc/business-assist.md).
 
 ::: moniker-end
 
 ::: moniker range="o365-21vianet"
 
-Con cada suscripción de Office 365 ofrecida por 21Vianet, el soporte de 21Vianet proporciona soporte técnico, de preventa, de facturación y de suscripciones. El soporte está disponible tanto en línea a través de Office 365 ofrecido por el portal 21Vianet como por teléfono para suscripciones de pago y de prueba.
+With every subscription of Office 365 operated by 21Vianet, 21Vianet support provides technical, pre-sales, billing and subscription support. Support is available both online through the Office 365 operated by 21Vianet portal, and by telephone for both paid and trial subscriptions.
 
-Los administradores autorizados pueden utilizar el portal de Office 365 ofrecido por 21Vianet para enviar solicitudes de servicio en línea y acceder a los números de teléfono de soporte. Para obtener instrucciones, consulte [Contactar con soporte](#contact-support).
+Authorized administrators can use the Office 365 operated by 21Vianet portal to submit service requests online and access support telephone numbers. For instructions, see [Contact support](#contact-support).
 
-El equipo de soporte técnico de Office 365 operado por 21Vianet soluciona únicamente los problemas relacionados con Office 365 ofrecido por 21Vianet. Los problemas originados en las redes del cliente están fuera del alcance del soporte técnico de Office 365 y, en estos casos, los clientes deben recurrir a su equipo de red para obtener ayuda.
+The Office 365 operated by 21Vianet technical support team troubleshoots only those issues that are related to Office 365 operated by 21Vianet. Issues that originate in customer networks fall outside of the Office 365 support boundaries, and in these cases, customers must work with their networking team for assistance.
 
 ## <a name="community-and-self-service-support-options"></a>Comunidad y opciones de soporte de autoservicio
 
-El soporte de autoservicio está disponible para todos los planes de Office 365 ofrecidos por 21Vianet. Incluye vídeos y herramientas para la solución de problemas, vídeos y artículos de ayuda, además de foros y wikis de la [comunidad de Office 365](https://go.microsoft.com/fwlink/p/?linkid=842838). Para ver más recursos de autoayuda, vea [Más información sobre Office 365 operado por 21Vianet](../admin/services-in-china/services-in-china.md).
+Self-service support is available for all Office 365 operated by 21Vianet users, and includes troubleshooting tools and videos, help articles and videos, as well as forums and wikis in the [Office 365 community](https://go.microsoft.com/fwlink/p/?linkid=842838). For more self-help resources, see [Learn about Office 365 operated by 21Vianet](../admin/services-in-china/services-in-china.md).
 
 ## <a name="pre-sales-support"></a>Soporte para preventas
 
-El soporte para preventas de Office 365 ofrecido por 21Vianet presta asistencia sobre las características de suscripción y sus beneficios, comparaciones de planes, precios y licencias, y también ayuda a identificar la solución correcta que se adapte a sus necesidades comerciales. Además, este soporte puede ayudarle a encontrar un partner, comprar y suscribirse a una prueba. Puede llamar durante el horario comercial local de lunes a viernes. Se puede obtener acceso al soporte para preventas con el mismo número telefónico que el del soporte técnico. Para obtener instrucciones, vea [Contactar soporte](#contact-support).
+Pre-sales support for Office 365 operated by 21Vianet provides assistance on subscription features and benefits, plan comparisons, pricing and licensing, and helps to identify the right solution to meet your business needs. In addition, pre-sales support can help you find a Partner, and purchase and sign up for a trial. You can call during local business hours, Monday through Friday. Pre-sales support can be accessed using the same phone number as with technical support. For instructions, see [Contact support](#contact-support).
 
 ## <a name="billing-and-subscription-management-support"></a>Soporte para administración de facturación y suscripciones
 
-La asistencia para problemas de administración de facturación y suscripciones está disponible en línea o por teléfono durante el horario comercial de China (horario de Beijing), de lunes a viernes. Se puede obtener acceso al soporte para administración de facturación y suscripciones con el mismo número telefónico y el mismo proceso de solicitud de servicio en línea que se utilizan para el soporte técnico. Puede encontrar el número telefónico de soporte en el portal de Office 365 operado por 21Vianet. Para obtener instrucciones, vea [Contactar soporte](#contact-support).
+Assistance for billing and subscription management issues is available online or by telephone during China business hours (Beijing Time), Monday through Friday. Billing and subscription management support can be accessed using the same phone number and online service request process as with technical support. The support telephone number can be found on the Office 365 operated by 21Vianet portal. For instructions, see [Contact support](#contact-support).
 
 A continuación, se mencionan algunos ejemplos de problemas de administración de facturación y suscripción:
 
@@ -123,7 +124,7 @@ A continuación, se mencionan algunos ejemplos de problemas de administración d
 
 ## <a name="technical-support"></a>Soporte técnico
 
-El soporte técnico para las suscripciones de Office 365 operado por 21Vianet ofrece asistencia para la instalación y configuración básicas, y para el uso técnico general. En la tabla siguiente, se enumeran algunos ejemplos de estos problemas.
+Technical support for Office 365 operated by 21Vianet subscriptions provides assistance with basic installation, setup, and general technical usage. Some examples of these issues are listed in the following table.
 
 | Categoría de soporte | Ejemplos |
 |------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
@@ -131,21 +132,22 @@ El soporte técnico para las suscripciones de Office 365 operado por 21Vianet of
 | Configuración | Problemas de configuración del servicio<ul><li>Inicio de sesión único (SSO)</li><li>Sincronización de Active Directory</li></ul> |
 
 > [!NOTE]
-> Infórmese sobre cómo ponerse en contacto con el soporte técnico aquí: [Contactar soporte](#contact-support). El soporte técnico no incluye problemas con servicios o complementos de terceros. Obtenga información sobre cómo encontrar respuestas de otros clientes en la [Comunidad](https://go.microsoft.com/fwlink/p/?linkid=842838).
+> You can learn how to contact technical support here: [Contact support](#contact-support).
+> Technical support does not include troubleshooting third-party services or add-ins. Learn about finding answers from other customers in the [Community](https://go.microsoft.com/fwlink/p/?linkid=842838).
 
 ## <a name="technical-support-case-handling"></a>Gestión de casos del soporte técnico
 
-21Vianet asigna un nivel de gravedad a un caso cuando se abre, en función de una evaluación del tipo de problema y el impacto que éste causa al cliente. En la tabla siguiente, se muestran ejemplos de tipos de problemas y niveles de gravedad.
+21Vianet assigns a severity level to a case when it is opened, based on an assessment of the issue type and customer impact. Examples of issue types and severity levels are shown in the following table.
 
 | Nivel de gravedad | Operaciones y descripción de soporte | Ejemplos |
 |----------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Gravedad A (crítica) | No se puede obtener acceso a uno o varios servicios o éstos no se pueden utilizar. Los plazos de producción, operaciones o desarrollo se ven afectados gravemente o se producirá un grave impacto en la producción o rentabilidad. Se ven afectados varios usuarios o servicios. | <ul><li>Problemas generalizados al enviar o recibir correo.</li><li>El sitio de SharePoint no funciona.</li><li>Ninguno de los usuarios puede enviar mensajes instantáneos, programar reuniones de Skype Empresarial o participar en ellas, o realizar llamadas de Skype Empresarial.</li></ul> |
-| Gravedad B (alta) | El servicio se puede utilizar pero de forma limitada. La situación tiene un impacto moderado en el negocio y se puede tratar durante el horario comercial. Un solo usuario, cliente o servicio se ve afectado parcialmente. | <ul><li>El botón Enviar es confuso en Outlook.</li><li>La configuración es imposible desde el EAC (Centro de administración de Exchange), pero es posible en Exchange Online PowerShell.</li></ul> |
-| Gravedad C (no crítica) | La situación genera un mínimo impacto en el negocio. El problema es importante pero no genera un impacto significativo en la productividad o el servicio actual para el cliente. Un solo usuario sufre una interrupción parcial, pero existe una solución alternativa aceptable. | <ul><li>Cómo establecer una contraseña de usuario que nunca caduca.</li> <li>El usuario no puede eliminar la información de contacto en Exchange Online.</li></ul> |
+| Gravedad A (crítica) | One or more services aren't accessible or are unusable. Production, operations, or deployment deadlines are severely affected, or there will be a severe impact on production or profitability. Multiple users or services are affected. | <ul><li>Problemas generalizados al enviar o recibir correo.</li><li>El sitio de SharePoint no funciona.</li><li>Ninguno de los usuarios puede enviar mensajes instantáneos, programar reuniones de Skype Empresarial o participar en ellas, o realizar llamadas de Skype Empresarial.</li></ul> |
+| Gravedad B (alta) | The service is usable but in an impaired fashion. The situation has moderate business impact and can be dealt with during business hours. A single user, customer, or service is partially affected. | <ul><li>El botón Enviar es confuso en Outlook.</li><li>La configuración es imposible desde el EAC (Centro de administración de Exchange), pero es posible en Exchange Online PowerShell.</li></ul> |
+| Gravedad C (no crítica) | The situation has minimal business impact. The issue is important but does not have a significant current service or productivity impact for the customer. A single user is experiencing partial disruption, but an acceptable workaround exists. | <ul><li>Cómo establecer una contraseña de usuario que nunca caduca.</li> <li>El usuario no puede eliminar la información de contacto en Exchange Online.</li></ul> |
 
 ## <a name="technical-support-initial-response-times"></a>Tiempos de respuesta inicial del soporte técnico
 
-El tiempo de respuesta inicial se basa en los niveles de gravedad descritos anteriormente. El equipo de servicio al cliente de 21Vianet seguirá con la investigación y comunicación con el cliente en un periodo de tiempo razonable según los niveles de gravedad. 21Vianet también esperará que el cliente colabore a un nivel razonable en consecuencia.
+Initial response time is based on the severity levels described above. 21Vianet customer service team follow up with investigation and customer communication in reasonable rhythm according to severity levels. 21Vianet also expect customer to collaborate at reasonable level accordingly.
 
 | Nivel de seguridad <sup>1</sup> | Respuesta de inicial del equipo de soporte al cliente de 21Vianet | Responsabilidades del cliente |
 |--------------------------------|-----------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
@@ -155,7 +157,7 @@ El tiempo de respuesta inicial se basa en los niveles de gravedad descritos ante
 
 <sup>1</sup> Si el cliente no puede proporcionar los recursos necesarios o respuestas para colaborar con la investigación del agente de soporte de 21Vianet en un tiempo razonable, el equipo de soporte técnico de 21Vianet puede reducir el nivel de gravedad de una solicitud de servicio.
 
-<sup>2</sup> La gravedad A solo está disponible para los clientes que han firmado un acuerdo de servicio en línea avanzado con 21Vianet a través de un administrador de cuentas de venta. La gravedad A solo está disponible para soporte técnico. En el soporte de administración de facturación y suscripciones, el nivel más alto de gravedad es B.
+<sup>2</sup> Severity A is only available to customers who had signed an advanced online service agreement with 21Vianet through a sales account manager. Severity A is available only for technical support. For billing and subscription management support, the highest severity level is B.
 
 ## <a name="technical-support-working-hours"></a>Horario laboral de soporte técnico
 
@@ -166,25 +168,25 @@ Gravedad B/C: 9:00 - 24:00 (hora de Beijing), 365 días al año.
 ## <a name="contact-support"></a>Contactar soporte
 
 > [!NOTE]
-> Las opciones de soporte asistido son solo para administradores de organizaciones suscritas a Office 365. Si usa Office 365 pero no es administrador, puede obtener soporte en los foros de la comunidad o contactando con el administrador.
+> Assisted support options are for admins of Office 365 subscribed organizations only. If you use Office 365 but you're not an admin, you can still get support in the community forums, or by contacting your admin.
 
 ### <a name="open-an-online-request"></a>Abrir una solicitud en línea
 
-Ahorre tiempo iniciando su solicitud de servicio en línea. Diríjase al <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">Centro de administración de Microsoft 365</a>, seleccione **Soporte técnico** \> **Nueva solicitud de servicio**.
+Save time by starting your service request online. Go to the <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">Microsoft 365 admin center</a>, choose **Support** \> **New service request**.
 
 ### <a name="call-support"></a>Llame al servicio de soporte técnico
 
-Llamar al soporte técnico. Si se produce algún problema con la solicitud en línea, el soporte por teléfono está disponible en (86) 400-089-0365.
+Call support. If you encounter any problem with online request, phone support is available at (86) 400-089-0365.
 
 ### <a name="shared-support-responsibilities"></a>Responsabilidades compartidas de soporte
 
-21Vianet comprende que recibir el soporte técnico de manera oportuna por parte de profesionales cualificados es un aspecto clave de los servicios en la nube. De igual importancia es la función crítica que el departamento de TI del cliente cumple en el soporte de sus usuarios.
+21Vianet understands that receiving timely technical support from qualified professionals is a key aspect of cloud services. Equally important is the critical role that the customer's IT department plays in the support of its users.
 
 ### <a name="administrator-roles-and-responsibilities"></a>Responsabilidades y roles del administrador
 
 Las personas con roles de administrador son las únicas de la organización del cliente autorizadas para obtener acceso a la sección Administrador del portal de Office 365 operado por 21Vianet y para comunicarse directamente con 21Vianet sobre solicitudes de servicio de Office 365.
 
-Con Office 365, puede designar varios tipos de administradores que cumplan diversas funciones. Esta descripción del servicio usa el título genérico de administrador para hacer referencia a todas las categorías de administradores. Para obtener más información sobre los tipos de roles de administrador, vea [Asignación de roles de administrador en Microsoft 365 para empresas](../admin/add-users/assign-admin-roles.md).
+With Office 365 you can designate several types of administrators who serve different functions. This service description uses the generic title administrator to refer to all categories of administrators. For more information about the types of administrator roles, see [Assign admin roles in Microsoft 365 for business](../admin/add-users/assign-admin-roles.md).
 
 El administrador:
 
@@ -199,7 +201,7 @@ El rol del administrador comprende lo siguiente:
 - Abordar los problemas de disponibilidad de servicio dentro del ámbito de control organizacional del cliente.
 - Utilizar los recursos de soporte de autoservicio para resolver los problemas de soporte.
 
-Se espera que el administrador proporcione asistencia inicial a los usuarios del cliente. Sin embargo, si el administrador no puede resolver los problemas con la ayuda de los recursos de soporte de autoservicio, deberá [ponerse en contacto con el soporte](#contact-support).
+The administrator is expected to provide initial assistance for the customer's users. However, if the administrator is unable to resolve issues with the help of self-service support resources, he or she should [Contact support](#contact-support).
 
 ### <a name="21vianet-support-role"></a>Rol del soporte de 21Vianet
 

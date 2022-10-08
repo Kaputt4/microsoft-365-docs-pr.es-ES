@@ -16,19 +16,20 @@ ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection:
-- M365-security-compliance
+- m365-security
 - m365solution-firstincident
 - highpri
+- tier1
 ms.topic: conceptual
 search.appverid:
 - MOE150
 - MET150
-ms.openlocfilehash: 76df56c3d1200e8657f288f0b696e8ace3f8ea28
-ms.sourcegitcommit: 10e6abe740e27000e223378eb17d657a47555fa8
+ms.openlocfilehash: 2a80a353b78a447cba5124a7b6e6241e3b3eb223
+ms.sourcegitcommit: 12af9e8e3a6eaa090fda9e98ccb831dff65863a4
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/31/2022
-ms.locfileid: "67480852"
+ms.lasthandoff: 09/27/2022
+ms.locfileid: "68059248"
 ---
 # <a name="step-3-perform-a-post-incident-review-of-your-first-incident"></a>Paso 3. Realizar una revisión posterior al incidente del primer incidente
 
@@ -39,7 +40,7 @@ ms.locfileid: "67480852"
 
 El Instituto Nacional de Estándares y Tecnología (NIST) recomienda que, una vez que se hayan tomado todos los pasos necesarios para recuperarse del ataque, las organizaciones deben revisar el incidente para aprender de él y mejorar la posición o los procesos de seguridad. La evaluación de los distintos aspectos del control de incidentes es importante para prepararse para el siguiente incidente.
 
-Microsoft 365 Defender puede ayudar a realizar actividades posteriores al incidente proporcionando a una organización alertas que se alineen con [MITRE ATT&CK Framework](https://attack.mitre.org/). Todas las soluciones de Microsoft Defender etiquetan los ataques de acuerdo con una técnica o táctica de ATT&CK.
+Microsoft 365 Defender puede ayudar a realizar actividades posteriores al incidente proporcionando a una organización alertas que se alineen con [MITRE ATT&CK Framework](https://attack.mitre.org/). Todas las soluciones Microsoft Defender etiquetan los ataques de acuerdo con una técnica o táctica de ATT&CK.
 
 Al asignar alertas a este marco del sector, puede hacer lo siguiente:
 

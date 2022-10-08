@@ -14,15 +14,16 @@ ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection:
-- m365-security-compliance
+- m365-security
+- tier2
 ms.topic: article
 ms.subservice: mde
-ms.openlocfilehash: 2ffe38f5c2bbd248968df709644972d2468b4826
-ms.sourcegitcommit: 437461fa1d38ff9bb95dd8a1c5f0b94e8111ada2
+ms.openlocfilehash: d1aca56b87d037a90498baba9a6151ec3878d0f2
+ms.sourcegitcommit: 0b7070ec119e00e0dafe030bbfbef0ae5c9afa19
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/14/2022
-ms.locfileid: "67672345"
+ms.lasthandoff: 09/29/2022
+ms.locfileid: "68175026"
 ---
 # <a name="get-started-with-troubleshooting-mode-in-microsoft-defender-for-endpoint"></a>Introducción al modo de solución de problemas en Microsoft Defender para punto de conexión 
 
@@ -33,21 +34,21 @@ ms.locfileid: "67672345"
 
 > ¿Quiere experimentar Defender para punto de conexión? [Regístrese para obtener una prueba gratuita.](https://www.microsoft.com/WindowsForBusiness/windows-atp?ocid=docs-wdatp-configureendpointsscript-abovefoldlink)
 
-Microsoft Defender para punto de conexión modo de solución de problemas le permite solucionar problemas de varias características antivirus de Microsoft Defender al habilitarlas desde el dispositivo y probar diferentes escenarios, incluso si están controladas por la directiva de la organización. El modo de solución de problemas está deshabilitado de forma predeterminada y requiere que lo active para un dispositivo (o grupo de dispositivos) durante un tiempo limitado. Tenga en cuenta que se trata exclusivamente de una característica de solo empresa y requiere Microsoft 365 Defender acceso.
+Microsoft Defender para punto de conexión modo de solución de problemas le permite solucionar diversos Microsoft Defender características antivirus al habilitarlas desde el dispositivo y probar diferentes escenarios, incluso si están controladas por la directiva de la organización. El modo de solución de problemas está deshabilitado de forma predeterminada y requiere que lo active para un dispositivo (o grupo de dispositivos) durante un tiempo limitado. Tenga en cuenta que se trata exclusivamente de una característica de solo empresa y requiere Microsoft 365 Defender acceso.
 
 ## <a name="what-do-you-need-to-know-before-you-begin"></a>¿Qué necesita saber antes de empezar?
 
 - Use el modo de solución de problemas para deshabilitar o cambiar la configuración de protección contra alteraciones para realizar lo siguiente:
 
-  - Solución de problemas funcional de Antivirus de Microsoft Defender /compatibilidad con aplicaciones (bloques de aplicaciones falsos positivos).
-  - Solución de problemas de rendimiento del Antivirus de Microsoft Defender mediante el modo de solución de problemas y la manipulación de la protección contra alteraciones y otras configuraciones de antivirus.
+  - Microsoft Defender Solución de problemas funcional del antivirus /compatibilidad de aplicaciones (bloques de aplicación falsos positivos).
+  - Microsoft Defender solución de problemas de rendimiento del antivirus mediante el modo de solución de problemas y la manipulación de la protección contra alteraciones y otras configuraciones de antivirus.
 
 - Si se produce un evento de manipulación (por ejemplo, la `MpPreference` instantánea se modifica o elimina), el modo de solución de problemas finalizará y se habilitará la protección contra alteraciones en el dispositivo.
 
-- Los administradores locales, con los permisos adecuados, pueden cambiar las configuraciones en puntos de conexión individuales que normalmente están bloqueados por la directiva. Tener un dispositivo en modo de solución de problemas puede ser útil al diagnosticar escenarios de rendimiento y compatibilidad del Antivirus de Microsoft Defender.
+- Los administradores locales, con los permisos adecuados, pueden cambiar las configuraciones en puntos de conexión individuales que normalmente están bloqueados por la directiva. Tener un dispositivo en modo de solución de problemas puede ser útil al diagnosticar Microsoft Defender escenarios de rendimiento y compatibilidad del antivirus.
 
-  - Los administradores locales no podrán desactivar el Antivirus de Microsoft Defender ni desinstalarlo.
-  - Los administradores locales podrán configurar todas las demás opciones de seguridad en el conjunto de aplicaciones antivirus de Microsoft Defender (por ejemplo, protección en la nube, protección contra alteraciones).
+  - Los administradores locales no podrán desactivar Microsoft Defender Antivirus ni desinstalarlo.
+  - Los administradores locales podrán configurar todas las demás opciones de seguridad del conjunto de Microsoft Defender Antivirus (por ejemplo, protección en la nube, protección contra alteraciones).
 
 - Los administradores con permisos de "Administrar configuración de seguridad" tendrán acceso para activar el modo de solución de problemas.
 
@@ -72,7 +73,7 @@ Microsoft Defender para punto de conexión modo de solución de problemas le per
 - Puede consultar todos los eventos de modo de solución de problemas en la búsqueda avanzada.
 
 > [!NOTE]
-> Los cambios de administración de directivas se aplicarán a la máquina cuando esté activo en el modo de solución de problemas. Sin embargo, los cambios no surtirán efecto hasta que expire el modo de solución de problemas. Además, las actualizaciones de la Plataforma antivirus de Microsoft Defender no se aplicarán durante el modo de solución de problemas. Las actualizaciones de la plataforma se aplicarán una vez que el modo de solución de problemas finalice con una actualización de Windows.
+> Los cambios de administración de directivas se aplicarán a la máquina cuando esté activo en el modo de solución de problemas. Sin embargo, los cambios no surtirán efecto hasta que expire el modo de solución de problemas. Además, Microsoft Defender actualizaciones de la Plataforma antivirus no se aplicarán durante el modo de solución de problemas. Las actualizaciones de la plataforma se aplicarán una vez que el modo de solución de problemas finalice con una actualización de Windows.
 
 ## <a name="prerequisites"></a>Requisitos previos
 
@@ -95,7 +96,7 @@ Microsoft Defender para punto de conexión modo de solución de problemas le per
 
 - Para aplicar el modo de solución de problemas, Microsoft Defender para punto de conexión deben estar inscritos en el inquilino y estar activos en el dispositivo.
 
-- El dispositivo debe ejecutar activamente antivirus de Microsoft Defender, versión 4.18.2203 o posterior.
+- El dispositivo debe ejecutarse activamente Microsoft Defender Antivirus, versión 4.18.2203 o posterior.
 
 ## <a name="enable-the-troubleshooting-mode"></a>Habilitación del modo de solución de problemas
 

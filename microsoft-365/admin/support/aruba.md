@@ -7,17 +7,19 @@ ms.author: cmcatee
 manager: scotv
 audience: Admin
 ms.topic: reference
-ms.service: o365-administration
-ms.collection: Adm_Support
+ms.service: microsoft-365-business
+ms.collection:
+- scotvorg
+- Adm_Support
 ms.localizationpriority: medium
 description: Obtenga información acerca de cómo ponerse en contacto con el soporte técnico de su país o región.
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: 0e70f6946bd0975c9442a0fb8ba1ff254a095f1a
-ms.sourcegitcommit: 0ee2dabe402d44fecb6856af98a2ef7720d25189
+ms.openlocfilehash: e38e474e7b79bb9b6326000914c63786a84e8ea4
+ms.sourcegitcommit: 0b7070ec119e00e0dafe030bbfbef0ae5c9afa19
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/09/2021
-ms.locfileid: "61370805"
+ms.lasthandoff: 09/29/2022
+ms.locfileid: "68179865"
 ---
 # <a name="contact-support-for-aruba"></a>Póngase en contacto con el soporte técnico de Aruba
 
@@ -29,9 +31,9 @@ ms.locfileid: "61370805"
 ## <a name="hours"></a>Horas
 ### <a name="billing-support"></a>Soporte de facturación:
 
-Neerlandés: Mon-Fri 4:00 a.m.
+Holandés: Mon-Fri 4 am-mediodía
 
-Inglés: Mon-Fri 4:00 a.m.
+Inglés: Mon-Fri 4 am-mediodía
 
 ### <a name="technical-support"></a>Soporte técnico:
 

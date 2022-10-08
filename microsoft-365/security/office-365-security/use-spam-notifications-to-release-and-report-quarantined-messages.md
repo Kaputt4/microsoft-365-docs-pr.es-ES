@@ -15,18 +15,18 @@ search.appverid:
 - MET150
 ms.assetid: 56de4ed5-b0aa-4195-9f46-033d7cc086bc
 ms.collection:
-- M365-security-compliance
+- m365-security
 ms.custom:
 - seo-marvel-apr2020
 description: Los administradores pueden obtener información sobre las notificaciones de correo no deseado del usuario final para los mensajes en cuarentena en Exchange Online Protection (EOP).
 ms.subservice: mdo
 ms.service: microsoft-365-security
-ms.openlocfilehash: 57d794e601250cac554226cdb8e1210f15ed08ef
-ms.sourcegitcommit: 2b89bcff547e00be3d38dc8d1e6cbcf8f41eba42
+ms.openlocfilehash: b2792a99e405bc83751965748a9f57f3eaf246a3
+ms.sourcegitcommit: 12af9e8e3a6eaa090fda9e98ccb831dff65863a4
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/03/2022
-ms.locfileid: "67597656"
+ms.lasthandoff: 09/27/2022
+ms.locfileid: "68060238"
 ---
 # <a name="use-quarantine-notifications-to-release-and-report-quarantined-messages"></a>Uso de notificaciones de cuarentena para liberar e informar de mensajes en cuarentena
 

@@ -9,6 +9,7 @@ ms.topic: conceptual
 ms.service: microsoft-365-enterprise
 ms.localizationpriority: medium
 ms.collection:
+- scotvorg
 - Ent_O365
 - SPO_Content
 search.appverid:
@@ -20,12 +21,12 @@ f1.keywords:
 - NOCSH
 description: Busque información y recursos para actualizar desde SharePoint 2010 y SharePoint Server 2010. La compatibilidad con ambos finaliza el 13 de abril de 2021.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: a40f64fff001e8dbbc96b20039b2bd578f4e44a0
-ms.sourcegitcommit: 437461fa1d38ff9bb95dd8a1c5f0b94e8111ada2
+ms.openlocfilehash: 847e74174ca90e21c6a15865b4b2c0efc4f28979
+ms.sourcegitcommit: 0b7070ec119e00e0dafe030bbfbef0ae5c9afa19
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/14/2022
-ms.locfileid: "67672851"
+ms.lasthandoff: 09/29/2022
+ms.locfileid: "68179315"
 ---
 # <a name="upgrading-from-sharepoint-2010"></a>Actualización desde SharePoint 2010
 
@@ -58,7 +59,7 @@ Compruebe las fechas en las que finaliza el soporte técnico en el [sitio ciclo 
 
 Esta matriz ayuda a trazar un curso entre las opciones de migración:
 
-|Producto de fin de soporte técnico|Bueno |Procedimientos|
+|Producto de fin de soporte técnico|Good |Procedimientos|
 |---|---|---|
 |SharePoint Server 2010|SharePoint Server 2013 (local)|SharePoint Online|
 ||SharePoint Server 2013 híbrido con SharePoint Online|SharePoint Server 2016 (local)|

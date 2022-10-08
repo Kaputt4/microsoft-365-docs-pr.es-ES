@@ -6,9 +6,11 @@ manager: scotv
 ms.date: 12/29/2016
 audience: End User
 ms.topic: overview
-ms.service: o365-administration
+ms.service: microsoft-365-enterprise
 ms.localizationpriority: medium
-ms.collection: Ent_O365
+ms.collection:
+- scotvorg
+- Ent_O365
 search.appverid:
 - MET150
 - MET150
@@ -20,12 +22,12 @@ f1.keywords:
 - NOCSH
 ms.custom: seo-marvel-apr2020
 description: Este artículo le guía por los procedimientos recomendados que puede adoptar para usar Office 365 en una red lenta.
-ms.openlocfilehash: 5ed3a9dfc665d5067fb3f310fc74aa4b100190f2
-ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
+ms.openlocfilehash: 3c150552add1423418953d53feb9a51e73c370bf
+ms.sourcegitcommit: 0b7070ec119e00e0dafe030bbfbef0ae5c9afa19
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "65091641"
+ms.lasthandoff: 09/29/2022
+ms.locfileid: "68178919"
 ---
 # <a name="best-practices-for-using-office-365-on-a-slow-network"></a>Procedimientos recomendados para usar Office 365 en una red lenta
 
@@ -60,7 +62,7 @@ Siempre que experimente problemas de rendimiento, asegúrese primero de que el d
 
 - Si es posible, compre más memoria. Agregar memoria es la manera más sencilla y a menudo más eficaz de mejorar el rendimiento en el dispositivo. Es especialmente útil cuando se trabaja con archivos y vídeos de gran tamaño.
 
-Para obtener más información, consulte [Windows Rendimiento y mantenimiento](https://windows.microsoft.com/windows/performance-maintenance-help#performance-maintenance-help) y [Sugerencias para mejorar el rendimiento del equipo en Windows 10](https://support.microsoft.com/help/4002019/windows-10-improve-pc-performance).
+Para obtener más información, consulta [Rendimiento y mantenimiento de Windows](https://windows.microsoft.com/windows/performance-maintenance-help#performance-maintenance-help) y [Sugerencias para mejorar el rendimiento del equipo en Windows 10](https://support.microsoft.com/help/4002019/windows-10-improve-pc-performance).
 
 ## <a name="best-practices-for-using-your-browser"></a>Procedimientos recomendados para usar el explorador
 
@@ -101,9 +103,9 @@ Leer, escribir y organizar el correo electrónico es una gran parte del día de 
 
 - Outlook Web App permite crear mensajes sin conexión, contactos y eventos de calendario que se cargan cuando OWA puede conectarse a Office 365. Para obtener más información sobre cómo configurar y usar OWA en modo sin conexión, consulte [Uso de Outlook Web App sin conexión](https://support.office.com/article/3214839c-0604-4162-8a97-6856b4c27b36).
 
-- Outlook permite trabajar en modo almacenado en caché, en el que se conecta automáticamente siempre que sea posible. Puede hacer que Outlook descargue todo el buzón o solo una parte de él. Para obtener más información, vea [Activar el modo de Exchange almacenado en caché](https://support.office.com/article/7885af08-9a60-4ec3-850a-e221c1ed0c1c) y [Trabajar sin conexión en Outlook](https://support.office.com/article/f3a1251c-6dd5-4208-aef9-7c8c9522d633).
+- Outlook le permite trabajar en modo almacenado en caché, en el que se conecta automáticamente siempre que sea posible. Puede hacer que Outlook descargue todo el buzón o solo una parte de él. Para obtener más información, vea [Activar el modo de intercambio almacenado en caché](https://support.office.com/article/7885af08-9a60-4ec3-850a-e221c1ed0c1c) y [Trabajar sin conexión en Outlook](https://support.office.com/article/f3a1251c-6dd5-4208-aef9-7c8c9522d633).
 
-- Outlook también ofrece un modo sin conexión. Para usar esto, primero debe configurar el modo almacenado en caché para que la información de la cuenta se copie en el equipo. En el modo sin conexión, Outlook intentará conectarse mediante la configuración de envío y recepción, o cuando la establezca manualmente para que funcione en línea. Para obtener más información, vea [Trabajar sin conexión para evitar cargos de conexión de datos](https://support.office.com/article/827fe51f-5609-4062-82b4-3578057f9282), [Cambiar la configuración de envío y recepción cuando trabaje sin conexión](https://support.office.com/article/f681ec10-cb14-40cb-8709-1909a13c304a) y [Cambiar de trabajar sin conexión a en línea](https://support.office.com/article/2460e4a8-16c7-47fc-b204-b1549275aac9).
+- Outlook también ofrece un modo sin conexión. Para usar esto, primero debe configurar el modo almacenado en caché para que la información de la cuenta se copie en el equipo. En el modo sin conexión, Outlook intentará conectarse mediante la configuración de envío y recepción, o cuando lo establezca manualmente para que funcione en línea. Para obtener más información, vea [Trabajar sin conexión para evitar cargos de conexión de datos](https://support.office.com/article/827fe51f-5609-4062-82b4-3578057f9282), [Cambiar la configuración de envío y recepción cuando trabaje sin conexión](https://support.office.com/article/f681ec10-cb14-40cb-8709-1909a13c304a) y [Cambiar de trabajar sin conexión a en línea](https://support.office.com/article/2460e4a8-16c7-47fc-b204-b1549275aac9).
 
 - Si tiene un teléfono inteligente, puede usarlo para evaluar el correo electrónico y el calendario a través de la red de su operador de teléfono.
 
@@ -114,7 +116,7 @@ Leer, escribir y organizar el correo electrónico es una gran parte del día de 
 
 OneDrive para la Empresa está diseñado desde cero para trabajar con sus archivos en línea y sin conexión. Una vez configurado, la sincronización de los cambios se produce de forma automática y confiable en cualquier lugar y cada vez que los realice. Si la red es lenta, puede trabajar con la versión sin conexión de los archivos.
 
-La aplicación de sincronización de OneDrive para la Empresa incluye una suscripción de SharePoint Online y Office 365 empresa, o puede [descargar](https://support.microsoft.com/kb/2903984) la aplicación de sincronización de OneDrive para la Empresa de forma gratuita. Esta aplicación también es más rápida que el uso de los comandos **Abrir en el Explorador** o **Upload**. Para obtener más información, consulte [Configuración del equipo para sincronizar los archivos de OneDrive para la Empresa en Office 365](https://support.office.com/article/23e1f12b-d896-4cb1-a238-f91d19827a16).
+La aplicación de sincronización de OneDrive para la Empresa viene con una suscripción de SharePoint Online y Office 365 empresa, o puede [descargar](https://support.microsoft.com/kb/2903984) la aplicación de sincronización de OneDrive para la Empresa de forma gratuita. Esta aplicación también es más rápida que el uso de los comandos **Abrir en el Explorador** o **Cargar** . Para obtener más información, consulte [Configuración del equipo para sincronizar los archivos de OneDrive para la Empresa en Office 365](https://support.office.com/article/23e1f12b-d896-4cb1-a238-f91d19827a16).
 
 Estas son algunas instrucciones adicionales para usar la aplicación de sincronización de OneDrive para la Empresa:
 
@@ -123,9 +125,9 @@ Estas son algunas instrucciones adicionales para usar la aplicación de sincroni
 
 ## <a name="best-practices-for-using-onenote"></a>Procedimientos recomendados para usar OneNote
 
-Cada sitio de equipo de SharePoint tiene un cuaderno de OneNote integrado y puede crear fácilmente el suyo propio. OneNote es una excelente manera de recopilar información oportuna que necesita cada día para realizar las tareas. Por ejemplo, muchos equipos usan OneNote como punto de recopilación para reuniones semanales, notas del proyecto, ideas, planes e informes de estado. Puede organizar claramente esta información dispare mediante páginas, secciones y pestañas.
+Cada sitio de equipo de SharePoint tiene un cuaderno de OneNote integrado y puede crear fácilmente el suyo propio. OneNote es una excelente manera de recopilar información oportuna que necesitas cada día para realizar tareas. Por ejemplo, muchos equipos usan OneNote como punto de recopilación para reuniones semanales, notas del proyecto, ideas, planes e informes de estado. Puede organizar claramente esta información dispare mediante páginas, secciones y pestañas.
 
-La belleza de OneNote es que puedes acceder al contenido desde prácticamente cualquier dispositivo, ya sea un escritorio, un portátil, una tableta o un teléfono inteligente. Y no tiene que preocuparse por guardar o sincronizar porque OneNote lo hace por usted.
+La belleza de OneNote es que puedes acceder al contenido desde prácticamente cualquier dispositivo, ya sea un escritorio, un portátil, una tableta o un teléfono inteligente. Y no tienes que preocuparte por guardar o sincronizar porque OneNote lo hace por ti.
 
 Para obtener más información, consulte [Microsoft OneNote](https://office.microsoft.com/onenote).
 
@@ -147,7 +149,7 @@ Para obtener más información, vea [Mala calidad de audio o vídeo en Lync Onli
 
 ## <a name="best-practices-for-using-sharepoint-lists"></a>Procedimientos recomendados para usar listas de SharePoint
 
-Trabajar con datos de lista sin conexión para "limpiar", analizar o notificar datos es una excelente manera de minimizar el impacto de una red lenta. Puede leer y escribir la mayoría de las listas de Microsoft Access 2019 y Microsoft Access 2016 vinculándolas a ellas. También puede exportar una lista a una tabla de Excel, lo que crea una conexión de datos unidireccional entre la tabla Excel y la lista. Obtenga información sobre cómo [trabajar sin conexión con tablas vinculadas a listas de SharePoint](https://support.office.com/article/work-offline-with-tables-that-are-linked-to-sharepoint-lists-5d66594a-6176-4a25-a198-320f13ccf41e).
+Trabajar con datos de lista sin conexión para "limpiar", analizar o notificar datos es una excelente manera de minimizar el impacto de una red lenta. Puede leer y escribir la mayoría de las listas de Microsoft Access 2019 y Microsoft Access 2016 vinculándolas a ellas. También puede exportar una lista a una tabla de Excel, lo que crea una conexión de datos unidireccional entre la tabla de Excel y la lista. Obtenga información sobre cómo [trabajar sin conexión con tablas vinculadas a listas de SharePoint](https://support.office.com/article/work-offline-with-tables-that-are-linked-to-sharepoint-lists-5d66594a-6176-4a25-a198-320f13ccf41e).
 
 Para obtener más información, consulte la sección "Más información sobre la administración de listas grandes" en [Administración de listas y bibliotecas grandes en Office 365](https://support.office.com/article/b4038448-ec0e-49b7-b853-679d3d8fb784).
 
@@ -155,19 +157,19 @@ Para obtener más información, consulte la sección "Más información sobre la
 
 Al personalizar una página web, puede provocar involuntariamente un rendimiento deficiente con la página. Una serie de factores pueden tener un impacto, como la complejidad y el tamaño de la página, cuántos elementos web se agregan, cuántos elementos de lista o biblioteca se muestran inicialmente y la forma en que se codifica la página.
 
-Para obtener más información, consulte [Tune SharePoint Online performance (Ajustar el rendimiento de SharePoint Online](tune-sharepoint-online-performance.md)).
+Para obtener más información, vea [Optimizar el rendimiento de SharePoint Online](tune-sharepoint-online-performance.md).
 
 ## <a name="best-practices-for-using-project-online"></a>Procedimientos recomendados para usar Project Online
 
 Las siguientes directrices pueden ayudar a mejorar el rendimiento de la red.
 
-- Project Online y SharePoint Online requieren sincronización, lo que puede llevar mucho tiempo. Si los equipos del proyecto tienen una rotación baja, deshabilite Project Site Sync para mejorar el rendimiento de las páginas de Project publicar y Project detalles. Limite la sincronización de Active Directory a grupos de recursos que realmente necesitan usar el sistema y supervise los posibles problemas de permisos después de la sincronización de grupos grandes.
+- Project Online y SharePoint Online requieren sincronización, lo que puede llevar mucho tiempo. Si los equipos del proyecto tienen poca rotación, deshabilite Project Site Sync para mejorar el rendimiento de Las páginas de publicación y detalles del proyecto. Limite la sincronización de Active Directory a grupos de recursos que realmente necesitan usar el sistema y supervise los posibles problemas de permisos después de la sincronización de grupos grandes.
 
 - Si su organización usa sitios de proyecto, créelos a petición en lugar de automáticamente. Esto acelera la primera experiencia de publicación y evita la creación de sitios y contenido innecesarios.
 
-- Project Páginas de detalles (PDP) puede desencadenar una actualización de todo el proyecto e iniciar acciones de flujo de trabajo, que pueden ser operaciones que consumen mucho rendimiento. Para evitar desencadenar dos procesos de actualización al mismo tiempo en el mismo PDP, evite actualizar los campos de calendario (Fecha de inicio, Fecha de finalización, Fecha de estado y Fecha actual) y los campos no programados (nombre del proyecto, descripción y propietario).
+- Las páginas de detalles del proyecto (PDP) pueden desencadenar una actualización de todo el proyecto e iniciar acciones de flujo de trabajo, que pueden ser operaciones que consumen mucho rendimiento. Para evitar desencadenar dos procesos de actualización al mismo tiempo en el mismo PDP, evite actualizar los campos de calendario (Fecha de inicio, Fecha de finalización, Fecha de estado y Fecha actual) y los campos no programados (nombre del proyecto, descripción y propietario).
 
-- Reduzca el número de campos elementos web y personalizados que se muestran en cada PDP. Cree un PDP dedicado con los únicos campos que requieren actualización para mejorar la carga y ahorrar tiempo.
+- Reduzca el número de elementos web y campos personalizados que se muestran en cada PDP. Cree un PDP dedicado con los únicos campos que requieren actualización para mejorar la carga y ahorrar tiempo.
 
 - Cuando use OData para la generación de informes, limite la cantidad de datos que consulta en tiempo de ejecución mediante el filtrado del lado servidor.
 

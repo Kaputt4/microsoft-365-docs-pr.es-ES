@@ -1,29 +1,31 @@
 ---
-title: Asignación de directivas por usuario Skype Empresarial Online con PowerShell para Microsoft 365
+title: Asignación de directivas por usuario Skype Empresarial en línea con PowerShell para Microsoft 365
 ms.author: kvice
 author: kelleyvice-msft
 manager: scotv
 ms.date: 07/16/2020
 audience: ITPro
 ms.topic: article
-ms.service: o365-administration
+ms.service: microsoft-365-enterprise
 ms.localizationpriority: medium
-ms.collection: Ent_O365
+ms.collection:
+- scotvorg
+- Ent_O365
 f1.keywords:
 - NOCSH
 ms.custom: seo-marvel-apr2020
 ms.assetid: 36743c86-46c2-46be-b9ed-ad9d4e85d186
 description: 'Resumen: use PowerShell para Microsoft 365 para asignar la configuración de comunicación por usuario con directivas de Skype Empresarial Online.'
-ms.openlocfilehash: 70120f6d296f958f44906a3526a7dcaa36b7eb04
-ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
+ms.openlocfilehash: db23a3d4a16355a6bf1d9e0f8a8c1daffda7eb63
+ms.sourcegitcommit: 0b7070ec119e00e0dafe030bbfbef0ae5c9afa19
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "65091399"
+ms.lasthandoff: 09/29/2022
+ms.locfileid: "68178963"
 ---
-# <a name="assign-per-user-skype-for-business-online-policies-with-powershell-for-microsoft-365"></a>Asignación de directivas por usuario Skype Empresarial Online con PowerShell para Microsoft 365
+# <a name="assign-per-user-skype-for-business-online-policies-with-powershell-for-microsoft-365"></a>Asignación de directivas por usuario Skype Empresarial en línea con PowerShell para Microsoft 365
 
-*Este artículo se aplica tanto a Microsoft 365 Enterprise como a Office 365 Enterprise.*
+*Este artículo afecta tanto a Office 365 Enterprise como a Microsoft 365 Enterprise*
 
 El uso de PowerShell para Microsoft 365 es una manera eficaz de asignar la configuración de comunicación por usuario con directivas de Skype Empresarial Online.
   
@@ -47,7 +49,7 @@ Siga estas instrucciones para configurarse para ejecutar los comandos (omita los
     
 ## <a name="updating-external-communication-settings-for-a-user-account"></a>Actualización de la configuración de comunicación externa para una cuenta de usuario
 
-Supongamos que desea cambiar la configuración de comunicación externa en una cuenta de usuario. Por ejemplo, quiere permitir que Alex se comunique con los usuarios federados (EnableFederationAccess es igual a True), pero no con Windows usuarios activos (EnablePublicCloudAccess es igual a False). Para ello, debe hacer dos cosas:
+Supongamos que desea cambiar la configuración de comunicación externa en una cuenta de usuario. Por ejemplo, quiere permitir que Alex se comunique con los usuarios federados (EnableFederationAccess es igual a True), pero no con los usuarios de Windows Live (EnablePublicCloudAccess es igual a False). Para ello, debe hacer dos cosas:
   
 1. Buscar una directiva de acceso externo que cumpla nuestros criterios.
     

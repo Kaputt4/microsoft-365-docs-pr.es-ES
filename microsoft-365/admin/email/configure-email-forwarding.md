@@ -7,9 +7,10 @@ author: kwekua
 manager: scotv
 audience: Admin
 ms.topic: article
-ms.service: o365-administration
+ms.service: microsoft-365-business
 ms.localizationpriority: medium
 ms.collection:
+- scotvorg
 - M365-subscription-management
 - Adm_O365
 - Adm_TOC
@@ -24,13 +25,13 @@ search.appverid:
 - MET150
 - MOE150
 ms.assetid: ab5eb117-0f22-4fa7-a662-3a6bdb0add74
-description: El reenvío de correo electrónico le permite reenviar los mensajes de correo electrónico enviados a un buzón Microsoft 365 de usuario a otro buzón dentro o fuera de la organización.
-ms.openlocfilehash: 5522d9202732ca54d1a395a83e99ae2442b68eb9
-ms.sourcegitcommit: 6e90baef421ae06fd790b0453d3bdbf624b7f9c0
+description: Email reenvío le permite reenviar mensajes de correo electrónico enviados a un buzón de usuario de Microsoft 365 a otro buzón dentro o fuera de su organización.
+ms.openlocfilehash: 74e261e8e99399879e64acccd7c6435b795e2388
+ms.sourcegitcommit: 0b7070ec119e00e0dafe030bbfbef0ae5c9afa19
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/12/2022
-ms.locfileid: "62766577"
+ms.lasthandoff: 09/29/2022
+ms.locfileid: "68178237"
 ---
 # <a name="configure-email-forwarding-in-microsoft-365"></a>Configurar el reenvío de correo electrónico en Microsoft 365
 
@@ -40,13 +41,13 @@ Como administrador de una organización, es posible que tenga requisitos de la c
 > Puede usar las directivas del filtro de correo no deseado saliente para controlar el reenvío automático a destinatarios externos. Para obtener más información, consulte [Controlar el reenvío automático de correo electrónico externo en Microsoft 365](/microsoft-365/security/office-365-security/external-email-forwarding#how-the-outbound-spam-filter-policy-settings-work-with-other-automatic-email-forwarding-controls).
 
 > [!TIP]
-> Si necesita ayuda con los pasos de este tema, considere la posibilidad de [trabajar con un especialista en pequeñas empresas de Microsoft](https://go.microsoft.com/fwlink/?linkid=2186871). Con Business Assist, usted y sus empleados obtienen acceso diario a los especialistas de pequeñas empresas a medida que crece su negocio, desde la incorporación hasta el uso diario.
+> Si necesita ayuda con los pasos que se describen en este tema, considere la posibilidad de [trabajar con un especialista en pequeñas empresas de Microsoft](https://go.microsoft.com/fwlink/?linkid=2186871). Con Business Assist, usted y sus empleados obtienen acceso de forma ininterrumpida a especialistas de pequeñas empresas a medida que hace crecer su negocio, desde la incorporación hasta el uso diario.
 
 ## <a name="configure-email-forwarding"></a>Configurar el reenvío de correo electrónico
 
 Antes de configurar el reenvío de correo electrónico, tenga en cuenta lo siguiente:
 
-- Permitir que los mensajes reenviados automáticamente se envíen a personas en el dominio remoto. Consulta [Administrar dominios remotos](/exchange/mail-flow-best-practices/remote-domains/manage-remote-domains) para obtener más información.
+- Permitir que los mensajes reenviados automáticamente se envíen a personas del dominio remoto. Consulte [Administración de dominios remotos](/exchange/mail-flow-best-practices/remote-domains/manage-remote-domains) para obtener más información.
 
 - Una vez configurado el reenvío de correo electrónico, solo se reenviarán los correos electrónicos **nuevos** enviados al buzón de  correo electrónico de *origen*.
 
@@ -66,13 +67,13 @@ Debe ser Administrador de Exchange o Administrador global en Microsoft 365 para 
 
     **Para reenviar a varias direcciones de correo**, puede pedir al usuario que configure una regla en Outlook para que se reenvía a las direcciones. 
     
-    1.  Abrir **reglas de** **inicio** >**de** outlook > > Seleccionar **administrar reglas & alertas**  
-    1. Seleccione **Nueva regla** > **Seleccione Aplicar regla en el mensaje que recibo ubicado** cerca de la parte inferior de la lista y, a continuación, haga clic **en Siguiente**.
-    1. Haga **clic en Sí** cuando se le pida Esta regla se aplicará a todos los mensajes que reciba. 
-    1. En la lista siguiente, seleccione las acciones que **redirigen a personas o grupos públicos** y **detenga el procesamiento de más reglas**
-    1. Haga clic en la frase subrayada **personas o grupo público** en la parte inferior de la ventana.
-    1. Escriba la **dirección de correo electrónico a** la que se reenviará el correo en el campo Para y, a continuación, haga clic en **Aceptar**.
-    1. Seleccionar **finalizar**
+    1.  Abrir **reglas** **de** >**inicio de Outlook** > > seleccionar **Administrar reglas & alertas**  
+    1. Seleccione **Nueva regla** > **Seleccione Aplicar regla en el mensaje que recibo** situado cerca de la parte inferior de la lista y, a continuación, haga clic en **Siguiente**.
+    1. Haga clic en **Sí** cuando se le solicite Esta regla se aplicará a cada mensaje que reciba. 
+    1. En la lista siguiente, seleccione las acciones **que lo redirigen a personas o grupos públicos** y **deje de procesar más reglas**.
+    1. Haga clic en las personas de frases subrayadas o en el **grupo público** en la parte inferior de la ventana.
+    1. Escriba la **dirección de correo electrónico** a la que reenviar correo en el campo Para y, a continuación, haga clic en **Aceptar**.
+    1. Seleccione **Finalizar**
     
 
      O bien, en el Centro de administración, [cree un grupo de distribución](../setup/create-distribution-lists.md), [agregue las direcciones](add-user-or-contact-to-distribution-list.md) y luego, configure el reenvío para que apunte a la DL con las instrucciones de este artículo.
@@ -102,8 +103,8 @@ Debe ser Administrador de Exchange o Administrador global en Microsoft 365 para 
 ## <a name="related-content"></a>Contenido relacionado 
 
 [Crear un buzón compartido](../email/create-a-shared-mailbox.md) (artículo)\
-[Enviar correo electrónico desde una dirección](https://support.microsoft.com/office/ccba89cb-141c-4a36-8c56-6d16a8556d2e) diferente (artículo)\
+[Enviar correo electrónico desde una dirección diferente](https://support.microsoft.com/office/ccba89cb-141c-4a36-8c56-6d16a8556d2e) (artículo)\
 [Cambiar un nombre de usuario y una dirección de correo electrónico](../add-users/change-a-user-name-and-email-address.md) (artículo)\
-[Controlar el reenvío automático de correo electrónico externo en Microsoft 365](/microsoft-365/security/office-365-security/external-email-forwarding) (artículo)
+[Control del reenvío automático de correo electrónico externo en Microsoft 365](/microsoft-365/security/office-365-security/external-email-forwarding) (artículo)
 
 

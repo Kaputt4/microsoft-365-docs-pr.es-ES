@@ -7,9 +7,10 @@ author: efrene
 manager: scotv
 audience: Admin
 ms.topic: article
-ms.service: o365-administration
+ms.service: microsoft-365-business
 ms.localizationpriority: medium
 ms.collection:
+- scotvorg
 - highpri
 - M365-subscription-management
 - Adm_O365
@@ -28,12 +29,12 @@ search.appverid:
 - GEA150
 ms.assetid: a8b487a9-2a45-4581-9dc4-5d28a47010a2
 description: Obtenga información sobre cómo agregar y configurar el dominio en Microsoft 365 para que sus servicios, como el correo electrónico y Skype Empresarial Online, usen su propio nombre de dominio.
-ms.openlocfilehash: 7904006377f27f53edde9e654a6d44bffd145e5e
-ms.sourcegitcommit: 37e137535c4f70702afe1a5eeaa899c75ee02cfd
+ms.openlocfilehash: a1275d14426f69fc96498772e2fc5aa041d497c6
+ms.sourcegitcommit: 0b7070ec119e00e0dafe030bbfbef0ae5c9afa19
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/13/2022
-ms.locfileid: "67661541"
+ms.lasthandoff: 09/29/2022
+ms.locfileid: "68178215"
 ---
 # <a name="change-nameservers-to-set-up-microsoft-365-with-any-domain-registrar"></a>Cambiar los servidores de nombres para configurar Microsoft 365 con cualquier registrador de dominios
 
@@ -48,12 +49,12 @@ Siga estas instrucciones para agregar y configurar el dominio en Microsoft 365 p
 ## <a name="add-a-txt-or-mx-record-for-verification"></a>Agregar un registro TXT o MX para su verificación
 
 > [!NOTE]
-> Sólo debe crear uno de los dos registros. TXT es el tipo de registro preferido, pero algunos proveedores de host DNS no lo admiten. De ser así, puede crear un registro MX.
+> You will create only one or the other of these records. TXT is the preferred record type, but some DNS hosting providers don't support it, in which case you can create an MX record instead.
 
-Antes de utilizar el dominio con Microsoft 365, tenemos que asegurarnos de que sea el propietario. Si puede iniciar sesión en la cuenta en el registrador de dominio y crear el registro DNS, Microsoft 365 sabrá que es el propietario del dominio.
+Before you use your domain with Microsoft 365, we have to make sure that you own it. Your ability to log in to your account at your domain registrar and create the DNS record proves to Microsoft 365 that you own the domain.
 
 > [!NOTE]
-> Este registro se usa exclusivamente para verificar si se es el propietario de un dominio; no afecta a nada más. Puede eliminarlo más adelante, si lo desea.
+> This record is used only to verify that you own your domain; it doesn't affect anything else. You can delete it later, if you like.
 
 ### <a name="find-the-area-on-your-dns-hosting-providers-website-where-you-can-create-a-new-record"></a>Busque el área en el sitio web del proveedor de hospedaje DNS donde puede crear un nuevo registro.
 
@@ -101,10 +102,10 @@ Cuando Microsoft 365 encuentre el registro TXT correcto, se comprobará su domin
 
 3. En la página de **Configuración**, elija **Iniciar configuración**.
 
-4. En la página **verificar dominio**, seleccione **verificar**.
+4. En la página **Verificar dominio**, elija **Verificar**.
 
 > [!NOTE]
-> Por lo general, los cambios de DNS tardan unos 15 minutos en aplicarse. Sin embargo, a veces los cambios pueden necesitar más tiempo para aplicarse en todo el sistema DNS de Internet. Si tiene problemas con el flujo de correo u otros problemas después de agregar registros DNS, consulte [Solucionar problemas después de cambiar el nombre del dominio o los registros DNS](../get-help-with-domains/find-and-fix-issues.md).
+> Typically it takes about 15 minutes for DNS changes to take effect. However, it can occasionally take longer for a change you've made to update across the Internet's DNS system. If you're having trouble with mail flow or other issues after adding DNS records, see [Troubleshoot issues after changing your domain name or DNS records](../get-help-with-domains/find-and-fix-issues.md).
 
 ## <a name="change-your-domains-nameserver-ns-records"></a>Cambiar los registros del servidor de nombres (o NS) de su dominio
 
@@ -186,7 +187,7 @@ Además, puede crear un registro CNAME para ayudar a los clientes a encontrar su
 3. En el cuadro **Nombre de host o Alias** , escriba **www**.
 4. En el cuadro **Puntos a dirección** , escriba el nombre de dominio completo (FQDN) del sitio web. Por ejemplo, **contoso.com**.
 5. Si desea cambiar la configuración de TTL para el registro, seleccione una nueva longitud de tiempo en la lista desplegable **TTL** . De lo contrario, continúe con el paso 6.
-6. Haga clic en **Guardar**.
+6. Seleccione **Guardar**.
 
 Una vez actualizados los registros nameserver para que apunten a Microsoft, se completa la configuración del dominio. Email se enruta a Microsoft y el tráfico a la dirección del sitio web continúa a su host del sitio web actual."
 

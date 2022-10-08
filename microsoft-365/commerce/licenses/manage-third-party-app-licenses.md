@@ -8,9 +8,10 @@ manager: scotv
 ms.reviewer: argani, nicholak
 audience: Admin
 ms.topic: article
-ms.service: o365-administration
+ms.service: microsoft-365-business
 ms.localizationpriority: medium
 ms.collection:
+- scotvorg
 - M365-subscription-management
 - Adm_O365
 ms.custom:
@@ -20,12 +21,12 @@ search.appverid:
 - MET150
 description: Obtenga información sobre cómo administrar licencias para aplicaciones de proveedores de software independientes (ISV) en el Centro de administración de Microsoft 365.
 ms.date: 06/08/2022
-ms.openlocfilehash: 0e83335c7130e3ae42c648ee680cf8137a7b1244
-ms.sourcegitcommit: 133bf9097785309da45df6f374a712a48b33f8e9
+ms.openlocfilehash: 7c27c4b1188990426868f86be052d8304eaf7da7
+ms.sourcegitcommit: 0b7070ec119e00e0dafe030bbfbef0ae5c9afa19
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/10/2022
-ms.locfileid: "66011746"
+ms.lasthandoff: 09/29/2022
+ms.locfileid: "68179645"
 ---
 # <a name="manage-isv-app-licenses-in-the-microsoft-365-admin-center"></a>Administración de licencias de aplicaciones de ISV en el Centro de administración de Microsoft 365
 
@@ -56,7 +57,7 @@ Si compró la aplicación a través de Microsoft en https://appsource.microsoft.
 
 Si compró una aplicación ISV a través de un proveedor de aplicaciones, póngase en contacto con el proveedor para agregar o quitar licencias de su cuenta.
 
-## <a name="next-steps"></a>Siguientes pasos
+## <a name="next-steps"></a>Pasos siguientes
 
 En función de la aplicación ISV que haya comprado, el siguiente paso podría ser instalar la aplicación en el entorno de la organización. La instalación de la aplicación hace que esté disponible para los usuarios. Siga estos pasos para instalar una aplicación ISV en el entorno.
 

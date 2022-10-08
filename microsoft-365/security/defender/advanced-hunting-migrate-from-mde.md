@@ -17,15 +17,16 @@ ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection:
-- M365-security-compliance
+- m365-security
+- tier2
 ms.topic: article
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 05e498d7208e9cd72cde4b6899fedc70a70db766
-ms.sourcegitcommit: 10e6abe740e27000e223378eb17d657a47555fa8
+ms.openlocfilehash: 58079a1b4aa1b41a216da4d2f4f5fac733a7f1fe
+ms.sourcegitcommit: 12af9e8e3a6eaa090fda9e98ccb831dff65863a4
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/31/2022
-ms.locfileid: "67483528"
+ms.lasthandoff: 09/27/2022
+ms.locfileid: "68055576"
 ---
 # <a name="migrate-advanced-hunting-queries-from-microsoft-defender-for-endpoint"></a>Migración de consultas de búsqueda avanzadas desde Microsoft Defender para punto de conexión
 

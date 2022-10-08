@@ -7,17 +7,19 @@ ms.author: cmcatee
 manager: scotv
 audience: Admin
 ms.topic: reference
-ms.service: o365-administration
-ms.collection: Adm_Support
+ms.service: microsoft-365-business
+ms.collection:
+- scotvorg
+- Adm_Support
 ms.localizationpriority: medium
 description: Obtenga información acerca de cómo ponerse en contacto con el soporte técnico de su país o región.
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: 68b06e8451fa254b03673181e3e6a1c6ec126d1a
-ms.sourcegitcommit: 0ee2dabe402d44fecb6856af98a2ef7720d25189
+ms.openlocfilehash: 042ffef4d0bd662b8fd6028aa143d53b95a26585
+ms.sourcegitcommit: 0b7070ec119e00e0dafe030bbfbef0ae5c9afa19
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/09/2021
-ms.locfileid: "61372557"
+ms.lasthandoff: 09/29/2022
+ms.locfileid: "68177952"
 ---
 # <a name="contact-support-for-france"></a>Póngase en contacto con el soporte técnico de Francia
 
@@ -35,10 +37,10 @@ Inglés: lunes a viernes de 9:00 a 17:00
 
 ### <a name="technical-support"></a>Soporte técnico:
 
-Francés: Mon-Fri 8 AM-9 PM
+Francés: Mon-Fri de 8:00 a.m. a 9 p. m.
 
 Inglés: 24 horas al día, 7 días a la semana
 
-Número Teléfono alternativa: 01 57 32 42 97
+Número de teléfono alternativo: 01 57 32 42 97
 
 Se aplican tarifas de llamada local

@@ -13,15 +13,17 @@ author: siosulli
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
-ms.collection: M365-security-compliance
+ms.collection:
+- m365-security
+- tier3
 ms.topic: article
 ms.subservice: mde
-ms.openlocfilehash: 645f9cbd39c9c5a26108f564d8b91cfd3086041e
-ms.sourcegitcommit: 228fa13973bf7c2d91504703fab757f552ae40dd
+ms.openlocfilehash: 2beb52d4d307bf9fab3e8f9e9857f82bb281e586
+ms.sourcegitcommit: 0b7070ec119e00e0dafe030bbfbef0ae5c9afa19
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/01/2022
-ms.locfileid: "67523344"
+ms.lasthandoff: 09/29/2022
+ms.locfileid: "68174916"
 ---
 # <a name="onboard-with-microsoft-defender-for-iot"></a>Incorporación con Microsoft Defender para IoT
 
@@ -47,7 +49,7 @@ La integración de Defender para IoT le ofrece una única vista unificada del in
 Para modificar la configuración de la integración de Defender para punto de conexión, el usuario debe tener los siguientes roles:
 
 - Administrador global de inquilinos en Azure Active Directory
-- Administrador de seguridad de la suscripción de Azure que se usará para la integración de Microsoft Defender para IoT
+- Administrador de seguridad de la suscripción de Azure que se usará para la Microsoft Defender para la integración de IoT
 
 ## <a name="onboard-a-defender-for-iot-plan"></a>Incorporación de un plan de Defender para IoT
 
@@ -88,7 +90,7 @@ Los clientes de Defender para punto de conexión también pueden configurar el s
 Para agregar un sensor de red, en el panel de navegación del [https://security.microsoft.com](https://security.microsoft.com/) portal:
 
 1. Seleccione **Configuración Detección** \> \> **de dispositivos** **Enterprise IoT**
-2. En **Configurar sensores de red** , elija el vínculo **De Microsoft Defender para IoT** .
+2. En **Configurar sensores de red**, elija el vínculo **Microsoft Defender para IoT**.
 
 Esto le lleva al proceso de configuración del sensor en el Azure Portal. Para obtener más información, consulte [Introducción a Enterprise IoT](/azure/defender-for-iot/organizations/tutorial-getting-started-eiot-sensor).
 

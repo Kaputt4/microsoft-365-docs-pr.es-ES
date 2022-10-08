@@ -17,18 +17,19 @@ ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection:
-- M365-security-compliance
+- m365-security
 - m365solution-scenario
 - m365solution-evalutatemtp
 - zerotrust-solution
 - highpri
+- tier1
 ms.topic: conceptual
-ms.openlocfilehash: 800410fe4faecde9a104242d5d4a1821ad8de86a
-ms.sourcegitcommit: 10e6abe740e27000e223378eb17d657a47555fa8
+ms.openlocfilehash: e549c9c080e420f0b9aaf9fb18ac6552d7385a7f
+ms.sourcegitcommit: 12af9e8e3a6eaa090fda9e98ccb831dff65863a4
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/31/2022
-ms.locfileid: "67482260"
+ms.lasthandoff: 09/27/2022
+ms.locfileid: "68059292"
 ---
 # <a name="enable-the-evaluation-environment-for-microsoft-defender-for-identity"></a>Habilitación del entorno de evaluación para Microsoft Defender for Identity
 
@@ -39,7 +40,7 @@ Este artículo es el [paso 2 del 2](eval-defender-identity-overview.md) en el pr
 
 Siga estos pasos para configurar el entorno de Microsoft Defender for Identity. 
 
-:::image type="content" source="../../media/defender/m365-defender-identity-eval-enable-steps.png" alt-text="Los pasos para habilitar Microsoft Defender for Identity en el entorno de evaluación de Microsoft Defender" lightbox="../../media/defender/m365-defender-identity-eval-enable-steps.png":::
+:::image type="content" source="../../media/defender/m365-defender-identity-eval-enable-steps.png" alt-text="Pasos para habilitar Microsoft Defender for Identity en el entorno de evaluación de Microsoft Defender" lightbox="../../media/defender/m365-defender-identity-eval-enable-steps.png":::
 
 - [Paso 1. Configuración de la instancia de Defender for Identity](#step-1-set-up-the-defender-for-identity-instance)
 - [Paso 2. Instalación y configuración del sensor](#step-2-install-and-configure-the-sensor)

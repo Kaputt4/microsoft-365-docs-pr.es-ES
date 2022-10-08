@@ -14,6 +14,7 @@ ms.custom:
 - Adm_O365
 - ms.lync.lac.ProviderManagedFeature
 - seo-marvel-apr2020
+ms.collection: scotvorg
 search.appverid:
 - MET150
 - MOE150
@@ -22,12 +23,12 @@ search.appverid:
 - BCS160
 ms.assetid: 4307bdbf-6097-458d-9a6a-048112695c59
 description: Como administrador, busque ayuda para configurar partes de Skype Empresarial Online, incluida la red, las reuniones y la mensajería instantánea, y el acceso externo para los usuarios.
-ms.openlocfilehash: 05fbf45bd54f0a8a1c1d19fdaf376885a1e306d9
-ms.sourcegitcommit: 437461fa1d38ff9bb95dd8a1c5f0b94e8111ada2
+ms.openlocfilehash: f9c325ea31a6fa54ee3be91a3d2e097742ec2031
+ms.sourcegitcommit: 0b7070ec119e00e0dafe030bbfbef0ae5c9afa19
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/14/2022
-ms.locfileid: "67669745"
+ms.lasthandoff: 09/29/2022
+ms.locfileid: "68179293"
 ---
 # <a name="skype-for-business-online-in-office-365---admin-help"></a>Skype Empresarial Online en Office 365 ayuda de administración
 
@@ -37,7 +38,7 @@ Como administrador de Office 365 para empresas, tiene acceso gratuito a nuestros
   
 ## <a name="let-your-users-contact-external-skype-or-skype-for-business-users"></a>Permitir que los usuarios se pongan en contacto con usuarios externos de Skype o de Skype Empresarial
 
-Puede permitir que los usuarios que usen Skype Empresarial se pongan en contacto con usuarios ajenos a su organización y que los agreguen a su lista de contactos de Skype Empresarial. Una vez que los hayan agregado a su lista de contactos, podrán ver si están conectados e intercambiar mensajería instantánea, mantener reuniones y compartir el escritorio con ellos. Para obtener instrucciones, consulte:
+You can let people who are using Skype for Business contact users from outside your organization and add them to their list of Skype for Business contacts. After they add them to their contact list, they can see if they are online and IM with them, hold meetings and share desktops. For instructions see:
   
 - [Permitir a los usuarios contactar con usuarios externos de Skype Empresarial](https://support.office.com/article/b414873a-0059-4cd5-aea1-e5d0857dbc94)
     
@@ -45,9 +46,9 @@ Puede permitir que los usuarios que usen Skype Empresarial se pongan en contacto
     
 ## <a name="improve-call-and-video-quality"></a>Mejorar la calidad de llamadas y vídeos
 
-¿Sus usuarios experimentan interrupciones de llamadas? ¿Es deficiente la calidad del uso compartido de audios, vídeos y aplicaciones? Skype Empresarial se ve considerablemente afectada por la calidad de la conectividad de red de un extremo a otro. Para obtener la mejor experiencia, es importante asegurarse de que hay una conexión de alta calidad entre la red de su compañía y Skype Empresarial Online. Para más información, vea **[Optimizar del rendimiento de Skype Empresarial Online](tune-skype-for-business-online-performance.md)**. 
+Are your users experiencing dropped calls? Is the quality of audio, video, and application sharing poor? Skype for Business is greatly impacted by the quality of end-to-end network connectivity. For the best experience, it is important to make sure there is a high-quality connection between your company network and Skype for Business Online. To learn more, see **[Tune Skype for Business Online performance](tune-skype-for-business-online-performance.md)**. 
   
-Vea también:
+Consulte también:
   
 - [Solucionar los problemas de conexión en Skype Empresarial](https://support.office.com/article/ca302828-783f-425c-bbe2-356348583771)
     

@@ -1,8 +1,7 @@
 ---
-title: Guía de implementación de Antivirus de Microsoft Defender Infraestructura de escritorio virtual
-description: Obtenga información sobre cómo implementar el Antivirus de Microsoft Defender en un entorno de escritorio virtual para obtener el mejor equilibrio entre la protección y el rendimiento.
+title: Guía de implementación Infraestructura de escritorio virtual antivirus de Microsoft Defender
+description: Obtenga información sobre cómo implementar Microsoft Defender Antivirus en un entorno de escritorio virtual para obtener el mejor equilibrio entre la protección y el rendimiento.
 keywords: vdi, hyper-v, vm, máquina virtual, Windows Defender, antivirus, av, escritorio virtual, rds, escritorio remoto
-ms.service: microsoft-365-security
 ms.mktglfcycl: manage
 ms.sitesec: library
 ms.localizationpriority: medium
@@ -13,14 +12,17 @@ ms.custom: nextgen
 ms.reviewer: jesquive
 manager: dansimp
 ms.subservice: mde
-ms.collection: m365-security-compliance
+ms.service: microsoft-365-security
+ms.collection:
+- m365-security
+- tier2
 search.appverid: met150
-ms.openlocfilehash: 55a66dc6a5de372e0ccec7320982fd0a7fc89a70
-ms.sourcegitcommit: 9b133379196da2b3a4bb311b07ff274f43780f68
+ms.openlocfilehash: 7fe1ca66ff803fa03ff6c97f8657152be5723ec6
+ms.sourcegitcommit: 0b7070ec119e00e0dafe030bbfbef0ae5c9afa19
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/14/2022
-ms.locfileid: "67693088"
+ms.lasthandoff: 09/29/2022
+ms.locfileid: "68180173"
 ---
 # <a name="deployment-guide-for-microsoft-defender-antivirus-in-a-virtual-desktop-infrastructure-vdi-environment"></a>Guía de implementación del Antivirus de Microsoft Defender en un entorno de infraestructura de escritorio virtual
 
@@ -32,7 +34,7 @@ ms.locfileid: "67693088"
 **Plataformas**
 - Windows
 
-Además de las configuraciones de hardware o locales estándar, puede usar el Antivirus de Microsoft Defender en un entorno de escritorio remoto (RDS) o de infraestructura de escritorio virtual (VDI) no persistente. Con la capacidad de implementar fácilmente actualizaciones en máquinas virtuales que se ejecutan en VDIs, puede obtener actualizaciones en las máquinas de forma rápida y sencilla. Ya no es necesario crear y sellar imágenes doradas periódicamente, ya que las actualizaciones se expanden en sus bits de componente en el servidor host y, a continuación, se descargan directamente en la máquina virtual cuando está activada.
+Además de las configuraciones locales o de hardware estándar, puede usar Microsoft Defender Antivirus en un entorno de escritorio remoto (RDS) o de infraestructura de escritorio virtual (VDI) no persistente. Con la capacidad de implementar fácilmente actualizaciones en máquinas virtuales que se ejecutan en VDIs, puede obtener actualizaciones en las máquinas de forma rápida y sencilla. Ya no es necesario crear y sellar imágenes doradas periódicamente, ya que las actualizaciones se expanden en sus bits de componente en el servidor host y, a continuación, se descargan directamente en la máquina virtual cuando está activada.
 
 En esta guía se describe cómo configurar las máquinas virtuales para una protección y un rendimiento óptimos, incluido cómo:
 
@@ -50,7 +52,7 @@ Para las máquinas virtuales basadas en Azure, consulte [Instalación de Endpoin
 
 > [!IMPORTANT]
 > Aunque la VDI se puede hospedar en Windows Server 2012 o Windows Server 2016, las máquinas virtuales (VM) deben ejecutarse Windows 10, 1607 como mínimo, debido al aumento de las tecnologías y características de protección que no están disponibles en versiones anteriores de Windows.
-> Hay mejoras de rendimiento y características en la forma en que Antivirus de Microsoft Defender funciona en máquinas virtuales en Windows 10 Insider Preview, compilación 18323 (y versiones posteriores). Identificaremos en esta guía si necesita usar una compilación de Insider Preview; Si no se especifica, la versión mínima necesaria para la mejor protección y rendimiento es Windows 10 1607.
+> Hay mejoras de rendimiento y características en la forma en que Microsoft Defender Antivirus funciona en máquinas virtuales en Windows 10 Insider Preview, compilación 18323 (y versiones posteriores). Identificaremos en esta guía si necesita usar una compilación de Insider Preview; Si no se especifica, la versión mínima necesaria para la mejor protección y rendimiento es Windows 10 1607.
 
 ## <a name="set-up-a-dedicated-vdi-file-share"></a>Configuración de un recurso compartido de archivos VDI dedicado
 
@@ -64,7 +66,7 @@ En Windows 10, versión 1903, se introdujo la característica de inteligencia de
 
 3. Haga clic en **Plantillas administrativas**.
 
-4. Expanda el árbol a **componentes** \> de Windows **Novedades de Inteligencia de seguridad** **del Antivirus** \> de Microsoft Defender.
+4. Expanda el árbol a **componentes** \> de Windows **Microsoft Defender Antivirus** \> **Security Intelligence Novedades**.
 
 5. Haga doble clic en **Definir ubicación de inteligencia de seguridad para clientes VDI** y, a continuación, establezca la opción **en Habilitado**. Aparece automáticamente un campo.
 
@@ -166,7 +168,7 @@ Si prefiere hacer todo manualmente, esto es lo que debe hacer para replicar el c
 
 Los exámenes programados se ejecutan además [de la protección y el examen en tiempo real](configure-real-time-protection-microsoft-defender-antivirus.md).
 
-La hora de inicio del examen en sí sigue basándose en la directiva de examen programada (**ScheduleDay**, **ScheduleTime** y **ScheduleQuickScanTime**). La aleatoriedad hará que Antivirus de Microsoft Defender inicie un examen en cada equipo dentro de un período de cuatro horas a partir del tiempo establecido para el examen programado.
+La hora de inicio del examen en sí sigue basándose en la directiva de examen programada (**ScheduleDay**, **ScheduleTime** y **ScheduleQuickScanTime**). La aleatoriedad hará que Microsoft Defender Antivirus inicie un examen en cada equipo dentro de un período de cuatro horas a partir del tiempo establecido para el examen programado.
 
 Consulte [Programación de exámenes](scheduled-catch-up-scans-microsoft-defender-antivirus.md) para ver otras opciones de configuración disponibles para los exámenes programados.
 
@@ -174,7 +176,7 @@ Consulte [Programación de exámenes](scheduled-catch-up-scans-microsoft-defende
 
 Puede especificar el tipo de examen que se debe realizar durante un examen programado. Los exámenes rápidos son el enfoque preferido, ya que están diseñados para buscar en todos los lugares donde el malware debe residir para estar activo. En el procedimiento siguiente se describe cómo configurar exámenes rápidos mediante directiva de grupo.
 
-1. En el Editor de directiva de grupo, vaya a **Plantillas** \> administrativas **Componentes** \> de Windows **Examen antivirus** \> de Microsoft Defender **.**
+1. En el Editor de directiva de grupo, vaya a **Plantillas** \> administrativas **Componentes** \> de Windows **Microsoft Defender Antivirus** \> **Scan**.
 
 2. Seleccione **Especificar el tipo de examen que se va a usar para un examen programado** y, a continuación, edite la configuración de directiva.
 
@@ -186,9 +188,9 @@ Puede especificar el tipo de examen que se debe realizar durante un examen progr
 
 ## <a name="prevent-notifications"></a>Impedir notificaciones
 
-A veces, las notificaciones del Antivirus de Microsoft Defender se pueden enviar a varias sesiones o conservarse en ellas. Para minimizar este problema, puede bloquear la interfaz de usuario del Antivirus de Microsoft Defender. En el procedimiento siguiente se describe cómo suprimir las notificaciones con directiva de grupo.
+En ocasiones, Microsoft Defender notificaciones antivirus pueden enviarse o conservarse en varias sesiones. Para minimizar este problema, puede bloquear la interfaz de usuario Microsoft Defender Antivirus. En el procedimiento siguiente se describe cómo suprimir las notificaciones con directiva de grupo.
 
-1. En el Editor de directiva de grupo, vaya a **Componentes** \> de Windows Interfaz **de cliente** antivirus \> de **Microsoft Defender**.
+1. En el Editor de directiva de grupo, vaya a **Componentes** \> de Windows Microsoft Defender **Interfaz de cliente** **antivirus**\>.
 
 2. Seleccione **Suprimir todas las notificaciones** y, a continuación, edite la configuración de la directiva.
 
@@ -196,7 +198,7 @@ A veces, las notificaciones del Antivirus de Microsoft Defender se pueden enviar
 
 4. Implemente el objeto de directiva de grupo como lo haría normalmente.
 
-La supresión de notificaciones impide que las notificaciones del Antivirus de Microsoft Defender aparezcan en el Centro de acciones en Windows 10 cuando se realizan exámenes o se realizan acciones de corrección. Sin embargo, el equipo de operaciones de seguridad verá los resultados del examen mientras se detectó y detuvo el ataque; las alertas, como una "alerta de acceso inicial", se desencadenan y aparecen en el [portal de Microsoft 365 Defender](/microsoft-365/security/defender/microsoft-365-defender).
+La supresión de notificaciones impide que las notificaciones de Microsoft Defender Antivirus aparezcan en el Centro de acciones en Windows 10 cuando se realizan exámenes o se realizan acciones de corrección. Sin embargo, el equipo de operaciones de seguridad verá los resultados del examen mientras se detectó y detuvo el ataque; las alertas, como una "alerta de acceso inicial", se desencadenan y aparecen en el [portal de Microsoft 365 Defender](/microsoft-365/security/defender/microsoft-365-defender).
 
 > [!TIP]
 > Para abrir el Centro de acciones en Windows 10 o Windows 11, realice uno de los pasos siguientes:
@@ -211,7 +213,7 @@ Deshabilitar un examen después de una actualización impedirá que se produzca 
 > [!IMPORTANT]
 > La ejecución de exámenes después de una actualización ayudará a garantizar que las máquinas virtuales estén protegidas con las últimas actualizaciones de Inteligencia de seguridad. Deshabilitar esta opción reducirá el nivel de protección de las máquinas virtuales y solo se debe usar al crear o implementar la imagen base por primera vez.
 
-1. En el Editor de directiva de grupo, vaya a **Componentes** \> de Windows **Antivirus de Microsoft Defender** \> **Security Intelligence Novedades**.
+1. En el Editor de directiva de grupo, vaya a **Componentes** \> de Windows **Microsoft Defender Antivirus** \> **Security Intelligence Novedades**.
 
 2. Seleccione **Activar examen después** de la actualización de inteligencia de seguridad y, a continuación, edite la configuración de directiva.
 
@@ -231,13 +233,13 @@ Use el siguiente cmdlet para detener un examen rápido o programado cada vez que
 Set-MpPreference -ScanOnlyIfIdleEnabled $false
 ```
 
-También puede deshabilitar la opción en Antivirus `ScanOnlyIfIdle` de Microsoft Defender mediante la configuración a través de la directiva local o de grupo de dominio. Esto evita la contención significativa de LA CPU en entornos de alta densidad.
+También puede deshabilitar la `ScanOnlyIfIdle` opción en Microsoft Defender Antivirus mediante la configuración a través de la directiva de grupo local o de dominio. Esto evita la contención significativa de LA CPU en entornos de alta densidad.
 
 Para obtener más información, vea [Iniciar el examen programado solo cuando el equipo está encendido, pero no en uso](https://admx.help/?Category=SystemCenterEndpointProtection&Policy=Microsoft.Policies.Antimalware::scan_scanonlyifidle).
 
 ## <a name="scan-vms-that-have-been-offline"></a>Examen de máquinas virtuales sin conexión
 
-1. En el Editor de directiva de grupo, vaya a **Componentes** \> de Windows **Examen antivirus** \> de Microsoft Defender **.**
+1. En el Editor de directiva de grupo, vaya a **Componentes** \> de Windows **Microsoft Defender Antivirus** \> **Scan**.
 
 2. Seleccione **Activar examen rápido de puesta al día** y, a continuación, edite la configuración de directiva.
 
@@ -251,7 +253,7 @@ Esta directiva fuerza un examen si la máquina virtual ha perdido dos o más ex�
 
 ## <a name="enable-headless-ui-mode"></a>Habilitación del modo de interfaz de usuario sin cabeza
 
-1. En el Editor de directiva de grupo, vaya a **Componentes** \> de Windows Interfaz **de cliente** antivirus \> de **Microsoft Defender**.
+1. En el Editor de directiva de grupo, vaya a **Componentes** \> de Windows Microsoft Defender **Interfaz de cliente** **antivirus**\>.
 
 2. Seleccione **Habilitar modo de interfaz de usuario sin cabeza** y edite la directiva.
 
@@ -261,13 +263,13 @@ Esta directiva fuerza un examen si la máquina virtual ha perdido dos o más ex�
 
 5. Implemente el objeto directiva de grupo como suele hacer.
 
-Esta directiva oculta toda la interfaz de usuario del Antivirus de Microsoft Defender a los usuarios finales de la organización.
+Esta directiva oculta toda la interfaz de usuario Microsoft Defender Antivirus a los usuarios finales de la organización.
 
 ## <a name="exclusions"></a>Exclusiones
 
 Las exclusiones se pueden agregar, quitar o personalizar para satisfacer sus necesidades.
 
-Para obtener más información, vea [Configurar exclusiones del Antivirus de Microsoft Defender en Windows Server](configure-exclusions-microsoft-defender-antivirus.md).
+Para obtener más información, vea [Configurar exclusiones de antivirus de Microsoft Defender en Windows Server](configure-exclusions-microsoft-defender-antivirus.md).
 
 > [!TIP]
 > Si busca información relacionada con el antivirus para otras plataformas, consulte:
@@ -281,6 +283,6 @@ Para obtener más información, vea [Configurar exclusiones del Antivirus de Mic
 
 ## <a name="additional-resources"></a>Recursos adicionales
 
-- [Blog de tech community: Configuración del Antivirus de Microsoft Defender para máquinas VDI no persistentes](https://techcommunity.microsoft.com/t5/microsoft-defender-for-endpoint/configuring-microsoft-defender-antivirus-for-non-persistent-vdi/ba-p/1489633)
+- [Blog de tech community: Configuración de Microsoft Defender Antivirus para máquinas VDI no persistentes](https://techcommunity.microsoft.com/t5/microsoft-defender-for-endpoint/configuring-microsoft-defender-antivirus-for-non-persistent-vdi/ba-p/1489633)
 - [Foros de TechNet en Servicios de Escritorio remoto y VDI](https://social.technet.microsoft.com/Forums/windowsserver/home?forum=winserverTS)
 - [Script de PowerShell SignatureDownloadCustomTask](https://www.powershellgallery.com/packages/SignatureDownloadCustomTask/1.4)
