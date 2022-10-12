@@ -10,15 +10,16 @@ ms.service: O365-seccomp
 ms.date: ''
 ms.localizationpriority: high
 ms.collection:
-- M365-security-compliance
+- purview-compliance
+- tier1
 ms.topic: article
 description: Active una configuración que permita la coautoría y el autoguardado en las aplicaciones de escritorio para documentos etiquetados y cifrados en SharePoint y OneDrive.
-ms.openlocfilehash: bc405ee52ba469b342c143ba720e0dc027a0addd
-ms.sourcegitcommit: 7374c7b013890744d74e5214f7f8d69ca7874466
+ms.openlocfilehash: ccff4f54a26ec02249a524eacaa1ac8edf52a0cf
+ms.sourcegitcommit: 4f8200453d347de677461f27eb5a3802ce5cc888
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/23/2022
-ms.locfileid: "67408383"
+ms.lasthandoff: 10/12/2022
+ms.locfileid: "68542571"
 ---
 # <a name="enable-co-authoring-for-files-encrypted-with-sensitivity-labels"></a>Habilitar la coautoría para archivos cifrados con etiquetas de confidencialidad
 
@@ -31,6 +32,8 @@ Sin esta configuración habilitada para su espacio empresarial, los usuarios deb
 Además, habilitar esta funcionalidad hace que la característica de [Autoguardado](https://support.office.com/article/what-is-autosave-6d6bd723-ebfd-4e40-b5f6-ae6e8088f7a5) sea compatible con estos archivos cifrados y etiquetados.
 
 Para leer el anuncio de lanzamiento, consulte la entrada de blog [La coautoría en documentos cifrados con Microsoft Information Protection ya está disponible con carácter general](https://techcommunity.microsoft.com/t5/security-compliance-and-identity/co-authoring-on-microsoft-information-protection-encrypted/ba-p/2693718).
+
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
 
 ## <a name="metadata-changes-for-sensitivity-labels"></a>Cambios de metadatos para etiquetas de confidencialidad
 
@@ -53,7 +56,7 @@ Puede obtener más información sobre este cambio de metadatos en los siguientes
 
 - Especificaciones abiertas: [2.6.3 Diferencias entre Labelinfo y Propiedades de documento personalizado](/openspecs/office_file_formats/ms-offcrypto/13939de6-c833-44ab-b213-e0088bf02341)
 
-Debido a estos cambios, no habilite este valor si tiene aplicaciones, servicios, scripts o herramientas en la organización que leen o escriben metadatos de etiquetado en la ubicación anterior. Si los tiene, aquí hay algunas consecuencias como ejemplo:
+Because of these changes, do not enable this setting if you have any apps, services, scripts, or tools in your organization that reads or writes labeling metadata to the old location. If you do, some example consequences:
 
 - Un documento con etiquetas se muestra a los usuarios como no etiquetado.
 
@@ -84,6 +87,7 @@ Asegúrese de entender los siguientes requisitos previos antes de activar esta c
     - **Cliente de etiquetado unificado de Azure Information Protection para Windows y escáner:**
         - Versión mínima [2.12.62.0](/information-protection/rms-client/unifiedlabelingclient-version-release-history#version-212620) que puede instalar desde el [Centro de descarga de Microsoft](https://www.microsoft.com/en-us/download/details.aspx?id=53018)
         - Para las aplicaciones de Office, requiere versiones mínimas enumeradas para Microsoft 365 Apps para empresas
+        - Además, no usa el [cifrado de doble clave](double-key-encryption.md) en el mismo inquilino.
     
     - **Aplicación de Sincronización de Microsoft OneDrive para Windows o macOS:**
         - Versión mínima de 19.002.0121.0008
@@ -97,7 +101,7 @@ Asegúrese de entender los siguientes requisitos previos antes de activar esta c
     - **Aplicaciones y servicios que usan el SDK de Microsoft Information Protection:** 
         - Versión mínima de 1.7 
 
-Los servicios de Microsoft 365 admiten automáticamente los nuevos metadatos de etiquetado cuando habilita esta característica. Por ejemplo:
+Microsoft 365 services automatically support the new labeling metadata when you turn on this feature. For example:
 
 - [Directivas de etiquetado automático](apply-sensitivity-label-automatically.md#how-to-configure-auto-labeling-policies-for-sharepoint-onedrive-and-exchange)
 - [Directivas DLP que usan etiquetas de confidencialidad como condiciones](dlp-sensitivity-label-as-condition.md)
@@ -111,10 +115,9 @@ Antes de habilitar la configuración de espacio empresarial para la coautoría d
     
     Específico de Excel: Los metadatos para una etiqueta de confidencialidad que no aplica cifrado pueden eliminarse de un archivo si alguien edita y guarda el archivo con una versión de Excel que no admite los cambios de metadatos de etiquetado para etiquetas de confidencialidad.
 
-- La coautoría y el autoguardado no son compatibles y no funcionan en documentos de Office etiquetados y cifrados que usan cualquiera de las siguientes [configuraciones para el cifrado](encryption-sensitivity-labels.md#configure-encryption-settings):
-    - **Permitir a los usuarios asignar permisos cuando aplican la etiqueta** y la casilla **En Word, PowerPoint y Excel, pedir a los usuarios que especifiquen los permisos** está seleccionada. Esta configuración se denomina a veces "permisos definidos por el usuario".
+- La coautoría y autoguardado no se admiten y no funcionan para documentos de Office etiquetados y cifrados que usan cualquiera de las [siguientes configuraciones para el cifrado](encryption-sensitivity-labels.md#configure-encryption-settings):
+    - **Let users assign permissions when they apply the label** and the checkbox **In Word, PowerPoint, and Excel, prompt users to specify permissions** is selected. This configuration is sometimes referred to as "user-defined permissions".
     - **El acceso del usuario al contenido expira** establecido en un valor distinto de **Nunca**.
-    - **Cifrado de clave doble** seleccionado.
     
     Para las etiquetas con cualquiera de estas configuraciones de cifrado, las etiquetas se muestran en las aplicaciones de Office. Sin embargo, cuando los usuarios seleccionan estas etiquetas y nadie más está editando el documento, se les advierte de que la coautoría y el Autoguardado no estarán disponibles. Si alguien más está editando el documento, los usuarios verán un mensaje que indica que no se pueden aplicar las etiquetas.
 
@@ -125,7 +128,7 @@ Antes de habilitar la configuración de espacio empresarial para la coautoría d
 ## <a name="how-to-enable-co-authoring-for-files-with-sensitivity-labels"></a>Cómo habilitar la coautoría en archivos con etiquetas de confidencialidad
 
 > [!CAUTION]
-> Habilitar este valor es una acción unidireccional. Habilítela solo después de haber leído y comprendido los cambios de metadatos, los requisitos previos, las limitaciones y cualquier problema conocido documentado en esta página.
+> Turning on this setting is a one-way action. Enable it only after you have read and understood the metadata changes, prerequisites, limitations, and any known issues documented on this page.
 
 1. Inicie sesión en el [Portal de cumplimiento de Microsoft Purview](https://compliance.microsoft.com) como administrador global de su espacio empresarial.
 

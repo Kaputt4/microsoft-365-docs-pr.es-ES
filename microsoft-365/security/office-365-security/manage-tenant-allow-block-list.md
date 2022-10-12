@@ -17,12 +17,12 @@ ms.custom: ''
 description: Obtenga información sobre cómo administrar los bloques y los permitidos en la lista de permitidos o bloqueados de inquilinos en el portal de seguridad.
 ms.subservice: mdo
 ms.service: microsoft-365-security
-ms.openlocfilehash: 5d26a013199156b5aeff9ca21dcbebea5c64ebbf
-ms.sourcegitcommit: 12af9e8e3a6eaa090fda9e98ccb831dff65863a4
+ms.openlocfilehash: e46cabba3e2d0f765937a8ff34bbcea918204974
+ms.sourcegitcommit: 4f8200453d347de677461f27eb5a3802ce5cc888
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/27/2022
-ms.locfileid: "68092432"
+ms.lasthandoff: 10/12/2022
+ms.locfileid: "68542483"
 ---
 # <a name="manage-your-allows-and-blocks-in-the-tenant-allowblock-list"></a>Administrar los bloques y los permitidos en la lista de permitidos o bloqueados de inquilinos
 
@@ -57,7 +57,7 @@ Use el portal envíos (también conocido como *envío de administrador*) en <htt
 
 - **Archivos**: Email mensajes que contienen estos archivos bloqueados se bloquean como *malware*.
 
-- **Direcciones URL**: Email mensajes que contienen estas direcciones URL bloqueadas se bloquean como *suplantación de identidad de alta confianza*.
+- **Direcciones URL**: Email mensajes que contienen estas direcciones URL bloqueadas se bloquean como *suplantación de identidad de alta confianza*. Los mensajes que contienen las direcciones URL bloqueadas se ponen en cuarentena.
 
 En la Lista de permitidos o bloqueados de inquilinos, también puede crear directamente entradas de bloque para los siguientes tipos de elementos:
 

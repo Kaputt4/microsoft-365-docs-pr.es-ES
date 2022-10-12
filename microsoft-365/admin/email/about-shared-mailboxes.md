@@ -24,12 +24,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Los buzones compartidos se usan cuando varias personas necesitan acceder al mismo buzón. Obtenga información sobre lo que debe saber antes de crear un buzón compartido.
-ms.openlocfilehash: d7d4bf06fa9e91bca7a3847a9db99aee0a6ca97f
-ms.sourcegitcommit: 0b7070ec119e00e0dafe030bbfbef0ae5c9afa19
+ms.openlocfilehash: 9c34cf0658f9028a14d8fa37380b7df812089495
+ms.sourcegitcommit: 4f8200453d347de677461f27eb5a3802ce5cc888
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/29/2022
-ms.locfileid: "68204967"
+ms.lasthandoff: 10/12/2022
+ms.locfileid: "68542527"
 ---
 # <a name="about-shared-mailboxes"></a>Acerca de los buzones compartidos
 
@@ -67,7 +67,7 @@ Antes de [crear un buzón compartido](create-a-shared-mailbox.md), estas son alg
 
 
 > [!NOTE]
-> Para acceder a un buzón de correo compartido, el usuario debe tener una licencia de Exchange Online, aunque el buzón de correo compartido no requiere ninguna licencia independiente. Cada buzón compartido tiene una cuenta de usuario correspondiente. ¿Ha notado que no se le pidió que proporcionase una contraseña cuando creó el buzón de correo compartido? La cuenta tiene una contraseña, pero se ha generado por el sistema (desconocida). No debe usar la cuenta para iniciar sesión en el buzón compartido. Sin una licencia, los buzones compartidos están limitados a 50 GB. Para aumentar el límite de tamaño a 100 GB, el buzón compartido debe tener asignada una licencia de Exchange Online Plan 2. La licencia de Exchange Online Plan 1 con una licencia de complemento de Archivado de Exchange Online solo aumentará el tamaño del buzón de archivo. Esto también le permitirá habilitar el archivo de expansión automática para una capacidad de almacenamiento de archivos adicional. Del mismo modo, si desea colocar un buzón compartido en retención por litigio, el buzón compartido debe tener una licencia de Exchange Online Plan 2 o una licencia de Exchange Online Plan 1 con una licencia complementaria de Exchange Online Archiving. Si desea aplicar funciones avanzadas como Microsoft Defender para Office 365, eDiscovery (Premium) o directivas de retención automática, el buzón de correo compartido debe tener licencia para esas características.
+> Para acceder a un buzón de correo compartido, el usuario debe tener una licencia de Exchange Online, aunque el buzón de correo compartido no requiere ninguna licencia independiente. Cada buzón compartido tiene una cuenta de usuario correspondiente. ¿Ha notado que no se le pidió que proporcionase una contraseña cuando creó el buzón de correo compartido? La cuenta tiene una contraseña, pero se ha generado por el sistema (desconocida). No debe usar la cuenta para iniciar sesión en el buzón compartido. Sin una licencia, los buzones compartidos están limitados a 50 GB. Para aumentar el límite de tamaño a 100 GB, el buzón compartido debe tener asignada una licencia de Exchange Online Plan 2. La licencia de Exchange Online Plan 1 con una licencia de complemento de Archivado de Exchange Online solo aumentará el tamaño del buzón de archivo. Esto también le permitirá habilitar el archivo de expansión automática para una capacidad de almacenamiento de archivos adicional. Del mismo modo, si desea colocar un buzón compartido en retención por litigio, el buzón compartido debe tener una licencia de Exchange Online Plan 2 o una licencia de Exchange Online Plan 1 con una licencia complementaria de Exchange Online Archiving. Si desea aplicar características avanzadas como Microsoft Defender para Office 365, eDiscovery (Premium) o directivas de retención, el buzón compartido debe tener licencia para esas características.
 
 > [!NOTE]
 > Antes de julio de 2018, todos los buzones compartidos sin licencia se aprovisionaban con un tamaño de 100 GB. Para obtener más información, vea [Corregir el aprovisionamiento y el tamaño del buzón compartido](https://techcommunity.microsoft.com/t5/exchange-team-blog/correcting-shared-mailbox-provisioning-and-sizing/ba-p/607991).
