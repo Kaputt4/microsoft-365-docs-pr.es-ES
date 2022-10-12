@@ -1,5 +1,5 @@
 ---
-title: Introducción a la comprensión de documentos en Microsoft SharePoint Syntex
+title: Introducción a la comprensión de documentos en Microsoft Syntex
 ms.author: chucked
 author: chuckedmonson
 manager: pamgreen
@@ -13,15 +13,15 @@ ms.collection:
 - enabler-strategic
 - m365initiative-syntex
 ms.localizationpriority: medium
-description: Obtenga información sobre la comprensión de documentos en Microsoft SharePoint Syntex.
-ms.openlocfilehash: 345ca5aea2e575c7d893ff225e8d8ec06b9e847d
-ms.sourcegitcommit: 99b174a8d431092b3cf7d650593248671297fd91
+description: Obtenga información sobre la comprensión de documentos en Microsoft Syntex.
+ms.openlocfilehash: d6b374d55840a53f1d78c22f69deebdbb5d89958
+ms.sourcegitcommit: ca082da1c51a3f643f152492579eef5679d52bd0
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/30/2022
-ms.locfileid: "68300286"
+ms.lasthandoff: 10/12/2022
+ms.locfileid: "68547651"
 ---
-# <a name="document-understanding-overview-in-microsoft-sharepoint-syntex"></a>Introducción a la comprensión de documentos en Microsoft SharePoint Syntex
+# <a name="document-understanding-overview-in-microsoft-syntex"></a>Introducción a la comprensión de documentos en Microsoft Syntex
 
 
 </br>
@@ -33,7 +33,7 @@ ms.locfileid: "68300286"
 La comprensión de documentos usa modelos de inteligencia artificial (IA) para automatizar la clasificación de archivos y extraer la información. Funciona mejor con documentos sin estructura, como cartas o contratos. Estos documentos deben tener texto que pueda identificarse en función de frases o patrones. El texto identificado designa tanto el tipo de archivo (su clasificación) como lo que le gustaría extraer (sus extractores).
 
 > [!NOTE]
-> Consulte [Adopción de SharePoint Syntex: Guía de introducción](./adoption-getstarted.md) para obtener más información sobre ejemplos de escenarios de comprensión mediante documentos.
+> Consulte la [guía De adopción de Syntex: Introducción](./adoption-getstarted.md) para obtener más información sobre los ejemplos de escenarios de comprensión de documentos.
 
 Los modelos de comprensión mediante documentos se crean y se administran en un tipo de sitio de SharePoint denominado *centro de contenido*. Cuando se aplica a una biblioteca de documentos de SharePoint, el modelo está asociado a un tipo de contenido que tiene columnas para almacenar la información que se va a extraer. El tipo de contenido que cree se almacena en la galería de tipo de contenido de SharePoint. También puede optar por usar tipos de contenido existentes para usar su esquema.
 
@@ -134,4 +134,4 @@ Los modelos de comprensión de documentos admiten *todos los* idiomas basados en
   
 [Información general del procesamiento de formularios](form-processing-overview.md)
 
-[Modo de accesibilidad de SharePoint Syntex](accessibility-mode.md)
+[Modo de accesibilidad de Syntex](accessibility-mode.md)

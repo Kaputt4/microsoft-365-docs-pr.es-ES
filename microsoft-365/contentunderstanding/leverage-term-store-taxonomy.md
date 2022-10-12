@@ -1,5 +1,5 @@
 ---
-title: Aprovechar la taxonomía del almacén de términos al crear un extractor en Microsoft SharePoint Syntex
+title: Aprovechar la taxonomía del almacén de términos al crear un extractor en Microsoft Syntex
 ms.author: chucked
 author: chuckedmonson
 manager: pamgreen
@@ -13,15 +13,15 @@ ms.collection:
 - m365initiative-syntex
 ms.custom: admindeeplinkSPO
 ms.localizationpriority: medium
-description: Use la taxonomía del almacén de términos al crear un extractor en el modelo de comprensión de documentos en Microsoft SharePoint Syntex.
-ms.openlocfilehash: 551acd46d2ccf8336bbdf6b6fda7e7cb448dd66c
-ms.sourcegitcommit: d3ef9391f621e8f4ca70661184b3bb82c6cbda94
+description: Use la taxonomía del almacén de términos al crear un extractor en el modelo de comprensión de documentos en Microsoft Syntex.
+ms.openlocfilehash: f36d8a1f398031103ec308e89b8587eebfcaacdf
+ms.sourcegitcommit: ca082da1c51a3f643f152492579eef5679d52bd0
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/02/2022
-ms.locfileid: "67579278"
+ms.lasthandoff: 10/12/2022
+ms.locfileid: "68547738"
 ---
-# <a name="leverage-term-store-taxonomy-when-creating-an-extractor-in-microsoft-sharepoint-syntex"></a>Aprovechar la taxonomía del almacén de términos al crear un extractor en Microsoft SharePoint Syntex
+# <a name="leverage-term-store-taxonomy-when-creating-an-extractor-in-microsoft-syntex"></a>Aprovechar la taxonomía del almacén de términos al crear un extractor en Microsoft Syntex
 
 </br>
 
@@ -29,7 +29,7 @@ ms.locfileid: "67579278"
 
 </br>
 
-Cuando se crea un extractor en el modelo de comprensión de documentos en SharePoint Syntex, puede aprovechar los conjuntos de términos globales en el [almacén de términos](/sharepoint/managed-metadata) para mostrar los términos preferidos para los datos que extraiga.  
+Al crear un extractor en el modelo de comprensión de documentos mediante Microsoft Syntex, puede aprovechar los conjuntos de términos globales del [almacén de términos](/sharepoint/managed-metadata) para mostrar los términos preferidos para los datos que extrae.  
 
 Por ejemplo, el modelo identifica y clasifica todos los documentos de **Contrato** cargados en la biblioteca de documentos.  Además, el modelo también extrae un valor de **Servicio de contrato** de cada contrato, y lo mostrará en una columna de la vista de la biblioteca. Entre los distintos valores de Servicios de contrato en los contratos, hay varios valores anteriores que la empresa ya no usa y a los que se les ha cambiado el nombre. Por ejemplo, todas las referencias a los términos de los servicios de contratos *Diseño*, *Gráficos* o *Topografía* ahora deberían llamarse *Creativo*. Siempre que el modelo extrae uno de los términos desactualizado de un documento de contrato, quiere que muestre el término actual, "Creativo", en la vista de la biblioteca. En el ejemplo siguiente, al entrenar el modelo, observamos que un documento de muestra contiene el término desactualizado de *Diseño*.
 

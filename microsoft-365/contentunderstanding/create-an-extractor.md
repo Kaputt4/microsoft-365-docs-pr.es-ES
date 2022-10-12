@@ -1,5 +1,5 @@
 ---
-title: Crear un extractor en Microsoft SharePoint Syntex
+title: Creación de un extractor en Microsoft Syntex
 ms.author: chucked
 author: chuckedmonson
 manager: pamgreen
@@ -12,15 +12,15 @@ ms.collection:
 - enabler-strategic
 - m365initiative-syntex
 ms.localizationpriority: medium
-description: Obtener información sobre cómo crear un extractor en Microsoft SharePoint Syntex.
-ms.openlocfilehash: e80100c7a1f5614c3057188a630ae81182e87f7c
-ms.sourcegitcommit: cbb9a89499d42f4a029e18780bee408946e1671d
+description: Obtenga información sobre cómo crear un extractor en Microsoft Syntex.
+ms.openlocfilehash: b47633d7e9489da46e82bb9f7b3699c65b663a08
+ms.sourcegitcommit: ca082da1c51a3f643f152492579eef5679d52bd0
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/27/2022
-ms.locfileid: "68026543"
+ms.lasthandoff: 10/12/2022
+ms.locfileid: "68547607"
 ---
-# <a name="create-an-extractor-in-microsoft-sharepoint-syntex"></a>Crear un extractor en Microsoft SharePoint Syntex
+# <a name="create-an-extractor-in-microsoft-syntex"></a>Creación de un extractor en Microsoft Syntex
 
 
 <br/>
@@ -190,4 +190,4 @@ Si tiene entidades duplicadas y desea extraer solo un valor o un determinado nú
 
 [Aplicar un modelo](apply-a-model.md)
 
-[Modo de accesibilidad de SharePoint Syntex](accessibility-mode.md)
+[Modo de accesibilidad de Syntex](accessibility-mode.md)

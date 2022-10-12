@@ -1,5 +1,5 @@
 ---
-title: Modo de accesibilidad en Microsoft SharePoint Syntex
+title: Modo de accesibilidad en Microsoft Syntex
 ms.author: chucked
 author: chuckedmonson
 manager: pamgreen
@@ -12,17 +12,17 @@ ms.collection:
 - enabler-strategic
 - m365initiative-syntex
 ms.localizationpriority: medium
-description: Aprenda a usar el modo de características de accesibilidad al entrenar y trabajar con modelos en SharePoint Syntex.
-ms.openlocfilehash: 1355e48b42ab74c9d03f5b2944f3a7d146b4dd18
-ms.sourcegitcommit: cbb9a89499d42f4a029e18780bee408946e1671d
+description: Aprenda a usar el modo de características de accesibilidad al entrenar y trabajar con modelos en Microsoft Syntex.
+ms.openlocfilehash: b3571118fe409e04140f9e45cb77e43ea7e45aca
+ms.sourcegitcommit: ca082da1c51a3f643f152492579eef5679d52bd0
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/27/2022
-ms.locfileid: "68026455"
+ms.lasthandoff: 10/12/2022
+ms.locfileid: "68547388"
 ---
-# <a name="accessibility-mode-in-microsoft-sharepoint-syntex"></a>Modo de accesibilidad en Microsoft SharePoint Syntex
+# <a name="accessibility-mode-in-microsoft-syntex"></a>Modo de accesibilidad en Microsoft Syntex
 
-En [SharePoint Syntex](index.md), los usuarios pueden activar el modo de accesibilidad en todas las fases del entrenamiento del modelo (etiqueta, entrenamiento, prueba) al trabajar con documentos de ejemplo. El uso del modo de accesibilidad puede ayudar a los usuarios con poca vista a tener una accesibilidad de teclado más sencilla a medida que navegan y etiquetan elementos en el visor de documentos.
+En [Microsoft Syntex](index.md), los usuarios pueden activar el modo de accesibilidad en todas las fases del entrenamiento del modelo (etiqueta, entrenamiento, prueba) al trabajar con documentos de ejemplo. El uso del modo de accesibilidad puede ayudar a los usuarios con poca vista a tener una accesibilidad de teclado más sencilla a medida que navegan y etiquetan elementos en el visor de documentos.
 
 Esto ayuda a los usuarios a usar sus teclados para navegar por el texto del visor de documentos y escuchar una narración no solo de los valores seleccionados, sino también de acciones (como etiquetar o quitar el etiquetado del texto seleccionado) o valores de etiqueta predichos a medida que entrena el modelo con documentos de ejemplo adicionales. 
 

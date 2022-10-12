@@ -1,5 +1,5 @@
 ---
-title: Puede aplicar fácilmente una etiqueta de retención a un modelo en SharePoint Syntex.
+title: Aplicación de una etiqueta de retención a un modelo en Microsoft Syntex
 ms.author: chucked
 author: chuckedmonson
 manager: pamgreen
@@ -12,15 +12,15 @@ ms.collection:
 - enabler-strategic
 - m365initiative-syntex
 ms.localizationpriority: medium
-description: Obtenga información sobre cómo aplicar una etiqueta de retención a un modelo en SharePoint Syntex.
-ms.openlocfilehash: 2176826634b1f682f86989d418b251f9706100ed
-ms.sourcegitcommit: d3ef9391f621e8f4ca70661184b3bb82c6cbda94
+description: Obtenga información sobre cómo aplicar una etiqueta de retención a un modelo en Microsoft Syntex.
+ms.openlocfilehash: 9ae81daccf6373d6e876935488edc354e3779bee
+ms.sourcegitcommit: ca082da1c51a3f643f152492579eef5679d52bd0
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/02/2022
-ms.locfileid: "67585672"
+ms.lasthandoff: 10/12/2022
+ms.locfileid: "68547980"
 ---
-# <a name="apply-a-retention-label-to-a-model-in-sharepoint-syntex"></a>Puede aplicar fácilmente una etiqueta de retención a un modelo en SharePoint Syntex.
+# <a name="apply-a-retention-label-to-a-model-in-microsoft-syntex"></a>Aplicación de una etiqueta de retención a un modelo en Microsoft Syntex
 
 </br>
 
@@ -28,7 +28,7 @@ ms.locfileid: "67585672"
 
 </br>
 
-Puede aplicar fácilmente una [etiqueta de retención](../compliance/retention.md) a un modelo en Microsoft SharePoint Syntex. Puede hacerlo tanto para modelos de comprensión de documentos como para modelos de procesamiento de formularios
+Puede aplicar fácilmente una [etiqueta de retención](../compliance/retention.md) a un modelo en Microsoft Syntex. Puede hacerlo tanto para modelos de comprensión de documentos como para modelos de procesamiento de formularios
 
 Las etiquetas de retención le permiten aplicar la configuración de retención a los documentos que identifican sus modelos.  Por ejemplo, si desea que el modelo no solo identifique cualquier documento de *Notificación de seguros* cargados en la biblioteca de documentos, sino que también pueda aplicar una etiqueta de retención de *negocios* para que estos documentos no se puedan eliminar de la biblioteca de documentos durante el período de tiempo especificado (por ejemplo, los próximos cinco meses).
 

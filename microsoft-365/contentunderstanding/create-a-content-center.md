@@ -1,5 +1,5 @@
 ---
-title: Crear un centro de contenido en Microsoft SharePoint Syntex
+title: Creación de un centro de contenido en Microsoft Syntex
 ms.author: chucked
 author: chuckedmonson
 manager: pamgreen
@@ -13,15 +13,15 @@ ms.collection:
 - enabler-strategic
 - m365initiative-syntex
 ms.localizationpriority: medium
-description: Crear un centro de contenido en Microsoft SharePoint Syntex
-ms.openlocfilehash: b0151ad464a84e06cc613c9baf06db03a831ceae
-ms.sourcegitcommit: d3ef9391f621e8f4ca70661184b3bb82c6cbda94
+description: Obtenga información sobre cómo crear un centro de contenido en Microsoft Syntex.
+ms.openlocfilehash: 392203db0de4aa5f13761a1bc15947862c1f1fce
+ms.sourcegitcommit: ca082da1c51a3f643f152492579eef5679d52bd0
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/02/2022
-ms.locfileid: "67583228"
+ms.lasthandoff: 10/12/2022
+ms.locfileid: "68547936"
 ---
-# <a name="create-a-content-center-in-microsoft-sharepoint-syntex"></a>Crear un centro de contenido en Microsoft SharePoint Syntex
+# <a name="create-a-content-center-in-microsoft-syntex"></a>Creación de un centro de contenido en Microsoft Syntex
 
 
 </br>
@@ -36,7 +36,7 @@ Para crear y administrar modelos de comprensión de documentos, primero necesita
 
 Puede crear un centro de contenido predeterminado durante la [configuración](set-up-content-understanding.md). Sin embargo, un administrador de SharePoint también puede optar por crear centros adicionales según sea necesario. Si bien un solo centro de contenido puede ser adecuado para entornos para los que desea un resumen de toda la actividad del modelo, es posible que desee tener centros adicionales para varios departamentos dentro de su organización, que pueden tener diferentes necesidades y requisitos de permisos para sus modelos.
 
-Además, si desea probar SharePoint Syntex, puede crear un centro de contenido siguiendo las instrucciones de este artículo sin comprar licencias. Los usuarios sin licencia pueden crear modelos de comprensión de documentos, pero no pueden aplicarlos a una biblioteca de documentos.
+Además, si quiere probar Syntex, puede crear un centro de contenido con las instrucciones de este artículo sin comprar licencias. Los usuarios sin licencia pueden crear modelos de comprensión de documentos, pero no pueden aplicarlos a una biblioteca de documentos.
 
 > [!NOTE]
 > En un [entorno de Microsoft 365 Multi-Geo](../enterprise/microsoft-365-multi-geo.md), si tiene un único centro de contenido predeterminado en su ubicación central, solo puede proporcionar una implementación de la actividad del modelo desde esa ubicación. Actualmente no puede obtener una implementación de la actividad del modelo fuera de los límites de la granja de servidores en entorno Multi-Geo. 
@@ -68,7 +68,7 @@ Después de crear el sitio, puede conceder acceso a usuarios adicionales al siti
 
 ### <a name="roll-up-of-models-in-the-default-content-center"></a>Acumulación de modelos en el centro de contenido predeterminado
 
-En SharePoint Syntex, el primer centro de contenido creado durante la instalación es el *centro de contenido predeterminado*. Si se crean centros de contenido posteriores, sus modelos se muestran en la vista del centro de contenido predeterminada.
+En Syntex, el primer centro de contenido creado durante la instalación es el *centro de contenido predeterminado*. Si se crean centros de contenido posteriores, sus modelos se muestran en la vista del centro de contenido predeterminada.
 
 ![Captura de pantalla de la biblioteca de modelos en el centro de contenido predeterminado.](../media/content-understanding/model-library-default-content-center.png)
 

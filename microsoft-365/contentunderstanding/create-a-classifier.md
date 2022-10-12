@@ -1,5 +1,5 @@
 ---
-title: Crear un clasificador en Microsoft SharePoint Syntex
+title: Creación de un clasificador en Microsoft Syntex
 ms.author: chucked
 author: chuckedmonson
 manager: pamgreen
@@ -13,15 +13,15 @@ ms.collection:
 - m365initiative-syntex
 ms.custom: admindeeplinkSPO
 ms.localizationpriority: medium
-description: Aprenda cómo crear un clasificador en Microsoft SharePoint Syntex
-ms.openlocfilehash: 6069f22466372b09b744056218827119b6a73f34
-ms.sourcegitcommit: d3ef9391f621e8f4ca70661184b3bb82c6cbda94
+description: Obtenga información sobre cómo crear un clasificador en Microsoft Syntex.
+ms.openlocfilehash: 9b8f78ed01a6fc366f7f84d85d7202c8cdb99b31
+ms.sourcegitcommit: ca082da1c51a3f643f152492579eef5679d52bd0
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/02/2022
-ms.locfileid: "67583855"
+ms.lasthandoff: 10/12/2022
+ms.locfileid: "68547782"
 ---
-# <a name="create-a-classifier-in-microsoft-sharepoint-syntex"></a>Crear un clasificador en Microsoft SharePoint Syntex
+# <a name="create-a-classifier-in-microsoft-syntex"></a>Creación de un clasificador en Microsoft Syntex
 
 
 </br>
@@ -156,4 +156,4 @@ Si recibe una coincidencia en sus archivos de muestra etiquetados, ahora puede p
 
 [Aplicar un modelo](apply-a-model.md) 
 
-[Modo de accesibilidad de SharePoint Syntex](accessibility-mode.md)
+[Modo de accesibilidad de Syntex](accessibility-mode.md)

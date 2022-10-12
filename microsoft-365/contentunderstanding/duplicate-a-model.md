@@ -1,26 +1,26 @@
 ---
-title: Duplicar un modelo en Microsoft SharePoint Syntex
+title: Duplicar un modelo en Microsoft Syntex
 ms.author: chucked
 author: chuckedmonson
 manager: pamgreen
 audience: admin
 ms.reviewer: ssquires
 ms.topic: article
-ms.prod: microsoft-365-enterprise
+ms.service: microsoft-365-enterprise
 search.appverid: ''
 ms.collection:
 - enabler-strategic
 - m365initiative-syntex
 ms.localizationpriority: medium
-description: Obtenga información sobre cómo y por qué duplicar un modelo de comprensión de documentos en Microsoft SharePoint Syntex.
-ms.openlocfilehash: 56e05389cad4ad9010324a3efd48bf679700be76
-ms.sourcegitcommit: 23e186b46b27a6a4863f507a52a11105afae9726
+description: Obtenga información sobre cómo y por qué duplicar un modelo de comprensión de documentos en Microsoft Syntex.
+ms.openlocfilehash: 4cacd968082bb875e9b9bfdfd1df13d87dba3cb6
+ms.sourcegitcommit: ca082da1c51a3f643f152492579eef5679d52bd0
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/15/2022
-ms.locfileid: "64882250"
+ms.lasthandoff: 10/12/2022
+ms.locfileid: "68547870"
 ---
-# <a name="duplicate-a-model-in-microsoft-sharepoint-syntex"></a>Duplicar un modelo en Microsoft SharePoint Syntex
+# <a name="duplicate-a-model-in-microsoft-syntex"></a>Duplicar un modelo en Microsoft Syntex
 
 Duplicar un modelo de compresión mediante documentos puede ahorrarle tiempo y esfuerzo si necesita crear un modelo nuevo y saber si un modelo existente es muy similar a lo que necesita.
 
@@ -52,7 +52,7 @@ Siga estos pasos para duplicar un modelo de comprensión mediante documentos.
 
 5. Seleccione **Duplicar**.
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 [Crear un clasificador](create-a-classifier.md)
 
@@ -66,4 +66,4 @@ Siga estos pasos para duplicar un modelo de comprensión mediante documentos.
 
 [Aplicar un modelo](apply-a-model.md) 
 
-[Modo de accesibilidad de SharePoint Syntex](accessibility-mode.md)
+[Modo de accesibilidad de Syntex](accessibility-mode.md)

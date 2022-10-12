@@ -1,5 +1,5 @@
 ---
-title: Eliminación de un modelo en Microsoft SharePoint Syntex
+title: Eliminación de un modelo en Microsoft Syntex
 ms.author: chucked
 author: chuckedmonson
 manager: pamgreen
@@ -12,15 +12,15 @@ ms.collection:
 - enabler-strategic
 - m365initiative-syntex
 ms.localizationpriority: medium
-description: Obtenga información sobre cómo eliminar un modelo de comprensión de documentos en Microsoft SharePoint Syntex.
-ms.openlocfilehash: 66360c99f1316dfdc046d3fed971b11d53b97326
-ms.sourcegitcommit: e9323a90a1156c10b037abca3e16d7367ef92dd7
+description: Obtenga información sobre cómo eliminar un modelo de comprensión de documentos en Microsoft Syntex.
+ms.openlocfilehash: 776cdadafc5fffe0cea42a2cf99ac229b0e38c74
+ms.sourcegitcommit: ca082da1c51a3f643f152492579eef5679d52bd0
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/02/2022
-ms.locfileid: "67570213"
+ms.lasthandoff: 10/12/2022
+ms.locfileid: "68547453"
 ---
-# <a name="delete-a-model-in-microsoft-sharepoint-syntex"></a>Eliminación de un modelo en Microsoft SharePoint Syntex
+# <a name="delete-a-model-in-microsoft-syntex"></a>Eliminación de un modelo en Microsoft Syntex
 
 En algún momento, es posible que desee eliminar un modelo de comprensión de documentos o un modelo precompilado. Antes de eliminar el modelo, primero debe quitarlo de todas las bibliotecas de documentos de SharePoint donde se ha aplicado.
 

@@ -1,11 +1,11 @@
 ---
-title: Etiquetado de imágenes en SharePoint Syntex
+title: Etiquetado de imágenes en Microsoft Syntex
 ms.author: mikeplum
 author: MikePlumleyMSFT
 manager: serdars
 audience: admin
 ms.topic: article
-ms.prod: microsoft-365-enterprise
+ms.service: microsoft-365-enterprise
 ms.custom: admindeeplinkMAC
 search.appverid: ''
 ms.collection:
@@ -13,19 +13,19 @@ ms.collection:
 - m365initiative-syntex
 ms.localizationpriority: medium
 ROBOTS: NOINDEX, NOFOLLOW
-description: Obtenga más información sobre el etiquetado de imágenes en SharePoint Syntex
-ms.openlocfilehash: e0b9b1669efb069942b81aaad7fb5e7e3aa57c1c
-ms.sourcegitcommit: ebbe8713297675db5dcb3e0d9c3ae5e746b99196
+description: Obtenga información sobre el etiquetado de imágenes en Microsoft Syntex.
+ms.openlocfilehash: 7d125fafc0667456a4a0345305baddca4aeecf8b
+ms.sourcegitcommit: ca082da1c51a3f643f152492579eef5679d52bd0
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/14/2022
-ms.locfileid: "65415890"
+ms.lasthandoff: 10/12/2022
+ms.locfileid: "68547366"
 ---
-# <a name="image-tagging-in-sharepoint-syntex"></a>Etiquetado de imágenes en SharePoint Syntex
+# <a name="image-tagging-in-microsoft-syntex"></a>Etiquetado de imágenes en Microsoft Syntex
 
 (Próximamente)
 
-Con el etiquetado de imágenes en SharePoint Syntex, los usuarios pueden encontrar las imágenes mediante la búsqueda. Pare ello, pueden buscar en etiquetas de imagen y crear flujos de trabajo basados en etiquetas de imagen. De forma predeterminada, el etiquetado básico de imágenes está activado para SharePoint y OneDrive. Las imágenes cargadas en cualquiera de las ubicaciones se digitalizan automáticamente y se aplican las etiquetas aplicables, si están disponibles, en una lista de 37 etiquetas básicas. Los usuarios pueden encontrar las imágenes mediante búsquedas en las etiquetas de imagen.
+Con el etiquetado de imágenes en Microsoft Syntex, los usuarios pueden buscar imágenes mediante la búsqueda en etiquetas de imagen y crear flujos de trabajo basados en etiquetas de imagen. De forma predeterminada, el etiquetado básico de imágenes está activado para SharePoint y OneDrive. Las imágenes cargadas en cualquiera de las ubicaciones se digitalizan automáticamente y se aplican las etiquetas aplicables, si están disponibles, en una lista de 37 etiquetas básicas. Los usuarios pueden encontrar las imágenes mediante búsquedas en las etiquetas de imagen.
 
 Cuando un usuario carga una imagen, el proceso de etiquetado se ejecutará automáticamente. Si edita una imagen, el proceso de etiquetado se ejecuta nuevamente para actualizar las etiquetas.
 
@@ -38,7 +38,7 @@ Si desactiva el etiquetado, las imágenes ya no se etiquetarán automáticamente
 
 ## <a name="configure-image-tagging"></a>Configurar el etiquetado de imágenes
 
-Después de [configurar SharePoint Syntex](set-up-content-understanding.md), puede configurar el etiquetado de imágenes en el Centro de administración de Microsoft 365.
+Después de [configurar Syntex](set-up-content-understanding.md), puede configurar el etiquetado de imágenes en el Centro de administración de Microsoft 365.
 
 Para activar o desactivar el etiquetado de imágenes
 

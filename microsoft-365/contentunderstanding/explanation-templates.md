@@ -1,5 +1,5 @@
 ---
-title: Usar plantillas de explicación en Microsoft SharePoint Syntex
+title: Uso de plantillas de explicación en Microsoft Syntex
 ms.author: chucked
 author: chuckedmonson
 manager: pamgreen
@@ -12,15 +12,15 @@ ms.collection:
 - enabler-strategic
 - m365initiative-syntex
 ms.localizationpriority: medium
-description: Obtenga más información sobre cómo usar y guardar plantillas de explicación en Microsoft SharePoint Syntex.
-ms.openlocfilehash: 27c25bf9520f64dc6c91afe1ea736af8e784e74f
-ms.sourcegitcommit: d3ef9391f621e8f4ca70661184b3bb82c6cbda94
+description: Obtenga más información sobre cómo usar y guardar plantillas de explicación en Microsoft Syntex.
+ms.openlocfilehash: ef1e3cd3575d5e943c2ea39e98f7c85046de32ec
+ms.sourcegitcommit: ca082da1c51a3f643f152492579eef5679d52bd0
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/02/2022
-ms.locfileid: "67578342"
+ms.lasthandoff: 10/12/2022
+ms.locfileid: "68547760"
 ---
-# <a name="use-explanation-templates-in-microsoft-sharepoint-syntex"></a>Usar plantillas de explicación en Microsoft SharePoint Syntex
+# <a name="use-explanation-templates-in-microsoft-syntex"></a>Uso de plantillas de explicación en Microsoft Syntex
 
 Aunque se pueden agregar manualmente varios valores de la lista de frases para la explicación, puede resultar más fácil usar las plantillas que se le proporcionan en la biblioteca de explicación.
 
@@ -40,7 +40,7 @@ La biblioteca de explicación incluye varias explicaciones de la *lista de frase
 - Primera palabra de una frase: patrones comunes para palabras de hasta nueve caracteres.
 - Final de una oración: signos de puntuación comunes para el final de una oración
 - Tarjeta de crédito: formatos de número de tarjeta de crédito comunes. Por ejemplo, 1111-1111-1111-1111.
-- Número de la seguridad social: formato de número del seguro social de EE. UU. Por ejemplo, 111-11-1111.
+- Número de la seguridad social: formato de número del seguro social de EE. UU. Por ejemplo, 111-11-1111.
 - Casilla: una lista de frases que representa variaciones en una casilla rellenada. Por ejemplo, _X_, _ _X_.
 - Moneda: principales símbolos internacionales. Por ejemplo: .$
 - Correo electrónico CC: lista de frases con el término "CC:" que se suele encontrar cerca de los nombres o direcciones de correo electrónico de otras personas o grupos a los que se envió el mensaje.
@@ -118,4 +118,4 @@ Puede guardar una explicación como plantilla para que esté disponible en la bi
 
 ### <a name="see-also"></a>Ver también
 
-[Tipos de explicación en Microsoft SharePoint Syntex](explanation-types-overview.md)
+[Tipos de explicación en Microsoft Syntex](explanation-types-overview.md)

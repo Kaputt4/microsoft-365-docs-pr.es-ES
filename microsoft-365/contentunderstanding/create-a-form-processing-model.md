@@ -1,5 +1,5 @@
 ---
-title: Crear un modelo de procesamiento de formularios en Microsoft SharePoint Syntex
+title: Creación de un modelo de procesamiento de formularios en Microsoft Syntex
 ms.author: chucked
 author: chuckedmonson
 manager: pamgreen
@@ -13,15 +13,15 @@ ms.collection:
 - m365initiative-syntex
 ms.custom: admindeeplinkSPO
 ms.localizationpriority: medium
-description: Obtenga información sobre cómo crear un modelo de procesamiento de formularios en SharePoint Syntex.
-ms.openlocfilehash: b045de5b0f67d56f0ddfe726fbe0c1dd25391866
-ms.sourcegitcommit: 078149c9645ce220911ccd6ce54f984a4c92ce53
+description: Obtenga información sobre cómo crear un modelo de procesamiento de formularios en Microsoft Syntex.
+ms.openlocfilehash: 445f1bb4bdbdd8a93e0feaf9c6c841329ea4ccd0
+ms.sourcegitcommit: ca082da1c51a3f643f152492579eef5679d52bd0
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/20/2022
-ms.locfileid: "67812290"
+ms.lasthandoff: 10/12/2022
+ms.locfileid: "68547585"
 ---
-# <a name="create-a-form-processing-model-in-microsoft-sharepoint-syntex"></a>Crear un modelo de procesamiento de formularios en Microsoft SharePoint Syntex
+# <a name="create-a-form-processing-model-in-microsoft-syntex"></a>Creación de un modelo de procesamiento de formularios en Microsoft Syntex
 
 </br>
 
@@ -29,7 +29,7 @@ ms.locfileid: "67812290"
 
 </br>
 
-Con [AI Builder](/ai-builder/overview) (una característica de Microsoft Power Apps), los usuarios de SharePoint Syntex pueden crear un [modelo de procesamiento de formularios](form-processing-overview.md) directamente desde una biblioteca de documentos de SharePoint. 
+Con [AI Builder](/ai-builder/overview) , una característica de Microsoft Power Apps, los usuarios de Microsoft Syntex pueden crear un [modelo de procesamiento de formularios](form-processing-overview.md) directamente desde una biblioteca de documentos de SharePoint. 
 
 La creación de un modelo de procesamiento de formularios implica los pasos siguientes:
 
@@ -159,15 +159,15 @@ Hay dos flujos disponibles para procesar un archivo o lote de archivos seleccion
 
 ### <a name="classification-date-field"></a>Campo Fecha de clasificación
 
-Cuando se aplica un modelo de procesamiento de formularios de SharePoint Syntex (o un modelo de comprensión de documentos) a una biblioteca de documentos, el campo **Fecha de clasificación** se incluye en el esquema de la biblioteca. De forma predeterminada, este campo está vacío. Sin embargo, cuando un modelo procesa y clasifica documentos, este campo se actualiza con una marca de fecha y hora de finalización. 
+Cuando se aplica un modelo de procesamiento de formularios syntex (o un modelo de comprensión de documentos) a una biblioteca de documentos, el campo **Fecha de clasificación** se incluye en el esquema de la biblioteca. De forma predeterminada, este campo está vacío. Sin embargo, cuando un modelo procesa y clasifica documentos, este campo se actualiza con una marca de fecha y hora de finalización. 
 
-Cuando un modelo se marca con la **fecha de clasificación**, puede usar enviar **un correo electrónico después de SharePoint Syntex procesa un** flujo de archivo para notificar a los usuarios que un modelo ha procesado y clasificado un nuevo archivo en la biblioteca de documentos de SharePoint.
+Cuando un modelo se marca con la **fecha de clasificación**, puede usar **enviar un correo electrónico después de que Syntex procese un** flujo de archivos para notificar a los usuarios que un modelo ha procesado y clasificado un nuevo archivo en la biblioteca de documentos de SharePoint.
 
 Para ejecutar el flujo:
 
 1. Seleccione un archivo y, a continuación, seleccione **Integrar** > **Power Automate** > **Crear un flujo**.
 
-2. En el panel **Crear un flujo**, seleccione **Enviar un correo electrónico después de SharePoint Syntex procese un archivo**.
+2. En el panel **Crear un flujo** , seleccione **Enviar un correo electrónico después de que Syntex procese un archivo**.
 
     ![Captura de pantalla que muestra la opción Crear un panel de flujo y flujo resaltada.](../media/content-understanding/integrate-create-flow.png) 
 

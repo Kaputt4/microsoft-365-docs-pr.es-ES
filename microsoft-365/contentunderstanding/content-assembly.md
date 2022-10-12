@@ -1,5 +1,5 @@
 ---
-title: Creación de documentos mediante el ensamblado de contenido en Microsoft SharePoint Syntex
+title: Creación de documentos mediante el ensamblado de contenido en Microsoft Syntex
 ms.author: chucked
 author: chuckedmonson
 manager: pamgreen
@@ -12,22 +12,22 @@ ms.collection:
 - enabler-strategic
 - m365initiative-syntex
 ms.localizationpriority: medium
-description: Obtenga información sobre cómo crear automáticamente documentos y otro contenido mediante una plantilla moderna en Microsoft SharePoint Syntex.
-ms.openlocfilehash: 9aaaea0c4bba533ea3ba27753b167aea1a4cf489
-ms.sourcegitcommit: 4e42bafee965446f44f7f57d1defed2b9b24fce8
+description: Obtenga información sobre cómo crear automáticamente documentos y otro contenido mediante una plantilla moderna en Microsoft Syntex.
+ms.openlocfilehash: e254f0dbf0ac4e415da32a088ae5970e5b02873a
+ms.sourcegitcommit: ca082da1c51a3f643f152492579eef5679d52bd0
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/30/2022
-ms.locfileid: "68224170"
+ms.lasthandoff: 10/12/2022
+ms.locfileid: "68547914"
 ---
-# <a name="create-documents-using-content-assembly-in-microsoft-sharepoint-syntex"></a>Creación de documentos mediante el ensamblado de contenido en Microsoft SharePoint Syntex
+# <a name="create-documents-using-content-assembly-in-microsoft-syntex"></a>Creación de documentos mediante el ensamblado de contenido en Microsoft Syntex
 
-Puede usar SharePoint Syntex para ayudarle a generar automáticamente documentos empresariales repetitivos estándar, como contratos, declaraciones de trabajo, contratos de servicio, cartas de consentimiento, lanzamientos de ventas y correspondencia. Puede hacer todo esto más rápido, de forma más coherente y con menos errores mediante el uso del ensamblado de contenido en SharePoint Syntex.
+Puede usar Microsoft Syntex para ayudarle a generar automáticamente documentos empresariales repetitivos estándar, como contratos, declaraciones de trabajo, contratos de servicio, cartas de consentimiento, lanzamientos de ventas y correspondencia. Puede hacer todo esto más rápido, de forma más coherente y con menos errores mediante el ensamblado de contenido en Syntex.
 
 Con el ensamblado de contenido, puede usar un documento existente para crear una *plantilla moderna* y, a continuación, usar esa plantilla para generar automáticamente contenido nuevo mediante listas de SharePoint o entradas manuales como origen de datos.
 
 > [!NOTE]
-> Debe ser un usuario con licencia SharePoint Syntex para acceder a las funcionalidades de ensamblado de contenido y usarlas. También debe tener permisos para administrar listas de SharePoint.
+> Debe ser un usuario con licencia de Syntex para acceder a las funcionalidades de ensamblado de contenido y usarlas. También debe tener permisos para administrar listas de SharePoint.
 
 ## <a name="create-a-modern-template"></a>Creación de una plantilla moderna
 
@@ -177,7 +177,7 @@ Puede usar una plantilla moderna *publicada* para crear rápidamente documentos 
 
    ![Captura de pantalla de la biblioteca de documentos que muestra el panel Crear un documento a partir de una plantilla.](../media/content-understanding/content-assembly-create-document-2b.png)
 
-   Para ayudar a reducir el tiempo y el esfuerzo necesarios para rellenar los valores de los marcadores de posición, SharePoint Syntex proporciona:
+   Para ayudar a reducir el tiempo y el esfuerzo implicados en el llenado de valores de marcadores de posición, Syntex proporciona:
 
       - Sugerencias para ayudarle a elegir fácilmente valores al seleccionar valores de una lista.
       - Autorrellenar los valores de marcador de posición si se puede identificar de forma única un registro de marcadores de posición asociados a la misma lista.

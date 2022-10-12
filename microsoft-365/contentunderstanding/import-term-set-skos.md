@@ -13,16 +13,16 @@ ms.collection:
 ms.custom: admindeeplinkSPO
 search.appverid: ''
 ms.localizationpriority: high
-ms.openlocfilehash: 411c4e3303d6bb20370d540de998f9e6ea95105d
-ms.sourcegitcommit: cbb9a89499d42f4a029e18780bee408946e1671d
+ms.openlocfilehash: ad533e7f869e3680c9e4b8e5085881040fadd22e
+ms.sourcegitcommit: ca082da1c51a3f643f152492579eef5679d52bd0
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/27/2022
-ms.locfileid: "68026038"
+ms.lasthandoff: 10/12/2022
+ms.locfileid: "68547716"
 ---
 # <a name="import-a-term-set-using-a-skos-based-format"></a>Importar un conjunto de términos con un formato basado en SKOS
 
-Puede importar un conjunto de términos con un formato basado en SKOS. Para más información sobre el formato, consulte [Referencia de formato SKOS de la taxonomía de SharePoint](skos-format-reference.md). Esta característica requiere una licencia de [SharePoint Syntex](index.md).
+Puede importar un conjunto de términos con un formato basado en SKOS. Para más información sobre el formato, consulte [Referencia de formato SKOS de la taxonomía de SharePoint](skos-format-reference.md). Esta característica requiere una licencia [de Microsoft Syntex](index.md) .
 
 Le recomendamos mantener sus archivos de importación con menos de 20 000 términos. Los archivos de mayor tamaño pueden aumentar el tiempo necesario para la validación y la importación.
 

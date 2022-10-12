@@ -1,5 +1,5 @@
 ---
-title: Tipos de explicación en Microsoft SharePoint Syntex
+title: Tipos de explicación en Microsoft Syntex
 ms.author: chucked
 author: chuckedmonson
 manager: pamgreen
@@ -12,17 +12,17 @@ ms.collection:
 - enabler-strategic
 - m365initiative-syntex
 ms.localizationpriority: medium
-description: Obtenga más información sobre la lista de frases, las expresiones regulares y los tipos de explicación de proximidad en Microsoft SharePoint Syntex.
-ms.openlocfilehash: acf691561e2935d982786fb60a0fe8cb4b410f42
-ms.sourcegitcommit: d3ef9391f621e8f4ca70661184b3bb82c6cbda94
+description: Obtenga más información sobre los tipos de explicación de proximidad, expresión regular y lista de frases en Microsoft Syntex.
+ms.openlocfilehash: a85272830dcbc64266456774c56ea02ceb6245e6
+ms.sourcegitcommit: ca082da1c51a3f643f152492579eef5679d52bd0
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/02/2022
-ms.locfileid: "67580956"
+ms.lasthandoff: 10/12/2022
+ms.locfileid: "68547958"
 ---
-# <a name="explanation-types-in-microsoft-sharepoint-syntex"></a>Tipos de explicación en Microsoft SharePoint Syntex
+# <a name="explanation-types-in-microsoft-syntex"></a>Tipos de explicación en Microsoft Syntex
 
-Las explicaciones se utilizan para ayudar a definir la información que desea etiquetar y extraer en los modelos de comprensión de documentos en Microsoft SharePoint Syntex. Al crear una explicación, debe seleccionar un tipo de explicación. Este artículo le ayudará a comprender los distintos tipos de explicación y cómo se usan.
+Las explicaciones se usan para ayudar a definir la información que desea etiquetar y extraer en los modelos de comprensión de documentos en Microsoft Syntex. Al crear una explicación, debe seleccionar un tipo de explicación. Este artículo le ayudará a comprender los distintos tipos de explicación y cómo se usan.
 
 ![Captura de pantalla del panel Crear una explicación que muestra los tres tipos de explicación.](../media/content-understanding/explanation-types.png)
 
@@ -89,11 +89,11 @@ Esta expresión se compone de cinco partes, en este orden:
 
 1. cualquier cantidad de los siguientes caracteres:
 
-   a. Letras de la "a" a la "z"
+   a. Letters from a to z
 
-   b. Números del 0 al 9
+   b. Numbers from 0-9
 
-   c. Punto, subrayado, porcentaje o guion
+   c. Period, underscore, percent, or dash
 
 2. El símbolo @
 
@@ -224,6 +224,6 @@ Al entrenar un clasificador, hay que tener en cuenta algunas cosas que producir�
 
 - Las etiquetas y explicaciones funcionan conjuntamente y se usan en el entrenamiento del modelo.  No se trata de una serie de reglas que se pueden desa acoplar y aplicar pesos precisos o predicción a cada variable que se haya configurado.  Cuanto mayor sea la variación de los documentos utilizados en el entrenamiento, se proporcionará más precisión en el modelo.
 
-### <a name="see-also"></a>Ver también
+### <a name="see-also"></a>Vea también
 
-[Use plantillas de explicación en SharePoint Syntex](explanation-templates.md)
+[Uso de plantillas de explicación en Microsoft Syntex](explanation-templates.md)

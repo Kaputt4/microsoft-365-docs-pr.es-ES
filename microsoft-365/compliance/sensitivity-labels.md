@@ -11,10 +11,13 @@ ms.topic: conceptual
 ms.service: O365-seccomp
 ms.localizationpriority: high
 ms.collection:
-- M365-security-compliance
+- purview-compliance
+- tier1
+- highpri
 - SPO_Content
 - m365solution-mip
 - m365initiative-compliance
+- highpri
 search.appverid:
 - MOE150
 - MET150
@@ -22,12 +25,12 @@ description: Obtenga información sobre cómo las etiquetas de confidencialidad 
 ms.custom:
 - seo-marvel-apr2020
 - seo-marvel-jun2020
-ms.openlocfilehash: 97c507a9e3cae483018254a150bb9f8b2689dbf9
-ms.sourcegitcommit: d60d78e6a05845747af0ad25131c7e526d58064d
+ms.openlocfilehash: bb3f26d4d4e516b95000339221a6d144db1d6cc8
+ms.sourcegitcommit: ca082da1c51a3f643f152492579eef5679d52bd0
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/01/2022
-ms.locfileid: "67498469"
+ms.lasthandoff: 10/12/2022
+ms.locfileid: "68547629"
 ---
 # <a name="learn-about-sensitivity-labels"></a>Información sobre las etiquetas de confidencialidad
 
@@ -38,7 +41,7 @@ ms.locfileid: "67498469"
 >
 > La información de esta página es para los administradores de TI que pueden crear y configurar estas etiquetas.
 
-Para realizar su trabajo, las personas de su organización colaboran con otras tanto dentro como fuera de la organización. Esto significa que el contenido ya no se queda detrás de un firewall, sino que puede desplazarse a todas partes, a través de dispositivos, aplicaciones y servicios. Y cuando se desplaza, usted quiere que lo haga de una forma segura y protegida que cumpla con las directivas empresariales y de cumplimiento de normas de su organización.
+To get their work done, people in your organization collaborate with others both inside and outside the organization. This means that content no longer stays behind a firewall—it can roam everywhere, across devices, apps, and services. And when it roams, you want it to do so in a secure, protected way that meets your organization's business and compliance policies.
 
 Las etiquetas de confidencialidad de Microsoft Purview Information Protection le permiten clasificar y proteger los datos de su organización, a la vez que se asegura de que la productividad de los usuarios y su capacidad de colaboración no se vean obstaculizadas.
 
@@ -59,7 +62,7 @@ Puede usar etiquetas de confidencialidad para:
 
 - **Proteger el contenido de las aplicaciones de Office en distintos dispositivos y plataformas.** Compatible con Word, Excel, PowerPoint y Outlook en las aplicaciones de escritorio de Office y Office en la Web. Compatible con Windows, Mac OS, iOS y Android.
 
-- **Proteger el contenido en los servicios y aplicaciones de terceros** con Microsoft Defender for Cloud Apps. Con Defender for Cloud Apps se puede detectar, clasificar, etiquetar y proteger el contenido de servicios y aplicaciones de terceros tales como SalesForce, Box o DropBox, incluso si la aplicación o el servicio de terceros no lee ni admite etiquetas de confidencialidad.
+- **Protect content in third-party apps and services** by using Microsoft Defender for Cloud Apps. With Defender for Cloud Apps, you can detect, classify, label, and protect content in third-party apps and services, such as SalesForce, Box, or DropBox, even if the third-party app or service does not read or support sensitivity labels.
 
 - **Proteger contenedores** que incluyan Teams, Grupos de Microsoft 365 y sitios de SharePoint. Por ejemplo, configurar las opciones de privacidad, el acceso de usuarios externos, el uso compartido externo y el acceso desde dispositivos no administrados.
 
@@ -67,7 +70,7 @@ Puede usar etiquetas de confidencialidad para:
 
 - **Extender las etiquetas de confidencialidad a los recursos en la asignación de datos de Microsoft Purview**: cuando se activa esta capacidad, actualmente en versión preliminar, se pueden aplicar las etiquetas de confidencialidad a los archivos y activos de datos esquematizados en la asignación de datos de Microsoft Purview. Los recursos de datos esquematizados incluyen SQL, Azure SQL, Azure Synapse, Azure Cosmos y AWS RDS.
 
-- **Extienda las etiquetas de confidencialidad a los servicios y aplicaciones de terceros.** Con el SDK de Microsoft Information Protection, las aplicaciones de terceros pueden leer las etiquetas de confidencialidad y aplicar la configuración de protección.
+- **Extend sensitivity labels to third-party apps and services.** Using the Microsoft Information Protection SDK, third-party apps can read sensitivity labels and apply protection settings.
 
 - **Clasificar contenido sin usar una configuración de protección.** También puede simplemente asignar una etiqueta como resultado de la clasificación del contenido. Esto proporciona a los usuarios una asignación visual de la clasificación de los nombres de etiqueta de la organización y pueden usar las etiquetas para crear informes de uso y ver los datos de la actividad de su contenido confidencial. También puede usar esta información para aplicar la configuración de protección más adelante.
 
@@ -75,13 +78,15 @@ En todos estos casos, las etiquetas de confidencialidad de Microsoft Purview pue
 
 Para obtener más información sobre estos y otros escenarios que son compatibles con las etiquetas de confidencialidad, vea [Escenarios comunes para las etiquetas de confidencialidad](get-started-with-sensitivity-labels.md#common-scenarios-for-sensitivity-labels). Seguimos desarrollando nuevas funciones compatibles con las etiquetas de confidencialidad, por lo que también le puede resultar útil consultar el [Plan de desarrollo de Microsoft 365](https://www.microsoft.com/microsoft-365/roadmap?filters=Microsoft%20Information%20Protection&searchterms=label).
 
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
+
 ## <a name="what-a-sensitivity-label-is"></a>Qué es una etiqueta de confidencialidad
 
 Cuando asigna una etiqueta de confidencialidad a un contenido, es como un sello que se le aplica que es:
 
 - **Personalizable.** Según su organización y necesidades empresariales, puede crear categorías para diferentes niveles de contenido confidencial en su organización. Por ejemplo, Personal, Público, General, Confidencial y Altamente confidencial.
 
-- **Texto no cifrado.** Dado que una etiqueta se almacena en texto claro en los metadatos de los archivos y correos electrónicos, las aplicaciones y servicios de terceros pueden leerla y aplicar sus propias acciones de protección, si es necesario.
+- **Clear text.** Because a label is stored in clear text in the metadata for files and emails, third-party apps and services can read it and then apply their own protective actions, if required.
 
 - **Persistente.** Al estar almacenada en los metadatos de los archivos y mensajes de correo electrónico, la etiqueta permanece con el contenido, independientemente de dónde se guarde o almacene. La identificación de etiqueta única es la base para aplicar y exigir las directivas que usted configura.
 
@@ -94,7 +99,7 @@ Cada elemento que admite las etiquetas de confidencialidad puede tener una sola 
 
 ## <a name="what-sensitivity-labels-can-do"></a>Qué pueden hacer las etiquetas de confidencialidad
 
-Después de aplicar una etiqueta de confidencialidad a un documento o correo electrónico, cualquier configuración de protección de la etiqueta se aplica en el contenido. Puede configurar una etiqueta de confidencialidad para:
+After a sensitivity label is applied to an email or document, any configured protection settings for that label are enforced on the content. You can configure a sensitivity label to:
 
 - **Cifrar** los mensajes de correo electrónico y documentos para evitar que personas no autorizadas tengan acceso a estos datos. Puede elegir qué usuarios o grupos tienen permisos para realizar las acciones y durante cuánto tiempo. Por ejemplo, puede elegir permitir que todos los usuarios de la organización puedan modificar un documento mientras que un grupo específico de otra organización solo pueda verlo. Como alternativa, en lugar de permisos definidos por el administrador, puede permitir a los usuarios asignar permisos al contenido al aplicar la etiqueta. 
     
@@ -108,7 +113,7 @@ Después de aplicar una etiqueta de confidencialidad a un documento o correo ele
     
     ¿Necesita comprobar cuándo se aplican marcas de contenido? Consulte [Cuándo las aplicaciones de Office aplican marcado de contenido y cifrado](sensitivity-labels-office-apps.md#when-office-apps-apply-content-marking-and-encryption).
     
-    Si tiene plantillas o flujos de trabajo que se basan en documentos específicos, pruebe esos documentos con las marcas de contenido elegidas antes de poner la etiqueta a disposición de los usuarios. Hay que tener en cuenta algunas restricciones de longitud de las cadenas:
+    If you have templates or workflows that are based on specific documents, test those documents with your chosen content markings before you make the label available for users. Some string length restrictions to be aware of:
     
     Las marcas de agua están limitadas a 255 caracteres. Los encabezados y pies de página tienen un límite de 1024 caracteres, excepto en Excel. Excel tiene un límite total de 255 caracteres para encabezados y pies de página, pero este límite incluye caracteres que no son visibles, como códigos de formato. Si se alcanza ese límite, la cadena que escriba no se mostrará en Excel.
 
@@ -116,7 +121,7 @@ Después de aplicar una etiqueta de confidencialidad a un documento o correo ele
     
     No puede configurar las opciones de protección para grupos y sitios hasta que habilite esta capacidad. Esta configuración de etiqueta no da como resultado que los documentos o mensajes de correo electrónico sean etiquetados automáticamente, pero, en cambio, la configuración de la etiqueta protege el contenido, al controlar el acceso al contenedor donde puede almacenarse el contenido. Estas opciones incluyen los ajustes de privacidad, el acceso de usuarios externos, el uso compartido externo y el acceso desde dispositivos no administrados.
 
-- **Aplique la etiqueta automáticamente a los archivos y correos electrónicos, o recomiende una etiqueta.** Elija cómo identificar la información sensible que desea etiquetar, y la etiqueta puede aplicarse automáticamente, o puede pedir a los usuarios que apliquen la etiqueta que usted recomienda. Si recomienda una etiqueta, el aviso muestra el texto que usted elija. Por ejemplo:
+- **Apply the label automatically to files and emails, or recommend a label.** Choose how to identify sensitive information that you want labeled, and the label can be applied automatically, or you can prompt users to apply the label that you recommend. If you recommend a label, the prompt displays whatever text you choose. For example:
     
     ![Aviso para asignar una etiqueta necesaria.](../media/Sensitivity-label-Prompt-for-required-label.png)
     
@@ -158,11 +163,11 @@ Aunque, el orden de las subetiquetas se usa en el [ etiquetado automático](appl
 
 ### <a name="sublabels-grouping-labels"></a>Subetiquetas (agrupación de etiquetas)
 
-Con las subetiquetas, puede agrupar una o varias etiquetas bajo una etiqueta primaria que un usuario vea en una aplicación de Office. Por ejemplo, bajo Confidencial, su organización puede usar varias etiquetas distintas para determinados tipos dentro de esa clasificación. En este ejemplo, la etiqueta primaria Confidencial es simplemente una etiqueta de texto sin ninguna configuración de protección y, como contiene subetiquetas, no se puede aplicar al contenido. En su lugar, los usuarios deben elegir Confidencial para ver las subetiquetas y, a continuación, pueden elegir una subetiqueta para que se aplique al contenido.
+With sublabels, you can group one or more labels below a parent label that a user sees in an Office app. For example, under Confidential, your organization might use several different labels for specific types of that classification. In this example, the parent label Confidential is simply a text label with no protection settings, and because it has sublabels, it can't be applied to content. Instead, users must choose Confidential to view the sublabels, and then they can choose a sublabel to apply to content.
 
-Las subetiquetas son simplemente una forma de presentar etiquetas a los usuarios en grupos lógicos. Las subetiquetas no heredan ninguna configuración de su etiqueta principal. Cuando publique una subetiqueta para un usuario, éste podrá aplicar dicha subetiqueta al contenido, pero no podrá aplicar solo la etiqueta principal.
+Las subetiquetas son simplemente una forma de presentar etiquetas a los usuarios en grupos lógicos. Las subetiquetas no heredan ninguna configuración de su etiqueta primaria, excepto su color de etiqueta. Al publicar una subetiqueta para un usuario, ese usuario puede aplicar esa subetiqueta al contenido y a los contenedores, pero no puede aplicar solo la etiqueta primaria.
 
-No elija una etiqueta principal como predeterminada o configure una etiqueta principal para que se aplique automáticamente (o se recomiende). Si lo hace, la etiqueta principal no se aplicará al contenido.
+No elija una etiqueta principal como predeterminada o configure una etiqueta principal para que se aplique automáticamente (o se recomiende). Si lo hace, no se puede aplicar la etiqueta primaria.
 
 Ejemplo de cómo se muestran las subetiquetas para los usuarios:
 
@@ -182,7 +187,7 @@ A diferencia de las etiquetas de retención, que se publican en ubicaciones, com
 
 Cuando configura una directiva de etiqueta, puede:
 
-- **Elija qué usuarios y grupos ven las etiquetas.** Las etiquetas pueden publicarse para cualquier usuario específico o grupo de seguridad habilitado para el correo electrónico, grupo de distribución o grupo de Microsoft 365 (que puede tener [una membresía dinámica](/azure/active-directory/users-groups-roles/groups-create-rule)) en Azure AD.
+- **Choose which users and groups see the labels.** Labels can be published to any specific user or email-enabled security group, distribution group, or Microsoft 365 group (which can have [dynamic membership](/azure/active-directory/users-groups-roles/groups-create-rule)) in Azure AD.
 
 - **Especifique una etiqueta predeterminada** para los documentos y correos electrónicos sin etiqueta y para los contenedores nuevos (cuando haya [habilitado las etiquetas de confidencialidad para Microsoft Teams, grupos de Microsoft 365 y sitios de SharePoint](sensitivity-labels-teams-groups-sites.md)) y también una etiqueta predeterminada para el [contenido de Power BI](/power-bi/admin/service-security-sensitivity-label-default-label-policy). Puede especificar la misma etiqueta para los cuatro tipos de elementos o especificar etiquetas diferentes. Los usuarios pueden cambiar la etiqueta de confidencialidad predeterminada aplicada para que coincida mejor con el nivel de confidencialidad de su contenido o contenedor.
     
@@ -200,7 +205,7 @@ Cuando configura una directiva de etiqueta, puede:
 
 - **Solicite a los usuarios que apliquen una etiqueta** para documentos y correos electrónicos, solo documentos, para contenedores y contenido de Power BI. También conocidas como etiquetado obligatorio, estas opciones garantizan que se debe aplicar una etiqueta antes de que los usuarios puedan guardar documentos y enviar correos electrónicos, crear nuevos grupos o sitios y cuando usen contenido sin etiquetar para Power BI.
     
-    Para documentos y mensajes de correo electrónico, el usuario puede asignar una etiqueta manualmente. Todo ello de forma automática como resultado de una condición que ha configurado. O bien, se puede asignar de forma predeterminada (opción de etiqueta predeterminada descrita anteriormente). Se muestra un ejemplo de cuando un usuario debe asignar una etiqueta:
+    For documents and emails, a label can be assigned manually by the user, automatically as a result of a condition that you configure, or be assigned by default (the default label option previously described). An example prompt when a user is required to assign a label:
 
     ![Aviso en Outlook donde se pide a un usuario que aplique una etiqueta necesaria.](../media/sensitivity-labels-mandatory-prompt-outlook.png)
     
@@ -212,7 +217,7 @@ Cuando configura una directiva de etiqueta, puede:
     
     Considere usar esta opción para mejorar la cobertura de la etiqueta. Sin embargo, sin el aprendizaje del usuario, estas opciones de configuración también pueden dar como resultado un etiquetado incorrecto. Además, a menos que también establezca una etiqueta predeterminada correspondiente, el etiquetado obligatorio puede frustrar a los usuarios debido a los avisos frecuentes.
 
-- **Proporcionar un vínculo de ayuda a una página de asistencia.** Si los usuarios no están seguros de lo que significan las etiquetas de confidencialidad o cómo deben usarse, puede proporcionar una dirección URL con más información que aparecerá en la parte inferior del menú **Etiqueta de confidencialidad** en las aplicaciones de Office:
+- **Provide help link to a custom help page.** If your users aren't sure what your sensitivity labels mean or how they should be used, you can provide a Learn More URL that appears at the bottom of the **Sensitivity label** menu in the Office apps:
 
     ![Vínculo para obtener más información en la cinta o botón de confidencialidad.](../media/Sensitivity-label-learn-more.png)
 
@@ -245,13 +250,13 @@ Sucede algo parecido para los usuarios del departamento jurídico, a los que se 
 
 ## <a name="sensitivity-labels-and-azure-information-protection"></a>Etiquetas de confidencialidad y Azure Information Protection
 
-Las etiquetas de confidencialidad integradas en Aplicaciones de Microsoft 365 en Windows, macOS, iOS y Android se ven y se comportan de forma muy similar en estos dispositivos para proporcionar a los usuarios una experiencia de etiquetado coherente. Sin embargo, en equipos de Windows, también puede usar el [cliente de Azure Information Protection (AIP)](/azure/information-protection/rms-client/aip-clientv2). Este cliente está ahora en [modo de mantenimiento](https://techcommunity.microsoft.com/t5/security-compliance-and-identity/announcing-aip-unified-labeling-client-maintenance-mode-and/ba-p/3043613).
+Las etiquetas de confidencialidad integradas en Aplicaciones de Microsoft 365 en Windows, macOS, iOS y Android se ven y se comportan de forma muy similar en estos dispositivos para proporcionar a los usuarios una experiencia de etiquetado coherente. Sin embargo, en equipos de Windows, también puede usar el [cliente de Azure Information Protection (AIP)](/azure/information-protection/rms-client/aip-clientv2). Este cliente está ahora en [modo de mantenimiento](https://techcommunity.microsoft.com/t5/security-compliance-and-identity/announcing-aip-unified-labeling-client-maintenance-mode-and/ba-p/3043613) y, cuando se instala, ya no es el cliente de etiquetado predeterminado para las aplicaciones de Office más recientes.
 
-Si utiliza el cliente AIP, consulte [Por qué elegir el etiquetado integrado en lugar del complemento AIP para las aplicaciones de Office](sensitivity-labels-aip.md) para comprender y administrar sus opciones de etiquetado para los ordenadores Windows.
+Si usa el cliente de AIP para el etiquetado en aplicaciones de Office, se recomienda pasar al etiquetado integrado. Para obtener más información, consulte [Migración del complemento de Azure Information Protection (AIP) al etiquetado integrado para aplicaciones de Office](sensitivity-labels-aip.md).
 
 ### <a name="azure-information-protection-labels"></a>Etiquetas de Azure Information Protection
 
-La administración de las etiquetas de Azure Information Protection en el Microsoft Azure Portal quedó obsoleta el **31 de marzo de 2021**. Obtenga más información en el anuncio oficial de la [eliminación de las etiquetas](https://techcommunity.microsoft.com/t5/azure-information-protection/announcing-timelines-for-sunsetting-label-management-in-the/ba-p/1226179).
+La gestión de etiquetas para las etiquetas de Azure Information Protection en Microsoft Azure Portal quedó en desuso el **31 de marzo de 2021**. Más información en la página oficial de [notificación de desuso](https://techcommunity.microsoft.com/t5/azure-information-protection/announcing-timelines-for-sunsetting-label-management-in-the/ba-p/1226179).
 
 Si su espacio empresarial aún no está en la [plataforma de etiquetas unificada](/azure/information-protection/faqs#how-can-i-determine-if-my-tenant-is-on-the-unified-labeling-platform), debe activar el etiquetado unificado antes de poder usar etiquetas de confidencialidad. Para obtener más información acerca de este proceso, consulte [Cómo migrar las etiquetas de Azure Information Protection a etiquetas de confidencialidad unificadas](/azure/information-protection/configure-policy-migrate-labels)
 

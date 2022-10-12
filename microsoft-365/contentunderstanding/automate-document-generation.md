@@ -1,5 +1,5 @@
 ---
-title: Automatización de la generación de documentos con SharePoint Syntex y Power Automate (versión preliminar)
+title: Automatización de la generación de documentos con Microsoft Syntex y Power Automate (versión preliminar)
 ms.author: chucked
 author: chuckedmonson
 manager: pamgreen
@@ -12,19 +12,19 @@ ms.collection:
 - enabler-strategic
 - m365initiative-syntex
 ms.localizationpriority: medium
-description: Obtenga información sobre cómo crear automáticamente documentos y otro contenido mediante SharePoint Syntex y Power Automate.
-ms.openlocfilehash: 7ed0756b4aaed2ef564dd4796368e25d7f78dd97
-ms.sourcegitcommit: d3ef9391f621e8f4ca70661184b3bb82c6cbda94
+description: Obtenga información sobre cómo crear automáticamente documentos y otro contenido mediante Microsoft Syntex y Power Automate.
+ms.openlocfilehash: 616a88bf7a6de912e731fb96bc4af2f856089de0
+ms.sourcegitcommit: ca082da1c51a3f643f152492579eef5679d52bd0
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/02/2022
-ms.locfileid: "67584903"
+ms.lasthandoff: 10/12/2022
+ms.locfileid: "68547826"
 ---
-# <a name="automate-document-generation-with-sharepoint-syntex-and-power-automate-preview"></a>Automatización de la generación de documentos con SharePoint Syntex y Power Automate (versión preliminar)
+# <a name="automate-document-generation-with-microsoft-syntex-and-power-automate-preview"></a>Automatización de la generación de documentos con Microsoft Syntex y Power Automate (versión preliminar)
 
-Con el ensamblado de contenido en SharePoint Syntex junto con Power Automate, puede automatizar la generación de documentos mediante plantillas modernas. 
+Con el ensamblado de contenido de Microsoft Syntex junto con Power Automate, puede automatizar la generación de documentos mediante plantillas modernas. 
 
-Esta versión preliminar es una acción de Power Automate en un conector de SharePoint. La acción se denomina "Generar documento mediante SharePoint Syntex (versión preliminar)" y tiene funcionalidades limitadas para la versión preliminar. 
+Esta versión preliminar es una acción de Power Automate en un conector de SharePoint. La acción se denomina "Generar documento mediante Syntex (versión preliminar)" y tiene funcionalidades limitadas para la versión preliminar. 
 
 ## <a name="scope-of-the-preview"></a>Ámbito de la versión preliminar 
 
@@ -60,9 +60,9 @@ Siga estos pasos para generar automáticamente documentos mediante una plantilla
 
    ![Captura de pantalla del desencadenador Cuando se crea o modifica un documento que muestra una dirección de sitio de ejemplo y un nombre de sitio.](../media/content-understanding/document-generation-trigger.png)
 
-5. Vuelva a seleccionar el conector de SharePoint. En el cuadro de búsqueda, busque y seleccione la acción **Generar documento mediante SharePoint Syntex (versión preliminar).**
+5. Vuelva a seleccionar el conector de SharePoint. En el cuadro de búsqueda, busque y seleccione la acción **Generar documento mediante Syntex (versión preliminar).**
 
-   ![Captura de pantalla de la pestaña Acciones del conector de SharePoint que muestra la acción Generar documento mediante SharePoint Syntex (versión preliminar).](../media/content-understanding/document-generation-action.png) 
+   ![Captura de pantalla de la pestaña Acciones del conector de SharePoint que muestra la acción Generar documento mediante Syntex (versión preliminar).](../media/content-understanding/document-generation-action.png) 
 
 6. Escriba la información del sitio y seleccione la biblioteca de documentos que contiene la plantilla moderna. 
 
@@ -78,4 +78,4 @@ Siga estos pasos para generar automáticamente documentos mediante una plantilla
 
 ## <a name="see-also"></a>Vea también
 
- [Creación de documentos mediante el ensamblado de contenido en SharePoint Syntex](content-assembly.md)
+ [Creación de documentos mediante el ensamblado de contenido en Microsoft Syntex](content-assembly.md)

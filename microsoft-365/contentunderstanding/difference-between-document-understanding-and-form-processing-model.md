@@ -1,5 +1,5 @@
 ---
-title: Diferencias entre modelos personalizados en Microsoft SharePoint Syntex
+title: Diferencias entre modelos personalizados en Microsoft Syntex
 ms.author: chucked
 author: chuckedmonson
 manager: pamgreen
@@ -12,17 +12,17 @@ ms.collection:
 - enabler-strategic
 - m365initiative-syntex
 ms.localizationpriority: medium
-description: Obtenga información sobre las diferencias clave entre un modelo de comprensión de documentos y un modelo de procesamiento de formularios.
-ms.openlocfilehash: b17ab57cd7252c9a1cee7abb5a81359a965ca477
-ms.sourcegitcommit: 078149c9645ce220911ccd6ce54f984a4c92ce53
+description: Obtenga información sobre las diferencias clave entre un modelo de comprensión de documentos y un modelo de procesamiento de formularios en Microsoft Syntex.
+ms.openlocfilehash: 2d5d131ffb2176afabaf85474312bc07894491d9
+ms.sourcegitcommit: ca082da1c51a3f643f152492579eef5679d52bd0
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/20/2022
-ms.locfileid: "67812104"
+ms.lasthandoff: 10/12/2022
+ms.locfileid: "68547892"
 ---
-# <a name="differences-between-custom-models-in-microsoft-sharepoint-syntex"></a>Diferencias entre modelos personalizados en Microsoft SharePoint Syntex 
+# <a name="differences-between-custom-models-in-microsoft-syntex"></a>Diferencias entre modelos personalizados en Microsoft Syntex 
 
-La comprensión del contenido en Microsoft SharePoint Syntex permite identificar y clasificar documentos que se cargan en bibliotecas de documentos de SharePoint y, a continuación, extraer información pertinente de cada archivo. Por ejemplo, a medida que se carguen los archivos en una biblioteca de documentos de SharePoint, todos los archivos identificados como *Órdenes de compra* se clasifican como tales y, a continuación, se muestran en una vista personalizada de una biblioteca de documentos. Además, puede extraer información específica de cada archivo (por ejemplo, *Número de pedido de compra* y *Total*) y mostrarlo como una columna en la vista de la biblioteca de documentos. 
+La comprensión del contenido en Microsoft Syntex le permite identificar y clasificar documentos que se cargan en bibliotecas de documentos de SharePoint y, a continuación, extraer información relevante de cada archivo. Por ejemplo, a medida que se carguen los archivos en una biblioteca de documentos de SharePoint, todos los archivos identificados como *Órdenes de compra* se clasifican como tales y, a continuación, se muestran en una vista personalizada de una biblioteca de documentos. Además, puede extraer información específica de cada archivo (por ejemplo, *Número de pedido de compra* y *Total*) y mostrarlo como una columna en la vista de la biblioteca de documentos. 
 
 La comprensión de contenidos le permite crear *modelos* para identificar y extraer la información que necesita. Los modelos ayudan a solucionar problemas de búsqueda, procesos empresariales, cumplimiento normativo y muchas otras cosas.
 
@@ -34,13 +34,13 @@ Hay dos tipos de modelo personalizados que puede usar:
 Aunque los dos modelos se usan generalmente para el mismo propósito, las siguientes diferencias clave afectan a su uso.
 
 > [!NOTE]
-> Consulte [introducción a la adopción de SharePoint Syntex](./adoption-getstarted.md) para obtener más información sobre el procesamiento de formularios y ejemplos de escenarios de comprensión de documentos.
+> Consulte [introducción a la adopción de Syntex](./adoption-getstarted.md) para obtener más información sobre el procesamiento de formularios y ejemplos de escenarios de comprensión de documentos.
 
 ## <a name="structured-versus-unstructured-and-semi-structured-content"></a>Contenido estructurado, no estructurado y semiestructurado
 
 Use modelos de comprensión mediante documentos para identificar y extraer los datos de documentos no estructurados, como cartas o contratos, donde las entidades de texto que quiere extraer se encuentran en frases o regiones específicas del documento. Por ejemplo, un documento no estructurado podría ser una carta de renovación de contrato que pueda escribirse de varias maneras. Sin embargo, la información existe de forma coherente en el cuerpo de cada documento de renovación del contrato, como la cadena `Service start date of` de texto seguida de una fecha real.
 
-Use modelos de procesamiento de formularios para identificar archivos y extraer datos de documentos estructurados o semiestructurados, como formularios o facturas. Los modelos de procesamiento de formularios están capacitados para comprender el diseño de su formulario a partir de documentos de ejemplo y aprenden a buscar los datos que necesita extraer de ubicaciones similares. Los formularios tienen habitualmente un diseño más estructurado en el que las entidades están en la misma ubicación (por ejemplo, un número de la seguridad social en un formulario tributario).
+Use form processing models to identify files and extract data from structured or semi-structured documents, such as forms or invoices. Form processing models are trained to understand the layout of your form from example documents, and learn to look for the data you need to extract from similar locations. Forms usually have a more structured layout where entities are in the same location (for example, a social security number in a tax form).
 
 > [!NOTE]
 > Debe tener acceso a un sitio de centro de contenido para crear un modelo de comprensión mediante documentos o para aplicar uno a una biblioteca de documentos de SharePoint. 
@@ -82,7 +82,7 @@ Use la tabla siguiente para comprender cuándo usar el procesamiento de formular
 | Integrar con Metadatos administrados | No | Sí, mediante la formación del extractor de entidades que hace referencia a un campo de metadatos administrados configurados.|
 | Integración de características de cumplimiento con Microsoft Purview Information Protection | Establezca etiquetas de retención publicadas.<br>Se acerca el establecimiento de etiquetas de confidencialidad. | Establezca etiquetas de retención publicadas.<br>Establecer etiquetas de confidencialidad publicadas. |
 | Regiones compatibles| Procesamiento de formularios basado en Power Platform. Para obtener información sobre la disponibilidad global para Power Platform y AI Builder, consulta [disponibilidad de Power Platform](https://dynamics.microsoft.com/geographic-availability/). | Disponible en todas las regiones.|
-| Gastos transaccionales | Usar créditos de AI Builder.<br>Se incluyen 3,5 000 créditos por cada licencia de SharePoint Syntex al mes.<br>Los créditos de 1 M permitirán procesar 2 000 páginas de archivos.<br>| No aplicable |
+| Gastos transaccionales | Usar créditos de AI Builder.<br>Se incluyen 3,500 créditos por cada licencia de Syntex al mes.<br>Los créditos de 1 M permitirán procesar 2 000 páginas de archivos.<br>| No aplicable |
 | Capacidad | Usa el entorno de Power Platform predeterminado (entornos personalizados con soporte para la base de datos de Dataverse). | No tiene restricciones de capacidad.|
 | Idiomas admitidos| Compatibilidad con idiomas para más de [73 idiomas](/power-platform-release-plan/2021wave2/ai-builder/form-processing-new-language-support). | Los modelos funcionan en todos los idiomas del alfabeto latino. Además de inglés: alemán, sueco, francés, español, italiano y portugués.|
 
@@ -95,4 +95,4 @@ Use la tabla siguiente para comprender cuándo usar el procesamiento de formular
 
 [Información general sobre el procesamiento de formularios](form-processing-overview.md)
 
-[Introducción a SharePoint Syntex](index.md)
+[Introducción a Microsoft Syntex](index.md)

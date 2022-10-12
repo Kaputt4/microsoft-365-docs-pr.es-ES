@@ -1,5 +1,5 @@
 ---
-title: Aplicar un modelo de comprensión mediante documentos en la sintaxis de Microsoft SharePoint
+title: Aplicación de un modelo de comprensión de documentos en Microsoft Syntex
 ms.author: chucked
 author: chuckedmonson
 manager: pamgreen
@@ -12,15 +12,15 @@ ms.collection:
 - enabler-strategic
 - m365initiative-syntex
 ms.localizationpriority: medium
-description: Obtenga información sobre cómo aplicar un modelo publicado a una biblioteca de documentos de SharePoint en Microsoft SharePoint Syntex.
-ms.openlocfilehash: c11e4ba11cdf7da57a344dae774dab7518a72369
-ms.sourcegitcommit: 6d86713c3b1da2db338c78fa60bd7d93e24aa6f4
+description: Obtenga información sobre cómo aplicar un modelo publicado a una biblioteca de documentos de SharePoint en Microsoft Syntex.
+ms.openlocfilehash: 2f0d55f878baaf205ea4363a19a6afef34957ac7
+ms.sourcegitcommit: ca082da1c51a3f643f152492579eef5679d52bd0
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/09/2022
-ms.locfileid: "67639644"
+ms.lasthandoff: 10/12/2022
+ms.locfileid: "68548024"
 ---
-# <a name="apply-a-document-understanding-model-in-microsoft-sharepoint-syntex"></a>Aplicar un modelo de comprensión mediante documentos en la sintaxis de Microsoft SharePoint
+# <a name="apply-a-document-understanding-model-in-microsoft-syntex"></a>Aplicación de un modelo de comprensión de documentos en Microsoft Syntex
 
 </br>
 
@@ -113,7 +113,7 @@ Aunque un modelo aplicado procesa todos los archivos y el contenido de carpeta c
 
 ### <a name="classification-date-field"></a>Campo Fecha de clasificación
 
-Cuando se aplica un SharePoint Syntex modelo de comprensión de documentos (o un modelo de procesamiento de formularios) a una biblioteca de documentos, el campo **Fecha de clasificación** se incluye en el esquema de la biblioteca. De forma predeterminada, este campo está vacío. Sin embargo, cuando un modelo procesa y clasifica documentos, este campo se actualiza con una marca de fecha y hora de finalización. 
+Cuando se aplica un modelo de comprensión de documentos de Syntex (o un modelo de procesamiento de formularios) a una biblioteca de documentos, el campo **Fecha de clasificación** se incluye en el esquema de la biblioteca. De forma predeterminada, este campo está vacío. Sin embargo, cuando un modelo procesa y clasifica documentos, este campo se actualiza con una marca de fecha y hora de finalización. 
 
    ![Captura de pantalla de una biblioteca de documentos que muestra la columna Fecha de clasificación.](../media/content-understanding/class-date-column.png) 
 
@@ -123,13 +123,13 @@ El campo **Fecha de clasificación** lo usa el desencadenador [**Cuando un archi
 
 **El desencadenador When a file is classified by a content understanding model (Cuando un archivo se clasifica mediante un desencadenador de modelo de comprensión de contenido**) se puede usar para iniciar un flujo mediante cualquier información extraída del archivo o carpeta.
 
-Por ejemplo, cuando un modelo se marca con la fecha de **clasificación**, puede usar **enviar un correo electrónico después de SharePoint Syntex procesa un** flujo de archivo para notificar a los usuarios que un nuevo archivo se ha procesado y clasificado por un modelo en la biblioteca de documentos de SharePoint.
+Por ejemplo, cuando se marca un modelo con la fecha de **clasificación**, puede usar **enviar un correo electrónico después de que Syntex procese un** flujo de archivos para notificar a los usuarios que un modelo ha procesado y clasificado un nuevo archivo en la biblioteca de documentos de SharePoint.
 
 Para ejecutar el flujo:
 
 1. Seleccione un archivo y, a continuación, seleccione **Integrar** > **Power Automate** > **Crear un flujo**.
 
-2. En el panel **Crear un flujo**, seleccione **Enviar un correo electrónico después de SharePoint Syntex procese un archivo**.
+2. En el panel **Crear un flujo** , seleccione **Enviar un correo electrónico después de que Syntex procese un archivo**.
 
     ![Captura de pantalla que muestra la opción Crear un panel de flujo y flujo resaltada.](../media/content-understanding/integrate-create-flow.png) 
 

@@ -1,5 +1,5 @@
 ---
-title: Resumen del procesamiento de formularios en Microsoft SharePoint Syntex
+title: Información general sobre el procesamiento de formularios en Microsoft Syntex
 ms.author: chucked
 author: chuckedmonson
 manager: pamgreen
@@ -12,26 +12,26 @@ ms.collection:
 - enabler-strategic
 - m365initiative-syntex
 ms.localizationpriority: medium
-description: Obtenga información sobre cómo usar la compilación de IA para crear modelos de procesamiento de formularios en Microsoft SharePoint Syntex.
-ms.openlocfilehash: 327a8b91842f032a1176ab32e84b3f568079e8d2
-ms.sourcegitcommit: 078149c9645ce220911ccd6ce54f984a4c92ce53
+description: Obtenga información sobre cómo usar la compilación de IA para crear modelos de procesamiento de formularios en Microsoft Syntex.
+ms.openlocfilehash: a29ab194f42331218bf75671cfb776c706d2ee46
+ms.sourcegitcommit: ca082da1c51a3f643f152492579eef5679d52bd0
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/20/2022
-ms.locfileid: "67812510"
+ms.lasthandoff: 10/12/2022
+ms.locfileid: "68547519"
 ---
-# <a name="form-processing-overview-in-microsoft-sharepoint-syntex"></a>Resumen del procesamiento de formularios en Microsoft SharePoint Syntex
+# <a name="form-processing-overview-in-microsoft-syntex"></a>Información general sobre el procesamiento de formularios en Microsoft Syntex
 
  ![Generador de IA.](../media/content-understanding/ai-builder.png)</br>
 
-Microsoft SharePoint Syntex usa el procesamiento de formularios del [generador de IA](/ai-builder/overview) de Microsoft PowerApps para crear modelos en las bibliotecas de documentos de SharePoint.
+Microsoft Syntex usa el procesamiento de formularios de Microsoft Power Apps [AI Builder](/ai-builder/overview) para crear modelos en bibliotecas de documentos de SharePoint.
 
 Puede usar el procesamiento de formularios de AI Builder para crear modelos de inteligencia artificial que usen tecnología de aprendizaje automático para identificar y extraer pares clave-valor y datos de tabla de documentos estructurados o semiestructurados, como formularios y facturas.
 
 Las organizaciones suelen recibir facturas en grandes cantidades de diversos orígenes, como correo, fax y correo electrónico. Procesar estos documentos y escribirlos manualmente en una base de datos puede tardar mucho tiempo. Mediante el uso de IA para extraer el texto, los pares clave o de valor y las tablas de los documentos, el procesamiento de formularios automatiza este proceso. 
 
 > [!NOTE]
-> Consulte la guía [Adopción de SharePoint Syntex: Guía de introducción](./adoption-getstarted.md) para obtener más información sobre ejemplos de escenarios de procesamiento de formularios.
+> Consulte la [guía de adopción de Syntex: Introducción](./adoption-getstarted.md) para obtener más información sobre los ejemplos de escenarios de procesamiento de formularios.
 
 Por ejemplo, puede crear un modelo de procesamiento de formularios que identifique todos los documentos de pedido de compra que se hayan cargado en la biblioteca de documentos. A partir de cada pedido de compra, puede extraer y mostrar datos específicos que son importantes para usted, como *el número de pedido* de compra, *la fecha* o el *costo total*.
 
@@ -53,7 +53,7 @@ El procesamiento de formularios admite documentos en más de 73 idiomas. Para ob
 
 ## <a name="multi-geo-environments"></a>Entornos de Multi-Geo
 
-Al configurar SharePoint Syntex en un [entorno de Microsoft 365 Multi-Geo](../enterprise/microsoft-365-multi-geo.md), solo puede configurarlo para usar el procesamiento de formularios en la ubicación central. Si quiere utilizar el procesamiento de formularios en una ubicación satélite, póngase en contacto con el Soporte técnico de Microsoft.
+Al configurar Syntex en un [entorno multigeográfico de Microsoft 365](../enterprise/microsoft-365-multi-geo.md), solo puede configurarlo para usar el procesamiento de formularios en la ubicación central. Si quiere utilizar el procesamiento de formularios en una ubicación satélite, póngase en contacto con el Soporte técnico de Microsoft.
 
 ## <a name="custom-environments"></a>Entornos personalizados
 

@@ -11,20 +11,23 @@ ms.topic: conceptual
 ms.service: O365-seccomp
 ms.localizationpriority: high
 ms.collection:
-- M365-security-compliance
+- purview-compliance
+- tier1
+- highpri
 - SPO_Content
 - m365solution-mip
 - m365initiative-compliance
+- highpri
 search.appverid:
 - MOE150
 - MET150
 description: Pasos prescriptivos para administradores, requisitos de licencia y escenarios comunes que usan etiquetas de confidencialidad para ayudar a proteger los datos de la organización.
-ms.openlocfilehash: c796bf283873e86a569e70d30fb7944a20bd7e2e
-ms.sourcegitcommit: d60d78e6a05845747af0ad25131c7e526d58064d
+ms.openlocfilehash: cb956c413d975c6d0199cb9b8f2d620b35b69fdc
+ms.sourcegitcommit: ca082da1c51a3f643f152492579eef5679d52bd0
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/01/2022
-ms.locfileid: "67498447"
+ms.lasthandoff: 10/12/2022
+ms.locfileid: "68548002"
 ---
 # <a name="get-started-with-sensitivity-labels"></a>Empiece a usar las etiquetas de confidencialidad
 
@@ -32,7 +35,7 @@ ms.locfileid: "67498447"
 
 Para obtener información sobre qué son las etiquetas de confidencialidad y cómo pueden ayudarle a proteger los datos de su organización, vea [Información sobre las etiquetas de confidencialidad](sensitivity-labels.md).
 
-Si tiene [Azure Information Protection](/azure/information-protection/what-is-information-protection) y sigue usando etiquetas de Azure Information Protection administradas desde Azure Portal, deberá migrar estas etiquetas a la [plataforma de etiquetas unificada](/azure/information-protection/faqs#how-can-i-determine-if-my-tenant-is-on-the-unified-labeling-platform). En equipos con Windows, puede [elegir qué cliente de etiquetas desea usar](/azure/information-protection/rms-client/use-client#choose-which-labeling-client-to-use-for-windows-computers) para sus etiquetas de confidencialidad publicadas.
+Si tiene [Azure Information Protection](/azure/information-protection/what-is-information-protection) y sigue usando etiquetas de Azure Information Protection administradas desde Azure Portal, deberá migrar estas etiquetas a la [plataforma de etiquetas unificada](/azure/information-protection/faqs#how-can-i-determine-if-my-tenant-is-on-the-unified-labeling-platform). A continuación, se recomienda deshabilitar el complemento AIP para aplicaciones de Office para beneficiarse de la experiencia de etiquetado integrada más reciente. Para obtener más información, consulte [Migración del complemento de Azure Information Protection (AIP) al etiquetado integrado para aplicaciones de Office](sensitivity-labels-aip.md).
 
 Cuando esté listo para empezar a proteger los datos de la organización mediante etiquetas de confidencialidad:
 
@@ -51,6 +54,8 @@ Flujo básico para la implementación y aplicación de etiquetas de confidencial
 
 ![Diagrama que muestra el flujo de trabajo de las etiquetas de confidencialidad.](../media/Sensitivity-label-flow.png)
 
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
+
 ## <a name="subscription-and-licensing-requirements-for-sensitivity-labels"></a>Requisitos de suscripción y licencias para las etiquetas de confidencialidad
 
 Distintas suscripciones admiten diferentes etiquetas de confidencialidad y los requisitos de licencias para los usuarios dependen de las características que use.
@@ -63,7 +68,7 @@ Los miembros del equipo de cumplimiento que vayan a crear etiquetas de confidenc
 
 De forma predeterminada, los administradores globales de su espacio empresarial tienen acceso a este centro de administración y pueden dar acceso a los oficiales de cumplimiento y a otras personas, sin darles todos los permisos de un administrador de espacio empresarial. Para este acceso administrativo limitado y delegado, agregue usuarios al grupo de roles **Administrador de datos de cumplimiento**, **Administrador de cumplimiento** o **Administrador de seguridad**. 
 
-Como alternativa al uso de los roles predeterminados, puede crear un nuevo grupo de roles y agregar **administrador de etiquetas de confidencialidad** o roles de **configuración de la organización** a este grupo. Para un rol de solo lectura, use **lector de etiquetas de confidencialidad**. 
+Alternatively to using the default roles, you can create a new role group and add either **Sensitivity Label Administrator** or **Organization Configuration** roles to this group. For a read-only role, use **Sensitivity Label Reader**. 
 
 > [!NOTE]
 > Ahora, en la versión preliminar, puede usar los siguientes grupos de roles:
@@ -73,7 +78,7 @@ Como alternativa al uso de los roles predeterminados, puede crear un nuevo grupo
 > - **Investigadores de Information Protection**
 > - **Lectores de Information Protection**
 >
-> Para obtener una explicación de cada uno de ellos y de los nuevos roles que contienen, seleccione un grupo de roles en el <a href="https://go.microsoft.com/fwlink/p/?linkid=2077149" target="_blank">Portal de cumplimiento de Microsoft Purview</a> > **Permisos y roles** > **Centro de cumplimiento** > **Roles** y, a continuación, revise la descripción en el panel desplegable. También puede consultar [Grupos de roles en el Centro de seguridad y cumplimiento](../security/office-365-security/permissions-in-the-security-and-compliance-center.md#role-groups-in-the-security--compliance-center).
+> For an explanation of each one, and the new roles that they contain, select a role group in the <a href="https://go.microsoft.com/fwlink/p/?linkid=2077149" target="_blank">Microsoft Purview compliance portal</a> > **Permissions & roles** > **Compliance center** > **Roles**, and then review the description in the flyout pane. Or, see [Role groups in the Security & Compliance Center](../security/office-365-security/permissions-in-the-security-and-compliance-center.md#role-groups-in-the-security--compliance-center).
 
 Para obtener instrucciones sobre cómo agregar usuarios al grupo de roles predeterminado, roles o crear sus propios grupos de roles, consulte [Permisos en el Portal de cumplimiento de Purview](microsoft-365-compliance-center-permissions.md).
 

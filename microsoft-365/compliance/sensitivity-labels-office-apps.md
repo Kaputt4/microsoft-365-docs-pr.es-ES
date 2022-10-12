@@ -18,12 +18,12 @@ search.appverid:
 - MET150
 description: Información para que los administradores de TI administren las etiquetas de confidencialidad en las aplicaciones de Office para escritorio, móvil y web.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 46008cae997bd71a9c5d165226a728a011d7f058
-ms.sourcegitcommit: 4f8200453d347de677461f27eb5a3802ce5cc888
+ms.openlocfilehash: 939aa04f9326e202610887c52111ae8c5c58b66d
+ms.sourcegitcommit: ca082da1c51a3f643f152492579eef5679d52bd0
 ms.translationtype: MT
 ms.contentlocale: es-ES
 ms.lasthandoff: 10/12/2022
-ms.locfileid: "68542549"
+ms.locfileid: "68546861"
 ---
 # <a name="manage-sensitivity-labels-in-office-apps"></a>Administrar etiquetas de confidencialidad en las aplicaciones de Office
 
@@ -39,15 +39,20 @@ Use the information in this article to help you successfully manage sensitivity 
 
 Para usar las etiquetas de confidencialidad integradas en las aplicaciones de escritorio de Office para Windows y Mac, debe utilizar una edición de suscripción de Office. Este cliente de etiquetado no es compatible con las ediciones independientes de Office, a veces denominadas "Office Perpetua".
 
-Si no puede actualizar a Aplicaciones de Microsoft 365 para empresas para las versiones de suscripción de Office en equipos Windows, puede usar el [Cliente de etiquetado unificado de Azure Information Protection (AIP)](/azure/information-protection/rms-client/aip-clientv2). Sin embargo, este cliente está ahora en [modo de mantenimiento](https://techcommunity.microsoft.com/t5/security-compliance-and-identity/announcing-aip-unified-labeling-client-maintenance-mode-and/ba-p/3043613) y no se recomienda usar el complemento AIP para aplicaciones de Office a menos que deba hacerlo. Para obtener más información, consulte [Por qué elegir el etiquetado integrado en lugar del complemento de AIP para las aplicaciones de Office](sensitivity-labels-aip.md).
+El [cliente de etiquetado unificado de Azure Information Protection (AIP)](/azure/information-protection/rms-client/aip-clientv2) está ahora en [modo de mantenimiento](https://techcommunity.microsoft.com/t5/security-compliance-and-identity/announcing-aip-unified-labeling-client-maintenance-mode-and/ba-p/3043613). Si actualmente usa este cliente para el etiquetado en aplicaciones de Office, se recomienda pasar al etiquetado integrado. Para obtener más información, consulte [Migración del complemento de Azure Information Protection (AIP) al etiquetado integrado para aplicaciones de Office](sensitivity-labels-aip.md).
 
 ## <a name="support-for-sensitivity-label-capabilities-in-apps"></a>Compatibilidad con las funciones de las etiquetas de confidencialidad en las aplicaciones
 
-En las tablas siguientes se muestra la versión mínima de Office que introdujo funcionalidades específicas para las etiquetas de confidencialidad integradas en las aplicaciones de Office. O bien, si la función de la etiqueta está en vista previa pública o en revisión para una versión futura. Use el [plan de desarrollo de Microsoft 365](https://www.microsoft.com/microsoft-365/roadmap?filters=Microsoft%20Information%20Protection&searchterms=label) para obtener detalles sobre las nuevas funcionalidades que están planeadas para futuras versiones.
+En las tablas siguientes se muestra la versión mínima de Office que introdujo funcionalidades específicas para las etiquetas de confidencialidad integradas en las aplicaciones de Office. O bien, si la funcionalidad de etiqueta está en versión preliminar pública o en revisión para una versión futura:
+
+- Tabla: [Funcionalidades de etiqueta de confidencialidad en Word, Excel y PowerPoint](#sensitivity-label-capabilities-in-word-excel-and-powerpoint)
+- Tabla: [Funcionalidades de etiqueta de confidencialidad en Outlook](#sensitivity-label-capabilities-in-outlook)
+
+Use el [plan de desarrollo de Microsoft 365](https://www.microsoft.com/microsoft-365/roadmap?filters=Microsoft%20Information%20Protection&searchterms=label) para obtener detalles sobre las nuevas funcionalidades que están planeadas para futuras versiones.
 
 Las nuevas versiones de las aplicaciones de Office están disponibles en diferentes momentos para diferentes canales de actualización. Para Windows, las nuevas funciones se obtienen antes cuando se encuentra en el Canal actual o el Canal mensual para empresas, en lugar del Canal semestral para empresas. Los números de versión mínimos también pueden ser diferentes de un canal de actualización al siguiente. Para obtener más información, vea [Introducción a los canales de actualización para las Aplicaciones de Microsoft 365](/deployoffice/overview-update-channels) y [Actualizar historial para las Aplicaciones Microsoft 365](/officeupdates/update-history-microsoft365-apps-by-date).
 
-Las nuevas funciones que están en vista previa privada no se incluyen en la tabla, pero es posible que pueda unirse a estas vistas previas nominando a su organización para el programa de vista previa privada de [Microsoft Information Protection](https://aka.ms/mip-preview).
+Las nuevas funcionalidades que se encuentran en versión preliminar privada no se incluyen en las tablas, pero es posible que pueda unirse a estas versiones preliminares mediante la nominación de su organización para el [programa de Microsoft Information Protection versión preliminar privada](https://aka.ms/mip-preview).
 
 Office para iOS y Office para Android: Las etiquetas de confidencialidad están integradas en las [aplicación de Office](https://www.microsoft.com/en-us/microsoft-365/blog/2020/02/19/new-office-app-android-ios-available/).
 
@@ -65,6 +70,7 @@ Los números indicados son las versiones mínimas de la aplicación Office reque
  
 |Funcionalidad |Windows |Mac |iOS |Android |Web |
 |-----------|-------:|----|----|--------|----|
+|[Complemento de AIP deshabilitado de forma predeterminada](sensitivity-labels-aip.md#how-to-configure-newer-versions-of-office-to-enable-the-aip-add-in)| Versión preliminar: implementando en [Canal Beta](https://office.com/insider) | No es relevante  | No es relevante | No es relevante| No es relevante |
 |[Aplicar, cambiar o eliminar manualmente la etiqueta](https://support.microsoft.com/en-us/office/apply-sensitivity-labels-to-your-files-and-email-in-office-2f96e7cd-d5a4-403b-8bd7-4cc636bae0f9)| Canal actual: 1910+ <br /><br> Canal mensual para empresas: 1910+ <br /><br> Canal semestral para empresas: 2002+ | 16.21+     | 2.21+ | 16.0.11231+ | [Sí - participar](sensitivity-labels-sharepoint-onedrive-files.md) |
 |[Compatibilidad con varios idiomas](create-sensitivity-labels.md#additional-label-settings-with-security--compliance-powershell)| Canal actual: 1910+ <br /><br> Canal mensual para empresas: 1910+ <br /><br> Canal semestral para empresas: 2002+ | 16.21+     | 2.21+ | 16.0.11231+ | En revisión |
 |[Aplicar una etiqueta predeterminada](sensitivity-labels.md#what-label-policies-can-do) a nuevos documentos                                         | Canal actual: 1910+ <br /><br> Canal mensual para empresas: 1910+ <br /><br> Canal semestral para empresas: 2002+ | 16.21+     | 2.21+ | 16.0.11231+ | [Sí - participar](sensitivity-labels-sharepoint-onedrive-files.md)                                                        |
@@ -93,6 +99,7 @@ Los números indicados son las versiones mínimas de la aplicación Office reque
 
 |Funcionalidad |Outlook para Windows |Outlook para Mac |Outlook en iOS |Outlook en Android |Outlook en la Web |
 |-----------|-------------------:|----------------|---------------|-------------------|-------------------|
+|[Complemento de AIP deshabilitado de forma predeterminada](sensitivity-labels-aip.md#how-to-configure-newer-versions-of-office-to-enable-the-aip-add-in)| Versión preliminar: implementando en [Canal Beta](https://office.com/insider) | No es relevante  | No es relevante | No es relevante| No es relevante |
 |[Aplicar, cambiar o eliminar manualmente la etiqueta](https://support.microsoft.com/en-us/office/apply-sensitivity-labels-to-your-files-and-email-in-office-2f96e7cd-d5a4-403b-8bd7-4cc636bae0f9)| Canal actual: 1910+ <br /><br> Canal mensual para empresas: 1910+ <br /><br> Canal semestral para empresas: 2002+ | 16.21+                 | 4.7.1+         | 4.0.39+           | Sí               |
 |[Compatibilidad con varios idiomas](create-sensitivity-labels.md#additional-label-settings-with-security--compliance-powershell)| Canal actual: 1910+ <br /><br> Canal mensual para empresas: 1910+ <br /><br> Canal semestral para empresas: 2002+ | 16.21+ | 4.7.1+ | 4.0.39+ | Sí |
 |[Aplicar una etiqueta predeterminada](sensitivity-labels.md#what-label-policies-can-do)                                         | Canal actual: 1910+ <br /><br> Canal mensual para empresas: 1910+ <br /><br> Canal semestral para empresas: 2002+ | 16.21+                 | 4.7.1+         | 4.0.39+           | Sí               |
@@ -118,12 +125,12 @@ Los números indicados son las versiones mínimas de la aplicación Office reque
 
 ## <a name="office-built-in-labeling-client-and-the-azure-information-protection-client"></a>El cliente de etiquetado integrado de Office y el cliente de Azure Information Protection
 
-Si los usuarios tienen el [cliente de Azure Information Protection (AIP)](/azure/information-protection/rms-client/aip-clientv2) instalado en sus equipos Windows, de forma predeterminada, las etiquetas integradas se desactivan en [Aplicaciones de Windows Office que las admiten](#labeling-client-for-desktop-apps). Dado que las etiquetas integradas no usan un complemento de Office, tal y como las usa el cliente de AIP, tienen la ventaja de una mayor estabilidad y un mejor rendimiento. También admiten las características más recientes, como clasificadores avanzados. 
+Si los usuarios tienen instalado el [cliente de Azure Information Protection (AIP)](/azure/information-protection/rms-client/aip-clientv2) en sus equipos Windows, las etiquetas integradas son el nuevo valor predeterminado para las aplicaciones de Windows Office más recientes que [admiten el etiquetado](#labeling-client-for-desktop-apps). Dado que las etiquetas integradas no usan un complemento de Office, tal y como las usa el cliente de AIP, tienen la ventaja de una mayor estabilidad y un mejor rendimiento. También admiten las características más recientes, como clasificadores avanzados.
 
 > [!NOTE]
-> Si no ve las características de etiquetado que se espera en equipos Windows, a pesar de confirmar las versiones mínimas admitidas para el canal de actualización de Office, puede deberse a que necesita [deshabilitar el complemento de AIP](sensitivity-labels-aip.md#how-to-disable-the-aip-add-in-to-use-built-in-labeling-for-office-apps).
+> Si no ve las características de etiquetado que espera en los equipos Windows, a pesar de confirmar las versiones mínimas admitidas para el canal de actualización de Office, es posible que tenga que [deshabilitar el complemento AIP](sensitivity-labels-aip.md#how-to-disable-the-aip-add-in-to-use-built-in-labeling-for-office-apps) para versiones anteriores de Office.
 
-Para obtener más información sobre la compatibilidad de etiquetado con el cliente de AIP, y cómo deshabilitar este cliente justamente en las aplicaciones de Office, consulte [Por qué elegir el etiquetado integrado en lugar del complemento de AIP para las aplicaciones de Office](sensitivity-labels-aip.md).
+Para obtener más información sobre la compatibilidad con el etiquetado con el cliente de AIP y cómo deshabilitar este cliente solo en aplicaciones de Office, consulte [Migración del complemento de Azure Information Protection (AIP) al etiquetado integrado para aplicaciones de Office](sensitivity-labels-aip.md).
 
 ## <a name="if-you-need-to-turn-off-built-in-labeling-in-office-apps-on-windows"></a>Si necesita desactivar el etiquetado integrado en las aplicaciones de Office en Windows
 
