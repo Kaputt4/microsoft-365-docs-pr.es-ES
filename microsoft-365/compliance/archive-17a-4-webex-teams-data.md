@@ -1,5 +1,6 @@
 ---
 title: Configuración de un conector para archivar datos de Cisco Webex en Microsoft 365
+description: Aprenda a configurar y usar un conector DataParser de Cisco Webex DataParser 17a-4 para importar y archivar datos de Cisco Webex en Microsoft 365.
 f1.keywords:
 - NOCSH
 ms.author: robmazz
@@ -10,20 +11,24 @@ audience: Admin
 ms.topic: how-to
 ms.service: O365-seccomp
 ms.localizationpriority: medium
-ms.collection: M365-security-compliance
-description: Aprenda a configurar y usar un conector DataParser de Cisco Webex DataParser 17a-4 para importar y archivar datos de Cisco Webex en Microsoft 365.
-ms.openlocfilehash: 20e36c2155b654db43c526cf8d53bde25056f9ac
-ms.sourcegitcommit: 433f5b448a0149fcf462996bc5c9b45d17bd46c6
+ms.collection:
+- tier3
+- purview-compliance
+- data-connectors
+ms.openlocfilehash: 449848064c29f9488d7bb836ae6882fbfd043863
+ms.sourcegitcommit: 8d3c027592a638f411f87d89772dd3d39e92aab0
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/20/2022
-ms.locfileid: "67820799"
+ms.lasthandoff: 10/12/2022
+ms.locfileid: "68535917"
 ---
 # <a name="set-up-a-connector-to-archive-cisco-webex-data"></a>Configuración de un conector para archivar datos de Cisco Webex
 
 Utilice [Cisco Webex DataParser](https://www.17a-4.com/webex-dataparser/) de 17a-4 LLC para importar y archivar datos de la plataforma Cisco Cisco Webex a buzones de usuario en su organización de Microsoft 365. DataParser incluye un conector De Cisco Webex configurado para capturar elementos de un origen de datos de terceros e importarlos a Microsoft 365. El conector DataParser de Cisco Webex convierte los datos de Cisco Webex en un formato de mensaje de correo electrónico y, a continuación, importa esos elementos a buzones de usuario en Microsoft 365.
 
 Una vez que los datos de Cisco Webex se almacenan en buzones de usuario, puede aplicar características de Microsoft Purview como suspensión por juicio, exhibición de documentos electrónicos, directivas de retención y etiquetas de retención y cumplimiento de comunicaciones. El uso de un conector de Cisco Webex para importar y archivar datos en Microsoft 365 puede ayudar a su organización a cumplir las directivas gubernamentales y normativas.
+
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
 
 ## <a name="overview-of-archiving-cisco-webex-data"></a>Introducción al archivado de datos de Cisco Webex
 
@@ -33,7 +38,7 @@ En la información general siguiente se explica el proceso de uso de un conector
 
 1. Su organización funciona con 17a-4 para configurar y configurar Cisco Webex DataParser.
 
-2. De forma regular, los elementos de Cisco Webex son recopilados por DataParser. DataParser también convierte el contenido de un mensaje en un formato de mensaje de correo electrónico.
+2. Con regularidad, los elementos de Cisco Webex son recopilados por DataParser. DataParser también convierte el contenido de un mensaje en un formato de mensaje de correo electrónico.
 
 3. El conector DataParser de Cisco Webex que se crea en el portal de cumplimiento Microsoft Purview se conecta a DataParser y transfiere los mensajes a una ubicación segura de Azure Storage en la nube de Microsoft.
 
@@ -51,13 +56,13 @@ En la información general siguiente se explica el proceso de uso de un conector
 
 El primer paso es acceder a la página Conectores de datos en el portal de cumplimiento y crear un conector 17a-4 para los datos de Cisco Webex.
 
-1. Vaya a <https://compliance.microsoft.com> y haga clic en **Conectores** >  de datos **Cisco Webex DataParser**.
+1. Vaya a <https://compliance.microsoft.com> y seleccione **Conectores** >  de datos **Cisco Webex DataParser**.
 
-2. En la página de descripción del producto **DataParser de Cisco Webex** , haga clic en **Agregar conector**.
+2. En la página de descripción del producto **DataParser de Cisco Webex** , seleccione **Agregar conector**.
 
-3. En la página **Términos de servicio** , haga clic en **Aceptar**.
+3. En la página **Términos de servicio** , seleccione **Aceptar**.
 
-4. Escriba un nombre único que identifique el conector y, a continuación, haga clic en **Siguiente**.
+4. Escriba un nombre único que identifique el conector y, a continuación, seleccione **Siguiente**.
 
 5. Inicie sesión en su cuenta 17a-4 y complete los pasos del Asistente para conexión de DataParser de Cisco Webex.
 
@@ -73,11 +78,11 @@ El conector DataParser de Cisco Webex asignará automáticamente los usuarios a 
 
 Después de crear un conector DataParser de Cisco Webex, puede ver el estado del conector en el portal de cumplimiento.
 
-1. Vaya a <https://compliance.microsoft.com> y haga clic en **Conectores de datos** en el panel de navegación izquierdo.
+1. Vaya a <https://compliance.microsoft.com> y seleccione **Conectores de datos** en el panel de navegación izquierdo.
 
-2. Haga clic en la pestaña **Conectores** y, a continuación, seleccione el conector DataParser de Cisco Webex que creó para mostrar la página de control flotante, que contiene las propiedades y la información sobre el conector.
+2. Seleccione la pestaña **Conectores** y, a continuación, seleccione el conector DataParser de Cisco Webex que creó para mostrar la página de control flotante, que contiene las propiedades y la información sobre el conector.
 
-3. En **Estado del conector con origen**, haga clic en el vínculo **Descargar registro** para abrir (o guardar) el registro de estado del conector. Este registro contiene información sobre los datos que se han importado a la nube de Microsoft. Para obtener más información, consulte [Visualización de registros de administración para conectores de datos](data-connector-admin-logs.md).
+3. En **Estado del conector con origen**, seleccione el vínculo **Descargar registro** para abrir (o guardar) el registro de estado del conector. Este registro contiene información sobre los datos que se han importado a la nube de Microsoft. Para obtener más información, consulte [Visualización de registros de administración para conectores de datos](data-connector-admin-logs.md).
 
 ## <a name="known-issues"></a>Problemas conocidos
 

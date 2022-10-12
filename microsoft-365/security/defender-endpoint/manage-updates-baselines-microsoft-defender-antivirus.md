@@ -7,7 +7,7 @@ ms.mktglfcycl: manage
 ms.sitesec: library
 ms.pagetype: security
 ms.localizationpriority: high
-ms.date: 09/27/2022
+ms.date: 10/10/2022
 audience: ITPro
 ms.topic: reference
 author: denisebmsft
@@ -20,12 +20,12 @@ ms.collection:
 - m365-security
 - tier2
 search.appverid: met150
-ms.openlocfilehash: 317f2b6e59ee5c0a787dd78e23d7a96f7377efb5
-ms.sourcegitcommit: 4e42bafee965446f44f7f57d1defed2b9b24fce8
+ms.openlocfilehash: 48fb6a2e4ec0c77a17e1ea0fedd95244485232bc
+ms.sourcegitcommit: 8d3c027592a638f411f87d89772dd3d39e92aab0
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/30/2022
-ms.locfileid: "68231844"
+ms.lasthandoff: 10/12/2022
+ms.locfileid: "68536464"
 ---
 # <a name="manage-microsoft-defender-antivirus-updates-and-apply-baselines"></a>Para obtener más información, consulte Administrar actualizaciones de Antivirus de Microsoft Defender y aplicar bases de referencia.
 
@@ -89,6 +89,37 @@ Todas nuestras actualizaciones contienen
 - Mejoras de integración (nube, [Microsoft 365 Defender](/microsoft-365/security/defender/microsoft-365-defender))
 <br/><br/>
 <details>
+<summary>Septiembre de 2022 (Plataforma: 4.18.2209.x | Motor: 1.1.19700.3)</summary>
+
+&ensp;Versión de actualización de inteligencia de seguridad: **1.377.8.0**<br/>
+&ensp;Fecha de lanzamiento: **10 de octubre de 2022**<br/>
+&ensp;Plataforma: **4.18.2209.x**<br/>
+&ensp;Motor: **1.1.19700.3**<br/>
+&ensp;Fase de soporte técnico: **Actualizaciones críticas y de seguridad**<br/>
+
+Versión del motor: 1.1.19700.3<br/>
+Versión de actualización de inteligencia de seguridad: 1.377.8.0<br/>
+
+### <a name="whats-new"></a>Novedades
+
+- Procesamiento mejorado del pedido de reserva de Defender en la SKU del servidor
+- Se han corregido las actualizaciones de Defender durante el proceso de OOBE.
+- Se ha corregido la vulnerabilidad del descriptor de seguridad del instalador de confianza.
+- Se ha corregido la visibilidad de [exclusiones de antivirus de Microsoft Defender](configure-exclusions-microsoft-defender-antivirus.md)
+- Salida fija del orden de reserva del cmdlet de PowerShell
+- Se ha corregido un error de actualización de la plataforma Defender en las SKU de Server Core 2019
+- Compatibilidad mejorada con la protección para configuraciones de deshabilitación de Defender en SKU de servidor
+- Lógicas de configuración mejoradas de Defender para la [protección contra alteraciones](prevent-changes-to-security-settings-with-tamper-protection.md) en servidores
+- Se ha mejorado el modo WARN para la [regla ASR](attack-surface-reduction-rules-reference.md).
+- Control mejorado de certificados de OSX  
+- Registro mejorado para examinar la ubicación de FilesStash
+- A partir de la versión de plataforma 4.18.2208.0 y versiones posteriores: si un servidor se ha [incorporado a Microsoft Defender para punto de conexión](onboard-configure.md#onboard-devices-to-the-service), la configuración de directiva de [grupo](configure-endpoints-gp.md#update-endpoint-protection-configuration) "Desactivar Windows Defender" ya no deshabilitará completamente Windows Defender Antivirus activado. Windows Server 2012 sistemas operativos R2 y posteriores. En su lugar, se omitirá (si [ForceDefenderPassiveMode](switch-to-mde-phase-2.md#set-microsoft-defender-antivirus-to-passive-mode-on-windows-server) está configurado explícitamente) o colocará Microsoft Defender Antivirus en [modo pasivo](microsoft-defender-antivirus-windows.md#comparing-active-mode-passive-mode-and-disabled-mode) (si `ForceDefenderPassiveMode` no está configurado). Además, la [protección contra alteraciones](prevent-changes-to-security-settings-with-tamper-protection.md) permitirá cambiar al modo activo mediante el cambio `ForceDefenderPassiveMode` a `0`, pero no al modo pasivo. Estos cambios solo se aplican a los servidores incorporados a Microsoft Defender para punto de conexión. Para obtener más información, consulte [Microsoft Defender Compatibilidad de Antivirus con otros productos de seguridad](/microsoft-365/security/defender-endpoint/microsoft-defender-antivirus-compatibility#microsoft-defender-antivirus-and-non-microsoft-antivirusantimalware-solutions).
+
+### <a name="known-issues"></a>Problemas conocidos
+
+- Es posible que algunos clientes hayan recibido las actualizaciones de la plataforma 4.18.2209.2 desde la versión preliminar. Puede hacer que el servicio se bloquee en el estado de inicio después de la actualización.  
+<br/><br/>
+</details><details>
 <summary>Agosto de 2022 (Plataforma: 4.18.2207.7 | Motor: 1.1.19600.3)</summary>
 
 &ensp;Versión de actualización de inteligencia de seguridad: **1.373.1647.0**<br/>
@@ -132,7 +163,7 @@ Versión de actualización de inteligencia de seguridad: 1.373.219.0 <br/>
 - Mejora del rendimiento del almacenamiento en caché de la [interfaz de examen de antimalware (AMSI)](/windows/win32/amsi/antimalware-scan-interface-portal) 
 - Detección y corrección mejoradas para macros relacionadas con [Microsoft Visual Basic para Aplicaciones](/office/vba/language/concepts/getting-started/64-bit-visual-basic-for-applications-overview) (VBA) 
 - Procesamiento mejorado de exclusiones de AMSI 
-- Se ha corregido la detección de interbloqueos en el procesamiento de reglas del Sistema de prevención de intrusiones de host (HIPS). (Para obtener información adicional sobre HIPS y Defender para punto de conexión, vea [Migrar de un HIPS de terceros a reglas de ASR](migrating-asr-rules.md)). 
+- Se ha corregido la detección de interbloqueos en el procesamiento de reglas del Sistema de prevención de intrusiones de host (HIPS). (Para obtener más información sobre HIPS y Defender para punto de conexión, consulte [Migración de hips de terceros a reglas de ASR](migrating-asr-rules.md)). 
 - Se ha corregido una fuga de memoria en la que `MsMpEng.exe` consumía bytes privados. (Si el uso elevado de CPU también es un problema, consulte [Uso elevado de CPU debido al Antivirus de Microsoft Defender](troubleshooting-mode-scenarios.md)). 
 - Se ha corregido el interbloqueo con la [supervisión del comportamiento](configure-real-time-protection-microsoft-defender-antivirus.md) 
 - Validación de confianza mejorada 
@@ -151,14 +182,21 @@ Versión de actualización de inteligencia de seguridad: 1.373.219.0 <br/>
 - Los clientes que implementan la actualización de plataforma 4.18.2207.5 pueden experimentar retrasos en el rendimiento de red que podrían afectar a las aplicaciones.
 
 <br/><br/>
-</details><details>
+</details>
+
+
+### <a name="previous-version-updates-technical-upgrade-support-only"></a>Actualizaciones de la versión anterior: solo soporte técnico para actualizaciones técnicas
+
+Una vez publicada la nueva versión del paquete, la compatibilidad con las dos versiones anteriores se reduce solo al soporte técnico. Las versiones anteriores a ésta se enumeran en esta sección, y solo se proporcionan para el apoyo técnico de actualización.<br/><br/>
+
+<details>
 <summary>Mayo de 2022 (Plataforma: 4.18.2205.7 | Motor: 1.1.19300.2)</summary>
 
 &ensp;Versión de actualización de inteligencia de seguridad: **1.369.88.0**<br/>
 &ensp;Publicación:**22 de junio de 2022**<br/>
 &ensp;Plataforma: **4.18.2205.7**<br/>
 &ensp;Motor: **1.1.19300.2**<br/>
-&ensp;Fase de soporte técnico: **Actualizaciones críticas y de seguridad**<br/>
+&ensp;Fase de soporte técnico: **soporte técnico de actualización (únicamente)**<br/>
 
 Versión del motor: 1.1.19300.2<br/>
 Versión de actualización de inteligencia de seguridad: 1.369.88.0<br/>
@@ -178,14 +216,7 @@ Versión de actualización de inteligencia de seguridad: 1.369.88.0<br/>
 No hay problemas conocidos
 
 <br/><br/>
-</details>
-
-
-### <a name="previous-version-updates-technical-upgrade-support-only"></a>Actualizaciones de la versión anterior: solo soporte técnico para actualizaciones técnicas
-
-Una vez publicada la nueva versión del paquete, la compatibilidad con las dos versiones anteriores se reduce solo al soporte técnico. Las versiones anteriores a ésta se enumeran en esta sección, y solo se proporcionan para el apoyo técnico de actualización.<br/><br/>
-
-<details>
+</details><details>
 <summary>Marzo 2022 *ACTUALIZACIÓN* (plataforma: 4.18.2203.5 | Motor: 1.1.19200.5)</summary>
 
 *Los clientes que aplicaron la actualización del motor de Microsoft Defender de marzo de 2022 (**1.1.19100.5**) podrían haber encontrado un uso elevado de recursos (CPU o memoria). Microsoft ha publicado una actualización (**1.1.19200.5**) que resuelve los errores introducidos en la versión anterior. Se recomienda a los clientes actualizar al menos a esta nueva compilación de motor de Antivirus Engine (**1.1.19200.5**). Para asegurarse de que los problemas de rendimiento están totalmente corregidos, se recomienda reiniciar los equipos después de aplicar la actualización.*
@@ -407,7 +438,7 @@ No hay problemas conocidos
 - Nuevos controles para administrar el proceso de implementación gradual de las actualizaciones de Microsoft Defender. Para más información [gestionar el proceso de despliegue gradual de las actualizaciones del Antivirus de Microsoft Defender.](manage-gradual-rollout.md).
 - Mejora del motor de supervisión de comportamiento
 - Mejoras en la implementación de definiciones de antimalware
-- Inspecciones de eventos de la red Extended Edge
+- Inspecciones extendidas de eventos de red de Microsoft Edge
 
 ### <a name="known-issues"></a>Problemas conocidos
 No hay problemas conocidos
@@ -810,6 +841,21 @@ We recommend updating your Windows 10 (Enterprise, Pro, and Home editions), Wind
 Para obtener más información, vea [las imágenes de instalación de Microsoft Defender para el sistema operativo Windows](https://support.microsoft.com/help/4568292/defender-update-for-windows-operating-system-installation-images).
 
 <details>
+<summary>20220929.1</summary>
+
+&ensp;Versión del paquete: **2020929.1**<br/>
+&ensp;Versión de la plataforma: **4.18.2207.7**<br/>
+&ensp;Versión del motor: **1.1.19600.3**<br/>
+&ensp;Versión de firma: **1.373.1243.0**<br/>
+
+### <a name="fixes"></a>Correcciones
+- Ninguno
+
+### <a name="additional-information"></a>Información adicional
+- Ninguno
+
+<br/>
+</details><details>
 <summary>20220925.2</summary>
 
 &ensp;Versión del paquete: **2020925.2**<br/>

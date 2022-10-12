@@ -1,5 +1,6 @@
 ---
 title: Configuración de un conector para archivar Skype Empresarial Server datos en Microsoft 365
+description: Obtenga información sobre cómo configurar y usar un conector DataParser de 17a-4 Skype Empresarial Server para importar y archivar Skype Empresarial Server datos en Microsoft 365.
 f1.keywords:
 - NOCSH
 ms.author: robmazz
@@ -10,20 +11,24 @@ audience: Admin
 ms.topic: how-to
 ms.service: O365-seccomp
 ms.localizationpriority: medium
-ms.collection: M365-security-compliance
-description: Obtenga información sobre cómo configurar y usar un conector DataParser de 17a-4 Skype Empresarial Server para importar y archivar Skype Empresarial Server datos en Microsoft 365.
-ms.openlocfilehash: 72392b6dc3999ad2d76ec341b311cb5ec8ba5d1c
-ms.sourcegitcommit: 433f5b448a0149fcf462996bc5c9b45d17bd46c6
+ms.collection:
+- tier3
+- purview-compliance
+- data-connectors
+ms.openlocfilehash: ec30fa428af806f2cb729351276aae62251b4b8d
+ms.sourcegitcommit: 8d3c027592a638f411f87d89772dd3d39e92aab0
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/20/2022
-ms.locfileid: "67824584"
+ms.lasthandoff: 10/12/2022
+ms.locfileid: "68534352"
 ---
 # <a name="set-up-a-connector-to-archive-skype-for-business-server-data"></a>Configuración de un conector para archivar datos Skype Empresarial Server
 
 Use [DataParser de Skype Server](https://www.17a-4.com/skype-server-dataparser/) de 17a-4 LLC para importar y archivar datos de un Skype Empresarial Server a buzones de usuario de su organización de Microsoft 365. DataParser incluye un conector de Skype Empresarial configurado para capturar elementos de un origen de datos de terceros e importarlos a Microsoft 365. El conector Skype Empresarial Server DataParser convierte Skype Empresarial Server datos en un formato de mensaje de correo electrónico y, a continuación, importa esos elementos a buzones de usuario en Microsoft 365.
 
 Después de Skype Empresarial Server datos se almacenan en buzones de usuario, puede aplicar características de Microsoft Purview como suspensión por juicio, exhibición de documentos electrónicos, directivas de retención y etiquetas de retención y cumplimiento de comunicaciones. El uso de un conector de Skype Empresarial Server para importar y archivar datos en Microsoft 365 puede ayudar a su organización a cumplir las directivas gubernamentales y normativas.
+
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
 
 ## <a name="overview-of-archiving-skype-for-business-server-data"></a>Introducción al archivado de datos Skype Empresarial Server
 
@@ -33,7 +38,7 @@ En la información general siguiente se explica el proceso de uso de un conector
 
 1. Su organización funciona con 17a-4 para configurar y configurar la Skype Empresarial Server DataParser.
 
-2. De forma periódica, dataParser recopila Skype Empresarial Server elementos. DataParser también convierte el contenido de un mensaje en un formato de mensaje de correo electrónico.
+2. DataParser recopila periódicamente Skype Empresarial Server elementos. DataParser también convierte el contenido de un mensaje en un formato de mensaje de correo electrónico.
 
 3. El conector Skype Empresarial Server DataParser que se crea en el portal de cumplimiento Microsoft Purview se conecta a DataParser y transfiere los mensajes a una ubicación segura de Azure Storage en la nube de Microsoft.
 
@@ -51,13 +56,13 @@ En la información general siguiente se explica el proceso de uso de un conector
 
 El primer paso consiste en acceder a la página Conectores de datos del portal de cumplimiento y crear un conector 17a-4 para Skype Empresarial Server datos.
 
-1. Vaya a y, a <https://compliance.microsoft.com> continuación, haga clic en **Conectores** >  de **datos Skype Empresarial Server DataParser**.
+1. Vaya a y, a <https://compliance.microsoft.com> continuación, seleccione **Conectores** >  de **datos Skype Empresarial Server DataParser**.
 
-2. En la página **Skype Empresarial Server descripción del producto DataParser**, haga clic en **Agregar conector**.
+2. En la página **Skype Empresarial Server descripción del producto DataParser**, seleccione **Agregar conector**.
 
-3. En la página **Términos de servicio** , haga clic en **Aceptar**.
+3. En la página **Términos de servicio** , seleccione **Aceptar**.
 
-4. Escriba un nombre único que identifique el conector y, a continuación, haga clic en **Siguiente**.
+4. Escriba un nombre único que identifique el conector y, a continuación, seleccione **Siguiente**.
 
 5. Inicie sesión en su cuenta de 17a-4 y complete los pasos del asistente de conexión Skype Empresarial Server DataParser.
 
@@ -73,11 +78,11 @@ El conector Skype Empresarial Server DataParser asignará automáticamente los u
 
 Después de crear un conector Skype Empresarial Server DataParser, puede ver el estado del conector en el portal de cumplimiento.
 
-1. Vaya a <https://compliance.microsoft.com> y haga clic en **Conectores de datos** en el panel de navegación izquierdo.
+1. Vaya a <https://compliance.microsoft.com> y seleccione **Conectores de datos** en el panel de navegación izquierdo.
 
-2. Haga clic en la pestaña **Conectores** y, a continuación, seleccione el conector Skype Empresarial Server DataParser que creó para mostrar la página de control flotante, que contiene las propiedades y la información sobre el conector.
+2. Seleccione la pestaña **Conectores** y, a continuación, seleccione la Skype Empresarial Server conector DataParser que creó para mostrar la página de control flotante, que contiene las propiedades y la información sobre el conector.
 
-3. En **Estado del conector con origen**, haga clic en el vínculo **Descargar registro** para abrir (o guardar) el registro de estado del conector. Este registro contiene información sobre los datos que se han importado a la nube de Microsoft. Para obtener más información, consulte [Visualización de registros de administración para conectores de datos](data-connector-admin-logs.md).
+3. En **Estado del conector con origen**, seleccione el vínculo **Descargar registro** para abrir (o guardar) el registro de estado del conector. Este registro contiene información sobre los datos que se han importado a la nube de Microsoft. Para obtener más información, consulte [Visualización de registros de administración para conectores de datos](data-connector-admin-logs.md).
 
 ## <a name="known-issues"></a>Problemas conocidos
 

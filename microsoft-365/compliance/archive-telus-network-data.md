@@ -1,5 +1,6 @@
 ---
 title: Configuración de un conector para archivar datos de la red TELUS en Microsoft 365
+description: Los administradores pueden configurar un conector TeleMessage para importar y archivar datos SMS desde la red TELUS en Microsoft 365. Esto le permite archivar datos de orígenes de datos de terceros en Microsoft 365 para que pueda usar características de cumplimiento como la suspensión legal, la búsqueda de contenido y las directivas de retención para administrar los datos de terceros de su organización.
 f1.keywords:
 - NOCSH
 ms.author: robmazz
@@ -10,20 +11,24 @@ audience: Admin
 ms.topic: how-to
 ms.service: O365-seccomp
 ms.localizationpriority: medium
-ms.collection: M365-security-compliance
-description: Los administradores pueden configurar un conector TeleMessage para importar y archivar datos SMS desde la red TELUS en Microsoft 365. Esto le permite archivar datos de orígenes de datos de terceros en Microsoft 365 para que pueda usar características de cumplimiento como la suspensión legal, la búsqueda de contenido y las directivas de retención para administrar los datos de terceros de su organización.
-ms.openlocfilehash: 7143dafa54d1458b8ac860713c8ca7520128ff69
-ms.sourcegitcommit: 433f5b448a0149fcf462996bc5c9b45d17bd46c6
+ms.collection:
+- tier3
+- purview-compliance
+- data-connectors
+ms.openlocfilehash: 23b65673d61962c81efff5c06649468a5ce1ffbd
+ms.sourcegitcommit: 8d3c027592a638f411f87d89772dd3d39e92aab0
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/20/2022
-ms.locfileid: "67822185"
+ms.lasthandoff: 10/12/2022
+ms.locfileid: "68533890"
 ---
 # <a name="set-up-a-connector-to-archive-telus-network-data"></a>Configuración de un conector para archivar datos de la red TELUS
 
 Use el conector TeleMessage en el portal de cumplimiento Microsoft Purview para importar y archivar datos del Servicio de mensajería breve (SMS) de la red TELUS de su organización. Después de configurar y configurar un conector, se conecta a la red TELUS de su organización una vez al día e importa datos SMS a buzones de Correo de Microsoft 365.
 
 Una vez que los mensajes SMS se almacenan en buzones de usuario, puede aplicar las características de Microsoft Purview, como la suspensión por juicio, la búsqueda de contenido y las directivas de retención de Microsoft 365 a los datos de TELUS. Por ejemplo, puede buscar mensajes SMS de TELUS mediante búsqueda de contenido o asociar el buzón que contiene los datos de TELUS con un custodio en un caso de eDiscovery (Premium). El uso de un conector de red TELUS para importar y archivar datos en Microsoft 365 puede ayudar a su organización a cumplir las directivas gubernamentales y normativas.
+
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
 
 ## <a name="overview-of-archiving-telus-network-data"></a>Información general sobre el archivado de datos de red TELUS
 
@@ -61,13 +66,13 @@ Algunos de los pasos de implementación necesarios para archivar los datos de la
 
 Una vez completados los requisitos previos descritos en la sección anterior, puede crear el conector de red TELUS en el portal de cumplimiento. El conector usa la información que proporciona para conectarse al sitio de TeleMessage y transferir mensajes SMS a los cuadros de buzón de usuario correspondientes de Microsoft 365.
 
-1. Vaya a y, a [https://compliance.microsoft.com](https://compliance.microsoft.com/) continuación, haga clic en **Conectores** >  de datos **TELUS Network**.
+1. Vaya a y, a [https://compliance.microsoft.com](https://compliance.microsoft.com/) continuación, seleccione **Conectores** >  de datos **TELUS Network**.
 
-2. En la página de descripción **del producto TELUS Network**, haga clic en **Agregar conector**.
+2. En la página **de descripción del producto Red TELUS**, seleccione **Agregar conector**.
 
-3. En la página **Términos de servicio** , haga clic en **Aceptar**.
+3. En la página **Términos de servicio** , seleccione **Aceptar**.
 
-4. En la página **Iniciar sesión en TeleMessage** , en el paso 3, escriba la información necesaria en los cuadros siguientes y, a continuación, haga clic en **Siguiente**.
+4. En la página **Iniciar sesión en TeleMessage** , en el paso 3, escriba la información necesaria en los cuadros siguientes y, a continuación, seleccione **Siguiente**.
 
    - **Nombre de usuario:** Nombre de usuario de TeleMessage.
 
@@ -75,9 +80,9 @@ Una vez completados los requisitos previos descritos en la sección anterior, pu
 
 5. Una vez creado el conector, puede cerrar la ventana emergente y ir a la página siguiente.
 
-6. En la página **Asignación de** usuarios, habilite la asignación automática de usuarios y haga clic en **Siguiente**. En caso de que necesite una asignación personalizada, cargue un archivo CSV y haga clic en **Siguiente**.
+6. En la página **Asignación de** usuarios, habilite la asignación automática de usuarios y seleccione **Siguiente**. En caso de que necesite una asignación personalizada, cargue un archivo CSV y seleccione **Siguiente**.
 
-7. Revise la configuración y, a continuación, haga clic en **Finalizar** para crear el conector.
+7. Revise la configuración y, a continuación, seleccione **Finalizar** para crear el conector.
 
 8. Vaya a la pestaña Conectores de la página **Conectores de datos** para ver el progreso del proceso de importación del nuevo conector.
 

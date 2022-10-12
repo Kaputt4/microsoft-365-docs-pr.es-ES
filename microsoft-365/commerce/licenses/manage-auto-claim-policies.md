@@ -20,12 +20,12 @@ ms.custom:
 description: Obtenga información sobre cómo crear y administrar directivas de notificaciones automáticas que asignan automáticamente licencias a los usuarios para determinadas aplicaciones.
 search.appverid: MET150
 ms.date: 04/06/2021
-ms.openlocfilehash: 13618b44262199d71bd719576df01fd298813c8e
-ms.sourcegitcommit: 0b7070ec119e00e0dafe030bbfbef0ae5c9afa19
+ms.openlocfilehash: 94bfcb3e9d7b210a6ca794e0e7fa88e0161de848
+ms.sourcegitcommit: 8d3c027592a638f411f87d89772dd3d39e92aab0
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/29/2022
-ms.locfileid: "68163587"
+ms.lasthandoff: 10/12/2022
+ms.locfileid: "68534792"
 ---
 # <a name="manage-microsoft-teams-auto-claim-policies"></a>Administración de directivas de notificaciones automáticas de Microsoft Teams
 
@@ -36,7 +36,7 @@ Una directiva de notificación automática permite a los usuarios reclamar autom
 
 ## <a name="before-you-begin"></a>Antes de empezar
 
-Debe ser administrador global, de usuario o de licencia para crear y administrar directivas de notificaciones automáticas. Para obtener más información, consulte [Acerca de los roles de administrador de Microsoft 365](../../admin/add-users/about-admin-roles.md).
+Debe ser administrador global para crear y administrar directivas de notificaciones automáticas. Para obtener más información, consulte [Acerca de los roles de administrador de Microsoft 365](../../admin/add-users/about-admin-roles.md).
 
 ## <a name="turn-the-auto-claim-policy-feature-on-or-off"></a>Activar o desactivar la característica de directiva de notificación automática
 

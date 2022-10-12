@@ -11,19 +11,20 @@ ms.topic: article
 ms.service: O365-seccomp
 ms.localizationpriority: high
 ms.collection:
-- M365-security-compliance
+- purview-compliance
+- tier1
 - SPO_Content
 ms.custom: admindeeplinkSPO
 search.appverid:
 - MOE150
 - MET150
 description: Usar etiquetas de confidencialidad para proteger el contenido en los sitios de SharePoint y Microsoft Teams, y los grupos de Microsoft 365.
-ms.openlocfilehash: 7417592f4000d344fe6a093de4de02bcecba573e
-ms.sourcegitcommit: d1f51dbd12ceffe6a6aeebffde0f9a744486f2d4
+ms.openlocfilehash: 0541fb9994a567f0ded9377380dd402522ad9e19
+ms.sourcegitcommit: 8d3c027592a638f411f87d89772dd3d39e92aab0
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/23/2022
-ms.locfileid: "67417464"
+ms.lasthandoff: 10/12/2022
+ms.locfileid: "68536970"
 ---
 # <a name="use-sensitivity-labels-to-protect-content-in-microsoft-teams-microsoft-365-groups-and-sharepoint-sites"></a>Usar etiquetas de confidencialidad para proteger el contenido en Microsoft Teams, grupos de Microsoft 365 y sitios de SharePoint
 
@@ -37,7 +38,7 @@ Además de usar [etiquetas de confidencialidad](sensitivity-labels.md) para prot
 - Acceso desde dispositivos no administrados
 - Contextos de autenticación (en versión preliminar)
 - Vínculo de uso compartido predeterminado para un sitio de SharePoint (configuración solo de PowerShell)
-- En versión preliminar: configuración de uso compartido de sitios (configuración solo de PowerShell)
+- Configuración de uso compartido de sitios (configuración solo de PowerShell)
 
 > [!IMPORTANT]
 > La configuración para dispositivos no administrados y contextos de autenticación funciona junto con el acceso condicional de Azure Active Directory. Debe configurar esta característica dependiente si desea usar una etiqueta de confidencialidad para esta configuración. Se incluye información adicional en las instrucciones siguientes.
@@ -50,13 +51,15 @@ Sin embargo, el contenido de estos contenedores no hereda las etiquetas de la ca
 
 Las etiquetas de contenedor no admiten la visualización de [otros idiomas](create-sensitivity-labels.md#additional-label-settings-with-security--compliance-powershell) y muestran el idioma original solo para el nombre y la descripción de la etiqueta.
 
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
+
 ## <a name="using-sensitivity-labels-for-microsoft-teams-microsoft-365-groups-and-sharepoint-sites"></a>Uso de etiquetas de confidencialidad para Microsoft Teams, grupos de Microsoft 365 y sitios de SharePoint
 
-Antes de habilitar etiquetas de confidencialidad para contenedores y establecerlas para la nueva configuración, los usuarios pueden ver y aplicar etiquetas de confidencialidad en sus aplicaciones. Por ejemplo, en Word:
+Before you enable sensitivity labels for containers and configure sensitivity labels for the new settings, users can see and apply sensitivity labels in their apps. For example, from Word:
 
 :::image type="content" source="../media/sensitivity-label-word.png" alt-text="Una etiqueta de confidencialidad que se muestra en la aplicación de escritorio de Word". lightbox="../media/sensitivity-label-word.png"
 
-Después de habilitar y configurar las etiquetas de confidencialidad para los contenedores, los usuarios también pueden ver y aplicar etiquetas de confidencialidad a los sitios de grupo de Microsoft, los grupos de Microsoft 365 y los sitios de SharePoint. Por ejemplo, cuando crea un nuevo sitio de grupo desde SharePoint:
+After you enable and configure sensitivity labels for containers, users can additionally see and apply sensitivity labels to Microsoft team sites, Microsoft 365 groups, and SharePoint sites. For example, when you create a new team site from SharePoint:
 
 ![Una etiqueta de sensibilidad al crear un sitio de equipo desde SharePoint.](../media/sensitivity-labels-new-team-site.png)
 
@@ -112,7 +115,7 @@ Una vez habilitadas las etiquetas de confidencialidad para los contenedores como
     
     - **Controlar el uso compartido externo desde sitios de SharePoint etiquetados**: seleccione esta opción para seleccionar el uso compartido externo para cualquier usuario, invitados nuevos y existentes, invitados existentes o solo para los usuarios de su organización. Para más información sobre esta configuración y opciones, consulte la documentación de SharePoint [Activar o desactivar el uso compartido externo de un sitio](/sharepoint/change-external-sharing-site).
     
-    - **Usar el acceso condicional de Azure AD para proteger los sitios de SharePoint etiquetados**: seleccione esta opción solo si su organización la tiene configurada y está usando el [Acceso condicional de Azure Active Directory](/azure/active-directory/conditional-access/overview). A continuación, seleccione una de las siguientes opciones: 
+    - **Use Azure AD Conditional Access to protect labeled SharePoint sites**: Select this option only if your organization has configured and is using [Azure Active Directory Conditional Access](/azure/active-directory/conditional-access/overview). Then, select one of the following settings:
     
         - **Determinar si los usuarios pueden acceder a los sitios de SharePoint desde dispositivos no administrados**: esta opción emplea la característica de SharePoint que usa el acceso condicional de Azure AD para bloquear o limitar el acceso a contenido de SharePoint y OneDrive desde dispositivos no administrados. Para obtener más información, consulte [Controlar el acceso desde dispositivos no administrados](/sharepoint/control-access-from-unmanaged-devices) en la documentación de SharePoint. La opción que especifique para esta configuración de etiqueta constituye el equivalente a ejecutar un comando de PowerShell para un sitio, tal y como se describe en los pasos 3-5 en la sección de instrucciones de SharePoint [Bloquear o limitar el acceso a un sitio específico de SharePoint o a OneDrive](/sharepoint/control-access-from-unmanaged-devices#block-or-limit-access-to-a-specific-sharepoint-site-or-onedrive).
             
@@ -145,7 +148,7 @@ Dado que puede configurar las opciones de configuración de SharePoint independi
 
 Para que aparezca en la lista desplegable para seleccionar, es necesario crear, configurar y publicar contextos de autenticación como parte de la configuración de acceso a condiciones de Azure Active Directory. Para obtener más información e instrucciones, vea la sección [Configurar los contextos de autenticación](/azure/active-directory/conditional-access/concept-conditional-access-cloud-apps#configure-authentication-contexts) en de la documentación de acceso condicional de Azure AD.
 
-No todas las aplicaciones admiten contextos de autenticación. Si un usuario con una aplicación no compatible se conecta al sitio que está configurado para un contexto de autenticación, verá un mensaje de acceso denegado o se le pedirá que se autentique, pero se le rechazará. Las aplicaciones que admiten contextos de autenticación actualmente:
+Not all apps support authentication contexts. If a user with an unsupported app connects to the site that's configured for an authentication context, they see either an access denied message or they are prompted to authenticate but rejected. The apps that currently support authentication contexts:
 
 - Office para la Web, que incluye Outlook para la Web
 
@@ -187,9 +190,6 @@ Además de la configuración de etiquetas para sitios y grupos que puede configu
 Para obtener más información e instrucciones, vea [Uso de las etiquetas de confidencialidad para configurar el tipo de vínculo de uso compartido predeterminado para sitios y documentos en SharePoint y OneDrive](sensitivity-labels-default-sharing-link.md).
 
 ### <a name="configure-site-sharing-permissions-by-using-powershell-advanced-settings"></a>Configuración de permisos de uso compartido de sitios mediante la configuración avanzada de PowerShell
-
-> [!NOTE]
-> Esta configuración de etiqueta está actualmente en versión preliminar.
 
 Otra configuración avanzada de PowerShell que puede configurar para que la etiqueta de confidencialidad se aplique a un sitio de SharePoint es **MembersCanShare**. Esta configuración es la configuración equivalente que puede establecer desde el Centro de administración de SharePoint > **Permisos del sitio** > **Uso compartido de sitios** > **Cambiar la forma en que los miembros pueden compartir** > **Permisos de uso compartido**. 
 
@@ -238,13 +238,13 @@ Como práctica recomendada, no cambie la configuración de sitio y grupo para un
 
 Además, si los cambios incluyen la configuración **Acceso de usuarios externos**:
 
-- La nueva configuración se aplica a los nuevos usuarios, pero no a los existentes. Por ejemplo, si esta configuración se seleccionó anteriormente y, como resultado, los usuarios invitados accedieron al sitio, estos usuarios invitados aún pueden acceder al sitio después de que esta configuración se borre en la configuración de la etiqueta.
+- The new setting applies to new users but not to existing users. For example, if this setting was previously selected and as a result, guest users accessed the site, these guest users can still access the site after this setting is cleared in the label configuration.
 
 - La configuración de privacidad de las propiedades de grupo hiddenMembership y roleEnabled no se actualiza.
 
 ### <a name="deleting-published-labels-that-are-configured-for-sites-and-groups"></a>Eliminar etiquetas publicadas que están configuradas para sitios y grupos
 
-Si elimina una etiqueta de confidencialidad que tiene habilitada la configuración del sitio y del grupo, y esa etiqueta está incluida en una o más políticas de etiquetas, esta acción puede provocar fallas en la creación de nuevos equipos, grupos y sitios. Para evitar esta situación, utilice la siguiente guía:
+If you delete a sensitivity label that has the site and group settings enabled, and that label is included in one or more label policies, this action can result in creation failures for new teams, groups, and sites. To avoid this situation, use the following guidance:
 
 1. Elimine la etiqueta de confidencialidad de todas las directivas de etiqueta que la incluyan.
 
@@ -309,7 +309,7 @@ Cuando los usuarios exploren el sitio, podrán ver el nombre de la etiqueta y la
 
 ### <a name="use-powershell-to-apply-a-sensitivity-label-to-multiple-sites"></a>Usar PowerShell para aplicar una etiqueta de confidencialidad a varios sitios
 
-Puede usar los cmdlet [Set-SPOSite](/powershell/module/sharepoint-online/set-sposite) y [Set-SPOTenant](/powershell/module/sharepoint-online/set-spotenant) con el parámetro *SensitivityLabel* desde el [Shell de SharePoint Online Management](/powershell/sharepoint/sharepoint-online/connect-sharepoint-online) actual para aplicar una etiqueta de confidencialidad a muchos sitios. Los sitios pueden ser cualquier colección de sitios de SharePoint o un sitio de OneDrive.
+You can use the [Set-SPOSite](/powershell/module/sharepoint-online/set-sposite) and [Set-SPOTenant](/powershell/module/sharepoint-online/set-spotenant) cmdlet with the *SensitivityLabel* parameter from the current [SharePoint Online Management Shell](/powershell/sharepoint/sharepoint-online/connect-sharepoint-online) to apply a sensitivity label to many sites. The sites can be any SharePoint site collection, or a OneDrive site.
 
 Asegúrese de que tiene la versión 16.0.19418.12000 o posterior del Shell de administración de SharePoint Online.
 
@@ -321,19 +321,19 @@ Asegúrese de que tiene la versión 16.0.19418.12000 o posterior del Shell de ad
    Get-Label |ft Name, Guid
    ```
 
-3. Ahora, [conéctese a SharePoint Online PowerShell](/powershell/sharepoint/sharepoint-online/connect-sharepoint-online) y almacene su GUID de etiqueta como una variable. Por ejemplo:
+3. Now [connect to SharePoint Online PowerShell](/powershell/sharepoint/sharepoint-online/connect-sharepoint-online) and store your label GUID as a variable. For example:
 
    ```powershell
    $Id = [GUID]("e48058ea-98e8-4940-8db0-ba1310fd955e")
    ```
 
-4. Cree una nueva variable que identifique varios sitios que tienen una cadena de identificación en común en su URL. Por ejemplo:
+4. Create a new variable that identifies multiple sites that have an identifying string in common in their URL. For example:
 
    ```powershell
    $sites = Get-SPOSite -IncludePersonalSite $true -Limit all -Filter "Url -like 'documents"
    ```
 
-5. Ejecute el siguiente comando para aplicar la etiqueta a estos sitios. Usando nuestros ejemplos:
+5. Ejecute el siguiente comando para aplicar la etiqueta a estos sitios. Utilice nuestros ejemplos:
 
    ```powershell
    $sites | ForEach-Object {Set-SPOTenant $_.url -SensitivityLabel $Id}
@@ -343,7 +343,7 @@ Esta serie de comandos le permite etiquetar varios sitios en el espacio empresar
 
 ## <a name="view-and-manage-sensitivity-labels-in-the-sharepoint-admin-center"></a>Ver y administrar etiquetas de confidencialidad en el centro de administración de SharePoint
 
-Para ver, ordenar y buscar las etiquetas de confidencialidad aplicadas, use la página <a href="https://go.microsoft.com/fwlink/?linkid=2185220" target="_blank">**Sitios activos**</a> en el nuevo Centro de administración de SharePoint. Es posible que primero necesite agregar la columna **Confidencialidad:**
+To view, sort, and search the applied sensitivity labels, use <a href="https://go.microsoft.com/fwlink/?linkid=2185220" target="_blank">**Active sites**</a> in the new SharePoint admin center. You might need to first add the **Sensitivity** column:
 
 :::image type="content" source="../media/manage-site-sensitivity-labels.png" alt-text="La columna Confidencialidad de la página Sitios activos". lightbox="../media/manage-site-sensitivity-labels.png"
 
@@ -395,7 +395,7 @@ Las siguientes aplicaciones y servicios actualmente no son compatibles con las e
 
 ## <a name="classic-azure-ad-group-classification"></a>Clasificación de grupos de Azure AD clásica
 
-Después de habilitar las etiquetas de confidencialidad para contenedores, las clasificaciones de grupo de Azure AD ya no son compatibles con Microsoft 365 y no se mostrarán en los sitios que admiten etiquetas de confidencialidad. Sin embargo, puede convertir las clasificaciones antiguas en etiquetas de confidencialidad.
+After you enable sensitivity labels for containers, the group classifications from Azure AD are no longer supported by Microsoft 365 and won't display on sites that support sensitivity labels. However, you can convert your old classifications to sensitivity labels.
 
 Como ejemplo de cómo podría haber utilizado la antigua clasificación de grupos para SharePoint, consulte [Clasificación de sitios "modernos" de SharePoint](/sharepoint/dev/solution-guidance/modern-experience-site-classification).
 
@@ -413,7 +413,7 @@ Para convertir las clasificaciones antiguas en etiquetas de confidencialidad, si
 
 Luego:
 
-1. Use PowerShell para aplicar las etiquetas de confidencialidad a los grupos de Microsoft 365 y a los sitios de SharePoint mediante la asignación de nombres.
+1. Use PowerShell to apply the sensitivity labels to existing Microsoft 365 groups and SharePoint sites by using name mapping. See the next section for instructions.
 
 2. Quitar las clasificaciones antiguas de los grupos y sitios existentes.
 
@@ -443,7 +443,7 @@ Para ayudarle a administrar la coexistencia de etiquetas de confidencialidad y c
    $Groups= Get-UnifiedGroup | Where {$_.classification -eq "General"}
    ```
 
-6. Para cada grupo, agregue la nueva etiqueta de confidencialidad GUID. Por ejemplo:
+6. For each group, add the new sensitivity label GUID. For example:
 
     ```PowerShell
     foreach ($g in $groups)
@@ -480,7 +480,7 @@ Todos estos eventos de auditoría se pueden encontrar en la categoría [Activida
 
 ## <a name="how-to-disable-sensitivity-labels-for-containers"></a>Cómo deshabilitar etiquetas de confidencialidad para contenedores
 
-Puede desactivar las etiquetas de confidencialidad para Microsoft Teams, Grupos de Microsoft 365 y sitios de SharePoint siguiendo las mismas instrucciones que se indican en [Habilitar compatibilidad con las etiquetas de confidencialidad en PowerShell](/azure/active-directory/users-groups-roles/groups-assign-sensitivity-labels#enable-sensitivity-label-support-in-powershell). Sin embargo, para deshabilitar esta característica, especifique `$setting["EnableMIPLabels"] = "False"` en el Paso 5.
+You can turn off sensitivity labels for Microsoft Teams, Microsoft 365 groups, and SharePoint sites by using the same instructions from [Enable sensitivity label support in PowerShell](/azure/active-directory/users-groups-roles/groups-assign-sensitivity-labels#enable-sensitivity-label-support-in-powershell). However, to disable the feature, in step 5, specify `$setting["EnableMIPLabels"] = "False"`.
 
 Además de hacer que todas las opciones de configuración para grupos y sitios no estén disponibles cuando cree o edite etiquetas de confidencialidad, esta acción revierte la propiedad que usan los contenedores para su configuración. Al habilitar las etiquetas de confidencialidad para Microsoft Teams, grupos de Microsoft 365 y sitios de SharePoint se cambia la propiedad **Clasificación** (usada para la [clasificación de grupos de Azure AD](#classic-azure-ad-group-classification)) a **Confidencialidad**. Cuando deshabilita las etiquetas de confidencialidad para contenedores, estos ignoran la propiedad Confidencialidad y vuelven a usar la propiedad Clasificación.
 

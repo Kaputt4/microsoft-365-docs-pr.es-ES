@@ -18,12 +18,12 @@ ms.collection:
 ms.topic: conceptual
 ms.subservice: mde
 search.appverid: met150
-ms.openlocfilehash: b3e82cdc77b0ca62c81ae3b2091e3384a5830384
-ms.sourcegitcommit: 4e42bafee965446f44f7f57d1defed2b9b24fce8
+ms.openlocfilehash: dec808cc347e4e6078c1275821275b7db8992345
+ms.sourcegitcommit: 8d3c027592a638f411f87d89772dd3d39e92aab0
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/30/2022
-ms.locfileid: "68233274"
+ms.lasthandoff: 10/12/2022
+ms.locfileid: "68536772"
 ---
 # <a name="configure-microsoft-defender-for-endpoint-on-linux-for-static-proxy-discovery"></a>Configuración de Microsoft Defender para punto de conexión en Linux para la detección de proxy estático
 
@@ -89,3 +89,6 @@ sudo systemctl daemon-reload; sudo systemctl restart mdatp
 ```
 > [!NOTE]
 > Para quitar las adiciones que haya realizado antes de `mdatp`desinstalar , elimine el archivo personalizado de `/etc/systemd/system`.
+
+> [!NOTE]
+> Red Hat Enterprise Linux 6.X y CentOS 6.X no admiten **systemctl**. Para configurar el proxy statuc para MDE, use  **el conjunto de proxy de configuración de mdatp --value http://address:port**. Este método también funciona para todas las demás distribuciones de Linux.

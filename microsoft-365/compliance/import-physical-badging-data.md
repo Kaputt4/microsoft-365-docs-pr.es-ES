@@ -1,5 +1,6 @@
 ---
 title: Configuración de un conector para importar datos físicos incorrectos
+description: Los administradores pueden configurar un conector de datos para importar datos desde el sistema de badging físico de su organización a Microsoft 365. Esto le permite usar estos datos en directivas de administración de riesgos internos para ayudarle a detectar el acceso a los edificios físicos por parte de usuarios específicos que pueden indicar una posible amenaza interna para su organización.
 f1.keywords:
 - NOCSH
 ms.author: robmazz
@@ -12,15 +13,17 @@ ms.service: O365-seccomp
 ms.localizationpriority: medium
 search.appverid:
 - MET150
-ms.collection: M365-security-compliance
+ms.collection:
+- tier3
+- purview-compliance
+- data-connectors
 ms.custom: admindeeplinkCOMPLIANCE
-description: Los administradores pueden configurar un conector de datos para importar datos desde el sistema de badging físico de su organización a Microsoft 365. Esto le permite usar estos datos en directivas de administración de riesgos internos para ayudarle a detectar el acceso a los edificios físicos por parte de usuarios específicos que pueden indicar una posible amenaza interna para su organización.
-ms.openlocfilehash: a04ae3c929948a7a30b3f7fb5b224ab14a193323
-ms.sourcegitcommit: 433f5b448a0149fcf462996bc5c9b45d17bd46c6
+ms.openlocfilehash: 2b08302d0259731f4fa283def3f966e797d684da
+ms.sourcegitcommit: 8d3c027592a638f411f87d89772dd3d39e92aab0
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/20/2022
-ms.locfileid: "67826102"
+ms.lasthandoff: 10/12/2022
+ms.locfileid: "68536948"
 ---
 # <a name="set-up-a-connector-to-import-physical-badging-data-preview"></a>Configurar un conector para importar datos físicos incorrectos (versión preliminar)
 
@@ -39,6 +42,8 @@ La configuración de un conector de badging físico consta de las siguientes tar
 - Opcionalmente, puede programar el script para que se ejecute automáticamente para importar datos de errores físicos actualmente.
 
 Si desea participar en la versión preliminar, póngase en contacto con el equipo en dcfeedback@microsoft.com.
+
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
 
 ## <a name="before-you-set-up-the-connector"></a>Antes de configurar el conector
 
@@ -144,11 +149,11 @@ El siguiente paso consiste en crear un conector de badging físico en el portal 
 
 1. Vaya al portal de cumplimiento y seleccione <a href="https://go.microsoft.com/fwlink/p/?linkid=2173865" target="_blank">**Conectores de datos**</a>.
 
-2. En la página **Conectores de datos** , en **Errores físicos**, haga clic en **Ver**.
+2. En la página **Conectores de datos** , en **Errores físicos**, seleccione **Ver**.
 
-3. En la página **Badging físico** , haga clic en **Agregar conector**.
+3. En la página **Badging físico**, seleccione **Add connector (Agregar conector).**
 
-4. En la página **Credenciales de autenticación** , haga lo siguiente y, a continuación, haga clic en **Siguiente**:
+4. En la página **Credenciales de autenticación** , haga lo siguiente y, a continuación, seleccione **Siguiente**:
 
    1. Escriba o pegue el identificador de aplicación de Azure AD para la aplicación de Azure que creó en el paso 1.
 
@@ -156,17 +161,17 @@ El siguiente paso consiste en crear un conector de badging físico en el portal 
 
    3. Escriba un nombre único para el conector de badging físico.
 
-5. En la página **Revisar** , revise la configuración y, a continuación, haga clic en **Finalizar** para crear el conector.
+5. En la página **Revisar** , revise la configuración y, a continuación, seleccione **Finalizar** para crear el conector.
 
 6. Se muestra una página de estado que confirma que se creó el conector. Esta página también contiene el identificador del trabajo. Puede copiar el identificador de trabajo desde esta página o desde la página de control flotante del conector. Necesita este identificador de trabajo al ejecutar el script.
 
    La página de estado también contiene un vínculo al script. Consulte este script para comprender cómo publicar el archivo JSON en el punto de conexión de API.
 
-7. Haga clic en **Listo**.
+7. Seleccione **Listo**.
 
    El nuevo conector se muestra en la lista de la pestaña **Conectores** .
 
-8. Haga clic en el conector de badging físico que acaba de crear para mostrar la página de control flotante, que contiene propiedades y otra información sobre el conector.
+8. Seleccione el conector físico que acaba de crear para mostrar la página de control flotante, que contiene propiedades y otra información sobre el conector.
 
 ## <a name="step-4-run-the-script-to-post-your-json-file-containing-physical-badging-data"></a>Paso 4: Ejecutar el script para publicar el archivo JSON que contiene datos físicos incorrectos
 
@@ -179,7 +184,7 @@ Después de ejecutar el script, el archivo JSON que contiene los datos físicos 
 
 1. Vaya a [este sitio de GitHub](https://github.com/microsoft/m365-physical-badging-connector-sample-scripts/blob/master/push_physical_badging_records.ps1) para acceder al script de ejemplo.
 
-2. Haga clic en el botón **Sin formato** para mostrar el script en la vista de texto.
+2. Seleccione el botón **Sin formato** para mostrar el script en la vista de texto.
 
 3. Copie todas las líneas del script de ejemplo y guárdelas en un archivo de texto.
 
@@ -225,11 +230,11 @@ Después de crear el conector de badging físico e insertar los datos físicos i
 
 1. Vaya al portal de cumplimiento y seleccione <a href="https://go.microsoft.com/fwlink/p/?linkid=2173865" target="_blank">**Conectores de datos**</a>.
 
-2. Haga clic en la pestaña **Conectores** y, a continuación, seleccione el conector de badging físico para mostrar la página de control flotante. Esta página contiene las propiedades y la información sobre el conector.
+2. Seleccione la pestaña **Conectores** y, a continuación, seleccione el conector de badging físico para mostrar la página de control flotante. Esta página contiene las propiedades y la información sobre el conector.
 
    ![Página de control flotante de estado para el conector de badging físico.](..\media\PhysicalBadgingStatusFlyout.png)
 
-3. En **Última importación**, haga clic en el vínculo **Descargar registro** para abrir (o guardar) el registro de estado del conector. Este registro contiene información sobre cada vez que se ejecuta el script y carga los datos del archivo JSON en la nube de Microsoft.
+3. En **Última importación**, seleccione el vínculo **Descargar registro** para abrir (o guardar) el registro de estado del conector. Este registro contiene información sobre cada vez que se ejecuta el script y carga los datos del archivo JSON en la nube de Microsoft.
 
    ![El archivo de registro del conector de badging físico muestra el número de objetos del archivo JSON que se cargaron.](..\media\PhysicalBadgingConnectorLogFile.png)
 
@@ -243,11 +248,11 @@ Para asegurarse de que los últimos datos físicos incorrectos de su organizaci�
 
 Puede usar la aplicación Programador de tareas en Windows para ejecutar automáticamente el script todos los días.
 
-1. En el equipo local, haga clic en el botón **Inicio** de Windows y escriba **Programador de tareas**.
+1. En el equipo local, seleccione el botón **Inicio** de Windows y escriba **Programador de tareas**.
 
-2. Haga clic en la aplicación **Programador de tareas** para abrirla.
+2. Seleccione la aplicación **Programador de tareas** para abrirla.
 
-3. En la sección **Acciones** , haga clic en **Crear tarea**.
+3. En la sección **Acciones** , seleccione **Crear tarea**.
 
 4. En la pestaña **General** , escriba un nombre descriptivo para la tarea programada; por ejemplo, script del **conector de badging físico**. También puede agregar una descripción opcional.
 
@@ -257,34 +262,34 @@ Puede usar la aplicación Programador de tareas en Windows para ejecutar automá
 
    2. Asegúrese de que está activada **la casilla Ejecutar con los privilegios más altos** .
 
-6. Seleccione la pestaña **Desencadenadores** , haga clic en **Nuevo** y, a continuación, haga lo siguiente:
+6. Seleccione la pestaña **Desencadenadores** , seleccione **Nuevo** y, a continuación, haga lo siguiente:
 
    1. En **Configuración**, seleccione la opción **Diario** y, a continuación, elija una fecha y hora para ejecutar el script por primera vez. El script se ejecutará todos los días a la misma hora especificada.
 
    2. En **Configuración avanzada**, asegúrese de que la casilla **Habilitado** está seleccionada.
 
-   3. Haga clic en **Aceptar**.
+   3. Seleccione **Aceptar**.
 
-7. Seleccione la pestaña **Acciones** , haga clic en **Nuevo** y, a continuación, haga lo siguiente:
+7. Seleccione la pestaña **Acciones** , seleccione **Nuevo** y, a continuación, haga lo siguiente:
 
    ![Configuración de acciones para crear una nueva tarea programada para el script del conector de errores físicos.](..\media\SchedulePhysicalBadgingScript1.png)
 
    1. En la lista desplegable **Acción** , asegúrese de que **iniciar un programa** está seleccionado.
 
-   2. En el cuadro **Programa o script** , haga clic en **Examinar**, vaya a la siguiente ubicación y selecciónela para que la ruta de acceso se muestre en el cuadro: C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe.
+   2. En el cuadro **Programa o script** , seleccione **Examinar**, vaya a la siguiente ubicación y selecciónela para que la ruta de acceso se muestre en el cuadro: C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe.
 
    3. En el cuadro **Agregar argumentos (opcional),** pegue el mismo comando de script que ejecutó en el paso 4. Por ejemplo, .\PhysicalBadging.ps1-tenantId "d5723623-11cf-4e2e-b5a5-01d1506273g9" -appId "c12823b7-b55a-4989-faba-02de41bb97c3" -appSecret "MNubVGbcQDkGCnn" -jobId "e081f4f4-3831-48d6-7bb3-fcfab1581458" -jsonFilePath "C:\Users\contosoadmin\Desktop\Data\physical_badging_data.json"
 
    4. En el cuadro **Iniciar en (opcional),** pegue la ubicación de carpeta del script que ejecutó en el paso 4. Por ejemplo, C:\Users\contosoadmin\Desktop\Scripts.
 
-   5. Haga clic en **Aceptar** para guardar la configuración de la nueva acción.
+   5. Seleccione **Aceptar** para guardar la configuración de la nueva acción.
 
-8. En la ventana **Crear tarea** , haga clic en **Aceptar** para guardar la tarea programada. Es posible que se le pida que escriba las credenciales de la cuenta de usuario.
+8. En la ventana **Crear tarea** , seleccione **Aceptar** para guardar la tarea programada. Es posible que se le pida que escriba las credenciales de la cuenta de usuario.
 
    La nueva tarea se muestra en la biblioteca del programador de tareas.
 
    ![La nueva tarea se muestra en la biblioteca del programador de tareas.](..\media\SchedulePhysicalBadgingScript2.png)
 
-Se muestra la última vez que se ejecutó el script y la próxima vez que está programado para ejecutarse. Puede hacer doble clic en la tarea para editarla.
+Se muestra la última vez que se ejecutó el script y la próxima vez que está programado para ejecutarse. Puede seleccionar doblemente la tarea para editarla.
 
 También puede comprobar la última vez que el script se ejecutó en la página de control flotante del conector de badging físico correspondiente en el centro de cumplimiento.

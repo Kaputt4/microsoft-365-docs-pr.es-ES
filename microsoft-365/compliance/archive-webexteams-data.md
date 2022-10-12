@@ -1,5 +1,6 @@
 ---
 title: Configuración de un conector para datos de Webex Teams en Microsoft 365
+description: Los administradores pueden configurar un conector para importar y archivar datos del conector de Webex Teams de Veritas en Microsoft 365. Este conector le permite archivar datos de orígenes de datos de terceros en Microsoft 365 para que pueda usar características de cumplimiento como la suspensión legal, la búsqueda de contenido y las directivas de retención para administrar los datos de terceros de su organización.
 f1.keywords:
 - NOCSH
 ms.author: robmazz
@@ -10,20 +11,24 @@ audience: Admin
 ms.topic: how-to
 ms.service: O365-seccomp
 ms.localizationpriority: medium
-ms.collection: M365-security-compliance
-description: Los administradores pueden configurar un conector para importar y archivar datos del conector de Webex Teams de Veritas en Microsoft 365. Este conector le permite archivar datos de orígenes de datos de terceros en Microsoft 365 para que pueda usar características de cumplimiento como la suspensión legal, la búsqueda de contenido y las directivas de retención para administrar los datos de terceros de su organización.
-ms.openlocfilehash: 1e35a0f2bf4a54bf5941ebc3d7f8a01b83ef09b5
-ms.sourcegitcommit: 433f5b448a0149fcf462996bc5c9b45d17bd46c6
+ms.collection:
+- tier3
+- purview-compliance
+- data-connectors
+ms.openlocfilehash: b9fc69abfb272018e2406e80ac7a1692f3fff020
+ms.sourcegitcommit: 8d3c027592a638f411f87d89772dd3d39e92aab0
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/20/2022
-ms.locfileid: "67827025"
+ms.lasthandoff: 10/12/2022
+ms.locfileid: "68535012"
 ---
 # <a name="set-up-a-connector-to-archive-webex-teams-data"></a>Configuración de un conector para archivar datos de Webex Teams
 
 Use un conector veritas en el portal de cumplimiento Microsoft Purview para importar y archivar datos de Webex Teams a buzones de usuario de su organización de Microsoft 365. Veritas proporciona un conector de [Webex Teams](https://globanet.com/webex-teams/) configurado para capturar elementos de comunicación de Webex Teams e importarlos a Microsoft 365. El conector convierte el contenido de Webex Teams, como chats 1:1, conversaciones de grupo, conversaciones de canal y datos adjuntos de la cuenta de Webex Teams de su organización, a un formato de mensaje de correo electrónico y, a continuación, importa esos elementos al buzón del usuario en Microsoft 365.
 
 Una vez que los datos de Webex Teams se almacenan en buzones de usuario, puede aplicar características de Microsoft Purview como suspensión por juicio, exhibición de documentos electrónicos, directivas de retención y etiquetas de retención y cumplimiento de comunicaciones. El uso de un conector de Webex Teams para importar y archivar datos en Microsoft 365 puede ayudar a su organización a cumplir las directivas gubernamentales y normativas.
+
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
 
 ## <a name="overview-of-archiving-webex-teams-data"></a>Introducción al archivado de datos de Webex Teams
 
@@ -55,13 +60,13 @@ En la información general siguiente se explica el proceso de uso de un conector
 
 El primer paso consiste en obtener acceso a los **conectores de datos** y configurar el conector de [Webex Teams](https://globanet.com/webex-teams/) .
 
-1. Vaya a y, a [https://compliance.microsoft.com](https://compliance.microsoft.com/) continuación, haga clic en **Conectores** >  de datos **Webex Teams**.
+1. Vaya a y, a [https://compliance.microsoft.com](https://compliance.microsoft.com/) continuación, seleccione **Conectores** >  de datos **Webex Teams**.
 
-2. En la página descripción del producto **de Webex Teams** , haga clic en **Agregar conector**.
+2. En la página Descripción del producto de **Webex Teams** , seleccione **Agregar conector**.
 
-3. En la página **Términos de servicio** , haga clic en **Aceptar**.
+3. En la página **Términos de servicio** , seleccione **Aceptar**.
 
-4. Escriba un nombre único que identifique el conector y, a continuación, haga clic en **Siguiente**.
+4. Escriba un nombre único que identifique el conector y, a continuación, seleccione **Siguiente**.
 
 5. Inicie sesión en su cuenta de Merge1 para configurar el conector.
 
@@ -69,7 +74,7 @@ El primer paso consiste en obtener acceso a los **conectores de datos** y config
 
 El segundo paso es configurar el conector de Webex Teams en el sitio Merge1. Para obtener información sobre cómo configurar el conector de Webex Teams, consulte [La Guía del usuario de conectores de terceros de Merge1](https://docs.ms.merge1.globanetportal.com/Merge1%20Third-Party%20Connectors%20Webex%20Teams%20User%20Guide%20.pdf).
 
-Después de hacer clic en **Guardar & finalizar**, se muestra la página **Asignación** de usuarios del asistente del conector en el portal de cumplimiento.
+Después de seleccionar **Guardar & Finalizar**, se muestra la página **Asignación** de usuarios en el Asistente para conectores en el portal de cumplimiento.
 
 ## <a name="step-3-map-users-and-complete-the-connector-setup"></a>Paso 3: Asignar usuarios y completar la configuración del conector
 
@@ -77,17 +82,17 @@ Para asignar usuarios y completar la configuración del conector en el portal de
 
 1. En la página **Asignar usuarios de Webex Teams a usuarios de Microsoft 365** , habilite la asignación automática de usuarios. Los elementos de Webex Teams incluyen una propiedad denominada *Email*, que contiene direcciones de correo electrónico para los usuarios de la organización. Si el conector puede asociar esta dirección a un usuario de Microsoft 365, los elementos se importan al buzón de ese usuario.
 
-2. Haga clic en **Siguiente**, revise la configuración y, a continuación, vaya a la página **Conectores de datos** para ver el progreso del proceso de importación del nuevo conector.
+2. Seleccione **Siguiente**, revise la configuración y, a continuación, vaya a la página **Conectores de datos** para ver el progreso del proceso de importación del nuevo conector.
 
 ## <a name="step-4-monitor-the-webex-teams-connector"></a>Paso 4: Supervisión del conector de Webex Teams
 
 Después de crear el conector de Webex Teams, puede ver el estado del conector en el portal de cumplimiento.
 
-1. Vaya a [https://compliance.microsoft.com](https://compliance.microsoft.com) y haga clic en **Conectores de datos** en el panel de navegación izquierdo.
+1. Vaya a [https://compliance.microsoft.com](https://compliance.microsoft.com) y seleccione **Conectores de datos** en el panel de navegación izquierdo.
 
-2. Haga clic en la pestaña **Conectores** y, a continuación, seleccione el conector de **Webex Teams** para mostrar la página de control flotante. Esta página contiene las propiedades y la información sobre el conector.
+2. Seleccione la pestaña **Conectores** y, a continuación, seleccione el conector de **Webex Teams** para mostrar la página de control flotante. Esta página contiene las propiedades y la información sobre el conector.
 
-3. En **Estado del conector con origen**, haga clic en el vínculo **Descargar registro** para abrir (o guardar) el registro de estado del conector. Este registro contiene información sobre los datos que se han importado a la nube de Microsoft. Para obtener más información, consulte [Visualización de registros de administración para conectores de datos](data-connector-admin-logs.md).
+3. En **Estado del conector con origen**, seleccione el vínculo **Descargar registro** para abrir (o guardar) el registro de estado del conector. Este registro contiene información sobre los datos que se han importado a la nube de Microsoft. Para obtener más información, consulte [Visualización de registros de administración para conectores de datos](data-connector-admin-logs.md).
 
 ## <a name="known-issues"></a>Problemas conocidos
 

@@ -13,17 +13,18 @@ f1_keywords:
 ms.service: O365-seccomp
 ms.localizationpriority: high
 ms.collection:
-- M365-security-compliance
+- tier1
+- purview-compliance
 - SPO_Content
 search.appverid:
 - MET150
 description: Obtenga información sobre cómo definir la configuración central de prevención de pérdida de datos en el punto de conexión (DLP).
-ms.openlocfilehash: 454b99ea771f1d3059123534aa57c4a763706c87
-ms.sourcegitcommit: e6595be36bbaba244439bd59dbae935e2b258ded
+ms.openlocfilehash: b0593bb5ada76274a4fa53ec2877087352bf6afb
+ms.sourcegitcommit: 8d3c027592a638f411f87d89772dd3d39e92aab0
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/27/2022
-ms.locfileid: "67450045"
+ms.lasthandoff: 10/12/2022
+ms.locfileid: "68533472"
 ---
 # <a name="configure-endpoint-data-loss-prevention-settings"></a>Configuración de la prevención de pérdida de datos de punto de conexión
 
@@ -39,6 +40,8 @@ Debe configurar estas opciones si desea controlar:
 - Restricciones de explorador y dominio.
 - Cómo aparecen las justificaciones empresariales para invalidar directivas en las sugerencias de directiva.
 - Si las actividades en archivos de Office, PDF y CSV se auditan automáticamente.
+
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
 
 ## <a name="dlp-settings"></a>Configuración DLP
 
@@ -91,7 +94,7 @@ Puede usar esta lógica para crear sus rutas de exclusión para dispositivos Win
 
 - Ruta de acceso de archivo válida que termina con `\`, lo que significa solo archivos que están directamente en la carpeta. <br/>Por ejemplo: `C:\Temp\`
 
-- Ruta de acceso de archivo válida que termina con `\*`, lo que significa solo archivos en subcarpetas. Los archivos directamente debajo de la carpeta no se excluyen. <br/>Por ejemplo: `C:\Temp\*`
+- Ruta de acceso de archivo válida que termina con `\*`, lo que significa solo archivos en subcarpetas. Los archivos directamente en la carpeta no se excluyen. <br/>Por ejemplo: `C:\Temp\*`
 
 - Ruta de acceso de archivo válida que termina sin `\` o `\*`, lo que significa todos los archivos que se encuentran directamente en la carpeta y en todas las subcarpetas. <br/>Por ejemplo: `C:\Temp`
 
@@ -109,9 +112,9 @@ Al igual que los dispositivos Windows 10, puede agregar sus propias exclusiones 
 
 - Las definiciones de ruta de acceso del archivo no distinguen mayúsculas de minúsculas, por lo que `User` es igual que `user`.
 
-- Se admiten valores de carácter comodín. Por lo tanto, una definición de ruta de acceso puede contener un `*` a la mitad o al final de la ruta de acceso. Por ejemplo: `/Users/*/Library/Application Support/Microsoft/Teams/*`
+- Wildcard values are supported. So a path definition can contain a `*` in the middle of the path or at the end of the path. For example: `/Users/*/Library/Application Support/Microsoft/Teams/*`
 
-#####  <a name="recommended-file-path-exclusions-preview"></a>Exclusiones recomendadas de ruta de acceso del archivo (versión preliminar)
+##### <a name="recommended-file-path-exclusions-preview"></a>Exclusiones recomendadas de ruta de acceso del archivo (versión preliminar)
 
 Por motivos de rendimiento, DLP de punto de conexión incluye una lista de exclusiones recomendadas de ruta de acceso del archivo para dispositivos macOS. Estas exclusiones están activadas de manera predeterminada. Puede deshabilitarlas si quiere al alternar la alternancia **Incluir exclusiones recomendadas de ruta de acceso de archivo para Mac**. La lista incluye:
 
@@ -164,7 +167,7 @@ Las configuraciones de **Actividades de aplicaciones restringidas** y **Activida
 
 Aquí le mostramos un ejemplo:
 
-Si Notepad.exe se agrega a **Aplicaciones restringidas** y la opción **Actividades de archivo para todas las aplicaciones** está configurada para **Aplicar restricciones a actividades específicas** y ambas se configuran de esta forma:
+Si Notepad.exe se agrega a **aplicaciones restringidas** y **las actividades de archivo para todas las aplicaciones** está configurado para **Aplicar restricciones a una actividad específica** y ambas se configuran de la siguiente manera:
 
 |Configuración en directiva  |Nombre de la aplicación  |Actividad de usuario  |Acción DLP que se debe realizar  |
 |---------|---------|---------|---------|
@@ -183,7 +186,7 @@ El usuario A abre un archivo DLP protegido mediante el bloc de notas. DLP permit
    
 ##### <a name="file-activities-for-all-apps-only"></a>Actividades de archivo solo para todas las aplicaciones
 
-Si una aplicación no está en **Actividades de archivo para aplicaciones en grupos de aplicaciones restringidos** o no está en la lista **Actividades de aplicaciones restringidas** o bien está en la lista **Actividades de aplicaciones restringidas** con una acción de `Audit only` o "Bloquear con invalidación", las restricciones definidas en **Actividades de archivo para todas las aplicaciones** se aplican en la misma regla.  
+Si una aplicación no está en **Actividades de archivo para aplicaciones de grupos de aplicaciones restringidos** o no está en la lista **Actividades de aplicación restringida** o está en la lista **Actividades de aplicación restringida** con una acción de `Audit only`o "Bloquear con invalidación", las restricciones definidas en las **actividades Archivo para todas las aplicaciones** se aplican en la misma regla.  
 
 #### <a name="macos-devices"></a>dispositivos macOS
 
@@ -223,7 +226,7 @@ Restrinja el uso compartido de los archivos confidenciales que coincidan con las
 
 #### <a name="unallowed-browsers"></a>Exploradores no permitidos
 
-Para los dispositivos de Windows, agregue exploradores, identificados por sus nombres ejecutables, que no tendrán acceso a los archivos que cumplan las condiciones de una directiva DLP aplicada cuya restricción de carga a servicios en la nube esté configurada para bloquearse o bloquear una invalidación. Cuando estos exploradores no puedan acceder a un archivo, los usuarios finales verán una notificación del sistema que les pedirá que abran el archivo a través de Microsoft Edge.
+En el caso de los dispositivos Windows, agrega exploradores, identificados por sus nombres ejecutables, que se bloquearán para que no accedan a los archivos que coincidan con las condiciones de una directiva DLP aplicada en la que la restricción de carga en los servicios en la nube está establecida para bloquear o bloquear la invalidación. Cuando estos exploradores no puedan acceder a un archivo, los usuarios finales verán una notificación del sistema que les pedirá que abran el archivo a través de Microsoft Edge.
 
 Para dispositivos macOS, debe agregar la ruta de acceso de archivo completa. Para encontrar la ruta de acceso completa de las aplicaciones de Mac:
 
@@ -240,7 +243,7 @@ Para dispositivos macOS, debe agregar la ruta de acceso de archivo completa. Par
 
 Puede controlar si los archivos confidenciales protegidos por sus directivas se pueden cargar en dominios de servicio específicos de Microsoft Edge.
 
-Si el modo de lista está configurado en **Bloquear**, el usuario no podrá cargar elementos confidenciales a esos dominios. Cuando se bloquea una acción de carga porque un elemento coincide con una directiva DLP, la DLP genera una advertencia o bloquea la carga del elemento confidencial.
+Si el modo de lista está establecido en **Bloquear**, el usuario no podrá cargar elementos confidenciales en esos dominios. Cuando se bloquea una acción de carga porque un elemento coincide con una directiva DLP, la DLP genera una advertencia o bloquea la carga del elemento confidencial.
 
 Si el modo de lista está configurado en **Permitir**, los usuarios podrán cargar elementos confidenciales **_solo_** a dichos dominios y no se permitirá el acceso de carga a los demás dominios.
 
@@ -254,7 +257,7 @@ Por ejemplo:
 
 | Input | Comportamiento de coincidencia de direcciones URL |
 |---|---|
-| **CONTOSO.COM** |**Coincide con el nombre de dominio especificado y cualquier subsitio**: <p>*://contoso.com<p>*://contoso.com/ <p>*://contoso.com/anysubsite1 <p>*://contoso.com/anysubsite1/anysubsite2 (etc) <p>**No coincide con subdominios o dominios no especificados**: <p>*://anysubdomain.contoso.com <p>*://anysubdomain.contoso.com.AU |
+| **CONTOSO.COM** |**Coincide con el nombre de dominio especificado y cualquier subsitio**: <p>*://contoso.com<p>*://contoso.com/ <p>*://contoso.com/anysubsite1 <p>*:/ /contoso.com/anysubsite1/anysubsite2 (etc.) <p>**No coincide con subdominios o dominios no especificados**: <p>*://anysubdomain.contoso.com <p>*://anysubdomain.contoso.com.AU |
 | ***.CONTOSO.COM** |**Coincide con el nombre de dominio especificado, cualquier subdominio y cualquier sitio**: <p>*://contoso.com <p>*://contoso.com/anysubsite <p>*://contoso.com/anysubsite1/anysubsite2 <p>*://anysubdomain.contoso.com/ <p>*://anysubdomain.contoso.com/anysubsite/ <p>*://anysubdomain1.anysubdomain2.contoso.com/anysubsite/ <p>*://anysubdomain1.anysubdomain2.contoso.com/anysubsite1/anysubsite2 (etc.) <p>**No coincide con dominios no especificados** <p>*://anysubdomain.contoso.com.AU/ |
 | **`www.contoso.com`** |**Coincide con el nombre de dominio especificado**: <p>`www.contoso.com` <p>**No coincide con dominios o subdominios no especificados** <p>*://anysubdomain.contoso.com/, en este caso, tiene que colocar el propio nombre de dominio FQDN `www.contoso.com`|
 
@@ -265,8 +268,9 @@ Al enumerar un sitio web en dominios de servicios confidenciales, puede auditar,
 - imprimir desde un sitio web
 - copiar datos de un sitio web
 - guardar un sitio web como archivos locales
+- cargar un archivo confidencial en un sitio web excluido (se configura en la directiva)
 
-Cada sitio web debe aparecer en un grupo de sitios web y el usuario debe tener acceso al sitio web a través de Microsoft Edge. Los dominios de servicio confidenciales se usan junto con una directiva DLP para dispositivos. Consulte [Escenario 6 Supervisar o restringir las actividades del usuario en dominios de servicio confidenciales](endpoint-dlp-using.md#scenario-6-monitor-or-restrict-user-activities-on-sensitive-service-domains) para obtener más información.
+Para las acciones de impresión, copia y guardado, cada sitio web debe aparecer en un grupo de sitios web y el usuario debe acceder al sitio web a través de Microsoft Edge. Para la acción de carga, el usuario puede usar Microsoft Edge o Google Chrome con la extensión Purview. Los dominios de servicio confidenciales se usan junto con una directiva DLP para dispositivos. También puede definir los grupos de sitios web a los que desea asignar acciones de directiva distintas de las acciones de grupo de sitios web globales. Consulte [Escenario 6 Supervisar o restringir las actividades del usuario en dominios de servicio confidenciales](endpoint-dlp-using.md#scenario-6-monitor-or-restrict-user-activities-on-sensitive-service-domains) para obtener más información.
 
 
 ### <a name="additional-settings-for-endpoint-dlp"></a>Configuración adicional para DLP de punto de conexión
@@ -297,6 +301,200 @@ Puede crear hasta cinco opciones personalizadas que aparecerán cuando los usuar
 De forma predeterminada cuando los dispositivos están integrados, la actividad de los archivos Office, PDF y CSV se audita automáticamente y está disponible para su revisión en el Explorador de actividades. Desactive esta característica si quiere que esta actividad se audite solo cuando los dispositivos integrados estén incluidos en una directiva activa.
 
 La actividad de archivo se auditará siempre en los dispositivos integrados, independientemente de si están o no incluidos en una directiva activa.
+
+> [!IMPORTANT]
+> Para poder usar [los grupos de impresoras (versión preliminar),](#printer-groups-preview) [los grupos de dispositivos de almacenamiento extraíbles](#removable-storage-device-groups-preview), los [grupos de recursos compartidos de red](#network-share-groups-preview) y la [configuración de VPN](#vpn-settings-preview) , debe registrarse [aquí](https://forms.office.com/r/GNVTFvxuZv).
+
+### <a name="printer-groups-preview"></a>Grupos de impresoras (versión preliminar)
+
+Use esta configuración para definir grupos de impresoras a los que desea asignar acciones de directiva distintas de las acciones de impresión globales. Por ejemplo, supongamos que quiere que la directiva DLP bloquee la impresión de contratos en todas las impresoras, excepto en las impresoras que están en el departamento legal.
+
+Esta característica está disponible para dispositivos que ejecutan cualquiera de las siguientes versiones de Windows:  
+
+- Windows 10 y versiones posteriores (20H2, 21H1, 21H2) 
+- Ganar 11 21H2, 22H2
+- Windows Server 2022
+
+Una impresora se define mediante estos parámetros:
+
+- Nombre descriptivo de la impresora: obtenga el valor Nombre descriptivo de la impresora de los detalles de la propiedad del dispositivo de impresora en el administrador de dispositivos.
+- Id. de producto USB: obtenga el valor de ruta de acceso de la instancia de dispositivo de los detalles de la propiedad del dispositivo de impresora en el administrador de dispositivos. Conviértalo en el formato id. de producto y de id. de proveedor, consulte [Identificadores USB estándar](/windows-hardware/drivers/install/standard-usb-identifiers).
+- Id. de proveedor USB: obtenga el valor de ruta de acceso de la instancia de dispositivo de los detalles de la propiedad del dispositivo de impresora en el administrador de dispositivos. Conviértalo en el formato id. de producto y de id. de proveedor, consulte [Identificadores USB estándar](/windows-hardware/drivers/install/standard-usb-identifiers).
+- Intervalo IP
+- Imprimir en archivo: por ejemplo, Microsoft Print to PDF o Microsoft XPS Document Writer.
+- Impresión universal implementada en una impresora: consulte [Configuración de la impresión universal](/universal-print/fundamentals/universal-print-getting-started.md) para obtener más información sobre las impresoras universales.
+- Impresora corporativa: es una cola de impresión compartida a través del servidor de impresión local de Windows del dominio. Su ruta de acceso podría parecerse  \\a print-server\contoso.com\legal_printer_001
+- Imprimir en local
+
+Asigne un **nombre para mostrar** a cada impresora del grupo. El nombre solo aparece en la consola de Purview. Por lo tanto, continuando con el ejemplo, crearía un grupo de **impresoras denominado Impresoras legales** y agregaría impresoras individuales (con un alias) por su nombre descriptivo, como `legal_printer_001`, `legal_printer_002` y `legal_color_printer`.
+
+Puede seleccionar varios parámetros para ayudarle a identificar inequívocamente una impresora específica.
+
+Puede asignar estas acciones de directiva al grupo en una directiva DLP:
+
+- Permitir (auditoría sin notificaciones ni alertas de usuario)
+- Solo auditoría (puede agregar notificaciones y alertas)
+- Bloquear con invalidación (bloquea la acción, pero el usuario puede invalidarla)
+- Bloquear (bloques independientemente de qué)
+
+#### <a name="create-a-printer-group"></a>Creación de un grupo de impresoras
+
+1. Abra [portal de cumplimiento Microsoft Purview](https://compliance.microsoft.com) >  **Configuración dlp de puntos de conexión de** prevención  >  de  > **pérdida de datos****Grupos de impresoras**.
+1. Seleccione **Crear grupo de impresoras**.
+1. Asigne un nombre al grupo.
+1. Seleccione **Agregar impresora**.
+1. Asigne a la impresora un **Alias que solo aparecerá aquí.
+1. Seleccione los parámetros y proporcione los valores para identificar inequívocamente la impresora específica.
+1. Seleccione **Agregar**.
+1. Agregue otras impresoras según sea necesario.
+1. Seleccione **Cerrar**.
+
+El caso de uso más común es usar grupos de impresoras como lista de permitidos, como en el ejemplo anterior, para permitir la impresión de contratos solo en impresoras que están en el departamento legal. Después de definir un grupo de impresoras aquí, está disponible para usarse en las directivas que tienen como ámbito **Dispositivos**. Consulte [Grupos de autorización del escenario 7](endpoint-dlp-using.md#scenario-7-authorization-groups-preview) para obtener más información sobre cómo configurar acciones de directiva para usar grupos de autorización.
+
+### <a name="removable-storage-device-groups-preview"></a>Grupos de dispositivos de almacenamiento extraíbles (versión preliminar)
+
+Use esta configuración para definir grupos de dispositivos de almacenamiento extraíbles, como unidades usb, a los que desea asignar acciones de directiva distintas de las acciones de impresión globales. Por ejemplo, supongamos que quiere que la directiva DLP bloquee la copia de elementos con especificaciones de ingeniería en todos los dispositivos de almacenamiento extraíbles, excepto en el caso de las unidades de disco duro conectadas por USB que se usan para realizar copias de seguridad de datos y que, a continuación, se envían fuera del sitio.
+
+Esta característica está disponible para dispositivos que ejecutan cualquiera de las siguientes versiones de Windows:  
+
+- Windows 10 y versiones posteriores (20H2, 21H1, 21H2) 
+- Ganar 11 21H2, 22H2
+- Windows 10 RS5 (KB 5006744) y Windows Server 2022 
+
+Puede definir dispositivos de almacenamiento extraíbles mediante estos parámetros:
+
+- Nombre descriptivo del dispositivo de almacenamiento: obtenga el valor nombre descriptivo de los detalles de la propiedad del dispositivo de almacenamiento en el administrador de dispositivos.
+- Id. de producto USB: obtenga el valor de ruta de acceso de la instancia de dispositivo de los detalles de la propiedad del dispositivo de impresora en el administrador de dispositivos. Conviértalo en el formato id. de producto y de id. de proveedor, consulte [Identificadores USB estándar](/windows-hardware/drivers/install/standard-usb-identifiers).
+- Id. de proveedor USB: obtenga el valor de ruta de acceso de la instancia de dispositivo de los detalles de la propiedad del dispositivo de impresora en el administrador de dispositivos. Conviértalo en el formato id. de producto y de id. de proveedor, consulte [Identificadores USB estándar](/windows-hardware/drivers/install/standard-usb-identifiers).
+- Id. de número de serie: obtenga el valor de id. de número de serie de los detalles de la propiedad del dispositivo de almacenamiento en el administrador de dispositivos.
+- Id. de dispositivo: obtenga el valor de id. de dispositivo de los detalles de la propiedad del dispositivo de almacenamiento en el administrador de dispositivos.
+- Id. de ruta de acceso de instancia: obtenga el valor de id. de dispositivo de los detalles de la propiedad del dispositivo de almacenamiento en el administrador de dispositivos.
+- Id. de hardware: obtenga el valor de id. de hardware de los detalles de la propiedad del dispositivo de almacenamiento en el administrador de dispositivos.
+
+Asigne un **alias** a cada dispositivo de almacenamiento extraíble del grupo. El alias es un nombre que solo aparece en la consola de Purview. Por lo tanto, continuando con el ejemplo, crearía un grupo de dispositivos de almacenamiento extraíble denominado **Copia de seguridad** y agregaría dispositivos individuales (con un alias) por su nombre descriptivo, como `backup_drive_001`, y `backup_drive_002`.
+
+Puede seleccionar varios parámetros y el grupo de impresoras incluirá todos los dispositivos que cumplan esos parámetros.
+
+Puede asignar estas acciones de directiva al grupo en una directiva DLP:
+
+- Permitir (auditoría sin notificaciones ni alertas de usuario)
+- Solo auditoría (puede agregar notificaciones y alertas)
+- Bloquear con invalidación (bloquea la acción, pero el usuario puede invalidarla)
+- Bloquear (bloques independientemente de qué)
+
+#### <a name="create-a-removable-storage-device-group"></a>Creación de un grupo de dispositivos de almacenamiento extraíble
+
+1. Abra [portal de cumplimiento Microsoft Purview](https://compliance.microsoft.com) >  **Configuración DLP de punto de conexión** de **prevención** >  de  >  pérdida de **datos Grupos de dispositivos de almacenamiento extraíbles**.
+1. Seleccione **Crear grupo de dispositivos de almacenamiento extraíble**.
+1. Proporcione un **nombre de grupo**.
+1. Seleccione **Agregar dispositivo de almacenamiento extraíble**.
+1. Proporcione un **alias**.
+1. Seleccione los parámetros y proporcione los valores para identificar de forma inequívoca el dispositivo específico.
+1. Seleccione **Agregar**.
+1. Agregue otros dispositivos al grupo según sea necesario.
+1. Seleccione **Cerrar**.
+
+El caso de uso más común es usar grupos de dispositivos de almacenamiento extraíbles como una lista de permitidos, como en el ejemplo anterior, para permitir la copia de archivos solo en los dispositivos que se encuentran en el grupo **Copia de seguridad** . Después de definir un grupo de dispositivos de almacenamiento extraíble aquí, está disponible para usarse en las directivas que tienen como ámbito **Dispositivos**. Consulte [Grupos de autorización del escenario 7](endpoint-dlp-using.md#scenario-7-authorization-groups-preview) para obtener más información sobre cómo configurar acciones de directiva para usar grupos de autorización. Aunque el escenario 7 usa grupos de autorización de impresora como ejemplo, los principios son idénticos. Lo único que cambia son los nombres de los grupos y las acciones que seleccione.
+
+### <a name="network-share-groups-preview"></a>Grupos de recursos compartidos de red (versión preliminar)
+
+Use esta configuración para definir grupos de rutas de acceso de recurso compartido de red a los que desea asignar acciones de directiva distintas de las acciones de ruta de acceso del recurso compartido de red global. Por ejemplo, supongamos que quiere que la directiva DLP se bloquee cuando los usuarios intenten guardar o copiar archivos protegidos en recursos compartidos de red excepto los recursos compartidos de red de este grupo.
+
+
+Esta característica está disponible para dispositivos que ejecutan cualquiera de las siguientes versiones de Windows:  
+
+- Windows 10 y versiones posteriores (20H2, 21H1, 21H2) 
+- Ganar 11 21H2, 22H2
+- Windows 10 RS5 (KB 5006744) y Windows Server 2022 
+
+
+Para incluir rutas de acceso de recurso compartido de red, defina el prefijo con el que comienzan todos. Por ejemplo:
+
+- "\\Biblioteca" coincidirá con:
+    -  Carpeta \Library y todas sus subcarpetas.
+
+- Puede usar caracteres comodín; por ejemplo, "\\Usuarios\*\Escritorio" coincidirá:
+    - "\\USers\user1\Desktop"
+    - "\\USers\user1\user2\Desktop"
+    - "\\Users\*\Desktop"
+
+- Puede usar variables de entorno, por ejemplo:
+    - %AppData%\app123
+
+Puede asignar estas acciones de directiva al grupo en una directiva DLP:
+
+- Permitir (auditoría sin notificaciones ni alertas de usuario)
+- Solo auditoría (puede agregar notificaciones y alertas)
+- Bloquear con invalidación (bloquea la acción, pero el usuario puede invalidarla)
+- Bloquear (bloques independientemente de qué)
+
+#### <a name="create-a-network-share-group"></a>Creación de un grupo de recursos compartidos de red
+
+1. Abra [portal de cumplimiento Microsoft Purview](https://compliance.microsoft.com) >  **Configuración** dlp de puntos de conexión de prevención  >  de  > **pérdida de datos****Grupos compartidos de red**.
+1.Seleccione **Crear grupo de recursos compartidos de red**.
+1. Proporcione un **nombre de grupo**.
+1. Agregue la ruta de acceso del archivo al recurso compartido.
+1. Seleccione **Agregar**.
+1. Agregue otras rutas de acceso de recurso compartido al grupo según sea necesario.
+1. Seleccione **Cerrar**.
+
+
+El caso de uso más común es usar el grupo de recursos compartidos de red como una lista de permitidos, como en el ejemplo anterior, para permitir a los usuarios guardar o copiar archivos protegidos solo en los recursos compartidos de red definidos en el grupo. Después de definir un grupo de recursos compartidos de redes aquí, está disponible para usarse en las directivas que tienen como ámbito **dispositivos**. Consulte [Grupos de autorización del escenario 7](endpoint-dlp-using.md#scenario-7-authorization-groups-preview) para obtener más información sobre cómo configurar acciones de directiva para usar grupos de autorización.
+
+### <a name="vpn-settings-preview"></a>Configuración de VPN (versión preliminar)
+
+Use la lista de VPN para controlar solo las acciones que se llevan a cabo a través de esa VPN.
+
+Esta característica está disponible para dispositivos que ejecutan cualquiera de estas versiones de Windows:  
+    
+- Windows 10 y versiones posteriores (20H2, 21H1, 21H2) 
+- Windows 11 21H2, 22H2
+- Windows 10 RS5 (KB 5006744)
+
+Al enumerar una VPN en **configuración de VPN** , puede asignarles estas acciones de directiva:
+
+- Permitir (auditoría sin notificaciones ni alertas de usuario)
+- Solo auditoría (puede agregar notificaciones y alertas)
+- Bloquear con invalidación (bloquea la acción, pero el usuario puede invalidarla)
+- Bloquear (bloques independientemente de qué)
+
+Estas acciones se pueden aplicar individual o colectivamente a estas actividades de usuario:
+
+- Copiar en el portapapeles
+- Copia en un dispositivo extraíble USB
+- Copiar en un recurso compartido de red
+- Imprimir
+- Copiar o mover mediante una aplicación Bluetooth no permitida
+- Copia o movimiento mediante RDP
+
+Al configurar una directiva DLP para restringir la actividad en los dispositivos, puede controlar lo que sucede con cada actividad realizada cuando los usuarios están conectados a su organización dentro de cualquiera de las VPN enumeradas.
+
+La VPN se define mediante estos parámetros **Dirección del servidor** o **Dirección de red**. 
+
+#### <a name="get-the-server-address-or-network-address"></a>Obtener la dirección del servidor o la dirección de red
+
+1. En un dispositivo Windows supervisado por DLP, abra una ventana **de Windows PowerShell** como administrador.
+1. Ejecución de este cmdlet
+
+```powershell-interactive
+Get-VpnConnection
+```
+3. La ejecución de este cmdlet devuelve varios campos y valores.
+1. Busque el campo **ServerAddress** y registre ese valor. Lo usará al crear una entrada VPN en la lista de VPN.
+1. Busque el campo **Nombre** y registre ese valor. El campo **Nombre** se asigna al campo **Dirección de** red al crear una entrada VPN en la lista VPN.
+
+#### <a name="add-a-vpn"></a>Adición de una VPN
+
+1. Abra [portal de cumplimiento Microsoft Purview](https://compliance.microsoft.com) >  **Configuración** > **de VPN** de prevención de pérdida de datos **dlp de** >  punto de conexión.
+1. Seleccione **Agregar o editar direcciones VPN**.
+1. Proporcione la **dirección del servidor** o **la dirección de red** de la ejecución de Get-VpnConnection.
+1. Seleccione **Guardar**.
+1. Cierre el elemento.
+
+> [!IMPORTANT]
+> Cuando use la lista vpn para definir las acciones de una directiva, también verá **Red corporativa** como una opción. **Las conexiones de red corporativas** son todas conexiones a los recursos de la organización. Estas conexiones pueden incluir VPN. 
+
+Consulte [Excepciones de red del escenario 8](endpoint-dlp-using.md#scenario-8-network-exceptions-preview)para obtener más información sobre cómo configurar acciones de directiva para usar excepciones de red.
 
 ## <a name="see-also"></a>Consulte también
 

@@ -24,12 +24,12 @@ ms.topic: conceptual
 search.appverid:
 - MOE150
 - MET150
-ms.openlocfilehash: 9352f54e54966850484caf2b3a116710c41b248a
-ms.sourcegitcommit: 12af9e8e3a6eaa090fda9e98ccb831dff65863a4
+ms.openlocfilehash: bdb13779935290840e81211e69f54cf2d05fbe86
+ms.sourcegitcommit: 8d3c027592a638f411f87d89772dd3d39e92aab0
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/27/2022
-ms.locfileid: "68060876"
+ms.lasthandoff: 10/12/2022
+ms.locfileid: "68536156"
 ---
 # <a name="step-2-remediate-your-first-incident"></a>Paso 2. Corrección del primer incidente
 
@@ -50,7 +50,7 @@ Microsoft 365 Defender ofrece varias acciones de corrección que los analistas p
 - **Iniciar investigación automatizada** : puede iniciar una nueva investigación automatizada de uso general en el dispositivo. Mientras se ejecuta una investigación, cualquier otra alerta generada desde el dispositivo se agregará a una investigación automatizada en curso hasta que se complete esa investigación. Además, si se ve la misma amenaza en otros dispositivos, esos dispositivos se agregan a la investigación.
 - **Iniciar respuesta en directo** : la respuesta en directo es una funcionalidad que proporciona acceso instantáneo a un dispositivo mediante una conexión de shell remoto. Esto le ofrece la capacidad de realizar un trabajo de investigación en profundidad y tomar medidas de respuesta inmediatas para contener rápidamente amenazas identificadas en tiempo real. La respuesta en directo está diseñada para mejorar las investigaciones, ya que le permite recopilar datos forenses, ejecutar scripts, enviar entidades sospechosas para su análisis, corregir amenazas y buscar amenazas emergentes de forma proactiva.
 - **Recopilar paquete de investigación** : como parte del proceso de investigación o respuesta, puede recopilar un paquete de investigación de un dispositivo. Al recopilar el paquete de investigación, puede identificar el estado actual del dispositivo y comprender aún más las herramientas y técnicas usadas por el atacante. 
-- **Consulte a un experto en amenazas** (disponible en Acciones en dispositivos y archivos): puede consultar a un experto en amenazas de Microsoft para obtener más información sobre dispositivos potencialmente comprometidos o dispositivos que ya están en peligro. Los expertos en amenazas de Microsoft pueden participar directamente desde dentro de Microsoft 365 Defender para obtener una respuesta oportuna y precisa. 
+- **Pregunte a expertos de Defender** (disponible en Acciones en dispositivos y archivos): puede consultar a un experto en Microsoft Defender para obtener más información sobre dispositivos o dispositivos potencialmente comprometidos que ya están en peligro. Microsoft Defender expertos pueden participar directamente desde Microsoft 365 Defender para obtener una respuesta oportuna y precisa.
 
 ## <a name="actions-on-files"></a>Acciones en archivos
 

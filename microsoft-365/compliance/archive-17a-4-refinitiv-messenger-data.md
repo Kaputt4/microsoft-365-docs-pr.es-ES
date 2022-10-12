@@ -1,5 +1,6 @@
 ---
 title: Configuración de un conector para archivar los datos de Refinitiv Eikon Messenger en Microsoft 365
+description: Obtenga información sobre cómo configurar y usar un conector 17a-4 Refinitiv Eikon Messenger DataParser para importar y archivar estos datos en Microsoft 365.
 f1.keywords:
 - NOCSH
 ms.author: robmazz
@@ -10,20 +11,24 @@ audience: Admin
 ms.topic: how-to
 ms.service: O365-seccomp
 ms.localizationpriority: medium
-ms.collection: M365-security-compliance
-description: Obtenga información sobre cómo configurar y usar un conector 17a-4 Refinitiv Eikon Messenger DataParser para importar y archivar estos datos en Microsoft 365.
-ms.openlocfilehash: 99e4dd8262dd00bf37c0653c15e8ab27356042fa
-ms.sourcegitcommit: 433f5b448a0149fcf462996bc5c9b45d17bd46c6
+ms.collection:
+- tier3
+- purview-compliance
+- data-connectors
+ms.openlocfilehash: 42207af8b272288e6e10d912d19771f58af1a2f2
+ms.sourcegitcommit: 8d3c027592a638f411f87d89772dd3d39e92aab0
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/20/2022
-ms.locfileid: "67823769"
+ms.lasthandoff: 10/12/2022
+ms.locfileid: "68534484"
 ---
 # <a name="set-up-a-connector-to-archive-refinitiv-eikon-messenger-data"></a>Configuración de un conector para archivar datos de Refinitiv Eikon Messenger
 
 Use [Refinitiv Eikon Messenger DataParser](https://www.17a-4.com/refinitiv-messenger-dataparser/) de 17a-4 LLC para importar y archivar datos de Refinitiv Eikon Messenger en buzones de correo de usuario de su organización de Microsoft 365. DataParser incluye un conector Refinitiv Eikon Messenger configurado para capturar elementos de un origen de datos de terceros e importarlos a Microsoft 365. El conector Refinitiv Eikon Messenger DataParser convierte los datos de Refinitiv Eikon Messenger en un formato de mensaje de correo electrónico y, a continuación, los importa a buzones de usuario en Microsoft 365.
 
 Una vez que los datos de Refinitiv Eikon Messenger se almacenan en buzones de usuario, puede aplicar características de Microsoft Purview como suspensión por juicio, exhibición de documentos electrónicos, directivas de retención y etiquetas de retención y cumplimiento de comunicaciones. El uso de un conector de Refinitiv Eikon Messenger para importar y archivar datos en Microsoft 365 puede ayudar a su organización a cumplir las directivas gubernamentales y normativas.
+
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
 
 ## <a name="overview-of-archiving-refinitiv-eikon-messenger-data"></a>Información general sobre el archivado de datos de Refinitiv Eikon Messenger
 
@@ -51,13 +56,13 @@ En la información general siguiente se explica el proceso de uso de un conector
 
 El primer paso es acceder a la página Conectores de datos en el portal de cumplimiento y crear un conector 17a-4 para los datos de Refinitiv Eikon Messenger.
 
-1. Vaya a y, a <https://compliance.microsoft.com> continuación, haga clic en **Conectores** >  de datos **Refinitiv Eikon Messenger DataParser**.
+1. Vaya a <https://compliance.microsoft.com> y seleccione **Conectores** >  de datos **Refinitiv Eikon Messenger DataParser**.
 
-2. En la página de descripción del producto **Refinitiv Eikon Messenger DataParser** , haga clic en **Agregar conector**.
+2. En la página de descripción del producto **Refinitiv Eikon Messenger DataParser** , seleccione **Agregar conector**.
 
-3. En la página **Términos de servicio** , haga clic en **Aceptar**.
+3. En la página **Términos de servicio** , seleccione **Aceptar**.
 
-4. Escriba un nombre único que identifique el conector y, a continuación, haga clic en **Siguiente**.
+4. Escriba un nombre único que identifique el conector y, a continuación, seleccione **Siguiente**.
 
 5. Inicie sesión en su cuenta 17a-4 y complete los pasos del Asistente para conexión de DataParser de Refinitiv Eikon Messenger.
 
@@ -73,11 +78,11 @@ El conector Refinitiv Eikon Messenger DataParser asignará automáticamente a lo
 
 Después de crear un conector de DataParser de Refinitiv Eikon Messenger, puede ver el estado del conector en el portal de cumplimiento.
 
-1. Vaya a <https://compliance.microsoft.com> y haga clic en **Conectores de datos** en el panel de navegación izquierdo.
+1. Vaya a <https://compliance.microsoft.com> y seleccione **Conectores de datos** en el panel de navegación izquierdo.
 
-2. Haga clic en la pestaña **Conectores** y, a continuación, seleccione el conector Refinitiv Eikon Messenger DataParser que creó para mostrar la página de control flotante, que contiene las propiedades y la información sobre el conector.
+2. Seleccione la pestaña **Conectores** y, a continuación, seleccione el conector Refinitiv Eikon Messenger DataParser que creó para mostrar la página de control flotante, que contiene las propiedades y la información sobre el conector.
 
-3. En **Estado del conector con origen**, haga clic en el vínculo **Descargar registro** para abrir (o guardar) el registro de estado del conector. Este registro contiene información sobre los datos que se han importado a la nube de Microsoft. Para obtener más información, consulte [Visualización de registros de administración para conectores de datos](data-connector-admin-logs.md).
+3. En **Estado del conector con origen**, seleccione el vínculo **Descargar registro** para abrir (o guardar) el registro de estado del conector. Este registro contiene información sobre los datos que se han importado a la nube de Microsoft. Para obtener más información, consulte [Visualización de registros de administración para conectores de datos](data-connector-admin-logs.md).
 
 ## <a name="known-issues"></a>Problemas conocidos
 

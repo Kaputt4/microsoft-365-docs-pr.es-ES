@@ -1,5 +1,6 @@
 ---
 title: Configuración de un conector para archivar datos de Slack en Microsoft 365
+description: Obtenga información sobre cómo configurar y usar un conector de Slack DataParser 17a-4 para importar y archivar datos de Slack en Microsoft 365.
 f1.keywords:
 - NOCSH
 ms.author: robmazz
@@ -10,20 +11,24 @@ audience: Admin
 ms.topic: how-to
 ms.service: O365-seccomp
 ms.localizationpriority: medium
-ms.collection: M365-security-compliance
-description: Obtenga información sobre cómo configurar y usar un conector de Slack DataParser 17a-4 para importar y archivar datos de Slack en Microsoft 365.
-ms.openlocfilehash: 4088f9a94c26cc7ed96d8a5a053383f674fb10ed
-ms.sourcegitcommit: 433f5b448a0149fcf462996bc5c9b45d17bd46c6
+ms.collection:
+- tier3
+- purview-compliance
+- data-connectors
+ms.openlocfilehash: 0ebbd24b9e546290fce3c5d21c048053b8ac513a
+ms.sourcegitcommit: 8d3c027592a638f411f87d89772dd3d39e92aab0
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/20/2022
-ms.locfileid: "67826344"
+ms.lasthandoff: 10/12/2022
+ms.locfileid: "68534374"
 ---
 # <a name="set-up-a-connector-to-archive-slack-data"></a>Configuración de un conector para archivar datos de Slack
 
 Use [DataParser de 17a-4 LLC](https://www.17a-4.com/slack-dataparser/) para importar y archivar datos de la plataforma Slack a buzones de usuario de su organización de Microsoft 365. DataParser incluye un conector de Slack configurado para capturar elementos de un origen de datos de terceros e importarlos a Microsoft 365. El conector de Slack DataParser convierte los datos de Slack en un formato de mensaje de correo electrónico y, a continuación, importa esos elementos a buzones de usuario en Microsoft 365.
 
 Una vez que los datos de Slack se almacenan en buzones de usuario, puede aplicar características de Microsoft Purview, como suspensión por juicio, exhibición de documentos electrónicos, directivas de retención y etiquetas de retención y cumplimiento de comunicaciones. El uso de un conector de Slack para importar y archivar datos en Microsoft 365 puede ayudar a su organización a cumplir las directivas gubernamentales y normativas.
+
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
 
 ## <a name="overview-of-archiving-slack-data"></a>Introducción al archivado de datos de Slack
 
@@ -33,7 +38,7 @@ En la información general siguiente se explica el proceso de uso de un conector
 
 1. Su organización funciona con 17a-4 para configurar y configurar Slack DataParser.
 
-2. De forma periódica, los elementos de Slack son recopilados por DataParser. DataParser también convierte el contenido de un mensaje en un formato de mensaje de correo electrónico.
+2. Con regularidad, dataparser recopila los elementos de Slack. DataParser también convierte el contenido de un mensaje en un formato de mensaje de correo electrónico.
 
 3. El conector de Slack DataParser que se crea en el portal de cumplimiento Microsoft Purview se conecta a DataParser y transfiere los mensajes a una ubicación segura de Azure Storage en la nube de Microsoft.
 
@@ -51,13 +56,13 @@ En la información general siguiente se explica el proceso de uso de un conector
 
 El primer paso es acceder a la página Conectores de datos en el portal de cumplimiento y crear un conector 17a-4 para los datos de Slack.
 
-1. Vaya a y, a <https://compliance.microsoft.com> continuación, haga clic en **Data connectors** > **Slack DataParser**.
+1. Vaya a <https://compliance.microsoft.com> y seleccione **Conectores** >  de datos **Slack DataParser**.
 
-2. En la página de descripción del producto **Slack DataParser** , haga clic en **Agregar conector**.
+2. En la página de descripción del producto **Slack DataParser** , seleccione **Agregar conector**.
 
-3. En la página **Términos de servicio** , haga clic en **Aceptar**.
+3. En la página **Términos de servicio** , seleccione **Aceptar**.
 
-4. Escriba un nombre único que identifique el conector y, a continuación, haga clic en **Siguiente**.
+4. Escriba un nombre único que identifique el conector y, a continuación, seleccione **Siguiente**.
 
 5. Inicie sesión en su cuenta 17a-4 y complete los pasos del Asistente para conexión de Slack DataParser.
 
@@ -73,11 +78,11 @@ El conector de Slack DataParser asignará automáticamente los usuarios a sus di
 
 Después de crear un conector de Slack DataParser, puede ver el estado del conector en el portal de cumplimiento.
 
-1. Vaya a <https://compliance.microsoft.com> y haga clic en **Conectores de datos** en el panel de navegación izquierdo.
+1. Vaya a <https://compliance.microsoft.com> y seleccione **Conectores de datos** en el panel de navegación izquierdo.
 
-2. Haga clic en la pestaña **Conectores** y, a continuación, seleccione el conector Slack DataParser que creó para mostrar la página de control flotante, que contiene las propiedades y la información sobre el conector.
+2. Seleccione la pestaña **Conectores** y, a continuación, seleccione el conector Slack DataParser que creó para mostrar la página de control flotante, que contiene las propiedades y la información sobre el conector.
 
-3. En **Estado del conector con origen**, haga clic en el vínculo **Descargar registro** para abrir (o guardar) el registro de estado del conector. Este registro contiene información sobre los datos que se han importado a la nube de Microsoft. Para obtener más información, consulte [Visualización de registros de administración para conectores de datos](data-connector-admin-logs.md).
+3. En **Estado del conector con origen**, seleccione el vínculo **Descargar registro** para abrir (o guardar) el registro de estado del conector. Este registro contiene información sobre los datos que se han importado a la nube de Microsoft. Para obtener más información, consulte [Visualización de registros de administración para conectores de datos](data-connector-admin-logs.md).
 
 ## <a name="known-issues"></a>Problemas conocidos
 

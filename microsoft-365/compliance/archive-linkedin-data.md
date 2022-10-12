@@ -1,5 +1,6 @@
 ---
 title: Configurar un conector para archivar datos de LinkedIn
+description: Obtenga información sobre cómo los administradores pueden configurar & usar un conector nativo para importar datos de una página de empresa de LinkedIn a Microsoft 365.
 f1.keywords:
 - NOCSH
 ms.author: robmazz
@@ -12,21 +13,25 @@ ms.service: O365-seccomp
 ms.localizationpriority: medium
 search.appverid:
 - MET150
-ms.collection: M365-security-compliance
+ms.collection:
+- tier3
+- purview-compliance
+- data-connectors
 ms.custom: seo-marvel-apr2020
-description: Obtenga información sobre cómo los administradores pueden configurar & usar un conector nativo para importar datos de una página de empresa de LinkedIn a Microsoft 365.
-ms.openlocfilehash: 890ae9e618728cded8035dc69afe23b95a33d526
-ms.sourcegitcommit: 433f5b448a0149fcf462996bc5c9b45d17bd46c6
+ms.openlocfilehash: 260409689360bf2bc24c28b619dca6fd55833288
+ms.sourcegitcommit: 8d3c027592a638f411f87d89772dd3d39e92aab0
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/20/2022
-ms.locfileid: "67822273"
+ms.lasthandoff: 10/12/2022
+ms.locfileid: "68534044"
 ---
 # <a name="set-up-a-connector-to-archive-linkedin-data"></a>Configurar un conector para archivar datos de LinkedIn
 
 Use un conector en el portal de cumplimiento Microsoft Purview para importar y archivar datos de páginas de LinkedIn Company. Después de configurar y configurar un conector, se conecta a la cuenta de la página específica de LinkedIn Company una vez cada 24 horas. El conector convierte los mensajes publicados en la página Empresa en un mensaje de correo electrónico y, a continuación, importa esos elementos a un buzón en Microsoft 365.
 
 Después de almacenar los datos de la página De la empresa de LinkedIn en un buzón de correo, puede aplicar las características de Microsoft Purview, como la suspensión por juicio, la búsqueda de contenido, el archivado de In-Place, la auditoría y las directivas de retención de Microsoft 365 a los datos de LinkedIn. Por ejemplo, puede buscar estos elementos mediante búsqueda de contenido o asociar el buzón de almacenamiento a un custodio en un caso de Microsoft Purview eDiscovery (Premium). La creación de un conector para importar y archivar datos de LinkedIn en Microsoft 365 puede ayudar a su organización a cumplir las directivas gubernamentales y normativas.
+
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
 
 ## <a name="before-you-set-up-a-connector"></a>Antes de configurar un conector
 
@@ -38,29 +43,29 @@ Después de almacenar los datos de la página De la empresa de LinkedIn en un bu
 
 ## <a name="create-a-linkedin-connector"></a>Creación de un conector de LinkedIn
 
-1. Vaya a y, a <https://compliance.microsoft.com> continuación, haga clic en **Páginas de linkedIn Company** **de conectores** >  de datos.
+1. Vaya a y, a <https://compliance.microsoft.com> continuación, seleccione Páginas de **LinkedIn Company** **de conectores** >  de datos.
 
-2. En la página de producto de **las páginas de empresa de LinkedIn** , haga clic en **Agregar conector**.
+2. En la página de producto de **las páginas de empresa de LinkedIn** , seleccione **Agregar conector**.
 
 3. En la página **Términos de servicio** , seleccione **Aceptar**.
 
-4. En la página **Iniciar sesión con LinkedIn** , haga clic **en Iniciar sesión con LinkedIn**.
+4. En la página **Iniciar sesión con LinkedIn** , seleccione **Iniciar sesión con LinkedIn**.
 
    Se muestra la página de inicio de sesión de LinkedIn.
 
    ![Página de inicio de sesión de LinkedIn.](../media/LinkedInSigninPage.png)
 
-5. En la página de inicio de sesión de LinkedIn, escriba la dirección de correo electrónico (o el número de teléfono) y la contraseña de la cuenta de LinkedIn asociada a la página de empresa que desea archivar y, a continuación, haga clic **en Iniciar sesión**.
+5. En la página de inicio de sesión de LinkedIn, escriba la dirección de correo electrónico (o el número de teléfono) y la contraseña de la cuenta de LinkedIn asociada a la página de empresa que desea archivar y, a continuación, seleccione **Iniciar sesión**.
 
    Se muestra una página del asistente con una lista de todas las páginas de empresa de LinkedIn asociadas a la cuenta en la que inició sesión. Un conector solo se puede configurar para una página de empresa. Si su organización tiene varias páginas de empresa de LinkedIn, debe crear un conector para cada una de ellas.
 
    ![Se muestra una página con una lista de páginas de empresa de LinkedIn.](../media/LinkedInSelectCompanyPage.png)
 
-6. Seleccione la página de empresa desde la que desea archivar elementos y, a continuación, haga clic en **Siguiente**.
+6. Seleccione la página de la empresa desde la que desea archivar los elementos y, a continuación, seleccione **Siguiente**.
 
-7. En la página **Elegir ubicación de almacenamiento** , haga clic en el cuadro, seleccione la dirección de correo electrónico de un buzón de Microsoft 365 al que se importarán los elementos de LinkedIn y, a continuación, haga clic en **Siguiente**. Los elementos se importan a la carpeta bandeja de entrada de este buzón. El buzón usado debe tener una licencia Exchange Online plan 1 o plan 2.
+7. En la página **Elegir ubicación de almacenamiento** , seleccione en el cuadro, seleccione la dirección de correo electrónico de un buzón de Microsoft 365 al que se importarán los elementos de LinkedIn y, a continuación, seleccione **Siguiente**. Los elementos se importan a la carpeta bandeja de entrada de este buzón. El buzón usado debe tener una licencia Exchange Online plan 1 o plan 2.
 
-8. Haga clic en **Siguiente** para revisar la configuración del conector y, a continuación, haga clic en **Finalizar** para completar la configuración del conector.
+8. Seleccione **Siguiente** para revisar la configuración del conector y, a continuación, seleccione **Finalizar** para completar la configuración del conector.
 
 Después de crear el conector, puede volver a la página **Conectores de datos** para ver el progreso del proceso de importación del nuevo conector (seleccione **Actualizar** si es necesario para actualizar la lista de conectores). El valor de la columna **Estado** es **Esperando a iniciarse**. El proceso de importación inicial tarda hasta 24 horas en iniciarse. Después de la primera vez que el conector se ejecuta e importa los elementos de LinkedIn, el conector se ejecutará una vez cada 24 horas e importará los nuevos elementos creados en la página de empresa de LinkedIn en las 24 horas anteriores.
 

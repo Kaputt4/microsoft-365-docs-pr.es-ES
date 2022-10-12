@@ -18,12 +18,12 @@ ms.collection:
 description: Obtenga información sobre cómo configurar Domain-based Message Authentication, Reporting, and Conformance (DMARC) para validar mensajes enviados desde la organización.
 ms.subservice: mdo
 ms.service: microsoft-365-security
-ms.openlocfilehash: c81843c9d8ed40cdd14d854e05f9d7b50de35229
-ms.sourcegitcommit: 12af9e8e3a6eaa090fda9e98ccb831dff65863a4
+ms.openlocfilehash: f6f460e0a0252f938e351ead0f44e0987fa78359
+ms.sourcegitcommit: 8d3c027592a638f411f87d89772dd3d39e92aab0
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/27/2022
-ms.locfileid: "68072313"
+ms.lasthandoff: 10/12/2022
+ms.locfileid: "68536420"
 ---
 # <a name="use-dmarc-to-validate-email"></a>Usar DMARC para validar el correo electrónico
 
@@ -215,7 +215,7 @@ You can implement DMARC gradually without impacting the rest of your mail flow. 
 
 4. ¿Cómo configuro DMARC para un subdominio?
 
-   DMARC se implementa mediante la publicación de una directiva como un registro TXT en DNS y es jerárquica (por ejemplo, una directiva publicada para contoso.com se aplicará a sub.domain.contonos.com a menos que se defina explícitamente otra directiva para el subdominio). Esto es útil para que las organizaciones puedan especificar un número más reducido de registros de DMARC de alto nivel para un mayor alcance. Se debe prestar especial atención a la configuración de registros de DMARC de subdominios explícitos en los que no quiera que los subdominios hereden el registro de DMARC del dominio de nivel superior.
+   DMARC se implementa mediante la publicación de una directiva como un registro TXT en DNS y es jerárquica (por ejemplo, una directiva publicada para contoso.com se aplicará a sub.domain.contoso.com a menos que se defina explícitamente una directiva diferente para el subdominio). Esto es útil para que las organizaciones puedan especificar un número más reducido de registros de DMARC de alto nivel para un mayor alcance. Se debe prestar especial atención a la configuración de registros de DMARC de subdominios explícitos en los que no quiera que los subdominios hereden el registro de DMARC del dominio de nivel superior.
 
    Asimismo, con el valor `sp=reject`, puede agregar una directiva de tipo comodín para DMARC cuando los subdominios no puedan enviar correos electrónicos. Por ejemplo:
 

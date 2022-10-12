@@ -17,12 +17,12 @@ ms.collection:
 appliesto:
 - Microsoft Teams
 - Microsoft 365 for frontline workers
-ms.openlocfilehash: 73caa31accca7af22600ab13bc602690baaf17eb
-ms.sourcegitcommit: 12af9e8e3a6eaa090fda9e98ccb831dff65863a4
+ms.openlocfilehash: b20933e98870ffaca7dee5c46922cec49dbaed13
+ms.sourcegitcommit: 8d3c027592a638f411f87d89772dd3d39e92aab0
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/27/2022
-ms.locfileid: "68063582"
+ms.lasthandoff: 10/12/2022
+ms.locfileid: "68535958"
 ---
 # <a name="deploy-teams-at-scale-for-frontline-workers"></a>Implementación de Teams a escala para trabajadores de primera línea
 
@@ -45,8 +45,8 @@ En este artículo se explica cómo implementar Teams a escala.
 
 ## <a name="set-up-and-deploy-your-teams"></a>Configuración e implementación de equipos
 
-> [!NOTE]
-> Antes de implementar los equipos, asegúrese de que todos los propietarios de los equipos cuenten con una licencia de Teams.
+> [!IMPORTANT]
+> Los propietarios del equipo deben tener una licencia de Teams. Antes de usar estos pasos para implementar los equipos, asegúrese de que todos los propietarios de los equipos tienen una licencia.
 
 Siga estos pasos para implementar hasta 500 equipos a la vez.
 

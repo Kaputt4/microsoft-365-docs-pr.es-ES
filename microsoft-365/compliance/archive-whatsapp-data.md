@@ -1,5 +1,6 @@
 ---
 title: Configuración de un conector para archivar datos de WhatsApp en Microsoft 365
+description: Los administradores pueden configurar un conector de TeleMessage para importar y archivar datos de WhatsApp en Microsoft 365. Esto le permite archivar datos de orígenes de datos de terceros en Microsoft 365 para que pueda usar características de cumplimiento como la suspensión legal, la búsqueda de contenido y las directivas de retención para administrar los datos de terceros de su organización.
 f1.keywords:
 - NOCSH
 ms.author: robmazz
@@ -10,20 +11,24 @@ audience: Admin
 ms.topic: how-to
 ms.service: O365-seccomp
 ms.localizationpriority: medium
-ms.collection: M365-security-compliance
-description: Los administradores pueden configurar un conector de TeleMessage para importar y archivar datos de WhatsApp en Microsoft 365. Esto le permite archivar datos de orígenes de datos de terceros en Microsoft 365 para que pueda usar características de cumplimiento como la suspensión legal, la búsqueda de contenido y las directivas de retención para administrar los datos de terceros de su organización.
-ms.openlocfilehash: b748e5a4a1efc3f5c4c936ec4048b9e37fa83fb5
-ms.sourcegitcommit: 433f5b448a0149fcf462996bc5c9b45d17bd46c6
+ms.collection:
+- tier3
+- purview-compliance
+- data-connectors
+ms.openlocfilehash: 03365aa3b6cc88ddd5d2487441bc398ba97bc8ac
+ms.sourcegitcommit: 8d3c027592a638f411f87d89772dd3d39e92aab0
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/20/2022
-ms.locfileid: "67820755"
+ms.lasthandoff: 10/12/2022
+ms.locfileid: "68533824"
 ---
 # <a name="set-up-a-connector-to-archive-whatsapp-data"></a>Configuración de un conector para archivar datos de WhatsApp
 
 Use el conector TeleMessage en el portal de cumplimiento Microsoft Purview para importar y archivar llamadas de WhatsApp, chats, datos adjuntos, archivos y mensajes eliminados. Después de configurar y configurar un conector, se conecta a la cuenta de TeleMessage de su organización una vez al día e importa la comunicación móvil de los empleados mediante TeleMessage WhatsApp Phone Archiver o TeleMessage WhatsApp Cloud Archiver a buzones de Microsoft 365.
 
 Una vez que los datos de WhatsApp se almacenan en buzones de usuario, puede aplicar características de Microsoft Purview como la suspensión por juicio, la búsqueda de contenido y las directivas de retención de Microsoft 365 a los datos de WhatsApp. Por ejemplo, puede buscar mensajes de WhatsApp mediante búsqueda de contenido o asociar el buzón que contiene mensajes de WhatsApp con un custodio en un caso de exhibición de documentos electrónicos (Premium). El uso de un conector de WhatsApp para importar y archivar datos en Microsoft 365 puede ayudar a su organización a cumplir las directivas gubernamentales y normativas.
+
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
 
 ## <a name="overview-of-archiving-whatsapp-data"></a>Introducción al archivado de datos de WhatsApp
 
@@ -59,13 +64,13 @@ Algunos de los pasos de implementación necesarios para archivar los datos de co
 
 Después de completar los requisitos previos descritos en la sección anterior, puede crear el conector de WhatsApp en el portal de cumplimiento. El conector usa la información que proporciona para conectarse al sitio de TeleMessage y transferir los datos de WhatsApp a los cuadros de buzón de usuario correspondientes de Microsoft 365.
 
-1. Vaya a y, a [https://compliance.microsoft.com](https://compliance.microsoft.com/) continuación, haga clic en **Conectores** >  de datos **WhatsApp Archiver**.
+1. Vaya a y, a [https://compliance.microsoft.com](https://compliance.microsoft.com/) continuación, seleccione **Conectores** >  de datos **WhatsApp Archiver**.
 
-2. En la página de descripción del producto **WhatsApp Archiver**, haga clic en **Agregar conector**.
+2. En la página de descripción del producto **WhatsApp Archiver**, seleccione **Agregar conector**.
 
-3. En la página **Términos de servicio** , haga clic en **Aceptar**.
+3. En la página **Términos de servicio** , seleccione **Aceptar**.
 
-4. En la página **Iniciar sesión en TeleMessage** , en el paso 3, escriba la información necesaria en los cuadros siguientes y, a continuación, haga clic en **Siguiente**.
+4. En la página **Iniciar sesión en TeleMessage** , en el paso 3, escriba la información necesaria en los cuadros siguientes y, a continuación, seleccione **Siguiente**.
 
    - **Nombre de usuario:** Nombre de usuario de TeleMessage.
 
@@ -73,9 +78,9 @@ Después de completar los requisitos previos descritos en la sección anterior, 
 
 5. Una vez creado el conector, puede cerrar la ventana emergente y ir a la página siguiente.
 
-6. En la página **Asignación de** usuarios, habilite la asignación automática de usuarios y haga clic en **Siguiente**. En caso de que necesite una asignación personalizada, cargue un archivo CSV y haga clic en **Siguiente**.
+6. En la página **Asignación de** usuarios, habilite la asignación automática de usuarios y seleccione **Siguiente**. En caso de que necesite una asignación personalizada, cargue un archivo CSV y seleccione **Siguiente**.
 
-7. Revise la configuración y, a continuación, haga clic en **Finalizar** para crear el conector.
+7. Revise la configuración y, a continuación, seleccione **Finalizar** para crear el conector.
 
 8. Vaya a la pestaña Conectores de la página **Conectores de datos** para ver el progreso del proceso de importación del nuevo conector.
 

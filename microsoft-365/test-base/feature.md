@@ -14,45 +14,41 @@ ms.collection: TestBase-M365
 ms.custom: ''
 ms.reviewer: tinachen
 f1.keywords: NOCSH
-ms.openlocfilehash: 02693d1dc9637b97d6d567a6bc362eaef24adc5d
-ms.sourcegitcommit: eb81b49205cbc66b021326b8e2c00a8336b4a2fa
+ms.openlocfilehash: bd681f6dceec9182d3fbe80e6bb3beeae510c65a
+ms.sourcegitcommit: 893add1e40c3e26e5624663eaf272d12a72d0141
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2022
-ms.locfileid: "67315512"
+ms.lasthandoff: 10/12/2022
+ms.locfileid: "68540013"
 ---
 # <a name="windows-feature-update-validation"></a>Validación de actualización de características de Windows
 
-¿Necesita información sobre cómo funcionarán las aplicaciones con la próxima versión de Windows 10 o Windows 11, sin mantener un entorno para validar nuevas características de Windows? 
+¿Necesita información sobre cómo funcionarán las aplicaciones con las características más recientes de Windows, antes de que esté disponible en el mercado y sin mantener un entorno? 
 
-¿Desea ejecutar las pruebas de validación en compilaciones del Programa Windows Insider en nuestro entorno de Azure?
+¿Desea ejecutar las pruebas de validación en compilaciones del Programa Windows Insider en nuestro entorno de Azure? 
 
-La validación de **actualizaciones de características** en Test Base para M365 puede ayudarle a lograr todo esto y mucho más.
+La validación de **actualizaciones de características** en Test Base para Microsoft 365 puede ayudarle a lograr todo esto y mucho más. 
 
-Consulte el siguiente esquema paso a paso para obtener información sobre cómo acceder a esta nueva funcionalidad en test base para el servicio M365.
+Consulte el esquema paso a paso siguiente para obtener información sobre cómo acceder a esta nueva funcionalidad en test base para el servicio Microsoft 365. 
 
-Para empezar a trabajar con ```Feature update validation``` en Test Base for M365, cargue las aplicaciones (y los archivos relacionados) a través del portal de incorporación de autoservicio. 
+Para empezar a trabajar con la validación de actualizaciones de características en Test Base para Microsoft 365, cargue las aplicaciones (y los archivos relacionados) a través del portal de incorporación de autoservicio. 
 
-A continuación, se resaltan los pasos que debe seguir al rellenar los **detalles** de la prueba:
+A continuación, se resaltan los pasos que se van a seguir al rellenar la **matriz de pruebas**: 
 
-1. Seleccione **Actualización de características** como tipo de actualización del sistema operativo:
+Para configurar las actualizaciones de características, debe especificar el producto de destino y su canal de vista previa en la lista desplegable "Canal insider". 
 
-![Tipo de sistema operativo de validación de actualización de características.](Media/Feature-update-validation-01.png)
+![Tipo de sistema operativo de validación de actualización de características.](Media/windowsfeatureupdatevalidation01-featureupdate.png)
 
-2. Elija el canal de Windows Insider en el que desea validar la aplicación.  
+La selección registrará la aplicación para que se ejecuten pruebas automáticas con las últimas actualizaciones de características del canal de producto seleccionado y todas las actualizaciones nuevas futuras en las últimas Windows Insider Preview compilaciones de la selección. 
 
-![Validación de actualización de características. Elegir el canal beta de Insider.](Media/Feature-update-validation-02.png)
+También puede establecer el sistema operativo actual en "Línea de base del sistema operativo para Insight". Le proporcionaremos más información de prueba mediante el análisis de regresión del entorno del sistema operativo tal cual y el sistema operativo de destino más reciente. 
 
-3. Seleccione una versión en el mercado de Windows 10 o Windows 11 como línea base para la prueba (y la información resultante) y proporcione los demás detalles necesarios para incorporar el paquete correctamente.
+![Validación de actualización de características. Elegir el canal beta de Insider.](Media/windowsfeatureupdatevalidation02-osbaseline.png) 
 
-![Validación de actualización de características con versiones publicadas de Windows 10 y Windows 11.](Media/Feature-update-validation-03.png)
-
-4. Para ver los resultados de la validación de la aplicación con las actualizaciones de características Windows 10 publicadas previamente, visite .```Feature Updates Test Results```
-
-![La validación de actualizaciones de características le permite revisar los resultados rápidamente.](Media/Feature-update-validation-04.png)
+Para ver más detalles sobre las compilaciones de Windows Insider Preview, consulte [Flight Hub - Windows Insider Program | Microsoft Docs](/../../../../MicrosoftDocs/windows-insider/tree/public/wip/flight-hub/index.md).
 
 
-## <a name="next-steps"></a>Siguientes pasos
+## <a name="next-steps"></a>Pasos siguientes
 
 Pase al siguiente artículo para empezar a comprender el análisis de regresión de memoria.
 > [!div class="nextstepaction"]

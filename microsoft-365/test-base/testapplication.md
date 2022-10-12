@@ -14,12 +14,12 @@ ms.collection: TestBase-M365
 ms.custom: ''
 ms.reviewer: Tinacyt
 f1.keywords: NOCSH
-ms.openlocfilehash: 16d8dd96b9fef1aaa01437f3c1175021a1f9f33d
-ms.sourcegitcommit: eb81b49205cbc66b021326b8e2c00a8336b4a2fa
+ms.openlocfilehash: 4f0cc33e562494ceaf5abc6ffb39c700f6545c91
+ms.sourcegitcommit: 893add1e40c3e26e5624663eaf272d12a72d0141
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2022
-ms.locfileid: "67315710"
+ms.lasthandoff: 10/12/2022
+ms.locfileid: "68540057"
 ---
 # <a name="creating-and-testing-binary-files-on-test-base"></a>Creación y prueba de archivos binarios en la base de pruebas
 
@@ -129,28 +129,46 @@ En el menú de la izquierda, en **Catálogo de paquetes**, seleccione nuevo **pa
 
 4. Una vez rellenada toda la información necesaria, puede pasar al paso 4 haciendo clic en el botón Siguiente de la parte inferior.
 
-### <a name="step-4-test-matrix"></a>Paso 4. Matriz de prueba
+### <a name="step-4-set-test-matrix"></a>Paso 4. Establecer matriz de prueba
 
-1. En la pestaña Matriz de pruebas, seleccione el **tipo de actualización del sistema operativo**. Se admiten dos tipos de actualización del sistema operativo.
-   - Las **actualizaciones de seguridad** permiten probar el paquete con renovaciones incrementales de actualizaciones de seguridad mensuales de versión preliminar de Windows.
-   - Las **actualizaciones de características** permiten probar el paquete con las compilaciones de actualizaciones de características bianuales de versión preliminar de Windows del Programa Windows Insider.
-
-2. Seleccione las versiones del sistema operativo para las pruebas de actualización de seguridad.
-
-   Si **se selecciona Actualizaciones de seguridad** en tipo de actualización del sistema operativo, deberá seleccionar las versiones del sistema operativo en las que se probará el paquete.
-
-   > [!NOTE]
-   > Si selecciona probar el paquete con los sistemas operativos servidor y cliente, asegúrese de que el paquete es compatible y se puede ejecutar en ambos sistemas operativos.
-
-3. Seleccione las opciones de Pruebas de actualización de características.
-   - Si se selecciona **Actualizaciones de características** en tipo de actualización del sistema operativo, debe finalizar las siguientes opciones.
-   - En **Canal insider**, seleccione el canal del programa Windows Insider como la compilación en la que se deben probar los paquetes. Actualmente usamos compilaciones piloto en el **canal beta de Insider**.
-   - En **Línea base del sistema operativo para Insight**, seleccione la versión del sistema operativo Windows que se usará como línea base para comparar los resultados de la prueba.
+La pestaña Matriz de pruebas le permite indicar el programa de actualización de Windows específico o el producto de Windows en el que puede que desee que se ejecute la prueba.
 
    > [!div class="mx-imgBorder"]
-   > ![Seleccionar la versión del sistema operativo Windows](Media/testapplication14.png)
+   > ![Establecimiento del nuevo paquete de matriz de pruebas](Media/settestmatrix01-newpackage.png)
 
-4. Una vez rellenada toda la información necesaria, puede pasar al paso 5 (último paso) haciendo clic en el botón Siguiente situado en la parte inferior.
+1. Elegir **tipo de actualización del sistema operativo**
+   - Test Base proporciona pruebas programadas para asegurarse de que el rendimiento de las aplicaciones no se verá interrumpido por las últimas actualizaciones de Windows. 
+
+   > [!div class="mx-imgBorder"]
+   > ![Establecer matriz de prueba elegir osupdate](Media/settestmatrix02-chooseosupdate.png)
+
+   - Hay 2 opciones disponibles:
+   
+     - Las **actualizaciones de seguridad** permiten probar el paquete con renovaciones incrementales de actualizaciones de seguridad mensuales de Windows.
+     - Las **actualizaciones de características** permiten probar el paquete con las nuevas características de las compilaciones de Windows Insider Preview más recientes del programa Windows Insider.
+
+2. Configurar **actualización de seguridad** Para configurar las actualizaciones de seguridad, debe especificar los productos de Windows con los que desea realizar la prueba en la lista desplegable de "Versiones del sistema operativo que se van a probar".
+
+   > [!div class="mx-imgBorder"]
+   > ![Establecimiento de la matriz de prueba para configurar securityupdate](Media/settestmatrix03-configuresecurityupdate.png)
+
+   - La selección registrará la aplicación para las ejecuciones de pruebas automáticas en la versión B de las actualizaciones de calidad mensuales de Windows de los productos seleccionados.
+     - Para los clientes que tienen clientes de acceso predeterminado en Test Base, sus aplicaciones se validan con respecto a la versión final de las actualizaciones de seguridad de la versión B, a partir del martes de revisión.
+     - Para los clientes que tienen clientes de acceso completo en La base de pruebas, sus aplicaciones se validan con respecto a las versiones preliminares de las actualizaciones de seguridad de la versión B, a partir de 3 semanas antes del martes de revisión. Esto permite que los clientes de acceso completo tengan tiempo para tomar medidas proactivas para resolver los problemas detectados durante las pruebas antes de la versión final del martes de revisión.  
+       (¿Cómo convertirse en un cliente de acceso completo? Consulte [Solicitud para cambiar el nivel de acceso | Microsoft Docs](accesslevel.md))
+
+3. Configuración **de la actualización de características**
+   - Para configurar las actualizaciones de características, debe especificar el producto de destino y su canal de vista previa en la lista desplegable "Canal insider".
+
+   > [!div class="mx-imgBorder"]
+   > ![Establecer la configuración de la matriz de prueba featureupdate](Media/settestmatrix04-configurefeatureupdate.png)
+
+   - La selección registrará la aplicación para que se ejecuten pruebas automáticas con las últimas actualizaciones de características del canal de producto seleccionado y todas las actualizaciones nuevas futuras en las últimas Windows Insider Preview compilaciones de la selección.
+
+   - También puede establecer el sistema operativo actual en "Línea de base del sistema operativo para Insight". Le proporcionaremos más información de prueba mediante el análisis de regresión del entorno del sistema operativo tal cual y el sistema operativo de destino más reciente.
+
+   > [!div class="mx-imgBorder"]
+   > ![Establecimiento de sistemas operativos de conjunto de matrices de prueba](Media/settestmatrix05-setos.png)
 
 ### <a name="step-5-review--publish"></a>Paso 5. Revisar y publicar
 

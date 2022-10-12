@@ -14,12 +14,12 @@ ms.collection: TestBase-M365
 ms.custom: ''
 ms.reviewer: Tinacyt
 f1.keywords: NOCSH
-ms.openlocfilehash: 2fbe3a21762f6bf048d5f35485a359389df93ce2
-ms.sourcegitcommit: eb81b49205cbc66b021326b8e2c00a8336b4a2fa
+ms.openlocfilehash: 4ebfff151c96752af0bca757c43f3df49a3d2ede
+ms.sourcegitcommit: 893add1e40c3e26e5624663eaf272d12a72d0141
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2022
-ms.locfileid: "67315994"
+ms.lasthandoff: 10/12/2022
+ms.locfileid: "68540035"
 ---
 # <a name="test-your-intune-application-on-test-base"></a>Prueba de la aplicación de Intune en Test Base 
   > [!Note] 
@@ -71,14 +71,49 @@ Como cliente Intune que tiene un paquete de Intune, que ya se ha incorporado a I
 4. Compruebe los archivos binarios de dependencia **que se han cargado** colocado en la carpeta **guid** .
 5. Puede editar los scripts según sea necesario y guardarlos.
     > [!Note] 
-    > Si no se ha cargado el paquete de dependencias, Test Base no generará comandos de instalación o desinstalación para él.
+    > Si no se ha cargado el paquete de dependencias, Test Base no generará comandos de instalación o desinstalación para él.  
 
 
-**Paso 4: Matriz de prueba**
-1. Compruebe las selecciones predeterminadas presentes en la lista del sistema operativo para ver los tipos de prueba correspondientes.
-    - La base de pruebas admite la selección de varias actualizaciones acumulativas **de Windows de Windows 10 1909 excepto Windows 10 2004**, pero Intune aplicación Win se asignaría con una versión de versiones iguales o superiores a **Windows 10 1607**.
-    - La lista del sistema operativo incluirá de forma predeterminada todos los sistemas operativos compatibles con test base, que es mayor que el sistema operativo mínimo especificado para la aplicación Intune Win.
-2. Los usuarios pueden modificar la selección del sistema operativo según sea necesario.
+**Paso 4. Establecer matriz de prueba**
+
+La pestaña Matriz de pruebas le permite indicar el programa de actualización de Windows específico o el producto de Windows en el que puede que desee que se ejecute la prueba.
+
+   > [!div class="mx-imgBorder"]
+   > ![Establecimiento del nuevo paquete de matriz de pruebas](Media/settestmatrix01-newpackage.png)
+
+1. Elegir **tipo de actualización del sistema operativo**
+   - Test Base proporciona pruebas programadas para asegurarse de que el rendimiento de las aplicaciones no se verá interrumpido por las últimas actualizaciones de Windows. 
+
+   > [!div class="mx-imgBorder"]
+   > ![Establecer matriz de prueba elegir osupdate](Media/settestmatrix02-chooseosupdate.png)
+
+   - Hay 2 opciones disponibles:
+   
+     - Las **actualizaciones de seguridad** permiten probar el paquete con renovaciones incrementales de actualizaciones de seguridad mensuales de Windows.
+     - Las **actualizaciones de características** permiten probar el paquete con las nuevas características de las compilaciones de Windows Insider Preview más recientes del programa Windows Insider.
+
+2. Configurar **actualización de seguridad** Para configurar las actualizaciones de seguridad, debe especificar los productos de Windows con los que desea realizar la prueba en la lista desplegable de "Versiones del sistema operativo que se van a probar".
+
+   > [!div class="mx-imgBorder"]
+   > ![Establecimiento de la matriz de prueba para configurar securityupdate](Media/settestmatrix03-configuresecurityupdate.png)
+
+   - La selección registrará la aplicación para las ejecuciones de pruebas automáticas en la versión B de las actualizaciones de calidad mensuales de Windows de los productos seleccionados.
+     - Para los clientes que tienen clientes de acceso predeterminado en Test Base, sus aplicaciones se validan con respecto a la versión final de las actualizaciones de seguridad de la versión B, a partir del martes de revisión.
+     - Para los clientes que tienen clientes de acceso completo en La base de pruebas, sus aplicaciones se validan con respecto a las versiones preliminares de las actualizaciones de seguridad de la versión B, a partir de 3 semanas antes del martes de revisión. Esto permite que los clientes de acceso completo tengan tiempo para tomar medidas proactivas para resolver los problemas detectados durante las pruebas antes de la versión final del martes de revisión.  
+       (¿Cómo convertirse en un cliente de acceso completo? Consulte [Solicitud para cambiar el nivel de acceso | Microsoft Docs](accesslevel.md))
+
+3. Configuración **de la actualización de características**
+   - Para configurar las actualizaciones de características, debe especificar el producto de destino y su canal en versión preliminar de la lista desplegable "Canal insider".
+
+   > [!div class="mx-imgBorder"]
+   > ![Establecer la configuración de la matriz de prueba featureupdate](Media/settestmatrix04-configurefeatureupdate.png)
+
+   - La selección registrará la aplicación para que se ejecuten pruebas automáticas con las últimas actualizaciones de características del canal de producto seleccionado y todas las actualizaciones nuevas futuras en las últimas Windows Insider Preview compilaciones de la selección.
+
+   - También puede establecer el sistema operativo actual en "Línea de base del sistema operativo para Insight". Le proporcionaremos más información de prueba mediante el análisis de regresión del entorno del sistema operativo tal cual y el sistema operativo de destino más reciente.
+
+   > [!div class="mx-imgBorder"]
+   > ![Establecimiento de sistemas operativos de conjunto de matrices de prueba](Media/settestmatrix05-setos.png)  
 
 
 **Paso 5: Revisar y publicar** <br/>

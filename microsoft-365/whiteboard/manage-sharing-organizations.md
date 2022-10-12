@@ -12,12 +12,12 @@ search.appverid: MET150
 ms.collection: ''
 ms.localizationpriority: medium
 description: Obtenga información sobre cómo administrar el uso compartido para La pizarra de Microsoft.
-ms.openlocfilehash: aeb6da3d6bd66c02468ff19efa072af4d7084389
-ms.sourcegitcommit: d0557f757cfa48330ed57e966033891d10f03688
+ms.openlocfilehash: 2d788474a1c72baec448bf20dbc78a12e1afd1e2
+ms.sourcegitcommit: 8d3c027592a638f411f87d89772dd3d39e92aab0
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/06/2022
-ms.locfileid: "68492516"
+ms.lasthandoff: 10/12/2022
+ms.locfileid: "68537344"
 ---
 # <a name="manage-sharing-for-microsoft-whiteboard"></a>Administración del uso compartido para La pizarra de Microsoft
 
@@ -53,6 +53,8 @@ Esta configuración solo se aplica a las pizarras y reemplaza la configuración 
 
 > [!NOTE]
 > De forma predeterminada, la configuración de reunión de Teams **Usuarios anónimos pueden interactuar con aplicaciones en reuniones** está habilitada. Si la ha deshabilitado, los usuarios anónimos (en lugar de invitados o usuarios federados) no tendrán acceso a la pizarra durante la reunión.
+>
+> Si desea que las cuentas de dispositivo compartido tengan acceso a Whiteboard en reuniones de Teams pero no a usuarios anónimos, puede deshabilitar **usuarios anónimos para que interactúen con las aplicaciones de las reuniones** mientras tienen **habilitado AllowAnonymousMeetingParticipantsToAccessWhiteboards** .
 
 Estos cambios deben tardar aproximadamente 60 minutos en aplicarse en todo el inquilino.
 

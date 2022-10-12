@@ -1,5 +1,6 @@
 ---
 title: Configuración de un conector para archivar datos de Rogers Network en Microsoft 365
+description: Los administradores pueden configurar un conector de TeleMessage para importar y archivar datos de Rogers Network en Microsoft 365. Esto le permite archivar datos de orígenes de datos de terceros en Microsoft 365 para que pueda usar características de cumplimiento como la suspensión legal, la búsqueda de contenido y las directivas de retención para administrar los datos de terceros de su organización.
 f1.keywords:
 - NOCSH
 ms.author: robmazz
@@ -10,20 +11,24 @@ audience: Admin
 ms.topic: how-to
 ms.service: O365-seccomp
 ms.localizationpriority: medium
-ms.collection: M365-security-compliance
-description: Los administradores pueden configurar un conector de TeleMessage para importar y archivar datos de Rogers Network en Microsoft 365. Esto le permite archivar datos de orígenes de datos de terceros en Microsoft 365 para que pueda usar características de cumplimiento como la suspensión legal, la búsqueda de contenido y las directivas de retención para administrar los datos de terceros de su organización.
-ms.openlocfilehash: 378c3c60d23605a32746a77959527f2c9d7e1b58
-ms.sourcegitcommit: 433f5b448a0149fcf462996bc5c9b45d17bd46c6
+ms.collection:
+- tier3
+- purview-compliance
+- data-connectors
+ms.openlocfilehash: 6ab8805ba76bd93bd02806a25a0c62ae2fb1c2a0
+ms.sourcegitcommit: 8d3c027592a638f411f87d89772dd3d39e92aab0
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/20/2022
-ms.locfileid: "67826300"
+ms.lasthandoff: 10/12/2022
+ms.locfileid: "68535254"
 ---
 # <a name="set-up-a-connector-to-archive-rogers-network-data"></a>Configuración de un conector para archivar datos de Rogers Network
 
 Use el conector TeleMessage en el portal de cumplimiento Microsoft Purview para importar y archivar datos DE SMS y MMS desde la red móvil de Rogers. Después de configurar y configurar un [conector de Rogers Network Archiver](https://www.telemessage.com/mobile-archiver/network-archiver/rogers/), se conecta a la red móvil de Rogers de su organización e importa datos DE SMS y MMS a buzones de Correo de Microsoft 365.
 
 Una vez que los datos de la red móvil de Rogers se almacenan en buzones de usuario, puede aplicar a los datos características de Microsoft Purview como suspensión por juicio, búsqueda de contenido y directivas de retención de Microsoft 365. Por ejemplo, puede buscar mensajes SMS y MMS desde la red móvil de Rogers mediante la búsqueda de contenido o una búsqueda asociada a un caso de Microsoft Purview eDiscovery (estándar). El uso de un conector de Rogers Network Archiver para importar y archivar datos en Microsoft 365 puede ayudar a su organización a cumplir las normas de gobernanza corporativa y las directivas normativas.
+
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
 
 ## <a name="overview-of-archiving-rogers-mobile-network-data"></a>Información general sobre el archivado de datos de red móvil de Rogers
 
@@ -59,13 +64,13 @@ En la información general siguiente se explica el proceso de uso de un conector
 
 Después de completar los requisitos previos descritos en la sección anterior, puede crear el conector de Rogers Network Archiver en el portal de cumplimiento. El conector usa la información que proporciona para conectarse al sitio de TeleMessage y transferir datos DE SMS/MMS de Rogers a los cuadros de buzón de usuario correspondientes de Microsoft 365.
 
-1. Vaya a y, a <https://compliance.microsoft.com> continuación, haga clic en **Conectores** >  de datos **Rogers Network Archiver**.
+1. Vaya a y, a <https://compliance.microsoft.com> continuación, seleccione **Conectores** >  de datos **Rogers Network Archiver**.
 
-2. En la página de descripción del producto **Rogers Network Archiver** , haga clic en **Agregar conector**.
+2. En la página de descripción del producto **Rogers Network Archiver** , seleccione **Agregar conector**.
 
-3. En la página **Términos de servicio** , haga clic en **Aceptar**.
+3. En la página **Términos de servicio** , seleccione **Aceptar**.
 
-4. En la página **Iniciar sesión en TeleMessage** , en el paso 3, escriba la información necesaria en los cuadros siguientes y, a continuación, haga clic en **Siguiente**.
+4. En la página **Iniciar sesión en TeleMessage** , en el paso 3, escriba la información necesaria en los cuadros siguientes y, a continuación, seleccione **Siguiente**.
 
     - **Nombre de usuario:** Nombre de usuario de TeleMessage.
 
@@ -73,9 +78,9 @@ Después de completar los requisitos previos descritos en la sección anterior, 
 
 5. Una vez creado el conector, puede cerrar la ventana emergente y ir a la página siguiente.
 
-6. En la página **Asignación de** usuarios, habilite la asignación automática de usuarios. Para habilitar la asignación personalizada, cargue un archivo CSV que contenga la información de asignación de usuarios y, a continuación, haga clic en **Siguiente**.
+6. En la página **Asignación de** usuarios, habilite la asignación automática de usuarios. Para habilitar la asignación personalizada, cargue un archivo CSV que contenga la información de asignación de usuario y, a continuación, seleccione **Siguiente**.
 
-7. Revise la configuración y, a continuación, haga clic en **Finalizar** para crear el conector.
+7. Revise la configuración y, a continuación, seleccione **Finalizar** para crear el conector.
 
 8. Vaya a la pestaña Conectores de la página **Conectores de datos** para ver el progreso del proceso de importación del nuevo conector.
 

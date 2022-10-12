@@ -1,5 +1,6 @@
 ---
 title: Configuración de un conector para archivar datos de ServiceNow en Microsoft 365
+description: Los administradores pueden configurar un conector para importar y archivar datos de ServiceNow de Veritas a Microsoft 365. Este conector le permite archivar datos de orígenes de datos de terceros en Microsoft 365. Después de archivar estos datos, puede usar características de cumplimiento como la suspensión legal, la búsqueda de contenido y las directivas de retención para administrar datos de terceros.
 f1.keywords:
 - NOCSH
 ms.author: robmazz
@@ -10,20 +11,24 @@ audience: Admin
 ms.topic: how-to
 ms.service: O365-seccomp
 ms.localizationpriority: medium
-ms.collection: M365-security-compliance
-description: Los administradores pueden configurar un conector para importar y archivar datos de ServiceNow de Veritas a Microsoft 365. Este conector le permite archivar datos de orígenes de datos de terceros en Microsoft 365. Después de archivar estos datos, puede usar características de cumplimiento como la suspensión legal, la búsqueda de contenido y las directivas de retención para administrar datos de terceros.
-ms.openlocfilehash: fc1971322732fb13c739b452d64721b8981e236f
-ms.sourcegitcommit: 433f5b448a0149fcf462996bc5c9b45d17bd46c6
+ms.collection:
+- tier3
+- purview-compliance
+- data-connectors
+ms.openlocfilehash: 4aaaeccb0aafdf9a89d99efc3927c5e3c3d60404
+ms.sourcegitcommit: 8d3c027592a638f411f87d89772dd3d39e92aab0
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/20/2022
-ms.locfileid: "67819609"
+ms.lasthandoff: 10/12/2022
+ms.locfileid: "68535166"
 ---
 # <a name="set-up-a-connector-to-archive-servicenow-data"></a>Configuración de un conector para archivar datos de ServiceNow
 
 Use un conector de Veritas en el portal de cumplimiento Microsoft Purview para importar y archivar datos de la plataforma ServiceNow a buzones de usuario de su organización de Microsoft 365. Veritas proporciona un conector [de ServiceNow](https://globanet.com/servicenow/) que captura elementos del origen de datos de terceros e importa esos elementos en Microsoft 365. El conector convierte el contenido, como mensajes en directo, datos adjuntos y publicaciones de ServiceNow en un formato de mensaje de correo electrónico y, a continuación, importa esos elementos a buzones de usuario en Microsoft 365.
 
 Una vez almacenados los datos de ServiceNow en buzones de usuario, puede aplicar características de Microsoft Purview, como suspensión por juicio, exhibición de documentos electrónicos, directivas de retención y etiquetas de retención. El uso de un conector de ServiceNow para importar y archivar datos en Microsoft 365 puede ayudar a su organización a cumplir las directivas gubernamentales y normativas.
+
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
 
 ## <a name="overview-of-archiving-servicenow-data"></a>Información general sobre el archivado de datos de ServiceNow
 
@@ -53,13 +58,13 @@ En la información general siguiente se explica el proceso de uso de un conector
 
 El primer paso consiste en acceder a la página **Conectores de datos** del portal de cumplimiento y crear un conector para los datos de ServiceNow.
 
-1. Vaya a y, a [https://compliance.microsoft.com](https://compliance.microsoft.com/) continuación, haga clic en **Conectores** >  de datos **ServiceNow**.
+1. Vaya a y, a [https://compliance.microsoft.com](https://compliance.microsoft.com/) continuación, seleccione **Conectores** >  de datos **ServiceNow**.
 
-2. En la página de descripción del producto **ServiceNow** , haga clic en **Agregar conector**.
+2. En la página de descripción del producto **ServiceNow** , seleccione **Agregar conector**.
 
-3. En la página **Términos de servicio** , haga clic en **Aceptar**.
+3. En la página **Términos de servicio** , seleccione **Aceptar**.
 
-4. Escriba un nombre único que identifique el conector y, a continuación, haga clic en **Siguiente**.
+4. Escriba un nombre único que identifique el conector y, a continuación, seleccione **Siguiente**.
 
 5. Inicie sesión en su cuenta de Merge1 para configurar el conector.
 
@@ -67,7 +72,7 @@ El primer paso consiste en acceder a la página **Conectores de datos** del port
 
 El segundo paso es configurar el conector de ServiceNow en el sitio Veritas Merge1. Para obtener información sobre cómo configurar el conector de ServiceNow, consulte [la Guía del usuario de conectores de terceros Merge1](https://docs.ms.merge1.globanetportal.com/Merge1%20Third-Party%20Connectors%20ServiceNow%20User%20Guide%20.pdf).
 
-Después de hacer clic en **Guardar & finalizar,** se muestra la página **Asignación** de usuarios en el asistente del conector en el portal de cumplimiento.
+Después de seleccionar **Guardar & finalizar,** se muestra la página **Asignación** de usuarios en el asistente del conector en el portal de cumplimiento.
 
 ## <a name="step-3-map-users-and-complete-the-connector-setup"></a>Paso 3: Asignar usuarios y completar la configuración del conector
 
@@ -75,17 +80,17 @@ Para asignar usuarios y completar la configuración del conector en el portal de
 
 1. En la página **Asignar usuarios de ServiceNow a usuarios de Microsoft 365** , habilite la asignación automática de usuarios. Los elementos de ServiceNow incluyen una propiedad denominada *Email*, que contiene direcciones de correo electrónico para los usuarios de la organización. Si el conector puede asociar esta dirección a un usuario de Microsoft 365, los elementos se importan al buzón de ese usuario.
 
-2. Haga clic en **Siguiente**, revise la configuración y, a continuación, vaya a la página **Conectores de datos** para ver el progreso del proceso de importación del nuevo conector.
+2. Seleccione **Siguiente**, revise la configuración y, a continuación, vaya a la página **Conectores de datos** para ver el progreso del proceso de importación del nuevo conector.
 
 ## <a name="step-4-monitor-the-servicenow-connector"></a>Paso 4: Supervisión del conector de ServiceNow
 
 Después de crear el conector de ServiceNow, puede ver el estado del conector en el portal de cumplimiento.
 
-1. Vaya a [https://compliance.microsoft.com](https://compliance.microsoft.com/) y haga clic en **Conectores de datos** en el panel de navegación izquierdo.
+1. Vaya a [https://compliance.microsoft.com](https://compliance.microsoft.com/) y seleccione **Conectores de datos** en el panel de navegación izquierdo.
 
-2. Haga clic en la pestaña **Conectores** y, a continuación, seleccione el conector **de ServiceNow** para mostrar la página de control flotante, que contiene las propiedades y la información sobre el conector.
+2. Seleccione la pestaña **Conectores** y, a continuación, seleccione el conector **de ServiceNow** para mostrar la página de control flotante, que contiene las propiedades y la información sobre el conector.
 
-3. En **Estado del conector con origen**, haga clic en el vínculo **Descargar registro** para abrir (o guardar) el registro de estado del conector. Este registro contiene información sobre los datos que se han importado a la nube de Microsoft. Para obtener más información, consulte [Visualización de registros de administración para conectores de datos](data-connector-admin-logs.md).
+3. En **Estado del conector con origen**, seleccione el vínculo **Descargar registro** para abrir (o guardar) el registro de estado del conector. Este registro contiene información sobre los datos que se han importado a la nube de Microsoft. Para obtener más información, consulte [Visualización de registros de administración para conectores de datos](data-connector-admin-logs.md).
 
 ## <a name="known-issues"></a>Problemas conocidos
 

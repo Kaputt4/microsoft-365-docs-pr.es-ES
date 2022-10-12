@@ -22,12 +22,12 @@ ms.topic: conceptual
 search.appverid:
 - MOE150
 - MET150
-ms.openlocfilehash: 655858dab8b590909073f42c54148f7d0cbe4f06
-ms.sourcegitcommit: 50da6f1f6ef2274c17ed9729e7ad84395b0a9be2
+ms.openlocfilehash: de6df0dd19823dd864e0ca97e3daaada60f42b80
+ms.sourcegitcommit: 8d3c027592a638f411f87d89772dd3d39e92aab0
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/08/2022
-ms.locfileid: "68503520"
+ms.lasthandoff: 10/12/2022
+ms.locfileid: "68536442"
 ---
 # <a name="investigate-and-respond-with-microsoft-365-defender"></a>Investigar y responder con Microsoft 365 Defender
 
@@ -37,7 +37,7 @@ Estas son las tareas principales de investigación y respuesta para Microsoft 36
 - [Revisión y aprobación de acciones de corrección automática](#automated-investigation-and-remediation)
 - [Búsqueda de amenazas conocidas en los datos](#proactive-search-for-threats-with-advanced-hunting)
 - [Descripción de los últimos ciberataques](#get-ahead-of-emerging-threats-with-threat-analytics)
-- [Obtener ayuda](#collaborate-with-microsoft-experts)
+- [Obtener ayuda](#collaborate-with-microsoft-defender-experts)
 
 ## <a name="incident-response"></a>Respuesta a incidentes
 
@@ -54,7 +54,7 @@ Para cada incidente, use el flujo de trabajo de respuesta a incidentes para anal
 
 Si su organización usa Microsoft 365 Defender, el equipo de operaciones de seguridad recibe una alerta en el portal de Microsoft 365 Defender cada vez que se detecta una actividad o artefacto malintencionado o sospechoso. Dado el flujo interminable de amenazas que pueden aparecer, los equipos de seguridad a menudo se enfrentan al desafío de abordar el alto volumen de alertas. Afortunadamente, Microsoft 365 Defender incluye funcionalidades de investigación y respuesta automatizadas (AIR) que pueden ayudar al equipo de operaciones de seguridad a abordar las amenazas de forma más eficaz y eficaz.
 
-Cuando se completa una investigación automatizada, se llega a un veredicto por cada parte de evidencia de un incidente. En función del veredicto, se identifican las acciones de corrección. En algunos casos, las acciones de corrección se realizan automáticamente; en otros casos, las acciones de corrección esperan la aprobación a través del centro de Microsoft 365 Defender acción. 
+Cuando se completa una investigación automatizada, se llega a un veredicto por cada parte de evidencia de un incidente. En función del veredicto, se identifican las acciones de corrección. En algunos casos, las acciones de corrección se realizan automáticamente; en otros casos, las acciones de corrección esperan la aprobación a través del centro de Microsoft 365 Defender acción.
 
 Para obtener más información, consulte [Investigación y respuesta automatizadas en Microsoft 365 Defender](m365d-autoir.md).
 
@@ -84,8 +84,8 @@ Cada amenaza identificada incluye un informe de analista, un análisis completo 
 
 Para obtener más información, consulte [Análisis de amenazas en Microsoft 365 Defender](threat-analytics.md).
 
-## <a name="collaborate-with-microsoft-experts"></a>Colaboración con expertos de Microsoft
+## <a name="collaborate-with-microsoft-defender-experts"></a>Colaboración con expertos de Microsoft Defender
 
-Las notificaciones de ataque de punto de conexión (anteriormente conocidas como Expertos en amenazas de Microsoft: notificaciones de ataque dirigidas) es un servicio de búsqueda de amenazas administrada. Una vez que se aplique y se acepte, recibirá notificaciones de ataque de punto de conexión de expertos en amenazas de Microsoft, por lo que no se perderá las amenazas críticas para su entorno. Estas notificaciones le ayudarán a proteger los puntos de conexión, el correo electrónico y las identidades de su organización. Microsoft Defender Experts – Experts on Demand le permite obtener consejos expertos sobre las amenazas a las que se enfrenta su organización y puede ponerse en contacto con usted para obtener ayuda sobre las amenazas a las que se enfrenta su organización. Está disponible como un servicio de suscripción adicional.
+Las notificaciones de ataque de punto de conexión (anteriormente conocidas como Expertos en amenazas de Microsoft: notificaciones de ataque dirigidas) es un servicio de búsqueda de amenazas administrada. Una vez que se aplique y se acepte, recibirá notificaciones de ataque de punto de conexión de expertos Microsoft Defender, por lo que no se perderá las amenazas críticas para su entorno. Estas notificaciones le ayudarán a proteger los puntos de conexión, el correo electrónico y las identidades de su organización. Microsoft Defender Experts – Experts on Demand le permite obtener consejos expertos sobre las amenazas a las que se enfrenta su organización y puede ponerse en contacto con usted para obtener ayuda sobre las amenazas a las que se enfrenta su organización. Está disponible como un servicio de suscripción adicional.
 
-Para obtener más información, consulte [Microsoft Defender Experts in Microsoft 365 overview (Introducción a expertos en Microsoft 365).](/microsoft-365/security/defender/microsoft-threat-experts)
+Para obtener más información, consulte [Microsoft Defender Experts in Microsoft 365 overview (Introducción a expertos en Microsoft 365).](../defender-endpoint/experts-on-demand.md)

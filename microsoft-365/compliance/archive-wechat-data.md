@@ -1,5 +1,6 @@
 ---
 title: Configuración de un conector para archivar datos de WeChat en Microsoft 365
+description: Configure y use un conector en el portal de cumplimiento Microsoft Purview para importar y archivar datos de WeChat en Microsoft 365.
 f1.keywords:
 - NOCSH
 ms.author: robmazz
@@ -10,20 +11,24 @@ audience: Admin
 ms.topic: how-to
 ms.service: O365-seccomp
 ms.localizationpriority: medium
-ms.collection: M365-security-compliance
-description: Configure y use un conector en el portal de cumplimiento Microsoft Purview para importar y archivar datos de WeChat en Microsoft 365.
-ms.openlocfilehash: 50a508fa13cb3e51314354a6a8cc2d1033d8422c
-ms.sourcegitcommit: 433f5b448a0149fcf462996bc5c9b45d17bd46c6
+ms.collection:
+- tier3
+- purview-compliance
+- data-connectors
+ms.openlocfilehash: d71d61fa16f7a356fa02cc9b4d114b205989d1ef
+ms.sourcegitcommit: 8d3c027592a638f411f87d89772dd3d39e92aab0
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/20/2022
-ms.locfileid: "67820777"
+ms.lasthandoff: 10/12/2022
+ms.locfileid: "68534968"
 ---
 # <a name="set-up-a-connector-to-archive-wechat-data"></a>Configuración de un conector para archivar datos de WeChat
 
 Use el conector TeleMessage en el portal de cumplimiento Microsoft Purview para importar y archivar llamadas a WeChat y WeCom, chats, datos adjuntos, archivos y mensajes recuperados. Después de configurar y configurar un conector, se conecta a la cuenta de TeleMessage de su organización e importa la comunicación móvil de los empleados que usan El archivador de WeChat de TeleMessage a buzones de Microsoft 365.
 
 Una vez que los datos del conector de WeChat Archiver se almacenan en buzones de usuario, puede aplicar características de Microsoft Purview como suspensión por juicio, exhibición electrónica, archivado de In-Place, auditoría, cumplimiento de comunicaciones y directivas de retención de Microsoft 365 a los datos de comunicación de WeChat. Por ejemplo, puede buscar la comunicación de WeChat mediante búsqueda de contenido o asociar el buzón que contiene los datos del conector de WeChat Archiver con un custodio en un caso de eDiscovery (Premium). El uso de un conector de WeChat Archiver para importar y archivar datos en Microsoft 365 puede ayudar a su organización a cumplir las normas de gobernanza corporativa y las directivas reglamentarias.
+
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
 
 ## <a name="overview-of-archiving-wechat-communication-data"></a>Información general sobre el archivado de datos de comunicación de WeChat
 
@@ -57,13 +62,13 @@ En la información general siguiente se explica el proceso de uso de un conector
 
 Siga los pasos de esta sección para crear un conector de WeChat Archiver en el portal de cumplimiento. El conector usa la información que proporciona para conectarse al sitio de TeleMessage y transferir datos de comunicaciones de WeChat a los buzones de usuario correspondientes de Microsoft 365.
 
-1. Vaya a y, a <https://compliance.microsoft.com> continuación, haga clic en **Conectores** >  de datos **De WeChat Archiver**.
+1. Vaya a y, a <https://compliance.microsoft.com> continuación, seleccione **Conectores** >  de datos **WeChat Archiver**.
 
-2. En la página de descripción del producto **WeChat Archiver** , haga clic en **Agregar conector.**
+2. En la página de descripción del producto **WeChat Archiver**, seleccione **Agregar conector**.
 
-3. En la página **Términos de servicio** , haga clic en **Aceptar**.
+3. En la página **Términos de servicio** , seleccione **Aceptar**.
 
-4. En la página **Iniciar sesión en TeleMessage** , en el paso 3, escriba la información necesaria en los cuadros siguientes y, a continuación, haga clic en **Siguiente**.
+4. En la página **Iniciar sesión en TeleMessage** , en el paso 3, escriba la información necesaria en los cuadros siguientes y, a continuación, seleccione **Siguiente**.
 
     - **Nombre de usuario**: nombre de usuario de TeleMessage.
 
@@ -73,7 +78,7 @@ Siga los pasos de esta sección para crear un conector de WeChat Archiver en el 
 
 6. En la página **Asignación de** usuarios, habilite la asignación automática de usuarios. También puede cargar un archivo CSV de asignación de usuario personalizado.
 
-7. Haga clic en **Siguiente**, revise la configuración y, a continuación, haga clic en **Finalizar** para crear el conector.
+7. Seleccione **Siguiente**, revise la configuración y, a continuación, seleccione **Finalizar** para crear el conector.
 
 8. Vaya a la pestaña **Conectores** de la página **Conectores de datos** para ver el progreso del proceso de importación del nuevo conector.
 

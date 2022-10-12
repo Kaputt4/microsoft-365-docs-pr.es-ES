@@ -20,12 +20,12 @@ ms.custom:
 search.appverid:
 - MET150
 description: Basic Mobility and Security le ayuda a proteger y administrar dispositivos móviles con directivas que controlan el acceso a documentos y correo electrónico de Microsoft 365 de la organización.
-ms.openlocfilehash: e0a59651974c22428738e38ed42ece0beda2936f
-ms.sourcegitcommit: 0b7070ec119e00e0dafe030bbfbef0ae5c9afa19
+ms.openlocfilehash: 44934f10173759c971bb1bc5052624ac5ad00b69
+ms.sourcegitcommit: 8d3c027592a638f411f87d89772dd3d39e92aab0
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/29/2022
-ms.locfileid: "68166909"
+ms.lasthandoff: 10/12/2022
+ms.locfileid: "68534949"
 ---
 # <a name="capabilities-of-basic-mobility-and-security"></a>Capacidades de Movilidad y seguridad básicas
 
@@ -100,7 +100,7 @@ En las secciones siguientes se muestra la configuración de directiva que puede 
 |---|---|---|---|
 |Requerir contraseña|Sí|No|No|
 |Evitar contraseña simple|Yes|No|No|
-|Requerir una contraseña alfanumérica|Sí|No|No|
+|Requerir una contraseña alfanumérica|Yes|No|No|
 |Longitud mínima de la contraseña|Sí|Sí|Sí|
 |Número de errores de inicio de sesión antes borrar el dispositivo|Sí|Sí|Sí|
 |Minutos de inactividad antes de bloquear el dispositivo|Sí|Sí|Sí|
@@ -127,7 +127,7 @@ La siguiente opción puede impedir que los usuarios accedan a su correo electró
 
 |Nombre de valor de configuración|iOS|Android|Samsung Knox|
 |---|---|---|---|
-|El perfil de correo electrónico es administrado|Yes|No|No|
+|El perfil de correo electrónico es administrado|Sí|No|No|
 
 ## <a name="cloud-settings"></a>Configuración de nube
 
@@ -153,9 +153,9 @@ La siguiente opción puede impedir que los usuarios accedan a su correo electró
 
 |Nombre de valor de configuración|iOS|Android|Samsung Knox|
 |---|---|---|---|
-|Bloquear videoconferencias en el dispositivo<sup>1</sup>|Yes|No|No|
+|Bloquear videoconferencias en el dispositivo<sup>1</sup>|Sí|No|No|
 |Bloquear el acceso al almacén<sup>de aplicaciones 1</sup>|Sí|No|Sí|
-|Requerir contraseña al acceder a la tienda de aplicaciones|No|Sí|Sí|
+|Requerir contraseña al acceder a la tienda de aplicaciones|Sí|No|No|
 
 <sup>1</sup> Para funcionar, esta configuración requiere dispositivos iOS supervisados. 
 
@@ -173,17 +173,17 @@ Puede establecer la siguiente configuración de directiva adicional mediante cmd
 |Nombre de valor de configuración|iOS|Android|
 |---|---|---|
 |CameraEnabled|Sí|Sí|
-|RegionRatings|Yes|No|
+|RegionRatings|Sí|No|
 |MoviesRatings|Sí|No|
-|TVShowsRating|Yes|No|
+|TVShowsRating|Sí|No|
 |AppsRatings|Sí|No|
-|AllowVoiceDialing|Yes|No|
+|AllowVoiceDialing|Sí|No|
 |AllowVoiceAssistant|Sí|No|
 |AllowAssistantWhileLocked|Sí|No|
 |AllowPassbookWhileLocked|Sí|No|
 |MaxPasswordGracePeriod|Sí|No|
 |PasswordQuality|No|Sí|
-|SystemSecurityTLS|Yes|No|
+|SystemSecurityTLS|Sí|No|
 |WLANEnabled|No|No|
 
 ## <a name="settings-supported-by-windows"></a>Configuración compatible con Windows

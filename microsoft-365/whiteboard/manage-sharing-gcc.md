@@ -12,12 +12,12 @@ search.appverid: MET150
 ms.collection: ''
 ms.localizationpriority: medium
 description: Obtenga información sobre cómo administrar el uso compartido para Microsoft Whiteboard en entornos GCC.
-ms.openlocfilehash: 2e22e55920f3ea8518ead6d117f0ac090690eb54
-ms.sourcegitcommit: 99b174a8d431092b3cf7d650593248671297fd91
+ms.openlocfilehash: 48b1b517bb75977f2537d8365b3a00d01e077858
+ms.sourcegitcommit: 8d3c027592a638f411f87d89772dd3d39e92aab0
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/30/2022
-ms.locfileid: "68297816"
+ms.lasthandoff: 10/12/2022
+ms.locfileid: "68536992"
 ---
 # <a name="manage-sharing-for-microsoft-whiteboard-in-gcc-environments"></a>Administración del uso compartido para Microsoft Whiteboard en entornos GCC
 
@@ -52,6 +52,8 @@ Esta configuración solo se aplica a las pizarras y reemplaza la configuración 
 
 > [!NOTE]
 > De forma predeterminada, la configuración de reunión de Teams **Los usuarios anónimos pueden interactuar con aplicaciones en reuniones** está habilitada de forma predeterminada. Si la ha deshabilitado, los usuarios anónimos (en lugar de invitados o usuarios federados) no tendrán acceso a la pizarra durante la reunión.
+>
+> Si desea que las cuentas de dispositivo compartido tengan acceso a Whiteboard en reuniones de Teams pero no a usuarios anónimos, puede deshabilitar **usuarios anónimos para que interactúen con las aplicaciones de las reuniones** mientras tienen **habilitado AllowAnonymousMeetingParticipantsToAccessWhiteboards** .
 
 Estos cambios deben tardar aproximadamente 60 minutos en aplicarse en todo el inquilino.
 

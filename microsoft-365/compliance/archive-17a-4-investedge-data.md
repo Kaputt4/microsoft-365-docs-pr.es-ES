@@ -1,5 +1,6 @@
 ---
 title: Configuración de un conector para archivar datos de InvestEdge en Microsoft 365
+description: Obtenga información sobre cómo configurar y usar un conector 17a-4 InvestEdge DataParser para importar y archivar datos investEdge en Microsoft 365.
 f1.keywords:
 - NOCSH
 ms.author: robmazz
@@ -10,20 +11,24 @@ audience: Admin
 ms.topic: how-to
 ms.service: O365-seccomp
 ms.localizationpriority: medium
-ms.collection: M365-security-compliance
-description: Obtenga información sobre cómo configurar y usar un conector 17a-4 InvestEdge DataParser para importar y archivar datos investEdge en Microsoft 365.
-ms.openlocfilehash: 15fb145d9e068ba3b37ccd681055804595926323
-ms.sourcegitcommit: 433f5b448a0149fcf462996bc5c9b45d17bd46c6
+ms.collection:
+- tier3
+- purview-compliance
+- data-connectors
+ms.openlocfilehash: 02ff78512c22b23f0f346f7f1cce7ba8f9879e9f
+ms.sourcegitcommit: 8d3c027592a638f411f87d89772dd3d39e92aab0
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/20/2022
-ms.locfileid: "67819741"
+ms.lasthandoff: 10/12/2022
+ms.locfileid: "68534695"
 ---
 # <a name="set-up-a-connector-to-archive-investedge-data"></a>Configuración de un conector para archivar datos de InvestEdge
 
 Use [InvestEdge DataParser](https://www.17a-4.com/investedge-dataparser/) de 17a-4 LLC para importar y archivar datos de InvestEdge a buzones de usuario de su organización de Microsoft 365. DataParser incluye un conector InvestEdge configurado para capturar elementos de un origen de datos de terceros e importarlos a Microsoft 365. El conector InvestEdge DataParser convierte los datos de InvestEdge en un formato de mensaje de correo electrónico y, a continuación, los importa a buzones de usuario en Microsoft 365.
 
 Una vez que los datos de InvestEdge se almacenan en buzones de usuario, puede aplicar características de Microsoft Purview, como suspensión por juicio, exhibición de documentos electrónicos, directivas de retención y etiquetas de retención y cumplimiento de comunicaciones. El uso de un conector InvestEdge para importar y archivar datos en Microsoft 365 puede ayudar a su organización a cumplir las directivas gubernamentales y normativas.
+
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
 
 ## <a name="overview-of-archiving-investedge-data"></a>Introducción al archivado de datos InvestEdge
 
@@ -33,7 +38,7 @@ En la información general siguiente se explica el proceso de uso de un conector
 
 1. Su organización funciona con 17a-4 para configurar y configurar InvestEdge DataParser.
 
-2. De forma periódica, los elementos InvestEdge los recopila DataParser. DataParser también convierte el contenido de un mensaje en un formato de mensaje de correo electrónico.
+2. Con regularidad, los elementos InvestEdge los recopila el DataParser. DataParser también convierte el contenido de un mensaje en un formato de mensaje de correo electrónico.
 
 3. El conector InvestEdge DataParser que se crea en el portal de cumplimiento Microsoft Purview se conecta a DataParser y transfiere los mensajes a una ubicación segura de Azure Storage en la nube de Microsoft.
 
@@ -51,13 +56,13 @@ En la información general siguiente se explica el proceso de uso de un conector
 
 El primer paso consiste en acceder a la página Conectores de datos del portal de cumplimiento y crear un conector 17a-4 para los datos de InvestEdge.
 
-1. Vaya a <https://compliance.microsoft.com> y haga clic en **Conectores** >  de datos **InvestEdge DataParser**.
+1. Vaya a y, a <https://compliance.microsoft.com> continuación, seleccione **Conectores** >  de datos **InvestEdge DataParser**.
 
-2. En la página de descripción del producto **InvestEdge DataParser** , haga clic en **Agregar conector**.
+2. En la página de descripción del producto **InvestEdge DataParser** , seleccione **Agregar conector**.
 
-3. En la página **Términos de servicio** , haga clic en **Aceptar**.
+3. En la página **Términos de servicio** , seleccione **Aceptar**.
 
-4. Escriba un nombre único que identifique el conector y, a continuación, haga clic en **Siguiente**.
+4. Escriba un nombre único que identifique el conector y, a continuación, seleccione **Siguiente**.
 
 5. Inicie sesión en su cuenta 17a-4 y complete los pasos del Asistente para conexión de InvestEdge DataParser.
 
@@ -73,11 +78,11 @@ El conector InvestEdge DataParser asignará automáticamente los usuarios a sus 
 
 Después de crear un conector InvestEdge DataParser, puede ver el estado del conector en el portal de cumplimiento.
 
-1. Vaya a <https://compliance.microsoft.com> y haga clic en **Conectores de datos** en el panel de navegación izquierdo.
+1. Vaya a <https://compliance.microsoft.com> y seleccione **Conectores de datos** en el panel de navegación izquierdo.
 
-2. Haga clic en la pestaña **Conectores** y, a continuación, seleccione el conector InvestEdge DataParser que creó para mostrar la página de control flotante, que contiene las propiedades y la información sobre el conector.
+2. Seleccione la pestaña **Conectores** y, a continuación, seleccione el conector InvestEdge DataParser que creó para mostrar la página de control flotante, que contiene las propiedades y la información sobre el conector.
 
-3. En **Estado del conector con origen**, haga clic en el vínculo **Descargar registro** para abrir (o guardar) el registro de estado del conector. Este registro contiene información sobre los datos que se han importado a la nube de Microsoft. Para obtener más información, consulte [Visualización de registros de administración para conectores de datos](data-connector-admin-logs.md).
+3. En **Estado del conector con origen**, seleccione el vínculo **Descargar registro** para abrir (o guardar) el registro de estado del conector. Este registro contiene información sobre los datos que se han importado a la nube de Microsoft. Para obtener más información, consulte [Visualización de registros de administración para conectores de datos](data-connector-admin-logs.md).
 
 ## <a name="known-issues"></a>Problemas conocidos
 

@@ -1,5 +1,6 @@
 ---
 title: Configuración de un conector para archivar datos de O2 Network en Microsoft 365
+description: Los administradores pueden configurar un conector TeleMessage para importar y archivar datos DE SMS y MMS desde la red móvil de O2 en Microsoft 365. Esto le permite archivar datos de orígenes de datos de terceros en Microsoft 365 para que pueda usar características de cumplimiento como la suspensión legal, la búsqueda de contenido y las directivas de retención para administrar los datos de terceros de su organización.
 f1.keywords:
 - NOCSH
 ms.author: robmazz
@@ -10,20 +11,24 @@ audience: Admin
 ms.topic: how-to
 ms.service: O365-seccomp
 ms.localizationpriority: medium
-ms.collection: M365-security-compliance
-description: Los administradores pueden configurar un conector TeleMessage para importar y archivar datos DE SMS y MMS desde la red móvil de O2 en Microsoft 365. Esto le permite archivar datos de orígenes de datos de terceros en Microsoft 365 para que pueda usar características de cumplimiento como la suspensión legal, la búsqueda de contenido y las directivas de retención para administrar los datos de terceros de su organización.
-ms.openlocfilehash: 92782baff80a5b783a88f412af0ecec45ba40423
-ms.sourcegitcommit: 433f5b448a0149fcf462996bc5c9b45d17bd46c6
+ms.collection:
+- tier3
+- purview-compliance
+- data-connectors
+ms.openlocfilehash: c5b9d06501f9655f7943eca8aa072c4f00e43c37
+ms.sourcegitcommit: 8d3c027592a638f411f87d89772dd3d39e92aab0
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/20/2022
-ms.locfileid: "67823593"
+ms.lasthandoff: 10/12/2022
+ms.locfileid: "68533319"
 ---
 # <a name="set-up-a-connector-to-archive-o2-network-data"></a>Configuración de un conector para archivar datos de red de O2
 
 Use un conector TeleMessage en el portal de cumplimiento Microsoft Purview para importar y archivar mensajes de Servicio de mensajería breve (SMS) y llamadas de voz desde la red móvil de O2. Después de configurar y configurar un conector, se conecta a la red de O2 de su organización una vez al día e importa sms y llamadas de voz a buzones de Correo de Microsoft 365.
 
 Después de almacenar mensajes SMS y llamadas de voz en buzones de usuario, puede aplicar características de Microsoft Purview como la suspensión por juicio, la búsqueda de contenido y las directivas de retención de Microsoft 365 a los datos de red de O2. Por ejemplo, puede buscar mensajes SMS de red de O2 y llamadas de voz mediante búsqueda de contenido o asociar el buzón de correo que contiene datos de red de O2 con un custodio en un caso de eDiscovery (Premium). El uso de un conector de red de O2 para importar y archivar datos en Microsoft 365 puede ayudar a su organización a cumplir las directivas gubernamentales y normativas.
+
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
 
 ## <a name="overview-of-archiving-o2-network-data"></a>Información general sobre el archivado de datos de red de O2
 
@@ -61,13 +66,13 @@ Algunos de los pasos de implementación necesarios para archivar los datos de re
 
 Después de completar los requisitos previos descritos en la sección anterior, puede crear un conector de red de O2 en el portal de cumplimiento. El conector usa la información que proporciona para conectarse al sitio de TeleMessage y transferir mensajes SMS y llamadas de voz a los cuadros de buzón de usuario correspondientes de Microsoft 365.
 
-1. Vaya a y, a [https://compliance.microsoft.com](https://compliance.microsoft.com/) continuación, haga clic en **Conectores** \> de datos **O2 Network**.
+1. Vaya a y, a [https://compliance.microsoft.com](https://compliance.microsoft.com/) continuación, seleccione **Conectores** \> de datos **O2 Network**.
 
-2. En la página de descripción del producto **de red de O2** , haga clic en **Agregar conector.**
+2. En la página Descripción del producto **de red de O2**, seleccione **Agregar conector**.
 
-3. En la página **Términos de servicio** , haga clic en **Aceptar**.
+3. En la página **Términos de servicio** , seleccione **Aceptar**.
 
-4. En la página **Iniciar sesión en TeleMessage** , en el paso 3, escriba la información necesaria en los cuadros siguientes y, a continuación, haga clic en **Siguiente**.
+4. En la página **Iniciar sesión en TeleMessage** , en el paso 3, escriba la información necesaria en los cuadros siguientes y, a continuación, seleccione **Siguiente**.
 
    - **Nombre de usuario:** Nombre de usuario de TeleMessage.
 
@@ -75,9 +80,9 @@ Después de completar los requisitos previos descritos en la sección anterior, 
 
 5. Una vez creado el conector, puede cerrar la ventana emergente y ir a la página siguiente.
 
-6. En la página **Asignación de** usuarios, habilite la asignación automática de usuarios y haga clic en **Siguiente**. En caso de que necesite una asignación personalizada, cargue un archivo CSV y haga clic en **Siguiente**.
+6. En la página **Asignación de** usuarios, habilite la asignación automática de usuarios y seleccione **Siguiente**. En caso de que necesite una asignación personalizada, cargue un archivo CSV y seleccione **Siguiente**.
 
-7. Revise la configuración y, a continuación, haga clic en **Finalizar** para crear el conector.
+7. Revise la configuración y, a continuación, seleccione **Finalizar** para crear el conector.
 
 8. Vaya a la pestaña Conectores de la página **Conectores de datos** para ver el progreso del proceso de importación del nuevo conector.
 

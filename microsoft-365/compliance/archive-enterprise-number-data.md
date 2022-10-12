@@ -1,5 +1,6 @@
 ---
 title: Configuración de un conector para archivar datos del archivador de número de empresa de TeleMessage
+description: Los administradores pueden configurar un conector para importar y archivar datos DE SMS y MMS desde el archivador de números de empresa de TeleMessage. Esto le permite archivar datos de orígenes de datos de terceros en Microsoft Purview para que pueda usar características de cumplimiento como la suspensión legal, la búsqueda de contenido y las directivas de retención para administrar los datos de terceros de su organización.
 f1.keywords:
 - NOCSH
 ms.author: robmazz
@@ -10,20 +11,24 @@ audience: Admin
 ms.topic: how-to
 ms.service: O365-seccomp
 ms.localizationpriority: medium
-ms.collection: M365-security-compliance
-description: Los administradores pueden configurar un conector para importar y archivar datos DE SMS y MMS desde el archivador de números de empresa de TeleMessage. Esto le permite archivar datos de orígenes de datos de terceros en Microsoft Purview para que pueda usar características de cumplimiento como la suspensión legal, la búsqueda de contenido y las directivas de retención para administrar los datos de terceros de su organización.
-ms.openlocfilehash: c367f7c5c661f374376163e15a0caa63951dcf35
-ms.sourcegitcommit: 433f5b448a0149fcf462996bc5c9b45d17bd46c6
+ms.collection:
+- tier3
+- purview-compliance
+- data-connectors
+ms.openlocfilehash: f1547c8f382c243367e7130795282bef8bf13797
+ms.sourcegitcommit: 8d3c027592a638f411f87d89772dd3d39e92aab0
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/20/2022
-ms.locfileid: "67824452"
+ms.lasthandoff: 10/12/2022
+ms.locfileid: "68535562"
 ---
 # <a name="set-up-a-connector-to-archive-enterprise-number-data"></a>Configuración de un conector para archivar datos de número de empresa
 
 Use un conector de TeleMessage en el portal de cumplimiento Microsoft Purview para importar y archivar mensajes de Servicio de mensajería corta (SMS) y servicio de mensajería multimedia (MMS), mensajes de chat, grabaciones de llamadas de voz y registros de llamadas de voz del Archivador de números de empresa. Después de configurar y configurar un conector, se conecta a la cuenta de TeleMessage de su organización una vez al día e importa los datos de comunicación móvil de los empleados que usan el archivador de número de empresa de TeleMessage a buzones de Correo de Microsoft 365.
 
 Una vez almacenados los datos del conector de TeleMessage Enterprise Number Archiver en buzones de usuario, puede aplicar características de Microsoft Purview como suspensión por juicio, búsqueda de contenido, archivado de In-Place, auditoría, cumplimiento de comunicaciones y directivas de retención de Microsoft 365 a los datos de Enterprise Number Archiver. Por ejemplo, puede buscar en TeleMessage Enterprise Number Archiver SMS, MMS y Voice Call mediante Búsqueda de contenido o asociar el buzón que contiene los datos del conector de Enterprise Number Archiver con un custodio en un caso de eDiscovery (Premium). El uso de un conector de archivador de número de empresa para importar y archivar datos en Microsoft 365 puede ayudar a su organización a cumplir las directivas gubernamentales y normativas.
+
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
 
 ## <a name="overview-of-archiving-enterprise-number-data"></a>Introducción al archivado de datos de número de empresa
 
@@ -55,13 +60,13 @@ Algunos de los pasos de implementación necesarios para archivar los datos del a
 
 Después de completar los requisitos previos descritos en la sección anterior, puede crear un conector enterprise number archiver en el portal de cumplimiento. El conector usa la información que proporciona para conectarse al sitio de TeleMessage y transferir mensajes SMS, MMS y mensajes de llamada de voz a los cuadros de buzón de usuario correspondientes de Microsoft 365.
 
-1. Vaya a y, a [https://compliance.microsoft.com](https://compliance.microsoft.com/) continuación, haga clic en **Conectores** \> de datos **Archivador de número de empresa**.
+1. Vaya a y, a [https://compliance.microsoft.com](https://compliance.microsoft.com/) continuación, seleccione **Conectores** \> de datos **Archivador de número de empresa**.
 
-2. En la página de descripción **del producto Enterprise Number Archiver**, haga clic en **Agregar conector**.
+2. En la página de descripción **del producto Archivador de número** de empresa, seleccione **Agregar conector**.
 
-3. En la página **Términos de servicio** , haga clic en **Aceptar**.
+3. En la página **Términos de servicio** , seleccione **Aceptar**.
 
-4. En la página **Iniciar sesión en TeleMessage** , en el paso 3, escriba la información necesaria en los cuadros siguientes y, a continuación, haga clic en **Siguiente**.
+4. En la página **Iniciar sesión en TeleMessage** , en el paso 3, escriba la información necesaria en los cuadros siguientes y, a continuación, seleccione **Siguiente**.
 
    - **Nombre de usuario:** Nombre de usuario de TeleMessage.
 
@@ -69,9 +74,9 @@ Después de completar los requisitos previos descritos en la sección anterior, 
 
 5. Una vez creado el conector, puede cerrar la ventana emergente y ir a la página siguiente.
 
-6. En la página **Asignación de** usuarios, habilite la asignación automática de usuarios. Para habilitar la asignación personalizada, cargue un archivo CSV que contenga la información de asignación de usuarios y, a continuación, haga clic en **Siguiente**.
+6. En la página **Asignación de** usuarios, habilite la asignación automática de usuarios. Para habilitar la asignación personalizada, cargue un archivo CSV que contenga la información de asignación de usuario y, a continuación, seleccione **Siguiente**.
 
-7. Revise la configuración y, a continuación, haga clic en **Finalizar** para crear el conector.
+7. Revise la configuración y, a continuación, seleccione **Finalizar** para crear el conector.
 
 8. Vaya a la pestaña Conectores de la página **Conectores de datos** para ver el progreso del proceso de importación del nuevo conector.
 

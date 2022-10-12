@@ -1,5 +1,6 @@
 ---
 title: Configuración de un conector para archivar datos móviles Android
+description: Los administradores pueden configurar un conector de TeleMessage para importar y archivar SMS, MMS y llamadas de voz desde teléfonos móviles Android. Esto le permite archivar datos de orígenes de datos de terceros en Microsoft 365 para que pueda usar características de cumplimiento como la suspensión legal, la búsqueda de contenido y las directivas de retención para administrar los datos de terceros de su organización.
 f1.keywords:
 - NOCSH
 ms.author: robmazz
@@ -10,20 +11,24 @@ audience: Admin
 ms.topic: how-to
 ms.service: O365-seccomp
 ms.localizationpriority: medium
-ms.collection: M365-security-compliance
-description: Los administradores pueden configurar un conector de TeleMessage para importar y archivar SMS, MMS y llamadas de voz desde teléfonos móviles Android. Esto le permite archivar datos de orígenes de datos de terceros en Microsoft 365 para que pueda usar características de cumplimiento como la suspensión legal, la búsqueda de contenido y las directivas de retención para administrar los datos de terceros de su organización.
-ms.openlocfilehash: 2b4bf66e38b2a3024774643dc22ab6a2eb30d419
-ms.sourcegitcommit: 433f5b448a0149fcf462996bc5c9b45d17bd46c6
+ms.collection:
+- tier3
+- purview-compliance
+- data-connectors
+ms.openlocfilehash: 89dc10f966d829bc03675cf627fe8166bf3c2df5
+ms.sourcegitcommit: 8d3c027592a638f411f87d89772dd3d39e92aab0
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/20/2022
-ms.locfileid: "67826871"
+ms.lasthandoff: 10/12/2022
+ms.locfileid: "68535738"
 ---
 # <a name="set-up-a-connector-to-archive-android-mobile-data"></a>Configuración de un conector para archivar datos móviles Android
 
 Use un conector TeleMessage en el portal de cumplimiento Microsoft Purview para importar y archivar SMS, MMS, llamadas de voz y registros de llamadas desde teléfonos móviles Android. Después de configurar y configurar un conector, se conecta a la cuenta de TeleMessage de su organización una vez al día e importa la comunicación móvil de los empleados que usan El archivador de Android de TeleMessage a buzones de Microsoft 365.
 
 Una vez que los datos de teléfonos móviles Android se almacenan en buzones de usuario, puede aplicar características de Microsoft Purview como la suspensión por juicio, la búsqueda de contenido y las directivas de retención de Microsoft 365 a los datos de Android Archiver. Por ejemplo, puede buscar la comunicación móvil de Android Archiver mediante búsqueda de contenido o asociar el buzón que contiene los datos del conector de Android Archiver con un custodio en un caso de eDiscovery (Premium). El uso de un conector de Android Archiver para importar y archivar datos en Microsoft 365 puede ayudar a su organización a cumplir las directivas gubernamentales y normativas.
+
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
 
 ## <a name="overview-of-archiving-android-mobile-data"></a>Información general sobre el archivado de datos móviles Android
 
@@ -57,23 +62,23 @@ Algunos de los pasos de implementación necesarios para archivar los datos de co
 
 El último paso es crear un conector de Android Archiver en el portal de cumplimiento. El conector usa la información que proporciona para conectarse al sitio TeleMessage y transferir la comunicación de Android a los cuadros de buzón de usuario correspondientes de Microsoft 365.
 
-1. Vaya a [https://compliance.microsoft.com](https://compliance.microsoft.com) y haga clic en **Conectores** >  de datos **Android Archiver**.
+1. Vaya a [https://compliance.microsoft.com](https://compliance.microsoft.com) y seleccione **Conectores** >  de datos **Android Archiver**.
 
-2. En la página de descripción del producto **Android Archiver** , haga clic en **Agregar conector**.
+2. En la página de descripción del producto **Android Archiver** , seleccione **Agregar conector**.
 
-3. En la página **Términos de servicio** , haga clic en **Aceptar**.
+3. En la página **Términos de servicio** , seleccione **Aceptar**.
 
-4. En la página **Iniciar sesión en TeleMessage** , en el paso 3, escriba la información necesaria en los cuadros siguientes y, a continuación, haga clic en **Siguiente**.
+4. En la página **Iniciar sesión en TeleMessage** , en el paso 3, escriba la información necesaria en los cuadros siguientes y, a continuación, seleccione **Siguiente**.
 
    - **Nombre de usuario:** Nombre de usuario de TeleMessage.
 
    - **Contraseña:** La contraseña de TeleMessage.
 
-5. Una vez creado el conector, cierre la ventana emergente y haga clic en **Siguiente**.
+5. Una vez creado el conector, cierre la ventana emergente y seleccione **Siguiente**.
 
-6. En la página **Asignación de** usuarios, habilite la asignación automática de usuarios y haga clic en **Siguiente**. En caso de que necesite una asignación personalizada, cargue un archivo CSV y haga clic en **Siguiente**.
+6. En la página **Asignación de** usuarios, habilite la asignación automática de usuarios y seleccione **Siguiente**. En caso de que necesite una asignación personalizada, cargue un archivo CSV y seleccione **Siguiente**.
 
-7. Revise la configuración y, a continuación, haga clic en **Finalizar** para crear el conector.
+7. Revise la configuración y, a continuación, seleccione **Finalizar** para crear el conector.
 
 8. Vaya a la pestaña Conectores de la página **Conectores de datos** para ver el progreso del proceso de importación del nuevo conector.
 

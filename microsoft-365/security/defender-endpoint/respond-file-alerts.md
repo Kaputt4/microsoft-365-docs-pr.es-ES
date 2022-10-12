@@ -11,16 +11,18 @@ author: mjcaparas
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
-ms.collection: M365-security-compliance
+ms.collection:
+- m365-security
+- tier2
 ms.topic: article
 ms.subservice: mde
 search.appverid: met150
-ms.openlocfilehash: 4ade60286c1869f70716528e13f12b2632fd1870
-ms.sourcegitcommit: 9b133379196da2b3a4bb311b07ff274f43780f68
+ms.openlocfilehash: 319a6c63e88e250020d275c2b311eaff8500d3c7
+ms.sourcegitcommit: 8d3c027592a638f411f87d89772dd3d39e92aab0
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/14/2022
-ms.locfileid: "67699990"
+ms.lasthandoff: 10/12/2022
+ms.locfileid: "68536310"
 ---
 # <a name="take-response-actions-on-a-file"></a>Realizar acciones de respuesta en un archivo
 
@@ -45,7 +47,7 @@ Las acciones de respuesta se ejecutan en la parte superior de la página de arch
 - Detener y poner en cuarentena el archivo
 - Agregar indicador
 - Descargar archivo
-- Consultar a un experto en amenazas
+- Pregunte a expertos de Defender
 - Centro de actividades
 
 También puede enviar archivos para un análisis profundo para ejecutar el archivo en un espacio aislado de nube seguro. Una vez completado el análisis, obtendrá un informe detallado que proporciona información sobre el comportamiento del archivo. Para enviar archivos para un análisis profundo y leer informes anteriores, seleccione la pestaña **Análisis profundo** . Se encuentra debajo de las tarjetas de información del archivo.
@@ -70,7 +72,7 @@ Puede contener un ataque en su organización si detiene el proceso malintenciona
 >
 > - El dispositivo en el que va a realizar la acción se ejecuta Windows 10, versión 1703 o posterior y Windows 11
 > - El archivo no pertenece a editores de terceros de confianza o no está firmado por Microsoft
-> - Antivirus de Microsoft Defender debe ejecutarse al menos en modo pasivo. Para obtener más información, consulte [Compatibilidad del Antivirus de Microsoft Defender](/windows/security/threat-protection/microsoft-defender-antivirus/microsoft-defender-antivirus-compatibility).
+> - Microsoft Defender Antivirus debe ejecutarse al menos en modo pasivo. Para obtener más información, consulte [compatibilidad con Microsoft Defender Antivirus](/windows/security/threat-protection/microsoft-defender-antivirus/microsoft-defender-antivirus-compatibility).
 
 La acción **Detener y poner en cuarentena el archivo** incluye detener los procesos en ejecución, poner en cuarentena los archivos y eliminar datos persistentes, como claves del Registro.
 
@@ -83,7 +85,7 @@ Esta acción surte efecto en dispositivos con Windows 10, versión 1703 o poster
 
 1. Seleccione el archivo que desea detener y poner en cuarentena. Puede seleccionar un archivo de cualquiera de las vistas siguientes o usar el cuadro De búsqueda:
 
-   - **Alertas** : haga clic en los vínculos correspondientes de la descripción o los detalles de la escala de tiempo del artículo de alertas.
+   - **Alertas** : seleccione los vínculos correspondientes en descripción o detalles en la escala de tiempo del artículo de alertas.
    - **Cuadro de búsqueda** : seleccione **Archivo** en el menú desplegable y escriba el nombre de archivo.
 
    > [!NOTE]
@@ -108,7 +110,7 @@ Esta acción surte efecto en dispositivos con Windows 10, versión 1703 o poster
 
 4. Seleccione cualquiera de los indicadores de estado para ver más información sobre la acción. Por ejemplo, seleccione **No se pudo** ver dónde se produjo un error en la acción.
 
-#### <a name="notification-on-device-userf"></a>Notificación en userf del dispositivo
+#### <a name="notification-on-device-user"></a>Notificación al usuario del dispositivo
 
 Cuando se quita el archivo de un dispositivo, se muestra la siguiente notificación:
 
@@ -152,7 +154,7 @@ De forma predeterminada, debería poder descargar los archivos que están en cua
 
 ### <a name="download-quarantined-files"></a>Descarga de archivos en cuarentena
 
-Los archivos que el Antivirus de Microsoft Defender o el equipo de seguridad hayan puesto en cuarentena se guardarán de forma compatible según [las configuraciones de envío de ejemplo](enable-cloud-protection-microsoft-defender-antivirus.md). El equipo de seguridad puede descargar los archivos directamente desde la página de detalles del archivo mediante el botón "Descargar archivo". **Esta característica está activada de forma predeterminada**.
+Los archivos que Microsoft Defender Antivirus o el equipo de seguridad han puesto en cuarentena se guardarán de forma compatible según [las configuraciones de envío de ejemplo](enable-cloud-protection-microsoft-defender-antivirus.md). El equipo de seguridad puede descargar los archivos directamente desde la página de detalles del archivo mediante el botón "Descargar archivo". **Esta característica está activada de forma predeterminada**.
 
 La ubicación depende de la configuración geográfica de su organización (UE, Reino Unido o EE. UU.). Un archivo en cuarentena solo se recopilará una vez por organización. Obtenga más información sobre la protección de datos de Microsoft desde el Portal de confianza de servicios en https://aka.ms/STP.
 
@@ -167,7 +169,7 @@ Esta característica no funcionará si el envío de ejemplo está desactivado. S
 > [!IMPORTANT]
 > Descargue los requisitos de archivo en cuarentena:
 >
-> - Su organización usa antivirus de Microsoft Defender en modo activo
+> - Su organización usa Microsoft Defender Antivirus en modo activo
 > - La versión del motor antivirus es 1.1.17300.4 o posterior. Consulte [Versiones mensuales de la plataforma y del motor](manage-updates-baselines-microsoft-defender-antivirus.md#monthly-platform-and-engine-versions)
 > - La protección basada en la nube está habilitada. Consulte [Activación de la protección entregada en la nube](enable-cloud-protection-microsoft-defender-antivirus.md)
 > - El envío de ejemplo está activado
@@ -175,7 +177,7 @@ Esta característica no funcionará si el envío de ejemplo está desactivado. S
 
 ### <a name="collect-files"></a>Recopilar archivos
 
-Si Microsoft Defender para punto de conexión no almacena un archivo, no puede descargarlo. En su lugar, verá un botón **Recopilar archivo** en la misma ubicación. Si no se ha visto un archivo en la organización en los últimos 30 días, se deshabilitará **Recopilar archivo** .
+Si un archivo no está almacenado por Microsoft Defender para punto de conexión, no se puede descargar. En su lugar, verá un botón **Recopilar archivo** en la misma ubicación. Si no se ha visto un archivo en la organización en los últimos 30 días, se deshabilitará **Recopilar archivo** .
 > [!Important]
 > Es posible que un archivo que se puso en cuarentena como una posible amenaza de red no se pueda recuperar. Si un usuario intenta restaurar el archivo después de la cuarentena, es posible que no sea accesible. Esto puede deberse a que el sistema ya no tiene credenciales de red para acceder al archivo. Normalmente, esto es el resultado de un inicio de sesión temporal en un sistema o carpeta compartida y los tokens de acceso han expirado.
 
@@ -185,7 +187,7 @@ Evite la propagación de un ataque en su organización mediante la prohibición 
 
 > [!IMPORTANT]
 >
-> - Esta característica está disponible si su organización usa el Antivirus de Microsoft Defender y la protección entregada en la nube está habilitada. Para obtener más información, consulte [Administración de la protección entregada en la nube](/windows/security/threat-protection/microsoft-defender-antivirus/deploy-manage-report-microsoft-defender-antivirus).
+> - Esta característica está disponible si su organización usa Microsoft Defender Antivirus y la protección entregada en la nube está habilitada. Para obtener más información, consulte [Administración de la protección entregada en la nube](/windows/security/threat-protection/microsoft-defender-antivirus/deploy-manage-report-microsoft-defender-antivirus).
 >
 > - La versión de cliente de Antimalware debe ser 4.18.1901.x o posterior.
 > - Esta característica está diseñada para evitar que se descargue malware sospechoso (o archivos potencialmente malintencionados) desde la web. Actualmente admite archivos ejecutables portátiles (PE), _incluidos archivos.exe_ y _.dll_ . La cobertura se ampliará con el tiempo.
@@ -215,9 +217,9 @@ También puede editar indicadores desde la página **Configuración**, en **Indi
 
 ## <a name="consult-a-threat-expert"></a>Consultar a un experto en amenazas
 
-Consulte a un experto en amenazas de Microsoft para obtener más información sobre un dispositivo potencialmente comprometido o dispositivos ya en peligro. Expertos en amenazas de Microsoft se contratan directamente desde el portal de Microsoft 365 Defender para obtener una respuesta oportuna y precisa. Los expertos proporcionan información sobre un dispositivo potencialmente comprometido y le ayudan a comprender las amenazas complejas y las notificaciones de ataque dirigidas. También pueden proporcionar información sobre las alertas o un contexto de inteligencia sobre amenazas que vea en el panel del portal.
+Seleccione Ask Defender Experts (Pedir a los expertos de Defender) para obtener más información de expertos de Microsoft en un dispositivo potencialmente comprometido o dispositivos ya en peligro. Microsoft Defender Expertos se involucran directamente desde el portal de Microsoft 365 Defender para obtener una respuesta oportuna y precisa. Los expertos proporcionan información sobre un dispositivo potencialmente comprometido y le ayudan a comprender las amenazas complejas y las notificaciones de ataque dirigidas. También pueden proporcionar información sobre las alertas o un contexto de inteligencia sobre amenazas que vea en el panel del portal.
 
-Consulte [Consulta con un experto en amenazas de Microsoft](/microsoft-365/security/defender-endpoint/configure-microsoft-threat-experts#consult-a-microsoft-threat-expert-about-suspicious-cybersecurity-activities-in-your-organization) para obtener más información.
+Consulte [Preguntar a expertos de Defender](experts-on-demand.md) para obtener más información.
 
 ## <a name="check-activity-details-in-action-center"></a>Comprobar los detalles de actividad en el Centro de actividades
 

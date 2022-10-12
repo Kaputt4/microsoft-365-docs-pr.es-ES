@@ -1,5 +1,6 @@
 ---
 title: Configuración de un conector para importar datos de Epic EHR
+description: Los administradores pueden configurar un conector de datos para importar datos de registros médicos electrónicos (EHR) desde el sistema Epic de su organización a Microsoft 365. Esto le permite usar datos de EPIC EHR en directivas de administración de riesgos internos para ayudarle a detectar la actividad de acceso no autorizado a los datos de los pacientes por parte de los empleados.
 f1.keywords:
 - NOCSH
 ms.author: robmazz
@@ -12,14 +13,16 @@ ms.service: O365-seccomp
 ms.localizationpriority: medium
 search.appverid:
 - MET150
-ms.collection: M365-security-compliance
-description: Los administradores pueden configurar un conector de datos para importar datos de registros médicos electrónicos (EHR) desde el sistema Epic de su organización a Microsoft 365. Esto le permite usar datos de EPIC EHR en directivas de administración de riesgos internos para ayudarle a detectar la actividad de acceso no autorizado a los datos de los pacientes por parte de los empleados.
-ms.openlocfilehash: daba1466704c14d91568f58dd63657ad4d327159
-ms.sourcegitcommit: 433f5b448a0149fcf462996bc5c9b45d17bd46c6
+ms.collection:
+- tier3
+- purview-compliance
+- data-connectors
+ms.openlocfilehash: 283c3085abd1d85ac8e8510294d2aaea224659f7
+ms.sourcegitcommit: 8d3c027592a638f411f87d89772dd3d39e92aab0
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/20/2022
-ms.locfileid: "67822691"
+ms.lasthandoff: 10/12/2022
+ms.locfileid: "68533450"
 ---
 # <a name="set-up-a-connector-to-import-epic-ehr-audit-data-preview"></a>Configuración de un conector para importar datos de auditoría de Epic EHR (versión preliminar)
 
@@ -38,6 +41,8 @@ La configuración de un conector epic consta de las siguientes tareas:
 - Opcionalmente, puede programar el script para que se ejecute automáticamente para importar registros de auditoría.
 
 Si desea participar en la versión preliminar, póngase en contacto con el equipo en dcfeedback@microsoft.com.
+
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
 
 ## <a name="before-you-set-up-the-connector"></a>Antes de configurar el conector
 
@@ -84,19 +89,19 @@ En la tabla siguiente se enumeran los campos necesarios para habilitar escenario
 
 El siguiente paso es crear un conector de Epic en el portal de cumplimiento. Después de ejecutar el script en el paso 4, el archivo de texto que creó en el paso 2 se procesará e insertará en el punto de conexión de API que configuró en el paso 1. En este paso, asegúrese de copiar el JobId que se genera al crear el conector. Usará jobid al ejecutar el script.
 
-1. Vaya a y, a <https://compliance.microsoft.com> continuación, haga clic en **Conectores de datos** en el panel de navegación izquierdo.
+1. Vaya a y, a <https://compliance.microsoft.com> continuación, seleccione **Conectores de datos** en el panel de navegación izquierdo.
 
-2. En la página **Conectores de datos** en **Conector de Epic**, haga clic en **Ver**.
+2. En la página **Conectores de datos** , en **Conector de Epic**, seleccione **Ver**.
 
-3. En la página **Conector de Epic** , haga clic en **Agregar conector**.
+3. En la página **Conector de Epic** , seleccione **Agregar conector**.
 
-4. En la página **Configurar la conexión** , haga lo siguiente y, a continuación, haga clic en **Siguiente**:
+4. En la página **Configurar la conexión** , haga lo siguiente y, a continuación, seleccione **Siguiente**:
 
     1. Escriba o pegue el identificador de aplicación de Azure AD para la aplicación de Azure que creó en el paso 2.
 
     2. Escriba un nombre para el conector epic.
 
-5. En la página **Revisar** , revise la configuración y, a continuación, haga clic en **Finalizar** para crear el conector.
+5. En la página **Revisar** , revise la configuración y, a continuación, seleccione **Finalizar** para crear el conector.
 
    Se muestra una página de estado que confirma que se creó el conector. Esta página contiene dos cosas importantes que necesita para completar el siguiente paso para ejecutar el script de ejemplo para cargar los datos de los registros de auditoría de Epic EHR.
 
@@ -106,17 +111,17 @@ El siguiente paso es crear un conector de Epic en el portal de cumplimiento. Des
 
     2. **Esquema de referencia.** Consulte el esquema para comprender qué campos del sistema Epic son aceptados por el conector. Esto le ayudará a crear un archivo con todos los campos de base de datos de Epic necesarios.
 
-    3. **Vínculo a script de ejemplo.** Haga clic en el vínculo **aquí** para ir al sitio de GitHub para acceder al script de ejemplo (el vínculo abre una nueva ventana). Mantenga esta ventana abierta para que pueda copiar el script en el paso 4. Como alternativa, puede marcar el destino o copiar la dirección URL para poder acceder a ella de nuevo al ejecutar el script. Este vínculo también está disponible en la página de control flotante del conector.
+    3. **Vínculo a script de ejemplo.** Seleccione el vínculo **aquí** para ir al sitio de GitHub para acceder al script de ejemplo (el vínculo abre una nueva ventana). Mantenga esta ventana abierta para que pueda copiar el script en el paso 4. Como alternativa, puede marcar el destino o copiar la dirección URL para poder acceder a ella de nuevo al ejecutar el script. Este vínculo también está disponible en la página de control flotante del conector.
 
-6. Haga clic en **Listo**.
+6. Seleccione **Listo**.
 
    El nuevo conector se muestra en la lista de la pestaña **Conectores** .
 
-7. Haga clic en el conector de Epic que acaba de crear para mostrar la página de control flotante, que contiene propiedades y otra información sobre el conector.
+7. Seleccione el conector de Epic que acaba de crear para mostrar la página de control flotante, que contiene propiedades y otra información sobre el conector.
 
 Si aún no lo ha hecho, puede copiar los valores del **identificador de App de Azure** y el **identificador del trabajo del conector**. Necesitará estos para ejecutar el script en el paso siguiente. También puede descargar el script desde la página de control flotante (o descargarlo mediante el vínculo del paso siguiente).
 
-También puede hacer clic en **Editar** para cambiar el identificador de App de Azure o los nombres de encabezado de columna que definió en la página **Asignación de** archivos.
+También puede seleccionar **Editar** para cambiar el identificador de App de Azure o los nombres de encabezado de columna que definió en la página **Asignación de** archivos.
 
 ## <a name="step-4-run-the-sample-script-to-upload-your-epic-ehr-audit-records"></a>Paso 4: Ejecución del script de ejemplo para cargar los registros de auditoría de Epic EHR
 
@@ -127,7 +132,7 @@ El último paso para configurar un conector de Epic es ejecutar un script de eje
 
 1. Vaya a la ventana que dejó abierta desde el paso anterior para acceder al sitio de GitHub con el script de ejemplo. Como alternativa, abra el sitio marcado o use la dirección URL que copió. También puede acceder al script [aquí](https://github.com/microsoft/m365-compliance-connector-sample-scripts/blob/main/sample_script.ps1).
 
-2. Haga clic en el botón **Sin formato** para mostrar el script en la vista de texto.
+2. Seleccione el botón **Sin formato** para mostrar el script en la vista de texto.
 
 3. Copie todas las líneas del script de ejemplo y guárdelas en un archivo de texto.
 
@@ -169,11 +174,11 @@ Si la carga se realiza correctamente, el script muestra el mensaje **Cargar corr
 
 Después de crear el conector epic e insertar los registros de auditoría de EHR, puede ver el conector y cargar el estado en el portal de cumplimiento. Si programa el script para que se ejecute automáticamente de forma periódica, también puede ver el estado actual después de la última vez que se ejecutó el script.
 
-1. Vaya a <https://compliance.microsoft.com> y haga clic en **Conectores de datos** en el panel de navegación izquierdo.
+1. Vaya a <https://compliance.microsoft.com> y seleccione **Conectores de datos** en el panel de navegación izquierdo.
 
-2. Haga clic en la pestaña **Conectores** y, a continuación, seleccione el conector epic para mostrar la página de control flotante. Esta página contiene las propiedades y la información sobre el conector.
+2. Seleccione la pestaña **Conectores** y, a continuación, seleccione el conector epic para mostrar la página de control flotante. Esta página contiene las propiedades y la información sobre el conector.
 
-3. En **Última importación**, haga clic en el vínculo **Descargar registro** para abrir (o guardar) el registro de estado del conector. Este registro contiene información sobre cada vez que se ejecuta el script y carga los datos del archivo de texto en la nube de Microsoft.
+3. En **Última importación**, seleccione el vínculo **Descargar registro** para abrir (o guardar) el registro de estado del conector. Este registro contiene información sobre cada vez que se ejecuta el script y carga los datos del archivo de texto en la nube de Microsoft.
 
     El archivo de registro del conector epic muestra las filas numéricas del archivo de texto que se cargaron
 
@@ -187,11 +192,11 @@ Para asegurarse de que los registros de auditoría más recientes del sistema EP
 
 Puede usar la aplicación Programador de tareas en Windows para ejecutar automáticamente el script todos los días.
 
-1. En el equipo local, haga clic en el botón **Inicio** de Windows y escriba **Programador de tareas**.
+1. En el equipo local, seleccione el botón **Inicio** de Windows y escriba **Programador de tareas**.
 
-2. Haga clic en la aplicación **Programador de tareas** para abrirla.
+2. Seleccione la aplicación **Programador de tareas** para abrirla.
 
-3. En la sección **Acciones** , haga clic en **Crear tarea**.
+3. En la sección **Acciones** , seleccione **Crear tarea**.
 
 4. En la pestaña **General** , escriba un nombre descriptivo para la tarea programada; por ejemplo, **script del conector de Epic**. También puede agregar una descripción opcional.
 
@@ -201,34 +206,34 @@ Puede usar la aplicación Programador de tareas en Windows para ejecutar automá
 
     2. Asegúrese de que está activada **la casilla Ejecutar con los privilegios más altos** .
 
-6. Seleccione la pestaña **Desencadenadores** , haga clic en **Nuevo** y, a continuación, haga lo siguiente:
+6. Seleccione la pestaña **Desencadenadores** , seleccione **Nuevo** y, a continuación, haga lo siguiente:
 
     1. En **Configuración**, seleccione la opción **Diario** y, a continuación, elija una fecha y hora para ejecutar el script por primera vez. El script se ejecutará todos los días a la misma hora especificada.
 
     2. En **Configuración avanzada**, asegúrese de que la casilla **Habilitado** está seleccionada.
 
-    3. Haga clic en **Aceptar**.
+    3. Seleccione **Aceptar**.
 
-7. Seleccione la pestaña **Acciones** , haga clic en **Nuevo** y, a continuación, haga lo siguiente:
+7. Seleccione la pestaña **Acciones** , seleccione **Nuevo** y, a continuación, haga lo siguiente:
 
    ![Configuración de acción para crear una nueva tarea programada para el script del conector épico.](../media/EpicConnectorScheduleTask1.png)
 
     1. En la lista desplegable **Acción** , asegúrese de que **iniciar un programa** está seleccionado.
 
-    2. En el cuadro **Programa o script** , haga clic en **Examinar**, vaya a la siguiente ubicación y selecciónela para que la ruta de acceso se muestre en el cuadro: C:.0.exe.
+    2. En el cuadro **Programa o script** , seleccione **Examinar**, vaya a la siguiente ubicación y selecciónela para que la ruta de acceso se muestre en el cuadro: C:.0.exe.
 
     3. En el cuadro **Agregar argumentos (opcional),** pegue el mismo comando de script que ejecutó en el paso 4. Por ejemplo: `.\EpicConnector.ps1 -tenantId "d5723623-11cf-4e2e-b5a5-01d1506273g9" -appId "c12823b7-b55a-4989-faba-02de41bb97c3" -appSecret "MNubVGbcQDkGCnn" -jobId "e081f4f4-3831-48d6-7bb3-fcfab1581458" -filePath "C:\Epic\audit\records.txt"`
 
     4. En el cuadro **Iniciar en (opcional),** pegue la ubicación de carpeta del script que ejecutó en el paso 4. Por ejemplo, C:\Epic\audit.
 
-    5. Haga clic en **Aceptar** para guardar la configuración de la nueva acción.
+    5. Seleccione **Aceptar** para guardar la configuración de la nueva acción.
 
-8. En la ventana **Crear tarea** , haga clic en **Aceptar** para guardar la tarea programada. Es posible que se le pida que escriba las credenciales de la cuenta de usuario.
+8. En la ventana **Crear tarea** , seleccione **Aceptar** para guardar la tarea programada. Es posible que se le pida que escriba las credenciales de la cuenta de usuario.
 
    La nueva tarea se muestra en la biblioteca del programador de tareas.
 
    ![La nueva tarea para el script del conector de atención sanitaria se muestra en la biblioteca del programador de tareas.](../media/EpicConnectorTaskSchedulerLibrary.png)
 
-   Se muestra la última vez que se ejecutó el script y la próxima vez que está programado para ejecutarse. Puede hacer doble clic en la tarea para editarla.
+   Se muestra la última vez que se ejecutó el script y la próxima vez que está programado para ejecutarse. Puede seleccionar doblemente la tarea para editarla.
 
    También puede comprobar la última vez que el script se ejecutó en la página de control flotante del conector epic correspondiente en el centro de cumplimiento.

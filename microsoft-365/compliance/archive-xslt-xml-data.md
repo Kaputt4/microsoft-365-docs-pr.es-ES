@@ -1,5 +1,6 @@
 ---
 title: Configuración de un conector para archivar datos XSLT/XML en Microsoft 365
+description: Los administradores pueden configurar un conector para importar y archivar datos XSLT/XML desde Veritas en Microsoft 365. Este conector le permite archivar datos de orígenes de datos de terceros en Microsoft 365 para que pueda usar características de cumplimiento como la suspensión legal, la búsqueda de contenido y las directivas de retención para administrar los datos de terceros de su organización.
 f1.keywords:
 - NOCSH
 ms.author: robmazz
@@ -10,20 +11,24 @@ audience: Admin
 ms.topic: how-to
 ms.service: O365-seccomp
 ms.localizationpriority: medium
-ms.collection: M365-security-compliance
-description: Los administradores pueden configurar un conector para importar y archivar datos XSLT/XML desde Veritas en Microsoft 365. Este conector le permite archivar datos de orígenes de datos de terceros en Microsoft 365 para que pueda usar características de cumplimiento como la suspensión legal, la búsqueda de contenido y las directivas de retención para administrar los datos de terceros de su organización.
-ms.openlocfilehash: 44255c4d8e6df531d35dfdcbec8c54566a4f2e3c
-ms.sourcegitcommit: 433f5b448a0149fcf462996bc5c9b45d17bd46c6
+ms.collection:
+- tier3
+- purview-compliance
+- data-connectors
+ms.openlocfilehash: 1e1260386974ebef71e8d4c70b4e327be64bb323
+ms.sourcegitcommit: 8d3c027592a638f411f87d89772dd3d39e92aab0
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/20/2022
-ms.locfileid: "67821481"
+ms.lasthandoff: 10/12/2022
+ms.locfileid: "68533024"
 ---
 # <a name="set-up-a-connector-to-archive-xsltxml-data"></a>Configuración de un conector para archivar datos XSLT/XML
 
 Use un conector veritas en la portal de cumplimiento Microsoft Purview para importar y archivar datos desde el origen de la página web a los buzones de usuario de la organización de Microsoft 365. Veritas proporciona un [conector XSLT/XML](https://globanet.com/xslt-xml) que permite el desarrollo rápido de archivos creados mediante transformacións de lenguaje de hoja de estilos extensibles (XSLT) para transformar archivos XML en otros formatos de archivo (como HTML o texto) que se pueden importar a Microsoft 365. El conector convierte el contenido de un elemento del origen XSLT/XML en un formato de mensaje de correo electrónico y, a continuación, importa el elemento convertido a buzones de Microsoft 365.
 
 Una vez que los datos XSLT/XML se almacenan en buzones de usuario, puede aplicar características de Microsoft Purview, como la suspensión por juicio, la exhibición de documentos electrónicos y las directivas de retención y las etiquetas de retención. El uso de un conector XSLT/XML para importar y archivar datos en Microsoft 365 puede ayudar a su organización a cumplir las directivas gubernamentales y normativas.
+
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
 
 ## <a name="overview-of-archiving-xsltxml-data"></a>Introducción al archivado de datos XSLT/XML
 
@@ -51,13 +56,13 @@ En la información general siguiente se explica el proceso de uso de un conector
 
 El primer paso consiste en acceder a los **conectores de datos** en el portal de cumplimiento y crear un conector para los datos XSLT/XML.
 
-1. Vaya a [https://compliance.microsoft.com](https://compliance.microsoft.com/) y haga clic en **Conectores** >  de datos **XSLT/XML**.
+1. Vaya a [https://compliance.microsoft.com](https://compliance.microsoft.com/) y seleccione **Conectores** >  de datos **XSLT/XML**.
 
-2. En la página de descripción del producto **XSLT/XML** , haga clic en **Agregar nuevo conector**.
+2. En la página de descripción del producto **XSLT/XML** , seleccione **Agregar nuevo conector**.
 
-3. En la página **Términos de servicio** , haga clic en **Aceptar**.
+3. En la página **Términos de servicio** , seleccione **Aceptar**.
 
-4. Escriba un nombre único que identifique el conector y, a continuación, haga clic en **Siguiente**.
+4. Escriba un nombre único que identifique el conector y, a continuación, seleccione **Siguiente**.
 
 5. Inicie sesión en su cuenta de Merge1 para configurar el conector.
 
@@ -65,7 +70,7 @@ El primer paso consiste en acceder a los **conectores de datos** en el portal de
 
 El segundo paso es configurar el conector XSLT/XML en el sitio Merge1. Para obtener información sobre cómo configurar el conector XSLT/XML en el sitio Veritas Merge1, vea [Merge1 Third-Party Connectors User Guide(Guía del usuario de conectores de terceros de Merge1](https://docs.ms.merge1.globanetportal.com/Merge1%20Third-Party%20Connectors%20XSLT-XML%20User%20Guide%20.pdf)).
 
-Después de hacer clic en **Guardar & finalizar**, se muestra la página **Asignación** de usuarios del asistente del conector en el portal de cumplimiento.
+Después de seleccionar **Guardar & Finalizar**, se muestra la página **Asignación** de usuarios en el Asistente para conectores en el portal de cumplimiento.
 
 ## <a name="step-3-map-users-and-complete-the-connector-setup"></a>Paso 3: Asignar usuarios y completar la configuración del conector
 
@@ -73,17 +78,17 @@ Después de hacer clic en **Guardar & finalizar**, se muestra la página **Asign
 
 2. En la página **Asignar usuarios XSLT/XML a usuarios de Microsoft 365** , habilite la asignación automática de usuarios. Los elementos XSLT/XML incluyen una propiedad denominada *Email*, que contiene direcciones de correo electrónico para los usuarios de la organización. Si el conector puede asociar esta dirección a un usuario de Microsoft 365, los elementos se importan al buzón de ese usuario.
 
-3. Haga clic en **Siguiente**, revise la configuración y vaya a la página **Conectores de datos** para ver el progreso del proceso de importación del nuevo conector.
+3. Seleccione **Siguiente**, revise la configuración y vaya a la página **Conectores de datos** para ver el progreso del proceso de importación del nuevo conector.
 
 ## <a name="step-4-monitor-the-xsltxml-connector"></a>Paso 4: Supervisión del conector XSLT/XML
 
 Después de crear el conector XSLT/XML, puede ver el estado del conector en el portal de cumplimiento.
 
-1. Vaya a [https://compliance.microsoft.com](https://compliance.microsoft.com) y haga clic en **Conectores de datos** en el panel de navegación izquierdo.
+1. Vaya a [https://compliance.microsoft.com](https://compliance.microsoft.com) y seleccione **Conectores de datos** en el panel de navegación izquierdo.
 
-2. Haga clic en la pestaña **Conectores** y, a continuación, seleccione el conector **XSLT/XML** para mostrar la página de control flotante. Esta página contiene las propiedades y la información sobre el conector.
+2. Seleccione la pestaña **Conectores** y, a continuación, seleccione el conector **XSLT/XML** para mostrar la página de control flotante. Esta página contiene las propiedades y la información sobre el conector.
 
-3. En **Estado del conector con origen**, haga clic en el vínculo **Descargar registro** para abrir (o guardar) el registro de estado del conector. Este registro contiene información sobre los datos que se han importado a la nube de Microsoft. Para obtener más información, consulte [Visualización de registros de administración para conectores de datos](data-connector-admin-logs.md).
+3. En **Estado del conector con origen**, seleccione el vínculo **Descargar registro** para abrir (o guardar) el registro de estado del conector. Este registro contiene información sobre los datos que se han importado a la nube de Microsoft. Para obtener más información, consulte [Visualización de registros de administración para conectores de datos](data-connector-admin-logs.md).
 
 ## <a name="known-issues"></a>Problemas conocidos
 
