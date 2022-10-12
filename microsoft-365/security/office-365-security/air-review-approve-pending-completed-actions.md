@@ -20,12 +20,12 @@ description: Obtenga información sobre las acciones de corrección en las funci
 ms.subservice: mdo
 ms.service: microsoft-365-security
 ms.date: 06/10/2021
-ms.openlocfilehash: 0342ad8b4319d82205889785cd243b0a6aa5d9e2
-ms.sourcegitcommit: 12af9e8e3a6eaa090fda9e98ccb831dff65863a4
+ms.openlocfilehash: 82a81a4b34fb5842fe21ec61321fd6d592472ba3
+ms.sourcegitcommit: 4f8200453d347de677461f27eb5a3802ce5cc888
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/27/2022
-ms.locfileid: "68086055"
+ms.lasthandoff: 10/12/2022
+ms.locfileid: "68543121"
 ---
 # <a name="review-and-manage-remediation-actions-in-office-365"></a>Revisar y administrar las acciones de corrección en Office 365
 
@@ -39,7 +39,9 @@ A medida que las investigaciones automatizadas sobre el correo electrónico & co
 - Eliminación temporal de mensajes de correo electrónico o clústeres
 - Desactivar el reenvío de correo externo
 
-Estas acciones de corrección no se realizan a menos que y hasta que el equipo de operaciones de seguridad las apruebe. Se recomienda revisar y aprobar las acciones pendientes lo antes posible para que las investigaciones automatizadas se completen de forma oportuna. En algunos casos, puede reconsiderar las acciones enviadas.  Debe formar parte del rol De búsqueda & purgar antes de realizar cualquier acción.
+Estas acciones de corrección no se realizan a menos que y hasta que el equipo de operaciones de seguridad las apruebe. Se recomienda revisar y aprobar las acciones pendientes lo antes posible para que las investigaciones automatizadas se completen de forma oportuna. Debe formar parte del rol De búsqueda & purgar antes de realizar cualquier acción.
+
+Hemos agregado comprobaciones adicionales para investigaciones duplicadas o superpuestas con los mismos clústeres aprobados varias veces. Si el mismo clúster de investigación ya está aprobado en la hora anterior, no se volverá a procesar la nueva corrección duplicada. Este comportamiento no elimina investigaciones duplicadas ni pruebas de investigación: simplemente desduplica las acciones aprobadas para mejorar la velocidad de procesamiento de la corrección. En el caso de las investigaciones de clúster aprobadas duplicadas, no verá los detalles de la acción en el panel lateral del [centro de acciones](https://security.microsoft.com/action-center/history) . 
 
 ## <a name="approve-or-reject-pending-actions"></a>Aprobar (o rechazar) acciones pendientes
 

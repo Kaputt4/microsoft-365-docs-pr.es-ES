@@ -17,12 +17,12 @@ ms.custom: seo-marvel-apr2020
 description: Los administradores pueden aprender a usar el portal envíos en el portal de Microsoft 365 Defender para enviar correo electrónico legítimo bloqueado, correo electrónico sospechoso, sospecha de correo electrónico de phishing, correo no deseado, otros mensajes potencialmente dañinos, direcciones URL y datos adjuntos de correo electrónico a Microsoft para volver a examinar.
 ms.subservice: mdo
 ms.service: microsoft-365-security
-ms.openlocfilehash: a9b8c64e989c14d0e5bfd9c3b8ca03dbcd93ae20
-ms.sourcegitcommit: 12af9e8e3a6eaa090fda9e98ccb831dff65863a4
+ms.openlocfilehash: d0b783b5a9ab5735b116a07fe164096c5031d1aa
+ms.sourcegitcommit: 4f8200453d347de677461f27eb5a3802ce5cc888
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/27/2022
-ms.locfileid: "68072797"
+ms.lasthandoff: 10/12/2022
+ms.locfileid: "68543077"
 ---
 # <a name="use-the-submissions-portal-to-submit-suspected-spam-phish-urls-legitimate-email-getting-blocked-and-email-attachments-to-microsoft"></a>Use el portal envíos para enviar sospechas de correo no deseado, mensajes no deseados, direcciones URL, bloqueo de correo electrónico legítimo y datos adjuntos de correo electrónico a Microsoft.
 
@@ -235,7 +235,7 @@ Transcurridos unos instantes, la entrada allow aparecerá en la pestaña **Domin
 > - Al invalidar el veredicto en la información de inteligencia sobre suplantación de identidad, el remitente suplantado se convierte en una entrada de bloqueo o permiso manual que solo aparece en la pestaña **Remitentes suplantados de la lista de permitidos o bloqueados de inquilinos** .
 > - Si el remitente aún no se ha bloqueado, el envío del mensaje de correo electrónico a Microsoft no creará una entrada de permiso en la lista de inquilinos permitidos o bloqueados.
 > - Las permite se agregan durante el flujo de correo, en función de los filtros que determinaron que el mensaje era malintencionado. Por ejemplo, si se ha determinado que el remitente y una dirección URL del mensaje son incorrectos, se crea una entrada allow para el remitente y se crea una entrada allow para la dirección URL.
-> - Cuando se vuelve a encontrar esa entidad (dirección de dominio o correo electrónico, dirección URL, archivo), se omiten todos los filtros asociados a esa entidad.
+> - Cuando se vuelve a encontrar esa entidad (dirección de dominio o correo electrónico, dirección URL, archivo), se omiten todos los filtros asociados a esa entidad. Para un correo electrónico, el sistema de filtrado sigue evaluando todas las demás entidades antes de tomar una decisión.
 > - Durante el flujo de correo, si los mensajes del dominio o la dirección de correo electrónico pasan otras comprobaciones en la pila de filtrado, se entregarán los mensajes. Por ejemplo, si se supera la [autenticación por correo electrónico](email-validation-and-authentication.md) , se entregará un mensaje de un remitente en la entrada allow.
 
 ## <a name="report-good-email-attachments-to-microsoft"></a>Notificar datos adjuntos de correo electrónico correctos a Microsoft

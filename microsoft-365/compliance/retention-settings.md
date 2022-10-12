@@ -11,18 +11,19 @@ ms.topic: conceptual
 ms.service: O365-seccomp
 ms.localizationpriority: high
 ms.collection:
-- M365-security-compliance
+- purview-compliance
+- tier1
 - SPO_Content
 search.appverid:
 - MOE150
 - MET150
 description: Comprenda las opciones de configuración que puede configurar para que las directivas de retención y las etiquetas de retención de Microsoft 365 conserven o eliminen los datos de su organización.
-ms.openlocfilehash: c0c5003a1e4a8b8aba231a0f3790aa0a82f26e15
-ms.sourcegitcommit: a1c86e51f6fec7517356251c3b99b1a86705c8c5
+ms.openlocfilehash: cd48e941cfece12812b91927090acfdaf7d05ab3
+ms.sourcegitcommit: 4f8200453d347de677461f27eb5a3802ce5cc888
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/13/2022
-ms.locfileid: "67336718"
+ms.lasthandoff: 10/12/2022
+ms.locfileid: "68543165"
 ---
 # <a name="common-settings-for-retention-policies-and-retention-label-policies"></a>Configuración normal para directivas de retención y directivas de etiquetas de retención
 
@@ -39,6 +40,8 @@ Para ver los escenarios que admiten estas directivas para la retención, vea:
 La configuración específica de cada escenario se explica en su correspondiente documentación.
 
 Para obtener información general sobre las directivas de retención y cómo funciona la retención en Microsoft 365, vea [Obtener información sobre las directivas de retención y las etiquetas de retención](retention.md).
+
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
 
 ## <a name="scopes---adaptive-and-static"></a>Ámbitos: adaptables y estáticos
 
@@ -91,7 +94,7 @@ Específicamente para los sitios de SharePoint, es posible que se necesite una c
     - Si usa la solución de administración del ciclo de vida de los datos:
        - **Soluciones** \> **Administración del ciclo de vida de los** \> datos **Microsoft 365** \> **Pestaña Ámbitos adaptables** \> + **Crear ámbito**
     
-    ¿No encuentra inmediatamente la solución en el panel de navegación? Primero, seleccione **Mostrar todo**. 
+    ¿No encuentra inmediatamente la solución en el panel de navegación? Primero seleccione **Mostrar todo**. 
 
 2. Siga los avisos de configuración para seleccionar primero el tipo de ámbito y luego los atributos o propiedades que desea usar para crear la pertenencia dinámica y escriba los valores de atributo o propiedad.
     
@@ -200,9 +203,9 @@ Para ejecutar una consulta con PowerShell:
     ```
     
     > [!TIP]
-    > Cuando se usan estos comandos para validar un ámbito de usuario, si el número de destinatarios devuelto es mayor de lo esperado, puede deberse a que incluye usuarios que no tienen una licencia válida para ámbitos adaptables. A estos usuarios no se les aplicará la configuración de retención.
+    > When you use these commands to validate a user scope, if the number of recipients returned is higher than expected, it might be because it includes users who don't have a valid license for adaptive scopes. These users won't have the retention settings applied to them.
     > 
-    > Por ejemplo, en un entorno híbrido, es posible que tenga cuentas de usuario sincronizadas sin licencia sin un buzón de Exchange en el entorno local o en Exchange Online. Puede identificar a estos usuarios mediante la ejecución del siguiente comando: `Get-User -RecipientTypeDetails User`
+    > For example, in a hybrid environment, you might have unlicensed synchronized user accounts without an Exchange mailbox on-premises or in Exchange Online. You can identify these users by running the following command: `Get-User -RecipientTypeDetails User`
 
 3. Compruebe que el resultado coincide con los usuarios o grupos previstos en el ámbito adaptable. Si no es así, compruebe la consulta y los valores con el administrador correspondiente para Azure AD o Exchange.
  
@@ -222,20 +225,20 @@ Si elige usar ámbitos estáticos, debe decidir si la directiva ha de aplicarse 
 
 A excepción de Skype Empresarial, el valor predeterminado indica que todas las instancias de las ubicaciones seleccionadas se incluyen automáticamente en la directiva sin que tenga que especificarlas como incluidas.
 
-Por ejemplo, **Todos los destinatarios** para la ubicación de **correo electrónico de Exchange**. Con esta configuración predeterminada, todos los buzones de usuario existentes se incluirán en la directiva y los nuevos buzones creados después de aplicar la directiva heredarán automáticamente la directiva.
+For example, **All recipients** for the **Exchange email** location. With this default setting, all existing user mailboxes will be included in the policy, and any new mailboxes created after the policy is applied will automatically inherit the policy.
 
 #### <a name="a-policy-with-specific-inclusions-or-exclusions"></a>Una directiva con inclusiones o exclusiones específicas
 
-Deben tenerse en cuenta ciertos límites de la directiva si usa la configuración opcional para definir el ámbito de la configuración de retención para usuarios específicos, grupos específicos de Microsoft 365 o determinados sitios. Para más información, consulte [Límites de directivas de retención y directivas de etiquetas de retención.](retention-limits.md). 
+Be aware that if you use the optional configuration to scope your retention settings to specific users, specific Microsoft 365 groups, or specific sites, there are some limits per policy to be aware of. For more information, see [Limits for retention policies and retention label policies](retention-limits.md). 
 
 Para usar la configuración opcional para definir el ámbito de la configuración de retención, asegúrese de que el **Estado** de esa ubicación esté **Activado** y, a continuación, use los vínculos para incluir o excluir determinados usuarios, grupos de Microsoft 365 o sitios.
 
 > [!WARNING]
 > Si configura instancias para incluir y luego quita la última, la configuración se revierte a **Todos** para la ubicación.  Asegúrese de que esta es la configuración que desea antes de guardar la directiva.
 >
-> Por ejemplo, si especifica un sitio de SharePoint para incluirlo en su directiva de retención que está configurada para eliminar datos y luego quita el sitio único, todos los sitios de SharePoint quedarán sujetos de forma predeterminada a la directiva de retención que elimina de forma permanente los datos. Lo mismo se aplica al incluir destinatarios de Exchange, cuentas de OneDrive, usuarios de chat de Teams, etc.
+> For example, if you specify one SharePoint site to include in your retention policy that's configured to delete data, and then remove the single site, by default all SharePoint sites will then be subject to the retention policy that permanently deletes data. The same applies to includes for Exchange recipients, OneDrive accounts, Teams chat users, and so on.
 >
-> En este escenario, desactive la ubicación si no desea que la configuración de la ubicación **Todos** esté sujeta a la directiva de retención. Como alternativa, especifique instancias de exclusión para la directiva.
+> In this scenario, toggle the location off if you don't want the **All** setting for the location to be subject to the retention policy. Alternatively, specify exclude instances to be exempt from the policy.
 
 ## <a name="locations"></a>Ubicaciones
 
@@ -245,7 +248,7 @@ Las ubicaciones en las directivas de retención identifican servicios Microsoft�
 
 Tanto la ubicación del **correo electrónico de Exchange** como la ubicación de las **carpetas públicas de Exchange** requieren que los buzones tengan al menos 10 MB de datos antes de que se les aplique la configuración de retención.
 
-La ubicación del **correo electrónico de Exchange** admite la retención para el correo electrónico, el calendario y otros elementos del buzón de correo del usuario al aplicar la configuración de retención en el nivel de buzón. También son compatibles los buzones compartidos y los buzones de recursos para equipos y salas.
+The **Exchange email** location supports retention for users' email, calendar, and other mailbox items, by applying retention settings at the level of a mailbox. Shared mailboxes and resource mailboxes for equipment and rooms are also supported.
 
 Los contactos de correo electrónico y los grupos de Microsoft 365 no son compatibles con el correo electrónico de Exchange. Para los buzones de grupo de Microsoft 365, seleccione en su lugar la ubicación de **Microsoft 365 Groups**. Aunque la ubicación de Exchange inicialmente permite seleccionar un buzón de correo de grupo para un ámbito estático, cuando intenta guardar la directiva de retención, recibe un error que indica que "RemoteGroupMailbox" no es una selección válida para esta ubicación.
 
@@ -269,9 +272,7 @@ La ubicación de las **carpetas públicas de Exchange** aplica la configuración
 
 Al configurar una directiva de aplicación automática que usa tipos de información confidencial y seleccionar la ubicación de **correo electrónico de Exchange**:
 
-- Se incluyen los buzones de grupo de Microsoft 365.
-
-- Se incluyen todos los buzones automáticamente, incluso si configura un ámbito adaptable para identificar buzones específicos. Si ha elegido un ámbito de directiva estático, no podrá especificar los destinatarios que se incluirán o excluirán.
+- Consulte la llamada importante para [aplicar automáticamente etiquetas al contenido con tipos específicos de información confidencial](apply-retention-labels-automatically.md#auto-apply-labels-to-content-with-specific-types-of-sensitive-information).
 
 ### <a name="configuration-information-for-sharepoint-sites-and-onedrive-accounts"></a>Información de configuración para los sitios de SharePoint y las cuentas de OneDrive
 
@@ -327,7 +328,7 @@ Para volver al valor predeterminado del buzón y del sitio de SharePoint para lo
 
 Al configurar una directiva de aplicación automática que usa tipos de información confidencial y seleccionar la ubicación **Grupos de Microsoft 365**:
 
-- No se incluyen los buzones de grupo de Microsoft 365. Para incluir estos buzones en la directiva, seleccione la ubicación **correo electrónico de Exchange** en su lugar.
+- Microsoft 365 group mailboxes aren't included. To include these mailboxes in your policy, select the **Exchange email** location instead.
 
 #### <a name="what-happens-if-a-microsoft-365-group-is-deleted-after-a-policy-is-applied"></a>Qué sucede si un grupo de Microsoft 365 se elimina después de aplicar una directiva
 
@@ -350,7 +351,7 @@ A diferencia del correo electrónico de Exchange, no puede activar el estado de 
 
 Después de seleccionar la opción **Editar**, en el panel **Skype Empresarial**, puede seleccionar el cuadro oculto antes de la columna **Nombre** para incluir rápidamente a todos los usuarios. Sin embargo, es importante entender que cada usuario tiene que contar con una inclusión específica en la directiva. Por lo tanto, si selecciona esta casilla para incluir 1 000, será lo mismo que si selecciona manualmente 1 000 usuarios, que es el máximo admitido en Skype Empresarial.
 
-Tenga en cuenta que **Historial de conversaciones**, una carpeta de Outlook, es una característica que no tiene nada que ver con el archivado de Skype. El usuario final puede desactivar **Historial de conversaciones**, pero el archivado para Skype se realiza almacenando una copia de las conversaciones de Skype en una carpeta oculta que está disponible para eDiscovery, pero inaccesible para el usuario.
+Be aware that **Conversation History**, a folder in Outlook, is a feature that has nothing to do with Skype archiving. **Conversation History** can be turned off by the end user, but archiving for Skype is done by storing a copy of Skype conversations in a hidden folder that is inaccessible to the user but available to eDiscovery.
 
 ## <a name="settings-for-retaining-and-deleting-content"></a>Configuración para conservar y eliminar el contenido
 
@@ -360,7 +361,7 @@ Al elegir las configuraciones para conservar y eliminar contenido, la directiva 
     
     Para esta configuración, elija las siguientes opciones:
     
-    - Para las políticas de retención: en la página **Decidir si quiere retener el contenido, eliminarlo o ambas cosas**, seleccione **Retener elementos durante un período específico**, especifique el período de retención y, a continuación, para **Al finalizar el período de retención**, seleccione **No hacer nada** para que se elimine la configuración de retención o para conservarla sin fecha de finalización, seleccione **Guardar elementos para siempre** en esta página.
+    - For retention policies: On the **Decide if you want to retain content, delete it, or both** page, select **Retain items for a specific period**, specify the retention period and then for **At end of the retention period** select **Do nothing** for the retention settings to be removed.  Or to retain without an end date, select **Retain items forever** on this page.
     
     - Para las etiquetas de retención: en la página **Definir configuración de etiquetas**, seleccione **Conservar elementos indefinidamente o durante un período específico** y, a continuación:
         - Para que la configuración de retención deje de estar en vigor en el contenido etiquetado después de un tiempo específico: en la página **Definir el período de retención**, para **Conservar elementos para**, especifique el período de tiempo. A continuación, en la página **Elegir lo que sucede después del período de retención**, seleccione **Desactivar configuración de retención**. La etiqueta permanece en el contenido, pero sin restricciones, como si fuera una [etiqueta que solo clasifica](retention.md#classifying-content-without-applying-any-actions).
@@ -372,7 +373,7 @@ Al elegir las configuraciones para conservar y eliminar contenido, la directiva 
     
     - Para las políticas de retención: en la página **Decidir si quiere retener el contenido, eliminarlo o ambas cosas**, seleccione **Retener elementos durante un período específico**, especifique el período de retención y, a continuación, para **Al finalizar el período de retención**, seleccione **Eliminar elementos automáticamente**.
     
-    - Para las etiquetas de retención: en la página **Definir configuración de etiquetas**, seleccione **Conservar elementos indefinidamente o durante un período específico**, especifique el período de retención y, a continuación, para **Elegir lo que sucede después del período de retención**, seleccione **Eliminar elementos automáticamente** o **Iniciar una revisión para eliminación**. Para obtener información sobre las revisiones para eliminación, consulte [Revisión para eliminación](disposition.md#disposition-reviews).
+    - For retention labels: On the **Define label settings** page, select **Retain items indefinitely or for a specific period**, specify the retention period and then for **Choose what happens after the retention period**, select either **Delete items automatically** or **Start a disposition review**. For information about disposition reviews, see [Disposition review](disposition.md#disposition-reviews).
 
 - Solo eliminar
 
@@ -390,15 +391,15 @@ Para iniciar el período de retención, puede elegir cuándo se creó el conteni
 
 Ejemplos:
 
-- SharePoint: si desea retener los elementos de la colección de un sitio durante siete años a partir de la última modificación del contenido, y un documento de ese sitio no se ha modificado en seis años, el documento se retendrá solo durante un año más, a no ser que se modifique. Si el documento se edita de nuevo, la antigüedad de dicho documento se calculará a partir de la fecha de la última modificación y se retendrá durante otros siete años.
+- SharePoint: If you want to retain items in a site collection for seven years after this content is last modified, and a document in that site collection hasn't been modified in six years, the document will be retained for only another year if it's not modified. If the document is edited again, the age of the document is calculated from the new last modified date, and it will be retained for another seven years.
 
-- Exchange: si desea retener los elementos de un buzón durante siete años y hay un mensaje que se envió hace seis, este se retendrá solo durante un año. Para elementos de Exchange, la antigüedad se basa en la fecha de recepción (en el caso de correos electrónicos recibidos) o de envío (para correos electrónicos enviados). Conservar el contenido en función de cuándo se modificó por última vez solo se aplica a contenido de sitio de OneDrive y SharePoint.
+- Exchange: If you want to retain items in a mailbox for seven years, and a message was sent six years ago, the message will be retained for only one year. For Exchange items, the age is based on the date received for incoming email, or the date sent for outgoing email. Retaining items based on when it was last modified applies only to site content in OneDrive and SharePoint.
 
-Al final del período de retención, usted elige si desea que el contenido se elimine de forma permanente. Por ejemplo, para las directivas de retención:
+At the end of the retention period, you choose whether you want the content to be permanently deleted. For example, for retention policies:
 
 ![Página de configuración de retenciones.](../media/b05f84e5-fc71-4717-8f7b-d06a29dc4f29.png)
 
-Como se explica en la sección siguiente, las etiquetas de retención tienen otra opción; aplicar otra etiqueta de retención con su propio período de retención.
+Las etiquetas de retención tienen dos opciones más. Como se describe en la sección siguiente, pueden aplicar otra etiqueta de retención con su propio período de retención. O bien, pueden [desencadenar un flujo de Power Automate](retention-label-flow.md) para acciones personalizadas.
 
 Antes de configurar la retención, familiarícese primero con los límites de capacidad y almacenamiento de las cargas de trabajo correspondientes:
 
@@ -406,12 +407,9 @@ Antes de configurar la retención, familiarícese primero con los límites de ca
 
 - Para Exchange, Teams y Yammer, donde los mensajes retenidos se almacenan en buzones, consulte [límites de Exchange Online](/office365/servicedescriptions/exchange-online-service-description/exchange-online-limits) y habilite [archivo de expansión automática](autoexpanding-archiving.md).
     
-    En casos extremos en los que un gran volumen de correo electrónico se elimina en un breve período de tiempo, ya sea por parte de los usuarios o desde la configuración de directiva de manera automática, es posible que también necesite configurar Exchange para mover con más frecuencia elementos de la carpeta Elementos recuperables del buzón principal del usuario a la carpeta Elementos recuperables en el buzón de archivo. Para obtener instrucciones paso a paso, vea [Aumentar la cuota de elementos recuperables para buzones de correo en suspensión](increase-the-recoverable-quota-for-mailboxes-on-hold.md).
+    In extreme cases where a high volume of email is deleted in a short time period, either by users or automatically from policy settings, you might also need to configure Exchange to more frequently move items from the Recoverable Items folder in the user's primary mailbox to the Recoverable Items folder in their archive mailbox. For step-by-step instructions, see [Increase the Recoverable Items quota for mailboxes on hold](increase-the-recoverable-quota-for-mailboxes-on-hold.md).
 
 #### <a name="relabeling-at-the-end-of-the-retention-period"></a>Volver a etiquetar al final del período de retención
-
-> [!NOTE]
-> Esta opción está en versión preliminar y está sujeta a cambios.
 
 Al configurar una etiqueta de retención para aplicar automáticamente otra etiqueta de retención al final del período de retención, el elemento está sujeto a la configuración de retención de la etiqueta de retención recién seleccionada. Esta opción le permite cambiar automáticamente la configuración de retención del elemento.
 
@@ -461,7 +459,7 @@ Otra opción es que los revisores de eliminación seleccionen manualmente una et
 
 La configuración de retención puede conservar y luego eliminar elementos o eliminar elementos antiguos sin conservarlos.
 
-En ambos casos, si la configuración de retención elimina elementos, es importante saber que el período de tiempo que especifique no se calcula a partir del momento en que se asignó la directiva, sino según el inicio del período de retención especificado. Por ejemplo, desde el momento en que el elemento se creó o modificó, o se etiquetó.
+In both cases, if your retention settings delete items, it's important to understand that the time period you specify isn't calculated from the time the policy was assigned, but according to the start of the retention period specified. For example, from the time when the item was created or modified, or labeled.
 
 Por este motivo, considere primero la antigüedad del contenido existente y cómo la configuración podría afectar a ese contenido. Considere la posibilidad de comunicar los ajustes elegidos a sus usuarios y al servicio de asistencia antes de que se aplique la configuración al contenido, lo que les da tiempo para evaluar el posible impacto.
 
@@ -471,20 +469,20 @@ Al elegir ubicaciones, excepto Skype Empresarial, la configuración predetermina
 
 Cuando una directiva de retención se aplica a cualquier combinación de todas las ubicaciones, no hay ningún límite en el número de destinatarios, sitios, cuentas, grupos, etc. que la directiva pueda incluir.
 
-Por ejemplo, si una directiva incluye todo el correo electrónico de Exchange y todos los sitios de SharePoint, se incluirán todos los sitios y destinatarios, independientemente de cuántos sean. En el caso de Exchange, todos los buzones que se creen después de aplicar la directiva heredarán automáticamente la directiva.
+For example, if a policy includes all Exchange email and all SharePoint sites, all sites and recipients will be included, no matter how many. And for Exchange, any new mailbox created after the policy is applied will automatically inherit the policy.
 
 ### <a name="a-policy-with-specific-inclusions-or-exclusions"></a>Una directiva con inclusiones o exclusiones específicas
 
-Deben tenerse en cuenta ciertos límites de la directiva si usa la configuración opcional para definir el ámbito de la configuración de retención para usuarios específicos, grupos específicos de Microsoft 365 o determinados sitios. Para más información, consulte [Límites de directivas de retención y directivas de etiquetas de retención.](retention-limits.md). 
+Be aware that if you use the optional configuration to scope your retention settings to specific users, specific Microsoft 365 groups, or specific sites, there are some limits per policy to be aware of. For more information, see [Limits for retention policies and retention label policies](retention-limits.md). 
 
 Para usar la configuración opcional para definir el ámbito de la configuración de retención, asegúrese de que el **Estado** de esa ubicación esté **Activado** y, a continuación, use los vínculos para incluir o excluir determinados usuarios, grupos de Microsoft 365 o sitios.
 
 > [!WARNING]
 > Si configura inclusiones y, a continuación, quita la última, la configuración de su ubicación se revertirá a **Todos**.  Asegúrese de que esta es la configuración que desea antes de guardar la directiva.
 >
-> Por ejemplo, si especifica un sitio de SharePoint para incluirlo en su directiva de retención que está configurada para eliminar datos y, a continuación, quita el único sitio, todos los sitios de SharePoint quedarán sujetos de forma predeterminada a la directiva de retención que elimina de forma permanente los datos. Lo mismo se aplica a destinatarios de Exchange, cuentas de OneDrive, usuarios de chat de Teams, etc.
+> For example, if you specify one SharePoint site to include in your retention policy that's configured to delete data, and then remove the single site, by default all SharePoint sites will then be subject to the retention policy that permanently deletes data. The same applies to includes for Exchange recipients, OneDrive accounts, Teams chat users etc.
 >
-> En este escenario, deshabilite la ubicación si no quiere que la opción **Todos** de la ubicación esté sujeta a la directiva de retención. Como alternativa, especifique lo que se debe excluir de la aplicación de la directiva.
+> In this scenario, toggle the location off if you don't want the **All** setting for the location to be subject to the retention policy. Alternatively, specify excludes to be exempt from the policy.
 
 ## <a name="updating-policies-for-retention"></a>Actualización de directivas de retención
 
@@ -493,7 +491,7 @@ Algunas opciones de configuración no se pueden cambiar después de haber creado
 
 Si edita una directiva de retención y el contenido ya está sujeto a la configuración original de su directiva de retención, la configuración actualizada se aplicará automáticamente a estos elementos, además de los elementos identificados recientemente.
 
-Normalmente esta actualización es bastante rápida, pero puede tardar varios días. Cuando la replicación de la directiva en todas las ubicaciones de Microsoft 365 se haya completado, verá que el estado de la directiva de retención en el portal de cumplimiento de Microsoft Purview cambia de **Activado (pendiente)** a **Activado (proceso realizado correctamente)**.
+Usually this update is fairly quick but can take several days. When the policy replication across your Microsoft 365 locations is complete, you'll see the status of the retention policy in the Microsoft Purview compliance portal change from **On (Pending)** to **On (Success)**.
 
 ## <a name="locking-the-policy-to-prevent-changes"></a>Bloquear la directiva para impedir que se realicen cambios
 

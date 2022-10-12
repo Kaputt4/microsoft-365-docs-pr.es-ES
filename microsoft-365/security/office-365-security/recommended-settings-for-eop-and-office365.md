@@ -19,12 +19,12 @@ ms.collection:
 description: ¿Cuáles son los procedimientos recomendados para Exchange Online Protection (EOP) y Defender para Office 365 configuración de seguridad? ¿Cuáles son las recomendaciones actuales para la protección estándar? ¿Qué se debe usar si desea ser más estricto? ¿Y qué extras obtienes si también usas Defender para Office 365?
 ms.subservice: mdo
 ms.service: microsoft-365-security
-ms.openlocfilehash: d237e48990a5b05811baf0df5406718242904200
-ms.sourcegitcommit: 12af9e8e3a6eaa090fda9e98ccb831dff65863a4
+ms.openlocfilehash: 37e2b1ba06070fd0b302e62cf7f549f7136f61ca
+ms.sourcegitcommit: 4f8200453d347de677461f27eb5a3802ce5cc888
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/27/2022
-ms.locfileid: "68063846"
+ms.lasthandoff: 10/12/2022
+ms.locfileid: "68542615"
 ---
 # <a name="recommended-settings-for-eop-and-microsoft-defender-for-office-365-security"></a>Configuración recomendada de seguridad para EOP y Microsoft Defender para Office 365
 
@@ -195,7 +195,7 @@ Para obtener más información sobre esta configuración, consulte [Umbrales ava
 
 |Nombre de la característica de seguridad|Predeterminado|Estándar|Estricto|Comentario|
 |---|:---:|:---:|:---:|---|
-|**Umbral de correo electrónico de suplantación de identidad** <br><br> _PhishThresholdLevel_|**1- Estándar** <br><br> `1`|**2 - Agresivo** <br><br> `2`|**3 - Más agresivo** <br><br> `3`||
+|**Umbral de correo electrónico de suplantación de identidad** <br><br> _PhishThresholdLevel_|**1- Estándar** <br><br> `1`|**3 - Más agresivo** <br><br> `2`|**4 - Más agresivo** <br><br> `3`||
 
 #### <a name="impersonation-settings-in-anti-phishing-policies-in-microsoft-defender-for-office-365"></a>Configuración de suplantación en directivas contra suplantación de identidad en Microsoft Defender para Office 365
 

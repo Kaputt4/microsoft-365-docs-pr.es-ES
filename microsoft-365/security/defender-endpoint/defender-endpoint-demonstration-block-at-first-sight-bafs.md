@@ -8,21 +8,25 @@ ms.service: microsoft-365-security
 ms.mktglfcycl: evaluation
 ms.sitesec: library
 ms.pagetype: security
-ms.author: v-jweston
-author: jweston-1
+ms.author: dansimp
+author: dansimp
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
-ms.collection: M365-security-compliance
+ms.collection:
+- m365-security
+- tier2
 ms.topic: article
 ms.subservice: mde
-ms.openlocfilehash: 2b6b45ed57d0b7c76263021ae57b706bb476ce18
-ms.sourcegitcommit: 55672e44de74209f2e23b4bd9ca74a2ee7e88cd9
+ms.openlocfilehash: a8fa480d4408a77630ba1dd2834a990869ebbb14
+ms.sourcegitcommit: 4f8200453d347de677461f27eb5a3802ce5cc888
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/01/2022
-ms.locfileid: "68319563"
+ms.lasthandoff: 10/12/2022
+ms.locfileid: "68543209"
 ---
+<!--- v-jweston resumes authorship and ms.authorship appx April-May 2023 ---> 
+
 # <a name="block-at-first-sight-bafs-demonstration"></a>Demostración de bloquear a primera vista (BAFS)
 
 Bloquear a primera vista es una característica de Microsoft Defender protección proporcionada por la nube antivirus que proporciona una manera de detectar y bloquear nuevo malware en cuestión de segundos. Puede probar que funciona según lo esperado descargando un archivo de malware falso.

@@ -8,21 +8,25 @@ ms.service: microsoft-365-security
 ms.mktglfcycl: evaluation
 ms.sitesec: library
 ms.pagetype: security
-ms.author: v-jweston
-author: jweston-1
+ms.author: dansimp
+author: dansimp
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
-ms.collection: M365-security-compliance
+ms.collection:
+- m365-security
+- tier2
 ms.topic: article
 ms.subservice: mde
-ms.openlocfilehash: 01acb6b31a6d67ca826c3a47a10b40ccb82e8092
-ms.sourcegitcommit: 55672e44de74209f2e23b4bd9ca74a2ee7e88cd9
+ms.openlocfilehash: 772600ddb31b5819718a23e340b832dde18ced6e
+ms.sourcegitcommit: 4f8200453d347de677461f27eb5a3802ce5cc888
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/01/2022
-ms.locfileid: "68319570"
+ms.lasthandoff: 10/12/2022
+ms.locfileid: "68543231"
 ---
+<!--- v-jweston resumes authorship and ms.authorship appx April-May 2023 ---> 
+
 # <a name="attack-surface-reduction-rules-demonstrations"></a>Demostraciones de reglas de reducción de superficie expuesta a ataques
 
 Las reglas de reducción de superficie expuesta a ataques (ASR) tienen como destino comportamientos específicos que suelen usar el malware y las aplicaciones malintencionadas para infectar máquinas, como:

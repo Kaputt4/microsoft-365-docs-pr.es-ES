@@ -18,12 +18,12 @@ search.appverid:
 - MET150
 description: Información para que los administradores de TI administren las etiquetas de confidencialidad en las aplicaciones de Office para escritorio, móvil y web.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 06c3ba12cbea34b4b81acf84b579c56cfc50cd22
-ms.sourcegitcommit: 2ff545246fec060ea7829da5afbc1cdc698d51ab
+ms.openlocfilehash: 46008cae997bd71a9c5d165226a728a011d7f058
+ms.sourcegitcommit: 4f8200453d347de677461f27eb5a3802ce5cc888
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/04/2022
-ms.locfileid: "68362868"
+ms.lasthandoff: 10/12/2022
+ms.locfileid: "68542549"
 ---
 # <a name="manage-sensitivity-labels-in-office-apps"></a>Administrar etiquetas de confidencialidad en las aplicaciones de Office
 
@@ -145,7 +145,9 @@ Dado que esta configuración es específica de las aplicaciones de Windows Offi
 
 ## <a name="office-file-types-supported"></a>Tipos de archivos compatibles con Office
 
-Office apps that have built-in labeling for Word, Excel, and PowerPoint files support the Open XML format (such as .docx and .xlsx) but not the Microsoft Office 97-2003 format (such as .doc and .xls), Open Document Format (such as .odt and .ods), or other formats. When a file type is not supported for built-in labeling, the **Sensitivity** button is not available in the Office app.
+Por lo general, las aplicaciones de Office que tienen etiquetado integrado para archivos de Word, Excel y PowerPoint admiten el formato Open XML (como .docx y .xlsx), pero no el formato de Microsoft Office 97-2003 (como .doc y .xls), formato de documento abierto (como .odt y .ods) u otros formatos. Cuando un tipo de archivo no es compatible con el etiquetado integrado, el botón de **confidencialidad** no está disponible en la aplicación de Office.
+
+Para ver tipos de archivo específicos admitidos para SharePoint y OneDrive cuando estos servicios están habilitados para etiquetas de confidencialidad, vea [Habilitar etiquetas de confidencialidad para archivos de Office en SharePoint y OneDrive](sensitivity-labels-sharepoint-onedrive-files.md#supported-file-types).
 
 El cliente de etiquetado unificado de Azure Information Protection es compatible tanto con el formato Open XML como con el formato de Microsoft Office 97-2003. Para obtener más información, consulte [Tipos de archivos compatibles con el cliente de etiquetado unificado de Azure Information Protection ](/azure/information-protection/rms-client/clientv2-admin-guide-file-types)en la guía de administración de dicho cliente.
 
@@ -474,19 +476,17 @@ Como parte de esta alta visibilidad, estas etiquetas también admiten colores. P
 
 Las etiquetas recién creadas no tienen un color de forma predeterminada. Si las etiquetas se [migraron desde Azure Information Protection](/azure/information-protection/configure-policy-migrate-labels) o configuró los colores de etiqueta para azure Information Protection cliente de etiquetado unificado, estos colores de etiqueta ahora se muestran en las aplicaciones que las admiten.
 
-Use el portal de cumplimiento Microsoft Purview para seleccionar uno de los 10 colores estándar para las etiquetas de confidencialidad. Esta configuración se encuentra en la primera página de la configuración de la etiqueta después del nombre y la descripción de la etiqueta.
+Use el portal de cumplimiento Microsoft Purview para seleccionar uno de los 10 colores estándar para las etiquetas de confidencialidad. La configuración de **color de** etiqueta se encuentra en la primera página de la configuración de la etiqueta después del nombre y la descripción de la etiqueta.
 
 No puede seleccionar los colores de las subetiquetas porque heredan automáticamente el color de la etiqueta de su etiqueta primaria.
 
-Si la etiqueta está configurada para un color diferente de uno de los 10 colores, verá una opción **Color personalizado** seleccionada y las opciones de color estándar no están disponibles:
+Si una etiqueta está configurada para un color diferente de uno de los 10 colores predeterminados, verá una casilla **Usar color de cliente asignado anteriormente** seleccionada y las opciones de color estándar no están disponibles. Puede cambiar el color personalizado a uno de los colores estándar desactivando primero la casilla y, a continuación, puede seleccionar uno de los colores estándar. 
 
-![Configuración de color de etiqueta de confidencialidad cuando la etiqueta tiene un color personalizado.](../media/label-custom-color-configuration.png)
-
-Puede cambiar el color personalizado a uno de los colores estándar quitando primero la selección de color personalizada y, a continuación, seleccionando uno de los colores estándar. Pero no puede usar el portal de cumplimiento para configurar un color personalizado diferente. En su lugar, use PowerShell, como se describe en la sección siguiente.
+No puede usar el portal de cumplimiento para configurar un color personalizado diferente. En su lugar, use PowerShell, como se describe en la sección siguiente.
 
 #### <a name="configuring-custom-colors-by-using-powershell"></a>Configuración de colores personalizados mediante PowerShell 
 
-Puede usar el **color** de configuración avanzada [de PowerShell del Centro](/powershell/exchange/scc-powershell) de cumplimiento de Seguridad & para establecer un color para una etiqueta de confidencialidad. Esta configuración admite colores que no se pueden configurar en el portal de cumplimiento Microsoft Purview.
+Puede usar el **color** de configuración avanzada [de PowerShell de cumplimiento de seguridad &](/powershell/exchange/scc-powershell) para establecer un color para una etiqueta de confidencialidad. Esta configuración admite colores que no se pueden configurar en el portal de cumplimiento Microsoft Purview.
 
 Para especificar la elección de color, use un código hexadecimal de triplete para los componentes rojo, verde y azul (RGB) del color. Por ejemplo, #40e0d0 es el valor hexadecimal RGB para el turquesa.
 

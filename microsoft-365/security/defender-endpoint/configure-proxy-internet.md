@@ -18,12 +18,12 @@ ms.collection:
 - tier1
 ms.topic: conceptual
 ms.subservice: mde
-ms.openlocfilehash: 7d76deeb278e460a2518cb922b0a087273e16d6b
-ms.sourcegitcommit: 0b7070ec119e00e0dafe030bbfbef0ae5c9afa19
+ms.openlocfilehash: 51f50014c5a937223ca2ada3f8bf0dac851f5e9a
+ms.sourcegitcommit: 4f8200453d347de677461f27eb5a3802ce5cc888
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/29/2022
-ms.locfileid: "68186599"
+ms.lasthandoff: 10/12/2022
+ms.locfileid: "68543187"
 ---
 # <a name="configure-device-proxy-and-internet-connectivity-settings"></a>Configurar las opciones de proxy de dispositivo y de conectividad a Internet
 
@@ -35,7 +35,7 @@ ms.locfileid: "68186599"
 
 > ¿Quiere experimentar Defender para punto de conexión? [Regístrese para obtener una prueba gratuita.](https://www.microsoft.com/WindowsForBusiness/windows-atp?ocid=docs-wdatp-configureendpointsscript-abovefoldlink)
 
-El sensor de Defender para punto de conexión requiere HTTP de Microsoft Windows (WinHTTP) para informar de los datos del sensor y comunicarse con el servicio Defender para punto de conexión. El sensor incrustado de Defender para punto de conexión se ejecuta en el contexto del sistema mediante la cuenta LocalSystem. El sensor usa servicios HTTP de Microsoft Windows (WinHTTP) para habilitar la comunicación con el servicio en la nube de Defender para punto de conexión.
+El sensor de Defender para punto de conexión requiere HTTP de Microsoft Windows (WinHTTP) para informar de los datos del sensor y comunicarse con el servicio Defender para punto de conexión. El sensor incrustado de Defender para punto de conexión se ejecuta en el contexto del sistema mediante la cuenta LocalSystem.
 
 > [!TIP]
 > En el caso de las organizaciones que usan servidores proxy de reenvío como puerta de enlace a Internet, puede usar la protección de red para [investigar los eventos de conexión que se producen detrás de servidores proxy directos](investigate-behind-proxy.md).

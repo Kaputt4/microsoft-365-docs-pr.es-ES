@@ -8,21 +8,25 @@ ms.service: microsoft-365-security
 ms.mktglfcycl: evaluation
 ms.sitesec: library
 ms.pagetype: security
-ms.author: v-jweston
-author: jweston-1
+ms.author: dansimp
+author: dansimp
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
-ms.collection: M365-security-compliance
+ms.collection:
+- m365-security
+- tier2
 ms.topic: article
 ms.subservice: mde
-ms.openlocfilehash: 05cabdc2089105f3595af0654603787661b67bf4
-ms.sourcegitcommit: 55672e44de74209f2e23b4bd9ca74a2ee7e88cd9
+ms.openlocfilehash: 7303d0eb27a13d296a353d10b16b5fa32bcc0267
+ms.sourcegitcommit: 4f8200453d347de677461f27eb5a3802ce5cc888
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/01/2022
-ms.locfileid: "68319611"
+ms.lasthandoff: 10/12/2022
+ms.locfileid: "68542593"
 ---
+<!--- v-jweston resumes authorship and ms.authorship appx April-May 2023 ---> 
+
 # <a name="url-reputation-demonstrations"></a>Demostraciones de reputación de direcciones URL
 
 Pruebe cómo Microsoft Defender SmartScreen le ayuda a identificar sitios web de phishing y malware en función de la reputación de las direcciones URL.

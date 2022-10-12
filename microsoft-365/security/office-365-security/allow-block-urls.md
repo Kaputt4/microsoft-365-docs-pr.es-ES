@@ -16,12 +16,12 @@ ms.collection:
 description: Los administradores pueden aprender a permitir o bloquear direcciones URL en la lista de inquilinos permitidos o bloqueados en el portal de seguridad.
 ms.subservice: mdo
 ms.service: microsoft-365-security
-ms.openlocfilehash: 399bf9b5747a62759959b42dc986b1ab525d2c15
-ms.sourcegitcommit: 12af9e8e3a6eaa090fda9e98ccb831dff65863a4
+ms.openlocfilehash: a30ccde16fb52f672ecc0643b2c8c24d682b3bd9
+ms.sourcegitcommit: 4f8200453d347de677461f27eb5a3802ce5cc888
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/27/2022
-ms.locfileid: "68060590"
+ms.lasthandoff: 10/12/2022
+ms.locfileid: "68542791"
 ---
 # <a name="allow-or-block-urls-using-the-tenant-allowblock-list"></a>Permitir o bloquear direcciones URL mediante la lista de bloqueados y permitidos del espacio empresarial
 
@@ -34,7 +34,7 @@ ms.locfileid: "68060590"
 
 En este artículo se describe cómo crear y administrar direcciones URL para permitir y bloquear entradas que están disponibles en la lista de permitidos o bloqueados de inquilinos. Para obtener más información sobre la lista de permitidos o bloqueados de inquilinos, vea [Administrar los bloques y permitidos en la lista de permitidos o bloques de inquilinos](manage-tenant-allow-block-list.md).
 
-Puede administrar las entradas de permitir y bloquear para las direcciones URL en Microsoft 365 Defender Portal o en Exchange Online PowerShell.
+Puede administrar las entradas de permitir y bloquear para las direcciones URL en Microsoft 365 Defender Portal o en Exchange Online PowerShell. Los mensajes que contienen las direcciones URL bloqueadas se ponen en cuarentena.
 
 ## <a name="what-do-you-need-to-know-before-you-begin"></a>¿Qué necesita saber antes de comenzar?
 
