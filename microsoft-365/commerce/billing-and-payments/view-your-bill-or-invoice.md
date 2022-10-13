@@ -28,12 +28,12 @@ ms.custom:
 - adminvideo
 description: Busque la factura o el extracto en el Centro de administración de Microsoft 365. También puede guardar e imprimir una copia de la factura.
 ms.date: 01/25/2022
-ms.openlocfilehash: e04cf46ceba2886fc0e939ead05a49147e4aa759
-ms.sourcegitcommit: 0b7070ec119e00e0dafe030bbfbef0ae5c9afa19
+ms.openlocfilehash: 06c509641bc4eea370680fd65171e1d38bc579f5
+ms.sourcegitcommit: 04e517c7e00323b5c33d8ea937115725cf2cfd4d
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/29/2022
-ms.locfileid: "68165721"
+ms.lasthandoff: 10/13/2022
+ms.locfileid: "68565408"
 ---
 # <a name="view-your-microsoft-365-for-business-subscription-bill-or-invoice"></a>Ver la factura o la suscripción a Microsoft 365 para empresas
 
@@ -73,8 +73,8 @@ Consulte este vídeo y otros en nuestro [canal de YouTube](https://go.microsoft.
 
 ::: moniker-end
 
-2. En la pestaña **Facturas**, seleccione un intervalo de fechas de la lista desplegable y, a continuación, elija el orden que desee ver.
-3. En la página de resumen, puede ver los artículos, la cantidad, el precio, el descuento y el total de todos los artículos de la factura.
+2. En la pestaña **Facturas** , elija la factura que desea ver. Si no ve una factura, use el filtro de fecha y seleccione **Últimos 3 meses**, **Últimos 6 meses** o **Especificar intervalo de fechas**.
+3. En la página **Resumen de factura** , verá los detalles de la factura, incluida la lista de artículos, el precio de cada artículo y el costo total de todos los artículos de la factura.
 4. Para imprimir o guardar una copia en PDF de la factura, seleccione **Descargar PDF**.
 
 Si desea recibir una copia del extracto de facturación por correo electrónico, consulte [Administrar las notificaciones de facturación y los datos adjuntos de las facturas](manage-billing-notifications.md).

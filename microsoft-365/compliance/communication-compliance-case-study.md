@@ -18,20 +18,22 @@ f1_keywords:
 ms.service: O365-seccomp
 ms.localizationpriority: medium
 ms.collection:
-- Strat_O365_IP
-- M365-security-compliance
-- remotework
+- tier1
+- purview-compliance
 search.appverid:
 - MET150
 - MOE150
-ms.openlocfilehash: 17b80d00cfb8c5855dda7d21371097dd413fb707
-ms.sourcegitcommit: 1734c95ce72d9c8af695cb4b49b1e40d921a1fee
+ms.openlocfilehash: e221275185476eda23cd96926c203403630dd9e3
+ms.sourcegitcommit: 04e517c7e00323b5c33d8ea937115725cf2cfd4d
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/07/2022
-ms.locfileid: "66685665"
+ms.lasthandoff: 10/13/2022
+ms.locfileid: "68565452"
 ---
 # <a name="case-study---contoso-quickly-configures-an-inappropriate-text-policy-for-microsoft-teams-exchange-and-yammer-communications"></a>Caso práctico: Contoso configura rápidamente una directiva de texto inapropiada para las comunicaciones de Microsoft Teams, Exchange y Yammer
+
+>[!IMPORTANT]
+>Cumplimiento de comunicaciones de Microsoft Purview proporciona las herramientas para ayudar a las organizaciones a detectar infracciones de cumplimiento normativo (por ejemplo, SEC o FINRA), como información confidencial o confidencial, hostigamiento o amenazante del lenguaje y uso compartido de contenido para adultos. Creados con privacidad por diseño, los nombres de usuario se seudonimizan de forma predeterminada, los controles de acceso basados en roles se integran, los investigadores son admitidos por un administrador y los registros de auditoría están en vigor para garantizar la privacidad del nivel de usuario.
 
 [Cumplimiento de comunicaciones de Microsoft Purview](/microsoft-365/compliance/communication-compliance) ayuda a minimizar los riesgos de comunicación, ya que le ayuda a detectar, capturar y actuar en los mensajes con texto inadecuado en su organización. texto inadecuado puede incluir palabras soeces, amenazas, acoso e imágenes inapropiadas. Las [directivas](/microsoft-365/compliance/communication-compliance-policies) predefinidas y personalizadas permiten examinar las comunicaciones internas y externas en busca de coincidencias de directivas para que puedan ser examinadas por revisores designados. Los revisores pueden [investigar alertas](/microsoft-365/compliance/communication-compliance-investigate-remediate#investigate-alerts) de correo electrónico, Microsoft Teams, Yammer o comunicaciones de terceros en su organización y tomar [las medidas de corrección](/microsoft-365/compliance/communication-compliance-investigate-remediate#remediate-alerts) adecuadas para asegurarse de que cumplen los estándares de mensajes de su organización.
 
@@ -43,6 +45,8 @@ En este caso práctico se tratarán los conceptos básicos para configurar rápi
 - [Paso 2: Acceso al cumplimiento de la comunicación](#step-2-accessing-communication-compliance)
 - [Paso 3: Configuración de requisitos previos y creación de una directiva de cumplimiento de comunicaciones](#step-3-configuring-prerequisites-and-creating-a-communication-compliance-policy)
 - [Paso 4: Investigar y corregir alertas](#step-4-investigate-and-remediate-alerts)
+
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
 
 ## <a name="step-1-planning-for-communication-compliance"></a>Paso 1: Planeamiento del cumplimiento de las comunicaciones
 
@@ -79,17 +83,17 @@ Los administradores de TI de Contoso realizan los pasos siguientes para comproba
 
 ### <a name="permissions-for-communication-compliance"></a>Permisos para el cumplimiento de comunicaciones
 
-Hay cinco grupos de roles que se usan para configurar permisos para administrar las características de cumplimiento de comunicaciones. Para que **el cumplimiento de la comunicación** esté disponible como opción de menú en portal de cumplimiento Microsoft Purview y para continuar con estos pasos de configuración, a los administradores de Contoso se les asigna el rol *de Administración cumplimiento de comunicaciones*.
+Hay cinco grupos de roles que se usan para configurar permisos para administrar las características de cumplimiento de comunicaciones. Para que **el cumplimiento de comunicaciones** esté disponible como una opción de menú en portal de cumplimiento Microsoft Purview y para continuar con estos pasos de configuración, a los administradores de Contoso se les asigna el rol *Administradores de cumplimiento de comunicaciones*.
 
 Contoso decide usar el grupo de roles *Cumplimiento de comunicaciones* para asignar al grupo todos los administradores, analistas, investigadores y visores de cumplimiento de comunicaciones. Esta configuración de grupo de roles facilita que Contoso empiece a trabajar rápidamente y se ajuste mejor a sus requisitos de administración de cumplimiento.
 
 |**Rol**|**Permisos de funciones**|
 |:-----|:-----|
 | **Cumplimiento de comunicaciones** | Use este grupo de roles para administrar el cumplimiento de las comunicaciones de su organización en un solo grupo. Al agregar todas las cuentas de usuario para administradores, analistas, investigadores y visores designados, puede configurar los permisos de cumplimiento de comunicaciones en un solo grupo. Este grupo de roles contiene todos los roles de permiso de cumplimiento de comunicaciones. Esta configuración de grupo de roles es la manera más fácil de empezar a trabajar rápidamente con el cumplimiento de la comunicación y es una buena opción para las organizaciones que no necesitan permisos independientes definidos para grupos de usuarios independientes. |
-| **Administrador de cumplimiento de comunicaciones** | Use este grupo de roles para configurar inicialmente el cumplimiento de comunicaciones y, posteriormente, para separar a los administradores de cumplimiento de comunicaciones en un grupo definido. Los usuarios asignados a este grupo de roles pueden crear, leer, actualizar y eliminar directivas de cumplimiento de comunicaciones, configuración global y asignaciones de grupos de roles. Los usuarios asignados a este grupo de roles no pueden ver alertas de mensajes. |
-| **Analista de cumplimiento de comunicaciones** | Use este grupo para asignar permisos a los usuarios que actuarán como analistas de cumplimiento de comunicaciones. Los usuarios asignados a este grupo de roles pueden ver las directivas donde se asignan como revisores, ver los metadatos del mensaje (no el contenido del mensaje), escalar a revisores adicionales o enviar notificaciones a los usuarios. Los analistas no pueden resolver las alertas pendientes. |
-| **Investigador de cumplimiento de comunicaciones** | Use este grupo para asignar permisos a los usuarios que actuarán como investigadores de cumplimiento de comunicaciones. Los usuarios asignados a este grupo de roles pueden ver los metadatos y el contenido del mensaje, escalar a revisores adicionales, escalar a un caso de eDiscovery (Premium), enviar notificaciones a los usuarios y resolver la alerta. |
-| **Visor de cumplimiento de comunicaciones** | Use este grupo para asignar permisos a los usuarios que administrarán los informes de comunicación. Los usuarios asignados a este grupo de roles pueden acceder a todos los widgets de informes en la página principal de cumplimiento de comunicaciones y pueden ver todos los informes de cumplimiento de comunicaciones. |
+| **Administradores de cumplimiento de comunicaciones** | Use este grupo de roles para configurar inicialmente el cumplimiento de comunicaciones y, posteriormente, para separar a los administradores de cumplimiento de comunicaciones en un grupo definido. Los usuarios asignados a este grupo de roles pueden crear, leer, actualizar y eliminar directivas de cumplimiento de comunicaciones, configuración global y asignaciones de grupos de roles. Los usuarios asignados a este grupo de roles no pueden ver alertas de mensajes. |
+| **Analistas de cumplimiento de comunicaciones** | Use este grupo para asignar permisos a los usuarios que actuarán como analistas de cumplimiento de comunicaciones. Los usuarios asignados a este grupo de roles pueden ver las directivas donde se asignan como revisores, ver los metadatos del mensaje (no el contenido del mensaje), escalar a revisores adicionales o enviar notificaciones a los usuarios. Los analistas no pueden resolver las alertas pendientes. |
+| **Investigadores de cumplimiento de comunicaciones** | Use este grupo para asignar permisos a los usuarios que actuarán como investigadores de cumplimiento de comunicaciones. Los usuarios asignados a este grupo de roles pueden ver los metadatos y el contenido del mensaje, escalar a revisores adicionales, escalar a un caso de eDiscovery (Premium), enviar notificaciones a los usuarios y resolver la alerta. |
+| **Visores de cumplimiento de comunicaciones** | Use este grupo para asignar permisos a los usuarios que administrarán los informes de comunicación. Los usuarios asignados a este grupo de roles pueden acceder a todos los widgets de informes en la página principal de cumplimiento de comunicaciones y pueden ver todos los informes de cumplimiento de comunicaciones. |
 
 1. Los administradores de TI de Contoso [inician](https://compliance.microsoft.com/permissions) sesión en la página de permisos de portal de cumplimiento Microsoft Purview con las credenciales de una cuenta de administrador global y seleccionan el vínculo para ver y administrar roles en Microsoft 365.
 2. En el portal de cumplimiento Microsoft Purview, van a <a href="https://go.microsoft.com/fwlink/p/?linkid=2173597" target="_blank">**Permisos**</a> y seleccionan el vínculo para ver y administrar roles en Office 365.
