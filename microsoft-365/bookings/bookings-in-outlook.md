@@ -11,19 +11,16 @@ ms.collection:
 - scotvorg
 ROBOTS: NO INDEX, NO FOLLOW
 description: Use Bookings conmigo para permitir que otros usuarios programe reuniones con usted en Outlook.
-ms.openlocfilehash: afda2699bb5d4d5c588ab96e2153de7c27661ca7
-ms.sourcegitcommit: 0b7070ec119e00e0dafe030bbfbef0ae5c9afa19
+ms.openlocfilehash: 7eea946472e94fb6d4e2ae144a1127a6b8e09c72
+ms.sourcegitcommit: 04e517c7e00323b5c33d8ea937115725cf2cfd4d
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/29/2022
-ms.locfileid: "68188138"
+ms.lasthandoff: 10/13/2022
+ms.locfileid: "68565496"
 ---
 # <a name="bookings-with-me"></a>Bookings conmigo
 
 **Bookings with me** in Outlook es una página de programación personal basada en web que se integra con la información de disponibilidad de su calendario de Outlook. Bookings with me permite a las personas programar una reunión o cita con usted. Puede crear tipos de reunión personalizados para compartirlos con otros usuarios para que puedan programar fácilmente tiempo con usted en función de su disponibilidad y preferencias. Ambos reciben una confirmación por correo electrónico y los asistentes pueden actualizar o cancelar reuniones programadas con usted desde la página Reservas conmigo.
-
-> [!NOTE]
-> Reservas conmigo está disponible en todo el mundo en versión preliminar. Es posible que las características incluidas en la versión preliminar no estén completas y puedan experimentar cambios antes de estar disponibles en la versión pública.
 
 Bookings with me tiene dos vistas diferentes:
 
@@ -223,6 +220,12 @@ Use los comandos **Get-CASMailbox** y **Set-CASMailbox** para comprobar el estad
     ```PowerShell
    Set-CASMailbox -Identity adam@contoso.com -EwsApplicationAccessPolicy EnforceBlockList -EWSBlockList @{Add="MicrosoftOWSPersonalBookings"}
    ```
+
+### <a name="create-bookings-with-me"></a>Creación de Bookings conmigo
+
+1. Abra [Outlook en la Web](https://go.microsoft.com/fwlink/p/?LinkID=402333).
+2. Seleccione **Calendario**.
+3. Seleccione el vínculo **crear reservas** que aparece en el calendario para crear Bookings conmigo.
 
 ## <a name="frequently-asked-questions"></a>Preguntas frecuentes
 

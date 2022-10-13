@@ -12,20 +12,20 @@ ms.collection:
 - m365initiative-syntex
 search.appverid: MET150
 ms.localizationpriority: medium
-description: Obtenga información sobre cómo exportar e importar modelos de comprensión de documentos con PowerShell en SharePoint Syntex.
-ms.openlocfilehash: a022ee3be11470892cc62dda06173e83ee50f865
-ms.sourcegitcommit: d3ef9391f621e8f4ca70661184b3bb82c6cbda94
+description: Obtenga información sobre cómo exportar e importar modelos de comprensión de documentos con PowerShell en Microsoft Syntex.
+ms.openlocfilehash: bea95d65c39e08ea2ac6714e48e9cbafe573d1a8
+ms.sourcegitcommit: 04e517c7e00323b5c33d8ea937115725cf2cfd4d
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/02/2022
-ms.locfileid: "67585232"
+ms.lasthandoff: 10/13/2022
+ms.locfileid: "68564682"
 ---
 # <a name="export-and-import-document-understanding-models-with-powershell"></a>Exportación e importación de modelos de comprensión de documentos con PowerShell
 
 > [!IMPORTANT]
-> Los cmdlets de PowerShell SharePoint Syntex y todos los demás componentes de PnP son herramientas de código abierto respaldadas por una comunidad activa que proporciona soporte técnico para ellos. Los canales oficiales de soporte técnico de Microsoft no ofrecen ningún contrato de nivel de servicio para herramientas de código abierto.
+> Los cmdlets de PowerShell de Microsoft Syntex y todos los demás componentes de PnP son herramientas de código abierto respaldadas por una comunidad activa que proporciona soporte técnico para ellos. Los canales oficiales de soporte técnico de Microsoft no ofrecen ningún contrato de nivel de servicio para herramientas de código abierto.
 
-SharePoint Syntex modelos se pueden exportar como plantillas PnP, lo que permite reutilizarlos entre centros de contenido o inquilinos.
+Los modelos de Syntex se pueden exportar como plantillas PnP, lo que permite reutilizarlos entre centros de contenido o inquilinos.
 
 ## <a name="export-all-models-in-a-content-center"></a>Exportación de todos los modelos en un centro de contenido
 

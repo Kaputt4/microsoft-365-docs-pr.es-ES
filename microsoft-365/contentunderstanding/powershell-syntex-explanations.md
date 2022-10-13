@@ -12,18 +12,18 @@ ms.collection:
 - m365initiative-syntex
 search.appverid: MET150
 ms.localizationpriority: medium
-description: Obtenga información sobre el trabajo con SharePoint Syntex explicaciones del modelo de comprensión de documentos en PowerShell.
-ms.openlocfilehash: f81281e28977e842188e1dcc02906eedaad09738
-ms.sourcegitcommit: d3ef9391f621e8f4ca70661184b3bb82c6cbda94
+description: Obtenga información sobre el trabajo con las explicaciones del modelo de comprensión de documentos de Microsoft Syntex en PowerShell.
+ms.openlocfilehash: c2ffc7493e91adc4e990da56e5a29408121eded2
+ms.sourcegitcommit: 04e517c7e00323b5c33d8ea937115725cf2cfd4d
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/02/2022
-ms.locfileid: "67578364"
+ms.lasthandoff: 10/13/2022
+ms.locfileid: "68564704"
 ---
 # <a name="work-with-document-understanding-model-explanations-in-powershell"></a>Trabajar con explicaciones del modelo de comprensión de documentos en PowerShell
 
 > [!IMPORTANT]
-> Los cmdlets de PowerShell SharePoint Syntex y todos los demás componentes de PnP son herramientas de código abierto respaldadas por una comunidad activa que proporciona soporte técnico para ellos. Los canales oficiales de soporte técnico de Microsoft no ofrecen ningún contrato de nivel de servicio para herramientas de código abierto.
+> Los cmdlets de PowerShell de Microsoft Syntex y todos los demás componentes de PnP son herramientas de código abierto respaldadas por una comunidad activa que proporciona soporte técnico para ellos. Los canales oficiales de soporte técnico de Microsoft no ofrecen ningún contrato de nivel de servicio para herramientas de código abierto.
 
 Las plantillas de explicación personalizadas se almacenan en una lista dentro de un centro de contenido. Dado que estas explicaciones se almacenan como elementos de lista, PowerShell se puede usar para interactuar con ellos.
 

@@ -8,19 +8,19 @@ manager: dansimp
 ms.date: ''
 audience: ITPro
 ms.topic: how-to
-ms.collection: M365-security-compliance
+ms.collection: m365-security
 ms.localizationpriority: medium
 search.appverid:
 - MET150s
 description: Los administradores pueden obtener información sobre las opciones disponibles y preferidas para bloquear los mensajes entrantes en Exchange Online Protection (EOP).
 ms.subservice: mdo
 ms.service: microsoft-365-security
-ms.openlocfilehash: a8abd50deb509564acb6646dc0732bf4a61b6cfd
-ms.sourcegitcommit: 10e6abe740e27000e223378eb17d657a47555fa8
+ms.openlocfilehash: 6a53c888b1817ca490ce0be71f37080bc3aaa7ac
+ms.sourcegitcommit: 04e517c7e00323b5c33d8ea937115725cf2cfd4d
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/31/2022
-ms.locfileid: "67481424"
+ms.lasthandoff: 10/13/2022
+ms.locfileid: "68565825"
 ---
 # <a name="create-blocked-sender-lists-in-eop"></a>Creación de listas de remitentes bloqueados en EOP
 
@@ -58,7 +58,7 @@ Un mensaje de correo electrónico SMTP estándar está compuesto por el _sobre d
 
 Con frecuencia, las `5321.MailFrom` direcciones y `5322.From` son las mismas (comunicación de persona a persona). Sin embargo, cuando se envía correo electrónico en nombre de otra persona, las direcciones pueden ser diferentes.
 
-Las listas de remitentes bloqueados y las listas de dominios bloqueados en las directivas contra correo no deseado en EOP inspeccionan las `5321.MailFrom` direcciones y `5322.From` . Los remitentes bloqueados de Outlook solo usan la `5322.From` dirección.
+Las listas de remitentes bloqueados y las listas de dominio bloqueadas en las directivas contra correo no deseado en EOP inspeccionan solo las `5322.From` direcciones. Este comportamiento es similar a los remitentes bloqueados de Outlook que usan la `5322.From` dirección.
 
 ## <a name="use-outlook-blocked-senders"></a>Uso de remitentes bloqueados de Outlook
 
@@ -71,7 +71,7 @@ Cuando los mensajes se bloquean correctamente debido a la lista remitentes bloqu
 
 ## <a name="use-blocked-sender-lists-or-blocked-domain-lists"></a>Uso de listas de remitentes bloqueadas o listas de dominio bloqueadas
 
-Cuando varios usuarios se ven afectados, el ámbito es más amplio, por lo que la siguiente mejor opción es bloquear listas de remitentes o listas de dominios bloqueados en directivas contra correo no deseado. Los mensajes de los remitentes de las listas se marcan como **Spam** (no **spam de alta confianza**) y la acción que ha configurado para el veredicto de filtro de **correo no deseado** se realiza en el mensaje. Para obtener más información, consulte [Configurar directivas contra correo electrónico no deseado](configure-your-spam-filter-policies.md).
+Cuando varios usuarios se ven afectados, el ámbito es más amplio, por lo que la siguiente mejor opción es bloquear listas de remitentes o listas de dominios bloqueados en directivas contra correo no deseado. Los mensajes de los remitentes de las listas se marcan como **spam de alta confianza** y la acción que ha configurado para el veredicto de filtro **de spam de alta confianza** se realiza en los mensajes. Para obtener más información, consulte [Configurar directivas contra correo electrónico no deseado](configure-your-spam-filter-policies.md).
 
 El límite máximo para estas listas es de aproximadamente 1000 entradas.
 

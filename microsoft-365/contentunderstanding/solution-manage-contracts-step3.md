@@ -12,20 +12,20 @@ search.appverid: ''
 ms.localizationpriority: medium
 ROBOTS: ''
 description: Obtenga información sobre cómo usar Power Automate para crear el flujo para procesar los contratos mediante una solución de Microsoft 365.
-ms.openlocfilehash: 0a449fbac6fe7a0dd9c66e49a0ba6dd57b649b15
-ms.sourcegitcommit: d3ef9391f621e8f4ca70661184b3bb82c6cbda94
+ms.openlocfilehash: fbdf155fa1cd8e9b9b94a98dee09d1544c8e439e
+ms.sourcegitcommit: 04e517c7e00323b5c33d8ea937115725cf2cfd4d
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/02/2022
-ms.locfileid: "67578860"
+ms.lasthandoff: 10/13/2022
+ms.locfileid: "68564660"
 ---
 # <a name="step-3-use-power-automate-to-create-the-flow-to-process-your-contracts"></a>Paso 3. Uso de Power Automate para crear el flujo para procesar los contratos
 
-Ha creado el canal de administración de contratos y ha adjuntado la biblioteca de documentos de SharePoint. El siguiente paso es crear un flujo de Power Automate para procesar los contratos que el modelo de SharePoint Syntex identifica y clasifica. Para realizar este paso, [cree un flujo de Power Automate en la biblioteca de documentos de SharePoint](https://support.microsoft.com/office/create-a-flow-for-a-list-or-library-in-sharepoint-or-onedrive-a9c3e03b-0654-46af-a254-20252e580d01).
+Ha creado el canal de administración de contratos y ha adjuntado la biblioteca de documentos de SharePoint. El siguiente paso es crear un flujo de Power Automate para procesar los contratos que el modelo de Syntex identifica y clasifica. Para realizar este paso, [cree un flujo de Power Automate en la biblioteca de documentos de SharePoint](https://support.microsoft.com/office/create-a-flow-for-a-list-or-library-in-sharepoint-or-onedrive-a9c3e03b-0654-46af-a254-20252e580d01).
 
 Para la solución de administración de contratos, quiere crear un flujo de Power Automate para realizar las siguientes acciones:
 
--  Una vez que el modelo de SharePoint Syntex haya clasificado un contrato, cambie el estado del contrato a **En revisión**.
+-  Una vez clasificado un contrato por el modelo de Syntex, cambie el estado del contrato a **En revisión**.
 - A continuación, se revisa el contrato y se aprueba o se rechaza.
 - En el caso de los contratos aprobados, la información del contrato se contabiliza en una pestaña para el procesamiento de pagos.
 - En el caso de los contratos rechazados, se notifica al equipo para su análisis posterior. 
@@ -36,7 +36,7 @@ En el diagrama siguiente se muestra el flujo de Power Automate para la solución
 
 ## <a name="prepare-your-contract-for-review"></a>Preparar el contrato para su revisión
 
-Cuando el modelo de comprensión de documentos de SharePoint Syntex identifique y clasifique un contrato, el flujo de Power Automate cambiará primero el estado a **En revisión**.
+Cuando el modelo de comprensión de documentos de Syntex identifica y clasifica un contrato, el flujo de Power Automate cambiará primero el estado a **En revisión**.
 
 ![Estado de actualización.](../media/content-understanding/flow-overview.png)
 

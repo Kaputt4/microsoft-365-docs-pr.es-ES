@@ -23,12 +23,12 @@ ms.collection:
 search.appverid:
 - MET150
 - MOE150
-ms.openlocfilehash: e7ea484e30330819f67f1ac0a8eaf7b7e789503c
-ms.sourcegitcommit: 50da6f1f6ef2274c17ed9729e7ad84395b0a9be2
+ms.openlocfilehash: 5082d07b9b0b0552917dff6071662ee713a7769b
+ms.sourcegitcommit: 04e517c7e00323b5c33d8ea937115725cf2cfd4d
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/08/2022
-ms.locfileid: "68503190"
+ms.lasthandoff: 10/13/2022
+ms.locfileid: "68565085"
 ---
 # <a name="learn-about-communication-compliance"></a>Obtener más información sobre el cumplimiento de las comunicaciones
 
@@ -135,6 +135,13 @@ Las directivas de cumplimiento de comunicaciones examinan y capturan mensajes en
 
 Para más información sobre la compatibilidad con canales de mensajería en las directivas de cumplimiento de comunicaciones, consulte [Detección de señales de canal con cumplimiento de comunicaciones](/microsoft-365/compliance/communication-compliance-channels).
 
+## <a name="integration-with-insider-risk-management-preview"></a>Integración con la administración de riesgos internos (versión preliminar)
+
+El cumplimiento de comunicaciones puede proporcionar señales de descontento detectadas en los mensajes a las directivas de descontento de la administración de riesgos internos. Con una directiva de [texto de detección inapropiada](/microsoft-365/compliance/communication-compliance-policies#policy-templates) dedicada en cumplimiento de comunicaciones, puede optar por agregar esta directiva a una [filtración de datos por empleados descontentos](/microsoft-365/compliance/insider-risk-management-policies#data-leaks-by-disgruntled-users-preview) o [infracciones de directivas de seguridad por parte de empleados descontentos](/microsoft-365/compliance/insider-risk-management-policies#security-policy-violations-by-disgruntled-users-preview) en la administración de riesgos internos. La descontento detectada en los mensajes por la directiva de cumplimiento de comunicaciones actúa como un evento desencadenante para que los usuarios entren en el ámbito de las directivas de administración de riesgos internos.
+
+Para más información sobre la integración con la administración de riesgos internos, consulte [Creación y administración de directivas de cumplimiento de comunicaciones](/microsoft-365/compliance/communication-compliance-policies#integration-with-insider-risk-management-preview).
+Para más información sobre la administración de riesgos internos, consulte [Información sobre la administración de riesgos internos](/microsoft-365/compliance/insider-risk-management).
+
 ## <a name="get-started-with-recommended-actions-preview"></a>Introducción a las acciones recomendadas (versión preliminar)
 
 Tanto si va a configurar el cumplimiento de las comunicaciones por primera vez como si está empezando a crear nuevas directivas, la nueva experiencia de [acciones recomendadas](/microsoft-365/compliance/communication-compliance-configure#recommended-actions-preview) puede ayudarle a sacar el máximo partido a las funcionalidades de cumplimiento de comunicaciones. Las acciones recomendadas incluyen la configuración de permisos, la creación de grupos de distribución, la creación de una directiva y mucho más
@@ -156,8 +163,8 @@ En este paso de flujo de trabajo, identificará los requisitos de cumplimiento y
 
 Puede elegir entre las siguientes plantillas de directiva del portal de cumplimiento de Microsoft Purview:
 
-- **Supervisión de texto inadecuado**: use esta plantilla para crear rápidamente una directiva que use clasificadores integrados para detectar automáticamente texto en mensajes que puedan considerarse inadecuados, abusivos o ofensivos.
-- **Supervisión de imágenes inapropiadas**: use esta plantilla para crear rápidamente una directiva que use clasificadores integrados para detectar automáticamente el contenido que contiene imágenes para adultos y desiguales que pueden considerarse inapropiadas en su organización.
+- **Detecte texto inapropiado**: use esta plantilla para crear rápidamente una directiva que use clasificadores integrados para detectar automáticamente texto en mensajes que pueda considerarse inadecuado, abusivo u ofensivo.
+- **Detecte imágenes inapropiadas**: use esta plantilla para crear rápidamente una directiva que usa clasificadores integrados para detectar automáticamente contenido que contiene imágenes para adultos y subidos de tono que se pueden considerar inadecuadas en su organización.
 - **Supervisión de información confidencial**: use esta plantilla para crear rápidamente una directiva para examinar las comunicaciones que contienen tipos de información confidencial definidos o palabras clave para asegurarse de que los datos importantes no se comparten con personas que no deben tener acceso.
 - **Supervisión del cumplimiento normativo financiero**: use esta plantilla para crear rápidamente una directiva para examinar las comunicaciones en busca de referencias a términos financieros estándar asociados a estándares normativos.
 - **Supervisión de conflictos de interés**: use esta plantilla para crear rápidamente una directiva para detectar comunicaciones entre dos grupos o dos usuarios con el fin de ayudar a evitar conflictos de interés.

@@ -29,12 +29,12 @@ search.appverid:
 - GEA150
 ms.assetid: 0f54736f-eb22-414c-8273-498a0918678f
 description: Obtenga información sobre cómo un administrador puede establecer una directiva de expiración de contraseñas para su empresa, escuela u ONG en el Centro de administración de Microsoft 365.
-ms.openlocfilehash: 92fb8a20bbd05aa25b0935acfd26e1df3484207a
-ms.sourcegitcommit: 0b7070ec119e00e0dafe030bbfbef0ae5c9afa19
+ms.openlocfilehash: d94073121eab1979b02883b359de2b75604c8c50
+ms.sourcegitcommit: 04e517c7e00323b5c33d8ea937115725cf2cfd4d
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/29/2022
-ms.locfileid: "68206683"
+ms.lasthandoff: 10/13/2022
+ms.locfileid: "68564968"
 ---
 # <a name="set-the-password-expiration-policy-for-your-organization"></a>Cambiar la directiva de expiración de las contraseñas de la organización
 
@@ -65,10 +65,10 @@ Siga los siguientes pasos cuando quiera configurar las contraseñas de los usuar
   
 1. Si no quiere que los usuarios tengan que cambiar las contraseñas, desactive la casilla situada junto a **Establecer contraseñas para que nunca expiren**.
 
-1. Type how often passwords should expire. Choose a number of days from 14 to 730.
+1. Escriba la frecuencia en la que deben expirar las contraseñas. Elija un número de días entre 14 y 730.
  
 > [!IMPORTANT]
-> Las notificaciones de expiración de contraseña ya no se admiten en las aplicaciones web de Office ni en el [centro de administración](https://portal.office.com).
+> Las notificaciones de expiración de contraseñas ya no se admiten en la Centro de administración de Microsoft 365 ni en las aplicaciones de Office ni en las aplicaciones web de Office.
   
 ## <a name="important-things-you-need-to-know-about-the-password-expiration-feature"></a>Aspectos importantes que debe conocer sobre la función de expiración de contraseña
   

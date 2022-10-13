@@ -18,12 +18,12 @@ ms.collection:
 - m365-security
 - tier3
 ms.topic: article
-ms.openlocfilehash: 223f8a3c544a0f0f31781e3dbbf123bb6e600bd0
-ms.sourcegitcommit: 12af9e8e3a6eaa090fda9e98ccb831dff65863a4
+ms.openlocfilehash: 84923e4940585a5c98dead3d7f09a6bcf078bf06
+ms.sourcegitcommit: 04e517c7e00323b5c33d8ea937115725cf2cfd4d
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/27/2022
-ms.locfileid: "68082975"
+ms.lasthandoff: 10/13/2022
+ms.locfileid: "68565934"
 ---
 # <a name="supported-microsoft-365-defender-streaming-event-types-in-event-streaming-api"></a>Tipos de eventos de streaming Microsoft 365 Defender admitidos en la API de streaming de eventos
 
@@ -36,7 +36,8 @@ ms.locfileid: "68082975"
 
 
 Event Streaming API se está expandiendo constantemente para admitir más tipos de eventos. Obtenga información sobre qué tablas de búsqueda están disponibles con carácter general, actualmente en versión preliminar pública o aún no se admiten. 
-**Nuevo: Email tipos de eventos o tablas ya están disponibles**
+
+**Nuevo: los tipos de eventos y las tablas de Identidad y CloudApp ahora están disponibles para disponibilidad general**.
 
 ## <a name="hunting-tables-support-status-in-event-streaming-api"></a>Estado de compatibilidad de las tablas de búsqueda en Event Streaming API
 

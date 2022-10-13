@@ -1,5 +1,5 @@
 ---
-title: Use la plantilla de sitio Administración de contratos para Microsoft SharePoint Syntex
+title: Uso de la plantilla de sitio administración de contratos para Microsoft Syntex
 ms.author: chucked
 author: chuckedmonson
 manager: pamgreen
@@ -12,17 +12,17 @@ ms.collection:
 - enabler-strategic
 - m365initiative-syntex
 ms.localizationpriority: medium
-description: Obtenga información sobre cómo aprovisionar, usar y personalizar la plantilla de sitio Administración de contratos en Microsoft SharePoint Syntex.
-ms.openlocfilehash: 271ff008aad60434f1e52a9eca233b2d1b7aeb3d
-ms.sourcegitcommit: d3ef9391f621e8f4ca70661184b3bb82c6cbda94
+description: Obtenga información sobre cómo aprovisionar, usar y personalizar la plantilla de sitio Administración de contratos en Microsoft Syntex.
+ms.openlocfilehash: 028afdbe0f82143c8ee84cdd773c859f7064cf47
+ms.sourcegitcommit: 04e517c7e00323b5c33d8ea937115725cf2cfd4d
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/02/2022
-ms.locfileid: "67582480"
+ms.lasthandoff: 10/13/2022
+ms.locfileid: "68565540"
 ---
-# <a name="use-the-contracts-management-site-template-for-microsoft-sharepoint-syntex"></a>Use la plantilla de sitio Administración de contratos para Microsoft SharePoint Syntex
+# <a name="use-the-contracts-management-site-template-for-microsoft-syntex"></a>Uso de la plantilla de sitio administración de contratos para Microsoft Syntex
 
-El sitio administración de contratos es una plantilla de sitio de SharePoint lista para implementar y personalizable que ayuda a su organización a maximizar el valor de SharePoint Syntex. El sitio está diseñado para permitirle crear un sitio profesional para administrar, procesar y realizar un seguimiento del estado de los contratos en su organización.
+El sitio administración de contratos es una plantilla de sitio de SharePoint lista para implementar y personalizable que ayuda a su organización a maximizar el valor de Microsoft Syntex. El sitio está diseñado para permitirle crear un sitio profesional para administrar, procesar y realizar un seguimiento del estado de los contratos en su organización.
 
 ## <a name="features-of-the-site"></a>Características del sitio
 
@@ -30,7 +30,7 @@ El sitio administración de contratos es una plantilla de sitio de SharePoint li
 
 El sitio de administración de contratos incluye páginas rellenadas previamente, elementos web y navegación por el sitio. El sitio se puede personalizar para incorporar la personalización de marca, la información de los empleados, la información de directivas y planeamiento de su organización, el flujo de trabajo, los contactos y los recursos.
 
-El sitio usa la eficacia de un modelo de SharePoint Syntex que se ejecuta en una biblioteca de documentos de SharePoint para clasificar documentos y extraer metadatos. El sitio proporciona bibliotecas de documentos precompiladas para empezar a trabajar rápidamente, pero también puede crear las suyas propias según sea necesario. El sitio incluye las siguientes bibliotecas destacadas:
+El sitio usa la eficacia de un modelo syntex que se ejecuta en una biblioteca de documentos de SharePoint para clasificar documentos y extraer metadatos. El sitio proporciona bibliotecas de documentos precompiladas para empezar a trabajar rápidamente, pero también puede crear las suyas propias según sea necesario. El sitio incluye las siguientes bibliotecas destacadas:
 
 - **Regiones** : clasifique los documentos del contrato por área geográfica, país o región.
 
@@ -42,7 +42,7 @@ El sitio usa la eficacia de un modelo de SharePoint Syntex que se ejecuta en una
 
 - **Modelos** : use el modelo de esta biblioteca para clasificar documentos y extraer metadatos. Los usuarios pueden crear sus propios modelos para satisfacer sus necesidades y agregarlos a esta biblioteca.
 
-- **Biblioteca de contratos de ejemplo**: busque archivos clasificados y que hayan extraído metadatos mediante el modelo de SharePoint Syntex. 
+- **Biblioteca de contratos de ejemplo** : busque archivos clasificados y que hayan extraído metadatos mediante el modelo syntex. 
 
 Hay una vista independiente en la biblioteca en la que puede realizar un seguimiento de otros metadatos, como el estado, y que usa el formato de la biblioteca de documentos para mostrarlo de una manera más visual.
 
@@ -53,9 +53,9 @@ El sitio administración de contratos se puede aprovisionar desde el [servicio d
 ![Captura de pantalla de la página de aprovisionamiento de plantillas de sitio de Administración de contratos.](../media/content-understanding/contracts-management-site-provisioning-page.png)
 
 > [!NOTE]
-> Debe ser administrador global o administrador de SharePoint en Microsoft 365 para aprovisionar el sitio. También debe tener una licencia de SharePoint Syntex para agregar esta plantilla de sitio a su organización.
+> Debe ser administrador global o administrador de SharePoint en Microsoft 365 para aprovisionar el sitio. También debe tener una licencia de Syntex para agregar esta plantilla de sitio a su organización.
 
-1. En la página principal del [libro de apariencias de SharePoint](https://lookbook.microsoft.com/), en **el menú Ver los diseños**, seleccione **SharePoint Syntex** >  **SharePoint Syntex Administración de contratos**.
+1. En la página principal del [libro de apariencias de SharePoint](https://lookbook.microsoft.com/), en **el menú Ver los diseños**, seleccione **Administración de contratos de Syntex** >  Syntex.
 
 2. En la página **Administración de contratos** , seleccione **Agregar al inquilino**.
 
@@ -104,9 +104,9 @@ Tiene el control de la navegación del sitio para el sitio de administración de
 El sitio administración de contratos contiene los componentes que necesita para empezar, pero también puede incluir componentes adicionales, como:
 
 - Use un [flujo de Power Automate](/power-automate/getting-started) para desencadenar un flujo de trabajo cuando se agregue un nuevo contrato a la biblioteca **de solicitudes de contrato** .
-- Cree [modelos de SharePoint Syntex](/microsoft-365/contentunderstanding/#models) adicionales.
+- Cree [modelos syntex](/microsoft-365/contentunderstanding/#models) adicionales.
 - Use la característica [de ensamblado de contenido](content-assembly.md) en la biblioteca **Plantillas** .
-- Cree una [solución de administración de contratos](solution-manage-contracts-in-microsoft-365.md) mediante SharePoint Syntex junto con otros componentes de Microsoft 365.
+- Cree una [solución de administración de contratos](solution-manage-contracts-in-microsoft-365.md) mediante Syntex junto con otros componentes de Microsoft 365.
 
 ## <a name="share-the-site-with-others"></a>Compartir el sitio con otros usuarios
 

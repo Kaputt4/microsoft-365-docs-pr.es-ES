@@ -1,5 +1,5 @@
 ---
-title: Cambiar el nombre de un extractor en Microsoft SharePoint Syntex
+title: Cambiar el nombre de un extractor en Microsoft Syntex
 ms.author: chucked
 author: chuckedmonson
 manager: pamgreen
@@ -12,15 +12,15 @@ ms.collection:
 - enabler-strategic
 - m365initiative-syntex
 ms.localizationpriority: medium
-description: Obtenga información sobre cómo y por qué cambiar el nombre de un extractor en Microsoft SharePoint Syntex.
-ms.openlocfilehash: 81c325e937378b5c00bac354f14e43d9ab676724
-ms.sourcegitcommit: d3ef9391f621e8f4ca70661184b3bb82c6cbda94
+description: Obtenga información sobre cómo y por qué cambiar el nombre de un extractor en Microsoft Syntex.
+ms.openlocfilehash: 8900eb68a5efab4d69911d193c35e82e6d58cbf6
+ms.sourcegitcommit: 04e517c7e00323b5c33d8ea937115725cf2cfd4d
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/02/2022
-ms.locfileid: "67576833"
+ms.lasthandoff: 10/13/2022
+ms.locfileid: "68565650"
 ---
-# <a name="rename-an-extractor-in-microsoft-sharepoint-syntex"></a>Cambiar el nombre de un extractor en Microsoft SharePoint Syntex
+# <a name="rename-an-extractor-in-microsoft-syntex"></a>Cambiar el nombre de un extractor en Microsoft Syntex
 
 En algún momento, puede que tenga que cambiar el nombre de un extractor para referirse a un campo de datos extraído por un nombre diferente. Por ejemplo, su organización decide realizar cambios en sus documentos de contrato y se refiere a los "consumidores" como "clientes" en sus documentos. Si estaba extrayendo un campo "Consumidor" en su modelo, puede cambiarle el nombre a "Cliente".
 

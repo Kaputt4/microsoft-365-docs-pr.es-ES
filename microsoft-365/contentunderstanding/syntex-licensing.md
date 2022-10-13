@@ -1,5 +1,5 @@
 ---
-title: Licencias para SharePoint Syntex
+title: Licencias para Microsoft Syntex
 ms.author: mikeplum
 author: MikePlumleyMSFT
 ms.reviewer: ssquires
@@ -12,26 +12,26 @@ ms.collection:
 - m365initiative-syntex
 search.appverid: MET150
 ms.localizationpriority: high
-description: Más información sobre las licencias para SharePoint Syntex
-ms.openlocfilehash: 22fcff4801e912e152256c49610adc46180546a6
-ms.sourcegitcommit: 02a9c7f915d3a795a373b62dbdee2925966703f5
+description: Obtenga información sobre las licencias para Microsoft Syntex.
+ms.openlocfilehash: c3c78d407aacb260d6b9d6edb9597d9fc3a4c38c
+ms.sourcegitcommit: 04e517c7e00323b5c33d8ea937115725cf2cfd4d
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/08/2022
-ms.locfileid: "67623648"
+ms.lasthandoff: 10/13/2022
+ms.locfileid: "68565056"
 ---
-# <a name="licensing-for-sharepoint-syntex"></a>Licencias para SharePoint Syntex
+# <a name="licensing-for-microsoft-syntex"></a>Licencias para Microsoft Syntex
 
-Para usar SharePoint Syntex, cada usuario de Syntex debe tener una licencia. Si cancela sus licencias de SharePoint Syntex en una fecha futura (o la versión de prueba expira), los usuarios ya no podrán crear, publicar ni ejecutar modelos de comprensión de documentos o de procesamiento de formularios. Además, los informes de almacén de términos, la importación de taxonomía SKOS y la inserción de tipo de contenido ya no estarán disponibles. No se eliminarán modelos, ni contenido ni metadatos y no se cambiarán los permisos del sitio.
+Para usar SharePoint Syntex, debe tener una licencia para cada usuario de Syntex. Si quita todas las licencias de SharePoint Syntex del inquilino en una fecha futura (o la prueba expira), los usuarios ya no podrán crear, publicar ni ejecutar modelos de comprensión de documentos o procesamiento de formularios. Además, los informes de almacén de términos, la importación de taxonomía SKOS y la inserción de tipo de contenido ya no estarán disponibles. No se eliminarán modelos, ni contenido ni metadatos y no se cambiarán los permisos del sitio.
  
 > [!NOTE] 
-> SharePoint Syntex es una licencia de complemento y requiere que los usuarios también tengan una licencia para Microsoft 365.
+> Syntex es una licencia de complemento y requiere que los usuarios también tengan una licencia para Microsoft 365.
  
 ## <a name="tasks-requiring-a-license"></a>Tareas que requieren una licencia
  
-Las siguientes tareas requieren una [licencia de SharePoint Syntex](https://www.microsoft.com/microsoft-365/enterprise/sharepoint-syntex) para que el usuario las realice:
+Las siguientes tareas requieren una [licencia de Syntex](https://www.microsoft.com/microsoft-365/enterprise/sharepoint-syntex) para el usuario que las realiza:
  
-- Apicar un modelo de comprensión mediante documentos a una biblioteca. (A los usuarios sin licencia se les puede conceder acceso a un centro de contenido y pueden crear modelos de comprensión mediante documentos allí, pero no pueden aplicarlos a una biblioteca de documentos).
+- Applying a document understanding model to a library. (Unlicensed users can be granted access to a content center and can create document understanding models there but can't apply them to a document library.)
 - Creación de un modelo de procesamiento de formularios mediante el punto de entrada en una biblioteca
 - Carga de contenido en una biblioteca en la que se ha aplicado un modelo de procesamiento de formularios o de comprensión mediante documentos
 - Ejecución a petición de un modelo de comprensión mediante documentos
@@ -44,9 +44,9 @@ A los usuarios sin licencia se les puede conceder acceso a un centro de contenid
  
 ## <a name="cost-of-training-and-running-models"></a>Costo de entrenamiento y ejecución de modelos
  
-El costo de entrenar y ejecutar modelos de comprensión de documentos se incluye en el costo de una licencia de SharePoint Syntex. Sin embargo, los modelos de procesamiento de formularios usan las capacidades de AI Builder, tanto para el entrenamiento como para el procesamiento en tiempo de ejecución. Esta capacidad debe asignarse al entorno de Power Apps en el que se usará AI Builder.
+El costo de entrenamiento y ejecución de modelos de comprensión de documentos se incluye en el costo de una licencia de Syntex. Sin embargo, los modelos de procesamiento de formularios usan las capacidades de AI Builder, tanto para el entrenamiento como para el procesamiento en tiempo de ejecución. Esta capacidad debe asignarse al entorno de Power Apps en el que se usará AI Builder.
 
-Para cada licencia de SharePoint Syntex, se le asignan 3 500 créditos del Generador de IA por licencia, por mes agrupados en el nivel de inquilino, con una asignación máxima de 1 millón de créditos al mes. Esta asignación se renueva cada mes para cada licencia activa de SharePoint Syntex. (Los créditos no usados no se acumulan de mes a mes). 
+Por cada licencia de Syntex, se le asignan 3.500 créditos de AI Builder por licencia, por mes agrupados en el nivel de inquilino, con una asignación máxima de 1 millón de créditos al mes. Esta asignación se renueva cada mes para cada licencia de Syntex activa. (Los créditos no usados no se acumulan de mes a mes). 
 
 Puede estimar la capacidad del Generador de IA que lo hace adecuado para usted con la calculadora del [Generador de IA](https://powerapps.microsoft.com/ai-builder-calculator).
 
@@ -56,7 +56,7 @@ Vaya al [Centro de administración de la Power Platform](https://admin.powerplat
   
 ## <a name="additional-term-store-features"></a>Características adicionales del almacén de términos
 
-Tener una o varias licencias de SharePoint Syntex en su organización habilita las siguientes características adicionales de almacén de términos para los administradores de SharePoint:
+Tener una o varias licencias de Syntex en su organización permite las siguientes características adicionales de almacén de términos para administradores de SharePoint:
  
 - Importación del conjuntos de términos a partir de SKOS
 - Insertar tipos de contenido empresarial en un sitio concentrador, que también los agrega a los sitios asociados y a las listas o bibliotecas recién creadas

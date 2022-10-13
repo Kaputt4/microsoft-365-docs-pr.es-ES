@@ -15,12 +15,12 @@ ms.collection:
 - tier1
 - purview-compliance
 ms.custom: admindeeplinkCOMPLIANCE
-ms.openlocfilehash: d4a8d948f460bf44d7d159a39eedcf2a0ca65c73
-ms.sourcegitcommit: 50da6f1f6ef2274c17ed9729e7ad84395b0a9be2
+ms.openlocfilehash: 5487b2292901cd34599664215f18b4bbdc7cd943
+ms.sourcegitcommit: 04e517c7e00323b5c33d8ea937115725cf2cfd4d
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/08/2022
-ms.locfileid: "68503894"
+ms.lasthandoff: 10/13/2022
+ms.locfileid: "68564638"
 ---
 # <a name="investigate-insider-risk-management-activities"></a>Investigación de actividades de administración de riesgos internos
 
@@ -133,9 +133,11 @@ Use las secciones y pestañas siguientes en la página Detalles de la alerta par
 Esta sección contiene información general sobre el usuario y la alerta. Esta información está disponible para contexto al revisar información detallada sobre la actividad detectada incluida en la alerta para el usuario:
 
 - **Actividad que generó esta alerta**: muestra la actividad de riesgo superior y la coincidencia de directivas durante el período de evaluación de la actividad que llevó a que se generara la alerta.
-- **Evento desencadenante**: muestra el evento desencadenante más reciente que solicitó a la directiva que empezara a asignar puntuaciones de riesgo a la actividad del usuario.
+- **Evento desencadenante**: muestra el evento desencadenante más reciente que solicitó a la directiva que empezara a asignar puntuaciones de riesgo a la actividad del usuario. Si ha configurado la [integración con el cumplimiento de comunicaciones](/microsoft-365/compliance/communication-compliance-policies#integration-with-insider-risk-management-preview) para *las fugas de datos por parte de usuarios descontentos* o *infracciones de directivas de seguridad por directivas de usuarios descontentos* , el evento desencadenante de estas alertas se limitará a la actividad de cumplimiento de comunicaciones.
 - **Perfil de usuario**: muestra información general sobre el usuario asignado a la alerta. Si la anonimización está habilitada, los campos nombre de usuario, dirección de correo electrónico, alias y organización se anonimizan.
 - **Historial de alertas** de usuario: muestra una lista de alertas para el usuario durante los últimos 30 días. Incluye un vínculo para ver el historial de alertas completo del usuario.
+
+Las alertas generadas a partir de directivas destinadas solo a actividades que incluyen [contenido prioritario](/microsoft-365/compliance/insider-risk-management-policies#prioritize-content-in-policies) incluyen la *única actividad con contenido de prioridad puntuada para esta* notificación de alerta en esta sección.
 
 ### <a name="all-risk-factors"></a>Todos los factores de riesgo
 
@@ -176,7 +178,7 @@ El gráfico **de actividad De usuario** es una de las herramientas más eficaces
     - **Categoría de riesgo**: Filtre las actividades por las siguientes categorías de riesgo: *actividades con puntuaciones de riesgo > 15 (a menos que en una secuencia)* y *actividades de secuencia*.
     - **Tipo de actividad**: Filtre las actividades por los siguientes tipos: *Access*, *Deletion*, *Collection*, *Exfiltration*, *Infiltration*, *Ofusscation* y *Security*.
     - **Ordenar por**: enumere las actividades de escala de tiempo por *Fecha o* *Puntuación de riesgo*.
-4. **Secuencia de riesgo**: el orden cronológico de las actividades de riesgo es un aspecto importante de la investigación de riesgos y la identificación de estas actividades relacionadas es una parte importante de la evaluación del riesgo general para su organización. Las actividades de alerta relacionadas se muestran con líneas de conexión para resaltar que estas actividades están asociadas a un área de riesgo mayor. Esta visión de las actividades puede ayudar a los investigadores literalmente a "conectar los puntos" para las actividades de riesgo que podrían haberse visto como eventos aislados o puntuales. Seleccione cualquier burbuja de la secuencia para mostrar los detalles de todas las actividades de riesgo asociadas. Los detalles incluyen:
+4. **Secuencia de riesgo**: el orden cronológico de las actividades de riesgo es un aspecto importante de la investigación de riesgos y la identificación de estas actividades relacionadas es una parte importante de la evaluación del riesgo general para su organización. Las actividades de alerta relacionadas se muestran con líneas de conexión para resaltar que estas actividades están asociadas a un área de riesgo mayor. Las secuencias también se identifican en esta vista mediante un icono situado encima de las actividades de secuencia en relación con la puntuación de riesgo de la secuencia. Mantenga el puntero sobre el icono para ver la fecha y hora de la actividad de riesgo asociada a esta secuencia. Esta visión de las actividades puede ayudar a los investigadores literalmente a "conectar los puntos" para las actividades de riesgo que podrían haberse visto como eventos aislados o puntuales. Seleccione el icono o cualquier burbuja de la secuencia para mostrar los detalles de todas las actividades de riesgo asociadas. Los detalles incluyen:
 
     - **Nombre** de la secuencia.
     - **Intervalo de fechas** o **fechas** de la secuencia.
@@ -266,6 +268,7 @@ Sentirse abrumado por el número de alertas generadas por las directivas de admi
 
 - **Ajustar las directivas de riesgo internos**: seleccionar y configurar la directiva de riesgo interno correcta es el método más básico para abordar el tipo y el volumen de alertas. A partir de la [plantilla de directiva](insider-risk-management-policies.md#policy-templates) adecuada, se centran los tipos de actividades de riesgo y las alertas que verá. Otros factores que pueden afectar al volumen de alertas son el tamaño del usuario y los grupos dentro del ámbito y el contenido y [los canales que se priorizan](insider-risk-management-policies.md#prioritize-content-in-policies). Considere la posibilidad de ajustar las directivas para ajustar estas áreas a lo que es más importante para su organización.
 - **Modificar la configuración de riesgo interno**: la configuración de riesgo de Insider incluye una amplia variedad de opciones de configuración que pueden afectar al volumen y los tipos de alertas que recibirá. Estos incluyen [configuraciones para indicadores de directiva,](insider-risk-management-settings.md#indicators) [umbrales de indicadores](insider-risk-management-settings.md#indicator-level-settings-preview) y [períodos de tiempo de la directiva](insider-risk-management-settings.md#policy-timeframes). Considere la posibilidad de configurar opciones [de detecciones inteligentes](insider-risk-management-settings.md#intelligent-detections) para excluir tipos de archivo específicos, definir umbrales mínimos antes de que las directivas notifiquen las alertas de actividad y cambiar la configuración del volumen de alertas a una configuración inferior.
+- **Habilitar la personalización de alertas insertadas (versión preliminar):** la [habilitación de la personalización de alertas insertadas](/microsoft-365/compliance/insider-risk-management-settings#inline-alert-customization-preview) permite a analistas e investigadores editar directivas rápidamente al revisar alertas. Pueden actualizar umbrales para la detección de actividad con recomendaciones de Microsoft, configurar umbrales personalizados o omitir el tipo de actividad que creó la alerta. Si esto no está habilitado, solo los usuarios asignados al grupo de roles *Insider Risk Management* pueden usar la personalización de alertas en línea.
 - **Eliminación masiva de alertas cuando corresponda**: puede ayudar a ahorrar tiempo de evaluación de la evaluación para que los analistas e investigadores [descarten inmediatamente varias alertas](insider-risk-management-activities.md#dismiss-multiple-alerts-preview) a la vez. Puede seleccionar hasta 400 alertas para descartarlas a la vez.
 
 ### <a name="not-familiar-with-the-alert-triage-process"></a>No está familiarizado con el proceso de evaluación de prioridades de alertas

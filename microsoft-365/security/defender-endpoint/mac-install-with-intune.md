@@ -17,12 +17,12 @@ ms.collection:
 ms.topic: conceptual
 ms.subservice: mde
 search.appverid: met150
-ms.openlocfilehash: 83d2bf85a6e6edf612975b7679e40769d06a3a89
-ms.sourcegitcommit: 4e42bafee965446f44f7f57d1defed2b9b24fce8
+ms.openlocfilehash: b45ebdd1bd6ea920614a50266232261ce8620c37
+ms.sourcegitcommit: 04e517c7e00323b5c33d8ea937115725cf2cfd4d
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/30/2022
-ms.locfileid: "68221596"
+ms.lasthandoff: 10/13/2022
+ms.locfileid: "68565694"
 ---
 # <a name="intune-based-deployment-for-microsoft-defender-for-endpoint-on-macos"></a>Implementación basada en Intune para Microsoft Defender para punto de conexión en macOS
 
@@ -43,6 +43,7 @@ En este tema se describe cómo implementar Microsoft Defender para punto de cone
 1. [Publicar aplicación](#publish-application)
 
 ## <a name="prerequisites-and-system-requirements"></a>Requisitos previos y requisitos del sistema
+
 
 Antes de empezar, consulte [la página principal Microsoft Defender para punto de conexión en macOS](microsoft-defender-endpoint-mac.md) para obtener una descripción de los requisitos previos y los requisitos del sistema para la versión actual del software.
 
@@ -99,7 +100,7 @@ En el [Centro de administración de Microsoft Endpoint Manager](https://endpoint
 
 ### <a name="onboarding-blob"></a>Incorporación de blobs
 
-Este perfil contiene información de licencia para Microsoft Defender para punto de conexión. Sin este perfil, Microsoft Defender para punto de conexión notificará que no tiene licencia.
+Este perfil contiene información de licencia para Microsoft Defender para punto de conexión. Sin información de licencia, Microsoft Defender para punto de conexión informará de que no tiene licencia.
 
 1. Seleccione **Crear perfil** en **Perfiles de configuración**.
 1. Seleccione **Plataforma**=**macOS**, **Tipo**= de perfil **Plantillas**. **Nombre**= de plantilla **Personalizado**. Haga clic en **Crear**.

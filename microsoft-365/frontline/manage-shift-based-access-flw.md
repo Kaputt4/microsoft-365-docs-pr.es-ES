@@ -17,18 +17,19 @@ ms.collection:
 appliesto:
 - Microsoft Teams
 - Microsoft 365 for frontline workers
-ms.openlocfilehash: bcbf2a52e14b2a382581612c026589df4612e374
-ms.sourcegitcommit: 12af9e8e3a6eaa090fda9e98ccb831dff65863a4
+ms.openlocfilehash: 86e3977db3a4c338f2f4d4317cf252684ddd8ba9
+ms.sourcegitcommit: 04e517c7e00323b5c33d8ea937115725cf2cfd4d
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/27/2022
-ms.locfileid: "68068795"
+ms.lasthandoff: 10/13/2022
+ms.locfileid: "68565430"
 ---
 # <a name="manage-shift-based-access-for-frontline-workers-in-teams"></a>Administrar el acceso basado en turnos para los trabajadores de primera línea en Teams
 
-## <a name="overview"></a>Información general
+> [!IMPORTANT]
+> Esta característica ha quedado en desuso.
 
-[!INCLUDE [preview-feature](includes/preview-feature.md)]
+## <a name="overview"></a>Información general
 
 La presencia en Microsoft Teams indica la disponibilidad y el estado actuales de un usuario a otros usuarios. La presencia de trabajadores de primera línea suele ser menos predecible que el resto del personal, ya que su horario laboral no suele ser el mismo cada día. Como administrador, puede configurar Teams para mostrar un conjunto de estados de presencia basado en turnos para que los trabajadores de primera línea de su organización indiquen cuándo están dentro y fuera del turno.
 
@@ -123,7 +124,7 @@ En este ejemplo, asignamos una directiva denominada Mensaje personalizado de acc
 Grant-CsTeamsShiftsPolicy -Identity remy@contoso.com -PolicyName "Off Shift Teams Access Custom Message"
 ```
 
-## <a name="related-topics"></a>Temas relacionados
+## <a name="related-articles"></a>Artículos relacionados
 
 - [Administrar la aplicación Turnos para su organización en Teams](/microsoftteams/expand-teams-across-your-org/shifts/manage-the-shifts-app-for-your-organization-in-teams?bc=/microsoft-365/frontline/breadcrumb/toc.json&toc=/microsoft-365/frontline/toc.json)
 - [Descripción de PowerShell para Teams](/microsoftteams/teams-powershell-overview)

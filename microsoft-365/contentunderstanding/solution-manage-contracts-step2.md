@@ -12,12 +12,12 @@ search.appverid: ''
 ms.localizationpriority: medium
 ROBOTS: ''
 description: Obtenga información sobre cómo usar Microsoft Teams para crear el canal de administración de contratos mediante una solución de Microsoft 365.
-ms.openlocfilehash: 10d7598400f095dce34ed5fbb572608a7bd01306
-ms.sourcegitcommit: d3ef9391f621e8f4ca70661184b3bb82c6cbda94
+ms.openlocfilehash: 5c4f674ce315aa9e047ff56276bebc224738ce44
+ms.sourcegitcommit: 04e517c7e00323b5c33d8ea937115725cf2cfd4d
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/02/2022
-ms.locfileid: "67579212"
+ms.lasthandoff: 10/13/2022
+ms.locfileid: "68563804"
 ---
 # <a name="step-2-use-microsoft-teams-to-create-your-contract-management-channel"></a>Paso 2. Uso de Microsoft Teams para crear el canal de administración de contratos
 
@@ -36,7 +36,7 @@ Cuando su organización configura una solución de administración de contratos,
 
 ## <a name="attach-your-sharepoint-document-library-to-the-contracts-tab"></a>Adjuntar la biblioteca de documentos de SharePoint a la pestaña Contratos
 
-Después de crear una pestaña **Contratos** en el canal administración de contratos, debe [adjuntar la biblioteca de documentos de SharePoint a ella](https://support.microsoft.com/office/add-a-sharepoint-page-list-or-document-library-as-a-tab-in-teams-131edef1-455f-4c67-a8ce-efa2ebf25f0b). La biblioteca de documentos de SharePoint que desea adjuntar es la que aplicó el modelo de comprensión de documentos SharePoint Syntex en la sección anterior.
+Después de crear una pestaña **Contratos** en el canal administración de contratos, debe [adjuntar la biblioteca de documentos de SharePoint a ella](https://support.microsoft.com/office/add-a-sharepoint-page-list-or-document-library-as-a-tab-in-teams-131edef1-455f-4c67-a8ce-efa2ebf25f0b). La biblioteca de documentos de SharePoint que desea adjuntar es la que aplicó el modelo de comprensión de documentos de Syntex en la sección anterior.
 
 Después de adjuntar la biblioteca de documentos de SharePoint, podrá ver los contratos clasificados a través de una vista de lista predeterminada.
 
@@ -47,7 +47,7 @@ Después de adjuntar la biblioteca de documentos de SharePoint, podrá ver los c
 > [!NOTE]
 > Esta sección hace referencia a ejemplos de código incluidos en el archivo [ContractTileFormatting.json](https://github.com/pnp/syntex-samples/blob/main/scenario%20samples/Contracts%20Management/View%20Formatter/ContractTileFormatting.json) que se incluye en el [repositorio Recursos de solución de administración de contratos](https://github.com/pnp/syntex-samples/tree/main/scenario%20samples/Contracts%20Management).
 
-Aunque Teams le permite ver los contratos en una vista de icono, es posible que desee personalizarlo para ver los datos de contrato que desea que sean visibles en la tarjeta de contrato. Por ejemplo, en la pestaña **Contratos** , es importante que los miembros vean el cliente, el contratista y el importe de la tarifa en la tarjeta del contrato. Todos estos campos se extrajeron de cada contrato a través del modelo de SharePoint Syntex que se aplicó a la biblioteca de documentos. También quiere poder cambiar la barra de encabezado del icono a colores diferentes para cada estado para que los miembros puedan ver fácilmente dónde está el contrato en el proceso de aprobación. Por ejemplo, todos los contratos aprobados tendrán una barra de encabezado azul.
+Aunque Teams le permite ver los contratos en una vista de icono, es posible que desee personalizarlo para ver los datos de contrato que desea que sean visibles en la tarjeta de contrato. Por ejemplo, en la pestaña **Contratos** , es importante que los miembros vean el cliente, el contratista y el importe de la tarifa en la tarjeta del contrato. Todos estos campos se extrajeron de cada contrato a través del modelo de Syntex que se aplicó a la biblioteca de documentos. También quiere poder cambiar la barra de encabezado del icono a colores diferentes para cada estado para que los miembros puedan ver fácilmente dónde está el contrato en el proceso de aprobación. Por ejemplo, todos los contratos aprobados tendrán una barra de encabezado azul.
 
    ![Vista de mosaico de la biblioteca de SharePoint.](../media/content-understanding/tile.png)
 
@@ -106,7 +106,7 @@ El código siguiente le permite definir el estado de cada tarjeta de título. Te
 
 ## <a name="extracted-fields"></a>Campos extraídos
 
-Cada tarjeta de contrato mostrará tres campos que se extrajeron para cada contrato (*Cliente*, *Contratista* y *Importe de cuota*). Además, también desea mostrar la hora y la fecha en que el modelo de SharePoint Syntex ha clasificado el archivo para identificarlo.
+Cada tarjeta de contrato mostrará tres campos que se extrajeron para cada contrato (*Cliente*, *Contratista* y *Importe de cuota*). Además, también desea mostrar la hora y la fecha en que el archivo se clasificó por el modelo de Syntex usado para identificarlo.
 
 En el archivo [ContractTileFormatting.json](https://github.com/pnp/syntex-samples/blob/main/scenario%20samples/Contracts%20Management/View%20Formatter/ContractTileFormatting.json) , las secciones siguientes definen cada una de ellas.
 

@@ -12,18 +12,18 @@ ms.collection:
 - m365initiative-syntex
 search.appverid: MET150
 ms.localizationpriority: medium
-description: Obtenga información sobre cómo usar PowerShell para solicitar el procesamiento mediante un modelo de comprensión de documentos SharePoint Syntex.
-ms.openlocfilehash: a0806910e268585f27f320e541bb8f30c2bec7db
-ms.sourcegitcommit: cbb9a89499d42f4a029e18780bee408946e1671d
+description: Obtenga información sobre cómo usar PowerShell para solicitar el procesamiento por parte de un modelo de comprensión de documentos de Microsoft Syntex.
+ms.openlocfilehash: 1f537c3759ee8783c18bee5e8241e004c73f2eec
+ms.sourcegitcommit: 04e517c7e00323b5c33d8ea937115725cf2cfd4d
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/27/2022
-ms.locfileid: "68026015"
+ms.lasthandoff: 10/13/2022
+ms.locfileid: "68563238"
 ---
 # <a name="use-powershell-to-request-processing-by-a-document-understanding-model"></a>Uso de PowerShell para solicitar el procesamiento por un modelo de comprensión de documentos
 
 > [!IMPORTANT]
-> Los cmdlets de PowerShell SharePoint Syntex y todos los demás componentes de PnP son herramientas de código abierto respaldadas por una comunidad activa que proporciona soporte técnico para ellos. Los canales oficiales de soporte técnico de Microsoft no ofrecen ningún contrato de nivel de servicio para herramientas de código abierto.
+> Los cmdlets de PowerShell de Microsoft Syntex y todos los demás componentes de PnP son herramientas de código abierto respaldadas por una comunidad activa que proporciona soporte técnico para ellos. Los canales oficiales de soporte técnico de Microsoft no ofrecen ningún contrato de nivel de servicio para herramientas de código abierto.
 
 Los modelos de comprensión de documentos procesarán los archivos recién cargados en una biblioteca. También es posible solicitar manualmente el procesamiento en la interfaz de usuario. Sin embargo, puede haber escenarios en los que sea más eficaz desencadenar el procesamiento a través de PowerShell.
 

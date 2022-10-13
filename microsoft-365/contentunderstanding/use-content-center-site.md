@@ -1,5 +1,5 @@
 ---
-title: Uso de la plantilla de sitio del Centro de contenido para Microsoft SharePoint Syntex
+title: Uso de la plantilla de sitio del Centro de contenido para Microsoft Syntex
 ms.author: chucked
 author: chuckedmonson
 manager: pamgreen
@@ -12,23 +12,23 @@ ms.collection:
 - enabler-strategic
 - m365initiative-syntex
 ms.localizationpriority: medium
-description: Obtenga información sobre cómo aprovisionar y usar la plantilla de sitio del Centro de contenido en Microsoft SharePoint Syntex.
-ms.openlocfilehash: b82f649788f06dbd73cede83d635061894b50105
-ms.sourcegitcommit: 2b89bcff547e00be3d38dc8d1e6cbcf8f41eba42
+description: Obtenga información sobre cómo aprovisionar y usar la plantilla de sitio del Centro de contenido en Microsoft Syntex.
+ms.openlocfilehash: 9c5e1f09104026c04ee86d4b86a968d04ca2bcdb
+ms.sourcegitcommit: 04e517c7e00323b5c33d8ea937115725cf2cfd4d
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/03/2022
-ms.locfileid: "67599767"
+ms.lasthandoff: 10/13/2022
+ms.locfileid: "68564156"
 ---
-# <a name="use-the-content-center-site-template-for-microsoft-sharepoint-syntex"></a>Uso de la plantilla de sitio del Centro de contenido para Microsoft SharePoint Syntex
+# <a name="use-the-content-center-site-template-for-microsoft-syntex"></a>Uso de la plantilla de sitio del Centro de contenido para Microsoft Syntex
 
-El sitio del Centro de contenido de SharePoint Syntex es una plantilla de sitio de SharePoint de instrucciones lista para implementar diseñada para ayudarle a comprender mejor las capacidades de SharePoint Syntex.
+El sitio del Centro de contenido de Microsoft Syntex es una plantilla de sitio de SharePoint de instrucciones lista para implementar diseñada para ayudarle a comprender mejor las funcionalidades de Syntex.
 
-Se le presentarán las herramientas y la información que necesitará para crear y entrenar sus propios modelos. A continuación, podrá usar este sitio como repositorio de contenido central o como centro de control para administrar sus propios modelos de SharePoint Syntex.
+Se le presentarán las herramientas y la información que necesitará para crear y entrenar sus propios modelos. A continuación, podrá usar este sitio como repositorio de contenido central o como centro de control para administrar sus propios modelos de Syntex.
 
 ![Captura de pantalla de la página principal de la plantilla de sitio del Centro de contenido.](../media/content-understanding/content-center-site-home-page.png)
 
-En este sitio, los modelos se pueden entrenar y evaluar con su propio contenido. Sin embargo, para aplicar los modelos a las bibliotecas, se requiere una licencia para SharePoint Syntex.  
+En este sitio, los modelos se pueden entrenar y evaluar con su propio contenido. Sin embargo, para aplicar los modelos a las bibliotecas, se requiere una licencia para Syntex.  
 
 ## <a name="provision-the-site"></a>Aprovisionamiento del sitio
 
@@ -39,7 +39,7 @@ El sitio del Centro de contenido se puede aprovisionar desde el [servicio de lib
 > [!NOTE]
 > Debe ser administrador global o administrador de SharePoint en Microsoft 365 para aprovisionar el sitio.
 
-1. En la página principal del [libro de búsqueda de SharePoint](https://lookbook.microsoft.com/), en **el menú Ver los diseños**, seleccione **SharePoint Syntex** >  **SharePoint Syntex Centro de contenido**.
+1. En la página principal del [libro de apariencias de SharePoint](https://lookbook.microsoft.com/), en **el menú Ver los diseños** , seleccione Centro de contenido de **Syntex** > **Syntex**.
 
 2. En la página **Centro de contenido** , seleccione **Agregar al inquilino**.
 
@@ -51,17 +51,17 @@ El sitio del Centro de contenido se puede aprovisionar desde el [servicio de lib
 
 4. Seleccione **Aprovisionar** y, en poco tiempo, el sitio estará listo para el uso. Recibirá un correo electrónico (enviado a la dirección de correo electrónico que proporcionó) que indica que se ha completado la solicitud para aprovisionar la plantilla de sitio del Centro de contenido.
 
-5. Seleccione **Abrir sitio** y verá el sitio del Centro de contenido. Desde aquí, puede explorar el sitio y obtener más información sobre SharePoint Syntex. 
+5. Seleccione **Abrir sitio** y verá el sitio del Centro de contenido. Desde aquí, puede explorar el sitio y obtener más información sobre Syntex. 
 
 Para obtener más información sobre el aprovisionamiento desde el servicio de libro de apariencias de SharePoint, vea [Aprovisionamiento de una nueva solución de caminos de aprendizaje](/office365/customlearning/custom_provision).
 
 ## <a name="explore-the-site"></a>Explorar el sitio
 
-El sitio del Centro de contenido incluye páginas rellenadas previamente que le guiarán por los pasos para empezar a usar SharePoint Syntex en su organización. 
+El sitio del Centro de contenido incluye páginas rellenadas previamente que le guiarán por los pasos para empezar a usar Syntex en su organización. 
 
-### <a name="get-started-with-sharepoint-syntex"></a>Introducción a SharePoint Syntex
+### <a name="get-started-with-syntex"></a>Introducción a Syntex
 
-Obtenga una introducción a SharePoint Syntex y obtenga información sobre cómo puede usarla para su organización. Vea un vídeo que le proporciona información general sobre SharePoint Syntex y encuentre entrenamiento para ayudarle a empezar.
+Obtenga una introducción a Syntex y obtenga información sobre cómo puede usarla para su organización. Vea un vídeo que le proporciona información general sobre Syntex y encuentre formación que le ayude a empezar.
 
 ### <a name="learn-about-model-types"></a>Más información sobre los tipos de modelo
 
@@ -71,13 +71,13 @@ Obtenga información sobre tres tipos de modelos y vea cómo puede usarlos para 
 
 Vea cómo crear un modelo de comprensión de documentos en la biblioteca de modelos y, a continuación, habilite un modelo de ejemplo previamente entrenado.
 
-### <a name="sharepoint-syntex-in-six-simple-steps"></a>SharePoint Syntex en seis sencillos pasos
+### <a name="syntex-in-six-simple-steps"></a>Syntex en seis sencillos pasos
 
 Comience con un centro de contenido y aprenda paso a paso cómo crear modelos para identificar, clasificar y extraer la información que necesita.
 
 ### <a name="streamline-everyday-processes-and-tasks"></a>Simplificación de procesos y tareas diarios
 
-Aprenda a usar SharePoint Syntex para tomar lo que es manual y convertirlo en algo automatizado y optimizado para su organización.
+Aprenda a usar Syntex para tomar lo que es manual y convertirlo en algo automatizado y optimizado para su organización.
 
 ### <a name="manage-compliance"></a>Administración de cumplimiento
 
@@ -89,6 +89,6 @@ Vea cómo se usa el contenido para ilustrar la actividad del modelo y para propo
 
 ### <a name="find-additional-resources"></a>Búsqueda de recursos adicionales
 
-Descubra recursos y escenarios adicionales para ayudarle a obtener más información sobre SharePoint Syntex.
+Descubra recursos y escenarios adicionales para ayudarle a obtener más información sobre Syntex.
 
 

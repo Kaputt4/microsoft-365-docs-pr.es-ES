@@ -1,26 +1,26 @@
 ---
-title: Cambiar el nombre de un modelo en Microsoft SharePoint Syntex
+title: Cambiar el nombre de un modelo en Microsoft Syntex
 ms.author: chucked
 author: chuckedmonson
 manager: pamgreen
 audience: admin
 ms.reviewer: ssquires
 ms.topic: article
-ms.prod: microsoft-365-enterprise
+ms.service: microsoft-365-enterprise
 search.appverid: ''
 ms.collection:
 - enabler-strategic
 - m365initiative-syntex
 ms.localizationpriority: medium
-description: Obtenga información sobre cómo y por qué cambiar el nombre de un modelo de comprensión de documentos en Microsoft SharePoint Syntex.
-ms.openlocfilehash: 0044b237705e6a716efb6133db392c68b82c7a25
-ms.sourcegitcommit: dc415d784226c77549ba246601f34324c4f94e73
+description: Obtenga información sobre cómo y por qué cambiar el nombre de un modelo de comprensión de documentos en Microsoft Syntex.
+ms.openlocfilehash: 3629475a9579886f20c12031fa402fda68c0636e
+ms.sourcegitcommit: 04e517c7e00323b5c33d8ea937115725cf2cfd4d
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/19/2022
-ms.locfileid: "64916147"
+ms.lasthandoff: 10/13/2022
+ms.locfileid: "68564288"
 ---
-# <a name="rename-a-model-in-microsoft-sharepoint-syntex"></a>Cambiar el nombre de un modelo en Microsoft SharePoint Syntex
+# <a name="rename-a-model-in-microsoft-syntex"></a>Cambiar el nombre de un modelo en Microsoft Syntex
 
 En algún momento, puede que quiera cambiar el nombre de un modelo de comprensión mediante documentos. Un ejemplo común es cuando crea un borrador inicial de un modelo, para el que posiblemente no haya pensado demasiado en el nombre final (por ejemplo, es posible que lo llamara "AlexInerbaModel1"). A medida que está más cerca de finalizar el modelo y ponerlo en uso, se da cuenta de que un nombre más apropiado sería "Renovaciones de contrato" y decide cambiarle el nombre.  
 
@@ -53,7 +53,7 @@ Siga estos pasos para cambiar el nombre a un modelo de comprensión mediante doc
 
 5. Seleccione **Cambiar nombre**.
 
-## <a name="see-also"></a>Ver también
+## <a name="see-also"></a>Vea también
 [Crear un clasificador](create-a-classifier.md)
 
 [Crear un extractor](create-an-extractor.md)

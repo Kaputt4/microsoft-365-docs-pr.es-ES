@@ -18,12 +18,12 @@ ms.custom:
 description: Los administradores pueden obtener información sobre las opciones disponibles y preferidas para permitir mensajes entrantes en Exchange Online Protection (EOP).
 ms.subservice: mdo
 ms.service: microsoft-365-security
-ms.openlocfilehash: 529f65bcc957df681f6f4d03aa4c1e7a800195ba
-ms.sourcegitcommit: 12af9e8e3a6eaa090fda9e98ccb831dff65863a4
+ms.openlocfilehash: ea351bc854d34d0a2e618fda0344569b70c00e7d
+ms.sourcegitcommit: 04e517c7e00323b5c33d8ea937115725cf2cfd4d
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/27/2022
-ms.locfileid: "68088649"
+ms.lasthandoff: 10/13/2022
+ms.locfileid: "68565847"
 ---
 # <a name="create-safe-sender-lists-in-eop"></a>Creación de listas de remitentes seguros en EOP
 
@@ -110,7 +110,9 @@ En el ejemplo siguiente se supone que necesita correo electrónico de contoso.co
 
 En lugar de una configuración organizativa, los usuarios o administradores pueden agregar las direcciones de correo electrónico del remitente a la lista Remitentes seguros del buzón. Para obtener instrucciones, consulte [Configuración del correo electrónico no deseado en Exchange Online buzones de Office 365](configure-junk-email-settings-on-exo-mailboxes.md). Este método no es deseable en la mayoría de las situaciones, ya que los remitentes omitirán partes de la pila de filtrado. Aunque confía en el remitente, el remitente puede seguir en peligro y enviar contenido malintencionado. Es mejor cuando deje que nuestros filtros comprueben todos los mensajes y [luego notifiquen el falso positivo o negativo a Microsoft](report-junk-email-messages-to-microsoft.md) si nos equivocamos. La omisión de la pila de filtrado también interfiere con la [purga automática de cero horas (ZAP).](zero-hour-auto-purge.md)
 
-Por diseño y por mayor seguridad de Exchange Online buzones, solo se reconoce la configuración de correo no deseado para remitentes seguros y dominios seguros, remitentes bloqueados y dominios bloqueados. Se omite la configuración de la lista de correo electrónico seguro.
+Por diseño y por mayor seguridad de Exchange Online buzones, solo se reconoce la configuración de correo no deseado para remitentes seguros, remitentes bloqueados y dominios bloqueados. Se omite la configuración de la lista de correo electrónico seguro.
+
+**Nota**: En Exchange Online, las entradas de dominio de la lista Remitentes seguros de Outlook o el parámetro TrustedSendersAndDomains no se reconocen, por lo que solo se usan direcciones de correo electrónico.
 
 Cuando los mensajes omiten el filtrado de correo no deseado debido a la lista de remitentes seguros de un usuario, el campo de encabezado **X-Forefront-Antispam-Report** contendrá el valor `SFV:SFE`, que indica que se omitió el filtrado de correo no deseado, suplantación de identidad y suplantación de identidad (phishing).
 

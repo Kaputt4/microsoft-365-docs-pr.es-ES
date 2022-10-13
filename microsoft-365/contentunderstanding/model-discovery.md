@@ -1,26 +1,26 @@
 ---
-title: Publicación y detección de modelos en Microsoft SharePoint Syntex
+title: Publicación y detección de modelos en Microsoft Syntex
 ms.author: chucked
 author: chuckedmonson
 manager: pamgreen
 audience: admin
 ms.reviewer: ssquires
 ms.topic: article
-ms.prod: microsoft-365-enterprise
+ms.service: microsoft-365-enterprise
 search.appverid: ''
 ms.collection:
 - enabler-strategic
 - m365initiative-syntex
 ms.localizationpriority: medium
-description: Obtenga información sobre cómo hacer que los modelos entrenados estén disponibles para otros usuarios y cómo aplicar otros modelos entrenados en Microsoft SharePoint Syntex.
-ms.openlocfilehash: 758f6886af6606c57c50c5c4c88e35f7aeeaefe4
-ms.sourcegitcommit: dc415d784226c77549ba246601f34324c4f94e73
+description: Obtenga información sobre cómo hacer que los modelos entrenados estén disponibles para otros usuarios y cómo aplicar otros modelos entrenados en Microsoft Syntex.
+ms.openlocfilehash: d39bbf3301e2e699db937ec4da3f8a7d3b624bdc
+ms.sourcegitcommit: 04e517c7e00323b5c33d8ea937115725cf2cfd4d
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/19/2022
-ms.locfileid: "64916279"
+ms.lasthandoff: 10/13/2022
+ms.locfileid: "68565012"
 ---
-# <a name="publish-and-discover-models-in-microsoft-sharepoint-syntex"></a>Publicación y detección de modelos en Microsoft SharePoint Syntex
+# <a name="publish-and-discover-models-in-microsoft-syntex"></a>Publicación y detección de modelos en Microsoft Syntex
 
 Puede hacer que los modelos entrenados de comprensión mediante documentos estén disponibles para que otros usuarios puedan verlos y usarlos directamente desde la biblioteca de documentos de SharePoint. 
 
@@ -39,7 +39,7 @@ Para que el modelo entrenado esté disponible para que otros usuarios lo usen:
 
 3. En este punto, el panel **Seleccionar los sitios donde está disponible este modelo** será diferente en función de si es administrador o no. 
 
-    Si es un administrador SharePoint, verá esta vista.
+    Si es administrador de SharePoint, verá esta vista.
 
     ![Captura de pantalla del panel Seleccionar los sitios donde está disponible este modelo que muestra las opciones de dónde desea que el modelo esté disponible para otros usuarios.](../media/content-understanding/select-sites.png)
 
@@ -47,7 +47,7 @@ Para que el modelo entrenado esté disponible para que otros usuarios lo usen:
     - **Todos los sitios**: el modelo estará disponible en la galería de tipo de contenido para que lo usen otros usuarios.
     - **Solo sitios seleccionados**: puede elegir el sitio o los sitios en los que el modelo estará disponible. Haga clic en el cuadro de texto para buscar y elegir los sitios a los que desea aplicar el modelo. Solo verá los sitios a los que tiene acceso.
 
-    Si *no* es un administrador SharePoint, verá esta vista.
+    Si *no* es administrador de SharePoint, verá esta vista.
 
     ![Captura de pantalla del panel Seleccionar los sitios donde está disponible este modelo que muestra las opciones para los usuarios finales con solo algunos sitios disponibles.](../media/content-understanding/select-site-user.png)
 

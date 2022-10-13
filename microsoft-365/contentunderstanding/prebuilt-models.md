@@ -1,26 +1,26 @@
 ---
-title: Usar un modelo precompilado para extraer información de facturas o recibos en Microsoft SharePoint Syntex
+title: Uso de un modelo precompilado para extraer información de facturas o recibos en Microsoft Syntex
 ms.author: chucked
 author: chuckedmonson
 manager: pamgreen
 ms.reviewer: ssquires
 audience: admin
 ms.topic: article
-ms.prod: microsoft-365-enterprise
+ms.service: microsoft-365-enterprise
 search.appverid: ''
 ms.collection:
 - enabler-strategic
 - m365initiative-syntex
 ms.localizationpriority: medium
-description: Obtenga información sobre cómo crear y configurar un modelo precompilado en SharePoint Syntex.
-ms.openlocfilehash: f3b262ca94e0bfc6886a2ce84ae614569c584bf1
-ms.sourcegitcommit: 46e796c6b76a01516c48977335bbf5076ca74a06
+description: Obtenga información sobre cómo crear y configurar un modelo precompilado en Microsoft Syntex.
+ms.openlocfilehash: 7ec51b86bc6645e2ebe13923969155e1b6b309b7
+ms.sourcegitcommit: 04e517c7e00323b5c33d8ea937115725cf2cfd4d
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/09/2022
-ms.locfileid: "64738433"
+ms.lasthandoff: 10/13/2022
+ms.locfileid: "68563282"
 ---
-# <a name="use-a-prebuilt-model-to-extract-info-from-invoices-or-receipts-in-microsoft-sharepoint-syntex"></a>Usar un modelo precompilado para extraer información de facturas o recibos en Microsoft SharePoint Syntex
+# <a name="use-a-prebuilt-model-to-extract-info-from-invoices-or-receipts-in-microsoft-syntex"></a>Uso de un modelo precompilado para extraer información de facturas o recibos en Microsoft Syntex
 
 Los modelos precompilados se entrenan previamente para reconocer los documentos y la información estructurada de los documentos. En lugar de tener que crear un nuevo modelo personalizado desde cero, puede iterar en un modelo previamente entrenado existente para agregar campos específicos que se ajusten a las necesidades de su organización. 
 
@@ -34,7 +34,7 @@ Los modelos precompilados adicionales estarán disponibles en futuras versiones.
 
 ## <a name="create-a-prebuilt-model"></a>Creación de un modelo precompilado
 
-Siga estos pasos para crear un modelo precompilado para clasificar documentos en SharePoint Syntex.
+Siga estos pasos para crear un modelo precompilado para clasificar documentos en Syntex.
 
 1. En la página **Modelos** , seleccione **Crear un modelo**.
 

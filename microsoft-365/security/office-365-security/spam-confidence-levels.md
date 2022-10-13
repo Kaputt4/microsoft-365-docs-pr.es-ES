@@ -13,18 +13,18 @@ search.appverid:
 - MET150
 ms.assetid: 34681000-0022-4b92-b38a-e32b3ed96bf6
 ms.collection:
-- M365-security-compliance
+- m365-security
 ms.custom:
 - seo-marvel-apr2020
 description: Los administradores pueden obtener información sobre el nivel de confianza de correo no deseado (SCL) que se aplica a los mensajes de Exchange Online Protection (EOP).
 ms.subservice: mdo
 ms.service: microsoft-365-security
-ms.openlocfilehash: 4f041fe92d6ba295a11dab7904316b238686a34f
-ms.sourcegitcommit: 2b89bcff547e00be3d38dc8d1e6cbcf8f41eba42
+ms.openlocfilehash: 498a2ea8b0fc50e426c870bace29d2b34a1f06ec
+ms.sourcegitcommit: 04e517c7e00323b5c33d8ea937115725cf2cfd4d
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/03/2022
-ms.locfileid: "67595947"
+ms.lasthandoff: 10/13/2022
+ms.locfileid: "68563782"
 ---
 # <a name="spam-confidence-level-scl-in-eop"></a>Nivel de confianza de correo no deseado (SCL) en EOP
 
@@ -42,9 +42,9 @@ En la tabla siguiente se describe lo que significa SCL y las acciones predetermi
 |-1|El mensaje omitió el filtrado de correo no deseado. Por ejemplo, el mensaje procede de un remitente seguro, se envió a un destinatario seguro o es de un servidor de origen de correo electrónico en la lista de direcciones IP permitidas. Para obtener más información, consulte [Creación de listas de remitentes seguros en EOP](create-safe-sender-lists-in-office-365.md).|Se entrega el mensaje a la bandeja de entrada de los destinatarios.|
 |0, 1|El filtrado de correo no deseado determinó que el mensaje no era spam.|Se entrega el mensaje a la bandeja de entrada de los destinatarios.|
 |5, 6|El filtrado de correo no deseado marcó el mensaje como **Correo no deseado**|El mensaje se entrega a la carpeta de Correo no deseado de los destinatarios.|
-|9 |El filtrado de correo no deseado marcó el mensaje como **spam de alta confianza**.|El mensaje se entrega a la carpeta de Correo no deseado de los destinatarios.|
+|8, 9|El filtrado de correo no deseado marcó el mensaje como **spam de alta confianza**.|El mensaje se entrega a la carpeta de Correo no deseado de los destinatarios.|
 
-Observará que el filtrado de correo no deseado no usa SCL 2, 3, 4, 7 y 8.
+Observará que el filtrado de correo no deseado no usa SCL 2, 3, 4 y 7.
 
 Puede usar reglas de flujo de correo (también conocidas como reglas de transporte) para marcar la SCL en los mensajes. Si usa una regla de flujo de correo para establecer la SCL, los valores 5 o 6 desencadenan la acción de filtrado de correo no **deseado para spam** y los valores 7, 8 o 9 desencadenan la acción de filtrado de correo no deseado para el **correo no deseado de alta confianza**. Para obtener más información, vea [Usar reglas de flujo de mensajes para establecer el nivel de confianza de spam (SCL) en los mensajes](/exchange/security-and-compliance/mail-flow-rules/use-rules-to-set-scl).
 

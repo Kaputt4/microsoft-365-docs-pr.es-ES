@@ -1,6 +1,6 @@
 ---
 title: Insertar tipos de contenido en un centro
-description: Obtenga información sobre cómo insertar tipos de contenido en un centro
+description: Obtenga información sobre cómo insertar tipos de contenido en un centro de conectividad.
 ms.author: mikeplum
 author: MikePlumleyMSFT
 ms.reviewer: shrganguly
@@ -14,12 +14,12 @@ ms.collection:
 - m365initiative-syntex
 ms.custom: admindeeplinkSPO
 ms.localizationpriority: high
-ms.openlocfilehash: 9a90c076d8097a2497a536db89f1879b91279105
-ms.sourcegitcommit: 8d3c027592a638f411f87d89772dd3d39e92aab0
+ms.openlocfilehash: 3437073029cae2611d10a53b6f07d4d56ca19722
+ms.sourcegitcommit: 04e517c7e00323b5c33d8ea937115725cf2cfd4d
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/12/2022
-ms.locfileid: "68536398"
+ms.lasthandoff: 10/13/2022
+ms.locfileid: "68565474"
 ---
 # <a name="push-content-types-to-a-hub"></a>Insertar tipos de contenido en un centro
 
@@ -30,7 +30,7 @@ ms.locfileid: "68536398"
 </br>
 
 
-Para que los tipos de contenido importantes estén disponibles de forma más coherente en las listas y bibliotecas de SharePoint, puede insertarlos en los centros que elija. Al insertar los tipos de contenido se agregarán automáticamente a las nuevas listas y bibliotecas creadas en los sitios asociados con el centro, y a los nuevos sitios que se agreguen al centro. Esta característica requiere una licencia de [SharePoint Syntex](index.md).
+Para que los tipos de contenido importantes estén disponibles de forma más coherente en las listas y bibliotecas de SharePoint, puede insertarlos en los centros que elija. Al insertar los tipos de contenido se agregarán automáticamente a las nuevas listas y bibliotecas creadas en los sitios asociados con el centro, y a los nuevos sitios que se agreguen al centro. Esta característica requiere una licencia [de Microsoft Syntex](index.md) .
 
 Para que esta característica funcione, los tipos de contenido que se insertan ya deben haber sido publicados.
 

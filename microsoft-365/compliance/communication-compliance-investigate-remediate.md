@@ -20,12 +20,12 @@ ms.custom: admindeeplinkCOMPLIANCE
 search.appverid:
 - MET150
 - MOE150
-ms.openlocfilehash: 21fadb41e5e63780ccd25f5089af9d39ec96016d
-ms.sourcegitcommit: 8d3c027592a638f411f87d89772dd3d39e92aab0
+ms.openlocfilehash: 34202379220a6a36194662f4b8b2a74a71258b6f
+ms.sourcegitcommit: 04e517c7e00323b5c33d8ea937115725cf2cfd4d
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/12/2022
-ms.locfileid: "68533516"
+ms.lasthandoff: 10/13/2022
+ms.locfileid: "68565232"
 ---
 # <a name="investigate-and-remediate-communication-compliance-alerts"></a>Investigar y corregir las alertas de cumplimiento de las comunicaciones
 
@@ -251,7 +251,7 @@ Cuando se resuelven los mensajes, se quitan de la vista de pestaña **Pendiente*
 
 Para anular la resescala de los mensajes, siga estos pasos:
 
-1. Inicie sesión en el [portal de cumplimiento Microsoft Purview](https://compliance.microsoft.com) con las credenciales de un usuario asignado a los grupos de roles *Analista de cumplimiento de comunicaciones* o *Investigador de cumplimiento de comunicaciones* de su organización de Microsoft 365.
+1. Inicie sesión en el [portal de cumplimiento Microsoft Purview](https://compliance.microsoft.com) con las credenciales de un usuario asignado a los grupos de roles *Analistas de cumplimiento de comunicaciones* o *Investigadores de cumplimiento de comunicaciones* de su organización de Microsoft 365.
 2. En el portal de cumplimiento Microsoft Purview, vaya a **Cumplimiento de comunicaciones**.
 3. Seleccione la pestaña **Directivas** y, a continuación, seleccione una directiva que contenga el mensaje de alerta resuelto y haga doble clic para abrir la página **Directiva** .
 4. En la página **Directiva** , seleccione la pestaña **Resuelto** .

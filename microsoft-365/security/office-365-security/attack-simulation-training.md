@@ -14,12 +14,12 @@ ms.custom: ''
 description: Los administradores pueden aprender a simular ataques de suplantación de identidad (phishing) y entrenar a sus usuarios en la prevención de suplantación de identidad mediante Entrenamiento de simulación de ataque en Microsoft Defender para Office 365 Plan 2.
 ms.subservice: mdo
 search.appverid: met150
-ms.openlocfilehash: cfd17d6aeb21b05aef13c95489780ddcd209fbf0
-ms.sourcegitcommit: 12af9e8e3a6eaa090fda9e98ccb831dff65863a4
+ms.openlocfilehash: 144d1788b861566c496ced4e927a8591647a93b8
+ms.sourcegitcommit: 04e517c7e00323b5c33d8ea937115725cf2cfd4d
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/27/2022
-ms.locfileid: "68048932"
+ms.lasthandoff: 10/13/2022
+ms.locfileid: "68566022"
 ---
 # <a name="simulate-a-phishing-attack-with-attack-simulation-training-in-defender-for-office-365"></a>Simulación de un ataque de suplantación de identidad (phishing) con Entrenamiento de simulación de ataque en Defender para Office 365
 
@@ -311,7 +311,7 @@ Cuando termine, haga clic en **Siguiente**.
 
 ### <a name="landing-page"></a>Página de aterrizaje
 
-En la **página De aterrizaje** , configurará la página web a la que se llevará el usuario si abre la carga en la simulación.
+En la página **De aterrizaje** , configurará la página web a la que se llevarán los usuarios si abren la carga en la simulación.
 
 Las páginas de aterrizaje seleccionadas por Microsoft están disponibles en 12 idiomas: chino (simplificado), chino (tradicional), inglés, francés, alemán, italiano, japonés, coreano, portugués, ruso, español y holandés.
 
@@ -527,6 +527,7 @@ Estas son las opciones de configuración disponibles:
     - **Seleccionar la hora de inicio**
 - **Configure el número de días para finalizar la simulación después** de: El valor predeterminado es 2.
 - **Habilitar la entrega de zona horaria compatible con la región**: entregue mensajes de ataque simulados a los empleados durante su horario laboral en función de su región.
+- **Mostrar la página recopilada de datos intersticiales de técnica** de unidad por: puede mostrar la superposición que aparece para los ataques de técnica de dirección URL de unidad por. Para ocultar esta superposición y ir directamente a la página de aterrizaje, anule la selección de esta opción.
 
 - **Mostrar la página recopilada de datos intersticiales de técnica de unidad por**: esta configuración solo está disponible si seleccionó **Dirección URL de unidad por** en la página [seleccionar una técnica](#select-a-social-engineering-technique) . Puede mostrar la superposición que aparece para los ataques de técnica de dirección URL de unidad por. Para ocultar la superposición e ir directamente a la página de aterrizaje, no seleccione esta opción.
 

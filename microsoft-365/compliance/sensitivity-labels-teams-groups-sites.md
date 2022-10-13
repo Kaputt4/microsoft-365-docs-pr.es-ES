@@ -19,12 +19,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Usar etiquetas de confidencialidad para proteger el contenido en los sitios de SharePoint y Microsoft Teams, y los grupos de Microsoft 365.
-ms.openlocfilehash: 0541fb9994a567f0ded9377380dd402522ad9e19
-ms.sourcegitcommit: 8d3c027592a638f411f87d89772dd3d39e92aab0
+ms.openlocfilehash: 279fdd6738811dda31a237e57b91558fb439d81b
+ms.sourcegitcommit: 04e517c7e00323b5c33d8ea937115725cf2cfd4d
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/12/2022
-ms.locfileid: "68536970"
+ms.lasthandoff: 10/13/2022
+ms.locfileid: "68565891"
 ---
 # <a name="use-sensitivity-labels-to-protect-content-in-microsoft-teams-microsoft-365-groups-and-sharepoint-sites"></a>Usar etiquetas de confidencialidad para proteger el contenido en Microsoft Teams, grupos de Microsoft 365 y sitios de SharePoint
 
@@ -36,7 +36,7 @@ Además de usar [etiquetas de confidencialidad](sensitivity-labels.md) para prot
 - Acceso de usuarios externos
 - Uso compartido externo desde sitios de SharePoint 
 - Acceso desde dispositivos no administrados
-- Contextos de autenticación (en versión preliminar)
+- Contextos de autenticación
 - Vínculo de uso compartido predeterminado para un sitio de SharePoint (configuración solo de PowerShell)
 - Configuración de uso compartido de sitios (configuración solo de PowerShell)
 
@@ -121,7 +121,7 @@ Una vez habilitadas las etiquetas de confidencialidad para los contenedores como
             
             Para obtener más información sobre la configuración, vea la opción [Más información sobre las dependencias para los dispositivos no administrados](#more-information-about-the-dependencies-for-the-unmanaged-devices-option) al final de esta sección.
             
-        - **Elegir un contexto de autenticación existente**: actualmente en versión preliminar, esta opción le permite exigir condiciones de acceso más estrictas cuando los usuarios acceden a sitios de SharePoint que tienen esta etiqueta aplicada. Estas condiciones se aplican al seleccionar un contexto de autenticación existente que se ha creado y publicado para la implementación de acceso condicional de su organización. Si los usuarios no cumplen las condiciones configuradas o usan aplicaciones que no admiten contextos de autenticación, se les denegará el acceso.
+        - **Elija un contexto de autenticación existente**: esta opción le permite aplicar condiciones de acceso más estrictas cuando los usuarios acceden a sitios de SharePoint que tienen aplicada esta etiqueta. Estas condiciones se aplican al seleccionar un contexto de autenticación existente que se ha creado y publicado para la implementación de acceso condicional de su organización. Si los usuarios no cumplen las condiciones configuradas o usan aplicaciones que no admiten contextos de autenticación, se les denegará el acceso.
             
             Para obtener más información de configuración, consulte [Más información sobre las dependencias de la opción de contexto de autenticación](#more-information-about-the-dependencies-for-the-authentication-context-option) al final de esta sección.
             
@@ -174,7 +174,7 @@ Not all apps support authentication contexts. If a user with an unsupported app 
     - iOS: Rolling out in 12.30
     - Android: aún no compatible
 
-Limitaciones conocidas de esta versión preliminar:
+Limitaciones conocidas:
 
 - Para la aplicación de Sincronización de OneDrive, solo es compatible con OneDrive y no con otros sitios.
 

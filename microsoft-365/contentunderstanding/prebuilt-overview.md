@@ -1,5 +1,5 @@
 ---
-title: Introducción a los modelos creados previamente en Microsoft SharePoint Syntex
+title: Introducción a los modelos precompilados en Microsoft Syntex
 ms.author: chucked
 author: chuckedmonson
 manager: pamgreen
@@ -7,23 +7,23 @@ ms.reviewer: ssquires
 audience: admin
 ms.topic: article
 ms.customer: intro-overview
-ms.prod: microsoft-365-enterprise
+ms.service: microsoft-365-enterprise
 search.appverid: ''
 ms.collection:
 - enabler-strategic
 - m365initiative-syntex
 ms.localizationpriority: medium
-description: Obtenga información sobre los modelos precompilados en Microsoft SharePoint Syntex.
-ms.openlocfilehash: 04247a627c30e4a13209f11bcdf40c3b24e8aea0
-ms.sourcegitcommit: ecc04b5b8f84b34255a2d5e90b5ab596af0d16c7
+description: Obtenga información sobre los modelos precompilados en Microsoft Syntex.
+ms.openlocfilehash: 8d5d2c9a4103c02e4acab10f653ae658679a1c07
+ms.sourcegitcommit: 04e517c7e00323b5c33d8ea937115725cf2cfd4d
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/01/2022
-ms.locfileid: "67497591"
+ms.lasthandoff: 10/13/2022
+ms.locfileid: "68563193"
 ---
-# <a name="prebuilt-models-overview-in-microsoft-sharepoint-syntex"></a>Introducción a los modelos creados previamente en Microsoft SharePoint Syntex
+# <a name="prebuilt-models-overview-in-microsoft-syntex"></a>Introducción a los modelos precompilados en Microsoft Syntex
 
-Además de [documentar los modelos de comprensión](document-understanding-overview.md) y [los modelos de procesamiento de formularios](form-processing-overview.md), SharePoint Syntex proporciona modelos precompilados para automatizar la extracción de información.
+Además de [comprender los modelos](document-understanding-overview.md) y los [modelos de procesamiento de formularios](form-processing-overview.md), Microsoft Syntex proporciona modelos precompilados para automatizar la extracción de información.
 
 Los modelos precompilados se entrenan previamente para reconocer los documentos y la información estructurada de los documentos. En lugar de tener que crear un nuevo modelo personalizado desde cero, puede iterar en un modelo previamente entrenado existente para agregar campos específicos que se ajusten a las necesidades de su organización. 
 

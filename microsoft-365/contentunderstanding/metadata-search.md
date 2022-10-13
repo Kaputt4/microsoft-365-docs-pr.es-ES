@@ -1,5 +1,5 @@
 ---
-title: Buscar metadatos en bibliotecas de documentos en Microsoft SharePoint Syntex
+title: Búsqueda de metadatos en bibliotecas de documentos en Microsoft Syntex
 ms.author: chucked
 author: chuckedmonson
 manager: pamgreen
@@ -12,22 +12,22 @@ ms.collection:
 - enabler-strategic
 - m365initiative-syntex
 ms.localizationpriority: high
-description: Obtenga información sobre cómo usar la búsqueda avanzada de metadatos y la búsqueda de columnas de sitio personalizadas para buscar elementos en bibliotecas de documentos de SharePoint con SharePoint Syntex.
-ms.openlocfilehash: db13be1ce22becc10d04bf7e18becc9208784844
-ms.sourcegitcommit: 62368e5a48e569c8e475b07d194d7d8ff7d167ab
+description: Obtenga información sobre cómo usar la búsqueda avanzada de metadatos y buscar columnas de sitio personalizadas para buscar elementos en bibliotecas de documentos de SharePoint mediante Microsoft Syntex.
+ms.openlocfilehash: 359bde29850c54a9c1a338d95aa826894b1b3dcf
+ms.sourcegitcommit: 04e517c7e00323b5c33d8ea937115725cf2cfd4d
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/02/2022
-ms.locfileid: "67560183"
+ms.lasthandoff: 10/13/2022
+ms.locfileid: "68565869"
 ---
-# <a name="search-for-metadata-in-document-libraries-in-microsoft-sharepoint-syntex"></a>Buscar metadatos en bibliotecas de documentos en Microsoft SharePoint Syntex
+# <a name="search-for-metadata-in-document-libraries-in-microsoft-syntex"></a>Búsqueda de metadatos en bibliotecas de documentos en Microsoft Syntex
 
-La característica de búsqueda avanzada de metadatos de SharePoint Syntex le permite realizar consultas específicas basadas en metadatos en bibliotecas de documentos de SharePoint. Puede realizar consultas más rápidas y precisas basadas en valores de columna de metadatos específicos, en lugar de simplemente buscar palabras clave.
+La característica de búsqueda avanzada de metadatos de Microsoft Syntex le permite realizar consultas específicas basadas en metadatos en bibliotecas de documentos de SharePoint. Puede realizar consultas más rápidas y precisas basadas en valores de columna de metadatos específicos, en lugar de simplemente buscar palabras clave.
 
 La búsqueda avanzada de metadatos le permite usar los metadatos asociados a un documento para ayudar a localizar el archivo en una biblioteca de documentos de SharePoint. Esta función es especialmente útil cuando tiene una parte específica de la información que desea buscar, por ejemplo, cuándo se modificó por última vez un documento, una persona específica asociada a un archivo o un tipo de archivo específico.
 
 > [!NOTE]
-> Esta característica solo está disponible para los usuarios con licencia para SharePoint Syntex. 
+> Esta característica solo está disponible para los usuarios con licencia para Syntex. 
 
 ## <a name="to-use-advanced-metadata-search"></a>Para usar la búsqueda avanzada de metadatos
 
@@ -56,4 +56,4 @@ La búsqueda avanzada de metadatos le permite usar los metadatos asociados a un 
 
     ![Captura de pantalla del menú Agregar más opciones en el panel de búsqueda de metadatos.](../media/content-understanding/metadata-search-add-more-options.png)
 
-4. Seleccione **Buscar**. Los documentos que coinciden con su búsqueda de metadatos se muestran en la página de resultados. 
+4. Seleccione **Buscar**. Los documentos que coinciden con la búsqueda de metadatos se muestran en la página de resultados. 

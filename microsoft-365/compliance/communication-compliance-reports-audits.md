@@ -14,19 +14,24 @@ f1_keywords:
 ms.service: O365-seccomp
 ms.localizationpriority: medium
 ms.collection:
-- Strat_O365_IP
-- M365-security-compliance
+- tier1
+- purview-compliance
 search.appverid:
 - MET150
 - MOE150
-ms.openlocfilehash: a3348ccc2458252aca84762d89d58dbeb9ebe92a
-ms.sourcegitcommit: 95ac076310ab9006ed92c69938f7ae771cd10826
+ms.openlocfilehash: b4697afae9745934437084927ed347582c4a300a
+ms.sourcegitcommit: 04e517c7e00323b5c33d8ea937115725cf2cfd4d
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/20/2022
-ms.locfileid: "67851598"
+ms.lasthandoff: 10/13/2022
+ms.locfileid: "68565100"
 ---
 # <a name="use-communication-compliance-reports-and-audits"></a>Uso de informes y auditorías de cumplimiento de comunicaciones
+
+>[!IMPORTANT]
+>Cumplimiento de comunicaciones de Microsoft Purview proporciona las herramientas para ayudar a las organizaciones a detectar infracciones de cumplimiento normativo (por ejemplo, SEC o FINRA), como información confidencial o confidencial, hostigamiento o amenazante del lenguaje y uso compartido de contenido para adultos. Creados con privacidad por diseño, los nombres de usuario se seudonimizan de forma predeterminada, los controles de acceso basados en roles se integran, los investigadores son admitidos por un administrador y los registros de auditoría están en vigor para garantizar la privacidad del nivel de usuario.
+
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
 
 ## <a name="reports"></a>Informes
 
@@ -145,7 +150,7 @@ En algunos casos, debe proporcionar información a los auditores normativos o de
 > [!IMPORTANT]
 > La auditoría debe estar habilitada para su organización antes de que se registren los eventos de cumplimiento de la comunicación. Para habilitar la auditoría, consulte [Habilitación del registro de auditoría](/microsoft-365/compliance/communication-compliance-configure#step-2-required-enable-the-audit-log). Cuando las actividades desencadenan eventos que se capturan en el registro de auditoría de Microsoft 365, estos eventos pueden tardar hasta 48 horas en verse en las directivas de cumplimiento de comunicaciones.
 
-Para ver las actividades de actualización de directivas de cumplimiento de comunicaciones, seleccione el control **Exportar actualizaciones de directivas** en la página principal de cualquier directiva. Debe tener asignados los roles *globales de Administración* o *cumplimiento de comunicaciones Administración* para exportar las actividades de actualización. Esta acción genera un archivo de auditoría en el formato .csv que contiene la siguiente información:
+Para ver las actividades de actualización de directivas de cumplimiento de comunicaciones, seleccione el control **Exportar actualizaciones de directivas** en la página principal de cualquier directiva. Debe tener asignados los roles *Administradores globales de Administración* o *cumplimiento de comunicaciones* para exportar las actividades de actualización. Esta acción genera un archivo de auditoría en el formato .csv que contiene la siguiente información:
 
 |Campo|Detalles|
 |---|---|
@@ -154,7 +159,7 @@ Para ver las actividades de actualización de directivas de cumplimiento de comu
 | **Operations** | Las operaciones de actualización realizadas en la directiva. |
 | **AuditData** | Este campo es el origen de datos principal para todas las actividades de actualización de directivas. Todas las actividades de actualización se registran y separan mediante delimitadores de comas. |
 
-Para ver las actividades de revisión de cumplimiento de comunicaciones de una directiva, seleccione el control **Exportar actividades de revisión** en la página **Información general** de una directiva específica. Debe tener asignados los roles *globales de Administración* o *cumplimiento de comunicaciones Administración* para exportar las actividades de revisión. Esta acción genera un archivo de auditoría en el formato .csv que contiene la siguiente información:
+Para ver las actividades de revisión de cumplimiento de comunicaciones de una directiva, seleccione el control **Exportar actividades de revisión** en la página **Información general** de una directiva específica. Debe tener asignados los roles *Administradores globales de Administración* o *de cumplimiento de comunicaciones* para exportar las actividades de revisión. Esta acción genera un archivo de auditoría en el formato .csv que contiene la siguiente información:
 
 |Campo|Detalles|
 |---|---|

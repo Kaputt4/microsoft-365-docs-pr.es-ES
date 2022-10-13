@@ -1,5 +1,6 @@
 ---
 title: Límites de búsqueda de contenido y exhibición de documentos electrónicos (estándar) en el centro de cumplimiento
+description: Obtenga información sobre los límites vigentes para las características búsqueda de contenido y exhibición de documentos electrónicos (estándar) en el portal de cumplimiento Microsoft Purview.
 f1.keywords:
 - NOCSH
 ms.author: robmazz
@@ -10,25 +11,26 @@ ms.topic: article
 ms.service: O365-seccomp
 ms.localizationpriority: medium
 ms.collection:
-- Strat_O365_IP
-- M365-security-compliance
+- tier1
+- purview-compliance
+- ediscovery
 search.appverid:
 - MOE150
 - MET150
-ms.assetid: 78fe3147-1979-4c41-83bb-aeccf244368d
-description: Obtenga información sobre los límites vigentes para las características búsqueda de contenido y exhibición de documentos electrónicos (estándar) en el portal de cumplimiento Microsoft Purview.
-ms.openlocfilehash: 52239b2f82b46feecc18685b309c1420255b9039
-ms.sourcegitcommit: 433f5b448a0149fcf462996bc5c9b45d17bd46c6
+ms.openlocfilehash: 1b3adc70796e2a4cc25fb23eb6076fc5cc6ff4db
+ms.sourcegitcommit: 04e517c7e00323b5c33d8ea937115725cf2cfd4d
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/20/2022
-ms.locfileid: "67819279"
+ms.lasthandoff: 10/13/2022
+ms.locfileid: "68564266"
 ---
 # <a name="limits-for-ediscovery-search"></a>Límites de búsqueda de eDiscovery
 
 Se aplican varios límites a las herramientas de búsqueda de exhibición de documentos electrónicos en el portal de cumplimiento Microsoft Purview. Esto incluye las búsquedas que se ejecutan en la página **Búsqueda de contenido** y las búsquedas asociadas a un caso de exhibición de documentos electrónicos en la página **eDiscovery (estándar).** Estos límites ayudan a mantener la salud y la calidad de los servicios proporcionados a las organizaciones. También hay límites relacionados con la indexación de mensajes de correo electrónico en Exchange Online para la búsqueda. No se pueden modificar los límites de las búsquedas de exhibición de documentos electrónicos o la indexación de correo electrónico, pero debe tenerlos en cuenta para que pueda tener estos límites en cuenta al planear, ejecutar y solucionar problemas de búsquedas de eDiscovery.
 
 Para conocer los límites relacionados con la herramienta Microsoft Purview eDiscovery (Premium), consulte [Límites en eDiscovery (Premium)](limits-ediscovery20.md)
+
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
 
 ## <a name="search-limits"></a>Límites de búsqueda
 
@@ -119,9 +121,6 @@ En la tabla siguiente se describen los límites de indexación que pueden dar lu
 |||
 
 ## <a name="jobs-limits"></a>Límites de trabajos
-
-> [!NOTE]
-> Los trabajos de eDiscovery (Premium) se cuentan para los límites de eDiscovery (Estándar). Por ejemplo, si tiene 50 trabajos en ejecución en eDiscovery (Premium), no podrá iniciar trabajos en eDiscovery (Estándar). Los trabajos de eDiscovery (Estándar) no cuentan para los límites de eDiscovery (Premium).
 
 |Descripción|Límite|
 |---|---|

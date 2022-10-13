@@ -16,17 +16,17 @@ ms.collection:
 search.appverid: ''
 ms.localizationpriority: medium
 ROBOTS: ''
-description: Obtenga información sobre cómo administrar contratos mediante una solución de Microsoft 365 de SharePoint Syntex, listas de SharePoint, Microsoft Teams y Power Automate.
-ms.openlocfilehash: edb05502ff9f4a84f194e4f991307886ce85bd46
-ms.sourcegitcommit: 674dfa2cb2f20546d2f7822e09bacf0e12e2718b
+description: Obtenga información sobre cómo administrar contratos mediante una solución de Microsoft 365 de Microsoft Syntex, listas de SharePoint, Microsoft Teams y Power Automate.
+ms.openlocfilehash: 61c8d19815a1e766add4bed845ffdcc14967bba1
+ms.sourcegitcommit: 04e517c7e00323b5c33d8ea937115725cf2cfd4d
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/27/2022
-ms.locfileid: "68041181"
+ms.lasthandoff: 10/13/2022
+ms.locfileid: "68563326"
 ---
 # <a name="manage-contracts-using-a-microsoft-365-solution"></a>Administrar contratos con una solución de Microsoft 365
 
-En este artículo se describe cómo crear una solución de administración de contratos para su organización mediante SharePoint Syntex y componentes de Microsoft 365. Le proporciona un marco para ayudarle a planear y crear una solución que se adapte a sus necesidades empresariales únicas. Aunque esta solución habla de la administración de contratos, puede adaptarla para crear otras soluciones de administración de documentos, como declaraciones de trabajo o facturas.
+En este artículo se describe cómo crear una solución de administración de contratos para su organización mediante Microsoft Syntex y los componentes de Microsoft 365. Le proporciona un marco para ayudarle a planear y crear una solución que se adapte a sus necesidades empresariales únicas. Aunque esta solución habla de la administración de contratos, puede adaptarla para crear otras soluciones de administración de documentos, como declaraciones de trabajo o facturas.
 
 </br>
 
@@ -48,11 +48,11 @@ El primer paso para planear el sistema de administración de contratos es compre
 
 ## <a name="overview-of-the-solution"></a>Información general de la solución
 
-  ![Diagrama de la solución mediante SharePoint Syntex, listas de SharePoint, Teams y Power Automate.](../media/content-understanding/syntex-solution-manage-contracts-setup-steps.png)
+  ![Diagrama de la solución mediante Syntex, listas de SharePoint, Teams y Power Automate.](../media/content-understanding/syntex-solution-manage-contracts-setup-steps.png)
 
 Esta guía de la solución de administración de contratos incluye cuatro componentes de Microsoft 365:
 
-- **Microsoft SharePoint Syntex**: cree modelos para identificar y clasificar los archivos de contrato y, a continuación, extraer los datos adecuados de ellos.
+- **Microsoft Syntex**: cree modelos para identificar y clasificar los archivos de contrato y, a continuación, extraer los datos adecuados de ellos.
 
 - **Listas de Microsoft SharePoint**: use el formato disponible en las listas modernas de SharePoint para presentar contratos en un formato descriptivo para la empresa.
 
@@ -64,7 +64,7 @@ Esta guía de la solución de administración de contratos incluye cuatro compon
 
   ![Diagrama de la solución que muestra el flujo de trabajo para cargar documentos, extraer datos, notificar a las partes interesadas y aprobar o rechazar el contrato.](../media/content-understanding/syntex-solution-manage-contracts-overview.png)
 
-1. Los documentos se cargan en una biblioteca de documentos de SharePoint. Se ha aplicado un modelo de comprensión de documentos SharePoint Syntex a la biblioteca de documentos. Comprueba cada archivo para ver si hay coincidencia con un tipo de contenido "contrato" que se va a buscar. Si encuentra una coincidencia, clasifica el archivo como un "contrato" y actualiza el tipo de contenido del documento.
+1. Los documentos se cargan en una biblioteca de documentos de SharePoint. Se ha aplicado un modelo de comprensión de documentos de Syntex a la biblioteca de documentos. Comprueba cada archivo para ver si hay coincidencia con un tipo de contenido "contrato" que se va a buscar. Si encuentra una coincidencia, clasifica el archivo como un "contrato" y actualiza el tipo de contenido del documento.
 
 2. El modelo también extrae datos específicos de cada archivo de contrato que las partes interesadas están interesadas en ver, como el *cliente*, *el contratista* y el *importe de la tarifa*.
 
@@ -86,20 +86,20 @@ Esta guía de la solución de administración de contratos incluye cuatro compon
 
 Esta solución se basa en la siguiente funcionalidad, todas disponibles como parte de una licencia de Microsoft 365 Enterprise (E1, E3, E5, F3) o Business (Básico, Estándar o Premium):
 
-- Microsoft SharePoint Syntex
+- Microsoft Syntex
 - Microsoft Teams
 - Power Automate
 
-### <a name="learn-how-to-use-sharepoint-syntex"></a>Aprenda a usar SharePoint Syntex
+### <a name="learn-how-to-use-syntex"></a>Aprenda a usar Syntex
 
-¿Es nuevo en SharePoint Syntex? Aprenda a usar SharePoint Syntex para administrar contenido mediante inteligencia artificial.
+¿Es nuevo en Microsoft Syntex? Obtenga información sobre cómo usar Syntex para administrar contenido mediante IA.
 
-La ruta [de aprendizaje Introducción a SharePoint Syntex](/training/paths/syntex-get-started) le enseñará cómo puede usar los modelos de comprensión de documentos y procesamiento de formularios para clasificar documentos, extraer texto y etiquetar los documentos para una administración de conocimientos rápida y sencilla.
+La ruta de aprendizaje [Introducción a Microsoft Syntex](/training/paths/syntex-get-started) le enseñará cómo puede usar los modelos de comprensión de documentos y procesamiento de formularios para clasificar documentos, extraer texto y etiquetar los documentos para una administración de conocimientos rápida y sencilla.
 
 ## <a name="create-the-solution"></a>Creación de la solución
 
 En las secciones siguientes se detallará cómo configurar la solución de administración de contratos. Se divide en tres pasos:
 
-- [Paso 1. Uso de SharePoint Syntex para identificar archivos de contrato y extraer datos](solution-manage-contracts-step1.md)
+- [Paso 1. Uso de Microsoft Syntex para identificar archivos de contrato y extraer datos](solution-manage-contracts-step1.md)
 - [Paso 2. Uso de Microsoft Teams para crear el canal de administración de contratos](solution-manage-contracts-step2.md)
 - [Paso 3. Uso de Power Automate para crear el flujo para procesar los contratos](solution-manage-contracts-step3.md)

@@ -12,18 +12,24 @@ author: robmazz
 manager: laurawi
 audience: itpro
 ms.collection:
-- m365-security-compliance
+- highpri
+- tier1
+- purview-compliance
 - m365solution-insiderrisk
 - m365initiative-compliance
+- highpri
 ms.custom: admindeeplinkCOMPLIANCE
-ms.openlocfilehash: 30804601a463a47f2c11b0d8054a2435acdca486
-ms.sourcegitcommit: a6cbc057e757771cc0e7b53b184fab9fa53a658a
+ms.openlocfilehash: 0bf0edeb32b23a941ef653823e95f6e63b4a686f
+ms.sourcegitcommit: 04e517c7e00323b5c33d8ea937115725cf2cfd4d
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/12/2022
-ms.locfileid: "67648755"
+ms.lasthandoff: 10/13/2022
+ms.locfileid: "68564551"
 ---
 # <a name="get-started-with-insider-risk-management-settings"></a>Introducción a la configuración de administración de riesgos internos
+
+>[!IMPORTANT]
+>Administración de riesgos internos de Microsoft Purview correlaciona varias señales para identificar posibles riesgos internos malintencionados o involuntarios, como el robo de IP, la pérdida de datos y las infracciones de seguridad. La administración de riesgos internos permite a los clientes crear directivas para administrar la seguridad y el cumplimiento. Creados con privacidad por diseño, los usuarios se seudonimizan de forma predeterminada y los controles de acceso basados en roles y los registros de auditoría están en su lugar para ayudar a garantizar la privacidad del nivel de usuario.
 
 La configuración de administración de riesgos internos se aplica a todas las directivas de administración de riesgos internos, independientemente de la plantilla que elija al crear una directiva. La configuración se configura mediante el control **de configuración de riesgo insider** ubicado en la parte superior de todas las páginas de administración de riesgos internos. Esta configuración controla los componentes de directiva para las siguientes áreas:
 
@@ -40,6 +46,8 @@ La configuración de administración de riesgos internos se aplica a todas las d
 - [notificaciones de Administración](#admin-notifications)
 
 Antes de empezar a trabajar y crear directivas de administración de riesgos internos, es importante comprender esta configuración y elegir los niveles de configuración que mejor se adapten a las necesidades de cumplimiento de su organización.
+
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
 
 ## <a name="privacy"></a>Privacidad
 
@@ -64,7 +72,7 @@ Las señales se recopilan y las alertas se desencadenan mediante directivas cuan
 - **Indicadores de configuración global**: los indicadores habilitados en la configuración global para la administración de riesgos internos definen tanto los indicadores disponibles para la configuración en las directivas como los tipos de señales de actividad del usuario recopiladas por la administración de riesgos internos. Por ejemplo, si un usuario copia datos en servicios de almacenamiento en la nube personales o dispositivos de almacenamiento portátiles y estos indicadores solo se seleccionan en la configuración global, esta actividad estará disponible para su revisión en el Explorador de actividad. Sin embargo, dado que esta actividad no se definió en una directiva de administración de riesgos internos, a la actividad no se le asignará una puntuación de riesgo ni generará una alerta.
 - **Indicadores de directiva**: los indicadores incluidos en las directivas de administración de riesgos internos se usan para determinar una puntuación de riesgo para un usuario dentro del ámbito. Los indicadores de directiva se habilitan a partir de los indicadores definidos en la configuración global y solo se activan después de que se produzca un evento desencadenante para un usuario.  Algunos ejemplos de indicadores de directiva son cuando un usuario copia datos en servicios de almacenamiento en la nube personales o dispositivos de almacenamiento portátiles, si se quita una cuenta de usuario de Azure Active Directory o si un usuario comparte archivos y carpetas internos con entidades externas no autorizadas.
 
-También se pueden usar determinados indicadores de directiva para personalizar eventos desencadenantes para plantillas de directiva específicas. Cuando se configura en el Asistente para directivas para las plantillas *Pérdidas generales de datos* o *Pérdidas de datos por parte de usuarios prioritarios* , estos indicadores le permiten más flexibilidad y personalización para las directivas y cuando los usuarios están en el ámbito de una directiva. Además, puede definir umbrales de actividad individuales para estos indicadores desencadenantes para un control más preciso en una directiva.
+También se pueden usar determinados indicadores y secuencias de directivas para personalizar eventos desencadenantes para plantillas de directiva específicas. Cuando se configura en el Asistente para *directivas para las fugas de datos generales* o *pérdidas de datos por plantillas de usuarios prioritarios* , estos indicadores o secuencias le permiten más flexibilidad y personalización para las directivas y cuando los usuarios están en el ámbito de una directiva. Además, puede definir umbrales de actividad individuales para estos indicadores desencadenantes para un control más preciso en una directiva.
 
 Los indicadores de directiva se segmentan en las áreas siguientes. Puede elegir los indicadores para activar y personalizar los límites de eventos del indicador para cada nivel de indicador al crear una directiva de riesgo interno:
 
@@ -663,3 +671,32 @@ Si prefiere deshabilitar las notificaciones de administrador y análisis, siga e
     - **Enviar una notificación por correo electrónico cuando Analytics está desactivado**
 
 4. Seleccione **Guardar** para configurar y salir.
+
+## <a name="inline-alert-customization-preview"></a>Personalización de alertas insertadas (versión preliminar)
+
+La personalización de alertas insertadas le permite ajustar rápidamente una directiva de administración de riesgos internos directamente desde el **panel de alertas** mientras revisa la alerta. Las alertas se generan cuando una actividad cumple los umbrales configurados en la directiva relacionada. Para reducir el número de alertas que recibe de esta actividad, puede cambiar los umbrales de la actividad o quitarla por completo de la directiva.
+
+Puede habilitar la personalización de alertas insertadas para permitir que los usuarios asignados a los grupos de roles *Insider Risk Management Analysts* y *Insider Risk Management Investigators* editen umbrales de directiva y deshabiliten indicadores específicos. Si la personalización de alertas insertadas no está habilitada, solo los usuarios asignados a los grupos de roles *Insider Risk Management Administración* o *Insider Risk Management* pueden editar estas condiciones de directiva. La personalización de alertas *insertadas* es compatible con las alertas independientemente del estado de alerta actual, lo que permite a los analistas e investigadores actualizar las directivas de alertas descartadas y *resueltas* si es necesario.
+
+Complete los pasos siguientes para habilitar la personalización de alertas insertadas:
+
+1. En la [portal de cumplimiento Microsoft Purview](https://compliance.microsoft.com), vaya a **Administración de** >  riesgos internos **Configuración de riesgos internos**.
+2. Seleccione la página **Personalización de alertas insertadas (versión preliminar).**
+3. Habilite la personalización de alertas insertadas para la administración de riesgos internos.
+4. Seleccione **Guardar** para configurar y salir.
+
+> [!NOTE]
+> La habilitación de la personalización de alertas insertadas tardará aproximadamente una hora antes de estar disponible en alertas de directiva nuevas y existentes.
+
+Cuando están habilitados, los analistas e investigadores pueden seleccionar **Reducir alertas para esta actividad** para una alerta en el **panel de alertas** y pueden ver detalles sobre la actividad y los indicadores asociados a la alerta. Además, se muestran los umbrales de directiva actuales para el número de eventos que se usan para crear alertas de gravedad baja, media y alta. Si se selecciona **Reducir alertas para esta actividad** y se ha realizado una edición de directiva anterior que cambia el umbral o ha quitado el indicador asociado, verá un mensaje de notificación en el que se detallan los cambios anteriores en la directiva.
+
+Los analistas e investigadores pueden elegir entre las siguientes opciones en el panel **Reducir alertas de esta actividad para** editar rápidamente la directiva que creó la alerta:
+
+- **Reducir las alertas mediante los umbrales recomendados de Microsoft**: aumentaremos automáticamente los umbrales de la directiva. Podrá revisar la nueva configuración de umbral recomendada antes de cambiar la directiva.
+- **Reduzca las alertas eligiendo sus propios umbrales**: puede aumentar manualmente los umbrales de este tipo de actividad para las alertas actuales y futuras. Podrá revisar la configuración de umbral actual y configurar los nuevos valores de umbral antes de cambiar la directiva.
+- **Detener la obtención de alertas para esta actividad**: esto quita este indicador de la directiva y la directiva ya no detectará esta actividad. Esto se aplica a todos los indicadores, independientemente de si el indicador está basado en umbrales.
+
+Después de elegir una opción, los analistas e investigadores pueden elegir dos opciones para actualizar la directiva:
+
+- **Guardar y descartar alerta**: guarda los cambios en la directiva y actualiza el estado de la alerta a *Resuelto*.
+- **Solo guardar**: guarda los cambios en la directiva, pero el estado de la alerta sigue siendo el mismo.

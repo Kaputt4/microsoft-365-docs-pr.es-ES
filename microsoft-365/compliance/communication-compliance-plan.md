@@ -19,12 +19,12 @@ ms.collection:
 search.appverid:
 - MET150
 - MOE150
-ms.openlocfilehash: f491cbc346bf79824be782403b4ae3a7d54431a6
-ms.sourcegitcommit: 50da6f1f6ef2274c17ed9729e7ad84395b0a9be2
+ms.openlocfilehash: d632963b9e06215bc84e6b70559a6584e6f5a7a2
+ms.sourcegitcommit: 04e517c7e00323b5c33d8ea937115725cf2cfd4d
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/08/2022
-ms.locfileid: "68504026"
+ms.lasthandoff: 10/13/2022
+ms.locfileid: "68565188"
 ---
 # <a name="plan-for-communication-compliance"></a>Planear el cumplimiento de las comunicaciones
 
@@ -79,9 +79,9 @@ Hay seis grupos de roles que se usan para configurar los permisos iniciales para
 - portal de cumplimiento Microsoft Purview grupo [*de roles De administración de la organización*](/microsoft-365/security/office-365-security/permissions-in-the-security-and-compliance-center)
 - portal de cumplimiento Microsoft Purview grupo de roles [*administrador de cumplimiento*](/microsoft-365/security/office-365-security/permissions-in-the-security-and-compliance-center)
 - *Grupo de roles de cumplimiento de comunicaciones*
-- *Grupo de roles de Administración cumplimiento de comunicaciones*
+- Grupo *de roles Administradores de cumplimiento de comunicaciones*
 
-Los miembros de los roles siguientes tienen los mismos permisos de solución incluidos en el grupo de roles *De cumplimiento de comunicaciones Administración*:
+Los miembros de los roles siguientes tienen los mismos permisos de solución incluidos en el grupo de roles *Administradores de cumplimiento de comunicaciones* :
 
 - *Administrador global* de Azure Active Directory
 - *Administrador de cumplimiento de* Azure Active Directory
@@ -89,7 +89,7 @@ Los miembros de los roles siguientes tienen los mismos permisos de solución inc
 - *Administrador de cumplimiento de* portal de cumplimiento Microsoft Purview
 
 > [!IMPORTANT]
-> Asegúrese de que siempre tiene al menos un usuario en los grupos de roles *Cumplimiento de comunicaciones* o *Cumplimiento de comunicaciones Administración* (según la opción que elija) para que la configuración de cumplimiento de comunicaciones no entre en un escenario de "administrador cero" si determinados usuarios abandonan la organización.
+> Asegúrese de que siempre tiene al menos un usuario en los grupos de roles *Administradores de cumplimiento de comunicaciones* o cumplimiento de *comunicaciones* (según la opción que elija) para que la configuración de cumplimiento de comunicaciones no entre en un escenario de "administrador cero" si determinados usuarios abandonan la organización.
 
 En función de cómo quiera administrar las directivas y alertas de cumplimiento de comunicaciones, deberá asignar usuarios a grupos de roles específicos para administrar diferentes conjuntos de características de cumplimiento de comunicaciones. Tiene la opción de asignar usuarios con diferentes responsabilidades de cumplimiento a grupos de roles específicos para administrar diferentes áreas de características de cumplimiento de comunicaciones. O bien, puede decidir asignar todas las cuentas de usuario para administradores, analistas, investigadores y visores designados al grupo de roles *cumplimiento de comunicaciones* . Use un único grupo de roles o varios grupos de roles para adaptarse mejor a los requisitos de administración de cumplimiento.
 
@@ -98,10 +98,10 @@ Elija entre estas opciones de grupo de roles de solución al configurar y admini
 |**Rol**|**Permisos de funciones**|
 |:-----|:-----|
 | **Cumplimiento de comunicaciones** | Use este grupo de roles para administrar el cumplimiento de las comunicaciones de su organización en un solo grupo. Al agregar todas las cuentas de usuario para administradores, analistas, investigadores y visores designados, puede configurar los permisos de cumplimiento de comunicaciones en un solo grupo. Este grupo de roles contiene todos los roles de permiso de cumplimiento de comunicaciones. Esta configuración es la manera más fácil de empezar a trabajar rápidamente con el cumplimiento de las comunicaciones y es una buena opción para las organizaciones que no necesitan permisos independientes definidos para grupos de usuarios independientes. Los usuarios que crean directivas como administrador de cumplimiento de comunicaciones deben tener su buzón hospedado en Exchange Online. |
-| **Administrador de cumplimiento de comunicaciones** | Use este grupo de roles para configurar inicialmente el cumplimiento de comunicaciones y, posteriormente, para separar a los administradores de cumplimiento de comunicaciones en un grupo definido. Los usuarios asignados a este grupo de roles pueden crear, leer, actualizar y eliminar directivas de cumplimiento de comunicaciones, configuración global y asignaciones de grupos de roles. Los usuarios asignados a este grupo de roles no pueden ver alertas de mensajes. Los usuarios que crean directivas como administrador de cumplimiento de comunicaciones deben tener su buzón hospedado en Exchange Online. |
-| **Analista de cumplimiento de comunicaciones** | Use este grupo para asignar permisos a los usuarios que actuarán como analistas de cumplimiento de comunicaciones. Los usuarios asignados a este grupo de roles pueden ver las directivas donde se asignan como revisores, ver los metadatos del mensaje (no el contenido del mensaje), escalar a revisores adicionales o enviar notificaciones a los usuarios. Los analistas no pueden resolver las alertas pendientes. |
-| **Investigador de cumplimiento de comunicaciones** | Use este grupo para asignar permisos a los usuarios que actuarán como investigadores de cumplimiento de comunicaciones. Los usuarios asignados a este grupo de roles pueden ver los metadatos y el contenido del mensaje, escalar a revisores adicionales, escalar a un caso de eDiscovery (Premium), enviar notificaciones a los usuarios y resolver la alerta. |
-| **Visor de cumplimiento de comunicaciones** | Use este grupo para asignar permisos a los usuarios que administrarán los informes de comunicación. Los usuarios asignados a este grupo de roles pueden acceder a todos los widgets de informes en la página principal de cumplimiento de comunicaciones y pueden ver todos los informes de cumplimiento de comunicaciones. |
+| **Administradores de cumplimiento de comunicaciones** | Use este grupo de roles para configurar inicialmente el cumplimiento de comunicaciones y, posteriormente, para separar a los administradores de cumplimiento de comunicaciones en un grupo definido. Los usuarios asignados a este grupo de roles pueden crear, leer, actualizar y eliminar directivas de cumplimiento de comunicaciones, configuración global y asignaciones de grupos de roles. Los usuarios asignados a este grupo de roles no pueden ver alertas de mensajes. Los usuarios que crean directivas como administrador de cumplimiento de comunicaciones deben tener su buzón hospedado en Exchange Online. |
+| **Analistas de cumplimiento de comunicaciones** | Use este grupo para asignar permisos a los usuarios que actuarán como analistas de cumplimiento de comunicaciones. Los usuarios asignados a este grupo de roles pueden ver las directivas donde se asignan como revisores, ver los metadatos del mensaje (no el contenido del mensaje), escalar a revisores adicionales o enviar notificaciones a los usuarios. Los analistas no pueden resolver las alertas pendientes. |
+| **Investigadores de cumplimiento de comunicaciones** | Use este grupo para asignar permisos a los usuarios que actuarán como investigadores de cumplimiento de comunicaciones. Los usuarios asignados a este grupo de roles pueden ver los metadatos y el contenido del mensaje, escalar a revisores adicionales, escalar a un caso de eDiscovery (Premium), enviar notificaciones a los usuarios y resolver la alerta. |
+| **Visores de cumplimiento de comunicaciones** | Use este grupo para asignar permisos a los usuarios que administrarán los informes de comunicación. Los usuarios asignados a este grupo de roles pueden acceder a todos los widgets de informes en la página principal de cumplimiento de comunicaciones y pueden ver todos los informes de cumplimiento de comunicaciones. |
 
 ### <a name="supervised-users"></a>Usuarios supervisados
 
@@ -112,7 +112,7 @@ Antes de empezar a usar el cumplimiento de comunicaciones, necesita determinar a
 
 ### <a name="reviewers"></a>Reviewers
 
-Al crear una directiva de cumplimiento de comunicaciones, debe determinar quién revisa los mensajes de los usuarios supervisados. En la directiva, las direcciones de correo electrónico de los usuarios identifican a individuos o grupos de personas que revisarán las comunicaciones supervisadas. Todos los revisores deben tener buzones hospedados en Exchange Online, deben asignarse a los grupos de roles *Analista de cumplimiento de comunicaciones* o *Investigador de cumplimiento de comunicaciones* y deben asignarse en la directiva que necesitan investigar. Cuando los revisores se agregan a una directiva, reciben automáticamente un mensaje de correo electrónico que les notifica la asignación a la directiva y proporciona vínculos a información sobre el proceso de revisión.
+Al crear una directiva de cumplimiento de comunicaciones, debe determinar quién revisa los mensajes de los usuarios supervisados. En la directiva, las direcciones de correo electrónico de los usuarios identifican a individuos o grupos de personas que revisarán las comunicaciones supervisadas. Todos los revisores deben tener buzones hospedados en Exchange Online, deben estar asignados a los grupos de roles *Analistas de cumplimiento de comunicaciones* o *Investigadores de cumplimiento de comunicaciones* y deben asignarse en la directiva que necesitan investigar. Cuando los revisores se agregan a una directiva, reciben automáticamente un mensaje de correo electrónico que les notifica la asignación a la directiva y proporciona vínculos a información sobre el proceso de revisión.
 
 ### <a name="groups-for-supervised-users-and-reviewers"></a>Grupos para usuarios y revisores supervisados
 
@@ -133,7 +133,7 @@ La protección de la privacidad de los usuarios que tienen coincidencias de dire
 
 Para los usuarios con una coincidencia de cumplimiento de comunicaciones, puede elegir una de las siguientes opciones en **Configuración de cumplimiento de comunicaciones**:
 
-- **Mostrar versiones anónimas de nombres de usuario**: los nombres de usuario se anonimizan para evitar que los usuarios del grupo de roles *Analista de cumplimiento de comunicaciones* vean quién está asociado a las alertas de directiva. Los usuarios del grupo de roles *Investigador de cumplimiento de comunicaciones* siempre verán los nombres de usuario, no las versiones anonimizadas. Por ejemplo, un usuario "Grace Taylor" aparecería con un seudónimo aleatorio como "AnonIS8-988" en todas las áreas de la experiencia de cumplimiento de la comunicación. Al elegir esta configuración, se anonimizan todos los usuarios con coincidencias de directivas actuales y pasadas, y se aplica a todas las directivas. La información del perfil de usuario en los detalles de la alerta de cumplimiento de comunicaciones no estará disponible cuando se elija esta opción. Sin embargo, los nombres de usuario se muestran al agregar nuevos usuarios a directivas existentes o al asignar usuarios a nuevas directivas. Si decide desactivar esta configuración, se mostrarán los nombres de usuario de todos los usuarios que tengan coincidencias de directivas actuales o anteriores.
+- **Mostrar versiones anónimas de nombres de usuario**: los nombres de usuario se anonimizan para evitar que los usuarios del grupo de roles *Analistas de cumplimiento de comunicaciones* vean quién está asociado a las alertas de directiva. Los usuarios del grupo de roles *Investigadores de cumplimiento de comunicaciones* siempre verán los nombres de usuario, no las versiones anonimizadas. Por ejemplo, un usuario "Grace Taylor" aparecería con un seudónimo aleatorio como "AnonIS8-988" en todas las áreas de la experiencia de cumplimiento de la comunicación. Al elegir esta configuración, se anonimizan todos los usuarios con coincidencias de directivas actuales y pasadas, y se aplica a todas las directivas. La información del perfil de usuario en los detalles de la alerta de cumplimiento de comunicaciones no estará disponible cuando se elija esta opción. Sin embargo, los nombres de usuario se muestran al agregar nuevos usuarios a directivas existentes o al asignar usuarios a nuevas directivas. Si decide desactivar esta configuración, se mostrarán los nombres de usuario de todos los usuarios que tengan coincidencias de directivas actuales o anteriores.
 - **No mostrar versiones anonimizadas de nombres de usuario**: los nombres de usuario se muestran para todas las coincidencias de directivas actuales y anteriores para las alertas de cumplimiento de comunicaciones. La información del perfil de usuario (el nombre, el título, el alias y la organización o el departamento) se muestra para el usuario para todas las alertas de cumplimiento de comunicaciones.
 
 ## <a name="plan-for-policies"></a>Planear directivas

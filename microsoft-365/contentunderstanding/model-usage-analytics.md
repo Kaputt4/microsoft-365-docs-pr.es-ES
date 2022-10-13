@@ -1,5 +1,5 @@
 ---
-title: Analice cómo se usan los modelos en Microsoft SharePoint Syntex
+title: Analizar cómo se usan los modelos en Microsoft Syntex
 ms.author: chucked
 author: chuckedmonson
 manager: pamgreen
@@ -13,14 +13,14 @@ ms.collection:
 - m365initiative-syntex
 ms.localizationpriority: medium
 description: Obtenga información sobre cómo encontrar más información sobre el rendimiento de los modelos de procesamiento de formularios y comprensión de documentos.
-ms.openlocfilehash: 7c998304472db04d94b430fd1cb98111a1fbdd0a
-ms.sourcegitcommit: d3ef9391f621e8f4ca70661184b3bb82c6cbda94
+ms.openlocfilehash: 2cbcabb919dc79a0c0eceaeda97d0e095b241235
+ms.sourcegitcommit: 04e517c7e00323b5c33d8ea937115725cf2cfd4d
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/02/2022
-ms.locfileid: "67582634"
+ms.lasthandoff: 10/13/2022
+ms.locfileid: "68564836"
 ---
-# <a name="analyze-how-your-models-are-used-in-microsoft-sharepoint-syntex"></a>Analice cómo se usan los modelos en Microsoft SharePoint Syntex
+# <a name="analyze-how-your-models-are-used-in-microsoft-syntex"></a>Analizar cómo se usan los modelos en Microsoft Syntex
 
 </br>
 
@@ -29,7 +29,7 @@ ms.locfileid: "67582634"
 </br>
 
 
-Su centro de contenido de SharePoint Syntex proporciona el análisis de uso de modelos para obtener más información sobre cómo se usan los modelos que se publicaron desde el centro de contenido. En la sección <b>Resultados de los modelos en los últimos 30 días</b> del centro de contenido se incluye un resumen de 30 días de datos de análisis de uso proporcionados en los siguientes gráficos y listas:
+El centro de contenido de Microsoft Syntex proporciona análisis de uso de modelos para proporcionar más información sobre cómo se usan los modelos que se han publicado desde el centro de contenido. En la sección <b>Resultados de los modelos en los últimos 30 días</b> del centro de contenido se incluye un resumen de 30 días de datos de análisis de uso proporcionados en los siguientes gráficos y listas:
 
 - Clasificación por modelo
 - Clasificación por biblioteca
@@ -39,7 +39,7 @@ Su centro de contenido de SharePoint Syntex proporciona el análisis de uso de m
 
 ### <a name="roll-up-of-model-usage-data-in-the-default-content-center"></a>Resumen de datos de uso del modelo en el centro de contenido predeterminado
 
-En SharePoint Syntex, el centro de contenido predeterminado se crea durante la configuración. También se pueden crear más centros de contenido según sea necesario. Por ejemplo, los departamentos podrían crear sus propios centros de contenido para elaborar y administrar sus modelos. 
+En Syntex, se crea el centro de contenido predeterminado durante la instalación. También se pueden crear más centros de contenido según sea necesario. Por ejemplo, los departamentos podrían crear sus propios centros de contenido para elaborar y administrar sus modelos. 
 
 Con respecto al análisis de uso del modelo, tenga en cuenta lo siguiente:
 

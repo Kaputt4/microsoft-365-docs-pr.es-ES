@@ -14,26 +14,31 @@ f1_keywords:
 ms.service: O365-seccomp
 ms.localizationpriority: medium
 ms.collection:
-- Strat_O365_IP
-- M365-security-compliance
+- tier1
+- purview-compliance
 search.appverid:
 - MET150
 - MOE150
-ms.openlocfilehash: a865cec3ed136dcde84aa5ed0d93754fbbf6ac22
-ms.sourcegitcommit: 1734c95ce72d9c8af695cb4b49b1e40d921a1fee
+ms.openlocfilehash: 7f9e71aa2a66fcac2205eda0bdfc5c795fc3c634
+ms.sourcegitcommit: 04e517c7e00323b5c33d8ea937115725cf2cfd4d
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/07/2022
-ms.locfileid: "66686383"
+ms.lasthandoff: 10/13/2022
+ms.locfileid: "68565122"
 ---
 # <a name="create-and-manage-communication-compliance-policies"></a>Crear y administrar directivas de cumplimiento de comunicaciones
+
+>[!IMPORTANT]
+>Cumplimiento de comunicaciones de Microsoft Purview proporciona las herramientas para ayudar a las organizaciones a detectar infracciones de cumplimiento normativo (por ejemplo, SEC o FINRA), como información confidencial o confidencial, hostigamiento o amenazante del lenguaje y uso compartido de contenido para adultos. Creados con privacidad por diseño, los nombres de usuario se seudonimizan de forma predeterminada, los controles de acceso basados en roles se integran, los investigadores son admitidos por un administrador y los registros de auditoría están en vigor para garantizar la privacidad del nivel de usuario.
+
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
 
 ## <a name="policies"></a>Directivas
 
 > [!IMPORTANT]
 > No se admite el uso de PowerShell para crear y administrar directivas de cumplimiento de comunicaciones. Para crear y administrar estas directivas, debe usar los controles de administración de directivas en la [solución de cumplimiento de comunicaciones](https://compliance.microsoft.com/supervisoryreview).
 
-Puede crear directivas de cumplimiento de comunicaciones para organizaciones de Microsoft 365 en el portal de cumplimiento de Microsoft Purview. Las directivas de cumplimiento de comunicaciones definen qué comunicaciones y usuarios están sujetos a revisión en su organización, definen qué condiciones personalizadas deben cumplir las comunicaciones y especifican quién debe realizar revisiones. Los usuarios asignados al rol *de cumplimiento de comunicaciones Administración* pueden configurar directivas y cualquier persona que tenga asignado este rol puede acceder a la página **Cumplimiento de comunicaciones** y a la configuración global de la portal de cumplimiento Microsoft Purview. Si es necesario, puede exportar el historial de modificaciones a una directiva a un archivo .csv (valores separados por comas) que también incluya el estado de las alertas pendientes de revisión, elementos escalados y elementos resueltos. No se puede cambiar el nombre de las directivas y se pueden eliminar cuando ya no se necesiten.
+Puede crear directivas de cumplimiento de comunicaciones para organizaciones de Microsoft 365 en el portal de cumplimiento de Microsoft Purview. Las directivas de cumplimiento de comunicaciones definen qué comunicaciones y usuarios están sujetos a revisión en su organización, definen qué condiciones personalizadas deben cumplir las comunicaciones y especifican quién debe realizar revisiones. Los usuarios *asignados al rol Administradores de cumplimiento de comunicaciones pueden configurar directivas* y cualquier persona que tenga asignado este rol puede acceder a la página Cumplimiento de **comunicaciones** y a la configuración global de la portal de cumplimiento Microsoft Purview. Si es necesario, puede exportar el historial de modificaciones a una directiva a un archivo .csv (valores separados por comas) que también incluya el estado de las alertas pendientes de revisión, elementos escalados y elementos resueltos. No se puede cambiar el nombre de las directivas y se pueden eliminar cuando ya no se necesiten.
 
 ## <a name="policy-templates"></a>Plantillas de directiva
 
@@ -74,16 +79,31 @@ Los administradores deben asignar inmediatamente revisores personalizados a esta
 2. En el portal de cumplimiento, vaya a **Cumplimiento de comunicaciones**.
 3. En la pestaña **Directiva** , seleccione la directiva *Mensajes notificados* por el usuario y seleccione **Editar**.
 4. En el panel **Supervisión de mensajes notificados por el usuario** , asigne revisores para la directiva. Los revisores deben tener buzones hospedados en Exchange Online. Cuando los revisores se agregan a una directiva, reciben automáticamente un mensaje de correo electrónico que les notifica la asignación a la directiva y proporciona vínculos a información sobre el proceso de revisión.
-5. Haga clic en **Guardar**.
+5. Seleccione **Guardar**.
 
 La opción *Notificar un problema* está habilitada de forma predeterminada y se puede controlar mediante directivas de mensajería de Teams en el [Centro de Administración de Teams](/microsoftteams/manage-teams-in-modern-portal). Los usuarios de su organización obtendrán automáticamente la directiva global, a menos que cree y asigne una directiva personalizada. Edite la configuración de la directiva global o cree y asigne una o varias directivas personalizadas para activar o desactivar la opción *Notificar una preocupación* . Para más información, consulte [Administración de directivas de mensajería en Teams](/microsoftteams/messaging-policies-in-teams).  
 
 >[!IMPORTANT]
 >Si usa PowerShell para activar o desactivar la opción **Informes de usuario final** en el Centro de Administración de Teams, debe usar la [versión 4.2.0 o posterior del módulo cmdlets de Microsoft Teams](/MicrosoftTeams/teams-powershell-release-notes).
 
+## <a name="policy-for-insider-risk-management-integration-preview"></a>Directiva para la integración de la administración de riesgos internos (versión preliminar)
+
+Cuando los usuarios experimentan estrés laboral, pueden descontentos. Esta sensación puede dar lugar a un comportamiento poco práctico o malintencionado por parte de algunos usuarios que podrían aparecer como un comportamiento potencialmente inadecuado en los sistemas de mensajería de la organización. El cumplimiento de comunicaciones puede proporcionar señales de descontento detectadas en los mensajes aplicables a las directivas de descontento de [la administración de riesgos](/microsoft-365/compliance/insider-risk-management) internos mediante una directiva [de texto de detección inapropiada](#policy-templates) dedicada. Esta directiva se crea automáticamente (si se selecciona como opción) durante la configuración de una [fuga de datos por parte de empleados descontentos](/microsoft-365/compliance/insider-risk-management-policies#data-leaks-by-disgruntled-users-preview) o [infracciones de directivas de seguridad por parte de empleados descontentos](/microsoft-365/compliance/insider-risk-management-policies#security-policy-violations-by-disgruntled-users-preview) en la administración de riesgos internos.
+
+Cuando se configura para una directiva de descontento de administración de riesgos internos, se crea una directiva dedicada denominada *Disgruntlement in messages (fecha de creación)* en cumplimiento de comunicaciones e incluye automáticamente a todos los usuarios de la organización en la directiva. Esta directiva comienza a detectar el comportamiento de descontento en los mensajes mediante los [clasificadores de amenazas, acoso y discriminación integrados](#classifiers) y envía automáticamente estas señales a la administración de riesgos internos. Si es necesario, esta directiva se puede editar para actualizar el ámbito de los usuarios incluidos y las condiciones y clasificadores de directivas.  
+
+Los usuarios que envían 5 o más mensajes clasificados como descontentos en un plazo de 24 horas se incluyen automáticamente en el ámbito de las directivas de administración de riesgos internos que incluyen esta opción. Una vez dentro del ámbito, la administración de riesgos internos detecta actividades de riesgo configuradas en la directiva y genera alertas según corresponda. Puede tardar hasta 48 horas desde el momento en que se envían los mensajes de descontento hasta el momento en que se incluye un usuario en el ámbito de una directiva de administración de riesgos internos. Si se genera una alerta para una actividad de riesgo detectada por la directiva de administración de riesgos internos, el evento desencadenante de la alerta se identifica como origen de la actividad de descontento de cumplimiento de comunicaciones.
+
+Todos los usuarios asignados al grupo de roles [Insider Risk Management Investigators](/microsoft-365/compliance/insider-risk-management-plan#plan-for-the-review-and-investigation-workflow) se asignan automáticamente como revisores en la directiva de cumplimiento de comunicaciones dedicada. Si los investigadores de administración de riesgos deben revisar la alerta de descontento asociada directamente en la página de alertas de cumplimiento de comunicaciones (vinculadas desde los detalles de la alerta de administración de riesgos internos), deben agregarse manualmente al grupo de roles *Investigadores de cumplimiento de comunicaciones* .
+
+Antes de integrar el cumplimiento de la comunicación con la administración de riesgos internos, también debe tener en cuenta las siguientes instrucciones al detectar mensajes que contienen texto potencialmente inadecuado:
+
+- **Para organizaciones que no tienen una directiva *de texto Detección inapropiada* existente**. El asistente para directivas de administración de riesgos internos creará automáticamente la nueva directiva *Descontento en mensajes (fecha de creación* ). En la mayoría de los casos, no se necesitan más acciones.
+- **Para organizaciones con una directiva *de texto Detección inapropiada* existente**. El asistente para directivas de administración de riesgos internos creará automáticamente la nueva directiva *Descontento en mensajes (fecha de creación* ). Aunque tendrá dos directivas de cumplimiento de comunicaciones para texto potencialmente inadecuado en los mensajes, los investigadores no verán alertas duplicadas para la misma actividad. Los investigadores de administración de riesgos internos solo verán alertas para la directiva de integración dedicada y los investigadores de cumplimiento de comunicaciones solo verán las alertas de la directiva existente. Si es necesario, puede editar la directiva dedicada para cambiar los usuarios en el ámbito o las condiciones de directiva individuales según corresponda.
+
 ## <a name="pause-a-policy"></a>Pausar una directiva
 
-Después de crear una directiva de cumplimiento de comunicaciones, la directiva puede pausarse temporalmente si es necesario. Pausar una directiva puede usarse para probar o solucionar problemas de coincidencias de directivas, o para optimizar las condiciones de la directiva. En lugar de eliminar una directiva en estas circunstancias, pausar una directiva también conserva las alertas y los mensajes de directiva existentes para las investigaciones y revisiones en curso. Pausar una directiva impide la inspección y la generación de alertas para todas las condiciones de mensaje de usuario definidas en la directiva durante el tiempo en que se pausa la directiva. Para pausar o reiniciar una directiva, los usuarios deben ser miembros del grupo de roles *Cumplimiento de la comunicación Administración*.
+Después de crear una directiva de cumplimiento de comunicaciones, la directiva puede pausarse temporalmente si es necesario. Pausar una directiva puede usarse para probar o solucionar problemas de coincidencias de directivas, o para optimizar las condiciones de la directiva. En lugar de eliminar una directiva en estas circunstancias, pausar una directiva también conserva las alertas y los mensajes de directiva existentes para las investigaciones y revisiones en curso. Pausar una directiva impide la inspección y la generación de alertas para todas las condiciones de mensaje de usuario definidas en la directiva durante el tiempo en que se pausa la directiva. Para pausar o reiniciar una directiva, los usuarios deben ser miembros del grupo de roles *Administradores de cumplimiento de comunicaciones* .
 
 Para pausar una directiva, vaya a la página **Directiva** , seleccione una directiva y, a continuación, seleccione **Pausar directiva** en la barra de herramientas de acciones. En el panel **Pausar directiva** , confirme que desea pausar la directiva; para ello, seleccione **Pausar**. En algunos casos, una directiva puede tardar hasta 24 horas en pausa. Una vez que la directiva está en pausa, no se crean alertas de mensajes que coincidan con la directiva. Sin embargo, los mensajes asociados a las alertas que se crearon antes de pausar la directiva siguen estando disponibles para su investigación, revisión y corrección.
 
@@ -106,7 +126,7 @@ En el caso de las organizaciones con directivas de cumplimiento de comunicacione
 - **Detectar y revisar mensajes inadecuados para diferentes grupos de usuarios**: es posible que algunas organizaciones prefieran crear varias directivas con la misma configuración, pero que incluyan diferentes usuarios dentro del ámbito y revisores diferentes para cada directiva.
 - **Directivas similares con pequeños cambios**: en el caso de las directivas con configuraciones o condiciones complejas, puede ahorrar tiempo crear una nueva directiva a partir de una directiva similar.
 
-Para copiar una directiva, los usuarios deben ser miembros de los grupos de roles *Cumplimiento de comunicaciones* o *Cumplimiento de comunicaciones Administración*. Después de crear una nueva directiva a partir de una directiva existente, puede tardar hasta 24 horas en ver los mensajes que coinciden con la nueva configuración de directiva.
+Para copiar una directiva, los usuarios deben ser miembros de los grupos de roles *Administradores de cumplimiento de comunicaciones* o cumplimiento de *comunicaciones* . Después de crear una nueva directiva a partir de una directiva existente, puede tardar hasta 24 horas en ver los mensajes que coinciden con la nueva configuración de directiva.
 
 Para copiar una directiva y crear una nueva, siga estos pasos:
 
@@ -123,16 +143,16 @@ En la tabla siguiente se describe el tiempo de detección de los tipos de conten
 
 |**Tipo de contenido**|**Tiempo de detección**|
 |:---------------|:--------------------|
-| Contenido del cuerpo del correo electrónico | 1 hora |
+| Email contenido del cuerpo | 1 hora |
 | Contenido del cuerpo de Teams | 1 hora |
 | Contenido del cuerpo de Yammer | 13 horas |
-| OCR de correo electrónico | 13 horas |
+| Email OCR | 13 horas |
 | Teams OCR | 13 horas |
-| Datos adjuntos de correo electrónico | 13 horas |
+| datos adjuntos Email | 13 horas |
 | Datos adjuntos del equipo | 13 horas |
 | Datos adjuntos modernos de Teams | 13 horas |
 | Metadatos de Teams | 1 hora |
-| Metadatos de correo electrónico | 1 hora |
+| metadatos de Email | 1 hora |
 
 En el caso de las directivas existentes creadas antes del 31 de julio de 2022, puede tardar hasta 24 horas en detectar mensajes y revisar alertas que coincidan con estas directivas. Para reducir la latencia de estas directivas, [copie la directiva existente](/microsoft-365/compliance/communication-compliance-policies#copy-a-policy) y cree una nueva a partir de la copia. Si no necesita conservar ningún dato de la directiva anterior, se puede pausar o eliminar.
 
@@ -140,7 +160,7 @@ Para identificar una directiva anterior, revise *la columna Último examen de di
 
 ## <a name="storage-limit-notification-preview"></a>Notificación de límite de almacenamiento (versión preliminar)
 
-Cada directiva de cumplimiento de comunicaciones tiene un tamaño de límite de almacenamiento de 100 GB o 1 millón de mensajes, lo que se alcance primero. A medida que la directiva se acerca a estos límites, los correos electrónicos de notificación se envían automáticamente a los usuarios asignados a los grupos de roles *De cumplimiento de comunicaciones* o *cumplimiento de comunicaciones Administración*. Los mensajes de notificaciones se envían cuando el tamaño de almacenamiento o el recuento de mensajes alcanzan el 80, el 90 y el 95 por ciento del límite. Cuando se alcanza el límite de directivas, la directiva se desactiva automáticamente y la directiva deja de procesar mensajes para las alertas.
+Cada directiva de cumplimiento de comunicaciones tiene un tamaño de límite de almacenamiento de 100 GB o 1 millón de mensajes, lo que se alcance primero. A medida que la directiva se acerca a estos límites, los correos electrónicos de notificación se envían automáticamente a los usuarios *asignados* a los grupos de roles *Administradores de cumplimiento de comunicaciones* o cumplimiento de comunicaciones. Los mensajes de notificaciones se envían cuando el tamaño de almacenamiento o el recuento de mensajes alcanzan el 80, el 90 y el 95 por ciento del límite. Cuando se alcanza el límite de directivas, la directiva se desactiva automáticamente y la directiva deja de procesar mensajes para las alertas.
 
 >[!IMPORTANT]
 >Si se desactiva una directiva debido a que se alcanzan los límites de almacenamiento y mensajes, asegúrese de evaluar cómo administrar la directiva desactivada. Si elimina la directiva, todos los mensajes, los datos adjuntos asociados y las alertas de mensajes se eliminarán permanentemente. Si necesita mantener estos elementos para su uso futuro, no elimine la directiva desactivada.

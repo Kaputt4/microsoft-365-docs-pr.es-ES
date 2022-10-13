@@ -19,12 +19,12 @@ ms.collection:
 - m365initiative-compliance
 - highpri
 ms.custom: admindeeplinkCOMPLIANCE
-ms.openlocfilehash: eb44b1ce51466af5c1478b894721c54c13e89b40
-ms.sourcegitcommit: 50da6f1f6ef2274c17ed9729e7ad84395b0a9be2
+ms.openlocfilehash: 9b8ef92016ea87e69cf1284c4ae740a3978f1fba
+ms.sourcegitcommit: 04e517c7e00323b5c33d8ea937115725cf2cfd4d
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/08/2022
-ms.locfileid: "68503564"
+ms.lasthandoff: 10/13/2022
+ms.locfileid: "68564594"
 ---
 # <a name="get-started-with-insider-risk-management"></a>Introducción a la administración de riesgos internos
 
@@ -285,35 +285,37 @@ Las directivas de administración de riesgos internos incluyen usuarios asignado
 8. Seleccione **Siguiente** para continuar.
 9. En la página **Contenido a priorizar**, puede asignar (si es necesario) las fuentes a priorizar, lo que aumenta la posibilidad de generar una alerta de alta gravedad para estas fuentes. Seleccione una de las siguientes opciones:
 
-    - **Quiero especificar sitios de SharePoint, etiquetas de confidencialidad, tipos de información confidencial o extensiones de archivo como contenido prioritario**. Al seleccionar esta opción se habilitarán las páginas de detalles del asistente para configurar estos canales.
-    - **No deseo especificar el contenido prioritario en este momento (podrá hacerlo una vez que se haya creado la directiva)**. Al seleccionar esta opción, se omitirán las páginas de detalles del canal en el asistente.
+    - **Quiero priorizar el contenido**. Al seleccionar esta opción, podrá priorizar *los sitios de SharePoint*, *las etiquetas de confidencialidad, los* *tipos de información confidencial* y los tipos de contenido *de extensiones de* archivo. Si elige esta opción, debe seleccionar al menos un tipo de contenido de prioridad.
+    - **No quiero especificar el contenido de prioridad en este momento**. Al seleccionar esta opción, se omitirán las páginas de detalles de contenido de prioridad del asistente.
 
 10. Seleccione **Siguiente** para continuar.
 
-11. Si ha seleccionado **I want to specify SharePoint sites, sensitivity labels, sensitive information types and/or file extensions as priority content** in the previous step, you'll see the detail pages for *SharePoint sites*, *sensitive info types*, *sensitivity labels* and *file extensions*. Use estas páginas de detalles para definir SharePoint, los tipos de información confidencial, las etiquetas de confidencialidad y las extensiones de archivo para priorizar en la directiva.
+11. Si ha seleccionado **Quiero priorizar el contenido** en el paso anterior, verá las páginas de detalles de *los sitios de SharePoint*, *los tipos de información confidencial*, *las etiquetas de confidencialidad*, *las extensiones de archivo* y la *puntuación*. Use estas páginas de detalles para definir SharePoint, los tipos de información confidencial, las etiquetas de confidencialidad y las extensiones de archivo para priorizar en la directiva. La página *Detalles de puntuación* permite limitar la directiva para asignar solo puntuaciones de riesgo y generar alertas para las actividades especificadas que incluyen contenido de prioridad.
 
     - **Sitios de SharePoint**: seleccione **Agregar sitio de SharePoint** y seleccione los sitios de SharePoint a los que tiene acceso y desea priorizar. Por ejemplo, *"group1@contoso.sharepoint.com/sites/group1"*.
     - **Tipo de información confidencial**: seleccione **Agregar tipo de información confidencial** y seleccione los tipos de confidencialidad que desea priorizar. Por ejemplo, *"Número de cuenta bancaria de EE. UU."* y *"Número de tarjeta de crédito"*.
     - **Etiquetas de confidencialidad**: seleccione **Agregar etiquetas de confidencialidad** y seleccionar las etiquetas que desea priorizar. Por ejemplo, *"Confidencial"* y *"Secreto"*.
-    - Extensiones de archivo: agregue hasta 50 extensiones de archivo. Puede incluir u omitir '.' con la extensión de archivo. Por ejemplo, *.py* o *py* daría prioridad a los archivos de Python.
+    - **Extensiones de archivo**: agregue hasta 50 extensiones de archivo. Puede incluir u omitir '.' con la extensión de archivo. Por ejemplo, *.py* o *py* daría prioridad a los archivos de Python.
+    - **Puntuación**: decida si desea asignar puntuaciones de riesgo a todas las actividades detectadas por esta directiva o solo para las actividades que incluyan contenido prioritario. Elija **Obtener alertas para toda la actividad** o **Obtener alertas solo para la actividad que incluye contenido prioritario**.
 
     > [!NOTE]
     > Los usuarios que configuran la directiva y seleccionan sitios de SharePoint prioritarios pueden seleccionar sitios de SharePoint a los que tienen permiso de acceso. Si el usuario actual no puede seleccionar sitios de SharePoint en la directiva, otro usuario con los permisos necesarios puede seleccionar los sitios para la directiva más adelante o el usuario actual debe tener acceso a los sitios necesarios.
 
 12. Seleccione **Siguiente** para continuar.
-13. Si ha seleccionado las plantillas *General data leaks* or *Data leaks by priority users (Pérdidas de datos generales o pérdidas de datos por parte de usuarios prioritarios* ), verá las opciones en la página **Desencadenadores** de esta directiva para los eventos de desencadenamiento personalizados y los indicadores de directiva. Tiene la opción de seleccionar una directiva DLP o indicadores para desencadenar eventos que lleven a los usuarios asignados a la directiva en el ámbito para la puntuación de actividad. Si selecciona la opción **User matches a datas prevention (DLP) policy triggering event (Usuario coincide con una opción de evento desencadenante de la directiva de prevención de pérdida de datos [DLP]** ), debe seleccionar una directiva DLP en la lista desplegable directiva DLP para habilitar los indicadores desencadenantes de la directiva DLP para esta directiva de administración de riesgos internos. Si selecciona la opción **User performs an exfiltration activity triggering event (El usuario realiza una actividad de filtración desencadenante de eventos** ), debe seleccionar uno o varios de los indicadores enumerados para el evento de desencadenamiento de directivas.
+13. Si ha seleccionado las plantillas *General data leaks* or *Data leaks by priority users (Pérdidas de datos generales o pérdidas de datos por parte de usuarios prioritarios* ), verá las opciones en la página **Desencadenadores de esta directiva** para los eventos de desencadenamiento personalizados y los indicadores de directiva. Tiene la opción de seleccionar una directiva DLP o indicadores para desencadenar eventos que lleven a los usuarios asignados a la directiva en el ámbito para la puntuación de actividad. Si selecciona la opción **User matches a datas prevention (DLP) policy triggering event (Usuario coincide con una opción de evento desencadenante de la directiva de prevención de pérdida de datos [DLP]** ), debe seleccionar una directiva DLP en la lista desplegable directiva DLP para habilitar los indicadores desencadenantes de la directiva DLP para esta directiva de administración de riesgos internos. Si selecciona la opción **User performs an exfiltration activity triggering event (El usuario realiza una actividad de filtración desencadenante de eventos** ), debe seleccionar uno o varios de los indicadores enumerados para el evento de desencadenamiento de directivas.
 
     > [!IMPORTANT]
-    > Si no puede seleccionar un indicador de la lista, se debe a que no están habilitados para su organización. Para que estén disponibles para seleccionar y asignar a la directiva, habilite los indicadores en **Indicadores de la** directiva de configuración  >  de **administración** >  de riesgos **internos.**
+    > Si no puede seleccionar un indicador o una secuencia enumerados, es porque no están habilitados actualmente para su organización. Para que estén disponibles para seleccionar y asignar a la directiva, seleccione el símbolo del sistema **Activar indicadores** .
 
     Si ha seleccionado otras plantillas de directiva, no se admiten eventos desencadenadores personalizados. Los eventos de desencadenamiento de directivas integrados se aplican y seguirá en el paso 23 sin definir atributos de directiva.
 
-14. Seleccione **Siguiente** para continuar.
-15. Si ha seleccionado las plantillas *General data leaks* or *Data leaks by priority users (Pérdidas de datos generales o pérdidas de datos por parte de usuarios prioritarios* ) y ha seleccionado **el usuario realiza una actividad de filtración e indicadores asociados**, puede elegir umbrales personalizados o predeterminados para el indicador que desencadena los eventos que ha seleccionado. Elija **Usar umbrales predeterminados (recomendados)** o **Usar umbrales personalizados para los eventos desencadenantes**.
-16. Seleccione **Siguiente** para continuar.
-17. Si ha seleccionado **Usar umbrales personalizados para los eventos desencadenantes**, para cada indicador de evento desencadenante que haya seleccionado en el paso 13, elija el nivel adecuado para generar el nivel deseado de alertas de actividad. Puede usar los umbrales recomendados, umbrales personalizados o umbrales basados en actividades anómalas (para determinados indicadores) por encima de la norma diaria para los usuarios.
-18. Seleccione **Siguiente** para continuar.
-19. En la página **Indicadores** de directiva, verá los [indicadores](insider-risk-management-settings.md#indicators) que ha definido como disponibles en la página **Indicadores** de **configuración de** >  riesgo interno. Seleccione los indicadores que desea aplicar a la directiva.
+14. Si ha seleccionado las *fugas de datos por parte de usuarios descontentos* o *infracciones de directivas de seguridad por plantillas de usuarios descontentos* , verá opciones en la página **Desencadenadores de esta directiva** para la integración con eventos de conector de datos de RR. HH. y cumplimiento de comunicaciones. Tiene la opción de asignar puntuaciones de riesgo cuando los usuarios envíen mensajes que contengan un lenguaje potencialmente amenazante, hostigador o discriminatorio, o para que los usuarios entren en el ámbito de la directiva después de que se notifiquen eventos de descontento en el sistema de RR. HH. Si selecciona la opción **Disgruntlement triggers from communication compliance (preview),** puede aceptar la directiva de cumplimiento de comunicaciones predeterminada (creada automáticamente), elegir un ámbito de directiva creado anteriormente para este desencadenador o crear otra directiva con ámbito. Si selecciona **eventos del conector de datos de RR. HH**., debe configurar un conector de datos de RR. HH. para su organización.
+15. Seleccione **Siguiente** para continuar.
+16. Si ha seleccionado las plantillas *General data leaks* or *Data leaks by priority users (Pérdidas de datos generales o pérdidas de datos por parte de usuarios prioritarios* ) y ha seleccionado **el usuario realiza una actividad de filtración e indicadores asociados**, puede elegir umbrales personalizados o predeterminados para el indicador que desencadena los eventos que ha seleccionado. Elija **Usar umbrales predeterminados (recomendados)** o **Usar umbrales personalizados para los eventos desencadenantes**.
+17. Seleccione **Siguiente** para continuar.
+18. Si ha seleccionado **Usar umbrales personalizados para los eventos desencadenantes**, para cada indicador de evento desencadenante que haya seleccionado en el paso 13, elija el nivel adecuado para generar el nivel deseado de alertas de actividad. Puede usar los umbrales recomendados, umbrales personalizados o umbrales basados en actividades anómalas (para determinados indicadores) por encima de la norma diaria para los usuarios.
+19. Seleccione **Siguiente** para continuar.
+20. En la página **Indicadores** de directiva, verá los [indicadores](insider-risk-management-settings.md#indicators) que ha definido como disponibles en la página **Indicadores** de **configuración de** >  riesgo interno. Seleccione los indicadores que desea aplicar a la directiva.
 
     > [!IMPORTANT]
     > Si los indicadores de esta página no se pueden seleccionar, tendrá que seleccionar los indicadores que desea habilitar para todas las directivas. Puede usar el botón **Habilitar indicadores** del asistente o seleccionar los indicadores en la página **Administración de riesgos internos** > **Configuración** > **Indicadores de directiva**.
@@ -322,10 +324,10 @@ Las directivas de administración de riesgos internos incluyen usuarios asignado
     Si ha seleccionado una plantilla de directiva de *Robo de datos* o *Filtración de datos*, seleccione uno o más métodos de **Detección de Secuencia** y un método de **Detección de filtración acumulada** para aplicar a la directiva.
     Si ha seleccionado la plantilla de directiva *de uso de explorador de riesgo* , seleccione uno o varios de los **indicadores de exploración**.
 
-20. Seleccione **Siguiente** para continuar.
-21. En la página **Decidir si usar umbrales de indicadores predeterminados o personalizados** , elija umbrales personalizados o predeterminados para los indicadores de directiva que ha seleccionado. Elija **Usar umbrales predeterminados para todos los indicadores** o **Especificar umbrales personalizados** para los indicadores de directiva seleccionados. Si ha seleccionado Especificar umbrales personalizados, elija el nivel adecuado para generar el nivel deseado de alertas de actividad para cada indicador de directiva.
-22. Seleccione **Siguiente** para continuar.
-23. En la página **Revisión**, revise la configuración que ha elegido para la directiva y cualquier sugerencia o advertencia sobre sus selecciones. Seleccione **Editar** para cambiar cualquiera de los valores de la directiva o seleccione **Enviar** para crear y activar la directiva.
+21. Seleccione **Siguiente** para continuar.
+22. En la página **Decidir si usar umbrales de indicadores predeterminados o personalizados** , elija umbrales personalizados o predeterminados para los indicadores de directiva que ha seleccionado. Elija **Usar umbrales predeterminados para todos los indicadores** o **Especificar umbrales personalizados** para los indicadores de directiva seleccionados. Si ha seleccionado Especificar umbrales personalizados, elija el nivel adecuado para generar el nivel deseado de alertas de actividad para cada indicador de directiva.
+23. Seleccione **Siguiente** para continuar.
+24. En la página **Revisión**, revise la configuración que ha elegido para la directiva y cualquier sugerencia o advertencia sobre sus selecciones. Seleccione **Editar** para cambiar cualquiera de los valores de la directiva o seleccione **Enviar** para crear y activar la directiva.
 
 ## <a name="next-steps"></a>Pasos siguientes
 

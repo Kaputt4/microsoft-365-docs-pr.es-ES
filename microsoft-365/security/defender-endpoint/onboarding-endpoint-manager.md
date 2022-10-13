@@ -6,25 +6,26 @@ ms.service: microsoft-365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
-ms.author: macapara
-author: mjcaparas
+ms.author: siosulli
+author: siosulli
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection:
-- M365-security-compliance
+- m365-security
 - m365solution-endpointprotect
 - m365solution-scenario
 - highpri
+- tier1
 ms.topic: article
 ms.subservice: mde
 search.appverid: met150
-ms.openlocfilehash: ea9ae9a463763607145ef67b2e70aa5cd66c495b
-ms.sourcegitcommit: 9b133379196da2b3a4bb311b07ff274f43780f68
+ms.openlocfilehash: 596488f105e2b7be1c6047a37cca7a2fbc297c79
+ms.sourcegitcommit: 04e517c7e00323b5c33d8ea937115725cf2cfd4d
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/14/2022
-ms.locfileid: "67694301"
+ms.lasthandoff: 10/13/2022
+ms.locfileid: "68564025"
 ---
 # <a name="onboarding-using-microsoft-endpoint-manager"></a>Incorporación con Microsoft Endpoint Manager
 
@@ -46,7 +47,7 @@ En el tema [Planeamiento](deployment-strategy.md) , se proporcionaron varios mé
 
 Aunque Defender para punto de conexión admite la incorporación de varios puntos de conexión y herramientas, en este artículo no se tratan. Para obtener información sobre la incorporación general mediante otras herramientas y métodos de implementación admitidos, consulte [Introducción a la incorporación](onboarding.md).
 
-[Microsoft Endpoint Manager](/mem/endpoint-manager-overview) es una plataforma de solución que unifica varios servicios. Incluye la administración de dispositivos basada en [Microsoft Intune](/mem/intune/fundamentals/what-is-intune).
+[Microsoft Endpoint Manager](/mem/endpoint-manager-overview) es una plataforma de solución que unifica varios servicios. Incluye [Microsoft Intune](/mem/intune/fundamentals/what-is-intune) y [Configuration Manager de punto de conexión de Microsoft](/mem/configmgr).
 
 Este tema guía a los usuarios en:
 
@@ -182,14 +183,14 @@ A continuación, seguirá creando varios tipos diferentes de directivas de segur
     > [!div class="mx-imgBorder"]
     > :::image type="content" source="images/6b728d6e0d71108d768e368b416ff8ba.png" alt-text="Portal de Microsoft Endpoint Manager 12" lightbox="images/6b728d6e0d71108d768e368b416ff8ba.png":::
 
-3. Seleccione **Plataforma - Windows 10 y versiones posteriores - Windows y Perfil - Antivirus de Microsoft Defender > Crear**.
+3. Seleccione **Plataforma - Windows 10 y versiones posteriores - Windows y Perfil - Microsoft Defender Antivirus > Crear**.
 
 4. Escriba el nombre y la descripción y, a continuación, seleccione  **Siguiente**.
 
     > [!div class="mx-imgBorder"]
     > :::image type="content" source="images/a7d738dd4509d65407b7d12beaa3e917.png" alt-text="Portal de Microsoft Endpoint Manager 13" lightbox="images/a7d738dd4509d65407b7d12beaa3e917.png":::
 
-5. En la **página Configuración**: establezca las configuraciones que necesita para Antivirus de Microsoft Defender (Protección en la nube, Exclusiones, protección Real-Time y corrección).
+5. En la **página Configuración**: establezca las configuraciones que necesita para Microsoft Defender Antivirus (Cloud Protection, Exclusiones, Real-Time Protection y Corrección).
 
     > [!div class="mx-imgBorder"]
     > :::image type="content" source="images/3840b1576d6f79a1d72eb14760ef5e8c.png" alt-text="Portal de Microsoft Endpoint Manager 14" lightbox="images/3840b1576d6f79a1d72eb14760ef5e8c.png":::

@@ -1,5 +1,5 @@
 ---
-title: Configurar SharePoint Syntex
+title: Configuración de Microsoft Syntex
 ms.author: mikeplum
 author: MikePlumleyMSFT
 ms.reviewer: ssquires
@@ -14,17 +14,17 @@ ms.custom:
 - admindeeplinkMAC
 search.appverid: MET150
 ms.localizationpriority: high
-description: Configurar SharePoint Syntex
-ms.openlocfilehash: 1db23fc1d1d5af03358867aaca901a279b0fe7a1
-ms.sourcegitcommit: d3ef9391f621e8f4ca70661184b3bb82c6cbda94
+description: Configure Microsoft Syntex.
+ms.openlocfilehash: 5fab513e50bba1e0ccc975b724f589aebec914c4
+ms.sourcegitcommit: 04e517c7e00323b5c33d8ea937115725cf2cfd4d
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/02/2022
-ms.locfileid: "67584924"
+ms.lasthandoff: 10/13/2022
+ms.locfileid: "68564244"
 ---
-# <a name="set-up-sharepoint-syntex"></a>Configurar SharePoint Syntex
+# <a name="set-up-microsoft-syntex"></a>Configuración de Microsoft Syntex
 
-Los administradores pueden usar el <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">Centro de administración de Microsoft 365</a> para configurar [Microsoft SharePoint Syntex](index.md). 
+Los administradores pueden usar la <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">Centro de administración de Microsoft 365</a> para configurar [Microsoft Syntex](index.md). 
 
 Considere lo siguiente antes de empezar:
 
@@ -33,7 +33,7 @@ Considere lo siguiente antes de empezar:
 
 Puede cambiar su configuración después de la configuración inicial en el <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">Centro de administración de Microsoft 365</a>.
 
-Antes de la configuración, asegúrese de planear la mejor forma de configurar la comprensión del contenido en su entorno. Por ejemplo, necesita tomar las siguientes decisiones:
+Prior to setup, make sure to plan for the best way to set up and configure content understanding in your environment. For example, you need to make the following decisions:
 
 - Los sitios de SharePoint en los que desea habilitar el procesamiento de formularios: todos, algunos o sitios seleccionados
 - El nombre y los administradores de su centro de contenido
@@ -41,7 +41,7 @@ Antes de la configuración, asegúrese de planear la mejor forma de configurar l
 ## <a name="requirements"></a>Requirements 
 
 > [!NOTE]
-> Debe tener permisos de administrador global o de administrador de SharePoint para poder acceder al centro de administración de Microsoft 365 y configurar SharePoint Syntex.
+> Debe tener permisos de administrador global o administrador de SharePoint para poder acceder a la Centro de administración de Microsoft 365 y configurar Syntex.
 
 Como administrador, también puede realizar cambios en la configuración seleccionada en cualquier momento después de la configuración, y a lo largo de la introducción al contenido de la configuración de administración en el <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">Centro de administración de Microsoft 365</a>.
 
@@ -51,23 +51,23 @@ Si tiene previsto usar un entorno de Power Platform personalizado, deberá insta
 
 También debe [asignar créditos de AI Builder](/power-platform/admin/capacity-add-on) al entorno personalizado antes de poder crear modelos de procesamiento de formularios. 
 
-Cuando se usa un entorno personalizado, a los creadores de modelos se les debe asignar el rol de seguridad Creador de entorno y a los usuarios de modelos se les debe asignar el rol de seguridad Usuario básico. Consulte [Asignar un rol de seguridad a un usuario](/power-platform/admin/assign-security-roles) para obtener más información.
+When using a custom environment, model creators must be assigned the Environment Maker security role and model users must be assigned the Basic User security role. See [Assign a security role to a user](/power-platform/admin/assign-security-roles) for more information.
 
 Los usuarios que crean modelos en un [sitio del centro de contenido](/microsoft-365/contentunderstanding/create-a-content-center) deben ser miembros del sitio. Los usuarios que crean modelos localmente fuera del centro de contenido deben ser propietarios de los sitios.
 
 ### <a name="licensing"></a>Licencias
 
-Para usar SharePoint Syntex, su organización debe tener una suscripción a SharePoint Syntex y cada usuario debe tener una licencia asignada. Las licencias de SharePoint Syntex incluyen las siguientes aplicaciones (todas se deben asignar):
+Para usar Syntex, su organización debe tener una suscripción a Syntex y cada usuario debe tener asignadas licencias. Las licencias de yntex incluyen las siguientes aplicaciones, que deben asignarse:
 
-- SharePoint Syntex
-- SharePoint Syntex: tipo SPO
-- Servicio de datos comunes para SharePoint Syntex
+- Microsoft Syntex
+- Microsoft Syntex: tipo SPO
+- Common Data Service para Microsoft Syntex
 
-Para usar el procesamiento de formularios, también necesita créditos de AI Builder. Cada mes se proporciona una asignación de créditos de AI Builder para cada usuario con licencia de SharePoint Syntex.
+Para usar el procesamiento de formularios, también necesita créditos de AI Builder. Para cada usuario con licencia de Syntex, se proporciona una asignación de créditos de AI Builder cada mes.
 
-Para obtener más información sobre las licencias de SharePoint Syntex, vea[ beginning="1" end="2">SharePoint Syntex licensing](syntex-licensing.md)
+Para obtener más información sobre las licencias de [Syntex, consulte Licencias de Syntex](syntex-licensing.md).
 
-## <a name="to-set-up-sharepoint-syntex"></a>Para configurar SharePoint Syntex
+## <a name="to-set-up-syntex"></a>Para configurar Syntex
 
 1. En el Centro de administración de Microsoft 365, seleccione <a href="https://go.microsoft.com/fwlink/p/?linkid=2171997" target="_blank">**Configuración**</a> y luego consulte la sección **Archivos y contenido**.
 
@@ -105,7 +105,7 @@ Para obtener más información sobre las licencias de SharePoint Syntex, vea[ be
 
     1. Para el **Nombre del sitio**, escriba el nombre que quiere darle a su sitio de centro de contenido.
     
-    1. La **Dirección del sitio** mostrará la dirección URL del sitio, en función de lo que haya seleccionado para el nombre del sitio. Si desea cambiarlo, haga clic en **Editar**.
+    1. The **Site address** will show the URL for your site, based on what you selected for the site name. If you want to change it, click **Edit**.
 
        > [!div class="mx-imgBorder"]
        > ![Crear el centro de contenido.](../media/content-understanding/admin-cu-create-cc.png)</br>
@@ -120,7 +120,7 @@ Para obtener más información sobre las licencias de SharePoint Syntex, vea[ be
 
 ## <a name="assign-licenses"></a>Asignar licencias
 
-Una vez que haya configurado SharePoint Syntex, debe asignar licencias para los usuarios que utilizarán cualquier función de SharePoint Syntex.
+Una vez que haya configurado Syntex, debe asignar licencias para los usuarios que usarán las características de Syntex.
 
 Para asignar licencias:
 
@@ -130,10 +130,10 @@ Para asignar licencias:
 
 3. Elija **Aplicaciones** en el menú desplegable.
 
-4. Seleccionar **Mostrar aplicaciones para SharePoint Syntex**. Bajo **Aplicaciones**, asegúrese de que **Common Data Service para SharePoint Syntex**, **SharePoint Syntex**, y **SharePoint Syntex - tipo de SPO** estén todas seleccionadas.
+4. Select **Show apps for  SharePoint Syntex**. Under **Apps**, make sure **Common Data Service for SharePoint Syntex**, **SharePoint Syntex**, and **SharePoint Syntex - SPO type** are all selected.
 
     > [!div class="mx-imgBorder"]
-    > ![Licencias de SharePoint Syntex en el Centro de administración de Microsoft 365.](../media/content-understanding/sharepoint-syntex-licenses.png)
+    > ![Licencias de Syntex en el Centro de administración de Microsoft 365.](../media/content-understanding/sharepoint-syntex-licenses.png)
 
 5. Haga clic en **Guardar cambios**.
 

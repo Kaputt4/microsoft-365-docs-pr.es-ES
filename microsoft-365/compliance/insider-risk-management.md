@@ -18,12 +18,12 @@ ms.collection:
 - m365solution-insiderrisk
 - m365initiative-compliance
 - highpri
-ms.openlocfilehash: 26aa7bd217092ad28932ff91113f130122cdfeb2
-ms.sourcegitcommit: 50da6f1f6ef2274c17ed9729e7ad84395b0a9be2
+ms.openlocfilehash: d356c89866cc1a0f3727bf647fd451cc4339d8ae
+ms.sourcegitcommit: 04e517c7e00323b5c33d8ea937115725cf2cfd4d
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/08/2022
-ms.locfileid: "68506046"
+ms.lasthandoff: 10/13/2022
+ms.locfileid: "68564441"
 ---
 # <a name="learn-about-insider-risk-management"></a>Información sobre riesgos internos de Microsoft
 
@@ -198,7 +198,7 @@ En el caso de las organizaciones de la industria sanitaria, estudios recientes h
 
 ### <a name="actions-and-behaviors-by-disgruntled-users-preview"></a>Acciones y comportamientos de usuarios descontentos (versión preliminar)
 
-Los eventos de estrés de empleo pueden afectar al comportamiento del usuario de varias maneras relacionadas con los riesgos internos. Estos factores de estrés pueden ser una revisión de rendimiento deficiente, una disminución de posición o la colocación del usuario en un plan de revisión de rendimiento. Aunque la mayoría de los usuarios no responden malintencionadamente a estos eventos, el estrés de estas acciones puede dar lugar a que algunos usuarios se comporten de maneras que normalmente no consideren en circunstancias normales. Para ayudar a identificar estos tipos de actividades de riesgo, las siguientes plantillas de directivas de administración de riesgos internos usan el conector de RR. HH. de Microsoft 365 y comienzan a puntuar indicadores de riesgo relacionados con comportamientos que pueden producirse cerca de eventos de estrés en el empleo:
+Los eventos de estrés laboral pueden afectar al comportamiento del usuario de varias maneras relacionadas con los riesgos internos. Estos factores de estrés pueden ser una revisión de rendimiento deficiente, una disminución de posición o la colocación del usuario en un plan de revisión de rendimiento. Los factores de estrés también pueden dar lugar a un comportamiento potencialmente inadecuado, como el envío de usuarios potencialmente amenazantes, hostigamiento o lenguaje discriminatorio en el correo electrónico y otros mensajes. Aunque la mayoría de los usuarios no responden malintencionadamente a estos eventos, el estrés de estas acciones puede dar lugar a que algunos usuarios se comporten de maneras que normalmente no consideren en circunstancias normales. Para ayudar a identificar estos tipos de actividades de riesgo, las siguientes plantillas de directivas de administración de riesgos internos pueden usar el conector de RR. HH. o la integración con una [directiva de cumplimiento de comunicaciones dedicada](/microsoft-365/compliance/communication-compliance-policies#integration-with-insider-risk-management-preview) para que los usuarios entren en el ámbito de las directivas de administración de riesgos internos y empiecen a puntuar indicadores de riesgo relacionados con comportamientos que pueden producirse cerca de eventos de estrés laboral:
 
 - [Filtraciones de datos por parte de usuarios inconformes (versión preliminar)](insider-risk-management-policies.md#data-leaks-by-disgruntled-users-preview)
 - [Infracciones de la directiva de seguridad por parte de usuarios inconformes (versión preliminar)](insider-risk-management-policies.md#security-policy-violations-by-disgruntled-users-preview)

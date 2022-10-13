@@ -17,12 +17,12 @@ ms.collection:
 ms.topic: reference
 ms.subservice: mde
 search.appverid: met150
-ms.openlocfilehash: 66b34f4b158bc23467a0f147e57330e7ee736f5a
-ms.sourcegitcommit: 4e42bafee965446f44f7f57d1defed2b9b24fce8
+ms.openlocfilehash: a26b31caeb695718b3a7c747265615490fc92321
+ms.sourcegitcommit: 04e517c7e00323b5c33d8ea937115725cf2cfd4d
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/30/2022
-ms.locfileid: "68224786"
+ms.lasthandoff: 10/13/2022
+ms.locfileid: "68564222"
 ---
 # <a name="whats-new-in-microsoft-defender-for-endpoint-on-mac"></a>Novedades de Microsoft Defender para punto de conexión en Mac
 
@@ -37,6 +37,28 @@ ms.locfileid: "68224786"
 Para obtener más información sobre Microsoft Defender para punto de conexión en otros sistemas operativos: 
 - [Novedades de Microsoft Defender para punto de conexión en Linux](linux-whatsnew.md) 
 - [Novedades de Microsoft Defender para punto de conexión en iOS](ios-whatsnew.md)</br>
+
+<details>
+  <summary>Oct-2022 (compilación: 101.82.21 | Versión: 20.122082.18221.0)</summary>
+
+&ensp;Compilación: **101.82.21**<br/>
+&ensp;Versión: **20.122082.18221.0**<br/>
+&ensp;Versión del motor: **1.1.19400.3**<br/>
+&ensp;Versión de firma: **1.369.962.0**<br/>
+
+**Novedades**
+
+- Tp de Mac en modo de bloqueo que provoca que el dispositivo se bloquee al apagarse o se bloquee al reiniciar
+- Agregar un modificador de línea de comandos mdatp para ver el historial de exámenes a petición
+- Mejora del rendimiento del propietario del dispositivo en MacOs
+- Listo para macOS Ventura (13.0)
+- Correcciones de errores y rendimiento
+
+<br/>
+</details>
+
+> [!IMPORTANT]
+> Se trata de una versión mínima de MDE sin problemas conocidos en macOS Ventura el día de publicar las notas de la versión. Entre ahora y macOS Ventura GA, Apple todavía puede lanzar Ventura Beta con cambios en la plataforma que afectan a la experiencia de MDE. Visite estas notas de la versión en torno a la fecha de disponibilidad general de Ventura para ver el número de versión de MDE compatible con Ventura.
 
 <details>
   <summary>Ago-2022 (compilación: 101.78.13 | Versión de lanzamiento: 20.122072.17813.0)</summary>
@@ -54,7 +76,7 @@ Para obtener más información sobre Microsoft Defender para punto de conexión 
 - Corrección del bloqueo de la interfaz de usuario en Ventura
 - Corrección de las definiciones que no se descargan justo después de la instalación
 - Otras correcciones de errores
-
+    
 <br/>
 </details>
 

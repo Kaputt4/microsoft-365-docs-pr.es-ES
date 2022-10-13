@@ -16,12 +16,12 @@ ms.collection:
 appliesto:
 - Microsoft Teams
 - Microsoft 365 for frontline workers
-ms.openlocfilehash: 9c776de6300c3b2b58b5d2778f351829a1c183f3
-ms.sourcegitcommit: 12af9e8e3a6eaa090fda9e98ccb831dff65863a4
+ms.openlocfilehash: bac87e202ebf656f8da6986738e42f847b8e098a
+ms.sourcegitcommit: 04e517c7e00323b5c33d8ea937115725cf2cfd4d
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/27/2022
-ms.locfileid: "68063538"
+ms.lasthandoff: 10/13/2022
+ms.locfileid: "68563260"
 ---
 # <a name="manage-mobile-devices-for-frontline-workers"></a>Administración de dispositivos móviles para trabajadores de primera línea
 
@@ -93,14 +93,6 @@ Además de los dispositivos propiedad de la empresa, puede [inscribir](/mem/intu
 En algunos casos, los usuarios pueden sentirse reacios a inscribir sus dispositivos personales en la administración. Si la inscripción de dispositivos no es una opción, puede elegir un enfoque de administración de aplicaciones móviles (MAM) y usar [ directivas de protección de aplicaciones](/mem/intune/apps/app-protection-policies) para administrar aplicaciones que contienen datos corporativos. Por ejemplo, puede aplicar directivas de protección de aplicaciones a las aplicaciones móviles de Teams y Office para evitar que los datos de la empresa se copien en las aplicaciones personales del dispositivo.
 
 Para obtener más información, consulte ["Dispositivos personales frente a dispositivos propiedad de la organización" en la guía de planeación de Intune](/mem/intune/fundamentals/intune-planning-guide#personal-devices-vs-organization-owned-devices) y la [Guía de implementación: Inscribir dispositivos en Microsoft Intune](/mem/intune/fundamentals/deployment-guide-enrollment).
-
-### <a name="off-shift-access-controls-in-teams"></a>Controles de acceso fuera de turno en Teams
-
-Los controles de acceso fuera de turno le ayudan a limitar el acceso a Teams cuando los empleados están fuera del turno. Con esta característica, puede configurar Teams para que muestre un mensaje cuando los empleados accedan a la aplicación fuera del horario laboral. Deben aceptar el mensaje para poder usar Teams.
-
-El mensaje predeterminado notifica al empleado que no se le pagará por el tiempo empleado en Teams fuera del horario laboral. Puede usar el mensaje predeterminado, elegir un mensaje predefinido o mostrar el suyo propio. Esta característica ayuda a garantizar que los empleados no trabajan involuntariamente cuando no están en turnos y ayuda a cumplir con las regulaciones laborales.
-
-Para obtener más información, vea [Desactivar el acceso por turnos a Teams](manage-shift-based-access-flw.md#off-shift-access-to-teams).
 
 ## <a name="related-articles"></a>Artículos relacionados
 

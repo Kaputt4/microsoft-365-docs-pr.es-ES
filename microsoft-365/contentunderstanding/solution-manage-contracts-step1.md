@@ -1,5 +1,5 @@
 ---
-title: Paso 1. Uso de SharePoint Syntex para identificar archivos de contrato y extraer datos
+title: Paso 1. Uso de Microsoft Syntex para identificar archivos de contrato y extraer datos
 ms.author: chucked
 author: chuckedmonson
 manager: pamgreen
@@ -11,17 +11,17 @@ ms.service: microsoft-365-enterprise
 search.appverid: ''
 ms.localizationpriority: medium
 ROBOTS: ''
-description: Obtenga información sobre cómo usar SharePoint Syntex para identificar archivos de contrato y extraer datos mediante una solución de Microsoft 365.
-ms.openlocfilehash: 115c1e3fbcd18bcc766132afaff308d25cf989fe
-ms.sourcegitcommit: d3ef9391f621e8f4ca70661184b3bb82c6cbda94
+description: Aprenda a usar Microsoft Syntex para identificar archivos de contrato y extraer datos mediante una solución de Microsoft 365.
+ms.openlocfilehash: 19a62850e2a6749e9a7cabbafbc8959af81367fe
+ms.sourcegitcommit: 04e517c7e00323b5c33d8ea937115725cf2cfd4d
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/02/2022
-ms.locfileid: "67582502"
+ms.lasthandoff: 10/13/2022
+ms.locfileid: "68563304"
 ---
-# <a name="step-1-use-sharepoint-syntex-to-identify-contract-files-and-extract-data"></a>Paso 1. Uso de SharePoint Syntex para identificar archivos de contrato y extraer datos
+# <a name="step-1-use-microsoft-syntex-to-identify-contract-files-and-extract-data"></a>Paso 1. Uso de Microsoft Syntex para identificar archivos de contrato y extraer datos
 
-Su organización necesita una manera de identificar y clasificar todos los documentos de contrato de los muchos archivos que recibe. También quiere poder ver rápidamente varios elementos clave en cada uno de los archivos de contrato identificados (por ejemplo, *Cliente*, *Contratista* y *Importe de cuota*). Para ello, use [SharePoint Syntex](index.md) para crear un modelo de comprensión de documentos y aplicarlo a una biblioteca de documentos.
+Su organización necesita una manera de identificar y clasificar todos los documentos de contrato de los muchos archivos que recibe. También quiere poder ver rápidamente varios elementos clave en cada uno de los archivos de contrato identificados (por ejemplo, *Cliente*, *Contratista* y *Importe de cuota*). Para ello, use [Syntex](index.md) para crear un modelo de comprensión de documentos y aplicarlo a una biblioteca de documentos.
 
 ## <a name="overview-of-the-process"></a>Información general del proceso
 
@@ -31,7 +31,7 @@ En los modelos de comprensión mediante documentos se usa la tecnología de reco
 
 1. En primer lugar, debe encontrar al menos cinco archivos de ejemplo que puede usar para "entrenar" el modelo para buscar características específicas del tipo de contenido que intenta identificar (un contrato). 
 
-2. Con SharePoint Syntex, cree un nuevo modelo de comprensión de documentos. Con los archivos de ejemplo, debe [crear un clasificador](create-a-classifier.md). Al entrenar el clasificador con los archivos de ejemplo, se le enseña a buscar características específicas de lo que vería en los contratos de su empresa. Por ejemplo, [cree una "explicación"](create-a-classifier.md#create-an-explanation) que busque cadenas específicas que estén en sus contratos, como contrato de *servicio*, *términos de contrato* y *compensación*. Incluso puede entrenar la explicación para buscar estas cadenas en secciones específicas del documento o situadas junto a otras cadenas. Cuando crea que ha entrenado el clasificador con la información que necesita, puede probar el modelo en un conjunto de ejemplo de archivos de ejemplo para ver lo eficaz que es. Después de las pruebas, si es necesario, puede optar por realizar cambios en las explicaciones para que sean más eficaces. 
+2. Con Syntex, cree un nuevo modelo de comprensión de documentos. Con los archivos de ejemplo, debe [crear un clasificador](create-a-classifier.md). Al entrenar el clasificador con los archivos de ejemplo, se le enseña a buscar características específicas de lo que vería en los contratos de su empresa. Por ejemplo, [cree una "explicación"](create-a-classifier.md#create-an-explanation) que busque cadenas específicas que estén en sus contratos, como contrato de *servicio*, *términos de contrato* y *compensación*. Incluso puede entrenar la explicación para buscar estas cadenas en secciones específicas del documento o situadas junto a otras cadenas. Cuando crea que ha entrenado el clasificador con la información que necesita, puede probar el modelo en un conjunto de ejemplo de archivos de ejemplo para ver lo eficaz que es. Después de las pruebas, si es necesario, puede optar por realizar cambios en las explicaciones para que sean más eficaces. 
 
 3. En el modelo, puede [crear un extractor](create-an-extractor.md) para extraer fragmentos de datos específicos de cada contrato. Por ejemplo, para cada contrato, la información que más le preocupa es quién es el cliente, el nombre del contratista y el costo total.
 

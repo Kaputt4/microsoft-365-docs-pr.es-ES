@@ -22,12 +22,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Obtenga información sobre cómo La puntuación de adopción de Microsoft refleja las medidas de la experiencia de las personas y la tecnología y la comparación con organizaciones de tamaño similar.
-ms.openlocfilehash: 372d9d13b02b8d0087c40a1e97c870dbfc6cb97b
-ms.sourcegitcommit: 0b7070ec119e00e0dafe030bbfbef0ae5c9afa19
+ms.openlocfilehash: eff127b92aa14a80756827f93583e43df72f7456
+ms.sourcegitcommit: 04e517c7e00323b5c33d8ea937115725cf2cfd4d
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/29/2022
-ms.locfileid: "68205033"
+ms.lasthandoff: 10/13/2022
+ms.locfileid: "68563502"
 ---
 # <a name="microsoft-adoption-score"></a>Puntuación de adopción de Microsoft 
 
@@ -47,16 +47,29 @@ Proporcionamos métricas, información y recomendaciones en dos áreas:
 
     Para cada una de las categorías mencionadas, observamos la investigación pública para identificar algunos procedimientos recomendados y ventajas asociadas en forma de efectividad organizacional. Por ejemplo, la investigación Forrester ha demostrado que al colaborar y compartir contenido en la nube (en lugar de enviar datos adjuntos por correo electrónico), los usuarios pueden ahorrar hasta 100 minutos por semana. Es más, cuantificamos el uso de estos procedimientos recomendados en su organización para ayudarle a ver dónde se encuentra en el viaje de transformación digital. 
 
-- **Experiencias tecnológicas:** su organización depende de una tecnología fiable y de buen rendimiento, así como del uso eficiente de Microsoft 365. [El Análisis de punto de conexión](https://aka.ms/endpointanalytics) le ayuda a comprender cómo los problemas de rendimiento y estado del software y el hardware pueden afectar a la organización. El estado de las aplicaciones de Microsoft 365 le ayuda a comprender si los dispositivos de su organización ejecutan las aplicaciones de Microsoft 365 en canales recomendados.
-
-## <a name="before-you-begin"></a>Antes de empezar
-
-Consulte [Qué es el Análisis de punto de conexión](/mem/analytics/overview) para obtener una descripción general y los detalles de los requisitos previos. Para más información sobre la información de conectividad de red de Microsoft 365, consulte [la descripción general de la conectividad de red](../../enterprise/microsoft-365-networking-overview.md).
-
-Para los datos de experiencias de personas, necesitará una suscripción a Microsoft 365 para empresas u Office 365 para empresas. Para los datos de análisis de punto de conexión de su espacio empresarial, necesita agregar Microsoft Intune a la suscripción. Intune ayuda a proteger los datos de su organización mediante la administración de dispositivos y aplicaciones. Cuando tenga Intune, puede activar el análisis de punto de conexión en la experiencia de Intune. Para más información sobre Microsoft Intune, consulte la [documentación de Microsoft Intune](/mem/intune/). 
+- **Experiencias tecnológicas:** su organización depende de una tecnología fiable y de buen rendimiento, así como del uso eficiente de Microsoft 365. [El Análisis de punto de conexión](https://aka.ms/endpointanalytics) le ayuda a comprender cómo los problemas de rendimiento y estado del software y el hardware pueden afectar a la organización. [La conectividad de red](../../enterprise/microsoft-365-networking-overview.md) le ayuda a comprender el rendimiento de Exchange, SharePoint y Microsoft Teams en la arquitectura de red. Puede revisar y actualizar la configuración de red para mejorar la conectividad. El estado de las aplicaciones de Microsoft 365 le ayuda a comprender si los dispositivos de su organización ejecutan las aplicaciones de Microsoft 365 en canales recomendados.
 
 > [!NOTE]
-> No se requiere una licencia de Workplace Analytics para obtener las características de la puntuación de adopción.
+> Todas las conclusiones se calculan mediante datos en el nivel organizativo, no en el nivel individual.
+
+## <a name="how-to-turn-on-adoption-score"></a>Cómo activar la puntuación de adopción
+
+Para habilitar la puntuación de adopción:
+
+1. Inicie sesión en el Centro de administración de Microsoft 365 como administrador global y vaya a **Puntuación de adopción** **de informes** > .
+2. Seleccione **Habilitar puntuación de adopción**. La información puede tardar hasta 24 horas en estar disponible.
+
+> [!NOTE]
+> Solo un profesional de TI con el rol de administrador global puede optar por la puntuación de adopción.
+
+Visite [los controles de privacidad de La puntuación de adopción](privacy.md) para obtener más información sobre las opciones para configurar experiencias de personas para su organización.
+
+## <a name="adoption-score-prerequisites"></a>Requisitos previos de la puntuación de adopción
+
+Para los datos de experiencias de personas, necesitará una suscripción a Microsoft 365 para empresas u Office 365 para empresas. Para los datos de análisis de punto de conexión de su espacio empresarial, necesita agregar Microsoft Intune a la suscripción. Intune ayuda a proteger los datos de su organización mediante la administración de dispositivos y aplicaciones. Cuando tenga Intune, puede activar el análisis de punto de conexión en la experiencia de Intune. Para más información sobre Microsoft Intune, consulte la [documentación de Microsoft Intune](/mem/intune/).
+
+> [!NOTE]
+> No se requiere una licencia para Ideas Viva para obtener las características de la puntuación de adopción.
 
 La puntuación de adopción solo está disponible en la Centro de administración de Microsoft 365 y solo pueden acceder los profesionales de TI que tienen uno de los siguientes roles:  
 
@@ -68,9 +81,7 @@ La puntuación de adopción solo está disponible en la Centro de administració
 - Lector global
 - Lector de informes
 - Resumen de uso de Lector de informes
-
-> [!NOTE]
-> Solo un profesional de TI con el rol de administrador global puede registrarse o participar en un inquilino para obtener la Puntuación de adopción.
+- Administrador de éxito de la experiencia del usuario
 
 El modelo de control de acceso basado en rol para La puntuación de adopción ayuda a las organizaciones a seguir realizando esfuerzos de transformación digital con Microsoft 365 al proporcionar la flexibilidad para asignar roles a los profesionales de TI dentro de una organización.
 
@@ -82,7 +93,7 @@ Puede acceder a la experiencia desde Administración de Microsoft 365 inicio en 
 
 La puntuación de adopción se basa en las puntuaciones combinadas de las categorías de personas y experiencias tecnológicas. Cada categoría se pondera de forma equitativa, con un total de 100 puntos. La puntuación de adopción más alta posible es 800.
 
-### <a name="score-categories"></a>Categorías de puntuación 
+### <a name="score-categories"></a>Categorías de puntuación
 
 - Comunicación (100 puntos)
 - Reuniones (100 puntos)
