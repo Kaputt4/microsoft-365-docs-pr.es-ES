@@ -18,15 +18,13 @@ ms.collection:
 - tier2
 ms.topic: article
 ms.subservice: mde
-ms.openlocfilehash: a8fa480d4408a77630ba1dd2834a990869ebbb14
-ms.sourcegitcommit: 4f8200453d347de677461f27eb5a3802ce5cc888
+ms.openlocfilehash: e3ccfa67a66d9326b945bde49a1ccfc0187879c2
+ms.sourcegitcommit: 1f4c51d022d1cfb6c194bf0f0af9c2841c781d68
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/12/2022
-ms.locfileid: "68543209"
+ms.lasthandoff: 10/14/2022
+ms.locfileid: "68573030"
 ---
-<!--- v-jweston resumes authorship and ms.authorship appx April-May 2023 ---> 
-
 # <a name="block-at-first-sight-bafs-demonstration"></a>Demostración de bloquear a primera vista (BAFS)
 
 Bloquear a primera vista es una característica de Microsoft Defender protección proporcionada por la nube antivirus que proporciona una manera de detectar y bloquear nuevo malware en cuestión de segundos. Puede probar que funciona según lo esperado descargando un archivo de malware falso.
@@ -34,15 +32,17 @@ Bloquear a primera vista es una característica de Microsoft Defender protecció
 ## <a name="scenario-requirements-and-setup"></a>Requisitos y configuración del escenario
 
 - Windows 10 actualización de aniversario (1607) o posterior
-- Protección en la nube habilitada
+- La protección en la nube está habilitada
 - Puede [descargar y usar el script de PowerShell](https://www.powershellgallery.com/packages/WindowsDefender_InternalEvaluationSettings/) para habilitar esta configuración y otras
-- Nota: Debería ver que el explorador le pide que guarde este archivo en unos segundos.
+
+  > [!NOTE]
+  > Debería ver que el explorador le pide que guarde este archivo en unos segundos.
 
 ### <a name="test-bafs"></a>Prueba de BAFS
 
-- Haga clic en el botón Crear y descargar nuevo archivo.
-- Debería ver el explorador que examina el archivo, seguido de una notificación de bloque antivirus.
-- [Crear & descargar nuevo archivo!](https://demowdtestground.blob.core.windows.net/samples/ztp_xzXLX_s1H8MsxK2SRlsjmzaH62cOZEaqtstGsOw/wdtestfile.exe?sv=2015-07-08&sr=b&sig=7JNcGzAYWEinuWKNmjoC6tDmEjGZMQj8rAEF9HIzJdE%3D&se=2022-09-30T18%3A29%3A28Z&sp=r)
+1. Haga clic en **Crear y descargue el siguiente archivo** .
+1. Debería ver el explorador que examina el archivo, seguido de una notificación de bloque antivirus.
+1. [Crear & descargar nuevo archivo!](https://demowdtestground.blob.core.windows.net/samples/ztp_xzXLX_s1H8MsxK2SRlsjmzaH62cOZEaqtstGsOw/wdtestfile.exe?sv=2015-07-08&sr=b&sig=7JNcGzAYWEinuWKNmjoC6tDmEjGZMQj8rAEF9HIzJdE%3D&se=2022-09-30T18%3A29%3A28Z&sp=r)
 
 ## <a name="see-also"></a>Vea también
 
