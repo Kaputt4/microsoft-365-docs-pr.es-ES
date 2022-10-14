@@ -22,12 +22,12 @@ ms.collection:
 - m365-security
 - tier2
 search.appverid: met150
-ms.openlocfilehash: 5f2a87f1fa8ff8130e460f46c9ac94275ba0735d
-ms.sourcegitcommit: 4e42bafee965446f44f7f57d1defed2b9b24fce8
+ms.openlocfilehash: 36e17a171b890a0e79c54810bc5263d3a809a0c1
+ms.sourcegitcommit: 1f4c51d022d1cfb6c194bf0f0af9c2841c781d68
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/30/2022
-ms.locfileid: "68221332"
+ms.lasthandoff: 10/14/2022
+ms.locfileid: "68573250"
 ---
 # <a name="protect-security-settings-with-tamper-protection"></a>Configuración de seguridad de la protección con protección contra alteraciones
 
@@ -39,6 +39,7 @@ ms.locfileid: "68221332"
 
 **Plataformas**
 - Windows
+- macOS
 
 La protección contra alteraciones está disponible para los dispositivos que ejecutan una de las siguientes versiones de Windows:
 
@@ -54,6 +55,12 @@ La protección contra alteraciones está disponible para los dispositivos que ej
 
 > [!NOTE]
 > La protección contra alteraciones en Windows Server 2012 R2 está disponible para los dispositivos incorporados mediante el paquete de solución unificado moderno. Para obtener más información, vea [Incorporación de servidores Windows al servicio de Microsoft Defender para punto de conexión](/microsoft-365/security/defender-endpoint/configure-server-endpoints).
+
+La protección contra alteraciones está disponible para los dispositivos que ejecutan una de las siguientes versiones de macOS:
+
+- Monterrey (12)
+- Big Sur (11)
+- Catalina (10.15+)
 
 ## <a name="overview"></a>Información general
 

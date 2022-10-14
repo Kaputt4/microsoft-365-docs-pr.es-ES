@@ -5,7 +5,6 @@ f1.keywords:
 ms.author: bcarter
 author: BrendaCarter
 manager: laurawi
-ms.date: 04/06/2022
 audience: ITPro
 ms.topic: article
 ms.localizationpriority: medium
@@ -18,15 +17,15 @@ ms.assetid: 8d274fe3-db51-4107-ba64-865e7155b355
 ms.custom:
 - seo-marvel-apr2020
 - admindeeplinkSPO
-description: Este tema le guiará por la configuración recomendada para la configuración de todo el inquilino que afecta a la seguridad del entorno de Microsoft 365.
+description: Configuraciones manuales para Exchange Online Protection, Microsoft Defender para Office 365, plan 1 y 2 y Microsoft 365 Defender, para una protección completa de la suscripción de Office 365.
 ms.subservice: mdo
 ms.service: microsoft-365-security
-ms.openlocfilehash: 196ef4299f371e00a662b6e6bd0a38cc04955bb5
-ms.sourcegitcommit: 12af9e8e3a6eaa090fda9e98ccb831dff65863a4
+ms.openlocfilehash: 0ef5c7987895f984fd59662298617a72504dda67
+ms.sourcegitcommit: 1f4c51d022d1cfb6c194bf0f0af9c2841c781d68
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/27/2022
-ms.locfileid: "68086539"
+ms.lasthandoff: 10/14/2022
+ms.locfileid: "68573381"
 ---
 # <a name="configure-your-microsoft-365-tenant-for-increased-security"></a>Configurar el inquilino de Microsoft 365 para aumentar la seguridad
 
@@ -37,12 +36,21 @@ ms.locfileid: "68086539"
 - [Plan 1 y Plan 2 de Microsoft Defender para Office 365](defender-for-office-365.md)
 - [Microsoft 365 Defender](../defender/microsoft-365-defender.md)
 
-Este tema le guiará por la configuración recomendada para la configuración de todo el inquilino que afecta a la seguridad del entorno de Microsoft 365. Es posible que las necesidades de seguridad requieran más o menos seguridad. Use estas recomendaciones como punto de partida.
+Las necesidades de la organización requieren seguridad.
 
+Los detalles dependen de su negocio.
+
+Este tema le guiará por la configuración manual de la configuración de todo el inquilino que afecta a la seguridad del entorno de Microsoft 365. Use estas recomendaciones como punto de partida.
 
 ## <a name="tune-threat-management-policies-in-the-microsoft-365-defender-portal"></a>Ajuste de las directivas de administración de amenazas en el portal de Microsoft 365 Defender
 
-El portal de Microsoft 365 Defender incluye funcionalidades que protegen el entorno. También incluye informes y paneles que puede usar para supervisar y tomar medidas. Algunas áreas incluyen configuraciones de directiva predeterminadas. Algunas áreas no incluyen directivas o reglas predeterminadas. Visite estas directivas en **Email &** directivas de colaboración \> **& reglas Directivas** \> de **amenazas** para ajustar la configuración de administración de amenazas para un entorno más seguro.
+El portal de Microsoft 365 Defender tiene funcionalidades tanto para la protección como para la generación de informes. Tiene paneles que puede usar para supervisar y tomar medidas cuando surjan amenazas.
+
+Tenga en cuenta que algunas áreas incluyen *configuraciones de directiva predeterminadas*. Algunas áreas no incluyen directivas o reglas predeterminadas.
+
+Por ejemplo, la configuración *recomendada* de Microsoft Defender para Office 365 (plan 1 y plan 2) se describe en esta práctica guía paso a paso, justo aquí: "[Asegurarse de que siempre tiene la seguridad óptima"](step-by-step-guides/ensuring-you-always-have-the-optimal-security-controls-with-preset-security-policies.md). Pero, aun así, algunos administradores optan por un enfoque más práctico para este producto.
+
+Para automatizar la configuración de Microsoft Defender para Office 365 visite las directivas Estándar y Estricto en **Directivas de colaboración** \> **Email & & reglas Directivas** \> de amenazas para ajustar la configuración de administración de amenazas para un entorno más seguro.
 
 |Área|¿Directiva predeterminada?|Recomendación|
 |---|---|---|
@@ -51,14 +59,27 @@ El portal de Microsoft 365 Defender incluye funcionalidades que protegen el ento
 |**Datos adjuntos seguros en Microsoft Defender para Office 365**|No|Configure la configuración global de Datos adjuntos seguros y cree una directiva de datos adjuntos seguros como se describe aquí: [Configurar los datos adjuntos seguros en Microsoft Defender para Office 365](protect-against-threats.md#safe-attachments-policies-in-microsoft-defender-for-office-365). <p> Más información: <ul><li>[Configuración recomendada de datos adjuntos seguros](recommended-settings-for-eop-and-office365.md#safe-attachments-settings)</li><li>[Datos adjuntos seguros en Microsoft Defender para Office 365](safe-attachments.md)</li><li>[Configurar directivas de datos adjuntos seguros](set-up-safe-attachments-policies.md)</li><li>[Datos adjuntos seguros para SharePoint, OneDrive y Microsoft Teams](mdo-for-spo-odb-and-teams.md)</li><li>[Documentos seguros en Microsoft 365 E5](safe-docs.md)</li></ul>|
 |**Vínculos seguros en Microsoft Defender para Office 365**|No|Cree una directiva de vínculos seguros como se describe aquí: [Configure Safe Links settings in Microsoft Defender para Office 365 (Configurar vínculos seguros en Microsoft Defender para Office 365](protect-against-threats.md#safe-links-policies-in-microsoft-defender-for-office-365)). <p> Más información: <ul><li>[Configuración de vínculos seguros recomendados](recommended-settings-for-eop-and-office365.md#safe-links-settings)</li><li>[Configurar directivas de vínculos seguros](set-up-safe-links-policies.md)</li><li>[Vínculos seguros en Microsoft Defender para Office 365](safe-links.md)</li></ul>|
 |**Antispam (filtrado de correo)**|Yes|Configure la directiva de antispam predeterminada como se describe aquí: [Configuración de la protección contra correo no deseado en EOP](protect-against-threats.md#part-3---anti-spam-protection-in-eop) <p> Más información: <ul><li>[Configuración recomendada de directivas contra correo no deseado](recommended-settings-for-eop-and-office365.md#eop-anti-spam-policy-settings)</li><li>[Protección contra correo no deseado en EOP](anti-spam-protection.md)</li><li>[Configuración de directivas contra correo no deseado en EOP](configure-your-spam-filter-policies.md)</li></ul>|
-|***Autenticación de Email***|Yes|Email autenticación usa registros DNS para agregar información verificable a los mensajes de correo electrónico sobre el origen y el remitente del mensaje. Microsoft 365 configura automáticamente la autenticación de correo electrónico para su dominio predeterminado (onmicrosoft.com), pero los administradores de Microsoft 365 también pueden configurar la autenticación por correo electrónico para dominios personalizados. Se usan tres métodos de autenticación: <ul><li>Marco de directivas de remitente (o SPF).</li><ul><li>Para obtener información sobre la configuración, consulte [Configuración de SPF en Microsoft 365 para ayudar a evitar la suplantación de identidad](set-up-spf-in-office-365-to-help-prevent-spoofing.md).</li></ul> <li>Correo identificado de DomainKeys (DKIM).</li><ul><li>Consulte [Uso de DKIM para validar el correo electrónico saliente enviado desde el dominio personalizado](use-dkim-to-validate-outbound-email.md).</li><li>Después de configurar DKIM, habilítelo en el portal de Microsoft 365 Defender.</li></ul><li>Autenticación de mensajes basada en dominio, informes y conformidad (DMARC).</li><ul><li>Para la configuración de DMARC [, use DMARC para validar el correo electrónico en Microsoft 365](use-dmarc-to-validate-email.md).</li></ul></ul>|
+|***autenticación de Email** _|Yes|Email autenticación usa registros DNS para agregar información verificable a los mensajes de correo electrónico sobre el origen y el remitente del mensaje. Microsoft 365 configura automáticamente la autenticación de correo electrónico para su dominio predeterminado (onmicrosoft.com), pero los administradores de Microsoft 365 también pueden configurar la autenticación por correo electrónico para dominios personalizados. Se usan tres métodos de autenticación: <ul><li>_ *Sender Policy Framework (o SPF)**.</li><ul><li> Para obtener información sobre la configuración, consulte [Configuración de SPF en Microsoft 365 para ayudar a evitar la suplantación de identidad](set-up-spf-in-office-365-to-help-prevent-spoofing.md).</li></ul> <li>** DomainKeys Identified Mail (DKIM)**.</li><ul><li> Consulte [Uso de DKIM para validar el correo electrónico saliente enviado desde el dominio personalizado](use-dkim-to-validate-outbound-email.md).</li><li> Después de configurar DKIM, habilítelo en el portal de Microsoft 365 Defender.</li></ul><li>** Autenticación de mensajes basada en dominio, informes y conformidad (DMARC **).</li><ul><li> Para la configuración de DMARC [, use DMARC para validar el correo electrónico en Microsoft 365](use-dmarc-to-validate-email.md).</li></ul><li> Después de configurar DKIM, habilítelo en el portal de Microsoft 365 Defender.</li></ul><ul><li>** Cadena recibida autenticada (ARC) en Microsoft 365 Defender para Office.** <ul><li>Enumere [los selladores de ARC de confianza](use-arc-exceptions-to-mark-trusted-arc-senders.md) para que los intermediarios *legítimos* sean de confianza incluso si modifican el correo.</li></ul>|
 
 > [!NOTE]
 > Para implementaciones no estándar de SPF, implementaciones híbridas y solución de problemas: [cómo Microsoft 365 usa Sender Policy Framework (SPF) para evitar la suplantación de identidad](how-office-365-uses-spf-to-prevent-spoofing.md).
 
 ## <a name="view-dashboards-and-reports-in-the-microsoft-365-defender-portal"></a>Visualización de paneles e informes en el portal de Microsoft 365 Defender
 
-Visite estos informes y paneles para obtener más información sobre el estado de su entorno. Los datos de estos informes se enriquecerán a medida que la organización use Office 365 servicios. Por ahora, esté familiarizado con lo que puede supervisar y tomar medidas.
+Vaya a [security.microsoft.com](https://security.microsoft.com). El menú de Microsoft 365 Defender se divide en secciones que comienzan, en orden, Inicio, Email & Colaboración, Aplicaciones en la nube e Informes (es posible que vea *algunas* o *todas* en función de su plan). Está buscando informes.
+
+1. Vaya a [security.microsoft.com](https://security.microsoft.com).
+2. Haga clic en **Informes** en el menú.
+    1. Aquí puede ver información sobre las tendencias de seguridad y realizar un seguimiento del estado de protección de las identidades, los datos, los dispositivos, las aplicaciones y la infraestructura.
+
+Los datos de estos informes se enriquecerán a medida que su organización use Office 365 servicios, tenga esto en cuenta si está en pruebas o piloto. Por ahora, esté familiarizado con lo que puede supervisar y tomar medidas.
+
+Dentro de cada informe, verá tarjetas para las áreas específicas supervisadas.
+
+1. Haga clic en los **informes de colaboración de Email &**.
+1. Tome nota de las tarjetas de informe disponibles.
+    1. Desde *malware detectado en el correo electrónico*, hasta *detecciones de correo no deseado*, *usuarios en peligro*, hasta *mensajes notificados* por el usuario y envíos de los dos *últimos* , con un botón que vincula a Envíos.
+1. Haga clic en un informe, como el *resumen de estado de Mailflow* y haga clic en el botón **Ver detalles** para profundizar en los datos (que incluso incluye una vista de embudo para facilitar la interpretación del flujo de correo total frente a los correos electrónicos bloqueados, correo no deseado y phishing, etc.).
 
 |Panel|Descripción|
 |---|---|
@@ -86,7 +107,7 @@ Para admitir los objetivos de protección de línea base, configure las directiv
 
 |Área|Incluye una directiva predeterminada|Recomendación|
 |---|---|---|
-|**Uso compartido** (SharePoint Online y OneDrive para la Empresa)|Yes|El uso compartido externo está habilitado de forma predeterminada. Se recomienda esta configuración: <ul><li>Permitir el uso compartido para usuarios externos autenticados y usar vínculos de acceso anónimo (configuración predeterminada).</li><li>Los vínculos de acceso anónimo expiran en estos días. Escriba un número, si lo desea, como 30 días.</li><li>Tipo de vínculo predeterminado: seleccione Interno (solo personas de la organización). Los usuarios que deseen compartir mediante vínculos anónimos deben elegir esta opción en el menú compartir.</li></ul> <p> Más información: [Introducción al uso compartido externo](/sharepoint/external-sharing-overview)|
+|**Uso compartido** (SharePoint Online y OneDrive para la Empresa)|Sí|El uso compartido externo está habilitado de forma predeterminada. Se recomienda esta configuración: <ul><li>Permitir el uso compartido para usuarios externos autenticados y usar vínculos de acceso anónimo (configuración predeterminada).</li><li>Los vínculos de acceso anónimo expiran en estos días. Escriba un número, si lo desea, como 30 días.</li><li>Tipo de vínculo predeterminado: seleccione Interno (solo personas de la organización). Los usuarios que deseen compartir mediante vínculos anónimos deben elegir esta opción en el menú compartir.</li></ul> <p> Más información: [Introducción al uso compartido externo](/sharepoint/external-sharing-overview)|
 
 El Centro de administración de SharePoint y OneDrive para la Empresa centro de administración incluyen la misma configuración. La configuración de cualquiera de los centros de administración se aplica a ambos.
 
