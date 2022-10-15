@@ -16,12 +16,12 @@ ms.collection:
 appliesto:
 - Microsoft Teams
 - Microsoft 365 for frontline workers
-ms.openlocfilehash: 10c1f0aff03fb302cc12cae78cf003d2f337a01a
-ms.sourcegitcommit: 4e42bafee965446f44f7f57d1defed2b9b24fce8
+ms.openlocfilehash: 452eb4d826ddedddc31bffa25edfcbc8b88526f1
+ms.sourcegitcommit: 1f4c51d022d1cfb6c194bf0f0af9c2841c781d68
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/30/2022
-ms.locfileid: "68234563"
+ms.lasthandoff: 10/14/2022
+ms.locfileid: "68574107"
 ---
 # <a name="known-issues-team-shifts-connector-for-ukg-dimensions"></a>Problemas conocidos: Conector de turnos de equipo para dimensiones ukg
 
@@ -45,6 +45,16 @@ Para solucionar este problema, mantenga la configuración de zona horaria tal y 
 
 La funcionalidad de interrupción de inicio y finalización de la característica de reloj de hora no se admite en una integración con ukg dimensiones. Los usuarios no podrán sacar el reloj ni reloj en un salto, aunque los botones se muestren en Turnos.
 
+## <a name="availability-settings-of-users-dont-apply-to-the-current-week"></a>La configuración de disponibilidad de los usuarios no se aplica a la semana actual
+
+Los usuarios móviles de Teams pueden establecer su disponibilidad personal en turnos. Sin embargo, si un usuario establece su disponibilidad después del día que se establece como el inicio de la semana en UKG Dimensions, su disponibilidad se aplica a la semana siguiente en adelante y no a la semana actual. Por ejemplo, el domingo se establece como el inicio de la semana en ukg dimensiones y el lunes de la semana actual, un usuario cambia su disponibilidad para jueves y viernes. En este escenario, su configuración de disponibilidad se aplica a la semana siguiente.
+
+## <a name="users-see-a-red-x-when-a-coworker-accepts-their-swap-request-and-the-manager-declines-the-request"></a>Los usuarios ven una "X" roja cuando un compañero de trabajo acepta su solicitud de intercambio y el administrador rechaza la solicitud.
+
+Actualmente, si un usuario crea una solicitud de intercambio con un compañero de trabajo y el compañero de trabajo acepta la solicitud pero el administrador la deniega, el usuario ve inesperadamente una "X" roja junto a la respuesta del compañero de trabajo y del administrador.
+
+El comportamiento correcto y esperado es una marca de verificación verde para indicar que el compañero de trabajo aceptó la solicitud y una "X" roja para indicar que el administrador denegó la solicitud.
+
 ## <a name="a-user-cant-perform-some-actions-in-shifts-in-the-teams-web-app-after-signing-in-with-a-different-account"></a>Un usuario no puede realizar algunas acciones en Turnos en la aplicación web de Teams después de iniciar sesión con una cuenta diferente
 
 Este problema puede producirse si un usuario que tiene varias cuentas en Teams realiza acciones en Turnos que requieren inicio de sesión único (SSO) en UKG Dimensions y ese usuario cambia de cuenta en la aplicación web de Teams en el mismo explorador.
@@ -53,7 +63,7 @@ Por ejemplo, un usuario inicia sesión en Teams, aprueba una solicitud de tiempo
 
 En este escenario, se produce un problema de almacenamiento en caché en el que el usuario inicia sesión en Teams y cambia en una cuenta e inicia sesión en UKG Dimensions en la otra cuenta.
 
-Como solución alternativa a este problema, siga uno de estos procedimientos:
+Para solucionar este problema, realice una de las siguientes acciones:
 
 - Borrar las cookies y los datos del sitio para el sitio mykronos.com en el explorador. Para más información, consulte [Eliminación de cookies en Microsoft Edge](https://support.microsoft.com/microsoft-edge/delete-cookies-in-microsoft-edge-63947406-40ac-c3b8-57b9-2a946a29ae09) o [Borrar, habilitar y administrar cookies en Chrome](https://support.google.com/chrome/answer/95647).
 - Use la aplicación web de Teams en una ventana de InPrivate en Microsoft Edge o en modo incógnito en Google Chrome.

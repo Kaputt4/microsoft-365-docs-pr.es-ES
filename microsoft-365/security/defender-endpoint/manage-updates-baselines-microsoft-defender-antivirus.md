@@ -7,7 +7,7 @@ ms.mktglfcycl: manage
 ms.sitesec: library
 ms.pagetype: security
 ms.localizationpriority: high
-ms.date: 10/10/2022
+ms.date: 10/13/2022
 audience: ITPro
 ms.topic: reference
 author: denisebmsft
@@ -20,12 +20,12 @@ ms.collection:
 - m365-security
 - tier2
 search.appverid: met150
-ms.openlocfilehash: 48fb6a2e4ec0c77a17e1ea0fedd95244485232bc
-ms.sourcegitcommit: 8d3c027592a638f411f87d89772dd3d39e92aab0
+ms.openlocfilehash: da95c91fcf376ac4c2d0b25efa0762f067455e5d
+ms.sourcegitcommit: 3d2bbc20ac4e0258778cfca1b6b465f3c8c2c297
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/12/2022
-ms.locfileid: "68536464"
+ms.lasthandoff: 10/14/2022
+ms.locfileid: "68576669"
 ---
 # <a name="manage-microsoft-defender-antivirus-updates-and-apply-baselines"></a>Para obtener más información, consulte Administrar actualizaciones de Antivirus de Microsoft Defender y aplicar bases de referencia.
 
@@ -89,11 +89,11 @@ Todas nuestras actualizaciones contienen
 - Mejoras de integración (nube, [Microsoft 365 Defender](/microsoft-365/security/defender/microsoft-365-defender))
 <br/><br/>
 <details>
-<summary>Septiembre de 2022 (Plataforma: 4.18.2209.x | Motor: 1.1.19700.3)</summary>
+<summary>Septiembre de 2022 (Plataforma: 4.18.2209.7 | Motor: 1.1.19700.3)</summary>
 
 &ensp;Versión de actualización de inteligencia de seguridad: **1.377.8.0**<br/>
 &ensp;Fecha de lanzamiento: **10 de octubre de 2022**<br/>
-&ensp;Plataforma: **4.18.2209.x**<br/>
+&ensp;Plataforma: **4.18.2209.7**<br/>
 &ensp;Motor: **1.1.19700.3**<br/>
 &ensp;Fase de soporte técnico: **Actualizaciones críticas y de seguridad**<br/>
 

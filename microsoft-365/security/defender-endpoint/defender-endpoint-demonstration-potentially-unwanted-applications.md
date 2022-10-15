@@ -18,22 +18,20 @@ ms.collection:
 - tier2
 ms.topic: article
 ms.subservice: mde
-ms.openlocfilehash: 56162c639b858a1ba255794e0b6fde03cddd5b14
-ms.sourcegitcommit: 4f8200453d347de677461f27eb5a3802ce5cc888
+ms.openlocfilehash: 8d98c1a74f771aee15d8b02ce9b16c8dd3b4fd7b
+ms.sourcegitcommit: 1f4c51d022d1cfb6c194bf0f0af9c2841c781d68
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/12/2022
-ms.locfileid: "68542659"
+ms.lasthandoff: 10/14/2022
+ms.locfileid: "68573359"
 ---
-<!--- v-jweston resumes authorship and ms.authorship appx April-May 2023 ---> 
-
 # <a name="potentially-unwanted-applications-pua-demonstration"></a>Demostración de aplicaciones potencialmente no deseadas (PUA)
 
 La característica de protección de aplicaciones potencialmente no deseadas (PUA) de Microsoft Defender Antivirus puede identificar y impedir que las PUA se descarguen e instalen en los puntos de conexión de la red. Estas aplicaciones no se consideran virus, malware u otros tipos de amenazas, pero pueden realizar acciones en puntos de conexión que afecten negativamente a su rendimiento o uso.
 
 ## <a name="scenario-requirements-and-setup"></a>Requisitos y configuración del escenario
 
-- Windows 10
+- Windows 10, Windows 11
 
 - Habilite la protección pua. Consulte el artículo [Detectar y bloquear aplicaciones potencialmente no deseadas](detect-block-potentially-unwanted-apps-microsoft-defender-antivirus.md) para obtener más información.
 - También puede [descargar y usar el script de PowerShell](https://www.powershellgallery.com/packages/WindowsDefender_InternalEvaluationSettings/) para habilitar esta configuración y otras.

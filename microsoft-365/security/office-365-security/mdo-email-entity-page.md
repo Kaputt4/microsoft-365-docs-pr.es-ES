@@ -15,14 +15,14 @@ ms.collection:
 - m365-security
 - m365initiative-defender-office365
 ms.custom: ''
-description: Microsoft Defender para Office 365 clientes de E5 y P1 y P2 ahora pueden obtener una vista de 360 grados de cada correo electrónico con la página de entidad de correo electrónico.
+description: Microsoft Defender para Office 365 clientes de E5 y P1 y P2 pueden ver detalles de correo electrónico en el Explorador (Explorador de amenazas), incluidos los encabezados de correo electrónico para copia, Detalles de detección, Amenazas detectadas, Ubicaciones de entrega más recientes y originales, Acciones de entrega e identificadores como Identificador de mensaje de red, etc.
 search.appverid: met150
-ms.openlocfilehash: 1ba5117de0b87d4d151733c7869110d3b93b3a43
-ms.sourcegitcommit: 12af9e8e3a6eaa090fda9e98ccb831dff65863a4
+ms.openlocfilehash: 2cf260b477a5e10e3502cd381e625e0024bc034f
+ms.sourcegitcommit: 1f4c51d022d1cfb6c194bf0f0af9c2841c781d68
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/27/2022
-ms.locfileid: "68082689"
+ms.lasthandoff: 10/14/2022
+ms.locfileid: "68573911"
 ---
 # <a name="the-email-entity-page"></a>Página de la entidad de correo electrónico
 
@@ -40,20 +40,25 @@ ms.locfileid: "68082689"
 
 Los administradores de Microsoft Defender para Office 365 E5 y Defender para Office P1 y P2 tienen una vista de correo electrónico de 360 grados mediante la **página de entidad Email**. Esta página de correo electrónico de acceso se creó para mejorar la información proporcionada en el [control flotante "detalles de correo electrónico" del Explorador de amenazas](threat-explorer-views.md).
 
-## <a name="reach-the-email-entity-page"></a>Llegar a la página de la entidad de correo electrónico
+Consulte los detalles del correo electrónico en explorador o explorador de amenazas, incluidos los encabezados de correo electrónico *con la opción de copiar*, Detalles de detección, Amenazas detectadas, ubicaciones de entrega más recientes y originales, Acciones de entrega e identificadores como Identificador de mensaje de red, etc.
 
-La página de la entidad de correo electrónico está disponible en el portal de Microsoft 365 Defender en <https://security.microsoft.com> Email & **Explorador** de **colaboración**\>. O bien, para ir directamente a la página **Explorador** , use <https://security.microsoft.com/threatexplorer>.
+## <a name="how-to-get-to-the-email-entity-page"></a>Cómo llegar a la página de entidad de correo electrónico
 
-En **el Explorador**, seleccione el asunto de un correo electrónico que está investigando. Se mostrará una barra dorada en la parte superior del control flotante del correo electrónico para ese correo. Esta invitación a la nueva página, lee "Probar nuestra nueva página de entidad de correo electrónico con datos enriquecidos...". Seleccione esta opción para ver la nueva página.
+Vaya al portal de Microsoft 365 Defender en <https://security.microsoft.com>, Email & **explorador** de **colaboración**\>. O bien, para ir directamente a la página **Explorador** , use <https://security.microsoft.com/threatexplorer>.
 
-:::image type="content" source="../../media/email-entities-1-navigation-to-ee.png" alt-text="El banner dorado con las palabras *Probar nuestra nueva página de entidad de correo electrónico con datos enriquecidos* para navegar a la nueva experiencia" lightbox="../../media/email-entities-1-navigation-to-ee.png":::
+1. En **el Explorador**, seleccione el asunto de un correo electrónico que está investigando.
+1. Se abrirá el control flotante de correo electrónico de ese correo.
+1. Verá **Abrir entidad de correo electrónico**.
+1. Selecciónelo para profundizar en el correo electrónico.
+
+:::image type="content" source="../../media/email-entities-1-navigation-to-ee.png" alt-text="Con el correo electrónico seleccionado, obtendrá un control flotante con detalles y la página Abrir entidad del correo electrónico en la parte superior." lightbox="../../media/email-entities-1-navigation-to-ee.png":::
 
 :::image type="content" source="../../media/email-entities-2-eep.png" alt-text="Gráfico de la página de la entidad de correo electrónico que se centra en los encabezados que verá" lightbox="../../media/email-entities-2-eep.png":::
 
 > [!NOTE]
 > Los permisos necesarios para ver y usar esta página son los mismos que para ver el **Explorador**. El administrador debe ser miembro del administrador global o lector global, o administrador de seguridad o lector de seguridad. Para obtener más información, consulte [Permisos en el portal de Microsoft 365 Defender](permissions-microsoft-365-security-center.md).
 
-## <a name="read-the-email-entity-page"></a>Leer la página de la entidad de correo electrónico
+## <a name="how-to-read-the-email-entity-page"></a>Cómo leer la página de la entidad de correo electrónico
 
 La estructura está diseñada para ser fácil de leer y navegar a través de un vistazo. Varias pestañas a lo largo de la parte superior de la página le permiten investigar con más detalle. Este es el funcionamiento del diseño:
 
@@ -69,7 +74,7 @@ La estructura está diseñada para ser fácil de leer y navegar a través de un 
 
     :::image type="content" source="../../media/email-entities-4-middle-panel.png" alt-text="Panel principal de la página que incluye el encabezado de correo electrónico y el estado de autenticación" lightbox="../../media/email-entities-4-middle-panel.png":::
 
-### <a name="use-email-entity-page-tabs"></a>Usar pestañas de página de entidad de correo electrónico
+### <a name="how-to-use-the-email-entity-page-tabs"></a>Cómo usar las pestañas de página de la entidad de correo electrónico
 
 Las pestañas de la parte superior de la página de entidad le permitirán investigar el correo electrónico de forma eficaz.
 
@@ -79,9 +84,9 @@ Las pestañas de la parte superior de la página de entidad le permitirán inves
 4. **Direcciones URL**: en esta pestaña se enumeran las direcciones URL que se encuentran en el correo electrónico con otros detalles sobre las direcciones URL. El número de direcciones URL está limitado a 10 en este momento, pero estas 10 tienen prioridad para mostrar *primero direcciones URL malintencionadas*. La priorización le ahorra tiempo y conjeturas. Las direcciones URL que se encontraron como malintencionadas y detonadas también se mostrarán aquí.
 5. **Correos electrónicos similares**: en esta pestaña se enumeran todos los correos electrónicos similares a la combinación *de id. de mensaje de red y destinatario* específica de este correo electrónico. La similitud se basa únicamente en el *cuerpo del mensaje*. Las determinaciones realizadas en los correos para clasificarlos como "similares" no incluyen una consideración de *los datos adjuntos*.
 
-## <a name="new-to-the-email-entity-page"></a>Nuevo en la página de entidad de correo electrónico
+## <a name="available-on-the-email-entity-page"></a>Disponible en la página de entidad de correo electrónico
 
-Hay nuevas funcionalidades que vienen con esta página de entidad de correo electrónico. Esta es la lista.
+Estos son algunos detalles útiles para empezar.
 
 ### <a name="email-preview-for-cloud-mailboxes"></a>Email versión preliminar para buzones en la nube
 
@@ -110,7 +115,7 @@ Los usuarios verán detalles de detonación enriquecidos para los datos adjuntos
 
 :::image type="content" source="../../media/email-entities-6-detonation-page.png" alt-text="Resumen de la detonación que muestra la cadena, el resumen, los detalles de la detonación y la captura de pantalla bajo el encabezado *Análisis profundo*" lightbox="../../media/email-entities-6-detonation-page.png":::
 
-### <a name="other-innovations"></a>Otras innovaciones
+### <a name="other-features-that-make-the-email-entity-page-helpful"></a>Otras características que hacen que la página de la entidad de Email sea útil
 
 *Etiquetas*: estas son etiquetas aplicadas a los usuarios. Si el usuario es un destinatario, los administradores verán una etiqueta *de destinatario* . Del mismo modo, si el usuario es un remitente, una etiqueta *de remitente* . Aparecerá en el lado izquierdo de la página de entidades de correo electrónico (en la parte que se describe como *pegajosa* y, por tanto, anclada a la página).
 
@@ -167,7 +172,8 @@ Los usuarios verán detalles de detonación enriquecidos para los datos adjuntos
   - Ninguno: indica que no existe ningún registro TXT de DMARC para el dominio de envío en DNS.
 
 *Autenticación compuesta*: este es un valor usado por Microsoft 365 para combinar la autenticación de correo electrónico como SPF, DKIM y DMARC, para determinar si el mensaje es auténtico. Usa el dominio *From:* del correo como base de evaluación.
-## <a name="actions-into-email-entity-page"></a>Acciones en Email página de entidad
+
+## <a name="actions-you-can-take-on-the-email-entity-page"></a>Acciones que puede realizar en la página de entidad Email
 
 Los equipos de seguridad ahora pueden realizar acciones de correo electrónico, como la eliminación temporal y la eliminación rígida, pasar a correo no deseado, pasar a la bandeja de entrada, desencadenar una investigación, enviar a Microsoft para su revisión en línea y et cetera. **Las** acciones de bloque de nivel de inquilino, como el archivo y la dirección URL o el remitente, también se pueden desencadenar desde la página de entidad Email.  
 
@@ -182,7 +188,7 @@ También vamos a incorporar la dirección URL del bloque de nivel de inquilino y
 Consulte [los permisos](permissions-microsoft-365-security-center.md) necesarios para realizar estas acciones. 
 
  
-### <a name="email-summary-panel"></a>Email panel de resumen
+### <a name="the-email-summary-panel"></a>El panel de resumen de Email
 
 El panel de resumen de correo electrónico es una vista resumida de la página completa de la entidad de correo electrónico. Contiene detalles estandarizados sobre el correo electrónico (por ejemplo, detecciones), así como información específica del contexto (por ejemplo, para metadatos de cuarentena o envíos). El panel de resumen de correo electrónico reemplaza los controles flotantes tradicionales Detecciones en tiempo real, Explorador de amenazas, Envíos y Informes.
 
