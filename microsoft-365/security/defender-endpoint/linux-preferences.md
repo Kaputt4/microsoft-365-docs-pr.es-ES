@@ -19,12 +19,12 @@ ms.collection:
 ms.topic: conceptual
 ms.subservice: mde
 search.appverid: met150
-ms.openlocfilehash: 38d8710b121a445c24abfb9a67a9e0f60cf520ec
-ms.sourcegitcommit: be2334dbcd4e1bf309349d981a68a30e06de0297
+ms.openlocfilehash: dd14c5ff33f53701d39a47438bd57ab01bc8c6c2
+ms.sourcegitcommit: 1f4c51d022d1cfb6c194bf0f0af9c2841c781d68
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/04/2022
-ms.locfileid: "68379994"
+ms.lasthandoff: 10/14/2022
+ms.locfileid: "68573469"
 ---
 # <a name="set-preferences-for-microsoft-defender-for-endpoint-on-linux"></a>Establecer preferencias para Microsoft Defender para punto de conexión en Linux
 
@@ -104,8 +104,8 @@ Habilita o deshabilita la característica de cálculo hash de archivos. Cuando e
 |Descripción|Valor|
 |---|---|
 |**Clave**|enableFileHashComputation|
-|**Tipo de datos**|Cadena|
-|**Posibles valores**|disabled (valor predeterminado) <p> habilitado|
+|**Tipo de datos**|Booleano|
+|**Posibles valores**|false (predeterminado) <p> true|
 |**Comentarios**|Disponible en La versión 101.73.77 o posterior de Defender para punto de conexión.|
   
 #### <a name="run-a-scan-after-definitions-are-updated"></a>Ejecución de un examen después de actualizar las definiciones

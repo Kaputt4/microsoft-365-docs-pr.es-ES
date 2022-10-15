@@ -13,18 +13,18 @@ manager: dansimp
 ms.author: deniseb
 ms.topic: article
 ms.custom: nextgen
-ms.date: 06/28/2022
+ms.date: 10/13/2022
 ms.reviewer: mkaminska; pahuijbr
 ms.collection:
 - m365-security
 - tier2
 search.appverid: met150
-ms.openlocfilehash: df6bc61380ef74f0944f7d9969e74d18fa1134d2
-ms.sourcegitcommit: 0b7070ec119e00e0dafe030bbfbef0ae5c9afa19
+ms.openlocfilehash: d49087d5dffd5bd2d726296b68b5407cc487e898
+ms.sourcegitcommit: 1f4c51d022d1cfb6c194bf0f0af9c2841c781d68
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/29/2022
-ms.locfileid: "68195421"
+ms.lasthandoff: 10/14/2022
+ms.locfileid: "68573865"
 ---
 # <a name="configure-and-validate-microsoft-defender-antivirus-network-connections"></a>Configurar y validar las conexiones de red del Antivirus de Windows Defender
 
@@ -36,6 +36,13 @@ ms.locfileid: "68195421"
 
 **Plataformas**
 - Windows
+
+> [!TIP]
+> Fuente RSS: para recibir notificaciones cuando esta página se actualice, copie y pegue la dirección URL siguiente en el lector de fuentes: 
+>
+> ```https
+> https://github.com/MicrosoftDocs/microsoft-365-docs/commits/public/microsoft-365/security/defender-endpoint/configure-network-connections-microsoft-defender-antivirus.md.atom
+> ```
 
 Para asegurarse de que Microsoft Defender protección proporcionada en la nube de Antivirus funciona correctamente, el equipo de seguridad debe configurar la red para permitir conexiones entre los puntos de conexión y determinados servidores de Microsoft. En este artículo se enumeran las conexiones que se deben permitir para usar las reglas de firewall. También proporciona instrucciones para validar la conexión. La configuración correcta de la protección garantizará que recibe el mejor valor de los servicios de protección entregados en la nube.
 
