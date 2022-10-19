@@ -1,5 +1,5 @@
 ---
-title: Aplicar automáticamente una etiqueta de retención
+title: Aplicar automáticamente una etiqueta de retención a elementos de Microsoft 365
 f1.keywords:
 - NOCSH
 ms.author: cabailey
@@ -18,12 +18,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Crear directivas de retención de etiquetado automático para que se puedan aplicar etiquetas automáticamente y, así, conservar lo que se necesite y eliminar lo que no
-ms.openlocfilehash: 441755ac0154e4c63225a66b38ca4fa4e13bb70b
-ms.sourcegitcommit: 7828a1e78c3e6bd8d10289f1ad6c8b6769da0966
+ms.openlocfilehash: 2320b7d882c999bace37bb3aeea79f23926e0969
+ms.sourcegitcommit: 1f4c51d022d1cfb6c194bf0f0af9c2841c781d68
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/07/2022
-ms.locfileid: "68495239"
+ms.lasthandoff: 10/14/2022
+ms.locfileid: "68574085"
 ---
 # <a name="automatically-apply-a-retention-label-to-retain-or-delete-content"></a>Aplicar una etiqueta de retención automáticamente para conservar o eliminar contenido
 
@@ -335,7 +335,7 @@ Para tener en cuenta al aplicar automáticamente etiquetas de retención a datos
 
 - Los siguientes elementos no se admiten como datos adjuntos en la nube que se pueden conservar:
   - Sitios, páginas, listas, formularios, carpetas, conjuntos de documentos y páginas de OneNote de SharePoint.
-  - Archivos compartidos por usuarios que no tienen acceso a esos archivos.
+  - Archivos compartidos por usuarios que no tienen acceso a esos archivos en el momento del uso compartido.
   - Archivos que se eliminan o mueven antes de que se envíe el archivo adjunto en la nube. Por ejemplo, un usuario copia y pega datos adjuntos previamente compartidos desde otro mensaje, sin confirmar primero si el archivo sigue disponible. O bien, alguien reenvía un mensaje antiguo cuando se elimina el archivo.
   - Archivos compartidos por invitados o usuarios externos a la organización.
   - Archivos en borradores de mensajes de correo electrónico y mensajes que no se envían.

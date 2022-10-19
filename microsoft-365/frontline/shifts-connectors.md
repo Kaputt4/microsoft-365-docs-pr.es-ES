@@ -17,12 +17,12 @@ ms.collection:
 appliesto:
 - Microsoft Teams
 - Microsoft 365 for frontline workers
-ms.openlocfilehash: b3faa651939b5866e5bb99dbf3ace05d9b86dfe0
-ms.sourcegitcommit: 6df492719fecc2b213d55465dc1cd60ab4627ed6
+ms.openlocfilehash: d3a89c9ca4641f23135696dab13f69f09c2c5b94
+ms.sourcegitcommit: 1f4c51d022d1cfb6c194bf0f0af9c2841c781d68
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/04/2022
-ms.locfileid: "68381751"
+ms.lasthandoff: 10/14/2022
+ms.locfileid: "68573337"
 ---
 # <a name="shifts-connectors"></a>Conectores de Turnos
 
@@ -120,7 +120,7 @@ El conector Turnos de Teams para las dimensiones de UKG es una oferta de primera
 Los administradores de primera línea pueden:
 
 - Publicar turnos y programaciones en dimensiones ukg y verlas en Turnos.
-- Cree, administre y asigne turnos abiertos en las dimensiones ukg y visualicelos en las dimensiones de UKG y en los turnos.
+- Cree, vea, administre y asigne turnos abiertos en Dimensiones y turnos de UKG en el escritorio de Teams y la aplicación web de Teams. (Actualmente, los administradores no pueden ver ni asignar turnos abiertos en Turnos en dispositivos móviles de Teams).
 - Cree, edite y elimine el tiempo de expiración en Las dimensiones de UKG y la vista en Desplazamientos.
 - Vea y apruebe las solicitudes de programación de los trabajadores tanto en dimensiones de UKG como en turnos.
 - Establezca y actualice la disponibilidad de los trabajadores en las dimensiones de UKG y la vista en turnos.
@@ -131,7 +131,7 @@ Los trabajadores de primera línea pueden:
 - Solicite tiempo de descuento, vea la información de tiempo de descuento y vea los turnos abiertos de su equipo en Turnos.
 - Ver y publicar entradas de tarjeta de tiempo en Turnos.
 - Solicitar turnos abiertos e intercambiar turnos en Turnos.
-- Establecer su disponibilidad en Turnos.
+- Establezca su disponibilidad en Turnos en dispositivos móviles de Teams.
 
 En la actualidad, no son compatibles:
 
