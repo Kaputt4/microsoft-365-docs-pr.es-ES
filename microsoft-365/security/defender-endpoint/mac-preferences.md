@@ -17,12 +17,12 @@ ms.collection:
 ms.topic: conceptual
 ms.subservice: mde
 search.appverid: met150
-ms.openlocfilehash: 93d113959b138b1b4477fe779c0ce61fd6540634
-ms.sourcegitcommit: 4e42bafee965446f44f7f57d1defed2b9b24fce8
+ms.openlocfilehash: 972240c3683b469587d82ec5f729b35d79a40c0c
+ms.sourcegitcommit: 1f4c51d022d1cfb6c194bf0f0af9c2841c781d68
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/30/2022
-ms.locfileid: "68231888"
+ms.lasthandoff: 10/14/2022
+ms.locfileid: "68573460"
 ---
 # <a name="set-preferences-for-microsoft-defender-for-endpoint-on-macos"></a>Establecer las preferencias para Microsoft Defender para punto de conexión en macOS
 
@@ -102,8 +102,8 @@ Habilita o deshabilita la característica de cálculo hash de archivos. Cuando e
 |---|---|
 |**Dominio**|`com.microsoft.wdav`|
 |**Clave**|enableFileHashComputation|
-|**Tipo de datos**|Cadena|
-|**Posibles valores**|disabled (valor predeterminado) <p> habilitado|
+|**Tipo de datos**|Booleano|
+|**Posibles valores**|false (predeterminado) <p> true|
 |**Comentarios**|Disponible en La versión 101.73.77 o posterior de Defender para punto de conexión.|
 
 #### <a name="run-a-scan-after-definitions-are-updated"></a>Ejecución de un examen después de actualizar las definiciones

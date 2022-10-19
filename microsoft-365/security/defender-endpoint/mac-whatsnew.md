@@ -17,12 +17,12 @@ ms.collection:
 ms.topic: reference
 ms.subservice: mde
 search.appverid: met150
-ms.openlocfilehash: a26b31caeb695718b3a7c747265615490fc92321
-ms.sourcegitcommit: 04e517c7e00323b5c33d8ea937115725cf2cfd4d
+ms.openlocfilehash: 1fe5cc67fe2d07dd18111fb2e866158328591028
+ms.sourcegitcommit: 1f4c51d022d1cfb6c194bf0f0af9c2841c781d68
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/13/2022
-ms.locfileid: "68564222"
+ms.lasthandoff: 10/14/2022
+ms.locfileid: "68573711"
 ---
 # <a name="whats-new-in-microsoft-defender-for-endpoint-on-mac"></a>Novedades de Microsoft Defender para punto de conexión en Mac
 
@@ -48,7 +48,7 @@ Para obtener más información sobre Microsoft Defender para punto de conexión 
 
 **Novedades**
 
-- Tp de Mac en modo de bloqueo que provoca que el dispositivo se bloquee al apagarse o se bloquee al reiniciar
+- Corrección de errores: Mac TP en modo de bloqueo que provoca que el dispositivo se bloquee al apagarse o se bloquee al reiniciar
 - Agregar un modificador de línea de comandos mdatp para ver el historial de exámenes a petición
 - Mejora del rendimiento del propietario del dispositivo en MacOs
 - Listo para macOS Ventura (13.0)

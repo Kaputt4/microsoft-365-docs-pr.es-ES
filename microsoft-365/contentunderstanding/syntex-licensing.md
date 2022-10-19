@@ -13,16 +13,16 @@ ms.collection:
 search.appverid: MET150
 ms.localizationpriority: high
 description: Obtenga información sobre las licencias para Microsoft Syntex.
-ms.openlocfilehash: c3c78d407aacb260d6b9d6edb9597d9fc3a4c38c
-ms.sourcegitcommit: 04e517c7e00323b5c33d8ea937115725cf2cfd4d
+ms.openlocfilehash: 206d68d8d1be54a21c4f857830a1d85672c95a04
+ms.sourcegitcommit: 1f4c51d022d1cfb6c194bf0f0af9c2841c781d68
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/13/2022
-ms.locfileid: "68565056"
+ms.lasthandoff: 10/14/2022
+ms.locfileid: "68574019"
 ---
 # <a name="licensing-for-microsoft-syntex"></a>Licencias para Microsoft Syntex
 
-Para usar SharePoint Syntex, debe tener una licencia para cada usuario de Syntex. Si quita todas las licencias de SharePoint Syntex del inquilino en una fecha futura (o la prueba expira), los usuarios ya no podrán crear, publicar ni ejecutar modelos de comprensión de documentos o procesamiento de formularios. Además, los informes de almacén de términos, la importación de taxonomía SKOS y la inserción de tipo de contenido ya no estarán disponibles. No se eliminarán modelos, ni contenido ni metadatos y no se cambiarán los permisos del sitio.
+Para usar Microsoft Syntex, debe tener una licencia para cada usuario de Syntex. Si quita todas las licencias de Syntex de su inquilino en una fecha futura (o la prueba expira), los usuarios ya no podrán crear, publicar o ejecutar modelos de comprensión de documentos o procesamiento de formularios. Además, los informes de almacén de términos, la importación de taxonomía SKOS y la inserción de tipo de contenido ya no estarán disponibles. No se eliminarán modelos, ni contenido ni metadatos y no se cambiarán los permisos del sitio.
  
 > [!NOTE] 
 > Syntex es una licencia de complemento y requiere que los usuarios también tengan una licencia para Microsoft 365.
