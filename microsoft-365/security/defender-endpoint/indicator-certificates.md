@@ -15,15 +15,15 @@ audience: ITPro
 ms.collection:
 - m365-security
 - tier2
-ms.topic: article
+ms.topic: conceptual
 ms.subservice: mde
 search.appverid: met150
-ms.openlocfilehash: ca15e36c0de968a2afddb14a5c8c74cffe969953
-ms.sourcegitcommit: 4e42bafee965446f44f7f57d1defed2b9b24fce8
+ms.openlocfilehash: 6d1662a948d0f8cd8298aa0f5226f374db661ead
+ms.sourcegitcommit: 0d8fb571024f134d7480fe14cffc5e31a687d356
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/30/2022
-ms.locfileid: "68232504"
+ms.lasthandoff: 10/20/2022
+ms.locfileid: "68646295"
 ---
 # <a name="create-indicators-based-on-certificates"></a>Creación de indicadores basados en certificados
 
@@ -39,7 +39,7 @@ ms.locfileid: "68232504"
 Puede crear indicadores para los certificados. Algunos casos de uso comunes incluyen:
 
 - Escenarios en los que es necesario implementar tecnologías de bloqueo, como [reglas de reducción de superficie expuesta a ataques](attack-surface-reduction.md) y [acceso controlado a carpetas](controlled-folders.md) , pero es necesario permitir comportamientos de aplicaciones firmadas agregando el certificado en la lista de permitidos.
-- Bloquear el uso de una aplicación firmada específica en toda la organización. Al crear un indicador para bloquear el certificado de la aplicación, Windows Defender AV impedirá las ejecuciones de archivos (bloquear y corregir) y la investigación y corrección automatizadas se comportarán igual.
+- Bloquear el uso de una aplicación firmada específica en toda la organización. Al crear un indicador para bloquear el certificado de la aplicación, Windows डिफेन्डर AV impedirá las ejecuciones de archivos (bloquear y corregir) y la investigación y corrección automatizadas se comportarán igual.
 
 ## <a name="before-you-begin"></a>Antes de empezar
 

@@ -19,12 +19,12 @@ ms.collection:
 - tier3
 ms.topic: conceptual
 ms.subservice: mde
-ms.openlocfilehash: 549cf88fe713b54ad3a37eb32deddda39cbe9e9a
-ms.sourcegitcommit: 4e42bafee965446f44f7f57d1defed2b9b24fce8
+ms.openlocfilehash: f496e01ff3c3c4a1db42e96d4bae49080776a663
+ms.sourcegitcommit: 0d8fb571024f134d7480fe14cffc5e31a687d356
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/30/2022
-ms.locfileid: "68233692"
+ms.lasthandoff: 10/20/2022
+ms.locfileid: "68629465"
 ---
 # <a name="microsoft-defender-for-endpoint-for-us-government-customers"></a>Microsoft Defender para punto de conexión para clientes del Gobierno de los EE. UU
 
@@ -204,7 +204,7 @@ Estas son las características y las brechas conocidas de [Mobile Threat Defense
 |Nombre de la característica|GCC|GCC High|DoD|
 |---|:---:|:---:|:---:|
 |Protección web (Anti-Phishing e indicadores personalizados)|![Sí](images/svg/check-yes.svg)|![Sí](images/svg/check-yes.svg)|![Sí](images/svg/check-yes.svg)|
-|Protección contra malware (solo Android)|![No](images/svg/check-no.svg) En desarrollo|![No](images/svg/check-no.svg) En desarrollo|![No](images/svg/check-no.svg) En desarrollo|
+|Protección contra malware (solo Android)|![Sí](images/svg/check-yes.svg)|![Sí](images/svg/check-yes.svg)|![Sí](images/svg/check-yes.svg)|
 |Detección de jailbreak (solo iOS)|![Sí](images/svg/check-yes.svg)|![Sí](images/svg/check-yes.svg)|![Sí](images/svg/check-yes.svg)|
 |Acceso condicional/inicio condicional|![Sí](images/svg/check-yes.svg)|![Sí](images/svg/check-yes.svg)|![Sí](images/svg/check-yes.svg)|
 |Compatibilidad con MAM|![Sí](images/svg/check-yes.svg)|![Sí](images/svg/check-yes.svg)|![Sí](images/svg/check-yes.svg)|

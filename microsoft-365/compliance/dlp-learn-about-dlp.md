@@ -11,16 +11,18 @@ ms.topic: conceptual
 ms.service: O365-seccomp
 ms.localizationpriority: medium
 ms.collection:
-- M365-security-compliance
+- tier1
+- highpri
+- purview-compliance
 search.appverid:
 - MET150
 description: Obtenga información sobre cómo proteger su información confidencial mediante las directivas y herramientas de prevención de pérdida de datos de Microsoft Purview y realice un recorrido por el ciclo de vida de DLP.
-ms.openlocfilehash: 46c29b8aa19ce9b70cdb9127ab2c6270c0009a0e
-ms.sourcegitcommit: 49c275f78664740988bbc4ca4b14d3ad758e1468
+ms.openlocfilehash: fa3dd5ac5f32d058c55c5bde92b4a12170bd8fb3
+ms.sourcegitcommit: 0d8fb571024f134d7480fe14cffc5e31a687d356
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/19/2022
-ms.locfileid: "66882420"
+ms.lasthandoff: 10/20/2022
+ms.locfileid: "68623353"
 ---
 # <a name="learn-about-data-loss-prevention"></a>Obtenga más información acerca de la prevención contra la pérdida de datos
 
@@ -30,11 +32,13 @@ En Microsoft Purview, se implementa la prevención de pérdida de datos mediante
 
 - Servicios de Microsoft 365 como Teams, Exchange, SharePoint y OneDrive
 - Aplicaciones de Office como Word, Excel y PowerPoint
-- puntos de conexión Windows 10, Windows 11 y macOS (Catalina 10.15 y versiones posteriores)
+- puntos de conexión Windows 10, Windows 11 y macOS (tres versiones publicadas más recientes)
 - aplicaciones en la nube que no son de Microsoft
 - recursos compartidos de archivos locales y SharePoint local.
 
 DLP detecta elementos confidenciales mediante el análisis de contenido profundo, no solo mediante un simple examen de texto. El contenido se analiza para buscar coincidencias de datos principales con palabras clave, mediante la evaluación de expresiones regulares, mediante la validación de funciones internas y las coincidencias de datos secundarios que están cerca de la coincidencia de datos principal. Además, DLP también usa algoritmos de aprendizaje automático y otros métodos para detectar contenido que coincida con las directivas DLP.
+
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
 
 ## <a name="dlp-is-part-of-the-larger-microsoft-purview-offering"></a>DLP forma parte de la oferta de Microsoft Purview más grande
 
@@ -67,7 +71,7 @@ La supervisión y protección dlp son nativas de las aplicaciones que los usuari
 
 **Planeamiento de tecnología para DLP**
 
-Tenga en cuenta que DLP como tecnología puede supervisar y proteger los datos en reposo, los datos en uso y los datos en movimiento en los servicios de Microsoft 365, Windows 10, Windows 11 y dispositivos macOS (Catalina 10.15 y versiones posteriores), recursos compartidos de archivos locales y SharePoint local. Hay implicaciones de planeamiento para las distintas ubicaciones, el tipo de datos que desea supervisar y proteger y las acciones que se deben realizar cuando se produce una coincidencia de directiva.
+Tenga en cuenta que DLP como tecnología puede supervisar y proteger los datos en reposo, los datos en uso y los datos en movimiento en los servicios de Microsoft 365, Windows 10, Windows 11 y macOS (tres versiones más recientes publicadas), recursos compartidos de archivos locales y SharePoint local. Hay implicaciones de planeamiento para las distintas ubicaciones, el tipo de datos que desea supervisar y proteger y las acciones que se deben realizar cuando se produce una coincidencia de directiva.
 
 **Planeamiento de procesos empresariales para DLP**
 
@@ -88,7 +92,7 @@ Puede aplicar directivas DLP a datos en reposo, datos en uso y datos en movimien
 - Cuentas de OneDrive
 - Mensajes de canales y chats de Teams
 - Microsoft Defender for Cloud Apps
-- dispositivos Windows 10, Windows 11 y macOS (Catalina 10.15 y versiones posteriores)
+- dispositivos Windows 10, Windows 11 y macOS (tres versiones más recientes)
 - Repositorios locales
 - Sitios de PowerBI
 
@@ -145,7 +149,7 @@ ubicación | incluir/excluir por|
 |Sitios de SharePoint |sitios |
 |Cuentas de OneDrive |cuentas o grupos de distribución |
 |Mensajes de canales y chats de Teams |cuenta o grupo de distribución |
-|dispositivos Windows 10, Windows 11 y macOS (Catalina 10.15 y versiones posteriores) |usuario o grupo |
+|dispositivos Windows 10, Windows 11 y macOS (tres versiones más recientes) |usuario o grupo |
 |Microsoft Cloud App Security |instancia |
 |Repositorios locales| ruta de acceso de archivo de repositorio|
 
@@ -159,7 +163,7 @@ ubicación | incluir/excluir por|
 
 - SharePoint,Exchange/OneDrive: bloquee el acceso al contenido de las personas que están fuera de su organización. Muestre al usuario una sugerencia y envíele una notificación por correo electrónico indicándole que está realizando una acción prohibida por la directiva DLP.
 - Chat y canal de Teams: impedir que la información confidencial se comparta en el chat o canal
-- Windows 10, Windows 11 y macOS (Catalina 10.15 y versiones posteriores): Auditar o restringir la copia de un elemento confidencial en un dispositivo USB extraíble
+- Windows 10, Windows 11 y macOS (tres versiones más recientes) Dispositivos: Auditar o restringir la copia de un elemento confidencial en un dispositivo USB extraíble
 - Aplicaciones de Office: muestra un elemento emergente que notifica al usuario que está participando en un comportamiento de riesgo y bloquea o bloquea, pero permite la invalidación.
 - Recursos compartidos de archivos locales: mover el archivo desde donde se almacena a una carpeta de cuarentena
 

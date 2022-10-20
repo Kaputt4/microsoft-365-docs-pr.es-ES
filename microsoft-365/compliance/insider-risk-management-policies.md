@@ -15,12 +15,12 @@ ms.collection:
 - tier1
 - purview-compliance
 ms.custom: admindeeplinkCOMPLIANCE
-ms.openlocfilehash: a377fe3dee4f38666b13ba26301b9ad1f681f6cd
-ms.sourcegitcommit: 04e517c7e00323b5c33d8ea937115725cf2cfd4d
+ms.openlocfilehash: 732582dbd65358f7743a8420ac52317b184af469
+ms.sourcegitcommit: 0d8fb571024f134d7480fe14cffc5e31a687d356
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/13/2022
-ms.locfileid: "68564616"
+ms.lasthandoff: 10/20/2022
+ms.locfileid: "68626542"
 ---
 # <a name="insider-risk-management-policies"></a>Directivas de administración de riesgos internos
 
@@ -295,6 +295,7 @@ Use la siguiente tabla para determinar el número máximo de usuarios dentro del
 |Infracciones de directiva de seguridad por usuarios prioritarios|1 000 |
 |Infracciones de la directiva de seguridad por parte de los usuarios que abandonan la organización|15 000|
 |Infracciones de la directiva de seguridad por parte de usuarios inconformes|7 500|
+|Pruebas forenses|5 usuarios para la versión preliminar|
 
 ## <a name="create-a-new-policy"></a>Crear una nueva directiva
 

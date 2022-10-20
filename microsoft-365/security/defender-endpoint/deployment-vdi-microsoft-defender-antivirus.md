@@ -16,13 +16,14 @@ ms.service: microsoft-365-security
 ms.collection:
 - m365-security
 - tier2
+- ContentEngagementFY23
 search.appverid: met150
-ms.openlocfilehash: 7fe1ca66ff803fa03ff6c97f8657152be5723ec6
-ms.sourcegitcommit: 0b7070ec119e00e0dafe030bbfbef0ae5c9afa19
+ms.openlocfilehash: b3f9ec32541fc77e1ac1191019cb589fb1829e43
+ms.sourcegitcommit: 0d8fb571024f134d7480fe14cffc5e31a687d356
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/29/2022
-ms.locfileid: "68180173"
+ms.lasthandoff: 10/20/2022
+ms.locfileid: "68634374"
 ---
 # <a name="deployment-guide-for-microsoft-defender-antivirus-in-a-virtual-desktop-infrastructure-vdi-environment"></a>Guía de implementación del Antivirus de Microsoft Defender en un entorno de infraestructura de escritorio virtual
 
@@ -56,15 +57,15 @@ Para las máquinas virtuales basadas en Azure, consulte [Instalación de Endpoin
 
 ## <a name="set-up-a-dedicated-vdi-file-share"></a>Configuración de un recurso compartido de archivos VDI dedicado
 
-En Windows 10, versión 1903, se introdujo la característica de inteligencia de seguridad compartida, que descarga el desempaquetado de las actualizaciones de inteligencia de seguridad descargadas en una máquina host, lo que ahorra recursos anteriores de CPU, disco y memoria en máquinas individuales. Esta característica ha sido retroportada y ahora funciona en Windows 10 versión 1703 y posteriores. Puede establecer esta característica con un directiva de grupo o PowerShell.
+En Windows 10, versión 1903, se introdujo la característica de inteligencia de seguridad compartida, que descarga el desempaquetado de las actualizaciones de inteligencia de seguridad descargadas en una máquina host, lo que ahorra recursos anteriores de CPU, disco y memoria en máquinas individuales. Esta característica ha sido retroportada y ahora funciona en Windows 10 versión 1703 y posteriores. Puede establecer esta característica con un समूह नीति o PowerShell.
 
-### <a name="use-group-policy-to-enable-the-shared-security-intelligence-feature"></a>Use directiva de grupo para habilitar la característica de inteligencia de seguridad compartida:
+### <a name="use-group-policy-to-enable-the-shared-security-intelligence-feature"></a>Use समूह नीति para habilitar la característica de inteligencia de seguridad compartida:
 
-1. En el equipo de administración de directiva de grupo, abra la consola de administración de directiva de grupo, haga clic con el botón derecho en el objeto de directiva de grupo que desea configurar y, a continuación, haga clic en **Editar**.
+1. En el equipo de administración de समूह नीति, abra la consola de administración de समूह नीति, haga clic con el botón derecho en el objeto de समूह नीति que desea configurar y, a continuación, seleccione **Editar**.
 
-2. En el **Editor de administración de directiva de grupo** vaya a **Configuración del equipo**.
+2. En el **Editor de administración de समूह नीति**, vaya a **Configuración del equipo**.
 
-3. Haga clic en **Plantillas administrativas**.
+3. Seleccione **Plantillas administrativas**.
 
 4. Expanda el árbol a **componentes** \> de Windows **Microsoft Defender Antivirus** \> **Security Intelligence Novedades**.
 
@@ -72,13 +73,13 @@ En Windows 10, versión 1903, se introdujo la característica de inteligencia de
 
 6. Escriba `\\<sharedlocation\>\wdav-update` (para obtener ayuda con este valor, consulte [Descarga y despampaquete](#download-and-unpackage-the-latest-updates)).
 
-7. Haga clic en **Aceptar**.
+7. Seleccione **Aceptar**.
 
 8. Implemente el GPO en las máquinas virtuales que desea probar.
 
 ### <a name="use-powershell-to-enable-the-shared-security-intelligence-feature"></a>Uso de PowerShell para habilitar la característica de inteligencia de seguridad compartida
 
-Use el siguiente cmdlet para habilitar la característica. Tendrá que insertarlo, ya que normalmente insertaría directivas de configuración basadas en PowerShell en las máquinas virtuales:
+Use el siguiente cmdlet para habilitar la característica. A continuación, deberá insertar la actualización, ya que normalmente insertaría directivas de configuración basadas en PowerShell en las máquinas virtuales:
 
 ```PowerShell
 Set-MpPreference -SharedSignaturesPath \\<shared location>\wdav-update
@@ -138,7 +139,7 @@ Esto es posible cuando los dispositivos tienen los permisos de recurso compartid
 
 3. Vaya a la pestaña **Acciones** . Seleccione **Nuevo...** Escriba **PowerShell** en el campo **Programa o script** . Escriba `-ExecutionPolicy Bypass c:\wdav-update\vdmdlunpack.ps1` en el campo **Agregar argumentos** . Seleccione **Aceptar**.
 
-4. Si lo desea, puede optar por configurar opciones adicionales.
+4. Si lo desea, puede optar por configurar más opciones.
 
 5. Seleccione **Aceptar** para guardar la tarea programada.
 
@@ -174,9 +175,9 @@ Consulte [Programación de exámenes](scheduled-catch-up-scans-microsoft-defende
 
 ## <a name="use-quick-scans"></a>Uso de exámenes rápidos
 
-Puede especificar el tipo de examen que se debe realizar durante un examen programado. Los exámenes rápidos son el enfoque preferido, ya que están diseñados para buscar en todos los lugares donde el malware debe residir para estar activo. En el procedimiento siguiente se describe cómo configurar exámenes rápidos mediante directiva de grupo.
+Puede especificar el tipo de examen que se debe realizar durante un examen programado. Los exámenes rápidos son el enfoque preferido, ya que están diseñados para buscar en todos los lugares donde el malware necesita residir para estar activo. En el procedimiento siguiente se describe cómo configurar exámenes rápidos mediante समूह नीति.
 
-1. En el Editor de directiva de grupo, vaya a **Plantillas** \> administrativas **Componentes** \> de Windows **Microsoft Defender Antivirus** \> **Scan**.
+1. En el Editor de समूह नीति, vaya a **Plantillas** \> administrativas **Componentes** \> de Windows **Microsoft Defender Examen antivirus**\>.
 
 2. Seleccione **Especificar el tipo de examen que se va a usar para un examen programado** y, a continuación, edite la configuración de directiva.
 
@@ -188,9 +189,9 @@ Puede especificar el tipo de examen que se debe realizar durante un examen progr
 
 ## <a name="prevent-notifications"></a>Impedir notificaciones
 
-En ocasiones, Microsoft Defender notificaciones antivirus pueden enviarse o conservarse en varias sesiones. Para minimizar este problema, puede bloquear la interfaz de usuario Microsoft Defender Antivirus. En el procedimiento siguiente se describe cómo suprimir las notificaciones con directiva de grupo.
+En ocasiones, Microsoft Defender notificaciones antivirus pueden enviarse o conservarse en varias sesiones. Para minimizar este problema, puede bloquear la interfaz de usuario Microsoft Defender Antivirus. En el procedimiento siguiente se describe cómo suprimir las notificaciones con समूह नीति.
 
-1. En el Editor de directiva de grupo, vaya a **Componentes** \> de Windows Microsoft Defender **Interfaz de cliente** **antivirus**\>.
+1. En el Editor de समूह नीति, vaya a **Componentes** \> de Windows Microsoft Defender **Interfaz de cliente** **antivirus**\>.
 
 2. Seleccione **Suprimir todas las notificaciones** y, a continuación, edite la configuración de la directiva.
 
@@ -213,7 +214,7 @@ Deshabilitar un examen después de una actualización impedirá que se produzca 
 > [!IMPORTANT]
 > La ejecución de exámenes después de una actualización ayudará a garantizar que las máquinas virtuales estén protegidas con las últimas actualizaciones de Inteligencia de seguridad. Deshabilitar esta opción reducirá el nivel de protección de las máquinas virtuales y solo se debe usar al crear o implementar la imagen base por primera vez.
 
-1. En el Editor de directiva de grupo, vaya a **Componentes** \> de Windows **Microsoft Defender Antivirus** \> **Security Intelligence Novedades**.
+1. En el Editor de समूह नीति, vaya a **Componentes** \> de Windows **Microsoft Defender Antivirus** \> **Security Intelligence Novedades**.
 
 2. Seleccione **Activar examen después** de la actualización de inteligencia de seguridad y, a continuación, edite la configuración de directiva.
 
@@ -239,7 +240,7 @@ Para obtener más información, vea [Iniciar el examen programado solo cuando el
 
 ## <a name="scan-vms-that-have-been-offline"></a>Examen de máquinas virtuales sin conexión
 
-1. En el Editor de directiva de grupo, vaya a **Componentes** \> de Windows **Microsoft Defender Antivirus** \> **Scan**.
+1. En el Editor de समूह नीति, vaya a **Componentes** \> de Windows **Microsoft Defender Antivirus** \> **Scan**.
 
 2. Seleccione **Activar examen rápido de puesta al día** y, a continuación, edite la configuración de directiva.
 
@@ -247,21 +248,21 @@ Para obtener más información, vea [Iniciar el examen programado solo cuando el
 
 4. Seleccione **Aceptar**.
 
-5. Implemente el objeto directiva de grupo como suele hacer.
+5. Implemente el objeto समूह नीति como suele hacer.
 
 Esta directiva fuerza un examen si la máquina virtual ha perdido dos o más exámenes programados consecutivos.
 
 ## <a name="enable-headless-ui-mode"></a>Habilitación del modo de interfaz de usuario sin cabeza
 
-1. En el Editor de directiva de grupo, vaya a **Componentes** \> de Windows Microsoft Defender **Interfaz de cliente** **antivirus**\>.
+1. En el Editor de समूह नीति, vaya a **Componentes** \> de Windows Microsoft Defender **Interfaz de cliente** **antivirus**\>.
 
 2. Seleccione **Habilitar modo de interfaz de usuario sin cabeza** y edite la directiva.
 
 3. Establezca la directiva **en Habilitado**.
 
-4. Haga clic en **Aceptar**.
+4. Seleccione **Aceptar**.
 
-5. Implemente el objeto directiva de grupo como suele hacer.
+5. Implemente el objeto समूह नीति como suele hacer.
 
 Esta directiva oculta toda la interfaz de usuario Microsoft Defender Antivirus a los usuarios finales de la organización.
 

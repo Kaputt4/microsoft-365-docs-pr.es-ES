@@ -10,7 +10,7 @@ ms.topic: article
 ms.service: O365-seccomp
 ms.localizationpriority: medium
 ms.collection:
-- Strat_O365_IP
+- tier1
 - purview-compliance
 search.appverid:
 - MOE150
@@ -20,12 +20,12 @@ ms.custom:
 - seo-marvel-apr2020
 - admindeeplinkEXCHANGE
 description: El registro de auditoría de buzones está activado de forma predeterminada en Microsoft 365 (también denominado "auditoría predeterminada de buzones" o "auditoría de buzones de correo de forma predeterminada"). Esta configuración significa que ciertas acciones realizadas por propietarios, delegados y administradores de buzones de correo se registran automáticamente en un registro de auditoría de buzones, donde puede buscar actividades realizadas en el buzón.
-ms.openlocfilehash: 542d3e40d97834ffa2fed6e7bd17a8152b5765d7
-ms.sourcegitcommit: fa570d90b00ed1bb40e1ca27b11c66a84c4204e9
+ms.openlocfilehash: f3c9487998fa6253692969c01981cf3676e1025a
+ms.sourcegitcommit: 0d8fb571024f134d7480fe14cffc5e31a687d356
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/05/2022
-ms.locfileid: "68476471"
+ms.lasthandoff: 10/20/2022
+ms.locfileid: "68632236"
 ---
 # <a name="manage-mailbox-auditing"></a>Administrar la auditoría de buzones de correo
 

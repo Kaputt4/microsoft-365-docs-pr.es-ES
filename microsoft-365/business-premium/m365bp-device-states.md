@@ -1,5 +1,5 @@
 ---
-title: Estados de dispositivo
+title: Visualización del estado del dispositivo con Microsoft Defender para Empresas
 f1.keywords:
 - NOCSH
 ms.author: deniseb
@@ -9,7 +9,7 @@ audience: Admin
 ms.topic: conceptual
 ms.service: microsoft-365-security
 ms.subservice: other
-ms.date: 09/15/2022
+ms.date: 10/18/2022
 ms.localizationpriority: high
 ms.collection:
 - tier1
@@ -19,41 +19,33 @@ search.appverid:
 - BCS160
 - MET150
 - MOE150
-description: Obtenga información sobre los distintos estados del dispositivo en la lista Acciones de dispositivo en la página principal de administración de Microsoft 365 para empresas.
-ms.openlocfilehash: dd84d31eb1b392d7ec1c2b01750af64627947237
-ms.sourcegitcommit: 0283c436f3ba61a708b52b57a1955f5ea74376a3
+description: Vea el estado del dispositivo con Defender para empresas en Microsoft 365 Empresa Premium.
+ms.openlocfilehash: c9b7cb9a80551f73f6135c00144f2ec5d2fed17f
+ms.sourcegitcommit: 0d8fb571024f134d7480fe14cffc5e31a687d356
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/28/2022
-ms.locfileid: "68097695"
+ms.lasthandoff: 10/20/2022
+ms.locfileid: "68620995"
 ---
-# <a name="device-states-in-microsoft-365-for-business"></a>Estados de dispositivos en Microsoft 365 para empresas
+# <a name="view-device-status-in-microsoft-defender-for-business"></a>Visualización del estado del dispositivo en Microsoft Defender para Empresas
 
-Este artículo aplica a Microsoft 365 Empresa Premium.
+Microsoft Defender para Empresas se incluye con Microsoft 365 Empresa Premium, a partir del 1 de marzo de 2022. Esta oferta proporciona características de seguridad adicionales para los dispositivos. [Más información sobre Defender para Empresas](../security/defender-business/mdb-overview.md).
 
-> [!NOTE]
-> Microsoft Defender para Empresas se está implementando para los clientes de Microsoft 365 Empresa Premium desde el 1 de marzo de 2022. Esta oferta proporciona características de seguridad adicionales para los dispositivos. [Más información sobre Defender para Empresas](../security/defender-business/mdb-overview.md).
+Puede ver y supervisar el estado de mantenimiento del dispositivo mediante las funcionalidades de Defender para empresas.
 
-Los dispositivos de la lista **Acciones de dispositivo** (página principal del administrador \> **Acciones de dispositivo**) pueden tener los estados siguientes.
+:::image type="content" source="../media/defender-business/mdb-deviceinventory.png" alt-text="Captura de pantalla del inventario de dispositivos en Defender para empresas":::
+
+1. Vaya al portal de Microsoft 365 Defender ([https://security.microsoft.com](https://security.microsoft.com)) e inicie sesión.
+
+2. En el panel de navegación, vaya a **Dispositivos activos** > . Se muestra una lista de dispositivos que se incorporaron a Defender for Business.
+
+3. Seleccione un dispositivo para ver más información y acciones disponibles.
+
+   :::image type="content" source="../media/defender-business/mdb-selected-device.png" alt-text="Captura de pantalla que muestra un dispositivo seleccionado con detalles y acciones disponibles":::
   
-![In the Device actions list, you can see the Devices states.](./../media/a621c47e-45d9-4e1a-beb9-c03254d40c1d.png)
-  
-|**Estado**|**Descripción**|
-|:-----|:-----|
-|Administrado por Intune  |Administrado por Microsoft 365 Empresa Premium.  |
-|Pendiente de retirada  |Microsoft 365 Empresa Premium se está preparando para quitar los datos de la empresa del dispositivo.  |
-|Retirada en curso  |Microsoft 365 Empresa Premium está quitando los datos de la empresa del dispositivo.  |
-|Error de retirada  | No se pudo completar la acción para quitar los datos de la compañía.  |
-|Retirada cancelada  |Se ha cancelado la acción de retirar.  |
-|Borrado pendiente  |Esperando a que se inicie el restablecimiento de fábrica.  |
-|Borrado en curso  |Se emitió el restablecimiento de fábrica.  |
-|No se pudo completar el borrado  |No se ha podido realizar el restablecimiento de fábrica.  |
-|Borrado cancelado  |Se ha cancelado el borrado de fábrica.  |
-|Incorrecto  |Hay una acción pendiente (o en curso), pero el dispositivo no se ha comprobado en más de 30 días.  |
-|Pendiente de eliminación  |La acción de eliminación está pendiente.  |
-|Detectado  |Microsoft 365 Empresa Premium ha detectado el dispositivo.  |
-   
 
 ## <a name="see-also"></a>Vea también
 
-[Procedimientos recomendados para proteger Microsoft 365 para planes empresariales](../admin/security-and-compliance/secure-your-business-data.md)
+- [Ver y editar directivas de protección de dispositivos](m365bp-view-edit-create-mdb-policies.md)
+- [¿Qué es Microsoft Defender para Empresas?](../security/defender-business/mdb-overview.md)
+- [Procedimientos recomendados para proteger Microsoft 365 para planes empresariales](../admin/security-and-compliance/secure-your-business-data.md)

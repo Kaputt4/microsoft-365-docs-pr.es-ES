@@ -8,7 +8,7 @@ ms.mktglfcycl: manage
 ms.sitesec: library
 ms.pagetype: security
 ms.localizationpriority: medium
-ms.topic: article
+ms.topic: conceptual
 author: denisebmsft
 ms.author: deniseb
 ms.custom: nextgen
@@ -19,12 +19,12 @@ ms.collection:
 - m365-security
 - tier2
 search.appverid: met150
-ms.openlocfilehash: b2bd5f257eea5cececd7cce98e6ff204b3d6b05e
-ms.sourcegitcommit: 4e42bafee965446f44f7f57d1defed2b9b24fce8
+ms.openlocfilehash: 621dcf9e1b24f0223180198337c82c3ece6dd5c8
+ms.sourcegitcommit: 0d8fb571024f134d7480fe14cffc5e31a687d356
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/30/2022
-ms.locfileid: "68227137"
+ms.lasthandoff: 10/20/2022
+ms.locfileid: "68627003"
 ---
 # <a name="microsoft-defender-antivirus-in-the-windows-security-app"></a>Microsoft Defender Antivirus en la aplicación Seguridad de Windows
 
@@ -32,13 +32,13 @@ ms.locfileid: "68227137"
 - [Microsoft Defender para punto de conexión Plan 1](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft Defender para punto de conexión Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 
-En Windows 10, versión 1703 y posteriores, la aplicación Windows Defender forma parte de la Seguridad de Windows.
+En Windows 10, versión 1703 y posteriores, la aplicación Windows डिफेन्डर forma parte de la Seguridad de Windows.
 
-La configuración que anteriormente formaba parte del cliente Windows Defender y la configuración principal de Windows se ha combinado y movido a la nueva aplicación, que se instala de forma predeterminada como parte de Windows 10, versión 1703.
+La configuración que anteriormente formaba parte del cliente Windows डिफेन्डर y la configuración principal de Windows se ha combinado y movido a la nueva aplicación, que se instala de forma predeterminada como parte de Windows 10, versión 1703.
 
 > [!IMPORTANT]
-> Deshabilitar el servicio de aplicaciones de Seguridad de Windows no deshabilita Microsoft Defender Antivirus ni [Windows Defender Firewall](/windows/security/threat-protection/windows-firewall/windows-firewall-with-advanced-security). Se deshabilitan automáticamente cuando se instala un antivirus o un producto de firewall de terceros y se mantienen actualizados.
-> Si deshabilita la Seguridad de Windows App Service o configura sus opciones de directiva de grupo asociadas para evitar que se inicie o se ejecute, la aplicación Seguridad de Windows podría mostrar información obsoleta o inexacta sobre los productos antivirus o de firewall que haya instalado en el dispositivo.
+> Deshabilitar el Seguridad de Windows app service no deshabilita Microsoft Defender Antivirus ni [Windows डिफेन्डर Firewall](/windows/security/threat-protection/windows-firewall/windows-firewall-with-advanced-security). Se deshabilitan automáticamente cuando se instala un antivirus o un producto de firewall de terceros y se mantienen actualizados.
+> Si deshabilita la Seguridad de Windows app service o configura sus opciones de समूह नीति asociadas para evitar que se inicie o se ejecute, la aplicación Seguridad de Windows podría mostrar información obsoleta o imprecisa sobre los productos antivirus o de firewall que haya instalado en el dispositivo.
 > También puede impedir que Microsoft Defender Antivirus se habilite si tiene un antivirus de terceros antiguo o obsoleto, o si desinstala cualquier producto antivirus de terceros que haya instalado anteriormente.
 > Esto reducirá significativamente la protección de su dispositivo y podría conducir a una infección por malware.
 
@@ -57,7 +57,7 @@ La aplicación Seguridad de Windows es una interfaz de cliente en Windows 10, ve
 En las secciones siguientes se describe cómo realizar algunas de las tareas más comunes al revisar o interactuar con la protección contra amenazas proporcionada por Microsoft Defender Antivirus en la aplicación Seguridad de Windows.
 
 > [!NOTE]
-> Si estas opciones se configuran e implementan mediante directiva de grupo, la configuración descrita en esta sección estará atenuada y no estará disponible para su uso en puntos de conexión individuales. Los cambios realizados a través de un objeto de directiva de grupo deben implementarse en primer lugar en los extremos individuales antes de que se actualice la configuración en la configuración de Windows. En el tema [Configurar la interacción del usuario final con Microsoft Defender Antivirus](configure-end-user-interaction-microsoft-defender-antivirus.md) se describe cómo se puede configurar la configuración de invalidación de directiva local.
+> Si estas opciones se configuran e implementan mediante समूह नीति, la configuración descrita en esta sección se atenuará y no estará disponible para su uso en puntos de conexión individuales. Los cambios realizados a través de un objeto de directiva de grupo deben implementarse en primer lugar en los extremos individuales antes de que se actualice la configuración en la configuración de Windows. En el tema [Configurar la interacción del usuario final con Microsoft Defender Antivirus](configure-end-user-interaction-microsoft-defender-antivirus.md) se describe cómo se puede configurar la configuración de invalidación de directiva local.
 
 ## <a name="run-a-scan-with-the-windows-security-app"></a>Ejecución de un examen con la aplicación Seguridad de Windows
 
@@ -119,7 +119,7 @@ Para obtener más información, consulte los siguientes recursos:
 - [Configuración y validación de exclusiones basadas en la extensión de archivo y la ubicación de la carpeta](./configure-extension-file-exclusions-microsoft-defender-antivirus.md)
 - [Configuración de exclusiones para archivos abiertos por procesos](./configure-process-opened-file-exclusions-microsoft-defender-antivirus.md)
 
-## <a name="review-threat-detection-history-in-the-windows-defender-for-cloud-app"></a>Revisión del historial de detección de amenazas en la aplicación Windows Defender for Cloud
+## <a name="review-threat-detection-history-in-the-windows-defender-for-cloud-app"></a>Revisión del historial de detección de amenazas en la aplicación Windows डिफेन्डर for Cloud
 
 1. Abra la aplicación Seguridad de Windows buscando *seguridad* en el menú Inicio y, a continuación, seleccione **Seguridad de Windows**.
 

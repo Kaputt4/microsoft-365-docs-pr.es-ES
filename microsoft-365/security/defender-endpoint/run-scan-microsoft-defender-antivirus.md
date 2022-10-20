@@ -7,7 +7,7 @@ ms.mktglfcycl: manage
 ms.sitesec: library
 ms.pagetype: security
 ms.localizationpriority: medium
-ms.topic: article
+ms.topic: conceptual
 author: denisebmsft
 ms.author: deniseb
 ms.custom: nextgen
@@ -19,12 +19,12 @@ ms.collection:
 - m365-security
 - tier2
 search.appverid: met150
-ms.openlocfilehash: 47ad4df4995aad0889ad220b4c7a8b77853a382e
-ms.sourcegitcommit: 4e42bafee965446f44f7f57d1defed2b9b24fce8
+ms.openlocfilehash: abd9719929ef92289adc73b486f4933ba28e3702
+ms.sourcegitcommit: 0d8fb571024f134d7480fe14cffc5e31a687d356
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/30/2022
-ms.locfileid: "68229666"
+ms.lasthandoff: 10/20/2022
+ms.locfileid: "68646251"
 ---
 # <a name="configure-and-run-on-demand-microsoft-defender-antivirus-scans"></a>Configurar y ejecutar análisis bajo petición en el Antivirus de Microsoft Defender
 
@@ -94,7 +94,7 @@ Para obtener más información sobre cómo usar PowerShell con Microsoft Defende
 
 Use el [método **Start**](/previous-versions/windows/desktop/defender/start-msft-mpscan) de la clase **MSFT_MpScan**.
 
-Para obtener más información sobre qué parámetros se permiten, consulte [Windows Defender API WMIv2](/previous-versions/windows/desktop/defender/windows-defender-wmiv2-apis-portal).
+Para obtener más información sobre qué parámetros se permiten, consulte [Windows डिफेन्डर API WMIv2](/previous-versions/windows/desktop/defender/windows-defender-wmiv2-apis-portal).
 
 > [!TIP]
 > Si busca información relacionada con el antivirus para otras plataformas, consulte:

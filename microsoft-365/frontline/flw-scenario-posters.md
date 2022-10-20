@@ -1,6 +1,6 @@
 ---
 title: 'Microsoft 365 for frontline workers: pósteres de escenarios'
-description: Obtenga información sobre los escenarios que puede implementar fácilmente para los trabajadores de primera línea de su organización con estos pósteres descargables.
+description: Descargue estos pósteres PDF para obtener información sobre los escenarios que puede implementar fácilmente para los trabajadores de primera línea de su organización.
 search.appverid: MET150
 author: samanro
 ms.author: samanro
@@ -14,20 +14,23 @@ ms.collection:
 - highpri
 - m365solution-frontline
 - m365solution-scenario
+- EngageScoreOct2022
 ms.reviewer: aaglick
 appliesto:
 - Microsoft Teams
 - Microsoft 365 for frontline workers
-ms.openlocfilehash: 3cdc1433e419a8179d4de60465788602e4f1b532
-ms.sourcegitcommit: 12af9e8e3a6eaa090fda9e98ccb831dff65863a4
+ms.openlocfilehash: 056590f985c6fc4d0d5653e61beae5989e2f0084
+ms.sourcegitcommit: 0d8fb571024f134d7480fe14cffc5e31a687d356
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/27/2022
-ms.locfileid: "68082469"
+ms.lasthandoff: 10/20/2022
+ms.locfileid: "68644689"
 ---
 # <a name="microsoft-365-for-frontline-workers---scenario-posters"></a>Microsoft 365 for frontline workers: pósteres de escenarios
 
-Use la información general de estos escenarios para empezar a prever lo que su organización puede hacer con Microsoft 365 para trabajadores de primera línea y, a continuación, siga los vínculos para averiguar cómo implementar estos escenarios. Puede descargar estos pósteres en formato PDF o Visio y personalizarlos para su organización.
+Use esta información general del escenario para empezar a prever lo que su organización puede hacer con Microsoft 365 for frontline workers. Puede descargar estos pósteres en formato PDF o Visio y personalizarlos para su organización.
+
+Para obtener más información sobre cómo Microsoft 365 puede ayudar a los trabajadores de primera línea, consulte [Elegir los escenarios para Microsoft 365 for frontline workers](flw-choose-scenarios.md). Para obtener más información sobre la planeación e implementación de escenarios, consulte [Guía de planeación técnica para implementar soluciones de primera línea (notas del producto).](flw-technical-planning-guide-deployment.md)
 
 ## <a name="scenarios-for-frontline-workers"></a>Escenarios para trabajadores de primera línea
 

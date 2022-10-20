@@ -14,15 +14,15 @@ audience: ITPro
 ms.collection:
 - m365-security
 - tier2
-ms.topic: article
+ms.topic: conceptual
 ms.subservice: mde
 search.appverid: met150
-ms.openlocfilehash: ac09bb1478ea3b8a0dea18ad38388d5960a18240
-ms.sourcegitcommit: 4e42bafee965446f44f7f57d1defed2b9b24fce8
+ms.openlocfilehash: aaec058f0348f76b4b193556c147268cc36bdf73
+ms.sourcegitcommit: 0d8fb571024f134d7480fe14cffc5e31a687d356
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/30/2022
-ms.locfileid: "68231778"
+ms.lasthandoff: 10/20/2022
+ms.locfileid: "68621878"
 ---
 # <a name="onboard-previous-versions-of-windows"></a>Incorporar versiones anteriores de Windows
 
@@ -166,7 +166,7 @@ Compruebe que Microsoft Defender Antivirus y Microsoft Defender para punto de co
 
     Si el resultado es "El servicio especificado no existe como un servicio instalado", deberá instalar Microsoft Defender Antivirus. Para obtener más información, consulte [Microsoft Defender Antivirus en Windows 10](microsoft-defender-antivirus-windows.md).
 
-    Para obtener información sobre cómo usar directiva de grupo para configurar y administrar Microsoft Defender Antivirus en los servidores windows, consulte [Uso de directiva de grupo configuración para configurar y administrar Microsoft Defender Antivirus](use-group-policy-microsoft-defender-antivirus.md).
+    Para obtener información sobre cómo usar समूह नीति para configurar y administrar Microsoft Defender Antivirus en los servidores windows, consulte [Uso de समूह नीति configuración para configurar y administrar Microsoft Defender Antivirus](use-group-policy-microsoft-defender-antivirus.md).
 
 
 2. Ejecute el siguiente comando para comprobar que Microsoft Defender para punto de conexión se está ejecutando:
@@ -237,17 +237,17 @@ c:\windows\MMA\setup.exe /qn NOAPM=1 ADD_OPINSIGHTS_WORKSPACE=1 OPINSIGHTS_WORKS
 
 
 
-### <a name="group-policy-configuration"></a>configuración de directiva de grupo
+### <a name="group-policy-configuration"></a>configuración de समूह नीति
 
 Cree una nueva directiva de grupo específicamente para la incorporación de dispositivos, como "incorporación de Microsoft Defender para punto de conexión".
 
-- Cree una carpeta directiva de grupo denominada "c:\windows\MMA"
+- Cree una carpeta समूह नीति denominada "c:\windows\MMA"
 
      :::image type="content" source="images/grppolicyconfig1.png" alt-text="Ubicación de las carpetas" lightbox="images/grppolicyconfig1.png":::
 
     **Esto agregará una nueva carpeta en cada servidor que obtiene el GPO aplicado, denominado MMA, y se almacenará en c:\windows. Contendrá los archivos de instalación de MMA, los requisitos previos y el script de instalación.**
 
-- Cree una preferencia de directiva de grupo Files para cada uno de los archivos almacenados en el inicio de sesión de Net.
+- Cree una preferencia de समूह नीति Files para cada uno de los archivos almacenados en el inicio de sesión de Net.
 
      :::image type="content" source="images/grppolicyconfig2.png" alt-text="La directiva de grupo: 1" lightbox="images/grppolicyconfig2.png":::
 
@@ -276,7 +276,7 @@ También puede usar una **tarea inmediata** para ejecutar deployMMA.cmd si no de
 
 Esto podría hacerse en dos fases. En primer lugar, cree **los archivos y la carpeta en** GPO: dé tiempo al sistema para asegurarse de que se ha aplicado el GPO y que todos los servidores tienen los archivos de instalación. A continuación, agregue la tarea inmediata. Esto logrará el mismo resultado sin necesidad de reiniciar.
 
-Dado que el script tiene un método de salida y no se volverá a ejecutar si el MMA está instalado, también podría usar una tarea programada diaria para lograr el mismo resultado. De forma similar a una directiva de cumplimiento Configuration Manager, se comprobará diariamente para asegurarse de que el MMA está presente.
+Dado que el script tiene un método de salida y no se volverá a ejecutar si el MMA está instalado, también podría usar una tarea programada diaria para lograr el mismo resultado. De forma similar a una directiva de cumplimiento de Configuration Manager, se comprobará diariamente para asegurarse de que el MMA está presente.
 
 :::image type="content" source="images/schtask.png" alt-text="tarea de programación" lightbox="images/schtask.png":::
 
@@ -291,7 +291,7 @@ Como se mencionó en la documentación de incorporación de Server específicame
 - Instalación del [paquete acumulativo de actualizaciones mensual de febrero de 2018](https://support.microsoft.com/help/4074598/windows-7-update-kb4074598)
 - Instale [.NET Framework 4.5](https://www.microsoft.com/download/details.aspx?id=30653) (o posterior) o [KB3154518](https://support.microsoft.com/help/3154518/support-for-tls-system-default-versions-included-in-the-net-framework)
 
-Compruebe que los KB están presentes antes de incorporar Windows Server 2008 R2. Este proceso le permite incorporar todos los servidores si no tiene Configuration Manager administrar servidores.
+Compruebe que los KB están presentes antes de incorporar Windows Server 2008 R2. Este proceso le permite incorporar todos los servidores si no tiene servidores de administración de Configuration Manager.
 
 
 ## <a name="offboard-endpoints"></a>Puntos de conexión fuera del panel

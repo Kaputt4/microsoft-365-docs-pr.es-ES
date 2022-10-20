@@ -14,15 +14,15 @@ audience: ITPro
 ms.collection:
 - m365-security
 - tier2
-ms.topic: article
+ms.topic: conceptual
 ms.subservice: mde
 search.appverid: met150
-ms.openlocfilehash: f22af8b0835ff0b93297484f695f51925e07ff55
-ms.sourcegitcommit: 0b7070ec119e00e0dafe030bbfbef0ae5c9afa19
+ms.openlocfilehash: 5be17c199a2ff13c3f0b59bda148c718ebeb8d04
+ms.sourcegitcommit: 0d8fb571024f134d7480fe14cffc5e31a687d356
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/29/2022
-ms.locfileid: "68205693"
+ms.lasthandoff: 10/20/2022
+ms.locfileid: "68629751"
 ---
 # <a name="configure-conditional-access-in-microsoft-defender-for-endpoint"></a>Configuración del acceso condicional en Microsoft Defender para punto de conexión
 
@@ -83,7 +83,7 @@ Siga estos pasos para habilitar el acceso condicional:
 
 ### <a name="step-3-create-the-compliance-policy-in-intune"></a>Paso 3: Crear la directiva de cumplimiento en Intune
 
-1. En el [Azure Portal](https://portal.azure.com), seleccione **Todos los servicios**, filtre por **Intune** y seleccione **Microsoft Intune**.
+1. En [Azure Portal](https://portal.azure.com), seleccione **Todos los servicios**, filtre por **Intune** y seleccione **Microsoft Intune**.
 2. Seleccione **Directivas de cumplimiento** \> **de** \> **dispositivos Crear directiva**.
 3. Escriba un **nombre** y **una descripción**.
 4. En **Plataforma**, seleccione **Windows 10 y versiones posteriores**.
@@ -98,7 +98,7 @@ Siga estos pasos para habilitar el acceso condicional:
 
 ### <a name="step-4-assign-the-policy"></a>Paso 4: Asignar la directiva
 
-1. En el [Azure Portal](https://portal.azure.com), seleccione **Todos los servicios**, filtre por **Intune** y seleccione **Microsoft Intune**.
+1. En [Azure Portal](https://portal.azure.com), seleccione **Todos los servicios**, filtre por **Intune** y seleccione **Microsoft Intune**.
 2. Seleccione **Directivas de cumplimiento** \> de dispositivos> seleccione la directiva de cumplimiento de Microsoft Defender para punto de conexión.
 3. Seleccione **Asignaciones**.
 4. Incluya o excluya los grupos de Azure AD para asignarles la directiva.
@@ -106,7 +106,7 @@ Siga estos pasos para habilitar el acceso condicional:
 
 ### <a name="step-5-create-an-azure-ad-conditional-access-policy"></a>Paso 5: Creación de una directiva de acceso condicional de Azure AD
 
-1. En el [Azure Portal](https://portal.azure.com), abra **nueva directiva** **de acceso condicional de** \> **Azure Active Directory**\>.
+1. En [Azure Portal](https://portal.azure.com), abra Nueva **directiva** **de acceso condicional de** \> **Azure Active Directory**\>.
 2. Escriba un **nombre de** directiva y seleccione **Usuarios y grupos**. Utilice las opciones Incluir o Excluir para agregar los grupos para la directiva y seleccione **Listo**.
 3. Seleccione **Aplicaciones** en la nube y elija qué aplicaciones proteger. Por ejemplo, elija **Seleccionar aplicaciones** y seleccione **Office 365 SharePoint Online** y **Office 365 Exchange Online**. Seleccione **Listo** para guardar los cambios.
 

@@ -13,18 +13,18 @@ ms.custom: nextgen
 ms.reviewer: ''
 manager: dansimp
 ms.subservice: mde
-ms.topic: article
+ms.topic: conceptual
 ms.date: 10/18/2021
 ms.collection:
 - m365-security
 - tier2
 search.appverid: met150
-ms.openlocfilehash: db2bddee6bae8c314dfcb1d721f5742a00b04584
-ms.sourcegitcommit: 0b7070ec119e00e0dafe030bbfbef0ae5c9afa19
+ms.openlocfilehash: cfbad83a62db423eab510dcde5658974bc781005
+ms.sourcegitcommit: 0d8fb571024f134d7480fe14cffc5e31a687d356
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/29/2022
-ms.locfileid: "68193133"
+ms.lasthandoff: 10/20/2022
+ms.locfileid: "68628255"
 ---
 # <a name="configure-the-cloud-block-timeout-period"></a>Configurar el período de espera de bloqueo en la nube
 
@@ -60,15 +60,15 @@ Puede especificar el período de tiempo de espera del bloque en la nube con una 
 
 6. Elija **Siguiente** y termine de configurar la directiva.
 
-## <a name="specify-the-extended-timeout-period-using-group-policy"></a>Especifique el período de tiempo de espera extendido mediante directiva de grupo
+## <a name="specify-the-extended-timeout-period-using-group-policy"></a>Especifique el período de tiempo de espera extendido mediante समूह नीति
 
-Puede usar directiva de grupo para especificar un tiempo de espera extendido para las comprobaciones en la nube.
+Puede usar समूह नीति para especificar un tiempo de espera extendido para las comprobaciones en la nube.
 
-1. En el equipo de administración de directiva de grupo, abra la [consola de administración de directiva de grupo](/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/cc731212(v=ws.11)).
+1. En el equipo de administración de समूह नीति, abra la [consola de administración de समूह नीति](/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/cc731212(v=ws.11)).
 
-2. Haga clic con el botón derecho en el objeto directiva de grupo que desea configurar y, a continuación, seleccione **Editar**.
+2. Haga clic con el botón derecho en el objeto समूह नीति que desea configurar y, a continuación, seleccione **Editar**.
 
-3. En el **Editor de administración de directiva de grupo**, vaya a **Configuración del equipo** y, a continuación, seleccione **Plantillas administrativas**.
+3. En el **Editor de administración de समूह नीति**, vaya a **Configuración del equipo** y, a continuación, seleccione **Plantillas administrativas**.
 
 3. Expanda el árbol a **componentes** \> **de Windows Microsoft Defender Antivirus** \> **MpEngine**.
 

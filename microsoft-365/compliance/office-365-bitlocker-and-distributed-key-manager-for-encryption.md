@@ -14,15 +14,16 @@ search.appverid:
 ms.collection:
 - Strat_O365_Enterprise
 - purview-compliance
+- tier3
 - Strat_O365_Enterprise
 description: Obtenga información sobre cómo Office 365 usa el cifrado de BitLocker, lo que reduce la posibilidad de robo de datos debido a discos y equipos perdidos o robados.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: d9c7d88f3dedb94a4b9abbee58f84aa75fa8c76a
-ms.sourcegitcommit: 4dfb5de8c61847b8ddd10410ad20d34860eed8f6
+ms.openlocfilehash: d72040d4cac4b76637877482e18a025a160d2484
+ms.sourcegitcommit: 0d8fb571024f134d7480fe14cffc5e31a687d356
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/28/2022
-ms.locfileid: "68122333"
+ms.lasthandoff: 10/20/2022
+ms.locfileid: "68620665"
 ---
 # <a name="bitlocker-and-distributed-key-manager-dkm-for-encryption"></a>BitLocker y Administrador de claves distribuidas (DKM) para el cifrado
 
@@ -34,9 +35,9 @@ En la tabla siguiente se describe la cadena de protección de claves de BitLocke
 
 | PROTECTOR DE CLAVE | GRANULARIDAD | ¿CÓMO SE GENERA? | ¿DÓNDE SE ALMACENA? | PROTECCIÓN |
 |--------------------------------------------------------------------------------|-------------------------------------------------|----------------|-------------------------|--------------------------------------------------------------------------------------------------|
-| Clave externa de 256 bits de AES | Por servidor | API de BitLocker | TPM o secreto seguro | Caja de seguridad/Access Control |
+| Clave externa de 256 bits de AES | Por servidor | API de BitLocker | TPM o secreto seguro | Caja de seguridad/Control de acceso |
 |  |  |  | Registro del servidor de buzones | TPM cifrado |
-| Contraseña numérica de 48 dígitos | Por disco | API de BitLocker | Active Directory | Caja de seguridad/Access Control |
+| Contraseña numérica de 48 dígitos | Por disco | API de BitLocker | Active Directory | Caja de seguridad/Control de acceso |
 | Certificado X.509 como agente de recuperación de datos (DRA) también denominado protector de clave pública | Entorno (por ejemplo, Exchange Online multiinquilino) | Microsoft CA | Sistema de compilación | Ningún usuario tiene la contraseña completa en la clave privada. La contraseña está bajo protección física. |
 
 

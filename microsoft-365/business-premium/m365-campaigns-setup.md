@@ -9,7 +9,7 @@ audience: Admin
 ms.topic: overview
 ms.service: microsoft-365-security
 ms.subservice: other
-ms.date: 09/15/2022
+ms.date: 10/18/2022
 ms.localizationpriority: high
 ms.collection:
 - M365-Campaigns
@@ -23,12 +23,12 @@ search.appverid:
 - MET150
 ms.assetid: 496e690b-b75d-4ff5-bf34-cc32905d0364
 description: Introducción a la configuración de Microsoft 365 Empresa para campañas u otras empresas
-ms.openlocfilehash: 8c88a1c519a4174342049b5c5dac85f24eac8d32
-ms.sourcegitcommit: 0283c436f3ba61a708b52b57a1955f5ea74376a3
+ms.openlocfilehash: 769cf1141ce2734020e9247fad1f95cc6e2b5069
+ms.sourcegitcommit: 0d8fb571024f134d7480fe14cffc5e31a687d356
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/28/2022
-ms.locfileid: "68096619"
+ms.lasthandoff: 10/20/2022
+ms.locfileid: "68620964"
 ---
 # <a name="setup-for-microsoft-365-business-for-campaigns"></a>Configuración de Microsoft 365 Empresa para campañas
 
@@ -72,7 +72,7 @@ Los usuarios que se han agregado a su suscripción de Microsoft 365 para campañ
 2. Inicie sesión con el nombre de usuario y la contraseña de la cuenta. Los usuarios tienen esta información en el correo electrónico que recibieron cuando se les agregó como usuarios. Si no encuentran el correo electrónico, consulte [el usuario no recibió el correo electrónico de invitación](../admin/simplified-signup/admin-invite-business-standard.md#i-shared-an-email-invite-but-the-user-didnt-receive-the-email).
 
 > [!TIP]
-> Proporcione a su personal un vínculo a la [Guía de configuración rápida de empleados](../admin/setup/employee-quick-setup.md) para obtener ayuda para iniciar sesión, obtener aplicaciones de Office y guardar, copiar y compartir archivos.
+> Proporcione a su personal un vínculo a la [guía de configuración rápida de empleados](../admin/setup/employee-quick-setup.md) para obtener ayuda para iniciar sesión, obtener aplicaciones de Microsoft 365 y guardar, copiar y compartir archivos.
 
 ## <a name="customize-your-sign-in-page-with-a-privacy-and-consent-notice"></a>Personalizar la página de inicio de sesión con un aviso de privacidad y consentimiento
 

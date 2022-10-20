@@ -5,7 +5,7 @@ author: chrisda
 manager: dansimp
 ms.date: ''
 audience: ITPro
-ms.topic: article
+ms.topic: conceptual
 ms.localizationpriority: medium
 search.appverid:
 - MET150
@@ -17,12 +17,12 @@ ms.collection:
 description: Los administradores de Microsoft 365 pueden aprender a recuperarse de un ataque de ransomware.
 ms.subservice: mdo
 ms.service: microsoft-365-security
-ms.openlocfilehash: 330c0dedc59a8e7434f0261fbc932cd911730b3a
-ms.sourcegitcommit: 12af9e8e3a6eaa090fda9e98ccb831dff65863a4
+ms.openlocfilehash: 4630513695cad88e5e706028bf75397de58bec1a
+ms.sourcegitcommit: 0d8fb571024f134d7480fe14cffc5e31a687d356
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/27/2022
-ms.locfileid: "68083855"
+ms.lasthandoff: 10/20/2022
+ms.locfileid: "68626893"
 ---
 # <a name="recover-from-a-ransomware-attack-in-microsoft-365"></a>Recuperación de un ataque de ransomware en Microsoft 365
 
@@ -71,11 +71,11 @@ Ejecute un examen antivirus completo y actual en todos los equipos y dispositivo
 
 No olvide examinar los dispositivos que sincronizan datos o los destinos de las unidades de red asignadas.
 
-Puede usar [Windows Defender](https://www.microsoft.com/windows/comprehensive-security) o (para clientes anteriores) [Microsoft Security Essentials](https://www.microsoft.com/download/details.aspx?id=5201).
+Puede usar [Windows डिफेन्डर](https://www.microsoft.com/windows/comprehensive-security) o (para clientes más antiguos) [Microsoft Security Essentials](https://www.microsoft.com/download/details.aspx?id=5201).
 
 Una alternativa que también le ayudará a eliminar ransomware o malware es la [herramienta de eliminación de software malintencionado (MSRT)](https://www.microsoft.com/download/details.aspx?id=9905).
 
-Si estas opciones no funcionan, puede intentar [Windows Defender sin conexión](https://support.microsoft.com/help/17466) o [solucionar problemas con la detección y eliminación de malware](https://support.microsoft.com/help/4466982).
+Si estas opciones no funcionan, puede intentar [Windows डिफेन्डर sin conexión](https://support.microsoft.com/help/17466) o [solucionar problemas con la detección y eliminación de malware](https://support.microsoft.com/help/4466982).
 
 ## <a name="step-4-recover-files-on-a-cleaned-computer-or-device"></a>Paso 4: Recuperar archivos en un equipo o dispositivo limpio
 
@@ -111,7 +111,7 @@ Después de recuperarse, puede evitar que OneDrive para la Empresa clientes sinc
 
 ### <a name="contact-law-enforcement"></a>Ponerse en contacto con el cumplimiento de la ley
 
-Debe ponerse en contacto con sus agencias de cumplimiento de la ley locales o federales. Por ejemplo, si está en la Estados Unidos puede ponerse en contacto con la [oficina local del FBI](https://www.fbi.gov/contact-us/field), [IC3](http://www.ic3.gov/complaint/default.aspx) o [el Servicio Secreto](http://www.secretservice.gov/).
+Debe ponerse en contacto con sus agencias de cumplimiento de la ley locales o federales. Por ejemplo, si está en Estados Unidos, puede ponerse en contacto con la [oficina local del FBI](https://www.fbi.gov/contact-us/field), [IC3](http://www.ic3.gov/complaint/default.aspx) o [el Servicio Secreto](http://www.secretservice.gov/).
 
 ### <a name="submit-a-report-to-your-countrys-scam-reporting-website"></a>Enviar un informe al sitio web de informes de estafas de su país
 
@@ -169,7 +169,7 @@ Microsoft Azure:
 - [Defensas de Azure para los ataques de ransomware](https://azure.microsoft.com/resources/azure-defenses-for-ransomware-attack/)
 - [Maximizar la resistencia de ransomware con Azure y Microsoft 365](https://azure.microsoft.com/resources/maximize-ransomware-resiliency-with-azure-and-microsoft-365/)
 - [Plan de restauración y copia de seguridad para la protección contra ransomware](/security/compass/backup-plan-to-protect-against-ransomware)
-- [Ayuda para protegerse de ransomware con Microsoft Azure Backup](https://www.youtube.com/watch?v=VhLOr2_1MCg) (vídeo de 26 minutos)
+- [Ayuda para protegerse frente a ransomware con Microsoft Azure Backup](https://www.youtube.com/watch?v=VhLOr2_1MCg) (vídeo de 26 minutos)
 - [Recuperación de una identidad en peligro](/azure/security/fundamentals/recover-from-identity-compromise)
 - [Detección avanzada de ataques de varias fases en Microsoft Sentinel](/azure/sentinel/fusion#ransomware)
 - [Detección de difusión para ransomware en Microsoft Sentinel](https://techcommunity.microsoft.com/t5/azure-sentinel/what-s-new-fusion-detection-for-ransomware/ba-p/2621373)

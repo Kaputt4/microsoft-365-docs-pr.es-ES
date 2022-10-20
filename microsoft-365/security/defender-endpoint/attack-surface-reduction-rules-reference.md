@@ -14,17 +14,17 @@ ms.author: v-jweston
 ms.reviewer: oogunrinde, sugamar,
 manager: dansimp
 ms.custom: asr
-ms.topic: article
+ms.topic: conceptual
 ms.collection:
 - m365-security
 - tier2
 search.appverid: met150
-ms.openlocfilehash: a53e024218cd8ef81b9310107d12838bb400603f
-ms.sourcegitcommit: 50da6f1f6ef2274c17ed9729e7ad84395b0a9be2
+ms.openlocfilehash: 238fe0e3b1ec061736cab53e0f55fe49e5d966d7
+ms.sourcegitcommit: 0d8fb571024f134d7480fe14cffc5e31a687d356
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/08/2022
-ms.locfileid: "68504004"
+ms.lasthandoff: 10/20/2022
+ms.locfileid: "68638794"
 ---
 # <a name="attack-surface-reduction-asr-rules-reference"></a>Referencia de reglas de reducción de la superficie expuesta a ataques (ASR)
 
@@ -107,7 +107,7 @@ En la tabla siguiente se enumeran los sistemas operativos admitidos para las reg
 
 (<a id="fn1">1</a>) Hace referencia a la solución unificada moderna para Windows Server 2012 y 2016. Para obtener más información, vea [Incorporación de servidores Windows al servicio Defender para punto de conexión](configure-server-endpoints.md).
 
-(<a id="fn1">2</a>) Para Windows&nbsp;Server 2016 y Windows&nbsp;Server 2012&nbsp;R2, la versión mínima necesaria del punto de conexión de Microsoft Configuration Manager es la versión 2111.
+(<a id="fn1">2</a>) Para Windows&nbsp;Server 2016 y Windows&nbsp;Server 2012&nbsp;R2, la versión mínima necesaria de Microsoft Endpoint Configuration Manager es la versión 2111.
 
 (<a id="fn1">3</a>) La versión y el número de compilación solo se aplican a Windows&nbsp;10.
 
@@ -115,7 +115,7 @@ En la tabla siguiente se enumeran los sistemas operativos admitidos para las reg
 
 Debajo de esta tabla se enumeran vínculos a información sobre las versiones del sistema de administración de configuración a las que se hace referencia en esta tabla.
 
-|Nombre de regla | Microsoft Intune | Microsoft Endpoint Configuration Manager |<sup>directiva de grupo[[1](#fn1)]<sup></sup> | PowerShell<sup>[[1](#fn1)]<sup></sup>  |
+|Nombre de regla | Microsoft Intune | Microsoft Endpoint Configuration Manager |<sup>समूह नीति[[1](#fn1)]<sup></sup> | PowerShell<sup>[[1](#fn1)]<sup></sup>  |
 |---|:---:|:---:|:---:|:---:|
 |[Bloquear el abuso de controladores firmados vulnerables explotados](#block-abuse-of-exploited-vulnerable-signed-drivers) | v |   | v  |  v  |
 |[Impedir que Adobe Reader cree procesos secundarios](#block-adobe-reader-from-creating-child-processes) | v |  | v  | v  |
@@ -139,7 +139,7 @@ Debajo de esta tabla se enumeran vínculos a información sobre las versiones de
 - [Configuration Manager CB 1710](/configmgr/core/servers/manage/updates)
 - [Configuration Manager CB 1802](/configmgr/core/servers/manage/updates)
 - [Microsoft Endpoint Manager CB 1710](/configmgr/core/servers/manage/updates)
-- [System Center Configuration Manager (SCCM) CB 1710](/configmgr/core/servers/manage/updates) <br>_SCCM ahora es Configuration Manager de punto de conexión de Microsoft._
+- [System Center Configuration Manager (SCCM) CB 1710](/configmgr/core/servers/manage/updates) <br>_SCCM ahora es Microsoft Endpoint Configuration Manager._
 
 ## <a name="per-asr-rule-alert-and-notification-details"></a>Por detalles de alerta de regla y notificación de ASR
 
@@ -229,7 +229,7 @@ La regla **Bloquear abuso de controladores firmados vulnerables vulnerables** no
 
 nombre de Intune:`Block abuse of exploited vulnerable signed drivers`
 
-Configuration Manager nombre: todavía no disponible
+Nombre de Configuration Manager: todavía no disponible
   
 GUID:  `56a863a9-875e-4185-98a7-b882c64b5ce5`
 
@@ -250,7 +250,7 @@ El malware puede descargar e iniciar cargas útiles y salir de Adobe Reader a tr
 
 Intune nombre:`Process creation from Adobe Reader (beta)`
 
-Configuration Manager nombre: todavía no disponible
+Nombre de Configuration Manager: todavía no disponible
 
 GUID: `7674ba52-37eb-4a4f-a9a1-f0f9a1619a2c`
 
@@ -269,7 +269,7 @@ La creación de procesos secundarios malintencionados es una estrategia de malwa
 
 Intune nombre:`Office apps launching child processes`
 
-Configuration Manager nombre:`Block Office application from creating child processes`
+Nombre de Configuration Manager: `Block Office application from creating child processes`
 
 GUID: `d4f940ab-401b-4efc-aadc-ad5f3c50688a`
 
@@ -294,7 +294,7 @@ LSASS autentica a los usuarios que inician sesión en un equipo Windows. Microso
 
 Intune nombre:`Flag credential stealing from the Windows local security authority subsystem`
 
-Configuration Manager nombre:`Block credential stealing from the Windows local security authority subsystem`
+Nombre de Configuration Manager: `Block credential stealing from the Windows local security authority subsystem`
 
 GUID: `9e6c4e1f-7d60-472f-ba1a-a39ef669e4b2`
 
@@ -330,7 +330,7 @@ Dependencias: antivirus de Microsoft Defender
 >
 > - Intune (perfiles de configuración): la ejecución del contenido ejecutable (exe, dll, ps, js, vbs, etc.) se ha eliminado del correo electrónico (cliente de correo web/correo) (sin excepciones).
 > - Endpoint Manager: bloquear la descarga de contenido ejecutable de clientes de correo electrónico y correo web.
-> - directiva de grupo: Bloquear el contenido ejecutable del cliente de correo electrónico y el correo web.
+> - समूह नीति: Bloquear el contenido ejecutable del cliente de correo electrónico y el correo web.
 
 ### <a name="block-executable-files-from-running-unless-they-meet-a-prevalence-age-or-trusted-list-criterion"></a>Impedir que los archivos ejecutables se ejecuten a menos que cumplan un criterio de prevalencia, edad o lista de confianza
 
@@ -345,7 +345,7 @@ Esta regla impide que se inicien archivos ejecutables, como .exe, .dll o .scr. P
 
 Intune nombre:`Executables that don't meet a prevalence, age, or trusted list criteria`
 
-Configuration Manager nombre:`Block executable files from running unless they meet a prevalence, age, or trusted list criteria`
+Nombre de Configuration Manager: `Block executable files from running unless they meet a prevalence, age, or trusted list criteria`
 
 GUID: `01443614-cd74-433a-b99e-2ecdc07bfc25`
 
@@ -370,7 +370,7 @@ La ofuscación de scripts es una técnica común que usan los autores de malware
 
 Intune nombre:`Obfuscated js/vbs/ps/macro code`
 
-Configuration Manager nombre:`Block execution of potentially obfuscated scripts`
+Nombre de Configuration Manager: `Block execution of potentially obfuscated scripts`
 
 GUID: `5beb7efe-fd9a-4556-801d-275e5ffc04cc`
 
@@ -389,7 +389,7 @@ Aunque no es común, las aplicaciones de línea de negocio a veces usan scripts 
 
 Intune nombre:`js/vbs executing payload downloaded from Internet (no exceptions)`
 
-Configuration Manager nombre:`Block JavaScript or VBScript from launching downloaded executable content`
+Nombre de Configuration Manager: `Block JavaScript or VBScript from launching downloaded executable content`
 
 GUID: `d3e037e1-3eb8-44c8-a917-57927947596d`
 
@@ -431,7 +431,7 @@ Esta regla se aplica a Word, Excel y PowerPoint.
 
 Intune nombre:`Office apps injecting code into other processes (no exceptions)`
 
-Configuration Manager nombre:`Block Office applications from injecting code into other processes`
+Nombre de Configuration Manager: `Block Office applications from injecting code into other processes`
 
 GUID: `75668c1f-73b5-4cf0-bb93-3ecf5cb7cc84`
 
@@ -453,7 +453,7 @@ Esta regla protege contra ataques de ingeniería social e impide que el código 
 
 Intune nombre:`Process creation from Office communication products (beta)`
 
-nombre de Configuration Manager: No disponible
+Nombre de Configuration Manager: No disponible
 
 GUID: `26190899-1602-49e8-8b27-eb1d0a1ce869`
 
@@ -475,7 +475,7 @@ Las amenazas sin archivo emplean varias tácticas para permanecer ocultas, evita
 
 Intune nombre: No disponible
 
-nombre de Configuration Manager: No disponible
+Nombre de Configuration Manager: No disponible
 
 GUID: `e6db77e5-3df2-4cf1-b95a-636979351e5b`
 
@@ -491,11 +491,11 @@ Dependencias: Microsoft Defender Antivirus, RPC
 Esta regla impide que se ejecuten los procesos creados a través de [PsExec](/sysinternals/downloads/psexec) y [WMI](/windows/win32/wmisdk/about-wmi) . PsExec y WMI pueden ejecutar código de forma remota. Existe el riesgo de que el malware abuse de la funcionalidad de PsExec y WMI con fines de comando y control, o de propagar una infección a través de la red de una organización.
 
 > [!WARNING]
-> Use esta regla solo si va a administrar los dispositivos con [Intune](/intune) u otra solución MDM. Esta regla no es compatible con la administración a través [del punto de conexión de Microsoft Configuration Manager](/configmgr) porque esta regla bloquea los comandos WMI que el cliente Configuration Manager usa para funcionar correctamente.
+> Use esta regla solo si va a administrar los dispositivos con [Intune](/intune) u otra solución MDM. Esta regla no es compatible con la administración a través de [Microsoft Endpoint Configuration Manager](/configmgr) porque esta regla bloquea los comandos WMI que el cliente de Configuration Manager usa para funcionar correctamente.
 
 Intune nombre:`Process creation from PSExec and WMI commands`
 
-Configuration Manager nombre: no aplicable
+Nombre de Configuration Manager: no aplicable
 
 GUID: `d1e49aac-8f56-4280-b9ba-993a6d77406c`
 
@@ -515,7 +515,7 @@ Con esta regla, los administradores pueden evitar que los archivos ejecutables n
 
 Intune nombre:`Untrusted and unsigned processes that run from USB`
 
-Configuration Manager nombre:`Block untrusted and unsigned processes that run from USB`
+Nombre de Configuration Manager: `Block untrusted and unsigned processes that run from USB`
 
 GUID: `b2b3f03d-6a65-4f7b-a9c7-1c7ef74a9ba4`
 
@@ -541,7 +541,7 @@ Sistemas operativos compatibles:
 
 Intune nombre:`Win32 imports from Office macro code`
 
-Configuration Manager nombre:`Block Win32 API calls from Office macros`
+Nombre de Configuration Manager: `Block Win32 API calls from Office macros`
 
 GUID: `92e97fa1-2edf-4476-bdd6-9dd0b4dddc7b`
 
@@ -567,7 +567,7 @@ La regla tiende a errar en el lado de la precaución para evitar ransomware.
 
 Intune nombre:`Advanced ransomware protection`
 
-Configuration Manager nombre:`Use advanced protection against ransomware`
+Nombre de Configuration Manager: `Use advanced protection against ransomware`
 
 GUID: `c1db55ab-c21a-4637-bb3f-a12568109d35`
 

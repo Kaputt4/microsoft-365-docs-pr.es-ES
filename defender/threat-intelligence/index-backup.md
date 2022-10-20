@@ -1,6 +1,6 @@
 ---
-title: ¿Qué es Inteligencia sobre amenazas de Microsoft Defender (Defender TI)?
-description: En este artículo de información general, obtendrá información sobre las características principales que se incluyen con inteligencia sobre amenazas de Microsoft Defender (TI de Defender).
+title: ¿Qué es Inteligencia sobre amenazas de Microsoft Defender (Defender TI)? -Copia de seguridad
+description: En este artículo de información general, obtendrá información sobre las características principales que se incluyen con inteligencia sobre amenazas de Microsoft Defender (TI de Defender). -Copia de seguridad
 author: alexroland24
 ms.author: aroland
 manager: dolmont
@@ -8,14 +8,14 @@ ms.service: threat-intelligence
 ms.topic: overview
 ms.date: 08/02/2022
 ms.custom: template-overview
-ms.openlocfilehash: bed8b4ed1aefb1a401f61256161f6dce5c593e18
-ms.sourcegitcommit: c29af68260ba8676083674b3c70209bff2c2e362
+ms.openlocfilehash: 1e8ba342f6bf68bd61353e43a8641859251d674e
+ms.sourcegitcommit: 0d8fb571024f134d7480fe14cffc5e31a687d356
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/16/2022
-ms.locfileid: "67879477"
+ms.lasthandoff: 10/20/2022
+ms.locfileid: "68623793"
 ---
-# <a name="what-is-microsoft-defender-threat-intelligence-defender-ti"></a>¿Qué es Inteligencia sobre amenazas de Microsoft Defender (Defender TI)?
+# <a name="what-is-microsoft-defender-threat-intelligence-defender-ti---backup"></a>¿Qué es Inteligencia sobre amenazas de Microsoft Defender (Defender TI)? -Copia de seguridad
 
 La inteligencia sobre amenazas de Microsoft Defender (Defender TI) es una plataforma que simplifica la evaluación de prioridades, la respuesta a incidentes, la búsqueda de amenazas, la administración de vulnerabilidades y los flujos de trabajo de analistas de inteligencia sobre ciberamenazas al realizar análisis de la infraestructura de amenazas y recopilar inteligencia sobre amenazas. Los analistas dedican una gran cantidad de tiempo a la detección, recopilación y análisis de datos, en lugar de centrarse en lo que realmente ayuda a su organización a defenderse, derivando información sobre los actores a través del análisis y la correlación.
 

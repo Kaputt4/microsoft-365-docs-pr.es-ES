@@ -2,7 +2,7 @@
 title: Migración de un HIPS de terceros a reglas de ASR
 description: Describe cómo abordar una migración desde una solución de sistema de prevención de intrusiones de host (HIPS) de terceros a reglas de ASR.
 keywords: Reglas de reducción de superficie expuesta a ataques, asr, reglas de asr, caderas, sistema de prevención de intrusiones del host, reglas de protección, anti-vulnerabilidad, antiexploit, vulnerabilidad de seguridad, prevención de infecciones, Microsoft Defender para punto de conexión
-ms.topic: article
+ms.topic: conceptual
 ms.service: microsoft-365-security
 ms.mktglfcycl: manage
 ms.sitesec: library
@@ -18,12 +18,12 @@ ms.collection:
 - m365-security
 - tier2
 search.appverid: met150
-ms.openlocfilehash: edbf7121a23bd5effda50256fdc07a6d58e09493
-ms.sourcegitcommit: 4e42bafee965446f44f7f57d1defed2b9b24fce8
+ms.openlocfilehash: 5c13a63125c8b2906bf61f0a36cb4ff97f6f6f0f
+ms.sourcegitcommit: 0d8fb571024f134d7480fe14cffc5e31a687d356
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/30/2022
-ms.locfileid: "68231646"
+ms.lasthandoff: 10/20/2022
+ms.locfileid: "68646537"
 ---
 # <a name="migrating-from-a-third-party-hips-to-asr-rules"></a>Migración de un HIPS de terceros a reglas de ASR
 
@@ -67,8 +67,8 @@ Este artículo le ayuda a asignar reglas comunes a Microsoft Defender para punto
 - **Procesos**: mshta.exe
 - **Operación**: ejecución de procesos
 - **Ejemplos de archivos o carpetas, claves o valores del Registro, procesos, servicios** powershell.exe, cmd.exe, regsvr32.exe
-- **Reglas de reducción de superficie expuesta a ataques**: las reglas de ASR no contienen ninguna regla específica para evitar que los procesos secundarios "mshta.exe". Este control está dentro de la competencia de Protección contra vulnerabilidades de seguridad o Windows Defender Control de aplicaciones.
-- **Otras características recomendadas**: habilite Windows Defender Control de aplicaciones para evitar que mshta.exe se ejecuten por completo. Si su organización requiere "mshta.exe" para las aplicaciones de línea de negocio, configure una regla específica Windows Defender Protección contra vulnerabilidades de seguridad para evitar que mshta.exe inicie procesos secundarios.
+- **Reglas de reducción de superficie expuesta a ataques**: las reglas de ASR no contienen ninguna regla específica para evitar que los procesos secundarios "mshta.exe". Este control está dentro de la competencia de Protección contra vulnerabilidades de seguridad o Windows डिफेन्डर Control de aplicaciones.
+- **Otras características recomendadas**: habilite Windows डिफेन्डर Control de aplicaciones para evitar que mshta.exe se ejecuten por completo. Si su organización requiere "mshta.exe" para las aplicaciones de línea de negocio, configure una regla específica Windows डिफेन्डर Protección contra vulnerabilidades de seguridad para evitar que mshta.exe inicie procesos secundarios.
 
 ### <a name="block-outlook-from-launching-child-processes"></a>Impedir que Outlook inicie procesos secundarios
 
@@ -139,14 +139,14 @@ Este artículo le ayuda a asignar reglas comunes a Microsoft Defender para punto
 - **Operación**: ejecución de procesos
 - **Ejemplos de archivos o carpetas, claves o valores del Registro, procesos, servicios** tor.exe, bittorrent.exe, cmd.exe, powershell.exe, etc.
 - **Reglas de reducción de superficie expuesta a ataques**: en general, las reglas de ASR no están diseñadas para funcionar como administrador de aplicaciones.
-- **Otras características recomendadas**: para evitar que los usuarios inicien procesos o programas específicos, se recomienda usar Windows Defender Application Control. Microsoft Defender para punto de conexión los indicadores de archivo y certificado, se pueden usar en un escenario de respuesta a incidentes (no debe verse como un mecanismo de control de aplicaciones).
+- **Otras características recomendadas**: para evitar que los usuarios inicien procesos o programas específicos, se recomienda usar Windows डिफेन्डर Control de aplicaciones. Microsoft Defender para punto de conexión los indicadores de archivo y certificado, se pueden usar en un escenario de respuesta a incidentes (no debe verse como un mecanismo de control de aplicaciones).
 
 ### <a name="block-unauthorized-changes-to-microsoft-defender-antivirus-configurations"></a>Bloquear cambios no autorizados en las configuraciones de Microsoft Defender Antivirus
 
 - **Se aplica a** todos los procesos
 - **Procesos**- *
 - **Operación**: modificaciones del Registro
-- **Ejemplos de archivos/carpetas, claves/valores del Registro, procesos, servicios**: HKLM\SOFTWARE\Policies\Microsoft\Windows Defender\DisableAntiSpyware, HKLM\SOFTWARE\Policies\Microsoft\Windows Defender\Policy Manager\AllowRealTimeMonitoring, etc.
+- **Ejemplos de archivos/carpetas, claves/valores del Registro, procesos, servicios**: HKLM\SOFTWARE\Policies\Microsoft\Windows डिफेन्डर\DisableAntiSpyware, HKLM\SOFTWARE\Policies\Microsoft\Windows डिफेन्डर\Policy Manager\AllowRealTimeMonitoring, etc.
 - **Reglas de reducción de superficie expuesta a ataques**: las reglas de ASR no cubren estos escenarios porque forman parte de la Microsoft Defender para punto de conexión protección integrada.
 - **Otras características recomendadas**: Protección contra alteraciones (participación, administrada desde Intune) evita cambios no autorizados en las claves del Registro DisableAntiVirus, DisableAntiSpyware, DisableRealtimeMonitoring, DisableOnAccessProtection, DisableBehaviorMonitoring y DisableIOAVProtection (entre otras).
 

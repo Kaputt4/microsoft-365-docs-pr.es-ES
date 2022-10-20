@@ -6,7 +6,7 @@ ms.service: microsoft-365-security
 ms.mktglfcycl: manage
 ms.sitesec: library
 ms.localizationpriority: medium
-ms.topic: article
+ms.topic: conceptual
 author: denisebmsft
 ms.author: deniseb
 ms.custom: nextgen
@@ -18,12 +18,12 @@ ms.collection:
 - m365-security
 - tier3
 search.appverid: met150
-ms.openlocfilehash: bc2cdc24b3d2001ba04b38e52e19c1ef02071736
-ms.sourcegitcommit: 4e42bafee965446f44f7f57d1defed2b9b24fce8
+ms.openlocfilehash: 90693411badfd6d3d09562a86104578112fbfbf6
+ms.sourcegitcommit: 0d8fb571024f134d7480fe14cffc5e31a687d356
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/30/2022
-ms.locfileid: "68224082"
+ms.lasthandoff: 10/20/2022
+ms.locfileid: "68636198"
 ---
 # <a name="review-event-logs-and-error-codes-to-troubleshoot-issues-with-microsoft-defender-antivirus"></a>Revisar registros de sucesos y códigos de error para solucionar problemas del Antivirus de Windows Defender
 
@@ -57,8 +57,8 @@ En la tabla de esta sección se enumeran los principales identificadores de even
 
 ## <a name="to-view-a-microsoft-defender-antivirus-event"></a>Para ver un evento antivirus de Microsoft Defender
 
-1. Abra **Visor de eventos**.
-2. En el árbol de consola, expanda **Registros de aplicaciones y servicios**, **Microsoft**, **Windows** y, a continuación, **Windows Defender**.
+1. Abra **घटना दर्शक**.
+2. En el árbol de consola, expanda **Registros de aplicaciones y servicios**, **Microsoft**, **Windows** y, a continuación, **Windows डिफेन्डर**.
 3. Haga doble clic en **Operativo**.
 4. En el panel de detalles, vea la lista de eventos individuales para buscar el evento.
 5. Haga clic en el evento para ver detalles específicos sobre un evento en el panel inferior, en las pestañas **General** y **Detalles** .
@@ -325,7 +325,7 @@ El cliente antivirus encontró un error y el examen actual se ha detenido. Es po
 Para solucionar este evento:
 <ol>
 <li>Vuelva a ejecutar el examen.</li>
-<li>Si se produce un error de la misma manera, vaya al <a href="https://go.microsoft.com/fwlink/?LinkId=215163">sitio Soporte técnico de Microsoft</a> y escriba el número de error en el cuadro <b>Buscar</b> para buscar el código de error.</li>
+<li>Si se produce un error de la misma manera, vaya al <a href="https://go.microsoft.com/fwlink/?LinkId=215163">sitio de soporte técnico de Microsoft</a> y escriba el número de error en el cuadro <b>Buscar</b> para buscar el código de error.</li>
 <li>Contactar al <a href="/microsoft-365/admin/get-help-support">Soporte técnico de Microsoft</a>.
 </li>
 </ol>
@@ -980,7 +980,7 @@ Usuario de UAC</dt>
 <dt>Versión de firma: &lt; &gt;Versión de definición</dt>
 <dt>Versión del motor: &lt;Antimalware Engine versión&gt;</dt> NOTA: Siempre que Microsoft Defender Antivirus, Microsoft Security Essentials, Herramienta de eliminación de software malintencionado o System Center Endpoint Protection  detecta un malware, restaurará los siguientes servicios y configuración del sistema que el malware podría haber cambiado:<ul>
 <li>Configuración predeterminada de Internet Explorer o Microsoft Edge</li>
-<li>Configuración de Access Control de usuario</li>
+<li>Configuración del control de acceso de usuario</li>
 <li>Configuración de Chrome</li>
 <li>Datos de control de arranque</li>
 <li>Regedit y la configuración del Registro del Administrador de tareas</li>
@@ -1243,7 +1243,7 @@ Compruebe que el usuario tiene permiso para acceder a los recursos necesarios.
 
 Si este evento persiste:<ol>
 <li>Vuelva a ejecutar el examen.</li>
-<li>Si se produce un error de la misma manera, vaya al <a href="https://go.microsoft.com/fwlink/?LinkId=215163">sitio Soporte técnico de Microsoft</a> y escriba el número de error en el cuadro <b>Buscar</b> para buscar el código de error.</li>
+<li>Si se produce un error de la misma manera, vaya al <a href="https://go.microsoft.com/fwlink/?LinkId=215163">sitio de soporte técnico de Microsoft</a> y escriba el número de error en el cuadro <b>Buscar</b> para buscar el código de error.</li>
 <li>Contactar al <a href="/microsoft-365/admin/get-help-support">Soporte técnico de Microsoft</a>.
 </li>
 </ol>
@@ -1319,7 +1319,7 @@ El acceso controlado a carpetas ha bloqueado un proceso que no es de confianza p
 <dt>TimeCreated: &lt;SystemTime&gt;, hora en que se creó el evento</dt>
 <dt>EventRecordID: &lt;EventRecordID&gt;, número de índice del evento en el registro de eventos</dt>
 <dt>Execution ProcessID: &lt;Execution ProcessID&gt;, proceso que generó el canal de eventos</dt>
-<dt>: &lt;Canal&gt; de eventos, por ejemplo: Microsoft-Windows- Windows Defender/Equipo operativo</dt>
+<dt>: &lt;Canal&gt; de eventos, por ejemplo: Microsoft-Windows- Windows डिफेन्डर/Equipo operativo</dt>
 <dt>: &lt;Nombre&gt;de equipo</dt>
 <dt>UserID de seguridad: &lt;Nombre de producto de UserID&gt;de seguridad</dt>
 <dt>: &lt;Nombre&gt; del producto, por ejemplo: Microsoft Defender</dt>
@@ -2463,7 +2463,7 @@ Para solucionar este evento:<ol>
 </li>
 </ul>
 </li>
-<li>Si se produce un error de la misma manera, busque el código de error accediendo al <a href="https://go.microsoft.com/fwlink/?LinkId=215163">sitio Soporte técnico de Microsoft</a> y escribiendo el número de error en el cuadro <b>Buscar</b> y póngase en contacto con <a href="/microsoft-365/admin/get-help-support">el soporte técnico de Microsoft</a>.</li>
+<li>Si se produce un error de la misma manera, busque el código de error accediendo al <a href="https://go.microsoft.com/fwlink/?LinkId=215163">Sitio de soporte técnico de Microsoft</a>  y escribiendo el número de error en el cuadro <b>Buscar</b> y póngase en contacto con <a href="/microsoft-365/admin/get-help-support">el Soporte técnico de Microsoft</a>.</li>
 </ol>
 </td>
 </tr>
@@ -2476,7 +2476,7 @@ El motor de cliente Microsoft Defender Antivirus se detuvo debido a un error ine
 Para solucionar este evento:
 <ol>
 <li>Vuelva a ejecutar el examen.</li>
-<li>Si se produce un error de la misma manera, vaya al <a href="https://go.microsoft.com/fwlink/?LinkId=215163">sitio Soporte técnico de Microsoft</a> y escriba el número de error en el cuadro <b>Buscar</b> para buscar el código de error.</li>
+<li>Si se produce un error de la misma manera, vaya al <a href="https://go.microsoft.com/fwlink/?LinkId=215163">sitio de soporte técnico de Microsoft</a> y escriba el número de error en el cuadro <b>Buscar</b> para buscar el código de error.</li>
 <li>Contactar al <a href="/microsoft-365/admin/get-help-support">Soporte técnico de Microsoft</a>.
 </li>
 </ol>

@@ -10,7 +10,7 @@ ms.pagetype: security
 ms.localizationpriority: medium
 author: denisebmsft
 ms.author: deniseb
-ms.topic: article
+ms.topic: conceptual
 ms.custom: nextgen
 ms.date: 08/02/2022
 ms.reviewer: ''
@@ -19,12 +19,12 @@ ms.collection:
 - m365-security
 - tier2
 search.appverid: met150
-ms.openlocfilehash: 5d1857105c8043a38b486f435506a4dca017fee4
-ms.sourcegitcommit: 0b7070ec119e00e0dafe030bbfbef0ae5c9afa19
+ms.openlocfilehash: 6d74a3798db01495af2786519f06ec1d8f58afe2
+ms.sourcegitcommit: 0d8fb571024f134d7480fe14cffc5e31a687d356
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/29/2022
-ms.locfileid: "68172233"
+ms.lasthandoff: 10/20/2022
+ms.locfileid: "68631994"
 ---
 # <a name="prevent-or-allow-users-to-locally-modify-microsoft-defender-antivirus-policy-settings"></a>Impedir o permitir que los usuarios modifiquen localmente Microsoft Defender configuración de directivas antivirus
 
@@ -38,19 +38,19 @@ ms.locfileid: "68172233"
 **Plataformas**
 - Windows
 
-De forma predeterminada, Microsoft Defender configuración de Antivirus que se implementa a través de un objeto directiva de grupo en los puntos de conexión de la red impedirá que los usuarios cambien localmente la configuración. Puede cambiar esta configuración en algunos casos. Por ejemplo, podría ser necesario permitir que determinados grupos de usuarios, como investigadores de seguridad e investigadores de amenazas, tengan un mayor control sobre la configuración individual en los puntos de conexión que usan.
+De forma predeterminada, Microsoft Defender configuración del Antivirus que se implementa a través de un objeto समूह नीति en los puntos de conexión de la red impedirá que los usuarios cambien localmente la configuración. Puede cambiar esta configuración en algunos casos. Por ejemplo, podría ser necesario permitir que determinados grupos de usuarios, como investigadores de seguridad e investigadores de amenazas, tengan un mayor control sobre la configuración individual en los puntos de conexión que usan.
 
 ## <a name="configure-local-overrides-for-microsoft-defender-antivirus-settings"></a>Configuración de invalidaciones locales para Microsoft Defender configuración del Antivirus
 
 La configuración predeterminada para estas directivas de invalidación local es **Deshabilitado**.
 
-Si las directivas se establecen en **Habilitado**, los usuarios pueden realizar cambios en la configuración asociada en sus dispositivos mediante la aplicación [de Seguridad de Windows](microsoft-defender-security-center-antivirus.md), la configuración de directiva de grupo local o los cmdlets de PowerShell (si procede).
+Si las directivas están establecidas en **Habilitado**, los usuarios pueden realizar cambios en la configuración asociada en sus dispositivos mediante la aplicación [de Seguridad de Windows](microsoft-defender-security-center-antivirus.md), la configuración de समूह नीति local o los cmdlets de PowerShell (si procede).
 
 En [la sección Tabla de configuración](#table-of-settings) se enumeran las opciones de directiva de invalidación y las instrucciones de configuración.
 
 Para configurar estas opciones:
 
-1. En el equipo de administración de directiva de grupo, abra la [consola de administración de directiva de grupo](/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/cc731212(v=ws.11)), haga clic con el botón derecho en el objeto de directiva de grupo que desea configurar y, a continuación, seleccione **Editar**.
+1. En el equipo de administración de समूह नीति, abra la [consola de administración de समूह नीति](/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/cc731212(v=ws.11)), haga clic con el botón derecho en el objeto समूह नीति que desea configurar y, a continuación, seleccione **Editar**.
 
 2. En el **Editor de administración de directiva de grupo**, vaya a **Configuración del equipo** y seleccione **Plantillas administrativas**.
 
@@ -58,7 +58,7 @@ Para configurar estas opciones:
 
 4. Haga doble clic en la **configuración de** directiva como se especifica en la tabla siguiente y establezca la opción en la configuración deseada. Seleccione **Aceptar** y repita para cualquier otra configuración.
 
-5. Implemente el objeto directiva de grupo como de costumbre.
+5. Implemente el objeto समूह नीति como de costumbre.
 
 ## <a name="table-of-settings"></a>Tabla de configuración
 
@@ -84,11 +84,11 @@ Para configurar estas opciones:
 
 También puede configurar cómo se combinan o combinan las listas definidas localmente con listas definidas globalmente. Esta configuración se aplica a [las listas de exclusión](configure-exclusions-microsoft-defender-antivirus.md), [las listas de corrección especificadas](configure-remediation-microsoft-defender-antivirus.md) y la [reducción de la superficie expuesta a ataques](/windows/security/threat-protection/microsoft-defender-atp/attack-surface-reduction).
 
-De forma predeterminada, las listas que se han configurado en la directiva de grupo local y la aplicación de Seguridad de Windows se combinan con listas definidas por el objeto de directiva de grupo adecuado que ha implementado en la red. Cuando hay conflictos, la lista definida globalmente tiene prioridad. Puede deshabilitar esta configuración para asegurarse de que solo se usan listas definidas globalmente (como las de cualquier GPO implementado).
+De forma predeterminada, las listas que se han configurado en la directiva de grupo local y la aplicación de Seguridad de Windows se combinan con listas definidas por el objeto de समूह नीति adecuado que ha implementado en la red. Cuando hay conflictos, la lista definida globalmente tiene prioridad. Puede deshabilitar esta configuración para asegurarse de que solo se usan listas definidas globalmente (como las de cualquier GPO implementado).
 
-### <a name="use-group-policy-to-disable-local-list-merging"></a>Uso de directiva de grupo para deshabilitar la combinación de listas locales
+### <a name="use-group-policy-to-disable-local-list-merging"></a>Uso de समूह नीति para deshabilitar la combinación de listas locales
 
-1. En el equipo de administración de directiva de grupo, abra la [consola de administración de directiva de grupo](/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/cc731212(v=ws.11)), haga clic con el botón derecho en el objeto directiva de grupo que desea configurar y haga clic en **Editar**.
+1. En el equipo de administración de समूह नीति, abra la [consola de administración de समूह नीति](/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/cc731212(v=ws.11)), haga clic con el botón derecho en el objeto समूह नीति que desea configurar y haga clic en **Editar**.
 
 2. En el **Editor de administración de directiva de grupo**, vaya a **Configuración del equipo** y seleccione **Plantillas administrativas**.
 

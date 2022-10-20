@@ -22,12 +22,12 @@ search.appverid:
 - BCS160
 ms.assetid: 165f46e8-3533-4d76-be57-97f81ebd40f2
 description: Obtenga herramientas paso a paso para planear, migrar e implementar las características de las licencias del inquilino. Busque una guía para configurar un servicio o una aplicación que necesite ejecutar.
-ms.openlocfilehash: 350b13242d457309f7d81c2ca710d64af42dd12b
-ms.sourcegitcommit: 0b7070ec119e00e0dafe030bbfbef0ae5c9afa19
+ms.openlocfilehash: c0d08945fb1cff97704a30ebd645a2096b49d18e
+ms.sourcegitcommit: 0d8fb571024f134d7480fe14cffc5e31a687d356
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/29/2022
-ms.locfileid: "68179359"
+ms.lasthandoff: 10/20/2022
+ms.locfileid: "68626322"
 ---
 # <a name="setup-guides-for-microsoft-365-and-office-365-services"></a>Guías de configuración para los servicios de Office 365 y Microsoft 365
 
@@ -80,7 +80,7 @@ Recibirá instrucciones para optimizar el tráfico de dispositivos de los trabaj
 
 Microsoft Edge se ha vuelto a crear desde cero para ofrecerte compatibilidad y rendimiento de primera clase, la seguridad y privacidad que te mereces y nuevas características diseñadas para ofrecerte lo mejor de la web.
 
-La [guía de configuración de Microsoft Edge](https://aka.ms/edgeadvisoradmin) le ayudará a configurar Enterprise Site Discovery para ver a qué sitios a los que se accede en su organización puede que necesiten usar el modo IE, revisar y configurar características de seguridad importantes, configurar directivas de privacidad y directivas de cumplimiento para satisfacer los requisitos de su organización y administrar el acceso web en los dispositivos. Puede descargar Microsoft Edge en dispositivos individuales o le mostraremos cómo implementar en varios usuarios de su organización con directiva de grupo, Configuration Manager o Microsoft Intune.
+La [guía de configuración de Microsoft Edge](https://aka.ms/edgeadvisoradmin) le ayudará a configurar Enterprise Site Discovery para ver a qué sitios a los que se accede en su organización puede que necesiten usar el modo IE, revisar y configurar características de seguridad importantes, configurar directivas de privacidad y directivas de cumplimiento para satisfacer los requisitos de su organización y administrar el acceso web en los dispositivos. Puede descargar Microsoft Edge en dispositivos individuales o le mostraremos cómo implementar en varios usuarios de la organización con समूह नीति, Configuration Manager o Microsoft Intune.
 
 ### <a name="configure-ie-mode-for-microsoft-edge"></a>Configuración del modo IE para Microsoft Edge
 
@@ -138,11 +138,7 @@ Use la guía [Planear la implementación sin contraseña](https://aka.ms/passwor
 
 Ofrezca a los usuarios la posibilidad de cambiar o restablecer su contraseña de forma independiente, si su cuenta está bloqueada o si olvidan su contraseña sin necesidad de ponerse en contacto con un ingeniero del departamento de soporte técnico.
 
-Use la guía [planeación de la implementación de autoservicio de restablecimiento de contraseña](https://aka.ms/SSPRSetupGuide) para recibir artículos pertinentes e instrucciones para configurar las opciones de Azure Portal adecuadas para ayudarle a implementar SSPR en su entorno.
-
-### <a name="active-directory-federation-services-ad-fs-deployment-advisor"></a>Asesor de implementación de Servicios de federación de Active Directory (AD FS) (AD FS)
-
-El [Asesor de implementación de AD FS](https://aka.ms/adfsguidance) proporciona instrucciones paso a paso sobre la implementación de una infraestructura de AD FS local que autentica a los usuarios para Microsoft 365 y Office 365 servicios. Con esta guía, la organización puede revisar los componentes y requisitos de AD FS, adquirir e instalar certificados SSL necesarios para la implementación e instalar un servidor proxy de aplicación web necesario.
+Use la guía [Planear la implementación de autoservicio de restablecimiento de contraseña](https://aka.ms/SSPRSetupGuide) para recibir artículos pertinentes e instrucciones para configurar las opciones adecuadas de Azure Portal con el fin de ayudarle a implementar SSPR en su entorno.
 
 ## <a name="guides-for-security-and-compliance"></a>Guías de seguridad y cumplimiento
 
@@ -244,7 +240,7 @@ Conéctese e interactúe en toda la organización con Yammer. El [asesor de impl
 
 ### <a name="in-place-upgrade-with-configuration-manager"></a>Actualización local con Configuration Manager
 
-Use la [guía Actualización local con Configuration Manager](https://aka.ms/win10upgradedemo) al actualizar Dispositivos Windows 7 y Windows 8.1 a la versión más reciente de Windows 10. Usará el script proporcionado para comprobar los requisitos previos y configurar automáticamente una actualización local.
+Use la [guía Actualización local con Configuration Manager](https://aka.ms/win10upgradedemo) al actualizar dispositivos Windows 7 y Windows 8.1 a la versión más reciente de Windows 10. Usará el script proporcionado para comprobar los requisitos previos y configurar automáticamente una actualización local.
 
 ### <a name="deploy-office-to-your-users"></a>Implementación de Office en los usuarios
 
@@ -258,11 +254,11 @@ Use la [guía Implementar Office en usuarios remotos](https://aka.ms/officeremot
 
 ### <a name="deploy-and-update-microsoft-365-apps-with-configuration-manager"></a>Implementación y actualización de Aplicaciones Microsoft 365 con Configuration Manager
 
-Para las organizaciones que usan Configuration Manager, puede usar la [Aplicaciones Microsoft 365 Implementar y actualizar con Configuration Manager advisor](https://aka.ms/oppinstall) para generar un script que configurará automáticamente el Aplicaciones Microsoft 365  implementación mediante los procedimientos recomendados por los ingenieros de FastTrack. Use esta guía para compilar los grupos de implementación, personalizar las aplicaciones y características de Office, configurar instalaciones dinámicas o ajustadas y, a continuación, ejecutar el script para crear las aplicaciones, las reglas de implementación automática y las colecciones de dispositivos que necesita para dirigirse a la implementación.
+En el caso de las organizaciones que usan Configuration Manager, puede usar la [Aplicaciones Microsoft 365 Implementar y actualizar con el asesor de Configuration Manager](https://aka.ms/oppinstall) para generar un script que configurará automáticamente la implementación de Aplicaciones Microsoft 365 mediante los procedimientos recomendados por los ingenieros de FastTrack. Use esta guía para compilar los grupos de implementación, personalizar las aplicaciones y características de Office, configurar instalaciones dinámicas o ajustadas y, a continuación, ejecutar el script para crear las aplicaciones, las reglas de implementación automática y las colecciones de dispositivos que necesita para dirigirse a la implementación.
 
-### <a name="intune-configuration-manager-co-management-setup-guide"></a>Intune Configuration Manager guía de configuración de administración conjunta
+### <a name="intune-configuration-manager-co-management-setup-guide"></a>guía de configuración de administración conjunta de Intune Configuration Manager
 
-Use la [guía de configuración de administración conjunta de Intune Configuration Manager](https://aka.ms/comanagementsetup) para configurar dispositivos cliente Configuration Manager existentes y nuevos dispositivos basados en Internet que su organización quiere administrar conjuntamente con Microsoft Intune y Configuration Manager. La administración conjunta le permite administrar Windows 10 dispositivos y agrega nuevas funcionalidades a los dispositivos de su organización, al tiempo que recibe las ventajas de ambas soluciones.
+Use la [guía de configuración de administración conjunta Intune Configuration Manager](https://aka.ms/comanagementsetup) para configurar los dispositivos cliente de Configuration Manager existentes y los nuevos dispositivos basados en Internet que su organización quiere administrar conjuntamente con Microsoft Intune y Configuration Manager. La administración conjunta le permite administrar Windows 10 dispositivos y agrega nuevas funcionalidades a los dispositivos de su organización, al tiempo que recibe las ventajas de ambas soluciones.
 
 ### <a name="school-data-sync-rollover-setup-guide"></a>Guía de configuración de sustitución de School Data Sync
 

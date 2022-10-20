@@ -8,16 +8,16 @@ ms.service: threat-intelligence
 ms.topic: overview
 ms.date: 08/02/2022
 ms.custom: template-overview
-ms.openlocfilehash: 62e3df65479bec45896504dc8eda006e2a41d75b
-ms.sourcegitcommit: c29af68260ba8676083674b3c70209bff2c2e362
+ms.openlocfilehash: e1c59f07cd321491bebf9cd13a7a8a3d68323d73
+ms.sourcegitcommit: 0d8fb571024f134d7480fe14cffc5e31a687d356
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/16/2022
-ms.locfileid: "67739276"
+ms.lasthandoff: 10/20/2022
+ms.locfileid: "68623595"
 ---
 # <a name="what-is-microsoft-defender-threat-intelligence-defender-ti"></a>¿Qué es Inteligencia sobre amenazas de Microsoft Defender (Defender TI)?
 
-La inteligencia sobre amenazas de Microsoft Defender (Defender TI) es una plataforma que simplifica la evaluación de prioridades, la respuesta a incidentes, la búsqueda de amenazas, la administración de vulnerabilidades y los flujos de trabajo de analistas de inteligencia sobre ciberamenazas al realizar análisis de la infraestructura de amenazas y recopilar inteligencia sobre amenazas. Los analistas dedican una gran cantidad de tiempo a la detección, recopilación y análisis de datos, en lugar de centrarse en lo que realmente ayuda a su organización a defenderse, derivando información sobre los actores a través del análisis y la correlación.
+La inteligencia sobre amenazas de Microsoft Defender (Defender TI) es una plataforma que simplifica la evaluación de prioridades, la respuesta a incidentes, la búsqueda de amenazas, la administración de vulnerabilidades y los flujos de trabajo de analistas de inteligencia sobre ciberamenazas al realizar análisis de la infraestructura de amenazas y recopilar inteligencia sobre amenazas. Los analistas dedican una cantidad significativa de tiempo a la detección, recopilación y análisis de datos, en lugar de centrarse en lo que realmente ayuda a su organización a defenderse a sí mismos, derivando información sobre los actores a través del análisis y la correlación.
 
 En muchas ocasiones, los analistas deben ir a varios repositorios para obtener los conjuntos de datos críticos que necesitan para evaluar un dominio, host o dirección IP sospechosos. Los datos DNS, la información WHOIS, el malware y los certificados SSL proporcionan un contexto importante a los indicadores de riesgo (IOC), pero estos repositorios están ampliamente distribuidos y no siempre comparten una estructura de datos común, lo cual ha hecho difícil que los analistas tengan todos los datos pertinentes necesarios para realizar una evaluación adecuada y oportuna de la infraestructura sospechosa.
 

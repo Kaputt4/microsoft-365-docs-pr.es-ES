@@ -1,11 +1,11 @@
 ---
-title: 'Confianza cero configuraciones de acceso a dispositivos e identidades: Microsoft 365 para empresas'
-description: Describe las recomendaciones de Microsoft y los conceptos básicos para implementar directivas y configuraciones de aplicaciones, documentos y correo electrónico seguros para Confianza cero.
+title: 'Configuraciones de acceso a dispositivos e identidad de confianza cero: Microsoft 365 para empresas'
+description: Describe las recomendaciones de Microsoft y los conceptos básicos para implementar directivas y configuraciones de correo electrónico, documentos y aplicaciones seguros para Confianza cero.
 ms.author: dansimp
 author: dansimp
 manager: dansimp
 ms.service: microsoft-365-security
-ms.topic: article
+ms.topic: conceptual
 audience: Admin
 f1.keywords:
 - NOCSH
@@ -23,22 +23,22 @@ ms.collection:
 - highpri
 ms.subservice: mdo
 search.appverid: met150
-ms.openlocfilehash: 764c3dbe14a384ac5667607d24698c7f2497bd3f
-ms.sourcegitcommit: 12af9e8e3a6eaa090fda9e98ccb831dff65863a4
+ms.openlocfilehash: ed8d3ed2d210fc8754a0fed6781a63064f9efa7b
+ms.sourcegitcommit: 0d8fb571024f134d7480fe14cffc5e31a687d356
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/27/2022
-ms.locfileid: "68083943"
+ms.lasthandoff: 10/20/2022
+ms.locfileid: "68645063"
 ---
 # <a name="zero-trust-identity-and-device-access-configurations"></a>Configuraciones de identidad y acceso a dispositivos de Confianza cero
 
 Las arquitecturas de seguridad que se basan en firewalls de red y redes privadas virtuales (VPN) para aislar y restringir el acceso a los recursos y servicios tecnológicos de una organización ya no son suficientes para un personal que requiere regularmente acceso a aplicaciones y recursos que existen más allá de los límites de red corporativos tradicionales.
 
-Para abordar este nuevo mundo de la informática, Microsoft recomienda encarecidamente el modelo de seguridad Confianza cero, que se basa en estos principios rectores:
+Para abordar este nuevo mundo de la informática, Microsoft recomienda encarecidamente el modelo de seguridad De confianza cero, que se basa en estos principios rectores:
 
 - Comprobar de forma explícita.
 
-  Autentíquese y autorice siempre en función de todos los puntos de datos disponibles. Aquí es donde Confianza cero directivas de acceso a dispositivos e identidades son fundamentales para el inicio de sesión y la validación en curso.
+  Autentíquese y autorice siempre en función de todos los puntos de datos disponibles. Aquí es donde las directivas de acceso a dispositivos e identidad de confianza cero son fundamentales para el inicio de sesión y la validación en curso.
 
 - Utilizar el acceso con menos privilegios
 
@@ -50,9 +50,9 @@ Para abordar este nuevo mundo de la informática, Microsoft recomienda encarecid
 
 Esta es la arquitectura general de Confianza cero.
 
-:::image type="content" source="../../media/microsoft-365-policies-configurations/zero-trust-architecture.png" alt-text="Arquitectura de Microsoft Confianza cero" lightbox="../../media/microsoft-365-policies-configurations/zero-trust-architecture.png":::
+:::image type="content" source="../../media/microsoft-365-policies-configurations/zero-trust-architecture.png" alt-text="Arquitectura de confianza cero de Microsoft" lightbox="../../media/microsoft-365-policies-configurations/zero-trust-architecture.png":::
 
-Confianza cero directivas de acceso a dispositivos e identidades abordan el principio de guía **Comprobar explícitamente** para:
+Las directivas de acceso a dispositivos e identidad de confianza cero abordan el principio de guía **Comprobar explícitamente** para:
 
 - Identidades
 
@@ -66,9 +66,9 @@ Confianza cero directivas de acceso a dispositivos e identidades abordan el prin
 
   Aplique controles y tecnologías para detectar shadow IT, garantizar los permisos adecuados desde la aplicación, garantizar el acceso de puerta en función del análisis en tiempo real, supervisar el comportamiento anómalo, controlar las acciones del usuario y validar opciones de configuración seguras.
 
-En esta serie de artículos se describe un conjunto de configuraciones de requisitos previos de acceso a dispositivos e identidades y un conjunto de acceso condicional de Azure Active Directory (Azure AD), Microsoft Intune y otras directivas para Confianza cero acceso a Microsoft 365 para aplicaciones y servicios en la nube empresariales, otros servicios SaaS y aplicaciones locales publicadas con Azure AD Application Proxy.
+En esta serie de artículos se describe un conjunto de configuraciones de requisitos previos de acceso a dispositivos e identidades y un conjunto de acceso condicional de Azure Active Directory (Azure AD), Microsoft Intune y otras directivas para el acceso de confianza cero a Microsoft 365 para aplicaciones y servicios en la nube empresariales, otros servicios SaaS y aplicaciones locales publicadas con Azure AD Application Proxy.
 
-Confianza cero configuración y directivas de acceso a dispositivos e identidades se recomiendan en tres niveles: punto de partida, empresa y seguridad especializada para entornos con datos altamente regulados o clasificados. Estos niveles y sus configuraciones correspondientes proporcionan niveles coherentes de protección de Confianza cero en los datos, identidades y dispositivos.
+La configuración y las directivas de acceso a dispositivos e identidad de confianza cero se recomiendan en tres niveles: punto de partida, empresa y seguridad especializada para entornos con datos altamente regulados o clasificados. Estos niveles y sus configuraciones correspondientes proporcionan niveles coherentes de protección de confianza cero en los datos, identidades y dispositivos.
 
 Estas funcionalidades y sus recomendaciones:
 
@@ -93,7 +93,7 @@ Estas recomendaciones están pensadas para arquitectos empresariales y profesion
 
 ### <a name="customer-environment"></a>Entorno del cliente
 
-Las directivas recomendadas se aplican a las organizaciones empresariales que operan por completo en la nube de Microsoft y a los clientes con infraestructura de identidad híbrida, que es un bosque Active Directory local Domain Services (AD DS) que se sincroniza con un inquilino de Azure AD.
+Las directivas recomendadas se aplican a las organizaciones empresariales que operan por completo en la nube de Microsoft y a los clientes con infraestructura de identidad híbrida, que es un bosque de Active Directory डोमेन सेवाहरू local (AD DS) que se sincroniza con un inquilino de Azure AD.
 
 Muchas de las recomendaciones proporcionadas se basan en servicios disponibles solo con Microsoft 365 E5, Microsoft 365 E3 con el complemento de seguridad E5, EMS E5 o licencias de Azure AD Premium P2.
 
@@ -117,7 +117,7 @@ Cada sector además tiene su propio conjunto de normas especializadas. En lugar 
 
 :::image type="content" source="../../media/microsoft-365-policies-configurations/M365-idquality-threetiers.png" alt-text="El cono de seguridad" lightbox="../../media/microsoft-365-policies-configurations/M365-idquality-threetiers.png":::
 
-En esta guía se muestra cómo implementar Confianza cero protección para identidades y dispositivos para cada uno de estos niveles de protección. Use esta guía como mínimo para su organización y ajuste las directivas para satisfacer los requisitos específicos de su organización.
+En esta guía se muestra cómo implementar la protección de confianza cero para identidades y dispositivos para cada uno de estos niveles de protección. Use esta guía como mínimo para su organización y ajuste las directivas para satisfacer los requisitos específicos de su organización.
 
 Es importante usar niveles coherentes de protección en las identidades, dispositivos y datos. Por ejemplo, la protección de los usuarios con cuentas&mdash;prioritarias, como ejecutivos, líderes, administradores y otros&mdash;, debe incluir el mismo nivel de protección para sus identidades, sus dispositivos y los datos a los que acceden. 
 <!--
@@ -141,11 +141,11 @@ Las recomendaciones proporcionadas se basan en los siguientes principios:
 - Conozca a los usuarios y sea flexible con sus requisitos funcionales y de seguridad.
 - Aplique una directiva de seguridad justo a tiempo y asegúrese de que es significativa.
 
-## <a name="services-and-concepts-for-zero-trust-identity-and-device-access-protection"></a>Servicios y conceptos para Confianza cero protección de identidad y acceso a dispositivos
+## <a name="services-and-concepts-for-zero-trust-identity-and-device-access-protection"></a>Servicios y conceptos para la protección de acceso a dispositivos e identidades de confianza cero
 
 Microsoft 365 para empresas está diseñado para que las grandes organizaciones puedan capacitar a todos para que sean creativos y trabajen juntos de forma segura.
 
-En esta sección se proporciona información general sobre los servicios y funcionalidades de Microsoft 365 que son importantes para Confianza cero identidad y acceso al dispositivo.
+En esta sección se proporciona información general sobre los servicios y funcionalidades de Microsoft 365 que son importantes para la identidad de confianza cero y el acceso al dispositivo.
 
 ### <a name="azure-ad"></a>Azure AD
 
@@ -161,9 +161,9 @@ Azure AD proporciona un conjunto completo de funcionalidades de administración 
 |[Autoservicio de restablecimiento de contraseña (SSPR)](/azure/active-directory/authentication/concept-sspr-howitworks)|Permitir que los usuarios restablezcan sus contraseñas de forma segura y sin intervención del departamento de soporte técnico, proporcionando la comprobación de varios métodos de autenticación que el administrador puede controlar.|Microsoft 365 E3 o E5|
 |[Protección con contraseña de Azure AD](/azure/active-directory/authentication/concept-password-ban-bad)|Detecte y bloquee contraseñas débiles conocidas y sus variantes y términos débiles adicionales específicos de su organización. Las listas de contraseñas desvetadas global predeterminada se aplican automáticamente a todos los usuarios de un inquilino de Azure AD. Se puede definir entradas adicionales en una lista personalizada de contraseñas prohibidas. Cuando los usuarios cambien o restablezcan sus contraseñas, estas listas de contraseñas prohibidas se comprueban para exigir el uso de contraseñas seguras.|Microsoft 365 E3 o E5|
 
-Estos son los componentes de Confianza cero identidad y acceso al dispositivo, incluidos los objetos, la configuración y los subservicios Intune y Azure AD.
+Estos son los componentes de la identidad de confianza cero y el acceso al dispositivo, incluidos los objetos de Intune y Azure AD, la configuración y los subservicios.
 
-:::image type="content" source="../../media/microsoft-365-policies-configurations/identity-device-access-components.png" alt-text="Componentes de Confianza cero identidad y acceso al dispositivo" lightbox="../../media/microsoft-365-policies-configurations/identity-device-access-components.png":::
+:::image type="content" source="../../media/microsoft-365-policies-configurations/identity-device-access-components.png" alt-text="Los componentes de la identidad de confianza cero y el acceso al dispositivo" lightbox="../../media/microsoft-365-policies-configurations/identity-device-access-components.png":::
 
 ### <a name="microsoft-intune"></a>Microsoft Intune
 
@@ -204,7 +204,7 @@ Se recomienda administrar los dispositivos propiedad de la organización mediant
 
 ## <a name="deployment-and-your-apps"></a>Implementación y aplicaciones
 
-Antes de configurar e implementar Confianza cero configuración de acceso a dispositivos e identidades para las aplicaciones integradas en Azure AD, debe:
+Antes de configurar e implementar la configuración de acceso a dispositivos e identidades de Confianza cero para las aplicaciones integradas en Azure AD, debe:
 
 - Decida qué aplicaciones se usan en su organización que desea proteger.
 - Analice esta lista de aplicaciones para determinar los conjuntos de directivas que proporcionan los niveles adecuados de protección.
@@ -219,19 +219,19 @@ Por ejemplo, configure las directivas que se usarán para todas las aplicaciones
 
 Del mismo modo, en el caso de las aplicaciones confidenciales, cree el conjunto de directivas y agregue una aplicación a la vez y trabaje con cualquier problema hasta que se incluyan en el conjunto de directivas de aplicaciones confidenciales.
 
-Microsoft recomienda no crear conjuntos de directivas que se apliquen a todas las aplicaciones porque puede dar lugar a algunas configuraciones no intencionadas. Por ejemplo, las directivas que bloquean todas las aplicaciones podrían bloquear a los administradores fuera de la Azure Portal y las exclusiones no se pueden configurar para puntos de conexión importantes como Microsoft Graph.
+Microsoft recomienda no crear conjuntos de directivas que se apliquen a todas las aplicaciones porque puede dar lugar a algunas configuraciones no intencionadas. Por ejemplo, las directivas que bloquean todas las aplicaciones podrían bloquear a los administradores fuera de Azure Portal y las exclusiones no se pueden configurar para puntos de conexión importantes como Microsoft Graph.
 
-## <a name="steps-to-configure-zero-trust-identity-and-device-access"></a>Pasos para configurar Confianza cero identidad y acceso al dispositivo
+## <a name="steps-to-configure-zero-trust-identity-and-device-access"></a>Pasos para configurar la identidad de confianza cero y el acceso al dispositivo
 
-:::image type="content" source="../../media/microsoft-365-policies-configurations/identity-device-access-steps.png" alt-text="Los pasos para configurar Confianza cero identidad y acceso al dispositivo" lightbox="../../media/microsoft-365-policies-configurations/identity-device-access-steps.png":::
+:::image type="content" source="../../media/microsoft-365-policies-configurations/identity-device-access-steps.png" alt-text="Los pasos para configurar la identidad de confianza cero y el acceso al dispositivo" lightbox="../../media/microsoft-365-policies-configurations/identity-device-access-steps.png":::
 
 1. Configure las características de identidad de requisitos previos y sus opciones.
 2. Configure las directivas comunes de acceso condicional de identidad y acceso.
 3. Configure directivas de acceso condicional para usuarios invitados y externos.
 4. Configure directivas de acceso condicional para aplicaciones&mdash;en la nube de Microsoft 365 como Microsoft Teams, Exchange y SharePoint&mdash;y directivas de Microsoft Defender for Cloud Apps.
 
-Después de configurar Confianza cero acceso a identidades y dispositivos, consulte la guía de [implementación de características de Azure AD](/azure/active-directory/fundamentals/active-directory-deployment-checklist-p2) para obtener una lista de comprobación por fases de características adicionales que se deben tener en cuenta y [Gobernanza de identidades de Azure AD](/azure/active-directory/governance/) para proteger, supervisar y auditar el acceso.
+Después de configurar la identidad de Confianza cero y el acceso al dispositivo, consulte la [guía de implementación de características de Azure AD](/azure/active-directory/fundamentals/active-directory-deployment-checklist-p2) para obtener una lista de comprobación por fases de características adicionales que se deben tener en cuenta y [Gobernanza de identidades de Azure AD](/azure/active-directory/governance/) para proteger, supervisar y auditar el acceso.
 
 ## <a name="next-step"></a>Paso siguiente
 
-[Trabajo de requisitos previos para implementar directivas de acceso a dispositivos e identidades de Confianza cero](identity-access-prerequisites.md)
+[Trabajo de requisitos previos para implementar directivas de acceso a dispositivos e identidad de confianza cero](identity-access-prerequisites.md)

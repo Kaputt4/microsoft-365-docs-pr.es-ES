@@ -14,17 +14,17 @@ ms.date: 10/18/2021
 ms.reviewer: ''
 manager: dansimp
 ms.subservice: mde
-ms.topic: article
+ms.topic: conceptual
 ms.collection:
 - m365-security
 - tier2
 search.appverid: met150
-ms.openlocfilehash: f168645b37f39edd9c8c6a0fdcc162fc33b81e24
-ms.sourcegitcommit: 4e42bafee965446f44f7f57d1defed2b9b24fce8
+ms.openlocfilehash: 54f0e592cc389402ca1d148437f208c229828c34
+ms.sourcegitcommit: 0d8fb571024f134d7480fe14cffc5e31a687d356
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/30/2022
-ms.locfileid: "68221462"
+ms.lasthandoff: 10/20/2022
+ms.locfileid: "68637758"
 ---
 # <a name="prevent-users-from-seeing-or-interacting-with-the-microsoft-defender-antivirus-user-interface"></a>Impedir que los usuarios vean o interactúen con la interfaz de usuario Microsoft Defender Antivirus
 
@@ -39,7 +39,7 @@ ms.locfileid: "68221462"
 **Plataformas**
 - Windows
 
-Puede usar directiva de grupo para evitar que los usuarios de los puntos de conexión vean la interfaz Microsoft Defender Antivirus. También puede evitar que se pausan los exámenes.
+Puede usar समूह नीति para evitar que los usuarios de los puntos de conexión vean la interfaz Microsoft Defender Antivirus. También puede evitar que se pausan los exámenes.
 
 ## <a name="hide-the-microsoft-defender-antivirus-interface"></a>Ocultar la interfaz Microsoft Defender Antivirus
 
@@ -56,15 +56,15 @@ Con el valor establecido en **Deshabilitado** o no configurado:
 > [!NOTE]
 > Ocultar la interfaz también impedirá que aparezcan Microsoft Defender notificaciones antivirus en el punto de conexión. Microsoft Defender para punto de conexión notificaciones seguirán apareciendo. También puede configurar individualmente [las notificaciones que aparecen en los puntos de conexión](configure-notifications-microsoft-defender-antivirus.md).
 
-En versiones anteriores de Windows 10, la configuración ocultará la interfaz de cliente Windows Defender. Si el usuario intenta abrirlo, recibirá una advertencia que indica: "El administrador del sistema tiene acceso restringido a esta aplicación".
+En versiones anteriores de Windows 10, la configuración ocultará la interfaz de cliente Windows डिफेन्डर. Si el usuario intenta abrirlo, recibirá una advertencia que indica: "El administrador del sistema tiene acceso restringido a esta aplicación".
 
 :::image type="content" source="../../media/wdav-headless-mode-1607.png" alt-text="Mensaje de advertencia cuando el modo sin cabeza está habilitado en Windows 10, versiones anteriores a 1703" lightbox="../../media/wdav-headless-mode-1607.png":::
 
-## <a name="use-group-policy-to-hide-the-microsoft-defender-antivirus-interface-from-users"></a>Uso de directiva de grupo para ocultar la interfaz Microsoft Defender Antivirus a los usuarios
+## <a name="use-group-policy-to-hide-the-microsoft-defender-antivirus-interface-from-users"></a>Uso de समूह नीति para ocultar la interfaz Microsoft Defender Antivirus a los usuarios
 
-1. En la máquina de administración de directiva de grupo, abra la [consola de administración de directiva de grupo](/previous-versions/windows/desktop/gpmc/group-policy-management-console-portal), haga clic con el botón derecho en el objeto directiva de grupo que desea configurar y haga clic en **Editar**.
+1. En la máquina de administración de समूह नीति, abra la [consola de administración de समूह नीति](/previous-versions/windows/desktop/gpmc/group-policy-management-console-portal), haga clic con el botón derecho en el objeto de समूह नीति que desea configurar y haga clic en **Editar**.
 
-2. Con el **Editor de administración de directiva de grupo** vaya a **Configuración del equipo**.
+2. Con el **Editor de administración de समूह नीति** vaya a **Configuración del equipo**.
 
 3. Haga clic en **Plantillas administrativas**.
 
@@ -81,11 +81,11 @@ Puede evitar que los usuarios interrumpan los exámenes, lo que puede resultar �
 > [!NOTE]
 > Esta configuración no se admite en Windows 10.
 
-### <a name="use-group-policy-to-prevent-users-from-pausing-a-scan"></a>Uso de directiva de grupo para evitar que los usuarios pausan un examen
+### <a name="use-group-policy-to-prevent-users-from-pausing-a-scan"></a>Uso de समूह नीति para evitar que los usuarios detenten un examen
 
-1. En la máquina de administración de directiva de grupo, abra la [consola de administración de directiva de grupo](/previous-versions/windows/desktop/gpmc/group-policy-management-console-portal), haga clic con el botón derecho en el objeto directiva de grupo que desea configurar y haga clic en **Editar**.
+1. En la máquina de administración de समूह नीति, abra la [consola de administración de समूह नीति](/previous-versions/windows/desktop/gpmc/group-policy-management-console-portal), haga clic con el botón derecho en el objeto de समूह नीति que desea configurar y haga clic en **Editar**.
 
-2. Con el **Editor de administración de directiva de grupo** vaya a **Configuración del equipo**.
+2. Con el **Editor de administración de समूह नीति** vaya a **Configuración del equipo**.
 
 3. Haga clic en **Plantillas administrativas**.
 

@@ -1,5 +1,5 @@
 ---
-title: Administrar Microsoft Defender para punto de conexión mediante Configuration Manager
+title: Administración de Microsoft Defender para punto de conexión mediante Configuration Manager
 description: Aprenda a administrar Microsoft Defender para punto de conexión con Configuration Manager
 keywords: posterior a la migración, administración, operaciones, mantenimiento, uso, Configuration Manager, Microsoft Defender para punto de conexión, edr
 ms.service: microsoft-365-security
@@ -15,16 +15,16 @@ audience: ITPro
 ms.collection:
 - m365-security
 - tier2
-ms.topic: article
+ms.topic: conceptual
 ms.date: 07/01/2022
 ms.reviewer: chventou
 search.appverid: met150
-ms.openlocfilehash: 43fb93dc01517372bdeeaba05c012aa5d4bb6a29
-ms.sourcegitcommit: 4e42bafee965446f44f7f57d1defed2b9b24fce8
+ms.openlocfilehash: c80c8bd30900783c4c5e327c4adada97469ec605
+ms.sourcegitcommit: 0d8fb571024f134d7480fe14cffc5e31a687d356
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/30/2022
-ms.locfileid: "68232944"
+ms.lasthandoff: 10/20/2022
+ms.locfileid: "68627157"
 ---
 # <a name="manage-microsoft-defender-for-endpoint-with-configuration-manager"></a>Administración de Microsoft Defender para punto de conexión con Configuration Manager
 
@@ -35,7 +35,7 @@ ms.locfileid: "68232944"
 
 > ¿Quiere experimentar Microsoft Defender para punto de conexión? [Regístrese para obtener una prueba gratuita.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-exposedapis-abovefoldlink)
 
-Se recomienda usar [Microsoft Endpoint Manager](/mem), que incluye [Microsoft Intune](/mem/intune/fundamentals/what-is-intune) (Intune) y [Configuration Manager de punto de conexión de Microsoft](/mem/configmgr/core/understand/introduction) (Configuration Manager ) para administrar las características de protección contra amenazas de su organización para dispositivos (también conocidos como puntos de conexión).
+Se recomienda usar [Microsoft Endpoint Manager](/mem), que incluye [Microsoft Intune](/mem/intune/fundamentals/what-is-intune) (Intune) y [Microsoft Endpoint Configuration Manager](/mem/configmgr/core/understand/introduction) (Configuration Manager) para administrar las características de protección contra amenazas de su organización para dispositivos (también conocidos como puntos de conexión).
 
 - [Más información sobre Endpoint Manager](/mem/endpoint-manager-overview)
 - [Administración conjunta de Microsoft Defender para punto de conexión en dispositivos Windows 10 y Windows 11 con Configuration Manager y Intune](manage-mde-post-migration-intune.md)

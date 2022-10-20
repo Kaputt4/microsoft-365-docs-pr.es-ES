@@ -11,7 +11,7 @@ ms.localizationpriority: medium
 author: denisebmsft
 manager: dansimp
 ms.author: deniseb
-ms.topic: article
+ms.topic: conceptual
 ms.custom: nextgen
 ms.date: 10/13/2022
 ms.reviewer: mkaminska; pahuijbr
@@ -19,12 +19,12 @@ ms.collection:
 - m365-security
 - tier2
 search.appverid: met150
-ms.openlocfilehash: d49087d5dffd5bd2d726296b68b5407cc487e898
-ms.sourcegitcommit: 1f4c51d022d1cfb6c194bf0f0af9c2841c781d68
+ms.openlocfilehash: edef2df59e0a5bef2b45bc1226084dfdb771adcb
+ms.sourcegitcommit: 0d8fb571024f134d7480fe14cffc5e31a687d356
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/14/2022
-ms.locfileid: "68573865"
+ms.lasthandoff: 10/20/2022
+ms.locfileid: "68634440"
 ---
 # <a name="configure-and-validate-microsoft-defender-antivirus-network-connections"></a>Configurar y validar las conexiones de red del Antivirus de Windows Defender
 
@@ -51,7 +51,7 @@ Para asegurarse de que Microsoft Defender protección proporcionada en la nube d
 
 ## <a name="allow-connections-to-the-microsoft-defender-antivirus-cloud-service"></a>Permitir conexiones al servicio en la nube Microsoft Defender Antivirus
 
-El servicio en la nube Microsoft Defender Antivirus proporciona una protección rápida y segura para los puntos de conexión. Es opcional habilitar el servicio de protección entregado en la nube. Microsoft Defender se recomienda el servicio en la nube antivirus, ya que proporciona una protección importante contra el malware en los puntos de conexión y la red. Para obtener más información, consulte [Habilitación de la protección proporcionada](enable-cloud-protection-microsoft-defender-antivirus.md) en la nube para habilitar el servicio con Intune, Configuration Manager de punto de conexión de Microsoft, directiva de grupo, cmdlets de PowerShell o clientes individuales en la aplicación Seguridad de Windows.
+El servicio en la nube Microsoft Defender Antivirus proporciona una protección rápida y segura para los puntos de conexión. Es opcional habilitar el servicio de protección entregado en la nube. Microsoft Defender se recomienda el servicio en la nube antivirus, ya que proporciona una protección importante contra el malware en los puntos de conexión y la red. Para obtener más información, consulte [Habilitación de la protección entregada](enable-cloud-protection-microsoft-defender-antivirus.md) en la nube para habilitar el servicio con Intune, Microsoft Endpoint Configuration Manager, समूह नीति, cmdlets de PowerShell o clientes individuales en la aplicación Seguridad de Windows.
 
 Después de habilitar el servicio, debe configurar la red o el firewall para permitir conexiones entre la red y los puntos de conexión. Dado que la protección es un servicio en la nube, los equipos deben tener acceso a Internet y llegar a los servicios en la nube de Microsoft. No excluya la dirección URL `*.blob.core.windows.net` de ningún tipo de inspección de red.
 
@@ -122,7 +122,7 @@ Se produce un mensaje similar si usa Internet Explorer:
    > [!NOTE]
    > Las versiones de Windows 10 anteriores a la versión 1703 tienen una interfaz de usuario diferente. Consulta [Microsoft Defender Antivirus en la aplicación Seguridad de Windows](microsoft-defender-security-center-antivirus.md).
 
-   El registro de eventos de Windows también mostrará [Windows Defender identificador de evento de cliente 1116](troubleshoot-microsoft-defender-antivirus.md).
+   El registro de eventos de Windows también mostrará [Windows डिफेन्डर identificador de evento de cliente 1116](troubleshoot-microsoft-defender-antivirus.md).
 
     > [!TIP]
     > Si busca información relacionada con el antivirus para otras plataformas, consulte:
@@ -138,5 +138,5 @@ Se produce un mensaje similar si usa Internet Explorer:
 ## <a name="see-also"></a>Vea también
 
 - [Configuración del proxy de dispositivo y la conectividad a Internet para Microsoft Defender para punto de conexión](configure-proxy-internet.md)
-- [Usar directiva de grupo configuración para configurar y administrar Microsoft Defender Antivirus](use-group-policy-microsoft-defender-antivirus.md)
+- [Usar समूह नीति configuración para configurar y administrar Microsoft Defender Antivirus](use-group-policy-microsoft-defender-antivirus.md)
 - [Cambios importantes en el punto de conexión de Microsoft Active Protection Services](https://techcommunity.microsoft.com/t5/Configuration-Manager-Archive/Important-changes-to-Microsoft-Active-Protection-Service-MAPS/ba-p/274006) 

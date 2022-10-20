@@ -10,22 +10,22 @@ ms.topic: reference
 ms.service: O365-seccomp
 ms.localizationpriority: medium
 ms.collection:
-- M365-security-compliance
+- purview-compliance
 - m365solution-mip
 - m365initiative-compliance
-- Strat_O365_IP
+- tier1
 search.appverid:
 - MET150
 - MOE150
 ms.assetid: 862cbe93-4268-4ef9-ba79-277545ecf221
 description: Obtenga información sobre los distintos certificados, tecnologías y conjuntos de cifrado de seguridad de la capa de transporte (TLS) que se usan para el cifrado en Office 365 y Microsoft 365.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 6b5df1f9e983ab2e8add09b50c2dfbd30dc1243e
-ms.sourcegitcommit: 437461fa1d38ff9bb95dd8a1c5f0b94e8111ada2
+ms.openlocfilehash: a26d54a4532c7c6fe5c07f59368bd143a53b5285
+ms.sourcegitcommit: 0d8fb571024f134d7480fe14cffc5e31a687d356
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/14/2022
-ms.locfileid: "67679315"
+ms.lasthandoff: 10/20/2022
+ms.locfileid: "68644755"
 ---
 # <a name="technical-reference-details-about-encryption"></a>Información de referencia técnica sobre el cifrado
 
@@ -34,6 +34,8 @@ Consulte este artículo para obtener información sobre los certificados, las te
 - Si busca información general, consulte [Cifrado en Office 365](encryption.md).
 - Si busca información de configuración, consulte [Configuración del cifrado en Office 365 Enterprise](set-up-encryption.md).
 - Para obtener información sobre los conjuntos de cifrado compatibles con versiones específicas de Windows, consulte [Conjuntos de cifrado en TLS/SSL (Schannel SSP).](/windows/desktop/SecAuthN/cipher-suites-in-schannel)
+
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
 
 ## <a name="microsoft-office-365-certificate-ownership-and-management"></a>Propiedad y administración de certificados de Microsoft Office 365
 
@@ -80,10 +82,10 @@ Office 365 responde a una solicitud de conexión al intentar conectarse primero 
 |:-----|:-----|:-----|:-----|:-----|
 | TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384  <br/> | ECDH/192  <br/> | Yes  <br/> | AES/256  <br/> | RSA/112  <br/> |
 | TLS_ECDHE_RSA_WITH_AES_128_GCM_SHA256  <br/> | ECDH/128  <br/> | Yes  <br/> | AES/128  <br/> | RSA/112  <br/> |
-| TLS_ECDHE_RSA_WITH_AES_256_CBC_SHA384  <br/> | ECDH/192  <br/> | Yes  <br/> | AES/256  <br/> | RSA/112  <br/> |
-| TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA256  <br/> | ECDH/128  <br/> | Yes  <br/> | AES/128  <br/> | RSA/112  <br/> |
-| TLS_ECDHE_RSA_WITH_AES_256_CBC_SHA     <br/> | ECDH/192  <br/> | Yes  <br/> | AES/256  <br/> | RSA/112  <br/> |
-| TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA     <br/> | ECDH/128  <br/> | Yes  <br/> | AES/128  <br/> | RSA/112  <br/> |
+| TLS_ECDHE_RSA_WITH_AES_256_CBC_SHA384  <br/> | ECDH/192  <br/> | Sí  <br/> | AES/256  <br/> | RSA/112  <br/> |
+| TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA256  <br/> | ECDH/128  <br/> | Sí  <br/> | AES/128  <br/> | RSA/112  <br/> |
+| TLS_ECDHE_RSA_WITH_AES_256_CBC_SHA     <br/> | ECDH/192  <br/> | Sí  <br/> | AES/256  <br/> | RSA/112  <br/> |
+| TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA     <br/> | ECDH/128  <br/> | Sí  <br/> | AES/128  <br/> | RSA/112  <br/> |
 | TLS_RSA_WITH_AES_256_GCM_SHA384        <br/> | RSA/112   <br/> | No   <br/> | AES/256  <br/> | RSA/112  <br/> |
 | TLS_RSA_WITH_AES_128_GCM_SHA256        <br/> | RSA/112   <br/> | No   <br/> | AES/256  <br/> | RSA/112  <br/> |
 

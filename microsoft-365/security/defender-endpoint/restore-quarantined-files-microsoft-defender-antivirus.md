@@ -1,6 +1,6 @@
 ---
 title: Restaurar archivos en cuarentena en el Antivirus de Windows Defender
-description: Puede restaurar archivos y carpetas que el Antivirus de Microsoft Defender ha puesto en cuarentena.
+description: Puede restaurar archivos y carpetas que Microsoft Defender Antivirus pusieron en cuarentena.
 keywords: ''
 ms.service: microsoft-365-security
 ms.mktglfcycl: manage
@@ -14,15 +14,17 @@ ms.date: 10/19/2021
 ms.reviewer: ''
 manager: dansimp
 ms.subservice: mde
-ms.topic: article
-ms.collection: M365-security-compliance
+ms.topic: conceptual
+ms.collection:
+- m365-security
+- tier2
 search.appverid: met150
-ms.openlocfilehash: edc40d6c2d16fef634fdb051beb52c9b1abbf162
-ms.sourcegitcommit: 9b133379196da2b3a4bb311b07ff274f43780f68
+ms.openlocfilehash: b6beeb4039891403ac8645117d4c55f0c2be9b51
+ms.sourcegitcommit: 0d8fb571024f134d7480fe14cffc5e31a687d356
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/14/2022
-ms.locfileid: "67687777"
+ms.lasthandoff: 10/20/2022
+ms.locfileid: "68626037"
 ---
 # <a name="restore-quarantined-files-in-microsoft-defender-antivirus"></a>Restaurar archivos en cuarentena en el Antivirus de Windows Defender
 
@@ -37,7 +39,7 @@ ms.locfileid: "67687777"
 **Plataformas**
 - Windows
 
-Si Antivirus de Microsoft Defender está configurado para detectar y corregir amenazas en el dispositivo, Antivirus de Microsoft Defender pone en cuarentena los archivos sospechosos. Si está seguro de que un archivo en cuarentena no es una amenaza, puede restaurarlo.
+Si Microsoft Defender Antivirus está configurado para detectar y corregir amenazas en el dispositivo, Microsoft Defender Antivirus pone en cuarentena los archivos sospechosos. Si está seguro de que un archivo en cuarentena no es una amenaza, puede restaurarlo.
 
 1. Abra **Seguridad de Windows**.
 2. Seleccione **Virus & protección contra amenazas** y, a continuación, haga clic en **Historial de protección**.
@@ -63,4 +65,4 @@ Si Antivirus de Microsoft Defender está configurado para detectar y corregir am
 - [Revisión de los resultados del examen](review-scan-results-microsoft-defender-antivirus.md)
 - [Configuración y validación de exclusiones basadas en el nombre de archivo, la extensión y la ubicación de la carpeta](configure-extension-file-exclusions-microsoft-defender-antivirus.md)
 - [Configuración y validación de exclusiones para archivos abiertos por procesos](configure-process-opened-file-exclusions-microsoft-defender-antivirus.md)
-- [Configuración de exclusiones del Antivirus de Microsoft Defender en Windows Server](configure-server-exclusions-microsoft-defender-antivirus.md)
+- [Configuración de exclusiones de antivirus de Microsoft Defender en Windows Server](configure-server-exclusions-microsoft-defender-antivirus.md)

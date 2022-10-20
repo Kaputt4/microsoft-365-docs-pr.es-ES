@@ -22,12 +22,12 @@ search.appverid:
 - MOE150
 ms.assetid: 84acd4fc-6eec-4d00-8bed-568f036ae2af
 description: Obtenga información sobre cómo comprobar su dominio y configurar registros DNS para correo electrónico, Skype Empresarial En línea y otros servicios en Cloudflare para Microsoft.
-ms.openlocfilehash: 22cbf5478bf7dab301eb29854755606970324389
-ms.sourcegitcommit: 0b7070ec119e00e0dafe030bbfbef0ae5c9afa19
+ms.openlocfilehash: b0945bb5cc6a3ac975692fc1857f29a5fb9fa1e0
+ms.sourcegitcommit: 0d8fb571024f134d7480fe14cffc5e31a687d356
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/29/2022
-ms.locfileid: "68187347"
+ms.lasthandoff: 10/20/2022
+ms.locfileid: "68630016"
 ---
 # <a name="connect-your-dns-records-at-cloudflare-to-microsoft-365"></a>Conexión de los registros DNS en Cloudflare a Microsoft 365
 
@@ -263,7 +263,7 @@ Solo seleccione esta opción si su organización usa Skype Empresarial para serv
     |Tipo|Nombre|Servicio|Protocolo|TTL|Prioridad|Peso|Puerto|Target|
     |---|---|---|---|---|---|---|---|---|
     |SRV|Use su *domain_name*; por ejemplo, contoso.com|_sip|TLS|30 minutos|100|1|443|sipfed.online.lync.com|
-    |SRV|_sipfederationtls|TCP|Use su *domain_name*; por ejemplo, contoso.com|30 minutos|100|1|5061|sipfed.online.lync.com|
+    |SRV|Use su *domain_name*; por ejemplo, contoso.com|_sipfederationtls|TCP|30 minutos|100|1|5061|sipfed.online.lync.com|
 
 1. Seleccione **Guardar**.
 
@@ -306,11 +306,11 @@ Solo seleccione esta opción si su organización usa Skype Empresarial para serv
 > [!NOTE]
 > Typically it takes about 15 minutes for DNS changes to take effect. However, it can occasionally take longer for a change you've made to update across the Internet's DNS system. If you're having trouble with mail flow or other issues after adding DNS records, see [Troubleshoot issues after changing your domain name or DNS records](../get-help-with-domains/find-and-fix-issues.md).
 
-## <a name="advanced-option-intune-and-mobile-device-management-for-microsoft-365"></a>Opción avanzada: Intune y mobile Administración de dispositivos para Microsoft 365
+## <a name="advanced-option-intune-and-mobile-device-management-for-microsoft-365"></a>Opción avanzada: Intune y Administración de dispositivos móviles para Microsoft 365
 
-Este servicio le ayuda a proteger y administrar de forma remota los dispositivos móviles que se conectan a su dominio. Mobile Administración de dispositivos necesita 2 registros CNAME para que los usuarios puedan inscribir dispositivos en el servicio.
+Este servicio le ayuda a proteger y administrar de forma remota los dispositivos móviles que se conectan a su dominio. Mobile Device Management necesita 2 registros CNAME para que los usuarios puedan inscribir dispositivos en el servicio.
 
-### <a name="add-the-two-required-cname-records-for-mobile-device-management"></a>Agregue los dos registros CNAME necesarios para Mobile Administración de dispositivos
+### <a name="add-the-two-required-cname-records-for-mobile-device-management"></a>Agregar los dos registros CNAME necesarios para la administración de dispositivos móviles
 
 1. Para empezar, vaya a la página de dominios de Cloudflare mediante [este vínculo](https://www.cloudflare.com/a/login). Se le pedirá que inicie sesión primero .
 

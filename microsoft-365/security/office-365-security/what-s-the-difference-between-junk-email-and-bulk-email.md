@@ -19,12 +19,12 @@ ms.custom:
 description: Los administradores pueden aprender sobre las diferencias entre correo no deseado (correo no deseado) y correo electrónico masivo (correo gris) en Exchange Online Protection (EOP).
 ms.subservice: mdo
 ms.service: microsoft-365-security
-ms.openlocfilehash: 6613502c858a87096b4220b17d94b8821b0f9835
-ms.sourcegitcommit: 12af9e8e3a6eaa090fda9e98ccb831dff65863a4
+ms.openlocfilehash: 5adbe73cc7c1970c0cdc9698cf8868d42a9541f7
+ms.sourcegitcommit: 0d8fb571024f134d7480fe14cffc5e31a687d356
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/27/2022
-ms.locfileid: "68066154"
+ms.lasthandoff: 10/20/2022
+ms.locfileid: "68633094"
 ---
 # <a name="whats-the-difference-between-junk-email-and-bulk-email-in-eop"></a>¿Cuál es la diferencia entre el correo electrónico no deseado y el correo electrónico masivo en EOP?
 
@@ -81,4 +81,4 @@ Las organizaciones sin Defender para Office 365 Plan 2 pueden probar las caracte
 
 3. Una vez que haya identificado remitentes deseados y no deseados, ajuste el umbral masivo al nivel deseado. Si hay remitentes masivos con puntuación BCL que no caben dentro del umbral masivo, [envíe los mensajes a Microsoft para su análisis](allow-block-email-spoof.md#use-the-microsoft-365-defender-portal-to-create-allow-entries-for-domains-and-email-addresses-in-the-submissions-portal), lo que agrega el remitente como una entrada permitida a la lista de inquilinos permitidos o bloqueados.
 
-Los administradores pueden seguir los [valores de umbral masivo recomendados](/microsoft-365/security/office-365-security/recommended-settings-for-eop-and-office365.md#anti-spam-anti-malware-and-anti-phishing-protection-in-eop) o elegir un valor de umbral masivo que se adapte a las necesidades de su organización.
+Los administradores pueden seguir los [valores de umbral masivo recomendados](recommended-settings-for-eop-and-office365.md#anti-spam-anti-malware-and-anti-phishing-protection-in-eop) o elegir un valor de umbral masivo que se adapte a las necesidades de su organización.

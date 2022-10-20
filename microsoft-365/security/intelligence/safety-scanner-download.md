@@ -14,14 +14,14 @@ audience: ITPro
 ms.collection:
 - m365-security
 - tier2
-ms.topic: article
+ms.topic: conceptual
 search.appverid: met150
-ms.openlocfilehash: 6d733c7b27528a25097bd8aa666f14a60989cbfc
-ms.sourcegitcommit: 4e42bafee965446f44f7f57d1defed2b9b24fce8
+ms.openlocfilehash: de510420a3d4f91fc713e2514f9d0f88b609d479
+ms.sourcegitcommit: 0d8fb571024f134d7480fe14cffc5e31a687d356
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/30/2022
-ms.locfileid: "68221046"
+ms.lasthandoff: 10/20/2022
+ms.locfileid: "68625157"
 ---
 # <a name="microsoft-safety-scanner-download"></a>Descargar el Examen de seguridad de Microsoft
 
@@ -46,7 +46,7 @@ Examen de seguridad de Microsoft es una herramienta de examen diseñada para bus
 
 ## <a name="system-requirements"></a>Requisitos del sistema
 
-Examen de seguridad ayuda a quitar software malintencionado de equipos que ejecutan Windows 11, Windows 10, Windows 10 Tech Preview, Windows 8.1, Windows 8, Windows 7, Windows Server 2019, Windows Server 2016, Windows Server Tech Preview, Windows Server 2012 R2, Windows Server 2012, Windows Server 2008 R2 o Windows Server 2008. Para obtener más información, consulte la [directiva de ciclo de vida de Microsoft](/lifecycle/).
+Safety Scanner ayuda a quitar software malintencionado de equipos que ejecutan Windows 11, Windows 10, Windows 10 Tech Preview, Windows 8.1, Windows 8, Windows 7, Windows Server 2019, Windows Server 2016, Windows Server Tech Preview, Windows Server 2012 R2, Windows Server 2012 o Windows Server 2008 R2. Para obtener más información, consulte la [directiva de ciclo de vida de Microsoft](/lifecycle/).
 
 ## <a name="how-to-run-a-scan"></a>Cómo ejecutar un examen
 

@@ -12,18 +12,18 @@ ms.reviewer: dansimp
 manager: dansimp
 audience: ITPro
 ms.subservice: mde
-ms.topic: article
+ms.topic: conceptual
 ms.collection:
 - m365-security
 - tier3
 ms.custom: admindeeplinkDEFENDER
 search.appverid: met150
-ms.openlocfilehash: c93cb1d3280976337a6174f15c2a668b9d84091b
-ms.sourcegitcommit: 4e42bafee965446f44f7f57d1defed2b9b24fce8
+ms.openlocfilehash: 10f47266abe3f43dfedd6115a89c79314721d658
+ms.sourcegitcommit: 0d8fb571024f134d7480fe14cffc5e31a687d356
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/30/2022
-ms.locfileid: "68231756"
+ms.lasthandoff: 10/20/2022
+ms.locfileid: "68632698"
 ---
 # <a name="device-control-printer-protection"></a>Protección de la impresora de control de dispositivo
 
@@ -63,11 +63,11 @@ Asegúrese de que los dispositivos Windows 10 o Windows 11 que tiene previsto im
     - Para Windows 1909: instalar Windows Update [KB5003212](https://support.microsoft.com/topic/may-20-2021-kb5003212-os-build-18363-1593-preview-05381524-8380-4b30-b783-e330cad3d4a1)
     - Para Windows 2004 o posterior
 
-2. Si tiene previsto implementar la directiva a través de directiva de grupo, el dispositivo debe incorporarse a Microsoft Defender para punto de conexión unido; si tiene previsto implementar la directiva a través de Microsoft Endpoint Manager, el dispositivo debe estar unido mediante el uso de Microsoft Intune.
+2. Si tiene previsto implementar la directiva a través de समूह नीति, el dispositivo debe incorporarse a Microsoft Defender para punto de conexión unido; si tiene previsto implementar la directiva a través de Microsoft Endpoint Manager, el dispositivo debe unirse mediante Microsoft Intune.
 
 ## <a name="deploy-device-control-printer-protection-policy"></a>Implementación de la directiva de protección de impresora de control de dispositivos
 
-Puede implementar la directiva mediante directiva de grupo o Intune.
+Puede implementar la directiva mediante समूह नीति o Intune.
 
 <br>
 
@@ -113,11 +113,11 @@ La cadena de compatibilidad de CSP con impresoras USB aprobadas a través de la 
 
 :::image type="content" source="../../media/editrow.png" alt-text="Panel Editar fila" lightbox="../../media/editrow.png":::
 
-## <a name="deploy-policy-via-group-policy"></a>Implementación de directivas a través de directiva de grupo
+## <a name="deploy-policy-via-group-policy"></a>Implementación de directivas a través de समूह नीति
 
-Si el dispositivo no está Intune unido, también puede implementar la directiva a través de directiva de grupo.
+Si el dispositivo no está Intune unido, también puede implementar la directiva a través de समूह नीति.
 
-### <a name="scenario-1-block-people-from-printing-via-any-non-corporate-printer-using-group-policy"></a>Escenario 1: Impedir que los usuarios impriman a través de cualquier impresora no corporativa mediante directiva de grupo
+### <a name="scenario-1-block-people-from-printing-via-any-non-corporate-printer-using-group-policy"></a>Escenario 1: Impedir que los usuarios impriman a través de cualquier impresora no corporativa mediante समूह नीति
 
 - Aplicar directiva a través de la máquina:
 
@@ -125,11 +125,11 @@ Si el dispositivo no está Intune unido, también puede implementar la directiva
 
 - Aplicar directiva sobre el usuario:
 
-  Plantillas \> administrativas de configuración \> de usuario Panel de control \> impresoras: Habilitar restricciones de impresión de control de dispositivos
+  Impresoras del Panel \> de control de plantillas \> administrativas de configuración \> de usuario: habilitar restricciones de impresión de control de dispositivos
 
 :::image type="content" source="../../media/enable-device-ctrl-printing-restrictions.png" alt-text="Panel Habilitar restricciones de impresión de control de dispositivos" lightbox="../../media/enable-device-ctrl-printing-restrictions.png":::
 
-### <a name="scenario-2-allow-specific-approved-usb-printers-using-group-policy"></a>Escenario 2: Permitir impresoras USB aprobadas específicas mediante directiva de grupo
+### <a name="scenario-2-allow-specific-approved-usb-printers-using-group-policy"></a>Escenario 2: Permitir impresoras USB aprobadas específicas mediante समूह नीति
 
 - Aplicar directiva a través de la máquina:
 
@@ -137,7 +137,7 @@ Si el dispositivo no está Intune unido, también puede implementar la directiva
 
 - Aplicar directiva sobre el usuario:
 
-  Plantillas \> administrativas de configuración \> de usuario Panel de control \> impresoras: lista de dispositivos de impresión conectados a USB aprobados
+  Impresoras del Panel \> de control de plantillas \> administrativas de configuración \> de usuario: lista de dispositivos de impresión conectados a USB aprobados
 
 :::image type="content" source="../../media/list-of-approved-connected-print-devices.png" alt-text="Lista de dispositivos de impresión conectados a USB aprobados" lightbox="../../media/list-of-approved-connected-print-devices.png":::
 

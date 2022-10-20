@@ -14,16 +14,16 @@ audience: ITPro
 ms.collection:
 - m365-security
 - tier3
-ms.topic: article
+ms.topic: conceptual
 ms.subservice: mde
 ms.custom: api
 search.appverid: met150
-ms.openlocfilehash: 95651f2a4c67a143e439e74af329e1b92c0c99ce
-ms.sourcegitcommit: 4e42bafee965446f44f7f57d1defed2b9b24fce8
+ms.openlocfilehash: e0ec590e28a656dd849e71ca461a613c2fd9330e
+ms.sourcegitcommit: 0d8fb571024f134d7480fe14cffc5e31a687d356
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/30/2022
-ms.locfileid: "68233890"
+ms.lasthandoff: 10/20/2022
+ms.locfileid: "68628101"
 ---
 # <a name="configure-microsoft-defender-for-endpoint-to-stream-advanced-hunting-events-to-your-storage-account"></a>Configuración de Microsoft Defender para punto de conexión para transmitir eventos de búsqueda avanzada a la cuenta de almacenamiento
 
@@ -53,7 +53,7 @@ ms.locfileid: "68233890"
 
 5. Elija **Reenviar eventos a Azure Storage**.
 
-6. Escriba **el identificador de recurso de la cuenta de almacenamiento**. Para obtener el **identificador de recurso de la cuenta de almacenamiento**, vaya a la página Cuenta de almacenamiento en [Azure Portal](https://ms.portal.azure.com/) \> pestaña \> propiedades copie el texto en Id. de **recurso de la cuenta de almacenamiento**:
+6. Escriba **el identificador de recurso de la cuenta de almacenamiento**. Para obtener el **identificador de recurso de la cuenta de almacenamiento**, vaya a la página Cuenta de almacenamiento en la pestaña \> de propiedades de [Azure Portal](https://ms.portal.azure.com/) \> y copie el texto en Id. de **recurso de la cuenta de almacenamiento**:
 
    :::image type="content" source="images/storage-account-resource-id.png" alt-text="Event Hubs con id. de recurso1" lightbox="images/storage-account-resource-id.png":::
 

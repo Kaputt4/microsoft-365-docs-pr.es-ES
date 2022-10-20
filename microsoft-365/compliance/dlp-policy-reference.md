@@ -21,12 +21,12 @@ ms.collection:
 recommendations: false
 description: Componente de directiva DLP y referencia de configuración. En este artículo se proporciona una anatomía detallada de una directiva DLP.
 ms.custom: seo-marvel-apr2021
-ms.openlocfilehash: d566d924240878e967a308b5940989c949ce76b4
-ms.sourcegitcommit: d0557f757cfa48330ed57e966033891d10f03688
+ms.openlocfilehash: 0d5f89887c241ee6dbfa7b85ee515b2ebca3abc0
+ms.sourcegitcommit: 0d8fb571024f134d7480fe14cffc5e31a687d356
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/06/2022
-ms.locfileid: "68492580"
+ms.lasthandoff: 10/20/2022
+ms.locfileid: "68634814"
 ---
 # <a name="data-loss-prevention-policy-reference"></a>Referencia de directiva de prevención de pérdida de datos
 
@@ -140,8 +140,7 @@ Las directivas DLP detectan elementos confidenciales si coinciden con un tipo de
 |Repositorios locales| Sí| Sí| No|
 |Power BI|Sí | Sí| No|
 
-> [!NOTE]
-> DLP admite (en versión preliminar) el uso de clasificadores entrenables como condición para detectar documentos confidenciales. El contenido se puede definir mediante clasificadores entrenables en Exchange Online, sitios de SharePoint Online, cuentas de OneDrive para la Empresa, chat y canales de Teams y dispositivos. Para obtener más información, vea [Clasificadores entrenables](classifier-learn-about.md).
+DLP admite el uso de clasificadores entrenables como condición para detectar documentos confidenciales. El contenido se puede definir mediante clasificadores entrenables en Exchange Online, sitios de SharePoint Online, cuentas de OneDrive para la Empresa, chat y canales de Teams y dispositivos. Para obtener más información, vea [Clasificadores entrenables](classifier-learn-about.md).
 
 > [!NOTE]
 > DLP admite la detección de etiquetas de confidencialidad en correos electrónicos y datos adjuntos. Para obtener más información, vea [Usar etiquetas de confidencialidad como condiciones en las directivas DLP](dlp-sensitivity-label-as-condition.md#use-sensitivity-labels-as-conditions-in-dlp-policies).
@@ -224,7 +223,7 @@ Las condiciones son inclusivas y son donde se define lo que quiere que busque la
 - [tipos de información confidencial](sensitive-information-type-learn-about.md#learn-about-sensitive-information-types)
 - [etiquetas de confidencialidad](sensitivity-labels.md)
 - [etiquetas de retención](retention.md#using-a-retention-label-as-a-condition-in-a-dlp-policy)
-- [Clasificadores entrenables](classifier-learn-about.md) (en versión preliminar)
+- [Clasificadores entrenables](classifier-learn-about.md) 
 
 dependiendo de las [ubicaciones](#location-support-for-how-content-can-be-defined) a las que elija aplicar la directiva.
 

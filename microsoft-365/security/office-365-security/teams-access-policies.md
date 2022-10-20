@@ -4,7 +4,7 @@ description: Describe las directivas de recomendaciones de Microsoft sobre cómo
 author: MicrosoftHeidi
 manager: serdars
 ms.service: microsoft-365-security
-ms.topic: article
+ms.topic: conceptual
 audience: Admin
 f1.keywords:
 - NOCSH
@@ -23,16 +23,16 @@ ms.collection:
 - highpri
 ms.subservice: mdo
 search.appverid: met150
-ms.openlocfilehash: 45c09403d674bbad9f75a45b1c9c69433256c174
-ms.sourcegitcommit: 12af9e8e3a6eaa090fda9e98ccb831dff65863a4
+ms.openlocfilehash: 828ee351feaeabceea7a2540669e99524f8663c7
+ms.sourcegitcommit: 0d8fb571024f134d7480fe14cffc5e31a687d356
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/27/2022
-ms.locfileid: "68075106"
+ms.lasthandoff: 10/20/2022
+ms.locfileid: "68632478"
 ---
 # <a name="policy-recommendations-for-securing-teams-chats-groups-and-files"></a>Recomendaciones de directiva para proteger chats, grupos y archivos de Teams
 
-En este artículo se describe cómo implementar las directivas recomendadas Confianza cero identidad y acceso a dispositivos para proteger los chats, grupos y contenido de Microsoft Teams, como archivos y calendarios. Esta guía se basa en las [directivas comunes de identidad y acceso a](identity-access-policies.md) dispositivos, con información adicional específica de Teams. Dado que Teams se integra con nuestros otros productos, consulte también [Recomendaciones de directivas para proteger sitios y archivos de SharePoint y](sharepoint-file-access-policies.md) [Recomendaciones de directivas para proteger el correo electrónico](secure-email-recommended-policies.md).
+En este artículo se describe cómo implementar las directivas recomendadas de identidad de confianza cero y acceso a dispositivos para proteger los chats, grupos y contenido de Microsoft Teams, como archivos y calendarios. Esta guía se basa en las [directivas comunes de identidad y acceso a](identity-access-policies.md) dispositivos, con información adicional específica de Teams. Dado que Teams se integra con nuestros otros productos, consulte también [Recomendaciones de directivas para proteger sitios y archivos de SharePoint y](sharepoint-file-access-policies.md) [Recomendaciones de directivas para proteger el correo electrónico](secure-email-recommended-policies.md).
 
 Estas recomendaciones se basan en tres niveles diferentes de seguridad y protección para Teams que se pueden aplicar en función de la granularidad de sus necesidades: punto de partida, empresa y seguridad especializada. Puede obtener más información sobre estos niveles de seguridad y las directivas recomendadas a las que hacen referencia estas recomendaciones en las [configuraciones de acceso a dispositivos y identidades](microsoft-365-policies-configurations.md).
 

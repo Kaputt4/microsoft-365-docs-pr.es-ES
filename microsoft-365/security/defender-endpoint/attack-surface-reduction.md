@@ -16,17 +16,17 @@ manager: dansimp
 ms.custom:
 - asr
 - admindeeplinkDEFENDER
-ms.topic: article
+ms.topic: conceptual
 ms.collection:
 - m365-security
 - tier2
 search.appverid: met150
-ms.openlocfilehash: c0bd85618ec90b193728b9705d473eadc45712af
-ms.sourcegitcommit: b9282493c371d59c2e583b9803825096499b5e2c
+ms.openlocfilehash: e8c0e3ab05f4f6cf5f8d04dbf7ee4eff3a34a99c
+ms.sourcegitcommit: 0d8fb571024f134d7480fe14cffc5e31a687d356
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/29/2022
-ms.locfileid: "68148733"
+ms.lasthandoff: 10/20/2022
+ms.locfileid: "68647351"
 ---
 # <a name="attack-surface-reduction-rules-overview"></a>Introducción a las reglas de reducción de superficie expuesta a ataques
 
@@ -98,7 +98,7 @@ Para obtener más información y obtener las actualizaciones, consulte [Actualiz
 
 ### <a name="cases-where-warn-mode-is-not-supported"></a>Casos en los que no se admite el modo de advertencia
 
-El modo de advertencia no se admite para tres reglas de reducción de superficie expuesta a ataques al configurarlas en Microsoft Endpoint Manager. (Si usas directiva de grupo para configurar las reglas de reducción de superficie expuesta a ataques, se admite el modo de advertencia). Las tres reglas que no admiten el modo de advertencia al configurarlas en Microsoft Endpoint Manager son las siguientes:
+El modo de advertencia no se admite para tres reglas de reducción de superficie expuesta a ataques al configurarlas en Microsoft Endpoint Manager. (Si usas समूह नीति para configurar las reglas de reducción de superficie expuesta a ataques, se admite el modo de advertencia). Las tres reglas que no admiten el modo de advertencia al configurarlas en Microsoft Endpoint Manager son las siguientes:
 
 - [Impedir que JavaScript o VBScript inicien contenido ejecutable descargado](attack-surface-reduction-rules-reference.md#block-javascript-or-vbscript-from-launching-downloaded-executable-content) (GUID `d3e037e1-3eb8-44c8-a917-57927947596d`)
 - [Bloquear la persistencia a través de la suscripción de eventos WMI](attack-surface-reduction-rules-reference.md#block-persistence-through-wmi-event-subscription) (GUID `e6db77e5-3df2-4cf1-b95a-636979351e5b`)
@@ -143,7 +143,7 @@ Aunque las reglas de reducción de superficie expuesta a ataques no requieren un
 - Supervisión, análisis y flujos de trabajo disponibles en [Defender para punto de conexión](microsoft-defender-endpoint.md)
 - Funcionalidades de generación de informes y configuración en [Microsoft 365 Defender](/microsoft-365/security/defender/overview-security-center).
 
-Estas funcionalidades avanzadas no están disponibles con una licencia de Windows Professional o Windows E3. Sin embargo, si tiene esas licencias, puede usar los registros Visor de eventos y Microsoft Defender Antivirus para revisar los eventos de regla de reducción de la superficie expuesta a ataques.
+Estas funcionalidades avanzadas no están disponibles con una licencia de Windows Professional o Windows E3. Sin embargo, si tiene esas licencias, puede usar los registros घटना दर्शक y Microsoft Defender Antivirus para revisar los eventos de la regla de reducción de la superficie expuesta a ataques.
 
 ## <a name="review-attack-surface-reduction-events-in-the-microsoft-365-defender-portal"></a>Revisar los eventos de reducción de superficie expuesta a ataques en el portal de Microsoft 365 Defender
 
@@ -158,13 +158,13 @@ DeviceEvents
 | where ActionType startswith 'Asr'
 ```
 
-## <a name="review-attack-surface-reduction-events-in-windows-event-viewer"></a>Revisar los eventos de reducción de superficie expuesta a ataques en Windows Visor de eventos
+## <a name="review-attack-surface-reduction-events-in-windows-event-viewer"></a>Revisar los eventos de reducción de superficie expuesta a ataques en Windows घटना दर्शक
 
 Puede revisar el registro de eventos de Windows para ver los eventos generados por las reglas de reducción de superficie expuesta a ataques:
 
 1. Descargue el [paquete de evaluación](https://aka.ms/mp7z2w) y extraiga el archivo *cfa-events.xml* en una ubicación de fácil acceso en el dispositivo.
 
-2. Escriba las palabras *, Visor de eventos*, en el menú Inicio para abrir la Visor de eventos de Windows.
+2. Escriba las palabras *, घटना दर्शक*, en el menú Inicio para abrir el घटना दर्शक de Windows.
 
 3. En **Acciones**, seleccione **Importar vista personalizada...**.
 

@@ -7,7 +7,7 @@ ms.mktglfcycl: manage
 ms.sitesec: library
 ms.pagetype: security
 ms.localizationpriority: medium
-ms.topic: article
+ms.topic: conceptual
 author: denisebmsft
 ms.author: deniseb
 ms.reviewer: pahuijbr
@@ -18,12 +18,12 @@ ms.collection:
 - m365-security
 - tier2
 search.appverid: met150
-ms.openlocfilehash: c794e03ec7879c78d2023cee3f54bba830831a2a
-ms.sourcegitcommit: 99b174a8d431092b3cf7d650593248671297fd91
+ms.openlocfilehash: 10d29ea309b57901d4d53f3203cd25d568146c57
+ms.sourcegitcommit: 0d8fb571024f134d7480fe14cffc5e31a687d356
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/30/2022
-ms.locfileid: "68300352"
+ms.lasthandoff: 10/20/2022
+ms.locfileid: "68635474"
 ---
 # <a name="manage-the-sources-for-microsoft-defender-antivirus-protection-updates"></a>Administrar el original para las actualizaciones de protección del Antivirus de Windows Defender
 
@@ -77,7 +77,7 @@ Hay cinco ubicaciones donde puede especificar dónde debe obtener actualizacione
 
 (<a id="fn1">2</a>) Es posible que la directiva y el registro aparezcan como inteligencia de seguridad Centro de protección contra malware de Microsoft (MMPC), su nombre anterior.
 
-Para garantizar el mejor nivel de protección, Microsoft Update permite versiones rápidas, lo que significa descargas más pequeñas con frecuencia. El servicio Windows Server Update, el Configuration Manager de punto de conexión de Microsoft, las actualizaciones de inteligencia de seguridad de Microsoft y los orígenes de actualizaciones de plataforma ofrecen actualizaciones menos frecuentes. Por lo tanto, el delta puede ser mayor, lo que da lugar a descargas más grandes.
+Para garantizar el mejor nivel de protección, Microsoft Update permite versiones rápidas, lo que significa descargas más pequeñas con frecuencia. El servicio Windows Server Update, Microsoft Endpoint Configuration Manager, las actualizaciones de inteligencia de seguridad de Microsoft y los orígenes de actualizaciones de plataforma ofrecen actualizaciones menos frecuentes. Por lo tanto, el delta puede ser mayor, lo que da lugar a descargas más grandes.
 
 > [!NOTE]
 > Las actualizaciones de plataforma contienen actualizaciones del motor y se publican con una cadencia mensual.
@@ -99,22 +99,22 @@ Cada origen tiene escenarios típicos que dependen de cómo se configura la red,
 |Microsoft Endpoint Manager|Usa Microsoft Endpoint Manager para actualizar los puntos de conexión.|
 |Actualizaciones de inteligencia de seguridad y actualizaciones de plataforma para Microsoft Defender Antivirus y otros antimalware de Microsoft (anteriormente conocido como MMPC)|[Asegúrese de que los dispositivos están actualizados para admitir SHA-2](https://support.microsoft.com/help/4472027/2019-sha-2-code-signing-support-requirement-for-windows-and-wsus). Microsoft Defender las actualizaciones de plataforma e inteligencia de seguridad antivirus se entregan a través de Windows Update, y a partir del lunes 21 de octubre de 2019, las actualizaciones de inteligencia de seguridad y las actualizaciones de la plataforma se firmarán exclusivamente en SHA-2. <br/>Descargue las últimas actualizaciones de protección debido a una infección reciente o para ayudar a aprovisionar una imagen fuerte y base para la [implementación de VDI](deployment-vdi-microsoft-defender-antivirus.md). Por lo general, esta opción solo se debe usar como origen de reserva final y no como origen principal. Solo se usará si las actualizaciones no se pueden descargar desde Windows Server Update Service o Microsoft Update durante [un número especificado de días](/microsoft-365/security/defender-endpoint/manage-outdated-endpoints-microsoft-defender-antivirus#set-the-number-of-days-before-protection-is-reported-as-out-of-date).|
 
-Puede administrar el orden en que se usan los orígenes de actualización con directiva de grupo, Configuration Manager de punto de conexión de Microsoft, cmdlets de PowerShell y WMI.
+Puede administrar el orden en que se usan los orígenes de actualización con समूह नीति, Microsoft Endpoint Configuration Manager, cmdlets de PowerShell y WMI.
 
 > [!IMPORTANT]
 > Si establece Windows Server Update Service como ubicación de descarga, debe aprobar las actualizaciones, independientemente de la herramienta de administración que use para especificar la ubicación. Puede configurar una regla de aprobación automática con Windows Server Update Service, lo que podría resultar útil a medida que las actualizaciones llegan al menos una vez al día. Para obtener más información, consulta [Sincronizar las actualizaciones de Endpoint Protection en el servicio de actualización de Windows Server independiente](/configmgr/protect/deploy-use/endpoint-definitions-wsus#to-synchronize-endpoint-protection-definition-updates-in-standalone-wsus).
 
 Los procedimientos de este artículo describen primero cómo establecer el orden y, a continuación, cómo configurar la opción **Recurso compartido** de archivos si la ha habilitado.
 
-## <a name="use-group-policy-to-manage-the-update-location"></a>Uso de directiva de grupo para administrar la ubicación de actualización
+## <a name="use-group-policy-to-manage-the-update-location"></a>Uso de समूह नीति para administrar la ubicación de actualización
 
-1. En la máquina de administración de directiva de grupo, abra la [consola de administración de directiva de grupo](/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/cc731212(v=ws.11)), haga clic con el botón derecho en el objeto directiva de grupo que desea configurar y haga clic en **Editar**.
+1. En la máquina de administración de समूह नीति, abra la [consola de administración de समूह नीति](/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/cc731212(v=ws.11)), haga clic con el botón derecho en el objeto de समूह नीति que desea configurar y haga clic en **Editar**.
 
-2. En el **Editor de administración de directiva de grupo** vaya a **Configuración del equipo**.
+2. En el **Editor de administración de समूह नीति** vaya a **Configuración del equipo**.
 
 3. Haga clic en **Directivas** y, a continuación, **en Plantillas administrativas**.
 
-4. Expanda el árbol a **componentes** \> **de Windows Windows Defender** \> **actualizaciones de firma** y configure los siguientes valores:
+4. Expanda el árbol a **componentes** \> **de Windows Windows डिफेन्डर** \> **actualizaciones de firma** y configure las siguientes opciones:
 
    1. Haga doble clic en **la opción Definir el orden de los orígenes para descargar las actualizaciones de inteligencia de seguridad** y establezca la opción **en Habilitado**.
 
@@ -164,9 +164,9 @@ SignatureDefinitionUpdateFileSharesSource
 
 Consulte los artículos siguientes para obtener más información:
 
-- [API Windows Defender WMIv2](/previous-versions/windows/desktop/defender/windows-defender-wmiv2-apis-portal)
+- [API Windows डिफेन्डर WMIv2](/previous-versions/windows/desktop/defender/windows-defender-wmiv2-apis-portal)
 
-## <a name="use-mobile-device-management-mdm-to-manage-the-update-location"></a>Uso de Mobile Administración de dispositivos (MDM) para administrar la ubicación de actualización
+## <a name="use-mobile-device-management-mdm-to-manage-the-update-location"></a>Uso de Administración de dispositivos móviles (MDM) para administrar la ubicación de actualización
 
 Consulte [CSP de directiva: Defender/SignatureUpdateFallbackOrder](/windows/client-management/mdm/policy-csp-defender#defender-signatureupdatefallbackorder) para obtener más información sobre cómo configurar MDM.
 

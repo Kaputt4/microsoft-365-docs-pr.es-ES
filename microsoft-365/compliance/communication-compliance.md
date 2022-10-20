@@ -23,12 +23,12 @@ ms.collection:
 search.appverid:
 - MET150
 - MOE150
-ms.openlocfilehash: 5082d07b9b0b0552917dff6071662ee713a7769b
-ms.sourcegitcommit: 04e517c7e00323b5c33d8ea937115725cf2cfd4d
+ms.openlocfilehash: 0c1950e2c3927db06143a63754ea61350b121d05
+ms.sourcegitcommit: 0d8fb571024f134d7480fe14cffc5e31a687d356
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/13/2022
-ms.locfileid: "68565085"
+ms.lasthandoff: 10/20/2022
+ms.locfileid: "68629333"
 ---
 # <a name="learn-about-communication-compliance"></a>Obtener más información sobre el cumplimiento de las comunicaciones
 
@@ -114,7 +114,7 @@ Los flujos de trabajo de corrección integrados le permiten identificar y tomar 
 - **Historial de usuarios**: vista histórica de todas las actividades de corrección de mensajes de usuario, como notificaciones y escalaciones anteriores para coincidencias de directivas, ahora proporciona a los revisores más contexto durante el proceso de flujo de trabajo de corrección. Las instancias de primera o repetición de coincidencias de directivas para los usuarios ahora se archivan y se pueden ver fácilmente.
 - **Notificación detectada por patrones**: muchas acciones de acoso e intimidación tienen lugar con el tiempo e implican instancias recurrentes del mismo comportamiento por parte de un usuario. El nuevo patrón de notificación detectada que se muestra en los detalles de la alerta ayuda a llamar la atención sobre estas alertas y este tipo de comportamiento.
 - **Traducción**: investigue rápidamente los detalles del mensaje en ocho idiomas mediante la compatibilidad con la traducción en el flujo de trabajo de corrección. Los mensajes de otros idiomas se convierten automáticamente en el idioma para mostrar del revisor.
-- **Detección de datos adjuntos**: examine, detecte e investigue el contenido vinculado (datos adjuntos modernos) de OneDrive y Microsoft Teams que coincidan con los clasificadores de directivas y las condiciones de los mensajes de Microsoft Teams. El contenido de los datos adjuntos se extrae automáticamente en un archivo de texto para una revisión y acción detalladas.
+- **Detección de datos adjuntos**: detecte, identifique e investigue contenido vinculado (datos adjuntos modernos) de OneDrive y Microsoft Teams que coincidan con los clasificadores de directivas y las condiciones de los mensajes de Microsoft Teams. El contenido de los datos adjuntos se extrae automáticamente en un archivo de texto para una revisión y acción detalladas.
 
 ### <a name="actionable-insights"></a>Detalles accionables.
 

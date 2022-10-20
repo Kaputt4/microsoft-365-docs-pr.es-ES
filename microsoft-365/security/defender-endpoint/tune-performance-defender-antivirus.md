@@ -15,15 +15,15 @@ manager: dansimp
 ms.collection:
 - m365-security
 - tier2
-ms.topic: article
+ms.topic: conceptual
 ms.subservice: mde
 search.appverid: met150
-ms.openlocfilehash: 4d7dbcd7199d7318243a5c1733303d24b494c5c8
-ms.sourcegitcommit: 4e42bafee965446f44f7f57d1defed2b9b24fce8
+ms.openlocfilehash: 3045797d0dedd900123d3a6b96b0bfefcf8f8d71
+ms.sourcegitcommit: 0d8fb571024f134d7480fe14cffc5e31a687d356
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/30/2022
-ms.locfileid: "68232592"
+ms.lasthandoff: 10/20/2022
+ms.locfileid: "68637318"
 ---
 # <a name="performance-analyzer-for-microsoft-defender-antivirus"></a>Analizador de rendimiento para Microsoft Defender Antivirus
 
@@ -146,7 +146,7 @@ El `New-MpPerformanceRecording` cmdlet recopila una grabación de rendimiento de
 
 Este `New-MpPerformanceRecording` cmdlet proporciona información sobre los archivos problemáticos que podrían provocar una degradación en el rendimiento de Microsoft Defender Antivirus. Esta herramienta se proporciona "AS IS" y no está pensada para proporcionar sugerencias sobre exclusiones. Las exclusiones pueden reducir el nivel de protección en los puntos de conexión. Las exclusiones, si las hubiera, deben definirse con precaución.
 
-Para obtener más información sobre el analizador de rendimiento, consulte [Analizador de rendimiento](/windows-hardware/test/wpt/windows-performance-analyzer) documentos.
+Para obtener más información sobre el analizador de rendimiento, consulte los documentos [del Analizador de rendimiento](/windows-hardware/test/wpt/windows-performance-analyzer) .
 
 > [!IMPORTANT]
 > Este cmdlet requiere privilegios de administrador con privilegios elevados.
@@ -285,7 +285,7 @@ El `Get-MpPerformanceReport` cmdlet analiza una grabación de rendimiento de ant
 
 El analizador de rendimiento proporciona información sobre los archivos problemáticos que podrían provocar una degradación en el rendimiento de Microsoft Defender Antivirus. Esta herramienta se proporciona "AS IS" y no está pensada para proporcionar sugerencias sobre exclusiones. Las exclusiones pueden reducir el nivel de protección en los puntos de conexión. Las exclusiones, si las hubiera, deben definirse con precaución.
 
-Para obtener más información sobre el analizador de rendimiento, consulte [Analizador de rendimiento](/windows-hardware/test/wpt/windows-performance-analyzer) documentos.
+Para obtener más información sobre el analizador de rendimiento, consulte los documentos [del Analizador de rendimiento](/windows-hardware/test/wpt/windows-performance-analyzer) .
 
 **Versiones admitidas del sistema operativo**:
 

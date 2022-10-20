@@ -24,12 +24,12 @@ ms.custom: admindeeplinkCOMPLIANCE
 search.appverid:
 - MET150
 - MOE150
-ms.openlocfilehash: 5d79ae1a158a5c6b3663a5596594d905cea51874
-ms.sourcegitcommit: 04e517c7e00323b5c33d8ea937115725cf2cfd4d
+ms.openlocfilehash: db0327982fa4dc281ba5ea2c4c0c013eaeee934d
+ms.sourcegitcommit: 0d8fb571024f134d7480fe14cffc5e31a687d356
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/13/2022
-ms.locfileid: "68565298"
+ms.lasthandoff: 10/20/2022
+ms.locfileid: "68620775"
 ---
 # <a name="get-started-with-communication-compliance"></a>Introducción al cumplimiento de las comunicaciones
 
@@ -91,7 +91,7 @@ La actividad en los mensajes se agrega mediante el [tipo de clasificador](/micro
 La actividad que implica [tipos de información confidencial](/microsoft-365/compliance/communication-compliance-policies#sensitive-information-types) se detecta en los mensajes cubiertos en las directivas existentes y en los mensajes que no están cubiertos por las directivas existentes. Los mensajes de información que no están cubiertos por directivas existentes no se pueden investigar ni corregir, se debe crear una nueva directiva para detectar y corregir una actividad similar en mensajes futuros. Las conclusiones se agregan para todos los tipos de información confidencial, incluidos los que su organización no ha definido previamente en una directiva de cumplimiento de comunicaciones existente. Use esta información para crear una nueva directiva de cumplimiento de comunicaciones o para actualizar las directivas existentes. Después de crear una nueva directiva, es posible que las alertas de mensajes de esta directiva coincidan o no con un número igual de mensajes identificados en una información similar. La directiva puede tener condiciones diferentes, un número diferente de usuarios en el ámbito y solo detecta la actividad de mensaje que se produce después de que la directiva esté activa.
 
 >[!TIP]
->¿No desea ver la información de acción recomendada? Abra una solicitud con Soporte técnico de Microsoft para deshabilitar la visualización de estos widgets de información para su organización.
+>¿No desea ver la información de acción recomendada? Abra una solicitud con soporte técnico de Microsoft para deshabilitar la visualización de estos widgets de información para su organización.
 
 ## <a name="step-1-required-enable-permissions-for-communication-compliance"></a>Paso 1 (obligatorio): Habilitación de permisos para el cumplimiento de comunicaciones
 
@@ -280,7 +280,7 @@ Para obtener más información sobre cómo configurar Yammer en modo nativo, con
 
     - Elija si desea incluir tipos de información confidencial. En este paso puede seleccionar tipos de información confidencial predeterminados y personalizados. Elija entre los tipos de información confidencial personalizados existentes o diccionarios de palabras clave personalizadas en el Asistente para directivas de cumplimiento de comunicaciones. Puede crear estos elementos antes de ejecutar el asistente si es necesario. También puede crear nuevos tipos de información confidencial desde el Asistente para directivas de cumplimiento de comunicaciones.
 
-    - Elija si desea habilitar clasificadores. Los clasificadores pueden detectar el lenguaje inadecuado y las imágenes enviadas o recibidas en el cuerpo de los mensajes de correo electrónico u otros tipos de texto. Puede elegir los siguientes clasificadores integrados: *Amenazas*, *Profanidad*, *Acoso dirigido*, *Imágenes para adultos*, *Imágenes de Racy* e *Imágenes de Gory*.
+    - Elija si desea habilitar clasificadores. Los clasificadores pueden detectar lenguajes e imágenes potencialmente inadecuados enviados o recibidos en el cuerpo de mensajes de correo electrónico u otros tipos de texto. Puede elegir [clasificadores integrados específicos de las directivas de cumplimiento de comunicaciones](/microsoft-365/compliance/communication-compliance-policies#classifiers).
 
     - Habilite el [reconocimiento óptico de caracteres (OCR)](/microsoft-365/compliance/communication-compliance-policies#optical-character-recognition-ocr) para examinar imágenes incrustadas o adjuntas en mensajes para texto impreso o manuscrito que coincida con las condiciones de la directiva. En el caso de las directivas personalizadas, se debe configurar una o varias opciones condicionales asociadas con texto, palabras clave, clasificadores o tipos de información confidencial en la directiva para habilitar la selección del examen óptico del reconocimiento de caracteres.
 

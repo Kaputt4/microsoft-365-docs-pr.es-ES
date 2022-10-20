@@ -18,15 +18,15 @@ ms.collection:
 - highpri
 - tier1
 ms.custom: admindeeplinkDEFENDER
-ms.topic: article
+ms.topic: conceptual
 ms.subservice: mde
 search.appverid: met150
-ms.openlocfilehash: d873027de355029643216aaa546b41126da3de61
-ms.sourcegitcommit: 4e42bafee965446f44f7f57d1defed2b9b24fce8
+ms.openlocfilehash: 5369f6a359602166b3b2302bd268a7fa4e8b3c4e
+ms.sourcegitcommit: 0d8fb571024f134d7480fe14cffc5e31a687d356
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/30/2022
-ms.locfileid: "68221904"
+ms.lasthandoff: 10/20/2022
+ms.locfileid: "68637670"
 ---
 # <a name="set-up-microsoft-defender-for-endpoint-deployment"></a>Configuración de Microsoft Defender para punto de conexión implementación
 
@@ -54,13 +54,13 @@ En este escenario de implementación, se le guiará por los pasos siguientes:
 - Configuración de red
 
 > [!NOTE]
-> Con el fin de guiarle a través de una implementación típica, este escenario solo cubrirá el uso del punto de conexión de Microsoft Configuration Manager. Defender para punto de conexión admite el uso de otras herramientas de incorporación, pero no cubrirá esos escenarios en la guía de implementación. Para obtener más información, consulte [Incorporación de dispositivos a Microsoft Defender para punto de conexión](onboard-configure.md).
+> Con el fin de guiarle a través de una implementación típica, este escenario solo cubrirá el uso de Microsoft Endpoint Configuration Manager. Defender para punto de conexión admite el uso de otras herramientas de incorporación, pero no cubrirá esos escenarios en la guía de implementación. Para obtener más información, consulte [Incorporación de dispositivos a Microsoft Defender para punto de conexión](onboard-configure.md).
 
 ## <a name="check-license-state"></a>Comprobación del estado de la licencia
 
 La comprobación del estado de la licencia y si se aprovisionó correctamente se puede realizar a través del Centro de administración o a través de **Microsoft Azure Portal**.
 
-1. Para ver las licencias, vaya a Microsoft **Azure Portal** y vaya a la [sección Licencia de Microsoft Azure Portal](https://portal.azure.com/#blade/Microsoft_AAD_IAM/LicensesMenuBlade/Products).
+1. Para ver las licencias, vaya a **Microsoft Azure Portal** y vaya a la [sección Licencia de Microsoft Azure Portal](https://portal.azure.com/#blade/Microsoft_AAD_IAM/LicensesMenuBlade/Products).
 
    :::image type="content" source="images/atp-licensing-azure-portal.png" alt-text="Página Licencias de Azure" lightbox="images/atp-licensing-azure-portal.png":::
 
@@ -116,7 +116,7 @@ Configure un proxy estático basado en el Registro para permitir que solo Micros
 
 1. Abra la Consola de administración de directivas de grupo.
 2. Cree una directiva o edite una directiva existente basada en las prácticas de la organización.
-3. Edite el directiva de grupo y vaya a **Plantillas \> administrativas Componentes \> de Windows Recopilación de datos y Compilaciones \> en versión preliminar Configure Authenticated Proxy usage for the Connected User Experience and Telemetry Service (Configurar el uso del proxy autenticado para el servicio de telemetría y experiencia del usuario conectado).**
+3. Edite el समूह नीति y vaya a **Plantillas \> administrativas Componentes \> de Windows Recopilación de datos y Compilaciones \> de versión preliminar Configure Authenticated Proxy usage for the Connected User Experience and Telemetry Service (Configurar el uso del proxy autenticado para el servicio de telemetría y experiencia del usuario conectado).**
 
    :::image type="content" source="images/atp-gpo-proxy1.png" alt-text="Opciones relacionadas con la configuración de la directiva de uso" lightbox="images/atp-gpo-proxy1.png":::
 

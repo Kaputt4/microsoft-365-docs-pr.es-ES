@@ -22,16 +22,16 @@ search.appverid:
 description: Obtenga información sobre cómo usar el cmdlet AllowSelfServicePurchase de PowerShell para activar o desactivar la compra de autoservicio.
 ROBOTS: NOINDEX, NOFOLLOW
 ms.date: 10/10/2022
-ms.openlocfilehash: 77e1fa8fe85861381c4eb5128148c08f0997bcfc
-ms.sourcegitcommit: 8d3c027592a638f411f87d89772dd3d39e92aab0
+ms.openlocfilehash: 3ce3c30a7a51987407c9040e6b8317d092ff491f
+ms.sourcegitcommit: 0d8fb571024f134d7480fe14cffc5e31a687d356
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/12/2022
-ms.locfileid: "68533310"
+ms.lasthandoff: 10/20/2022
+ms.locfileid: "68627661"
 ---
 # <a name="use-allowselfservicepurchase-for-the-mscommerce-powershell-module"></a>Uso de AllowSelfServicePurchase para el módulo de PowerShell MSCommerce
 
-El módulo **de PowerShell MSCommerce** ya está disponible en [Galería de PowerShell](https://aka.ms/allowselfservicepurchase-powershell-gallery). El módulo incluye un valor de parámetro **PolicyID** para **AllowSelfServicePurchase** que le permite controlar si los usuarios de su organización pueden realizar compras de autoservicio.
+El módulo **de PowerShell MSCommerce** ya está disponible en la [Galería de PowerShell](https://aka.ms/allowselfservicepurchase-powershell-gallery). El módulo incluye un valor de parámetro **PolicyID** para **AllowSelfServicePurchase** que le permite controlar si los usuarios de su organización pueden realizar compras de autoservicio.
 
 Puede usar el módulo de PowerShell **MSCommerce** para:
 
@@ -44,14 +44,14 @@ Puede usar el módulo de PowerShell **MSCommerce** para:
 
 Para usar el módulo de PowerShell **MSCommerce** , necesita:
 
-- Un dispositivo Windows 10
+- Un sistema operativo Windows 10 o posterior.
 - PowerShell 5 o posterior. Actualmente, PowerShell 6.x/7.x no es compatible con este módulo.
-- Permiso de administrador para el dispositivo
-- Rol de Administración global o de facturación para el inquilino
+- El rol administrador global o de facturación del inquilino para cambiar las **directivas de producto de MSCommerce** .
+- Rol lector global para que el inquilino vea una lista de solo lectura de **directivas de producto de MSCommerce** .
 
 ## <a name="install-the-mscommerce-powershell-module"></a>Instalación del módulo de PowerShell MSCommerce
 
-Instale el módulo de PowerShell **MSCommerce** en el dispositivo Windows 10 una vez y, a continuación, impórtelo en cada sesión de PowerShell que inicie. Descargue el módulo **de PowerShell MSCommerce** desde el [Galería de PowerShell](https://aka.ms/allowselfservicepurchase-powershell-gallery).
+Instale el módulo de PowerShell **MSCommerce** en el dispositivo Windows 10 una vez y, a continuación, impórtelo en cada sesión de PowerShell que inicie. Descargue el módulo de PowerShell **MSCommerce** desde la [Galería de PowerShell](https://aka.ms/allowselfservicepurchase-powershell-gallery).
 
 Para instalar el módulo **de PowerShell MSCommerce** con **PowerShellGet**, ejecute el siguiente comando:
 
@@ -102,7 +102,7 @@ En la tabla siguiente se enumeran los productos disponibles y su **ProductId**. 
 | Power Automate RPA | CFQ7TTC0KXG6  | No |
 | Power BI Premium (independiente) | CFQ7TTC0KXG7  | No |
 | Power BI Pro | CFQ7TTC0L3PB | No |
-| Project Plan 1* | CFQ7TTC0HDB1 | Yes |
+| Project Plan 1* | CFQ7TTC0HDB1 | Sí |
 | Project Plan 3* | CFQ7TTC0HDB0 | No |
 | Visio Plan 1* | CFQ7TTC0HD33 | No |
 | Visio Plan 2* | CFQ7TTC0HD32 | No |

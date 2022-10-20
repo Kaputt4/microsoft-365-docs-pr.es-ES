@@ -17,15 +17,15 @@ audience: ITPro
 ms.collection:
 - m365-security
 - tier2
-ms.topic: article
+ms.topic: conceptual
 ms.subservice: mde
 ms.reviewer: mkaminska
-ms.openlocfilehash: a1688fc03bfa31a72bbfc7a984553c09f7681c31
-ms.sourcegitcommit: 0b7070ec119e00e0dafe030bbfbef0ae5c9afa19
+ms.openlocfilehash: a5641725f9f259064c7d380da470353395335363
+ms.sourcegitcommit: 0d8fb571024f134d7480fe14cffc5e31a687d356
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/29/2022
-ms.locfileid: "68175070"
+ms.lasthandoff: 10/20/2022
+ms.locfileid: "68635562"
 ---
 # <a name="device-health-microsoft-defender-antivirus-health-report"></a>Estado del dispositivo, Microsoft Defender informe de estado del antivirus
 
@@ -66,7 +66,7 @@ Para acceder al informe de cumplimiento de antivirus y estado del dispositivo en
 
 Para asignar estos permisos:
 
-1. Inicie sesión en <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">Microsoft 365 Defender</a> con una cuenta con el administrador de seguridad o Administrador global rol asignado.
+1. Inicie sesión en <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">Microsoft 365 Defender</a> con la cuenta con el rol Administrador de seguridad o Administrador global asignado.
 1. En el panel de navegación, seleccione **Configuración** \> **Roles de puntos** \> de conexión (en **Permisos**).
 1. Seleccione el rol que desea editar.
 1. Seleccione **Editar**.

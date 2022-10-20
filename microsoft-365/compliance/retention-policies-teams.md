@@ -18,12 +18,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Obtenga información sobre las directivas de retención de Microsoft 365 que se aplican a Microsoft Teams para que pueda administrar la retención automática o la eliminación de mensajes de Teams para su organización.
-ms.openlocfilehash: 799556ea2f36f2c90c8182ae5cef0b5311cd9a75
-ms.sourcegitcommit: 7828a1e78c3e6bd8d10289f1ad6c8b6769da0966
+ms.openlocfilehash: cea95093a48aeda2e93c77c975b0838ae1962ba2
+ms.sourcegitcommit: 0d8fb571024f134d7480fe14cffc5e31a687d356
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/07/2022
-ms.locfileid: "68495152"
+ms.lasthandoff: 10/20/2022
+ms.locfileid: "68633050"
 ---
 # <a name="learn-about-retention-for-microsoft-teams"></a>Más información sobre la retención para Microsoft Teams
 
@@ -51,7 +51,7 @@ Para otras cargas de trabajo, vea:
 > 
 > Las directivas de retención también admiten los mensajes publicados con la característica [chat con usted mismo](https://support.microsoft.com/office/start-a-chat-in-teams-0c71b32b-c050-4930-a887-5afbe742b3d8?storagetype=live#bkmk_chatwithself) .
 
-Los mensajes de chat de Teams, los mensajes de canal y los mensajes de canal privado se pueden eliminar mediante directivas de retención para Teams y, además del texto de los mensajes, se pueden conservar los siguientes elementos por motivos de cumplimiento: clips de vídeo, imágenes incrustadas, tablas, vínculos de hipertexto, vínculos a otros mensajes y archivos de Teams y [contenido de tarjeta](/microsoftteams/platform/task-modules-and-cards/what-are-cards). Los mensajes de chat y los mensajes de canal privado incluyen todos los nombres de las personas de la conversación, y los mensajes de canal incluyen el nombre del equipo y el título del mensaje (si se proporciona). 
+Los mensajes de chat de Teams, los mensajes de canal y los mensajes de canal privado se pueden eliminar mediante directivas de retención para Teams y, además del texto de los mensajes, se pueden conservar los siguientes elementos por motivos de cumplimiento: [clips de vídeo](https://support.microsoft.com/office/record-a-video-clip-in-teams-0c57dae5-2974-4214-9c46-7a2136386f1c), imágenes incrustadas, tablas, vínculos de hipertexto, vínculos a otros mensajes y archivos de Teams y [contenido de tarjeta](/microsoftteams/platform/task-modules-and-cards/what-are-cards). Los mensajes de chat y los mensajes de canal privado incluyen todos los nombres de las personas de la conversación, y los mensajes de canal incluyen el nombre del equipo y el título del mensaje (si se proporciona). 
 
 Los fragmentos de código, notas de voz grabadas del cliente móvil de Teams, las miniaturas, las imágenes de anuncios y las reacciones de otros usuarios en forma de emoticonos no se conservan cuando usa las directivas de retención para Teams.
 

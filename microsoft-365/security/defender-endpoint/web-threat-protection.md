@@ -16,14 +16,14 @@ audience: ITPro
 ms.collection:
 - m365-security
 - tier2
-ms.topic: article
+ms.topic: conceptual
 ms.subservice: mde
-ms.openlocfilehash: 89bc4d056743c2f6f4628ff58feeb2ed4e97b16a
-ms.sourcegitcommit: 4e42bafee965446f44f7f57d1defed2b9b24fce8
+ms.openlocfilehash: ceef4631ca578e7fc091989a83fb3fa2362ece15
+ms.sourcegitcommit: 0d8fb571024f134d7480fe14cffc5e31a687d356
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/30/2022
-ms.locfileid: "68223840"
+ms.lasthandoff: 10/20/2022
+ms.locfileid: "68637274"
 ---
 # <a name="protect-your-organization-against-web-threats"></a>Proteja su organización contra las amenazas web
 
@@ -48,7 +48,7 @@ La protección web usa la protección de red para proporcionar seguridad de expl
 Para activar la protección de red en los dispositivos:
 
 - Edite la línea de base de seguridad de Defender para punto de conexión en **Web & Network Protection** para habilitar la protección de red antes de implementarla o volver a implementarla. [Obtenga información sobre cómo revisar y asignar la línea base de seguridad de Defender para punto de conexión.](configure-machines-security-baseline.md#review-and-assign-the-microsoft-defender-for-endpoint-security-baseline)
-- Active la protección de red mediante Intune configuración del dispositivo, SCCM, directiva de grupo o la solución MDM. [Obtenga más información sobre cómo habilitar la protección de red.](enable-network-protection.md)
+- Active la protección de red mediante Intune configuración del dispositivo, SCCM, समूह नीति o la solución MDM. [Obtenga más información sobre cómo habilitar la protección de red.](enable-network-protection.md)
 
 > [!NOTE]
 > Si establece protección de red **en Solo auditoría**, el bloqueo no estará disponible. Además, podrá detectar y registrar intentos de acceder solo a sitios web malintencionados y no deseados en Microsoft Edge.

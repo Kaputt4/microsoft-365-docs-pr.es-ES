@@ -16,14 +16,14 @@ ms.collection:
 - m365-security
 - tier1
 ms.custom: admindeeplinkDEFENDER
-ms.topic: article
+ms.topic: conceptual
 ms.subservice: mde
-ms.openlocfilehash: 43ed97b37acde59a44dc17c1ee051ea00c151fec
-ms.sourcegitcommit: 0b7070ec119e00e0dafe030bbfbef0ae5c9afa19
+ms.openlocfilehash: 20f77106a290462ea01e2897c840c1b40e240d51
+ms.sourcegitcommit: 0d8fb571024f134d7480fe14cffc5e31a687d356
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/29/2022
-ms.locfileid: "68180305"
+ms.lasthandoff: 10/20/2022
+ms.locfileid: "68621825"
 ---
 # <a name="onboard-windows-devices-using-a-local-script"></a>Incorporar dispositivos Windows mediante un script local
 
@@ -43,7 +43,7 @@ También puede incorporar manualmente dispositivos individuales a Defender para 
 > El scripting local es un método de incorporación especial para evaluar Microsoft Defender para punto de conexión.
 > La frecuencia de informes de datos se establece con mayor frecuencia que con otros métodos de incorporación al incorporar mediante un script local.
 > Esta configuración es para fines de evaluación y normalmente no se usa en implementaciones de producción. Por este motivo, hay preocupaciones sobre el impacto medioambiental, por lo que se recomienda limitar el número de implementaciones mediante scripts locales a diez.
-> Si va a realizar la implementación en un entorno de producción como se describió anteriormente, use [otras opciones de implementación](configure-endpoints.md) como directiva de grupo o Configuration Manager de punto de conexión de Microsoft.
+> Si va a realizar la implementación en un entorno de producción como se describió anteriormente, use [otras opciones de implementación](configure-endpoints.md) como समूह नीति o Microsoft Endpoint Configuration Manager.
 
 Consulte el [PDF](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/security/defender-endpoint/downloads/mdatp-deployment-strategy.pdf)  o  [Visio](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/security/defender-endpoint/downloads/mdatp-deployment-strategy.vsdx) para ver las distintas rutas de acceso en la implementación de Defender para punto de conexión. 
 

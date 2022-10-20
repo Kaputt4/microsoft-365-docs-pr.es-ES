@@ -18,12 +18,12 @@ ROBOTS: NOINDEX, NOFOLLOW
 search.appverid:
 - MET150
 description: Guía de instalación y configuración de aplicaciones con ámbito certificado para ServiceNow.
-ms.openlocfilehash: 6502e3301dab653c14980acb4e91f2dd8ed2a589
-ms.sourcegitcommit: 0b7070ec119e00e0dafe030bbfbef0ae5c9afa19
+ms.openlocfilehash: 724517e0ac268ecc1d857f59b3e0352cecfd1903
+ms.sourcegitcommit: 0d8fb571024f134d7480fe14cffc5e31a687d356
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/29/2022
-ms.locfileid: "68173135"
+ms.lasthandoff: 10/20/2022
+ms.locfileid: "68624849"
 ---
 # <a name="configure-microsoft-365-support-integration-with-azure-ad-auth-token"></a>Configuración de la integración de compatibilidad de Microsoft 365 con el token de autenticación de Azure AD
 
@@ -33,7 +33,7 @@ Estos requisitos previos son necesarios para configurar la integración de sopor
 
 1. \[AAD Administración\] Creación de una aplicación de Azure AD para salientes en el inquilino de Microsoft 365.
 
-    1. Inicie sesión en Azure Portal con sus credenciales de inquilino de Microsoft 365 y vaya a la [página Registros de aplicaciones](https://portal.azure.com/?Microsoft_AAD_RegisteredApps=true#blade/Microsoft_AAD_RegisteredApps/ApplicationsListBlade) para crear una nueva aplicación.
+    1. Inicie sesión en Azure Portal con sus credenciales de inquilino de Microsoft 365 y vaya a la [página Registros](https://portal.azure.com/?Microsoft_AAD_RegisteredApps=true#blade/Microsoft_AAD_RegisteredApps/ApplicationsListBlade) de aplicaciones para crear una nueva aplicación.
 
     2. Seleccione **Solo cuentas en este directorio organizativo ({Microsoft-365-tenant-name} - Solo inquilino único)** y seleccione **Registrar**.
 
@@ -83,7 +83,7 @@ Estos requisitos previos son necesarios para configurar la integración de sopor
 
     - Dirección URL del token: `https://login.microsoftonline.com/{microsoft-365-tenant-name}/oauth2/token`
 
-    - Dirección URL de redireccionamiento: `https://{service-now-instance-name``}.service-now.com/oauth_redirect.do`
+    - Dirección URL de redireccionamiento: `https://{your-servicenow-instance}.service-now.com/oauth_redirect.do`
 
     :::image type="content" source="../../media/ServiceNow-guide/servicenow-guide-image6.png" lightbox="../../media/ServiceNow-guide/servicenow-guide-image6.png" alt-text="Interfaz gráfica de usuario, descripción de la aplicación generada automáticamente":::
 
@@ -95,7 +95,7 @@ Estos requisitos previos son necesarios para configurar la integración de sopor
 
 1. Vaya al **Registro de aplicaciones de OAuth &gt; del sistema**.
 
-1. Seleccione **Nuevo** y, a continuación, **seleccione Crear nuevo proveedor de Open ID Connect**.
+1. Seleccione **Nuevo** y, a continuación, seleccione **Configurar y proveedor OIDC para comprobar los tokens de identificador**.
 
 1. En **Configuración del proveedor OIDC de OAuth**, seleccione **Buscar** y cree una nueva configuración de proveedor OIDC en **oidc\_provider\_configuration.list** con estos valores:
 
@@ -109,7 +109,7 @@ Estos requisitos previos son necesarios para configurar la integración de sopor
 
     :::image type="content" source="../../media/ServiceNow-guide/servicenow-guide-image24.png" lightbox="../../media/ServiceNow-guide/servicenow-guide-image24.png" alt-text="Interfaz gráfica de usuario, texto, descripción de la aplicación generada automáticamente":::
 
-1. Para crear una aplicación, seleccione **Configurar un proveedor OIDC para comprobar los tokens de identificador** con estos valores:
+1. En esta nueva aplicación, rellene los campos con estos valores:
 
     - Nombre: **{Nombre del inquilino\_}\_API de entrada\_de la aplicación\_** (por ejemplo: api de entrada\_de aplicación\_contoso\_)
 
@@ -119,7 +119,7 @@ Estos requisitos previos son necesarios para configurar la integración de sopor
 
     - Configuración del proveedor OIDC de OAuth: el proveedor OIDC creado en el paso anterior
 
-    - Dirección URL de redireccionamiento: `https://{service-now-instance-name}.service-now.com/oauth\_redirect.do`
+    - Dirección URL de redireccionamiento: `https://{service-now-instance-name}.service-now.com/oauth_redirect.do`
 
     :::image type="content" source="../../media/ServiceNow-guide/servicenow-guide-image25.png" lightbox="../../media/ServiceNow-guide/servicenow-guide-image25.png" alt-text="Interfaz gráfica de usuario, descripción de la aplicación generada automáticamente":::
 
@@ -233,7 +233,7 @@ Estos pasos son necesarios para configurar la integración entre la instancia de
 
     :::image type="content" source="../../media/ServiceNow-guide/servicenow-guide-image31.png" lightbox="../../media/ServiceNow-guide/servicenow-guide-image31.png" alt-text="Interfaz gráfica de usuario, descripción de la aplicación generada automáticamente":::
 
-    1. Volver a ServiceNow.
+    1. Vuelva a ServiceNow.
 
     1. Seleccione **Siguiente** para completar la integración.
 

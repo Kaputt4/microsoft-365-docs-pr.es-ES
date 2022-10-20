@@ -14,16 +14,16 @@ audience: ITPro
 ms.collection:
 - m365-security
 - tier3
-ms.topic: article
+ms.topic: conceptual
 ms.subservice: mde
 ms.custom: api
 search.appverid: met150
-ms.openlocfilehash: bee57e8abb60715fff5f3aca3f64e3c1e5f76b94
-ms.sourcegitcommit: 4e42bafee965446f44f7f57d1defed2b9b24fce8
+ms.openlocfilehash: 7b232e01894472b3a01c9f13c02f0b3447ae3c30
+ms.sourcegitcommit: 0d8fb571024f134d7480fe14cffc5e31a687d356
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/30/2022
-ms.locfileid: "68228040"
+ms.lasthandoff: 10/20/2022
+ms.locfileid: "68644535"
 ---
 # <a name="raw-data-streaming-api"></a>API de streaming de datos sin procesar
 
@@ -44,11 +44,11 @@ Microsoft Defender para punto de conexión admite eventos de streaming disponibl
 
 Tema|Descripción
 :---|:---
-[Transmitir eventos de Microsoft Defender para punto de conexión a Azure Event Hubs](raw-data-export-event-hub.md)|Obtenga información sobre cómo habilitar la API de streaming en el inquilino y configurar Defender para punto de conexión para transmitir la [búsqueda avanzada](advanced-hunting-overview.md) a Event Hubs.
+[Transmisión de eventos Microsoft Defender para punto de conexión a Azure Event Hubs](raw-data-export-event-hub.md)|Obtenga información sobre cómo habilitar la API de streaming en el inquilino y configurar Defender para punto de conexión para transmitir la [búsqueda avanzada](advanced-hunting-overview.md) a Event Hubs.
 [Transmisión de eventos de Defender para punto de conexión a la cuenta de Azure Storage](raw-data-export-storage.md)|Obtenga información sobre cómo habilitar la API de streaming en el inquilino y configure Defender para punto de conexión para transmitir la [búsqueda avanzada](advanced-hunting-overview.md) a la cuenta de Almacenamiento de Azure.
 
 ## <a name="related-topics"></a>Temas relacionados
 
 - [Introducción a la búsqueda avanzada](advanced-hunting-overview.md)
-- [documentación de Azure Event Hubs](/azure/event-hubs/)
+- [Documentación de Azure Event Hubs](/azure/event-hubs/)
 - [Documentación de la cuenta de Azure Storage](/azure/storage/common/storage-account-overview)

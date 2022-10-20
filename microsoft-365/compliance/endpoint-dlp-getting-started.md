@@ -13,25 +13,30 @@ f1_keywords:
 ms.service: O365-seccomp
 ms.localizationpriority: high
 ms.collection:
-- M365-security-compliance
+- tier1
+- highpri
+- purview-compliance
 - m365solution-mip
 - m365initiative-compliance
+- highpri
 search.appverid:
 - MET150
 ms.custom: admindeeplinkCOMPLIANCE
 description: Configure la prevención de pérdida de datos de punto de conexión para supervisar las actividades de archivo e implementar acciones de protección para esos archivos en los puntos de conexión.
-ms.openlocfilehash: 6800eaeec80bddda35a3b297d6fb9689800cc244
-ms.sourcegitcommit: 48a75b40e607542e5fe219b6e75ffc757804a9c6
+ms.openlocfilehash: 777269fc9e2dd7edd88b0d554c6bb1218c1c3ff7
+ms.sourcegitcommit: 0d8fb571024f134d7480fe14cffc5e31a687d356
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/16/2022
-ms.locfileid: "67343445"
+ms.lasthandoff: 10/20/2022
+ms.locfileid: "68634682"
 ---
 # <a name="get-started-with-endpoint-data-loss-prevention"></a>Introducción a la prevención de pérdida de datos en punto de conexión
 
 La Prevención de pérdida de datos de punto de conexión (DLP de punto de conexión) forma parte del conjunto de características de prevención de pérdida de datos (DLP) de Microsoft Purview que puede usar para detectar y proteger elementos confidenciales en Microsoft 365 servicios. Para obtener más información sobre las ofertas de DLP de Microsoft, consulte [Obtenga más información acerca de la prevención contra la pérdida de datos](dlp-learn-about-dlp.md). Para más información sobre la DLP de punto de conexión, consulte [Obtener información sobre la prevención de pérdida de datos de punto de conexión](endpoint-dlp-learn-about.md)
 
-El Punto de conexión DLP de Microsoft permite supervisar [Windows 10 incorporados, y Windows 11](device-onboarding-overview.md) y [dispositivos macOS incorporados](device-onboarding-macos-overview.md) que ejecutan Catalina 10.15 y versiones posteriores. Una vez incorporado un dispositivo, DLP detectará si se usan y comparten elementos confidenciales. Esto le proporciona la visibilidad y el control que necesita para asegurarse de que se usan y protegen correctamente, así como para ayudar a evitar algún comportamiento peligroso que podría comprometerlos.
+DLP de punto de conexión de Microsoft permite supervisar [Windows 10 incorporados y Windows 11](device-onboarding-overview.md) y [dispositivos macOS incorporados](device-onboarding-macos-overview.md) que ejecutan tres versiones más recientes. Una vez incorporado un dispositivo, DLP detectará si se usan y comparten elementos confidenciales. Esto le proporciona la visibilidad y el control que necesita para asegurarse de que se usan y protegen correctamente, así como para ayudar a evitar algún comportamiento peligroso que podría comprometerlos.
+
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
 
 ## <a name="before-you-begin"></a>Antes de empezar
 

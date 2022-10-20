@@ -12,12 +12,12 @@ search.appverid: MET150
 ms.collection: ''
 ms.localizationpriority: medium
 description: Obtenga información sobre cómo administrar el uso compartido para Microsoft Whiteboard en entornos de GCC High.
-ms.openlocfilehash: f18a77725d3f0ebf77461cb5eb1070e6cd0935c7
-ms.sourcegitcommit: 8d3c027592a638f411f87d89772dd3d39e92aab0
+ms.openlocfilehash: 45372ae960651493fc06f33168e94c6c613bace3
+ms.sourcegitcommit: 0d8fb571024f134d7480fe14cffc5e31a687d356
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/12/2022
-ms.locfileid: "68537366"
+ms.lasthandoff: 10/20/2022
+ms.locfileid: "68626739"
 ---
 # <a name="manage-sharing-for-microsoft-whiteboard-in-gcc-high-environments"></a>Administración del uso compartido para Microsoft Whiteboard en entornos de GCC High
 
@@ -28,7 +28,7 @@ ms.locfileid: "68537366"
 
 Al compartir una pizarra en una reunión de Teams, Whiteboard crea un vínculo de uso compartido. Cualquier persona de la organización puede acceder a este vínculo. La pizarra también se comparte con cualquier usuario en el inquilino de la reunión. Las pizarras se comparten mediante vínculos que se pueden compartir con la empresa, independientemente de la configuración predeterminada. Se planea la compatibilidad con el tipo de vínculo de uso compartido predeterminado.
 
-La mayoría de las cuentas de dispositivo externas y compartidas tienen más capacidad para la colaboración temporal durante una reunión. Los usuarios pueden ver y colaborar temporalmente en pizarras cuando se comparten en una reunión de Teams, de forma similar a PowerPoint Live uso compartido.
+Durante una reunión de Teams, las cuentas de dispositivos externos y compartidos (normalmente usadas en Surface Hubs y Salas de Teams dispositivos) tienen más capacidad para la colaboración temporal. Los usuarios pueden ver y colaborar temporalmente en pizarras compartidas en una reunión, de forma similar a PowerPoint Live uso compartido.
 
 En este caso, Whiteboard proporciona visualización y colaboración temporales en la pizarra solo durante la reunión de Teams. No se crea un vínculo de recurso compartido y Whiteboard no concede acceso al archivo.
 
@@ -52,7 +52,8 @@ Esta configuración solo se aplica a las pizarras y reemplaza la configuración 
 
 > [!NOTE]
 > Esto solo se aplica a invitados y usuarios federados. No se aplica a los usuarios de reuniones anónimos en este momento.
->
+
+> [!NOTE]
 > Si desea que las cuentas de dispositivo compartido tengan acceso a Whiteboard en reuniones de Teams pero no a usuarios anónimos, puede deshabilitar **usuarios anónimos para que interactúen con las aplicaciones de las reuniones** mientras tienen **habilitado AllowAnonymousMeetingParticipantsToAccessWhiteboards** .
 
 Estos cambios deben tardar aproximadamente 60 minutos en aplicarse en todo el inquilino.
@@ -73,9 +74,6 @@ Al agregar una pizarra como una pestaña en un canal o chat de Teams, Whiteboard
 ## <a name="create-and-share-in-whiteboard-native-clients"></a>Creación y uso compartido en clientes nativos de Whiteboard
 
 Al compartir una pizarra desde clientes web, de escritorio o móviles, puede elegir personas específicas. También puede crear un vínculo de uso compartido al que pueda acceder cualquier persona de la organización.
-
->[!NOTE]
-> El uso compartido externo durante una reunión de Teams aún no está disponible, pero se agregará en una versión futura.
 
 |Escenario|Almacenamiento y propiedad|Configuración de uso compartido|Experiencia de uso compartido|
 |---|---|---|---|

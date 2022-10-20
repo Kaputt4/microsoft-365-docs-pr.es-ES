@@ -15,15 +15,15 @@ ms.collection:
 - m365-security
 - tier1
 ms.custom: admindeeplinkDEFENDER
-ms.topic: article
+ms.topic: conceptual
 ms.subservice: mde
 search.appverid: met150
-ms.openlocfilehash: 16da44ee7df41d3a239055360e71f320346a097d
-ms.sourcegitcommit: 0b7070ec119e00e0dafe030bbfbef0ae5c9afa19
+ms.openlocfilehash: 5e16ed5cead5d9bf662dc3d0ac29894387476cdd
+ms.sourcegitcommit: 0d8fb571024f134d7480fe14cffc5e31a687d356
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/29/2022
-ms.locfileid: "68180283"
+ms.lasthandoff: 10/20/2022
+ms.locfileid: "68638706"
 ---
 # <a name="onboard-windows-devices-to-defender-for-endpoint-using-intune"></a>Incorporación de dispositivos Windows a Defender para punto de conexión mediante Intune 
 
@@ -42,7 +42,7 @@ Para obtener más información sobre el uso de CSP de Defender para punto de con
 
 ## <a name="before-you-begin"></a>Antes de empezar
 
-Los dispositivos deben inscribirse con Intune como solución mobile Administración de dispositivos (MDM).
+Los dispositivos deben inscribirse con Intune como solución de administración de dispositivos móviles (MDM).
 
 Para obtener más información sobre cómo habilitar MDM con Microsoft Intune, consulte [Inscripción de dispositivos (Microsoft Intune)](/mem/intune/enrollment/device-enrollment).
 
@@ -66,7 +66,7 @@ Para obtener más información sobre el uso de CSP de Defender para punto de con
 Después de incorporar el dispositivo, puede optar por ejecutar una prueba de detección para comprobar que un dispositivo está incorporado correctamente al servicio. Para obtener más información, consulte [Ejecución de una prueba de detección en un dispositivo Microsoft Defender para punto de conexión recién incorporado](run-detection-test.md).
 
 
-## <a name="offboard-devices-using-mobile-device-management-tools"></a>Dispositivos fuera del panel con herramientas de mobile Administración de dispositivos
+## <a name="offboard-devices-using-mobile-device-management-tools"></a>Dispositivos fuera del panel mediante herramientas de administración de dispositivos móviles
 
 Por motivos de seguridad, el paquete usado para dispositivos Offboard expirará 30 días después de la fecha en que se descargó. Se rechazarán los paquetes de offboarding expirados enviados a un dispositivo. Al descargar un paquete de offboarding, se le notificará la fecha de expiración de los paquetes y también se incluirá en el nombre del paquete.
 
@@ -79,7 +79,7 @@ Por motivos de seguridad, el paquete usado para dispositivos Offboard expirará 
 
    1. Seleccione Windows 10 o Windows 11 como sistema operativo.
 
-   1. En el campo **Método de implementación**, seleccione **Mobile Administración de dispositivos/Microsoft Intune**.
+   1. En el campo **Método de implementación**, seleccione **Administración de dispositivos móviles o Microsoft Intune**.
 
    1. Haga clic en **Descargar paquete** y guarde el archivo .zip.
 

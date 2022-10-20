@@ -16,14 +16,14 @@ audience: ITPro
 ms.collection:
 - m365-security
 - tier3
-ms.topic: article
+ms.topic: conceptual
 ms.subservice: mde
-ms.openlocfilehash: 87f73410cfe5eef6d6e161f1943d5af3737cc087
-ms.sourcegitcommit: 4e42bafee965446f44f7f57d1defed2b9b24fce8
+ms.openlocfilehash: f03493e095c639489edbc6f8f14773f8d2a92210
+ms.sourcegitcommit: 0d8fb571024f134d7480fe14cffc5e31a687d356
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/30/2022
-ms.locfileid: "68227358"
+ms.lasthandoff: 10/20/2022
+ms.locfileid: "68635078"
 ---
 # <a name="troubleshooting-mode-scenarios-in-microsoft-defender-for-endpoint"></a>Escenarios de modo de solución de problemas en Microsoft Defender para punto de conexión 
 
@@ -56,7 +56,7 @@ Si desea instalar una aplicación pero recibe un mensaje de error que indica que
 
 6. Intente instalar la aplicación.
 
-## <a name="scenario-2-high-cpu-usage-due-to-windows-defender-msmpengexe"></a>Escenario 2: Uso elevado de CPU debido a Windows Defender (MsMpEng.exe)
+## <a name="scenario-2-high-cpu-usage-due-to-windows-defender-msmpengexe"></a>Escenario 2: Uso elevado de CPU debido a Windows डिफेन्डर (MsMpEng.exe)
 
 A veces, durante un examen programado, MsMpEng.exe puede consumir una CPU elevada.
 
@@ -78,7 +78,7 @@ A veces, durante un examen programado, MsMpEng.exe puede consumir una CPU elevad
 
 6. Después de agregar la exclusión, compruebe si se ha quitado el uso de CPU. 
 
-Para obtener más información sobre Set-MpPreference preferencias de configuración de cmdlets para exámenes y actualizaciones de Windows Defender, consulte [Set-MpPreference](/powershell/module/defender/set-mppreference). 
+Para obtener más información sobre Set-MpPreference preferencias de configuración de cmdlets para exámenes y actualizaciones de Windows डिफेन्डर, consulte [Set-MpPreference](/powershell/module/defender/set-mppreference). 
 
 ## <a name="scenario-3-application-taking-longer-to-perform-an-action"></a>Escenario 3: La aplicación tarda más en realizar una acción
 

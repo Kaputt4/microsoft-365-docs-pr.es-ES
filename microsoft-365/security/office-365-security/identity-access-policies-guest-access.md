@@ -2,7 +2,7 @@
 title: 'Directivas de acceso a dispositivos e identidades para permitir el acceso B2B de usuario invitado y externo: Microsoft 365 para empresas | Microsoft Docs'
 description: Describe el acceso condicional recomendado y las directivas relacionadas para proteger el acceso de invitados y usuarios externos.
 ms.service: microsoft-365-security
-ms.topic: article
+ms.topic: conceptual
 ms.author: dansimp
 author: dansimp
 audience: Admin
@@ -22,16 +22,16 @@ ms.collection:
 - highpri
 ms.subservice: mdo
 search.appverid: met150
-ms.openlocfilehash: 0d7a51a8afb51265a63954749370f4939557a11b
-ms.sourcegitcommit: 12af9e8e3a6eaa090fda9e98ccb831dff65863a4
+ms.openlocfilehash: 339c51957c654a86c88ace056dbcb0b3bc7ea404
+ms.sourcegitcommit: 0d8fb571024f134d7480fe14cffc5e31a687d356
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/27/2022
-ms.locfileid: "68088671"
+ms.lasthandoff: 10/20/2022
+ms.locfileid: "68645107"
 ---
 # <a name="policies-for-allowing-guest-access-and-b2b-external-user-access"></a>Directivas para permitir el acceso de invitado y el acceso de usuarios externos B2B
 
-En este artículo se describe cómo ajustar las directivas recomendadas de acceso a dispositivos e identidades Confianza cero para permitir el acceso de invitados y usuarios externos que tienen una cuenta de Negocio a Negocio (B2B) de Azure Active Directory (Azure AD). Esta guía se basa en las [directivas comunes de acceso a dispositivos e identidades](identity-access-policies.md).
+En este artículo se describe cómo ajustar las directivas recomendadas de acceso a dispositivos e identidades de confianza cero para permitir el acceso de invitados y usuarios externos que tienen una cuenta de Negocio a negocio (B2B) de Azure Active Directory (Azure AD). Esta guía se basa en las [directivas comunes de acceso a dispositivos e identidades](identity-access-policies.md).
 
 Estas recomendaciones están diseñadas para aplicarse al **nivel de punto inicial** de protección. Pero también puede ajustar las recomendaciones en función de sus necesidades específicas para la protección de **seguridad** **empresarial** y especializada.
 

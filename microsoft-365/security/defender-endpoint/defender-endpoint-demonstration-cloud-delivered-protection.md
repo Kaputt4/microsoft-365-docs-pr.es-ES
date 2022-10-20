@@ -16,27 +16,25 @@ audience: ITPro
 ms.collection:
 - m365-security
 - tier2
-ms.topic: article
+ms.topic: conceptual
 ms.subservice: mde
-ms.openlocfilehash: feecc22cdeaa64be65c7570e3a89b087c77195a7
-ms.sourcegitcommit: 4f8200453d347de677461f27eb5a3802ce5cc888
+ms.openlocfilehash: 7b8a4837e347bbb8b7c813549edf63f24b0d2453
+ms.sourcegitcommit: 0d8fb571024f134d7480fe14cffc5e31a687d356
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/12/2022
-ms.locfileid: "68543253"
+ms.lasthandoff: 10/20/2022
+ms.locfileid: "68638464"
 ---
-<!--- v-jweston resumes authorship and ms.authorship appx April-May 2023 ---> 
-
 # <a name="cloud-delivered-protection-demonstration"></a>Demostración de protección entregada en la nube
 
 La protección proporcionada en la nube para Microsoft Defender Antivirus, también conocida como Servicio de protección avanzada de Microsoft (MAPS), le proporciona una protección fuerte y rápida además de nuestra protección estándar en tiempo real.
 
 ## <a name="scenario-requirements-and-setup"></a>Requisitos y configuración del escenario
 
-- Windows 7, Windows 8.1 & Windows 10
+- Windows 7, Windows 8.1, Windows 10, Windows 11
 - Microsoft Defender protección en tiempo real está habilitada
 - La protección entregada en la nube está habilitada de forma predeterminada, pero es posible que tenga que volver a habilitarla si se ha deshabilitado como parte de las directivas de la organización anteriores. Para obtener más información, consulte [Habilitación de la protección proporcionada en la nube en Microsoft Defender Antivirus](/windows/threat-protection/windows-defender-antivirus/enable-cloud-protection-windows-defender-antivirus?ocid=wd-av-demo-cloud-middle).
-- También puede descargar y usar el [script de PowerShell](https://www.powershellgallery.com/packages/WindowsDefender_InternalEvaluationSettings/) para habilitar esta configuración y otras en Windows 10.
+- También puede descargar y usar el [script de PowerShell](https://www.powershellgallery.com/packages/WindowsDefender_InternalEvaluationSettings/) para habilitar esta configuración y otras en Windows 10 y Windows 11.
 
 ### <a name="scenario"></a>Escenario
 
@@ -59,7 +57,6 @@ La protección proporcionada en la nube para Microsoft Defender Antivirus, tambi
    :::image type="content" source="images/cloud-delivered-protection-smartscreen-threat-found-notification.png" alt-text="Microsoft Defender notificación Detección de amenazas antivirus proporciona opciones para obtener detalles":::
 
 5. Si el archivo se ejecuta o si ve que Microsoft Defender SmartScreen lo bloqueó, la protección entregada en la nube no funciona. Para obtener más información, consulte [Configuración y validación de conexiones de red para Microsoft Defender Antivirus](/windows/threat-protection/windows-defender-antivirus/configure-network-connections-windows-defender-antivirus?ocid=wd-av-demo-cloud-middle).
-
 
 ## <a name="see-also"></a>Vea también
 

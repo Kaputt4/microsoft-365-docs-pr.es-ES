@@ -11,17 +11,20 @@ audience: Admin
 ms.reviewer: esaggese
 ms.localizationpriority: medium
 ms.collection:
-- M365-security-compliance
-ms.openlocfilehash: c42104ccb74aba71b143d1ee31b0ed5893d9396f
-ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
+- purview-compliance
+- tier1
+ms.openlocfilehash: 71f3dd312b6ccd87079b3f5f958481ee3a229bd0
+ms.sourcegitcommit: 0d8fb571024f134d7480fe14cffc5e31a687d356
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/06/2022
-ms.locfileid: "66641842"
+ms.lasthandoff: 10/20/2022
+ms.locfileid: "68634770"
 ---
 # <a name="double-key-encryption-frequently-asked-questions"></a>Preguntas más frecuentes sobre el cifrado de doble clave
 
 ¿Tienes alguna pregunta sobre cómo funciona el cifrado de doble clave? Busque una respuesta aquí.
+
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
 
 ## <a name="what-is-double-key-encryption-dke"></a>¿Qué es el cifrado de doble clave (DKE)?
 
@@ -33,7 +36,7 @@ DKE le ayuda a cumplir los requisitos normativos en varias regulaciones y están
 
 ## <a name="can-i-use-double-key-encryption-with-microsoft-office-built-in-sensitivity-labeling"></a>¿Puedo usar el cifrado de doble clave con el etiquetado de confidencialidad integrado de Microsoft Office?
 
-Tendrá que usar azure Information Protection cliente de etiquetado unificado para proteger documentos con el cifrado de clave doble. Actualmente, no puede usar el etiquetado de confidencialidad integrado de Microsoft Office.
+Tendrá que usar el cliente de etiquetado unificado de Azure Information Protection para proteger documentos con el cifrado de doble clave. Actualmente, no puede usar el etiquetado de confidencialidad integrado de Microsoft Office.
 
 ## <a name="what-microsoft-365-apps-can-i-use-with-dke"></a>¿Qué Aplicaciones Microsoft 365 puedo usar con DKE?
 
@@ -71,7 +74,7 @@ Las etiquetas DKE se localizan en los mismos idiomas que otras etiquetas de conf
 
 No. No puede agregar DKE a una etiqueta después de crearla. En su lugar, debe elegir **Usar cifrado de doble clave** y proporcionar la dirección URL del servicio de cifrado de claves dobles al crear la etiqueta.
 
-## <a name="how-do-i-roll-my-dke-keys"></a>Cómo lanzar mis llaves DKE?
+## <a name="how-do-i-roll-my-dke-keys"></a>मैले कसरी lanzar mis llaves DKE?
 
 Para obtener instrucciones sobre la rotación (también denominada rotación o nueva clave) de la clave que se almacena en Azure, consulte [Operaciones para la clave de inquilino de Azure Information Protection](/azure/information-protection/operations-customer-managed-tenant-key).
 

@@ -7,7 +7,7 @@ ms.service: microsoft-365-security
 ms.mktglfcycl: manage
 ms.sitesec: library
 ms.localizationpriority: medium
-ms.topic: article
+ms.topic: conceptual
 author: denisebmsft
 ms.author: deniseb
 ms.date: 08/26/2021
@@ -19,12 +19,12 @@ ms.collection:
 - m365-security
 - tier2
 search.appverid: met150
-ms.openlocfilehash: 3da72ec820ca7693d6f62daff9d36fd945f81c7a
-ms.sourcegitcommit: 4e42bafee965446f44f7f57d1defed2b9b24fce8
+ms.openlocfilehash: 52344d74940d340b5d9a57f42210c67b6184bb40
+ms.sourcegitcommit: 0d8fb571024f134d7480fe14cffc5e31a687d356
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/30/2022
-ms.locfileid: "68224984"
+ms.lasthandoff: 10/20/2022
+ms.locfileid: "68625949"
 ---
 # <a name="specify-the-cloud-protection-level"></a>Especificar el nivel de protección en la nube
 
@@ -37,7 +37,7 @@ ms.locfileid: "68224984"
 **Plataformas**
 - Windows
 
-La protección en la nube funciona junto con Microsoft Defender Antivirus para ofrecer protección a los puntos de conexión mucho más rápido que a través de las actualizaciones de inteligencia de seguridad tradicionales. Puede configurar el nivel de protección en la nube mediante Microsoft Endpoint Manager (recomendado) o directiva de grupo.
+La protección en la nube funciona junto con Microsoft Defender Antivirus para ofrecer protección a los puntos de conexión mucho más rápido que a través de las actualizaciones de inteligencia de seguridad tradicionales. Puede configurar el nivel de protección en la nube mediante Microsoft Endpoint Manager (recomendado) o समूह नीति.
 
 > [!NOTE]
 > Al seleccionar **Alta**, **Alta +** o **Cero tolerancia** , se podrían detectar algunos archivos legítimos. Si esto sucede, puede desbloquear el archivo detectado o disputar esa detección en el portal de Microsoft 365 Defender.
@@ -67,13 +67,13 @@ La protección en la nube funciona junto con Microsoft Defender Antivirus para o
 > - [Configurar Endpoint Protection](/mem/configmgr/protect/deploy-use/endpoint-protection-configure)
 > - [Adición de la configuración de Endpoint Protection en Intune](/mem/intune/protect/endpoint-protection-configure)
 
-## <a name="use-group-policy-to-specify-the-level-of-cloud-protection"></a>Uso de directiva de grupo para especificar el nivel de protección en la nube
+## <a name="use-group-policy-to-specify-the-level-of-cloud-protection"></a>Uso de समूह नीति para especificar el nivel de protección en la nube
 
-1. En la máquina de administración de directiva de grupo, abra la [consola de administración de directiva de grupo](/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/cc731212(v=ws.11)).
+1. En la máquina de administración de समूह नीति, abra la [consola de administración de समूह नीति](/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/cc731212(v=ws.11)).
 
-2. Haga clic con el botón derecho en el objeto directiva de grupo que desea configurar y, a continuación, seleccione **Editar**.
+2. Haga clic con el botón derecho en el objeto समूह नीति que desea configurar y, a continuación, seleccione **Editar**.
 
-3. En directiva de grupo **Editor de administración**, vaya a **Configuración** \> del equipo **Plantillas administrativas**.
+3. En el **Editor de administración de समूह नीति** vaya a **Configuración** \> del equipo **Plantillas administrativas**.
 
 4. Expanda el árbol a **Componentes** \> **de Windows Microsoft Defender Antivirus** \> **MpEngine**.
 
@@ -88,10 +88,10 @@ La protección en la nube funciona junto con Microsoft Defender Antivirus para o
 
 6. Seleccione **Aceptar**.
 
-7. Implemente el objeto directiva de grupo actualizado. Consulte [directiva de grupo Management Console](/windows/win32/srvnodes/group-policy)
+7. Implemente el objeto समूह नीति actualizado. Consulte [समूह नीति Management Console](/windows/win32/srvnodes/group-policy)
 
 > [!TIP]
-> ¿Usa directiva de grupo Objetos en el entorno local? Vea cómo se traducen en la nube. [Analice los objetos de directiva de grupo locales mediante directiva de grupo análisis en Microsoft Endpoint Manager - Versión preliminar](/mem/intune/configuration/group-policy-analytics).
+> ¿Usa समूह नीति Objetos en el entorno local? Vea cómo se traducen en la nube. [Analice los objetos de directiva de grupo locales mediante el análisis de समूह नीति en Microsoft Endpoint Manager : versión preliminar](/mem/intune/configuration/group-policy-analytics).
 
 > [!TIP]
 > Si busca información relacionada con el antivirus para otras plataformas, consulte:

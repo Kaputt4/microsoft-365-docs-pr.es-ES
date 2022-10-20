@@ -7,7 +7,7 @@ ms.mktglfcycl: manage
 ms.sitesec: library
 ms.pagetype: security
 ms.localizationpriority: medium
-ms.topic: article
+ms.topic: conceptual
 author: denisebmsft
 ms.author: deniseb
 ms.custom: nextgen
@@ -18,12 +18,12 @@ ms.collection:
 - m365-security
 - tier2
 search.appverid: met150
-ms.openlocfilehash: 77eaa6b2c251b08fc52c420dda5f139790903cdf
-ms.sourcegitcommit: 4e42bafee965446f44f7f57d1defed2b9b24fce8
+ms.openlocfilehash: d85a35740b9ccdc11aedcb46ded9e43971002873
+ms.sourcegitcommit: 0d8fb571024f134d7480fe14cffc5e31a687d356
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/30/2022
-ms.locfileid: "68232262"
+ms.lasthandoff: 10/20/2022
+ms.locfileid: "68620049"
 ---
 # <a name="manage-updates-for-mobile-devices-and-virtual-machines-vms"></a>Administrar las actualizaciones de dispositivos móviles y máquinas virtuales
 
@@ -59,15 +59,15 @@ Esto significa que las actualizaciones de protección se pueden entregar a los d
 
 Puede participar en Microsoft Update en el dispositivo móvil de una de las siguientes maneras:
 
-- Cambie la configuración con directiva de grupo.
+- Cambie la configuración con समूह नीति.
 - Use un VBScript para crear un script y, a continuación, ejecútelo en cada equipo de la red.
 - Opte manualmente en todos los equipos de la red a través del menú **Configuración** .
 
-### <a name="use-group-policy-to-opt-in-to-microsoft-update"></a>Uso de directiva de grupo para participar en Microsoft Update
+### <a name="use-group-policy-to-opt-in-to-microsoft-update"></a>Uso de समूह नीति para participar en Microsoft Update
 
-1. En la máquina de administración de directiva de grupo, abra la [consola de administración de directiva de grupo](/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/cc731212(v=ws.11)), haga clic con el botón derecho en el objeto de directiva de grupo que desea configurar y seleccione **Editar**.
+1. En la máquina de administración de समूह नीति, abra la [consola de administración de समूह नीति](/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/cc731212(v=ws.11)), haga clic con el botón derecho en el objeto समूह नीति que desea configurar y seleccione **Editar**.
 
-2. En el **Editor de administración de directiva de grupo** vaya a **Configuración del equipo**.
+2. En el **Editor de administración de समूह नीति** vaya a **Configuración del equipo**.
 
 3. Seleccione **Directivas** y plantillas **administrativas**.
 
@@ -93,11 +93,11 @@ Puede participar en Microsoft Update en el dispositivo móvil de una de las sigu
 
 Puede configurar Microsoft Defender Antivirus para que solo descargue las actualizaciones de protección cuando el equipo esté conectado a una fuente de alimentación cableada.
 
-### <a name="use-group-policy-to-prevent-security-intelligence-updates-on-battery-power"></a>Uso de directiva de grupo para evitar actualizaciones de inteligencia de seguridad en la batería
+### <a name="use-group-policy-to-prevent-security-intelligence-updates-on-battery-power"></a>Uso de समूह नीति para evitar actualizaciones de inteligencia de seguridad en la batería
 
-1. En la máquina de administración de directiva de grupo, abra la [consola de administración de directiva de grupo](/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/cc731212(v=ws.11)), elija el objeto de directiva de grupo que desea configurar y ábralo para su edición.
+1. En la máquina de administración de समूह नीति, abra la [consola de administración de समूह नीति](/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/cc731212(v=ws.11)), elija el objeto de समूह नीति que desea configurar y ábralo para su edición.
 
-2. En el **Editor de administración de directiva de grupo** vaya a **Configuración del equipo**.
+2. En el **Editor de administración de समूह नीति** vaya a **Configuración del equipo**.
 
 3. Seleccione **Directivas** y plantillas **administrativas**.
 

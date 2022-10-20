@@ -8,7 +8,7 @@ ms.mktglfcycl: manage
 ms.sitesec: library
 ms.pagetype: security
 ms.localizationpriority: medium
-ms.topic: article
+ms.topic: conceptual
 author: denisebmsft
 ms.author: deniseb
 ms.custom: nextgen
@@ -18,12 +18,12 @@ ms.subservice: mde
 ms.collection:
 - m365-security
 - tier2
-ms.openlocfilehash: 433ecbe6bef2b6af770a2572c7878e4ee2aabc42
-ms.sourcegitcommit: 4e42bafee965446f44f7f57d1defed2b9b24fce8
+ms.openlocfilehash: 6620657f15d34687aeff99e6b9e5b26f391e4186
+ms.sourcegitcommit: 0d8fb571024f134d7480fe14cffc5e31a687d356
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/30/2022
-ms.locfileid: "68228150"
+ms.lasthandoff: 10/20/2022
+ms.locfileid: "68630389"
 ---
 # <a name="manage-the-schedule-for-when-protection-updates-should-be-downloaded-and-applied"></a>Administrar la programación para cuándo se han de descargar y aplicar las actualizaciones de protección
 
@@ -62,15 +62,15 @@ También puede aleatorizar las veces en que cada punto de conexión comprueba y 
 
 5. [Implemente la directiva actualizada como de costumbre](/sccm/protect/deploy-use/endpoint-antimalware-policies#deploy-an-antimalware-policy-to-client-computers).
 
-## <a name="use-group-policy-to-schedule-protection-updates"></a>Uso de directiva de grupo para programar actualizaciones de protección
+## <a name="use-group-policy-to-schedule-protection-updates"></a>Uso de समूह नीति para programar actualizaciones de protección
 
 > [!IMPORTANT]
 > De forma predeterminada, "SignatureScheduleDay" se establece como "8" y "SignatureUpdateInterval" se establece como "0", por lo que Microsoft Defender Antivirus no programará las actualizaciones de protección.
 La habilitación de esta configuración invalidará ese valor predeterminado.
 
-1. En la máquina de administración de directiva de grupo, abra la [consola de administración de directiva de grupo](/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/cc731212(v=ws.11)), haga clic con el botón derecho en el objeto directiva de grupo que desea configurar y haga clic en **Editar**.
+1. En la máquina de administración de समूह नीति, abra la [consola de administración de समूह नीति](/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/cc731212(v=ws.11)), haga clic con el botón derecho en el objeto de समूह नीति que desea configurar y haga clic en **Editar**.
 
-2. En el **Editor de administración de directiva de grupo** vaya a **Configuración del equipo**.
+2. En el **Editor de administración de समूह नीति** vaya a **Configuración del equipo**.
 
 3. Haga clic en **Directivas** y, a continuación, **en Plantillas administrativas**.
 
@@ -106,7 +106,7 @@ SignatureUpdateInterval
 
 Consulte lo siguiente para obtener más información y los parámetros permitidos:
 
-- [API Windows Defender WMIv2](/previous-versions/windows/desktop/defender/windows-defender-wmiv2-apis-portal)
+- [API Windows डिफेन्डर WMIv2](/previous-versions/windows/desktop/defender/windows-defender-wmiv2-apis-portal)
 
 > [!TIP]
 > Si busca información relacionada con el antivirus para otras plataformas, consulte:

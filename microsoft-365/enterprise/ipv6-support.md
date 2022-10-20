@@ -20,16 +20,16 @@ search.appverid:
 - BCS160
 ms.assetid: c08786fb-298e-437c-8222-dab7625fc815
 description: 'Resumen: describe la compatibilidad con IPv6 en los componentes de Microsoft 365 y en las ofertas gubernamentales de Microsoft 365.'
-ms.openlocfilehash: db517778f2aa17af142c4204220cbcd3dbd026e4
-ms.sourcegitcommit: 0b7070ec119e00e0dafe030bbfbef0ae5c9afa19
+ms.openlocfilehash: ace89b7f49eb5535dd49119358c1936d8a6b638a
+ms.sourcegitcommit: 0d8fb571024f134d7480fe14cffc5e31a687d356
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/29/2022
-ms.locfileid: "68172651"
+ms.lasthandoff: 10/20/2022
+ms.locfileid: "68623969"
 ---
 # <a name="ipv6-support-in-microsoft-365-services"></a>Compatibilidad con IPv6 en los servicios de Microsoft 365
 
-Con la creciente adopción y compatibilidad de IPv6 entre redes empresariales, proveedores de servicios y dispositivos, muchos clientes se preguntan si sus usuarios pueden seguir accediendo a los servicios de Microsoft 365 desde clientes IPv6 y redes IPv6. Los servicios de Microsoft 365 se pueden usar correctamente desde dispositivos de pila doble IPv6 y solo IPv6. De hecho, tenemos un número creciente de clientes, desde consumidores hasta grandes empresas, que avanzan hacia una mayor adopción de IPv6. Para la mayoría de los clientes, IPv4 no desaparecerá por completo de su entorno digital, por lo que no estamos planeando requerir IPv6 ni anular la prioridad de IPv4 en ninguna característica o servicio de Microsoft 365.
+Con la creciente adopción y compatibilidad de IPv6 entre redes empresariales, proveedores de servicios y dispositivos, muchos clientes se preguntan si sus usuarios pueden seguir accediendo a los servicios de Microsoft 365 desde clientes IPv6 y redes IPv6. Los servicios de Microsoft 365 se pueden usar correctamente desde dispositivos de pila doble IPv6 y solo IPv6 (los dispositivos solo IPv6 requieren tecnologías de traducción como DNS64 o NAT64). De hecho, tenemos un número creciente de clientes, desde consumidores hasta grandes empresas, que avanzan hacia una mayor adopción de IPv6. Para la mayoría de los clientes, IPv4 no desaparecerá por completo de su entorno digital, por lo que no estamos planeando requerir IPv6 ni anular la prioridad de IPv4 en ninguna característica o servicio de Microsoft 365.
 
 Una de nuestras prioridades clave con Microsoft 365 es garantizar experiencias fluidas de clientes y usuarios a través de Internet desde cualquier ubicación, desde cualquier dispositivo. Esto incluye el acceso a Microsoft 365 desde dispositivos cliente que usan IPv6 en la configuración de pila dual, así como la transición a implementaciones de cliente solo IPv6. En la mayoría de los casos, cuando se sigue un modelo estándar basado en Internet de conexión a Microsoft 365 como se describe en [Principios de conectividad de red de Microsoft 365](microsoft-365-network-connectivity-principles.md), [direcciones URL y intervalos de direcciones IP de Microsoft 365](urls-and-ip-address-ranges.md) y [procedimientos recomendados de planeamiento de red de Microsoft 365](network-and-migration-planning.md#best-practices-for-network-planning-and-improving-migration-performance-for-office-365), las transiciones de IPv6 no interrumpirán la experiencia del usuario.
 

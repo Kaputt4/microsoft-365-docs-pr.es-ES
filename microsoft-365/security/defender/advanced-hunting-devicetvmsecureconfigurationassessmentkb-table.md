@@ -1,7 +1,7 @@
 ---
 title: Tabla DeviceTvmSecureConfigurationAssessmentKB en el esquema de búsqueda avanzada
 description: Obtenga información sobre las distintas configuraciones seguras evaluadas por Administración de vulnerabilidades de Microsoft Defender en la tabla DeviceTvmSecureConfigurationAssessmentKB del esquema de búsqueda avanzada.
-keywords: búsqueda avanzada, búsqueda de amenazas, búsqueda de ciberamenazas, Microsoft 365 Defender, microsoft 365, m365, búsqueda, consulta, telemetría, referencia de esquema, kusto, tabla, columna, tipo de datos, descripción, administración de vulnerabilidades & amenazas, TVM, administración de dispositivos, configuración de seguridad, MITRE ATT&marco CK, knowledge base, KB, DeviceTvmSecureConfigurationAssessmentKB, MDVM, Administración de vulnerabilidades de Microsoft Defender
+keywords: advanced hunting, threat hunting, cyber threat hunting, Microsoft 365 Defender, microsoft 365, m365, search, query, telemetry, schema reference, kusto, table, column, data type, description, threat & vulnerability management, TVM, device management, security configuration, MITRE ATT&CK framework, ज्ञानाधार, KB, DeviceTvmSecureConfigurationAssessmentKB, MDVM, Administración de vulnerabilidades de Microsoft Defender
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.service: microsoft-365-security
@@ -19,13 +19,13 @@ audience: ITPro
 ms.collection:
 - m365-security
 - tier3
-ms.topic: article
-ms.openlocfilehash: f063771dcf16cfbe989a1706e6fb42311bec8922
-ms.sourcegitcommit: 12af9e8e3a6eaa090fda9e98ccb831dff65863a4
+ms.topic: conceptual
+ms.openlocfilehash: fd43b62e3bbb9d05e51f1b45c3b34fca2860fe3b
+ms.sourcegitcommit: 0d8fb571024f134d7480fe14cffc5e31a687d356
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/27/2022
-ms.locfileid: "68055730"
+ms.lasthandoff: 10/20/2022
+ms.locfileid: "68645855"
 ---
 # <a name="devicetvmsecureconfigurationassessmentkb"></a>DeviceTvmSecureConfigurationAssessmentKB
 

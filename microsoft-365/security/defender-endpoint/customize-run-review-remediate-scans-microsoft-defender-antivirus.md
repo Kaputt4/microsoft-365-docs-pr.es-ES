@@ -15,17 +15,17 @@ ms.date: 09/03/2018
 ms.reviewer: ''
 manager: dansimp
 ms.subservice: mde
-ms.topic: article
+ms.topic: conceptual
 ms.collection:
 - m365-security
 - tier2
 search.appverid: met150
-ms.openlocfilehash: 94350aa289b4c2d4e0c816c3332894ec4685d65f
-ms.sourcegitcommit: 0b7070ec119e00e0dafe030bbfbef0ae5c9afa19
+ms.openlocfilehash: 82cdf185f36bc337aa0c783d6d37a2fbb6e4036c
+ms.sourcegitcommit: 0d8fb571024f134d7480fe14cffc5e31a687d356
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/29/2022
-ms.locfileid: "68201669"
+ms.lasthandoff: 10/20/2022
+ms.locfileid: "68635716"
 ---
 # <a name="customize-initiate-and-review-the-results-of-microsoft-defender-antivirus-scans-and-remediation"></a>Personalización, inicio y revisión de los resultados de los exámenes y correcciones de Microsoft Defender Antivirus
 
@@ -37,7 +37,7 @@ ms.locfileid: "68201669"
 - [Microsoft Defender para punto de conexión Plan 1](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft Defender para punto de conexión Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 
-Puede usar directiva de grupo, PowerShell e Instrumental de administración de Windows (WMI) para configurar exámenes Microsoft Defender Antivirus. 
+Puede usar समूह नीति, PowerShell e Instrumental de administración de Windows (WMI) para configurar exámenes de antivirus de Microsoft Defender. 
 
 ## <a name="in-this-section"></a>En esta sección
 
@@ -48,4 +48,4 @@ Tema | Descripción
 [Configuración de la corrección de exámenes](configure-remediation-microsoft-defender-antivirus.md) | Configure lo que Microsoft Defender Antivirus debe hacer cuando detecte una amenaza y cuánto tiempo deben conservarse los archivos en cuarentena en la carpeta de cuarentena.
 [Configuración de exámenes programados](scheduled-catch-up-scans-microsoft-defender-antivirus.md) | Configurar exámenes periódicos (programados), incluidos cuándo se deben ejecutar y si se ejecutan como exámenes completos o rápidos
 [Configuración y ejecución de exámenes](run-scan-microsoft-defender-antivirus.md) | Ejecución y configuración de exámenes a petición mediante PowerShell, Instrumental de administración de Windows o individualmente en puntos de conexión con la aplicación Seguridad de Windows
-[Revisión de los resultados del examen](review-scan-results-microsoft-defender-antivirus.md) | Revise los resultados de los exámenes mediante Configuration Manager de punto de conexión de Microsoft, Microsoft Intune o la aplicación Seguridad de Windows
+[Revisión de los resultados del examen](review-scan-results-microsoft-defender-antivirus.md) | Revise los resultados de los exámenes mediante Microsoft Endpoint Configuration Manager, Microsoft Intune o la aplicación Seguridad de Windows

@@ -7,7 +7,7 @@ ms.mktglfcycl: manage
 ms.sitesec: library
 ms.pagetype: security
 ms.localizationpriority: medium
-ms.topic: article
+ms.topic: conceptual
 author: denisebmsft
 ms.author: deniseb
 ms.custom: nextgen
@@ -19,12 +19,12 @@ ms.collection:
 - m365-security
 - tier2
 search.appverid: met150
-ms.openlocfilehash: 0311f509f5c912cdfc72798f582e3f7b9c6a243d
-ms.sourcegitcommit: 4e42bafee965446f44f7f57d1defed2b9b24fce8
+ms.openlocfilehash: af8fe3221c4d71c3bac0d420ba3e429284df77a1
+ms.sourcegitcommit: 0d8fb571024f134d7480fe14cffc5e31a687d356
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/30/2022
-ms.locfileid: "68233098"
+ms.lasthandoff: 10/20/2022
+ms.locfileid: "68627244"
 ---
 # <a name="manage-event-based-forced-updates"></a>Administrar las actualizaciones forzadas basadas en eventos
 
@@ -43,9 +43,9 @@ Microsoft Defender Antivirus permite determinar si las actualizaciones deben pro
 
 ## <a name="check-for-protection-updates-before-running-a-scan"></a>Comprobación de actualizaciones de protección antes de ejecutar un examen
 
-Puede usar microsoft endpoint Configuration Manager, directiva de grupo, cmdlets de PowerShell y WMI para forzar a Microsoft Defender Antivirus a comprobar y descargar las actualizaciones de protección antes de ejecutar un examen programado.
+Puede usar Microsoft Endpoint Configuration Manager, समूह नीति, cmdlets de PowerShell y WMI para forzar a Microsoft Defender Antivirus a comprobar y descargar las actualizaciones de protección antes de ejecutar un examen programado.
 
-### <a name="use-configuration-manager-to-check-for-protection-updates-before-running-a-scan"></a>Usar Configuration Manager para comprobar si hay actualizaciones de protección antes de ejecutar un examen
+### <a name="use-configuration-manager-to-check-for-protection-updates-before-running-a-scan"></a>Uso de Configuration Manager para comprobar si hay actualizaciones de protección antes de ejecutar un examen
 
 1. En la consola de Microsoft Endpoint Manager, abra la directiva antimalware que desea cambiar (haga clic en **Activos y compatibilidad** en el panel de navegación de la izquierda y, a continuación, expanda el árbol a Directivas **de antimalware** de **Endpoint Protection** \> **de información general**\>).
 
@@ -55,11 +55,11 @@ Puede usar microsoft endpoint Configuration Manager, directiva de grupo, cmdlets
 
 4. [Implemente la directiva actualizada como de costumbre](/sccm/protect/deploy-use/endpoint-antimalware-policies#deploy-an-antimalware-policy-to-client-computers).
 
-### <a name="use-group-policy-to-check-for-protection-updates-before-running-a-scan"></a>Usar directiva de grupo para comprobar si hay actualizaciones de protección antes de ejecutar un examen
+### <a name="use-group-policy-to-check-for-protection-updates-before-running-a-scan"></a>Usar समूह नीति para comprobar si hay actualizaciones de protección antes de ejecutar un examen
 
-1. En la máquina de administración de directiva de grupo, abra la [consola de administración de directiva de grupo](/previous-versions/windows/desktop/gpmc/group-policy-management-console-portal), haga clic con el botón derecho en el objeto directiva de grupo que desea configurar y haga clic en **Editar**.
+1. En la máquina de administración de समूह नीति, abra la [consola de administración de समूह नीति](/previous-versions/windows/desktop/gpmc/group-policy-management-console-portal), haga clic con el botón derecho en el objeto de समूह नीति que desea configurar y haga clic en **Editar**.
 
-2. Con el **Editor de administración de directiva de grupo** vaya a **Configuración del equipo**.
+2. Con el **Editor de administración de समूह नीति** vaya a **Configuración del equipo**.
 
 3. Haga clic en **Directivas** y, a continuación, **en Plantillas administrativas**.
 
@@ -87,15 +87,15 @@ Use el [método **Set** de la clase **MSFT_MpPreference**](/previous-versions/wi
 CheckForSignaturesBeforeRunningScan
 ```
 
-Para obtener más información, consulte [Windows Defender API WMIv2](/previous-versions/windows/desktop/defender/windows-defender-wmiv2-apis-portal).
+Para obtener más información, vea [Windows डिफेन्डर API WMIv2](/previous-versions/windows/desktop/defender/windows-defender-wmiv2-apis-portal).
 
 ## <a name="check-for-protection-updates-on-startup"></a>Comprobación de actualizaciones de protección al iniciar
 
-Puede usar directiva de grupo para forzar a Microsoft Defender Antivirus a comprobar y descargar las actualizaciones de protección cuando se inicie la máquina.
+Puede usar समूह नीति para forzar a Microsoft Defender Antivirus a comprobar y descargar las actualizaciones de protección cuando se inicie la máquina.
 
-1. En el equipo de administración de directiva de grupo, abra la [consola de administración de directiva de grupo](/previous-versions/windows/desktop/gpmc/group-policy-management-console-portal), haga clic con el botón derecho en el objeto directiva de grupo que desea configurar y haga clic en **Editar**.
+1. En el equipo de administración de समूह नीति, abra la [consola de administración de समूह नीति](/previous-versions/windows/desktop/gpmc/group-policy-management-console-portal), haga clic con el botón derecho en el objeto समूह नीति que desea configurar y haga clic en **Editar**.
 
-2. Con el **Editor de administración de directiva de grupo** vaya a **Configuración del equipo**.
+2. Con el **Editor de administración de समूह नीति** vaya a **Configuración del equipo**.
 
 3. Haga clic en **Directivas** y, a continuación, **en Plantillas administrativas**.
 
@@ -105,13 +105,13 @@ Puede usar directiva de grupo para forzar a Microsoft Defender Antivirus a compr
 
 6. Haga clic en **Aceptar**.
 
-También puede usar directiva de grupo, PowerShell o WMI para configurar Microsoft Defender Antivirus para comprobar si hay actualizaciones en el inicio, incluso cuando no se está ejecutando.
+También puede usar समूह नीति, PowerShell o WMI para configurar Microsoft Defender Antivirus para comprobar si hay actualizaciones en el inicio, incluso cuando no se está ejecutando.
 
-### <a name="use-group-policy-to-download-updates-when-microsoft-defender-antivirus-is-not-present"></a>Uso de directiva de grupo para descargar actualizaciones cuando Microsoft Defender Antivirus no está presente
+### <a name="use-group-policy-to-download-updates-when-microsoft-defender-antivirus-is-not-present"></a>Use समूह नीति para descargar actualizaciones cuando no esté presente Microsoft Defender Antivirus.
 
-1. En la máquina de administración de directiva de grupo, abra la [consola de administración de directiva de grupo](/previous-versions/windows/desktop/gpmc/group-policy-management-console-portal), haga clic con el botón derecho en el objeto directiva de grupo que desea configurar y haga clic en **Editar**.
+1. En la máquina de administración de समूह नीति, abra la [consola de administración de समूह नीति](/previous-versions/windows/desktop/gpmc/group-policy-management-console-portal), haga clic con el botón derecho en el objeto de समूह नीति que desea configurar y haga clic en **Editar**.
 
-2. Con el **Editor de administración de directiva de grupo**, vaya a **Configuración del equipo**.
+2. Con el **Editor de administración de समूह नीति**, vaya a **Configuración del equipo**.
 
 3. Haga clic en **Directivas** y, a continuación, **en Plantillas administrativas**.
 
@@ -139,7 +139,7 @@ Use el [método **Set** de la clase **MSFT_MpPreference**](/previous-versions/wi
 SignatureDisableUpdateOnStartupWithoutEngine
 ```
 
-Para obtener más información, consulte [Windows Defender API WMIv2](/previous-versions/windows/desktop/defender/windows-defender-wmiv2-apis-portal).
+Para obtener más información, vea [Windows डिफेन्डर API WMIv2](/previous-versions/windows/desktop/defender/windows-defender-wmiv2-apis-portal).
 
 <a id="cloud-report-updates"></a>
 
@@ -147,13 +147,13 @@ Para obtener más información, consulte [Windows Defender API WMIv2](/previous-
 
 Microsoft Defender Antivirus puede realizar cambios en su protección en función de la protección proporcionada en la nube. Estos cambios pueden producirse fuera de las actualizaciones de protección normales o programadas.
 
-Si ha habilitado la protección proporcionada en la nube, Microsoft Defender Antivirus enviará archivos sospechosos a la nube de Windows Defender. Si el servicio en la nube informa de que el archivo es malintencionado y el archivo se detecta en una actualización de protección reciente, puede usar directiva de grupo para configurar Microsoft Defender Antivirus para recibir automáticamente esa actualización de protección. También se pueden aplicar otras actualizaciones de protección importantes.
+Si ha habilitado la protección proporcionada en la nube, Microsoft Defender Antivirus enviará archivos sospechosos a la nube de Windows डिफेन्डर. Si el servicio en la nube informa de que el archivo es malintencionado y el archivo se detecta en una actualización de protección reciente, puede usar समूह नीति para configurar Microsoft Defender Antivirus para recibir automáticamente esa actualización de protección. También se pueden aplicar otras actualizaciones de protección importantes.
 
-### <a name="use-group-policy-to-automatically-download-recent-updates-based-on-cloud-delivered-protection"></a>Uso de directiva de grupo para descargar automáticamente actualizaciones recientes basadas en la protección proporcionada en la nube
+### <a name="use-group-policy-to-automatically-download-recent-updates-based-on-cloud-delivered-protection"></a>Uso de समूह नीति para descargar automáticamente las actualizaciones recientes basadas en la protección proporcionada en la nube
 
-1. En la máquina de administración de directiva de grupo, abra la [consola de administración de directiva de grupo](/previous-versions/windows/desktop/gpmc/group-policy-management-console-portal), haga clic con el botón derecho en el objeto directiva de grupo que desea configurar y haga clic en **Editar**.
+1. En la máquina de administración de समूह नीति, abra la [consola de administración de समूह नीति](/previous-versions/windows/desktop/gpmc/group-policy-management-console-portal), haga clic con el botón derecho en el objeto de समूह नीति que desea configurar y haga clic en **Editar**.
 
-2. Con el **Editor de administración de directiva de grupo** vaya a **Configuración del equipo**.
+2. Con el **Editor de administración de समूह नीति** vaya a **Configuración del equipo**.
 
 3. Haga clic en **Directivas** y, a continuación, **en Plantillas administrativas**.
 

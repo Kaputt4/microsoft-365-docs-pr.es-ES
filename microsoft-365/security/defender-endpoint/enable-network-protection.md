@@ -1,12 +1,13 @@
 ---
 title: Habilitar protección de red
-description: Habilite la protección de red con directiva de grupo, PowerShell o Mobile Administración de dispositivos y Configuration Manager.
+description: Habilite la protección de red con समूह नीति, PowerShell o Mobile Device Management y Configuration Manager.
 keywords: Protección de red, vulnerabilidades de seguridad, sitio web malintencionado, ip, dominio, dominios, habilitar, activar
 ms.service: microsoft-365-security
 ms.mktglfcycl: manage
 ms.sitesec: library
 ms.pagetype: security
 ms.localizationpriority: medium
+ms.date: 10/18/2022
 ms.topic: conceptual
 author: denisebmsft
 ms.author: deniseb
@@ -17,12 +18,12 @@ ms.collection:
 - m365-security
 - tier2
 search.appverid: met150
-ms.openlocfilehash: 99bf1ffbb7f356434eaaa469cf9e4b7201c7b6e0
-ms.sourcegitcommit: 0b7070ec119e00e0dafe030bbfbef0ae5c9afa19
+ms.openlocfilehash: f5a63939747234a236901735be1fc0d4a970d299
+ms.sourcegitcommit: 0d8fb571024f134d7480fe14cffc5e31a687d356
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/29/2022
-ms.locfileid: "68200327"
+ms.lasthandoff: 10/20/2022
+ms.locfileid: "68638382"
 ---
 # <a name="turn-on-network-protection"></a>Habilitar protección de red
 
@@ -56,9 +57,9 @@ Compruebe si se ha habilitado la protección de red en un dispositivo local medi
 
 2. Elija **HKEY_LOCAL_MACHINE** en el menú lateral.
 
-3. Navegue por los menús anidados a **Directivas** \> **de SOFTWARE** \> **de Microsoft** \> **Windows Defender** \> **Windows Defender Protección de red de Protección contra vulnerabilidades** \> de **seguridad**.
+3. Navegue por los menús anidados hasta **Directivas** \> **de SOFTWARE** \> **Microsoft** \> **Windows डिफेन्डर** \> **Administrador de directivas**.
 
-Si falta la clave, vaya a **SOFTWARE** \> **Microsoft** \> **Windows Defender** \> **Windows Defender Protección de red de Protección contra vulnerabilidades** \> de **seguridad**.
+Si falta la clave, vaya a **SOFTWARE** \> **Microsoft** \> **Windows डिफेन्डर** \> **Windows डिफेन्डर Protección contra vulnerabilidades de seguridad** \> **de red**.
 
 4. Seleccione **EnableNetworkProtection** para ver el estado actual de la protección de red en el dispositivo:
 
@@ -150,14 +151,14 @@ Use el procedimiento siguiente para habilitar la protección de red en equipos u
 
     *-O-*
 
-    En un equipo de administración de directiva de grupo unido a un dominio, abra la [consola de administración de directiva de grupo](https://technet.microsoft.com/library/cc731212.aspx), haga clic con el botón derecho en el objeto de directiva de grupo que desea configurar y seleccione **Editar**.
+    En un equipo de administración de समूह नीति unido a un dominio, abra la [consola de administración de समूह नीति](https://technet.microsoft.com/library/cc731212.aspx), haga clic con el botón derecho en el objeto de समूह नीति que desea configurar y seleccione **Editar**.
 
 2. En el **Editor de administración de directiva de grupo**, vaya a **Configuración del equipo** y seleccione **Plantillas administrativas**.
 
-3. Expanda el árbol a **componentes** \> de Windows **Microsoft Defender Antivirus** \> **Windows Defender Protección de red de Protección contra vulnerabilidades** \> de **seguridad**.
+3. Expanda el árbol a **componentes** \> de Windows **Microsoft Defender Antivirus** \> Microsoft Defender **Protección de red** **de Exploit Guard**\>.
 
    > [!NOTE]
-   > En versiones anteriores de Windows, la ruta de acceso de la directiva de grupo puede decir "Windows Defender Antivirus" en lugar de "Microsoft Defender Antivirus".
+   > En versiones anteriores de Windows, la ruta de acceso de la directiva de grupo puede decir "Windows डिफेन्डर Antivirus" en lugar de "Microsoft Defender Antivirus".
 
 4. Haga doble clic en la configuración **Impedir que usuarios y aplicaciones accedan a sitios web peligrosos** y establezca la opción **en Habilitado**. En la sección de opciones, debe especificar una de las siguientes opciones:
     - **Bloquear** : los usuarios no pueden acceder a direcciones IP y dominios malintencionados.
@@ -165,16 +166,16 @@ Use el procedimiento siguiente para habilitar la protección de red en equipos u
     - **Modo de auditoría** : si un usuario visita una dirección IP o dominio malintencionados, se registrará un evento en el registro de eventos de Windows. Sin embargo, no se impedirá que el usuario visite la dirección.
 
    > [!IMPORTANT]
-   > Para habilitar completamente la protección de red, debe establecer la opción directiva de grupo **en Habilitado** y también seleccionar **Bloquear** en el menú desplegable de opciones.
+   > Para habilitar completamente la protección de red, debe establecer la opción समूह नीति **en Habilitado** y también seleccionar **Bloquear** en el menú desplegable de opciones.
 
    > [!NOTE]
-   > Opcional: siga los pasos descritos en [Comprobación de si la protección de red está habilitada](#check-if-network-protection-is-enabled) para comprobar que la configuración de directiva de grupo es correcta.
+   > Opcional: siga los pasos descritos en [Comprobación de si la protección de red está habilitada](#check-if-network-protection-is-enabled) para comprobar que la configuración de समूह नीति es correcta.
 
 ### <a name="microsoft-endpoint-configuration-manager"></a>Microsoft Endpoint Configuration Manager
 
 1. Abre la consola de Configuration Manager.
 
-2. Vaya a **Assets and Compliance** > **Endpoint Protection** >  **Windows Defender Exploit Guard**.
+2. Vaya a **Assets and Compliance** > **Endpoint Protection** >  **Windows डिफेन्डर Exploit Guard**.
 
 3. Seleccione **Crear directiva de Protección contra vulnerabilidades** en la cinta de opciones para crear una nueva directiva.
    - Para editar una directiva existente, seleccione la directiva y, a continuación, seleccione **Propiedades** en la cinta de opciones o en el menú contextual. Edite la opción **Configurar protección de red** en la pestaña **Protección de red** .  
@@ -191,7 +192,7 @@ Use el procedimiento siguiente para habilitar la protección de red en equipos u
 7. En la cinta de opciones, seleccione **Implementar** para implementar la directiva en una colección.
 
 > [!IMPORTANT]
-> Una vez que implemente una directiva de Protección contra vulnerabilidades de seguridad de Configuration Manager, la configuración de Protección contra vulnerabilidades de seguridad no se quitará de los clientes si quita la implementación. `Delete not supported`se registra en el archivo ExploitGuardHandler.log del cliente de Configuration Manager si quita la implementación de Exploit Guard del cliente. <!--CMADO8538577-->
+> Una vez que implemente una directiva de Protección contra vulnerabilidades de seguridad desde Configuration Manager, la configuración de Exploit Guard no se quitará de los clientes si quita la implementación. `Delete not supported` se registra en el archivo ExploitGuardHandler.log del cliente de Configuration Manager si quita la implementación de Exploit Guard del cliente. <!--CMADO8538577-->
 > El siguiente script de PowerShell se puede ejecutar en el contexto SYSTEM para quitar esta configuración:<!--CMADO9907132-->
 >
 > ```powershell

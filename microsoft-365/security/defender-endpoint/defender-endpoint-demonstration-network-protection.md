@@ -16,51 +16,63 @@ audience: ITPro
 ms.collection:
 - m365-security
 - tier2
-ms.topic: article
+ms.topic: conceptual
 ms.subservice: mde
-ms.openlocfilehash: 200b390bfaac0777d6373ca5573a4118e580fe01
-ms.sourcegitcommit: 4f8200453d347de677461f27eb5a3802ce5cc888
+ms.openlocfilehash: 1d6693e625c1fd088d7275fc15dcbcde1a67c26c
+ms.sourcegitcommit: 0d8fb571024f134d7480fe14cffc5e31a687d356
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/12/2022
-ms.locfileid: "68542681"
+ms.lasthandoff: 10/20/2022
+ms.locfileid: "68638442"
 ---
-<!--- v-jweston resumes authorship and ms.authorship appx April-May 2023 ---> 
-
 # <a name="network-protection-demonstrations"></a>Demostraciones de protección de red
 
 Protección de red ayuda a reducir la superficie expuesta a ataques de los dispositivos a partir de eventos basados en Internet. Impide que los empleados usen cualquier aplicación para acceder a dominios peligrosos que pueden hospedar estafas de phishing, vulnerabilidades de seguridad y otro contenido malintencionado en Internet.
 
 ## <a name="scenario-requirements-and-setup"></a>Requisitos y configuración del escenario
 
-- Windows 10 1709 compilación 16273
+- Windows 10 1709, compilación 16273, Windows 11
 - Antivirus de Microsoft Defender
 
 ## <a name="powershell-command"></a>Comando de PowerShell
 
-Set-MpPreference -EnableNetworkProtection habilitado
+```powershell
+Set-MpPreference -EnableNetworkProtection Enabled
+```
 
-### <a name="states"></a>Estados
-- Habilitado = Modo de bloque (1)
-- AuditMode = Modo de auditoría (2)
-- Disabled = Off (0)
+## <a name="rule-states"></a>Estados de regla
+
+|Estado|Modo|Valor numérico|
+|---|---|---|
+|AuditMode|= Modo auditoría|2|
+|Habilitado|= Modo de bloque|1|
+|Deshabilitada|= Desactivado|0|
 
 ## <a name="verify-configuration"></a>Comprobación de la configuración
 
+```powershell
 Get-MpPreference
+```
 
 ## <a name="scenario"></a>Escenario
 
-1. Activar protección de red mediante el comando de PowerShell: Set-MpPreference -EnableNetworkProtection Enabled
-2. Con el explorador que prefiera (no Microsoft Edge*), vaya a la [prueba del sitio web de Protección de red](https://smartscreentestratings2.net/) (Microsoft Edge tiene otras medidas de seguridad para protegerse de esta vulnerabilidad (SmartScreen)). 
+1. Active Protección de red mediante el comando de PowerShell:
+
+   ```powershell
+   Set-MpPreference -EnableNetworkProtection Enabled
+   ```
+
+2. Con el explorador que prefiera (no Microsoft Edge*), vaya a la [prueba del sitio web de Protección de red](https://smartscreentestratings2.net/). Microsoft Edge tiene otras medidas de seguridad para protegerse de esta vulnerabilidad (SmartScreen).
 
 ## <a name="expected-results"></a>Resultados esperados
 
-La navegación al sitio web debe estar bloqueada y debería ver una notificación "Conexión bloqueada".
+La navegación al sitio web debe estar bloqueada y debería ver una notificación **de conexión bloqueada** .
 
 ## <a name="clean-up"></a>Limpiar
 
-Set-MpPreference -EnableNetworkProtection Deshabilitado
+```powershell
+Set-MpPreference -EnableNetworkProtection Disabled
+```
 
 ## <a name="see-also"></a>Vea también
 

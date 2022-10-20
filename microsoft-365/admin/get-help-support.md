@@ -25,12 +25,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Obtenga información sobre cómo obtener soporte técnico en línea o por teléfono para su suscripción Microsoft 365 para empresas. Debe ser el administrador de una suscripción de empresa para poder usar el soporte técnico.
-ms.openlocfilehash: 0dd352b8c4cc4399805a80132ba288bc76949e5d
-ms.sourcegitcommit: 0b7070ec119e00e0dafe030bbfbef0ae5c9afa19
+ms.openlocfilehash: ae3855d8ab7d236413541a029d3e0c82a6585a82
+ms.sourcegitcommit: 0d8fb571024f134d7480fe14cffc5e31a687d356
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/29/2022
-ms.locfileid: "68178259"
+ms.lasthandoff: 10/20/2022
+ms.locfileid: "68638926"
 ---
 # <a name="get-support-for-microsoft-365-for-business"></a>Obtener soporte técnico para Microsoft 365 para empresas
 
@@ -66,16 +66,15 @@ Save time by starting your service request online. We'll help you find a solutio
 
 ## <a name="phone-support"></a>Soporte por teléfono
 
-Use el menú desplegable de abajo para buscar el número de su país o región.
-
-[!INCLUDE [country-region-support-dropdown-list](../admin/includes/country-region-support-dropdown-list.md)]
-
-El soporte técnico de facturación y las horas (y los idiomas) de soporte técnico aparecen en la página de cada país seleccionada en la lista desplegable.
+Los números de teléfono para las horas de facturación y soporte técnico (e idiomas) aparecen en [Microsoft 366 para contactos de soporte técnico empresarial por país o región](support-contact-info.md).
 
 Administradores, tengan los datos de su cuenta preparados cuando llamen.
 
 > [!NOTE]
-> Para proteger mejor su organización, agregamos un paso de comprobación con PIN al proceso de verificación telefónica existente. Si se pone en contacto con nosotros desde un número que no esté registrado en el perfil de la organización, el representante de soporte técnico de Microsoft enviará un código de verificación al correo electrónico o número de teléfono registrado en el perfil del Centro de administración de Microsoft 365. Debe proporcionar este código al representante de soporte técnico para que le conceda acceso a la cuenta de su organización.
+> Para proteger mejor su organización, agregamos un paso de comprobación con PIN al proceso de verificación telefónica existente. Si se pone en contacto con nosotros desde un número que no esté registrado en el perfil de la organización, el representante de soporte técnico de Microsoft enviará un código de verificación al correo electrónico o número de teléfono registrado en el perfil del Centro de administración de Microsoft 365. Debe proporcionar este código al representante de soporte técnico para concederles acceso a la cuenta de su organización.
+
+El soporte técnico de facturación de Microsoft 365 para productos y servicios empresariales se proporciona en inglés de 9:00 a 17:00 (de 9:00 a 18:00 en Australia), de lunes a viernes.\
+Se proporciona soporte técnico en inglés 24 horas al día, 7 días a la semana.
 
 - **En los Estados Unidos, llame al 1 800 865 9408.**
 

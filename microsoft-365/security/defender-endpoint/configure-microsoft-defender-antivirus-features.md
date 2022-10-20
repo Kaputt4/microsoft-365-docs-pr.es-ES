@@ -1,7 +1,7 @@
 ---
 title: Configurar las funciones del Antivirus de Microsoft Defender
-description: Puede configurar las características Microsoft Defender Antivirus con Intune, Microsoft Endpoint Configuration Manager, directiva de grupo y PowerShell.
-keywords: Microsoft Defender Antivirus, antimalware, security, defender, configure, configuration, Config Manager, Microsoft Endpoint Configuration Manager, SCCM, Intune, MDM, mobile device management, GP, group policy, PowerShell
+description: Puede configurar características Microsoft Defender Antivirus con Intune, Microsoft Endpoint Configuration Manager, समूह नीति y PowerShell.
+keywords: Microsoft Defender Antivirus, antimalware, security, defender, configure, configuration, Config Manager, Microsoft Endpoint Configuration Manager, SCCM, Intune, MDM, administración de dispositivos móviles, GP, directiva de grupo, PowerShell
 ms.service: microsoft-365-security
 ms.subservice: mde
 ms.mktglfcycl: manage
@@ -10,7 +10,7 @@ ms.pagetype: security
 ms.localizationpriority: medium
 author: denisebmsft
 ms.author: deniseb
-ms.topic: article
+ms.topic: conceptual
 ms.custom: nextgen
 ms.reviewer: ''
 manager: dansimp
@@ -18,12 +18,12 @@ ms.collection:
 - m365-security
 - tier2
 search.appverid: met150
-ms.openlocfilehash: 7fd4f302d0e24ea72fc2b63eea652f479e72201b
-ms.sourcegitcommit: 0b7070ec119e00e0dafe030bbfbef0ae5c9afa19
+ms.openlocfilehash: 13777ebdc54c27814dfefc2ea81efa4d6e66d042
+ms.sourcegitcommit: 0d8fb571024f134d7480fe14cffc5e31a687d356
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/29/2022
-ms.locfileid: "68201845"
+ms.lasthandoff: 10/20/2022
+ms.locfileid: "68620489"
 ---
 # <a name="configure-microsoft-defender-antivirus-features"></a>Configurar las funciones del Antivirus de Microsoft Defender
 
@@ -40,7 +40,7 @@ ms.locfileid: "68201845"
 
 Puede configurar Microsoft Defender Antivirus con varias herramientas, como:
 
-- Microsoft Endpoint Manager (que incluye Microsoft Intune y Configuration Manager de punto de conexión de Microsoft)
+- Microsoft Endpoint Manager (que incluye Microsoft Intune y Microsoft Endpoint Configuration Manager)
 - Directiva de grupo
 - Cmdlets de PowerShell
 - Instrumental de administración de Windows (WMI)

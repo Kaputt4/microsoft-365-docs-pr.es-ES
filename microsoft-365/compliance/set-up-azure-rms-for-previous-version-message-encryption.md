@@ -13,18 +13,23 @@ ms.localizationpriority: medium
 search.appverid:
 - MET150
 - MOE150
+ms.collection:
+- tier3
+- purview-compliance
 ms.assetid: 2cba47b3-f09e-4911-9207-ac056fcb9db7
 description: La versión anterior de Office 365 Message Encryption depende de Microsoft Azure Rights Management (anteriormente conocida como Windows Azure Active Directory Rights Management).
-ms.openlocfilehash: 386056c282ea5f4ad996cc7ae7c50926436fe720
-ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
+ms.openlocfilehash: 3c27ef38c73e4a1f3d325fc083e8e99f34b83157
+ms.sourcegitcommit: 0d8fb571024f134d7480fe14cffc5e31a687d356
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/06/2022
-ms.locfileid: "66641370"
+ms.lasthandoff: 10/20/2022
+ms.locfileid: "68647769"
 ---
 # <a name="set-up-azure-rights-management-for-the-previous-version-of-message-encryption"></a>Configuración de Azure Rights Management para la versión anterior de Cifrado de mensajes
 
-En este tema se describen los pasos que debe seguir para activar y configurar Azure Rights Management (RMS), parte de Azure Information Protection, para su uso con la versión anterior de Office 365 Message Encryption (OME).
+En este tema se describen los pasos que debe seguir para activar y configurar Azure Rights Management (RMS), que forma parte de Azure Information Protection, para su uso con la versión anterior de Office 365 Cifrado de mensajes (OME).
+
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
 
 ## <a name="this-article-only-applies-to-the-previous-version-of-ome"></a>Este artículo solo se aplica a la versión anterior de OME
 
@@ -39,7 +44,7 @@ Office 365 cifrado de mensajes (OME), incluido IRM, depende de Azure Rights Mana
 
 - Si tiene Azure Rights Management pero no está configurado para Exchange Online o Exchange Online Protection, en este artículo se explica cómo activar Azure Rights Management y, a continuación, se describe la mejor manera de configurar OME con la que trabajar. Azure Rights Management.
 
-- Si ya ha configurado OME para que funcione con Azure Rights Management para Exchange Online o Exchange Online Protection, en función de cómo lo configure, es posible que esté listo para empezar a usar OME y sus nuevas funcionalidades de inmediato. En este artículo se explica cómo determinar si ha configurado OME correctamente, qué hacer si necesita cambiar la configuración y qué ocurre si decide no cambiar la configuración. Por ejemplo, para usar las nuevas funcionalidades, debe usar Azure RMS con OME. No puede usar las nuevas funcionalidades con un Active Directory local RMS.
+- Si ya ha configurado OME para que funcione con Azure Rights Management para Exchange Online o Exchange Online Protection, en función de cómo lo configure, es posible que esté listo para empezar a usar OME y sus nuevas funcionalidades de inmediato. En este artículo se explica cómo determinar si ha configurado OME correctamente, qué hacer si necesita cambiar la configuración y qué ocurre si decide no cambiar la configuración. Por ejemplo, para usar las nuevas funcionalidades, debe usar Azure RMS con OME. No puede usar las nuevas funcionalidades con un RMS de Active Directory local.
 
 ## <a name="activate-azure-rights-management-for--the-previous-version-of-ome-in-office-365"></a>Activar Azure Rights Management para la versión anterior de OME en Office 365
 
@@ -50,7 +55,7 @@ Debe activar Azure Rights Management para que los usuarios de su organización p
 Un TPD es un archivo XML que contiene información sobre la configuración de administración de derechos de la organización. Por ejemplo, el TPD contiene información sobre el certificado de licenciante de servidor (SLC) que se usa para firmar y cifrar certificados y licencias, las direcciones URL usadas para licencias y publicación, etc. El TPD se importa en la organización mediante PowerShell.
 
 > [!IMPORTANT]
-> Anteriormente, podía optar por importar TPD desde el servicio Active Directory Rights Management (AD RMS) a su organización. Sin embargo, si lo hace, no podrá usar Cifrado de mensajes de Microsoft Purview y no se recomienda. Si su organización está configurada actualmente de esta manera, Microsoft recomienda crear un plan para migrar desde el Active Directory local RMS a Azure Information Protection basado en la nube. Para obtener más información, consulte [Migración de AD RMS a Azure Information Protection](/information-protection/plan-design/migrate-from-ad-rms-to-azure-rms). No podrá usar Cifrado de mensajes de Microsoft Purview hasta que haya completado la migración a Azure Information Protection.
+> Anteriormente, podía optar por importar TPD desde el servicio Active Directory Rights Management (AD RMS) a su organización. Sin embargo, si lo hace, no podrá usar Cifrado de mensajes de Microsoft Purview y no se recomienda. Si su organización está configurada actualmente de esta manera, Microsoft recomienda crear un plan para migrar desde su instancia local de Active Directory RMS a Azure Information Protection basada en la nube. Para más información, consulte [Migración de AD RMS a Azure Information Protection](/information-protection/plan-design/migrate-from-ad-rms-to-azure-rms). No podrá usar Cifrado de mensajes de Microsoft Purview hasta que haya completado la migración a Azure Information Protection.
 
 **Para importar TPD desde Azure RMS**:
 
@@ -108,7 +113,7 @@ Un TPD es un archivo XML que contiene información sobre la configuración de ad
 
 8. Para comprobar que ha importado correctamente el TPD y ha habilitado Azure Rights Management, use el cmdlet Test-IRMConfiguration para probar Azure Rights Management funcionalidad. Para obtener más información, vea "Ejemplo 1" en [Test-IRMConfiguration](/powershell/module/exchange/test-irmconfiguration).
 
-## <a name="i-have-the-previous-version-of-ome-set-up-with-active-directory-rights-management-not-azure-information-protection-what-do-i-do"></a>Tengo la versión anterior de OME configurada con Active Directory Rights Management no con Azure Information Protection, ¿qué hago?
+## <a name="i-have-the-previous-version-of-ome-set-up-with-active-directory-rights-management-not-azure-information-protection-what-do-i-do"></a>Tengo la versión anterior de OME configurada con Active Directory Rights Management y no con Azure Information Protection, ¿qué hago?
 <a name="importTPDs"> </a>
 
 Puede seguir usando las reglas de flujo de correo de cifrado de mensajes Office 365 existentes con Active Directory Rights Management, pero no puede configurar ni usar Cifrado de mensajes de Microsoft Purview. En su lugar, debe migrar a Azure Information Protection. Para obtener información sobre la migración y lo que esto significa para su organización, consulte [Migración de AD RMS a Azure Information Protection](/information-protection/deploy-use/prepare-environment-adrms).

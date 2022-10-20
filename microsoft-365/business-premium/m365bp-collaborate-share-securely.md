@@ -24,18 +24,18 @@ search.appverid:
 - BCS160
 - MET150
 description: Información general sobre cómo colaborar y compartir archivos y comunicarse de forma segura con Teams en Microsoft 365 Empresa Premium. En el entorno cerrado proporcionado por Teams, los archivos y las comunicaciones están libres de ciberamenazas y ciberataques.
-ms.openlocfilehash: 4adbe21a2a764d92decc01ccfeb8d5ac456b8e15
-ms.sourcegitcommit: 0283c436f3ba61a708b52b57a1955f5ea74376a3
+ms.openlocfilehash: 9dfe466c2579c3650cab8d28c9ece809925b4955
+ms.sourcegitcommit: 0d8fb571024f134d7480fe14cffc5e31a687d356
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/28/2022
-ms.locfileid: "68097147"
+ms.lasthandoff: 10/20/2022
+ms.locfileid: "68626651"
 ---
 # <a name="collaborate-and-share-securely"></a>Colaborar y compartir de forma segura
 
 :::image type="content" source="media/mission5.png" alt-text="Colabore y comparta de forma segura con SharePoint y OneDrive de Microsoft Teams.":::
 
-Ahora que está protegido por las aplicaciones de Office de Microsoft 365 Empresa Premium, su próxima misión es configurar la comunicación y el uso compartido de archivos seguros. La mejor manera de colaborar y compartir de forma segura es usar Microsoft Teams. Con Microsoft Teams, todos sus archivos y comunicaciones se encuentran en un entorno protegido y no se almacenan de forma no segura fuera de él. Su organización depende de la protección de sus datos e información, lo que significa que quiere proteger sus archivos por todos los medios posibles.
+Ahora que está protegido por las Microsoft 365 Empresa Premium aplicaciones de Microsoft 365, su próxima misión es configurar el uso compartido de archivos y la comunicación seguros. La mejor manera de colaborar y compartir de forma segura es usar Microsoft Teams. Con Microsoft Teams, todos sus archivos y comunicaciones se encuentran en un entorno protegido y no se almacenan de forma no segura fuera de él. Su organización depende de la protección de sus datos e información, lo que significa que quiere proteger sus archivos por todos los medios posibles.
 
 Sus objetivos son:
 

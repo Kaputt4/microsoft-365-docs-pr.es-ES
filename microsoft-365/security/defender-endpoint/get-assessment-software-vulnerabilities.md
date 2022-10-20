@@ -11,17 +11,19 @@ author: jweston-1
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
-ms.collection: M365-security-compliance
-ms.topic: article
+ms.collection:
+- m365-security
+- tier3
+ms.topic: conceptual
 ms.subservice: mde
 ms.custom: api
 search.appverid: met150
-ms.openlocfilehash: 2bf3937dd3e9f500289284d18cfe0784ac3f08e9
-ms.sourcegitcommit: 9b133379196da2b3a4bb311b07ff274f43780f68
+ms.openlocfilehash: 573f39e7688b06183f5a56f7d8b3ab7c155a9864
+ms.sourcegitcommit: 0d8fb571024f134d7480fe14cffc5e31a687d356
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/14/2022
-ms.locfileid: "67696801"
+ms.lasthandoff: 10/20/2022
+ms.locfileid: "68647087"
 ---
 # <a name="export-software-vulnerabilities-assessment-per-device"></a>Exportación de la evaluación de vulnerabilidades de software por dispositivo
 
@@ -113,7 +115,7 @@ OSPlatform|Cadena|Plataforma del sistema operativo que se ejecuta en el disposit
 RbacGroupName|Cadena|El grupo de control de acceso basado en rol (RBAC). Si este dispositivo no está asignado a ningún grupo de RBAC, el valor será "Sin asignar". Si la organización no contiene ningún grupo de RBAC, el valor será "Ninguno".|Servidores
 RecommendationReference|Cadena|Referencia al identificador de recomendación relacionado con este software.|_va-microsoft-silverlight_
 RecommendedSecurityUpdate (opcional)|Cadena|Nombre o descripción de la actualización de seguridad proporcionada por el proveedor de software para solucionar la vulnerabilidad.|Novedades de seguridad de abril de 2020
-RecommendedSecurityUpdateId (opcional)|Cadena|Identificador de las actualizaciones de seguridad o identificador aplicables para los artículos de guía o knowledge base (KB) correspondientes|4550961
+RecommendedSecurityUpdateId (opcional)|Cadena|Identificador de las actualizaciones de seguridad o identificador aplicables para las instrucciones o artículos de ज्ञानाधार (KB) correspondientes|4550961
 RegistryPaths|Cadena de matriz\[\]|Evidencia del Registro de que el producto está instalado en el dispositivo.|[ "HKEY_LOCAL_MACHINE\SOFTWARE\WOW6432Node\Microsoft\Windows\CurrentVersion\Uninstall\MicrosoftSilverlight" ]
 SecurityUpdateAvailable|Boolean|Indica si hay una actualización de seguridad disponible para el software.| Los valores posibles son true o false.
 SoftwareName|Cadena|Nombre del producto de software.|Chrome
@@ -404,7 +406,7 @@ OSPlatform|Cadena|Plataforma del sistema operativo que se ejecuta en el disposit
 RbacGroupName|Cadena|El grupo de control de acceso basado en rol (RBAC). Si este dispositivo no está asignado a ningún grupo de RBAC, el valor será "Sin asignar". Si la organización no contiene ningún grupo de RBAC, el valor será "Ninguno".|Servidores  
 RecommendationReference|string|Referencia al identificador de recomendación relacionado con este software.|va--microsoft--silverlight  
 RecommendedSecurityUpdate |Cadena|Nombre o descripción de la actualización de seguridad proporcionada por el proveedor de software para solucionar la vulnerabilidad.|Novedades de seguridad de abril de 2020  
-RecommendedSecurityUpdateId |Cadena|Identificador de las actualizaciones de seguridad o identificador aplicables para los artículos de guía o knowledge base (KB) correspondientes|4550961  
+RecommendedSecurityUpdateId |Cadena|Identificador de las actualizaciones de seguridad o identificador aplicables para las instrucciones o artículos de ज्ञानाधार (KB) correspondientes|4550961  
 RegistryPaths |Matriz[cadena]|Evidencia del Registro de que el producto está instalado en el dispositivo.|[ "HKEY_LOCAL_MACHINE\SOFTWARE\WOW6432Node\Microsoft\Windows\CurrentVersion\Uninstall\Google Chrome" ]  
 SoftwareName|Cadena|Nombre del producto de software.|Chrome  
 SoftwareVendor|Cadena|Nombre del proveedor de software.|Google  

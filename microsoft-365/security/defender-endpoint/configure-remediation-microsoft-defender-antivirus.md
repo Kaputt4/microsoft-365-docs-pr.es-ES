@@ -10,7 +10,7 @@ ms.pagetype: security
 ms.localizationpriority: medium
 author: denisebmsft
 ms.author: deniseb
-ms.topic: article
+ms.topic: conceptual
 ms.custom: nextgen
 ms.date: 10/18/2021
 ms.reviewer: ''
@@ -19,12 +19,12 @@ ms.collection:
 - m365-security
 - tier2
 search.appverid: met150
-ms.openlocfilehash: 0de06bfabf8ab592807cf81e21f69475fde5a4ae
-ms.sourcegitcommit: 4f8200453d347de677461f27eb5a3802ce5cc888
+ms.openlocfilehash: e650600b2a32c873d8ede16e27af87947f8f48d3
+ms.sourcegitcommit: 0d8fb571024f134d7480fe14cffc5e31a687d356
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/12/2022
-ms.locfileid: "68542923"
+ms.lasthandoff: 10/20/2022
+ms.locfileid: "68644667"
 ---
 # <a name="configure-remediation-for-microsoft-defender-antivirus-detections"></a>Corregir la detección de correcciones para el Antivirus de Windows Defender
 
@@ -40,13 +40,13 @@ ms.locfileid: "68542923"
 
 Cuando Microsoft Defender Antivirus ejecuta un examen, intenta corregir o quitar las amenazas detectadas. Puede configurar cómo Microsoft Defender Antivirus debe abordar determinadas amenazas, si se debe crear un punto de restauración antes de corregirlo y cuándo se deben quitar las amenazas.
 
-En este artículo se describe cómo configurar estas opciones mediante directiva de grupo, pero también puede usar Configuration Manager y [Microsoft Intune](/intune/device-restrictions-configure) de [punto de conexión de Microsoft](/configmgr/protect/deploy-use/endpoint-antimalware-policies#threat-overrides-settings).
+En este artículo se describe cómo configurar estas opciones mediante समूह नीति, pero también puede usar [Microsoft Endpoint Configuration Manager](/configmgr/protect/deploy-use/endpoint-antimalware-policies#threat-overrides-settings) y [Microsoft Intune](/intune/device-restrictions-configure).
 
 También puede usar el [cmdlet de PowerShell o la`Set-MpPreference` clase](/powershell/module/defender/set-mppreference) WMI para configurar estas opciones.[`MSFT_MpPreference`](/previous-versions/windows/desktop/defender/windows-defender-wmiv2-apis-portal)
 
 ## <a name="configure-remediation-options"></a>Configuración de opciones de corrección
 
-1. En el equipo de administración de directiva de grupo, abra la [consola de administración de directiva de grupo](/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/cc731212(v=ws.11)), haga clic con el botón derecho en el objeto directiva de grupo que desea configurar y haga clic en **Editar**.
+1. En el equipo de administración de समूह नीति, abra la [consola de administración de समूह नीति](/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/cc731212(v=ws.11)), haga clic con el botón derecho en el objeto समूह नीति que desea configurar y haga clic en **Editar**.
 
 2. En el **Editor de administración de directiva de grupo**, vaya a **Configuración del equipo** y seleccione **Plantillas administrativas**.
 
