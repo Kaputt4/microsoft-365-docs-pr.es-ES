@@ -19,13 +19,13 @@ audience: ITPro
 ms.collection:
 - m365-security
 - tier3
-ms.topic: article
-ms.openlocfilehash: b28fb5b05ae0bfdb34d8793e1e0f63814c4dd597
-ms.sourcegitcommit: 12af9e8e3a6eaa090fda9e98ccb831dff65863a4
+ms.topic: conceptual
+ms.openlocfilehash: 77fc9495f42e57c997bc25feba9030a0d32bd084
+ms.sourcegitcommit: 0d8fb571024f134d7480fe14cffc5e31a687d356
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/27/2022
-ms.locfileid: "68089507"
+ms.lasthandoff: 10/20/2022
+ms.locfileid: "68645956"
 ---
 # <a name="deviceprocessevents"></a>DeviceProcessEvents
 
@@ -81,7 +81,7 @@ Para obtener información sobre otras tablas del esquema de búsqueda avanzada, 
 | `InitiatingProcessAccountObjectId` | `string` | Identificador de objeto de Azure AD de la cuenta de usuario que ejecutó el proceso responsable del evento |
 | `InitiatingProcessLogonId` | `string` | Identificador de una sesión de inicio de sesión del proceso que inició el evento. Este identificador es único en la misma máquina solo entre reinicios. |
 | `InitiatingProcessIntegrityLevel` | `string` | Nivel de integridad del proceso que inició el evento. Windows asigna niveles de integridad a los procesos en función de ciertas características, como si se iniciaran desde una descarga de Internet. Estos niveles de integridad influyen en los permisos para los recursos |
-| `InitiatingProcessTokenElevation` | `string` | Tipo de token que indica la presencia o ausencia de elevación de privilegios de Access Control de usuario (UAC) aplicada al proceso que inició el evento |
+| `InitiatingProcessTokenElevation` | `string` | Tipo de token que indica la presencia o ausencia de elevación de privilegios del Control de acceso de usuario (UAC) aplicada al proceso que inició el evento |
 | `InitiatingProcessSHA1` | `string` | SHA-1 del proceso (archivo de imagen) que inició el evento |
 | `InitiatingProcessSHA256` | `string` | SHA-256 del proceso (archivo de imagen) que inició el evento. Este campo no suele estar rellenado; use la columna SHA1 cuando se encuentre disponible. |
 | `InitiatingProcessMD5` | `string` | Hash MD5 del proceso (archivo de imagen) que inició el evento |

@@ -14,20 +14,23 @@ audience: ITPro
 ms.collection:
 - m365-security
 - tier2
-ms.topic: article
+ms.topic: conceptual
 search.appverid: met150
-ms.openlocfilehash: 9032fccf08d64374ffc3c38d47b74db224becf45
-ms.sourcegitcommit: 4e42bafee965446f44f7f57d1defed2b9b24fce8
+ms.openlocfilehash: 1c402d93628a25baf3e7e904459172a000d8013d
+ms.sourcegitcommit: 0d8fb571024f134d7480fe14cffc5e31a687d356
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/30/2022
-ms.locfileid: "68232570"
+ms.lasthandoff: 10/20/2022
+ms.locfileid: "68639278"
 ---
 # <a name="submit-files-for-analysis"></a>Enviar archivos para su análisis
 
 Si tiene un archivo que sospecha que puede ser malware o se está detectando incorrectamente, puede enviarlo a nosotros para su análisis. Esta página tiene respuestas a algunas preguntas comunes sobre el envío de un archivo para su análisis.
 
-## <a name="how-do-i-submit-a-file-to-microsoft-for-analysis"></a>Cómo enviar un archivo a Microsoft para su análisis?
+> [!TIP]
+> Si la suscripción de su organización incluye [Microsoft Defender para punto de conexión plan 2](/microsoft-365/security/defender-endpoint/microsoft-defender-endpoint), [Microsoft Defender para Office 365 plan 2](/microsoft-365/security/office-365-security/defender-for-office-365) o [Microsoft 365 Defender](/microsoft-365/security/defender/microsoft-365-defender), puede usar los [nuevos envíos unificados. portal](https://techcommunity.microsoft.com/t5/microsoft-defender-for-endpoint/unified-submissions-in-microsoft-365-defender-now-generally/ba-p/3270770). Para más información, consulte [Envío de archivos en Microsoft Defender para punto de conexión](/microsoft-365/security/defender-endpoint/admin-submissions-mde).
+
+## <a name="how-do-i-submit-a-file-to-microsoft-for-analysis"></a>मैले कसरी enviar un archivo a Microsoft para su análisis?
 
 ### <a name="send-a-malware-file"></a>Envío de un archivo de malware
 
@@ -55,13 +58,13 @@ No, solo aceptamos envíos a través de nuestro [portal de envío de ejemplo](ht
 
 ## <a name="can-i-submit-a-sample-without-signing-in"></a>¿Puedo enviar un ejemplo sin iniciar sesión?
 
-No. Si es un cliente empresarial, debe iniciar sesión para que podamos priorizar el envío de forma adecuada. Si actualmente está experimentando un brote de virus o un incidente relacionado con la seguridad, debe ponerse en contacto con el profesional de soporte técnico de Microsoft designado o ir a [Soporte técnico de Microsoft](https://support.microsoft.com/) para obtener ayuda inmediata.
+No. Si es un cliente empresarial, debe iniciar sesión para que podamos priorizar el envío de forma adecuada. Si actualmente está experimentando un brote de virus o un incidente relacionado con la seguridad, debe ponerse en contacto con el profesional de soporte técnico de Microsoft designado o dirigirse al [Soporte técnico de Microsoft](https://support.microsoft.com/) para obtener ayuda inmediata.
 
 ## <a name="what-is-the-software-assurance-id-said"></a>¿Qué es el identificador de Software Assurance (SAID)?
 
 El [identificador de Software Assurance (SAID)](https://www.microsoft.com/licensing/licensing-programs/software-assurance-default.aspx) es para que los clientes empresariales realicen un seguimiento de los derechos de soporte técnico. El portal de envío acepta y conserva la información de SAID y permite a los clientes con SAID válidos realizar envíos de mayor prioridad.
 
-### <a name="how-do-i-dispute-the-detection-of-my-program"></a>Cómo disputa la detección de mi programa?
+### <a name="how-do-i-dispute-the-detection-of-my-program"></a>मैले कसरी disputa la detección de mi programa?
 
 [Envíe el archivo](https://www.microsoft.com/wdsi/filesubmission) en cuestión como desarrollador de software. Espere hasta que su envío tenga una determinación final.
 
@@ -69,7 +72,7 @@ Si no está satisfecho con nuestra determinación del envío, use el formulario 
 
 Animamos a todos los proveedores y desarrolladores de software a leer sobre [cómo Microsoft identifica el malware y el software no deseado](criteria.md).
 
-## <a name="how-do-i-track-or-view-past-sample-submissions"></a>Cómo realizar un seguimiento o ver los envíos de ejemplo anteriores?
+## <a name="how-do-i-track-or-view-past-sample-submissions"></a>मैले कसरी realizar un seguimiento o ver los envíos de ejemplo anteriores?
 
 Puede realizar un seguimiento de los envíos a través de la [página del historial de envíos](https://www.microsoft.com/wdsi/submissionhistory).
 

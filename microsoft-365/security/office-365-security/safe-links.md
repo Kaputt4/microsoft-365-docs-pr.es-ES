@@ -28,12 +28,12 @@ ms.assetid: dd6a1fef-ec4a-4cf4-a25a-bb591c5811e3
 description: Obtenga información sobre la protección de vínculos seguros en Defender para Office 365 para proteger una organización contra suplantación de identidad (phishing) y otros ataques que usan direcciones URL malintencionadas. Descubra vínculos seguros de Teams y vea los gráficos de los mensajes de vínculos seguros.
 ms.subservice: mdo
 ms.service: microsoft-365-security
-ms.openlocfilehash: 048de0ae500dfbeeb9f4981af50d4297a80b6e9c
-ms.sourcegitcommit: c550d73b153ad4856188c9109d9d80f02ca989b6
+ms.openlocfilehash: 9365cc73239eb9086c565468aeb8f3104ad35b6f
+ms.sourcegitcommit: 0d8fb571024f134d7480fe14cffc5e31a687d356
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/29/2022
-ms.locfileid: "68140928"
+ms.lasthandoff: 10/20/2022
+ms.locfileid: "68626871"
 ---
 # <a name="safe-links-in-microsoft-defender-for-office-365"></a>Vínculos seguros en Microsoft Defender para Office 365
 
@@ -255,8 +255,6 @@ Esta configuración se aplica a vínculos seguros en el correo electrónico, Tea
 - **Seguimiento de los clics del usuario**: active o desactive el almacenamiento de datos de clic de vínculos seguros para las direcciones URL en las que se ha hecho clic. Se recomienda dejar esta opción seleccionada (activada).
 
   En Vínculos seguros para aplicaciones de Office, esta configuración se aplica a las versiones de escritorio de Word, Excel, PowerPoint y Visio.
-
-  Actualmente no se admite el seguimiento de clics en direcciones URL para vínculos en mensajes de correo electrónico enviados entre remitentes internos y destinatarios internos.
 
   Si selecciona esta configuración, están disponibles las siguientes opciones:
 

@@ -10,31 +10,34 @@ ms.topic: article
 ms.service: O365-seccomp
 ms.localizationpriority: medium
 ms.collection:
-- M365-security-compliance
+- purview-compliance
 - m365solution-compliancemanager
 - m365initiative-compliance
+- tier1
 ms.custom: admindeeplinkCOMPLIANCE
 search.appverid:
 - MOE150
 - MET150
 description: Obtenga información sobre cómo crear alertas para actividades en el Administrador de cumplimiento de Microsoft Purview que pueden afectar a la puntuación de cumplimiento.
-ms.openlocfilehash: 499d1f005b67b2a9583d7138ce784b2e7ae1c8ad
-ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
+ms.openlocfilehash: 532dd4523d7364895ee385f5c2b6f96a9e3d51a0
+ms.sourcegitcommit: 0d8fb571024f134d7480fe14cffc5e31a687d356
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/06/2022
-ms.locfileid: "66642248"
+ms.lasthandoff: 10/20/2022
+ms.locfileid: "68636110"
 ---
 # <a name="microsoft-purview-compliance-manager-alerts-and-alert-policies"></a>Alertas y directivas de alertas del Administrador de cumplimiento de Microsoft Purview
 
 **En este artículo:** Obtenga información sobre cómo **establecer alertas** para determinadas actividades en el Administrador de cumplimiento, cómo administrar alertas y cómo **crear directivas de alertas** para definir condiciones de alerta.
 
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
+
 ## <a name="overview"></a>Información general
-El Administrador de cumplimiento puede alertarle de los cambios en cuanto se produzcan para que pueda seguir el seguimiento de los objetivos de cumplimiento. Por ejemplo, puede configurar alertas para informarle cuando el valor de puntuación de una acción de mejora ha aumentado o disminuido debido a un cambio de configuración en el inquilino, o cuando se ha asignado una acción de mejora a un usuario para realizar el trabajo de implementación o pruebas. Vea los [tipos de eventos para los](#create-an-alert-policy) que puede crear alertas.
+El Administrador de cumplimiento puede alertarle de los cambios tan pronto como se produzcan para que pueda seguir el seguimiento de los objetivos de cumplimiento. Por ejemplo, puede configurar alertas para informarle cuando el valor de puntuación de una acción de mejora ha aumentado o disminuido debido a un cambio de configuración en el inquilino, o cuando se ha asignado una acción de mejora a un usuario para realizar el trabajo de implementación o pruebas. Vea los [tipos de eventos para los](#create-an-alert-policy) que puede crear alertas.
 
 Para crear alertas, primero configure una directiva de alertas para describir las condiciones que desencadenan una alerta y la frecuencia de las notificaciones. Cuando detectemos una coincidencia con las condiciones de la directiva, recibirá una notificación por correo electrónico con detalles para que pueda determinar si quiere investigar o realizar más acciones.
 
-Todas las alertas se muestran en la pestaña **Alertas** del Administrador de cumplimiento y todas las directivas de alertas se muestran en la **pestaña Directivas de alerta**.  Todas las organizaciones ya tienen configurada una [directiva de cambio de puntuación predeterminada](#default-score-change-policy) .
+Todas las alertas aparecen en la pestaña **Alertas** del Administrador de cumplimiento y todas las directivas de alerta se muestran en la **pestaña Directivas de alerta**.  Todas las organizaciones ya tienen configurada una [directiva de cambio de puntuación predeterminada](#default-score-change-policy) .
 
 ## <a name="understanding-the-alerts-and-alert-policies-pages"></a>Descripción de las páginas alertas y directivas de alertas
 
@@ -43,7 +46,7 @@ Todas las alertas se muestran en la pestaña **Alertas** del Administrador de cu
 
 ### <a name="alert-policies-page"></a>Página Directivas de alerta
 
-Seleccione la pestaña **Directivas de alerta** en Administrador de cumplimiento para ver y administrar las directivas de alerta. La página **Directivas de alerta** contiene una tabla que enumera todas las directivas creadas por su organización. En esta página, puede crear nuevas directivas, editar las directivas existentes y cambiar el estado de activación y eliminar directivas.
+Seleccione la pestaña **Directivas de alerta** en el Administrador de cumplimiento para ver y administrar las directivas de alerta. La página **Directivas de alerta** contiene una tabla que enumera todas las directivas creadas por su organización. Desde esta página, puede crear nuevas directivas, editar directivas existentes, cambiar el estado de activación y eliminar directivas.
 
 En la **columna Estado**, **Activo** significa que la directiva está en vigor y desencadena alertas cuando se cumplen las condiciones. **Inactivo** significa que la directiva existe, pero no genera alertas. La tabla de directivas también muestra la gravedad de la directiva y la fecha en que se modificó por última vez la directiva.
 
@@ -71,7 +74,7 @@ En la tabla siguiente se describe qué usuarios pueden crear y editar alertas y 
 Obtenga más información sobre [los roles de Azure en la portal de cumplimiento Microsoft Purview](microsoft-365-compliance-center-permissions.md#azure-roles-in-the-compliance-portal).
 
 
-| Role | Puede crear y editar directivas | Puede editar alertas | 
+| Rol | Puede crear y editar directivas | Puede editar alertas | 
 | :------------- | :-------------: | :------------: |
 | **Administración del administrador de cumplimiento**| Sí  | Sí | 
 | **Evaluador del Administrador de cumplimiento**| Sí | Sí | 
@@ -228,7 +231,7 @@ Para realizar una acción en una alerta, seleccione su fila en la página **Aler
 
 **Asignar alerta**: es posible que quiera asignar la alerta a un usuario para investigar o comprobar los eventos que provocaron la alerta. Al elegir esta opción, se abre un panel en el que puede seleccionar un usuario de su organización y asignarle la alerta. Para filtrar la vista de alertas, seleccione **Filtros** en la página **Alertas** y escriba el nombre del usuario en el campo **Asignado a** .
 
-**Alerta de correo electrónico**: es posible que quiera enviar un correo electrónico al usuario asociado a la actividad de la alerta para confirmar que ha realizado la acción. Al elegir esta opción, se abre una plantilla de correo electrónico con información básica sobre la alerta, que puede personalizar con instrucciones adicionales y enviar al usuario.
+**Email alerta**: es posible que desee enviar un correo electrónico al usuario asociado a la actividad de la alerta para confirmar que realizó la acción. Al elegir esta opción, se abre una plantilla de correo electrónico con información básica sobre la alerta, que puede personalizar con instrucciones adicionales y enviar al usuario.
 
 **Ver detalles de la directiva**: es posible que quiera revisar la configuración de la directiva que desencadenó la alerta. Tenga en cuenta que, al seleccionar esta opción, se le llevará directamente a la página **Directivas de alerta** con el panel de detalles de la directiva ya abierto. Ya no estará en la página **Alertas** cuando cierre el panel de detalles de la directiva.
 
@@ -251,7 +254,7 @@ Una vez generada una alerta, su estado es independiente del estado de la directi
 
 Cuando se elimina una directiva, las alertas generadas por esa directiva permanecerán en la página **Alertas** , pero no se generarán nuevas alertas.
 
-## <a name="email-notifications-of-alerts"></a>Notificaciones por correo electrónico de alertas
+## <a name="email-notifications-of-alerts"></a>Email notificaciones de alertas
 
 Al crear una directiva, se envía un correo electrónico al usuario que creó la directiva para avisarle de que se detectó una coincidencia. Puede optar por enviar estas notificaciones por correo electrónico a usuarios adicionales de su organización. Las alertas se producen casi en tiempo real y las notificaciones por correo electrónico se envían en cuanto se genera una alerta. El correo electrónico contendrá el nombre del evento, la gravedad, el tiempo detectado y un vínculo para ver la alerta en el Administrador de cumplimiento.
 
