@@ -14,16 +14,16 @@ audience: ITPro
 ms.collection:
 - m365-security
 - tier3
-ms.topic: article
+ms.topic: conceptual
 ms.subservice: mde
 ms.custom: api
 search.appverid: met150
-ms.openlocfilehash: bc186dc9808febf2e770c78f57ee199c57461329
-ms.sourcegitcommit: 0b7070ec119e00e0dafe030bbfbef0ae5c9afa19
+ms.openlocfilehash: 03404df675dfb018e4fdcae538ba7c0710db4248
+ms.sourcegitcommit: 0d8fb571024f134d7480fe14cffc5e31a687d356
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/29/2022
-ms.locfileid: "68167195"
+ms.lasthandoff: 10/20/2022
+ms.locfileid: "68624475"
 ---
 # <a name="export-assessment-methods-and-properties-per-device"></a>Exportación de métodos de evaluación y propiedades por dispositivo
 
@@ -169,7 +169,7 @@ RbacGroupName|Cadena|El grupo de control de acceso basado en rol (RBAC). Si este
 rbacGroupId|Cadena|Identificador de grupo de control de acceso basado en rol (RBAC).
 RecommendationReference|Cadena|Referencia al identificador de recomendación relacionado con este software.
 RecommendedSecurityUpdate|Cadena|Nombre o descripción de la actualización de seguridad proporcionada por el proveedor de software para solucionar la vulnerabilidad.
-RecommendedSecurityUpdateId|Cadena|Identificador de las actualizaciones de seguridad o identificador aplicables para los artículos de guía o knowledge base (KB) correspondientes.
+RecommendedSecurityUpdateId|Cadena|Identificador de las actualizaciones de seguridad o identificador aplicables para los artículos de guía o ज्ञानाधार (KB) correspondientes.
 Rutas de acceso del Registro|Matriz[cadena]|Evidencia del Registro de que el producto está instalado en el dispositivo.
 SecurityUpdateAvailable|Boolean|Indica si hay una actualización de seguridad disponible para el software.
 SoftwareName|Cadena|Nombre del producto de software.
@@ -202,7 +202,7 @@ OSPlatform|Cadena|Plataforma del sistema operativo que se ejecuta en el disposit
 RbacGroupName|Cadena|El grupo de control de acceso basado en rol (RBAC). Si este dispositivo no está asignado a ningún grupo de RBAC, el valor será "Sin asignar". Si la organización no contiene ningún grupo de RBAC, el valor será "Ninguno".
 RecommendationReference|Cadena|Referencia al identificador de recomendación relacionado con este software.
 RecommendedSecurityUpdate |Cadena|Nombre o descripción de la actualización de seguridad proporcionada por el proveedor de software para solucionar la vulnerabilidad.
-RecommendedSecurityUpdateId |Cadena|Identificador de las actualizaciones de seguridad o identificador aplicables para los artículos de guía o knowledge base (KB) correspondientes
+RecommendedSecurityUpdateId |Cadena|Identificador de las actualizaciones de seguridad o identificador aplicables para las instrucciones o artículos de ज्ञानाधार (KB) correspondientes
 RegistryPaths |Matriz[cadena]|Evidencia del Registro de que el producto está instalado en el dispositivo.
 SoftwareName|Cadena|Nombre del producto de software.
 SoftwareVendor|Cadena|Nombre del proveedor de software.

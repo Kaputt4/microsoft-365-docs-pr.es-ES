@@ -7,23 +7,24 @@ author: kccross
 manager: laurawi
 audience: Admin
 ms.topic: troubleshooting
-ms.service: o365-administration
+ms.service: microsoft-365-business
 ms.localizationpriority: medium
 ms.collection:
 - M365-subscription-management
 - Adm_O365
+- tier1
 search.appverid:
 - BCS160
 - MET150
 - MOE150
 ms.custom: admindeeplinkMAC
 description: Obtenga información sobre las solicitudes de caja de seguridad del cliente que le permiten controlar cómo un ingeniero de soporte técnico de Microsoft puede acceder a los datos cuando se produce un problema.
-ms.openlocfilehash: 7094de30722c4419e3c1c33d0c06f2cdb6d37290
-ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
+ms.openlocfilehash: 8e1edd826f3e0b77d6bd0c65521acc68c0f63821
+ms.sourcegitcommit: 0d8fb571024f134d7480fe14cffc5e31a687d356
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/06/2022
-ms.locfileid: "66642182"
+ms.lasthandoff: 10/20/2022
+ms.locfileid: "68627617"
 ---
 # <a name="microsoft-purview-customer-lockbox"></a>Caja de seguridad del cliente de Microsoft Purview
 
@@ -34,6 +35,8 @@ Para ver las opciones para obtener licencias para que los usuarios se beneficien
 La Caja de seguridad del cliente garantiza que Microsoft no puede acceder a su contenido para realizar operaciones de servicio sin su aprobación explícita. La Caja de seguridad del cliente le lleva al proceso de flujo de trabajo de aprobación que Microsoft usa para asegurarse de que solo las solicitudes autorizadas permiten el acceso al contenido. Para más información sobre el proceso de flujo de trabajo de Microsoft, consulte [Administración de acceso con privilegios](privileged-access-management-solution-overview.md).
 
 En ocasiones, los ingenieros de Microsoft ayudan a solucionar los problemas que surgen con el servicio. Por lo general, los ingenieros corrigen los problemas con amplias herramientas de telemetría y depuración que Microsoft tiene para sus servicios. Sin embargo, algunos casos requieren que un ingeniero de Microsoft acceda a su contenido para determinar la causa principal y corregir el problema. Caja de seguridad del cliente requiere que el ingeniero le solicite acceso como paso final en el flujo de trabajo de aprobación. Esto le ofrece la opción de aprobar o denegar la solicitud para su organización y proporcionar control de acceso directo al contenido.
+
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
 
 ## <a name="customer-lockbox-overview-video"></a>Vídeo de introducción a la Caja de seguridad del cliente
 
@@ -155,7 +158,7 @@ Para exportar registros de auditoría, use los pasos anteriores para buscar en e
 Después de descargar el archivo, puede abrirlo en Excel y, a continuación, filtrar en la columna **Operaciones** para mostrar los registros de auditoría de las actividades **Set-AccessToCustomerDataRequest** . También puede filtrar por la columna **UserIds** (con el valor **Operador de Microsoft**) para mostrar los registros de auditoría de las actividades realizadas por ingenieros de Microsoft.
 
 > [!NOTE]
-> Al ver los registros de auditoría en el archivo CSV, se incluye información adicional en la columna **AuditData** . La información de esta columna está contenida en un objeto JSON, que contiene varias propiedades que se configuran como pares *property:value* separados por comas. Puede usar la característica de transformación JSON en el Editor de Power Query en Excel para dividir cada propiedad del objeto JSON de la columna **AuditData** en varias columnas para que cada propiedad tenga su propia columna. Esto facilita la interpretación de esta información. Para obtener instrucciones detalladas, consulte [Formatear el registro de auditoría exportado mediante el Editor de Power Query](export-view-audit-log-records.md#step-2-format-the-exported-audit-log-using-the-power-query-editor).
+> Al ver los registros de auditoría en el archivo CSV, se incluye información adicional en la columna **AuditData** . La información de esta columna está contenida en un objeto JSON, que contiene varias propiedades que se configuran como pares *property:value* separados por comas. Puede usar la característica de transformación JSON en el Editor de Power Query en Excel para dividir cada propiedad del objeto JSON de la columna **AuditData** en varias columnas para que cada propiedad tenga su propia columna. Esto facilita la interpretación de esta información. Para obtener instrucciones detalladas, vea [Formatear el registro de auditoría exportado mediante el Editor de Power Query](export-view-audit-log-records.md#step-2-format-the-exported-audit-log-using-the-power-query-editor).
 
 ### <a name="use-powershell-to-search-and-export-audit-records"></a>Uso de PowerShell para buscar y exportar registros de auditoría
 
@@ -189,7 +192,7 @@ Cuando una persona de su organización aprueba o deniega una solicitud de Caja d
 | Dirección IP | La dirección IP del equipo en el que el aprobador ha aprobado o denegado una solicitud. |
 | Usuario       | La cuenta de servicio BOXServiceAccount@\[customerforest.prod.outlook.com\].            |
 | Actividad   | Set-AccessToCustomerDataRequest; esta es la actividad de auditoría que se registra cuando usted aprueba o deniega una solicitud de Caja de seguridad del cliente.                                |
-| Item       | Guid de la solicitud de caja de seguridad del cliente                             |
+| Elemento       | Guid de la solicitud de caja de seguridad del cliente                             |
 
 En la captura de pantalla siguiente se muestra un ejemplo de un registro de auditoría que corresponde a una solicitud de caja de seguridad de cliente aprobada. Si se deniega una solicitud caja de seguridad del cliente, el valor del `ApprovalDecision` parámetro sería `Deny`.
 
@@ -197,7 +200,7 @@ En la captura de pantalla siguiente se muestra un ejemplo de un registro de audi
 
 ### <a name="audit-record-for-an-action-performed-by-a-microsoft-engineer"></a>Registro de auditoría de una acción realizada por un ingeniero de Microsoft
 
-Las acciones que ha realizado un ingeniero de Microsoft después de aprobar una solicitud de Caja de seguridad del cliente (y que pueden tener acceso al contenido del cliente) se registran en el registro de auditoría. Estos registros contienen la siguiente información.
+The actions performed by a Microsoft engineer after a Customer Lockbox request is approved (and that may result in accessing customer content) are logged in the audit log. These records contain the following information.
 
 | Propiedad de registro de auditoría| Descripción|
 |:---------- |:----------|
@@ -215,7 +218,7 @@ La Caja de seguridad del cliente se admite actualmente en Exchange Online, Share
 
 ### <a name="is-customer-lockbox-available-to-all-customers"></a>¿Está disponible la caja de seguridad del cliente para todos los clientes?
 
-La caja de seguridad del cliente se incluye con las suscripciones de Microsoft 365 o Office 365 E5 y se puede agregar a otros planes con una Information Protection y cumplimiento o una suscripción de complemento de cumplimiento avanzado. Consulte [Planes y precios](https://products.office.com/business/office-365-enterprise-e5-business-software) para obtener más información.
+La caja de seguridad del cliente se incluye con las suscripciones de Microsoft 365 o Office 365 E5 y se puede agregar a otros planes con una suscripción de protección de la información y cumplimiento o un complemento de cumplimiento avanzado. Consulte [Planes y precios](https://products.office.com/business/office-365-enterprise-e5-business-software) para obtener más información.
 
 ### <a name="what-is-customer-content"></a>¿Qué es el contenido del cliente?
 
@@ -261,7 +264,7 @@ Se notifica a los administradores globales y a cualquiera que tenga asignado el 
 
 Los administradores globales y cualquier persona a la que se haya asignado el rol de administrador de aprobador de acceso de caja de seguridad del cliente pueden aprobar las solicitudes de caja de seguridad del cliente. Los clientes controlan estas asignaciones de roles en sus organizaciones.
 
-### <a name="how-do-i-opt-in-to-customer-lockbox"></a>Cómo participar en la caja de seguridad del cliente?
+### <a name="how-do-i-opt-in-to-customer-lockbox"></a>मैले कसरी participar en la caja de seguridad del cliente?
 
 Un administrador global puede habilitar y configurar la Caja de seguridad del cliente en el Centro de administración de Microsoft 365.
 
@@ -269,7 +272,7 @@ Un administrador global puede habilitar y configurar la Caja de seguridad del cl
 
 Después de aprobar una solicitud de caja de seguridad del cliente, el ingeniero de Microsoft concedió estos privilegios necesarios para acceder al contenido del cliente mediante cmdlets aprobados previamente. Las acciones realizadas por los ingenieros de Microsoft en respuesta a las solicitudes de caja de seguridad del cliente se registran y se puede acceder a ellas en el registro de auditoría del Centro de cumplimiento de seguridad &.
 
-### <a name="how-do-i-know-that-microsoft-follows-the-approval-process"></a>Cómo saber que Microsoft sigue el proceso de aprobación?
+### <a name="how-do-i-know-that-microsoft-follows-the-approval-process"></a>मैले कसरी saber que Microsoft sigue el proceso de aprobación?
 
 Puede hacer referencia cruzada a las notificaciones de aprobación de correo electrónico enviadas a administradores y aprobadores de su organización con el historial de solicitudes de caja de seguridad del cliente en el [Centro de administración de Microsoft 365](https://go.microsoft.com/fwlink/p/?linkid=2024339).
 
@@ -277,21 +280,21 @@ La caja de seguridad del cliente se incluye en el último [informe de auditoría
 
 ### <a name="can-microsoft-modify-the-list-of-approvers-for-my-tenant-if-not-how-is-it-prevented"></a>¿Puede Microsoft modificar la lista de aprobadores para mi inquilino? Si no es así, ¿cómo se evita?
 
-Solo un administrador global de la organización puede especificar quién puede aprobar las solicitudes de caja de seguridad del cliente. Esto significa que solo los miembros del grupo de Administrador global de Azure Active Directory pueden especificar quién puede aprobar la solicitud. La pertenencia al grupo de Administrador global en Azure Active Directory solo la administra su organización.
+Solo un administrador global de la organización puede especificar quién puede aprobar las solicitudes de caja de seguridad del cliente. Esto significa que solo los miembros del grupo de administradores globales de Azure Active Directory pueden especificar quién puede aprobar la solicitud. La pertenencia al grupo de administradores globales en Azure Active Directory solo la administra su organización.
 
 ### <a name="what-if-i-need-more-information-about-a-content-access-request-to-approve-it"></a>¿Qué ocurre si necesito más información sobre una solicitud de acceso a contenido para aprobarla?
 
-Cada solicitud de Caja de seguridad del cliente contiene un número de solicitud de servicio de Microsoft 365. Puede ponerse en contacto con Soporte técnico de Microsoft y hacer referencia a este número de servicio para obtener más información sobre la solicitud.
+Cada solicitud de Caja de seguridad del cliente contiene un número de solicitud de servicio de Microsoft 365. Puede ponerse en contacto con el soporte técnico de Microsoft y hacer referencia a este número de servicio para obtener más información sobre la solicitud.
 
 ### <a name="when-a-customer-lockbox-request-is-approved-how-long-are-the-permissions-valid"></a>Cuando se aprueba una solicitud de Caja de seguridad del cliente, ¿cuánto tiempo son válidos los permisos?
 
-Actualmente, el período máximo permitido para los permisos de acceso concedidos al ingeniero del equipo de servicio es de 4 horas. El ingeniero también puede solicitar un período más corto.
+Currently, the maximum period for the access permissions granted to the Microsoft engineer is 4 hours. The Microsoft engineer can also request a shorter period.
 
 ### <a name="how-can-i-get-a-history-of-all-customer-lockbox-requests"></a>¿Cómo puedo obtener un historial de todas las solicitudes de caja de seguridad del cliente?
 
 Todas las solicitudes de caja de seguridad del cliente se ven en el [Centro de administración de Microsoft 365](https://go.microsoft.com/fwlink/p/?linkid=2024339).
 
-### <a name="how-do-i-correlate-the-content-access-requests-with-the-related-audit-logs"></a>Cómo correlacionar las solicitudes de acceso al contenido con los registros de auditoría relacionados?
+### <a name="how-do-i-correlate-the-content-access-requests-with-the-related-audit-logs"></a>मैले कसरी correlacionar las solicitudes de acceso al contenido con los registros de auditoría relacionados?
 
 La fuente de actividad del Centro de cumplimiento contiene las actividades de registro de la Caja de seguridad del cliente. Los clientes pueden hacer referencia cruzada a las actividades de registro de caja de seguridad del cliente de la fuente de actividad con respecto a la solicitud de correo electrónico que reciben.
 
@@ -303,7 +306,7 @@ Las solicitudes de Caja de seguridad del cliente tienen una duración predetermi
 
 Si un cliente rechaza una solicitud de Caja de seguridad del cliente, no se produce ningún acceso al contenido del cliente. Si un usuario de su organización sigue experimentando un problema de servicio que requiere que Microsoft acceda al contenido del cliente para resolver el problema, es posible que el problema del servicio persista y Microsoft lo informará al usuario.
 
-### <a name="how-do-i-set-up-alerts-whenever-a-request-has-been-approved"></a>Cómo configurar alertas cada vez que se haya aprobado una solicitud?
+### <a name="how-do-i-set-up-alerts-whenever-a-request-has-been-approved"></a>मैले कसरी configurar alertas cada vez que se haya aprobado una solicitud?
 
 No hay ninguna opción integrada para alertar a los administradores. Sin embargo, los administradores pueden configurar alertas mediante [Microsoft Defender for Cloud Apps](/cloud-app-security/getting-started-with-cloud-app-security#to-create-policies).
 

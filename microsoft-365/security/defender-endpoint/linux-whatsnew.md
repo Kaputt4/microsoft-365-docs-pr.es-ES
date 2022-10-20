@@ -9,6 +9,7 @@ ms.pagetype: security
 ms.author: dansimp
 author: dansimp
 ms.localizationpriority: medium
+ms.date: 10/18/2022
 manager: dansimp
 audience: ITPro
 ms.collection:
@@ -17,12 +18,12 @@ ms.collection:
 ms.topic: reference
 ms.subservice: mde
 search.appverid: met150
-ms.openlocfilehash: 90e6977d6660cb475a4172d863080878957407f5
-ms.sourcegitcommit: 4e42bafee965446f44f7f57d1defed2b9b24fce8
+ms.openlocfilehash: 14b687f7b9221d73a314517db11709cb2da7948b
+ms.sourcegitcommit: 0d8fb571024f134d7480fe14cffc5e31a687d356
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/30/2022
-ms.locfileid: "68223708"
+ms.lasthandoff: 10/20/2022
+ms.locfileid: "68627310"
 ---
 # <a name="whats-new-in-microsoft-defender-for-endpoint-on-linux"></a>Novedades de Microsoft Defender para punto de conexión en Linux
 
@@ -49,14 +50,19 @@ Este artículo se actualiza con frecuencia para informarle de las novedades de l
 
 **Novedades**
 
-- Corrige un bloqueo del kernel observado en cargas de trabajo de clientes seleccionados que ejecutan la versión 101.75.43 de mdatp. Después de RCA, esto se atribuyó a una condición de carrera al liberar la propiedad de un descriptor de archivo de sensor. La condición de carrera se expuso debido a un cambio reciente del producto en la ruta de apagado. Este problema no afecta a los clientes de las versiones más recientes del kernel (5.1+).
+- Corrige un bloqueo del kernel observado en cargas de trabajo de clientes seleccionados que ejecutan la versión 101.75.43 de mdatp. Después de RCA, esto se atribuyó a una condición de carrera al liberar la propiedad de un descriptor de archivo de sensor. La condición de carrera se expuso debido a un cambio reciente del producto en la ruta de apagado. Este problema no afecta a los clientes de las versiones más recientes del kernel (5.1+). Puede encontrar más información sobre el problema subyacente en [Bloqueo del sistema debido a tareas bloqueadas en el código fanotify](https://access.redhat.com/solutions/2838901).
+    
+**Problemas conocidos**
 
-- Al actualizar desde mdatp versión 101.75.43 o 101.78.13, ejecute los siguientes comandos antes de intentar actualizar a la versión 101.80.97.
+- Al actualizar desde la versión 101.75.43 o 101.78.13 de mdatp, es posible que se produzca un bloqueo del kernel. Ejecute los comandos siguientes antes de intentar actualizar a la versión 101.80.97. Esto debe impedir que se produzca el problema.
 
 ```
 sudo mdatp config real-time-protection --value=disabled
 sudo systemctl disable mdatp
 ```
+Después de ejecutar lo anterior, use el administrador de paquetes para realizar la actualización. 
+    
+Como alternativa a lo anterior, puede seguir las instrucciones para [desinstalar](/microsoft-365/security/defender-endpoint/linux-resources#uninstall) y, a continuación, [instalar](/microsoft-365/security/defender-endpoint/linux-install-manually#application-installation) la versión más reciente del paquete.
 </br>
 
 <br/><br/>
