@@ -14,19 +14,19 @@ search.appverid:
 - MET150
 ms.assetid: 7ff0c040-b25c-4378-9904-b1b50210d00e
 ms.collection:
-- Strat_O365_IP
-- M365-security-compliance
+- tier1
+- purview-compliance
 description: Obtenga información sobre el cifrado de mensajes de Microsoft Purview que permite la comunicación de correo electrónico protegida con personas dentro y fuera de su organización.
 ms.custom:
 - seo-marvel-apr2020
 - admindeeplinkMAC
 - admindeeplinkEXCHANGE
-ms.openlocfilehash: 4b47296ec6e445df20a0694e5cff7ed5b2216852
-ms.sourcegitcommit: e4882e3c66166ea7b834ad2e8fafeab42293e07d
-ms.translationtype: HT
+ms.openlocfilehash: 9deff0d084a8a9cf498614da355f36320f6e44ae
+ms.sourcegitcommit: 0d8fb571024f134d7480fe14cffc5e31a687d356
+ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/30/2022
-ms.locfileid: "67099467"
+ms.lasthandoff: 10/20/2022
+ms.locfileid: "68639892"
 ---
 # <a name="set-up-message-encryption"></a>Configurar el cifrado de mensajes
 
@@ -34,13 +34,15 @@ El cifrado de mensajes de Microsoft Purview permite a las organizaciones compart
 
 Siga los pasos que se indican a continuación para asegurarse de que el cifrado de mensajes de Microsoft Purview está disponible en su organización.
 
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
+
 ## <a name="verify-that-azure-rights-management-is-active"></a>Verificar que Azure Rights Management está habilitada
 
 Cifrado de mensajes de Microsoft Purview aprovecha las características de protección de [Azure Rights Management Services (Azure RMS),](/azure/information-protection/what-is-information-protection)la tecnología que usa [Azure Information Protection](/azure/information-protection/what-is-azure-rms) para proteger correos electrónicos y documentos mediante controles de cifrado y acceso.
 
 El único requisito previo para usar el cifrado de mensajes de Microsoft Purview es que [Azure Rights Management](/azure/information-protection/what-is-azure-rms) debe activarse en el inquilino de su organización. Si es así, Microsoft 365 activa automáticamente el cifrado de mensajes y no es necesario hacer nada.
 
-Azure RMS también se activa automáticamente para la mayoría de los planes aptos, por lo que probablemente tampoco tenga que hacer nada al respecto. Consulte [activación de Azure Rights Management](/azure/information-protection/activate-service) para obtener más información.
+Azure RMS is also activated automatically for most eligible plans, so you probably don't have to do anything in this regard either. See [Activating Azure Rights Management](/azure/information-protection/activate-service) for more information.
 
 > [!IMPORTANT]
 > Si usa el servicio Active Directory Rights Management (AD RMS) con Exchange Online, debe [migrar a Azure Information Protection](/azure/information-protection/migrate-from-ad-rms-to-azure-rms) antes de poder usar el cifrado de mensajes. El cifrado de mensajes de Microsoft Purview no es compatible con AD RMS.
@@ -138,6 +140,6 @@ Para actualizar las reglas existentes para usar el cifrado de mensajes de Micros
 3. Para cada regla, en **Hacer lo siguiente**:
     - Seleccione **Modificar la seguridad de los mensajes**.
     - Seleccione **Aplicar el cifrado de mensajes de Office 365 y la protección de derechos**.
-    - Seleccione una plantilla RMS de la lista.
+    - Seleccione **Cifrar** en la lista de plantillas de RMS.
     - Seleccione **Guardar**.
     - Seleccione **Aceptar**.

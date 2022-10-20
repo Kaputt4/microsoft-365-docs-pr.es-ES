@@ -15,7 +15,7 @@ ms.author: v-jweston
 ms.reviewer: oogunrinde, sugamar
 manager: dansimp
 ms.custom: asr
-ms.topic: article
+ms.topic: conceptual
 ms.collection:
 - m365-security
 - m365solution-asr-rules
@@ -23,12 +23,12 @@ ms.collection:
 - tier1
 ms.date: 09/19/2022
 search.appverid: met150
-ms.openlocfilehash: 347392494d920da486f8928380310b3b75abbbd1
-ms.sourcegitcommit: b9282493c371d59c2e583b9803825096499b5e2c
+ms.openlocfilehash: 2f45d4cd1bca43ccd695816f1aab0d207f6e26f4
+ms.sourcegitcommit: 0d8fb571024f134d7480fe14cffc5e31a687d356
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/29/2022
-ms.locfileid: "68146577"
+ms.lasthandoff: 10/20/2022
+ms.locfileid: "68631774"
 ---
 # <a name="enable-attack-surface-reduction-asr-rules"></a>Habilitar reglas de la reducción de la superficie expuesta a ataques (ASR)
 
@@ -96,11 +96,11 @@ Si tiene problemas con las reglas que detectan archivos que cree que no deben de
 
 Consulte el tema [de referencia de las reglas de reducción de superficie expuesta a ataques](attack-surface-reduction-rules-reference.md) para obtener más información sobre cada regla.
 
-##### <a name="use-group-policy-to-exclude-files-and-folders"></a>Uso de directiva de grupo para excluir archivos y carpetas
+##### <a name="use-group-policy-to-exclude-files-and-folders"></a>Uso de समूह नीति para excluir archivos y carpetas
 
 1. En el equipo de administración de directivas de grupo, abra la [Consola de administración de directivas de grupo](https://technet.microsoft.com/library/cc731212.aspx), haga clic con el botón secundario en el objeto de directiva de grupo que quiera configurar y seleccione **Editar**.
 
-2. En el **Editor de administración de directiva de grupo**, vaya a **Configuración del equipo** y haga clic en **Plantillas administrativas**.
+2. En el **Editor de administración de समूह नीति**, vaya a **Configuración del equipo** y haga clic en **Plantillas administrativas**.
 
 3. Expanda el árbol a **componentes** \> de Windows **Microsoft Defender Antivirus** \> Microsoft Defender **reducción de la superficie de ataque** de **Protección contra vulnerabilidades** \> de seguridad.
 

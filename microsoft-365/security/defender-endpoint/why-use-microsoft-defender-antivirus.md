@@ -7,7 +7,7 @@ ms.mktglfcycl: manage
 ms.sitesec: library
 ms.localizationpriority: medium
 audience: ITPro
-ms.topic: article
+ms.topic: conceptual
 author: denisebmsft
 ms.author: deniseb
 ms.custom: nextgen
@@ -18,12 +18,12 @@ ms.collection:
 - m365-security
 - tier2
 search.appverid: met150
-ms.openlocfilehash: ac85a246a694ea18eb1b24a7412e66b72c5833b2
-ms.sourcegitcommit: 4e42bafee965446f44f7f57d1defed2b9b24fce8
+ms.openlocfilehash: 1ab92d08e2b80726a95801c6c95ff45c80bfa43c
+ms.sourcegitcommit: 0d8fb571024f134d7480fe14cffc5e31a687d356
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/30/2022
-ms.locfileid: "68227336"
+ms.lasthandoff: 10/20/2022
+ms.locfileid: "68625742"
 ---
 # <a name="better-together-microsoft-defender-antivirus-and-microsoft-defender-for-endpoint"></a>Mejor juntos: Antivirus de Microsoft Defender y Microsoft Defender para punto de conexión
 
@@ -56,7 +56,7 @@ Aunque puede usar una solución antivirus que no sea de Microsoft con Microsoft 
 |7 |Reducción de la superficie expuesta a ataques|El equipo de seguridad de la organización puede reducir las vulnerabilidades (superficies de ataque), lo que proporciona a los atacantes menos formas de realizar ataques. La reducción de la superficie expuesta a ataques usa la protección en la nube para varias reglas. [Obtenga información general sobre la reducción de la superficie expuesta a ataques](/microsoft-365/security/defender-endpoint/overview-attack-surface-reduction).|
 |8 |Eventos de auditoría|Las señales de eventos de auditoría están disponibles en [las funcionalidades de detección y respuesta de puntos de conexión](/microsoft-365/security/defender-endpoint/overview-endpoint-detection-response). (Estas señales no están disponibles con soluciones antivirus que no son de Microsoft).|
 |9 |Datos geográficos|Conforme a la 270001 ISO y a la retención de datos, los datos geográficos se proporcionan según la soberanía geográfica seleccionada de su organización. Consulte [Ofertas de cumplimiento: ISO/IEC 27001:2013 Information Security Management Standards](/microsoft-365/compliance/offering-iso-27001).|
-|10|Recuperación de archivos a través de OneDrive|Si usa Microsoft Defender Antivirus junto con [Office 365](/Office365/Enterprise), y su dispositivo es atacado por ransomware, los archivos se protegen y se pueden recuperar. [Restauración de archivos de OneDrive y Windows Defender llevar la protección contra ransomware un paso más allá](https://techcommunity.microsoft.com/t5/Microsoft-OneDrive-Blog/OneDrive-Files-Restore-and-Windows-Defender-takes-ransomware/ba-p/188001).|
+|10|Recuperación de archivos a través de OneDrive|Si usa Microsoft Defender Antivirus junto con [Office 365](/Office365/Enterprise), y su dispositivo es atacado por ransomware, los archivos se protegen y se pueden recuperar. [Restauración de archivos de OneDrive y Windows डिफेन्डर llevar la protección contra ransomware un paso más allá](https://techcommunity.microsoft.com/t5/Microsoft-OneDrive-Blog/OneDrive-Files-Restore-and-Windows-Defender-takes-ransomware/ba-p/188001).|
 |11|Soporte técnico|Mediante el uso de Microsoft Defender para punto de conexión junto con Microsoft Defender Antivirus, tiene una empresa para solicitar soporte técnico. [Solucione problemas de servicio](/microsoft-365/security/defender-endpoint/troubleshoot-mdatp)y [revise los registros de eventos y los códigos de error con Microsoft Defender Antivirus](troubleshoot-microsoft-defender-antivirus.md).|
 
 > [!TIP]

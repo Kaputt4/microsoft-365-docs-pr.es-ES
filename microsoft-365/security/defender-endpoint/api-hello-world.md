@@ -1,5 +1,5 @@
 ---
-title: Hola mundo para Microsoft Defender para punto de conexión API
+title: नमस्ते संसार para Microsoft Defender para punto de conexión API
 ms.reviewer: ''
 description: Cree una llamada de API de estilo "Hola mundo" al Microsoft Defender para punto de conexión API.
 keywords: apis, api admitidas, búsqueda avanzada, consulta, atp de Microsoft Defender, microsoft defender para punto de conexión
@@ -15,18 +15,18 @@ audience: ITPro
 ms.collection:
 - m365-security
 - tier3
-ms.topic: article
+ms.topic: conceptual
 ms.subservice: mde
 ms.custom: api
 search.appverid: met150
-ms.openlocfilehash: 143bf4120e81bee0d96fa8a5c0ca45096c89a8d3
-ms.sourcegitcommit: b9282493c371d59c2e583b9803825096499b5e2c
+ms.openlocfilehash: 0646a2b5128ab7ef20b0285ce31961481dfb8f1e
+ms.sourcegitcommit: 0d8fb571024f134d7480fe14cffc5e31a687d356
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/29/2022
-ms.locfileid: "68147699"
+ms.lasthandoff: 10/20/2022
+ms.locfileid: "68626278"
 ---
-# <a name="microsoft-defender-for-endpoint-api---hello-world"></a>API de Microsoft Defender para punto de conexión: Hola mundo
+# <a name="microsoft-defender-for-endpoint-api---hello-world"></a>API de Microsoft Defender para punto de conexión: नमस्ते संसार
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
@@ -54,13 +54,13 @@ Solo tarda 5 minutos en realizarse en dos pasos:
 
 ### <a name="do-i-need-a-permission-to-connect"></a>¿Necesito un permiso para conectarme?
 
-Para la fase de registro de aplicaciones, debe tener un rol **de Administrador global** en el inquilino de Azure Active Directory (Azure AD).
+Para la fase de registro de aplicaciones, debe tener un rol **de administrador global** en el inquilino de Azure Active Directory (Azure AD).
 
 ### <a name="step-1---create-an-app-in-azure-active-directory"></a>Paso 1: Creación de una aplicación en Azure Active Directory
 
-1. Inicie sesión en [Azure](https://portal.azure.com) con **el usuario Administrador global**.
+1. Inicie sesión en [Azure](https://portal.azure.com) con el usuario **administrador global** .
 
-2. Vaya a **Azure Active Directory** \> **Registros de aplicaciones** \> **Nuevo registro**.
+2. Vaya a Registros \> **de aplicaciones** de **Azure Active Directory** \> **Nuevo registro**.
 
    :::image type="content" source="images/atp-azure-new-app2.png" alt-text="La opción Registros de aplicaciones en el panel Administrar del portal de Azure Active Directory"  lightbox="images/atp-azure-new-app2.png":::
 

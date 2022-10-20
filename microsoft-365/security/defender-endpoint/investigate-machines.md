@@ -14,15 +14,15 @@ audience: ITPro
 ms.collection:
 - m365-security
 - tier2
-ms.topic: article
+ms.topic: conceptual
 ms.subservice: mde
 search.appverid: met150
-ms.openlocfilehash: 5aacf3473af5c9951a0374b2835e611def254e32
-ms.sourcegitcommit: 4e42bafee965446f44f7f57d1defed2b9b24fce8
+ms.openlocfilehash: 95f983b13e4fe952a1ca37f588325e36c12ea7c6
+ms.sourcegitcommit: 0d8fb571024f134d7480fe14cffc5e31a687d356
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/30/2022
-ms.locfileid: "68228677"
+ms.lasthandoff: 10/20/2022
+ms.locfileid: "68633887"
 ---
 # <a name="investigate-devices-in-the-microsoft-defender-for-endpoint-devices-list"></a>Investigación de dispositivos en la lista de dispositivos Microsoft Defender para punto de conexión
 
@@ -139,7 +139,7 @@ En la sección **Información adicional** se proporcionan más detalles sobre de
 - Se detectó una amenaza activa: la detección de amenazas se produjo mientras se estaba ejecutando la amenaza.
 - Corrección incorrecta: se invocó un intento de corregir la amenaza detectada, pero se produjo un error
 - Corrección correcta: la amenaza detectada se ha detenido y limpiado.
-- Advertencia omitida por el usuario: el usuario ha descartado y invalidado la advertencia de SmartScreen Windows Defender
+- Advertencia omitida por el usuario: el usuario ha descartado y reemplazado la advertencia de SmartScreen Windows डिफेन्डर.
 - Script sospechoso detectado: se encontró un script potencialmente malintencionado en ejecución
 - La categoría de alerta: si el evento condujo a la generación de una alerta, se proporciona la categoría de alerta ("Movimiento lateral", por ejemplo).
 

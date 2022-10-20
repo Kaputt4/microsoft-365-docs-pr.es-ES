@@ -13,23 +13,25 @@ ms.localizationpriority: ''
 search.appverid:
 - MET150
 ms.collection:
-- Strat_O365_IP
-- M365-security-compliance
+- tier1
+- purview-compliance
 - Strat_O365_Enterprise
 description: Obtenga información sobre cómo crear una directiva de tipo de información confidencial para su organización mediante Office 365 cifrado de mensajes.
 ms.custom:
 - seo-marvel-apr2020
 - admindeeplinkEXCHANGE
-ms.openlocfilehash: 0974c30882177eb9fc46c2a2fcf65bc2edb43078
-ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
+ms.openlocfilehash: a3c6797750c25e876e1df159d75f1a269decee80
+ms.sourcegitcommit: 0d8fb571024f134d7480fe14cffc5e31a687d356
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/06/2022
-ms.locfileid: "66633441"
+ms.lasthandoff: 10/20/2022
+ms.locfileid: "68634550"
 ---
 # <a name="create-a-sensitive-information-type-policy-for-your-organization-using-message-encryption"></a>Creación de una directiva de tipo de información confidencial para su organización mediante el cifrado de mensajes
 
 Puede usar reglas de flujo de correo de Exchange o prevención de pérdida de datos (DLP) de Microsoft Purview para crear una directiva de tipo de información confidencial con Office 365 cifrado de mensajes. Para crear una regla de flujo de correo de Exchange, puede usar el <a href="https://go.microsoft.com/fwlink/p/?linkid=2059104" target="_blank">Centro de administración de Exchange (EAC)</a> o PowerShell.
+
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
 
 ## <a name="to-create-the-policy-by-using-mail-flow-rules-in-the-eac"></a>Para crear la directiva mediante reglas de flujo de correo en el EAC
 
@@ -43,9 +45,9 @@ Use una cuenta profesional o educativa que tenga permisos de administrador globa
 
 Ejecute los siguientes comandos en PowerShell para crear una regla de flujo de correo de Exchange que cifre automáticamente los correos electrónicos enviados fuera de la organización con la opción de solo cifrado si los correos electrónicos o sus datos adjuntos contienen los siguientes tipos de información confidencial:
 
-- Número de enrutamiento de ABA
+- Número de enrutamiento ABA
 - Número de tarjeta de crédito
-- Número de la Agencia antidrogas (DEA)
+- Número de la Administración de Control de Drogas (DEA)
 - Estados Unidos/ Reino Unido passport number
 - Número de cuenta bancaria de EE. UU.
 - Número de identificación de contribuyente individual (ITIN) de EE. UU.

@@ -10,7 +10,7 @@ ms.mktglfcycl: manage
 ms.sitesec: library
 ms.localizationpriority: medium
 audience: ITPro
-ms.topic: article
+ms.topic: conceptual
 author: denisebmsft
 ms.author: deniseb
 ms.custom:
@@ -21,12 +21,12 @@ ms.collection:
 - m365-security
 - tier2
 search.appverid: met150
-ms.openlocfilehash: 467c415f7912d0e02d3468d842f8cb8e3f871455
-ms.sourcegitcommit: 4e42bafee965446f44f7f57d1defed2b9b24fce8
+ms.openlocfilehash: ce36dacb8b16e068dbe6dec483eacbe82ba30fc2
+ms.sourcegitcommit: 0d8fb571024f134d7480fe14cffc5e31a687d356
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/30/2022
-ms.locfileid: "68227117"
+ms.lasthandoff: 10/20/2022
+ms.locfileid: "68627047"
 ---
 # <a name="manage-tamper-protection-for-your-organization-using-microsoft-365-defender-portal"></a>Administración de la protección contra alteraciones de la organización mediante Microsoft 365 Defender portal
 
@@ -43,7 +43,7 @@ La protección contra alteraciones se puede activar o desactivar para el inquili
 
 - Actualmente, la opción para administrar la "protección contra alteraciones" en el portal de Microsoft 365 Defender está activada de forma predeterminada para las nuevas implementaciones. En el caso de las implementaciones existentes, la "protección contra alteraciones" está disponible de forma opcional. Para participar, en el <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">portal de Microsoft 365 Defender</a>, elija **Configuración** \> **Puntos de conexión** Características \> **avanzadas** **Protección contra alteraciones**\>.
 - Cuando se usa el portal de Microsoft 365 Defender para administrar la "protección contra alteraciones", no es necesario usar Intune ni el método de asociación de inquilinos.
-- Al administrar la "protección contra alteraciones" en el portal de Microsoft 365 Defender, la configuración se aplica en todo el inquilino, lo que afecta a todos los dispositivos que ejecutan Windows 10, Windows 10 Enterprise sesiones múltiples, Windows 11, Windows 11 Empresas  sesiones múltiples, Windows Server 2012 R2, Windows Server 2016, Windows Server 2019 o Windows Server 2022. Para ajustar la "protección contra alteraciones" (por ejemplo, tener la protección contra alteraciones activada para algunos dispositivos pero desactivada para otros), use [Administrar la protección contra alteraciones para su organización mediante Microsoft Endpoint Manager](manage-tamper-protection-microsoft-endpoint-manager.md) o [Administrar la protección contra alteraciones mediante la asociación de inquilinos con Configuration Manager, versión 2006](manage-tamper-protection-configuration-manager.md).
+- Al administrar la "protección contra alteraciones" en el portal de Microsoft 365 Defender, la configuración se aplica en todo el inquilino, lo que afecta a todos los dispositivos que ejecutan Windows 10, Windows 10 Enterprise sesiones múltiples, Windows 11, Windows 11 Empresas  sesiones múltiples, Windows Server 2012 R2, Windows Server 2016, Windows Server 2019 o Windows Server 2022. Para ajustar la "protección contra alteraciones" (por ejemplo, tener la protección contra alteraciones activada para algunos dispositivos pero desactivada para otros), use [Administrar la protección contra alteraciones de su organización mediante Microsoft Endpoint Manager](manage-tamper-protection-microsoft-endpoint-manager.md) o [Administrar la protección contra alteraciones mediante la asociación de inquilinos con Configuration Manager, versión 2006](manage-tamper-protection-configuration-manager.md).
 - Si tiene un entorno híbrido, los valores de protección contra alteraciones configurados en Intune tienen prioridad sobre los valores configurados en el portal de Microsoft 365 Defender.
 
 ## <a name="requirements-for-managing-tamper-protection-in-the-microsoft-365-defender-portal"></a>Requisitos para administrar la protección contra alteraciones en el portal de Microsoft 365 Defender

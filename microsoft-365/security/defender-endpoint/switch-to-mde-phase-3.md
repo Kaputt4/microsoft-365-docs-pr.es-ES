@@ -20,16 +20,16 @@ ms.collection:
 ms.custom:
 - migrationguides
 - admindeeplinkDEFENDER
-ms.topic: article
+ms.topic: conceptual
 ms.date: 09/22/2022
 ms.reviewer: jesquive, chventou, jonix, chriggs, owtho
 search.appverid: met150
-ms.openlocfilehash: 3fa3691d20688796b98c506947a0b8c77f569e7c
-ms.sourcegitcommit: 4e42bafee965446f44f7f57d1defed2b9b24fce8
+ms.openlocfilehash: e44e514811940e065988617e772222afaf70b222
+ms.sourcegitcommit: 0d8fb571024f134d7480fe14cffc5e31a687d356
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/30/2022
-ms.locfileid: "68225336"
+ms.lasthandoff: 10/20/2022
+ms.locfileid: "68637538"
 ---
 # <a name="switch-to-microsoft-defender-for-endpoint---phase-3-onboard"></a>Cambiar a Microsoft Defender para punto de conexión- Fase 3: Incorporación
 
@@ -70,7 +70,7 @@ Los métodos de implementación varían según el sistema operativo y los métod
 
 |Sistemas operativos  |Métodos  |
 |---------|---------|
-|Windows 10 o posterior<br/><br/>Windows Server 2019 o posterior<br/><br/>Windows Server, versión 1803 o posterior<br/><br/>Windows Server 2012 R2 y 2016<sup>[[1](#fn1)]<sup>  |   [Script local (hasta 10 dispositivos)](configure-endpoints-script.md)<br><br/>   [Directiva de grupo](configure-endpoints-gp.md)<br/><br/>[Microsoft Endpoint Configuration Manager](configure-endpoints-sccm.md)<br/><br/>[Microsoft Endpoint Manager/Mobile Administración de dispositivos (Intune)](configure-endpoints-mdm.md)<br>    [Scripts de VDI](configure-endpoints-vdi.md) <br><br> **NOTA**: Un script local es adecuado para una prueba de concepto, pero no debe usarse para la implementación de producción. Para una implementación de producción, se recomienda usar directiva de grupo, Configuration Manager de punto de conexión de Microsoft o Intune. |
+|Windows 10 o posterior<br/><br/>Windows Server 2019 o posterior<br/><br/>Windows Server, versión 1803 o posterior<br/><br/>Windows Server 2012 R2 y 2016<sup>[[1](#fn1)]<sup>  |   [Script local (hasta 10 dispositivos)](configure-endpoints-script.md)<br><br/>   [Directiva de grupo](configure-endpoints-gp.md)<br/><br/>[Microsoft Endpoint Configuration Manager](configure-endpoints-sccm.md)<br/><br/>[Microsoft Endpoint Manager/Administración de dispositivos móviles (Intune)](configure-endpoints-mdm.md)<br>    [Scripts de VDI](configure-endpoints-vdi.md) <br><br> **NOTA**: Un script local es adecuado para una prueba de concepto, pero no debe usarse para la implementación de producción. Para una implementación de producción, se recomienda usar समूह नीति, Microsoft Endpoint Configuration Manager o Intune. |
 |Windows Server 2008 R2 SP1 | [Microsoft Monitoring Agent (MMA)](onboard-downlevel.md#install-and-configure-microsoft-monitoring-agent-mma) o [Microsoft Defender for Cloud](/azure/security-center/security-center-wdatp) <br><br> **NOTA**: Microsoft Monitoring Agent es ahora el agente de Azure Log Analytics. Para más información, consulte [Introducción al agente de Log Analytics](/azure/azure-monitor/platform/log-analytics-agent).  |
 |Windows 8.1 Enterprise<br/><br/>Windows 8.1 Pro<br/><br/>Windows 7 SP1 Pro<br/><br/>Windows 7 SP1| [Microsoft Monitoring Agent (MMA)](onboard-downlevel.md) <br><br> **NOTA**: Microsoft Monitoring Agent es ahora el agente de Azure Log Analytics. Para más información, consulte [Introducción al agente de Log Analytics](/azure/azure-monitor/platform/log-analytics-agent).  
 | macOS (consulte [Requisitos del sistema)](microsoft-defender-endpoint-mac.md) | [Script local](mac-install-manually.md)<br/><br/>[Microsoft Endpoint Manager](mac-install-with-intune.md)<br/><br/>[JAMF Pro](mac-install-with-jamf.md)<br/><br/>[Administración de dispositivos móviles](mac-install-with-other-mdm.md)   |
@@ -102,7 +102,7 @@ Ahora que los puntos de conexión se han incorporado a Defender para punto de co
 |Administrador de tareas|1. En un dispositivo Windows, abra la aplicación Administrador de tareas.<br/><br/>2. Seleccione la pestaña **Detalles** . Busque **MsMpEng.exe** en la lista.|
 
 > [!NOTE]
-> Es posible que vea *Windows Defender Antivirus* en lugar de *Microsoft Defender Antivirus* en algunas versiones de Windows.
+> Es posible que vea *Windows डिफेन्डर Antivirus* en lugar de *Microsoft Defender Antivirus* en algunas versiones de Windows.
 > Para obtener más información sobre el modo pasivo y el modo activo, consulte [Más detalles sobre Microsoft Defender estados del Antivirus](microsoft-defender-antivirus-compatibility.md#more-details-about-microsoft-defender-antivirus-states).
 
 ### <a name="set-microsoft-defender-antivirus-on-windows-server-to-passive-mode-manually"></a>Establecer Microsoft Defender Antivirus en Windows Server en modo pasivo manualmente
@@ -120,8 +120,8 @@ Para establecer Microsoft Defender Antivirus en modo pasivo en Windows Server, v
 > [!NOTE]
 > Puede usar otros métodos para establecer la clave del Registro, como las siguientes:
 >
-> - [Preferencia de directiva de grupo](/previous-versions/windows/it-pro/windows-server-2012-R2-and-2012/dn581922(v=ws.11))
-> - [Herramienta objeto de directiva de grupo local](/windows/security/threat-protection/security-compliance-toolkit-10#what-is-the-local-group-policy-object-lgpo-tool)
+> - [Preferencia de समूह नीति](/previous-versions/windows/it-pro/windows-server-2012-R2-and-2012/dn581922(v=ws.11))
+> - [Herramienta objeto de समूह नीति local](/windows/security/threat-protection/security-compliance-toolkit-10#what-is-the-local-group-policy-object-lgpo-tool)
 > - [Un paquete en Configuration Manager](/mem/configmgr/apps/deploy-use/packages-and-programs)
 
 ### <a name="start-microsoft-defender-antivirus-on-windows-server-2016"></a>Inicie Microsoft Defender Antivirus en Windows Server 2016

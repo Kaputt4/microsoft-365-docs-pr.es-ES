@@ -3,7 +3,7 @@ title: Registros externos del Sistema de nombres de dominio para Office 365
 ms.author: kvice
 author: kelleyvice-msft
 manager: scotv
-ms.date: 11/10/2021
+ms.date: 10/14/2022
 audience: Admin
 ms.topic: conceptual
 ms.service: microsoft-365-enterprise
@@ -23,12 +23,12 @@ search.appverid:
 - BCS160
 ms.assetid: c0531a6f-9e25-4f2d-ad0e-a70bfef09ac0
 description: Una lista de referencia de registros externos del sistema de nombres de dominio que se usan al planear una implementación de Office 365.
-ms.openlocfilehash: 12549d107d875a036da306ad99fbdf165be27ec8
-ms.sourcegitcommit: 0b7070ec119e00e0dafe030bbfbef0ae5c9afa19
+ms.openlocfilehash: d81ae7c1633e4860fa3c3528f87216150b435993
+ms.sourcegitcommit: 0d8fb571024f134d7480fe14cffc5e31a687d356
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/29/2022
-ms.locfileid: "68196191"
+ms.lasthandoff: 10/20/2022
+ms.locfileid: "68630630"
 ---
 # <a name="external-domain-name-system-records-for-office-365"></a>Registros externos del Sistema de nombres de dominio para Office 365
 
@@ -80,20 +80,22 @@ Los clientes de correo electrónico que utilizan federación de Exchange tambié
 |**TXT** <br/> **(Federación de Exchange)**|Utilizado para la federación de Exchange para la implementación híbrida.|**Registro 1 TXT:** por ejemplo, contoso.com y texto hash asociado, generado de forma personalizada y de prueba de dominio (por ejemplo, Y96nu89138789315669824) <br/> **Registro 2 TXT:** por ejemplo, exchangedelegation.contoso.com y texto hash asociado, generado de forma personalizada y de prueba del dominio (por ejemplo Y3259071352452626169)|
 |**CNAME** <br/> **(Federación de Exchange)**|Helps Outlook clients to easily connect to the Exchange Online service by using the Autodiscover service when your company is using Exchange federation. Autodiscover automatically finds the correct Exchange Server host and configures Outlook for your users.|**Alias:** por ejemplo, Autodiscover.service.contoso.com <br/> **Destino:** autodiscover.outlook.com|
 
-## <a name="external-dns-records-required-for-skype-for-business-online"></a>Registros DNS externos necesarios para Skype Empresarial Online
+## <a name="external-dns-records-required-for-teams-and-skype-for-business-online"></a>Registros DNS externos necesarios para Teams y Skype Empresarial Online
 <a name="BKMK_ReqdCore"> </a>
 
-Existen pasos específicos que realizar cuando se usan [rangos de direcciones IP y direcciones URL de Office 365](https://support.office.com/article/8548a211-3fe7-47cb-abb1-355ea5aa88a2#BKMK_LYO) para asegurarse de que la red esté correctamente configurada.
+Existen pasos específicos que realizar cuando se usan [rangos de direcciones IP y direcciones URL de Office 365](urls-and-ip-address-ranges.md) para asegurarse de que la red esté correctamente configurada.
 
-> [!NOTE]
-> Estos registros DNS también se aplican a Teams, especialmente en un escenario híbrido de Teams y Skype Empresarial, donde pueden producirse ciertos problemas de federación.
+Estos registros DNS se aplican a Teams, Skype Empresarial En línea o ambos como se indica.
 
 |Registro DNS|Objetivo|Valor para usar|
 |---|---|---|
-|**SRV** <br/> **(Skype Empresarial Online)**|Allows your Office 365 domain to share instant messaging (IM) features with external clients by enabling SIP federation. Read more about [Office 365 URLs and IP address ranges](https://support.office.com/article/8548a211-3fe7-47cb-abb1-355ea5aa88a2#BKMK_LYO).|**Servicio:** sipfederationtls <br/> **Protocolo:** TCP <br/> **Prioridad:** 100 <br/> **Peso:** 1 <br/> **Puerto:** 5061 <br/> **Objetivo:** sipfed.online.lync.com <br/> **Nota:** Si el firewall o el servidor proxy bloquean las búsquedas de SRV en un DNS externo, debería agregar este registro al registro DNS interno. |
-|**SRV** <br/> **(Skype Empresarial Online)**|Lo usa Skype Empresarial para coordinar el flujo de información entre los clientes de Lync.|**Servicio:** sip <br/> **Protocolo:** TLS <br/> **Prioridad:** 100 <br/> **Peso:** 1 <br/> **Puerto:** 443 <br/> **Objetivo:** sipdir.online.lync.com|
-|**CNAME** <br/> **(Skype Empresarial Online)**|Lo usa el cliente de Lync para ayudar a encontrar el servicio de Skype Empresarial Online e iniciar sesión.|**Alias:** sip <br/> **Objetivo:** sipdir.online.lync.com <br/> Para obtener más información, consulte[direcciones URL e rangos de direcciones IP de Office 365 ](https://support.office.com/article/8548a211-3fe7-47cb-abb1-355ea5aa88a2#BKMK_LYO).|
-|**CNAME** <br/> **(Skype Empresarial Online)**|Lo usa el cliente móvil de Lync para ayudar a encontrar el servicio de Skype Empresarial Online e iniciar sesión.|**Alias:** lyncdiscover <br/> **Objetivo:** webdir.online.lync.com|
+|**SRV** <br/> **(Teams y Skype Empresarial Online)**|Permite que el dominio de Office 365 comparta características de mensajería instantánea (MI) con clientes externos habilitando la federación SIP.|**Servicio:** sipfederationtls <br/> **Protocolo:** TCP <br/> **Prioridad:** 100 <br/> **Peso:** 1 <br/> **Puerto:** 5061 <br/> **Objetivo:** sipfed.online.lync.com <br/> **Nota:** Si el firewall o el servidor proxy bloquean las búsquedas de SRV en un DNS externo, debería agregar este registro al registro DNS interno. |
+|**SRV** <br/> **(Teams y Skype Empresarial Online)**|Necesario tanto por Teams como por Skype Empresarial Online para comunicarse entre Skype Empresarial local, Teams y Skype Empresarial entre nubes (por ejemplo, entre Office 365 @ _sipfed.online.lync.com_ y Office 365 operados por 21Vianet @ _sipfed.online.partner.lync.cn_ o nubes gubernamentales de EE. UU.).<br/>Se requiere tanto en el modo híbrido como solo en Teams. En el modo solo teams apunta a servidores perimetrales en línea (por ejemplo _, sipfed.online.lync.com_), mientras que en modo híbrido apunta a servidores perimetrales locales (por ejemplo _, sipfed).\<domain>_|**Servicio:** sipfederationtls <br/> **Protocolo:** TCP <br/> **Prioridad:** 100 <br/> **Peso:** 1 <br/> **Puerto:** 5061 <br/> **Destino:** _sipfederationtls.tcp.\<domain> <br/> **Nota:** Si el firewall o el servidor proxy bloquean las búsquedas de SRV en un DNS externo, debería agregar este registro al registro DNS interno. |
+|**SRV** <br/> **(Teams y Skype Empresarial Online)**|Requerido por Skype Empresarial cliente de Escritorio de Windows y teléfonos Skype Empresarial para el inicio de sesión. Puede ser necesario para los inquilinos solo de Teams que usan Skype Empresarial teléfonos en línea para Teams y deben apuntar a servidores perimetrales en línea (por ejemplo _, sip.online.lync.com_). <br/>Los inquilinos híbridos lo necesitan para admitir sus clientes y teléfonos de Escritorio de Windows que inician sesión en implementaciones locales (por ejemplo _, sip).\<domain>_|**Destino:** _sip._tls.\<domain>|
+|**CNAME** <br/> **(Teams y Skype Empresarial Online)**|Requerido por el cliente de escritorio de Skype Empresarial para windows, Mac y clientes web, así como Reunión de Skype aplicación (SMA) para iniciar sesión. <br/>También lo usan los cmdlets de PowerShell que siguen usando Skype Empresarial infraestructura en línea para la administración. Por lo tanto, también es necesario para los inquilinos solo de Teams e híbridos.|**Destino:**  lyncdiscover.\<domain>|
+|**SRV** <br/> **(Skype Empresarial Online)**|Requerido por Skype Empresarial para coordinar el flujo de información entre clientes de Lync.|**Servicio:** sip <br/> **Protocolo:** TLS <br/> **Prioridad:** 100 <br/> **Peso:** 1 <br/> **Puerto:** 443 <br/> **Objetivo:** sipdir.online.lync.com|
+|**CNAME** <br/> **(Skype Empresarial Online)**|Requerido por el cliente de escritorio de Lync para buscar el servicio Skype Empresarial Online e iniciar sesión.|**Alias:** sip <br/> **Objetivo:** sipdir.online.lync.com|
+|**CNAME** <br/> **(Skype Empresarial Online)**|Requerido por el cliente móvil de Lync para ayudar a encontrar el servicio Skype Empresarial Online e iniciar sesión.|**Alias:** lyncdiscover <br/> **Objetivo:** webdir.online.lync.com|
 
 ## <a name="external-dns-records-required-for-office-365-single-sign-on"></a>Registros DNS externos necesarios para el inicio de sesión único en Office 365
 <a name="BKMK_ReqdCore"> </a>

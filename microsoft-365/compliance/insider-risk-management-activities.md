@@ -15,23 +15,23 @@ ms.collection:
 - tier1
 - purview-compliance
 ms.custom: admindeeplinkCOMPLIANCE
-ms.openlocfilehash: 5487b2292901cd34599664215f18b4bbdc7cd943
-ms.sourcegitcommit: 04e517c7e00323b5c33d8ea937115725cf2cfd4d
+ms.openlocfilehash: 5d56550ce32c8e26af1dd777cd8477e7a59788d0
+ms.sourcegitcommit: 0d8fb571024f134d7480fe14cffc5e31a687d356
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/13/2022
-ms.locfileid: "68564638"
+ms.lasthandoff: 10/20/2022
+ms.locfileid: "68630236"
 ---
 # <a name="investigate-insider-risk-management-activities"></a>Investigación de actividades de administración de riesgos internos
 
 >[!IMPORTANT]
 >Administración de riesgos internos de Microsoft Purview correlaciona varias señales para identificar posibles riesgos internos malintencionados o involuntarios, como el robo de IP, la pérdida de datos y las infracciones de seguridad. La administración de riesgos internos permite a los clientes crear directivas para administrar la seguridad y el cumplimiento. Creados con privacidad por diseño, los usuarios se seudonimizan de forma predeterminada y los controles de acceso basados en roles y los registros de auditoría están en su lugar para ayudar a garantizar la privacidad del nivel de usuario.
 
-La investigación de actividades de usuario de riesgo es un primer paso importante para minimizar los riesgos internos para su organización. Estos riesgos pueden ser actividades que generan alertas a partir de directivas de administración de riesgos internos o riesgos de actividades detectadas por directivas, pero que no crean inmediatamente una alerta de administración de riesgos internos para los usuarios. Puede investigar estos tipos de actividades mediante los informes de **actividad de usuario (versión preliminar)** o con el **panel Alerta**.
+La investigación de actividades de usuario de riesgo es un primer paso importante para minimizar los riesgos internos para su organización. Estos riesgos pueden ser actividades que generan alertas a partir de directivas de administración de riesgos internos o riesgos de actividades detectadas por directivas, pero que no crean inmediatamente una alerta de administración de riesgos internos para los usuarios. Puede investigar estos tipos de actividades mediante los informes de **actividad de usuario** o con el **panel Alerta**.
 
 [!INCLUDE [purview-preview](../includes/purview-preview.md)]
 
-## <a name="user-activity-reports-preview"></a>Informes de actividad de usuario (versión preliminar)
+## <a name="user-activity-reports"></a>Informes de actividad de usuario
 
 Los informes de actividad de usuario permiten examinar las actividades de usuarios específicos durante un período de tiempo definido sin tener que asignarlas de forma temporal o explícita a una directiva de administración de riesgos internos. En la mayoría de los escenarios de administración de riesgos internos, los usuarios se definen explícitamente en las directivas y pueden tener alertas de directiva (en función de los eventos desencadenantes) y puntuaciones de riesgo asociadas a las actividades. Pero en algunos escenarios, es posible que desee examinar las actividades de los usuarios que no están definidas explícitamente en una directiva. Estas actividades pueden ser para los usuarios a los que ha recibido una sugerencia sobre el usuario y las actividades potencialmente de riesgo, o para los usuarios que normalmente no necesitan asignarse a una directiva de administración de riesgos internos.
 
@@ -50,10 +50,11 @@ Los informes nuevos suelen tardar hasta 10 horas en estar listos para su revisi�
 
 ![Informe de actividad del usuario de administración de riesgos internos.](../media/insider-risk-user-activity-report.png)
 
-El **informe de actividad de usuario** del usuario seleccionado contiene las pestañas **Actividad de usuario** y **Explorador de actividad** :
+El **informe de actividad de usuario** del usuario seleccionado contiene las pestañas **Actividad de usuario**, **Explorador de actividad** y **Pruebas forenses (versión preliminar** ):
 
 - **Actividad del usuario**: use esta vista de gráfico para investigar las actividades y ver las posibles actividades que se producen en secuencias. Esta pestaña está estructurada para permitir la revisión rápida de un caso, incluida una escala de tiempo histórica de todas las actividades, los detalles de la actividad, la puntuación de riesgo actual del usuario en el caso, la secuencia de eventos de riesgo y los controles de filtrado para ayudar con los esfuerzos de investigación.
 - **Explorador de actividades**: la pestaña **Explorador de actividades** proporciona a los investigadores de riesgos una herramienta de análisis completa que proporciona información detallada sobre las actividades. Con el Explorador de actividades, los revisores pueden revisar rápidamente una escala de tiempo de la actividad de riesgo detectada e identificar y filtrar todas las actividades de riesgo asociadas a alertas. Para más información sobre el uso del Explorador de actividad, consulte la sección *Explorador de actividad* más adelante en este artículo.
+- **Evidencia forense (versión preliminar):** la pestaña **Pruebas forenses (versión preliminar)** proporciona acceso a las capturas de evidencia forense asociadas a actividades que pueden dar lugar a incidentes de seguridad para los usuarios. La evidencia forense permite la captura visual personalizable entre dispositivos para ayudar a su organización a mitigar, comprender y responder mejor a posibles riesgos de datos, como la filtración no autorizada de datos confidenciales. Para más información sobre el uso de pruebas forenses, consulte [Información sobre las pruebas forenses de administración de riesgos internos](/microsoft-365/compliance/insider-risk-management-forensic-evidence).
 
 ## <a name="alert-dashboard"></a>Panel de alertas
 
@@ -195,11 +196,11 @@ El gráfico **de actividad De usuario** es una de las herramientas más eficaces
 > [!NOTE]
 > El Explorador de actividades está disponible en el área de administración de alertas para los usuarios con eventos desencadenantes después de que esta característica esté disponible en su organización.
 
-El Explorador de actividades proporciona a los investigadores y analistas de riesgo una herramienta de análisis completa que proporciona información detallada sobre las alertas. Con el Explorador de actividades, los revisores pueden revisar rápidamente una escala de tiempo de la actividad de riesgo detectada e identificar y filtrar todas las actividades de riesgo asociadas a alertas. 
+El Explorador de actividades proporciona a los investigadores y analistas de riesgo una herramienta de análisis completa que proporciona información detallada sobre las alertas. Con el Explorador de actividades, los revisores pueden revisar rápidamente una escala de tiempo de la actividad de riesgo detectada e identificar y filtrar todas las actividades de riesgo asociadas a alertas.
 
 Para filtrar alertas en el Explorador de actividad para obtener información de columna, seleccione el control Filtro. Puede filtrar las alertas por uno o varios atributos enumerados en el panel de detalles de la alerta. El explorador de actividades también admite columnas personalizables para ayudar a los investigadores y analistas a centrar el panel en la información más importante para ellos.
 
-Use los filtros Ámbito de actividad y Información de riesgo para mostrar y ordenar las actividades y la información de las áreas siguientes.
+Use los filtros *Ámbito de actividad* y *Información de riesgo* para mostrar y ordenar las actividades y la información de las áreas siguientes.
 
 - **Filtros de ámbito de actividad**: filtra todas las actividades puntuadas para el usuario.
   - Toda la actividad puntuada para este usuario
@@ -250,8 +251,8 @@ A medida que la administración de riesgos internos alerta de la antigüedad, su
 
 Para ayudar a minimizar el número de elementos anteriores que proporcionan un valor actual limitado, se aplican los siguientes límites y retención para alertas de administración de riesgos internos, casos e informes de actividad de usuario:
 
-|Elemento|Retención/límite|
-|---|---|
+|**Elemento**|**Retención/límite**|
+|:-------|:------------------|
 |Alertas con estado de revisión de necesidades|120 días desde la creación de alertas y, a continuación, se elimina automáticamente|
 |Casos activos (y artefactos asociados)|Retención indefinida, nunca expirar|
 |Casos resueltos (y artefactos asociados)|120 días a partir de la resolución de casos y, a continuación, se elimina automáticamente|

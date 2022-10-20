@@ -9,17 +9,18 @@ ms.topic: article
 ms.service: O365-seccomp
 ms.localizationpriority: high
 ms.collection:
-- M365-security-compliance
+- tier1
+- purview-compliance
 search.appverid:
 - MOE150
 - MET150
 description: Notas de la versión para la compatibilidad con juegos de caracteres de doble byte.
-ms.openlocfilehash: 593e1db04c5e4dc56bc4cc1a7fd11d907d4fe09d
-ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
-ms.translationtype: HT
+ms.openlocfilehash: 3851b0d0b49faecc123704ee2930fbd3d6ce6360
+ms.sourcegitcommit: 0d8fb571024f134d7480fe14cffc5e31a687d356
+ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/06/2022
-ms.locfileid: "66622433"
+ms.lasthandoff: 10/20/2022
+ms.locfileid: "68631818"
 ---
 # <a name="support-for-double-byte-character-set-release-notes"></a>Notas de la versión para la compatibilidad con juegos de caracteres de doble byte
 
@@ -31,6 +32,8 @@ ms.locfileid: "66622433"
 - Japonés
 
 Esta compatibilidad está disponible para tipos de información confidencial y diccionarios de palabras clave y se reflejará en la prevención de pérdida de datos de Microsoft Purview (para Exchange Online, SharePoint Online, OneDrive para la Empresa y Teams), cumplimiento de comunicaciones, etiquetado automático en aplicaciones de Office y Microsoft Defender for Cloud Apps.
+
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
 
 ## <a name="known-issues"></a>Problemas conocidos
 
@@ -46,7 +49,7 @@ Esta compatibilidad está disponible para tipos de información confidencial y d
   - "Los datos adjuntos contienen cualquiera de estas palabras"
   - "Los datos adjuntos contienen cualquiera de estas palabras"
 
-- Las directivas de prevención de pérdida de datos son aplicables en dispositivos macOS (versión preliminar) que ejecutan Catalina 10.15 y versiones posteriores, excepto para las condiciones mencionadas a continuación para los idiomas del este asiático, como el japonés.
+- Las directivas de prevención de pérdida de datos se pueden aplicar en dispositivos macOS (versión preliminar) que ejecutan tres versiones publicadas más recientes, excepto en las condiciones mencionadas a continuación para los idiomas del Este de Asia, incluido el japonés.
   - No se detectan números de ancho completo, como el uso de una plantilla integrada, como el número de cuenta bancaria de Japón
   - No se detectan números sin delimitadores
   - Las palabras clave separadas por un espacio de ancho medio no se detectan para un tipo de información confidencial. Por ejemplo, la palabra "japonés" se establece en el tipo de información confidencial y el diccionario no la detecta si está en una oración

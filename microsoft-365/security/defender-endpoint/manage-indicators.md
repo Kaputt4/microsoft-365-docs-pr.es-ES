@@ -15,15 +15,15 @@ audience: ITPro
 ms.collection:
 - m365-security
 - tier2
-ms.topic: article
+ms.topic: conceptual
 ms.subservice: mde
 search.appverid: met150
-ms.openlocfilehash: 248992f636434644ff79afba30b98d7198bdc119
-ms.sourcegitcommit: 4e42bafee965446f44f7f57d1defed2b9b24fce8
+ms.openlocfilehash: ccca356e33b22df31222f93be7defb4353d93854
+ms.sourcegitcommit: 0d8fb571024f134d7480fe14cffc5e31a687d356
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/30/2022
-ms.locfileid: "68233010"
+ms.lasthandoff: 10/20/2022
+ms.locfileid: "68633667"
 ---
 # <a name="create-indicators"></a>Crear indicadores
 
@@ -57,7 +57,7 @@ El agente de prevención respeta la misma lista de indicadores. Es decir, si Mic
 
 La investigación y corrección automatizadas se comportan igual. Si un indicador se establece en "Permitir", la investigación y corrección automatizadas omitirán un veredicto "incorrecto" para él. Si se establece en "Bloquear", la investigación y la corrección automatizadas lo tratarán como "incorrecto".
 
-La configuración EnableFileHashComputation calcula el hash de archivo para el certificado y el archivo IoC durante los exámenes de archivos. Admite la aplicación de IoC de hashes y certificados que pertenecen a aplicaciones de confianza. Se habilitará y deshabilitará simultáneamente con la configuración de permitir o bloquear archivos. EnableFileHashComputation se habilita manualmente mediante directiva de grupo y está deshabilitado de forma predeterminada.
+La configuración EnableFileHashComputation calcula el hash de archivo para el certificado y el archivo IoC durante los exámenes de archivos. Admite la aplicación de IoC de hashes y certificados que pertenecen a aplicaciones de confianza. Se habilitará y deshabilitará simultáneamente con la configuración de permitir o bloquear archivos. EnableFileHashComputation se habilita manualmente mediante समूह नीति y está deshabilitado de forma predeterminada.
 
 Al crear un nuevo indicador (IoC), están disponibles una o varias de las siguientes acciones:
 

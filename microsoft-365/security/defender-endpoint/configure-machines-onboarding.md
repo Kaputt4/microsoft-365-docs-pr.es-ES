@@ -1,7 +1,7 @@
 ---
 title: Incorporación de dispositivos a Microsoft Defender para punto de conexión
 description: Realice un seguimiento de la incorporación de dispositivos administrados por Intune para Microsoft Defender para punto de conexión y aumente la tasa de incorporación.
-keywords: onboard, Intune management, Microsoft Defender para punto de conexión, Microsoft Defender, Windows Defender, configuration management
+keywords: onboard, Intune management, Microsoft Defender para punto de conexión, Microsoft Defender, Windows डिफेन्डर, configuration management
 ms.service: microsoft-365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
@@ -14,15 +14,15 @@ audience: ITPro
 ms.collection:
 - m365-security
 - tier2
-ms.topic: article
+ms.topic: conceptual
 ms.subservice: mde
 search.appverid: met150
-ms.openlocfilehash: eced2495ce75faa78fd7923b871b3a3b00f5fc3a
-ms.sourcegitcommit: 0b7070ec119e00e0dafe030bbfbef0ae5c9afa19
+ms.openlocfilehash: 1098086d3a4709251d16baa7238ffa7ded675b8b
+ms.sourcegitcommit: 0d8fb571024f134d7480fe14cffc5e31a687d356
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/29/2022
-ms.locfileid: "68172255"
+ms.lasthandoff: 10/20/2022
+ms.locfileid: "68635782"
 ---
 # <a name="get-devices-onboarded-to-microsoft-defender-for-endpoint"></a>Incorporación de dispositivos a Microsoft Defender para punto de conexión
 
@@ -54,7 +54,7 @@ La tarjeta **de incorporación** proporciona información general de alto nivel 
 *Tarjeta que muestra los dispositivos incorporados en comparación con el número total de dispositivos Windows administrados por Intune*
 
 > [!NOTE]
-> Si ha usado Configuration Manager, el script de incorporación u otros métodos de incorporación que no usan perfiles Intune, es posible que encuentre discrepancias de datos. Para resolver estas discrepancias, cree un perfil de configuración de Intune correspondiente para la incorporación de Defender para punto de conexión y asígnelo a los dispositivos.
+> Si usó Configuration Manager, el script de incorporación u otros métodos de incorporación que no usan perfiles de Intune, es posible que encuentre discrepancias de datos. Para resolver estas discrepancias, cree un perfil de configuración de Intune correspondiente para la incorporación de Defender para punto de conexión y asígnelo a los dispositivos.
 
 ## <a name="onboard-more-devices-with-intune-profiles"></a>Incorporación de más dispositivos con perfiles de Intune
 
@@ -67,7 +67,7 @@ En la tarjeta **Incorporación**, seleccione **Incorporar más dispositivos** pa
 *Microsoft Defender para punto de conexión página de cumplimiento de dispositivos en Intune administración de dispositivos*
 
 > [!TIP]
-> Como alternativa, puede navegar a la página Cumplimiento de incorporación de Defender para punto de conexión en [Microsoft Azure Portal](https://portal.azure.com/) desde **Todos los servicios > Intune > Cumplimiento de dispositivos > Microsoft Defender ATP**.
+> Como alternativa, puede navegar a la página cumplimiento de incorporación de Defender para punto de conexión en [Microsoft Azure Portal](https://portal.azure.com/) desde **Todos los servicios > Intune > Cumplimiento de dispositivos > Microsoft Defender ATP**.
 
 > [!NOTE]
 > Si desea ver los datos del dispositivo más actualizados, haga clic en **Lista de dispositivos sin sensor ATP**.

@@ -20,12 +20,12 @@ ms.custom: seo-marvel-apr2020
 ms.reviewer: vippand
 ms.subservice: mdo
 ms.service: microsoft-365-security
-ms.openlocfilehash: 7ad14ea93944cf7f754006c4e934049061d1b29d
-ms.sourcegitcommit: 12af9e8e3a6eaa090fda9e98ccb831dff65863a4
+ms.openlocfilehash: 75d0c3b56ba45be8540cd8bd877f1c9067fceb4a
+ms.sourcegitcommit: 0d8fb571024f134d7480fe14cffc5e31a687d356
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/27/2022
-ms.locfileid: "68057576"
+ms.lasthandoff: 10/20/2022
+ms.locfileid: "68639936"
 ---
 # <a name="whats-new-in-microsoft-defender-for-office-365"></a>Novedades de Microsoft Defender para Office 365
 
@@ -46,6 +46,12 @@ Para obtener más información sobre las novedades de otros productos de segurid
 - [Novedades de Microsoft Defender para punto de conexión](../defender-endpoint/whats-new-in-microsoft-defender-endpoint.md)
 - [Novedades de Microsoft Defender for Identity](/defender-for-identity/whats-new)
 - [Novedades de Microsoft Defender for Cloud Apps](/cloud-app-security/release-notes)
+
+## <a name="october-2022"></a>Octubre de 2022
+
+- **[Administre los bloques y los permitidos en la lista de permitidos o bloqueados de inquilinos](manage-tenant-allow-block-list.md):**
+  - Con **permitir la administración de expiración** (actualmente en versión preliminar privada), si Microsoft no ha aprendido del permiso, Microsoft ampliará automáticamente el tiempo de expiración de las autorizaciones, que expirarán pronto, en 30 días para evitar que el correo electrónico legítimo vuelva a entrar en correo no deseado o en cuarentena de nuevo.
+  - Los clientes de los entornos de nube gubernamentales ahora podrán crear entradas permitidas y de bloqueo para direcciones URL y datos adjuntos en la lista de permitidos o bloqueados de inquilinos mediante la dirección URL de administrador y los envíos de datos adjuntos de correo electrónico. Los datos enviados a través de la experiencia de envíos no abandonarán el inquilino del cliente, cumpliendo así los compromisos de residencia de datos para los clientes en la nube gubernamentales.
 
 ## <a name="september-2022"></a>Septiembre de 2022
 

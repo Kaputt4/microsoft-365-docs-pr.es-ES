@@ -15,7 +15,7 @@ ms.author: v-jweston
 ms.reviewer: oogunrinde, sugamar
 manager: dansimp
 ms.custom: asr
-ms.topic: article
+ms.topic: conceptual
 ms.collection:
 - m365-security
 - m365solution-asr-rules
@@ -23,12 +23,12 @@ ms.collection:
 - tier1
 ms.date: 09/18/2022
 search.appverid: met150
-ms.openlocfilehash: 6bbdf9f1971f86c6c2b9ac32033c738d50c5945f
-ms.sourcegitcommit: b9282493c371d59c2e583b9803825096499b5e2c
+ms.openlocfilehash: 697f8352cc23c1379d756ceda95b83bd299b0d52
+ms.sourcegitcommit: 0d8fb571024f134d7480fe14cffc5e31a687d356
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/29/2022
-ms.locfileid: "68150009"
+ms.lasthandoff: 10/20/2022
+ms.locfileid: "68632126"
 ---
 # <a name="test-attack-surface-reduction-asr-rules"></a>Probar las reglas de reducción de la superficie expuesta a ataques (ASR)
 
@@ -40,7 +40,7 @@ En esta sección de la guía de implementación de reglas de ASR, aprenderá a:
 - usar Microsoft Defender para punto de conexión informes de reglas de ASR
 - Configurar exclusiones de reglas de ASR
 - habilitación de reglas de ASR mediante PowerShell
-- usar Visor de eventos para eventos de reglas de ASR
+- usar घटना दर्शक para eventos de reglas de ASR
 
 > [!NOTE]
 > Antes de empezar a probar las reglas de ASR, se recomienda deshabilitar primero todas las reglas que haya establecido anteriormente en **auditar** o **habilitar** (si procede). Consulte [Informes de reglas de reducción de superficie](attack-surface-reduction-rules-report.md) expuesta a ataques para obtener información sobre cómo usar el informe de reglas de ASR para deshabilitar las reglas de ASR.
@@ -208,11 +208,11 @@ Para habilitar todas las reglas de reducción de superficie expuesta a ataques a
 > [!TIP]
 > Si desea auditar por completo cómo funcionarán las reglas de reducción de superficie expuesta a ataques en su organización, deberá usar una herramienta de administración para implementar esta configuración en los dispositivos de las redes.
 
-También puede usar proveedores de servicios de configuración de directiva de grupo, Intune o administración de dispositivos móviles (MDM) para configurar e implementar la configuración. Obtenga más información en el artículo principal [Reglas de reducción de superficie expuesta a ataques](attack-surface-reduction.md) .
+También puede usar proveedores de servicios de configuración de समूह नीति, Intune o administración de dispositivos móviles (MDM) para configurar e implementar la configuración. Obtenga más información en el artículo principal [Reglas de reducción de superficie expuesta a ataques](attack-surface-reduction.md) .
 
-## <a name="use-windows-event-viewer-review-as-an-alternative-to-the-attack-surface-reduction-rules-reporting-page-in-the-microsoft-365-defender-portal"></a>Usar Windows Visor de eventos Review como alternativa a la página de informes de reglas de reducción de superficie expuesta a ataques en el portal de Microsoft 365 Defender
+## <a name="use-windows-event-viewer-review-as-an-alternative-to-the-attack-surface-reduction-rules-reporting-page-in-the-microsoft-365-defender-portal"></a>Usar Windows घटना दर्शक Review como alternativa a la página de informes de reglas de reducción de superficie expuesta a ataques en el portal de Microsoft 365 Defender
 
-Para revisar las aplicaciones que se habrían bloqueado, abra Visor de eventos y filtre por el identificador de evento 1121 en el registro Microsoft-Windows-Windows Defender/Operational. En la tabla siguiente se enumeran todos los eventos de protección de red.
+Para revisar las aplicaciones que se habrían bloqueado, abra घटना दर्शक y filtre por el identificador de evento 1121 en el registro microsoft-windows-Windows डिफेन्डर/operativo. En la tabla siguiente se enumeran todos los eventos de protección de red.
 
 Id. de evento | Descripción
 -|-

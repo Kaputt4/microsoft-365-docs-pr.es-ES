@@ -16,14 +16,14 @@ audience: ITPro
 ms.collection:
 - m365-security
 - tier2
-ms.topic: article
+ms.topic: conceptual
 ms.subservice: mde
-ms.openlocfilehash: d1aca56b87d037a90498baba9a6151ec3878d0f2
-ms.sourcegitcommit: 0b7070ec119e00e0dafe030bbfbef0ae5c9afa19
+ms.openlocfilehash: bc93ecda200dc207f39c95a2e2ce3f3f97c2251c
+ms.sourcegitcommit: 0d8fb571024f134d7480fe14cffc5e31a687d356
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/29/2022
-ms.locfileid: "68175026"
+ms.lasthandoff: 10/20/2022
+ms.locfileid: "68628299"
 ---
 # <a name="get-started-with-troubleshooting-mode-in-microsoft-defender-for-endpoint"></a>Introducción al modo de solución de problemas en Microsoft Defender para punto de conexión 
 
@@ -60,7 +60,7 @@ Microsoft Defender para punto de conexión modo de solución de problemas le per
 
   - Todos los registros e instantáneas anteriores se recopilarán y estarán disponibles para que un administrador lo recopile mediante la característica [Recopilar paquete de investigación](respond-machine-alerts.md#collect-investigation-package-from-devices) en la página del dispositivo. Tenga en cuenta que Microsoft no quitará estos datos del dispositivo hasta que un administrador los recopile.
 
-- Los administradores también pueden revisar los cambios en la configuración que tienen lugar durante el modo de solución de problemas en **Visor de eventos** en la página del dispositivo.
+- Los administradores también pueden revisar los cambios en la configuración que tienen lugar durante el modo de solución de problemas en **घटना दर्शक** en la página del dispositivo.
 
 - El modo de solución de problemas se desactiva automáticamente después de alcanzar el tiempo de expiración (dura 3 horas). Después de la expiración, todas las configuraciones administradas por directivas volverán a ser de solo lectura y volverán a su estado antes de establecer el modo de solución de problemas.
 

@@ -1,6 +1,6 @@
 ---
-title: Incorporación de dispositivos Windows para Microsoft Defender para punto de conexión a través de directiva de grupo
-description: Use directiva de grupo para implementar el paquete de configuración en dispositivos Windows para que se incorporen al servicio.
+title: Incorporación de dispositivos Windows para Microsoft Defender para punto de conexión a través de समूह नीति
+description: Use समूह नीति para implementar el paquete de configuración en dispositivos Windows para que se incorporen al servicio.
 keywords: configurar dispositivos mediante la directiva de grupo, la administración de dispositivos, la configuración de dispositivos Microsoft Defender para punto de conexión, la incorporación de dispositivos Microsoft Defender para punto de conexión, la directiva de grupo
 ms.service: microsoft-365-security
 ms.mktglfcycl: deploy
@@ -15,16 +15,16 @@ ms.collection:
 - m365-security
 - tier1
 ms.custom: admindeeplinkDEFENDER
-ms.topic: article
+ms.topic: conceptual
 ms.date: 12/07/2021
 ms.subservice: mde
 search.appverid: met150
-ms.openlocfilehash: 3aa8872609f07e9382c9b7e2040a417a99221c63
-ms.sourcegitcommit: 0b7070ec119e00e0dafe030bbfbef0ae5c9afa19
+ms.openlocfilehash: 32e9bda04c7abcee70af5d086255e905fab34170
+ms.sourcegitcommit: 0d8fb571024f134d7480fe14cffc5e31a687d356
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/29/2022
-ms.locfileid: "68180525"
+ms.lasthandoff: 10/20/2022
+ms.locfileid: "68632038"
 ---
 # <a name="onboard-windows-devices-using-group-policy"></a>Incorporar dispositivos Windows mediante directiva de grupo 
 
@@ -41,12 +41,12 @@ ms.locfileid: "68180525"
 > ¿Quiere experimentar Defender para punto de conexión? [Regístrese para obtener una prueba gratuita.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-configureendpointsgp-abovefoldlink)
 
 > [!NOTE]
-> Para usar las actualizaciones de directiva de grupo (GP) para implementar el paquete, debe estar en Windows Server 2008 R2 o posterior.
+> Para usar las actualizaciones de समूह नीति (GP) para implementar el paquete, debes estar en Windows Server 2008 R2 o posterior.
 >
-> Para Windows Server 2019 y Windows Server 2022, es posible que deba reemplazar NT AUTHORITY\Well-Known-System-Account por NT AUTHORITY\SYSTEM del archivo XML que crea la preferencia de directiva de grupo.
+> Para Windows Server 2019 y Windows Server 2022, es posible que deba reemplazar NT AUTHORITY\Well-Known-System-Account por NT AUTHORITY\SYSTEM del archivo XML que crea la preferencia de समूह नीति.
 
 > [!NOTE]
-> Si usa la nueva solución de Microsoft Defender para punto de conexión unificada para Windows Server 2012 R2 y 2016, asegúrese de que usa los archivos ADMX más recientes de la tienda central para obtener acceso a la correcta. Microsoft Defender para punto de conexión opciones de directiva. Consulta [Cómo crear y administrar la Tienda Central para plantillas administrativas de directiva de grupo en Windows](/troubleshoot/windows-client/group-policy/create-and-manage-central-store) y descarga los archivos más recientes **para usarlos con Windows 10**.
+> Si usa la nueva solución de Microsoft Defender para punto de conexión unificada para Windows Server 2012 R2 y 2016, asegúrese de que usa los archivos ADMX más recientes de la tienda central para obtener acceso a la correcta. Microsoft Defender para punto de conexión opciones de directiva. Consulta [Cómo crear y administrar la Tienda central para समूह नीति plantillas administrativas en Windows](/troubleshoot/windows-client/group-policy/create-and-manage-central-store) y descarga los archivos más recientes **para usarlos con Windows 10**.
 
 Consulte el [PDF](https://download.microsoft.com/download/5/6/0/5609001f-b8ae-412f-89eb-643976f6b79c/mde-deployment-strategy.pdf)  o  [Visio](https://download.microsoft.com/download/5/6/0/5609001f-b8ae-412f-89eb-643976f6b79c/mde-deployment-strategy.vsdx) para ver las distintas rutas de acceso en la implementación de Defender para punto de conexión.
 
@@ -62,11 +62,11 @@ Consulte el [PDF](https://download.microsoft.com/download/5/6/0/5609001f-b8ae-41
 
 2. Extraiga el contenido del archivo .zip en una ubicación compartida de solo lectura a la que pueda acceder el dispositivo. Debe tener una carpeta denominada *OptionalParamsPolicy* y el archivo *WindowsDefenderATPOnboardingScript.cmd*.
 
-3. Para crear un nuevo GPO, abra la [consola de administración de directiva de grupo](/internet-explorer/ie11-deploy-guide/group-policy-and-group-policy-mgmt-console-ie11) (GPMC), haga clic con el botón derecho en **directiva de grupo Objetos** que desea configurar y haga clic en **Nuevo**. Escriba el nombre del nuevo GPO en el cuadro de diálogo que se muestra y haga clic en **Aceptar**.
+3. Para crear un nuevo GPO, abra la [consola de administración de समूह नीति](/internet-explorer/ie11-deploy-guide/group-policy-and-group-policy-mgmt-console-ie11) (GPMC), haga clic con el botón derecho en **समूह नीति Objetos** que desea configurar y haga clic en **Nuevo**. Escriba el nombre del nuevo GPO en el cuadro de diálogo que se muestra y haga clic en **Aceptar**.
 
-4. Abra la [consola de administración de directiva de grupo](/internet-explorer/ie11-deploy-guide/group-policy-and-group-policy-mgmt-console-ie11) (GPMC), haga clic con el botón derecho en el objeto de directiva de grupo (GPO) que desea configurar y haga clic en **Editar**.
+4. Abra la [consola de administración de समूह नीति](/internet-explorer/ie11-deploy-guide/group-policy-and-group-policy-mgmt-console-ie11) (GPMC), haga clic con el botón derecho en el objeto de समूह नीति (GPO) que desea configurar y haga clic en **Editar**.
 
-5. En el **Editor de administración de directiva de grupo**, vaya a **Configuración del equipo**, **Preferencias** y, a continuación, **Configuración del panel de control**.
+5. En el **Editor de administración de समूह नीति**, vaya a **Configuración del equipo**, **Preferencias** y, a continuación, **Configuración del panel de control**.
 
 6. Haga clic con el botón derecho en **Tareas programadas**, seleccione **Nuevo** y, a continuación, haga clic en **Tarea inmediata (al menos Windows 7).**
 
@@ -80,7 +80,7 @@ Consulte el [PDF](https://download.microsoft.com/download/5/6/0/5609001f-b8ae-41
 
 11. Seleccione **Aceptar** y cierre las ventanas de GPMC abiertas.
 
-12. Para vincular el GPO a una unidad organizativa (OU), haga clic con el botón derecho y seleccione **Vincular un GPO existente**. En el cuadro de diálogo que se muestra, seleccione el objeto directiva de grupo que desea vincular. Haga clic en **Aceptar**.
+12. Para vincular el GPO a una unidad organizativa (OU), haga clic con el botón derecho y seleccione **Vincular un GPO existente**. En el cuadro de diálogo que se muestra, seleccione el objeto समूह नीति que desea vincular. Haga clic en **Aceptar**.
 
 > [!TIP]
 > Después de incorporar el dispositivo, puede optar por ejecutar una prueba de detección para comprobar que el dispositivo está incorporado correctamente al servicio. Para obtener más información, consulte [Ejecución de una prueba de detección en un dispositivo De Defender para punto de conexión recién incorporado](run-detection-test.md).
@@ -89,7 +89,7 @@ Consulte el [PDF](https://download.microsoft.com/download/5/6/0/5609001f-b8ae-41
 
 Para cada dispositivo, puede indicar si se pueden recopilar muestras del dispositivo cuando se realiza una solicitud a través de Microsoft 365 Defender para enviar un archivo para un análisis profundo.
 
-Puede usar directiva de grupo (GP) para configurar opciones, como la configuración del uso compartido de ejemplo que se usa en la característica de análisis profundo.
+Puede usar समूह नीति (GP) para configurar opciones, como la configuración del uso compartido de ejemplo que se usa en la característica de análisis profundo.
 
 ### <a name="configure-sample-collection-settings"></a>Configuración de la colección de ejemplo
 
@@ -99,19 +99,19 @@ Puede usar directiva de grupo (GP) para configurar opciones, como la configuraci
 
     - Copia _de AtpConfiguration.adml_ en _C:\\Windows\\PolicyDefinitions\\en-US_
 
-    Si usa una [tienda central para directiva de grupo plantillas administrativas](https://support.microsoft.com/help/3087759/how-to-create-and-manage-the-central-store-for-group-policy-administra), copie los siguientes archivos del paquete de configuración:
+    Si usa una [tienda central para समूह नीति plantillas administrativas](https://support.microsoft.com/help/3087759/how-to-create-and-manage-the-central-store-for-group-policy-administra), copie los siguientes archivos del paquete de configuración:
 
     - Copiar _AtpConfiguration.admx_ en _\\\<forest.root\>\\\\directivas sysvolDefinitions\\\<forest.root\>\\\\_
 
     - Copiar _AtpConfiguration.adml_ en _\\\\\\\<forest.root\>directivas sysvolDefinitions\\\\\<forest.root\>\\\\en-US_
 
-2. Abra la [consola de administración de directiva de grupo](/internet-explorer/ie11-deploy-guide/group-policy-and-group-policy-mgmt-console-ie11), haga clic con el botón derecho en el GPO que desea configurar y haga clic en **Editar**.
+2. Abra la [consola de administración de समूह नीति](/internet-explorer/ie11-deploy-guide/group-policy-and-group-policy-mgmt-console-ie11), haga clic con el botón derecho en el GPO que desea configurar y haga clic en **Editar**.
 
-3. En el **Editor de administración de directiva de grupo**, vaya a **Configuración del equipo**.
+3. En el **Editor de administración de समूह नीति**, vaya a **Configuración del equipo**.
 
 4. Haga clic en **Directivas** y, a continuación, **en Plantillas administrativas**.
 
-5. Haga clic en **Componentes de Windows** y, a continuación, **Windows Defender ATP**.
+5. Haga clic en **Componentes de Windows** y, a continuación **, Windows डिफेन्डर ATP**.
 
 6. Elija habilitar o deshabilitar el uso compartido de ejemplos desde los dispositivos.
 
@@ -126,7 +126,7 @@ Después de configurar el script de incorporación, siga editando la misma direc
 
 Todas las directivas se encuentran en `Computer Configuration\Policies\Administrative Templates`.
 
-**Ubicación de directiva:** \Componentes de Windows\Windows Defender ATP
+**Ubicación de la directiva:** \Componentes de Windows\Windows डिफेन्डर ATP
 
 Policy|Setting
 ---|---
@@ -196,7 +196,7 @@ Configuración del acceso controlado a carpetas| \Componentes de Windows\Microso
 
 Después de incorporar el dispositivo, puede optar por ejecutar una prueba de detección para comprobar que un dispositivo está incorporado correctamente al servicio. Para obtener más información, consulte [Ejecución de una prueba de detección en un dispositivo Microsoft Defender para punto de conexión recién incorporado](run-detection-test.md).
 
-## <a name="offboard-devices-using-group-policy"></a>Dispositivos fuera del panel que usan directiva de grupo
+## <a name="offboard-devices-using-group-policy"></a>Dispositivos fuera del panel con समूह नीति
 
 Por motivos de seguridad, el paquete usado para dispositivos Offboard expirará 30 días después de la fecha en que se descargó. Se rechazarán los paquetes de offboarding expirados enviados a un dispositivo. Al descargar un paquete de offboarding, se le notificará la fecha de expiración de los paquetes y también se incluirá en el nombre del paquete.
 
@@ -215,9 +215,9 @@ Por motivos de seguridad, el paquete usado para dispositivos Offboard expirará 
 
 2. Extraiga el contenido del archivo .zip en una ubicación compartida de solo lectura a la que pueda acceder el dispositivo. Debe tener un archivo denominado *WindowsDefenderATPOffboardingScript_valid_until_YYYY-MM-DD.cmd*.
 
-3. Abra la [consola de administración de directiva de grupo](/internet-explorer/ie11-deploy-guide/group-policy-and-group-policy-mgmt-console-ie11) (GPMC), haga clic con el botón derecho en el objeto de directiva de grupo (GPO) que desea configurar y haga clic en **Editar**.
+3. Abra la [consola de administración de समूह नीति](/internet-explorer/ie11-deploy-guide/group-policy-and-group-policy-mgmt-console-ie11) (GPMC), haga clic con el botón derecho en el objeto de समूह नीति (GPO) que desea configurar y haga clic en **Editar**.
 
-4. En el **Editor de administración de directiva de grupo**, vaya a **Configuración del equipo,** **Preferencias** y, a continuación, **Configuración del panel de control**.
+4. En el **Editor de administración de समूह नीति**, vaya a **Configuración del equipo,** **Preferencias** y, a continuación, **Configuración del panel de control**.
 
 5. Haga clic con el botón derecho en **Tareas programadas**, seleccione **Nuevo** y, a continuación, haga clic en **Tarea inmediata**.
 
@@ -236,7 +236,7 @@ Por motivos de seguridad, el paquete usado para dispositivos Offboard expirará 
 
 ## <a name="monitor-device-configuration"></a>Supervisión de la configuración del dispositivo
 
-Con directiva de grupo no hay una opción para supervisar la implementación de directivas en los dispositivos. La supervisión se puede realizar directamente en el portal o mediante las distintas herramientas de implementación.
+Con समूह नीति no hay una opción para supervisar la implementación de directivas en los dispositivos. La supervisión se puede realizar directamente en el portal o mediante las distintas herramientas de implementación.
 
 ## <a name="monitor-devices-using-the-portal"></a>Supervisión de dispositivos mediante el portal
 
@@ -249,7 +249,7 @@ Con directiva de grupo no hay una opción para supervisar la implementación de 
 
 ## <a name="setup-defender-av-policies"></a>Configuración de directivas de Antivirus de Defender
 
-Cree un nuevo directiva de grupo o agrupe esta configuración con las demás directivas. Esto depende del entorno del cliente y de cómo le gustaría implementar el servicio dirigiendo las unidades organizativas (OU) diferentes.
+Cree un nuevo समूह नीति o agrupe esta configuración con las demás directivas. Esto depende del entorno del cliente y de cómo le gustaría implementar el servicio dirigiendo las unidades organizativas (OU) diferentes.
 
 1. Después de elegir el GP o crear uno nuevo, edite el GP.
 
@@ -273,13 +273,13 @@ Vaya a **Directivas** \> **de configuración** \> del equipo **Plantillas** \> a
 
 :::image type="content" source="images/config-monitor-incoming-outgoing-file-act.png" alt-text="Configuración de la supervisión de la actividad de archivo saliente entrante" lightbox="images/config-monitor-incoming-outgoing-file-act.png":::
 
-### <a name="configure-windows-defender-smartscreen-settings"></a>Configuración de Windows Defender SmartScreen
+### <a name="configure-windows-defender-smartscreen-settings"></a>Configuración de Windows डिफेन्डर SmartScreen
 
-1. Vaya a **Directivas** \> **de configuración** \> del equipo **Plantillas** \> administrativas **Componentes** \> de Windows Windows Defender **Explorador** **de SmartScreen**\>.
+1. Vaya a **Directivas** \> **de configuración** \> del equipo **Plantillas** \> administrativas **Componentes** \> de Windows Windows डिफेन्डर **Explorador** **de SmartScreen**\>.
 
    :::image type="content" source="images/config-windows-def-smartscr-explorer.png" alt-text="Configuración del Explorador de pantalla inteligente de Windows Defender" lightbox="images/config-windows-def-smartscr-explorer.png":::
  
-2. Vaya a **Directivas** >  **de configuración** >  del equipo **Plantillas** >  administrativas **Componentes** >  **de Windows Windows Defender SmartScreen** > **Microsoft Edge**.
+2. Vaya a **Directivas de configuración** > **del** >  equipo **Plantillas** >  administrativas **Componentes** >  de Windows **Windows डिफेन्डर SmartScreen** > **Microsoft Edge**.
 
     :::image type="content" source="images/config-windows-def-smartscr-explorer.png" alt-text="Configuración de Edge de pantalla inteligente de Windows Defender" lightbox="images/config-windows-def-smartscr-explorer.png":::
 

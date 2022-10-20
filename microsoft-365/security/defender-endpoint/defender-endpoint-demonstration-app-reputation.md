@@ -16,17 +16,15 @@ audience: ITPro
 ms.collection:
 - m365-security
 - tier2
-ms.topic: article
+ms.topic: conceptual
 ms.subservice: mde
-ms.openlocfilehash: 6b3519fe6358de1e65d2dbb38a4dafad1757608e
-ms.sourcegitcommit: 4f8200453d347de677461f27eb5a3802ce5cc888
+ms.openlocfilehash: 82a0eab112545e8bbb78356f4a26baf6af903648
+ms.sourcegitcommit: 0d8fb571024f134d7480fe14cffc5e31a687d356
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/12/2022
-ms.locfileid: "68543011"
+ms.lasthandoff: 10/20/2022
+ms.locfileid: "68631950"
 ---
-<!--- v-jweston resumes authorship and ms.authorship appx April-May 2023 ---> 
-
 # <a name="smartscreen-app-reputation-demonstration"></a>Demostración de reputación de la aplicación SmartScreen
 
 Pruebe cómo Microsoft Defender para punto de conexión SmartScreen le ayuda a identificar sitios web de phishing y malware en función de la reputación de la aplicación.
@@ -73,7 +71,7 @@ Esta descarga es malware conocido; SmartScreen debe impedir que este programa se
 
   Al iniciar este vínculo, se debe representar un mensaje similar al siguiente:
 
-  :::image type="content" source="images/smartscreen-app-reputation-known-malware.png" alt-text="SmartScreen detecta una descarga de archivos con una reputación no segura; la descarga está bloqueada.":::
+  :::image type="content" source="images/smartscreen-app-reputation-known-malware.png" alt-text="Captura de pantalla que muestra cómo SmartScreen detecta una descarga de archivos con una reputación no segura; la descarga está bloqueada.":::
 
 ## <a name="learn-more"></a>Más información
 

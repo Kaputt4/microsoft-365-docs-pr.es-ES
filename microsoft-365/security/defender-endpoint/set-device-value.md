@@ -11,17 +11,19 @@ author: dansimp
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
-ms.collection: M365-security-compliance
-ms.topic: article
+ms.collection:
+- m365-security
+- tier3
+ms.topic: conceptual
 ms.subservice: mde
 ms.custom: api
 search.appverid: met150
-ms.openlocfilehash: e9a0f80207aa8c6d24c349c103b4fc4502a28758
-ms.sourcegitcommit: 9b133379196da2b3a4bb311b07ff274f43780f68
+ms.openlocfilehash: fc093b38f6721ba21c41678bfc6c744e21186b1b
+ms.sourcegitcommit: 0d8fb571024f134d7480fe14cffc5e31a687d356
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/14/2022
-ms.locfileid: "67682677"
+ms.lasthandoff: 10/20/2022
+ms.locfileid: "68635144"
 ---
 # <a name="set-device-value-api"></a>Establecer la API de valor de dispositivo
 
