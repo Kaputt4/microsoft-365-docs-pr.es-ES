@@ -10,7 +10,7 @@ ms.pagetype: security
 ms.localizationpriority: medium
 author: denisebmsft
 ms.author: deniseb
-ms.topic: article
+ms.topic: conceptual
 ms.date: 10/22/2021
 manager: dansimp
 ms.custom: nextgen
@@ -18,12 +18,12 @@ ms.collection:
 - m365-security
 - tier2
 search.appverid: met150
-ms.openlocfilehash: c304ac83f2036f5faaee37a36b7bc8acbe6e321c
-ms.sourcegitcommit: 0b7070ec119e00e0dafe030bbfbef0ae5c9afa19
+ms.openlocfilehash: 667cb940c716e95922301dca18985f6378e472ac
+ms.sourcegitcommit: 0d8fb571024f134d7480fe14cffc5e31a687d356
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/29/2022
-ms.locfileid: "68198910"
+ms.lasthandoff: 10/20/2022
+ms.locfileid: "68620423"
 ---
 # <a name="enable-and-configure-microsoft-defender-antivirus-always-on-protection-in-group-policy"></a>Habilitar y configurar la protección siempre activa del Antivirus de Windows Defender en la directiva de grupo
 
@@ -40,21 +40,21 @@ La protección always-on consta de protección en tiempo real, supervisión del 
 
 Estas actividades incluyen eventos, como procesos que realizan cambios inusuales en los archivos existentes, modificación o creación de claves del Registro de inicio automático y ubicaciones de inicio (también conocidas como puntos de extensibilidad de inicio automático o ASEP) y otros cambios en el sistema de archivos o la estructura de archivos.
 
-## <a name="enable-and-configure-always-on-protection-in-group-policy"></a>Habilitar y configurar la protección always-on en directiva de grupo
+## <a name="enable-and-configure-always-on-protection-in-group-policy"></a>Habilitar y configurar la protección always-on en समूह नीति
 
-Puede usar **el Editor de directiva de grupo local** para habilitar y configurar Microsoft Defender configuración de protección siempre activa del Antivirus.
+Puede usar **el Editor de समूह नीति local** para habilitar y configurar Microsoft Defender configuración de protección siempre activa del Antivirus.
 
 Para habilitar y configurar la protección always-on:
 
-1. Abra **el Editor de directiva de grupo local**, como se indica a continuación:
+1. Abra **el Editor de समूह नीति local**, como se indica a continuación:
 
     1. En el cuadro de búsqueda Windows 10 o Windows 11 barra de tareas, escriba **gpedit**.
 
-    2. En **Mejor coincidencia**, seleccione **Editar directiva de grupo** para iniciar **el Editor de directiva de grupo local**.
+    2. En **Mejor coincidencia**, seleccione **Editar directiva de grupo** para iniciar **el Editor de समूह नीति local**.
     
        :::image type="content" source="images/gpedit-search.png" alt-text="El resultado de búsqueda de la barra de tareas GPEdit en el panel de control" lightbox="images/gpedit-search.png":::
 
-2. En el panel izquierdo del **Editor de directiva de grupo local**, expanda el árbol a **Configuración** \> del equipo **Plantillas** \> administrativas **Componentes** \> de Windows **Microsoft Defender Antivirus**.
+2. En el panel izquierdo del **Editor de समूह नीति local**, expanda el árbol a **Configuración** \> del equipo **Plantillas** \> administrativas **Componentes** \> de Windows **Microsoft Defender Antivirus**.
 
 3. Configure la configuración de la directiva de servicio antimalware Microsoft Defender Antivirus.
 
@@ -80,40 +80,40 @@ Para habilitar y configurar la protección always-on:
 
    3. Seleccione **Aceptar**.
 
-6. Cierre **el Editor de directiva de grupo local**.
+6. Cierre **el Editor de समूह नीति local**.
 
 ### <a name="real-time-protection-policy-settings"></a>Configuración de directivas de protección en tiempo real
 
 |Setting|Configuración predeterminada|
 |---|---|
 |Activar la supervisión del comportamiento <p> El motor antivirus supervisará los procesos de archivos, los cambios de archivos y del Registro, y otros eventos en los puntos de conexión para detectar actividades malintencionadas sospechosas y conocidas.|Habilitado|
-|Examinar todos los archivos y datos adjuntos descargados <p> Los archivos descargados y los datos adjuntos se examinan automáticamente. Este examen funciona además del Windows Defender filtro SmartScreen, que examina los archivos antes y durante la descarga.|Habilitado|
+|Examinar todos los archivos y datos adjuntos descargados <p> Los archivos descargados y los datos adjuntos se examinan automáticamente. Este examen funciona además del Windows डिफेन्डर filtro SmartScreen, que examina los archivos antes y durante la descarga.|Habilitado|
 |Supervisión de la actividad de archivos y programas en el equipo <p> El motor Microsoft Defender Antivirus toma nota de los cambios de archivo (escrituras de archivos, como movimientos, copias o modificaciones) y la actividad general del programa (programas que se abren o ejecutan y que hacen que se ejecuten otros programas).|Habilitado|
 |Activar notificaciones de escritura de volumen sin procesar <p> La supervisión del comportamiento analizará la información sobre las escrituras de volúmenes sin procesar.|Habilitado|
 |Activar el examen de procesos siempre que se habilite la protección en tiempo real <p> Puede habilitar de forma independiente el motor Microsoft Defender Antivirus para examinar los procesos en ejecución en busca de modificaciones o comportamientos sospechosos. Esto resulta útil si ha deshabilitado temporalmente la protección en tiempo real y quiere examinar automáticamente los procesos que se iniciaron mientras se deshabilitó.|Habilitado|
 |Definir el tamaño máximo de los archivos descargados y los datos adjuntos que se van a examinar <p> Puede definir el tamaño en kilobytes.|Habilitado|
-|Configuración de la invalidación de configuración local para activar la supervisión del comportamiento <p> Configure una invalidación local para la configuración de la supervisión del comportamiento. Esta configuración solo se puede establecer mediante directiva de grupo. Si habilita esta configuración, la configuración de preferencias locales tendrá prioridad sobre directiva de grupo. Si deshabilita o no establece esta configuración, directiva de grupo tendrá prioridad sobre la configuración de preferencias local.|Habilitado|
-|Configuración de la invalidación de configuración local para examinar todos los archivos y datos adjuntos descargados <p> Configure una invalidación local para la configuración del examen de todos los archivos y datos adjuntos descargados. Esta configuración solo se puede establecer mediante directiva de grupo. Si habilita esta configuración, la configuración de preferencias locales tendrá prioridad sobre directiva de grupo. Si deshabilita o no establece esta configuración, directiva de grupo tendrá prioridad sobre la configuración de preferencias local.|Habilitado|
-|Configuración de la invalidación de configuración local para supervisar la actividad de archivos y programas en el equipo <p> Configure una invalidación local para la configuración de la supervisión de la actividad de archivo y programa en el equipo. Esta configuración solo se puede establecer mediante directiva de grupo. Si habilita esta configuración, la configuración de preferencias locales tendrá prioridad sobre directiva de grupo. Si deshabilita o no establece esta configuración, directiva de grupo tendrá prioridad sobre la configuración de preferencias local.|Habilitado|
-|Configuración de la invalidación de configuración local para activar la protección en tiempo real <p> Configure una invalidación local para que la configuración active la protección en tiempo real. Esta configuración solo se puede establecer mediante directiva de grupo. Si habilita esta configuración, la configuración de preferencias locales tendrá prioridad sobre directiva de grupo. Si deshabilita o no establece esta configuración, directiva de grupo tendrá prioridad sobre la configuración de preferencias local.|Habilitado|
-|Configuración de la invalidación de configuración local para la supervisión de la actividad de archivo entrante y saliente <p> Configure una invalidación local para la configuración de la supervisión de la actividad de archivo entrante y saliente. Esta configuración solo se puede establecer mediante directiva de grupo. Si habilita esta configuración, la configuración de preferencias locales tendrá prioridad sobre directiva de grupo. Si deshabilita o no establece esta configuración, directiva de grupo tendrá prioridad sobre la configuración de preferencias local.|Habilitado|
+|Configuración de la invalidación de configuración local para activar la supervisión del comportamiento <p> Configure una invalidación local para la configuración de la supervisión del comportamiento. Esta configuración solo se puede establecer mediante समूह नीति. Si habilita esta configuración, la configuración de preferencias locales tendrá prioridad sobre समूह नीति. Si deshabilita o no establece esta configuración, समूह नीति tendrá prioridad sobre la configuración de preferencias local.|Habilitado|
+|Configuración de la invalidación de configuración local para examinar todos los archivos y datos adjuntos descargados <p> Configure una invalidación local para la configuración del examen de todos los archivos y datos adjuntos descargados. Esta configuración solo se puede establecer mediante समूह नीति. Si habilita esta configuración, la configuración de preferencias locales tendrá prioridad sobre समूह नीति. Si deshabilita o no establece esta configuración, समूह नीति tendrá prioridad sobre la configuración de preferencias local.|Habilitado|
+|Configuración de la invalidación de configuración local para supervisar la actividad de archivos y programas en el equipo <p> Configure una invalidación local para la configuración de la supervisión de la actividad de archivo y programa en el equipo. Esta configuración solo se puede establecer mediante समूह नीति. Si habilita esta configuración, la configuración de preferencias locales tendrá prioridad sobre समूह नीति. Si deshabilita o no establece esta configuración, समूह नीति tendrá prioridad sobre la configuración de preferencias local.|Habilitado|
+|Configuración de la invalidación de configuración local para activar la protección en tiempo real <p> Configure una invalidación local para que la configuración active la protección en tiempo real. Esta configuración solo se puede establecer mediante समूह नीति. Si habilita esta configuración, la configuración de preferencias locales tendrá prioridad sobre समूह नीति. Si deshabilita o no establece esta configuración, समूह नीति tendrá prioridad sobre la configuración de preferencias local.|Habilitado|
+|Configuración de la invalidación de configuración local para la supervisión de la actividad de archivo entrante y saliente <p> Configure una invalidación local para la configuración de la supervisión de la actividad de archivo entrante y saliente. Esta configuración solo se puede establecer mediante समूह नीति. Si habilita esta configuración, la configuración de preferencias locales tendrá prioridad sobre समूह नीति. Si deshabilita o no establece esta configuración, समूह नीति tendrá prioridad sobre la configuración de preferencias local.|Habilitado|
 |Configuración de la supervisión de la actividad de archivos y programas entrantes y salientes <p> Especifique si la supervisión debe producirse en la dirección entrante, saliente, ambas o ninguna de ellas. Esta acción es relevante para las instalaciones de Windows Server en las que haya definido servidores específicos o roles de servidor que ven grandes cantidades de cambios de archivo en una sola dirección y desea mejorar el rendimiento de la red. Los puntos de conexión (y servidores) totalmente actualizados en una red verán poco impacto en el rendimiento, independientemente del número o la dirección de los cambios de archivo.|Habilitado (ambas direcciones)|
 
-## <a name="disable-real-time-protection-in-group-policy"></a>Deshabilitar la protección en tiempo real en directiva de grupo
+## <a name="disable-real-time-protection-in-group-policy"></a>Deshabilitar la protección en tiempo real en समूह नीति
 
 > [!WARNING]
 > Deshabilitar la protección en tiempo real reduce drásticamente la protección en los puntos de conexión y no se recomienda.
 
-La principal funcionalidad de protección en tiempo real está habilitada de forma predeterminada, pero puede deshabilitarla mediante **el Editor de directiva de grupo local**.
+La principal funcionalidad de protección en tiempo real está habilitada de forma predeterminada, pero puede deshabilitarla mediante **el Editor de समूह नीति local**.
 
 ### <a name="to-disable-real-time-protection-in-group-policy"></a>Para deshabilitar la protección en tiempo real en la directiva de grupo
 
-1. Abra **el Editor de directiva de grupo local**.
+1. Abra **el Editor de समूह नीति local**.
 
    1. En el cuadro de búsqueda Windows 10 o Windows 11 barra de tareas, escriba **gpedit**.
-   2. En **Mejor coincidencia**, seleccione **Editar directiva de grupo** para iniciar **el Editor de directiva de grupo local**.
+   2. En **Mejor coincidencia**, seleccione **Editar directiva de grupo** para iniciar **el Editor de समूह नीति local**.
 
-2. En el panel izquierdo del **Editor de directiva de grupo local**, expanda el árbol a **Configuración** \> del equipo **Plantillas** \> administrativas **Componentes** \> de Windows **Microsoft Defender Antivirus** \> **Protección en tiempo real**.
+2. En el panel izquierdo del **Editor de समूह नीति local**, expanda el árbol a **Configuración** \> del equipo **Plantillas** \> administrativas **Componentes** \> de Windows **Microsoft Defender Antivirus Protección** \> en **tiempo real**.
 
 3. En el panel Detalles **de protección en tiempo real** de la derecha, haga doble clic en **Desactivar protección en tiempo real**.
 
@@ -121,7 +121,7 @@ La principal funcionalidad de protección en tiempo real está habilitada de for
    
 5. seleccione **Aceptar**.
 
-6. Cierre **el Editor de directiva de grupo local**.
+6. Cierre **el Editor de समूह नीति local**.
 
 > [!TIP]
 > Si busca información relacionada con el antivirus para otras plataformas, consulte:

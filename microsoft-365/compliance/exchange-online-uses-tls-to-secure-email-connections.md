@@ -15,20 +15,22 @@ search.appverid:
 - MOE150
 ms.assetid: 4cde0cda-3430-4dc0-b489-f2c0736c929f
 ms.collection:
-- M365-security-compliance
-- Strat_O365_IP
+- purview-compliance
+- tier1
 description: Obtenga información sobre cómo Exchange Online y Microsoft 365 usan seguridad de la capa de transporte (TLS) y secreto de reenvío (FS) para proteger las comunicaciones por correo electrónico. Obtenga también información sobre el certificado emitido por Microsoft para Exchange Online.
-ms.openlocfilehash: 127e72fd756754b11cf27316a006fab08fc459fb
-ms.sourcegitcommit: f09687dbbc68347bc421d0b686625b80ff3a6b20
+ms.openlocfilehash: 1b3133cd9111531efa10f18cad15556fd4833a80
+ms.sourcegitcommit: 0d8fb571024f134d7480fe14cffc5e31a687d356
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/25/2022
-ms.locfileid: "67432339"
+ms.lasthandoff: 10/20/2022
+ms.locfileid: "68626564"
 ---
 # <a name="how-exchange-online-uses-tls-to-secure-email-connections"></a>Cómo Exchange Online usa TLS para proteger las conexiones del correo electrónico
 
 Obtenga información sobre cómo Exchange Online y Microsoft 365 usan seguridad de la capa de transporte (TLS) y secreto de reenvío (FS) para proteger las comunicaciones por correo electrónico. También proporciona información sobre el certificado emitido por Microsoft para Exchange Online.
   
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
+
 ## <a name="tls-basics-for-microsoft-365-and-exchange-online"></a>Conceptos básicos de TLS para Microsoft 365 y Exchange Online
 
 TLS (Seguridad de la capa de transporte) y SSL (antecesor de TLS) son protocolos criptográficos que protegen la comunicación por red con certificados de seguridad que cifran una conexión entre equipos. TLS reemplaza a Capa de sockets seguros (SSL) y a menudo se conoce como SSL 3.1. Exchange Online usa TLS para cifrar las conexiones entre los servidores de Exchange y las conexiones entre los servidores de Exchange y otros servidores, como los servidores de Exchange locales o los servidores de correo de los destinatarios. Una vez cifrada la conexión, todos los datos enviados a través de esa conexión se envían a través del canal cifrado. Sin embargo, si reenvía un mensaje que se envió a través de una conexión cifrada con TLS a una organización de destinatarios que no admite el cifrado TLS, ese mensaje no se cifra necesariamente. TLS no cifra el mensaje, solo la conexión.

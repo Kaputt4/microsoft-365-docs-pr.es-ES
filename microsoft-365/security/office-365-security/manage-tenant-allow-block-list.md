@@ -17,12 +17,12 @@ ms.custom: ''
 description: Obtenga información sobre cómo administrar los bloques y los permitidos en la lista de permitidos o bloqueados de inquilinos en el portal de seguridad.
 ms.subservice: mdo
 ms.service: microsoft-365-security
-ms.openlocfilehash: e46cabba3e2d0f765937a8ff34bbcea918204974
-ms.sourcegitcommit: 4f8200453d347de677461f27eb5a3802ce5cc888
+ms.openlocfilehash: 20dc3a8a9b69da2df684d5f0f35f8b552f3b1f4f
+ms.sourcegitcommit: 0d8fb571024f134d7480fe14cffc5e31a687d356
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/12/2022
-ms.locfileid: "68542483"
+ms.lasthandoff: 10/20/2022
+ms.locfileid: "68622164"
 ---
 # <a name="manage-your-allows-and-blocks-in-the-tenant-allowblock-list"></a>Administrar los bloques y los permitidos en la lista de permitidos o bloqueados de inquilinos
 
@@ -83,20 +83,20 @@ En la lista siguiente se describe lo que sucede en la lista de permitidos o bloq
 
 - **Email**: Si la pila de filtrado de Microsoft 365 bloqueó un mensaje, es posible que se cree una entrada allow en la lista de permitidos o bloqueados de inquilinos:
 
-  - Si la [inteligencia de suplantación](learn-about-spoof-intelligence.md) de identidad bloqueó el mensaje, se crea una entrada de permiso para el remitente y aparece en la pestaña **Remitentes suplantados de la Lista de bloqueos permitidos** de inquilinos.
+  - Si la [inteligencia de suplantación](learn-about-spoof-intelligence.md) de identidad bloqueó el mensaje, se crea una entrada de permiso para el remitente y aparece en la pestaña **Remitentes suplantados** de la lista de permitidos de inquilinos.
 
   - Si la [protección de suplantación de usuario o dominio](set-up-anti-phishing-policies.md#impersonation-settings-in-anti-phishing-policies-in-microsoft-defender-for-office-365) bloqueó el mensaje en Defender para Office 365, no se crea una entrada de permitido en la lista de permitidos o bloqueados de inquilinos. En su lugar, el dominio o el remitente se agrega a la **sección Remitentes y dominios de confianza** de la [directiva anti-phishing](configure-mdo-anti-phishing-policies.md#use-the-microsoft-365-defender-portal-to-modify-anti-phishing-policies) que detectó el mensaje.
 
   - Si el mensaje se bloqueó por otros motivos, se crea una entrada de permiso para el remitente y aparece en la pestaña **Dominios & direcciones** de la Lista de bloqueos permitidos de inquilinos.
 
-  - Si el mensaje no se bloqueó y no se creó la entrada allow para el remitente, no se creará en la pestaña **Remitentes suplantados** ni en la pestaña **Dominios & direcciones** .
+  - Si el mensaje no se bloqueó y no se creó una entrada de permiso para el remitente, no se creará en la pestaña **Remitentes suplantados** ni en la pestaña **Dominios & direcciones** .
 
 De forma predeterminada, permitir entradas para **dominios y direcciones de correo electrónico**, **archivos** y **direcciones URL** expiran después de 30 días, que también es el máximo. Permitir entradas para **remitentes suplantados** nunca expira.
 
 > [!NOTE]
-> Dado que Microsoft administra las entradas permitidas automáticamente, se quitarán las entradas permitidas innecesarias para **dominios y direcciones de correo electrónico**, **direcciones URL** o **archivos** . Este comportamiento protege su organización y ayuda a evitar entradas permitidas mal configuradas. Si no está de acuerdo con el veredicto, es posible que tenga que abrir un caso de soporte técnico para ayudar a determinar por qué un mensaje todavía se considera incorrecto.
+> Microsoft no le permite crear entradas permitidas directamente, ya que conduce a la creación de permites que no son necesarios, por lo que expone el inquilino del cliente a correos electrónicos malintencionados que, de lo contrario, podrían haber sido filtrados por el sistema.
 >
-> Las permite se agregan durante el flujo de correo, en función de los filtros que determinaron que el mensaje era malintencionado. Por ejemplo, si se ha determinado que el remitente y una dirección URL del mensaje son incorrectos, se crea una entrada allow para el remitente y se crea una entrada allow para la dirección URL.
+> Microsoft administra el proceso de creación de permitir desde envío mediante la creación de permite las entidades (dominios o direcciones de correo electrónico, remitentes suplantados, direcciones URL, archivos) que se determinaron como malintencionadas por los filtros durante el flujo de correo. Por ejemplo, si se ha determinado que el remitente y una dirección URL del mensaje son incorrectos, se crea una entrada allow para el remitente y se crea una entrada allow para la dirección URL.
 >
 > Cuando se vuelve a encontrar esa entidad (dirección de dominio o correo electrónico, dirección URL, archivo), se omiten todos los filtros asociados a esa entidad.
 >
@@ -107,3 +107,7 @@ De forma predeterminada, permitir entradas para **dominios y direcciones de corr
 Después de agregar una entrada de permiso a través del portal envíos o una entrada de bloque en la lista de permitidos o bloqueados de inquilinos, la entrada debería empezar a funcionar inmediatamente el 99,999 % del tiempo. Para el resto, podría tardar hasta 24 horas.
 
 Se recomienda permitir que las entradas expiren automáticamente después de 30 días para ver si el sistema ha obtenido información sobre el permiso o el bloque. Si no es así, debe realizar otra entrada para dar al sistema otros 30 días para aprender.
+
+Con **permitir la administración de expiración** (actualmente en versión preliminar privada), si Microsoft no ha aprendido de la entrada de permitir, Microsoft ampliará automáticamente el tiempo de expiración de las entradas permitidas que pronto expirarán en otros 30 días. Esta extensión ayuda a evitar que el correo electrónico legítimo vuelva a ir a correo no deseado o a cuarentena. Si Microsoft no aprende en un plazo de 90 días naturales a partir de la fecha de creación original de la entrada permitida, Microsoft quitará la entrada permitida.
+
+Si Microsoft ha aprendido de la entrada allow, se quitará la entrada y obtendrá una alerta que le informará sobre ella.

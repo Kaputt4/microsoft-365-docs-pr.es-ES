@@ -15,21 +15,24 @@ search.appverid:
 - MET150
 ms.assetid: 6501b5ef-6bf7-43df-b60d-f65781847d6c
 ms.collection:
-- M365-security-compliance
+- purview-compliance
 - SPO_Content
+- tier2
 description: Entienda los elementos básicos del cifrado de seguridad de datos en OneDrive para la Empresa y SharePoint Online.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 5b56caed2a93bf482509a4a90a8bbc3a828d76e7
-ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
+ms.openlocfilehash: b33bbe22e5bf606bcc71b6308c5fce3e0c68a542
+ms.sourcegitcommit: 0d8fb571024f134d7480fe14cffc5e31a687d356
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/06/2022
-ms.locfileid: "66630155"
+ms.lasthandoff: 10/20/2022
+ms.locfileid: "68621772"
 ---
 # <a name="data-encryption-in-onedrive-for-business-and-sharepoint-online"></a>Cifrado de datos en OneDrive para la Empresa y SharePoint Online
 
 Entienda los elementos básicos del cifrado de seguridad de datos en OneDrive para la Empresa y SharePoint Online.
   
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
+
 ## <a name="security-and-data-encryption-in-office-365"></a>Seguridad y cifrado de datos en Office 365
 
 Microsoft 365 es un entorno muy seguro que ofrece una amplia protección en varias capas: seguridad física del centro de datos, seguridad de red, seguridad de acceso, seguridad de aplicaciones y seguridad de datos. Este artículo se centra específicamente en el lado del cifrado en tránsito y en reposo de la seguridad de datos para OneDrive para la Empresa y SharePoint Online.
@@ -42,9 +45,9 @@ Vea cómo funciona el cifrado de datos en el siguiente vídeo.
 
 En OneDrive para la Empresa y SharePoint Online, hay dos escenarios en los que los datos entran y salen de los centros de datos.
   
-- **Comunicación del cliente con el servidor** La comunicación con OneDrive para la Empresa a través de Internet usa conexiones SSL/TLS. Todas las conexiones SSL se establecen con claves de 2048 bits.
+- **Client communication with the server** Communication to OneDrive for Business across the Internet uses SSL/TLS connections. All SSL connections are established using 2048-bit keys.
 
-- **Movimiento de datos entre centros de datos** La razón principal para mover datos entre centros de datos es que la replicación geográfica habilite la recuperación ante desastres. Por ejemplo, los registros de transacciones y diferencias de almacenamiento de blobs de SQL Server recorren esta canalización. Mientras que estos datos ya se transmiten mediante una red privada, tendrán una mayor protección con el mejor cifrado de su clase. 
+- **Data movement between datacenters** The primary reason to move data between datacenters is for geo-replication to enable disaster recovery. For instance, SQL Server transaction logs and blob storage deltas travel along this pipe. While this data is already transmitted by using a private network, it is further protected with best-in-class encryption. 
 
 ## <a name="encryption-of-data-at-rest"></a>Cifrado de datos en reposo
 
@@ -56,20 +59,20 @@ Mientras que BitLocker cifra todos los datos en un disco, el cifrado por archivo
   
 Para obtener más información sobre el cumplimiento de FIPS 140-2, consulte [Cumplimiento con FIPS 140-2](/previous-versions/sql/sql-server-2008-r2/bb326611(v=sql.105)).
   
-El cifrado de nivel de archivo en reposo saca provecho del almacenamiento de blobs para ofrecer aumento de almacenamiento prácticamente ilimitado y habilitar una protección sin precedentes. Todo el contenido de clientes en OneDrive para la Empresa y SharePoint Online se migrará al almacenamiento de blobs. A continuación, se muestra cómo se protegen los datos:
+File-level encryption at rest takes advantage of blob storage to provide for virtually unlimited storage growth and to enable unprecedented protection. All customer content in OneDrive for Business and SharePoint Online will be migrated to blob storage. Here's how that data is secured:
   
-1. Todo el contenido se cifra, potencialmente con varias claves, y se distribuye por el centro de datos. Todos los archivos que se van a almacenar se dividen en uno o varios fragmentos, según su tamaño. A continuación, cada fragmento se cifra mediante su propia clave única. Las actualizaciones se administran de forma similar: el conjunto de cambios o diferencias, enviado por un usuario, se divide en fragmentos y cada uno se cifra con su propia clave.
+1. All content is encrypted, potentially with multiple keys, and distributed across the datacenter. Each file to be stored is broken into one or more chunks, depending its size. Then, each chunk is encrypted using its own unique key. Updates are handled similarly: the set of changes, or deltas, submitted by a user is broken into chunks, and each is encrypted with its own key.
 
-2. Todos estos fragmentos (archivos, partes de archivos y diferencias de actualización) se almacenan como blobs en nuestro almacén de blobs. También se distribuyen aleatoriamente entre varios contenedores de blobs.
+2. All of these chunks—files, pieces of files, and update deltas—are stored as blobs in our blob store. They also are randomly distributed across multiple blob containers.
 
 3. El "mapa" que se usa para volver a ensamblar el archivo a partir de sus componentes se almacena en la base de datos de contenido.
 
-4. Cada contenedor de blobs tiene sus propias credenciales únicas por tipo de acceso (lectura, escritura, enumeración y eliminación). Cada conjunto de credenciales se encuentra en el almacén de claves seguras y se actualiza periódicamente.
+4. Each blob container has its own unique credentials per access type (read, write, enumerate, and delete). Each set of credentials is held in the secure Key Store and is regularly refreshed.
 
 En otras palabras, hay tres tipos diferentes de almacenes implicados en el cifrado por archivo en reposo, cada uno con una función distinta:
   
-- El contenido se almacena como blobs cifrados en el almacén de blobs. La clave de cada fragmento de contenido se cifra y almacena por separado en la base de datos de contenido. El propio contenido no retiene ninguna pista sobre cómo se puede descifrar.
+- Content is stored as encrypted blobs in the blob store. The key to each chunk of content is encrypted and stored separately in the content database. The content itself holds no clue as to how it can be decrypted.
 
-- La base de datos de contenido es una base de datos de SQL Server. Contiene el mapa necesario para localizar y volver a ensamblar todos los blobs de contenido que se encuentran en el almacén de blobs, así como las claves necesarias para descifrar esos blobs.
+- The Content Database is a SQL Server database. It holds the map required to locate and reassemble all of the content blobs held in the blob store as well as the keys needed to decrypt those blobs.
 
-Cada uno de estos tres componentes de almacenamiento (el almacén de blobs, la base de datos de contenido y el almacén de claves) es físicamente independiente. La información contenida en cualquiera de los componentes es inutilizable por sí misma. Esto proporciona un nivel de seguridad sin precedentes. Sin acceso a los tres, es imposible recuperar las claves para los fragmentos, descifrar las claves para que puedan utilizarse, asociar las claves con sus fragmentos correspondientes, descifrar cualquier fragmento o reconstruir un documento a partir de sus fragmentos constituyentes.
+Each of these three storage components—the blob store, the Content Database, and the Key Store—is physically separate. The information held in any one of the components is unusable on its own. This provides an unprecedented level of security. Without access to all three it is impossible to retrieve the keys to the chunks, decrypt the keys to make them usable, associate the keys with their corresponding chunks, decrypt any chunk, or reconstruct a document from its constituent chunks.

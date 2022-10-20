@@ -18,12 +18,12 @@ ms.collection:
 - m365solution-insiderrisk
 - m365initiative-compliance
 - highpri
-ms.openlocfilehash: d356c89866cc1a0f3727bf647fd451cc4339d8ae
-ms.sourcegitcommit: 04e517c7e00323b5c33d8ea937115725cf2cfd4d
+ms.openlocfilehash: 889589330ddc79b434d8fa07b11fa20e784c4762
+ms.sourcegitcommit: 0d8fb571024f134d7480fe14cffc5e31a687d356
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/13/2022
-ms.locfileid: "68564441"
+ms.lasthandoff: 10/20/2022
+ms.locfileid: "68621260"
 ---
 # <a name="learn-about-insider-risk-management"></a>Información sobre riesgos internos de Microsoft
 
@@ -132,7 +132,7 @@ Para resolver las alertas, se abre un nuevo caso, se asigna la alerta a un caso 
 
 ### <a name="investigate"></a>Investigación
 
-Investigue rápidamente todas las actividades de un usuario seleccionado con [informes de actividad de usuario (versión preliminar).](insider-risk-management-activities.md#user-activity-reports-preview) Estos informes permiten a los investigadores de su organización examinar las actividades de usuarios específicos durante un período de tiempo definido sin tener que asignarlas de forma temporal o explícita a una directiva de administración de riesgos internos. Después de examinar las actividades de un usuario, los investigadores pueden descartar actividades individuales como benignas, compartir o enviar por correo electrónico un vínculo al informe con otros investigadores, o elegir asignar al usuario temporal o explícitamente a una directiva de administración de riesgos internos.
+Investigue rápidamente todas las actividades de un usuario seleccionado con [informes de actividad de usuario](insider-risk-management-activities.md#user-activity-reports). Estos informes permiten a los investigadores de su organización examinar las actividades de usuarios específicos durante un período de tiempo definido sin tener que asignarlas de forma temporal o explícita a una directiva de administración de riesgos internos. Después de examinar las actividades de un usuario, los investigadores pueden descartar actividades individuales como benignas, compartir o enviar por correo electrónico un vínculo al informe con otros investigadores, o elegir asignar al usuario temporal o explícitamente a una directiva de administración de riesgos internos.
 
 [Los casos](insider-risk-management-cases.md) se crean para las alertas que requieren una revisión e investigación más detalladas de los detalles y las circunstancias de la actividad en torno a la coincidencia de directivas. El **panel de casos** ofrece una vista integral de todos los casos activos, casos abiertos a lo largo del tiempo y estadísticas de casos para la organización. Los revisores pueden filtrar rápidamente los casos por estado, la fecha en que se abrió el caso y la fecha en que se actualizó el caso por última vez.
 
@@ -203,11 +203,9 @@ Los eventos de estrés laboral pueden afectar al comportamiento del usuario de v
 - [Filtraciones de datos por parte de usuarios inconformes (versión preliminar)](insider-risk-management-policies.md#data-leaks-by-disgruntled-users-preview)
 - [Infracciones de la directiva de seguridad por parte de usuarios inconformes (versión preliminar)](insider-risk-management-policies.md#security-policy-violations-by-disgruntled-users-preview)
 
-### <a name="risky-browser-usage-that-could-result-in-a-security-incident-preview"></a>Uso de explorador de riesgo que podría dar lugar a un incidente de seguridad (versión preliminar)
+### <a name="visual-context-for-potentially-risky-user-activities-with-forensic-evidence-preview"></a>Contexto visual para actividades de usuario potencialmente arriesgadas con pruebas forenses (versión preliminar)
 
-La mayoría de las organizaciones proporcionan a los usuarios reglas y directrices que aclaran cómo se deben usar los dispositivos y el acceso a Internet de una organización. Estas directivas ayudan a proteger tanto a la organización como a los usuarios de los riesgos de seguridad y normativos. Para ayudar a identificar estos tipos de acciones de riesgo, la siguiente plantilla de directiva de administración de riesgos internos puede ayudar a detectar y habilitar la puntuación de riesgos para comportamientos de exploración web que podrían dar lugar a un incidente de seguridad de datos, como visitar sitios que proporcionan herramientas de malware o piratería.
-
-- [Uso general del explorador de riesgo (versión preliminar)](insider-risk-management-policies.md#general-risky-browser-usage-preview)
+Tener contexto visual es fundamental para que los equipos de seguridad durante las investigaciones forenses obtengan mejor información sobre las actividades de usuario potencialmente arriesgadas que pueden provocar un incidente de seguridad. Esto puede incluir la captura visual de estas actividades para ayudar a evaluar si son realmente arriesgadas o sacadas de contexto y no potencialmente arriesgadas. Para las actividades que se determinan como de riesgo, tener capturas de pruebas forenses puede ayudar a los investigadores y a su organización a mitigar, comprender y responder mejor a estas actividades. Para ayudar con este escenario, [habilite la captura de pruebas forenses](insider-risk-management-forensic-evidence.md) para dispositivos en línea y sin conexión de su organización.
 
 ## <a name="ready-to-get-started"></a>¿Está listo para empezar?
 

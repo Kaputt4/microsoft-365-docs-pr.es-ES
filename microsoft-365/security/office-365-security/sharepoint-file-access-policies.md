@@ -5,7 +5,7 @@ ms.author: dansimp
 author: dansimp
 manager: dansimp
 ms.service: microsoft-365-security
-ms.topic: article
+ms.topic: conceptual
 audience: Admin
 f1.keywords:
 - NOCSH
@@ -22,16 +22,16 @@ ms.collection:
 - highpri
 ms.subservice: mdo
 search.appverid: met150
-ms.openlocfilehash: 546e8dcf7b4e93c13c6374c14a291bcef9da0c9c
-ms.sourcegitcommit: 12af9e8e3a6eaa090fda9e98ccb831dff65863a4
+ms.openlocfilehash: 42e4fbd2255905dfd866edaaa5d999729eb075ae
+ms.sourcegitcommit: 0d8fb571024f134d7480fe14cffc5e31a687d356
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/27/2022
-ms.locfileid: "68079719"
+ms.lasthandoff: 10/20/2022
+ms.locfileid: "68621017"
 ---
 # <a name="policy-recommendations-for-securing-sharepoint-sites-and-files"></a>Recomendaciones de directiva para proteger archivos y sitios de SharePoint
 
-En este artículo se describe cómo implementar las directivas de acceso a dispositivos e identidades de Confianza cero recomendadas para proteger SharePoint y OneDrive para la Empresa. Esta guía se basa en las [directivas comunes de acceso a dispositivos e identidades](identity-access-policies.md).
+En este artículo se describe cómo implementar las directivas recomendadas de acceso a dispositivos e identidad de confianza cero para proteger SharePoint y OneDrive para la Empresa. Esta guía se basa en las [directivas comunes de acceso a dispositivos e identidades](identity-access-policies.md).
 
 Estas recomendaciones se basan en tres niveles diferentes de seguridad y protección para archivos de SharePoint que se pueden aplicar en función de la granularidad de sus necesidades: **punto de partida**, **empresa** y **seguridad especializada**. Puede obtener más información sobre estos niveles de seguridad y los sistemas operativos de cliente recomendados a los que hacen referencia estas recomendaciones en [la introducción](microsoft-365-policies-configurations.md).
 

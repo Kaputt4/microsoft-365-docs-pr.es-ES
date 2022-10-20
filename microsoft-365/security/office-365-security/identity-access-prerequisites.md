@@ -1,11 +1,11 @@
 ---
 title: 'Trabajo de requisitos previos para implementar directivas de acceso a dispositivos e identidades: Microsoft 365 para empresas | Microsoft Docs'
-description: En este artículo se describen los requisitos previos que debe cumplir para usar Confianza cero directivas y configuraciones de acceso a dispositivos e identidades.
+description: En este artículo se describen los requisitos previos que debe cumplir para usar las directivas y configuraciones de acceso a dispositivos e identidades de confianza cero.
 ms.author: dansimp
 author: dansimp
 manager: dansimp
 ms.service: microsoft-365-security
-ms.topic: article
+ms.topic: conceptual
 audience: Admin
 f1.keywords:
 - NOCSH
@@ -22,20 +22,20 @@ ms.collection:
 - highpri
 ms.subservice: mdo
 search.appverid: met150
-ms.openlocfilehash: 02b5bfc9c4a1384996b4fbf305f6a212a6ac3e6c
-ms.sourcegitcommit: 12af9e8e3a6eaa090fda9e98ccb831dff65863a4
+ms.openlocfilehash: 17f605e368f523d40aacaf7a5d301aadb7c3e27d
+ms.sourcegitcommit: 0d8fb571024f134d7480fe14cffc5e31a687d356
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/27/2022
-ms.locfileid: "68054982"
+ms.lasthandoff: 10/20/2022
+ms.locfileid: "68624981"
 ---
-# <a name="prerequisite-work-for-implementing-zero-trust-identity-and-device-access-policies"></a>Trabajo de requisitos previos para implementar directivas de acceso a dispositivos e identidades de Confianza cero
+# <a name="prerequisite-work-for-implementing-zero-trust-identity-and-device-access-policies"></a>Trabajo de requisitos previos para implementar directivas de acceso a dispositivos e identidad de confianza cero
 
-En este artículo se describen los requisitos previos que deben cumplir los administradores para usar las directivas de acceso a dispositivos e identidades Confianza cero recomendadas, y para usar el acceso condicional. También se describen los valores predeterminados recomendados para configurar plataformas cliente para la mejor experiencia de inicio de sesión único (SSO).
+En este artículo se describen los requisitos previos que deben cumplir los administradores para usar las directivas recomendadas de acceso a dispositivos e identidad de confianza cero, y para usar el acceso condicional. También se describen los valores predeterminados recomendados para configurar plataformas cliente para la mejor experiencia de inicio de sesión único (SSO).
 
 ## <a name="prerequisites"></a>Requisitos previos
 
-Antes de usar las directivas de acceso a dispositivos e identidades de Confianza cero que se recomiendan, la organización debe cumplir los requisitos previos. Los requisitos son diferentes para los distintos modelos de identidad y autenticación enumerados:
+Antes de usar las directivas de acceso a dispositivos e identidad de confianza cero que se recomiendan, la organización debe cumplir los requisitos previos. Los requisitos son diferentes para los distintos modelos de identidad y autenticación enumerados:
 
 - Solo de nube
 - Autenticación híbrida con sincronización de hash de contraseña (PHS)
@@ -125,6 +125,6 @@ Estas son algunas recomendaciones adicionales:
 
 ## <a name="next-step"></a>Paso siguiente
 
-[![Paso 2: Configurar las directivas comunes de acceso condicional Confianza cero identidad y acceso.](../../media/microsoft-365-policies-configurations/identity-device-access-steps-next-step-2.png#lightbox)](identity-access-policies.md)
+[![Paso 2: Configurar las directivas comunes de acceso condicional de identidad y acceso de confianza cero.](../../media/microsoft-365-policies-configurations/identity-device-access-steps-next-step-2.png#lightbox)](identity-access-policies.md)
 
-[Configuración de las directivas comunes de acceso a dispositivos e identidades de Confianza cero](identity-access-policies.md)
+[Configuración de las directivas comunes de acceso a dispositivos e identidad de confianza cero](identity-access-policies.md)

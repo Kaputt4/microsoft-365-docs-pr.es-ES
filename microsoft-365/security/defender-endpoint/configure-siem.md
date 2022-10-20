@@ -15,14 +15,14 @@ audience: ITPro
 ms.collection:
 - m365-security
 - tier2
-ms.topic: article
+ms.topic: conceptual
 ms.subservice: mde
-ms.openlocfilehash: 9b153af03780b5803f622ee53faedc15ba20413c
-ms.sourcegitcommit: 2ff545246fec060ea7829da5afbc1cdc698d51ab
+ms.openlocfilehash: d5436b98dfac68a6348ed81268ec36096795c273
+ms.sourcegitcommit: 0d8fb571024f134d7480fe14cffc5e31a687d356
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/04/2022
-ms.locfileid: "68363681"
+ms.lasthandoff: 10/20/2022
+ms.locfileid: "68623264"
 ---
 # <a name="integrate-your-siem-tools-with-microsoft-defender-for-endpoint"></a>Integración de las herramientas siem con Microsoft Defender para punto de conexión
 
@@ -46,7 +46,7 @@ Para obtener más información, consulte:
 
 - [Microsoft Defender para punto de conexión licencia y términos de uso de las API](api-terms-of-use.md) 
 - [Acceder a las API de Microsoft Defender para punto de conexión](apis-intro.md)
-- [Hola mundo ejemplo (describe cómo registrar una aplicación en Azure Active Directory)](api-hello-world.md)
+- [नमस्ते संसार ejemplo (describe cómo registrar una aplicación en Azure Active Directory)](api-hello-world.md)
 - [Obtener acceso con el contexto de la aplicación](exposed-apis-create-app-webapp.md)
 
 

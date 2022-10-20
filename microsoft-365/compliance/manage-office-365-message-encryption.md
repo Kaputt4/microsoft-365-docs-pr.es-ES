@@ -14,21 +14,23 @@ search.appverid:
 - MET150
 ms.assetid: 09f6737e-f03f-4bc8-8281-e46d24ee2a74
 ms.collection:
-- Strat_O365_IP
-- M365-security-compliance
+- tier1
+- purview-compliance
 ms.custom:
 - seo-marvel-apr2020
 description: Una vez que haya terminado de configurar Office 365 Cifrado de mensajes (OME), obtenga información sobre cómo personalizar la implementación de varias maneras.
-ms.openlocfilehash: b3d7ffe5db987b9fb3bd29682c8e101ffd99946a
-ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
+ms.openlocfilehash: bd494b9323868da8c9fa03f6381349e3ee4ea5a0
+ms.sourcegitcommit: 0d8fb571024f134d7480fe14cffc5e31a687d356
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/06/2022
-ms.locfileid: "66635291"
+ms.lasthandoff: 10/20/2022
+ms.locfileid: "68620708"
 ---
 # <a name="manage-office-365-message-encryption"></a>Administrar el Cifrado de mensajes de Office 365
 
 Una vez que haya terminado de configurar Office 365 cifrado de mensajes (OME), puede personalizar la configuración de la implementación de varias maneras. Por ejemplo, puede configurar si desea habilitar códigos de paso de un solo uso, mostrar el botón **Cifrar** en Outlook en la Web y mucho más. Las tareas de este artículo describen cómo.
+
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
 
 ## <a name="manage-whether-google-yahoo-and-microsoft-account-recipients-can-use-these-accounts-to-sign-in-to-the-office-365-message-encryption-portal"></a>Administrar si los destinatarios de cuentas de Google, Yahoo y Microsoft pueden usar estas cuentas para iniciar sesión en el portal de cifrado de mensajes de Office 365
 

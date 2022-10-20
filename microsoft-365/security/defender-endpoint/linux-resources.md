@@ -18,12 +18,12 @@ ms.collection:
 ms.topic: conceptual
 ms.subservice: mde
 search.appverid: met150
-ms.openlocfilehash: 5e3f8cb9cc826894f816fcebf28ef73213548f22
-ms.sourcegitcommit: 4e42bafee965446f44f7f57d1defed2b9b24fce8
+ms.openlocfilehash: c5b7b70113cdb7ebf0099dd653d0991ed4b788af
+ms.sourcegitcommit: 0d8fb571024f134d7480fe14cffc5e31a687d356
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/30/2022
-ms.locfileid: "68233340"
+ms.lasthandoff: 10/20/2022
+ms.locfileid: "68623020"
 ---
 # <a name="resources"></a>Recursos
 
@@ -146,7 +146,7 @@ En la tabla siguiente se enumeran los comandos de algunos de los escenarios más
 |Administración de cuarentena|Adición de un archivo detectado como una amenaza a la cuarentena|`mdatp threat quarantine add --id [threat-id]`|
 |Administración de cuarentena|Eliminación de un archivo detectado como amenaza de la cuarentena|`mdatp threat quarantine remove --id [threat-id]`|
 |Administración de cuarentena|Restauración de un archivo desde la cuarentena|`mdatp threat quarantine restore --id [threat-id] --path [destination-folder]`|
-|Detección y respuesta de puntos de conexión|Establecer la versión preliminar temprana (sin usar)|`mdatp edr early-preview [enable|disable]`|
+|Detección y respuesta de puntos de conexión|Establecimiento de una versión preliminar temprana |`mdatp edr early-preview [enabled\|disabled]`|
 |Detección y respuesta de puntos de conexión|Establecimiento de group-id|`mdatp edr group-ids --group-id [group-id]`|
 |Detección y respuesta de puntos de conexión|Establecer o quitar etiqueta, solo `GROUP` compatible|`mdatp edr tag set --name GROUP --value [tag]`|
 |Detección y respuesta de puntos de conexión|Exclusiones de lista (raíz)|`mdatp edr exclusion list [processes|paths|extensions|all]`|

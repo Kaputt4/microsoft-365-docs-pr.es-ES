@@ -22,12 +22,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Obtenga información sobre cómo La puntuación de adopción de Microsoft refleja las medidas de la experiencia de las personas y la tecnología y la comparación con organizaciones de tamaño similar.
-ms.openlocfilehash: eff127b92aa14a80756827f93583e43df72f7456
-ms.sourcegitcommit: 04e517c7e00323b5c33d8ea937115725cf2cfd4d
+ms.openlocfilehash: 83170a50a473c24656e10ce57cea4bc44c3767fc
+ms.sourcegitcommit: 0d8fb571024f134d7480fe14cffc5e31a687d356
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/13/2022
-ms.locfileid: "68563502"
+ms.lasthandoff: 10/20/2022
+ms.locfileid: "68621039"
 ---
 # <a name="microsoft-adoption-score"></a>Puntuación de adopción de Microsoft 
 
@@ -88,6 +88,9 @@ El modelo de control de acceso basado en rol para La puntuación de adopción ay
 Microsoft is committed to protecting individual privacy. This [privacy document](privacy.md)  explains the controls we provide you, as your organization's IT administrator, to ensure that the information is actionable while not compromising the trust you place in Microsoft.
 
 Puede acceder a la experiencia desde Administración de Microsoft 365 inicio en **Puntuación de adopción** **de informes** > .
+
+> [!NOTE]
+> Esta característica no está disponible en los inquilinos de GCC High, GCC y DOD.
   
 ## <a name="how-the-score-is-calculated"></a>Cómo se calcula la puntuación
 

@@ -18,12 +18,12 @@ search.appverid:
 - MET150
 description: Información para que los administradores de TI administren las etiquetas de confidencialidad en las aplicaciones de Office para escritorio, móvil y web.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 939aa04f9326e202610887c52111ae8c5c58b66d
-ms.sourcegitcommit: ca082da1c51a3f643f152492579eef5679d52bd0
+ms.openlocfilehash: 61302c27f9c59cbedb9bc7f3456ca6e8a1fecbb7
+ms.sourcegitcommit: 0d8fb571024f134d7480fe14cffc5e31a687d356
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/12/2022
-ms.locfileid: "68546861"
+ms.lasthandoff: 10/20/2022
+ms.locfileid: "68621900"
 ---
 # <a name="manage-sensitivity-labels-in-office-apps"></a>Administrar etiquetas de confidencialidad en las aplicaciones de Office
 
@@ -39,20 +39,20 @@ Use the information in this article to help you successfully manage sensitivity 
 
 Para usar las etiquetas de confidencialidad integradas en las aplicaciones de escritorio de Office para Windows y Mac, debe utilizar una edición de suscripción de Office. Este cliente de etiquetado no es compatible con las ediciones independientes de Office, a veces denominadas "Office Perpetua".
 
-El [cliente de etiquetado unificado de Azure Information Protection (AIP)](/azure/information-protection/rms-client/aip-clientv2) está ahora en [modo de mantenimiento](https://techcommunity.microsoft.com/t5/security-compliance-and-identity/announcing-aip-unified-labeling-client-maintenance-mode-and/ba-p/3043613). Si actualmente usa este cliente para el etiquetado en aplicaciones de Office, se recomienda pasar al etiquetado integrado. Para obtener más información, consulte [Migración del complemento de Azure Information Protection (AIP) al etiquetado integrado para aplicaciones de Office](sensitivity-labels-aip.md).
+El [cliente de etiquetado unificado de Azure Information Protection (AIP)](/azure/information-protection/rms-client/aip-clientv2) está ahora en [modo de mantenimiento](https://techcommunity.microsoft.com/t5/security-compliance-and-identity/announcing-aip-unified-labeling-client-maintenance-mode-and/ba-p/3043613). Si actualmente usa este cliente para el etiquetado en aplicaciones de Office, se recomienda pasar al etiquetado integrado. Para obtener más información, consulte [Migración del complemento Azure Information Protection (AIP) al etiquetado integrado para aplicaciones de Office](sensitivity-labels-aip.md).
 
 ## <a name="support-for-sensitivity-label-capabilities-in-apps"></a>Compatibilidad con las funciones de las etiquetas de confidencialidad en las aplicaciones
 
 En las tablas siguientes se muestra la versión mínima de Office que introdujo funcionalidades específicas para las etiquetas de confidencialidad integradas en las aplicaciones de Office. O bien, si la funcionalidad de etiqueta está en versión preliminar pública o en revisión para una versión futura:
 
-- Tabla: [Funcionalidades de etiqueta de confidencialidad en Word, Excel y PowerPoint](#sensitivity-label-capabilities-in-word-excel-and-powerpoint)
-- Tabla: [Funcionalidades de etiqueta de confidencialidad en Outlook](#sensitivity-label-capabilities-in-outlook)
+- [Tabla de funcionalidades para Word, Excel y PowerPoint](#sensitivity-label-capabilities-in-word-excel-and-powerpoint)
+- [Tabla de funcionalidades para Outlook](#sensitivity-label-capabilities-in-outlook)
 
-Use el [plan de desarrollo de Microsoft 365](https://www.microsoft.com/microsoft-365/roadmap?filters=Microsoft%20Information%20Protection&searchterms=label) para obtener detalles sobre las nuevas funcionalidades que están planeadas para futuras versiones.
+Use el [plan de desarrollo de Microsoft 365](https://www.microsoft.com/microsoft-365/roadmap?filters=Microsoft%20Information%20Protection&searchterms=label) para obtener más información sobre las nuevas funcionalidades de etiquetado que están planeadas para futuras versiones.
 
 Las nuevas versiones de las aplicaciones de Office están disponibles en diferentes momentos para diferentes canales de actualización. Para Windows, las nuevas funciones se obtienen antes cuando se encuentra en el Canal actual o el Canal mensual para empresas, en lugar del Canal semestral para empresas. Los números de versión mínimos también pueden ser diferentes de un canal de actualización al siguiente. Para obtener más información, vea [Introducción a los canales de actualización para las Aplicaciones de Microsoft 365](/deployoffice/overview-update-channels) y [Actualizar historial para las Aplicaciones Microsoft 365](/officeupdates/update-history-microsoft365-apps-by-date).
 
-Las nuevas funcionalidades que se encuentran en versión preliminar privada no se incluyen en las tablas, pero es posible que pueda unirse a estas versiones preliminares mediante la nominación de su organización para el [programa de Microsoft Information Protection versión preliminar privada](https://aka.ms/mip-preview).
+Las nuevas funcionalidades que se encuentran en versión preliminar privada no se incluyen en las tablas, pero es posible que pueda unirse a estas versiones preliminares mediante la nominación de su organización para el [programa de Microsoft जानकारीको सुरक्षा versión preliminar privada](https://aka.ms/mip-preview).
 
 Office para iOS y Office para Android: Las etiquetas de confidencialidad están integradas en las [aplicación de Office](https://www.microsoft.com/en-us/microsoft-365/blog/2020/02/19/new-office-app-android-ios-available/).
 
@@ -130,7 +130,7 @@ Si los usuarios tienen instalado el [cliente de Azure Information Protection (AI
 > [!NOTE]
 > Si no ve las características de etiquetado que espera en los equipos Windows, a pesar de confirmar las versiones mínimas admitidas para el canal de actualización de Office, es posible que tenga que [deshabilitar el complemento AIP](sensitivity-labels-aip.md#how-to-disable-the-aip-add-in-to-use-built-in-labeling-for-office-apps) para versiones anteriores de Office.
 
-Para obtener más información sobre la compatibilidad con el etiquetado con el cliente de AIP y cómo deshabilitar este cliente solo en aplicaciones de Office, consulte [Migración del complemento de Azure Information Protection (AIP) al etiquetado integrado para aplicaciones de Office](sensitivity-labels-aip.md).
+Para más información sobre la compatibilidad con el etiquetado con el cliente de AIP y cómo deshabilitar este cliente solo en aplicaciones de Office, consulte [Migración del complemento de Azure Information Protection (AIP) al etiquetado integrado para aplicaciones de Office](sensitivity-labels-aip.md).
 
 ## <a name="if-you-need-to-turn-off-built-in-labeling-in-office-apps-on-windows"></a>Si necesita desactivar el etiquetado integrado en las aplicaciones de Office en Windows
 
@@ -481,7 +481,7 @@ Como parte de esta alta visibilidad, estas etiquetas también admiten colores. P
 > 
 > El cliente de etiquetado unificado de Azure Information Protection admite colores de etiqueta. Para el etiquetado integrado en Office, los colores de etiqueta se admiten actualmente en versión preliminar para Word, Excel y PowerPoint en Windows, pero aún no para Outlook, macOS o Office para la Web. Para obtener más información, consulte las tablas de la sección [funcionalidades](#support-for-sensitivity-label-capabilities-in-apps) de esta página.
 
-Las etiquetas recién creadas no tienen un color de forma predeterminada. Si las etiquetas se [migraron desde Azure Information Protection](/azure/information-protection/configure-policy-migrate-labels) o configuró los colores de etiqueta para azure Information Protection cliente de etiquetado unificado, estos colores de etiqueta ahora se muestran en las aplicaciones que las admiten.
+Las etiquetas recién creadas no tienen un color de forma predeterminada. Si las etiquetas se [migraron desde Azure Information Protection](/azure/information-protection/configure-policy-migrate-labels) o configuró los colores de etiqueta para el cliente de etiquetado unificado de Azure Information Protection, estos colores de etiqueta ahora se muestran en las aplicaciones que las admiten.
 
 Use el portal de cumplimiento Microsoft Purview para seleccionar uno de los 10 colores estándar para las etiquetas de confidencialidad. La configuración de **color de** etiqueta se encuentra en la primera página de la configuración de la etiqueta después del nombre y la descripción de la etiqueta.
 

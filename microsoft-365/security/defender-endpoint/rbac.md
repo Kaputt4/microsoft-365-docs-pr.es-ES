@@ -14,15 +14,15 @@ audience: ITPro
 ms.collection:
 - m365-security
 - tier2
-ms.topic: article
+ms.topic: conceptual
 ms.subservice: mde
 search.appverid: met150
-ms.openlocfilehash: f55ca70c94fa73c26cefd067f2006f174ce4b15c
-ms.sourcegitcommit: 4e42bafee965446f44f7f57d1defed2b9b24fce8
+ms.openlocfilehash: 62fa4f416fd10c348a7cdb7be28b64b9d231fd2d
+ms.sourcegitcommit: 0d8fb571024f134d7480fe14cffc5e31a687d356
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/30/2022
-ms.locfileid: "68232680"
+ms.lasthandoff: 10/20/2022
+ms.locfileid: "68621548"
 ---
 # <a name="manage-portal-access-using-role-based-access-control"></a>Administración del acceso al portal mediante el control de acceso basado en rol
 
@@ -71,7 +71,7 @@ Antes de usar RBAC, es importante que comprenda los roles que pueden conceder pe
 
 La primera vez que inicie sesión en el portal de Microsoft 365 Defender, se le concederá acceso completo o acceso de solo lectura. Los derechos de acceso completo se conceden a los usuarios con roles de administrador de seguridad o administrador global en Azure AD. El acceso de solo lectura se concede a los usuarios con un rol lector de seguridad en Azure AD. 
 
-Alguien con un rol de Administrador global de Defender para punto de conexión tiene acceso sin restricciones a todos los dispositivos, independientemente de su asociación de grupos de dispositivos y de las asignaciones de grupos de usuarios de Azure AD.
+Alguien con un rol de administrador global de Defender para punto de conexión tiene acceso sin restricciones a todos los dispositivos, independientemente de su asociación de grupos de dispositivos y de las asignaciones de grupos de usuarios de Azure AD.
 
 > [!WARNING]
 > Inicialmente, solo los usuarios con derechos de administrador global o administrador de seguridad de Azure AD podrán crear y asignar roles en el portal de Microsoft 365 Defender, por lo que es importante tener los grupos adecuados listos en Azure AD.

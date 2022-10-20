@@ -12,18 +12,18 @@ ms.pagetype: security
 ms.localizationpriority: medium
 author: denisebmsft
 ms.author: deniseb
-ms.topic: article
+ms.topic: conceptual
 ms.custom: nextgen
 ms.collection:
 - m365-security
 - tier2
 search.appverid: met150
-ms.openlocfilehash: 53b06977889d58d7a61985f2eb86d05fa268bdfd
-ms.sourcegitcommit: 0b7070ec119e00e0dafe030bbfbef0ae5c9afa19
+ms.openlocfilehash: 2ac0aad445528218baaf2bbee07800f6065ba5d6
+ms.sourcegitcommit: 0d8fb571024f134d7480fe14cffc5e31a687d356
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/29/2022
-ms.locfileid: "68194387"
+ms.lasthandoff: 10/20/2022
+ms.locfileid: "68623242"
 ---
 # <a name="configure-microsoft-defender-antivirus-exclusions-on-windows-server"></a>Configuración de exclusiones de antivirus de Microsoft Defender en Windows Server
 
@@ -112,7 +112,7 @@ En esta sección se enumeran las exclusiones predeterminadas de todos los roles 
 - `%windir%\Security\database\*.log`
 - `%windir%\Security\database\*.sdb`
 
-##### <a name="group-policy-files"></a>archivos directiva de grupo
+##### <a name="group-policy-files"></a>archivos समूह नीति
 
 - `%allusersprofile%\NTUser.pol`
 - `%SystemRoot%\System32\GroupPolicy\Machine\registry.pol`
@@ -194,7 +194,7 @@ En la tabla siguiente se enumeran las exclusiones de tipos de archivo, las exclu
 
 #### <a name="active-directory-exclusions"></a>Exclusiones de Active Directory
 
-En esta sección se enumeran las exclusiones que se entregan automáticamente al instalar Servicios de dominio de Active Directory (AD DS).
+En esta sección se enumeran las exclusiones que se entregan automáticamente al instalar Active Directory डोमेन सेवाहरू (AD DS).
 
 ##### <a name="ntds-database-files"></a>Archivos de base de datos NTDS
 
@@ -335,13 +335,13 @@ En Windows Server 2016 y versiones posteriores, las exclusiones predefinidas pro
 
 Dado que las exclusiones predefinidas solo excluyen **rutas de acceso predeterminadas**, si mueve carpetas NTDS y SYSVOL a otra unidad o ruta *de acceso diferente de la ruta de acceso original*, debe agregar exclusiones manualmente. Consulte [Configuración de la lista de exclusiones basadas en el nombre de carpeta o la extensión de archivo](configure-extension-file-exclusions-microsoft-defender-antivirus.md#configure-the-list-of-exclusions-based-on-folder-name-or-file-extension).
 
-Puede deshabilitar las listas de exclusión automática con directiva de grupo, cmdlets de PowerShell y WMI.
+Puede deshabilitar las listas de exclusión automática con समूह नीति, cmdlets de PowerShell y WMI.
 
-### <a name="use-group-policy-to-disable-the-auto-exclusions-list-on-windows-server-2016-windows-server-2019-and-windows-server-2022"></a>Use directiva de grupo para deshabilitar la lista de exclusiones automáticas en Windows Server 2016, Windows Server 2019 y Windows Server 2022
+### <a name="use-group-policy-to-disable-the-auto-exclusions-list-on-windows-server-2016-windows-server-2019-and-windows-server-2022"></a>Use समूह नीति para deshabilitar la lista de exclusiones automáticas en Windows Server 2016, Windows Server 2019 y Windows Server 2022
 
-1. En el equipo de administración de directivas de grupo, abra la [Consola de administración de directivas de grupo](/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/cc725752(v=ws.11)). Haga clic con el botón derecho en el objeto directiva de grupo que desea configurar y, a continuación, seleccione **Editar**.
+1. En el equipo de administración de directivas de grupo, abra la [Consola de administración de directivas de grupo](/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/cc725752(v=ws.11)). Haga clic con el botón derecho en el objeto समूह नीति que desea configurar y, a continuación, seleccione **Editar**.
 
-2. En el **Editor de administración de directiva de grupo**, vaya a **Configuración del equipo** y, a continuación, seleccione **Plantillas administrativas**.
+2. En el **Editor de administración de समूह नीति**, vaya a **Configuración del equipo** y, a continuación, seleccione **Plantillas administrativas**.
 
 3. Expanda el árbol a **componentes** \> de Windows Microsoft Defender **Exclusiones** **del antivirus**\>.
 
@@ -370,7 +370,7 @@ DisableAutoExclusions
 
 Consulte lo siguiente para obtener más información y los parámetros permitidos:
 
-- [API Windows Defender WMIv2](/previous-versions/windows/desktop/defender/windows-defender-wmiv2-apis-portal)
+- [API Windows डिफेन्डर WMIv2](/previous-versions/windows/desktop/defender/windows-defender-wmiv2-apis-portal)
 
 ## <a name="defining-custom-exclusions"></a>Definición de exclusiones personalizadas
 

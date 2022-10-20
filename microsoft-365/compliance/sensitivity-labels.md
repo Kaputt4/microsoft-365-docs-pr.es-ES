@@ -25,12 +25,12 @@ description: Obtenga información sobre cómo las etiquetas de confidencialidad 
 ms.custom:
 - seo-marvel-apr2020
 - seo-marvel-jun2020
-ms.openlocfilehash: bb3f26d4d4e516b95000339221a6d144db1d6cc8
-ms.sourcegitcommit: ca082da1c51a3f643f152492579eef5679d52bd0
+ms.openlocfilehash: 6c14a533ecd52eb05f85c16cb562df4c689eabfd
+ms.sourcegitcommit: 0d8fb571024f134d7480fe14cffc5e31a687d356
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/12/2022
-ms.locfileid: "68547629"
+ms.lasthandoff: 10/20/2022
+ms.locfileid: "68626410"
 ---
 # <a name="learn-about-sensitivity-labels"></a>Información sobre las etiquetas de confidencialidad
 
@@ -157,7 +157,7 @@ Al crear las etiquetas de confidencialidad en el portal de cumplimiento de Micro
 
 Solo puede aplicar una etiqueta de confidencialidad a un elemento, como un documento, un correo electrónico o un contenedor. Si configura una opción que exige a los usuarios proporcionar una justificación para cambiar una etiqueta a una clasificación inferior, el orden de esta lista identifica las clasificaciones más bajas. Sin embargo, esta opción no se aplica a las subetiquetas que comparten la prioridad de su etiqueta primaria.
 
-Aunque, el orden de las subetiquetas se usa en el [ etiquetado automático](apply-sensitivity-label-automatically.md). Cuando configure etiquetas para aplicarlas automáticamente o como recomendación, pueden producirse varias coincidencias para más de una etiqueta. Para determinar la etiqueta que se va a aplicar o recomendar, se usa el orden de las etiquetas: se selecciona la última etiqueta de confidencialidad y, a continuación, si procede, la última subetiqueta.
+Sin embargo, el orden de las subetiquetas se usa con [las directivas de etiquetado automático](apply-sensitivity-label-automatically.md#how-to-configure-auto-labeling-policies-for-sharepoint-onedrive-and-exchange). Al configurar más de una directiva de etiquetado automático para la misma ubicación, pueden producirse varias coincidencias para más de una etiqueta. Para determinar la etiqueta que se va a aplicar, la ordenación de etiquetas se usa incluso con subetiquetas: se selecciona la última etiqueta confidencial y, si procede, la última subetiqueta.
 
 ![Opción para crear una subetiqueta.](../media/Sensitivity-label-sublabel-options.png)
 
@@ -252,7 +252,7 @@ Sucede algo parecido para los usuarios del departamento jurídico, a los que se 
 
 Las etiquetas de confidencialidad integradas en Aplicaciones de Microsoft 365 en Windows, macOS, iOS y Android se ven y se comportan de forma muy similar en estos dispositivos para proporcionar a los usuarios una experiencia de etiquetado coherente. Sin embargo, en equipos de Windows, también puede usar el [cliente de Azure Information Protection (AIP)](/azure/information-protection/rms-client/aip-clientv2). Este cliente está ahora en [modo de mantenimiento](https://techcommunity.microsoft.com/t5/security-compliance-and-identity/announcing-aip-unified-labeling-client-maintenance-mode-and/ba-p/3043613) y, cuando se instala, ya no es el cliente de etiquetado predeterminado para las aplicaciones de Office más recientes.
 
-Si usa el cliente de AIP para el etiquetado en aplicaciones de Office, se recomienda pasar al etiquetado integrado. Para obtener más información, consulte [Migración del complemento de Azure Information Protection (AIP) al etiquetado integrado para aplicaciones de Office](sensitivity-labels-aip.md).
+Si usa el cliente de AIP para el etiquetado en aplicaciones de Office, se recomienda pasar al etiquetado integrado. Para obtener más información, consulte [Migración del complemento Azure Information Protection (AIP) al etiquetado integrado para aplicaciones de Office](sensitivity-labels-aip.md).
 
 ### <a name="azure-information-protection-labels"></a>Etiquetas de Azure Information Protection
 

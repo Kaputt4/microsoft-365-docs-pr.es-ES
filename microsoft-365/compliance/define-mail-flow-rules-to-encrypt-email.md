@@ -14,17 +14,18 @@ search.appverid:
 - MOE150
 ms.assetid: 9b7daf19-d5f2-415b-bc43-a0f5f4a585e8
 ms.collection:
-- M365-security-compliance
+- purview-compliance
+- tier2
 ms.custom:
 - admindeeplinkMAC
 - admindeeplinkEXCHANGE
 description: Los administradores pueden aprender a crear reglas de flujo de correo (reglas de transporte) para cifrar y descifrar mensajes mediante Cifrado de mensajes de Microsoft Purview.
-ms.openlocfilehash: 75abd302bf661fda50b144f431572c8c6dfc8bcc
-ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
+ms.openlocfilehash: b244cd1847d46f80bd56ec5a9aec09eadc6781cd
+ms.sourcegitcommit: 0d8fb571024f134d7480fe14cffc5e31a687d356
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/06/2022
-ms.locfileid: "66635707"
+ms.lasthandoff: 10/20/2022
+ms.locfileid: "68620731"
 ---
 # <a name="define-mail-flow-rules-to-encrypt-email-messages"></a>Definir reglas de flujo de correo para cifrar mensajes de correo electrónico
 
@@ -38,6 +39,8 @@ Para obtener información sobre los componentes que componen las reglas de flujo
 
 > [!IMPORTANT]
 > En el caso de los entornos híbridos de Exchange, los usuarios locales pueden enviar y recibir correo cifrado mediante el cifrado de mensajes solo si el correo electrónico se enruta a través de Exchange Online. Para configurar el cifrado de mensajes en un entorno de Exchange híbrido, primero debe [configurar el híbrido mediante el Asistente para configuración híbrida](/Exchange/exchange-hybrid) y, a continuación, [configurar el correo para que fluya desde Office 365 al servidor de correo electrónico](/exchange/mail-flow-best-practices/use-connectors-to-configure-mail-flow/set-up-connectors-to-route-mail#part-1-configure-mail-to-flow-from-office-365-to-your-on-premises-email-server) y [configurar el correo para que fluya desde el servidor de correo electrónico a Office 365](/exchange/mail-flow-best-practices/use-connectors-to-configure-mail-flow/set-up-connectors-to-route-mail#part-2-configure-mail-to-flow-from-your-email-server-to-office-365). Una vez que haya configurado el correo para que fluya a través de Office 365, puede configurar reglas de flujo de correo para el cifrado de mensajes mediante esta guía.
+
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
 
 ## <a name="create-mail-flow-rules-to-encrypt-email-messages-with-microsoft-purview-message-encryption"></a>Creación de reglas de flujo de correo para cifrar mensajes de correo electrónico con Cifrado de mensajes de Microsoft Purview
 
@@ -95,7 +98,7 @@ Puede definir reglas de flujo de correo para desencadenar el cifrado de mensajes
 
 7. En la lista **Haga lo siguiente** , quite las acciones que se asignan a **Modificar la seguridad** \> del mensaje **Aplique la versión anterior de OME**.
 
-8. Elija **Guardar**.
+8. Seleccione **Guardar**.
 
 ## <a name="create-mail-flow-rules-to-remove-encryption-for-email-messages-with-microsoft-purview-message-encryption"></a>Creación de reglas de flujo de correo para quitar el cifrado de mensajes de correo electrónico con Cifrado de mensajes de Microsoft Purview
 
