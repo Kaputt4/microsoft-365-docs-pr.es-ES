@@ -14,15 +14,15 @@ audience: ITPro
 ms.collection:
 - m365-security
 - tier3
-ms.topic: article
+ms.topic: conceptual
 ms.subservice: mde
 search.appverid: met150
-ms.openlocfilehash: e85038909d9cd68a96d2eb91ebea8fb9dbf6801e
-ms.sourcegitcommit: 4e42bafee965446f44f7f57d1defed2b9b24fce8
+ms.openlocfilehash: 5b8bf60554d33cc99f59b1949e51d3d3f85a501e
+ms.sourcegitcommit: 0d8fb571024f134d7480fe14cffc5e31a687d356
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/30/2022
-ms.locfileid: "68233208"
+ms.lasthandoff: 10/20/2022
+ms.locfileid: "68646691"
 ---
 # <a name="machineaction-resource-type"></a>Tipo de recurso MachineAction
 
@@ -53,7 +53,7 @@ ms.locfileid: "68233208"
 |[Liberar máquina del aislamiento](unisolate-machine.md)|[Acción de máquina](machineaction.md)|Liberar [la máquina](machine.md) del aislamiento.|
 |[Restringir ejecución de aplicación](restrict-code-execution.md)|[Acción de máquina](machineaction.md)|Restringir la ejecución de la aplicación.|
 |[Quitar restricción de aplicación](unrestrict-code-execution.md)|[Acción de máquina](machineaction.md)|Quite la restricción de ejecución de la aplicación.|
-|[Ejecutar examen antivirus](run-av-scan.md)|[Acción de máquina](machineaction.md)|Ejecute un examen antivirus con Windows Defender (cuando corresponda).|
+|[Ejecutar examen antivirus](run-av-scan.md)|[Acción de máquina](machineaction.md)|Ejecute un examen antivirus con Windows डिफेन्डर (cuando corresponda).|
 |[Retirar máquina](offboard-machine-api.md)|[Acción de máquina](machineaction.md)|Offboard [machine](machine.md) from Microsoft Defender para punto de conexión.|
 |[Detener y poner en cuarentena un archivo](stop-and-quarantine-file.md)|[Acción de máquina](machineaction.md)|Detenga la ejecución de un archivo en un equipo y elimínelo.|
 |[Ejecutar respuesta directa](run-live-response.md)|[Acción de máquina](machineaction.md)|Ejecuta una secuencia de comandos de respuesta dinámica en un dispositivo.|

@@ -16,15 +16,15 @@ audience: ITPro
 ms.collection:
 - m365-security
 - tier2
-ms.topic: article
+ms.topic: conceptual
 ms.subservice: mde
 search.appverid: met150
-ms.openlocfilehash: b32a565455a632aa411c2aca053755238862b2c3
-ms.sourcegitcommit: 4e42bafee965446f44f7f57d1defed2b9b24fce8
+ms.openlocfilehash: d5b90408220a72a01497692fcbcd91bed1cad109
+ms.sourcegitcommit: 0d8fb571024f134d7480fe14cffc5e31a687d356
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/30/2022
-ms.locfileid: "68228589"
+ms.lasthandoff: 10/20/2022
+ms.locfileid: "68621106"
 ---
 # <a name="create-indicators-for-files"></a>Crear indicadores para los archivos
 
@@ -155,12 +155,12 @@ La actividad de acción de respuesta también se puede ver en la escala de tiemp
 
 El control de directivas de IoC de certificados y archivos seguirá el orden siguiente:
 
-- Si el archivo no está permitido por Windows Defender directivas o directivas de aplicación de Control de aplicaciones y AppLocker, **bloquee**
+- Si Windows डिफेन्डर Control de aplicaciones y AppLocker no permiten el archivo, aplique directivas o directivas de modo de aplicación, **bloquee**.
 - De lo contrario, si el archivo está permitido por la exclusión Microsoft Defender Antivirus, **permitir**
 - De lo contrario, si el archivo está bloqueado o advertido por un bloque o un archivo de advertencia IoC, **bloquee o advierta**.
 - De lo contrario, si se permite el archivo mediante una directiva de IoC de archivo permitido **, permitir**
 - De lo contrario, si el archivo está bloqueado por reglas de ASR, CFA, AV, SmartScreen y, a continuación, **Bloquear**
-- De lo contrario **, permitir** (pasa Windows Defender control de aplicaciones & directiva de AppLocker, no se le aplican reglas de IoC)
+- De lo contrario **, permitir** (pasa Windows डिफेन्डर control de aplicaciones & directiva de AppLocker, no se le aplican reglas de IoC)
 
 >[!NOTE]
 > En situaciones en las que Microsoft Defender Antivirus está establecido en **Bloquear**, pero Defender para punto de conexión está establecido en **Permitir**, la directiva tendrá como valor predeterminado **Permitir**.

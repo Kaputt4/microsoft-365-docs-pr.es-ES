@@ -12,12 +12,12 @@ search.appverid: MET150
 ms.collection: ''
 ms.localizationpriority: medium
 description: Obtenga información sobre cómo administrar el uso compartido para La pizarra de Microsoft.
-ms.openlocfilehash: 2d788474a1c72baec448bf20dbc78a12e1afd1e2
-ms.sourcegitcommit: 8d3c027592a638f411f87d89772dd3d39e92aab0
+ms.openlocfilehash: 669c099be2884d1219249bb78a0a144b81db011b
+ms.sourcegitcommit: 0d8fb571024f134d7480fe14cffc5e31a687d356
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/12/2022
-ms.locfileid: "68537344"
+ms.lasthandoff: 10/20/2022
+ms.locfileid: "68632434"
 ---
 # <a name="manage-sharing-for-microsoft-whiteboard"></a>Administración del uso compartido para La pizarra de Microsoft
 
@@ -27,7 +27,7 @@ La experiencia de uso compartido difiere en función de si se encuentra en una r
 
 Al compartir una pizarra en una reunión de Teams, Whiteboard crea un vínculo de uso compartido. Cualquier persona de la organización puede acceder a este vínculo. La pizarra también se comparte con cualquier usuario en el inquilino de la reunión. Las pizarras se comparten mediante vínculos que se pueden compartir con la empresa, independientemente de la configuración predeterminada. Se planea la compatibilidad con el tipo de vínculo de uso compartido predeterminado.
 
-Hay más capacidad para la colaboración temporal por parte de cuentas de dispositivos externos y compartidos durante una reunión de Teams. Los usuarios pueden ver y colaborar temporalmente en pizarras compartidas en una reunión, de forma similar a PowerPoint Live uso compartido.
+Durante una reunión de Teams, las cuentas de dispositivos externos y compartidos (normalmente usadas en Surface Hubs y Salas de Teams dispositivos) tienen más capacidad para la colaboración temporal. Los usuarios pueden ver y colaborar temporalmente en pizarras compartidas en una reunión, de forma similar a PowerPoint Live uso compartido.
 
 En este caso, Whiteboard proporciona visualización y colaboración temporales en la pizarra solo durante la reunión de Teams. No se crea un vínculo de recurso compartido y Whiteboard no concede acceso al archivo.
 
@@ -52,8 +52,9 @@ Para habilitar este comportamiento, siga estos pasos:
 Esta configuración solo se aplica a las pizarras y reemplaza la configuración compartida anteriormente: **OneDriveLoopSharingCapability** y **CoreLoopSharingCapability**. Esa configuración ya no es aplicable y se puede omitir.
 
 > [!NOTE]
-> De forma predeterminada, la configuración de reunión de Teams **Usuarios anónimos pueden interactuar con aplicaciones en reuniones** está habilitada. Si la ha deshabilitado, los usuarios anónimos (en lugar de invitados o usuarios federados) no tendrán acceso a la pizarra durante la reunión.
->
+> De forma predeterminada, la configuración de reunión de Teams **Usuarios anónimos pueden interactuar con aplicaciones en reuniones** está habilitada. Si lo ha deshabilitado, ningún usuario anónimo (en lugar de invitados o usuarios federados) no tendrá acceso a la pizarra durante la reunión.
+
+> [!NOTE]
 > Si desea que las cuentas de dispositivo compartido tengan acceso a Whiteboard en reuniones de Teams pero no a usuarios anónimos, puede deshabilitar **usuarios anónimos para que interactúen con las aplicaciones de las reuniones** mientras tienen **habilitado AllowAnonymousMeetingParticipantsToAccessWhiteboards** .
 
 Estos cambios deben tardar aproximadamente 60 minutos en aplicarse en todo el inquilino.
@@ -78,9 +79,6 @@ Al agregar una pizarra como una pestaña en un canal o chat de Teams, Whiteboard
 ## <a name="create-and-share-in-whiteboard-native-clients"></a>Creación y uso compartido en clientes nativos de Whiteboard
 
 Al compartir pizarras desde clientes web, de escritorio o móviles, puede elegir personas específicas. También puede crear un vínculo de uso compartido al que pueda acceder cualquier persona de la organización.
-
-> [!NOTE]
-> El uso compartido externo durante una reunión de Teams aún no está disponible, pero se agregará en una versión futura.
 
 |Escenario|Almacenamiento y propiedad|Configuración de uso compartido|Experiencia de uso compartido|
 |---|---|---|---|

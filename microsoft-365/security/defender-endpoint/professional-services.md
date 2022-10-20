@@ -11,16 +11,18 @@ author: alekyaj
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
-ms.collection: m365-security
-ms.topic: article
+ms.collection:
+- m365-security
+- tier3
+ms.topic: conceptual
 ms.subservice: mde
 search.appverid: met150
-ms.openlocfilehash: 0e9a48788aee0e14240d970a21ea1f1b3cf030cb
-ms.sourcegitcommit: d0557f757cfa48330ed57e966033891d10f03688
+ms.openlocfilehash: cb1d4f3b234bdfa811e4c0de01edd697bba6f6ed
+ms.sourcegitcommit: 0d8fb571024f134d7480fe14cffc5e31a687d356
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/06/2022
-ms.locfileid: "68492796"
+ms.lasthandoff: 10/20/2022
+ms.locfileid: "68632654"
 ---
 # <a name="professional-services-supported-by-microsoft-365-defender"></a>Servicios profesionales compatibles con Microsoft 365 Defender
 
@@ -148,7 +150,7 @@ Desarrolle la posición de seguridad de su organización a través de procesos y
 | -------- | ----------- | ------------ |
 | [CRITICALSTART® Servicios de consultoría de ciberseguridad: Evaluación de seguridad en la nube de Microsoft](https://go.microsoft.com/fwlink/?linkid=2202674)  | CRITICALSTART  | Critical Start Microsoft Cloud Security Assessment proporciona servicios que le ayudarán a comprender la madurez actual de la seguridad en la nube, identificar brechas y priorizar una hoja de ruta para los controles de seguridad de Microsoft que mejorará la posición de seguridad y ayudará a reducir el riesgo de que se vulneren.  |
 | [Sepago Adapt](https://go.microsoft.com/fwlink/?linkid=2202677)     | Sepago GmbH | Trabajar con toda la gama de soluciones Microsoft Defender requiere un cambio en los procesos. Combinando los procedimientos recomendados de Microsoft y sepago y el conocimiento de la empresa, juntos crearemos y estableceremos procesos para su organización para permitirle usar por completo las soluciones de Defender.|
-| [Confianza cero por Onevinn](https://go.microsoft.com/fwlink/?linkid=2202584) | Onevinn  | Introducción a Confianza cero mediante el uso completo de la inversión en características de seguridad de Microsoft 365 |
+| [Confianza cero por Onevinn](https://go.microsoft.com/fwlink/?linkid=2202584) | Onevinn  | Introducción a Zero Trust mediante el uso completo de su inversión en características de seguridad de Microsoft 365 |
 | [Centro de operaciones de seguridad en la nube](https://go.microsoft.com/fwlink/?linkid=2202671) | glueckkanja-gab AG   | Supervisa las soluciones de seguridad de Microsoft 24/7, responde a amenazas en su nombre y trabaja estrechamente con el equipo de TI para mejorar continuamente su posición de seguridad.|
 | [Wortell Protect](https://go.microsoft.com/fwlink/?linkid=2202480)    | Wortell  | Wortell ofrece un servicio de detección y respuesta administrada 24.7.365, SOC como servicio, para proteger las suscripciones de Azure y el entorno de Microsoft 365. Con este servicio administrado, Wortell proporcionará supervisión de seguridad y respuesta a incidentes, y funcionará Microsoft Defender y (opcionalmente) Microsoft Sentinel en su nombre. El servicio también incluye fuentes de inteligencia sobre amenazas y modelos de aprendizaje automático personalizados |
 | [MDR de mandiant para Microsoft Defender para punto de conexión](https://go.microsoft.com/fwlink/?linkid=2202388) | Mandiant, Inc.   | Mandiant Managed Defense protege su negocio con un servicio de detección y respuesta administrada (MDR) impulsado por expertos de IR dedicados y de primera línea que protegen contra adversarios motivados con una combinación de inteligencia de amenazas actualizada, ciencia de datos y experiencia en el mundo real. Managed Defense ayuda a los clientes a optimizar las inversiones en tecnología de Microsoft, maximizar los recursos y acelerar las investigaciones. |

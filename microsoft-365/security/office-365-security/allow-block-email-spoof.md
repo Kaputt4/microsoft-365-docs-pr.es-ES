@@ -1,5 +1,5 @@
 ---
-title: Permitir o bloquear correos electrónicos mediante la lista de bloqueados y permitidos del espacio empresarial
+title: Permitir o bloquear el correo electrónico mediante la lista de permitidos o bloqueados de inquilinos
 f1.keywords:
 - NOCSH
 ms.author: chrisda
@@ -13,17 +13,17 @@ search.appverid:
 - MET150
 ms.collection:
 - m365-security
-description: Los administradores pueden aprender a permitir o bloquear correos electrónicos y entradas de remitente suplantados en la lista de permitidos o bloqueados de inquilinos en el portal de seguridad.
+description: Los administradores pueden aprender a permitir o bloquear las entradas de correo electrónico y remitente suplantado en la lista de permitidos o bloqueados de inquilinos en el portal de seguridad.
 ms.subservice: mdo
 ms.service: microsoft-365-security
-ms.openlocfilehash: 9a954b820b584d9fdb6b210971423e9f17c15de6
-ms.sourcegitcommit: 12af9e8e3a6eaa090fda9e98ccb831dff65863a4
+ms.openlocfilehash: 90e8a8e84c26385457bc31533ca2e26b2500f69f
+ms.sourcegitcommit: 0d8fb571024f134d7480fe14cffc5e31a687d356
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/27/2022
-ms.locfileid: "68066814"
+ms.lasthandoff: 10/20/2022
+ms.locfileid: "68640310"
 ---
-# <a name="allow-or-block-emails-using-the-tenant-allowblock-list"></a>Permitir o bloquear correos electrónicos mediante la lista de bloqueados y permitidos del espacio empresarial
+# <a name="allow-or-block-email-using-the-tenant-allowblock-list"></a>Permitir o bloquear el correo electrónico mediante la lista de permitidos o bloqueados de inquilinos
 
 [!INCLUDE [MDO Trial banner](../includes/mdo-trial-banner.md)]
 
@@ -138,13 +138,13 @@ No puede crear entradas permitidas para dominios y direcciones de correo electr�
 Para obtener instrucciones, consulte [Informe de un buen correo electrónico a Microsoft](admin-submission.md#report-good-email-to-microsoft).
 
 > [!NOTE]
-> Dado que Microsoft administra las entradas permitidas automáticamente, se quitarán las entradas permitidas innecesarias para dominios y direcciones de correo electrónico. Este comportamiento protege su organización y ayuda a evitar entradas permitidas mal configuradas. Si no está de acuerdo con el veredicto, es posible que tenga que abrir un caso de soporte técnico para ayudar a determinar por qué un mensaje todavía se considera incorrecto.
+> Microsoft no le permite crear entradas permitidas directamente, ya que conduce a la creación de permisos que no son necesarios, lo que expone a su organización a un correo electrónico malintencionado que, de lo contrario, podría haber sido filtrado por el sistema.
 >
-> Si aún no se ha bloqueado el dominio o la dirección de correo electrónico, no se creará una entrada de permiso para el dominio o la dirección de correo electrónico.
+> Microsoft administra el proceso de creación de permitir desde envío mediante la creación de permite las entidades (dominios o direcciones de correo electrónico, remitentes suplantados, direcciones URL, archivos) que se determinaron como malintencionadas por los filtros durante el flujo de correo. Por ejemplo, si se ha determinado que el remitente y una dirección URL del mensaje son incorrectos, se crea una entrada allow para el remitente y se crea una entrada allow para la dirección URL.
 >
-> En la mayoría de los casos en los que se determinó que el mensaje era un falso positivo que se bloqueó incorrectamente, la entrada permitida se quitará en la fecha de expiración especificada.
+> Cuando se vuelve a encontrar esa entidad (dirección de dominio o correo electrónico, dirección URL, archivo), se omiten todos los filtros asociados a esa entidad.
 >
-> Para crear entradas permitidas para remitentes suplantados, consulte la sección [Creación de entradas permitidas para remitentes suplantados](#create-allow-entries-for-spoofed-senders) más adelante en este artículo.
+> Durante el flujo de correo, si los mensajes del dominio o la dirección de correo electrónico pasan otras comprobaciones en la pila de filtrado, se entregarán los mensajes. Por ejemplo, si se supera la [autenticación por correo electrónico](email-validation-and-authentication.md) , se entregará un mensaje de un remitente en la entrada allow.
 
 ### <a name="use-the-microsoft-365-defender-portal-to-view-allow-or-block-entries-for-domains-and-email-addresses-in-the-tenant-allowblock-list"></a>Use el portal de Microsoft 365 Defender para ver las entradas de permitir o bloquear para dominios y direcciones de correo electrónico en la lista de permitidos o bloqueados de inquilinos.
 
@@ -215,6 +215,10 @@ Al modificar entradas de permitir o bloquear para dominios y direcciones de corr
    - **Nota opcional**
 
    Cuando haya terminado, haga clic en **Guardar**.
+
+Tenga en cuenta que con **permitir la administración de expiración** (actualmente en versión preliminar privada), si Microsoft no ha aprendido del permiso, Microsoft ampliará automáticamente el tiempo de expiración de los permitidos, que expirarán pronto, en 30 días para evitar que el correo electrónico legítimo vuelva a ser basura o poner en cuarentena de nuevo. Si Microsoft no aprende en un plazo de 90 días naturales a partir de la fecha de creación del permiso, Microsoft quitará el permiso.
+
+Si Microsoft ha aprendido del permiso, se quitará el permiso y obtendrá una alerta que le informará de ello.
 
 > [!NOTE]
 > Para permitir solo entradas, si selecciona la entrada haciendo clic en cualquier lugar de la fila que no sea la casilla, puede seleccionar ![Ver icono de envío.](../../media/m365-cc-sc-view-submission-icon.png) **Vea el envío** en el control flotante de detalles que parece ir a la página **Envíos** en <https://security.microsoft.com/reportsubmission>.

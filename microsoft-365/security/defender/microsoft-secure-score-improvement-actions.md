@@ -15,19 +15,19 @@ audience: ITPro
 ms.collection:
 - m365-security
 - tier2
-ms.topic: article
+ms.topic: conceptual
 search.appverid:
 - MOE150
 - MET150
 ms.custom:
 - seo-marvel-apr2020
 - seo-marvel-jun2020
-ms.openlocfilehash: f57144f6b27a25200423dc9d7da7fff15ff97b52
-ms.sourcegitcommit: 12af9e8e3a6eaa090fda9e98ccb831dff65863a4
+ms.openlocfilehash: 655be1d97960da31ad0c80e2c0bcb4663b7fc0e6
+ms.sourcegitcommit: 0d8fb571024f134d7480fe14cffc5e31a687d356
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/27/2022
-ms.locfileid: "68062064"
+ms.lasthandoff: 10/20/2022
+ms.locfileid: "68633491"
 ---
 # <a name="assess-your-security-posture-with-microsoft-secure-score"></a>Evaluación de la posición de seguridad con puntuación segura de Microsoft
 
@@ -42,7 +42,7 @@ Para ayudarle a encontrar la información que necesita más rápidamente, las ac
 - Aplicaciones (aplicaciones de correo electrónico y aplicaciones en la nube, incluidos Office 365 y Microsoft Defender for Cloud Apps)
 
 >[!NOTE]
->En la versión reciente de Puntuación segura de Microsoft, se ha publicado un modelo de puntuación mejorado que hacía que La puntuación segura de Microsoft fuera temporalmente incompatible con la Puntuación de seguridad de identidad y la Graph API. [Ver detalles](microsoft-secure-score-whats-new.md)
+>En la versión reciente de Puntuación segura de Microsoft, se ha publicado un modelo de puntuación mejorado que hacía que La puntuación segura de Microsoft fuera temporalmente incompatible con La puntuación segura de identidad y Graph API. [Ver detalles](microsoft-secure-score-whats-new.md)
 
 En la página de información general de puntuación segura de Microsoft, vea cómo se dividen los puntos entre estos grupos y qué puntos están disponibles. También puede obtener una vista completa de la puntuación total, la tendencia histórica de la puntuación segura con comparaciones de pruebas comparativas y las acciones de mejora priorizada que se pueden realizar para mejorar la puntuación.
 

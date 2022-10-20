@@ -10,7 +10,7 @@ ms.localizationpriority: medium
 ms.date: 09/19/2022
 author: denisebmsft
 ms.author: deniseb
-ms.topic: article
+ms.topic: conceptual
 ms.custom: nextgen
 ms.reviewer: thdoucet
 manager: dansimp
@@ -18,12 +18,12 @@ ms.collection:
 - m365-security
 - tier2
 search.appverid: met150
-ms.openlocfilehash: 2d7e53aa67331a4eca9b5c918d1861d640374ecd
-ms.sourcegitcommit: 0b7070ec119e00e0dafe030bbfbef0ae5c9afa19
+ms.openlocfilehash: bc3de9173b9edf02c9e6a33eccb2c7609bdc8500
+ms.sourcegitcommit: 0d8fb571024f134d7480fe14cffc5e31a687d356
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/29/2022
-ms.locfileid: "68198963"
+ms.lasthandoff: 10/20/2022
+ms.locfileid: "68638596"
 ---
 # <a name="configure-and-validate-exclusions-based-on-file-extension-and-folder-location"></a>Configuración y validación de exclusiones basadas en la extensión de archivo y la ubicación de la carpeta
 
@@ -82,7 +82,7 @@ En la tabla siguiente se enumeran algunos ejemplos de exclusiones basadas en la 
 
 - Las exclusiones se aplican a [los exámenes programados](scheduled-catch-up-scans-microsoft-defender-antivirus.md), [a los exámenes a petición](run-scan-microsoft-defender-antivirus.md) y a la [protección en tiempo real](configure-real-time-protection-microsoft-defender-antivirus.md), pero no a todas las funcionalidades de Defender para punto de conexión. Para definir exclusiones en Defender para punto de conexión, use [indicadores personalizados](manage-indicators.md).
 
-- De forma predeterminada, los cambios locales realizados en las listas (por los usuarios con privilegios de administrador, incluidos los cambios realizados con PowerShell y WMI) se combinarán con las listas definidas (e implementadas) por directiva de grupo, Configuration Manager o Intune. Las listas de directiva de grupo tienen prioridad cuando hay conflictos. Además, los cambios en la lista de exclusión realizados con directiva de grupo son visibles en la [aplicación de Seguridad de Windows](microsoft-defender-security-center-antivirus.md).
+- De forma predeterminada, los cambios locales realizados en las listas (por parte de los usuarios con privilegios de administrador, incluidos los cambios realizados con PowerShell y WMI) se combinarán con las listas según lo definido (e implementado) por समूह नीति, Configuration Manager o Intune. Las listas de समूह नीति tienen prioridad cuando hay conflictos. Además, los cambios en la lista de exclusión realizados con समूह नीति son visibles en la [aplicación de Seguridad de Windows](microsoft-defender-security-center-antivirus.md).
 
 - Para permitir que los cambios locales invaliden la configuración de implementación administrada, [configure cómo se combinan las listas de exclusiones definidas local y globalmente](configure-local-policy-overrides-microsoft-defender-antivirus.md#merge-lists).
 
@@ -97,18 +97,18 @@ Consulte los siguientes artículos:
 - [Configurar restricciones de dispositivos en Microsoft Intune](/intune/device-restrictions-configure)
 - [Microsoft Defender configuración de restricción de dispositivos antivirus para Windows 10 en Intune](/intune/device-restrictions-windows-10#microsoft-defender-antivirus)
 
-### <a name="use-configuration-manager-to-configure-file-name-folder-or-file-extension-exclusions"></a>Usar Configuration Manager para configurar exclusiones de nombre de archivo, carpeta o extensión de archivo
+### <a name="use-configuration-manager-to-configure-file-name-folder-or-file-extension-exclusions"></a>Uso de Configuration Manager para configurar exclusiones de nombre de archivo, carpeta o extensión de archivo
 
 Consulte [Creación e implementación de directivas antimalware: configuración de exclusión](/configmgr/protect/deploy-use/endpoint-antimalware-policies#exclusion-settings) para obtener más información sobre cómo configurar Microsoft Endpoint Manager (rama actual).
 
-### <a name="use-group-policy-to-configure-folder-or-file-extension-exclusions"></a>Usar directiva de grupo para configurar exclusiones de extensiones de archivos o carpetas
+### <a name="use-group-policy-to-configure-folder-or-file-extension-exclusions"></a>Uso de समूह नीति para configurar exclusiones de extensiones de archivos o carpetas
 
 > [!NOTE]
 > Si especifica una ruta de acceso completa a un archivo, solo se excluirá ese archivo. Si se define una carpeta en la exclusión, se excluyen todos los archivos y subdirectorios de esa carpeta.
 
 1. En el equipo de administración de directivas de grupo, abra la [Consola de administración de directivas de grupo](/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/cc731212(v=ws.11)), haga clic con el botón secundario en el objeto de directiva de grupo que quiera configurar y seleccione **Editar**.
 
-2. En directiva de grupo **Editor de administración**, vaya a **Configuración del equipo** y seleccione **Plantillas administrativas**.
+2. En el **Editor de administración de समूह नीति**, vaya a **Configuración del equipo** y seleccione **Plantillas administrativas**.
 
 3. Expanda el árbol a **componentes** \> de Windows Microsoft Defender **Exclusiones** **del antivirus**\>.
 
@@ -182,7 +182,7 @@ ExclusionPath
 El uso de **Set**, **Add** y **Remove** es análogo a sus homólogos de PowerShell: `Set-MpPreference`, `Add-MpPreference`y `Remove-MpPreference`.
 
 > [!TIP]
-> Para obtener más información, consulte [Windows Defender API WMIv2](/previous-versions/windows/desktop/defender/windows-defender-wmiv2-apis-portal).
+> Para obtener más información, vea [Windows डिफेन्डर API WMIv2](/previous-versions/windows/desktop/defender/windows-defender-wmiv2-apis-portal).
 
 <a id="man-tools"></a>
 
@@ -296,8 +296,8 @@ Puede recuperar los elementos de la lista de exclusión mediante uno de los mét
 - [Aplicación Seguridad de Windows](microsoft-defender-security-center-antivirus.md)
 
 > [!IMPORTANT]
-> Los cambios en la lista de exclusión realizados con directiva de grupo **se mostrarán** en las listas de [Seguridad de Windows aplicación](microsoft-defender-security-center-antivirus.md).
-> Los cambios realizados en la aplicación Seguridad de Windows **no se mostrarán** en las listas de directiva de grupo.
+> Los cambios en la lista de exclusión realizados con समूह नीति **se mostrarán** en las listas de [Seguridad de Windows aplicación](microsoft-defender-security-center-antivirus.md).
+> Los cambios realizados en la aplicación Seguridad de Windows **no se mostrarán** en las listas de समूह नीति.
 
 Si usa PowerShell, puede recuperar la lista de las dos maneras siguientes:
 

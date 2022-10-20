@@ -5,7 +5,7 @@ f1.keywords:
 ms.author: dansimp
 author: dansimp
 manager: dansimp
-ms.date: 3/21/2022
+ms.date: 10/14/2022
 audience: ITPro
 ms.topic: how-to
 ms.localizationpriority: medium
@@ -17,12 +17,12 @@ ms.custom: ''
 description: Obtenga información sobre cómo identificar personas críticas en una organización y agregar la etiqueta de cuenta de prioridad para proporcionarles protección adicional.
 ms.subservice: mdo
 ms.service: microsoft-365-security
-ms.openlocfilehash: 0133a684780ab59514d576bf619ebe2c4aa45099
-ms.sourcegitcommit: 12af9e8e3a6eaa090fda9e98ccb831dff65863a4
+ms.openlocfilehash: 964427f26df1f572f78f3b98602883ad69ac9a34
+ms.sourcegitcommit: 0d8fb571024f134d7480fe14cffc5e31a687d356
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/27/2022
-ms.locfileid: "68066616"
+ms.lasthandoff: 10/20/2022
+ms.locfileid: "68645283"
 ---
 # <a name="configure-and-review-priority-accounts-in-microsoft-defender-for-office-365"></a>Configuración y revisión de cuentas de prioridad en Microsoft Defender para Office 365
 
@@ -80,7 +80,7 @@ Los efectos de la protección de la cuenta de prioridad son visibles en las sigu
 - [Directivas de alertas personalizadas](../../compliance/alert-policies.md#view-alerts)
 - [Explorador de amenazas y detecciones en tiempo real](threat-explorer.md)
 - [Informe de usuario en peligro](view-email-security-reports.md#compromised-users-report)
-- [Página de la entidad de correo electrónico](mdo-email-entity-page.md#other-innovations)
+- [Página de la entidad de correo electrónico](mdo-email-entity-page.md)
 - [Informe de estado de protección contra amenazas](view-email-security-reports.md#threat-protection-status-report)
 - [Informe de remitentes y destinatarios principales](view-email-security-reports.md#top-senders-and-recipients-report)
 - [Simulación de ataque](attack-simulation-training.md#target-users)

@@ -10,16 +10,17 @@ ms.topic: article
 ms.service: O365-seccomp
 ms.localizationpriority: medium
 ms.collection:
-- M365-security-compliance
+- tier1
+- purview-compliance
 search.appverid:
 - MET150
 description: Más información sobre la incorporación de dispositivos macOS a soluciones de cumplimiento
-ms.openlocfilehash: 6cf9d5233f66f1afd62644f774b3f9301a477e2e
-ms.sourcegitcommit: 48a75b40e607542e5fe219b6e75ffc757804a9c6
+ms.openlocfilehash: 9966ed77aac5935cabc2bc33b4738f35107610e4
+ms.sourcegitcommit: 0d8fb571024f134d7480fe14cffc5e31a687d356
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/16/2022
-ms.locfileid: "67343511"
+ms.lasthandoff: 10/20/2022
+ms.locfileid: "68621781"
 ---
 # <a name="onboard-macos-devices-into-microsoft-365-overview"></a>Introducción a la incorporación de dispositivos macOS a Microsoft 365
 
@@ -30,9 +31,11 @@ Los dispositivos MacOS se pueden incorporar a las soluciones de Microsoft Purvie
 - [Prevención de perdida de datos en el punto de conexión (DLP)](./endpoint-dlp-learn-about.md)
 - [Administración de riesgos internos](insider-risk-management.md)
 
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
+
 ## <a name="before-you-begin"></a>Antes de empezar
 
-Antes de empezar a trabajar con DLP de punto de conexión en dispositivos macOS (Catalina 10.15 o posterior), debe familiarizarse con estos artículos:
+Antes de empezar a trabajar con DLP de punto de conexión en dispositivos macOS (tres versiones publicadas más recientes), debe familiarizarse con estos artículos:
 
 - [Obtenga más información sobre la prevención de pérdida de datos en punto de conexión](endpoint-dlp-learn-about.md)
 - [Introducción a la prevención de pérdida de datos en punto de conexión](endpoint-dlp-getting-started.md)
@@ -56,7 +59,7 @@ Los dispositivos macOS ya deben administrarse a través de Intune o JAMF Pro.
 
 ### <a name="supported-browsers"></a>Exploradores compatibles
 
-DLP de punto de conexión admite estos exploradores en macOS Catalina 10.15 o posterior:
+DLP de punto de conexión admite estos exploradores en macOS (tres versiones más recientes publicadas):
 
 - Microsoft Edge (última versión)
 - Safari (versión más reciente, solo macOS)
@@ -98,7 +101,7 @@ Cuando quiera incorporar dispositivos que todavía no hayan sido incorporados, d
 
 2. Abra la página de configuración del Centro de cumplimiento y elija **Activar la supervisión de dispositivos macOS**.
 
-## <a name="next-steps"></a>Siguientes pasos
+## <a name="next-steps"></a>Pasos siguientes
 
 La incorporación de dispositivos a las soluciones de Microsoft Purview es necesaria para recibir telemetría del sensor DLP y aplicar directivas de prevención de pérdida de datos. 
 

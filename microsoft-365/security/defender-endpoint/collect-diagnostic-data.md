@@ -15,17 +15,17 @@ ms.date: 06/29/2020
 ms.reviewer: ''
 manager: dansimp
 ms.subservice: mde
-ms.topic: article
+ms.topic: conceptual
 ms.collection:
 - m365-security
 - tier2
 search.appverid: met150
-ms.openlocfilehash: 5b9f1a5bc1df8564c5f4f028dc9fefee6c05e1a6
-ms.sourcegitcommit: b9282493c371d59c2e583b9803825096499b5e2c
+ms.openlocfilehash: 7c9a52149ae9af7cec24b6de6c05174cc29cf61e
+ms.sourcegitcommit: 0d8fb571024f134d7480fe14cffc5e31a687d356
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/29/2022
-ms.locfileid: "68148689"
+ms.lasthandoff: 10/20/2022
+ms.locfileid: "68638750"
 ---
 # <a name="collect-microsoft-defender-antivirus-diagnostic-data"></a>Recopilación de datos de diagnóstico Microsoft Defender Antivirus
 
@@ -120,9 +120,9 @@ Cuando se usa el parámetro SupportLogLocation, se creará una estructura de car
 
 ## <a name="specify-location-where-diagnostic-data-is-created"></a>Especificar la ubicación donde se crean los datos de diagnóstico
 
-También puede especificar dónde se creará el archivo de .cab de diagnóstico mediante un objeto directiva de grupo (GPO).
+También puede especificar dónde se creará el archivo de .cab de diagnóstico mediante un objeto समूह नीति (GPO).
 
-1. Abra el Editor de directiva de grupo local y busque el GPO SupportLogLocation en: `HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows Defender\SupportLogLocation`.
+1. Abra el Editor de समूह नीति local y busque el GPO SupportLogLocation en: `HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows Defender\SupportLogLocation`.
 
 2. Seleccione **Definir la ruta de acceso del directorio para copiar los archivos de registro compatibles**.
 

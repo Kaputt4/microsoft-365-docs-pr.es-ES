@@ -19,13 +19,13 @@ audience: ITPro
 ms.collection:
 - m365-security
 - tier3
-ms.topic: article
-ms.openlocfilehash: b33bdd1e8c3b74ae6708882869db70ec026a588e
-ms.sourcegitcommit: 12af9e8e3a6eaa090fda9e98ccb831dff65863a4
+ms.topic: conceptual
+ms.openlocfilehash: 6566cc6a0e3983a59bf8c4f5347c24f240b04471
+ms.sourcegitcommit: 0d8fb571024f134d7480fe14cffc5e31a687d356
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/27/2022
-ms.locfileid: "68080115"
+ms.lasthandoff: 10/20/2022
+ms.locfileid: "68622868"
 ---
 # <a name="devicetvmsoftwarevulnerabilities"></a>DeviceTvmSoftwareVulnerabilities
 
@@ -59,7 +59,7 @@ Para obtener información sobre otras tablas del esquema de búsqueda avanzada, 
 | `CveId` | `string` | Identificador único asignado a la vulnerabilidad de seguridad en el sistema de vulnerabilidades y exposiciones comunes (CVE) |
 | `VulnerabilitySeverityLevel` | `string` | Nivel de gravedad asignado a la vulnerabilidad de seguridad basada en la puntuación CVSS y los factores dinámicos influidos por el panorama de amenazas |
 | `RecommendedSecurityUpdate` | `string` | Nombre o descripción de la actualización de seguridad proporcionada por el publicador de software para solucionar la vulnerabilidad |
-| `RecommendedSecurityUpdateId` | `string` | Identificador de las actualizaciones de seguridad o identificador aplicables para los artículos de guía o knowledge base (KB) correspondientes |
+| `RecommendedSecurityUpdateId` | `string` | Identificador de las actualizaciones de seguridad o identificador aplicables para las instrucciones o artículos de ज्ञानाधार (KB) correspondientes |
 
 
 

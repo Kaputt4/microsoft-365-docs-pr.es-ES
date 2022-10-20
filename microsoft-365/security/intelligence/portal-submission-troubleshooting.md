@@ -14,14 +14,14 @@ audience: ITPro
 ms.collection:
 - m365-security
 - tier2
-ms.topic: article
+ms.topic: conceptual
 search.appverid: met150
-ms.openlocfilehash: 58a3280723c5473bb45b11bf86107883aeb02c37
-ms.sourcegitcommit: 4e42bafee965446f44f7f57d1defed2b9b24fce8
+ms.openlocfilehash: 96c218ff64f4063596f6d21b6da796dc3a5a6a1d
+ms.sourcegitcommit: 0d8fb571024f134d7480fe14cffc5e31a687d356
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/30/2022
-ms.locfileid: "68222680"
+ms.lasthandoff: 10/20/2022
+ms.locfileid: "68633271"
 ---
 # <a name="troubleshooting-malware-submission-errors-caused-by-administrator-block"></a>Solución de problemas de errores de envío de malware causados por el bloque de administrador
 
@@ -33,7 +33,7 @@ Abra la [configuración de la aplicación de Azure Enterprise](https://portal.az
 
 - **Si no** está seleccionado, un administrador de Azure AD para el inquilino del cliente tendrá que proporcionar el consentimiento para la organización. En función de la configuración con Azure AD, es posible que los usuarios puedan enviar una solicitud directamente desde el mismo cuadro de diálogo. Si no hay ninguna opción para solicitar el consentimiento del administrador, los usuarios deben solicitar estos permisos para agregarlos a su administrador de Azure AD. Vaya a la sección siguiente para obtener más información.
 
-- Si se selecciona **Sí**, asegúrese de que la configuración de la aplicación De inteligencia de seguridad de Windows Defender **Habilitada para que los usuarios inicien sesión esté establecida en** **Sí** [en Azure](https://portal.azure.com/#blade/Microsoft_AAD_IAM/ManagedAppMenuBlade/Properties/appId/f0cf43e5-8a9b-451c-b2d5-7285c785684d/objectId/4a918a14-4069-4108-9b7d-76486212d75d). **Si no** está seleccionado, deberá solicitar que un administrador de Azure AD lo habilite.
+- Si se selecciona **Sí**, asegúrese de que la configuración de la aplicación De inteligencia de seguridad de Windows डिफेन्डर **Habilitada para que los usuarios inicien sesión esté establecida en** **Sí** [en Azure](https://portal.azure.com/#blade/Microsoft_AAD_IAM/ManagedAppMenuBlade/Properties/appId/f0cf43e5-8a9b-451c-b2d5-7285c785684d/objectId/4a918a14-4069-4108-9b7d-76486212d75d). **Si no** está seleccionado, deberá solicitar que un administrador de Azure AD lo habilite.
 
 ## <a name="implement-required-enterprise-application-permissions"></a>Implementación de los permisos necesarios de la aplicación empresarial
 
@@ -93,7 +93,7 @@ Si ninguna de estas opciones resuelve el problema, pruebe los pasos siguientes (
 
 4. Revise los permisos necesarios para la aplicación y, a continuación, seleccione **Aceptar**.
 
-5. Confirme que los permisos se aplican en el [Azure Portal](https://portal.azure.com/#blade/Microsoft_AAD_IAM/ManagedAppMenuBlade/Permissions/appId/f0cf43e5-8a9b-451c-b2d5-7285c785684d/objectId/ce60a464-5fca-4819-8423-bcb46796b051).
+5. Confirme que los permisos se aplican en [Azure Portal](https://portal.azure.com/#blade/Microsoft_AAD_IAM/ManagedAppMenuBlade/Permissions/appId/f0cf43e5-8a9b-451c-b2d5-7285c785684d/objectId/ce60a464-5fca-4819-8423-bcb46796b051).
 
    ![Revise que se aplican los permisos.](../../media/security-intelligence-images/msi-permissions.jpg)
 

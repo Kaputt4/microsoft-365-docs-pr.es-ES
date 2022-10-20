@@ -15,16 +15,16 @@ audience: ITPro
 ms.collection:
 - m365-security
 - tier3
-ms.topic: article
+ms.topic: conceptual
 ms.subservice: mde
 ms.custom: api
 search.appverid: met150
-ms.openlocfilehash: ce7d7f1973f618984e0ee63270ce7fca5d7fdc87
-ms.sourcegitcommit: 0b7070ec119e00e0dafe030bbfbef0ae5c9afa19
+ms.openlocfilehash: 1b273fbaf02277e20634a7daa37b61e5cbb27ec4
+ms.sourcegitcommit: 0d8fb571024f134d7480fe14cffc5e31a687d356
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/29/2022
-ms.locfileid: "68193067"
+ms.lasthandoff: 10/20/2022
+ms.locfileid: "68631686"
 ---
 # <a name="use-microsoft-defender-for-endpoint-apis"></a>Uso de api de Microsoft Defender para punto de conexión
 
@@ -72,9 +72,9 @@ En esta página se explica cómo crear una aplicación de AAD, obtener un token 
 
 1. Inicie sesión en [Azure](https://portal.azure.com) con una cuenta de usuario que tenga el rol **Administrador global** .
 
-2. Vaya a **Azure Active Directory** \> **Registros de aplicaciones** \> **Nuevo registro**.
+2. Vaya a Registros \> **de aplicaciones** de **Azure Active Directory** \> **Nuevo registro**.
 
-   :::image type="content" source="images/atp-azure-new-app2.png" alt-text="Página Registros de aplicaciones de Microsoft Azure Portal" lightbox="images/atp-azure-new-app2.png":::
+   :::image type="content" source="images/atp-azure-new-app2.png" alt-text="Página Registros de aplicaciones en Microsoft Azure Portal" lightbox="images/atp-azure-new-app2.png":::
 
 3. Cuando aparezca la página **Registrar una aplicación**, escriba la información de registro de la aplicación:
    - **Nombre**: escriba un nombre significativo para la aplicación, que se mostrará a los usuarios de la aplicación.

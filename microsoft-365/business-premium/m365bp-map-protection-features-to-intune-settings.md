@@ -9,7 +9,7 @@ audience: Admin
 ms.topic: conceptual
 ms.service: microsoft-365-security
 ms.subservice: other
-ms.date: 09/15/2022
+ms.date: 10/18/2022
 ms.localizationpriority: high
 ms.collection:
 - tier1
@@ -19,12 +19,12 @@ search.appverid:
 - BCS160
 - MET150
 description: Obtenga más información sobre cómo se asignan las características de protección de Microsoft 365 Empresa Premium a la configuración de Intune. La suscripción proporciona una licencia para modificar la configuración de Intune.
-ms.openlocfilehash: 185eda9e5b5e214716608d4232a0ea81c00d6b4b
-ms.sourcegitcommit: 0283c436f3ba61a708b52b57a1955f5ea74376a3
+ms.openlocfilehash: c8e46dc763fdd7acdc079295c8e00ed111230480
+ms.sourcegitcommit: 0d8fb571024f134d7480fe14cffc5e31a687d356
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/28/2022
-ms.locfileid: "68096377"
+ms.lasthandoff: 10/20/2022
+ms.locfileid: "68647417"
 ---
 # <a name="how-do-protection-features-in-microsoft-365-business-premium-map-to-intune-settings"></a>Cómo se asignan las características de protección de Microsoft 365 Empresa Premium a la configuración de Intune
 
@@ -55,11 +55,11 @@ En **Administrar la forma en la que los usuarios obtienen acceso a los archivos 
 |Forzar el almacenamiento por parte de los usuarios de los archivos de trabajo en OneDrive para la Empresa  <br/> Tenga en cuenta que solo está permitido OneDrive para la Empresa  |Seleccione qué datos corporativos de servicios de almacenamiento se pueden guardar en  |
 |Cifrar los archivos de trabajo  |Cifrar los datos de la aplicación  |
 |En **Administrar la forma en la que los usuarios obtienen acceso a los archivos de Office desde dispositivos móviles** ||
-|Requerir una huella digital o un PIN para obtener acceso a las aplicaciones de Office  | Requiere un PIN para acceder  <br/>  Esto también establece:  <br/> **Permitir PIN simple** en **Sí** <br/> **Longitud del pin** en 4  <br/> **Permitir la firma digital en lugar de PIN** en **Sí** <br/> **Deshabilitar el PIN de aplicación cuando se administra el PIN del dispositivo** en **No** |
+|Requerir un PIN o una huella digital para acceder a las aplicaciones de Microsoft 365  | Requiere un PIN para acceder  <br/>  Esto también establece:  <br/> **Permitir PIN simple** en **Sí** <br/> **Longitud del pin** en 4  <br/> **Permitir la firma digital en lugar de PIN** en **Sí** <br/> **Deshabilitar el PIN de aplicación cuando se administra el PIN del dispositivo** en **No** |
 |Restablecer el PIN cuando no se pueda iniciar sesión este número de veces (esta opción está deshabilitada si el PIN no es necesario)  |Número de intentos antes de restablecimiento del PIN  |
-|Requerir que los usuarios inicien sesión de nuevo si las aplicaciones de Office han estado inactivas durante (esta opción está deshabilitada si el PIN no es necesario)  | Volver a revisar los requisitos de acceso después (minutos)  <br/>  Esto también establece:  <br/> **El tiempo de espera** se establece en minutos  <br/>  Este es el mismo número de minutos que estableció en Microsoft 365 Business.  <br/> **El período de gracia sin conexión** se establece en 720 minutos de forma predeterminada  |
+|Requerir que los usuarios vuelvan a iniciar sesión después de que las aplicaciones de Microsoft 365 estén inactivas para (esto está deshabilitado si no se requiere el PIN).  | Volver a revisar los requisitos de acceso después (minutos)  <br/>  Esto también establece:  <br/> **El tiempo de espera** se establece en minutos  <br/>  Este es el mismo número de minutos que estableció en Microsoft 365 Business.  <br/> **El período de gracia sin conexión** se establece en 720 minutos de forma predeterminada  |
 |Denegar el acceso a los archivos de trabajo en dispositivos con jailbreak o rooting  |Bloquear la ejecución de aplicaciones administradas en dispositivos con Jailbreak o rooting  |
-|Permitir a los usuarios copiar contenido de aplicaciones de Office en aplicaciones personales  | Restringir cortar, copiar y pegar con otras aplicaciones  <br/>  Si la opción Microsoft 365 Empresa Premium se establece en **Activada**, a continuación, estas tres opciones también se establecen en **Todas las aplicaciones** en Intune:  <br/> **Permitir a la aplicación transferir datos a otras aplicaciones** <br/> **Permitir a la aplicación recibir datos de otras aplicaciones** <br/> **Restringir cortar, copiar y pegar con otras aplicaciones** <br/>  Si la opción Microsoft 365 Business se establece en **Activar**, a continuación, todas las opciones de Intune se establecen en:  <br/> **Permitir a la aplicación transferir datos a otras aplicaciones** se establece en **Aplicaciones administradas de la directiva** <br/> **Permitir a la aplicación recibir datos de otras aplicaciones** se establece en **Todas las aplicaciones** <br/> **Restringir cortar, copiar y pegar con otras aplicaciones** se establece en **Aplicaciones administradas de la directiva con pegado en** |
+|Permitir a los usuarios copiar contenido de aplicaciones de Microsoft 365 en aplicaciones personales  | Restringir cortar, copiar y pegar con otras aplicaciones  <br/>  Si la opción Microsoft 365 Empresa Premium se establece en **Activada**, a continuación, estas tres opciones también se establecen en **Todas las aplicaciones** en Intune:  <br/> **Permitir a la aplicación transferir datos a otras aplicaciones** <br/> **Permitir a la aplicación recibir datos de otras aplicaciones** <br/> **Restringir cortar, copiar y pegar con otras aplicaciones** <br/>  Si la opción Microsoft 365 Business se establece en **Activar**, a continuación, todas las opciones de Intune se establecen en:  <br/> **Permitir a la aplicación transferir datos a otras aplicaciones** se establece en **Aplicaciones administradas de la directiva** <br/> **Permitir a la aplicación recibir datos de otras aplicaciones** se establece en **Todas las aplicaciones** <br/> **Restringir cortar, copiar y pegar con otras aplicaciones** se establece en **Aplicaciones administradas de la directiva con pegado en** |
    
 ## <a name="windows-10-app-protection-settings"></a>Configuración de protección de la aplicación de Windows 10
 
