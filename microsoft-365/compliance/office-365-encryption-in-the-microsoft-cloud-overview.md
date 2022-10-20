@@ -13,16 +13,17 @@ search.appverid:
 - MET150
 ms.collection:
 - Strat_O365_Enterprise
-- M365-security-compliance
+- purview-compliance
+- tier3
 - Strat_O365_Enterprise
 description: En este artículo, lea una introducción a las distintas formas de cifrado que se usan para mantener seguros los datos de los clientes en la nube de Microsoft.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 3105da5d17b1656ffa0d29da4f4aa02c9a9f9064
-ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
+ms.openlocfilehash: bc28109558cd48b8d78081b73c192f84910cc9ef
+ms.sourcegitcommit: 0d8fb571024f134d7480fe14cffc5e31a687d356
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/06/2022
-ms.locfileid: "66633925"
+ms.lasthandoff: 10/20/2022
+ms.locfileid: "68645010"
 ---
 # <a name="encryption-in-the-microsoft-cloud"></a>Cifrado en Microsoft Cloud
 
@@ -46,11 +47,13 @@ Microsoft certifica los módulos criptográficos subyacentes usados en nuestros 
 - Dynamics 365 y Dynamics 365 para la Administración Pública de Estados Unidos
 - Office 365, Office 365 Administración Pública para Estados Unidos y Office 365 U.S. Government Defense
 
-El cifrado de datos de cliente en reposo lo proporcionan varias tecnologías del lado del servicio, como BitLocker, DKM, Azure Storage Service Encryption y cifrado de servicios en Exchange Online, Skype Empresarial, OneDrive para la Empresa y SharePoint Online. Office 365 cifrado de servicio incluye una opción para usar claves de cifrado administradas por el cliente que se almacenan en Azure Key Vault. Esta opción de clave administrada por el cliente, denominada [Clave de cliente](./customer-key-overview.md), está disponible para Exchange Online, SharePoint Online, Skype Empresarial y OneDrive para la Empresa.
+El cifrado de datos de cliente en reposo lo proporcionan varias tecnologías del lado del servicio, como BitLocker, DKM, Azure Storage Service Encryption y cifrado de servicios en Exchange Online, Skype Empresarial, OneDrive para la Empresa y SharePoint Online. Office 365 cifrado de servicio incluye una opción para usar claves de cifrado administradas por el cliente que se almacenan en Azure कि भल्ट. Esta opción de clave administrada por el cliente, denominada [Clave de cliente](./customer-key-overview.md), está disponible para Exchange Online, SharePoint Online, Skype Empresarial y OneDrive para la Empresa.
 
 En el caso de los datos de clientes en tránsito, todos los servidores Office 365 negocian sesiones seguras mediante TLS de forma predeterminada con máquinas cliente para proteger los datos de los clientes. Por ejemplo, Office 365 negociará sesiones seguras para Skype Empresarial, Outlook y Outlook en la Web, clientes móviles y exploradores web.
 
 (Todos los servidores orientados al cliente negocian con TLS 1.2 de forma predeterminada).
+
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
 
 ## <a name="related-links"></a>Vínculos relacionados
 
