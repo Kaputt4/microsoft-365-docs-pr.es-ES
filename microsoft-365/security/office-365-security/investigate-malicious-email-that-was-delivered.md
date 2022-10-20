@@ -8,7 +8,7 @@ author: msfttracyp
 manager: dansimp
 ms.date: 12/16/2020
 audience: ITPro
-ms.topic: article
+ms.topic: conceptual
 ms.localizationpriority: medium
 search.appverid:
 - MET150
@@ -21,12 +21,12 @@ ms.custom:
 - seo-marvel-apr2020
 ms.subservice: mdo
 ms.service: microsoft-365-security
-ms.openlocfilehash: 5affd100b73478d1ee983b83dfdaea394a9d3acd
-ms.sourcegitcommit: 12af9e8e3a6eaa090fda9e98ccb831dff65863a4
+ms.openlocfilehash: 51060efdb350147364d5df6aa20d7d7ccb7817d8
+ms.sourcegitcommit: 0d8fb571024f134d7480fe14cffc5e31a687d356
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/27/2022
-ms.locfileid: "68092035"
+ms.lasthandoff: 10/20/2022
+ms.locfileid: "68628497"
 ---
 # <a name="investigate-malicious-email-that-was-delivered-in-microsoft-365"></a>Investigación del correo electrónico malintencionado que se entregó en Microsoft 365
 
@@ -62,7 +62,7 @@ Para realizar determinadas acciones, como ver encabezados de mensaje o descargar
 |---|---|---|
 |Uso del Explorador de amenazas (y detecciones en tiempo real) para analizar amenazas|Administrador global <p> Administrador de seguridad <p> Lector de seguridad|No|
 |Use el Explorador de amenazas (y las detecciones en tiempo real) para ver los encabezados de los mensajes de correo electrónico, así como obtener una vista previa y descargar los mensajes de correo electrónico en cuarentena.|Administrador global <p> Administrador de seguridad <p> Lector de seguridad|No|
-|Use el Explorador de amenazas para ver encabezados, obtener una vista previa del correo electrónico (solo en la página de la entidad de correo electrónico) y descargar los mensajes de correo electrónico entregados a los buzones.|Administrador global <p> Administrador de seguridad <p> Lector de seguridad <p> Preview|Yes|
+|Use el Explorador de amenazas para ver encabezados, obtener una vista previa del correo electrónico (solo en la página de la entidad de correo electrónico) y descargar los mensajes de correo electrónico entregados a los buzones.|Administrador global <p> Administrador de seguridad <p> Lector de seguridad <p> Preview|Sí|
 
 > [!NOTE]
 > **La versión preliminar** es un rol, no un grupo de roles. El rol de versión preliminar debe agregarse a un grupo de roles existente o a un nuevo grupo de roles en el portal de Microsoft 365 Defender. Para obtener más información, consulte [Permisos en el portal de Microsoft 365 Defender](permissions-microsoft-365-security-center.md).

@@ -23,12 +23,12 @@ search.appverid:
 - BCS160
 - MET150
 description: Información general sobre cómo configurar todos los BYOD (bring your own devices) con protección contra ciberataques y otras amenazas maliciosas y vulnerabilidades.
-ms.openlocfilehash: 33246deae1f9284e5168dd566468a46d4f20cb96
-ms.sourcegitcommit: 0283c436f3ba61a708b52b57a1955f5ea74376a3
+ms.openlocfilehash: e45c9840e2d884e1ec43d272348b33c67fd6601a
+ms.sourcegitcommit: 0d8fb571024f134d7480fe14cffc5e31a687d356
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/28/2022
-ms.locfileid: "68093768"
+ms.lasthandoff: 10/20/2022
+ms.locfileid: "68620841"
 ---
 # <a name="set-up-unmanaged-byod-devices"></a>Configuración de dispositivos (BYOD) no administrados 
 
@@ -39,7 +39,7 @@ Cada dispositivo es una posible vía de ataque en la red y debe supervisarse y a
 Sus objetivos son:
 
 - [Hacer que todos configuren MFA](m365bp-multifactor-authentication.md).
-- [Obtener aplicaciones de Office instaladas en dispositivos](m365bp-install-office-apps.md).
+- [Obtenga aplicaciones de Microsoft 365 instaladas en dispositivos](m365bp-install-office-apps.md).
 - [Dispositivos Windows y Mac no administrados protegidos](m365bp-protect-pcs-macs.md).
 
 Una vez que haya alcanzado estos objetivos, vaya a [Usar correo electrónico de forma segura](m365bp-protect-email-overview.md).

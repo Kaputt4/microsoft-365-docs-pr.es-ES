@@ -14,18 +14,18 @@ ms.author: v-jweston
 ms.reviewer: oogunrinde, sugamar,
 manager: dansimp
 ms.custom: asr
-ms.topic: article
+ms.topic: conceptual
 ms.collection:
 - m365-security
 - tier2
 ms.date: 08/25/2022
 search.appverid: met150
-ms.openlocfilehash: 87aafd6add0d75ec19a621ef46d7beed7cbbb5c6
-ms.sourcegitcommit: b9282493c371d59c2e583b9803825096499b5e2c
+ms.openlocfilehash: 71f3ca2deba321624c1ec529ea0a74c638b12638
+ms.sourcegitcommit: 0d8fb571024f134d7480fe14cffc5e31a687d356
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/29/2022
-ms.locfileid: "68148821"
+ms.lasthandoff: 10/20/2022
+ms.locfileid: "68631730"
 ---
 # <a name="attack-surface-reduction-asr-rules-report"></a>Informe de reglas de reducción de superficie expuesta a ataques (ASR)
 
@@ -76,7 +76,7 @@ Para acceder al **informe reglas de reducción de superficie expuesta a ataques*
 
 Para asignar estos permisos:
 
-1. Inicie sesión en <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">Microsoft 365 Defender</a> con una cuenta con el administrador de seguridad o Administrador global rol asignado.
+1. Inicie sesión en <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">Microsoft 365 Defender</a> con la cuenta con el rol Administrador de seguridad o Administrador global asignado.
 1. En el panel de navegación, seleccione **Configuración** \> **Roles de puntos** \> de conexión (en **Permisos**).
 1. Seleccione el rol que desea editar.
 1. Seleccione **Editar**.

@@ -15,7 +15,7 @@ ms.author: v-jweston
 ms.reviewer: oogunrinde, sugamar
 manager: dansimp
 ms.custom: asr
-ms.topic: article
+ms.topic: conceptual
 ms.collection:
 - m365-security
 - m365solution-asr-rules
@@ -23,12 +23,12 @@ ms.collection:
 - tier1
 ms.date: 09/18/2022
 search.appverid: met150
-ms.openlocfilehash: 5901bdcaa2f7d31a77db19f11a4caf9bb31dd6b6
-ms.sourcegitcommit: 7828a1e78c3e6bd8d10289f1ad6c8b6769da0966
+ms.openlocfilehash: 4506ef953ba543ed5f45046cffc1fcfad49077e4
+ms.sourcegitcommit: 0d8fb571024f134d7480fe14cffc5e31a687d356
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/07/2022
-ms.locfileid: "68495217"
+ms.lasthandoff: 10/20/2022
+ms.locfileid: "68630652"
 ---
 # <a name="attack-surface-reduction-asr-rules-deployment-overview"></a>Introducción a la implementación de reglas de reducción de la superficie expuesta a ataques (ASR)
 
@@ -111,7 +111,7 @@ Aunque son posibles varios métodos de implementación de reglas ASR, esta guía
 Para aprovechar al máximo las reglas de ASR y los informes, se recomienda usar una licencia Microsoft 365 Defender E5 o Windows E5 y A5. Más información: [Requisitos mínimos para Microsoft Defender para punto de conexión](minimum-requirements.md).
 
 >[!Note]
->Hay varios métodos para configurar reglas de ASR. Las reglas de ASR se pueden configurar mediante: Microsoft Endpoint Manager (MEM), PowerShell, directiva de grupo, Microsoft System Center Configuration Manager (SCCM), MEM OMA-URI.
+>Hay varios métodos para configurar reglas de ASR. Las reglas de ASR se pueden configurar mediante: Microsoft Endpoint Manager (MEM), PowerShell, समूह नीति, Microsoft System Center Configuration Manager (SCCM), MEM OMA-URI.
 >Si usa una configuración de infraestructura diferente a la que aparece para _requisitos de infraestructura_ (anterior), puede obtener más información sobre la implementación de reglas de reducción de superficie expuesta a ataques mediante otras configuraciones aquí: [Habilitar reglas de reducción de superficie expuesta a ataques](enable-attack-surface-reduction.md).  
 
 ### <a name="asr-rules-dependencies"></a>Dependencias de reglas de ASR

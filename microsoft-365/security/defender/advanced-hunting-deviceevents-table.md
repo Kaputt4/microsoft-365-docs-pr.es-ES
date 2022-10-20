@@ -19,13 +19,13 @@ audience: ITPro
 ms.collection:
 - m365-security
 - tier3
-ms.topic: article
-ms.openlocfilehash: e5736296499cdf9ce63ead7b57505c9751c8c436
-ms.sourcegitcommit: 12af9e8e3a6eaa090fda9e98ccb831dff65863a4
+ms.topic: conceptual
+ms.openlocfilehash: 6f27f6a3a72be07388491b5968371ddde43b43df
+ms.sourcegitcommit: 0d8fb571024f134d7480fe14cffc5e31a687d356
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/27/2022
-ms.locfileid: "68051792"
+ms.lasthandoff: 10/20/2022
+ms.locfileid: "68625531"
 ---
 # <a name="deviceevents"></a>DeviceEvents
 
@@ -63,7 +63,7 @@ Para obtener información sobre otras tablas del esquema de búsqueda avanzada, 
 | `ProcessId` | `int` | Identificador de proceso (PID) del proceso recién creado |
 | `ProcessCommandLine` | `string` | Línea de comandos usada para crear el nuevo proceso |
 | `ProcessCreationTime` | `datetime` | Fecha y hora en que se creó el proceso |
-| `ProcessTokenElevation` | `string` | Tipo de token que indica la presencia o ausencia de elevación de privilegios de Access Control de usuario (UAC) aplicada al proceso recién creado |
+| `ProcessTokenElevation` | `string` | Tipo de token que indica la presencia o ausencia de elevación de privilegios del Control de acceso de usuario (UAC) aplicada al proceso recién creado |
 | `LogonId` | `string` | Identificador de una sesión de inicio de sesión. Este identificador es único en la misma máquina solo entre reinicios |
 | `RegistryKey` | `string` | Clave del Registro a la que se aplicó la acción registrada |
 | `RegistryValueName` | `string` | Nombre del valor del Registro al que se aplicó la acción registrada |

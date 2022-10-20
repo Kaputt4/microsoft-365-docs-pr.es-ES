@@ -11,17 +11,18 @@ author: denisebmsft
 ms.author: deniseb
 ms.reviewer: pahuijbr
 manager: dansimp
-ms.topic: article
+ms.topic: conceptual
 ms.date: 10/10/2022
 ms.collection:
-- M365-security-compliance
+- m365-security
+- tier2
 - m365initiative-defender-endpoint
-ms.openlocfilehash: 74d56fe8f7c2ceeee23017a7932cd642438a3a69
-ms.sourcegitcommit: 8d3c027592a638f411f87d89772dd3d39e92aab0
+ms.openlocfilehash: f93485e5c184a2cedc4ca3458e8d8c1d563236a9
+ms.sourcegitcommit: 0d8fb571024f134d7480fe14cffc5e31a687d356
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/12/2022
-ms.locfileid: "68536200"
+ms.lasthandoff: 10/20/2022
+ms.locfileid: "68620973"
 ---
 # <a name="microsoft-defender-antivirus-on-windows-server"></a>Antivirus de Microsoft Defender en Windows Server
 
@@ -55,14 +56,14 @@ El proceso de configuración y ejecución de Microsoft Defender Antivirus en Win
 > [!IMPORTANT]
 > Si usa Windows Server 2012 R2, consulte [Opciones para instalar Microsoft Defender para punto de conexión](configure-server-endpoints.md#options-to-install-the-microsoft-defender-for-endpoint-packages).
 
-De forma predeterminada, Microsoft Defender Antivirus está instalado y funciona en Windows Server. A veces, la interfaz de usuario (GUI) se instala de forma predeterminada. La GUI no es necesaria; puede usar PowerShell, directiva de grupo u otros métodos para administrar Microsoft Defender Antivirus. Sin embargo, muchas organizaciones prefieren usar la GUI para Microsoft Defender Antivirus. Para instalar la GUI, use uno de los procedimientos de la tabla siguiente:
+De forma predeterminada, Microsoft Defender Antivirus está instalado y funciona en Windows Server. A veces, la interfaz de usuario (GUI) se instala de forma predeterminada. La GUI no es necesaria; puede usar PowerShell, समूह नीति u otros métodos para administrar Microsoft Defender Antivirus. Sin embargo, muchas organizaciones prefieren usar la GUI para Microsoft Defender Antivirus. Para instalar la GUI, use uno de los procedimientos de la tabla siguiente:
 
 | Procedure | Qué hacer |
 |:---|:---|
-| Active la GUI mediante el Asistente para agregar roles y características. | 1. Vea [Instalar roles, servicios de roles y características mediante el Asistente para agregar roles y características](/windows-server/administration/server-manager/install-or-uninstall-roles-role-services-or-features#install-roles-role-services-and-features-by-using-the-add-roles-and-features-wizard), y use el **Asistente para agregar roles y características**. <br/><br/>2. Cuando llegue al paso **Características** del asistente, en **características de Windows Defender**, seleccione la **guia para Windows Defender** opción. |
+| Active la GUI mediante el Asistente para agregar roles y características. | 1. Vea [Instalar roles, servicios de roles y características mediante el Asistente para agregar roles y características](/windows-server/administration/server-manager/install-or-uninstall-roles-role-services-or-features#install-roles-role-services-and-features-by-using-the-add-roles-and-features-wizard), y use el **Asistente para agregar roles y características**. <br/><br/>2. Cuando llegue al paso **Características** del asistente, en **características de Windows डिफेन्डर**, seleccione la **guia para Windows डिफेन्डर** opción. |
 | Activar la GUI mediante PowerShell | 1. En windows Server, abra Windows PowerShell como administrador. <br/><br/>2. Ejecute el siguiente cmdlet de PowerShell: `Install-WindowsFeature -Name Windows-Defender-GUI` |
 
-Para obtener más información, consulte [Introducción con PowerShell](/powershell/scripting/learn/ps101/01-getting-started).
+Para obtener más información, consulte [Introducción a PowerShell](/powershell/scripting/learn/ps101/01-getting-started).
 
 ## <a name="install-microsoft-defender-antivirus-on-windows-server"></a>Instalación de Microsoft Defender Antivirus en Windows Server
 
@@ -70,7 +71,7 @@ Si necesita instalar o reinstalar Microsoft Defender Antivirus en Windows Server
 
 | Procedure | Qué hacer |
 |:---|:---|
-| Use el Asistente para agregar roles y características para instalar Microsoft Defender Antivirus | 1. Vea [Instalar o desinstalar roles, servicios de rol o características](/windows-server/administration/server-manager/install-or-uninstall-roles-role-services-or-features#install-roles-role-services-and-features-by-using-the-add-roles-and-features-wizard), y use el **Asistente para agregar roles y características**. <br/><br/>2. Cuando llegue al paso **Características** del asistente, seleccione la opción Microsoft Defender Antivirus. Seleccione también la opción **GUI para Windows Defender**. |
+| Use el Asistente para agregar roles y características para instalar Microsoft Defender Antivirus | 1. Vea [Instalar o desinstalar roles, servicios de rol o características](/windows-server/administration/server-manager/install-or-uninstall-roles-role-services-or-features#install-roles-role-services-and-features-by-using-the-add-roles-and-features-wizard), y use el **Asistente para agregar roles y características**. <br/><br/>2. Cuando llegue al paso **Características** del asistente, seleccione la opción Microsoft Defender Antivirus. Seleccione también la **opción GUI para Windows डिफेन्डर**. |
 | Uso de PowerShell para instalar Microsoft Defender Antivirus | 1. En windows Server, abra Windows PowerShell como administrador. <br/><br/>2. Ejecute el siguiente cmdlet de PowerShell: `Install-WindowsFeature -Name Windows-Defender` |
 
 > [!NOTE]
@@ -102,9 +103,9 @@ sc query state= all
 ## <a name="update-antimalware-security-intelligence"></a>Actualización de la inteligencia de seguridad antimalware
 
 > [!IMPORTANT]
-> A partir de la [versión de la plataforma 4.18.2208.0 y versiones posteriores](manage-updates-baselines-microsoft-defender-antivirus.md#monthly-platform-and-engine-versions): si un servidor se ha incorporado a Microsoft Defender para punto de conexión, la configuración de directiva de [grupo](configure-endpoints-gp.md#update-endpoint-protection-configuration) "Desactivar Windows Defender" ya no deshabilitará completamente Windows Defender Antivirus activado. Windows Server 2012 R2 y versiones posteriores. En su lugar, lo colocará en modo pasivo. Además, la característica de [protección contra alteraciones](prevent-changes-to-security-settings-with-tamper-protection.md) permitirá cambiar al modo activo, pero no al modo pasivo.
+> A partir de la [versión de plataforma 4.18.2208.0 y versiones posteriores](manage-updates-baselines-microsoft-defender-antivirus.md#monthly-platform-and-engine-versions): si se ha incorporado un servidor a Microsoft Defender para punto de conexión, la configuración de directiva de [grupo](configure-endpoints-gp.md#update-endpoint-protection-configuration) "Desactivar Windows डिफेन्डर" ya no deshabilitará completamente Windows डिफेन्डर Antivirus activado. Windows Server 2012 R2 y versiones posteriores. En su lugar, lo colocará en modo pasivo. Además, la característica de [protección contra alteraciones](prevent-changes-to-security-settings-with-tamper-protection.md) permitirá cambiar al modo activo, pero no al modo pasivo.
 > 
-> - Si ya se ha implementado "Desactivar Windows Defender" antes de incorporarse a Microsoft Defender para punto de conexión, no habrá ningún cambio y Antivirus de Defender permanecerá deshabilitado.
+> - Si "Desactivar Windows डिफेन्डर" ya está en vigor antes de incorporarse a Microsoft Defender para punto de conexión, no habrá ningún cambio y Antivirus de Defender permanecerá deshabilitado.
 > - Para cambiar antivirus de Defender al modo pasivo, incluso si se deshabilitó antes de la incorporación, puede aplicar la [configuración de ForceDefenderPassiveMode](switch-to-mde-phase-2.md#set-microsoft-defender-antivirus-to-passive-mode-on-windows-server) con un valor de `1`. Para colocarlo en modo activo, cambie este valor a `0` en su lugar.
 > 
 > Tenga en cuenta la lógica modificada para `ForceDefenderPassiveMode` cuando se habilita la protección contra alteraciones: una vez que Microsoft Defender Antivirus cambia al modo activo, la protección contra alteraciones impedirá que vuelva al modo pasivo incluso cuando `ForceDefenderPassiveMode` se establezca en `1`.
@@ -115,9 +116,9 @@ De forma predeterminada, Windows Update no descarga ni instala actualizaciones a
 
 | Método | Descripción |
 |---|---|
-| **Windows Update** en Panel de control | **La instalación de actualizaciones provoca que** todas las actualizaciones se instalen automáticamente, incluidas Windows Defender actualizaciones de inteligencia de seguridad. <br/><br/> **Descargue las actualizaciones, pero permítanme elegir si instalarlas permite Windows Defender** descargar e instalar actualizaciones de Inteligencia de seguridad automáticamente, pero otras actualizaciones no se instalan automáticamente. |
-| **Directiva de grupo** | Puede configurar y administrar Windows Update mediante la configuración disponible en directiva de grupo, en la ruta de acceso siguiente: **Plantillas administrativas\Componentes de Windows\Windows Update\Configurar Novedades automático** |
-| Clave del Registro **AUOptions** | Los dos valores siguientes permiten Windows Update descargar e instalar automáticamente las actualizaciones de Inteligencia de seguridad: <br/><br/> **4** -  **Instale las actualizaciones automáticamente**. Este valor hace que todas las actualizaciones se instalen automáticamente, incluidas Windows Defender actualizaciones de inteligencia de seguridad. <br/><br/> **3** -  **Descargue las actualizaciones, pero permítanme elegir si desea instalarlas**. Este valor permite Windows Defender descargar e instalar actualizaciones de Inteligencia de seguridad automáticamente, pero otras actualizaciones no se instalan automáticamente. |
+| **Windows Update** en el Panel de control | **La instalación de actualizaciones provoca que** todas las actualizaciones se instalen automáticamente, incluidas Windows डिफेन्डर actualizaciones de inteligencia de seguridad. <br/><br/> **Descargue las actualizaciones, pero permítanme elegir si instalarlas permite Windows डिफेन्डर** descargar e instalar actualizaciones de Inteligencia de seguridad automáticamente, pero otras actualizaciones no se instalan automáticamente. |
+| **Directiva de grupo** | Puede configurar y administrar Windows Update mediante la configuración disponible en समूह नीति, en la ruta de acceso siguiente: **Plantillas administrativas\Componentes de Windows\Windows Update\Configurar Novedades automático** |
+| Clave del Registro **AUOptions** | Los dos valores siguientes permiten Windows Update descargar e instalar automáticamente las actualizaciones de Inteligencia de seguridad: <br/><br/> **4** -  **Instale las actualizaciones automáticamente**. Este valor hace que todas las actualizaciones se instalen automáticamente, incluidas Windows डिफेन्डर actualizaciones de inteligencia de seguridad. <br/><br/> **3** -  **Descargue las actualizaciones, pero permítanme elegir si desea instalarlas**. Este valor permite Windows डिफेन्डर descargar e instalar actualizaciones de Inteligencia de seguridad automáticamente, pero otras actualizaciones no se instalan automáticamente. |
 
 Para asegurarse de que se mantiene la protección contra malware, habilite los siguientes servicios:
 
@@ -128,9 +129,9 @@ En la tabla siguiente se enumeran los servicios de Microsoft Defender Antivirus 
 
 | Nombre del servicio | Ubicación del archivo | Descripción |
 |---|---|---|
-| Windows Defender Service (WinDefend) | `C:\Program Files\Windows Defender\MsMpEng.exe` | Este servicio es el principal Microsoft Defender servicio antivirus que debe ejecutarse siempre.|
+| Windows डिफेन्डर Service (WinDefend) | `C:\Program Files\Windows Defender\MsMpEng.exe` | Este servicio es el principal Microsoft Defender servicio antivirus que debe ejecutarse siempre.|
 | servicio Informe de errores de Windows (Wersvc) | `C:\WINDOWS\System32\svchost.exe -k WerSvcGroup` | Este servicio envía informes de errores a Microsoft. |
-| firewall de Windows Defender (MpsSvc) | `C:\WINDOWS\system32\svchost.exe -k LocalServiceNoNetwork` | Se recomienda mantener habilitado el servicio firewall de Windows Defender. |
+| firewall de Windows डिफेन्डर (MpsSvc) | `C:\WINDOWS\system32\svchost.exe -k LocalServiceNoNetwork` | Se recomienda mantener habilitado el servicio firewall de Windows डिफेन्डर. |
 | Windows Update (Wuauserv) | `C:\WINDOWS\system32\svchost.exe -k netsvcs`| Windows Update es necesario para obtener actualizaciones de inteligencia de seguridad y actualizaciones del motor antimalware |
 
 ## <a name="submit-samples"></a>Envío de ejemplos
@@ -177,9 +178,9 @@ En la tabla siguiente se describen los métodos para establecer Microsoft Defend
 | Establecer Microsoft Defender Antivirus en modo pasivo mediante una clave del Registro | Establezca la clave del `ForceDefenderPassiveMode` Registro como se indica a continuación: <br/>-Camino: `HKLM\SOFTWARE\Policies\Microsoft\Windows Advanced Threat Protection` <br/>-Nombre: `ForceDefenderPassiveMode` <br/>-Tipo: `REG_DWORD` <br/>-Valor: `1` |
 | Desactivar la interfaz de usuario Microsoft Defender Antivirus mediante PowerShell | Abra Windows PowerShell como administrador y ejecute el siguiente cmdlet de PowerShell:`Uninstall-WindowsFeature -Name Windows-Defender-GUI`
 | Deshabilitación de Microsoft Defender Antivirus mediante PowerShell | Use el siguiente cmdlet de PowerShell: `Set-MpPreference -DisableRealtimeMonitoring $true` |
-| Deshabilitar Microsoft Defender Antivirus mediante el Asistente para quitar roles y características | Consulte [Instalar o desinstalar roles, servicios de rol o características](/windows-server/administration/server-manager/install-or-uninstall-roles-role-services-or-features#remove-roles-role-services-and-features-by-using-the-remove-roles-and-features-wizard) y usar el **Asistente para quitar roles y características**. <br/><br/>Cuando llegue al paso **Características** del asistente, desactive la opción **características de Windows Defender**. <br/><br/> Si borra **Windows Defender** por sí mismo en la sección **características de Windows Defender**, se le pedirá que quite la GUI de la opción de interfaz **para Windows Defender**.<br/><br/>Microsoft Defender Antivirus seguirá ejecutándose normalmente sin la interfaz de usuario, pero la interfaz de usuario no se puede habilitar si deshabilita la característica **de Windows Defender** principal. |
+| Deshabilitar Microsoft Defender Antivirus mediante el Asistente para quitar roles y características | Consulte [Instalar o desinstalar roles, servicios de rol o características](/windows-server/administration/server-manager/install-or-uninstall-roles-role-services-or-features#remove-roles-role-services-and-features-by-using-the-remove-roles-and-features-wizard) y usar el **Asistente para quitar roles y características**. <br/><br/>Cuando llegue al paso **Características** del asistente, desactive la opción **características de Windows डिफेन्डर**. <br/><br/> Si borra **Windows डिफेन्डर** por sí mismo en la sección **características de Windows डिफेन्डर**, se le pedirá que quite la GUI de la opción de interfaz **para Windows डिफेन्डर**.<br/><br/>Microsoft Defender Antivirus seguirá ejecutándose normalmente sin la interfaz de usuario, pero la interfaz de usuario no se puede habilitar si deshabilita la característica **de Windows डिफेन्डर** principal. |
 | Desinstalación de Microsoft Defender Antivirus mediante PowerShell | Use el siguiente cmdlet de PowerShell: `Uninstall-WindowsFeature -Name Windows-Defender` |
-| Deshabilite Microsoft Defender Antivirus mediante directiva de grupo | En el Editor de directiva de grupo local, vaya a **Plantilla** >  administrativa **Windows Component** > **Endpoint Protection** > **Disable Endpoint Protection (Deshabilitar Endpoint Protection**) y, a continuación, seleccione Enabled **OK (Aceptar** **habilitado).** >  |
+| Deshabilite Microsoft Defender Antivirus mediante समूह नीति | En el Editor de समूह नीति local, vaya a **Plantilla** >  administrativa **Windows Component** > **Endpoint Protection****Disable Endpoint Protection (Deshabilitar** >  Endpoint Protection) y, a continuación, seleccione Enabled **OK (Aceptar** **habilitado).** >  |
 
 Para obtener más información, vea [Trabajar con claves del Registro](/powershell/scripting/samples/working-with-registry-keys).
 

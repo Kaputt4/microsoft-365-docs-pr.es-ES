@@ -15,16 +15,16 @@ audience: ITPro
 ms.collection:
 - m365-security
 - tier3
-ms.topic: article
+ms.topic: conceptual
 ms.subservice: mde
 ms.custom: api
 search.appverid: met150
-ms.openlocfilehash: d42ce35522f42026e503f47d21f9c49fa5273c42
-ms.sourcegitcommit: 0b7070ec119e00e0dafe030bbfbef0ae5c9afa19
+ms.openlocfilehash: cfcb516de769968ba8ecb53f615d3d2414ccdafc
+ms.sourcegitcommit: 0d8fb571024f134d7480fe14cffc5e31a687d356
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/29/2022
-ms.locfileid: "68189811"
+ms.lasthandoff: 10/20/2022
+ms.locfileid: "68630521"
 ---
 # <a name="partner-access-through-microsoft-defender-for-endpoint-apis"></a>Acceso de asociados a través de api de Microsoft Defender para punto de conexión
 
@@ -62,7 +62,7 @@ Los pasos siguientes le guiarán para crear una aplicación de Azure AD, obtener
 
 1. Inicie sesión en el [inquilino de Azure](https://portal.azure.com) con un usuario que tenga el rol **de administrador global** .
 
-2. Vaya a **Azure Active Directory** \> **Registros de aplicaciones** \> **Nuevo registro**.
+2. Vaya a Registros \> **de aplicaciones** de **Azure Active Directory** \> **Nuevo registro**.
 
    :::image type="content" source="images/atp-azure-new-app2.png" alt-text="Panel de navegación al registro de aplicaciones" lightbox="images/atp-azure-new-app2.png":::
 

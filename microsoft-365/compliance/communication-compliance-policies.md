@@ -19,17 +19,17 @@ ms.collection:
 search.appverid:
 - MET150
 - MOE150
-ms.openlocfilehash: 2f64d869ce6a362e543a78fa4f9e390a4ae7f891
-ms.sourcegitcommit: 1f4c51d022d1cfb6c194bf0f0af9c2841c781d68
+ms.openlocfilehash: 684fbfde05c334ffadae16bae7e5c613e7fc8589
+ms.sourcegitcommit: 0d8fb571024f134d7480fe14cffc5e31a687d356
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/14/2022
-ms.locfileid: "68574063"
+ms.lasthandoff: 10/20/2022
+ms.locfileid: "68636702"
 ---
 # <a name="create-and-manage-communication-compliance-policies"></a>Crear y administrar directivas de cumplimiento de comunicaciones
 
->[!IMPORTANT]
->Cumplimiento de comunicaciones de Microsoft Purview proporciona las herramientas para ayudar a las organizaciones a detectar infracciones de cumplimiento normativo (por ejemplo, SEC o FINRA), como información confidencial o confidencial, hostigamiento o amenazante del lenguaje y uso compartido de contenido para adultos. Creados con privacidad por diseño, los nombres de usuario se seudonimizan de forma predeterminada, los controles de acceso basados en roles se integran, los investigadores son admitidos por un administrador y los registros de auditoría están en vigor para garantizar la privacidad del nivel de usuario.
+> [!IMPORTANT]
+> Cumplimiento de comunicaciones de Microsoft Purview proporciona las herramientas para ayudar a las organizaciones a detectar infracciones de cumplimiento normativo (por ejemplo, SEC o FINRA), como información confidencial o confidencial, hostigamiento o amenazante del lenguaje y uso compartido de contenido para adultos. Creados con privacidad por diseño, los nombres de usuario se seudonimizan de forma predeterminada, los controles de acceso basados en roles se integran, los investigadores son admitidos por un administrador y los registros de auditoría están en vigor para garantizar la privacidad del nivel de usuario.
 
 [!INCLUDE [purview-preview](../includes/purview-preview.md)]
 
@@ -63,13 +63,13 @@ Como parte de una defensa por capas para detectar y corregir mensajes inadecuado
 
 Habilitada de forma predeterminada en el [Centro de administración de Teams](/microsoftteams/manage-teams-in-modern-portal), la opción *Notificar una preocupación* en los mensajes de Teams permite a los usuarios de su organización enviar mensajes de chat internos y de grupo inadecuados para que los revisores de cumplimiento de comunicaciones revisen la directiva. Estos mensajes son compatibles con una directiva de sistema predeterminada que admite la generación de informes de mensajes en grupos de Teams y chats privados.
 
-![Cumplimiento de comunicaciones Informe de un problema.](../media/communication-compliance-report-a-concern-full-menu.png)
+![Informe de cumplimiento de comunicaciones](../media/communication-compliance-report-a-concern-full-menu.png)
 
 Cuando un usuario envía un mensaje de chat de Teams para su revisión, el mensaje se copia en la directiva de mensajes notificados por el usuario. Los mensajes notificados inicialmente permanecen visibles para todos los miembros del chat y no hay ninguna notificación a los miembros del chat o al remitente de que se ha notificado un mensaje en chats de canal, privados o grupales. Un usuario no puede notificar el mismo mensaje más de una vez y el mensaje permanece visible para todos los usuarios incluidos en la sesión de chat durante el proceso de revisión de directivas.
 
 Durante el proceso de revisión, los revisores de cumplimiento de comunicaciones pueden realizar todas las [acciones de corrección](/microsoft-365/compliance/communication-compliance-investigate-remediate#step-3-decide-on-a-remediation-action) estándar en el mensaje, incluida la eliminación del mensaje del chat de Teams. En función de cómo se corrija el mensaje, el remitente y los destinatarios del mensaje verán diferentes [mensajes de notificación](/microsoftteams/communication-compliance#act-on-inappropriate-messages-in-microsoft-teams) en los chats de Teams después de la revisión.
 
-![Directiva de mensajes notificados por el usuario de cumplimiento de comunicaciones.](../media/communication-compliance-user-reported-messages-policy.png)
+![Directiva de mensajes notificados por el usuario de cumplimiento de comunicaciones](../media/communication-compliance-user-reported-messages-policy.png)
 
 Los mensajes notificados por el usuario de los chats de Teams son los únicos mensajes procesados por la directiva de mensajes notificados por el usuario y solo se pueden modificar los revisores asignados para la directiva. Todas las demás propiedades de directiva no son editables. Cuando se crea la directiva, los revisores iniciales asignados a la directiva son todos miembros del grupo de roles *Administradores de cumplimiento de comunicaciones* (si se rellenan con al menos un usuario) o todos los miembros del grupo de roles *global Administración* de la organización. El creador de directivas es un usuario seleccionado aleatoriamente del grupo de roles *Administradores de cumplimiento de comunicaciones* (si se rellena con al menos un usuario) o un usuario seleccionado aleatoriamente del grupo de roles *Global Administración* de la organización.  
 
@@ -162,8 +162,8 @@ Para identificar una directiva anterior, revise *la columna Último examen de di
 
 Cada directiva de cumplimiento de comunicaciones tiene un tamaño de límite de almacenamiento de 100 GB o 1 millón de mensajes, lo que se alcance primero. A medida que la directiva se acerca a estos límites, los correos electrónicos de notificación se envían automáticamente a los usuarios *asignados* a los grupos de roles *Administradores de cumplimiento de comunicaciones* o cumplimiento de comunicaciones. Los mensajes de notificaciones se envían cuando el tamaño de almacenamiento o el recuento de mensajes alcanzan el 80, el 90 y el 95 por ciento del límite. Cuando se alcanza el límite de directivas, la directiva se desactiva automáticamente y la directiva deja de procesar mensajes para las alertas.
 
->[!IMPORTANT]
->Si se desactiva una directiva debido a que se alcanzan los límites de almacenamiento y mensajes, asegúrese de evaluar cómo administrar la directiva desactivada. Si elimina la directiva, todos los mensajes, los datos adjuntos asociados y las alertas de mensajes se eliminarán permanentemente. Si necesita mantener estos elementos para su uso futuro, no elimine la directiva desactivada.
+> [!IMPORTANT]
+> Si se desactiva una directiva debido a que se alcanzan los límites de almacenamiento y mensajes, asegúrese de evaluar cómo administrar la directiva desactivada. Si elimina la directiva, todos los mensajes, los datos adjuntos asociados y las alertas de mensajes se eliminarán permanentemente. Si necesita mantener estos elementos para su uso futuro, no elimine la directiva desactivada.
 
 Para administrar directivas que se acercan a los límites de almacenamiento y mensajes, considere la posibilidad de realizar una copia de la directiva para mantener la continuidad de la cobertura o realizar las siguientes acciones para ayudar a minimizar el tamaño de almacenamiento de directivas y los recuentos de mensajes actuales:
 
@@ -205,21 +205,34 @@ Configure diccionarios de palabras clave personalizadas (o léxicos) para propor
 
 ### <a name="classifiers"></a>Clasificadores
 
-[Los clasificadores integrados y globales](/microsoft-365/compliance/classifier-learn-about) examinan los mensajes enviados o recibidos en todos los canales de comunicación de la organización para detectar diferentes tipos de problemas de cumplimiento. Los clasificadores usan una combinación de inteligencia artificial y de palabras clave para identificar lenguaje en los mensajes que es probable que infrinja las directivas contra el acoso.
+[Los clasificadores globales y entrenables integrados](/microsoft-365/compliance/classifier-learn-about) inspeccionan los mensajes enviados o recibidos en todos los canales de comunicación de la organización para detectar diferentes tipos de problemas de cumplimiento. Los clasificadores usan una combinación de inteligencia artificial y de palabras clave para identificar lenguaje en los mensajes que es probable que infrinja las directivas contra el acoso. 
 
-El cumplimiento de comunicaciones usa clasificadores globales y entrenables integrados para examinar las comunicaciones en busca de términos, imágenes y opiniones de los siguientes tipos de lenguaje y contenido:
+Las directivas que usan clasificadores inspeccionarán y evaluarán los mensajes con un recuento de palabras de seis o más. Los mensajes que contienen menos de seis palabras no se evalúan en las directivas mediante clasificadores. Para identificar y tomar medidas en los mensajes más cortos que contienen contenido inadecuado, se recomienda incluir un diccionario de palabras clave personalizado para las directivas de cumplimiento de comunicaciones que detecten este tipo de contenido.
 
-- **Imágenes para adultos**: busca imágenes que sean sexualmente explícitas en la naturaleza.
-- **Quejas de clientes**: examina los comentarios y las quejas realizadas sobre los productos o servicios de su organización.
-- **Discriminación**: busca un lenguaje discriminatorio explícito y es particularmente sensible al lenguaje discriminatorio contra las comunidades afroamericanas y negras en comparación con otras comunidades.
-- **Imágenes de Gory**: busca imágenes que represente la violencia y el gore.
-- **Acoso**: busca conductas ofensivas dirigidas a personas relacionadas con la raza, el color, la religión, el origen nacional.
-- **Blasfemia**: busca expresiones soeces que avergüencen a la mayoría de las personas.
-- **Imágenes de Racy**: busca imágenes que son sexualmente sugerentes en la naturaleza, pero que contienen contenido menos explícito que las imágenes que se consideran adultos.
-- **Amenaza**: busca amenazas para cometer violencia o daños físicos a una persona o propiedad.
+El cumplimiento de comunicaciones puede usar clasificadores globales y entrenables integrados específicos para inspeccionar las comunicaciones de los siguientes tipos de lenguaje y contenido:
+
+|**Clasificador**|**Descripción**|
+|:-------------|:--------------|
+| **Imágenes para adultos** | Detecta imágenes que son potencialmente explícitas sexualmente por naturaleza. |
+| **Sabotaje corporativo (versión preliminar)** | Detecta mensajes que pueden mencionar actos que dañan o destruyen activos o propiedades corporativos. Este clasificador puede ayudar a los clientes a administrar las obligaciones de cumplimiento normativo, como los estándares de protección de infraestructura crítica de NERC o las regulaciones estatales como el Capítulo 9.05 RCW en el estado de Washington.  |
+| **Quejas de clientes (versión preliminar)** | Detecta mensajes que pueden sugerir quejas de clientes realizadas en los productos o servicios de su organización, según lo exija la ley para los sectores regulados. Este clasificador puede ayudar a los clientes a administrar las obligaciones de cumplimiento normativo, como la Regla FINRA 4530, FINRA 4513, FINRA 2111, Consumer Financial Protection Bureau, Code of Federal Regulations Title 21: Food and Drugs, and the Federal Trade Commission Act.  |
+| **Discriminación** | Detecta un lenguaje discriminatorio potencialmente explícito y es particularmente sensible al lenguaje discriminatorio contra las comunidades afroamericanas y negras en comparación con otras comunidades. |
+| **Regalos & entretenimiento (versión preliminar)** | Detecta mensajes que pueden sugerir intercambiar regalos o entretenimiento a cambio de servicio, lo que infringe las regulaciones relacionadas con el cohecho. Este clasificador puede ayudar a los clientes a administrar las obligaciones de cumplimiento normativo, como la Ley de Prácticas Corruptas Extranjeras (FCPA), la Ley de Cohecho del Reino Unido y la Regla FINRA 2320.  |
+| **Imágenes de Gory** | Detecta imágenes que potencialmente representan violencia y sangre. |
+| **Acoso** | Detecta conductas potencialmente ofensivas dirigidas a personas relacionadas con la raza, el color, la religión, el origen nacional. |
+| **Lavado de dinero (versión preliminar)** | Detecta signos que pueden sugerir lavado de dinero o participación en actos para ocultar o ocultar el origen o destino de los ingresos. Este clasificador puede ayudar a los clientes a administrar las obligaciones de cumplimiento normativo, como la Ley de Secreto Bancario, la Ley Patriota de EE. UU., la Regla FINRA 3310 y la Ley contra el Lavado de Dinero de 2020. |
+| **Lenguaje soez** | Detecta expresiones potencialmente soeces que avergüenzan a la mayoría de las personas. |
+| **Imágenes de Racy** | Detecta imágenes que son potencialmente sugerentes sexualmente por naturaleza, pero contienen contenido menos explícito que las imágenes que se consideran adultos. |
+| **Connivencia normativa (versión preliminar)** | Detecta mensajes que pueden infringir los requisitos normativos contra la colusión, como un intento de ocultación de información confidencial. Este clasificador puede ayudar a los clientes a administrar las obligaciones de cumplimiento normativo, como la Ley Antimonopolio Sherman, la Ley de Intercambio de Valores de 1933, la Ley de Intercambio de Valores de 1934, la Ley de Asesores de Inversión de 1940, la Ley de la Comisión Federal y la Ley de Robinson-Patman. |
+| **Manipulación de stock (versión preliminar)** | Detecta signos de posible manipulación bursátil, como recomendaciones para comprar, vender o mantener acciones que puedan sugerir un intento de manipular el precio de las acciones. Este clasificador puede ayudar a los clientes a administrar las obligaciones de cumplimiento normativo, como la Ley de Intercambio de Valores de 1934, la Regla FINRA 2372 y la Regla FINRA 5270. |
+| **Amenaza** | Detecta posibles amenazas para cometer violencia o daños físicos a una persona o propiedad. |
+| **Divulgación no autorizada (versión preliminar)** | Detecta el uso compartido de información que contiene contenido que se designa explícitamente como confidencial o interno para personas no autorizadas.Este clasificador puede ayudar a los clientes a administrar las obligaciones de cumplimiento normativo, como la regla FINRA 2010 y la regla sec 10b-5. |
+
+> [!IMPORTANT]
+> Los clasificadores en versión preliminar pueden detectar un gran volumen de contenido masivo de remitentes o boletines de noticias debido a un problema conocido. Aunque estos clasificadores están en versión preliminar, puede mitigar la detección de grandes volúmenes de contenido de remitentes o boletines de noticias en masa agregando que el [*mensaje no se envía a ninguna de estas condiciones de dominios*](/microsoft-365/compliance/communication-compliance-policies#conditional-settings) a las directivas con una lista de dominios que se excluirán.
 
 > [!NOTE]
-> Las directivas que usan clasificadores inspeccionarán y evaluarán los mensajes con un recuento de palabras de seis o más. Los mensajes que contienen menos de seis palabras no se evalúan en las directivas mediante clasificadores. Para identificar y tomar medidas en los mensajes más cortos que contienen contenido inadecuado, se recomienda incluir un diccionario de palabras clave personalizado para las directivas de cumplimiento de comunicaciones que detecten este tipo de contenido.
+> Las directivas que usan clasificadores de amenazas, acoso y blasfemia en inglés inspeccionarán y evaluarán los mensajes con un recuento de palabras de tres o más. Los mensajes que contienen menos de tres palabras no se evalúan en las directivas que usan estos tipos de clasificadores. Para identificar y tomar medidas en los mensajes más cortos que contienen contenido inadecuado, se recomienda incluir un diccionario de palabras clave personalizado para las directivas de cumplimiento de comunicaciones que detecten este tipo de contenido.
 
 ### <a name="optical-character-recognition-ocr"></a>Reconocimiento óptico de caracteres (OCR)
 

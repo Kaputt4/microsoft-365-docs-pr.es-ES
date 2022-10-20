@@ -10,7 +10,7 @@ ms.localizationpriority: medium
 author: denisebmsft
 ms.author: deniseb
 ms.custom: nextgen
-ms.date: 08/09/2022
+ms.date: 10/18/2022
 ms.reviewer: pauhijbr, ksarens, mkaminska
 manager: dansimp
 ms.subservice: mde
@@ -19,12 +19,12 @@ ms.collection:
 - m365-security
 - tier3
 search.appverid: met150
-ms.openlocfilehash: 8e3603887a7b4c1713c72bfe4640c63d71f44c1b
-ms.sourcegitcommit: 4e42bafee965446f44f7f57d1defed2b9b24fce8
+ms.openlocfilehash: 900e3424218cab4ab461339278ca64cbe8837805
+ms.sourcegitcommit: 0d8fb571024f134d7480fe14cffc5e31a687d356
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/30/2022
-ms.locfileid: "68219110"
+ms.lasthandoff: 10/20/2022
+ms.locfileid: "68628013"
 ---
 # <a name="configure-scheduled-quick-or-full-microsoft-defender-antivirus-scans"></a>Configurar los análisis programados rápidos o completos del Antivirus de Windows Defender
 
@@ -41,7 +41,7 @@ Además de la protección siempre activa en tiempo real y los exámenes [antivir
 ## <a name="what-do-you-want-to-do"></a>¿Qué quiere hacer?
 
 - [Más información sobre los exámenes rápidos, los exámenes completos y los exámenes personalizados](#quick-scan-full-scan-and-custom-scan)
-- [Uso de directiva de grupo para programar exámenes antivirus](schedule-antivirus-scans-group-policy.md)
+- [Uso de समूह नीति para programar exámenes antivirus](schedule-antivirus-scans-group-policy.md)
 - [Uso de Windows PowerShell para programar exámenes antivirus](schedule-antivirus-scans-powershell.md)
 - [Uso de Instrumental de administración de Windows para programar exámenes antivirus](schedule-antivirus-scans-wmi.md)
 
@@ -50,6 +50,8 @@ Además de la protección siempre activa en tiempo real y los exámenes [antivir
 - De forma predeterminada, Microsoft Defender Antivirus comprueba si hay una actualización 15 minutos antes de la hora de los exámenes programados. Puede [administrar la programación de cuándo se deben descargar y aplicar las actualizaciones de protección](manage-protection-update-schedule-microsoft-defender-antivirus.md) para invalidar este valor predeterminado.
 
 - Si un dispositivo está desconectado y funcionando con batería durante un examen completo programado, el examen programado se detendrá con el evento 1002, que indica que el examen se detuvo antes de la finalización. Microsoft Defender Antivirus ejecutará un examen completo en la próxima hora programada.
+
+- Los exámenes programados se ejecutan según la zona horaria local del dispositivo.
 
 ## <a name="quick-scan-full-scan-and-custom-scan"></a>Examen rápido, examen completo y examen personalizado
 
@@ -62,7 +64,7 @@ Al configurar exámenes programados, puede especificar si el examen debe ser com
 > [!NOTE]
 > De forma predeterminada, los exámenes rápidos se ejecutan en dispositivos extraíbles montados, como unidades USB.
 
-## <a name="how-do-i-know-which-scan-type-to-choose"></a>Cómo saber qué tipo de examen elegir?
+## <a name="how-do-i-know-which-scan-type-to-choose"></a>मैले कसरी saber qué tipo de examen elegir?
 
 Use la tabla siguiente para elegir un tipo de examen.
 <br/><br/>

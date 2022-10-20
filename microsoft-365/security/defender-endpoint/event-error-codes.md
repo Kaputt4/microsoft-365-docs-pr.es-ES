@@ -14,16 +14,16 @@ audience: ITPro
 ms.collection:
 - m365-security
 - tier3
-ms.topic: article
+ms.topic: conceptual
 ms.date: 05/21/2018
 ms.subservice: mde
 search.appverid: met150
-ms.openlocfilehash: 13285e39548f86dada8b13cc78d9f972ae80a8f1
-ms.sourcegitcommit: 0b7070ec119e00e0dafe030bbfbef0ae5c9afa19
+ms.openlocfilehash: 5b1d6802c8d6ba1f38001789fdb9beb906e642e5
+ms.sourcegitcommit: 0d8fb571024f134d7480fe14cffc5e31a687d356
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/29/2022
-ms.locfileid: "68203605"
+ms.lasthandoff: 10/20/2022
+ms.locfileid: "68647298"
 ---
 # <a name="review-events-and-errors-using-event-viewer"></a>Revisar eventos y errores mediante Visor de eventos
 
@@ -44,7 +44,7 @@ Por ejemplo, si los dispositivos no aparecen en la **lista de dispositivos**, es
 
 **Abra Visor de eventos y busque el registro de eventos del servicio de Microsoft Defender para punto de conexión:**
 
-1. Seleccione **Iniciar** en el menú Windows, escriba **Visor de eventos** y presione **Entrar**.
+1. Seleccione **Iniciar** en el menú Windows, escriba **घटना दर्शक** y presione **Entrar**.
 
 2. En la lista de registros, en **Resumen del registro**, desplácese hasta que vea **Microsoft-Windows-SENSE/Operational**. Haga doble clic en el elemento para abrir el registro.
 

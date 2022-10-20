@@ -14,18 +14,19 @@ search.appverid:
 - MET150
 ms.assetid: 5986b9e1-c824-4f8f-9b7d-a2b0ae2a7fe9
 ms.collection:
-- M365-security-compliance
+- purview-compliance
+- tier3
 ms.custom:
 - seo-marvel-apr2020
 - admindeeplinkMAC
 - admindeeplinkEXCHANGE
 description: Obtenga información sobre cómo realizar la transición de archivos heredados a Office 365 cifrado de mensajes (OME) para su organización.
-ms.openlocfilehash: b34ccbcf077238ba3caee9da3b337cd0d32cf458
-ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
+ms.openlocfilehash: 97333df898dfd8aaff0670cc73b3c67a9325fd47
+ms.sourcegitcommit: 0d8fb571024f134d7480fe14cffc5e31a687d356
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/06/2022
-ms.locfileid: "66642533"
+ms.lasthandoff: 10/20/2022
+ms.locfileid: "68626432"
 ---
 # <a name="legacy-information-for-office-365-message-encryption"></a>Información heredada para el cifrado de mensajes de Office 365
 
@@ -40,6 +41,8 @@ Estos son algunos ejemplos:
 - Un agente hipotecario solicita información financiera a un cliente para una solicitud de préstamo
 - Un proveedor de atención médica envía información de atención médica a los pacientes
 - Un abogado envía información confidencial a un cliente u otro abogado
+
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
 
 ## <a name="how-office-365-message-encryption-works-without-the-new-capabilities"></a>Funcionamiento de Office 365 cifrado de mensajes sin las nuevas funcionalidades
 
@@ -133,7 +136,7 @@ Cuando los usuarios de correo electrónico envían mensajes cifrados, los destin
 
 7. En **Haga lo siguiente**, seleccione **Modificar la seguridad** \> del mensaje **Quitar la versión anterior de OME**.
 
-8. Haga clic en **Guardar**.
+8. Seleccione **Guardar**.
 
 #### <a name="use-exchange-online-powershell-to-create-a-rule-to-remove-encryption-from-email-replies-encrypted-without-the-new-ome-capabilities"></a>Use Exchange Online PowerShell para crear una regla para quitar el cifrado de las respuestas de correo electrónico cifradas sin las nuevas funcionalidades de OME
 
@@ -270,7 +273,7 @@ Sí. Las respuestas se siguen cifrando durante todo el período de la conversaci
 
  **Q. ¿Office 365 cifrado de mensajes proporciona localización?**
 
-El correo electrónico entrante y el contenido HTML se localiza según la configuración de correo electrónico del remitente. El portal de visualización se localiza según la configuración del explorador del destinatario. Sin embargo, el cuerpo (contenido) del mensaje cifrado no se localiza.
+Incoming email and HTML content is localized based on sender email settings. The viewing portal is localized based on recipient's browser settings. However, the actual body (content) of encrypted message isn't localized.
 
  **Q. ¿Qué método de cifrado se usa para Office 365 cifrado de mensajes?**
 
@@ -278,13 +281,13 @@ Office 365 Message Encryption usa Rights Management Services (RMS) como su infra
 
 - Si usa Microsoft Azure RMS para obtener las claves, se usa el modo criptográfico 2. El modo criptográfico 2 es una implementación criptográfica de AD RMS actualizada y mejorada. Es compatible con RSA 2048 para firma y cifrado, y admite SHA-256 para firma.
 
-- Si usa Active Directory (AD) RMS para obtener las claves, se utiliza el modo criptográfico 1 o el modo criptográfico 2. El método empleado depende de la implementación local de AD RMS. El modo criptográfico 1 es la implementación criptográfica original de AD RMS. Es compatible con RSA 1024 para firma y cifrado, y admite SHA-1 para firma. Este modo sigue siendo compatible con todas las versiones actuales de RMS.
+- If you use Active Directory (AD) RMS to obtain the keys, either Cryptographic Mode 1 or Cryptographic Mode 2 is used. The method used depends on your on-premises AD RMS deployment. Cryptographic Mode 1 is the original AD RMS cryptographic implementation. It supports RSA 1024 for signature and encryption, and supports SHA-1 for signature. This mode continues to be supported by all current versions of RMS.
 
 Para obtener más información, vea [Modos criptográficos de AD RMS](/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/hh867439(v=ws.10)).
 
 **Q. ¿Por qué algunos mensajes cifrados dicen que proceden de** Office365@messaging.microsoft.com?
 
-Cuando se envía una respuesta cifrada desde el portal de cifrado o a través de la aplicación del Visor de OME, la dirección de correo electrónico de envío se establece en Office365@messaging.microsoft.com porque el mensaje cifrado se envía a través de un extremo de Microsoft. Esto ayuda a evitar que los mensajes cifrados se marquen como correo no deseado. El nombre mostrado en el correo electrónico y la dirección del portal de cifrado no se modifican a causa de este etiquetado. Además, este etiquetado solo se aplica a los mensajes enviados a través del portal, no a través de cualquier otro cliente de correo electrónico.
+When an encrypted reply is sent from the encryption portal or through the OME Viewer app, the sending email address is set to Office365@messaging.microsoft.com because the encrypted message is sent through a Microsoft endpoint. This helps to prevent encrypted messages from being marked as spam. The displayed name on the email and the address within the encryption portal aren't changed because of this labeling. Also, this labeling only applies to messages sent through the portal, not through any other email client.
 
  **Q. Soy suscriptor de Exchange Hosted Encryption (EHE). ¿Dónde puedo obtener más información sobre la actualización a Office 365 cifrado de mensajes?**
 

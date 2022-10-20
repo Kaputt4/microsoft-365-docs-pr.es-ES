@@ -1,5 +1,5 @@
 ---
-title: Transmitir eventos de Microsoft 365 Defender a Azure Event Hubs
+title: Transmisión de eventos Microsoft 365 Defender a Azure Event Hubs
 description: Obtenga información sobre cómo configurar Microsoft 365 Defender para transmitir eventos de búsqueda avanzada a Event Hubs.
 keywords: exportación de datos sin procesar, API de streaming, API, Azure Event Hubs, almacenamiento de Azure, cuenta de almacenamiento, búsqueda avanzada, uso compartido de datos sin procesar
 search.product: eADQiWindows 10XVcnh
@@ -18,13 +18,13 @@ ms.collection:
 - m365-security
 - tier3
 ms.custom: admindeeplinkDEFENDER
-ms.topic: article
-ms.openlocfilehash: 8ac541d976d491f0a3a919b0d938d92e3a9fd849
-ms.sourcegitcommit: 12af9e8e3a6eaa090fda9e98ccb831dff65863a4
+ms.topic: conceptual
+ms.openlocfilehash: 00f7d69923514b5e7736042db939d4366990978a
+ms.sourcegitcommit: 0d8fb571024f134d7480fe14cffc5e31a687d356
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/27/2022
-ms.locfileid: "68084625"
+ms.lasthandoff: 10/20/2022
+ms.locfileid: "68633447"
 ---
 # <a name="configure-microsoft-365-defender-to-stream-advanced-hunting-events-to-your-azure-event-hub"></a>Configuración de Microsoft 365 Defender para transmitir eventos de búsqueda avanzada al centro de eventos de Azure
 
@@ -64,7 +64,7 @@ Antes de configurar Microsoft 365 Defender para transmitir datos a Event Hubs, a
 
 7. Para exportar los datos de eventos a un único centro de eventos, escriba el **nombre del centro de eventos** y el **identificador de recurso del centro de eventos**.
 
-   Para obtener el **identificador de recurso de Event Hub**, vaya a la página del espacio de nombres Azure Event Hubs de la pestaña **Propiedades** de [Azure](https://ms.portal.azure.com/) >  > copie el texto en **Id. de recurso**:
+   Para obtener el **identificador de recurso de Event Hubs**, vaya a la página del espacio de nombres de Azure Event Hubs en la pestaña **Propiedades** de [Azure](https://ms.portal.azure.com/) >  > copie el texto en **Id. de recurso**:
 
    :::image type="content" source="../defender-endpoint/images/event-hub-resource-id.png" alt-text="Un identificador de recurso del centro de eventos" lightbox="../defender-endpoint/images/event-hub-resource-id.png":::
 
@@ -137,5 +137,5 @@ Puede supervisar los recursos creados por la API de streaming mediante **Azure M
 - [API de streaming de Microsoft 365 Defender](streaming-api.md)
 - [Tipos de eventos de Microsoft 365 Defender admitidos en la API de streaming de eventos](supported-event-types.md)
 - [Transmitir eventos Microsoft 365 Defender a la cuenta de Azure Storage](streaming-api-storage.md)
-- [documentación de Azure Event Hubs](/azure/event-hubs/)
+- [Documentación de Azure Event Hubs](/azure/event-hubs/)
 - [Solución de problemas de conectividad: Azure Event Hubs](/azure/event-hubs/troubleshooting-guide)

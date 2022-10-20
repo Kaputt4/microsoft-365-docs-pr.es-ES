@@ -16,12 +16,12 @@ ms.collection:
 appliesto:
 - Microsoft Teams
 - Microsoft 365 for frontline workers
-ms.openlocfilehash: 08db9f99ac5a7fd5dc2c116a1f2ef9f35e7f71c7
-ms.sourcegitcommit: 7828a1e78c3e6bd8d10289f1ad6c8b6769da0966
+ms.openlocfilehash: bebdd76ce0725ec4338825bd52cff143896b7e5d
+ms.sourcegitcommit: 0d8fb571024f134d7480fe14cffc5e31a687d356
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/07/2022
-ms.locfileid: "68495043"
+ms.lasthandoff: 10/20/2022
+ms.locfileid: "68641785"
 ---
 # <a name="start-with-a-pilot-deployment-of-microsoft-365-for-frontline-workers"></a>Comience con una implementación piloto de Microsoft 365 para los trabajadores de primera línea
 
@@ -53,7 +53,7 @@ Se recomienda prepararse para la implementación completando esta ruta de aprend
 >
 > * [Reunir a su gente](#plan-your-pilot)
 > * [Planear el piloto](#plan-your-pilot)
-> * [Configurar Microsoft 365 y Teams](#set-up-microsoft-365-and-teams)
+> * [Configurar Microsoft 365 y Teams](#set-up-microsoft-365-and-teams)
 > * [Comunicación](#communicate)
 > * [Measure](#measure)
 > * [Iteración y expansión](#iterate-and-expand)
@@ -152,7 +152,7 @@ Una vez que haya configurado Teams y haya creado sus equipos y canales, puede co
 
 - [Reservas](bookings-virtual-visits.md) para programar citas con clientes o clientes.
 - [Turnos](shifts-for-teams-landing-page.md) para programar la plantilla de primera línea.
-- [Aprendizaje Viva](/sharepoint/build-learning-and-training-experiences-for-employees) crear experiencias de aprendizaje y aprendizaje para los empleados.
+- [Viva Learning](/sharepoint/build-learning-and-training-experiences-for-employees) crear experiencias de aprendizaje y aprendizaje para los empleados.
 
 ### <a name="communicate"></a>Comunicación
 

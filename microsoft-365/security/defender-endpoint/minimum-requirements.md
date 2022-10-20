@@ -17,12 +17,12 @@ ms.collection:
 ms.topic: conceptual
 ms.subservice: mde
 search.appverid: met150
-ms.openlocfilehash: 23c02b6df071c8eabd21ecce48d5d0ec2c33e3a2
-ms.sourcegitcommit: 4e42bafee965446f44f7f57d1defed2b9b24fce8
+ms.openlocfilehash: 530a10beecab3c0f371db7a607e1b2a5d441c5a9
+ms.sourcegitcommit: 0d8fb571024f134d7480fe14cffc5e31a687d356
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/30/2022
-ms.locfileid: "68232218"
+ms.lasthandoff: 10/20/2022
+ms.locfileid: "68635430"
 ---
 # <a name="minimum-requirements-for-microsoft-defender-for-endpoint"></a>Requisitos mínimos para Microsoft Defender para punto de conexión
 
@@ -44,7 +44,7 @@ Hay algunos requisitos mínimos para incorporar dispositivos al servicio. Obteng
 
 ## <a name="licensing-requirements"></a>Requisitos de licencias
 
-Las versiones independientes de [Defender para el plan 1 y el plan 2](defender-endpoint-plan-1-2.md), incluso cuando se incluyen como parte de otros planes de Microsft 365, no incluyen licencias de servidor. Para incorporar servidores a esos planes, necesitará Defender for Servers Plan 1 o Plan 2 como parte de la oferta de [Defender for Cloud](/azure/defender-for-cloud/defender-for-cloud-introduction) . Para obtener más información, consulte la introducción a [Microsoft Defender para servidores](/azure/defender-for-cloud/defender-for-servers-introduction).
+Las versiones independientes de [Defender para el plan 1 y el plan 2](defender-endpoint-plan-1-2.md), incluso cuando se incluyen como parte de otros planes de Microsoft 365, no incluyen licencias de servidor. Para incorporar servidores a esos planes, necesitará Defender for Servers Plan 1 o Plan 2 como parte de la oferta de [Defender for Cloud](/azure/defender-for-cloud/defender-for-cloud-introduction) . Para obtener más información, consulte la introducción a [Microsoft Defender para servidores](/azure/defender-for-cloud/defender-for-servers-introduction).
 
 Para obtener información sobre los requisitos de licencia de Microsoft Defender para punto de conexión, consulte [Microsoft Defender para punto de conexión información de licencias](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance#microsoft-defender-for-endpoint).
 
@@ -88,7 +88,8 @@ El acceso a Defender para punto de conexión se realiza a través de un explorad
   - Windows Server 2012 R2
   - Windows Server 2016
   - Windows Server, versión 1803 o posterior
-  - Windows Server 2019
+  - Windows Server 2019 y versiones posteriores
+  - Edición principal de Windows Server 2019
   - Windows Server 2022
 - Windows Virtual Desktop
 - Windows 365
@@ -104,7 +105,7 @@ Para obtener más información sobre las versiones admitidas de Windows 10, cons
 > [!NOTE]
 > - No se admiten los puntos de conexión que ejecutan versiones móviles de Windows (como Windows CE y Windows 10 Mobile).
 >
-> - Virtual Machines que ejecutan Windows 10 Enterprise 2016 LTSB pueden encontrar problemas de rendimiento si se ejecutan en plataformas de virtualización que no son de Microsoft.
+> - Las máquinas virtuales que ejecutan Windows 10 Enterprise 2016 LTSB pueden encontrar problemas de rendimiento si se ejecutan en plataformas de virtualización que no son de Microsoft.
 >
 > - Para entornos virtuales, se recomienda usar Windows 10 Enterprise LTSC 2019 o posterior.
 >
@@ -207,7 +208,7 @@ Si va a incorporar servidores y Microsoft Defender Antivirus no es el antimalwar
 
 Si ejecuta Microsoft Defender Antivirus como producto antimalware principal en los dispositivos, el agente de Defender para punto de conexión se incorporará correctamente.
 
-Si ejecuta un cliente antimalware de terceros y usa soluciones de Mobile Administración de dispositivos o Microsoft Endpoint Manager (rama actual), deberá asegurarse de que el controlador ELAM de antivirus de Microsoft Defender está habilitado. Para obtener más información, vea [Asegurarse de que Microsoft Defender Antivirus no está deshabilitado por directiva](troubleshoot-onboarding.md#ensure-that-microsoft-defender-antivirus-is-not-disabled-by-a-policy).
+Si ejecuta un cliente antimalware de terceros y usa soluciones de administración de dispositivos móviles o Microsoft Endpoint Manager (rama actual), deberá asegurarse de que el controlador ELAM de antivirus de Microsoft Defender está habilitado. Para obtener más información, vea [Asegurarse de que Microsoft Defender Antivirus no está deshabilitado por directiva](troubleshoot-onboarding.md#ensure-that-microsoft-defender-antivirus-is-not-disabled-by-a-policy).
 
 ## <a name="related-topics"></a>Temas relacionados
 

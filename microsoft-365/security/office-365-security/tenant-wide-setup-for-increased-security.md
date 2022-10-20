@@ -6,7 +6,7 @@ ms.author: bcarter
 author: BrendaCarter
 manager: laurawi
 audience: ITPro
-ms.topic: article
+ms.topic: conceptual
 ms.localizationpriority: medium
 ms.collection:
 - Ent_O365
@@ -20,12 +20,12 @@ ms.custom:
 description: Configuraciones manuales para Exchange Online Protection, Microsoft Defender para Office 365, plan 1 y 2 y Microsoft 365 Defender, para una protección completa de la suscripción de Office 365.
 ms.subservice: mdo
 ms.service: microsoft-365-security
-ms.openlocfilehash: 0ef5c7987895f984fd59662298617a72504dda67
-ms.sourcegitcommit: 1f4c51d022d1cfb6c194bf0f0af9c2841c781d68
+ms.openlocfilehash: ffdf0c66bc7cc15d3d65b5734a48e240f25d765b
+ms.sourcegitcommit: 0d8fb571024f134d7480fe14cffc5e31a687d356
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/14/2022
-ms.locfileid: "68573381"
+ms.lasthandoff: 10/20/2022
+ms.locfileid: "68622032"
 ---
 # <a name="configure-your-microsoft-365-tenant-for-increased-security"></a>Configurar el inquilino de Microsoft 365 para aumentar la seguridad
 
@@ -79,11 +79,11 @@ Dentro de cada informe, verá tarjetas para las áreas específicas supervisadas
 1. Haga clic en los **informes de colaboración de Email &**.
 1. Tome nota de las tarjetas de informe disponibles.
     1. Desde *malware detectado en el correo electrónico*, hasta *detecciones de correo no deseado*, *usuarios en peligro*, hasta *mensajes notificados* por el usuario y envíos de los dos *últimos* , con un botón que vincula a Envíos.
-1. Haga clic en un informe, como el *resumen de estado de Mailflow* y haga clic en el botón **Ver detalles** para profundizar en los datos (que incluso incluye una vista de embudo para facilitar la interpretación del flujo de correo total frente a los correos electrónicos bloqueados, correo no deseado y phishing, etc.).
+1. Haga clic en un informe, por ejemplo, resumen de *estado de Flujo* de correo y haga clic en el botón **Ver detalles** para profundizar en los datos (que incluso incluye una vista de embudo para facilitar la interpretación del flujo de correo total frente a los correos electrónicos bloqueados, correo no deseado y phishing, etc.).
 
 |Panel|Descripción|
 |---|---|
-|Email informes de seguridad|Estos informes están disponibles en Exchange Online Protection. Para obtener más información, vea [Ver informes de seguridad de correo electrónico en el portal de Microsoft 365 Defender](view-email-security-reports.md).|
+|Informes de seguridad| Identidades e informes de seguridad de dispositivos, como usuarios y dispositivos con detecciones de malware, cumplimiento de dispositivos y usuarios en riesgo.|
 |Informes de Defender para Office 365|Los informes solo están disponibles en Defender para Office 365. Para obtener más información, vea [Ver informes de Defender para Office 365 en el portal de Microsoft 365 Defender](view-reports-for-mdo.md).|
 |Informes e información de flujo de correo|Estos informes e información están disponibles en el Centro de administración de Exchange (EAC). Para obtener más información, vea [Informes de flujo de correo](/exchange/monitoring/mail-flow-reports/mail-flow-reports) e [Información de flujo de correo](/exchange/monitoring/mail-flow-insights/mail-flow-insights).|
 |[Explorador de amenazas (o detecciones en tiempo real)](threat-explorer.md)|Si está investigando o experimentando un ataque contra el inquilino, use el Explorador (o las detecciones en tiempo real) para analizar las amenazas. El Explorador (y el informe de detecciones en tiempo real) muestra el volumen de ataques a lo largo del tiempo y puede analizar estos datos por familias de amenazas, infraestructura de atacantes, etc. También puede marcar cualquier correo electrónico sospechoso para la lista incidentes.|
@@ -107,7 +107,7 @@ Para admitir los objetivos de protección de línea base, configure las directiv
 
 |Área|Incluye una directiva predeterminada|Recomendación|
 |---|---|---|
-|**Uso compartido** (SharePoint Online y OneDrive para la Empresa)|Sí|El uso compartido externo está habilitado de forma predeterminada. Se recomienda esta configuración: <ul><li>Permitir el uso compartido para usuarios externos autenticados y usar vínculos de acceso anónimo (configuración predeterminada).</li><li>Los vínculos de acceso anónimo expiran en estos días. Escriba un número, si lo desea, como 30 días.</li><li>Tipo de vínculo predeterminado: seleccione Interno (solo personas de la organización). Los usuarios que deseen compartir mediante vínculos anónimos deben elegir esta opción en el menú compartir.</li></ul> <p> Más información: [Introducción al uso compartido externo](/sharepoint/external-sharing-overview)|
+|**Uso compartido** (SharePoint Online y OneDrive para la Empresa)|Yes|El uso compartido externo está habilitado de forma predeterminada. Se recomienda esta configuración: <ul><li>Permitir el uso compartido para usuarios externos autenticados y usar vínculos de acceso anónimo (configuración predeterminada).</li><li>Los vínculos de acceso anónimo expiran en estos días. Escriba un número, si lo desea, como 30 días.</li><li>Tipo de vínculo predeterminado: seleccione Interno (solo personas de la organización). Los usuarios que deseen compartir mediante vínculos anónimos deben elegir esta opción en el menú compartir.</li></ul> <p> Más información: [Introducción al uso compartido externo](/sharepoint/external-sharing-overview)|
 
 El Centro de administración de SharePoint y OneDrive para la Empresa centro de administración incluyen la misma configuración. La configuración de cualquiera de los centros de administración se aplica a ambos.
 

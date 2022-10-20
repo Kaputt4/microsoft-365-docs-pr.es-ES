@@ -19,12 +19,12 @@ ms.collection:
 search.appverid:
 - MET150
 description: Obtenga información sobre cómo definir la configuración central de prevención de pérdida de datos en el punto de conexión (DLP).
-ms.openlocfilehash: b0593bb5ada76274a4fa53ec2877087352bf6afb
-ms.sourcegitcommit: 8d3c027592a638f411f87d89772dd3d39e92aab0
+ms.openlocfilehash: d3b38a9125979f33e4d22277b8967f4f3d37c349
+ms.sourcegitcommit: 0d8fb571024f134d7480fe14cffc5e31a687d356
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/12/2022
-ms.locfileid: "68533472"
+ms.lasthandoff: 10/20/2022
+ms.locfileid: "68621370"
 ---
 # <a name="configure-endpoint-data-loss-prevention-settings"></a>Configuración de la prevención de pérdida de datos de punto de conexión
 
@@ -49,7 +49,7 @@ Antes de empezar, debe configurar la configuración de DLP.
 
 ### <a name="endpoint-dlp-windows-1011-and-macos-settings"></a>Configuración de Windows 10/11 DLP de punto de conexión y macOS
 
-|Setting |Windows 10, 1809 y versiones posteriores, Windows 11  |macOS Catalina 10.15 o posterior |Notas  |
+|Setting |Windows 10, 1809 y versiones posteriores, Windows 11  |macOS (tres versiones más recientes) |Notas  |
 |---------|---------|---------|---------|
 |Exclusiones de ruta de archivo     |Compatible         |Compatible         |macOS incluye una lista recomendada de exclusiones que está predeterminada          |
 |Aplicaciones restringidas     |Compatible         |Compatible         |         |
@@ -241,19 +241,58 @@ Para dispositivos macOS, debe agregar la ruta de acceso de archivo completa. Par
 > [!NOTE]
 > La configuración de **Dominios de servicio** solo se aplica a los archivos cargados con Microsoft Edge o Google Chrome con la [extensión Microsoft Purview](dlp-chrome-learn-about.md#learn-about-the-microsoft-purview-extension) instalada.
 
-Puede controlar si los archivos confidenciales protegidos por sus directivas se pueden cargar en dominios de servicio específicos de Microsoft Edge.
+Puede controlar si los archivos confidenciales protegidos por las directivas se pueden cargar en dominios de servicio específicos desde Microsoft Edge.
 
-Si el modo de lista está establecido en **Bloquear**, el usuario no podrá cargar elementos confidenciales en esos dominios. Cuando se bloquea una acción de carga porque un elemento coincide con una directiva DLP, la DLP genera una advertencia o bloquea la carga del elemento confidencial.
+##### <a name="allow"></a>Permitir
 
-Si el modo de lista está configurado en **Permitir**, los usuarios podrán cargar elementos confidenciales **_solo_** a dichos dominios y no se permitirá el acceso de carga a los demás dominios.
+Cuando la lista **Dominios de servicio** está establecida en **Permitir**, las directivas DLP no se aplicarán cuando un usuario intente cargar un archivo confidencial en ninguno de los dominios de la lista.
+
+Si el modo de lista está establecido en **Permitir**, se auditará cualquier actividad de usuario que implique un elemento confidencial y un dominio que esté en la lista. Se permite la actividad. Cuando un usuario intenta una actividad que implica un elemento confidencial y un dominio que *no está* en la lista, se aplican las directivas DLP y las acciones definidas en las directivas.
+
+Por ejemplo, con esta configuración:
+
+- **El modo de lista de dominios de servicio** está establecido en **Permitir**.
+    - Contoso.com está en la lista.
+-  Una directiva DLP se establece en **Bloquear** la carga de elementos confidenciales que contienen números de tarjeta de crédito.
+ 
+El usuario intenta:
+
+- Cargue un archivo confidencial con números de tarjeta de crédito en contoso.com.
+    - Se permite la actividad de usuario, se audita, se genera un evento, pero no se muestra el nombre de la directiva ni el nombre de la regla desencadenante en los detalles del evento y no se genera ninguna alerta. 
+
+pero si un usuario intenta: 
+
+- Cargue un archivo confidencial con números de tarjeta de crédito en wingtiptoys.com (que no está en la lista).
+    - Se aplica la directiva y se bloquea la actividad del usuario. Se genera un evento y se genera una alerta. 
+ 
+##### <a name="block"></a>Bloquear
+ 
+Cuando la lista **Dominios de servicio** se establece en **Bloquear**, se aplicarán directivas DLP cuando un usuario intente cargar un archivo confidencial en cualquiera de los dominios de la lista.
+
+Si el modo de lista está establecido en **Bloquear**, cuando un usuario intenta una actividad que implica un elemento confidencial y un dominio que se encuentra en la lista, se aplican las directivas DLP y las acciones definidas en las directivas. Cualquier actividad que implique un elemento confidencial y un dominio que no esté en la lista se auditará y se permitirá la actividad del usuario.
+
+Por ejemplo, con esta configuración:
+
+- **El modo de lista de dominios de servicio** está establecido en **Bloquear**.
+    - Contoso.com está en la lista.
+-  Una directiva DLP se establece en **Bloquear con invalidación** para la carga de elementos confidenciales que contienen números de tarjeta de crédito.
+ 
+El usuario intenta:
+
+- Cargue un archivo confidencial con números de tarjeta de crédito en contoso.com.
+    - La actividad de usuario está bloqueada, pero el usuario puede invalidar el bloque, se genera un evento y se desencadena una alerta.
+
+pero si un usuario intenta: 
+
+- Cargue un archivo confidencial con números de tarjeta de crédito en wingtiptoys.com (que no está en la lista).
+    - La directiva *no se* aplica y la actividad del usuario se audita. Se genera un evento, pero no enumerará el nombre de la directiva ni el nombre de la regla desencadenante en los detalles del evento y no se genera ninguna alerta. 
 
 > [!IMPORTANT]
 > Cuando el modo de restricción del servicio esté establecido en "Permitir", debe tener al menos un dominio de servicio configurado antes de que las restricciones se apliquen.
 
-Usar el formato FQDN del dominio de servicio sin el final `.` 
+Use el formato FQDN del dominio de servicio sin finalizar `.` al agregar un dominio a la lista.
 
 Por ejemplo:
-
 
 | Input | Comportamiento de coincidencia de direcciones URL |
 |---|---|

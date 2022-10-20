@@ -6,7 +6,7 @@ ms.author: tracyp
 author: MSFTTracyP
 manager: dansimp
 audience: ITPro
-ms.topic: article
+ms.topic: conceptual
 ms.localizationpriority: medium
 search.appverid:
 - MET150
@@ -18,12 +18,12 @@ ms.custom:
 description: Obtenga información sobre cómo Microsoft 365 usa el registro TXT del Marco de directivas de remitente (SPF) en DNS para asegurarse de que los sistemas de correo electrónico de destino confían en los mensajes enviados desde el dominio personalizado.
 ms.subservice: mdo
 ms.service: microsoft-365-security
-ms.openlocfilehash: c657f86656da005aba416159217d01ca6eb636cb
-ms.sourcegitcommit: 12af9e8e3a6eaa090fda9e98ccb831dff65863a4
+ms.openlocfilehash: e72f3c12078f355617e84b19265f585ef2376377
+ms.sourcegitcommit: 0d8fb571024f134d7480fe14cffc5e31a687d356
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/27/2022
-ms.locfileid: "68055004"
+ms.lasthandoff: 10/20/2022
+ms.locfileid: "68625025"
 ---
 # <a name="how-microsoft-365-uses-sender-policy-framework-spf-to-prevent-spoofing"></a>Cómo Microsoft 365 usa el marco de directivas de remitente (SPF) para evitar la suplantación de identidad
 
