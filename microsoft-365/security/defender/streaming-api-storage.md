@@ -18,13 +18,13 @@ ms.collection:
 - m365-security
 - tier3
 ms.custom: admindeeplinkDEFENDER
-ms.topic: article
-ms.openlocfilehash: e1119fbb07f38d4cb9375af99ded96026102ef56
-ms.sourcegitcommit: 12af9e8e3a6eaa090fda9e98ccb831dff65863a4
+ms.topic: conceptual
+ms.openlocfilehash: 7c541e1e86fdc2967444d5e4297ed04460a47bf5
+ms.sourcegitcommit: 0d8fb571024f134d7480fe14cffc5e31a687d356
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/27/2022
-ms.locfileid: "68084603"
+ms.lasthandoff: 10/20/2022
+ms.locfileid: "68645635"
 ---
 # <a name="configure-microsoft-365-defender-to-stream-advanced-hunting-events-to-your-storage-account"></a>Configuración de Microsoft 365 Defender para transmitir eventos de búsqueda avanzada a la cuenta de almacenamiento
 
@@ -61,7 +61,7 @@ Una vez creada la cuenta de almacenamiento, deberá hacer lo siguiente:
 4. En el control flotante **Agregar nueva configuración de Streaming API** que aparece, configure las siguientes opciones:
    1. **Nombre**: elija un nombre para la nueva configuración.
    2. Seleccione **Reenviar eventos a Azure Storage**.
-   3. En el cuadro **Id. de recurso de la cuenta de almacenamiento** que aparece, escriba el **identificador de recurso de la cuenta de almacenamiento**. Para obtener el **identificador de recurso de la cuenta de almacenamiento**, abra el Azure Portal en <https://portal.azure.com>, haga clic en **Cuentas** \> de almacenamiento vaya a la pestaña \> propiedades y copie el texto en **Id. de recurso de la cuenta de almacenamiento**.
+   3. En el cuadro **Id. de recurso de la cuenta de almacenamiento** que aparece, escriba el **identificador de recurso de la cuenta de almacenamiento**. Para obtener el **identificador de recurso de la cuenta de almacenamiento**, abra Azure Portal en <https://portal.azure.com>, haga clic en **Cuentas** \> de almacenamiento, vaya a la pestaña \> propiedades y copie el texto en **Id. de recurso de la cuenta de almacenamiento**.
 
       :::image type="content" source="../defender-endpoint/images/storage-account-resource-id.png" alt-text="Un identificador de recurso de cuenta de almacenamiento" lightbox="../defender-endpoint/images/storage-account-resource-id.png":::
 

@@ -23,12 +23,12 @@ ms.assetid: ba235f4f-e640-4360-81ea-04507a3a70be
 search.appverid:
 - MET150
 description: En este artículo, aprenderá a usar PowerShell para asignar una licencia de Microsoft 365 a usuarios sin licencia.
-ms.openlocfilehash: 17e2afda1eca7b91f8f43e4466c64298313d8259
-ms.sourcegitcommit: edc9d4dec92ca81cff39bbf9590f1cd3a75ec436
+ms.openlocfilehash: 0ebd6a4133c3e757e2a17936938904f5773ae4e1
+ms.sourcegitcommit: 0d8fb571024f134d7480fe14cffc5e31a687d356
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/06/2022
-ms.locfileid: "68484333"
+ms.lasthandoff: 10/20/2022
+ms.locfileid: "68646471"
 ---
 # <a name="assign-microsoft-365-licenses-to-user-accounts-with-powershell"></a>Asignación de licencias de Microsoft 365 a cuentas de usuario con PowerShell
 
@@ -38,11 +38,11 @@ Los usuarios no pueden usar ningún servicio de Microsoft 365 hasta que su cuent
 
 Primero se debe asignar una ubicación a las cuentas de usuario. Especificar una ubicación es una parte necesaria de la creación de una nueva cuenta de usuario en el [Centro de administración de Microsoft 365](../admin/add-users/add-users.md). 
 
-Las cuentas sincronizadas desde el Active Directory local Domain Services no tienen una ubicación especificada de forma predeterminada. Puede configurar una ubicación para estas cuentas desde:
+Las cuentas sincronizadas desde el Active Directory डोमेन सेवाहरू local no tienen una ubicación especificada de forma predeterminada. Puede configurar una ubicación para estas cuentas desde:
 
 - Centro de administración de Microsoft 365
 - [PowerShell](configure-user-account-properties-with-microsoft-365-powershell.md)
-- El [Azure Portal](/azure/active-directory/fundamentals/active-directory-users-profile-azure-portal) (**Usuarios** de **Active Directory** >  > cuenta de usuario > **perfil** > **Información** >  de contacto **País o región**).
+- [Azure Portal](/azure/active-directory/fundamentals/active-directory-users-profile-azure-portal) (**usuarios** de **Active Directory** >  > cuenta de usuario > país **o región** de **información** >  de contacto de **perfil** > ).
 
 >[!Note]
 >[Obtenga información sobre cómo asignar licencias a cuentas de usuario](../admin/manage/assign-licenses-to-users.md) con el Centro de administración de Microsoft 365. Para obtener una lista de recursos adicionales, consulte [Administración de usuarios y grupos](/admin).
@@ -52,12 +52,12 @@ Las cuentas sincronizadas desde el Active Directory local Domain Services no tie
 
 En primer lugar, [conéctese a su inquilino de Microsoft 365](/graph/powershell/get-started#authentication).
 
-La asignación y eliminación de licencias para un usuario requiere el ámbito de permisos User.ReadWrite.All o uno de los demás permisos enumerados en la [página de referencia "Asignar licencia" Graph API](/graph/api/user-assignlicense).
+La asignación y eliminación de licencias para un usuario requiere el ámbito de permisos User.ReadWrite.All o uno de los demás permisos enumerados en la [página de referencia de Microsoft Graph API "Asignar licencia"](/graph/api/user-assignlicense).
 
 El ámbito de permisos Organization.Read.All es necesario para leer las licencias disponibles en el inquilino.
 
 ```powershell
-Connect-Graph -Scopes User.ReadWrite.All, Organization.Read.All
+Connect-MgGraph -Scopes User.ReadWrite.All, Organization.Read.All
 ```
 
 Ejecute el `Get-MgSubscribedSku` comando para ver los planes de licencias disponibles y el número de licencias disponibles en cada plan de la organización. El número de licencias disponibles en cada plan es **ActiveUnits** - **WarningUnits** - **ConsumedUnits**. Para obtener más información sobre los planes de licencias, las licencias y los servicios, consulte [Visualización de licencias y servicios con PowerShell](view-licenses-and-services-with-microsoft-365-powershell.md).
@@ -313,7 +313,7 @@ En este ejemplo se asignan licencias del plan de licencias **litwareinc:ENTERPRI
 Get-MsolUser -All -UnlicensedUsersOnly | Set-MsolUserLicense -AddLicenses "litwareinc:ENTERPRISEPACK"
 ```
 
-En este ejemplo se asignan esas mismas licencias a usuarios sin licencia en el departamento de ventas de la Estados Unidos:
+En este ejemplo se asignan esas mismas licencias a usuarios sin licencia en el departamento de ventas de Estados Unidos:
   
 ```powershell
 Get-MsolUser -All -Department "Sales" -UsageLocation "US" -UnlicensedUsersOnly | Set-MsolUserLicense -AddLicenses "litwareinc:ENTERPRISEPACK"
@@ -374,3 +374,5 @@ $userList | ForEach { $sku=$_.SkuId ; $licensePlanList | ForEach { If ( $sku -eq
 [Administrar Microsoft 365 con PowerShell](manage-microsoft-365-with-microsoft-365-powershell.md)
   
 [Introducción a PowerShell para Microsoft 365](getting-started-with-microsoft-365-powershell.md)
+
+Uso del usuario de Microsoft Graph [: assignLicense](/graph/api/user-assignlicense) y [subscribedSku](/graph/api/resources/subscribedsku) API

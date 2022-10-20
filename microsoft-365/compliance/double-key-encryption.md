@@ -12,23 +12,24 @@ ms.reviewer: esaggese
 ms.localizationpriority: medium
 ms.collection:
 - purview-compliance
+- tier1
 ms.custom: admindeeplinkCOMPLIANCE
-ms.openlocfilehash: 60769757cbfc4c6f31131fde070a393201bc6031
-ms.sourcegitcommit: 176bbd29c92e1c0812e8bcd1e1e4938a3e1d7331
+ms.openlocfilehash: 8ad1313b609d4322e9b5b6cf0c9b3272c00bfbb8
+ms.sourcegitcommit: 0d8fb571024f134d7480fe14cffc5e31a687d356
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/05/2022
-ms.locfileid: "68472201"
+ms.lasthandoff: 10/20/2022
+ms.locfileid: "68642907"
 ---
 # <a name="double-key-encryption"></a>Cifrado de claves doble
 
 > *Se aplica a: Cifrado de clave doble de Microsoft Purview, [Microsoft Purview](https://www.microsoft.com/microsoft-365/business/compliance-management), [Azure Information Protection](https://azure.microsoft.com/pricing/)*
 >
-> *Instrucciones para: [Azure Information Protection cliente de etiquetado unificado para Windows](/azure/information-protection/faqs#whats-the-difference-between-the-azure-information-protection-classic-and-unified-labeling-clients)*
+> *Instrucciones para: [Cliente de etiquetado unificado de Azure Information Protection para Windows](/azure/information-protection/faqs#whats-the-difference-between-the-azure-information-protection-classic-and-unified-labeling-clients)*
 
 > *Descripción del servicio para: [Microsoft Purview](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance)*
 
-El cifrado de doble clave (DKE) usa dos claves juntas para acceder al contenido protegido. Microsoft almacena una clave en Microsoft Azure y usted mantiene la otra clave. Mantenga el control total de una de las claves mediante el servicio de cifrado de claves dobles. Aplique la protección mediante Azure Information Protection cliente de etiquetado unificado al contenido altamente confidencial.
+El cifrado de doble clave (DKE) usa dos claves juntas para acceder al contenido protegido. Microsoft almacena una clave en Microsoft Azure y usted mantiene la otra clave. Mantenga el control total de una de las claves mediante el servicio de cifrado de claves dobles. Aplique la protección mediante el cliente de etiquetado unificado de Azure Information Protection al contenido altamente confidencial.
 
 Double Key Encryption admite implementaciones tanto en la nube como en el entorno local. Estas implementaciones ayudan a garantizar que los datos cifrados permanezcan opacos dondequiera que almacene los datos protegidos.
 
@@ -44,11 +45,11 @@ El cifrado de doble clave está pensado para los datos más confidenciales que e
 - Microsoft Delve
 - eDiscovery
 - Búsqueda e indexación de contenido
-- Office Web Apps incluida la funcionalidad de coautoría
+- Office Web Apps, incluida la funcionalidad de coautoría
 
-Las aplicaciones o servicios externos que no estén integrados con DKE a través del SDK de Microsoft Information Protection (MIP) no podrán realizar acciones en los datos cifrados.
+Las aplicaciones o servicios externos que no estén integrados con DKE a través del SDK de Microsoft जानकारीको सुरक्षा (MIP) no podrán realizar acciones en los datos cifrados.
 
-El SDK de Microsoft Information Protection 1.7 y versiones posteriores admite el cifrado de doble clave. Las aplicaciones que se integran con nuestro SDK pueden razonar sobre estos datos con permisos e integraciones suficientes.
+El SDK de Microsoft जानकारीको सुरक्षा 1.7 y versiones posteriores admite el cifrado de doble clave. Las aplicaciones que se integran con nuestro SDK pueden razonar sobre estos datos con permisos e integraciones suficientes.
 
 Use Microsoft Purview Information Protection funcionalidades (clasificación y etiquetado) para proteger la mayoría de los datos confidenciales y solo use DKE para los datos críticos. El cifrado de doble clave es relevante para los datos confidenciales en sectores altamente regulados, como los servicios financieros y la atención sanitaria.
 
@@ -62,13 +63,13 @@ Si las organizaciones tienen cualquiera de los siguientes requisitos, puede usar
 
 **El cifrado de clave doble** incluye Microsoft 365 E5. Si no tiene una licencia de Microsoft 365 E5, puede registrarse para obtener una [prueba](https://aka.ms/M365E5ComplianceTrial). Para obtener más información sobre estas licencias, consulte [Guía de licencias de Microsoft 365 para el cumplimiento de & seguridad](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance).
 
-**Azure Information Protection**. DKE funciona con etiquetas de confidencialidad y requiere azure Information Protection.
+**Azure Information Protection**. DKE funciona con etiquetas de confidencialidad y requiere Azure Information Protection.
 
 Las etiquetas de confidencialidad de DKE están disponibles para los usuarios finales mediante el botón de confidencialidad del cliente de etiquetado unificado de AIP en Aplicaciones de escritorio de Office. Instale estos requisitos previos en cada equipo cliente donde quiera proteger y consumir documentos protegidos.
 
 **Aplicaciones de Microsoft Office para empresas** versión 2009 o posterior (versiones de escritorio de Word, Excel, PowerPoint y Outlook) en Windows.
 
-**Azure Information Protection unified Labeling Client** versions 2.14.93.0 o posterior. Descargue e instale el cliente de etiquetado unificado desde el [centro de descarga de Microsoft](https://www.microsoft.com/download/details.aspx?id=53018).
+**Azure Information Protection Unified Labeling Client** versions 2.14.93.0 o posterior. Descargue e instale el cliente de etiquetado unificado desde el [centro de descarga de Microsoft](https://www.microsoft.com/download/details.aspx?id=53018).
 
 ## <a name="supported-environments-for-storing-and-viewing-dke-protected-content"></a>Entornos admitidos para almacenar y ver contenido protegido por DKE
 
@@ -239,7 +240,7 @@ La configuración de clave y el inquilino de DKE se encuentran en el archivo **a
 
 1. Abra el archivo **appsettings.json** .
 
-2. Busque la `ValidIssuers` configuración y reemplace por `<tenantid>` el identificador de inquilino. Para localizar el identificador de inquilino, vaya a la Azure Portal y vea las [propiedades del inquilino](https://aad.portal.azure.com/#blade/Microsoft_AAD_IAM/ActiveDirectoryMenuBlade/Properties). Por ejemplo:
+2. Busque la `ValidIssuers` configuración y reemplace por `<tenantid>` el identificador de inquilino. Para localizar el identificador de inquilino, vaya a Azure Portal y vea las [propiedades del inquilino](https://aad.portal.azure.com/#blade/Microsoft_AAD_IAM/ActiveDirectoryMenuBlade/Properties). Por ejemplo:
 
    ```json
    "ValidIssuers": [
@@ -363,7 +364,7 @@ Use las siguientes instrucciones para compilar el proyecto DKE localmente:
    Si hay errores rojos, compruebe la salida de la consola. Asegúrese de que ha completado todos los pasos anteriores correctamente y que las versiones de compilación correctas están presentes.
 
 
-La configuración ya está completa. Antes de publicar el almacén de claves, en appsettings.json, para la configuración jwtAudience, asegúrese de que el valor del nombre de host coincida exactamente con el nombre de host App Service. 
+La configuración ya está completa. Antes de publicar el almacén de claves, en appsettings.json, para la configuración jwtAudience, asegúrese de que el valor del nombre de host coincida exactamente con el nombre de host de App Service. 
 
 ### <a name="deploy-the-dke-service-and-publish-the-key-store"></a>Implementación del servicio DKE y publicación del almacén de claves
 
@@ -377,7 +378,7 @@ En el caso de las implementaciones piloto, puede implementar en Azure y empezar 
 
 Para publicar el almacén de claves, creará una instancia de Azure App Service para hospedar la implementación de DKE. A continuación, publicará las claves generadas en Azure.
 
-1. En el explorador, inicie sesión en microsoft [Azure Portal](https://ms.portal.azure.com) y vaya a **Agregar** de **App Services** > .
+1. En el explorador, inicie sesión en [Microsoft Azure Portal](https://ms.portal.azure.com) y vaya a **Agregar** de **App Services** > .
 
 2. Seleccione la suscripción y el grupo de recursos y defina los detalles de la instancia.
 
@@ -388,7 +389,7 @@ Para publicar el almacén de claves, creará una instancia de Azure App Service 
    Por ejemplo:
 
    > [!div class="mx-imgBorder"]
-   > ![Agregue el App Service.](../media/dke-azure-add-app-service.png)
+   > ![Agregue app service.](../media/dke-azure-add-app-service.png)
 
 3. En la parte inferior de la página, seleccione **Revisar y crear** y, a continuación, seleccione **Agregar**.
 
@@ -420,11 +421,11 @@ DKE está implementado y puede ir a las claves de prueba que ha creado. Continú
 
 #### <a name="publish-via-ftp"></a>Publicación a través de FTP
 
-1. Conéctese al App Service que creó [anteriormente](#deploy-the-dke-service-and-publish-the-key-store).
+1. Conéctese a App Service que creó [anteriormente](#deploy-the-dke-service-and-publish-the-key-store).
 
-   En el explorador, vaya a: **Azure Portal** >  **App Service** >  Panel **FTP** >  de **implementación manual** **del Centro** >  de implementación > **.**
+   En el explorador, vaya a: Panel **FTP** >  de **implementación manual** del **Centro** >  de implementación  >  de **App Service** >  de **Azure Portal** > **.**
 
-2. Copie las cadenas de conexión mostradas en un archivo local. Usará estas cadenas para conectarse a la App Service web y cargar archivos a través de FTP.
+2. Copie las cadenas de conexión mostradas en un archivo local. Usará estas cadenas para conectarse a Web App Service y cargar archivos a través de FTP.
 
    Por ejemplo:
 
@@ -442,7 +443,7 @@ DKE está implementado y puede ir a las claves de prueba que ha creado. Continú
 
 6. Envíe todos los archivos del directorio de publicación a un archivo ZIP. Al crear el archivo .zip, asegúrese de que todos los archivos del directorio están en el nivel raíz del archivo .zip.
 
-7. Desde el cliente FTP, use la información de conexión que copió para conectarse a la App Service. Cargue el archivo .zip que creó en el paso anterior en el directorio raíz de la aplicación web.
+7. Desde el cliente FTP, use la información de conexión que copió para conectarse a App Service. Cargue el archivo .zip que creó en el paso anterior en el directorio raíz de la aplicación web.
 
 DKE está implementado y puede ir a las claves de prueba que ha creado. A continuación, [valide la implementación](#validate-your-deployment).
 
@@ -472,7 +473,7 @@ Los pasos siguientes le permiten registrar el servicio DKE. El registro del serv
 
 Para registrar el servicio DKE:
 
-1. En el explorador, abra microsoft [Azure Portal](https://ms.portal.azure.com/) y vaya a **Todos los registros** de aplicaciones **de identidad** \> **de servicios**\>.
+1. En el explorador, abra [Microsoft Azure Portal](https://ms.portal.azure.com/) y vaya a Registros de **aplicaciones** de **identidad** \> de **todos los servicios**\>.
 
 2. Seleccione **Nuevo registro** y escriba un nombre significativo.
 
@@ -505,7 +506,7 @@ Para registrar el servicio DKE:
 
 10. Seleccione **Guardar** para guardar los cambios.
 
-11. En el panel izquierdo, seleccione **Exponer una API**, junto a URI del identificador de aplicación, escriba la dirección URL de App Service, incluidos el nombre de host y el dominio, y, a continuación, seleccione **Establecer**.
+11. En el panel izquierdo, seleccione **Exponer una API**, junto a URI de id. de aplicación, escriba la dirección URL de App Service, incluidos el nombre de host y el dominio, y, a continuación, seleccione **Establecer**.
 
 12. Todavía en la página **Exponer una API** , en el área **Ámbitos definidos por esta API** , seleccione **Agregar un ámbito**. En el nuevo ámbito:
 
@@ -563,7 +564,7 @@ Si es office insider, DKE está habilitado para usted. De lo contrario, habilite
 
 ## <a name="migrate-protected-files-from-hyok-labels-to-dke-labels"></a>Migración de archivos protegidos de etiquetas HYOK a etiquetas DKE
 
-Si lo desea, una vez que haya terminado de configurar DKE, puede migrar el contenido que ha protegido mediante etiquetas HYOK a etiquetas DKE. Para migrar, usará el analizador de AIP. Para empezar a usar el analizador, consulte [¿Qué es el analizador de etiquetado unificado de Azure Information Protection?](/azure/information-protection/deploy-aip-scanner)
+Si lo desea, una vez que haya terminado de configurar DKE, puede migrar el contenido que ha protegido mediante etiquetas HYOK a etiquetas DKE. Para migrar, usará el analizador de AIP. Para empezar a usar el analizador, consulte [¿Qué es el analizador de etiquetado unificado de Azure Information Protection?](/azure/information-protection/deploy-aip-scanner).
 
 Si no migra contenido, el contenido protegido de HYOK no se verá afectado.
 

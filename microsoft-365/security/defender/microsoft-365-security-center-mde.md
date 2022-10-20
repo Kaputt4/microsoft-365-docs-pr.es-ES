@@ -13,7 +13,7 @@ author: dansimp
 manager: dansimp
 ms.date: 04/21/2021
 audience: ITPro
-ms.topic: article
+ms.topic: conceptual
 search.appverid:
 - MOE150
 - MET150
@@ -21,12 +21,12 @@ ms.collection:
 - m365-security
 - tier2
 ms.custom: admindeeplinkDEFENDER
-ms.openlocfilehash: 23e79f77c3ef84cd464a4425953311ddf179b86e
-ms.sourcegitcommit: 12af9e8e3a6eaa090fda9e98ccb831dff65863a4
+ms.openlocfilehash: ab130af9f0212d444d6caa2228ddd4e1d669f9be
+ms.sourcegitcommit: 0d8fb571024f134d7480fe14cffc5e31a687d356
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/27/2022
-ms.locfileid: "68072665"
+ms.lasthandoff: 10/20/2022
+ms.locfileid: "68640596"
 ---
 # <a name="microsoft-defender-for-endpoint-in-microsoft-365-defender"></a>Microsoft Defender para punto de conexión en Microsoft 365 Defender
 
@@ -117,7 +117,7 @@ Esta tabla es una referencia rápida de los cambios entre el Centro de seguridad
 | Área | Descripción de cambio |
 |---------|---------|
 | Informes  | Consulte los informes de puntos de conexión y correo electrónico & colaboración, incluida la protección contra amenazas, el estado y el cumplimiento de dispositivos y los dispositivos vulnerables. |
-| Mantenimiento  |  Actualmente se vincula a la página "Estado del servicio" del [Centro de administración de Microsoft 365](https://admin.microsoft.com/). |
+| Mantenimiento  |  Actualmente se vincula a la página "Estado del servicio" en el [Centro de administración de Microsoft 365](https://admin.microsoft.com/). |
 | Configuración |  Administre la configuración de Microsoft 365 Defender, puntos de conexión, colaboración Email &, identidades y detección de dispositivos.   |
 
 ## <a name="microsoft-365-security-navigation-and-capabilities"></a>Navegación y funcionalidades de seguridad de Microsoft 365

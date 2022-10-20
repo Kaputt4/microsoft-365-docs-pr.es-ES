@@ -16,13 +16,13 @@ audience: ITPro
 ms.collection:
 - m365-security
 - tier1
-ms.topic: article
-ms.openlocfilehash: a7cc35decd9c6168b3c22af8ea7d20baca75d25b
-ms.sourcegitcommit: b9282493c371d59c2e583b9803825096499b5e2c
+ms.topic: conceptual
+ms.openlocfilehash: 82c4a9e5bc61377209a1f05e24f13452f587ff2e
+ms.sourcegitcommit: 0d8fb571024f134d7480fe14cffc5e31a687d356
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/29/2022
-ms.locfileid: "68149987"
+ms.lasthandoff: 10/20/2022
+ms.locfileid: "68638882"
 ---
 # <a name="migrating-servers-from-microsoft-monitoring-agent-to-the-unified-solution"></a>Migrar servidores desde Microsoft Monitoring Agent a la solución unificada
 
@@ -37,7 +37,7 @@ Este artículo le guía en la migración de servidores de nivel inferior de Micr
 
 - Microsoft Endpoint Configuration Manager (MECM) anterior a 2207.
 - Dispositivos de sistema operativo de nivel inferior en su entorno incorporados con Microsoft Monitoring Agent. Para confirmarlo, compruebe que `MsSenseS.exe` se está ejecutando en el Administrador de tareas.
-- Presencia del agente mma. Para comprobarlo, compruebe si el identificador de área de trabajo correcto está presente en la Panel de control> Microsoft Monitoring Agent.
+- Presencia del agente mma. Puede comprobarlo comprobando si el identificador de área de trabajo correcto está presente en el Panel de control> Microsoft Monitoring Agent.
 - Portal de Microsoft 365 Defender activo con dispositivos incorporados.
 - Se configura una **colección de** dispositivos que contiene servidores de nivel inferior, como Windows Server 2012 R2 o Windows Server 2016 mediante el agente MMA, en la instancia de MECM.
 
@@ -50,7 +50,7 @@ Copie el paquete de solución unificado, el script de incorporación y el script
 1. Descargue el script de incorporación y la solución unificada desde [Microsoft 365 Defender página de configuración](https://sip.security.microsoft.com/preferences2/onboarding).
    :::image type="content" source="images/onboarding-script.png" alt-text="Captura de pantalla de la descarga del script de incorporación y la solución unificada" lightbox="images/onboarding-script.png":::
    > [!Note]
-   > Debe seleccionar el directiva de grupo en la lista desplegable Método de implementación para obtener el archivo .cmd.
+   > Debe seleccionar el समूह नीति en la lista desplegable Método de implementación para obtener el archivo .cmd.
 2. Descargue el script de migración del documento: [Escenarios de migración del servidor de la solución de Microsoft Defender para punto de conexión anterior basada en MMA](server-migration.md). Este script también se puede encontrar en GitHub: [GitHub - microsoft/mdefordownlevelserver](https://github.com/microsoft/mdefordownlevelserver).
 3. Guarde los tres archivos en una carpeta compartida usada por MECM como origen de software.
 

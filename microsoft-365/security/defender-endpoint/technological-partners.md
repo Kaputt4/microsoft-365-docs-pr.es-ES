@@ -12,16 +12,18 @@ author: alekyaj
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
-ms.collection: m365-security
+ms.collection:
+- m365-security
+- tier3
 ms.topic: conceptual
 ms.subservice: mde
 search.appverid: met150
-ms.openlocfilehash: ea8f6cb27f85860532aa449f6bb7eda2187bfa36
-ms.sourcegitcommit: d0557f757cfa48330ed57e966033891d10f03688
+ms.openlocfilehash: 60010492f7f59a380b274f2b7d3f4a3cea1b2a93
+ms.sourcegitcommit: 0d8fb571024f134d7480fe14cffc5e31a687d356
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/06/2022
-ms.locfileid: "68492784"
+ms.lasthandoff: 10/20/2022
+ms.locfileid: "68646119"
 ---
 # <a name="technological-partners-of-microsoft-365-defender"></a>Socios tecnológicos de Microsoft 365 Defender
 
@@ -70,7 +72,7 @@ Las siguientes son las categorías de la solución:
 | [Microsoft Sentinel](https://go.microsoft.com/fwlink/?linkid=2201962)| Microsoft| Microsoft Sentinel es una solución escalable, nativa de la nube, de administración de eventos e información de seguridad (SIEM) y orquestación, automatización y respuesta de seguridad (SOAR). Microsoft Sentinel ofrece análisis de seguridad inteligente e inteligencia sobre amenazas en toda la empresa, lo que proporciona una única solución para la detección de ataques, la visibilidad de amenazas, la búsqueda proactiva y la respuesta a amenazas. |
 | [ArcSight](https://go.microsoft.com/fwlink/?linkid=2202142)| Micro Focus  | ArcSight proporciona varias funcionalidades de análisis para la correlación, búsqueda, UEBA, respuesta mejorada y automatizada y administración de registros. |
 | [Splunk SOAR](https://go.microsoft.com/fwlink/?linkid=2201773) | Splunk | Splunk SOAR organiza flujos de trabajo y automatiza las tareas en segundos para trabajar de forma más inteligente y responder más rápido. |
-| [Respuesta a incidentes de seguridad](https://go.microsoft.com/fwlink/?linkid=2201874)| ServiceNow | La aplicación Respuesta a incidentes de seguridad de ServiceNow® realiza un seguimiento del progreso de los incidentes de seguridad desde la detección y el análisis inicial, a través de la contención, erradicación y recuperación, y hasta la revisión final posterior al incidente, knowledge base creación y cierre de artículos.|
+| [Respuesta a incidentes de seguridad](https://go.microsoft.com/fwlink/?linkid=2201874)| ServiceNow | La aplicación Respuesta a incidentes de seguridad de ServiceNow® realiza un seguimiento del progreso de los incidentes de seguridad desde la detección y el análisis inicial, a través de la contención, erradicación y recuperación, y hasta la revisión final posterior al incidente, ज्ञानाधार creación y cierre de artículos.|
 | [Swimlane](https://go.microsoft.com/fwlink/?linkid=2202140)| Swimlane Inc | Automatiza las funcionalidades de respuesta a incidentes con Swimlane (SOAR) y Microsoft Defender.  |
 | [InsightConnect](https://go.microsoft.com/fwlink/?linkid=2201877)  | Rapid7 | InsightConnect proporciona una solución de orquestación, automatización y respuesta de seguridad que acelera los procesos de administración de vulnerabilidades y respuesta a incidentes. |
 | [Demisto, una empresa de Palo Alto Networks](https://go.microsoft.com/fwlink/?linkid=2201777) | Palo Alto Networks | Demisto se integra con Microsoft Defender para punto de conexión para permitir que los equipos de seguridad organicen y automaticen la supervisión, el enriquecimiento y la respuesta de seguridad de los puntos de conexión. |
@@ -98,7 +100,7 @@ Las siguientes son las categorías de la solución:
 
 | Nombre del producto | Proveedor | Descripción|
 | --------- | ---------- | ---------- |
-| [Administrador de directivas de Aruba ClearPass](https://go.microsoft.com/fwlink/?linkid=2201878)| Aruba, una empresa de Hewlett Packard Enterprise  | La Access Control de red aplica directivas coherentes y controles de seguridad pormenorizados a redes cableadas e inalámbricas |
+| [Administrador de directivas de Aruba ClearPass](https://go.microsoft.com/fwlink/?linkid=2201878)| Aruba, una empresa de Hewlett Packard Enterprise  | Network Access Control aplica directivas coherentes y controles de seguridad pormenorizados a redes cableadas e inalámbricas |
 | [Detección y respuesta de red de Vectra (NDR)](https://go.microsoft.com/fwlink/?linkid=2201969) | Vectra | Vectra aplica inteligencia artificial & investigación de seguridad para detectar y responder a ciberataques en tiempo real. |
 | [Hexágono azul para la red](https://go.microsoft.com/fwlink/?linkid=2201780)| Hexágono azul | Blue Hexagon ha creado la primera plataforma de aprendizaje profundo en tiempo real de la industria para la protección contra amenazas de red.|
 | [CyberMDX](https://go.microsoft.com/fwlink/?linkid=2201880)| CyberMDX | Cyber MDX integra la visibilidad completa de los recursos sanitarios, la prevención de amenazas y el repositorio en su entorno de Microsoft Defender para punto de conexión. |

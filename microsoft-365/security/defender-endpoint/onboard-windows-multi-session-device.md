@@ -8,7 +8,7 @@ ms.sitesec: library
 ms.pagetype: security
 ms.localizationpriority: medium
 audience: ITPro
-ms.topic: article
+ms.topic: conceptual
 author: dansimp
 ms.author: dansimp
 ms.custom: nextgen
@@ -19,12 +19,12 @@ ms.collection:
 - tier3
 ms.subservice: mde
 search.appverid: met150
-ms.openlocfilehash: 572c24f1147dacf5e2c96bffceb0eb999d141a0a
-ms.sourcegitcommit: 8d3c027592a638f411f87d89772dd3d39e92aab0
+ms.openlocfilehash: f3933df20e0f2e63729a62c625af02d93d929dd5
+ms.sourcegitcommit: 0d8fb571024f134d7480fe14cffc5e31a687d356
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/12/2022
-ms.locfileid: "68537146"
+ms.lasthandoff: 10/20/2022
+ms.locfileid: "68641345"
 ---
 # <a name="onboard-windows-devices-in-azure-virtual-desktop"></a>Incorporación de dispositivos Windows en Azure Virtual Desktop
 
@@ -85,11 +85,11 @@ En este escenario se usa un script de ubicación central y se ejecuta mediante u
 
 2. Extraiga el contenido del archivo .zip en una ubicación compartida de solo lectura a la que pueda acceder el dispositivo. Debe tener una carpeta denominada **OptionalParamsPolicy** y los archivos **WindowsDefenderATPOnboardingScript.cmd** y **Onboard-NonPersistentMachine.ps1**.
 
-##### <a name="use-group-policy-management-console-to-run-the-script-when-the-virtual-machine-starts"></a>Use directiva de grupo consola de administración para ejecutar el script cuando se inicie la máquina virtual.
+##### <a name="use-group-policy-management-console-to-run-the-script-when-the-virtual-machine-starts"></a>Uso de समूह नीति consola de administración para ejecutar el script cuando se inicia la máquina virtual
 
-1. Abra la consola de administración de directiva de grupo (GPMC), haga clic con el botón derecho en el objeto directiva de grupo (GPO) que desea configurar y haga clic en **Editar**.
+1. Abra la consola de administración de समूह नीति (GPMC), haga clic con el botón derecho en el objeto de समूह नीति (GPO) que desea configurar y haga clic en **Editar**.
 
-2. En el Editor de administración de directiva de grupo, vaya a Configuración **del equipo** \> **Preferencias** \> **Configuración del panel de control**.
+2. En el Editor de administración de समूह नीति, vaya a Configuración **del equipo** \> **Preferencias** \> **Configuración del panel de control**.
 
 3. Haga clic con el botón derecho en **Tareas programadas**, haga clic en **Nuevoy**, a continuación, haga clic en **Tarea inmediata** (al menos Windows 7).
 
@@ -114,7 +114,7 @@ Si planea administrar las máquinas mediante una herramienta de administración,
 Para obtener más información, consulte [Incorporación de dispositivos Windows mediante Configuration Manager](configure-endpoints-sccm.md).
 
 > [!WARNING]
-> Si tiene previsto usar la [referencia de reglas de reducción de superficie expuesta a ataques](attack-surface-reduction-rules-reference.md), tenga en cuenta que no se debe usar la regla "[Bloquear las creaciones de procesos que se originen a partir de comandos PSExec y WMI](attack-surface-reduction-rules-reference.md#block-process-creations-originating-from-psexec-and-wmi-commands)", ya que esa regla no es compatible con la administración a través de Microsoft Endpoint Configuration Manager. La regla bloquea los comandos WMI que el cliente Configuration Manager usa para funcionar correctamente.
+> Si tiene previsto usar la [referencia de reglas de reducción de superficie expuesta a ataques](attack-surface-reduction-rules-reference.md), tenga en cuenta que no se debe usar la regla "[Bloquear las creaciones de procesos que se originen a partir de comandos PSExec y WMI](attack-surface-reduction-rules-reference.md#block-process-creations-originating-from-psexec-and-wmi-commands)", ya que esa regla no es compatible con la administración a través de Microsoft Endpoint Configuration Manager. La regla bloquea los comandos WMI que el cliente de Configuration Manager usa para funcionar correctamente.
 
 > [!TIP]
 > Después de incorporar el dispositivo, puede optar por ejecutar una prueba de detección para comprobar que el dispositivo está incorporado correctamente al servicio. Para obtener más información, consulte [Ejecución de una prueba de detección en un dispositivo Microsoft Defender para punto de conexión recién incorporado](run-detection-test.md).

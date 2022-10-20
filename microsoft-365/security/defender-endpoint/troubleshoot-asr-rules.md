@@ -16,18 +16,18 @@ manager: dansimp
 ms.custom:
 - asr
 - admindeeplinkDEFENDER
-ms.topic: article
+ms.topic: conceptual
 ms.subservice: mde
 ms.collection:
 - m365-security
 - tier3
 search.appverid: met150
-ms.openlocfilehash: 96b7600931d78e6ad1ada5197a79393efb4f1abb
-ms.sourcegitcommit: 4e42bafee965446f44f7f57d1defed2b9b24fce8
+ms.openlocfilehash: 08dc813b4ea0412d68aa41f6fed96e2e6a715d50
+ms.sourcegitcommit: 0d8fb571024f134d7480fe14cffc5e31a687d356
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/30/2022
-ms.locfileid: "68229314"
+ms.lasthandoff: 10/20/2022
+ms.locfileid: "68637406"
 ---
 # <a name="report-and-troubleshoot-microsoft-defender-for-endpoint-asr-rules"></a>Informar y solucionar problemas Microsoft Defender para punto de conexión reglas de ASR
 
@@ -107,11 +107,11 @@ Get-MPPreference | Select-Object -ExpandProperty**AttackSurfaceReductionRules_Ac
 
 ### <a name="querying-blocking-and-auditing-events"></a>Consulta de eventos de bloqueo y auditoría
 
-Los eventos de regla de ASR se pueden ver en el registro de Windows Defender.
+Los eventos de regla de ASR se pueden ver en el registro de Windows डिफेन्डर.
 
-Para acceder a ella, abra Windows Visor de eventos y vaya a Registros de **aplicaciones y servicios** \> **de Microsoft** \> **Windows** \> **Windows Defender** \> **Operativo**.
+Para acceder a ella, abra Windows घटना दर्शक y vaya a **Registros de aplicaciones y servicios** \> **de Microsoft** \> **Windows** \> **Windows डिफेन्डर** \> **Operativo**.
 
-:::image type="content" source="images/eventviewerscrnew.png" alt-text="Página Visor de eventos" lightbox="images/eventviewerscrnew.png":::
+:::image type="content" source="images/eventviewerscrnew.png" alt-text="Página घटना दर्शक" lightbox="images/eventviewerscrnew.png":::
 
 ## <a name="microsoft-defender-antimalware-protection-logs"></a>registros de protección antimalware de Microsoft Defender
 
@@ -119,7 +119,7 @@ También puede ver los eventos de regla a través de la herramienta de línea de
 
 Puede encontrar esta utilidad en *%ProgramFiles%\Windows Defender\MpCmdRun.exe*. Debe ejecutarlo desde un símbolo del sistema con privilegios elevados (es decir, ejecutarlo como Administración).
 
-Para generar la información de soporte técnico, escriba *MpCmdRun.exe -getfiles*. Después de un tiempo, varios registros se empaquetarán en un archivo (MpSupportFiles.cab) y estarán disponibles en *C:\ProgramData\Microsoft\Windows Defender\Support*.
+Para generar la información de soporte técnico, escriba *MpCmdRun.exe -getfiles*. Después de un tiempo, varios registros se empaquetarán en un archivo (MpSupportFiles.cab) y estarán disponibles en *C:\ProgramData\Microsoft\Windows डिफेन्डर\Support*.
 
 :::image type="content" source="images/malware-prot-logsnew.png" alt-text="Registros de protección contra malware" lightbox="images/malware-prot-logsnew.png":::
 
@@ -127,6 +127,6 @@ Extraiga ese archivo y tendrá muchos archivos disponibles para solucionar probl
 
 Los archivos más relevantes son los siguientes:
 
-- **MPOperationalEvents.txt**: este archivo contiene el mismo nivel de información que se encuentra en Visor de eventos para el registro operativo de Windows Defender.
-- **MPRegistry.txt**: en este archivo puede analizar todas las configuraciones de Windows Defender actuales, desde el momento en que se capturaron los registros de soporte técnico.
-- **MPLog.txt**: este registro contiene información más detallada sobre todas las acciones o operaciones del Windows Defender.
+- **MPOperationalEvents.txt**: este archivo contiene el mismo nivel de información que se encuentra en घटना दर्शक para el registro operativo de Windows डिफेन्डर.
+- **MPRegistry.txt**: en este archivo puede analizar todas las configuraciones de Windows डिफेन्डर actuales, desde el momento en que se capturaron los registros de soporte técnico.
+- **MPLog.txt**: este registro contiene información más detallada sobre todas las acciones o operaciones de la Windows डिफेन्डर.

@@ -19,12 +19,12 @@ ms.collection:
 - m365initiative-compliance
 - highpri
 ms.custom: admindeeplinkCOMPLIANCE
-ms.openlocfilehash: 9b8ef92016ea87e69cf1284c4ae740a3978f1fba
-ms.sourcegitcommit: 04e517c7e00323b5c33d8ea937115725cf2cfd4d
+ms.openlocfilehash: 5d3e889966576f4255de2442e7725d616448d555
+ms.sourcegitcommit: 0d8fb571024f134d7480fe14cffc5e31a687d356
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/13/2022
-ms.locfileid: "68564594"
+ms.lasthandoff: 10/20/2022
+ms.locfileid: "68645041"
 ---
 # <a name="get-started-with-insider-risk-management"></a>Introducción a la administración de riesgos internos
 
@@ -98,15 +98,19 @@ En función de cómo desee administrar las directivas y alertas de administraci�
 
 Al trabajar con la administración de riesgos internos, elegirá entre estas opciones de grupo de roles y las acciones de solución:
 
-|Acciones|Administración de riesgos de Insider|Administración de riesgos internos Administración|Analistas de administración de riesgos internos|Investigadores de administración de riesgos internos|Auditores de administración de riesgos internos|
-|---|---|---|---|---|---|
-|Configuración de directivas y opciones|Sí|Sí|No|No|No|
-|Información de análisis de acceso|Sí|Sí|Sí|No|No|
-|Acceso & investigar alertas|Sí|No|Sí|Sí|No|
-|Acceso & investigar casos|Yes|No|Sí|Sí|No|
-|Acceso & ver el Explorador de contenido|Yes|No|No|Sí|No|
-|Configuración de plantillas de aviso|Yes|No|Sí|Sí|No|
-|Ver & exportar registros de auditoría|Sí|No|No|No|Sí|
+|**Acciones**|**Administración de riesgos internos**|**Administración de riesgos internos Administración**|**Analistas de administración de riesgos internos**|**Investigadores de administración de riesgos internos**|**Auditores de administración de riesgos internos**|**Aprobadores de administración de riesgos internos**|
+|---|---|---|---|---|---|---|
+|Configuración de directivas y opciones|Sí|Sí|No|No|No|No|
+|Información de análisis de acceso|Sí|Sí|Sí|No|No|No|
+|Acceso & investigar alertas|Sí|No|Sí|Sí|No|No|
+|Acceso & investigar casos|Sí|No|Sí|Sí|No|No|
+|Acceso & ver el Explorador de contenido|Yes|No|No|Sí|No|No|
+|Configuración de plantillas de aviso|Sí|No|Sí|Sí|No|No|
+|Ver & exportar registros de auditoría|Sí|No|No|No|Sí|No|
+|Acceso & ver capturas de pruebas forenses|Sí|No|No|Sí|No|No|
+|Creación de una solicitud de captura de pruebas forenses|Sí|Sí|No|No|No|No|
+|Aprobación de solicitudes de captura de pruebas forenses|Sí|No|No|No|No|Sí|
+|Visualización del informe de estado del dispositivo|Sí|Sí|No|No|No|No|
 
 > [!IMPORTANT]
 > Asegúrese de tener siempre al menos un usuario en los grupos de roles *integrados Insider Risk Management* o *Insider Risk Management Administración* (según la opción que elija) para que la configuración de administración de riesgos internos no se incluya en un escenario de "administrador cero" si determinados usuarios abandonan la organización.
@@ -237,6 +241,12 @@ Si crea directivas de infracción de seguridad, deberá tener Microsoft Defender
 
 Consulte el artículo [Configuración de características avanzadas en Defender para punto de conexión para](/windows/security/threat-protection/microsoft-defender-atp/advanced-features#share-endpoint-alerts-with-microsoft-compliance-center) obtener instrucciones paso a paso para configurar Defender para punto de conexión para la integración de administración de riesgos internos. Después de configurar el Microsoft Defender para punto de conexión, vuelva a estos pasos de configuración.
 
+### <a name="configure-forensic-evidence-optional"></a>Configuración de pruebas forenses (opcional)
+
+Tener contexto visual es fundamental para que los equipos de seguridad durante las investigaciones forenses obtengan mejor información sobre las actividades de usuario de riesgo que pueden provocar un incidente de seguridad. Con desencadenadores de eventos personalizables y controles integrados de protección de la privacidad de los usuarios, la evidencia forense permite la captura personalizable entre dispositivos para ayudar a su organización a mitigar, comprender y responder mejor a posibles riesgos de datos, como la filtración de datos no autorizados de datos confidenciales.
+
+Consulte el artículo [Introducción a la evidencia forense de administración de riesgos](/microsoft-365/compliance/insider-risk-management-forensic-evidence-configure) internos para obtener instrucciones paso a paso para configurar pruebas forenses para su organización.
+
 ## <a name="step-5-required-configure-insider-risk-settings"></a>Paso 5 (obligatorio): Configuración de los valores de riesgo internos
 
 [La configuración de riesgos internos](insider-risk-management-settings.md) se aplica a todas las directivas de administración de riesgos internos, independientemente de la plantilla que elija al crear una directiva. La configuración se ajusta con el control de la **Configuración de riesgos internos** que se encuentra en la parte superior de todas las pestañas de administración de riesgos internos. Estas configuraciones controlan la privacidad, los indicadores, las detecciones inteligentes y mucho más.
@@ -262,7 +272,7 @@ Antes de configurar una directiva, defina los siguientes valores de riesgo inter
 8. En la página **Flujos de Power Automate** , configure un flujo a partir de plantillas de flujo de riesgo internos o cree un nuevo flujo. Consulte el artículo [Introducción a la configuración de administración de riesgos](insider-risk-management-settings.md#power-automate-flows-preview) internos para obtener instrucciones paso a paso.
 9. En la **página Activos prioritarios**, configure los recursos de prioridad para usar los datos de la plataforma de control físico y acceso importada por el conector de badging físico. Consulte el artículo [Introducción a la configuración de administración de riesgos](insider-risk-management-settings.md#priority-physical-assets-preview) internos para obtener instrucciones paso a paso.
 10. En la página **Microsoft Teams** , habilite la integración de Microsoft Teams con la administración de riesgos internos para crear automáticamente un equipo para la colaboración de casos o usuarios. Consulte el artículo [Introducción a la configuración de administración de riesgos](insider-risk-management-settings.md#microsoft-teams-preview) internos para obtener instrucciones paso a paso.
-11. Seleccione **Guardar** para habilitar esta configuración para las directivas de riesgo internos.
+12. Seleccione **Guardar** para habilitar esta configuración para las directivas de riesgo internos.
 
 ## <a name="step-6-required-create-an-insider-risk-management-policy"></a>Paso 6 (obligatorio): Creación de una directiva de administración de riesgos internos
 

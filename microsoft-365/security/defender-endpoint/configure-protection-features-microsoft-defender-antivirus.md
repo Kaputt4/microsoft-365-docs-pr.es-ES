@@ -10,7 +10,7 @@ ms.pagetype: security
 ms.localizationpriority: medium
 author: denisebmsft
 ms.author: deniseb
-ms.topic: article
+ms.topic: conceptual
 ms.custom: nextgen
 ms.reviewer: ''
 manager: dansimp
@@ -18,12 +18,12 @@ ms.collection:
 - m365-security
 - tier2
 search.appverid: met150
-ms.openlocfilehash: b9b2bd120e622238d681e6208361bd58f02e16f0
-ms.sourcegitcommit: 0b7070ec119e00e0dafe030bbfbef0ae5c9afa19
+ms.openlocfilehash: 4fb7f87f755b443c6765a1782b4e9794bb38d716
+ms.sourcegitcommit: 0d8fb571024f134d7480fe14cffc5e31a687d356
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/29/2022
-ms.locfileid: "68202659"
+ms.lasthandoff: 10/20/2022
+ms.locfileid: "68643457"
 ---
 # <a name="configure-behavioral-heuristic-and-real-time-protection"></a>Configurar la protección en tiempo real, heurística y de comportamiento
 
@@ -43,7 +43,7 @@ Microsoft Defender Antivirus usa varios métodos para proporcionar protección c
 - Análisis siempre activado, mediante la supervisión del comportamiento de archivos y procesos y otras heurísticas (también conocida como "protección en tiempo real")
 - Actualizaciones de protección dedicadas basadas en el aprendizaje automático, el análisis de macrodatos humanos y automatizados y la investigación en profundidad de la resistencia a amenazas
 
-Puede configurar cómo Microsoft Defender Antivirus usa estos métodos con directiva de grupo, Administración de configuración de System Center, cmdlets de PowerShell e Instrumental de administración de Windows (WMI).
+Puede configurar cómo Microsoft Defender Antivirus usa estos métodos con समूह नीति, System Center Configuration Manage, cmdlets de PowerShell e Instrumental de administración de Windows (WMI).
 
 En esta sección se describe la configuración para el examen siempre activo, incluido cómo detectar y bloquear aplicaciones que se consideran no seguras, pero que pueden no detectarse como malware.
 

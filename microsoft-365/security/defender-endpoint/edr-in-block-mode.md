@@ -8,7 +8,7 @@ ms.author: deniseb
 manager: dansimp
 ms.reviewer: shwetaj
 audience: ITPro
-ms.topic: article
+ms.topic: conceptual
 ms.service: microsoft-365-security
 ms.localizationpriority: medium
 ms.custom:
@@ -21,12 +21,12 @@ ms.collection:
 - tier2
 ms.subservice: mde
 search.appverid: met150
-ms.openlocfilehash: 4abed10794df5fe4e1789bff7014e32ea304e937
-ms.sourcegitcommit: 0b7070ec119e00e0dafe030bbfbef0ae5c9afa19
+ms.openlocfilehash: 6f9c88b4edde50f4a23d20784d8dbd64a52f15b9
+ms.sourcegitcommit: 0d8fb571024f134d7480fe14cffc5e31a687d356
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/29/2022
-ms.locfileid: "68186445"
+ms.lasthandoff: 10/20/2022
+ms.locfileid: "68643083"
 ---
 # <a name="endpoint-detection-and-response-edr-in-block-mode"></a>Detección y respuesta de Endpoint (EDR) en el modo bloqueo
 
@@ -145,7 +145,7 @@ Para los puntos de conexión que ejecutan Windows 10, Windows 11, Windows Server
 
 Para obtener más información, consulte [compatibilidad con Microsoft Defender Antivirus](microsoft-defender-antivirus-compatibility.md).
 
-### <a name="how-do-i-confirm-microsoft-defender-antivirus-is-in-active-or-passive-mode"></a>Cómo confirmar Microsoft Defender Antivirus está en modo activo o pasivo?
+### <a name="how-do-i-confirm-microsoft-defender-antivirus-is-in-active-or-passive-mode"></a>मैले कसरी confirmar Microsoft Defender Antivirus está en modo activo o pasivo?
 
 Para confirmar si Microsoft Defender Antivirus se ejecuta en modo activo o pasivo, puede usar el símbolo del sistema o PowerShell en un dispositivo que ejecute Windows.
 
@@ -154,7 +154,7 @@ Para confirmar si Microsoft Defender Antivirus se ejecuta en modo activo o pasiv
 |PowerShell|1. Seleccione el menú Inicio, comience a escribir `PowerShell`y, a continuación, abra Windows PowerShell en los resultados.<br/><br/>2. Escriba `Get-MpComputerStatus`.<br/><br/>3. En la lista de resultados, en la fila **AMRunningMode** , busque uno de los siguientes valores:<br/>- `Normal`<br/>- `Passive Mode`<br/><br/>Para obtener más información, consulte [Get-MpComputerStatus](/powershell/module/defender/get-mpcomputerstatus).|
 |Símbolo del sistema|<ol><li>Seleccione el menú Inicio, empiece a escribir `Command Prompt`y, a continuación, abra el símbolo del sistema de Windows en los resultados.</li><li>Tipo `sc query windefend`.</li><li>En la lista de resultados, en la fila **STATE** , confirme que el servicio se está ejecutando.</li></ol>|
 
-### <a name="how-do-i-confirm-that-edr-in-block-mode-is-turned-on-with-microsoft-defender-antivirus-in-passive-mode"></a>Cómo confirmar que EDR en modo de bloque está activado con Microsoft Defender Antivirus en modo pasivo?
+### <a name="how-do-i-confirm-that-edr-in-block-mode-is-turned-on-with-microsoft-defender-antivirus-in-passive-mode"></a>मैले कसरी confirmar que EDR en modo de bloque está activado con Microsoft Defender Antivirus en modo pasivo?
 
 Puede usar PowerShell para confirmar que EDR en modo de bloque está activado con Microsoft Defender Antivirus en modo pasivo.
 

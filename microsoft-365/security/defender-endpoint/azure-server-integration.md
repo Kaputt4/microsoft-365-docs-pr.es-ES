@@ -17,13 +17,13 @@ audience: ITPro
 ms.collection:
 - m365-security
 - tier3
-ms.topic: article
-ms.openlocfilehash: 44e49bab1f0db3eda9216f3b5f6ec0deaac24306
-ms.sourcegitcommit: b9282493c371d59c2e583b9803825096499b5e2c
+ms.topic: conceptual
+ms.openlocfilehash: 65a26cf05531ecea3c5c1f95e4013d283d677adf
+ms.sourcegitcommit: 0d8fb571024f134d7480fe14cffc5e31a687d356
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/29/2022
-ms.locfileid: "68149855"
+ms.lasthandoff: 10/20/2022
+ms.locfileid: "68647307"
 ---
 # <a name="integration-with-microsoft-defender-for-cloud"></a>Integración con Microsoft Defender for Cloud
 
@@ -49,7 +49,7 @@ En esta integración se incluyen las siguientes funcionalidades:
 > - Cuando se usa Microsoft Defender for Cloud para supervisar servidores, se crea automáticamente un inquilino de Defender para punto de conexión (en EE. UU. para usuarios de EE. UU., en la UE para usuarios europeos y británicos).<br>
 Los datos recopilados por Defender para punto de conexión se almacenan en la ubicación geográfica del inquilino tal como se identifica durante el aprovisionamiento.
 > - Si usa Defender para punto de conexión antes de usar Microsoft Defender for Cloud, los datos se almacenarán en la ubicación que especificó al crear el inquilino, incluso si se integra con Microsoft Defender for Cloud más adelante.
-> - Una vez configurado, no se puede cambiar la ubicación donde se almacenan los datos. Si necesita mover los datos a otra ubicación, debe ponerse en contacto con Soporte técnico de Microsoft para restablecer el inquilino. <br>
+> - Una vez configurado, no se puede cambiar la ubicación donde se almacenan los datos. Si necesita mover los datos a otra ubicación, debe ponerse en contacto con el soporte técnico de Microsoft para restablecer el inquilino. <br>
 La supervisión de puntos de conexión de servidor que usan esta integración se ha deshabilitado para Office 365 clientes de GCC.
 
 

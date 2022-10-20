@@ -2,7 +2,7 @@
 title: Amenazas sin archivos
 ms.reviewer: ''
 description: Obtenga información sobre las categorías de amenazas sin archivos y malware que viven fuera de la tierra
-keywords: malware sin archivos, sin archivos, viviendo fuera de la tierra, lolbins, amsi, supervisión del comportamiento, análisis de memoria, protección del sector de arranque, seguridad, malware, Windows Defender ATP, antivirus, AV, Microsoft Defender ATP, protección de próxima generación
+keywords: malware sin archivos, sin archivos, viviendo fuera de la tierra, lolbins, amsi, supervisión del comportamiento, análisis de memoria, protección del sector de arranque, seguridad, malware, Windows डिफेन्डर ATP, antivirus, AV, Microsoft Defender ATP, protección de próxima generación
 ms.service: microsoft-365-security
 ms.mktglfcycl: secure
 ms.sitesec: library
@@ -14,14 +14,14 @@ audience: ITPro
 ms.collection:
 - m365-security
 - tier2
-ms.topic: article
+ms.topic: conceptual
 search.appverid: met150
-ms.openlocfilehash: 41444a5fbc49aee61fe95359a876de83b72ba67c
-ms.sourcegitcommit: 4e42bafee965446f44f7f57d1defed2b9b24fce8
+ms.openlocfilehash: b86ccbfeef82833d3df8597cd1a82cd25f1ab383
+ms.sourcegitcommit: 0d8fb571024f134d7480fe14cffc5e31a687d356
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/30/2022
-ms.locfileid: "68227314"
+ms.lasthandoff: 10/20/2022
+ms.locfileid: "68640420"
 ---
 # <a name="fileless-threats"></a>Amenazas sin archivos
 

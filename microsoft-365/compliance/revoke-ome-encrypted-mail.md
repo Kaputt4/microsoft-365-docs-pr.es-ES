@@ -11,21 +11,21 @@ ms.service: O365-seccomp
 ms.localizationpriority: medium
 ms.date: 05/02/2022
 ms.collection:
-- Strat_O365_IP
-- M365-security-compliance
+- tier1
+- purview-compliance
 search.appverid:
 - MET150
 description: Como administrador y como remitente de mensajes, puede revocar determinados correos electrónicos cifrados con cifrado avanzado de mensajes de Microsoft Purview.
-ms.openlocfilehash: b27ea41d1d91b825450d39ade96afdef04c0fdea
-ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
+ms.openlocfilehash: 739165155817f3063bfb87aaae0bce7b3aa02931
+ms.sourcegitcommit: 0d8fb571024f134d7480fe14cffc5e31a687d356
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/06/2022
-ms.locfileid: "66639432"
+ms.lasthandoff: 10/20/2022
+ms.locfileid: "68643589"
 ---
 # <a name="revoke-email-encrypted-by-advanced-message-encryption"></a>Revocación del correo electrónico cifrado mediante cifrado avanzado de mensajes
 
-La revocación de correo electrónico se ofrece como parte del cifrado avanzado de mensajes de Microsoft Purview. El cifrado avanzado de mensajes de Microsoft Purview se incluye en [Microsoft 365 Enterprise E5](https://www.microsoft.com/microsoft-365/enterprise/home), Office 365 E5, Microsoft 365 E5 (precios del personal sin ánimo de lucro), Office 365 Enterprise E5 (precios del personal sin ánimo de lucro) y Office 365 Educación A5. Para usar las funciones de revocación y expiración de Advanced Message Encryption, habilite la opción **Cifrado Premium en Office 365** en la licencia de E5.
+Email revocación se ofrece como parte del cifrado avanzado de mensajes de Microsoft Purview. El cifrado avanzado de mensajes de Microsoft Purview se incluye en [Microsoft 365 Enterprise E5](https://www.microsoft.com/microsoft-365/enterprise/home), Office 365 E5, Microsoft 365 E5 (precios del personal sin ánimo de lucro), Office 365 Enterprise E5 (precios del personal sin ánimo de lucro) y Office 365 Educación A5. Para usar las funciones de revocación y expiración de Advanced Message Encryption, habilite la opción **Cifrado Premium en Office 365** en la licencia de E5.
 
 Si su organización tiene una suscripción que no incluye el cifrado avanzado de mensajes de Microsoft Purview, puede comprarlo con el complemento de SKU de Cumplimiento de Microsoft 365 E5 para Microsoft 365 E3, Microsoft 365 E3 (precios del personal sin ánimo de lucro) o el Cumplimiento avanzado de Office 365 complemento de SKU para Microsoft 365 E3, Microsoft 365 E3 (precios del personal sin ánimo de lucro) o SKU de Office 365.
 
@@ -36,6 +36,8 @@ Si un mensaje se cifró mediante cifrado avanzado de mensajes de Microsoft Purvi
 > [!NOTE]
 > Para garantizar que la capacidad de realizar un seguimiento y revocar mensajes OME está disponible, debe agregar una plantilla de personalización de marca. Consulte [Incorporación de la marca de su organización a los mensajes cifrados](add-your-organization-brand-to-encrypted-messages.md)
   
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
+
 ## <a name="encrypted-emails-that-you-can-revoke"></a>Correos electrónicos cifrados que puede revocar
 
 Los administradores y los remitentes de mensajes pueden revocar correos electrónicos cifrados si el destinatario recibió un correo electrónico cifrado basado en vínculos y con marca. Si el destinatario recibió una experiencia insertada nativa en un cliente de Outlook compatible, no puede revocar el mensaje.

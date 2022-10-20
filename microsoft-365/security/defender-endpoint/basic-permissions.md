@@ -15,14 +15,14 @@ audience: ITPro
 ms.collection:
 - m365-security
 - tier2
-ms.topic: article
+ms.topic: conceptual
 search.appverid: met150
-ms.openlocfilehash: d00b58ed99083c5d03de44db01feb4f8bacb8574
-ms.sourcegitcommit: b9282493c371d59c2e583b9803825096499b5e2c
+ms.openlocfilehash: a90250b69315c954688849337a985f2a99afa724
+ms.sourcegitcommit: 0d8fb571024f134d7480fe14cffc5e31a687d356
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/29/2022
-ms.locfileid: "68142455"
+ms.lasthandoff: 10/20/2022
+ms.locfileid: "68641741"
 ---
 # <a name="use-basic-permissions-to-access-the-portal"></a>Uso de permisos básicos para acceder al portal
 
@@ -84,7 +84,7 @@ Siga estos pasos para asignar roles de seguridad:
 
 Para obtener más información, consulte [Adición o eliminación de miembros del grupo mediante Azure Active Directory](/azure/active-directory/fundamentals/active-directory-groups-members-azure-portal).
 
-## <a name="assign-user-access-using-the-azure-portal"></a>Asignar acceso de usuario mediante el Azure Portal
+## <a name="assign-user-access-using-the-azure-portal"></a>Asignación de acceso de usuario mediante Azure Portal
 
 Para obtener más información, consulte [Asignación de roles de administrador y no administrador a usuarios con Azure Active Directory](/azure/active-directory/fundamentals/active-directory-users-assign-role-azure-portal).
 

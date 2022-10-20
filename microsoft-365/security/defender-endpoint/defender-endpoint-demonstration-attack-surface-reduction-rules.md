@@ -16,24 +16,22 @@ audience: ITPro
 ms.collection:
 - m365-security
 - tier2
-ms.topic: article
+ms.topic: conceptual
 ms.subservice: mde
-ms.openlocfilehash: 772600ddb31b5819718a23e340b832dde18ced6e
-ms.sourcegitcommit: 4f8200453d347de677461f27eb5a3802ce5cc888
+ms.openlocfilehash: 10973a8191d12703a7520d95c3b13cda8493e753
+ms.sourcegitcommit: 0d8fb571024f134d7480fe14cffc5e31a687d356
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/12/2022
-ms.locfileid: "68543231"
+ms.lasthandoff: 10/20/2022
+ms.locfileid: "68643391"
 ---
-<!--- v-jweston resumes authorship and ms.authorship appx April-May 2023 ---> 
-
 # <a name="attack-surface-reduction-rules-demonstrations"></a>Demostraciones de reglas de reducción de superficie expuesta a ataques
 
 Las reglas de reducción de superficie expuesta a ataques (ASR) tienen como destino comportamientos específicos que suelen usar el malware y las aplicaciones malintencionadas para infectar máquinas, como:
 
 - Archivos ejecutables y scripts usados en aplicaciones de Office o correo web que intentan descargar o ejecutar archivos
 - Scripts ofuscados o sospechosos
-- Comportamientos que realizan las aplicaciones que no se incitan durante el trabajo diario normal
+- Comportamientos que realizan las aplicaciones que no se inician durante el trabajo diario normal
 
 ## <a name="scenario-requirements-and-setup"></a>Requisitos y configuración del escenario
 
@@ -60,14 +58,21 @@ Add-MpPreference -AttackSurfaceReductionRules_Ids 01443614-CD74-433A-B99E-2ECDC0
 Add-MpPreference -AttackSurfaceReductionRules_Ids 26190899-1602-49E8-8B27-EB1D0A1CE869 -AttackSurfaceReductionRules_Actions AuditMode
 Add-MpPreference -AttackSurfaceReductionRules_Ids 7674BA52-37EB-4A4F-A9A1-F0F9A1619A2C -AttackSurfaceReductionRules_Actions AuditMode
 ```
-### <a name="states"></a>Estados
-- Habilitado = Modo de bloque (1)
-- AuditMode = Modo de auditoría (2)
-- Disabled = Off (0)
+
+### <a name="rule-states"></a>Estados de regla
+
+|Estado | Modo| Valor numérico |
+|:---|:---|:---|
+| AuditMode | = Modo auditoría | 2 |
+| Habilitado | = Modo de bloque | 1 |
+| Deshabilitada | = Desactivado | 0 |
 
 ### <a name="verify-configuration"></a>Comprobación de la configuración
 
-- Get-MpPreference
+```powershell
+
+Get-MpPreference
+```
 
 ## <a name="test-files"></a>Archivos de prueba
 
@@ -92,12 +97,17 @@ Nota: algunos archivos de prueba tienen varias vulnerabilidades de seguridad inc
 
 ### <a name="setup"></a>Instalación
 
-Descargue y ejecute este [script de instalación](https://demo.wd.microsoft.com/Content/ASR_SetupScript.zip). Antes de ejecutar el script, establezca la directiva de ejecución en Sin restricciones mediante este comando de PowerShell: Set-ExecutionPolicy Sin restricciones
+Descargue y ejecute este [script de instalación](https://demo.wd.microsoft.com/Content/ASR_SetupScript.zip). Antes de ejecutar el script, establezca la directiva de ejecución en Sin restricciones mediante este comando de PowerShell:
+
+```powershell
+Set-ExecutionPolicy Unrestricted
+
+```
 
 En su lugar, puede realizar estos pasos manuales:
 
 1. Cree una carpeta en c: denominada demo, "c:\demo"
-2. Guarde este [archivo limpio](https://demo.wd.microsoft.com/Content/testfile_safe.txt) en c:\demo (necesitamos algo para cifrar)
+2. Guarde este [archivo limpio](https://demo.wd.microsoft.com/Content/testfile_safe.txt) en c:\demo.
 3. Habilite todas las reglas mediante los comandos de PowerShell anteriores.
 
 ### <a name="scenario-1-asr-blocks-a-test-file-with-multiple-vulnerabilities"></a>Escenario 1: ASR bloquea un archivo de prueba con varias vulnerabilidades
@@ -112,7 +122,7 @@ Debería ver inmediatamente una notificación "Acción bloqueada".
 ### <a name="scenario-2-asr-rule-blocks-the-test-file-with-the-corresponding-vulnerability"></a>Escenario 2: la regla ASR bloquea el archivo de prueba con la vulnerabilidad correspondiente
 
 1. Configure la regla que desea probar con el comando de PowerShell anterior.
-2. Ejemplo: Add-MpPreference -AttackSurfaceReductionRules_Ids D4F940AB-401B-4EfC-AADC-AD5F3C50688A -AttackSurfaceReductionRules_Actions Habilitado
+2. Ejemplo: `Add-MpPreference -AttackSurfaceReductionRules_Ids D4F940AB-401B-4EfC-AADC-AD5F3C50688A -AttackSurfaceReductionRules_Actions Enabled`
 3. Descargue y abra el archivo o documento de prueba de la regla que desea probar vinculada anteriormente, habilite la edición y el contenido si se le solicita
 4. Ejemplo: [Impedir que las aplicaciones de Office creen procesos secundarios](https://demo.wd.microsoft.com/Content/ransomware_testfile_doc.docm) D4F940AB-401B-4EFC-AADC-AD5F3C50688A
 

@@ -14,16 +14,16 @@ audience: ITPro
 ms.collection:
 - m365-security
 - tier3
-ms.topic: article
+ms.topic: conceptual
 ms.subservice: mde
 ms.custom: api
 search.appverid: met150
-ms.openlocfilehash: 1afc1527a352a6257345dfea829828c61162d560
-ms.sourcegitcommit: 0b7070ec119e00e0dafe030bbfbef0ae5c9afa19
+ms.openlocfilehash: 364e3a57ad590c5be36ed8ef044fac31e01738ab
+ms.sourcegitcommit: 0d8fb571024f134d7480fe14cffc5e31a687d356
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/29/2022
-ms.locfileid: "68180076"
+ms.lasthandoff: 10/20/2022
+ms.locfileid: "68641455"
 ---
 # <a name="fetch-alerts-from-mssp-customer-tenant"></a>Captura de alertas del inquilino del cliente de MSSP
 
@@ -56,7 +56,7 @@ Tendrá que crear una aplicación y concederle permisos para capturar alertas de
 
 1. Inicie sesión en el [portal de Azure AD](https://aad.portal.azure.com/).
 
-2. Seleccione **Azure Active Directory** \> **Registros de aplicaciones**.
+2. Seleccione **Registros de aplicaciones de** **Azure Active Directory**\>.
 
 3. Haga clic en **Nuevo registro**.
 

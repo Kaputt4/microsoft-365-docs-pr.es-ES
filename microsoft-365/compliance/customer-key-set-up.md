@@ -10,14 +10,15 @@ ms.localizationpriority: medium
 search.appverid:
 - MET150
 ms.collection:
-- M365-security-compliance
-description: Obtenga información sobre cómo configurar la clave de cliente.
-ms.openlocfilehash: d285d19eb00afdaea6c5c591caf32a9b4a482987
-ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
+- purview-compliance
+- tier1
+description: En este artículo se describen los pasos para crear y configurar los recursos de Azure necesarios y, a continuación, se proporcionan los pasos para configurar la clave de cliente.
+ms.openlocfilehash: 4d6c82efc996d0d10b619bf152ffbfb3d27b9d5f
+ms.sourcegitcommit: 0d8fb571024f134d7480fe14cffc5e31a687d356
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/06/2022
-ms.locfileid: "66642204"
+ms.lasthandoff: 10/20/2022
+ms.locfileid: "68641829"
 ---
 # <a name="set-up-customer-key"></a>Configuración de la clave de cliente
 
@@ -28,6 +29,8 @@ Configure Azure para poder usar la clave de cliente. En este artículo se descri
 > [!IMPORTANT]
 > Se recomienda encarecidamente seguir los procedimientos recomendados de este artículo. Se denominan **TIP** e **IMPORTANTE**. Clave de cliente proporciona control sobre las claves de cifrado raíz cuyo ámbito puede ser tan grande como toda la organización. Esto significa que los errores cometidos con estas claves pueden tener un gran impacto y pueden dar lugar a interrupciones del servicio o pérdida irrevocable de los datos.
   
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
+
 ## <a name="before-you-set-up-customer-key"></a>Antes de configurar la clave de cliente
 
 Antes de empezar, asegúrese de que tiene las suscripciones de Azure y las licencias M365/O365 adecuadas para su organización. Debe usar suscripciones de Azure de pago. Las suscripciones que obtuvo a través de Gratis, Evaluación, Patrocinios, Suscripciones de MSDN y las que se encuentran en Soporte técnico heredado no son aptas.
@@ -38,12 +41,12 @@ Antes de empezar, asegúrese de que tiene las suscripciones de Azure y las licen
 > - Office 365 E5
 > - Microsoft 365 E5
 > - Cumplimiento de Microsoft 365 E5
-> - SKU de gobernanza de Microsoft 365 E5 Information Protection &
+> - SKU de Microsoft 365 E5 Information Protection & Governance
 > - Seguridad y cumplimiento de Microsoft 365 para FLW
 
 Se seguirán admitiendo las licencias de Cumplimiento avanzado de Office 365 existentes.
 
-Para comprender los conceptos y procedimientos de este artículo, revise la documentación [de Azure Key Vault](/azure/key-vault/). Además, familiarícese con los términos usados en Azure, por ejemplo, [inquilino de Azure AD](/previous-versions/azure/azure-services/jj573650(v=azure.100)#what-is-an-azure-ad-tenant).
+Para comprender los conceptos y procedimientos de este artículo, revise la documentación [de Azure कि भल्ट](/azure/key-vault/). Además, familiarícese con los términos usados en Azure, por ejemplo, [inquilino de Azure AD](/previous-versions/azure/azure-services/jj573650(v=azure.100)#what-is-an-azure-ad-tenant).
   
 Si necesita más soporte técnico que la documentación, póngase en contacto con Microsoft Consulting Services (MCS), Premier Field Engineering (PFE) o con un asociado de Microsoft para obtener ayuda. Para proporcionar comentarios sobre la clave del cliente, incluida la documentación, envíe sus ideas, sugerencias y perspectivas a customerkeyfeedback@microsoft.com.
   
@@ -64,7 +67,7 @@ Completará la mayoría de estas tareas mediante la conexión remota a Azure Pow
   Este proceso de registro tardará cinco días laborables en completarse.
 - [Póngase en contacto con el alias de Microsoft correspondiente para continuar con el proceso.](#contact-the-corresponding-microsoft-alias-to-proceed-with-the-process)
 
-- [Creación de una Key Vault premium de Azure en cada suscripción](#create-a-premium-azure-key-vault-in-each-subscription)
+- [Creación de una कि भल्ट premium de Azure en cada suscripción](#create-a-premium-azure-key-vault-in-each-subscription)
 
 - [Asignación de permisos a cada almacén de claves](#assign-permissions-to-each-key-vault)
 
@@ -76,17 +79,17 @@ Completará la mayoría de estas tareas mediante la conexión remota a Azure Pow
 
 - [Comprobación del nivel de recuperación de las claves](#check-the-recovery-level-of-your-keys)
 
-- [Copia de seguridad de Azure Key Vault](#back-up-azure-key-vault)
+- [Copia de seguridad de Azure कि भल्ट](#back-up-azure-key-vault)
 
-- [Obtención del URI para cada clave de Azure Key Vault](#obtain-the-uri-for-each-azure-key-vault-key)
+- [Obtención del URI para cada clave de azure कि भल्ट](#obtain-the-uri-for-each-azure-key-vault-key)
   
-## <a name="complete-tasks-in-azure-key-vault-and-microsoft-fasttrack-for-customer-key"></a>Completar tareas en Azure Key Vault y Microsoft FastTrack para la clave de cliente
+## <a name="complete-tasks-in-azure-key-vault-and-microsoft-fasttrack-for-customer-key"></a>Completar tareas en Azure कि भल्ट y Microsoft FastTrack para la clave de cliente
 
-Complete estas tareas en Azure Key Vault. Deberá completar estos pasos para todos los DEP que use con la clave de cliente.
+Complete estas tareas en Azure कि भल्ट. Deberá completar estos pasos para todos los DEP que use con la clave de cliente.
   
 ### <a name="create-two-new-azure-subscriptions"></a>Creación de dos nuevas suscripciones de Azure
 
-La clave de cliente requiere dos suscripciones de Azure. Como procedimiento recomendado, Microsoft recomienda crear nuevas suscripciones de Azure para usarlas con la clave de cliente. Las claves de Azure Key Vault solo se pueden autorizar para las aplicaciones en el mismo inquilino de Azure Active Directory (Microsoft Azure Active Directory), debe crear las nuevas suscripciones con el mismo inquilino de Azure AD que se usa con su organización donde se asignarán los DEP. Por ejemplo, usar la cuenta profesional o educativa que tenga privilegios de administrador global en su organización. Para obtener pasos detallados, consulte [Registrarse en Azure como organización](/azure/active-directory/fundamentals/sign-up-organization).
+La clave de cliente requiere dos suscripciones de Azure. Como procedimiento recomendado, Microsoft recomienda crear nuevas suscripciones de Azure para usarlas con la clave de cliente. Las claves de Azure कि भल्ट solo se pueden autorizar para aplicaciones en el mismo inquilino de Azure Active Directory (Microsoft Azure Active Directory), debe crear las nuevas suscripciones con el mismo inquilino de Azure AD que se usa con la organización donde se asignarán los DEP. Por ejemplo, usar la cuenta profesional o educativa que tenga privilegios de administrador global en su organización. Para obtener pasos detallados, consulte [Registrarse en Azure como organización](/azure/active-directory/fundamentals/sign-up-organization).
   
 > [!IMPORTANT]
 > La clave de cliente requiere dos claves para cada directiva de cifrado de datos (DEP). Para ello, debe crear dos suscripciones de Azure. Como procedimiento recomendado, Microsoft recomienda que tenga miembros independientes de su organización que configuren una clave en cada suscripción. Solo debe usar estas suscripciones de Azure para administrar claves de cifrado para Office 365. Esto protege su organización en caso de que uno de los operadores elimine accidentalmente, intencionada o malintencionadamente o de otro modo no coincida con las claves de las que son responsables.
@@ -167,11 +170,11 @@ Una vez que reciba una notificación de Microsoft de que el registro se ha compl
 >
 > ![Período de retención obligatorio](../media/MandatoryRetentionPeriod.png)
 
-### <a name="create-a-premium-azure-key-vault-in-each-subscription"></a>Creación de una Key Vault premium de Azure en cada suscripción
+### <a name="create-a-premium-azure-key-vault-in-each-subscription"></a>Creación de una कि भल्ट premium de Azure en cada suscripción
 
-Los pasos para crear un almacén de claves se documentan en [Introducción con Azure Key Vault](/azure/key-vault/general/overview), que le guía a través de la instalación y el inicio de Azure PowerShell, la conexión a la suscripción de Azure, la creación de un grupo de recursos y la creación de un almacén de claves en ese grupo de recursos.
+Los pasos para crear un almacén de claves se documentan en [Introducción a Azure कि भल्ट](/azure/key-vault/general/overview), que le guía a través de la instalación y el inicio de Azure PowerShell, la conexión a la suscripción de Azure, la creación de un grupo de recursos y la creación de un almacén de claves en ese grupo de recursos.
   
-Al crear un almacén de claves, debe elegir una SKU: Estándar o Premium. La SKU estándar permite proteger las claves de Azure Key Vault con software (no hay ninguna protección de claves del Módulo de seguridad de hardware (HSM) y la SKU Premium permite el uso de HSM para la protección de claves de Key Vault. Clave de cliente acepta almacenes de claves que usan cualquiera de las SKU, aunque Microsoft recomienda encarecidamente que use solo la SKU Premium. El costo de las operaciones con claves de cualquier tipo es el mismo, por lo que la única diferencia en el costo es el costo por mes para cada clave protegida por HSM. Consulte [los precios de Key Vault](https://azure.microsoft.com/pricing/details/key-vault/) para obtener más información.
+Al crear un almacén de claves, debe elegir una SKU: Estándar o Premium. La SKU estándar permite que las claves de Azure कि भल्ट estén protegidas con software (no hay ninguna protección de claves del Módulo de seguridad de hardware (HSM) y la SKU Premium permite el uso de HSM para la protección de claves de कि भल्ट. Clave de cliente acepta almacenes de claves que usan cualquiera de las SKU, aunque Microsoft recomienda encarecidamente que use solo la SKU Premium. El costo de las operaciones con claves de cualquier tipo es el mismo, por lo que la única diferencia en el costo es el costo por mes para cada clave protegida por HSM. Consulte [कि भल्ट precios](https://azure.microsoft.com/pricing/details/key-vault/) para obtener más información.
   
 > [!IMPORTANT]
 > Use los almacenes de claves de SKU Premium y las claves protegidas por HSM para los datos de producción, y use solo almacenes de claves y claves de SKU estándar con fines de prueba y validación.
@@ -182,7 +185,7 @@ Use una convención de nomenclatura para almacenes de claves que refleje el uso 
   
 Cree un conjunto de almacenes separado y emparejado para cada directiva de cifrado de datos. Para Exchange Online, el ámbito de una directiva de cifrado de datos lo elige usted al asignar la directiva al buzón. Un buzón solo puede tener asignada una directiva y puede crear hasta 50 directivas. El ámbito de una directiva de SharePoint Online incluye todos los datos de una organización en una ubicación geográfica o *geográfica*. El ámbito de una directiva de varias cargas de trabajo incluye todos los datos de las cargas de trabajo admitidas para todos los usuarios.
 
-La creación de almacenes de claves también requiere la creación de grupos de recursos de Azure, ya que los almacenes de claves necesitan capacidad de almacenamiento (aunque pequeña) y Key Vault registro, si está habilitado, también genera datos almacenados. Como procedimiento recomendado, Microsoft recomienda usar administradores independientes para administrar cada grupo de recursos, con la administración alineada con el conjunto de administradores que administrarán todos los recursos relacionados con la clave de cliente.
+La creación de almacenes de claves también requiere la creación de grupos de recursos de Azure, ya que los almacenes de claves necesitan capacidad de almacenamiento (aunque pequeña) y कि भल्ट registro, si está habilitado, también genera datos almacenados. Como procedimiento recomendado, Microsoft recomienda usar administradores independientes para administrar cada grupo de recursos, con la administración alineada con el conjunto de administradores que administrarán todos los recursos relacionados con la clave de cliente.
   
 ### <a name="assign-permissions-to-each-key-vault"></a>Asignación de permisos a cada almacén de claves
 
@@ -207,7 +210,7 @@ Tendrá que definir tres conjuntos de permisos independientes para cada almacén
    Set-AzKeyVaultAccessPolicy -VaultName Contoso-CK-EX-NA-VaultA1 -UserPrincipalName alice@contoso.com -PermissionsToKeys create,import,list,get,backup,restore
    ```
 
-- **Colaboradores de Key Vault** que pueden cambiar los permisos en el propio Key Vault de Azure. Tendrá que cambiar estos permisos a medida que los empleados se vayan o se unan a su equipo. En la rara situación en la que los administradores del almacén de claves necesitan legítimamente permiso para eliminar o restaurar una clave, también tendrá que cambiar los permisos. A este conjunto de colaboradores del almacén de claves se le debe conceder el rol **Colaborador** en el almacén de claves. Puede asignar este rol mediante Azure Resource Manager. Para obtener pasos detallados, consulte [Uso de Role-Based Access Control para administrar el acceso a los recursos de la suscripción de Azure](/azure/active-directory/role-based-access-control-configure). El administrador que crea una suscripción tiene este acceso implícitamente y la capacidad de asignar otros administradores al rol Colaborador.
+- **Colaboradores de Key Vault** que pueden cambiar los permisos en el propio कि भल्ट de Azure. Tendrá que cambiar estos permisos a medida que los empleados se vayan o se unan a su equipo. En la rara situación en la que los administradores del almacén de claves necesitan legítimamente permiso para eliminar o restaurar una clave, también tendrá que cambiar los permisos. A este conjunto de colaboradores del almacén de claves se le debe conceder el rol **Colaborador** en el almacén de claves. Puede asignar este rol mediante Azure Resource Manager. Para obtener pasos detallados, consulte [Uso de Role-Based Access Control para administrar el acceso a los recursos de la suscripción de Azure](/azure/active-directory/role-based-access-control-configure). El administrador que crea una suscripción tiene este acceso implícitamente y la capacidad de asignar otros administradores al rol Colaborador.
 
 - **Permisos para aplicaciones de Microsoft 365** para cada almacén de claves que use para clave de cliente, debe proporcionar wrapKey, unwrapKey y obtener permisos a la entidad de servicio de Microsoft 365 correspondiente.
 
@@ -288,11 +291,11 @@ Para habilitar la eliminación temporal en los almacenes de claves, complete est
 
 ### <a name="add-a-key-to-each-key-vault-either-by-creating-or-importing-a-key"></a>Agregue una clave a cada almacén de claves mediante la creación o importación de una clave
 
-Hay dos maneras de agregar claves a una Key Vault de Azure; puede crear una clave directamente en Key Vault o puede importar una clave. La creación de una clave directamente en Key Vault es menos complicada, pero la importación de una clave proporciona control total sobre cómo se genera la clave. Use las claves RSA. Azure Key Vault no admite el ajuste y desencapsulado con claves de curva elípticas.
+Hay dos maneras de agregar claves a una कि भल्ट de Azure; puede crear una clave directamente en कि भल्ट o puede importar una clave. La creación de una clave directamente en कि भल्ट es menos complicada, pero la importación de una clave proporciona control total sobre cómo se genera la clave. Use las claves RSA. Azure कि भल्ट no admite el ajuste y desencapsulado con teclas de curva elípticas.
 
 Para obtener instrucciones para agregar una clave a cada almacén, consulte [Add-AzKeyVaultKey](/powershell/module/az.keyvault/add-azkeyvaultkey).
 
- Para obtener pasos detallados para crear una clave local e importarla en el almacén de claves, consulte [Cómo generar y transferir claves protegidas por HSM para Azure Key Vault](/azure/key-vault/keys/hsm-protected-keys). Use las instrucciones de Azure para crear una clave en cada almacén de claves.
+ Para obtener pasos detallados para crear una clave local e importarla en el almacén de claves, consulte [Cómo generar y transferir claves protegidas por HSM para Azure कि भल्ट](/azure/key-vault/keys/hsm-protected-keys). Use las instrucciones de Azure para crear una clave en cada almacén de claves.
 
 ### <a name="verify-expiration-date-of-your-keys"></a>Comprobación de la fecha de expiración de las claves
 
@@ -315,7 +318,7 @@ Update-AzKeyVaultKey -VaultName <vault name> -Name <key name> -Expires (Get-Date
 
 ### <a name="check-the-recovery-level-of-your-keys"></a>Comprobación del nivel de recuperación de las claves
 
-Microsoft 365 requiere que la suscripción de Azure Key Vault esté establecida en No cancelar y que las claves usadas por clave de cliente tengan habilitada la eliminación temporal. Puede confirmar la configuración de las suscripciones examinando el nivel de recuperación en las claves.
+Microsoft 365 requiere que la suscripción de Azure कि भल्ट esté establecida en No cancelar y que las claves usadas por clave de cliente tengan habilitada la eliminación temporal. Puede confirmar la configuración de las suscripciones examinando el nivel de recuperación en las claves.
   
 Para comprobar el nivel de recuperación de una clave, en Azure PowerShell, ejecute el cmdlet Get-AzKeyVaultKey de la siguiente manera:
   
@@ -328,12 +331,12 @@ Para comprobar el nivel de recuperación de una clave, en Azure PowerShell, ejec
 >
 >    <img src="../media/RecoveryLevel.png" alt="drawing" width="500"/>
 
-### <a name="back-up-azure-key-vault"></a>Copia de seguridad de Azure Key Vault
+### <a name="back-up-azure-key-vault"></a>Copia de seguridad de Azure कि भल्ट
 
 Inmediatamente después de la creación o cualquier cambio en una clave, realice una copia de seguridad y almacene copias de la copia de seguridad, tanto en línea como sin conexión.
-Para crear una copia de seguridad de una clave de Azure Key Vault, ejecute el cmdlet [Backup-AzKeyVaultKey](/powershell/module/az.keyvault/backup-azkeyvaultkey).
+Para crear una copia de seguridad de una clave de Azure कि भल्ट, ejecute el cmdlet [Backup-AzKeyVaultKey](/powershell/module/az.keyvault/backup-azkeyvaultkey).
 
-### <a name="obtain-the-uri-for-each-azure-key-vault-key"></a>Obtención del URI para cada clave de Azure Key Vault
+### <a name="obtain-the-uri-for-each-azure-key-vault-key"></a>Obtención del URI para cada clave de azure कि भल्ट
 
 Una vez que haya configurado los almacenes de claves y agregado las claves, ejecute el siguiente comando para obtener el URI de la clave en cada almacén de claves. Usará estos URI al crear y asignar cada DEP más adelante, por lo que debe guardar esta información en un lugar seguro. Ejecute este comando una vez para cada almacén de claves.
   
