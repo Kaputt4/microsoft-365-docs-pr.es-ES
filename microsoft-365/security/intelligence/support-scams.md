@@ -14,14 +14,14 @@ audience: ITPro
 ms.collection:
 - m365-security
 - tier2
-ms.topic: article
+ms.topic: conceptual
 search.appverid: met150
-ms.openlocfilehash: 34f06ca8b76d2dc701ced3d20976d19e6d90e929
-ms.sourcegitcommit: 4e42bafee965446f44f7f57d1defed2b9b24fce8
+ms.openlocfilehash: 20f42a10e230741a05f796795c86ff53cf78edbf
+ms.sourcegitcommit: 0d8fb571024f134d7480fe14cffc5e31a687d356
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/30/2022
-ms.locfileid: "68233362"
+ms.lasthandoff: 10/20/2022
+ms.locfileid: "68639234"
 ---
 # <a name="tech-support-scams"></a>Estafas de soporte técnico
 
@@ -51,7 +51,7 @@ También es importante tener en cuenta lo siguiente:
 
 * Descargue software solo desde sitios web oficiales de proveedores o Microsoft Store. Tenga cuidado con la descarga de software de sitios de terceros, ya que algunos de ellos podrían haber sido modificados sin el conocimiento del autor para agrupar soporte de malware estafa y otras amenazas.
 
-* Use [Microsoft Edge](https://www.microsoft.com/windows/microsoft-edge) al navegar por Internet. Bloquea los sitios de estafa de soporte conocidos mediante Windows Defender SmartScreen (que también es utilizado por Internet Explorer). Además, Microsoft Edge puede detener los bucles de diálogo emergente que usan estos sitios.
+* Use [Microsoft Edge](https://www.microsoft.com/windows/microsoft-edge) al navegar por Internet. Bloquea los sitios de estafa de soporte conocidos mediante Windows डिफेन्डर SmartScreen (que también es utilizado por Internet Explorer). Además, Microsoft Edge puede detener los bucles de diálogo emergente que usan estos sitios.
 
 * Habilite [Microsoft Defender Antivirus](/microsoft-365/security/defender-endpoint/microsoft-defender-antivirus-in-windows-10) en Windows 10. Detecta y elimina malware conocido de estafa de soporte técnico.
 
@@ -65,7 +65,7 @@ También es importante tener en cuenta lo siguiente:
 
 * Llame al proveedor de su tarjeta de crédito para revertir los cargos, si ya ha pagado.
 
-* Supervise la actividad de inicio de sesión anómala. Use Windows Defender Firewall para bloquear el tráfico a los servicios a los que no tendría acceso normalmente.
+* Supervise la actividad de inicio de sesión anómala. Use Windows डिफेन्डर Firewall para bloquear el tráfico a los servicios a los que no tendría acceso normalmente.
 
 ### <a name="reporting-tech-support-scams"></a>Informes de estafas de soporte técnico
 

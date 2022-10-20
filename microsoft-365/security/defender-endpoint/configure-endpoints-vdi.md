@@ -17,15 +17,15 @@ ms.collection:
 - m365-security
 - tier2
 ms.custom: admindeeplinkDEFENDER
-ms.topic: article
+ms.topic: conceptual
 ms.date: 04/15/2022
 ms.subservice: mde
-ms.openlocfilehash: 75077f656b9e15850f46509ee5c3705461638033
-ms.sourcegitcommit: 0b7070ec119e00e0dafe030bbfbef0ae5c9afa19
+ms.openlocfilehash: 20f2ab5085bb7b4693958b79b7dff430d09c4d22
+ms.sourcegitcommit: 0d8fb571024f134d7480fe14cffc5e31a687d356
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/29/2022
-ms.locfileid: "68177622"
+ms.lasthandoff: 10/20/2022
+ms.locfileid: "68623727"
 ---
 # <a name="onboard-non-persistent-virtual-desktop-infrastructure-vdi-devices-in-microsoft-365-defender"></a>Incorporación de dispositivos de infraestructura de escritorio virtual (VDI) no persistente en Microsoft 365 Defender
 
@@ -92,12 +92,12 @@ Los pasos siguientes le guiarán a través de la incorporación de dispositivos 
     2. Si va a implementar una única entrada para cada dispositivo, copie Onboard-NonPersistentMachine.ps1 y WindowsDefenderATPOnboardingScript.cmd.
 
     > [!NOTE]
-    > Si no ve la `C:\WINDOWS\System32\GroupPolicy\Machine\Scripts\Startup` carpeta, es posible que esté oculta. Tendrá que elegir la opción **Mostrar archivos y carpetas ocultos** de Explorador de archivos.
+    > Si no ve la `C:\WINDOWS\System32\GroupPolicy\Machine\Scripts\Startup` carpeta, es posible que esté oculta. Tendrá que elegir la opción **Mostrar archivos y carpetas ocultos** de फाइल अन्वेषक.
 
-3. Abra una ventana Editor de directiva de grupo local y vaya a **Configuración** \> del equipo **Scripts** \> **de Configuración de** \> Windows **Inicio**.
+3. Abra una ventana Editor de समूह नीति local y vaya a Configuración \> **del equipo** **Scripts** \> **de configuración de** \> Windows **Inicio**.
 
    > [!NOTE]
-   > Los directiva de grupo de dominio también se pueden usar para la incorporación de dispositivos VDI no persistentes.
+   > Los समूह नीति de dominio también se pueden usar para la incorporación de dispositivos VDI no persistentes.
 
 4. En función del método que quiera implementar, siga los pasos adecuados:
     - Para una sola entrada para cada dispositivo:

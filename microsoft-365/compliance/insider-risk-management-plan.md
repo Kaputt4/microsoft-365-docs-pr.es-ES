@@ -15,12 +15,12 @@ ms.collection:
 - tier1
 - purview-compliance
 ms.custom: admindeeplinkCOMPLIANCE
-ms.openlocfilehash: 6fe74108e484b158b292f86191425cd0aa73b0b4
-ms.sourcegitcommit: 50da6f1f6ef2274c17ed9729e7ad84395b0a9be2
+ms.openlocfilehash: e5243e403ffb110a2c7c1559869ae194c3e110a8
+ms.sourcegitcommit: 0d8fb571024f134d7480fe14cffc5e31a687d356
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/08/2022
-ms.locfileid: "68503476"
+ms.lasthandoff: 10/20/2022
+ms.locfileid: "68621238"
 ---
 # <a name="plan-for-insider-risk-management"></a>Planificar la administración de riesgos internos
 
@@ -64,15 +64,19 @@ En función de cómo desee administrar las directivas y alertas de administraci�
 
 Al trabajar con la administración de riesgos internos, elegirá entre estas opciones de grupo de roles y las acciones de solución:
 
-|**Acciones**|**Administración de riesgos internos**|**Administración de riesgos internos Administración**|**Analistas de administración de riesgos internos**|**Investigadores de administración de riesgos internos**|**Auditores de administración de riesgos internos**|
-|:----------|:--------------------------|:--------------------------------|:-----------------------------------|:----------------------------------------|:-----------------------------------|
-| Configuración de directivas y opciones | Sí | Sí | No | No | No |
-| Información de análisis de acceso | Sí | Sí | Sí | No | No |
-| Acceso & investigar alertas | Yes | No | Sí | Sí | No |
-| Acceso & investigar casos | Sí | No | Sí | Sí | No |
-| Acceso & ver el Explorador de contenido | Yes | No | No | Sí | No |
-| Configuración de plantillas de aviso | Sí | No | Sí | Sí | No |
-| Ver & exportar registros de auditoría | Yes | No | No | No | Sí |
+|**Acciones**|**Administración de riesgos internos**|**Administración de riesgos internos Administración**|**Analistas de administración de riesgos internos**|**Investigadores de administración de riesgos internos**|**Auditores de administración de riesgos internos**|**Aprobadores de administración de riesgos internos**|
+|---|---|---|---|---|---|---|
+|Configuración de directivas y opciones|Sí|Sí|No|No|No|No|
+|Información de análisis de acceso|Sí|Sí|Sí|No|No|No|
+|Acceso & investigar alertas|Yes|No|Sí|Sí|No|No|
+|Acceso & investigar casos|Sí|No|Sí|Sí|No|No|
+|Acceso & ver el Explorador de contenido|Sí|No|No|Sí|No|No|
+|Configuración de plantillas de aviso|Sí|No|Sí|Sí|No|No|
+|Ver & exportar registros de auditoría|Sí|No|No|No|Sí|No|
+|Acceso & ver capturas de pruebas forenses|Yes|No|No|Sí|No|No|
+|Creación de una solicitud de captura de pruebas forenses|Sí|Sí|No|No|No|No|
+|Aprobación de solicitudes de captura de pruebas forenses|Yes|No|No|No|No|Sí|
+|Visualización del informe de estado del dispositivo|Sí|Sí|No|No|No|No|
 
 >[!IMPORTANT]
 >Asegúrese de que siempre tiene al menos un usuario en *insider Risk Management* o *Insider Risk Management Administración* grupos de roles (según la opción que elija) para que la configuración de administración de riesgos internos no entre en un escenario de "administrador cero" si determinados usuarios abandonan la organización.
@@ -126,3 +130,4 @@ Comparta la documentación de administración de riesgos internos con las partes
 
 - [Empiece a trabajar con la configuración de administración de riesgos](insider-risk-management-settings.md) internos para configurar las opciones de directiva global.
 - [Empiece a trabajar con la administración de riesgos internos](insider-risk-management-configure.md) para configurar los requisitos previos, crear directivas y empezar a recibir alertas.
+- [Comience con las pruebas forenses de administración de riesgos](/microsoft-365/compliance/insider-risk-management-forensic-evidence-configure) internos para obtener instrucciones paso a paso para configurar la captura de pruebas forenses en su organización.

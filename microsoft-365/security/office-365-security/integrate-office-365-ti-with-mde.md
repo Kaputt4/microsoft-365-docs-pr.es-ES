@@ -2,30 +2,30 @@
 title: Uso de Microsoft Defender para Office 365 junto con Microsoft Defender para punto de conexión
 f1.keywords:
 - NOCSH
-keywords: integrate, Microsoft Defender, Microsoft Defender para punto de conexión
+keywords: integrar, Microsoft Defender, Microsoft Defender para punto de conexión
 ms.author: deniseb
 author: denisebmsft
 manager: dansimp
 ms.date: 12/02/2021
 audience: ITPro
-ms.topic: article
+ms.topic: conceptual
 ms.localizationpriority: medium
 search.appverid:
 - MET150
 - MOE150
 ms.collection:
-- M365-security-compliance
+- m365-security
 description: Use Microsoft Defender para Office 365 junto con Microsoft Defender para punto de conexión para obtener información más detallada sobre las amenazas contra los dispositivos y el contenido del correo electrónico.
 ms.custom:
 - seo-marvel-apr2020
 ms.subservice: mdo
 ms.service: microsoft-365-security
-ms.openlocfilehash: be951f29924300bfa14c92df549c7959a995c7ef
-ms.sourcegitcommit: 2b89bcff547e00be3d38dc8d1e6cbcf8f41eba42
+ms.openlocfilehash: b9e132d7a499b01c059f867a3bde1eff9a0df1d9
+ms.sourcegitcommit: 0d8fb571024f134d7480fe14cffc5e31a687d356
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/03/2022
-ms.locfileid: "67598393"
+ms.lasthandoff: 10/20/2022
+ms.locfileid: "68640178"
 ---
 # <a name="use-microsoft-defender-for-office-365-together-with-microsoft-defender-for-endpoint"></a>Uso de Microsoft Defender para Office 365 junto con Microsoft Defender para punto de conexión
 

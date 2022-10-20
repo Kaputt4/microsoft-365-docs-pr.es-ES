@@ -17,12 +17,12 @@ ms.collection:
 ms.custom: ''
 ms.reviewer: joshbregman
 f1.keywords: NOCSH
-ms.openlocfilehash: 662e53d4d0a590260936227776f9a17b733ee194
-ms.sourcegitcommit: 50da6f1f6ef2274c17ed9729e7ad84395b0a9be2
+ms.openlocfilehash: a1a02fa28291a38d080b2969019638a1fc7dfe6b
+ms.sourcegitcommit: 0d8fb571024f134d7480fe14cffc5e31a687d356
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/08/2022
-ms.locfileid: "68504927"
+ms.lasthandoff: 10/20/2022
+ms.locfileid: "68629906"
 ---
 # <a name="built-in-protection-helps-guard-against-ransomware"></a>La protección integrada ayuda a protegerse contra ransomware
 
@@ -41,7 +41,7 @@ La protección integrada es un conjunto de configuraciones predeterminadas que s
 
 | Fase | Qué ocurre |
 |:---|:---|
-| La protección integrada se está implementando en [versión preliminar](preview.md) | Los clientes que han optado por recibir características en versión preliminar reciben [una notificación](#what-does-the-notification-look-like) de que viene la protección integrada. Si aún no está configurado, se activará la protección contra alteraciones para los clientes que tengan el plan 2 o Microsoft 365 E5 de Defender para punto de conexión. |
+| La protección integrada (versión preliminar) se está implementando | Los clientes que han optado por recibir características en versión preliminar reciben [una notificación](#what-does-the-notification-look-like) de que viene la protección integrada. Si aún no está configurado, se activará la protección contra alteraciones para los clientes que tengan el plan 2 o Microsoft 365 E5 de Defender para punto de conexión. |
 | La protección integrada está disponible para el inquilino | Se le [notificará](#what-does-the-notification-look-like) que el inquilino está a punto de recibir protección integrada y cuándo se activará la protección contra alteraciones (si aún no está configurada). |
 | Llega la protección integrada | La protección contra alteraciones se activará para el inquilino y se aplicará a los dispositivos Windows de la organización. Puede [optar por no participar](#can-i-opt-out) o [cambiar la configuración de protección integrada](#can-i-change-built-in-protection-settings). |
 | Una vez que ha llegado la protección integrada | Cada vez que se incorporen nuevos dispositivos a Defender para punto de conexión, la configuración de protección integrada se aplicará a cualquier nuevo dispositivo que ejecute Windows. Siempre puede [cambiar la configuración de protección integrada](#can-i-change-built-in-protection-settings). |

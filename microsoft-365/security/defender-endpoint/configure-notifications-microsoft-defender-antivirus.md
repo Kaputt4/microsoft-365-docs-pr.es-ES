@@ -9,7 +9,7 @@ ms.sitesec: library
 ms.pagetype: security
 ms.localizationpriority: medium
 author: denisebmsft
-ms.topic: article
+ms.topic: conceptual
 ms.author: deniseb
 ms.custom: nextgen
 ms.date: 10/18/2021
@@ -19,12 +19,12 @@ ms.collection:
 - m365-security
 - tier2
 search.appverid: met150
-ms.openlocfilehash: ad5e68d0cc4f9e9f7c7ae76b8c07b3fbdf0f3613
-ms.sourcegitcommit: 0b7070ec119e00e0dafe030bbfbef0ae5c9afa19
+ms.openlocfilehash: 0604154627c0a29e151b25a414a65ea967e0820e
+ms.sourcegitcommit: 0d8fb571024f134d7480fe14cffc5e31a687d356
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/29/2022
-ms.locfileid: "68205649"
+ms.lasthandoff: 10/20/2022
+ms.locfileid: "68620401"
 ---
 # <a name="configure-microsoft-defender-antivirus-notifications-that-appear-on-endpoints"></a>Configuración de Microsoft Defender notificaciones antivirus que aparecen en los puntos de conexión
 
@@ -41,20 +41,20 @@ En Windows 10 y Windows 11, las notificaciones de aplicación sobre la detecció
 
 Si forma parte del equipo de seguridad de su organización, puede configurar cómo aparecen las notificaciones en los puntos de conexión, como las notificaciones que solicitan un reinicio del sistema o que indican que se ha detectado y corregido una amenaza.
 
-## <a name="configure-antivirus-notifications-using-group-policy-or-the-windows-security-app"></a>Configuración de notificaciones antivirus mediante directiva de grupo o la aplicación de Seguridad de Windows
+## <a name="configure-antivirus-notifications-using-group-policy-or-the-windows-security-app"></a>Configuración de notificaciones antivirus mediante समूह नीति o la aplicación de Seguridad de Windows
 
-Puede configurar la visualización de notificaciones adicionales, como resúmenes de detección de amenazas recientes, en la [aplicación Seguridad de Windows](microsoft-defender-security-center-antivirus.md) y con directiva de grupo.
+Puede configurar la visualización de notificaciones adicionales, como resúmenes de detección de amenazas recientes, en la [aplicación Seguridad de Windows](microsoft-defender-security-center-antivirus.md) y con समूह नीति.
 
 > [!NOTE]
-> En Windows 10, versión 1607, la característica se **denominaba Notificaciones mejoradas** y se configuraba en **Windows Settings** \> **Update & Windows Defender de seguridad**\>. En directiva de grupo configuración para todas las versiones de Windows 10 y Windows 11, la característica de notificación se denomina **Notificaciones mejoradas**.
+> En Windows 10, la versión 1607 se **denominaba Notificaciones mejoradas** y se configuraba en **Windows Settings** \> **Update &** **Windows डिफेन्डर** de seguridad\>. En समूह नीति configuración de todas las versiones de Windows 10 y Windows 11, la característica de notificación se denomina **Notificaciones mejoradas**.
 
-### <a name="use-group-policy-to-disable-additional-notifications"></a>Uso de directiva de grupo para deshabilitar notificaciones adicionales
+### <a name="use-group-policy-to-disable-additional-notifications"></a>Uso de समूह नीति para deshabilitar notificaciones adicionales
 
 1. En el equipo de administración de directivas de grupo, abra la [Consola de administración de directivas de grupo](/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/cc731212(v=ws.11)).
 
-2. Haga clic con el botón derecho en el objeto directiva de grupo que desea configurar y, a continuación, seleccione **Editar**.
+2. Haga clic con el botón derecho en el objeto समूह नीति que desea configurar y, a continuación, seleccione **Editar**.
 
-3. En el **Editor de administración de directiva de grupo** vaya a **Configuración del equipo**.
+3. En el **Editor de administración de समूह नीति** vaya a **Configuración del equipo**.
 
 4. Seleccione **Plantillas administrativas**.
 
@@ -78,9 +78,9 @@ Puede configurar la visualización de notificaciones adicionales, como resúmene
 > [!IMPORTANT]
 > Deshabilitar notificaciones adicionales no deshabilitará las notificaciones críticas, como las alertas de detección y corrección de amenazas.
 
-## <a name="configure-standard-notifications-on-endpoints-using-group-policy"></a>Configuración de notificaciones estándar en puntos de conexión mediante directiva de grupo
+## <a name="configure-standard-notifications-on-endpoints-using-group-policy"></a>Configuración de notificaciones estándar en puntos de conexión mediante समूह नीति
 
-Puede usar directiva de grupo para:
+Puede usar समूह नीति para:
 
 - Mostrar texto adicional personalizado en los puntos de conexión cuando el usuario necesita realizar una acción
 - Ocultar todas las notificaciones en puntos de conexión
@@ -90,13 +90,13 @@ Ocultar notificaciones puede ser útil en situaciones en las que no se puede ocu
 
 Para agregar información de contacto personalizada a las notificaciones de punto de conexión, consulte [Personalización de la aplicación de Seguridad de Windows para su organización](/windows/security/threat-protection/windows-defender-security-center/windows-defender-security-center).
 
-### <a name="use-group-policy-to-hide-notifications"></a>Uso de directiva de grupo para ocultar notificaciones
+### <a name="use-group-policy-to-hide-notifications"></a>Uso de समूह नीति para ocultar notificaciones
 
 1. En el equipo de administración de directivas de grupo, abra la [Consola de administración de directivas de grupo](/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/cc731212(v=ws.11)).
 
-2. Haga clic con el botón derecho en el objeto directiva de grupo que desea configurar y, a continuación, seleccione **Editar**.
+2. Haga clic con el botón derecho en el objeto समूह नीति que desea configurar y, a continuación, seleccione **Editar**.
 
-3. En el **Editor de administración de directiva de grupo**, vaya a **Configuración del equipo** y, a continuación, seleccione **Plantillas administrativas**.
+3. En el **Editor de administración de समूह नीति**, vaya a **Configuración del equipo** y, a continuación, seleccione **Plantillas administrativas**.
 
 4. Expanda el árbol a **componentes** \> de Windows Microsoft Defender **interfaz de cliente** **antivirus**\>. 
 
@@ -104,13 +104,13 @@ Para agregar información de contacto personalizada a las notificaciones de punt
 
 6. Seleccione **Aceptar**. Esto impedirá que aparezcan notificaciones adicionales.
 
-### <a name="use-group-policy-to-hide-reboot-notifications"></a>Uso de directiva de grupo para ocultar las notificaciones de reinicio
+### <a name="use-group-policy-to-hide-reboot-notifications"></a>Uso de समूह नीति para ocultar las notificaciones de reinicio
 
 1. En el equipo de administración de directivas de grupo, abra la [Consola de administración de directivas de grupo](/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/cc731212(v=ws.11)).
 
-2. Haga clic con el botón derecho en el objeto directiva de grupo que desea configurar y, a continuación, seleccione **Editar**.
+2. Haga clic con el botón derecho en el objeto समूह नीति que desea configurar y, a continuación, seleccione **Editar**.
 
-2. En el **Editor de administración de directiva de grupo** vaya a **Configuración del equipo**.
+2. En el **Editor de administración de समूह नीति** vaya a **Configuración del equipo**.
 
 3. Haga clic en **Plantillas administrativas**.
 

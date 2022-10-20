@@ -16,14 +16,14 @@ audience: ITPro
 ms.collection:
 - m365-security
 - tier3
-ms.topic: article
+ms.topic: conceptual
 ms.subservice: mde
-ms.openlocfilehash: 2beb52d4d307bf9fab3e8f9e9857f82bb281e586
-ms.sourcegitcommit: 0b7070ec119e00e0dafe030bbfbef0ae5c9afa19
+ms.openlocfilehash: 6f5c91ff837213f0824fbc2f2b149430ea9b3266
+ms.sourcegitcommit: 0d8fb571024f134d7480fe14cffc5e31a687d356
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/29/2022
-ms.locfileid: "68174916"
+ms.lasthandoff: 10/20/2022
+ms.locfileid: "68643017"
 ---
 # <a name="onboard-with-microsoft-defender-for-iot"></a>Incorporación con Microsoft Defender para IoT
 
@@ -92,7 +92,7 @@ Para agregar un sensor de red, en el panel de navegación del [https://security.
 1. Seleccione **Configuración Detección** \> \> **de dispositivos** **Enterprise IoT**
 2. En **Configurar sensores de red**, elija el vínculo **Microsoft Defender para IoT**.
 
-Esto le lleva al proceso de configuración del sensor en el Azure Portal. Para obtener más información, consulte [Introducción a Enterprise IoT](/azure/defender-for-iot/organizations/tutorial-getting-started-eiot-sensor).
+Esto le lleva al proceso de configuración del sensor en Azure Portal. Para obtener más información, consulte [Introducción a Enterprise IoT](/azure/defender-for-iot/organizations/tutorial-getting-started-eiot-sensor).
 
 > [!IMPORTANT]
 > La configuración de un sensor de enterprise IoT Network está actualmente en versión preliminar. Consulte los [Términos de uso complementarios para las versiones preliminares de Microsoft Azure para obtener términos](https://azure.microsoft.com/support/legal/preview-supplemental-terms/) legales adicionales que se aplican a las características de Azure que están en versión beta, versión preliminar o que aún no se han publicado en disponibilidad general.

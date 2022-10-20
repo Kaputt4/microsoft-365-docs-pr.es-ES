@@ -15,15 +15,15 @@ audience: ITPro
 ms.collection:
 - m365-security
 - tier2
-ms.topic: article
+ms.topic: conceptual
 ms.reviewer: chventou
 search.appverid: met150
-ms.openlocfilehash: 9d70c8f58bd49335ec6c2071a13efad62070d8d8
-ms.sourcegitcommit: 4e42bafee965446f44f7f57d1defed2b9b24fce8
+ms.openlocfilehash: e7ed6cf607d22c7e4a624aa22947a3b2b4925752
+ms.sourcegitcommit: 0d8fb571024f134d7480fe14cffc5e31a687d356
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/30/2022
-ms.locfileid: "68233648"
+ms.lasthandoff: 10/20/2022
+ms.locfileid: "68633601"
 ---
 # <a name="manage-microsoft-defender-for-endpoint-with-powershell-wmi-and-mpcmdrunexe"></a>Administración de Microsoft Defender para punto de conexión con PowerShell, WMI y MPCmdRun.exe
 
@@ -35,7 +35,7 @@ ms.locfileid: "68233648"
 > ¿Quiere experimentar Microsoft Defender para punto de conexión? [Regístrese para obtener una prueba gratuita.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-exposedapis-abovefoldlink)
 
 > [!NOTE]
-> Se recomienda usar [Microsoft Endpoint Manager](/mem) para administrar las características de protección contra amenazas de su organización para dispositivos (también conocidos como puntos de conexión). Endpoint Manager incluye [Microsoft Intune](/mem/intune/fundamentals/what-is-intune) y [Configuration Manager de punto de conexión de Microsoft](/mem/configmgr/core/understand/introduction).
+> Se recomienda usar [Microsoft Endpoint Manager](/mem) para administrar las características de protección contra amenazas de su organización para dispositivos (también conocidos como puntos de conexión). Endpoint Manager incluye [Microsoft Intune](/mem/intune/fundamentals/what-is-intune) y [Microsoft Endpoint Configuration Manager](/mem/configmgr/core/understand/introduction).
 > - [Más información sobre Endpoint Manager](/mem/endpoint-manager-overview)
 > - [Administración conjunta de Microsoft Defender para punto de conexión en dispositivos Windows 10 y Windows 11 con Configuration Manager y Intune](manage-mde-post-migration-intune.md)
 > - [Administración de Microsoft Defender para punto de conexión con Intune](manage-mde-post-migration-intune.md)
@@ -66,7 +66,7 @@ WMI es una interfaz de scripting que permite recuperar, modificar y actualizar l
 |Tarea|Recursos para obtener más información|
 |---|---|
 |**Habilitación de la protección entregada** en la nube en un dispositivo|[Uso de Instrucciones de administración de Windows (WMI) para habilitar la protección entregada en la nube](/windows/security/threat-protection/microsoft-defender-antivirus/enable-cloud-protection-microsoft-defender-antivirus#use-windows-management-instruction-wmi-to-enable-cloud-delivered-protection)|
-|**Recuperar, modificar y actualizar la configuración de** Microsoft Defender Antivirus|[Use WMI para configurar y administrar Microsoft Defender Antivirus](/windows/security/threat-protection/microsoft-defender-antivirus/use-wmi-microsoft-defender-antivirus <br/><br/> [Revise la lista de clases WMI disponibles y scripts de ejemplo.](/previous-versions/windows/desktop/defender/windows-defender-wmiv2-apis-portal) <br/><br/> Consulte también la [información de referencia del proveedor de WMIv2 Windows Defender](/previous-versions/windows/desktop/defender/windows-defender-wmiv2-apis-portal?redirectedfrom=MSDN) archivado|
+|**Recuperar, modificar y actualizar la configuración de** Microsoft Defender Antivirus|[Use WMI para configurar y administrar Microsoft Defender Antivirus](/windows/security/threat-protection/microsoft-defender-antivirus/use-wmi-microsoft-defender-antivirus <br/><br/> [Revise la lista de clases WMI disponibles y scripts de ejemplo.](/previous-versions/windows/desktop/defender/windows-defender-wmiv2-apis-portal) <br/><br/> Consulte también la [información de referencia del proveedor de WMIv2 Windows डिफेन्डर](/previous-versions/windows/desktop/defender/windows-defender-wmiv2-apis-portal?redirectedfrom=MSDN) archivado|
 
 ## <a name="configure-microsoft-defender-for-endpoint-with-microsoft-malware-protection-command-line-utility-mpcmdrunexe"></a>Configuración de Microsoft Defender para punto de conexión con microsoft Malware Protection Command-Line Utility (MPCmdRun.exe)
 

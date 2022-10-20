@@ -11,16 +11,18 @@ author: mjcaparas
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
-ms.collection: M365-security-compliance
-ms.topic: article
+ms.collection:
+- m365-security
+- tier2
+ms.topic: conceptual
 ms.subservice: mde
 search.appverid: met150
-ms.openlocfilehash: 9455ee4d7c4ff01cf003b89dece0b9f05efe873e
-ms.sourcegitcommit: 9b133379196da2b3a4bb311b07ff274f43780f68
+ms.openlocfilehash: 7ff95f5ca4f2608a522d075f8e880c2aafa32323
+ms.sourcegitcommit: 0d8fb571024f134d7480fe14cffc5e31a687d356
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/14/2022
-ms.locfileid: "67699200"
+ms.lasthandoff: 10/20/2022
+ms.locfileid: "68623771"
 ---
 # <a name="configure-alert-notifications-in-microsoft-defender-for-endpoint"></a>Configuración de notificaciones de alertas en Microsoft Defender para punto de conexión
 
@@ -39,11 +41,12 @@ Puede configurar Defender para punto de conexión para enviar notificaciones por
 Si usa [Defender para empresas](../defender-business/mdb-overview.md), puede configurar notificaciones por correo electrónico para usuarios específicos (no roles o grupos).
 
 > [!NOTE]
-> Solo los usuarios con permisos de "Administrar configuración de seguridad" pueden configurar las notificaciones por correo electrónico. Si ha elegido usar la administración básica de permisos, los usuarios con roles administrador de seguridad o administrador global pueden configurar las notificaciones por correo electrónico.
+> - Solo los usuarios con permisos de "Administrar configuración de seguridad" pueden configurar las notificaciones por correo electrónico. Si ha elegido usar la administración básica de permisos, los usuarios con roles administrador de seguridad o administrador global pueden configurar las notificaciones por correo electrónico.
+> - La creación de grupos de dispositivos se admite en El plan 1 y el plan 2 de Defender para punto de conexión.
 
 Puede establecer los niveles de gravedad de alerta que desencadenan las notificaciones. También puede agregar o quitar destinatarios de la notificación por correo electrónico. Los nuevos destinatarios reciben una notificación sobre las alertas desencadenadas después de agregarse. Para obtener más información sobre las alertas, consulte [Visualización y organización de la cola de alertas](alerts-queue.md).
 
-Si usa el control de acceso basado en rol (RBAC), los destinatarios solo recibirán notificaciones basadas en los grupos de dispositivos configurados en la regla de notificación. Los usuarios con el permiso adecuado solo pueden crear, editar o eliminar notificaciones limitadas a su ámbito de administración del grupo de dispositivos. Solo los usuarios asignados al rol Administrador global pueden administrar las reglas de notificación configuradas para todos los grupos de dispositivos.
+Si usa el control de acceso basado en rol (RBAC), los destinatarios solo recibirán notificaciones basadas en los grupos de dispositivos configurados en la regla de notificación. Los usuarios con el permiso adecuado solo pueden crear, editar o eliminar notificaciones limitadas a su ámbito de administración del grupo de dispositivos. Solo los usuarios asignados al rol de administrador global pueden administrar las reglas de notificación configuradas para todos los grupos de dispositivos.
 
 La notificación por correo electrónico incluye información básica sobre la alerta y un vínculo al portal donde puede realizar una investigación adicional.
 
@@ -63,7 +66,7 @@ Puede crear reglas que determinen los dispositivos y la gravedad de las alertas 
         > [!NOTE]
         > Es posible que los servidores de correo de destinatarios que no estén en la ubicación geográfica que ha seleccionado para los datos de Defender para punto de conexión procesen esta información.
 
-    - **Dispositivos**: elija si desea notificar a los destinatarios las alertas en todos los dispositivos (solo Administrador global rol) o en los grupos de dispositivos seleccionados. Para obtener más información, consulte [Creación y administración de grupos de dispositivos](machine-groups.md). (Si usa [Defender para empresas](../defender-business/mdb-overview.md), los grupos de dispositivos no se aplican).
+    - **Dispositivos** : elija si desea notificar a los destinatarios las alertas en todos los dispositivos (solo el rol de administrador global) o en los grupos de dispositivos seleccionados. Para obtener más información, consulte [Creación y administración de grupos de dispositivos](machine-groups.md). (Si usa [Defender para empresas](../defender-business/mdb-overview.md), los grupos de dispositivos no se aplican).
     - **Gravedad de alerta** : elija el nivel de gravedad de la alerta.
 
 4. Haga clic en **Siguiente**.

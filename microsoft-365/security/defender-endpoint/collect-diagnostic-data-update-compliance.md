@@ -15,17 +15,17 @@ ms.date: 09/03/2018
 ms.reviewer: ''
 manager: dansimp
 ms.subservice: mde
-ms.topic: article
+ms.topic: conceptual
 ms.collection:
 - m365-security
 - tier2
 search.appverid: met150
-ms.openlocfilehash: ac85a1860fa86a05cf4aed6db6ced0e2ce84b904
-ms.sourcegitcommit: b9282493c371d59c2e583b9803825096499b5e2c
+ms.openlocfilehash: 6359603424d85cdab84bb25231bfdec86f9a8d41
+ms.sourcegitcommit: 0d8fb571024f134d7480fe14cffc5e31a687d356
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/29/2022
-ms.locfileid: "68157444"
+ms.lasthandoff: 10/20/2022
+ms.locfileid: "68641653"
 ---
 # <a name="collect-update-compliance-diagnostic-data-for-microsoft-defender-antivirus-assessment"></a>Recopilación de datos de diagnóstico de cumplimiento de actualizaciones para la evaluación de Microsoft Defender Antivirus
 
@@ -49,7 +49,7 @@ En al menos dos dispositivos que no informan ni aparecen en Cumplimiento de actu
 
     c. Especifique las credenciales de administrador o apruebe el símbolo del sistema.
 
-2. Vaya al directorio Windows Defender. El valor predeterminado es `C:\Program Files\Windows Defender`
+2. Vaya al directorio Windows डिफेन्डर. El valor predeterminado es `C:\Program Files\Windows Defender`
 
 3. Escriba el comando siguiente y, a continuación, presione **Entrar.**
 

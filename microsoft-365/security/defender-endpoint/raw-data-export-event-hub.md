@@ -1,5 +1,5 @@
 ---
-title: Transmitir eventos de Microsoft Defender para punto de conexión a Azure Event Hubs
+title: Transmisión de eventos Microsoft Defender para punto de conexión a Azure Event Hubs
 description: Obtenga información sobre cómo configurar Microsoft Defender para punto de conexión para transmitir eventos de búsqueda avanzada al centro de eventos.
 keywords: exportación de datos sin procesar, API de streaming, API, Azure Event Hubs, almacenamiento de Azure, cuenta de almacenamiento, búsqueda avanzada, uso compartido de datos sin procesar
 ms.service: microsoft-365-security
@@ -14,18 +14,18 @@ audience: ITPro
 ms.collection:
 - m365-security
 - tier3
-ms.topic: article
+ms.topic: conceptual
 ms.subservice: mde
 ms.custom: api
 search.appverid: met150
-ms.openlocfilehash: 396ebb62e426a1e1ab9207fcc493ebf3d5d0c760
-ms.sourcegitcommit: 4e42bafee965446f44f7f57d1defed2b9b24fce8
+ms.openlocfilehash: bf0c8d2a09d9dfc91e49351dce1f60ba10680787
+ms.sourcegitcommit: 0d8fb571024f134d7480fe14cffc5e31a687d356
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/30/2022
-ms.locfileid: "68232922"
+ms.lasthandoff: 10/20/2022
+ms.locfileid: "68632676"
 ---
-# <a name="configure-microsoft-defender-for-endpoint-to-stream-advanced-hunting-events-to-your-azure-event-hubs"></a>Configurar Microsoft Defender para punto de conexión para transmitir eventos de búsqueda avanzada a la Azure Event Hubs
+# <a name="configure-microsoft-defender-for-endpoint-to-stream-advanced-hunting-events-to-your-azure-event-hubs"></a>Configuración de Microsoft Defender para punto de conexión para transmitir eventos de búsqueda avanzada a Azure Event Hubs
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
@@ -51,7 +51,7 @@ ms.locfileid: "68232922"
 
 4. Elija un nombre para la nueva configuración.
 
-5. Elija **Reenviar eventos para Azure Event Hubs**.
+5. Elija **Reenviar eventos a Azure Event Hubs**.
 
 6. Escriba el **nombre de Event Hubs** y el **identificador de recurso de Event Hubs**.
 
@@ -61,7 +61,7 @@ ms.locfileid: "68232922"
 
 7. Elija los eventos que desea transmitir y haga clic en **Guardar**.
 
-## <a name="the-schema-of-the-events-in-azure-event-hubs"></a>Esquema de los eventos de Azure Event Hubs
+## <a name="the-schema-of-the-events-in-azure-event-hubs"></a>Esquema de los eventos en Azure Event Hubs
 
 ```json
 {
@@ -110,5 +110,5 @@ Para obtener los tipos de datos de las propiedades de evento, haga lo siguiente:
 - [Introducción a la búsqueda avanzada](advanced-hunting-overview.md)
 - [MICROSOFT DEFENDER PARA PUNTO DE CONEXIÓN API de streaming](raw-data-export.md)
 - [Transmisión de eventos Microsoft Defender para punto de conexión a la cuenta de Azure Storage](raw-data-export-storage.md)
-- [documentación de Azure Event Hubs](/azure/event-hubs/)
+- [Documentación de Azure Event Hubs](/azure/event-hubs/)
 - [Solución de problemas de conectividad: Azure Event Hubs](/azure/event-hubs/troubleshooting-guide)

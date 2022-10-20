@@ -13,29 +13,33 @@ ms.localizationpriority: medium
 search.appverid:
 - MET150
 ms.assetid: 2c956776-0016-4be6-b4cd-133a237f4a9e
+ms.collection:
+- tier3
 ms.custom:
 - seo-marvel-apr2020
-description: Obtenga información sobre cómo configurar Exchange Online IRM para usar Active Directory local Rights Management Service (AD RMS) para satisfacer los requisitos de su organización.
-ms.openlocfilehash: 926bea0b1f9379d2eaad2bc7c5bd672f98329b8a
-ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
+description: Obtenga información sobre cómo configurar Exchange Online IRM para usar El servicio de administración de derechos de Active Directory (AD RMS) local para satisfacer los requisitos de su organización.
+ms.openlocfilehash: 9ea51944045dd635fbaf3d1b50c578fc607adae1
+ms.sourcegitcommit: 0d8fb571024f134d7480fe14cffc5e31a687d356
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/06/2022
-ms.locfileid: "66628801"
+ms.lasthandoff: 10/20/2022
+ms.locfileid: "68629223"
 ---
 # <a name="exchange-online-mail-encryption-with-ad-rms"></a>Cifrado de correo de Exchange Online con AD RMS
 
-Para ayudar a evitar la filtración de información, Exchange Online incluye la función Information Rights Management (IRM), que ofrece protección en línea y sin conexión para los mensajes de correo y los datos adjuntos. Puede configurar Exchange Online IRM para que use Active Directory local Rights Management Service (AD RMS), si es necesario, para satisfacer los requisitos de su organización. Esta opción es poco frecuente. Si no tiene un requisito para usar AD RMS, use [Cifrado de mensajes de Microsoft Purview](ome.md) en su lugar.
+Para ayudar a evitar la filtración de información, Exchange Online incluye la función Information Rights Management (IRM), que ofrece protección en línea y sin conexión para los mensajes de correo y los datos adjuntos. Puede configurar Exchange Online IRM para que use Active Directory Rights Management Service (AD RMS) local, si es necesario, para satisfacer los requisitos de la organización. Esta opción es poco frecuente. Si no tiene un requisito para usar AD RMS, use [Cifrado de mensajes de Microsoft Purview](ome.md) en su lugar.
 
 Los usuarios pueden aplicar la protección de IRM en Microsoft Outlook o Outlook en la Web, y los administradores pueden aplicarla mediante reglas de protección de transporte o reglas de protección de Outlook. IRM le ayuda tanto a usted como a los usuarios a controlar quién puede consultar, reenviar, imprimir o copiar información confidencial del correo.
   
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
+
 ## <a name="changes-to-how-irm-works-with-message-encryption-and-azure-active-directory"></a>Cambios en el funcionamiento de IRM con el cifrado de mensajes y Azure Active Directory
 
 A partir de septiembre de 2017, cuando configure Cifrado de mensajes de Microsoft Purview para su organización, también configurará IRM para su uso con Azure Rights Management (Azure RMS). Ya no configura IRM con Azure RMS por separado. En su lugar, el cifrado de mensajes y la administración de derechos funcionan sin problemas. Para obtener más información sobre Cifrado de mensajes de Microsoft Purview, consulte [Preguntas más frecuentes sobre el cifrado de](./ome-faq.yml) mensajes. Si está listo para empezar a usar Cifrado de mensajes de Microsoft Purview dentro de su organización, consulte [Configuración de Cifrado de mensajes de Microsoft Purview](./set-up-new-message-encryption-capabilities.md).
   
 ## <a name="how-irm-works-with-exchange-online-and-active-directory-rights-management-services"></a>Funcionamiento de IRM con Exchange Online y Active Directory Rights Management Services
 
-Exchange Online IRM usa Active Directory local Rights Management Services (AD RMS), una tecnología de protección de la información en Windows Server 2008 y versiones posteriores. La protección de IRM se implanta en el correo electrónico mediante la aplicación de una plantilla de directiva de permisos de AD RMS a un mensaje de correo electrónico. Los derechos se adjuntan al propio mensaje para que la protección se produzca en línea y sin conexión, dentro y fuera del firewall de la organización.
+Exchange Online IRM usa Active Directory Rights Management Services (AD RMS) local, una tecnología de protección de la información en Windows Server 2008 y versiones posteriores. La protección de IRM se implanta en el correo electrónico mediante la aplicación de una plantilla de directiva de permisos de AD RMS a un mensaje de correo electrónico. Los derechos se adjuntan al propio mensaje para que la protección se produzca en línea y sin conexión, dentro y fuera del firewall de la organización.
   
 Los usuarios pueden aplicar una plantilla a un mensaje de correo electrónico para controlar los permisos que los destinatarios tienen en un mensaje. Algunas acciones, como reenviar o extraer información de un mensaje, guardar un mensaje o imprimirlo, se pueden controlar aplicando una directiva de permisos AD RMS al mensaje.
   

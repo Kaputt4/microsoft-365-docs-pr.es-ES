@@ -15,17 +15,18 @@ search.appverid:
 - MOE150
 ms.assetid: 0a322724-08ca-43db-b69a-afbfa20484cd
 ms.collection:
-- M365-security-compliance
-- Strat_O365_IP
+- purview-compliance
+- tier1
 - m365solution-mip
 - m365initiative-compliance
+- highpri
 description: Con Office 365, el contenido se cifra en reposo y en tránsito con el cifrado, los protocolos y las tecnologías más seguros disponibles. Obtenga información general sobre el cifrado en Office 365.
-ms.openlocfilehash: e26ade7021434461e72e24b7aa8176888d9c21d0
-ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
+ms.openlocfilehash: 7cbdde89847e976cef7c6680c66140308940805d
+ms.sourcegitcommit: 0d8fb571024f134d7480fe14cffc5e31a687d356
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/06/2022
-ms.locfileid: "66629649"
+ms.lasthandoff: 10/20/2022
+ms.locfileid: "68645019"
 ---
 # <a name="encryption"></a>Cifrado
 
@@ -34,6 +35,8 @@ El cifrado es una parte importante de la estrategia de protección de archivos y
 - Para obtener información sobre certificados y tecnologías como TLS, consulte [Detalles de referencia técnica sobre el cifrado en Office 365](technical-reference-details-about-encryption.md).
 
 - Para obtener información sobre cómo configurar o configurar el cifrado para su organización, consulte [Configuración del cifrado en Office 365 Enterprise](set-up-encryption.md).
+
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
 
 ## <a name="what-is-encryption-and-how-does-it-work-in-office-365"></a>¿Qué es el cifrado y cómo funciona en Office 365?
 
@@ -55,7 +58,7 @@ Con Office 365, varias capas y tipos de cifrado funcionan juntos para proteger l
 |:-----|:-----|:-----|
 |Archivos en un dispositivo. Estos archivos pueden incluir mensajes de correo electrónico guardados en una carpeta, documentos de Office guardados en un equipo, tableta o teléfono, o datos guardados en la nube de Microsoft.  <br/> |BitLocker en centros de datos de Microsoft. BitLocker también se puede usar en equipos cliente, como equipos Windows y tabletas  <br/> Administrador de claves distribuidas (DKM) en centros de datos de Microsoft  <br/> Clave de cliente para Microsoft 365  <br/> |[Centro de TI de Windows: BitLocker](/windows/device-security/bitlocker/bitlocker-overview) <br/> [Centro de confianza de Microsoft: cifrado](https://www.microsoft.com/TrustCenter/Security/Encryption) <br/> [Serie de controles de seguridad en la nube: Cifrado de datos en reposo](https://blogs.microsoft.com/microsoftsecure/2015/09/10/cloud-security-controls-series-encrypting-data-at-rest) <br/> [Cómo Exchange Online protege su información confidencial de correo electrónico](exchange-online-secures-email-secrets.md) <br/> [Cifrado de servicio con clave de cliente](customer-key-overview.md) <br/> |
 |Archivos en tránsito entre usuarios. Estos archivos pueden incluir documentos de Office o elementos de lista de SharePoint compartidos entre los usuarios.  <br/> |TLS para archivos en tránsito  <br/> |[Cifrado de datos en OneDrive para la Empresa y SharePoint Online](data-encryption-in-odb-and-spo.md) <br/> [Skype Empresarial online: seguridad y archivado](/office365/servicedescriptions/skype-for-business-online-service-description/skype-for-business-online-features) <br/> |
-|Correo electrónico en tránsito entre destinatarios. Este correo electrónico incluye el correo electrónico hospedado por Exchange Online.  <br/> |Cifrado de mensajes de Microsoft Purview con Azure Rights Management, S/MIME y TLS para correo electrónico en tránsito  <br/> |[Cifrado de mensajes](ome.md) <br/> [Cifrado de correo electrónico en Office 365](email-encryption.md) <br/> [Cómo Exchange Online usa TLS para proteger las conexiones de correo electrónico en Office 365](exchange-online-uses-tls-to-secure-email-connections.md) <br/> |
+|Email en tránsito entre los destinatarios. Este correo electrónico incluye el correo electrónico hospedado por Exchange Online.  <br/> |Cifrado de mensajes de Microsoft Purview con Azure Rights Management, S/MIME y TLS para correo electrónico en tránsito  <br/> |[Cifrado de mensajes](ome.md) <br/> [Cifrado de correo electrónico en Office 365](email-encryption.md) <br/> [Cómo Exchange Online usa TLS para proteger las conexiones de correo electrónico en Office 365](exchange-online-uses-tls-to-secure-email-connections.md) <br/> |
 |Chats, mensajes y archivos en tránsito entre destinatarios mediante Microsoft Teams. <br/> |Teams usa TLS y MTLS para cifrar mensajes instantáneos. El tráfico multimedia se cifra mediante RTP seguro (SRTP). Teams usa algoritmos compatibles con FIPS (Estándar federal de procesamiento de información) para los intercambios de claves de cifrado. <br/> |[Cifrado para Teams](/microsoftteams/teams-security-guide#encryption-for-teams) <br/> |
 
 ## <a name="what-if-i-need-more-control-over-encryption-to-meet-security-and-compliance-requirements"></a>¿Qué ocurre si necesito más control sobre el cifrado para cumplir los requisitos de seguridad y cumplimiento?

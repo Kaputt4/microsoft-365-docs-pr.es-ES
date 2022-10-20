@@ -15,19 +15,19 @@ audience: ITPro
 ms.collection:
 - m365-security
 - tier2
-ms.topic: article
+ms.topic: conceptual
 search.appverid:
 - MOE150
 - MET150
 ms.custom:
 - seo-marvel-apr2020
 - seo-marvel-jun2020
-ms.openlocfilehash: 309fe3f423a449dbe9399245ab1fcfe4eb397a8e
-ms.sourcegitcommit: 12af9e8e3a6eaa090fda9e98ccb831dff65863a4
+ms.openlocfilehash: e53c60cd2e1df2765a325f6ebe62089fe6f6b75c
+ms.sourcegitcommit: 0d8fb571024f134d7480fe14cffc5e31a687d356
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/27/2022
-ms.locfileid: "68062020"
+ms.lasthandoff: 10/20/2022
+ms.locfileid: "68643875"
 ---
 # <a name="whats-new-in-microsoft-secure-score"></a>Novedades de La puntuación segura de Microsoft
 
@@ -62,7 +62,7 @@ Ahora hay disponible una nueva recomendación de SharePoint Online como una acci
 
 ## <a name="august-2022"></a>Agosto de 2022
 
-Ahora hay nuevas recomendaciones de Microsoft Information Protection disponibles como acciones de mejora de puntuación segura:
+Ahora hay nuevas recomendaciones de Microsoft जानकारीको सुरक्षा disponibles como acciones de mejora de puntuación segura:
 
 - **Etiquetar**
   - Extensión del etiquetado de confidencialidad de M365 a los recursos del mapa de datos de Azure Purview

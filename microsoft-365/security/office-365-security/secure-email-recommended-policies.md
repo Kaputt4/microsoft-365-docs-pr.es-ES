@@ -5,7 +5,7 @@ ms.author: dansimp
 author: dansimp
 manager: Laurawi
 ms.service: microsoft-365-security
-ms.topic: article
+ms.topic: conceptual
 audience: Admin
 f1.keywords:
 - NOCSH
@@ -23,16 +23,16 @@ ms.collection:
 - highpri
 ms.subservice: mdo
 search.appverid: met150
-ms.openlocfilehash: 0fae866f48e1b6de58e65c6970c788c98c21dc58
-ms.sourcegitcommit: 12af9e8e3a6eaa090fda9e98ccb831dff65863a4
+ms.openlocfilehash: 210657acdb3d9c61e76abed681c465cad2c049e1
+ms.sourcegitcommit: 0d8fb571024f134d7480fe14cffc5e31a687d356
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/27/2022
-ms.locfileid: "68068949"
+ms.lasthandoff: 10/20/2022
+ms.locfileid: "68640090"
 ---
 # <a name="policy-recommendations-for-securing-email"></a>Recomendaciones de directivas para proteger el correo electrónico
 
-En este artículo se describe cómo implementar las directivas de acceso a dispositivos e identidades de Confianza cero recomendadas para proteger los clientes de correo electrónico y correo electrónico de la organización que admiten la autenticación moderna y el acceso condicional. Esta guía se basa en las [directivas de acceso a dispositivos e identidades comunes](identity-access-policies.md) y también incluye algunas recomendaciones adicionales.
+En este artículo se describe cómo implementar las directivas recomendadas de acceso a dispositivos e identidad de confianza cero para proteger los clientes de correo electrónico y correo electrónico de la organización que admiten la autenticación moderna y el acceso condicional. Esta guía se basa en las [directivas de acceso a dispositivos e identidades comunes](identity-access-policies.md) y también incluye algunas recomendaciones adicionales.
 
 Estas recomendaciones se basan en tres niveles diferentes de seguridad y protección que se pueden aplicar en función de la granularidad de sus necesidades: **punto de partida**, **empresa** y **seguridad especializada**. Puede aprender más sobre estos niveles de seguridad y los sistemas operativos de cliente recomendados, a los que hacen referencia estas recomendaciones, en la [introducción a las directivas y configuraciones de seguridad recomendadas](microsoft-365-policies-configurations.md).
 
@@ -89,7 +89,7 @@ Estos son los pasos:
    Set-OwaMailboxPolicy -Identity Default -ConditionalAccessPolicy ReadOnlyPlusAttachmentsBlocked
    ```
 
-5. En el Azure Portal, cree una nueva directiva de acceso condicional con esta configuración:
+5. En Azure Portal, cree una nueva directiva de acceso condicional con esta configuración:
 
    **Asignaciones** \> **Usuarios y grupos**: seleccione los usuarios y grupos adecuados para incluir y excluir.
 

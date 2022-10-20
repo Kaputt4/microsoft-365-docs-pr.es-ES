@@ -7,7 +7,7 @@ ms.mktglfcycl: manage
 ms.sitesec: library
 ms.pagetype: security
 ms.localizationpriority: medium
-ms.topic: article
+ms.topic: conceptual
 author: denisebmsft
 ms.author: deniseb
 ms.custom: nextgen
@@ -18,12 +18,12 @@ ms.collection:
 - m365-security
 - tier3
 search.appverid: met150
-ms.openlocfilehash: d0d6b3b8244d01eef939c1486c510a74ebe93000
-ms.sourcegitcommit: 4e42bafee965446f44f7f57d1defed2b9b24fce8
+ms.openlocfilehash: 04e4470bc45c6da18122ec04acd8da5facb19d2b
+ms.sourcegitcommit: 0d8fb571024f134d7480fe14cffc5e31a687d356
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/30/2022
-ms.locfileid: "68226523"
+ms.lasthandoff: 10/20/2022
+ms.locfileid: "68624058"
 ---
 # <a name="manage-microsoft-defender-antivirus-updates-and-scans-for-endpoints-that-are-out-of-date"></a>Administrar las actualizaciones y análisis del Antivirus de Windows Defender para puntos de conexión que están obsoletos
 
@@ -58,17 +58,17 @@ Puede usar uno de varios métodos para configurar las actualizaciones de protecc
 2. Vaya a la sección **Actualizaciones de inteligencia de seguridad** y configure los siguientes valores:
 
     - Establezca **Forzar una actualización de inteligencia de seguridad si el equipo cliente está sin conexión durante más de dos actualizaciones programadas consecutivas** en **Sí**.
-    - En **If Configuration Manager is used as a source for security intelligence updates...**, especifique las horas antes de las cuales las actualizaciones de protección entregadas por Configuration Manager deben considerarse obsoletas. Esta configuración hace que se use la siguiente ubicación de actualización, en función del [orden de origen de reserva](manage-protection-updates-microsoft-defender-antivirus.md#fallback-order) definido.
+    - En  **If Configuration Manager is used as a source for security intelligence updates... (Si Configuration Manager se usa como origen para las actualizaciones de inteligencia de seguridad...)**, especifique las horas antes de las cuales las actualizaciones de protección entregadas por Configuration Manager deben considerarse obsoletas. Esta configuración hace que se use la siguiente ubicación de actualización, en función del [orden de origen de reserva](manage-protection-updates-microsoft-defender-antivirus.md#fallback-order) definido.
 
 3. Seleccione **Aceptar**.
 
 4. [Implemente la directiva actualizada como de costumbre](/sccm/protect/deploy-use/endpoint-antimalware-policies#deploy-an-antimalware-policy-to-client-computers).
 
-### <a name="use-group-policy-to-enable-and-configure-the-catch-up-update-feature"></a>Uso de directiva de grupo para habilitar y configurar la característica de actualización de puesta al día
+### <a name="use-group-policy-to-enable-and-configure-the-catch-up-update-feature"></a>Uso de समूह नीति para habilitar y configurar la característica de actualización de puesta al día
 
-1. En el equipo de administración de directiva de grupo, abra la [consola de administración de directiva de grupo](/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/cc731212(v=ws.11)), haga clic con el botón derecho en el objeto de directiva de grupo que desea configurar y, a continuación, seleccione **Editar**.
+1. En el equipo de administración de समूह नीति, abra la [consola de administración de समूह नीति](/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/cc731212(v=ws.11)), haga clic con el botón derecho en el objeto समूह नीति que desea configurar y, a continuación, seleccione **Editar**.
 
-2. En el **Editor de administración de directiva de grupo** vaya a **Configuración del equipo**.
+2. En el **Editor de administración de समूह नीति** vaya a **Configuración del equipo**.
 
 3. Seleccione **Directivas** y plantillas **administrativas**.
 
@@ -101,19 +101,19 @@ SignatureUpdateCatchupInterval
 
 Consulte el artículo siguiente para obtener más información y parámetros permitidos:
 
-- [API Windows Defender WMIv2](/previous-versions/windows/desktop/defender/windows-defender-wmiv2-apis-portal)
+- [API Windows डिफेन्डर WMIv2](/previous-versions/windows/desktop/defender/windows-defender-wmiv2-apis-portal)
 
 ## <a name="set-the-number-of-days-before-protection-is-reported-as-out-of-date"></a>Establecer el número de días antes de que la protección se notifique como obsoleta
 
 También puede especificar el número de días después de los cuales Microsoft Defender protección antivirus se considera antigua o obsoleta. Después del número de días especificado, el cliente se notificará a sí mismo como "obsoleto" y mostrará un error al usuario del punto de conexión. Cuando un punto de conexión se considera obsoleto, Microsoft Defender Antivirus podría intentar descargar una actualización de otros orígenes (en función del [orden de origen de reserva](manage-protection-updates-microsoft-defender-antivirus.md#fallback-order) definido).
 
-Puede usar directiva de grupo para especificar el número de días después de los cuales endpoint protection se considera obsoleto.
+Puede usar समूह नीति para especificar el número de días después de los cuales endpoint protection se considera obsoleto.
 
-### <a name="use-group-policy-to-specify-the-number-of-days-before-protection-is-considered-out-of-date"></a>Use directiva de grupo para especificar el número de días antes de que la protección se considere obsoleta.
+### <a name="use-group-policy-to-specify-the-number-of-days-before-protection-is-considered-out-of-date"></a>Use समूह नीति para especificar el número de días antes de que la protección se considere obsoleta.
 
-1. En la máquina de administración de directiva de grupo, abra la [consola de administración de directiva de grupo](/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/cc731212(v=ws.11)), haga clic con el botón derecho en el objeto de directiva de grupo que desea configurar y, a continuación, seleccione **Editar**.
+1. En la máquina de administración de समूह नीति, abra la [consola de administración de समूह नीति](/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/cc731212(v=ws.11)), haga clic con el botón derecho en el objeto de समूह नीति que desea configurar y, a continuación, seleccione **Editar**.
 
-2. En el **Editor de administración de directiva de grupo** vaya a **Configuración del equipo**.
+2. En el **Editor de administración de समूह नीति** vaya a **Configuración del equipo**.
 
 3. Seleccione **Directivas** y plantillas **administrativas**.
 
@@ -151,13 +151,13 @@ Puede usar uno de varios métodos para configurar exámenes de puesta al día:
 - [Instrucciones de administración de Windows (WMI)](#use-windows-management-instruction-wmi-to-configure-catch-up-scans)
 - [Configuration Manager](#use-configuration-manager-to-configure-catch-up-scans)
 
-### <a name="use-group-policy-to-enable-and-configure-the-catch-up-scan-feature"></a>Uso de directiva de grupo para habilitar y configurar la característica de examen de puesta al día
+### <a name="use-group-policy-to-enable-and-configure-the-catch-up-scan-feature"></a>Uso de समूह नीति para habilitar y configurar la característica de examen de puesta al día
 
 1. Asegúrese de que ha configurado al menos un examen programado.
 
-2. En la máquina de administración de directiva de grupo, abra la [consola de administración de directiva de grupo](/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/cc731212(v=ws.11)), haga clic con el botón derecho en el objeto de directiva de grupo que desea configurar y seleccione **Editar**.
+2. En la máquina de administración de समूह नीति, abra la [consola de administración de समूह नीति](/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/cc731212(v=ws.11)), haga clic con el botón derecho en el objeto समूह नीति que desea configurar y seleccione **Editar**.
 
-3. En el **Editor de administración de directiva de grupo** vaya a **Configuración del equipo**.
+3. En el **Editor de administración de समूह नीति** vaya a **Configuración del equipo**.
 
 4. Seleccione **Directivas** y plantillas **administrativas**.
 
@@ -169,7 +169,7 @@ Puede usar uno de varios métodos para configurar exámenes de puesta al día:
     - Escriba el número de exámenes que se pueden perder antes de que se ejecute automáticamente un examen cuando el usuario inicie sesión en el punto de conexión. El tipo de examen que se ejecuta viene determinado por especificar **el tipo de examen que se va a usar para un examen programado** (consulte el artículo [Programación de exámenes](scheduled-catch-up-scans-microsoft-defender-antivirus.md) ). Seleccione **Aceptar**.
 
 > [!NOTE]
-> El título de la configuración de directiva de grupo hace referencia al número de días. Sin embargo, la configuración se aplica al número de exámenes (no a los días) antes de que se ejecute el examen de puesta al día.
+> El título de la configuración समूह नीति hace referencia al número de días. Sin embargo, la configuración se aplica al número de exámenes (no a los días) antes de que se ejecute el examen de puesta al día.
 
 ### <a name="use-powershell-cmdlets-to-configure-catch-up-scans"></a>Uso de cmdlets de PowerShell para configurar exámenes de puesta al día
 
@@ -197,7 +197,7 @@ DisableCatchupQuickScan
 
 Consulte el artículo siguiente para obtener más información y parámetros permitidos:
 
-- [API Windows Defender WMIv2](/previous-versions/windows/desktop/defender/windows-defender-wmiv2-apis-portal)
+- [API Windows डिफेन्डर WMIv2](/previous-versions/windows/desktop/defender/windows-defender-wmiv2-apis-portal)
 
 ### <a name="use-configuration-manager-to-configure-catch-up-scans"></a>Uso de Configuration Manager para configurar exámenes de puesta al día
 

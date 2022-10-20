@@ -9,7 +9,7 @@ ms.localizationpriority: medium
 ms.author: deniseb
 author: denisebmsft
 ms.reviewer: dansimp
-ms.topic: article
+ms.topic: conceptual
 manager: dansimp
 audience: ITPro
 ms.subservice: mde
@@ -17,12 +17,12 @@ ms.collection:
 - m365-security
 - tier3
 search.appverid: met150
-ms.openlocfilehash: 245e49f22f4846c0a48a2ebfb0855a07d0b66841
-ms.sourcegitcommit: 0b7070ec119e00e0dafe030bbfbef0ae5c9afa19
+ms.openlocfilehash: 451e255e09e87493c895f57d330ca957e01196b8
+ms.sourcegitcommit: 0d8fb571024f134d7480fe14cffc5e31a687d356
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/29/2022
-ms.locfileid: "68210138"
+ms.lasthandoff: 10/20/2022
+ms.locfileid: "68620467"
 ---
 # <a name="device-control-report"></a>Informe de control de dispositivo
 
@@ -44,7 +44,7 @@ Con el informe de control de dispositivos, puede ver eventos relacionados con el
 Los eventos de auditoría incluyen:
 
 - **Montaje y desmontaje de la unidad USB:** Eventos de auditoría que se generan cuando se monta o desmonta una unidad USB.
-- **PnP:** Plug and Play eventos de auditoría se generan cuando se conecta el almacenamiento extraíble, una impresora o un medio Bluetooth.
+- **Pnp:** Los eventos de auditoría plug and play se generan cuando se conecta el almacenamiento extraíble, una impresora o un medio Bluetooth.
 - **Control de acceso de almacenamiento extraíble:** Los eventos se generan cuando se desencadena una directiva de control de acceso de almacenamiento extraíble. Puede ser Auditar, Bloquear o Permitir.
 
 ## <a name="monitor-device-control-security"></a>Supervisión de la seguridad del control de dispositivos

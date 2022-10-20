@@ -16,15 +16,15 @@ audience: ITPro
 ms.collection:
 - m365-security
 - tier1
-ms.topic: article
+ms.topic: conceptual
 ms.subservice: mde
 search.appverid: met150
-ms.openlocfilehash: ee0f75d49a4098fe1a90b8fc98ffe51beb0cadf7
-ms.sourcegitcommit: 50da6f1f6ef2274c17ed9729e7ad84395b0a9be2
+ms.openlocfilehash: be03708d59616a46ec37e97fe0a48a3f43b7bfdd
+ms.sourcegitcommit: 0d8fb571024f134d7480fe14cffc5e31a687d356
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/08/2022
-ms.locfileid: "68503718"
+ms.lasthandoff: 10/20/2022
+ms.locfileid: "68638640"
 ---
 # <a name="configure-and-manage-microsoft-defender-experts-capabilities"></a>Configuración y administración de funcionalidades de expertos de Microsoft Defender
 
@@ -132,7 +132,7 @@ El campo **Tema de consulta** se rellena previamente con el vínculo a la págin
 
 Vea este vídeo para obtener una introducción rápida al Centro de servicios de Microsoft.
 
-> [!VIDEO <https://www.microsoft.com/videoplayer/embed/RE4pk9f>]
+> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4pk9f]
 
 ## <a name="sample-investigation-topics-that-you-can-consult-with-microsoft-defender-experts---experts-on-demand"></a>Temas de investigación de ejemplo que puede consultar con expertos Microsoft Defender expertos a petición
 

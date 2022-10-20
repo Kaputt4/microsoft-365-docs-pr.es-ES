@@ -17,15 +17,15 @@ ms.collection:
 - m365solution-overview
 - highpri
 - tier1
-ms.topic: article
+ms.topic: conceptual
 ms.subservice: mde
 search.appverid: met150
-ms.openlocfilehash: 1390369222c1abeb8b4ef1e0552f7a7039f90f46
-ms.sourcegitcommit: 0b7070ec119e00e0dafe030bbfbef0ae5c9afa19
+ms.openlocfilehash: 8316bb05d3fed831479ebadc3c6f2bb5e318e5fd
+ms.sourcegitcommit: 0d8fb571024f134d7480fe14cffc5e31a687d356
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/29/2022
-ms.locfileid: "68205429"
+ms.lasthandoff: 10/20/2022
+ms.locfileid: "68642753"
 ---
 # <a name="microsoft-defender-for-endpoint-deployment-overview"></a>introducción a la implementación de Microsoft Defender para punto de conexión
 
@@ -84,7 +84,7 @@ Todas estas funcionalidades están disponibles para Microsoft Defender para punt
 
 ### <a name="in-scope"></a>En el ámbito
 
-- Uso de microsoft Endpoint Manager y punto de conexión de Microsoft Configuration Manager para incorporar puntos de conexión al servicio y configurar funcionalidades
+- Uso de Microsoft Endpoint Manager y Microsoft Endpoint Configuration Manager para incorporar puntos de conexión al servicio y configurar funcionalidades
 - Habilitación de las funcionalidades de detección y respuesta de puntos de conexión de Defender para punto de conexión (EDR)
 - Habilitación de las funcionalidades de la plataforma de protección de puntos de conexión (EPP) de Defender para punto de conexión
   - Protección de última generación

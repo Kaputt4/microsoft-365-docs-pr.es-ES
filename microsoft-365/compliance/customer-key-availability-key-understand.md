@@ -7,39 +7,44 @@ audience: ITPro
 ms.topic: article
 ms.service: O365-seccomp
 ms.localizationpriority: medium
+ms.collection:
+- purview-compliance
+- tier1
 search.appverid:
 - MET150
 description: Obtenga información sobre la clave de disponibilidad que se usa para recuperar las claves de cliente perdidas.
-ms.openlocfilehash: 8a5cf75aaef5f71f25b5d34ed6db481446907abf
-ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
+ms.openlocfilehash: 3a6fcebcd9ccc3a6e81728803e19b3b21a62432a
+ms.sourcegitcommit: 0d8fb571024f134d7480fe14cffc5e31a687d356
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/06/2022
-ms.locfileid: "66631103"
+ms.lasthandoff: 10/20/2022
+ms.locfileid: "68641961"
 ---
 # <a name="learn-about-the-availability-key-for-customer-key"></a>Obtener más información sobre la clave de disponibilidad de Clave de cliente
 
-La clave de disponibilidad es una clave raíz generada y aprovisionada automáticamente al crear una directiva de cifrado de datos. Microsoft 365 almacena y protege la clave de disponibilidad. La clave de disponibilidad es funcionalmente similar a las dos claves raíz que proporciona para el cifrado de servicio con clave de cliente. La clave de disponibilidad ajusta las claves un nivel inferior en la jerarquía de claves. A diferencia de las claves que proporciona y administra en Azure Key Vault, no puede acceder directamente a la clave de disponibilidad. Los servicios automatizados de Microsoft 365 administran la clave de disponibilidad mediante programación. Estos servicios inician operaciones automatizadas que nunca implican acceso directo a la clave de disponibilidad.
+La clave de disponibilidad es una clave raíz generada y aprovisionada automáticamente al crear una directiva de cifrado de datos. Microsoft 365 almacena y protege la clave de disponibilidad. La clave de disponibilidad es funcionalmente similar a las dos claves raíz que proporciona para el cifrado de servicio con clave de cliente. La clave de disponibilidad ajusta las claves un nivel inferior en la jerarquía de claves. A diferencia de las claves que proporciona y administra en Azure कि भल्ट, no puede acceder directamente a la clave de disponibilidad. Los servicios automatizados de Microsoft 365 administran la clave de disponibilidad mediante programación. Estos servicios inician operaciones automatizadas que nunca implican acceso directo a la clave de disponibilidad.
 
-El propósito principal de la clave de disponibilidad es proporcionar capacidad de recuperación a partir de la pérdida inesperada de claves raíz que administra. La pérdida podría ser el resultado de una mala administración o una acción malintencionada. Si pierde el control de las claves raíz, póngase en contacto con Soporte técnico de Microsoft y Microsoft le ayudará en el proceso de recuperación mediante la clave de disponibilidad. Usará la clave de disponibilidad para migrar a una nueva directiva de cifrado de datos con las nuevas claves raíz que aprovisione.
+El propósito principal de la clave de disponibilidad es proporcionar capacidad de recuperación a partir de la pérdida inesperada de claves raíz que administra. La pérdida podría ser el resultado de una mala administración o una acción malintencionada. Si pierde el control de las claves raíz, póngase en contacto con el soporte técnico de Microsoft y Microsoft le ayudará en el proceso de recuperación mediante la clave de disponibilidad. Usará la clave de disponibilidad para migrar a una nueva directiva de cifrado de datos con las nuevas claves raíz que aprovisione.
 
-El almacenamiento y el control de la clave de disponibilidad son deliberadamente diferentes de las claves de Azure Key Vault por tres motivos:
+El almacenamiento y el control de la clave de disponibilidad son deliberadamente diferentes de las claves de Azure कि भल्ट por tres motivos:
 
-- La clave de disponibilidad proporciona una funcionalidad "break-glass" de recuperación si se pierde el control sobre ambas claves de Azure Key Vault.
+- La clave de disponibilidad proporciona una funcionalidad "break-glass" de recuperación si se pierde el control sobre ambas claves de Azure कि भल्ट.
 - La separación de controles lógicos y ubicaciones de almacenamiento seguras proporciona defensa en profundidad y protege contra la pérdida de todas las claves y los datos de un único ataque o punto de error.
-- La clave de disponibilidad proporciona una funcionalidad de alta disponibilidad si los servicios de Microsoft 365 no pueden alcanzar las claves hospedadas en Azure Key Vault debido a errores transitorios. Esta regla solo se aplica a Exchange Online y Skype Empresarial cifrado de servicio. Los archivos de SharePoint Online, OneDrive para la Empresa y Teams nunca usan la clave de disponibilidad a menos que indique explícitamente a Microsoft que inicie el proceso de recuperación.
+- La clave de disponibilidad proporciona una funcionalidad de alta disponibilidad si los servicios de Microsoft 365 no pueden alcanzar las claves hospedadas en Azure कि भल्ट debido a errores transitorios. Esta regla solo se aplica a Exchange Online y Skype Empresarial cifrado de servicio. Los archivos de SharePoint Online, OneDrive para la Empresa y Teams nunca usan la clave de disponibilidad a menos que indique explícitamente a Microsoft que inicie el proceso de recuperación.
 
 Compartir la responsabilidad de proteger los datos, utilizando diversas protecciones y procesos para la administración de claves, reduce en última instancia el riesgo de que todas las claves (y, por lo tanto, los datos) se pierdan o destruyan permanentemente. Microsoft le proporciona la única autoridad sobre la deshabilitación o destrucción de la clave de disponibilidad al salir del servicio. Por diseño, nadie de Microsoft tiene acceso a la clave de disponibilidad: solo es accesible mediante Microsoft 365 código de servicio.
 
 Consulte el [Centro de confianza de Microsoft](https://www.microsoft.com/trustcenter/Privacy/govt-requests-for-data) para obtener más información sobre cómo se protegen las claves.
   
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
+
 ## <a name="availability-key-uses"></a>Uso de la clave de disponibilidad
 
 La clave de disponibilidad proporciona capacidad de recuperación para escenarios en los que un malfactor externo o un insider malintencionado roba el control del almacén de claves, o cuando una mala administración accidental produce la pérdida de claves raíz. Esta funcionalidad de recuperación se aplica a todos los servicios de Microsoft 365 compatibles con la clave de cliente. Los servicios individuales usan la clave de disponibilidad de forma diferente. Microsoft 365 solo usa la clave de disponibilidad de las formas descritas a continuación.
 
 ### <a name="exchange-online-and-skype-for-business-uses"></a>usos de Exchange Online y Skype Empresarial
 
-Además de la funcionalidad de recuperación, Exchange Online y Skype Empresarial usar la clave de disponibilidad para garantizar la disponibilidad de los datos durante problemas operativos transitorios o intermitentes relacionados con el servicio que accede a las claves raíz. Cuando el servicio no puede acceder a ninguna de las claves de cliente de Azure Key Vault debido a errores transitorios, el servicio usa automáticamente la clave de disponibilidad. El servicio NUNCA va directamente a la clave de disponibilidad.
+Además de la funcionalidad de recuperación, Exchange Online y Skype Empresarial usar la clave de disponibilidad para garantizar la disponibilidad de los datos durante problemas operativos transitorios o intermitentes relacionados con el servicio que accede a las claves raíz. Cuando el servicio no puede acceder a ninguna de las claves de cliente en Azure कि भल्ट debido a errores transitorios, el servicio usa automáticamente la clave de disponibilidad. El servicio NUNCA va directamente a la clave de disponibilidad.
 
 Los sistemas automatizados de Exchange Online y Skype Empresarial pueden usar la clave de disponibilidad durante los errores transitorios para admitir servicios back-end automatizados, como antivirus, detección electrónica, Prevención de pérdida de datos de Microsoft Purview, movimientos de buzones e indexación de datos.
 
@@ -49,13 +54,13 @@ Para los archivos de SharePoint Online, OneDrive para la Empresa y Teams, la cla
 
 ## <a name="availability-key-security"></a>Seguridad de clave de disponibilidad
 
-Microsoft comparte la responsabilidad de la protección de datos con usted mediante la creación de instancias de la clave de disponibilidad y la adopción de amplias medidas para protegerla. Microsoft no expone el control directo de la clave de disponibilidad a los clientes. Por ejemplo, solo puede revertir (girar) las claves que posee en Azure Key Vault. Para obtener más información, consulte [Roll or rotate a customer key or an availability key (Roll or rotate a customer key or an availability key](customer-key-availability-key-roll.md)).
+Microsoft comparte la responsabilidad de la protección de datos con usted mediante la creación de instancias de la clave de disponibilidad y la adopción de amplias medidas para protegerla. Microsoft no expone el control directo de la clave de disponibilidad a los clientes. Por ejemplo, solo puede revertir (girar) las claves que posee en Azure कि भल्ट. Para obtener más información, consulte [Roll or rotate a customer key or an availability key (Roll or rotate a customer key or an availability key](customer-key-availability-key-roll.md)).
 
 ### <a name="availability-key-secret-stores"></a>Almacenes de secretos de clave de disponibilidad
 
-Microsoft protege las claves de disponibilidad en almacenes de secretos internos controlados por acceso, como la Key Vault de Azure orientada al cliente. Implementamos controles de acceso para impedir que los administradores de Microsoft accedan directamente a los secretos contenidos en. Las operaciones del Almacén de secretos, incluida la rotación y eliminación de claves, se producen a través de comandos automatizados que nunca implican acceso directo a la clave de disponibilidad. Las operaciones de administración de almacenes secretos se limitan a ingenieros específicos y requieren escalación de privilegios a través de una herramienta interna, Caja de seguridad. La escalación de privilegios requiere la aprobación y la justificación del administrador antes de que se le conceda. La caja de seguridad garantiza que el acceso esté limitado por el tiempo con revocación automática de acceso tras la expiración del tiempo o que el ingeniero cierre la sesión.
+Microsoft protege las claves de disponibilidad en almacenes secretos internos controlados por acceso, como la कि भल्ट de Azure orientada al cliente. Implementamos controles de acceso para impedir que los administradores de Microsoft accedan directamente a los secretos contenidos en. Las operaciones del Almacén de secretos, incluida la rotación y eliminación de claves, se producen a través de comandos automatizados que nunca implican acceso directo a la clave de disponibilidad. Las operaciones de administración de almacenes secretos se limitan a ingenieros específicos y requieren escalación de privilegios a través de una herramienta interna, Caja de seguridad. La escalación de privilegios requiere la aprobación y la justificación del administrador antes de que se le conceda. La caja de seguridad garantiza que el acceso esté limitado por el tiempo con revocación automática de acceso tras la expiración del tiempo o que el ingeniero cierre la sesión.
 
-las claves de disponibilidad **Exchange Online y Skype Empresarial** se almacenan en un almacén secreto de Active Directory Exchange Online. Las claves de disponibilidad se almacenan de forma segura dentro de contenedores específicos del inquilino dentro del controlador de Dominio de Active Directory. Esta ubicación de almacenamiento segura es independiente y aislada del almacén secreto de archivos de SharePoint Online, OneDrive para la Empresa y Teams.
+las claves de disponibilidad **Exchange Online y Skype Empresarial** se almacenan en un almacén secreto de Active Directory Exchange Online. Las claves de disponibilidad se almacenan de forma segura dentro de contenedores específicos del inquilino dentro del controlador de dominio de Active Directory. Esta ubicación de almacenamiento segura es independiente y aislada del almacén secreto de archivos de SharePoint Online, OneDrive para la Empresa y Teams.
 
 Las claves de disponibilidad de **archivos de SharePoint Online, OneDrive para la Empresa y Teams** se almacenan en un almacén secreto interno administrado por el equipo de servicio. Este servicio de almacenamiento de secretos protegido tiene servidores front-end con puntos de conexión de aplicación y un SQL Database como back-end. Las claves de disponibilidad se almacenan en el SQL Database y se encapsulan (cifran) mediante claves de cifrado del almacén de secretos que usan una combinación de AES-256 y HMAC para cifrar la clave de disponibilidad en reposo. Las claves de cifrado del almacén de secretos se almacenan en un componente aislado lógicamente de la misma SQL Database y se cifran aún más con claves RSA-2048 contenidas en certificados administrados por la entidad de certificación (CA) de Microsoft. Estos certificados se almacenan en los servidores front-end del almacén secreto que realizan operaciones en la base de datos.
 
@@ -81,7 +86,7 @@ Si pierde el control de las claves de cliente, la clave de disponibilidad le pro
 
 Si pierde el control de las claves de cliente, la clave de disponibilidad le ofrece la capacidad de recuperar los datos y poner los recursos afectados de Microsoft 365 de nuevo en línea. La clave de disponibilidad sigue protegiendo los datos mientras se recupera. En un nivel alto, para recuperarse completamente de la pérdida de claves, deberá crear un nuevo DEP y mover los recursos afectados a la nueva directiva.
 
-Para cifrar los datos con nuevas claves de cliente, cree nuevas claves en Azure Key Vault, cree un nuevo DEP con las nuevas claves de cliente y, a continuación, asigne el nuevo DEP a los buzones cifrados actualmente con el DEP anterior para el que las claves se perdieron o se vieron comprometidas.
+Para cifrar los datos con nuevas claves de cliente, cree nuevas claves en Azure कि भल्ट, cree un nuevo DEP con las nuevas claves de cliente y, a continuación, asigne el nuevo DEP a los buzones cifrados actualmente con el DEP anterior para el que las claves se perdieron o se vieron comprometidas.
 
 Este proceso de re-cifrado puede tardar hasta 72 horas. Esta es la duración estándar al cambiar un DEP.
   
@@ -119,11 +124,11 @@ Microsoft 365 sigue este proceso para descifrar y proporcionar archivos de clien
 
 4. Use la clave de blob descifrada para descifrar el blob.
 
-Microsoft 365 descifra una TIK mediante la emisión de dos solicitudes de descifrado a Azure Key Vault con un ligero desplazamiento. El primero en finalizar proporciona el resultado, cancelando la otra solicitud.
+Microsoft 365 descifra una TIK mediante la emisión de dos solicitudes de descifrado a Azure कि भल्ट con un ligero desplazamiento. El primero en finalizar proporciona el resultado, cancelando la otra solicitud.
   
 En caso de que pierda el acceso a las claves de cliente, Microsoft 365 también cifra la TIK con una clave de disponibilidad y la almacena junto con los TIK cifrados con cada clave de cliente. La TIK cifrada con la clave de disponibilidad solo se usa cuando el cliente llama a Microsoft para dar de alta la ruta de recuperación cuando ha perdido el acceso a sus claves, de forma malintencionada o accidental.
   
-Por motivos de disponibilidad y escalado, los TIK descifrados se almacenan en caché en una caché de memoria con un tiempo limitado. Dos horas antes de que una caché de TIK expire, Microsoft 365 intenta descifrar cada TIK. Descifrar los TIK amplía la duración de la memoria caché. Si se produce un error en el descifrado de TIK durante un período de tiempo significativo, Microsoft 365 genera una alerta para notificar a la ingeniería antes de la expiración de la memoria caché. Solo si el cliente llama a Microsoft, Microsoft 365 iniciará la operación de recuperación, lo que implica descifrar la TIK con la clave de disponibilidad almacenada en el almacén secreto de Microsoft e incorporar el inquilino de nuevo mediante la TIK descifrada y un nuevo conjunto de claves de Azure Key Vault proporcionadas por el cliente.
+Por motivos de disponibilidad y escalado, los TIK descifrados se almacenan en caché en una caché de memoria con un tiempo limitado. Dos horas antes de que una caché de TIK expire, Microsoft 365 intenta descifrar cada TIK. Descifrar los TIK amplía la duración de la memoria caché. Si se produce un error en el descifrado de TIK durante un período de tiempo significativo, Microsoft 365 genera una alerta para notificar a la ingeniería antes de la expiración de la memoria caché. Solo si el cliente llama a Microsoft, Microsoft 365 iniciará la operación de recuperación, lo que implica descifrar la TIK con la clave de disponibilidad almacenada en el almacén secreto de Microsoft e incorporar el inquilino de nuevo mediante la TIK descifrada y un nuevo conjunto de claves de Azure कि भल्ट proporcionadas por el cliente.
   
 A partir de hoy, la clave de cliente está implicada en la cadena de cifrado y descifrado de los datos de archivos de SharePoint Online almacenados en el almacén de blobs de Azure, pero no en los elementos de lista o metadatos de SharePoint Online almacenados en el SQL Database. Microsoft 365 no usa la clave de disponibilidad para archivos de Exchange Online, Skype Empresarial, SharePoint Online, OneDrive para la Empresa y Teams distintos del caso descrito anteriormente, que es iniciado por el cliente. El acceso humano a los datos del cliente está protegido por la caja de seguridad del cliente.
 
@@ -133,11 +138,11 @@ Microsoft 365 desencadena la clave de disponibilidad solo en circunstancias espe
 
 ### <a name="triggers-for-exchange-online-and-skype-for-business"></a>Desencadenadores para Exchange Online y Skype Empresarial
   
-1. Microsoft 365 lee el DEP al que se asigna el buzón para determinar la ubicación de las dos claves de cliente en Azure Key Vault.
+1. Microsoft 365 lee el DEP al que se asigna el buzón para determinar la ubicación de las dos claves de cliente en Azure कि भल्ट.
 
-2. Microsoft 365 elige aleatoriamente una de las dos claves de cliente del DEP y envía una solicitud a Azure Key Vault para desencapsular la clave DEP mediante la clave de cliente.
+2. Microsoft 365 elige aleatoriamente una de las dos claves de cliente del DEP y envía una solicitud a Azure कि भल्ट para desencapsular la clave DEP mediante la clave de cliente.
 
-3. Si se produce un error en la solicitud para desencapsular la clave DEP mediante la clave de cliente, Microsoft 365 envía una segunda solicitud a Azure Key Vault, esta vez instruyéndola a usar la clave de cliente alternativa (segunda).
+3. Si se produce un error en la solicitud para desencapsular la clave DEP mediante la clave de cliente, Microsoft 365 envía una segunda solicitud a Azure कि भल्ट, esta vez instruyéndola a usar la clave de cliente alternativa (segunda).
 
 4. Si se produce un error en la segunda solicitud para desencapsular la clave DEP mediante la clave de cliente, Microsoft 365 examina los resultados de ambas solicitudes.
 
@@ -147,7 +152,7 @@ Microsoft 365 desencadena la clave de disponibilidad solo en circunstancias espe
 
        - A continuación, Microsoft 365 usa la clave DEP para descifrar la clave de buzón y completar la solicitud del usuario. 
 
-       - En este caso, Azure Key Vault no puede responder o no es accesible debido a un error transitorio.
+       - En este caso, Azure कि भल्ट no puede responder o no es accesible debido a un error transitorio.
 
     - Si el examen determina que las solicitudes no pudieron devolver ACCESS DENIED:
 
@@ -156,7 +161,7 @@ Microsoft 365 desencadena la clave de disponibilidad solo en circunstancias espe
        - En este caso, la clave de disponibilidad solo se usará para las acciones del sistema y no para las acciones del usuario, se produce un error en la solicitud del usuario y el usuario recibe un mensaje de error.
 
 > [!IMPORTANT]
-> El código de servicio de Microsoft 365 siempre tiene un token de inicio de sesión válido para razonar sobre los datos del cliente a fin de proporcionar servicios en la nube que agregan valor. Por lo tanto, hasta que se elimine la clave de disponibilidad, se puede usar como reserva para las acciones iniciadas por, o internamente, Exchange Online y Skype Empresarial como la creación de índices de búsqueda o el traslado de buzones. Esto se aplica tanto a las solicitudes errors transitorias como a las solicitudes ACCESS DENIED a Azure Key Vault.
+> El código de servicio de Microsoft 365 siempre tiene un token de inicio de sesión válido para razonar sobre los datos del cliente a fin de proporcionar servicios en la nube que agregan valor. Por lo tanto, hasta que se elimine la clave de disponibilidad, se puede usar como reserva para las acciones iniciadas por, o internamente, Exchange Online y Skype Empresarial como la creación de índices de búsqueda o el traslado de buzones. Esto se aplica a las solicitudes errors transitorias y ACCESS DENIED a Azure कि भल्ट.
 
 ### <a name="triggers-for-sharepoint-online-onedrive-for-business-and-teams-files"></a>Desencadenadores para archivos de SharePoint Online, OneDrive para la Empresa y Teams
 

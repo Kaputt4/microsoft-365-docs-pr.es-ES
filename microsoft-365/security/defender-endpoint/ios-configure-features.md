@@ -17,12 +17,12 @@ ms.collection:
 ms.topic: conceptual
 ms.subservice: mde
 search.appverid: met150
-ms.openlocfilehash: c1d909699cdcbf993351a5232f2b12cbf84b5ca1
-ms.sourcegitcommit: 4e42bafee965446f44f7f57d1defed2b9b24fce8
+ms.openlocfilehash: fb5736f0de612e4de3bc19f873721a2577ca6521
+ms.sourcegitcommit: 0d8fb571024f134d7480fe14cffc5e31a687d356
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/30/2022
-ms.locfileid: "68222922"
+ms.lasthandoff: 10/20/2022
+ms.locfileid: "68630060"
 ---
 # <a name="configure-microsoft-defender-for-endpoint-on-ios-features"></a>Configurar Microsoft Defender para punto de conexión en las características de iOS
 
@@ -81,7 +81,7 @@ Esta configuración está disponible tanto para los dispositivos inscritos (MDM)
     - En [el Centro de administración de Microsoft Endpoint Manager](https://go.microsoft.com/fwlink/?linkid=2109431), vaya a **Directivas** >  de **configuración** >  de aplicaciones **Agregar** > **dispositivos administrados**.
     - Asigne un nombre a la directiva, **Platform > iOS/iPadOS**.
     - Seleccione Microsoft Defender para punto de conexión como la aplicación de destino.
-    - En la página Configuración, seleccione Usar diseñador de configuración y agregue **WebProtection** como tipo de clave y valor como **booleano**.
+    - En la página Configuración, seleccione Usar diseñador de configuración y agregue **WebProtection** como tipo de clave y valor como **Cadena**.
         - De forma predeterminada, **WebProtection= true**.
         - Administración debe hacer **webProtection = false** para desactivar la protección web.
         - Defender enviará el latido al portal de Microsoft 365 Defender cada vez que el usuario abra la aplicación.
@@ -139,7 +139,7 @@ A continuación se indican los pasos para configurar directivas de protección d
 
 2. Seleccione Guardar. Debería ver **que el estado de la conexión** ahora está establecido en **Habilitado**.
 
-3. Crear directiva de protección de aplicaciones: una vez completada la configuración del conector de Microsoft Defender para punto de conexión, vaya a **Aplicaciones** \> **Protección de aplicaciones directivas** (en Directiva) para crear una nueva directiva o actualizar una existente.
+3. Crear directiva de protección de aplicaciones: una vez completada la configuración del conector de Microsoft Defender para punto de conexión, vaya a **Aplicaciones** \> **अनुप्रयोग सुरक्षा directivas** (en Directiva) para crear una nueva directiva o actualizar una existente.
 
 4. Seleccione la plataforma, **Aplicaciones, Protección de datos,** Configuración de requisitos de acceso que su organización requiere para la directiva.
 

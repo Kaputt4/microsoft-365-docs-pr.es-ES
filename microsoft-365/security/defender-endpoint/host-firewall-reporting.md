@@ -8,7 +8,7 @@ ms.sitesec: library
 ms.pagetype: security
 ms.localizationpriority: medium
 audience: ITPro
-ms.topic: article
+ms.topic: conceptual
 author: dansimp
 ms.author: dansimp
 manager: dansimp
@@ -18,12 +18,12 @@ ms.collection:
 - tier2
 ms.custom: admindeeplinkDEFENDER
 search.appverid: met150
-ms.openlocfilehash: e2ffc8a81fcd52ac254e022c80455bc3b3d91d53
-ms.sourcegitcommit: 4e42bafee965446f44f7f57d1defed2b9b24fce8
+ms.openlocfilehash: 4ee445ba46eebf912251849b2f4f2aec0edb9282
+ms.sourcegitcommit: 0d8fb571024f134d7480fe14cffc5e31a687d356
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/30/2022
-ms.locfileid: "68226303"
+ms.lasthandoff: 10/20/2022
+ms.locfileid: "68644601"
 ---
 # <a name="host-firewall-reporting-in-microsoft-defender-for-endpoint"></a>Informes de firewalls de host en Microsoft Defender para punto de conexión
 
@@ -41,10 +41,10 @@ Si es administrador global o de seguridad, ahora puede hospedar informes de fire
      > [!NOTE]
      > Para que Windows2012 R2 y Windows Server 2016 aparezcan en los informes de firewall, estos dispositivos deben incorporarse mediante el paquete de solución unificada moderna. Para obtener más información, consulte [Nueva funcionalidad en la solución unificada moderna para Windows Server 2012 R2 y 2016](/microsoft-365/security/defender-endpoint/configure-server-endpoints#new-windows-server-2012-r2-and-2016-functionality-in-the-modern-unified-solution).
 - Para incorporar dispositivos al servicio Microsoft Defender para punto de conexión, consulte [aquí](onboard-configure.md).
-- Para <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">que Microsoft 365 Defender portal</a> empiece a recibir los datos, debe habilitar **Eventos de auditoría** para Windows Defender Firewall con seguridad avanzada:
+- Para <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">que Microsoft 365 Defender portal</a> empiece a recibir los datos, debe habilitar **Eventos de auditoría** para Windows डिफेन्डर Firewall con seguridad avanzada:
   - [Eliminación de paquetes de la plataforma de filtrado de auditoría](/windows/security/threat-protection/auditing/audit-filtering-platform-packet-drop)
   - [Conexión de la plataforma de filtrado de auditoría](/windows/security/threat-protection/auditing/audit-filtering-platform-connection)
-- Habilite estos eventos mediante directiva de grupo Editor de objetos, Directiva de seguridad local o los comandos de auditpol.exe. Para obtener más información, consulte [aquí](/windows/win32/fwp/auditing-and-logging).
+- Habilite estos eventos mediante समूह नीति Editor de objetos, Directiva de seguridad local o los comandos de auditpol.exe. Para obtener más información, consulte [aquí](/windows/win32/fwp/auditing-and-logging).
   - Los dos comandos de PowerShell son:
     - `auditpol /set /subcategory:"Filtering Platform Packet Drop" /failure:enable`
     - `auditpol /set /subcategory:"Filtering Platform Connection" /failure:enable`
@@ -95,7 +95,7 @@ catch {
    - Nombre del equipo
    - Proceso entre conexiones entrantes y salientes
 - Los administradores ahora pueden ver la actividad del firewall del host [de Windows aquí](https://security.microsoft.com/firewall).
-   - Para facilitar la creación de informes adicionales, descargue el [script de informes personalizados](https://github.com/microsoft/MDATP-PowerBI-Templates/tree/master/Firewall) para supervisar las actividades de firewall de Windows Defender mediante Power BI.
+   - Para facilitar la creación de informes adicionales, descargue el [script de informes personalizados](https://github.com/microsoft/MDATP-PowerBI-Templates/tree/master/Firewall) para supervisar las actividades de firewall de Windows डिफेन्डर mediante Power BI.
    - Los datos pueden tardar hasta 12 horas en reflejarse.
 
 ## <a name="supported-scenarios"></a>Escenarios admitidos
@@ -132,4 +132,4 @@ Los informes de firewall admiten la exploración desde la tarjeta directamente e
 
 Ahora se puede ejecutar la consulta y se pueden explorar todos los eventos de firewall relacionados de los últimos 30 días.
 
-Para obtener más informes o cambios personalizados, la consulta se puede exportar a Power BI para su posterior análisis. Los informes personalizados se pueden facilitar descargando el [script de informes personalizados](https://github.com/microsoft/MDATP-PowerBI-Templates/tree/master/Firewall) para supervisar las actividades de firewall de Windows Defender mediante Power BI.
+Para obtener más informes o cambios personalizados, la consulta se puede exportar a Power BI para su posterior análisis. Los informes personalizados se pueden facilitar mediante la descarga del [script de informes personalizados](https://github.com/microsoft/MDATP-PowerBI-Templates/tree/master/Firewall) para supervisar las actividades de firewall de Windows डिफेन्डर mediante Power BI.

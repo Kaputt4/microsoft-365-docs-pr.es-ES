@@ -11,16 +11,21 @@ ms.author: robmazz
 author: robmazz
 manager: laurawi
 audience: itpro
-ms.collection: m365-security-compliance
+ms.collection:
+- tier1
+- purview-compliance
 ms.custom: admindeeplinkCOMPLIANCE
-ms.openlocfilehash: 678d500b5d523c2b656f4f30fa4ef4a4ed5015a7
-ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
+ms.openlocfilehash: 254fb4f17331be8b688463599dea86b9f3748ca8
+ms.sourcegitcommit: 0d8fb571024f134d7480fe14cffc5e31a687d356
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/06/2022
-ms.locfileid: "66628713"
+ms.lasthandoff: 10/20/2022
+ms.locfileid: "68634638"
 ---
 # <a name="insider-risk-management-cases"></a>Casos de administración de riesgos internos
+
+>[!IMPORTANT]
+>Administración de riesgos internos de Microsoft Purview correlaciona varias señales para identificar posibles riesgos internos malintencionados o involuntarios, como el robo de IP, la pérdida de datos y las infracciones de seguridad. La administración de riesgos internos permite a los clientes crear directivas para administrar la seguridad y el cumplimiento. Creados con privacidad por diseño, los usuarios se seudonimizan de forma predeterminada y los controles de acceso basados en roles y los registros de auditoría están en su lugar para ayudar a garantizar la privacidad del nivel de usuario.
 
 Los casos son el núcleo de la gestión de riesgos internos y le permiten investigar y actuar en profundidad sobre los problemas generados por los indicadores de riesgo definidos en sus políticas. Los casos se crean manualmente a partir de alertas en situaciones en las que se necesita más acción para solucionar un problema relacionado con el cumplimiento para un usuario. Cada caso se limita a un único usuario y se pueden agregar varias alertas para el usuario a un caso existente o a un caso nuevo.
 
@@ -32,6 +37,8 @@ Después de investigar los detalles de un caso, puede tomar medidas mediante:
 - escalar el caso de una investigación de eDiscovery (Premium)
 
 Consulte el [vídeo Investigación y escalación de la administración de riesgos](https://www.youtube.com/watch?v=UONUSmkRC8s) internos para obtener información general sobre cómo se investigan y administran los casos en la administración de riesgos internos.
+
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
 
 ## <a name="cases-dashboard"></a>Panel Casos
 
@@ -80,7 +87,7 @@ En la pestaña **Información general del caso** se resumen los detalles del cas
 - **Estado**: estado actual del caso, activo o cerrado.
 - **Caso creado en**: fecha y hora en que se creó el caso.
 - **Puntuación de riesgo del usuario**: el nivel de riesgo calculado actual del usuario para el caso. Esta puntuación se calcula cada 24 horas y usa puntuaciones de riesgo de alerta de todas las alertas activas asociadas al usuario.
-- **Correo electrónico**: alias de correo electrónico del usuario para el caso.
+- **Email**: alias de correo electrónico del usuario para el caso.
 - **Organización o departamento**: la organización o el departamento al que está asignado el usuario.
 - **Nombre del administrador**: nombre del administrador del usuario.
 - **Correo electrónico del administrador**: alias de correo electrónico del administrador del usuario.
@@ -126,6 +133,12 @@ La pestaña **Actividad de usuario** permite a los analistas e investigadores de
 La pestaña **Explorador de actividad** permite a los analistas e investigadores de riesgo revisar los detalles de la actividad asociados a las alertas de riesgo. Por ejemplo, como parte de las acciones de administración de casos, es posible que los investigadores y analistas necesiten revisar todas las actividades de riesgo asociadas al caso para obtener más detalles. Con el **Explorador de actividades**, los revisores pueden revisar rápidamente una escala de tiempo de la actividad de riesgo detectada e identificar y filtrar todas las actividades de riesgo asociadas a alertas.
 
 Para obtener más información sobre el Explorador de actividades, consulte el artículo [Actividades de administración de riesgos de Insider](insider-risk-management-activities.md#activity-explorer) .
+
+### <a name="forensic-evidence-preview"></a>Pruebas forenses (versión preliminar)
+
+La pestaña **Pruebas forenses (versión preliminar)** permite a los investigadores de riesgo revisar las capturas visuales asociadas a las actividades de riesgo incluidas en los casos. Por ejemplo, como parte de las acciones de administración de casos, es posible que los investigadores necesiten ayudar a aclarar el contexto de la actividad del usuario que se está revisando. Ver los clips reales de la actividad puede ayudar al investigador a determinar si la actividad del usuario es potencialmente arriesgada y puede provocar un incidente de seguridad.
+
+Para obtener más información sobre las pruebas forenses, consulte el artículo [Información sobre las pruebas forenses de administración de riesgos internos](/microsoft-365/compliance/insider-risk-management-forensic-evidence) .
 
 ### <a name="content-explorer"></a>Explorador de contenido
 

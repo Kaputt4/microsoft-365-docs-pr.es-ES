@@ -19,13 +19,13 @@ audience: ITPro
 ms.collection:
 - m365-security
 - tier3
-ms.topic: article
-ms.openlocfilehash: ce62e5c54c8ce74c76cd85aed1d7b51176cec792
-ms.sourcegitcommit: 12af9e8e3a6eaa090fda9e98ccb831dff65863a4
+ms.topic: conceptual
+ms.openlocfilehash: 3be15ddfaf2fa8e90aa4764d64066ebed4c6763c
+ms.sourcegitcommit: 0d8fb571024f134d7480fe14cffc5e31a687d356
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/27/2022
-ms.locfileid: "68092145"
+ms.lasthandoff: 10/20/2022
+ms.locfileid: "68640970"
 ---
 # <a name="aadsignineventsbeta"></a>AADSignInEventsBeta
 
@@ -71,7 +71,7 @@ Use esta referencia para crear consultas que devuelvan información de la tabla.
 |`IsCompliant`|`int`|Indica si el dispositivo que inició el inicio de sesión es compatible (1) o no compatible (0)|
 |`AuthenticationProcessingDetails`|`string`|Detalles sobre el procesador de autenticación|
 |`AuthenticationRequirement`|`string`|Tipo de autenticación necesaria para el inicio de sesión. Valores posibles: multiFactorAuthentication (se requiere MFA) y singleFactorAuthentication (no se requiere MFA).|
-|`TokenIssuerType`|`int`|Indica si el emisor del token es Azure Active Directory (0) o Servicios de federación de Active Directory (AD FS) (1)|
+|`TokenIssuerType`|`int`|Indica si el emisor del token es Azure Active Directory (0) o Active Directory महासंघ सेवाहरू (1)|
 |`RiskLevelAggregated`|`int`|Nivel de riesgo agregado durante el inicio de sesión. Valores posibles: 0 (nivel de riesgo agregado no establecido), 1 (ninguno), 10 (bajo), 50 (medio) o 100 (alto).|
 |`RiskDetails`|`int`|Detalles sobre el estado de riesgo del usuario que inició sesión|
 |`RiskState`|`int`|Indica el estado de usuario de riesgo. Valores posibles: 0 (ninguno), 1 (seguro confirmado), 2 (corregido), 3 (descartado), 4 (en riesgo) o 5 (confirmado en peligro).|

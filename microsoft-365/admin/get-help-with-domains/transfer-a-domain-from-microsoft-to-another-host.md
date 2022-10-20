@@ -23,12 +23,12 @@ search.appverid:
 - MOE150
 - GEA150
 description: 'Busque los pasos que se indican aquí para transferir un dominio de Microsoft a otro registrador. '
-ms.openlocfilehash: 7209d17caf8e89760a3abe9543f78c3c86c39bc4
-ms.sourcegitcommit: 0b7070ec119e00e0dafe030bbfbef0ae5c9afa19
+ms.openlocfilehash: 68b145dfdd11cf58a2a56bfdcbba1cc45fccc519
+ms.sourcegitcommit: 0d8fb571024f134d7480fe14cffc5e31a687d356
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/29/2022
-ms.locfileid: "68193925"
+ms.lasthandoff: 10/20/2022
+ms.locfileid: "68642093"
 ---
 # <a name="transfer-a-domain-from-microsoft-to-another-host"></a>Transferencia de un dominio de Microsoft a otro host
 
@@ -37,7 +37,7 @@ No puede transferir un dominio de Microsoft 365 a otro registrador durante 60 d�
 > [!NOTE]
 > Una consulta _whois_ muestra un registrador de dominio comprado por Microsoft como Wild West Domains LLC. Sin embargo, solo se debe ponerse en contacto con Microsoft con respecto a su dominio comprado por Microsoft 365.
 
-Siga estos pasos para obtener un código en Microsoft 365 y, a continuación, vaya al otro sitio web del registrador de dominios para configurar la transferencia del nombre de dominio al nuevo registrador.
+Inicie sesión como administrador global, siga estos pasos para obtener un código en Microsoft 365 y, a continuación, vaya al otro sitio web del registrador de dominios para configurar la transferencia del nombre de dominio al nuevo registrador.
 
 ## <a name="transfer-a-domain"></a>Transferencia de un dominio
 
@@ -60,7 +60,7 @@ Siga estos pasos para obtener un código en Microsoft 365 y, a continuación, va
     Puede encontrar la pestaña **Registro** de código de autorización en la página **Dominios** de Microsoft 365.
 
     > [!TIP]
-    > Los dominios .uk requieren un procedimiento diferente. Póngase en contacto con Soporte técnico de Microsoft y solicite un **cambio de etiqueta IPS** para que coincida con el registrador que desea administrar en el futuro. Una vez que cambia la etiqueta, el dominio se transfiere inmediatamente al nuevo registrador. A continuación, tendrá que trabajar con el nuevo registrador para completar la transferencia, probablemente pagando las tarifas de transferencia y agregando el dominio transferido a su cuenta con su nuevo registrador.
+    > Los dominios .uk requieren un procedimiento diferente. Póngase en contacto con el soporte técnico de Microsoft y solicite un **cambio de etiqueta IPS** para que coincida con el registrador que desea administrar en el futuro. Una vez que cambia la etiqueta, el dominio se transfiere inmediatamente al nuevo registrador. A continuación, tendrá que trabajar con el nuevo registrador para completar la transferencia, probablemente pagando las tarifas de transferencia y agregando el dominio transferido a su cuenta con su nuevo registrador.
 
 9. Una vez completada la transferencia, renovará el dominio en el nuevo registrador de dominios.
 

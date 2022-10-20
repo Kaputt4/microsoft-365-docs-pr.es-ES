@@ -12,18 +12,18 @@ ms.collection:
 - tier1
 ms.service: microsoft-365-security
 ms.subservice: other
-ms.date: 10/03/2022
+ms.date: 10/18/2022
 ms.localizationpriority: high
 search.appverid:
 - MOE150
 - MET150
 description: Sacar el máximo partido de la prueba de Microsoft 365 Empresa Premium. Pruebe algunas de las funcionalidades clave de productividad y seguridad.
-ms.openlocfilehash: 9937fc7e841a823fd8ab6334dd434f5508564ab7
-ms.sourcegitcommit: 9f5cf8cf8a2e25cfd07b23b7f6d7f9d138a9cd16
+ms.openlocfilehash: 1a846998749a234bcb4334f74ead9d8631e55ddd
+ms.sourcegitcommit: 0d8fb571024f134d7480fe14cffc5e31a687d356
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/07/2022
-ms.locfileid: "68501259"
+ms.lasthandoff: 10/20/2022
+ms.locfileid: "68646515"
 ---
 # <a name="trial-user-guide-microsoft-365-business-premium"></a>Guía del usuario de prueba: Microsoft 365 Empresa Premium
 
@@ -44,7 +44,7 @@ Después de [iniciar una prueba o comprar Microsoft 365 Empresa Premium](get-mi
 
    - [Vínculos seguros](../security/office-365-security/safe-links.md), [datos adjuntos seguros](../security/office-365-security/safe-attachments.md) y [directivas contra la suplantación de identidad](../security/office-365-security/anti-phishing-protection.md) que engloban todo el espacio empresarial o el subconjunto de usuarios que haya elegido durante el proceso de configuración de prueba. (La suscripción de prueba es para un máximo de 25 usuarios).
 
-   - Protección para aplicaciones de productividad, como [SharePoint](/sharepoint/introduction), [OneDrive](/onedrive/one-drive-quickstart-small-business), [aplicaciones de Office](/deployoffice/about-microsoft-365-apps)y [Microsoft Teams](/microsoftteams/teams-overview).
+   - Protección para aplicaciones de productividad, como [SharePoint](/sharepoint/introduction), [OneDrive](/onedrive/one-drive-quickstart-small-business), [aplicaciones de Microsoft 365](/deployoffice/about-microsoft-365-apps) y [Microsoft Teams](/microsoftteams/teams-overview).
 
 ## <a name="add-a-domain"></a>Agregar un dominio
 
@@ -82,7 +82,7 @@ Microsoft 365 Empresa Premium incluye Defender para empresas, una nueva solució
 
 1. En primer lugar, tendrá que [instalar Aplicaciones Microsoft 365](m365bp-install-office-apps.md).
 
-2. Vaya a [https://office.com](https://office.com) e inicie sesión. (Vea [Introducción en Office.com](https://support.microsoft.com/office/get-started-at-office-com-91a4ec74-67fe-4a84-a268-f6bdf3da1804)).
+2. Vaya a [https://office.com](https://office.com) e inicie sesión. (Consulte [Introducción a Office.com](https://support.microsoft.com/office/get-started-at-office-com-91a4ec74-67fe-4a84-a268-f6bdf3da1804)).
 
 3. Crear un documento de Office, como un [documento de Word](https://support.microsoft.com/office/basic-tasks-in-word-87b3243c-b0bf-4a29-82aa-09a681999fdc).
 

@@ -14,16 +14,16 @@ audience: ITPro
 ms.collection:
 - m365-security
 - tier3
-ms.topic: article
+ms.topic: conceptual
 ms.subservice: mde
 ms.custom: api
 search.appverid: met150
-ms.openlocfilehash: a50aa7c1771469f7ba55f93d02deaaee98824deb
-ms.sourcegitcommit: 4e42bafee965446f44f7f57d1defed2b9b24fce8
+ms.openlocfilehash: d07d472a140289449a0e7a321118901bad18c28a
+ms.sourcegitcommit: 0d8fb571024f134d7480fe14cffc5e31a687d356
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/30/2022
-ms.locfileid: "68229402"
+ms.lasthandoff: 10/20/2022
+ms.locfileid: "68641256"
 ---
 # <a name="restrict-app-execution-api"></a>Restricción de la API de ejecución de aplicaciones
 
@@ -56,7 +56,7 @@ Restrinja la ejecución de todas las aplicaciones del dispositivo excepto un con
 >
 > - Esta acción está disponible para dispositivos en Windows 10, versión 1709 o posterior, y en Windows 11.
 > - Esta característica está disponible si su organización usa Microsoft Defender Antivirus.
-> - Esta acción debe cumplir los requisitos de firma y formatos de directiva de integridad de código Windows Defender Control de aplicaciones. Para obtener más información, consulte [Formatos y firma de directivas de integridad de código](/windows/device-security/device-guard/requirements-and-deployment-planning-guidelines-for-device-guard#code-integrity-policy-formats-and-signing).
+> - Esta acción debe cumplir los requisitos de firma y formatos de directiva de integridad de código Windows डिफेन्डर Application Control. Para obtener más información, consulte [Formatos y firma de directivas de integridad de código](/windows/device-security/device-guard/requirements-and-deployment-planning-guidelines-for-device-guard#code-integrity-policy-formats-and-signing).
 
 ## <a name="permissions"></a>Permisos
 

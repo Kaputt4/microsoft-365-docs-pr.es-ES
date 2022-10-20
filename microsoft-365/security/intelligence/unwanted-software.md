@@ -14,14 +14,14 @@ audience: ITPro
 ms.collection:
 - m365-security
 - tier2
-ms.topic: article
+ms.topic: conceptual
 search.appverid: met150
-ms.openlocfilehash: 5d40a1862e65f0028fe72a41a6ae3f6ac8e4e266
-ms.sourcegitcommit: 4e42bafee965446f44f7f57d1defed2b9b24fce8
+ms.openlocfilehash: ab64cf13c2f219296ab6ee0831714098fd08e73f
+ms.sourcegitcommit: 0d8fb571024f134d7480fe14cffc5e31a687d356
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/30/2022
-ms.locfileid: "68229600"
+ms.lasthandoff: 10/20/2022
+ms.locfileid: "68640376"
 ---
 # <a name="unwanted-software"></a>Software no deseado
 
@@ -49,7 +49,7 @@ Microsoft usa un amplio [criterio de evaluación](criteria.md) para identificar 
 
 Para evitar una infección de software no deseada, descargue software solo desde sitios web oficiales o desde Microsoft Store. Tenga cuidado con la descarga de software de sitios de terceros.
 
-Use [Microsoft Edge](/microsoft-edge/deploy/index) al navegar por Internet. Microsoft Edge incluye protecciones adicionales que bloquean eficazmente los modificadores de explorador que pueden cambiar la configuración del explorador. Microsoft Edge también bloquea los sitios web conocidos que hospedan software no deseado mediante [Windows Defender SmartScreen](/microsoft-edge/deploy/index) (también utilizado por Internet Explorer).
+Use [Microsoft Edge](/microsoft-edge/deploy/index) al navegar por Internet. Microsoft Edge incluye protecciones adicionales que bloquean eficazmente los modificadores de explorador que pueden cambiar la configuración del explorador. Microsoft Edge también bloquea los sitios web conocidos que hospedan software no deseado mediante [Windows डिफेन्डर SmartScreen](/microsoft-edge/deploy/index) (también utilizado por Internet Explorer).
 
 Habilite [Microsoft Defender Antivirus](/microsoft-365/security/defender-endpoint/microsoft-defender-antivirus-in-windows-10) en Windows 10. Proporciona protección en tiempo real contra amenazas y detecta y elimina software no deseado conocido.
 

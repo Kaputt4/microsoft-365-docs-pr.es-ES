@@ -15,15 +15,15 @@ ms.collection:
 - m365-security
 - tier2
 ms.custom: admindeeplinkDEFENDER
-ms.topic: article
+ms.topic: conceptual
 ms.subservice: mde
 search.appverid: met150
-ms.openlocfilehash: e2229e0f0c4e34b71c054f352e4e94fc029daa51
-ms.sourcegitcommit: 4e42bafee965446f44f7f57d1defed2b9b24fce8
+ms.openlocfilehash: 716c373aa5d4b07301443c62a6882989efd74ea1
+ms.sourcegitcommit: 0d8fb571024f134d7480fe14cffc5e31a687d356
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/30/2022
-ms.locfileid: "68232856"
+ms.lasthandoff: 10/20/2022
+ms.locfileid: "68641212"
 ---
 # <a name="create-and-manage-roles-for-role-based-access-control"></a>Creación y administración de roles para el control de acceso basado en rol
 
@@ -42,7 +42,7 @@ ms.locfileid: "68232856"
 
 Los pasos siguientes le guían sobre cómo crear roles en Microsoft 365 Defender. Se supone que ya ha creado grupos de usuarios de Azure Active Directory.
 
-1. Inicie sesión en <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">Microsoft 365 Defender</a> con una cuenta con un administrador de seguridad o Administrador global rol asignado.
+1. Inicie sesión en <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">Microsoft 365 Defender</a> con una cuenta con un rol administrador de seguridad o administrador global asignado.
 
 2. En el panel de navegación, seleccione **Configuración** \> **Roles de puntos** \> de conexión (en **Permisos**).
 
@@ -99,7 +99,7 @@ Para obtener más información sobre los comandos disponibles, consulte [Investi
 
 ## <a name="edit-roles"></a>Editar roles
 
-1. Inicie sesión en <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">Microsoft 365 Defender</a> con la cuenta con el administrador de seguridad o Administrador global rol asignado.
+1. Inicie sesión en <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">Microsoft 365 Defender</a> con la cuenta con el rol Administrador de seguridad o Administrador global asignado.
 
 2. En el panel de navegación, seleccione **Configuración** \> **Roles de puntos** \> de conexión (en **Permisos**).
 
@@ -113,7 +113,7 @@ Para obtener más información sobre los comandos disponibles, consulte [Investi
 
 ## <a name="delete-roles"></a>Eliminación de roles
 
-1. Inicie sesión en <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">Microsoft 365 Defender</a> con la cuenta con el administrador de seguridad o Administrador global rol asignado.
+1. Inicie sesión en <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">Microsoft 365 Defender</a> con la cuenta con el rol Administrador de seguridad o Administrador global asignado.
 
 2. En el panel de navegación, seleccione **Configuración** \> **Roles de puntos** \> de conexión (en **Permisos**).
 

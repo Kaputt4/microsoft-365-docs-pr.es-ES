@@ -15,16 +15,16 @@ audience: ITPro
 ms.collection:
 - m365-security
 - tier3
-ms.topic: article
+ms.topic: conceptual
 ms.subservice: mde
 ms.custom: api
 search.appverid: met150
-ms.openlocfilehash: 293f83926850f7138ad3c3ef455904412b4bb9bc
-ms.sourcegitcommit: 0b7070ec119e00e0dafe030bbfbef0ae5c9afa19
+ms.openlocfilehash: d81304d53d923ca4c288603010c3709ee1262113
+ms.sourcegitcommit: 0d8fb571024f134d7480fe14cffc5e31a687d356
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/29/2022
-ms.locfileid: "68189679"
+ms.lasthandoff: 10/20/2022
+ms.locfileid: "68628211"
 ---
 # <a name="create-an-app-to-access-microsoft-defender-for-endpoint-without-a-user"></a>Creación de una aplicación para acceder a Microsoft Defender para punto de conexión sin un usuario
 
@@ -60,7 +60,7 @@ En este artículo se explica cómo crear una aplicación de Azure AD, obtener un
 
 1. Inicie sesión en [Azure](https://portal.azure.com) con un usuario que tenga el rol **De administrador global** .
 
-2. Vaya a **Azure Active Directory** \> **Registros de aplicaciones** \> **Nuevo registro**. 
+2. Vaya a Registros \> **de aplicaciones** de **Azure Active Directory** \> **Nuevo registro**. 
 
     :::image type="content" source="images/atp-azure-new-app2.png" alt-text="Panel de registro de aplicaciones" lightbox="images/atp-azure-new-app2.png":::
 

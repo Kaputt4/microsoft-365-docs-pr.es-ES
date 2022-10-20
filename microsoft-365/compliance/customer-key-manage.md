@@ -10,22 +10,25 @@ ms.localizationpriority: medium
 search.appverid:
 - MET150
 ms.collection:
-- M365-security-compliance
+- purview-compliance
+- tier1
 description: Después de configurar la clave de cliente, obtenga información sobre cómo administrarla mediante la restauración de claves akv y la administración de permisos y la creación y asignación de directivas de cifrado de datos.
-ms.openlocfilehash: 4f02b9228dc581e1b1d2a2f533d65d97bffe572e
-ms.sourcegitcommit: 2d1302a6165b83cbbc8c2df2c608d43b6b0498b0
+ms.openlocfilehash: 31cc70e94bd11c86cd66a8d2cc8b4033b4c0b2eb
+ms.sourcegitcommit: 0d8fb571024f134d7480fe14cffc5e31a687d356
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/25/2022
-ms.locfileid: "67433474"
+ms.lasthandoff: 10/20/2022
+ms.locfileid: "68641917"
 ---
 # <a name="manage-customer-key"></a>Administrar clave de cliente
 
 Después de configurar la clave de cliente, deberá crear y asignar una o varias directivas de cifrado de datos (DEP). Una vez que haya asignado los DEP, puede administrar las claves como se describe en este artículo. Obtenga más información sobre la clave de cliente en los temas relacionados.
 
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
+
 ## <a name="create-a-dep-for-use-with-multiple-workloads-for-all-tenant-users"></a>Creación de un DEP para su uso con varias cargas de trabajo para todos los usuarios del inquilino
 
-Antes de empezar, asegúrese de que ha completado las tareas necesarias para configurar la clave de cliente. Para obtener información, consulte [Configuración de la clave de cliente](customer-key-set-up.md). Para crear el DEP, necesita los URI de Key Vault que obtuvo durante la instalación. Para obtener información, consulte [Obtención del URI de cada clave de Azure Key Vault](customer-key-set-up.md#obtain-the-uri-for-each-azure-key-vault-key).
+Antes de empezar, asegúrese de que ha completado las tareas necesarias para configurar la clave de cliente. Para obtener información, consulte [Configuración de la clave de cliente](customer-key-set-up.md). Para crear el DEP, necesita los URI de कि भल्ट que obtuvo durante la instalación. Para obtener información, consulte [Obtención del URI de cada clave de Azure कि भल्ट](customer-key-set-up.md#obtain-the-uri-for-each-azure-key-vault-key).
 
 Para crear un DEP de varias cargas de trabajo, siga estos pasos:
 
@@ -71,9 +74,9 @@ Set-M365DataAtRestEncryptionPolicyAssignment -DataEncryptionPolicy "Contoso_Glob
 
 ## <a name="create-a-dep-for-use-with-exchange-online-mailboxes"></a>Creación de un DEP para su uso con buzones de Exchange Online
 
-Antes de empezar, asegúrese de que ha completado las tareas necesarias para configurar Azure Key Vault. Para obtener información, consulte [Configuración de la clave de cliente](customer-key-set-up.md). Completará estos pasos en Exchange Online PowerShell.
+Antes de empezar, asegúrese de que ha completado las tareas necesarias para configurar Azure कि भल्ट. Para obtener información, consulte [Configuración de la clave de cliente](customer-key-set-up.md). Completará estos pasos en Exchange Online PowerShell.
 
-Un DEP está asociado a un conjunto de claves almacenadas en Azure Key Vault. Asigna un DEP a un buzón de Correo en Microsoft 365. A continuación, Microsoft 365 usará las claves identificadas en la directiva para cifrar el buzón. Para crear el DEP, necesita los URI de Key Vault que obtuvo durante la instalación. Para obtener información, consulte [Obtención del URI de cada clave de Azure Key Vault](customer-key-set-up.md#obtain-the-uri-for-each-azure-key-vault-key).
+Un DEP está asociado a un conjunto de claves almacenadas en Azure कि भल्ट. Asigna un DEP a un buzón de Correo en Microsoft 365. A continuación, Microsoft 365 usará las claves identificadas en la directiva para cifrar el buzón. Para crear el DEP, necesita los URI de कि भल्ट que obtuvo durante la instalación. Para obtener información, consulte [Obtención del URI de cada clave de Azure कि भल्ट](customer-key-set-up.md#obtain-the-uri-for-each-azure-key-vault-key).
 
 ¡Recordar! Al crear un DEP, se especifican dos claves en dos almacenes de claves de Azure diferentes. Cree estas claves en dos regiones de Azure independientes para garantizar la redundancia geográfica.
 
@@ -125,11 +128,11 @@ Donde *MailUserIdParameter* especifica un usuario de correo (también conocido c
 
 ## <a name="create-a-dep-for-use-with-sharepoint-online-onedrive-for-business-and-teams-files"></a>Creación de un DEP para su uso con archivos de SharePoint Online, OneDrive para la Empresa y Teams
 
-Antes de empezar, asegúrese de que ha completado las tareas necesarias para configurar Azure Key Vault. Para obtener información, consulte [Configuración de la clave de cliente](customer-key-set-up.md).
+Antes de empezar, asegúrese de que ha completado las tareas necesarias para configurar Azure कि भल्ट. Para obtener información, consulte [Configuración de la clave de cliente](customer-key-set-up.md).
 
 Para configurar la clave de cliente para archivos de SharePoint Online, OneDrive para la Empresa y Teams, complete estos pasos en PowerShell de SharePoint Online.
 
-Un DEP se asocia a un conjunto de claves almacenadas en Azure Key Vault. Se aplica un DEP a todos los datos de una ubicación geográfica, también denominada geoárea. Si usa la característica multigeográfica de Office 365, puede crear un DEP por geo con la capacidad de usar claves diferentes por geo. Si no usa multigeográfica, puede crear un DEP en su organización para usarlo con archivos de SharePoint Online, OneDrive para la Empresa y Teams. Microsoft 365 usa las claves identificadas en el DEP para cifrar los datos en esa ubicación geográfica. Para crear el DEP, necesita los URI de Key Vault que obtuvo durante la instalación. Para obtener información, consulte [Obtención del URI de cada clave de Azure Key Vault](customer-key-set-up.md#obtain-the-uri-for-each-azure-key-vault-key).
+Un DEP se asocia a un conjunto de claves almacenadas en Azure कि भल्ट. Se aplica un DEP a todos los datos de una ubicación geográfica, también denominada geoárea. Si usa la característica multigeográfica de Office 365, puede crear un DEP por geo con la capacidad de usar claves diferentes por geo. Si no usa multigeográfica, puede crear un DEP en su organización para usarlo con archivos de SharePoint Online, OneDrive para la Empresa y Teams. Microsoft 365 usa las claves identificadas en el DEP para cifrar los datos en esa ubicación geográfica. Para crear el DEP, necesita los URI de कि भल्ट que obtuvo durante la instalación. Para obtener información, consulte [Obtención del URI de cada clave de Azure कि भल्ट](customer-key-set-up.md#obtain-the-uri-for-each-azure-key-vault-key).
 
 ¡Recordar! Al crear un DEP, se especifican dos claves en dos almacenes de claves de Azure diferentes. Cree estas claves en dos regiones de Azure independientes para garantizar la redundancia geográfica.
 
@@ -295,7 +298,7 @@ Ejemplo:
 Set-M365DataAtRestEncryptionPolicy -Identity "Contoso_Global" -Enabled $false
 ```
 
-## <a name="restore-azure-key-vault-keys"></a>Restauración de claves de Azure Key Vault
+## <a name="restore-azure-key-vault-keys"></a>Restauración de claves de Azure कि भल्ट
 
 Antes de realizar una restauración, use las funcionalidades de recuperación proporcionadas por la eliminación temporal. Todas las claves que se usan con clave de cliente son necesarias para tener habilitada la eliminación temporal. La eliminación temporal actúa como una papelera de reciclaje y permite la recuperación durante un máximo de 90 días sin necesidad de restaurar. La restauración solo debe ser necesaria en circunstancias extremas o inusuales, por ejemplo, si se pierde la clave o el almacén de claves. Si debe restaurar una clave para usarla con la clave de cliente, en Azure PowerShell, ejecute el cmdlet Restore-AzureKeyVaultKey como se indica a continuación:
 
@@ -405,7 +408,7 @@ Para iniciar la ruta de acceso de purga de datos, complete estos pasos:
     Set-DataEncryptionPolicy <Policy ID> -PermanentDataPurgeRequested -PermanentDataPurgeReason <Reason> -PermanentDataPurgeContact <ContactName>
     ```
 
-   Si se produce un error en el comando, asegúrese de que ha quitado los permisos de Exchange Online de ambas claves en Azure Key Vault como se especificó anteriormente en esta tarea. Una vez que haya establecido el modificador PermanentDataPurgeRequested mediante el cmdlet Set-DataEncryptionPolicy, ya no podrá asignar este DEP a buzones.
+   Si se produce un error en el comando, asegúrese de que ha quitado los permisos de Exchange Online de ambas claves en Azure कि भल्ट como se especificó anteriormente en esta tarea. Una vez que haya establecido el modificador PermanentDataPurgeRequested mediante el cmdlet Set-DataEncryptionPolicy, ya no podrá asignar este DEP a buzones.
 
 4. Póngase en contacto con el soporte técnico de Microsoft y solicite el documento electrónico de purga de datos.
 

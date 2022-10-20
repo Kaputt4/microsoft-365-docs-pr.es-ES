@@ -1,7 +1,7 @@
 ---
 title: Configuración de exclusiones para archivos abiertos por procesos específicos
 description: Puede excluir archivos de los exámenes si un proceso específico los ha abierto.
-keywords: Antivirus de Microsoft Defender, proceso, exclusión, archivos, exámenes
+keywords: Microsoft Defender Antivirus, proceso, exclusión, archivos, exámenes
 ms.service: microsoft-365-security
 ms.subservice: mde
 ms.mktglfcycl: manage
@@ -10,18 +10,20 @@ ms.pagetype: security
 ms.localizationpriority: medium
 author: denisebmsft
 ms.author: deniseb
-ms.topic: article
+ms.topic: conceptual
 ms.custom: nextgen
 ms.reviewer: ''
 manager: dansimp
-ms.collection: M365-security-compliance
+ms.collection:
+- m365-security
+- tier2
 search.appverid: met150
-ms.openlocfilehash: 2f29c96631fad18ac5eaaf8b2ead9888da4149ad
-ms.sourcegitcommit: 9b133379196da2b3a4bb311b07ff274f43780f68
+ms.openlocfilehash: d4a212aaf45edc6959967b2699f815c4e441e74a
+ms.sourcegitcommit: 0d8fb571024f134d7480fe14cffc5e31a687d356
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/14/2022
-ms.locfileid: "67695657"
+ms.lasthandoff: 10/20/2022
+ms.locfileid: "68641565"
 ---
 # <a name="configure-exclusions-for-files-opened-by-processes"></a>Configuración de exclusiones para archivos abiertos por procesos
 
@@ -35,7 +37,7 @@ ms.locfileid: "67695657"
 **Plataformas**
 - Windows 
 
-Puede excluir los archivos abiertos por procesos específicos de los exámenes del Antivirus de Microsoft Defender. Consulte [Recomendaciones para definir exclusiones](configure-exclusions-microsoft-defender-antivirus.md#recommendations-for-defining-exclusions) antes de definir las listas de exclusión.
+Puede excluir archivos abiertos por procesos específicos de Microsoft Defender exámenes antivirus. Consulte [Recomendaciones para definir exclusiones](configure-exclusions-microsoft-defender-antivirus.md#recommendations-for-defining-exclusions) antes de definir las listas de exclusión.
 
 En este artículo se describe cómo configurar listas de exclusión.
 
@@ -47,17 +49,17 @@ En este artículo se describe cómo configurar listas de exclusión.
 |Cualquier archivo en el equipo abierto por cualquier proceso en una carpeta específica|La especificación `c:\test\sample\*` excluiría los archivos abiertos por: <p> `c:\test\sample\test.exe` <p> `c:\test\sample\test2.exe` <p> `c:\test\sample\utility.exe`|
 |Cualquier archivo de la máquina abierto por un proceso específico en una carpeta específica|La especificación `c:\test\process.exe` excluiría los archivos abiertos solo por `c:\test\process.exe`|
 
-Al agregar un proceso a la lista de exclusión de procesos, Antivirus de Microsoft Defender no examinará los archivos abiertos por ese proceso, independientemente de dónde se encuentren los archivos. Sin embargo, el propio proceso se examinará a menos que también se haya agregado a la [lista de exclusión de archivos](configure-extension-file-exclusions-microsoft-defender-antivirus.md).
+Al agregar un proceso a la lista de exclusión de procesos, Microsoft Defender Antivirus no examinará los archivos abiertos por ese proceso, independientemente de dónde se encuentren los archivos. Sin embargo, el propio proceso se examinará a menos que también se haya agregado a la [lista de exclusión de archivos](configure-extension-file-exclusions-microsoft-defender-antivirus.md).
 
 Las exclusiones solo se aplican a la [protección y supervisión en tiempo real always-on](configure-real-time-protection-microsoft-defender-antivirus.md). No se aplican a exámenes programados o a petición.
 
-Los cambios realizados con directiva de grupo en las listas de exclusión **se mostrarán** en las listas de la [aplicación Seguridad de Windows](microsoft-defender-security-center-antivirus.md). Sin embargo, los cambios realizados en la aplicación Seguridad de Windows **no se mostrarán** en las listas de directiva de grupo.
+Los cambios realizados con समूह नीति en las listas de exclusión **se mostrarán** en las listas de la [aplicación Seguridad de Windows](microsoft-defender-security-center-antivirus.md). Sin embargo, los cambios realizados en la aplicación Seguridad de Windows **no se mostrarán** en las listas de समूह नीति.
 
-Puede agregar, quitar y revisar las listas de exclusiones en directiva de grupo, Configuration Manager de punto de conexión de Microsoft, Microsoft Intune y con la aplicación Seguridad de Windows, y puede usar caracteres comodín para personalizar aún más las listas.
+Puede agregar, quitar y revisar las listas de exclusiones en समूह नीति, Microsoft Endpoint Configuration Manager, Microsoft Intune y con la aplicación Seguridad de Windows, y puede usar caracteres comodín para personalizar aún más las listas.
 
 También puede usar cmdlets de PowerShell y WMI para configurar las listas de exclusión, incluida la revisión de las listas.
 
-De forma predeterminada, los cambios locales realizados en las listas (por los usuarios con privilegios de administrador; los cambios realizados con PowerShell y WMI) se combinarán con las listas según se definan (e implementen) directiva de grupo, Configuration Manager o Intune. Las listas de directiva de grupo tendrán prioridad en el caso de conflictos.
+De forma predeterminada, los cambios locales realizados en las listas (por los usuarios con privilegios de administrador; los cambios realizados con PowerShell y WMI) se combinarán con las listas definidas (e implementadas) por समूह नीति, Configuration Manager o Intune. Las listas de समूह नीति tendrán prioridad en el caso de conflictos.
 
 Puede [configurar cómo se combinan las listas de exclusiones definidas local y globalmente](configure-local-policy-overrides-microsoft-defender-antivirus.md#merge-lists) para permitir que los cambios locales invaliden la configuración de implementación administrada.
 
@@ -71,13 +73,13 @@ Consulte [Configurar la configuración de restricciones de dispositivo en Micros
 
 Consulte [Creación e implementación de directivas antimalware: configuración de exclusión](/configmgr/protect/deploy-use/endpoint-antimalware-policies#exclusion-settings) para obtener más información sobre cómo configurar Microsoft Endpoint Manager (rama actual).
 
-### <a name="use-group-policy-to-exclude-files-that-have-been-opened-by-specified-processes-from-scans"></a>Use directiva de grupo para excluir los archivos abiertos por procesos especificados de los exámenes.
+### <a name="use-group-policy-to-exclude-files-that-have-been-opened-by-specified-processes-from-scans"></a>Use समूह नीति para excluir los archivos abiertos por procesos especificados de los exámenes.
 
-1. En el equipo de administración de directiva de grupo, abra la [consola de administración de directiva de grupo](/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/cc731212(v=ws.11)), haga clic con el botón derecho en el objeto directiva de grupo que desea configurar y haga clic en **Editar**.
+1. En el equipo de administración de समूह नीति, abra la [consola de administración de समूह नीति](/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/cc731212(v=ws.11)), haga clic con el botón derecho en el objeto समूह नीति que desea configurar y haga clic en **Editar**.
 
-2. En el **Editor de administración de directiva de grupo**, vaya a **Configuración del equipo** y haga clic en **Plantillas administrativas**.
+2. En el **Editor de administración de समूह नीति**, vaya a **Configuración del equipo** y haga clic en **Plantillas administrativas**.
 
-3. Expanda el árbol a **componentes \> de Windows Exclusiones del Antivirus \> de Microsoft Defender**.
+3. Expanda el árbol a **componentes \> de Windows Microsoft Defender Exclusiones antivirus\>**.
 
 4. Haga doble clic en **Exclusiones de proceso y** agregue las exclusiones:
     1. Establezca la opción **en Habilitado**.
@@ -107,13 +109,13 @@ Se permite lo siguiente como \<cmdlet\>:
 > [!IMPORTANT]
 > Si ha creado una lista, con `Set-MpPreference` o `Add-MpPreference`, el uso del `Set-MpPreference` cmdlet volverá a sobrescribir la lista existente.
 
-Por ejemplo, el siguiente fragmento de código haría que los exámenes del Antivirus de Microsoft Defender excluyesen cualquier archivo abierto por el proceso especificado:
+Por ejemplo, el siguiente fragmento de código provocaría que Microsoft Defender exámenes antivirus excluyan cualquier archivo abierto por el proceso especificado:
 
 ```PowerShell
 Add-MpPreference -ExclusionProcess "c:\internal\test.exe"
 ```
 
-Para obtener más información sobre cómo usar PowerShell con el Antivirus de Microsoft Defender, consulte Administración de antivirus con cmdlets de PowerShell y [cmdlets del Antivirus de Microsoft Defender](/powershell/module/defender).
+Para obtener más información sobre cómo usar PowerShell con Microsoft Defender Antivirus, consulte Administración de antivirus con cmdlets de PowerShell y [cmdlets de Microsoft Defender Antivirus](/powershell/module/defender).
 
 ### <a name="use-windows-management-instruction-wmi-to-exclude-files-that-have-been-opened-by-specified-processes-from-scans"></a>Usar instrucciones de administración de Windows (WMI) para excluir de los exámenes los archivos abiertos por procesos especificados
 
@@ -125,7 +127,7 @@ ExclusionProcess
 
 El uso de **Set**, **Add** y **Remove** es análogo a sus homólogos de PowerShell: `Set-MpPreference`, `Add-MpPreference`y `Remove-MpPreference`.
 
-Para obtener más información y parámetros permitidos, consulte [Windows Defender API WMIv2](/previous-versions/windows/desktop/defender/windows-defender-wmiv2-apis-portal).
+Para obtener más información y parámetros permitidos, consulte [Windows डिफेन्डर API WMIv2](/previous-versions/windows/desktop/defender/windows-defender-wmiv2-apis-portal).
 
 ### <a name="use-the-windows-security-app-to-exclude-files-that-have-been-opened-by-specified-processes-from-scans"></a>Use la aplicación Seguridad de Windows para excluir los archivos abiertos por procesos especificados de los exámenes.
 
@@ -150,7 +152,7 @@ Puede recuperar los elementos de la lista de exclusión con MpCmdRun, PowerShell
 
 Si usa PowerShell, puede recuperar la lista de dos maneras:
 
-- Recupere el estado de todas las preferencias del Antivirus de Microsoft Defender. Cada una de las listas se mostrará en líneas independientes, pero los elementos de cada lista se combinarán en la misma línea.
+- Recupere el estado de todas las preferencias Microsoft Defender Antivirus. Cada una de las listas se mostrará en líneas independientes, pero los elementos de cada lista se combinarán en la misma línea.
 - Escriba el estado de todas las preferencias en una variable y use esa variable para llamar solo a la lista específica que le interesa. Cada uso de `Add-MpPreference` se escribe en una nueva línea.
 
 ### <a name="validate-the-exclusion-list-by-using-mpcmdrun"></a>Validación de la lista de exclusión mediante MpCmdRun
@@ -162,9 +164,9 @@ MpCmdRun.exe -CheckExclusion -path <path>
 ```
 
 > [!NOTE]
-> La comprobación de exclusiones con MpCmdRun requiere la versión 4.18.1812.3 del Antivirus de Microsoft Defender CAMP (publicada en diciembre de 2018) o posterior.
+> La comprobación de exclusiones con MpCmdRun requiere Microsoft Defender Antivirus CAMP versión 4.18.1812.3 (publicada en diciembre de 2018) o posterior.
 
-### <a name="review-the-list-of-exclusions-alongside-all-other-microsoft-defender-antivirus-preferences-by-using-powershell"></a>Revise la lista de exclusiones junto con todas las demás preferencias del Antivirus de Microsoft Defender mediante PowerShell.
+### <a name="review-the-list-of-exclusions-alongside-all-other-microsoft-defender-antivirus-preferences-by-using-powershell"></a>Revise la lista de exclusiones junto con el resto de las preferencias Microsoft Defender Antivirus mediante PowerShell.
 
 Use el siguiente cmdlet:
 
@@ -172,7 +174,7 @@ Use el siguiente cmdlet:
 Get-MpPreference
 ```
 
-Consulte [Uso de cmdlets de PowerShell para configurar y ejecutar antivirus de Microsoft Defender](use-powershell-cmdlets-microsoft-defender-antivirus.md) y [cmdlets de Antivirus de Microsoft Defender](/powershell/module/defender) para obtener más información sobre cómo usar PowerShell con el Antivirus de Microsoft Defender.
+Consulte [Uso de cmdlets de PowerShell para configurar y ejecutar Microsoft Defender Antivirus](use-powershell-cmdlets-microsoft-defender-antivirus.md) y [Microsoft Defender Cmdlets de Antivirus](/powershell/module/defender) para obtener más información sobre cómo usar PowerShell con Microsoft Defender Antivirus.
 
 ### <a name="retrieve-a-specific-exclusions-list-by-using-powershell"></a>Recuperación de una lista de exclusiones específica mediante PowerShell
 
@@ -183,7 +185,7 @@ $WDAVprefs = Get-MpPreference
 $WDAVprefs.ExclusionProcess
 ```
 
-Consulte [Uso de cmdlets de PowerShell para configurar y ejecutar antivirus de Microsoft Defender](use-powershell-cmdlets-microsoft-defender-antivirus.md) y [cmdlets de Antivirus de Microsoft Defender](/powershell/module/defender) para obtener más información sobre cómo usar PowerShell con el Antivirus de Microsoft Defender.
+Consulte [Uso de cmdlets de PowerShell para configurar y ejecutar Microsoft Defender Antivirus](use-powershell-cmdlets-microsoft-defender-antivirus.md) y [Microsoft Defender Cmdlets de Antivirus](/powershell/module/defender) para obtener más información sobre cómo usar PowerShell con Microsoft Defender Antivirus.
 
 > [!TIP]
 > Si busca información relacionada con el antivirus para otras plataformas, consulte:
@@ -197,9 +199,9 @@ Consulte [Uso de cmdlets de PowerShell para configurar y ejecutar antivirus de M
 
 ## <a name="related-articles"></a>Artículos relacionados
 
-- [Configuración y validación de exclusiones en exámenes del Antivirus de Microsoft Defender](configure-exclusions-microsoft-defender-antivirus.md)
+- [Configuración y validación de exclusiones en exámenes de antivirus de Microsoft Defender](configure-exclusions-microsoft-defender-antivirus.md)
 - [Configuración y validación de exclusiones basadas en el nombre de archivo, la extensión y la ubicación de la carpeta](configure-extension-file-exclusions-microsoft-defender-antivirus.md)
-- [Configuración de exclusiones del Antivirus de Microsoft Defender en Windows Server](configure-server-exclusions-microsoft-defender-antivirus.md)
+- [Configuración de exclusiones de antivirus de Microsoft Defender en Windows Server](configure-server-exclusions-microsoft-defender-antivirus.md)
 - [Errores comunes para evitarlos cuando se definen exclusiones](common-exclusion-mistakes-microsoft-defender-antivirus.md)
-- [Personalización, inicio y revisión de los resultados de los exámenes y correcciones del Antivirus de Microsoft Defender](customize-run-review-remediate-scans-microsoft-defender-antivirus.md)
+- [Personalización, inicio y revisión de los resultados de los exámenes y correcciones de Microsoft Defender Antivirus](customize-run-review-remediate-scans-microsoft-defender-antivirus.md)
 - [Antivirus de Microsoft Defender en Windows 10](microsoft-defender-antivirus-in-windows-10.md)

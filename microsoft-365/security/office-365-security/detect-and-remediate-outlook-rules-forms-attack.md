@@ -7,7 +7,7 @@ author: MSFTTracyp
 manager: dansimp
 ms.date: 04/23/2018
 audience: ITPro
-ms.topic: article
+ms.topic: conceptual
 ms.collection:
 - o365_security_incident_response
 - m365-security
@@ -18,12 +18,12 @@ description: Aprenda a reconocer y corregir las reglas de Outlook y los ataques 
 ms.custom: seo-marvel-apr2020
 ms.subservice: mdo
 ms.service: microsoft-365-security
-ms.openlocfilehash: 372959b1522f65a41ed0bd936dd3f4bf93227e2e
-ms.sourcegitcommit: 12af9e8e3a6eaa090fda9e98ccb831dff65863a4
+ms.openlocfilehash: f7894929a6c104e6f5a23ccfc3dc1b573912e9ce
+ms.sourcegitcommit: 0d8fb571024f134d7480fe14cffc5e31a687d356
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/27/2022
-ms.locfileid: "68048756"
+ms.lasthandoff: 10/20/2022
+ms.locfileid: "68642291"
 ---
 # <a name="detect-and-remediate-outlook-rules-and-custom-forms-injections-attacks"></a>Detección y corrección de reglas de Outlook y ataques por inyección de formularios personalizados
 
@@ -225,7 +225,7 @@ Para obtener más información sobre las revisiones de seguridad individuales, c
 
 ### <a name="third-monitor-your-outlook-clients"></a>Tercero: Supervisión de los clientes de Outlook
 
-Tenga en cuenta que incluso con las revisiones y actualizaciones instaladas, es posible que un atacante cambie la configuración de la máquina local para volver a habilitar el comportamiento "Iniciar aplicación". Puede usar [Advanced directiva de grupo Management](/microsoft-desktop-optimization-pack/agpm/) para supervisar y aplicar directivas de máquina local en los clientes.
+Tenga en cuenta que incluso con las revisiones y actualizaciones instaladas, es posible que un atacante cambie la configuración de la máquina local para volver a habilitar el comportamiento "Iniciar aplicación". Puede usar [Advanced समूह नीति Management](/microsoft-desktop-optimization-pack/agpm/) para supervisar y aplicar directivas de máquina local en los clientes.
 
 Puede ver si se ha vuelto a habilitar "Iniciar aplicación" mediante una invalidación en el Registro mediante la información de [Cómo ver el registro del sistema mediante versiones de 64 bits de Windows](https://support.microsoft.com/help/305097). Compruebe estas subclaves:
 

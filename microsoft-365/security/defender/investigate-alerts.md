@@ -23,12 +23,12 @@ ms.topic: conceptual
 search.appverid:
 - MOE150
 - met150
-ms.openlocfilehash: 3b3d5b9105db25d6d723961fab26f146d15aef1f
-ms.sourcegitcommit: 2ff545246fec060ea7829da5afbc1cdc698d51ab
+ms.openlocfilehash: 17f58b7722614891e05c5c5101826735d1597db9
+ms.sourcegitcommit: 0d8fb571024f134d7480fe14cffc5e31a687d356
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/04/2022
-ms.locfileid: "68361988"
+ms.lasthandoff: 10/20/2022
+ms.locfileid: "68639410"
 ---
 # <a name="investigate-alerts-in-microsoft-365-defender"></a>Investigar alertas con Microsoft 365 Defender
 
@@ -99,7 +99,7 @@ A lo largo de una página de alerta, puede seleccionar los puntos suspensivos (*
 
 ### <a name="alert-sources"></a>Orígenes de alerta
 
-Microsoft 365 Defender alertas pueden provenir de soluciones como Microsoft Defender para punto de conexión, Microsoft Defender para Office 365, Microsoft Defender for Cloud Apps y el complemento de gobernanza de aplicaciones para Microsoft Defender for Cloud Apps. Es posible que observe alertas con caracteres antepuestos en la alerta. En la tabla siguiente se proporcionan instrucciones que le ayudarán a comprender la asignación de orígenes de alertas en función del carácter antepuesto de la alerta.
+Microsoft 365 Defender alertas pueden provenir de soluciones como Microsoft Defender para punto de conexión, Microsoft Defender para Office 365, Microsoft Defender for Identity, Microsoft Defender for Cloud Apps, el complemento de gobernanza de aplicaciones para Microsoft Defender for Cloud Apps, Azure Active Directory Identity Protection y Prevención de pérdida de datos de Microsoft. Es posible que observe alertas con caracteres antepuestos en la alerta. En la tabla siguiente se proporcionan instrucciones que le ayudarán a comprender la asignación de orígenes de alertas en función del carácter antepuesto de la alerta.
 
 > [!NOTE]
 >
@@ -108,10 +108,19 @@ Microsoft 365 Defender alertas pueden provenir de soluciones como Microsoft Defe
 
 | Origen de alerta | Carácter antepuesto |
 | :---|:--- |
+| Microsoft 365 Defender | `ra` <br> `ta` para ThreatExperts <br> `ea` for DetectionSource = DetectionSource.CustomDetection |
 | Microsoft Defender para Office 365 | `fa{GUID}` <br> Ejemplo: `fa123a456b-c789-1d2e-12f1g33h445h6i` |
 | Microsoft Defender para punto de conexión | `da` o `ed` para alertas de detección personalizadas <br> |
 | Microsoft Defender for Identity | `aa{GUID}` <br> Ejemplo: `aa123a456b-c789-1d2e-12f1g33h445h6i` |
 | Microsoft Defender for Cloud Apps |`ca{GUID}` <br> Ejemplo: `ca123a456b-c789-1d2e-12f1g33h445h6i` |
+| Azure Active Directory (AAD) Identity Protection | `ad` |
+| Gobernanza de aplicaciones | `ma` |
+| Prevención de pérdida de datos de Microsoft | `dl` |
+
+De forma predeterminada, solo están habilitadas las alertas más relevantes para el centro de operaciones de seguridad. Si desea obtener todas las detecciones de riesgo de IP de AAD, puede cambiarla en Microsoft 365 Defender página de configuración en la sección **Configuración del servicio de alertas**. 
+
+> [!IMPORTANT]
+> Parte de la información se refiere a productos preliminares que pueden ser modificados sustancialmente antes de su lanzamiento comercial. Microsoft no otorga garantías, expresas o implícitas, con respecto a la información que aquí se proporciona.
 
 ### <a name="analyze-affected-assets"></a>Análisis de los recursos afectados
 
@@ -314,3 +323,4 @@ Según sea necesario para incidentes en proceso, continúe con la [investigació
 - [Administrar incidentes](manage-incidents.md)
 - [Investigar incidentes](investigate-incidents.md)
 - [Investigación de incidentes de pérdida de datos](investigate-dlp.md)
+- [Azure Active Directory Identity Protection](/azure/active-directory/identity-protection/overview-identity-protection)

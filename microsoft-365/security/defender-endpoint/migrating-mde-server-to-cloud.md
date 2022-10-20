@@ -6,7 +6,7 @@ author: alekyaj
 ms.author: dansimp
 manager: dansimp
 audience: ITPro
-ms.topic: article
+ms.topic: conceptual
 ms.service: microsoft-365-security
 ms.localizationpriority: medium
 ms.collection:
@@ -16,12 +16,12 @@ ms.custom: migrationguides
 ms.date: 07/19/2022
 ms.subservice: mde
 search.appverid: met150
-ms.openlocfilehash: 66e64fb83af5e0ad22d21b9d96ecec6ab14640c4
-ms.sourcegitcommit: 4e42bafee965446f44f7f57d1defed2b9b24fce8
+ms.openlocfilehash: 4da3b103597802b309a643876c40668d436ca37d
+ms.sourcegitcommit: 0d8fb571024f134d7480fe14cffc5e31a687d356
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/30/2022
-ms.locfileid: "68224324"
+ms.lasthandoff: 10/20/2022
+ms.locfileid: "68641389"
 ---
 # <a name="migrating-servers-from-microsoft-defender-for-endpoint-to-microsoft-defender-for-cloud"></a>Migración de servidores de Microsoft Defender para punto de conexión a Microsoft Defender for Cloud
 
@@ -38,7 +38,7 @@ Este artículo le guía en la migración de servidores de Microsoft Defender par
 
 Aunque ambos productos ofrecen funcionalidades de protección de servidores, Microsoft Defender for Cloud es nuestra solución principal para proteger los recursos de infraestructura, incluidos los servidores. 
 
-## <a name="how-do-i-migrate-my-servers-from-microsoft-defender-for-endpoint-to-microsoft-defender-for-cloud"></a>Cómo migrar mis servidores de Microsoft Defender para punto de conexión a Microsoft Defender for Cloud?
+## <a name="how-do-i-migrate-my-servers-from-microsoft-defender-for-endpoint-to-microsoft-defender-for-cloud"></a>मैले कसरी migrar mis servidores de Microsoft Defender para punto de conexión a Microsoft Defender for Cloud?
 
 Si tiene servidores incorporados a Defender para punto de conexión, el proceso de migración varía según el tipo de máquina, pero hay un conjunto de requisitos previos compartidos. 
 
@@ -64,15 +64,15 @@ Para habilitar Defender para servidores para máquinas virtuales de Azure y máq
 
    :::image type="content" source="images/enable-threat-and-vulnerability-management.png" alt-text="Captura de pantalla que muestra cómo habilitar la administración de vulnerabilidades." lightbox="images/enable-threat-and-vulnerability-management.png"::: 
 
-## <a name="how-do-i-migrate-existing-azure-vms-to-microsoft-defender-for-cloud"></a>Cómo migrar máquinas virtuales de Azure existentes a Microsoft Defender for Cloud?
+## <a name="how-do-i-migrate-existing-azure-vms-to-microsoft-defender-for-cloud"></a>मैले कसरी migrar máquinas virtuales de Azure existentes a Microsoft Defender for Cloud?
 
 En el caso de las máquinas virtuales de Azure, no se requieren pasos adicionales, que se incorporan automáticamente a Microsoft Defender for Cloud, gracias a la integración nativa entre la plataforma de Azure y Defender for Cloud.
 
-## <a name="how-do-i-migrate-on-premises-machines-to-microsoft-defender-for-servers"></a>Cómo migrar máquinas locales a Microsoft Defender para servidores?
+## <a name="how-do-i-migrate-on-premises-machines-to-microsoft-defender-for-servers"></a>मैले कसरी migrar máquinas locales a Microsoft Defender para servidores?
 
 Una vez cumplidos todos los requisitos previos, [conecte](/azure/defender-for-cloud/quickstart-onboard-machines?pivots=azure-arc) las máquinas locales a través de servidores conectados a Azure Arc.
 
-## <a name="how-do-i-migrate-vms-from-aws-or-gcp-environments"></a>Cómo migrar máquinas virtuales desde entornos de AWS o GCP?
+## <a name="how-do-i-migrate-vms-from-aws-or-gcp-environments"></a>मैले कसरी migrar máquinas virtuales desde entornos de AWS o GCP?
 
 1. Cree un nuevo conector multin cloud en su suscripción. (Para obtener más información sobre el conector, consulte [Cuentas de AWS](/azure/defender-for-cloud/quickstart-onboard-aws?pivots=env-settings) o [proyectos de GCP](/azure/defender-for-cloud/quickstart-onboard-gcp?pivots=env-settings).
 

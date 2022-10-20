@@ -19,13 +19,13 @@ audience: ITPro
 ms.collection:
 - m365-security
 - tier3
-ms.topic: article
-ms.openlocfilehash: 3803f3822012980a01073e4a7a0ab1a305adab68
-ms.sourcegitcommit: 12af9e8e3a6eaa090fda9e98ccb831dff65863a4
+ms.topic: conceptual
+ms.openlocfilehash: 0d315ecfdb5895d3492f1af823dd06ce99025474
+ms.sourcegitcommit: 0d8fb571024f134d7480fe14cffc5e31a687d356
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/27/2022
-ms.locfileid: "68049372"
+ms.lasthandoff: 10/20/2022
+ms.locfileid: "68639695"
 ---
 # <a name="identitylogonevents"></a>IdentityLogonEvents
 
@@ -35,7 +35,7 @@ ms.locfileid: "68049372"
 **Se aplica a:**
 - Microsoft 365 Defender
 
-La `IdentityLogonEvents` tabla del esquema [de búsqueda avanzada](advanced-hunting-overview.md) contiene información sobre las actividades de autenticación realizadas a través de la Active Directory local capturadas por Microsoft Defender for Identity y las actividades de autenticación relacionadas con Microsoft servicios en línea capturadas por Microsoft Defender for Cloud Apps. Utilice esta referencia para crear consultas que devuelvan información sobre la tabla.
+La `IdentityLogonEvents` tabla del esquema [de búsqueda avanzada](advanced-hunting-overview.md) contiene información sobre las actividades de autenticación realizadas a través de active directory local capturadas por Microsoft Defender for Identity y las actividades de autenticación relacionadas con los servicios en línea de Microsoft capturados por Microsoft Defender for Cloud Apps. Utilice esta referencia para crear consultas que devuelvan información sobre la tabla.
 
 >[!TIP]
 > Para obtener información detallada sobre los tipos de eventos (`ActionType` valores) admitidos por una tabla, use la referencia de esquema integrada disponible en Defender for Cloud.

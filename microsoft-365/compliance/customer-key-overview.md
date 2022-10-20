@@ -10,21 +10,25 @@ ms.localizationpriority: medium
 search.appverid:
 - MET150
 ms.collection:
-- M365-security-compliance
+- purview-compliance
 - m365solution-mip
 - m365initiative-compliance
+- tier1
+- highpri
 ms.custom: seo-marvel-apr2020
 description: En este artículo, obtendrá información sobre cómo funciona el cifrado de servicio con la clave de cliente de Microsoft Purview.
-ms.openlocfilehash: 98f298e88a53fee40e5f254e18695bca42aad52a
-ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
+ms.openlocfilehash: 9d4e19b322f1dd4672dfdf06fedeef23b1cdadbc
+ms.sourcegitcommit: 0d8fb571024f134d7480fe14cffc5e31a687d356
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/06/2022
-ms.locfileid: "66632473"
+ms.lasthandoff: 10/20/2022
+ms.locfileid: "68641873"
 ---
 # <a name="service-encryption-with-microsoft-purview-customer-key"></a>Cifrado de servicio con clave de cliente de Microsoft Purview
 
 Microsoft 365 proporciona cifrado de nivel de volumen y línea base habilitado a través de BitLocker y el Administrador de claves distribuidas (DKM). Microsoft 365 ofrece una capa de cifrado adicional para el contenido. Este contenido incluye datos de Exchange Online, Skype Empresarial, SharePoint Online, OneDrive para la Empresa y Microsoft Teams.
+
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
 
 ## <a name="how-service-encryption-bitlocker-and-customer-key-work-together"></a>Cómo funcionan conjuntamente el cifrado de servicio, BitLocker y la clave de cliente
 

@@ -13,18 +13,18 @@ ms.reviewer: mkaminska
 manager: dansimp
 ms.custom: nextgen
 ms.subservice: mde
-ms.topic: article
+ms.topic: conceptual
 ms.date: 10/22/2021
 ms.collection:
 - m365-security
 - tier2
 search.appverid: met150
-ms.openlocfilehash: 856bb2ac16e3b0e96a76c596e6ef1234ef0e3fd7
-ms.sourcegitcommit: 4e42bafee965446f44f7f57d1defed2b9b24fce8
+ms.openlocfilehash: adf181afb2dc130d469c8e276155da03de620ef6
+ms.sourcegitcommit: 0d8fb571024f134d7480fe14cffc5e31a687d356
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/30/2022
-ms.locfileid: "68233428"
+ms.lasthandoff: 10/20/2022
+ms.locfileid: "68627969"
 ---
 # <a name="why-cloud-protection-should-be-enabled-for-microsoft-defender-antivirus"></a>Por qué se debe habilitar la protección en la nube para Microsoft Defender Antivirus
 
@@ -61,15 +61,15 @@ En la tabla siguiente se resumen las características y funcionalidades que depe
 
 Ahora que tiene información general sobre la protección en la nube y su rol en Microsoft Defender Antivirus, estos son algunos pasos siguientes:
 
-1. **[Habilite la protección en la nube](enable-cloud-protection-microsoft-defender-antivirus.md)**. Puede habilitar la protección en la nube con Microsoft Endpoint Manager (que ahora incluye Configuration Manager de punto de conexión de Microsoft y Microsoft Intune), directiva de grupo o cmdlets de PowerShell.
+1. **[Habilite la protección en la nube](enable-cloud-protection-microsoft-defender-antivirus.md)**. Puede habilitar la protección en la nube con Microsoft Endpoint Manager (que ahora incluye Microsoft Endpoint Configuration Manager y Microsoft Intune), समूह नीति o cmdlets de PowerShell.
 
-2. **[Especifique el nivel de protección en la nube](specify-cloud-protection-level-microsoft-defender-antivirus.md)**. Puede especificar el nivel de protección que ofrece la nube mediante Microsoft Endpoint Manager o directiva de grupo. El nivel de protección afecta a la cantidad de información compartida con la nube y a la forma agresiva en que se bloquean los archivos nuevos.
+2. **[Especifique el nivel de protección en la nube](specify-cloud-protection-level-microsoft-defender-antivirus.md)**. Puede especificar el nivel de protección que ofrece la nube mediante Microsoft Endpoint Manager o समूह नीति. El nivel de protección afecta a la cantidad de información compartida con la nube y a la forma agresiva en que se bloquean los archivos nuevos.
 
 3. **[Configure y valide las conexiones de red para Microsoft Defender Antivirus](configure-network-connections-microsoft-defender-antivirus.md)**. Hay determinadas direcciones URL de Microsoft a las que la red y los puntos de conexión deben poder conectarse para que la protección en la nube funcione de forma eficaz. En este artículo se enumeran las direcciones URL que se deben permitir a través de reglas de filtrado de red o firewall e instrucciones para confirmar que la red está correctamente inscrita en la protección en la nube.
 
-4. **[Configure la característica "bloquear a primera vista"](configure-block-at-first-sight-microsoft-defender-antivirus.md)**. La característica "bloquear a primera vista" puede bloquear el nuevo malware en cuestión de segundos, sin tener que esperar horas para la inteligencia de seguridad tradicional. Puede habilitarlo y configurarlo mediante Microsoft Endpoint Manager o directiva de grupo.
+4. **[Configure la característica "bloquear a primera vista"](configure-block-at-first-sight-microsoft-defender-antivirus.md)**. La característica "bloquear a primera vista" puede bloquear el nuevo malware en cuestión de segundos, sin tener que esperar horas para la inteligencia de seguridad tradicional. Puede habilitarlo y configurarlo mediante Microsoft Endpoint Manager o समूह नीति.
 
-5. **[Configure el período de tiempo de espera del bloque de nube](configure-cloud-block-timeout-period-microsoft-defender-antivirus.md)**. Microsoft Defender Antivirus puede impedir que se ejecuten archivos sospechosos mientras consulta nuestro servicio de protección en la nube. Puede configurar la cantidad de tiempo que se impedirá que el archivo se ejecute mediante Microsoft Endpoint Manager o directiva de grupo.
+5. **[Configure el período de tiempo de espera del bloque de nube](configure-cloud-block-timeout-period-microsoft-defender-antivirus.md)**. Microsoft Defender Antivirus puede impedir que se ejecuten archivos sospechosos mientras consulta nuestro servicio de protección en la nube. Puede configurar la cantidad de tiempo que se impedirá que el archivo se ejecute mediante Microsoft Endpoint Manager o समूह नीति.
 
 > [!TIP]
 > Si busca información relacionada con el antivirus para otras plataformas, consulte:

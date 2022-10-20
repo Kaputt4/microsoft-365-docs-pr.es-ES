@@ -10,16 +10,17 @@ ms.topic: article
 ms.service: O365-seccomp
 ms.localizationpriority: medium
 ms.collection:
-- M365-security-compliance
+- tier1
+- purview-compliance
 search.appverid:
 - MET150
 description: Obtenga información sobre cómo incorporar y desconectar dispositivos macOS en soluciones de Microsoft Purview mediante Microsoft Intune para clientes de MDE
-ms.openlocfilehash: b14b8c8385bd1a67265b36006c35d35612a32e3c
-ms.sourcegitcommit: d09eb780dc41a01796eb8137fbe9267231af6746
+ms.openlocfilehash: 7638653c7794270b37c3925f17a64949f1fcae75
+ms.sourcegitcommit: 0d8fb571024f134d7480fe14cffc5e31a687d356
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/19/2022
-ms.locfileid: "67385515"
+ms.lasthandoff: 10/20/2022
+ms.locfileid: "68632280"
 ---
 # <a name="onboard-and-offboard-macos-devices-into-compliance-solutions-using-intune-for-microsoft-defender-for-endpoint-customers"></a>Incorporación y retirada de dispositivos macOS en soluciones de cumplimiento mediante Intune para clientes de Microsoft Defender para punto de conexión
 
@@ -33,11 +34,13 @@ ms.locfileid: "67385515"
 - [Administración de riesgos internos](insider-risk-management.md)
 
 
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
+
 ## <a name="before-you-begin"></a>Antes de empezar
 
 - Asegúrese de que [los dispositivos macOS están incorporados a Intune](/mem/intune/fundamentals/deployment-guide-platform-macos) e inscritos en la [aplicación Portal de empresa](/mem/intune/user-help/enroll-your-device-in-intune-macos-cp). 
 - Asegúrese de que tiene acceso al [Centro de Endpoint Manager de Microsoft](https://endpoint.microsoft.com/#home).
-- Esto es compatible con la versión de macOS Catalina 10.15 y versiones posteriores
+- Esto admite las tres versiones más recientes de macOS publicadas.
 - Instalar el explorador v95+ Edge en los dispositivos macOS 
 
 ## <a name="onboard-macos-devices-into-microsoft-purview-solutions-using-microsoft-intune"></a>Incorporación de dispositivos macOS a soluciones de Microsoft Purview mediante Microsoft Intune

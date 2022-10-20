@@ -14,15 +14,15 @@ audience: ITPro
 ms.collection:
 - m365-security
 - tier3
-ms.topic: article
+ms.topic: conceptual
 ms.subservice: mde
 search.appverid: met150
-ms.openlocfilehash: 1e0ab5ee7e038653beebae044cb2517ee5ebf39a
-ms.sourcegitcommit: 0b7070ec119e00e0dafe030bbfbef0ae5c9afa19
+ms.openlocfilehash: 114dbe0795ed8f934f215d9cf2bd5a0b8d83a7d1
+ms.sourcegitcommit: 0d8fb571024f134d7480fe14cffc5e31a687d356
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/29/2022
-ms.locfileid: "68167261"
+ms.lasthandoff: 10/20/2022
+ms.locfileid: "68629135"
 ---
 # <a name="configure-managed-security-service-provider-integration"></a>Configurar la integración del proveedor de servicios de seguridad administrados
 
@@ -53,7 +53,7 @@ La integración permitirá que los CSP realicen las siguientes acciones:
 
 Antes de que los MSSP puedan realizar estas acciones, el cliente de MSSP tendrá que conceder acceso a su inquilino de Defender para punto de conexión para que MSSP pueda acceder al portal.
 
-Normalmente, los clientes de MSSP realizan los pasos de configuración iniciales para conceder a los MSSP acceso a su inquilino de Windows Defender Security Central. Una vez concedido el acceso, el cliente MSSP o el MSSP pueden realizar otros pasos de configuración.
+Normalmente, los clientes de MSSP realizan los pasos de configuración iniciales para conceder a los MSSP acceso a su inquilino de Windows डिफेन्डर Security Central. Una vez concedido el acceso, el cliente MSSP o el MSSP pueden realizar otros pasos de configuración.
 
 En general, es necesario realizar los siguientes pasos de configuración:
 

@@ -9,7 +9,7 @@ audience: Admin
 ms.topic: how-to
 ms.service: microsoft-365-security
 ms.subservice: other
-ms.date: 09/15/2022
+ms.date: 10/18/2022
 ms.localizationpriority: high
 ms.collection:
 - m365-security
@@ -20,12 +20,12 @@ search.appverid:
 - BCS160
 - MET150
 description: Configure las características de cumplimiento para evitar la pérdida de datos y ayudar a proteger la información confidencial de sus clientes.
-ms.openlocfilehash: d19f82c350a7c6c9514b46e1cb7dcf9c7e6bb296
-ms.sourcegitcommit: 0283c436f3ba61a708b52b57a1955f5ea74376a3
+ms.openlocfilehash: ca37ff6d4fd9496bade037da9ac5ff9dd1da083a
+ms.sourcegitcommit: 0d8fb571024f134d7480fe14cffc5e31a687d356
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/28/2022
-ms.locfileid: "68096531"
+ms.lasthandoff: 10/20/2022
+ms.locfileid: "68643655"
 ---
 # <a name="set-up-compliance-features-in-microsoft-365-business-premium"></a>Configuración de características de cumplimiento en Microsoft 365 Empresa Premium
 
@@ -76,7 +76,7 @@ Para obtener más información sobre las características de cumplimiento en Mic
 
 Consulte este vídeo y otros en nuestro [canal de YouTube](https://go.microsoft.com/fwlink/?linkid=2198022).
 
-Las etiquetas de confidencialidad están disponibles en aplicaciones Office (como Outlook, Word, Excel y PowerPoint). Algunos ejemplos de etiquetas son:
+Las etiquetas de confidencialidad están disponibles en aplicaciones de Microsoft 365 (como Outlook, Word, Excel y PowerPoint). Algunos ejemplos de etiquetas son:
 
 - Normal
 - Personal

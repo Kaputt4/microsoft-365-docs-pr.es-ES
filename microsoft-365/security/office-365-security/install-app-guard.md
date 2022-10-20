@@ -7,7 +7,7 @@ ms.author: maccruz
 author: schmurky
 manager: dansimp
 audience: ITPro
-ms.topic: article
+ms.topic: conceptual
 ms.localizationpriority: medium
 search.appverid:
 - MET150
@@ -16,12 +16,12 @@ ms.collection: m365-security
 description: Obtenga lo último en aislamiento basado en hardware. Evite que ataques actuales y emergentes, como vulnerabilidades de seguridad o vínculos malintencionados, interrumpan la productividad de los empleados y la seguridad empresarial.
 ms.subservice: mdo
 ms.service: microsoft-365-security
-ms.openlocfilehash: 5213703a3c0793334f7131a4a2882057f7decc19
-ms.sourcegitcommit: 04e517c7e00323b5c33d8ea937115725cf2cfd4d
+ms.openlocfilehash: 14f5cdffb0bc7aeeda6fac383c8d716260dba15e
+ms.sourcegitcommit: 0d8fb571024f134d7480fe14cffc5e31a687d356
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/13/2022
-ms.locfileid: "68565518"
+ms.lasthandoff: 10/20/2022
+ms.locfileid: "68633226"
 ---
 # <a name="application-guard-for-office-for-admins"></a>Protección de aplicaciones para Office para administradores
 
@@ -67,7 +67,7 @@ Para obtener más información sobre Aplicaciones Microsoft 365 canales de actua
    Enable-WindowsOptionalFeature -online -FeatureName Windows-Defender-ApplicationGuard
    ```
 
-3. En la ventana Editor de directiva de grupo, expanda Configuración del **equipo -> Plantillas administrativas -componentes de Windows > -> Protección de aplicaciones de Microsoft Defender**. Habilite la opción **Activar Protección de aplicaciones de Microsoft Defender en modo administrado**. Establezca el valor en Opciones como **2** o **3**. 
+3. En la ventana Editor de समूह नीति, expanda Configuración del **equipo -> Plantillas administrativas -> Componentes de Windows -> Protección de aplicaciones de Microsoft Defender**. Habilite la opción **Activar Protección de aplicaciones de Microsoft Defender en modo administrado**. Establezca el valor en Opciones como **2** o **3**. 
 
    :::image type="content" source="../../media/ag04-deploy.png" alt-text="Opción para activar el grupo de disponibilidad en modo administrado" lightbox="../../media/ag04-deploy.png":::
 
@@ -227,5 +227,5 @@ Cuando se cumpla esta heurística, Office creará previamente un contenedor de P
 * La configuración predeterminada para la directiva de protección de tipos de archivo no admitidos es bloquear la apertura de tipos de archivo no compatibles que no son de confianza y que están cifrados o que tienen establecido Information Rights Management (IRM). Esto incluye archivos cifrados mediante etiquetas de confidencialidad de Microsoft Purview Information Protection.
 * Los archivos CSV y HTML no se admiten en este momento.
 * Protección de aplicaciones para Office actualmente no funciona con volúmenes comprimidos NTFS. Si ve un error "ERROR_VIRTUAL_DISK_LIMITATION", intente descomprimir el volumen.
-* Novedades en .NET puede provocar que los archivos no se abran en Protección de aplicaciones. Como solución alternativa, los usuarios pueden reiniciar su dispositivo cuando se den cuenta de este error. Obtenga más información sobre el problema en [Recepción de un mensaje de error al intentar abrir Windows Defender Protección de aplicaciones o Espacio aislado de Windows](https://support.microsoft.com/help/4575917/receiving-an-error-message-when-attempting-to-open-windows-defender-ap).
+* Novedades en .NET puede provocar que los archivos no se abran en Protección de aplicaciones. Como solución alternativa, los usuarios pueden reiniciar su dispositivo cuando se den cuenta de este error. Obtenga más información sobre el problema en [Recepción de un mensaje de error al intentar abrir Windows डिफेन्डर Protección de aplicaciones o Espacio aislado de Windows](https://support.microsoft.com/help/4575917/receiving-an-error-message-when-attempting-to-open-windows-defender-ap).
 * Consulte [Preguntas más frecuentes: Protección de aplicaciones de Microsoft Defender para obtener información adicional.](/windows/security/threat-protection/microsoft-defender-application-guard/faq-md-app-guard)

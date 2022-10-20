@@ -20,12 +20,12 @@ search.appverid:
 - BCS160
 - MET150
 description: Cómo agregar un nuevo empleado o usuario a la red y a los sistemas internos de la organización. Cuando un nuevo empleado se une a su empresa, debe agregarlo de forma segura a la red.
-ms.openlocfilehash: f9a35302dd5f26d30aa1be84c5f6c01fee8e490d
-ms.sourcegitcommit: 0283c436f3ba61a708b52b57a1955f5ea74376a3
+ms.openlocfilehash: abb54ec48228ffd9a52eb7744d1bde8376a9b3cb
+ms.sourcegitcommit: 0d8fb571024f134d7480fe14cffc5e31a687d356
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/28/2022
-ms.locfileid: "68096553"
+ms.lasthandoff: 10/20/2022
+ms.locfileid: "68627705"
 ---
 # <a name="add-a-new-employee-in-microsoft-365-business-premium"></a>Agregar un nuevo empleado en Microsoft 365 Empresa Premium
 
@@ -33,7 +33,7 @@ La siguiente información le indica cómo usar Microsoft 365 Empresa Premium par
   
  **¿No es un administrador?** [Obtenga información sobre Microsoft 365](https://support.microsoft.com/office/396b8d9e-e118-42d0-8a0d-87d1f2f055fb) ayuda a los usuarios domésticos y empresariales con la configuración. 
   
- **¿Su plan no incluye aplicaciones de Office?** Siga los pasos siguientes, pero omita las secciones referentes a la instalación de aplicaciones. En su lugar, use las [versiones en línea de Office](https://support.microsoft.com/office/91a4ec74-67fe-4a84-a268-f6bdf3da1804).
+ **¿No hay ninguna aplicación de Microsoft 365 en el plan?** Siga los pasos siguientes, pero omita las secciones referentes a la instalación de aplicaciones. En su lugar, use las [versiones en línea de Office](https://support.microsoft.com/office/91a4ec74-67fe-4a84-a268-f6bdf3da1804).
 
 ## <a name="how-to-add-a-new-user"></a>Cómo agregar un nuevo usuario
 
@@ -55,8 +55,8 @@ Y sigue aquí una referencia rápida para ayudarles a empezar:
 |**Tarea**|**Buscar los detalles**|
 |:-----|:-----|
 |Iniciar sesión en Office  <br/> |Vaya a [https://www.office.com](https://www.office.com), seleccione **Iniciar sesión** y, a continuación, escriba su identificador de usuario y contraseña.  <br/> |
-|Instale las aplicaciones de Office en el equipo.  <br/><br/> |Al iniciar sesión, la página principal tiene un vínculo para descargar e instalar aplicaciones como son Word y Outlook.  Seleccione **Instalar Office**.         Para obtener instrucciones, vea [Cómo instalar Office](https://support.microsoft.com/office/4414eaaf-0478-48be-9c42-23adc4716658).  <br/> |
-|Configurar el correo electrónico en Outlook 2016.  <br/> |Una vez que las aplicaciones de Office estén instaladas en su equipo, configure el correo electrónico. Para obtener instrucciones, vea [Cómo configurar Outlook](https://support.microsoft.com/office/6e27792a-9267-4aa4-8bb6-c84ef146101b).  <br/> |
+|Instale aplicaciones de Microsoft 365 en el equipo.  <br/><br/> |Al iniciar sesión, la página principal tiene un vínculo para descargar e instalar aplicaciones como son Word y Outlook.  Seleccione **Instalar Office**.         Para obtener instrucciones, vea [Cómo instalar Office](https://support.microsoft.com/office/4414eaaf-0478-48be-9c42-23adc4716658).  <br/> |
+|Configurar el correo electrónico en Outlook 2016.  <br/> |Una vez que las aplicaciones de Microsoft 365 estén instaladas en el equipo, configure el correo electrónico. Para obtener instrucciones, vea [Cómo configurar Outlook](https://support.microsoft.com/office/6e27792a-9267-4aa4-8bb6-c84ef146101b).  <br/> |
 |Configure Skype Empresarial para que pueda conectarse con compañeros de trabajo o socios comerciales de su empresa o de cualquier parte del mundo. Puede iniciar conversaciones mediante mensajería instantánea, llamadas de voz y videollamadas.  <br/> |[Instale Skype Empresarial en el equipo](https://support.microsoft.com/office/8a0d4da8-9d58-44f9-9759-5c8f340cb3fb).  <br/> <br/>Para obtener información sobre cómo usar Skype Empresarial, [vea un vídeo.](https://support.microsoft.com/office/3a21eca4-434d-41f1-ab06-3d4a268573b7) <br/> <br/>¿Ha configurado Skype Empresarial para que sus empleados puedan ponerse en contacto con personas externas a su empresa que usen la aplicación gratuita de Skype? Si no es así, informe a su nuevo empleado para que sepa qué puede esperar al usar Skype Empresarial.  <br/> |
 |Instale aplicaciones en su dispositivo móvil si quiere recibir correo electrónico o usar Skype Empresarial en su teléfono.  <br/> |Si desea configurar la aplicación móvil de Outlook para tener acceso al correo electrónico a través de su teléfono. Para obtener instrucciones, consulte [iOS](https://support.microsoft.com/office/b2de2161-cc1d-49ef-9ef9-81acd1c8e234), [Android](https://support.microsoft.com/office/886db551-8dfa-4fd5-b835-f8e532091872) [Windows Phone](https://support.microsoft.com/office/181a112a-be92-49ca-ade5-399264b3d417) <br/> <br/>Si desea usar Skype Empresarial en su dispositivo móvil, descargue e instale la aplicación móvil. Para obtener instrucciones, consulte [iOS](https://support.microsoft.com/office/3239c8a3-cf55-4ff0-a967-5de51911c049#OS_Type=iOS), [Android](https://support.microsoft.com/office/4d1b7dfa-5b0b-4868-bae5-25947fb99e6e#OS_Type=Android) [Windows Phone](https://support.microsoft.com/office/4d1b7dfa-5b0b-4868-bae5-25947fb99e6e#OS_Type=Windows_Phone) <br/> |
 |Complete el aprendizaje sobre OneDrive para la Empresa para ayudarle a aprender a almacenar y organizar sus documentos, presentaciones y hojas de cálculo en la nube.  <br/> |Mantenga sus documentos relacionados con la empresa en la nube mediante OneDrive para la Empresa. Siempre puede acceder a sus contenidos, incluso si ha iniciado sesión en Microsoft 365 en otro equipo. [Vídeo sobre cómo usar OneDrive para la Empresa](https://support.microsoft.com/office/b30da4eb-ddd2-44b6-943b-e6fbfc6b8dde) <br/><br/> **Aprendizaje:** [aprendizaje sobre OneDrive para la Empresa](https://support.microsoft.com/office/1f608184-b7e6-43ca-8753-2ff679203132) (seleccione OneDrive para la Empresa).  <br/> |

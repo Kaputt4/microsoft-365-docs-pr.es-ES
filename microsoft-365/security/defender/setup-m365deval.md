@@ -20,13 +20,13 @@ ms.collection:
 - m365solution-evalutatemtp
 - highpri
 - tier1
-ms.topic: article
-ms.openlocfilehash: f29b3b80f35ae957e39019767fc3119625954850
-ms.sourcegitcommit: 12af9e8e3a6eaa090fda9e98ccb831dff65863a4
+ms.topic: conceptual
+ms.openlocfilehash: 6eafed1510fa478cbb0012437bf5cc7a6254dc98
+ms.sourcegitcommit: 0d8fb571024f134d7480fe14cffc5e31a687d356
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/27/2022
-ms.locfileid: "68088847"
+ms.lasthandoff: 10/20/2022
+ms.locfileid: "68640618"
 ---
 # <a name="set-up-your-microsoft-365-defender-trial-in-a-lab-environment"></a>Configuración de la prueba de Microsoft 365 Defender en un entorno de laboratorio 
 
@@ -95,7 +95,7 @@ Este tema le guía para configurar un entorno de laboratorio dedicado. Para obte
  
 13. Elija servicios en línea. Seleccione **Exchange** y haga clic en **Siguiente**. 
 
-    :::image type="content" source="../../media/mtp-eval-21.png" alt-text="El Office 365 E5 donde puede elegir el servicios en línea" lightbox="../../media/mtp-eval-21.png":::
+    :::image type="content" source="../../media/mtp-eval-21.png" alt-text="La Office 365 E5 donde puede elegir sus servicios en línea" lightbox="../../media/mtp-eval-21.png":::
 
 14. Agregue registros MX, CNAME y TXT al dominio. Cuando se complete, seleccione **Comprobar**.
 
