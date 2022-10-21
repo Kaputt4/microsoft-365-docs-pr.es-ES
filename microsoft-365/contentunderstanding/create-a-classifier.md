@@ -6,7 +6,7 @@ manager: pamgreen
 ms.reviewer: ssquires
 audience: admin
 ms.topic: article
-ms.service: microsoft-365-enterprise
+ms.service: microsoft-syntex
 search.appverid: ''
 ms.collection:
 - enabler-strategic
@@ -14,15 +14,16 @@ ms.collection:
 ms.custom: admindeeplinkSPO
 ms.localizationpriority: medium
 description: Obtenga información sobre cómo crear un clasificador en Microsoft Syntex.
-ms.openlocfilehash: 9b8f78ed01a6fc366f7f84d85d7202c8cdb99b31
-ms.sourcegitcommit: ca082da1c51a3f643f152492579eef5679d52bd0
+ms.openlocfilehash: 7f459145bafbf9b50146ae375dc1c98b1f54ffc0
+ms.sourcegitcommit: 87283bb02ca750286f7c069f811b788730ed5832
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/12/2022
-ms.locfileid: "68547782"
+ms.lasthandoff: 10/21/2022
+ms.locfileid: "68661575"
 ---
 # <a name="create-a-classifier-in-microsoft-syntex"></a>Creación de un clasificador en Microsoft Syntex
 
+<sup>**Se aplica a:**  &ensp; &#10003; procesamiento de documentos no estructurados</sup>
 
 </br>
 
@@ -54,9 +55,15 @@ Para crear un clasificador, es necesario:
 
 El primer paso para crear el modelo es nombrarlo:
 
-1. En el centro de contenido, seleccione **Nuevo** y, a continuación, **Crear un modelo**.
-2. En el panel **Documento nuevo comprender el modelo** en el campo **Nombre** escriba el nombre del modelo. Por ejemplo, si desea identificar documentos de renovación de contratos, puede nombrar al modelo *Renovación de contratos*.
-3. Seleccione **Crear**. Esto crea una página principal para el modelo.</br>
+1. En el centro de contenido, seleccione **Nuevo** y, a continuación, **Modelo**.
+
+2. En la página **Opciones para la creación de modelos** , seleccione **Método de enseñanza**.
+
+3. En la página **Teaching method: Details (Método de enseñanza: detalles** ), seleccione **Siguiente**.
+
+4. En la página **Crear un modelo con el método de enseñanza** , en el campo **Nombre** del modelo, escriba el nombre del modelo. Por ejemplo, si desea identificar documentos de renovación de contratos, puede nombrar al modelo *Renovación de contratos*.
+
+5. Seleccione **Crear**. Esto crea una página principal para el modelo.
 
     ![Página principal de modelo de clasificador](../media/content-understanding/model-home.png)
 
@@ -68,12 +75,15 @@ Seleccione **Configuración avanzada** si desea asignar este modelo a un tipo de
 
 ## <a name="add-your-example-files"></a>Añadir sus archivos de ejemplo
 
-En la Página principal del modelo, agregue los archivos de ejemplo que necesitará para entrenar al modelo para que identifique el tipo de documento. </br>
+En la Página principal del modelo, agregue los archivos de ejemplo que necesitará para entrenar al modelo para que identifique el tipo de documento. 
+
+<!---
 </br>
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4D0iX] 
 
 </br>
+--->
 
 > [!NOTE]
 > Debe usar los mismos archivos tanto para el clasificador como para el[entrenador de extracción](create-an-extractor.md). Siempre queda la opción de agregar más después, pero normalmente se agrega un conjunto completo de archivos de ejemplo. Etiquete algunos para entrenar el modelo y pruebe el resto de los no etiquetados para evaluar la idoneidad del modelo. 
@@ -149,8 +159,6 @@ Si recibe una coincidencia en sus archivos de muestra etiquetados, ahora puede p
 ## <a name="see-also"></a>Vea también
 
 [Crear un extractor](create-an-extractor.md)
-
-[Información general sobre la comprensión de los documentos](document-understanding-overview.md)
 
 [Tipos de explicación](explanation-types-overview.md)
 

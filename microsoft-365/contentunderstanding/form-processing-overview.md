@@ -1,71 +1,65 @@
 ---
-title: Información general sobre el procesamiento de formularios en Microsoft Syntex
+title: Introducción al procesamiento estructurado de documentos en Microsoft Syntex
 ms.author: chucked
 author: chuckedmonson
 manager: pamgreen
 ms.reviewer: ssquires
 audience: admin
 ms.topic: article
-ms.service: microsoft-365-enterprise
+ms.service: microsoft-syntex
 search.appverid: ''
 ms.collection:
 - enabler-strategic
 - m365initiative-syntex
 ms.localizationpriority: medium
-description: Obtenga información sobre cómo usar la compilación de IA para crear modelos de procesamiento de formularios en Microsoft Syntex.
-ms.openlocfilehash: a29ab194f42331218bf75671cfb776c706d2ee46
-ms.sourcegitcommit: ca082da1c51a3f643f152492579eef5679d52bd0
+description: Aprenda a usar AI Builder para crear modelos estructurados de procesamiento de documentos en Microsoft Syntex.
+ms.openlocfilehash: 9d006741cc236841f4438c5937666c1fc0f02e16
+ms.sourcegitcommit: 87283bb02ca750286f7c069f811b788730ed5832
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/12/2022
-ms.locfileid: "68547519"
+ms.lasthandoff: 10/21/2022
+ms.locfileid: "68662667"
 ---
-# <a name="form-processing-overview-in-microsoft-syntex"></a>Información general sobre el procesamiento de formularios en Microsoft Syntex
-
- ![Generador de IA.](../media/content-understanding/ai-builder.png)</br>
-
-Microsoft Syntex usa el procesamiento de formularios de Microsoft Power Apps [AI Builder](/ai-builder/overview) para crear modelos en bibliotecas de documentos de SharePoint.
-
-Puede usar el procesamiento de formularios de AI Builder para crear modelos de inteligencia artificial que usen tecnología de aprendizaje automático para identificar y extraer pares clave-valor y datos de tabla de documentos estructurados o semiestructurados, como formularios y facturas.
-
-Las organizaciones suelen recibir facturas en grandes cantidades de diversos orígenes, como correo, fax y correo electrónico. Procesar estos documentos y escribirlos manualmente en una base de datos puede tardar mucho tiempo. Mediante el uso de IA para extraer el texto, los pares clave o de valor y las tablas de los documentos, el procesamiento de formularios automatiza este proceso. 
+# <a name="overview-of-structured-document-processing-in-microsoft-syntex"></a>Introducción al procesamiento estructurado de documentos en Microsoft Syntex
 
 > [!NOTE]
-> Consulte la [guía de adopción de Syntex: Introducción](./adoption-getstarted.md) para obtener más información sobre los ejemplos de escenarios de procesamiento de formularios.
+> *El procesamiento estructurado de documentos* se conocía como *procesamiento de formularios* en versiones anteriores.
 
-Por ejemplo, puede crear un modelo de procesamiento de formularios que identifique todos los documentos de pedido de compra que se hayan cargado en la biblioteca de documentos. A partir de cada pedido de compra, puede extraer y mostrar datos específicos que son importantes para usted, como *el número de pedido* de compra, *la fecha* o el *costo total*.
+Use el modelo de procesamiento estructurado de documentos ([método de diseño](create-syntex-model.md#train-a-custom-model)) para identificar automáticamente los valores de campo y tabla. Funciona mejor para documentos estructurados o semiestructurados, como formularios y facturas.
 
-![Vista de la biblioteca de documentos.](../media/content-understanding/doc-lib-done.png)</br>  
+Microsoft Syntex usa el procesamiento de documentos de Microsoft Power Apps [AI Builder](/ai-builder/form-processing-model-overview) (anteriormente conocido como procesamiento de formularios) para crear modelos estructurados de procesamiento de documentos en bibliotecas de documentos de SharePoint.
+<!---
+ ![AI Builder.](../media/content-understanding/ai-builder.png)
+--->
+Puede usar el procesamiento de documentos de AI Builder para crear modelos estructurados de procesamiento de documentos que usen tecnología de aprendizaje automático para identificar y extraer pares clave-valor y datos de tabla de documentos estructurados o semiestructurados, como formularios y facturas.
 
-Use archivos de ejemplo para entrenar el modelo y definir la información que se extrae del formulario. El diseño del documento viene se aprende al entrenar el modelo. Solo necesita cinco documentos de formulario para empezar. AI Builder analizará los archivos de ejemplo para los pares clave-valor y también puede identificar manualmente los que podrían no haberse detectado.  El generador de IA le permite probar la precisión de su modelo en los archivos de ejemplo.
+Las organizaciones suelen recibir facturas en grandes cantidades de diversos orígenes, como correo, fax y correo electrónico. Procesar estos documentos y escribirlos manualmente en una base de datos puede tardar mucho tiempo. Al usar la inteligencia artificial para extraer el texto, los pares clave-valor y las tablas de los documentos, Syntex automatiza este proceso. 
 
-Después de entrenar y publicar el modelo, el modelo crea un [flujo de Power Automate](/power-automate/getting-started). El flujo se ejecuta cuando se carga un archivo en la biblioteca de documentos de SharePoint y se extraen los datos identificados en el modelo. Los datos extraídos se mostrarán en columnas en la vista de la biblioteca de documentos del modelo.
+> [!NOTE]
+> Para obtener más ideas sobre cómo usar estos modelos en su organización, consulte [Introducción a la adopción](adoption-getstarted.md) y [escenarios y casos de uso](adoption-scenarios.md).
 
-Un administrador de Office 365 debe [habilitar el procesamiento de formularios](./set-up-content-understanding.md) para la biblioteca de documentos de SharePoint para que los usuarios puedan [crear un modelo de procesamiento de formularios](create-a-form-processing-model.md) en ella. Puede seleccionar los sitios durante la instalación o después de la misma, en la configuración de administración.
+Por ejemplo, puede crear un modelo de procesamiento estructurado de documentos que identifique todos los documentos cargados en la biblioteca de documentos. A partir de cada documento, puede extraer y mostrar datos específicos que son importantes para usted.
 
-## <a name="file-limitations"></a>Limitaciones de archivos
+![Captura de pantalla que muestra la vista de la biblioteca de documentos.](../media/content-understanding/doc-lib-done.png)  
 
-Al usar modelos de procesamiento de formularios, asegúrese de tener en cuenta las [limitaciones específicas para el uso de archivos](/ai-builder/form-processing-model-requirements).
+Use archivos de ejemplo para entrenar el modelo y definir la información que se extrae del formulario. El diseño del documento viene se aprende al entrenar el modelo. Solo necesita cinco documentos de formulario para empezar. Syntex analizará los archivos de ejemplo para los pares clave-valor y también puede identificar manualmente los que podrían no haberse detectado.  El generador de IA le permite probar la precisión de su modelo en los archivos de ejemplo.
 
-## <a name="supported-languages"></a>Idiomas admitidos
+Solo puede crear un modelo de procesamiento estructurado de documentos en bibliotecas de documentos de SharePoint para las que esté habilitado. Si se ha habilitado, puede ver la opción **Clasificar y extraer** en la biblioteca de documentos. 
 
-El procesamiento de formularios admite documentos en más de 73 idiomas. Para obtener la lista de idiomas, consulte [Compatibilidad con el lenguaje de procesamiento de formularios](/power-platform-release-plan/2021wave2/ai-builder/form-processing-new-language-support).
+![Captura de pantalla que muestra el modelo de AI Builder.](../media/content-understanding/create-ai-builder-model2.png)
 
-## <a name="multi-geo-environments"></a>Entornos de Multi-Geo
+Si lo necesita habilitado en la biblioteca de documentos, póngase en contacto con el administrador de Microsoft 365.
 
-Al configurar Syntex en un [entorno multigeográfico de Microsoft 365](../enterprise/microsoft-365-multi-geo.md), solo puede configurarlo para usar el procesamiento de formularios en la ubicación central. Si quiere utilizar el procesamiento de formularios en una ubicación satélite, póngase en contacto con el Soporte técnico de Microsoft.
+## <a name="requirements"></a>Requisitos
 
-## <a name="custom-environments"></a>Entornos personalizados
-
-Si usa un entorno personalizado (en lugar del entorno predeterminado) para el procesamiento de Power Platform, hay requisitos de configuración adicionales. Para obtener más información, consulte [Entornos de Power Platform personalizados](set-up-content-understanding.md#requirements).
-
+Para obtener información sobre los requisitos que se deben tener en cuenta al elegir este modelo, consulte [Requisitos y limitaciones de los modelos de Microsoft Syntex](requirements-and-limitations.md#structured-document-processing).
 
 ## <a name="see-also"></a>Vea también
-  
+
+[Comparación de modelos personalizados](difference-between-document-understanding-and-form-processing-model.md)
+
+[Entrenamiento de un modelo de procesamiento estructurado de documentos](create-a-form-processing-model.md)
+
 [Documentación de Power Automate](/power-automate/)
 
-[Crear un modelo de procesamiento de formularios](create-a-form-processing-model.md)
-
-[Información general sobre la comprensión de documentos](document-understanding-overview.md)
-
-[Aprendizaje: mejorar el rendimiento empresarial con el generador de IA](/training/paths/improve-business-performance-ai-builder/?source=learn)
+[Aprendizaje: mejorar el rendimiento empresarial con AI Builder](/training/paths/improve-business-performance-ai-builder/?source=learn)

@@ -6,130 +6,139 @@ manager: pamgreen
 ms.reviewer: ssquires
 audience: admin
 ms.topic: article
-ms.service: microsoft-365-enterprise
+ms.service: microsoft-syntex
 search.appverid: ''
 ms.collection:
 - enabler-strategic
 - m365initiative-syntex
 ms.localizationpriority: medium
 description: Obtenga información sobre cómo aplicar una etiqueta de retención a un modelo en Microsoft Syntex.
-ms.openlocfilehash: 9ae81daccf6373d6e876935488edc354e3779bee
-ms.sourcegitcommit: ca082da1c51a3f643f152492579eef5679d52bd0
+ms.openlocfilehash: 7fb57fa2e33bde1a3534ffbb6c4541587072b730
+ms.sourcegitcommit: 87283bb02ca750286f7c069f811b788730ed5832
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/12/2022
-ms.locfileid: "68547980"
+ms.lasthandoff: 10/21/2022
+ms.locfileid: "68661641"
 ---
 # <a name="apply-a-retention-label-to-a-model-in-microsoft-syntex"></a>Aplicación de una etiqueta de retención a un modelo en Microsoft Syntex
 
+<sup>**Se aplica a:**  &ensp; &#10003; procesamiento &ensp; | &ensp; de documentos no estructurados &#10003; procesamiento &ensp;| &ensp; estructurado de documentos &#10003; Todos los modelos precompilados</sup>
+
+<!---
 </br>
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4GydO]  
 
 </br>
+--->
 
-Puede aplicar fácilmente una [etiqueta de retención](../compliance/retention.md) a un modelo en Microsoft Syntex. Puede hacerlo tanto para modelos de comprensión de documentos como para modelos de procesamiento de formularios
+Puede aplicar fácilmente una [etiqueta de retención](../compliance/retention.md) a un modelo en Microsoft Syntex.
 
-Las etiquetas de retención le permiten aplicar la configuración de retención a los documentos que identifican sus modelos.  Por ejemplo, si desea que el modelo no solo identifique cualquier documento de *Notificación de seguros* cargados en la biblioteca de documentos, sino que también pueda aplicar una etiqueta de retención de *negocios* para que estos documentos no se puedan eliminar de la biblioteca de documentos durante el período de tiempo especificado (por ejemplo, los próximos cinco meses).
+> [!Note]
+> Las etiquetas de retención aún no están disponibles para los modelos de procesamiento de documentos de Freeform.
+
+Las etiquetas de retención le permiten aplicar la configuración de retención a los documentos que identifican sus modelos.  Por ejemplo, quiere que el modelo no solo identifique los documentos de *aviso de seguro* que se carguen en la biblioteca de documentos, sino que también les aplique una etiqueta de retención *empresarial* para que estos documentos no se puedan eliminar de la biblioteca de documentos durante el período de tiempo especificado (los próximos cinco meses, por ejemplo).
 
 Puede aplicar una etiqueta de retención preexistente al modelo en la página principal del modelo. 
 
+## <a name="add-a-retention-label-to-an-unstructured-document-processing-model-or-a-prebuilt-model"></a>Agregar una etiqueta de retención a un modelo de procesamiento de documentos no estructurado o a un modelo precompilado
+
 > [!Important]
-> Para que las etiquetas de retención estén disponibles para aplicarlas a los modelos de comprensión de documentos, deben [crearse](../compliance/file-plan-manager.md#create-retention-labels) y [publicarse](../compliance/create-apply-retention-labels.md#how-to-publish-retention-labels) en el portal de cumplimiento Microsoft Purview.
+> Para que las etiquetas de retención estén disponibles para aplicarlas al procesamiento de documentos no estructurados o a los modelos precompilados, deben [crearse](../compliance/file-plan-manager.md#create-retention-labels) y [publicarse](../compliance/create-apply-retention-labels.md#how-to-publish-retention-labels) en el portal de cumplimiento Microsoft Purview.
 
-## <a name="to-add-a-retention-label-to-a-document-understanding-model"></a>Aplicar una etiqueta de retención a un modelo de comprensión mediante documentos
+1. En la página principal del modelo, seleccione **Configuración del modelo**.
 
-1. En la página principal del modelo, seleccione **Configuración del modelo**.</br>
-2. En **Configuración del modelo**, en la sección **Seguridad y cumplimiento**, seleccione el menú **Etiqueta de retención** para ver una lista de las etiquetas de retención disponibles para que se apliquen al modelo.</br>
- ![Menú Etiqueta de retención.](../media/content-understanding/retention-labels-menu.png)</br> 
-3. Seleccione la etiqueta de retención que desea aplicar al modelo y, a continuación, seleccione **Guardar**.</br>
+2. En **Configuración del modelo**, en la sección **Seguridad y cumplimiento** , seleccione el menú **Etiqueta de retención** para ver una lista de las etiquetas de retención que están disponibles para que se apliquen al modelo.
 
-Después de aplicar la etiqueta de retención al modelo, podrá aplicarla a:
+ ![Menú Etiqueta de retención.](../media/content-understanding/retention-labels-menu.png)
+
+3. Seleccione la etiqueta de retención que desea aplicar al modelo y, a continuación, seleccione **Guardar**.
+
+Después de aplicar la etiqueta de retención al modelo, puede aplicarla a:
+
 - una nueva biblioteca de documentos y
 - una biblioteca de documentos en la que ya se aplica el modelo.
  
-## <a name="apply-the-retention-label-to-a-document-library-to-which-the-model-is-already-applied"></a>Aplicar la etiqueta de retención a la biblioteca de documentos en la que ya se aplica el modelo
+### <a name="apply-the-retention-label-to-a-document-library-to-which-the-model-is-already-applied"></a>Aplicar la etiqueta de retención a la biblioteca de documentos en la que ya se aplica el modelo
 
-Si ya se ha aplicado el modelo de comprensión mediante documentos a una biblioteca de documentos, puede hacer lo siguiente para sincronizar la actualización de la etiqueta de retención y aplicarla en la biblioteca de documentos:</br>
+Si el modelo de procesamiento de documentos no estructurado o el modelo precompilado ya se ha aplicado a una biblioteca de documentos, puede hacer lo siguiente para sincronizar la actualización de la etiqueta de retención para aplicarla a la biblioteca de documentos:
 
-1. En la Página principal del modelo, en la sección **Bibliotecas con este modelo**, seleccione la biblioteca de documentos a la que quiera aplicar la actualización de la etiqueta de retención. </br> 
-2. Seleccione **Sincronizar**. </br>
- ![Modelo de sincronización.](../media/content-understanding/sync-model.png)</br> 
+1. En la Página principal del modelo, en la sección **Bibliotecas con este modelo**, seleccione la biblioteca de documentos a la que quiera aplicar la actualización de la etiqueta de retención.
 
+2. Seleccione **Sincronizar**.
 
-Después de aplicar la actualización y sincronizarla con el modelo, puede confirmar que se ha aplicado haciendo lo siguiente:
+   ![Modelo de sincronización.](../media/content-understanding/sync-model.png)</br> 
 
-1. En el centro de contenido, en la sección **Bibliotecas con este modelo**, haga clic en la biblioteca a la que se ha aplicado el modelo actualizado. </br>
-2. En la vista de la biblioteca de documentos, seleccione el icono de información para ver las propiedades del modelo.</br>  
-3. En la lista **Modelos activos**, seleccione el modelo actualizado.</br>
-4. En la sección **Etiqueta de retención** verá el nombre de la etiqueta de retención aplicada.</br>
+Después de aplicar la actualización y sincronizarla con el modelo, puede confirmar que se ha aplicado realizando los pasos siguientes:
 
+1. En el centro de contenido, sección **Bibliotecas con este modelo**, seleccione la biblioteca a la que se ha aplicado el modelo actualizado.
 
-En la página de vista del modelo de la biblioteca de documentos, se mostrará una nueva columna de la **Etiqueta de retención**.  A medida que el modelo clasifica los archivos que identifica como pertenecientes al tipo de contenido y los muestra en la vista de biblioteca, en la columna Etiqueta de retención también se muestra el nombre de la etiqueta de retención que se ha aplicado a través del modelo.
+2. En la vista de la biblioteca de documentos, seleccione el icono de información para ver las propiedades del modelo.
 
+3. En la lista **Modelos activos**, seleccione el modelo actualizado.
+
+4. En la sección **Etiqueta de retención** , verá el nombre de la etiqueta de retención aplicada.
+
+En la página de vista del modelo de la biblioteca de documentos, se mostrará una nueva columna de la **Etiqueta de retención**.  A medida que el modelo clasifica los archivos que identifica como pertenecientes a su tipo de contenido y los enumera en la vista de biblioteca, la columna **Etiqueta de retención** también mostrará el nombre de la etiqueta de retención que se le ha aplicado a través del modelo.
 
 Por ejemplo, todos los documentos de *Avisos de seguros* que su modelo identifique también tendrán la etiqueta de retención *Negocios* aplicada para que no se eliminen de la biblioteca de documentos durante cinco meses. Si se intenta eliminar el archivo de la biblioteca de documentos, se mostrará un error que indica que no está permitido debido a la etiqueta de retención aplicada.
 
-## <a name="to-add-a-retention-label-to-a-form-processing-model"></a>Agregar una etiqueta de retención a un modelo de comprensión mediante documentos
+## <a name="add-a-retention-label-to-a-structured-document-processing-model"></a>Adición de una etiqueta de retención a un modelo de procesamiento estructurado de documentos
 
 > [!Important]
-> Para que las etiquetas de retención estén disponibles para aplicarlas al modelo de procesamiento de formularios, deben [crearse](../compliance/file-plan-manager.md#create-retention-labels) y [publicarse](../compliance/create-apply-retention-labels.md#how-to-publish-retention-labels) en el portal de cumplimiento Microsoft Purview.
+> Para que las etiquetas de retención estén disponibles para aplicarlas a los modelos de procesamiento de documentos estructurados, deben [crearse](../compliance/file-plan-manager.md#create-retention-labels) y [publicarse](../compliance/create-apply-retention-labels.md#how-to-publish-retention-labels) en el portal de cumplimiento Microsoft Purview.
 
-Puede aplicar una etiqueta de retención a un modelo de procesamiento de formularios cuando cree el modelo, o bien aplicarlo a un modelo ya existente.
+Puede aplicar una etiqueta de retención a un modelo de procesamiento de documentos estructurado al crear un modelo o aplicarlo a un modelo existente.
 
-### <a name="to-add-a-retention-label-when-you-create-a-form-processing-model"></a>Agregar una etiqueta de retención a un modelo de comprensión mediante documentos cuando se crea el modelo
+### <a name="to-add-a-retention-label-when-you-create-a-structured-document-processing-model"></a>Para agregar una etiqueta de retención al crear un modelo de procesamiento estructurado de documentos
 
-1. Cuando cree un [nuevo modelo de procesamiento de formularios](./create-a-form-processing-model.md), seleccione la <b>Configuración avanzada.</b>
-2. En <b>Configuración avanzada</b>, en la sección <b>Etiqueta de retención</b>, seleccione el menú y, después, seleccione la etiqueta de retención que quiere aplicar al modelo.</b>
+1. Al [crear un nuevo modelo de procesamiento estructurado de documentos](./create-a-form-processing-model.md), seleccione **Configuración avanzada**.
 
+2. En **Configuración avanzada**, en la sección **Etiqueta de retención**, seleccione el menú y, después, seleccione la etiqueta de retención que quiere aplicar al modelo.
  
-     ![Agregue a un nuevo modelo de procesamiento de formularios.](../media/content-understanding/retention-label-forms.png)</br>
+     ![Agregue a un nuevo modelo de procesamiento de documentos estructurado.](../media/content-understanding/retention-label-forms.png)
 
-3.  Cuando haya completado la configuración del modelo restante, seleccione <b>Crear</b> para crear el modelo.
+3.  Cuando haya completado la configuración del modelo restante, seleccione **Crear** para crear el modelo.
 
-### <a name="to-add-a-retention-label-to-an-existing-form-processing-model"></a>Agregar una etiqueta de retención a un modelo de comprensión mediante documentos existente
+### <a name="to-add-a-retention-label-to-an-existing-structured-document-processing-model"></a>Para agregar una etiqueta de retención a un modelo de procesamiento de documentos estructurado existente
 
-Hay dos maneras de agregar una etiqueta de retención a un modelo de comprensión mediante documentos existente:
-- A través del menú Automatizar de la biblioteca de documentos
-- A través de la configuración del Modelo activo en la biblioteca de documentos 
+Puede agregar una etiqueta de retención a un modelo de procesamiento de documentos estructurado existente de diferentes maneras:
 
+- A través del menú **Automatizar** de la biblioteca de documentos
+- A través de la configuración del **modelo activo** en la biblioteca de documentos 
 
-#### <a name="to-add-a-retention-label-to-an-existing-form-processing-model-through-the-automate-menu"></a>Agregar una etiqueta de retención a un modelo de comprensión mediante documentos existente con el menú Automatizar
+#### <a name="to-add-a-retention-label-to-an-existing-structured-document-processing-model-through-the-automate-menu"></a>Para agregar una etiqueta de retención a un modelo de procesamiento de documentos estructurado existente mediante el menú Automatizar
 
-Puede agregar una etiqueta de retención a un modelo de procesamiento de formularios existente del que sea propietario mediante el menú Automatizar de la biblioteca de documentos en la que se aplica el modelo.
+Puede agregar una etiqueta de retención a un modelo de procesamiento de documentos estructurado existente que posee a través del menú **Automatizar** de la biblioteca de documentos en la que se aplica el modelo.
 
+1. En la biblioteca de documentos a la que se aplica el modelo, seleccione los **detalles del modelo** **Automatizar** >  vista **del generador de inteligencia artificial** > .
 
-1. En la biblioteca de documentos a la que se aplica el modelo de procesamiento de formularios, seleccione el menú <b>Automatizar</b>, luego <b>AI Builder</b> y finalmente <b>Ver detalles del modelo de procesamiento de formularios</b>.
+    ![Menú Automatizar.](../media/content-understanding/automate-menu.png)
 
-   ![Menú Automatizar.](../media/content-understanding/automate-menu.png)</br>
+2. En los detalles del modelo, en la sección **Etiqueta de retención** , seleccione la etiqueta de retención que desea aplicar y, a continuación, seleccione **Guardar**.
 
-2. En los detalles del modelo, en <b>Etiqueta de retención</b>, seleccione la etiqueta de retención que quiera aplicar.  Después, seleccione <b>Guardar</b>.
+    ![Agregue a un modelo de procesamiento de documentos estructurado existente.](../media/content-understanding/retention-label-model-details.png)</br> 
 
-     ![Agregue a un modelo de procesamiento de formularios existente.](../media/content-understanding/retention-label-model-details.png)</br> 
+#### <a name="to-add-a-retention-label-to-an-existing-structured-document-processing-model-in-the-active-model-settings"></a>Para agregar una etiqueta de retención a un modelo de procesamiento de documentos estructurado existente en la configuración del modelo activo
 
-#### <a name="to-add-a-retention-label-to-an-existing-form-processing-model-in-the-active-model-settings"></a>Agregar una etiqueta de retención a un modelo de procesamiento de formularios existente en la configuración del modelo activo
+Puede agregar una etiqueta de retención a un modelo de procesamiento de documentos estructurado existente que posee a través de la configuración del modelo activo en la biblioteca de documentos en la que se aplica el modelo.
 
-Puede agregar una etiqueta de retención a un modelo de procesamiento de formulario existente del que sea propietario en la configuración del Modelo activo de la biblioteca de documentos en la que se aplica el modelo.
+1. En la biblioteca de documentos de SharePoint en la que se aplica el modelo, seleccione el icono **Ver modelos activos** y, después, seleccione **Ver modelos activos**.
 
-1. En la biblioteca de documentos de SharePoint en la que se aplica el modelo, seleccione el icono <b>Ver modelos activos</b> y, después, seleccione <b>Ver modelos activos</b>.</b>
+    ![Ver modelos activos.](../media/content-understanding/info-du.png)
 
-   ![Ver modelos activos.](../media/content-understanding/info-du.png)</br> 
+2. En **Modelos activos**, seleccione el modelo al que desea aplicar la etiqueta de retención.
 
-2. En <b>Modelos activos</b>, seleccione el modelo de procesamiento de formularios al que quiere aplicar la etiqueta de retención.
+    ![Detalles del modelo.](../media/content-understanding/retention-label-model-details.png)</br> 
 
-     ![Detalles del modelo.](../media/content-understanding/retention-label-model-details.png)</br> 
-
-
-3. En los detalles del modelo, en <b>Etiqueta de retención</b>, seleccione la etiqueta de retención que quiera aplicar.  Después, seleccione <b>Guardar</b>.
+3. En los detalles del modelo, en la sección **Etiqueta de retención** , seleccione la etiqueta de retención que desea aplicar y, a continuación, seleccione **Guardar**.
 
 > [!NOTE]
 > Debe ser el propietario del modelo del panel de configuración del modelo para poder editarlo. 
 
-
 ## <a name="see-also"></a>Vea también
 
-[Crear un clasificador](create-a-classifier.md)
+[Aplicar una etiqueta de confidencialidad a un modelo en Microsoft Syntex](create-a-classifier.md)
 
-[Crear un extractor](create-an-extractor.md)
 
-[Información general de la comprensión mediante documentos ](document-understanding-overview.md)
+

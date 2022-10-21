@@ -5,7 +5,7 @@ ms.author: mikeplum
 author: MikePlumleyMSFT
 manager: serdars
 audience: admin
-ms.service: microsoft-365-enterprise
+ms.service: microsoft-syntex
 ms.topic: article
 ms.collection:
 - enabler-strategic
@@ -13,16 +13,16 @@ ms.collection:
 ms.custom: admindeeplinkSPO
 search.appverid: ''
 ms.localizationpriority: high
-ms.openlocfilehash: ad533e7f869e3680c9e4b8e5085881040fadd22e
-ms.sourcegitcommit: ca082da1c51a3f643f152492579eef5679d52bd0
+ms.openlocfilehash: 389d211a3f094fa8e6956a2c7882d6efef5aa795
+ms.sourcegitcommit: 87283bb02ca750286f7c069f811b788730ed5832
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/12/2022
-ms.locfileid: "68547716"
+ms.lasthandoff: 10/21/2022
+ms.locfileid: "68659991"
 ---
 # <a name="import-a-term-set-using-a-skos-based-format"></a>Importar un conjunto de términos con un formato basado en SKOS
 
-Puede importar un conjunto de términos con un formato basado en SKOS. Para más información sobre el formato, consulte [Referencia de formato SKOS de la taxonomía de SharePoint](skos-format-reference.md). Esta característica requiere una licencia [de Microsoft Syntex](index.md) .
+Puede importar un conjunto de términos con un formato basado en SKOS. Para más información sobre el formato, consulte [Referencia de formato SKOS de la taxonomía de SharePoint](skos-format-reference.md). Esta característica requiere una [licencia de Microsoft Syntex](syntex-licensing.md).
 
 Le recomendamos mantener sus archivos de importación con menos de 20 000 términos. Los archivos de mayor tamaño pueden aumentar el tiempo necesario para la validación y la importación.
 
@@ -48,6 +48,6 @@ Si la importación del archivo se ha realizado correctamente, se mostrará un me
 
 [Introducción a los metadatos administrados](/sharepoint/managed-metadata)
 
-[Información general de la comprensión mediante documentos](document-understanding-overview.md)
+[Introducción al procesamiento de documentos no estructurados](document-understanding-overview.md)
 
 [Importar conjuntos de términos (nivel de sitio)](https://support.microsoft.com/office/168fbc86-7fce-4288-9a1f-b83fc3921c18)

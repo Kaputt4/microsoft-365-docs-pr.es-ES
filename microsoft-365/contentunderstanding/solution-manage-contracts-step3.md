@@ -7,17 +7,17 @@ ms.reviewer: ssquires
 audience: admin
 ms.topic: article
 ms.date: ''
-ms.service: microsoft-365-enterprise
+ms.service: microsoft-syntex
 search.appverid: ''
 ms.localizationpriority: medium
 ROBOTS: ''
 description: Obtenga información sobre cómo usar Power Automate para crear el flujo para procesar los contratos mediante una solución de Microsoft 365.
-ms.openlocfilehash: fbdf155fa1cd8e9b9b94a98dee09d1544c8e439e
-ms.sourcegitcommit: 04e517c7e00323b5c33d8ea937115725cf2cfd4d
+ms.openlocfilehash: 22f9970e9314bb59f03d552265f8819d00f9fdad
+ms.sourcegitcommit: 87283bb02ca750286f7c069f811b788730ed5832
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/13/2022
-ms.locfileid: "68564660"
+ms.lasthandoff: 10/21/2022
+ms.locfileid: "68663398"
 ---
 # <a name="step-3-use-power-automate-to-create-the-flow-to-process-your-contracts"></a>Paso 3. Uso de Power Automate para crear el flujo para procesar los contratos
 
@@ -36,7 +36,7 @@ En el diagrama siguiente se muestra el flujo de Power Automate para la solución
 
 ## <a name="prepare-your-contract-for-review"></a>Preparar el contrato para su revisión
 
-Cuando el modelo de comprensión de documentos de Syntex identifica y clasifica un contrato, el flujo de Power Automate cambiará primero el estado a **En revisión**.
+Cuando el modelo de procesamiento de documentos no estructurado identifica y clasifica un contrato, el flujo de Power Automate cambiará primero el estado a **En revisión**.
 
 ![Estado de actualización.](../media/content-understanding/flow-overview.png)
 

@@ -6,22 +6,23 @@ manager: pamgreen
 ms.reviewer: ssquires
 audience: admin
 ms.topic: article
-ms.service: microsoft-365-enterprise
+ms.service: microsoft-syntex
 search.appverid: ''
 ms.collection:
 - enabler-strategic
 - m365initiative-syntex
 ms.localizationpriority: medium
 description: Obtenga información sobre cómo crear un extractor en Microsoft Syntex.
-ms.openlocfilehash: b47633d7e9489da46e82bb9f7b3699c65b663a08
-ms.sourcegitcommit: ca082da1c51a3f643f152492579eef5679d52bd0
+ms.openlocfilehash: 4e2ff7f0452e72d66a46ead73919b1bce2bc80c6
+ms.sourcegitcommit: 87283bb02ca750286f7c069f811b788730ed5832
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/12/2022
-ms.locfileid: "68547607"
+ms.lasthandoff: 10/21/2022
+ms.locfileid: "68660387"
 ---
 # <a name="create-an-extractor-in-microsoft-syntex"></a>Creación de un extractor en Microsoft Syntex
 
+<sup>**Se aplica a:**  &ensp; &#10003; procesamiento de documentos no estructurados</sup>
 
 <br/>
 
@@ -59,7 +60,7 @@ El siguiente paso es etiquetar la entidad que desea extraer en sus archivos de e
 
 Creating the extractor opens the extractor page. Here you see a list of your sample files, with the first file on the list displayed in the viewer.
 
-1. En el visor, seleccione los datos que desea extraer de los archivos. Por ejemplo, si se quiere extraer la *Fecha de inicio del servicio*, se resalta el valor de la fecha en el primer archivo (*lunes 14 de octubre de 2019*). y, a continuación, seleccione **Guardar**. Debería ver la visualización del valor del archivo en la lista de ejemplos etiquetados, bajo la columna **Etiqueta**.
+1. En el visor, seleccione los datos que desea extraer de los archivos. Por ejemplo, si desea extraer la fecha del *servicio de inicio*, resalte el valor de fecha en el primer archivo (*lunes, 14 de octubre de 2022*). y, a continuación, seleccione **Guardar**. Debería ver la visualización del valor del archivo en la lista de ejemplos etiquetados, bajo la columna **Etiqueta**.
 2. Seleccione **Siguiente archivo** para guardar automáticamente y abra el siguiente archivo en la lista en el visor. O seleccione **Guardar** y luego seleccione otro archivo de la lista de **Ejemplos etiquetados**.
 3. En el visor, repita los pasos 1 y 2, y luego repita hasta que haya guardado la etiqueta en los cinco archivos.
 
@@ -79,9 +80,9 @@ La característica Buscar es útil si está buscando un documento grande o si ha
 
 En nuestro ejemplo, vamos a crear una explicación que proporcione una sugerencia sobre el propio formato de entidad y las variaciones que podría tener en los documentos de ejemplo. Por ejemplo, un valor de fecha puede estar en varios formatos diferentes, como:
 
-- 14/10/2019
-- 14 de octubre de 2019
-- Lunes 14 de octubre de 2019
+- 10/14/2022
+- 14 de octubre de 2022
+- Lunes, 14 de octubre de 2022
 
 Para ayudar a identificar la *fecha de inicio del servicio*, puede crear una explicación de patrón.
 
@@ -97,7 +98,7 @@ Para ayudar a identificar la *fecha de inicio del servicio*, puede crear una exp
 > [!NOTE]
 > Para obtener más información sobre los tipos de explicación, consulte [Tipos de explicación](./explanation-types-overview.md)..
 
-### <a name="use-the-explanation-library"></a>Usar la biblioteca de explicación
+### <a name="use-the-explanation-library"></a>Uso de la biblioteca de explicaciones
 
 Para crear explicaciones para elementos como fechas, es más fácil [usar la biblioteca de explicaciones](./explanation-types-overview.md) que escribir manualmente todas las variaciones. La biblioteca de explicaciones es un conjunto de explicaciones de frases y patrones pre generados. La biblioteca intenta proporcionar todos los formatos para las listas de frases o patrones comunes, como fechas, números de teléfono, códigos postales y muchos otros.
 
@@ -185,9 +186,5 @@ Si tiene entidades duplicadas y desea extraer solo un valor o un determinado nú
 [Tipos de explicación](explanation-types-overview.md)
 
 [Aprovechar la taxonomía del almacén de términos al crear un extractor](leverage-term-store-taxonomy.md)
-
-[Información general sobre la comprensión mediante documentos](document-understanding-overview.md)
-
-[Aplicar un modelo](apply-a-model.md)
 
 [Modo de accesibilidad de Syntex](accessibility-mode.md)

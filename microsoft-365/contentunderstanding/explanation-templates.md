@@ -6,21 +6,23 @@ manager: pamgreen
 ms.reviewer: ssquires
 audience: admin
 ms.topic: article
-ms.service: microsoft-365-enterprise
+ms.service: microsoft-syntex
 search.appverid: ''
 ms.collection:
 - enabler-strategic
 - m365initiative-syntex
 ms.localizationpriority: medium
 description: Obtenga más información sobre cómo usar y guardar plantillas de explicación en Microsoft Syntex.
-ms.openlocfilehash: ef1e3cd3575d5e943c2ea39e98f7c85046de32ec
-ms.sourcegitcommit: ca082da1c51a3f643f152492579eef5679d52bd0
+ms.openlocfilehash: c075a084077479fe1cbb9890203f7e2e6b15843d
+ms.sourcegitcommit: 87283bb02ca750286f7c069f811b788730ed5832
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/12/2022
-ms.locfileid: "68547760"
+ms.lasthandoff: 10/21/2022
+ms.locfileid: "68662827"
 ---
 # <a name="use-explanation-templates-in-microsoft-syntex"></a>Uso de plantillas de explicación en Microsoft Syntex
+
+<sup>**Se aplica a:**  &ensp; &#10003; procesamiento de documentos no estructurados</sup>
 
 Aunque se pueden agregar manualmente varios valores de la lista de frases para la explicación, puede resultar más fácil usar las plantillas que se le proporcionan en la biblioteca de explicación.
 
@@ -30,8 +32,8 @@ Por ejemplo, en lugar de añadir manualmente todas las variaciones para *fecha*,
 
 La biblioteca de explicación incluye varias explicaciones de la *lista de frases* más utilizadas, entre las que se incluyen:
 
-- Fecha: fechas del calendario, todos los formatos. Incluye texto y números (por ejemplo, "9 de diciembre de 2020").
-- Fecha (numérica): fechas del calendario, todos los formatos. Incluye números (por ejemplo, 1-11-2020).
+- Fecha: fechas del calendario, todos los formatos. Incluye texto y números (por ejemplo, "9 de dic, 2022").
+- Fecha (numérica): fechas del calendario, todos los formatos. Incluye números (por ejemplo, 1-11-2022).
 - Hora: formatos de 12 y 24 horas.
 - Número: números positivos y negativos, hasta 2 decimales.
 - Porcentaje: una lista de patrones que representan un porcentaje. Por ejemplo, 1 %, 11 %, 100 % o 11,11 %.

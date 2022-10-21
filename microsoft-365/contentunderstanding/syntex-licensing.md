@@ -6,23 +6,23 @@ ms.reviewer: ssquires
 manager: serdars
 audience: admin
 ms.topic: article
-ms.service: microsoft-365-enterprise
+ms.service: microsoft-syntex
 ms.collection:
 - enabler-strategic
 - m365initiative-syntex
 search.appverid: MET150
 ms.localizationpriority: high
 description: Obtenga información sobre las licencias para Microsoft Syntex.
-ms.openlocfilehash: 206d68d8d1be54a21c4f857830a1d85672c95a04
-ms.sourcegitcommit: 1f4c51d022d1cfb6c194bf0f0af9c2841c781d68
+ms.openlocfilehash: 4b35810f1f8ed3e260f9d6cd83ccd9a36f15f32c
+ms.sourcegitcommit: 87283bb02ca750286f7c069f811b788730ed5832
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/14/2022
-ms.locfileid: "68574019"
+ms.lasthandoff: 10/21/2022
+ms.locfileid: "68663354"
 ---
 # <a name="licensing-for-microsoft-syntex"></a>Licencias para Microsoft Syntex
 
-Para usar Microsoft Syntex, debe tener una licencia para cada usuario de Syntex. Si quita todas las licencias de Syntex de su inquilino en una fecha futura (o la prueba expira), los usuarios ya no podrán crear, publicar o ejecutar modelos de comprensión de documentos o procesamiento de formularios. Además, los informes de almacén de términos, la importación de taxonomía SKOS y la inserción de tipo de contenido ya no estarán disponibles. No se eliminarán modelos, ni contenido ni metadatos y no se cambiarán los permisos del sitio.
+Para usar Microsoft Syntex, debe tener una licencia para cada usuario de Syntex. Si quita todas las licencias de Syntex del inquilino en una fecha futura (o la prueba expira), los usuarios ya no podrán crear, publicar ni ejecutar modelos personalizados. Además, los informes de almacén de términos, la importación de taxonomía SKOS y la inserción de tipo de contenido ya no estarán disponibles. No se eliminarán modelos, contenido ni metadatos y no se cambiarán los permisos del sitio.
  
 > [!NOTE] 
 > Syntex es una licencia de complemento y requiere que los usuarios también tengan una licencia para Microsoft 365.
@@ -31,20 +31,20 @@ Para usar Microsoft Syntex, debe tener una licencia para cada usuario de Syntex.
  
 Las siguientes tareas requieren una [licencia de Syntex](https://www.microsoft.com/microsoft-365/enterprise/sharepoint-syntex) para el usuario que las realiza:
  
-- Applying a document understanding model to a library. (Unlicensed users can be granted access to a content center and can create document understanding models there but can't apply them to a document library.)
-- Creación de un modelo de procesamiento de formularios mediante el punto de entrada en una biblioteca
-- Carga de contenido en una biblioteca en la que se ha aplicado un modelo de procesamiento de formularios o de comprensión mediante documentos
-- Ejecución a petición de un modelo de comprensión mediante documentos
+- Aplicar un modelo de procesamiento de documentos no estructurado a una biblioteca. (A los usuarios sin licencia se les puede conceder acceso a un centro de contenido y pueden crear modelos allí, pero no se pueden aplicar a una biblioteca de documentos).
+- Crear un modelo de procesamiento estructurado de documentos o un modelo de procesamiento de documentos de forma libre a través del punto de entrada de una biblioteca
+- Carga de contenido en una biblioteca donde se ha aplicado un modelo personalizado
+- Ejecución de un modelo de procesamiento de documentos no estructurado a petición
 - Creación de una plantilla moderna con ensamblado de contenido
 - Generación de un documento a partir de una plantilla moderna
 - Uso de la búsqueda avanzada de metadatos
 - Uso de servicios de taxonomía premium. (Los servicios de taxonomía premium comprenden la importación de conjuntos de términos basados en SKOS, la inserción de tipos de contenido empresarial en sitios asociados al centro y los informes de almacén de términos).
 
-A los usuarios sin licencia se les puede conceder acceso a un centro de contenido y pueden crear modelos de comprensión mediante documentos allí, pero no pueden aplicarlos a una biblioteca de documentos.
+A los usuarios sin licencia se les puede conceder acceso a un centro de contenido y pueden crear modelos allí, pero no pueden aplicarlos a una biblioteca de documentos.
  
 ## <a name="cost-of-training-and-running-models"></a>Costo de entrenamiento y ejecución de modelos
  
-El costo de entrenamiento y ejecución de modelos de comprensión de documentos se incluye en el costo de una licencia de Syntex. Sin embargo, los modelos de procesamiento de formularios usan las capacidades de AI Builder, tanto para el entrenamiento como para el procesamiento en tiempo de ejecución. Esta capacidad debe asignarse al entorno de Power Apps en el que se usará AI Builder.
+El costo de entrenamiento y ejecución de modelos de procesamiento de documentos no estructurados se incluye en el costo de una licencia de Syntex. Sin embargo, los modelos estructurados de procesamiento de documentos y procesamiento de documentos de forma libre usan la capacidad de AI Builder, tanto para el entrenamiento como para el procesamiento en tiempo de ejecución. Esta capacidad debe asignarse al entorno de Power Apps en el que se usará AI Builder.
 
 Por cada licencia de Syntex, se le asignan 3.500 créditos de AI Builder por licencia, por mes agrupados en el nivel de inquilino, con una asignación máxima de 1 millón de créditos al mes. Esta asignación se renueva cada mes para cada licencia de Syntex activa. (Los créditos no usados no se acumulan de mes a mes). 
 
@@ -61,7 +61,6 @@ Tener una o varias licencias de Syntex en su organización permite las siguiente
 - Importación del conjuntos de términos a partir de SKOS
 - Insertar tipos de contenido empresarial en un sitio concentrador, que también los agrega a los sitios asociados y a las listas o bibliotecas recién creadas
 - Informes del almacén de términos que proporcionan información sobre los conjuntos de términos publicados y su uso en todo el inquilino
-
 
 ## <a name="see-also"></a>Vea también
 

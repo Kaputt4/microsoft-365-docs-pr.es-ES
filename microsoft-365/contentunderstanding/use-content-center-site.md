@@ -1,45 +1,45 @@
 ---
-title: Uso de la plantilla de sitio del Centro de contenido para Microsoft Syntex
+title: Uso de la plantilla de sitio del centro de contenido para Microsoft Syntex
 ms.author: chucked
 author: chuckedmonson
 manager: pamgreen
 audience: admin
 ms.reviewer: ssquires
 ms.topic: article
-ms.service: microsoft-365-enterprise
+ms.service: microsoft-syntex
 search.appverid: ''
 ms.collection:
 - enabler-strategic
 - m365initiative-syntex
 ms.localizationpriority: medium
 description: Obtenga información sobre cómo aprovisionar y usar la plantilla de sitio del Centro de contenido en Microsoft Syntex.
-ms.openlocfilehash: 9c5e1f09104026c04ee86d4b86a968d04ca2bcdb
-ms.sourcegitcommit: 04e517c7e00323b5c33d8ea937115725cf2cfd4d
+ms.openlocfilehash: 5f6721960eedaef0d01898401f473c46fbf32a87
+ms.sourcegitcommit: 87283bb02ca750286f7c069f811b788730ed5832
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/13/2022
-ms.locfileid: "68564156"
+ms.lasthandoff: 10/21/2022
+ms.locfileid: "68661883"
 ---
-# <a name="use-the-content-center-site-template-for-microsoft-syntex"></a>Uso de la plantilla de sitio del Centro de contenido para Microsoft Syntex
+# <a name="use-the-content-center-site-template-for-microsoft-syntex"></a>Uso de la plantilla de sitio del centro de contenido para Microsoft Syntex
 
 El sitio del Centro de contenido de Microsoft Syntex es una plantilla de sitio de SharePoint de instrucciones lista para implementar diseñada para ayudarle a comprender mejor las funcionalidades de Syntex.
 
 Se le presentarán las herramientas y la información que necesitará para crear y entrenar sus propios modelos. A continuación, podrá usar este sitio como repositorio de contenido central o como centro de control para administrar sus propios modelos de Syntex.
 
-![Captura de pantalla de la página principal de la plantilla de sitio del Centro de contenido.](../media/content-understanding/content-center-site-home-page.png)
+![Captura de pantalla de la página principal de la plantilla de sitio del centro de contenido.](../media/content-understanding/content-center-site-home-page.png)
 
 En este sitio, los modelos se pueden entrenar y evaluar con su propio contenido. Sin embargo, para aplicar los modelos a las bibliotecas, se requiere una licencia para Syntex.  
 
 ## <a name="provision-the-site"></a>Aprovisionamiento del sitio
 
-El sitio del Centro de contenido se puede aprovisionar desde el [servicio de libro de búsqueda de SharePoint](https://lookbook.microsoft.com/).
+El sitio del centro de contenido se puede aprovisionar desde el [servicio de libro de búsqueda de SharePoint](https://lookbook.microsoft.com/).
 
-![Captura de pantalla de la página de aprovisionamiento de plantillas de sitio del Centro de contenido.](../media/content-understanding/content-center-site-provisioning-page.png)
+![Captura de pantalla de la página de aprovisionamiento de plantillas de sitio del centro de contenido.](../media/content-understanding/content-center-site-provisioning-page.png)
 
 > [!NOTE]
 > Debe ser administrador global o administrador de SharePoint en Microsoft 365 para aprovisionar el sitio.
 
-1. En la página principal del [libro de apariencias de SharePoint](https://lookbook.microsoft.com/), en **el menú Ver los diseños** , seleccione Centro de contenido de **Syntex** > **Syntex**.
+1. En la página principal del [libro de búsqueda de SharePoint](https://lookbook.microsoft.com/), en **el menú Ver los diseños**, seleccione **Centro de contenido syntex** >  syntex.
 
 2. En la página **Centro de contenido** , seleccione **Agregar al inquilino**.
 
@@ -49,15 +49,15 @@ El sitio del Centro de contenido se puede aprovisionar desde el [servicio de lib
 
     ![Captura de pantalla que muestra la página de aprovisionamiento de plantillas de sitio del Centro de contenido.](../media/content-understanding/content-center-email-and-url.png)
 
-4. Seleccione **Aprovisionar** y, en poco tiempo, el sitio estará listo para el uso. Recibirá un correo electrónico (enviado a la dirección de correo electrónico que proporcionó) que indica que se ha completado la solicitud para aprovisionar la plantilla de sitio del Centro de contenido.
+4. Seleccione **Aprovisionar** y, en poco tiempo, el sitio estará listo para el uso. Recibirá un correo electrónico (enviado a la dirección de correo electrónico que proporcionó) que indica que se ha completado la solicitud para aprovisionar la plantilla de sitio del centro de contenido.
 
-5. Seleccione **Abrir sitio** y verá el sitio del Centro de contenido. Desde aquí, puede explorar el sitio y obtener más información sobre Syntex. 
+5. Seleccione **Abrir sitio** y verá el sitio del centro de contenido. Desde aquí, puede explorar el sitio y obtener más información sobre Syntex. 
 
 Para obtener más información sobre el aprovisionamiento desde el servicio de libro de apariencias de SharePoint, vea [Aprovisionamiento de una nueva solución de caminos de aprendizaje](/office365/customlearning/custom_provision).
 
 ## <a name="explore-the-site"></a>Explorar el sitio
 
-El sitio del Centro de contenido incluye páginas rellenadas previamente que le guiarán por los pasos para empezar a usar Syntex en su organización. 
+El sitio del centro de contenido incluye páginas rellenadas previamente que le guiarán por los pasos para empezar a usar Syntex en su organización. 
 
 ### <a name="get-started-with-syntex"></a>Introducción a Syntex
 
@@ -69,7 +69,7 @@ Obtenga información sobre tres tipos de modelos y vea cómo puede usarlos para 
 
 ### <a name="take-an-interactive-tour-to-create-a-model"></a>Realizar un recorrido interactivo para crear un modelo
 
-Vea cómo crear un modelo de comprensión de documentos en la biblioteca de modelos y, a continuación, habilite un modelo de ejemplo previamente entrenado.
+Vea cómo crear un modelo en la biblioteca de modelos y, a continuación, habilite un modelo de ejemplo previamente entrenado.
 
 ### <a name="syntex-in-six-simple-steps"></a>Syntex en seis sencillos pasos
 

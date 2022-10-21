@@ -1,46 +1,52 @@
 ---
-title: Introducción a la comprensión de documentos en Microsoft Syntex
+title: Introducción al procesamiento de documentos no estructurados en Microsoft Syntex
 ms.author: chucked
 author: chuckedmonson
 manager: pamgreen
 ms.reviewer: ssquires
 audience: admin
 ms.topic: article
-ms.customer: intro-overview
-ms.service: microsoft-365-enterprise
+ms.custom: intro-overview
+ms.service: microsoft-syntex
 search.appverid: ''
 ms.collection:
 - enabler-strategic
 - m365initiative-syntex
 ms.localizationpriority: medium
-description: Obtenga información sobre la comprensión de documentos en Microsoft Syntex.
-ms.openlocfilehash: d6b374d55840a53f1d78c22f69deebdbb5d89958
-ms.sourcegitcommit: ca082da1c51a3f643f152492579eef5679d52bd0
+description: Obtenga información sobre el modelo de procesamiento de documentos no estructurados en Microsoft Syntex.
+ms.openlocfilehash: 93ca7e2900098f9067f8c63ea9eae857f61bb7a0
+ms.sourcegitcommit: 87283bb02ca750286f7c069f811b788730ed5832
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/12/2022
-ms.locfileid: "68547651"
+ms.lasthandoff: 10/21/2022
+ms.locfileid: "68662366"
 ---
-# <a name="document-understanding-overview-in-microsoft-syntex"></a>Introducción a la comprensión de documentos en Microsoft Syntex
+# <a name="overview-of-unstructured-document-processing-in-microsoft-syntex"></a>Introducción al procesamiento de documentos no estructurados en Microsoft Syntex
 
+> [!NOTE]
+> *El procesamiento de documentos no estructurados* se conocía como *comprensión de documentos* en versiones anteriores.
 
+<!---
 </br>
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4CSu7]
 
 </br>
+--->
 
-La comprensión de documentos usa modelos de inteligencia artificial (IA) para automatizar la clasificación de archivos y extraer la información. Funciona mejor con documentos sin estructura, como cartas o contratos. Estos documentos deben tener texto que pueda identificarse en función de frases o patrones. El texto identificado designa tanto el tipo de archivo (su clasificación) como lo que le gustaría extraer (sus extractores).
+Use el modelo de procesamiento de documentos no estructurado ([método de entrenamiento](create-syntex-model.md#train-a-custom-model)) para clasificar automáticamente los archivos y extraer información. Funciona mejor para documentos no estructurados, como cartas o contratos. 
 
-> [!NOTE]
-> Consulte la [guía De adopción de Syntex: Introducción](./adoption-getstarted.md) para obtener más información sobre los ejemplos de escenarios de comprensión de documentos.
-
-Los modelos de comprensión mediante documentos se crean y se administran en un tipo de sitio de SharePoint denominado *centro de contenido*. Cuando se aplica a una biblioteca de documentos de SharePoint, el modelo está asociado a un tipo de contenido que tiene columnas para almacenar la información que se va a extraer. El tipo de contenido que cree se almacena en la galería de tipo de contenido de SharePoint. También puede optar por usar tipos de contenido existentes para usar su esquema.
+El modelo de procesamiento de documentos no estructurado (anteriormente conocido como modelo de comprensión de documentos) usa inteligencia artificial (IA) para procesar documentos. Estos documentos deben tener texto que pueda identificarse en función de frases o patrones. El texto identificado designa tanto el tipo de archivo (su clasificación) como lo que le gustaría extraer (sus extractores).
 
 > [!NOTE]
-> Los tipos de contenido de solo lectura o sellado no pueden ser actualizados, de manera que no pueden ser usados en un modelo.
+> Para obtener más información sobre cómo usar Syntex y ejemplos de escenarios, consulte [Introducción a la adopción de Microsoft Syntex](./adoption-getstarted.md) y [Escenarios y casos de uso para Microsoft Syntex](./adoption-scenarios.md).
 
-Agregue *clasificadores* y *extractores a los* modelos de comprensión de documentos para realizar las siguientes acciones:
+Los modelos de procesamiento de documentos no estructurados se crean y administran en un tipo de sitio de SharePoint denominado [centro de contenido](create-a-content-center.md). Cuando se aplica a una biblioteca de documentos de SharePoint, el modelo está asociado a un tipo de contenido que tiene columnas para almacenar la información que se va a extraer. El tipo de contenido que cree se almacena en la galería de tipo de contenido de SharePoint. También puede optar por usar tipos de contenido existentes para usar su esquema.
+
+> [!NOTE]
+> Los tipos de contenido de solo lectura o sellado no se pueden actualizar, por lo que no se pueden usar en un modelo.
+
+Agregue [clasificadores](create-a-classifier.md) y [extractores a los](create-an-extractor.md) modelos de procesamiento de documentos no estructurados para realizar las siguientes acciones:
 
 - Los clasificadores se usan para identificar y clasificar documentos cargados en la biblioteca de documentos. Por ejemplo, un clasificador puede ser "entrenado" para identificar todos los documentos de *renovación de contrato* que se carguen en la biblioteca. El tipo de contenido de renovación de contrato lo define el usuario al crear el clasificador.
 
@@ -50,88 +56,11 @@ Puede usar archivos de ejemplo para entrenarlos y probarlos en el modelo. Los ar
 
 Después de publicar el modelo, utilice el centro de contenido para aplicarlo a cualquier biblioteca de documentos de SharePoint a la que tenga acceso.  
 
-## <a name="file-limitations"></a>Limitaciones de archivos
+## <a name="requirements"></a>Requisitos
 
-Los modelos de comprensión de documentos usan la tecnología de reconocimiento óptico de caracteres (OCR) para examinar archivos PDF, imágenes y archivos TIFF. Los archivos se examinan al entrenar un modelo con archivos de ejemplo y al ejecutar el modelo en archivos de una biblioteca de documentos.
-
-Tenga en cuenta las siguientes diferencias sobre los archivos basados en texto de Microsoft Office y los archivos escaneados por OCR (PDF, imagen o TIFF):
-
-- Archivos de Office: truncados a 64 000 caracteres (durante el entrenamiento y cuando se ejecuta en archivos de una biblioteca de documentos).
-
-- Archivos digitalizados con OCR: hay un límite de 20 páginas.  
-
-### <a name="requirements"></a>Requisitos
-
-El procesamiento de OCR funciona mejor en documentos que cumplen los siguientes requisitos:
-
-- Formato JPG, PNG o PDF (texto o digitalizado). Los archivos PDF con texto incrustado son mejores, ya que no se producen errores en la extracción y la ubicación de caracteres.
-
-- Si sus archivos PDF están bloqueados con contraseña, debe quitar el bloqueo antes de enviarlos.
-
-- El tamaño de archivo combinado de los documentos usados para el aprendizaje no debe superar los 50 MB por colección y los documentos PDF no deben tener más de 500 páginas.
-
-- Para las imágenes, las dimensiones deben estar entre 50 x 50 y 10 000 x 10 000 píxeles.
-   > [!NOTE]
-   > Es posible que las imágenes muy anchas o con dimensiones inusuales (por ejemplo, planos de planta) se trunquen en el proceso de OCR y pierdan precisión.
-
-- Para los archivos PDF, las dimensiones deben ser como máximo de 17 x 17 pulgadas, que corresponden al tamaño de papel A3 o legal y tamaños menores.
-
-- Si se escanean desde documentos en papel, las digitalizaciones deberían ser imágenes de alta calidad.
-
-- Debe usar el alfabeto latino (caracteres en inglés).
-
-### <a name="supported-file-types"></a>Tipos de archivo compatibles
-
-Los modelos de comprensión mediante documentos admiten los siguientes tipos de archivo:
-
-- Csv
-- doc
-- docx
-- eml
-- heic
-- heif
-- htm
-- html
-- jpeg
-- jpg
-- markdown
-- md
-- msg
-- pdf
-- png
-- ppt
-- pptx
-- rtf
-- tif
-- tiff
-- txt
-- xls
-- xlsx
-
-### <a name="supported-languages"></a>Idiomas admitidos
-
-Los modelos de comprensión de documentos admiten *todos los* idiomas basados en latín, incluidos:
-
-- Inglés
-- Francés
-- Alemán
-- Italiano
-- Español
+Para obtener información sobre los requisitos que se deben tener en cuenta al elegir este modelo, consulte [Requisitos y limitaciones de los modelos de Microsoft Syntex](requirements-and-limitations.md#unstructured-document-processing).
 
 ## <a name="see-also"></a>Vea también
 
-[Crear un clasificador](create-a-classifier.md)
+[Comparación de modelos personalizados](difference-between-document-understanding-and-form-processing-model.md)
 
-[Crear un extractor](create-an-extractor.md)
-
-[Crear un centro de contenido](create-a-content-center.md)
-
-[Crear un modelo de procesamiento de formularios](create-a-form-processing-model.md)
-
-[Aplicar un modelo](apply-a-model.md)
-
-[Diferencia entre un modelo de comprensión de documentos y un modelo de procesamiento de formularios](difference-between-document-understanding-and-form-processing-model.md)
-  
-[Información general del procesamiento de formularios](form-processing-overview.md)
-
-[Modo de accesibilidad de Syntex](accessibility-mode.md)

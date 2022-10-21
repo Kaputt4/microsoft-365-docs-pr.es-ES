@@ -1,32 +1,32 @@
 ---
-title: Uso de la plantilla de sitio administración de contratos para Microsoft Syntex
+title: Uso de la plantilla de sitio de administración de contratos para Microsoft Syntex
 ms.author: chucked
 author: chuckedmonson
 manager: pamgreen
 audience: admin
 ms.reviewer: kkameth
 ms.topic: article
-ms.service: microsoft-365-enterprise
+ms.service: microsoft-syntex
 search.appverid: ''
 ms.collection:
 - enabler-strategic
 - m365initiative-syntex
 ms.localizationpriority: medium
-description: Obtenga información sobre cómo aprovisionar, usar y personalizar la plantilla de sitio Administración de contratos en Microsoft Syntex.
-ms.openlocfilehash: 028afdbe0f82143c8ee84cdd773c859f7064cf47
-ms.sourcegitcommit: 04e517c7e00323b5c33d8ea937115725cf2cfd4d
+description: Obtenga información sobre cómo aprovisionar, usar y personalizar la plantilla de sitio de administración de contratos en Microsoft Syntex.
+ms.openlocfilehash: 55074f24b88c67e7a4701231e038e50637713347
+ms.sourcegitcommit: 87283bb02ca750286f7c069f811b788730ed5832
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/13/2022
-ms.locfileid: "68565540"
+ms.lasthandoff: 10/21/2022
+ms.locfileid: "68660739"
 ---
-# <a name="use-the-contracts-management-site-template-for-microsoft-syntex"></a>Uso de la plantilla de sitio administración de contratos para Microsoft Syntex
+# <a name="use-the-contracts-management-site-template-for-microsoft-syntex"></a>Uso de la plantilla de sitio de administración de contratos para Microsoft Syntex
 
-El sitio administración de contratos es una plantilla de sitio de SharePoint lista para implementar y personalizable que ayuda a su organización a maximizar el valor de Microsoft Syntex. El sitio está diseñado para permitirle crear un sitio profesional para administrar, procesar y realizar un seguimiento del estado de los contratos en su organización.
+El sitio de administración de contratos es una plantilla de sitio de SharePoint lista para implementar y personalizable que ayuda a su organización a maximizar el valor de Microsoft Syntex. El sitio está diseñado para permitirle crear un sitio profesional para administrar, procesar y realizar un seguimiento del estado de los contratos en su organización.
 
 ## <a name="features-of-the-site"></a>Características del sitio
 
-![Captura de pantalla de la página principal de la plantilla de sitio Administración de contratos.](../media/content-understanding/contracts-management-site-home-page.png)
+![Captura de pantalla de la página principal de la plantilla de sitio de administración de contratos.](../media/content-understanding/contracts-management-site-home-page.png)
 
 El sitio de administración de contratos incluye páginas rellenadas previamente, elementos web y navegación por el sitio. El sitio se puede personalizar para incorporar la personalización de marca, la información de los empleados, la información de directivas y planeamiento de su organización, el flujo de trabajo, los contactos y los recursos.
 
@@ -48,24 +48,24 @@ Hay una vista independiente en la biblioteca en la que puede realizar un seguimi
 
 ## <a name="provision-the-site"></a>Aprovisionamiento del sitio
 
-El sitio administración de contratos se puede aprovisionar desde el [servicio de libro de apariencias de SharePoint](https://lookbook.microsoft.com/).
+El sitio de administración de contratos se puede aprovisionar desde el [servicio de libro de apariencias de SharePoint](https://lookbook.microsoft.com/).
 
-![Captura de pantalla de la página de aprovisionamiento de plantillas de sitio de Administración de contratos.](../media/content-understanding/contracts-management-site-provisioning-page.png)
+![Captura de pantalla de la página de aprovisionamiento de plantillas de sitio de administración de contratos.](../media/content-understanding/contracts-management-site-provisioning-page.png)
 
 > [!NOTE]
-> Debe ser administrador global o administrador de SharePoint en Microsoft 365 para aprovisionar el sitio. También debe tener una licencia de Syntex para agregar esta plantilla de sitio a su organización.
+> Debe ser administrador global o administrador de SharePoint en Microsoft 365 para aprovisionar el sitio. También debe tener una [licencia de Microsoft Syntex](syntex-licensing.md) para agregar esta plantilla de sitio a su organización.
 
 1. En la página principal del [libro de apariencias de SharePoint](https://lookbook.microsoft.com/), en **el menú Ver los diseños**, seleccione **Administración de contratos de Syntex** >  Syntex.
 
 2. En la página **Administración de contratos** , seleccione **Agregar al inquilino**.
 
-    ![Captura de pantalla del botón Agregar al inquilino en la página de aprovisionamiento de plantillas de sitio administración de contratos.](../media/content-understanding/contracts-management-site-add-to-your-tenant.png)
+    ![Captura de pantalla del botón Agregar al inquilino en la página de aprovisionamiento de plantillas de sitio de administración de contratos.](../media/content-understanding/contracts-management-site-add-to-your-tenant.png)
 
 3. Escriba su dirección de correo electrónico (para una notificación de cuándo está listo para usar el sitio), la dirección URL del sitio que desea usar y el título que desea usar para su sitio. 
 
-    ![Captura de pantalla de los campos de dirección URL de sitio y correo electrónico en la página de aprovisionamiento de plantillas de sitio de Administración de contratos.](../media/content-understanding/contracts-management-email-and-site-url.png)
+    ![Captura de pantalla de los campos de dirección URL de sitio y correo electrónico en la página de aprovisionamiento de plantillas de sitio de administración de contratos.](../media/content-understanding/contracts-management-email-and-site-url.png)
 
-4. Seleccione **Aprovisionar** y, en poco tiempo, el sitio estará listo para el uso. Recibirá un correo electrónico (enviado a la dirección de correo electrónico que proporcionó) que indica que se ha completado la solicitud para aprovisionar la plantilla de sitio administración de contratos.
+4. Seleccione **Aprovisionar** y, en poco tiempo, el sitio estará listo para el uso. Recibirá un correo electrónico (enviado a la dirección de correo electrónico que proporcionó) que indica que se ha completado la solicitud para aprovisionar la plantilla de sitio de administración de contratos.
 
 5. Seleccione **Abrir sitio** y verá el sitio de administración de contratos. Desde aquí, puede explorar el sitio y personalizar las páginas y el contenido. 
 
@@ -79,7 +79,7 @@ Antes de compartir el sitio de administración de contratos con otros usuarios, 
 
 Personalice los siguientes elementos de su sitio para que se adapten a las necesidades de su organización:
 
-- Actualice la [personalización de marca](https://support.microsoft.com/office/customize-your-sharepoint-site-320b43e5-b047-4fda-8381-f61e8ac7f59b) en el sitio administración de contratos para que se alinee con su organización.
+- Actualice la [personalización de marca](https://support.microsoft.com/office/customize-your-sharepoint-site-320b43e5-b047-4fda-8381-f61e8ac7f59b) en el sitio de administración de contratos para que se alinee con su organización.
 - Personalice el [Elemento web del Elemento principal](https://support.microsoft.com/office/use-the-hero-web-part-d57f449b-19a0-4b0d-8ce3-be5866430645) para que incluya imágenes de sitios reales de su organización, siempre que sea posible.
 - Personalice el [elemento web Personas](https://support.microsoft.com/office/show-people-profiles-on-your-page-with-the-people-web-part-7e52c5f6-2d72-48fa-a9d3-d2750765fa05) para incluir información de contacto para los administradores del contrato u otros.
 - Personalice el [elemento web Texto](https://support.microsoft.com/office/add-text-and-tables-to-your-page-with-the-text-web-part-729c0aa1-bc0d-41e3-9cde-c60533f2c801) para agregar párrafos y dar formato a opciones como estilos, viñetas, sangrías, resaltado y vínculos.
@@ -101,7 +101,7 @@ Tiene el control de la navegación del sitio para el sitio de administración de
 
 ### <a name="add-other-workflows"></a>Adición de otros flujos de trabajo
 
-El sitio administración de contratos contiene los componentes que necesita para empezar, pero también puede incluir componentes adicionales, como:
+El sitio de administración de contratos contiene los componentes que necesita para empezar, pero también puede incluir componentes adicionales, como:
 
 - Use un [flujo de Power Automate](/power-automate/getting-started) para desencadenar un flujo de trabajo cuando se agregue un nuevo contrato a la biblioteca **de solicitudes de contrato** .
 - Cree [modelos syntex](/microsoft-365/contentunderstanding/#models) adicionales.
@@ -110,9 +110,9 @@ El sitio administración de contratos contiene los componentes que necesita para
 
 ## <a name="share-the-site-with-others"></a>Compartir el sitio con otros usuarios
 
-[Comparta su sitio con otros usuarios](https://support.microsoft.com/office/share-a-site-958771a8-d041-4eb8-b51c-afea2eae3658). Asóciate con otros usuarios de tu organización para asegurarte de que el sitio de Administración de contratos es ampliamente conocido y adoptado.
+[Comparta su sitio con otros usuarios](https://support.microsoft.com/office/share-a-site-958771a8-d041-4eb8-b51c-afea2eae3658). Asóciate con otros usuarios de tu organización para garantizar que el sitio de administración de contratos es ampliamente conocido y adoptado.
 
-Factores de éxito clave para administrar el sitio de administración de contratos:
+Factores clave de éxito para administrar el sitio de administración de contratos:
 
 - Celebre el lanzamiento de su sitio de administración de contratos.
 - Cree y publique noticias anunciando el nuevo recurso.
