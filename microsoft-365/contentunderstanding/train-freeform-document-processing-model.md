@@ -14,16 +14,18 @@ ms.collection:
 ms.custom: admindeeplinkSPO
 ms.localizationpriority: medium
 description: Aprenda a entrenar un modelo de procesamiento de documentos de forma libre en Microsoft Syntex.
-ms.openlocfilehash: b8e306c725680be1bf36ba8922e52c9d1978242e
-ms.sourcegitcommit: fa5a1699c8c863a1e61e427e522b3c40855a4f7a
+ms.openlocfilehash: cb0aa89f1c0f7e1a34c08d67a11ea82b45e48c29
+ms.sourcegitcommit: 87283bb02ca750286f7c069f811b788730ed5832
 ms.translationtype: MT
 ms.contentlocale: es-ES
 ms.lasthandoff: 10/21/2022
-ms.locfileid: "68667806"
+ms.locfileid: "68664441"
 ---
 # <a name="train-a-freeform-document-processing-model-in-microsoft-syntex"></a>Entrenamiento de un modelo de procesamiento de documentos de forma libre en Microsoft Syntex
 
 Siga las instrucciones de [Creación de un modelo en Syntex](create-syntex-model.md) para crear un modelo de procesamiento de documentos de forma libre en un centro de contenido. O bien, siga las instrucciones de [Creación de un modelo en un sitio de SharePoint local](create-local-model.md) para crear el modelo en un sitio local. A continuación, use este artículo para entrenar el modelo.
+
+![Diagrama del flujo de trabajo para entrenar un modelo de AI Builder.](../media/content-understanding/train-aib-model.png)
 
 Para entrenar un modelo de procesamiento de documentos de forma libre, siga estos pasos:
 

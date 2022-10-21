@@ -14,12 +14,12 @@ ms.collection:
 ms.custom: admindeeplinkSPO
 ms.localizationpriority: medium
 description: Aprenda a entrenar un modelo de procesamiento estructurado de documentos en Microsoft Syntex.
-ms.openlocfilehash: 12bc46578d6cd26b4847baeb77856ff37b7d246c
-ms.sourcegitcommit: 87283bb02ca750286f7c069f811b788730ed5832
+ms.openlocfilehash: c4bea3f71e3cfaaa79863443db21ab038826db8a
+ms.sourcegitcommit: fa5a1699c8c863a1e61e427e522b3c40855a4f7a
 ms.translationtype: MT
 ms.contentlocale: es-ES
 ms.lasthandoff: 10/21/2022
-ms.locfileid: "68660354"
+ms.locfileid: "68667828"
 ---
 # <a name="train-a-structured-document-processing-model-in-microsoft-syntex"></a>Entrenamiento de un modelo de procesamiento estructurado de documentos en Microsoft Syntex
 
@@ -35,8 +35,6 @@ Using [AI Builder](/ai-builder/overview)—a feature in Microsoft Power Apps—S
 --->
 
 Siga las instrucciones de [Creación de un modelo en Syntex](create-syntex-model.md) para crear un modelo de procesamiento estructurado de documentos en un centro de contenido. O bien, siga las instrucciones de [Creación de un modelo en un sitio de SharePoint local](create-local-model.md) para crear el modelo en un sitio local. A continuación, use este artículo para entrenar el modelo.
-
-![Diagrama del flujo de trabajo para entrenar un modelo de AI Builder.](../media/content-understanding/train-aib-model.png)
 
 Para entrenar un modelo de procesamiento estructurado de documentos, siga estos pasos:
 
@@ -84,7 +82,7 @@ Debe etiquetar los documentos para enseñar al modelo a comprender los campos y 
 --->
 3. Cargue los archivos a la biblioteca de documentos. Los archivos que el modelo identifica como su tipo de contenido muestran los archivos en la vista y muestra en las columnas los datos extraídos.
 
-    ![Captura de pantalla que muestra los datos extraídos.](../media/content-understanding/doc-lib-done.png) 
+    ![Listo.](../media/content-understanding/doc-lib-done.png) 
 
 > [!NOTE]
 > Si un modelo de procesamiento de documentos estructurado o de forma libre y un modelo de procesamiento de documentos no estructurados se aplican a la misma biblioteca, el archivo se clasifica mediante el modelo de procesamiento de documentos no estructurado y los extractores entrenados para ese modelo. Si hay columnas vacías que coincidan con el modelo de procesamiento de documentos, las columnas se rellenarán con esos valores extraídos.
