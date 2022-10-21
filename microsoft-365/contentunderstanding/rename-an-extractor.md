@@ -6,21 +6,23 @@ manager: pamgreen
 audience: admin
 ms.reviewer: ssquires
 ms.topic: article
-ms.service: microsoft-365-enterprise
+ms.service: microsoft-syntex
 search.appverid: ''
 ms.collection:
 - enabler-strategic
 - m365initiative-syntex
 ms.localizationpriority: medium
 description: Obtenga información sobre cómo y por qué cambiar el nombre de un extractor en Microsoft Syntex.
-ms.openlocfilehash: 8900eb68a5efab4d69911d193c35e82e6d58cbf6
-ms.sourcegitcommit: 04e517c7e00323b5c33d8ea937115725cf2cfd4d
+ms.openlocfilehash: 15da5f905a622173758b4d8f1ac2b4c2de219014
+ms.sourcegitcommit: 87283bb02ca750286f7c069f811b788730ed5832
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/13/2022
-ms.locfileid: "68565650"
+ms.lasthandoff: 10/21/2022
+ms.locfileid: "68661267"
 ---
 # <a name="rename-an-extractor-in-microsoft-syntex"></a>Cambiar el nombre de un extractor en Microsoft Syntex
+
+<sup>**Se aplica a:**  &ensp; &#10003; procesamiento de documentos no estructurados</sup>
 
 En algún momento, puede que tenga que cambiar el nombre de un extractor para referirse a un campo de datos extraído por un nombre diferente. Por ejemplo, su organización decide realizar cambios en sus documentos de contrato y se refiere a los "consumidores" como "clientes" en sus documentos. Si estaba extrayendo un campo "Consumidor" en su modelo, puede cambiarle el nombre a "Cliente".
 
@@ -52,16 +54,7 @@ Siga estos pasos para cambiar el nombre de un extractor de entidades.
 5. Seleccione **Cambiar nombre**.
 
 ## <a name="see-also"></a>Vea también
+
 [Crear un extractor](create-an-extractor.md)
 
-[Crear un clasificador](create-a-classifier.md)
 
-[Cambiar el nombre de un modelo](rename-a-model.md)
-
-[Tipos de explicación](explanation-types-overview.md)
-
-[Aprovechar la taxonomía del almacén de términos al crear un extractor](leverage-term-store-taxonomy.md)
-
-[Información general sobre la comprensión mediante documentos](document-understanding-overview.md)
-
-[Aplicar un modelo](apply-a-model.md) 

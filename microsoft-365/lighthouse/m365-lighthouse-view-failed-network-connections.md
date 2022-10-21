@@ -4,7 +4,7 @@ f1.keywords: NOCSH
 ms.author: sharik
 author: SKjerland
 manager: scotv
-ms-reviewer: katmartin
+ms.reviewer: katmartin
 audience: Admin
 ms.topic: article
 ms.service: microsoft-365-lighthouse
@@ -18,12 +18,12 @@ ms.custom:
 - M365-Lighthouse
 search.appverid: MET150
 description: En el caso de los proveedores de servicios administrados (MSP) que usan Microsoft 365 Lighthouse, obtenga información sobre cómo ver una conexión de red con errores en un equipo en la nube empresarial.
-ms.openlocfilehash: 594727cf50ea8eb5424d939eaf8401221568ad33
-ms.sourcegitcommit: 0b7070ec119e00e0dafe030bbfbef0ae5c9afa19
+ms.openlocfilehash: 9d4fc475408c1567298e2f91f260ca99157c6e13
+ms.sourcegitcommit: 87283bb02ca750286f7c069f811b788730ed5832
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/29/2022
-ms.locfileid: "68167437"
+ms.lasthandoff: 10/21/2022
+ms.locfileid: "68662541"
 ---
 # <a name="view-an-enterprise-cloud-pc-failed-network-connection-in-microsoft-365-lighthouse"></a>Visualización de una conexión de red con errores en un equipo en la nube empresarial en Microsoft 365 Lighthouse
 

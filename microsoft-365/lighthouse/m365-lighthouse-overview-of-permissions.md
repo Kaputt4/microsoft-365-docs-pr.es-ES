@@ -4,7 +4,7 @@ f1.keywords: CSH
 ms.author: sharik
 author: SKjerland
 manager: scotv
-ms-reviewer: magarlan, chrigreen
+ms.reviewer: magarlan, chrigreen
 audience: Admin
 ms.topic: article
 ms.service: microsoft-365-lighthouse
@@ -18,12 +18,12 @@ ms.custom:
 - M365-Lighthouse
 search.appverid: MET150
 description: Para los proveedores de servicios administrados (MSP) que usan Microsoft 365 Lighthouse, obtenga más información sobre los requisitos de permisos de Lighthouse.
-ms.openlocfilehash: 9626712c9363e6079cbc5a367e1f7fe79ea7e36f
-ms.sourcegitcommit: 0b7070ec119e00e0dafe030bbfbef0ae5c9afa19
+ms.openlocfilehash: 0762529ed64ad83c7a38a2ba90037e90f4cdac39
+ms.sourcegitcommit: 87283bb02ca750286f7c069f811b788730ed5832
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/29/2022
-ms.locfileid: "68193199"
+ms.lasthandoff: 10/21/2022
+ms.locfileid: "68659507"
 ---
 # <a name="overview-of-permissions-in-microsoft-365-lighthouse"></a>Introducción a los permisos en Microsoft 365 Lighthouse
 

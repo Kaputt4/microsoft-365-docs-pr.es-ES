@@ -22,12 +22,12 @@ search.appverid:
 - MET150
 description: Obtenga información sobre cómo administrar quién recibe mensajes de correo electrónico de notificación de facturación y datos adjuntos de factura.
 ms.date: 03/17/2021
-ms.openlocfilehash: 3affe1bea7f9ceebd777a9d54e4a7f7973fae6e9
-ms.sourcegitcommit: 176bbd29c92e1c0812e8bcd1e1e4938a3e1d7331
+ms.openlocfilehash: 81b4541af6683260a4b4b9340977d9695b15df21
+ms.sourcegitcommit: 87283bb02ca750286f7c069f811b788730ed5832
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/05/2022
-ms.locfileid: "68472725"
+ms.lasthandoff: 10/21/2022
+ms.locfileid: "68659705"
 ---
 # <a name="manage-billing-notifications-and-invoice-attachments"></a>Administrar las notificaciones de facturación y los datos adjuntos en las facturas
 
@@ -70,7 +70,7 @@ Las notificaciones de facturación de la organización se envían a la direcció
 Para cambiar las direcciones de correo electrónico principal y alternativa de otros administradores de la organización, siga estos pasos.
 
 > [!NOTE]
-> Los administradores de facturación pueden cambiar sus propias direcciones de correo electrónico principales y alternativas, pero no las de otros administradores.
+> Los administradores de facturación solo pueden cambiar su propia dirección de correo electrónico alternativa. No pueden cambiar las direcciones de correo electrónico de otros administradores.
 
 1. En el Centro de administración, vaya a la página **Facturación** > <a href="https://go.microsoft.com/fwlink/p/?linkid=853212" target="_blank">Notificaciones de facturación</a>.
 2. En la sección **Administradores que reciben notificaciones de facturación**, seleccione un nombre.

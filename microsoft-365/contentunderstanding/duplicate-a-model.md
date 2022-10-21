@@ -6,23 +6,25 @@ manager: pamgreen
 audience: admin
 ms.reviewer: ssquires
 ms.topic: article
-ms.service: microsoft-365-enterprise
+ms.service: microsoft-syntex
 search.appverid: ''
 ms.collection:
 - enabler-strategic
 - m365initiative-syntex
 ms.localizationpriority: medium
-description: Obtenga información sobre cómo y por qué duplicar un modelo de comprensión de documentos en Microsoft Syntex.
-ms.openlocfilehash: 4cacd968082bb875e9b9bfdfd1df13d87dba3cb6
-ms.sourcegitcommit: ca082da1c51a3f643f152492579eef5679d52bd0
+description: Obtenga información sobre cómo y por qué duplicar un modelo en Microsoft Syntex.
+ms.openlocfilehash: 88860487d14a7a4bab3742f610854623cc8f681d
+ms.sourcegitcommit: 87283bb02ca750286f7c069f811b788730ed5832
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/12/2022
-ms.locfileid: "68547870"
+ms.lasthandoff: 10/21/2022
+ms.locfileid: "68660783"
 ---
 # <a name="duplicate-a-model-in-microsoft-syntex"></a>Duplicar un modelo en Microsoft Syntex
 
-Duplicar un modelo de compresión mediante documentos puede ahorrarle tiempo y esfuerzo si necesita crear un modelo nuevo y saber si un modelo existente es muy similar a lo que necesita.
+<sup>**Se aplica a:**  &ensp; &#10003; procesamiento de documentos no estructurados</sup>
+
+Duplicar un modelo de procesamiento de documentos no estructurado puede ahorrarle tiempo y esfuerzo si necesita crear un nuevo modelo y saber que un modelo existente es muy similar a lo que necesita.
 
 Por ejemplo, un modelo existente denominado "Contratos" clasifica los mismos archivos con los que tiene que trabajar. El nuevo modelo extraerá algunos de los datos existentes, pero necesitará ser actualizado para poder extraer datos adicionales. En lugar de crear y entrenar un modelo desde cero, puede usar la característica de modelo duplicado para hacer una copia del modelo Contratos, que también copiará todos los elementos de aprendizaje asociados, como los archivos de ejemplo y los extractores de entidades.
 
@@ -30,7 +32,7 @@ Cuando duplique el modelo, después de cambiarle el nombre (por ejemplo, a "Reno
 
 ## <a name="duplicate-a-model"></a>Duplicar un modelo
 
-Siga estos pasos para duplicar un modelo de comprensión mediante documentos.
+Siga estos pasos para duplicar un modelo de procesamiento de documentos no estructurado.
 
 1. Desde el centro de contenido, seleccione **Modelos** para ver la lista de modelos.
 
@@ -54,16 +56,6 @@ Siga estos pasos para duplicar un modelo de comprensión mediante documentos.
 
 ## <a name="see-also"></a>Vea también
 
-[Crear un clasificador](create-a-classifier.md)
-
 [Cambiar el nombre de un modelo](rename-a-model.md)
-
-[Crear un extractor](create-an-extractor.md)
-
-[Información general sobre la comprensión de los documentos](document-understanding-overview.md)
-
-[Tipos de explicación](explanation-types-overview.md)
-
-[Aplicar un modelo](apply-a-model.md) 
 
 [Modo de accesibilidad de Syntex](accessibility-mode.md)

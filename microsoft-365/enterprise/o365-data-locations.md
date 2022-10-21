@@ -19,12 +19,12 @@ ms.custom:
 - admindeeplinkMAC
 ms.assetid: 706d5449-45e5-4b0c-a012-ab60501899ad
 description: Determinar dónde se almacenan los datos del cliente de Microsoft 365 en todo el mundo
-ms.openlocfilehash: b16e3dd298b5106446d882b1d950b8aacd68d708
-ms.sourcegitcommit: 99b174a8d431092b3cf7d650593248671297fd91
+ms.openlocfilehash: 0b1a21871fefb075a4939f134f26f1baa5b42a1d
+ms.sourcegitcommit: 87283bb02ca750286f7c069f811b788730ed5832
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/30/2022
-ms.locfileid: "68298087"
+ms.lasthandoff: 10/21/2022
+ms.locfileid: "68661157"
 ---
 # <a name="where-your-microsoft-365-customer-data-is-stored"></a>¿Dónde se almacenan los datos de los clientes de Microsoft 365?
 
@@ -6752,6 +6752,7 @@ Los nuevos espacios empresariales de Microsoft 365 se asocian de forma predeterm
 | Ideas Microsoft Viva: solo administrador/líder de datos de AAD de la organización | Estados Unidos |
 | Ideas Microsoft Viva: solo administrador/líder con datos de recursos humanos de terceros | Estados Unidos |
 | Ideas Microsoft Viva: Avanzado | Estados Unidos |
+| Objetivos Viva | Estados Unidos |
 </p></details>
 
 ## <a name="uruguay"></a>Uruguay

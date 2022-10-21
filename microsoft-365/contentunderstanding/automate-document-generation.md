@@ -6,19 +6,19 @@ manager: pamgreen
 audience: admin
 ms.reviewer: anrasto, shrganguly
 ms.topic: article
-ms.service: microsoft-365-enterprise
+ms.service: microsoft-syntex
 search.appverid: ''
 ms.collection:
 - enabler-strategic
 - m365initiative-syntex
 ms.localizationpriority: medium
 description: Obtenga información sobre cómo crear automáticamente documentos y otro contenido mediante Microsoft Syntex y Power Automate.
-ms.openlocfilehash: 616a88bf7a6de912e731fb96bc4af2f856089de0
-ms.sourcegitcommit: ca082da1c51a3f643f152492579eef5679d52bd0
+ms.openlocfilehash: 4d09d31cba0c21aa65bbf09eecc75a375b10bce6
+ms.sourcegitcommit: 87283bb02ca750286f7c069f811b788730ed5832
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/12/2022
-ms.locfileid: "68547826"
+ms.lasthandoff: 10/21/2022
+ms.locfileid: "68660563"
 ---
 # <a name="automate-document-generation-with-microsoft-syntex-and-power-automate-preview"></a>Automatización de la generación de documentos con Microsoft Syntex y Power Automate (versión preliminar)
 
@@ -78,4 +78,4 @@ Siga estos pasos para generar automáticamente documentos mediante una plantilla
 
 ## <a name="see-also"></a>Vea también
 
- [Creación de documentos mediante el ensamblado de contenido en Microsoft Syntex](content-assembly.md)
+ [Introducción al ensamblado de contenido en Microsoft Syntex](content-assembly.md)

@@ -6,32 +6,37 @@ manager: pamgreen
 ms.reviewer: ssquires
 audience: admin
 ms.topic: article
-ms.service: microsoft-365-enterprise
+ms.service: microsoft-syntex
 search.appverid: ''
 ms.collection:
 - enabler-strategic
 - m365initiative-syntex
 ms.localizationpriority: medium
 description: Obtenga información sobre cómo aplicar una etiqueta de confidencialidad a un modelo de Microsoft Syntex.
-ms.openlocfilehash: 88e0198ce5f57b906d3ce00258d53c4d2073d33c
-ms.sourcegitcommit: ca082da1c51a3f643f152492579eef5679d52bd0
+ms.openlocfilehash: b38cbdd23270a16a7f912fe78dff920c670cfe95
+ms.sourcegitcommit: 87283bb02ca750286f7c069f811b788730ed5832
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/12/2022
-ms.locfileid: "68547541"
+ms.lasthandoff: 10/21/2022
+ms.locfileid: "68660893"
 ---
 # <a name="apply-a-sensitivity-label-to-a-model-in-microsoft-syntex"></a>Aplicar una etiqueta de confidencialidad a un modelo en Microsoft Syntex
 
-Puede aplicar fácilmente una [etiqueta de confidencialidad](../compliance/sensitivity-labels.md) a los modelos de comprensión de documentos en Microsoft Syntex. Esta característica no está disponible todavía para los modelos de procesamiento de formularios.
+<sup>**Se aplica a:**  &ensp; &#10003; procesamiento de documentos no estructurados</sup>
+
+Puede aplicar fácilmente una [etiqueta de confidencialidad](../compliance/sensitivity-labels.md) a los modelos de procesamiento de documentos no estructurados en Microsoft Syntex. 
+
+> [!Note]
+> Las etiquetas de confidencialidad aún no están disponibles para los modelos precompilados o para los modelos de procesamiento de documentos estructurados o de forma libre.
 
 Las etiquetas de confidencialidad permiten aplicar cifrado a los documentos que identifican los modelos. Por ejemplo, quiere que el modelo no solo identifique los documentos financieros que contengan números de cuenta bancaria o números de tarjeta de crédito cargados en la biblioteca de documentos, sino también que aplique una etiqueta de confidencialidad configurada con la configuración de cifrado para restringir quién puede acceder a ese contenido y cómo se puede usar. Los modelos de Syntex respetan las reglas de [pedido de etiquetas](../compliance/apply-sensitivity-label-automatically.md#how-multiple-conditions-are-evaluated-when-they-apply-to-more-than-one-label) y tampoco sobrescriben una etiqueta existente que un usuario aplicó manualmente al archivo. 
 
 Puede aplicar una etiqueta de confidencialidad preexistente al modelo en la página principal del modelo. Para que esté disponible en la selección desde la configuración del modelo, la etiqueta ya debe haberse publicado. Las etiquetas se aplican a los archivos de Office para Word (.docx), PowerPoint (.pptx) y Excel (.xlsx). 
 
 > [!Important]
-> Para que las etiquetas de confidencialidad estén disponibles para aplicarlas a los modelos de comprensión de documentos, deben [crearse y publicarse en el portal de cumplimiento Microsoft Purview](../admin/security-and-compliance/set-up-compliance.md).
+> Para que las etiquetas de confidencialidad estén disponibles para aplicarlas a los modelos, deben [crearse y publicarse en el portal de cumplimiento Microsoft Purview](../admin/security-and-compliance/set-up-compliance.md).
 
-## <a name="add-a-sensitivity-label-to-a-document-understanding-model"></a>Agregar una etiqueta de confidencialidad a un modelo de comprensión mediante documentos
+## <a name="add-a-sensitivity-label-to-a-model"></a>Adición de una etiqueta de confidencialidad a un modelo
 
 1. En la página principal del modelo, seleccione **Configuración del modelo**.
 
@@ -50,7 +55,7 @@ Después de aplicar la etiqueta de confidencialidad al modelo, puede aplicarla a
  
 ### <a name="apply-the-sensitivity-label-to-a-document-library-to-which-the-model-is-already-applied"></a>Aplicar la etiqueta de confidencialidad a la biblioteca de documentos en la que ya se aplica el modelo
 
-Si ya se ha aplicado el modelo de comprensión mediante documentos a una biblioteca de documentos, puede hacer lo siguiente para sincronizar la actualización de la etiqueta de confidencialidad y aplicarla en la biblioteca de documentos:
+Si el modelo ya se ha aplicado a una biblioteca de documentos, puede hacer lo siguiente para sincronizar la actualización de la etiqueta de confidencialidad para aplicarla a la biblioteca de documentos:
 
 1. En la Página principal del modelo, sección **Bibliotecas con este modelo**, seleccione la biblioteca de documentos a la que quiera aplicar la actualización de la etiqueta de confidencialidad.
 
@@ -72,57 +77,7 @@ En la página de vista del modelo de la biblioteca de documentos, se mostrará u
 
 Por ejemplo, en todos los documentos financieros que identifique el modelo también se aplicará la etiqueta de confidencialidad *Cifrado*, lo que evitará que los usuarios no autorizados tengan acceso a ellos. Si una persona no autorizada intenta acceder al archivo desde la biblioteca de documentos, un error le informará de que no le está permitido debido a la etiqueta de confidencialidad aplicada.
 
-<!---
-## Add a sensitivity label to a form processing model
-
-> [!Important]
-> For sensitivity labels to be available to apply to your form processing model, they need to be [created and published in the Microsoft Purview compliance portal](../admin/security-and-compliance/set-up-compliance.md).
-
-You can either apply a sensitivity label to a form processing model when you are creating a model, or apply it to an existing model.
-
-### Add a sensitivity label when you create a form processing model
-
-1. When you [create a new form processing model](create-a-form-processing-model.md), select **Advanced settings**.
-
-2. In **Advanced settings**, in the **Sensitivity label** section, select the menu and then select the sensitivity label you want to apply to the model.
-
-3.  After you've completed your remaining model settings, select **Create** to build your model.
-
-### Add a sensitivity label to an existing form processing model
-
-You can add a sensitivity label to an existing form processing model in different ways:
-
-- Through the **Automate** menu in the document library
-- Through the **Active model** settings in the document library 
-
-#### Add a sensitivity label to an existing form processing model through the Automate menu
-
-You can add a sensitivity label to an existing form processing model that you own through the **Automate** menu in the document library in which the model is applied.
-
-1. In your document library to which the form processing model is applied, select the **Automate** menu, select **AI Builder**, and then select **View form processing model details**.
-
-2. On the **Model details** pane, in the **Sensitivity label** section, select the sensitivity label you want to apply. Then select **Save**.
-
-#### Add a sensitivity label to an existing form processing model in the active model settings
-
-You can add a sensitivity label to an existing form processing model that you own through the **Active model** settings in the document library in which the model is applied.
-
-1. In the SharePoint document library in which the model is applied, select the **View active models** icon, and then select **View active models**.
-
-2. In **Active models**, select the form processing model to which you want to apply the sensitivity label.
-
-3. On the **Model details** pane, in the **Sensitivity label** section, select the sensitivity label you want to apply. Then select **Save**.
-
-   > [!NOTE]
-   > You must be the model owner for the **Model settings** pane to be editable. 
---->
-
 ## <a name="see-also"></a>Ver también
 
 [Aplicar una etiqueta de retención](apply-a-retention-label-to-a-model.md)
 
-[Crear un clasificador](create-a-classifier.md)
-
-[Crear un extractor](create-an-extractor.md)
-
-[Información general de la comprensión mediante documentos ](document-understanding-overview.md)

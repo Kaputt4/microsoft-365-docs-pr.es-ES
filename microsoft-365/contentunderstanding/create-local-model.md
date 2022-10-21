@@ -6,23 +6,28 @@ manager: pamgreen
 ms.reviewer: ssquires
 audience: admin
 ms.topic: article
-ms.service: microsoft-365-enterprise
+ms.service: microsoft-syntex
 search.appverid: ''
 ms.collection:
 - enabler-strategic
 - m365initiative-syntex
 ms.localizationpriority: medium
 description: Obtenga información sobre cómo crear un modelo local en un sitio local de SharePoint con Microsoft Syntex.
-ms.openlocfilehash: 812fc68559223f2bf801fe7d1f8d2ef5b7d03e23
-ms.sourcegitcommit: ca082da1c51a3f643f152492579eef5679d52bd0
+ms.openlocfilehash: dcd514b0d6656f7a4ce4d181aca348016e7ada53
+ms.sourcegitcommit: 87283bb02ca750286f7c069f811b788730ed5832
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/12/2022
-ms.locfileid: "68547563"
+ms.lasthandoff: 10/21/2022
+ms.locfileid: "68660256"
 ---
 # <a name="create-a-model-on-a-local-sharepoint-site-with-microsoft-syntex"></a>Creación de un modelo en un sitio local de SharePoint con Microsoft Syntex
 
-Microsoft Syntex ahora proporciona una opción para crear y entrenar modelos localmente en su propio sitio de SharePoint. Estos modelos solo se pueden usar en el sitio donde se crean. 
+<sup>**Se aplica a:**  &ensp; &#10003; Todos los modelos personalizados &ensp; | &ensp; &#10003; Todos los modelos entrenados</sup>
+
+Microsoft Syntex proporciona una opción para crear y entrenar modelos localmente en su propio sitio de SharePoint. Estos modelos solo se pueden usar en el sitio donde se crean. 
+
+> [!NOTE]
+> Si desea que el modelo sea reconocible y esté disponible para otros usuarios, debe crear un *modelo empresarial*. Un modelo de empresa es un modelo que se crea y entrena en el [centro de contenido](create-a-content-center.md).  
 
 Al activar la clasificación y extracción de documentos en el sitio de SharePoint, Syntex le permite clasificar archivos en bibliotecas de documentos, extraer información de archivos nuevos y automatizar actividades basadas en información extraída.
 
@@ -33,7 +38,9 @@ Al activar la creación de modelos locales, se agregarán las siguientes listas 
 - Lista de plantillas de explicación
 - Lista de uso del modelo
 
-Esta característica solo está disponible para crear [modelos de comprensión de documentos](apply-a-model.md) y [modelos precompilados](prebuilt-models.md). 
+Un modelo se promueve automáticamente al sitio actual solo cuando el modelo se ha aplicado por primera vez a cualquier biblioteca del sitio. Esto hace que el modelo se pueda detectar en la lista de modelos de sitio disponibles y esté disponible para cualquier otra biblioteca del sitio. Hasta que el modelo se aplique a una biblioteca del sitio, no estará disponible. De forma similar, cuando se quita un modelo de todas las bibliotecas del sitio, también se quita de la lista de modelos de sitio disponibles. 
+
+Esta característica está disponible para todos los [tipos de modelo](model-types-overview.md). 
 
 ## <a name="create-a-model-on-a-local-site"></a>Creación de un modelo en un sitio local
 
@@ -58,7 +65,7 @@ Esta característica solo está disponible para crear [modelos de comprensión d
 
     ![Captura de pantalla del panel Crear un modelo.](../media/content-understanding/local-model-create-a-model.png) 
 
-6. Continúe con el [entrenamiento del modelo de comprensión de documentos](apply-a-model.md) o para [configurar el modelo precompilado](prebuilt-models.md) mediante los archivos que seleccionó.
+6. Continúe con el [entrenamiento del modelo personalizado](apply-a-model.md) o para [configurar el modelo entrenado](prebuilt-overview.md) mediante los archivos que seleccionó.
 
 7. Cuando haya terminado, se abrirá el panel **Agregar a la biblioteca** .
 
@@ -70,3 +77,5 @@ Esta característica solo está disponible para crear [modelos de comprensión d
 
     ![Captura de pantalla de la página principal del modelo que muestra la sección Dónde se aplica el modelo en el sitio.](../media/content-understanding/local-model-home-page.png) 
 
+> [!NOTE]
+> Cuando se aplica un modelo local a una sola biblioteca, está disponible para la detección de aplicaciones en otras bibliotecas del mismo sitio.

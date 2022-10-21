@@ -7,7 +7,7 @@ ms.service: microsoft-365-security
 ms.mktglfcycl: manage
 ms.sitesec: library
 ms.localizationpriority: medium
-ms.date: 10/03/2022
+ms.date: 10/20/2022
 ms.topic: conceptual
 author: denisebmsft
 ms.author: deniseb
@@ -19,12 +19,12 @@ ms.collection:
 - m365-security
 - tier2
 search.appverid: met150
-ms.openlocfilehash: 1bcbaf6d0be4ae12fddb959b82bcbd63723eafec
-ms.sourcegitcommit: 8d3c027592a638f411f87d89772dd3d39e92aab0
+ms.openlocfilehash: 2f9f9b65804d5218f2439e85af1c888b012c9a62
+ms.sourcegitcommit: 87283bb02ca750286f7c069f811b788730ed5832
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/12/2022
-ms.locfileid: "68536354"
+ms.lasthandoff: 10/21/2022
+ms.locfileid: "68661663"
 ---
 # <a name="microsoft-defender-antivirus-compatibility-with-other-security-products"></a>compatibilidad de Microsoft Defender Antivirus con otros productos de seguridad
 
@@ -90,17 +90,17 @@ En la tabla siguiente se resume el estado de Microsoft Defender Antivirus en var
 
 | Versión de Windows   | Solución antivirus/antimalware  | Incorporado a <br/> ¿Defender para punto de conexión? | Microsoft Defender estado antivirus     |
 |:------|:------|:-------|:-------|
-| Windows 10 <br/> Windows 11| Antivirus de Microsoft Defender | Sí  | Modo activo | 
+| Windows 10 <br/> Windows 11| Antivirus de Microsoft Defender | Yes  | Modo activo | 
 | Windows 10 <br/> Windows 11 | Antivirus de Microsoft Defender | No   | Modo activo |
-| Windows 10 <br/> Windows 11  | Una solución antivirus o antimalware que no es de Microsoft | Yes  | Modo pasivo (automáticamente) |
+| Windows 10 <br/> Windows 11  | Una solución antivirus o antimalware que no es de Microsoft | Sí  | Modo pasivo (automáticamente) |
 | Windows 10 <br/> Windows 11  | Una solución antivirus o antimalware que no es de Microsoft | No   | Modo deshabilitado (automáticamente)    |
 | Windows Server 2022 <br/> Windows Server 2019 <br/>Windows Server, versión 1803 o posterior  | Antivirus de Microsoft Defender  | Sí |         Modo activo  |
 | Windows Server 2022 <br/> Windows Server 2019 <br/> Windows Server, versión 1803 o posterior   | Antivirus de Microsoft Defender | No  | Modo activo |
-| Windows Server 2022 <br/> Windows Server 2019 <p> Windows Server, versión 1803 o posterior  | Una solución antivirus o antimalware que no es de Microsoft | Sí  | Microsoft Defender Antivirus debe establecerse en modo pasivo (manualmente) <sup>[[2](#fn2)]<sup>  | 
+| Windows Server 2022 <br/> Windows Server 2019 <p> Windows Server, versión 1803 o posterior  | Una solución antivirus o antimalware que no es de Microsoft | Yes  | Microsoft Defender Antivirus debe establecerse en modo pasivo (manualmente) <sup>[[2](#fn2)]<sup>  | 
 | Windows Server 2022 <br/> Windows Server 2019 <p> Windows Server, versión 1803 o posterior  | Una solución antivirus o antimalware que no es de Microsoft | No  | Microsoft Defender Antivirus debe deshabilitarse (manualmente) <sup>[[3](#fn3)]<sup></sup>  |
-| Windows Server 2016 <br/> Windows Server 2012 R2   | Antivirus de Microsoft Defender | Sí | Modo activo |
+| Windows Server 2016 <br/> Windows Server 2012 R2   | Antivirus de Microsoft Defender | Yes | Modo activo |
 |Windows Server 2016 <br/> Windows Server 2012 R2  | Antivirus de Microsoft Defender | No | Modo activo |
-| Windows Server 2016 <br/> Windows Server 2012 R2  | Una solución antivirus o antimalware que no es de Microsoft | Sí | Microsoft Defender Antivirus debe establecerse en modo pasivo (manualmente) <sup>[[2](#fn2)]<sup> |
+| Windows Server 2016 <br/> Windows Server 2012 R2  | Una solución antivirus o antimalware que no es de Microsoft | Yes | Microsoft Defender Antivirus debe establecerse en modo pasivo (manualmente) <sup>[[2](#fn2)]<sup> |
 |Windows Server 2016 <br/> Windows Server 2012 R2  | Una solución antivirus o antimalware que no es de Microsoft | No | Microsoft Defender Antivirus debe deshabilitarse (manualmente) <sup>[[3](#fn3)]<sup> |
 
 (<a id="fn2">2</a>) En Windows Server 2019, Windows Server, versión 1803 o posterior, Windows Server 2016 o Windows Server 2012 R2, Microsoft Defender Antivirus no entra en modo pasivo automáticamente al instalar un producto antivirus que no es de Microsoft. En esos casos, establezca Microsoft Defender Antivirus en modo pasivo para evitar problemas causados por tener varios productos antivirus instalados en un servidor. Puede establecer Microsoft Defender Antivirus en modo pasivo mediante una clave del Registro como se indica a continuación:
@@ -127,13 +127,13 @@ Por ejemplo, la [detección y respuesta de puntos de conexión (EDR) en modo de 
 
 Para que Microsoft Defender Antivirus se ejecute en modo pasivo, los puntos de conexión deben cumplir los siguientes requisitos:
 
-- Sistema operativo: Windows 10 o posterior; Windows Server 2022, Windows Server 2019 o Windows Server, versión 1803 o posterior
-- Microsoft Defender Antivirus debe estar instalado
-- Otro producto antivirus o antimalware que no sea de Microsoft debe instalarse y usarse como la solución antivirus principal.
-- Los puntos de conexión deben incorporarse a Defender para punto de conexión
+- Sistema operativo: Windows 10 o posterior; Windows Server 2022, Windows Server 2019 o Windows Server, versión 1803 o posterior <br/>(Windows Server 2012 R2 y Windows Server 2016 si se incorporan mediante la [solución moderna y unificada](/microsoft-365/security/defender-endpoint/configure-server-endpoints)). 
+- Microsoft Defender Antivirus debe estar instalado. 
+- Otro producto antivirus o antimalware que no sea de Microsoft debe instalarse y usarse como solución antivirus principal. 
+- Los puntos de conexión deben incorporarse a Defender para punto de conexión. 
 
 > [!IMPORTANT]
-> - Microsoft Defender Antivirus solo está disponible en dispositivos que ejecutan Windows 10 y 11, Windows Server 2022, Windows Server 2019, Windows Server, versión 1803 o posterior, Windows Server 2016 y Windows Server 2012 R2.
+> - Microsoft Defender Antivirus solo está disponible en dispositivos que ejecutan Windows 10 y 11, Windows Server 2022, Windows Server 2016, Windows Server 2019, Windows Server, versión 1803 o posterior, Windows Server 2016 y Windows Server 2012 R2.
 > - El modo pasivo solo se admite en Windows Server 2012 R2 & 2016 cuando el dispositivo se incorpora mediante la [solución moderna y unificada](/microsoft-365/security/defender-endpoint/configure-server-endpoints). 
 > - En Windows 8.1, la protección antivirus de punto de conexión de nivel empresarial se ofrece como [System Center Endpoint Protection](/previous-versions/system-center/system-center-2012-R2/hh508760(v=technet.10)), que se administra a través de Microsoft Endpoint Configuration Manager.
 > - Windows Defender también se ofrece para [dispositivos de consumidor en Windows 8.1](/previous-versions/windows/it-pro/windows-8.1-and-8/dn344918(v=ws.11)#BKMK_WindowsDefender), aunque Windows Defender no proporciona administración de nivel empresarial.
@@ -148,17 +148,17 @@ Defender para punto de conexión afecta a si Microsoft Defender Antivirus puede 
 
 | Protección | Antivirus de Microsoft Defender <br/>(*Modo activo*) | Antivirus de Microsoft Defender <br/>(*modo pasivo*) | Antivirus de Microsoft Defender <br/>(*Deshabilitado o desinstalado*) | [EDR en modo bloqueo](edr-in-block-mode.md) | 
 |:---|:---|:---|:---|:---| 
-| [Protección en tiempo real](configure-real-time-protection-microsoft-defender-antivirus.md) | Sí | Vea la nota <sup>[[4](#fn4)]</sup> | No | No | 
-| [Protección entregada en la nube](enable-cloud-protection-microsoft-defender-antivirus.md) | Sí | No  | No | No | 
-| [Protección de red](network-protection.md)  | Sí | No | No | No | 
-| [Reglas de la reducción de la superficie expuesta a ataques](attack-surface-reduction.md)  | Sí | No | No  | No | 
+| [Protección en tiempo real](configure-real-time-protection-microsoft-defender-antivirus.md) | Yes | Vea la nota <sup>[[4](#fn4)]</sup> | No | No | 
+| [Protección entregada en la nube](enable-cloud-protection-microsoft-defender-antivirus.md) | Yes | No  | No | No | 
+| [Protección de red](network-protection.md)  | Yes | No | No | No | 
+| [Reglas de la reducción de la superficie expuesta a ataques](attack-surface-reduction.md)  | Yes | No | No  | No | 
 | [Disponibilidad limitada del examen periódico](limited-periodic-scanning-microsoft-defender-antivirus.md) | No | No | Sí | No | 
-| [Información de detección y detección de archivos](review-scan-results-microsoft-defender-antivirus.md) | Sí | Sí <sup>[[5](#fn5)]</sup> | No | Sí | 
+| [Información de detección y detección de archivos](review-scan-results-microsoft-defender-antivirus.md) | Yes | Sí <sup>[[5](#fn5)]</sup> | No | Sí | 
 | [Corrección de amenazas](configure-remediation-microsoft-defender-antivirus.md) | Yes | Vea la nota <sup>[[6](#fn6)]</sup> | No | Sí | 
-| [Actualizaciones de inteligencia de seguridad](manage-updates-baselines-microsoft-defender-antivirus.md) | Sí | Sí <sup>[[7](#fn7)]</sup> | No | Sí <sup>[[7](#fn7)]</sup> | 
+| [Actualizaciones de inteligencia de seguridad](manage-updates-baselines-microsoft-defender-antivirus.md) | Yes | Sí <sup>[[7](#fn7)]</sup> | No | Sí <sup>[[7](#fn7)]</sup> | 
 | [Prevención de pérdida de datos](../../compliance/endpoint-dlp-learn-about.md) | Sí | Sí | No | No |
 | [Acceso controlado a carpetas](controlled-folders.md) | Yes |No | No | No |
-| [Filtrado de contenido web](web-content-filtering.md) | Sí | Vea la nota <sup>[[8](#fn8)]</sup> | No | No |
+| [Filtrado de contenido web](web-content-filtering.md) | Yes | Vea la nota <sup>[[8](#fn8)]</sup> | No | No |
 | [Control de dispositivos](device-control-report.md) | Sí | Sí | No | No |
 | [Protección PUA](detect-block-potentially-unwanted-apps-microsoft-defender-antivirus.md) | Yes | No | No | No |
 

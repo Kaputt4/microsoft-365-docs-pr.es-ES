@@ -6,34 +6,36 @@ manager: pamgreen
 audience: admin
 ms.reviewer: ssquires
 ms.topic: article
-ms.service: microsoft-365-enterprise
+ms.service: microsoft-syntex
 search.appverid: ''
 ms.collection:
 - enabler-strategic
 - m365initiative-syntex
 ms.localizationpriority: medium
-description: Obtenga información sobre cómo y por qué cambiar el nombre de un modelo de comprensión de documentos en Microsoft Syntex.
-ms.openlocfilehash: 3629475a9579886f20c12031fa402fda68c0636e
-ms.sourcegitcommit: 04e517c7e00323b5c33d8ea937115725cf2cfd4d
+description: Obtenga información sobre cómo y por qué cambiar el nombre de un modelo en Microsoft Syntex.
+ms.openlocfilehash: dbb718984594b7831cc4246f287f7b93ffb50388
+ms.sourcegitcommit: 87283bb02ca750286f7c069f811b788730ed5832
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/13/2022
-ms.locfileid: "68564288"
+ms.lasthandoff: 10/21/2022
+ms.locfileid: "68661377"
 ---
 # <a name="rename-a-model-in-microsoft-syntex"></a>Cambiar el nombre de un modelo en Microsoft Syntex
 
-En algún momento, puede que quiera cambiar el nombre de un modelo de comprensión mediante documentos. Un ejemplo común es cuando crea un borrador inicial de un modelo, para el que posiblemente no haya pensado demasiado en el nombre final (por ejemplo, es posible que lo llamara "AlexInerbaModel1"). A medida que está más cerca de finalizar el modelo y ponerlo en uso, se da cuenta de que un nombre más apropiado sería "Renovaciones de contrato" y decide cambiarle el nombre.  
+<sup>**Se aplica a:**  &ensp; &#10003; Todos los modelos &ensp; | &ensp; personalizados &#10003; Todos los modelos precompilados</sup>
+
+En algún momento, es posible que quiera cambiar el nombre de un modelo. Un ejemplo común es cuando crea un borrador inicial de un modelo, para el que posiblemente no haya pensado demasiado en el nombre final (por ejemplo, es posible que lo llamara "AlexInerbaModel1"). A medida que está más cerca de finalizar el modelo y ponerlo en uso, se da cuenta de que un nombre más apropiado sería "Renovaciones de contrato" y decide cambiarle el nombre.  
 
 Otro ejemplo es cuando su organización toma la decisión de referirse a un proceso o tipo de documento con un nombre diferente. Por ejemplo, después de crear el modelo y estar listo para aplicarlo, su organización podría pensar que todos los elementos con el nombre "Contratos" ahora se denominarán formalmente "Acuerdos". Si es necesario, puede elegir cambiar el nombre del modelo de "Renovaciones de contrato" a "Renovaciones de contrato".
 
 > [!IMPORTANT]
-> Solo puede cambiar el nombre de un modelo de comprensión mediante documentos si no se ha aplicado a una biblioteca de documentos. 
+> Solo puede cambiar el nombre de un modelo si no se ha aplicado a una biblioteca de documentos. 
 
 Al cambiar el nombre de un modelo también se cambia el [tipo de contenido](/sharepoint/governance/content-type-and-workflow-planning#content-type-overview) que está asociado al modelo.
 
 ## <a name="rename-a-model"></a>Cambiar el nombre de un modelo
 
-Siga estos pasos para cambiar el nombre a un modelo de comprensión mediante documentos.
+Siga estos pasos para cambiar el nombre de un modelo.
 
 1. Desde el centro de contenido, seleccione **Modelos** para ver la lista de modelos.
 
@@ -54,14 +56,6 @@ Siga estos pasos para cambiar el nombre a un modelo de comprensión mediante doc
 5. Seleccione **Cambiar nombre**.
 
 ## <a name="see-also"></a>Vea también
-[Crear un clasificador](create-a-classifier.md)
 
-[Crear un extractor](create-an-extractor.md)
+[Eliminar un modelo](delete-a-model.md)
 
-[Cambiar el nombre de un extractor](rename-an-extractor.md)
-
-[Información general sobre la comprensión de los documentos](document-understanding-overview.md)
-
-[Tipos de explicación](explanation-types-overview.md)
-
-[Aplicar un modelo](apply-a-model.md) 

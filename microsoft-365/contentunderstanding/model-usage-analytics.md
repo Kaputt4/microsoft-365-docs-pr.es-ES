@@ -6,36 +6,39 @@ manager: pamgreen
 ms.reviewer: ssquires
 audience: admin
 ms.topic: article
-ms.service: microsoft-365-enterprise
+ms.service: microsoft-syntex
 search.appverid: ''
 ms.collection:
 - enabler-strategic
 - m365initiative-syntex
 ms.localizationpriority: medium
-description: Obtenga información sobre cómo encontrar más información sobre el rendimiento de los modelos de procesamiento de formularios y comprensión de documentos.
-ms.openlocfilehash: 2cbcabb919dc79a0c0eceaeda97d0e095b241235
-ms.sourcegitcommit: 04e517c7e00323b5c33d8ea937115725cf2cfd4d
+description: Obtenga información sobre cómo encontrar más información sobre el rendimiento de los modelos de inteligencia artificial en Microsoft Syntex.
+ms.openlocfilehash: 0878893af1ec00ed2b3e4d2c7e24bf4649302995
+ms.sourcegitcommit: 87283bb02ca750286f7c069f811b788730ed5832
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/13/2022
-ms.locfileid: "68564836"
+ms.lasthandoff: 10/21/2022
+ms.locfileid: "68659969"
 ---
 # <a name="analyze-how-your-models-are-used-in-microsoft-syntex"></a>Analizar cómo se usan los modelos en Microsoft Syntex
 
+<sup>**Se aplica a:**  &ensp; &#10003; Todos los modelos &ensp; | &ensp; personalizados &#10003; Todos los modelos precompilados</sup>
+
+<!---
 </br>
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4GnhX]  
 
 </br>
+--->
 
-
-El centro de contenido de Microsoft Syntex proporciona análisis de uso de modelos para proporcionar más información sobre cómo se usan los modelos que se han publicado desde el centro de contenido. En la sección <b>Resultados de los modelos en los últimos 30 días</b> del centro de contenido se incluye un resumen de 30 días de datos de análisis de uso proporcionados en los siguientes gráficos y listas:
+El centro de contenido de Microsoft Syntex proporciona análisis de uso de modelos para proporcionar más información sobre cómo se usan los modelos que se han publicado desde el centro de contenido. En la sección **Resultados de los modelos en los últimos 30 días** del centro de contenido se incluye un resumen de 30 días de datos de análisis de uso proporcionados en los siguientes gráficos y listas:
 
 - Clasificación por modelo
 - Clasificación por biblioteca
 - Uso del modelo 
 
- ![Análisis del modelo.](../media/content-understanding/model-analytics.png) </br>
+ ![Análisis del modelo.](../media/content-understanding/model-analytics.png) 
 
 ### <a name="roll-up-of-model-usage-data-in-the-default-content-center"></a>Resumen de datos de uso del modelo en el centro de contenido predeterminado
 
@@ -43,13 +46,13 @@ En Syntex, se crea el centro de contenido predeterminado durante la instalación
 
 Con respecto al análisis de uso del modelo, tenga en cuenta lo siguiente:
 
-- El centro de contenido predeterminado mostrará el análisis de uso de modelos para todos los centros de contenido y modelos de su organización, incluidos los creados en otros centros de contenido. Esto proporciona a los administradores de contenido y a otras partes interesadas un portal centralizado para administrar y supervisar los centros de contenido y los modelos en toda la empresa.  
+- El centro de contenido predeterminado mostrará el análisis de uso de modelos para todos los centros de contenido y modelos de su organización, incluidos los creados en otros centros de contenido. Esto proporciona a los administradores de contenido y a otras partes interesadas un portal centralizado para administrar y supervisar los centros de contenido y los modelos en toda la empresa.
+ 
 - En otros centros de contenido solo se mostrarán análisis de uso del modelo de los modelos que se hayan creado en ellos. Esto proporciona a los administradores de contenido información sobre los datos de uso solo para los modelos que les preocupan.
-
 
 ## <a name="classification-by-model"></a>Clasificación por modelo
 
-   ![Porcentaje total del modelo.](../media/content-understanding/total-model-percentage.png) </br>
+   ![Porcentaje total del modelo.](../media/content-understanding/total-model-percentage.png) 
 
 En el gráfico circular **Clasificación por modelo**, se muestran los modelos que han clasificado la mayoría de los archivos. Muestra cada modelo publicado como porcentaje del total de los archivos procesados por todos los modelos publicados en el centro de contenido.
 
@@ -57,14 +60,14 @@ Asimismo, cada modelo presenta una **Tasa de exhaustividad**. Es decir, el porce
 
 ## <a name="classification-by-library"></a>Clasificación por biblioteca
 
-   ![Archivos procesados.](../media/content-understanding/files-processed-over-time.png) </br>
+   ![Archivos procesados.](../media/content-understanding/files-processed-over-time.png) 
 
-El gráfico de barras **Clasificación por biblioteca** le ayuda a determinar la eficacia de la comprensión de contenidos en su organización.  Le muestra no solo el número de archivos que se procesó a lo largo del tiempo para cada modelo, sino también las bibliotecas de documentos a las que se aplicó el modelo si selecciona una columna del gráfico.
+El gráfico de barras **Clasificación por biblioteca** le ayuda a determinar la eficacia de la comprensión de contenidos en su organización. Le muestra no solo el número de archivos que se procesó a lo largo del tiempo para cada modelo, sino también las bibliotecas de documentos a las que se aplicó el modelo si selecciona una columna del gráfico.
 
 
 ## <a name="model-usage"></a>Uso del modelo
 
-La lista Uso del modelo mostrará análisis de uso de los modelos creados mediante el centro de contenido.  
+La lista de uso del modelo muestra el análisis de uso de los modelos creados a través del centro de contenido.  
 
 > [!NOTE]
 > Si se encuentra en el centro de contenido predeterminado y tiene centros de contenido adicionales en la organización, la lista de uso del modelo se agrupará por centro de contenido.
@@ -75,13 +78,3 @@ Cada modelo de la lista de uso del modelo mostrará los datos de uso:
 - Puntuación media de confianza: puntuación media de precisión del modelo al ejecutarlo con archivos.
 - URL de lista de objetivo: la biblioteca de documentos de SharePoint a la que se aplica el modelo.
 
-
-
-## <a name="see-also"></a>Vea también
-[Crear un clasificador](create-a-classifier.md)
-
-[Crear un extractor](create-an-extractor.md)
-
-[Información general sobre la comprensión de los documentos](document-understanding-overview.md)
-
-[Crear un modelo de procesamiento de formularios](create-a-form-processing-model.md)  

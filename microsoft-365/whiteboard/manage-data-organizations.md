@@ -12,16 +12,16 @@ search.appverid: MET150
 ms.collection: ''
 ms.localizationpriority: medium
 description: Obtenga información sobre la retención de datos para Microsoft Whiteboard en Azure y OneDrive para la Empresa.
-ms.openlocfilehash: a43caaa9aaccff3b2a56a1c38537f80d2304358f
-ms.sourcegitcommit: 2b89bcff547e00be3d38dc8d1e6cbcf8f41eba42
+ms.openlocfilehash: 136506afcec7fe067a270e0577678b5b6a9ec9ff
+ms.sourcegitcommit: 87283bb02ca750286f7c069f811b788730ed5832
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/03/2022
-ms.locfileid: "67598205"
+ms.lasthandoff: 10/21/2022
+ms.locfileid: "68662849"
 ---
 # <a name="manage-data-for-microsoft-whiteboard"></a>Administración de datos para La pizarra de Microsoft
 
-El contenido de pizarra se almacena en OneDrive para la Empresa y Azure. OneDrive para la Empresa es el almacenamiento predeterminado para todas las pizarras nuevas. Las pizarras que se crearon originalmente en Azure y las pizarras que se iniciaron en un dispositivo Surface Hub o en una sala de Microsoft Teams se almacenan en Azure.
+El contenido de pizarra se almacena en OneDrive para la Empresa y Azure. OneDrive para la Empresa es el almacenamiento predeterminado para todas las pizarras nuevas. Las pizarras que se crearon originalmente en Azure y las pizarras que se iniciaron en un dispositivo Surface Hub o en un dispositivo Salas de Microsoft Teams se almacenan en Azure.
 
 Para administrar los datos, primero debe asegurarse de que Whiteboard está habilitado para su organización. Para obtener más información, vea [Administrar el acceso a Whiteboard](manage-whiteboard-access-organizations.md).
 

@@ -7,7 +7,7 @@ ms.reviewer: lauris
 ms.date: ''
 audience: admin
 ms.topic: article
-ms.service: microsoft-365-enterprise
+ms.service: microsoft-syntex
 ms.collection:
 - enabler-strategic
 - m365initiative-syntex
@@ -15,33 +15,33 @@ ms.custom: Adopt
 search.appverid: ''
 ms.localizationpriority: medium
 description: Busque escenarios empresariales sobre cómo usar Microsoft Syntex en su organización.
-ms.openlocfilehash: 66cb9eeb572be506b246275a6e609d395c70a48e
-ms.sourcegitcommit: ca082da1c51a3f643f152492579eef5679d52bd0
+ms.openlocfilehash: a43231e268e69a74cdc0bbc35df2cdd24d9e0d37
+ms.sourcegitcommit: 87283bb02ca750286f7c069f811b788730ed5832
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/12/2022
-ms.locfileid: "68547848"
+ms.lasthandoff: 10/21/2022
+ms.locfileid: "68660915"
 ---
 # <a name="scenarios-and-use-cases-for-microsoft-syntex"></a>Escenarios y casos de uso para Microsoft Syntex
 
 Use los escenarios de ejemplo siguientes para preguntar ideas sobre cómo puede usar Microsoft Syntex en su organización.
 
-- [Escenario: Seguimiento de datos de facturas con procesamiento de formularios](adoption-scenarios.md#scenario-track-data-from-invoices-with-form-processing)
-- [Escenario: Seguimiento de la información de contratos con comprensión de documentos](adoption-scenarios.md#scenario-track-information-from-contracts-with-document-understanding)
+- [Escenario: Seguimiento de la información de las facturas mediante el modelo de procesamiento estructurado de documentos](adoption-scenarios.md#scenario-track-information-from-invoices-by-using-the-structured-document-processing-model)
+- [Escenario: Seguimiento de la información de los contratos mediante el modelo de procesamiento de documentos no estructurado](adoption-scenarios.md#scenario-track-information-from-contracts-by-using-the-unstructured-document-processing-model)
 - [Escenario: Evitar riesgos con la administración de registros, la gobernanza de documentos y los procesos de cumplimiento basados en Syntex](adoption-scenarios.md#scenario-avoid-risk-with-records-management-document-governance-and-compliance-processes-based-on-syntex)
 - [Escenario: Captura de información de documentos inaccesibles anteriormente](adoption-scenarios.md#scenario-capture-information-from-previously-inaccessible-documents)
 - [Escenario: Mejora del procesamiento de datos para proporcionar información y análisis](adoption-scenarios.md#scenario-improve-data-processing-to-provide-insights-and-analytics)
 - [Escenario: Automatización del procesamiento de pedidos](adoption-scenarios.md#scenario-automate-order-processing)
 - [Escenario: Simplificación del proceso de renovación de visados](adoption-scenarios.md#scenario-simplify-visa-renewal-process)
 
-## <a name="scenario-track-data-from-invoices-with-form-processing"></a>Escenario: Seguimiento de datos de facturas con procesamiento de formularios
+## <a name="scenario-track-information-from-invoices-by-using-the-structured-document-processing-model"></a>Escenario: Seguimiento de la información de las facturas mediante el modelo de procesamiento estructurado de documentos
 
 Por ejemplo, puede configurar un proceso mediante las características de Syntex y Power Automate para realizar un seguimiento y supervisar las facturas.
 
 1. Configure una biblioteca para almacenar los documentos de factura.
-1. Entrenar el modelo para reconocer campos en los documentos.
-1. Extraiga los campos de los que desea realizar un seguimiento en una lista.
-1. Configure un flujo para notificarle eventos específicos, como:
+2. Entrenar el modelo para reconocer campos en los documentos.
+3. Extraiga los campos de los que desea realizar un seguimiento en una lista.
+4. Configure un flujo para notificarle eventos específicos, como:
     - Se agrega una nueva factura.
     - Una factura ha superado su fecha de vencimiento.
     - Una factura es para un importe mayor que el importe de aprobación automática.
@@ -53,15 +53,15 @@ Al automatizar este escenario, puede hacer lo siguiente:
 - Ahorre tiempo y dinero mediante la extracción automática de datos de las facturas en lugar de hacerlo manualmente.
 - Reduzca los posibles errores y garantice un mejor cumplimiento mediante flujos de trabajo para comprobar las facturas y notificarle cualquier problema.
 
-## <a name="scenario-track-information-from-contracts-with-document-understanding"></a>Escenario: Seguimiento de la información de contratos con comprensión de documentos
+## <a name="scenario-track-information-from-contracts-by-using-the-unstructured-document-processing-model"></a>Escenario: Seguimiento de la información de los contratos mediante el modelo de procesamiento de documentos no estructurado
 
 Como otro ejemplo, puede configurar un proceso para identificar los contratos que su empresa tiene con otras empresas o personas. Configure un modelo para extraer información clave de esos contratos, como el nombre del cliente, las tarifas, las fechas u otra información importante, y agregue la información a la biblioteca como campos que puede ver rápidamente. Aplique una etiqueta de retención en la biblioteca de documentos para asegurarse de que los contratos no se pueden eliminar antes de un período de tiempo específico para el cumplimiento adecuado de las regulaciones empresariales.
 
-1. Comience en el centro de contenido y cree un nuevo modelo de comprensión de documentos para los contratos.
-1. Cargue documentos de ejemplo para ejemplos positivos y negativos y, a continuación, ejecute el entrenamiento para identificar documentos de contrato y revisar los resultados.
-1. Entrene el extractor para identificar los campos de los contratos, como el nombre del cliente, la cuota y la fecha, y, a continuación, pruebe el extractor.
-1. Una vez completado el modelo, aplique el modelo a una biblioteca donde pueda cargar contratos.
-1. Aplique una etiqueta de retención al campo de fecha para que los contratos se conserven en la biblioteca durante el tiempo necesario.
+1. Comience en el centro de contenido y cree un nuevo modelo de procesamiento de documentos no estructurado para contratos.
+2. Cargue documentos de ejemplo para ejemplos positivos y negativos y, a continuación, ejecute el entrenamiento para identificar documentos de contrato y revisar los resultados.
+3. Entrene el extractor para identificar los campos de los contratos, como el nombre del cliente, la cuota y la fecha, y, a continuación, pruebe el extractor.
+4. Una vez completado el modelo, aplique el modelo a una biblioteca donde pueda cargar contratos.
+5. Aplique una etiqueta de retención al campo de fecha para que los contratos se conserven en la biblioteca durante el tiempo necesario.
 
 ![Realice un seguimiento y supervise los contratos con Syntex y las etiquetas de retención.](../media/content-understanding/process-contracts-flow.png)
 
@@ -97,7 +97,7 @@ Por ejemplo, un director de RR. HH. debe acceder rápidamente a todos los docume
 Al automatizar este escenario, puede hacer lo siguiente:
 
 - Desbloquea conocimientos del contenido digital.
-- Clasifique las directivas de RR. HH., los currículos, los documentos de ventas, los planos técnicos, los planes de cuenta y extraiga información.
+- Clasifique las directivas de RR. HH., las reanudaciones, los documentos de ventas, los planos técnicos y los planes de cuenta y extraiga información.
 - Encuentre rápidamente la información o el documento correctos que está buscando.
 - Obtenga acceso instantáneo a la información más reciente.
 - Reducir los tiempos de búsqueda.
@@ -116,7 +116,7 @@ Al automatizar este escenario, puede hacer lo siguiente:
 
 ## <a name="scenario-automate-order-processing"></a>Escenario: Automatización del procesamiento de pedidos
 
-Con Syntex, puede reducir el tiempo de procesamiento manual de pedidos del cliente. Por ejemplo, puede cargar pedidos de fax, correo electrónico o papel en la biblioteca de documentos de SharePoint mediante el procesamiento de OCR y, a continuación, extraer los metadatos de esos pedidos para que pueda cumplirlos mediante procesos automatizados.
+Con Syntex, puede reducir el tiempo de procesamiento manual de pedidos del cliente. Por ejemplo, puede cargar pedidos de fax, correo electrónico o papel en SharePoint mediante el procesamiento de OCR y, a continuación, extraer los metadatos de esos pedidos para que pueda cumplirlos mediante procesos automatizados.
 
 Por ejemplo, un administrador de la cadena de suministro quiere reducir los errores causados por la entrada manual de datos. Quieren evitar la revisión manual y la entrada de datos de los pedidos de clientes entrantes (papel, fax o correo electrónico) para reducir los errores que se producen en sus sistemas empresariales. Quieren una solución que aplique técnicas de inteligencia artificial y aprendizaje automático para validar la información de pedidos entrantes, extraer datos principales e insertarlos automáticamente en su sistema ERP, para la conciliación y el cumplimiento de pedidos.
 
@@ -129,7 +129,7 @@ Al automatizar este escenario, puede asegurarse de que:
 
 ## <a name="scenario-simplify-visa-renewal-process"></a>Escenario: Simplificación del proceso de renovación de visados
 
-Syntex puede ayudarle a automatizar recordatorios y renovaciones para obtener información clave del contrato. Por ejemplo, un director de RR. HH. debe asegurarse de que los visados de los empleados estén actualizados o renovados a tiempo. Quieren ofrecer a las personas un proceso sencillo e intuitivo para actualizar sus Visas. Necesitan una solución que extraiga las fechas de renovación de los contratos y envíe automáticamente recordatorios a los empleados cuando se aproximan sus fechas de renovación.
+Syntex puede ayudarle a automatizar recordatorios y renovaciones para obtener información clave del contrato. Por ejemplo, un director de RR. HH. debe asegurarse de que los visados de los empleados estén actualizados o renovados a tiempo. Quieren dar a las personas un proceso sencillo e intuitivo para actualizar sus visas. Necesitan una solución que extraiga las fechas de renovación de los contratos y envíe automáticamente recordatorios a los empleados cuando se aproximan sus fechas de renovación.
 
 Al automatizar este escenario, puede asegurarse de que:
 
@@ -139,4 +139,6 @@ Al automatizar este escenario, puede asegurarse de que:
 
 ## <a name="see-also"></a>Vea también
 
-[Introducción a la adopción de Syntex](adoption-getstarted.md)
+[Introducción a la adopción de Microsoft Syntex](adoption-getstarted.md)
+
+[Administrar contratos con una solución de Microsoft 365](solution-manage-contracts-in-microsoft-365.md)

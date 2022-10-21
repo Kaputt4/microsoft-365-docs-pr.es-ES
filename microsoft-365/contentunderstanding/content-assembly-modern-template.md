@@ -6,19 +6,19 @@ manager: pamgreen
 audience: admin
 ms.reviewer: anrasto, shrganguly
 ms.topic: article
-ms.service: microsoft-365-enterprise
+ms.service: microsoft-syntex
 search.appverid: ''
 ms.collection:
 - enabler-strategic
 - m365initiative-syntex
 ms.localizationpriority: medium
 description: Obtenga información sobre cómo crear una plantilla moderna en Microsoft Syntex.
-ms.openlocfilehash: b0056e9ebc5dfe69e99c40abaccaea0cd6725e39
-ms.sourcegitcommit: 04e517c7e00323b5c33d8ea937115725cf2cfd4d
+ms.openlocfilehash: 022f46531e54041d5a11b43d75b21d0e033095ca
+ms.sourcegitcommit: 87283bb02ca750286f7c069f811b788730ed5832
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/13/2022
-ms.locfileid: "68566394"
+ms.lasthandoff: 10/21/2022
+ms.locfileid: "68661597"
 ---
 # <a name="create-a-modern-template-in-microsoft-syntex"></a>Creación de una plantilla moderna en Microsoft Syntex
 

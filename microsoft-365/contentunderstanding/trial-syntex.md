@@ -7,7 +7,7 @@ ms.reviewer: lauris; jaeccles
 ms.date: ''
 audience: admin
 ms.topic: article
-ms.service: microsoft-365-enterprise
+ms.service: microsoft-syntex
 ms.collection:
 - enabler-strategic
 - m365initiative-syntex
@@ -17,12 +17,12 @@ ms.custom:
 search.appverid: ''
 ms.localizationpriority: medium
 description: Obtenga información sobre cómo planear, registrarse y ejecutar un programa piloto de prueba para Microsoft Syntex en su organización.
-ms.openlocfilehash: 27770aa818c25b5c18c07a3f8f67a2185964ad37
-ms.sourcegitcommit: 04e517c7e00323b5c33d8ea937115725cf2cfd4d
+ms.openlocfilehash: 028c91912d04f99c030d9de887c0c344961add3d
+ms.sourcegitcommit: 87283bb02ca750286f7c069f811b788730ed5832
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/13/2022
-ms.locfileid: "68564068"
+ms.lasthandoff: 10/21/2022
+ms.locfileid: "68662695"
 ---
 # <a name="run-a-trial-of-microsoft-syntex"></a>Ejecución de una prueba de Microsoft Syntex
 
@@ -68,8 +68,10 @@ Un inquilino de prueba o demostración se puede usar como "ejecución en seco" p
 
 Para maximizar el valor de una prueba en un inquilino de producción, es esencial planear y la participación empresarial. Debe interactuar con una o varias áreas de negocio para identificar entre tres y seis casos de uso que podrían ser abordados por Syntex. Estos casos de uso deben:
 
-- Incluya escenarios que se puedan resolver mediante el modelo de procesamiento de formularios o de comprensión de documentos.
+- Incluya escenarios que se puedan resolver mediante un modelo personalizado o un modelo precompilado.
+
 - Comprender claramente el propósito de los metadatos extraídos; por ejemplo, ver el formato o la automatización mediante Power Automate. Aunque Syntex se centra en clasificar documentos y extraer metadatos, el valor que se va a cuantificar es lo que permite estos metadatos.
+
 - Se basa en un conjunto definido de datos; por ejemplo, sitios o bibliotecas específicos de SharePoint. Un concepto erróneo común de Syntex es que los modelos de uso general se pueden aplicar en todo el contenido de la organización. Una vista más precisa es que los modelos se crean para ayudar a resolver problemas empresariales específicos en ubicaciones dirigidas.
 
 Es posible que todos estos casos de uso no sean una buena opción para Syntex. El objetivo de una prueba de calidad no es demostrar que Syntex se ajuste a todos los escenarios. En su lugar, la prueba debería ayudarle a comprender mejor el valor del producto.
@@ -98,17 +100,21 @@ En función del resultado de la prueba, puede decidir si desea continuar con el 
 
 Para garantizar la continuidad del servicio, debe comprar el número necesario de [licencias](syntex-licensing.md) y asignar esas licencias a los usuarios. Los usuarios de prueba que no tengan una licencia completa al final del período de prueba no podrán usar Syntex por completo.
 
-Es posible que tenga que calcular el uso proyectado del procesamiento de formularios y planear el número esperado de créditos de AI Builder. Para obtener ayuda, consulte [Estimación de la capacidad de AI Builder adecuada para usted](https://powerapps.microsoft.com/ai-builder-calculator/).
+Es posible que tenga que calcular el uso proyectado de los modelos de procesamiento de documentos estructurados o de procesamiento de documentos de forma libre, y planear el número esperado de créditos de AI Builder. Para obtener ayuda, consulte [Estimación de la capacidad de AI Builder adecuada para usted](https://powerapps.microsoft.com/ai-builder-calculator/).
 
 ### <a name="dont-proceed-to-production-use"></a>No continuar con el uso de producción
 
 Si no compra licencias después de la prueba:
 
 - No podrá crear nuevos modelos.
+
 - Las bibliotecas que estaban ejecutando modelos ya no clasificarán automáticamente los archivos ni extraerán modelos.
+
 - Los archivos previamente clasificados o los metadatos extraídos no se verán afectados.
-- Los centros de contenido y los modelos de comprensión de documentos no se eliminarán automáticamente. Estos permanecerán disponibles para su uso si decide comprar licencias en el futuro.
-- Los modelos de procesamiento de formularios se almacenarán en la instancia de Dataverse (anteriormente denominada Common Data Service (CDS)) del entorno predeterminado de Power Platform. Se pueden usar con futuras licencias para Syntex o con funcionalidades de AI Builder en Power Platform.
+
+- Los centros de contenido y los modelos de ellos no se eliminarán automáticamente. Estos permanecerán disponibles para su uso si decide comprar licencias en el futuro.
+
+- Los modelos estructurados de procesamiento de documentos o procesamiento de documentos de forma libre se almacenarán en la instancia de Dataverse (anteriormente denominada Common Data Service (CDS)) del entorno predeterminado de Power Platform. Se pueden usar con futuras licencias para Syntex o con funcionalidades de AI Builder en Power Platform.
 
 ## <a name="see-also"></a>Vea también
 

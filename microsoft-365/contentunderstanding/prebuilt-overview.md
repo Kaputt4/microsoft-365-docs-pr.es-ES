@@ -6,69 +6,52 @@ manager: pamgreen
 ms.reviewer: ssquires
 audience: admin
 ms.topic: article
-ms.customer: intro-overview
-ms.service: microsoft-365-enterprise
+ms.custom: intro-overview
+ms.service: microsoft-syntex
 search.appverid: ''
 ms.collection:
 - enabler-strategic
 - m365initiative-syntex
 ms.localizationpriority: medium
 description: Obtenga información sobre los modelos precompilados en Microsoft Syntex.
-ms.openlocfilehash: 8d5d2c9a4103c02e4acab10f653ae658679a1c07
-ms.sourcegitcommit: 04e517c7e00323b5c33d8ea937115725cf2cfd4d
+ms.openlocfilehash: 0ec44b2f7b0b0360eedceadb71ddf9abdc6e2941
+ms.sourcegitcommit: 87283bb02ca750286f7c069f811b788730ed5832
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/13/2022
-ms.locfileid: "68563193"
+ms.lasthandoff: 10/21/2022
+ms.locfileid: "68659157"
 ---
-# <a name="prebuilt-models-overview-in-microsoft-syntex"></a>Introducción a los modelos precompilados en Microsoft Syntex
+# <a name="overview-of-prebuilt-models-in-microsoft-syntex"></a>Introducción a los modelos precompilados en Microsoft Syntex
 
-Además de [comprender los modelos](document-understanding-overview.md) y los [modelos de procesamiento de formularios](form-processing-overview.md), Microsoft Syntex proporciona modelos precompilados para automatizar la extracción de información.
+Además de [los modelos personalizados](model-types-overview.md#custom-models), Microsoft Syntex proporciona *modelos precompilados* para automatizar la extracción de información.
 
-Los modelos precompilados se entrenan previamente para reconocer los documentos y la información estructurada de los documentos. En lugar de tener que crear un nuevo modelo personalizado desde cero, puede iterar en un modelo previamente entrenado existente para agregar campos específicos que se ajusten a las necesidades de su organización. 
+Los modelos precompilados se preconfiguran para reconocer documentos y la información estructurada en los documentos. En lugar de tener que crear un nuevo modelo personalizado desde cero, puede iterar en un modelo previamente entrenado existente para agregar campos específicos que se ajusten a las necesidades de su organización. 
 
 Los modelos precompilados usan el reconocimiento óptico de caracteres (OCR) combinado con modelos de aprendizaje profundo para identificar y extraer campos de datos y texto predefinidos comunes a tipos de documentos específicos. Para empezar, analice uno de los archivos en el modelo precompilado. A continuación, seleccione los campos detectados que tengan sentido para su propósito. Si el modelo no detecta los campos que necesita, puede analizarlo de nuevo mediante un archivo diferente.
 
-Al igual que los modelos de comprensión de documentos, los modelos precompilados se crean y administran en el [centro de contenido](create-a-content-center.md). Cuando se aplica a una biblioteca de documentos de SharePoint, el modelo está asociado a un tipo de contenido y tiene columnas para almacenar la información que se va a extraer. 
+Al igual que otros modelos, los modelos precompilados se crean y administran en el [centro de contenido](create-a-content-center.md). Cuando se aplica a una biblioteca de documentos de SharePoint, el modelo está asociado a un tipo de contenido y tiene columnas para almacenar la información que se va a extraer. 
 
 Después de publicar el modelo, utilice el centro de contenido para aplicarlo a cualquier biblioteca de documentos de SharePoint a la que tenga acceso.  
 
+## <a name="available-prebuilt-models"></a>Modelos precompilados disponibles
+
+Actualmente, hay dos modelos precompilados disponibles: [facturas](prebuilt-model-invoice.md) y [recibos](prebuilt-model-receipt.md).
+
+- El *modelo de facturas* analiza y extrae información clave de las facturas de ventas. La API analiza las facturas en varios formatos y [extrae la información clave de la factura](/azure/applied-ai-services/form-recognizer/concept-invoice#field-extraction) , como el nombre del cliente, la dirección de facturación, la fecha de vencimiento y el importe vencido.
+
+- El *modelo de recibos* analiza y extrae información clave de los recibos de ventas. La API analiza los recibos impresos y manuscritos y [extrae información de recibo de clave](/azure/applied-ai-services/form-recognizer/concept-receipt#field-extraction) , como el nombre del comerciante, el número de teléfono del comerciante, la fecha de transacción, los impuestos y el total de la transacción.
+
+Los modelos precompilados adicionales estarán disponibles en futuras versiones.
+
 ## <a name="requirements"></a>Requisitos
 
-- Formatos de archivo admitidos: JPEG, PNG, BMP, TIFF y PDF (texto incrustado o escaneado).
-
-- Idiomas admitidos: actualmente solo se admiten facturas en inglés de la Estados Unidos. Se admiten los recibos de ventas en inglés de Australia, Canadá, Estados Unidos, Gran Bretaña e India.
-
-- Los archivos PDF incrustados en texto son mejores para eliminar la posibilidad de error en la extracción y ubicación de caracteres.
-
-- Para PDF y TIFF, se pueden procesar hasta 2000 páginas.
-
-- El tamaño del archivo debe ser inferior a 50 MB.
-
-- Las dimensiones de imagen deben estar entre 50 x 50 píxeles y 10 000 x 10 000 píxeles.
-
-- Las dimensiones pdf son de hasta 17 x 17 pulgadas, correspondientes al tamaño de papel Legal o A3, o más pequeños.
-
-- El tamaño total de los datos de entrenamiento es de 500 páginas o menos.
-
-### <a name="file-limitations"></a>Limitaciones de archivos
-
-Tenga en cuenta las siguientes diferencias sobre los archivos basados en texto de Microsoft Office y los archivos escaneados por OCR (PDF, imagen o TIFF):
-
-- Archivos de Office: truncados con 64 000 caracteres (cuando se ejecutan en archivos de una biblioteca de documentos).
-
-- Archivos digitalizados con OCR: hay un límite de 20 páginas.  
-
-## <a name="model-considerations"></a>Consideraciones sobre el modelo
-
-- Si se aplican dos o más modelos precompilados a la misma biblioteca, el archivo se clasifica mediante el modelo que tiene la puntuación de confianza media más alta. Las entidades extraídas serán solo del modelo aplicado.
-
-- Si se aplica un modelo precompilado a una biblioteca que tiene un modelo de procesamiento de formulario personalizado, el archivo se clasifica mediante el modelo precompilado y los extractores detectados para ese modelo. Si hay columnas vacías que coincidan con el modelo de procesamiento de formularios, las columnas se rellenarán con esos valores extraídos.
-
-- No se admite la aplicación de más de un modelo de procesamiento de formulario personalizado a una biblioteca.
+Para obtener información sobre los requisitos que se deben tener en cuenta al elegir este modelo, consulte [Requisitos y limitaciones de los modelos de Microsoft Syntex](requirements-and-limitations.md). 
 
 ## <a name="see-also"></a>Vea también
 
-[Uso de un modelo precompilado para extraer información de facturas o recibos](prebuilt-models.md)
+[Uso de un modelo precompilado para extraer información de facturas](prebuilt-model-invoice.md)
+
+[Uso de un modelo precompilado para extraer información de recibos](prebuilt-model-receipt.md)
+
  
 

@@ -6,7 +6,7 @@ ms.reviewer: ssquires
 manager: serdars
 audience: admin
 ms.topic: article
-ms.service: microsoft-365-enterprise
+ms.service: microsoft-syntex
 ms.collection:
 - enabler-strategic
 - m365initiative-syntex
@@ -15,27 +15,27 @@ ms.custom:
 search.appverid: MET150
 ms.localizationpriority: high
 description: Configure Microsoft Syntex.
-ms.openlocfilehash: 5fab513e50bba1e0ccc975b724f589aebec914c4
-ms.sourcegitcommit: 04e517c7e00323b5c33d8ea937115725cf2cfd4d
+ms.openlocfilehash: b6a7309e9ae833f643930d9f308c1b748afeb0f5
+ms.sourcegitcommit: 87283bb02ca750286f7c069f811b788730ed5832
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/13/2022
-ms.locfileid: "68564244"
+ms.lasthandoff: 10/21/2022
+ms.locfileid: "68659595"
 ---
 # <a name="set-up-microsoft-syntex"></a>Configuración de Microsoft Syntex
 
-Los administradores pueden usar la <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">Centro de administración de Microsoft 365</a> para configurar [Microsoft Syntex](index.md). 
+Los administradores pueden usar la <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">Centro de administración de Microsoft 365</a> para configurar Microsoft Syntex. 
 
 Considere lo siguiente antes de empezar:
 
-- ¿En qué sitios de SharePoint se va a habilitar el procesamiento de formularios? ¿Todos ellos, algunos, o seleccionar sitios?
+- ¿En qué sitios de SharePoint habilitará el procesamiento de documentos? ¿Todos ellos, algunos, o seleccionar sitios?
 - ¿Qué nombre le pondrá a su centro de contenido de forma predeterminada?
 
 Puede cambiar su configuración después de la configuración inicial en el <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">Centro de administración de Microsoft 365</a>.
 
 Prior to setup, make sure to plan for the best way to set up and configure content understanding in your environment. For example, you need to make the following decisions:
 
-- Los sitios de SharePoint en los que desea habilitar el procesamiento de formularios: todos, algunos o sitios seleccionados
+- Los sitios de SharePoint en los que desea habilitar el procesamiento de documentos: todos ellos, algunos o sitios seleccionados
 - El nombre y los administradores de su centro de contenido
 
 ## <a name="requirements"></a>Requirements 
@@ -49,7 +49,7 @@ Como administrador, también puede realizar cambios en la configuración selecci
 
 Si tiene previsto usar un entorno de Power Platform personalizado, deberá instalar la aplicación *AI Builder para Proyecto Cortex* en este entorno. Consulte [Administración de aplicaciones de Dynamics 365](/power-platform/admin/manage-apps#install-an-app-in-the-environment-view) para obtener más información y busque la aplicación *AI Builder para Proyecto Cortex* en la lista de aplicaciones de Dynamics 365.
 
-También debe [asignar créditos de AI Builder](/power-platform/admin/capacity-add-on) al entorno personalizado antes de poder crear modelos de procesamiento de formularios. 
+También debe [asignar créditos de AI Builder](/power-platform/admin/capacity-add-on) al entorno personalizado para poder crear modelos de procesamiento de documentos. 
 
 When using a custom environment, model creators must be assigned the Environment Maker security role and model users must be assigned the Basic User security role. See [Assign a security role to a user](/power-platform/admin/assign-security-roles) for more information.
 
@@ -57,15 +57,15 @@ Los usuarios que crean modelos en un [sitio del centro de contenido](/microsoft-
 
 ### <a name="licensing"></a>Licencias
 
-Para usar Syntex, su organización debe tener una suscripción a Syntex y cada usuario debe tener asignadas licencias. Las licencias de yntex incluyen las siguientes aplicaciones, que deben asignarse:
+Para usar Syntex, su organización debe tener una suscripción a Syntex y cada usuario debe tener asignadas licencias. Las licencias de Syntex incluyen las siguientes aplicaciones, que deben asignarse:
 
-- Microsoft Syntex
-- Microsoft Syntex: tipo SPO
-- Common Data Service para Microsoft Syntex
+- Syntex
+- Syntex: tipo SPO
+- Common Data Service para Syntex
 
-Para usar el procesamiento de formularios, también necesita créditos de AI Builder. Para cada usuario con licencia de Syntex, se proporciona una asignación de créditos de AI Builder cada mes.
+Para usar modelos estructurados de procesamiento de documentos o procesamiento de documentos de forma libre, también necesita créditos de AI Builder. Para cada usuario con licencia de Syntex, se proporciona una asignación de créditos de AI Builder cada mes.
 
-Para obtener más información sobre las licencias de [Syntex, consulte Licencias de Syntex](syntex-licensing.md).
+Para obtener más información sobre las licencias de Syntex, consulte [Licencias de Microsoft Syntex](syntex-licensing.md).
 
 ## <a name="to-set-up-syntex"></a>Para configurar Syntex
 
@@ -78,7 +78,7 @@ Para obtener más información sobre las licencias de [Syntex, consulte Licencia
     > [!div class="mx-imgBorder"]
     > ![Iniciar la instalación.](../media/content-understanding/admin-content-understanding-get-started.png)</br>
 
-4. En la página **Configurar el procesamiento** de formularios, puede elegir si desea que los usuarios puedan crear modelos de procesamiento de formularios en bibliotecas de documentos específicos de SharePoint. En la cinta de opciones de la biblioteca de documentos estará disponible una opción de menú para **Crear un modelo de procesamiento de formularios** en las bibliotecas de documentos de SharePoint en las que esté habilitado.
+4. En la página **Configurar procesamiento de formularios** , puede elegir si desea permitir que los usuarios puedan crear modelos de procesamiento de documentos en bibliotecas de documentos específicas de SharePoint. En la cinta de opciones de la biblioteca de documentos estará disponible una opción de menú para **Crear un modelo de procesamiento de formularios** en las bibliotecas de documentos de SharePoint en las que esté habilitado.
  
      Para **Qué bibliotecas de SharePoint debe mostrar la opción de crear un modelo de procesamiento de formularios**, puede seleccionar:</br>
       - **Bibliotecas en todos los sitios de SharePoint** para que esté disponible en todas las bibliotecas de SharePoint de su organización.</br>
@@ -86,14 +86,14 @@ Para obtener más información sobre las licencias de [Syntex, consulte Licencia
       - **No hay bibliotecas de SharePoint** si no quiere que esté disponible para ningún sitio (puede cambiar esto después de la configuración).
 
    > [!div class="mx-imgBorder"]
-   > ![Configurar las opciones del sitio de procesamiento de formularios.](../media/content-understanding/admin-configforms.png)
+   > ![Configure las opciones del sitio de procesamiento de documentos.](../media/content-understanding/admin-configforms.png)
 
    > [!Note]
-   > Quitando un sitio después de incluirlo no afecta a los modelos existentes aplicados a las bibliotecas de ese sitio ni a la capacidad de aplicar modelos de comprensión de documentos a una biblioteca. 
+   > La eliminación de un sitio después de que se haya incluido no afecta a los modelos existentes aplicados a las bibliotecas de ese sitio ni a la capacidad de aplicar modelos de procesamiento de documentos no estructurados a una biblioteca. 
     
-    Si tiene varios entornos de Power Platform configurados, puede elegir cuál desea usar para el procesamiento de formularios. (Esta opción no aparecerá si solo tiene un entorno).
+    Si tiene varios entornos de Power Platform configurados, puede elegir con qué uno desea usar para el procesamiento de documentos. (Esta opción no aparecerá si solo tiene un entorno).
 
-    ![Configurar las opciones de Power Platform de procesamiento de formularios.](../media/content-understanding/setup-power-platform-env.png)
+    ![Configure las opciones de Power Platform de procesamiento de documentos.](../media/content-understanding/setup-power-platform-env.png)
 
     Para el **entorno de Power Platform**, puede seleccionar:
     - **Usar el entorno predeterminado** para utilizar su entorno de Power Platform predeterminado.
@@ -101,7 +101,7 @@ Para obtener más información sobre las licencias de [Syntex, consulte Licencia
 
     Haga clic en **Siguiente**.
 
-5. En la página **Crear centro de contenido**, puede crear un sitio de centro de contenido de SharePoint en el que los usuarios podrán crear y gestionar modelos de comprensión mediante documentos. Si anteriormente creó un centro de contenido desde el Centro de administración de SharePoint, esa información se mostrará aquí y solo podrá seleccionar **Siguiente**.
+5. En la página **Crear centro de contenido** , puede crear un sitio del Centro de contenido de SharePoint donde los usuarios puedan crear y administrar modelos de procesamiento de documentos no estructurados. Si anteriormente creó un centro de contenido desde el Centro de administración de SharePoint, esa información se mostrará aquí y solo podrá seleccionar **Siguiente**.
 
     1. Para el **Nombre del sitio**, escriba el nombre que quiere darle a su sitio de centro de contenido.
     
@@ -130,7 +130,7 @@ Para asignar licencias:
 
 3. Elija **Aplicaciones** en el menú desplegable.
 
-4. Select **Show apps for  SharePoint Syntex**. Under **Apps**, make sure **Common Data Service for SharePoint Syntex**, **SharePoint Syntex**, and **SharePoint Syntex - SPO type** are all selected.
+4. Seleccione **Mostrar aplicaciones para Syntex**. En **Aplicaciones**, asegúrese de que **Common Data Service para Syntex**, **Syntex** y **Syntex : tipo SPO** estén seleccionados.
 
     > [!div class="mx-imgBorder"]
     > ![Licencias de Syntex en el Centro de administración de Microsoft 365.](../media/content-understanding/sharepoint-syntex-licenses.png)
@@ -139,8 +139,6 @@ Para asignar licencias:
 
 ## <a name="see-also"></a>Consulte también
 
-[Visión general del modelo de procesamiento de formularios](/ai-builder/form-processing-model-overview)
-
-[Paso a paso: cómo crear un modelo de comprensión de documentos (video)](https://www.youtube.com/watch?v=DymSHObD-bg)
+[Introducción al modelo de procesamiento de documentos en AI Builder](/ai-builder/form-processing-model-overview)
 
 [Crear y administrar entornos en el Centro de administración de la Power Platform](/power-platform/admin/create-environment)

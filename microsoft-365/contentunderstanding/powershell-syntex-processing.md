@@ -1,33 +1,35 @@
 ---
-title: Uso de PowerShell para solicitar el procesamiento por un modelo de comprensión de documentos
+title: Uso de PowerShell para solicitar el procesamiento por parte de un modelo personalizado
 ms.author: jaeccles
 author: jameseccles
 ms.reviewer: ssquires
-manager: serdars
+manager: ssquires
 audience: admin
 ms.topic: article
-ms.service: microsoft-365-enterprise
+ms.service: microsoft-syntex
 ms.collection:
 - enabler-strategic
 - m365initiative-syntex
 search.appverid: MET150
 ms.localizationpriority: medium
-description: Obtenga información sobre cómo usar PowerShell para solicitar el procesamiento por parte de un modelo de comprensión de documentos de Microsoft Syntex.
-ms.openlocfilehash: 1f537c3759ee8783c18bee5e8241e004c73f2eec
-ms.sourcegitcommit: 04e517c7e00323b5c33d8ea937115725cf2cfd4d
+description: Obtenga información sobre cómo usar PowerShell para solicitar el procesamiento por parte de un modelo personalizado de Microsoft Syntex.
+ms.openlocfilehash: b28bc8945c4704354d351185a5ff2cf1c72031ea
+ms.sourcegitcommit: 87283bb02ca750286f7c069f811b788730ed5832
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/13/2022
-ms.locfileid: "68563238"
+ms.lasthandoff: 10/21/2022
+ms.locfileid: "68662081"
 ---
-# <a name="use-powershell-to-request-processing-by-a-document-understanding-model"></a>Uso de PowerShell para solicitar el procesamiento por un modelo de comprensión de documentos
+# <a name="use-powershell-to-request-processing-by-a-custom-model"></a>Uso de PowerShell para solicitar el procesamiento por parte de un modelo personalizado
+
+<sup>**Se aplica a:**  &ensp; &#10003; Todos los modelos personalizados</sup>
 
 > [!IMPORTANT]
 > Los cmdlets de PowerShell de Microsoft Syntex y todos los demás componentes de PnP son herramientas de código abierto respaldadas por una comunidad activa que proporciona soporte técnico para ellos. Los canales oficiales de soporte técnico de Microsoft no ofrecen ningún contrato de nivel de servicio para herramientas de código abierto.
 
-Los modelos de comprensión de documentos procesarán los archivos recién cargados en una biblioteca. También es posible solicitar manualmente el procesamiento en la interfaz de usuario. Sin embargo, puede haber escenarios en los que sea más eficaz desencadenar el procesamiento a través de PowerShell.
+Los modelos personalizados procesarán los archivos recién cargados en una biblioteca. También es posible solicitar manualmente el procesamiento en la interfaz de usuario. Sin embargo, puede haber escenarios en los que sea más eficaz desencadenar el procesamiento a través de PowerShell.
 
-## <a name="request-processing-of-all-items-that-have-not-been-previously-classified"></a>Procesamiento de solicitudes de todos los elementos que no se han clasificado previamente
+## <a name="request-processing-of-all-items-that-havent-been-previously-classified"></a>Procesamiento de solicitudes de todos los elementos que no se han clasificado previamente
 
 Puede solicitar el procesamiento de todos los elementos de la biblioteca que no se hayan clasificado previamente mediante este comando:
 
@@ -38,11 +40,11 @@ Connect-PnPOnline -Url "https://contoso.sharepoint.com/sites/finance"
 Request-PnPSyntexClassifyAndExtract -List "Documents"
 ```
 
-Para el procesamiento de prioridad inferior, también puede considerar el uso del parámetro -OffPeak, que pondrá en cola los archivos para su procesamiento fuera del horario comercial donde se encuentra el inquilino. Consulte [Request-PnPSyntexClassifyAndExtract](https://pnp.github.io/powershell/cmdlets/Request-PnPSyntexClassifyAndExtract.html) para obtener más detalles.
+Para el procesamiento de prioridad inferior, también puede considerar el uso del parámetro -OffPeak, que pondrá en cola los archivos para su procesamiento fuera del horario comercial donde se encuentra el inquilino. Para obtener más información, vea [Request-PnPSyntexClassifyAndExtract](https://pnp.github.io/powershell/cmdlets/Request-PnPSyntexClassifyAndExtract.html).
 
 ## <a name="request-processing-of-all-items-in-a-library"></a>Solicitud de procesamiento de todos los elementos de una biblioteca
 
-Puede solicitar el procesamiento de todos los archivos de la biblioteca, incluso si se han clasificado anteriormente. Esto podría ser útil si ha actualizado un modelo o ha agregado otro modelo a la biblioteca.
+Puede solicitar el procesamiento de todos los archivos de la biblioteca, incluso si se han clasificado anteriormente. Este paso puede ser útil si ha actualizado un modelo o ha agregado otro modelo a la biblioteca.
 
 ```PowerShell
 #Note: you're connecting here to the site that holds the document library you want to process

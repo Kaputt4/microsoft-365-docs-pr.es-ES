@@ -6,23 +6,25 @@ manager: pamgreen
 ms.reviewer: ssquires
 audience: admin
 ms.topic: article
-ms.service: microsoft-365-enterprise
+ms.service: microsoft-syntex
 search.appverid: ''
 ms.collection:
 - enabler-strategic
 - m365initiative-syntex
 ms.localizationpriority: medium
 description: Obtenga más información sobre los tipos de explicación de proximidad, expresión regular y lista de frases en Microsoft Syntex.
-ms.openlocfilehash: a85272830dcbc64266456774c56ea02ceb6245e6
-ms.sourcegitcommit: ca082da1c51a3f643f152492579eef5679d52bd0
+ms.openlocfilehash: 8509dee0fcfe4141371c8dbb7412f716fceaba35
+ms.sourcegitcommit: 87283bb02ca750286f7c069f811b788730ed5832
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/12/2022
-ms.locfileid: "68547958"
+ms.lasthandoff: 10/21/2022
+ms.locfileid: "68661685"
 ---
 # <a name="explanation-types-in-microsoft-syntex"></a>Tipos de explicación en Microsoft Syntex
 
-Las explicaciones se usan para ayudar a definir la información que desea etiquetar y extraer en los modelos de comprensión de documentos en Microsoft Syntex. Al crear una explicación, debe seleccionar un tipo de explicación. Este artículo le ayudará a comprender los distintos tipos de explicación y cómo se usan.
+<sup>**Se aplica a:**  &ensp; &#10003; procesamiento de documentos no estructurados</sup>
+
+Las explicaciones se usan para ayudar a definir la información que desea etiquetar y extraer en los modelos de procesamiento de documentos no estructurados en Microsoft Syntex. Al crear una explicación, debe seleccionar un tipo de explicación. Este artículo le ayudará a comprender los distintos tipos de explicación y cómo se usan.
 
 ![Captura de pantalla del panel Crear una explicación que muestra los tres tipos de explicación.](../media/content-understanding/explanation-types.png)
 

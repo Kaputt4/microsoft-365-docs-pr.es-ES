@@ -7,7 +7,7 @@ ms.mktglfcycl: manage
 ms.sitesec: library
 ms.pagetype: security
 ms.localizationpriority: medium
-ms.date: 08/12/2022
+ms.date: 10/20/2022
 audience: ITPro
 author: denisebmsft
 ms.author: deniseb
@@ -20,12 +20,12 @@ ms.collection:
 - m365-security
 - tier2
 search.appverid: met150
-ms.openlocfilehash: 94a1e3646a8b10f6569d03d23becb0b683913a79
-ms.sourcegitcommit: 4e42bafee965446f44f7f57d1defed2b9b24fce8
+ms.openlocfilehash: 6e246cfeb14095cf0b5c471cbe4b3707d94d203d
+ms.sourcegitcommit: 87283bb02ca750286f7c069f811b788730ed5832
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/30/2022
-ms.locfileid: "68226237"
+ms.lasthandoff: 10/21/2022
+ms.locfileid: "68662607"
 ---
 # <a name="protect-your-network"></a>Proteger la red
 
@@ -157,13 +157,15 @@ La compatibilidad con servidores de comandos y control (C2) es una parte clave d
 
 ## <a name="smartscreen-unblock"></a>Desbloqueo de SmartScreen
 
-Una nueva característica en los indicadores de Defender para punto de conexión permite a los administradores permitir a los usuarios finales omitir las advertencias que se generan para algunas direcciones URL e direcciones IP. En función de por qué se bloqueó la dirección URL, cuando se encuentra un bloque SmartScreen, puede ofrecer a los administradores la capacidad de desbloquear el sitio durante un máximo de 24 horas. En tales casos, aparecerá una notificación del sistema de Seguridad de Windows, lo que permite al usuario final **desbloquear** la dirección URL o la dirección IP durante el período de tiempo definido.  
+Con los indicadores de Defender para punto de conexión, los administradores pueden permitir que los usuarios finales omitan las advertencias que se generan para algunas direcciones URL e direcciones IP. En función de por qué se bloqueó la dirección URL, cuando se encuentra un bloque SmartScreen, puede ofrecer a los administradores la capacidad de desbloquear el sitio durante un máximo de 24 horas. En tales casos, aparecerá una notificación del sistema de Seguridad de Windows, lo que permite al usuario final **desbloquear** la dirección URL o la dirección IP durante el período de tiempo definido.  
 
 :::image type="content" source="images/network-protection-smart-screen-block-notification.png" alt-text="Seguridad de Windows notificación para la protección de red.":::
 
-Microsoft Defender para punto de conexión Los administradores pueden configurar la funcionalidad Desbloquee SmartScreen en [Microsoft 365 Defender](https://security.microsoft.com/), mediante la siguiente herramienta de configuración. En el portal de Microsoft 365 Defender, vaya a la ruta de acceso a ConfigToolName.
+Microsoft Defender para punto de conexión administradores pueden configurar la funcionalidad Desbloquee SmartScreen en el [portal de Microsoft 365 Defender](https://security.microsoft.com) mediante un indicador de "permitir" para direcciones IP, direcciones URL y dominios. 
 
 :::image type="content" source="images/network-protection-smart-screen-block-configuration.png" alt-text="SmartScreen de protección de red bloquea la configuración de ULR y el formulario IP.":::
+
+Consulte [Creación de indicadores para direcciones IP y direcciones URL/dominios](indicator-ip-domain.md).
 
 ## <a name="using-network-protection"></a>Uso de la protección de red
 
@@ -172,9 +174,9 @@ La protección de red está habilitada por dispositivo, que normalmente se reali
 > [!NOTE]
 > Microsoft Defender Antivirus debe estar activo para habilitar la protección de red.
 
-Puede habilitar la protección de red en modo **auditoría** o **modo de bloqueo** . Si desea evaluar el impacto de habilitar la protección de red antes de bloquear realmente direcciones IP o direcciones URL, puede habilitar la protección de red en el modo auditoría durante un período de tiempo para recopilar datos sobre lo que se bloquearía. Registros de modo de auditoría cuando los usuarios finales se han conectado a una dirección o sitio que, de lo contrario, habrían sido bloqueados por la protección de red.
+Puede habilitar la protección de red en modo **auditoría** o **modo de bloqueo** . Si desea evaluar el impacto de habilitar la protección de red antes de bloquear realmente direcciones IP o direcciones URL, puede habilitar la protección de red en el modo auditoría durante el tiempo necesario para recopilar datos sobre lo que se bloquearía. Registros de modo de auditoría cuando los usuarios finales se han conectado a una dirección o sitio que, de lo contrario, habrían sido bloqueados por la protección de red.
 
-Para obtener información sobre la protección de red para Linux y macOS, consulte Protección [de red para Linux](network-protection-linux.md) y [Protección de red para MacOS](network-protection-macos.md).
+Para obtener información sobre la protección de red para Linux y macOS, consulte Protección [de red para Linux](network-protection-linux.md) y [Protección de red para macOS](network-protection-macos.md).
 
 ## <a name="advanced-hunting"></a>Búsqueda avanzada de amenazas
 
@@ -267,7 +269,7 @@ Esta es una consulta de ejemplo para la búsqueda avanzada:
 ```kusto
 
 DeviceNetworkEvents
-|where ActionType in ('ExploitGuardNetworkProtectionAudited','ExploitGuardNetworkProtectionBlocked', 'ConnectionSuccess')
+|where ActionType in ('ExploitGuardNetworkProtectionAudited','ExploitGuardNetworkProtectionBlocked')
 
 ```
 
@@ -342,4 +344,4 @@ La protección de red ahora tiene una optimización del rendimiento que permite 
 - [Habilitar la protección de red](enable-network-protection.md) | Use los CSP de directiva de grupo, PowerShell o MDM para habilitar y administrar la protección de red en la red.
 - [Configuración de capacidades de reducción de superficie expuesta a ataques en Microsoft Intune](/mem/intune/protect/endpoint-security-asr-policy)
 - [Protección de red para linux](network-protection-linux.md) | Para obtener información sobre el uso de la protección de Microsoft Network para dispositivos Linux.
-- [Protección de red para macOS](network-protection-macos.md) | Para obtener más información sobre la protección de Microsoft Network para MacOS
+- [Protección de red para macOS](network-protection-macos.md) | Para obtener más información sobre la protección de red de Microsoft para macOS

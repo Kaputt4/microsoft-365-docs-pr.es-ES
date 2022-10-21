@@ -7,7 +7,7 @@ ms.reviewer: ssquires
 audience: admin
 ms.topic: article
 ms.date: ''
-ms.service: microsoft-365-enterprise
+ms.service: microsoft-syntex
 ms.collection:
 - m365solution-managecontracts
 - m365solution-overview
@@ -17,12 +17,12 @@ search.appverid: ''
 ms.localizationpriority: medium
 ROBOTS: ''
 description: Obtenga información sobre cómo administrar contratos mediante una solución de Microsoft 365 de Microsoft Syntex, listas de SharePoint, Microsoft Teams y Power Automate.
-ms.openlocfilehash: 61c8d19815a1e766add4bed845ffdcc14967bba1
-ms.sourcegitcommit: 04e517c7e00323b5c33d8ea937115725cf2cfd4d
+ms.openlocfilehash: 2abb6e28f9bac16d374a4056b996c3067125c4f5
+ms.sourcegitcommit: 87283bb02ca750286f7c069f811b788730ed5832
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/13/2022
-ms.locfileid: "68563326"
+ms.lasthandoff: 10/21/2022
+ms.locfileid: "68659202"
 ---
 # <a name="manage-contracts-using-a-microsoft-365-solution"></a>Administrar contratos con una solución de Microsoft 365
 
@@ -64,7 +64,7 @@ Esta guía de la solución de administración de contratos incluye cuatro compon
 
   ![Diagrama de la solución que muestra el flujo de trabajo para cargar documentos, extraer datos, notificar a las partes interesadas y aprobar o rechazar el contrato.](../media/content-understanding/syntex-solution-manage-contracts-overview.png)
 
-1. Los documentos se cargan en una biblioteca de documentos de SharePoint. Se ha aplicado un modelo de comprensión de documentos de Syntex a la biblioteca de documentos. Comprueba cada archivo para ver si hay coincidencia con un tipo de contenido "contrato" que se va a buscar. Si encuentra una coincidencia, clasifica el archivo como un "contrato" y actualiza el tipo de contenido del documento.
+1. Los documentos se cargan en una biblioteca de documentos de SharePoint. Se ha aplicado un modelo de procesamiento de documentos no estructurado de Syntex a la biblioteca de documentos. Comprueba cada archivo para ver si hay coincidencia con un tipo de contenido "contrato" que se va a buscar. Si encuentra una coincidencia, clasifica el archivo como un "contrato" y actualiza el tipo de contenido del documento.
 
 2. El modelo también extrae datos específicos de cada archivo de contrato que las partes interesadas están interesadas en ver, como el *cliente*, *el contratista* y el *importe de la tarifa*.
 
@@ -94,7 +94,7 @@ Esta solución se basa en la siguiente funcionalidad, todas disponibles como par
 
 ¿Es nuevo en Microsoft Syntex? Obtenga información sobre cómo usar Syntex para administrar contenido mediante IA.
 
-La ruta de aprendizaje [Introducción a Microsoft Syntex](/training/paths/syntex-get-started) le enseñará cómo puede usar los modelos de comprensión de documentos y procesamiento de formularios para clasificar documentos, extraer texto y etiquetar los documentos para una administración de conocimientos rápida y sencilla.
+La ruta de aprendizaje [Introducción a Microsoft Syntex](/training/paths/syntex-get-started) le enseñará cómo puede usar modelos de procesamiento de documentos no estructurados, de forma libre y no estructurados para clasificar documentos, extraer texto y etiquetar los documentos para una administración de conocimientos rápida y sencilla.
 
 ## <a name="create-the-solution"></a>Creación de la solución
 

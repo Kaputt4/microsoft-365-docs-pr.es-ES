@@ -19,12 +19,12 @@ ms.collection:
 ms.topic: conceptual
 ms.subservice: mde
 search.appverid: met150
-ms.openlocfilehash: 3476e599311c698a83987f48754b16c12d64e0ec
-ms.sourcegitcommit: 50da6f1f6ef2274c17ed9729e7ad84395b0a9be2
+ms.openlocfilehash: e24d5e513d4f5200a33d9cbd6d407353ac9215ca
+ms.sourcegitcommit: 87283bb02ca750286f7c069f811b788730ed5832
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/08/2022
-ms.locfileid: "68506895"
+ms.lasthandoff: 10/21/2022
+ms.locfileid: "68663113"
 ---
 # <a name="ask-defender-experts"></a>Pregunte a expertos de Defender
 
@@ -37,7 +37,7 @@ ms.locfileid: "68506895"
 > ¿Quiere experimentar Microsoft Defender para punto de conexión? [Regístrese para obtener una prueba gratuita.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-exposedapis-abovefoldlink)
 
 > [!NOTE]
-> A partir de agosto de 2022, la opción Expertos a petición para **consultar a un experto en amenazas** se ha cambiado a **Preguntar a expertos de Defender**. Esta documentación sigue estando aquí para admitir el servicio de Expertos en amenazas de Microsoft heredado; sin embargo, si está interesado en explorar el servicio más allá de su licencia actual, consulte [Microsoft Defender Experts for Hunting](/microsoft-365/security/defender/defender-experts-for-hunting). Microsoft Defender suscripción De expertos para la búsqueda incluye [expertos a petición](/microsoft-365/security/defender/onboarding-defender-experts-for-hunting?view=o365-worldwide#collaborate-with-experts-on-demand).
+> A partir de agosto de 2022, la opción Expertos a petición para **consultar a un experto en amenazas** se ha cambiado a **Preguntar a expertos de Defender**. Esta documentación sigue estando aquí para admitir el servicio de Expertos en amenazas de Microsoft heredado; sin embargo, si está interesado en explorar el servicio más allá de la licencia actual, consulte [Expertos de detección de Microsoft Defender](/microsoft-365/security/defender/defender-experts-for-hunting). Expertos de detección de Microsoft Defender suscripción incluye [Expertos a petición](/microsoft-365/security/defender/onboarding-defender-experts-for-hunting).
 
 Los clientes pueden interactuar con nuestros expertos en seguridad directamente desde Microsoft 365 Defender portal para obtener su respuesta. Los expertos proporcionan información necesaria para comprender mejor las amenazas complejas que afectan a su organización, desde consultas de alertas, dispositivos potencialmente comprometidos, causa principal de una conexión de red sospechosa, hasta más inteligencia sobre amenazas con respecto a las campañas de amenazas persistentes avanzadas en curso. Con esta funcionalidad, puede:
 
@@ -55,7 +55,7 @@ Puede asociarse con expertos de Microsoft Defender que pueden participar directa
 > [!NOTE]
 >
 > - Actualmente no se admiten las consultas de alerta relacionadas con los datos personalizados de inteligencia sobre amenazas de la organización. Consulte a su equipo de operaciones de seguridad o respuesta a incidentes para obtener más información.
-> - Debe tener el permiso **Administrar la configuración de seguridad** en el portal de Microsoft 365 Defender para poder enviar la consulta Preguntar a **expertos de Defender**.
+> - Debe tener el permiso **[Administrar configuración de seguridad](../defender-endpoint/user-roles.md)** en el portal de Microsoft 365 Defender para poder enviar la consulta **Preguntar a expertos de Defender**.
 
 1. Vaya a la página del portal con la información pertinente que le gustaría investigar, por ejemplo, la página **Incidente** . Asegúrese de que la página de la alerta o dispositivo pertinente esté en vista antes de enviar una solicitud de investigación.
 
@@ -117,5 +117,5 @@ Es fundamental responder rápidamente para mantener la investigación en movimie
 
 ## <a name="next-steps"></a>Pasos siguientes
 - Para buscar amenazas de forma proactiva entre puntos de conexión, consulte [Notificación de ataque de punto de conexión](../defender-endpoint/endpoint-attack-notifications.md).
-- Para buscar amenazas de forma proactiva entre puntos de conexión, Office 365, aplicaciones en la nube e identidad, consulte [expertos de Microsoft Defender para la búsqueda](../defender/defender-experts-for-hunting.md).
+- Para buscar amenazas de forma proactiva entre puntos de conexión, Office 365, aplicaciones en la nube e identidad, consulte [Expertos de detección de Microsoft Defender](../defender/defender-experts-for-hunting.md).
 

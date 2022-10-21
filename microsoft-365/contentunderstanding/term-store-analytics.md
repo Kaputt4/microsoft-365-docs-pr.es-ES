@@ -6,23 +6,23 @@ author: MikePlumleyMSFT
 manager: serdars
 audience: admin
 ms.topic: article
-ms.service: microsoft-365-enterprise
+ms.service: microsoft-syntex
 search.appverid: ''
 ms.collection:
 - enabler-strategic
 - m365initiative-syntex
 ms.custom: admindeeplinkSPO
 ms.localizationpriority: high
-ms.openlocfilehash: 44d6c198afe6da28e29670bbdc0c059ef2761311
-ms.sourcegitcommit: 04e517c7e00323b5c33d8ea937115725cf2cfd4d
+ms.openlocfilehash: 80a3aeb0acfffa599da101f5985b8915b2d52e58
+ms.sourcegitcommit: 87283bb02ca750286f7c069f811b788730ed5832
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/13/2022
-ms.locfileid: "68563189"
+ms.lasthandoff: 10/21/2022
+ms.locfileid: "68659837"
 ---
 # <a name="term-store-reports"></a>Informes del almacén de términos
 
-Puede obtener acceso a los informes sobre el <a href="https://go.microsoft.com/fwlink/?linkid=2185073" target="_blank">almacén de términos</a> en el Centro de administración de SharePoint. Esta característica requiere una licencia [de Microsoft Syntex](index.md) .
+Puede obtener acceso a los informes sobre el <a href="https://go.microsoft.com/fwlink/?linkid=2185073" target="_blank">almacén de términos</a> en el Centro de administración de SharePoint. Esta característica requiere una [licencia de Microsoft Syntex](syntex-licensing.md).
 
 Expanda **Informes** y, a continuación, haga clic en **Servicios de contenido**.
 

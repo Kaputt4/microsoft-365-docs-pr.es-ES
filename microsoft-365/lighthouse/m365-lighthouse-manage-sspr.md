@@ -4,7 +4,7 @@ f1.keywords: NOCSH
 ms.author: sharik
 author: SKjerland
 manager: scotv
-ms-reviewer: ragovind
+ms.reviewer: ragovind
 audience: Admin
 ms.topic: article
 ms.service: microsoft-365-lighthouse
@@ -18,12 +18,12 @@ ms.custom:
 - M365-Lighthouse
 search.appverid: MET150
 description: En el caso de los proveedores de servicios administrados (MSP) que usan Microsoft 365 Lighthouse, obtenga información sobre cómo administrar el autoservicio de restablecimiento de contraseña.
-ms.openlocfilehash: 63a9c68da07b2ffd6a692e5daab8557e96326782
-ms.sourcegitcommit: 0b7070ec119e00e0dafe030bbfbef0ae5c9afa19
+ms.openlocfilehash: d44bcf75e22eaa28544badfef890f56fe5524ae8
+ms.sourcegitcommit: 87283bb02ca750286f7c069f811b788730ed5832
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/29/2022
-ms.locfileid: "68203978"
+ms.lasthandoff: 10/21/2022
+ms.locfileid: "68659003"
 ---
 # <a name="manage-self-service-password-reset-in-microsoft-365-lighthouse"></a>Administración del autoservicio de restablecimiento de contraseña en Microsoft 365 Lighthouse
 
