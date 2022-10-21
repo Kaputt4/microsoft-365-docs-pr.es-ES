@@ -8,8 +8,8 @@ ms.sitesec: library
 ms.pagetype: security
 ms.localizationpriority: medium
 audience: ITPro
-author: jweston-1
-ms.author: v-jweston
+author: dansimp
+ms.author: dansimp
 ms.reviewer: oogunrinde
 manager: dansimp
 ms.custom: asr
@@ -20,13 +20,15 @@ ms.collection:
 - tier2
 ms.date: ''
 search.appverid: met150
-ms.openlocfilehash: 3617ae81204d6c2e244d58868fad6fe7d315f29e
-ms.sourcegitcommit: 4e42bafee965446f44f7f57d1defed2b9b24fce8
+ms.openlocfilehash: f71c2d4fa2807f6e7667b7ab32c54081cf239986
+ms.sourcegitcommit: 87283bb02ca750286f7c069f811b788730ed5832
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/30/2022
-ms.locfileid: "68229094"
+ms.lasthandoff: 10/21/2022
+ms.locfileid: "68659398"
 ---
+<!--- jweston-1 to return as author and ms.author appx April/May 2023. --->
+
 # <a name="network-protection-for-macos"></a>Protección de red para macOS
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
@@ -78,16 +80,16 @@ La protección de red amplía el ámbito de Microsoft 365 Defender [SmartScreen]
 - Máquinas incorporadas:
   - Versión mínima de macOS: 11
   - Versión del producto 101.78.13 o posterior
-  - El dispositivo debe estar en el canal de actualización de Microsoft AutoUpdate insiderSlow (versión preliminar) o InsiderFast (beta). Puede comprobar el canal de actualización mediante el siguiente comando:
+  - El dispositivo debe estar en el canal de actualización de Microsoft AutoUpdate externo (versión preliminar) o InsiderFast (beta). Puede comprobar el canal de actualización mediante el siguiente comando:
 
 ```bash
 mdatp health --field release_ring 
 ```
 
-Si el dispositivo aún no está en el canal de actualización InsiderSlow(Preview), ejecute el siguiente comando desde terminal. La actualización del canal surte efecto la próxima vez que se inicie el producto (cuando se instale la siguiente actualización del producto o cuando se reinicie el dispositivo).
+Si el dispositivo aún no está en el canal de actualización External(Preview), ejecute el siguiente comando desde terminal. La actualización del canal surte efecto la próxima vez que se inicie el producto (cuando se instale la siguiente actualización del producto o cuando se reinicie el dispositivo).
 
 ```bash
-defaults write com.microsoft.autoupdate2 ChannelName -string InsiderSlow
+defaults write com.microsoft.autoupdate2 ChannelName -string External
 ```
 
 Como alternativa, si se encuentra en un entorno administrado (JAMF o Intune), puede configurar el grupo de dispositivos de forma remota. Para obtener más información, vea [Establecer preferencias para Microsoft 365 Defender para punto de conexión en macOS](mac-preferences.md).
@@ -96,7 +98,7 @@ Como alternativa, si se encuentra en un entorno administrado (JAMF o Intune), pu
 
 ### <a name="microsoft-365-defender-for-endpoint"></a>Microsoft 365 Defender para punto de conexión
 
-Después de configurar el dispositivo para que esté en el canal de actualización InsiderSlow(preview), instale la versión más reciente del producto a través de Microsoft AutoUpdate. Para abrir Microsoft AutoUpdate, ejecute el siguiente comando desde terminal:
+Después de configurar el dispositivo para que esté en el canal de actualización Externo (versión preliminar), instale la versión más reciente del producto a través de Microsoft AutoUpdate. Para abrir Microsoft AutoUpdate, ejecute el siguiente comando desde terminal:
 
 ```bash
 open /Library/Application\ Support/Microsoft/MAU2.0/Microsoft\ AutoUpdate.app

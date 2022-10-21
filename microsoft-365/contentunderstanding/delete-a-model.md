@@ -6,23 +6,25 @@ manager: pamgreen
 audience: admin
 ms.reviewer: ssquires
 ms.topic: article
-ms.service: microsoft-365-enterprise
+ms.service: microsoft-syntex
 search.appverid: ''
 ms.collection:
 - enabler-strategic
 - m365initiative-syntex
 ms.localizationpriority: medium
-description: Obtenga información sobre cómo eliminar un modelo de comprensión de documentos en Microsoft Syntex.
-ms.openlocfilehash: 776cdadafc5fffe0cea42a2cf99ac229b0e38c74
-ms.sourcegitcommit: ca082da1c51a3f643f152492579eef5679d52bd0
+description: Obtenga información sobre cómo eliminar un modelo en Microsoft Syntex.
+ms.openlocfilehash: d7568e116fb3ea56bb36652a378955d74efa2d90
+ms.sourcegitcommit: 87283bb02ca750286f7c069f811b788730ed5832
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/12/2022
-ms.locfileid: "68547453"
+ms.lasthandoff: 10/21/2022
+ms.locfileid: "68659180"
 ---
 # <a name="delete-a-model-in-microsoft-syntex"></a>Eliminación de un modelo en Microsoft Syntex
 
-En algún momento, es posible que desee eliminar un modelo de comprensión de documentos o un modelo precompilado. Antes de eliminar el modelo, primero debe quitarlo de todas las bibliotecas de documentos de SharePoint donde se ha aplicado.
+<sup>**Se aplica a:**  &ensp; &#10003; Todos los modelos &ensp; | &ensp; personalizados &#10003; Todos los modelos precompilados</sup>
+
+En algún momento, es posible que quiera eliminar un modelo. Antes de eliminar el modelo, primero debe quitarlo de todas las bibliotecas de documentos de SharePoint donde se ha aplicado.
 
 ## <a name="remove-a-model-from-a-library"></a>Eliminación de un modelo de una biblioteca
 
@@ -33,7 +35,7 @@ Puede quitar un modelo de una biblioteca de documentos de la página principal d
 
 ## <a name="delete-a-model"></a>Eliminar un modelo
 
-Siga estos pasos para eliminar un modelo de comprensión de documentos o un modelo precompilado.
+Siga estos pasos para eliminar un modelo.
 
 1. Asegúrese de que el modelo se ha [quitado](#remove-a-model-from-a-library) de su biblioteca de documentos.
  
@@ -47,8 +49,7 @@ Siga estos pasos para eliminar un modelo de comprensión de documentos o un mode
 
 5. En el panel **Eliminar modelo** , seleccione **Eliminar**.
 
-## <a name="see-also"></a>Ver también
+## <a name="see-also"></a>Vea también
 
-[Información general sobre la comprensión de documentos](document-understanding-overview.md)
+[Cambiar el nombre de un modelo](rename-a-model.md)
 
-[Aplicar un modelo](apply-a-model.md) 

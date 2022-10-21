@@ -4,7 +4,7 @@ f1.keywords: NOCSH
 ms.author: sharik
 author: SKjerland
 manager: scotv
-ms-reviewer: ragovind
+ms.reviewer: ragovind
 audience: Admin
 ms.topic: article
 ms.service: microsoft-365-lighthouse
@@ -18,12 +18,12 @@ ms.custom:
 - M365-Lighthouse
 search.appverid: MET150
 description: En el caso de los proveedores de servicios administrados (MSP) que usan Microsoft 365 Lighthouse, aprenda a restablecer una contraseña para un solo usuario o para varios usuarios de riesgo en distintos inquilinos.
-ms.openlocfilehash: 79616f6523189e870cf2369f8c7b696904cfe46b
-ms.sourcegitcommit: 0b7070ec119e00e0dafe030bbfbef0ae5c9afa19
+ms.openlocfilehash: 8ddd23a3d9e5276ec5ac9904ea3e06aeaa589cd8
+ms.sourcegitcommit: 87283bb02ca750286f7c069f811b788730ed5832
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/29/2022
-ms.locfileid: "68198149"
+ms.lasthandoff: 10/21/2022
+ms.locfileid: "68659376"
 ---
 # <a name="reset-a-user-password-in-microsoft-365-lighthouse"></a>Restablecer una contraseña de usuario en Microsoft 365 Lighthouse
 

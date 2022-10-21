@@ -1,44 +1,49 @@
 ---
-title: Aplicación de un modelo de comprensión de documentos en Microsoft Syntex
+title: Aplicación de un modelo a una biblioteca de documentos en Microsoft Syntex
 ms.author: chucked
 author: chuckedmonson
 manager: pamgreen
 ms.reviewer: ssquires
 audience: admin
 ms.topic: article
-ms.service: microsoft-365-enterprise
+ms.service: microsoft-syntex
 search.appverid: ''
 ms.collection:
 - enabler-strategic
 - m365initiative-syntex
 ms.localizationpriority: medium
 description: Obtenga información sobre cómo aplicar un modelo publicado a una biblioteca de documentos de SharePoint en Microsoft Syntex.
-ms.openlocfilehash: 2f0d55f878baaf205ea4363a19a6afef34957ac7
-ms.sourcegitcommit: ca082da1c51a3f643f152492579eef5679d52bd0
+ms.openlocfilehash: b0aed07a5a530b06b04fe78775d49373daae290f
+ms.sourcegitcommit: 87283bb02ca750286f7c069f811b788730ed5832
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/12/2022
-ms.locfileid: "68548024"
+ms.lasthandoff: 10/21/2022
+ms.locfileid: "68659245"
 ---
-# <a name="apply-a-document-understanding-model-in-microsoft-syntex"></a>Aplicación de un modelo de comprensión de documentos en Microsoft Syntex
+# <a name="apply-a-model-to-a-document-library-in-microsoft-syntex"></a>Aplicación de un modelo a una biblioteca de documentos en Microsoft Syntex
 
+<sup>**Se aplica a:**  &ensp; &#10003; Todos los modelos &ensp; | &ensp; personalizados &#10003; Todos los modelos precompilados</sup>
+
+<!---
 </br>
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4CSoL]
 
 </br>
+--->
 
-Después de publicar el modelo de comprensión de documentos, puede aplicarlo a una o varias bibliotecas de documentos de SharePoint en el inquilino de Microsoft 365.
+Después de entrenar un modelo de procesamiento de documentos no estructurados, entrenar y publicar un modelo de procesamiento de documentos estructurados o de forma libre, o crear un modelo precompilado, puede aplicarlo a una o varias bibliotecas de documentos de SharePoint en el inquilino de Microsoft 365.
+
+Este artículo se aplica tanto a *los modelos empresariales* como *a los modelos locales*. Un modelo de empresa se crea y entrena en el [centro de contenido](create-a-content-center.md) y otros usuarios pueden detectarlo para usarlo. Se crea y entrena localmente un [modelo local](create-local-model.md) en su propio sitio de SharePoint.  
 
 > [!NOTE]
-> Solo puede aplicar el modelo a las bibliotecas de documentos a las que tenga acceso.
-
+> Solo puede aplicar el modelo a las bibliotecas de documentos a las que tiene acceso.
 
 ## <a name="apply-your-model-to-a-document-library"></a>Aplicación del modelo a una biblioteca de documentos
 
-Para aplicar el modelo a una biblioteca de documentos de SharePoint:
+Puede aplicar un modelo a diferentes lugares, incluida la página principal del modelo o desde la lista de modelos disponibles. Para aplicar el modelo a una biblioteca de documentos de SharePoint:
 
-1. En la página principal del modelo, en el icono **Aplicar modelo a bibliotecas** , seleccione **Aplicar modelo**. O bien, en la sección **Dónde se aplica el modelo** , seleccione **+Agregar biblioteca**.
+1. En la página principal del modelo, en el icono **Aplicar modelo a bibliotecas** , seleccione **Aplicar modelo**. O bien, en la sección **Dónde se aplica el modelo** , seleccione **Agregar biblioteca**.
 
     ![Captura de pantalla de la sección Dónde se aplica el modelo con la opción Agregar biblioteca resaltada.](../media/content-understanding/apply-to-library.png)
 
@@ -57,13 +62,13 @@ Para aplicar el modelo a una biblioteca de documentos de SharePoint:
 
     ![Captura de pantalla de la configuración avanzada que muestra las vistas de la biblioteca.](../media/content-understanding/library-view.png)
 
-    Para obtener más información, vea [Cambiar la vista en una biblioteca de documentos](#change-the-view-in-a-document-library) más adelante en este artículo.
+    Para obtener más información, vea [Elegir la vista en una biblioteca de documentos](choose-library-view.md).
 
 5. Seleccione **Agregar** para aplicar el modelo a la biblioteca.
 
 6. En la página principal del modelo, en la sección **Dónde se aplica el modelo** , debería ver el nombre del sitio de SharePoint en la lista.
 
-7. Vaya a la biblioteca de documentos y asegúrese de estar en la vista de biblioteca de documentos del modelo. Seleccione **Automatizar ver** > **modelos de comprensión de documentos**.
+7. Vaya a la biblioteca de documentos y asegúrese de estar en la vista de biblioteca de documentos del modelo. Seleccione **Automatizar** > **modelos de vista**.
 
 8. En la página **Revisar modelos y aplicar nuevos** , seleccione la pestaña **Aplicado** para ver los modelos que se aplican a la biblioteca de documentos.
 
@@ -76,9 +81,9 @@ Después de aplicar el modelo a la biblioteca de documentos, puede iniciar la ca
 El modelo identifica los archivos y carpetas con el tipo de contenido asociado del modelo y los enumera en la vista. Si el modelo tiene extractores, la vista muestra columnas para los datos que se van a extraer de cada archivo o carpeta.
 
 > [!NOTE]
-> Si se aplican dos o más modelos de comprensión de documentos a la misma biblioteca, el archivo cargado se clasifica mediante el modelo que tiene la puntuación de confianza media más alta. Las entidades extraídas serán solo del modelo aplicado. <br><br>Si un modelo de procesamiento de formularios personalizado y un modelo de comprensión de documentos se aplican a la misma biblioteca, el archivo se clasifica mediante el modelo de comprensión de documentos y los extractores entrenados para ese modelo. Si hay columnas vacías que coincidan con el modelo de procesamiento de formularios, las columnas se rellenarán con esos valores extraídos.
+> Si se aplican dos o más modelos de procesamiento de documentos no estructurados a la misma biblioteca, el archivo cargado se clasifica mediante el modelo que tiene la puntuación de confianza media más alta. Las entidades extraídas serán solo del modelo aplicado. <br><br>Si un modelo de modelo de procesamiento de documentos estructurado o de forma libre y un modelo de procesamiento de documentos no estructurados se aplican a la misma biblioteca, el archivo se clasifica mediante el modelo de procesamiento de documentos no estructurado y los extractores entrenados para ese modelo. Si hay columnas vacías que coincidan con el modelo de procesamiento de documentos estructurado o de forma libre, las columnas se rellenarán con esos valores extraídos.
 
-## <a name="sync-changes-to-one-or-more-libraries"></a>Sincronización de cambios en una o varias bibliotecas
+## <a name="sync-changes-to-one-or-more-document-libraries"></a>Sincronización de cambios en una o varias bibliotecas de documentos
 
 Al publicar un modelo en varias bibliotecas de documentos y, a continuación, actualizar el modelo, como agregar o quitar un extractor, debe insertar la actualización en todas las bibliotecas a las que se ha aplicado el modelo.
 
@@ -98,7 +103,7 @@ Para sincronizar los cambios en una o solo las bibliotecas seleccionadas:
 
 ## <a name="apply-the-model-to-files-and-folder-content-already-in-the-document-library"></a>Aplicar el modelo a archivos y contenido de carpeta que ya se encuentra en la biblioteca de documentos
 
-Aunque un modelo aplicado procesa todos los archivos y el contenido de carpeta cargados en la biblioteca de documentos después de aplicarlo, también puede hacer lo siguiente para ejecutar el modelo en archivos y contenido de carpeta que ya existen en la biblioteca de documentos antes de que se aplique el modelo:
+Un modelo aplicado procesa todos los archivos y el contenido de carpeta cargados en la biblioteca de documentos después de aplicarlo. También puede realizar los pasos siguientes para ejecutar el modelo en archivos y contenido de carpeta que ya existen en la biblioteca de documentos antes de aplicar el modelo:
 
 1. En la biblioteca de documentos, seleccione los archivos y carpetas que desea que procese el modelo.
 
@@ -113,7 +118,7 @@ Aunque un modelo aplicado procesa todos los archivos y el contenido de carpeta c
 
 ### <a name="classification-date-field"></a>Campo Fecha de clasificación
 
-Cuando se aplica un modelo de comprensión de documentos de Syntex (o un modelo de procesamiento de formularios) a una biblioteca de documentos, el campo **Fecha de clasificación** se incluye en el esquema de la biblioteca. De forma predeterminada, este campo está vacío. Sin embargo, cuando un modelo procesa y clasifica documentos, este campo se actualiza con una marca de fecha y hora de finalización. 
+Cuando se aplica una personalizada a una biblioteca de documentos, el campo **Fecha de clasificación** se incluye en el esquema de biblioteca. De forma predeterminada, este campo está vacío. Sin embargo, cuando un modelo procesa y clasifica documentos, este campo se actualiza con una marca de fecha y hora de finalización. 
 
    ![Captura de pantalla de una biblioteca de documentos que muestra la columna Fecha de clasificación.](../media/content-understanding/class-date-column.png) 
 
@@ -133,14 +138,11 @@ Para ejecutar el flujo:
 
     ![Captura de pantalla que muestra la opción Crear un panel de flujo y flujo resaltada.](../media/content-understanding/integrate-create-flow.png) 
 
-## <a name="change-the-view-in-a-document-library"></a>Cambio de la vista en una biblioteca de documentos
-
-[!INCLUDE [Change the view in a document library](../includes/change-library-view.md)]
-
 ## <a name="see-also"></a>Vea también
 
-[Crear un clasificador](create-a-classifier.md)
+[Uso compartido de un modelo de empresa](model-discovery.md)
 
-[Crear un extractor](create-an-extractor.md)
+[Descubrir otros modelos entrenados](discover-other-trained-models.md)
 
-[Información general de la comprensión mediante documentos ](document-understanding-overview.md)
+[Elección de la vista en una biblioteca de documentos](choose-library-view.md)
+
