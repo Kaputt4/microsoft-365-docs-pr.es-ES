@@ -4,7 +4,7 @@ f1.keywords: NOCSH
 ms.author: sharik
 author: SKjerland
 manager: scotv
-ms-reviewer: ragovind
+ms.reviewer: ragovind
 audience: Admin
 ms.topic: article
 ms.service: microsoft-365-lighthouse
@@ -18,12 +18,12 @@ ms.custom:
 - M365-Lighthouse
 search.appverid: MET150
 description: En el caso de los proveedores de servicios administrados (MSP) que usan Microsoft 365 Lighthouse, obtenga información sobre cómo administrar la lista de inquilinos.
-ms.openlocfilehash: 82dee70362c52e6046dbea0b02e5174476e00593
-ms.sourcegitcommit: 0b7070ec119e00e0dafe030bbfbef0ae5c9afa19
+ms.openlocfilehash: 1a518aacd3519d8c40ed553c3bf1d2c52e046405
+ms.sourcegitcommit: 87283bb02ca750286f7c069f811b788730ed5832
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/29/2022
-ms.locfileid: "68187655"
+ms.lasthandoff: 10/21/2022
+ms.locfileid: "68663025"
 ---
 # <a name="manage-your-tenant-list-in-microsoft-365-lighthouse"></a>Administrar la lista de inquilinos en Microsoft 365 Lighthouse
 

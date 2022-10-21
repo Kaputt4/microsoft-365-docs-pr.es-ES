@@ -7,35 +7,35 @@ ms.reviewer: ssquires
 audience: admin
 ms.topic: article
 ms.date: ''
-ms.service: microsoft-365-enterprise
+ms.service: microsoft-syntex
 search.appverid: ''
 ms.localizationpriority: medium
 ROBOTS: ''
 description: Aprenda a usar Microsoft Syntex para identificar archivos de contrato y extraer datos mediante una solución de Microsoft 365.
-ms.openlocfilehash: 19a62850e2a6749e9a7cabbafbc8959af81367fe
-ms.sourcegitcommit: 04e517c7e00323b5c33d8ea937115725cf2cfd4d
+ms.openlocfilehash: 06859af656eca3bef48d644e2fa29b3605ba4e85
+ms.sourcegitcommit: 87283bb02ca750286f7c069f811b788730ed5832
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/13/2022
-ms.locfileid: "68563304"
+ms.lasthandoff: 10/21/2022
+ms.locfileid: "68661245"
 ---
 # <a name="step-1-use-microsoft-syntex-to-identify-contract-files-and-extract-data"></a>Paso 1. Uso de Microsoft Syntex para identificar archivos de contrato y extraer datos
 
-Su organización necesita una manera de identificar y clasificar todos los documentos de contrato de los muchos archivos que recibe. También quiere poder ver rápidamente varios elementos clave en cada uno de los archivos de contrato identificados (por ejemplo, *Cliente*, *Contratista* y *Importe de cuota*). Para ello, use [Syntex](index.md) para crear un modelo de comprensión de documentos y aplicarlo a una biblioteca de documentos.
+Su organización necesita una manera de identificar y clasificar todos los documentos de contrato de los muchos archivos que recibe. También quiere poder ver rápidamente varios elementos clave en cada uno de los archivos de contrato identificados (por ejemplo, *Cliente*, *Contratista* y *Importe de cuota*). Para ello, use Syntex para crear un modelo de procesamiento de documentos no estructurado y aplicarlo a una biblioteca de documentos.
 
 ## <a name="overview-of-the-process"></a>Información general del proceso
 
-[La comprensión de documentos](document-understanding-overview.md) usa modelos de inteligencia artificial (IA) para automatizar la clasificación de los archivos y la extracción de información. Los modelos de comprensión de documentos también son óptimos para extraer información de documentos no estructurados y semiestructurados donde la información que necesita no está contenida en tablas o formularios, como contratos. 
+[Los modelos de procesamiento de documentos no estructurados](document-understanding-overview.md) usan inteligencia artificial (IA) para automatizar la clasificación de archivos y la extracción de información. Estos tipos de modelos también son óptimos para extraer información de documentos no estructurados y semiestructurados donde la información que necesita no está contenida en tablas o formularios, como contratos. 
 
-En los modelos de comprensión mediante documentos se usa la tecnología de reconocimiento óptico de caracteres (OCR) para digitalizar archivos PDF, imágenes y archivos TIFF, tanto al entrenar un modelo con archivos de ejemplo como al ejecutar el modelo en archivos de una biblioteca de documentos.
+Los modelos de procesamiento de documentos no estructurados usan la tecnología de reconocimiento óptico de caracteres (OCR) para examinar archivos PDF, imágenes y archivos TIFF, tanto al entrenar un modelo con archivos de ejemplo como al ejecutar el modelo en archivos de una biblioteca de documentos.
 
 1. En primer lugar, debe encontrar al menos cinco archivos de ejemplo que puede usar para "entrenar" el modelo para buscar características específicas del tipo de contenido que intenta identificar (un contrato). 
 
-2. Con Syntex, cree un nuevo modelo de comprensión de documentos. Con los archivos de ejemplo, debe [crear un clasificador](create-a-classifier.md). Al entrenar el clasificador con los archivos de ejemplo, se le enseña a buscar características específicas de lo que vería en los contratos de su empresa. Por ejemplo, [cree una "explicación"](create-a-classifier.md#create-an-explanation) que busque cadenas específicas que estén en sus contratos, como contrato de *servicio*, *términos de contrato* y *compensación*. Incluso puede entrenar la explicación para buscar estas cadenas en secciones específicas del documento o situadas junto a otras cadenas. Cuando crea que ha entrenado el clasificador con la información que necesita, puede probar el modelo en un conjunto de ejemplo de archivos de ejemplo para ver lo eficaz que es. Después de las pruebas, si es necesario, puede optar por realizar cambios en las explicaciones para que sean más eficaces. 
+2. Con Syntex, cree un nuevo modelo de procesamiento de documentos no estructurado. Con los archivos de ejemplo, debe [crear un clasificador](create-a-classifier.md). Al entrenar el clasificador con los archivos de ejemplo, se le enseña a buscar características específicas de lo que vería en los contratos de su empresa. Por ejemplo, [cree una "explicación"](create-a-classifier.md#create-an-explanation) que busque cadenas específicas que estén en sus contratos, como contrato de *servicio*, *términos de contrato* y *compensación*. Incluso puede entrenar la explicación para buscar estas cadenas en secciones específicas del documento o situadas junto a otras cadenas. Cuando crea que ha entrenado el clasificador con la información que necesita, puede probar el modelo en un conjunto de ejemplo de archivos de ejemplo para ver lo eficaz que es. Después de las pruebas, si es necesario, puede optar por realizar cambios en las explicaciones para que sean más eficaces. 
 
 3. En el modelo, puede [crear un extractor](create-an-extractor.md) para extraer fragmentos de datos específicos de cada contrato. Por ejemplo, para cada contrato, la información que más le preocupa es quién es el cliente, el nombre del contratista y el costo total.
 
-4. Después de crear correctamente el modelo, [aplíquelo a una biblioteca de documentos de SharePoint](apply-a-model.md). Al cargar documentos en la biblioteca de documentos, el modelo de comprensión de documentos se ejecutará e identificará y clasificará todos los archivos que coincidan con el tipo de contenido de contratos definido en el modelo. Todos los archivos clasificados como contratos se mostrarán en una vista de biblioteca personalizada. Los archivos también mostrarán los valores de cada contrato definido en el extractor.
+4. Después de crear correctamente el modelo, [aplíquelo a una biblioteca de documentos de SharePoint](apply-a-model.md). Al cargar documentos en la biblioteca de documentos, el modelo de procesamiento de documentos no estructurado se ejecutará e identificará y clasificará todos los archivos que coincidan con el tipo de contenido de contratos definido en el modelo. Todos los archivos clasificados como contratos se mostrarán en una vista de biblioteca personalizada. Los archivos también mostrarán los valores de cada contrato definido en el extractor.
 
    ![Contratos en la biblioteca de documentos.](../media/content-understanding/doc-lib-solution.png)
 
@@ -44,15 +44,15 @@ En los modelos de comprensión mediante documentos se usa la tecnología de reco
 ## <a name="steps-to-create-and-train-your-model"></a>Pasos para crear y entrenar el modelo
 
 > [!NOTE]
-> Para estos pasos, puede usar los archivos de ejemplo en el [repositorio Activos de solución de administración de contratos](https://github.com/pnp/syntex-samples/tree/main/scenario%20samples/Contracts%20Management). Los ejemplos de este repositorio contienen tanto los archivos de modelo de comprensión de documentos como los archivos usados para entrenar el modelo.
+> Para estos pasos, puede usar los archivos de ejemplo en el [repositorio Activos de solución de administración de contratos](https://github.com/pnp/syntex-samples/tree/main/scenario%20samples/Contracts%20Management). Los ejemplos de este repositorio contienen los archivos de modelo y los archivos usados para entrenar el modelo.
 
 ### <a name="create-a-contract-model"></a>Creación de un modelo de contrato
 
 El primer paso es crear el modelo de contrato.
 
-1. En el centro de contenido, seleccione **Nuevo** y, a continuación, **Crear un modelo**.
+1. En el centro de contenido, seleccione **Nuevo** > **método de enseñanza de modelos** > .
 
-2. En el panel **Nuevo modelo de comprensión de documentos** , en el campo **Nombre** , escriba el nombre del modelo. Para esta solución de administración de contratos, puede asignar un nombre al modelo *Contrato*.
+2. En el panel **Crear un modelo con el método de enseñanza** , en el campo **Nombre** , escriba el nombre del modelo. Para esta solución de administración de contratos, puede asignar un nombre al modelo *Contrato*.
 
 4. Seleccione **Crear**. Esto crea una página principal para el modelo.</br>
 

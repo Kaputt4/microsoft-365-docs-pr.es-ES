@@ -1,26 +1,28 @@
 ---
-title: Publicación de modelos de comprensión de documentos con PowerShell
+title: Publicación de modelos personalizados con PowerShell
 ms.author: jaeccles
 author: jameseccles
 ms.reviewer: ssquires
-manager: serdars
+manager: ssquires
 audience: admin
 ms.topic: article
-ms.service: microsoft-365-enterprise
+ms.service: microsoft-syntex
 ms.collection:
 - enabler-strategic
 - m365initiative-syntex
 search.appverid: MET150
 ms.localizationpriority: medium
-description: Obtenga información sobre cómo publicar modelos de comprensión de documentos de Microsoft Syntex con PowerShell.
-ms.openlocfilehash: 4b5d5e8b9a7f4b7a470a8578409b3601823c9415
-ms.sourcegitcommit: 04e517c7e00323b5c33d8ea937115725cf2cfd4d
+description: Obtenga información sobre cómo publicar modelos personalizados de Microsoft Syntex mediante PowerShell.
+ms.openlocfilehash: 46724246d1a4c85676f1722c643968a09f843c79
+ms.sourcegitcommit: 87283bb02ca750286f7c069f811b788730ed5832
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/13/2022
-ms.locfileid: "68563216"
+ms.lasthandoff: 10/21/2022
+ms.locfileid: "68661314"
 ---
-# <a name="publish-document-understanding-models-with-powershell"></a>Publicación de modelos de comprensión de documentos con PowerShell
+# <a name="publish-custom-models-with-powershell"></a>Publicación de modelos personalizados con PowerShell
+
+<sup>**Se aplica a:**  &ensp; &#10003; Todos los modelos personalizados</sup>
 
 > [!IMPORTANT]
 > Los cmdlets de PowerShell de Microsoft Syntex y todos los demás componentes de PnP son herramientas de código abierto respaldadas por una comunidad activa que proporciona soporte técnico para ellos. Los canales oficiales de soporte técnico de Microsoft no ofrecen ningún contrato de nivel de servicio para herramientas de código abierto.

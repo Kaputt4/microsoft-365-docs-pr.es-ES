@@ -6,19 +6,19 @@ manager: pamgreen
 audience: admin
 ms.reviewer: anrasto, shrganguly
 ms.topic: article
-ms.service: microsoft-365-enterprise
+ms.service: microsoft-syntex
 search.appverid: ''
 ms.collection:
 - enabler-strategic
 - m365initiative-syntex
 ms.localizationpriority: medium
 description: Obtenga información sobre cómo crear documentos y otro contenido mediante una plantilla moderna en Microsoft Syntex.
-ms.openlocfilehash: 62016db6ee47a94c0b7c22ac8173b89c8150cc5f
-ms.sourcegitcommit: 04e517c7e00323b5c33d8ea937115725cf2cfd4d
+ms.openlocfilehash: 7b03b50be0243117b12ec08dfcc61a4f88ba8034
+ms.sourcegitcommit: 87283bb02ca750286f7c069f811b788730ed5832
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/13/2022
-ms.locfileid: "68564128"
+ms.lasthandoff: 10/21/2022
+ms.locfileid: "68660453"
 ---
 # <a name="overview-of-content-assembly-in-microsoft-syntex"></a>Introducción al ensamblado de contenido en Microsoft Syntex
 
@@ -30,7 +30,6 @@ Cargue un documento existente para crear una plantilla moderna y, a continuació
 
 > [!NOTE]
 > Debe ser un usuario con licencia de Syntex para acceder a las funcionalidades de ensamblado de contenido y usarlas. También debe tener permisos para administrar listas de SharePoint.
-
 
 ## <a name="requirements-and-limitations"></a>Requisitos y limitaciones
 

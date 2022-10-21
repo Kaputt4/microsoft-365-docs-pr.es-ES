@@ -18,12 +18,12 @@ ms.collection:
 - m365-security
 - tier3
 ms.topic: conceptual
-ms.openlocfilehash: 2bcd6ad83cbffca69f4b26c0088c7fe6b996c93d
-ms.sourcegitcommit: 0d8fb571024f134d7480fe14cffc5e31a687d356
+ms.openlocfilehash: 32c65808ea0c27dcb60fde8bdab17a447283ba08
+ms.sourcegitcommit: 87283bb02ca750286f7c069f811b788730ed5832
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/20/2022
-ms.locfileid: "68640530"
+ms.lasthandoff: 10/21/2022
+ms.locfileid: "68660233"
 ---
 # <a name="supported-microsoft-365-defender-streaming-event-types-in-event-streaming-api"></a>Tipos de eventos de streaming Microsoft 365 Defender admitidos en la API de streaming de eventos
 
@@ -57,11 +57,12 @@ La tabla siguiente solo incluye la lista de las tablas admitidas en la API de st
 | **[DeviceNetworkInfo](advanced-hunting-devicenetworkinfo-table.md)** | GA | GA | GA | GA |
 | **[DeviceProcessEvents](advanced-hunting-deviceprocessevents-table.md)** | GA | GA | GA | GA |
 | **[DeviceRegistryEvents](advanced-hunting-deviceregistryevents-table.md)** | GA | GA | GA | GA |
-| **[EmailAttachmentInfo](advanced-hunting-emailattachmentinfo-table.md)** | GA |![No](../defender-endpoint/images/svg/check-no.svg)|![No](../defender-endpoint/images/svg/check-no.svg)|![No](../defender-endpoint/images/svg/check-no.svg)|
-| **[EmailEvents](advanced-hunting-emailevents-table.md)** | GA |![No](../defender-endpoint/images/svg/check-no.svg)|![No](../defender-endpoint/images/svg/check-no.svg)|![No](../defender-endpoint/images/svg/check-no.svg)|
-| **[EmailPostDeliveryEvents](advanced-hunting-emailpostdeliveryevents-table.md)** | GA |![No](../defender-endpoint/images/svg/check-no.svg)|![No](../defender-endpoint/images/svg/check-no.svg)|![No](../defender-endpoint/images/svg/check-no.svg)|
-| **[EmailUrlInfo](advanced-hunting-emailurlinfo-table.md)** | GA |![No](../defender-endpoint/images/svg/check-no.svg)|![No](../defender-endpoint/images/svg/check-no.svg)|![No](../defender-endpoint/images/svg/check-no.svg)|
+| **[EmailAttachmentInfo](advanced-hunting-emailattachmentinfo-table.md)** | GA |Versión preliminar pública|Versión preliminar pública|Versión preliminar pública|
+| **[EmailEvents](advanced-hunting-emailevents-table.md)** | GA |Versión preliminar pública|Versión preliminar pública|Versión preliminar pública|
+| **[EmailPostDeliveryEvents](advanced-hunting-emailpostdeliveryevents-table.md)** | GA |Versión preliminar pública|Versión preliminar pública|Versión preliminar pública|
+| **[EmailUrlInfo](advanced-hunting-emailurlinfo-table.md)** | GA |Versión preliminar pública|Versión preliminar pública|Versión preliminar pública|
 | **[IdentityLogonEvents](advanced-hunting-identitylogonevents-table.md)**|GA|![No](../defender-endpoint/images/svg/check-no.svg)|![No](../defender-endpoint/images/svg/check-no.svg)|![No](../defender-endpoint/images/svg/check-no.svg)|
 | **[IdentityQueryEvents](advanced-hunting-identityqueryevents-table.md)**|GA|![No](../defender-endpoint/images/svg/check-no.svg)|![No](../defender-endpoint/images/svg/check-no.svg)|![No](../defender-endpoint/images/svg/check-no.svg)|
 | **[IdentityDirectoryEvents](advanced-hunting-identitydirectoryevents-table.md)**|GA|![No](../defender-endpoint/images/svg/check-no.svg)|![No](../defender-endpoint/images/svg/check-no.svg)|![No](../defender-endpoint/images/svg/check-no.svg)|
 | **[CloudAppEvents](advanced-hunting-cloudappevents-table.md)**|GA|![No](../defender-endpoint/images/svg/check-no.svg)|![No](../defender-endpoint/images/svg/check-no.svg)|![No](../defender-endpoint/images/svg/check-no.svg)|
+| **[UrlClickEvents](advanced-hunting-urlclickevents-table.md)**|Versión preliminar pública|Versión preliminar pública|Versión preliminar pública|Versión preliminar pública|

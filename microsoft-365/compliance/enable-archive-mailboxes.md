@@ -12,8 +12,8 @@ f1_keywords:
 ms.service: O365-seccomp
 ms.localizationpriority: high
 ms.collection:
-- Strat_O365_IP
-- M365-security-compliance
+- purview-compliance
+- tier2
 search.appverid:
 - MOE150
 - MET150
@@ -23,12 +23,12 @@ ms.custom:
 - admindeeplinkCOMPLIANCE
 - admindeeplinkEXCHANGE
 description: Obtenga información sobre cómo habilitar o deshabilitar buzones de archivo para que sean compatibles con los requisitos de retención de mensajes, eDiscovery y conservación de mensajes de su organización.
-ms.openlocfilehash: 9e01fb4c31045175e13674b2433b2a3b90a0c040
-ms.sourcegitcommit: 6f36cb8c69090c62a006d461bfc5aa1139cf09a9
+ms.openlocfilehash: 2dbece4e898ff4c01a6f224a1e7b69ab3a533448
+ms.sourcegitcommit: 87283bb02ca750286f7c069f811b788730ed5832
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/08/2022
-ms.locfileid: "67631402"
+ms.lasthandoff: 10/21/2022
+ms.locfileid: "68660211"
 ---
 # <a name="enable-archive-mailboxes-for-microsoft-365"></a>Habilitar buzones de archivo para Microsoft 365
 
@@ -38,7 +38,9 @@ El archivado en Microsoft 365 (también llamado *Archivado local*) proporciona a
 
 Use la información de este artículo para habilitar o deshabilitar un buzón de archivo mediante un portal de administración o mediante PowerShell. Obtenga también información sobre cómo ejecutar una comprobación de diagnóstico automatizada en el buzón de archivo de un usuario para identificar los problemas y las soluciones sugeridas.
 
-Actualmente, puede usar el [portal de cumplimiento Microsoft Purview](microsoft-365-compliance-center.md) o el [nuevo Centro de administración de Exchange (EAC)](/exchange/exchange-admin-center) para habilitar o deshabilitar buzones de archivo.
+La configuración para habilitar o deshabilitar los buzones de archivo se mueve de la [portal de cumplimiento Microsoft Purview](microsoft-365-compliance-center.md) al [nuevo Centro de administración de Exchange (EAC).](/exchange/exchange-admin-center) Hasta que se complete este traslado para todos los inquilinos, esta página incluye instrucciones para ambas experiencias de administrador.
+
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
 
 ## <a name="get-the-necessary-permissions"></a>Obtener los permisos necesarios
 
@@ -91,13 +93,13 @@ Puede tardar unos momentos para crear el buzón de archivo. Cuando se crea, **Ac
 
 De forma similar a cómo habilitar un buzón de archivo, puede usar la misma configuración en el EAC o el portal de cumplimiento para deshabilitar el buzón de archivo de un usuario. Esta vez, desactive el **archivo de buzón** en el EAC o seleccione la opción **Deshabilitar archivo** después de seleccionar el usuario en el portal de cumplimiento.
 
-Después de deshabilitar un buzón de archivo, puede volver a conectarlo al buzón de correo principal del usuario en un plazo de 30 días tras la deshabilitación. En este caso se restaura el contenido original del buzón de archivo. Transcurridos los 30 días, el contenido del buzón de archivo original se elimina definitivamente y no se puede recuperar. Así, si vuelve a habilitar el archivo después de los 30 días posteriores a la deshabilitación, se crea un buzón de archivo nuevo.
+After you disable an archive mailbox, you can reconnect it to the user's primary mailbox within 30 days of disabling it. In this case, the original contents of the archive mailbox are restored. After 30 days, the contents of the original archive mailbox are permanently deleted and can't be recovered. So if you re-enable the archive more than 30 days after disabling it, a new archive mailbox is created.
 
-La directiva de archivo de forma predeterminada asignada a los buzones de usuarios mueve los elementos al buzón de archivo dos años después de la fecha de entrega del elemento. Si deshabilita el buzón de archivo de un usuario, no se realizará ninguna acción en los elementos del buzón y permanecerán en el buzón principal del usuario.
+The default archive policy assigned to users' mailboxes moves items to the archive mailbox two years after the date the item is delivered. If you disable a user's archive mailbox, no action will be taken on mailbox items and they'll remain in the user's primary mailbox.
 
 ## <a name="use-exchange-online-powershell-to-enable-or-disable-archive-mailboxes"></a>Usar PowerShell de Exchange Online para habilitar o deshabilitar buzones de archivo.
 
-También puede usar PowerShell de Exchange Online para habilitar los buzones de archivo. La razón principal para usar PowerShell es que permite habilitar rápidamente el buzón de archivo para todos los usuarios de la organización.
+You can also use Exchange Online PowerShell to enable archive mailboxes. The primary reason to use PowerShell is that you can quickly enable the archive mailbox for all users in your organization.
 
 El primer paso es conectar al PowerShell de Exchange Online. Para obtener instrucciones, consulte [Conexión a Exchange Online PowerShell](/powershell/exchange/connect-to-exchange-online-powershell).
 

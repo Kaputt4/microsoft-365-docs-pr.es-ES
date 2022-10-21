@@ -11,22 +11,25 @@ ms.service: O365-seccomp
 ms.localizationpriority: high
 ms.assetid: ''
 ms.collection:
-- M365-security-compliance
+- purview-compliance
 - m365solution-mip
 - m365initiative-compliance
+- highpri
 description: Obtenga información sobre cómo mejorar el flujo de correo con MTA-STS.
-ms.openlocfilehash: b8833e7b737c5ab03fb57320bbdbad7513f33b47
-ms.sourcegitcommit: 2dedd0f594b817779e034afa6c4418def2382a22
+ms.openlocfilehash: 51ea4595c208ded39c980eee0ad9445383754350
+ms.sourcegitcommit: 87283bb02ca750286f7c069f811b788730ed5832
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/18/2022
-ms.locfileid: "67797697"
+ms.lasthandoff: 10/21/2022
+ms.locfileid: "68663551"
 ---
 # <a name="enhancing-mail-flow-with-mta-sts"></a>Mejora del flujo de correo con MTA-STS
 
 Se agregó compatibilidad con el estándar [SMTP MTA Strict Transport Security](https://datatracker.ietf.org/doc/html/rfc8461) (MTA-STS) a Exchange Online. El estándar se desarrolló para garantizar que siempre se use TLS para las conexiones entre los servidores de correo electrónico. También proporciona una manera de enviar servidores para validar que el servidor receptor tenga un certificado de confianza. Si no se ofrece TLS o el certificado no es válido, el remitente se negará a enviar los mensajes. Estas nuevas comprobaciones mejoran la seguridad general de SMTP y protegen frente a los ataques de tipo "Man in the middle”.
 
-MTA-STS se puede dividir en dos escenarios: protección entrante y saliente. La entrante cubre la protección de dominios hospedados en Exchange Online con MTA-STS y la saliente cubre las validaciones de MTA-STS realizadas por Exchange Online al enviar correos electrónicos a dominios protegidos MTA-STS.
+MTA-STS can be broken down into two scenarios: Inbound and Outbound Protection. Inbound covers the protection of domains hosted in Exchange Online with MTA-STS and Outbound covers the MTA-STS validations performed by Exchange Online when sending emails to MTA-STS protected domains.
+
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
 
 ## <a name="outbound-protection"></a>Protección saliente
 
@@ -55,7 +58,7 @@ mx: *.mail.protection.outlook.com
 max_age: 604800
 ```
 
-Cualquier cliente cuyos registros MX apunten directamente a Exchange Online pueden especificar su propia directiva con los mismos valores que se muestran anteriormente en la directiva de microsoft.com. La información única necesaria de la directiva es el registro MX que apunta a Exchange Online (`*`.mail.protection.outlook.com) y todos los clientes de Exchange Online comparten el mismo certificado. Es posible publicar la directiva en modo de *prueba* para asegurarse de que sea válida antes de cambiarla al modo de *aplicación*. Hay herramientas de validación de terceros que pueden comprobar la configuración.
+Cualquier cliente cuyos registros MX apunten directamente a Exchange Online puede especificar en su propia directiva con los mismos valores que se muestran anteriormente en la directiva de microsoft.com. La información única necesaria en la directiva es el registro MX que apunta a Exchange Online (`*`.mail.protection.outlook.com) y todos los clientes Exchange Online comparten el mismo certificado. Exchange Online solo permite que una organización reciba correos electrónicos para un dominio determinado, por lo que el uso de un carácter comodín no debilita la seguridad, pero puede que no sea el caso de otros servicios de correo electrónico. Es posible publicar la directiva en modo *de prueba* para asegurarse de que es válida antes de cambiarla a modo *de aplicación* . Hay herramientas de validación de terceros que pueden comprobar la configuración.
 
 Estas directivas no son algo que Exchange Online pueda hospedar en nombre de los clientes, por lo que los clientes deben configurar la directiva STS de su dominio mediante los servicios que prefieran. Los servicios de Azure se pueden usar fácilmente para el hospedaje de directivas y hay un tutorial de configuración más adelante en este artículo. La directiva debe protegerse mediante HTTPS con un certificado para el subdominio `mta-sts.<domain name>`.
 

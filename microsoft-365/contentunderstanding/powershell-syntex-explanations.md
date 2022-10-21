@@ -1,26 +1,28 @@
 ---
-title: Trabajar con explicaciones del modelo de comprensión de documentos en PowerShell
+title: Trabajar con explicaciones para modelos de procesamiento de documentos no estructurados en PowerShell
 ms.author: jaeccles
 author: jameseccles
 ms.reviewer: ssquires
-manager: serdars
+manager: ssquires
 audience: admin
 ms.topic: article
-ms.service: microsoft-365-enterprise
+ms.service: microsoft-syntex
 ms.collection:
 - enabler-strategic
 - m365initiative-syntex
 search.appverid: MET150
 ms.localizationpriority: medium
-description: Obtenga información sobre el trabajo con las explicaciones del modelo de comprensión de documentos de Microsoft Syntex en PowerShell.
-ms.openlocfilehash: c2ffc7493e91adc4e990da56e5a29408121eded2
-ms.sourcegitcommit: 04e517c7e00323b5c33d8ea937115725cf2cfd4d
+description: Obtenga información sobre el trabajo con explicaciones del modelo de Microsoft Syntex en PowerShell.
+ms.openlocfilehash: b4f647bbd168b89bf6306c63f2d6d9ee86ac2a5c
+ms.sourcegitcommit: 87283bb02ca750286f7c069f811b788730ed5832
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/13/2022
-ms.locfileid: "68564704"
+ms.lasthandoff: 10/21/2022
+ms.locfileid: "68659947"
 ---
-# <a name="work-with-document-understanding-model-explanations-in-powershell"></a>Trabajar con explicaciones del modelo de comprensión de documentos en PowerShell
+# <a name="work-with-explanations-for-unstructured-document-processing-models-in-powershell"></a>Trabajar con explicaciones para modelos de procesamiento de documentos no estructurados en PowerShell
+
+<sup>**Se aplica a:**  &ensp; &#10003; procesamiento de documentos no estructurados</sup>
 
 > [!IMPORTANT]
 > Los cmdlets de PowerShell de Microsoft Syntex y todos los demás componentes de PnP son herramientas de código abierto respaldadas por una comunidad activa que proporciona soporte técnico para ellos. Los canales oficiales de soporte técnico de Microsoft no ofrecen ningún contrato de nivel de servicio para herramientas de código abierto.

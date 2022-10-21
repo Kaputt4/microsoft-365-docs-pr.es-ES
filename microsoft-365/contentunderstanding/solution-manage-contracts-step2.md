@@ -7,17 +7,17 @@ ms.reviewer: ssquires
 audience: admin
 ms.topic: article
 ms.date: ''
-ms.service: microsoft-365-enterprise
+ms.service: microsoft-syntex
 search.appverid: ''
 ms.localizationpriority: medium
 ROBOTS: ''
 description: Obtenga información sobre cómo usar Microsoft Teams para crear el canal de administración de contratos mediante una solución de Microsoft 365.
-ms.openlocfilehash: 5c4f674ce315aa9e047ff56276bebc224738ce44
-ms.sourcegitcommit: 04e517c7e00323b5c33d8ea937115725cf2cfd4d
+ms.openlocfilehash: 262312b2b8f43a7f3cc177ccd1544a9d12fbdcd1
+ms.sourcegitcommit: 87283bb02ca750286f7c069f811b788730ed5832
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/13/2022
-ms.locfileid: "68563804"
+ms.lasthandoff: 10/21/2022
+ms.locfileid: "68661201"
 ---
 # <a name="step-2-use-microsoft-teams-to-create-your-contract-management-channel"></a>Paso 2. Uso de Microsoft Teams para crear el canal de administración de contratos
 
@@ -33,10 +33,9 @@ Cuando su organización configura una solución de administración de contratos,
 
 - **Tener una ubicación para que los miembros vean los contratos aprobados para saber cuándo se pueden enviar para el pago.** En SharePoint, deberá crear una lista **De pago** e incluir columnas para **el cliente**, **el contratista** y **el importe de la cuota**, seleccionando **Línea única de texto** como tipo de columna. Tendrá que agregar la lista **Para pago** como una pestaña de Teams en el canal Administración de contratos, de forma similar a [lo que hará para la pestaña **Contratos**](solution-manage-contracts-step2.md#attach-your-sharepoint-document-library-to-the-contracts-tab). La pestaña **Para pago** enumerará todos los contratos que deberán enviarse para el pago. Puede ampliar fácilmente esta solución para escribir esta información directamente en una aplicación financiera de terceros (por ejemplo, Dynamics CRM). 
 
-
 ## <a name="attach-your-sharepoint-document-library-to-the-contracts-tab"></a>Adjuntar la biblioteca de documentos de SharePoint a la pestaña Contratos
 
-Después de crear una pestaña **Contratos** en el canal administración de contratos, debe [adjuntar la biblioteca de documentos de SharePoint a ella](https://support.microsoft.com/office/add-a-sharepoint-page-list-or-document-library-as-a-tab-in-teams-131edef1-455f-4c67-a8ce-efa2ebf25f0b). La biblioteca de documentos de SharePoint que desea adjuntar es la que aplicó el modelo de comprensión de documentos de Syntex en la sección anterior.
+Después de crear una pestaña **Contratos** en el canal administración de contratos, debe [adjuntar la biblioteca de documentos de SharePoint a ella](https://support.microsoft.com/office/add-a-sharepoint-page-list-or-document-library-as-a-tab-in-teams-131edef1-455f-4c67-a8ce-efa2ebf25f0b). La biblioteca de documentos de SharePoint que desea adjuntar es la que aplicó el modelo de procesamiento de documentos no estructurados en la sección anterior.
 
 Después de adjuntar la biblioteca de documentos de SharePoint, podrá ver los contratos clasificados a través de una vista de lista predeterminada.
 
