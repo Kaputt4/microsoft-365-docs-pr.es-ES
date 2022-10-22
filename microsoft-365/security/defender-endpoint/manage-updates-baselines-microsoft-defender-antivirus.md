@@ -7,7 +7,7 @@ ms.mktglfcycl: manage
 ms.sitesec: library
 ms.pagetype: security
 ms.localizationpriority: high
-ms.date: 10/13/2022
+ms.date: 10/21/2022
 audience: ITPro
 ms.topic: reference
 author: denisebmsft
@@ -20,12 +20,12 @@ ms.collection:
 - m365-security
 - tier2
 search.appverid: met150
-ms.openlocfilehash: da95c91fcf376ac4c2d0b25efa0762f067455e5d
-ms.sourcegitcommit: 3d2bbc20ac4e0258778cfca1b6b465f3c8c2c297
+ms.openlocfilehash: 94f2818f2e470807b9e4ed7f4ee23334106e2d50
+ms.sourcegitcommit: a250d043a2e42ecbc7b86147468d1660af5a6ba7
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/14/2022
-ms.locfileid: "68576669"
+ms.lasthandoff: 10/21/2022
+ms.locfileid: "68673181"
 ---
 # <a name="manage-microsoft-defender-antivirus-updates-and-apply-baselines"></a>Para obtener más información, consulte Administrar actualizaciones de Antivirus de Microsoft Defender y aplicar bases de referencia.
 
@@ -841,6 +841,21 @@ We recommend updating your Windows 10 (Enterprise, Pro, and Home editions), Wind
 Para obtener más información, vea [las imágenes de instalación de Microsoft Defender para el sistema operativo Windows](https://support.microsoft.com/help/4568292/defender-update-for-windows-operating-system-installation-images).
 
 <details>
+<summary>20221014.1</summary>
+
+&ensp;Versión del paquete: **20221014.1**<br/>
+&ensp;Versión de la plataforma: **4.18.2209.7**<br/>
+&ensp;Versión del motor: **1.1.19700.3**<br/>
+&ensp;Versión de firma: **1.373.208.0**<br/>
+
+### <a name="fixes"></a>Correcciones
+- Ninguno
+
+### <a name="additional-information"></a>Información adicional
+- Ninguno
+
+<br/>
+</details><details>
 <summary>20220929.1</summary>
 
 &ensp;Versión del paquete: **2020929.1**<br/>

@@ -19,12 +19,12 @@ ms.collection:
 search.appverid:
 - MET150
 description: Obtenga información sobre cómo definir la configuración central de prevención de pérdida de datos en el punto de conexión (DLP).
-ms.openlocfilehash: d3b38a9125979f33e4d22277b8967f4f3d37c349
-ms.sourcegitcommit: 0d8fb571024f134d7480fe14cffc5e31a687d356
+ms.openlocfilehash: eaa286aa1767b1cbf401d44035d1ed240131af69
+ms.sourcegitcommit: a250d043a2e42ecbc7b86147468d1660af5a6ba7
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/20/2022
-ms.locfileid: "68621370"
+ms.lasthandoff: 10/21/2022
+ms.locfileid: "68672961"
 ---
 # <a name="configure-endpoint-data-loss-prevention-settings"></a>Configuración de la prevención de pérdida de datos de punto de conexión
 
@@ -403,8 +403,8 @@ Esta característica está disponible para dispositivos que ejecutan cualquiera 
 Puede definir dispositivos de almacenamiento extraíbles mediante estos parámetros:
 
 - Nombre descriptivo del dispositivo de almacenamiento: obtenga el valor nombre descriptivo de los detalles de la propiedad del dispositivo de almacenamiento en el administrador de dispositivos.
-- Id. de producto USB: obtenga el valor de ruta de acceso de la instancia de dispositivo de los detalles de la propiedad del dispositivo de impresora en el administrador de dispositivos. Conviértalo en el formato id. de producto y de id. de proveedor, consulte [Identificadores USB estándar](/windows-hardware/drivers/install/standard-usb-identifiers).
-- Id. de proveedor USB: obtenga el valor de ruta de acceso de la instancia de dispositivo de los detalles de la propiedad del dispositivo de impresora en el administrador de dispositivos. Conviértalo en el formato id. de producto y de id. de proveedor, consulte [Identificadores USB estándar](/windows-hardware/drivers/install/standard-usb-identifiers).
+- Id. de producto USB: obtenga el valor de ruta de acceso de la instancia de dispositivo de los detalles de la propiedad del dispositivo USB en el administrador de dispositivos. Conviértalo en el formato id. de producto y de id. de proveedor, consulte [Identificadores USB estándar](/windows-hardware/drivers/install/standard-usb-identifiers).
+- Id. de proveedor USB: obtenga el valor de ruta de acceso de la instancia de dispositivo de los detalles de la propiedad del dispositivo USB en el administrador de dispositivos. Conviértalo en el formato id. de producto y de id. de proveedor, consulte [Identificadores USB estándar](/windows-hardware/drivers/install/standard-usb-identifiers).
 - Id. de número de serie: obtenga el valor de id. de número de serie de los detalles de la propiedad del dispositivo de almacenamiento en el administrador de dispositivos.
 - Id. de dispositivo: obtenga el valor de id. de dispositivo de los detalles de la propiedad del dispositivo de almacenamiento en el administrador de dispositivos.
 - Id. de ruta de acceso de instancia: obtenga el valor de id. de dispositivo de los detalles de la propiedad del dispositivo de almacenamiento en el administrador de dispositivos.

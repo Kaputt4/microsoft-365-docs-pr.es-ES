@@ -20,12 +20,12 @@ ms.custom: seo-marvel-apr2020
 ms.reviewer: vippand
 ms.subservice: mdo
 ms.service: microsoft-365-security
-ms.openlocfilehash: 75d0c3b56ba45be8540cd8bd877f1c9067fceb4a
-ms.sourcegitcommit: 0d8fb571024f134d7480fe14cffc5e31a687d356
+ms.openlocfilehash: 5fd3435be3d0ec64f8d501cc6957578dbe4c2458
+ms.sourcegitcommit: a250d043a2e42ecbc7b86147468d1660af5a6ba7
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/20/2022
-ms.locfileid: "68639936"
+ms.lasthandoff: 10/21/2022
+ms.locfileid: "68672832"
 ---
 # <a name="whats-new-in-microsoft-defender-for-office-365"></a>Novedades de Microsoft Defender para Office 365
 
@@ -52,6 +52,8 @@ Para obtener más información sobre las novedades de otros productos de segurid
 - **[Administre los bloques y los permitidos en la lista de permitidos o bloqueados de inquilinos](manage-tenant-allow-block-list.md):**
   - Con **permitir la administración de expiración** (actualmente en versión preliminar privada), si Microsoft no ha aprendido del permiso, Microsoft ampliará automáticamente el tiempo de expiración de las autorizaciones, que expirarán pronto, en 30 días para evitar que el correo electrónico legítimo vuelva a entrar en correo no deseado o en cuarentena de nuevo.
   - Los clientes de los entornos de nube gubernamentales ahora podrán crear entradas permitidas y de bloqueo para direcciones URL y datos adjuntos en la lista de permitidos o bloqueados de inquilinos mediante la dirección URL de administrador y los envíos de datos adjuntos de correo electrónico. Los datos enviados a través de la experiencia de envíos no abandonarán el inquilino del cliente, cumpliendo así los compromisos de residencia de datos para los clientes en la nube gubernamentales.
+- **Mejora en las alertas de clic de dirección URL:**
+  - Con el nuevo escenario de devolución de mirada, la alerta "Se detectó un clic de dirección URL potencialmente malintencionada" ahora incluirá los clics durante las _últimas 48 horas_ (para correos electrónicos) desde el momento en que se identifica el veredicto de dirección URL malintencionada. 
 
 ## <a name="september-2022"></a>Septiembre de 2022
 
@@ -74,6 +76,7 @@ Para obtener más información sobre las novedades de otros productos de segurid
 - El redireccionamiento está habilitado de forma predeterminada y afecta a todos los usuarios del inquilino.
 - Los administradores globales y administradores de seguridad pueden activar o desactivar el redireccionamiento en el portal de Microsoft 365 Defender; para ello, vaya a **Configuración** >  Email &**redirección del portal** de **colaboración** >  y cambie el botón de alternancia de redirección.
 - **Protección integrada**: perfil que habilita un nivel base de protección de vínculos seguros y datos adjuntos seguros que está activado de forma predeterminada para todos los clientes Defender para Office 365. Para obtener más información sobre esta nueva directiva y el orden de precedencia, consulte [Directivas de seguridad preestablecidas](preset-security-policies.md) y para obtener información sobre los controles de vínculos seguros y datos adjuntos seguros específicos, consulte [Configuración de datos adjuntos seguros](recommended-settings-for-eop-and-office365.md#safe-attachments-settings) y [Configuración de vínculos seguros](recommended-settings-for-eop-and-office365.md#safe-links-settings).
+- **El nivel de queja masiva** ya está disponible en la tabla EmailEvents de Búsqueda avanzada con valores BCL numéricos de 0 a 9. Una puntuación de BCL más alta indica que es más probable que el mensaje masivo genere quejas y que sea más probable que sea correo no deseado.
 
 ## <a name="july-2022"></a>Julio de 2022
 

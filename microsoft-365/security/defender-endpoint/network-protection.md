@@ -20,12 +20,12 @@ ms.collection:
 - m365-security
 - tier2
 search.appverid: met150
-ms.openlocfilehash: 6e246cfeb14095cf0b5c471cbe4b3707d94d203d
-ms.sourcegitcommit: 87283bb02ca750286f7c069f811b788730ed5832
+ms.openlocfilehash: ab9af833225c26a0c0651a6fd3adacf948881f34
+ms.sourcegitcommit: a250d043a2e42ecbc7b86147468d1660af5a6ba7
 ms.translationtype: MT
 ms.contentlocale: es-ES
 ms.lasthandoff: 10/21/2022
-ms.locfileid: "68662607"
+ms.locfileid: "68673203"
 ---
 # <a name="protect-your-network"></a>Proteger la red
 
@@ -47,11 +47,22 @@ ms.locfileid: "68662607"
 
 La protección de red ayuda a proteger los dispositivos frente a eventos basados en Internet. La protección de red es una capacidad de reducción de la superficie expuesta a ataques. Ayuda a evitar que los empleados accedan a dominios peligrosos a través de aplicaciones. Los dominios que hospedan estafas de phishing, vulnerabilidades de seguridad y otro contenido malintencionado en Internet se consideran peligrosos. La protección de red expande el ámbito de [Microsoft Defender SmartScreen](/windows/security/threat-protection/microsoft-defender-smartscreen/microsoft-defender-smartscreen-overview) para bloquear todo el tráfico HTTP saliente que intenta conectarse a orígenes de baja reputación (en función del dominio o el nombre de host).
 
-La protección de red amplía la protección de la [protección web](web-protection-overview.md) al nivel del sistema operativo. Proporciona la funcionalidad de protección web que se encuentra en Microsoft Edge a otros exploradores compatibles y aplicaciones que no son de explorador. La protección de red también proporciona visibilidad y bloqueo de indicadores de riesgo (IOC) cuando se usan con la [detección y respuesta de puntos de conexión](overview-endpoint-detection-response.md). Por ejemplo, la protección de red funciona con [los indicadores personalizados](manage-indicators.md) que puede usar para bloquear dominios o nombres de host específicos.
+La protección de red amplía la protección de la [protección web](web-protection-overview.md) al nivel del sistema operativo y es un componente principal para el filtrado de contenido web (WCF). Proporciona la funcionalidad de protección web que se encuentra en Microsoft Edge a otros exploradores compatibles y aplicaciones que no son de explorador. La protección de red también proporciona visibilidad y bloqueo de indicadores de riesgo (IOC) cuando se usan con la [detección y respuesta de puntos de conexión](overview-endpoint-detection-response.md). Por ejemplo, la protección de red funciona con [los indicadores personalizados](manage-indicators.md) que puede usar para bloquear dominios o nombres de host específicos.
+
+### <a name="network-protection-coverage"></a>Cobertura de protección de red
+
+En la tabla siguiente se resumen las áreas de cobertura de protección de red.
+
+| Característica | Microsoft Edge | Exploradores de terceros | Procesos que no son del explorador <br> (por ejemplo, PowerShell) |
+|:---|:---|:---|:---|
+| Protección contra amenazas web | SmartScreen debe estar habilitado | NP tiene que estar en modo de bloque | NP tiene que estar en modo de bloque |
+| Indicadores personalizados | SmartScreen debe estar habilitado | NP tiene que estar en modo de bloque | NP tiene que estar en modo de bloque |
+| Filtrado de contenido web | SmartScreen debe estar habilitado | NP tiene que estar en modo de bloque | No compatible |
 
 > [!NOTE]
+> La protección de red no supervisa msedge.exe en dispositivos Windows.
+> Para Mac y Linux, debe tener protección de red en modo de bloque para obtener compatibilidad con estas características en Edge.
 > En el caso de procesos distintos de Microsoft Edge e Internet Explorer, los escenarios de protección web aprovechan la protección de red para la inspección y el cumplimiento:
->
 > - Ip es compatible con los tres protocolos (TCP, HTTP y HTTPS (TLS)).
 > - Solo se admiten direcciones IP únicas (sin bloques CIDR ni intervalos IP) en indicadores personalizados.
 > - Las direcciones URL cifradas (ruta de acceso completa) solo se pueden bloquear en exploradores de primera entidad (Internet Explorer, Edge).
@@ -69,7 +80,8 @@ La protección de red requiere Windows 10 o 11 (Pro o Enterprise), Windows Serve
 
 | Versión de Windows | Antivirus de Microsoft Defender |
 |:---|:---|
-| Windows 10 versión 1709 o posterior <br/> Windows 11 <br/> Windows Server 1803 o posterior | Asegúrese de que [Microsoft Defender protección antivirus en tiempo real](configure-real-time-protection-microsoft-defender-antivirus.md) y [la protección entregada en la nube](enable-cloud-protection-microsoft-defender-antivirus.md) estén habilitadas (activas). |
+| Windows 10 versión 1709 o posterior, Windows 11, Windows Server 1803 o posterior | Asegúrese de que [Microsoft Defender protección antivirus en tiempo real](configure-real-time-protection-microsoft-defender-antivirus.md) y [protección entregada en la nube](enable-cloud-protection-microsoft-defender-antivirus.md) estén habilitadas (activas) |
+| Windows Server 2012 R2 y Windows Server 2016 con el agente unificado | Platform Update versión 4.18.2001.x.x o posterior |
 
 ## <a name="why-network-protection-is-important"></a>Por qué es importante la protección de red
 
@@ -161,7 +173,7 @@ Con los indicadores de Defender para punto de conexión, los administradores pue
 
 :::image type="content" source="images/network-protection-smart-screen-block-notification.png" alt-text="Seguridad de Windows notificación para la protección de red.":::
 
-Microsoft Defender para punto de conexión administradores pueden configurar la funcionalidad Desbloquee SmartScreen en el [portal de Microsoft 365 Defender](https://security.microsoft.com) mediante un indicador de "permitir" para direcciones IP, direcciones URL y dominios. 
+Microsoft Defender para punto de conexión administradores pueden configurar la funcionalidad Desbloquee SmartScreen en el [portal de Microsoft 365 Defender](https://security.microsoft.com) mediante un indicador de "permitir" para direcciones IP, direcciones URL y dominios.
 
 :::image type="content" source="images/network-protection-smart-screen-block-configuration.png" alt-text="SmartScreen de protección de red bloquea la configuración de ULR y el formulario IP.":::
 
@@ -174,7 +186,7 @@ La protección de red está habilitada por dispositivo, que normalmente se reali
 > [!NOTE]
 > Microsoft Defender Antivirus debe estar activo para habilitar la protección de red.
 
-Puede habilitar la protección de red en modo **auditoría** o **modo de bloqueo** . Si desea evaluar el impacto de habilitar la protección de red antes de bloquear realmente direcciones IP o direcciones URL, puede habilitar la protección de red en el modo auditoría durante el tiempo necesario para recopilar datos sobre lo que se bloquearía. Registros de modo de auditoría cuando los usuarios finales se han conectado a una dirección o sitio que, de lo contrario, habrían sido bloqueados por la protección de red.
+Puede habilitar la protección de red en modo **auditoría** o **modo de bloqueo** . Si desea evaluar el impacto de habilitar la protección de red antes de bloquear realmente direcciones IP o direcciones URL, puede habilitar la protección de red en el modo auditoría durante el tiempo necesario para recopilar datos sobre lo que se bloquearía. Registros de modo de auditoría cuando los usuarios finales se han conectado a una dirección o sitio que, de lo contrario, habrían sido bloqueados por la protección de red. Tenga en cuenta que para que los indicadores de peligro (IoC) o el filtrado de contenido web (WCF) funcionen, la protección de red debe estar en "Modo de bloqueo".
 
 Para obtener información sobre la protección de red para Linux y macOS, consulte Protección [de red para Linux](network-protection-linux.md) y [Protección de red para macOS](network-protection-macos.md).
 
@@ -195,7 +207,6 @@ DeviceEvents
 
 ```
 
-
 :::image type="content" source="images/network-protection-advanced-hunting.png" alt-text="Búsqueda avanzada de eventos de auditoría e identificación." lightbox="images/network-protection-advanced-hunting.png":::
 
 > [!TIP]
@@ -213,6 +224,7 @@ DeviceEvents:
 |sort by Timestamp desc
 
 ```
+
 La categoría Respuesta indica qué causó el evento, por ejemplo:
 
 | ResponseCategory | Característica responsable del evento |
@@ -317,7 +329,7 @@ Debido a la naturaleza multiusuario de Windows 10 Enterprise, tenga en cuenta lo
 
 ### <a name="alternative-option-for-network-protection"></a>Opción alternativa para la protección de red
 
-Para Windows Server versión 1803 o posterior y Windows 10 Enterprise Multi-Session 1909 y versiones posteriores, que se usan en Windows Virtual Desktop en Azure, la protección de red para Microsoft Edge se puede habilitar mediante el siguiente método:
+Para el cliente MDE unificado de Windows Server 2012R2/2016, Windows Server versión 1803 o posterior, Windows Server 2019 o posterior, y Windows 10 Enterprise Multi-Session 1909 y versiones posteriores, que se usan en Windows Virtual Desktop en Azure, la protección de red para Microsoft Edge se puede habilitar mediante el método siguiente:
 
 1. Use [Activar la protección de red](enable-network-protection.md) y siga las instrucciones para aplicar la directiva.
 
@@ -327,6 +339,57 @@ Para Windows Server versión 1803 o posterior y Windows 10 Enterprise Multi-Sess
    - `Set-MpPreference -AllowNetworkProtectionOnWinServer 1`
    - `Set-MpPreference -AllowNetworkProtectionDownLevel 1`
    - `Set-MpPreference -AllowDatagramProcessingOnWinServer 1`
+
+> [!NOTE]
+> En algunos casos, dependiendo de la infraestructura, el volumen de tráfico y otras condiciones, `Set-MpPreference -AllowDatagramProcessingOnWinServer 1` pueden tener un efecto en el rendimiento de la red.
+
+### <a name="network-protection-for-windows-servers"></a>Protección de red para servidores Windows Server
+
+A continuación se muestra información específica de Servidores Windows.
+
+#### <a name="verify-that-network-protection-is-enabled"></a>Comprobación de que la protección de red está habilitada
+
+Compruebe si la protección de red está habilitada en un dispositivo local mediante el Editor del Registro.
+
+1. Seleccione el botón **Iniciar** en la barra de tareas y escriba **regedit** para abrir el Editor del Registro.
+1. Seleccione **HKEY_LOCAL_MACHINE** en el menú lateral.
+1. Navegue por los menús anidados a **Directivas** >  **de SOFTWARE** > **Microsoft** > **Windows Defender** >  **Windows Defender Protección de red de Protección contra vulnerabilidades** >  de **seguridad**.
+
+   (Si la clave no está presente, vaya a **SOFTWARE.** >  **Microsoft** >   >  Windows Defender **Windows Defender Protección contra vulnerabilidades de seguridad** > **de red**)
+
+4. Seleccione **EnableNetworkProtection** para ver el estado actual de la protección de red en el dispositivo:
+
+   - 0 = Desactivado
+   - 1 = Activado (habilitado)
+   - 2 = Modo auditoría
+
+Para obtener más información, consulte: [Activar la protección de red](enable-network-protection.md).
+
+##### <a name="network-protection-suggestion"></a>Sugerencia de protección de red
+
+Para el cliente MDE unificado de Windows Server 2012R2/2016, Windows Server versión 1803 o posterior, Windows Server 2019 o posterior, y Windows 10 Enterprise Multi-Session 1909 y versiones posteriores (que se usan en Windows Virtual Desktop en Azure), hay claves del Registro adicionales que deben estar habilitadas:
+
+**HKEY_LOCAL_MACHINE**\* *SOFTWARE**\** Directivas **\**Microsoft**\* *Windows Defender**\** Windows Defender Protección contra vulnerabilidades de seguridad **\**Protección de red**
+
+**AllowNetworkProtectionDownLevel** (dword) 1 (hexadecimal) **AllowNetworkProtectionOnWinServer** (dword) 1 (hexadecimal) **EnableNetworkProtection** (dword) 1 (hexadecimal)
+
+> [!NOTE]
+> En función de la infraestructura, el volumen del tráfico y otras condiciones, **HKEY_LOCAL_MACHINE**\\**directivas**\\\\**de SOFTWARE**\\**Microsoft**\\ **Windows Defender** \\**IPS** de **los consumidores** **NIS**\\ - **AllowDatagramProcessingOnWinServer (dword) 1 (hexadecimal)** puede tener un efecto en el rendimiento de la red.
+
+Para obtener más información, consulte: [Activar la protección de red](enable-network-protection.md).
+
+#### <a name="windows-servers-and-windows-multi-session-configuration-requires-powershell"></a>La configuración de servidores Windows y windows multisesión requiere PowerShell
+
+En el caso de los servidores Windows y las sesiones múltiples de Windows, hay elementos adicionales que debe habilitar mediante cmdlets de PowerShell. Para el cliente MDE unificado de Windows Server 2012R2/2016, Windows Server versión 1803 o posterior, Windows Server 2019 o posterior, y Windows 10 Enterprise Multi-Session 1909 y versiones posteriores, que se usan en Windows Virtual Desktop en Azure.
+
+1. Set-MpPreference -EnableNetworkProtection habilitado
+1. Set-MpPreference -AllowNetworkProtectionOnWinServer 1
+1. Set-MpPreference -AllowNetworkProtectionDownLevel 1
+1. Set-MpPreference -AllowDatagramProcessingOnWinServer 1
+
+> [!NOTE]
+> En algunos casos, en función de la infraestructura, el volumen del tráfico y otras condiciones, **Set-MpPreference -AllowDatagramProcessingOnWinServer 1** puede tener un efecto en el rendimiento de la red.
+
 
 ## <a name="network-protection-troubleshooting"></a>Solución de problemas de protección de red
 

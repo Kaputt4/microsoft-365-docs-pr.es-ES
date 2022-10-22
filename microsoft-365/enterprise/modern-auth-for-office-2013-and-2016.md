@@ -25,12 +25,12 @@ ms.collection:
 - scotvorg
 - M365-security-compliance
 description: Obtenga información sobre cómo funcionan las características de autenticación modernas de Microsoft 365 de forma diferente para las aplicaciones cliente de Office 2013 y 2016.
-ms.openlocfilehash: fc6bf4dad1fbd19b76c247f0836978184afadc0f
-ms.sourcegitcommit: 0d8fb571024f134d7480fe14cffc5e31a687d356
+ms.openlocfilehash: e22f4106d52301acccebe53c6b42caa3663e2787
+ms.sourcegitcommit: a250d043a2e42ecbc7b86147468d1660af5a6ba7
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/20/2022
-ms.locfileid: "68643435"
+ms.lasthandoff: 10/21/2022
+ms.locfileid: "68672983"
 ---
 # <a name="how-modern-authentication-works-for-office-2013-office-2016-and-office-2019-client-apps"></a>Funcionamiento de la autenticación moderna para aplicaciones cliente de Office 2013, Office 2016 y Office 2019
 
@@ -91,10 +91,12 @@ Para las instalaciones basadas en hacer clic y ejecutar *, debe* tener instalado
 |---------|---------|---------|
 |MSO.DLL     |C:\Archivos de programa\Microsoft Office 15\root\vfs\ProgramFilesCommonx86\Microsoft Shared\OFFICE15\MSO.DLL       |15.0.4753.1001       |
 |CSI.DLL   |CSI.DLL C:\Archivos de programa\Microsoft Office 15\root\office15\csi.dll         |15.0.4753.1000        |
-|Groove.EXE     |C:\Archivos de programa\Microsoft Office 15\root\office15\GROOVE.exe       |15.0.4763.1000      |
+|Groove.EXE*     |C:\Archivos de programa\Microsoft Office 15\root\office15\GROOVE.exe       |15.0.4763.1000      |
 |Outlook.exe     |C:\Archivos de programa\Microsoft Office 15\root\office15\OUTLOOK.exe         |15.0.4753.1002     |
 |ADAL.DLL    |C:\Archivos de programa\Microsoft Office 15\root\vfs\ProgramFilesCommonx86\Microsoft Shared\OFFICE15\ADAL.DLL       |1.0.2016.624         |
 |Iexplore.exe    |C:\Archivos de programa\Internet Explorer     |Varía         |
+
+\* Si el componente Groove.EXE no está presente en la instalación de Office, no es necesario instalarlo para que ADAL funcione. Sin embargo, si está presente, se requiere la compilación para Groove.EXE que se muestra aquí.
 
 ### <a name="msi-based-installations"></a>Instalaciones basadas en MSI
 
@@ -103,12 +105,14 @@ Para las instalaciones basadas en MSI, el siguiente software *debe* instalarse e
 
 |Nombre de archivo  |Ruta de instalación en el equipo  |Dónde obtener la actualización  |Versión  |
 |---------|---------|---------|---------|
-|MSO.DLL|C:\Archivos de programa\Archivos comunes\Microsoft Shared\OFFICE15\MSO.DLL     |[KB3085480](https://nam06.safelinks.protection.outlook.com/?url=https%3A%2F%2Fsupport.microsoft.com%2Fen-us%2Fkb%2F3085480&data=05%7C01%7Cmeerak%40microsoft.com%7Cbfbfa82510d542bc83c808dab07f400b%7C72f988bf86f141af91ab2d7cd011db47%7C1%7C0%7C638016357854522241%7CUnknown%7CTWFpbGZsb3d8eyJWIjoiMC4wLjAwMDAiLCJQIjoiV2luMzIiLCJBTiI6Ik1haWwiLCJXVCI6Mn0%3D%7C3000%7C%7C%7C&sdata=kpOu5cLXGFtynjGMejN2rk89wNQCezFHKTwf1BkwiBI%3D&reserved=0)        |15.0.4753.1001       |
-|CSI.DLL|C:\Archivos de programa\Archivos comunes\Microsoft Shared\OFFICE15\Csi.dll     |[KB3085504](https://nam06.safelinks.protection.outlook.com/?url=https%3A%2F%2Fsupport.microsoft.com%2Fen-us%2Fkb%2F3085504&data=05%7C01%7Cmeerak%40microsoft.com%7Cbfbfa82510d542bc83c808dab07f400b%7C72f988bf86f141af91ab2d7cd011db47%7C1%7C0%7C638016357854522241%7CUnknown%7CTWFpbGZsb3d8eyJWIjoiMC4wLjAwMDAiLCJQIjoiV2luMzIiLCJBTiI6Ik1haWwiLCJXVCI6Mn0%3D%7C3000%7C%7C%7C&sdata=CdsLij5YpLUk3ZPGSLqJolHyNkvuJ7pAJjUwiwXrtEs%3D&reserved=0)        |15.0.4753.1000         |
-|Groove.exe|C:\Archivos de programa\Microsoft Office\Office15\GROOVE.EXE            |[KB3085509](https://nam06.safelinks.protection.outlook.com/?url=https%3A%2F%2Fsupport.microsoft.com%2Fen-us%2Fkb%2F3085509&data=05%7C01%7Cmeerak%40microsoft.com%7Cbfbfa82510d542bc83c808dab07f400b%7C72f988bf86f141af91ab2d7cd011db47%7C1%7C0%7C638016357854679005%7CUnknown%7CTWFpbGZsb3d8eyJWIjoiMC4wLjAwMDAiLCJQIjoiV2luMzIiLCJBTiI6Ik1haWwiLCJXVCI6Mn0%3D%7C3000%7C%7C%7C&sdata=pJFCjaVvlM0bmBjHSZ6neKQJbOYwTJzHHwB0XDLrfWs%3D&reserved=0)        |15.0.4763.1000         |
-|Outlook.exe|C:\Archivos de programa\Microsoft Office\Office15\OUTLOOK.EXE          |[KB3085495](https://nam06.safelinks.protection.outlook.com/?url=https%3A%2F%2Fsupport.microsoft.com%2Fen-us%2Fkb%2F3085495&data=05%7C01%7Cmeerak%40microsoft.com%7Cbfbfa82510d542bc83c808dab07f400b%7C72f988bf86f141af91ab2d7cd011db47%7C1%7C0%7C638016357854679005%7CUnknown%7CTWFpbGZsb3d8eyJWIjoiMC4wLjAwMDAiLCJQIjoiV2luMzIiLCJBTiI6Ik1haWwiLCJXVCI6Mn0%3D%7C3000%7C%7C%7C&sdata=JHsuqm3lrYwE1DA1kZzBDym%2F3pY%2FFNTUlSkwhho1rWU%3D&reserved=0)        |15.0.4753.1002         |
-|ADAL.DLL|C:\Archivos de programa\Archivos comunes\Microsoft Shared\OFFICE15\ADAL.DLL   |[KB3055000](https://nam06.safelinks.protection.outlook.com/?url=https%3A%2F%2Fsupport.microsoft.com%2Fen-us%2Fkb%2F3055000&data=05%7C01%7Cmeerak%40microsoft.com%7Cbfbfa82510d542bc83c808dab07f400b%7C72f988bf86f141af91ab2d7cd011db47%7C1%7C0%7C638016357854679005%7CUnknown%7CTWFpbGZsb3d8eyJWIjoiMC4wLjAwMDAiLCJQIjoiV2luMzIiLCJBTiI6Ik1haWwiLCJXVCI6Mn0%3D%7C3000%7C%7C%7C&sdata=tm7iaJP%2BA3h%2BYvNQyzhQKLMgNUojihYdCxUnfDBDd4A%3D&reserved=0)        |1.0.2016.624         |
-|Iexplore.exe|C:\Archivos de programa\Internet Explorer                             |[MS14-052](https://nam06.safelinks.protection.outlook.com/?url=https%3A%2F%2Fsupport.mi1.0.2016.624crosoft.com%2Fen-us%2Fkb%2F2977629&data=05%7C01%7Cmeerak%40microsoft.com%7Cbfbfa82510d542bc83c808dab07f400b%7C72f988bf86f141af91ab2d7cd011db47%7C1%7C0%7C638016357854679005%7CUnknown%7CTWFpbGZsb3d8eyJWIjoiMC4wLjAwMDAiLCJQIjoiV2luMzIiLCJBTiI6Ik1haWwiLCJXVCI6Mn0%3D%7C3000%7C%7C%7C&sdata=dXZr3ft6w6%2FLVfke6b1WDRY%2BI7RCFebPeFDyWN8OMC0%3D&reserved=0)         |No aplicable         |
+|MSO.DLL|C:\Archivos de programa\Archivos comunes\Microsoft Shared\OFFICE15\MSO.DLL     |[KB3085480](https://support.microsoft.com/en-us/topic/description-of-the-security-update-for-office-2013-september-10-2019-0d171ba2-2eba-a2ca-a54d-c0f568de6bcc)        |15.0.4753.1001       |
+|CSI.DLL|C:\Archivos de programa\Archivos comunes\Microsoft Shared\OFFICE15\Csi.dll     |[KB3172545](https://support.microsoft.com/en-us/topic/july-11-2017-update-for-office-2013-kb3172545-d6b47054-04d5-5154-40ba-3436d1e0efdb)        |15.0.4753.1000         |
+|Groove.exe*|C:\Archivos de programa\Microsoft Office\Office15\GROOVE.EXE            |[KB4022226](https://support.microsoft.com/en-us/topic/august-7-2018-update-for-onedrive-for-business-for-office-2013-kb4022226-6163bb26-cbde-eb16-ac42-abfda7afbf68)        |15.0.4763.1000         |
+|Outlook.exe|C:\Archivos de programa\Microsoft Office\Office15\OUTLOOK.EXE          |[KB4484096](https://support.microsoft.com/en-us/topic/october-1-2019-update-for-outlook-2013-kb4484096-6513145a-cc75-1cd1-72b7-78cb62d8476b)        |15.0.4753.1002         |
+|ADAL.DLL|C:\Archivos de programa\Archivos comunes\Microsoft Shared\OFFICE15\ADAL.DLL   |[KB3085565](https://support.microsoft.com/en-us/topic/july-5-2016-update-for-office-2013-kb3085565-1d1a6d24-fbd4-1bae-242f-a35e0e2aba40)        |1.0.2016.624         |
+|Iexplore.exe|C:\Archivos de programa\Internet Explorer                             |[MS14-052](https://support.microsoft.com/en-us/topic/ms14-052-cumulative-security-update-for-internet-explorer-september-9-2014-17d29b71-9e78-0bc1-8961-7b812d04e4e1)         |No aplicable         |
+
+\* Si el componente Groove.EXE no está presente en la instalación de Office, no es necesario instalarlo para que ADAL funcione. Sin embargo, si está presente, se requiere la compilación para Groove.EXE que se muestra aquí.
 
 Los clientes de Office 2016 y Office 2019 admiten la autenticación moderna de forma predeterminada y no se necesita ninguna acción para que el cliente use estos nuevos flujos. Sin embargo, se necesita una acción explícita para usar la autenticación heredada.
 
@@ -128,8 +132,8 @@ En la tabla siguiente se describe el comportamiento de autenticación de las apl
 |Versión de la aplicación cliente de Office****|¿La clave del Registro está presente?****|Autenticación moderna activada?****|Comportamiento de autenticación con la autenticación moderna activada para el inquilino (valor predeterminado)****|Comportamiento de autenticación con la autenticación moderna desactivada para el inquilino****|
 |:-----|:-----|:-----|:-----|:-----|
 |Office 2019  <br/> |No <br> AlwaysUseMSOAuthForAutoDiscover = 1 <br/> |Sí  <br/> |Fuerza la autenticación moderna en Outlook 2013, 2016 o 2019. <br/> [Más información](https://support.microsoft.com/help/3126599/outlook-prompts-for-password-when-modern-authentication-is-enabled)|Fuerza la autenticación moderna dentro del cliente de Outlook.<br/> |
-|Office 2019  <br/> |No o EnableADAL = 1  <br/> |Yes  <br/> |Primero se intenta la autenticación moderna. Si el servidor rechaza una conexión de autenticación moderna, se usa la autenticación básica. El servidor rechaza la autenticación moderna cuando el inquilino no está habilitado.  <br/> |Primero se intenta la autenticación moderna. Si el servidor rechaza una conexión de autenticación moderna, se usa la autenticación básica. El servidor rechaza la autenticación moderna cuando el inquilino no está habilitado.  <br/> |
-|Office 2019  <br/> |Sí, EnableADAL = 1  <br/> |Yes  <br/> |Primero se intenta la autenticación moderna. Si el servidor rechaza una conexión de autenticación moderna, se usa la autenticación básica. El servidor rechaza la autenticación moderna cuando el inquilino no está habilitado.  <br/> |Primero se intenta la autenticación moderna. Si el servidor rechaza una conexión de autenticación moderna, se usa la autenticación básica. El servidor rechaza la autenticación moderna cuando el inquilino no está habilitado.  <br/> |
+|Office 2019  <br/> |No o EnableADAL = 1  <br/> |Sí  <br/> |Primero se intenta la autenticación moderna. Si el servidor rechaza una conexión de autenticación moderna, se usa la autenticación básica. El servidor rechaza la autenticación moderna cuando el inquilino no está habilitado.  <br/> |Primero se intenta la autenticación moderna. Si el servidor rechaza una conexión de autenticación moderna, se usa la autenticación básica. El servidor rechaza la autenticación moderna cuando el inquilino no está habilitado.  <br/> |
+|Office 2019  <br/> |Sí, EnableADAL = 1  <br/> |Sí  <br/> |Primero se intenta la autenticación moderna. Si el servidor rechaza una conexión de autenticación moderna, se usa la autenticación básica. El servidor rechaza la autenticación moderna cuando el inquilino no está habilitado.  <br/> |Primero se intenta la autenticación moderna. Si el servidor rechaza una conexión de autenticación moderna, se usa la autenticación básica. El servidor rechaza la autenticación moderna cuando el inquilino no está habilitado.  <br/> |
 |Office 2019  <br/> |Sí, EnableADAL=0  <br/> |No  <br/> |Autenticación básica  <br/> |Autenticación básica  <br/> |
 |Office 2016  <br/> |No <br> AlwaysUseMSOAuthForAutoDiscover = 1 <br/> |Yes  <br/> |Fuerza la autenticación moderna en 2013, 2016 o 2019. <br/> [Más información](https://support.microsoft.com/help/3126599/outlook-prompts-for-password-when-modern-authentication-is-enabled)|Fuerza la autenticación moderna dentro del cliente de Outlook.<br/> |
 |Office 2016  <br/> |No o EnableADAL = 1  <br/> |Sí  <br/> |Primero se intenta la autenticación moderna. Si el servidor rechaza una conexión de autenticación moderna, se usa la autenticación básica. El servidor rechaza la autenticación moderna cuando el inquilino no está habilitado.  <br/> |Primero se intenta la autenticación moderna. Si el servidor rechaza una conexión de autenticación moderna, se usa la autenticación básica. El servidor rechaza la autenticación moderna cuando el inquilino no está habilitado.  <br/> |
@@ -148,7 +152,7 @@ En la tabla siguiente se describe el comportamiento de autenticación de las apl
 |Office 2019  <br/> |No o EnableADAL = 1  <br/> |Sí  <br/> |Solo autenticación moderna.  <br/> |Error al conectarse.  <br/> |
 |Office 2019  <br/> |Sí, EnableADAL = 1  <br/> |Yes  <br/> |Solo autenticación moderna.  <br/> |Error al conectarse.  <br/> |
 |Office 2019  <br/> |Sí, EnableADAL = 0  <br/> |No  <br/> |Solo el Asistente de inicio de sesión de Microsoft Online.  <br/> |Solo el Asistente de inicio de sesión de Microsoft Online.  <br/> |
-|Office 2016  <br/> |No o EnableADAL = 1  <br/> |Sí  <br/> |Solo autenticación moderna.  <br/> |Error al conectarse.  <br/> |
+|Office 2016  <br/> |No o EnableADAL = 1  <br/> |Yes  <br/> |Solo autenticación moderna.  <br/> |Error al conectarse.  <br/> |
 |Office 2016  <br/> |Sí, EnableADAL = 1  <br/> |Yes  <br/> |Solo autenticación moderna.  <br/> |Error al conectarse.  <br/> |
 |Office 2016  <br/> |Sí, EnableADAL = 0  <br/> |No  <br/> |Solo el Asistente de inicio de sesión de Microsoft Online.  <br/> |Solo el Asistente de inicio de sesión de Microsoft Online.  <br/> |
 |Office 2013  <br/> |No  <br/> |No  <br/> |Solo el Asistente de inicio de sesión de Microsoft Online.  <br/> |Solo el Asistente de inicio de sesión de Microsoft Online.  <br/> |

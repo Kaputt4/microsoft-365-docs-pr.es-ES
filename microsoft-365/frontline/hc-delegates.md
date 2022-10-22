@@ -1,5 +1,5 @@
 ---
-title: Delegación de mensajes
+title: Uso de un mensaje de estado de Teams para asignar un delegado
 author: samanro
 ms.author: samanro
 manager: pamgreen
@@ -26,14 +26,14 @@ appliesto:
 ms.reviewer: acolonna
 description: Obtenga información sobre cómo un usuario con estado Away o Do Not Disturb puede establecer explícitamente otro usuario como delegado en su mensaje de estado.
 ms.custom: seo-marvel-mar2020
-ms.openlocfilehash: 327c0d5a5bd0e3149cbf418da97ae82c5a03b2ce
-ms.sourcegitcommit: 12af9e8e3a6eaa090fda9e98ccb831dff65863a4
+ms.openlocfilehash: 4837b6c2b8ac4a450705397819ccb93fdbbfa8f6
+ms.sourcegitcommit: e326b492f6ff15b78d4b77b0a1da06dcdaad3f62
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/27/2022
-ms.locfileid: "68079521"
+ms.lasthandoff: 10/22/2022
+ms.locfileid: "68676045"
 ---
-# <a name="message-delegation"></a>Delegación de mensajes
+# <a name="use-a-teams-status-message-to-assign-a-delegate"></a>Uso de un mensaje de estado de Teams para asignar un delegado
 
 Los usuarios de Microsoft Teams pueden establecer su estado en Ausente o No molestar e incluir un mensaje de estado de texto personalizado. Un usuario que va a estar ausente puede asignar a alguien como delegado con el que los usuarios puedan ponerse en contacto en su lugar. La característica de delegación de mensajes funciona de la siguiente manera:
 
@@ -46,6 +46,9 @@ Los usuarios de Microsoft Teams pueden establecer su estado en Ausente o No mole
 
 Los usuarios pueden iniciar el proceso por sí mismos y no se requiere ninguna intervención del administrador para habilitar la característica.
 
+> [!NOTE]
+> Las notas de estado y los comportamientos de mención de delegación también están disponibles en Skype Empresarial, pero su disponibilidad depende del modo de coexistencia del usuario. Skype Empresarial no aplica un límite de caracteres en las notas de estado. Sin embargo, Microsoft Teams solo mostrará los primeros 280 caracteres de un conjunto de notas de Skype Empresarial. Un botón de puntos suspensivos (...) al final de una nota indica que se ha truncado. Skype Empresarial no admite tiempos de expiración para las notas. <br>Skype Empresarial Online se retiró el 31 de julio de 2021. [Obtenga información sobre cómo actualizar a Microsoft Teams](/microsoftteams/upgrade-start-here).
+
 ## <a name="delegation-use-scenario-in-healthcare"></a>Escenario de uso de delegación en el sector sanitario
 
 **Ejemplo de uso sin establecer delegados**
@@ -55,29 +58,3 @@ Franco Piccio está de guardia en el departamento de radiología. Recibe una lla
 **Ejemplo de uso con la configuración de delegados**
 
 Franco Piccio está de guardia en el departamento de radiología. Recibe una llamada personal urgente y tiene que apartarse durante las próximas horas. Lena Ehrle le pide a uno de sus compañeros del departamento de radiología que lo cubra mientras se ha ido. Cambia su mensaje de estado personalizado para decir "No estoy disponible para las próximas horas. Póngase en contacto con @DrEhrle para cualquier emergencia".  Otros miembros del equipo se dan cuenta de que la delegación ocurrió mientras intentaban ponerse en contacto con el Dr. Piccio, por lo que ahora saben que se ponen en contacto con el Dr. Ehrle mientras tanto. Poco o nada de confusión se produce con el cuidado de un paciente.
-
-## <a name="impact-of-co-existence-modes-on-user-status-in-the-teams-client"></a>Impacto de los modos de coexistencia en el estado del usuario en el cliente de Teams
-
-Los comportamientos de las notas de estado y las menciones de delegación dependen en parte del modo de coexistencia de un usuario. Esta matriz muestra las posibilidades:
-
-|Modo Co-Existence | Comportamiento esperado|
-|---|---|
-|TeamsOnly |Los usuarios solo pueden establecer una nota desde Teams. <br> La nota de Teams del usuario está visible en Teams & SfB. |
-|Aplicaciones aisladas | Nota del usuario establecida en Teams visible solo en Teams. <br> Nota del usuario establecida en SfB visible solo en SfB |
-|Modos SfB* | Los usuarios solo pueden establecer una nota desde SfB. <br> La nota de SfB del usuario está visible en SfB & Teams.  |
-
-Un usuario solo puede establecer una nota en Teams si su modo es TeamsOnly o Islands.  
-
-### <a name="displaying-notes-set-in-skype-for-business"></a>Mostrar notas establecidas en Skype Empresarial
-  
-No hay ninguna indicación visual de que se haya establecido una nota de Skype Empresarial.
-
-Skype Empresarial no aplica un límite de caracteres en las notas de estado. Sin embargo, Microsoft Teams solo mostrará los primeros 280 caracteres de un conjunto de notas de Skype Empresarial. Un botón de puntos suspensivos (...) al final de una nota indica que se ha truncado.
-  
-Skype Empresarial no admite tiempos de expiración para las notas.
-
-No se admite la migración de notas de Skype Empresarial a Teams cuando un usuario se actualiza al modo TeamsOnly.
-
-## <a name="related-topics"></a>Temas relacionados
-
-[Obtenga más información sobre coexistencia con Skype Empresarial](/microsoftteams/coexistence-chat-calls-presence).

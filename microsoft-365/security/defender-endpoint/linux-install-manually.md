@@ -18,12 +18,12 @@ ms.collection:
 ms.topic: conceptual
 ms.subservice: mde
 search.appverid: met150
-ms.openlocfilehash: a18dc5599ab75971a6f188f1e9378e22c70b441f
-ms.sourcegitcommit: 2ff545246fec060ea7829da5afbc1cdc698d51ab
+ms.openlocfilehash: 33f3931bca1f2888948043f05f6f3f02c80a2c18
+ms.sourcegitcommit: a250d043a2e42ecbc7b86147468d1660af5a6ba7
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/04/2022
-ms.locfileid: "68362912"
+ms.lasthandoff: 10/21/2022
+ms.locfileid: "68673115"
 ---
 # <a name="deploy-microsoft-defender-for-endpoint-on-linux-manually"></a>Implementación manual de Microsoft Defender para punto de conexión en Linux
 
@@ -198,7 +198,7 @@ Para obtener una vista previa de las nuevas características y proporcionar come
 - Instale la clave pública de Microsoft GPG:
 
     ```bash
-    curl -sSL https://packages.microsoft.com/keys/microsoft.asc | gpg --dearmor | sudo tee /etc/apt/trusted.gpg.d/microsoft.gpg > /dev/null
+    curl -sSL https://packages.microsoft.com/keys/microsoft.asc | gpg --dearmor | sudo tee /usr/share/keyrings/microsoft.gpg > /dev/null
     ```
 
 - Instale el controlador HTTPS si aún no está instalado:

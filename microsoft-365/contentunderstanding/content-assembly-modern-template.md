@@ -13,12 +13,12 @@ ms.collection:
 - m365initiative-syntex
 ms.localizationpriority: medium
 description: Obtenga información sobre cómo crear una plantilla moderna en Microsoft Syntex.
-ms.openlocfilehash: 022f46531e54041d5a11b43d75b21d0e033095ca
-ms.sourcegitcommit: 87283bb02ca750286f7c069f811b788730ed5832
+ms.openlocfilehash: af64b97c104e218ca851182ce043e3a65e72a159
+ms.sourcegitcommit: a250d043a2e42ecbc7b86147468d1660af5a6ba7
 ms.translationtype: MT
 ms.contentlocale: es-ES
 ms.lasthandoff: 10/21/2022
-ms.locfileid: "68661597"
+ms.locfileid: "68673137"
 ---
 # <a name="create-a-modern-template-in-microsoft-syntex"></a>Creación de una plantilla moderna en Microsoft Syntex
 
@@ -151,27 +151,6 @@ Cuando haya completado la adición de todos los campos pertinentes a la plantill
 
 2. Para ver, editar o anular la publicación de plantillas *publicadas* en el menú desplegable **Plantillas publicadas** de la sección **Plantillas modernas** , seleccione **Nuevo** > **menú Editar nuevo** en la biblioteca de documentos. 
 
-## <a name="edit-a-modern-template"></a>Edición de una plantilla moderna
+## <a name="see-also"></a>Vea también
 
-Si necesita editar una plantilla existente o eliminar o anular la publicación de una plantilla, siga estos pasos.
-
-1. En una biblioteca de documentos de SharePoint, seleccione **nuevo** > **editar nuevo menú**.
-
-   ![Captura de pantalla de la biblioteca de documentos con la opción de menú Editar nuevo resaltada.](../media/content-understanding/content-assembly-edit-template-1.png)
-
-2. En el panel de **menús Editar nuevo** , en la sección **Plantillas modernas** , seleccione la plantilla publicada o borrador que desea editar.
-
-   ![Captura de pantalla del panel de menús Editar nuevo que muestra la sección Plantillas modernas.](../media/content-understanding/content-assembly-edit-template-2.png)
-
-3. Para editar una plantilla publicada o una plantilla de borrador:
-
-   - En **Plantillas publicadas**, seleccione **Editar** para abrir el estudio de plantillas, donde puede editar la plantilla publicada. También puede optar por eliminar o anular la publicación de la plantilla.
-
-      ![Captura de pantalla de la sección Plantillas modernas que muestra las plantillas publicadas.](../media/content-understanding/content-assembly-edit-published.png)
-
-   - En **Plantillas de borrador**, seleccione **Editar** para abrir el estudio de plantillas, donde puede editar la plantilla de borrador. También puede optar por eliminar o publicar la plantilla.
-
-      ![Captura de pantalla de la sección Plantillas modernas en la que se muestran las plantillas de borrador.](../media/content-understanding/content-assembly-edit-draft.png)
-
-> [!div class="nextstepaction"]
-> [Siguiente paso > Crear un documento a partir de una plantilla moderna](content-assembly-create-document.md)
+[Edición de una plantilla moderna](content-assembly-edit-template.md)
