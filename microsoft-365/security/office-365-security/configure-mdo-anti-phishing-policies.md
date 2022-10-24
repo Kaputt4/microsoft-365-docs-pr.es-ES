@@ -17,12 +17,12 @@ description: Los administradores pueden aprender a crear, modificar y eliminar l
 ms.subservice: mdo
 ms.service: microsoft-365-security
 search.appverid: met150
-ms.openlocfilehash: 3c0bdc066d1f47c02afe8fae1938813241bceff5
-ms.sourcegitcommit: 12af9e8e3a6eaa090fda9e98ccb831dff65863a4
+ms.openlocfilehash: d0358aa6c266a112c67873223553d550f6eb303d
+ms.sourcegitcommit: 0ca3ab2abe07810e9b2cc2d806e3c6b9f35b146c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/27/2022
-ms.locfileid: "68055224"
+ms.lasthandoff: 10/24/2022
+ms.locfileid: "68684807"
 ---
 # <a name="configure-anti-phishing-policies-in-microsoft-defender-for-office-365"></a>Configuración de directivas contra phishing en Microsoft Defender para Office 365
 
@@ -139,7 +139,7 @@ La creación de una directiva de anti-phishing personalizada en el portal de Mic
 
      > [!NOTE]
      >
-     > - En cada directiva contra phishing, puede especificar un máximo de 350 usuarios protegidos (direcciones de correo electrónico del remitente). No se puede especificar el mismo usuario protegido en varias directivas.
+     > - En cada directiva contra phishing, puede especificar un máximo de 301 usuarios protegidos (direcciones de correo electrónico del remitente). No se puede especificar el mismo usuario protegido en varias directivas.
      > - La protección de suplantación de usuario no funciona si el remitente y el destinatario se han comunicado previamente por correo electrónico. Si el remitente y el destinatario nunca se han comunicado por correo electrónico, el mensaje se identificará como un intento de suplantación.
 
      - **Permitir que los usuarios protejan**: el valor predeterminado está desactivado (no seleccionado). Para activarlo, active la casilla y, a continuación, haga clic en el vínculo **Administrar (nn) remitentes** que aparece.

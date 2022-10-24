@@ -18,12 +18,12 @@ search.appverid:
 - MET150
 description: Información para que los administradores de TI administren las etiquetas de confidencialidad en las aplicaciones de Office para escritorio, móvil y web.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 61302c27f9c59cbedb9bc7f3456ca6e8a1fecbb7
-ms.sourcegitcommit: 0d8fb571024f134d7480fe14cffc5e31a687d356
+ms.openlocfilehash: 24ddef2f66af1a707e061f40fcfced27d4094613
+ms.sourcegitcommit: 0ca3ab2abe07810e9b2cc2d806e3c6b9f35b146c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/20/2022
-ms.locfileid: "68621900"
+ms.lasthandoff: 10/24/2022
+ms.locfileid: "68685030"
 ---
 # <a name="manage-sensitivity-labels-in-office-apps"></a>Administrar etiquetas de confidencialidad en las aplicaciones de Office
 
@@ -39,7 +39,7 @@ Use the information in this article to help you successfully manage sensitivity 
 
 Para usar las etiquetas de confidencialidad integradas en las aplicaciones de escritorio de Office para Windows y Mac, debe utilizar una edición de suscripción de Office. Este cliente de etiquetado no es compatible con las ediciones independientes de Office, a veces denominadas "Office Perpetua".
 
-El [cliente de etiquetado unificado de Azure Information Protection (AIP)](/azure/information-protection/rms-client/aip-clientv2) está ahora en [modo de mantenimiento](https://techcommunity.microsoft.com/t5/security-compliance-and-identity/announcing-aip-unified-labeling-client-maintenance-mode-and/ba-p/3043613). Si actualmente usa este cliente para el etiquetado en aplicaciones de Office, se recomienda pasar al etiquetado integrado. Para obtener más información, consulte [Migración del complemento Azure Information Protection (AIP) al etiquetado integrado para aplicaciones de Office](sensitivity-labels-aip.md).
+El [cliente de etiquetado unificado de Azure Information Protection (AIP)](/azure/information-protection/rms-client/aip-clientv2) está ahora en [modo de mantenimiento](https://techcommunity.microsoft.com/t5/security-compliance-and-identity/announcing-aip-unified-labeling-client-maintenance-mode-and/ba-p/3043613). Si actualmente usa este cliente para el etiquetado en aplicaciones de Office, se recomienda pasar al etiquetado integrado. Para obtener más información, consulte [Migración del complemento de Azure Information Protection (AIP) al etiquetado integrado para aplicaciones de Office](sensitivity-labels-aip.md).
 
 ## <a name="support-for-sensitivity-label-capabilities-in-apps"></a>Compatibilidad con las funciones de las etiquetas de confidencialidad en las aplicaciones
 
@@ -52,7 +52,7 @@ Use el [plan de desarrollo de Microsoft 365](https://www.microsoft.com/microsoft
 
 Las nuevas versiones de las aplicaciones de Office están disponibles en diferentes momentos para diferentes canales de actualización. Para Windows, las nuevas funciones se obtienen antes cuando se encuentra en el Canal actual o el Canal mensual para empresas, en lugar del Canal semestral para empresas. Los números de versión mínimos también pueden ser diferentes de un canal de actualización al siguiente. Para obtener más información, vea [Introducción a los canales de actualización para las Aplicaciones de Microsoft 365](/deployoffice/overview-update-channels) y [Actualizar historial para las Aplicaciones Microsoft 365](/officeupdates/update-history-microsoft365-apps-by-date).
 
-Las nuevas funcionalidades que se encuentran en versión preliminar privada no se incluyen en las tablas, pero es posible que pueda unirse a estas versiones preliminares mediante la nominación de su organización para el [programa de Microsoft जानकारीको सुरक्षा versión preliminar privada](https://aka.ms/mip-preview).
+Las nuevas funcionalidades que se encuentran en versión preliminar privada no se incluyen en las tablas, pero es posible que pueda unirse a estas versiones preliminares mediante la nominación de su organización para el [programa de Microsoft Information Protection versión preliminar privada](https://aka.ms/mip-preview).
 
 Office para iOS y Office para Android: Las etiquetas de confidencialidad están integradas en las [aplicación de Office](https://www.microsoft.com/en-us/microsoft-365/blog/2020/02/19/new-office-app-android-ios-available/).
 
@@ -81,11 +81,11 @@ Los números indicados son las versiones mínimas de la aplicación Office reque
 |[Marcados dinámicos con variables](#dynamic-markings-with-variables).                                              | Canal actual: 2010+ <br /><br> Canal mensual para empresas: 2010+ <br /><br> Canal semestral para empresas: 2102+ | 16.42+     | 2.42+ | 16.0.13328+ | [Sí - participar](sensitivity-labels-sharepoint-onedrive-files.md) |
 |[Asignar permisos ahora](encryption-sensitivity-labels.md#assign-permissions-now)                                 | Canal actual: 1910+ <br /><br> Canal mensual para empresas: 1910+ <br /><br> Canal semestral para empresas: 2002+ | 16.21+     | 2.21+ | 16.0.11231+ | [Sí - participar](sensitivity-labels-sharepoint-onedrive-files.md) |
 |[Permitir que los usuarios asignen permisos: <br /> - Solicitar permisos personalizados a los usuarios (usuarios y grupos)](encryption-sensitivity-labels.md#let-users-assign-permissions)                     |Canal actual: 2004+ <br /><br> Canal mensual para empresas: 2004+ <br /><br> Canal semestral para empresas: 2008+ | 16.35+   | En revisión   | En revisión         | En revisión                                                        |
-|[Permitir que los usuarios asignen permisos: <br /> - Solicitar permisos personalizados a los usuarios (usuarios, grupos y organizaciones)](encryption-sensitivity-labels.md#support-for-organization-wide-custom-permissions)                     |Versión preliminar: Implementando en [Canal actual (versión preliminar)](https://office.com/insider)  | En revisión   | En revisión   | En revisión         | En revisión                                                        |
+|[Permitir que los usuarios asignen permisos: <br /> - Solicitar permisos personalizados a los usuarios (usuarios, grupos y organizaciones)](encryption-sensitivity-labels.md#support-for-organization-wide-custom-permissions)                     |Versión preliminar: implementando en [Canal Beta](https://office.com/insider)  | En revisión   | En revisión   | En revisión         | En revisión                                                        |
 |[Auditoría de la actividad de los usuarios relacionada con las etiquetas](#auditing-labeling-activities)                      | Canal actual: 2011+ <br /><br> Canal mensual para empresas: 2011+ <br /><br> Canal semestral para empresas: 2108+ | 16.43+ | 2.46+ | 16.0.13628+ | Sí |
 |[Requerir a los usuarios que apliquen una etiqueta a sus correos electrónicos y documentos ](#require-users-to-apply-a-label-to-their-email-and-documents)   | Canal actual: 2101+ <br /><br> Canal mensual para empresas: 2101+ <br /><br> Canal semestral para empresas: 2108+ | 16.45+         | 2.47+ | 16.0.13628+ | [Sí - participar](sensitivity-labels-sharepoint-onedrive-files.md)                                            
 |[Aplicar una etiqueta de confidencialidad automáticamente al contenido](apply-sensitivity-label-automatically.md) <br /> - Uso de tipos de información confidencial                    | Canal actual: 2009+ <br /><br> Canal mensual para empresas: 2009+ <br /><br> Canal semestral para empresas: 2102+ | 16.44+ | En revisión | En revisión | [Sí - participar](sensitivity-labels-sharepoint-onedrive-files.md) |
-|[Aplicar una etiqueta de confidencialidad automáticamente al contenido](apply-sensitivity-label-automatically.md) <br /> - Uso de clasificadores capacitados                    | Canal actual: 2105+ <br /><br> Canal mensual para empresas: 2105+ <br /><br> Canal semestral para empresas: 2108+ | 16.49+ | En revisión | En revisión | [Sí - participar](sensitivity-labels-sharepoint-onedrive-files.md) |
+|[Aplicar una etiqueta de confidencialidad automáticamente al contenido](apply-sensitivity-label-automatically.md) <br /> - Uso de clasificadores capacitados                    | Canal actual: 2105+ <br /><br> Canal mensual para empresas: 2105+ <br /><br> Canal semestral para empresas: 2108+ | 16.49+ | En revisión | En revisión | [En revisión |
 |[Compatibilidad con la coautoría y el autoguardado](sensitivity-labels-coauthoring.md) documentos etiquetados y cifrados | Canal actual: 2107+ <br /><br> Canal mensual para empresas: 2107+ <br /><br> Canal semestral para empresas: 2202+ |  16.51+ | 2.58+ | 16.0.14931+  | [Sí - participar](sensitivity-labels-sharepoint-onedrive-files.md) |
 |[Compatibilidad con PDF](#pdf-support)| Canal actual: 2208+ <br /><br> Canal mensual de empresa: 2208+ <br /><br> Canal semestral para empresas: en revisión|  En revisión | En revisión | En revisión | En revisión |
 |[Barra de confidencialidad](#sensitivity-bar) y [color de la etiqueta de presentación](#label-colors) | Versión preliminar: implementando en [Canal Beta](https://office.com/insider) | En revisión | En revisión | En revisión | En revisión |
@@ -130,7 +130,7 @@ Si los usuarios tienen instalado el [cliente de Azure Information Protection (AI
 > [!NOTE]
 > Si no ve las características de etiquetado que espera en los equipos Windows, a pesar de confirmar las versiones mínimas admitidas para el canal de actualización de Office, es posible que tenga que [deshabilitar el complemento AIP](sensitivity-labels-aip.md#how-to-disable-the-aip-add-in-to-use-built-in-labeling-for-office-apps) para versiones anteriores de Office.
 
-Para más información sobre la compatibilidad con el etiquetado con el cliente de AIP y cómo deshabilitar este cliente solo en aplicaciones de Office, consulte [Migración del complemento de Azure Information Protection (AIP) al etiquetado integrado para aplicaciones de Office](sensitivity-labels-aip.md).
+Para obtener más información sobre la compatibilidad con el etiquetado con el cliente de AIP y cómo deshabilitar este cliente solo en aplicaciones de Office, consulte [Migración del complemento de Azure Information Protection (AIP) al etiquetado integrado para aplicaciones de Office](sensitivity-labels-aip.md).
 
 ## <a name="if-you-need-to-turn-off-built-in-labeling-in-office-apps-on-windows"></a>Si necesita desactivar el etiquetado integrado en las aplicaciones de Office en Windows
 
@@ -481,13 +481,13 @@ Como parte de esta alta visibilidad, estas etiquetas también admiten colores. P
 > 
 > El cliente de etiquetado unificado de Azure Information Protection admite colores de etiqueta. Para el etiquetado integrado en Office, los colores de etiqueta se admiten actualmente en versión preliminar para Word, Excel y PowerPoint en Windows, pero aún no para Outlook, macOS o Office para la Web. Para obtener más información, consulte las tablas de la sección [funcionalidades](#support-for-sensitivity-label-capabilities-in-apps) de esta página.
 
-Las etiquetas recién creadas no tienen un color de forma predeterminada. Si las etiquetas se [migraron desde Azure Information Protection](/azure/information-protection/configure-policy-migrate-labels) o configuró los colores de etiqueta para el cliente de etiquetado unificado de Azure Information Protection, estos colores de etiqueta ahora se muestran en las aplicaciones que las admiten.
+Las etiquetas recién creadas no tienen un color de forma predeterminada. Si las etiquetas se [migraron desde Azure Information Protection](/azure/information-protection/configure-policy-migrate-labels) o configuró los colores de etiqueta para azure Information Protection cliente de etiquetado unificado, estos colores de etiqueta ahora se muestran en las aplicaciones que las admiten.
 
 Use el portal de cumplimiento Microsoft Purview para seleccionar uno de los 10 colores estándar para las etiquetas de confidencialidad. La configuración de **color de** etiqueta se encuentra en la primera página de la configuración de la etiqueta después del nombre y la descripción de la etiqueta.
 
 No puede seleccionar los colores de las subetiquetas porque heredan automáticamente el color de la etiqueta de su etiqueta primaria.
 
-Si una etiqueta está configurada para un color diferente de uno de los 10 colores predeterminados, verá una casilla **Usar color de cliente asignado anteriormente** seleccionada y las opciones de color estándar no están disponibles. Puede cambiar el color personalizado a uno de los colores estándar desactivando primero la casilla y, a continuación, puede seleccionar uno de los colores estándar. 
+Si una etiqueta está configurada para un color diferente de uno de los 10 colores predeterminados, verá una casilla **Usar color personalizado asignado anteriormente** seleccionada y las opciones de color estándar no están disponibles. Puede cambiar el color personalizado a uno de los colores estándar desactivando primero la casilla y, a continuación, puede seleccionar uno de los colores estándar. 
 
 No puede usar el portal de cumplimiento para configurar un color personalizado diferente. En su lugar, use PowerShell, como se describe en la sección siguiente.
 

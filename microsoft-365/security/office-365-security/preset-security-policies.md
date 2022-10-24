@@ -17,12 +17,12 @@ description: Los administradores pueden aprender a aplicar la configuración de 
 ms.subservice: mdo
 ms.service: microsoft-365-security
 search.appverid: met150
-ms.openlocfilehash: afcbfb788644e2542d5c080eed881f2531558a02
-ms.sourcegitcommit: 12af9e8e3a6eaa090fda9e98ccb831dff65863a4
+ms.openlocfilehash: b28c315ecfe8ee6513c8f45be6d89953d4908647
+ms.sourcegitcommit: 0ca3ab2abe07810e9b2cc2d806e3c6b9f35b146c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/27/2022
-ms.locfileid: "68066550"
+ms.lasthandoff: 10/24/2022
+ms.locfileid: "68684766"
 ---
 # <a name="preset-security-policies-in-eop-and-microsoft-defender-for-office-365"></a>Directivas de seguridad preestablecidas en Exchange Online Protection y Microsoft Defender para Office 365
 
@@ -206,7 +206,7 @@ Es posible que quiera aplicar las directivas de seguridad preestablecidas **Est�
 
    Cada entrada consta de un nombre para mostrar y una dirección de correo electrónico. Escriba cada valor en los cuadros y, a continuación, haga clic en **Agregar**. Repita este paso tantas veces como sea necesario.
 
-   Puede especificar un máximo de 350 usuarios y no puede especificar el mismo usuario en la configuración de protección de suplantación de usuario en varias directivas.
+   Puede especificar un máximo de 301 usuarios y no puede especificar el mismo usuario en la configuración de protección de suplantación de usuario en varias directivas.
 
    Para quitar una entrada existente de la lista, haga clic en ![Quitar al usuario del icono de protección contra suplantación.](../../media/m365-cc-sc-remove.png).
 

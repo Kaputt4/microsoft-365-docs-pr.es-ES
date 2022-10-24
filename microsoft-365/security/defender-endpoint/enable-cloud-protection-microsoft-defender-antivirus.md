@@ -9,7 +9,7 @@ ms.localizationpriority: medium
 ms.topic: conceptual
 author: denisebmsft
 ms.author: deniseb
-ms.date: 02/03/2022
+ms.date: 10/24/2022
 ms.reviewer: mkaminska
 manager: dansimp
 ms.custom: nextgen
@@ -18,12 +18,12 @@ ms.collection:
 - m365-security
 - tier2
 search.appverid: met150
-ms.openlocfilehash: b46457a8215fc1eb5480558b6aa68fcf34029de6
-ms.sourcegitcommit: 0b7070ec119e00e0dafe030bbfbef0ae5c9afa19
+ms.openlocfilehash: fa0a72f68542b12df5edec8aa1f7d3a7603cc60d
+ms.sourcegitcommit: 0ca3ab2abe07810e9b2cc2d806e3c6b9f35b146c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/29/2022
-ms.locfileid: "68174872"
+ms.lasthandoff: 10/24/2022
+ms.locfileid: "68684925"
 ---
 # <a name="turn-on-cloud-protection-in-microsoft-defender-antivirus"></a>Activar la protección en la nube en Microsoft Defender Antivirus
 
@@ -152,7 +152,7 @@ Para obtener más información sobre los parámetros permitidos, consulte [Windo
 
 1. Abra la aplicación Seguridad de Windows seleccionando el icono de escudo en la barra de tareas o buscando **Seguridad de Windows** en el menú inicio.
 
-2. Seleccione el icono **Protección contra amenazas de Virus &** (o el icono de escudo en la barra de menús de la izquierda) y, a continuación, en **Administrar configuración** , seleccione **Virus & configuración de protección contra amenazas**.
+2. Seleccione el icono **Protección contra amenazas de Virus &** (o el icono de escudo en la barra de menús de la izquierda) y, a continuación, en **Virus & configuración de protección contra amenazas**, seleccione **Administrar configuración**.
 
    :::image type="content" source="../../media/wdav-protection-settings-wdsc.png" alt-text="Configuración de protección contra amenazas de Virus &" lightbox="../../media/wdav-protection-settings-wdsc.png":::
 

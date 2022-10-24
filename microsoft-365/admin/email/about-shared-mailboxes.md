@@ -24,12 +24,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Los buzones compartidos se usan cuando varias personas necesitan acceder al mismo buzón. Obtenga información sobre lo que debe saber antes de crear un buzón compartido.
-ms.openlocfilehash: 9c34cf0658f9028a14d8fa37380b7df812089495
-ms.sourcegitcommit: 4f8200453d347de677461f27eb5a3802ce5cc888
+ms.openlocfilehash: 43986a533bf1daf8190a30379aefd844e7d974ec
+ms.sourcegitcommit: 0ca3ab2abe07810e9b2cc2d806e3c6b9f35b146c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/12/2022
-ms.locfileid: "68542527"
+ms.lasthandoff: 10/24/2022
+ms.locfileid: "68684629"
 ---
 # <a name="about-shared-mailboxes"></a>Acerca de los buzones compartidos
 
@@ -42,6 +42,16 @@ Los usuarios con permisos para el buzón del grupo pueden enviar como o enviar e
 Antes de [crear un buzón compartido](create-a-shared-mailbox.md), estas son algunas cosas que debe saber:
 
 - **Licencias:** El buzón compartido puede almacenar hasta 50 GB de datos sin que usted tenga que asignarle una licencia. Una vez superado ese límite, necesitará asignar una licencia al buzón para poder almacenar más datos. Para obtener más información sobre las licencias de los buzones compartidos, consulte [Límites de Exchange Online](/office365/servicedescriptions/exchange-online-service-description/exchange-online-limits#StorageLimits). Cuando un buzón compartido alcanza el límite de almacenamiento, podrá recibir correo electrónico durante un tiempo, pero no podrá enviarlo. Después, dejará de recibir correo electrónico. Los remitentes del buzón recibirán un aviso de no entrega.
+
+> [!NOTE]
+>
+> Los escenarios siguientes requieren una licencia Exchange Online plan 2:
+>
+> - El buzón compartido tiene más de 50 GB de almacenamiento en uso.
+> - El buzón compartido usa el archivado local.
+> - El buzón compartido se coloca en suspensión por juicio.
+> 
+> Para obtener instrucciones paso a paso sobre cómo asignar licencias, consulte Asignación de [licencias a usuarios](/microsoft-365/admin/manage/assign-licenses-to-users). 
 
 - **User permissions:** You need to give users permissions (membership) to use the shared mailbox. Only people inside your organization can use a shared mailbox.
 

@@ -20,12 +20,12 @@ ms.custom: admindeeplinkCOMPLIANCE
 search.appverid:
 - MET150
 - MOE150
-ms.openlocfilehash: adaa92fc286be90d9c97d88b57a513d689da5e08
-ms.sourcegitcommit: 0d8fb571024f134d7480fe14cffc5e31a687d356
+ms.openlocfilehash: 5b5af7d7dc9373f0fdd13e38f5e6934327bc1f57
+ms.sourcegitcommit: 0ca3ab2abe07810e9b2cc2d806e3c6b9f35b146c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/20/2022
-ms.locfileid: "68630894"
+ms.lasthandoff: 10/24/2022
+ms.locfileid: "68684965"
 ---
 # <a name="investigate-and-remediate-communication-compliance-alerts"></a>Investigar y corregir las alertas de cumplimiento de las comunicaciones
 
@@ -117,8 +117,8 @@ Después de revisar los conceptos básicos del mensaje, es el momento de abrir u
 - **Texto sin formato**: vista de texto que muestra una vista de solo texto numerada de línea del mensaje e incluye resaltado de palabras clave en mensajes y datos adjuntos para términos de tipo de información confidencial, términos identificados por clasificadores integrados asignados a una directiva o para términos incluidos en un diccionario de palabras clave dedicado asignado a una directiva. El resaltado de palabras clave, que actualmente solo está disponible en inglés, puede ayudarle a dirigirse al área de interés en los mensajes largos y los datos adjuntos. En algunos casos, el texto resaltado podría estar solo en datos adjuntos para las condiciones de directiva de coincidencia de mensajes. Los archivos incrustados no se muestran y la numeración de líneas en esta vista es útil para hacer referencia a los detalles pertinentes entre varios revisores.
 - **Conversación**: disponible para los mensajes de chat de Microsoft Teams, esta vista muestra hasta cinco mensajes antes y después de un mensaje de alerta para ayudar a los revisores a ver la actividad en el contexto conversacional. Este contexto ayuda a los revisores a evaluar rápidamente los mensajes y tomar decisiones de resolución de mensajes más informadas. Se muestran adiciones de mensajes en tiempo real a las conversaciones, incluidas todas las imágenes insertadas, emojis y etiquetas engomadas disponibles en Teams. No se muestran los datos adjuntos de archivos de imagen o texto a los mensajes. Las notificaciones se muestran automáticamente para los mensajes que se han editado o para los mensajes que se han eliminado de la ventana de conversación. Cuando se resuelve un mensaje, los mensajes conversacionales asociados no se conservan con el mensaje resuelto. Los mensajes de conversación están disponibles hasta 60 días después de identificar el mensaje de alerta.
 - **Historial de usuario**: la vista Historial de usuario muestra todas las demás alertas generadas por cualquier directiva de cumplimiento de comunicaciones para que el usuario envíe el mensaje.
-- **Notificación detectada por patrón**: muchas acciones de acoso e intimidación a lo largo del tiempo e implican instancias recurrentes del mismo comportamiento por parte de un usuario. La notificación *patrón detectado* se muestra en los detalles de la alerta y llama la atención sobre la alerta. La detección de patrones se realiza por directiva y evalúa el comportamiento en los últimos 30 días cuando un remitente envía al menos dos mensajes al mismo destinatario. Los investigadores y revisores pueden usar esta notificación para identificar el comportamiento repetido para evaluar la alerta según corresponda.
-- **Traducción**: esta vista convierte automáticamente el texto del mensaje de alerta en el idioma configurado en la configuración *Idioma mostrado* en la suscripción de Microsoft 365 para cada revisor. La vista *Traducción* ayuda a ampliar la compatibilidad de investigación para organizaciones con usuarios multilingües y elimina la necesidad de servicios de traducción adicionales fuera del proceso de revisión del cumplimiento de comunicaciones. Con los servicios de traducción de Microsoft, la vista *Traducción* se puede activar y desactivar según sea necesario y admite una amplia gama de idiomas. Para obtener una lista completa de los idiomas admitidos, consulte [Idiomas de Microsoft Translator](https://www.microsoft.com/translator/business/languages/). Los idiomas que aparecen en la *lista de idiomas de Translator* se admiten en la vista *Traducción* .
+- **Notificación detectada** por patrón: muchas acciones de acoso e intimidación a lo largo del tiempo implican instancias recurrentes del mismo comportamiento por parte de un usuario. La notificación *patrón detectado* se muestra en los detalles de la alerta y llama la atención sobre la alerta. La detección de patrones se realiza por directiva y evalúa el comportamiento en los últimos 30 días cuando un remitente envía al menos dos mensajes al mismo destinatario. Los investigadores y revisores pueden usar esta notificación para identificar el comportamiento repetido para evaluar la alerta según corresponda.
+- **Traducción**: esta vista convierte automáticamente el texto del mensaje de alerta en el idioma configurado en la configuración *Idioma mostrado* en la suscripción de Microsoft 365 para cada revisor. La vista *Traducción* ayuda a ampliar la compatibilidad de investigación para organizaciones con usuarios multilingües y elimina la necesidad de servicios de traducción adicionales fuera del proceso de revisión del cumplimiento de comunicaciones. Con los servicios de traducción de Microsoft, el cumplimiento de comunicaciones detecta automáticamente si el texto está en un idioma diferente al de la configuración actual del sistema del usuario y mostrará el texto del mensaje de alerta en consecuencia. Para obtener una lista completa de los idiomas admitidos, consulte [Idiomas de Microsoft Translator](https://www.microsoft.com/translator/business/languages/). Los idiomas que aparecen en la *lista de idiomas de Translator* se admiten en la vista *Traducción* .
 
 ### <a name="step-3-decide-on-a-remediation-action"></a>Paso 3: Decidir una acción de corrección
 
@@ -219,11 +219,11 @@ Las plantillas de avisos son plantillas de correo electrónico personalizadas do
 
 |**Field**|**Required**| **Detalles** |
 |:-----|:-----|:-----|
-|**Nombre de la plantilla** | Sí | El nombre descriptivo de la plantilla de aviso que seleccionará en el flujo de trabajo de notificación durante la corrección, admite caracteres de texto. |
-| **Dirección del remitente** | Yes | Dirección de uno o varios usuarios o grupos que envían el mensaje al usuario con una coincidencia de directiva, seleccionada en Active Directory para la suscripción. |
+|**Nombre de la plantilla** | Yes | El nombre descriptivo de la plantilla de aviso que seleccionará en el flujo de trabajo de notificación durante la corrección, admite caracteres de texto. |
+| **Dirección del remitente** | Sí | Dirección de uno o varios usuarios o grupos que envían el mensaje al usuario con una coincidencia de directiva, seleccionada en Active Directory para la suscripción. |
 | **Direcciones CC y BCC** | No | Usuarios o grupos opcionales a los que se va a notificar la coincidencia de directiva, seleccionados en Active Directory para la suscripción. |
-| **Asunto** | Yes | La información que aparece en la línea de asunto del mensaje admite caracteres de texto. |
-| **Cuerpo del mensaje** | Yes | La información que aparece en el cuerpo del mensaje admite valores de texto o HTML. |
+| **Asunto** | Sí | La información que aparece en la línea de asunto del mensaje admite caracteres de texto. |
+| **Cuerpo del mensaje** | Sí | La información que aparece en el cuerpo del mensaje admite valores de texto o HTML. |
 
 ### <a name="html-for-notices"></a>HTML para avisos
 

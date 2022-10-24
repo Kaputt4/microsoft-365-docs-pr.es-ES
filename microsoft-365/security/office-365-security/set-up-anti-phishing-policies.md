@@ -18,12 +18,12 @@ description: Los administradores pueden obtener información sobre las directiva
 ms.subservice: mdo
 ms.service: microsoft-365-security
 search.appverid: met150
-ms.openlocfilehash: 1c49e13e6942de8947b69e2bcb236cbe5ba6b493
-ms.sourcegitcommit: 12af9e8e3a6eaa090fda9e98ccb831dff65863a4
+ms.openlocfilehash: 420ad079e76c22f8706813743696b79567e6a030
+ms.sourcegitcommit: 0ca3ab2abe07810e9b2cc2d806e3c6b9f35b146c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/27/2022
-ms.locfileid: "68072357"
+ms.lasthandoff: 10/24/2022
+ms.locfileid: "68684730"
 ---
 # <a name="anti-phishing-policies-in-microsoft-365"></a>Directivas contra suplantación de identidad en Microsoft 365
 
@@ -188,7 +188,7 @@ La siguiente configuración de suplantación solo está disponible en las direct
 
   > [!NOTE]
   >
-  > - En cada directiva contra phishing, puede especificar un máximo de 350 usuarios protegidos (direcciones de correo electrónico del remitente). No se puede especificar el mismo usuario protegido en varias directivas. Por lo tanto, independientemente del número de directivas que se aplican a un destinatario, el número máximo de usuarios protegidos (direcciones de correo electrónico del remitente) para cada destinatario individual es 350. Para obtener más información sobre la prioridad de la directiva y cómo se detiene el procesamiento de directivas después de aplicar la primera directiva, vea [Orden y prioridad de la protección por correo electrónico](how-policies-and-protections-are-combined.md).
+  > - En cada directiva contra phishing, puede especificar un máximo de 301 usuarios protegidos (direcciones de correo electrónico del remitente). No se puede especificar el mismo usuario protegido en varias directivas. Por lo tanto, independientemente del número de directivas que se aplican a un destinatario, el número máximo de usuarios protegidos (direcciones de correo electrónico del remitente) para cada destinatario individual es 301. Para obtener más información sobre la prioridad de la directiva y cómo se detiene el procesamiento de directivas después de aplicar la primera directiva, vea [Orden y prioridad de la protección por correo electrónico](how-policies-and-protections-are-combined.md).
   > - La protección de suplantación de usuario no funciona si el remitente y el destinatario se han comunicado previamente por correo electrónico. Si el remitente y el destinatario nunca se han comunicado por correo electrónico, el mensaje se identificará como un intento de suplantación.
 
   De forma predeterminada, no hay ninguna dirección de correo electrónico del remitente configurada para la protección de suplantación en **Usuarios que se va a proteger**. Por lo tanto, de forma predeterminada, ninguna dirección de correo electrónico del remitente está cubierta por la protección de suplantación, ya sea en la directiva predeterminada o en las directivas personalizadas.

@@ -17,12 +17,12 @@ ms.collection:
 ms.topic: reference
 ms.subservice: mde
 search.appverid: met150
-ms.openlocfilehash: 1fe5cc67fe2d07dd18111fb2e866158328591028
-ms.sourcegitcommit: 1f4c51d022d1cfb6c194bf0f0af9c2841c781d68
+ms.openlocfilehash: f777106544a361fd9a288268be049685f4fad285
+ms.sourcegitcommit: 0ca3ab2abe07810e9b2cc2d806e3c6b9f35b146c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/14/2022
-ms.locfileid: "68573711"
+ms.lasthandoff: 10/24/2022
+ms.locfileid: "68684725"
 ---
 # <a name="whats-new-in-microsoft-defender-for-endpoint-on-mac"></a>Novedades de Microsoft Defender para punto de conexión en Mac
 
@@ -37,6 +37,21 @@ ms.locfileid: "68573711"
 Para obtener más información sobre Microsoft Defender para punto de conexión en otros sistemas operativos: 
 - [Novedades de Microsoft Defender para punto de conexión en Linux](linux-whatsnew.md) 
 - [Novedades de Microsoft Defender para punto de conexión en iOS](ios-whatsnew.md)</br>
+
+<details>
+  <summary>Oct-2022 (compilación: 101.86.81 | Versión: 20.122082.18681.0)</summary>
+
+&ensp;Compilación: **101.86.81**<br/>
+&ensp;Versión de lanzamiento: **20.122082.18681.0**<br/>
+&ensp;Versión del motor: **1.1.19700.3**<br/>
+&ensp;Versión de firma: **1.377.636.0**<br/>
+
+**Novedades**
+
+- Corrección de errores: se produce un error en la actualización si \_el usuario mdatp es miembro del \_grupo lpadmin.
+
+<br/>
+</details>
 
 <details>
   <summary>Oct-2022 (compilación: 101.82.21 | Versión: 20.122082.18221.0)</summary>

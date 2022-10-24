@@ -9,6 +9,7 @@ ms.pagetype: security
 ms.author: deniseb
 author: denisebmsft
 ms.localizationpriority: medium
+ms.date: 10/24/2022
 manager: dansimp
 audience: ITPro
 ms.collection:
@@ -18,12 +19,12 @@ ms.custom: admindeeplinkDEFENDER
 ms.topic: conceptual
 ms.subservice: mde
 search.appverid: met150
-ms.openlocfilehash: e72e280c192e4d3cdc404985f0d8f7854c9d115b
-ms.sourcegitcommit: 0d8fb571024f134d7480fe14cffc5e31a687d356
+ms.openlocfilehash: 60a92ef217e572ec8ea9554c2870191f581dfa70
+ms.sourcegitcommit: 0ca3ab2abe07810e9b2cc2d806e3c6b9f35b146c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/20/2022
-ms.locfileid: "68636185"
+ms.lasthandoff: 10/24/2022
+ms.locfileid: "68684989"
 ---
 # <a name="web-content-filtering"></a>Filtrado de contenido web
 
@@ -46,7 +47,7 @@ Configure directivas en los grupos de dispositivos para bloquear determinadas ca
 > [!NOTE]
 > La creación de grupos de dispositivos se admite en El plan 1 y el plan 2 de Defender para punto de conexión.
 
-El filtrado de contenido web está disponible en los principales exploradores web, con bloques realizados por Windows डिफेन्डर SmartScreen (Microsoft Edge) y Network Protection (Chrome, Firefox, Brave y Opera). Para obtener más información sobre la compatibilidad con exploradores, consulte la sección [requisitos previos](#prerequisites) .
+El filtrado de contenido web está disponible en los principales exploradores web, con bloques realizados por Windows Defender SmartScreen (Microsoft Edge) y Network Protection (Chrome, Firefox, Brave y Opera). Para obtener más información sobre la compatibilidad con exploradores, consulte la sección [requisitos previos](#prerequisites) .
 
 ## <a name="benefits-of-web-content-filtering"></a>Ventajas del filtrado de contenido web
 
@@ -64,7 +65,7 @@ Antes de probar esta característica, asegúrese de cumplir los requisitos descr
 | Suscripción  | La suscripción debe incluir una de las siguientes opciones:<br/>- [Windows 10/11 Enterprise E5](/windows/deployment/deploy-enterprise-licenses)<br/>- [Microsoft 365 E5](https://www.microsoft.com/microsoft-365/enterprise/e5?activetab=pivot%3aoverviewtab)<br/>- Seguridad de Microsoft 365 E5<br/>- [Microsoft 365 E3](https://www.microsoft.com/microsoft-365/enterprise/e3?activetab=pivot%3aoverviewtab)<br/>- [Microsoft Defender para punto de conexión Plan 1 o Plan 2](../defender/eval-defender-endpoint-overview.md)<br/>- [Microsoft Defender para Empresas](../defender-business/mdb-overview.md)<br/>- [Microsoft 365 Empresa Premium](https://www.microsoft.com/microsoft-365/business/microsoft-365-business-premium)|
 | Acceso al portal | Debe tener acceso al <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">portal de Microsoft 365 Defender</a>. |
 | Sistema operativo | Los dispositivos de la organización deben ejecutar uno de los siguientes sistemas operativos con las [últimas actualizaciones de antivirus o antimalware](manage-updates-baselines-microsoft-defender-antivirus.md): <br/>- Windows 11<br/>- Windows 10 actualización de aniversario (versión 1607) o posterior |
-| Protección relacionada | [Windows डिफेन्डर SmartScreen](/windows/security/threat-protection/microsoft-defender-smartscreen/microsoft-defender-smartscreen-overview) y [la protección de red](network-protection.md) deben estar habilitadas en los dispositivos de la organización. |
+| Protección relacionada | [Windows Defender SmartScreen](/windows/security/threat-protection/microsoft-defender-smartscreen/microsoft-defender-smartscreen-overview) y [la protección de red](network-protection.md) deben estar habilitadas en los dispositivos de la organización. |
 
 ## <a name="data-handling"></a>Control de datos
 
@@ -157,7 +158,7 @@ Las directivas se pueden implementar para bloquear cualquiera de las siguientes 
 
 **Chat**: sitios que son principalmente salas de chat basadas en web.
 
-**Juegos**: Sitios relacionados con videojuegos o juegos de ordenador, incluyendo sitios que promueven juegos a través de servicios en línea de hospedaje o información relacionada con juegos.
+**Juegos**: Sitios relacionados con videojuegos o juegos de ordenador, incluyendo sitios que promueven juegos a través de hospedaje servicios en línea o información relacionada con juegos.
 
 **Mensajería instantánea**: sitios que se pueden usar para descargar software de mensajería instantánea o mensajería instantánea basada en cliente.
 
@@ -184,7 +185,7 @@ Las directivas se pueden implementar para bloquear cualquiera de las siguientes 
 
 Para agregar una nueva directiva, siga estos pasos:
 
-1. En el <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">portal de Microsoft 365 Defender</a>, elija **Configuración Filtrado** >  de  > **contenido web****+ Agregar directiva**.
+1. En el <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">portal de Microsoft 365 Defender</a>, elija **Configuración** >  Filtrado **de** >  contenido web **de puntos** >  de conexión **+ Agregar directiva**.
 
 2. Especifique un nombre.
 

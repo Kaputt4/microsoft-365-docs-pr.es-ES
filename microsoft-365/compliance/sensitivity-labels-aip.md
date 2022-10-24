@@ -16,19 +16,19 @@ ms.collection:
 search.appverid:
 - MOE150
 - MET150
-description: Para Office 365 aplicaciones, comprenda la migración del complemento de Azure Information Protection (AIP) a un etiquetado integrado para proteger la información confidencial.
-ms.openlocfilehash: 80cc5a22f3fe604f2579b321bd12546502386988
-ms.sourcegitcommit: 0d8fb571024f134d7480fe14cffc5e31a687d356
+description: En el caso de las aplicaciones Office 365, comprenda la migración del complemento de Azure Information Protection (AIP) a un etiquetado integrado para proteger la información confidencial.
+ms.openlocfilehash: eb12c7cff4b3ca27f49503a3528a775af794901a
+ms.sourcegitcommit: 0ca3ab2abe07810e9b2cc2d806e3c6b9f35b146c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/20/2022
-ms.locfileid: "68644777"
+ms.lasthandoff: 10/24/2022
+ms.locfileid: "68684940"
 ---
-# <a name="migrate-the-azure-information-protection-aip-add-in-to-built-in-labeling-for-office-apps"></a>Migración del complemento Azure Information Protection (AIP) al etiquetado integrado para aplicaciones de Office
+# <a name="migrate-the-azure-information-protection-aip-add-in-to-built-in-labeling-for-office-apps"></a>Migración del complemento de Azure Information Protection (AIP) al etiquetado integrado para aplicaciones de Office
 
 >*[Guía de licencias de Microsoft 365 para la seguridad y el cumplimiento](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance).*
 
-Cuando se usan [etiquetas de confidencialidad](sensitivity-labels.md) en Aplicaciones Microsoft 365 en equipos Windows, se recomienda usar el etiquetado integrado en aplicaciones de Office, incluso si tiene instalado el [cliente de etiquetado unificado de Azure Information Protection (AIP](/azure/information-protection/rms-client/aip-clientv2)). En el futuro, el complemento AIP se deshabilitará de forma predeterminada en las versiones más recientes de las aplicaciones de Office.
+Cuando se usan [etiquetas de confidencialidad](sensitivity-labels.md) en Aplicaciones Microsoft 365 en equipos Windows, se recomienda usar el etiquetado integrado en las aplicaciones de Office, incluso si tiene instalado el [cliente de etiquetado unificado de Azure Information Protection (AIP](/azure/information-protection/rms-client/aip-clientv2)). En el futuro, el complemento AIP se deshabilitará de forma predeterminada en las versiones más recientes de las aplicaciones de Office.
 
 Para prepararse para este cambio, use este artículo para comprender las ventajas de usar el etiquetado integrado, qué características principales tienen paridad y cómo controlar la migración desde el complemento AIP a la experiencia de etiquetado más reciente.
 
@@ -81,7 +81,7 @@ Some features are only supported by built-in labeling for Office apps, and won't
 
 - Para el etiquetado automático y recomendado:
     - Acceso a servicios de clasificación inteligentes que incluyen [clasificadores capacitados](classifier-learn-about.md), [coincidencia exacta de datos (EDM)](sit-learn-about-exact-data-match-based-sits.md) y [entidades con nombre](named-entities-learn.md)
-    - Detección de información confidencial a medida que los usuarios escriben
+    - Detección de información confidencial a medida que los usuarios escriben el texto
     - En Word, los usuarios pueden revisar y quitar el contenido confidencial identificado
 - [Barra de confidencialidad](sensitivity-labels-office-apps.md#sensitivity-bar) integrada en flujos de trabajo de usuario existentes
 - [Compatibilidad con PDF](sensitivity-labels-office-apps.md#pdf-support)
@@ -115,7 +115,7 @@ Recuerde que, cuando el complemento de AIP está deshabilitado, puede seguir usa
 
 ### <a name="how-to-configure-older-versions-of-office-to-disable-the-aip-add-in"></a>Configuración de versiones anteriores de Office para deshabilitar el complemento AIP
 
-En el caso de las aplicaciones de Office anteriores a las versiones enumeradas en la sección anterior, para evitar que el complemento AIP se cargue en aplicaciones de Office, use la configuración de समूह नीति **Lista de complementos administrados**, tal como se documenta en [Sin complementos cargados debido a la configuración de directiva de grupo para los programas de Office 2013 y Office 2016](https://support.microsoft.com/help/2733070/no-add-ins-loaded-due-to-group-policy-settings-for-office-2013-and-off).
+En el caso de las aplicaciones de Office anteriores a las versiones enumeradas en la sección anterior, para evitar que el complemento AIP se cargue en aplicaciones de Office, use la configuración de directiva de grupo **Lista de complementos administrados**, tal como se documenta en [Sin complementos cargados debido a la configuración de directiva de grupo para los programas de Office 2013 y Office 2016](https://support.microsoft.com/help/2733070/no-add-ins-loaded-due-to-group-policy-settings-for-office-2013-and-off).
 
 Para las aplicaciones de Windows Office que admiten el etiquetado integrado, use la configuración de Microsoft Word 2016, Excel 2016, PowerPoint 2016 y Outlook 2016, especifique los siguientes identificadores de programación (ProgID) para el cliente de AIP y establezca la opción en **0: el complemento siempre está deshabilitado (bloqueado)**
 
@@ -136,7 +136,7 @@ Como alternativa, puede deshabilitar o quitar de forma interactiva el complement
 
 Independientemente del método que elija, los cambios surtirán efecto cuando se reinicien las aplicaciones de Office.
 
-Si después de realizar estos cambios, el botón **Confidencialidad** no se muestra en la cinta de Opciones de Office, compruebe si el etiquetado de confidencialidad se ha [desactivado](sensitivity-labels-office-apps.md#if-you-need-to-turn-off-built-in-labeling-in-office-apps-on-windows) con **la opción Usar la característica Confidencialidad en Office para aplicar y ver etiquetas de confidencialidad** . Aunque esta no es la configuración predeterminada para las aplicaciones de Office, es posible que un administrador haya establecido explícitamente esta configuración mediante समूह नीति o editando directamente el Registro.
+Si después de realizar estos cambios, el botón **Confidencialidad** no se muestra en la cinta de Opciones de Office, compruebe si el etiquetado de confidencialidad se ha [desactivado](sensitivity-labels-office-apps.md#if-you-need-to-turn-off-built-in-labeling-in-office-apps-on-windows) con **la opción Usar la característica Confidencialidad en Office para aplicar y ver etiquetas de confidencialidad** . Aunque esta no es la configuración predeterminada para las aplicaciones de Office, es posible que un administrador haya establecido explícitamente esta configuración mediante directiva de grupo o editando directamente el Registro.
 
 ### <a name="how-to-configure-newer-versions-of-office-to-enable-the-aip-add-in"></a>Configuración de versiones más recientes de Office para habilitar el complemento AIP
 
@@ -145,7 +145,7 @@ Si después de realizar estos cambios, el botón **Confidencialidad** no se mues
 
 En las [versiones más recientes de Office](#how-to-disable-the-aip-add-in-to-use-built-in-labeling-for-office-apps), el complemento AIP está deshabilitado de forma predeterminada. Para habilitarlo, debe configurar una nueva configuración de Office en **Configuración de usuario/Plantillas administrativas/Microsoft Office 2016/Configuración de seguridad**:
 
-- **Use el complemento Azure Information Protection para el etiquetado de confidencialidad**. Establezca el valor en **1**.
+- **Use el complemento azure Information Protection para el etiquetado de confidencialidad**. Establezca el valor en **1**.
 
 Esta nueva configuración todavía se está implementando. Si aún no lo ve, espere unos días más e inténtelo de nuevo.
 
