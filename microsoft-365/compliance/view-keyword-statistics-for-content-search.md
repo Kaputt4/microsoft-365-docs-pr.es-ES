@@ -1,5 +1,6 @@
 ---
 title: Ver estadísticas de los resultados de búsqueda de eDiscovery
+description: Obtenga información sobre cómo usar la característica de estadísticas de búsqueda para mostrar estadísticas de búsquedas de contenido y búsquedas asociadas a un caso de exhibición de documentos electrónicos (estándar) en el portal de cumplimiento Microsoft Purview.
 f1.keywords:
 - NOCSH
 ms.author: robmazz
@@ -9,19 +10,22 @@ ms.date: 05/10/2022
 audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
-ms.search: M365-security-compliance
+ms.search: purview-compliance
 ms.localizationpriority: medium
 search.appverid:
 - MOE150
 - MET150
-description: Obtenga información sobre cómo usar la característica de estadísticas de búsqueda para mostrar estadísticas de búsquedas de contenido y búsquedas asociadas a un caso de exhibición de documentos electrónicos (estándar) en el portal de cumplimiento Microsoft Purview.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 9d44e4472afa485d5dc9453f6dea34627566806f
-ms.sourcegitcommit: 433f5b448a0149fcf462996bc5c9b45d17bd46c6
+ms.collection:
+- tier1
+- purview-compliance
+- ediscovery
+ms.openlocfilehash: f729eadedce0771783ff52ef2dc7d69e7df79c1f
+ms.sourcegitcommit: e7dbe3b0d97cd8c64b5ae15f990d5e4b1dc9c464
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/20/2022
-ms.locfileid: "67820909"
+ms.lasthandoff: 10/24/2022
+ms.locfileid: "68687964"
 ---
 # <a name="view-statistics-for-ediscovery-search-results"></a>Ver estadísticas de los resultados de búsqueda de eDiscovery
 
@@ -29,21 +33,23 @@ Después de crear y ejecutar una búsqueda de contenido o una búsqueda asociada
   
 Además, puede usar la lista de palabras clave para configurar una búsqueda para devolver estadísticas de cada palabra clave en una consulta de búsqueda. Esto le permite comparar el número de resultados devueltos por cada palabra clave en una consulta.
   
-También puede descargar estadísticas de búsqueda en un archivo CSV. Así, una vez que abra el archivo con Excel podrá usar las opciones de filtrado y ordenación del programa para comparar los resultados, o preparar informes de los resultados de búsqueda.
+También puede descargar estadísticas de búsqueda en un archivo de valores separados por comas (CSV). Así, una vez que abra el archivo con Excel podrá usar las opciones de filtrado y ordenación del programa para comparar los resultados, o preparar informes de los resultados de búsqueda.
   
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
+
 ## <a name="get-statistics-for-searches"></a>Obtención de estadísticas para búsquedas
 
 Para mostrar estadísticas de una búsqueda de contenido o una búsqueda asociada a un caso de exhibición de documentos electrónicos (estándar).
   
-1. En el portal de cumplimiento Microsoft Purview, haga clic en **Mostrar todo** y, a continuación, realice una de las siguientes acciones:
+1. En el portal de cumplimiento Microsoft Purview, seleccione **Mostrar todo** y, a continuación, realice una de las siguientes acciones:
 
-   - Haga clic en **Búsqueda de contenido** y, a continuación, seleccione una búsqueda para mostrar la página de control flotante.
+   - Seleccione **Búsqueda de contenido** y, a continuación, seleccione una búsqueda para mostrar la página de control flotante.
 
      O
 
-   - Haga clic en **eDiscovery** > **eDiscovery (Estándar),** seleccione un caso y, a continuación, seleccione una búsqueda en la pestaña **Búsquedas** para mostrar la página de control flotante.
+   - Seleccione **eDiscovery** > **eDiscovery (Estándar),** seleccione un caso y, a continuación, seleccione una búsqueda en la pestaña **Búsquedas** para mostrar la página de control flotante.
 
-2. En la página flotante de la búsqueda seleccionada, haga clic en la pestaña **Estadísticas de búsqueda** .
+2. En la página de control flotante de la búsqueda seleccionada, seleccione la pestaña **Estadísticas de búsqueda** .
   
    ![Pestaña Estadísticas de búsqueda.](../media/SearchStatistics1.png)
 
@@ -56,9 +62,7 @@ En esta sección se muestra un resumen gráfico de los elementos estimados devue
 ![Estimaciones de búsqueda para una búsqueda.](../media/SearchContentReport.png)
 
 - **Elementos estimados por ubicaciones**: el número total de elementos estimados devueltos por la búsqueda. También se muestra el número específico de elementos ubicados en buzones de correo y ubicados en sitios.
-
 - **Ubicaciones estimadas con aciertos**: el número total de ubicaciones de contenido que contienen elementos devueltos por la búsqueda. También se muestra el número específico de ubicaciones de buzón y de sitio.
-
 - **Volumen de datos por ubicación (en MB):** tamaño total de todos los elementos estimados devueltos por la búsqueda. También se muestra el tamaño específico de los elementos de buzón de correo y los elementos de sitio.
 
 ### <a name="condition-report"></a>Informe de condición
@@ -68,15 +72,10 @@ En esta sección se muestran estadísticas sobre la consulta de búsqueda y el n
 ![Informe de condición.](../media/SearchContentReportNoKeywordList.png)
 
 - **Tipo de ubicación**: tipo de ubicación de contenido al que se aplican las estadísticas de consulta. El valor de **Exchange** indica una ubicación de buzón; Un valor de **SharePoint** indica una ubicación del sitio.
-
 - **Parte**: la parte de la consulta de búsqueda a la que se aplican las estadísticas. **Principal** indica toda la consulta de búsqueda. **La palabra clave** indica que las estadísticas de la fila son para una palabra clave específica. Si usa una lista de palabras clave para la consulta de búsqueda, las estadísticas de cada componente de la consulta se incluyen en esta tabla. Para obtener más información, consulte [Obtención de estadísticas de palabras clave para las búsquedas](#get-keyword-statistics-for-searches).
-
 - **Condición**: componente real (palabra clave o condición) de la consulta de búsqueda que devolvió las estadísticas mostradas en la fila correspondiente.
-
 - **Ubicaciones con aciertos**: número de ubicaciones de contenido (especificadas por la columna **Tipo de ubicación** ) que contienen elementos que coinciden con la consulta principal o de palabra clave enumerada en la columna **Condición** .
-
 - **Elementos**: el número de elementos (de la ubicación de contenido especificada) que coinciden con la consulta enumerada en la columna **Condición** . Como se explicó anteriormente, si un elemento contiene varias instancias de una palabra clave que se está buscando, solo se cuenta una vez en esta columna.
-
 - **Tamaño (MB):** el tamaño total de todos los elementos que se encontraron (en la ubicación de contenido especificada) que coinciden con la consulta de búsqueda en la columna **Condición** .
 
 ### <a name="top-locations"></a>Ubicaciones principales
@@ -84,20 +83,17 @@ En esta sección se muestran estadísticas sobre la consulta de búsqueda y el n
 En esta sección se muestran estadísticas sobre las ubicaciones de contenido específicas con la mayoría de los elementos devueltos por la búsqueda. Se mostrarán las 1000 ubicaciones más importantes. También puede descargar una copia de este informe en formato CSV.
 
 - Nombre del nombre de la ubicación (la dirección de correo electrónico de los buzones y la dirección URL de los sitios).
-
 - Tipo de ubicación (un buzón o sitio).
-
 - Número estimado de elementos en la ubicación de contenido devuelta por la búsqueda.
-
 - Tamaño total de los elementos estimados en cada ubicación de contenido.
 
 ## <a name="get-keyword-statistics-for-searches"></a>Obtener estadísticas de palabras clave para búsquedas
 
-Como se explicó anteriormente, la sección **Informe de condición** muestra la consulta de búsqueda y el número (y el tamaño) de los elementos que coinciden con la consulta. Si usa una lista de palabras clave al crear o editar una consulta de búsqueda, puede obtener estadísticas mejoradas que muestren cuántos elementos coinciden con cada palabra clave o frase de palabra clave. Esto puede ayudarle a identificar rápidamente qué partes de la consulta son las más (y menos) eficaces. Por ejemplo, si una palabra clave devuelve un gran número de elementos, puede optar por refinar la consulta de palabras clave para restringir los resultados de la búsqueda.
+La sección **Informe de condición** muestra la consulta de búsqueda y el número (y el tamaño) de los elementos que coinciden con la consulta. Si usa una lista de palabras clave al crear o editar una consulta de búsqueda, puede obtener estadísticas mejoradas que muestren cuántos elementos coinciden con cada palabra clave o frase de palabra clave. Esto puede ayudarle a identificar rápidamente qué partes de la consulta son las más (y menos) eficaces. Por ejemplo, si una palabra clave devuelve un gran número de elementos, puede optar por refinar la consulta de palabras clave para restringir los resultados de la búsqueda.
 
 Para crear una lista de palabras clave y ver las estadísticas de palabras clave para una búsqueda:
   
-1. En el portal de cumplimiento, cree una búsqueda de contenido o una búsqueda asociada a un caso de exhibición de documentos electrónicos (estándar).
+1. En el [portal de cumplimiento Microsoft Purview](https://compliance.microsoft.com), cree una búsqueda de contenido o una búsqueda asociada a un caso de exhibición de documentos electrónicos (estándar).
 
 2. En la página **Condiciones** del asistente para búsqueda. active la casilla **Mostrar lista de palabras clave** .
 
@@ -114,16 +110,13 @@ Para crear una lista de palabras clave y ver las estadísticas de palabras clave
 
 5. Cuando se complete la búsqueda, selecciónela para mostrar la página de control flotante.
 
-6. En la pestaña **Estadísticas de búsqueda** , haga clic en el **informe Condición** para mostrar las estadísticas de palabras clave de la búsqueda.
+6. En la pestaña **Estadísticas de búsqueda** , seleccione el **informe Condición** para mostrar las estadísticas de palabras clave para la búsqueda.
 
     ![Se muestran las estadísticas de cada palabra clave.](../media/SearchKeywordsList3.png)
   
     Como se muestra en la captura de pantalla anterior, se muestran las estadísticas de cada palabra clave; esto incluye:
 
     - Estadísticas de palabras clave para cada tipo de ubicación de contenido incluida en la búsqueda.
-
     - Número de elementos de buzón sin indexar.
-
     - La consulta de búsqueda real y los resultados de cada palabra clave (identificada como **Palabra clave** en la columna **Part** ), que incluye las condiciones de la consulta de búsqueda.
-
     - La consulta de búsqueda completa (identificada como **Principal** en la columna **Part** ) y las estadísticas de la consulta completa para cada tipo de ubicación. Tenga en cuenta que estas son las mismas estadísticas que se muestran en la pestaña **Resumen** .

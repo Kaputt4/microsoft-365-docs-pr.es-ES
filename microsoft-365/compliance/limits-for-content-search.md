@@ -1,5 +1,5 @@
 ---
-title: Límites de búsqueda de contenido y exhibición de documentos electrónicos (estándar) en el centro de cumplimiento
+title: Límites de búsqueda de contenido y exhibición de documentos electrónicos (estándar) en el portal de cumplimiento Microsoft Purview
 description: Obtenga información sobre los límites vigentes para las características búsqueda de contenido y exhibición de documentos electrónicos (estándar) en el portal de cumplimiento Microsoft Purview.
 f1.keywords:
 - NOCSH
@@ -17,14 +17,14 @@ ms.collection:
 search.appverid:
 - MOE150
 - MET150
-ms.openlocfilehash: 1b3adc70796e2a4cc25fb23eb6076fc5cc6ff4db
-ms.sourcegitcommit: 04e517c7e00323b5c33d8ea937115725cf2cfd4d
+ms.openlocfilehash: 5933a232f9e91f2a0300f6a9fceb6543262cce33
+ms.sourcegitcommit: e7dbe3b0d97cd8c64b5ae15f990d5e4b1dc9c464
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/13/2022
-ms.locfileid: "68564266"
+ms.lasthandoff: 10/24/2022
+ms.locfileid: "68688136"
 ---
-# <a name="limits-for-ediscovery-search"></a>Límites de búsqueda de eDiscovery
+# <a name="limits-for-content-search-and-ediscovery-standard"></a>Límites de búsqueda de contenido y exhibición de documentos electrónicos (estándar)
 
 Se aplican varios límites a las herramientas de búsqueda de exhibición de documentos electrónicos en el portal de cumplimiento Microsoft Purview. Esto incluye las búsquedas que se ejecutan en la página **Búsqueda de contenido** y las búsquedas asociadas a un caso de exhibición de documentos electrónicos en la página **eDiscovery (estándar).** Estos límites ayudan a mantener la salud y la calidad de los servicios proporcionados a las organizaciones. También hay límites relacionados con la indexación de mensajes de correo electrónico en Exchange Online para la búsqueda. No se pueden modificar los límites de las búsquedas de exhibición de documentos electrónicos o la indexación de correo electrónico, pero debe tenerlos en cuenta para que pueda tener estos límites en cuenta al planear, ejecutar y solucionar problemas de búsquedas de eDiscovery.
 
@@ -93,10 +93,10 @@ En la tabla siguiente se enumeran los límites al exportar los resultados de una
 
 |Descripción del límite|Límite|
 |---|---|
-|Cantidad máxima de datos exportables de una sola búsqueda  <p> **Nota:** Si los resultados de la búsqueda superan los 2 TB, considere la posibilidad de usar intervalos de fechas u otros tipos de filtros para reducir el tamaño total de los resultados de la búsqueda.|2 TB|
+|Cantidad máxima de datos exportables de una sola búsqueda  <p> **Nota:** Si los resultados de la búsqueda son mayores que 2 TB, considere la posibilidad de usar intervalos de fechas u otros tipos de filtros para reducir el tamaño total de los resultados de la búsqueda.|2 TB|
 |Máximo que una organización puede exportar en un solo día <p> **Nota:** Este límite se restablece diariamente a las 12:00 UTC|2 TB|
 |Número máximo de buzones de correo para los resultados de búsqueda que se pueden descargar mediante la herramienta de exportación de eDiscovery|100 000|
-|Tamaño máximo del archivo PST que se puede exportar <p> **Nota:** Si los resultados de la búsqueda del buzón de un usuario son mayores que 10 GB, los resultados de la búsqueda del buzón se exportarán en dos (o más) archivos PST independientes. Si decide exportar todos los resultados de búsqueda en un único archivo PST, el archivo PST se derramará en archivos PST adicionales si el tamaño total de los resultados de la búsqueda es mayor que 10 GB. Si desea cambiar este tamaño predeterminado, puede editar el Registro de Windows en el equipo que use para exportar los resultados de la búsqueda. Vea [Cambiar el tamaño de los archivos PST al exportar los resultados de búsqueda de eDiscovery](change-the-size-of-pst-files-when-exporting-results.md). Los resultados de la búsqueda de un buzón específico no se dividirán entre varios archivos PST a menos que el contenido de un solo buzón sea superior a 10 GB. Si decide exportar los resultados de la búsqueda en un archivo PST para que contenga todos los mensajes de una sola carpeta y los resultados de la búsqueda sean mayores que 10 GB, los elementos todavía se organizan en orden cronológico, por lo que se enviarán a archivos PST adicionales en función de la fecha de envío.|10 GB|
+|Tamaño máximo del archivo PST que se puede exportar <p> **Nota:** Si los resultados de la búsqueda del buzón de un usuario son mayores que 10 GB, los resultados de la búsqueda del buzón se exportarán en dos (o más) archivos PST independientes. Si decide exportar todos los resultados de búsqueda en un único archivo PST, el archivo PST se derramará en archivos PST adicionales si el tamaño total de los resultados de la búsqueda es mayor que 10 GB. Si desea cambiar este tamaño predeterminado, puede editar el Registro de Windows en el equipo que use para exportar los resultados de la búsqueda. Vea [Cambiar el tamaño de los archivos PST al exportar los resultados de búsqueda de eDiscovery](change-the-size-of-pst-files-when-exporting-results.md). Los resultados de la búsqueda de un buzón específico no se dividirán entre varios archivos PST a menos que el contenido de un solo buzón sea superior a 10 GB. Si decide exportar los resultados de la búsqueda en un archivo PST para que contenga todos los mensajes de una sola carpeta y los resultados de la búsqueda sean mayores que 10 GB, los elementos siguen organizados en orden cronológico, por lo que se insertarán en archivos PST adicionales en función de la fecha de envío.|10 GB|
 |Velocidad a la que se cargan los resultados de búsqueda de buzones y sitios en una ubicación de Azure Storage proporcionada por Microsoft.|Máximo de 2 GB por hora|
 
 ## <a name="indexing-limits-for-email-messages"></a>Límites de indexación de mensajes de correo electrónico
@@ -117,13 +117,13 @@ En la tabla siguiente se describen los límites de indexación que pueden dar lu
 |Salida máxima del analizador|2 millones de caracteres|Cantidad máxima de salida de texto del analizador que se indexa. Por ejemplo, si el analizador extrajo 8 millones de caracteres de un documento, solo se indizan los dos primeros millones de caracteres.|
 |Número máximo de tokens de anotación|2 millones|Cuando se indexa un mensaje de correo electrónico, cada palabra se anota con instrucciones de procesamiento diferentes que especifican cómo se debe indexar esa palabra. Cada conjunto de instrucciones de procesamiento se denomina token de anotación. Para mantener la calidad del servicio en Office 365, hay un límite de 2 millones de tokens de anotación para un mensaje de correo electrónico.|
 |Tamaño máximo del cuerpo en el índice|67 millones de caracteres|Número total de caracteres en el cuerpo de un mensaje de correo electrónico y todos sus datos adjuntos. Cuando se indexa un mensaje de correo electrónico, todo el texto del cuerpo del mensaje y de todos los datos adjuntos se concatena en una sola cadena. El tamaño máximo de esta cadena indexada es de 67 millones de caracteres.|
-|Número máximo de tokens únicos en el cuerpo|1 millón|Como se explicó anteriormente, los tokens son el resultado de extraer texto del contenido, quitar signos de puntuación y espacios y, a continuación, dividirlo en palabras (denominadas tokens) que se almacenan en el índice. Por ejemplo, la frase `"cat, mouse, bird, dog, dog"` contiene 5 tokens. Pero solo 4 de ellos son tokens únicos. Hay un límite de 1 millón de tokens únicos por mensaje de correo electrónico, lo que ayuda a evitar que el índice se vuelva demasiado grande con tokens aleatorios.|
+|Número máximo de tokens únicos en el cuerpo|1 millón|Como se explicó anteriormente, los tokens son el resultado de extraer texto del contenido, quitar signos de puntuación y espacios y, a continuación, dividirlo en palabras (denominadas tokens) que se almacenan en el índice. Por ejemplo, la frase `"cat, mouse, bird, dog, dog"` contiene 5 tokens. Pero solo 4 de ellos son tokens únicos. Hay un límite de 1 millón de tokens únicos por mensaje de correo electrónico, lo que ayuda a evitar que el índice se haga demasiado grande con tokens aleatorios.|
 |||
 
 ## <a name="jobs-limits"></a>Límites de trabajos
 
 |Descripción|Límite|
-|---|---|
+|:----------|:----|
 |Número máximo de trabajos simultáneos en la organización.|50|
 |Número máximo de trabajos simultáneos que un único usuario puede iniciar al mismo tiempo.|25|
 |Número máximo de trabajos simultáneos en todo el inquilino (por ejemplo, búsquedas en todo el inquilino) en la organización.|5|
@@ -132,24 +132,19 @@ En la tabla siguiente se describen los límites de indexación que pueden dar lu
 
 ## <a name="more-information"></a>Más información
 
-Hay límites adicionales relacionados con diferentes aspectos de la búsqueda de contenido, como la indexación de contenido. Para obtener más información sobre estos límites, consulte los temas siguientes:
+Hay límites adicionales relacionados con diferentes aspectos de la búsqueda de contenido, como la indexación de contenido. Para obtener más información sobre estos límites, consulte los artículos siguientes:
 
 - [Elementos parcialmente indizados en la búsqueda de contenido](partially-indexed-items-in-content-search.md)
-
 - [Investigación de elementos parcialmente indexados en eDiscovery](investigating-partially-indexed-items-in-ediscovery.md)
-
 - [Límites de búsqueda de SharePoint Online](/sharepoint/search-limits)
 
 Para obtener información sobre las búsquedas de contenido, consulte:
 
 - [Búsqueda de contenido en Microsoft 365](content-search.md)
-
 - [Buscar contenido en un caso de exhibición de documentos electrónicos (estándar)](search-for-content-in-core-ediscovery.md)
-
 - [Consultas de palabras clave y condiciones de búsqueda para la búsqueda de contenido](keyword-queries-and-search-conditions.md)
 
 Para conocer los límites de mayúsculas y minúsculas relacionados con eDiscovery (Estándar) y eDiscovery (Premium), consulte:
 
 - [Límites en eDiscovery (estándar)](limits-core-ediscovery.md)
-
 - [Límites en eDiscovery (Premium)](limits-ediscovery20.md)

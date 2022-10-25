@@ -10,7 +10,7 @@ ms.topic: overview
 ms.service: microsoft-365-security
 ms.subservice: mdb
 ms.localizationpriority: medium
-ms.date: 09/14/2022
+ms.date: 10/24/2022
 ms.reviewer: shlomiakirav
 f1.keywords: NOCSH
 ms.collection:
@@ -19,12 +19,12 @@ ms.collection:
 - m365solution-mdb-setup
 - highpri
 - tier1
-ms.openlocfilehash: f72c0115b896fe9cfc80c7e04b21112f4ba7bbef
-ms.sourcegitcommit: 0283c436f3ba61a708b52b57a1955f5ea74376a3
+ms.openlocfilehash: 674b48c5c558cb4d31df85e439c1eb216c09f00c
+ms.sourcegitcommit: e7dbe3b0d97cd8c64b5ae15f990d5e4b1dc9c464
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/28/2022
-ms.locfileid: "68096883"
+ms.lasthandoff: 10/24/2022
+ms.locfileid: "68687616"
 ---
 # <a name="onboard-devices-to-microsoft-defender-for-business"></a>Incorporación de dispositivos a Microsoft Defender para Empresas
 
@@ -247,8 +247,8 @@ Para ver la lista de dispositivos incorporados a Defender for Business, vaya al 
 
 ## <a name="servers"></a>Servidores
 
-> [!NOTE]
-> **La capacidad de incorporar un servidor está actualmente en versión preliminar**.
+> [!IMPORTANT]
+> Si planea incorporar una instancia de Windows Server o Linux Server, necesitará una licencia adicional, como Microsoft Defender para Empresas servidores (versión preliminar). Como alternativa, podría usar [Microsoft Defender para servidores](/azure/defender-for-cloud/defender-for-servers-introduction); sin embargo, la experiencia de Defender para empresas podría cambiar al agregar un plan empresarial, como el plan 1 o el plan 2 de Defender para servidores. Para obtener más información, consulte [¿Qué ocurre si tengo una combinación de suscripciones de seguridad de puntos de conexión de Microsoft?](mdb-faq.yml#what-happens-if-i-have-a-mix-of-microsoft-endpoint-security-subscriptions).
 
 Elija el sistema operativo del servidor:
 

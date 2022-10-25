@@ -1,5 +1,6 @@
 ---
 title: Investigación de elementos parcialmente indexados en eDiscovery
+description: Obtenga información sobre cómo administrar elementos parcialmente indexados (también denominados elementos sin indexar) desde Exchange, SharePoint y OneDrive para la Empresa dentro de la organización.
 f1.keywords:
 - NOCSH
 ms.author: robmazz
@@ -10,41 +11,42 @@ audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
 ms.localizationpriority: medium
-ms.collection: M365-security-compliance
+ms.collection:
+- tier1
+- purview-compliance
+- ediscovery
 search.appverid:
 - MOE150
 - MET150
-ms.assetid: 4e8ff113-6361-41e2-915a-6338a7e2a1ed
 ms.custom:
 - seo-marvel-apr2020
-description: Obtenga información sobre cómo administrar elementos parcialmente indexados (también denominados elementos sin indexar) desde Exchange, SharePoint y OneDrive para la Empresa dentro de la organización.
-ms.openlocfilehash: 9e62f635c599f529369f6a037b2ee7946fc58f81
-ms.sourcegitcommit: 433f5b448a0149fcf462996bc5c9b45d17bd46c6
+ms.openlocfilehash: 813841c6c0196b51ad4a64eeb5ae0e4ab4f8a38b
+ms.sourcegitcommit: e7dbe3b0d97cd8c64b5ae15f990d5e4b1dc9c464
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/20/2022
-ms.locfileid: "67818289"
+ms.lasthandoff: 10/24/2022
+ms.locfileid: "68687659"
 ---
 # <a name="investigating-partially-indexed-items-in-ediscovery"></a>Investigación de elementos parcialmente indexados en eDiscovery
 
 Una búsqueda de exhibición de documentos electrónicos que se ejecuta desde el portal de cumplimiento Microsoft Purview incluye automáticamente elementos parcialmente indexados en los resultados de búsqueda estimados al ejecutar una búsqueda. Los elementos indizados parcialmente son elementos y documentos de buzón de Exchange en SharePoint y OneDrive para la Empresa sitios que, por alguna razón, no estaban completamente indexados para la búsqueda. La mayoría de los mensajes de correo electrónico y documentos de sitio se indexan correctamente porque están dentro de los [límites de indexación de los mensajes de correo electrónico](limits-for-content-search.md#indexing-limits-for-email-messages). Sin embargo, algunos elementos pueden superar estos límites de indexación y se indizarán parcialmente. Estas son otras razones por las que los elementos no se pueden indexar para la búsqueda y se devuelven como elementos indizados parcialmente al ejecutar una búsqueda de exhibición de documentos electrónicos:
   
 - Email mensajes tienen un archivo adjunto que no se puede abrir; esta es la causa más común de los elementos de correo electrónico parcialmente indexados.
-
 - Se han adjuntado demasiados archivos a un mensaje de correo electrónico.
-
 - Un archivo adjuntado a un mensaje de correo electrónico es demasiado grande.
-
 - El tipo de archivo se admite para indización pero se produjo un error de indización en un archivo específico.
 
 Aunque varía, la mayoría de las organizaciones los clientes tienen menos del 1 % del contenido por volumen y menos del 12 % del contenido por tamaño que se indexa parcialmente. La razón de la diferencia entre el volumen y el tamaño es que los archivos más grandes tienen una mayor probabilidad de contener contenido que no se puede indexar completamente.
+
+Para obtener más información sobre los elementos de índice parcial en búsqueda de contenido, consulte [Investigación de elementos indizados parcialmente en búsqueda de contenido](partially-indexed-items-in-content-search.md).
   
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
+
 ## <a name="why-does-the-partially-indexed-item-count-change-for-a-search"></a>¿Por qué cambia el recuento de elementos parcialmente indexados para una búsqueda?
 
 Después de ejecutar una búsqueda de eDiscovery, el número total y el tamaño de los elementos parcialmente indexados en las ubicaciones en las que se ha buscado se enumeran en las estadísticas de resultados de búsqueda que se muestran en las estadísticas detalladas de la búsqueda. Tenga en cuenta que se denominan  *elementos no indizados*  en las estadísticas de búsqueda. Estos son algunos aspectos que afectarán al número de elementos indizados parcialmente que se devuelven en los resultados de la búsqueda:
   
 - Si un elemento se indexa parcialmente y coincide con la consulta de búsqueda, se incluye en el recuento (y el tamaño) de los elementos de resultados de búsqueda y en los elementos indizados parcialmente. Sin embargo, cuando se exportan los resultados de esa misma búsqueda, el elemento solo se incluye con el conjunto de resultados de búsqueda; no se incluye como un elemento parcialmente indexado.
-
 - Los elementos indizados parcialmente ubicados en sitios de SharePoint y OneDrive *no se* incluyen en la estimación de elementos indizados parcialmente que se muestran en las estadísticas detalladas de la búsqueda. Sin embargo, los elementos indizados parcialmente se pueden exportar al exportar los resultados de una búsqueda de exhibición de documentos electrónicos. Por ejemplo, si solo busca sitios, el número estimado de elementos indizados parcialmente será cero.
   
 ## <a name="calculating-the-ratio-of-partially-indexed-items-in-your-organization"></a>Cálculo de la proporción de elementos indizados parcialmente en la organización
@@ -114,77 +116,3 @@ A continuación se muestra una lista de errores de indexación y una descripció
 | `wordbreakertruncated` <br/> |Se identificaron demasiadas palabras en el documento durante la indexación. El procesamiento de la propiedad se detuvo al alcanzar el límite y la propiedad se trunca.  <br/> |
 
 Los campos de error describen qué campos se ven afectados por el error de procesamiento que aparece en el campo Etiquetas de error. Si busca en una propiedad como  `subject` o  `participants`, los errores en el cuerpo del mensaje no afectarán a los resultados de la búsqueda. Esto puede ser útil al determinar exactamente qué elementos parcialmente indexados es posible que necesite investigar más a fondo.
-
-<!--
-## Using a PowerShell script to determine your organization's exposure to partially indexed email items
-
-The following steps show you how to run a PowerShell script that searches for all items in all Exchange mailboxes, and then generates a report about your organization's ratio of partially indexed email items (by count and by size) and displays the number of items (and their file type) for each indexing error that occurs. Use the error tag descriptions in the previous section to identify the indexing error.
-  
-1. Save the following text to a Windows PowerShell script file by using a filename suffix of .ps1; for example, `PartiallyIndexedItems.ps1`.
-
-   ```powershell
-     write-host "**************************************************"
-     write-host "     Security & Compliance PowerShell      " -foregroundColor yellow -backgroundcolor darkgreen
-     write-host "   eDiscovery Partially Indexed Item Statistics   " -foregroundColor yellow -backgroundcolor darkgreen
-     write-host "**************************************************"
-     " " 
-     # Create a search with Error Tags Refinders enabled
-     Remove-ComplianceSearch "RefinerTest" -Confirm:$false -ErrorAction 'SilentlyContinue'
-     New-ComplianceSearch -Name "RefinerTest" -ContentMatchQuery "size>0" -RefinerNames ErrorTags -ExchangeLocation ALL
-     Start-ComplianceSearch "RefinerTest"
-     # Loop while search is in progress
-     do{
-         Write-host "Waiting for search to complete..."
-         Start-Sleep -s 5
-         $complianceSearch = Get-ComplianceSearch "RefinerTest"
-     }while ($complianceSearch.Status -ne 'Completed')
-     $refiners = $complianceSearch.Refiners | ConvertFrom-Json
-     $errorTagProperties = $refiners.Entries | Get-Member -MemberType NoteProperty
-     $partiallyIndexedRatio = $complianceSearch.UnindexedItems / $complianceSearch.Items
-     $partiallyIndexedSizeRatio = $complianceSearch.UnindexedSize / $complianceSearch.Size
-     " "
-     "===== Partially indexed items ====="
-     "         Total          Ratio"
-     "Count    {0:N0}{1:P2}" -f $complianceSearch.Items.ToString("N0").PadRight(15, " "), $partiallyIndexedRatio
-     "Size(GB) {0:N2}{1:P2}" -f ($complianceSearch.Size / 1GB).ToString("N2").PadRight(15, " "), $partiallyIndexedSizeRatio
-     " "
-     Write-Host ===== Reasons for partially indexed items =====
-     foreach($errorTagProperty in $errorTagProperties)
-     {
-         $name = $refiners.Entries.($errorTagProperty.Name).Name
-         $count = $refiners.Entries.($errorTagProperty.Name).TotalCount
-         $frag = $name.Split("{_}")
-         $errorTag = $frag[0]
-         $fileType = $frag[1]
-         if ($errorTag -ne $lastErrorTag)
-         {
-             $errorTag
-         }
-         "    " + $fileType + " => " + $count
-         $lastErrorTag = $errorTag
-     }
-   ```
-
-2. [Connect to Security & Compliance PowerShell](/powershell/exchange/exchange-online-powershell).
-
-3. In Security & Compliance PowerShell, go to the folder where you saved the script in step 1, and then run the script; for example:
-
-   ```powershell
-   .\PartiallyIndexedItems.ps1
-   ```
-
-Here's an example fo the output returned by the script.
-  
-![Example of output from script that generates a report on your organization's exposure to partially indexed email items.](../media/aeab5943-c15d-431a-bdb2-82f135abc2f3.png)
-
-> [!NOTE]
-> Note the following:
->  
-> - The total number and size of email items, and your organization's ratio of partially indexed email items (by count and by size).
-> 
-> - A list error tags and the corresponding file types for which the error occurred.
--->
-
-## <a name="see-also"></a>Vea también
-
-[Elementos indizados parcialmente en eDiscovery](partially-indexed-items-in-content-search.md)

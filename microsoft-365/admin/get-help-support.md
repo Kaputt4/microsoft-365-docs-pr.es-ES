@@ -25,12 +25,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Obtenga información sobre cómo obtener soporte técnico en línea o por teléfono para su suscripción Microsoft 365 para empresas. Debe ser el administrador de una suscripción de empresa para poder usar el soporte técnico.
-ms.openlocfilehash: ae3855d8ab7d236413541a029d3e0c82a6585a82
-ms.sourcegitcommit: 0d8fb571024f134d7480fe14cffc5e31a687d356
+ms.openlocfilehash: 254c20dc7fc709b4217a92f0102d802a79286df1
+ms.sourcegitcommit: e7dbe3b0d97cd8c64b5ae15f990d5e4b1dc9c464
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/20/2022
-ms.locfileid: "68638926"
+ms.lasthandoff: 10/24/2022
+ms.locfileid: "68688450"
 ---
 # <a name="get-support-for-microsoft-365-for-business"></a>Obtener soporte técnico para Microsoft 365 para empresas
 
@@ -66,23 +66,17 @@ Save time by starting your service request online. We'll help you find a solutio
 
 ## <a name="phone-support"></a>Soporte por teléfono
 
-Los números de teléfono para las horas de facturación y soporte técnico (e idiomas) aparecen en [Microsoft 366 para contactos de soporte técnico empresarial por país o región](support-contact-info.md).
+En la mayoría de los países o regiones, el soporte técnico de facturación de Microsoft 365 para productos y servicios empresariales se proporciona en inglés de 9:00 a 17:00, de lunes a viernes. La compatibilidad con idiomas locales varía según el país o la región.
+
+El soporte técnico se proporciona en inglés las 24 horas del día, los 7 días de la semana y, en algunos casos, en idiomas locales, como se indica.
+
+>[!div class="nextstepaction"]
+>[Búsqueda de números de teléfono de soporte técnico por país o región](support-contact-info.md)
 
 Administradores, tengan los datos de su cuenta preparados cuando llamen.
 
 > [!NOTE]
 > Para proteger mejor su organización, agregamos un paso de comprobación con PIN al proceso de verificación telefónica existente. Si se pone en contacto con nosotros desde un número que no esté registrado en el perfil de la organización, el representante de soporte técnico de Microsoft enviará un código de verificación al correo electrónico o número de teléfono registrado en el perfil del Centro de administración de Microsoft 365. Debe proporcionar este código al representante de soporte técnico para concederles acceso a la cuenta de su organización.
-
-El soporte técnico de facturación de Microsoft 365 para productos y servicios empresariales se proporciona en inglés de 9:00 a 17:00 (de 9:00 a 18:00 en Australia), de lunes a viernes.\
-Se proporciona soporte técnico en inglés 24 horas al día, 7 días a la semana.
-
-- **En los Estados Unidos, llame al 1 800 865 9408.**
-
-- **En Australia, llame al 1 800 197 503.**
-
-- **En Canadá, llame al 1 800 865 9408.**
-
-- **En el Reino Unido, llame al 0800 032 6417.**
 
 ## <a name="small-business-support-with-business-assist"></a>Soporte técnico para pequeñas empresas con Business Assist
 

@@ -23,12 +23,12 @@ ms.topic: conceptual
 search.appverid:
 - MOE150
 - met150
-ms.openlocfilehash: 17f58b7722614891e05c5c5101826735d1597db9
-ms.sourcegitcommit: 0d8fb571024f134d7480fe14cffc5e31a687d356
+ms.openlocfilehash: 94892ff32f00dd1ceebf2a8bddfbb2518e96682d
+ms.sourcegitcommit: e7dbe3b0d97cd8c64b5ae15f990d5e4b1dc9c464
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/20/2022
-ms.locfileid: "68639410"
+ms.lasthandoff: 10/24/2022
+ms.locfileid: "68687998"
 ---
 # <a name="investigate-alerts-in-microsoft-365-defender"></a>Investigar alertas con Microsoft 365 Defender
 
@@ -86,7 +86,7 @@ Tendrá que tener cualquiera de los siguientes roles para acceder a Microsoft De
 
 Para ver la página de alerta principal, seleccione el nombre de la alerta. Por ejemplo:
 
-:::image type="content" source="../../media/investigate-alerts/alerts-ss-alerts-main.png" alt-text="Detalles de una alerta en el portal de Microsoft 365 Defender" lightbox="../../media/investigate-alerts/alerts-ss-alerts-main.png":::
+:::image type="content" source="../../media/investigate-alerts/alerts-ss-alerts-main.png" alt-text="Captura de pantalla que muestra los detalles de una alerta en el portal de Microsoft 365 Defender" lightbox="../../media/investigate-alerts/alerts-ss-alerts-main.png":::
 
 También puede seleccionar la acción **Abrir la página de alerta principal** en el panel **Administrar alertas** .
 
@@ -117,7 +117,9 @@ Microsoft 365 Defender alertas pueden provenir de soluciones como Microsoft Defe
 | Gobernanza de aplicaciones | `ma` |
 | Prevención de pérdida de datos de Microsoft | `dl` |
 
-De forma predeterminada, solo están habilitadas las alertas más relevantes para el centro de operaciones de seguridad. Si desea obtener todas las detecciones de riesgo de IP de AAD, puede cambiarla en Microsoft 365 Defender página de configuración en la sección **Configuración del servicio de alertas**. 
+De forma predeterminada, solo están habilitadas las alertas más relevantes para el centro de operaciones de seguridad. Si desea obtener todas las detecciones de riesgo de IP de AAD, puede cambiarla en Microsoft 365 Defender página de configuración en la sección **Configuración del servicio de alertas**.
+
+:::image type="content" source="../../media/investigate-alerts/alerts-ss-aadip-alert.png" alt-text="Captura de pantalla de la configuración de alertas de protección de identidades de Azure AD en el portal de Microsoft 365 Defender." lightbox="../../media/investigate-alerts/alerts-ss-aadip-alert.png":::
 
 > [!IMPORTANT]
 > Parte de la información se refiere a productos preliminares que pueden ser modificados sustancialmente antes de su lanzamiento comercial. Microsoft no otorga garantías, expresas o implícitas, con respecto a la información que aquí se proporciona.
@@ -145,7 +147,7 @@ Una vez seleccionada una entidad de interés, la página de detalles cambia para
 
 Para administrar una alerta, seleccione **Administrar alerta** en la sección de detalles de resumen de la página de alertas. Para una única alerta, este es un ejemplo del panel **Administrar alertas** .
 
-:::image type="content" source="../../media/investigate-alerts/alerts-ss-alerts-manage.png" alt-text="La sección Administrar alerta del portal de Microsoft 365 Defender" lightbox="../../media/investigate-alerts/alerts-ss-alerts-manage.png":::
+:::image type="content" source="../../media/investigate-alerts/alerts-ss-alerts-manage.png" alt-text="Captura de pantalla de la sección Administrar alerta en el portal de Microsoft 365 Defender" lightbox="../../media/investigate-alerts/alerts-ss-alerts-manage.png":::
 
 El panel **Administrar alertas** permite ver o especificar:
 
@@ -168,19 +170,19 @@ El panel **Administrar alertas** permite ver o especificar:
 
 Para administrar un *conjunto de alertas similar a una alerta específica*, seleccione **Ver alertas similares** en el cuadro **INSIGHT** de la sección de detalles de resumen de la página de alertas.
 
-:::image type="content" source="../../media/investigate-alerts/alerts-ss-alerts-manage-select.png" lightbox="../../media/investigate-alerts/alerts-ss-alerts-manage-select.png" alt-text="Administración de una alerta en el portal de Microsoft 365 Defender":::
+:::image type="content" source="../../media/investigate-alerts/alerts-ss-alerts-manage-select.png" lightbox="../../media/investigate-alerts/alerts-ss-alerts-manage-select.png" alt-text="Captura de pantalla de la selección de una alerta en el portal de Microsoft 365 Defender":::
 
 En el panel **Administrar alertas** , puede clasificar todas las alertas relacionadas al mismo tiempo. Por ejemplo:
 
-:::image type="content" source="../../media/investigate-alerts/alerts-ss-alerts-select-related.png" lightbox="../../media/investigate-alerts/alerts-ss-alerts-select-related.png" alt-text="Administración de alertas relacionadas en el portal de Microsoft 365 Defender":::
+:::image type="content" source="../../media/investigate-alerts/alerts-ss-alerts-select-related.png" lightbox="../../media/investigate-alerts/alerts-ss-alerts-select-related.png" alt-text="Captura de pantalla de la administración de alertas relacionadas en el portal de Microsoft 365 Defender":::
 
 Si ya se clasificaron alertas similares en el pasado, puede ahorrar tiempo mediante Microsoft 365 Defender recomendaciones para obtener información sobre cómo se resolvieron las otras alertas. En la sección de detalles de resumen, seleccione **Recomendaciones**.
 
-:::image type="content" source="../../media/investigate-alerts/alerts-ss-alerts-recommendations.png" lightbox="../../media/investigate-alerts/alerts-ss-alerts-recommendations.png" alt-text="Ejemplo de selección de recomendaciones para una alerta":::
+:::image type="content" source="../../media/investigate-alerts/alerts-ss-alerts-recommendations.png" lightbox="../../media/investigate-alerts/alerts-ss-alerts-recommendations.png" alt-text="Captura de pantalla de un ejemplo de selección de recomendaciones para una alerta":::
 
 En **la pestaña Recomendaciones** se proporcionan acciones y consejos de los pasos siguientes para la investigación, corrección y prevención. Por ejemplo:
 
-:::image type="content" source="../../media/investigate-alerts/alerts-ss-alerts-recommendations-example.png" lightbox="../../media/investigate-alerts/alerts-ss-alerts-recommendations-example.png" alt-text="Ejemplo de recomendaciones de alertas":::
+:::image type="content" source="../../media/investigate-alerts/alerts-ss-alerts-recommendations-example.png" lightbox="../../media/investigate-alerts/alerts-ss-alerts-recommendations-example.png" alt-text="Captura de pantalla de un ejemplo de recomendaciones de alertas":::
 
 ## <a name="suppress-an-alert"></a>Suprimir una alerta
 

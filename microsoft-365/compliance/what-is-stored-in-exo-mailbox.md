@@ -1,5 +1,5 @@
 ---
-title: Contenido almacenado en buzones de Exchange Online
+title: Contenido almacenado en buzones de Exchange Online para eDiscovery
 description: El contenido generado por las aplicaciones basadas en la nube en Microsoft 365 se almacena o asocia con el buzón de Exchange Online de un usuario. Este contenido se puede buscar mediante las herramientas de Exhibición de documentos electrónicos de Microsoft.
 f1.keywords:
 - NOCSH
@@ -18,25 +18,23 @@ search.appverid:
 - MOE150
 - MED150
 - MET150
-ms.openlocfilehash: 47fef9022ecfc5ef2d3a36de637ab4e48c63358f
-ms.sourcegitcommit: 4dfb5de8c61847b8ddd10410ad20d34860eed8f6
+ms.openlocfilehash: d848d25989def72d8a9056c39c9871bbd095ad05
+ms.sourcegitcommit: e7dbe3b0d97cd8c64b5ae15f990d5e4b1dc9c464
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/28/2022
-ms.locfileid: "68121101"
+ms.lasthandoff: 10/24/2022
+ms.locfileid: "68687831"
 ---
 # <a name="content-stored-in-exchange-online-mailboxes-for-ediscovery"></a>Contenido almacenado en buzones de Exchange Online para eDiscovery
 
-Un buzón de Exchange Online se usa principalmente para almacenar elementos relacionados con el correo electrónico, como mensajes, elementos de calendario, tareas y notas. Pero eso cambia a medida que más aplicaciones basadas en la nube también almacenan sus datos en el buzón de un usuario. Una ventaja de almacenar datos en un buzón es que puede usar las herramientas de búsqueda en búsqueda de contenido, Microsoft Purview eDiscovery (estándar) y Microsoft Purview eDiscovery (Premium) para buscar, ver y exportar los datos de estas aplicaciones basadas en la nube. Los datos de algunas de estas aplicaciones se almacenan en carpetas ocultas ubicadas en un subárbol de mensajes no predictivos (no IPM) en el buzón. Es posible que los datos de otras aplicaciones basadas en la nube no se almacenen _en_ el buzón, pero están _asociados al_ buzón y se devuelven en búsquedas (si esos datos coinciden con la consulta de búsqueda). Independientemente de si los datos basados en la nube se almacenan en o están asociados a un buzón de usuario, los datos no suelen ser visibles en un cliente de correo electrónico cuando un usuario abre su buzón.
+Un buzón de Exchange Online se usa principalmente para almacenar elementos relacionados con el correo electrónico, como mensajes, elementos de calendario, tareas y notas. Pero eso cambia a medida que más aplicaciones basadas en la nube también almacenan sus datos en el buzón de un usuario. Una ventaja de almacenar datos en un buzón es que puede usar las herramientas de búsqueda en búsqueda de contenido, Microsoft Purview eDiscovery (estándar) y Microsoft Purview eDiscovery (Premium) para buscar, ver y exportar los datos de estas aplicaciones basadas en la nube. 
+
+Los datos de algunas de estas aplicaciones se almacenan en carpetas ocultas ubicadas en un subárbol de mensajes no predictivos (no IPM) en el buzón. Es posible que los datos de otras aplicaciones basadas en la nube no se almacenen _en_ el buzón, pero están _asociados al_ buzón y se devuelven en búsquedas (si esos datos coinciden con la consulta de búsqueda). Independientemente de si los datos basados en la nube se almacenan en o están asociados a un buzón de usuario, los datos no suelen ser visibles en un cliente de correo electrónico cuando un usuario abre su buzón.
 
 En la tabla siguiente se enumeran las aplicaciones que almacenan o asocian datos a un buzón basado en la nube. En la tabla también se describe el tipo de contenido que genera cada aplicación.
 
-<br>
-
-****
-
 |Aplicación de Microsoft 365|Descripción|
-|---|---|
+|:----------------|:----------|
 |Formas<sup>*</sup>|Los formularios y las respuestas a un formulario se almacenan en archivos adjuntos a mensajes de correo electrónico y almacenados en una carpeta oculta en el buzón del usuario que creó el formulario. Los formularios creados antes de abril de 2020 se almacenan como un archivo PDF. Los formularios creados después de 2020 se almacenan como un archivo JSON. Las respuestas a un formulario se almacenan en un archivo CSV. Al exportar contenido de Formularios en un archivo PST, estos datos se encuentran en la carpeta **ApplicationDataRoot** de una subcarpeta denominada con el siguiente guid (IDENTIFICADOR único global): **c9a559d2-7aab-4f13-a6ed-e7e9c52aec87**.|
 |Grupos de Microsoft 365|Email mensajes, elementos de calendario, contactos (Personas), notas y tareas se almacenan en el buzón asociado a un grupo de Microsoft 365.|
 |Outlook/Exchange Online|Email mensajes, elementos de calendario, contactos (Personas), notas y tareas se almacenan en el buzón de un usuario.|

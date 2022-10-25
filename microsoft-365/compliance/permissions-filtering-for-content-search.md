@@ -1,5 +1,6 @@
 ---
 title: Configuración del filtrado de permisos para eDiscovery
+description: Use el filtrado de permisos de búsqueda para permitir que los administradores de eDiscovery busquen solo un subconjunto de buzones y sitios de la organización.
 f1.keywords:
 - NOCSH
 ms.author: robmazz
@@ -11,25 +12,25 @@ ms.topic: article
 ms.service: O365-seccomp
 ms.localizationpriority: medium
 ms.collection:
-- Strat_O365_IP
-- M365-security-compliance
-- SPO_Content
+- tier1
+- purview-compliance
+- ediscovery
 search.appverid:
 - MOE150
 - MET150
-ms.assetid: 1adffc35-38e5-4f7d-8495-8e0e8721f377
-description: Use el filtrado de permisos de búsqueda para permitir que los administradores de eDiscovery busquen solo un subconjunto de buzones y sitios de la organización.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 6a1441a10b1331c8a2d48d6e22e7a39132a5cd5d
-ms.sourcegitcommit: 95ac076310ab9006ed92c69938f7ae771cd10826
+ms.openlocfilehash: b6a90bb64fa2884e4ec94cfac83f437bad73c23e
+ms.sourcegitcommit: e7dbe3b0d97cd8c64b5ae15f990d5e4b1dc9c464
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/20/2022
-ms.locfileid: "67851554"
+ms.lasthandoff: 10/24/2022
+ms.locfileid: "68688431"
 ---
 # <a name="configure-permissions-filtering-for-ediscovery"></a>Configuración del filtrado de permisos para eDiscovery
 
-Puede usar el filtrado de permisos de búsqueda para permitir que un administrador de exhibición de documentos electrónicos busque solo un subconjunto de buzones y sitios de su organización. También puede utilizar el filtrado de permisos para permitir que ese mismo administrador de exhibición de documentos electrónicos busque solo contenido de los buzones o los sitios que cumpla unos criterios concretos de búsqueda. Por ejemplo, puede permitir que un administrador de exhibición de documentos electrónicos busque solo en los buzones de usuarios de un departamento o una ubicación en concreto. Para ello, cree un filtro que use un filtro de destinatario compatible para limitar qué buzones puede buscar un usuario o grupo de usuarios específicos. También puede crear un filtro que especifique qué contenido de buzón de correo puede buscar un usuario. Para ello, debe crear un filtro que utilice una propiedad de mensaje que pueda buscarse. De forma similar, puede permitir que un administrador de exhibición de documentos electrónicos busque solo sitios específicos de SharePoint en su organización. Para hacerlo, debe crear un filtro que limite en qué sitio puede buscarse. También puede crear un filtro que especifique qué contenido del sitio puede buscarse. Para ello, debe crear un filtro que utilice una propiedad de sitio que pueda buscarse.
+Puede usar el filtrado de permisos de búsqueda para permitir que un administrador de exhibición de documentos electrónicos busque solo un subconjunto de buzones y sitios de su organización. También puede utilizar el filtrado de permisos para permitir que ese mismo administrador de exhibición de documentos electrónicos busque solo contenido de los buzones o los sitios que cumpla unos criterios concretos de búsqueda. 
+
+Por ejemplo, es posible que desee que un administrador de exhibición de documentos electrónicos busque solo los buzones de los usuarios en una ubicación o departamento específicos. Para ello, cree un filtro que use un filtro de destinatario compatible para limitar qué buzones puede buscar un usuario o grupo de usuarios específicos. También puede crear un filtro que especifique qué contenido de buzón de correo puede buscar un usuario. Para ello, debe crear un filtro que utilice una propiedad de mensaje que pueda buscarse. De forma similar, puede permitir que un administrador de exhibición de documentos electrónicos busque solo sitios específicos de SharePoint en su organización. Para hacerlo, debe crear un filtro que limite en qué sitio puede buscarse. También puede crear un filtro que especifique qué contenido del sitio puede buscarse. Para ello, debe crear un filtro que utilice una propiedad de sitio que pueda buscarse.
 
 Los filtros de permisos de búsqueda se aplican al buscar contenido mediante búsqueda de contenido, Microsoft Purview eDiscovery (estándar) y Microsoft Purview eDiscovery (Premium) en el portal de cumplimiento Microsoft Purview. Cuando se aplica un filtro de permisos de búsqueda a un usuario específico, ese usuario puede realizar las siguientes acciones relacionadas con la búsqueda:
 
@@ -40,30 +41,27 @@ Los filtros de permisos de búsqueda se aplican al buscar contenido mediante bú
 
 También puede usar el filtrado de permisos de búsqueda para crear límites lógicos ( _denominados límites de cumplimiento_) dentro de una organización que controle las ubicaciones de contenido del usuario (como buzones, sitios de SharePoint y cuentas de OneDrive) que pueden buscar determinados administradores de eDiscovery. Para obtener más información, vea [Configurar límites de cumplimiento para las investigaciones de eDiscovery](set-up-compliance-boundaries.md).
 
-Los cuatro cmdlets siguientes de Security & Compliance PowerShell permiten configurar y administrar filtros de permisos de búsqueda:
+Los cuatro cmdlets siguientes de [Security & Compliance PowerShell](/powershell/exchange/scc-powershell) permiten configurar y administrar filtros de permisos de búsqueda:
 
 - [New-ComplianceSecurityFilter](#new-compliancesecurityfilter)
 - [Get-ComplianceSecurityFilter](#get-compliancesecurityfilter)
 - [Set-ComplianceSecurityFilter](#set-compliancesecurityfilter)
 - [Remove-ComplianceSecurityFilter](#remove-compliancesecurityfilter)
 
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
+
 ## <a name="requirements-to-configure-permissions-filtering"></a>Requisitos para configurar el filtrado de permisos
 
-- Para ejecutar los cmdlets de filtro de seguridad de cumplimiento, debe ser miembro del grupo de roles Administración de la organización en el portal de cumplimiento. Para obtener más información, vea [Permisos en el Centro de seguridad y cumplimiento](../security/office-365-security/permissions-in-the-security-and-compliance-center.md).
-
+- Para ejecutar los cmdlets de filtro de seguridad de cumplimiento, debe ser miembro del grupo de roles Administración de la *organización* en el portal de cumplimiento. Para obtener más información, vea [Permisos en el Centro de seguridad y cumplimiento](../security/office-365-security/permissions-in-the-security-and-compliance-center.md).
 - Tiene que conectarse a PowerShell de cumplimiento de Exchange Online y seguridad & para usar los cmdlets de filtro de seguridad de cumplimiento. Esto es necesario porque estos cmdlets requieren acceso a las propiedades del buzón, por lo que tiene que conectarse a Exchange Online PowerShell. Vea los pasos en la sección siguiente.
-
 - Consulte la sección [More information](#more-information) para obtener información adicional acerca de los filtros de permisos de búsqueda.
-
 - El filtrado de permisos de búsqueda se aplica a los buzones inactivos, lo que significa que puede usar el filtrado de contenido de buzón y buzón para limitar quién puede buscar en un buzón inactivo. Consulte la sección [Más información](#more-information) para obtener información adicional sobre el filtrado de permisos y los buzones inactivos.
-
 - El filtrado de permisos de búsqueda no se puede usar para limitar quién puede buscar en carpetas públicas en Exchange.
-
 - No hay ningún límite en el número de filtros de permisos de búsqueda que se pueden crear en una organización. Sin embargo, una consulta de búsqueda puede tener un máximo de 100 condiciones. En este caso, una condición se define como algo que está conectado a la consulta por un operador booleano (como **AND**, **OR** y **NEAR**). El límite para el número de condiciones incluye la propia consulta de búsqueda y todos los filtros de permisos de búsqueda que se aplican al usuario que ejecuta la búsqueda. Por lo tanto, cuantos más filtros de permisos de búsqueda tenga (especialmente si estos filtros se aplican al mismo usuario o grupo de usuarios), mejor será la posibilidad de superar el número máximo de condiciones para una búsqueda. Para evitar que su organización alcance el límite de condiciones, mantenga el número de filtros de permisos de búsqueda en su organización a la menor cantidad posible para satisfacer sus requisitos empresariales. Para obtener más información, vea [Configurar límites de cumplimiento para las investigaciones de eDiscovery](set-up-compliance-boundaries.md#frequently-asked-questions).
 
 ## <a name="connect-to-exchange-online-and-security--compliance-powershell-in-a-single-session"></a>Conexión a PowerShell de cumplimiento de Exchange Online y seguridad & en una sola sesión
 
-Para poder ejecutar correctamente el script en esta sección, debe descargar e instalar el módulo de PowerShell Exchange Online. Para obtener información, consulte [Instalación y mantenimiento del módulo de PowerShell Exchange Online](/powershell/exchange/exchange-online-powershell-v2#install-and-maintain-the-exchange-online-powershell-module).
+Para poder ejecutar correctamente el script en esta sección, debe descargar e instalar el módulo de PowerShell Exchange Online. Para obtener información, vea [Instalar y mantener el módulo de PowerShell Exchange Online](/powershell/exchange/exchange-online-powershell-v2#install-and-maintain-the-exchange-online-powershell-module).
 
 1. Guarde el texto siguiente en un archivo de script de Windows PowerShell mediante un sufijo de nombre de archivo de **.ps1**. Por ejemplo, podría guardarlo en un archivo denominado **ConnectEXO-SCC.ps1**.
 
@@ -86,7 +84,6 @@ Para poder ejecutar correctamente el script en esta sección, debe descargar e i
 Para solucionar problemas de errores de conexión de PowerShell, consulte:
 
 - [Conectarse a Exchange Online mediante PowerShell](/powershell/exchange/connect-to-exchange-online-powershell#how-do-you-know-this-worked)
-
 - [Conectarse a Security & Compliance PowerShell](/powershell/exchange/connect-to-scc-powershell#how-do-you-know-this-worked)
 
 ## <a name="new-compliancesecurityfilter"></a>New-ComplianceSecurityFilter
@@ -126,7 +123,6 @@ El parámetro  _Filters_ especifica los criterios de búsqueda para el filtro de
 - **Filtrado de contenido de sitio y sitio:** Hay dos filtros relacionados con SharePoint y OneDrive que puede usar para especificar qué sitio o contenido de sitio pueden buscar los usuarios asignados.
 
   - **Site_**_SearchableSiteProperty_
-
   - **SiteContent_**_SearchableSiteProperty_
 
    Estos dos filtros son intercambiables. Por ejemplo, `"Site_Path -like 'https://contoso.sharepoint.com/sites/doctors'"` y  `"SiteContent_Path -like 'https://contoso.sharepoint.com/sites/doctors'"` devuelve los mismos resultados. Para obtener una lista de propiedades de sitio que se pueden buscar, vea [Consultas de palabras clave y condiciones de búsqueda para eDiscovery](keyword-queries-and-search-conditions.md#searchable-site-properties)  Para obtener una lista más completa, vea [Información general sobre las propiedades rastreadas y administradas en SharePoint](/SharePoint/technical-reference/crawled-and-managed-properties-overview). Las propiedades marcadas con **sí** en la columna **Consultable** se pueden usar para crear un filtro de contenido de sitio o sitio.
@@ -137,7 +133,6 @@ El parámetro  _Filters_ especifica los criterios de búsqueda para el filtro de
 Tenga en cuenta las siguientes consideraciones al configurar el parámetro _Filters_ para los filtros de permisos de búsqueda:
 
 - A diferencia de los buzones de correo, no hay un filtro de ubicación de contenido para los sitios aunque el filtro _de sitio_ tenga el aspecto de un filtro de ubicación. Todos los filtros para SharePoint y OneDrive son filtros de contenido (por lo que los filtros _Site\__ y _SiteContent\__ son intercambiables) porque las propiedades relacionadas con el sitio, como _Path_ , se marcan directamente en los documentos. ¿Qué significa esto? Es el resultado de la forma en que sharePoint está diseñado. En SharePoint, no hay un "objeto de sitio" con propiedades, como sucede con los buzones de Exchange. Por lo tanto, la propiedad _Path_ se marca en el documento y contiene la dirección URL del sitio donde se encuentra el documento. Esta es la razón por la que un filtro _de sitio_ se considera un filtro de contenido y no un filtro de ubicación de contenido.
-
 - Tiene que crear un filtro de permisos de búsqueda para evitar explícitamente que los usuarios busquen ubicaciones de contenido en un servicio específico (por ejemplo, impedir que un usuario busque en cualquier buzón de Exchange o en cualquier sitio de SharePoint). En otras palabras, la creación de un filtro de permisos de búsqueda que permita a un usuario buscar en todos los sitios de SharePoint de la organización no impide que ese usuario busque buzones de correo. Por ejemplo, para permitir que los administradores de SharePoint solo busquen sitios de SharePoint, tiene que crear un filtro que les impida buscar buzones. De forma similar, para permitir que los administradores de Exchange solo busquen buzones, debe crear un filtro que les impida buscar sitios.
 
 ### <a name="users"></a>Usuarios
@@ -161,7 +156,6 @@ Una alternativa al uso de una lista de filtros sería crear dos filtros de permi
 Tenga en cuenta lo siguiente sobre el uso de una lista de filtros:
 
 - Debe usar una lista de filtros para crear un filtro que incluya un filtro **buzón** y un filtro **MailboxContent** .
-
 - Cada componente de una lista de filtros puede contener una sintaxis de filtro compleja. Por ejemplo, los filtros de buzón y de sitio pueden contener varios filtros separados por un operador **-o** :
 
    ```powershell
@@ -184,7 +178,7 @@ Este ejemplo permite al usuario annb@contoso.com realizar acciones de búsqueda 
 New-ComplianceSecurityFilter -FilterName CountryFilter  -Users annb@contoso.com -Filters "Mailbox_CountryCode  -eq '124'"
 ```
 
-Este ejemplo permite a los usuarios donh y suzanf buscar solo los buzones de correo y las cuentas de OneDrive que tienen el valor "Marketing" para la propiedad de buzón CustomAttribute1.
+Este ejemplo permite a los usuarios *donh* y *suzanf* buscar solo los buzones de correo y las cuentas de OneDrive que tienen el valor "Marketing" para la propiedad de buzón CustomAttribute1.
 
 ```powershell
 New-ComplianceSecurityFilter -FilterName MarketingFilter  -Users donh,suzanf -Filters "Mailbox_CustomAttribute1  -eq 'Marketing'"
@@ -326,7 +320,7 @@ Set-ComplianceSecurityFilter -FilterName OttawaUsersFilter -Users $filterusers.u
 
 ## <a name="more-information"></a>Más información
 
-- **¿Cómo funciona el filtrado de permisos de búsqueda?** El filtro de permisos se anexa a la consulta de búsqueda cuando se ejecuta una búsqueda. El operador booleano **AND** une el filtro de permisos a la consulta de búsqueda. La lógica de consulta para la consulta de búsqueda y el filtro de permisos tendría este aspecto:
+**¿Cómo funciona el filtrado de permisos de búsqueda?** El filtro de permisos se anexa a la consulta de búsqueda cuando se ejecuta una búsqueda. El operador booleano **AND** une el filtro de permisos a la consulta de búsqueda. La lógica de consulta para la consulta de búsqueda y el filtro de permisos tendría este aspecto:
 
   ```text
   <SearchQuery> AND <PermissionsFilter>
@@ -334,7 +328,7 @@ Set-ComplianceSecurityFilter -FilterName OttawaUsersFilter -Users $filterusers.u
 
   Por ejemplo, tiene un filtro de permisos que permite a Bob realizar todas las acciones de búsqueda en los buzones de los miembros del grupo de distribución Trabajadores. A continuación, Bob ejecuta una búsqueda en todos los buzones de la organización con la consulta  `sender:jerry@adatum.com`de búsqueda . Dado que el filtro de permisos y la consulta de búsqueda se combinan lógicamente con un operador **AND** , la búsqueda devuelve cualquier mensaje enviado por jerry@adatum.com a cualquier miembro del grupo de distribución Trabajos.
 
-- **¿Qué ocurre si tiene varios filtros de permisos de búsqueda?** En una consulta de búsqueda, los operadores booleanos **OR** combinan varios filtros de permisos. Por lo tanto, los resultados se devolverán si alguno de los filtros es true. En una búsqueda, el operador **AND** combina todos los filtros (combinados por operadores **OR**) con la consulta de búsqueda.
+**¿Qué ocurre si tiene varios filtros de permisos de búsqueda?** En una consulta de búsqueda, los operadores booleanos **OR** combinan varios filtros de permisos. Por lo tanto, los resultados se devolverán si alguno de los filtros es true. En una búsqueda, el operador **AND** combina todos los filtros (combinados por operadores **OR**) con la consulta de búsqueda.
 
   ```text
   <SearchQuery> AND  (<PermissionsFilter1> OR <PermissionsFilter2> OR <PermissionsFilter3>)
@@ -342,13 +336,13 @@ Set-ComplianceSecurityFilter -FilterName OttawaUsersFilter -Users $filterusers.u
 
   Tomemos el ejemplo anterior, donde un filtro de búsqueda permite a Bob buscar solo en los buzones de los miembros del grupo de distribución Trabajadores. A continuación, creamos otro filtro que impide que Bob busque en el buzón de Phil ("Mailbox_Alias -ne 'Phil'"). Y supongamos también que Phil es miembro del grupo Trabajadores. Cuando Bob ejecuta una búsqueda (del ejemplo anterior) en todos los buzones de la organización, los resultados de la búsqueda se devuelven para el buzón de Phil aunque haya aplicado el filtro para evitar que Bob busque en el buzón de Phil. Esto se debe a que el primer filtro, que permite a Bob buscar en el grupo Workers, es true. Y como Phil es miembro del grupo Trabajadores, Bob puede buscar en el buzón de Phil.
 
-- **¿Funciona el filtrado de permisos de búsqueda para buzones inactivos?** Sí, puede usar filtros de contenido de buzón y buzón para limitar quién puede buscar buzones inactivos en su organización. Al igual que un buzón normal, un buzón inactivo debe configurarse con la propiedad recipient que se usa para crear un filtro de permisos. Si es necesario, puede usar el comando **Get-Mailbox -InactiveMailboxOnly** para mostrar las propiedades de los buzones inactivos. Para obtener más información, consulte [Creación y administración de buzones inactivos](create-and-manage-inactive-mailboxes.md).
+**¿Funciona el filtrado de permisos de búsqueda para buzones inactivos?** Sí, puede usar filtros de contenido de buzón y buzón para limitar quién puede buscar buzones inactivos en su organización. Al igual que un buzón normal, un buzón inactivo debe configurarse con la propiedad recipient que se usa para crear un filtro de permisos. Si es necesario, puede usar el comando **Get-Mailbox -InactiveMailboxOnly** para mostrar las propiedades de los buzones inactivos. Para obtener más información, consulte [Creación y administración de buzones inactivos](create-and-manage-inactive-mailboxes.md).
 
-- **¿Funciona el filtrado de permisos de búsqueda para carpetas públicas?** No. Como se explicó anteriormente, el filtrado de permisos de búsqueda no se puede usar para limitar quién puede buscar en carpetas públicas en Exchange. Por ejemplo, los elementos de las ubicaciones de carpetas públicas no se pueden excluir de los resultados de búsqueda mediante un filtro de permisos.
+**¿Funciona el filtrado de permisos de búsqueda para carpetas públicas?** No. Como se explicó anteriormente, el filtrado de permisos de búsqueda no se puede usar para limitar quién puede buscar en carpetas públicas en Exchange. Por ejemplo, los elementos de las ubicaciones de carpetas públicas no se pueden excluir de los resultados de búsqueda mediante un filtro de permisos.
 
-- **¿Permite que un usuario busque en todas las ubicaciones de contenido de un servicio específico también impedir que busque ubicaciones de contenido en un servicio diferente?** No. Como se explicó anteriormente, tiene que crear un filtro de permisos de búsqueda para impedir explícitamente que los usuarios busquen ubicaciones de contenido en un servicio específico (por ejemplo, impedir que un usuario busque en cualquier buzón de Exchange o en cualquier sitio de SharePoint). En otras palabras, la creación de un filtro de permisos de búsqueda que permita a un usuario buscar en todos los sitios de SharePoint de la organización no impide que ese usuario busque buzones de correo. Por ejemplo, para permitir que los administradores de SharePoint solo busquen sitios de SharePoint, tiene que crear un filtro que les impida buscar buzones. De forma similar, para permitir que los administradores de Exchange solo busquen buzones, debe crear un filtro que les impida buscar sitios.
+**¿Permite que un usuario busque en todas las ubicaciones de contenido de un servicio específico también impedir que busque ubicaciones de contenido en un servicio diferente?** No. Como se explicó anteriormente, tiene que crear un filtro de permisos de búsqueda para impedir explícitamente que los usuarios busquen ubicaciones de contenido en un servicio específico (por ejemplo, impedir que un usuario busque en cualquier buzón de Exchange o en cualquier sitio de SharePoint). En otras palabras, la creación de un filtro de permisos de búsqueda que permita a un usuario buscar en todos los sitios de SharePoint de la organización no impide que ese usuario busque buzones de correo. Por ejemplo, para permitir que los administradores de SharePoint solo busquen sitios de SharePoint, tiene que crear un filtro que les impida buscar buzones. De forma similar, para permitir que los administradores de Exchange solo busquen buzones, debe crear un filtro que les impida buscar sitios.
 
-- **¿Cuentan los filtros de permisos de búsqueda con respecto a los límites de caracteres de consulta de búsqueda?** Sí. Los filtros de permisos de búsqueda cuentan con el límite de caracteres para las consultas de búsqueda. Para obtener más información, vea [Límites en eDiscovery (Premium).](limits-ediscovery20.md)
+**¿Cuentan los filtros de permisos de búsqueda con respecto a los límites de caracteres de consulta de búsqueda?** Sí. Los filtros de permisos de búsqueda cuentan con el límite de caracteres para las consultas de búsqueda. Para obtener más información, vea [Límites en eDiscovery (Premium).](limits-ediscovery20.md)
 
 **¿Cuál es el número máximo de filtros de permisos de búsqueda que se pueden crear en una organización?**
 

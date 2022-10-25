@@ -19,12 +19,12 @@ ms.collection:
 - m365initiative-compliance
 - highpri
 ms.custom: admindeeplinkCOMPLIANCE
-ms.openlocfilehash: 4366516d664a688a7573d1934409d1a39f073959
-ms.sourcegitcommit: 0d8fb571024f134d7480fe14cffc5e31a687d356
+ms.openlocfilehash: 1d38fceba4d01d184ae5e451fdecaeb030450259
+ms.sourcegitcommit: e7dbe3b0d97cd8c64b5ae15f990d5e4b1dc9c464
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/20/2022
-ms.locfileid: "68626498"
+ms.lasthandoff: 10/24/2022
+ms.locfileid: "68688359"
 ---
 # <a name="get-started-with-insider-risk-management-settings"></a>Introducción a la configuración de administración de riesgos internos
 
@@ -192,13 +192,9 @@ Los períodos de tiempo de las directivas permiten definir períodos de revisió
 
 La configuración de detección inteligente ayuda a refinar la forma en que se procesan las detecciones de actividades de riesgo para las alertas. En determinadas circunstancias, es posible que deba definir tipos de archivo que se deben omitir o que desee aplicar un nivel de detección para los eventos diarios para aumentar las puntuaciones de riesgo para los usuarios. Use esta configuración para controlar las exclusiones de tipos de archivo, aumentar la puntuación de riesgo para la actividad inusual y los límites de volumen de archivos.
 
-### <a name="file-type-exclusions"></a>Exclusiones de tipos de archivo
+### <a name="file-activity-detection"></a>Detección de actividad de archivos
 
 Para excluir tipos de archivo específicos de todas las coincidencias de directivas de administración de riesgos internos, escriba extensiones de tipo de archivo separadas por comas. Por ejemplo, para excluir determinados tipos de archivos de música de coincidencias de directivas, puede escribir *aac,mp3,wav,wma* en el campo **Exclusiones de tipos de archivo**. Todas las directivas de administración de riesgos internos omitirán los archivos con estas extensiones.
-
-### <a name="minimum-number-of-daily-events-to-boost-score-for-unusual-activity"></a>Número mínimo de eventos diarios para aumentar la puntuación de actividad inusual
-
-Con esta configuración, definirá cuántos eventos diarios son necesarios para aumentar la puntuación de riesgo de la actividad que se considera inusual para un usuario. Por ejemplo, supongamos que escribe 25 para este refuerzo de riesgo. Si un usuario realiza un promedio de 10 descargas de archivos en los últimos 30 días, pero una directiva detecta que descargó 20 archivos en un día, la puntuación de esa actividad no se mejorará aunque sea inusual para ese usuario porque el número de archivos que descargó ese día era menor que el número especificado para este refuerzo de riesgo.
 
 ### <a name="alert-volume"></a>Volumen de alertas
 
@@ -208,7 +204,7 @@ A las actividades de usuario detectadas por las directivas de riesgo internos se
 - **Volumen predeterminado**: verá todas las alertas de gravedad alta y una cantidad equilibrada de alertas de gravedad media y baja.
 - **Más alertas**: verá todas las alertas de gravedad media y alta y las alertas de gravedad más baja. Este nivel de configuración podría dar lugar a más falsos positivos.
 
-### <a name="microsoft-defender-for-endpoint-alert-statuses-preview"></a>Microsoft Defender para punto de conexión estados de alerta (versión preliminar)
+### <a name="microsoft-defender-for-endpoint-alert-statuses"></a>estados de alerta de Microsoft Defender para punto de conexión
 
 [Microsoft Defender para punto de conexión](/windows/security/threat-protection/microsoft-defender-atp/microsoft-defender-advanced-threat-protection) es una plataforma de seguridad de punto de conexión empresarial diseñada para ayudar a las redes empresariales a prevenir, detectar, investigar y responder a amenazas avanzadas. Para tener una mejor visibilidad de las infracciones de seguridad en su organización, puede importar y filtrar alertas de Defender para punto de conexión para las actividades que se usan en las directivas creadas a partir de plantillas de directivas de infracción de seguridad de administración de riesgos internos.
 
@@ -244,6 +240,24 @@ Para cada una de las siguientes configuraciones de dominio, puede escribir hasta
     Al especificar dominios permitidos en la configuración, esta actividad con estos dominios se trata de forma similar a cómo se trata la actividad interna de la organización. Por ejemplo, los dominios agregados aquí se asignan a actividades que pueden implicar compartir contenido con alguien de fuera de la organización (por ejemplo, enviar correo electrónico a alguien con una dirección de gmail.com).
 
 - **Dominios de terceros:** Si su organización usa dominios de terceros con fines empresariales (como el almacenamiento en la nube), insclúyelos aquí para que pueda recibir alertas de actividad relacionada con el indicador de dispositivo *Use un explorador para descargar contenido de un sitio de terceros*.
+ 
+### <a name="sensitive-info-types-exclusion"></a>Exclusión de tipos de información confidencial
+
+Al excluir los tipos de información confidencial, puede especificar qué tipos se asignan a indicadores y desencadenadores que implican actividades relacionadas con archivos para Endpoint, SharePoint, Teams, OneDrive y Exchange. Para los archivos que contienen los tipos de información confidencial identificados aquí, se puntuarán como riesgo, pero no se mostrarán como actividades relacionadas con el contenido relacionado con los tipos de información confidencial. Para obtener una lista completa, vea [Definiciones de entidades de tipo de información confidencial](sensitive-information-type-entity-definitions.md).
+
+Puede seleccionar los tipos de información confidencial que se excluirán de la lista de todos los tipos disponibles (integrados y personalizados) disponibles en el inquilino. La administración de riesgos internos excluye varios tipos de información confidencial de forma predeterminada, como el número de enrutamiento de ABA. Puede elegir hasta 100 tipos de información confidencial que se van a excluir.
+
+> [!NOTE]
+> La lista de exclusión de tipos de información confidencial tiene prioridad sobre la lista de [contenido de prioridad](insider-risk-management-policies.md#prioritize-content-in-policies) .
+
+Para agregar tipos de información confidencial que se van a excluir, siga estos pasos:
+
+1. En el portal de cumplimiento, vaya a Configuración **de administración de** >  riesgos internos **Detecciones** > **inteligentes**. 
+2. En la sección **Tipos de información confidencial** , seleccione **Agregar tipos de información confidencial para excluir**.
+3. En el panel **Agregar o editar tipo de información confidencial** , seleccione los tipos que desea excluir.
+4. Seleccione **Agregar** aceptar los cambios o **Cancelar** para descartar los cambios. 
+
+Para eliminar una exclusión de tipo de información confidencial, seleccione la exclusión y **Eliminar**.
 
 ### <a name="file-path-exclusions"></a>Exclusiones de ruta de archivo
 
@@ -271,7 +285,7 @@ Las exclusiones de ruta de acceso de archivo predeterminadas son:
 
 Los caracteres comodín de estas rutas de acceso indican que todos los niveles de carpeta entre \Users y \AppData se incluyen en la exclusión. Por ejemplo, las actividades de *C:\Users\Test1\AppData\Local* y *C:\Users\Test2\AppData\Local*, *C:\Users\Test3\AppData\Local* (y así sucesivamente) se incluirán y no se puntuarán como riesgo como parte de la selección de exclusión *\Users\\\*\AppData\Local* .
 
-### <a name="site-url-exclusions"></a>Exclusiones de direcciones URL del sitio
+### <a name="site-exclusions"></a>Exclusiones de sitios
 
 Configure exclusiones de direcciones URL del sitio para evitar que las posibles actividades de riesgo que se producen en SharePoint (y sitios de SharePoint asociados a sitios de canal de equipo) generen alertas de directiva. Es posible que desee considerar la posibilidad de excluir sitios y canales que contengan archivos y datos no confidenciales que se puedan compartir con las partes interesadas o el público. Puede escribir hasta 500 rutas de acceso de dirección URL de sitio para excluir.
 
@@ -291,7 +305,7 @@ Para editar las rutas de acceso url del sitio que se van a excluir, siga estos p
 
 Para eliminar una exclusión de dirección URL del sitio, seleccione la exclusión de la dirección URL del sitio y seleccione **Eliminar**.
 
-### <a name="keyword-exclusions"></a>Exclusiones de palabras clave
+### <a name="keyword-exclusion"></a>Exclusión de palabras clave
 
 Configure exclusiones para palabras clave que aparecen en nombres de archivo, rutas de acceso de archivo o líneas de asunto de mensajes de correo electrónico. Esto permite flexibilidad para las organizaciones que necesitan reducir el posible ruido de alertas debido al marcado de términos benignos especificados para su organización. Estas actividades relacionadas con archivos o asuntos de correo electrónico que contienen la palabra clave serán ignoradas por las directivas de administración de riesgos internos y no generarán alertas. Puede escribir hasta 500 palabras clave para excluir. 
 

@@ -1,5 +1,6 @@
 ---
 title: Desduplicación en los resultados de búsqueda de eDiscovery
+description: Obtenga información sobre cómo eliminar resultados de búsqueda de exhibición de documentos electrónicos duplicados para que solo se exporte una copia de un mensaje de correo electrónico.
 f1.keywords:
 - NOCSH
 ms.author: robmazz
@@ -11,47 +12,52 @@ ms.topic: article
 ms.service: O365-seccomp
 ms.localizationpriority: medium
 ms.collection:
-- Strat_O365_IP
-- M365-security-compliance
+- tier1
+- purview-compliance
+- ediscovery
 search.appverid:
 - MOE150
 - MET150
-ms.assetid: 5af334b6-a15d-4f73-97f8-1423457d9f6b
 ms.custom:
 - seo-marvel-apr2020
-description: Obtenga información sobre cómo eliminar resultados de búsqueda de exhibición de documentos electrónicos duplicados para que solo se exporte una copia de un mensaje de correo electrónico.
-ms.openlocfilehash: b8b595e1bf9296262f3ed4feff977daa3aef5c13
-ms.sourcegitcommit: 433f5b448a0149fcf462996bc5c9b45d17bd46c6
+ms.openlocfilehash: 814e2f5f2c84712aec2baebaa6b21ca53f450b43
+ms.sourcegitcommit: e7dbe3b0d97cd8c64b5ae15f990d5e4b1dc9c464
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/20/2022
-ms.locfileid: "67818509"
+ms.lasthandoff: 10/24/2022
+ms.locfileid: "68688455"
 ---
 # <a name="de-duplication-in-ediscovery-search-results"></a>Desduplicación en los resultados de búsqueda de eDiscovery
 
 En este artículo se describe cómo funciona la desduplicación de los resultados de búsqueda de eDiscovery y se explican las limitaciones del algoritmo de desduplicación.
   
 Al usar herramientas de eDiscovery para exportar los resultados de una búsqueda de exhibición de documentos electrónicos, tiene la opción de desduplicar los resultados que se exportan. ¿Qué significa esto? Al habilitar la desduplicación (de forma predeterminada, la desduplicación no está habilitada), solo se exporta una copia de un mensaje de correo electrónico aunque se hayan encontrado varias instancias del mismo mensaje en los buzones de correo en los que se ha buscado. La desduplicación le ayuda a ahorrar tiempo al reducir el número de elementos que tiene que revisar y analizar después de exportar los resultados de la búsqueda. Pero es importante comprender cómo funciona la desduplicación y tener en cuenta que hay limitaciones en el algoritmo que pueden hacer que un elemento único se marque como duplicado durante el proceso de exportación.
+
+La información de este artículo es aplicable al exportar resultados de búsqueda mediante una de las siguientes herramientas de exhibición de documentos electrónicos:
+
+- [Búsqueda de contenido](/microsoft-365/compliance/search-for-content) en el portal de cumplimiento Microsoft Purview
+- [Exhibición de documentos electrónicos local en Exchange Online](/exchange/security-and-compliance/in-place-ediscovery/in-place-ediscovery)
+- Centro [de exhibición de documentos electrónicos en SharePoint Online](/sharepoint/dev/general-development/ediscovery-in-sharepoint)
   
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
+
 ## <a name="how-duplicate-messages-are-identified"></a>Cómo se identifican los mensajes duplicados
 
 Las herramientas de eDiscovery usan una combinación de las siguientes propiedades de correo electrónico para determinar si un mensaje es duplicado:
   
-- **InternetMessageId** : esta propiedad especifica el identificador de mensaje de Internet de un mensaje de correo electrónico, que es un identificador único global que hace referencia a una versión específica de un mensaje específico. Este identificador lo genera el programa cliente de correo electrónico del remitente o el sistema de correo electrónico host que envía el mensaje. Si una persona envía un mensaje a más de un destinatario, el identificador de mensaje de Internet será el mismo para cada instancia del mensaje. Las revisiones posteriores del mensaje original recibirán un identificador de mensaje diferente. 
+- **InternetMessageId** : esta propiedad especifica el identificador de mensaje de Internet de un mensaje de correo electrónico, que es un identificador único global que hace referencia a una versión específica de un mensaje específico. Este identificador lo genera el programa cliente de correo electrónico del remitente o el sistema de correo electrónico host que envía el mensaje. Si una persona envía un mensaje a más de un destinatario, el identificador de mensaje de Internet será el mismo para cada instancia del mensaje. Las revisiones posteriores del mensaje original recibirán un identificador de mensaje diferente.
+- **ConversationTopic** : esta propiedad especifica el asunto del subproceso de conversación de un mensaje. El valor de la propiedad **ConversationTopic** es la cadena que describe el artículo general de la conversación. Una conversación consta de un mensaje inicial y todos los mensajes enviados en respuesta al mensaje inicial. Los mensajes de la misma conversación tienen el mismo valor para la propiedad **ConversationTopic** . El valor de esta propiedad suele ser la línea Subject del mensaje inicial que generó la conversación.
+- **BodyTagInfo** : se trata de una propiedad interna del almacén de Exchange. El valor de esta propiedad se calcula comprobando varios atributos en el cuerpo del mensaje. Esta propiedad se usa para identificar las diferencias en el cuerpo de los mensajes.
 
-- **ConversationTopic** : esta propiedad especifica el asunto del subproceso de conversación de un mensaje. El valor de la propiedad **ConversationTopic** es la cadena que describe el tema general de la conversación. Una conversación consta de un mensaje inicial y todos los mensajes enviados en respuesta al mensaje inicial. Los mensajes de la misma conversación tienen el mismo valor para la propiedad **ConversationTopic** . El valor de esta propiedad suele ser la línea Subject del mensaje inicial que generó la conversación. 
-
-- **BodyTagInfo** : se trata de una propiedad interna del almacén de Exchange. El valor de esta propiedad se calcula comprobando varios atributos en el cuerpo del mensaje. Esta propiedad se usa para identificar las diferencias en el cuerpo de los mensajes. 
-
-Durante el proceso de exportación de eDiscovery, estas tres propiedades se comparan para cada mensaje que coincida con los criterios de búsqueda. Si estas propiedades son idénticas para dos (o más) mensajes, se determina que esos mensajes son duplicados y el resultado es que solo se exportará una copia del mensaje si se habilita la desduplicación. El mensaje que se exporta se conoce como "elemento de origen". La información sobre los mensajes duplicados se incluye en los informes **deResults.csv** y **Manifest.xml** que se incluyen con los resultados de búsqueda exportados. En el archivo **Results.csv** , un mensaje duplicado se identifica con un valor en la columna **Duplicar en elemento** . El valor de esta columna coincide con el valor de la columna **Identidad del elemento** del mensaje que se exportó. 
+Durante el proceso de exportación de eDiscovery, estas tres propiedades se comparan para cada mensaje que coincida con los criterios de búsqueda. Si estas propiedades son idénticas para dos (o más) mensajes, se determina que esos mensajes son duplicados y el resultado es que solo se exportará una copia del mensaje si se habilita la desduplicación. El mensaje que se exporta se conoce como "elemento de origen". La información sobre los mensajes duplicados se incluye en los informes **deResults.csv** y **Manifest.xml** que se incluyen con los resultados de búsqueda exportados. En el archivo **Results.csv** , un mensaje duplicado se identifica con un valor en la columna **Duplicar en elemento** . El valor de esta columna coincide con el valor de la columna **Identidad del elemento** del mensaje que se exportó.
   
 Los gráficos siguientes muestran cómo se muestran los mensajes duplicados en los informes **deResults.csv** y **Manifest.xml** que se exportan con los resultados de la búsqueda. Estos informes no incluyen las propiedades de correo electrónico descritas anteriormente, que se usan en el algoritmo de desduplicación. En su lugar, los informes incluyen la propiedad **Item Identity** asignada a los elementos por el almacén de Exchange. 
   
- ### <a name="resultscsv-report-viewed-in-excel"></a>Results.csv informe (visto en Excel)
+### <a name="resultscsv-report-viewed-in-excel"></a>Results.csv informe (visto en Excel)
   
 ![Ver información sobre elementos duplicados en el informe de Results.csv.](../media/e3d64004-3b91-4cba-b6f3-934b46cbdcdb.png)
   
- ### <a name="manifestxml-report-viewed-in-excel"></a>Manifest.xml informe (visto en Excel)
+### <a name="manifestxml-report-viewed-in-excel"></a>Manifest.xml informe (visto en Excel)
   
 ![Ver información sobre elementos duplicados en el informe de Manifest.xml.](../media/69aa4786-9883-46ff-bcae-b35e0daf4a6d.png)
   
@@ -70,20 +76,9 @@ Los mensajes únicos también se pueden marcar como duplicados cuando está habi
   
 ## <a name="more-information"></a>Más información
 
-- La información de este artículo es aplicable al exportar resultados de búsqueda mediante una de las siguientes herramientas de exhibición de documentos electrónicos:
+Para obtener más información sobre la exportación de resultados de búsqueda, consulte:
 
-  - Búsqueda de contenido en el centro de cumplimiento en Office 365
-
-  - Exhibición de documentos electrónicos local en Exchange Online
-
-  - Centro de exhibición de documentos electrónicos en SharePoint Online
-
-- Para obtener más información sobre la exportación de resultados de búsqueda, consulte:
-
-  - [Exportar búsqueda de contenido](export-search-results.md)
-
-  - [Exportar un informe de búsqueda de contenido](export-a-content-search-report.md)
-
-  - [Exportar In-Place resultados de búsqueda de exhibición de documentos electrónicos a un archivo PST](/exchange/security-and-compliance/in-place-ediscovery/export-search-results)
-
-  - [Exportar contenido y crear informes en el Centro de eDiscovery](/SharePoint/governance/export-content-and-create-reports-in-the-ediscovery-center)
+- [Exportar búsqueda de contenido](export-search-results.md)
+- [Exportar un informe de búsqueda de contenido](export-a-content-search-report.md)
+- [Exportar In-Place resultados de búsqueda de exhibición de documentos electrónicos a un archivo PST](/exchange/security-and-compliance/in-place-ediscovery/export-search-results)
+- [Exportar contenido y crear informes en el Centro de eDiscovery](/SharePoint/governance/export-content-and-create-reports-in-the-ediscovery-center)

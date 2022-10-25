@@ -19,16 +19,16 @@ search.appverid:
 - SPO160
 - MOE150
 - MET150
-ms.openlocfilehash: a79d1171f306e0587730534f7457dfd63f2c7648
-ms.sourcegitcommit: 4dfb5de8c61847b8ddd10410ad20d34860eed8f6
+ms.openlocfilehash: e49226e42681bfa1923c83e73af4e504aa35c79c
+ms.sourcegitcommit: e7dbe3b0d97cd8c64b5ae15f990d5e4b1dc9c464
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/28/2022
-ms.locfileid: "68122575"
+ms.lasthandoff: 10/24/2022
+ms.locfileid: "68688315"
 ---
 # <a name="differences-between-estimated-and-actual-ediscovery-search-results"></a>Diferencias entre los resultados de búsqueda de eDiscovery estimados y reales
 
-Este artículo se aplica a las búsquedas que puede ejecutar mediante una de las siguientes herramientas de Exhibición de documentos electrónicos de Microsoft 365: 
+Este artículo se aplica a las búsquedas que puede ejecutar mediante una de las siguientes herramientas de Microsoft Purview eDiscovery:
 
 - Búsqueda de contenido
 - eDiscovery (Estándar)
@@ -54,19 +54,14 @@ Sin embargo, como observará en la captura de pantalla anterior del informe Expo
 Estas son algunas de las razones de estas diferencias:
   
 - **La forma en que se calculan los resultados**. Una estimación de los resultados de la búsqueda es simplemente eso, una estimación (y no un recuento real) de los elementos que cumplen los criterios de consulta de búsqueda. Para compilar la estimación de elementos de Exchange, la herramienta eDiscovery que usa solicita a la base de datos de Exchange una lista de los identificadores de mensaje que cumplen los criterios de búsqueda. Pero al exportar los resultados de la búsqueda, la búsqueda se vuelve a ejecutar y los mensajes reales se recuperan de la base de datos de Exchange. Por lo tanto, estas diferencias pueden dar lugar a cómo se determina el número estimado de elementos y el número real de elementos.
-
 - **Cambios que se producen entre el momento en que se estiman y exportan los resultados de la búsqueda**. Al exportar los resultados de búsqueda, la búsqueda se reinicia para recopilar los elementos más recientes del índice de búsqueda que cumplen los criterios de búsqueda. Es posible que haya elementos adicionales creados, enviados o recibidos que cumplan los criterios de búsqueda en el tiempo comprendido entre la recopilación de los resultados de búsqueda estimados y el momento en que se exportaron los resultados de la búsqueda. También es posible que los elementos que estaban en el índice de búsqueda cuando se calcularon los resultados de búsqueda ya no estén allí porque se purgaron de la ubicación de contenido antes de exportar los resultados de la búsqueda. Una manera de mitigar este problema es especificar un intervalo de fechas para una búsqueda de exhibición de documentos electrónicos. Otra manera es colocar una suspensión en las ubicaciones de contenido para que los elementos se conserven y no se puedan purgar.
 
    Estos son otros problemas que pueden dar lugar a diferencias entre los resultados de búsqueda estimados y exportados:
 
   - Aumento de elementos al usar una consulta de fecha. Esto suele deberse a las dos cosas siguientes:
-
-  - Mantenga el control de versiones en SharePoint. Si se elimina un documento de un sitio que está en suspensión y el control de versiones de documento está habilitado, se conservarán todas las versiones del documento eliminado.
-
-  - Elementos de calendario. Aceptar y rechazar mensajes y las reuniones periódicas seguirán creando automáticamente nuevos elementos en segundo plano con fechas antiguas.
-
+      - Mantenga el control de versiones en SharePoint. Si se elimina un documento de un sitio que está en suspensión y el control de versiones de documento está habilitado, se conservarán todas las versiones del documento eliminado.
+      - Elementos de calendario. Aceptar y rechazar mensajes y las reuniones periódicas seguirán creando automáticamente nuevos elementos en segundo plano con fechas antiguas.
   - Con las retenciones, puede haber casos en los que el mismo elemento se conserve en el buzón principal de un usuario y en su buzón de archivo. Esto puede ocurrir cuando un usuario mueve manualmente un elemento a su archivo.
-
   - Aunque es poco frecuente, incluso en el caso de que se aplique una suspensión, el mantenimiento de elementos de calendario integrados (que el usuario no puede modificar, pero que se incluyen en muchos resultados de búsqueda) puede quitarse de vez en cuando. Esta eliminación periódica de elementos de calendario dará lugar a menos elementos que se exportan.
 
 - **Elementos sin indexar**. Los elementos que no están indexados para la búsqueda pueden provocar diferencias entre los resultados de búsqueda estimados y reales. Puede incluir elementos sin indexar al exportar los resultados de la búsqueda. Si incluye elementos sin indexar al exportar resultados de búsqueda, es posible que haya más elementos que se exporten. Esto provocará una diferencia entre los resultados de búsqueda estimados y exportados.

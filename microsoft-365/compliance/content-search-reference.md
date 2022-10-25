@@ -1,5 +1,6 @@
 ---
 title: Referencia de características para la búsqueda de contenido
+description: Este artículo contiene información de referencia sobre la herramienta de exhibición de documentos electrónicos de búsqueda de contenido en el portal de cumplimiento de Microsoft Purview para ayudarle a obtener información sobre la búsqueda de contenido.
 f1.keywords:
 - NOCSH
 ms.author: robmazz
@@ -10,9 +11,9 @@ ms.topic: article
 ms.service: O365-seccomp
 ms.localizationpriority: high
 ms.collection:
-- Strat_O365_IP
-- M365-security-compliance
-- SPO_Content
+- tier1
+- purview-compliance
+- ediscovery
 search.appverid:
 - MOE150
 - MED150
@@ -20,17 +21,18 @@ search.appverid:
 ms.custom:
 - seo-marvel-apr2020
 - admindeeplinkMAC
-description: Este artículo contiene información de referencia sobre la herramienta de exhibición de documentos electrónicos de búsqueda de contenido en el portal de cumplimiento de Microsoft Purview para ayudarle a obtener información sobre la búsqueda de contenido.
-ms.openlocfilehash: 2f27903390691f3a503686c9f653f9f732590cf2
-ms.sourcegitcommit: 433f5b448a0149fcf462996bc5c9b45d17bd46c6
+ms.openlocfilehash: 7a55a53ff271b15359414b7c97f1aeb113be1e4e
+ms.sourcegitcommit: e7dbe3b0d97cd8c64b5ae15f990d5e4b1dc9c464
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/20/2022
-ms.locfileid: "67826190"
+ms.lasthandoff: 10/24/2022
+ms.locfileid: "68686664"
 ---
 # <a name="feature-reference-for-content-search"></a>Referencia de características para la búsqueda de contenido
 
 En este artículo se describen las características y funciones de la búsqueda de contenido.
+
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
 
 ## <a name="content-search-limits"></a>Límites de búsqueda de contenido
 
@@ -52,7 +54,7 @@ Tenga en cuenta lo siguiente cuando use la lista de palabras clave para crear un
 
     ![La forma correcta de dar formato a una lista de palabras clave (seleccionar la casilla y, después, pegar la lista).](../media/5d511a7b-c1f9-499c-bffe-e075bfc9adec.png)
 
-- También puede crear una lista de palabras clave o frases clave en un archivo de Excel o en un archivo de texto sin formato y, después, pegarla en la lista de palabras clave. Para hacerlo, seleccione la casilla **Mostrar lista de palabras clave**. Después, haga clic en la primera fila de la lista de palabras clave y pegue la lista. Cada línea del archivo de texto o Excel se pegará en la línea correspondiente de la lista de palabras clave.
+- También puede crear una lista de palabras clave o frases clave en un archivo de Excel o en un archivo de texto sin formato y, después, pegarla en la lista de palabras clave. Para hacerlo, seleccione la casilla **Mostrar lista de palabras clave**. A continuación, seleccione la primera fila de la lista de palabras clave y pegue la lista. Cada línea del archivo de texto o Excel se pegará en la línea correspondiente de la lista de palabras clave.
 
 - Después de crear la consulta con la lista de palabras clave, es recomendable comprobar la sintaxis de la consulta para asegurarse de que es lo que desea buscar. En la consulta de búsqueda, que puede ver debajo de **Consulta** en el panel de detalles, las palabras clave quedan separadas por **(c:s)**. Esto significa que están conectadas por un operador lógico similar al operador **O**. Del mismo modo, si la consulta de búsqueda incluye condiciones, las palabras clave aparecen separadas de las condiciones por **(c:c)**. Esto significa que están conectadas a las condiciones por un operador lógico similar a **Y**. Este ejemplo muestra una consulta de búsqueda (situada en el panel de detalles) obtenida al usar la lista de palabras clave con una condición.
 
@@ -60,7 +62,7 @@ Tenga en cuenta lo siguiente cuando use la lista de palabras clave para crear un
 
 - Cuando ejecuta una búsqueda de contenido, Microsoft 365 comprueba automáticamente la búsqueda para verificar que no haya caracteres no admitidos ni operadores booleanos en minúsculas. Los caracteres no admitidos suelen estar ocultos y pueden provocar un error de búsqueda o devolver resultados no deseados. Para obtener más información acerca de la verificación de caracteres no compatibles, vea [Comprobar si hay errores en la consulta de búsqueda de contenido](check-your-content-search-query-for-errors.md).
 
-- Si su consulta de búsqueda contiene palabras clave con caracteres especiales (que no pertenecen al alfabeto inglés), puede hacer clic en **Consulta idioma-país/región**![el icono Consulta idioma-país/región en la búsqueda de contenido](../media/8d4b60c8-e1f1-40f9-88ae-ee2a7eca0886.png). y seleccione un valor de código de referencia cultural idioma-país para la búsqueda. Por defecto, la versión del idioma/región es la neutra. ¿Cómo saber si es necesario cambiar la configuración de idioma para una búsqueda de contenido? Si sabe que las ubicaciones de contenido contienen los caracteres especiales que busca, pero la búsqueda no devuelve ningún resultado, la configuración de idioma puede ser la causa.
+- Si tiene una consulta de búsqueda que contiene palabras clave para caracteres que no son en inglés (como caracteres chinos), puede seleccionar el icono **Idioma de consulta-país/región**![Idioma de consulta-país/región en Búsqueda de contenido.](../media/8d4b60c8-e1f1-40f9-88ae-ee2a7eca0886.png) y seleccione un valor de código de referencia cultural idioma-país para la búsqueda. Por defecto, la versión del idioma/región es la neutra. ¿Cómo saber si es necesario cambiar la configuración de idioma para una búsqueda de contenido? Si sabe que las ubicaciones de contenido contienen los caracteres especiales que busca, pero la búsqueda no devuelve ningún resultado, la configuración de idioma puede ser la causa.
 
 ## <a name="partially-indexed-items"></a>Elementos indexados parcialmente
 
@@ -74,7 +76,7 @@ Tenga en cuenta lo siguiente cuando use la lista de palabras clave para crear un
 
 ## <a name="searching-microsoft-teams-and-microsoft-365-groups"></a>Buscar en Microsoft Teams y grupos de Microsoft 365
 
-Puede buscar en el buzón asociado a un grupo de Microsoft 365 o Microsoft Teams. Como Microsoft Teams se basa en los grupos de Microsoft 365, la búsqueda en ambos es similar. En ambos casos, solo se busca en el buzón de grupo o de equipo. No se busca en los buzones del grupo o de los miembros del equipo. Si quiere buscar en estos, debe agregarlos específicamente a la búsqueda.
+Puede buscar en el buzón asociado a un grupo de Microsoft 365 o Microsoft Teams. Como Microsoft Teams se basa en los grupos de Microsoft 365, la búsqueda en ambos es similar. En ambos casos, solo se busca en el buzón de grupo o de equipo. No se busca en los buzones del grupo o de los miembros del equipo. Para buscarlos, debe agregarlos específicamente a la búsqueda.
 
 Tenga en cuenta lo siguiente al buscar contenido en Microsoft Teams y grupos de Microsoft 365:
 
@@ -97,7 +99,7 @@ Tenga en cuenta lo siguiente al buscar contenido en Microsoft Teams y grupos de 
 
 - Cuando se busca en el buzón de un usuario, no se buscará en los equipos o grupos de Microsoft 365 a los que pertenece dicho usuario. De forma similar, al buscar en un equipo o en un grupo de Microsoft 365, solo se busca en el buzón de grupo y en el sitio de grupo que especifique. Tampoco se busca en los buzones y las cuentas de OneDrive para la Empresa de los miembros del grupo a menos que los agregue explícitamente a la búsqueda.
 
-- Para obtener una lista de los miembros de un equipo o un grupo de Microsoft 365, puede ver las propiedades en la página **Home** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=2052855" target="_blank">**Groups**</a>del Centro de administración de Microsoft 365. Como alternativa, puede ejecutar el siguiente comando en Exchange Online PowerShell:
+- To get a list of the members of a team or a Microsoft 365 Group, you can view the properties on the **Home** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=2052855" target="_blank">**Groups**</a> page in the Microsoft 365 admin center. Alternatively, you can run the following command in Exchange Online PowerShell:
 
   ```powershell
   Get-UnifiedGroupLinks <group or team name> -LinkType Members | FL DisplayName,PrimarySmtpAddress
@@ -121,13 +123,9 @@ Tenga en cuenta lo siguiente al buscar contenido en Microsoft Teams y grupos de 
 - La información de resumen de reuniones y llamadas de un canal de equipo se almacena también en los buzones de los usuarios que entraran en la reunión o llamada. Esto significa que puede usar la Búsqueda de contenido para buscar en estos registros de resumen. Esta información de resumen incluye:
 
   - Fecha, hora de inicio, hora de finalización y duración de una reunión o llamada
-
   - La fecha y hora en la que cada participante se incorporó o abandonó la reunión o llamada
-
   - Llamadas enviadas al correo de voz
-
   - Llamadas perdidas o sin responder
-
   - Transferencias de llamadas, que se representan como dos llamadas independientes
 
   La opción de buscar en resúmenes de reuniones y llamadas puede tardar hasta 8 horas en estar disponible.
@@ -138,7 +136,7 @@ Tenga en cuenta lo siguiente al buscar contenido en Microsoft Teams y grupos de 
 
    Para más información, consulte [Microsoft Teams lanza eDiscovery para llamadas y reuniones](https://techcommunity.microsoft.com/t5/microsoft-teams-blog/microsoft-teams-launches-ediscovery-for-calling-and-meetings/ba-p/210947).
 
-- El contenido de tarjetas generado por las aplicaciones de los canales de Teams y los chats 1x1 y 1xN se almacenan en buzones y pueden buscarse. Una *tarjeta* es un contenedor de IU para pequeños fragmentos de contenido. Las tarjetas pueden tener diversas propiedades y datos adjuntos, y es posible que incluyan botones para activar las acciones de las tarjetas. Para obtener más información, consulte [Tarjetas](/microsoftteams/platform/task-modules-and-cards/what-are-cards).
+- El contenido de tarjeta generado por las aplicaciones en canales de Teams, chats 1:1 y chats 1xN se almacena en buzones y se puede buscar. Una *tarjeta* es un contenedor de IU para pequeños fragmentos de contenido. Las tarjetas pueden tener diversas propiedades y datos adjuntos, y es posible que incluyan botones para activar las acciones de las tarjetas. Para obtener más información, consulte [Tarjetas](/microsoftteams/platform/task-modules-and-cards/what-are-cards).
 
   Igual que el resto de contenido de Teams, el lugar donde se almacena el contenido de las tarjetas depende de dónde se haya usado. El contenido de tarjetas usado en un canal de Teams se almacena en el buzón del grupo de Teams. El contenido de tarjetas de los chats 1x1 y 1xN se almacena en los buzones de los participantes de los chats.
 
@@ -155,7 +153,7 @@ Tenga en cuenta lo siguiente al buscar contenido en Microsoft Teams y grupos de 
   ![Mismo contenido de tarjetas en los resultados de una búsqueda de contenido.](../media/CardContentEdiscoverySearchResults.png)
 
   > [!NOTE]
-  > Para mostrar imágenes del contenido de la tarjeta en los resultados de búsqueda en este momento (como las marcas de verificación de la captura de pantalla anterior), debe iniciar sesión en Teams (en https://teams.microsoft.com) de otra pestaña de la misma sesión del explorador que usa para ver los resultados de la búsqueda. De lo contrario, se muestran los marcadores de posición de imagen.
+  > To display images from card content in search results at this time (such as the checkmarks in the previous screenshot), you have to be signed into Teams (at https://teams.microsoft.com) in a different tab in the same browser session that you use to view the search results. Otherwise, image placeholders are displayed.
 
 - Puede usar la propiedad de correo **Tipo** o la condición de búsqueda **Tipo de mensaje** para buscar contenido en Teams de forma más específica.
 
@@ -190,7 +188,7 @@ Para buscar elementos de conversación específicos en los Grupos Yammer puede u
 
 ## <a name="searching-inactive-mailboxes"></a>Buscar en buzones inactivos
 
-Puede buscar en buzones inactivos en una búsqueda de contenido. Para obtener una lista de los buzones inactivos de la organización, ejecute el comando `Get-Mailbox -InactiveMailboxOnly` en Exchange Online PowerShell. Como alternativa, puede ir a **Administración** \> del ciclo de vida de datos **Retención** de **Microsoft 365** \> en el portal de cumplimiento Microsoft Purview y, a continuación, hacer clic en **Más**![puntos suspensivos de la barra de navegación.](../media/9723029d-e5cd-4740-b5b1-2806e4f28208.gif) \> **Buzones de correo inactivos**.
+Puede buscar en buzones inactivos en una búsqueda de contenido. Para obtener una lista de los buzones inactivos de la organización, ejecute el comando `Get-Mailbox -InactiveMailboxOnly` en Exchange Online PowerShell. Como alternativa, puede ir a **Administración** \> del ciclo de vida de datos **Retención** de **Microsoft 365** \> en el portal de cumplimiento Microsoft Purview y, a continuación, seleccionar **Más**![puntos suspensivos de la barra de navegación.](../media/9723029d-e5cd-4740-b5b1-2806e4f28208.gif) \> **Buzones de correo inactivos**.
 
 A continuación, se detallan algunos aspectos que se deben tener en cuenta al buscar buzones inactivos:
 
@@ -204,12 +202,10 @@ A continuación, se detallan algunos aspectos que se deben tener en cuenta al bu
    New-ComplianceSearch -Name InactiveMailboxSearch -ExchangeLocation .pavelb@contoso.onmicrosoft.com -AllowNotFoundExchangeLocationsEnabled $true
    ```
 
-- Le recomendamos que no tenga un buzón activo y un buzón inactivo con la misma dirección SMTP. Si necesita volver a usar la dirección SMTP que está asignada a un buzón inactivo, le recomendamos que recupere el buzón inactivo o restaure el contenido de un buzón inactivo a uno activo (o el archivo de un buzón activo) y, después, elimine el buzón inactivo. Para obtener más información, vea uno de los siguientes temas:
+- Le recomendamos que no tenga un buzón activo y un buzón inactivo con la misma dirección SMTP. Si necesita volver a usar la dirección SMTP que está asignada a un buzón inactivo, le recomendamos que recupere el buzón inactivo o restaure el contenido de un buzón inactivo a uno activo (o el archivo de un buzón activo) y, después, elimine el buzón inactivo. Para obtener más información, consulte uno de los siguientes artículos:
 
   - [Recuperar un buzón inactivo en Office 365](recover-an-inactive-mailbox.md)
-
   - [Restaurar un buzón inactivo en Office 365](restore-an-inactive-mailbox.md)
-
   - [Eliminar un buzón inactivo en Office 365](delete-an-inactive-mailbox.md)
 
 ## <a name="searching-disconnected-or-de-licensed-mailboxes"></a>Buscar en buzones que se desconectaron o se ha deshabilitado la licencia
@@ -217,18 +213,16 @@ A continuación, se detallan algunos aspectos que se deben tener en cuenta al bu
 Si se quita la licencia de Exchange Online (o la licencia de Microsoft 365) de una cuenta de usuario o de Azure Active Directory, el buzón del usuario se convierte en un buzón *desconectado*. Esto significa que el buzón ya no está asociado a la cuenta de usuario. Esto es lo que ocurre al buscar en buzones desconectados:
 
 - Cuando se quita la licencia de un buzón, ya no se puede buscar en él.
-
 - Si una búsqueda de contenido existente incluye un buzón de usuario en el que se ha quitado la licencia, los resultados de búsqueda del buzón desconectado no se incluirán cuando vuelva a ejecutar la búsqueda.
-
 - Si usa el cmdlet **New-ComplianceSearch** para crear una búsqueda de contenido y especifica un buzón desconectado como la ubicación de contenido de Exchange en la que buscar, la búsqueda de contenido no devolverá resultados de búsqueda del buzón desconectado.
 
 Si necesita conservar los datos de un buzón desconectado para poder buscarlos, debe poner el buzón en suspensión antes de quitar la licencia. De este forma, se conservan los datos y se permite la búsqueda en el buzón desconectado hasta que se quite la suspensión. Para más información sobre las suspensiones, vea [Cómo identificar el tipo de suspensión en un buzón de Exchange Online](identify-a-hold-on-an-exchange-online-mailbox.md)
 
-## <a name="searching-for-content-in-a-sharepoint-multi-geo-environment"></a>Búsqueda de contenido en un entorno de SharePoint Multi-Geo
+## <a name="searching-for-content-in-a-sharepoint-multi-geo-environment"></a>Búsqueda de contenido en un entorno multigeográfico de SharePoint
 
 Si es necesario que un administrador de eDiscovery busque contenido en SharePoint y OneDrive en distintas regiones en un [entorno de SharePoint Multi-Geo](../enterprise/multi-geo-capabilities-in-onedrive-and-sharepoint-online-in-microsoft-365.md), tiene que hacer lo siguiente:
 
-1. Cree una cuenta de usuario independiente para cada ubicación geográfica por satélite que necesite buscar el administrador de eDiscovery. Para buscar contenido en los sitios de esa ubicación geográfica, el administrador de eDiscovery debe iniciar sesión en la cuenta que usted creó para dicha ubicación y, después, ejecutar una búsqueda de contenido.
+1. Cree una cuenta de usuario independiente para cada ubicación geográfica por satélite que necesite buscar el administrador de eDiscovery. Para buscar contenido en sitios de esa ubicación geográfica, el administrador de exhibición de documentos electrónicos debe iniciar sesión en la cuenta que creó para esa ubicación y, a continuación, ejecutar una búsqueda de contenido.
 
 2. Cree un filtro de permisos de búsqueda para cada ubicación geográfica por satélite (y la cuenta de usuario correspondiente) en la que necesita realizar búsquedas el administrador de eDiscovery. Cada uno de estos filtros de permisos de búsqueda limita el ámbito de la búsqueda de contenido a una ubicación geográfica específica cuando el administrador de eDiscovery inicia sesión en la cuenta de usuario asociada a esa ubicación.
 
@@ -257,8 +251,7 @@ New-ComplianceSecurityFilter -FilterName "SPMultiGeo-APC" -Users ediscovery-apc@
 
 Tenga en cuenta lo siguiente al usar filtros de permisos de búsqueda para buscar contenido en entornos multigeográficos:
 
-- El parámetro **Región** dirige las búsquedas a la ubicación satélite especificada. Si un administrador de exhibición de documentos electrónicos solo busca sitios de SharePoint y OneDrive fuera de la región especificada en el filtro de permisos de búsqueda, no se devuelve ningún resultado de búsqueda.
-
+- The **Region** parameter directs searches to the specified satellite location. If an eDiscovery manager only searches SharePoint and OneDrive sites outside of the region specified in the search permissions filter, no search results are returned.
 - El parámetro **Region** no controla las búsquedas de los buzones de Exchange. Al realizar una búsqueda en los buzones se buscan todos los centros de datos.
 
 Para obtener más información sobre el uso de los filtros de permisos de búsqueda en un entorno multigeográfico, vea la sección "Búsqueda y exportación de contenido en entornos multigeográficos" en [Configurar límites de cumplimiento para investigaciones de eDiscovery](set-up-compliance-boundaries.md#searching-and-exporting-content-in-multi-geo-environments).

@@ -21,12 +21,12 @@ ms.custom:
 search.appverid: MET150
 description: Obtenga información sobre cómo activar y administrar aplicaciones de terceros en Centro de administración de Microsoft 365.
 ms.date: 04/15/2021
-ms.openlocfilehash: fa4afd0b6b5e26c29c26277b236302081a55a9f0
-ms.sourcegitcommit: 0b7070ec119e00e0dafe030bbfbef0ae5c9afa19
+ms.openlocfilehash: 5177898384fafa5ce3257f6f93fe998add0dbcd2
+ms.sourcegitcommit: e7dbe3b0d97cd8c64b5ae15f990d5e4b1dc9c464
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/29/2022
-ms.locfileid: "68179601"
+ms.lasthandoff: 10/24/2022
+ms.locfileid: "68688544"
 ---
 # <a name="manage-third-party-app-subscriptions-for-your-organization"></a>Administración de suscripciones de aplicaciones de terceros para su organización
 
@@ -40,7 +40,7 @@ Hay varias maneras de comprar aplicaciones de terceros.
 - **Compra de partners** : trabaje con un partner a través del Centro de partners para comprar suscripciones.
 - **Propuesta de Microsoft** : responde a una propuesta de Ventas de Microsoft que incluye aplicaciones de terceros.
 
-Una vez que los clientes compran las aplicaciones y aceptan el Contrato de cliente de Microsoft, pueden administrarlas en Centro de administración de Microsoft 365 o Microsoft Store para Empresas.
+Una vez que los clientes compran las aplicaciones y aceptan el Contrato de cliente de Microsoft, pueden administrarlas en Centro de administración de Microsoft 365.
 
 Los proveedores de aplicaciones venden sus aplicaciones a una tarifa plana o mediante la compra de licencias para los usuarios.
 

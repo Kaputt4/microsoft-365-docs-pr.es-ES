@@ -1,5 +1,5 @@
 ---
-title: Buscar números de soporte técnico de Microsoft 365 para empresas por país o región
+title: Buscar números de teléfono de soporte técnico de Microsoft 365 para empresas por país o región
 ms.author: cmcatee
 author: cmcatee-MSFT
 manager: scotv
@@ -12,21 +12,22 @@ ms.collection:
 - highpri
 - Adm_O365
 ms.custom: VSBFY23
-ROBOTS: NOINDEX, NOFOLLOW
 search.appverid:
 - MET150
 description: Obtenga información sobre cómo obtener soporte técnico telefónico para su suscripción de Microsoft 365 para empresas. Debe ser el administrador de una suscripción de empresa para poder usar el soporte técnico.
-ms.openlocfilehash: 9b5a91ae3cfd335ec196a022abbcdb78d02167eb
-ms.sourcegitcommit: 0d8fb571024f134d7480fe14cffc5e31a687d356
+ms.date: 10/20/2022
+ms.openlocfilehash: c73a473a1ca19463efc2f8de76898f505e07ab74
+ms.sourcegitcommit: e7dbe3b0d97cd8c64b5ae15f990d5e4b1dc9c464
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/20/2022
-ms.locfileid: "68643208"
+ms.lasthandoff: 10/24/2022
+ms.locfileid: "68688511"
 ---
-# <a name="find-microsoft-365-for-business-phone-support-numbers-by-country-or-region"></a>Buscar números de soporte técnico de Microsoft 365 para empresas por país o región
+# <a name="find-microsoft-365-for-business-support-phone-numbers-by-country-or-region"></a>Buscar números de teléfono de soporte técnico de Microsoft 365 para empresas por país o región
 
-El soporte técnico de facturación de Microsoft 365 para productos y servicios empresariales se proporciona en inglés de 9:00 a 17:00 (de 9:00 a 18:00 en Australia), de lunes a viernes.\
-Se proporciona soporte técnico en inglés 24 horas al día, 7 días a la semana.
+En la mayoría de los países o regiones, el soporte técnico de facturación de Microsoft 365 para productos y servicios empresariales se proporciona en inglés de 9:00 a 17:00, de lunes a viernes. La compatibilidad con idiomas locales varía según el país o la región.
+
+El soporte técnico se proporciona en inglés las 24 horas del día, los 7 días de la semana y, en algunos casos, en idiomas locales, como se indica.
 
 Administradores, tengan los datos de su cuenta preparados cuando llamen.
 
@@ -61,7 +62,7 @@ Administradores, tengan los datos de su cuenta preparados cuando llamen.
 
 Si su país o región no se enumeran anteriormente, use las secciones siguientes para encontrar la información de soporte técnico de su país o región.
 
-[Norteamérica/América](#north-america--central-america) |  Central [Caribe](#caribbean) |  [Sudamérica](#south-america) |  [Europa](#europe) |  [África](#africa) |  [Oriente](#middle-east) |  Medio [Asia](#asia) |  [Australia/Pacífico](#australia--pacific)
+[Norteamérica / América Central](#north-america--central-america) | [Caribe](#caribbean) | [Sud américa](#south-america) |  del Sur[África](#europe) | [](#africa) | [Oriente](#middle-east) |  Medio[Asia](#asia) | [Australia / Pacífico](#australia--pacific)
 
 ## <a name="north-america--central-america"></a>Norteamérica/América Central
 
@@ -3979,11 +3980,11 @@ Inglés: 24 horas al día, 7 días a la semana
    :::column:::
 **Número de teléfono:**\
 0120 996 680 (Office 365 Enterprise)\
-0120 628 860 (Otros planes)
+0120 628 860 (Otros planes, como Microsoft 365 Empresa Básico, Microsoft 365 Empresa Estándar o Microsoft 365 Empresa Premium)
 
 Números de teléfono alternativos:\
 03 4332 5493 (Office 365 Enterprise)\
-03 4332 6257 (Otros planes)\
+03 4332 6257 (Otros planes, como Microsoft 365 Empresa Básico, Microsoft 365 Empresa Estándar o Microsoft 365 Empresa Premium)\
 Se aplican cargos por llamadas locales.
 
 **Horas de soporte técnico de facturación:**\
@@ -4000,7 +4001,8 @@ Japonés: 24 horas al día, 7 días a la semana\
 Inglés: 24 horas al día, 7 días a la semana
 
 **Otros planes:**\
-El soporte técnico telefónico está disponible de 9:00 a 17:30 los días laborables. Para problemas de gravedad alta, el soporte técnico está disponible las 24 horas del día, los 7 días de la semana.
+El soporte técnico telefónico está disponible de 9:00 a 17:30 los días laborables.\
+Para problemas de gravedad alta, el soporte técnico está disponible las 24 horas del día, los 7 días de la semana.
    :::column-end:::
 :::row-end:::
 

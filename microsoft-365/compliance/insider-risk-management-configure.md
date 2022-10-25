@@ -19,12 +19,12 @@ ms.collection:
 - m365initiative-compliance
 - highpri
 ms.custom: admindeeplinkCOMPLIANCE
-ms.openlocfilehash: 5d3e889966576f4255de2442e7725d616448d555
-ms.sourcegitcommit: 0d8fb571024f134d7480fe14cffc5e31a687d356
+ms.openlocfilehash: 460be0f6e84693504de56574688979733a28acd7
+ms.sourcegitcommit: e7dbe3b0d97cd8c64b5ae15f990d5e4b1dc9c464
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/20/2022
-ms.locfileid: "68645041"
+ms.lasthandoff: 10/24/2022
+ms.locfileid: "68687706"
 ---
 # <a name="get-started-with-insider-risk-management"></a>Introducción a la administración de riesgos internos
 
@@ -104,9 +104,9 @@ Al trabajar con la administración de riesgos internos, elegirá entre estas opc
 |Información de análisis de acceso|Sí|Sí|Sí|No|No|No|
 |Acceso & investigar alertas|Sí|No|Sí|Sí|No|No|
 |Acceso & investigar casos|Sí|No|Sí|Sí|No|No|
-|Acceso & ver el Explorador de contenido|Yes|No|No|Sí|No|No|
-|Configuración de plantillas de aviso|Sí|No|Sí|Sí|No|No|
-|Ver & exportar registros de auditoría|Sí|No|No|No|Sí|No|
+|Acceso & ver el Explorador de contenido|Sí|No|No|Sí|No|No|
+|Configuración de plantillas de aviso|Yes|No|Sí|Sí|No|No|
+|Ver & exportar registros de auditoría|Yes|No|No|No|Sí|No|
 |Acceso & ver capturas de pruebas forenses|Sí|No|No|Sí|No|No|
 |Creación de una solicitud de captura de pruebas forenses|Sí|Sí|No|No|No|No|
 |Aprobación de solicitudes de captura de pruebas forenses|Sí|No|No|No|No|Sí|
@@ -262,11 +262,14 @@ Antes de configurar una directiva, defina los siguientes valores de riesgo inter
 
 4. En la página **Períodos de tiempo de** directiva, seleccione los [períodos de tiempo de directiva](insider-risk-management-settings.md#policy-timeframes) que entrarán en vigor para un usuario cuando desencadene una coincidencia para una directiva de riesgo interno.
 5. En la página **Detecciones inteligentes** , configure las siguientes opciones para las directivas de riesgo internos:
-    - [Exclusiones de tipos de archivo](insider-risk-management-settings.md#file-type-exclusions)
-    - [Número mínimo de eventos diarios para aumentar la puntuación de actividad inusual](insider-risk-management-settings.md#minimum-number-of-daily-events-to-boost-score-for-unusual-activity)
-    - [Nivel de volumen de alertas](insider-risk-management-settings.md#alert-volume)
-    - [estado de alerta de Microsoft Defender para punto de conexión](insider-risk-management-settings.md#microsoft-defender-for-endpoint-alert-statuses-preview)
-    - [Configuración del dominio](insider-risk-management-settings.md#domains)
+    - [Detección de actividad de archivos](insider-risk-management-settings.md#file-activity-detection)
+    - [Volumen de alertas](insider-risk-management-settings.md#alert-volume)
+    - [estados de alerta de Microsoft Defender para punto de conexión](insider-risk-management-settings.md#microsoft-defender-for-endpoint-alert-statuses)
+    - [Dominios](insider-risk-management-settings.md#domains)
+    - [Exclusión del tipo de información confidencial](insider-risk-management-settings.md#sensitive-info-types-exclusion)
+    - [Exclusiones de ruta de archivo](insider-risk-management-settings.md#file-path-exclusions)
+    - [Exclusiones de sitios](insider-risk-management-settings.md#site-exclusions)
+    - [Exclusión de palabras clave](insider-risk-management-settings.md#keyword-exclusion)
 6. En la página **Exportar alertas**, habilite la exportación de información de alertas de riesgo internos mediante las API de administración de Office 365 si es necesario.
 7. En la página **Grupos de usuarios prioritarios** , cree un grupo de usuarios de prioridad y agregue usuarios si no se crean en el **paso 3**.
 8. En la página **Flujos de Power Automate** , configure un flujo a partir de plantillas de flujo de riesgo internos o cree un nuevo flujo. Consulte el artículo [Introducción a la configuración de administración de riesgos](insider-risk-management-settings.md#power-automate-flows-preview) internos para obtener instrucciones paso a paso.

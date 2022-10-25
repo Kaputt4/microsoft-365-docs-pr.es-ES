@@ -1,5 +1,6 @@
 ---
 title: Uso del editor de KQL para crear consultas de búsqueda
+description: Puede usar el editor de KQL para configurar consultas de búsqueda de exhibición de documentos electrónicos en Búsqueda de contenido, eDiscovery (estándar) y eDiscovery (Premium).
 f1.keywords:
 - NOCSH
 ms.author: robmazz
@@ -11,31 +12,33 @@ audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
 ms.localizationpriority: medium
-ms.collection: M365-security-compliance
+ms.collection:
+- tier1
+- purview-compliance
+- ediscovery
 search.appverid:
 - MOE150
 - MET150
-description: Puede usar el editor de KQL para configurar consultas de búsqueda de exhibición de documentos electrónicos en Búsqueda de contenido, eDiscovery (estándar) y eDiscovery (Premium).
-ms.openlocfilehash: 60dd9506beaebbb45d795c58f4f04b39d5c4b665
-ms.sourcegitcommit: 433f5b448a0149fcf462996bc5c9b45d17bd46c6
+ms.openlocfilehash: bfee0098300c6cb00bc456c5329f98f87e468461
+ms.sourcegitcommit: e7dbe3b0d97cd8c64b5ae15f990d5e4b1dc9c464
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/20/2022
-ms.locfileid: "67826761"
+ms.lasthandoff: 10/24/2022
+ms.locfileid: "68686567"
 ---
 # <a name="use-the-kql-editor-to-build-search-queries"></a>Uso del editor de KQL para crear consultas de búsqueda
 
-La nueva experiencia de consulta de KQL en la búsqueda de herramientas de exhibición de documentos electrónicos de Microsoft 365 proporciona comentarios e instrucciones al compilar consultas de búsqueda en Búsqueda de contenido, Microsoft Purview eDiscovery (Estándar) y eDiscovery (Premium). Al escribir consultas en el editor, proporciona autocompletar para las propiedades y condiciones que se pueden buscar admitidas y proporciona listas de valores admitidos para las propiedades y condiciones estándar. Por ejemplo, si especifica la propiedad email en la `kind` consulta, el editor presentará una lista de valores admitidos que puede seleccionar. El editor de KQL también muestra posibles errores de consulta en tiempo real que puede corregir antes de ejecutar la búsqueda. Lo mejor de todo es que puede pegar consultas complejas directamente en el editor sin tener que compilar manualmente consultas mediante las tarjetas de palabras clave y condiciones del generador de condiciones estándar.
+La nueva experiencia de consulta del Lenguaje de consulta de palabras clave (KQL) en la búsqueda de herramientas de Microsoft Purview eDiscovery proporciona comentarios e instrucciones al compilar consultas de búsqueda en Búsqueda de contenido, Microsoft Purview eDiscovery (Estándar) y eDiscovery (Premium). Cuando se escriben consultas en el editor, se proporciona autocompletar para las propiedades y condiciones que se pueden buscar admitidas y se proporcionan listas de valores admitidos para las propiedades y condiciones estándar. Por ejemplo, si especifica la propiedad email en la `kind` consulta, el editor presentará una lista de valores admitidos que puede seleccionar. El editor de KQL también muestra posibles errores de consulta en tiempo real que puede corregir antes de ejecutar la búsqueda. Lo mejor de todo es que puede pegar consultas complejas directamente en el editor sin tener que compilar manualmente consultas mediante las tarjetas de palabras clave y condiciones del generador de condiciones estándar.
   
 Estas son las principales ventajas de usar el editor de KQL:
 
 - Proporciona instrucciones y le ayuda a crear consultas de búsqueda desde cero.
-
 - Permite pegar rápidamente consultas largas y complejas directamente en el editor. Por ejemplo, si recibe una consulta compleja de un abogado contrario, puede pegarla en el editor de KQL en lugar de tener que usar el generador de condiciones.
-
 - Identifica rápidamente posibles errores y muestra sugerencias sobre cómo resolver problemas.
 
 El editor de KQL también está disponible cuando se crean retenciones basadas en consultas en eDiscovery (Estándar) y eDiscovery (Premium).
+
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
 
 ## <a name="displaying-the-kql-editor"></a>Mostrar el editor de KQL
 

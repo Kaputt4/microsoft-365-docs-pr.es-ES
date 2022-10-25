@@ -1,7 +1,7 @@
 ---
 title: Administración de incidentes en Microsoft 365 Defender
 description: Obtenga información acerca de cómo asignar, actualizar el estado
-keywords: incidente, incidentes, análisis, respuesta, alertas, alertas correlacionadas, asignación, actualización, estado, administración, clasificación, microsoft, 365, m365
+keywords: incidente, incidentes, historia de ataque, análisis, respuesta, alertas, alertas correlacionadas, asignación, actualización, estado, administración, clasificación, microsoft, 365, m365
 ms.service: microsoft-365-security
 ms.subservice: m365d
 ms.mktglfcycl: deploy
@@ -22,12 +22,12 @@ ms.topic: conceptual
 search.appverid:
 - MOE150
 - MET150
-ms.openlocfilehash: ec7f1d86943455001cf4456410fb2786ccf56c03
-ms.sourcegitcommit: 12af9e8e3a6eaa090fda9e98ccb831dff65863a4
+ms.openlocfilehash: dc5e017732c9d00f3b9ab05310a6fff8a0777b86
+ms.sourcegitcommit: e7dbe3b0d97cd8c64b5ae15f990d5e4b1dc9c464
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/27/2022
-ms.locfileid: "68091991"
+ms.lasthandoff: 10/24/2022
+ms.locfileid: "68686592"
 ---
 # <a name="manage-incidents-in-microsoft-365-defender"></a>Administración de incidentes en Microsoft 365 Defender
 
@@ -58,6 +58,7 @@ Puede administrar incidentes desde el panel **Administrar incidentes** para un i
 
 Puede mostrar este panel desde el vínculo **Administrar incidente** en:
 
+- **Página del artículo de alertas** .
 - Panel De propiedades de un incidente en la cola de incidentes.
 - **Página resumen** de un incidente.
 
@@ -106,9 +107,6 @@ En el campo **Clasificación** , especifique si el incidente es:
 - **Los falsos positivos** para los tipos de incidentes que determine se pueden omitir porque son técnicamente inexactos o engañosos.
 
 La clasificación de incidentes y la especificación de su estado y tipo ayuda a ajustar Microsoft 365 Defender para proporcionar una mejor determinación de la detección con el tiempo.
-
-Vea este breve vídeo para aprender a usar la clasificación para aumentar la eficacia de las triajes.  
-> [!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RE4LHJq]
 
 ## <a name="add-comments"></a>Agregar comentarios
 

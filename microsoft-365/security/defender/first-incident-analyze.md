@@ -1,7 +1,7 @@
 ---
 title: Paso 1. Evaluación y análisis del primer incidente
 description: Cómo evaluar e iniciar el análisis del primer incidente en Microsoft 365 Defender.
-keywords: incidentes, alertas, investigación, correlación, ataque, máquinas, dispositivos, usuarios, identidades, identidad, buzón de correo electrónico, 365, microsoft, m365, respuesta a incidentes, ciberataque
+keywords: incidentes, alertas, historia de ataque, investigación, correlación, ataque, máquinas, dispositivos, usuarios, identidades, identidad, buzón, correo electrónico, 365, microsoft, m365, respuesta a incidentes, ciberataque
 search.product: eADQiWindows 10XVcnh
 ms.service: microsoft-365-security
 ms.subservice: m365d
@@ -24,12 +24,12 @@ ms.topic: conceptual
 search.appverid:
 - MOE150
 - MET150
-ms.openlocfilehash: b2e10cd5e3d615495a688484dd8351cecb1564f4
-ms.sourcegitcommit: 12af9e8e3a6eaa090fda9e98ccb831dff65863a4
+ms.openlocfilehash: 2b3b31019b641f45f50fce229d4b7cced1002c25
+ms.sourcegitcommit: e7dbe3b0d97cd8c64b5ae15f990d5e4b1dc9c464
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/27/2022
-ms.locfileid: "68080049"
+ms.lasthandoff: 10/24/2022
+ms.locfileid: "68688337"
 ---
 # <a name="step-1-triage-and-analyze-your-first-incident"></a>Paso 1. Evaluación y análisis del primer incidente
 
@@ -104,9 +104,9 @@ Hay varias maneras de leer y analizar datos mediante Microsoft 365 Defender, per
 
 Aquí le mostramos un ejemplo:
 
-1. Una vez que se ha determinado la prioridad de evaluación de prioridades, un analista comienza un análisis detallado seleccionando el nombre del incidente. En esta página se muestra el **resumen de incidentes** , donde los datos se muestran en pestañas para ayudar con el análisis. En la pestaña **Alertas** , se muestran los tipos de alertas. Los analistas pueden hacer clic en cada alerta para explorar en profundidad el origen de detección correspondiente.
+1. Una vez que se ha determinado la prioridad de evaluación de prioridades, un analista comienza un análisis detallado seleccionando el nombre del incidente. En esta página se muestra el **artículo ataque** en el que los datos se muestran en pestañas para ayudar con el análisis. En la pestaña **Historia de alertas** , se muestran los tipos de alertas. Los analistas pueden hacer clic en cada alerta para explorar en profundidad el origen de detección correspondiente.
 
-    :::image type="content" source="../../media/first-incident-analyze/first-incident-analyze-summary-tab.png" alt-text="Pestaña Resumen de un incidente" lightbox="../../media/first-incident-analyze/first-incident-analyze-summary-tab.png":::
+    :::image type="content" source="../../media/first-incident-analyze/first-incident-analyze-summary-tab.png" alt-text="Captura de pantalla que muestra la historia de ataque de un incidente." lightbox="../../media/first-incident-analyze/first-incident-analyze-summary-tab.png":::
 
     Para obtener una guía rápida sobre qué dominio abarca cada origen de detección, revise la sección [Detectar](#detection-by-microsoft-365-defender) de este artículo.
 

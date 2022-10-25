@@ -24,12 +24,12 @@ ms.custom:
 ms.date: 04/01/2022
 ms.reviewer: jesquive, chventou, jonix, chriggs, owtho
 search.appverid: met150
-ms.openlocfilehash: 6b32b56cba5d6e45266c9c9cb28c8331a95ca019
-ms.sourcegitcommit: 0d8fb571024f134d7480fe14cffc5e31a687d356
+ms.openlocfilehash: 518ddface2c94f8eafe8e81ea72486f3c1059ac0
+ms.sourcegitcommit: e7dbe3b0d97cd8c64b5ae15f990d5e4b1dc9c464
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/20/2022
-ms.locfileid: "68625861"
+ms.lasthandoff: 10/24/2022
+ms.locfileid: "68688484"
 ---
 # <a name="switch-to-microsoft-defender-for-endpoint---phase-1-prepare"></a>Cambiar a Microsoft Defender para punto de conexión- Fase 1: Preparación
 
@@ -67,7 +67,7 @@ Mantenga actualizada la solución de endpoint protection existente y asegúrese 
 
 |SO|Recurso|
 |---|---|
-|Windows|[Microsoft Update](https://www.update.microsoft.com)|
+|Windows|[Microsoft Update](/windows/deployment/update/how-windows-update-works)|
 |macOS|[Actualización del software en el Equipo Mac](https://support.apple.com/HT201541)|
 |iOS|[Actualizar el iPhone, iPad o iPod touch](https://support.apple.com/HT204204)|
 |Android|[Comprobar & actualizar la versión de Android](https://support.google.com/android/answer/7680439)|

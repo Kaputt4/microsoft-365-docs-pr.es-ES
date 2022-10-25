@@ -17,18 +17,21 @@ ms.collection:
 - tier1
 ms.reviewer: shlomiakirav
 f1.keywords: NOCSH
-ms.openlocfilehash: c3663464314a764330ec7cf8c5b4c8ec67d99c6a
-ms.sourcegitcommit: 9f5cf8cf8a2e25cfd07b23b7f6d7f9d138a9cd16
+ms.openlocfilehash: 111b3e7cd4de996b6c263312acf4368d872e7a50
+ms.sourcegitcommit: e7dbe3b0d97cd8c64b5ae15f990d5e4b1dc9c464
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/07/2022
-ms.locfileid: "68501497"
+ms.lasthandoff: 10/24/2022
+ms.locfileid: "68687555"
 ---
 # <a name="how-to-get-microsoft-defender-for-business-servers-preview"></a>Obtención de servidores Microsoft Defender para Empresas (versión preliminar)
 
+> [!IMPORTANT]
+> Si planea incorporar una instancia de Windows Server o Linux Server, necesitará una licencia adicional, como Microsoft Defender para Empresas servidores (versión preliminar). Como alternativa, podría usar [Microsoft Defender para servidores](/azure/defender-for-cloud/defender-for-servers-introduction); sin embargo, la experiencia de Defender para empresas podría cambiar al agregar un plan empresarial, como el plan 1 o el plan 2 de Defender para servidores. Para obtener más información, consulte [¿Qué ocurre si tengo una combinación de suscripciones de seguridad de puntos de conexión de Microsoft?](mdb-faq.yml#what-happens-if-i-have-a-mix-of-microsoft-endpoint-security-subscriptions) e [Incorporación de dispositivos a Microsoft Defender para Empresas](mdb-onboard-devices.md).
+
 Microsoft Defender para Empresas servidores (versión preliminar) permite incorporar un dispositivo que ejecuta Windows Server o Linux Server a Defender para empresas o Microsoft 365 Empresa Premium. Cuando la licencia de Microsoft Defender para Empresas servidores esté disponible con carácter general, necesitará una licencia para cada instancia de servidor.
 
-A continuación se muestra cómo obtener servidores de Microsoft Defender para Empresas (versión preliminar):
+**A continuación se muestra cómo obtener servidores de Microsoft Defender para Empresas (versión preliminar):**
 
 1. Vaya al portal de Microsoft 365 Defender ([https://security.microsoft.com](https://security.microsoft.com)) e inicie sesión. 
 

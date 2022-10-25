@@ -1,5 +1,6 @@
 ---
 title: Vista previa de los resultados de una búsqueda de eDiscovery
+description: Obtenga una vista previa de un ejemplo de los resultados devueltos por una búsqueda de contenido o una búsqueda de eDiscovery (Estándar) en el panel de cumplimiento de Microsoft Purview.
 f1.keywords:
 - NOCSH
 ms.author: robmazz
@@ -10,22 +11,21 @@ ms.topic: article
 ms.service: O365-seccomp
 ms.localizationpriority: high
 ms.collection:
-- Strat_O365_IP
-- M365-security-compliance
-- SPO_Content
+- tier1
+- purview-compliance
+- ediscovery
 search.appverid:
 - MOE150
 - MED150
 - MET150
 ms.custom:
 - seo-marvel-apr2020
-description: Obtenga una vista previa de un ejemplo de los resultados devueltos por una búsqueda de contenido o una búsqueda de eDiscovery (Estándar) en el panel de cumplimiento de Microsoft Purview.
-ms.openlocfilehash: ebb0a03f9158f868d2dce0f29c246f78126e1721
-ms.sourcegitcommit: 433f5b448a0149fcf462996bc5c9b45d17bd46c6
+ms.openlocfilehash: 9cdeab946ccb4d480e705fb0e46cbb628f3e8fd7
+ms.sourcegitcommit: e7dbe3b0d97cd8c64b5ae15f990d5e4b1dc9c464
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/20/2022
-ms.locfileid: "67822537"
+ms.lasthandoff: 10/24/2022
+ms.locfileid: "68687865"
 ---
 # <a name="preview-ediscovery-search-results"></a>Vista previa de los resultados de la búsqueda de eDiscovery
 
@@ -33,13 +33,13 @@ Después de ejecutar una búsqueda de contenido o una búsqueda asociada a un ca
 
 Para obtener una vista previa de un ejemplo de resultados devuelto por una búsqueda:
 
-1. En el portal de cumplimiento de Microsoft Purview, vaya a la página de búsqueda de contenido o a un caso de exhibición de documentos electrónicos (Estándar).
+1. En el [portal de cumplimiento Microsoft Purview](https://compliance.microsoft.com), vaya al caso **Búsqueda de contenido** o eDiscovery (estándar).
 
 2. Seleccione la búsqueda para mostrar la página de controles flotantes.
 
-3. En la parte inferior de la página de controles flotantes, haga clic en **Revisar muestra**.
+3. En la parte inferior de la página de control flotante, seleccione **Revisar ejemplo**.
 
-   ![Haga clic en Revisar muestra en la página de control flotante para previsualizar los resultados.](../media/PreviewSearchResults1.png)
+   ![Seleccione Revisar ejemplo en la página de control flotante para obtener una vista previa de los resultados.](../media/PreviewSearchResults1.png)
 
    Se muestra una página que contiene un ejemplo de los resultados de búsqueda.
 
@@ -49,34 +49,29 @@ Para obtener una vista previa de un ejemplo de resultados devuelto por una búsq
 
    En el recorte de pantalla anterior, observe que las palabras clave de búsqueda están resaltadas al previsualizar los elementos.
 
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
+
 ## <a name="how-the-search-result-samples-are-selected"></a>Cómo se seleccionan las muestras de resultados
 
 Hay un máximo de 1 000 elementos seleccionados aleatoriamente disponibles para previsualizar. Además de seleccionarse aleatoriamente, los elementos disponibles para la vista previa deben cumplir los siguientes criterios:
 
 - Se puede previsualizar un máximo de 100 elementos de una sola ubicación de contenido (un buzón o un sitio). Esto significa que es posible que menos de 1 000 elementos estén disponibles para previsualizar. Por ejemplo, si busca cuatro buzones y la búsqueda obtiene 1 500 elementos estimados, solo 400 estarán disponibles para la vista previa, ya que solo se pueden previsualizar 100 elementos de cada buzón.
-
 - Para los elementos del buzón, solo se pueden previsualizar los mensajes de correo electrónico. No se pueden previsualizar elementos como tareas, elementos de calendario y contactos.
-
 - Para los elementos del sitio, solo los documentos están disponibles para previsualizar. No se pueden previsualizar elementos como carpetas, listas o archivos adjuntos de listas.
 
 ## <a name="file-types-supported-when-previewing-search-results"></a>Los tipos de archivos se admiten al obtener una vista previa de los resultados de la búsqueda
 
-Puede obtener una vista previa de los tipos de archivo compatibles en el panel de vista previa. Si un tipo de archivo no es compatible, necesitará descargar una copia en el equipo local (haciendo clic en **Descargar artículo original**). Para las páginas web .aspx se incluye la dirección URL de la página, aunque es posible que no tenga permiso para acceder a ella. No se puede obtener una vista previa de los elementos sin indexar.
+Puede obtener una vista previa de los tipos de archivo compatibles en el panel de vista previa. Si no se admite un tipo de archivo, tiene que descargar una copia del archivo en el equipo local (seleccionando **Descargar elemento original**). Para las páginas web .aspx se incluye la dirección URL de la página, aunque es posible que no tenga permiso para acceder a ella. No se puede obtener una vista previa de los elementos sin indexar.
 
 Se admiten los siguientes tipos de archivo y se puede obtener una vista previa en el panel Resultados de búsqueda.
   
 - .txt, .html, .mhtml
-
 - .eml
-
 - .doc, .docx, .docm
-
 - .pptm, .pptx
-
 - .pdf
 
 Asimismo, se admiten los siguientes tipos de contenedor de archivo. Puede ver la lista de archivos del contenedor en el panel de vista previa.
   
 - .zip
-
 - .gzip
