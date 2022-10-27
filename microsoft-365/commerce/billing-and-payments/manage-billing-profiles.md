@@ -11,6 +11,7 @@ f1.keywords:
 ms.service: microsoft-365-business
 ms.localizationpriority: medium
 ms.collection:
+- Tier1
 - scotvorg
 - M365-subscription-management
 - Adm_O365
@@ -21,12 +22,12 @@ ms.custom:
 search.appverid: MET150
 description: Obtenga información sobre cómo los perfiles de facturación admiten facturas.
 ms.date: 04/02/2021
-ms.openlocfilehash: bd154503b4f9add9e8368663b4637ea28f239ce6
-ms.sourcegitcommit: 0b7070ec119e00e0dafe030bbfbef0ae5c9afa19
+ms.openlocfilehash: cff74260395f31738753c2217fe15fe51e05d35d
+ms.sourcegitcommit: 181a0aff54842dcbafd834647c6e9ee47304d10f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/29/2022
-ms.locfileid: "68197269"
+ms.lasthandoff: 10/27/2022
+ms.locfileid: "68720336"
 ---
 # <a name="understand-billing-profiles"></a>Entender los perfiles de facturación
 
@@ -53,7 +54,7 @@ Los roles de los perfiles de facturación tienen permisos para controlar las com
 >
 > Si sigue estos pasos y la lista de perfiles de facturación está vacía, significa que no tiene un perfil de facturación y no puede usar esta característica.
 
-1. En el Centro de administración, vaya a la página **Facturación** \><a href="https://go.microsoft.com/fwlink/p/?linkid=2102895" target="_blank">Facturas y pagos</a>.
+1. En el Centro de administración, vaya a la página **Facturación** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=2102895" target="_blank">Facturas y pagos</a>.
 2. Seleccione la pestaña **Perfil de facturación** y, a continuación, seleccione un perfil de facturación en la lista.
 
 Cada perfil de facturación incluye la siguiente información:

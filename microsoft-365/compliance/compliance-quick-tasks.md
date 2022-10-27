@@ -10,18 +10,18 @@ ms.service: O365-seccomp
 f1.keywords:
 - NOCSH
 ms.collection:
-- m365-security-compliance
-- m365initiative-compliance
+- tier1
+- purview-compliance
 ms.custom:
 - admindeeplinkDEFENDER
 - intro-get-started
 ms.localizationpriority: medium
-ms.openlocfilehash: 39af52a0c2b402a007899c0f13e718d4b90eada1
-ms.sourcegitcommit: 61df6377a6185a8b55e668cfb81adbd8462a9cce
+ms.openlocfilehash: 24438848ab8437b769dd99294079fcfec84eaa3f
+ms.sourcegitcommit: 181a0aff54842dcbafd834647c6e9ee47304d10f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/29/2022
-ms.locfileid: "67071511"
+ms.lasthandoff: 10/27/2022
+ms.locfileid: "68720028"
 ---
 # <a name="quick-tasks-for-getting-started-with-compliance-in-microsoft-purview"></a>Tareas rápidas para empezar a trabajar con el cumplimiento en Microsoft Purview
 
@@ -30,6 +30,8 @@ Si no está familiarizado con Microsoft Purview y se pregunta por dónde empezar
 Este artículo también resulta útil si está averiguando cuál es la mejor manera de administrar los riesgos, proteger los datos y seguir cumpliendo con las normativas y estándares con un personal recién remoto. Los empleados ahora colaboran y se conectan entre sí de nuevas maneras, y este cambio significa que es posible que los procesos y controles de cumplimiento existentes necesiten adaptarse. La identificación y administración de estos nuevos riesgos de cumplimiento dentro de la organización es fundamental para proteger los datos y minimizar las amenazas y riesgos.
 
 Una vez completadas estas tareas básicas de cumplimiento, considere la posibilidad de ampliar la cobertura de cumplimiento en su organización mediante la implementación de soluciones adicionales de Microsoft Purview.
+
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
 
 ## <a name="task-1-configure-compliance-permissions"></a>Tarea 1: Configurar permisos de cumplimiento
 
@@ -73,7 +75,7 @@ Para obtener instrucciones paso a paso para crear directivas de alerta personali
 
 ## <a name="task-5-classify-and-protect-sensitive-data"></a>Tarea 5: Clasificación y protección de datos confidenciales
 
-Para realizar su trabajo, las personas de su organización colaboran con otras tanto dentro como fuera de la organización. Esto significa que el contenido ya no se queda detrás de un firewall, sino que puede desplazarse a todas partes, a través de dispositivos, aplicaciones y servicios. Y cuando se desplaza, usted quiere que lo haga de una forma segura y protegida que cumpla con las directivas empresariales y de cumplimiento de normas de su organización.
+To get their work done, people in your organization collaborate with others both inside and outside the organization. This means that content no longer stays behind a firewall—it can roam everywhere, across devices, apps, and services. And when it roams, you want it to do so in a secure, protected way that meets your organization's business and compliance policies.
 
 [Las etiquetas de confidencialidad](/microsoft-365/compliance/sensitivity-labels) le permiten clasificar y proteger los datos de su organización, a la vez que se asegura de que la productividad del usuario y su capacidad de colaboración no se ve obstaculizada. Use etiquetas de confidencialidad para aplicar restricciones de cifrado y uso, aplique marcas visuales y proteja la información entre plataformas y dispositivos, en el entorno local y en la nube.
 
@@ -93,9 +95,9 @@ Para obtener instrucciones paso a paso para configurar directivas de retención,
 
 La protección de información confidencial y la detección y actuación sobre incidentes de acoso en el lugar de trabajo es una parte importante del cumplimiento de las directivas y estándares internos. [El cumplimiento de comunicaciones](/microsoft-365/compliance/communication-compliance) en Microsoft Purview ayuda a minimizar estos riesgos, ya que le ayuda a detectar, capturar y tomar medidas de corrección rápidas para el correo electrónico y las comunicaciones de Microsoft Teams. Estas incluyen comunicaciones inapropiadas que contienen palabras soeces, amenazas y acoso y comunicaciones que comparten información confidencial dentro y fuera de su organización.
 
-Una plantilla de directiva de *texto de detección* predefinida permite examinar las comunicaciones internas y externas en busca de coincidencias de directivas para que puedan ser examinadas por revisores designados. Los revisores pueden investigar el correo electrónico digitalizado, Microsoft Teams, Yammer o las comunicaciones de terceros de su organización y tomar las medidas de corrección adecuadas para asegurarse de que cumplen los estándares de su organización.
+Una plantilla de directiva de *texto de detección predefinida* permite comprobar las comunicaciones internas y externas de las coincidencias de directivas para que puedan ser examinadas por los revisores designados. Los revisores pueden investigar el correo electrónico, Microsoft Teams, Yammer o las comunicaciones de terceros de su organización y tomar las medidas de corrección adecuadas para asegurarse de que cumplen los estándares de su organización.
 
-La plantilla de directiva *Detección de información confidencial* predefinida le ayuda a crear rápidamente una directiva para examinar el correo electrónico y las comunicaciones de Microsoft Teams que contienen tipos de información confidencial definidos o palabras clave para asegurarse de que los datos importantes no se comparten con personas que no deben tener acceso. Estas actividades podrían incluir comunicaciones no autorizadas sobre proyectos confidenciales o normas específicas del sector sobre comercio interno u otras actividades de colusión.
+La plantilla de directiva *Detección de información confidencial* predefinida le ayuda a crear rápidamente una directiva para comprobar el correo electrónico y las comunicaciones de Microsoft Teams que contienen tipos de información confidencial definidos o palabras clave para asegurarse de que los datos importantes no se comparten con personas que no deben tener acceso. Estas actividades podrían incluir comunicaciones no autorizadas sobre proyectos confidenciales o normas específicas del sector sobre comercio interno u otras actividades de colusión.
 
 Para obtener instrucciones paso a paso para planear y configurar el cumplimiento de las comunicaciones, consulte [Plan for communication compliance (Planear el cumplimiento de comunicaciones](/microsoft-365/compliance/communication-compliance-plan) ) y [Get started with communication compliance (Introducción al cumplimiento de comunicaciones](/microsoft-365/compliance/communication-compliance-configure)). Para obtener información sobre las licencias de cumplimiento de comunicaciones, consulte [Guía de licencias de Microsoft 365 para el cumplimiento de & de seguridad](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance#communication-compliance).
 
@@ -130,7 +132,7 @@ Hay más de 30 filtros diferentes disponibles, estos son algunos:
 
 Para obtener instrucciones paso a paso sobre cómo usar el explorador de actividad, consulte [Introducción al explorador de actividades](/microsoft-365/compliance/data-classification-activity-explorer).
 
-## <a name="next-steps"></a>Siguientes pasos
+## <a name="next-steps"></a>Pasos siguientes
 
 Ahora que ha configurado los conceptos básicos para la administración de cumplimiento de su organización, tenga en cuenta las siguientes soluciones de cumplimiento en Microsoft Purview para ayudarle a proteger la información confidencial y a detectar y actuar sobre riesgos internos adicionales.
 

@@ -17,12 +17,12 @@ ms.custom: seo-marvel-apr2020
 ms.subservice: mdo
 ms.service: microsoft-365-security
 search.appverid: met150
-ms.openlocfilehash: dae696dea94a821a2fd3ae7b9fc6b175587bb246
-ms.sourcegitcommit: 0d8fb571024f134d7480fe14cffc5e31a687d356
+ms.openlocfilehash: 5861e5f4910c1ce1cbf75a408ca40c76630a47f9
+ms.sourcegitcommit: 181a0aff54842dcbafd834647c6e9ee47304d10f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/20/2022
-ms.locfileid: "68628453"
+ms.lasthandoff: 10/27/2022
+ms.locfileid: "68720160"
 ---
 # <a name="views-in-threat-explorer-and-real-time-detections"></a>Vistas en el explorador de amenazas y detecciones en tiempo real
 
@@ -137,11 +137,7 @@ Debajo del gráfico, vea más detalles sobre archivos específicos, como el nomb
 
 ## <a name="click-to-filter-capabilities"></a>Funcionalidades de hacer clic para filtrar
 
-Con el Explorador (y las detecciones en tiempo real), puede aplicar un filtro con un clic. Haga clic en un elemento de la leyenda y ese elemento se convierte en un filtro para el informe. Por ejemplo, supongamos que estamos viendo la vista Malware en el Explorador:
-
-:::image type="content" source="../../media/cab32fa2-66f1-4ad5-bc1d-2bac4dbeb48c.png" alt-text="La página Explorador del portal de cumplimiento de & de seguridad" lightbox="../../media/cab32fa2-66f1-4ad5-bc1d-2bac4dbeb48c.png":::
-
-Al hacer clic en **Detonación de ATP** en este gráfico, se obtiene una vista similar a la siguiente:
+Con el Explorador (y las detecciones en tiempo real), puede aplicar un filtro con un clic. Haga clic en un elemento de la leyenda y ese elemento se convierte en un filtro para el informe. Por ejemplo, al hacer clic en **Detonación de ATP** en este gráfico, se obtiene una vista similar a la siguiente:
 
 :::image type="content" source="../../media/7241d7dd-27bc-467d-9db8-6e806c49df14.png" alt-text="Explorador filtrado para mostrar solo Defender para Office 365 resultados de detonación" lightbox="../../media/7241d7dd-27bc-467d-9db8-6e806c49df14.png":::
 

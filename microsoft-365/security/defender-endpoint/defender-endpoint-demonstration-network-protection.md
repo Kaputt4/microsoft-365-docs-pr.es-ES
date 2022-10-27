@@ -16,14 +16,16 @@ audience: ITPro
 ms.collection:
 - m365-security
 - tier2
-ms.topic: conceptual
+- demo
+ms.topic: article
 ms.subservice: mde
-ms.openlocfilehash: 1d6693e625c1fd088d7275fc15dcbcde1a67c26c
-ms.sourcegitcommit: 0d8fb571024f134d7480fe14cffc5e31a687d356
+ms.date: 10/21/2022
+ms.openlocfilehash: 41a1a023fbfdc71ceec060dda84349ff6776175d
+ms.sourcegitcommit: 181a0aff54842dcbafd834647c6e9ee47304d10f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/20/2022
-ms.locfileid: "68638442"
+ms.lasthandoff: 10/27/2022
+ms.locfileid: "68732765"
 ---
 # <a name="network-protection-demonstrations"></a>Demostraciones de protección de red
 
@@ -42,11 +44,11 @@ Set-MpPreference -EnableNetworkProtection Enabled
 
 ## <a name="rule-states"></a>Estados de regla
 
-|Estado|Modo|Valor numérico|
-|---|---|---|
-|AuditMode|= Modo auditoría|2|
-|Habilitado|= Modo de bloque|1|
-|Deshabilitada|= Desactivado|0|
+|Estado | Modo| Valor numérico |
+|:---|:---|:---|
+| Deshabilitada | = Desactivado | 0 |
+| Habilitado | = Modo de bloque | 1 |
+| Auditoría | = Modo auditoría | 2 |
 
 ## <a name="verify-configuration"></a>Comprobación de la configuración
 

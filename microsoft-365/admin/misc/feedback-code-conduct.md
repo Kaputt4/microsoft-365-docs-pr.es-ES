@@ -8,14 +8,15 @@ ms.topic: article
 ms.service: microsoft-365-business
 ms.localizationpriority: medium
 ms.collection:
+- Tier3
 - scotvorg
 description: Obtenga información sobre el código de conducta de Microsoft para los comentarios que proporcione.
-ms.openlocfilehash: cf3f77d2bb8288e436f6404d7688afaa4c4e1e38
-ms.sourcegitcommit: 0b7070ec119e00e0dafe030bbfbef0ae5c9afa19
+ms.openlocfilehash: 20c2274bcdda8bdd3e0b7f0c132397bb7d9d1c74
+ms.sourcegitcommit: 181a0aff54842dcbafd834647c6e9ee47304d10f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/29/2022
-ms.locfileid: "68191021"
+ms.lasthandoff: 10/27/2022
+ms.locfileid: "68732545"
 ---
 # <a name="microsoft-feedback-code-of-conduct"></a>Código de conducta de comentarios de Microsoft
 
