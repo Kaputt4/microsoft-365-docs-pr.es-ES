@@ -19,12 +19,12 @@ ms.collection:
 search.appverid:
 - MET150
 - MOE150
-ms.openlocfilehash: 684fbfde05c334ffadae16bae7e5c613e7fc8589
-ms.sourcegitcommit: 0d8fb571024f134d7480fe14cffc5e31a687d356
+ms.openlocfilehash: 5dc7e4144dd5999d3075cf0ea9c1c6a7b8611c70
+ms.sourcegitcommit: 181a0aff54842dcbafd834647c6e9ee47304d10f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/20/2022
-ms.locfileid: "68636702"
+ms.lasthandoff: 10/27/2022
+ms.locfileid: "68726186"
 ---
 # <a name="create-and-manage-communication-compliance-policies"></a>Crear y administrar directivas de cumplimiento de comunicaciones
 
@@ -153,6 +153,7 @@ En la tabla siguiente se describe el tiempo de detección de los tipos de conten
 | Datos adjuntos modernos de Teams | 13 horas |
 | Metadatos de Teams | 1 hora |
 | metadatos de Email | 1 hora |
+| Canales compartidos de Teams | 13 horas |
 
 En el caso de las directivas existentes creadas antes del 31 de julio de 2022, puede tardar hasta 24 horas en detectar mensajes y revisar alertas que coincidan con estas directivas. Para reducir la latencia de estas directivas, [copie la directiva existente](/microsoft-365/compliance/communication-compliance-policies#copy-a-policy) y cree una nueva a partir de la copia. Si no necesita conservar ningún dato de la directiva anterior, se puede pausar o eliminar.
 

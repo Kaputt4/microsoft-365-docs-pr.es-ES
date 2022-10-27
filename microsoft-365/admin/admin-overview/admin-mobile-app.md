@@ -10,6 +10,7 @@ ms.topic: overview
 ms.service: microsoft-365-business
 ms.localizationpriority: medium
 ms.collection:
+- Tier2
 - scotvorg
 - highpri
 - M365-subscription-management
@@ -28,12 +29,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Obtén la aplicación Administración de Microsoft 365, tu compañero de la Centro de administración de Microsoft 365 basada en web, para administrar tu organización en línea desde tu teléfono o tableta.
-ms.openlocfilehash: a4bf10444eb638b86de3723baf64992cc8e46376
-ms.sourcegitcommit: 04e517c7e00323b5c33d8ea937115725cf2cfd4d
+ms.openlocfilehash: 5619a63f2c219200ab98a147eb94dbc0dc4568f8
+ms.sourcegitcommit: 181a0aff54842dcbafd834647c6e9ee47304d10f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/13/2022
-ms.locfileid: "68563480"
+ms.lasthandoff: 10/27/2022
+ms.locfileid: "68727067"
 ---
 # <a name="about-the-microsoft-365-admin-mobile-app"></a>Acerca de la aplicación móvil Administración de Microsoft 365
 

@@ -11,6 +11,7 @@ ms.topic: article
 ms.service: microsoft-365-business
 ms.localizationpriority: medium
 ms.collection:
+- Tier2
 - scotvorg
 - M365-subscription-management
 - Adm_O365
@@ -20,12 +21,12 @@ ms.custom:
 search.appverid: MET150
 description: Obtenga información sobre cómo revisar la lista de proveedores de soluciones certificados por Microsoft (asociados) para determinar qué privilegios de administrador tienen y cómo quitar esos privilegios.
 ms.date: 12/03/2021
-ms.openlocfilehash: 02516f09af6605749cf1d9f57f043f9ccfc7683c
-ms.sourcegitcommit: 0b7070ec119e00e0dafe030bbfbef0ae5c9afa19
+ms.openlocfilehash: 67cafa9ebac7f641de43f0debab733d89a8b1853
+ms.sourcegitcommit: 181a0aff54842dcbafd834647c6e9ee47304d10f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/29/2022
-ms.locfileid: "68206133"
+ms.lasthandoff: 10/27/2022
+ms.locfileid: "68718312"
 ---
 # <a name="review-microsoft-certified-cloud-solution-provider-partner-administrative-privileges"></a>Revisión de los privilegios administrativos de asociados del proveedor de soluciones en la nube certificados por Microsoft
 

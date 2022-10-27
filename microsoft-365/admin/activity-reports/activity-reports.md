@@ -10,6 +10,7 @@ ms.topic: overview
 ms.service: microsoft-365-business
 ms.localizationpriority: high
 ms.collection:
+- Tier2
 - scotvorg
 - M365-subscription-management
 - Adm_O365
@@ -24,12 +25,12 @@ search.appverid:
 - GEA150
 ms.assetid: 0d6dfb17-8582-4172-a9a9-aed798150263
 description: Obtenga un informe periódico de cómo usan los usuarios los servicios de Microsoft 365 y explore en profundidad cada gráfico para obtener más información.
-ms.openlocfilehash: 1c1c5539b553b26680c826c0329f5a69a6d5c798
-ms.sourcegitcommit: 50da6f1f6ef2274c17ed9729e7ad84395b0a9be2
+ms.openlocfilehash: 568ef9e05da62ad8833f1a517bc535ad82402fcd
+ms.sourcegitcommit: 181a0aff54842dcbafd834647c6e9ee47304d10f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/08/2022
-ms.locfileid: "68503850"
+ms.lasthandoff: 10/27/2022
+ms.locfileid: "68724955"
 ---
 # <a name="microsoft-365-reports-in-the-admin-center"></a>Informes de Microsoft 365 en el centro de administración
 

@@ -10,6 +10,7 @@ ms.topic: article
 ms.service: microsoft-365-business
 ms.localizationpriority: medium
 ms.collection:
+- Tier2
 - scotvorg
 - M365-subscription-management
 - Adm_O365
@@ -21,12 +22,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Obtenga el informe de uso de OneDrive para su organización y descubra la actividad de cada usuario de OneDrive, el número de archivos compartidos y el uso del almacenamiento.
-ms.openlocfilehash: 840e7ea1aec87273940294aaf30c362f1a80dd83
-ms.sourcegitcommit: 0b7070ec119e00e0dafe030bbfbef0ae5c9afa19
+ms.openlocfilehash: 2ae2317bbd5c618c6c0dcea9e9dc0527c0a65eed
+ms.sourcegitcommit: 181a0aff54842dcbafd834647c6e9ee47304d10f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/29/2022
-ms.locfileid: "68196961"
+ms.lasthandoff: 10/27/2022
+ms.locfileid: "68727155"
 ---
 # <a name="microsoft-365-reports-in-the-admin-center---onedrive-for-business-activity"></a>Informes de Microsoft 365 en el Centro de administración: actividad de OneDrive para la Empresa
 

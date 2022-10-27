@@ -18,12 +18,12 @@ ms.assetid: e3c6df61-8513-499d-ad8e-8a91770bff63
 ms.collection:
 - purview-compliance
 ms.custom: seo-marvel-mar2020
-ms.openlocfilehash: 0e2c9d57aefed7c0cf77bcce14106b0b622e8735
-ms.sourcegitcommit: 0d8fb571024f134d7480fe14cffc5e31a687d356
+ms.openlocfilehash: 28e1dedac97d692ae1f797fe4fe4a056a5d4a7b5
+ms.sourcegitcommit: 181a0aff54842dcbafd834647c6e9ee47304d10f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/20/2022
-ms.locfileid: "68634462"
+ms.lasthandoff: 10/27/2022
+ms.locfileid: "68731489"
 ---
 # <a name="whats-new-in-microsoft-purview-risk-and-compliance-solutions"></a>Novedades de las soluciones de cumplimiento y riesgo de Microsoft Purview
 
@@ -58,6 +58,30 @@ Ya sea agregando nuevas soluciones a la [portal de cumplimiento Microsoft Purvie
 - Los equipos de seguridad ahora pueden [personalizar un desencadenador de seguridad](/microsoft-365/compliance/insider-risk-management-policies#policy-templates) en la directiva de "fugas de datos" para que se muestre cuando un usuario realice una secuencia, lo que le permite responder a acciones del usuario que podrían considerarse más arriesgadas.
 - Las nuevas actualizaciones ahora permiten a los equipos de seguridad crear [directivas con secuencias](/microsoft-365/compliance/insider-risk-management-policies#sequence-detection-preview) sin ninguna otra selección de indicador de directiva subyacente necesaria.
 
+### <a name="data-lifecycle-management-and-records-management"></a>Administración del ciclo de vida de los datos y administración de registros
+
+- **Disponibilidad general (GA):** [volver a etiquetar al final del período de retención](retention-settings.md#relabeling-at-the-end-of-the-retention-period).
+- **Disponibilidad general (GA):** [iniciar un registro desbloqueado](declare-records.md#configuring-retention-labels-to-declare-records).
+- **Disponibilidad general (GA):** los usuarios ahora pueden aplicar etiquetas de retención publicadas a los archivos [directamente en Teams](create-apply-retention-labels.md#applying-retention-labels-using-microsoft-365-groups).
+- Nuevas instrucciones de soporte técnico de retención: las directivas de retención para Teams admiten el [chat con clips](https://support.microsoft.com/office/start-a-chat-in-teams-0c71b32b-c050-4930-a887-5afbe742b3d8?storagetype=live#bkmk_chatwithself) de [vídeo](https://support.microsoft.com/office/record-a-video-clip-in-teams-0c57dae5-2974-4214-9c46-7a2136386f1c) y características, y las directivas de retención para [las publicaciones de argumentos](https://support.microsoft.com/office/overview-of-storyline-for-yammer-and-viva-engage-530e4e66-9f1c-4be1-b371-08ea40dc4b69) de yammer.
+- Experiencia mejorada en el producto si las directivas de retención tienen errores: ahora verá una descripción detallada del error en el panel de detalles, con acciones en el producto para realizar que puedan resolver el problema. Por ejemplo, quite las ubicaciones no válidas y vuelva a sincronizar la directiva.
+
+### <a name="microsoft-priva"></a>Microsoft Priva
+
+- **En versión preliminar**: [las directivas de transferencia de datos](/privacy/priva/risk-management-policy-data-transfer) de Privacy Risk Management ahora ofrecen condiciones de límite flexibles adicionales: detección de transferencias basadas en los atributos de Azure Active Directory de los usuarios, transferencias entre usuarios en diferentes grupos de Microsoft 365 y transferencias entre sitios de SharePoint.
+
+### <a name="on-premises-scanner"></a>Escáner local
+- **En versión preliminar**: se cambia el nombre del analizador local de Azure Information Protection (AIP) **Microsoft Purview Information Protection escáner** y [la configuración se mueve a la portal de cumplimiento Microsoft Purview](/information-protection/deploy-aip-scanner-configure-install).
+
+### <a name="sensitivity-labels"></a>Etiquetas de confidencialidad
+- Llamada a la acción: [guía de migración](sensitivity-labels-aip.md) para ayudarle a pasar del complemento AIP para aplicaciones de Office, con un [cuaderno de estrategias de migración](https://microsoft.github.io/ComplianceCxE/playbooks/AIP2MIPPlaybook) de nuestro equipo de Ingeniería de la experiencia del cliente (CxE)
+- **Disponibilidad general (GA):** contextos de autenticación para grupos de etiquetas [y configuración de sitio](sensitivity-labels-teams-groups-sites.md#how-to-configure-groups-and-site-settings) que funcionan con directivas de acceso condicional de Azure AD para aplicar condiciones de acceso más estrictas a un sitio.
+- **Disponibilidad general (GA):** [permisos de uso compartido de sitios mediante PowerShell](sensitivity-labels-teams-groups-sites.md#configure-site-sharing-permissions-by-using-powershell-advanced-settings).
+- **Implementación**: [se respeta la prevención de la copia en el Portapapeles para los archivos etiquetados y cifrados en SharePoint y OneDrive](sensitivity-labels-sharepoint-onedrive-files.md#limitations), con algunas excepciones para escenarios de reetiquetado.
+- **En versión preliminar**: el complemento AIP para aplicaciones de Office está [deshabilitado de forma predeterminada](sensitivity-labels-aip.md#how-to-disable-the-aip-add-in-to-use-built-in-labeling-for-office-apps) y requiere una nueva configuración para invalidar este valor predeterminado.
+- Instrucción de compatibilidad: [tipos de archivos admitidos para SharePoint y OneDrive](sensitivity-labels-sharepoint-onedrive-files.md#supported-file-types), después de habilitar las etiquetas de confidencialidad para estos servicios.
+- Nuevo [requisito previo para la coautoría](sensitivity-labels-coauthoring.md#prerequisites) y azure Information Protection cliente y analizador de etiquetado unificados: no se admite el uso del cifrado de doble clave en el mismo inquilino que la característica de coautoría.
+
 ## <a name="september-2022"></a>Septiembre de 2022
 
 ### <a name="communication-compliance"></a>Cumplimiento de las comunicaciones
@@ -65,6 +89,10 @@ Ya sea agregando nuevas soluciones a la [portal de cumplimiento Microsoft Purvie
 - [Introducción al cumplimiento de comunicaciones](/microsoft-365/compliance/communication-compliance-configure): nuevas actualizaciones para las acciones recomendadas y la incorporación acelerada. Las acciones recomendadas pueden ayudar a su organización a empezar a trabajar rápidamente con el cumplimiento de las comunicaciones.
 - [Investigar y corregir alertas de cumplimiento de comunicaciones](/microsoft-365/compliance/communication-compliance-investigate-remediate): nueva actualización de la compatibilidad con el resaltado de palabras clave para la vista de texto sin formato. El resaltado de palabras clave, que actualmente solo está disponible en inglés, puede ayudarle a dirigirse al área de interés en los mensajes largos y los datos adjuntos.
 - [Usar informes y auditorías de cumplimiento de comunicaciones](/microsoft-365/compliance/communication-compliance-reports-audits): aclaraciones sobre los permisos necesarios para ver y administrar informes de cumplimiento de comunicaciones. Para ver y administrar informes, los usuarios deben estar asignados al grupo de roles *Visores de cumplimiento de comunicaciones* .
+ 
+### <a name="compliance-manager"></a>Administrador de cumplimiento
+
+- [Lista de plantillas del Administrador de cumplimiento](/microsoft-365/compliance/compliance-manager-templates-list): nueva plantilla agregada para australiana Information Security Registered Assessor Program (IRAP) con ISM versión 3.5 - Official).
 
 ### <a name="data-classification"></a>Clasificación de datos
 
@@ -217,7 +245,7 @@ Ya sea agregando nuevas soluciones a la [portal de cumplimiento Microsoft Purvie
   - [Estimación y recuperación de datos](/privacy/priva/subject-rights-requests-data-retrieval) : explica por qué algunas solicitudes se detienen en la fase de estimación de datos y cómo ajustar la búsqueda como resultado; también explica cómo establecer una solicitud para pausar primero antes de avanzar automáticamente a la recuperación de datos.
   - [Revisar los datos de una solicitud de derechos del interesado](/privacy/priva/subject-rights-requests-data-review) : las nuevas características de archivo de importación permiten a los usuarios traer archivos de ubicaciones que no son de Microsoft 365, o archivos que la búsqueda no ha recogido en caso contrario, en la pestaña Datos recopilados.
   - [Generar informes y cerrar solicitudes](/privacy/priva/subject-rights-requests-reports) : aclara cuándo se generan los paquetes de datos finales y qué tipos de archivos incluyen.
-  - [Integración y ampliación a través de Microsoft Graph API y Power Automate](/privacy/priva/subject-rights-requests-automate) : se ha revisado el título de esta página anterior de Power Automate y se ha ampliado el contenido de la página para incluir contenido de Graph API y vínculos de referencia que anteriormente vivían en otra página.
+  - [Integrar y ampliar a través de Microsoft Graph API y Power Automate](/privacy/priva/subject-rights-requests-automate): se ha revisado el título de esta página anterior de Power Automate y se ha ampliado el contenido de la página para incluir Graph API contenido y vínculos de referencia que anteriormente residían en otra página.
 
 ### <a name="sensitive-information-types"></a>Tipos de información confidencial
 

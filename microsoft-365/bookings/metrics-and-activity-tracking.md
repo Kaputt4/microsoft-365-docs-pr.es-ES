@@ -8,15 +8,16 @@ ms.topic: article
 ms.service: bookings
 ms.localizationpriority: medium
 ms.collection:
+- Tier2
 - scotvorg
 ms.assetid: 060a9781-c8a2-4e85-a769-31e6417d05b3
 description: Hay varias métricas disponibles en la página principal de Bookings, lo que le permite realizar un seguimiento sencillo de los ingresos y la actividad del cliente.
-ms.openlocfilehash: 96abee3b769907f5db9b0c755b749fe32ce7a0c0
-ms.sourcegitcommit: 0b7070ec119e00e0dafe030bbfbef0ae5c9afa19
+ms.openlocfilehash: 811e0dd95dff4cceb50642e49db2d562535f83fd
+ms.sourcegitcommit: 181a0aff54842dcbafd834647c6e9ee47304d10f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/29/2022
-ms.locfileid: "68192055"
+ms.lasthandoff: 10/27/2022
+ms.locfileid: "68725460"
 ---
 # <a name="microsoft-bookings-metrics-and-activity-tracking"></a>Microsoft Bookings métricas y seguimiento de actividad
 

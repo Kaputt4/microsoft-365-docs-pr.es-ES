@@ -11,16 +11,21 @@ ms.author: robmazz
 author: robmazz
 manager: laurawi
 audience: itpro
-ms.collection: m365-security-compliance
+ms.collection:
+- tier1
+- purview-compliance
 ms.custom: admindeeplinkCOMPLIANCE
-ms.openlocfilehash: 14c0d5127f4b370d78b54512d8780d1cc7dfbf67
-ms.sourcegitcommit: 221212fff9737e0ea386755deb8fed62ae9c254b
+ms.openlocfilehash: b4a428d3d6151c2ae1e252ec792c8a1658bd67f0
+ms.sourcegitcommit: 181a0aff54842dcbafd834647c6e9ee47304d10f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/14/2022
-ms.locfileid: "66787658"
+ms.lasthandoff: 10/27/2022
+ms.locfileid: "68718334"
 ---
 # <a name="insider-risk-management-users-dashboard"></a>Panel usuarios de administración de riesgos internos
+
+> [!IMPORTANT]
+> Administración de riesgos internos de Microsoft Purview correlaciona varias señales para identificar posibles riesgos internos malintencionados o involuntarios, como el robo de IP, la pérdida de datos y las infracciones de seguridad. La administración de riesgos internos permite a los clientes crear directivas para administrar la seguridad y el cumplimiento. Creados con privacidad por diseño, los usuarios se seudonimizan de forma predeterminada y los controles de acceso basados en roles y los registros de auditoría están en su lugar para ayudar a garantizar la privacidad del nivel de usuario.
 
 El **panel Usuarios** es una herramienta importante en el flujo de trabajo de administración de riesgos internos y ayuda a los investigadores y analistas a comprender mejor las actividades de riesgo. Este panel ofrece vistas y características de administración para satisfacer las necesidades administrativas entre la creación de directivas de administración de riesgos internos y la administración de casos de administración de riesgos internos.
 
@@ -31,6 +36,8 @@ Obtenga más información sobre cómo el panel Usuarios muestra a los usuarios e
 - Usuarios con alertas de directivas de riesgo internas activas
 - Usuarios con eventos desencadenantes
 - Usuarios agregados temporalmente a las directivas
+
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
 
 ## <a name="users-with-active-insider-risk-policy-alerts"></a>Usuarios con alertas de directivas de riesgo internas activas
 
@@ -65,14 +72,14 @@ En el escenario opuesto en el que la configuración de **la ventana de activaci�
 Cada usuario que se muestra en el **panel Usuarios** tiene la siguiente información:
 
 - **Usuarios**: nombre de usuario de un usuario. Este campo se anonimiza si la configuración de anonimización global para la administración de riesgos internos está habilitada.
-- **Nivel de riesgo**: el nivel de riesgo calculado actual del usuario. Esta puntuación se calcula cada 24 horas y usa las puntuaciones de riesgo de alerta de todas las alertas activas asociadas al usuario. En el caso de los usuarios con solo indicadores desencadenantes, el nivel de riesgo es cero.
+- **Nivel de riesgo**: nivel de riesgo calculado actual del usuario. Esta puntuación se calcula cada 24 horas y usa las puntuaciones de riesgo de alerta de todas las alertas activas asociadas al usuario. En el caso de los usuarios con solo indicadores desencadenantes, el nivel de riesgo es cero.
 - **Alertas activas**: número de alertas activas para todas las directivas.
-- **Infracciones confirmadas**: el número de casos resueltos como *infracción de directiva confirmada* para el usuario.
-- **Caso**: el caso activo actual del usuario.
+- **Infracciones confirmadas**: número de casos resueltos como *infracción de directiva confirmada* para el usuario.
+- **Caso**: caso activo actual del usuario.
 
-Para localizar rápidamente un usuario específico, use **Buscar** en la parte superior derecha del panel Usuario. Al buscar usuarios, debe usar el nombre principal de usuario (UPN). Por ejemplo, al buscar un usuario llamado "Tiara Hidayah" que tenga un UPN de "thidayah" en su organización, escribiría "thidayah" o alguna parte del UPN en **La búsqueda**.
+Para localizar rápidamente un usuario específico, use **Buscar** en la parte superior derecha del panel Usuarios. Al buscar usuarios, debe usar el nombre principal de usuario (UPN). Por ejemplo, al buscar un usuario llamado "Tiara Hidayah" que tenga un UPN de "thidayah" en su organización, escribiría "thidayah" o alguna parte del UPN en **La búsqueda**.
 
-![Panel de usuarios de administración de riesgos internos.](../media/insider-risk-users-dashboard.png)
+![Panel de usuarios de administración de riesgos internos](../media/insider-risk-users-dashboard.png)
 
 > [!NOTE]
 > El número de usuarios que se muestra en el **panel Usuarios** puede estar limitado en algunos casos, en función del volumen de alertas activas y las directivas de coincidencia. Los usuarios con alertas activas se muestran en el **panel Usuarios** a medida que se generan las alertas y puede haber casos poco frecuentes cuando se alcanza el número máximo de usuarios mostrados. Si se produce este límite, los usuarios con alertas activas que no se muestran se agregarán al **panel Usuarios** a medida que se triagen las alertas de usuario existentes.
@@ -83,19 +90,19 @@ Para ver más detalles sobre la actividad de riesgo de un usuario, abra el panel
 
 - **Pestaña Perfil de usuario**
   - **Nombre y título**: nombre y título de posición para el usuario de Azure Active Directory. Estos campos de usuario se anonimizarán o estarán vacíos si la configuración de anonimización global para la administración de riesgos internos está habilitada.
-  - **Correo electrónico** del usuario: la dirección de correo electrónico del usuario.
+  - **Correo electrónico del usuario**: Email dirección del usuario.
   - **Alias**: alias de red para el usuario.
-  - **Organización o departamento**: la organización o el departamento del usuario.
+  - **Organización o departamento**: organización o departamento para el usuario.
 
 - **Pestaña Actividad de usuario**
-  - **Historial de actividad reciente del usuario**: enumera tanto los indicadores desencadenantes como los indicadores de riesgo interno para las actividades del usuario hasta los últimos 180 días. Todas las actividades pertinentes a los indicadores de riesgo internos también se puntúan, aunque las actividades pueden haber generado o no una alerta de riesgo interno. Los ejemplos de indicadores desencadenantes pueden ser una fecha de renuncia o la última fecha programada de trabajo para el usuario. Los indicadores de riesgo internos son actividades que se determinan para tener un elemento de riesgo y se definen en las directivas en las que se incluye el usuario. Las actividades de evento y riesgo se enumeran en primer lugar con el elemento más reciente.
+  - **Historial de la actividad reciente del usuario**: enumera tanto los indicadores desencadenantes como los indicadores de riesgo interno para las actividades de riesgo hasta los últimos 90 días. Todas las actividades de riesgo pertinentes para los indicadores de riesgo internos también se puntúan, aunque las actividades pueden haber generado o no una alerta de riesgo interno. Los ejemplos de indicadores desencadenantes pueden ser una fecha de renuncia o la última fecha programada de trabajo para el usuario. Los indicadores de riesgo internos son actividades que se determinan para tener un elemento de riesgo, que puede dar lugar a un incidente de seguridad, y se definen en las directivas en las que se incluye el usuario. Las actividades de evento y riesgo se enumeran en primer lugar con el elemento más reciente.
 
 ## <a name="remove-users-from-in-scope-assignment-to-policies"></a>Eliminación de usuarios de la asignación en el ámbito a las directivas
 
-Puede haber escenarios en los que tenga que dejar de asignar puntuaciones de riesgo a la actividad de un usuario en directivas de administración de riesgos internos. Use **Quitar usuarios** en la página **Del panel Usuarios** para dejar de asignar puntuaciones de riesgo a uno o más usuarios de todas las directivas de administración de riesgos internos para las que están actualmente en el ámbito. Esta acción no quita a los usuarios de la asignación general de directivas (al agregar usuarios o grupos a una configuración de directiva), sino que simplemente quita a los usuarios del procesamiento activo por directivas después de los eventos desencadenantes actuales. Si los usuarios tienen otro evento desencadenante en el futuro, las puntuaciones de riesgo de las directivas comenzarán a asignarse automáticamente a los usuarios de nuevo. No se quitarán las alertas o casos existentes para este usuario.
+Puede haber escenarios en los que tenga que dejar de asignar puntuaciones de riesgo a los usuarios en directivas de administración de riesgos internos. Use **Quitar usuarios** en la página **Del panel Usuarios** para dejar de asignar puntuaciones de riesgo a uno o más usuarios de todas las directivas de administración de riesgos internos para las que están actualmente en el ámbito. Esta acción no quita a los usuarios de la asignación general de directivas (al agregar usuarios o grupos a una configuración de directiva), sino que simplemente quita a los usuarios del procesamiento activo por directivas después de los eventos desencadenantes actuales. Si los usuarios tienen otro evento desencadenante en el futuro, las puntuaciones de riesgo de las directivas comenzarán a asignarse automáticamente a los usuarios de nuevo. No se quitarán las alertas o casos existentes para este usuario.
 
 > [!NOTE]
-> La eliminación de un usuario de una directiva puede tardar varios minutos en completarse. Una vez completado, el usuario ya no aparecerá en la página Usuarios. Si el usuario quitado tiene alertas o casos activos, el usuario permanecerá en la página Usuarios y los detalles del usuario mostrarán que ya no están en el ámbito de una directiva.
+> La eliminación de un usuario de una directiva puede tardar varios minutos en completarse. Una vez completado, el usuario ya no aparece en la página Usuarios. Si el usuario quitado tiene alertas o casos activos, el usuario permanecerá en la página Usuarios y los detalles del usuario mostrarán que ya no están en el ámbito de una directiva.
 
 Para quitar manualmente los usuarios del estado dentro del ámbito en todas las directivas de administración de riesgos internos, siga estos pasos:
 
@@ -107,11 +114,9 @@ Para quitar manualmente los usuarios del estado dentro del ámbito en todas las 
 
 ## <a name="run-automated-tasks-with-power-automate-flows-for-a-user"></a>Ejecución de tareas automatizadas con flujos de Power Automate para un usuario
 
-Con los flujos recomendados de Power Automate, los investigadores y analistas de riesgo pueden tomar medidas rápidamente para:
+Con los flujos recomendados de Power Automate, los investigadores y analistas de riesgos pueden tomar medidas rápidamente para notificar a los usuarios cuando se agregan a una directiva de riesgo interno.
 
-- Notificar a los usuarios cuando se agregan a una directiva de riesgo interno
-
-Para ejecutar, administrar o crear flujos de Power Automate para un usuario de administración de riesgos internos:
+Para ejecutar, administrar y crear flujos de Power Automate para usuarios de administración de riesgos internos:
 
 1. Seleccione **Automatizar** en la barra de herramientas de acciones del usuario.
 2. Elija el flujo de Power Automate que se va a ejecutar y, a continuación, seleccione **Ejecutar flujo**.

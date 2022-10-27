@@ -10,6 +10,7 @@ ms.topic: article
 ms.service: microsoft-365-business
 ms.localizationpriority: medium
 ms.collection:
+- Tier2
 - scotvorg
 - highpri
 - M365-subscription-management
@@ -24,12 +25,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Ayude a los empleados a aprender a configurar las aplicaciones de Office que obtienen con Microsoft 365 Empresa Premium.
-ms.openlocfilehash: dcba23ca2910ba90e3cf853cd81dd18130d91a80
-ms.sourcegitcommit: 0b7070ec119e00e0dafe030bbfbef0ae5c9afa19
+ms.openlocfilehash: 558cb8d44a35d8e1f16aa7be90f26c6ba0abb4cc
+ms.sourcegitcommit: 181a0aff54842dcbafd834647c6e9ee47304d10f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/29/2022
-ms.locfileid: "68186137"
+ms.lasthandoff: 10/27/2022
+ms.locfileid: "68726384"
 ---
 # <a name="employee-quick-setup-in-microsoft-365-for-business"></a>Configuración rápida de empleados en Microsoft 365 para empresas
 

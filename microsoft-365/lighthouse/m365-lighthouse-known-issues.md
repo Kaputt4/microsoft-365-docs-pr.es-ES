@@ -10,6 +10,7 @@ ms.topic: article
 ms.service: microsoft-365-lighthouse
 ms.localizationpriority: medium
 ms.collection:
+- Tier1
 - scotvorg
 - M365-subscription-management
 - Adm_O365
@@ -18,12 +19,12 @@ ms.custom:
 - M365-Lighthous
 search.appverid: MET150
 description: Para los proveedores de servicios administrados (MSP) que usan Microsoft 365 Lighthouse, consulte una lista de problemas conocidos de Lighthouse por área de características.
-ms.openlocfilehash: f40168a07e98ba7cfbafa9464ff4581278ff6227
-ms.sourcegitcommit: 87283bb02ca750286f7c069f811b788730ed5832
+ms.openlocfilehash: a3e2162b196d7870b3ff8b5c456e91e1136c24cc
+ms.sourcegitcommit: 181a0aff54842dcbafd834647c6e9ee47304d10f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/21/2022
-ms.locfileid: "68659025"
+ms.lasthandoff: 10/27/2022
+ms.locfileid: "68719045"
 ---
 # <a name="known-issues-with-microsoft-365-lighthouse"></a>Problemas conocidos con Microsoft 365 Lighthouse
 

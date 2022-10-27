@@ -10,6 +10,7 @@ ms.topic: article
 ms.service: microsoft-365-business
 ms.localizationpriority: medium
 ms.collection:
+- Tier3
 - scotvorg
 - M365-subscription-management
 - Adm_O365
@@ -20,12 +21,12 @@ ms.custom:
 search.appverid:
 - MET150
 description: Basic Mobility and Security le ayuda a proteger y administrar dispositivos móviles con directivas que controlan el acceso a documentos y correo electrónico de Microsoft 365 de la organización.
-ms.openlocfilehash: 44934f10173759c971bb1bc5052624ac5ad00b69
-ms.sourcegitcommit: 8d3c027592a638f411f87d89772dd3d39e92aab0
+ms.openlocfilehash: e52fd1cdab5c69badf68d5ffe17bc36196770c6c
+ms.sourcegitcommit: 181a0aff54842dcbafd834647c6e9ee47304d10f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/12/2022
-ms.locfileid: "68534949"
+ms.lasthandoff: 10/27/2022
+ms.locfileid: "68726847"
 ---
 # <a name="capabilities-of-basic-mobility-and-security"></a>Capacidades de Movilidad y seguridad básicas
 

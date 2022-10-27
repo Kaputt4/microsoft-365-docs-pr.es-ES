@@ -11,6 +11,7 @@ ms.topic: troubleshooting
 ms.service: microsoft-365-business
 ms.localizationpriority: medium
 ms.collection:
+- Tier1
 - scotvorg
 - M365-subscription-management
 - Adm_O365
@@ -22,12 +23,12 @@ ms.custom:
 - okr_smb
 - AdminSurgePortfolio
 ms.date: 05/01/2021
-ms.openlocfilehash: ac8b3cc23d668e80d8e331824fb355b030d9c8a3
-ms.sourcegitcommit: 0b7070ec119e00e0dafe030bbfbef0ae5c9afa19
+ms.openlocfilehash: 87a7338c9298fe6ad41130dbcaf99fcef8a7393f
+ms.sourcegitcommit: 181a0aff54842dcbafd834647c6e9ee47304d10f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/29/2022
-ms.locfileid: "68189151"
+ms.lasthandoff: 10/27/2022
+ms.locfileid: "68731555"
 ---
 # <a name="problems-with-your-microsoft-365-for-business-product-key"></a>¿Problemas con la clave de producto de Microsoft 365 para empresas?
 

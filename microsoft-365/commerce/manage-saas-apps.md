@@ -11,6 +11,7 @@ ms.topic: article
 ms.service: microsoft-365-business
 ms.localizationpriority: medium
 ms.collection:
+- Tier1
 - scotvorg
 - M365-subscription-management
 - Adm_O365
@@ -21,12 +22,12 @@ ms.custom:
 search.appverid: MET150
 description: Obtenga información sobre cómo activar y administrar aplicaciones de terceros en Centro de administración de Microsoft 365.
 ms.date: 04/15/2021
-ms.openlocfilehash: 5177898384fafa5ce3257f6f93fe998add0dbcd2
-ms.sourcegitcommit: e7dbe3b0d97cd8c64b5ae15f990d5e4b1dc9c464
+ms.openlocfilehash: 186f11435b2fadc123f5705c4929e26599ae10b2
+ms.sourcegitcommit: 181a0aff54842dcbafd834647c6e9ee47304d10f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/24/2022
-ms.locfileid: "68688544"
+ms.lasthandoff: 10/27/2022
+ms.locfileid: "68726164"
 ---
 # <a name="manage-third-party-app-subscriptions-for-your-organization"></a>Administración de suscripciones de aplicaciones de terceros para su organización
 
@@ -47,22 +48,160 @@ Los proveedores de aplicaciones venden sus aplicaciones a una tarifa plana o med
 - **Tarifa plana** : también denominada precios basados en el sitio, las aplicaciones tienen un precio mensual o anual. En la página de la aplicación, la cantidad de licencias aparece en Ilimitado.
 - **Licencias: las** aplicaciones tienen un precio por licencia. Los clientes asignan licencias a cada usuario de su organización
 
-## <a name="supported-regions"></a>Regiones admitidas
+## <a name="supported-geographic-locations"></a>Ubicaciones geográficas admitidas
 
-La compatibilidad con aplicaciones de terceros está disponible en estas regiones:
+Las ofertas de Marketplace comercial se pueden comprar en 141 zonas geográficas según lo definido por la dirección de facturación del cliente, y las transacciones se pueden completar en 17 monedas. En la tabla siguiente se muestra cada ubicación geográfica admitida, su [código alfa de dos dígitos ISO 3166](https://en.wikipedia.org/wiki/List_of_ISO_3166_country_codes) y la moneda asignada.
 
-- Argentina
-- Australia
-- Canadá
-- Chile
-- Francia
-- Alemania
-- Grecia
-- Puerto Rico
-- Sudáfrica
-- Reino Unido
-- Estados Unidos
-- Europa occidental
+Un CSP puede comprar una oferta en el Centro de partners en la moneda de su cliente final para que pueda facturarla en esa misma moneda. Para obtener más información sobre esto, consulte [estas preguntas más frecuentes](https://partner.microsoft.com/resources/detail/eu-efta-change-of-partner-billing-currency-faq-pdf).
+
+|   Nombre de país o región               |   ISO-2   |   Divisa</br>(Todos los tipos de oferta)  |    Divisa</br>(Solo ofertas de servicios de consultoría)    |
+|-------------------------------------|-----------|--------------|---------------------------------------------|
+| Afganistán                         | Af        | Usd          | AFN, EUR, USD |
+| Albania                             | AL        | Usd          | ALL, EUR, USD |
+| Argelia                             | Dz        | Usd          | DZD, EUR, USD |
+| Andorra                             | Anuncio        | EUR          | EUR, USD |
+| Angola                              | Ao        | Usd          | AOA, EUR, USD |
+| Argentina                           | Ar        | Usd          | ARS, EUR, USD |
+| Armenia                             | Soy        | Usd          | AMD, EUR, USD |
+| Australia                           | Au        | Aud          | AUD, EUR, USD |
+| Austria                             | AT        | EUR          | EUR, USD  |
+| Azerbaiyán                          | Az        | Usd          | AZN, EUR, USD |
+| Baréin                             | Bh        | Usd          | BHD, EUR, USD |
+| Bangladesh                          | Bd        | Usd          | BDT, EUR, USD |
+| Barbados                            | Bb        | Usd          | BBD, EUR, USD |
+| Belarús                             | Por        | Usd          | BYN, EUR, USD |
+| Bélgica                             | Ser        | EUR          | EUR, USD  |
+| Belice                              | Bz        | Usd          | BZD, EUR, USD |
+| Bermudas                             | Bm        | Usd          | BMD, EUR, USD |
+| Bolivia                             | Bo        | Usd          | BOB, EUR, USD |
+| Bosnia y Herzegovina              | Ba        | Usd          | BAM, EUR, USD |
+| Botsuana                            | Bw        | Usd          | BWP, EUR, USD |
+| Brasil                              | Br        | Brl\*        | BRL, EUR, USD |
+| Brunéi                              | Bn        | Usd          | BND, EUR, SGD, USD |
+| Bulgaria                            | BG        | EUR          | BGN, EUR, USD |
+| Cabo Verde                          | VC        | Usd          | CVE, EUR, USD |
+| Camerún                            | Cm        | Usd          | EUR, USD, XAF |
+| Canada                              | CA        | Cad          | CAD, EUR, USD |
+| Islas Caimán                      | Ky        | Usd          | EUR, KYD, USD |
+| Chile                               | Cl        | Usd          | CLP, EUR, USD |
+| China\**                            | Cn        | N/D          | N/D |
+| Colombia                            | Co        | Usd          | COP, EUR, USD |
+| Costa Rica                          | Cr        | Usd          | CRC, EUR, USD |
+| Côte d'Ivoire                       | CI        | Usd          | EUR, USD, XOF |
+| Croacia                             | HR        | EUR          | EUR, HRK, USD |
+| Curaçao                             | CW        | Usd          | ANG, EUR, USD |
+| Chipre                              | Cy        | EUR          | EUR, USD  |
+| Checostia                             | Cz        | EUR          | CZK, EUR, USD |
+| Dinamarca                             | DK        | DKK          | DKK, EUR, USD |
+| República Dominicana                  | Hacer        | Usd          | DOP, EUR, USD |
+| Ecuador                             | Ce        | Usd          | EUR, USD |
+| Egipto                               | Eg        | Usd          | EGP, EUR, USD |
+| El Salvador                         | SV        | Usd          | EUR, USD |
+| Estonia                             | EE        | EUR          | EUR, USD |
+| Etiopía                            | Et        | Usd          | ETB, EUR, USD |
+| Islas Feroe                       | Fo        | DKK          | DKK, EUR, USD |
+| Fiyi                                | Fj        | Aud          | AUD, EUR, FJD, USD |
+| Finlandia                             | FI        | EUR          | EUR, USD |
+| Francia                              | FR        | EUR          | EUR, USD |
+| Georgia                             | Ge        | Usd          | EUR, GEL, USD |
+| Alemania                             | DE        | EUR          | EUR, USD |
+| Ghana                               | Gh        | Usd          | EUR, GHS, USD |
+| Grecia                              | GR        | EUR          | EUR, USD |
+| Guatemala                           | Gt        | Usd          | EUR, GTQ, USD |
+| Honduras                            | Hn        | Usd          | EUR, HNL, USD |
+| RAE de Hong Kong                       | Hk        | Usd          | EUR, HKD, USD |
+| Hungría                             | Hu        | EUR          | EUR, HUF, USD |
+| Islandia                             | Es        | EUR          | EUR, ISK, USD |
+| India                               | EN        | Inr          | EUR, INR, USD |
+| Indonesia                           | Id.        | Usd          | EUR, IDR, USD |
+| Irak                                | IQ        | Usd          | EUR, IQD, USD |
+| Irlanda                             | IE        | EUR          | EUR, USD  |
+| Israel                              | Il        | Usd          | EUR, ILS, USD |
+| Italia                               | TI        | EUR          | EUR, USD |
+| Jamaica                             | Jm        | Usd          | EUR, JMD, USD |
+| Japón                               | Jp        | Jpy          | EUR, JPY, USD |
+| Jordania                              | Jo        | Usd          | EUR, JOD, USD |
+| Kazajistán                          | Kz        | Usd          | EUR, KZT, USD |
+| Kenia                               | Ke        | Usd          | EUR, KES, USD |
+| Corea del Sur                       | Kr        | Krw          | EUR, KRW, USD |
+| Kuwait                              | Kw        | Usd          | EUR, KWD, USD |
+| Kirguistán                          | Kg        | Usd          | EUR, KGS, USD |
+| Letonia                              | Lv        | EUR          | EUR, USD |
+| Líbano                             | Lb        | Usd          | EUR, LBP, USD |
+| Libia                               | Ly        | Usd          | EUR, LYD, USD |
+| Liechtenstein                       | Li        | EUR          | CHF, EUR, USD |
+| Lituania                           | Lt        | EUR          | EUR, USD |
+| Luxemburgo                          | Lu        | EUR          | EUR, USD |
+| Macao SAR                           | Mo        | Usd          | EUR, MOP, USD |
+| Malasia                            | Mi        | Usd          | EUR, MYR, USD |
+| Malta                               | Mt        | EUR          | EUR, USD |
+| Mauricio                           | Mu        | Usd          | EUR, MUR, USD |
+| México                              | MX        | Usd          | EUR, MXN, USD |
+| Moldova                             | Md        | Usd          | EUR, MDL, USD |
+| Mónaco                              | Mc        | EUR          | EUR, USD |
+| Mongolia                            | Mn        | Usd          | EUR, MNT, USD |
+| Montenegro                          | YO        | Usd          | EUR, USD |
+| Marruecos                             | Ma        | Usd          | EUR, MAD, USD |
+| Namibia                             | ND        | Usd          | EUR, NAD, USD, ZAR |
+| Nepal                               | Np        | Usd          | EUR, NPR, USD |
+| Países Bajos                         | NL        | EUR          | EUR, USD |
+| Nueva Zelanda                         | Nz        | Nzd          | EUR, NZD, USD |
+| Nicaragua                           | NI        | Usd          | EUR, NIO, USD |
+| Nigeria                             | Ng        | Usd          | EUR, NGN, USD |
+| Macedonia del Norte                     | Mk        | Usd          | EUR, MKD, USD |
+| Noruega                              | NO        | Nok          | EUR, NOK, USD |
+| Omán                                | Om        | Usd          | EUR, OMR, USD |
+| Pakistán                            | Pk        | Usd          | EUR, PKR, USD |
+| Autoridad Nacional Palestina               | Ps        | Usd          | EUR, ILS, JOD, USD |
+| Panamá                              | Pa        | Usd          | EUR, PAB, USD |
+| Paraguay                            | Py        | Usd          | EUR, PYG, USD |
+| Perú                                | Pe        | Usd          | EUR, PEN, USD |
+| Filipinas                         | PH        | Usd          | EUR, PHP, USD |
+| Polonia                              | PL        | EUR          | EUR, PLN, USD |
+| Portugal                            | Pt        | EUR          | EUR, USD |
+| Puerto Rico                         | Pr        | Usd          | EUR, USD |
+| Qatar                               | Qa        | Usd          | EUR, QAR, USD |
+| Rumanía                             | Ro        | EUR          | EUR, RON, USD |
+| Rusia                              | Ru        | Frotar          | EUR, RUB, USD |
+| Ruanda                              | Rw        | Usd          | EUR, RWF, USD |
+| San Cristóbal y Nieves               | Kn        | Usd          | EUR, USD, XCD |
+| Arabia Saudí                        | SA        | Usd          | EUR, SAR, USD |
+| Senegal                             | Sn        | Usd          | EUR, USD, XOF |
+| Serbia                              | RS        | Usd          | EUR, RSD, USD |
+| Singapur                           | Sg        | Usd          | BND, EUR, SGD, USD |
+| Eslovaquia                            | Sk        | EUR          | EUR, USD |
+| Eslovenia                            | SI        | EUR          | EUR, USD |
+| Sudáfrica                        | Za        | Usd          | EUR, USD, ZAR |
+| España                               | ES        | EUR          | EUR, USD |
+| Sri Lanka                           | Lk        | Usd          | EUR, LKR, USD |
+| Suecia                              | SE        | SEK          | EUR, SEK, USD  |
+| Suiza                         | Ch        | Chf          | CHF, EUR, USD |
+| Taiwán                              | Tw        | Twd          | EUR, TWD, USD |
+| Tayikistán                          | Tj        | Usd          | EUR, TJS, USD |
+| Tanzania                            | Tz        | Usd          | EUR, TZS, USD |
+| Tailandia                            | TH        | Usd          | EUR, THB, USD |
+| Trinidad y Tobago                 | TT        | Usd          | EUR, TTD, USD |
+| Túnez                             | TN        | Usd          | EUR, TND, USD |
+| Turquía                              | Tr        | Usd          | EUR, TRY, USD |
+| Turkmenistán                        | Tm        | Usd          | EUR, TMT, USD |
+| Uganda                              | Ug        | Usd          | EUR, UGX, USD |
+| Ucrania                             | Ua        | Usd          | EUR, RUB, UAH, USD |
+| Emiratos Árabes Unidos                | Ae        | Usd          | AED, EUR, USD |
+| Reino Unido                      | Gb        | GBP          | EUR, GBP, USD |
+| Estados Unidos                       | EE. UU.        | Usd          | EUR, USD |
+| Islas Vírgenes de EE. UU.                 | VI        | Usd          | EUR, USD|
+| Uruguay                             | Uy        | Usd          | EUR, USD, UYU |
+| Uzbekistán                          | Uz        | Usd          | EUR, USD, UZS |
+| Ciudad del Vaticano (Santa Sede)             | VA        | EUR          | EUR, USD |
+| Venezuela                           | VE        | Usd          | EUR, USD, VES |
+| Vietnam                             | Vn        | Usd          | EUR, USD, VND |
+| Yemen                               | Vosotros        | Usd          | EUR, USD, YER |
+| Zambia                              | Zm        | Usd          | EUR, USD, ZMW |
+| Zimbabue                            | Zw        | Usd          | EUR, USD |
+
+\* Para los clientes de Brasil, el marketplace comercial a través de proveedores de soluciones en la nube (CSP) usa USD.
+
+\** Solo imágenes de máquina virtual gratis y BYOL.
 
 ## <a name="activate-third-party-apps"></a>Activación de aplicaciones de terceros
 

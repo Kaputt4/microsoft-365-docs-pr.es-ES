@@ -18,12 +18,12 @@ search.appverid:
 - MET150
 description: Guía del usuario de prueba de soluciones de Microsoft Purview.
 ms.custom: trial-playbook
-ms.openlocfilehash: 8cbfe44551d1d6a38b5d84e05d00ef391127f388
-ms.sourcegitcommit: 3e1fc1919f64aff2e1ce83aa67bd415fe51604c1
+ms.openlocfilehash: 50be6466441a878acc3d93e75f75c701e894f224
+ms.sourcegitcommit: 181a0aff54842dcbafd834647c6e9ee47304d10f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/07/2022
-ms.locfileid: "68499822"
+ms.lasthandoff: 10/27/2022
+ms.locfileid: "68719148"
 ---
 # <a name="trial-user-guide-microsoft-purview-solutions"></a>Guía del usuario de prueba: Soluciones de Microsoft Purview
 
@@ -63,7 +63,7 @@ También puede ir directamente a las secciones clave de nuestra documentación m
 - [Filtrar la vista del panel](compliance-manager-setup.md#filtering-your-dashboard-view)
 - [Información sobre las acciones de mejora](compliance-manager-setup.md#improvement-actions-page)
 - [Comprender las evaluaciones](compliance-manager.md#assessments)
-- [Realice un examen rápido del entorno mediante el Analizador de configuración de cumplimiento de Microsoft para el Administrador de cumplimiento (versión preliminar)](compliance-manager-mcca.md)
+- [Realice una comprobación rápida del entorno mediante el Analizador de configuración de cumplimiento de Microsoft para el Administrador de cumplimiento (versión preliminar)](compliance-manager-mcca.md)
 
 :::image type="content" source="../media/compliance-trial/compliance-portal.png" alt-text="Administrador de cumplimiento: panel":::
 
@@ -282,7 +282,7 @@ Para obtener instrucciones paso a paso para activar la auditoría, consulte [Act
 
 ### <a name="step-3-recommended-enable-and-view-insider-risk-management-analytics-insights"></a>Paso 3 (recomendado): Habilitación y visualización de información de análisis de Insider Risk Management
 
-El análisis de Insider Risk Management le permite realizar una evaluación de posibles riesgos internos que pueden provocar un incidente de seguridad de datos en su organización sin configurar ninguna directiva de riesgo interno. Los resultados del análisis pueden tardar hasta 48 horas antes de que la información esté disponible como informes para su revisión. Estos resultados de evaluación se agregan y anonimizan, y ofrecen información de toda la organización, como el porcentaje de usuarios que realizan posibles actividades de filtración de datos confidenciales.
+El análisis de Insider Risk Management le permite realizar una evaluación de posibles riesgos internos que pueden provocar un incidente de seguridad de datos en su organización sin configurar ninguna directiva de riesgo interno. Los resultados de las pruebas de análisis pueden tardar hasta 48 horas en estar disponibles como informes para su revisión. Estos resultados de evaluación se agregan y anonimizan, y ofrecen información de toda la organización, como el porcentaje de usuarios que realizan posibles actividades de filtración de datos confidenciales.
 
 Para obtener más información sobre la información de análisis, consulte [Configuración de administración de riesgos de Insider: Análisis](insider-risk-management-settings.md#analytics) y consulte el vídeo análisis de [administración de riesgos](https://www.youtube.com/watch?v=5c0P5MCXNXk) internos para ayudarle a comprender su posición de riesgo interno y ayudarle a tomar medidas mediante la configuración de directivas adecuadas para identificar usuarios de riesgo.
 

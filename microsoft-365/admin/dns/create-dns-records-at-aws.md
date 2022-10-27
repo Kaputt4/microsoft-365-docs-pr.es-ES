@@ -10,6 +10,7 @@ ms.topic: article
 ms.service: microsoft-365-business
 ms.localizationpriority: medium
 ms.collection:
+- Tier2
 - scotvorg
 - M365-subscription-management
 - Adm_O365
@@ -22,12 +23,12 @@ search.appverid:
 - MOE150
 ms.assetid: 7a2efd75-0771-4897-ba7b-082fe5bfa9da
 description: Aprenda a comprobar su dominio y a configurar registros DNS para correo electrónico, Skype Empresarial Online y otros servicios en Amazon Web Services (AWS) para Microsoft.
-ms.openlocfilehash: 7450eabe057eb5abea67d7902d494b0e40bebf6e
-ms.sourcegitcommit: 0b7070ec119e00e0dafe030bbfbef0ae5c9afa19
+ms.openlocfilehash: 9938168c3fb29e4d6bd862414f309c8b58db1223
+ms.sourcegitcommit: 181a0aff54842dcbafd834647c6e9ee47304d10f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/29/2022
-ms.locfileid: "68172079"
+ms.lasthandoff: 10/27/2022
+ms.locfileid: "68719170"
 ---
 # <a name="connect-your-dns-records-at-amazon-web-services-aws-to-microsoft-365"></a>Conexión de los registros DNS en Amazon Web Services (AWS) a Microsoft 365
 

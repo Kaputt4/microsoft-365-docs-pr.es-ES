@@ -10,6 +10,7 @@ ms.topic: article
 ms.service: microsoft-365-lighthouse
 ms.localizationpriority: medium
 ms.collection:
+- Tier1
 - scotvorg
 - M365-subscription-management
 - Adm_O365
@@ -19,12 +20,12 @@ ms.custom:
 - intro-get-started
 search.appverid: MET150
 description: Para los proveedores de servicios administrados (MSP), obtenga información sobre cómo registrarse para Microsoft 365 Lighthouse.
-ms.openlocfilehash: 6d26b570a9576daa5a76871bab06cb797e9ac914
-ms.sourcegitcommit: 87283bb02ca750286f7c069f811b788730ed5832
+ms.openlocfilehash: c0c7df77f02fb517ec2ae5ba75e912ab74a997e0
+ms.sourcegitcommit: 181a0aff54842dcbafd834647c6e9ee47304d10f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/21/2022
-ms.locfileid: "68659727"
+ms.lasthandoff: 10/27/2022
+ms.locfileid: "68731973"
 ---
 # <a name="sign-up-for-microsoft-365-lighthouse"></a>Regístrese para obtener Microsoft 365 Lighthouse
 

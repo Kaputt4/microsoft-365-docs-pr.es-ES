@@ -11,6 +11,7 @@ ms.topic: article
 ms.service: microsoft-365-business
 ms.localizationpriority: high
 ms.collection:
+- Tier1
 - scotvorg
 - M365-subscription-management
 - Adm_O365
@@ -25,12 +26,12 @@ ms.custom:
 search.appverid: MET150
 description: Compre productos o servicios empresariales de Microsoft con un método de pago existente o agregue uno nuevo en el Centro de administración de Microsoft 365.
 ms.date: 06/01/2022
-ms.openlocfilehash: 695c0f3ee6b71db303508165659d38875b759cbb
-ms.sourcegitcommit: 0b7070ec119e00e0dafe030bbfbef0ae5c9afa19
+ms.openlocfilehash: a5df1a1786ff0c45995ebcba3bb61c09a9d882fa
+ms.sourcegitcommit: 181a0aff54842dcbafd834647c6e9ee47304d10f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/29/2022
-ms.locfileid: "68163544"
+ms.lasthandoff: 10/27/2022
+ms.locfileid: "68718620"
 ---
 # <a name="manage-payment-methods"></a>Administrar métodos de pago
 

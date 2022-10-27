@@ -10,6 +10,7 @@ ms.topic: article
 ms.service: microsoft-365-business
 ms.localizationpriority: medium
 ms.collection:
+- Tier1
 - scotvorg
 - M365-subscription-management
 - Adm_O365
@@ -21,12 +22,12 @@ ms.custom:
 search.appverid: MET150
 description: Obtenga información sobre cómo asignarse a usted o a otros usuarios los roles de cuenta de facturación necesarios para comprar y editar productos en el Centro de administración de Microsoft 365.
 ms.date: 05/24/2022
-ms.openlocfilehash: 00d7de8927ed2f2b5574d4282ed762d6e5812170
-ms.sourcegitcommit: 0b7070ec119e00e0dafe030bbfbef0ae5c9afa19
+ms.openlocfilehash: a81315785a8bb71259764f574de990f46a1d6cfc
+ms.sourcegitcommit: 181a0aff54842dcbafd834647c6e9ee47304d10f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/29/2022
-ms.locfileid: "68190009"
+ms.lasthandoff: 10/27/2022
+ms.locfileid: "68718356"
 ---
 # <a name="no-billing-account-found-for-buying-products"></a>No se encontró ninguna cuenta de facturación para comprar productos
 

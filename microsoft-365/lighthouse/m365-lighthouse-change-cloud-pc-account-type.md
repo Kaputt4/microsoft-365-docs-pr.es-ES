@@ -10,6 +10,7 @@ ms.topic: article
 ms.service: microsoft-365-lighthouse
 ms.localizationpriority: medium
 ms.collection:
+- Tier2
 - scotvorg
 - M365-subscription-management
 - Adm_O365
@@ -18,12 +19,12 @@ ms.custom:
 - M365-Lighthouse
 search.appverid: MET150
 description: En el caso de los proveedores de servicios administrados (MSP) que usan Microsoft 365 Lighthouse, obtenga información sobre cómo establecer o cambiar un tipo de cuenta de pc en la nube de Windows 365 Business.
-ms.openlocfilehash: 75446c284a61672d08d96e866278c9abfc567e28
-ms.sourcegitcommit: 87283bb02ca750286f7c069f811b788730ed5832
+ms.openlocfilehash: 8220027f771dbe4cdc3e08f040d281f71a84537b
+ms.sourcegitcommit: 181a0aff54842dcbafd834647c6e9ee47304d10f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/21/2022
-ms.locfileid: "68661076"
+ms.lasthandoff: 10/27/2022
+ms.locfileid: "68732083"
 ---
 # <a name="change-a-windows-365-business-cloud-pc-account-type-in-microsoft-365-lighthouse"></a>Cambiar un tipo de cuenta de pc en la nube de Windows 365 Business en Microsoft 365 Lighthouse
 

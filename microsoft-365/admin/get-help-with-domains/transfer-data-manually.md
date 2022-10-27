@@ -10,6 +10,7 @@ ms.topic: article
 ms.service: microsoft-365-business
 ms.localizationpriority: medium
 ms.collection:
+- Tier2
 - scotvorg
 - M365-subscription-management
 - Adm_O365
@@ -19,12 +20,12 @@ search.appverid:
 - MOE150
 ms.assetid: 7dc5d983-84b2-4802-bef0-602ae1780a42
 description: Busque cómo transferir datos manualmente entre dos cuentas de Microsoft 365 al cambiar el nombre del plan o de la empresa, o combinar varias suscripciones en una.
-ms.openlocfilehash: 742e15ed2b99d059898596d0dc99255117a0ca0f
-ms.sourcegitcommit: 0b7070ec119e00e0dafe030bbfbef0ae5c9afa19
+ms.openlocfilehash: feb2cafee627a44dafc7ee8621c1b2910ddd7470
+ms.sourcegitcommit: 181a0aff54842dcbafd834647c6e9ee47304d10f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/29/2022
-ms.locfileid: "68197951"
+ms.lasthandoff: 10/27/2022
+ms.locfileid: "68718158"
 ---
 # <a name="transfer-data-manually-between-two-accounts"></a>Transferencia manual de datos entre dos cuentas
 

@@ -19,21 +19,23 @@ ms.collection:
 search.appverid:
 - MET150
 - MOE150
-ms.openlocfilehash: 0fbe9108f6f0f33ecaad3d44354c6c85f66c9195
-ms.sourcegitcommit: 50da6f1f6ef2274c17ed9729e7ad84395b0a9be2
+ms.openlocfilehash: 3a722d2310b0144501af390f05983ed2764edbf3
+ms.sourcegitcommit: 181a0aff54842dcbafd834647c6e9ee47304d10f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/08/2022
-ms.locfileid: "68506662"
+ms.lasthandoff: 10/27/2022
+ms.locfileid: "68732149"
 ---
 # <a name="use-communication-compliance-with-siem-solutions"></a>Usar el cumplimiento de comunicaciones con soluciones de SIEM
 
 >[!IMPORTANT]
->Cumplimiento de comunicaciones de Microsoft Purview proporciona las herramientas para ayudar a las organizaciones a detectar infracciones de cumplimiento normativo (por ejemplo, SEC o FINRA), como información confidencial o confidencial, hostigamiento o amenazante del lenguaje y uso compartido de contenido para adultos. Creados con privacidad por diseño, los nombres de usuario se seudonimizan de forma predeterminada, los controles de acceso basados en roles se integran, los investigadores son admitidos por un administrador y los registros de auditoría están en vigor para garantizar la privacidad del nivel de usuario.
+>Cumplimiento de comunicaciones de Microsoft Purview proporciona las herramientas para ayudar a las organizaciones a detectar infracciones de cumplimiento normativo (por ejemplo, SEC o FINRA), como información confidencial o confidencial, hostigamiento o amenazante del lenguaje y uso compartido de contenido para adultos. Creados con privacidad por diseño, los nombres de usuario se seudonimizan de forma predeterminada, los controles de acceso basados en roles están integrados, los investigadores son admitidos por un administrador y los registros de auditoría están en su lugar para ayudar a garantizar la privacidad del nivel de usuario.
 
-[El cumplimiento de comunicaciones](/microsoft-365/compliance/communication-compliance) es una solución de riesgo interno en Microsoft Purview que ayuda a minimizar los riesgos de comunicación al ayudarle a detectar, capturar y actuar sobre mensajes inadecuados en su organización. Las soluciones de administración de eventos e información de seguridad (SIEM), como [Microsoft Sentinel](https://azure.microsoft.com/services/azure-sentinel) o [Splunk](https://www.splunk.com/) , se usan normalmente para agregar y realizar un seguimiento de las amenazas dentro de una organización.
+[El cumplimiento de comunicaciones](/microsoft-365/compliance/communication-compliance) es una solución de riesgo interno en Microsoft Purview que ayuda a minimizar los riesgos de comunicación al ayudarle a detectar, capturar y actuar sobre mensajes potencialmente inadecuados en su organización. Las soluciones de administración de eventos e información de seguridad (SIEM), como [Microsoft Sentinel](https://azure.microsoft.com/services/azure-sentinel) o [Splunk](https://www.splunk.com/) , se usan normalmente para agregar y realizar un seguimiento de las amenazas dentro de una organización.
 
-Una necesidad común para las organizaciones es integrar las alertas de cumplimiento de comunicaciones y estas soluciones SIEM. Con esta integración, las organizaciones pueden ver las alertas de cumplimiento de comunicaciones en su solución SIEM y, a continuación, corregir las alertas dentro del flujo de trabajo de cumplimiento de comunicaciones y la experiencia del usuario. Por ejemplo, un empleado envía un mensaje ofensivo a otro empleado y ese mensaje lo detecta una directiva de cumplimiento de comunicaciones para contenido inadecuado. La solución de cumplimiento de comunicaciones realiza un seguimiento de estos eventos en la auditoría de Microsoft 365 (también conocida como "registro de auditoría unificado") y se importa en la solución SIEM. A continuación, se desencadena una alerta en la solución SIEM para la organización a partir de eventos incluidos en La auditoría de Microsoft 365 que están asociados a las alertas de cumplimiento de comunicaciones. Los investigadores reciben una notificación de la alerta en las soluciones SIEM y, a continuación, investigan y corrigen la alerta en la solución de cumplimiento de comunicaciones.
+Una necesidad común de las organizaciones es integrar las alertas de cumplimiento de comunicaciones y sus soluciones SIEM. Con esta integración, las organizaciones pueden ver las alertas de cumplimiento de comunicaciones en su solución SIEM y, a continuación, corregir las alertas dentro del flujo de trabajo de cumplimiento de comunicaciones y la experiencia del usuario. 
+
+Por ejemplo, un empleado envía un mensaje ofensivo a otro empleado y ese mensaje lo detecta una directiva de cumplimiento de comunicaciones para contenido potencialmente inadecuado. La solución de cumplimiento de comunicaciones realiza un seguimiento de eventos como este en la auditoría de Microsoft 365 (también conocido como "registro de auditoría unificado") y, a continuación, se importa en la solución SIEM. Las alertas desencadenadas en la solución SIEM que se incluyen en la auditoría de Microsoft 365 se asocian a las alertas de cumplimiento de comunicaciones. A los investigadores se les notifican estas alertas en su solución SIEM y, a continuación, pueden investigar y corregir las alertas correspondientes en el panel de cumplimiento de comunicaciones.
 
 [!INCLUDE [purview-preview](../includes/purview-preview.md)]
 
@@ -46,10 +48,10 @@ Todas las coincidencias de directivas de cumplimiento de comunicaciones se captu
 ```xml
 RunspaceId: 5c7bc9b0-7672-4091-a112-0635bd5f7732
 RecordType: ComplianceSupervisionExchange
-CreationDate: 7/7/2021 5:30:11 AM
+CreationDate: 7/7/2022 5:30:11 AM
 UserIds: user1@contoso.onmicrosoft.com
 Operations: SupervisionRuleMatch
-AuditData: {"CreationTime":"2021-07-07T05:30:11","Id":"44e98a7e-57fd-4f89-79b8-08d941084a35","Operation":"SupervisionRuleMatch","OrganizationId":"338397e6\-697e-4dbe-a66b-2ea3497ef15c","RecordType":68,"ResultStatus":"{\\"ItemClass\\":\\"IPM.Note\\",\\"CcsiResults\\":\\"\\"}","UserKey":"SupervisionStoreDeliveryAgent","UserType":0,"Version":1,"Workload":"Exchange","ObjectId":"\<HE1P190MB04600526C0524C75E5750C5AC61A9@HE1P190MB0460.EURP190.PROD.OUTLOOK.COM\>","UserId":"user1@contoso.onmicrosoft.com","IsPolicyHit":true,"SRPolicyMatchDetails":{"SRPolicyId":"53be0bf4-75ee-4315-b65d-17d63bdd53ae","SRPolicyName":"Adult images","SRRuleMatchDetails":\[\]}}
+AuditData: {"CreationTime":"2022-07-07T05:30:11","Id":"44e98a7e-57fd-4f89-79b8-08d941084a35","Operation":"SupervisionRuleMatch","OrganizationId":"338397e6\-697e-4dbe-a66b-2ea3497ef15c","RecordType":68,"ResultStatus":"{\\"ItemClass\\":\\"IPM.Note\\",\\"CcsiResults\\":\\"\\"}","UserKey":"SupervisionStoreDeliveryAgent","UserType":0,"Version":1,"Workload":"Exchange","ObjectId":"\<HE1P190MB04600526C0524C75E5750C5AC61A9@HE1P190MB0460.EURP190.PROD.OUTLOOK.COM\>","UserId":"user1@contoso.onmicrosoft.com","IsPolicyHit":true,"SRPolicyMatchDetails":{"SRPolicyId":"53be0bf4-75ee-4315-b65d-17d63bdd53ae","SRPolicyName":"Adult images","SRRuleMatchDetails":\[\]}}
 ResultIndex: 24
 ResultCount: 48
 Identity: 44e98a7e-57fd-4f89-79b8-08d941084a35
@@ -62,10 +64,10 @@ ObjectState: Unchanged
 ```xml
 RunspaceId: 5c7bc9b0-7672-4091-a112-0635bd5f7732
 RecordType: ComplianceSupervisionExchange
-CreationDate: 7/6/2021 9:50:12 PM
+CreationDate: 7/6/2022 9:50:12 PM
 UserIds: user2@contoso.onmicrosoft.com
 Operations: SupervisionRuleMatch
-AuditData: {"CreationTime":"2021-07-06T21:50:12","Id":"5c61aae5-26fc-4c8e-0791-08d940c8086f","Operation":"SupervisionRuleMatch","OrganizationId":"338397e6\-697e-4dbe-a66b-2ea3497ef15c","RecordType":68,"ResultStatus":"{\\"ItemClass\\":\\"IPM.Note\\",\\"CcsiResults\\":\\"public\\"}","UserKey":"SupervisionStoreDeliveryAgent","UserType":0,"Version":1,"Workload":"Exchange","ObjectId":"\<20210706174831.24375086.807067@sailthru.com\>","UserId":"user2@contoso.onmicrosoft.com","IsPolicyHit":true,"SRPolicyMatchDetails":{"SRPolicyId":"a97cf128-c0fc-42a1-88e3-fd3b88af9941","SRPolicyName":"Insiders","SRRuleMatchDetails":\[{"SRCategoryName":"New insiders lexicon"}\]}}
+AuditData: {"CreationTime":"2022-07-06T21:50:12","Id":"5c61aae5-26fc-4c8e-0791-08d940c8086f","Operation":"SupervisionRuleMatch","OrganizationId":"338397e6\-697e-4dbe-a66b-2ea3497ef15c","RecordType":68,"ResultStatus":"{\\"ItemClass\\":\\"IPM.Note\\",\\"CcsiResults\\":\\"public\\"}","UserKey":"SupervisionStoreDeliveryAgent","UserType":0,"Version":1,"Workload":"Exchange","ObjectId":"\<20210706174831.24375086.807067@sailthru.com\>","UserId":"user2@contoso.onmicrosoft.com","IsPolicyHit":true,"SRPolicyMatchDetails":{"SRPolicyId":"a97cf128-c0fc-42a1-88e3-fd3b88af9941","SRPolicyName":"Insiders","SRRuleMatchDetails":\[{"SRCategoryName":"New insiders lexicon"}\]}}
 ResultIndex: 46
 ResultCount: 48
 Identity: 5c61aae5-26fc-4c8e-0791-08d940c8086f
@@ -112,8 +114,8 @@ En la tabla siguiente se muestran resultados de búsqueda de ejemplo para difere
 
 | Tipos de directivas | Resultados de búsqueda de ejemplo |
 | :------------------ | :--------------------------------------- |
-| Directiva que detecta una lista personalizada de palabras clave de tipo de información confidencial | { <br> CreationTime: 2021-09-17T16:29:57 <br> Identificador: 4b9ce23d-ee60-4f66-f38d-08d979f8631f <br> IsPolicyHit: true <br> Idobjeto: <CY1PR05MB27158B96AF7F3AFE62E1F762CFDD9@CY1PR05MB2715.namprd05.prod.outlook.com> <br> Operación: SupervisiónRuleMatch <br> OrganizationId: d6a06676-95e8-4632-b949-44bc00f0793f <br> RecordType: 68 <br> ResultStatus: {"ItemClass":"IPM. Nota","CcsiResults":"leak"} <br> SRPolicyMatchDetails: { [+] } <br> UserId: user1@contoso.OnMicrosoft.com <br> UserKey: SupervisionStoreDeliveryAgent <br> UserType: 0 <br> Versión: 1 <br> Carga de trabajo: Exchange <br> } |
-| Directiva que detecta un lenguaje inadecuado | { <br> CreationTime: 2021-09-17T23:44:35 <br> Identificador: e0ef6f54-9a52-4e4c-9584-08d97a351ad0 <br> IsPolicyHit: true <br> Idobjeto: <BN6PR05MB3571AD9FBB85C4E12C1F66B4CCDD9@BN6PR05MB3571.namprd05.prod.outlook.com> <br> Operación: SupervisiónRuleMatch <br> OrganizationId: d6a06676-95e8-4632-b949-44bc00f0793f <br> RecordType: 68 <br> ResultStatus: {"ItemClass":"IPM. Yammer.Message","CcsiResults":""} <br> SRPolicyMatchDetails: { [+] } <br> UserId: user1@contoso.com <br> UserKey: SupervisionStoreDeliveryAgent <br> UserType: 0 <br> Versión: 1 <br> }  |
+| Directiva que detecta una lista personalizada de palabras clave de tipo de información confidencial | { <br> CreationTime: 2022-09-17T16:29:57 <br> Identificador: 4b9ce23d-ee60-4f66-f38d-08d979f8631f <br> IsPolicyHit: true <br> Idobjeto: <CY1PR05MB27158B96AF7F3AFE62E1F762CFDD9@CY1PR05MB2715.namprd05.prod.outlook.com> <br> Operación: SupervisiónRuleMatch <br> OrganizationId: d6a06676-95e8-4632-b949-44bc00f0793f <br> RecordType: 68 <br> ResultStatus: {"ItemClass":"IPM. Nota","CcsiResults":"leak"} <br> SRPolicyMatchDetails: { [+] } <br> UserId: user1@contoso.OnMicrosoft.com <br> UserKey: SupervisionStoreDeliveryAgent <br> UserType: 0 <br> Versión: 1 <br> Carga de trabajo: Exchange <br> } |
+| Directiva que detecta lenguaje potencialmente inadecuado | { <br> CreationTime: 2022-09-17T23:44:35 <br> Identificador: e0ef6f54-9a52-4e4c-9584-08d97a351ad0 <br> IsPolicyHit: true <br> Idobjeto: <BN6PR05MB3571AD9FBB85C4E12C1F66B4CCDD9@BN6PR05MB3571.namprd05.prod.outlook.com> <br> Operación: SupervisiónRuleMatch <br> OrganizationId: d6a06676-95e8-4632-b949-44bc00f0793f <br> RecordType: 68 <br> ResultStatus: {"ItemClass":"IPM. Yammer.Message","CcsiResults":""} <br> SRPolicyMatchDetails: { [+] } <br> UserId: user1@contoso.com <br> UserKey: SupervisionStoreDeliveryAgent <br> UserType: 0 <br> Versión: 1 <br> }  |
 
 ## <a name="configure-communication-compliance-with-other-siem-solutions"></a>Configuración del cumplimiento de las comunicaciones con otras soluciones SIEM
 

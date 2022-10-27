@@ -10,20 +10,21 @@ ms.topic: article
 ms.service: O365-seccomp
 ms.localizationpriority: medium
 ms.collection:
-- M365-security-compliance
+- purview-compliance
 - m365solution-compliancemanager
 - m365initiative-compliance
+- tier1
 ms.custom: admindeeplinkCOMPLIANCE
 search.appverid:
 - MOE150
 - MET150
 description: Use la guía de inicio rápido del Administrador de cumplimiento para ayudarle a lo largo de su recorrido de comprensión, configuración y uso del Administrador de cumplimiento.
-ms.openlocfilehash: 99031b0d93fef74f788f9a42b906dffc58545014
-ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
+ms.openlocfilehash: 2913eed19753ed867321f2fe6fbb2a678a82af63
+ms.sourcegitcommit: 181a0aff54842dcbafd834647c6e9ee47304d10f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/06/2022
-ms.locfileid: "66638728"
+ms.lasthandoff: 10/27/2022
+ms.locfileid: "68725241"
 ---
 # <a name="compliance-manager-quickstart"></a>Inicio rápido del Administrador de cumplimiento
 
@@ -32,6 +33,8 @@ ms.locfileid: "66638728"
 El Administrador de cumplimiento proporciona datos inteligentes y accionables en su primera visita. El Administrador de cumplimiento también tiene funcionalidades avanzadas para escalar el cumplimiento cuando esté listo. Las evaluaciones disponibles dependen de su contrato de licencia; [más información](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance).
 
 Tanto si viene al Administrador de cumplimiento por primera vez como si está listo para usar algunas de las características avanzadas, esta guía puede ayudarle a lo largo de su recorrido.
+
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
 
 ## <a name="first-visit-get-to-know-compliance-manager"></a>Primera visita: conocer al Administrador de cumplimiento
 
@@ -47,7 +50,7 @@ Nuestra página de [información general del Administrador de cumplimiento](comp
 - [Filtrar la vista del panel](compliance-manager-setup.md#filtering-your-dashboard-view)
 - [Información sobre las acciones de mejora](compliance-manager-setup.md#improvement-actions-page)
 - [Comprender las evaluaciones](compliance-manager.md#assessments)
-- [Realizar un examen rápido del entorno mediante el Analizador de configuración para Microsoft Purview](compliance-manager-mcca.md)
+- [Realizar una comprobación rápida del entorno mediante el Analizador de configuración para Microsoft Purview](compliance-manager-mcca.md)
 
 ## <a name="ramping-up-configure-compliance-manager-to-manage-your-compliance-activities"></a>Aumento: configuración del Administrador de cumplimiento para administrar las actividades de cumplimiento
 

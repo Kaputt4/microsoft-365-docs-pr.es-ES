@@ -17,12 +17,12 @@ ms.collection:
 ms.topic: conceptual
 ms.subservice: mde
 search.appverid: met150
-ms.openlocfilehash: 549e1b539bb7683b1b9ff81f6d467449908b7177
-ms.sourcegitcommit: 0d8fb571024f134d7480fe14cffc5e31a687d356
+ms.openlocfilehash: 12cc6483fdd88a3f9e9213578b21a7eee4499dfe
+ms.sourcegitcommit: 181a0aff54842dcbafd834647c6e9ee47304d10f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/20/2022
-ms.locfileid: "68620379"
+ms.lasthandoff: 10/27/2022
+ms.locfileid: "68725175"
 ---
 # <a name="investigate-entities-on-devices-using-live-response"></a>Investigación de entidades en dispositivos mediante respuesta dinámica
 
@@ -85,14 +85,14 @@ Antes de iniciar una sesión en un dispositivo, asegúrese de cumplir los siguie
   Tendrá que habilitar la funcionalidad de respuesta en vivo en la página [Configuración de características avanzadas](advanced-features.md) .
 
   > [!NOTE]
-  > Solo los usuarios con roles de administrador global o de seguridad pueden editar esta configuración.
+  > Solo los administradores y los usuarios que tienen permisos de "Administrar configuración del portal" pueden habilitar la respuesta en directo. 
   >
   > La investigación automatizada debe estar habilitada en la [configuración características avanzadas](advanced-features.md) antes de habilitar la respuesta en directo.
 
 - **Habilite la respuesta en vivo para los servidores desde la página de configuración avanzada** (recomendado).
 
   > [!NOTE]
-  > Solo los usuarios con roles de administrador global o de seguridad pueden editar esta configuración.
+  > Solo los administradores y los usuarios que tienen permisos de "Administrar configuración del portal" pueden habilitar la respuesta en directo.
 
 - **Asegúrese de que el dispositivo tiene asignado un nivel de corrección de Automation**.
 

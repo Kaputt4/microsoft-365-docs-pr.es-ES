@@ -10,6 +10,7 @@ ms.topic: article
 ms.service: microsoft-365-lighthouse
 ms.localizationpriority: medium
 ms.collection:
+- Tier1
 - scotvorg
 - M365-subscription-management
 - Adm_O365
@@ -18,12 +19,12 @@ ms.custom:
 - M365-Lighthouse
 search.appverid: MET150
 description: En el caso de los proveedores de servicios administrados (MSP) que usan Microsoft 365 Lighthouse, obtenga información sobre cómo administrar la autenticación multifactor.
-ms.openlocfilehash: 2e243c19cbc01757eeb68b508fe72284c99ac456
-ms.sourcegitcommit: 87283bb02ca750286f7c069f811b788730ed5832
+ms.openlocfilehash: 0be0d71aa727c07f78733944f73160ebc36a7e69
+ms.sourcegitcommit: 181a0aff54842dcbafd834647c6e9ee47304d10f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/21/2022
-ms.locfileid: "68663439"
+ms.lasthandoff: 10/27/2022
+ms.locfileid: "68725120"
 ---
 # <a name="manage-multifactor-authentication-in-microsoft-365-lighthouse"></a>Administración de la autenticación multifactor en Microsoft 365 Lighthouse
 

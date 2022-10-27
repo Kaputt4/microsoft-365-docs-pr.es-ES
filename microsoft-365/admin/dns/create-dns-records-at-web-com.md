@@ -10,6 +10,7 @@ ms.topic: article
 ms.service: microsoft-365-business
 ms.localizationpriority: medium
 ms.collection:
+- Tier2
 - scotvorg
 - M365-subscription-management
 - Adm_O365
@@ -22,12 +23,12 @@ search.appverid:
 - MOE150
 ms.assetid: 84acd4fc-6eec-4d00-8bed-568f036ae2af
 description: Obtenga información sobre cómo comprobar su dominio y configurar registros DNS para correo electrónico, Skype Empresarial En línea y otros servicios en web.com para Microsoft.
-ms.openlocfilehash: 06b1374916bcf2105db09715b125d84992bac069
-ms.sourcegitcommit: 0b7070ec119e00e0dafe030bbfbef0ae5c9afa19
+ms.openlocfilehash: 72aec638fbd3e73aa7df15608ed91f7d7f3de962
+ms.sourcegitcommit: 181a0aff54842dcbafd834647c6e9ee47304d10f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/29/2022
-ms.locfileid: "68198105"
+ms.lasthandoff: 10/27/2022
+ms.locfileid: "68726781"
 ---
 # <a name="connect-your-dns-records-at-webcom-to-microsoft-365"></a>Conexión de los registros DNS en web.com a Microsoft 365
 

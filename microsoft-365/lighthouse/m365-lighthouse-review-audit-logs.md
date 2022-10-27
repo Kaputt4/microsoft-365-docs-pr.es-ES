@@ -10,6 +10,7 @@ ms.topic: article
 ms.service: microsoft-365-lighthouse
 ms.localizationpriority: medium
 ms.collection:
+- Tier1
 - scotvorg
 - M365-subscription-management
 - Adm_O365
@@ -18,12 +19,12 @@ ms.custom:
 - M365-Lighthouse
 search.appverid: MET150
 description: En el caso de los proveedores de servicios administrados (MSP) que usan Microsoft 365 Lighthouse, obtenga información sobre cómo revisar los registros de auditoría.
-ms.openlocfilehash: bf31aa45add04668379990c2d4fb166304223cb1
-ms.sourcegitcommit: 87283bb02ca750286f7c069f811b788730ed5832
+ms.openlocfilehash: e6c0d61bf57310c86faf03fb64c77592adaf3d07
+ms.sourcegitcommit: 181a0aff54842dcbafd834647c6e9ee47304d10f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/21/2022
-ms.locfileid: "68658959"
+ms.lasthandoff: 10/27/2022
+ms.locfileid: "68719060"
 ---
 # <a name="review-audit-logs-in-microsoft-365-lighthouse"></a>Revisión de los registros de auditoría en Microsoft 365 Lighthouse
 

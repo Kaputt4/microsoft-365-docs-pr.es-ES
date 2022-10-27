@@ -10,6 +10,7 @@ ms.topic: article
 ms.service: microsoft-365-business
 ms.localizationpriority: medium
 ms.collection:
+- Tier3
 - scotvorg
 - M365-subscription-management
 - Adm_O365
@@ -23,12 +24,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Obtenga información sobre cómo usar el conmutador de inquilinos y las vistas multiinquilino que le ofrecen la capacidad de administrar inquilinos desde una sola ubicación.
-ms.openlocfilehash: 3702cc5cc4e9d2ab6babf666c91b86675d01cb8c
-ms.sourcegitcommit: 0b7070ec119e00e0dafe030bbfbef0ae5c9afa19
+ms.openlocfilehash: 2230ddb6a68c6779a804a8ae3a23d6180ecb54d3
+ms.sourcegitcommit: 181a0aff54842dcbafd834647c6e9ee47304d10f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/29/2022
-ms.locfileid: "68188425"
+ms.lasthandoff: 10/27/2022
+ms.locfileid: "68719632"
 ---
 # <a name="multi-tenant-management-for-microsoft-365-partner-admins"></a>Administración multiinquilino para administradores de asociados de Microsoft 365
 

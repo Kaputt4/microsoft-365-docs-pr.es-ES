@@ -8,14 +8,15 @@ ms.topic: article
 ms.service: bookings
 ms.localizationpriority: medium
 ms.collection:
+- Tier1
 - scotvorg
 description: Cómo agregar un identificador de campaña a una dirección URL de página de Bookings
-ms.openlocfilehash: dfa7d057b7d3d3ae135d48832d8c9595a0bf06a3
-ms.sourcegitcommit: 0b7070ec119e00e0dafe030bbfbef0ae5c9afa19
+ms.openlocfilehash: 6e88fb0e75aa3f8d79c02379f57cd420e80619b6
+ms.sourcegitcommit: 181a0aff54842dcbafd834647c6e9ee47304d10f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/29/2022
-ms.locfileid: "68172717"
+ms.lasthandoff: 10/27/2022
+ms.locfileid: "68726648"
 ---
 # <a name="add-a-marketing-campaign-id-to-a-bookings-page-url"></a>Agregar un identificador de campaña de marketing a una dirección URL de página de Bookings
 

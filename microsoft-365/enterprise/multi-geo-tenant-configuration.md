@@ -15,12 +15,12 @@ f1.keywords:
 ms.custom: seo-marvel-apr2020
 ms.localizationpriority: medium
 description: En este artículo, aprenderá a agregar ubicaciones de satélite y a configurar su espacio empresarial de Microsoft 365 Multi-Geo
-ms.openlocfilehash: 3c8071616aa754888aa6cab9bc5a0373552497e5
-ms.sourcegitcommit: 9b133379196da2b3a4bb311b07ff274f43780f68
+ms.openlocfilehash: 72de636c8b6641047160c4f8dd95c10bdff2c3f5
+ms.sourcegitcommit: 181a0aff54842dcbafd834647c6e9ee47304d10f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/14/2022
-ms.locfileid: "67687249"
+ms.lasthandoff: 10/27/2022
+ms.locfileid: "68726472"
 ---
 # <a name="microsoft-365-multi-geo-tenant-configuration"></a>Configuración de inquilino de Microsoft 365 Multi-Geo
 
@@ -30,7 +30,7 @@ Antes de configurar su inquilino de Microsoft 365 Multi-Geo, asegúrese de haber
 
 Para usar Microsoft 365 Multi-Geo, necesita el plan _Capacidades multigeográficas en Microsoft 365_. Trabaje con el equipo de cuentas para agregar este plan a su espacio empresarial. Su equipo de cuentas le pondrá en contacto con el especialista en licencias adecuado y configurará el espacio empresarial.
 
-Tenga en cuenta que el plan _Capacidades multigeográficas en Microsoft 365_ es un plan de servicio de nivel de usuario. Necesita una licencia para cada usuario que quiera hospedar en una ubicación por satélite. Puede agregar más licencias a medida que agregue usuarios a las ubicaciones por satélite.
+Note that the _Multi-Geo Capabilities in Microsoft 365_ plan are a user-level service plan. You need a license for each user that you want to host in a satellite location. You can add more licenses over time as you add users in satellite locations.
 
 Cuando haya aprovisionado el espacio empresarial con el plan _Capacidades multigeográficas en Microsoft 365_, la pestaña **Ubicaciones geográficas** estará disponible en los centros de administración de OneDrive y SharePoint.
 
@@ -54,15 +54,15 @@ Para agregar una ubicación de satélite
 
 1. Seleccione **Cerrar**.
 
-El aprovisionamiento puede tardar desde unas horas hasta 72 horas, dependiendo del tamaño del espacio empresarial. Una vez completado el aprovisionamiento de una ubicación por satélite, recibirá un correo electrónico de confirmación. Cuando la nueva ubicación geográfica aparezca en azul en el mapa de la pestaña **Ubicaciones geográficas** del Centro de administración de OneDrive, podrá proceder a establecer la ubicación de datos preferida de los usuarios a esa ubicación geográfica.
+Provisioning may take from a few hours up to 72 hours, depending on the size of your tenant. Once provisioning of a satellite location has completed, you will receive an email confirmation. When the new geo location appears in blue on the map on the **Geo locations** tab in the OneDrive admin center, you can proceed to set users' preferred data location to that geo location.
 
 > [!IMPORTANT]
-> La nueva ubicación por satélite se configurará con la configuración predeterminada. Esto le permitirá configurar esa ubicación por satélite según sus necesidades de cumplimiento local.
+> Your new satellite location will be set up with default settings. This will allow you to configure that satellite location as appropriate for your local compliance needs.
 
 ## <a name="setting-users-preferred-data-location"></a>Establecimiento de la ubicación de datos preferida de los usuarios
 <span id="_Setting_a_User's" class="anchor"><span id="_Toc508109326" class="anchor"></span></span>
 
-Cuando haya habilitado las ubicaciones de satélite necesarias, puede actualizar su cuenta de usuario para que use la ubicación de datos adecuada. Se recomienda establecer una ubicación de datos preferida para cada uno de los usuarios, aunque el usuario permanezca en la ubicación central.
+Once you enable the needed satellite locations, you can update your user accounts to use the appropriate preferred data location. We recommend that you set a preferred data location for every user, even if that user is staying in the central location.
 
 > [!IMPORTANT]
 > Si se establece la ubicación de datos preferida de un usuario a una ubicación que no se ha configurado como una ubicación satélite o la ubicación central, el sistema usará de forma predeterminada la ubicación central para el aprovisionamiento de sitios de SharePoint, de OneDrive y de buzones de grupo.
@@ -91,13 +91,13 @@ Los procedimientos de esta sección requieren el [Módulo de Microsoft Azure Act
 
 1. [Conéctese e inicie sesión](/connect-to-microsoft-365-powershell?view=o365-worldwide#connect-with-the-microsoft-azure-active-directory-module-for-windows-powershell&preserve-view=true) con las credenciales de administrador global para su espacio empresarial.
 
-2. Use el cmdlet [Set-MsolUser](/powershell/module/msonline/set-msoluser?view=azureadps-1.0&preserve-view=true) para establecer la ubicación de datos preferida de cada uno de los usuarios. Por ejemplo:
+2. Use the [Set-MsolUser](/powershell/module/msonline/set-msoluser?view=azureadps-1.0&preserve-view=true) cmdlet to set the preferred data location for each of your users. For example:
 
    ```powershell
    Set-MsolUser -UserPrincipalName Robyn.Buckley@Contoso.com -PreferredDatalocation EUR
    ```
 
-    Puede comprobar que la ubicación de datos preferida se actualizó correctamente mediante el cmdlet Get-MsolUser. Por ejemplo:
+    Puede comprobar para confirmar que la ubicación de datos preferida se actualizó correctamente mediante el cmdlet Get-MsolUser. Por ejemplo:
 
    ```powershell
    (Get-MsolUser -UserPrincipalName Robyn.Buckley@Contoso.com).PreferredDatalocation
@@ -115,7 +115,7 @@ Se recomienda incluir el establecimiento de la ubicación de datos preferida del
 Si el usuario ya ha creado un sitio de OneDrive en el espacio empresarial, el establecimiento de su PDL no trasladará automáticamente su instancia de OneDrive existente. Para mover OneDrive de un usuario, consulte [OneDrive para la Empresa Movimiento geográfico](move-onedrive-between-geo-locations.md).
 
 > [!NOTE]
-> Exchange Online reubica automáticamente el buzón del usuario si el PLD cambia y MailboxRegion ya no coincide con el código de ubicación geográfica de la base de datos de buzones. Para obtener más información, consulte [Administración de buzones de Exchange Online en un entorno multigeográfico](./administering-exchange-online-multi-geo.md).
+> Exchange Online reubica automáticamente el buzón del usuario si la PDL cambia y MailboxRegion ya no coincide con el código de ubicación geográfica de la base de datos de buzones. Para obtener más información, consulte [Administración de buzones de Exchange Online en un entorno multigeográfico](./administering-exchange-online-multi-geo.md).
 
 Si el usuario no tiene un sitio de OneDrive en el espacio empresarial, se le aprovisionará OneDrive de acuerdo con el valor de PDL, suponiendo que la PDL del usuario coincida con una de las ubicaciones satélite de la empresa.
 
@@ -148,12 +148,12 @@ Inicie sesión en la aplicación móvil de OneDrive con las credenciales de la c
 
 **Sincronización de OneDrive cliente**:
 
-Confirme que el cliente de sincronización de OneDrive detecta automáticamente la ubicación geográfica de OneDrive para la Empresa al iniciar sesión. Si quiere descargar el cliente de sincronización, puede hacer clic en **Sincronización** en la biblioteca de OneDrive.
+Confirm that the OneDrive sync client automatically detects your OneDrive for Business geo location upon login. If you need to download the sync client, you can click **Sync** in the OneDrive library.
 
 **Aplicaciones de Office**:
 
-Para confirmar que tiene acceso a OneDrive para la Empresa, inicie sesión desde una aplicación de Office como Word. Abra la aplicación de Office y seleccione "OneDrive – \<TenantName\>". Office detectará la ubicación de OneDrive y mostrará los archivos que se pueden abrir.
+Confirm that you can access OneDrive for Business by logging in from an Office application, such as Word. Open the Office application and select "OneDrive – \<TenantName\>". Office will detect your OneDrive location and show you the files that you can open.
 
 **Uso compartido**:
 
-Pruebe el uso compartido de archivos de OneDrive. Confirme que el selector de personas muestra todos los usuarios de SharePoint Online independientemente de su ubicación geográfica.
+Pruebe a compartir archivos de OneDrive. Confirme que el selector de personas le muestra todos los usuarios de SharePoint Online independientemente de su ubicación geográfica.

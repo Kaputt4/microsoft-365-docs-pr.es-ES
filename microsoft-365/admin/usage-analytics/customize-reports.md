@@ -10,6 +10,7 @@ ms.topic: article
 ms.service: microsoft-365-business
 ms.localizationpriority: medium
 ms.collection:
+- Tier2
 - scotvorg
 - M365-subscription-management
 - Adm_O365
@@ -21,12 +22,12 @@ search.appverid:
 - MOE150
 ms.assetid: 9b76065f-29b9-4b89-8059-c5f9db9ddbf6
 description: Aprenda a personalizar los informes en el explorador y Power BI Desktop.
-ms.openlocfilehash: 97ff462478b7172382aa797e8c4acb3a863bbe3f
-ms.sourcegitcommit: 0b7070ec119e00e0dafe030bbfbef0ae5c9afa19
+ms.openlocfilehash: 1d2931ed5cd956da10bb555c87017da8d8ee2026
+ms.sourcegitcommit: 181a0aff54842dcbafd834647c6e9ee47304d10f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/29/2022
-ms.locfileid: "68193529"
+ms.lasthandoff: 10/27/2022
+ms.locfileid: "68725636"
 ---
 # <a name="customize-the-reports-in-microsoft-365-usage-analytics"></a>Personalización de los informes en análisis de uso de Microsoft 365
 

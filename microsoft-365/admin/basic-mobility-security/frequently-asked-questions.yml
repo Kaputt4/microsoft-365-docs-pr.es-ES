@@ -11,6 +11,7 @@ metadata:
   ms.service: microsoft-365-business
   ms.localizationpriority: medium
   ms.collection:
+  - Tier3
   - scotvorg
   - M365-subscription-management
   - Adm_O365
@@ -21,12 +22,12 @@ metadata:
   search.appverid:
   - MET150
   description: Preguntas más frecuentes sobre Basic Mobility and Security.
-  ms.openlocfilehash: 8c025ecc50e34643a1be172dda632ca6111a8b00
-  ms.sourcegitcommit: 0b7070ec119e00e0dafe030bbfbef0ae5c9afa19
+  ms.openlocfilehash: 8e9fef4a810dfccec8574daf566a5cfa8d6ce05e
+  ms.sourcegitcommit: 181a0aff54842dcbafd834647c6e9ee47304d10f
   ms.translationtype: MT
   ms.contentlocale: es-ES
-  ms.lasthandoff: 09/29/2022
-  ms.locfileid: "68188667"
+  ms.lasthandoff: 10/27/2022
+  ms.locfileid: "68725966"
 title: Preguntas más frecuentes sobre la movilidad y la seguridad básicas
 summary: Este artículo contiene las preguntas más frecuentes sobre Basic Mobility and Security, una característica que le ayuda a administrar y proteger dispositivos móviles en Microsoft 365. Si no encuentra una respuesta a su pregunta, háganoslo saber dejando un comentario en la página para que consideremos añadir su pregunta a este artículo.
 sections:

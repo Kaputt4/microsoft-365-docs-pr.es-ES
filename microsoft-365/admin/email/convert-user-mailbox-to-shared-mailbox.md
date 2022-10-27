@@ -10,6 +10,7 @@ ms.topic: article
 ms.service: microsoft-365-business
 ms.localizationpriority: medium
 ms.collection:
+- Tier2
 - scotvorg
 - M365-subscription-management
 - Adm_O365
@@ -25,12 +26,12 @@ search.appverid:
 - MOE150
 ms.assetid: 2e122487-e1f5-4f26-ba41-5689249d93ba
 description: 'Aprenda a convertir un buzón privado en un buzón compartido al que pueden acceder varias personas en lugar de una sola persona. '
-ms.openlocfilehash: 1cc60feb7729d2ad57749b58bc246b3478fcf342
-ms.sourcegitcommit: 0b7070ec119e00e0dafe030bbfbef0ae5c9afa19
+ms.openlocfilehash: 9fa1b0c3d5ee3735b73a25607cf663edff69928b
+ms.sourcegitcommit: 181a0aff54842dcbafd834647c6e9ee47304d10f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/29/2022
-ms.locfileid: "68187281"
+ms.lasthandoff: 10/27/2022
+ms.locfileid: "68726362"
 ---
 # <a name="convert-a-user-mailbox-to-a-shared-mailbox"></a>Convertir un buzón de usuario en un buzón compartido
 

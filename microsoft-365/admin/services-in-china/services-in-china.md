@@ -10,6 +10,7 @@ ms.topic: overview
 ms.service: microsoft-365-business
 ms.localizationpriority: medium
 ms.collection:
+- Tier2
 - scotvorg
 - M365-subscription-management
 - Adm_O365
@@ -25,12 +26,12 @@ search.appverid:
 ms.assetid: a8ab5061-3346-4da0-bb7c-5260822b53ae
 description: Obtenga más información sobre Office 365 operados por 21Vianet que está diseñado para satisfacer las necesidades de servicios en la nube seguros, confiables y escalables en China.
 monikerRange: o365-21vianet
-ms.openlocfilehash: 421a3cec945a1bb612ddf923aa2adce763ff5fa2
-ms.sourcegitcommit: 0b7070ec119e00e0dafe030bbfbef0ae5c9afa19
+ms.openlocfilehash: d9d55d25232f00e17977520f75cc2c138f05725a
+ms.sourcegitcommit: 181a0aff54842dcbafd834647c6e9ee47304d10f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/29/2022
-ms.locfileid: "68169065"
+ms.lasthandoff: 10/27/2022
+ms.locfileid: "68725746"
 ---
 # <a name="office-365-operated-by-21vianet"></a>Office 365 operado por 21Vianet
 
@@ -126,9 +127,9 @@ En el caso de las organizaciones que ejecutan versiones anteriores o mixtas de E
 |---|---|---|---|
 |2016|N/D|Sí|Todo|
 |2013 CU5|N/D|Sí|Todo|
-|2013 SP1|2013 CU5|Yes|Todo|
-|2013 SP1|2013 SP1|Yes|Todo|
-|Mixed 2013 SP1/2010 SP3|2013 CU5|Yes|Todos, excepto eDiscovery/Archiving local, acceso de OWA (vea la tabla siguiente)|
+|2013 SP1|2013 CU5|Sí|Todo|
+|2013 SP1|2013 SP1|Sí|Todo|
+|Mixed 2013 SP1/2010 SP3|2013 CU5|Sí|Todos, excepto eDiscovery/Archiving local, acceso de OWA (vea la tabla siguiente)|
 |Mixed 2013 SP1/2010 SP3|2013 SP1|Yes|Solo disponibilidad configurada manualmente|
 |2010 SP3|2010 SP3|No|Ninguno|
 |2007|2013 CU5|Sí|Solo libre/ocupado|

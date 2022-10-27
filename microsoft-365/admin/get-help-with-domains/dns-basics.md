@@ -10,6 +10,7 @@ ms.topic: article
 ms.service: microsoft-365-business
 ms.localizationpriority: high
 ms.collection:
+- Tier2
 - scotvorg
 - highpri
 - M365-subscription-management
@@ -28,12 +29,12 @@ search.appverid:
 ms.assetid: 854b6b2b-0255-4089-8019-b765cff70377
 ROBOTS: NOINDEX
 description: El sistema de nombres de dominio asigna los nombres de host del equipo a las direcciones IP, comprender los conceptos básicos de DNS y registrador de dominios puede ayudarle a administrar los dominios.
-ms.openlocfilehash: d2399c7e5fa739fe36d4893db8653d0e70d92bcb
-ms.sourcegitcommit: 0b7070ec119e00e0dafe030bbfbef0ae5c9afa19
+ms.openlocfilehash: 1ed2c07005d40c8ee010ba62c72ffcd31f9fe677
+ms.sourcegitcommit: 181a0aff54842dcbafd834647c6e9ee47304d10f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/29/2022
-ms.locfileid: "68166667"
+ms.lasthandoff: 10/27/2022
+ms.locfileid: "68731445"
 ---
 # <a name="dns-basics"></a>Conceptos básicos sobre DNS
 

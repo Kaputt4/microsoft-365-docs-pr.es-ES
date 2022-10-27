@@ -16,14 +16,16 @@ audience: ITPro
 ms.collection:
 - m365-security
 - tier2
-ms.topic: conceptual
+- demo
+ms.topic: article
 ms.subservice: mde
-ms.openlocfilehash: 2013a00076e653fdcb1e2940b2a0344fed16cf64
-ms.sourcegitcommit: 0d8fb571024f134d7480fe14cffc5e31a687d356
+ms.date: 10/21/2022
+ms.openlocfilehash: 50e2b0e00333303a83d60df24ca0b9f8915122a9
+ms.sourcegitcommit: 181a0aff54842dcbafd834647c6e9ee47304d10f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/20/2022
-ms.locfileid: "68643259"
+ms.lasthandoff: 10/27/2022
+ms.locfileid: "68726032"
 ---
 # <a name="controlled-folder-access-cfa-demonstration-test-tool-block-script"></a>Herramienta de prueba de demostración de acceso controlado a carpetas (CFA) (script de bloque)
 
@@ -40,13 +42,13 @@ El acceso controlado a carpetas le ayuda a proteger datos valiosos de aplicacion
 Set-MpPreference -EnableControlledFolderAccess <State>
 ```
 
-Estados de regla
+## <a name="rule-states"></a>Estados de regla
 
 |Estado | Modo| Valor numérico |
 |:---|:---|:---|
-| AuditMode | = Modo auditoría | 2 |
-| Habilitado | = Modo de bloque | 1 |
 | Deshabilitada | = Desactivado | 0 |
+| Habilitado | = Modo de bloque | 1 |
+| Auditoría | = Modo auditoría | 2 |
 
 ### <a name="verify-configuration"></a>Comprobación de la configuración
 
