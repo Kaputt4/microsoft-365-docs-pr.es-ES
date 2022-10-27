@@ -10,7 +10,7 @@ ms.pagetype: security
 ms.author: deniseb
 author: denisebmsft
 ms.localizationpriority: medium
-ms.date: 10/24/2022
+ms.date: 10/25/2022
 manager: dansimp
 audience: ITPro
 ms.collection:
@@ -19,12 +19,12 @@ ms.collection:
 ms.topic: conceptual
 ms.reviewer: pahuijbr
 search.appverid: met150
-ms.openlocfilehash: 48642c497be5b379e5d72c4e6538ffd1997b30bf
-ms.sourcegitcommit: e7dbe3b0d97cd8c64b5ae15f990d5e4b1dc9c464
+ms.openlocfilehash: d55378b288159b4dcf79c4297e1aeb04e9e364a2
+ms.sourcegitcommit: 181a0aff54842dcbafd834647c6e9ee47304d10f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/24/2022
-ms.locfileid: "68688966"
+ms.lasthandoff: 10/27/2022
+ms.locfileid: "68728167"
 ---
 # <a name="updating-mma-on-windows-devices-for-microsoft-defender-for-endpoint"></a>Actualización de MMA en dispositivos Windows para Microsoft Defender para punto de conexión
 
@@ -33,14 +33,12 @@ ms.locfileid: "68688966"
 - [Microsoft Defender para punto de conexión Plan 2](https://go.microsoft.com/fwlink/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
-Si usa Microsoft Monitoring Agent (MMA) en dispositivos Windows, debe mantener actualizado este agente. Con el agente moderno y unificado para Windows Server 2012 R2 y Windows Server 2016, debe migrar a la nueva solución en su lugar. 
+Si usa Microsoft Monitoring Agent (MMA) en dispositivos Windows, es importante mantener actualizado este agente. Para Windows Server 2012 R2 y Windows Server 2016, Microsoft recomienda actualizar al nuevo agente unificado para Defender para punto de conexión. En este artículo se explica cómo: 
 
-- [Actualización del Agente de supervisión de Microsoft (MMA) en los dispositivos](#option-1-update-mma-on-your-devices)
-- [Uso de un nuevo agente en Windows Server 2012 R2 o Windows Server 2016](#option-2-use-a-new-agent-on-windows-server-2012-r2-or-windows-server-2016)
+- **[Actualice el MMA en los dispositivos](#update-mma-on-your-devices)** (para dispositivos que ejecutan Windows 7 SP1 Enterprise, Windows 7 SP1 Pro, Windows 8.1 Pro, Windows 8.1 Enterprise y Windows Server 2008 R2 SP1).
+- **[Actualice al nuevo agente unificado para Defender para punto de conexión](#upgrade-to-the-new-unified-agent-for-defender-for-endpoint)** (para dispositivos que ejecutan Windows Server 2012 R2 y Windows Server 2016).
 
-En este artículo se describen ambas opciones e se incluyen vínculos a información adicional.
-
-## <a name="option-1-update-mma-on-your-devices"></a>Opción 1: Actualizar MMA en los dispositivos
+## <a name="update-mma-on-your-devices"></a>Actualización de MMA en los dispositivos
 
 *Esta opción se aplica a los dispositivos que ejecutan Windows 7 SP1 Enterprise, Windows 7 SP1 Pro, Windows 8.1 Pro, Windows 8.1 Enterprise y Windows Server 2008 R2 SP1.* 
 
@@ -53,7 +51,7 @@ En este artículo se describen ambas opciones e se incluyen vínculos a informac
    - **Agente de Windows de 64 bits**: [https://go.microsoft.com/fwlink/?LinkId=828603](https://go.microsoft.com/fwlink/?LinkId=828603)
    - **Agente de Windows de 32 bits**: [https://go.microsoft.com/fwlink/?LinkId=828604](https://go.microsoft.com/fwlink/?LinkId=828604)
 
-## <a name="option-2-use-a-new-agent-on-windows-server-2012-r2-or-windows-server-2016"></a>Opción 2: Usar un nuevo agente en Windows Server 2012 R2 o Windows Server 2016
+## <a name="upgrade-to-the-new-unified-agent-for-defender-for-endpoint"></a>Actualización al nuevo agente unificado para Defender para punto de conexión
 
 *Esta opción se aplica a los servidores que ejecutan Windows Server 2012 R2 y Windows Server 2016.*
 
@@ -77,3 +75,9 @@ En abril de 2022 se lanzó un nuevo agente para Windows Server 2012 R2 y Windows
 
 > [!IMPORTANT]
 > Los dispositivos que ejecutan Windows 7 SP1, Windows 8.1, Windows Server 2008 R2, Windows Server 2012 R2 o Windows Server 2016 que no se hayan actualizado a la [nueva solución unificada](application-deployment-via-mecm.md) seguirán dependiendo de MMA. En tales casos, [AMA](/azure/azure-monitor/agents/agents-overview) no se puede usar como sustituto de Defender para punto de conexión. 
+
+## <a name="see-also"></a>Vea también
+
+- [Haga que el cambio de endpoint protection que no es de Microsoft a Microsoft Defender para punto de conexión](switch-to-mde-overview.md)
+- [introducción a la implementación de Microsoft Defender para punto de conexión](deployment-phases.md)
+- [Incorporar al servicio Microsoft Defender para punto de conexión](onboarding.md)

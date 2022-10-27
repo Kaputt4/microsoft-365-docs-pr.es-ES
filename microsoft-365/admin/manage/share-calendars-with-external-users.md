@@ -10,6 +10,7 @@ ms.topic: article
 ms.service: microsoft-365-business
 ms.localizationpriority: medium
 ms.collection:
+- Tier1
 - scotvorg
 - M365-subscription-management
 - Adm_O365
@@ -24,12 +25,12 @@ search.appverid:
 - MOE150
 ms.assetid: fb00dd4e-2d5f-4e8d-8ff4-94b2cf002bdd
 description: Habilite el uso compartido de calendarios en el Centro de administración de Microsoft 365 para que los usuarios puedan compartir sus calendarios con cualquier persona dentro o fuera de la organización.
-ms.openlocfilehash: 23cb7c9374e55c4114caf808b5a2e3c3fb19b7d5
-ms.sourcegitcommit: 87283bb02ca750286f7c069f811b788730ed5832
+ms.openlocfilehash: 168e8d894d7e4c8b04f92ae3ec54fb7bf6e08d61
+ms.sourcegitcommit: 181a0aff54842dcbafd834647c6e9ee47304d10f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/21/2022
-ms.locfileid: "68663464"
+ms.lasthandoff: 10/27/2022
+ms.locfileid: "68735493"
 ---
 # <a name="share-microsoft-365-calendars-with-external-users"></a>Uso compartido de calendarios de Microsoft 365 con usuarios externos
 

@@ -10,6 +10,7 @@ ms.topic: article
 ms.service: microsoft-365-business
 ms.localizationpriority: high
 ms.collection:
+- Tier1
 - scotvorg
 - highpri
 - M365-subscription-management
@@ -26,12 +27,12 @@ search.appverid:
 - MET150
 description: Obtenga más información sobre cómo proporcionar a cada miembro del equipo una cuenta de usuario para que pueda tener licencias de Microsoft 365, credenciales de inicio de sesión y buzones de Microsoft 365.
 ms.date: 07/01/2020
-ms.openlocfilehash: 188e4def65212c775a32b9205db3ab14ce9a1bae
-ms.sourcegitcommit: 0b7070ec119e00e0dafe030bbfbef0ae5c9afa19
+ms.openlocfilehash: e0485ac1ed66c40b19ec4645fc8b00dc85b686a7
+ms.sourcegitcommit: 181a0aff54842dcbafd834647c6e9ee47304d10f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/29/2022
-ms.locfileid: "68200195"
+ms.lasthandoff: 10/27/2022
+ms.locfileid: "68722140"
 ---
 # <a name="add-users-and-assign-licenses-at-the-same-time"></a>Agregar usuarios y asignar licencias al mismo tiempo
 

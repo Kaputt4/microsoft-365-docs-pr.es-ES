@@ -12,6 +12,7 @@ ms.topic: article
 ms.service: microsoft-365-business
 ms.localizationpriority: medium
 ms.collection:
+- Tier2
 - scotvorg
 - M365-subscription-management
 - Adm_O365
@@ -22,12 +23,12 @@ ms.custom:
 search.appverid: MET150
 description: Obtenga información sobre cómo comprobar la elegibilidad de su escuela para Microsoft 365 Educación precios académicos.
 ms.date: 07/21/2020
-ms.openlocfilehash: 56bd38bb0a9dc37ee2a98264a9e5e2d8218e1531
-ms.sourcegitcommit: 0b7070ec119e00e0dafe030bbfbef0ae5c9afa19
+ms.openlocfilehash: ccffa8f0f88d9045ddfea16e6d0bd045f5550613
+ms.sourcegitcommit: 181a0aff54842dcbafd834647c6e9ee47304d10f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/29/2022
-ms.locfileid: "68206111"
+ms.lasthandoff: 10/27/2022
+ms.locfileid: "68729313"
 ---
 # <a name="verify-academic-eligibility-for-microsoft-365-education-subscriptions"></a>Comprobación de la idoneidad académica para suscripciones de Microsoft 365 Educación
 

@@ -8,14 +8,15 @@ ms.topic: article
 ms.service: bookings
 ms.localizationpriority: medium
 ms.collection:
+- Tier1
 - scotvorg
 description: Use los conectores de Bookings de Power Automate para crear flujos de trabajo personalizados con desencadenadores de citas.
-ms.openlocfilehash: 4396b70d768e1baf104bbf22029ef739a0d71978
-ms.sourcegitcommit: 0b7070ec119e00e0dafe030bbfbef0ae5c9afa19
+ms.openlocfilehash: 1c6f0bbcf2aa5ef8fecf410effe7ec4baebaa099
+ms.sourcegitcommit: 181a0aff54842dcbafd834647c6e9ee47304d10f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/29/2022
-ms.locfileid: "68204065"
+ms.lasthandoff: 10/27/2022
+ms.locfileid: "68736483"
 ---
 # <a name="use-power-automate-connectors-to-build-bookings-workflows"></a>Uso de conectores de Power Automate para crear flujos de trabajo de Bookings
 

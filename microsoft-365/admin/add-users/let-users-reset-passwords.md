@@ -10,6 +10,7 @@ ms.topic: article
 ms.service: microsoft-365-business
 ms.localizationpriority: medium
 ms.collection:
+- Tier1
 - scotvorg
 - highpri
 - M365-subscription-management
@@ -31,12 +32,12 @@ search.appverid:
 - MOE150
 ms.assetid: 5bc3f460-13cc-48c0-abd6-b80bae72d04a
 description: Obtenga información sobre cómo puede establecer una directiva en el Centro de administración de Microsoft 365 para permitir que los usuarios restablezcan sus propias contraseñas mediante la herramienta de autoservicio de restablecimiento de contraseña.
-ms.openlocfilehash: d9c962b26343cf5e2ddd6c1f4b2c8126b2b157fa
-ms.sourcegitcommit: 0b7070ec119e00e0dafe030bbfbef0ae5c9afa19
+ms.openlocfilehash: b911391a33a3bbfd4969b4b8c1f47895f4099e60
+ms.sourcegitcommit: 181a0aff54842dcbafd834647c6e9ee47304d10f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/29/2022
-ms.locfileid: "68195201"
+ms.lasthandoff: 10/27/2022
+ms.locfileid: "68721832"
 ---
 # <a name="let-users-reset-their-own-passwords"></a>Permitir que los usuarios puedan restablecer sus propias contraseñas
 

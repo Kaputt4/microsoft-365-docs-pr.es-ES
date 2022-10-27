@@ -10,6 +10,7 @@ ms.topic: article
 ms.service: microsoft-365-business
 ms.localizationpriority: medium
 ms.collection:
+- Tier3
 - scotvorg
 - M365-subscription-management
 - Adm_O365
@@ -21,12 +22,12 @@ ms.custom:
 search.appverid:
 - MET150
 description: Use Basic Mobility and Security para crear directivas de dispositivo que protejan la información de su organización.
-ms.openlocfilehash: 5557f6c0d26d1870860b63f7236295ddd39e1171
-ms.sourcegitcommit: 0b7070ec119e00e0dafe030bbfbef0ae5c9afa19
+ms.openlocfilehash: da81f8b002d6bc2292f5067110de368004e4a1ff
+ms.sourcegitcommit: 181a0aff54842dcbafd834647c6e9ee47304d10f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/29/2022
-ms.locfileid: "68172013"
+ms.lasthandoff: 10/27/2022
+ms.locfileid: "68727639"
 ---
 # <a name="create-device-security-policies-in-basic-mobility-and-security"></a>Creación de directivas de seguridad de dispositivos en Basic Mobility and Security
 
@@ -125,13 +126,13 @@ Al aplicar una directiva a los dispositivos de usuario, el impacto en cada dispo
 |**Directiva de seguridad**|**Android**|**Samsung KNOX**|**iOS**|**Notas**|
 |:-----|:-----|:-----|:-----|:-----|
 |Requerir copia de seguridad cifrada|No|Sí|Sí|Se requiere una copia de seguridad cifrada de iOS.|
-|Bloquear copia de seguridad de la nube|Sí|Sí|Sí|Bloquear copia de seguridad de Google en Android (atenuado), copia de seguridad de la nube en iOS.|
-|Bloquear sincronización de documentos|No|No|Sí|iOS: Bloquear documentos en la nube.|
+|Bloquear copia de seguridad de la nube|Sí|Sí|Sí|Bloquee la copia de seguridad de Google en Android (atenuado), la copia de seguridad en la nube en iOS supervisado.|
+|Bloquear sincronización de documentos|No|No|Sí|iOS: bloquee documentos en la nube en dispositivos iOS supervisados.|
 |Bloquear sincronización de fotos |No|No|Sí|iOS (nativo): Bloquear Photo Stream.|
 |Bloquear captura de pantalla |No|Sí|Sí|Se bloquea cuando se intenta.|
-|Bloquear videoconferencia |No|No|Sí|FaceTime bloqueado en iOS, no en Skype u otros usuarios.|
+|Bloquear videoconferencia |No|No|Sí|FaceTime bloqueado en dispositivos iOS supervisados, no en Skype u otros usuarios.|
 |Bloquear el envío de datos de diagnóstico |No|Sí|Sí|Bloquear el envío de informes de bloqueo de Google en Android.|
-|Bloquear el acceso a la tienda de aplicaciones |No|Sí|Sí|Falta el icono de la tienda de aplicaciones en la página principal de Android, está deshabilitado en Windows, falta en iOS.|
+|Bloquear el acceso a la tienda de aplicaciones |No|Sí|Sí|Icono de la tienda de aplicaciones que falta en la página principal de Android, deshabilitado en Windows y dispositivos iOS supervisados.|
 |Requerir contraseña para la tienda de aplicaciones |No|No|Sí|iOS: Contraseña necesaria para las compras de iTunes.|
 |Bloquear conexión a almacenamiento extraíble |No|Sí|N/D|Android: la tarjeta SD está atenuada en la configuración, Windows notifica al usuario, las aplicaciones instaladas no están disponibles|
 |Bloquear conexión Bluetooth |Ver notas|Ver notas|Yes|No se puede deshabilitar BlueTooth como una configuración en Android. En su lugar, deshabilitamos todas las transacciones que requieren BlueTooth: distribución avanzada de audio, control remoto de audio y vídeo, dispositivos manos libres, auriculares, acceso a la libreta de teléfonos y puerto serie. Cuando se usa cualquiera de estas opciones, aparece un pequeño mensaje de aviso en la parte inferior de la página.|

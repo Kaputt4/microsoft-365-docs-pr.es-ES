@@ -10,6 +10,7 @@ ms.topic: article
 ms.service: microsoft-365-business
 ms.localizationpriority: medium
 ms.collection:
+- Tier2
 - scotvorg
 - M365-subscription-management
 - Adm_O365
@@ -21,12 +22,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Obtenga el informe de actividad de grupos de Yammer para obtener más información sobre el número de grupos de Yammer que se crean y usan en su organización y su actividad.
-ms.openlocfilehash: 768cd976545e42c0163cb50880418f64817d5a4f
-ms.sourcegitcommit: 0b7070ec119e00e0dafe030bbfbef0ae5c9afa19
+ms.openlocfilehash: edb68761c2d471ca4d2d1b917c2e638d44643cc4
+ms.sourcegitcommit: 181a0aff54842dcbafd834647c6e9ee47304d10f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/29/2022
-ms.locfileid: "68195245"
+ms.lasthandoff: 10/27/2022
+ms.locfileid: "68722558"
 ---
 # <a name="microsoft-365-reports-in-the-admin-center---yammer-groups-activity-report"></a>Informes de Microsoft 365 en el Centro de administración: informe de actividad de grupos de Yammer
 

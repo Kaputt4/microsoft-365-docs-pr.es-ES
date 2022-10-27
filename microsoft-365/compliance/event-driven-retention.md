@@ -11,7 +11,8 @@ ms.topic: article
 ms.service: O365-seccomp
 ms.localizationpriority: high
 ms.collection:
-- M365-security-compliance
+- purview-compliance
+- tier1
 search.appverid:
 - MOE150
 - MET150
@@ -20,36 +21,38 @@ ms.custom:
 - seo-marvel-may2020
 - seo-marvel-jun2020
 description: Por lo general, como parte de una solución de administración de registros, puede configurar una etiqueta para iniciar el período de retención en función de un evento identificado.
-ms.openlocfilehash: ac4e80872cbe377025e213a387c7be7f89a208b7
-ms.sourcegitcommit: 1734c95ce72d9c8af695cb4b49b1e40d921a1fee
-ms.translationtype: HT
+ms.openlocfilehash: c4354e7e1d2e9f8367b01e57fa6d84dc32b5f978
+ms.sourcegitcommit: 181a0aff54842dcbafd834647c6e9ee47304d10f
+ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/07/2022
-ms.locfileid: "66685951"
+ms.lasthandoff: 10/27/2022
+ms.locfileid: "68735933"
 ---
 # <a name="start-retention-when-an-event-occurs"></a>Iniciar la retención cuando se produzca un evento
 
 >*[Instrucciones de licencias de Microsoft 365 para la seguridad y el cumplimiento](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance).*
 
-Al conservar contenido, el período de retención suele basarse en la antigüedad del contenido. Por ejemplo, puede conservar documentos durante siete años después de su creación y eliminarlos cuando transcurra ese período. Pero cuando configura [etiquetas de retención](retention.md#retention-labels), también puede hacer que un período de retención se base en el momento en que se produzca un tipo específico de evento. El evento desencadena el inicio del período de retención y se exigirán las acciones de retención de etiqueta en todo el contenido que tenga aplicada una etiqueta de retención para ese tipo de evento.
+When you retain content, the retention period is often based on the age of the content. For example, you might retain documents for seven years after they're created and then delete them. But when you configure [retention labels](retention.md#retention-labels), you can also base a retention period on when a specific type of event occurs. The event triggers the start of the retention period, and all content with a retention label applied for that type of event get the label's retention actions enforced on them.
   
 Ejemplos de uso de retención basada en eventos:
 
-- **Empleados que abandonen la organización** Imagine que necesita conservar los registros de los empleados durante 10 años desde el momento en que un empleado abandona la organización. Una vez transcurridos los 10 años, tendrán que eliminarse todos los documentos relacionados con la contratación, desempeño y terminación de ese empleado. El evento que desencadena el período de retención de 10 años es cuando el empleado abandona la organización. 
+- **Employees leaving the organization** Suppose that employee records must be retained for 10 years from the time an employee leaves the organization. After 10 years elapse, all documents related to the hiring, performance, and termination of that employee must be disposed. The event that triggers the 10-year retention period is the employee leaving the organization. 
 
-- **Expiración del contrato** Imagine que todos los registros relacionados con los contratos tienen que conservarse durante cinco años desde el momento en que expire el contrato. El evento que desencadena el período de retención de cinco años es la expiración del contrato. 
+- **Contract expiration** Suppose that all records related to contracts must be retained for five years from the time the contract expires. The event that triggers the five-year retention period is the expiration of the contract. 
 
-- **Vida útil del producto** Puede que su organización tenga requisitos de retención relacionados con la última fecha de fabricación de productos para contenido como especificaciones técnicas. En ese caso, la última fecha de fabricación es el evento que desencadena el período de retención. 
+- **Product lifetime** Your organization might have retention requirements related to the last manufacturing date of products for content such as technical specifications. In this case, the last manufacturing date is the event that triggers the retention period. 
 
 La retención basada en eventos, a veces también denominada "retención controlada por eventos", se usa normalmente con procesos de administración de registros. Esto significa que:
 
-- Las etiquetas de retención basadas en eventos también suelen marcar elementos como un registro, como parte de una solución de administración de registros. Para obtener más información, vea [Información sobre la administración de registros](records-management.md).
+- Retention labels based on events also usually mark items as a record, as a part of a records management solution. For more information, see [Learn about records management](records-management.md).
 
 - Un documento que se ha declarado como un registro pero cuyo desencadenador de eventos aún no se ha producido se conserva indefinidamente. Hasta que un evento desencadene el período de retención de ese documento, que expira después, los registros no se pueden eliminar de forma permanente.
 
 - Las etiquetas de retención basadas en eventos a menudo desencadenan una revisión de disposición al finalizar el período de retención para que un administrador de registros pueda revisar de forma manual el contenido y eliminarlo. Para obtener más información, vea [ Eliminación de contenido](disposition.md).
 
 Una etiqueta de retención basada en un evento tiene las mismas funciones que cualquier etiqueta de retención en Microsoft Purview. Para obtener más información, vea [Información sobre las etiquetas y directivas de retención](retention.md).
+
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
 
 ## <a name="understanding-the-relationship-between-event-types-labels-events-and-asset-ids"></a>Información sobre la relación entre tipos de evento, etiquetas, eventos e id. de activo
 
@@ -59,23 +62,23 @@ Para usar correctamente la retención basada en eventos, es importante comprende
   
 ![Diagrama 2 de 2: tipo de evento, etiquetas, eventos e id. de activos.](../media/ce89a91f-49aa-4b5a-933c-ac3a13dccd5d.png)
   
-1. Las etiquetas de retención se crean para distintos tipos de contenido y, después, se asocian con un tipo de evento. Por ejemplo, las etiquetas de retención para distintos tipos de registros y archivos de producto se asocian con un tipo de evento denominado “Vida útil del producto”, ya que esos registros tienen que conservarse durante 10 años desde el momento en que el producto alcanza el final de su ciclo de vida.
+1. You create retention labels for different types of content and then associate them with a type of event. For example, retention labels for different types of product files and records are associated with an event type named Product Lifetime because those records must be retained for 10 years from the time the product reaches its end of life.
     
 2. Los usuarios que suelen ser administradores de registros aplican esas etiquetas de retención al contenido y (para los documentos en SharePoint y OneDrive) escriben un identificador de activo para cada elemento. En este ejemplo, el identificador de activo es un nombre de producto o un código usado por la organización. Después, se asigna una etiqueta de retención a los registros de cada producto, y cada registro tiene una propiedad que contiene un id. de activo. El diagrama representa **todo el contenido** de todos los registros de productos de una organización, y cada elemento tiene asignado el id. de activo del producto al que pertenece el registro. 
     
-3. La vida útil del producto es el tipo de evento; un producto específico que llega al fin de su ciclo de vida es un evento. Cuando se produce este tipo de evento (en este caso, cuando un producto alcanza el fin de su ciclo de vida), creará un evento que especifique lo siguiente:
+3. Product Lifetime is the event type; a specific product reaching end of life is an event. When an event of that event type occurs—in this case, when a product reaches its end of life—you create an event that specifies:
     
    - Un id. de activo (para documentos de OneDrive y SharePoint)
     
-   - Palabras clave (para elementos de Exchange). En este ejemplo, la organización usa un código de producto en mensajes que contengan registros de productos, para que la palabra clave de los elementos de Exchange coincida con el id. de activo para documentos de OneDrive y SharePoint.
+   - Keywords (for Exchange items). In this example, the organization uses a product code in messages containing product records, so the keyword for Exchange items is functionally the same as the asset ID for SharePoint and OneDrive documents.
     
-   - La fecha en que se produjo el evento. La fecha se usa como el inicio del período de retención. Esta fecha puede ser la fecha actual, una fecha pasada o una fecha futura.
+   - The date when the event occurred. This date is used as the start of the retention period. This date can be the current, a past, or a future date.
 
-4. Después de crear un evento, esa fecha del evento se sincroniza con todo el contenido que tenga una etiqueta de retención para ese tipo de evento y que contenga la palabra clave o el Id. de activo especificado. Al igual que con cualquier etiqueta de retención, esta sincronización puede tardar hasta siete días. En el diagrama anterior, este evento desencadena el período de retención de todos los elementos rodeados con un círculo rojo. Es decir, cuando este producto alcanza el final de su ciclo de vida, el evento desencadena el período de retención para esos registros del producto.
+4. After you create an event, that event date is synchronized to all the content that has a retention label of that event type and that contains the specified asset ID or keyword. Like any retention label, this synchronization can take up to seven days. In the previous diagram, all the items circled in red have their retention period triggered by this event. In other words, when this product reaches its end of life, that event triggers the retention period for that product's records.
 
 Es importante comprender que, si no especifica palabras clave o un id. de activo para un evento, el evento desencadenará el período de retención de **todo el contenido** que tenga una etiqueta de retención de ese tipo de evento. En el diagrama anterior, esto quiere decir que se empezaría a conservar todo el contenido. Es poco probable que este resultado sea lo que esperaba.
 
-Por último, recuerde que cada etiqueta de retención tiene su propia configuración de retención. En este ejemplo, todas especifican 10 años, pero puede que un evento desencadene etiquetas de retención donde cada etiqueta tenga un período de retención distinto.
+Finally, remember that each retention label has its own retention settings. In this example, they all specify 10 years, but it's possible for an event to trigger retention labels where each label has a different retention period.
   
 ## <a name="how-to-set-up-event-based-retention"></a>Cómo configurar la retención basada en eventos
 
@@ -115,7 +118,7 @@ Si está usando un tipo de evento existente en lugar de crear un nuevo tipo de e
 
 ### <a name="step-2-create-a-new-event-type-for-your-label"></a>Paso 2: crear un nuevo tipo de evento para su etiqueta
 
-Para la configuración de retención, si seleccionó **Crear nuevo tipo de evento**, escriba un nombre y una descripción para su tipo de evento. A continuación, seleccione **Siguiente**, **Enviar** y **Listo**.
+For the retention settings, if you selected **Create new event type**, enter a name and description for your event type. Then select **Next**, **Submit**, and **Done**.
 
 De nuevo en la página **Definir el período**, para **¿Cuándo debe comenzar el período?**, use la lista desplegable para seleccionar el tipo de evento que ha creado.
 
@@ -128,7 +131,7 @@ Al igual que las etiquetas de retención, debe publicar o aplicar automáticamen
 
 ### <a name="step-4-enter-an-asset-id"></a>Paso 4: Escribir un id. de activo
 
-Después de que una etiqueta basada en evento se aplica al contenido, puede especificar un Id. de activo para cada elemento. Por ejemplo, su organización podría usar:
+After an event-based label is applied to content, you can enter an asset ID for each item. For example, your organization might use:
   
 - Códigos de producto que puede usar para conservar contenido solo para un producto específico.
     
@@ -136,13 +139,13 @@ Después de que una etiqueta basada en evento se aplica al contenido, puede espe
     
 - Id. de empleado que puede usar para conservar contenido solo para una persona específica.
     
-Id. de activo es simplemente otra propiedad de documento que está disponible en SharePoint y OneDrive. Es posible que su organización ya use otras propiedades e identificadores de documento para clasificar el contenido. Si es así, también puede usar esas propiedades y valores al crear un evento, vea el — paso 6 que se indica a continuación. Lo importante es que debe usar alguna combinación de *property:value* en las propiedades del documento para asociar ese elemento a un tipo de evento.
+Asset ID is simply another document property that's available in SharePoint and OneDrive. Your organization might already use other document properties and IDs to classify content. If so, you can also use those properties and values when you create an event—see step 6 that follows. The important point is that you must use some *property:value* combination in the document properties to associate that item with an event type.
   
 ![Cuadro de texto para especificar un id. de activo.](../media/6d31628e-7162-4370-a8d7-de704aafa350.png)
   
 ### <a name="step-5-create-an-event"></a>Paso 5: Crear un evento
 
-Cuando se produzca una instancia determinada de ese tipo de evento, como que un producto llegue al final de su ciclo de vida, vaya a la página **Administración de registros** > **Eventos** en el portal de cumplimiento de Microsoft Purview y seleccione **+ Crear** para crear un evento. Para desencadenar el evento, debe crearlo aquí.
+When a particular instance of that event type occurs, such as a product reaches its end of life, go to the **Records management** > **Events** page in the Microsoft Purview compliance portal, and select **+ Create** to create an event. You trigger the event by creating it, here.
 
 ![Crear un evento para desencadenar el inicio de la retención para las etiquetas de retención basadas en eventos.](../media/create-event-records-management.png)
 
@@ -156,25 +159,25 @@ Cuando cree el evento, elija el mismo tipo de evento especificado en la configur
 
 Por otra parte, si necesita crear un evento para múltiples etiquetas de retención que tienen diferentes tipos de eventos, seleccione la opción **Elegir etiquetas existentes**. Después, seleccione las etiquetas que están configuradas para los tipos de eventos que quiere asociar con este evento.
 
-### <a name="step-7-enter-keywords-or-query-for-exchange-asset-id-for-sharepoint-and-onedrive"></a>Paso 7: Escribir palabras clave o consultas para Exchange, Id. de activo para SharePoint y OneDrive
+### <a name="step-7-enter-keywords-or-a-query-or-asset-id-for-sharepoint-and-onedrive"></a>Paso 7: Escribir palabras clave o una consulta, o identificador de recurso para SharePoint y OneDrive
 
-Ahora limite el ámbito del contenido. Para el contenido de Exchange, puede hacerlo especificando palabras clave o una consulta. Para el contenido de SharePoint y OneDrive, puede hacerlo especificando Identificadores de activos.
+Ahora limite el ámbito del contenido. Para ello, especifique palabras clave o una consulta. Para el contenido de SharePoint y OneDrive, también puede hacerlo especificando identificadores de recursos.
 
-Para los elementos de Exchange, use palabras clave o una consulta que use el Lenguaje de consulta de palabras clave (KQL). Para obtener más información, vea [Referencia de sintaxis del Lenguaje de consultas de palabras clave (KQL)](/sharepoint/dev/general-development/keyword-query-language-kql-syntax-reference). Para obtener más información sobre las propiedades que se pueden usar para la búsqueda en Exchange, vea [Consultas de palabras clave y condiciones de búsqueda para la Búsqueda de contenido](keyword-queries-and-search-conditions.md).
+Las consultas usan lenguaje de consulta de palabras clave (KQL). Para obtener más información, vea [Referencia de sintaxis del Lenguaje de consultas de palabras clave (KQL)](/sharepoint/dev/general-development/keyword-query-language-kql-syntax-reference). Para obtener más información sobre las propiedades utilizables en búsqueda que puede usar, vea [Consultas de palabras clave y condiciones de búsqueda para la Búsqueda de contenido](keyword-queries-and-search-conditions.md).
 
 Para los Id. de activo, la retención solo se aplicará en el contenido que tenga la combinación de *propiedad:valor* especificada. Por ejemplo: si usa la propiedad de Id. de activo, escriba `ComplianceAssetID:<value>` en el cuadro de Id. de activo que se muestra en la siguiente imagen.
 
 Si no se especifica un Id. de activo, se aplica la misma fecha de retención a todo el contenido con etiquetas de ese tipo de evento.
 
-Es posible que su organización haya aplicado otras propiedades e identificadores a los documentos relacionados con este tipo de evento. Por ejemplo, si necesita detectar los registros de un producto específico, el identificador podría ser una combinación de la propiedad personalizada ProductID y el valor "XYZ". En este caso, escribiría `ProductID:XYZ` en el cuadro de identificadores de activo que se muestra en la siguiente imagen.
+Your organization might have applied other properties and IDs to the documents related to this event type. For example, if you need to detect a specific product's records, the ID might be a combination of your custom property ProductID and the value "XYZ". In this case, you'd enter `ProductID:XYZ` in the box for asset IDs shown in the following picture.
 
-Por último, seleccione la fecha en que se produjo el evento; esta fecha se usará como el inicio del período de retención. Después de crear un evento, la fecha del evento se sincronizará con todo el contenido mediante una etiqueta de retención para ese tipo de evento, Id. de activo y consultas o palabras clave. Al igual que con cualquier etiqueta de retención, esta sincronización puede tardar hasta siete días.
+Finally, choose the date when the event occurred; this date is used as the start of the retention period. After you create an event, that event date is synchronized to all the content with a retention label of that event type, asset ID, and keywords or queries. As with any retention label, this synchronization can take up to seven days.
   
 ![Página de Configuración de evento.](../media/40d3c9db-f624-49a5-b38a-d16bcce20231.png)
 
 Después de crear un evento, la configuración de retención surte efecto para el contenido que ya está etiquetado e indexado. Si se agrega la etiqueta de retención a contenido nuevo tras crear el evento, deberá crear un nuevo evento con los mismos detalles.
 
-Al eliminar un evento, no se cancela la configuración de retención que está vigente en el contenido que ya está etiquetado. Actualmente, no se pueden cancelar eventos después de que se desencadenen.
+Deleting an event doesn't cancel the retention settings that are now in effect for the content that's already labeled. Currently, you can't cancel events after they're triggered.
 
 ## <a name="use-content-search-to-find-all-content-with-a-specific-label-or-asset-id"></a>Usar Búsqueda de contenido para encontrar todo el contenido que tenga aplicada una etiqueta o id. de activo específicos
 
@@ -214,7 +217,7 @@ Puede usar una API de REST para crear automáticamente eventos que desencadenen 
 > 
 > Le recomendamos que pruebe estas API de Graph, ya que las API de REST de esta sección pronto quedarán en desuso y dejarán de funcionar.
 
-Una API REST es un punto de conexión de servicio que admite conjuntos de operaciones HTTP (métodos), que proporcionan acceso de creación, recuperación, actualización o eliminación a los recursos del servicio. Para obtener más información, consulte [Componentes de una solicitud o respuesta de API de REST](/rest/api/gettingstarted/#components-of-a-rest-api-requestresponse). Mediante el uso de la API de REST de Microsoft 365, los eventos se pueden crear y recuperar mediante los métodos POST y GET.
+A REST API is a service endpoint that supports sets of HTTP operations (methods), which provide create/retrieve/update/delete access to the service's resources. For more information, see [Components of a REST API request/response](/rest/api/gettingstarted/#components-of-a-rest-api-requestresponse). By using the Microsoft 365 REST API, events can be created and retrieved using the POST and GET methods.
 
 Hay dos opciones para usar la API de REST:
 
@@ -228,7 +231,7 @@ Antes de usar la API de REST, como administrador global, confirme la dirección 
 https://ps.compliance.protection.outlook.com/psws/service.svc/ComplianceRetentionEvent
 ```
 
-Compruebe el código de respuesta. Si es 302, obtenga la dirección URL redirigida de la propiedad Ubicación del encabezado de respuesta y use esa dirección URL en lugar de `https://ps.compliance.protection.outlook.com/psws/service.svc/ComplianceRetentionEvent` en las instrucciones siguientes.
+Check the response code. If it's 302, get the redirected URL from the Location property of the response header and use that URL instead of `https://ps.compliance.protection.outlook.com/psws/service.svc/ComplianceRetentionEvent` in the instructions that follow.
 
 Los eventos que se crean automáticamente se pueden confirmar mediante su visualización en el portal de cumplimiento de Microsoft Purview > **Administración de registros** >  **Eventos**.
 
@@ -292,7 +295,7 @@ Código de ejemplo para llamar a la API de REST:
 |Parámetros|Description|Notas|
 |--- |--- |--- |
 |<d:Name></d:Name>|Escriba un nombre único para el evento.|No puede contener espacios finales ni los siguientes caracteres: % * \ & < \> \| # ? , : ;|
-|<d:EventType></d:EventType>|Escribe el nombre del tipo de evento (o Guid)|Ejemplo: "Desvinculación del empleado". El tipo de evento debe estar asociado con una etiqueta de retención.|
+|<d:EventType></d:EventType>|Escribe el nombre del tipo de evento (o Guid)|Example: "Employee termination". Event type has to be associated with a retention label.|
 |<d:SharePointAssetIdQuery></d:SharePointAssetIdQuery>|Escriba "ComplianceAssetId:" + el id. del empleado|Ejemplo: "ComplianceAssetId:12345"|
 |<d:EventDateTime></d:EventDateTime>|Fecha y hora del evento|Formato: aaaa-MM-ddTHH:mm:ssZ, ejemplo: 2018-12-01T00:00:00Z
 |

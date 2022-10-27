@@ -10,6 +10,7 @@ ms.topic: article
 ms.service: microsoft-365-business
 ms.localizationpriority: medium
 ms.collection:
+- Tier2
 - scotvorg
 - M365-subscription-management
 - Adm_O365
@@ -21,12 +22,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Obtenga el informe de uso de dispositivos de Yammer para obtener más información sobre los dispositivos en los que los usuarios usan Yammer, el número de usuarios diarios por tipo de dispositivo y los detalles por usuario.
-ms.openlocfilehash: df1205f763cd0b7a96ee96261268bfabdc3a519c
-ms.sourcegitcommit: 0d8fb571024f134d7480fe14cffc5e31a687d356
+ms.openlocfilehash: 5be41a946f110c809cc45a8fa9b0cdb21c0a9f35
+ms.sourcegitcommit: 181a0aff54842dcbafd834647c6e9ee47304d10f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/20/2022
-ms.locfileid: "68623551"
+ms.lasthandoff: 10/27/2022
+ms.locfileid: "68722494"
 ---
 # <a name="microsoft-365-reports-in-the-admin-center---yammer-device-usage-report"></a>Informes de Microsoft 365 en el Centro de administración: informe de uso de dispositivos yammer
 

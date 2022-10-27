@@ -20,12 +20,12 @@ ms.custom:
 - seo-marvel-apr2020
 ms.subservice: mdo
 ms.service: microsoft-365-security
-ms.openlocfilehash: cbca941070c9ae377b99f145324231fc82c3cdd3
-ms.sourcegitcommit: 0d8fb571024f134d7480fe14cffc5e31a687d356
+ms.openlocfilehash: b4b9ca9903918a1e84361471ce5041aaf0dbf100
+ms.sourcegitcommit: 181a0aff54842dcbafd834647c6e9ee47304d10f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/20/2022
-ms.locfileid: "68642225"
+ms.lasthandoff: 10/27/2022
+ms.locfileid: "68729069"
 ---
 # <a name="threat-explorer-and-real-time-detections"></a>Explorador de amenazas y detecciones en tiempo real
 
@@ -41,11 +41,7 @@ Si su organización tiene [Microsoft Defender para Office 365](defender-for-offi
 |---|---|
 |![Explorador de amenazas.](../../media/threatmgmt-explorer.png)|![Detecciones en tiempo real](../../media/threatmgmt-realtimedetections.png)|
 
-Las detecciones en tiempo real o explorador ayudan al equipo de operaciones de seguridad a investigar y responder a las amenazas de forma eficaz. El informe es similar a la siguiente imagen:
-
-:::image type="content" source="../../media/cab32fa2-66f1-4ad5-bc1d-2bac4dbeb48c.png" alt-text="Captura de pantalla que muestra el elemento de menú Explorador." lightbox="../../media/cab32fa2-66f1-4ad5-bc1d-2bac4dbeb48c.png":::
-
-Con este informe, puede:
+Las detecciones en tiempo real o explorador ayudan al equipo de operaciones de seguridad a investigar y responder a las amenazas de forma eficaz. Con este informe, puede:
 
 - [Ver el malware detectado por las características de seguridad de Microsoft 365](#see-malware-detected-in-email-by-technology)
 - [Ver la dirección URL de phishing y hacer clic en datos de veredicto](#view-phishing-url-and-click-verdict-data)
@@ -61,9 +57,6 @@ Estamos haciendo que esta integración sea más relevante mediante la introducci
 
 > [!div class="mx-imgBorder"]
 > :::image type="content" source="../../media/AlertID-Filter.png" alt-text="Filtrado del identificador de alerta" lightbox="../../media/AlertID-Filter.png":::
-
-> [!div class="mx-imgBorder"]
-> :::image type="content" source="../../media/AlertID-DetailsFlyout.png" alt-text="El control flotante Id. de alerta en detalles" lightbox="../../media/AlertID-DetailsFlyout.png":::
 
 ### <a name="extending-the-explorer-and-real-time-detections-data-retention-and-search-limit-for-trial-tenants-from-7-to-30-days"></a>Ampliación de la retención de datos del Explorador (y detecciones en tiempo real) y el límite de búsqueda para inquilinos de prueba de 7 a 30 días
 

@@ -10,6 +10,7 @@ ms.topic: article
 ms.service: microsoft-365-business
 ms.localizationpriority: medium
 ms.collection:
+- Tier3
 - ContentEngagementFY23
 - scotvorg
 - highpri
@@ -28,12 +29,12 @@ ms.custom:
 - AdminTemplateSet
 - adminvideo
 description: Ahora que ha configurado Microsoft 365, aprenda a instalar aplicaciones de Office individuales en su Mac, PC o dispositivos móviles.
-ms.openlocfilehash: 7b2e6a981ddaa0e2497fb722687d3ad0774c830c
-ms.sourcegitcommit: d0557f757cfa48330ed57e966033891d10f03688
+ms.openlocfilehash: fd23bee7ca20b3be2de501849cc0ae9bdcee1d5d
+ms.sourcegitcommit: 181a0aff54842dcbafd834647c6e9ee47304d10f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/06/2022
-ms.locfileid: "68492211"
+ms.lasthandoff: 10/27/2022
+ms.locfileid: "68727793"
 ---
 # <a name="install-office-applications"></a>Instalar aplicaciones de Office
 

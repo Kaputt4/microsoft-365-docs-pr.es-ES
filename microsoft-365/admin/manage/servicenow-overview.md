@@ -10,6 +10,7 @@ ms.topic: article
 ms.service: microsoft-365-business
 ms.localizationpriority: medium
 ms.collection:
+- Tier2
 - scotvorg
 - M365-subscription-management
 - Adm_TOC
@@ -18,12 +19,12 @@ ROBOTS: NOINDEX, NOFOLLOW
 search.appverid:
 - MET150
 description: Guía de instalación y configuración de aplicaciones con ámbito certificado para ServiceNow.
-ms.openlocfilehash: 4ff41bba3f2b0302e6608781c34bc60973eebf37
-ms.sourcegitcommit: 3e1fc1919f64aff2e1ce83aa67bd415fe51604c1
+ms.openlocfilehash: cb36dfa2f0c27eee6112e7512a3dbc474c1dcf32
+ms.sourcegitcommit: 181a0aff54842dcbafd834647c6e9ee47304d10f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/07/2022
-ms.locfileid: "68499932"
+ms.lasthandoff: 10/27/2022
+ms.locfileid: "68735713"
 ---
 # <a name="microsoft-365-support-integration-with-servicenow-configuration-overview"></a>Información general de configuración de compatibilidad de Microsoft 365 con ServiceNow
 

@@ -18,12 +18,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Los administradores pueden habilitar la compatibilidad con etiquetas de confidencialidad para archivos de Word, Excel y PowerPoint en SharePoint y OneDrive.
-ms.openlocfilehash: 9bba98b57c2d677cce9f6afcc4ab1a11a49e94e3
-ms.sourcegitcommit: 50da6f1f6ef2274c17ed9729e7ad84395b0a9be2
+ms.openlocfilehash: 6d3f18556a075cc6ee79481117c863b0cd107564
+ms.sourcegitcommit: 181a0aff54842dcbafd834647c6e9ee47304d10f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/08/2022
-ms.locfileid: "68503542"
+ms.lasthandoff: 10/27/2022
+ms.locfileid: "68728805"
 ---
 # <a name="enable-sensitivity-labels-for-office-files-in-sharepoint-and-onedrive"></a>Habilitar etiquetas de confidencialidad para los archivos de Office en SharePoint y OneDrive
 
@@ -120,7 +120,9 @@ Carga de un documento etiquetado y, a continuación, extracción y visualizació
 
 - En el caso de los documentos cifrados, la impresión no se admite en Office para la Web.
 
-- En el caso de los documentos cifrados en Office para la Web, no se impide la copia en el Portapapeles y las capturas de pantalla. Para obtener más información, consulte [¿Puede Rights Management impedir las capturas de pantalla?](/azure/information-protection/faqs-rms#can-rights-management-prevent-screen-captures)
+- En el caso de los documentos cifrados en Office para la Web, [no se impiden las capturas de pantalla](/azure/information-protection/faqs-rms#can-rights-management-prevent-screen-captures). Hasta hace poco, no se impedía la copia en el Portapapeles para estos documentos. Ahora, cuando los documentos se etiquetan y cifran, y no se **concede el** [derecho de uso](/azure/information-protection/configure-usage-rights) de copia, Office en la Web impide la copia en el Portapapeles de la misma manera que las aplicaciones de escritorio impiden esta acción. Actualmente hay algunas excepciones para volver a etiquetar escenarios hasta que se actualiza el explorador, se inicia otra sesión o se vuelve a abrir el documento:
+    - A mitad de sesión, el documento cambia de sin cifrar a cifrado.
+    - A mitad de sesión, el documento cambia de cifrado y se concede el derecho de uso de copia a cifrado, pero no se concede el derecho de uso de copia.
 
 - De forma predeterminada, las aplicaciones de escritorio y las aplicaciones móviles de Office no admiten la coautoría de archivos etiquetados con cifrado. Estas aplicaciones continúan abriendo archivos etiquetados y cifrados en modo de edición exclusivo.
 

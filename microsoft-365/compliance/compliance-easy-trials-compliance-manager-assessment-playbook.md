@@ -18,12 +18,12 @@ search.appverid:
 - MET150
 description: Guía de usuario de evaluación de microsoft Purview Compliance Manager premium assessments.
 ms.custom: trial-playbook
-ms.openlocfilehash: 1ac89c8a139c0decde42aa2a87733e02f9def957
-ms.sourcegitcommit: 3e1fc1919f64aff2e1ce83aa67bd415fe51604c1
+ms.openlocfilehash: e287b12661c57df6bd0f07a1a097d944b37fceab
+ms.sourcegitcommit: 181a0aff54842dcbafd834647c6e9ee47304d10f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/07/2022
-ms.locfileid: "68500040"
+ms.lasthandoff: 10/27/2022
+ms.locfileid: "68728079"
 ---
 # <a name="trial-user-guide-microsoft-purview-compliance-manager-premium-assessments"></a>Guía del usuario de prueba: Evaluaciones premium de Microsoft Purview Compliance Manager
 
@@ -45,7 +45,7 @@ Nuestra página de [información general del Administrador de cumplimiento](comp
 1. [Filtrar la vista del panel](compliance-manager-setup.md#filtering-your-dashboard-view)
 1. [Información sobre las acciones de mejora](compliance-manager-setup.md#improvement-actions-page)
 1. [Comprender las evaluaciones](compliance-manager.md#assessments)
-1. [Haga un examen rápido de su entorno con el Configuration Manager del Cumplimiento de Microsoft](compliance-manager-mcca.md)
+1. [Realice una comprobación rápida del entorno mediante el Configuration Manager de cumplimiento de Microsoft.](compliance-manager-mcca.md)
 
 ## <a name="step-2-configure-compliance-manager"></a>Paso 2: Configurar el Administrador de cumplimiento
 

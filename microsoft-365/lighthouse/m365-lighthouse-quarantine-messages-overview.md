@@ -10,6 +10,7 @@ ms.topic: article
 ms.service: microsoft-365-lighthouse
 ms.localizationpriority: medium
 ms.collection:
+- Tier1
 - scotvorg
 - M365-subscription-management
 - Adm_O365
@@ -18,12 +19,12 @@ ms.custom:
 - M365-Lighthouse
 search.appverid: MET150
 description: En el caso de los proveedores de servicios administrados (MSP) que usan Microsoft 365 Lighthouse, aprenda a administrar los mensajes en cuarentena.
-ms.openlocfilehash: 23324b382a58fafd01c639a36672c9e3f3b71329
-ms.sourcegitcommit: 87283bb02ca750286f7c069f811b788730ed5832
+ms.openlocfilehash: a7f4adb299d3b3991dec39858a0e008a32163698
+ms.sourcegitcommit: 181a0aff54842dcbafd834647c6e9ee47304d10f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/21/2022
-ms.locfileid: "68659815"
+ms.lasthandoff: 10/27/2022
+ms.locfileid: "68720732"
 ---
 # <a name="overview-of-quarantined-messages-in-microsoft-365-lighthouse"></a>Introducción a los mensajes en cuarentena en Microsoft 365 Lighthouse
 

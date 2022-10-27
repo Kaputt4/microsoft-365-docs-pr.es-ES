@@ -17,6 +17,7 @@ ms.custom:
 - O365E_ServiceHealthModern
 - seo-marvel-apr2020
 ms.collection:
+- Tier3
 - scotvorg
 - Ent_O365
 - M365-subscription-management
@@ -26,12 +27,12 @@ search.appverid:
 - BCS160
 - IWA160
 description: Estado del servicio publicaciones del panel solo están en inglés, pero se pueden mostrar automáticamente en el idioma que especifique para Microsoft 365.
-ms.openlocfilehash: c2eb949fbe58cc14ea4d67a60d0be1604b7e4b1d
-ms.sourcegitcommit: 0b7070ec119e00e0dafe030bbfbef0ae5c9afa19
+ms.openlocfilehash: fc772725fbba10f6dbd6b3377b0ad821c486e903
+ms.sourcegitcommit: 181a0aff54842dcbafd834647c6e9ee47304d10f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/29/2022
-ms.locfileid: "68208840"
+ms.lasthandoff: 10/27/2022
+ms.locfileid: "68736351"
 ---
 # <a name="language-translation-for-service-health-dashboard"></a>Traducción de idioma para Estado del servicio panel
 

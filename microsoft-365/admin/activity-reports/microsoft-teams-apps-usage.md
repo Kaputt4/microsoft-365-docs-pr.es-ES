@@ -9,6 +9,7 @@ ms.service: o365-administration
 ms.localizationpriority: medium
 ROBOTS: NOINDEX, NOFOLLOW
 ms.collection:
+- Tier2
 - M365-subscription-management
 - Adm_O365
 - Adm_NonTOC
@@ -19,12 +20,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Obtenga información sobre cómo obtener el informe de uso de aplicaciones de Microsoft Teams y obtener información sobre la actividad de la aplicación de Teams en su organización.
-ms.openlocfilehash: 4306ab0c0617bfbba9336991d93305f4b68798d6
-ms.sourcegitcommit: 99b174a8d431092b3cf7d650593248671297fd91
+ms.openlocfilehash: f2135a4fd6fbb8b61406855c1f773187c1d5f794
+ms.sourcegitcommit: 181a0aff54842dcbafd834647c6e9ee47304d10f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/30/2022
-ms.locfileid: "68300778"
+ms.lasthandoff: 10/27/2022
+ms.locfileid: "68723043"
 ---
 # <a name="microsoft-365-reports-in-the-admin-center---microsoft-teams-apps-usage-reports"></a>Informes de Microsoft 365 en el Centro de administración: informes de uso de aplicaciones de Microsoft Teams
 
@@ -106,12 +107,12 @@ En esta tabla se muestra la vista por aplicación con las siguientes métricas p
 |**Métrica**|**Definición**|**¿Se incluye de forma predeterminada?**|
 |:-----|:-----|:-----|
 |||
-|Identificador de la aplicación   <br/> |Identificador de aplicación externo presente en el manifiesto de la aplicación.     <br/> |Yes |
-|Fecha de último uso    <br/> |Fecha en la que cualquiera de la organización usó esa aplicación por última vez.   <br/> |Yes |
+|Identificador de la aplicación   <br/> |Identificador de aplicación externo presente en el manifiesto de la aplicación.     <br/> |Sí |
+|Fecha de último uso    <br/> |Fecha en la que cualquiera de la organización usó esa aplicación por última vez.   <br/> |Sí |
 |Teams que usa esta aplicación   <br/> |El número de equipos de Teams distintos que tienen al menos un usuario que usa esta aplicación.   <br/> |Yes |
-|Usuarios que usan esta aplicación    <br/> |Número de usuarios distintos de la organización que usan esta aplicación.   <br/> |Yes |
-|Se usa en Windows    <br/> | Esto indica si al menos un usuario de la organización ha usado esa aplicación en Windows.  <br/> |Yes |
-|Se usa en dispositivos móviles  <br/> |Esto indica si al menos un usuario de la organización ha usado esa aplicación en mobile. <br/> |Yes |
+|Usuarios que usan esta aplicación    <br/> |Número de usuarios distintos de la organización que usan esta aplicación.   <br/> |Sí |
+|Se usa en Windows    <br/> | Esto indica si al menos un usuario de la organización ha usado esa aplicación en Windows.  <br/> |Sí |
+|Se usa en dispositivos móviles  <br/> |Esto indica si al menos un usuario de la organización ha usado esa aplicación en mobile. <br/> |Sí |
 |Se usa en la web   <br/> | Esto indica si al menos un usuario de la organización ha usado esa aplicación en web.  <br/> |Sí |
 |Se usa en Mac <br/> |Número de reuniones ad hoc organizadas por un usuario durante el período de tiempo especificado. <br/>|No |
 |Nombre de la aplicación  <br/> |Nombre de esta aplicación como presente en el manifiesto de la aplicación.   <br/>|No |
@@ -159,12 +160,12 @@ En esta tabla se muestra la vista por usuario con las siguientes métricas para 
 |:-----|:-----|:-----|
 ||||
 |Nombre de usuario    <br/> |Nombre de usuario de un usuario único. El valor está oculto de forma predeterminada.  <br/> |Yes |
-|Aplicaciones instaladas     <br/> |Número de aplicaciones únicas (en la Tienda y personalizadas) que el usuario ha instalado.   <br/> |Yes |
-|Aplicaciones usadas    <br/> |Número de aplicaciones únicas (en la Tienda y personalizadas) que el usuario ha abierto o usado.    <br/> |Yes |
+|Aplicaciones instaladas     <br/> |Número de aplicaciones únicas (en la Tienda y personalizadas) que el usuario ha instalado.   <br/> |Sí |
+|Aplicaciones usadas    <br/> |Número de aplicaciones únicas (en la Tienda y personalizadas) que el usuario ha abierto o usado.    <br/> |Sí |
 |Aplicaciones usadas en un equipo     <br/> |Número de aplicaciones únicas (en la Tienda y personalizadas) que el usuario ha abierto o usado en un equipo de Teams.   <br/> |Sí |
-|Se usa en Windows    <br/> | Esto indica si ese usuario ha usado alguna aplicación en Windows.  <br/> |Yes |
-|Se usa en dispositivos móviles  <br/> |Esto indica si ese usuario ha usado alguna aplicación en Móvil (iOS o Android). <br/> |Yes |
-|Se usa en la web   <br/> | Esto indica si ese usuario ha usado alguna aplicación en web.   <br/> |Yes |
+|Se usa en Windows    <br/> | Esto indica si ese usuario ha usado alguna aplicación en Windows.  <br/> |Sí |
+|Se usa en dispositivos móviles  <br/> |Esto indica si ese usuario ha usado alguna aplicación en Móvil (iOS o Android). <br/> |Sí |
+|Se usa en la web   <br/> | Esto indica si ese usuario ha usado alguna aplicación en web.   <br/> |Sí |
 |Se usa en Mac <br/> |Esto indica si ese usuario ha usado alguna aplicación en Mac.  <br/>|No |
 |||
 

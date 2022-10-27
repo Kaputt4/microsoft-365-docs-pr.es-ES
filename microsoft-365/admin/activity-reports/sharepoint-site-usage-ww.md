@@ -10,6 +10,7 @@ ms.topic: article
 ms.service: microsoft-365-business
 ms.localizationpriority: medium
 ms.collection:
+- Tier2
 - scotvorg
 - M365-subscription-management
 - Adm_O365
@@ -23,12 +24,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Obtenga el informe de uso del sitio de SharePoint para saber cuántos archivos almacenan los usuarios en sitios de SharePoint, cuántos se usan activamente y el almacenamiento total consumido.
-ms.openlocfilehash: e0d61ce924c09f8ee782a314629089978e42348f
-ms.sourcegitcommit: 0b7070ec119e00e0dafe030bbfbef0ae5c9afa19
+ms.openlocfilehash: f31c48c3ba68aa52a842bf8d11776b509f077a06
+ms.sourcegitcommit: 181a0aff54842dcbafd834647c6e9ee47304d10f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/29/2022
-ms.locfileid: "68172123"
+ms.lasthandoff: 10/27/2022
+ms.locfileid: "68722602"
 ---
 # <a name="microsoft-365-reports-in-the-admin-center---sharepoint-site-usage"></a>Informes de Microsoft 365 en el Centro de administración: uso del sitio de SharePoint
 

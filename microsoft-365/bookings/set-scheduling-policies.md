@@ -8,15 +8,16 @@ ms.topic: article
 ms.service: bookings
 ms.localizationpriority: medium
 ms.collection:
+- Tier1
 - scotvorg
 ms.assetid: 4b2c84ec-64d3-4027-af4c-40f69e7b37c9
 description: Obtenga información sobre cómo establecer directivas de programación para su empresa. Las directivas de programación incluyen la duración de las citas, así como los plazos de entrega y cancelación aceptables.
-ms.openlocfilehash: ebc3441b73efabb7122f48282118fb466a71ede5
-ms.sourcegitcommit: 0b7070ec119e00e0dafe030bbfbef0ae5c9afa19
+ms.openlocfilehash: fbe3cfeec6e48a2d40a186e934a15e28a61253c0
+ms.sourcegitcommit: 181a0aff54842dcbafd834647c6e9ee47304d10f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/29/2022
-ms.locfileid: "68198743"
+ms.lasthandoff: 10/27/2022
+ms.locfileid: "68729047"
 ---
 # <a name="set-your-microsoft-bookings-scheduling-policies"></a>Establecer las directivas de programación de Microsoft Bookings
 

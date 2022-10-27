@@ -8,15 +8,16 @@ ms.topic: article
 ms.service: bookings
 ms.localizationpriority: medium
 ms.collection:
+- Tier1
 - scotvorg
 ms.assetid: 828a17db-956a-401e-bb62-d153b6dffd53
 description: Siga estas instrucciones para crear su página Acerca de nosotros con el nombre comercial, la dirección, el número de teléfono, la dirección URL del sitio web, el logotipo y el horario comercial en Microsoft Bookings.
-ms.openlocfilehash: 1aca650aa4d2c783790af3f4d2531161afb912d4
-ms.sourcegitcommit: 0b7070ec119e00e0dafe030bbfbef0ae5c9afa19
+ms.openlocfilehash: afd5fac0e84bb392391cb85af68259ad7d63d652
+ms.sourcegitcommit: 181a0aff54842dcbafd834647c6e9ee47304d10f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/29/2022
-ms.locfileid: "68163829"
+ms.lasthandoff: 10/27/2022
+ms.locfileid: "68729201"
 ---
 # <a name="enter-your-business-information-in-microsoft-bookings"></a>Escriba la información empresarial en Microsoft Bookings
 

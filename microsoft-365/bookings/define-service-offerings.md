@@ -8,15 +8,16 @@ ms.topic: article
 ms.service: bookings
 ms.localizationpriority: medium
 ms.collection:
+- Tier1
 - scotvorg
 ms.assetid: 4a1c391e-524f-48e0-bef8-185df3a9634b
 description: Instrucciones para especificar información sobre ofertas de servicio, incluidos el nombre del servicio, la descripción, la ubicación, la duración y los precios. También puede etiquetar a los empleados calificados para proporcionar el servicio.
-ms.openlocfilehash: a97155f4639fb89773520a51f85cdd4518c45ff3
-ms.sourcegitcommit: 0b7070ec119e00e0dafe030bbfbef0ae5c9afa19
+ms.openlocfilehash: b598992d04663d8589a237f8f088c87a65265498
+ms.sourcegitcommit: 181a0aff54842dcbafd834647c6e9ee47304d10f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/29/2022
-ms.locfileid: "68167745"
+ms.lasthandoff: 10/27/2022
+ms.locfileid: "68720446"
 ---
 # <a name="define-your-service-offerings-in-bookings"></a>Definición de las ofertas de servicio en Bookings
 

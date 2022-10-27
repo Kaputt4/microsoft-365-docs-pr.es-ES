@@ -11,6 +11,7 @@ ms.topic: article
 ms.service: microsoft-365-business
 ms.localizationpriority: medium
 ms.collection:
+- Tier1
 - scotvorg
 - M365-subscription-management
 - Adm_O365
@@ -21,12 +22,12 @@ ms.custom:
 search.appverid: MET150
 description: Obtenga información sobre el registro de autoservicio de Microsoft 365 y los programas de autoservicio disponibles, como Microsoft Power Apps, Microsoft Power Automate y Dynamics 365 for Finance.
 ms.date: 03/17/2021
-ms.openlocfilehash: e12e3b75be80a78640fb57cceb7aeca1cbd85a45
-ms.sourcegitcommit: 0b7070ec119e00e0dafe030bbfbef0ae5c9afa19
+ms.openlocfilehash: 0071067558e8d4689bd4e773aad07e2204cc252c
+ms.sourcegitcommit: 181a0aff54842dcbafd834647c6e9ee47304d10f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/29/2022
-ms.locfileid: "68204879"
+ms.lasthandoff: 10/27/2022
+ms.locfileid: "68728541"
 ---
 # <a name="using-self-service-sign-up-in-your-organization"></a>Uso del registro de autoservicio en su organización
 

@@ -10,6 +10,7 @@ ms.topic: article
 ms.service: microsoft-365-business
 ms.localizationpriority: medium
 ms.collection:
+- Tier2
 - scotvorg
 - M365-subscription-management
 - Adm_O365
@@ -22,12 +23,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Obtenga información sobre las aplicaciones de Microsoft Teams que se usan en su organización obteniendo el informe de uso de aplicaciones de Microsoft Teams de informes de Microsoft 365.
-ms.openlocfilehash: 20cf31e5ef7724b87aa369c11bb15ad46b9d8490
-ms.sourcegitcommit: 0b7070ec119e00e0dafe030bbfbef0ae5c9afa19
+ms.openlocfilehash: b1eb7de1b386881dadbd9f05ea3579a36f1b1dc6
+ms.sourcegitcommit: 181a0aff54842dcbafd834647c6e9ee47304d10f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/29/2022
-ms.locfileid: "68194079"
+ms.lasthandoff: 10/27/2022
+ms.locfileid: "68722932"
 ---
 # <a name="microsoft-365-reports-in-the-admin-center---microsoft-teams-device-usage"></a>Informes de Microsoft 365 en el Centro de administración: uso de dispositivos de Microsoft Teams
 

@@ -6,15 +6,18 @@ manager: scotv
 audience: Admin
 ms.topic: article
 ms.service: bookings
+ms.collection:
+- Tier1
+- scotvorg
 ms.localizationpriority: medium
 ms.assetid: fd6b7587-5055-4bcd-83a4-13bd4929bfff
 description: Si necesita hacer preguntas a los clientes cuando reserven una cita con usted en línea, puede agregar preguntas personalizadas y preguntas necesarias a la página de reserva.
-ms.openlocfilehash: d42f883f3d58882ec5a2e8e8e2bbe7baf7ed3232
-ms.sourcegitcommit: db1e48af88995193f15bbd5962f5101a6088074b
+ms.openlocfilehash: a2000a277af8a3b71e8e29a4d6a1e244c18a71bd
+ms.sourcegitcommit: 181a0aff54842dcbafd834647c6e9ee47304d10f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/23/2022
-ms.locfileid: "65637701"
+ms.lasthandoff: 10/27/2022
+ms.locfileid: "68736549"
 ---
 # <a name="add-custom-and-required-questions-to-the-booking-page"></a>Agregar preguntas personalizadas y requeridas a la página de reserva
 
@@ -22,7 +25,7 @@ Bookings le permite crear preguntas para hacerles a sus clientes cuando están r
 
 Las preguntas se asocian a un servicio, por lo que cada servicio puede tener un conjunto diferente de preguntas. Por ejemplo, un estilista de pelo puede preguntar a los clientes que están reservando una cita para colorear el cabello si tienen alergias conocidas a lejías o tintes. Esto le permite a usted y a sus clientes ahorrar tiempo cuando llegan a su cita.
 
-Los clientes verán las preguntas personalizadas al crear su cita en la página de reserva. El personal verá las preguntas personalizadas cuando cree una nueva reserva desde el calendario de Bookings o cuando vea una cita existente. Bookings guarda todas las preguntas en una lista maestra para que no tenga que volver a crear las mismas preguntas para cada servicio. También puede elegir si las preguntas son necesarias u opcionales.
+Los clientes verán las preguntas personalizadas al crear su cita en la página de reserva. El personal verá las preguntas personalizadas cuando cree una nueva reserva desde el calendario de Bookings o cuando vea una cita existente. Bookings guarda todas sus preguntas en una lista maestra para que no tenga que volver a crear las mismas preguntas para cada servicio. También puede elegir si las preguntas son necesarias u opcionales.
 
 > [!NOTE]
 > Las respuestas del cliente a las preguntas se pueden ver al consultar su cita en el calendario de reserva.
@@ -31,7 +34,7 @@ Para obtener más información sobre cómo personalizar y personalizar la págin
 
 ## <a name="add-custom-questions-to-your-services"></a>Adición de preguntas personalizadas a los servicios
 
-1. Inicie sesión en Microsoft 365 y vaya a **Bookings**.
+1. Inicie sesión en Microsoft 365 y vaya a **Reservas**.
 
 1. Elija el calendario.
 
@@ -53,7 +56,7 @@ Para obtener más información sobre cómo personalizar y personalizar la págin
 
 1. Haga clic en **Aceptar** en la parte superior de la página y, a continuación, **guarde el servicio**.
 
-Bookings guardará todas las preguntas personalizadas en una lista maestra para que pueda agregar fácilmente preguntas a cada servicio sin necesidad de escribir repetidamente las mismas preguntas. Por ejemplo, si abre un servicio diferente, la pregunta que creó para el primer servicio se mostrará en la sección Campos personalizados, pero se deshabilitará. Haga clic en la pregunta para que se muestre un rectángulo resaltado y la pregunta esté habilitada.
+Bookings guardará todas sus preguntas personalizadas en una lista maestra para que pueda agregar fácilmente preguntas a cada servicio sin necesidad de escribir repetidamente las mismas preguntas. Por ejemplo, si abre un servicio diferente, la pregunta que creó para el primer servicio se mostrará en la sección Campos personalizados, pero se deshabilitará. Haga clic en la pregunta para que se muestre un rectángulo resaltado y la pregunta esté habilitada.
 
 En este ejemplo, puede ver que las preguntas que se agregaron para el primer servicio están disponibles para este servicio. Las preguntas que cree para este servicio estarán disponibles para todos los servicios.
 
@@ -72,6 +75,6 @@ Cuando los clientes reserven una cita con usted, las preguntas de información b
 
 ## <a name="staff-experience"></a>Experiencia del personal
 
-Cuando los clientes reserven una cita con usted, su personal verá las preguntas y las respuestas del cliente en el calendario de reserva. Para verlo, vaya a **Bookings** \> **Calendario** y abra una cita.
+Cuando los clientes reserven una cita con usted, su personal verá las preguntas y las respuestas del cliente en el calendario de reserva. Para verlo, vaya a **Calendario de** \> reservas y abra una cita.
 
 ![Imagen de lo que el personal ve cuando se habilitan las preguntas.](../media/bookings-questions-staff.png)

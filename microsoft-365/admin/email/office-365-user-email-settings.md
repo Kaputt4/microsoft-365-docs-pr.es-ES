@@ -9,6 +9,7 @@ audience: Admin
 ms.topic: overview
 ms.service: microsoft-365-business
 ms.collection:
+- Tier1
 - scotvorg
 - Adm_O365
 - Adm_TOC
@@ -18,12 +19,12 @@ search.appverid:
 - MET150
 ms.assetid: 03083fdf-bc52-409a-b2ac-2a5f5c308fa0
 description: Este artículo le proporciona información sobre cómo administrar la configuración de los usuarios.
-ms.openlocfilehash: 7084210b34c29e2b1b83b6a00fda1e226f732a2a
-ms.sourcegitcommit: 0b7070ec119e00e0dafe030bbfbef0ae5c9afa19
+ms.openlocfilehash: cf977625e4bd538481670c730a97eb7855fcdfd0
+ms.sourcegitcommit: 181a0aff54842dcbafd834647c6e9ee47304d10f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/29/2022
-ms.locfileid: "68190361"
+ms.lasthandoff: 10/27/2022
+ms.locfileid: "68727485"
 ---
 # <a name="user-email-settings-in-microsoft-365"></a>Configuración de correo electrónico de usuario en Microsoft 365
 

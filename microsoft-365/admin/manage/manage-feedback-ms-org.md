@@ -10,6 +10,7 @@ ms.topic: article
 ms.service: microsoft-365-business
 ms.localizationpriority: medium
 ms.collection:
+- Tier2
 - scotvorg
 - M365-subscription-management
 - Adm_O365
@@ -22,12 +23,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Administre los comentarios que los usuarios pueden enviar a Microsoft sobre los productos de Microsoft.
-ms.openlocfilehash: 1b062f445558d94a5abca4fa6184ffb49009c79b
-ms.sourcegitcommit: 0b7070ec119e00e0dafe030bbfbef0ae5c9afa19
+ms.openlocfilehash: a10c16bea183520594d47d7f3010bfcc71883325
+ms.sourcegitcommit: 181a0aff54842dcbafd834647c6e9ee47304d10f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/29/2022
-ms.locfileid: "68192715"
+ms.lasthandoff: 10/27/2022
+ms.locfileid: "68729157"
 ---
 # <a name="manage-microsoft-feedback-for-your-organization"></a>Administrar comentarios de Microsoft para la organización
 
@@ -91,10 +92,10 @@ Los dispositivos deben tener un número mínimo de compilación para usar estas 
 |**Nombre de la directiva**|**Estado predeterminado**|**Resumen de control**|
 |:-----|:-----|:-----|
 |Permitir a los usuarios acceder al portal de comentarios|Activado|Administración del acceso de los usuarios al portal de comentarios|
-|Permitir que los usuarios envíen comentarios a Microsoft|Activada|Controla los puntos de entrada de comentarios entre las aplicaciones|
+|Permitir que los usuarios envíen comentarios a Microsoft|Activado|Controla los puntos de entrada de comentarios entre las aplicaciones|
 |Permitir que los usuarios reciban y respondan encuestas de Microsoft dentro de un producto|Activada|Controla las solicitudes de encuesta dentro del producto|
-|Permitir que los usuarios incluyan capturas de pantalla y datos adjuntos cuando envíen comentarios a Microsoft|Desactivada|Determina qué metadatos puede decidir enviar el usuario con comentarios o encuestas|
-|Permitir que Microsoft realice un seguimiento de los comentarios enviados por los usuarios|Desactivada|Determina si el usuario puede compartir información de contacto con comentarios o encuestas|
+|Permitir que los usuarios incluyan capturas de pantalla y datos adjuntos cuando envíen comentarios a Microsoft|Desactivado|Determina qué metadatos puede decidir enviar el usuario con comentarios o encuestas|
+|Permitir que Microsoft realice un seguimiento de los comentarios enviados por los usuarios|Desactivado|Determina si el usuario puede compartir información de contacto con comentarios o encuestas|
 |Permitir que los usuarios incluyan archivos de registro y ejemplos de contenido cuando envíen comentarios a Microsoft|Desactivada|Determina los metadatos que el usuario puede decidir enviar con comentarios o encuestas.|
 
 > [!NOTE]

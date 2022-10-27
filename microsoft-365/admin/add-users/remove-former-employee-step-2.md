@@ -10,6 +10,7 @@ ms.topic: article
 ms.service: microsoft-365-business
 ms.localizationpriority: medium
 ms.collection:
+- Tier1
 - scotvorg
 - M365-subscription-management
 - Adm_O365
@@ -26,12 +27,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Una vez que haya bloqueado que un usuario pueda iniciar sesión en su organización, obtenga información sobre dos maneras de guardar el contenido del buzón del empleado anterior.
-ms.openlocfilehash: f77a68cf310f292ffc776269146d363d7cc3ba0d
-ms.sourcegitcommit: 0b7070ec119e00e0dafe030bbfbef0ae5c9afa19
+ms.openlocfilehash: 6ee2a6bd84a092cda28efe54a621000d680bc166
+ms.sourcegitcommit: 181a0aff54842dcbafd834647c6e9ee47304d10f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/29/2022
-ms.locfileid: "68195135"
+ms.lasthandoff: 10/27/2022
+ms.locfileid: "68721766"
 ---
 # <a name="step-2---save-the-contents-of-a-former-employees-mailbox"></a>Paso 2: Guardar el contenido del buzón de un empleado anterior
 

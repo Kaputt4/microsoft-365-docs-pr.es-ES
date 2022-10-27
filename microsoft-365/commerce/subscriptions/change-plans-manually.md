@@ -11,6 +11,7 @@ ms.topic: article
 ms.service: microsoft-365-business
 ms.localizationpriority: medium
 ms.collection:
+- Tier1
 - scotvorg
 - M365-subscription-management
 - Adm_O365
@@ -21,12 +22,12 @@ search.appverid: MET150
 description: Cambie las suscripciones manualmente comprando una nueva suscripción y asegurándose de que ambas están enumeradas y activas.
 ROBOTS: NOINDEX
 ms.date: 03/17/2021
-ms.openlocfilehash: 6428be1b4751a9d1f356278f810c31e6731648d2
-ms.sourcegitcommit: 0b7070ec119e00e0dafe030bbfbef0ae5c9afa19
+ms.openlocfilehash: 4acc53fd99b9e2c624445f8f724f73766666f13d
+ms.sourcegitcommit: 181a0aff54842dcbafd834647c6e9ee47304d10f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/29/2022
-ms.locfileid: "68185741"
+ms.lasthandoff: 10/27/2022
+ms.locfileid: "68736329"
 ---
 # <a name="manually-change-microsoft-plans"></a>Cambiar manualmente los planes de Microsoft
 

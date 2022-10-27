@@ -7,9 +7,11 @@ author: kwekua
 manager: scotv
 audience: Admin
 ms.topic: article
-ms.service: o365-administration
+ms.service: microsoft-365-business
 ms.localizationpriority: medium
 ms.collection:
+- Tier1
+- scotvorg
 - M365-subscription-management
 - Adm_O365
 - Adm_TOC
@@ -25,12 +27,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Reenvíe el correo electrónico de un empleado anterior a otro empleado o conviértalo en un buzón compartido donde varias personas podrán acceder a él en lugar de a una persona.
-ms.openlocfilehash: 302517ae44d9f263b293a6aa629a7bc58f8594ec
-ms.sourcegitcommit: 9255a7e8b398f92d8dae09886ae95dc8577bf29a
+ms.openlocfilehash: c922b79a90a78768bbdccc9414c3edce17e65c69
+ms.sourcegitcommit: 181a0aff54842dcbafd834647c6e9ee47304d10f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/17/2022
-ms.locfileid: "65436589"
+ms.lasthandoff: 10/27/2022
+ms.locfileid: "68721612"
 ---
 # <a name="step-4---forward-a-former-employees-email-to-another-employee-or-convert-to-a-shared-mailbox"></a>Paso 4: Reenviar el correo electrónico de un antiguo empleado a otro empleado o convertirlo en un buzón compartido
 
@@ -41,7 +43,7 @@ En este paso, asignará la dirección de correo electrónico del empleado anteri
 Al convertir el buzón de un usuario en un buzón compartido, se conservan todos los correos electrónicos y calendario existentes. Solo ahora está en un buzón compartido donde varias personas podrán acceder a él en lugar de a una persona. Puede volver a convertir un buzón compartido en un buzón de usuario (privado) en una fecha posterior si lo desea.
 
 - La creación de un buzón compartido es la manera menos costosa de usar, ya que no tendrá que pagar por una licencia **siempre y cuando el buzón sea menor que 50 GB**. Si tiene más de 50 GB, deberá asignarle una licencia.
-- Si convierte el buzón en uno compartido, todos los mensajes de correo electrónico antiguos también estarán disponibles. Esto puede ocupar una gran cantidad de espacio.
+- If you convert the mailbox to a shared mailbox, all the old email will be available, too. This can take up a lot of space.
 - Si configura el reenvío de correo electrónico *, solo se* enviarán nuevos correos electrónicos enviados al empleado anterior al empleado actual.
 
 Siga estos pasos para [convertir el buzón del usuario en un buzón compartido](../email/convert-user-mailbox-to-shared-mailbox.md).
@@ -53,12 +55,12 @@ Siga estos pasos para [convertir el buzón del usuario en un buzón compartido](
 
 1. En el centro de administración, vaya a la página **Usuarios** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=834822" target="_blank">Usuarios activos</a>.
 2. Seleccione el nombre del empleado que desea bloquear y, a continuación, seleccione la pestaña **Correo** .
-3. En **Reenvío de correo electrónico**, seleccione **Administrar el reenvío de correo electrónico**.
+3. En **Email Reenvío**, seleccione **Administrar reenvío de correo electrónico**.
 4. Active **Reenviar todo el correo electrónico enviado a este buzón**. En el cuadro **Dirección de reenvío** , escriba la dirección de correo electrónico del empleado actual que va a recibir el correo electrónico.
 5. Seleccione **Guardar**.
 6. Recuerde no eliminar la cuenta del antiguo empleado.
 
-### <a name="cancel-outlook-meetings"></a>Cancelación de reuniones Outlook
+### <a name="cancel-outlook-meetings"></a>Cancelación de reuniones de Outlook
 
 Asegúrese de cancelar todas las reuniones que el usuario anterior tenía en su calendario. Esto permite a los usuarios quitar las reuniones creadas por el usuario anterior.
 

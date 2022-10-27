@@ -10,6 +10,7 @@ ms.topic: article
 ms.service: microsoft-365-business
 ms.localizationpriority: medium
 ms.collection:
+- Tier1
 - scotvorg
 - M365-subscription-management
 - Adm_O365
@@ -21,12 +22,12 @@ search.appverid:
 - MET150
 ms.assetid: d5155593-3bac-4d8d-9d8b-f4513a81479e
 description: Obtenga información sobre cómo eliminar una cuenta de usuario de Microsoft 365, qué hacer con el correo electrónico del usuario y el contenido de OneDrive y si desea conservar la licencia del producto.
-ms.openlocfilehash: 1eb9354352f81ff3934b2bb5a0b7d2af4c69a581
-ms.sourcegitcommit: 0b7070ec119e00e0dafe030bbfbef0ae5c9afa19
+ms.openlocfilehash: a0be975af6d0bd08a8b2f69acf65ba9e736cab90
+ms.sourcegitcommit: 181a0aff54842dcbafd834647c6e9ee47304d10f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/29/2022
-ms.locfileid: "68192759"
+ms.lasthandoff: 10/27/2022
+ms.locfileid: "68722118"
 ---
 # <a name="delete-a-user-from-your-organization"></a>Elimine un usuario de su organización
   

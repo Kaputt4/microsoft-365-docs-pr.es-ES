@@ -11,6 +11,7 @@ ms.service: microsoft-365-business
 ms.localizationpriority: high
 monikerRange: o365-worldwide
 ms.collection:
+- Tier2
 - scotvorg
 - M365-subscription-management
 - Adm_O365
@@ -22,12 +23,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Obtenga información sobre cómo La puntuación de adopción de Microsoft refleja las medidas de la experiencia de las personas y la tecnología y la comparación con organizaciones de tamaño similar.
-ms.openlocfilehash: 83170a50a473c24656e10ce57cea4bc44c3767fc
-ms.sourcegitcommit: 0d8fb571024f134d7480fe14cffc5e31a687d356
+ms.openlocfilehash: 46af48a0cbb8b686657a40502a8ea1e5206baa53
+ms.sourcegitcommit: 181a0aff54842dcbafd834647c6e9ee47304d10f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/20/2022
-ms.locfileid: "68621039"
+ms.lasthandoff: 10/27/2022
+ms.locfileid: "68721238"
 ---
 # <a name="microsoft-adoption-score"></a>Puntuación de adopción de Microsoft 
 
@@ -69,7 +70,7 @@ Visite [los controles de privacidad de La puntuación de adopción](privacy.md) 
 Para los datos de experiencias de personas, necesitará una suscripción a Microsoft 365 para empresas u Office 365 para empresas. Para los datos de análisis de punto de conexión de su espacio empresarial, necesita agregar Microsoft Intune a la suscripción. Intune ayuda a proteger los datos de su organización mediante la administración de dispositivos y aplicaciones. Cuando tenga Intune, puede activar el análisis de punto de conexión en la experiencia de Intune. Para más información sobre Microsoft Intune, consulte la [documentación de Microsoft Intune](/mem/intune/).
 
 > [!NOTE]
-> No se requiere una licencia para Ideas Viva para obtener las características de la puntuación de adopción.
+> No se requiere una licencia para Viva Insights para obtener las características de la puntuación de adopción.
 
 La puntuación de adopción solo está disponible en la Centro de administración de Microsoft 365 y solo pueden acceder los profesionales de TI que tienen uno de los siguientes roles:  
 

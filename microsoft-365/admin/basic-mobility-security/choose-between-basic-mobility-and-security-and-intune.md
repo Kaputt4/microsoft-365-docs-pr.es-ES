@@ -10,6 +10,7 @@ ms.topic: article
 ms.service: microsoft-365-business
 ms.localizationpriority: medium
 ms.collection:
+- Tier3
 - scotvorg
 - M365-subscription-management
 - Adm_O365
@@ -20,12 +21,12 @@ ms.custom:
 search.appverid:
 - MET150
 description: Basic Mobility and Security forma parte de los planes de Microsoft 365, mientras que Microsoft Intune es un producto independiente incluido con determinados planes de Microsoft 365.
-ms.openlocfilehash: 9d45209ac45aeddb05ae7524683c32e74ac35132
-ms.sourcegitcommit: 0b7070ec119e00e0dafe030bbfbef0ae5c9afa19
+ms.openlocfilehash: 191fdefdb4ae1af9ca4873c404a78ca6635b9958
+ms.sourcegitcommit: 181a0aff54842dcbafd834647c6e9ee47304d10f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/29/2022
-ms.locfileid: "68191439"
+ms.lasthandoff: 10/27/2022
+ms.locfileid: "68721194"
 ---
 # <a name="choose-between-basic-mobility-and-security-or-intune"></a>Elija entre Basic Mobility and Security o Intune
 

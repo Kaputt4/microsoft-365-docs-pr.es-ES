@@ -8,6 +8,7 @@ ms.topic: article
 ms.service: microsoft-365-business
 ms.localizationpriority: medium
 ms.collection:
+- Tier2
 - scotvorg
 - M365-subscription-management
 - Adm_O365
@@ -22,12 +23,12 @@ search.appverid:
 - GEA150
 ms.assetid: a27f1a99-3557-4f85-9560-a28e3d822a40
 description: Obtenga un informe de Grupos de Microsoft 365 para obtener información sobre la actividad de los grupos de su organización y ver cuántos grupos se crean y usan.
-ms.openlocfilehash: bd03e5a0c5219bbfc46a9834db0d83d454d7cf40
-ms.sourcegitcommit: 0b7070ec119e00e0dafe030bbfbef0ae5c9afa19
+ms.openlocfilehash: 814d1ca174024c06cff20c36d05d886178035cbc
+ms.sourcegitcommit: 181a0aff54842dcbafd834647c6e9ee47304d10f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/29/2022
-ms.locfileid: "68198127"
+ms.lasthandoff: 10/27/2022
+ms.locfileid: "68722866"
 ---
 # <a name="microsoft-365-reports-in-the-admin-center---microsoft-365-groups"></a>Informes de Microsoft 365 en el Centro de administración: grupos de Microsoft 365
 

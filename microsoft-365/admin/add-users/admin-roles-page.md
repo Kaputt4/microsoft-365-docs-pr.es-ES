@@ -10,6 +10,7 @@ ms.topic: overview
 ms.service: microsoft-365-business
 ms.localizationpriority: medium
 ms.collection:
+- Tier
 - scotvorg
 - M365-subscription-management
 - Adm_O365W
@@ -22,12 +23,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Obtenga información sobre los roles de administrador, como el administrador de servicios que abre vales de soporte técnico, que se asignan a las funciones empresariales y tienen permisos para las tareas en el centro de administración.
-ms.openlocfilehash: d7d2f9521d89c2ae8d0d3a53e2615ff80dc0b713
-ms.sourcegitcommit: 0b7070ec119e00e0dafe030bbfbef0ae5c9afa19
+ms.openlocfilehash: ba9b40b026f6e4543aa12834ca7f9896f6fd7918
+ms.sourcegitcommit: 181a0aff54842dcbafd834647c6e9ee47304d10f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/29/2022
-ms.locfileid: "68185125"
+ms.lasthandoff: 10/27/2022
+ms.locfileid: "68722162"
 ---
 # <a name="get-started-with-the-microsoft-365-admin-roles-page"></a>Introducción a la página Roles de administrador de Microsoft 365
 

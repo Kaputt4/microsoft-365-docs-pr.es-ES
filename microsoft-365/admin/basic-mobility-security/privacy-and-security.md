@@ -9,18 +9,19 @@ ms.topic: article
 ms.service: microsoft-365-business
 ms.localizationpriority: medium
 ms.collection:
+- Tier3
 - scotvorg
 - M365-subscription-management
 - Adm_O365
 - Adm_TOC
 ms.custom: AdminSurgePortfolio
 description: Después de activar Basic Mobility and Security, puede crear directivas de administración de dispositivos móviles.
-ms.openlocfilehash: a484626751b00905da86f0fff4431c7f82c8ce53
-ms.sourcegitcommit: 0b7070ec119e00e0dafe030bbfbef0ae5c9afa19
+ms.openlocfilehash: 31f1acdf6f0bb90fd501b3e9e8d447eaca3bd9d8
+ms.sourcegitcommit: 181a0aff54842dcbafd834647c6e9ee47304d10f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/29/2022
-ms.locfileid: "68190471"
+ms.lasthandoff: 10/27/2022
+ms.locfileid: "68727529"
 ---
 # <a name="privacy-and-security-in-basic-mobility-and-security"></a>Privacidad y seguridad en movilidad y seguridad básicas
 

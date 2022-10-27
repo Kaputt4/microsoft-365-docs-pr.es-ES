@@ -10,6 +10,7 @@ ms.topic: article
 ms.service: microsoft-365-business
 ms.localizationpriority: medium
 ms.collection:
+- Tier2
 - scotvorg
 - highpri
 - M365-subscription-management
@@ -29,12 +30,12 @@ search.appverid:
 - GEA150
 ms.assetid: a8b487a9-2a45-4581-9dc4-5d28a47010a2
 description: Obtenga información sobre cómo agregar y configurar el dominio en Microsoft 365 para que sus servicios, como el correo electrónico y Skype Empresarial Online, usen su propio nombre de dominio.
-ms.openlocfilehash: a1275d14426f69fc96498772e2fc5aa041d497c6
-ms.sourcegitcommit: 0b7070ec119e00e0dafe030bbfbef0ae5c9afa19
+ms.openlocfilehash: f66099b7496bc60a7b12618785d1596eab70b174
+ms.sourcegitcommit: 181a0aff54842dcbafd834647c6e9ee47304d10f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/29/2022
-ms.locfileid: "68178215"
+ms.lasthandoff: 10/27/2022
+ms.locfileid: "68728695"
 ---
 # <a name="change-nameservers-to-set-up-microsoft-365-with-any-domain-registrar"></a>Cambiar los servidores de nombres para configurar Microsoft 365 con cualquier registrador de dominios
 

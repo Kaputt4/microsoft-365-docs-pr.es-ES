@@ -10,6 +10,7 @@ ms.topic: article
 ms.service: microsoft-365-business
 ms.localizationpriority: high
 ms.collection:
+- Tier2
 - scotvorg
 - M365-subscription-management
 - Adm_O365
@@ -26,12 +27,12 @@ search.appverid:
 - MOE150
 ms.assetid: 1dbcf12f-a9de-4d1d-b0b3-a227f8a736d8
 description: Dé a un usuario de Microsoft 365 el derecho de acceder al buzón de otro, lo que le permite leer y enviar correos electrónicos desde el buzón del otro usuario.
-ms.openlocfilehash: 6370e147ad63b7400627ea222f98f94bdd2638c8
-ms.sourcegitcommit: 0b7070ec119e00e0dafe030bbfbef0ae5c9afa19
+ms.openlocfilehash: ceb11ab89c18602704f911ffa7bd4e391c2c050a
+ms.sourcegitcommit: 181a0aff54842dcbafd834647c6e9ee47304d10f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/29/2022
-ms.locfileid: "68203429"
+ms.lasthandoff: 10/27/2022
+ms.locfileid: "68722008"
 ---
 # <a name="give-mailbox-permissions-to-another-microsoft-365-user---admin-help"></a>Conceder permisos de buzón a otro usuario de Microsoft 365: Ayuda para administradores
 

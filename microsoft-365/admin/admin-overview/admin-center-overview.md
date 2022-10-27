@@ -10,6 +10,7 @@ ms.topic: article
 ms.service: microsoft-365-business
 ms.localizationpriority: medium
 ms.collection:
+- Tier2
 - scotvorg
 - highpri
 - M365-subscription-management
@@ -26,12 +27,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Use una vista simplificada en el Centro de administración de Microsoft 365 para administrar tareas comunes o la vista del panel para configuraciones y tareas más complejas.
-ms.openlocfilehash: e32c63bee3e780668fe447662d7e840712878744
-ms.sourcegitcommit: 0d8fb571024f134d7480fe14cffc5e31a687d356
+ms.openlocfilehash: 577ffe7b0193a9838077865eb4e867bb201489f9
+ms.sourcegitcommit: 181a0aff54842dcbafd834647c6e9ee47304d10f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/20/2022
-ms.locfileid: "68627749"
+ms.lasthandoff: 10/27/2022
+ms.locfileid: "68721417"
 ---
 # <a name="overview-of-the-microsoft-365-admin-center"></a>Información general del Centro de administración de Microsoft 365
 

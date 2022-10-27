@@ -11,6 +11,7 @@ ms.topic: article
 ms.service: microsoft-365-business
 ms.localizationpriority: medium
 ms.collection:
+- Tier2
 - scotvorg
 - M365-subscription-management
 - Adm_O365
@@ -24,12 +25,12 @@ search.appverid:
 - MOE150
 description: 'Quite una licencia de un buzón compartido para asignarla a otro usuario o devolverla para que no la pague. '
 ms.date: 04/22/2022
-ms.openlocfilehash: 94b9a6948d6ecbd3d6e34ae9e3e8402f4c1e0d36
-ms.sourcegitcommit: 0b7070ec119e00e0dafe030bbfbef0ae5c9afa19
+ms.openlocfilehash: bc54065556b7c23e135c774f446bf8f8776be5ce
+ms.sourcegitcommit: 181a0aff54842dcbafd834647c6e9ee47304d10f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/29/2022
-ms.locfileid: "68166799"
+ms.lasthandoff: 10/27/2022
+ms.locfileid: "68727441"
 ---
 # <a name="remove-a-license-from-a-shared-mailbox"></a>Quitar la licencia de un buzón compartido
 

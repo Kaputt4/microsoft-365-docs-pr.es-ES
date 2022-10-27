@@ -10,6 +10,7 @@ ms.topic: article
 ms.service: microsoft-365-business
 ms.localizationpriority: medium
 ms.collection:
+- Tier3
 - scotvorg
 - M365-subscription-management
 - Adm_O365
@@ -20,12 +21,12 @@ ms.custom:
 search.appverid:
 - MET150
 description: Inicie sesión en Microsoft 365 y configure Basic Mobility and Security para usar la administración integrada de dispositivos móviles para proteger y administrar los dispositivos móviles de los usuarios.
-ms.openlocfilehash: d9021534e6d4290fcfdfe6d387fc932898027124
-ms.sourcegitcommit: 0b7070ec119e00e0dafe030bbfbef0ae5c9afa19
+ms.openlocfilehash: 019acc8db1c3ae4293aeed78d7cdd105366c1e7c
+ms.sourcegitcommit: 181a0aff54842dcbafd834647c6e9ee47304d10f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/29/2022
-ms.locfileid: "68204989"
+ms.lasthandoff: 10/27/2022
+ms.locfileid: "68728113"
 ---
 # <a name="manage-devices-enrolled-in-mobile-device-management-in-microsoft-365"></a>Administración de dispositivos inscritos en Mobile Administración de dispositivos en Microsoft 365
 

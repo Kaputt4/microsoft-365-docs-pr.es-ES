@@ -10,6 +10,7 @@ ms.topic: article
 ms.service: microsoft-365-business
 ms.localizationpriority: medium
 ms.collection:
+- Tier3
 - scotvorg
 - highpri
 - M365-subscription-management
@@ -22,12 +23,12 @@ ms.custom:
 search.appverid:
 - MET150
 description: Administre y proteja los dispositivos móviles conectados a su organización de Microsoft 365 mediante la configuración y el uso de Basic Mobility and Security.
-ms.openlocfilehash: 7cac3397cddbfed970c8bdf8ef5128458c8fcd5c
-ms.sourcegitcommit: 0b7070ec119e00e0dafe030bbfbef0ae5c9afa19
+ms.openlocfilehash: 1dac959ff15147bb16c250ce4af4c2c16342cefd
+ms.sourcegitcommit: 181a0aff54842dcbafd834647c6e9ee47304d10f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/29/2022
-ms.locfileid: "68190493"
+ms.lasthandoff: 10/27/2022
+ms.locfileid: "68727617"
 ---
 # <a name="overview-of-basic-mobility-and-security-for-microsoft-365"></a>Información general sobre la movilidad y la seguridad básicas para Microsoft 365
 

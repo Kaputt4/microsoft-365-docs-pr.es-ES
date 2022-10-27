@@ -10,6 +10,7 @@ ms.topic: article
 ms.service: microsoft-365-business
 ms.localizationpriority: medium
 ms.collection:
+- Tier2
 - scotvorg
 - M365-subscription-management
 - Adm_O365
@@ -21,12 +22,12 @@ search.appverid:
 - MOE150
 ms.assetid: 74a1ef8b-3844-4d08-9980-9f8f7a36000f
 description: Aprenda a administrar Grupos de Microsoft 365, incluida la adición de quitar miembros del grupo, la edición de la dirección de correo electrónico, el nombre del grupo o la descripción y la personalización del funcionamiento del grupo.
-ms.openlocfilehash: 89acd3c8b4935b4b57873d9d8b2cf7786a430e78
-ms.sourcegitcommit: 0b7070ec119e00e0dafe030bbfbef0ae5c9afa19
+ms.openlocfilehash: 2f8536854f2787c0489b06691f6fca602178c39a
+ms.sourcegitcommit: 181a0aff54842dcbafd834647c6e9ee47304d10f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/29/2022
-ms.locfileid: "68206969"
+ms.lasthandoff: 10/27/2022
+ms.locfileid: "68728673"
 ---
 # <a name="manage-a-group-in-the-microsoft-365-admin-center"></a>Administración de un grupo en el Centro de administración de Microsoft 365
 

@@ -10,6 +10,7 @@ ms.topic: article
 ms.service: microsoft-365-business
 ms.localizationpriority: medium
 ms.collection:
+- Tier2
 - scotvorg
 - M365-subscription-management
 - Adm_O365
@@ -24,12 +25,12 @@ search.appverid:
 - MOE150
 ms.assetid: 9cdfa29d-7681-4af2-a79d-3e72e7ab9778
 description: Los administradores pueden aprender a agregar nuevos empleados a Microsoft 365 para empresas y darles acceso al correo electrónico, Skype y aplicaciones de Office.
-ms.openlocfilehash: a913a9d09fc53b90b04606ad4660c62fb7018c9e
-ms.sourcegitcommit: 0b7070ec119e00e0dafe030bbfbef0ae5c9afa19
+ms.openlocfilehash: 6e30e31f41bb714324b3a8e0f7caf9e03e6ccd5f
+ms.sourcegitcommit: 181a0aff54842dcbafd834647c6e9ee47304d10f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/29/2022
-ms.locfileid: "68165259"
+ms.lasthandoff: 10/27/2022
+ms.locfileid: "68722206"
 ---
 # <a name="add-a-new-employee-to-microsoft-365"></a>Adición de un nuevo empleado a Microsoft 365
 

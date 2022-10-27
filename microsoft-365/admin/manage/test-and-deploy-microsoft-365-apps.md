@@ -7,19 +7,22 @@ author: kwekua
 manager: scotv
 audience: Admin
 ms.topic: article
-ms.service: o365-administration
+ms.service: microsoft-365-business
 ms.localizationpriority: medium
-ms.collection: Adm_TOC
+ms.collection:
+- Tier2
+- scotvorg
+- Adm_TOC
 ms.custom: AdminSurgePortfolio
 search.appverid: MET150
 ROBOTS: NOINDEX, NOFOLLOW
 description: Busque, pruebe e implemente aplicaciones de asociados de Microsoft y Microsoft para usuarios y grupos de su organización desde el portal aplicaciones integradas de la Centro de administración de Microsoft 365.
-ms.openlocfilehash: 3592cea8c7da906376bfd0cd8e08a71d1d298278
-ms.sourcegitcommit: 13a1199fbfeb329da77ce87b2781d5cc77e4a201
+ms.openlocfilehash: b5d3d0a0843bbfa5a8fad403499c03e99c87c867
+ms.sourcegitcommit: 181a0aff54842dcbafd834647c6e9ee47304d10f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/27/2022
-ms.locfileid: "67037598"
+ms.lasthandoff: 10/27/2022
+ms.locfileid: "68727969"
 ---
 # <a name="test-and-deploy-microsoft-365-apps-by-partners-in-the-integrated-apps-portal"></a>Prueba e implementación de Aplicaciones Microsoft 365 por parte de los asociados en el portal de aplicaciones integradas
 
@@ -55,6 +58,10 @@ Puede administrar las pruebas y la implementación de Aplicaciones Microsoft 365
 7. Seleccione **Listo** en la página Implementación completada y revise los detalles de la prueba o la implementación completa en la pestaña **Información general** .
 
 8. Si la aplicación tiene un estado de **Actualización pendiente**, puede hacer clic en la aplicación para abrir el panel Administrar y actualizar la aplicación.
+
+
+> [!NOTE]
+> _¿Se trata de una implementación de prueba_ es una etiqueta administrativa para determinar si la aplicación todavía está en fase de prueba? No tiene ningún impacto técnico.
 
 ## <a name="find-published-apps-for-testing-and-full-deployment"></a>Búsqueda de aplicaciones publicadas para pruebas e implementación completa
 
@@ -155,7 +162,7 @@ Para Outlook, los usuarios deben usar uno de los siguientes elementos:
 ### <a name="exchange-online-requirements"></a>requisitos de Exchange Online 
 Microsoft Exchange almacena los manifiestos de complemento dentro del inquilino de la organización. Los administradores que implementan complementos y los usuarios que reciben esos complementos deben estar en una versión de Exchange Online que admita la autenticación de OAuth. 
 
-Póngase en contacto con el administrador de Exchange de su organización para averiguar qué configuración está en uso. La conectividad de OAuth por usuario puede comprobarse usando el cmdlet de PowerShell [Test-OAuthConnectivity](/powershell/module/exchange/test-oauthconnectivity). 
+Check with your organization's Exchange admin to find out which configuration is in use. OAuth connectivity per user can be verified by using the [Test-OAuthConnectivity](/powershell/module/exchange/test-oauthconnectivity) PowerShell cmdlet. 
 
 ### <a name="user-and-group-assignments"></a>Asignaciones de usuario y de grupo
 La implementación del complemento se admite actualmente en la mayoría de los grupos admitidos por Azure Active Directory, incluidos los grupos de Microsoft 365, las listas de distribución y los grupos de seguridad. La implementación admite usuarios de grupos o grupos de nivel superior sin grupos primarios, pero no usuarios de grupos anidados o grupos que tienen grupos primarios. 
@@ -173,7 +180,7 @@ La forma más sencilla de detectar si un grupo contiene grupos anidados es ver l
 
 ![Pestaña Miembros de la tarjeta de contacto de Outlook.](../../media/d9db88c4-d752-426c-a480-b11a5b3adcd6.png)
 
-Puede realizar la consulta opuesta para comprobar si un grupo es miembro de cualquier otro. En el ejemplo siguiente, puede ver en la pestaña <b>Miembros</b> de la tarjeta de contacto de Outlook que el Subgrupo 1 es miembro del grupo de pruebas. 
+You can do the opposite query by resolving the group to see if it's a member of any group. In the example below, you can see under the <b>Membership</b> tab of the Outlook contact card that Sub Group 1 is a member of the Test Group. 
 
 ![Pestaña Pertenencia de la tarjeta de contacto de Outlook.](../../media/a9f9b6ab-9c19-4822-9e3d-414ca068c42f.png)
 
@@ -232,12 +239,12 @@ Los complementos de Office combinan un archivo de manifiesto XML que contiene al
 
 Para obtener más información sobre los tipos y funcionalidades de los complementos de Office, vea [Información general sobre la plataforma de complementos de Office](/office/dev/add-ins/overview/office-add-ins), especialmente la sección "Anatomía de un complemento de Office". 
 
-Para poder interactuar con el documento del usuario, el complemento debe declarar qué permisos necesita en el manifiesto. Un modelo de permisos de acceso de la API de JavaScript de cinco niveles proporciona la base para la privacidad y la seguridad de los usuarios de los complementos de panel de tareas. La mayoría de los complementos de la Tienda Office son del nivel ReadWriteDocument y casi todos los complementos admiten, como mínimo, el nivel ReadDocument. Para obtener más información sobre los niveles de permisos, consulte [Solicitar permisos para el uso de la API en los complementos del panel de tareas y de contenido](/office/dev/add-ins/develop/requesting-permissions-for-api-use-in-content-and-task-pane-add-ins). 
+To interact with the user's document, the add-in needs to declare what permission it needs in the manifest. A five-level JavaScript API access-permissions model provides the basis for privacy and security for users of task pane add-ins. The majority of the add-ins in the Office Store are level ReadWriteDocument with almost all add-ins supporting at least the ReadDocument level. For more information about the permission levels, see [Requesting permissions for API use in content and task pane add-ins](/office/dev/add-ins/develop/requesting-permissions-for-api-use-in-content-and-task-pane-add-ins). 
 
-Cuando se actualiza un manifiesto, los cambios típicos se aplican al icono de un complemento y al texto. En ocasiones, los comandos del complementos cambian. Sin embargo, los permisos del complemento no cambian. La aplicación web en la que se ejecutan todo el código y la lógica del complemento puede cambiar en cualquier momento, lo que forma parte de la naturaleza de las aplicaciones web. 
+When updating a manifest, the typical changes are to an add-in's icon and text. Occasionally, add-in commands change. However, the permissions of the add-in do not change. The web application where all the code and logic for the add-in runs can change at any time, which is the nature of web applications. 
 
 Las actualizaciones de los complementos se producen de la siguiente manera: 
-- **Complemento de línea de negocio: en** este caso, donde un administrador cargó explícitamente un manifiesto, el complemento requiere que el administrador cargue un nuevo archivo de manifiesto para admitir los cambios de metadatos. La próxima vez que se inicien las aplicaciones de Office pertinentes, el complemento se actualizará. La aplicación web puede cambiar en cualquier momento. 
+- **Complemento de línea de negocio: en** este caso, donde un administrador cargó explícitamente un manifiesto, el complemento requiere que el administrador cargue un nuevo archivo de manifiesto para admitir los cambios de metadatos. La próxima vez que inicie las aplicaciones de Office pertinentes, el complemento se actualizará. La aplicación web puede cambiar en cualquier momento. 
 
 - Complemento de la **Tienda Office**: cuando un administrador seleccionó un complemento de la Tienda Office, si un complemento se actualiza en la Tienda Office, la próxima vez que se inicien las aplicaciones de Office pertinentes, el complemento se actualizará. La aplicación web puede cambiar en cualquier momento. 
 

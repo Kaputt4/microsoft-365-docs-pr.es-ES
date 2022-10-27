@@ -11,6 +11,7 @@ ms.topic: article
 ms.service: microsoft-365-business
 ms.localizationpriority: ''
 ms.collection:
+- Tier2
 - scotvorg
 - M365-subscription-management
 - Adm_O365
@@ -22,16 +23,16 @@ search.appverid:
 description: Obtenga información sobre cómo usar el cmdlet AllowSelfServicePurchase de PowerShell para activar o desactivar la compra de autoservicio.
 ROBOTS: NOINDEX, NOFOLLOW
 ms.date: 10/10/2022
-ms.openlocfilehash: 3ce3c30a7a51987407c9040e6b8317d092ff491f
-ms.sourcegitcommit: 0d8fb571024f134d7480fe14cffc5e31a687d356
+ms.openlocfilehash: 755e8c6314cbb21f1adef6d55acaf696445fc434
+ms.sourcegitcommit: 181a0aff54842dcbafd834647c6e9ee47304d10f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/20/2022
-ms.locfileid: "68627661"
+ms.lasthandoff: 10/27/2022
+ms.locfileid: "68720915"
 ---
 # <a name="use-allowselfservicepurchase-for-the-mscommerce-powershell-module"></a>Uso de AllowSelfServicePurchase para el módulo de PowerShell MSCommerce
 
-El módulo **de PowerShell MSCommerce** ya está disponible en la [Galería de PowerShell](https://aka.ms/allowselfservicepurchase-powershell-gallery). El módulo incluye un valor de parámetro **PolicyID** para **AllowSelfServicePurchase** que le permite controlar si los usuarios de su organización pueden realizar compras de autoservicio.
+El módulo **de PowerShell MSCommerce** ya está disponible en [Galería de PowerShell](https://aka.ms/allowselfservicepurchase-powershell-gallery). El módulo incluye un valor de parámetro **PolicyID** para **AllowSelfServicePurchase** que le permite controlar si los usuarios de su organización pueden realizar compras de autoservicio.
 
 Puede usar el módulo de PowerShell **MSCommerce** para:
 
@@ -51,7 +52,7 @@ Para usar el módulo de PowerShell **MSCommerce** , necesita:
 
 ## <a name="install-the-mscommerce-powershell-module"></a>Instalación del módulo de PowerShell MSCommerce
 
-Instale el módulo de PowerShell **MSCommerce** en el dispositivo Windows 10 una vez y, a continuación, impórtelo en cada sesión de PowerShell que inicie. Descargue el módulo de PowerShell **MSCommerce** desde la [Galería de PowerShell](https://aka.ms/allowselfservicepurchase-powershell-gallery).
+Instale el módulo de PowerShell **MSCommerce** en el dispositivo Windows 10 una vez y, a continuación, impórtelo en cada sesión de PowerShell que inicie. Descargue el módulo **de PowerShell MSCommerce** desde el [Galería de PowerShell](https://aka.ms/allowselfservicepurchase-powershell-gallery).
 
 Para instalar el módulo **de PowerShell MSCommerce** con **PowerShellGet**, ejecute el siguiente comando:
 

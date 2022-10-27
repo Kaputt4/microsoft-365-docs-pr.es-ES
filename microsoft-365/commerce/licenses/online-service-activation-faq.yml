@@ -8,16 +8,19 @@ metadata:
   ms.date: 07/22/2021
   audience: Admin
   ms.topic: faq
-  ms.service: o365-administration
+  ms.service: microsoft-365-business
   ms.custom: commerce_vl
+  ms.collection:
+  - Tier2
+  - scotvorg
   ms.localizationpriority: medium
   description: Preguntas más frecuentes sobre la activación del servicio en línea para el programa Open
-  ms.openlocfilehash: 9bc7be1d04c28ad2f4a67e4bd6eb76461f7eb258
-  ms.sourcegitcommit: 1c5f9d17a8b095cd88b23f4874539adc3ae021de
+  ms.openlocfilehash: c6184228f94b6cfb2d6b8ad9bb7f848261851316
+  ms.sourcegitcommit: 181a0aff54842dcbafd834647c6e9ee47304d10f
   ms.translationtype: MT
   ms.contentlocale: es-ES
-  ms.lasthandoff: 04/08/2022
-  ms.locfileid: "64713787"
+  ms.lasthandoff: 10/27/2022
+  ms.locfileid: "68735317"
 title: Preguntas más frecuentes sobre la activación del servicio en línea para el programa Open
 summary: ''
 sections:
@@ -30,7 +33,7 @@ sections:
 
       - Después de solicitar su servicios en línea a través de la familia del programa Open, recibirá un correo electrónico con un vínculo e instrucciones para activar los servicios.
 
-      OR
+      O
 
       - En el [Centro de servicios de licencias por volumen (VLSC),](https://www.microsoft.com/Licensing/Servicecenter/default.aspx) los clientes del programa Open pueden ir a la sección Activación del servicio en línea y seleccionar la licencia que se va a administrar:
 
@@ -42,15 +45,15 @@ sections:
 
       La activación correcta se completa en un plazo de 48 horas en el sitio web de activación del servicio en línea de licencias por volumen.
 
-      Para obtener información sobre cómo activar Microsoft Azure, consulte [Introducción con Azure en Licencias abiertas](https://azure.microsoft.com/offers/ms-azr-0111p/).
+      Para obtener información sobre cómo activar Microsoft Azure, consulte [Introducción a Azure en licencias abiertas](https://azure.microsoft.com/offers/ms-azr-0111p/).
   - question: >
       No veo mi pedido de Azure. ¿Qué debo hacer?
     answer: >
-      Los pedidos de Azure se activan mediante claves. Obtenga las claves a través de la pestaña Descargas y claves de VLSC y escriba la clave en la Introducción con [Azure en la página Abrir licencia](https://azure.microsoft.com/offers/azure-open/).
+      Los pedidos de Azure se activan mediante claves. Obtenga las claves a través de la pestaña Descargas y claves de VLSC y escriba la clave en la página Introducción a [Azure en Abrir licencia.](https://azure.microsoft.com/offers/azure-open/)
   - question: >
       ¿Qué es una cuenta profesional o educativa y por qué necesito una para activar servicios en línea?
     answer: >
-      Una cuenta profesional o educativa está pensada para que los usuarios inicien sesión en la organización servicios Microsoft. El inicio de sesión suele usar el formulario username@orgname.com o username@orgname.onmicrosoft.com, donde *orgname* es su nombre de dominio de correo electrónico de la organización.
+      Una cuenta profesional o educativa está pensada para que los usuarios inicien sesión en los servicios de Microsoft de la organización. El inicio de sesión suele usar el formulario username@orgname.com o username@orgname.onmicrosoft.com, donde *orgname* es su nombre de dominio de correo electrónico de la organización.
   - question: >
       Cómo saber si mi organización ya tiene una cuenta?
     answer: "El nombre de la organización asociado a la cuenta profesional o educativa se toma del identificador de licencia del servicio que está activando. Si existe una cuenta, el nombre de la organización se rellena previamente en la configuración de la cuenta organizativa y ya está vinculado a la organización desde el pedido de servicio en línea original. El proceso de registro valida si la organización tiene una cuenta. \n\nSi el campo **Company** está disponible, finalice el proceso de registro para iniciar sesión y activar el servicio. Si este campo no está disponible, debe registrar la organización. Debe ser un Administrador global para registrar una organización para una cuenta.\n\nAl solicitar una cuenta profesional o educativa, la solicitud se envía a su organización Administrador de inquilinos que concede o deniega la solicitud de registro. Use esta cuenta profesional o educativa al iniciar sesión en La activación del servicio en línea de Microsoft VLSC.\n"

@@ -10,6 +10,7 @@ ms.topic: article
 ms.service: microsoft-365-business
 ms.localizationpriority: medium
 ms.collection:
+- Tier2
 - scotvorg
 - Adm_O365
 ms.custom: AdminSurgePortfolio
@@ -18,12 +19,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Use las puntuaciones de promotores de Net (NPS) de los usuarios finales para ver cómo se sienten sobre los productos y servicios de Microsoft.
-ms.openlocfilehash: 228be483bf69f13573bbeb61f41a127d93a7de7d
-ms.sourcegitcommit: 0b7070ec119e00e0dafe030bbfbef0ae5c9afa19
+ms.openlocfilehash: 4e0ae2c55931f1cbe475fd6e8617bf8b7a1cf8ae
+ms.sourcegitcommit: 181a0aff54842dcbafd834647c6e9ee47304d10f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/29/2022
-ms.locfileid: "68207013"
+ms.lasthandoff: 10/27/2022
+ms.locfileid: "68729245"
 ---
 # <a name="microsoft-product-nps-feedback-and-insights-for-your-organization"></a>Comentarios e información sobre NPS de productos de Microsoft para su organización
 

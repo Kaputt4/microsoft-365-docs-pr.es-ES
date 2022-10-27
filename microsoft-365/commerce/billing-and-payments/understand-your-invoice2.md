@@ -11,6 +11,7 @@ ms.topic: article
 ms.service: microsoft-365-business
 ms.localizationpriority: medium
 ms.collection:
+- Tier1
 - scotvorg
 - highpri
 - M365-subscription-management
@@ -25,12 +26,12 @@ ms.custom:
 search.appverid: MET150
 description: Obtenga información sobre cómo interpretar los cargos, la facturación y la información de pago en la factura o factura de Microsoft 365 para empresas.
 ms.date: 05/24/2022
-ms.openlocfilehash: b85f04d112562ed3d2e25d2b55130b61e4d55260
-ms.sourcegitcommit: 0b7070ec119e00e0dafe030bbfbef0ae5c9afa19
+ms.openlocfilehash: c2e0ae40c51d8d42c005f58b0463dece7e5ad1af
+ms.sourcegitcommit: 181a0aff54842dcbafd834647c6e9ee47304d10f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/29/2022
-ms.locfileid: "68195927"
+ms.lasthandoff: 10/27/2022
+ms.locfileid: "68727749"
 ---
 # <a name="understand-your-bill-or-invoice-for-microsoft-365-for-business"></a>Entender su factura o recibo de Microsoft 365 para empresas
 

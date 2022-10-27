@@ -10,6 +10,7 @@ ms.topic: article
 ms.service: microsoft-365-business
 ms.localizationpriority: high
 ms.collection:
+- Tier1
 - ContentEngagementFY23
 - scotvorg
 - highpri
@@ -26,12 +27,12 @@ search.appverid:
 - MOE150
 ms.assetid: 9fa2539a-2211-41fd-85a0-bc37b9619ca4
 description: Haga que su organización sea más segura contra ataques a contraseñas y prohíba las contraseñas comunes y habilite la autenticación multifactor basada en riesgos.
-ms.openlocfilehash: 3971fc981046dc3e3e3b2741705053c5e3d52430
-ms.sourcegitcommit: 50da6f1f6ef2274c17ed9729e7ad84395b0a9be2
+ms.openlocfilehash: 7189d9af375c4013f7962ae162abb1cc8fe02877
+ms.sourcegitcommit: 181a0aff54842dcbafd834647c6e9ee47304d10f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/08/2022
-ms.locfileid: "68503168"
+ms.lasthandoff: 10/27/2022
+ms.locfileid: "68729091"
 ---
 # <a name="password-policy-recommendations-for-microsoft-365-passwords"></a>Recomendaciones de directiva de contraseñas para contraseñas de Microsoft 365
 
