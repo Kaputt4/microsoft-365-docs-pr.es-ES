@@ -16,26 +16,26 @@ audience: ITPro
 ms.collection:
 - m365-security
 - tier2
-ms.topic: conceptual
+- demo
+ms.topic: article
 ms.subservice: mde
-ms.openlocfilehash: 0af4f8d51b335514b8770dab761b224a8324735f
-ms.sourcegitcommit: 0d8fb571024f134d7480fe14cffc5e31a687d356
+ms.date: 10/21/2022
+ms.openlocfilehash: b8f8f33d0fc47c395d19e67286eb43f7b9552dbe
+ms.sourcegitcommit: 181a0aff54842dcbafd834647c6e9ee47304d10f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/20/2022
-ms.locfileid: "68635606"
+ms.lasthandoff: 10/27/2022
+ms.locfileid: "68734438"
 ---
-<!--- v-jweston resumes authorship and ms.authorship appx April-May 2023 ---> 
-
 # <a name="microsoft-defender-for-endpoint---demonstration-scenarios"></a>Microsoft Defender para punto de conexión: escenarios de demostración
 
 Los siguientes escenarios de demostración le ayudarán a obtener información sobre las funcionalidades de Microsoft Defender para punto de conexión en Windows (Mac y Linux están fuera del ámbito). Se proporcionan escenarios de demostración para las siguientes áreas de protección Microsoft Defender para punto de conexión:
 
 :::image type="content" source="images/microsoft-defender-for-endpoint-cloud-protection.png" alt-text="Muestra las áreas de Microsoft Defender para punto de conexión escenarios de demostración que se tratan en esta colección" lightbox="images/microsoft-defender-for-endpoint-cloud-protection.png":::
 
-- Protección contra superficie expuesta a ataques (ASR)
-- Protección de próxima generación (NGP)
-- Detección y respuesta de puntos de conexión (EDR)
+- Protección contra superficie expuesta a ataques (**ASR**)
+- Protección de próxima generación (**NGP**)
+- Detección y respuesta de puntos de conexión (**EDR**)
 
 > [!NOTE]
 > Ninguno de los archivos de ejemplo o vínculos _sospechosos_ proporcionados en esta colección son realmente malintencionados; todos los vínculos y archivos de demostración son inofensivos.
@@ -61,9 +61,8 @@ En la tabla siguiente se enumeran alfabéticamente las demostraciones disponible
 
 ## <a name="see-also"></a>Vea también
 
-[Protección contra superficie expuesta a ataques \( Información general de ASR\)](overview-attack-surface-reduction.md) Prueba de reglas 
- de[reducción de superficie expuesta](attack-surface-reduction-rules-deployment-test.md)a[ataques Información general de Next Generation Protection \(NGP\)](next-generation-protection.md) [Introducción a la detección de puntos de conexión y respuesta \(de EDR\)](overview-endpoint-detection-response.md)
+[Protección contra superficie expuesta a ataques \( Introducción a ASR\)](overview-attack-surface-reduction.md): Prueba de reglas 
+ de[reducción de superficie expuesta a ataques Introducción](attack-surface-reduction-rules-deployment-test.md)[a la protección de nueva generación \(de NGP\)](next-generation-protection.md) [Introducción a la detección de puntos de conexión y respuesta \(de EDR\)](overview-endpoint-detection-response.md) [Microsoft Defender para punto de conexión blog de seguridad](https://www.microsoft.com/security/blog/microsoft-defender-for-endpoint/)
 
 
 
-[blog de seguridad de Microsoft Defender para punto de conexión](https://www.microsoft.com/security/blog/microsoft-defender-for-endpoint/)

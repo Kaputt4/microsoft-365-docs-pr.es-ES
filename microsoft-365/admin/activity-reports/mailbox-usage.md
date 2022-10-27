@@ -5,9 +5,11 @@ author: kwekua
 manager: scotv
 audience: Admin
 ms.topic: article
-ms.service: o365-administration
+ms.service: microsoft-365-business
 ms.localizationpriority: medium
 ms.collection:
+- Tier2
+- scotvorg
 - M365-subscription-management
 - Adm_O365
 - Adm_NonTOC
@@ -19,12 +21,12 @@ search.appverid:
 - GEA150
 ms.assetid: beffbe01-ce2d-4614-9ae5-7898868e2729
 description: Obtenga información sobre cómo obtener el informe de uso del buzón para averiguar los niveles de actividad de los usuarios con un buzón de usuario, así como información de almacenamiento y cuota para cada uno.
-ms.openlocfilehash: 4df0859930d2fe8a11623a775c96454fd3c9aaa7
-ms.sourcegitcommit: af6c13d7ab1fe440dd45ce8cd3940774cdda66ef
+ms.openlocfilehash: 55b5fba9328b43d107a8c34a40a4a5e55aa8a1aa
+ms.sourcegitcommit: 181a0aff54842dcbafd834647c6e9ee47304d10f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/25/2022
-ms.locfileid: "67004310"
+ms.lasthandoff: 10/27/2022
+ms.locfileid: "68723943"
 ---
 # <a name="microsoft-365-reports-in-the-admin-center---mailbox-usage"></a>Informes de Microsoft 365 en el Centro de administración: uso del buzón
 
@@ -40,7 +42,10 @@ El **informe de uso del buzón de correo** proporciona información sobre los us
 
 Puede obtener una vista del uso del buzón de su organización examinando los gráficos **Buzón**, **Almacenamiento** y **Cuota** .
 
-Para acceder a la información del buzón compartido, cambie la selección desplegable de la parte superior derecha de los gráficos a **Compartido**.  Si el inquilino no tiene buzones compartidos, no podrá ver ninguna información de buzón compartido.  Tenga en cuenta también que si ha optado por ver gráficos compartidos, actualmente no podrá exportar la información del gráfico. Se trata de un problema conocido y se corregirá en una iteración futura.
+Para acceder a la información del buzón compartido, cambie la selección desplegable de la parte superior derecha de los gráficos a **Compartido**.  Si el inquilino no tiene buzones compartidos, no podrá ver ninguna información de buzón compartido.
+
+> [!NOTE]
+> Actualmente no podrá exportar la información del gráfico de resumen para buzones compartidos. Se trata de un problema conocido y se corregirá en una iteración futura.
   
 :::image type="content" alt-text="Informe de uso del buzón de correo." source="../../media/9f610e91-cbc1-4e59-b824-7b1ddd84b738.png" lightbox="../../media/9f610e91-cbc1-4e59-b824-7b1ddd84b738.png":::
 
@@ -48,7 +53,10 @@ Puede visualizar el informe **Uso del buzón** para ver las tendencias de los ú
 
 ### <a name="the-mailbox-chart"></a>Gráfico de buzones
 
-En el gráfico **Buzón de correo** se muestra el número total de buzones de usuario o compartidos de la organización y el número total que están activos en un día determinado del período de informe. Un usuario o buzón compartido se considera activo si tenía un correo electrónico de envío, lectura, creación de citas, envío de reunión, aceptación de reunión, rechazo de reunión y cancelación de la actividad de reunión.
+El gráfico **Buzón de correo** muestra el número total de buzones de correo de usuario o compartidos de la organización y el número total de buzones de correo de usuario que están activos en un día determinado del período de informes. Un buzón de usuario se considera activo si tenía un correo electrónico de envío, lectura, creación de citas, envío de reunión, aceptación de reunión, rechazo de reunión y cancelación de la actividad de reunión.
+
+> [!NOTE]
+> Los buzones compartidos no tienen actividad independiente de un buzón de usuario, por lo que solo se mostrará un recuento de buzones compartidos cuando se seleccione este tipo de buzón.
 
 En el gráfico buzón de correo:
 - El eje Y es el número de buzones de usuario o compartidos. 

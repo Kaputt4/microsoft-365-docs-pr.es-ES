@@ -10,6 +10,7 @@ ms.topic: article
 ms.service: microsoft-365-business
 ms.localizationpriority: medium
 ms.collection:
+- Tier2
 - scotvorg
 - M365-subscription-management
 - Adm_O365
@@ -21,12 +22,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Obtenga información sobre cómo obtener un informe de actividad de Microsoft Dynamics 365 Customer Voice mediante el panel Informes y averiguar cómo colaboran los usuarios con licencia.
-ms.openlocfilehash: f5fcb30dbc59c0d35dd707be600470d04c0d3c91
-ms.sourcegitcommit: 0b7070ec119e00e0dafe030bbfbef0ae5c9afa19
+ms.openlocfilehash: 79214b6f07e3d7d881406ee22e965abfcc9087d7
+ms.sourcegitcommit: 181a0aff54842dcbafd834647c6e9ee47304d10f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/29/2022
-ms.locfileid: "68195267"
+ms.lasthandoff: 10/27/2022
+ms.locfileid: "68724383"
 ---
 # <a name="microsoft-365-reports-in-the-admin-center---dynamics-365-customer-voice-activity"></a>Informes de Microsoft 365 en el Centro de administración: actividad de Dynamics 365 Customer Voice
 

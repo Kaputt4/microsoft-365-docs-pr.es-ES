@@ -10,6 +10,7 @@ ms.topic: article
 ms.service: microsoft-365-business
 ms.localizationpriority: medium
 ms.collection:
+- Tier2
 - scotvorg
 - M365-subscription-management
 - Adm_O365
@@ -21,12 +22,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Obtenga información sobre cómo obtener un informe de actividad de Microsoft Forms mediante el panel Informes de Microsoft 365 y averiguar cómo interactúan los usuarios con licencia con los formularios.
-ms.openlocfilehash: 90a7ec26defaaca832411a775f71d32c2333ecef
-ms.sourcegitcommit: 0b7070ec119e00e0dafe030bbfbef0ae5c9afa19
+ms.openlocfilehash: 8fddc3e00bfda42eafa2ec4dce54c74edc25d1c7
+ms.sourcegitcommit: 181a0aff54842dcbafd834647c6e9ee47304d10f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/29/2022
-ms.locfileid: "68194167"
+ms.lasthandoff: 10/27/2022
+ms.locfileid: "68724669"
 ---
 # <a name="microsoft-365-reports-in-the-admin-center---forms-activity"></a>Informes de Microsoft 365 en el Centro de administración: actividad de formularios
 

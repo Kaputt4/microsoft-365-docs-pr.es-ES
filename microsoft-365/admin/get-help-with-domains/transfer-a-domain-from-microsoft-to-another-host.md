@@ -10,6 +10,7 @@ ms.topic: article
 ms.service: microsoft-365-business
 ms.localizationpriority: medium
 ms.collection:
+- Tier2
 - scotvorg
 - M365-subscription-management
 - Adm_O365
@@ -23,12 +24,12 @@ search.appverid:
 - MOE150
 - GEA150
 description: 'Busque los pasos que se indican aquí para transferir un dominio de Microsoft a otro registrador. '
-ms.openlocfilehash: 68b145dfdd11cf58a2a56bfdcbba1cc45fccc519
-ms.sourcegitcommit: 0d8fb571024f134d7480fe14cffc5e31a687d356
+ms.openlocfilehash: ae4c261cacd12e99bac8e18d6fc55a8db452e03b
+ms.sourcegitcommit: 181a0aff54842dcbafd834647c6e9ee47304d10f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/20/2022
-ms.locfileid: "68642093"
+ms.lasthandoff: 10/27/2022
+ms.locfileid: "68727419"
 ---
 # <a name="transfer-a-domain-from-microsoft-to-another-host"></a>Transferencia de un dominio de Microsoft a otro host
 
@@ -60,7 +61,7 @@ Inicie sesión como administrador global, siga estos pasos para obtener un códi
     Puede encontrar la pestaña **Registro** de código de autorización en la página **Dominios** de Microsoft 365.
 
     > [!TIP]
-    > Los dominios .uk requieren un procedimiento diferente. Póngase en contacto con el soporte técnico de Microsoft y solicite un **cambio de etiqueta IPS** para que coincida con el registrador que desea administrar en el futuro. Una vez que cambia la etiqueta, el dominio se transfiere inmediatamente al nuevo registrador. A continuación, tendrá que trabajar con el nuevo registrador para completar la transferencia, probablemente pagando las tarifas de transferencia y agregando el dominio transferido a su cuenta con su nuevo registrador.
+    > Los dominios .uk requieren un procedimiento diferente. Póngase en contacto con Soporte técnico de Microsoft y solicite un **cambio de etiqueta IPS** para que coincida con el registrador que desea administrar en el futuro. Una vez que cambia la etiqueta, el dominio se transfiere inmediatamente al nuevo registrador. A continuación, tendrá que trabajar con el nuevo registrador para completar la transferencia, probablemente pagando las tarifas de transferencia y agregando el dominio transferido a su cuenta con su nuevo registrador.
 
 9. Una vez completada la transferencia, renovará el dominio en el nuevo registrador de dominios.
 

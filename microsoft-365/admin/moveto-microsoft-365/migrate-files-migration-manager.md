@@ -10,6 +10,7 @@ ms.topic: article
 ms.service: microsoft-365-business
 ms.localizationpriority: medium
 ms.collection:
+- Tier1
 - scotvorg
 - highpri
 - M365-subscription-management
@@ -24,12 +25,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Obtenga información sobre cómo migrar archivos de Google a Microsoft 365 para empresas mediante el Administrador de migración de SharePoint.
-ms.openlocfilehash: 135974f85d62dee2a1be344e39fef264ca277e52
-ms.sourcegitcommit: 0b7070ec119e00e0dafe030bbfbef0ae5c9afa19
+ms.openlocfilehash: 9b9a729947c151339f1674b825c7ed152fc50198
+ms.sourcegitcommit: 181a0aff54842dcbafd834647c6e9ee47304d10f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/29/2022
-ms.locfileid: "68188403"
+ms.lasthandoff: 10/27/2022
+ms.locfileid: "68733381"
 ---
 # <a name="migrate-google-files-to-microsoft-365-for-business-with-migration-manager"></a>Migrar archivos de Google a Microsoft 365 para empresas con el Administrador de migración
 

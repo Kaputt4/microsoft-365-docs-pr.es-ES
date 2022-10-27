@@ -11,6 +11,7 @@ metadata:
   ms.service: microsoft-365-business
   ms.localizationpriority: medium
   ms.collection:
+  - Tier2
   - scotvorg
   - M365-subscription-management
   - Adm_O365
@@ -28,12 +29,12 @@ metadata:
   - GEA150
   ms.assetid: 1272bad0-4bd4-4796-8005-67d6fb3afc5a
   description: Obtenga más información sobre los dominios (dominio de onmicrosoft y dominio de transferencia) mediante la búsqueda de respuestas a sus preguntas en preguntas más frecuentes.
-  ms.openlocfilehash: 7abf636e663628a53702720a97a37047b26de46b
-  ms.sourcegitcommit: 0b7070ec119e00e0dafe030bbfbef0ae5c9afa19
+  ms.openlocfilehash: 8407aef6653c5e57311a0a3a5ffeab9b72bb3080
+  ms.sourcegitcommit: 181a0aff54842dcbafd834647c6e9ee47304d10f
   ms.translationtype: MT
   ms.contentlocale: es-ES
-  ms.lasthandoff: 09/29/2022
-  ms.locfileid: "68189525"
+  ms.lasthandoff: 10/27/2022
+  ms.locfileid: "68734217"
 title: Preguntas más frecuentes de dominios
 summary: "\n\nEste artículo contiene respuestas a las preguntas más frecuentes sobre los dominios de Microsoft 365.\n\nConsulte [ayuda de Microsoft 365 para pequeñas empresas](https://go.microsoft.com/fwlink/?linkid=2197659) en YouTube.\n\nSi no encuentra una respuesta a su pregunta, infórmenos de ello dejando un comentario y lo agregaremos a la lista.\n"
 sections:

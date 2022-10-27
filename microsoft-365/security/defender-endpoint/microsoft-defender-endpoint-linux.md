@@ -18,12 +18,12 @@ ms.collection:
 ms.topic: conceptual
 ms.subservice: mde
 search.appverid: met150
-ms.openlocfilehash: aa50312eba19928dcbfeafe3c47ad64e5dee1fd3
-ms.sourcegitcommit: 0d8fb571024f134d7480fe14cffc5e31a687d356
+ms.openlocfilehash: 166750a65ac8a7c15a58f1cbd0270ea6bd511546
+ms.sourcegitcommit: 181a0aff54842dcbafd834647c6e9ee47304d10f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/20/2022
-ms.locfileid: "68646647"
+ms.lasthandoff: 10/27/2022
+ms.locfileid: "68734459"
 ---
 # <a name="microsoft-defender-for-endpoint-on-linux"></a>Microsoft Defender para punto de conexión en Linux
 
@@ -113,8 +113,8 @@ Si experimenta algún error de instalación, consulte [Solución de problemas de
 
 - Lista de versiones de kernel admitidas
   > [!NOTE]
-  > Microsoft Defender para punto de conexión en RHEL/CentOS- 6.7 a 6.10 es una solución basada en kernel. Debe comprobar que el kernel es compatible antes de actualizar a la versión más reciente del kernel. Consulte la lista siguiente para obtener la lista de kernels admitidos.
-  > Microsoft Defender para punto de conexión implementación para todas las demás distribuciones y versiones admitidas es independiente de la versión del kernel. Con un requisito mínimo para que la versión del kernel esté en o por encima de 3.10.0-327.
+  > Microsoft Defender para punto de conexión en Red Hat Enterprise Linux y CentOS : 6.7 a 6.10 es una solución basada en kernel. Debe comprobar que se admite la versión del kernel antes de actualizar a una versión más reciente del kernel. Consulte la lista siguiente para obtener la lista de kernels admitidos.
+  > Microsoft Defender para punto de conexión para todas las demás distribuciones y versiones admitidas es independiente de la versión del kernel. Con un requisito mínimo para que la versión del kernel sea igual o superior a 3.10.0-327.
 
   - La `fanotify` opción kernel debe estar habilitada
   - Red Hat Enterprise Linux 6 y CentOS 6:
@@ -153,7 +153,7 @@ Si experimenta algún error de instalación, consulte [Solución de problemas de
        - 2.6.32-754.9.1.el6.x86_64
 
  > [!NOTE]
- > Una vez publicada la nueva versión del paquete, la compatibilidad con las dos versiones anteriores se reduce solo al soporte técnico. Las versiones anteriores a las que aparecen en esta sección se proporcionan solo para soporte técnico de actualización.
+ > Una vez publicada la nueva versión del paquete, la compatibilidad con las dos versiones anteriores se reduce solo al soporte técnico. Las versiones anteriores a las que se enumeran en esta sección se proporcionan solo para soporte técnico de actualización.
 
 
   > [!CAUTION]

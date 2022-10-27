@@ -10,6 +10,7 @@ ms.topic: article
 ms.service: microsoft-365-lighthouse
 ms.localizationpriority: medium
 ms.collection:
+- Tier1
 - scotvorg
 - M365-subscription-management
 - Adm_O365
@@ -18,12 +19,12 @@ ms.custom:
 - M365-Lighthouse
 search.appverid: MET150
 description: Para los proveedores de servicios administrados (MSP) que usan Microsoft 365 Lighthouse, consulte lo que se ha agregado, cambiado y corregido en Microsoft 365 Lighthouse cada mes.
-ms.openlocfilehash: 647bd02a388b20e96fd6ca859a7ea0c4f117692d
-ms.sourcegitcommit: 87283bb02ca750286f7c069f811b788730ed5832
+ms.openlocfilehash: 2c63cd304fc8893c5a767212ef540939e9954793
+ms.sourcegitcommit: 181a0aff54842dcbafd834647c6e9ee47304d10f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/21/2022
-ms.locfileid: "68661729"
+ms.lasthandoff: 10/27/2022
+ms.locfileid: "68735075"
 ---
 # <a name="whats-new-in-microsoft-365-lighthouse"></a>Novedades de Microsoft 365 Lighthouse
 
@@ -264,7 +265,7 @@ Con la nueva característica de líneas base, ahora puede implementar configurac
 - Requerir MFA para administradores 
 - Requerir MFA para los usuarios 
 - Bloquear autenticación heredada 
-- Inscribir dispositivos Windows en Microsoft Endpoint Manager: unión a Azure AD 
+- Inscripción de dispositivos Windows en Microsoft Endpoint Manager: unión a Azure AD 
 - Configuración de la directiva de Antivirus de Defender para dispositivos Windows 
 - Configuración de la directiva de cumplimiento para dispositivos Windows 
 

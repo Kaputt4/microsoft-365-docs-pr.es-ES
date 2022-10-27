@@ -10,6 +10,7 @@ ms.topic: article
 ms.service: microsoft-365-business
 ms.localizationpriority: medium
 ms.collection:
+- Tier2
 - scotvorg
 - M365-subscription-management
 - Adm_O365
@@ -22,12 +23,12 @@ search.appverid:
 - MOE150
 ms.assetid: 08c5307c-4a6b-4761-8410-a6c96725760f
 description: 'Obtenga información sobre cómo el análisis de uso se conecta a una API y proporciona una tendencia mensual del uso de varios servicios de Microsoft 365.  '
-ms.openlocfilehash: 3fc65dce334f0db5146bc72c1b2791bdfb6c66c0
-ms.sourcegitcommit: 0b7070ec119e00e0dafe030bbfbef0ae5c9afa19
+ms.openlocfilehash: 4954b463946ba436afd14390526eefe188447a46
+ms.sourcegitcommit: 181a0aff54842dcbafd834647c6e9ee47304d10f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/29/2022
-ms.locfileid: "68163961"
+ms.lasthandoff: 10/27/2022
+ms.locfileid: "68730495"
 ---
 # <a name="microsoft-365-usage-analytics-data-model"></a>Modelo de datos de análisis de uso de Microsoft 365
 

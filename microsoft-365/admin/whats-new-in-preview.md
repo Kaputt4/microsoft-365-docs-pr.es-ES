@@ -10,6 +10,7 @@ ms.topic: overview
 ms.service: microsoft-365-business
 ms.localizationpriority: medium
 ms.collection:
+- Tier1
 - scotvorg
 - M365-subscription-management
 - Adm_O365
@@ -23,12 +24,12 @@ ms.custom:
 - AdminSurgePortfolio
 - admindeeplinkMAC
 description: 'El Centro de administración de Microsoft 365: obtenga información sobre las características que se agregaron este mes.'
-ms.openlocfilehash: 4f1c26dbcedc1057157e782b7e7489b5b6ed478e
-ms.sourcegitcommit: 0b7070ec119e00e0dafe030bbfbef0ae5c9afa19
+ms.openlocfilehash: 890ea8f683f36fb0d772618f7e3380477647c4d9
+ms.sourcegitcommit: 181a0aff54842dcbafd834647c6e9ee47304d10f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/29/2022
-ms.locfileid: "68164027"
+ms.lasthandoff: 10/27/2022
+ms.locfileid: "68733843"
 ---
 # <a name="whats-new-in-the-microsoft-365-admin-center"></a>Novedades de la Centro de administración de Microsoft 365
 

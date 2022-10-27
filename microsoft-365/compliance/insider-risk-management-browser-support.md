@@ -17,37 +17,38 @@ ms.collection:
 - m365initiative-compliance
 - highpri
 - tier1
-ms.openlocfilehash: 5e0d29d96eeafe418d1773e20a73e33b402389fa
-ms.sourcegitcommit: 50da6f1f6ef2274c17ed9729e7ad84395b0a9be2
+ms.openlocfilehash: 9e3563348e0139fc092f5d40722d29bffd13b212
+ms.sourcegitcommit: 181a0aff54842dcbafd834647c6e9ee47304d10f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/08/2022
-ms.locfileid: "68503498"
+ms.lasthandoff: 10/27/2022
+ms.locfileid: "68733645"
 ---
 # <a name="learn-about-and-configure-insider-risk-management-browser-signal-detection"></a>Información y configuración de la detección de señales del explorador de administración de riesgos internos
 
 >[!IMPORTANT]
 >Administración de riesgos internos de Microsoft Purview correlaciona varias señales para identificar posibles riesgos internos malintencionados o involuntarios, como el robo de IP, la pérdida de datos y las infracciones de seguridad. La administración de riesgos internos permite a los clientes crear directivas para administrar la seguridad y el cumplimiento. Creados con privacidad por diseño, los usuarios se seudonimizan de forma predeterminada y los controles de acceso basados en roles y los registros de auditoría están en su lugar para ayudar a garantizar la privacidad del nivel de usuario.
 
-Los exploradores web a menudo los usan los usuarios para acceder a archivos confidenciales y no confidenciales dentro de una organización. La administración de riesgos internos permite a su organización detectar y actuar sobre señales de filtración de exploradores para todos los archivos no ejecutables vistos en los exploradores [Microsoft Edge](https://www.microsoft.com/edge) y [Google Chrome](https://www.google.com/chrome) . Con estas señales, los analistas e investigadores pueden actuar rápidamente cuando los usuarios de directivas de ámbito realizan cualquiera de las siguientes actividades al usar estos exploradores:
+Los exploradores web a menudo los usan los usuarios para acceder a archivos confidenciales y no confidenciales dentro de una organización. La administración de riesgos internos permite a su organización detectar y actuar sobre señales de filtración de exploradores para todos los archivos no ejecutables vistos en los exploradores [Microsoft Edge](https://www.microsoft.com/edge) y [Google Chrome](https://www.google.com/chrome) . Con estas señales, los analistas e investigadores pueden actuar rápidamente cuando los usuarios de la directiva de ámbito realizan cualquiera de las siguientes actividades de riesgo cuando usan estos exploradores:
 
 - Archivos copiados en el almacenamiento en la nube personal
 - Archivos impresos en dispositivos locales o de red
 - Archivos transferidos o copiados a un recurso compartido de red
 - Archivos copiados en dispositivos USB
 - Exploración de sitios web de riesgo
+- Exploración de sitios web potencialmente peligrosos
 
 Las señales de estos eventos se detectan en Microsoft Edge mediante funcionalidades integradas del explorador y mediante el complemento *Extensión de cumplimiento de Microsoft* . En Google Chrome, los clientes usan la *extensión de cumplimiento de Microsoft* para la detección de señales.
 
-En la tabla siguiente se resumen las actividades detectadas y la compatibilidad con extensiones para cada explorador:
+En la tabla siguiente se resumen las actividades de riesgo identificadas y la compatibilidad con extensiones para cada explorador:
 
-| **Actividades detectadas**                        | **Microsoft Edge** | **Google Chrome** |
-| ---------------------------------------------- | ------------------ | ----------------- |
-| Archivos copiados en el almacenamiento en la nube personal         | Nativa             | Extensión         |
-| Archivos impresos en dispositivos locales o de red      | Nativa             | Extensión         |
-| Archivos transferidos o copiados a un recurso compartido de red | Extensión          | Extensión         |
-| Archivos copiados en dispositivos USB                    | Extensión          | Extensión         |
-| Exploración de sitios web de riesgo                        | Extensión          | Extensión         |
+| **Actividades detectadas** | **Microsoft Edge** | **Google Chrome** |
+| ----------------------- | ------------------ | ----------------- |
+| Archivos copiados en el almacenamiento en la nube personal | Nativa  | Extensión  |
+| Archivos impresos en dispositivos locales o de red | Nativa | Extensión |
+| Archivos transferidos o copiados a un recurso compartido de red | Extensión  | Extensión  |
+| Archivos copiados en dispositivos USB | Extensión   | Extensión    |
+| Exploración de sitios web de riesgo     | Extensión   | Extensión    |
 
 [!INCLUDE [purview-preview](../includes/purview-preview.md)]
 
@@ -76,7 +77,7 @@ Si usa directivas basadas en la plantilla *de uso de explorador de riesgo*, se d
 
 ### <a name="option-1-basic-setup-recommended-for-testing-with-edge"></a>Opción 1: Configuración básica (se recomienda para las pruebas con Edge)
 
-Use esta opción para configurar un autohospedaje de máquina único para cada dispositivo de la organización al probar la detección de señales del explorador.
+Use esta opción para configurar un único autohospedado de máquina para cada dispositivo de la organización al probar la detección de señales del explorador.
 
 Para la opción de configuración básica, complete los pasos siguientes:
 
@@ -89,7 +90,7 @@ Use esta opción para configurar la extensión y los requisitos de su organizaci
 
 Para la opción de configuración Intune, complete los pasos siguientes:
 
-1. Inicie sesión en el [Centro de Endpoint Manager Administración de Microsoft](https://endpoint.microsoft.com) con permisos de administrador.
+1. Inicie sesión en el [Centro de Administración de Microsoft Endpoint Manager](https://endpoint.microsoft.com) con permisos de administrador.
 2. Vaya a **Perfiles de configuración**.
 3. Seleccione **Crear perfil**.
 4. Elija **Windows 10** como plataforma.
@@ -138,7 +139,7 @@ La compatibilidad con la detección de señales del explorador de administració
 
 ### <a name="option-1-basic-setup-recommended-for-testing-with-chrome"></a>Opción 1: Configuración básica (se recomienda para las pruebas con Chrome)
 
-Use esta opción para configurar un autohospedaje de máquina único para cada dispositivo de la organización al probar la detección de señales del explorador.
+Use esta opción para configurar el autohospedado de una sola máquina para cada dispositivo de la organización al probar la detección de señales del explorador.
 
 Para la opción de configuración básica, complete los pasos siguientes:
 
@@ -148,8 +149,8 @@ Para la opción de configuración básica, complete los pasos siguientes:
 Get-Item -path "HKLM:\\SOFTWARE\\Microsoft\\Windows Defender\\Miscellaneous Configuration" | New-ItemProperty -Name DlpDisableBrowserCache -Value 0 -Force
 ```
 
->[!Important]
->Estas claves del Registro son necesarias para garantizar la funcionalidad adecuada de la extensión. Debe habilitar estas claves del Registro antes de probar las señales.*
+> [!Important]
+> Estas claves del Registro son necesarias para garantizar la funcionalidad adecuada de la extensión. Debe habilitar estas claves del Registro antes de probar las señales.*
 
 **Paso 2: Instalar la *extensión de cumplimiento de Microsoft***
 
@@ -170,7 +171,7 @@ Para la opción de configuración Intune, complete los pasos siguientes:
 Get-Item -path "HKLM:\\SOFTWARE\\Microsoft\\Windows Defender\\Miscellaneous Configuration" | New-ItemProperty -Name DlpDisableBrowserCache -Value 0 -Force
 ```
 
-2. Inicie sesión en el [Centro de Endpoint Manager Administración de Microsoft](https://endpoint.microsoft.com).
+2. Inicie sesión en el [Centro de Administración de Microsoft Endpoint Manager](https://endpoint.microsoft.com).
 3. Vaya a **Scripts de dispositivos** \> y seleccione **Agregar.** 
 4. Cuando se le solicite, vaya a la ubicación del script creado.
 5. Seleccione la siguiente configuración:
@@ -185,7 +186,7 @@ Get-Item -path "HKLM:\\SOFTWARE\\Microsoft\\Windows Defender\\Miscellaneous Conf
 
 Antes de agregar la extensión de Chrome DLP de Microsoft a la lista de extensiones instaladas por fuerza, debe instalar el archivo de plantilla administrativa de Chrome (.admx) para la administración de Intune. Para obtener instrucciones paso a paso, consulta [Administrar Chrome Browser con Microsoft Intune](https://support.google.com/chrome/a/answer/9102677?hl=en#zippy=%2Cstep-ingest-the-chrome-admx-file-into-intune). Después de instalar el archivo de plantilla administrativa, complete los pasos siguientes:
 
-1. Inicie sesión en el [Centro de Endpoint Manager Administración de Microsoft](https://endpoint.microsoft.com).
+1. Inicie sesión en el [Centro de Administración de Microsoft Endpoint Manager](https://endpoint.microsoft.com).
 2. Vaya a **Perfiles de configuración**.
 3. Seleccione **Crear perfil**.
 4. Elija **Windows 10** como *plataforma*.

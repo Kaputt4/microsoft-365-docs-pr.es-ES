@@ -11,6 +11,7 @@ ms.topic: article
 ms.service: microsoft-365-business
 ms.localizationpriority: medium
 ms.collection:
+- Tier1
 - scotvorg
 - M365-subscription-management
 - Adm_o365
@@ -24,12 +25,12 @@ ms.custom:
 search.appverid: MET150
 description: Siga estos pasos para comprar más licencias o reducir el número de licencias para su suscripción de Microsoft 365 para empresas.
 ms.date: 09/29/2022
-ms.openlocfilehash: d479308940983183fb6956aa3c5bc6129b6c1d3a
-ms.sourcegitcommit: 99b174a8d431092b3cf7d650593248671297fd91
+ms.openlocfilehash: 163a5b7bfce14bfb0c127480cf0b7ac61cf09dfb
+ms.sourcegitcommit: 181a0aff54842dcbafd834647c6e9ee47304d10f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/30/2022
-ms.locfileid: "68298065"
+ms.lasthandoff: 10/27/2022
+ms.locfileid: "68727243"
 ---
 # <a name="buy-or-remove-microsoft-365-licenses-for-a-subscription"></a>Compra o eliminación de licencias de Microsoft 365 para una suscripción
 

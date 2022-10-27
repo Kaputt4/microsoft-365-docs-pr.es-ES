@@ -18,12 +18,12 @@ ms.collection:
 - m365solution-insiderrisk
 - m365initiative-compliance
 - highpri
-ms.openlocfilehash: 889589330ddc79b434d8fa07b11fa20e784c4762
-ms.sourcegitcommit: 0d8fb571024f134d7480fe14cffc5e31a687d356
+ms.openlocfilehash: 3745707ed7b6e6e4988bbb64583227ffad09fbf4
+ms.sourcegitcommit: 181a0aff54842dcbafd834647c6e9ee47304d10f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/20/2022
-ms.locfileid: "68621260"
+ms.lasthandoff: 10/27/2022
+ms.locfileid: "68730367"
 ---
 # <a name="learn-about-insider-risk-management"></a>Información sobre riesgos internos de Microsoft
 
@@ -32,11 +32,9 @@ ms.locfileid: "68621260"
 
 La Administración de riesgos internos de Microsoft Purview es una solución de cumplimiento que ayuda a minimizar los riesgos internos, ya que le permite detectar, investigar y actuar en actividades malintencionadas e involuntarias en su organización. Las directivas de riesgos internos le permiten definir los tipos de riesgos a identificar y detectar en su organización, incluida la acción sobre casos y la elevación de casos a Microsoft eDiscovery (Premium) si es necesario. Los analistas de riesgo de su organización pueden tomar rápidamente las medidas adecuadas para asegurarse de que los usuarios cumplen los estándares de cumplimiento de su organización.
 
-Para obtener más información y una introducción al proceso de planeación para abordar las actividades de riesgo en su organización, consulte [Inicio de un programa de administración de riesgos internos](https://download.microsoft.com/download/b/2/0/b208282a-2482-4986-ba07-15a9b9286df0/pwc-starting-an-insider-risk-management-program-with-pwc-and-microsoft.pdf).
+Para obtener más información y información general sobre el proceso de planeamiento para abordar actividades potencialmente de riesgo en su organización que pueden provocar un incidente de seguridad, consulte [Inicio de un programa de administración de riesgos internos](https://download.microsoft.com/download/b/2/0/b208282a-2482-4986-ba07-15a9b9286df0/pwc-starting-an-insider-risk-management-program-with-pwc-and-microsoft.pdf).
 
 Vea los vídeos siguientes para obtener información sobre cómo la administración de riesgos internos puede ayudar a su organización a prevenir, detectar y contener riesgos a la vez que prioriza los valores, la cultura y la experiencia del usuario de la organización:
-<br>
-<br>
 
 **Solución de administración de riesgos internos & desarrollo**:
 >[!VIDEO https://www.microsoft.com/videoplayer/embed/RE4j9CN]
@@ -54,7 +52,7 @@ Consulte el [vídeo de Microsoft Mechanics](https://www.youtube.com/watch?v=Ynkf
 
 ## <a name="modern-risk-pain-points"></a>Puntos de dolor de riesgo modernos
 
-La administración y minimización de los riesgos en su organización empieza con la comprensión de los tipos de riesgos que se encuentran en Modern Workplace. Algunos riesgos están controlados por eventos externos y factores que están fuera del control directo. Otros riesgos se deben a eventos internos y actividades de usuario que se pueden minimizar y evitar. Algunos ejemplos son los riesgos de comportamientos y acciones ilegales, inadecuados, no autorizados o no éticos por parte de los usuarios de la organización. Estos comportamientos incluyen una amplia gama de riesgos internos de los usuarios:
+La administración y minimización de los riesgos en su organización empieza con la comprensión de los tipos de riesgos que se encuentran en Modern Workplace. Algunos riesgos están controlados por eventos externos y factores que están fuera del control directo. Otros riesgos se deben a eventos internos y acciones de usuario que se pueden minimizar y evitar. Algunos ejemplos son los riesgos de comportamientos y acciones ilegales, inadecuados, no autorizados o no éticos por parte de los usuarios de la organización. Estos comportamientos incluyen una amplia gama de riesgos internos de los usuarios:
 
 - Filtraciones de datos confidenciales y pérdida de datos
 - Infracciones de confidencialidad
@@ -132,13 +130,13 @@ Para resolver las alertas, se abre un nuevo caso, se asigna la alerta a un caso 
 
 ### <a name="investigate"></a>Investigación
 
-Investigue rápidamente todas las actividades de un usuario seleccionado con [informes de actividad de usuario](insider-risk-management-activities.md#user-activity-reports). Estos informes permiten a los investigadores de su organización examinar las actividades de usuarios específicos durante un período de tiempo definido sin tener que asignarlas de forma temporal o explícita a una directiva de administración de riesgos internos. Después de examinar las actividades de un usuario, los investigadores pueden descartar actividades individuales como benignas, compartir o enviar por correo electrónico un vínculo al informe con otros investigadores, o elegir asignar al usuario temporal o explícitamente a una directiva de administración de riesgos internos.
+Investigue rápidamente todas las actividades de riesgo de un usuario seleccionado con [informes de actividad de usuario (versión preliminar).](insider-risk-management-activities.md#user-activity-reports) Estos informes permiten a los investigadores de su organización examinar las actividades de usuarios específicos durante un período de tiempo definido sin tener que asignarlas de forma temporal o explícita a una directiva de administración de riesgos internos. Después de examinar las actividades de un usuario, los investigadores pueden descartar actividades individuales como benignas, compartir o enviar por correo electrónico un vínculo al informe con otros investigadores, o elegir asignar al usuario temporal o explícitamente a una directiva de administración de riesgos internos.
 
 [Los casos](insider-risk-management-cases.md) se crean para las alertas que requieren una revisión e investigación más detalladas de los detalles y las circunstancias de la actividad en torno a la coincidencia de directivas. El **panel de casos** ofrece una vista integral de todos los casos activos, casos abiertos a lo largo del tiempo y estadísticas de casos para la organización. Los revisores pueden filtrar rápidamente los casos por estado, la fecha en que se abrió el caso y la fecha en que se actualizó el caso por última vez.
 
 Si se selecciona un caso en el panel de casos, se abre el caso para su investigación y revisión. Este paso es el núcleo del flujo de trabajo de administración de riesgos internos. Esta área es donde las actividades de riesgo, las condiciones de directiva, los detalles de alertas y los detalles del usuario se sintetizan en una vista integrada para los revisores. Las herramientas de investigación principales de esta área son:
 
-- **Actividad del usuario**: la actividad del usuario se muestra automáticamente en un gráfico interactivo que traza las actividades a lo largo del tiempo y por nivel de riesgo para las actividades de riesgo actuales o pasadas. Los revisores pueden filtrar y ver rápidamente todo el historial de riesgos del usuario y profundizar en actividades específicas para obtener más detalles.
+- **Actividad del usuario**: la actividad de riesgo del usuario se muestra automáticamente en un gráfico interactivo que traza las actividades a lo largo del tiempo y por nivel de riesgo para las actividades de riesgo actuales o pasadas. Los revisores pueden filtrar y ver rápidamente todo el historial de riesgos del usuario y profundizar en actividades específicas para obtener más detalles.
 - **Explorador de contenido**: todos los archivos de datos y mensajes de correo electrónico asociados a las actividades de alerta se capturan y muestran automáticamente en el Explorador de contenido. Los revisores pueden filtrar y ver archivos y mensajes por origen de datos, tipo de archivo, etiquetas, conversación y muchos más atributos.
 - **Notas del caso**: los revisores pueden proporcionar notas para un caso en la sección Notas del caso. Esta lista consolida todas las notas en una vista central e incluye información de revisor y fecha enviada.
 
@@ -176,7 +174,7 @@ En la mayoría de los casos, los usuarios hacen todo lo posible para controlar c
 
 ### <a name="intentional-or-unintentional-security-policy-violations-preview"></a>Infracciones de directivas de seguridad intencionadas o involuntarias (versión preliminar)
 
-Los usuarios suelen tener un gran grado de control al administrar sus dispositivos en el área de trabajo moderna. Este control puede incluir permisos para instalar o desinstalar las aplicaciones necesarias en el desempeño de sus tareas o la capacidad de deshabilitar temporalmente las características de seguridad del dispositivo. Independientemente de si esta actividad es involuntaria, accidental o malintencionada, esta conducta puede suponer un riesgo para su organización y es importante identificar y actuar para minimizar. Para ayudar a identificar estas actividades de seguridad de riesgo, las siguientes plantillas de infracción de directivas de seguridad de administración de riesgos internos puntúan los indicadores de riesgo de seguridad y usan alertas de Microsoft Defender para punto de conexión para proporcionar información sobre las actividades relacionadas con la seguridad:
+Los usuarios suelen tener un gran grado de control al administrar sus dispositivos en el área de trabajo moderna. Este control puede incluir permisos para instalar o desinstalar las aplicaciones necesarias en el desempeño de sus tareas o la capacidad de deshabilitar temporalmente las características de seguridad del dispositivo. Independientemente de si esta actividad de riesgo es involuntaria, accidental o malintencionada, esta conducta puede suponer un riesgo para su organización y es importante identificar y actuar para minimizar. Para ayudar a identificar estas actividades de seguridad de riesgo, las siguientes plantillas de infracción de directivas de seguridad de administración de riesgos internos puntúan los indicadores de riesgo de seguridad y usan alertas de Microsoft Defender para punto de conexión para proporcionar información sobre las actividades relacionadas con la seguridad:
 
 - [Infracciones generales de la directiva de seguridad (versión preliminar)](insider-risk-management-policies.md#general-security-policy-violations-preview)
 - [Infracciones de la directiva de seguridad por parte de los usuarios que abandonan la organización (versión preliminar)](insider-risk-management-policies.md#security-policy-violations-by-departing-users-preview)
@@ -198,7 +196,7 @@ En el caso de las organizaciones de la industria sanitaria, estudios recientes h
 
 ### <a name="actions-and-behaviors-by-disgruntled-users-preview"></a>Acciones y comportamientos de usuarios descontentos (versión preliminar)
 
-Los eventos de estrés laboral pueden afectar al comportamiento del usuario de varias maneras relacionadas con los riesgos internos. Estos factores de estrés pueden ser una revisión de rendimiento deficiente, una disminución de posición o la colocación del usuario en un plan de revisión de rendimiento. Los factores de estrés también pueden dar lugar a un comportamiento potencialmente inadecuado, como el envío de usuarios potencialmente amenazantes, hostigamiento o lenguaje discriminatorio en el correo electrónico y otros mensajes. Aunque la mayoría de los usuarios no responden malintencionadamente a estos eventos, el estrés de estas acciones puede dar lugar a que algunos usuarios se comporten de maneras que normalmente no consideren en circunstancias normales. Para ayudar a identificar estos tipos de actividades de riesgo, las siguientes plantillas de directivas de administración de riesgos internos pueden usar el conector de RR. HH. o la integración con una [directiva de cumplimiento de comunicaciones dedicada](/microsoft-365/compliance/communication-compliance-policies#integration-with-insider-risk-management-preview) para que los usuarios entren en el ámbito de las directivas de administración de riesgos internos y empiecen a puntuar indicadores de riesgo relacionados con comportamientos que pueden producirse cerca de eventos de estrés laboral:
+Los eventos de estrés laboral pueden afectar al comportamiento del usuario de varias maneras relacionadas con los riesgos internos. Estos factores de estrés pueden ser una revisión de rendimiento deficiente, una disminución de posición o la colocación del usuario en un plan de revisión de rendimiento. Los factores de estrés también pueden dar lugar a un comportamiento potencialmente inadecuado, como el envío de usuarios potencialmente amenazantes, hostigamiento o lenguaje discriminatorio en el correo electrónico y otros mensajes. Aunque la mayoría de los usuarios no responden malintencionadamente a estos eventos, el estrés de estas acciones puede dar lugar a que algunos usuarios se comporten de maneras que normalmente no consideren en circunstancias normales. Para ayudar a identificar estos tipos de actividades potencialmente arriesgadas, las siguientes plantillas de directivas de administración de riesgos internos pueden usar el conector de RR. HH. o la integración con una [directiva de cumplimiento de comunicaciones dedicada](/microsoft-365/compliance/communication-compliance-policies#integration-with-insider-risk-management-preview) para que los usuarios entren en el ámbito de las directivas de administración de riesgos internos y empiecen a puntuar los indicadores de riesgo relacionados con los comportamientos que pueden producirse:
 
 - [Filtraciones de datos por parte de usuarios inconformes (versión preliminar)](insider-risk-management-policies.md#data-leaks-by-disgruntled-users-preview)
 - [Infracciones de la directiva de seguridad por parte de usuarios inconformes (versión preliminar)](insider-risk-management-policies.md#security-policy-violations-by-disgruntled-users-preview)

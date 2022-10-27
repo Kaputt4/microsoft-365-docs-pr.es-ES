@@ -10,15 +10,16 @@ ms.topic: article
 ms.service: microsoft-365-business
 ms.localizationpriority: medium
 ms.collection:
+- Tier3
 - scotvorg
 - Adm_TOC
 description: Establezca cuánto tiempo durará la sesión del usuario en Microsoft 365 antes de que se agote el tiempo de espera.
-ms.openlocfilehash: cc275293187888c4f04878dc10071e0c82e97ea5
-ms.sourcegitcommit: 0b7070ec119e00e0dafe030bbfbef0ae5c9afa19
+ms.openlocfilehash: 5a3307cd1c0d2b84b560359678bd2a22c199c33a
+ms.sourcegitcommit: 181a0aff54842dcbafd834647c6e9ee47304d10f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/29/2022
-ms.locfileid: "68166711"
+ms.lasthandoff: 10/27/2022
+ms.locfileid: "68733029"
 ---
 # <a name="idle-session-timeout-for-microsoft-365"></a>Tiempo de espera de sesión inactiva para Microsoft 365
 

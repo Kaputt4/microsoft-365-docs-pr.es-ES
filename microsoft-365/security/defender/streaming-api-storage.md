@@ -19,12 +19,12 @@ ms.collection:
 - tier3
 ms.custom: admindeeplinkDEFENDER
 ms.topic: conceptual
-ms.openlocfilehash: 7c541e1e86fdc2967444d5e4297ed04460a47bf5
-ms.sourcegitcommit: 0d8fb571024f134d7480fe14cffc5e31a687d356
+ms.openlocfilehash: 73428378c3229765b5e9ea3783dfdde7021fabaf
+ms.sourcegitcommit: 181a0aff54842dcbafd834647c6e9ee47304d10f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/20/2022
-ms.locfileid: "68645635"
+ms.lasthandoff: 10/27/2022
+ms.locfileid: "68727265"
 ---
 # <a name="configure-microsoft-365-defender-to-stream-advanced-hunting-events-to-your-storage-account"></a>Configuración de Microsoft 365 Defender para transmitir eventos de búsqueda avanzada a la cuenta de almacenamiento
 
@@ -61,9 +61,11 @@ Una vez creada la cuenta de almacenamiento, deberá hacer lo siguiente:
 4. En el control flotante **Agregar nueva configuración de Streaming API** que aparece, configure las siguientes opciones:
    1. **Nombre**: elija un nombre para la nueva configuración.
    2. Seleccione **Reenviar eventos a Azure Storage**.
-   3. En el cuadro **Id. de recurso de la cuenta de almacenamiento** que aparece, escriba el **identificador de recurso de la cuenta de almacenamiento**. Para obtener el **identificador de recurso de la cuenta de almacenamiento**, abra Azure Portal en <https://portal.azure.com>, haga clic en **Cuentas** \> de almacenamiento, vaya a la pestaña \> propiedades y copie el texto en **Id. de recurso de la cuenta de almacenamiento**.
+4. Para mostrar el identificador de recurso de Azure Resource Manager para una cuenta de almacenamiento en el Azure Portal, siga estos pasos:
 
-      :::image type="content" source="../defender-endpoint/images/storage-account-resource-id.png" alt-text="Un identificador de recurso de cuenta de almacenamiento" lightbox="../defender-endpoint/images/storage-account-resource-id.png":::
+   1. Vaya a la cuenta de almacenamiento en el Azure Portal.
+   2. En la página **Información general** , en la sección **Essentials** , seleccione el vínculo **Vista JSON** .
+   3. El identificador de recurso de la cuenta de almacenamiento se muestra en la parte superior de la página y copia el texto en **Id. de recurso de la cuenta de almacenamiento**.
 
    4. De nuevo en el control flotante **Agregar nueva configuración de Streaming API** , elija los **tipos de eventos** que desea transmitir.
 

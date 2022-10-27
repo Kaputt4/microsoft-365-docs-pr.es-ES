@@ -19,17 +19,17 @@ ms.collection:
 search.appverid:
 - MET150
 - MOE150
-ms.openlocfilehash: b4697afae9745934437084927ed347582c4a300a
-ms.sourcegitcommit: 04e517c7e00323b5c33d8ea937115725cf2cfd4d
+ms.openlocfilehash: 1f5ccfbd5cca1f20bd023ad7214618597a5a57a6
+ms.sourcegitcommit: 181a0aff54842dcbafd834647c6e9ee47304d10f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/13/2022
-ms.locfileid: "68565100"
+ms.lasthandoff: 10/27/2022
+ms.locfileid: "68727221"
 ---
 # <a name="use-communication-compliance-reports-and-audits"></a>Uso de informes y auditorías de cumplimiento de comunicaciones
 
 >[!IMPORTANT]
->Cumplimiento de comunicaciones de Microsoft Purview proporciona las herramientas para ayudar a las organizaciones a detectar infracciones de cumplimiento normativo (por ejemplo, SEC o FINRA), como información confidencial o confidencial, hostigamiento o amenazante del lenguaje y uso compartido de contenido para adultos. Creados con privacidad por diseño, los nombres de usuario se seudonimizan de forma predeterminada, los controles de acceso basados en roles se integran, los investigadores son admitidos por un administrador y los registros de auditoría están en vigor para garantizar la privacidad del nivel de usuario.
+>Cumplimiento de comunicaciones de Microsoft Purview proporciona las herramientas para ayudar a las organizaciones a detectar infracciones de cumplimiento normativo (por ejemplo, SEC o FINRA), como información confidencial o confidencial, hostigamiento o amenazante del lenguaje y uso compartido de contenido para adultos. Creados con privacidad por diseño, los nombres de usuario se seudonimizan de forma predeterminada, los controles de acceso basados en roles están integrados, los investigadores son admitidos por un administrador y los registros de auditoría están en su lugar para ayudar a garantizar la privacidad del nivel de usuario.
 
 [!INCLUDE [purview-preview](../includes/purview-preview.md)]
 
@@ -41,14 +41,14 @@ Los widgets de informe proporcionan una vista rápida de la información más co
 
 Para el filtro de intervalo de fechas, la fecha y hora de los eventos se enumeran en Hora universal coordinada (UTC). Al filtrar mensajes para informes, la fecha y hora local del usuario solicitante determina los resultados en función de la conversión de la fecha y hora local del usuario a UTC. Por ejemplo, si un usuario de la hora de verano del Pacífico (PDT) de Ee. UU. filtra un informe del 8/30/2021 al 8/31/2021 a las 00:00, el informe incluye mensajes de 8/30/2021 07:00 UTC a 8/31/2021 07:00 UTC. Si el mismo usuario estaba en la hora de verano del Este de EE. UU. (EDT) al filtrar a las 00:00, el informe incluye mensajes de 8/30/2021 04:00 UTC a 8/31/2021 04:00 UTC.
 
-![Panel de informes de cumplimiento de comunicaciones.](../media/communication-compliance-reports-dashboard.png)
+![Panel de informes de cumplimiento de comunicaciones](../media/communication-compliance-reports-dashboard.png)
 
 El **panel Informes** contiene los siguientes widgets de informe y vínculos de informes detallados:
 
 ### <a name="report-widgets"></a>Widgets de informe
 
-- **Coincidencias de directivas recientes**: muestra el número de coincidencias por directiva activa a lo largo del tiempo.
-- **Elementos resueltos por directiva**: muestra el número de alertas de coincidencia de directivas resueltas por directiva a lo largo del tiempo.
+- **Coincidencias de directivas recientes**: muestra el número de coincidencias por directivas activas a lo largo del tiempo.
+- **Elementos resueltos por directiva**: muestra el número de alertas de coincidencia de directivas resueltas por directivas a lo largo del tiempo.
 - **Usuarios con la mayoría de coincidencias de directiva**: muestra los usuarios (o nombres de usuario anonimizados) y el número de coincidencias de directivas durante un período determinado.
 - **Directiva con la mayoría de coincidencias**: muestra las directivas y el número de coincidencias para un período determinado, clasificados de mayor a menor para las coincidencias.
 - **Escalaciones por directiva**: muestra el número de escalaciones por directiva durante un tiempo determinado.
@@ -106,7 +106,7 @@ Use la opción *Exportar* para crear un archivo .csv que contenga los detalles d
 
 Cree informes personalizados y revise los detalles de los mensajes contenidos en directivas específicas en la pestaña **Directivas** . Estos informes se pueden usar para revisiones de todos los mensajes y para crear una instantánea de informe para el estado de los mensajes durante un período de tiempo personalizable. Después de crear un informe, puede ver y descargar el informe de detalles como un archivo .csv en la pestaña **Informes de detalles del mensaje** .
 
-![Informe de detalles del mensaje de cumplimiento de comunicaciones.](../media/communication-compliance-message-detail-report.png)
+![Informe de detalles del mensaje de cumplimiento de comunicaciones](../media/communication-compliance-message-detail-report.png)
 
 Para crear un nuevo informe de detalles del mensaje, complete los pasos siguientes:
 
@@ -124,24 +124,24 @@ En función del número de elementos del informe, el informe puede tardar unos m
 
 Los informes de detalles del mensaje contienen la siguiente información para cada elemento de mensaje de la directiva:
 
-- **Identificador de coincidencia**: identificador único para el mensaje de la directiva.
+- **Identificador de coincidencia**: identificador único del mensaje de la directiva.
 - **Remitente**: remitente del mensaje.
-- **Destinatarios**: los destinatarios incluidos para el mensaje.
-- **Fecha de envío**: la fecha en que se envió el mensaje.
-- **Fecha de coincidencia**: la fecha en que el mensaje coincidía con las condiciones de la directiva.
-- **Asunto**: asunto del mensaje.
-- **Contiene datos adjuntos**: el estado de los datos adjuntos del mensaje. Los valores son Sí o No.
-- **Nombre** de directiva: nombre de la directiva asociada al mensaje. Este valor será el mismo para todos los mensajes del informe.
-- **Estado del elemento**: el estado del elemento de mensaje en la directiva. Los valores son Pending o Resolved.
-- **Etiquetas**: las etiquetas asignadas al mensaje. Los valores son Cuestionables, Compatibles o No compatibles.
+- **Destinatarios**: destinatarios incluidos para el mensaje.
+- **Fecha de envío**: fecha en que se envió el mensaje.
+- **Fecha de coincidencia**: fecha en la que el mensaje coincidía con las condiciones de la directiva.
+- **Asunto**: Asunto del mensaje.
+- **Contiene datos adjuntos**: estado de los datos adjuntos del mensaje. Los valores son *Sí* o *No*.
+- **Nombre de la directiva**: nombre de la directiva asociada al mensaje. Este valor será el mismo para todos los mensajes del informe.
+- **Estado del elemento**: estado del elemento de mensaje en la directiva. Los valores son *Pending* o *Resolved*.
+- **Etiquetas**: etiquetas asignadas al mensaje. Los valores son *Cuestionables, Compatibles* o *No compatibles*.
 - **Coincidencias de palabras clave**: coincidencias de palabras clave para el mensaje.
 - **Revisores**: revisores asignados al mensaje.
-- **Pendiente para (días):** el número de días que el mensaje ha estado en estado pendiente. Para los mensajes resueltos, el valor es 0.
-- **Comentario para resuelto**: los comentarios del mensaje especificados cuando se resuelven.
+- **Pendiente para (días):** número de días que el mensaje ha estado en estado pendiente. Para los mensajes resueltos, el valor es 0.
+- **Comentario para resuelto**: comentarios del mensaje especificado cuando se resuelven.
 - **Fecha resuelta**: fecha y hora en que se resolvió el mensaje.
-- **Última actualización por**: el nombre de usuario del último actualizador.
-- **Última actualización:** fecha y hora en que se actualizó por última vez el mensaje.
-- **Historial de comentarios**: lista de todos los comentarios de la alerta de mensaje, incluido el autor de comentarios y la fecha y hora del comentario.
+- **Última actualización por**: nombre de usuario del último actualizador.
+- **Última actualización:** fecha y hora en que el mensaje se actualizó por última vez.
+- **Historial de comentarios**: lista de todos los comentarios de la alerta de mensaje, incluidos el autor de comentarios y la fecha y hora del comentario.
 
 ## <a name="audit"></a>Auditoría
 
@@ -155,18 +155,18 @@ Para ver las actividades de actualización de directivas de cumplimiento de comu
 |Campo|Detalles|
 |---|---|
 | **CreationDate** | Fecha en que se realizó la actividad de actualización en una directiva. |
-| **UserIds** | El usuario que realizó la actividad de actualización en una directiva. |
-| **Operations** | Las operaciones de actualización realizadas en la directiva. |
-| **AuditData** | Este campo es el origen de datos principal para todas las actividades de actualización de directivas. Todas las actividades de actualización se registran y separan mediante delimitadores de comas. |
+| **UserIds** | Usuario que realizó la actividad de actualización en una directiva. |
+| **Operations** | Actualizar las operaciones realizadas en la directiva. |
+| **AuditData** | Origen de datos principal para todas las actividades de actualización de directivas. Todas las actividades de actualización se registran y separan mediante delimitadores de comas. |
 
 Para ver las actividades de revisión de cumplimiento de comunicaciones de una directiva, seleccione el control **Exportar actividades de revisión** en la página **Información general** de una directiva específica. Debe tener asignados los roles *Administradores globales de Administración* o *de cumplimiento de comunicaciones* para exportar las actividades de revisión. Esta acción genera un archivo de auditoría en el formato .csv que contiene la siguiente información:
 
 |Campo|Detalles|
 |---|---|
-| **CreationDate** | La fecha en que se realizó la actividad de revisión en una directiva. |
-| **UserIds** | El usuario que realizó la actividad de revisión en una directiva. |
-| **Operations** | Las operaciones de revisión realizadas en la directiva. |
-| **AuditData** | Este campo es el origen de datos principal para todas las actividades de revisión de directivas. Todas las actividades de revisión se registran y separan mediante delimitadores de comas. |
+| **CreationDate** | Fecha en que se realizó la actividad de revisión en una directiva. |
+| **UserIds** | Usuario que realizó la actividad de revisión en una directiva. |
+| **Operations** | Revise las operaciones realizadas en la directiva. |
+| **AuditData** | Origen de datos principal para todas las actividades de revisión de directivas. Todas las actividades de revisión se registran y separan mediante delimitadores de comas. |
 
 También puede ver las actividades de auditoría en el registro de auditoría unificado o con el cmdlet de PowerShell [Search-UnifiedAuditLog](/powershell/module/exchange/search-unifiedauditlog) . Para más información sobre las directivas de retención de registros de auditoría, consulte [Administración de directivas de retención de registros de auditoría](/microsoft-365/compliance/audit-log-retention-policies).
 

@@ -11,6 +11,7 @@ ms.topic: article
 ms.service: microsoft-365-business
 ms.localizationpriority: medium
 ms.collection:
+- Tier1
 - scotvorg
 - M365-subscription-management
 - Adm_O365
@@ -22,12 +23,12 @@ ms.custom:
 search.appverid: MET150
 description: Al cerrar la cuenta con Microsoft, se elimina toda la información relacionada con su cuenta, incluidas las licencias, los usuarios y los datos de usuario.
 ms.date: 04/02/2021
-ms.openlocfilehash: 6a3bc064b3b1658fd1bd9124a23e0ec8c5a4ac02
-ms.sourcegitcommit: 0b7070ec119e00e0dafe030bbfbef0ae5c9afa19
+ms.openlocfilehash: 622c2e2ac8aa06691c08088a0c1e03890dc18419
+ms.sourcegitcommit: 181a0aff54842dcbafd834647c6e9ee47304d10f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/29/2022
-ms.locfileid: "68195817"
+ms.lasthandoff: 10/27/2022
+ms.locfileid: "68732941"
 ---
 # <a name="close-your-microsoft-account"></a>Cierre de la cuenta de Microsoft
 

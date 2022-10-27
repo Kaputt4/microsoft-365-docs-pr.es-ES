@@ -14,19 +14,19 @@ audience: itpro
 ms.collection:
 - tier1
 - purview-compliance
-ms.openlocfilehash: 9bcd30f68f73d3596a55e1cd74a77aff32889df7
-ms.sourcegitcommit: 50da6f1f6ef2274c17ed9729e7ad84395b0a9be2
+ms.openlocfilehash: e6b94111802c624312447bbe7bb1de5d538aa005
+ms.sourcegitcommit: 181a0aff54842dcbafd834647c6e9ee47304d10f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/08/2022
-ms.locfileid: "68503938"
+ms.lasthandoff: 10/27/2022
+ms.locfileid: "68733557"
 ---
 # <a name="insider-risk-management-content-explorer"></a>Explorador de contenido de administración de riesgos internos
 
->[!IMPORTANT]
->Administración de riesgos internos de Microsoft Purview correlaciona varias señales para identificar posibles riesgos internos malintencionados o involuntarios, como el robo de IP, la pérdida de datos y las infracciones de seguridad. La administración de riesgos internos permite a los clientes crear directivas para administrar la seguridad y el cumplimiento. Creados con privacidad por diseño, los usuarios se seudonimizan de forma predeterminada y los controles de acceso basados en roles y los registros de auditoría están en su lugar para ayudar a garantizar la privacidad del nivel de usuario.
+> [!IMPORTANT]
+> Administración de riesgos internos de Microsoft Purview correlaciona varias señales para identificar posibles riesgos internos malintencionados o involuntarios, como el robo de IP, la pérdida de datos y las infracciones de seguridad. La administración de riesgos internos permite a los clientes crear directivas para administrar la seguridad y el cumplimiento. Creados con privacidad por diseño, los usuarios se seudonimizan de forma predeterminada y los controles de acceso basados en roles y los registros de auditoría están en su lugar para ayudar a garantizar la privacidad del nivel de usuario.
 
-El **explorador de contenido** de administración de riesgos internos permite a los usuarios *asignados el rol Insider Risk Management Investigators* examinar el contexto y los detalles del contenido asociado a la actividad en las alertas. Los datos del caso en el Explorador de contenido se actualizan diariamente para incluir nueva actividad. Para todas las alertas que se confirman en un caso, las copias de los archivos de datos y mensajes se archivan como una instantánea en el tiempo de los elementos, a la vez que se mantienen los archivos y mensajes originales en los orígenes de almacenamiento. Si es necesario, los archivos de datos de casos se pueden exportar como un archivo de documento portátil (PDF) o en el formato de archivo original.
+El **explorador de contenido** de administración de riesgos internos permite a los usuarios *asignados el rol Insider Risk Management Investigators* examinar el contexto y los detalles del contenido asociado a la actividad en las alertas. Los datos del caso en el Explorador de contenido se actualizan diariamente para incluir una nueva actividad de riesgo. Para todas las alertas que se confirman en un caso, las copias de los archivos de datos y mensajes se archivan como una instantánea en el tiempo de los elementos, a la vez que se mantienen los archivos y mensajes originales en los orígenes de almacenamiento. Si es necesario, los archivos de datos de casos se pueden exportar como un archivo de documento portátil (PDF) o en el formato de archivo original.
 
 En los casos nuevos, el contenido suele tardar aproximadamente una hora en rellenarse en el Explorador de contenido. En los casos con grandes cantidades de contenido, puede tardar más tiempo en crear una instantánea. Si el contenido se sigue cargando en el Explorador de contenido, verá un indicador de progreso que muestra el porcentaje de finalización.
 
@@ -120,7 +120,7 @@ Puede usar uno o varios filtros para restringir el ámbito de una búsqueda y de
 
 | **Filters** | **Descripción** |
 |:---------------------|:----------------|
-| **Etiquetas de cumplimiento** | Etiquetas de cumplimiento aplicadas en Office 365. |
+| **Etiquetas de cumplimiento** | Etiquetas de cumplimiento aplicadas en Microsoft 365. |
 | **Hora de creación (UTC)** | Fecha y hora en que se creó el archivo o mensaje de correo electrónico. La fecha y hora están en hora universal coordinada (UTC). |
 | **Fecha de última modificación (UTC)** | La fecha en la que el documento se modificó por última vez. La fecha y hora están en hora universal coordinada (UTC). |
 | **Extensión de archivo** | Tipo de extensión del archivo. |

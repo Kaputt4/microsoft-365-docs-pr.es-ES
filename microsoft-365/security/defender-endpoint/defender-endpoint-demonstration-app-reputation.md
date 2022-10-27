@@ -16,14 +16,16 @@ audience: ITPro
 ms.collection:
 - m365-security
 - tier2
-ms.topic: conceptual
+- demo
+ms.topic: article
 ms.subservice: mde
-ms.openlocfilehash: 82a0eab112545e8bbb78356f4a26baf6af903648
-ms.sourcegitcommit: 0d8fb571024f134d7480fe14cffc5e31a687d356
+ms.date: 10/21/2022
+ms.openlocfilehash: cc7081f8c6e71e321e68016f45c5d400e3a1c3cd
+ms.sourcegitcommit: 181a0aff54842dcbafd834647c6e9ee47304d10f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/20/2022
-ms.locfileid: "68631950"
+ms.lasthandoff: 10/27/2022
+ms.locfileid: "68730279"
 ---
 # <a name="smartscreen-app-reputation-demonstration"></a>Demostración de reputación de la aplicación SmartScreen
 
@@ -43,8 +45,6 @@ Este programa tiene una buena reputación; la descarga debe ejecutarse sin inter
 
 - [Conocida buena descarga del programa](https://demo.smartscreen.msft.net/download/known/freevideo.exe)
 
-  <!-- Hide {this intro with no subsequent list items} [Replace this link when new/updated source becomes available] -->
-
   Al iniciar este vínculo, se debe representar un mensaje similar al siguiente:
 
   :::image type="content" source="images/smartscreen-app-reputation-known-good.png" alt-text="En función de la reputación del archivo de destino, SmartScreen permite la descarga sin interferencias.":::
@@ -54,8 +54,6 @@ Este programa tiene una buena reputación; la descarga debe ejecutarse sin inter
 Dado que la descarga del programa no tiene suficiente reputación para asegurarse de que es de confianza, SmartScreen mostrará una advertencia antes de ejecutar la descarga del programa.
 
 - [Programa desconocido](https://demo.smartscreen.msft.net/download/unknown/freevideo.exe)
-
-  <!-- Hide {this intro with no subsequent list items} [Replace this link when new/updated source becomes available] -->
   
   Al iniciar este vínculo, se debe representar un mensaje similar al siguiente:
 
@@ -66,8 +64,6 @@ Dado que la descarga del programa no tiene suficiente reputación para asegurars
 Esta descarga es malware conocido; SmartScreen debe impedir que este programa se ejecute.
 
 - [Malware conocido](https://demo.smartscreen.msft.net/download/known/knownmalicious.exe)
-
-  <!-- Hide {this intro with no subsequent list items} [Replace this link when new/updated source becomes available] -->  
 
   Al iniciar este vínculo, se debe representar un mensaje similar al siguiente:
 

@@ -15,12 +15,12 @@ ms.collection:
 - tier1
 - purview-compliance
 ms.custom: admindeeplinkCOMPLIANCE
-ms.openlocfilehash: 254fb4f17331be8b688463599dea86b9f3748ca8
-ms.sourcegitcommit: 0d8fb571024f134d7480fe14cffc5e31a687d356
+ms.openlocfilehash: 77fab460187f1935c016e691937af91d014929a2
+ms.sourcegitcommit: 181a0aff54842dcbafd834647c6e9ee47304d10f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/20/2022
-ms.locfileid: "68634638"
+ms.lasthandoff: 10/27/2022
+ms.locfileid: "68734855"
 ---
 # <a name="insider-risk-management-cases"></a>Casos de administración de riesgos internos
 
@@ -31,10 +31,10 @@ Los casos son el núcleo de la gestión de riesgos internos y le permiten invest
 
 Después de investigar los detalles de un caso, puede tomar medidas mediante:
 
-- enviar al usuario un aviso
-- resolver el caso como benigno
-- compartir el caso con la instancia de ServiceNow o con un destinatario de correo electrónico
-- escalar el caso de una investigación de eDiscovery (Premium)
+- Enviar un aviso al usuario
+- Resolución del caso como benigno
+- Uso compartido del caso con la instancia de ServiceNow o con un destinatario de correo electrónico
+- Escalado del caso de una investigación de eDiscovery (Premium)
 
 Consulte el [vídeo Investigación y escalación de la administración de riesgos](https://www.youtube.com/watch?v=UONUSmkRC8s) internos para obtener información general sobre cómo se investigan y administran los casos en la administración de riesgos internos.
 
@@ -92,11 +92,11 @@ En la pestaña **Información general del caso** se resumen los detalles del cas
 - **Nombre del administrador**: nombre del administrador del usuario.
 - **Correo electrónico del administrador**: alias de correo electrónico del administrador del usuario.
 
-![Detalles del caso de administración de riesgos internos.](../media/insider-risk-case-details.png)
+![Detalles del caso de administración de riesgos internos](../media/insider-risk-case-details.png)
 
 La pestaña **Información general del caso** también incluye una sección **Alertas** que incluye la siguiente información sobre las alertas de coincidencia de directivas asociadas al caso:
 
-- **Coincidencias de directivas**: el nombre de la directiva de administración de riesgos internos asociada a las alertas de coincidencia para la actividad del usuario.
+- **Coincidencias de directivas**: el nombre de la directiva de administración de riesgos internos asociada a las alertas de coincidencia para la actividad de usuario potencialmente arriesgada que puede provocar un incidente de seguridad.
 - **Estado**: estado de la alerta.
 - **Gravedad**: gravedad de la alerta.
 - **Tiempo detectado**: tiempo transcurrido desde que se generó la alerta.
@@ -119,6 +119,7 @@ Use el control de búsqueda para buscar en nombres de alerta texto específico y
 
 Use el control de filtro para filtrar las alertas por varios atributos, entre los que se incluyen:
 
+
 - **Estado**: seleccione uno o varios valores de estado para filtrar la lista de alertas. Las opciones son *Confirmada*, *Descartada*, *Falta por revisar*, y *Resuelta*.
 - **Gravedad**: seleccione uno o varios niveles de gravedad de riesgo de alerta para filtrar la lista de alertas. Las opciones son *Alta*, *Media*, y *Baja*.
 - **Hora detectada**: seleccione las fechas de inicio y finalización para cuando se creó la alerta.
@@ -126,15 +127,15 @@ Use el control de filtro para filtrar las alertas por varios atributos, entre lo
 
 ### <a name="user-activity"></a>Actividad de usuario
 
-La pestaña **Actividad de usuario** permite a los analistas e investigadores de riesgo revisar los detalles de la actividad y usar una representación visual de todas las actividades asociadas a alertas y casos de riesgo. Por ejemplo, como parte del proceso de evaluación de prioridades de alertas, es posible que los analistas tengan que revisar todas las actividades de riesgo asociadas al caso para obtener más detalles. En los casos, los investigadores de riesgo pueden revisar los detalles de la actividad del usuario y el gráfico de burbujas para ayudar a comprender el ámbito general de las actividades asociadas al caso. Para obtener más información sobre el gráfico De actividad de usuario, consulte el artículo [Actividades de administración de riesgos de Insider](insider-risk-management-activities.md#user-activity) .
+La pestaña **Actividad de usuario** permite a los analistas e investigadores de riesgo revisar los detalles de la actividad del usuario y usar una representación visual de todas las actividades potencialmente de riesgo asociadas a alertas y casos de riesgo para determinar si esas actividades de riesgo pueden dar lugar a un incidente de seguridad. Por ejemplo, como parte del proceso de evaluación de prioridades de alertas, es posible que los analistas tengan que revisar todas las actividades de riesgo asociadas al caso para obtener más detalles. En los casos, los investigadores de riesgo pueden revisar los detalles de la actividad del usuario y el gráfico de burbujas para ayudar a comprender el ámbito general de las actividades de riesgo asociadas al caso. Para obtener más información sobre el gráfico De actividad de usuario, consulte el artículo [Actividades de administración de riesgos de Insider](insider-risk-management-activities.md#user-activity) .
 
 ### <a name="activity-explorer-preview"></a>Explorador de actividad (versión preliminar)
 
-La pestaña **Explorador de actividad** permite a los analistas e investigadores de riesgo revisar los detalles de la actividad asociados a las alertas de riesgo. Por ejemplo, como parte de las acciones de administración de casos, es posible que los investigadores y analistas necesiten revisar todas las actividades de riesgo asociadas al caso para obtener más detalles. Con el **Explorador de actividades**, los revisores pueden revisar rápidamente una escala de tiempo de la actividad de riesgo detectada e identificar y filtrar todas las actividades de riesgo asociadas a alertas.
+La pestaña **Explorador de actividad** permite a los analistas e investigadores de riesgo revisar los detalles de la actividad del caso asociados a las alertas de riesgo. Por ejemplo, como parte de las acciones de administración de casos, es posible que los investigadores y analistas necesiten revisar todas las actividades de riesgo asociadas al caso para obtener más detalles. Con el **Explorador de actividades**, los revisores pueden examinar rápidamente una escala de tiempo de actividad potencialmente riesgosa detectada e identificar y filtrar todas las actividades de riesgo asociadas a alertas.
 
 Para obtener más información sobre el Explorador de actividades, consulte el artículo [Actividades de administración de riesgos de Insider](insider-risk-management-activities.md#activity-explorer) .
 
-### <a name="forensic-evidence-preview"></a>Pruebas forenses (versión preliminar)
+## <a name="forensic-evidence-preview"></a>Pruebas forenses (versión preliminar)
 
 La pestaña **Pruebas forenses (versión preliminar)** permite a los investigadores de riesgo revisar las capturas visuales asociadas a las actividades de riesgo incluidas en los casos. Por ejemplo, como parte de las acciones de administración de casos, es posible que los investigadores necesiten ayudar a aclarar el contexto de la actividad del usuario que se está revisando. Ver los clips reales de la actividad puede ayudar al investigador a determinar si la actividad del usuario es potencialmente arriesgada y puede provocar un incidente de seguridad.
 
@@ -215,20 +216,20 @@ Una vez que el caso de administración de riesgos internos se ha escalado a un n
 
 Con los flujos recomendados de Power Automate, los investigadores y analistas de riesgo pueden tomar medidas rápidamente para:
 
-- Solicitar información de RR. HH. o empresa sobre un usuario en un caso de riesgo interno
-- Notificar al administrador cuando un usuario tiene una alerta de riesgo interno
-- Creación de un registro para un caso de administración de riesgos internos en ServiceNow
-- Notificar a los usuarios cuando se agregan a una directiva de riesgo interno
+- Solicitar información de RR. HH. o empresa sobre un usuario en un caso de riesgo interno.
+- Notificar al administrador cuando un usuario tiene una alerta de riesgo interno.
+- Cree un registro para un caso de administración de riesgos internos en ServiceNow.
+- Notificar a los usuarios cuando se agregan a una directiva de riesgo interno.
 
 Para ejecutar, administrar o crear flujos de Power Automate para un caso de administración de riesgos internos:
 
-1. Seleccione **Automatizar** en la barra de herramientas de acciones de casos. 
-2. Elija el flujo de Power Automate que se va a ejecutar y, a continuación, seleccione **Ejecutar flujo**. 
+1. Seleccione **Automatizar** en la barra de herramientas de acciones de casos.
+2. Elija el flujo de Power Automate que se va a ejecutar y, a continuación, seleccione **Ejecutar flujo**.
 3. Una vez completado el flujo, seleccione **Listo**.
 
 Para más información sobre los flujos de Power Automate para la administración de riesgos internos, consulte [Introducción a la configuración de administración de riesgos internos](insider-risk-management-settings.md#power-automate-flows-preview).
 
-### <a name="view-or-create-a-microsoft-teams-team-for-the-case"></a>Ver o crear un equipo de Microsoft Teams para el caso
+ ### <a name="view-or-create-a-microsoft-teams-team-for-the-case"></a>Ver o crear un equipo de Microsoft Teams para el caso
 
 Cuando la integración de Microsoft Teams para la administración de riesgos internos está habilitada en la configuración, se crea automáticamente un equipo de Microsoft Teams cada vez que se confirma una alerta y se crea un caso. Los investigadores y analistas de riesgo pueden abrir Rápidamente Microsoft Teams y navegar directamente al equipo para ver un caso seleccionando **Ver equipo de Microsoft Teams** en la barra de herramientas de acción del caso.
 

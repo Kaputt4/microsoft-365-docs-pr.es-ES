@@ -18,12 +18,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Obtenga información sobre las directivas de retención de Microsoft 365 que se aplican a Microsoft Teams para que pueda administrar la retención automática o la eliminación de mensajes de Teams para su organización.
-ms.openlocfilehash: cea95093a48aeda2e93c77c975b0838ae1962ba2
-ms.sourcegitcommit: 0d8fb571024f134d7480fe14cffc5e31a687d356
+ms.openlocfilehash: 417c98f4e9510d1fc02e7b485e41d50a621690fa
+ms.sourcegitcommit: 181a0aff54842dcbafd834647c6e9ee47304d10f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/20/2022
-ms.locfileid: "68633050"
+ms.lasthandoff: 10/27/2022
+ms.locfileid: "68729993"
 ---
 # <a name="learn-about-retention-for-microsoft-teams"></a>Más información sobre la retención para Microsoft Teams
 
@@ -47,7 +47,7 @@ Para otras cargas de trabajo, vea:
 ## <a name="whats-included-for-retention-and-deletion"></a>Qué se incluye para la retención y eliminación
 
 > [!NOTE]
-> Las directivas de retención admiten [ canales compartidos](/MicrosoftTeams/shared-channels). Los canales compartidos heredan la configuración de retención del canal primario.
+> Las directivas de retención admiten [ canales compartidos](/MicrosoftTeams/shared-channels). Los canales compartidos heredan la configuración de retención del equipo primario.
 > 
 > Las directivas de retención también admiten los mensajes publicados con la característica [chat con usted mismo](https://support.microsoft.com/office/start-a-chat-in-teams-0c71b32b-c050-4930-a887-5afbe742b3d8?storagetype=live#bkmk_chatwithself) .
 

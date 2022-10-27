@@ -8,15 +8,16 @@ ms.topic: article
 ms.service: bookings
 ms.localizationpriority: medium
 ms.collection:
+- Tier1
 - scotvorg
 ms.assetid: 03a9acc9-f29c-456b-9fb2-0f49474b2708
 description: Obtenga información sobre cómo puede ver una vista de 4 meses de la actividad de Bookings.
-ms.openlocfilehash: 4ca1a4c94ce14a8d673ff88be49dbb67b013a9c3
-ms.sourcegitcommit: 0b7070ec119e00e0dafe030bbfbef0ae5c9afa19
+ms.openlocfilehash: bcb6b90585299469dbbe4b67b628d4cfee88c463
+ms.sourcegitcommit: 181a0aff54842dcbafd834647c6e9ee47304d10f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/29/2022
-ms.locfileid: "68207828"
+ms.lasthandoff: 10/27/2022
+ms.locfileid: "68733293"
 ---
 # <a name="reporting-info-for-bookings"></a>Información de informes para Bookings
 

@@ -10,6 +10,7 @@ ms.topic: article
 ms.service: microsoft-365-business
 ms.localizationpriority: medium
 ms.collection:
+- Tier2
 - scotvorg
 - M365-subscription-management
 - Adm_TOC
@@ -18,12 +19,12 @@ ROBOTS: NOINDEX, NOFOLLOW
 search.appverid:
 - MET150
 description: Guía de instalación y configuración de aplicaciones con ámbito certificado para ServiceNow.
-ms.openlocfilehash: 724517e0ac268ecc1d857f59b3e0352cecfd1903
-ms.sourcegitcommit: 0d8fb571024f134d7480fe14cffc5e31a687d356
+ms.openlocfilehash: 8e26913dff7706ad8868b0fe325a30258a6a17c5
+ms.sourcegitcommit: 181a0aff54842dcbafd834647c6e9ee47304d10f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/20/2022
-ms.locfileid: "68624849"
+ms.lasthandoff: 10/27/2022
+ms.locfileid: "68734547"
 ---
 # <a name="configure-microsoft-365-support-integration-with-azure-ad-auth-token"></a>Configuración de la integración de compatibilidad de Microsoft 365 con el token de autenticación de Azure AD
 
@@ -33,7 +34,7 @@ Estos requisitos previos son necesarios para configurar la integración de sopor
 
 1. \[AAD Administración\] Creación de una aplicación de Azure AD para salientes en el inquilino de Microsoft 365.
 
-    1. Inicie sesión en Azure Portal con sus credenciales de inquilino de Microsoft 365 y vaya a la [página Registros](https://portal.azure.com/?Microsoft_AAD_RegisteredApps=true#blade/Microsoft_AAD_RegisteredApps/ApplicationsListBlade) de aplicaciones para crear una nueva aplicación.
+    1. Inicie sesión en Azure Portal con sus credenciales de inquilino de Microsoft 365 y vaya a la [página Registros de aplicaciones](https://portal.azure.com/?Microsoft_AAD_RegisteredApps=true#blade/Microsoft_AAD_RegisteredApps/ApplicationsListBlade) para crear una nueva aplicación.
 
     2. Seleccione **Solo cuentas en este directorio organizativo ({Microsoft-365-tenant-name} - Solo inquilino único)** y seleccione **Registrar**.
 
@@ -233,7 +234,7 @@ Estos pasos son necesarios para configurar la integración entre la instancia de
 
     :::image type="content" source="../../media/ServiceNow-guide/servicenow-guide-image31.png" lightbox="../../media/ServiceNow-guide/servicenow-guide-image31.png" alt-text="Interfaz gráfica de usuario, descripción de la aplicación generada automáticamente":::
 
-    1. Vuelva a ServiceNow.
+    1. Volver a ServiceNow.
 
     1. Seleccione **Siguiente** para completar la integración.
 

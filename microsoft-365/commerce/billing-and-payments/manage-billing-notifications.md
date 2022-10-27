@@ -11,6 +11,7 @@ ms.topic: article
 ms.service: microsoft-365-business
 ms.localizationpriority: medium
 ms.collection:
+- Tier1
 - scotvorg
 - M365-subscription-management
 - Adm_O365
@@ -22,12 +23,12 @@ search.appverid:
 - MET150
 description: Obtenga información sobre cómo administrar quién recibe mensajes de correo electrónico de notificación de facturación y datos adjuntos de factura.
 ms.date: 03/17/2021
-ms.openlocfilehash: 81b4541af6683260a4b4b9340977d9695b15df21
-ms.sourcegitcommit: 87283bb02ca750286f7c069f811b788730ed5832
+ms.openlocfilehash: cf2f24f1a17a5b36db01545259d8546581163359
+ms.sourcegitcommit: 181a0aff54842dcbafd834647c6e9ee47304d10f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/21/2022
-ms.locfileid: "68659705"
+ms.lasthandoff: 10/27/2022
+ms.locfileid: "68731005"
 ---
 # <a name="manage-billing-notifications-and-invoice-attachments"></a>Administrar las notificaciones de facturación y los datos adjuntos en las facturas
 

@@ -7,13 +7,16 @@ audience: Admin
 ms.topic: article
 ms.service: bookings
 ms.localizationpriority: medium
+ms.collection:
+- Tier1
+- scotvorg
 description: Use esta página para crear la lista de personal y administrar los detalles de los miembros del personal, como el nombre, el número de teléfono y la dirección de correo electrónico.
-ms.openlocfilehash: b9acf72e9026b230702ed4cad232a92842b51028
-ms.sourcegitcommit: af2b570e76e074bbef98b665b5f9a731350eda58
+ms.openlocfilehash: dbdf0be6c08c0ed0bf0ef7ce22a415d7728cd93d
+ms.sourcegitcommit: 181a0aff54842dcbafd834647c6e9ee47304d10f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/21/2022
-ms.locfileid: "66185157"
+ms.lasthandoff: 10/27/2022
+ms.locfileid: "68730455"
 ---
 # <a name="add-staff-to-bookings"></a>Agregar personal a Bookings
 
@@ -75,7 +78,7 @@ Es posible que quiera agregar una persona a su lista de personal en Bookings sin
 > [!NOTE]
 > Estos pasos solo funcionan si el usuario que se va a agregar aún no tiene asignado un rol de **visor** en Bookings.
 
-1. [Conectar para Microsoft 365 con PowerShell](/office365/enterprise/powershell/connect-to-office-365-powershell#connect-with-the-microsoft-azure-active-directory-module-for-windows-powershell).
+1. [Conéctese a Microsoft 365 con PowerShell](/office365/enterprise/powershell/connect-to-office-365-powershell#connect-with-the-microsoft-azure-active-directory-module-for-windows-powershell).
 
 2. Con PowerShell, asigne acceso completo con los siguientes comandos:
 

@@ -19,12 +19,12 @@ ms.collection:
 - m365initiative-compliance
 - highpri
 ms.custom: admindeeplinkCOMPLIANCE
-ms.openlocfilehash: 460be0f6e84693504de56574688979733a28acd7
-ms.sourcegitcommit: e7dbe3b0d97cd8c64b5ae15f990d5e4b1dc9c464
+ms.openlocfilehash: c49a9037b87709858b93fa15e68f4e931f9d7fff
+ms.sourcegitcommit: 181a0aff54842dcbafd834647c6e9ee47304d10f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/24/2022
-ms.locfileid: "68687706"
+ms.lasthandoff: 10/27/2022
+ms.locfileid: "68732985"
 ---
 # <a name="get-started-with-insider-risk-management"></a>Introducción a la administración de riesgos internos
 
@@ -66,7 +66,7 @@ Las siguientes recomendaciones están disponibles para ayudarle a empezar a trab
 
 - **Activar auditoría**: cuando está activada, la actividad de usuario y administrador de la organización se registra en el registro de auditoría de Microsoft 365. Los exámenes de análisis y directivas de riesgo internos usan este registro para detectar actividades de riesgo.
 - **Obtener permisos para la administración de riesgos de usuario**: el nivel de acceso que tiene para las características de administración de riesgos internos depende del grupo de roles que se le haya asignado. Para acceder a las acciones recomendadas y configurarlas, los usuarios deben estar asignados a los grupos de roles *Insider Risk Management* o *Insider Risk Management Admins* .
-- **Elegir indicadores de directiva**: los indicadores son esencialmente las actividades de usuario que desea detectar e investigar. Puede elegir indicadores para realizar un seguimiento de la actividad en varias ubicaciones y servicios de Microsoft 365.
+- **Elegir indicadores de directiva:** los indicadores son esencialmente las actividades de gestión de riesgos que desea detectar e investigar. Puede elegir indicadores para realizar un seguimiento de la actividad en varias ubicaciones y servicios de Microsoft 365.
 - **Buscar posibles riesgos internos**: ejecute un análisis para detectar posibles riesgos internos que se produzcan en su organización. Después de evaluar los resultados, revise las directivas recomendadas para configurar.
 - **Asignar permisos a otros usuarios**: si hay miembros del equipo adicionales que serán responsables de administrar las características de riesgo internos, deberá asignarlas a los grupos de roles adecuados.
 - **Crear la primera directiva**: para recibir alertas sobre actividades potencialmente de riesgo, debe configurar directivas basadas en plantillas predefinidas que definan las actividades de usuario que desea detectar e investigar.
@@ -78,7 +78,7 @@ Cada acción recomendada incluida en esta experiencia tiene cuatro atributos:
 - **Obligatorio u opcional**: si la acción recomendada es necesaria u opcional para que las características de administración de riesgos internos funcionen según lo esperado.
 - **Tiempo estimado para completar**: tiempo estimado para completar la acción recomendada en minutos.
 
-Seleccione una recomendación de la lista para empezar a configurar la administración de riesgos internos. Cada acción recomendada le guía por las actividades necesarias para la recomendación, incluidos los requisitos, qué esperar y el impacto de configurar la característica en su organización.   Cada acción recomendada se marca automáticamente como completa cuando se configura o tendrá que seleccionar manualmente la acción como completada cuando se haya configurado.
+Seleccione una recomendación de la lista para empezar a configurar la administración de riesgos internos. Cada acción recomendada le guía por la acción necesaria para la recomendación, incluidos los requisitos, lo que debe esperar y el impacto de configurar la característica en su organización. Cada acción recomendada se marca automáticamente como completa cuando se configura o tendrá que seleccionar manualmente la acción como completada cuando se haya configurado.
 
 ## <a name="step-1-required-enable-permissions-for-insider-risk-management"></a>Paso 1 (obligatorio): Habilitar permisos para la administración de riesgos internos
 
@@ -145,7 +145,7 @@ Complete los pasos siguientes para agregar usuarios a un grupo de roles de admin
 
 ## <a name="step-2-required-enable-the-microsoft-365-audit-log"></a>Paso 2 (obligatorio): Habilitación del registro de auditoría de Microsoft 365
 
-La administración de riesgos internos usa registros de auditoría de Microsoft 365 para la información de usuario y las actividades identificadas en las directivas y la información de análisis. Los registros de auditoría de Microsoft 365 son un resumen de todas las actividades de su organización y las directivas de administración de riesgos internos pueden usar estas actividades para generar información sobre directivas.
+La administración de riesgos internos usa registros de auditoría de Microsoft 365 para la información de usuario y las actividades de administración de riesgos identificadas en las directivas y la información de análisis. Los registros de auditoría de Microsoft 365 son un resumen de todas las actividades de su organización y las directivas de administración de riesgos internos pueden usar estas actividades para generar información sobre directivas.
 
 La auditoría está habilitada para organizaciones de Microsoft 365 de forma predeterminada. Algunas organizaciones pueden haber deshabilitado la auditoría por motivos específicos. Si la auditoría está deshabilitada para su organización, puede deberse a que otro administrador la ha desactivado. Se recomienda confirmar que es correcto volver a activar la auditoría al completar este paso.
 
@@ -155,7 +155,7 @@ Para obtener instrucciones paso a paso para activar la auditoría, consulte [Act
 
 El análisis de administración de riesgos internos le permiten realizar una evaluación de los posibles riesgos internos en su organización sin necesidad de configurar ninguna directiva de riesgos internos. Esta evaluación puede ayudar a su organización a identificar áreas potenciales de mayor riesgo para los usuarios y ayudar a determinar el tipo y el alcance de las directivas de administración de riesgos internos que puede considerar configurar. Esta evaluación también puede ayudarle a determinar las necesidades de licencias adicionales o la optimización futura de las directivas existentes. Los resultados del análisis pueden tardar hasta 48 horas antes de que la información esté disponible como informes para su revisión. Para más información sobre la información de análisis, consulte [Configuración de administración de riesgos de Insider: Análisis](insider-risk-management-settings.md#analytics) y consulte el [vídeo de Insider Risk Management Analytics](https://www.youtube.com/watch?v=5c0P5MCXNXk) para ayudar a comprender cómo el análisis puede ayudar a acelerar la identificación de posibles riesgos internos y ayudarle a tomar medidas rápidamente.
 
-Para habilitar insider risk Analytics, debe ser miembro del grupo de roles *Insider Risk Management*, *Insider Risk Management Administración* o Microsoft 365 *Global admin*.
+Para habilitar el análisis de riesgos internos, debe ser miembro del grupo de roles *Insider Risk Management*, *Insider Risk Management Administración* o Microsoft 365 *Global admin*.
 
 Complete los pasos siguientes para habilitar el análisis de riesgos internos:
 
@@ -183,12 +183,11 @@ El conector de RR. HH. de Microsoft 365 es necesario cuando se usan las siguient
 
 Consulte el artículo [Configuración de un conector para importar datos de RR. HH](import-hr-data.md) . para obtener instrucciones paso a paso para configurar el conector de RR. HH. de Microsoft 365 para su organización. Después de configurar el conector de RR. HH., vuelva a estos pasos de configuración.
 
-### <a name="configure--a-healthcare-specific-data-connector"></a>Configuración de un conector de datos específico del sector sanitario
+### <a name="configure-a-healthcare-specific-data-connector"></a>Configuración de un conector de datos específico del sector sanitario
 
-La administración de riesgos internos admite la importación de datos de usuario y registro importados desde terceros en sistemas de registro médico electrónico (EMR) existentes. Los conectores de datos de Microsoft Healthcare y Epic le permiten extraer datos de actividad del sistema EMR con archivos CSV, incluido el acceso inadecuado a registros de pacientes, actividades de volumen sospechosas y actividades de edición y exportación. Estos datos ayudan a impulsar los indicadores de alerta en las directivas de administración de riesgos internos y es una parte importante de la configuración de cobertura completa de la administración de riesgos en su organización.
+La administración de riesgos internos admite la importación de datos de usuario y registro importados desde terceros en sistemas de registro médico electrónico (EMR) existentes. Los conectores de datos Microsoft Healthcare y Epic le permiten extraer datos de actividad del sistema EMR con archivos CSV, incluido el acceso inadecuado a registros de pacientes, actividades de volumen sospechosas y actividades de edición y exportación. Estos datos ayudan a impulsar los indicadores de alerta en las directivas de administración de riesgos internos y es una parte importante de la configuración de cobertura completa de la administración de riesgos en su organización.
 
-Si configura más de un conector de Healthcare o Epic para su organización, la administración de riesgos internos admite automáticamente señales de eventos y actividades de todos los conectores healthcare y epic.
-El conector de Microsoft 365 Healthcare o Epic es necesario cuando se usan las siguientes plantillas de directiva:
+Si configura más de un conector de Healthcare o Epic para su organización, la administración de riesgos internos admite automáticamente señales de eventos y actividades de todos los conectores healthcare y epic. El conector de Microsoft 365 Healthcare o Epic es necesario cuando se usan las siguientes plantillas de directiva:
 
 - Uso indebido de los datos generales de los pacientes
 
@@ -198,13 +197,13 @@ Consulte el artículo [Configuración de un conector para importar datos sanitar
 
 La administración de riesgos internos admite el uso de directivas DLP para ayudar a identificar la exposición intencionada o accidental de información confidencial a partes no deseadas para alertas DLP de alto nivel de gravedad. Al configurar una directiva de administración de riesgos internos con cualquiera de las plantillas **de pérdida de datos** , tiene la opción de asignar una directiva DLP específica a la directiva para estos tipos de alertas.
 
-Las directivas DLP ayudan a identificar a los usuarios para activar la puntuación de riesgos en la administración de riesgos internos para alertas DLP de alta gravedad para información confidencial y son una parte importante de la configuración de la cobertura de administración de riesgos completa en su organización. Para obtener más información sobre la administración de riesgos internos y las consideraciones de integración y planeamiento de directivas DLP, consulte [Directivas de administración de riesgos internos](insider-risk-management-policies.md#general-data-leaks).
+Las directivas de pérdida de datos ayudan a identificar a los usuarios para activar la puntuación de riesgos en la administración de riesgos internos para alertas DLP de alta gravedad para información confidencial y son una parte importante de la configuración de la cobertura de administración de riesgos completa en su organización. Para obtener más información sobre la administración de riesgos internos y las consideraciones de integración y planeamiento de directivas DLP, consulte [Directivas de administración de riesgos internos](insider-risk-management-policies.md#general-data-leaks).
 
 > [!IMPORTANT]
->Asegúrese de que ha completado lo siguiente:
+> Asegúrese de que ha completado lo siguiente:
 >
 > - Comprende y configura correctamente los usuarios dentro del ámbito en las directivas de administración de riesgos DLP y insider para generar la cobertura de directivas que espera.
-> - Asegúrese de que la configuración **informes de incidentes** de la directiva DLP para la administración de riesgos internos que se usa con estas plantillas esté configurada para las alertas de nivel de gravedad *alta* . Las alertas de administración de riesgos internos no se generarán a partir de directivas DLP con el campo **Informes de incidentes** establecido en *Bajo* o *Medio*.
+> - La configuración **informes de incidentes** de la directiva DLP para la administración de riesgos internos que se usa con estas plantillas se configura para las alertas de nivel de gravedad *alta* . Las alertas de administración de riesgos internos no se generarán a partir de directivas DLP con el campo **Informes de incidentes** establecido en *Bajo* o *Medio*.
 
 Una directiva DLP es opcional cuando se usan las siguientes plantillas de directiva:
 
@@ -252,13 +251,12 @@ Consulte el artículo [Introducción a la evidencia forense de administración d
 [La configuración de riesgos internos](insider-risk-management-settings.md) se aplica a todas las directivas de administración de riesgos internos, independientemente de la plantilla que elija al crear una directiva. La configuración se ajusta con el control de la **Configuración de riesgos internos** que se encuentra en la parte superior de todas las pestañas de administración de riesgos internos. Estas configuraciones controlan la privacidad, los indicadores, las detecciones inteligentes y mucho más.
 
 Antes de configurar una directiva, defina los siguientes valores de riesgo internos:
-
 1. En la [portal de cumplimiento Microsoft Purview](https://compliance.microsoft.com), vaya a **Administración de riesgos de Insider** y seleccione **Configuración de riesgos** internos en la esquina superior derecha de cualquier página.
 2. En la página **Privacidad** , seleccione una configuración de privacidad para mostrar los nombres de usuario de las alertas de directiva.
 3. En la página **Indicadores** , seleccione los indicadores de alerta que desea aplicar a todas las directivas de riesgo internos.
 
     > [!IMPORTANT]
-    > Para recibir alertas de actividad de riesgo definidas en las directivas, debe seleccionar uno o varios indicadores. Si los indicadores no están configurados en Configuración, los indicadores no se podrán seleccionar en las directivas de riesgo internos.
+    > Para recibir alertas de actividades potencialmente de riesgo como se define en las directivas, debe seleccionar uno o varios indicadores. Si los indicadores no están configurados en Configuración, los indicadores no se podrán seleccionar en las directivas de riesgo internos.
 
 4. En la página **Períodos de tiempo de** directiva, seleccione los [períodos de tiempo de directiva](insider-risk-management-settings.md#policy-timeframes) que entrarán en vigor para un usuario cuando desencadene una coincidencia para una directiva de riesgo interno.
 5. En la página **Detecciones inteligentes** , configure las siguientes opciones para las directivas de riesgo internos:
@@ -270,16 +268,17 @@ Antes de configurar una directiva, defina los siguientes valores de riesgo inter
     - [Exclusiones de ruta de archivo](insider-risk-management-settings.md#file-path-exclusions)
     - [Exclusiones de sitios](insider-risk-management-settings.md#site-exclusions)
     - [Exclusión de palabras clave](insider-risk-management-settings.md#keyword-exclusion)
+    
 6. En la página **Exportar alertas**, habilite la exportación de información de alertas de riesgo internos mediante las API de administración de Office 365 si es necesario.
 7. En la página **Grupos de usuarios prioritarios** , cree un grupo de usuarios de prioridad y agregue usuarios si no se crean en el **paso 3**.
 8. En la página **Flujos de Power Automate** , configure un flujo a partir de plantillas de flujo de riesgo internos o cree un nuevo flujo. Consulte el artículo [Introducción a la configuración de administración de riesgos](insider-risk-management-settings.md#power-automate-flows-preview) internos para obtener instrucciones paso a paso.
 9. En la **página Activos prioritarios**, configure los recursos de prioridad para usar los datos de la plataforma de control físico y acceso importada por el conector de badging físico. Consulte el artículo [Introducción a la configuración de administración de riesgos](insider-risk-management-settings.md#priority-physical-assets-preview) internos para obtener instrucciones paso a paso.
 10. En la página **Microsoft Teams** , habilite la integración de Microsoft Teams con la administración de riesgos internos para crear automáticamente un equipo para la colaboración de casos o usuarios. Consulte el artículo [Introducción a la configuración de administración de riesgos](insider-risk-management-settings.md#microsoft-teams-preview) internos para obtener instrucciones paso a paso.
-12. Seleccione **Guardar** para habilitar esta configuración para las directivas de riesgo internos.
+11. Seleccione **Guardar** para habilitar esta configuración para las directivas de riesgo internos.
 
 ## <a name="step-6-required-create-an-insider-risk-management-policy"></a>Paso 6 (obligatorio): Creación de una directiva de administración de riesgos internos
 
-Las directivas de administración de riesgos internos incluyen usuarios asignados y definen los tipos de indicadores de riesgo que se configuran para las alertas. Para que las actividades puedan desencadenar alertas, es necesario configurar una directiva. Use el asistente para directivas para crear nuevas directivas de administración de riesgos internos.
+Las directivas de administración de riesgos internos incluyen usuarios asignados y definen los tipos de indicadores de riesgo que se configuran para las alertas. Antes de que las actividades potencialmente de riesgo puedan desencadenar alertas, se debe configurar una directiva. Use el asistente para directivas para crear nuevas directivas de administración de riesgos internos.
 
 1. En el [portal de cumplimiento Microsoft Purview](https://compliance.microsoft.com), vaya a **Administración de riesgos** internos y seleccione la pestaña **Directivas**.
 2. Seleccione **Crear directiva** para abrir el asistente de directivas.
@@ -305,11 +304,11 @@ Las directivas de administración de riesgos internos incluyen usuarios asignado
 
 11. Si ha seleccionado **Quiero priorizar el contenido** en el paso anterior, verá las páginas de detalles de *los sitios de SharePoint*, *los tipos de información confidencial*, *las etiquetas de confidencialidad*, *las extensiones de archivo* y la *puntuación*. Use estas páginas de detalles para definir SharePoint, los tipos de información confidencial, las etiquetas de confidencialidad y las extensiones de archivo para priorizar en la directiva. La página *Detalles de puntuación* permite limitar la directiva para asignar solo puntuaciones de riesgo y generar alertas para las actividades especificadas que incluyen contenido de prioridad.
 
-    - **Sitios de SharePoint**: seleccione **Agregar sitio de SharePoint** y seleccione los sitios de SharePoint a los que tiene acceso y desea priorizar. Por ejemplo, *"group1@contoso.sharepoint.com/sites/group1"*.
+    - **Sitios de SharePoint**: seleccione **Agregar sitio de SharePoint** y seleccione los sitios de SharePoint a los que tiene acceso y desea priorizar. Por ejemplo, *"group1@contoso.sharepoint.com/sites/group1"*.    
     - **Tipo de información confidencial**: seleccione **Agregar tipo de información confidencial** y seleccione los tipos de confidencialidad que desea priorizar. Por ejemplo, *"Número de cuenta bancaria de EE. UU."* y *"Número de tarjeta de crédito"*.
     - **Etiquetas de confidencialidad**: seleccione **Agregar etiquetas de confidencialidad** y seleccionar las etiquetas que desea priorizar. Por ejemplo, *"Confidencial"* y *"Secreto"*.
     - **Extensiones de archivo**: agregue hasta 50 extensiones de archivo. Puede incluir u omitir '.' con la extensión de archivo. Por ejemplo, *.py* o *py* daría prioridad a los archivos de Python.
-    - **Puntuación**: decida si desea asignar puntuaciones de riesgo a todas las actividades detectadas por esta directiva o solo para las actividades que incluyan contenido prioritario. Elija **Obtener alertas para toda la actividad** o **Obtener alertas solo para la actividad que incluye contenido prioritario**.
+     - **Puntuación**: decida si desea asignar puntuaciones de riesgo a todas las actividades de administración de riesgos detectadas por esta directiva o solo para las actividades que incluyan contenido prioritario. Elija **Obtener alertas para toda la actividad** o **Obtener alertas solo para la actividad que incluye contenido prioritario**.
 
     > [!NOTE]
     > Los usuarios que configuran la directiva y seleccionan sitios de SharePoint prioritarios pueden seleccionar sitios de SharePoint a los que tienen permiso de acceso. Si el usuario actual no puede seleccionar sitios de SharePoint en la directiva, otro usuario con los permisos necesarios puede seleccionar los sitios para la directiva más adelante o el usuario actual debe tener acceso a los sitios necesarios.

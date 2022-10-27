@@ -10,6 +10,7 @@ ms.topic: article
 ms.service: microsoft-365-lighthouse
 ms.localizationpriority: medium
 ms.collection:
+- Tier1
 - scotvorg
 - M365-subscription-management
 - Adm_O365
@@ -18,12 +19,12 @@ ms.custom:
 - M365-Lighthouse
 search.appverid: MET150
 description: En el caso de los proveedores de servicios administrados (MSP) que usan Microsoft 365 Lighthouse, obtenga información sobre el uso de líneas base para implementar configuraciones de inquilino estándar.
-ms.openlocfilehash: f5c3336aa7b77f29dcf0ec41181567c9bd07c9b9
-ms.sourcegitcommit: e7dbe3b0d97cd8c64b5ae15f990d5e4b1dc9c464
+ms.openlocfilehash: 089a1cc932e13c12786337d0a1fa636f0ef4e138
+ms.sourcegitcommit: 181a0aff54842dcbafd834647c6e9ee47304d10f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/24/2022
-ms.locfileid: "68688165"
+ms.lasthandoff: 10/27/2022
+ms.locfileid: "68729927"
 ---
 # <a name="overview-of-using-microsoft-365-lighthouse-baselines-to-deploy-standard-tenant-configurations"></a>Información general sobre el uso de líneas base de Microsoft 365 Lighthouse para implementar configuraciones de inquilino estándar 
 
@@ -46,7 +47,7 @@ Las configuraciones de línea base de Lighthouse están diseñadas para asegurar
 | Bloquear la autenticación heredada | Una directiva de acceso condicional para bloquear la autenticación de cliente heredada. Para obtener más información sobre esta línea base, consulte [Bloquear la autenticación heredada en Azure AD con acceso condicional](/azure/active-directory/conditional-access/block-legacy-authentication).|
 | Configuración de la inscripción de dispositivos | La inscripción de dispositivos permite que los dispositivos de inquilino se inscriban en Microsoft Endpoint Manager y proporcionen visibilidad de Endpoint Analytics a los dispositivos a través de la supervisión del estado del dispositivo. Esta configuración se realiza mediante la configuración de la inscripción automática entre Azure Active Directory y Microsoft Endpoint Manager. Para obtener más información acerca de esta línea base, consulte [Configuración de la inscripción para dispositivos Windows](/mem/intune/enrollment/windows-enroll). |
 | Configuración de la directiva de protección de aplicaciones | Un conjunto de directivas de protección que le permiten administrar y proteger los datos de la organización de un inquilino administrado dentro de una aplicación, independientemente de cualquier solución de administración de dispositivos móviles (MDM). Los datos de la organización se protegerán con o sin inscribir dispositivos en una solución MDM. |
-| Configuración de Microsoft Defender para Empresas | Aprovisiona el inquilino para Microsoft Defender para Empresas e incorpora los dispositivos que ya están inscritos en Microsoft Endpoint Manager para Microsoft Defender para Empresas. Para obtener más información, consulte [¿Qué es Microsoft Defender para Empresas?](../security/defender-business/mdb-overview.md) |
+| Configuración de Microsoft Defender para Empresas | Aprovisiona el inquilino para Microsoft Defender para Empresas e incorpora los dispositivos ya inscritos en Microsoft Endpoint Manager para Microsoft Defender para Empresas. Para obtener más información, consulte [¿Qué es Microsoft Defender para Empresas?](../security/defender-business/mdb-overview.md) |
 | Configurar Exchange Online Protection y Microsoft Defender para Office 365 | Directiva para aplicar directivas recomendadas contra correo no deseado, antimalware, anti phishing, vínculos seguros y directivas de datos adjuntos seguros a los inquilinos Exchange Online buzones. |
 | Configuración de Microsoft Defender Antivirus para Windows 10 y versiones posteriores | Un perfil de configuración de dispositivo para dispositivos Windows con la configuración preconfigurada Microsoft Defender Antivirus. Para obtener más información sobre esta línea base, vea [Configurar Microsoft Defender para punto de conexión en Intune](/mem/intune/protect/advanced-threat-protection-configure).|
 | Configuración de Microsoft Defender Firewall para Windows 10 y versiones posteriores | Una directiva de firewall para ayudar a proteger los dispositivos mediante la prevención del tráfico de red no deseado y no autorizado. Para obtener más información sobre esta línea base, consulte [Procedimientos recomendados para configurar Windows Defender Firewall](/windows/security/threat-protection/windows-firewall/best-practices-configuring).  |

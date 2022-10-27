@@ -12,20 +12,21 @@ author: robmazz
 manager: laurawi
 audience: itpro
 ms.collection:
-- m365-security-compliance
+- tier1
+- purview-compliance
 - m365solution-insiderrisk
-- m365initiative-compliance
 - m365solution-overview
-ms.openlocfilehash: a6f7f2e33966898f98d1119dcffcc165bac19cb6
-ms.sourcegitcommit: 078149c9645ce220911ccd6ce54f984a4c92ce53
+- highpri
+ms.openlocfilehash: 6939acd47434473e9bb95c39490d3acde648f388
+ms.sourcegitcommit: 181a0aff54842dcbafd834647c6e9ee47304d10f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/20/2022
-ms.locfileid: "67811972"
+ms.lasthandoff: 10/27/2022
+ms.locfileid: "68734085"
 ---
 # <a name="microsoft-purview-insider-risk-solutions"></a>Soluciones de riesgo interno de Microsoft Purview
 
-Los riesgos internos son uno de los principales problemas de los profesionales de seguridad y cumplimiento en el área de trabajo moderna. Los estudios del sector han demostrado que los riesgos internos a menudo se asocian a eventos o actividades específicos del usuario. Proteger su organización frente a estos riesgos puede ser difícil a la hora de identificar y de mitigar. Los riesgos internos incluyen vulnerabilidades en una variedad de áreas y pueden causar problemas importantes para su organización, que van desde la pérdida de la propiedad intelectual hasta el acoso laboral, entre otros. En la ilustración siguiente se describen los riesgos internos comunes:
+Los riesgos internos son uno de los principales problemas de los profesionales de seguridad y cumplimiento en el área de trabajo moderna. Los estudios de la industria han demostrado que los riesgos internos suelen asociarse con actividades de riesgo. Proteger su organización frente a estos riesgos puede ser difícil a la hora de identificar y de mitigar. Los riesgos internos incluyen vulnerabilidades en una variedad de áreas y pueden causar problemas importantes para su organización, desde la pérdida de propiedad intelectual hasta datos confidenciales, etc. En la ilustración siguiente se describen los riesgos internos comunes:
 
 ![Amenazas de riesgo internos.](../media/ir-solution-threats.png)
 
@@ -46,13 +47,15 @@ Las características de prevención de riesgos de Microsoft 365 están diseñada
 | ![Icono de infracciones de seguridad.](../media/ir-risk-security-violations.png)| Infracciones de seguridad |  | ![Compatible](../media/check-mark.png) |  | ![Compatible](../media/check-mark.png) |
 | ![Icono de infracciones de cumplimiento normativo.](../media/ir-risk-regulatory-compliance-violations.png)| Infracciones de cumplimiento normativo | ![Compatible](../media/check-mark.png) | ![Compatible](../media/check-mark.png) | ![Compatible](../media/check-mark.png) |  |
 
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
+
 ## <a name="insider-risk-solutions"></a>Soluciones de riesgo interno
 
 Para ayudar a proteger su organización frente a riesgos internos, use estas funcionalidades y características de Microsoft Purview.
 
 ### <a name="communication-compliance"></a>Cumplimiento de las comunicaciones
 
-[Cumplimiento de comunicaciones de Microsoft Purview](communication-compliance.md) ayuda a minimizar los riesgos de comunicación al ayudarle a detectar, capturar y actuar en mensajes inadecuados en su organización.
+[Cumplimiento de comunicaciones de Microsoft Purview](communication-compliance.md) ayuda a minimizar los riesgos de comunicación al ayudarle a detectar, capturar y actuar sobre mensajes potencialmente inadecuados en su organización.
 
 El cumplimiento de comunicaciones está disponible en las siguientes suscripciones:
 
@@ -65,7 +68,7 @@ El cumplimiento de comunicaciones está disponible en las siguientes suscripcion
 
 ### <a name="insider-risk-management"></a>Administración de riesgos internos
 
-[Administración de riesgos internos de Microsoft Purview](insider-risk-management.md) ayuda a minimizar los riesgos internos al permitirle detectar, investigar y actuar sobre actividades malintencionadas e involuntariamente en su organización.
+[Administración de riesgos internos de Microsoft Purview](insider-risk-management.md) ayuda a minimizar los riesgos internos al permitirle detectar, investigar y actuar sobre actividades potencialmente malintencionadas e involuntariamente en su organización.
 
 La administración de riesgos internos está disponible en las siguientes suscripciones:
 

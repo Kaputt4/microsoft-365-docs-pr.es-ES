@@ -10,6 +10,7 @@ ms.topic: article
 ms.service: microsoft-365-business
 ms.localizationpriority: medium
 ms.collection:
+- Tier3
 - scotvorg
 - M365-subscription-management
 - Adm_O365
@@ -26,12 +27,12 @@ search.appverid:
 - MOE150
 ms.assetid: 737e8c86-be63-44d7-bf02-492fa7cd9c3f
 description: Aprenda a implementar complementos en usuarios y grupos de su organización mediante la implementación centralizada en el centro de administración.
-ms.openlocfilehash: ffcbd345edc53b38938eb2f7713786f8843a44f9
-ms.sourcegitcommit: 0b7070ec119e00e0dafe030bbfbef0ae5c9afa19
+ms.openlocfilehash: ad44b5c415507dfbd9944f460da963e39b582b36
+ms.sourcegitcommit: 181a0aff54842dcbafd834647c6e9ee47304d10f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/29/2022
-ms.locfileid: "68167789"
+ms.lasthandoff: 10/27/2022
+ms.locfileid: "68733865"
 ---
 # <a name="deploy-add-ins-in-the-microsoft-365-admin-center"></a>Implementación de complementos en el Centro de administración de Microsoft 365
 

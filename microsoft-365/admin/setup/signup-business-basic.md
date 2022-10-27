@@ -10,6 +10,7 @@ ms.topic: article
 ms.service: microsoft-365-business
 ms.localizationpriority: high
 ms.collection:
+- Tier2
 - scotvorg
 - M365-subscription-management
 - Adm_O365
@@ -26,12 +27,12 @@ search.appverid:
 - MOE150
 - BEA160
 description: Obtenga información sobre cómo registrarse para obtener una suscripción Microsoft 365 Empresa Básico.
-ms.openlocfilehash: c00ddf1c1c4a3d732c3e15ce29574bc5762e877b
-ms.sourcegitcommit: 0d8fb571024f134d7480fe14cffc5e31a687d356
+ms.openlocfilehash: 035e7fe7bdb02b3aaaef45db33bf32f17bf7b3e6
+ms.sourcegitcommit: 181a0aff54842dcbafd834647c6e9ee47304d10f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/20/2022
-ms.locfileid: "68624805"
+ms.lasthandoff: 10/27/2022
+ms.locfileid: "68733821"
 ---
 # <a name="sign-up-for-microsoft-365-business-basic"></a>Regístrese para obtener Microsoft 365 Empresa Básico
 
@@ -138,7 +139,7 @@ Si decide no aceptar los términos actualizados para el registro simplificado o 
 
 Un correo electrónico empresarial es un correo electrónico que usa su propio nombre de dominio. Por ejemplo, si posee el nombre `contoso.com`de dominio , puede crear un sitio web mediante la dirección URL `www.contoso.com`, pero también puede tener una dirección de correo electrónico personalizada, como yourname@contoso.com. Esto se conoce como correo electrónico de empresa de marca, ya que proporciona a su correo electrónico un aspecto profesional.
 
-### <a name="how-do-i-get-a-new-business-email-address"></a>मैले कसरी obtener una nueva dirección de correo electrónico empresarial?
+### <a name="how-do-i-get-a-new-business-email-address"></a>Cómo obtener una nueva dirección de correo electrónico empresarial?
 
 Hay tres opciones para obtener un correo electrónico empresarial.
 

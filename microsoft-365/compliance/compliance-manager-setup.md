@@ -10,24 +10,28 @@ ms.topic: article
 ms.service: O365-seccomp
 ms.localizationpriority: medium
 ms.collection:
-- M365-security-compliance
+- purview-compliance
 - m365solution-compliancemanager
 - m365initiative-compliance
+- highpri
+- tier1
 ms.custom: admindeeplinkCOMPLIANCE
 search.appverid:
 - MOE150
 - MET150
 description: Establezca los roles y permisos de usuario del Administrador de cumplimiento de Microsoft Purview y configure pruebas automatizadas de acciones. Administre el historial de usuarios y filtre la vista del panel.
-ms.openlocfilehash: 295ba35eeb454314adb364a0203b6d6c337c8ba8
-ms.sourcegitcommit: 10e6abe740e27000e223378eb17d657a47555fa8
+ms.openlocfilehash: 6787da712db94c0048355f4bd59d401194e520c2
+ms.sourcegitcommit: 181a0aff54842dcbafd834647c6e9ee47304d10f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/31/2022
-ms.locfileid: "67467951"
+ms.lasthandoff: 10/27/2022
+ms.locfileid: "68730081"
 ---
 # <a name="get-started-with-compliance-manager"></a>Introducción al Administrador de cumplimiento
 
 **En este artículo:** Este artículo le ayuda a configurar el Administrador de cumplimiento. Obtenga información sobre cómo **acceder** al Administrador de cumplimiento, **establecer roles y permisos** y configurar **pruebas automáticas de acciones de mejora**. Recorra el **panel del Administrador de cumplimiento** y comprenda las páginas principales: la página de acciones de mejora, la página de soluciones, la página de evaluaciones y la página de plantillas de evaluación.
+
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
 
 ## <a name="who-can-access-compliance-manager"></a>Quién puede acceder al Administrador de cumplimiento
 
@@ -248,7 +252,7 @@ El panel del Administrador de cumplimiento está diseñado para proporcionar una
 
 La puntuación de cumplimiento aparece destacadamente en la parte superior. Muestra un porcentaje en función de los puntos que se puedan lograr para completar las acciones de mejora que abordan los estándares y regulaciones clave de protección de datos. Los puntos de [las acciones de Microsoft](compliance-manager-assessments.md#microsoft-actions-tab), que se administran mi Microsoft, también cuentan para la puntuación de cumplimiento.
 
-Cuando llega al Administrador de cumplimiento por primera vez, la puntuación inicial se basa en la [línea base de protección de datos de Microsoft 365](compliance-manager-assessments.md#data-protection-baseline-default-assessment). Esta evaluación de línea base, que está disponible para todas las organizaciones, es un conjunto de controles que incluye normas y regulaciones comunes del sector. El Administrador de cumplimiento examina las soluciones existentes de Microsoft 365 y le ofrece una evaluación inicial basada en la configuración de privacidad y seguridad actual. A medida que agrega evaluaciones que son relevantes para su organización, la puntuación se vuelve más significativa para usted.
+Cuando llega al Administrador de cumplimiento por primera vez, la puntuación inicial se basa en la [línea base de protección de datos de Microsoft 365](compliance-manager-assessments.md#data-protection-baseline-default-assessment). Esta evaluación de línea base, que está disponible para todas las organizaciones, es un conjunto de controles que incluye normas y regulaciones comunes del sector. El Administrador de cumplimiento comprueba las soluciones de Microsoft 365 existentes y le ofrece una evaluación inicial en función de la configuración de privacidad y seguridad actual. A medida que agrega evaluaciones que son relevantes para su organización, la puntuación se vuelve más significativa para usted.
 
 **Más información:** [Comprender cómo se calcula la puntuación de cumplimiento](compliance-score-calculation.md).
 
