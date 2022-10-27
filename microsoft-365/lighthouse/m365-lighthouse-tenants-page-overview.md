@@ -10,6 +10,7 @@ ms.topic: article
 ms.service: microsoft-365-lighthouse
 ms.localizationpriority: medium
 ms.collection:
+- Tier1
 - scotvorg
 - M365-subscription-management
 - Adm_O365
@@ -18,12 +19,12 @@ ms.custom:
 - M365-Lighthouse
 search.appverid: MET150
 description: En el caso de los proveedores de servicios administrados (MSP) que usan Microsoft 365 Lighthouse, obtenga información sobre la página Inquilinos.
-ms.openlocfilehash: 8530ce8a86828114f7914953b3924da2572e6f33
-ms.sourcegitcommit: 87283bb02ca750286f7c069f811b788730ed5832
+ms.openlocfilehash: 59b1071aa698e6e44086223c2388bc4746a11347
+ms.sourcegitcommit: 181a0aff54842dcbafd834647c6e9ee47304d10f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/21/2022
-ms.locfileid: "68661751"
+ms.lasthandoff: 10/27/2022
+ms.locfileid: "68734503"
 ---
 # <a name="overview-of-the-tenants-page-in-microsoft-365-lighthouse"></a>Información general de la página Inquilinos de Microsoft 365 Lighthouse
 

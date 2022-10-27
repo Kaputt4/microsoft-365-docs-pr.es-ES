@@ -10,6 +10,7 @@ ms.topic: article
 ms.service: microsoft-365-business
 ms.localizationpriority: medium
 ms.collection:
+- Tier2
 - scotvorg
 - M365-subscription-management
 - Adm_O365
@@ -24,12 +25,12 @@ search.appverid:
 - MOE150
 ms.assetid: 9db96e9f-a622-4d5d-b134-09dcace55b6a
 description: Obtenga información sobre cómo empezar a recopilar datos para el inquilino mediante la aplicación de plantilla Análisis de uso de Microsoft 365 en Power BI.
-ms.openlocfilehash: ff1bc0e30c2f9a79bbada94672315a14df6daae5
-ms.sourcegitcommit: 0b7070ec119e00e0dafe030bbfbef0ae5c9afa19
+ms.openlocfilehash: 16168afaf9a5ac232f2d238a4a33f87af32f15a8
+ms.sourcegitcommit: 181a0aff54842dcbafd834647c6e9ee47304d10f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/29/2022
-ms.locfileid: "68190185"
+ms.lasthandoff: 10/27/2022
+ms.locfileid: "68736571"
 ---
 # <a name="enable-microsoft-365-usage-analytics"></a>Habilitación del análisis de uso de Microsoft 365
 
@@ -37,7 +38,7 @@ Para habilitar el análisis de uso de Microsoft 365 en un inquilino de Microsoft
 
 ## <a name="before-you-begin"></a>Antes de empezar
 
-Para empezar a trabajar con el análisis de uso de Microsoft 365, primero debe hacer que los datos estén disponibles en el <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">Centro de administración de Microsoft 365</a> y, a continuación, iniciar la aplicación de plantilla en Power BI.
+Para empezar a trabajar con el análisis de uso de Microsoft 365, primero debe hacer que los datos estén disponibles en el <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">Centro de administración de Microsoft 365</a> y, a continuación, seleccionar **Informes** > **de uso** e iniciar la aplicación de plantilla en Power BI.
 
 ## <a name="get-power-bi"></a>Obtener Power BI
 

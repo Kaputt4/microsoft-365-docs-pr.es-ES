@@ -28,12 +28,12 @@ ms.assetid: dd6a1fef-ec4a-4cf4-a25a-bb591c5811e3
 description: Obtenga información sobre la protección de vínculos seguros en Defender para Office 365 para proteger una organización contra suplantación de identidad (phishing) y otros ataques que usan direcciones URL malintencionadas. Descubra vínculos seguros de Teams y vea los gráficos de los mensajes de vínculos seguros.
 ms.subservice: mdo
 ms.service: microsoft-365-security
-ms.openlocfilehash: 9365cc73239eb9086c565468aeb8f3104ad35b6f
-ms.sourcegitcommit: 0d8fb571024f134d7480fe14cffc5e31a687d356
+ms.openlocfilehash: 174c4b7c4dd36af990920a22abb34fb85fb833d5
+ms.sourcegitcommit: 181a0aff54842dcbafd834647c6e9ee47304d10f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/20/2022
-ms.locfileid: "68626871"
+ms.lasthandoff: 10/27/2022
+ms.locfileid: "68734041"
 ---
 # <a name="safe-links-in-microsoft-defender-for-office-365"></a>Vínculos seguros en Microsoft Defender para Office 365
 
@@ -65,6 +65,8 @@ La protección de vínculos seguros está disponible en las siguientes ubicacion
   > Vínculos seguros no funciona en carpetas públicas habilitadas para correo.
   >
   > Vínculos seguros solo admite formatos HTTP(S) y FTP.
+  >
+  > El uso de otro servicio para encapsular vínculos antes de Defender para Office 365 podría invalidar la capacidad de vínculos seguros para procesar vínculos, incluido el ajuste, la detonación o la validación de la "malintencionación" del vínculo.
 
 - **Microsoft Teams**: la protección de vínculos seguros para vínculos en conversaciones de Teams, chats de grupo o desde canales se controla mediante directivas de vínculos seguros.
 

@@ -8,6 +8,7 @@ manager: scotv
 audience: Admin
 ms.topic: article
 ms.collection:
+- Tier2
 - scotvorg
 - Adm_O365
 - Adm_NonTOC
@@ -21,12 +22,12 @@ search.appverid:
 ROBOTS: NOINDEX
 description: Obtenga más información sobre el registro CNAME "MSOID" en Office 365 que le dirige al mejor servidor para los procesos de autenticación, por lo que obtendrá una respuesta más rápida.
 monikerRange: o365-21vianet
-ms.openlocfilehash: fa9858f9bcbf92078fdedf539f27ade437e824c9
-ms.sourcegitcommit: 0b7070ec119e00e0dafe030bbfbef0ae5c9afa19
+ms.openlocfilehash: b8f199074a23cdbd994e032e1c1f47100cc46fd2
+ms.sourcegitcommit: 181a0aff54842dcbafd834647c6e9ee47304d10f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/29/2022
-ms.locfileid: "68192583"
+ms.lasthandoff: 10/27/2022
+ms.locfileid: "68727903"
 ---
 # <a name="whats-the-purpose-of-the-office-365-cname-record-for-msoid"></a>¿Cuál es el objetivo del registro CNAME adicional para Office 365?
 

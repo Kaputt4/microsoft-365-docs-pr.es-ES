@@ -10,6 +10,7 @@ ms.topic: article
 ms.service: microsoft-365-business
 ms.localizationpriority: medium
 ms.collection:
+- Tier1
 - scotvorg
 - M365-subscription-management
 - Adm_O365
@@ -26,12 +27,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Puede quitar la licencia de Microsoft 365 de un empleado anterior y, a continuación, eliminarla de su suscripción o asignarla a otro usuario.
-ms.openlocfilehash: 8d1c903a9f829605b15887b2b67e7ea61962cbfe
-ms.sourcegitcommit: 0b7070ec119e00e0dafe030bbfbef0ae5c9afa19
+ms.openlocfilehash: c990493402054569c3dae866526a89348a0d9850
+ms.sourcegitcommit: 181a0aff54842dcbafd834647c6e9ee47304d10f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/29/2022
-ms.locfileid: "68186115"
+ms.lasthandoff: 10/27/2022
+ms.locfileid: "68721656"
 ---
 # <a name="step-6---remove-and-delete-the-microsoft-365-license-from-a-former-employee"></a>Paso 6: Eliminación y eliminación de la licencia de Microsoft 365 de un empleado anterior
 

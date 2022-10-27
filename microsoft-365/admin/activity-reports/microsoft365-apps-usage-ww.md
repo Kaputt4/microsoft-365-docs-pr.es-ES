@@ -8,6 +8,7 @@ ms.topic: article
 ms.service: microsoft-365-business
 ms.localizationpriority: medium
 ms.collection:
+- Tier2
 - scotvorg
 - M365-subscription-management
 - Adm_O365
@@ -19,12 +20,12 @@ search.appverid:
 - MOE150
 - GEA150
 description: Obtenga información sobre cómo obtener un informe de uso de Aplicaciones Microsoft 365 para ver la actividad del usuario con licencia en todas las aplicaciones y cómo se usan las aplicaciones entre plataformas.
-ms.openlocfilehash: f8d9baf29089b7dd37a3655dec4c33dfb873bb67
-ms.sourcegitcommit: 0b7070ec119e00e0dafe030bbfbef0ae5c9afa19
+ms.openlocfilehash: 9efa15c1e4204ea29eadd14ed32bec8af688e480
+ms.sourcegitcommit: 181a0aff54842dcbafd834647c6e9ee47304d10f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/29/2022
-ms.locfileid: "68165237"
+ms.lasthandoff: 10/27/2022
+ms.locfileid: "68722910"
 ---
 # <a name="microsoft-365-reports-in-the-admin-center---microsoft-365-apps-usage"></a>Informes de Microsoft 365 en el Centro de administración: uso Aplicaciones Microsoft 365
 

@@ -9,6 +9,7 @@ ms.service: microsoft-365-business
 ms.localizationpriority: medium
 ROBOTS: NOINDEX, NOFOLLOW
 ms.collection:
+- Tier2
 - scotvorg
 - M365-subscription-management
 - Adm_O365
@@ -20,12 +21,12 @@ search.appverid:
 - MET150
 - MOE150
 description: El informe de uso de Teams muestra cómo los usuarios se comunican y colaboran en Teams, incluido el número de usuarios, canales y mensajes activos.
-ms.openlocfilehash: 319705a14d9d09e5f5fee0a0601ce1519541662f
-ms.sourcegitcommit: 0b7070ec119e00e0dafe030bbfbef0ae5c9afa19
+ms.openlocfilehash: bf25bcfaf8baf3c664403445739f69a7510f2b93
+ms.sourcegitcommit: 181a0aff54842dcbafd834647c6e9ee47304d10f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/29/2022
-ms.locfileid: "68169175"
+ms.lasthandoff: 10/27/2022
+ms.locfileid: "68722998"
 ---
 # <a name="microsoft-365-reports-in-the-admin-center---microsoft-teams-usage-activity"></a>Informes de Microsoft 365 en el Centro de administración: actividad de uso de Microsoft Teams
 

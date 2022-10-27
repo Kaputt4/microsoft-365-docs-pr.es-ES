@@ -10,6 +10,7 @@ ms.topic: article
 ms.service: microsoft-365-business
 ms.localizationpriority: medium
 ms.collection:
+- Tier2
 - scotvorg
 - M365-subscription-management
 - Adm_O365
@@ -24,12 +25,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Con Grupos de Microsoft 365, puede impulsar el trabajo en equipo en Microsoft 365 proporcionando a un grupo de personas acceso a una colección de recursos compartidos.
-ms.openlocfilehash: 6315ef4749183f8539cebb6c5720c75708fd5709
-ms.sourcegitcommit: 0b7070ec119e00e0dafe030bbfbef0ae5c9afa19
+ms.openlocfilehash: a3501217e90d7b131621abae95450899b0b835a1
+ms.sourcegitcommit: 181a0aff54842dcbafd834647c6e9ee47304d10f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/29/2022
-ms.locfileid: "68178325"
+ms.lasthandoff: 10/27/2022
+ms.locfileid: "68720380"
 ---
 # <a name="overview-of-microsoft-365-groups-for-administrators"></a>Información general de los grupos de Microsoft 365 para administradores
 
@@ -80,13 +81,12 @@ Los límites siguientes se aplican a Grupos de Microsoft 365:
 |:---------|:----|
 |Owners per group|100|
 |Groups a user can create|250|
-|Grupos que puede crear un administrador|Hasta el límite de inquilino predeterminado de 500 K|
+|Grupos que puede crear un administrador|No hay límites específicos del grupo de Microsoft 365. Hay un límite general de objetos de Azure AD específico para cada organización. Un administrador de Azure AD que pueda administrar grupos de la organización puede crear un número ilimitado de grupos de Microsoft 365 hasta el límite de objetos de Azure AD. Consulte [Límites y restricciones del servicio AAD](/active-directory/enterprise-users/directory-service-limits-restrictions).|
 |Número de miembros|Más de 1000, aunque solo 1000 pueden acceder a las conversaciones de grupo simultáneamente. <br>Los usuarios pueden observar retrasos al acceder al calendario y las conversaciones en grupos grandes en Outlook.|
 |Número de grupos de los que un usuario puede ser miembro|7,000|
 |Almacenamiento de archivos.|1 Terabyte + 10 GB por usuario suscrito + cualquier otro almacenamiento comprado. Puede comprar una cantidad ilimitada de almacenamiento adicional.|
 |Tamaño del buzón de grupo|50 GB|
 
-El número máximo predeterminado de grupos de Microsoft 365 que puede tener una organización es de 500 000. Para superar el límite predeterminado, debe ponerse en contacto con Soporte técnico de Microsoft. Para obtener más información sobre los límites de Grupos de Microsoft 365, consulte [Grupos de Microsoft 365 - Administración ayuda](https://support.microsoft.com/office/b565caa1-5c40-40ef-9915-60fdb2d97fa2).
 
 La administración de los grupos de Microsoft 365 es más eficaz cuando se dispone de información accionable sobre el uso de grupos. El Centro de administración de Microsoft 365 tiene una herramienta de informes que le permite ver el uso del almacenamiento, cuántos grupos activos tiene y cómo los usuarios usan los grupos. Consulte: [Informes de Microsoft 365 en el Centro de administración](../activity-reports/office-365-groups.md) para obtener más información.
 

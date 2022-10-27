@@ -20,12 +20,12 @@ ms.collection:
 ms.custom: admindeeplinkDEFENDER
 ms.date: 1/18/2022
 search.appverid: met150
-ms.openlocfilehash: b1eaf92219ba5641cd676e69558189a9cb377f51
-ms.sourcegitcommit: 0b7070ec119e00e0dafe030bbfbef0ae5c9afa19
+ms.openlocfilehash: 452c1b11f7a283a91b03982a2e660730c9caac8c
+ms.sourcegitcommit: 181a0aff54842dcbafd834647c6e9ee47304d10f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/29/2022
-ms.locfileid: "68175004"
+ms.lasthandoff: 10/27/2022
+ms.locfileid: "68733117"
 ---
 # <a name="enable-attack-surface-reduction-rules"></a>Habilitar reglas de reducción de superficie expuesta a ataques
 
@@ -224,7 +224,7 @@ Puede usar OMA-URI de Microsoft Endpoint Manager (MEM) para configurar reglas AS
    - En **Valor**, escriba el valor o el intervalo de valores aplicables.
 
    > [!div class="mx-imgBorder"]
-   > :::image type="content" source="images/mem07-5-applicability-rules.png" alt-text="Las reglas de aplicabilidad en el portal del Centro de administración de Microsoft Endpoint Manager" lightbox="images/mem07-5-applicability-rules.png":::
+   > :::image type="content" source="images/mem07-5-applicability-rules.png" alt-text="Reglas de aplicabilidad en el portal del Centro de administración de Microsoft Endpoint Manager" lightbox="images/mem07-5-applicability-rules.png":::
 
 10. Seleccione **Siguiente**. En el paso **6 Revisar y crear**, revise la configuración y la información que ha seleccionado y escrito y, a continuación, seleccione **Crear**.
 
@@ -310,6 +310,7 @@ Ejemplo:
 
    > [!WARNING]
    > No use comillas, ya que no se admiten para la columna **Nombre de valor** ni para la columna **Valor** .
+   > El identificador de regla no debe tener espacios iniciales o finales.
 
 ### <a name="powershell"></a>PowerShell
 

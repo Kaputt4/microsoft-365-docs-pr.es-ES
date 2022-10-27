@@ -10,6 +10,7 @@ ms.topic: article
 ms.service: microsoft-365-business
 ms.localizationpriority: medium
 ms.collection:
+- Tier3
 - scotvorg
 - M365-subscription-management
 - Adm_O365
@@ -23,12 +24,12 @@ search.appverid:
 - MOE150
 ms.assetid: 9f7c2ff2-af65-4557-8840-0b84ce96d9bc
 description: Las publicaciones del Centro de mensajes solo están en inglés, pero se pueden mostrar automáticamente en el idioma que especifique para Microsoft 365.
-ms.openlocfilehash: 26f62d7579e2600b6fef3f6f53ffaff9cc22c74d
-ms.sourcegitcommit: 0b7070ec119e00e0dafe030bbfbef0ae5c9afa19
+ms.openlocfilehash: e34e973ae81745d826d97838510541f936ab3ce0
+ms.sourcegitcommit: 181a0aff54842dcbafd834647c6e9ee47304d10f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/29/2022
-ms.locfileid: "68191175"
+ms.lasthandoff: 10/27/2022
+ms.locfileid: "68733447"
 ---
 # <a name="language-translation-for-microsoft-365-message-center-posts"></a>Traducción de idioma para publicaciones del Centro de mensajes de Microsoft 365
 

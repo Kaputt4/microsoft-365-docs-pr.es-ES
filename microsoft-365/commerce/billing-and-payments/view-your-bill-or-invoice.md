@@ -12,6 +12,7 @@ ms.service: microsoft-365-business
 ms.localizationpriority: high
 search.appverid: GEA150
 ms.collection:
+- Tier1
 - scotvorg
 - highpri
 - M365-subscription-management
@@ -28,12 +29,12 @@ ms.custom:
 - adminvideo
 description: Busque la factura o el extracto en el Centro de administración de Microsoft 365. También puede guardar e imprimir una copia de la factura.
 ms.date: 01/25/2022
-ms.openlocfilehash: 06c509641bc4eea370680fd65171e1d38bc579f5
-ms.sourcegitcommit: 04e517c7e00323b5c33d8ea937115725cf2cfd4d
+ms.openlocfilehash: f8e16ee99983a31b3a6f69cbc38c9c0cff367fc2
+ms.sourcegitcommit: 181a0aff54842dcbafd834647c6e9ee47304d10f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/13/2022
-ms.locfileid: "68565408"
+ms.lasthandoff: 10/27/2022
+ms.locfileid: "68733007"
 ---
 # <a name="view-your-microsoft-365-for-business-subscription-bill-or-invoice"></a>Ver la factura o la suscripción a Microsoft 365 para empresas
 

@@ -16,6 +16,7 @@ ms.custom:
 - O365E_AddUsersCSV
 - admindeeplinkMAC
 ms.collection:
+- Tier1
 - scotvorg
 search.appverid:
 - MET150
@@ -27,12 +28,12 @@ search.appverid:
 - GEA150
 - BCS160
 description: 'Obtenga información sobre cómo agregar varios usuarios a Microsoft 365 para empresas desde una lista en una hoja de cálculo u otro archivo con formato CSV. Vea un vídeo en YouTube en el que se explica cómo agregar cuentas a Microsoft 365. Al final de este proceso, cada usuario con una cuenta tendrá un buzón de Microsoft 365. '
-ms.openlocfilehash: c8453e5634245897a06867b422349c3350de03ae
-ms.sourcegitcommit: 0b7070ec119e00e0dafe030bbfbef0ae5c9afa19
+ms.openlocfilehash: a6e58dea7eb1aeb277e319f2cef6c03ef431d6bf
+ms.sourcegitcommit: 181a0aff54842dcbafd834647c6e9ee47304d10f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/29/2022
-ms.locfileid: "68201185"
+ms.lasthandoff: 10/27/2022
+ms.locfileid: "68730741"
 ---
 # <a name="add-several-users-at-the-same-time-to-microsoft-365---admin-help"></a>Agregar varios usuarios al mismo tiempo a Microsoft 365: Ayuda Administración
 

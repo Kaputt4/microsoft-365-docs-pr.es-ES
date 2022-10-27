@@ -16,14 +16,16 @@ audience: ITPro
 ms.collection:
 - m365-security
 - tier2
-ms.topic: conceptual
+- demo
+ms.topic: article
 ms.subservice: mde
-ms.openlocfilehash: d3898738f5030b626180d318eaa6137ad7e7f5ba
-ms.sourcegitcommit: 0d8fb571024f134d7480fe14cffc5e31a687d356
+ms.date: 10/21/2022
+ms.openlocfilehash: 561d36ebd04076e93b47b2679b3b236009f94c2d
+ms.sourcegitcommit: 181a0aff54842dcbafd834647c6e9ee47304d10f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/20/2022
-ms.locfileid: "68634418"
+ms.lasthandoff: 10/27/2022
+ms.locfileid: "68732787"
 ---
 # <a name="controlled-folder-access-cfa-demonstrations-block-ransomware"></a>Demostraciones de acceso controlado a carpetas (CFA) (bloquear ransomware)
 
@@ -48,9 +50,9 @@ Set-MpPreference -ControlledFolderAccessProtectedFolders C:\demo\
 
 |Estado | Modo| Valor numérico |
 |:---|:---|:---|
-| AuditMode | = Modo auditoría | 2 |
-| Habilitado | = Modo de bloque | 1 |
 | Deshabilitada | = Desactivado | 0 |
+| Habilitado | = Modo de bloque | 1 |
+| Auditoría | = Modo auditoría | 2 |
 
 ## <a name="verify-configuration"></a>Comprobación de la configuración
 
@@ -80,7 +82,7 @@ En su lugar, puede realizar estos pasos manuales:
 
 ### <a name="scenario-1-cfa-blocks-ransomware-test-file"></a>Escenario 1: CFA bloquea el archivo de prueba de ransomware
 
-1. Active CFA mediante el comando de PowerShell: 
+1. Active CFA mediante el comando de PowerShell:
   
 ```powershell
 Set-MpPreference -EnableControlledFolderAccess Enabled
@@ -101,7 +103,7 @@ Set-MpPreference -ControlledFolderAccessProtectedFolders C:\demo\
 
 ### <a name="scenario-2-what-would-happen-without-cfa"></a>Escenario 2: Lo que sucedería sin CFA
 
-1. Desactive CFA con este comando de PowerShell: 
+1. Desactive CFA con este comando de PowerShell:
 
 ```powershell
 Set-MpPreference -EnableControlledFolderAccess Disabled

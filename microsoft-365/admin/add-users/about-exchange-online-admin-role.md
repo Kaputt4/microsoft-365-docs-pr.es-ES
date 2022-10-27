@@ -10,6 +10,7 @@ ms.topic: overview
 ms.service: microsoft-365-business
 ms.localizationpriority: medium
 ms.collection:
+- Tier2
 - scotvorg
 - M365-subscription-management
 - Adm_O365
@@ -23,12 +24,12 @@ search.appverid:
 - GEA150
 ms.assetid: 097ae285-c4af-4319-9770-e2559d66e4c8
 description: Los administradores de Exchange administran el correo electrónico y los buzones de su organización y, por ejemplo, recuperan los elementos eliminados en el buzón de correo de un usuario.
-ms.openlocfilehash: 4a70afe1a6b65926ce8afa2ac125d0dd18d6db79
-ms.sourcegitcommit: 0b7070ec119e00e0dafe030bbfbef0ae5c9afa19
+ms.openlocfilehash: 497bf3544c39ef238c1448d5882d351d864a6abf
+ms.sourcegitcommit: 181a0aff54842dcbafd834647c6e9ee47304d10f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/29/2022
-ms.locfileid: "68190559"
+ms.lasthandoff: 10/27/2022
+ms.locfileid: "68722250"
 ---
 # <a name="about-the-exchange-administrator-role"></a>Acerca del rol de administrador de Exchange
 

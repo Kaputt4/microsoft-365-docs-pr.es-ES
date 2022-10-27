@@ -20,38 +20,38 @@ ms.custom: admindeeplinkCOMPLIANCE
 search.appverid:
 - MET150
 - MOE150
-ms.openlocfilehash: 5b5af7d7dc9373f0fdd13e38f5e6934327bc1f57
-ms.sourcegitcommit: 0ca3ab2abe07810e9b2cc2d806e3c6b9f35b146c
+ms.openlocfilehash: 3f726431e7dea7cceeab67cc977b208690f7f9ea
+ms.sourcegitcommit: 181a0aff54842dcbafd834647c6e9ee47304d10f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/24/2022
-ms.locfileid: "68684965"
+ms.lasthandoff: 10/27/2022
+ms.locfileid: "68734905"
 ---
 # <a name="investigate-and-remediate-communication-compliance-alerts"></a>Investigar y corregir las alertas de cumplimiento de las comunicaciones
 
 >[!IMPORTANT]
->Cumplimiento de comunicaciones de Microsoft Purview proporciona las herramientas para ayudar a las organizaciones a detectar infracciones de cumplimiento normativo (por ejemplo, SEC o FINRA), como información confidencial o confidencial, hostigamiento o amenazante del lenguaje y uso compartido de contenido para adultos. Creados con privacidad por diseño, los nombres de usuario se seudonimizan de forma predeterminada, los controles de acceso basados en roles se integran, los investigadores son admitidos por un administrador y los registros de auditoría están en vigor para garantizar la privacidad del nivel de usuario.
+>Cumplimiento de comunicaciones de Microsoft Purview proporciona las herramientas para ayudar a las organizaciones a detectar infracciones de cumplimiento normativo (por ejemplo, SEC o FINRA), como información confidencial o confidencial, hostigamiento o amenazante del lenguaje y uso compartido de contenido para adultos. Creados con privacidad por diseño, los nombres de usuario se seudonimizan de forma predeterminada, los controles de acceso basados en roles están integrados, los investigadores son admitidos por un administrador y los registros de auditoría están en su lugar para ayudar a garantizar la privacidad del nivel de usuario.
 
-Después de configurar [las directivas de cumplimiento de comunicaciones](/microsoft-365/compliance/communication-compliance-policies), comenzará a recibir alertas en el [portal de cumplimiento Microsoft Purview](https://compliance.microsoft.com) para los problemas de mensajes que coincidan con las condiciones de la directiva. Para ver y actuar en alertas, los usuarios deben tener los permisos siguientes:
+Después de configurar [las directivas de cumplimiento de comunicaciones](/microsoft-365/compliance/communication-compliance-policies), comenzará a recibir alertas en el [portal de cumplimiento Microsoft Purview](https://compliance.microsoft.com) para los problemas de mensajes que coincidan con las condiciones de la directiva. Para ver y actuar en alertas, los usuarios deben tener asignados los permisos siguientes:
 
-- Se asigna a los *analistas de cumplimiento de comunicaciones* o al grupo de roles *Investigadores de cumplimiento de comunicaciones*
-- Se le asigna como revisor en la directiva asociada a la alerta.
+- El grupo de roles *Analistas de cumplimiento de comunicaciones* o *Investigadores de cumplimiento de comunicaciones*
+- Revisor de la directiva asociada a la alerta
 
-Después de tener los permisos necesarios, siga las instrucciones del flujo de trabajo aquí para investigar y corregir problemas de alerta.
+Después de establecer los permisos necesarios, siga las instrucciones de flujo de trabajo siguientes para investigar y corregir problemas de alerta.
 
 [!INCLUDE [purview-preview](../includes/purview-preview.md)]
 
 ## <a name="investigate-alerts"></a>Investigar alertas
 
-El primer paso para investigar los problemas detectados por las directivas es revisar las alertas de cumplimiento de comunicaciones en el portal de cumplimiento Microsoft Purview. Hay varias áreas en el área de solución de cumplimiento de comunicaciones que le ayudarán a investigar rápidamente las alertas, en función de cómo prefiera ver la agrupación de alertas:
+El primer paso para investigar los problemas detectados por las directivas es revisar las alertas en el portal de cumplimiento Microsoft Purview. Hay varias áreas en el área de cumplimiento de comunicaciones que le ayudarán a investigar rápidamente las alertas, en función de cómo prefiera ver la agrupación de alertas:
 
-- **Página directiva de cumplimiento de comunicaciones**: al iniciar sesión en el [portal de cumplimiento Microsoft Purview](https://compliance.microsoft.com) con las credenciales de una cuenta de administrador de la organización de Microsoft 365, seleccione **Cumplimiento de comunicaciones** para mostrar la página **Directiva** de cumplimiento de comunicaciones. En esta página se muestran las directivas de cumplimiento de comunicaciones configuradas para la organización de Microsoft 365 y los vínculos a las plantillas de directiva recomendadas. Cada directiva enumerada incluye el recuento de alertas que necesitan revisión, el número de elementos escalados y resueltos, el estado de la directiva y la fecha y hora del último examen de directiva. Al seleccionar una directiva, se muestran todas las alertas pendientes para las coincidencias con la directiva, se selecciona una alerta específica para iniciar la página de detalles de la directiva e iniciar acciones de corrección.
-- **Alertas**: vaya a **Alertas** de **cumplimiento** >  de comunicaciones para mostrar los últimos 30 días de alertas agrupadas por coincidencias de directivas. Esta vista le permite ver rápidamente qué directivas de cumplimiento de comunicaciones generan la mayoría de las alertas ordenadas por gravedad. Para iniciar acciones de corrección, seleccione la directiva asociada a la alerta para iniciar la página **Detalles de la directiva** . En la página **Detalles** de la directiva, puede revisar un resumen de las actividades en la página **Información general** , revisar y actuar sobre los mensajes de alerta en la página **Pendiente** o revisar el historial de alertas cerradas en la página **Resuelto** .
+- **Página directiva de cumplimiento de comunicaciones**: al iniciar sesión en el [portal de cumplimiento Microsoft Purview](https://compliance.microsoft.com) con las credenciales de una cuenta de administrador de la organización de Microsoft 365, seleccione **Cumplimiento de comunicaciones** para mostrar la página **Directiva** de cumplimiento de comunicaciones. En esta página se muestran las directivas de cumplimiento de comunicaciones configuradas para la organización de Microsoft 365 y los vínculos a las plantillas de directiva recomendadas. Cada directiva enumerada incluye el recuento de alertas que necesitan revisión, el número de elementos escalados y resueltos, el estado de la directiva y la fecha y hora de la última comprobación de directiva. Seleccione una directiva para mostrar todas las alertas pendientes de coincidencias con la directiva y, a continuación, seleccione una alerta específica para iniciar la página de detalles de la directiva e iniciar acciones de corrección.
+- **Alertas**: vaya a **Alertas** de **cumplimiento** >  de comunicaciones para mostrar los últimos 30 días de alertas agrupadas por coincidencias de directivas. Esta vista le permite ver rápidamente qué directivas de cumplimiento de comunicaciones generan la mayoría de las alertas ordenadas por gravedad. Para iniciar acciones de corrección, seleccione la directiva asociada a la alerta para iniciar la página **Detalles de la directiva** . En la página **Detalles** de la directiva, puede revisar un resumen de las actividades en la página **Información general** , revisar y actuar sobre los mensajes de alerta en la pestaña **Pendiente** o revisar el historial de alertas cerradas en la pestaña **Resuelto** .
 - **Informes**: vaya a **Informes** **de cumplimiento** >  de comunicaciones para mostrar widgets de informes de cumplimiento de comunicaciones. Cada widget proporciona información general sobre las actividades y los estados de cumplimiento de la comunicación, incluido el acceso a información más detallada sobre las coincidencias de directivas y las acciones de corrección.
 
 ### <a name="using-filters"></a>Uso de filtros
 
-El siguiente paso es ordenar los mensajes para que le resulte más fácil investigar las alertas. En la página **Detalles de la directiva** , el cumplimiento de comunicaciones admite el filtrado de varios niveles para varios campos de mensajes para ayudarle a investigar y revisar rápidamente los mensajes con coincidencias de directiva. El filtrado está disponible para los elementos pendientes y resueltos para cada directiva configurada. Puede configurar las consultas de filtro de una directiva, o configurar y guardar consultas de filtro predeterminado y personalizado para usarlas en cada directiva específica. Después de configurar los campos para un filtro, verá los campos de filtro en la parte superior de la cola de mensajes de alerta que puede configurar para valores de filtro específicos.
+El siguiente paso es ordenar los mensajes para que sea más fácil investigar las alertas. En la página **Detalles de la directiva** , el cumplimiento de comunicaciones admite el filtrado de varios niveles para varios campos de mensajes para ayudarle a investigar y revisar rápidamente los mensajes con coincidencias de directiva. El filtrado está disponible para los elementos pendientes y resueltos para cada directiva configurada. Puede configurar las consultas de filtro de una directiva, o configurar y guardar consultas de filtro predeterminado y personalizado para usarlas en cada directiva específica. Después de configurar los campos para un filtro, verá los campos de filtro en la parte superior de la cola de mensajes de alerta que puede configurar para valores de filtro específicos.
 
 Para el filtro de fecha, la fecha y hora de los eventos se enumeran en Hora universal coordinada (UTC). Al filtrar mensajes para vistas, la fecha y hora local del usuario solicitante determina los resultados en función de la conversión de la fecha y hora local del usuario a UTC. Por ejemplo, si un usuario de la hora de verano del Pacífico (PDT) de Ee. UU. filtra un informe del 8/30/2021 al 8/31/2021 a las 00:00, el informe incluye mensajes de 8/30/2021 07:00 UTC a 8/31/2021 07:00 UTC. Si el mismo usuario estaba en la hora de verano del Este de EE. UU. (EDT) al filtrar a las 00:00, el informe incluye mensajes de 8/30/2021 04:00 UTC a 8/31/2021 04:00 UTC.
 
@@ -66,8 +66,8 @@ En la tabla siguiente se describen los detalles del filtro:
 | **Date** | La fecha en que un usuario de la organización envió o recibió el mensaje. Para filtrar por un solo día, seleccione un intervalo de fechas que comience con el día para el que desea obtener los resultados y finalice con el día siguiente. Por ejemplo, si quisiera filtrar los resultados del 20/9/2020, elegiría un intervalo de fechas de filtro de 9/20/2020-9/21/2020.|
 | **Clase de archivo** | Clase del mensaje basada en el tipo de mensaje, ya sea *mensaje* o *datos adjuntos*. |
 | **Tiene datos adjuntos** | La presencia de datos adjuntos en el mensaje. |
-| **Clase Item** | Origen del mensaje en función del tipo de mensaje, el correo electrónico, el chat del equipo de Microsoft, Bloomberg, etc. Para obtener más información sobre los tipos de elemento comunes y las clases de mensaje, vea [Tipos de elementos y clases de mensaje](/office/vba/outlook/concepts/forms/item-types-and-message-classes). |
-| **Dominios de destinatario** | Dominio al que se envió el mensaje. Este dominio suele ser el dominio de suscripción de Microsoft 365 de forma predeterminada. |
+| **Clase Item** | Origen del mensaje en función del tipo de mensaje, el correo electrónico, el chat de Microsoft Teams, Bloomberg, etc. Para obtener más información, vea [Tipos de elementos y clases de mensaje](/office/vba/outlook/concepts/forms/item-types-and-message-classes). |
+| **Dominios de destinatario** | Dominio al que se envió el mensaje; normalmente el dominio de suscripción de Microsoft 365 de forma predeterminada. |
 | **Destinatario** | Usuario al que se envió el mensaje. |
 | **Sender** | La persona que envió el mensaje. |
 | **Dominio del remitente** | Dominio que envió el mensaje. |
@@ -96,7 +96,7 @@ En la tabla siguiente se describen los detalles del filtro:
 
 8. Si desea guardar los filtros seleccionados como una consulta de filtro, seleccione **Guardar el** control de consulta después de configurar al menos un valor de filtro. Escriba un nombre para la consulta de filtro y seleccione **Guardar**. Este filtro solo está disponible para usarse para esta directiva y se muestra en la sección **Consultas de filtro guardadas** de la página **Detalles de filtros** .
 
-    ![Controles de detalle del filtro de cumplimiento de comunicaciones.](../media/communication-compliance-filter-detail-controls.png)
+    ![Controles de detalle del filtro de cumplimiento de comunicaciones](../media/communication-compliance-filter-detail-controls.png)
 
 ## <a name="remediate-alerts"></a>Corrección de alertas
 
@@ -106,13 +106,13 @@ Independientemente de dónde empiece a revisar las alertas o el filtrado que con
 
  A veces es obvio desde el origen o el asunto que un mensaje se puede corregir inmediatamente. Puede ser que el mensaje sea falso o que coincida incorrectamente con una directiva y debe resolverse como clasificado erróneamente. Seleccione el control **Informe como clasificado erróneamente** para compartir contenido clasificado erróneamente con Microsoft, resolver inmediatamente la alerta y quitarla de la cola de alertas pendiente. Desde la información de origen o del remitente, puede que ya sepa cómo se debe enrutar o administrar el mensaje en estas circunstancias. Considere la posibilidad de usar los controles **Etiquetar como** o **Escalar** para asignar una etiqueta a los mensajes aplicables o enviar mensajes a un revisor designado.
 
-![Controles de corrección de cumplimiento de comunicaciones.](../media/communication-compliance-remediation-controls.png)
+![Controles de corrección de cumplimiento de comunicaciones](../media/communication-compliance-remediation-controls.png)
 
 ### <a name="step-2-examine-the-message-details"></a>Paso 2: Examinar los detalles del mensaje
 
-Después de revisar los conceptos básicos del mensaje, es el momento de abrir un mensaje para examinar los detalles y determinar las acciones de corrección adicionales. Seleccione un mensaje para ver la información completa del encabezado y el cuerpo del mensaje. Hay varias opciones y vistas diferentes disponibles para ayudarle a decidir el curso de acción adecuado:
+Después de revisar los conceptos básicos del mensaje, ahora puede abrir un mensaje para examinar los detalles y determinar las acciones de corrección adicionales. Seleccione un mensaje para ver la información completa del encabezado y el cuerpo del mensaje. Hay varias opciones y vistas diferentes disponibles para ayudarle a decidir el curso de acción adecuado:
 
-- **Datos adjuntos**: esta opción permite examinar los datos adjuntos modernos que coinciden con las condiciones de la directiva. El contenido de los datos adjuntos modernos se extrae como texto y se puede ver en el panel Alertas pendientes de una directiva. Para obtener más información, consulte la [referencia de características de cumplimiento de comunicaciones](/microsoft-365/compliance/communication-compliance-channels).
+- **Datos adjuntos**: esta opción permite examinar los datos adjuntos modernos que coinciden con las condiciones de la directiva. El contenido de los datos adjuntos modernos se extrae como texto y se puede ver en la pestaña **Alertas pendientes** de la directiva. Para obtener más información, consulte la [referencia de características de cumplimiento de comunicaciones](/microsoft-365/compliance/communication-compliance-channels).
 - **Origen**: esta vista es la vista de mensajes estándar que se suele ver en la mayoría de las plataformas de mensajería basadas en web. La información del encabezado tiene el formato normal y el cuerpo del mensaje admite archivos gráficos inculcados y texto encapsulado por palabras. Si el [reconocimiento óptico de caracteres (OCR)](/microsoft-365/compliance/communication-compliance-policies#optical-character-recognition-ocr) está habilitado para la directiva, las imágenes que contienen texto impreso o manuscrito que coinciden con el condicional de la directiva se ven como un elemento secundario para el mensaje asociado en esta vista.
 - **Texto sin formato**: vista de texto que muestra una vista de solo texto numerada de línea del mensaje e incluye resaltado de palabras clave en mensajes y datos adjuntos para términos de tipo de información confidencial, términos identificados por clasificadores integrados asignados a una directiva o para términos incluidos en un diccionario de palabras clave dedicado asignado a una directiva. El resaltado de palabras clave, que actualmente solo está disponible en inglés, puede ayudarle a dirigirse al área de interés en los mensajes largos y los datos adjuntos. En algunos casos, el texto resaltado podría estar solo en datos adjuntos para las condiciones de directiva de coincidencia de mensajes. Los archivos incrustados no se muestran y la numeración de líneas en esta vista es útil para hacer referencia a los detalles pertinentes entre varios revisores.
 - **Conversación**: disponible para los mensajes de chat de Microsoft Teams, esta vista muestra hasta cinco mensajes antes y después de un mensaje de alerta para ayudar a los revisores a ver la actividad en el contexto conversacional. Este contexto ayuda a los revisores a evaluar rápidamente los mensajes y tomar decisiones de resolución de mensajes más informadas. Se muestran adiciones de mensajes en tiempo real a las conversaciones, incluidas todas las imágenes insertadas, emojis y etiquetas engomadas disponibles en Teams. No se muestran los datos adjuntos de archivos de imagen o texto a los mensajes. Las notificaciones se muestran automáticamente para los mensajes que se han editado o para los mensajes que se han eliminado de la ventana de conversación. Cuando se resuelve un mensaje, los mensajes conversacionales asociados no se conservan con el mensaje resuelto. Los mensajes de conversación están disponibles hasta 60 días después de identificar el mensaje de alerta.
@@ -131,7 +131,7 @@ Ahora que ha revisado los detalles del mensaje de la alerta, puede elegir varias
 - **Notificación**: puede usar el control **Notificar** para asignar una plantilla de aviso personalizada a la alerta y enviar un aviso de advertencia al usuario. Elija la plantilla de aviso adecuada configurada en el área **Configuración de cumplimiento de comunicaciones** y seleccione **Enviar** por correo electrónico un recordatorio al usuario que envió el mensaje y resolver el problema.
 - **Escalar**: con el control **Escalar** , puede elegir quién más de la organización debe revisar el mensaje. Elija entre una lista de revisores configurados en la directiva de cumplimiento de comunicaciones para enviar una notificación por correo electrónico que solicite una revisión adicional de la alerta de mensaje. El revisor seleccionado puede usar un vínculo en la notificación por correo electrónico para ir directamente a los elementos que se les han escalado para su revisión.
 - **Escalar para investigación**: con **escalar para** el control de investigación, puede crear un nuevo [caso de exhibición de documentos electrónicos (Premium)](/microsoft-365/compliance/overview-ediscovery-20) para uno o varios mensajes. Proporcionará un nombre y notas para el nuevo caso y el usuario que envió el mensaje que coincide con la directiva se asigna automáticamente como custodio del caso. No necesita permisos adicionales para administrar el caso. La creación de un caso no resuelve ni crea una nueva etiqueta para el mensaje. Puede seleccionar un total de 100 mensajes al crear un caso de exhibición de documentos electrónicos (Premium) durante el proceso de corrección. Se admiten los mensajes de todos los canales de comunicación incluidos en el cumplimiento de comunicaciones. Por ejemplo, podría seleccionar 50 chats de Microsoft Teams, 25 Exchange Online mensajes de correo electrónico y 25 mensajes de Yammer al abrir un nuevo caso de exhibición de documentos electrónicos (Premium) para un usuario.
-- **Quitar mensaje en Teams**: con el control **Quitar mensaje en Teams** , puede bloquear mensajes inadecuados y contenido identificado en alertas de canales de Microsoft Teams y chats de grupo y 1:1. Esto incluye los mensajes de chat de Teams notificados por los usuarios y los mensajes de chat detectados mediante directivas de cumplimiento de comunicaciones basadas en clasificadores y aprendizaje automático. Los mensajes y el contenido quitados se reemplazan por una sugerencia de directiva que explica que está bloqueada y la directiva que se aplica a su eliminación de la vista. A los destinatarios se les proporciona un vínculo en la sugerencia de directiva para obtener más información sobre la directiva aplicable y el proceso de revisión. El remitente recibe una sugerencia de directiva para el mensaje y el contenido bloqueados, pero puede revisar los detalles del mensaje bloqueado y el contenido para obtener contexto con respecto a la eliminación.
+- **Quitar mensaje en Teams**: con el control **Quitar mensaje en Teams** , puede bloquear mensajes y contenido potencialmente inadecuados identificados en alertas de canales de Microsoft Teams y chats de grupo y 1:1. Esto incluye los mensajes de chat de Teams notificados por los usuarios y los mensajes de chat detectados mediante directivas de cumplimiento de comunicaciones basadas en clasificadores y aprendizaje automático. Los mensajes y el contenido quitados se reemplazan por una sugerencia de directiva que explica que está bloqueada y la directiva que se aplica a su eliminación de la vista. A los destinatarios se les proporciona un vínculo en la sugerencia de directiva para obtener más información sobre la directiva aplicable y el proceso de revisión. El remitente recibe una sugerencia de directiva para el mensaje y el contenido bloqueados, pero puede revisar los detalles del mensaje bloqueado y el contenido para obtener contexto con respecto a la eliminación.
 
 ### <a name="step-4-determine-if-message-details-should-be-archived-outside-of-communication-compliance"></a>Paso 4: Determinar si los detalles del mensaje deben archivarse fuera del cumplimiento de la comunicación
 
@@ -159,13 +159,13 @@ La siguiente plantilla de Power Automate se proporciona a los clientes para admi
 
 Para crear un flujo de Power Automate a partir de una plantilla predeterminada recomendada, usará la opción **Administrar flujos de Power Automate** del control **Automate** al trabajar directamente en una alerta. Para crear un flujo de Power Automate con **Administrar flujos de Power Automate**, debe ser miembro de al menos un grupo de roles de cumplimiento de comunicaciones.
 
-Complete los pasos siguientes para crear un flujo de Power Automate a partir de una plantilla predeterminada:
+Siga estos pasos para crear un flujo de Power Automate a partir de una plantilla predeterminada:
 
 1. En el [portal de cumplimiento Microsoft Purview](https://compliance.microsoft.com), vaya a **Directivas** de **cumplimiento** >  de comunicaciones y seleccione la directiva con la alerta que desea revisar.
 2. En la directiva, seleccione la pestaña **Pendiente** y seleccione una alerta pendiente.
 3. Seleccione **Power Automate** en el menú de acción de alerta.
 4. En la página **Power Automate** , seleccione una plantilla predeterminada en la sección **Plantillas de cumplimiento de comunicaciones que le gustaría** en la página.
-5. El flujo enumerará las conexiones incrustadas necesarias para el flujo y se mostrará si los estados de conexión están disponibles. Si es necesario, actualice las conexiones que no se muestren como disponibles. Seleccione **Continuar**.
+5. El flujo enumera las conexiones incrustadas necesarias para el flujo y muestra si los estados de conexión están disponibles. Si es necesario, actualice las conexiones que no se muestren como disponibles. Seleccione **Continuar**.
 6. De forma predeterminada, los flujos recomendados están preconfigurados con los campos de datos de servicio de Microsoft 365 y cumplimiento de comunicaciones recomendados necesarios para completar la tarea asignada para el flujo. Si es necesario, personalice los componentes de flujo mediante el control **Mostrar opciones avanzadas** y configurando las propiedades disponibles para el componente de flujo.
 7. Si es necesario, agregue los pasos adicionales al flujo seleccionando el botón **Nuevo paso** . En la mayoría de los casos, este cambio no debe ser necesario para las plantillas predeterminadas recomendadas.
 8. Seleccione **Guardar borrador** para guardar el flujo para una configuración posterior o seleccione **Guardar** para completar la configuración del flujo.
@@ -173,16 +173,17 @@ Complete los pasos siguientes para crear un flujo de Power Automate a partir de 
 
 #### <a name="share-a-power-automate-flow"></a>Uso compartido de un flujo de Power Automate
 
-De forma predeterminada, los flujos de Power Automate creados por un usuario solo están disponibles para ese usuario. Para que otros usuarios de cumplimiento de comunicaciones tengan acceso y usen un flujo, el creador del flujo debe compartir el flujo. Para compartir un flujo, usará el control **Power Automate** al trabajar directamente en una alerta.
+De forma predeterminada, los flujos de Power Automate creados por un usuario solo están disponibles para ese usuario. Para que otros usuarios de cumplimiento de comunicaciones tengan acceso y usen un flujo, el creador del flujo debe compartir el flujo. Para compartir un flujo, use el control **Power Automate** al trabajar directamente en una alerta.
 
 Para compartir un flujo de Power Automate, debe ser miembro de al menos un grupo de roles de cumplimiento de comunicaciones.
-Complete los pasos siguientes para compartir un flujo de Power Automate:
+
+Siga estos pasos para compartir un flujo de Power Automate:
 
 1. En el [portal de cumplimiento Microsoft Purview](https://compliance.microsoft.com), vaya a **Directivas** de **cumplimiento** >  de comunicaciones y seleccione la directiva con la alerta que desea revisar.
 2. En la directiva, seleccione la pestaña **Pendiente** y seleccione una alerta pendiente.
 3. Seleccione **Power Automate** en el menú de acción de alerta.
 4. En la página **Flujos de Power Automate** , seleccione la pestaña **Mis flujos** o **Flujos de equipo** .
-5. Seleccione el flujo que desea compartir y, a continuación, seleccione **Compartir** en el menú de opciones de flujo.
+5. Seleccione el flujo que desea compartir y, a continuación, seleccione **Compartir** en el menú **Opciones de flujo** .
 6. En la página de uso compartido de flujo, escriba el nombre del usuario o grupo que desea agregar como propietario para el flujo.
 7. En el cuadro de diálogo **Conexión usada** , seleccione **Aceptar** para confirmar que el usuario o grupo agregado tendrá acceso total al flujo.
 
@@ -190,7 +191,7 @@ Complete los pasos siguientes para compartir un flujo de Power Automate:
 
 Si necesita editar un flujo, usará el control **Power Automate** al trabajar directamente en una alerta. Para editar un flujo de Power Automate, debe ser miembro de al menos un grupo de roles de cumplimiento de comunicaciones.
 
-Complete los pasos siguientes para editar un flujo de Power Automate:
+Siga estos pasos para editar un flujo de Power Automate:
 
 1. En el [portal de cumplimiento Microsoft Purview](https://compliance.microsoft.com), vaya a **Directivas** de **cumplimiento** >  de comunicaciones y seleccione la directiva con la alerta que desea revisar.
 2. En la directiva, seleccione la pestaña **Pendiente** y seleccione una alerta pendiente.
@@ -201,9 +202,9 @@ Complete los pasos siguientes para editar un flujo de Power Automate:
 
 #### <a name="delete-a-power-automate-flow"></a>Eliminación de un flujo de Power Automate
 
-Si necesita eliminar un flujo, usará el control **Power Automate** al trabajar directamente en una alerta. Para eliminar un flujo de Power Automate, debe ser miembro de al menos un grupo de roles de cumplimiento de comunicaciones.
+Si necesita eliminar un flujo, use el control **Power Automate** al trabajar directamente en una alerta. Para eliminar un flujo de Power Automate, debe ser miembro de al menos un grupo de roles de cumplimiento de comunicaciones.
 
-Complete los pasos siguientes para eliminar un flujo de Power Automate:
+Siga estos pasos para eliminar un flujo de Power Automate:
 
 1. En el [portal de cumplimiento Microsoft Purview](https://compliance.microsoft.com), vaya a **Directivas** de **cumplimiento** >  de comunicaciones y seleccione la directiva con la alerta que desea revisar.
 2. En la directiva, seleccione la pestaña **Pendiente** y seleccione una alerta pendiente.
@@ -219,8 +220,8 @@ Las plantillas de avisos son plantillas de correo electrónico personalizadas do
 
 |**Field**|**Required**| **Detalles** |
 |:-----|:-----|:-----|
-|**Nombre de la plantilla** | Yes | El nombre descriptivo de la plantilla de aviso que seleccionará en el flujo de trabajo de notificación durante la corrección, admite caracteres de texto. |
-| **Dirección del remitente** | Sí | Dirección de uno o varios usuarios o grupos que envían el mensaje al usuario con una coincidencia de directiva, seleccionada en Active Directory para la suscripción. |
+|**Nombre de la plantilla** | Sí | El nombre descriptivo de la plantilla de aviso que seleccionará en el flujo de trabajo de notificación durante la corrección, admite caracteres de texto. |
+| **Dirección del remitente** | Sí | Dirección de uno o varios usuarios o grupos que envían el mensaje al usuario con una coincidencia de directiva seleccionada en Active Directory para la suscripción. |
 | **Direcciones CC y BCC** | No | Usuarios o grupos opcionales a los que se va a notificar la coincidencia de directiva, seleccionados en Active Directory para la suscripción. |
 | **Asunto** | Sí | La información que aparece en la línea de asunto del mensaje admite caracteres de texto. |
 | **Cuerpo del mensaje** | Sí | La información que aparece en el cuerpo del mensaje admite valores de texto o HTML. |
@@ -247,9 +248,9 @@ Si desea crear más que un mensaje de correo electrónico simple basado en texto
 
 ## <a name="unresolve-messages-preview"></a>Anular la reresolve de mensajes (versión preliminar)
 
-Cuando se resuelven los mensajes, se quitan de la vista de pestaña **Pendiente** y se muestran en la vista de pestaña **Resuelto** . Las acciones de investigación y corrección no están disponibles para los mensajes en la vista *Resuelta* . Sin embargo, puede haber instancias en las que tenga que tomar medidas adicionales en un mensaje que se resolvió por error o que necesita una investigación posterior después de la resolución inicial. Puede usar la característica de comando unresolve para mover uno o varios mensajes de la vista *Resuelto* a la vista *Pendiente* .
+Cuando se resuelven los mensajes, se quitan de la vista de pestaña **Pendiente** y se muestran en la pestaña **Resuelto** . Las acciones de investigación y corrección no están disponibles para los mensajes en la vista *Resuelta* . Sin embargo, puede haber instancias en las que tenga que tomar medidas adicionales en un mensaje que se resolvió por error o que necesita una investigación posterior después de la resolución inicial. Puede usar la característica de comando unresolve para mover uno o varios mensajes de la vista *Resuelto* a la vista *Pendiente* .
 
-Para anular la resescala de los mensajes, siga estos pasos:
+Siga estos pasos para anular la resescalar los mensajes:
 
 1. Inicie sesión en el [portal de cumplimiento Microsoft Purview](https://compliance.microsoft.com) con las credenciales de un usuario asignado a los grupos de roles *Analistas de cumplimiento de comunicaciones* o *Investigadores de cumplimiento de comunicaciones* de su organización de Microsoft 365.
 2. En el portal de cumplimiento Microsoft Purview, vaya a **Cumplimiento de comunicaciones**.

@@ -10,6 +10,7 @@ ms.topic: article
 ms.service: microsoft-365-business
 ms.localizationpriority: medium
 ms.collection:
+- Tier2
 - scotvorg
 - M365-subscription-management
 - Adm_O365
@@ -25,12 +26,12 @@ search.appverid:
 - MOE150
 ms.assetid: 70a62f09-45ea-4968-8482-43cddfb8cc01
 description: Obtenga información sobre cómo personalizar, organizar y administrar el sitio de grupo de SharePoint con bibliotecas de documentos, listas y centros.
-ms.openlocfilehash: e253881009df6fb6fb8ee713da1688a84b585bf4
-ms.sourcegitcommit: 0b7070ec119e00e0dafe030bbfbef0ae5c9afa19
+ms.openlocfilehash: 4184dabe0eac31d274f5b4cb66affb48622d09a7
+ms.sourcegitcommit: 181a0aff54842dcbafd834647c6e9ee47304d10f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/29/2022
-ms.locfileid: "68172937"
+ms.lasthandoff: 10/27/2022
+ms.locfileid: "68721150"
 ---
 # <a name="customize-your-team-site-for-file-storage-and-sharing"></a>Personalización del sitio de equipo para el almacenamiento y el uso compartido de archivos
 

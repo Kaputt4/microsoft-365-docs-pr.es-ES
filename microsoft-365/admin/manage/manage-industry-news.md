@@ -10,6 +10,7 @@ ms.topic: article
 ms.service: microsoft-365-business
 ms.localizationpriority: medium
 ms.collection:
+- Tier2
 - scotvorg
 - M365-subscription-management
 - Adm_TOC
@@ -19,12 +20,12 @@ ms.custom:
 search.appverid:
 - MET150
 description: Proporcione a los usuarios titulares de noticias actualizados sobre el sector y la información de su organización, use el servicio de noticias para habilitar una fuente de noticias personalizada para su organización.
-ms.openlocfilehash: 40f0ee8ef17d7724a63c376267b49ad09a414234
-ms.sourcegitcommit: 0b7070ec119e00e0dafe030bbfbef0ae5c9afa19
+ms.openlocfilehash: 70afee4f30444445867815dad002f8b01feda1e2
+ms.sourcegitcommit: 181a0aff54842dcbafd834647c6e9ee47304d10f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/29/2022
-ms.locfileid: "68206793"
+ms.lasthandoff: 10/27/2022
+ms.locfileid: "68727353"
 ---
 # <a name="manage-industry-news"></a>Administración de noticias del sector
 
