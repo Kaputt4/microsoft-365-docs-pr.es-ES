@@ -10,6 +10,7 @@ ms.topic: article
 ms.service: microsoft-365-business
 ms.localizationpriority: medium
 ms.collection:
+- Tier2
 - scotvorg
 - highpri
 - M365-subscription-management
@@ -24,12 +25,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Aprenda como pasar sus datos y usuarios de Google Workspace a Microsoft 365 empresarial.
-ms.openlocfilehash: dbb43965bb0915851c28f080e07db2e8998b7ceb
-ms.sourcegitcommit: 0b7070ec119e00e0dafe030bbfbef0ae5c9afa19
+ms.openlocfilehash: 27048b587f9e9a310624290bd7b4a363ea763ba6
+ms.sourcegitcommit: 181a0aff54842dcbafd834647c6e9ee47304d10f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/29/2022
-ms.locfileid: "68199865"
+ms.lasthandoff: 10/27/2022
+ms.locfileid: "68729707"
 ---
 # <a name="switch-from-google-workspace---overview"></a>Cambio de Google Workspace - Información general
 

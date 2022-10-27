@@ -11,6 +11,7 @@ ms.topic: article
 ms.service: microsoft-365-business
 ms.localizationpriority: medium
 ms.collection:
+- Tier1
 - scotvorg
 - M365-subscription-management
 - Adm_O365
@@ -22,12 +23,12 @@ ms.custom:
 search.appverid: MET150
 description: Obtenga información sobre cómo actualizar las direcciones de facturación o la dirección de correo electrónico que se usa para recibir notificaciones de facturación de Microsoft 365 para empresas.
 ms.date: 01/24/2022
-ms.openlocfilehash: 6a15d5e1b2f13f4cf7dd8f9757ff1616d9b4bc9b
-ms.sourcegitcommit: 0b7070ec119e00e0dafe030bbfbef0ae5c9afa19
+ms.openlocfilehash: 8507bc3fdd56b2a0587a73be54b4fccdf114665e
+ms.sourcegitcommit: 181a0aff54842dcbafd834647c6e9ee47304d10f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/29/2022
-ms.locfileid: "68206265"
+ms.lasthandoff: 10/27/2022
+ms.locfileid: "68729619"
 ---
 # <a name="change-your-microsoft-365-for-business-billing-addresses"></a>Cambio de las direcciones de facturación de Microsoft 365 para empresas
 
