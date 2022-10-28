@@ -20,12 +20,12 @@ ms.collection:
 ms.topic: article
 ms.subservice: mde
 ms.date: 10/21/2022
-ms.openlocfilehash: b8f8f33d0fc47c395d19e67286eb43f7b9552dbe
-ms.sourcegitcommit: 181a0aff54842dcbafd834647c6e9ee47304d10f
+ms.openlocfilehash: cb04dc9817de63c3966c3168743d36fe36f66210
+ms.sourcegitcommit: a20d30f4e5027f90d8ea4cde95d1d5bacfdd2b5e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/27/2022
-ms.locfileid: "68734438"
+ms.lasthandoff: 10/28/2022
+ms.locfileid: "68770401"
 ---
 # <a name="microsoft-defender-for-endpoint---demonstration-scenarios"></a>Microsoft Defender para punto de conexión: escenarios de demostración
 
@@ -62,7 +62,8 @@ En la tabla siguiente se enumeran alfabéticamente las demostraciones disponible
 ## <a name="see-also"></a>Vea también
 
 [Protección contra superficie expuesta a ataques \( Introducción a ASR\)](overview-attack-surface-reduction.md): Prueba de reglas 
- de[reducción de superficie expuesta a ataques Introducción](attack-surface-reduction-rules-deployment-test.md)[a la protección de nueva generación \(de NGP\)](next-generation-protection.md) [Introducción a la detección de puntos de conexión y respuesta \(de EDR\)](overview-endpoint-detection-response.md) [Microsoft Defender para punto de conexión blog de seguridad](https://www.microsoft.com/security/blog/microsoft-defender-for-endpoint/)
+ de[reducción de superficie expuesta a ataques Introducción](attack-surface-reduction-rules-deployment-test.md)[a la protección de nueva generación \(de NGP\)](next-generation-protection.md) [Introducción a la detección de puntos de conexión y respuesta \(de EDR\)](overview-endpoint-detection-response.md) [Microsoft Defender para punto de conexión blog de seguridad](https://techcommunity.microsoft.com/t5/microsoft-defender-for-endpoint/bg-p/MicrosoftDefenderATPBlog)
+
 
 
 

@@ -1,7 +1,7 @@
 ---
 title: Implementación de actualizaciones para Microsoft Defender para punto de conexión en Mac
 description: Controle las actualizaciones de Microsoft Defender para punto de conexión en Mac en entornos empresariales.
-keywords: microsoft, defender, Microsoft Defender para punto de conexión, mac, actualizaciones, implementar
+keywords: microsoft, defender, Microsoft Defender para punto de conexión, mac, updates, deploy, catalina, big sur, monterey, ventura, mde for mac
 ms.service: microsoft-365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
@@ -17,12 +17,12 @@ ms.collection:
 ms.topic: conceptual
 ms.subservice: mde
 search.appverid: met150
-ms.openlocfilehash: 8b717b3a408273879d84714def14984fdeba6e97
-ms.sourcegitcommit: 4e42bafee965446f44f7f57d1defed2b9b24fce8
+ms.openlocfilehash: 49eaa79e737b9f29202d3cb8e77ff67df55685fe
+ms.sourcegitcommit: a20d30f4e5027f90d8ea4cde95d1d5bacfdd2b5e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/30/2022
-ms.locfileid: "68223098"
+ms.lasthandoff: 10/28/2022
+ms.locfileid: "68768575"
 ---
 # <a name="deploy-updates-for-microsoft-defender-for-endpoint-on-macos"></a>Implementación de actualizaciones para Microsoft Defender para punto de conexión en macOS
 

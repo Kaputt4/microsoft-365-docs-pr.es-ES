@@ -1,7 +1,7 @@
 ---
 title: Establecer preferencias para Microsoft Defender para punto de conexión en Mac
 description: Configure Microsoft Defender para punto de conexión en Mac en organizaciones empresariales.
-keywords: microsoft, defender, Microsoft Defender para punto de conexión, mac, management, preferences, enterprise, intune, jamf, macos, catalina, mojave, high sierra
+keywords: microsoft, defender, Microsoft Defender para punto de conexión, mac, management, preferences, enterprise, intune, jamf, macos, catalina, big sur, monterey, ventura, mde for mac
 ms.service: microsoft-365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
@@ -17,12 +17,12 @@ ms.collection:
 ms.topic: conceptual
 ms.subservice: mde
 search.appverid: met150
-ms.openlocfilehash: 972240c3683b469587d82ec5f729b35d79a40c0c
-ms.sourcegitcommit: 1f4c51d022d1cfb6c194bf0f0af9c2841c781d68
+ms.openlocfilehash: cc9b76c30bbf44fb19308790bb61a30145c8774b
+ms.sourcegitcommit: a20d30f4e5027f90d8ea4cde95d1d5bacfdd2b5e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/14/2022
-ms.locfileid: "68573460"
+ms.lasthandoff: 10/28/2022
+ms.locfileid: "68767850"
 ---
 # <a name="set-preferences-for-microsoft-defender-for-endpoint-on-macos"></a>Establecer las preferencias para Microsoft Defender para punto de conexión en macOS
 

@@ -23,12 +23,12 @@ ms.collection:
 search.appverid:
 - MET150
 - MOE150
-ms.openlocfilehash: 004857714ff0e30a31ce7cf6f6f0df9c22a70e68
-ms.sourcegitcommit: 181a0aff54842dcbafd834647c6e9ee47304d10f
+ms.openlocfilehash: 3ce5d5498deb1029b00125dc510e0c67c23d8970
+ms.sourcegitcommit: a20d30f4e5027f90d8ea4cde95d1d5bacfdd2b5e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/27/2022
-ms.locfileid: "68720864"
+ms.lasthandoff: 10/28/2022
+ms.locfileid: "68768179"
 ---
 # <a name="learn-about-communication-compliance"></a>Obtener más información sobre el cumplimiento de las comunicaciones
 

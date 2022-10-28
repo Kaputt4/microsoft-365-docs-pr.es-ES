@@ -17,12 +17,12 @@ ms.collection:
 ms.topic: reference
 ms.subservice: mde
 search.appverid: met150
-ms.openlocfilehash: 5cac34b5ee0e6cc0d40755aef920040d621c49af
-ms.sourcegitcommit: b9282493c371d59c2e583b9803825096499b5e2c
+ms.openlocfilehash: a4952a1a7e9fd9559722aa53cc366906f3aeedcc
+ms.sourcegitcommit: a20d30f4e5027f90d8ea4cde95d1d5bacfdd2b5e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/29/2022
-ms.locfileid: "68157488"
+ms.lasthandoff: 10/28/2022
+ms.locfileid: "68770005"
 ---
 # <a name="whats-new-in-microsoft-defender-for-endpoint-on-android"></a>Novedades de Microsoft Defender para punto de conexión en Android
 
@@ -40,7 +40,7 @@ ms.locfileid: "68157488"
 > Si los usuarios no pueden acceder a play store, la aplicación se puede actualizar a través del portal de empresa. 
 
 ## <a name="microsoft-defender-for-endpoint-on-company-owned-personally-enabled-devices"></a>Microsoft Defender para punto de conexión en dispositivos habilitados personalmente para la empresa
-MDE ya está disponible con carácter general en dispositivos AE COPE. Las empresas pueden incorporar dispositivos en modo COPE e insertar MDE en los dispositivos del usuario a través del [Centro de microsoft Endpoint Manager Administración](https://endpoint.microsoft.com). Con esta compatibilidad, los dispositivos Android Enterprise COPE obtendrán todas las funcionalidades de nuestra oferta en Android, incluida la suplantación de identidad (phishing) y la protección web, el análisis de malware, la protección de red (versión preliminar) y la prevención de infracciones adicionales a través de la integración con Microsoft Endpoint Manager y el acceso condicional. Lea el anuncio [aquí](https://techcommunity.microsoft.com/t5/microsoft-defender-for-endpoint/microsoft-defender-for-endpoint-is-now-available-on-android/ba-p/3626100).
+MDE ya está disponible con carácter general en dispositivos AE COPE. Las empresas pueden incorporar dispositivos en modo COPE e insertar MDE en los dispositivos del usuario a través del [Centro de Administración de Microsoft Endpoint Manager](https://endpoint.microsoft.com). Con esta compatibilidad, los dispositivos Android Enterprise COPE obtendrán todas las funcionalidades de nuestra oferta en Android, incluida la suplantación de identidad (phishing) y la protección web, el análisis de malware, la protección de red (versión preliminar) y la prevención de infracciones adicionales a través de la integración con Microsoft Endpoint Manager y el acceso condicional. Lea el anuncio [aquí](https://techcommunity.microsoft.com/t5/microsoft-defender-for-endpoint/microsoft-defender-for-endpoint-is-now-available-on-android/ba-p/3626100).
 
 ## <a name="privacy-controls"></a>Controles de privacidad
 
@@ -55,9 +55,9 @@ Microsoft Defender para punto de conexión en Android habilita **permisos opcion
 Microsoft Defender para punto de conexión ahora se admite en el perfil personal de Android Enterprise (solo BYOD) con todas las características clave, como el análisis de malware, la protección contra vínculos de phishing, la protección de red y la administración de vulnerabilidades. Esta compatibilidad se combina con [controles de privacidad](/microsoft-365/security/defender-endpoint/android-configure#privacy-controls) para garantizar la privacidad del usuario en el perfil personal. Para obtener más información, lea el [anuncio](https://techcommunity.microsoft.com/t5/microsoft-defender-for-endpoint/announcing-the-public-preview-of-defender-for-endpoint-personal/ba-p/3370979) y la [guía de implementación](/microsoft-365/security/defender-endpoint/android-intune#set-up-microsoft-defender-in-personal-profile-on-android-enterprise-in-byod-mode).
 
 ## <a name="network-protection"></a>Protección de red
-La protección de red en Microsoft Defender para punto de conexión está ahora en versión preliminar pública. La protección de red proporciona protección contra amenazas no autorizadas Wi-Fi relacionadas, hardware no autorizado como dispositivos de piña y notifica al usuario si se detecta una amenaza relacionada. Los usuarios también verán una experiencia guiada para conectarse a redes seguras y cambiar las redes cuando estén conectadas a una conexión no segura.
+Protección de red en Microsoft Defender para punto de conexión ya está disponible. La protección de red proporciona protección contra amenazas no autorizadas Wi-Fi relacionadas, hardware no autorizado como dispositivos de piña y notifica al usuario si se detecta una amenaza relacionada. Los usuarios también verán una experiencia guiada para conectarse a redes seguras y cambiar las redes cuando estén conectadas a una conexión no segura.
 
-Incluye varios controles de administración para ofrecer flexibilidad, como la capacidad de configurar la característica desde el Centro de microsoft Endpoint Manager Administración. Los administradores también pueden habilitar los controles de privacidad para configurar los datos enviados por Defender para punto de conexión desde dispositivos Android. 
+Incluye varios controles de administración para ofrecer flexibilidad, como la capacidad de configurar la característica desde el centro de Administración de Microsoft Endpoint Manager. Los administradores también pueden habilitar los controles de privacidad para configurar los datos enviados por Defender para punto de conexión desde dispositivos Android. 
 
 Si está interesado en participar en esta versión preliminar pública, comparta su identificador de inquilino con nosotros en networkprotection@microsoft.com. Para obtener más información, consulte [Protección de red](/microsoft-365/security/defender-endpoint/android-configure).
 

@@ -11,12 +11,12 @@ ms.collection:
 - Tier1
 - scotvorg
 description: Obtenga un informe periódico sobre cómo los usuarios de su organización usan los servicios de Microsoft 365 y explore cada gráfico para obtener más información.
-ms.openlocfilehash: 2489cbfe16ff82fa4e58340ff8586af21ff64a0c
-ms.sourcegitcommit: 181a0aff54842dcbafd834647c6e9ee47304d10f
+ms.openlocfilehash: 6f560628bc2ce602dca03dda4935d0071e00e2da
+ms.sourcegitcommit: a20d30f4e5027f90d8ea4cde95d1d5bacfdd2b5e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/27/2022
-ms.locfileid: "68725812"
+ms.lasthandoff: 10/28/2022
+ms.locfileid: "68769477"
 ---
 # <a name="microsoft-365-experience-insights-dashboard"></a>Panel de información sobre la experiencia de Microsoft 365
 
@@ -35,7 +35,7 @@ Si es miembro del rol lector de informes, una vez que inicie sesión en el centr
 
 :::image type="content" source="../../media/experience-insights-dashboard2.png" alt-text="Captura de pantalla: imagen en la que se muestra información general sobre el panel de conclusiones de la experiencia":::
 
-Para más información, consulte [Acerca de los roles de administrador](../add-users/about-admin-roles.md) y [Asignación de roles de administrador](../add-users/assign-admin-roles.md).
+Para obtener más información, vea[sobre los roles de administrador de](../add-users/about-admin-roles.md) y [asignar roles de administrador](../add-users/assign-admin-roles.md).
 
 ## <a name="apps-and-services-data"></a>Datos de aplicaciones y servicios
 

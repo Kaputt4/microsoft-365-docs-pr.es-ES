@@ -1,7 +1,7 @@
 ---
 title: Configuración de grupos de dispositivos en Jamf Pro
 description: Aprenda a configurar grupos de dispositivos en Jamf Pro para Microsoft Defender para punto de conexión en macOS
-keywords: device, group, microsoft, defender, Microsoft Defender para punto de conexión, mac, installation, deploy, uninstallation, intune, jamfpro, macos, catalina, mojave, high sierra
+keywords: device, group, microsoft, defender, Microsoft Defender para punto de conexión, mac, installation, deploy, uninstallation, intune, jamfpro, macos, catalina, big sur, monterey, ventura, mde for mac
 ms.service: microsoft-365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
@@ -17,12 +17,12 @@ ms.collection:
 ms.topic: conceptual
 ms.subservice: mde
 search.appverid: met150
-ms.openlocfilehash: ce8e999af9149f9b093420e8704162e11a526501
-ms.sourcegitcommit: 4e42bafee965446f44f7f57d1defed2b9b24fce8
+ms.openlocfilehash: 16247ae629423fd8dd2028455c6d45c894eca77f
+ms.sourcegitcommit: a20d30f4e5027f90d8ea4cde95d1d5bacfdd2b5e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/30/2022
-ms.locfileid: "68229072"
+ms.lasthandoff: 10/28/2022
+ms.locfileid: "68767871"
 ---
 # <a name="set-up-microsoft-defender-for-endpoint-on-macos-device-groups-in-jamf-pro"></a>Configuración de Microsoft Defender para punto de conexión en grupos de dispositivos macOS en Jamf Pro
 

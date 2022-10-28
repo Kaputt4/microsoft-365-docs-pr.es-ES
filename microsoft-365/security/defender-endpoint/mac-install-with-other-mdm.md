@@ -1,7 +1,7 @@
 ---
 title: Implementación con un sistema de Administración de dispositivos móvil (MDM) diferente para Microsoft Defender para punto de conexión en Mac
 description: Instale Microsoft Defender para punto de conexión en Mac en otras soluciones de administración.
-keywords: microsoft, defender, Microsoft Defender para punto de conexión, mac, installation, deploy, macos, catalina, mojave, high sierra
+keywords: microsoft, defender, Microsoft Defender para punto de conexión, mac, installation, deploy, macos, catalina, big sur, monterey, ventura, mde o mac
 ms.service: microsoft-365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
@@ -17,12 +17,12 @@ ms.collection:
 ms.topic: conceptual
 ms.subservice: mde
 search.appverid: met150
-ms.openlocfilehash: 6c72612efcba81b57a55566816c164f001357943
-ms.sourcegitcommit: 4e42bafee965446f44f7f57d1defed2b9b24fce8
+ms.openlocfilehash: 93e22b11bba51b1b1ac33306c0a01c375ed09d27
+ms.sourcegitcommit: a20d30f4e5027f90d8ea4cde95d1d5bacfdd2b5e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/30/2022
-ms.locfileid: "68227224"
+ms.lasthandoff: 10/28/2022
+ms.locfileid: "68768091"
 ---
 # <a name="deployment-with-a-different-mobile-device-management-mdm-system-for-microsoft-defender-for-endpoint-on-macos"></a>Implementación con un sistema de mobile Administración de dispositivos (MDM) diferente para Microsoft Defender para punto de conexión en macOS
 

@@ -20,17 +20,17 @@ ms.custom: admindeeplinkCOMPLIANCE
 search.appverid:
 - MET150
 - MOE150
-ms.openlocfilehash: 3f726431e7dea7cceeab67cc977b208690f7f9ea
-ms.sourcegitcommit: 181a0aff54842dcbafd834647c6e9ee47304d10f
+ms.openlocfilehash: e2f59515613afb189a323ed251cd6e3f94867485
+ms.sourcegitcommit: a20d30f4e5027f90d8ea4cde95d1d5bacfdd2b5e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/27/2022
-ms.locfileid: "68734905"
+ms.lasthandoff: 10/28/2022
+ms.locfileid: "68769455"
 ---
 # <a name="investigate-and-remediate-communication-compliance-alerts"></a>Investigar y corregir las alertas de cumplimiento de las comunicaciones
 
->[!IMPORTANT]
->Cumplimiento de comunicaciones de Microsoft Purview proporciona las herramientas para ayudar a las organizaciones a detectar infracciones de cumplimiento normativo (por ejemplo, SEC o FINRA), como información confidencial o confidencial, hostigamiento o amenazante del lenguaje y uso compartido de contenido para adultos. Creados con privacidad por diseño, los nombres de usuario se seudonimizan de forma predeterminada, los controles de acceso basados en roles están integrados, los investigadores son admitidos por un administrador y los registros de auditoría están en su lugar para ayudar a garantizar la privacidad del nivel de usuario.
+> [!IMPORTANT]
+> Cumplimiento de comunicaciones de Microsoft Purview proporciona las herramientas para ayudar a las organizaciones a detectar infracciones de cumplimiento normativo (por ejemplo, SEC o FINRA), como información confidencial o confidencial, hostigamiento o amenazante del lenguaje y uso compartido de contenido para adultos. Creados con privacidad por diseño, los nombres de usuario se seudonimizan de forma predeterminada, los controles de acceso basados en roles están integrados, los investigadores son admitidos por un administrador y los registros de auditoría están en su lugar para ayudar a garantizar la privacidad del nivel de usuario.
 
 Después de configurar [las directivas de cumplimiento de comunicaciones](/microsoft-365/compliance/communication-compliance-policies), comenzará a recibir alertas en el [portal de cumplimiento Microsoft Purview](https://compliance.microsoft.com) para los problemas de mensajes que coincidan con las condiciones de la directiva. Para ver y actuar en alertas, los usuarios deben tener asignados los permisos siguientes:
 
@@ -221,10 +221,10 @@ Las plantillas de avisos son plantillas de correo electrónico personalizadas do
 |**Field**|**Required**| **Detalles** |
 |:-----|:-----|:-----|
 |**Nombre de la plantilla** | Sí | El nombre descriptivo de la plantilla de aviso que seleccionará en el flujo de trabajo de notificación durante la corrección, admite caracteres de texto. |
-| **Dirección del remitente** | Sí | Dirección de uno o varios usuarios o grupos que envían el mensaje al usuario con una coincidencia de directiva seleccionada en Active Directory para la suscripción. |
+| **Dirección del remitente** | Yes | Dirección de uno o varios usuarios o grupos que envían el mensaje al usuario con una coincidencia de directiva seleccionada en Active Directory para la suscripción. |
 | **Direcciones CC y BCC** | No | Usuarios o grupos opcionales a los que se va a notificar la coincidencia de directiva, seleccionados en Active Directory para la suscripción. |
-| **Asunto** | Sí | La información que aparece en la línea de asunto del mensaje admite caracteres de texto. |
-| **Cuerpo del mensaje** | Sí | La información que aparece en el cuerpo del mensaje admite valores de texto o HTML. |
+| **Asunto** | Yes | La información que aparece en la línea de asunto del mensaje admite caracteres de texto. |
+| **Cuerpo del mensaje** | Yes | La información que aparece en el cuerpo del mensaje admite valores de texto o HTML. |
 
 ### <a name="html-for-notices"></a>HTML para avisos
 

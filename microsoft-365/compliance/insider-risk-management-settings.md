@@ -19,12 +19,12 @@ ms.collection:
 - m365initiative-compliance
 - highpri
 ms.custom: admindeeplinkCOMPLIANCE
-ms.openlocfilehash: e3c1af1557e92888fb7f121afbc2431b2ab00831
-ms.sourcegitcommit: 181a0aff54842dcbafd834647c6e9ee47304d10f
+ms.openlocfilehash: be05acf1ca9028915a836d95f737e64ee1324f72
+ms.sourcegitcommit: a20d30f4e5027f90d8ea4cde95d1d5bacfdd2b5e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/27/2022
-ms.locfileid: "68728123"
+ms.lasthandoff: 10/28/2022
+ms.locfileid: "68769587"
 ---
 # <a name="get-started-with-insider-risk-management-settings"></a>Introducción a la configuración de administración de riesgos internos
 
@@ -243,9 +243,9 @@ Para cada una de las siguientes configuraciones de dominio, puede escribir hasta
  
 ### <a name="sensitive-info-types-exclusion"></a>Exclusión de tipos de información confidencial
 
-Al excluir los tipos de información confidencial, puede especificar qué tipos se asignan a indicadores y desencadenadores que implican actividades relacionadas con archivos para Endpoint, SharePoint, Teams, OneDrive y Exchange. Para los archivos que contienen los tipos de información confidencial identificados aquí, se puntuarán como riesgo, pero no se mostrarán como actividades relacionadas con el contenido relacionado con los tipos de información confidencial. Para obtener una lista completa, vea [Definiciones de entidades de tipo de información confidencial](sensitive-information-type-entity-definitions.md).
+Los tipos de información confidencial excluidos en la configuración se asignan a indicadores y desencadenadores que implican actividades relacionadas con archivos para Endpoint, SharePoint, Teams, OneDrive y Exchange. Estos tipos se tratarán como tipos de información no confidenciales. Para los archivos que contienen los tipos de información confidencial identificados aquí, se puntuarán como riesgo, pero no se mostrarán como actividades relacionadas con el contenido relacionado con los tipos de información confidencial. Para obtener una lista completa, vea [Definiciones de entidades de tipo de información confidencial](sensitive-information-type-entity-definitions.md).
 
-Puede seleccionar los tipos de información confidencial que se excluirán de la lista de todos los tipos disponibles (integrados y personalizados) disponibles en el inquilino. La administración de riesgos internos excluye varios tipos de información confidencial de forma predeterminada, como el número de enrutamiento de ABA. Puede elegir hasta 100 tipos de información confidencial que se van a excluir.
+Puede seleccionar los tipos de información confidencial que se excluirán de la lista de todos los tipos disponibles (integrados y personalizados) disponibles en el inquilino. La administración de riesgos internos excluye varios tipos de información confidencial de forma predeterminada, como el número de enrutamiento de ABA. Puede elegir hasta 500 tipos de información confidencial que se van a excluir.
 
 > [!NOTE]
 > La lista de exclusión de tipos de información confidencial tiene prioridad sobre la lista de [contenido de prioridad](insider-risk-management-policies.md#prioritize-content-in-policies) .

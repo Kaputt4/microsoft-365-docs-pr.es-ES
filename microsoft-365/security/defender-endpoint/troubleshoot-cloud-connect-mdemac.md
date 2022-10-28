@@ -1,7 +1,7 @@
 ---
 title: Solución de problemas de conectividad en la nube para Microsoft Defender para punto de conexión en macOS
 description: En este tema se describe cómo solucionar problemas de conectividad en la nube para Microsoft Defender para punto de conexión en macOS
-keywords: microsoft, defender, Microsoft Defender para punto de conexión, mac, installation, deploy, uninstallation, intune, jamf, macos, catalina, mojave, high sierra
+keywords: microsoft, defender, Microsoft Defender para punto de conexión, mac, installation, deploy, uninstallation, intune, jamf, macos, catalina, monterey, ventura, bigsur, mde for mac
 ms.service: microsoft-365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
@@ -17,12 +17,12 @@ ms.collection:
 ms.topic: conceptual
 ms.subservice: mde
 search.appverid: met150
-ms.openlocfilehash: 55c3e0376094ace126c775afa9f47f349e0eff90
-ms.sourcegitcommit: 4e42bafee965446f44f7f57d1defed2b9b24fce8
+ms.openlocfilehash: 402f5be6ca2baf62a2cbf7dd1d81f9aa1548b2ad
+ms.sourcegitcommit: a20d30f4e5027f90d8ea4cde95d1d5bacfdd2b5e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/30/2022
-ms.locfileid: "68227710"
+ms.lasthandoff: 10/28/2022
+ms.locfileid: "68769548"
 ---
 # <a name="troubleshoot-cloud-connectivity-issues-for-microsoft-defender-for-endpoint-on-macos"></a>Solución de problemas de conectividad en la nube para Microsoft Defender para punto de conexión en macOS
 

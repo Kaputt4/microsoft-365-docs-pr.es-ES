@@ -19,12 +19,12 @@ ms.collection:
 - m365initiative-compliance
 - highpri
 ms.custom: admindeeplinkCOMPLIANCE
-ms.openlocfilehash: c49a9037b87709858b93fa15e68f4e931f9d7fff
-ms.sourcegitcommit: 181a0aff54842dcbafd834647c6e9ee47304d10f
+ms.openlocfilehash: 391756321722122c699ce4477d9cf495909d8d07
+ms.sourcegitcommit: a20d30f4e5027f90d8ea4cde95d1d5bacfdd2b5e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/27/2022
-ms.locfileid: "68732985"
+ms.lasthandoff: 10/28/2022
+ms.locfileid: "68769125"
 ---
 # <a name="get-started-with-insider-risk-management"></a>Introducción a la administración de riesgos internos
 
@@ -104,9 +104,9 @@ Al trabajar con la administración de riesgos internos, elegirá entre estas opc
 |Información de análisis de acceso|Sí|Sí|Sí|No|No|No|
 |Acceso & investigar alertas|Sí|No|Sí|Sí|No|No|
 |Acceso & investigar casos|Sí|No|Sí|Sí|No|No|
-|Acceso & ver el Explorador de contenido|Sí|No|No|Sí|No|No|
-|Configuración de plantillas de aviso|Yes|No|Sí|Sí|No|No|
-|Ver & exportar registros de auditoría|Yes|No|No|No|Sí|No|
+|Acceso & ver el Explorador de contenido|Yes|No|No|Sí|No|No|
+|Configuración de plantillas de aviso|Sí|No|Sí|Sí|No|No|
+|Ver & exportar registros de auditoría|Sí|No|No|No|Sí|No|
 |Acceso & ver capturas de pruebas forenses|Sí|No|No|Sí|No|No|
 |Creación de una solicitud de captura de pruebas forenses|Sí|Sí|No|No|No|No|
 |Aprobación de solicitudes de captura de pruebas forenses|Sí|No|No|No|No|Sí|
@@ -175,11 +175,11 @@ La administración de riesgos internos admite la importación de datos de usuari
 
 El conector de RR. HH. de Microsoft 365 es necesario cuando se usan las siguientes plantillas de directiva:
 
-- Filtraciones de datos por parte de usuarios inconformes
+- Pérdidas de datos por parte de usuarios de riesgo
 - Robo de datos de usuario de salida
 - Uso indebido de los datos generales de los pacientes
 - Infracciones de la directiva de seguridad por parte de los usuarios que abandonan la organización
-- Infracciones de la directiva de seguridad por parte de usuarios inconformes
+- Infracciones de directivas de seguridad por parte de usuarios de riesgo
 
 Consulte el artículo [Configuración de un conector para importar datos de RR. HH](import-hr-data.md) . para obtener instrucciones paso a paso para configurar el conector de RR. HH. de Microsoft 365 para su organización. Después de configurar el conector de RR. HH., vuelva a estos pasos de configuración.
 
@@ -321,7 +321,7 @@ Las directivas de administración de riesgos internos incluyen usuarios asignado
 
     Si ha seleccionado otras plantillas de directiva, no se admiten eventos desencadenadores personalizados. Los eventos de desencadenamiento de directivas integrados se aplican y seguirá en el paso 23 sin definir atributos de directiva.
 
-14. Si ha seleccionado las *fugas de datos por parte de usuarios descontentos* o *infracciones de directivas de seguridad por plantillas de usuarios descontentos* , verá opciones en la página **Desencadenadores de esta directiva** para la integración con eventos de conector de datos de RR. HH. y cumplimiento de comunicaciones. Tiene la opción de asignar puntuaciones de riesgo cuando los usuarios envíen mensajes que contengan un lenguaje potencialmente amenazante, hostigador o discriminatorio, o para que los usuarios entren en el ámbito de la directiva después de que se notifiquen eventos de descontento en el sistema de RR. HH. Si selecciona la opción **Disgruntlement triggers from communication compliance (preview),** puede aceptar la directiva de cumplimiento de comunicaciones predeterminada (creada automáticamente), elegir un ámbito de directiva creado anteriormente para este desencadenador o crear otra directiva con ámbito. Si selecciona **eventos del conector de datos de RR. HH**., debe configurar un conector de datos de RR. HH. para su organización.
+14. Si ha seleccionado las *fugas de datos por parte de usuarios de riesgo* o *infracciones de directivas de seguridad por plantillas de usuarios de riesgo* , verá las opciones en la página **Desencadenadores de esta directiva** para la integración con el cumplimiento de la comunicación y los eventos del conector de datos de RR. HH. Tiene la opción de asignar puntuaciones de riesgo cuando los usuarios envíen mensajes que contengan un lenguaje potencialmente amenazante, hostigador o discriminatorio, o para que los usuarios entren en el ámbito de la directiva después de que se notifiquen eventos de usuario de riesgo en el sistema de RR. HH. Si selecciona la opción **Desencadenadores de riesgo del cumplimiento de comunicaciones (versión preliminar),** puede aceptar la directiva de cumplimiento de comunicaciones predeterminada (creada automáticamente), elegir un ámbito de directiva creado anteriormente para este desencadenador o crear otra directiva con ámbito. Si selecciona **eventos del conector de datos de RR. HH**., debe configurar un conector de datos de RR. HH. para su organización.
 15. Seleccione **Siguiente** para continuar.
 16. Si ha seleccionado las plantillas *General data leaks* or *Data leaks by priority users (Pérdidas de datos generales o pérdidas de datos por parte de usuarios prioritarios* ) y ha seleccionado **el usuario realiza una actividad de filtración e indicadores asociados**, puede elegir umbrales personalizados o predeterminados para el indicador que desencadena los eventos que ha seleccionado. Elija **Usar umbrales predeterminados (recomendados)** o **Usar umbrales personalizados para los eventos desencadenantes**.
 17. Seleccione **Siguiente** para continuar.

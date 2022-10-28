@@ -6,8 +6,8 @@ ms.service: microsoft-365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
-ms.author: v-jweston
-author: jweston-1
+ms.author: dansimp
+author: dansimp
 ms.localizationpriority: medium
 ms.date: 09/01/2022
 manager: dansimp
@@ -19,13 +19,15 @@ ms.topic: conceptual
 ms.subservice: mde
 ms.custom: api
 search.appverid: met150
-ms.openlocfilehash: 6742c4518cece4b9f8bb920a4411accf973cad93
-ms.sourcegitcommit: 0d8fb571024f134d7480fe14cffc5e31a687d356
+ms.openlocfilehash: 76e200022f01836195d82d46f159d35701f77a29
+ms.sourcegitcommit: a20d30f4e5027f90d8ea4cde95d1d5bacfdd2b5e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/20/2022
-ms.locfileid: "68643127"
+ms.lasthandoff: 10/28/2022
+ms.locfileid: "68770335"
 ---
+<!-- v-jweston/jweston-1 is scheduled to resume authorship Apr/May 2023.-->
+
 # <a name="export-device-antivirus-health-report"></a>Exportar informe de estado del antivirus del dispositivo
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
@@ -87,9 +89,9 @@ Esta API recupera una lista de Microsoft Defender detalles de estado del antivir
 
 #### <a name="odata-supported-operators"></a>Operadores compatibles con OData
 
-- ```$filter``` on: ```machineId```, ```computerDnsName```, , ```osKind```, ```osPlatform```, ```osVersion```, ```avMode```, ```avEngineVersion``````avSignatureVersion```, , ```avPlatformVersion```, ```quickScanResult```, , ```quickScanError```, ```fullScanResult```, ```fullScanError``````avIsSignatureUpToDate```, ```avIsEngineUpToDate```, , , ```avIsPlatformUpToDate``````rbacGroupId```
-- ```$top``` con un valor máximo de 10 000.
-- ```$skip```.
+- `$filter`on: `machineId`, `computerDnsName`, , `osKind`, `osPlatform`, `osVersion`, `avMode`, `avEngineVersion``avSignatureVersion`, , `avPlatformVersion`, `quickScanResult`, , `quickScanError`, `fullScanResult`, `fullScanError``avIsSignatureUpToDate`, `avIsEngineUpToDate`, , , `avIsPlatformUpToDate``rbacGroupId`
+- `$top` con un valor máximo de 10 000.
+- `$skip`
 
 ### <a name="12-permissions"></a>1.2 Permisos
 
@@ -103,14 +105,14 @@ Se requiere uno de los permisos siguientes para llamar a esta API. Para obtener 
 ### <a name="13-url-http-request"></a>1.3 URL (solicitud HTTP)
 
 ```http
-URL: GET: /api/deviceavinfo
+URL: GET: /api/deviceavinfo
 ```
 
 #### <a name="131-request-headers"></a>1.3.1 Encabezados de solicitud
 
 | Nombre | Tipo | Descripción |
 |:---|:---|:---|
-| Authorization | Cadena | Portador {token}.Necesario. |
+| Authorization | Cadena | Portador {token}. Necesario. |
 
 #### <a name="132-request-body"></a>1.3.2 Cuerpo de la solicitud
 
@@ -123,13 +125,13 @@ Si se ejecuta correctamente, este método devuelve 200 OK con una lista de detal
 ### <a name="14-parameters"></a>1.4 Parámetros
 
 - El tamaño de página predeterminado es 20
-- Vea ejemplos en [consultas de OData con Microsoft Defender para punto de conexión](exposed-apis-odata-samples.md).
+- Vea ejemplos en [consultas de OData con Microsoft Defender para punto de conexión](exposed-apis-odata-samples.md).
 
 ### <a name="15-properties"></a>1.5 Propiedades
 
 Consulte: [1.2 Exportación de propiedades de API de detalles de estado del antivirus de dispositivo (respuesta JSON)](device-health-api-methods-properties.md#12-export-device-antivirus-health-details-api-properties-json-response)
 
-Admite [consultas de OData V4](https://www.odata.org/documentation/).
+Admite [consultas de OData V4](https://www.odata.org/documentation/).
 
 ### <a name="16-example"></a>Ejemplo 1.6
 
@@ -138,7 +140,7 @@ Admite [consultas de OData V4](https://www.odata.org/documentation/).
 Esta es una solicitud de ejemplo:
 
 ```http
-GET https://api.securitycenter.microsoft.com/api/deviceavinfo 
+GET https://api.securitycenter.microsoft.com/api/deviceavinfo
 ```
 
 #### <a name="response-example"></a>Ejemplo de respuesta
@@ -146,73 +148,73 @@ GET https://api.securitycenter.microsoft.com/api/deviceavinfo
 Esta es una respuesta de ejemplo:
 
 ```json
-{ 
+{
 
-    @odata.context: "https://api.securitycenter.microsoft.com/api/$metadata#DeviceAvInfo", 
+    @odata.context: "https://api.securitycenter.microsoft.com/api/$metadata#DeviceAvInfo",
 
-"value": [{ 
+"value": [{
 
-            "id": "Sample Guid", 
+            "id": "Sample Guid",
 
-            "machineId": "Sample Machine Guid", 
+            "machineId": "Sample Machine Guid",
 
-            "computerDnsName": "appblockstg1", 
+            "computerDnsName": "appblockstg1",
 
-            "osKind": "windows", 
+            "osKind": "windows",
 
-            "osPlatform": "Windows10", 
+            "osPlatform": "Windows10",
 
-            "osVersion": "10.0.19044.1865", 
+            "osVersion": "10.0.19044.1865",
 
-            "avMode": "0", 
+            "avMode": "0",
 
-            "avSignatureVersion": "1.371.1279.0", 
+            "avSignatureVersion": "1.371.1279.0",
 
-            "avEngineVersion": "1.1.19428.0", 
+            "avEngineVersion": "1.1.19428.0",
 
-            "avPlatformVersion": "4.18.2206.108", 
+            "avPlatformVersion": "4.18.2206.108",
 
-            "lastSeenTime": "2022-08-02T19:40:45Z", 
+            "lastSeenTime": "2022-08-02T19:40:45Z",
 
-            "quickScanResult": "Completed", 
+            "quickScanResult": "Completed",
 
-            "quickScanError": "", 
+            "quickScanError": "",
 
-            "quickScanTime": "2022-08-02T18:40:15.882Z", 
+            "quickScanTime": "2022-08-02T18:40:15.882Z",
 
-            "fullScanResult": "", 
+            "fullScanResult": "",
 
-            "fullScanError": "", 
+            "fullScanError": "",
 
-            "fullScanTime": null, 
+            "fullScanTime": null,
 
-            "dataRefreshTimestamp": "2022-08-02T21:16:23Z", 
+            "dataRefreshTimestamp": "2022-08-02T21:16:23Z",
 
-            "avEngineUpdateTime": "2022-08-02T00:03:39Z", 
+            "avEngineUpdateTime": "2022-08-02T00:03:39Z",
 
-            "avSignatureUpdateTime": "2022-08-02T00:03:39Z", 
+            "avSignatureUpdateTime": "2022-08-02T00:03:39Z",
 
-            "avPlatformUpdateTime": "2022-06-20T16:59:35Z", 
+            "avPlatformUpdateTime": "2022-06-20T16:59:35Z",
 
-            "avIsSignatureUpToDate": "True", 
+            "avIsSignatureUpToDate": "True",
 
-            "avIsEngineUpToDate": "True", 
+            "avIsEngineUpToDate": "True",
 
-            "avIsPlatformUpToDate": "True", 
+            "avIsPlatformUpToDate": "True",
 
-            "avSignaturePublishTime": "2022-08-02T00:03:39Z", 
+            "avSignaturePublishTime": "2022-08-02T00:03:39Z",
 
-            "rbacGroupName": "TVM1", 
+            "rbacGroupName": "TVM1",
 
-            "rbacGroupId": 4415 
+            "rbacGroupId": 4415
 
-        }, 
+        },
 
-        ... 
+        ...
 
-     ] 
+     ]
 
-} 
+}
 ```
 
 ## <a name="2-export-health-reporting-via-files"></a>2 Exportar informes de estado (a través de archivos)
@@ -241,7 +243,7 @@ Se requiere uno de los permisos siguientes para llamar a esta API.
 
 | Tipo de permiso | Permiso | Nombre para mostrar del permiso |
 |:---|:---|:---|
-| Application | Vulnerability.Read.All | "Leer la información de vulnerabilidad de "Administración de amenazas y vulnerabilidades""  |
+| Application | Vulnerability.Read.All | "Leer la información de vulnerabilidad de "Administración de amenazas y vulnerabilidades"" |
 | Delegado (cuenta profesional o educativa) | Vulnerability.Read | "Leer la información de vulnerabilidad de "Administración de amenazas y vulnerabilidades"" |
 
 Para obtener más información, incluido cómo elegir permisos, consulte [Uso de Microsoft Defender para punto de conexión API para obtener más información](apis-intro.md).
@@ -249,12 +251,12 @@ Para obtener más información, incluido cómo elegir permisos, consulte [Uso de
 ### <a name="23-url"></a>Dirección URL 2.3
 
 ```http
-GET /api/machines/InfoGatheringExport 
+GET /api/machines/InfoGatheringExport
 ```
 
 ### <a name="24-parameters"></a>2.4 Parámetros
 
-- ```sasValidHours```: el número de horas para las que serán válidas las direcciones URL de descarga (máximo 24 horas).
+- `sasValidHours`: el número de horas para las que serán válidas las direcciones URL de descarga (máximo 24 horas).
 
 ### <a name="25-properties"></a>2.5 Propiedades
 
@@ -267,10 +269,10 @@ Consulte: [1.3 Export device antivirus health details API properties via files (
 Esta es una solicitud de ejemplo:
 
 ```HTTP
-GET https://api-us.securitycenter.contoso.com/api/machines/InfoGatheringExport 
+GET https://api-us.securitycenter.contoso.com/api/machines/InfoGatheringExport
 ```
 
-#### <a name="262-response-example"></a>Ejemplo de respuesta 2.6.2  
+#### <a name="262-response-example"></a>Ejemplo de respuesta 2.6.2
 
 Esta es una respuesta de ejemplo:
 
@@ -281,7 +283,7 @@ Esta es una respuesta de ejemplo:
 
    "exportFiles": [
 
-       "https://tvmexportexternalprdeus.blob.core.windows.net/temp-../2022-08-02/2201/InfoGatheringExport/json/OrgId=../_RbacGroupId=../part-00055-12fc2fcd-8f56-4e09-934f-e8efe7ce74a0.c000.json.gz?sv=2020-08-04&st=2022-08-02T22%3A47%3A11Z&se=2022-08-03T01%3A47%3A11Z&sr=b&sp=r&sig=..",               
+       "https://tvmexportexternalprdeus.blob.core.windows.net/temp-../2022-08-02/2201/InfoGatheringExport/json/OrgId=../_RbacGroupId=../part-00055-12fc2fcd-8f56-4e09-934f-e8efe7ce74a0.c000.json.gz?sv=2020-08-04&st=2022-08-02T22%3A47%3A11Z&se=2022-08-03T01%3A47%3A11Z&sr=b&sp=r&sig=..",
 
        "https://tvmexportexternalprdeus.blob.core.windows.net/temp-../2022-08-02/2201/InfoGatheringExport/json/OrgId=../_RbacGroupId=../part-00055-12fc2fcd-8f56-4e09-934f-e8efe7ce74a0.c000.json.gz?sv=2020-08-04&st=2022-08-02T22%3A47%3A11Z&se=2022-08-03T01%3A47%3A11Z&sr=b&sp=r&sig=.."
 

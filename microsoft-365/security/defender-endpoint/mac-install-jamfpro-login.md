@@ -1,7 +1,7 @@
 ---
 title: Iniciar sesión en Jamf Pro
 description: Iniciar sesión en Jamf Pro
-keywords: microsoft, defender, Microsoft Defender para punto de conexión, mac, installation, deploy, uninstallation, intune, jamfpro, macos, catalina, mojave, high sierra
+keywords: microsoft, defender, Microsoft Defender para punto de conexión, mac, installation, deploy, uninstallation, intune, jamfpro, macos, catalina, big sur, monterey, ventura, mde for mac
 ms.service: microsoft-365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
@@ -17,12 +17,12 @@ ms.collection:
 ms.topic: conceptual
 ms.subservice: mde
 search.appverid: met150
-ms.openlocfilehash: 522af18268c6cc8ec369af78946d59c703fa3d65
-ms.sourcegitcommit: 4e42bafee965446f44f7f57d1defed2b9b24fce8
+ms.openlocfilehash: cc6ea39b779135039195982ba6e8894bb7e0da3e
+ms.sourcegitcommit: a20d30f4e5027f90d8ea4cde95d1d5bacfdd2b5e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/30/2022
-ms.locfileid: "68228479"
+ms.lasthandoff: 10/28/2022
+ms.locfileid: "68770467"
 ---
 # <a name="log-in-to-jamf-pro"></a>Iniciar sesión en Jamf Pro
 

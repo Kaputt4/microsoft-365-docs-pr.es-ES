@@ -1,7 +1,7 @@
 ---
 title: Detección y bloqueo de aplicaciones potencialmente no deseadas con Microsoft Defender para punto de conexión en Mac
 description: Detecte y bloquee aplicaciones potencialmente no deseadas (PUA) mediante Microsoft Defender para punto de conexión en macOS.
-keywords: microsoft, defender, Microsoft Defender para punto de conexión, mac, pua, pus
+keywords: microsoft, defender, Microsoft Defender para punto de conexión, mac, pua, pus, catalina, big sur, monterey, ventura, mde for mac
 ms.service: microsoft-365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
@@ -17,12 +17,12 @@ ms.collection:
 ms.topic: conceptual
 ms.subservice: mde
 search.appverid: met150
-ms.openlocfilehash: 7213960a82cdcbb7d2df1ca432ab74987b985e47
-ms.sourcegitcommit: 4e42bafee965446f44f7f57d1defed2b9b24fce8
+ms.openlocfilehash: 6469537490dfafff5aa3ea62874e4293fe810547
+ms.sourcegitcommit: a20d30f4e5027f90d8ea4cde95d1d5bacfdd2b5e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/30/2022
-ms.locfileid: "68227223"
+ms.lasthandoff: 10/28/2022
+ms.locfileid: "68769037"
 ---
 # <a name="detect-and-block-potentially-unwanted-applications-with-microsoft-defender-for-endpoint-on-macos"></a>Detección y bloqueo de aplicaciones potencialmente no deseadas con Microsoft Defender para punto de conexión en macOS
 

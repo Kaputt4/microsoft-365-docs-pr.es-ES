@@ -1,7 +1,7 @@
 ---
 title: Implementación basada en Intune para Microsoft Defender para punto de conexión en Mac
 description: Instale Microsoft Defender para punto de conexión en Mac con Microsoft Intune.
-keywords: microsoft, defender, Microsoft Defender para punto de conexión, mac, installation, deploy, uninstallation, intune, jamf, macos, catalina, mojave, high sierra
+keywords: microsoft, defender, Microsoft Defender para punto de conexión, mac, installation, deploy, uninstallation, intune, jamf, macos, catalina, big sur, monterey, ventura, mde for mac
 ms.service: microsoft-365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
@@ -17,12 +17,12 @@ ms.collection:
 ms.topic: conceptual
 ms.subservice: mde
 search.appverid: met150
-ms.openlocfilehash: b45ebdd1bd6ea920614a50266232261ce8620c37
-ms.sourcegitcommit: 04e517c7e00323b5c33d8ea937115725cf2cfd4d
+ms.openlocfilehash: 2e3cf8581c742553313ce43da6798070b8dd71e1
+ms.sourcegitcommit: a20d30f4e5027f90d8ea4cde95d1d5bacfdd2b5e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/13/2022
-ms.locfileid: "68565694"
+ms.lasthandoff: 10/28/2022
+ms.locfileid: "68768751"
 ---
 # <a name="intune-based-deployment-for-microsoft-defender-for-endpoint-on-macos"></a>Implementación basada en Intune para Microsoft Defender para punto de conexión en macOS
 

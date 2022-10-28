@@ -17,12 +17,12 @@ ms.collection:
 ms.topic: conceptual
 ms.subservice: mde
 search.appverid: met150
-ms.openlocfilehash: 115b1159bb425688fe808652ab7e2b61170f3f8e
-ms.sourcegitcommit: 0d8fb571024f134d7480fe14cffc5e31a687d356
+ms.openlocfilehash: 2f4371ab45d53168aeb0b48f02cb445412d1ab67
+ms.sourcegitcommit: a20d30f4e5027f90d8ea4cde95d1d5bacfdd2b5e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/20/2022
-ms.locfileid: "68637494"
+ms.lasthandoff: 10/28/2022
+ms.locfileid: "68769213"
 ---
 # <a name="protect-macos-security-settings-with-tamper-protection"></a>Protección de la configuración de seguridad de macOS con protección contra alteraciones
 
@@ -78,7 +78,7 @@ Puede configurar el modo de protección contra alteraciones proporcionando el no
 
 ## <a name="before-you-begin"></a>Antes de empezar
 
-- Versiones de macOS compatibles: Monterey (12), Big Sur (11), Catalina (10.15+).
+- Versiones de macOS compatibles: Big Sur (11) o posterior.
 - Versión mínima necesaria para Defender para punto de conexión: 101.70.19.
 
 **Configuración muy recomendada:**

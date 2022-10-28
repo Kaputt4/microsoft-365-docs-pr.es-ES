@@ -24,17 +24,17 @@ ms.custom: admindeeplinkCOMPLIANCE
 search.appverid:
 - MET150
 - MOE150
-ms.openlocfilehash: 650447ae4e910fa0b9ebf22d22859a8fd0bf520d
-ms.sourcegitcommit: 181a0aff54842dcbafd834647c6e9ee47304d10f
+ms.openlocfilehash: c837bee4ccbab7f146c553b97a8d44bff8ae2949
+ms.sourcegitcommit: a20d30f4e5027f90d8ea4cde95d1d5bacfdd2b5e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/27/2022
-ms.locfileid: "68728827"
+ms.lasthandoff: 10/28/2022
+ms.locfileid: "68769983"
 ---
 # <a name="get-started-with-communication-compliance"></a>Introducción al cumplimiento de las comunicaciones
 
->[!IMPORTANT]
->Cumplimiento de comunicaciones de Microsoft Purview proporciona las herramientas para ayudar a las organizaciones a detectar infracciones de cumplimiento normativo (por ejemplo, SEC o FINRA), como información confidencial o confidencial, hostigamiento o amenazante del lenguaje y uso compartido de contenido para adultos. Creados con privacidad por diseño, los nombres de usuario se seudonimizan de forma predeterminada, los controles de acceso basados en roles están integrados, los investigadores son admitidos por un administrador y los registros de auditoría están en su lugar para ayudar a garantizar la privacidad del nivel de usuario.
+> [!IMPORTANT]
+> Cumplimiento de comunicaciones de Microsoft Purview proporciona las herramientas para ayudar a las organizaciones a detectar infracciones de cumplimiento normativo (por ejemplo, SEC o FINRA), como información confidencial o confidencial, hostigamiento o amenazante del lenguaje y uso compartido de contenido para adultos. Creados con privacidad por diseño, los nombres de usuario se seudonimizan de forma predeterminada, los controles de acceso basados en roles están integrados, los investigadores son admitidos por un administrador y los registros de auditoría están en su lugar para ayudar a garantizar la privacidad del nivel de usuario.
 
 Use directivas de cumplimiento de comunicaciones para identificar las comunicaciones de los usuarios para su análisis por parte de revisores internos o externos. Para obtener más información sobre cómo las directivas de cumplimiento de comunicaciones pueden ayudarle a detectar comunicaciones en su organización, consulte [Directivas de cumplimiento de comunicaciones](/microsoft-365/compliance/communication-compliance-policies). Si desea revisar cómo Contoso configuró rápidamente una directiva de cumplimiento de comunicaciones para detectar contenido potencialmente inadecuado en las comunicaciones de Microsoft Teams, Exchange Online y Yammer, consulte este [caso práctico](/microsoft-365/compliance/communication-compliance-case-study).
 
@@ -237,11 +237,11 @@ Para obtener más información sobre cómo configurar Yammer en modo nativo, con
 
 ## <a name="step-5-required-create-a-communication-compliance-policy"></a>Paso 5 (obligatorio): Creación de una directiva de cumplimiento de comunicaciones
 
->[!IMPORTANT]
->No se admite el uso de PowerShell para crear y administrar directivas de cumplimiento de comunicaciones. Para crear y administrar estas directivas, debe usar los controles de administración de directivas en la [solución de cumplimiento de comunicaciones](https://compliance.microsoft.com/supervisoryreview).
+> [!IMPORTANT]
+> No se admite el uso de PowerShell para crear y administrar directivas de cumplimiento de comunicaciones. Para crear y administrar estas directivas, debe usar los controles de administración de directivas en la [solución de cumplimiento de comunicaciones](https://compliance.microsoft.com/supervisoryreview).
 
->[!TIP]  
->¿Desea ver un tutorial detallado sobre cómo configurar una nueva directiva de cumplimiento de comunicaciones y corregir una alerta? Consulte [este vídeo de 15 minutos](/microsoft-365/compliance/communication-compliance-plan#creating-a-communication-compliance-policy-walkthrough) para ver una demostración de cómo las directivas de cumplimiento de comunicaciones pueden ayudarle a detectar mensajes potencialmente inadecuados, investigar posibles infracciones y corregir problemas de cumplimiento.
+> [!TIP]
+> ¿Desea ver un tutorial detallado sobre cómo configurar una nueva directiva de cumplimiento de comunicaciones y corregir una alerta? Consulte [este vídeo de 15 minutos](/microsoft-365/compliance/communication-compliance-plan#creating-a-communication-compliance-policy-walkthrough) para ver una demostración de cómo las directivas de cumplimiento de comunicaciones pueden ayudarle a detectar mensajes potencialmente inadecuados, investigar posibles infracciones y corregir problemas de cumplimiento.
 
 1. Inicie sesión en la [portal de cumplimiento Microsoft Purview](https://compliance.microsoft.com) con las credenciales de una cuenta de administrador en la organización de Microsoft 365.
 

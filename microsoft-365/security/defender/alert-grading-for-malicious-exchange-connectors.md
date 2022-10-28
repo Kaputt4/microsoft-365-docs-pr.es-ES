@@ -22,12 +22,12 @@ ms.topic: conceptual
 search.appverid:
 - MOE150
 - MET150
-ms.openlocfilehash: 7489fe631c290fcf92d3502d0405b0ece9368457
-ms.sourcegitcommit: 12af9e8e3a6eaa090fda9e98ccb831dff65863a4
+ms.openlocfilehash: 83f7bdc0ac44b84953f760f31b5615ce793311f0
+ms.sourcegitcommit: a20d30f4e5027f90d8ea4cde95d1d5bacfdd2b5e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/27/2022
-ms.locfileid: "68067056"
+ms.lasthandoff: 10/28/2022
+ms.locfileid: "68770489"
 ---
 # <a name="alert-grading-for-malicious-exchange-connectors"></a>Clasificación de alertas para conectores de intercambio malintencionados
 
@@ -43,8 +43,8 @@ El cuaderno de estrategias ayuda a investigar las instancias, donde los actores 
 
 A continuación se muestran los resultados del uso de un cuaderno de estrategias:
 
-- Determinación de la alerta como malintencionada (TP) o benigna (FP). 
-    - Si es malintencionado, corrija o quite el conector malintencionado del entorno.
+- Determinación de la alerta como malintencionada (TP) o benigna (FP).
+- Si es malintencionado, corrija o quite el conector malintencionado del entorno.
 
 ## <a name="exchange-connectors"></a>Conectores de Exchange
 
@@ -54,12 +54,12 @@ Los conectores se usan para enrutar el tráfico de correo entre sistemas de corr
 
 ## <a name="malicious-exchange-connectors"></a>Conectores de Exchange malintencionados
 
-Los atacantes pueden poner en peligro un conector de exchange existente o poner en peligro a un administrador y configurar un nuevo conector mediante el envío de correos electrónicos de correo no deseado o correo no deseado o masivo. 
+Los atacantes pueden poner en peligro un conector de exchange existente o poner en peligro a un administrador y configurar un nuevo conector mediante el envío de correos electrónicos de correo no deseado o correo no deseado o masivo.
 
 Los indicadores típicos de un conector malintencionado se pueden encontrar al examinar el tráfico de correo electrónico y sus encabezados. Por ejemplo, cuando se observa tráfico de correo electrónico desde un nodo del conector con una falta de coincidencia en las direcciones de remitente P1 (remitente del encabezado) y P2 (remitente de sobre) junto con ninguna información sobre accountObjectId del remitente.
 
-Esta alerta intenta identificar dichas instancias de flujo de correo, donde la actividad de envío de correo parece sospechosa agregar a esa información relevante en el remitente no está disponible. 
- 
+Esta alerta intenta identificar dichas instancias de flujo de correo, donde la actividad de envío de correo parece sospechosa agregar a esa información relevante en el remitente no está disponible.
+
 ## <a name="playbook-workflow"></a>Flujo de trabajo del cuaderno de estrategias
 
 Debe seguir la secuencia para identificar conectores de intercambio malintencionados:
@@ -82,24 +82,24 @@ En esta sección se describen los pasos para investigar una alerta y corregir el
   - Busque eventos que indiquen tráfico de correo inusual e identifique si se agregó algún nuevo conector de Exchange recientemente.
     - Para el tráfico de correo observado, determine si las cuentas de correo electrónico están en peligro mediante la inspección de si las cuentas son responsables del tráfico de correo inusual.
   - Busque contenido de correo que contenga artefactos malintencionados (vínculos o datos adjuntos incorrectos).
-  - Busque dominios que no formen parte de su entorno. 
+  - Busque dominios que no formen parte de su entorno.
 - Determine que las cuentas de correo electrónico no están en peligro. Identifique el conector que se agregó o modificó recientemente en el entorno.
-- Buscar: 
+- Buscar:
   - Valores de campo en el remitente P1 (remitente del encabezado de correo electrónico) y el remitente P2 (remitente de sobre), y compruebe si hay una discrepancia.
   - Valores vacíos en el campo SenderObjectId.
 - Use los datos de telemetría para tener en cuenta lo siguiente:
-  - NetworkMessageId (id. de mensaje) de los correos electrónicos que se enviaron desde el conector malintencionado. 
+  - NetworkMessageId (id. de mensaje) de los correos electrónicos que se enviaron desde el conector malintencionado.
   - Fecha de creación del conector, fecha de última modificación y última modificación por fecha.
   - Dirección IP del conector desde donde se observa el tráfico de correo electrónico.
-  
+
 ## <a name="advanced-hunting-queries"></a>Consultas de búsqueda avanzadas
 
-Puede usar consultas [de búsqueda avanzadas](/microsoft-365/security/defender/advanced-hunting-overview?) para recopilar información relacionada con una alerta y determinar si la actividad es sospechosa. 
+Puede usar consultas [de búsqueda avanzadas](/microsoft-365/security/defender/advanced-hunting-overview?) para recopilar información relacionada con una alerta y determinar si la actividad es sospechosa.
 
 Asegúrese de que tiene acceso a las tablas siguientes:
 
-|**Nombre de la tabla**  |**Descripción**  |
-|---------|---------|
+|Nombre de la tabla|Descripción|
+|---|---|
 |EmailEvents| Contiene información relacionada con el flujo de correo electrónico.|
 |CloudAppEvents|Contiene el registro de auditoría de las actividades del usuario.|
 |IdentityLogonEvents|Contiene información de inicio de sesión para todos los usuarios.|
@@ -109,7 +109,8 @@ Asegúrese de que tiene acceso a las tablas siguientes:
 Ejemplos de AHQs como referencia:
 
 - Ejecute este KQL para comprobar la creación del nuevo conector.
-  ```
+
+  ```KQL
   //modify timeWindow to modify the lookback.
   let timeWindow = now(-7d); let timeNow = now();
   CloudAppEvents
@@ -122,45 +123,122 @@ Ejemplos de AHQs como referencia:
   true, false)
   | where isnotempty( ConnectorName) or IsEnabled
   | project-reorder ConnectorName, IsEnabled
-
-  ```  
-- Run this KQL to check the volume of events from the alerted connector with time window of before and after the alerts.
   ```
-  modificar timeWindow para modificar la vista atrás.
-  let timeWindow = now(-7d); let timeNow = now(); let connectorOperations = pack_array("Set-OutboundConnector", "New-OutboundConnector", "Set-InboundConnector", "New-InboundConnector"); let mailThreshold = 100; defina el umbral de inspección y filtrado para permitir que myConnector= //use este bloque de código para especificar los conectores pertinentes CloudAppEvents | donde Marca de tiempo entre (timeWindow .. timeNow) | donde ActionType has_any (connectorOperations) | propiedad mv-expand = RawEventData.Parameters | where propiedad. Name == "Name" | summarize por ConnectorName=tostring(property. Value) ; EmailEvents | where isnotempty( toscalar (myConnector)) | donde Marca de tiempo entre (timeWindow .. timeNow) | where isnotempty( SenderObjectId) e isnotempty( Connectors) | donde los conectores de (toscalar (myConnector)) | summarize MailCount = dcount(NetworkMessageId) by Connectors, SenderObjectId, bin(Timestamp, 1h) | where MailCount >= mailThreshold
+
+- Ejecute este KQL para comprobar el volumen de eventos desde el conector con una ventana de tiempo de antes y después de las alertas.
+
+  ```KQL
+  //modify timeWindow to modify the lookback.
+  let timeWindow = now(-7d); let timeNow = now();
+  let connectorOperations = pack_array("Set-OutboundConnector", 
+  "New-OutboundConnector", "Set-InboundConnector", "New-InboundConnector");
+  let mailThreshold = 100; //define threshold for inspection and filtering
+  let myConnector= //use this code block to specify relevant connector(s)
+  CloudAppEvents
+  | where Timestamp between (timeWindow .. timeNow)
+  | where ActionType has_any (connectorOperations)
+  | mv-expand property = RawEventData.Parameters
+  | where property.Name == "Name"
+  | summarize by ConnectorName=tostring(property.Value)
+  ;
+  EmailEvents
+  | where isnotempty( toscalar (myConnector))
+  | where Timestamp between (timeWindow .. timeNow)
+  | where isnotempty( SenderObjectId) and isnotempty( Connectors)
+  | where Connectors in (toscalar (myConnector))
+  | summarize MailCount = dcount(NetworkMessageId) by Connectors, 
+  SenderObjectId, bin(Timestamp, 1h)
+  | where MailCount >= mailThreshold
    ```
-- Run this KQL to check whether emails are being sent to external domains.
+
+- Ejecute este KQL para comprobar si los correos electrónicos se envían a dominios externos.
+
+  ```KQL
+  //modify timeWindow to modify the lookback.
+  let timeWindow = now(-7d); let timeNow = now();
+  EmailEvents
+  | where Timestamp between (timeWindow .. timeNow)
+  | where isnotempty( SenderObjectId)
+  | extend RecipientDomain= split(RecipientEmailAddress, "@")[1]
+  | where (SenderFromDomain != RecipientDomain) or (SenderMailFromDomain 
+  != RecipientDomain)
+  | where EmailDirection !in ("Intra-org" , "Inbound") //comment this line to 
+  look across all mailflow directions
   ```
-  modificar timeWindow para modificar la vista atrás.
-  let timeWindow = now(-7d); let timeNow = now(); EmailEvents | donde Marca de tiempo entre (timeWindow .. timeNow) | where isnotempty( SenderObjectId) | extend RecipientDomain= split(RecipientEmailAddress, "@")[1] | where (SenderFromDomain != RecipientDomain) o (SenderMailFromDomain != RecipientDomain) | where EmailDirection !in ("Intra-org" , "Inbound") //comment this line to look across all mailflow directions
-  ```
-  - If sent to external domains, who else in the environment is sending similar emails (Could indicate compromised user if recipient is unknown domain).
+
+  - Si se envía a dominios externos, quién más en el entorno envía correos electrónicos similares (podría indicar que el usuario está en peligro si el destinatario es un dominio desconocido).
+
+     ```KQL
+     //modify timeWindow to modify the lookback.
+     let timeWindow = now(-7d); let timeNow = now();
+     let countThreshold= 100; //modify count threshold accordingly 
+     EmailEvents
+     | where Timestamp between (timeWindow .. timeNow)
+     | where isnotempty( SenderObjectId)
+     | extend RecipientDomain= split(RecipientEmailAddress, "@")[1]
+     | where (SenderFromDomain != RecipientDomain) or (SenderMailFromDomain 
+     != RecipientDomain)
+     | where EmailDirection !in ("Intra-org" , "Inbound")
+     | summarize MailCount= dcount(NetworkMessageId) by SenderObjectId, 
+     SenderFromAddress, SenderMailFromAddress , bin(Timestamp, 1h)
+     | where MailCount > countThreshold
      ```
-     modificar timeWindow para modificar la vista atrás.
-     let timeWindow = now(-7d); let timeNow = now(); let countThreshold= 100; modificar el umbral de recuento en consecuencia EmailEvents | donde Marca de tiempo entre (timeWindow .. timeNow) | where isnotempty( SenderObjectId) | extend RecipientDomain= split(RecipientEmailAddress, "@")[1] | where (SenderFromDomain != RecipientDomain) o (SenderMailFromDomain != RecipientDomain) | where EmailDirection !in ("Intra-org" , "Inbound") | summarize MailCount= dcount(NetworkMessageId) by SenderObjectId, SenderFromAddress, SenderMailFromAddress , bin(Timestamp, 1h) | donde MailCount > countThreshold
-     ```
-    - Check the mail content for bad behavior
-      - Look at URLs in the email or email having attachments.
 
+    - Comprobar si el contenido del correo es incorrecto
+    - Examine las direcciones URL del correo electrónico o correo electrónico que tienen datos adjuntos.
 
-## AHQ considerations
+## <a name="ahq-considerations"></a>Consideraciones de AHQ
 
-Following are the AHQ considerations for protecting the recipients from malicious attack.
+A continuación se muestran las consideraciones de AHQ para proteger a los destinatarios frente a ataques malintencionados.
 
-- Check for admin logins for those who frequently manage connectors from unusual locations (generate stats and exclude locations from where most successful logins are observed).
+- Compruebe si hay inicios de sesión de administrador para aquellos que administran con frecuencia conectores desde ubicaciones inusuales (genere estadísticas y excluya ubicaciones desde donde se observen los inicios de sesión más correctos).
 
-  - Look for login failures from unusual locations.
+- Busque errores de inicio de sesión desde ubicaciones inusuales.
 
   ```
-  modificar timeWindow para modificar la vista atrás.
-  let timeWindow = now(-7d); let timeNow = now(); let logonFail= materialize ( IdentityLogonEvents | donde marca de tiempo entre (timeWindow .. timeNow) | where isnotempty(AccountObjectId) | where Application != "Active Directory" | where ActionType == "LogonFailed" | where ISP != "Microsoft Azure" | summarize failedLogonCount=count(), LatestTime = max(Timestamp), EarliestTime = min(Timestamp) by AccountObjectId, Application, ISP, CountryCode, bin(Timestamp, 60s) | donde failedLogonCount > 100); let hasLogonFails = isnotempty(toscalar (logonFail)); let logonFailUsers = materialize ( logonFail | accountObjectId distinto | tomar 100); let hasLogonFails = isnotempty(toscalar (logonFailUsers)); let logonSuccess= IdentityLogonEvents | donde hasLogonFails | donde Marca de tiempo entre (timeWindow .. timeNow) | donde AccountObjectId en (logonFailUsers) | where Application != "Active Directory" | where ISP != "Microsoft Azure" | where ActionType == "LogonSuccess" | project SuccessTime= Timestamp, ReportId, AccountUpn, AccountObjectId, ISP, CountryCode, Application; logonFail | join kind = innerunique logonSuccess on AccountObjectId, ISP, Application | donde SuccessTime entre (LatestTime .. (LatestTime + 10s)) | summarize arg_min(SuccessTime, ReportId), EarliestFailedTime=min (EarliestTime), LatestFailedTime=max(LatestTime), failedLogonCount= take_any(failedLogonCount), SuccessLogonCount=count(), ISPSet= make_set(ISP), CountrySet=make_set(CountryCode), AppSet=make_set (Application) by AccountObjectId, AccountUpn | project-rename Timestamp=SuccessTime
+  //modify timeWindow to modify the lookback.
+  let timeWindow = now(-7d); let timeNow = now();
+  let logonFail= materialize (
+  IdentityLogonEvents
+  | where Timestamp between (timeWindow .. timeNow)
+  | where isnotempty(AccountObjectId)
+  | where Application != "Active Directory"
+  | where ActionType == "LogonFailed"
+  | where ISP != "Microsoft Azure"
+  | summarize failedLogonCount=count(), LatestTime = max(Timestamp), 
+  EarliestTime = min(Timestamp) by AccountObjectId, Application, ISP, 
+  CountryCode, bin(Timestamp, 60s)
+  | where failedLogonCount > 100);
+  // let hasLogonFails = isnotempty(toscalar (logonFail));
+  let logonFailUsers = materialize ( logonFail | distinct AccountObjectId | 
+  take 100);
+  let hasLogonFails = isnotempty(toscalar (logonFailUsers));
+  let logonSuccess=
+  IdentityLogonEvents
+  | where hasLogonFails
+  | where Timestamp between (timeWindow .. timeNow)
+  | where AccountObjectId in (logonFailUsers)
+  | where Application != "Active Directory"
+  | where ISP != "Microsoft Azure"
+  | where ActionType == "LogonSuccess"
+  | project SuccessTime= Timestamp, ReportId, AccountUpn, AccountObjectId, 
+  ISP, CountryCode, Application;
+  logonFail
+  | join kind = innerunique logonSuccess on AccountObjectId, ISP, Application
+  | where SuccessTime between (LatestTime .. (LatestTime + 10s))
+  | summarize arg_min(SuccessTime, ReportId), EarliestFailedTime=min
+  (EarliestTime), LatestFailedTime=max(LatestTime), failedLogonCount=
+  take_any(failedLogonCount), SuccessLogonCount=count(), ISPSet=
+  make_set(ISP), CountrySet=make_set(CountryCode), AppSet=make_set
+  (Application) by AccountObjectId, AccountUpn
+  | project-rename Timestamp=SuccessTime
   ```
 
-## Recommended actions
+## <a name="recommended-actions"></a>Acciones recomendadas
 
-Once it’s determined that the observed alert activities are part of TP, classify those alerts and perform the actions below:
+Una vez que se determina que las actividades de alerta observadas forman parte de TP, clasifique esas alertas y realice las acciones siguientes:
 
-- Disable or remove the connector that was found to be malicious.
-- If the admin account was compromised, reset the admin’s account credentials. Also, disable/revoke tokens for the compromised admin account and enable multi-factor authentication for all admin accounts.
-  - Look for suspicious activities performed by the admin.
-- Check for other suspicious activities across other connectors in the environment.
+- Deshabilite o quite el conector que se encontró como malintencionado.
+- Si la cuenta de administrador está en peligro, restablezca las credenciales de la cuenta del administrador. Además, deshabilite o revoque tokens para la cuenta de administrador en peligro y habilite la autenticación multifactor para todas las cuentas de administrador.
+- Busque actividades sospechosas realizadas por el administrador.
+- Compruebe si hay otras actividades sospechosas en otros conectores del entorno.

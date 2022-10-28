@@ -17,12 +17,12 @@ description: Los administradores pueden aprender a crear, modificar y eliminar l
 ms.subservice: mdo
 ms.service: microsoft-365-security
 search.appverid: met150
-ms.openlocfilehash: d0358aa6c266a112c67873223553d550f6eb303d
-ms.sourcegitcommit: 0ca3ab2abe07810e9b2cc2d806e3c6b9f35b146c
+ms.openlocfilehash: 3e28695935c351f010d595d4bc7184f4be688751
+ms.sourcegitcommit: a20d30f4e5027f90d8ea4cde95d1d5bacfdd2b5e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/24/2022
-ms.locfileid: "68684807"
+ms.lasthandoff: 10/28/2022
+ms.locfileid: "68770511"
 ---
 # <a name="configure-anti-phishing-policies-in-microsoft-defender-for-office-365"></a>Configuración de directivas contra phishing en Microsoft Defender para Office 365
 
@@ -193,7 +193,7 @@ La creación de una directiva de anti-phishing personalizada en el portal de Mic
      > [!NOTE]
      >
      > - Si los mensajes del sistema de Microsoft 365 de los siguientes remitentes se identifican como intentos de suplantación, puede agregar los remitentes a la lista de remitentes de confianza:
-     >   - `⁠noreply@email.teams.microsoft.com`
+     >   - `noreply@email.teams.microsoft.com`
      >   - `noreply@emeaemail.teams.microsoft.com`
      >   - `no-reply@sharepointonline.com`
      >

@@ -18,12 +18,12 @@ ms.collection:
 - purview-compliance
 - data-connectors
 ms.custom: admindeeplinkCOMPLIANCE
-ms.openlocfilehash: 193b45e50d76f6647d871fd84bda70f9be2b324c
-ms.sourcegitcommit: 8d3c027592a638f411f87d89772dd3d39e92aab0
+ms.openlocfilehash: 53d4ef19554f5916e603610158197daa6e946593
+ms.sourcegitcommit: a20d30f4e5027f90d8ea4cde95d1d5bacfdd2b5e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/12/2022
-ms.locfileid: "68537300"
+ms.lasthandoff: 10/28/2022
+ms.locfileid: "68770291"
 ---
 # <a name="set-up-a-connector-to-import-hr-data"></a>Configurar un conector para importar datos de RR.HH.
 
@@ -69,11 +69,11 @@ El tipo de datos de RR. HH. que se van a importar depende de la directiva de adm
 | Robo de datos por parte de los usuarios que abandonan la organización | Renuncias de empleados|
 | Filtraciones de datos generales                             | No aplicable|
 | Filtraciones de datos por parte de usuarios prioritarios                   | No aplicable |
-| Filtraciones de datos por parte de usuarios inconformes                | Cambios en el nivel de trabajo, revisiones de rendimiento, planes de mejora del rendimiento|
+| Pérdidas de datos por parte de usuarios de riesgo                | Cambios en el nivel de trabajo, revisiones de rendimiento, planes de mejora del rendimiento|
 | Infracciones generales de la directiva de seguridad             | No aplicable |
 | Infracciones de la directiva de seguridad por parte de los usuarios que abandonan la organización  | Renuncias de empleados|
 | Infracciones de la directiva de seguridad por parte de los usuarios prioritarios   | No aplicable|
-| Infracciones de la directiva de seguridad por parte de usuarios inconformes| Cambios en el nivel de trabajo, revisiones de rendimiento, planes de mejora del rendimiento |
+| Infracciones de directivas de seguridad por parte de usuarios de riesgo| Cambios en el nivel de trabajo, revisiones de rendimiento, planes de mejora del rendimiento |
 | Lenguaje ofensivo en el correo electrónico                    | No aplicable |
 | Política sanitaria| Perfil de empleado |
 |||

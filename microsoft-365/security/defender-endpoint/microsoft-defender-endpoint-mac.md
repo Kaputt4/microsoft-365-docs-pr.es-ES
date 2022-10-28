@@ -2,7 +2,7 @@
 title: Microsoft Defender para punto de conexión en Mac
 ms.reviewer: ''
 description: Obtenga información sobre cómo instalar, configurar, actualizar y usar Microsoft Defender para punto de conexión en Mac.
-keywords: microsoft, defender, Microsoft Defender para punto de conexión, mac, installation, deploy, uninstallation, intune, jamf, macos, monterey, big sur, catalina, mojave, mde for mac
+keywords: microsoft, defender, Microsoft Defender para punto de conexión, mac, installation, deploy, uninstallation, intune, jamf, macos, monterey, big sur, catalina, ventura, mde for mac
 ms.service: microsoft-365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
@@ -18,12 +18,12 @@ ms.collection:
 ms.topic: conceptual
 ms.subservice: mde
 search.appverid: met150
-ms.openlocfilehash: d74b572d305718fe27cc1f74889cd4022d3705c7
-ms.sourcegitcommit: 4e42bafee965446f44f7f57d1defed2b9b24fce8
+ms.openlocfilehash: 5e42abcb76ba2a7019ca7344382df5e6049784b0
+ms.sourcegitcommit: a20d30f4e5027f90d8ea4cde95d1d5bacfdd2b5e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/30/2022
-ms.locfileid: "68232746"
+ms.lasthandoff: 10/28/2022
+ms.locfileid: "68770533"
 ---
 # <a name="microsoft-defender-for-endpoint-on-mac"></a>Microsoft Defender para punto de conexión en Mac
 
@@ -79,7 +79,7 @@ Se admiten las tres versiones principales más recientes de macOS.
 > [!IMPORTANT]
 > En macOS 11 (Big Sur) y versiones posteriores, Microsoft Defender para punto de conexión requiere perfiles de configuración adicionales. Si es un cliente existente que actualiza desde versiones anteriores de macOS, asegúrese de implementar los perfiles de configuración adicionales que aparecen en [Nuevos perfiles de configuración para macOS Catalina y versiones más recientes de macOS](mac-sysext-policies.md).
 
-- 12 (Monterrey), 11 (Big Sur), 10.15 (Catalina)
+- 13 (Ventura), 12 (Monterrey), 11 (Big Sur)
 - Espacio en disco: 1 GB
 
 No se admiten las versiones beta de macOS.

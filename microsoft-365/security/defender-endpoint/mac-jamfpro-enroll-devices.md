@@ -1,7 +1,7 @@
 ---
 title: Inscribir Microsoft Defender para punto de conexión en dispositivos macOS en Jamf Pro
 description: Inscribir Microsoft Defender para punto de conexión en dispositivos macOS en Jamf Pro
-keywords: microsoft, defender, Microsoft Defender para punto de conexión, mac, installation, deploy, uninstallation, intune, jamfpro, macos, catalina, mojave, high sierra
+keywords: microsoft, defender, Microsoft Defender para punto de conexión, mac, installation, deploy, uninstallation, intune, jamfpro, macos, catalina, big sur, monterey, ventura, mde for mac
 ms.service: microsoft-365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
@@ -17,12 +17,12 @@ ms.collection:
 ms.topic: conceptual
 ms.subservice: mde
 search.appverid: met150
-ms.openlocfilehash: c4e10dc812b90d9e2eb025855617787cbf685957
-ms.sourcegitcommit: 4e42bafee965446f44f7f57d1defed2b9b24fce8
+ms.openlocfilehash: ea0872a96a0d020074f3ce9caa6314af3c845ab6
+ms.sourcegitcommit: a20d30f4e5027f90d8ea4cde95d1d5bacfdd2b5e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/30/2022
-ms.locfileid: "68225424"
+ms.lasthandoff: 10/28/2022
+ms.locfileid: "68769609"
 ---
 # <a name="enroll-microsoft-defender-for-endpoint-on-macos-devices-into-jamf-pro"></a>Inscribir Microsoft Defender para punto de conexión en dispositivos macOS en Jamf Pro
 

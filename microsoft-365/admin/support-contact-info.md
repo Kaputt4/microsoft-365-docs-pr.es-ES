@@ -16,12 +16,12 @@ search.appverid:
 - MET150
 description: Obtenga información sobre cómo obtener soporte técnico telefónico para su suscripción de Microsoft 365 para empresas. Debe ser el administrador de una suscripción de empresa para poder usar el soporte técnico.
 ms.date: 10/20/2022
-ms.openlocfilehash: c73a473a1ca19463efc2f8de76898f505e07ab74
-ms.sourcegitcommit: e7dbe3b0d97cd8c64b5ae15f990d5e4b1dc9c464
+ms.openlocfilehash: 7c39bd1b4641ad74bf5ee4e8e66d11ee4eb9473a
+ms.sourcegitcommit: a20d30f4e5027f90d8ea4cde95d1d5bacfdd2b5e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/24/2022
-ms.locfileid: "68688511"
+ms.lasthandoff: 10/28/2022
+ms.locfileid: "68767695"
 ---
 # <a name="find-microsoft-365-for-business-support-phone-numbers-by-country-or-region"></a>Buscar números de teléfono de soporte técnico de Microsoft 365 para empresas por país o región
 
@@ -3878,7 +3878,7 @@ Chino e inglés: de lunes a viernes, de 9:00 a.m. a 6 p. m.
    :::column-end:::
    :::column:::
 **Horas de soporte técnico:**\
-Soporte telefónico chino e inglés: de lunes a viernes, de 9:00 a.m. a 9 p. m.\
+Soporte telefónico chino e inglés: de lunes a viernes, de 9:00 a.m. a 6 p. m.\
 Soporte técnico en línea en chino e inglés (a través del centro de administración): 24 horas al día, 7 días a la semana
    :::column-end:::
 :::row-end:::

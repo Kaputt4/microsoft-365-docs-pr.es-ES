@@ -17,12 +17,12 @@ ms.custom: ''
 search.appverid: MET150
 description: 'Detalles de la nueva puntuación de conclusiones de reuniones: la puntuación de adopción de las experiencias de las personas.'
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: d6e74a03e459bfaaef3aa4e3b37bc70374e38b64
-ms.sourcegitcommit: 0d8fb571024f134d7480fe14cffc5e31a687d356
+ms.openlocfilehash: 382c55e4c584a4747d822ecb3e8802725ae864c4
+ms.sourcegitcommit: a20d30f4e5027f90d8ea4cde95d1d5bacfdd2b5e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/20/2022
-ms.locfileid: "68623573"
+ms.lasthandoff: 10/28/2022
+ms.locfileid: "68767783"
 ---
 # <a name="meetings-insights-score--people-experiences-new"></a>Puntuación de conclusiones de reuniones: experiencias Personas (nuevas)
 
@@ -34,7 +34,7 @@ Para empezar a trabajar con meetings insights, los usuarios de su organización 
 
 - Microsoft Teams
 
-Para obtener más información, consulte [Asignación de licencias a usuarios](../manage/assign-licenses-to-users.md).
+Para obtener más información, vea [Asignación de licencias a usuarios](../manage/assign-licenses-to-users.md).
 
 Una vez que las personas hayan estado activas en Teams al menos una vez en los últimos 28 días, comenzará a ver la información.
 

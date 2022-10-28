@@ -10,12 +10,12 @@ ms.service: microsoft-365-business
 ms.collection: m365initiative-edu
 ms.localizationpriority: medium
 description: Crear y calificar asignaciones, compilar y mantener contenido del curso, y colaborar en archivos en tiempo real con la nueva interoperabilidad de herramientas de aprendizaje de Microsoft OneDrive para Desire2Learn Brightspace.
-ms.openlocfilehash: 9c03ee2f46e77d8d24f7c731ac2e32b1dfc9cef2
-ms.sourcegitcommit: 2ff545246fec060ea7829da5afbc1cdc698d51ab
+ms.openlocfilehash: d01a934d134ceb8b62658d81f0d6500c467f82b4
+ms.sourcegitcommit: a20d30f4e5027f90d8ea4cde95d1d5bacfdd2b5e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/04/2022
-ms.locfileid: "68363022"
+ms.lasthandoff: 10/28/2022
+ms.locfileid: "68768509"
 ---
 # <a name="integrate-microsoft-onedrive-lti-with-desire2learn-brightspace"></a>Integración de LTI de Microsoft OneDrive con Desire2Learn Brightspace
 
@@ -40,8 +40,10 @@ Los pasos para agregar la aplicación LTI de OneDrive son:
 
 1. Inicie sesión en el [Portal de registro de LTI de Microsoft OneDrive](https://onedrivelti.microsoft.com/admin).
 1. Seleccione el botón **Administración Consentimiento** y acepte los permisos.
-   >[!IMPORTANT]
-   >Si no **se acepta Administración consentimiento**, el siguiente paso le dará un error y tendrá que esperar una hora para poder continuar.
+
+   > [!IMPORTANT]
+   > Si no **se acepta Administración consentimiento**, el siguiente paso le dará un error y tendrá que esperar una hora para poder continuar.
+
 1. Seleccione el botón **Crear nuevo inquilino de LTI** .
 1. En la lista **Plataforma de consumidores de LTI** , seleccione **D2L Brightspace**.
 1. En el campo **D2L Brightspace Base URL (DIRECCIÓN URL base de Brightspace D2L** ), escriba la dirección URL base de Brightspace, como `https://myschool.brightspace.com`.
@@ -59,8 +61,8 @@ Los pasos para agregar la aplicación LTI de OneDrive son:
 1. Escriba un nombre para la aplicación, como `Microsoft OneDrive LTI App`.
 1. En el campo **Dominio** , escriba `https://onedrivelti.microsoft.com`.
 1. Vaya a la pestaña del explorador con el Portal de registro de LTI de Microsoft OneDrive para copiar los demás valores necesarios:
-    1. Pegue el `ToolOIDCLaunchRedirectUri` valor en el campo **Direcciones URL de redireccionamiento** .  
-       >[!IMPORTANT] 
+    1. Pegue el `ToolOIDCLaunchRedirectUri` valor en el campo **Direcciones URL de redireccionamiento** .
+       >[!IMPORTANT]
        >Usará este valor de **dirección URL de redireccionamiento** en pasos posteriores.
     1. Pegue el valor ''OIDCLoginInitiationUri' en el campo **Url de inicio de sesión de OpenID Connect** .
     1. Pegue el `ToolPublicJwksUri` valor en el campo **Url del conjunto de claves** .
@@ -176,7 +178,7 @@ Para agregar la aplicación LTI de OneDrive a la barra de actividad de Brightspa
 
 La aplicación LTI de OneDrive ahora se mostrará en los menús **Agregar contenido existente**, **Vínculos rápidos** e **Insertar material** en Brightspace.
 
-Los usuarios verán un icono de vínculo genérico en lugar de un icono de nube de OneDrive. El nombre que se muestra en el menú será el nombre proporcionado en la configuración del vínculo LTI de la aplicación.  
+Los usuarios verán un icono de vínculo genérico en lugar de un icono de nube de OneDrive. El nombre que se muestra en el menú será el nombre proporcionado en la configuración del vínculo LTI de la aplicación.
 
 Estos vínculos se pueden desactivar y activar según lo deseado y dirigirse a organizaciones y personas fallecidas específicas por configuración.
 

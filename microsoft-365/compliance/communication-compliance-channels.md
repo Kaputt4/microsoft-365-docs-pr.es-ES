@@ -19,17 +19,17 @@ ms.collection:
 search.appverid:
 - MET150
 - MOE150
-ms.openlocfilehash: 8ba2035f18dbdfde53ed71c125a82c98df6587ce
-ms.sourcegitcommit: 181a0aff54842dcbafd834647c6e9ee47304d10f
+ms.openlocfilehash: 17ac1b6ad7a590b2ae14e39cc3f978712b843ca2
+ms.sourcegitcommit: a20d30f4e5027f90d8ea4cde95d1d5bacfdd2b5e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/27/2022
-ms.locfileid: "68728343"
+ms.lasthandoff: 10/28/2022
+ms.locfileid: "68767673"
 ---
 # <a name="detect-channel-signals-with-communication-compliance"></a>Detección de señales de canal con cumplimiento de comunicaciones
 
->[!IMPORTANT]
->Cumplimiento de comunicaciones de Microsoft Purview proporciona las herramientas para ayudar a las organizaciones a detectar infracciones de cumplimiento normativo (por ejemplo, SEC o FINRA), como información confidencial o confidencial, hostigamiento o amenazante del lenguaje y uso compartido de contenido para adultos. Creados con privacidad por diseño, los nombres de usuario se seudonimizan de forma predeterminada, los controles de acceso basados en roles están integrados, los investigadores son admitidos por un administrador y los registros de auditoría están en su lugar para ayudar a garantizar la privacidad del nivel de usuario.
+> [!IMPORTANT]
+> Cumplimiento de comunicaciones de Microsoft Purview proporciona las herramientas para ayudar a las organizaciones a detectar infracciones de cumplimiento normativo (por ejemplo, SEC o FINRA), como información confidencial o confidencial, hostigamiento o amenazante del lenguaje y uso compartido de contenido para adultos. Creados con privacidad por diseño, los nombres de usuario se seudonimizan de forma predeterminada, los controles de acceso basados en roles están integrados, los investigadores son admitidos por un administrador y los registros de auditoría están en su lugar para ayudar a garantizar la privacidad del nivel de usuario.
 
 Con las directivas de cumplimiento de comunicaciones, puede elegir analizar los mensajes en una o varias de las siguientes plataformas de comunicación como un grupo o como orígenes independientes. Los mensajes originales capturados en estas plataformas se conservan en la ubicación de la plataforma original de acuerdo con las [directivas de retención y retención](/microsoft-365/compliance/information-governance) de su organización. Las copias de los mensajes utilizados por las directivas de cumplimiento de comunicaciones para el análisis y la investigación se conservan mientras la directiva esté en vigor, incluso si los usuarios abandonan la organización y se eliminan sus buzones. Cuando se elimina una directiva de comunicación, también se eliminan copias de los mensajes asociados a la directiva.
 

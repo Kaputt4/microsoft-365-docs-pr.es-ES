@@ -18,12 +18,12 @@ ms.topic: conceptual
 ms.subservice: mde
 ms.custom: api
 search.appverid: met150
-ms.openlocfilehash: d29e0d30c3672ce3a6987059b2d1ddf9a4e07919
-ms.sourcegitcommit: 0d8fb571024f134d7480fe14cffc5e31a687d356
+ms.openlocfilehash: 03b7c2b9af508740475ef6859788fec7ed91b866
+ms.sourcegitcommit: a20d30f4e5027f90d8ea4cde95d1d5bacfdd2b5e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/20/2022
-ms.locfileid: "68631906"
+ms.lasthandoff: 10/28/2022
+ms.locfileid: "68770066"
 ---
 # <a name="offboard-machine-api"></a>API de máquina fuera del panel
 
@@ -51,9 +51,8 @@ Dispositivo fuera del panel de Defender para punto de conexión.
   [!include[Machine actions note](../../includes/machineactionsnote.md)]
 
 > [!NOTE]
-> Esta API se admite en Windows 11, Windows 10, versión 1703 y posteriores o Windows Server 2019 y versiones posteriores.
->
-> Esta API no se admite en dispositivos MacOS o Linux.
+> Esta API se admite en Windows 11, Windows 10, versión 1703 y versiones posteriores; en Windows Server 2019 y versiones posteriores; y en Windows Server 2012 R2 y Windows Server 2016 al usar el [nuevo agente unificado para Defender para punto de conexión](update-agent-mma-windows.md#upgrade-to-the-new-unified-agent-for-defender-for-endpoint).
+> Esta API no se admite en dispositivos macOS o Linux.
 
 ## <a name="permissions"></a>Permisos
 

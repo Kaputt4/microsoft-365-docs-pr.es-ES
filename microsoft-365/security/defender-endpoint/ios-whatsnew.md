@@ -17,12 +17,12 @@ ms.collection:
 ms.topic: reference
 ms.subservice: mde
 search.appverid: met150
-ms.openlocfilehash: da1e100386680e6ea870e78f89524408ba823ede
-ms.sourcegitcommit: 0d8fb571024f134d7480fe14cffc5e31a687d356
+ms.openlocfilehash: e725a6ee7f39593a5a8eeff7c6e5885552a59624
+ms.sourcegitcommit: a20d30f4e5027f90d8ea4cde95d1d5bacfdd2b5e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/20/2022
-ms.locfileid: "68627354"
+ms.lasthandoff: 10/28/2022
+ms.locfileid: "68768531"
 ---
 # <a name="whats-new-in-microsoft-defender-for-endpoint-on-ios"></a>Novedades de Microsoft Defender para punto de conexión en iOS
 
@@ -41,9 +41,9 @@ La evaluación de vulnerabilidades de las aplicaciones en Microsoft Defender par
 
 ## <a name="network-protection"></a>Protección de red
 
-La protección de red en Microsoft Defender para punto de conexión está ahora en versión preliminar pública. La protección de red proporciona protección contra amenazas no autorizadas Wi-Fi relacionadas, hardware no autorizado como dispositivos de piña y notifica al usuario si se detecta una amenaza relacionada. Los usuarios también verán una experiencia guiada para conectarse a redes seguras y cambiar las redes cuando estén conectadas a una conexión no segura.
+Protección de red en Microsoft Defender para punto de conexión ya está disponible. La protección de red proporciona protección contra amenazas no autorizadas Wi-Fi relacionadas, hardware no autorizado como dispositivos de piña y notifica al usuario si se detecta una amenaza relacionada. Los usuarios también verán una experiencia guiada para conectarse a redes seguras y cambiar las redes cuando estén conectadas a una conexión no segura.
 
-Incluye varios controles de administración para ofrecer flexibilidad, como la capacidad de configurar la característica desde el Centro de microsoft Endpoint Manager Administración. Los administradores también pueden habilitar los controles de privacidad para configurar los datos enviados por Defender para punto de conexión desde dispositivos iOS. Para obtener más información, consulte [Configurar protección de red](/microsoft-365/security/defender-endpoint/ios-configure-features#configure-network-protection).
+Incluye varios controles de administración para ofrecer flexibilidad, como la capacidad de configurar la característica desde el centro de Administración de Microsoft Endpoint Manager. Los administradores también pueden habilitar los controles de privacidad para configurar los datos enviados por Defender para punto de conexión desde dispositivos iOS. Para obtener más información, consulte [Configurar protección de red](/microsoft-365/security/defender-endpoint/ios-configure-features#configure-network-protection).
 
 La protección de red para iOS ya está habilitada para el inquilino. Los usuarios finales que prueban la característica protección de red pueden instalar la versión preliminar de la aplicación a través de TestFlight. Vaya a https://aka.ms/mdeiospp en el dispositivo iOS. Esto le pedirá que instale la aplicación TestFlight en el dispositivo o abra TestFlight en caso de que ya esté instalada. En la aplicación TestFlight, siga las instrucciones en pantalla para instalar Microsoft Defender punto de conexión. Compruebe que el número de versión de MDE es 1.1.33070102.
 
@@ -86,7 +86,7 @@ El 25 de enero de 2022, anunciamos la disponibilidad general de la administraci�
 ## <a name="1123250104"></a>1.1.23250104
 
 - Optimizaciones de rendimiento: pruebe el rendimiento de la batería con esta versión y háganos saber sus comentarios.
-- **Incorporación zero-touch para dispositivos iOS inscritos**: con esta versión, se ha agregado la versión preliminar de Zero-touch onboard para los dispositivos inscritos a través de Microsoft Endpoint Manager (Intune). Para obtener más información, consulte esta [documentación](ios-install.md#zero-touch-onboarding-of-microsoft-defender-for-endpoint) para obtener más información sobre la configuración y la configuración.
+- **Incorporación sin interacción para dispositivos iOS inscritos**: con esta versión, se ha agregado la versión preliminar de Zero-touch onboard para los dispositivos inscritos a través de Microsoft Endpoint Manager (Intune). Para obtener más información, consulte esta [documentación](ios-install.md#zero-touch-onboarding-of-microsoft-defender-for-endpoint) para obtener más información sobre la configuración y la configuración.
 - **Controles de privacidad** : configure los controles de privacidad para el informe de alertas de phish. Para obtener más información, consulte [Configuración de características de iOS](ios-configure-features.md).
 
 ## <a name="1123010101"></a>1.1.23010101
@@ -104,7 +104,7 @@ El 25 de enero de 2022, anunciamos la disponibilidad general de la administraci�
 - Correcciones de errores.
 
 ## <a name="1117240101"></a>1.1.17240101
-- La compatibilidad con la administración de aplicaciones móviles (MAM) a través de Intune está disponible con carácter general con esta versión. Para obtener más información, consulte [Microsoft Defender para punto de conexión señales de riesgo disponibles para las directivas de अनुप्रयोग सुरक्षा](https://techcommunity.microsoft.com/t5/intune-customer-success/microsoft-defender-for-endpoint-risk-signals-available-for-your/ba-p/2186322).
+- La compatibilidad con la administración de aplicaciones móviles (MAM) a través de Intune está disponible con carácter general con esta versión. Para obtener más información, consulte [Microsoft Defender para punto de conexión señales de riesgo disponibles para las directivas de Protección de aplicaciones](https://techcommunity.microsoft.com/t5/intune-customer-success/microsoft-defender-for-endpoint-risk-signals-available-for-your/ba-p/2186322)
 - **La detección de jailbreak** está disponible con carácter general. Para obtener más información, consulte [Configuración de la directiva de acceso condicional en función de las señales de riesgo del dispositivo](ios-configure-features.md#conditional-access-with-defender-for-endpoint-on-ios).
 - **La configuración automática del perfil de VPN** para dispositivos inscritos a través de Microsoft Endpoint Manager (Intune) está disponible con carácter general. Para obtener más información, consulte [Configuración automática del perfil de VPN para dispositivos iOS inscritos](ios-install.md#auto-onboarding-of-vpn-profile-simplified-onboarding).
 - Correcciones de errores.
@@ -112,7 +112,7 @@ El 25 de enero de 2022, anunciamos la disponibilidad general de la administraci�
 ## <a name="1115140101"></a>1.1.15140101
 
 - **La detección de jailbreak** está en versión preliminar. Para obtener más información, consulte [Configuración de la directiva de acceso condicional en función de las señales de riesgo del dispositivo](ios-configure-features.md#conditional-access-with-defender-for-endpoint-on-ios).
-- **La configuración automática del perfil de VPN** está en versión preliminar para dispositivos inscritos a través de Microsoft Endpoint Manager (Intune). Para obtener más información, consulte [Configuración automática del perfil de VPN para dispositivos iOS inscritos](ios-install.md#auto-onboarding-of-vpn-profile-simplified-onboarding).
+- **La configuración automática del perfil de VPN** está en versión preliminar para los dispositivos inscritos a través de Microsoft Endpoint Manager (Intune). Para obtener más información, consulte [Configuración automática del perfil de VPN para dispositivos iOS inscritos](ios-install.md#auto-onboarding-of-vpn-profile-simplified-onboarding).
 - El nombre del producto Microsoft Defender ATP se ha actualizado para Microsoft Defender para punto de conexión en la tienda de aplicaciones.
 - Experiencia de inicio de sesión mejorada.
 - Correcciones de errores.

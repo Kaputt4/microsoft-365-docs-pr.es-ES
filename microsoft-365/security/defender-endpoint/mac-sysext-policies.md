@@ -1,7 +1,7 @@
 ---
 title: Nuevos perfiles de configuración para macOS Catalina y versiones más recientes de macOS
 description: En este tema se describen los cambios que se deben realizar para beneficiarse de las extensiones del sistema, que son un reemplazo de las extensiones de kernel en macOS Catalina y versiones más recientes de macOS.
-keywords: microsoft, defender, Microsoft Defender para punto de conexión, mac, kernel, system, extensions, catalina
+keywords: microsoft, defender, Microsoft Defender para punto de conexión, mac, kernel, system, extensions, catalina, big sur, monterey, ventura, mde for mac
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.service: microsoft-365-security
@@ -19,12 +19,12 @@ ms.collection:
 ms.topic: conceptual
 ROBOTS: noindex,nofollow
 ms.subservice: mde
-ms.openlocfilehash: 8c3f944c9297e9ba922e2dbdb5f55750bdc0e6a5
-ms.sourcegitcommit: 4e42bafee965446f44f7f57d1defed2b9b24fce8
+ms.openlocfilehash: 3ecd935bfbbd6f37d6803409e7ee8336ca25381f
+ms.sourcegitcommit: a20d30f4e5027f90d8ea4cde95d1d5bacfdd2b5e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/30/2022
-ms.locfileid: "68223164"
+ms.lasthandoff: 10/28/2022
+ms.locfileid: "68770071"
 ---
 # <a name="new-configuration-profiles-for-macos-catalina-and-newer-versions-of-macos"></a>Nuevos perfiles de configuración para macOS Catalina y versiones más recientes de macOS
 
@@ -36,8 +36,6 @@ ms.locfileid: "68223164"
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 > ¿Quiere experimentar Microsoft Defender para punto de conexión? [Regístrese para obtener una prueba gratuita.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-exposedapis-abovefoldlink)
-
-En consonancia con la evolución de macOS, estamos preparando un Microsoft Defender para punto de conexión en la actualización de macOS que aprovecha las extensiones del sistema en lugar de las extensiones del kernel. Esta actualización solo se aplicará a macOS Catalina (10.15.4) y a las versiones más recientes de macOS.
 
 Si ha implementado Microsoft Defender para punto de conexión en macOS en un entorno administrado (a través de JAMF, Intune u otra solución MDM), debe implementar nuevos perfiles de configuración. Si no se realizan estos pasos, los usuarios recibirán solicitudes de aprobación para ejecutar estos nuevos componentes.
 

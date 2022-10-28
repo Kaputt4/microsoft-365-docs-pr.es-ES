@@ -20,12 +20,12 @@ ms.collection:
 - tier2
 ms.date: ''
 search.appverid: met150
-ms.openlocfilehash: f71c2d4fa2807f6e7667b7ab32c54081cf239986
-ms.sourcegitcommit: 87283bb02ca750286f7c069f811b788730ed5832
+ms.openlocfilehash: 3c2cc3c42bd23f10ed9909c0a69f2ce1add2103d
+ms.sourcegitcommit: a20d30f4e5027f90d8ea4cde95d1d5bacfdd2b5e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/21/2022
-ms.locfileid: "68659398"
+ms.lasthandoff: 10/28/2022
+ms.locfileid: "68769015"
 ---
 <!--- jweston-1 to return as author and ms.author appx April/May 2023. --->
 
@@ -52,12 +52,12 @@ La protección de red de Microsoft ayuda a reducir la superficie expuesta a ataq
 - Hazañas
 - otro contenido malintencionado en Internet
 
-La protección de red amplía el ámbito de Microsoft 365 Defender [SmartScreen](/windows/security/threat-protection/microsoft-defender-smartscreen/microsoft-defender-smartscreen-overview.md) para bloquear todo el tráfico HTTP saliente que intenta conectarse a orígenes de baja reputación. Los bloques del tráfico HTTP saliente se basan en el dominio o el nombre de host.
+La protección de red amplía el ámbito de Microsoft 365 Defender [SmartScreen](/windows/security/threat-protection/microsoft-defender-smartscreen/microsoft-defender-smartscreen-overview.md) para bloquear todo el tráfico HTTP saliente que intenta conectarse a orígenes de baja reputación. Los bloques del tráfico HTTP saliente se basan en el dominio o el nombre de host.
 
 ## <a name="new-and-updated-capabilities"></a>Funcionalidades nuevas y actualizadas
 
 - Puede ejecutar la VPN corporativa en tándem o "en paralelo" con la protección de red. Actualmente, no se identifica ningún conflicto de VPN. Si experimenta conflictos, puede proporcionar comentarios a través del canal de comentarios que aparece en la parte inferior de esta página.
-  - El filtrado de contenido web es compatible con la protección de red para macOS.  
+  - El filtrado de contenido web es compatible con la protección de red para macOS.
   - Si la protección de red está configurada y activa en el dispositivo, las directivas de filtrado de contenido web (WCF) creadas en el portal de MDEP se respetan en los exploradores, incluido Chromium Microsoft Edge para macOS. Actualmente, el filtrado de contenido web en Microsoft Edge en Mac requiere protección de red; otras características de E5, como Microsoft Defender para aplicaciones en la nube o indicadores personalizados, actualmente también requieren protección de red.
 
 ### <a name="known-issues"></a>Problemas conocidos
@@ -83,7 +83,7 @@ La protección de red amplía el ámbito de Microsoft 365 Defender [SmartScreen]
   - El dispositivo debe estar en el canal de actualización de Microsoft AutoUpdate externo (versión preliminar) o InsiderFast (beta). Puede comprobar el canal de actualización mediante el siguiente comando:
 
 ```bash
-mdatp health --field release_ring 
+mdatp health --field release_ring
 ```
 
 Si el dispositivo aún no está en el canal de actualización External(Preview), ejecute el siguiente comando desde terminal. La actualización del canal surte efecto la próxima vez que se inicie el producto (cuando se instale la siguiente actualización del producto o cuando se reinicie el dispositivo).
@@ -104,7 +104,7 @@ Después de configurar el dispositivo para que esté en el canal de actualizaci�
 open /Library/Application\ Support/Microsoft/MAU2.0/Microsoft\ AutoUpdate.app
 ```
 
-Configure el producto con la información de su organización siguiendo las instrucciones de nuestra documentación pública.  
+Configure el producto con la información de su organización siguiendo las instrucciones de nuestra documentación pública.
 
 La protección de red está deshabilitada de forma predeterminada, pero se puede configurar para ejecutarse en uno de los siguientes modos (también denominados niveles de cumplimiento):
 
@@ -136,35 +136,35 @@ mdatp health --field network_protection_status
 
 #### <a name="jamf-deployment"></a>Implementación de JAMF
 
-Una implementación de JAMF correcta requiere un perfil de configuración para establecer el nivel de cumplimiento de la protección de red.  
+Una implementación de JAMF correcta requiere un perfil de configuración para establecer el nivel de cumplimiento de la protección de red.
 Después de crear este perfil de configuración, asígnelo a los dispositivos en los que desea habilitar la protección de red.
 
 ##### <a name="configure-the-enforcement-level"></a>Configuración del nivel de cumplimiento
 
 Nota: Si ya ha configurado Microsoft 365 Defender para punto de conexión en Mac mediante las instrucciones que se enumeran aquí, actualice el archivo plist que implementó anteriormente con el contenido que se muestra a continuación y vuelva a implementarlo desde JAMF.
 
-1. En **Perfiles de configuración de**  **equipos** > , seleccione  **Opciones** > **Aplicaciones & Configuración personalizada**
+1. En **Perfiles de configuración de** **equipos**\>, seleccione **Opciones** \> **Aplicaciones & Configuración personalizada**
 2. Seleccione **Cargar archivo** (archivo PLIST)
 3. Establecer dominio de preferencia en _com.microsoft.wdav_
 4. Carga del siguiente archivo plist
 
 ```xml
 <?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd"> 
-<plist version="1.0"> 
-<dict> 
-    <key>networkProtection</key> 
-    <dict> 
-        <key>enforcementLevel</key> 
-        <string>block</string> 
-    </dict> 
-</dict> 
-</plist> 
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+    <key>networkProtection</key>
+    <dict>
+        <key>enforcementLevel</key>
+        <string>block</string>
+    </dict>
+</dict>
+</plist>
 ```
 
 #### <a name="intune-deployment"></a>Implementación de Intune
 
-Una implementación correcta Intune requiere un perfil de configuración para establecer el nivel de cumplimiento de la protección de red.  
+Una implementación correcta Intune requiere un perfil de configuración para establecer el nivel de cumplimiento de la protección de red.
 Después de crear este perfil de configuración, asígnelo a los dispositivos en los que desea habilitar la protección de red.
 
 ##### <a name="configure-the-enforcement-level-using-intune"></a>Configuración del nivel de cumplimiento mediante Intune
@@ -172,75 +172,75 @@ Después de crear este perfil de configuración, asígnelo a los dispositivos en
 > [!NOTE]
 > Si ya ha configurado Microsoft Defender para punto de conexión en Mac con las instrucciones que se enumeran aquí, actualice el archivo plist que implementó anteriormente con el contenido que se muestra a continuación y vuelva a implementarlo desde Intune.
 
-1. Abra **Administrar** > **configuración del dispositivo**. Seleccione **Administrar** > **perfiles** > **Crear perfil**.
-2. Especifique un nombre para el perfil. Cambie **Platform=macOS** a **Profile type=Custom**. Seleccione **Configurar**.
+1. Abra **Administrar** \> **configuración del dispositivo**. Seleccione **Administrar** \> **perfiles** \> **Crear perfil**.
+2. Especifique un nombre para el perfil. Cambie **Platform=macOS** a **Profile type=Custom**. Seleccione **Configurar**.
 3. Guarde la siguiente carga como _com.microsoft.wdav.xml_
-
-```xml
-<?xml version="1.0" encoding="utf-8"?> 
-<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd"> 
-<plist version="1"> 
-    <dict> 
-        <key>PayloadUUID</key> 
-        <string>C4E6A782-0C8D-44AB-A025-EB893987A295</string> 
-        <key>PayloadType</key> 
-        <string>Configuration</string> 
-        <key>PayloadOrganization</key> 
-        <string>Microsoft</string> 
-        <key>PayloadIdentifier</key> 
-        <string>com.microsoft.wdav</string> 
-        <key>PayloadDisplayName</key> 
-        <string>Microsoft Defender ATP settings</string> 
-        <key>PayloadDescription</key> 
-        <string>Microsoft Defender ATP configuration settings</string> 
-        <key>PayloadVersion</key> 
-        <integer>1</integer> 
-        <key>PayloadEnabled</key> 
-        <true/> 
-        <key>PayloadRemovalDisallowed</key> 
-        <true/> 
-        <key>PayloadScope</key> 
-        <string>System</string> 
-        <key>PayloadContent</key> 
-        <array> 
-            <dict> 
-                <key>PayloadUUID</key> 
-                <string>99DBC2BC-3B3A-46A2-A413-C8F9BB9A7295</string> 
-                <key>PayloadType</key> 
-                <string>com.microsoft.wdav</string> 
-                <key>PayloadOrganization</key> 
-                <string>Microsoft</string> 
-                <key>PayloadIdentifier</key> 
-                <string>com.microsoft.wdav</string> 
-                <key>PayloadDisplayName</key> 
-                <string>Microsoft Defender ATP configuration settings</string> 
-                <key>PayloadDescription</key> 
-                <string/> 
-                <key>PayloadVersion</key> 
-                <integer>1</integer> 
-                <key>PayloadEnabled</key> 
-                <true/> 
-                <key>networkProtection</key> 
-                <dict> 
-                    <key>enforcementLevel</key> 
-                    <string>block</string> 
-                </dict> 
-            </dict> 
-        </array> 
-    </dict> 
-</plist>
-```
+   
+   ```xml
+   <?xml version="1.0" encoding="utf-8"?>
+   <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+   <plist version="1">
+       <dict>
+           <key>PayloadUUID</key>
+           <string>C4E6A782-0C8D-44AB-A025-EB893987A295</string>
+           <key>PayloadType</key>
+           <string>Configuration</string>
+           <key>PayloadOrganization</key>
+           <string>Microsoft</string>
+           <key>PayloadIdentifier</key>
+           <string>com.microsoft.wdav</string>
+           <key>PayloadDisplayName</key>
+           <string>Microsoft Defender ATP settings</string>
+           <key>PayloadDescription</key>
+           <string>Microsoft Defender ATP configuration settings</string>
+           <key>PayloadVersion</key>
+           <integer>1</integer>
+           <key>PayloadEnabled</key>
+           <true/>
+           <key>PayloadRemovalDisallowed</key>
+           <true/>
+           <key>PayloadScope</key>
+           <string>System</string>
+           <key>PayloadContent</key>
+           <array>
+               <dict>
+                   <key>PayloadUUID</key>
+                   <string>99DBC2BC-3B3A-46A2-A413-C8F9BB9A7295</string>
+                   <key>PayloadType</key>
+                   <string>com.microsoft.wdav</string>
+                   <key>PayloadOrganization</key>
+                   <string>Microsoft</string>
+                   <key>PayloadIdentifier</key>
+                   <string>com.microsoft.wdav</string>
+                   <key>PayloadDisplayName</key>
+                   <string>Microsoft Defender ATP configuration settings</string>
+                   <key>PayloadDescription</key>
+                   <string/>
+                   <key>PayloadVersion</key>
+                   <integer>1</integer>
+                   <key>PayloadEnabled</key>
+                   <true/>
+                   <key>networkProtection</key>
+                   <dict>
+                       <key>enforcementLevel</key>
+                       <string>block</string>
+                   </dict>
+               </dict>
+           </array>
+       </dict>
+   </plist>
+   ```
 
 4. Compruebe que el archivo anterior se copió correctamente. Desde el terminal, ejecute el siguiente comando y compruebe que la salida es Correcta:
 
-```bash
-plutil -lint com.microsoft.wdav.xml
-```
+   ```bash
+   plutil -lint com.microsoft.wdav.xml
+   ```
 
-5. Escriba _com.microsoft.wdav_ como nombre del perfil de configuración personalizado.
+5. Escriba _com.microsoft.wdav_ como nombre del perfil de configuración personalizado.
 6. Abra el perfil de configuración y cargue el archivo com.microsoft.wdav.xml. (Este archivo se creó en el paso 3).
-7. Seleccione **Aceptar.**
-8. Seleccione **Administrar** > **asignaciones**. En la pestaña **Incluir** , seleccione los dispositivos para los que desea habilitar la protección de red.
+7. Seleccione **Aceptar.**
+8. Seleccione **Administrar** \> **asignaciones**. En la pestaña **Incluir** , seleccione los dispositivos para los que desea habilitar la protección de red.
 
 ## <a name="how-to-explore-the-features"></a>Cómo explorar las características
 
@@ -252,7 +252,7 @@ plutil -lint com.microsoft.wdav.xml
    > Si va a quitar una directiva o cambiar grupos de dispositivos al mismo tiempo, esto podría provocar un retraso en la implementación de directivas.
    > Sugerencia profesional: puede implementar una directiva sin seleccionar ninguna categoría en un grupo de dispositivos. Esta acción creará una directiva de solo auditoría para ayudarle a comprender el comportamiento del usuario antes de crear una directiva de bloque.
    >
-   > La creación de grupos de dispositivos se admite en El plan 1 y el plan 2 de Defender para punto de conexión.  
+   > La creación de grupos de dispositivos se admite en El plan 1 y el plan 2 de Defender para punto de conexión.
 
 4. [Integre Microsoft Defender para punto de conexión con Defender for Cloud Apps](/defender-cloud-apps/mde-integration) y los dispositivos macOS habilitados para la protección de red tendrán funcionalidades de cumplimiento de directivas de punto de conexión.
    > [!NOTE]
@@ -276,7 +276,7 @@ La protección contra amenazas web forma parte de la protección web en Microsof
 
 Para obtener más información, consulte [Protección de su organización frente a amenazas web](web-threat-protection.md).
 
-### <a name="custom-indicators-of-compromise"></a>Indicadores personalizados de peligro  
+### <a name="custom-indicators-of-compromise"></a>Indicadores personalizados de peligro
 
 El indicador de coincidencia de peligro (IoC) es una característica esencial en todas las soluciones de Endpoint Protection. Esta funcionalidad ofrece a SecOps la capacidad de establecer una lista de indicadores para la detección y el bloqueo (prevención y respuesta).
 
@@ -348,13 +348,13 @@ Al enfrentarse a un comportamiento inesperado, la confusión de los usuarios pue
 - Aplicaciones en la nube aprobadas o recomendadas para su uso
 - Aplicaciones en la nube restringidas o bloqueadas para su uso
 
-Para esta página, se recomienda que su organización use un sitio de SharePoint básico.  
+Para esta página, se recomienda que su organización use un sitio de SharePoint básico.
 
 ### <a name="important-things-to-know"></a>Cosas importantes que debe saber
 
-1. Los dominios de aplicación pueden tardar hasta dos horas (normalmente menos) en propagarse y actualizarse en los dispositivos de punto de conexión, una vez marcados como _Supervisados_.  
-2. De forma predeterminada, se realizará una acción para todas las aplicaciones y dominios marcados como Supervisados en Microsoft Defender portal de aplicaciones en la nube para todos los puntos de conexión incorporados en la organización.  
-3. Las direcciones URL completas no se admiten actualmente y no se enviarán desde Microsoft Defender para aplicaciones en la nube a Microsoft 365 Defender para punto de conexión, si las direcciones URL completas aparecen en Microsoft Defender  para las aplicaciones supervisadas de Aplicaciones en la nube, por lo tanto, no se advertirá al usuario en caso de intento de acceso (por ejemplo, no se admite google.com/drive, mientras que se admite drive.google.com).  
+1. Los dominios de aplicación pueden tardar hasta dos horas (normalmente menos) en propagarse y actualizarse en los dispositivos de punto de conexión, una vez marcados como _Supervisados_.
+2. De forma predeterminada, se realizará una acción para todas las aplicaciones y dominios marcados como Supervisados en Microsoft Defender portal de aplicaciones en la nube para todos los puntos de conexión incorporados en la organización.
+3. Las direcciones URL completas no se admiten actualmente y no se enviarán desde Microsoft Defender para aplicaciones en la nube a Microsoft 365 Defender para punto de conexión, si las direcciones URL completas aparecen en Microsoft Defender  para las aplicaciones supervisadas de Aplicaciones en la nube, por lo tanto, no se advertirá al usuario en caso de intento de acceso (por ejemplo, no se admite google.com/drive, mientras que se admite drive.google.com).
 
 ¿No hay ninguna notificación del usuario final en exploradores de terceros? Comprobación de la configuración del mensaje del sistema
 

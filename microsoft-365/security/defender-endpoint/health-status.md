@@ -17,12 +17,12 @@ ms.collection:
 ms.topic: conceptual
 ms.subservice: mde
 search.appverid: met150
-ms.openlocfilehash: ce71017582e8f29846c44039a513a5e724577fc0
-ms.sourcegitcommit: 0d8fb571024f134d7480fe14cffc5e31a687d356
+ms.openlocfilehash: 0d8fe040f8fb8bc28343ee758d0fd58ae307ecd9
+ms.sourcegitcommit: a20d30f4e5027f90d8ea4cde95d1d5bacfdd2b5e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/20/2022
-ms.locfileid: "68633931"
+ms.lasthandoff: 10/28/2022
+ms.locfileid: "68768113"
 ---
 # <a name="investigate-agent-health-issues"></a>Investigar problemas de estado del agente
 
@@ -68,3 +68,23 @@ En la tabla siguiente se proporciona información sobre los valores devueltos al
 |real_time_protection_subsystem|Subsistema que se usa para proporcionar protección en tiempo real. Si la protección en tiempo real no funciona según lo esperado, esta impresión no estará disponible.|
 |release_ring|Anillo de liberación. Para obtener más información, consulte [Anillos de implementación](deployment-rings.md).|
 |
+
+## <a name="component-specific-health"></a>Estado específico del componente
+
+Puede obtener información de estado más detallada para las distintas características de Defender con `mdatp health --details <feature>`. Por ejemplo:
+
+    ```bash
+    mdatp health --details edr
+    ```
+
+    ```
+    edr_early_preview_enabled                   : "disabled"
+    edr_device_tags                             : []
+    edr_group_ids                               : ""
+    edr_configuration_version                   : "20.199999.main.2022.10.25.03-514032a834557bdd31ac415be6df278d9c2a4c25"
+    edr_machine_id                              : "a47ba049f43319ac669b6291ce73275cd445c9cd"
+    edr_sense_guid                              : "298a1a8c-04dd-4929-8efd-3bb14cb54b94"
+    edr_preferred_geo                           : "unitedstates"
+    ```
+
+Puede ejecutar en `mdatp health --help` versiones recientes para enumerar todas las s admitidas `feature`.

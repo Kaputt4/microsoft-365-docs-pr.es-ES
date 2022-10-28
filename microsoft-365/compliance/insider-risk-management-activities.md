@@ -15,12 +15,12 @@ ms.collection:
 - tier1
 - purview-compliance
 ms.custom: admindeeplinkCOMPLIANCE
-ms.openlocfilehash: e35809f3cf95bd9995c21b638e5a4c1fef8027df
-ms.sourcegitcommit: 181a0aff54842dcbafd834647c6e9ee47304d10f
+ms.openlocfilehash: 540d7bd367f32399004b276ee9d7c92bc70b70a3
+ms.sourcegitcommit: a20d30f4e5027f90d8ea4cde95d1d5bacfdd2b5e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/27/2022
-ms.locfileid: "68734921"
+ms.lasthandoff: 10/28/2022
+ms.locfileid: "68770313"
 ---
 # <a name="investigate-insider-risk-management-activities"></a>Investigación de actividades de administración de riesgos internos
 
@@ -138,7 +138,7 @@ Use las secciones y pestañas siguientes en la página Detalles de la alerta par
 Esta sección contiene información general sobre el usuario y la alerta. Esta información está disponible para contexto al revisar información detallada sobre la actividad de administración de riesgos detectada incluida en la alerta para el usuario:
 
 - **Actividad que generó esta alerta**: muestra la principal actividad potencialmente de riesgo y la coincidencia de directivas durante el período de evaluación de la actividad que condujo a la generación de la alerta.
-- **Evento desencadenante**: muestra el evento desencadenante más reciente que solicitó a la directiva que empezara a asignar puntuaciones de riesgo a la actividad del usuario. Si ha configurado la [integración con el cumplimiento de comunicaciones](/microsoft-365/compliance/communication-compliance-policies#integration-with-insider-risk-management-preview) para *las fugas de datos por parte de usuarios descontentos* o *infracciones de directivas de seguridad por directivas de usuarios descontentos* , el evento desencadenante de estas alertas se limitará a la actividad de cumplimiento de comunicaciones.
+- **Evento desencadenante**: muestra el evento desencadenante más reciente que solicitó a la directiva que empezara a asignar puntuaciones de riesgo a la actividad del usuario. Si ha configurado la [integración con el cumplimiento de comunicaciones](/microsoft-365/compliance/communication-compliance-policies#integration-with-insider-risk-management-preview) para *las pérdidas de datos por parte de usuarios de riesgo* o *infracciones de directivas de seguridad por directivas de usuarios de riesgo* , el evento desencadenante de estas alertas se limitará a la actividad de cumplimiento de la comunicación.
 - **Perfil de usuario**: muestra información general sobre el usuario asignado a la alerta. Si la anonimización está habilitada, los campos nombre de usuario, dirección de correo electrónico, alias y organización se anonimizan.
 - **Historial de alertas** de usuario: muestra una lista de alertas para el usuario durante los últimos 30 días. Incluye un vínculo para ver el historial de alertas completo del usuario.
 

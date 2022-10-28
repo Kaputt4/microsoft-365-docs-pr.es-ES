@@ -1,7 +1,7 @@
 ---
 title: Solución de problemas de licencia para Microsoft Defender para punto de conexión en Mac
 description: Solución de problemas de licencia en Microsoft Defender para punto de conexión en Mac.
-keywords: microsoft, defender, Microsoft Defender para punto de conexión, mac, performance
+keywords: microsoft, defender, Microsoft Defender para punto de conexión, mac, performance, catalina, big sur, monterey, ventura, mde for mac
 ms.service: microsoft-365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
@@ -17,12 +17,12 @@ ms.collection:
 ms.topic: conceptual
 ms.subservice: mde
 search.appverid: met150
-ms.openlocfilehash: caf3b86a353f0158a78df9fa665a87c35be33156
-ms.sourcegitcommit: 4e42bafee965446f44f7f57d1defed2b9b24fce8
+ms.openlocfilehash: 14812ed31800a65c6d0840d18840677ef74e558d
+ms.sourcegitcommit: a20d30f4e5027f90d8ea4cde95d1d5bacfdd2b5e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/30/2022
-ms.locfileid: "68223348"
+ms.lasthandoff: 10/28/2022
+ms.locfileid: "68768135"
 ---
 # <a name="troubleshoot-license-issues-for-microsoft-defender-for-endpoint-on-macos"></a>Solución de problemas de licencia para Microsoft Defender para punto de conexión en macOS
 

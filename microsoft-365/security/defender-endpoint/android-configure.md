@@ -17,12 +17,12 @@ ms.collection:
 ms.topic: conceptual
 ms.subservice: mde
 search.appverid: met150
-ms.openlocfilehash: e6a97b532098631a14850be0afd06b9bc9e2e11d
-ms.sourcegitcommit: b9282493c371d59c2e583b9803825096499b5e2c
+ms.openlocfilehash: 7e5e6aa4d16dd18210754fc5349eb2a71269afc6
+ms.sourcegitcommit: a20d30f4e5027f90d8ea4cde95d1d5bacfdd2b5e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/29/2022
-ms.locfileid: "68150119"
+ms.lasthandoff: 10/28/2022
+ms.locfileid: "68769873"
 ---
 # <a name="configure-defender-for-endpoint-on-android-features"></a>Configurar Defender para punto de conexión en características de Android
 
@@ -47,7 +47,7 @@ Para obtener más información sobre cómo configurar Defender para punto de con
 Defender para punto de conexión en Android permite a los administradores configurar indicadores personalizados para admitir también dispositivos Android. Para obtener más información sobre cómo configurar indicadores personalizados, consulte [Administración de indicadores](manage-indicators.md).
 
 ## <a name="configure-web-protection"></a>Configuración de la protección web
-Defender para punto de conexión en Android permite a los administradores de TI configurar la característica de protección web. Esta funcionalidad está disponible en el Centro de Endpoint Manager Administración de Microsoft.
+Defender para punto de conexión en Android permite a los administradores de TI configurar la característica de protección web. Esta funcionalidad está disponible en el Centro de Administración de Microsoft Endpoint Manager.
 
 La [protección web](web-protection-overview.md) ayuda a proteger los dispositivos frente a las amenazas web y a los usuarios frente a ataques de suplantación de identidad. Tenga en cuenta que los indicadores personalizados y contra la suplantación de identidad (URL y direcciones IP) se admiten como parte de la protección web. El filtrado de contenido web no se admite actualmente en plataformas móviles.
 
@@ -56,14 +56,12 @@ La [protección web](web-protection-overview.md) ayuda a proteger los dispositiv
 > Para obtener más información, consulte [Configuración de la protección web en dispositivos que ejecutan Android](/mem/intune/protect/advanced-threat-protection-manage-android).
 
 ## <a name="network-protection"></a>Protección de red
->[!NOTE]
->La protección de red en Microsoft Defender para punto de conexión está ahora en versión preliminar pública. La siguiente información se refiere al producto preliminar que puede modificarse sustancialmente antes de su lanzamiento comercial. Microsoft no otorga garantías, expresas o implícitas, con respecto a la información que aquí se proporciona.
 
-Esta característica proporciona protección contra amenazas no autorizadas Wi-Fi relacionadas y certificados no autorizados que son el vector de ataque principal para las redes Wi-Fi. Los administradores pueden enumerar los certificados de entidad de certificación (CA) raíz y entidad de certificación raíz privada en el Centro de microsoft Endpoint Manager Administración y establecer la confianza con los puntos de conexión. Proporciona al usuario una experiencia guiada para conectarse a redes seguras y también le notifica si se detecta una amenaza relacionada. 
+Esta característica proporciona protección contra amenazas no autorizadas Wi-Fi relacionadas y certificados no autorizados que son el vector de ataque principal para las redes Wi-Fi. Los administradores pueden enumerar los certificados de entidad de certificación (CA) raíz y entidad de certificación raíz privada en el Centro de Administración de Microsoft Endpoint Manager y establecer la confianza con los puntos de conexión. Proporciona al usuario una experiencia guiada para conectarse a redes seguras y también le notifica si se detecta una amenaza relacionada. 
 
-Incluye varios controles de administración para ofrecer flexibilidad, como la capacidad de configurar la característica desde el centro de microsoft Endpoint Manager Administración, así como agregar certificados de confianza. Los administradores también pueden habilitar [los controles de privacidad](/microsoft-365/security/defender-endpoint/android-configure#privacy-controls) para configurar los datos enviados por Defender para punto de conexión desde dispositivos Android.
+Incluye varios controles de administración para ofrecer flexibilidad, como la capacidad de configurar la característica desde el centro de Administración de Microsoft Endpoint Manager, así como agregar certificados de confianza. Los administradores también pueden habilitar [los controles de privacidad](/microsoft-365/security/defender-endpoint/android-configure#privacy-controls) para configurar los datos enviados por Defender para punto de conexión desde dispositivos Android.
 
-La protección de red en Microsoft Defender para el punto de conexión está habilitada de forma predeterminada. Los administradores pueden usar los pasos siguientes para **configurar la protección de red en dispositivos Android.**
+La protección de red en Microsoft Defender para el punto de conexión está deshabilitada de forma predeterminada. Los administradores pueden usar los pasos siguientes para **configurar la protección de red en dispositivos Android.**
 
 1. En Microsoft Endpoint Manager Administración, vaya a Aplicaciones > Directivas de configuración de aplicaciones. Cree una nueva directiva de configuración de aplicaciones.
     > [!div class="mx-imgBorder"]
@@ -71,7 +69,7 @@ La protección de red en Microsoft Defender para el punto de conexión está hab
 1. Proporcione un nombre y una descripción para identificar de forma única la directiva. Seleccione **"Android Enterprise"** como plataforma y **"Solo perfil de trabajo de propiedad personal"** como tipo de perfil y **"Microsoft Defender"** como aplicación dirigida.
     > [!div class="mx-imgBorder"]
     > ![Imagen de los detalles de la directiva.](images/appconfigdetails.png)
-1. En la página Configuración, seleccione **"Usar diseñador de configuración"** y agregue **"Habilitar protección de red en Microsoft Defender"** como clave y valor como **"0"** para deshabilitar la protección de red. (La protección de red está habilitada de forma predeterminada)
+1. En la página Configuración, seleccione **"Usar diseñador de configuración"** y agregue **"Habilitar protección de red en Microsoft Defender"** como clave y valor como **"1"** para habilitar La protección de red. (La protección de red está habilitada de forma predeterminada)
     > [!div class="mx-imgBorder"]
     > ![Imagen de cómo seleccionar habilitar la directiva de protección de red](images/selectnp.png)
     
@@ -79,19 +77,31 @@ La protección de red en Microsoft Defender para el punto de conexión está hab
     > ![Imagen de agregar directiva de configuración.](images/npvalue.png)
 1. Si su organización usa entidades de certificación raíz que podrían ser privadas por naturaleza, es preciso establecer una confianza explícita entre Intune (solución MDM) y los dispositivos del usuario para que defender no los detecte como certificados no autorizados.  
 
-    Para establecer la confianza para las ENTIDADes de certificación raíz, use **"Lista de certificados de entidad de certificación de confianza para protección de red (versión preliminar)"** como clave y, en valor, agregue la **"lista separada por comas de huellas digitales de certificado"**.
-    > [!div class="mx-imgBorder"]
-    > ![Imagen del certificado de entidad de certificación de confianza.](images/trustca.png)
+    Para establecer la confianza para las ENTIDADes de certificación raíz, use **"Lista de certificados de entidad de certificación de confianza para la protección de red"** como clave y, en valor, agregue la **"lista separada por comas de huellas digitales de certificado (SHA 1)"**.
+    
+    **Ejemplo de formato de huella digital a agregar será** 50 30 06 09 1d 97 d4 f5 ae 39 f7 cb e7 92 7d 7d 7d 65 2d 34 31, 503006091d97d4f5ae39f7cbe7927d7d652d3431 
 
-1. Para otras configuraciones relacionadas con la protección de red, agregue las siguientes claves y el valor correspondiente correspondiente.
+> [!IMPORTANT]
+ > Los caracteres de huella digital SHA-1 del certificado deben tener saperated de espacio en blanco o no separados.
+> Este formato no es válido  
+> 50:30:06:09:1d:97:d4:f5:ae:39:f7:cb:e7:92:7d:7d:65:2d:34:31 
+
+Cualquier otro carácter de separación no es válido. 
+    > ![Image of trusted CA certificate.](images/trustca.png)
+
+5. Para otras configuraciones relacionadas con la protección de red, agregue las siguientes claves y el valor correspondiente correspondiente.
 <br>
 
     | Clave de configuración| Descripción|
     |---|---|
-    |Habilitación de la privacidad de protección de red|1 - Habilitar , 0 - Deshabilitar ; Esta configuración la administran los administradores de TI para habilitar o deshabilitar la privacidad en la protección de red.|
-    |Permitir que los usuarios confíen en redes y certificados|1 - Habilitar , 0 - Deshabilitar ; Los administradores de TI usan esta configuración para habilitar o deshabilitar la experiencia de usuario final en la aplicación para confiar y desconfiar de las redes no seguras y sospechosas y los certificados malintencionados.|
-    |Corrección automática de alertas de protección de red|1 - Habilitar , 0 - Deshabilitar ; Los administradores de TI usan esta configuración para habilitar o deshabilitar las alertas de corrección que se envían cuando un usuario realiza actividades de corrección, como cambiar a un Wi-Fi puntos de acceso más seguro o eliminar certificados sospechosos detectados por Defender.|
-1. Agregue los grupos necesarios en los que se tendrá que aplicar la directiva. Revise y cree la directiva.
+    |Lista de certificados de entidad de certificación de confianza para la protección de red|Este valor lo administra un administrador de seguridad para establecer la confianza para la entidad de certificación raíz y los certificados autofirmados.|
+    |Habilitación de la protección de red en Microsoft Defender|1 - Habilitar, 0- Deshabilitar (valor predeterminado) ; El administrador de TI usa esta configuración para habilitar o deshabilitar las funcionalidades de protección de red en la aplicación defender.|
+    |Habilitación de la privacidad de protección de red|1 - Habilitar (valor predeterminado), 0 - Deshabilitar ; Esta configuración la administran los administradores de TI para habilitar o deshabilitar la privacidad en la protección de red.|
+    |Permitir que los usuarios confíen en redes y certificados|1 - Habilitar , 0 - Deshabilitar (valor predeterminado) ; Los administradores de TI usan esta configuración para habilitar o deshabilitar la experiencia de usuario final en la aplicación para confiar y desconfiar de las redes no seguras y sospechosas y los certificados malintencionados.|
+    |Corrección automática de alertas de protección de red|1 - Habilitar (valor predeterminado), 0 - Deshabilitar ; Los administradores de TI usan esta configuración para habilitar o deshabilitar las alertas de corrección que se envían cuando un usuario realiza actividades de corrección, como cambiar a un punto de acceso Wi-Fi más seguro o eliminar certificados sospechosos detectados por Defender.|
+    |Administración de la detección de protección de red para redes abiertas|0 - Deshabilitar (valor predeterminado), 1 - Modo auditoría; Esta configuración se administra mediante Administración de TI para habilitar o deshabilitar la detección de red abierta.|  
+    |Administración de la detección de protección de red para certificados|0 - Deshabilitar , 1 - Modo de auditoría (valor predeterminado), 2 - Habilitar ; Cuando la protección de red está habilitada, el modo auditoría para la detección de certificados está habilitado de forma predeterminada. En el modo de auditoría, las alertas de notificación se envían a los administradores de SOC, pero no se muestra ninguna notificación del usuario final al usuario cuando defender detecta un certificado incorrecto. Sin embargo, los administradores pueden deshabilitar esta detección con 0 como valor y habilitar la funcionalidad de características completa estableciendo 2 como valor , cuando la característica está habilitada con el valor 2, las notificaciones del usuario final se envían al usuario cuando defender detecta un certificado incorrecto y las alertas también se envían al SOC Administración|
+6. Agregue los grupos necesarios en los que se tendrá que aplicar la directiva. Revise y cree la directiva.
 
 ## <a name="privacy-controls"></a>Controles de privacidad
 
@@ -109,7 +119,7 @@ Los administradores ahora pueden habilitar el control de privacidad para el info
 
 Administración Controles de privacidad (MDM) Siga estos pasos para habilitar la privacidad.
 
-1. En el Centro de administración de Microsoft Endpoint Manager, vaya a **Aplicaciones > Directivas de configuración de aplicaciones > Agregar dispositivos administrados >**.
+1. En el Centro de administración de Microsoft Endpoint Manager, vaya a **Aplicaciones > Directivas de configuración de aplicaciones > Agregar > dispositivos administrados**.
 
 2. Asigne un nombre a la directiva **, Platform > Android Enterprise, seleccione el tipo de perfil**.
 
@@ -159,7 +169,7 @@ Siga estos pasos para **habilitar la evaluación de vulnerabilidades de las apli
 > [!NOTE]
 > De forma predeterminada, esta opción está desactivada para los dispositivos inscritos con el modo de administración de dispositivos.
 
-1. En [El Centro de administración de Microsoft Endpoint Manager](https://go.microsoft.com/fwlink/?linkid=2109431) , vaya a **Perfiles** >  de configuración de **dispositivos** > **Crear perfil** y escriba la siguiente configuración:
+1. En el [Centro de administración de Microsoft Endpoint Manager](https://go.microsoft.com/fwlink/?linkid=2109431), vaya a **Perfiles** >  de configuración de **dispositivos** > **Crear perfil** y escriba la siguiente configuración:
 
    - **Plataforma**: seleccione Administrador de dispositivos Android
    - **Perfil**: seleccione "Personalizado" y haga clic en Crear.
@@ -179,7 +189,7 @@ Siga estos pasos para **habilitar la evaluación de vulnerabilidades de las apli
 
 Defender for Endpoint admite la evaluación de vulnerabilidades de las aplicaciones en el perfil de trabajo. Sin embargo, en caso de que quiera desactivar esta característica para los usuarios de destino, puede usar los pasos siguientes:
 
-1. En [Microsoft Endpoint Manager centro de administración](https://go.microsoft.com/fwlink/?linkid=2109431) y vaya a **Directivas** >  de **configuración** >  de aplicaciones **Agregar** > **dispositivos administrados**.
+1. En el [Centro de administración de Microsoft Endpoint Manager](https://go.microsoft.com/fwlink/?linkid=2109431) y vaya a **Directivas** >  de **configuración** >  de aplicaciones **Agregar** > **dispositivos administrados**.
 2. Asigne un nombre a la directiva; **Plataforma > Android Enterprise**; seleccione el tipo de perfil.
 3. Seleccione **Microsoft Defender para punto de conexión** como la aplicación de destino.
 4. En la página Configuración, seleccione **Usar diseñador de configuración** y agregue **DefenderTVMPrivacyMode** como tipo de clave y valor como **Entero**.
@@ -197,7 +207,7 @@ El control de privacidad del informe phish se puede usar para deshabilitar la re
 
 Siga estos pasos para activarlo para los usuarios de destino:
 
-1. En [El Centro de administración de Microsoft Endpoint Manager](https://go.microsoft.com/fwlink/?linkid=2109431) , vaya a **Perfiles** >  de configuración de **dispositivos** > **Crear perfil** y escriba la siguiente configuración:
+1. En el [Centro de administración de Microsoft Endpoint Manager](https://go.microsoft.com/fwlink/?linkid=2109431), vaya a **Perfiles** >  de configuración de **dispositivos** > **Crear perfil** y escriba la siguiente configuración:
 
    - **Plataforma**: seleccione Administrador de dispositivos Android.
    - **Perfil**: seleccione "Personalizado" y haga clic en **Crear**.
@@ -219,7 +229,7 @@ El uso de este control de privacidad no afectará a la comprobación de cumplimi
 
 Siga estos pasos para activar la privacidad de los usuarios de destino en el perfil de trabajo:
 
-1. En [Microsoft Endpoint Manager centro de administración](https://go.microsoft.com/fwlink/?linkid=2109431) y vaya a **Directivas** >  de **configuración** >  de aplicaciones **Agregar** > **dispositivos administrados**.
+1. En el [Centro de administración de Microsoft Endpoint Manager](https://go.microsoft.com/fwlink/?linkid=2109431) y vaya a **Directivas** >  de **configuración** >  de aplicaciones **Agregar** > **dispositivos administrados**.
 2. Asigne un nombre a la directiva, **Platform > Android Enterprise**, seleccione el tipo de perfil.
 3. Seleccione **Microsoft Defender para punto de conexión** como la aplicación de destino.
 4. En la página Configuración, seleccione **Usar diseñador de configuración** y agregue **DefenderExcludeURLInReport** como tipo de clave y valor como **Integer**.
@@ -236,7 +246,7 @@ El control de privacidad para el informe de amenazas de malware se puede usar pa
 
 Siga estos pasos para activarlo para los usuarios de destino:
 
-1. En [El Centro de administración de Microsoft Endpoint Manager](https://go.microsoft.com/fwlink/?linkid=2109431) , vaya a **Perfiles** >  de configuración de **dispositivos** > **Crear perfil** y escriba la siguiente configuración:
+1. En el [Centro de administración de Microsoft Endpoint Manager](https://go.microsoft.com/fwlink/?linkid=2109431), vaya a **Perfiles** >  de configuración de **dispositivos** > **Crear perfil** y escriba la siguiente configuración:
 
    - **Plataforma**: seleccione Administrador de dispositivos Android.
    - **Perfil**: seleccione "Personalizado" y haga clic en **Crear**.
@@ -258,7 +268,7 @@ El uso de este control de privacidad no afectará a la comprobación de cumplimi
 
 Siga estos pasos para activar la privacidad de los usuarios de destino en el perfil de trabajo:
 
-1. En [Microsoft Endpoint Manager centro de administración](https://go.microsoft.com/fwlink/?linkid=2109431) y vaya a **Directivas** >  de **configuración** >  de aplicaciones **Agregar** > **dispositivos administrados**.
+1. En el [Centro de administración de Microsoft Endpoint Manager](https://go.microsoft.com/fwlink/?linkid=2109431) y vaya a **Directivas** >  de **configuración** >  de aplicaciones **Agregar** > **dispositivos administrados**.
 2. Asigne un nombre a la directiva, **Platform > Android Enterprise**, seleccione el tipo de perfil.
 3. Seleccione **Microsoft Defender para punto de conexión** como la aplicación de destino.
 4. En la página Configuración, seleccione **Usar diseñador de configuración** y agregue **DefenderExcludeAppInReport** como tipo de clave y valor como **Entero**.

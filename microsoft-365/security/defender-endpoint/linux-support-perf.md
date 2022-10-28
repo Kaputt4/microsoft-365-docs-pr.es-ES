@@ -17,12 +17,12 @@ ms.collection:
 ms.topic: conceptual
 ms.subservice: mde
 search.appverid: met150
-ms.openlocfilehash: 929d1512229afd105dae872c932f4d49c24e3b47
-ms.sourcegitcommit: 4e42bafee965446f44f7f57d1defed2b9b24fce8
+ms.openlocfilehash: c64e1eb67de9840fc89a8557c499675fbc711134
+ms.sourcegitcommit: a20d30f4e5027f90d8ea4cde95d1d5bacfdd2b5e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/30/2022
-ms.locfileid: "68225161"
+ms.lasthandoff: 10/28/2022
+ms.locfileid: "68769631"
 ---
 # <a name="troubleshoot-performance-issues-for-microsoft-defender-for-endpoint-on-linux"></a>Solución de problemas de rendimiento de Microsoft Defender para punto de conexión en Linux
 
@@ -102,7 +102,7 @@ Los pasos siguientes se pueden usar para solucionar y mitigar estos problemas:
     ```
 
     > [!NOTE]
-    > El uso ```--output json``` de (tenga en cuenta el guion doble) garantiza que el formato de salida esté listo para el análisis.
+    > El uso `--output json` de (tenga en cuenta el guion doble) garantiza que el formato de salida esté listo para el análisis.
 
     La salida de este comando mostrará todos los procesos y su actividad de examen asociada.
 
@@ -113,7 +113,6 @@ Los pasos siguientes se pueden usar para solucionar y mitigar estos problemas:
     ```
 
     La salida de este comando debe ser similar a la siguiente:
-
 
     ```Output
     --2020-11-14 11:27:27-- https://raw.githubusercontent.com/microsoft.mdatp-xplat/master/linus/diagnostic/high_cpu_parser.py
@@ -136,7 +135,7 @@ Los pasos siguientes se pueden usar para solucionar y mitigar estos problemas:
     ```
 
       La salida de la anterior es una lista de los principales colaboradores de los problemas de rendimiento. La primera columna es el identificador de proceso (PID), la segunda columna es el nombre del proceso y la última columna es el número de archivos examinados, ordenados por impacto.
-    Por ejemplo, la salida del comando será similar a la siguiente: 
+    Por ejemplo, la salida del comando será similar a la siguiente:
 
     ```Output
     ... > python ~/repo/mdatp-xplat/linux/diagnostic/high_cpu_parser.py <~Downloads/output.json | head -n 10
@@ -163,20 +162,20 @@ Los pasos siguientes se pueden usar para solucionar y mitigar estos problemas:
 
 ## <a name="troubleshoot-performance-issues-using-microsoft-defender-for-endpoint-client-analyzer"></a>Solución de problemas de rendimiento mediante Microsoft Defender para punto de conexión Analizador de cliente
 
-
 **Se aplica a:**
-- Problemas de rendimiento de todos los componentes disponibles de Defender para punto de conexión, como AV y EDR  
+- Problemas de rendimiento de todos los componentes disponibles de Defender para punto de conexión, como AV y EDR
 
 El Microsoft Defender para punto de conexión Client Analyzer (MDECA) puede recopilar seguimientos, registros e información de diagnóstico para solucionar problemas de rendimiento en [dispositivos incorporados](/microsoft-365/security/defender-endpoint/onboard-configure) en macOS.
 
 > [!NOTE]
->- Los servicios de soporte al cliente (CSS) de Microsoft usan periódicamente la herramienta Microsoft Defender para punto de conexión Client Analyzer para recopilar información como direcciones IP, nombres de PC que le ayudarán a solucionar problemas que pueda estar experimentando. Microsoft Defender para punto de conexión. Para obtener más información sobre nuestra declaración de privacidad, consulte [Declaración de privacidad de Microsoft](https://privacy.microsoft.com/privacystatement).
->- Como procedimiento recomendado general, se recomienda actualizar el [agente de Microsoft Defender para punto de conexión a la  versión](mac-whatsnew.md)  más reciente disponible y confirmar que el problema persiste antes de investigar más. 
+>
+> - Los servicios de soporte al cliente (CSS) de Microsoft usan periódicamente la herramienta Microsoft Defender para punto de conexión Client Analyzer para recopilar información como direcciones IP, nombres de PC que le ayudarán a solucionar problemas que pueda estar experimentando. Microsoft Defender para punto de conexión. Para obtener más información sobre nuestra declaración de privacidad, consulte [Declaración de privacidad de Microsoft](https://privacy.microsoft.com/privacystatement).
+> - Como procedimiento recomendado general, se recomienda actualizar el [agente de Microsoft Defender para punto de conexión a la versión más reciente disponible](mac-whatsnew.md) y confirmar que el problema persiste antes de investigar más.
 
 Para ejecutar el analizador de cliente para solucionar problemas de rendimiento, consulte [Ejecución del analizador de cliente en macOS y Linux](run-analyzer-macos-linux.md).
 
 >[!NOTE]
->En caso de que después de seguir los pasos anteriores, el problema de rendimiento persiste, póngase en contacto con el soporte técnico para obtener más instrucciones y mitigación. 
+>En caso de que después de seguir los pasos anteriores, el problema de rendimiento persiste, póngase en contacto con el soporte técnico para obtener más instrucciones y mitigación.
 
 ## <a name="see-also"></a>Vea también
 

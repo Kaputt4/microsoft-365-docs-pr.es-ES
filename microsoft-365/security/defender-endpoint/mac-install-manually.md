@@ -1,7 +1,7 @@
 ---
 title: Implementación manual para Microsoft Defender para punto de conexión en macOS
 description: Instale Microsoft Defender para punto de conexión en macOS manualmente, desde la línea de comandos.
-keywords: microsoft, defender, Microsoft Defender para punto de conexión, mac, installation, deploy, uninstallation, intune, jamf, macos, catalina, mojave, high sierra
+keywords: microsoft, defender, Microsoft Defender para punto de conexión, mac, installation, deploy, uninstallation, intune, jamf, macos, catalina, big sur, monterey, ventura, mde for mac
 ms.service: microsoft-365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
@@ -18,12 +18,12 @@ ms.custom: admindeeplinkDEFENDER
 ms.topic: conceptual
 ms.subservice: mde
 search.appverid: met150
-ms.openlocfilehash: 55325d10fd444d34664ed11c63effd7b4e8b6aff
-ms.sourcegitcommit: 4e42bafee965446f44f7f57d1defed2b9b24fce8
+ms.openlocfilehash: faefd13ad36cb643f1e92e7c0b2409fd86bb2236
+ms.sourcegitcommit: a20d30f4e5027f90d8ea4cde95d1d5bacfdd2b5e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/30/2022
-ms.locfileid: "68233758"
+ms.lasthandoff: 10/28/2022
+ms.locfileid: "68768817"
 ---
 # <a name="manual-deployment-for-microsoft-defender-for-endpoint-on-macos"></a>Implementación manual para Microsoft Defender para punto de conexión en macOS
 

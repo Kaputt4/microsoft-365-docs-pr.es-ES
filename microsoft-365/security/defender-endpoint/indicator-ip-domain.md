@@ -18,12 +18,12 @@ ms.collection:
 ms.topic: conceptual
 ms.subservice: mde
 search.appverid: met150
-ms.openlocfilehash: 476058e2d26f14f130a88eca412d34836368987f
-ms.sourcegitcommit: 0d8fb571024f134d7480fe14cffc5e31a687d356
+ms.openlocfilehash: 8256340228128feef0d3f050f72a7b6ea17be576
+ms.sourcegitcommit: a20d30f4e5027f90d8ea4cde95d1d5bacfdd2b5e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/20/2022
-ms.locfileid: "68623044"
+ms.lasthandoff: 10/28/2022
+ms.locfileid: "68768223"
 ---
 # <a name="create-indicators-for-ips-and-urlsdomains"></a>Crear indicadores para direcciones IP y URL/dominios
 
@@ -43,7 +43,7 @@ Al crear indicadores para direcciones IP y direcciones URL o dominios, ahora pue
 
 Para bloquear direcciones IP o direcciones URL malintencionadas (según lo determinado por Microsoft), Defender para punto de conexión puede usar:
 
-- Windows डिफेन्डर SmartScreen para exploradores de Microsoft
+- Windows Defender SmartScreen para exploradores de Microsoft
 - Protección de red para exploradores que no son de Microsoft o llamadas realizadas fuera de un explorador
 
 Microsoft administra el conjunto de datos de inteligencia sobre amenazas para bloquear direcciones IP o direcciones URL malintencionadas.
@@ -141,7 +141,7 @@ Las características de aplicación vulnerables a bloques de administración de 
 
 Microsoft Defender para punto de conexión directiva tiene prioridad sobre Microsoft Defender directiva antivirus. En situaciones en las que Defender para punto de conexión está establecido en **Permitir**, pero Microsoft Defender Antivirus está establecido en **Bloquear**, la directiva tendrá como valor predeterminado **Permitir**.
 
-#### <a name="precedence-for-multiple-active-policies"></a>Precedencia de varias directivas activas
+### <a name="precedence-for-multiple-active-policies"></a>Precedencia de varias directivas activas
 
 La aplicación de varias directivas de filtrado de contenido web diferentes al mismo dispositivo dará lugar a la aplicación de directivas más restrictivas para cada categoría. Imagine la siguiente situación:
 

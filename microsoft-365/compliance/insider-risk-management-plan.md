@@ -15,12 +15,12 @@ ms.collection:
 - tier1
 - purview-compliance
 ms.custom: admindeeplinkCOMPLIANCE
-ms.openlocfilehash: b9814616fb09388775c748db694826d17133cf87
-ms.sourcegitcommit: 181a0aff54842dcbafd834647c6e9ee47304d10f
+ms.openlocfilehash: 6c49afa544e72110ff6646fc68f6ea3da498547d
+ms.sourcegitcommit: a20d30f4e5027f90d8ea4cde95d1d5bacfdd2b5e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/27/2022
-ms.locfileid: "68728321"
+ms.lasthandoff: 10/28/2022
+ms.locfileid: "68767670"
 ---
 # <a name="plan-for-insider-risk-management"></a>Planificar la administración de riesgos internos
 
@@ -103,7 +103,7 @@ Si no tiene un plan E5 Microsoft 365 Enterprise existente y quiere probar la adm
 - Al usar la plantilla **Robo de datos por parte de los usuarios** , debe configurar un conector de RR. HH. de Microsoft 365 para importar periódicamente información de fecha de renuncia y finalización para los usuarios de su organización. Consulte el artículo [Importación de datos con el conector de RR. HH](import-hr-data.md) . para obtener instrucciones paso a paso para configurar el conector de RR. HH. de Microsoft 365.
 - Al usar la plantilla **Pérdidas de datos**, debe configurar al menos una directiva de Prevención de pérdida de datos de Microsoft Purview (DLP) para definir información confidencial en su organización y recibir alertas de riesgo interno para alertas de directiva DLP de gravedad alta. Consulte el artículo [Creación, prueba y optimización de una directiva DLP](create-test-tune-dlp-policy.md) para obtener instrucciones paso a paso para configurar directivas DLP.
 - Al usar la plantilla Infracción de directiva de **seguridad**, debe habilitar Microsoft Defender para punto de conexión para la integración de administración de riesgos internos en El Centro de seguridad de Defender para importar alertas de infracción de seguridad. Para obtener instrucciones paso a paso para habilitar la integración de Defender para punto de conexión con la administración de riesgos internos, consulte [Configuración de características avanzadas en Microsoft Defender para punto de conexión](/windows/security/threat-protection/microsoft-defender-atp/advanced-features).
-- Al usar la plantilla de **usuario descontento** , debe configurar un conector de RR. HH. de Microsoft 365 para importar periódicamente información de rendimiento o estado de degradación para los usuarios de su organización. Consulte el artículo [Importación de datos con el conector de RR. HH](import-hr-data.md) . para obtener instrucciones paso a paso para configurar el conector de RR. HH. de Microsoft 365.
+- Al usar la plantilla **de usuario De riesgo** , debe configurar un conector de RR. HH. de Microsoft 365 para importar periódicamente información de rendimiento o de estado de degradación para los usuarios de su organización. Consulte el artículo [Importación de datos con el conector de RR. HH](import-hr-data.md) . para obtener instrucciones paso a paso para configurar el conector de RR. HH. de Microsoft 365.
 
 ## <a name="test-with-a-small-group-of-users-in-a-production-environment"></a>Prueba con un pequeño grupo de usuarios en un entorno de producción
 

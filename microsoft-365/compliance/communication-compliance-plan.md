@@ -19,17 +19,17 @@ ms.collection:
 search.appverid:
 - MET150
 - MOE150
-ms.openlocfilehash: c1463866c97e5618caa4bab0cc45328d1849fc01
-ms.sourcegitcommit: 181a0aff54842dcbafd834647c6e9ee47304d10f
+ms.openlocfilehash: eb413a08d0239f86205ebb7c0e5038a9888dcc89
+ms.sourcegitcommit: a20d30f4e5027f90d8ea4cde95d1d5bacfdd2b5e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/27/2022
-ms.locfileid: "68730895"
+ms.lasthandoff: 10/28/2022
+ms.locfileid: "68769565"
 ---
 # <a name="plan-for-communication-compliance"></a>Planear el cumplimiento de las comunicaciones
 
->[!IMPORTANT]
->Cumplimiento de comunicaciones de Microsoft Purview proporciona las herramientas para ayudar a las organizaciones a detectar infracciones de cumplimiento normativo (por ejemplo, SEC o FINRA), como información confidencial o confidencial, hostigamiento o amenazante del lenguaje y uso compartido de contenido para adultos. Creados con privacidad por diseño, los nombres de usuario se seudonimizan de forma predeterminada, los controles de acceso basados en roles están integrados, los investigadores son admitidos por un administrador y los registros de auditoría están en su lugar para ayudar a garantizar la privacidad del nivel de usuario.
+> [!IMPORTANT]
+> Cumplimiento de comunicaciones de Microsoft Purview proporciona las herramientas para ayudar a las organizaciones a detectar infracciones de cumplimiento normativo (por ejemplo, SEC o FINRA), como información confidencial o confidencial, hostigamiento o amenazante del lenguaje y uso compartido de contenido para adultos. Creados con privacidad por diseño, los nombres de usuario se seudonimizan de forma predeterminada, los controles de acceso basados en roles están integrados, los investigadores son admitidos por un administrador y los registros de auditoría están en su lugar para ayudar a garantizar la privacidad del nivel de usuario.
 
 Antes de empezar a trabajar con [el cumplimiento de la comunicación](/microsoft-365/compliance/communication-compliance) en su organización, hay importantes actividades y consideraciones de planeamiento que deben revisar los equipos de administración de la tecnología de la información y el cumplimiento. Comprender y planear exhaustivamente la implementación en las siguientes áreas ayudará a garantizar que la implementación y el uso de las características de cumplimiento de comunicaciones funcionen sin problemas y se alineen con los procedimientos recomendados para la solución.
 

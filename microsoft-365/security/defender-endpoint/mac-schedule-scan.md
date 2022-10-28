@@ -1,7 +1,7 @@
 ---
 title: Programación de exámenes con Microsoft Defender para punto de conexión en macOS
 description: Obtenga información sobre cómo programar un tiempo de examen automático para Microsoft Defender para punto de conexión en macOS con el fin de proteger mejor los recursos de su organización.
-keywords: microsoft, defender, Microsoft Defender para punto de conexión, mac, scans, antivirus
+keywords: microsoft, defender, Microsoft Defender para punto de conexión, mac, scans, antivirus, catalina, big sur, monterey, ventura, mde for mac
 ms.service: microsoft-365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
@@ -17,12 +17,12 @@ ms.collection:
 ms.topic: conceptual
 ms.subservice: mde
 search.appverid: met150
-ms.openlocfilehash: 64d1657c2e078c6e1a649e597d6ab0a37f262850
-ms.sourcegitcommit: 4e42bafee965446f44f7f57d1defed2b9b24fce8
+ms.openlocfilehash: 791288321d6968d63ba551e0872491a773ce53d4
+ms.sourcegitcommit: a20d30f4e5027f90d8ea4cde95d1d5bacfdd2b5e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/30/2022
-ms.locfileid: "68223576"
+ms.lasthandoff: 10/28/2022
+ms.locfileid: "68769389"
 ---
 # <a name="schedule-scans-with-microsoft-defender-for-endpoint-on-macos"></a>Programación de exámenes con Microsoft Defender para punto de conexión en macOS
 

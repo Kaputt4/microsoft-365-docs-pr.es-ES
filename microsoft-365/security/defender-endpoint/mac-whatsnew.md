@@ -1,7 +1,7 @@
 ---
 title: Novedades de Microsoft Defender para punto de conexión en Mac
 description: Obtenga información sobre los cambios principales de las versiones anteriores de Microsoft Defender para punto de conexión en Mac.
-keywords: microsoft, defender, Microsoft Defender para punto de conexión, mac, installation, macos, whatsnew
+keywords: microsoft, defender, Microsoft Defender para punto de conexión, mac, installation, macos, whatsnew, catalina, big sur, monterey, ventura, mde for mac
 ms.service: microsoft-365-security
 ms.mktglfcycl: security
 ms.sitesec: library
@@ -17,12 +17,12 @@ ms.collection:
 ms.topic: reference
 ms.subservice: mde
 search.appverid: met150
-ms.openlocfilehash: f777106544a361fd9a288268be049685f4fad285
-ms.sourcegitcommit: 0ca3ab2abe07810e9b2cc2d806e3c6b9f35b146c
+ms.openlocfilehash: 229e118612f195ea3fb8d0c7fd5e89ca7cf926e5
+ms.sourcegitcommit: a20d30f4e5027f90d8ea4cde95d1d5bacfdd2b5e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/24/2022
-ms.locfileid: "68684725"
+ms.lasthandoff: 10/28/2022
+ms.locfileid: "68770423"
 ---
 # <a name="whats-new-in-microsoft-defender-for-endpoint-on-mac"></a>Novedades de Microsoft Defender para punto de conexión en Mac
 
@@ -53,6 +53,9 @@ Para obtener más información sobre Microsoft Defender para punto de conexión 
 <br/>
 </details>
 
+> [!IMPORTANT]
+> Se trata de una versión mínima recomendada de MDE para macOS Ventura.
+
 <details>
   <summary>Oct-2022 (compilación: 101.82.21 | Versión: 20.122082.18221.0)</summary>
 
@@ -71,9 +74,6 @@ Para obtener más información sobre Microsoft Defender para punto de conexión 
 
 <br/>
 </details>
-
-> [!IMPORTANT]
-> Se trata de una versión mínima de MDE sin problemas conocidos en macOS Ventura el día de publicar las notas de la versión. Entre ahora y macOS Ventura GA, Apple todavía puede lanzar Ventura Beta con cambios en la plataforma que afectan a la experiencia de MDE. Visite estas notas de la versión en torno a la fecha de disponibilidad general de Ventura para ver el número de versión de MDE compatible con Ventura.
 
 <details>
   <summary>Ago-2022 (compilación: 101.78.13 | Versión de lanzamiento: 20.122072.17813.0)</summary>

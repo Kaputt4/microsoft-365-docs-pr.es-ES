@@ -17,12 +17,12 @@ ms.collection:
 ms.topic: conceptual
 ms.subservice: mde
 search.appverid: met150
-ms.openlocfilehash: fb5736f0de612e4de3bc19f873721a2577ca6521
-ms.sourcegitcommit: 0d8fb571024f134d7480fe14cffc5e31a687d356
+ms.openlocfilehash: 2b0046df2cd01ada1ce2816520c9878858a133f7
+ms.sourcegitcommit: a20d30f4e5027f90d8ea4cde95d1d5bacfdd2b5e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/20/2022
-ms.locfileid: "68630060"
+ms.lasthandoff: 10/28/2022
+ms.locfileid: "68768255"
 ---
 # <a name="configure-microsoft-defender-for-endpoint-on-ios-features"></a>Configurar Microsoft Defender para punto de conexión en las características de iOS
 
@@ -78,7 +78,7 @@ Esta configuración está disponible tanto para los dispositivos inscritos (MDM)
 
 1. **Deshabilitar protección web (MDM)** Siga estos pasos para deshabilitar **La protección web** para dispositivos inscritos.
 
-    - En [el Centro de administración de Microsoft Endpoint Manager](https://go.microsoft.com/fwlink/?linkid=2109431), vaya a **Directivas** >  de **configuración** >  de aplicaciones **Agregar** > **dispositivos administrados**.
+    - En el [Centro de administración de Microsoft Endpoint Manager](https://go.microsoft.com/fwlink/?linkid=2109431), vaya a **Directivas** >  de **configuración** >  de aplicaciones **Agregar** > **dispositivos administrados**.
     - Asigne un nombre a la directiva, **Platform > iOS/iPadOS**.
     - Seleccione Microsoft Defender para punto de conexión como la aplicación de destino.
     - En la página Configuración, seleccione Usar diseñador de configuración y agregue **WebProtection** como tipo de clave y valor como **Cadena**.
@@ -89,7 +89,7 @@ Esta configuración está disponible tanto para los dispositivos inscritos (MDM)
 
 1. **Deshabilitar protección web (MAM)** Siga estos pasos para deshabilitar **La protección web** para dispositivos no inscritos.
 
-    - En [el Centro de administración de Microsoft Endpoint Manager](https://go.microsoft.com/fwlink/?linkid=2109431), vaya a **Directivas** >  de **configuración** >  de aplicaciones **Agregar** > **aplicaciones administradas**.
+    - En el [Centro de administración de Microsoft Endpoint Manager](https://go.microsoft.com/fwlink/?linkid=2109431), vaya a **Directivas** >  de **configuración** >  de aplicaciones **Agregar** > **aplicaciones administradas**.
     - Asignar a la directiva un nombre.
     - En Seleccionar aplicaciones públicas, elija Microsoft Defender para punto de conexión como aplicación de destino.
     - En la página Configuración, en Configuración general, agregue **WebProtection** como la clave y el valor como **false**.
@@ -100,22 +100,21 @@ Esta configuración está disponible tanto para los dispositivos inscritos (MDM)
 
 ## <a name="configure-network-protection"></a>Configuración de la protección de red
 
->[!NOTE]
->La protección de red en Microsoft Defender para punto de conexión está ahora en versión preliminar pública. La siguiente información se relaciona con la versión preliminar del producto que puede modificarse sustancialmente antes de su lanzamiento comercial. Microsoft no otorga garantías, expresas o implícitas, con respecto a la información que aquí se proporciona.
 
-La protección de red en Microsoft Defender para el punto de conexión está habilitada de forma predeterminada. Los administradores pueden usar los pasos siguientes para configurar la compatibilidad de MAM con la protección de red en dispositivos iOS.
+La protección de red en Microsoft Defender para el punto de conexión está deshabilitada de forma predeterminada. Los administradores pueden usar los pasos siguientes para configurar la compatibilidad de MAM con la protección de red en dispositivos iOS. (El registro de dispositivos authenticator es necesario para la configuración de MAM) en dispositivos iOS. La inicialización de Network Protection requerirá que el usuario final abra la aplicación una vez. 
 
 1. En Microsoft Endpoint Manager Administración, vaya a Aplicaciones > Directivas de configuración de aplicaciones. Cree una nueva directiva de configuración de aplicaciones.
    :::image type="content" source="images/addiosconfig.png" alt-text="Agregue la directiva de configuración." lightbox="images/addiosconfig.png":::
 
 2. Proporcione un nombre y una descripción para identificar de forma única la directiva. A continuación, haga clic en "Seleccionar aplicaciones públicas" y elija "Microsoft Defender" para Platform iOS/IPadOS :::image type="content" source="images/nameiosconfig.png" alt-text="Name the configuration (Nombre de iOS/IPadOS de la plataforma)." lightbox="images/nameiosconfig.png":::
 
-3. En la página Configuración, agregue "DefenderNetworkProtectionEnable" como clave y valor como "false" para deshabilitar La protección de red. (La protección de red está habilitada de forma predeterminada) :::image type="content" source="images/addiosconfigvalue.png" alt-text="Agregue el valor de configuración." lightbox="images/addiosconfigvalue.png":::
+3. En la página Configuración, agregue "DefenderNetworkProtectionEnable" como clave y valor como "true" para deshabilitar La protección de red. (La protección de red está deshabilitada de forma predeterminada) :::image type="content" source="images/addiosconfigvalue.png" alt-text="Agregue el valor de configuración." lightbox="images/addiosconfigvalue.png":::
 
 4. Para otras configuraciones relacionadas con la protección de red, agregue las siguientes claves y el valor correspondiente correspondiente.
 
     |Key | Valor predeterminado (true-enable, false-disable)|Descripción|
     |---|---|---|
+    |DefenderOpenNetworkDetection|0|1- Habilitar, 0 - Deshabilitar; Esta configuración se administra mediante Administración de TI para habilitar o deshabilitar alertas informativas de detección de red abiertas sin experiencia de detección de usuarios finales|
     |DefenderEndUserTrustFlowEnable| false | Permitir que los usuarios confíen en redes y certificados|
     |DefenderNetworkProtectionAutoRemediation| true |El administrador de TI usa esta configuración para habilitar o deshabilitar las alertas de corrección que se envían cuando un usuario realiza actividades de corrección, como cambiar a puntos de acceso WIFI más seguros o eliminar certificados sospechosos detectados por Defender.|
     |DefenderNetworkProtectionPrivacy| true |Esta configuración la administra el administrador de TI para habilitar o deshabilitar la privacidad en la protección de red.|
@@ -139,7 +138,7 @@ A continuación se indican los pasos para configurar directivas de protección d
 
 2. Seleccione Guardar. Debería ver **que el estado de la conexión** ahora está establecido en **Habilitado**.
 
-3. Crear directiva de protección de aplicaciones: una vez completada la configuración del conector de Microsoft Defender para punto de conexión, vaya a **Aplicaciones** \> **अनुप्रयोग सुरक्षा directivas** (en Directiva) para crear una nueva directiva o actualizar una existente.
+3. Crear directiva de protección de aplicaciones: una vez completada la configuración del conector de Microsoft Defender para punto de conexión, vaya a **Aplicaciones** \> **Protección de aplicaciones directivas** (en Directiva) para crear una nueva directiva o actualizar una existente.
 
 4. Seleccione la plataforma, **Aplicaciones, Protección de datos,** Configuración de requisitos de acceso que su organización requiere para la directiva.
 
@@ -164,7 +163,7 @@ Los clientes ahora pueden habilitar el control de privacidad para el informe de 
 
 1. **Administración Controles de privacidad (MDM)** Siga estos pasos para habilitar la privacidad y no recopilar el nombre de dominio como parte del informe de alertas de phish para dispositivos inscritos.
 
-    - En [el Centro de administración de Microsoft Endpoint Manager](https://go.microsoft.com/fwlink/?linkid=2109431), vaya a **Directivas** >  de **configuración** >  de aplicaciones **Agregar** > **dispositivos administrados**.
+    - En el [Centro de administración de Microsoft Endpoint Manager](https://go.microsoft.com/fwlink/?linkid=2109431), vaya a **Directivas** >  de **configuración** >  de aplicaciones **Agregar** > **dispositivos administrados**.
 
     - Asigne un nombre a la directiva, **Platform > iOS/iPadOS**, seleccione el tipo de perfil.
 
@@ -180,7 +179,7 @@ Los clientes ahora pueden habilitar el control de privacidad para el informe de 
 
 1. **Administración Controles de privacidad (MAM)** Siga estos pasos para habilitar la privacidad y no recopilar el nombre de dominio como parte del informe de alertas de phish para dispositivos no inscritos.
 
-    - En [el Centro de administración de Microsoft Endpoint Manager](https://go.microsoft.com/fwlink/?linkid=2109431), vaya a **Directivas** >  de **configuración** >  de aplicaciones **Agregar** > **aplicaciones administradas**.
+    - En el [Centro de administración de Microsoft Endpoint Manager](https://go.microsoft.com/fwlink/?linkid=2109431), vaya a **Directivas** >  de **configuración** >  de aplicaciones **Agregar** > **aplicaciones administradas**.
 
     - Asignar a la directiva un nombre.
 
@@ -213,7 +212,7 @@ Microsoft Defender para punto de conexión en iOS habilita **permisos opcionales
 
 1. **flujo de Administración (MDM)** Siga estos pasos para habilitar el permiso **VPN opcional** para los dispositivos inscritos.
 
-    - En [el Centro de administración de Microsoft Endpoint Manager](https://go.microsoft.com/fwlink/?linkid=2109431), vaya a **Directivas** >  de **configuración** >  de aplicaciones **Agregar** > **dispositivos administrados**.
+    - En el [Centro de administración de Microsoft Endpoint Manager](https://go.microsoft.com/fwlink/?linkid=2109431), vaya a **Directivas** >  de **configuración** >  de aplicaciones **Agregar** > **dispositivos administrados**.
 
     - Asigne un nombre a la directiva y seleccione **Platform > iOS/iPadOS**.
 
@@ -243,7 +242,7 @@ Para proteger el acceso a los datos corporativos en dispositivos iOS con jailbre
 
 Siga los pasos siguientes para crear una directiva de cumplimiento en dispositivos con jailbreak.
 
-1. En [el Centro de administración de Microsoft Endpoint Manager](https://go.microsoft.com/fwlink/?linkid=2109431), vaya a **Directivas****de cumplimiento** >  de dispositivos  > **Crear directiva**. Seleccione "iOS/iPadOS" como plataforma y haga clic en **Crear**.
+1. En el [Centro de administración de Microsoft Endpoint Manager](https://go.microsoft.com/fwlink/?linkid=2109431), vaya a **Directivas****de cumplimiento** >  de dispositivos  > **Crear directiva**. Seleccione "iOS/iPadOS" como plataforma y haga clic en **Crear**.
 
    :::image type="content" source="images/ios-jb-policy.png" alt-text="Pestaña Crear directiva" lightbox="images/ios-jb-policy.png":::
 
@@ -280,13 +279,13 @@ Los administradores pueden usar los pasos siguientes para configurar la evaluaci
 ### <a name="on-a-supervised-device"></a>En un dispositivo supervisado
 
 1. Asegúrese de que el dispositivo está configurado en [modo supervisado](ios-install.md#complete-deployment-for-supervised-devices).
-1. Para habilitar la característica en el [Centro de administración de Microsoft Endpoint Manager](https://go.microsoft.com/fwlink/?linkid=2109431), vaya a **Seguridad** >  de punto de conexión **Microsoft Defender para punto de conexión** >  **Incronizar aplicaciones para dispositivos iOS/iPadOS**.
+1. Para habilitar la característica en el [Centro de administración de Microsoft Endpoint Manager](https://go.microsoft.com/fwlink/?linkid=2109431), vaya a **Seguridad** >  de punto de conexión **Microsoft Defender para punto de conexión** >  **Incronizar la aplicación para dispositivos iOS/iPadOS**.
 
      :::image type="content" source="images/tvm-app-sync-toggle.png" alt-text="Alternancia de sincronización de aplicacionesSup" lightbox="images/tvm-app-sync-toggle.png":::
 
 ### <a name="on-an-unsupervised-device"></a>En un dispositivo sin supervisión
 
-1. Para habilitar la característica en el [Centro de administración de Microsoft Endpoint Manager](https://go.microsoft.com/fwlink/?linkid=2109431), vaya a **Seguridad** >  de punto de conexión **Microsoft Defender para punto de conexión** >  **Incronizar aplicaciones para dispositivos iOS/iPadOS**.
+1. Para habilitar la característica en el [Centro de administración de Microsoft Endpoint Manager](https://go.microsoft.com/fwlink/?linkid=2109431), vaya a **Seguridad** >  de punto de conexión **Microsoft Defender para punto de conexión** >  **Incronizar la aplicación para dispositivos iOS/iPadOS**.
 
    :::image type="content" source="images/tvm-app-sync-toggle.png" alt-text="Alternancia de sincronización de aplicaciones" lightbox="images/tvm-app-sync-toggle.png":::
 
@@ -321,7 +320,7 @@ Los clientes ahora tienen la opción de configurar la capacidad de enviar datos 
 
 Siga estos pasos para configurar la opción para enviar datos de comentarios a Microsoft:
 
-1. En [Microsoft Endpoint Manager centro de administración](https://go.microsoft.com/fwlink/?linkid=2109431) y vaya a **Directivas** >  de **configuración** >  de aplicaciones **Agregar** > **dispositivos administrados**.
+1. En el [Centro de administración de Microsoft Endpoint Manager](https://go.microsoft.com/fwlink/?linkid=2109431) y vaya a **Directivas** >  de **configuración** >  de aplicaciones **Agregar** > **dispositivos administrados**.
 
 1. Asigne un nombre a la directiva, **Platform > iOS/iPadOS**, seleccione el tipo de perfil.
 

@@ -1,7 +1,7 @@
 ---
 title: Recursos para Microsoft Defender para punto de conexión en Mac
 description: Recursos para Microsoft Defender para punto de conexión en Mac, incluido cómo desinstalarlo, cómo recopilar registros de diagnóstico, comandos de la CLI y problemas conocidos con el producto.
-keywords: microsoft, defender, Microsoft Defender para punto de conexión, mac, installation, deploy, uninstallation, intune, jamf, macos, catalina, mojave, high sierra
+keywords: microsoft, defender, Microsoft Defender para punto de conexión, mac, installation, deploy, uninstallation, intune, jamf, macos, catalina, big sur, monterey, ventura, mde for mac
 ms.service: microsoft-365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
@@ -17,12 +17,12 @@ ms.collection:
 ms.topic: conceptual
 ms.subservice: mde
 search.appverid: met150
-ms.openlocfilehash: 8ef85f1d1cbf3bb37e5f3eec869e3c99105e18c5
-ms.sourcegitcommit: 4e42bafee965446f44f7f57d1defed2b9b24fce8
+ms.openlocfilehash: a9c853b2a4728a0174f4831ccff965021b1e279b
+ms.sourcegitcommit: a20d30f4e5027f90d8ea4cde95d1d5bacfdd2b5e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/30/2022
-ms.locfileid: "68224214"
+ms.lasthandoff: 10/28/2022
+ms.locfileid: "68767853"
 ---
 # <a name="resources-for-microsoft-defender-for-endpoint-on-macos"></a>Recursos para Microsoft Defender para punto de conexión en macOS
 

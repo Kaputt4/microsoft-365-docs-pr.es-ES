@@ -12,12 +12,12 @@ search.appverid: MET150
 ms.collection: ''
 ms.localizationpriority: medium
 description: Obtenga información sobre la retención de datos para Microsoft Whiteboard en Azure y OneDrive para la Empresa.
-ms.openlocfilehash: 136506afcec7fe067a270e0577678b5b6a9ec9ff
-ms.sourcegitcommit: 87283bb02ca750286f7c069f811b788730ed5832
+ms.openlocfilehash: f450c8a715f6dc865c4bcdb889e98288ad9d1561
+ms.sourcegitcommit: a20d30f4e5027f90d8ea4cde95d1d5bacfdd2b5e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/21/2022
-ms.locfileid: "68662849"
+ms.lasthandoff: 10/28/2022
+ms.locfileid: "68769896"
 ---
 # <a name="manage-data-for-microsoft-whiteboard"></a>Administración de datos para La pizarra de Microsoft
 
@@ -27,7 +27,7 @@ Para administrar los datos, primero debe asegurarse de que Whiteboard está habi
 
 ## <a name="azure-storage-overview"></a>Introducción a Azure Storage
 
->[!NOTE]
+> [!NOTE]
 > La siguiente información se aplica a las pizarras que se almacenan en Azure.
 
 Whiteboard almacena actualmente contenido de forma segura en Azure. Los datos pueden almacenarse en ubicaciones diferentes, en función del país y cuando Whiteboard cambia a almacenar contenido nuevo en esas ubicaciones. Para comprobar dónde se crean los nuevos datos, consulte [Dónde se almacenan los datos del cliente de Microsoft 365](/microsoft-365/enterprise/o365-data-locations).
@@ -38,7 +38,7 @@ El contenido de Azure no admite la prevención de pérdida de datos (DLP), la ex
 
 Estamos cambiando la forma en que se almacenan las pizarras cuando se elimina la cuenta de un usuario en Azure. Antes del cambio, también se eliminaron las pizarras que eran propiedad de la cuenta de un usuario eliminado. Sin embargo, las pizarras compartidas con otros usuarios no se eliminaron.
 
->[!NOTE]
+> [!NOTE]
 > Las pizarras almacenadas en OneDrive para la Empresa se controlarán como cualquier otro contenido de OneDrive para la Empresa. Para obtener más información, vea [Establecer la retención de OneDrive para usuarios eliminados](/onedrive/set-retention).
 
 A partir del **1 de junio de 2022**, el comportamiento de las pizarras en Azure ha cambiado. Se eliminarán las pizarras compartidas con otros usuarios.

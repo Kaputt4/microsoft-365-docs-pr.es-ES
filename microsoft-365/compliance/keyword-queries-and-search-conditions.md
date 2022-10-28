@@ -1,6 +1,6 @@
 ---
 title: Consultas de palabras clave y condiciones de búsqueda para eDiscovery
-description: Obtenga información sobre las propiedades de correo electrónico y documentos que puede buscar mediante las herramientas de búsqueda de exhibición de documentos electrónicos de Microsoft 365.
+description: Obtenga información sobre las propiedades de correo electrónico y documentos que puede buscar mediante las herramientas de búsqueda de exhibición de documentos electrónicos de Microsoft Purview.
 f1.keywords:
 - NOCSH
 ms.author: robmazz
@@ -21,12 +21,12 @@ search.appverid:
 - MET150
 ms.custom:
 - seo-marvel-apr2020
-ms.openlocfilehash: 788633afddc695ad35d6caee116e99b536e6d0f7
-ms.sourcegitcommit: e7dbe3b0d97cd8c64b5ae15f990d5e4b1dc9c464
+ms.openlocfilehash: 721d537395dd4db5dcc6d7acd9cb1533fc4510f9
+ms.sourcegitcommit: a20d30f4e5027f90d8ea4cde95d1d5bacfdd2b5e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/24/2022
-ms.locfileid: "68688296"
+ms.lasthandoff: 10/28/2022
+ms.locfileid: "68768993"
 ---
 # <a name="keyword-queries-and-search-conditions-for-ediscovery"></a>Consultas de palabras clave y condiciones de búsqueda para eDiscovery
 
@@ -64,7 +64,7 @@ En la tabla siguiente se enumeran las propiedades de mensaje de correo electrón
 |Bcc|Campo CCO de un mensaje de correo electrónico. <sup>1</sup>|`bcc:pilarp@contoso.com` <p> `bcc:pilarp` <p> `bcc:"Pilar Pinilla"`|Todos los ejemplos devuelven mensajes con *Pilar Pinilla* incluido en el campo CCO.<br>([Consulte Expansión de destinatarios](keyword-queries-and-search-conditions.md#recipient-expansion))|
 |Categoría|Las categorías para buscar. Los usuarios pueden definir categorías mediante Outlook o Outlook en la Web (anteriormente conocidas como Outlook Web App). Los valores posibles son: <ul><li>azul<li>verde<li>naranja<li>púrpura<li>rojo<li>amarillo</li></ul>|`category:"Red Category"`|Mensajes a los que se ha asignado la categoría *roja* en los buzones de origen.|
 |Cc|Campo Cc de un mensaje de correo electrónico. <sup>1</sup>|`cc:pilarp@contoso.com` <p> `cc:"Pilar Pinilla"`|En ambos ejemplos, los mensajes con *Pilar Pinilla* especificados en el campo Cc.<br>([Consulte Expansión de destinatarios](keyword-queries-and-search-conditions.md#recipient-expansion))|
-|Folderid|Identificador de carpeta (GUID) de una carpeta de buzón específica. Si usa esta propiedad, asegúrese de buscar en el buzón en el que se encuentra la carpeta especificada. Solo se buscará la carpeta especificada. No se buscarán las subcarpetas de la carpeta. Para buscar subcarpetas, debe usar la propiedad *Folderid* para la subcarpeta que desea buscar. <p> Para obtener más información sobre cómo buscar la propiedad *Folderid* y usar un script para obtener los identificadores de carpeta de un buzón específico, vea [Usar búsqueda de contenido para colecciones de destino](use-content-search-for-targeted-collections.md).|`folderid:4D6DD7F943C29041A65787E30F02AD1F00000000013A0000` <p> `folderid:2370FB455F82FC44BE31397F47B632A70000000001160000 AND participants:garthf@contoso.com`|En el primer ejemplo se devuelven todos los elementos de la carpeta de buzón especificada. En el segundo ejemplo se devuelven todos los elementos de la carpeta de buzón de correo especificada enviadas o recibidas por *garthf@contoso.com*.|
+|Folderid|Identificador de carpeta (GUID) de una carpeta de buzón específica en formato de 48 caracteres. Si usa esta propiedad, asegúrese de buscar en el buzón en el que se encuentra la carpeta especificada. Solo se buscará la carpeta especificada. No se buscarán las subcarpetas de la carpeta. Para buscar subcarpetas, debe usar la propiedad *Folderid* para la subcarpeta que desea buscar. <p> Para obtener más información sobre cómo buscar la propiedad *Folderid* y usar un script para obtener los identificadores de carpeta de un buzón específico, vea [Usar búsqueda de contenido para colecciones de destino](use-content-search-for-targeted-collections.md).|`folderid:4D6DD7F943C29041A65787E30F02AD1F00000000013A0000` <p> `folderid:2370FB455F82FC44BE31397F47B632A70000000001160000 AND participants:garthf@contoso.com`|En el primer ejemplo se devuelven todos los elementos de la carpeta de buzón especificada. En el segundo ejemplo se devuelven todos los elementos de la carpeta de buzón de correo especificada enviadas o recibidas por *garthf@contoso.com*.|
 |From|El remitente de un mensaje de correo electrónico.<sup>1</sup>|`from:pilarp@contoso.com` <p> `from:contoso.com`|Los mensajes enviados por el usuario especificado o enviados desde un dominio especificado.<br>([Consulte Expansión de destinatarios](keyword-queries-and-search-conditions.md#recipient-expansion))|
 |HasAttachment|Indica si un mensaje tiene datos adjuntos. Use los valores **true** o **false**.|`from:pilar@contoso.com AND hasattachment:true`|Mensajes enviados por el usuario especificado que tienen datos adjuntos.|
 |Importancia|The importance of an email message, which a sender can specify when sending a message. By default, messages are sent with normal importance, unless the sender sets the importance as **high** or **low**.|`importance:high` <p> `importance:medium` <p> `importance:low`|Los mensajes que están marcados con importancia alta, importancia media o importancia baja.|

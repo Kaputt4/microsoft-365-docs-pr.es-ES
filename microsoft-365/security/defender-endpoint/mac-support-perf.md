@@ -1,7 +1,7 @@
 ---
 title: Solución de problemas de rendimiento para Microsoft Defender para punto de conexión en macOS
 description: Solución de problemas de rendimiento en Microsoft Defender para punto de conexión en macOS.
-keywords: microsoft, defender, Microsoft Defender para punto de conexión, mac, performance
+keywords: microsoft, defender, Microsoft Defender para punto de conexión, mac, performance, catalina, big sur, monterey, ventura, mde for mac
 ms.service: microsoft-365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
@@ -17,12 +17,12 @@ ms.collection:
 ms.topic: conceptual
 ms.subservice: mde
 search.appverid: met150
-ms.openlocfilehash: a4272fe770fb1d2fb471dbd9515f9b89be0fcc09
-ms.sourcegitcommit: 4e42bafee965446f44f7f57d1defed2b9b24fce8
+ms.openlocfilehash: 738c21b637e0708c86937044cd4c026ba99e162e
+ms.sourcegitcommit: a20d30f4e5027f90d8ea4cde95d1d5bacfdd2b5e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/30/2022
-ms.locfileid: "68223142"
+ms.lasthandoff: 10/28/2022
+ms.locfileid: "68768641"
 ---
 # <a name="troubleshoot-performance-issues-for-microsoft-defender-for-endpoint-on-macos"></a>Solución de problemas de rendimiento para Microsoft Defender para punto de conexión en macOS
 
@@ -44,9 +44,10 @@ En este tema se proporcionan algunos pasos generales que se pueden usar para res
 En función de las aplicaciones que ejecute y de las características del dispositivo, puede experimentar un rendimiento poco óptimo al ejecutar Microsoft Defender para punto de conexión en macOS. En concreto, las aplicaciones o los procesos del sistema que acceden a muchos recursos a través de un intervalo de tiempo corto pueden provocar problemas de rendimiento en Microsoft Defender para punto de conexión en macOS.
 
 >[!WARNING]
->Antes de comenzar, asegúrese de que otros productos de seguridad no se ejecutan actualmente en el dispositivo. Varios productos de seguridad pueden entrar en conflicto e afectar al rendimiento del host. 
+>Antes de comenzar, asegúrese de que otros productos de seguridad no se ejecutan actualmente en el dispositivo. Varios productos de seguridad pueden entrar en conflicto e afectar al rendimiento del host.
 
 ## <a name="troubleshoot-performance-issues-using-real-time-protection-statistics"></a>Solución de problemas de rendimiento mediante estadísticas de protección en tiempo real
+
 **Se aplica a:**
 - Solo problemas de rendimiento relacionados con AV
 
@@ -61,7 +62,6 @@ Los pasos siguientes se pueden usar para solucionar y mitigar estos problemas:
     - Desde la interfaz de usuario. Abra Microsoft Defender para punto de conexión en macOS y vaya a **Administrar configuración**.
 
       :::image type="content" source="images/mdatp-36-rtp.png" alt-text=" Página Administrar protección en tiempo real" lightbox="images/mdatp-36-rtp.png":::
-      
 
     - Desde el terminal. Por motivos de seguridad, esta operación requiere elevación.
 
@@ -141,7 +141,7 @@ Los pasos siguientes se pueden usar para solucionar y mitigar estos problemas:
         cat real_time_protection.json | python high_cpu_parser.py  > real_time_protection.log
       ```
 
-      La salida de la anterior es una lista de los principales colaboradores de los problemas de rendimiento. La primera columna es el identificador de proceso (PID), la segunda columna es el nombre del proceso de te y la última columna es el número de archivos escaneados, ordenados por impacto.
+      La salida de la anterior es una lista de los principales colaboradores de los problemas de rendimiento. La primera columna es el identificador de proceso (PID), la segunda columna es el nombre del proceso y la última columna es el número de archivos examinados, ordenados por impacto.
 
       Por ejemplo, la salida del comando será similar a la siguiente:
 
@@ -168,23 +168,22 @@ Los pasos siguientes se pueden usar para solucionar y mitigar estos problemas:
 
      Consulte [Configuración y validación de exclusiones para Microsoft Defender para punto de conexión en macOS](mac-exclusions.md) para obtener más información.
 
-
 ## <a name="troubleshoot-performance-issues-using-microsoft-defender-for-endpoint-client-analyzer"></a>Solución de problemas de rendimiento mediante Microsoft Defender para punto de conexión Analizador de cliente
 
 **Se aplica a:**
-- Problemas de rendimiento de todos los componentes disponibles de Defender para punto de conexión, como AV y EDR  
+- Problemas de rendimiento de todos los componentes disponibles de Defender para punto de conexión, como AV y EDR
 
 El Microsoft Defender para punto de conexión Client Analyzer (MDECA) puede recopilar seguimientos, registros e información de diagnóstico para solucionar problemas de rendimiento en [dispositivos incorporados](/microsoft-365/security/defender-endpoint/onboard-configure) en macOS.
 
 > [!NOTE]
->- Los servicios de soporte al cliente (CSS) de Microsoft usan periódicamente la herramienta Microsoft Defender para punto de conexión Client Analyzer para recopilar información como direcciones IP, nombres de PC que le ayudarán a solucionar problemas que pueda estar experimentando. Microsoft Defender para punto de conexión. Para obtener más información sobre nuestra declaración de privacidad, consulte [Declaración de privacidad de Microsoft](https://privacy.microsoft.com/privacystatement).
->- Como procedimiento recomendado general, se recomienda actualizar el [agente de Microsoft Defender para punto de conexión a la  versión](linux-whatsnew.md)  más reciente disponible y confirmar que el problema persiste antes de investigar más. 
+>
+> - Los servicios de soporte al cliente (CSS) de Microsoft usan periódicamente la herramienta Microsoft Defender para punto de conexión Client Analyzer para recopilar información como direcciones IP, nombres de PC que le ayudarán a solucionar problemas que pueda estar experimentando. Microsoft Defender para punto de conexión. Para obtener más información sobre nuestra declaración de privacidad, consulte [Declaración de privacidad de Microsoft](https://privacy.microsoft.com/privacystatement).
+> - Como procedimiento recomendado general, se recomienda actualizar el [agente de Microsoft Defender para punto de conexión a la versión más reciente disponible](linux-whatsnew.md) y confirmar que el problema persiste antes de investigar más.
 
 Para ejecutar el analizador de cliente para solucionar problemas de rendimiento, consulte [Ejecución del analizador de cliente en macOS y Linux](run-analyzer-macos-linux.md).
 
->[!NOTE]
->En caso de que después de seguir los pasos anteriores, el problema de rendimiento persiste, póngase en contacto con el soporte técnico para obtener más instrucciones y mitigación. 
-
+> [!NOTE]
+> En caso de que después de seguir los pasos anteriores, el problema de rendimiento persiste, póngase en contacto con el soporte técnico para obtener más instrucciones y mitigación.
 
 ## <a name="see-also"></a>Vea también
 

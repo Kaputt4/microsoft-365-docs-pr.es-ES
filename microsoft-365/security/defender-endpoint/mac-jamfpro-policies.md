@@ -1,7 +1,7 @@
 ---
 title: Configuración de la Microsoft Defender para punto de conexión en directivas de macOS en Jamf Pro
 description: Obtenga información sobre cómo configurar la Microsoft Defender para punto de conexión en directivas de macOS en Jamf Pro
-keywords: policies, microsoft, defender, Microsoft Defender para punto de conexión, mac, installation, deploy, uninstallation, intune, jamfpro, macos, catalina, mojave, high sierra
+keywords: policies, microsoft, defender, Microsoft Defender para punto de conexión, mac, installation, deploy, uninstallation, intune, jamfpro, macos, catalina, big sur, monterey, ventura, mde for mac
 ms.service: microsoft-365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
@@ -17,12 +17,12 @@ ms.collection:
 ms.topic: conceptual
 ms.subservice: mde
 search.appverid: met150
-ms.openlocfilehash: bafbce373ffdbdd8d5d7e4908f626d45282159c8
-ms.sourcegitcommit: 4e42bafee965446f44f7f57d1defed2b9b24fce8
+ms.openlocfilehash: 79d5377123ea83f7ec00648b455eabbfeaa5f99d
+ms.sourcegitcommit: a20d30f4e5027f90d8ea4cde95d1d5bacfdd2b5e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/30/2022
-ms.locfileid: "68228633"
+ms.lasthandoff: 10/28/2022
+ms.locfileid: "68768905"
 ---
 # <a name="set-up-the-microsoft-defender-for-endpoint-on-macos-policies-in-jamf-pro"></a>Configuración de la Microsoft Defender para punto de conexión en directivas de macOS en Jamf Pro
 

@@ -18,12 +18,12 @@ ms.collection:
 - m365solution-insiderrisk
 - m365initiative-compliance
 - highpri
-ms.openlocfilehash: 3745707ed7b6e6e4988bbb64583227ffad09fbf4
-ms.sourcegitcommit: 181a0aff54842dcbafd834647c6e9ee47304d10f
+ms.openlocfilehash: 1a6175a0f0d64e72ca14e334cb16d970315bb797
+ms.sourcegitcommit: a20d30f4e5027f90d8ea4cde95d1d5bacfdd2b5e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/27/2022
-ms.locfileid: "68730367"
+ms.lasthandoff: 10/28/2022
+ms.locfileid: "68769851"
 ---
 # <a name="learn-about-insider-risk-management"></a>Información sobre riesgos internos de Microsoft
 
@@ -99,12 +99,12 @@ Puede seleccionar entre las siguientes plantillas de directiva para empezar a tr
 - [Robo de datos por parte de los usuarios que abandonan la organización](insider-risk-management-policies.md#data-theft-by-departing-users)
 - [Filtraciones de datos generales](insider-risk-management-policies.md#general-data-leaks)
 - [Filtración de datos por parte de usuarios prioritarios (versión preliminar)](insider-risk-management-policies.md#data-leaks-by-priority-users-preview)
-- [Filtraciones de datos por parte de usuarios inconformes (versión preliminar)](insider-risk-management-policies.md#data-leaks-by-disgruntled-users-preview)
+- [Pérdidas de datos por parte de usuarios de riesgo (versión preliminar)](insider-risk-management-policies.md#data-leaks-by-risky-users-preview)
 - [Infracciones generales de la directiva de seguridad (versión preliminar)](insider-risk-management-policies.md#general-security-policy-violations-preview)
 - [Uso indebido general de datos de pacientes (versión preliminar)](insider-risk-management-policies.md#general-patient-data-misuse-preview)
 - [Infracciones de la directiva de seguridad por parte de los usuarios que abandonan la organización (versión preliminar)](insider-risk-management-policies.md#security-policy-violations-by-departing-users-preview)
 - [Infracciones de la directiva de seguridad por parte de los usuarios prioritarios (versión preliminar)](insider-risk-management-policies.md#security-policy-violations-by-priority-users-preview)
-- [Infracciones de la directiva de seguridad por parte de usuarios inconformes (versión preliminar)](insider-risk-management-policies.md#security-policy-violations-by-disgruntled-users-preview)
+- [Infracciones de directivas de seguridad por parte de usuarios de riesgo (versión preliminar)](insider-risk-management-policies.md#security-policy-violations-by-risky-users-preview)
 
 ![Panel de directivas de administración de riesgos internos.](../media/insider-risk-policy-dashboard.png)
 
@@ -170,7 +170,7 @@ En la mayoría de los casos, los usuarios hacen todo lo posible para controlar c
 
 - [Filtraciones de datos generales](insider-risk-management-policies.md#general-data-leaks)
 - [Filtración de datos por parte de usuarios prioritarios (versión preliminar)](insider-risk-management-policies.md#data-leaks-by-priority-users-preview)
-- [Filtraciones de datos por parte de usuarios inconformes (versión preliminar)](insider-risk-management-policies.md#data-leaks-by-disgruntled-users-preview)
+- [Pérdidas de datos por parte de usuarios de riesgo (versión preliminar)](insider-risk-management-policies.md#data-leaks-by-risky-users-preview)
 
 ### <a name="intentional-or-unintentional-security-policy-violations-preview"></a>Infracciones de directivas de seguridad intencionadas o involuntarias (versión preliminar)
 
@@ -179,7 +179,7 @@ Los usuarios suelen tener un gran grado de control al administrar sus dispositiv
 - [Infracciones generales de la directiva de seguridad (versión preliminar)](insider-risk-management-policies.md#general-security-policy-violations-preview)
 - [Infracciones de la directiva de seguridad por parte de los usuarios que abandonan la organización (versión preliminar)](insider-risk-management-policies.md#security-policy-violations-by-departing-users-preview)
 - [Infracciones de la directiva de seguridad por parte de los usuarios prioritarios (versión preliminar)](insider-risk-management-policies.md#security-policy-violations-by-priority-users-preview)
-- [Infracciones de la directiva de seguridad por parte de usuarios inconformes (versión preliminar)](insider-risk-management-policies.md#security-policy-violations-by-disgruntled-users-preview)
+- [Infracciones de directivas de seguridad por parte de usuarios de riesgo (versión preliminar)](insider-risk-management-policies.md#security-policy-violations-by-risky-users-preview)
 
 ### <a name="policies-for-users-based-on-position-access-level-or-risk-history-preview"></a>Directivas para usuarios basadas en la posición, el nivel de acceso o el historial de riesgos (versión preliminar)
 
@@ -194,12 +194,12 @@ En el caso de las organizaciones de la industria sanitaria, estudios recientes h
 
 - [Uso indebido general de datos de pacientes (versión preliminar)](insider-risk-management-policies.md#general-patient-data-misuse-preview)
 
-### <a name="actions-and-behaviors-by-disgruntled-users-preview"></a>Acciones y comportamientos de usuarios descontentos (versión preliminar)
+### <a name="actions-and-behaviors-by-risky-users-preview"></a>Acciones y comportamientos de usuarios de riesgo (versión preliminar)
 
 Los eventos de estrés laboral pueden afectar al comportamiento del usuario de varias maneras relacionadas con los riesgos internos. Estos factores de estrés pueden ser una revisión de rendimiento deficiente, una disminución de posición o la colocación del usuario en un plan de revisión de rendimiento. Los factores de estrés también pueden dar lugar a un comportamiento potencialmente inadecuado, como el envío de usuarios potencialmente amenazantes, hostigamiento o lenguaje discriminatorio en el correo electrónico y otros mensajes. Aunque la mayoría de los usuarios no responden malintencionadamente a estos eventos, el estrés de estas acciones puede dar lugar a que algunos usuarios se comporten de maneras que normalmente no consideren en circunstancias normales. Para ayudar a identificar estos tipos de actividades potencialmente arriesgadas, las siguientes plantillas de directivas de administración de riesgos internos pueden usar el conector de RR. HH. o la integración con una [directiva de cumplimiento de comunicaciones dedicada](/microsoft-365/compliance/communication-compliance-policies#integration-with-insider-risk-management-preview) para que los usuarios entren en el ámbito de las directivas de administración de riesgos internos y empiecen a puntuar los indicadores de riesgo relacionados con los comportamientos que pueden producirse:
 
-- [Filtraciones de datos por parte de usuarios inconformes (versión preliminar)](insider-risk-management-policies.md#data-leaks-by-disgruntled-users-preview)
-- [Infracciones de la directiva de seguridad por parte de usuarios inconformes (versión preliminar)](insider-risk-management-policies.md#security-policy-violations-by-disgruntled-users-preview)
+- [Pérdidas de datos por parte de usuarios de riesgo (versión preliminar)](insider-risk-management-policies.md#data-leaks-by-risky-users-preview)
+- [Infracciones de directivas de seguridad por parte de usuarios de riesgo (versión preliminar)](insider-risk-management-policies.md#security-policy-violations-by-risky-users-preview)
 
 ### <a name="visual-context-for-potentially-risky-user-activities-with-forensic-evidence-preview"></a>Contexto visual para actividades de usuario potencialmente arriesgadas con pruebas forenses (versión preliminar)
 
