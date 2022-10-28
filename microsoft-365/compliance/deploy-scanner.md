@@ -13,12 +13,12 @@ ms.collection:
 - purview-compliance
 - tier3
 description: Obtenga información sobre cómo el analizador de Microsoft Purview Information Protection puede detectar, clasificar y proteger archivos en almacenes de datos.
-ms.openlocfilehash: 624abb6e989612098c7ac47eb2ef15e48af1479b
-ms.sourcegitcommit: 0d8fb571024f134d7480fe14cffc5e31a687d356
+ms.openlocfilehash: 82006023b6893a62028067e2b99bed9e92ffdbb4
+ms.sourcegitcommit: 3d7dd25abcbf923b45eae84ff4d9d2bb95ef4ca4
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/20/2022
-ms.locfileid: "68647629"
+ms.lasthandoff: 10/28/2022
+ms.locfileid: "68777909"
 ---
 # <a name="learn-about-the-information-protection-scanner"></a>Más información sobre el analizador de protección de la información
 
@@ -38,7 +38,7 @@ El analizador de protección de la información puede inspeccionar cualquier arc
 
 En la imagen siguiente se muestra la arquitectura del analizador, donde el analizador detecta archivos en los servidores locales y de SharePoint.
 
-:::image type="content" source="../media/ul-scanner-arch.png" alt-text="arquitectura del escáner de Microsoft Purview Information Protection":::
+:::image type="content" source="../media/scanner-arch.png" alt-text="arquitectura del escáner de Microsoft Purview Information Protection":::
 
 Para inspeccionar los archivos, el analizador usa IFilters instalados en el equipo. Para determinar si los archivos necesitan etiquetado, el analizador usa tipos de información confidencial y detección de patrones, o patrones regex.
 
@@ -145,7 +145,7 @@ Para obtener más información sobre la implementación del analizador, consulte
 
 - Consulte nuestro blog sobre los procedimientos recomendados para el escáner: [Procedimientos recomendados para implementar y usar el escáner UL de AIP](https://aka.ms/AIPScannerBestPractices).
 
-- ¿Está interesado en cómo el equipo de ingeniería y operaciones de Core Services en Microsoft implementó este escáner?  Lea el caso práctico técnico: [Automatización de la protección de datos con el escáner de Azure Information Protection](https://www.microsoft.com/itshowcase/Article/Content/1070/Automating-data-protection-with-Azure-Information-Protection-scanner).
+- ¿Está interesado en cómo el equipo de ingeniería y operaciones de Core Services en Microsoft implementó este escáner?  Lea el caso práctico técnico: [Automatización de la protección de datos con azure Information Protection escáner](https://www.microsoft.com/itshowcase/Article/Content/1070/Automating-data-protection-with-Azure-Information-Protection-scanner).
 
-- También puede usar PowerShell para clasificar y proteger de forma interactiva los archivos del equipo de escritorio. Para obtener más información sobre este y otros escenarios que usan PowerShell, consulte [Uso de PowerShell con el cliente de etiquetado unificado de Azure Information Protection](./
+- También puede usar PowerShell para clasificar y proteger de forma interactiva los archivos del equipo de escritorio. Para obtener más información sobre este y otros escenarios que usan PowerShell, consulte [Uso de PowerShell con azure Information Protection cliente de etiquetado unificado](./
 - .md).

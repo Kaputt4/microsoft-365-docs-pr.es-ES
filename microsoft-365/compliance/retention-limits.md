@@ -19,12 +19,12 @@ search.appverid:
 - MET150
 hideEdit: true
 description: Descripción del número máximo de directivas y elementos por directiva para las directivas de retención y directivas de etiquetas de retención de Microsoft 365
-ms.openlocfilehash: ca63433629740846824e22abead7e816f47fa6fd
-ms.sourcegitcommit: a20d30f4e5027f90d8ea4cde95d1d5bacfdd2b5e
+ms.openlocfilehash: 582288cf8af1a942134bf7b0ec9daee4c907f6f5
+ms.sourcegitcommit: 3d7dd25abcbf923b45eae84ff4d9d2bb95ef4ca4
 ms.translationtype: MT
 ms.contentlocale: es-ES
 ms.lasthandoff: 10/28/2022
-ms.locfileid: "68770053"
+ms.locfileid: "68777551"
 ---
 # <a name="limits-for-retention-policies-and-retention-label-policies"></a>Límites de directivas de retención y directivas de etiqueta de retención.
 
@@ -45,7 +45,7 @@ Un solo espacio empresarial puede tener un máximo de 10 000 directivas (cualqu
 - Directivas de etiquetado automático para SharePoint y OneDrive, a menos que sean para datos adjuntos de la nube.
 - Directivas de etiquetas publicadas para SharePoint y OneDrive que solo eliminen, en lugar de conservar o retener y luego eliminar.
 - Directivas de retención de Exchange desde [la administración de registros de mensajería (MRM)](/exchange/security-and-compliance/messaging-records-management/messaging-records-management).
-- Retenciones por litigio
+- Retenciones por litigio.
 
 Dentro de este límite de 10 000 directivas, también hay algunos límites en el número máximo de directivas para la retención por carga de trabajo:
 

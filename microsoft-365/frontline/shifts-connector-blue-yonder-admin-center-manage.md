@@ -16,12 +16,12 @@ ms.collection:
 appliesto:
 - Microsoft Teams
 - Microsoft 365 for frontline workers
-ms.openlocfilehash: a5e788a740be5abcccc480dc4ecb17d00893a51c
-ms.sourcegitcommit: 99b174a8d431092b3cf7d650593248671297fd91
+ms.openlocfilehash: d89e0c65c22995d10ddadf9e2e8789a2cd2152f9
+ms.sourcegitcommit: 3d7dd25abcbf923b45eae84ff4d9d2bb95ef4ca4
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/30/2022
-ms.locfileid: "68300330"
+ms.lasthandoff: 10/28/2022
+ms.locfileid: "68777958"
 ---
 # <a name="use-the-microsoft-365-admin-center-to-manage-your-shifts-connection-to-blue-yonder-workforce-management"></a>Use la Centro de administración de Microsoft 365 para administrar la conexión de Shifts a Blue Yonder Workforce Management
 
@@ -61,7 +61,7 @@ Esta es la lista de mensajes de error que puede encontrar e información para ay
 
 |Tipo de error |Detalles del error |Solución |
 |---------|---------|---------|
-|No se puede autenticar el sistema de administración de la fuerza de trabajo.|Las credenciales de la cuenta del sistema de administración del personal que ha proporcionado no son válidas o esta cuenta no tiene los permisos necesarios.|Actualice las credenciales de la cuenta de servicio de WFM en la configuración de conexión. Para ello, siga uno de estos procedimientos:<ul><li>En el Centro de administración de Microsoft 365, elija **Editar** en la página Administración de conectores o en la página de detalles de conexión para ir al Asistente para conectores de turnos.</li><li>Use el cmdlet [Set-CsTeamsShiftsConnectionInstance](/powershell/module/teams/set-csteamsshiftsconnectioninstance) o Update-CsTeamsShiftConnectionInstance.</li><li>Use [este script de PowerShell](shifts-connector-powershell-manage.md#change-connection-settings).</li></ul>|
+|No se puede autenticar el sistema de administración de la fuerza de trabajo.|Las credenciales de la cuenta del sistema de administración del personal que ha proporcionado no son válidas o esta cuenta no tiene los permisos necesarios.|Actualice las credenciales de la cuenta de servicio de WFM en la configuración de conexión. Para ello, siga uno de estos procedimientos:<ul><li>En el Centro de administración de Microsoft 365, elija **Editar** en la página Administración de conectores o en la página de detalles de conexión para ir al Asistente para conectores de turnos.</li><li>Use el cmdlet [Set-CsTeamsShiftsConnectionInstance](/powershell/module/teams/set-csteamsshiftsconnectioninstance) o [Update-CsTeamsShiftsConnectionInstance](/powershell/module/teams/update-csteamsshiftsconnectioninstance) .</li><li>Use [este script de PowerShell](shifts-connector-powershell-manage.md#change-connection-settings).</li></ul>|
 |No se puede autenticar Graph. |Error de autenticación. Asegúrese de que ha escrito credenciales válidas para el actor designado y que tiene los permisos necesarios.|Asegúrese de que la cuenta del sistema de Microsoft 365 (también conocida como actor designado) se agrega como propietario del equipo.<br> O bien, actualice las credenciales de la cuenta del sistema de Microsoft 365 en la configuración de conexión.|
 |Algunos usuarios no se han asignado correctamente|Error en la asignación de algunos usuarios: \<X\> usuarios de AAD correctos, \<X\> con errores y \<X\> usuarios del sistema de administración de fuerza de trabajo con errores.|Use el cmdlet [Get-CsTeamsShiftsConnectionSyncResult](/powershell/module/teams/get-csteamsshiftsconnectionsyncresult) o [este script de PowerShell](shifts-connector-powershell-manage.md#user-mapping-errors) para identificar a los usuarios para los que se produjo un error en la asignación. Asegúrese de que los usuarios del equipo asignado coincidan con los usuarios de la instancia de WFM.|
 |No se puede asignar un equipo o equipos en este lote. |Este perfil de actor designado no tiene privilegios de propiedad de equipo. |Asegúrese de que la cuenta del sistema de Microsoft 365 (también conocida como actor designado) se agrega como propietario del equipo.<br>Si ha cambiado la cuenta del sistema de Microsoft 365, agregue esa cuenta como propietario del equipo y actualice la configuración de conexión para usarla.|

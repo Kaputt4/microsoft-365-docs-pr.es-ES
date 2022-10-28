@@ -19,12 +19,12 @@ ms.custom:
 - M365-Lighthouse
 search.appverid: MET150
 description: Para los proveedores de servicios administrados (MSP) que usan Microsoft 365 Lighthouse, consulte lo que se ha agregado, cambiado y corregido en Microsoft 365 Lighthouse cada mes.
-ms.openlocfilehash: 2c63cd304fc8893c5a767212ef540939e9954793
-ms.sourcegitcommit: 181a0aff54842dcbafd834647c6e9ee47304d10f
+ms.openlocfilehash: 483902edcd0cfdf9d3c9e5101fe7dd82311b5ece
+ms.sourcegitcommit: 3d7dd25abcbf923b45eae84ff4d9d2bb95ef4ca4
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/27/2022
-ms.locfileid: "68735075"
+ms.lasthandoff: 10/28/2022
+ms.locfileid: "68777622"
 ---
 # <a name="whats-new-in-microsoft-365-lighthouse"></a>Novedades de Microsoft 365 Lighthouse
 
@@ -32,6 +32,18 @@ Estamos agregando continuamente nuevas características a [Microsoft 365 Lightho
 
 > [!NOTE]
 > Algunas características se implantan a diferentes velocidades para nuestros clientes. Si aún no ve una característica, debería verla pronto.
+
+## <a name="october-2022"></a>Octubre de 2022
+
+### <a name="app-protection-policies"></a>Directivas de protección de aplicaciones
+
+Los proveedores de servicios administrados (MSP) ahora pueden implementar directivas de protección de aplicaciones para sus inquilinos administrados desde la línea base predeterminada en Microsoft 365 Lighthouse, lo que permite una mayor protección de los datos de la empresa de los inquilinos. Estas directivas usan Mobile Application Management (MAM) en dispositivos iOS y Android para proporcionar la protección más segura para los datos de la empresa.
+
+### <a name="device-health-monitoring"></a>Supervisión del estado del dispositivo
+
+Hemos agregado una nueva subtarea de implementación denominada **Habilitar supervisión del estado del dispositivo** dentro de la línea base predeterminada en la tarea **Configurar inscripción de dispositivos** . Una vez habilitada la nueva subtarea y implementada la tarea de implementación, Endpoint Analytics en Microsoft Endpoint Manager podrá analizar los datos del dispositivo y puede recomendar software, ayudar a mejorar el rendimiento de inicio y corregir problemas comunes de soporte técnico.
+
+Para obtener más información, consulte [¿Qué es Análisis de puntos de conexión?](/mem/analytics/overview).
 
 ## <a name="september-2022"></a>Septiembre de 2022
 

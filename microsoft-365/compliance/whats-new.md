@@ -18,12 +18,12 @@ ms.assetid: e3c6df61-8513-499d-ad8e-8a91770bff63
 ms.collection:
 - purview-compliance
 ms.custom: seo-marvel-mar2020
-ms.openlocfilehash: 28e1dedac97d692ae1f797fe4fe4a056a5d4a7b5
-ms.sourcegitcommit: 181a0aff54842dcbafd834647c6e9ee47304d10f
+ms.openlocfilehash: 70ba18d1471ea5fc5d145f64b68c6fef1691124c
+ms.sourcegitcommit: 3d7dd25abcbf923b45eae84ff4d9d2bb95ef4ca4
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/27/2022
-ms.locfileid: "68731489"
+ms.lasthandoff: 10/28/2022
+ms.locfileid: "68777641"
 ---
 # <a name="whats-new-in-microsoft-purview-risk-and-compliance-solutions"></a>Novedades de las soluciones de cumplimiento y riesgo de Microsoft Purview
 
@@ -47,12 +47,12 @@ Ya sea agregando nuevas soluciones a la [portal de cumplimiento Microsoft Purvie
 
 ### <a name="communication-compliance"></a>Cumplimiento de las comunicaciones
 
-- **En versión preliminar**: nueva integración de cumplimiento de comunicaciones [con la administración de riesgos internos](/microsoft-365/compliance/communication-compliance#integration-with-insider-risk-management-preview). El cumplimiento de comunicaciones ahora puede proporcionar señales de descontento detectadas en los mensajes a las directivas de descontento de la administración de riesgos internos. La descontento detectada en los mensajes por la directiva de cumplimiento de comunicaciones actúa como un evento desencadenante para que los usuarios entren en el ámbito de las directivas de administración de riesgos internos.
+- **En versión preliminar**: nueva integración de cumplimiento de comunicaciones [con la administración de riesgos internos](/microsoft-365/compliance/communication-compliance#integration-with-insider-risk-management-preview). El cumplimiento de comunicaciones ahora puede proporcionar señales de riesgo detectadas en los mensajes a las directivas de administración de riesgos internos. Los usuarios de riesgo detectados en los mensajes por la directiva de cumplimiento de comunicaciones actúan como un evento desencadenante para que los usuarios entren en el ámbito de las directivas de administración de riesgos internos.
 
 ### <a name="insider-risk-management"></a>Administración de riesgos internos
 
 - **En versión preliminar**: Insider Risk Management presenta [pruebas forenses](/microsoft-365/compliance/insider-risk-management-forensic-evidence), que permiten capturar actividades visuales personalizables en todos los dispositivos para ayudar a su organización a mitigar, comprender y responder mejor a posibles riesgos de datos, como la filtración de datos no autorizados de datos confidenciales.
-- **En versión preliminar**: integración de administración de riesgos internos [con cumplimiento de comunicaciones](/microsoft-365/compliance/communication-compliance#integration-with-insider-risk-management-preview) al usar las *fugas de datos por parte de usuarios descontentos* o *infracciones de directivas de seguridad por plantillas de directiva de usuarios descontentos* . El cumplimiento de comunicaciones ahora puede proporcionar señales de descontento detectadas en los mensajes a las directivas de descontento de la administración de riesgos internos.
+- **En versión preliminar**: integración de administración de riesgos internos [con cumplimiento de comunicaciones](/microsoft-365/compliance/communication-compliance#integration-with-insider-risk-management-preview) al usar las *fugas de datos por parte de usuarios de riesgo* o *infracciones de directivas de seguridad por plantillas de directiva de usuarios de riesgo* . El cumplimiento de comunicaciones ahora puede proporcionar señales de riesgo detectadas en los mensajes a las directivas de administración de riesgos internos.
 - **En versión preliminar**: la nueva [personalización de alertas insertadas](/microsoft-365/compliance/insider-risk-management-settings#inline-alert-customization-preview) permite a los analistas e investigadores editar rápidamente las directivas al revisar las alertas.
 - Nuevas [actualizaciones de puntuación de contenido de prioridad](/microsoft-365/compliance/insider-risk-management-policies#prioritize-content-in-policies) que permiten elegir si se asignan puntuaciones de riesgo a todas las actividades detectadas por una directiva o solo las actividades que incluyen contenido prioritario.
 - Los equipos de seguridad ahora pueden [personalizar un desencadenador de seguridad](/microsoft-365/compliance/insider-risk-management-policies#policy-templates) en la directiva de "fugas de datos" para que se muestre cuando un usuario realice una secuencia, lo que le permite responder a acciones del usuario que podrían considerarse más arriesgadas.

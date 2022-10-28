@@ -13,16 +13,16 @@ ms.collection:
 - purview-compliance
 - tier3
 description: Enumera los requisitos previos para instalar e implementar el analizador de Microsoft Purview Information Protection.
-ms.openlocfilehash: cf8daa62709c557d771a76889b9c277c124cadbc
-ms.sourcegitcommit: 0d8fb571024f134d7480fe14cffc5e31a687d356
+ms.openlocfilehash: ef1b3397814915a010d45b2131caaac6b0b3643e
+ms.sourcegitcommit: 3d7dd25abcbf923b45eae84ff4d9d2bb95ef4ca4
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/20/2022
-ms.locfileid: "68639016"
+ms.lasthandoff: 10/28/2022
+ms.locfileid: "68777885"
 ---
 # <a name="get-started-with-the-information-protection-scanner"></a>Introducción al analizador de protección de la información
 
-Antes de instalar el escáner desde Microsoft Purview Information Protection, asegúrese de que el sistema cumple los requisitos básicos [de Azure Information Protection](/azure/information-protection/requirements).
+Antes de instalar el analizador desde Microsoft Purview Information Protection, asegúrese de que el sistema cumple los requisitos básicos [de Azure Information Protection](/azure/information-protection/requirements).
 
 Además, los siguientes requisitos son específicos para el analizador:
 
@@ -233,13 +233,13 @@ Aunque el cliente de etiquetado unificado no puede aplicar el cifrado sin una co
 
 Para admitir un equipo desconectado, use uno de los métodos siguientes:
 
-- [Uso de Azure Portal](#use-the-azure-portal-with-a-disconnected-computer) (recomendado siempre que sea posible)
+- [Uso del portal de cumplimiento](#use-the-microsoft-purview-compliance-portal-with-a-disconnected-computer) (recomendado siempre que sea posible)
 
 - [Usar PowerShell](#use-powershell-with-a-disconnected-computer)
 
-#### <a name="use-the-azure-portal-with-a-disconnected-computer"></a>Uso de Azure Portal con un equipo desconectado
+#### <a name="use-the-microsoft-purview-compliance-portal-with-a-disconnected-computer"></a>Uso de la portal de cumplimiento Microsoft Purview con un equipo desconectado
 
-Para admitir un equipo desconectado de Azure Portal, siga estos pasos:
+Para admitir un equipo que no pueda conectarse a la portal de cumplimiento Microsoft Purview, siga estos pasos:
 
 1.  Configure las etiquetas en la directiva y, a continuación, use el [procedimiento para admitir equipos desconectados](/azure/information-protection/rms-client/clientv2-admin-guide-customizations#support-for-disconnected-computers) para habilitar la clasificación y el etiquetado sin conexión.
 

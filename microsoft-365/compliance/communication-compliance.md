@@ -23,12 +23,12 @@ ms.collection:
 search.appverid:
 - MET150
 - MOE150
-ms.openlocfilehash: 3ce5d5498deb1029b00125dc510e0c67c23d8970
-ms.sourcegitcommit: a20d30f4e5027f90d8ea4cde95d1d5bacfdd2b5e
+ms.openlocfilehash: f2bc78b9b742d47b9421af758d7109650dd6f28a
+ms.sourcegitcommit: 3d7dd25abcbf923b45eae84ff4d9d2bb95ef4ca4
 ms.translationtype: MT
 ms.contentlocale: es-ES
 ms.lasthandoff: 10/28/2022
-ms.locfileid: "68768179"
+ms.locfileid: "68777941"
 ---
 # <a name="learn-about-communication-compliance"></a>Obtener más información sobre el cumplimiento de las comunicaciones
 
@@ -137,7 +137,7 @@ Para más información sobre la compatibilidad con canales de mensajería en las
 
 ## <a name="integration-with-insider-risk-management-preview"></a>Integración con la administración de riesgos internos (versión preliminar)
 
-El cumplimiento de comunicaciones puede proporcionar señales de descontento detectadas en los mensajes a las directivas de descontento de la administración de riesgos internos. Con una directiva de [texto de detección inapropiada](/microsoft-365/compliance/communication-compliance-policies#policy-templates) dedicada en cumplimiento de comunicaciones, puede optar por agregar esta directiva a una [filtración de datos por empleados descontentos](/microsoft-365/compliance/insider-risk-management-policies#data-leaks-by-disgruntled-users-preview) o [infracciones de directivas de seguridad por parte de empleados descontentos](/microsoft-365/compliance/insider-risk-management-policies#security-policy-violations-by-disgruntled-users-preview) en la administración de riesgos internos. La descontento detectada en los mensajes por la directiva de cumplimiento de comunicaciones actúa como un evento desencadenante para que los usuarios entren en el ámbito de las directivas de administración de riesgos internos.
+El cumplimiento de comunicaciones puede proporcionar señales de riesgo detectadas en los mensajes a las directivas de usuario de riesgo de administración de riesgos internos. Con una directiva de [texto de detección inapropiada](/microsoft-365/compliance/communication-compliance-policies#policy-templates) dedicada en cumplimiento de comunicaciones, puede optar por agregar esta directiva a una [filtración de datos por parte de empleados de riesgo](/microsoft-365/compliance/insider-risk-management-policies#data-leaks-by-risky-users-preview) o [infracciones de directivas de seguridad por parte de la directiva de empleados de riesgo](/microsoft-365/compliance/insider-risk-management-policies#security-policy-violations-by-risky-users-preview) en la administración de riesgos internos. Los usuarios de riesgo detectados en los mensajes por la directiva de cumplimiento de comunicaciones actúan como un evento desencadenante para que los usuarios entren en el ámbito de las directivas de administración de riesgos internos.
 
 Para más información sobre la integración con la administración de riesgos internos, consulte [Creación y administración de directivas de cumplimiento de comunicaciones](/microsoft-365/compliance/communication-compliance-policies#integration-with-insider-risk-management-preview).
 Para más información sobre la administración de riesgos internos, consulte [Información sobre la administración de riesgos internos](/microsoft-365/compliance/insider-risk-management).

@@ -18,12 +18,12 @@ ms.collection:
 - purview-compliance
 - data-connectors
 ms.custom: admindeeplinkCOMPLIANCE
-ms.openlocfilehash: 53d4ef19554f5916e603610158197daa6e946593
-ms.sourcegitcommit: a20d30f4e5027f90d8ea4cde95d1d5bacfdd2b5e
+ms.openlocfilehash: 04bb63b5494f12570ea089693d0729c74cbcfe5c
+ms.sourcegitcommit: 3d7dd25abcbf923b45eae84ff4d9d2bb95ef4ca4
 ms.translationtype: MT
 ms.contentlocale: es-ES
 ms.lasthandoff: 10/28/2022
-ms.locfileid: "68770291"
+ms.locfileid: "68777753"
 ---
 # <a name="set-up-a-connector-to-import-hr-data"></a>Configurar un conector para importar datos de RR.HH.
 
@@ -67,10 +67,10 @@ El tipo de datos de RR. HH. que se van a importar depende de la directiva de adm
 |  Plantilla de directiva |  Tipo de datos de RR. HH. |
 |:------------------------------|:--------------------------------|
 | Robo de datos por parte de los usuarios que abandonan la organización | Renuncias de empleados|
-| Filtraciones de datos generales                             | No aplicable|
+| Filtración de datos                             | No aplicable|
 | Filtraciones de datos por parte de usuarios prioritarios                   | No aplicable |
 | Pérdidas de datos por parte de usuarios de riesgo                | Cambios en el nivel de trabajo, revisiones de rendimiento, planes de mejora del rendimiento|
-| Infracciones generales de la directiva de seguridad             | No aplicable |
+| Infracciones de directivas de seguridad             | No aplicable |
 | Infracciones de la directiva de seguridad por parte de los usuarios que abandonan la organización  | Renuncias de empleados|
 | Infracciones de la directiva de seguridad por parte de los usuarios prioritarios   | No aplicable|
 | Infracciones de directivas de seguridad por parte de usuarios de riesgo| Cambios en el nivel de trabajo, revisiones de rendimiento, planes de mejora del rendimiento |
