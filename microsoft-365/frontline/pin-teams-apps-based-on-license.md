@@ -4,7 +4,7 @@ author: LanaChin
 ms.author: v-lanachin
 ms.reviewer: aaglick
 manager: samanro
-ms.topic: article
+ms.topic: how-to
 audience: admin
 ms.service: microsoft-365-frontline
 search.appverid: MET150
@@ -17,12 +17,12 @@ ms.collection:
 appliesto:
 - Microsoft Teams
 - Microsoft 365 for frontline workers
-ms.openlocfilehash: debc8a975d132c83183fce4a4f0d4f6905dcbb40
-ms.sourcegitcommit: 04e517c7e00323b5c33d8ea937115725cf2cfd4d
+ms.openlocfilehash: 26f8039eb5160ea7555a53abe73c14e2cc3dfa1c
+ms.sourcegitcommit: 0ad7edcfdcdd11d02fa8a14ffe4b36e120d92deb
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/13/2022
-ms.locfileid: "68565988"
+ms.lasthandoff: 10/29/2022
+ms.locfileid: "68786329"
 ---
 # <a name="tailor-teams-apps-for-your-frontline-workers"></a>Personalizar las aplicaciones de Teams para sus trabajadores de primera línea
 
@@ -38,7 +38,7 @@ Con la experiencia de aplicación de primera línea personalizada, los trabajado
 
 La aplicaciones se anclan a la barra de aplicaciones. Esta es la barra situada en el lateral del cliente de escritorio de Teams y en la parte inferior de los clientes móviles (iOS y Android). Las siguientes aplicaciones están ancladas para los usuarios que tienen una [licencia F](https://www.microsoft.com/microsoft-365/enterprise/frontline#office-SKUChooser-0dbn8nt):
 
-- [Conexiones Viva](https://support.microsoft.com/office/your-intranet-is-now-in-microsoft-teams-8b4e7f76-f305-49a9-b6d2-09378476f95b) ([próximamente](#coming-soon))
+- [Viva Connections](https://support.microsoft.com/office/your-intranet-is-now-in-microsoft-teams-8b4e7f76-f305-49a9-b6d2-09378476f95b) ([próximamente](#coming-soon))
 - [Actividad](https://support.microsoft.com/office/explore-the-activity-feed-in-teams-91c635a1-644a-4c60-9c98-233db3e13a56)
 - [Chat](https://support.microsoft.com/office/get-started-with-chat-0b506ce2-eb6d-4fca-9668-e56980ba755e)
 - [Teams](https://support.microsoft.com/office/teams-and-channels-in-microsoft-teams-c6d0e61d-a61e-44a6-a972-04f2a8fa4155)
@@ -103,17 +103,17 @@ La característica está desactivada.   | El trabajador de primera línea obtien
 
 ### <a name="coming-soon"></a>Próximamente
 
- Conexiones Viva pronto formará parte de la experiencia de aplicaciones personalizadas de primera línea. Los usuarios de primera línea que vean la experiencia de aplicación personalizada tendrán Conexiones Viva anclados en la primera posición tanto en dispositivos móviles como de escritorio.
+ Viva Connections pronto formará parte de la experiencia de aplicaciones personalizadas de primera línea. Los usuarios de primera línea que vean la experiencia de aplicación personalizada tendrán Viva Connections anclados en la primera posición tanto en dispositivos móviles como de escritorio.
 
-Esta experiencia incluye un panel predeterminado con tarjetas de primera línea relevantes como Tareas, Turnos, Aprobaciones y Noticias principales que se pueden personalizar para satisfacer las necesidades de su organización. Si su organización ya ha configurado un Conexiones Viva sitio principal, tendrá prioridad sobre la experiencia predeterminada. Para obtener más información, consulte la [hoja de ruta de Microsoft 365](https://www.microsoft.com/microsoft-365/roadmap?filters=&searchterms=99706).
+Esta experiencia incluye un panel predeterminado con tarjetas de primera línea relevantes como Tareas, Turnos, Aprobaciones y Noticias principales que se pueden personalizar para satisfacer las necesidades de su organización. Si su organización ya ha configurado un Viva Connections sitio principal, tendrá prioridad sobre la experiencia predeterminada. Para obtener más información, consulte la [hoja de ruta de Microsoft 365](https://www.microsoft.com/microsoft-365/roadmap?filters=&searchterms=99706).
 
 **Teams para dispositivos móviles**
 
-:::image type="content" source="media/tailored-teams-apps-viva-connections-mobile.png" alt-text="Captura de pantalla que muestra Conexiones Viva en la experiencia de aplicación de primera línea personalizada en teams mobile." lightbox="media/tailored-teams-apps-viva-connections-mobile.png":::
+:::image type="content" source="media/tailored-teams-apps-viva-connections-mobile.png" alt-text="Captura de pantalla que muestra Viva Connections en la experiencia de aplicación de primera línea personalizada en teams mobile." lightbox="media/tailored-teams-apps-viva-connections-mobile.png":::
 
 **Escritorio de Teams**
 
-:::image type="content" source="media/tailored-teams-apps-viva-connections-desktop.png" alt-text="Captura de pantalla que muestra Conexiones Viva en la experiencia de aplicación de primera línea personalizada en el escritorio de Teams." lightbox="media/tailored-teams-apps-viva-connections-desktop.png":::
+:::image type="content" source="media/tailored-teams-apps-viva-connections-desktop.png" alt-text="Captura de pantalla que muestra Viva Connections en la experiencia de aplicación de primera línea personalizada en el escritorio de Teams." lightbox="media/tailored-teams-apps-viva-connections-desktop.png":::
 
 ## <a name="related-articles"></a>Artículos relacionados
 

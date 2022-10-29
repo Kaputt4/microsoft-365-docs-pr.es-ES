@@ -9,7 +9,7 @@ audience: Admin
 ms.topic: how-to
 ms.service: microsoft-365-security
 ms.subservice: other
-ms.date: 09/15/2022
+ms.date: 10/26/2022
 ms.localizationpriority: high
 ms.collection:
 - M365-Campaigns
@@ -23,12 +23,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Obtenga información sobre cómo los valores predeterminados de seguridad pueden ayudar a proteger su organización frente a ataques relacionados con la identidad proporcionando una preconfiguración de seguridad para Microsoft 365 Empresa Premium.
-ms.openlocfilehash: ed201a05714f5d32d5b23e6300e53a05f9fb741b
-ms.sourcegitcommit: 0283c436f3ba61a708b52b57a1955f5ea74376a3
+ms.openlocfilehash: 2c989983a8282be161856b9da5abab1d32ca1349
+ms.sourcegitcommit: 0ad7edcfdcdd11d02fa8a14ffe4b36e120d92deb
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/28/2022
-ms.locfileid: "68093790"
+ms.lasthandoff: 10/29/2022
+ms.locfileid: "68785537"
 ---
 # <a name="security-defaults-and-multi-factor-authentication"></a>Valores predeterminados de seguridad y autenticación multifactor
 
@@ -46,7 +46,7 @@ En este artículo se proporciona información acerca de:
 
 Los valores predeterminados de seguridad se diseñaron para ayudar a proteger las cuentas de usuario de su empresa desde el principio. Cuando se activan, los valores predeterminados de seguridad proporcionan una configuración predeterminada segura que ayuda a mantener la seguridad de su empresa de la siguiente forma:
 
-- Requerir que todos los usuarios y administradores se registren en MFA mediante la aplicación Microsoft Authenticator.
+- Exigir a todos los usuarios y administradores que se registren en MFA mediante la [aplicación Microsoft Authenticator](/azure/active-directory/authentication/concept-authentication-authenticator-app) o cualquier aplicación de terceros mediante [OATH TOTP](/azure/active-directory/authentication/concept-authentication-oath-tokens#oath-software-tokens).
 - Poner una prueba a los usuarios con MFA, sobre todo cuando aparecen en un nuevo dispositivo o aplicación, pero con más frecuencia para roles y tareas críticos.
 - Deshabilitar la autenticación de los clientes de autenticación heredados que no pueden hacer MFA.
 - Proteger a los administradores mediante un requisito de autenticación adicional cada vez que inicien sesión.

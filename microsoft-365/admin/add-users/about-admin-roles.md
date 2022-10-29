@@ -28,12 +28,12 @@ search.appverid:
 - MOE150
 ms.assetid: da585eea-f576-4f55-a1e0-87090b6aaa9d
 description: Obtenga información sobre los roles de administrador, como el rol de administrador global o el rol de administrador de servicio. Los roles se asignan a funciones empresariales específicas y conceden permisos para realizar tareas específicas en el Centro de administración de Microsoft 365.
-ms.openlocfilehash: 0d3dcd975b6cd40ac9817bd5afce5597a6402d79
-ms.sourcegitcommit: 181a0aff54842dcbafd834647c6e9ee47304d10f
+ms.openlocfilehash: 5921762a927e4fd6ed0364da1366f947fb923e47
+ms.sourcegitcommit: 0ad7edcfdcdd11d02fa8a14ffe4b36e120d92deb
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/27/2022
-ms.locfileid: "68722426"
+ms.lasthandoff: 10/29/2022
+ms.locfileid: "68785601"
 ---
 # <a name="about-admin-roles-in-the-microsoft-365-admin-center"></a>Acerca de los roles de administrador en el Centro de administración de Microsoft 365
 
@@ -94,7 +94,7 @@ Probablemente solo necesitará asignar los siguientes roles en su organización.
 |Administrador de licencias    |   Asigne el rol de administrador de licencias a los usuarios que necesiten asignar y quitar licencias a usuarios y editar su ubicación de uso. <br/><br/> Los administradores de licencias también pueden: <br> - Volver a procesar asignaciones de licencia para licencias basadas en grupos <br> - Asignar licencias de producto a grupos de licencias basadas en grupos  |
 |Lector de privacidad del centro de mensajes    |   Asigne el rol de lector de privacidad del Centro de mensajes a los usuarios que necesiten leer mensajes y actualizaciones de privacidad y seguridad en el Centro de mensajes de Microsoft 365. Los lectores de privacidad del centro de mensajes pueden recibir notificaciones por correo electrónico relacionadas con la privacidad de los datos, en función de sus preferencias, y pueden cancelar la suscripción mediante las preferencias del Centro de mensajes. Solo los administradores globales y los lectores de privacidad del Centro de mensajes pueden leer los mensajes de privacidad de datos. Este rol no tiene permiso para ver, crear o administrar solicitudes de servicio. <br><br>Los lectores de privacidad del centro de mensajes también pueden: <br> - Supervisar todas las notificaciones en el Centro de mensajes, incluidos los mensajes de privacidad de datos <br> - Ver grupos, dominios y suscripciones   |
 |Lector del Centro de mensajes |   Asigne el rol de Lector del Centro de mensajes a los usuarios que necesiten hacer lo siguiente: <br> - Supervisar las notificaciones del Centro de mensajes <br> - Obtener resúmenes semanales por correo electrónico de las publicaciones y actualizaciones del Centro de mensajes <br> - Compartir publicaciones del Centro de mensajes <br> - Tener acceso de solo lectura a servicios de Azure AD, como usuarios y grupos|
-|Administrador de aplicaciones de Office    |   Asigne el rol de administrador de aplicaciones de Office a los usuarios que necesiten hacer lo siguiente: <br> - Usar el servicio de directivas en la nube de Office para crear y administrar directivas basadas en la nube para Office <br> - Crear y administrar solicitudes de servicio <br> - Administrar el contenido de Novedades que los usuarios ven en sus aplicaciones de Office   <br> - Supervisar el estado del servicio  |
+|Administrador de aplicaciones de Office    |   Asigne el rol de administrador de aplicaciones de Office a los usuarios que necesiten hacer lo siguiente: <br> - Uso del servicio de directivas en la nube para Microsoft 365 para crear y administrar directivas basadas en la nube para Office <br> - Crear y administrar solicitudes de servicio <br> - Administrar el contenido de Novedades que los usuarios ven en sus aplicaciones de Office   <br> - Supervisar el estado del servicio  |
 |Administrador de contraseñas  |   Asigne el rol de administrador de contraseñas a un usuario que necesite restablecer las contraseñas de los no administradores y los administradores de contraseñas.   |
 |Administrador de Power Platform |   Asigne el rol de administrador de Power Platform a los usuarios que necesiten hacer lo siguiente: <br> - Administrar todas las características de administración de Power Apps, Power Automate y prevención de pérdida de datos de Microsoft Purview <br> - Crear y administrar solicitudes de servicio <br> - Supervisar el estado del servicio  |
 |Lector de informes |   Asigne el rol de lector de informes a los usuarios que necesiten hacer lo siguiente: <br> - Ver datos de uso e informes de actividad en el Centro de administración de Microsoft 365 <br> - Obtener acceso al paquete de contenido de adopción de Power BI <br> - Obtener acceso a los informes de inicio de sesión y a la actividad en Azure AD <br> - Ver datos devueltos por la API de informes de Microsoft Graph|

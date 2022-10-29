@@ -19,12 +19,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Use una directiva de retención para controlar de forma eficaz el contenido que los usuarios generan con el correo electrónico, los documentos y las conversaciones. Conserve lo que desee y libérese de lo que no quiere.
-ms.openlocfilehash: e8efe7834f20b651d875a17cf59413edb63bd6b1
-ms.sourcegitcommit: edc9d4dec92ca81cff39bbf9590f1cd3a75ec436
+ms.openlocfilehash: f78df6609a501cafb086aa82d86374258f468ee6
+ms.sourcegitcommit: 0ad7edcfdcdd11d02fa8a14ffe4b36e120d92deb
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/06/2022
-ms.locfileid: "68484267"
+ms.lasthandoff: 10/29/2022
+ms.locfileid: "68786527"
 ---
 # <a name="create-and-configure-retention-policies"></a>Crear y configurar directivas de retención
 
@@ -78,6 +78,8 @@ Cuando tiene más de una directiva de retención y cuando también usa etiquetas
 
 > [!NOTE]
 > Las directivas de retención son compatibles con [canales compartidos](/MicrosoftTeams/shared-channels). Cuando se configuran las opciones de retención para la ubicación de los **mensajes del canal de Teams**, si un equipo tiene canales compartidos, éstos heredan las opciones de retención de su equipo primario.
+> 
+> Las directivas de retención también admiten registros de datos de llamada recién creados, que son mensajes generados por el sistema. Sin embargo, los registros de datos de llamada para mensajes de canal privado se incluyen en la ubicación de **chats de Teams** , en lugar de en la ubicación de **mensajes de canal privado de Teams** .
 
 1. En la [portal de cumplimiento Microsoft Purview](https://compliance.microsoft.com/), seleccione **Administración** >  del ciclo de vida de datos **Directivas de retención** de **Microsoft 365** > .
 
@@ -111,6 +113,8 @@ Para obtener detalles técnicos sobre el funcionamiento de la retención de Team
 - Aunque puede seleccionar la opción para iniciar el período de retención en el que se modificaron los elementos por última vez, siempre se usa el valor **Cuando se crearon los elementos**. Para los mensajes que se editan, se guarda una copia del mensaje original con la marca de tiempo original para identificar cuándo se creó este mensaje antes de editar, y el mensaje después de editar tiene una marca de tiempo más reciente.
 
 - Al seleccionar **Editar** para la ubicación de los chats de Teams puede que vea invitados y no usuarios del buzón. Las directivas de retención no están diseñadas para estos usuarios, así que no los seleccione.
+
+- Para incluir los registros de datos de llamada recién creados para los mensajes de canal privado de Teams, debe seleccionar la ubicación de **chats de Teams** , en lugar de la ubicación de **mensajes de canal privado de Teams** .
 
 
 #### <a name="additional-retention-policy-needed-to-support-teams"></a>Directivas de retención adicionales que se necesitan para Teams

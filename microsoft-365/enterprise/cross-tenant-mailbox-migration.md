@@ -17,12 +17,12 @@ ms.custom:
 ms.collection:
 - scotvorg
 - M365-subscription-management
-ms.openlocfilehash: 7809e71165216f4b18ffae5e0151cdd941681832
-ms.sourcegitcommit: edc9d4dec92ca81cff39bbf9590f1cd3a75ec436
+ms.openlocfilehash: 6a26d9c3c9e759c533e0ec10cc38e007633004d2
+ms.sourcegitcommit: 0ad7edcfdcdd11d02fa8a14ffe4b36e120d92deb
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/06/2022
-ms.locfileid: "68484616"
+ms.lasthandoff: 10/29/2022
+ms.locfileid: "68786813"
 ---
 # <a name="cross-tenant-mailbox-migration-preview"></a>Migración de buzones entre inquilinos (versión preliminar)
 
@@ -39,8 +39,8 @@ Las migraciones de buzones de Exchange entre inquilinos solo se admiten para inq
 En este artículo se describe el proceso de traslados de buzones entre inquilinos y se proporcionan instrucciones sobre cómo preparar los inquilinos de origen y de destino para los movimientos de contenido del buzón de Exchange Online.
 
 > [!IMPORTANT]
-> Cuando se migra un buzón entre inquilinos con esta característica, se migra todo el correo electrónico, incluido el correo electrónico retenido para litigios. Después de la migración correcta, se elimina el buzón de origen. Esto significa que después de la migración, en ningún caso (incluidos los buzones de correo en suspensión por litigio o retención), es el buzón de origen disponible, reconocible o accesible en el inquilino de origen.  
-> Actualmente estamos investigando un problema en el que, en algunos escenarios, los datos de chat de Teams también se mantienen en el buzón, pero no se migran los datos de chat de Teams. Si se deben conservar los datos de chat de Teams, no use esta característica para migrar el buzón.
+> No use esta característica para migrar buzones en cualquier tipo de suspensión. No se admite la migración de buzones de origen para usuarios en espera.  
+> Cuando se migra un buzón entre inquilinos con esta característica, solo se migra el contenido visible del usuario en el buzón (correo electrónico, contactos, calendario, tareas y notas). al destino (inquilino de destino). Después de la migración correcta, se elimina el buzón de origen. Esto significa que después de la migración, en ningún caso, es el buzón de origen disponible, reconocible o accesible en el inquilino de origen.
 
 > [!NOTE]
 > Si está interesado en obtener una vista previa de nuestra nueva característica Uso compartido de dominios para correo electrónico junto con las migraciones de buzones entre inquilinos, complete el formulario en [aka.ms/domainsharingpreview](https://aka.ms/domainsharingpreview). El uso compartido de dominios para correo electrónico permite a los usuarios de inquilinos independientes de Microsoft 365 enviar y recibir correo electrónico mediante direcciones del mismo dominio personalizado. La característica está pensada para resolver escenarios en los que los usuarios de inquilinos independientes necesitan representar una marca corporativa común en sus direcciones de correo electrónico. La versión preliminar actual admite el uso compartido de dominios de forma indefinida y dominios compartidos durante la coexistencia de migración de buzones entre inquilinos.
@@ -241,7 +241,7 @@ Asegúrese de que los siguientes objetos y atributos se establecen en la organiz
 
      - ExchangeGUID (flujo directo de origen a destino): el GUID del buzón debe coincidir. El proceso de movimiento no continuará si esto no está presente en el objeto de destino.
      - ArchiveGUID (flujo directo de origen a destino): el GUID de archivo debe coincidir. El proceso de movimiento no continuará si esto no está presente en el objeto de destino. (Esto solo es necesario si el buzón de origen está habilitado para el archivo).
-     - LegacyExchangeDN (flujo como proxyAddress, "x500:\<LegacyExchangeDN>"): LegacyExchangeDN debe estar presente en mailUser de destino como x500: proxyAddress. Además, también debe copiar todas las direcciones x500 del buzón de origen al usuario de correo de destino. Los procesos de movimiento no continuarán si no están presentes en el objeto de destino.
+     - LegacyExchangeDN (flujo como proxyAddress, "x500:\<LegacyExchangeDN>"): LegacyExchangeDN debe estar presente en mailUser de destino como x500: proxyAddress. Además, también debe copiar todas las direcciones x500 del buzón de origen al usuario de correo de destino. Los procesos de movimiento no continuarán si no están presentes en el objeto de destino. Además, este paso es importante para habilitar la capacidad de respuesta para los correos electrónicos que se envían antes de la migración. La dirección de remitente o destinatario de cada elemento de correo electrónico y la caché de autocompletar en Microsoft Outlook y en Microsoft Outlook Web App (OWA) usa el valor del atributo LegacyExchangeDN. Si un usuario no se puede encontrar con el valor LegacyExchangeDN, es posible que se produzca un error en la entrega de mensajes de correo electrónico con un NDR 5.1.1.
      - UserPrincipalName: UPN se alineará con la nueva identidad del usuario o la empresa de destino (por ejemplo, user@northwindtraders.onmicrosoft.com).
      - SMTPAddress principal: la dirección SMTP principal se alineará con la nueva empresa del usuario (por ejemplo, user@northwind.com).
      - TargetAddress/ExternalEmailAddress: MailUser hará referencia al buzón actual del usuario hospedado en el inquilino de origen (por ejemplo, user@contoso.onmicrosoft.com). Al asignar este valor, compruebe que tiene o también está asignando PrimarySMTPAddress o que este valor establecerá PrimarySMTPAddress, lo que provocará errores de movimiento.
@@ -285,19 +285,9 @@ Asegúrese de que los siguientes objetos y atributos se establecen en la organiz
    - msExchSafeRecipientsHash: escribe datos de remitente seguros y bloqueados en línea de los clientes en Active Directory local.
    - msExchSafeSendersHash: escribe datos de remitente seguros y bloqueados en línea de los clientes en Active Directory local.
 
-2. Si el buzón de origen está en LitigationHold y el tamaño de elementos recuperables del buzón de origen es mayor que el valor predeterminado de la base de datos (30 GB), los movimientos no continuarán porque la cuota de destino es menor que el tamaño del buzón de origen. Puede actualizar el objeto MailUser de destino para realizar la transición de las marcas de buzón de ELC desde el entorno de origen al destino, lo que desencadena que el sistema de destino expanda la cuota de MailUser a 100 GB, lo que permite el traslado al destino. Estas instrucciones solo funcionarán para la identidad híbrida que ejecuta Azure AD Connect, ya que los comandos para marcar las marcas de ELC no se exponen a los administradores de inquilinos.
+2. Si el tamaño de elementos recuperables del buzón de origen es mayor que el valor predeterminado de la base de datos (30 GB), los movimientos no continuarán, ya que la cuota de destino es menor que el tamaño del buzón de origen. Puede actualizar el objeto MailUser de destino para realizar la transición de las marcas de buzón de ELC desde el entorno de origen al destino, lo que desencadena que el sistema de destino expanda la cuota de MailUser a 100 GB, lo que permite el traslado al destino. En un entorno híbrido, necesitará establecer los msExchELCMailboxFlags adecuados en el aduser de destino.
 
-   > [!NOTE]
-   > EJEMPLO: TAL Y COMO ESTÁ, SIN GARANTÍA
-   >
-   > Este script supone una conexión tanto al buzón de origen (para obtener valores de origen) como al Active Directory local de destino (para marcar el objeto ADUser). Si el origen tiene habilitada la recuperación por litigio o un solo elemento, establézcala en la cuenta de destino. Esto aumentará el tamaño del contenedor de memoria de la cuenta de destino a 100 GB.
-
-   ```powershell
-   $ELCValue = 0
-   if ($source.LitigationHoldEnabled) {$ELCValue = $ELCValue + 8} if ($source.SingleItemRecoveryEnabled) {$ELCValue = $ELCValue + 16} if ($ELCValue -gt 0) {Set-ADUser -Server $domainController -Identity $destination.SamAccountName -Replace @{msExchELCMailboxFlags=$ELCValue}}
-   ```
-
-3. Los inquilinos de destino no híbridos pueden modificar la cuota en la carpeta Elementos recuperables de MailUsers antes de la migración mediante la ejecución del siguiente comando para habilitar la suspensión por juicio en el objeto MailUser y aumentar la cuota a 100 GB:
+3. Los inquilinos de destino no híbridos pueden modificar la cuota en la carpeta Elementos recuperables de MailUsers antes de la migración mediante la ejecución del siguiente comando para habilitar la suspensión por juicio en el objeto MailUser de destino y aumentar la cuota a 100 GB:
 
    ```powershell
    Set-MailUser -Identity <MailUserIdentity> -EnableLitigationHoldForMigration
@@ -398,7 +388,7 @@ Las reuniones se moverán, pero la dirección URL de la reunión de Teams no se 
 
 ### <a name="does-the-teams-chat-folder-content-migrate-cross-tenant"></a>¿El contenido de la carpeta de chat de Teams migra entre inquilinos?
 
-No, el contenido de la carpeta de chat de Teams no migra entre inquilinos. Cuando se migra un buzón entre inquilinos con esta característica, se migra todo el correo electrónico, incluido el correo electrónico retenido para litigios. Después de la migración correcta, se elimina el buzón de origen. Esto significa que después de la migración, en ningún caso (incluidos los buzones de correo en suspensión por litigio o retención), es el buzón de origen disponible, reconocible o accesible en el inquilino de origen. Actualmente estamos investigando un problema en el que, en algunos escenarios, los datos de chat de Teams también se mantienen en el buzón, pero no se migran los datos de chat de Teams. Si se deben conservar los datos de chat de Teams, no use esta característica para migrar el buzón.
+No, el contenido de la carpeta de chat de Teams no migra entre inquilinos. Cuando se migra un buzón entre inquilinos con esta característica, solo se migra el contenido visible del usuario en el buzón (correo electrónico, contactos, calendario, tareas y notas).
 
 ### <a name="how-can-i-see-just-moves-that-are-cross-tenant-moves-not-my-onboarding-and-off-boarding-moves"></a>¿Cómo puedo ver solo movimientos que son movimientos entre inquilinos, no mis movimientos de incorporación y desembarque?
 
@@ -411,7 +401,7 @@ Get-MoveRequest -Flags "CrossTenant"
 ### <a name="can-you-provide-example-scripts-for-copying-attributes-used-in-testing"></a>¿Puede proporcionar scripts de ejemplo para copiar los atributos usados en las pruebas?
 
 > [!NOTE]
-> EJEMPLO: TAL CUAL, SIN GARANTÍA Este script supone una conexión con el buzón de origen (para obtener los valores de origen) y el destino Active Directory local Domain Services (para marcar el objeto ADUser). Si el origen tiene habilitada la recuperación por litigio o un solo elemento, establézcala en la cuenta de destino. Esto aumentará el tamaño del contenedor de memoria de la cuenta de destino a 100 GB.
+> EJEMPLO: TAL CUAL, SIN GARANTÍA Este script supone una conexión con el buzón de origen (para obtener los valores de origen) y el destino Active Directory local Domain Services (para marcar el objeto ADUser).
 
 ```powershell
 # This will export users from the source tenant with the CustomAttribute1 = "Cross-Tenant-Project"
@@ -466,13 +456,17 @@ Hay una matriz de roles basada en la suposición de tareas delegadas al ejecutar
 
 El buzón de Exchange se mueve mediante MRS crea el targetAddress en el buzón de origen original al convertirse en un mailUser mediante la coincidencia de una dirección de correo electrónico (proxyAddress) en el objeto de destino. El proceso toma el valor -TargetDeliveryDomain pasado al comando move y, a continuación, comprueba si hay un proxy coincidente para ese dominio en el lado de destino. Cuando se encuentra una coincidencia, el proxyAddress coincidente se usa para establecer externalEmailAddress (targetAddress) en el objeto de buzón convertido (ahora MailUser).
 
+### <a name="how-mail-flow-works-after-migration"></a>¿Cómo funciona el flujo de correo después de la migración?
+
+El flujo de correo entre inquilinos después de la migración funciona de forma similar al flujo de correo híbrido de Exchange. Cada buzón migrado necesita el elemento MailUser de origen con la dirección de destino correcta para reenviar el correo entrante desde el inquilino de origen a los buzones del inquilino de destino. Las reglas de transporte, las características de seguridad y cumplimiento se ejecutarán según lo configurado en cada inquilino por el que fluye el correo. Por lo tanto, para el correo entrante, las características como antispam, antimalware, cuarentena, así como reglas de transporte y reglas de registro en diario se ejecutarán primero en el inquilino de origen y, a continuación, en el inquilino de destino.
+
 ### <a name="how-do-mailbox-permissions-transition"></a>¿Cómo se realiza la transición de los permisos de buzón de correo?
 
 Los permisos de buzón incluyen Enviar en nombre de y Acceso al buzón:
 
 - Enviar en nombre de (AD:publicDelegates) almacena el DN de los destinatarios con acceso al buzón de correo de un usuario como delegado. Este valor se almacena en Active Directory y actualmente no se mueve como parte de la transición del buzón. Si el buzón de origen tiene publicDelegates establecido, deberá remuestreo los publicDelegates en el buzón de destino una vez que la conversión de MEU a Buzón se complete en el entorno de destino mediante la ejecución `Set-Mailbox <principle> -GrantSendOnBehalfTo <delegate>`de .
 
-- Los permisos de buzón que se almacenan en el buzón se moverán con el buzón cuando la entidad de seguridad y el delegado se muevan al sistema de destino. Por ejemplo, al usuario TestUser_7 se le concede FullAccess al buzón de correo TestUser_8 en el SourceCompany.onmicrosoft.com de inquilino. Una vez completado el traslado del buzón a TargetCompany.onmicrosoft.com, se configuran los mismos permisos en el directorio de destino. A continuación se muestran ejemplos de uso _de Get-MailboxPermission_ para TestUser_7 en inquilinos de origen y de destino. Los cmdlets de Exchange tienen como prefijo el origen y el destino en consecuencia.
+- Los permisos de buzón que se almacenan en el buzón se moverán con el buzón cuando la entidad de seguridad y el delegado se muevan al sistema de destino. Por ejemplo, al usuario TestUser *7 se le concede FullAccess al buzón TestUser_8 en el inquilino SourceCompany.onmicrosoft.com. Una vez completado el traslado del buzón a TargetCompany.onmicrosoft.com, se configuran los mismos permisos en el directorio de destino. A continuación se muestran ejemplos de uso \_de Get-MailboxPermission* para TestUser_7 en inquilinos de origen y de destino. Los cmdlets de Exchange tienen como prefijo el origen y el destino en consecuencia.
 
 Este es un ejemplo de la salida del permiso de buzón antes de un movimiento.
 

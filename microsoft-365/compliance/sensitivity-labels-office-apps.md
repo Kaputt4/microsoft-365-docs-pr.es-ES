@@ -18,12 +18,12 @@ search.appverid:
 - MET150
 description: Información para que los administradores de TI administren las etiquetas de confidencialidad en las aplicaciones de Office para escritorio, móvil y web.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 91f037fa35396e87bba4b007c1c09fb628a06165
-ms.sourcegitcommit: 3d7dd25abcbf923b45eae84ff4d9d2bb95ef4ca4
+ms.openlocfilehash: c4ae1dfd9d38650a7f34287685a3f00b34c1234e
+ms.sourcegitcommit: 0ad7edcfdcdd11d02fa8a14ffe4b36e120d92deb
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/28/2022
-ms.locfileid: "68777694"
+ms.lasthandoff: 10/29/2022
+ms.locfileid: "68786769"
 ---
 # <a name="manage-sensitivity-labels-in-office-apps"></a>Administrar etiquetas de confidencialidad en las aplicaciones de Office
 
@@ -146,7 +146,7 @@ Si se cumplen ambas condiciones, pero necesita desactivar las etiquetas integrad
 
 Si más adelante necesita revertir esta configuración, cambie el valor a **1**. También es posible que tenga que cambiar el valor a 1 si el botón **Confidencialidad** no se muestra en la cinta de opciones según lo esperado. Por ejemplo, un administrador anterior ha desactivado esta configuración de etiquetado.
  
-Implementar esta configuración mediante la directiva de grupo o mediante el [Servicio de directiva de la nube de Office](/DeployOffice/overview-office-cloud-policy-service). La configuración tiene efecto cuando se reinician estas aplicaciones de Office. 
+Implemente esta configuración mediante directiva de grupo o mediante el [servicio de directivas en la nube para Microsoft 365](/DeployOffice/overview-office-cloud-policy-service). La configuración tiene efecto cuando se reinician estas aplicaciones de Office. 
 
 Dado que esta configuración es específica de las aplicaciones de Windows Office, no tiene ningún impacto en otras aplicaciones de Windows que admiten etiquetas de confidencialidad (como Power BI) u otras plataformas (como macOS, dispositivos móviles y Office para la Web). Si no quiere que algunos o que todos los usuarios vean y usen etiquetas de confidencialidad en todas las aplicaciones y plataformas, no asigne una directiva de etiquetas de confidencialidad a esos usuarios.
 

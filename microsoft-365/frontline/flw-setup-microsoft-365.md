@@ -4,7 +4,7 @@ author: samanro
 ms.author: samanro
 ms.reviewer: samanro
 manager: pamgreen
-ms.topic: article
+ms.topic: how-to
 audience: admin
 ms.service: microsoft-365-frontline
 search.appverid: MET150
@@ -18,12 +18,12 @@ ms.collection:
 appliesto:
 - Microsoft Teams
 - Microsoft 365 for frontline workers
-ms.openlocfilehash: fe5610387744c9a9a0dcfa9c87e82741b0847a8d
-ms.sourcegitcommit: 12af9e8e3a6eaa090fda9e98ccb831dff65863a4
+ms.openlocfilehash: 1229b9b71d926cf03441659e2c0ee538afc107fc
+ms.sourcegitcommit: 0ad7edcfdcdd11d02fa8a14ffe4b36e120d92deb
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/27/2022
-ms.locfileid: "68057335"
+ms.lasthandoff: 10/29/2022
+ms.locfileid: "68784987"
 ---
 # <a name="set-up-microsoft-365-for-frontline-workers"></a>Microsoft 365 para trabajadores de primera línea
 

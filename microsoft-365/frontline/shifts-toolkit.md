@@ -4,7 +4,7 @@ author: daisyfell
 ms.author: daisyfeller
 manager: pamgreen
 audience: ITPro
-ms.topic: article
+ms.topic: end-user-help
 ms.service: microsoft-365-frontline
 search.appverid: ''
 searchScope:
@@ -24,12 +24,12 @@ description: Recursos para ayudar a entrenar al equipo de primera línea en el u
 appliesto:
 - Microsoft Teams
 - Microsoft 365 for frontline workers
-ms.openlocfilehash: 1ac458f7adbf3870f5b649166f55db63c22c4495
-ms.sourcegitcommit: 674dfa2cb2f20546d2f7822e09bacf0e12e2718b
+ms.openlocfilehash: ae475915dc6cf93bc1a8443d3c61ce3a8fa59817
+ms.sourcegitcommit: 0ad7edcfdcdd11d02fa8a14ffe4b36e120d92deb
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/27/2022
-ms.locfileid: "68038783"
+ms.lasthandoff: 10/29/2022
+ms.locfileid: "68785009"
 ---
 # <a name="help-your-frontline-workers-track-time-and-attendance"></a>Ayudar a los trabajadores de primera línea a realizar un seguimiento del tiempo y la asistencia
 

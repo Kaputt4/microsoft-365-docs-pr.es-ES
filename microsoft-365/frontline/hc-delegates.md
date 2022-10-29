@@ -4,7 +4,7 @@ author: samanro
 ms.author: samanro
 manager: pamgreen
 audience: ITPro
-ms.topic: article
+ms.topic: how-to
 ms.service: microsoft-365-frontline
 search.appverid: MET150
 searchScope:
@@ -26,12 +26,12 @@ appliesto:
 ms.reviewer: acolonna
 description: Obtenga información sobre cómo un usuario con estado Away o Do Not Disturb puede establecer explícitamente otro usuario como delegado en su mensaje de estado.
 ms.custom: seo-marvel-mar2020
-ms.openlocfilehash: 4837b6c2b8ac4a450705397819ccb93fdbbfa8f6
-ms.sourcegitcommit: e326b492f6ff15b78d4b77b0a1da06dcdaad3f62
+ms.openlocfilehash: 799e5c4976d8725a8be5ddeff5e924fd4a3248e2
+ms.sourcegitcommit: 0ad7edcfdcdd11d02fa8a14ffe4b36e120d92deb
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/22/2022
-ms.locfileid: "68676045"
+ms.lasthandoff: 10/29/2022
+ms.locfileid: "68786483"
 ---
 # <a name="use-a-teams-status-message-to-assign-a-delegate"></a>Uso de un mensaje de estado de Teams para asignar un delegado
 

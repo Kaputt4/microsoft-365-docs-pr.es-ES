@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: En el caso de las aplicaciones Office 365, comprenda la migración del complemento de Azure Information Protection (AIP) a un etiquetado integrado para proteger la información confidencial.
-ms.openlocfilehash: eb12c7cff4b3ca27f49503a3528a775af794901a
-ms.sourcegitcommit: 0ca3ab2abe07810e9b2cc2d806e3c6b9f35b146c
+ms.openlocfilehash: 0567f90ac308458653ceb1eaec8404a9e8b25a81
+ms.sourcegitcommit: 0ad7edcfdcdd11d02fa8a14ffe4b36e120d92deb
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/24/2022
-ms.locfileid: "68684940"
+ms.lasthandoff: 10/29/2022
+ms.locfileid: "68786511"
 ---
 # <a name="migrate-the-azure-information-protection-aip-add-in-to-built-in-labeling-for-office-apps"></a>Migración del complemento de Azure Information Protection (AIP) al etiquetado integrado para aplicaciones de Office
 
@@ -127,7 +127,7 @@ Para las aplicaciones de Windows Office que admiten el etiquetado integrado, us
 |Outlook | `MSIP.OutlookAddin` |
 | | | 
 
-Implementar esta configuración mediante la directiva de grupo o mediante el [Servicio de directiva de la nube de Office](/DeployOffice/overview-office-cloud-policy-service).
+Implemente esta configuración mediante directiva de grupo o mediante el [servicio de directivas en la nube para Microsoft 365](/DeployOffice/overview-office-cloud-policy-service).
 
 > [!IMPORTANT]
 > If you use the Group Policy setting **Use the Sensitivity feature in Office to apply and view sensitivity labels** and set this to **1**, there are some situations where the AIP add-in might still load in Office apps. Blocking the add-in from loading in each app prevents this happening.
@@ -149,7 +149,7 @@ En las [versiones más recientes de Office](#how-to-disable-the-aip-add-in-to-us
 
 Esta nueva configuración todavía se está implementando. Si aún no lo ve, espere unos días más e inténtelo de nuevo.
 
-Implementar esta configuración mediante la directiva de grupo o mediante el [Servicio de directiva de la nube de Office](/DeployOffice/overview-office-cloud-policy-service).
+Implemente esta configuración mediante directiva de grupo o mediante el [servicio de directivas en la nube para Microsoft 365](/DeployOffice/overview-office-cloud-policy-service).
 
 Es posible que tenga que configurar opciones adicionales de Office:
 

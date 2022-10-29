@@ -6,7 +6,7 @@ author: samanro
 ms.author: samanro
 manager: pamgreen
 audience: admin
-ms.topic: article
+ms.topic: conceptual
 ms.service: microsoft-365-frontline
 ms.localizationpriority: high
 ms.collection:
@@ -19,12 +19,12 @@ ms.reviewer: aaglick
 appliesto:
 - Microsoft Teams
 - Microsoft 365 for frontline workers
-ms.openlocfilehash: cfa44bdccad320ba0b9e0bb3593d7b8cf3bfe9c1
-ms.sourcegitcommit: 12af9e8e3a6eaa090fda9e98ccb831dff65863a4
+ms.openlocfilehash: 4f33fc714b4b76dd1c815f71131b46aae4a2b4ac
+ms.sourcegitcommit: 0ad7edcfdcdd11d02fa8a14ffe4b36e120d92deb
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/27/2022
-ms.locfileid: "68068765"
+ms.lasthandoff: 10/29/2022
+ms.locfileid: "68785119"
 ---
 # <a name="choose-your-scenarios-for-microsoft-365-for-frontline-workers"></a>Elija los escenarios para Microsoft 365 para trabajadores de primera línea
 

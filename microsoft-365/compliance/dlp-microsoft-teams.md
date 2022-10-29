@@ -11,16 +11,17 @@ ms.topic: conceptual
 ms.service: O365-seccomp
 ms.localizationpriority: medium
 ms.collection:
-- M365-security-compliance
+- tier1
+- purview-compliance
 search.appverid:
 - MET150
 description: Los chats y canales de Microsoft Teams admiten directivas de prevención de pérdida de datos (DLP).
-ms.openlocfilehash: ae9f7b273dc84d16c499a13f4c491d517d804cd2
-ms.sourcegitcommit: 6d86713c3b1da2db338c78fa60bd7d93e24aa6f4
+ms.openlocfilehash: fa901a910cd49f1dd38a4b6fe3ca7908f9a67996
+ms.sourcegitcommit: 0ad7edcfdcdd11d02fa8a14ffe4b36e120d92deb
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/09/2022
-ms.locfileid: "67639622"
+ms.lasthandoff: 10/29/2022
+ms.locfileid: "68785647"
 ---
 # <a name="data-loss-prevention-and-microsoft-teams"></a>Prevención de pérdida de datos y Microsoft Teams.
 
@@ -43,6 +44,8 @@ Puede ampliar la directiva DLP de Teams para cubrir SharePoint Online y OneDrive
     - **Compartir con el equipo (internamente):** el canal se comparte con otro equipo de TeamB en Contoso. Que otro equipo puede tener una directiva DLP diferente, pero eso no importa. P1 se aplicará a todos los usuarios de este canal compartido, incluidos los usuarios de TeamA y TeamB.
     - **Compartir con el equipo (entre inquilinos):** el canal se comparte con un equipo TeamF en Fabrikam. Fabrikam puede tener su propia directiva DLP, pero eso no importa. P1 se aplicará a todos los usuarios de este canal compartido, incluidos los usuarios de TeamA (Contoso) y TeamF (Fabrikam).
  
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
+
 ## <a name="dlp-licensing-for-microsoft-teams"></a>Licencias DLP para Microsoft Teams
 
 Las funcionalidades de [prevención de pérdida de datos](dlp-learn-about-dlp.md) incluyen mensajes de canal y chat de Microsoft Teams, **incluidos los mensajes de canal privado** para:
@@ -74,7 +77,7 @@ La protección DLP se aplica de forma diferente a las entidades de Teams.
 |     |Mensajes de canal estándar y compartidos  |No         |
 |     |Mensajes de canal privado         |Sí        |
 |Grupo de Microsoft 365    |1:1/n chats          |No         |
-|     |Mensajes de canal estándar y compartidos          |Yes        |
+|     |Mensajes de canal estándar y compartidos          |Sí        |
 |     |Mensajes de canal privado|No| 
 
 
@@ -131,7 +134,7 @@ Para llevar a cabo esta tarea, debe tener asignado un rol de administración que
 5. En la pestaña **Elegir ubicaciones** , mantenga la configuración predeterminada de todas las cuentas o seleccione **Permitirme elegir ubicaciones específicas**. Puede especificar lo siguiente:
 
     1. Hasta 1000 cuentas individuales para incluir o excluir
-    1. Listas de distribución y grupos de seguridad que se van a incluir o excluir. 
+    1. Listas de distribución y grupos de seguridad (habilitados para correo) para incluir o excluir. 
     <!-- 1. the shared mailbox of a shared channel. **This is a public preview feature.**--> 
     
 6. A continuación, elija **Siguiente**.
