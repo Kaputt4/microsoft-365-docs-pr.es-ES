@@ -10,6 +10,7 @@ ms.pagetype: security
 ms.author: deniseb
 author: denisebmsft
 ms.localizationpriority: medium
+ms.date: 10/24/2022
 manager: dansimp
 audience: ITPro
 ms.collection:
@@ -25,16 +26,14 @@ ms.custom:
 - FPFN
 - admindeeplinkDEFENDER
 search.appverid: met150
-ms.openlocfilehash: d057d64ac3d828a871103fa1b5120f7730f0d63c
-ms.sourcegitcommit: 0b7070ec119e00e0dafe030bbfbef0ae5c9afa19
+ms.openlocfilehash: 18b5745e9d8104f6a4eea370923e318e227ac9a3
+ms.sourcegitcommit: 21548843708d80bc861f03ffae41457252492bb6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/29/2022
-ms.locfileid: "68195355"
+ms.lasthandoff: 10/31/2022
+ms.locfileid: "68794190"
 ---
 # <a name="address-false-positivesnegatives-in-microsoft-defender-for-endpoint"></a>Abordar falsos positivos/negativos en Microsoft Defender para punto de conexión
-
-[!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
 **Se aplica a:**
 
@@ -44,7 +43,7 @@ ms.locfileid: "68195355"
 **Plataformas**
 - Windows
 
-En las soluciones de endpoint protection, un falso positivo es una entidad, como un archivo o un proceso, que se detectó e identificó como malintencionada, aunque la entidad no sea realmente una amenaza. Un falso negativo es una entidad que no se detectó como amenaza, aunque realmente sea malintencionada. Los falsos positivos o negativos pueden producirse con cualquier solución de protección contra amenazas, [incluidos los Microsoft Defender para punto de conexión](microsoft-defender-endpoint.md).
+En las soluciones de endpoint protection, un falso positivo es una entidad, como un archivo o un proceso que se detectó e identificó como malintencionado aunque la entidad no sea realmente una amenaza. Un falso negativo es una entidad que no se detectó como amenaza, aunque realmente sea malintencionada. Los falsos positivos o negativos pueden producirse con cualquier solución de protección contra amenazas, [incluidos los Microsoft Defender para punto de conexión](microsoft-defender-endpoint.md).
 
 :::image type="content" source="images/false-positives-overview.png" alt-text="Definición de falsos positivos y negativos en el portal de Microsoft Defender para punto de conexión" lightbox="images/false-positives-overview.png":::
 
@@ -65,7 +64,7 @@ Puede obtener ayuda si sigue teniendo problemas con falsos positivos o negativos
 
 ## <a name="part-1-review-and-classify-alerts"></a>Parte 1: Revisión y clasificación de alertas
 
-Si ve una [alerta](alerts.md) que se desencadenó porque se detectó algo como malintencionado o sospechoso que no debería haber sido, puede suprimir la alerta para esa entidad. También puede suprimir las alertas que no son necesariamente falsos positivos, pero que no son importantes. Se recomienda clasificar también las alertas.
+Si ve una [alerta](alerts.md) que surgió porque se ha detectado algo como malintencionado o sospechoso y no debería ser así, puede suprimir la alerta para esa entidad. También puede suprimir las alertas que no son necesariamente falsos positivos, pero que no son importantes. Se recomienda clasificar también las alertas.
 
 Administrar las alertas y clasificar los positivos verdaderos o falsos ayuda a entrenar la solución de protección contra amenazas y puede reducir el número de falsos positivos o falsos negativos a lo largo del tiempo. Realizar estos pasos también ayuda a reducir el ruido en la cola para que el equipo de seguridad pueda centrarse en elementos de trabajo de mayor prioridad.
 
@@ -75,9 +74,9 @@ Antes de clasificar o suprimir una alerta, determine si la alerta es precisa, un
 
 1. Vaya al portal de Microsoft 365 Defender ([https://security.microsoft.com](https://security.microsoft.com)) e inicie sesión.
 
-2. En el panel de navegación, elija **Cola de alertas**.
+2. En el panel de navegación, elija **Incidentes & alertas** y, a continuación, seleccione **Alertas**.
 
-3. Seleccione una alerta para obtener más detalles sobre la alerta. (Consulte [Revisión de alertas en Microsoft Defender para punto de conexión](review-alerts.md)).
+3. Seleccione una alerta para ver más detalles al respecto. (Consulte [Revisión de alertas en Microsoft Defender para punto de conexión](review-alerts.md)).
 
 4. En función del estado de la alerta, siga los pasos descritos en la tabla siguiente:
 
@@ -93,11 +92,11 @@ Las alertas se pueden clasificar como falsos positivos o verdaderos positivos en
 
 1. Vaya al portal de Microsoft 365 Defender ([https://security.microsoft.com](https://security.microsoft.com)) e inicie sesión.
 
-2. Seleccione **Cola de alertas** y, a continuación, seleccione una alerta.
+2. En el panel de navegación, elija **Incidentes & alertas**, seleccione **Alertas** y, a continuación, seleccione una alerta.
 
-3. Para la alerta seleccionada, seleccione **Actions** **Manage alert (Administrar alerta).**\> Se abre un panel flotante.
+3. Para la alerta seleccionada, seleccione **Administrar alerta**. Se abre un panel flotante.
 
-4. En la sección **Administrar alerta** , seleccione **Alerta verdadera** o **Alerta falsa**. (Use **la alerta False** para clasificar un falso positivo).
+4. En la sección **Administrar alerta** , en el campo **Clasificación** , clasifique la alerta (Verdadero positivo, Informativo, Actividad esperada o Falso positivo).
 
 > [!TIP]
 > Para obtener más información sobre cómo suprimir alertas, vea [Administrar alertas de Microsoft Defender para punto de conexión](/microsoft-365/security/defender-endpoint/manage-alerts). Además, si su organización usa un servidor de administración de eventos e información de seguridad (SIEM), asegúrese de definir también allí una regla de supresión.
@@ -108,11 +107,11 @@ Si tiene alertas que son falsos positivos o que son verdaderos positivos, pero p
 
 1. Vaya al portal de Microsoft 365 Defender ([https://security.microsoft.com](https://security.microsoft.com)) e inicie sesión.
 
-2. En el panel de navegación, seleccione **Cola de alertas**.
+2. En el panel de navegación, elija **Incidentes & alertas** y, a continuación, seleccione **Alertas**.
 
 3. Seleccione una alerta que quiera suprimir para abrir su panel **Detalles** .
 
-4. En el panel **Detalles** , elija los puntos suspensivos (**...**) y, a continuación, **Cree una regla de supresión**.
+4. En el panel **Detalles** , elija los puntos suspensivos (**...**) y, a continuación, **Crear regla de supresión**.
 
 5. Especifique toda la configuración de la regla de supresión y, a continuación, elija **Guardar**.
 
@@ -143,7 +142,7 @@ Cuando haya terminado de revisar y deshacer las acciones que se realizaron como 
 
 ### <a name="review-completed-actions"></a>Revisar las acciones completadas
 
-1. En el panel de navegación izquierdo del <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">portal de Microsoft 365 Defender</a>, haga clic en **Centro de acciones**.
+1. En el panel de navegación izquierdo del <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">portal de Microsoft 365 Defender</a>, seleccione **Acciones & envíos** y, a continuación, seleccione **Centro de acciones**.
 
 2. Seleccione la pestaña **Historial** para ver una lista de las acciones realizadas.
 
@@ -151,7 +150,7 @@ Cuando haya terminado de revisar y deshacer las acciones que se realizaron como 
 
 ### <a name="restore-a-quarantined-file-from-the-action-center"></a>Restauración de un archivo en cuarentena desde el Centro de acciones
 
-1. En el panel de navegación izquierdo del portal de Microsoft 365 Defender, haga clic en **Centro de acciones**.
+1. En el panel de navegación izquierdo del portal de Microsoft 365 Defender, seleccione **Acciones & envíos** y, a continuación, seleccione **Centro de acciones**.
 
 2. En la pestaña **Historial** , seleccione una acción que quiera deshacer.
 
@@ -159,22 +158,30 @@ Cuando haya terminado de revisar y deshacer las acciones que se realizaron como 
 
 ### <a name="undo-multiple-actions-at-one-time"></a>Deshacer varias acciones a la vez
 
-1. En el panel de navegación izquierdo del <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">portal de Microsoft 365 Defender</a>, haga clic en **Centro de acciones**.
+1. En el panel de navegación izquierdo del <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">portal de Microsoft 365 Defender</a>, seleccione **Acciones & envíos** y, a continuación, seleccione **Centro de acciones**.
 
 2. En la pestaña **Historial** , seleccione las acciones que desea deshacer.
 
-3. En el panel del lado derecho de la pantalla, seleccione **Deshacer**.
+3. En el panel flotante del lado derecho de la pantalla, seleccione **Deshacer**.
 
 ### <a name="remove-a-file-from-quarantine-across-multiple-devices"></a>Eliminación de un archivo de la cuarentena en varios dispositivos
 
 > [!div class="mx-imgBorder"]
 > :::image type="content" source="images/autoir-quarantine-file-1.png" alt-text="El archivo de cuarentena" lightbox="images/autoir-quarantine-file-1.png":::
 
-1. En el panel de navegación izquierdo del <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">portal de Microsoft 365 Defender</a>, haga clic en **Centro de acciones**.
+1. En el panel de navegación izquierdo del <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">portal de Microsoft 365 Defender</a>, seleccione **Acciones & envíos** y, a continuación, seleccione **Centro de acciones**.
 
 2. En la pestaña **Historial** , seleccione un archivo que tenga el **archivo de cuarentena** Tipo de acción.
 
 3. En el panel del lado derecho de la pantalla, seleccione **Aplicar a X más instancias de este archivo** y, a continuación, seleccione **Deshacer**.
+
+### <a name="review-quarantined-messages"></a>Revisión de los mensajes en cuarentena
+
+1. Vaya al portal de Microsoft 365 Defender ([https://security.microsoft.com](https://security.microsoft.com)) e inicie sesión.
+
+2. En el panel de navegación, en **Email & colaboración**, seleccione **Seguimiento de mensajes de Exchange**.
+
+3. Seleccione un mensaje para ver los detalles.
 
 ### <a name="restore-file-from-quarantine"></a>Restaurar archivo de la cuarentena
 
@@ -332,7 +339,7 @@ Si se detectó algo como malware en función del comportamiento y no tiene un ar
 
 Nuestros sistemas examinan inmediatamente su envío para proporcionarle la determinación más reciente incluso antes de que un analista empiece a controlar su caso. Es posible que un analista ya haya enviado y procesado un archivo. En esos casos, se determina rápidamente.
 
-En el caso de los envíos que aún no se han procesado, se priorizan para el análisis como se indica a continuación:
+En el caso de los envíos que aún no se han procesado, se priorizan para el análisis de la siguiente manera:
 
 - Los archivos frecuentes con el potencial de afectar a un gran número de equipos tienen una prioridad más alta.
 - A los clientes autenticados, especialmente a los clientes [empresariales con identificadores de Software Assurance (SAID) válidos](https://www.microsoft.com/licensing/licensing-programs/software-assurance-default.aspx), se les da una prioridad más alta.
@@ -358,9 +365,9 @@ Compruebe el nivel de protección entregado en la nube para Microsoft Defender A
 > [!TIP]
 > Para más información sobre cómo configurar la protección entregada en la nube, consulte [Especificación del nivel de protección entregado en la nube](/windows/security/threat-protection/microsoft-defender-antivirus/specify-cloud-protection-level-microsoft-defender-antivirus).
 
-Se recomienda usar [Microsoft Endpoint Manager](/mem/endpoint-manager-overview) para editar o establecer la configuración de protección proporcionada en la nube; sin embargo, puede usar otros métodos, como [directiva de grupo](/azure/active-directory-domain-services/manage-group-policy) (consulte [Administrar Microsoft Defender para punto de conexión](manage-mde-post-migration.md).
+Se recomienda usar [Microsoft Endpoint Manager](/mem/endpoint-manager-overview) para editar o establecer la configuración de protección entregada en la nube; sin embargo, puede usar otros métodos, como [directiva de grupo](/azure/active-directory-domain-services/manage-group-policy) (consulte [Administrar Microsoft Defender para punto de conexión](manage-mde-post-migration.md).
 
-#### <a name="use-microsoft-endpoint-manager-to-review-and-edit-cloud-delivered-protection-settings-for-existing-policies"></a>Uso de Microsoft Endpoint Manager para revisar y editar la configuración de protección entregada en la nube (para directivas existentes)
+#### <a name="use-microsoft-endpoint-manager-to-review-and-edit-cloud-delivered-protection-settings-for-existing-policies"></a>Use Microsoft Endpoint Manager para revisar y editar la configuración de protección entregada en la nube (para directivas existentes)
 
 1. Vaya al Centro de administración de Microsoft Endpoint Manager (<https://endpoint.microsoft.com>) e inicie sesión.
 
@@ -387,7 +394,7 @@ Se recomienda usar [Microsoft Endpoint Manager](/mem/endpoint-manager-overview) 
    - Establezca **Activar la protección entregada en la nube en** **Sí**.
    - Establezca **Nivel de protección proporcionada en la nube** en **Sin configurar**. (Este nivel proporciona un alto nivel de protección de forma predeterminada, a la vez que reduce las posibilidades de obtener falsos positivos).
 
-6. En la pestaña **Etiquetas** de ámbito, si usa etiquetas de ámbito en su organización, especifique etiquetas de ámbito para la directiva. (Consulte [Etiquetas de ámbito](/mem/intune/fundamentals/scope-tags)).
+6. En la pestaña **Etiquetas** de ámbito, si usa etiquetas de ámbito en su organización, especifique las etiquetas de ámbito para la directiva. (Consulte [Etiquetas de ámbito](/mem/intune/fundamentals/scope-tags)).
 
 7. En la pestaña **Asignaciones** , especifique los usuarios y grupos a los que se debe aplicar la directiva y, a continuación, elija **Siguiente**. (Si necesita ayuda con las asignaciones, consulte [Asignación de perfiles de usuario y dispositivo en Microsoft Intune](/mem/intune/configuration/device-profile-assign)).
 
@@ -430,7 +437,7 @@ Se recomienda usar [Microsoft Endpoint Manager](/mem/endpoint-manager-overview) 
 
 5. En la pestaña **Configuración**, desplácese hacia abajo y expanda **Microsoft Defender Antivirus**.
 
-6. Establezca **Detectar aplicaciones potencialmente no deseadas** en **Auditar** y, a continuación, elija **Siguiente**. (Puede desactivar la protección pua, pero mediante el modo de auditoría, podrá ver las detecciones).
+6. Establezca **Detectar aplicaciones potencialmente no deseadas** en **Auditar** y, a continuación, elija **Siguiente**. (Puede desactivar la protección de PUA, pero mediante el modo de auditoría, podrá ver las detecciones).
 
 7. En la pestaña **Asignaciones** , especifique los usuarios y grupos a los que se debe aplicar la directiva y, a continuación, elija **Siguiente**. (Si necesita ayuda con las asignaciones, consulte [Asignación de perfiles de usuario y dispositivo en Microsoft Intune](/mem/intune/configuration/device-profile-assign)).
 

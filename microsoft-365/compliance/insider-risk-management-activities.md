@@ -15,12 +15,12 @@ ms.collection:
 - tier1
 - purview-compliance
 ms.custom: admindeeplinkCOMPLIANCE
-ms.openlocfilehash: 540d7bd367f32399004b276ee9d7c92bc70b70a3
-ms.sourcegitcommit: a20d30f4e5027f90d8ea4cde95d1d5bacfdd2b5e
+ms.openlocfilehash: 9e752622d40e79dd5d4a0da54b90d26c1162a40a
+ms.sourcegitcommit: 21548843708d80bc861f03ffae41457252492bb6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/28/2022
-ms.locfileid: "68770313"
+ms.lasthandoff: 10/31/2022
+ms.locfileid: "68793354"
 ---
 # <a name="investigate-insider-risk-management-activities"></a>Investigación de actividades de administración de riesgos internos
 
@@ -272,7 +272,7 @@ Revisar, investigar y actuar sobre alertas internas potencialmente arriesgadas s
 Sentirse abrumado por el número de alertas generadas por las directivas de administración de riesgos internos podría resultar frustrante. El número de alertas se puede abordar rápidamente con pasos sencillos, en función de los tipos de volumen de alertas que reciba. Es posible que reciba demasiadas alertas válidas o que tenga demasiadas alertas obsoletas de bajo riesgo. Considere la posibilidad de realizar las siguientes acciones:
 
 - **Ajustar las directivas de riesgo internos**: seleccionar y configurar la directiva de riesgo interno correcta es el método más básico para abordar el tipo y el volumen de alertas. A partir de la [plantilla de directiva](insider-risk-management-policies.md#policy-templates) adecuada, se centran los tipos de actividades de riesgo y las alertas que verá. Otros factores que pueden afectar al volumen de alertas son el tamaño del usuario y los grupos dentro del ámbito y el contenido y [los canales que se priorizan](insider-risk-management-policies.md#prioritize-content-in-policies). Considere la posibilidad de ajustar las directivas para ajustar estas áreas a lo que es más importante para su organización.
-- **Modificar la configuración de riesgo interno**: la configuración de riesgo de Insider incluye una amplia variedad de opciones de configuración que pueden afectar al volumen y los tipos de alertas que recibirá. Estos incluyen [configuraciones para indicadores de directiva,](insider-risk-management-settings.md#indicators) [umbrales de indicadores](insider-risk-management-settings.md#indicator-level-settings-preview) y [períodos de tiempo de la directiva](insider-risk-management-settings.md#policy-timeframes). Considere la posibilidad de configurar opciones [de detecciones inteligentes](insider-risk-management-settings.md#intelligent-detections) para excluir tipos de archivo específicos y tipos de información confidencial, definir umbrales mínimos antes de que las directivas notifiquen las alertas de actividad y cambiar la configuración del volumen de alertas a una configuración inferior.
+- **Modificar la configuración de riesgo interno**: la configuración de riesgo de Insider incluye una amplia variedad de opciones de configuración que pueden afectar al volumen y los tipos de alertas que recibirá. Estos incluyen [configuraciones para indicadores de directiva,](insider-risk-management-settings.md#indicators) [umbrales de indicadores](insider-risk-management-settings.md#indicator-level-settings-preview) y [períodos de tiempo de la directiva](insider-risk-management-settings.md#policy-timeframes). Considere la posibilidad de configurar opciones [de detecciones inteligentes](insider-risk-management-settings.md#intelligent-detections) para excluir tipos de archivo específicos y tipos de información confidencial, clasificadores entrenables, definir umbrales mínimos antes de que las directivas notifiquen alertas de actividad y cambiar la configuración del volumen de alertas a una configuración inferior.
 - **Habilitar la personalización de alertas insertadas (versión preliminar):** la [habilitación de la personalización de alertas insertadas](/microsoft-365/compliance/insider-risk-management-settings#inline-alert-customization-preview) permite a analistas e investigadores editar directivas rápidamente al revisar alertas. Pueden actualizar umbrales para la detección de actividad con recomendaciones de Microsoft, configurar umbrales personalizados o omitir el tipo de actividad que creó la alerta. Si esto no está habilitado, solo los usuarios asignados al grupo de roles *Insider Risk Management* pueden usar la personalización de alertas en línea.
 - **Eliminación masiva de alertas cuando corresponda**: puede ayudar a ahorrar tiempo de evaluación de la evaluación para que los analistas e investigadores [descarten inmediatamente varias alertas](insider-risk-management-activities.md#dismiss-multiple-alerts-preview) a la vez. Puede seleccionar hasta 400 alertas para descartarlas a la vez.
 

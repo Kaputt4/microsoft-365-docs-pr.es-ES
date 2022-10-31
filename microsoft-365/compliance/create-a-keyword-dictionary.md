@@ -11,24 +11,27 @@ ms.service: O365-seccomp
 ms.date: ''
 ms.localizationpriority: high
 ms.collection:
-- M365-security-compliance
+- tier1
+- purview-compliance
 search.appverid:
 - MOE150
 - MET150
 ms.custom:
 - seo-marvel-apr2020
 - admindeeplinkCOMPLIANCE
-description: Obtenga información sobre los pasos básicos para crear un diccionario de palabras clave en el Centro de seguridad y cumplimiento de Office 365.
-ms.openlocfilehash: 82d6a1292b5ac8c13471df8e1b2c298c8cf262b3
-ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
-ms.translationtype: HT
+description: Obtenga información sobre los pasos básicos para crear un diccionario de palabras clave en el portal de cumplimiento de Microsoft Purview.
+ms.openlocfilehash: 7587357c8b9ce58b39f9027d56644401c6804c04
+ms.sourcegitcommit: 21548843708d80bc861f03ffae41457252492bb6
+ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/06/2022
-ms.locfileid: "66637381"
+ms.lasthandoff: 10/31/2022
+ms.locfileid: "68793816"
 ---
 # <a name="create-a-keyword-dictionary"></a>Crear un diccionario de palabras clave
 
 La prevención de pérdida de datos (DLP) de Microsoft Purview puede identificar, supervisar y proteger los elementos confidenciales. Para identificar elementos confidenciales, a veces es necesario buscar palabras clave, especialmente al identificar contenido genérico (como comunicaciones relacionadas con la salud) o lenguaje explícito o inadecuado. Aunque puede crear listas de palabras clave en tipos de información confidencial, las listas de palabras clave están limitadas en tamaño y es necesario modificar el código XML para crearlas o editarlas. Los diccionarios de palabras clave proporcionan una administración más sencilla de las palabras clave y a una escala mucho mayor, lo que admite hasta 1 MB de términos (después de la compresión) en el diccionario en cualquier idioma. El límite del espacio empresarial también es de 1 MB después de la compresión. 1 MB de límite después de la compresión significa que todos los diccionarios combinados en un espacio empresarial pueden tener casi 1 millón de caracteres.
+
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
 
 ## <a name="keyword-dictionary-limits"></a>Límites del diccionario de palabras clave
 
@@ -72,15 +75,15 @@ Remove-Item $rawFile
 
 ## <a name="basic-steps-to-creating-a-keyword-dictionary"></a>Pasos básicos para crear un diccionario de palabras clave
 
-Las palabras clave del diccionario pueden provenir de varios orígenes, normalmente de un archivo (como una lista en un archivo .csv o .txt) importado en el servicio o del cmdlet de PowerShell, de una lista que escriba directamente en el cmdlet de PowerShell o de un diccionario existente. Al crear un diccionario de palabras clave, siga los mismos pasos principales:
+The keywords for your dictionary could come from various sources, most commonly from a file (such as a .csv or .txt list) imported in the service or by PowerShell cmdlet, from a list you enter directly in the PowerShell cmdlet, or from an existing dictionary. When you create a keyword dictionary, you follow the same core steps:
 
 1. Use el *<a href="https://go.microsoft.com/fwlink/p/?linkid=2077149" target="_blank">Portal de cumplimiento de Microsoft Purview</a> o conéctese al **PowerShell del portal de cumplimiento de Microsoft Purview**.
 
-2. **Definir o cargar las palabras clave delde origen previsto**. Tanto el asistente como el cmdlet aceptan una lista separada por comas de palabras clave para crear un diccionario de palabras clave personalizado, por lo que este paso variará ligeramente en función de dónde procedan las palabras clave. Una vez cargados, se codifican y convierten en una matriz de bytes antes de importarlos.
+2. **Define or load your keywords from your intended source**. The wizard and the cmdlet both accept a comma-separated list of keywords to create a custom keyword dictionary, so this step will vary slightly depending on where your keywords come from. Once loaded, they're encoded and converted to a byte array before they're imported.
 
-3. **Crear el diccionario**. Elija un nombre y una descripción y cree el diccionario.
+3. **Cree su diccionario**. Seleccione un nombre y una descripción y, después, cree el diccionario.
 
-## <a name="create-a-keyword-dictionary-using-the-security--compliance-center"></a>Cree un diccionario de palabras clave con el Centro de seguridad y cumplimiento
+## <a name="create-a-keyword-dictionary-using-the-microsoft-purview-compliance-portal"></a>Cree un diccionario de palabras clave mediante el portal de cumplimiento Microsoft Purview
 
 Siga estos pasos para crear e importar palabras clave para un diccionario personalizado:
 
@@ -114,7 +117,7 @@ Con frecuencia, si necesita crear un diccionario de gran tamaño, puede usar pal
 
 1. Copie las palabras clave en un archivo de texto y asegúrese de que cada palabra clave se encuentre en una línea separada.
 
-2. Guarde el archivo de texto con codificación Unicode. En el Bloc de notas \> **Guardar como** \> **Codificación** \> **Unicode**.
+2. Save the text file with Unicode encoding. In Notepad \> **Save As** \> **Encoding** \> **Unicode**.
 
 3. Para leer el archivo en una variable, ejecute este cmdlet:
 
@@ -130,7 +133,7 @@ Con frecuencia, si necesita crear un diccionario de gran tamaño, puede usar pal
 
 ## <a name="using-keyword-dictionaries-in-custom-sensitive-information-types-and-dlp-policies"></a>Usar diccionarios de palabras clave en tipos de información confidencial personalizados y directivas DLP
 
-Los diccionarios de palabras clave se pueden usar como parte de los requisitos de coincidencia para un tipo personalizado de información confidencial o como un tipo de información confidencial. Ambos requieren que se cree un [tipo personalizado de información confidencial](create-a-custom-sensitive-information-type-in-scc-powershell.md). Siga las instrucciones del artículo vinculado para crear un tipo de información confidencial. Una vez que tenga el XML, necesitará el identificador GUID para que el diccionario lo use.
+Keyword dictionaries can be used as part of the match requirements for a custom sensitive information type, or as a sensitive information type themselves. Both require you to create a [custom sensitive information type](create-a-custom-sensitive-information-type-in-scc-powershell.md). Follow the instructions in the linked article to create a sensitive information type. Once you have the XML, you'll need the GUID identifier for the dictionary to use it.
 
 ```xml
 <Entity id="9e5382d0-1b6a-42fd-820e-44e0d3b15b6e" patternsProximity="300" recommendedConfidence="75">
@@ -157,7 +160,7 @@ El resultado del comando tiene este aspecto:
 `IsValid           : True`
 `ObjectState       : Unchanged`
 
-Pegue la identidad en el archivo XML del tipo de información confidencial personalizado y cárguelo. Ahora, el diccionario aparecerá en la lista de tipos de información confidencial y puede usarlo en la directiva (para hacerlo, especifique el número de palabras clave que tienen que coincidir).
+Paste the identity into your custom sensitive information type's XML and upload it. Now your dictionary will appear in your list of sensitive information types and you can use it right in your policy, specifying how many keywords are required to match.
 
 ```xml
 <Entity id="d333c6c2-5f4c-4131-9433-db3ef72a89e8" patternsProximity="300" recommendedConfidence="85">
@@ -194,7 +197,7 @@ Pegue la identidad en el archivo XML del tipo de información confidencial perso
 >   1. Extremadamente confidencial
 >   2. 機密性が高い, 机密的document y 机密的 document
 >
-> Al crear una regex que utilice un guión de doble byte o un punto de doble byte, asegúrese de escapar ambos caracteres como se escaparía un guión o un punto en una regex. A continuación le mostramos un ejemplo de regex a modo de referencia:
+> While creating a regex using a double byte hyphen or a double byte period, make sure to escape both the characters like one would escape a hyphen or period in a regex. Here is a sample regex for reference:
 >
 > - `(?<!\d)([4][0-9]{3}[\-?\-\t]*[0-9]{4}`
 >

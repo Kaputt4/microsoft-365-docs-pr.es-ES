@@ -1,5 +1,5 @@
 ---
-title: Obtenga información sobre la clasificación de datos.
+title: Uso del panel de clasificación de datos de Microsoft
 f1.keywords:
 - NOCSH
 ms.author: chrfox
@@ -11,22 +11,25 @@ ms.topic: article
 ms.service: O365-seccomp
 ms.localizationpriority: high
 ms.collection:
-- M365-security-compliance
+- tier1
+- highpri
+- purview-compliance
 - m365solution-mip
 - m365initiative-compliance
+- highpri
 ms.custom: admindeeplinkDEFENDER
 search.appverid:
 - MOE150
 - MET150
-description: El panel de clasificación de datos le permite ver la cantidad de información confidencial que se ha encontrado y clasificado en la organización.
-ms.openlocfilehash: 188cb8b28f2a1468fd72236cf160a01e99c16634
-ms.sourcegitcommit: d3ef9391f621e8f4ca70661184b3bb82c6cbda94
+description: El panel de clasificación de cumplimiento de Datos de Microsoft Purview proporciona visibilidad sobre la cantidad de datos confidenciales que se han encontrado y clasificado en su organización.
+ms.openlocfilehash: 07bad3c98cd5df9fa4d3265808bb25f401f7d972
+ms.sourcegitcommit: 21548843708d80bc861f03ffae41457252492bb6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/02/2022
-ms.locfileid: "67579344"
+ms.lasthandoff: 10/31/2022
+ms.locfileid: "68794234"
 ---
-# <a name="learn-about-data-classification"></a>Obtenga información sobre la clasificación de datos.
+# <a name="how-to-use-the-microsoft-data-classification-dashboard"></a>Uso del panel de clasificación de datos de Microsoft
 
 Como administrador de Microsoft 365 o administrador de cumplimiento, puede evaluar y etiquetar el contenido de la organización para controlar el lugar al que se dirige, protegerlo sin importar su ubicación y garantizar que se conserve y elimine en función de las necesidades de su organización. Para ello, puede aplicar [etiquetas de confidencialidad](sensitivity-labels.md) y [etiquetas de retención](retention.md#retention-labels) y clasificar la información según el tipo de confidencialidad. Hay varias formas de llevar a cabo la detección, la evaluación y el etiquetado, pero es posible que el resultado final sea un gran número de documentos y mensajes de correo electrónico marcados y clasificados con una o ambas etiquetas. Después de aplicar las etiquetas de retención y de confidencialidad, le interesará ver cómo se utilizan las etiquetas en el espacio empresarial y qué se hace con esos elementos. La página de clasificación de datos ofrece información sobre ese contenido, en particular:
 
@@ -52,6 +55,8 @@ Participe en un recorrido en vídeo de nuestras características de clasificaci�
 
 La clasificación de datos analizará su contenido confidencial y el contenido etiquetado antes de crear ninguna directiva. Esto se denomina **administración de cambios de zero**. Esto le permite ver el impacto que las etiquetas de confidencialidad y retención están teniendo en su entorno para que pueda comenzar con la evaluación de sus necesidades de protección y directivas de gobernanza de datos.
 
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
+
 ## <a name="prerequisites"></a>Requisitos previos
 
 ### <a name="permissions"></a>Permissions
@@ -68,18 +73,18 @@ La clasificación de datos analizará su contenido confidencial y el contenido e
 > [!NOTE]
 > Como procedimiento recomendado, use siempre el rol con privilegios mínimos para conceder acceso a la clasificación de datos de Microsoft 365.
 
-#### <a name="roles-and-role-groups-in-preview"></a>Roles y grupos de roles en la versión preliminar
+#### <a name="roles-and-role-groups"></a>Roles y grupos de roles
 
 Hay roles y grupos de roles en la versión preliminar que puede probar para ajustar los controles de acceso.
 
-Esta es una lista de los roles aplicables que se encuentran en versión preliminar. Para obtener más información, consulte [Roles en el Centro de seguridad y cumplimiento](../security/office-365-security/permissions-in-the-security-and-compliance-center.md#roles-in-the-security--compliance-center)
+Esta es una lista de los roles aplicables que se encuentran en versión preliminar. Para obtener más información sobre ellos, consulte [Permisos en el portal de cumplimiento Microsoft Purview](microsoft-365-compliance-center-permissions.md).
 
 - Administrador de Information Protection
 - Analista de Information Protection
 - Investigador de protección de información
 - Lector de protección de información
 
-Esta es una lista de los grupos de roles aplicables que se encuentran en versión preliminar. Para obtener más información, consulte [Grupos de roles en el Centro de seguridad y cumplimiento](../security/office-365-security/permissions-in-the-security-and-compliance-center.md#role-groups-in-the-security--compliance-center)
+Esta es una lista de los grupos de roles aplicables que se encuentran en versión preliminar. Para obtener más información sobre ellos, consulte [Permisos en el portal de cumplimiento Microsoft Purview](microsoft-365-compliance-center-permissions.md).
 
 - Protección de la información
 - Administradores de Information Protection
@@ -100,7 +105,7 @@ Para averiguar cuántos elementos hay en una categoría de clasificación determ
 ![detalle de los tipos principales de información confidencial.](../media/data-classification-sens-info-types-hover.png)
 
 > [!NOTE]
-> Si la tarjeta muestra el mensaje "No se encontraron datos con información confidencial" significa que no hay ningún elemento de la organización que se haya clasificado como un tipo de información confidencial o que no se ha rastreado ningún elemento. Para comenzar a usar las etiquetas, consulte:
+> If the card displays the message "No data found with sensitive information", it means that there are no items in your organization that have been classified as being a sensitive information type or no items that have been crawled. To get started with labels, see:
 >- [Introducción a las etiquetas de confidencialidad](get-started-with-sensitivity-labels.md)
 >- [Introducción a la administración de registros](get-started-with-records-management.md)
 >- [Definiciones de entidad de tipos de información confidencial](sensitive-information-type-entity-definitions.md)
@@ -121,7 +126,7 @@ La tarjeta de la etiqueta de confidencialidad muestra el número de elementos (c
 ![captura de pantalla de marcador de posición del desglose del contenido según la clasificación de las etiquetas de confidencialidad.](../media/data-classification-top-sensitivity-labels-applied.png)
 
 > [!NOTE]
-> Si no ha creado ni publicado ninguna etiqueta de confidencialidad o si el contenido no tiene ninguna etiqueta de confidencialidad aplicada, esta tarjeta mostrará el mensaje "No se ha detectado ninguna etiqueta de confidencialidad". Para empezar a usar las etiquetas de confidencialidad, consulte:
+> If you haven't created or published any sensitivity labels or no content has had a sensitivity label applied, this card will display the message "No sensitivity labels detected". To get started with sensitivity labels, see:
 >- [Introducción a las etiquetas de confidencialidad](get-started-with-sensitivity-labels.md) o, para AIP, [Configuración de la directiva de Information Protection de Azure](/azure/information-protection/configure-policy)
 
 ## <a name="top-retention-labels-applied-to-content"></a>Etiquetas principales de retención que se aplican al contenido
@@ -133,7 +138,7 @@ La tarjeta de etiquetas principales de retención aplicadas muestra el número d
 ![captura de pantalla de marcador de posición de etiquetas principales de retención aplicadas.](../media/data-classification-top-retention-labels-applied.png)
 
 > [!NOTE]
-> Si esta tarjeta muestra el mensaje "No se detectó ninguna etiqueta de retención", significa que no se ha creado ni publicado ninguna etiqueta de retención o que no se han aplicado etiquetas de retención a ningún contenido. Para empezar a usar las etiquetas de retención, vea:
+> If this card displays the message, "No retention labels detected", it means you haven't created or published any retention labels or no content has had a retention label applied. To get started with retention labels, see:
 >- [Introducción a la administración del ciclo de vida de los datos](get-started-with-data-lifecycle-management.md)
 
 ## <a name="top-activities-detected"></a>Actividades principales detectadas
@@ -141,15 +146,15 @@ La tarjeta de etiquetas principales de retención aplicadas muestra el número d
 Esta tarjeta ofrece un breve resumen de las acciones más comunes que llevan a cabo los usuarios con los elementos etiquetados como confidenciales. Puede usar el [Explorador de actividad](data-classification-activity-explorer.md) para ver los detalles de las diferentes actividades de las que Microsoft 365 realiza el seguimiento en el contenido etiquetado y en el contenido que se encuentra en los puntos de conexión de Windows 10.
 
 > [!NOTE]
-> Si esta tarjeta muestra el mensaje "No se ha detectado ninguna actividad", significa que no ha habido ninguna actividad en los archivos o que no está activada la auditoría de usuarios y administradores. Para activar los registros de auditoría, vea:
->- [Buscar el registro de auditoría en el Centro de seguridad y cumplimiento](search-the-audit-log-in-security-and-compliance.md)
+> If this card displays the message, "No activity detected" it means that there's been no activity on the files or that user and admin auditing isn't turned on. To turn the audit logs on , see:
+>- [Búsqueda del registro de auditoría en el portal de cumplimiento](search-the-audit-log-in-security-and-compliance.md)
 
 ## <a name="sensitivity-and-retention-labeled-data-by-location"></a>Datos con etiquetas de confidencialidad y retención por ubicación
 
 El informe de la clasificación de datos tiene la finalidad de ofrecer información sobre el número de elementos etiquetados y su ubicación. Estas tarjetas le permiten saber cuántos elementos etiquetados hay en Exchange, SharePoint y OneDrive, entre otros.
 
 > [!NOTE]
-> Si esta tarjeta muestra el mensaje "No se ha detectado ninguna ubicación", significa que no se ha creado ni publicado ninguna etiqueta de confidencialidad o que no hay ningún contenido con una etiqueta de retención aplicada. Para empezar a usar las etiquetas de confidencialidad, consulte:
+> If this card displays the message, "No locations detected, it means you haven't created or published any sensitivity labels or no content has had a retention label applied. To get started with sensitivity labels, see:
 >- [Etiquetas de confidencialidad](sensitivity-labels.md)
 
 ## <a name="public-preview-release-notes"></a>Notas de la versión preliminar pública 

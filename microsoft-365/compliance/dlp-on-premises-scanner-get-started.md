@@ -13,23 +13,27 @@ f1_keywords:
 ms.service: O365-seccomp
 ms.localizationpriority: high
 ms.collection:
-- M365-security-compliance
+- tier1
+- purview-compliance
 - m365solution-mip
 - m365initiative-compliance
+- highpri
 ms.custom: admindeeplinkCOMPLIANCE
 search.appverid:
 - MET150
-description: Configuración del analizador local de prevención de pérdidas de datos
-ms.openlocfilehash: fae1b5d2113935e2e3a899a16aafb224297d9912
-ms.sourcegitcommit: 23c7e96d8ec31c676c458e7c71f1cc8a1e40a0e4
+description: En este artículo se describen los requisitos previos y la configuración del analizador local de prevención de pérdida de datos de Microsoft Purview.
+ms.openlocfilehash: 8e98f982ed98fa988c87039d962cb4f6312e2146
+ms.sourcegitcommit: 21548843708d80bc861f03ffae41457252492bb6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/16/2022
-ms.locfileid: "67359173"
+ms.lasthandoff: 10/31/2022
+ms.locfileid: "68794080"
 ---
 # <a name="get-started-with-the-data-loss-prevention-on-premises-scanner"></a>Introducción al examinador de prevención de pérdida de datos en el entorno local
 
 Este artículo le guiará por los requisitos previos y la configuración del escáner local de prevención de pérdidas de datos de Microsoft Purview.
+
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
 
 ## <a name="before-you-begin"></a>Antes de empezar
 
@@ -56,18 +60,18 @@ Los datos del examinador DLP en el entorno local se pueden ver en el [Explorador
 - Administrador de seguridad
 - Administrador de datos de cumplimiento
 
-#### <a name="roles-and-role-groups-in-preview"></a>Roles y grupos de roles en la versión preliminar
+#### <a name="roles-and-role-groups"></a>Roles y grupos de roles
 
 Hay roles y grupos de roles en la versión preliminar que puede probar para ajustar los controles de acceso.
 
-Esta es una lista de los roles aplicables que se encuentran en versión preliminar. Para obtener más información, consulte [Roles en el Centro de seguridad y cumplimiento](../security/office-365-security/permissions-in-the-security-and-compliance-center.md#roles-in-the-security--compliance-center)
+Esta es una lista de los roles aplicables que se encuentran en versión preliminar. Para obtener más información sobre ellos, consulte [Permisos en el portal de cumplimiento Microsoft Purview](microsoft-365-compliance-center-permissions.md).
 
 - Administrador de Information Protection
 - Analista de Information Protection
 - Investigador de protección de información
 - Lector de protección de información
 
-Esta es una lista de los grupos de roles aplicables que se encuentran en versión preliminar. Para obtener más información, consulte [Grupos de roles en el Centro de seguridad y cumplimiento](../security/office-365-security/permissions-in-the-security-and-compliance-center.md#role-groups-in-the-security--compliance-center)
+Esta es una lista de los grupos de roles aplicables que se encuentran en versión preliminar. Para obtener más información sobre, consulte [Permisos en el portal de cumplimiento Microsoft Purview](microsoft-365-compliance-center-permissions.md).
 
 - Protección de la información
 - Administradores de Information Protection
@@ -77,8 +81,8 @@ Esta es una lista de los grupos de roles aplicables que se encuentran en versió
 
 ### <a name="dlp-on-premises-scanner-prerequisites"></a>Requisitos previos del examinador de DLP en el entorno local
 
-- El examinador de Azure Information Protection (AIP) implementa la coincidencia de directiva DLP y el cumplimiento de la directiva. El examinador se instala como parte del cliente de AIP, por lo que la instalación debe cumplir todos los requisitos previos para AIP, el cliente AIP y el examinador de etiquetas unificado de AIP.
-- Implemente el cliente AIP y el escáner. Para obtener más información [Instale el cliente de etiquetado unificado de AIP](/azure/information-protection/rms-client/install-unifiedlabelingclient-app) y [], consulte [Configuración e instalación del escáner de etiquetado unificado de Azure Information Protection](/azure/information-protection/deploy-aip-scanner-configure-install).
+- The Azure Information Protection (AIP) scanner implements DLP policy matching and policy enforcement. The scanner is installed as part of the AIP client so your installation must meet all the prerequisites  for AIP, the AIP client, and the AIP unified labeling scanner.
+- Deploy the AIP  client and scanner. For more information [Install the AIP unified labeling client](/azure/information-protection/rms-client/install-unifiedlabelingclient-app) and [], see [Configuring and installing the Azure Information Protection unified labeling scanner](/azure/information-protection/deploy-aip-scanner-configure-install).
 - Debe haber al menos una etiqueta y una directiva publicadas en el espacio empresarial, incluso si todas sus reglas de detección se basan únicamente en tipos de información confidenciales.
 
 ## <a name="deploy-the-dlp-on-premises-scanner"></a>Implementar el examinador local de DLP
@@ -88,7 +92,7 @@ Esta es una lista de los grupos de roles aplicables que se encuentran en versió
     1. La configuración de los trabajos de detección de red es un paso opcional. Puede omitirlo y definir repositorios específicos que se examinarán en su trabajo de examen de contenido.
     2. Debe crear un trabajo de examen de contenido y especificar los repositorios que alojan archivos que deben ser evaluados por el motor de DLP.
     3. Habilite las reglas de DLP en el trabajo de examen de contenido creado y establezca la opción **Aplicar** en **Desactivar**, a menos que desee avanzar directamente a la fase de aplicación de DLP.
-3. Verifique que su trabajo de examen de contenido esté asignado al clúster correcto. Si aún no ha creado un trabajo de examen de contenido, cree uno nuevo y asígnelo al clúster que contenga los nodos del examinador.
+3. Verify that you content scan job is assigned to the right cluster. If you still did not create a content scan job create a new one and assign it to the cluster that contains the scanner nodes.
 
 4. Conéctese a la [Extensión de Azure Information Protection en Azure Portal](https://portal.azure.com/#blade/Microsoft_Azure_InformationProtection/DataClassGroupEditBlade/scannerProfilesBlade) y agregue sus repositorios al trabajo de examen de contenido que realizará el examen.
 
@@ -98,7 +102,7 @@ Esta es una lista de los grupos de roles aplicables que se encuentran en versió
     1. o ejecutar **Start-AIPScan** cmdlet de PowerShell
 
    > [!IMPORTANT]
-   > Recuerde que el escáner ejecuta un escaneo delta del repositorio por defecto y los archivos que ya fueron escaneados en el ciclo de escaneo anterior serán omitidos a menos que el archivo haya sido cambiado o usted haya iniciado un re-escaneo completo. El re-escaneo completo puede ser iniciado usando la opción de **Escanee de nuevo todos los archivos** en la UI o ejecutando **Start-AIPScan-Reset**.
+   > Remember that the scanner runs a delta scan of the repository by default and the files that were already scanned in the previous scan cycle will be skipped unless the file was changed or you initiated a full rescan. Full rescan can be initiated by using **Rescan all files** option in the UI or by running **Start-AIPScan-Reset**.
 
 6.  Abra la [página Prevención de pérdidas de datos](https://compliance.microsoft.com/datalossprevention?viewid=policies) en el portal de cumplimiento normativo de Microsoft Purview.
 

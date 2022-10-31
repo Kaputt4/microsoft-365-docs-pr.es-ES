@@ -18,12 +18,12 @@ ms.collection:
 - m365solution-insiderrisk
 - m365initiative-compliance
 - highpri
-ms.openlocfilehash: 1a6175a0f0d64e72ca14e334cb16d970315bb797
-ms.sourcegitcommit: a20d30f4e5027f90d8ea4cde95d1d5bacfdd2b5e
+ms.openlocfilehash: 65ec1b52582b1cbefb9a4b995118bb7f60d0081d
+ms.sourcegitcommit: 21548843708d80bc861f03ffae41457252492bb6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/28/2022
-ms.locfileid: "68769851"
+ms.lasthandoff: 10/31/2022
+ms.locfileid: "68793332"
 ---
 # <a name="learn-about-insider-risk-management"></a>Información sobre riesgos internos de Microsoft
 
@@ -97,11 +97,11 @@ La identificación y resolución de actividades de riesgo internas y problemas d
 Puede seleccionar entre las siguientes plantillas de directiva para empezar a trabajar rápidamente con la administración de riesgos internos:
 
 - [Robo de datos por parte de los usuarios que abandonan la organización](insider-risk-management-policies.md#data-theft-by-departing-users)
-- [Filtraciones de datos generales](insider-risk-management-policies.md#general-data-leaks)
+- [Filtración de datos](insider-risk-management-policies.md#data-leaks)
 - [Filtración de datos por parte de usuarios prioritarios (versión preliminar)](insider-risk-management-policies.md#data-leaks-by-priority-users-preview)
 - [Pérdidas de datos por parte de usuarios de riesgo (versión preliminar)](insider-risk-management-policies.md#data-leaks-by-risky-users-preview)
-- [Infracciones generales de la directiva de seguridad (versión preliminar)](insider-risk-management-policies.md#general-security-policy-violations-preview)
-- [Uso indebido general de datos de pacientes (versión preliminar)](insider-risk-management-policies.md#general-patient-data-misuse-preview)
+- [Infracciones de directivas de seguridad (versión preliminar)](insider-risk-management-policies.md#security-policy-violations-preview)
+- [Uso indebido de datos del paciente (versión preliminar)](insider-risk-management-policies.md#patient-data-misuse-preview)
 - [Infracciones de la directiva de seguridad por parte de los usuarios que abandonan la organización (versión preliminar)](insider-risk-management-policies.md#security-policy-violations-by-departing-users-preview)
 - [Infracciones de la directiva de seguridad por parte de los usuarios prioritarios (versión preliminar)](insider-risk-management-policies.md#security-policy-violations-by-priority-users-preview)
 - [Infracciones de directivas de seguridad por parte de usuarios de riesgo (versión preliminar)](insider-risk-management-policies.md#security-policy-violations-by-risky-users-preview)
@@ -168,7 +168,7 @@ Cuando los usuarios abandonan una organización, ya sea voluntariamente o como r
 
 En la mayoría de los casos, los usuarios hacen todo lo posible para controlar correctamente la información confidencial o confidencial. Pero en ocasiones, los usuarios pueden cometer errores y la información se comparte accidentalmente fuera de su organización o infringe las directivas de protección de la información. En otras circunstancias, los usuarios pueden filtrar o compartir intencionadamente información confidencial con intenciones malintencionadas y para posibles ganancias personales. Las directivas de administración de riesgos internos creadas con las siguientes plantillas de directiva de pérdida de datos detectan automáticamente actividades asociadas normalmente con el uso compartido de información confidencial o confidencial:
 
-- [Filtraciones de datos generales](insider-risk-management-policies.md#general-data-leaks)
+- [Filtración de datos](insider-risk-management-policies.md#data-leaks)
 - [Filtración de datos por parte de usuarios prioritarios (versión preliminar)](insider-risk-management-policies.md#data-leaks-by-priority-users-preview)
 - [Pérdidas de datos por parte de usuarios de riesgo (versión preliminar)](insider-risk-management-policies.md#data-leaks-by-risky-users-preview)
 
@@ -176,7 +176,7 @@ En la mayoría de los casos, los usuarios hacen todo lo posible para controlar c
 
 Los usuarios suelen tener un gran grado de control al administrar sus dispositivos en el área de trabajo moderna. Este control puede incluir permisos para instalar o desinstalar las aplicaciones necesarias en el desempeño de sus tareas o la capacidad de deshabilitar temporalmente las características de seguridad del dispositivo. Independientemente de si esta actividad de riesgo es involuntaria, accidental o malintencionada, esta conducta puede suponer un riesgo para su organización y es importante identificar y actuar para minimizar. Para ayudar a identificar estas actividades de seguridad de riesgo, las siguientes plantillas de infracción de directivas de seguridad de administración de riesgos internos puntúan los indicadores de riesgo de seguridad y usan alertas de Microsoft Defender para punto de conexión para proporcionar información sobre las actividades relacionadas con la seguridad:
 
-- [Infracciones generales de la directiva de seguridad (versión preliminar)](insider-risk-management-policies.md#general-security-policy-violations-preview)
+- [Infracciones de directivas de seguridad (versión preliminar)](insider-risk-management-policies.md#security-policy-violations-preview)
 - [Infracciones de la directiva de seguridad por parte de los usuarios que abandonan la organización (versión preliminar)](insider-risk-management-policies.md#security-policy-violations-by-departing-users-preview)
 - [Infracciones de la directiva de seguridad por parte de los usuarios prioritarios (versión preliminar)](insider-risk-management-policies.md#security-policy-violations-by-priority-users-preview)
 - [Infracciones de directivas de seguridad por parte de usuarios de riesgo (versión preliminar)](insider-risk-management-policies.md#security-policy-violations-by-risky-users-preview)
@@ -192,7 +192,7 @@ Los usuarios de su organización pueden tener distintos niveles de riesgo en fun
 
 En el caso de las organizaciones de la industria sanitaria, estudios recientes han encontrado una tasa muy alta de infracciones de datos relacionadas con los usuarios internos. La detección del uso indebido de los datos de los pacientes y la información de los registros de salud es un componente fundamental para proteger la privacidad de los pacientes y cumplir con la normativa de cumplimiento, como la Ley de Portabilidad y Responsabilidad del Seguro De Salud (HIPAA) y la Ley de Tecnología de información sanitaria para la salud económica y clínica (HITECH). El uso indebido de los datos de los pacientes puede ir desde el acceso a registros de pacientes con privilegios hasta el acceso a registros de pacientes de familiares o vecinos con intenciones malintencionadas. Para ayudar a identificar estos tipos de actividades de riesgo, las siguientes plantillas de directivas de administración de riesgos internos usan el conector de RR. HH. de Microsoft 365 y un conector de datos específico para la salud para empezar a puntuar indicadores de riesgo relacionados con comportamientos que pueden producirse en los sistemas de registro de salud electrónico (EHR):
 
-- [Uso indebido general de datos de pacientes (versión preliminar)](insider-risk-management-policies.md#general-patient-data-misuse-preview)
+- [Uso indebido de datos del paciente (versión preliminar)](insider-risk-management-policies.md#patient-data-misuse-preview)
 
 ### <a name="actions-and-behaviors-by-risky-users-preview"></a>Acciones y comportamientos de usuarios de riesgo (versión preliminar)
 

@@ -19,12 +19,12 @@ ms.topic: conceptual
 ms.subservice: mde
 ms.custom: api
 search.appverid: met150
-ms.openlocfilehash: 76e200022f01836195d82d46f159d35701f77a29
-ms.sourcegitcommit: a20d30f4e5027f90d8ea4cde95d1d5bacfdd2b5e
+ms.openlocfilehash: 571a5230dca05faf1bdcc3d9d48a97997239752d
+ms.sourcegitcommit: 21548843708d80bc861f03ffae41457252492bb6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/28/2022
-ms.locfileid: "68770335"
+ms.lasthandoff: 10/31/2022
+ms.locfileid: "68793531"
 ---
 <!-- v-jweston/jweston-1 is scheduled to resume authorship Apr/May 2023.-->
 
@@ -85,7 +85,7 @@ Esta API recupera una lista de Microsoft Defender detalles de estado del antivir
 #### <a name="111-limitations"></a>1.1.1 Limitaciones
 
 - El tamaño máximo de página es de 200 000
-- Las limitaciones de velocidad de esta API son (**_por ejemplo_** , 30 llamadas por minuto y 1000 llamadas por hour._).
+- Las limitaciones de velocidad de esta API son 30 llamadas por minuto y 1000 llamadas por hora.
 
 #### <a name="odata-supported-operators"></a>Operadores compatibles con OData
 

@@ -13,7 +13,8 @@ f1_keywords:
 ms.service: O365-seccomp
 ms.localizationpriority: medium
 ms.collection:
-- M365-security-compliance
+- tier1
+- purview-compliance
 - SPO_Content
 search.appverid:
 - MET150
@@ -21,18 +22,20 @@ ms.custom:
 - seo-marvel-apr2020
 - admindeeplinkCOMPLIANCE
 description: Empiece a definir y administrar alertas para directivas de prevención de pérdida de datos.
-ms.openlocfilehash: de980fadbc6b6091a0257c032dacab4220704f62
-ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
+ms.openlocfilehash: 16ea73f55960ed902efb1640fcf09c7dcec72ad4
+ms.sourcegitcommit: 21548843708d80bc861f03ffae41457252492bb6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/06/2022
-ms.locfileid: "66625465"
+ms.lasthandoff: 10/31/2022
+ms.locfileid: "68793203"
 ---
 # <a name="get-started-with-the-data-loss-prevention-alerts-dashboard"></a>Introducción al panel alertas de prevención de pérdida de datos
 
 las directivas de Prevención de pérdida de datos de Microsoft Purview (DLP) pueden tomar medidas de protección para evitar el uso compartido involuntario de elementos confidenciales. Cuando se realiza una acción en un elemento confidencial, se le puede notificar mediante la configuración de alertas para DLP. En este artículo se muestra cómo definir directivas de alerta enriquecidas vinculadas a las directivas de prevención de pérdida de datos (DLP). Verá cómo usar el [panel de administración de alertas DLP](https://compliance.microsoft.com/datalossprevention?viewid=dlpalerts) en el <a href="https://go.microsoft.com/fwlink/p/?linkid=2077149" target="_blank">portal de cumplimiento Microsoft Purview</a> para ver alertas, eventos y metadatos asociados para infracciones de directiva DLP.
 
 Si no está familiarizado con las alertas DLP, debe revisar [el panel De información sobre las alertas de prevención de pérdida de datos](dlp-alerts-dashboard-learn.md).
+
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
 
 ## <a name="before-you-begin"></a>Antes de empezar
 
@@ -93,18 +96,18 @@ Para acceder a la característica De vista previa de contenido y a las caracter�
 
 que tiene asignado previamente el rol de visor de contenido de clasificación de datos.
 
-### <a name="roles-and-role-groups-in-preview"></a>Roles y grupos de roles en la versión preliminar
+### <a name="roles-and-role-groups"></a>Roles y grupos de roles
 
 Hay roles y grupos de roles en la versión preliminar que puede probar para ajustar los controles de acceso.
 
-Esta es una lista de los roles aplicables que se encuentran en versión preliminar. Para obtener más información, consulte [Roles en el Centro de seguridad y cumplimiento](../security/office-365-security/permissions-in-the-security-and-compliance-center.md#roles-in-the-security--compliance-center)
+Esta es una lista de los roles aplicables que se encuentran en versión preliminar. Para obtener más información sobre ellos, consulte [Permisos en el portal de cumplimiento Microsoft Purview](microsoft-365-compliance-center-permissions.md).
 
 - Administrador de Information Protection
 - Analista de Information Protection
 - Investigador de protección de información
 - Lector de protección de información
 
-Esta es una lista de los grupos de roles aplicables que se encuentran en versión preliminar. Para obtener más información, consulte [Grupos de roles en el Centro de seguridad y cumplimiento](../security/office-365-security/permissions-in-the-security-and-compliance-center.md#role-groups-in-the-security--compliance-center)
+Esta es una lista de los grupos de roles aplicables que se encuentran en versión preliminar. Para obtener más información sobre ellos, consulte [Permisos en el portal de cumplimiento Microsoft Purview](microsoft-365-compliance-center-permissions.md).
 
 - Protección de la información
 - Administradores de Information Protection

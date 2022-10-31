@@ -16,12 +16,12 @@ search.appverid:
 - MET150
 description: En este artículo se explican las diferencias entre las distintas versiones del cifrado de mensajes.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 355ae33ff7e9860bb9ef151d3bcdf538857e9d25
-ms.sourcegitcommit: 0d8fb571024f134d7480fe14cffc5e31a687d356
+ms.openlocfilehash: d77d61ce5c27dad476a67a4360eae463196385b4
+ms.sourcegitcommit: 21548843708d80bc861f03ffae41457252492bb6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/20/2022
-ms.locfileid: "68630762"
+ms.lasthandoff: 10/31/2022
+ms.locfileid: "68793266"
 ---
 # <a name="compare-versions-of-message-encryption"></a>Comparar versiones del cifrado de mensajes
 
@@ -36,7 +36,7 @@ Este artículo forma parte de una serie más amplia de artículos sobre el cifra
 
 ## <a name="overview-of-ad-rms-deprecation-in-exchange-online"></a>Introducción al desuso de AD RMS en Exchange Online
 
-Exchange Online incluye funcionalidad de Information Rights Management (IRM) que proporciona protección en línea y sin conexión de mensajes de correo electrónico y datos adjuntos. De forma predeterminada, Exchange Online usa Azure Information Protection. Sin embargo, es posible que su organización haya configurado Exchange Online IRM para usar El servicio de administración de derechos de Active Directory (AD RMS) local. La compatibilidad con AD RMS en Exchange Online se está retirando. En su lugar, Azure Information Protection reemplazará a AD RMS por completo.
+Exchange Online incluye funcionalidad de Information Rights Management (IRM) que proporciona protección en línea y sin conexión de mensajes de correo electrónico y datos adjuntos. De forma predeterminada, Exchange Online usa Azure Information Protection. Sin embargo, es posible que su organización haya configurado Exchange Online IRM para usar Active Directory local Rights Management Service (AD RMS). La compatibilidad con AD RMS en Exchange Online se está retirando. En su lugar, Azure Information Protection reemplazará por completo AD RMS.
 
 Para evaluar si este desuso afecta a su organización, consulte [Migración de AD RMS a Azure RMS en Exchange Online](/exchange/troubleshoot/administration/migrate-ad-rms-to-azure). En este artículo se proporcionan recomendaciones sobre las opciones de migración.
 
@@ -51,7 +51,6 @@ Para evaluar si este desuso afecta a su organización, consulte [Migración de A
 |*Experiencia para el destinatario externo*|Los destinatarios reciben un mensaje HTML que descargan y abren en un explorador web o una aplicación móvil|N/D|Experiencia en línea nativa para destinatarios de Microsoft 365. Todos los demás destinatarios pueden leer el mensaje desde el portal de OME (no se requiere descarga ni aplicación).|
 |*Permisos de datos adjuntos*           |No hay restricciones en los datos adjuntos|Los datos adjuntos están protegidos|Los datos adjuntos están protegidos para la opción No reenviar y las plantillas personalizadas. Los administradores pueden elegir si los datos adjuntos de la opción de solo cifrado están protegidos o no.|
 |*Compatibilidad con Bring your own key (BYOK)*|Ninguno                |Ninguno               |Compatible con BYOK          |
-||
 
 ## <a name="advantages-of-microsoft-purview-message-encryption-over-legacy-ome"></a>Ventajas de Cifrado de mensajes de Microsoft Purview sobre OME heredado
 
@@ -115,4 +114,4 @@ Normalmente, Cifrado de mensajes de Microsoft Purview se habilita automáticamen
 
 La versión heredada de OME se habilita automáticamente para su organización si ha habilitado Azure Information Protection. En el pasado, OME heredado funcionaba incluso si Azure Information Protection no estaba habilitado. Ya no es así.
 
-Para empezar a usar OME heredado, si ha habilitado Azure Information Protection, configure reglas de flujo de correo que usen la acción **de regla Aplicar la versión anterior de OME**. Para obtener instrucciones, consulte [Definición de reglas de flujo de correo para cifrar los mensajes de correo electrónico](define-mail-flow-rules-to-encrypt-email.md).
+Para empezar a usar OME heredado, si ha habilitado Azure Information Protection, configure reglas de flujo de correo que usen la acción de regla **Aplicar la versión anterior de OME**. Para obtener instrucciones, consulte [Definición de reglas de flujo de correo para cifrar los mensajes de correo electrónico](define-mail-flow-rules-to-encrypt-email.md).

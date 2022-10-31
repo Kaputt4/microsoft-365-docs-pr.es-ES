@@ -21,12 +21,12 @@ ms.collection:
 - m365-security
 - tier2
 ms.custom: admindeeplinkDEFENDER
-ms.openlocfilehash: 9097a48dee61ea0dc96345331f83b07d1796fb2d
-ms.sourcegitcommit: 0d8fb571024f134d7480fe14cffc5e31a687d356
+ms.openlocfilehash: a6064137a5a8a7eefc233501707de1de6ae3afe8
+ms.sourcegitcommit: 21548843708d80bc861f03ffae41457252492bb6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/20/2022
-ms.locfileid: "68622588"
+ms.lasthandoff: 10/31/2022
+ms.locfileid: "68794054"
 ---
 # <a name="microsoft-defender-for-cloud-apps-in-microsoft-365-defender-preview"></a>Microsoft Defender for Cloud Apps en Microsoft 365 Defender (versión preliminar)
 
@@ -99,20 +99,19 @@ Las imágenes y las tablas siguientes muestran los cambios en la navegación ent
 | Defender for Cloud Apps | Microsoft 365 Defender |
 |---------|---------|
 | Configuración | Configuración -> aplicaciones en la nube |
-| Configuración del sistema | Configuración -> aplicaciones en la nube |
 | Configuración/registro de gobernanza | Aplicaciones en la nube: registro de gobernanza de > |
-| Extensiones de seguridad | Configuración -> aplicaciones en la nube |
-| Guías | Configuración -> aplicaciones en la nube |
-| Agentes SIEM | Configuración -> aplicaciones en la nube |
-| DLP externo | Configuración -> aplicaciones en la nube |
-| Tokens de API | Configuración -> aplicaciones en la nube |
-| Administración del acceso de administrador | Roles de > de aplicaciones en la nube de Permissions-> |
+| Extensiones de seguridad-> Cuadernos de estrategias | Configuración -> aplicaciones en la nube |
+| Extensiones de seguridad:> agentes SIEM | Configuración -> aplicaciones en la nube |
+| Extensiones de seguridad:> DLP externa | Configuración -> aplicaciones en la nube |
+| Extensiones de seguridad: tokens de API de > | Configuración -> aplicaciones en la nube |
+| Administración del acceso de administrador -> Administración roles | Roles de > de aplicaciones en la nube de Permissions-> |
+| Administración del acceso de administrador: permisos de privacidad de la actividad de > | Permisos-> los permisos de privacidad de las aplicaciones en la nube > actividad |
 | Informes exportados | Informes -> aplicaciones en la nube -> informes exportados |
-| Implementación y privacidad con ámbito | Permisos -> aplicaciones en la nube -permisos de privacidad de actividad de > |
-| Conectores de aplicaciones o aplicaciones conectadas | Configuración -> Cloud Apps -> Connected Apps |
-| Control de aplicaciones de acceso condicional | Configuración -> aplicaciones en la nube -> aplicaciones de control de aplicaciones de acceso condicional |
+| Implementación y privacidad con ámbito | Configuración -> Cloud Apps -> Implementación y privacidad con ámbito |
+| Aplicaciones conectadas/Conectores de aplicaciones | Configuración -> Cloud Apps -> aplicaciones conectadas -> App Connectors |
+| Control de aplicaciones de acceso condicional | Configuración -> aplicaciones en la nube -> aplicaciones conectadas -> aplicaciones de control de aplicaciones de acceso condicional |
 | Intervalos de direcciones IP              | Configuración -> aplicaciones en la nube                                      |
-| Grupos de usuarios                    | Configuración -> aplicaciones en la nube                                      |
+| Grupos de usuario                    | Configuración -> aplicaciones en la nube                                      |
 
 ## <a name="limitations"></a>Limitaciones
 

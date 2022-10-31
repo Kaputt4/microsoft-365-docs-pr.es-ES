@@ -13,23 +13,27 @@ f1_keywords:
 ms.service: O365-seccomp
 ms.localizationpriority: high
 ms.collection:
-- M365-security-compliance
+- tier1
+- purview-compliance
 - m365solution-mip
 - m365initiative-compliance
+- highpri
 ms.custom: admindeeplinkCOMPLIANCE
 search.appverid:
 - MET150
 description: Prepárese para implementar la extensión de Microsoft Purview.
-ms.openlocfilehash: 9593b75ea9bb858e9cd770ec4f40f4e6d7667a2e
-ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
-ms.translationtype: HT
+ms.openlocfilehash: 2349e0461d7bad7ee7f09ce4033774bf94c9b525
+ms.sourcegitcommit: 21548843708d80bc861f03ffae41457252492bb6
+ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/06/2022
-ms.locfileid: "66622951"
+ms.lasthandoff: 10/31/2022
+ms.locfileid: "68793684"
 ---
 # <a name="get-started-with-microsoft-purview-extension"></a>Introducción a la extensión de Microsoft Purview
 
 Use estos procedimientos para implementar la extensión de Microsoft Purview.
+
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
 
 ## <a name="before-you-begin"></a>Antes de empezar
 
@@ -65,7 +69,7 @@ Para una guía detallada sobre las licencias, vea: [Guía de licencias de Micros
 
 ### <a name="permissions"></a>Permisos
 
-Los datos de Endpoint DLP se pueden ver en el [Explorador de actividad](data-classification-activity-explorer.md). Hay siete roles que conceden permisos al explorador de actividad, y la cuenta que use para acceder a los datos debe pertenecer a uno de ellos.
+Data from Endpoint DLP can be viewed in [Activity explorer](data-classification-activity-explorer.md). There are seven roles that grant permission to activity explorer, the account you use for accessing the data must be a member of any one of them.
 
 - Administrador global
 - Administrador de cumplimiento
@@ -75,18 +79,18 @@ Los datos de Endpoint DLP se pueden ver en el [Explorador de actividad](data-cla
 - Lector de seguridad
 - Lector de informes
 
-#### <a name="roles-and-role-groups-in-preview"></a>Roles y grupos de roles en la versión preliminar
+#### <a name="roles-and-role-groups"></a>Roles y grupos de roles
 
 Hay roles y grupos de roles en la versión preliminar que puede probar para ajustar los controles de acceso.
 
-Esta es una lista de los roles aplicables que se encuentran en versión preliminar. Para obtener más información, consulte [Roles en el Centro de seguridad y cumplimiento](../security/office-365-security/permissions-in-the-security-and-compliance-center.md#roles-in-the-security--compliance-center)
+Esta es una lista de los roles aplicables que se encuentran en versión preliminar. Para obtener más información sobre ellos, consulte [Permisos en el portal de cumplimiento Microsoft Purview](microsoft-365-compliance-center-permissions.md).
 
 - Administrador de Information Protection
 - Analista de Information Protection
 - Investigador de protección de información
 - Lector de protección de información
 
-Esta es una lista de los grupos de roles aplicables que se encuentran en versión preliminar. Para obtener más información, consulte [Grupos de roles en el Centro de seguridad y cumplimiento](../security/office-365-security/permissions-in-the-security-and-compliance-center.md#role-groups-in-the-security--compliance-center)
+Esta es una lista de los grupos de roles aplicables que se encuentran en versión preliminar. Para obtener más información sobre, consulte [Permisos en el portal de cumplimiento Microsoft Purview](microsoft-365-compliance-center-permissions.md).
 
 - Protección de la información
 - Administradores de Information Protection

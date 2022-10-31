@@ -21,12 +21,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Obtenga información sobre cómo invitar automáticamente a los miembros a convertirse en propietarios de un grupo de Microsoft 365 sin propietario o de un equipo de Microsoft Teams.
-ms.openlocfilehash: b417634638142c749fad12b5e008f2f8d6ff5638
-ms.sourcegitcommit: 0b7070ec119e00e0dafe030bbfbef0ae5c9afa19
+ms.openlocfilehash: 3c4c0b7abff0e8c2146e794e2cc07f44fdd615c7
+ms.sourcegitcommit: 21548843708d80bc861f03ffae41457252492bb6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/29/2022
-ms.locfileid: "68191351"
+ms.lasthandoff: 10/31/2022
+ms.locfileid: "68793233"
 ---
 # <a name="manage-ownerless-microsoft-365-groups-and-teams"></a>Administración de grupos y equipos de Microsoft 365 sin propietario
 
@@ -72,3 +72,5 @@ Hasta dos miembros del grupo por grupo pueden aceptar la invitación para conver
 ## <a name="related-topics"></a>Temas relacionados
 
 [Preguntas más frecuentes sobre el grupo sin propietario](/exchange/troubleshoot/groups-and-distribution-lists/ownerless-group-policy)
+
+[Búsqueda del registro de auditoría en el portal de cumplimiento](/microsoft-365/compliance/search-the-audit-log-in-security-and-compliance)

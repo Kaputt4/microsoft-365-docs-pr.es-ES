@@ -12,19 +12,20 @@ f1_keywords:
 ms.service: O365-seccomp
 ms.localizationpriority: medium
 ms.collection:
-- M365-security-compliance
+- tier1
+- purview-compliance
 search.appverid:
 - MET150
 ms.custom:
 - seo-marvel-mar2020
 ms.assetid: 59414438-99f5-488b-975c-5023f2254369
 description: En este artículo, aprenderá a crear, probar y ajustar una directiva DLP según sus necesidades organizativas.
-ms.openlocfilehash: 231c055fb9a67b921e3e6796f82e5c1a8161593d
-ms.sourcegitcommit: 5aed330d8af523f0dffe5e392f1c79f047e38172
+ms.openlocfilehash: f1a18f52646682f1e196dfa455b88f28c89526db
+ms.sourcegitcommit: 21548843708d80bc861f03ffae41457252492bb6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/21/2022
-ms.locfileid: "66943318"
+ms.lasthandoff: 10/31/2022
+ms.locfileid: "68793992"
 ---
 # <a name="create-test-and-tune-a-dlp-policy"></a>Crear, probar y optimizar una directiva DLP
 
@@ -35,6 +36,8 @@ DLP examina los mensajes de correo electrónico y los archivos para obtener info
 - Registro del evento con fines de auditoría
 - Mostrar una advertencia al usuario final que envía el correo electrónico o comparte el archivo
 - Impedir activamente que se produzca el uso compartido de archivos o correo electrónico
+
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
 
 ## <a name="permissions"></a>Permisos
 
@@ -58,14 +61,14 @@ Estos permisos son necesarios para crear y aplicar una directiva DLP que no apli
 
 Hay roles y grupos de roles en la versión preliminar que puede probar para ajustar los controles de acceso.
 
-Esta es una lista de los roles aplicables que se encuentran en versión preliminar. Para obtener más información, consulte [Roles en el Centro de seguridad y cumplimiento](../security/office-365-security/permissions-in-the-security-and-compliance-center.md#roles-in-the-security--compliance-center)
+Esta es una lista de los roles aplicables que se encuentran en versión preliminar. Para obtener más información sobre ellos, consulte [Permisos en el portal de cumplimiento Microsoft Purview](microsoft-365-compliance-center-permissions.md).
 
 - Administrador de Information Protection
 - Analista de Information Protection
 - Investigador de protección de información
 - Lector de protección de información
 
-Esta es una lista de los grupos de roles aplicables que se encuentran en versión preliminar. Para obtener más información, consulte [Grupos de roles en el Centro de seguridad y cumplimiento](../security/office-365-security/permissions-in-the-security-and-compliance-center.md#role-groups-in-the-security--compliance-center)
+Esta es una lista de los grupos de roles aplicables que se encuentran en versión preliminar. Para obtener más información, consulte [Permisos en el portal de cumplimiento Microsoft Purview](microsoft-365-compliance-center-permissions.md).
 
 - Protección de la información
 - Administradores de Information Protection

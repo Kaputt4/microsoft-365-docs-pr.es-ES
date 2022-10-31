@@ -10,7 +10,8 @@ audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
 ms.collection:
-- M365-security-compliance
+- tier1
+- purview-compliance
 ms.localizationpriority: medium
 search.appverid:
 - MOE150
@@ -19,12 +20,12 @@ ms.custom:
 - seo-marvel-apr2020
 - admindeeplinkEXCHANGE
 description: Use los informes DLP de Office 365 para ver el número de coincidencias de directiva DLP, invalidaciones o falsos positivos y ver si están a la alza o a la baja con el tiempo.
-ms.openlocfilehash: 6f60aefaa1548e3c3aed2ca1643de42f412cf5cf
-ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
+ms.openlocfilehash: b2d006730cfa8688d664a4fc60ab13c27c7dec7f
+ms.sourcegitcommit: 21548843708d80bc861f03ffae41457252492bb6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/06/2022
-ms.locfileid: "66641106"
+ms.lasthandoff: 10/31/2022
+ms.locfileid: "68793728"
 ---
 # <a name="view-the-reports-for-data-loss-prevention"></a>Ver los informes de prevención de pérdida de datos
 
@@ -64,6 +65,8 @@ Puede encontrar estos informes en el **panel** de **informes** \> de portal de c
 
 ![La directiva DLP coincide con el informe.](../media/117d20c9-d379-403f-ad68-1f5cd6c4e5cf.png)
 
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
+
 ## <a name="view-the-justification-submitted-by-a-user-for-an-override"></a>Visualización de la justificación enviada por un usuario para una invalidación
 
 Si la directiva DLP permite a los usuarios invalidarla, puede usar el informe de falsos positivos e invalidaciones para ver el texto enviado por los usuarios en la sugerencia de directiva.
@@ -78,11 +81,11 @@ Los informes pueden mostrar conclusiones y recomendaciones en las que puede hace
 
 ## <a name="permissions-for-dlp-reports"></a>Permisos para informes DLP
 
-Para ver los informes DLP en el Centro de cumplimiento de seguridad &, debe tener asignado lo siguiente:
+Para ver los informes DLP en el portal de cumplimiento de Purview, debe tener asignado lo siguiente:
 
 - **Rol Lector de seguridad** en el <a href="https://go.microsoft.com/fwlink/p/?linkid=2059104" target="_blank">Centro de administración de Exchange</a>. De forma predeterminada, este rol se asigna a los grupos de roles Administración de la organización y Lector de seguridad en el Centro de administración de Exchange.
 
-- **Ver solo el rol de administración de cumplimiento DLP** en el Centro de cumplimiento de seguridad &. De forma predeterminada, este rol se asigna a los grupos de roles Administrador de cumplimiento, Administración de la organización, Administrador de seguridad y Lector de seguridad en el Centro de cumplimiento de seguridad &.
+- **Ver solo el rol de administración de cumplimiento DLP** en el portal de cumplimiento de Purview. De forma predeterminada, este rol se asigna a los grupos de roles Administrador de cumplimiento, Administración de organización, Administrador de seguridad y Lector de seguridad en el portal de cumplimiento de Purview.
 
 - **Rol Destinatarios de solo visualización** en el <a href="https://go.microsoft.com/fwlink/p/?linkid=2059104" target="_blank">Centro de administración de Exchange</a>. De forma predeterminada, este rol se asigna a los grupos de roles Administración de cumplimiento, Administración de la organización y View-Only Administración de la organización en el Centro de administración de Exchange.
 

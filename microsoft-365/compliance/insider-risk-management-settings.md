@@ -19,12 +19,12 @@ ms.collection:
 - m365initiative-compliance
 - highpri
 ms.custom: admindeeplinkCOMPLIANCE
-ms.openlocfilehash: be05acf1ca9028915a836d95f737e64ee1324f72
-ms.sourcegitcommit: a20d30f4e5027f90d8ea4cde95d1d5bacfdd2b5e
+ms.openlocfilehash: 0dc240addd772dc820838a1f213fcfeb9aa43a07
+ms.sourcegitcommit: 21548843708d80bc861f03ffae41457252492bb6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/28/2022
-ms.locfileid: "68769587"
+ms.lasthandoff: 10/31/2022
+ms.locfileid: "68793376"
 ---
 # <a name="get-started-with-insider-risk-management-settings"></a>Introducción a la configuración de administración de riesgos internos
 
@@ -84,7 +84,7 @@ Los indicadores de directiva se segmentan en las áreas siguientes. Puede elegir
 - **Microsoft Defender for Cloud Apps indicadores (versión preliminar):** incluyen indicadores de directivas de alertas compartidas de Defender for Cloud Apps. La detección de anomalías habilitada automáticamente en Defender for Cloud Apps comienza inmediatamente a detectar y intercalar resultados, apuntando a numerosas anomalías de comportamiento entre los usuarios y las máquinas y dispositivos conectados a la red. Para incluir estas actividades de administración de riesgos en las alertas de directiva, seleccione uno o varios indicadores en esta sección. Para más información sobre el análisis y la detección de anomalías de Defender for Cloud Apps, consulte [Obtención de análisis de comportamiento y detección de anomalías](/cloud-app-security/anomaly-detection-policy).
 - **Refuerzos de la puntuación** de riesgo: estos incluyen aumentar la puntuación de riesgo de actividad potencialmente riesgosa que está por encima de lo que es típico o para los usuarios con casos anteriores resueltos como una infracción de la directiva. Habilitar refuerzos de puntuación de riesgo aumenta las puntuaciones de riesgo y la probabilidad de alertas para estos tipos de actividades. En el caso de la actividad de administración de riesgos que está por encima de lo habitual, se aumentan las puntuaciones si la actividad de riesgo detectada se desvía de las actividades que se consideran conformes. En el caso de los usuarios con casos anteriores resueltos como infracción de directiva, se aumentan las puntuaciones si un usuario tenía más de un caso resuelto anteriormente como una infracción de directiva confirmada. Los refuerzos de puntuación de riesgo solo se pueden seleccionar si se seleccionan uno o varios indicadores.
 
-En algunos casos, es posible que desee limitar los indicadores de directivas de riesgo internos que se aplican a las directivas de riesgo internos de su organización. Puede desactivar los indicadores de directiva para áreas específicas si los deshabilita de todas las directivas de riesgo internos en la configuración global. Los eventos desencadenantes solo se pueden modificar para las directivas creadas a partir de las plantillas General *data leaks (Pérdidas de datos)* o *Data leaks by priority users (Pérdidas de datos por parte de usuarios prioritarios* ). Las directivas creadas a partir de todas las demás plantillas no tienen indicadores o eventos desencadenantes personalizables.
+En algunos casos, es posible que desee limitar los indicadores de directivas de riesgo internos que se aplican a las directivas de riesgo internos de su organización. Puede desactivar los indicadores de directiva para áreas específicas si los deshabilita de todas las directivas de riesgo internos en la configuración global. Los eventos desencadenantes solo se pueden modificar para las *directivas creadas* a partir de fugas de *datos o pérdidas de datos por plantillas de usuarios prioritarios* . Las directivas creadas a partir de todas las demás plantillas no tienen indicadores o eventos desencadenantes personalizables.
 
 Para definir los indicadores de directivas de riesgo internos que están habilitados en todas las directivas de riesgo internos, vaya a **Indicadores** de **configuración de** >  riesgo internos y seleccione uno o varios indicadores de directiva. Los indicadores seleccionados en la página **Configuración de indicadores** no se pueden configurar individualmente al crear o editar una directiva de riesgo interno en el asistente para directivas.
 
@@ -241,16 +241,16 @@ Para cada una de las siguientes configuraciones de dominio, puede escribir hasta
 
 - **Dominios de terceros:** Si su organización usa dominios de terceros con fines empresariales (como el almacenamiento en la nube), insclúyelos aquí para que pueda recibir alertas por actividades potencialmente de riesgo relacionadas con el indicador de dispositivo *Use un explorador para descargar contenido de un sitio de terceros*.
  
-### <a name="sensitive-info-types-exclusion"></a>Exclusión de tipos de información confidencial
+### <a name="sensitive-info-types-exclusion-preview"></a>Exclusión de tipos de información confidencial (versión preliminar)
 
-Los tipos de información confidencial excluidos en la configuración se asignan a indicadores y desencadenadores que implican actividades relacionadas con archivos para Endpoint, SharePoint, Teams, OneDrive y Exchange. Estos tipos se tratarán como tipos de información no confidenciales. Para los archivos que contienen los tipos de información confidencial identificados aquí, se puntuarán como riesgo, pero no se mostrarán como actividades relacionadas con el contenido relacionado con los tipos de información confidencial. Para obtener una lista completa, vea [Definiciones de entidades de tipo de información confidencial](sensitive-information-type-entity-definitions.md).
+[Los tipos de información confidencial](sensitive-information-type-learn-about.md) excluidos en la configuración se asignan a indicadores y desencadenadores que implican actividades relacionadas con archivos para Endpoint, SharePoint, Teams, OneDrive y Exchange. Estos tipos excluidos se tratarán como tipos de información no confidenciales. Para los archivos que contienen los tipos de información confidencial identificados aquí, se puntuarán como riesgo, pero no se mostrarán como actividades relacionadas con el contenido relacionado con los tipos de información confidencial. Para obtener una lista completa, vea [Definiciones de entidades de tipo de información confidencial](sensitive-information-type-entity-definitions.md).
 
-Puede seleccionar los tipos de información confidencial que se excluirán de la lista de todos los tipos disponibles (integrados y personalizados) disponibles en el inquilino. La administración de riesgos internos excluye varios tipos de información confidencial de forma predeterminada, como el número de enrutamiento de ABA. Puede elegir hasta 500 tipos de información confidencial que se van a excluir.
+Puede seleccionar los tipos de información confidencial que se excluirán de la lista de todos los tipos disponibles (integrados y personalizados) disponibles en el inquilino. Puede elegir hasta 500 tipos de información confidencial que se van a excluir.
 
 > [!NOTE]
 > La lista de exclusión de tipos de información confidencial tiene prioridad sobre la lista de [contenido de prioridad](insider-risk-management-policies.md#prioritize-content-in-policies) .
 
-Para agregar tipos de información confidencial que se van a excluir, siga estos pasos:
+Para excluir tipos de información confidencial, complete los pasos siguientes:
 
 1. En el portal de cumplimiento, vaya a Configuración **de administración de** >  riesgos internos **Detecciones** > **inteligentes**. 
 2. En la sección **Tipos de información confidencial** , seleccione **Agregar tipos de información confidencial para excluir**.
@@ -258,6 +258,24 @@ Para agregar tipos de información confidencial que se van a excluir, siga estos
 4. Seleccione **Agregar** aceptar los cambios o **Cancelar** para descartar los cambios. 
 
 Para eliminar una exclusión de tipo de información confidencial, seleccione la exclusión y **Eliminar**.
+
+### <a name="trainable-classifier-exclusion-preview"></a>Exclusión del clasificador entrenable (versión preliminar)
+
+[Los clasificadores entrenables excluidos en la](classifier-get-started-with.md) configuración se asignan a indicadores y desencadenadores que implican actividades relacionadas con archivos para SharePoint, Teams, OneDrive y Exchange. En el caso de los archivos que contienen clasificadores que se pueden entrenar identificados aquí, se puntuarán de riesgo, pero no se mostrarán como actividades relacionadas con el contenido relacionado con clasificadores entrenables. Para obtener más información, consulte [Definiciones de clasificadores entrenables](classifier-tc-definitions.md#trainable-classifiers-definitions) para obtener una lista completa de todos los clasificadores previamente entrenados.
+
+Puede seleccionar los clasificadores entrenables que se van a excluir de la lista de todos los tipos disponibles (personalizados y de fábrica) disponibles en el inquilino. La administración de riesgos internos excluye algunos clasificadores entrenables de forma predeterminada, como Amenazas, Profanidad, Acoso dirigido, Lenguaje ofensivo y Discriminación. Puede elegir hasta 500 clasificadores entrenables que se excluirán.
+
+> [!NOTE]
+> Opcionalmente, puede elegir clasificadores entrenables para que se incluyan en la lista de [contenido de prioridad](insider-risk-management-policies.md#prioritize-content-in-policies) .
+
+Para excluir clasificadores entrenables, siga estos pasos:
+
+1. En el portal de cumplimiento, vaya a Configuración **de administración de** >  riesgos internos **Detecciones** > **inteligentes**. 
+2. En la sección **Clasificadores entrenables** , seleccione **Agregar clasificadores entrenables para excluir**.
+3. En el panel **Agregar o editar clasificadores entrenables** , seleccione los clasificadores que desea excluir.
+4. Seleccione **Agregar** aceptar los cambios o **Cancelar** para descartar los cambios. 
+
+Para eliminar una exclusión de clasificadores entrenables, seleccione la exclusión y **Eliminar**.
 
 ### <a name="file-path-exclusions"></a>Exclusiones de ruta de archivo
 
@@ -651,7 +669,7 @@ Para los análisis completados, verá los posibles riesgos detectados en su orga
 
 ![Informe de información general de análisis de administración de riesgos internos.](../media/insider-risk-analytics-overview.png)
 
-Para mostrar más información sobre una información, seleccione **Ver detalles** para mostrar el panel de detalles de la información. El panel de detalles incluye los resultados completos de la información, una recomendación de directiva de riesgo interno y el botón **Crear directiva** para ayudarle a crear rápidamente la directiva recomendada. Al seleccionar Crear directiva, se le lleva al Asistente para directivas y se selecciona automáticamente la plantilla de directiva recomendada relacionada con la información. Por ejemplo, si la información de análisis es para la actividad *de pérdida de datos* , la plantilla de directiva General *data leaks* se seleccionará previamente en el Asistente para directivas.
+Para mostrar más información sobre una información, seleccione **Ver detalles** para mostrar el panel de detalles de la información. El panel de detalles incluye los resultados completos de la información, una recomendación de directiva de riesgo interno y el botón **Crear directiva** para ayudarle a crear rápidamente la directiva recomendada. Al seleccionar Crear directiva, se le lleva al Asistente para directivas y se selecciona automáticamente la plantilla de directiva recomendada relacionada con la información. Por ejemplo, si la información de análisis es para la actividad *de pérdida de datos* , la plantilla de directiva *Pérdidas de datos* se seleccionará previamente en el Asistente para directivas automáticamente.
 
 ![Informe de detalles de análisis de administración de riesgos internos.](../media/insider-risk-analytics-details.png)
 

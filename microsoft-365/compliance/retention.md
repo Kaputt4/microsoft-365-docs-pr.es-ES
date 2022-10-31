@@ -11,19 +11,20 @@ ms.topic: conceptual
 ms.service: O365-seccomp
 ms.localizationpriority: high
 ms.collection:
-- M365-security-compliance
+- purview-compliance
+- tier1
+- highpri
 - SPO_Content
-- m365initiative-compliance
 search.appverid:
 - MOE150
 - MET150
 description: Obtenga información sobre las directivas de retención y etiquetas de retención de Microsoft 365 para conservar lo que necesita y eliminar lo que no para administrar los datos de su organización.
-ms.openlocfilehash: 7e4c0384cd2678d666be4d65f59a1651d1e2d03e
-ms.sourcegitcommit: 702fba4b6e6210bb7933cdbff0ad72426fcb9ef2
+ms.openlocfilehash: 6ac5a8c79360896fe12ebd27c87cbc937f33a83e
+ms.sourcegitcommit: 21548843708d80bc861f03ffae41457252492bb6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/13/2022
-ms.locfileid: "67336274"
+ms.lasthandoff: 10/31/2022
+ms.locfileid: "68793323"
 ---
 # <a name="learn-about-retention-policies-and-retention-labels"></a>Más información sobre directivas y etiquetas de retención
 
@@ -31,14 +32,14 @@ ms.locfileid: "67336274"
 
 
 > [!NOTE]
-> Si ve mensajes sobre directivas de retención en Teams o tiene preguntas sobre etiquetas de retención, póngase en contacto con el departamento de TI para obtener información sobre cómo las han configurado. Mientras tanto, los artículos siguientes pueden serle de utilidad:
+> If you're seeing messages about retention policies in Teams or have questions about retention labels in your apps, contact your IT department for information about how they have been configured for you. In the meantime, you might find the following articles helpful:
 >
 > - [Mensajes de Teams sobre directivas de retención](https://support.microsoft.com/office/teams-messages-about-retention-policies-c151fa2f-1558-4cf9-8e51-854e925b483b)
 > - [Aplicar etiquetas de retención a archivos en SharePoint o OneDrive](https://support.microsoft.com/office/apply-retention-labels-to-files-in-sharepoint-or-onedrive-11a6835b-ec9f-40db-8aca-6f5ef18132df)
 >
 > La información de esta página es para administradores de TI que pueden crear directivas y etiquetas de retención por motivos de cumplimiento.
 
-Para la mayoría de las organizaciones, el volumen y la complejidad de los datos se incrementa diariamente: correo electrónico, documentos, mensajes instantáneos y mucho más. Administrar o gobernar esta información es importante, ya que necesita:
+For most organizations, the volume and complexity of their data is increasing daily—email, documents, instant messages, and more. Effectively managing or governing this information is important because you need to:
 
 - **Cumplir de forma proactiva con las normas del sector y las directivas internas** que le exigen retener contenido durante un período mínimo de tiempo. Por ejemplo, la ley Sarbanes-Oxley puede exigirle que retenga determinados tipos de contenido durante siete años.
 
@@ -63,9 +64,11 @@ Esta configuración de retención funciona con contenido local y le ahorra los c
 
 Use las secciones siguientes para obtener más información sobre cómo funcionan las directivas y las etiquetas de retención, cuándo usarlas y cómo se complementan entre sí. Pero si está listo para empezar e implementar la configuración de retención para algunos escenarios comunes, consulte [Introducción a la administración del ciclo de vida de los datos](get-started-with-data-lifecycle-management.md).
 
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
+
 ## <a name="how-retention-settings-work-with-content-in-place"></a>Cómo funciona la configuración de retención con el contenido local
 
-Cuando el contenido tiene asignada la configuración de retención, ese contenido permanece en su ubicación original. La mayoría de las veces, las personas continúan trabajando con sus documentos o correo como si nada hubiera cambiado. Pero si editan o eliminan contenido incluido en la directiva de retención, se conserva automáticamente una copia del contenido.
+When content has retention settings assigned to it, that content remains in its original location. Most of the time, people continue to work with their documents or mail as if nothing's changed. But if they edit or delete content that's included in the retention policy, a copy of the content is automatically retained.
 
 - Para sitios de SharePoint y OneDrive: la copia se conserva en la biblioteca de **Suspensión para conservación**.
 
@@ -134,7 +137,7 @@ Los elementos heredan la configuración de retención de su contenedor especific
 
 ### <a name="retention-labels"></a>Etiquetas de retención
 
-Use etiquetas de retención para diferentes tipos de contenido que requieran una configuración de retención diferente. Por ejemplo:
+Use retention labels for different types of content that require different retention settings. For example:
 
 - Formularios fiscales que deben conservarse durante un período mínimo de tiempo.
 
@@ -148,7 +151,7 @@ En todos estos casos, las etiquetas de retención le permiten aplicar la configu
 
 Con las etiquetas de retención, puede:
 
-- **Permitir que los usuarios de la organización apliquen manualmente una etiqueta de retención** a contenido de Outlook, Outlook en la Web, OneDrive, SharePoint y Grupos de Microsoft 365. Con frecuencia, los usuarios son los que mejor saben con qué tipo de contenido están trabajando, por lo que pueden clasificarlo y aplicar la configuración de retención adecuada.
+- **Enable people in your organization to apply a retention label manually** to content in Outlook and Outlook on the web, OneDrive, SharePoint, and Microsoft 365 groups. Users often know best what type of content they're working with, so they can classify it and have the appropriate retention settings applied.
 
 - **Aplique etiquetas de retención al contenido automáticamente** si coincide con condiciones específicas, que incluyen datos adjuntos en la nube que se comparten en el correo electrónico o Teams, o cuando el contenido contiene:
   - Tipos específicos de información confidencial.
@@ -181,7 +184,7 @@ Para obtener más información, vea [Usar una etiqueta de retención como condic
 
 #### <a name="retention-labels-and-policies-that-apply-them"></a>Etiquetas de retención y directivas que se aplican a ellas
 
-Cuando se publican las etiquetas de retención, se incluyen en una **directiva de etiqueta de retención** que permite que los administradores y usuarios las apliquen al contenido tal como se muestra en el siguiente diagrama:
+When you publish retention labels, they're included in a **retention label policy** that makes them available for admins and users to apply to content. As the following diagram shows:
 
 1. Se puede incluir una única etiqueta de retención en varias directivas de etiquetas de retención.
 
@@ -222,7 +225,7 @@ Para las etiquetas de retención estándar (no marcan los elementos como un [reg
 - Cuando el contenido ya tiene una etiqueta de retención aplicada, la etiqueta existente no se eliminará ni reemplazará automáticamente por otra etiqueta de retención con dos posibles excepciones:
 
   - La etiqueta existente está configurada para aplicar automáticamente una etiqueta de retención diferente al final del período de retención.
-  - La etiqueta existente se aplicó como una etiqueta predeterminada. Cuando se usa una etiqueta predeterminada, hay algunos casos en los que se puede reemplazar por otra o quitarse automáticamente.
+  - The existing label was applied as a default label. When you use a default label, there are some scenarios when it can be replaced by another default label, or automatically removed.
 
   Para más información sobre el comportamiento de la etiqueta cuando se aplica utilizando una etiqueta predeterminada:
 
@@ -235,7 +238,7 @@ Cuando las etiquetas de retención marcan elementos como un registro o un regist
 
 #### <a name="monitoring-retention-labels"></a>Supervisar las etiquetas de retención
 
-En el portal de cumplimiento de Microsoft Purview, seleccione **Clasificación de datos** y en la página de **Información general** para supervisar cómo se usan las etiquetas de retención en el inquilino e identificar dónde se encuentran los elementos etiquetados. Para obtener más información, incluidos los requisitos previos importantes, consulte [Más información sobre la clasificación de datos](data-classification-overview.md).
+From the Microsoft Purview compliance portal, select **Data classification** and the **Overview** page to monitor how your retention labels are being used in your tenant, and identify where your labeled items are located. For more information, including important prerequisites, see [Learn about data classification](data-classification-overview.md).
 
 Posteriormente, podrá profundizar en los detalles mediante el [explorador de contenido](data-classification-content-explorer.md) y el [explorador de actividades](data-classification-activity-explorer.md).
 
@@ -246,7 +249,7 @@ Posteriormente, podrá profundizar en los detalles mediante el [explorador de co
 
 Después de asignar las etiquetas de retención al contenido (ya sea a través de los usuarios o aplicadas automáticamente), puede usar la Búsqueda de contenido para encontrar todo los elementos clasificados bajo una etiqueta de retención específica.
 
-Al crear una búsqueda de contenido, seleccione la condición de la **Etiqueta de retención** y, después, escriba el nombre completo de la etiqueta o una parte de este y use un carácter comodín. Para obtener más información, vea [Consultas de palabras clave y condiciones de búsqueda para la Búsqueda de contenido](keyword-queries-and-search-conditions.md).
+When you create a content search, choose the **Retention label** condition, and then enter the complete retention label name or part of the label name and use a wildcard. For more information, see [Keyword queries and search conditions for Content Search](keyword-queries-and-search-conditions.md).
 
 ![Condición de la etiqueta de retención.](../media/retention-label-condition.png)
 
@@ -266,6 +269,7 @@ La siguiente tabla le ayudará a identificar si debe usar una directiva de reten
 |Se mantiene si el contenido se mueve | No | Sí, dentro de su espacio empresarial de Microsoft 365 |
 |Declara el elemento como un registro| No | Sí |
 |Inicio del período de retención cuando se etiqueta o basado en un evento | No | Sí |
+|Ejecución de un flujo de Power Automate al final del período de retención | No | Sí|
 |Revisión para eliminación | No| Sí |
 |Prueba de eliminación durante un máximo de 7 años | No |Sí, cuando usa la revisión para eliminación o el elemento está marcado como registro|
 |Auditoría de las actividades administrativas| Sí | Sí|
@@ -274,7 +278,7 @@ La siguiente tabla le ayudará a identificar si debe usar una directiva de reten
 
 **Nota al pie.**
 
-<sup>\*</sup> Para las etiquetas de retención que no marcan el contenido como registro o registro normativo, los eventos de auditoría se limitan a cuando un elemento de SharePoint o OneDrive tiene una etiqueta aplicada, cambiada o quitada. Para obtener los detalles de auditoría de las etiquetas de retención, consulte la sección [Acciones de retención de los registros de auditoría](#auditing-retention-actions) de esta página.
+<sup>\*</sup> For retention labels that don't mark the content as a record or regulatory record, auditing events are limited to when an item in SharePoint or OneDrive has a label applied, changed, or removed. For auditing details for retention labels, see the [Auditing retention actions](#auditing-retention-actions) section on this page.
 
 ### <a name="combining-retention-policies-and-retention-labels"></a>Combinación de directivas de retención y etiquetas de retención
 
@@ -328,11 +332,11 @@ A menudo, las directivas surtirán efecto y las etiquetas estarán visibles en m
 
 Al crear una directiva de retención o una directiva de etiqueta de retención, debe elegir entre adaptable y estática para definir el ámbito de la directiva.
 
-- Un **ámbito adaptable** usa una consulta que usted especifique, por lo que la pertenencia no es estática, sino dinámica, ya que se ejecuta diariamente en los atributos o propiedades que especifique para las ubicaciones seleccionadas. Puede usar múltiples ámbitos adaptables con una única directiva.
+- An **adaptive scope** uses a query that you specify, so the membership isn't static but dynamic by running daily against the attributes or properties that you specify for the selected locations. You can use multiple adaptive scopes with a single policy.
 
     Ejemplo: los correos electrónicos y los documentos de OneDrive para ejecutivos requieren un período de retención más largo que los usuarios estándares. Cree una directiva de retención con un ámbito adaptable que use el puesto de trabajo del atributo Azure AD de "Ejecutivo" y, a continuación, seleccione las ubicaciones de correo electrónico de Exchange y cuentas de OneDrive para la directiva. No es necesario especificar direcciones de correo electrónico ni direcciones URL de OneDrive para estos usuarios porque el ámbito adaptable recupera automáticamente estos valores. Para los nuevos ejecutivos, no es necesario volver a configurar la directiva de retención porque estos nuevos usuarios con sus valores correspondientes para el correo electrónico y OneDrive se seleccionan automáticamente.
 
-- Un **ámbito estático** no usa consultas y está limitado en la configuración, ya que puede aplicarse a todas las instancias de una ubicación especificada o bien usar la inclusión y las exclusiones para instancias específicas de esa ubicación. Estas tres opciones a veces se conocen como "de toda la organización", "incluyente" y "excluyente" respectivamente.
+- A **static scope** doesn't use queries and is limited in configuration in that it can apply to all instances for a specified location, or use inclusion and exclusions for specific instances for that location. These three choices are sometimes referred to as "org-wide", "includes", and "excludes" respectively.
 
     Ejemplo: los correos electrónicos y los documentos de OneDrive para ejecutivos requieren un período de retención más largo que los usuarios estándares. Crea una directiva de retención con un ámbito estático que selecciona las ubicaciones de correo electrónico de Exchange y cuentas de OneDrive para la directiva. Para la ubicación del correo electrónico de Exchange, puede identificar un grupo que contenga solo los ejecutivos, por lo que debe especificar este grupo para la directiva de retención y la pertenencia al grupo con las direcciones de correo electrónico respectivas se recupera cuando se crea la directiva. Para la ubicación de cuentas OneDrive, debe identificar y, a continuación, especificar direcciones URL de OneDrive individuales para cada ejecutivo. Para los nuevos ejecutivos, debe volver a configurar la directiva de retención para agregar las nuevas direcciones de correo electrónico y direcciones URL de OneDrive. También debe actualizar las direcciones URL de OneDrive siempre que se produzca un cambio en el UPN de un ejecutivo.
 
@@ -340,15 +344,15 @@ Al crear una directiva de retención o una directiva de etiqueta de retención, 
 
 Ventajas de usar ámbitos adaptables:
 
-- Sin límites en el [número de elementos por directiva](retention-limits.md#maximum-number-of-items-per-policy). Aunque las directivas adaptables siguen estando sujetas a las limitaciones de [número máximo de directivas por inquilino](retention-limits.md#maximum-number-of-policies-per-tenant), la configuración más flexible probablemente dará como resultado muchas menos directivas.
+- No limits on the [number of items per policy](retention-limits.md#maximum-number-of-items-per-policy). Although adaptive policies are still subject to the [maximum number of policies per tenant](retention-limits.md#maximum-number-of-policies-per-tenant) limitations, the more flexible configuration will likely result in far fewer policies.
 
-- Objetivos más eficaces para los requisitos de retención. Por ejemplo, puede asignar diferentes configuraciones de retención a los usuarios según su ubicación geográfica mediante el uso de atributos de Azure AD existentes sin la sobrecarga administrativa de crear y mantener grupos para este fin.
+- More powerful targeting for your retention requirements. For example, you can assign different retention settings to users according to their geographical location by using existing Azure AD attributes without the administrative overhead of creating and maintaining groups for this purpose.
 
 - La pertenencia basada en consultas proporciona resistencia frente a cambios empresariales que podrían no reflejarse de forma confiable en la pertenencia a grupos o en procesos externos que dependen de la comunicación entre departamentos.
 
 - Una sola directiva de retención puede incluir ubicaciones para Microsoft Teams y Yammer, mientras que cuando se usa un ámbito estático, estas ubicaciones requieren su propia directiva de retención.
 
-- Puede aplicar una configuración de retención específica solo a los buzones inactivos. Esta configuración no es posible con un ámbito estático porque, en el momento en que se asigna la directiva, los ámbitos estáticos no admiten la inclusión específica de destinatarios con buzones inactivos.
+- You can apply specific retention settings to just inactive mailboxes. This configuration isn't possible with a static scope because at the time the policy is assigned, static scopes don't support the specific inclusion of recipients with inactive mailboxes.
 
 Ventajas de usar ámbitos estáticos:
 
@@ -373,9 +377,9 @@ Por ejemplo:
 
 ![Búsqueda de directivas para buscar las directivas de retención asignadas a usuarios, sitios y grupos de Microsoft 365 específicos ](../media/policy-lookup.png)
 
-Debe especificar la dirección de correo electrónico exacta de un usuario, la dirección URL exacta de un sitio o la dirección de correo electrónico exacta de un grupo de Microsoft 365. Por ejemplo, no puede usar caracteres comodín o coincidencias parciales 
+You must specify the exact email address for a user, exact URL for a site, or exact email address for a Microsoft 365 group. You can't use wildcards, or partial matches, for example.
 
-La opción para sitios incluye cuentas de OneDrive. Para obtener información sobre cómo especificar la dirección URL de la cuenta de OneDrive de un usuario, consulte [Obtener una lista de todas las direcciones URL de OneDrive de usuario de su organización](/onedrive/list-onedrive-urls).
+The option for sites includes OneDrive accounts. For information how to specify the URL for a user's OneDrive account, see [Get a list of all user OneDrive URLs in your organization](/onedrive/list-onedrive-urls).
 
 ## <a name="the-principles-of-retention-or-what-takes-precedence"></a>Los principios de retención o qué tiene precedencia
 
@@ -415,7 +419,7 @@ Explicación de los cuatro niveles diferentes:
 
     El mensaje de correo electrónico se conserva durante cinco años, ya que esta acción de retención tiene prioridad sobre la eliminación. El mensaje de correo electrónico se elimina permanentemente al final de los cinco años debido a la acción de eliminación que se suspendió mientras la acción de retención estaba en vigor.
 
-2. **El período de retención más largo prevalece.** Si el contenido está sujeto a varias configuraciones de retención que conservan contenido durante distintos períodos de tiempo, el contenido se conservará hasta el final del período de retención más largo.
+2. **The longest retention period wins.** If content is subject to multiple retention settings that retain content for different periods of time, the content will be retained until the end of the longest retention period for the item.
 
     > [!NOTE]
     > Es posible que un período de retención de 5 años en una etiqueta o directiva de retención supere un período de retención de 7 años en una etiqueta o directiva de retención, ya que el período de 5 años está configurado para comenzar en función de cuándo se modificó el archivo por última vez y el período de 7 años se configura para comenzar desde el momento en que se crea el archivo.
@@ -444,7 +448,7 @@ Explicación de los cuatro niveles diferentes:
 
         No se puede determinar cuándo se eliminará permanentemente este documento en este nivel porque ambas directivas de retención tienen como ámbito incluir instancias específicas.
 
-4. **El periodo de eliminación más corto prevalece.** Se aplica para determinar cuándo se eliminarán los elementos de las directivas de retención y el resultado no se haya podido resolver desde el nivel anterior: el contenido se elimina permanentemente al final del período de retención más corto.
+4. **The shortest deletion period wins.** Applicable to determine when items will be deleted from retention policies and the outcome couldn't be resolved from the previous level: Content is permanently deleted at the end of the shortest retention period for the item.
 
     > [!NOTE]
     > Es posible que una directiva de retención que tenga un período de retención de 7 años supere a una directiva de retención de 5 años porque la primera directiva está configurada para iniciar el período de retención en función de cuándo se crea el archivo y la segunda directiva de retención desde la última modificación del archivo.
@@ -548,7 +552,7 @@ Las acciones de retención que se registran como eventos de auditoría solo est�
 
 ## <a name="powershell-cmdlets-for-retention-policies-and-retention-labels"></a>Cmdlets de PowerShell para directivas de retención y etiquetas de retención
 
-Use el [PowerShell del Centro de seguridad y cumplimiento de Office 365](/powershell/exchange/scc-powershell) para cmdlets de retención de Purview que admitan la configuración a escala, scripting para la automatización o que puedan ser necesarios para escenarios de configuración avanzados.
+Use [PowerShell de cumplimiento de seguridad &](/powershell/exchange/scc-powershell) para cmdlets de retención de Purview que admitan la configuración a escala, el scripting para la automatización o que puedan ser necesarios para escenarios de configuración avanzados.
 
 Para obtener una lista de los cmdlets disponibles e identificar cuáles son compatibles con las distintas ubicaciones, consulte [Cmdlets de PowerShell para directivas de retención y etiquetas de retención](retention-cmdlets.md).
 
@@ -628,4 +632,4 @@ Si ha configurado los sitios de SharePoint para directivas de tipo de contenido 
 
 ## <a name="configuration-guidance"></a>Instrucciones de configuración
 
-Consulte [Introducción a la administración del ciclo de vida de datos](get-started-with-data-lifecycle-management.md). Este artículo contiene información sobre suscripciones, permisos y vínculos a instrucciones de configuración de un extremo a otro para escenarios de retención.
+See [Get started with data lifecycle management](get-started-with-data-lifecycle-management.md). This article has information about subscriptions, permissions, and links to end-to-end configuration guidance for retention scenarios.

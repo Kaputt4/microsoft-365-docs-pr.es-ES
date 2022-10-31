@@ -11,24 +11,24 @@ ms.topic: reference
 ms.service: O365-seccomp
 ms.localizationpriority: normal
 ms.collection:
-- M365-security-compliance
+- purview-compliance
+- tier1
 - SPO_Content
-- m365initiative-compliance
 description: Identifique los cmdlets de PowerShell para la retención de Microsoft 365 que admiten la configuración a escala, la automatización o que podrían ser necesarios para escenarios de configuración avanzados.
-ms.openlocfilehash: bdbda5de65421fa73f45a278e2346777835062d9
-ms.sourcegitcommit: 5aed330d8af523f0dffe5e392f1c79f047e38172
+ms.openlocfilehash: 93ae764f0384ad14883e0498f6e733d5784ced23
+ms.sourcegitcommit: 21548843708d80bc861f03ffae41457252492bb6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/21/2022
-ms.locfileid: "66942000"
+ms.lasthandoff: 10/31/2022
+ms.locfileid: "68793244"
 ---
 # <a name="powershell-cmdlets-for-retention-policies-and-retention-labels"></a>Cmdlets de PowerShell para directivas de retención y etiquetas de retención
 
->*[Instrucciones de licencias de Microsoft 365 para la seguridad y el cumplimiento](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance).*
+>*[Guía de licencias de Microsoft 365 para la seguridad y el cumplimiento](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance).*
 
 Use las secciones siguientes para identificar los principales cmdlets de PowerShell que están disponibles para las directivas de retención y las etiquetas de retención que podría necesitar para la configuración a escala, scripts automatizados o escenarios de configuración avanzada. Para obtener la lista completa de cmdlets, consulte la [lista de retención de directivas y cumplimiento](/powershell/module/exchange#policy-and-compliance-retention) de la documentación de PowerShell.
 
-Antes de usar estos cmdlets, primero debe [conectarse a PowerShell del Centro de cumplimiento de seguridad &](/powershell/exchange/connect-to-scc-powershell).
+Antes de usar estos cmdlets, primero debe [conectarse a PowerShell de cumplimiento de seguridad &](/powershell/exchange/connect-to-scc-powershell).
 
 En las descripciones siguientes, una directiva de retención puede hacer referencia a una directiva de retención (sin etiquetas) o a una directiva de etiquetas de retención. Cada directiva define si es estática o adaptable y las ubicaciones de la directiva que se va a aplicar. A continuación, la directiva requiere una regla para completar la configuración.
 
@@ -38,6 +38,8 @@ Por ejemplo:
 Cuando se usan etiquetas de retención, contienen la configuración de retención y sus directivas necesitan reglas diferentes:
 - Una directiva de etiquetas de retención que publique necesita una regla que defina qué etiquetas se deben mostrar en las aplicaciones.
 - Una directiva de etiqueta de retención de aplicación automática necesita una regla que defina la etiqueta que se va a aplicar y las condiciones para aplicar la etiqueta.
+
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
 
 ## <a name="retention-cmdlets-for-most-locations"></a>Cmdlets de retención para la mayoría de las ubicaciones
 

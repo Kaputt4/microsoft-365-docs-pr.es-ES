@@ -18,12 +18,12 @@ ms.assetid: e3c6df61-8513-499d-ad8e-8a91770bff63
 ms.collection:
 - purview-compliance
 ms.custom: seo-marvel-mar2020
-ms.openlocfilehash: 70ba18d1471ea5fc5d145f64b68c6fef1691124c
-ms.sourcegitcommit: 3d7dd25abcbf923b45eae84ff4d9d2bb95ef4ca4
+ms.openlocfilehash: 0d84b220496fd0a8f371e57492bb9f4cdd009be8
+ms.sourcegitcommit: 21548843708d80bc861f03ffae41457252492bb6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/28/2022
-ms.locfileid: "68777641"
+ms.lasthandoff: 10/31/2022
+ms.locfileid: "68793750"
 ---
 # <a name="whats-new-in-microsoft-purview-risk-and-compliance-solutions"></a>Novedades de las soluciones de cumplimiento y riesgo de Microsoft Purview
 
@@ -63,7 +63,7 @@ Ya sea agregando nuevas soluciones a la [portal de cumplimiento Microsoft Purvie
 - **Disponibilidad general (GA):** [volver a etiquetar al final del período de retención](retention-settings.md#relabeling-at-the-end-of-the-retention-period).
 - **Disponibilidad general (GA):** [iniciar un registro desbloqueado](declare-records.md#configuring-retention-labels-to-declare-records).
 - **Disponibilidad general (GA):** los usuarios ahora pueden aplicar etiquetas de retención publicadas a los archivos [directamente en Teams](create-apply-retention-labels.md#applying-retention-labels-using-microsoft-365-groups).
-- Nuevas instrucciones de soporte técnico de retención: las directivas de retención para Teams admiten el [chat con clips](https://support.microsoft.com/office/start-a-chat-in-teams-0c71b32b-c050-4930-a887-5afbe742b3d8?storagetype=live#bkmk_chatwithself) de [vídeo](https://support.microsoft.com/office/record-a-video-clip-in-teams-0c57dae5-2974-4214-9c46-7a2136386f1c) y características, y las directivas de retención para [las publicaciones de argumentos](https://support.microsoft.com/office/overview-of-storyline-for-yammer-and-viva-engage-530e4e66-9f1c-4be1-b371-08ea40dc4b69) de yammer.
+- Nuevas instrucciones de soporte técnico de retención: las directivas de retención para Teams admiten la característica [chat conmigo mismo](https://support.microsoft.com/office/start-a-chat-in-teams-0c71b32b-c050-4930-a887-5afbe742b3d8?storagetype=live#bkmk_chatwithself) , [los clips de vídeo](https://support.microsoft.com/office/record-a-video-clip-in-teams-0c57dae5-2974-4214-9c46-7a2136386f1c) y los registros de datos de llamadas, que son mensajes generados por el sistema que contienen [metadatos para reuniones y llamadas](/MicrosoftTeams/ediscovery-investigation#teams-metadata). Las directivas de retención de Yammer admiten [publicaciones de argumentos](https://support.microsoft.com/office/overview-of-storyline-for-yammer-and-viva-engage-530e4e66-9f1c-4be1-b371-08ea40dc4b69).
 - Experiencia mejorada en el producto si las directivas de retención tienen errores: ahora verá una descripción detallada del error en el panel de detalles, con acciones en el producto para realizar que puedan resolver el problema. Por ejemplo, quite las ubicaciones no válidas y vuelva a sincronizar la directiva.
 
 ### <a name="microsoft-priva"></a>Microsoft Priva

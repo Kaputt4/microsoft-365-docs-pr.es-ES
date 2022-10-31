@@ -18,12 +18,12 @@ search.appverid:
 - MET150
 description: Información para que los administradores de TI administren las etiquetas de confidencialidad en las aplicaciones de Office para escritorio, móvil y web.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: c4ae1dfd9d38650a7f34287685a3f00b34c1234e
-ms.sourcegitcommit: 0ad7edcfdcdd11d02fa8a14ffe4b36e120d92deb
+ms.openlocfilehash: 4e6571b59d8ab6ec3624fda0a7827118e939d2fa
+ms.sourcegitcommit: 21548843708d80bc861f03ffae41457252492bb6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/29/2022
-ms.locfileid: "68786769"
+ms.lasthandoff: 10/31/2022
+ms.locfileid: "68793710"
 ---
 # <a name="manage-sensitivity-labels-in-office-apps"></a>Administrar etiquetas de confidencialidad en las aplicaciones de Office
 
@@ -116,7 +116,7 @@ Los números indicados son las versiones mínimas de la aplicación Office reque
 |[Aplicar una etiqueta de confidencialidad automáticamente al contenido](apply-sensitivity-label-automatically.md) <br /> - Uso de clasificadores capacitados                    | Canal actual: 2105+ <br /><br> Canal mensual para empresas: 2105+ <br /><br> Canal semestral para empresas: 2108+ | 16.49+ | En revisión           | En revisión               | Sí |
 |[Diferentes opciones de configuración para etiquetas predeterminadas y etiquetas obligatorias](#outlook-specific-options-for-default-label-and-mandatory-labeling)                    | Canal actual: 2105+ <br /><br> Canal mensual para empresas: 2105+ <br /><br> Canal semestral para empresas: 2108+ | 16.43+ <sup>\*</sup>                   | 4.2111+           | 4.2111+               | Sí |
 |[Compatibilidad con PDF](#pdf-support) | Versión preliminar: implementando en [Canal Beta](https://office.com/insider)|  En revisión | En revisión | En revisión | En revisión |
-|[Aplicar protección S/MIME](#configure-a-label-to-apply-smime-protection-in-outlook) | Versión preliminar: implementando en [Canal Beta](https://office.com/insider) | 16.61+ <sup>\*</sup>                   | 4.2226+ | 4.2203+ | En revisión |
+|[Aplicar protección S/MIME](#configure-a-label-to-apply-smime-protection-in-outlook) | Vista previa: [Canal Beta](https://office.com/insider) | 16.61+ <sup>\*</sup>                   | 4.2226+ | 4.2203+ | En revisión |
 |[Barra de confidencialidad](#sensitivity-bar) y [color de la etiqueta de presentación](#label-colors) | En revisión |  En revisión | En revisión | En revisión | En revisión |
 
 **Notas al pie:**
@@ -162,7 +162,7 @@ Para otras soluciones de etiquetado, compruebe en su documentación los tipos de
 
 ## <a name="protection-templates-and-sensitivity-labels"></a>Plantillas de protección y etiquetas de confidencialidad
 
-Las [plantillas de protección](/azure/information-protection/configure-policy-templates) definidas por el administrador, como las que se definen para el Cifrado de mensajes de Office 365, no son visibles en las aplicaciones de Office cuando se utiliza el etiquetado integrado. Esta experiencia simplificada refleja que no es necesario seleccionar una plantilla de protección, ya que los mismos ajustes se incluyen con las etiquetas de confidencialidad que tienen el cifrado activado.
+Las plantillas de [protección](/azure/information-protection/configure-policy-templates) definidas por el administrador, como las que define para Cifrado de mensajes de Microsoft Purview, no son visibles en las aplicaciones de Office cuando se usa el etiquetado integrado. Esta experiencia simplificada refleja que no es necesario seleccionar una plantilla de protección, ya que los mismos ajustes se incluyen con las etiquetas de confidencialidad que tienen el cifrado activado.
 
 Puede convertir una plantilla existente en una etiqueta de confidencialidad cuando use el cmdlet [New-Label](/powershell/module/exchange/new-label) con el parámetro *EncryptionTemplateId*.
 
@@ -405,7 +405,7 @@ Cuando la aplicación de Outlook no admita desactivar la etiqueta obligatoria: s
 > 
 > Si configura una etiqueta para aplicar la protección S/MIME, pero Outlook en Windows aún no la admite, la etiqueta todavía se muestra y se puede aplicar, pero se omite la configuración de S/MIME. No podrá seleccionar esta etiqueta para las directivas de etiquetado automático de Exchange.
 
-Esta configuración no está disponible en el portal de cumplimiento Microsoft Purview. Debe usar la configuración avanzada de PowerShell con el cmd [Set-Label](/powershell/module/exchange/set-label) o [New-Label](/powershell/module/exchange/new-label) después de [conectarse a Office 365 Centro de seguridad y cumplimiento PowerShell](/powershell/exchange/office-365-scc/connect-to-scc-powershell/connect-to-scc-powershell).
+Esta configuración no está disponible en el portal de cumplimiento Microsoft Purview. Debe usar la configuración avanzada de PowerShell con el comando [Set-Label](/powershell/module/exchange/set-label) o [New-Label](/powershell/module/exchange/new-label) después de [conectarse a PowerShell de cumplimiento de seguridad &](/powershell/exchange/office-365-scc/connect-to-scc-powershell/connect-to-scc-powershell).
 
 Use esta configuración solo cuando tenga una [implementación S/MIME](/microsoft-365/security/office-365-security/s-mime-for-message-signing-and-encryption) en funcionamiento y quiera que una etiqueta aplique automáticamente este método de protección para los correos electrónicos en lugar de la [protección predeterminada que usa el cifrado de la administración de derechos de Azure Information Protection](encryption-sensitivity-labels.md). La protección resultante será la misma que cuando un usuario selecciona manualmente las opciones S/MIME de Outlook.
 

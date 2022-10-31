@@ -19,12 +19,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Use una directiva de retención para controlar de forma eficaz el contenido que los usuarios generan con el correo electrónico, los documentos y las conversaciones. Conserve lo que desee y libérese de lo que no quiere.
-ms.openlocfilehash: f78df6609a501cafb086aa82d86374258f468ee6
-ms.sourcegitcommit: 0ad7edcfdcdd11d02fa8a14ffe4b36e120d92deb
+ms.openlocfilehash: c8e6540e42b6692c980b96cec859a137d866c965
+ms.sourcegitcommit: 21548843708d80bc861f03ffae41457252492bb6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/29/2022
-ms.locfileid: "68786527"
+ms.lasthandoff: 10/31/2022
+ms.locfileid: "68793838"
 ---
 # <a name="create-and-configure-retention-policies"></a>Crear y configurar directivas de retención
 
@@ -79,7 +79,7 @@ Cuando tiene más de una directiva de retención y cuando también usa etiquetas
 > [!NOTE]
 > Las directivas de retención son compatibles con [canales compartidos](/MicrosoftTeams/shared-channels). Cuando se configuran las opciones de retención para la ubicación de los **mensajes del canal de Teams**, si un equipo tiene canales compartidos, éstos heredan las opciones de retención de su equipo primario.
 > 
-> Las directivas de retención también admiten registros de datos de llamada recién creados, que son mensajes generados por el sistema. Sin embargo, los registros de datos de llamada para mensajes de canal privado se incluyen en la ubicación de **chats de Teams** , en lugar de en la ubicación de **mensajes de canal privado de Teams** .
+> Las directivas de retención también admiten registros de datos de llamada recién creados, que son mensajes generados por el sistema que contienen [metadatos para reuniones y llamadas](/MicrosoftTeams/ediscovery-investigation#teams-metadata). Sin embargo, los registros de datos de llamada para mensajes de canal privado se incluyen en la ubicación de **chats de Teams** , en lugar de en la ubicación de **mensajes de canal privado de Teams** .
 
 1. En la [portal de cumplimiento Microsoft Purview](https://compliance.microsoft.com/), seleccione **Administración** >  del ciclo de vida de datos **Directivas de retención** de **Microsoft 365** > .
 

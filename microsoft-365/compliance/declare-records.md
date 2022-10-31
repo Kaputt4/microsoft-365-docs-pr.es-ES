@@ -18,12 +18,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Para declarar documentos y correos electrónicos como registros, use etiquetas de retención de Microsoft 365 que marquen elementos como un registro o un registro normativo.
-ms.openlocfilehash: 53ff0da40f3c7b8916d3dd70cbb0fc0e4d9aaeb9
-ms.sourcegitcommit: 6df492719fecc2b213d55465dc1cd60ab4627ed6
+ms.openlocfilehash: 4cae7a214cc3d41a62f3630c07ba0ef1da75a285
+ms.sourcegitcommit: 21548843708d80bc861f03ffae41457252492bb6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/04/2022
-ms.locfileid: "68382059"
+ms.lasthandoff: 10/31/2022
+ms.locfileid: "68793288"
 ---
 # <a name="declare-records-by-using-retention-labels"></a>Usar etiquetas de retención para declarar registros
 
@@ -99,7 +99,7 @@ Para elementos de SharePoint:
 Para elementos de Exchange:
 - En **Actividades del buzón de Exchange**, seleccione **Mensaje etiquetado como registro**. Este evento de auditoría es para las etiquetas de retención que marcan los elementos como registros o registros reglamentarios.
 
-Para obtener más información sobre cómo buscar estos eventos, vea [Buscar en el registro de auditoría del Centro de Seguridad y Cumplimiento](search-the-audit-log-in-security-and-compliance.md#file-and-page-activities).
+Para obtener más información sobre cómo buscar estos eventos, consulte [Búsqueda en el registro de auditoría en el portal de cumplimiento](search-the-audit-log-in-security-and-compliance.md#file-and-page-activities).
 
 ## <a name="next-steps"></a>Pasos siguientes
 

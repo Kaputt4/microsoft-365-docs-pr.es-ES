@@ -19,12 +19,12 @@ ms.collection:
 - m365initiative-compliance
 - highpri
 ms.custom: admindeeplinkCOMPLIANCE
-ms.openlocfilehash: 391756321722122c699ce4477d9cf495909d8d07
-ms.sourcegitcommit: a20d30f4e5027f90d8ea4cde95d1d5bacfdd2b5e
+ms.openlocfilehash: 1ba34b942c125ec08cb0372fa09c50e68e4c1a32
+ms.sourcegitcommit: 21548843708d80bc861f03ffae41457252492bb6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/28/2022
-ms.locfileid: "68769125"
+ms.lasthandoff: 10/31/2022
+ms.locfileid: "68793662"
 ---
 # <a name="get-started-with-insider-risk-management"></a>Introducción a la administración de riesgos internos
 
@@ -177,7 +177,7 @@ El conector de RR. HH. de Microsoft 365 es necesario cuando se usan las siguient
 
 - Pérdidas de datos por parte de usuarios de riesgo
 - Robo de datos de usuario de salida
-- Uso indebido de los datos generales de los pacientes
+- Uso indebido de datos de pacientes
 - Infracciones de la directiva de seguridad por parte de los usuarios que abandonan la organización
 - Infracciones de directivas de seguridad por parte de usuarios de riesgo
 
@@ -189,7 +189,7 @@ La administración de riesgos internos admite la importación de datos de usuari
 
 Si configura más de un conector de Healthcare o Epic para su organización, la administración de riesgos internos admite automáticamente señales de eventos y actividades de todos los conectores healthcare y epic. El conector de Microsoft 365 Healthcare o Epic es necesario cuando se usan las siguientes plantillas de directiva:
 
-- Uso indebido de los datos generales de los pacientes
+- Uso indebido de datos de pacientes
 
 Consulte el artículo [Configuración de un conector para importar datos sanitarios](import-healthcare-data.md) o [Configuración de un conector para importar datos de Epic EHR](import-epic-data.md) para obtener instrucciones paso a paso para configurar un conector específico de la atención sanitaria para su organización. Después de configurar un conector, vuelva a estos pasos de configuración.
 
@@ -197,7 +197,7 @@ Consulte el artículo [Configuración de un conector para importar datos sanitar
 
 La administración de riesgos internos admite el uso de directivas DLP para ayudar a identificar la exposición intencionada o accidental de información confidencial a partes no deseadas para alertas DLP de alto nivel de gravedad. Al configurar una directiva de administración de riesgos internos con cualquiera de las plantillas **de pérdida de datos** , tiene la opción de asignar una directiva DLP específica a la directiva para estos tipos de alertas.
 
-Las directivas de pérdida de datos ayudan a identificar a los usuarios para activar la puntuación de riesgos en la administración de riesgos internos para alertas DLP de alta gravedad para información confidencial y son una parte importante de la configuración de la cobertura de administración de riesgos completa en su organización. Para obtener más información sobre la administración de riesgos internos y las consideraciones de integración y planeamiento de directivas DLP, consulte [Directivas de administración de riesgos internos](insider-risk-management-policies.md#general-data-leaks).
+Las directivas de pérdida de datos ayudan a identificar a los usuarios para activar la puntuación de riesgos en la administración de riesgos internos para alertas DLP de alta gravedad para información confidencial y son una parte importante de la configuración de la cobertura de administración de riesgos completa en su organización. Para obtener más información sobre la administración de riesgos internos y las consideraciones de integración y planeamiento de directivas DLP, consulte [Directivas de administración de riesgos internos](insider-risk-management-policies.md#data-leaks).
 
 > [!IMPORTANT]
 > Asegúrese de que ha completado lo siguiente:
@@ -207,7 +207,7 @@ Las directivas de pérdida de datos ayudan a identificar a los usuarios para act
 
 Una directiva DLP es opcional cuando se usan las siguientes plantillas de directiva:
 
-- Filtraciones de datos generales
+- Filtración de datos
 - Filtraciones de datos por parte de usuarios prioritarios
 
 Consulte el artículo [Creación, prueba y optimización de una directiva DLP](create-test-tune-dlp-policy.md) para obtener instrucciones paso a paso para configurar directivas DLP para su organización. Después de configurar una directiva DLP, vuelva a estos pasos de configuración.
@@ -264,7 +264,8 @@ Antes de configurar una directiva, defina los siguientes valores de riesgo inter
     - [Volumen de alertas](insider-risk-management-settings.md#alert-volume)
     - [estados de alerta de Microsoft Defender para punto de conexión](insider-risk-management-settings.md#microsoft-defender-for-endpoint-alert-statuses)
     - [Dominios](insider-risk-management-settings.md#domains)
-    - [Exclusión del tipo de información confidencial](insider-risk-management-settings.md#sensitive-info-types-exclusion)
+    - [Exclusión del tipo de información confidencial](insider-risk-management-settings.md#sensitive-info-types-exclusion-preview)
+    - [Exclusión de clasificadores entrenables](insider-risk-management-settings.md#trainable- classifier-exclusion-preview)
     - [Exclusiones de ruta de archivo](insider-risk-management-settings.md#file-path-exclusions)
     - [Exclusiones de sitios](insider-risk-management-settings.md#site-exclusions)
     - [Exclusión de palabras clave](insider-risk-management-settings.md#keyword-exclusion)
@@ -302,19 +303,20 @@ Las directivas de administración de riesgos internos incluyen usuarios asignado
 
 10. Seleccione **Siguiente** para continuar.
 
-11. Si ha seleccionado **Quiero priorizar el contenido** en el paso anterior, verá las páginas de detalles de *los sitios de SharePoint*, *los tipos de información confidencial*, *las etiquetas de confidencialidad*, *las extensiones de archivo* y la *puntuación*. Use estas páginas de detalles para definir SharePoint, los tipos de información confidencial, las etiquetas de confidencialidad y las extensiones de archivo para priorizar en la directiva. La página *Detalles de puntuación* permite limitar la directiva para asignar solo puntuaciones de riesgo y generar alertas para las actividades especificadas que incluyen contenido de prioridad.
+11. Si ha seleccionado **Quiero priorizar el contenido** en el paso anterior, verá las páginas de detalles de *los sitios de SharePoint*, *los tipos de información confidencial*, *las etiquetas de confidencialidad*, *las extensiones de archivo* y la *puntuación*. Use estas páginas de detalles para definir sharePoint, tipos de información confidencial, etiquetas de confidencialidad, clasificadores entrenables y extensiones de archivo para priorizar en la directiva. La página *Detalles de puntuación* permite limitar la directiva para asignar solo puntuaciones de riesgo y generar alertas para las actividades especificadas que incluyen contenido de prioridad.
 
     - **Sitios de SharePoint**: seleccione **Agregar sitio de SharePoint** y seleccione los sitios de SharePoint a los que tiene acceso y desea priorizar. Por ejemplo, *"group1@contoso.sharepoint.com/sites/group1"*.    
     - **Tipo de información confidencial**: seleccione **Agregar tipo de información confidencial** y seleccione los tipos de confidencialidad que desea priorizar. Por ejemplo, *"Número de cuenta bancaria de EE. UU."* y *"Número de tarjeta de crédito"*.
     - **Etiquetas de confidencialidad**: seleccione **Agregar etiquetas de confidencialidad** y seleccionar las etiquetas que desea priorizar. Por ejemplo, *"Confidencial"* y *"Secreto"*.
+    - **Clasificadores entrenables**: seleccione **Agregar clasificador entrenable** y seleccione los clasificadores que desea priorizar. Por ejemplo, *código fuente*.
     - **Extensiones de archivo**: agregue hasta 50 extensiones de archivo. Puede incluir u omitir '.' con la extensión de archivo. Por ejemplo, *.py* o *py* daría prioridad a los archivos de Python.
-     - **Puntuación**: decida si desea asignar puntuaciones de riesgo a todas las actividades de administración de riesgos detectadas por esta directiva o solo para las actividades que incluyan contenido prioritario. Elija **Obtener alertas para toda la actividad** o **Obtener alertas solo para la actividad que incluye contenido prioritario**.
+    - **Puntuación**: decida si desea asignar puntuaciones de riesgo a todas las actividades de administración de riesgos detectadas por esta directiva o solo para las actividades que incluyan contenido prioritario. Elija **Obtener alertas para toda la actividad** o **Obtener alertas solo para la actividad que incluye contenido prioritario**.
 
     > [!NOTE]
     > Los usuarios que configuran la directiva y seleccionan sitios de SharePoint prioritarios pueden seleccionar sitios de SharePoint a los que tienen permiso de acceso. Si el usuario actual no puede seleccionar sitios de SharePoint en la directiva, otro usuario con los permisos necesarios puede seleccionar los sitios para la directiva más adelante o el usuario actual debe tener acceso a los sitios necesarios.
 
 12. Seleccione **Siguiente** para continuar.
-13. Si ha seleccionado las plantillas *General data leaks* or *Data leaks by priority users (Pérdidas de datos generales o pérdidas de datos por parte de usuarios prioritarios* ), verá las opciones en la página **Desencadenadores de esta directiva** para los eventos de desencadenamiento personalizados y los indicadores de directiva. Tiene la opción de seleccionar una directiva DLP o indicadores para desencadenar eventos que lleven a los usuarios asignados a la directiva en el ámbito para la puntuación de actividad. Si selecciona la opción **User matches a datas prevention (DLP) policy triggering event (Usuario coincide con una opción de evento desencadenante de la directiva de prevención de pérdida de datos [DLP]** ), debe seleccionar una directiva DLP en la lista desplegable directiva DLP para habilitar los indicadores desencadenantes de la directiva DLP para esta directiva de administración de riesgos internos. Si selecciona la opción **User performs an exfiltration activity triggering event (El usuario realiza una actividad de filtración desencadenante de eventos** ), debe seleccionar uno o varios de los indicadores enumerados para el evento de desencadenamiento de directivas.
+13. Si ha seleccionado las plantillas *Pérdidas de datos* o *Pérdidas de datos por parte de usuarios prioritarios* , verá opciones en la página **Desencadenadores de esta directiva** para eventos de activación personalizados e indicadores de directiva. Tiene la opción de seleccionar una directiva DLP o indicadores para desencadenar eventos que lleven a los usuarios asignados a la directiva en el ámbito para la puntuación de actividad. Si selecciona la opción **User matches a datas prevention (DLP) policy triggering event (Usuario coincide con una opción de evento desencadenante de la directiva de prevención de pérdida de datos [DLP]** ), debe seleccionar una directiva DLP en la lista desplegable directiva DLP para habilitar los indicadores desencadenantes de la directiva DLP para esta directiva de administración de riesgos internos. Si selecciona la opción **User performs an exfiltration activity triggering event (El usuario realiza una actividad de filtración desencadenante de eventos** ), debe seleccionar uno o varios de los indicadores enumerados para el evento de desencadenamiento de directivas.
 
     > [!IMPORTANT]
     > Si no puede seleccionar un indicador o una secuencia enumerados, es porque no están habilitados actualmente para su organización. Para que estén disponibles para seleccionar y asignar a la directiva, seleccione el símbolo del sistema **Activar indicadores** .
@@ -323,7 +325,7 @@ Las directivas de administración de riesgos internos incluyen usuarios asignado
 
 14. Si ha seleccionado las *fugas de datos por parte de usuarios de riesgo* o *infracciones de directivas de seguridad por plantillas de usuarios de riesgo* , verá las opciones en la página **Desencadenadores de esta directiva** para la integración con el cumplimiento de la comunicación y los eventos del conector de datos de RR. HH. Tiene la opción de asignar puntuaciones de riesgo cuando los usuarios envíen mensajes que contengan un lenguaje potencialmente amenazante, hostigador o discriminatorio, o para que los usuarios entren en el ámbito de la directiva después de que se notifiquen eventos de usuario de riesgo en el sistema de RR. HH. Si selecciona la opción **Desencadenadores de riesgo del cumplimiento de comunicaciones (versión preliminar),** puede aceptar la directiva de cumplimiento de comunicaciones predeterminada (creada automáticamente), elegir un ámbito de directiva creado anteriormente para este desencadenador o crear otra directiva con ámbito. Si selecciona **eventos del conector de datos de RR. HH**., debe configurar un conector de datos de RR. HH. para su organización.
 15. Seleccione **Siguiente** para continuar.
-16. Si ha seleccionado las plantillas *General data leaks* or *Data leaks by priority users (Pérdidas de datos generales o pérdidas de datos por parte de usuarios prioritarios* ) y ha seleccionado **el usuario realiza una actividad de filtración e indicadores asociados**, puede elegir umbrales personalizados o predeterminados para el indicador que desencadena los eventos que ha seleccionado. Elija **Usar umbrales predeterminados (recomendados)** o **Usar umbrales personalizados para los eventos desencadenantes**.
+16. Si ha seleccionado las plantillas *Pérdidas de datos* o *Pérdidas de datos por parte de usuarios prioritarios* y ha seleccionado El **usuario realiza una actividad de filtración e indicadores asociados**, puede elegir umbrales personalizados o predeterminados para el indicador que desencadena los eventos que ha seleccionado. Elija **Usar umbrales predeterminados (recomendados)** o **Usar umbrales personalizados para los eventos desencadenantes**.
 17. Seleccione **Siguiente** para continuar.
 18. Si ha seleccionado **Usar umbrales personalizados para los eventos desencadenantes**, para cada indicador de evento desencadenante que haya seleccionado en el paso 13, elija el nivel adecuado para generar el nivel deseado de alertas de actividad. Puede usar los umbrales recomendados, umbrales personalizados o umbrales basados en actividades anómalas (para determinados indicadores) por encima de la norma diaria para los usuarios.
 19. Seleccione **Siguiente** para continuar.
