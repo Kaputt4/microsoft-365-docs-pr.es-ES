@@ -1,5 +1,5 @@
 ---
-title: Integración de LTI de Microsoft OneDrive con Schoology LMS
+title: Integración de LTI de Microsoft OneDrive con Schoology Learning
 ms.author: danismith
 author: DaniEASmith
 manager: serdars
@@ -11,21 +11,21 @@ ms.collection:
 - M365-modern-desktop
 - m365initiative-edu
 ms.localizationpriority: medium
-description: Crear y calificar asignaciones, compilar y mantener contenido del curso, y colaborar en archivos en tiempo real con la nueva aplicación de interoperabilidad de Herramientas de aprendizaje de Microsoft OneDrive para Schoology LMS.
-ms.openlocfilehash: 20aa9c719f029ebec44f8d70e7734c28b91f030d
-ms.sourcegitcommit: 176bbd29c92e1c0812e8bcd1e1e4938a3e1d7331
+description: Crear y calificar asignaciones, compilar y mantener contenido del curso, y colaborar en archivos en tiempo real con la nueva aplicación de interoperabilidad de herramientas de aprendizaje de Microsoft OneDrive para PowerSchool Unified Classroom® Schoology Learning.
+ms.openlocfilehash: ab3c732127cc614d0540974591e8f2847fc0d26c
+ms.sourcegitcommit: 0c72639cc3dc74667a6b14343d303f318e70d457
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/05/2022
-ms.locfileid: "68473069"
+ms.lasthandoff: 11/01/2022
+ms.locfileid: "68804716"
 ---
-# <a name="integrate-microsoft-onedrive-lti-with-the-schoology-lms"></a>Integración de LTI de Microsoft OneDrive con Schoology LMS
+# <a name="integrate-microsoft-onedrive-lti-with-schoology-learning"></a>Integración de LTI de Microsoft OneDrive con Schoology Learning
 
-En esta guía se proporcionan los pasos de los administradores de TI para registrar la aplicación LTI de OneDrive para Schoology LMS.
+En esta guía se proporcionan los pasos de los administradores de TI para registrar la aplicación LTI de OneDrive para PowerSchool Unified Classroom® Schoology Learning.
 
 Para obtener información general sobre Microsoft LTI, consulte [Integración de productos de Microsoft con el sistema de administración de aprendizaje (LMS).](index.md)
 
-La persona que realiza esta integración debe ser administrador de Schoology y administrador del inquilino de Microsoft 365.
+La persona que realiza esta integración debe ser administrador de Schoology Learning y administrador del inquilino de Microsoft 365.
 
 ## <a name="recommended-browser-settings"></a>Configuración recomendada del explorador
 
@@ -44,13 +44,13 @@ La persona que realiza esta integración debe ser administrador de Schoology y a
     1. Si este paso no se completa correctamente, el siguiente paso le dará un error y es posible que no pueda realizar este paso durante una hora una vez que haya recibido el error. Si se produce un error en el consentimiento, asegúrese de que ha iniciado sesión como un Administración global y repita este paso.
 1. Seleccione el botón **Crear nuevo inquilino de LTI** .
 1. En la lista **Plataforma de consumidores de LTI** , seleccione **Schoology**.
-1. En el campo **Url base de Schoology** , escriba la dirección URL base de Schoology, como `https://testschool.schoology.com`.
+1. En el campo **Dirección URL base de Schoology** , escriba la dirección URL base de Schoology Learning, como `https://testschool.schoology.com`.
 1. Seleccione el botón **Siguiente**. Se cargará la página **Registrar aplicación LTI 1.3** .
 
-## <a name="deploy-the-onedrive-lti-app-in-schoology"></a>Implementación de la aplicación LTI de OneDrive en Schoology
+## <a name="deploy-the-onedrive-lti-app-in-schoology-learning"></a>Implementación de la aplicación LTI de OneDrive en Schoology Learning
 
-1. Inicie sesión en la instancia de Schoology como administrador con acceso para instalar y configurar aplicaciones.
-1. Acceda a la aplicación **Microsoft OneDrive** en el [**Centro de aplicaciones**](https://app.schoology.com/apps) abriendo este vínculo directo [Microsoft OneDrive en Schoology](https://app.schoology.com/apps/profile/5910037138).
+1. Inicie sesión en la instancia de Schoology Learning como administrador con acceso para instalar y configurar aplicaciones.
+1. Acceda a la aplicación **Microsoft OneDrive** en el [**Centro de aplicaciones**](https://app.schoology.com/apps) abriendo este vínculo directo [Microsoft OneDrive en Schoology Learning](https://app.schoology.com/apps/profile/5910037138).
 1. Seleccione el botón **Instalar aplicación LTI 1.3** para comenzar el proceso de instalación.
 1. Seleccione el botón **Acepto** .
 1. Se le pedirá que comparta la información necesaria con la aplicación y confirme el acceso a *los servicios de LTI Advantage*, como **vínculos profundos**, **nombres y roles**, y **asignaciones y calificaciones**. Seleccione el botón **Continuar** .

@@ -20,12 +20,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Establezca los roles y permisos de usuario del Administrador de cumplimiento de Microsoft Purview y configure pruebas automatizadas de acciones. Administre el historial de usuarios y filtre la vista del panel.
-ms.openlocfilehash: 6787da712db94c0048355f4bd59d401194e520c2
-ms.sourcegitcommit: 181a0aff54842dcbafd834647c6e9ee47304d10f
+ms.openlocfilehash: 22c23c64148f9a95b26b90e1b9097218413158ec
+ms.sourcegitcommit: b439d097e55bba35d9328447d993bbcac7a178a9
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/27/2022
-ms.locfileid: "68730081"
+ms.lasthandoff: 11/01/2022
+ms.locfileid: "68802293"
 ---
 # <a name="get-started-with-compliance-manager"></a>Introducción al Administrador de cumplimiento
 
@@ -351,7 +351,7 @@ Hay dos maneras de realizar acciones desde esta pantalla:
 
 1. En la fila de la solución prevista, en la columna **Acciones restantes** , seleccione el número con hipervínculo. Verá una vista filtrada de la pantalla de acciones de mejora que muestra las acciones de mejora no probadas para esa solución.
 
-2. En la fila de la solución prevista, en la columna **Abrir solución** , seleccione **Abrir**. Verá la solución o ubicación en los centros de seguridad y cumplimiento de Microsoft 365 y Office 365, donde puede realizar la acción recomendada.
+2. En la fila de la solución prevista, en la columna **Abrir solución** , seleccione **Abrir**. Llegará a la ubicación de la solución en el portal de cumplimiento Microsoft Purview, Microsoft 365 Defender portal o su centro de administración, donde puede realizar la acción recomendada.
 
 ## <a name="assessments-page"></a>Página Evaluaciones
 

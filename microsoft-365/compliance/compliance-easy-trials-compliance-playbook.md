@@ -18,12 +18,12 @@ search.appverid:
 - MET150
 description: Guía del usuario de prueba de soluciones de Microsoft Purview.
 ms.custom: trial-playbook
-ms.openlocfilehash: 50be6466441a878acc3d93e75f75c701e894f224
-ms.sourcegitcommit: 181a0aff54842dcbafd834647c6e9ee47304d10f
+ms.openlocfilehash: b34caf007a9710dd351ec4a7e5ed456b5b19d840
+ms.sourcegitcommit: b439d097e55bba35d9328447d993bbcac7a178a9
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/27/2022
-ms.locfileid: "68719148"
+ms.lasthandoff: 11/01/2022
+ms.locfileid: "68801988"
 ---
 # <a name="trial-user-guide-microsoft-purview-solutions"></a>Guía del usuario de prueba: Soluciones de Microsoft Purview
 
@@ -414,7 +414,7 @@ Las directivas de retención de registros de auditoría forman parte de las nuev
 1. Antes de crear una directiva de retención de registros de auditoría: [aspectos clave que debe conocer](audit-log-retention-policies.md#before-you-create-an-audit-log-retention-policy) antes de crear la directiva.
 1. [Cree una directiva de retención de registros de auditoría](audit-log-retention-policies.md#create-an-audit-log-retention-policy).
 1. [Manage audit log retention policies in the Microsoft Purview compliance portal](audit-log-retention-policies.md#manage-audit-log-retention-policies-in-the-compliance-portal) - Audit log retention policies are listed on the Audit retention policies tab (also called the dashboard). You can use the dashboard to view, edit, and delete audit retention policies.
-1. [Creación y administración de directivas de retención de registros de auditoría en PowerShell](audit-log-retention-policies.md#create-and-manage-audit-log-retention-policies-in-powershell) : también puede usar PowerShell del Centro de cumplimiento de seguridad & para crear y administrar directivas de retención de registros de auditoría. Una razón para usar PowerShell es crear una directiva para un tipo de registro o actividad que no está disponible en la interfaz de usuario.
+1. [Creación y administración de directivas de retención de registros de auditoría en PowerShell](audit-log-retention-policies.md#create-and-manage-audit-log-retention-policies-in-powershell) : también puede usar PowerShell de cumplimiento de seguridad & para crear y administrar directivas de retención de registros de auditoría. Una razón para usar PowerShell es crear una directiva para un tipo de registro o actividad que no está disponible en la interfaz de usuario.
 
 ## <a name="additional-trials-and-add-ons"></a>Pruebas y complementos adicionales
 

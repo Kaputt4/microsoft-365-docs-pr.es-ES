@@ -17,12 +17,12 @@ ms.collection:
 - m365-security
 - tier1
 ms.topic: conceptual
-ms.openlocfilehash: bdb9bf7721b86443f38ea9f1e49ba82ae9c3041d
-ms.sourcegitcommit: 4dfb5de8c61847b8ddd10410ad20d34860eed8f6
+ms.openlocfilehash: da0de6c9ecae13aab10f7f6e24513e2bb39f519f
+ms.sourcegitcommit: 0c72639cc3dc74667a6b14343d303f318e70d457
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/28/2022
-ms.locfileid: "68114173"
+ms.lasthandoff: 11/01/2022
+ms.locfileid: "68803647"
 ---
 # <a name="microsoft-defender-for-business-preview-features"></a>características de Microsoft Defender para Empresas versión preliminar
 
@@ -59,4 +59,7 @@ Active la configuración de la experiencia de la versión preliminar para estar 
 
 ## <a name="see-also"></a>Vea también
 
-[Obtención de servidores Microsoft Defender para Empresas (versión preliminar)](get-defender-business-servers.md)
+- [Obtener Microsoft Defender para Empresas](get-defender-business.md)
+- [Obtención de servidores Microsoft Defender para Empresas](get-defender-business-servers.md)
+- [Guía del usuario de prueba: Microsoft Defender para Empresas](trial-playbook-defender-business.md)
+- [Visite el portal de Microsoft 365 Defender](mdb-get-started.md)

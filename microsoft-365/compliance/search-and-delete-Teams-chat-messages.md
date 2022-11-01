@@ -1,5 +1,6 @@
 ---
 title: Búsqueda y eliminación de mensajes de chat en Teams
+description: Use eDiscovery (Premium) y el Explorador de Microsoft Graph para buscar y purgar mensajes de chat en Microsoft Teams y responder a incidentes de desbordamiento de datos en Teams.
 f1.keywords:
 - NOCSH
 ms.author: robmazz
@@ -10,22 +11,24 @@ ms.topic: article
 ms.service: O365-seccomp
 ms.localizationpriority: medium
 ms.collection:
-- M365-security-compliance
+- tier1
+- purview-compliance
+- ediscovery
 search.appverid:
 - MOE150
 - MET150
-ms.assetid: 3526fd06-b45f-445b-aed4-5ebd37b3762a
-description: Use eDiscovery (Premium) y el Explorador de Microsoft Graph para buscar y purgar mensajes de chat en Microsoft Teams y responder a incidentes de desbordamiento de datos en Teams.
-ms.openlocfilehash: 0c7d87743f254018db3d9a9a96e3261b529428f4
-ms.sourcegitcommit: 433f5b448a0149fcf462996bc5c9b45d17bd46c6
+ms.openlocfilehash: f559e1303e27c55adecf4e3dee80fc3d39c0eb73
+ms.sourcegitcommit: b439d097e55bba35d9328447d993bbcac7a178a9
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/20/2022
-ms.locfileid: "67822493"
+ms.lasthandoff: 11/01/2022
+ms.locfileid: "68802681"
 ---
 # <a name="search-and-purge-chat-messages-in-teams-preview"></a>Buscar y purgar mensajes de chat en Teams (versión preliminar)
 
 Puede usar eDiscovery (Premium) y el Explorador de Microsoft Graph para buscar y eliminar mensajes de chat en Microsoft Teams. Esto puede ayudarle a encontrar y quitar información confidencial o contenido inadecuado. Este flujo de trabajo de búsqueda y purga también le ayudará a responder a un incidente de derrame de datos, cuando el contenido que contiene información confidencial o malintencionada se publica a través de mensajes de chat de Teams.
+
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
 
 ## <a name="before-you-search-and-purge-chat-messages"></a>Antes de buscar y purgar mensajes de chat
 
@@ -109,9 +112,9 @@ Para obtener información sobre el uso del Explorador de Graph, consulte [Uso de
 
 1. Vaya e <https://developer.microsoft.com/graph/graph-explorer> inicie sesión en el Explorador de Graph con una cuenta que tenga asignado el rol **Buscar y purgar** en el portal de cumplimiento Microsoft Purview.
 
-2. Ejecute la siguiente solicitud GET para recuperar el identificador del caso de eDiscovery (Premium). Use el valor `https://graph.microsoft.com/beta/compliance/ediscovery/cases` en la barra de direcciones de la consulta de solicitud. Asegúrese de seleccionar **v1.0** en la lista desplegable Versión de API.
+2. Ejecute la siguiente solicitud GET para recuperar el identificador del caso de eDiscovery (Premium). Use el valor `https://graph.microsoft.com/beta/security/ediscovery/cases` en la barra de direcciones de la consulta de solicitud. Asegúrese de seleccionar **v1.0** en la lista desplegable Versión de API.
 
-   ![Solicitud GET para el identificador de caso.](..\media\GraphGetRequestForCaseId.png)
+   ![Solicitud GET para el identificador de caso.](..\media\ediscovery-GraphGetRequestForCaseId.png)
 
    Esta solicitud devuelve información sobre todos los casos de la organización en la pestaña **Vista previa de** respuesta.
 
@@ -126,9 +129,9 @@ Para obtener información sobre el uso del Explorador de Graph, consulte [Uso de
 
 ### <a name="get-the-collection-id"></a>Obtención del identificador de la colección
 
-1. En el Explorador de Graph, ejecute la siguiente solicitud GET para recuperar el identificador de la colección que creó en el paso 2 y contiene los elementos que desea purgar. Use el valor `https://graph.microsoft.com/beta/compliance/ediscovery/cases('caseId')/sourceCollections` de la barra de direcciones de la consulta de solicitud, donde CaseId es el identificador que obtuvo en el procedimiento anterior. Asegúrese de rodear el identificador de caso con paréntesis y comillas simples.
+1. En el Explorador de Graph, ejecute la siguiente solicitud GET para recuperar el identificador de la colección que creó en el paso 2 y contiene los elementos que desea purgar. Use el valor `https://graph.microsoft.com/beta/security/ediscovery/cases('caseId')/sourceCollections` de la barra de direcciones de la consulta de solicitud, donde CaseId es el identificador que obtuvo en el procedimiento anterior. Asegúrese de rodear el identificador de caso con paréntesis y comillas simples.
 
-   ![Solicitud GET para el identificador de colección.](..\media\GraphGetRequestForCollectionId.png)
+   ![Solicitud GET para el identificador de colección.](..\media\ediscovery-GraphGetRequestForCollectionId.png)
 
    Esta solicitud devuelve información sobre todas las colecciones en el caso en la pestaña **Vista previa de** respuesta.
 
@@ -145,13 +148,13 @@ Para obtener información sobre el uso del Explorador de Graph, consulte [Uso de
 
 ### <a name="purge-the-chat-messages"></a>Purgar los mensajes de chat
 
-1. En el Explorador de Graph, ejecute la siguiente solicitud POST para purgar los elementos devueltos por la colección que creó en el paso 2. Use el valor `https://graph.microsoft.com/beta/compliance/ediscovery/cases('caseId')/sourceCollections('collectionId')/purgeData` de la barra de direcciones de la consulta de solicitud, donde caseId y collectionId son los identificadores que obtuvo en los procedimientos anteriores. Asegúrese de rodear los valores id con paréntesis y comillas simples.
+1. En el Explorador de Graph, ejecute la siguiente solicitud POST para purgar los elementos devueltos por la colección que creó en el paso 2. Use el valor `https://graph.microsoft.com/beta/security/ediscovery/cases('caseId')/sourceCollections('collectionId')/purgeData` de la barra de direcciones de la consulta de solicitud, donde caseId y collectionId son los identificadores que obtuvo en los procedimientos anteriores. Asegúrese de rodear los valores id con paréntesis y comillas simples.
 
-      ![Solicitud POST para eliminar elementos devueltos por la colección.](..\media\GraphPOSTRequestToPurgeItems.png)
+      ![Solicitud POST para eliminar elementos devueltos por la colección.](..\media\ediscovery-GraphPOSTRequestToPurgeItems.png)
 
    Si la solicitud POST se realiza correctamente, se muestra un código de respuesta HTTP en un banner verde que indica que se ha aceptado la solicitud.
 
-   ![Respuesta para la solicitud de purga.](..\media\GraphResponseForPurge.png)
+   ![Respuesta para la solicitud de purga.](..\media\ediscovery-GraphResponseForPurge.png)
 
   Para obtener más información sobre purgeData, vea [sourceCollection: purgeData](/graph/api/ediscovery-sourcecollection-purgedata).
 

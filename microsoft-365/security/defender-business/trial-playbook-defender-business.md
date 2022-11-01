@@ -19,12 +19,12 @@ search.appverid:
 - MET150
 description: Aprovechar al máximo la prueba de Defender para empresas con esta guía. Prepárese rápidamente y comience a usar sus nuevas funcionalidades de seguridad.
 ms.custom: trial-playbook
-ms.openlocfilehash: 290c5eb2f6ced1816a7955fc8528a3c6cadcccc2
-ms.sourcegitcommit: 9f5cf8cf8a2e25cfd07b23b7f6d7f9d138a9cd16
+ms.openlocfilehash: edcc5cebcce868cd11806d0a14cc33dd87f6f4fa
+ms.sourcegitcommit: 0c72639cc3dc74667a6b14343d303f318e70d457
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/07/2022
-ms.locfileid: "68501540"
+ms.lasthandoff: 11/01/2022
+ms.locfileid: "68804123"
 ---
 # <a name="trial-user-guide-microsoft-defender-for-business"></a>Guía del usuario de prueba: Microsoft Defender para Empresas
 
@@ -84,7 +84,7 @@ Defender para Empresas fue diseñado para ahorrar tiempo y esfuerzo a las peque�
    > [!NOTE]
    > Cuando se usa el asistente de configuración, el sistema detecta si tiene dispositivos Windows que ya estén inscritos en Intune. Se le preguntará si quiere usar la incorporación automática para todos los dispositivos Windows o solo para algunos de ellos. Puede incorporar todos los dispositivos Windows a la vez o seleccionar dispositivos específicos con los cuales empezar y, a continuación, agregar más dispositivos después. [Más información sobre la incorporación automática](mdb-use-wizard.md#what-is-automatic-onboarding).
 
-   Para incorporar otros dispositivos, consulte el [paso 4](#step-4-set-up-and-configure-defender-for-business).
+   Para incorporar otros dispositivos, consulte [Paso 4: Configuración y configuración de Defender para empresas](#step-4-set-up-and-configure-defender-for-business).
 
 4. **[Ver y editar directivas de seguridad](mdb-configure-security-settings.md)**. Defender para Empresas incluye directivas de seguridad predeterminadas para una protección de próxima generación y protección de firewall que se pueden aplicar a los dispositivos de la empresa. Estas directivas de seguridad preconfiguradas usan la configuración recomendada, por lo que estará protegido apenas incorpore los dispositivos a Defender para Empresas. Y también puede editar las directivas o crear otras nuevas.
 

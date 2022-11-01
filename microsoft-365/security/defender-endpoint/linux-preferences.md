@@ -19,12 +19,12 @@ ms.collection:
 ms.topic: conceptual
 ms.subservice: mde
 search.appverid: met150
-ms.openlocfilehash: dd14c5ff33f53701d39a47438bd57ab01bc8c6c2
-ms.sourcegitcommit: 1f4c51d022d1cfb6c194bf0f0af9c2841c781d68
+ms.openlocfilehash: 8a04c1720585d8b17c95a0bd4e02ace62bcd1f26
+ms.sourcegitcommit: 0c72639cc3dc74667a6b14343d303f318e70d457
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/14/2022
-ms.locfileid: "68573469"
+ms.lasthandoff: 11/01/2022
+ms.locfileid: "68803971"
 ---
 # <a name="set-preferences-for-microsoft-defender-for-endpoint-on-linux"></a>Establecer preferencias para Microsoft Defender para punto de conexión en Linux
 
@@ -419,6 +419,9 @@ El siguiente perfil de configuración:
 ## <a name="full-configuration-profile-example"></a>Ejemplo de perfil de configuración completa
 
 El siguiente perfil de configuración contiene entradas para todas las opciones descritas en este documento y se puede usar para escenarios más avanzados en los que quiera tener más control sobre el producto.
+  
+> [!NOTE]
+> No es posible controlar todas las Microsoft Defender para punto de conexión comunicación con solo una configuración de proxy en este JSON.
 
 ### <a name="full-profile"></a>Perfil completo
 
@@ -538,6 +541,7 @@ Para comprobar que /etc/opt/microsoft/mdatp/managed/mdatp_managed.json funciona 
 
 > [!NOTE]
 > Para que el archivo mdatp_managed.json surta efecto, no es necesario reiniciar el `mdatp` demonio.
+  
 
 ## <a name="configuration-profile-deployment"></a>Implementación del perfil de configuración
 

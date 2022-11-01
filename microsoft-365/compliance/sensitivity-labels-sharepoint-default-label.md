@@ -10,18 +10,19 @@ ms.topic: article
 ms.service: O365-seccomp
 ms.localizationpriority: medium
 ms.collection:
-- M365-security-compliance
+- purview-compliance
+- tier1
 - SPO_Content
 search.appverid:
 - MOE150
 - MET150
 description: Configure una etiqueta de confidencialidad predeterminada para una biblioteca de documentos de SharePoint para documentos nuevos y sin etiquetar.
-ms.openlocfilehash: 6f3146f8ce59f88eafc311cd9bf382f06103eb94
-ms.sourcegitcommit: b1ed6470645455c2f1fcf467450debc622c40147
+ms.openlocfilehash: cfa0eda2c3c30502c3d190976cf8e5418e6233d5
+ms.sourcegitcommit: b439d097e55bba35d9328447d993bbcac7a178a9
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/15/2022
-ms.locfileid: "67710771"
+ms.lasthandoff: 11/01/2022
+ms.locfileid: "68803232"
 ---
 # <a name="configure-a-default-sensitivity-label-for-a-sharepoint-document-library"></a>Configurar una etiqueta de confidencialidad predeterminada para una biblioteca de documentos de SharePoint
 
@@ -46,6 +47,8 @@ Cuando se usa Office en la Web para crear o editar un archivo, la etiqueta de co
 - Carga de archivos: la etiqueta puede tardar unos minutos en aplicarse.
 - Aplicaciones Microsoft 365: la etiqueta se aplica después de cerrar la aplicación.
 
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
+
 ## <a name="will-an-existing-label-be-overridden"></a>¿Se invalidará una etiqueta ya existente?
 
 Resumen de los resultados:
@@ -60,7 +63,9 @@ Resumen de los resultados:
 
 ## <a name="requirements"></a>Requisitos
 
-- Tiene [etiquetas de confidencialidad habilitadas para los archivos de Office en SharePoint y OneDrive](sensitivity-labels-sharepoint-onedrive-files.md).
+- Ha [creado y publicado](create-sensitivity-labels.md) etiquetas de confidencialidad, y se publican para los usuarios que seleccionarán una etiqueta de confidencialidad predeterminada para una biblioteca de documentos de SharePoint.
+
+- Ha [habilitado etiquetas de confidencialidad para archivos de Office en SharePoint y OneDrive](sensitivity-labels-sharepoint-onedrive-files.md). Para comprobar este estado, puede ejecutar desde `Get-SPOTenant -EnableAIPIntegration` el [Shell de administración de SharePoint Online](/powershell/sharepoint/sharepoint-online/connect-sharepoint-online) para confirmar que el valor está establecido en true.
 
 - [SharePoint Information Rights Management (IRM) no está habilitado para la biblioteca](set-up-irm-in-sp-admin-center.md#irm-enable-sharepoint-document-libraries-and-lists). Esta tecnología anterior no es compatible con el uso de una etiqueta de confidencialidad predeterminada para una biblioteca de documentos de SharePoint. Si una biblioteca está habilitada para IRM, no podrá seleccionar una etiqueta de confidencialidad predeterminada.
 
@@ -110,7 +115,7 @@ Para auditar la configuración de esta característica, use el evento de auditor
 
 Para asignar GUID de etiqueta de confidencialidad a nombres de etiqueta, use el cmdlet [Get-Label](/powershell/module/exchange/get-label) :
 
-1. En primer lugar, [conéctese a PowerShell del Centro de seguridad y cumplimiento de Office 365](/powershell/exchange/office-365-scc/connect-to-scc-powershell/connect-to-scc-powershell).
+1. En primer lugar, [conéctese al PowerShell de Seguridad y cumplimiento](/powershell/exchange/office-365-scc/connect-to-scc-powershell/connect-to-scc-powershell)
 
 2. A continuación, ejecute el siguiente comando, donde especifique el GUID:
 

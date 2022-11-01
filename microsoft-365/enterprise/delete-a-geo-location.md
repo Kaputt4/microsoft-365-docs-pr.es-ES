@@ -6,7 +6,7 @@ author: MikePlumleyMSFT
 manager: pamgreen
 audience: ITPro
 ms.topic: article
-ms.service: o365-solutions
+ms.service: microsoft-365-enterprise
 f1.keywords:
 - NOCSH
 ms.custom:
@@ -15,29 +15,29 @@ ms.custom:
 ms.collection: Strat_SP_gtc
 ms.localizationpriority: medium
 description: Obtenga más información sobre cómo eliminar una ubicación de satélite en Microsoft 365 Multi-Geo. Cuando se elimina una ubicación satélite, todos los datos de usuario también se eliminan permanentemente.
-ms.openlocfilehash: 37bb98637c2a66f5b140f4669a6158e59b08fdcc
-ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
+ms.openlocfilehash: 4a5ff35d98f0a0b314e38752c5684eec7189b66d
+ms.sourcegitcommit: 0c72639cc3dc74667a6b14343d303f318e70d457
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/08/2022
-ms.locfileid: "63319969"
+ms.lasthandoff: 11/01/2022
+ms.locfileid: "68805088"
 ---
-# <a name="delete-a-satellite-location-in-microsoft-365-multi-geo"></a>Eliminar una ubicación de satélite en Microsoft 365 Multi-Geo
+# <a name="delete-a-_satellite-geography_-location-in-microsoft-365-multi-geo"></a>Eliminación de una ubicación _geográfica por satélite_ en Microsoft 365 Multi-Geo
 
-Si ya no necesita una ubicación satélite, puede eliminarla del espacio empresarial del centro <a href="https://go.microsoft.com/fwlink/?linkid=2185219" target="_blank">SharePoint administración</a>.
+Si ya no necesita una ubicación _de Geografía satélite_ , puede eliminarla del _inquilino_ desde el Centro de <a href="https://go.microsoft.com/fwlink/?linkid=2185219" target="_blank">administración de SharePoint</a>.
 
 > [!WARNING]
-> Se eliminarán permanentemente todos los datos de usuario en la ubicación de satélite. Esto incluye todo el contenido de OneDrive para la Empresa, los sitios de SharePoint y los buzones de Exchange, incluidos los buzones de grupo de Microsoft 365. Antes de eliminar la ubicación de satélite, debe migrar los datos a otra ubicación de satélite o a la ubicación central. No se puede deshacer esta acción.
+> Todos los datos de usuario de la ubicación _geografía satélite_ se eliminarán permanentemente. Esto incluye todo el contenido de OneDrive para la Empresa, los sitios de SharePoint y los buzones de Exchange, incluidos los buzones de grupo de Microsoft 365. Debe migrar los datos a otra ubicación _de Geografía satélite_ o a la ubicación _Geografía aprovisionada principal_ antes de eliminar la ubicación _Geografía satélite_ . No se puede deshacer esta acción.
 
-Solo los administradores globales pueden eliminar ubicaciones de satélite.
+Solo los administradores globales pueden eliminar ubicaciones _de geografía satélite_ .
 
-![Captura de pantalla del centro de administración multigeo que muestra eliminar la interfaz de usuario de ubicación geográfica.](../media/multi-geo-delete-satellite-location.png)
+![Captura de pantalla del centro de administración multigeográfica que muestra la interfaz de usuario de eliminación de ubicación geográfica.](../media/multi-geo-delete-satellite-location.png)
 
-Para eliminar una ubicación de satélite
+Para eliminar una ubicación _de geografía satélite_
 
-1. Abra el SharePoint de administración y vaya a la <a href="https://go.microsoft.com/fwlink/?linkid=2185076" target="_blank">**pestaña Ubicaciones geográficas**</a>.
+1. Abra el Centro de administración de SharePoint y vaya a la <a href="https://go.microsoft.com/fwlink/?linkid=2185076" target="_blank">pestaña **Ubicaciones geográficas**</a>.
 
-1. En el mapa, seleccione la ubicación geográfica que desea eliminar.
+1. En el mapa, seleccione la ubicación _geografía satélite_ que desea eliminar.
 
 1. Seleccione **Eliminar ubicación**.
 

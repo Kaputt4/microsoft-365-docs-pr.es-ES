@@ -16,12 +16,12 @@ ms.custom:
 - admindeeplinkDEFENDER
 - intro-get-started
 ms.localizationpriority: medium
-ms.openlocfilehash: 24438848ab8437b769dd99294079fcfec84eaa3f
-ms.sourcegitcommit: 181a0aff54842dcbafd834647c6e9ee47304d10f
+ms.openlocfilehash: 2b779ebaa99daf064cfe64eadb710bdbb4a6ad55
+ms.sourcegitcommit: b439d097e55bba35d9328447d993bbcac7a178a9
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/27/2022
-ms.locfileid: "68720028"
+ms.lasthandoff: 11/01/2022
+ms.locfileid: "68803494"
 ---
 # <a name="quick-tasks-for-getting-started-with-compliance-in-microsoft-purview"></a>Tareas rápidas para empezar a trabajar con el cumplimiento en Microsoft Purview
 
@@ -71,7 +71,7 @@ Microsoft proporciona varias directivas de alertas integradas que ayudan a ident
 
 Use las herramientas de directiva de alertas y panel de alertas para crear directivas de alertas personalizadas y ver las alertas generadas cuando los usuarios realizan actividades que coinciden con las condiciones de la directiva. Algunos ejemplos podrían ser el uso de directivas de alerta para realizar un seguimiento de las actividades de usuario y administrador que afectan a los requisitos de cumplimiento, los permisos y los incidentes de pérdida de datos en la organización.
 
-Para obtener instrucciones paso a paso para crear directivas de alerta personalizadas, consulte [Directivas de alerta en el Centro de seguridad y cumplimiento](/microsoft-365/compliance/alert-policies).
+Para obtener instrucciones paso a paso para crear directivas de alerta personalizadas, consulte [Directivas de alerta en Microsoft 365](/microsoft-365/compliance/alert-policies).
 
 ## <a name="task-5-classify-and-protect-sensitive-data"></a>Tarea 5: Clasificación y protección de datos confidenciales
 

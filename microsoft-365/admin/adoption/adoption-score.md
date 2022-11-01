@@ -23,14 +23,14 @@ search.appverid:
 - MET150
 - MOE150
 description: Obtenga información sobre cómo La puntuación de adopción de Microsoft refleja las medidas de la experiencia de las personas y la tecnología y la comparación con organizaciones de tamaño similar.
-ms.openlocfilehash: 46af48a0cbb8b686657a40502a8ea1e5206baa53
-ms.sourcegitcommit: 181a0aff54842dcbafd834647c6e9ee47304d10f
+ms.openlocfilehash: 410da81d1b10740ace40bd361768202fd6743770
+ms.sourcegitcommit: 0c72639cc3dc74667a6b14343d303f318e70d457
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/27/2022
-ms.locfileid: "68721238"
+ms.lasthandoff: 11/01/2022
+ms.locfileid: "68804584"
 ---
-# <a name="microsoft-adoption-score"></a>Puntuación de adopción de Microsoft 
+# <a name="microsoft-adoption-score"></a>Puntuación de adopción de Microsoft
 
 La puntuación de adopción admite el recorrido hacia la transformación digital con información sobre cómo su organización usa Microsoft 365 y las experiencias tecnológicas que la admiten. La puntuación de su organización refleja las mediciones la experiencia tecnológica y de los usuarios, y se puede comparar con los puntos de referencia de empresas de igual tamaño que la suya.
 
@@ -53,7 +53,7 @@ Proporcionamos métricas, información y recomendaciones en dos áreas:
 > [!NOTE]
 > Todas las conclusiones se calculan mediante datos en el nivel organizativo, no en el nivel individual.
 
-## <a name="how-to-turn-on-adoption-score"></a>Cómo activar la puntuación de adopción
+## <a name="how-to-enable-adoption-score"></a>Habilitación de la puntuación de adopción
 
 Para habilitar la puntuación de adopción:
 

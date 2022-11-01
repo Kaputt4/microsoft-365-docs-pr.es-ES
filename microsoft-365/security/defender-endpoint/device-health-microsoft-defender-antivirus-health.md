@@ -20,12 +20,12 @@ ms.collection:
 ms.topic: conceptual
 ms.subservice: mde
 ms.reviewer: mkaminska
-ms.openlocfilehash: 3ae1ea891933d6b7731316c3fb83635d2a999d29
-ms.sourcegitcommit: 3d7dd25abcbf923b45eae84ff4d9d2bb95ef4ca4
+ms.openlocfilehash: 5211cbe42ec735f914eff6fb420d9fc0baf4c883
+ms.sourcegitcommit: 0c72639cc3dc74667a6b14343d303f318e70d457
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/28/2022
-ms.locfileid: "68777125"
+ms.lasthandoff: 11/01/2022
+ms.locfileid: "68804430"
 ---
 <!-- v-jweston/jweston-1 is scheduled to resume authorship Apr/May 2023.-->
 
@@ -46,17 +46,15 @@ El informe Estado del dispositivo proporciona información sobre los dispositivo
 > [!IMPORTANT]
 > Para que Windows&nbsp;Server 2012 R2&nbsp;y Windows&nbsp;Server&nbsp;2016 aparezcan en los informes de estado del dispositivo, estos dispositivos deben incorporarse mediante el paquete de solución unificado&nbsp;moderno. Para obtener más información, consulte [Nueva funcionalidad en la solución unificada moderna para Windows Server 2012 R2 y 2016](/microsoft-365/security/defender-endpoint/configure-server-endpoints#new-windows-server-2012-r2-and-2016-functionality-in-the-modern-unified-solution).
 
-En el panel de navegación del panel de seguridad de Microsoft 365, seleccione **Informes** y, a continuación, abra **Estado y cumplimiento del dispositivo**.
-
-- La [pestaña **estado Microsoft Defender Antivirus**](#microsoft-defender-antivirus-health-tab) tiene ocho tarjetas que informan sobre los siguientes aspectos de Microsoft Defender Antivirus:
-  - [Tarjeta de modo antivirus](#antivirus-mode-card)
-  - [Tarjeta de versión del motor antivirus](#antivirus-engine-version-card)
-  - [Tarjeta de versión de inteligencia de seguridad antivirus](#antivirus-security-intelligence-version-card)
-  - [Tarjeta de versión de la plataforma antivirus](#antivirus-platform-version-card)
-  - [Tarjeta de resultados del examen antivirus reciente](#recent-antivirus-scan-results-card)
-  - [Tarjeta de actualizaciones del motor antivirus](#antivirus-engine-updates-card)
-  - [Tarjeta de actualizaciones de inteligencia de seguridad](#security-intelligence-updates-card)
-  - [Tarjeta de actualizaciones de la plataforma antivirus](#antivirus-platform-updates-card)
+En el panel de navegación del panel de seguridad de Microsoft 365, seleccione **Informes** y, a continuación, abra **Estado y cumplimiento del dispositivo**. La [pestaña **estado Microsoft Defender Antivirus**](#microsoft-defender-antivirus-health-tab) tiene ocho tarjetas que informan sobre los siguientes aspectos de Microsoft Defender Antivirus:
+- [Tarjeta de modo antivirus](#antivirus-mode-card)
+- [Tarjeta de versión del motor antivirus](#antivirus-engine-version-card)
+- [Tarjeta de versión de inteligencia de seguridad antivirus](#antivirus-security-intelligence-version-card)
+- [Tarjeta de versión de la plataforma antivirus](#antivirus-platform-version-card)
+- [Tarjeta de resultados del examen antivirus reciente](#recent-antivirus-scan-results-card)
+- [Tarjeta de actualizaciones del motor antivirus](#antivirus-engine-updates-card)
+- [Tarjeta de actualizaciones de inteligencia de seguridad](#security-intelligence-updates-card)
+- [Tarjeta de actualizaciones de la plataforma antivirus](#antivirus-platform-updates-card)
 
 ## <a name="report-access-permissions"></a>Permisos de acceso de informes
 
@@ -92,12 +90,12 @@ Las seis tarjetas restantes informan sobre el estado del antivirus de Microsoft 
 
 <sup>{[1](#fn1)}</sup> Para las tres tarjetas de _actualizaciones_ (también conocidas como tarjetas de informes actualizadas), "**No hay datos disponibles**" (o valor "Desconocido") indica los dispositivos que no notifican el estado de actualización. Los dispositivos que no notifican el estado de actualización pueden deberse a diversos motivos, como:
 
-- El equipo está desconectado de la red
-- El equipo está apagado o en estado de hibernación
-- Microsoft Defender Antivirus está deshabilitado
-- El dispositivo es un dispositivo que no es de Windows (Mac o Linux)
-- La protección en la nube no está habilitada
-- El dispositivo no cumple los requisitos previos para el motor antivirus o la versión de la plataforma
+- El equipo está desconectado de la red.
+- El equipo está apagado o en estado de hibernación.
+- Microsoft Defender Antivirus está deshabilitado.
+- El dispositivo es un dispositivo que no es de Windows (Mac o Linux).
+- La protección en la nube no está habilitada.
+- El dispositivo no cumple los requisitos previos para el motor antivirus o la versión de la plataforma.
 
 ### <a name="prerequisites"></a>Requisitos previos
 
@@ -106,26 +104,26 @@ Los informes actualizados generan información para los dispositivos que cumplen
 - Versión del motor: 1.1.19300.2+
 - Versión de la plataforma: 4.18.2202.1+
 - Protección en la nube habilitada
-- Sistema operativo Windows*
+- Sistema operativo Windows
+   >[!Note]
+   >Actualmente, los informes actualizados solo están disponibles para dispositivos Windows. Los dispositivos multiplataforma, como Mac y Linux, aparecen en "No hay datos disponibles"/Desconocido.
 
-*Actualmente, los informes actualizados solo están disponibles para dispositivos Windows. Los dispositivos multiplataforma, como Mac y Linux, aparecen en "No hay datos disponibles"/Desconocido
-
->:::image type="content" source="images/device-health-defender-antivirus-health-tab.png" alt-text="Muestra la pestaña estado del antivirus Microsoft Defender." lightbox="images/device-health-defender-antivirus-health-tab.png":::
+:::image type="content" source="images/device-health-defender-antivirus-health-tab.png" alt-text="Muestra la pestaña estado del antivirus Microsoft Defender." lightbox="images/device-health-defender-antivirus-health-tab.png":::
 
 ### <a name="card-functionality"></a>Funcionalidad de tarjeta
 
 La funcionalidad es básicamente la misma para todas las tarjetas. Al hacer clic en una barra numerada en cualquiera de las tarjetas, se abre el control flotante de **detalles del antivirus Microsoft Defender** que le permite revisar la información sobre todos los dispositivos configurados con el número de versión de un aspecto en esa tarjeta.
 
->:::image type="content" source="images/device-health-defender-antivirus-health-antivirus-details.png" alt-text="Muestra el control flotante de detalles Microsoft Defender Antivirus." lightbox="images/device-health-defender-antivirus-health-antivirus-details.png":::
+:::image type="content" source="images/device-health-defender-antivirus-health-antivirus-details.png" alt-text="Muestra el control flotante de detalles Microsoft Defender Antivirus." lightbox="images/device-health-defender-antivirus-health-antivirus-details.png":::
 
 Si el número de versión en el que ha hecho clic es:
 
-- Una versión actual y, a continuación, corrección **necesaria y recomendación** **de seguridad** no están presentes
+- Una versión actual y, a continuación, corrección **necesaria** y **recomendación de seguridad** no están presentes.
 - Una versión obsoleta, una notificación en la parte superior del informe está presente, lo que indica la **corrección necesaria** y hay un vínculo **de recomendación de seguridad** . Seleccione el vínculo de recomendación de seguridad para navegar a la consola de Administración de amenazas y vulnerabilidades, que puede recomendar las actualizaciones de antivirus adecuadas.
 
 Para agregar o quitar tipos específicos de información sobre el control flotante de **detalles de Microsoft Defender Antivirus**, seleccione **Personalizar columnas**. En **Personalizar columnas**, seleccione o desactive los elementos para especificar lo que quiere incluir en el informe de detalles del antivirus de Microsoft Defender.
 
->:::image type="content" source="images/device-health-defender-antivirus-engine-version-details-custom-columns.png" alt-text="Muestra las opciones de columna personalizadas para Microsoft Defender informes de estado del antivirus." lightbox="images/device-health-defender-antivirus-engine-version-details-custom-columns.png":::
+:::image type="content" source="images/device-health-defender-antivirus-engine-version-details-custom-columns.png" alt-text="Muestra las opciones de columna personalizadas para Microsoft Defender informes de estado del antivirus." lightbox="images/device-health-defender-antivirus-engine-version-details-custom-columns.png":::
 
 #### <a name="new-microsoft-defender-antivirus-filter-definitions"></a>Nuevas definiciones de filtro Microsoft Defender Antivirus
 
@@ -148,11 +146,11 @@ Hay dos niveles de informes que puede exportar:
 
 Hay dos funcionalidades csv de exportación diferentes a través del portal:
 
-- **Exportación de nivel superior** Puede usar el botón **Exportar** de nivel superior para recopilar un informe de estado de antivirus de Microsoft Defender de nivel superior (límite de 500 K).
+- **Exportación de nivel superior**. Puede usar el botón **Exportar** de nivel superior para recopilar un informe de estado Microsoft Defender antivirus (límite de 500 K).
 
->:::image type="content" source="images/device-health-defender-antivirus-health-tab-export.png" alt-text="Muestra el botón del informe de exportación de nivel superior" lightbox="images/device-health-defender-antivirus-health-tab-export.png":::
+   ::image type="content" source="images/device-health-defender-antivirus-health-tab-export.png" alt-text="Muestra el botón del informe de exportación de nivel superior" lightbox="images/device-health-defender-antivirus-health-tab-export.png":::
 
-- **Exportación de nivel de control flotante** Puede usar el botón **Exportar** dentro de los controles flotantes para exportar un informe a una hoja de cálculo de Excel (límite de 100 K).
+- **Exportación de nivel de control flotante**. Puede usar el botón **Exportar** dentro de los controles flotantes para exportar un informe a una hoja de cálculo de Excel (límite de 100 K).
 
 Los informes exportados capturan información basada en el punto de entrada en el informe de detalles y qué filtros o columnas personalizadas ha establecido.
 
@@ -175,13 +173,13 @@ A continuación se muestran descripciones de las seis tarjetas que informan sobr
 
 En cualquiera de las tres tarjetas de _versión_, seleccione **Ver informe completo** para mostrar los nueve informes de _versión_ de antivirus de Microsoft Defender más recientes para cada uno de los tres tipos de dispositivo: Windows, Mac y Linux; si existen menos de nueve, se mostrarán todos ellos. Una categoría **Other** captura las versiones recientes del motor antivirus que se clasifican en el décimo lugar y por debajo, si se detectan.
 
->:::image type="content" source="images/device-health-defender-antivirus-health-view-full-report.png" alt-text="Muestra la distribución de los nueve sistemas operativos principales de cada tipo." lightbox="images/device-health-defender-antivirus-health-view-full-report.png":::
+:::image type="content" source="images/device-health-defender-antivirus-health-view-full-report.png" alt-text="Muestra la distribución de los nueve sistemas operativos principales de cada tipo." lightbox="images/device-health-defender-antivirus-health-view-full-report.png":::
 
 Una ventaja principal de las tres tarjetas de _versión_ es que proporcionan indicadores rápidos sobre si se están usando las versiones más actuales de los motores antivirus, las plataformas y la inteligencia de seguridad. Junto con la información detallada que está vinculada a la tarjeta, las tarjetas de versiones se convierten en una herramienta eficaz para comprobar si las versiones están actualizadas y recopilar información sobre equipos individuales o grupos de equipos.
 Lo ideal es que, al ejecutar estos informes, indiquen que están instaladas las versiones antivirus más actuales, en lugar de las versiones anteriores.
 Use estos informes para determinar si su organización aprovecha al máximo las versiones más actuales.
 
->:::image type="content" source="images/device-health-defender-antivirus-health-antivirus-details-up-to-date.png" alt-text="Muestra Microsoft Defender detalles de la versión del antivirus" lightbox="images/device-health-defender-antivirus-health-antivirus-details-up-to-date.png":::
+:::image type="content" source="images/device-health-defender-antivirus-health-antivirus-details-up-to-date.png" alt-text="Muestra Microsoft Defender detalles de la versión del antivirus" lightbox="images/device-health-defender-antivirus-health-antivirus-details-up-to-date.png":::
 
 Para ayudar a garantizar que la solución antimalware detecta las amenazas más recientes, obtenga actualizaciones automáticamente como parte de Windows Update.
 
@@ -203,7 +201,7 @@ Los informes sobre cuántos dispositivos de su organización , en la fecha indic
 | 3 | Otros (No en ejecución, Desconocido) |
 | 4 | EDRBlocked |
 
->:::image type="content" source="images/device-health-defender-antivirus-health-antivirus-mode.png" alt-text="Muestra el filtrado Microsoft Defender modos antivirus" lightbox="images/device-health-defender-antivirus-health-antivirus-mode.png":::
+:::image type="content" source="images/device-health-defender-antivirus-health-antivirus-mode.png" alt-text="Muestra el filtrado Microsoft Defender modos antivirus" lightbox="images/device-health-defender-antivirus-health-antivirus-mode.png":::
 
 A continuación se muestran las descripciones de cada modo:
 
@@ -245,7 +243,7 @@ Las tarjetas actualizadas muestran el estado actualizado del **motor antivirus**
 
 > [!IMPORTANT]
 >
-> Recientemente se ha mejorado y simplificado la lógica utilizada para la determinación actualizada. El nuevo comportamiento se documenta en esta sección.
+> Recientemente se ha mejorado y simplificado la lógica utilizada para elaborar determinaciones actualizadas. El nuevo comportamiento se documenta en esta sección.
 
 Las definiciones de _Actualizado_, _Obsoleto_ y _Sin datos disponibles_ se proporcionan para cada tarjeta siguiente.
 
@@ -273,17 +271,17 @@ Para obtener más información sobre los términos mencionados anteriormente, co
 
 A continuación se muestran definiciones actualizadas para el motor y la plataforma:
 
-| El motor o plataforma en el dispositivo se considera: | Si: |
+| El motor o plataforma en el dispositivo se considera: | Situación |
 |:---|:---|
-| **actualizado** | el dispositivo comunicado con el evento de informe de Defender ('Hora de actualización de la firma') en los últimos siete días y el tiempo de compilación de la versión del motor o de la plataforma se encuentra en los últimos 60 días. |
-| **desactualizadas** | el dispositivo comunicado con el evento de informe de Defender ('Hora de actualización de firma') en los últimos siete días, pero el tiempo de compilación de la versión del motor o de la plataforma es anterior a 60 días. |
-| **unknown (no hay datos disponibles)** | el dispositivo no se ha comunicado con el evento de informe ('Hora de actualización de firma') durante más de siete días. |
+| **actualizado** | Si el dispositivo se comunica con el evento de informe de Defender ('Hora de actualización de firma') en los últimos siete días y el tiempo de compilación de la versión del motor o de la plataforma es en los últimos 60 días. |
+| **desactualizadas** | Si el dispositivo se comunicó con el evento de informe de Defender ('Hora de actualización de la firma') en los últimos siete días, pero el tiempo de compilación de la versión del motor o de la plataforma es anterior a 60 días. |
+| **unknown (no hay datos disponibles)** | Si el dispositivo no se ha comunicado con el evento de informe ('Hora de actualización de la firma') durante más de siete días. |
 
-A continuación se muestran definiciones actualizadas de inteligencia de seguridad:
+A continuación se incluyen las definiciones de inteligencia de seguridad actualizada:
 
-| Se considera la actualización de inteligencia de seguridad | Si: |
+| La actualización de inteligencia de seguridad se considera: | Situación |
 |:---|:---|
-|**Actualizado** | la versión de inteligencia de seguridad del dispositivo se escribió en los últimos siete días y el dispositivo se ha comunicado con el evento del informe en los últimos siete días. |
+|**actualizado** | Si la versión de inteligencia de seguridad del dispositivo se escribió en los últimos siete días y el dispositivo se ha comunicado con el evento de informe en los últimos siete días. |
 
 Para obtener más información, consulte:
 
@@ -295,7 +293,7 @@ Para obtener más información, consulte:
 
 Esta tarjeta identifica los dispositivos que tienen versiones del motor antivirus que están actualizadas frente a obsoletas.
 
-**La definición general de "_Actualizado_":** la versión del motor en el dispositivo es la versión más reciente del motor. El motor se suele publicar _mensualmente_, a través de Windows Update (WU)). Hay un período de gracia de tres días dado desde el día en que se libera Windows Update (WU).
+**Definición general de "actualizado":** la versión del motor en el dispositivo es la versión más reciente del motor. El motor se suele publicar _mensualmente_, a través de Windows Update (WU)). Hay un período de gracia de tres días dado desde el día en que se libera Windows Update (WU).
 
 En la tabla siguiente se establecen los valores posibles para los informes actualizados de **Antivirus Engine**. El estado notificado se basa en la última vez que se recibió el evento de informes (_hora de actualización de la firma_). Si el dispositivo no se ha comunicado con los informes durante más de siete días (tiempo de actualización de la firma >7 días), el estado se marca automáticamente como "Desconocido" o "Sin datos disponibles".
 
@@ -304,32 +302,32 @@ En la tabla siguiente se establecen los valores posibles para los informes actua
 | < 7 días (nuevo) | informes de cliente _<br/> <br/> (no actualizados actualizados desconocidos)_ |
 | > 7 días (de edad) | _Desconocido_ |
 
-Para obtener información sobre la administración de versiones de actualización Microsoft Defender Antivirus, consulte: [Versiones mensuales de la plataforma y del motor](manage-updates-baselines-microsoft-defender-antivirus.md#monthly-platform-and-engine-versions)
+Para obtener información sobre la administración de versiones de actualización Microsoft Defender Antivirus, consulte [Versiones mensuales de la plataforma y del motor](manage-updates-baselines-microsoft-defender-antivirus.md#monthly-platform-and-engine-versions).
 
 #### <a name="antivirus-platform-updates-card"></a>Tarjeta de actualizaciones de la plataforma antivirus
 
 Esta tarjeta identifica los dispositivos que tienen versiones de la plataforma Antivirus actualizadas frente a obsoletas.
 
-**Definición general de "Actualizado"** La versión de la plataforma en el dispositivo es la versión más reciente de la plataforma. Normalmente, la plataforma se publica _mensualmente_ a través de Windows Update (WU). Hay un período de gracia de tres días a partir del día en que wu se libera.
+**La definición general de "actualizado"** es que la versión de la plataforma en el dispositivo es la versión más reciente de la plataforma. Normalmente, la plataforma se publica _mensualmente_ a través de Windows Update (WU). Hay un período de gracia de tres días a partir del día en que wu se libera.
 
 En la tabla siguiente se establecen los posibles valores de informe actualizados para **La plataforma antivirus**. Los valores notificados se basan en la última vez que se recibió el evento de informes (hora de actualización de la firma). Si el dispositivo no se ha comunicado con los informes durante más de siete días (tiempo de actualización de la firma >7 días), el estado se marca automáticamente como "Desconocido"/ "No hay datos disponibles".
 
-| Hora de la última actualización del evento (también conocida como "Hora de actualización de firma" en los informes) | _Estado notificado_: |
+| Hora de la última actualización del evento (también conocida como "Hora de actualización de firma" en los informes) | _Estado notificado_ |
 |:----|:----|
 | < 7 días (nuevo) | informes de cliente _<br/> <br/> (no actualizados actualizados desconocidos)_ |
 | > 7 días (de edad) | _Desconocido_ |
 
-Para obtener información sobre la administración de versiones de actualización Microsoft Defender Antivirus, consulte: [Versiones mensuales de la plataforma y del motor](manage-updates-baselines-microsoft-defender-antivirus.md#monthly-platform-and-engine-versions)
+Para obtener información sobre la administración de versiones de actualización Microsoft Defender Antivirus, consulte [Versiones mensuales de la plataforma y del motor](manage-updates-baselines-microsoft-defender-antivirus.md#monthly-platform-and-engine-versions).
 
 ##### <a name="security-intelligence-updates-card"></a>Tarjeta de actualizaciones de inteligencia de seguridad
 
 Esta tarjeta identifica los dispositivos que tienen versiones de inteligencia de seguridad actualizadas frente a obsoletas.
 
-**La definición general de "Actualizado":** la versión de inteligencia de seguridad del dispositivo se escribió en los últimos 7 días.
+**La definición general de "actualizado"** es que la versión de inteligencia de seguridad del dispositivo se escribió en los últimos 7 días.
 
 En la tabla siguiente se establecen los posibles valores de informe actualizados para las actualizaciones **de Security Intelligence** . Los valores notificados se basan en la última vez que se recibió el evento de informes y en la hora de publicación de la inteligencia de seguridad. Si el dispositivo no se ha comunicado con los informes durante más de siete días (tiempo de actualización de la firma >7 días), el estado se marca automáticamente como "Desconocido/ Sin datos disponibles". De lo contrario, la determinación se realiza en función de si el tiempo de publicación de inteligencia de seguridad es dentro de los siete días.
 
-| Hora de última actualización del evento <br/> (También conocido como "Hora de actualización de firma" en los informes) | Hora de publicación de Security Intelligence | _Estado notificado_: |
+| Hora de última actualización del evento <br/> (También conocido como "Hora de actualización de firma" en los informes) | Hora de publicación de Security Intelligence | _Estado notificado_ |
 |:----|:----|:----|
 | >7 días (de edad) | >7 días (de edad) | _Desconocido_ |
 | <7 días (nuevo) | >7 días (de edad) | _Obsoleto_ |

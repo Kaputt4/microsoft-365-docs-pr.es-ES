@@ -10,7 +10,7 @@ ms.topic: overview
 ms.service: microsoft-365-security
 ms.subservice: mdb
 ms.localizationpriority: medium
-ms.date: 10/24/2022
+ms.date: 11/01/2022
 ms.reviewer: shlomiakirav
 f1.keywords: NOCSH
 ms.collection:
@@ -19,16 +19,16 @@ ms.collection:
 - m365solution-mdb-setup
 - highpri
 - tier1
-ms.openlocfilehash: 674b48c5c558cb4d31df85e439c1eb216c09f00c
-ms.sourcegitcommit: e7dbe3b0d97cd8c64b5ae15f990d5e4b1dc9c464
+ms.openlocfilehash: 553dc3143d7cd01c48200097a3ba60b054ba5da8
+ms.sourcegitcommit: 0c72639cc3dc74667a6b14343d303f318e70d457
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/24/2022
-ms.locfileid: "68687616"
+ms.lasthandoff: 11/01/2022
+ms.locfileid: "68805044"
 ---
 # <a name="onboard-devices-to-microsoft-defender-for-business"></a>Incorporación de dispositivos a Microsoft Defender para Empresas
 
-Con Defender para Empresas, tiene varias opciones entre las cuales elegir para incorporar los dispositivos de su empresa. En este artículo se le guiará por estas opciones y se proporciona información general sobre cómo funciona la incorporación.
+Incorpore sus dispositivos empresariales para protegerlos de inmediato. Puede elegir entre varias opciones para incorporar los dispositivos de su empresa. En este artículo se le guiará por las opciones y se describe cómo funciona la incorporación.
 
 ## <a name="what-to-do"></a>Qué hacer
 
@@ -52,11 +52,7 @@ Elija una de las siguientes opciones para incorporar dispositivos cliente de Win
 
 ### <a name="local-script-for-windows-10-and-11"></a>Script local para Windows 10 y 11
 
-Puede usar un script local para incorporar dispositivos cliente Windows. Al ejecutar el script de incorporación en un dispositivo: 
-
-- Crea una confianza con Azure Active Directory, si esa confianza aún no existe.
-- Inscribe el dispositivo en Microsoft Intune si aún no está inscrito y, a continuación, incorpora el dispositivo a Defender for Business. 
-- El método de script local funciona incluso si actualmente no tiene Intune, y este es el método recomendado para los clientes de Defender para empresas.
+Puede usar un script local para incorporar dispositivos cliente Windows. Cuando se ejecuta el script de incorporación en un dispositivo, se crea una confianza con Azure Active Directory, si esa confianza aún no existe; inscribe el dispositivo en Microsoft Intune, si aún no está inscrito y, a continuación, incorpora el dispositivo a Defender for Business. Si actualmente no usa Intune, el método de script local es el método de incorporación recomendado para los clientes de Defender para empresas.
 
 > [!TIP]
 > Se recomienda incorporar hasta 10 dispositivos a la vez cuando se usa el método de script local.
@@ -83,10 +79,10 @@ Si prefieres usar directiva de grupo para incorporar clientes Windows, sigue las
 
 ### <a name="intune-for-windows-10-and-11"></a>Intune para Windows 10 y 11
 
-Puede incorporar clientes de Windows y otros dispositivos en Intune mediante el Centro de administración de Microsoft Endpoint Manager ([https://endpoint.microsoft.com](https://endpoint.microsoft.com)). Hay varios métodos disponibles para inscribir dispositivos en Intune. Se recomienda usar uno de los métodos siguientes:
+Puede incorporar clientes windows y otros dispositivos en Intune mediante el Centro de administración de Microsoft Endpoint Manager ([https://endpoint.microsoft.com](https://endpoint.microsoft.com)). Hay varios métodos disponibles para inscribir dispositivos en Intune. Se recomienda usar uno de los métodos siguientes:
 
 - [Habilitación de la inscripción automática de Windows para dispositivos administrados por la empresa o propiedad de la empresa](#enable-automatic-enrollment-for-windows-10-and-11)
-- [Pida a los usuarios que inscriban sus propios dispositivos Windows 10/11 en Intune](#ask-users-enroll-their-own-windows-10-and-11-devices)
+- [Pida a los usuarios que inscriban sus propios dispositivos Windows 10/11 en Intune](#ask-users-to-enroll-their-windows-10-and-11-devices)
 
 #### <a name="enable-automatic-enrollment-for-windows-10-and-11"></a>Habilitación de la inscripción automática para Windows 10 y 11
 
@@ -114,7 +110,7 @@ Al configurar la inscripción automática, los usuarios agregan su cuenta profes
 > [!TIP]
 > Para obtener más información, consulta [Habilitar la inscripción automática de Windows](/mem/intune/enrollment/windows-enroll).
 
-#### <a name="ask-users-enroll-their-own-windows-10-and-11-devices"></a>Pedir a los usuarios que inscriban sus propios dispositivos Windows 10 y 11
+#### <a name="ask-users-to-enroll-their-windows-10-and-11-devices"></a>Pedir a los usuarios que inscriban sus dispositivos Windows 10 y 11
 
 1. Vea el siguiente vídeo para ver cómo funciona la inscripción:<br/><br/>
 
@@ -140,7 +136,7 @@ Después de incorporar dispositivos Windows a Defender for Business, puede ejecu
 
 Una vez que se ejecuta el comando, la ventana del símbolo del sistema se cerrará automáticamente. Si se realiza correctamente, la prueba de detección se marcará como completada y aparecerá una nueva alerta en el portal de Microsoft 365 Defender ([https://security.microsoft.com](https://security.microsoft.com)) para el dispositivo recién incorporado en unos 10 minutos.
 
-## <a name="view-a-list-of-onboarded-devices"></a>Ver una lista de dispositivos incorporados
+## <a name="view-the-list-of-onboarded-devices"></a>Ver la lista de dispositivos incorporados
 
 Para ver la lista de dispositivos incorporados a Defender for Business, vaya al portal de Microsoft 365 Defender ([https://security.microsoft.com](https://security.microsoft.com)). En el panel de navegación, vaya a **Dispositivos activos** > .
 
@@ -247,8 +243,8 @@ Para ver la lista de dispositivos incorporados a Defender for Business, vaya al 
 
 ## <a name="servers"></a>Servidores
 
-> [!IMPORTANT]
-> Si planea incorporar una instancia de Windows Server o Linux Server, necesitará una licencia adicional, como Microsoft Defender para Empresas servidores (versión preliminar). Como alternativa, podría usar [Microsoft Defender para servidores](/azure/defender-for-cloud/defender-for-servers-introduction); sin embargo, la experiencia de Defender para empresas podría cambiar al agregar un plan empresarial, como el plan 1 o el plan 2 de Defender para servidores. Para obtener más información, consulte [¿Qué ocurre si tengo una combinación de suscripciones de seguridad de puntos de conexión de Microsoft?](mdb-faq.yml#what-happens-if-i-have-a-mix-of-microsoft-endpoint-security-subscriptions).
+> [!NOTE]
+> Si planea incorporar una instancia de Windows Server o Linux Server, necesitará una licencia adicional, como [Microsoft Defender para Empresas servidores](get-defender-business-servers.md). Como alternativa, podría usar [Microsoft Defender para servidores](/azure/defender-for-cloud/defender-for-servers-introduction); sin embargo, la experiencia de Defender para empresas podría cambiar al agregar un plan empresarial, como el plan 1 o el plan 2 de Defender para servidores. Para obtener más información, consulte [¿Qué ocurre si tengo una combinación de suscripciones de seguridad de puntos de conexión de Microsoft?](mdb-faq.yml#what-happens-if-i-have-a-mix-of-microsoft-endpoint-security-subscriptions).
 
 Elija el sistema operativo del servidor:
 
@@ -258,9 +254,8 @@ Elija el sistema operativo del servidor:
 ## <a name="windows-server"></a>Windows Server
 
 > [!IMPORTANT]
-> **La capacidad de incorporar puntos de conexión de Windows Server está actualmente en versión preliminar**. Cuando se anuncia la disponibilidad general, se debe adquirir una licencia de Microsoft Defender para Empresas servidores para cada servidor incorporado, o bien se pueden desconectar esos servidores.
 > Asegúrese de cumplir los siguientes requisitos antes de incorporar un punto de conexión de Windows Server:
-> - La opción **Características en versión preliminar** activada. En el portal de Microsoft 365 Defender ([https://security.microsoft.com](https://security.microsoft.com)), vaya a **Configuración** > **Puntos de conexión** > **General** > **Características avanzadas** > **Características en versión preliminar**.
+> - Tiene una licencia de servidores Microsoft Defender para Empresas. (Consulte [Cómo obtener servidores Microsoft Defender para Empresas](get-defender-business-servers.md)).
 > - El ámbito de cumplimiento de Windows Server está activado. Vaya a **Configuración** > **Puntos de conexión** > **Administración de configuración** > **Ámbito de cumplimiento**. Seleccione **Usar MDE para aplicar la configuración de seguridad desde MEM**, seleccione  **Windows Server** y, luego, **Guardar**.
 
 Puede incorporar una instancia de Windows Server a Defender para empresas mediante un script local.
@@ -314,9 +309,8 @@ Una vez que se ejecuta el comando, la ventana del símbolo del sistema se cerrar
 ## <a name="linux-server"></a>Servidor Linux
 
 > [!IMPORTANT]
-> **La capacidad de incorporar puntos de conexión de Servidor Linux está actualmente en versión preliminar**. Cuando se anuncia la disponibilidad general, se debe adquirir una licencia de Microsoft Defender para Empresas servidores para cada servidor incorporado, o bien se pueden desconectar esos servidores.
 > Asegúrese de cumplir los siguientes requisitos antes de incorporar un punto de conexión de Servidor Linux:
-> - La opción **Características en versión preliminar** activada. En el portal de Microsoft 365 Defender ([https://security.microsoft.com](https://security.microsoft.com)), vaya a **Configuración** > **Puntos de conexión** > **General** > **Características avanzadas** > **Características en versión preliminar**.
+> - Tiene una licencia de servidores Microsoft Defender para Empresas. (Consulte [Cómo obtener servidores Microsoft Defender para Empresas](get-defender-business-servers.md)).
 > - Cumple los [requisitos previos para Microsoft Defender para punto de conexión en Linux](../defender-endpoint/microsoft-defender-endpoint-linux.md#prerequisites).
 
 ### <a name="onboard-linux-server-endpoints"></a>Incorporación de puntos de conexión del servidor Linux

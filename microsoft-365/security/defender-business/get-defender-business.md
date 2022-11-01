@@ -17,12 +17,12 @@ ms.collection:
 - SMB
 - m365-security
 - tier1
-ms.openlocfilehash: c03c92a213b5cf4fe14bbd98094ff3816ab1beab
-ms.sourcegitcommit: 9f5cf8cf8a2e25cfd07b23b7f6d7f9d138a9cd16
+ms.openlocfilehash: 4f2df614e85a1cc31381d051867845df90a145e1
+ms.sourcegitcommit: 0c72639cc3dc74667a6b14343d303f318e70d457
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/07/2022
-ms.locfileid: "68501454"
+ms.lasthandoff: 11/01/2022
+ms.locfileid: "68803734"
 ---
 # <a name="get-microsoft-defender-for-business"></a>Obtener Microsoft Defender para Empresas
 
@@ -111,3 +111,4 @@ Cuando esté listo para empezar, trabajará con dos portales principales: el Cen
 - [Use el asistente de instalación en Microsoft Defender para Empresas](mdb-use-wizard.md).
 - [Consulte el proceso de configuración y configuración de Defender para empresas](mdb-setup-configuration.md).
 - [Vea cómo obtener ayuda y soporte técnico para Defender para empresas](mdb-get-help.md) (por si necesita ayuda).
+- [Obtenga información sobre los servidores de Microsoft Defender para Empresas](get-defender-business-servers.md).

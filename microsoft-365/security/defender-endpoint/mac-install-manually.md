@@ -18,12 +18,12 @@ ms.custom: admindeeplinkDEFENDER
 ms.topic: conceptual
 ms.subservice: mde
 search.appverid: met150
-ms.openlocfilehash: faefd13ad36cb643f1e92e7c0b2409fd86bb2236
-ms.sourcegitcommit: a20d30f4e5027f90d8ea4cde95d1d5bacfdd2b5e
+ms.openlocfilehash: 70a4c3d31aec26f6be1abcc018765741bb11fef7
+ms.sourcegitcommit: 0c72639cc3dc74667a6b14343d303f318e70d457
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/28/2022
-ms.locfileid: "68768817"
+ms.lasthandoff: 11/01/2022
+ms.locfileid: "68804342"
 ---
 # <a name="manual-deployment-for-microsoft-defender-for-endpoint-on-macos"></a>Implementación manual para Microsoft Defender para punto de conexión en macOS
 
@@ -99,7 +99,7 @@ Para completar este proceso, debe tener privilegios de administrador en el dispo
 
 2. Seleccione **Continuar**, acepte los términos de licencia y escriba la contraseña cuando se le solicite.
 
-3. Al final del proceso de instalación, se le promoverá para aprobar las extensiones del sistema usadas por el producto. Seleccione **Abrir preferencias de seguridad**.
+3. Al final del proceso de instalación, se le pedirá que apruebe las extensiones del sistema que usa el producto. Seleccione **Abrir preferencias de seguridad**.
 
    :::image type="content" source="images/monterey-install-2.png" alt-text="Aprobación de la extensión del sistema" lightbox="images/monterey-install-2.png":::
 
