@@ -24,12 +24,12 @@ ms.custom:
 - intro-overview
 ms.topic: conceptual
 adobe-target: true
-ms.openlocfilehash: bc690e91ceb83d49814e869f40411da900faa719
-ms.sourcegitcommit: 12af9e8e3a6eaa090fda9e98ccb831dff65863a4
+ms.openlocfilehash: 93c1532440108f6c1b001154400c79bbd77b436b
+ms.sourcegitcommit: 4bae15909267a70c8842bd0cd3dceb8459b4cc29
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/27/2022
-ms.locfileid: "68051264"
+ms.lasthandoff: 11/01/2022
+ms.locfileid: "68798417"
 ---
 # <a name="microsoft-365-defender-portal"></a>Portal de Microsoft 365 Defender
 
@@ -146,7 +146,7 @@ Realice un seguimiento y responda a las amenazas emergentes con los siguientes M
 > Junto con el filtro Producto, se enumeran temas actuales, tipos de recursos (desde vídeos hasta seminarios web), niveles de familiaridad o experiencia con áreas de seguridad, roles de seguridad y características de producto.
 
 > [!TIP]
-> Hay muchas otras oportunidades de aprendizaje en [Microsoft Learn](/training/). Encontrará formación de certificación como [Course MS-500T02-A: Implementing Microsoft 365 Threat Protection](/training/certifications/courses/ms-500t02).
+> Hay muchas otras oportunidades de aprendizaje en [Microsoft Learn](/training/). Encontrará formación de certificación, como [el curso MS-500T00: Administración de seguridad de Microsoft 365](/training/courses/ms-500t00).
 
 ## <a name="send-us-your-feedback"></a>Envíenos sus comentarios
 

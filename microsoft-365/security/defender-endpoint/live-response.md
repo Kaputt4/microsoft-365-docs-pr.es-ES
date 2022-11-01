@@ -17,12 +17,12 @@ ms.collection:
 ms.topic: conceptual
 ms.subservice: mde
 search.appverid: met150
-ms.openlocfilehash: 12cc6483fdd88a3f9e9213578b21a7eee4499dfe
-ms.sourcegitcommit: 181a0aff54842dcbafd834647c6e9ee47304d10f
+ms.openlocfilehash: 075d32e8a7e24bf688902f919ec926edcd26344b
+ms.sourcegitcommit: 4bae15909267a70c8842bd0cd3dceb8459b4cc29
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/27/2022
-ms.locfileid: "68725175"
+ms.lasthandoff: 11/01/2022
+ms.locfileid: "68798395"
 ---
 # <a name="investigate-entities-on-devices-using-live-response"></a>Investigación de entidades en dispositivos mediante respuesta dinámica
 
@@ -63,10 +63,7 @@ Antes de iniciar una sesión en un dispositivo, asegúrese de cumplir los siguie
     - [Versión 1803 (RS 4)](/windows/whats-new/whats-new-windows-10-version-1803) con [KB4537795](https://support.microsoft.com/help/4537795/windows-10-update-kb4537795)
     - [Versión 1709 (RS 3)](/windows/whats-new/whats-new-windows-10-version-1709) con [KB4537816](https://support.microsoft.com/help/4537816/windows-10-update-kb4537816)
 
-  - **macOS** : solo aplicable a la versión preliminar pública, versión mínima necesaria: 101.43.84
-
-   > [!NOTE]
-   > Actualmente solo se admiten sistemas macOS basados en Intel.
+  - **macOS** : solo se aplica a la versión preliminar pública, versión mínima necesaria: 101.43.84. Compatible con dispositivos macOS basados en Intel y ARM
 
   - **Linux** : solo aplicable a la versión preliminar pública, versión mínima necesaria: 101.45.13
 

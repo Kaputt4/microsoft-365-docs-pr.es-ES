@@ -14,12 +14,12 @@ audience: itpro
 ms.collection:
 - tier1
 - purview-compliance
-ms.openlocfilehash: e6b94111802c624312447bbe7bb1de5d538aa005
-ms.sourcegitcommit: 181a0aff54842dcbafd834647c6e9ee47304d10f
+ms.openlocfilehash: 6e28bf2680e15d6d49837fef00f60fc15e6e9fb8
+ms.sourcegitcommit: 4bae15909267a70c8842bd0cd3dceb8459b4cc29
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/27/2022
-ms.locfileid: "68733557"
+ms.lasthandoff: 11/01/2022
+ms.locfileid: "68798373"
 ---
 # <a name="insider-risk-management-content-explorer"></a>Explorador de contenido de administración de riesgos internos
 
@@ -27,6 +27,13 @@ ms.locfileid: "68733557"
 > Administración de riesgos internos de Microsoft Purview correlaciona varias señales para identificar posibles riesgos internos malintencionados o involuntarios, como el robo de IP, la pérdida de datos y las infracciones de seguridad. La administración de riesgos internos permite a los clientes crear directivas para administrar la seguridad y el cumplimiento. Creados con privacidad por diseño, los usuarios se seudonimizan de forma predeterminada y los controles de acceso basados en roles y los registros de auditoría están en su lugar para ayudar a garantizar la privacidad del nivel de usuario.
 
 El **explorador de contenido** de administración de riesgos internos permite a los usuarios *asignados el rol Insider Risk Management Investigators* examinar el contexto y los detalles del contenido asociado a la actividad en las alertas. Los datos del caso en el Explorador de contenido se actualizan diariamente para incluir una nueva actividad de riesgo. Para todas las alertas que se confirman en un caso, las copias de los archivos de datos y mensajes se archivan como una instantánea en el tiempo de los elementos, a la vez que se mantienen los archivos y mensajes originales en los orígenes de almacenamiento. Si es necesario, los archivos de datos de casos se pueden exportar como un archivo de documento portátil (PDF) o en el formato de archivo original.
+
+## <a name="use-the-content-explorer-to-view-details-for-a-specific-case"></a>Uso del Explorador de contenido para ver los detalles de un caso específico
+
+Para examinar los correos electrónicos y los archivos capturados por las directivas incluidas en un caso específico, vaya a la página **Casos** de administración de riesgos internos y seleccione la fila nombre del *caso en la* lista para el caso para el que desea ver los detalles. A continuación, en la página de detalles del caso, seleccione la pestaña **Explorador de contenido** para abrir el Explorador de contenido.
+
+> [!IMPORTANT]
+> Una vez confirmada una alerta en un caso, el Explorador de contenido no mostrará ningún detalle para ese caso si la organización no ha asignado un usuario al grupo de roles *Insider Risk Management Investigator* o *Insider Risk Management* .
 
 En los casos nuevos, el contenido suele tardar aproximadamente una hora en rellenarse en el Explorador de contenido. En los casos con grandes cantidades de contenido, puede tardar más tiempo en crear una instantánea. Si el contenido se sigue cargando en el Explorador de contenido, verá un indicador de progreso que muestra el porcentaje de finalización.
 

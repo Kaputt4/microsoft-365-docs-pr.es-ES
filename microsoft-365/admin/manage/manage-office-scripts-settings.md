@@ -21,12 +21,12 @@ ms.custom:
 - admindeeplinkMAC
 search.appverid: MET150
 description: Obtenga información sobre cómo administrar la configuración de scripts de Office para los usuarios de su organización.
-ms.openlocfilehash: 5fc83c585fd7edb288cc709e91f44f45b9c9d79c
-ms.sourcegitcommit: 181a0aff54842dcbafd834647c6e9ee47304d10f
+ms.openlocfilehash: 5179c88c90a6a96b1f2d0dfcafe1c06299c5069d
+ms.sourcegitcommit: 4bae15909267a70c8842bd0cd3dceb8459b4cc29
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/27/2022
-ms.locfileid: "68734393"
+ms.lasthandoff: 11/01/2022
+ms.locfileid: "68798329"
 ---
 # <a name="manage-office-scripts-settings"></a>Administrar la configuración de los Scripts de Office
 
@@ -100,6 +100,12 @@ ms.locfileid: "68734393"
 8. Seleccione **Guardar**.
 
     Puede que los cambios en la configuración de Scripts de Office tarden hasta 48 horas en surtir efecto.
+
+## <a name="manage-visibility-of-the-automate-tab-by-using-group-policy"></a>Administrar la visibilidad de la pestaña Automatizar mediante directiva de grupo
+
+directiva de grupo tiene una configuración para mostrar u ocultar la pestaña **Automatizar** o todos los usuarios de Excel en escritorio de la organización. Encontrará la configuración de scripts de Office en Configuración del equipo\Plantillas administrativas\Microsoft Excel 2016\Varios en la consola de administración de directiva de grupo.
+
+Para más información, consulte [Uso de directiva de grupo para configurar las opciones de actualización para Aplicaciones Microsoft 365](/deployoffice/configure-update-settings-microsoft-365-apps#use-group-policy-to-configure-update-settings-for-microsoft-365-apps).
 
 ## <a name="next-steps"></a>Pasos siguientes
 

@@ -7,7 +7,7 @@ ms.mktglfcycl: manage
 ms.sitesec: library
 ms.pagetype: security
 ms.localizationpriority: high
-ms.date: 10/21/2022
+ms.date: 10/31/2022
 audience: ITPro
 ms.topic: reference
 author: denisebmsft
@@ -20,12 +20,12 @@ ms.collection:
 - m365-security
 - tier2
 search.appverid: met150
-ms.openlocfilehash: 94f2818f2e470807b9e4ed7f4ee23334106e2d50
-ms.sourcegitcommit: a250d043a2e42ecbc7b86147468d1660af5a6ba7
+ms.openlocfilehash: 6ecc138f1eb02dcbac6ac3c46252e45c1e91ae37
+ms.sourcegitcommit: 4bae15909267a70c8842bd0cd3dceb8459b4cc29
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/21/2022
-ms.locfileid: "68673181"
+ms.lasthandoff: 11/01/2022
+ms.locfileid: "68798263"
 ---
 # <a name="manage-microsoft-defender-antivirus-updates-and-apply-baselines"></a>Para obtener más información, consulte Administrar actualizaciones de Antivirus de Microsoft Defender y aplicar bases de referencia.
 
@@ -89,6 +89,36 @@ Todas nuestras actualizaciones contienen
 - Mejoras de integración (nube, [Microsoft 365 Defender](/microsoft-365/security/defender/microsoft-365-defender))
 <br/><br/>
 <details>
+<summary>Octubre de 2022 (Plataforma: 4.18.2210.4 | Motor: 1.1.19800.x)</summary>
+
+&ensp;Versión de actualización de inteligencia de seguridad: **x.x**<br/>
+&ensp;Fecha de lanzamiento: **31 de octubre de 2022**<br/>
+&ensp;Plataforma: **4.18.2210.4**<br/>
+&ensp;Motor: **1.1.19800.x**<br/>
+&ensp;Fase de soporte técnico: **Actualizaciones críticas y de seguridad**<br/>
+
+Versión del motor: 1.1.19800.x (*número de versión final próximamente*)<br/>
+Versión de actualización de inteligencia de seguridad: x.x (*próximamente*)<br/>
+
+### <a name="whats-new"></a>Novedades
+
+- Detección de bloqueo mejorada en el motor antivirus 
+- Se ha agregado la opción de participar en las actualizaciones de Defender durante el proceso de OOBE (experiencia rápida) 
+- Funcionalidad mejorada de [protección contra alteraciones](prevent-changes-to-security-settings-with-tamper-protection.md) 
+- Se ha cambiado la acción de administración de amenazas & vulnerabilidades (TVM)-warn y TVM-block para bloquear para resolver el informe de Intune 
+- Se ha quitado la acción de limpieza de Intune directiva para`ThreadSeverityDefaultAction` 
+- Se ha agregado la configuración aleatoria de tiempos de tarea programadas a Intune directiva 
+- Se ha agregado capacidad de administración para la `DisableSMTPParsing` protección de red. 
+- Se ha agregado una mejora para la supervisión del comportamiento. 
+- Formato de fecha normalizado para el evento 1151 para Windows Defender 
+- Se ha corregido un interbloqueo relacionado con la actualización `\device\cdrom*` de exclusiones al montar una unidad cdrom en determinadas condiciones. 
+- Información de PID mejorada para la detección de amenazas 
+
+### <a name="known-issues"></a>Problemas conocidos
+
+- Ninguno  
+<br/><br/>
+</details><details>
 <summary>Septiembre de 2022 (Plataforma: 4.18.2209.7 | Motor: 1.1.19700.3)</summary>
 
 &ensp;Versión de actualización de inteligencia de seguridad: **1.377.8.0**<br/>
@@ -144,14 +174,21 @@ Versión de actualización de inteligencia de seguridad: 1.373.1647.0 <br/>
 - Ninguno
 
 <br/><br/>
-</details><details>
+</details>
+
+
+### <a name="previous-version-updates-technical-upgrade-support-only"></a>Actualizaciones de la versión anterior: solo soporte técnico para actualizaciones técnicas
+
+Una vez publicada la nueva versión del paquete, la compatibilidad con las dos versiones anteriores se reduce solo al soporte técnico. Las versiones anteriores a ésta se enumeran en esta sección, y solo se proporcionan para el apoyo técnico de actualización.<br/><br/>
+
+<details>
 <summary>Julio-2022 (Plataforma: 4.18.2207.5 | Motor: 1.1.19500.2)</summary>
 
 &ensp;Versión de actualización de inteligencia de seguridad: **1.373.219.0**<br/>
 &ensp;Fecha de lanzamiento: **15 de agosto de 2022**<br/>
 &ensp;Plataforma: **4.18.2207.5**<br/>
 &ensp;Motor: **1.1.19500.2**<br/>
-&ensp;Fase de soporte técnico: **Actualizaciones críticas y de seguridad**<br/>
+&ensp;Fase de soporte técnico: **soporte técnico de actualización (únicamente)**<br/>
 
 Versión del motor: 1.1.19300.2<br/>
 Versión de actualización de inteligencia de seguridad: 1.373.219.0 <br/>
@@ -182,14 +219,7 @@ Versión de actualización de inteligencia de seguridad: 1.373.219.0 <br/>
 - Los clientes que implementan la actualización de plataforma 4.18.2207.5 pueden experimentar retrasos en el rendimiento de red que podrían afectar a las aplicaciones.
 
 <br/><br/>
-</details>
-
-
-### <a name="previous-version-updates-technical-upgrade-support-only"></a>Actualizaciones de la versión anterior: solo soporte técnico para actualizaciones técnicas
-
-Una vez publicada la nueva versión del paquete, la compatibilidad con las dos versiones anteriores se reduce solo al soporte técnico. Las versiones anteriores a ésta se enumeran en esta sección, y solo se proporcionan para el apoyo técnico de actualización.<br/><br/>
-
-<details>
+</details><details>
 <summary>Mayo de 2022 (Plataforma: 4.18.2205.7 | Motor: 1.1.19300.2)</summary>
 
 &ensp;Versión de actualización de inteligencia de seguridad: **1.369.88.0**<br/>
