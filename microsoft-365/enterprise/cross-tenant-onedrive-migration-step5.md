@@ -15,20 +15,30 @@ ms.collection:
 - m365initiative-migratetom365
 search.appverid: MET150
 description: Paso 5 de la característica de migración entre inquilinos de OneDrive
-ms.openlocfilehash: 8ebd76f91ddb1711cb1aa5e2a66ae5fb27b71d5c
-ms.sourcegitcommit: 0c72639cc3dc74667a6b14343d303f318e70d457
+ms.openlocfilehash: 5e8706b88b255132bb4db36cd6010668b36b3f26
+ms.sourcegitcommit: b386eaa33e1e5cdea59916247082b6e6e6a3d99e
 ms.translationtype: MT
 ms.contentlocale: es-ES
 ms.lasthandoff: 11/01/2022
-ms.locfileid: "68806258"
+ms.locfileid: "68807681"
 ---
-# <a name="step-5-cross-tenant-onedrive-migration---identity-mapping"></a>Paso 5: Migración entre inquilinos de OneDrive: asignación de identidades
+# <a name="step-5-identity-mapping"></a>Paso 5: Asignación de identidades
+
+Este es el paso 5 de una solución diseñada para completar una migración entre inquilinos de OneDrive. Para más información, consulte [Introducción a la migración de OneDrive entre inquilinos](cross-tenant-onedrive-migration.md).
+
+- Paso 1: [Conectarse al origen y a los inquilinos de destino](cross-tenant-onedrive-migration-step1.md)
+- Paso 2: [Establecer la confianza entre el inquilino de origen y el inquilino de destino](cross-tenant-onedrive-migration-step2.md) 
+- Paso 3: [Comprobar que se ha establecido la confianza](cross-tenant-onedrive-migration-step3.md) 
+- Paso 4: [Creación previa de usuarios y grupos](cross-tenant-onedrive-migration-step4.md)  
+- **Paso 5: [Preparación de la asignación de identidades](cross-tenant-onedrive-migration-step5.md)**
+- Paso 6: [Iniciar una migración entre inquilinos de OneDrive](cross-tenant-onedrive-migration-step6.md)
+- Paso 7: [Pasos posteriores a la migración](cross-tenant-onedrive-migration-step7.md)
+
+## <a name="create-the-identity-mapping-file"></a>Creación del archivo de asignación de identidades 
 
 En este paso del proceso de migración entre inquilinos, va a crear un único archivo CSV (valores separados por comas) que contiene la asignación de los usuarios y grupos del inquilino de origen a sus usuarios y grupos correspondientes en el inquilino de destino.
 
 Se recomienda tomarse el tiempo necesario para comprobar las asignaciones, asegurándose de que sean precisas antes de iniciar las migraciones al inquilino de destino.
-
-## <a name="create-the-identity-mapping-file"></a>Creación del archivo de asignación de identidades 
 
 Hay una relación uno a uno en el archivo de asignación de identidades.  No se puede asignar el mismo usuario a varios usuarios en el inquilino de destino. Por ejemplo, si tiene instancias en las que el administrador es el propietario de varias cuentas de OneDrive, se debe cambiar la propiedad para que coincida con el usuario correspondiente que desea migrar de Origen a Destino.  Si no lo hace, esos archivos de cuenta no se migrarán.
 

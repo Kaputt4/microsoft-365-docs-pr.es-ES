@@ -13,12 +13,12 @@ ms.collection:
 - m365initiative-syntex
 ms.localizationpriority: medium
 description: Obtenga información sobre las diferencias clave entre los modelos personalizados en Microsoft Syntex.
-ms.openlocfilehash: 63d6d444fad48da993413b15943bffda7b175ad1
-ms.sourcegitcommit: 87283bb02ca750286f7c069f811b788730ed5832
+ms.openlocfilehash: e5ef01e7d0bd575c58d5bd38867c5690fdf4a86c
+ms.sourcegitcommit: b386eaa33e1e5cdea59916247082b6e6e6a3d99e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/21/2022
-ms.locfileid: "68660101"
+ms.lasthandoff: 11/01/2022
+ms.locfileid: "68807615"
 ---
 # <a name="compare-custom-models-in-microsoft-syntex"></a>Comparación de modelos personalizados en Microsoft Syntex 
 
@@ -29,7 +29,7 @@ Use la tabla siguiente para ver las diferencias en los modelos personalizados pa
 | Usar para este tipo de contenido | Formatos de archivo no estructurados o semiestructurados, por ejemplo, documentos de Office en los que hay diferencias en el diseño, pero sigue siendo información similar que se va a extraer. | Formatos de archivo no estructurados y de forma libre, por ejemplo, documentos que no tienen ninguna estructura establecida, como cartas, contratos e instrucciones de trabajo. | Formatos de archivo estructurados y semiestructurados, por ejemplo, archivos PDF para el contenido de formularios, como facturas o pedidos de compra, donde el diseño y el formato son similares. |
 | Creación de modelos | Modelo creado en SharePoint en un sitio nuevo, el centro de contenido.  | Modelo creado en [AI Builder](/ai-builder/overview) con acceso sin problemas desde la biblioteca de documentos de SharePoint.| Modelo creado en [AI Builder](/ai-builder/overview) con acceso sin problemas desde la biblioteca de documentos de SharePoint. |
 | Tipo de clasificación | Clasificador que se puede entrenar con extractores opcionales mediante el aprendizaje automático para asignar la ubicación de documentos en los que se extraen datos. | No aplicable | No aplicable |
-| Ubicaciones | Se puede aplicar a múltiples bibliotecas. | Capacitado para una única biblioteca de documentos. | Capacitado para una única biblioteca de documentos. |
+| Ubicaciones | Se puede aplicar a múltiples bibliotecas. | Se puede aplicar a múltiples bibliotecas. | Se puede aplicar a múltiples bibliotecas. |
 | Tipos de archivo compatibles | Entrene entre 5 y 10 .pdf, Office o archivos de correo electrónico, incluidos ejemplos negativos.<br>Los archivos de Office se truncan con 64 000 caracteres. Los archivos escaneados por OCR están limitados a 20 páginas. Admite más de 20 tipos de archivo. Consulte [los tipos de archivo admitidos](requirements-and-limitations.md#unstructured-document-processing).  | Entrene en formato .pdf, .jpg o .png, en total 50 MB y 500 páginas. | Entrene en formato .pdf, .jpg o .png, en total 50 MB y 500 páginas. |
 | Integración con metadatos administrados | Sí, mediante la formación del extractor de entidades que hace referencia a un campo de metadatos administrados configurados. | No | No |
 | Integración de características de cumplimiento con Microsoft Purview Information Protection | Establezca etiquetas de retención publicadas.<br>Establecer etiquetas de confidencialidad publicadas. | El establecimiento de etiquetas de retención está llegando. <br>Se acerca el establecimiento de etiquetas de confidencialidad. | Establezca etiquetas de retención publicadas. <br>Se acerca el establecimiento de etiquetas de confidencialidad. |

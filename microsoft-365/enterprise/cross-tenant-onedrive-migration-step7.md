@@ -15,14 +15,24 @@ ms.collection:
 - m365initiative-migratetom365
 search.appverid: MET150
 description: Paso 7 de la característica de migración entre inquilinos de OneDrive
-ms.openlocfilehash: acd9130b6058ef0dceae0dcc8c6e60699a4fd39e
-ms.sourcegitcommit: 0c72639cc3dc74667a6b14343d303f318e70d457
+ms.openlocfilehash: 22d18111bc45d30fab5cc9012857a979fa510e18
+ms.sourcegitcommit: b386eaa33e1e5cdea59916247082b6e6e6a3d99e
 ms.translationtype: MT
 ms.contentlocale: es-ES
 ms.lasthandoff: 11/01/2022
-ms.locfileid: "68806130"
+ms.locfileid: "68807593"
 ---
 # <a name="step-7--post-migration-steps"></a>Paso 7: Pasos posteriores a la migración
+
+Este es el paso 7 de una solución diseñada para completar una migración entre inquilinos de OneDrive. Para más información, consulte [Introducción a la migración de OneDrive entre inquilinos](cross-tenant-onedrive-migration.md).
+
+- Paso 1: [Conectarse al origen y a los inquilinos de destino](cross-tenant-onedrive-migration-step1.md)
+- Paso 2: [Establecer la confianza entre el inquilino de origen y el inquilino de destino](cross-tenant-onedrive-migration-step2.md) 
+- Paso 3: [Comprobar que se ha establecido la confianza](cross-tenant-onedrive-migration-step3.md) 
+- Paso 4: [Creación previa de usuarios y grupos](cross-tenant-onedrive-migration-step4.md)  
+- Paso 5: [Preparación de la asignación de identidades](cross-tenant-onedrive-migration-step5.md)
+- Paso 6: [Iniciar una migración entre inquilinos de OneDrive](cross-tenant-onedrive-migration-step6.md)
+- **Paso 7: [Pasos posteriores a la migración](cross-tenant-onedrive-migration-step7.md)**
 
 ## <a name="removing-trust-relationship"></a>Eliminación de la relación de confianza
 

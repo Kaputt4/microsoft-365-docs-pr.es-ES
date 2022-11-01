@@ -18,12 +18,13 @@ f1.keywords:
 - NOCSH
 description: Los movimientos de datos son operaciones de back-end que se producen cuando Microsoft mueve los servicios y los datos asociados del inquilino a una nueva ubicación geográfica del centro de datos.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 9df2cbbf802dcba692bbd3e4033e15128ee2a1a9
-ms.sourcegitcommit: 0b7070ec119e00e0dafe030bbfbef0ae5c9afa19
+ROBOTS: NOINDEX
+ms.openlocfilehash: 436e8f52940dd4ab036b0356da9c10b4785bd467
+ms.sourcegitcommit: b386eaa33e1e5cdea59916247082b6e6e6a3d99e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/29/2022
-ms.locfileid: "68171331"
+ms.lasthandoff: 11/01/2022
+ms.locfileid: "68807659"
 ---
 # <a name="during-and-after-your-data-move"></a>Durante y después del movimiento de datos
 

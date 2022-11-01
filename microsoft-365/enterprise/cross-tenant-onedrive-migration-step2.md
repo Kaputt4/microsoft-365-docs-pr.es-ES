@@ -15,14 +15,24 @@ ms.collection:
 - m365initiative-migratetom365
 search.appverid: MET150
 description: Paso 2 de la característica de migración entre inquilinos de OneDrive
-ms.openlocfilehash: 2f2a298178048eed82f4de4638ff94c19dfcfeda
-ms.sourcegitcommit: 0c72639cc3dc74667a6b14343d303f318e70d457
+ms.openlocfilehash: 424636e01b89420979752c7c9b0e61d778319725
+ms.sourcegitcommit: b386eaa33e1e5cdea59916247082b6e6e6a3d99e
 ms.translationtype: MT
 ms.contentlocale: es-ES
 ms.lasthandoff: 11/01/2022
-ms.locfileid: "68806274"
+ms.locfileid: "68807637"
 ---
-# <a name="step-2-cross-tenant-onedrive-migration---establishing-trust-between-the-source-and-target-tenants"></a>Paso 2: Migración entre inquilinos de OneDrive: establecer la confianza entre los inquilinos de origen y de destino
+# <a name="step-2-establishing-trust-between-the-source-and-target-tenants"></a>Paso 2: Establecer la confianza entre los inquilinos de origen y de destino
+
+Este es el paso 2 de una solución diseñada para completar una migración entre inquilinos de OneDrive. Para más información, consulte [Introducción a la migración de OneDrive entre inquilinos](cross-tenant-onedrive-migration.md).
+
+- Paso 1: [Conectarse al origen y a los inquilinos de destino](cross-tenant-onedrive-migration-step1.md)
+- **Paso 2: [Establecer la confianza entre el inquilino de origen y el inquilino de destino](cross-tenant-onedrive-migration-step2.md)** 
+- Paso 3: [Comprobar que se ha establecido la confianza](cross-tenant-onedrive-migration-step3.md) 
+- Paso 4: [Creación previa de usuarios y grupos](cross-tenant-onedrive-migration-step4.md)  
+- Paso 5: [Preparación de la asignación de identidades](cross-tenant-onedrive-migration-step5.md)
+- Paso 6: [Iniciar una migración entre inquilinos de OneDrive](cross-tenant-onedrive-migration-step6.md)
+- Paso 7: [Pasos posteriores a la migración](cross-tenant-onedrive-migration-step7.md)
 
 Después de conectarse al inquilino de origen y de destino, el siguiente paso para realizar una migración entre inquilinos de OneDrive es establecer la confianza entre los inquilinos.
 

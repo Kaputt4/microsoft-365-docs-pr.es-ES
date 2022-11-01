@@ -15,14 +15,24 @@ ms.collection:
 - m365initiative-migratetom365
 search.appverid: MET150
 description: Paso 6 de la característica de migración entre inquilinos de OneDrive
-ms.openlocfilehash: 6ebf12c11388d35daa4e8261c193af721af88124
-ms.sourcegitcommit: 0c72639cc3dc74667a6b14343d303f318e70d457
+ms.openlocfilehash: b12ff8d9b1aebcfa0286f7c1bc291586cb9c0f91
+ms.sourcegitcommit: b386eaa33e1e5cdea59916247082b6e6e6a3d99e
 ms.translationtype: MT
 ms.contentlocale: es-ES
 ms.lasthandoff: 11/01/2022
-ms.locfileid: "68806210"
+ms.locfileid: "68807725"
 ---
 # <a name="step-6-start-a-onedrive-cross-tenant-migration"></a>Paso 6: Iniciar una migración entre inquilinos de OneDrive
+
+Este es el paso 6 de una solución diseñada para completar una migración entre inquilinos de OneDrive. Para más información, consulte [Introducción a la migración de OneDrive entre inquilinos](cross-tenant-onedrive-migration.md).
+
+- Paso 1: [Conectarse al origen y a los inquilinos de destino](cross-tenant-onedrive-migration-step1.md)
+- Paso 2: [Establecer la confianza entre el inquilino de origen y el inquilino de destino](cross-tenant-onedrive-migration-step2.md) 
+- Paso 3: [Comprobar que se ha establecido la confianza](cross-tenant-onedrive-migration-step3.md) 
+- Paso 4: [Creación previa de usuarios y grupos](cross-tenant-onedrive-migration-step4.md)  
+- Paso 5: [Preparación de la asignación de identidades](cross-tenant-onedrive-migration-step5.md)
+- **Paso 6: [Iniciar una migración entre inquilinos de OneDrive](cross-tenant-onedrive-migration-step6.md)**
+- Paso 7: [Pasos posteriores a la migración](cross-tenant-onedrive-migration-step7.md)
 
 Ahora está listo para iniciar la migración de OneDrive.  Antes de iniciar cualquier migración entre inquilinos, siga estos pasos. 
 

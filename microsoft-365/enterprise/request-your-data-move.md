@@ -16,12 +16,13 @@ f1.keywords:
 description: Los clientes Office 365 existentes deben enviar una solicitud antes de la fecha límite para que su país mueva los datos de sus servicios de Microsoft 365 a su nueva ubicación geográfica.
 ms.custom: seo-marvel-apr2020
 ms.collection: scotvorg
-ms.openlocfilehash: bffd6c99f4df0cc89ae064d49fcc9c97d9e4dd3c
-ms.sourcegitcommit: 0b7070ec119e00e0dafe030bbfbef0ae5c9afa19
+ROBOTS: NOINDEX
+ms.openlocfilehash: f70e7d54dab18a400a0c07073f57678cf4647819
+ms.sourcegitcommit: b386eaa33e1e5cdea59916247082b6e6e6a3d99e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/29/2022
-ms.locfileid: "68208708"
+ms.lasthandoff: 11/01/2022
+ms.locfileid: "68807396"
 ---
 # <a name="how-to-request-your-data-move"></a>Cómo solicitar el movimiento de datos
 

@@ -16,12 +16,13 @@ ms.custom: seo-marvel-mar2020
 ms.collection:
 - scotvorg
 description: Encuentre respuestas a las preguntas más frecuentes sobre cómo mover datos principales a una nueva Office 365 ubicación geográfica del centro de datos.
-ms.openlocfilehash: af07ee89ffb8948ac2961db179112e70f3d0cfb4
-ms.sourcegitcommit: 0b7070ec119e00e0dafe030bbfbef0ae5c9afa19
+ROBOTS: NOINDEX
+ms.openlocfilehash: d7e6f063b92094c26054da15b6c45f4fea1b5ea3
+ms.sourcegitcommit: b386eaa33e1e5cdea59916247082b6e6e6a3d99e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/29/2022
-ms.locfileid: "68209016"
+ms.lasthandoff: 11/01/2022
+ms.locfileid: "68807703"
 ---
 # <a name="data-move-general-faq"></a>Preguntas más frecuentes sobre el movimiento de datos
 
