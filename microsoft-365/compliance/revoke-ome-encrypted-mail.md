@@ -16,12 +16,12 @@ ms.collection:
 search.appverid:
 - MET150
 description: Como administrador y como remitente de mensajes, puede revocar determinados correos electrónicos cifrados con cifrado avanzado de mensajes de Microsoft Purview.
-ms.openlocfilehash: 739165155817f3063bfb87aaae0bce7b3aa02931
-ms.sourcegitcommit: 0d8fb571024f134d7480fe14cffc5e31a687d356
+ms.openlocfilehash: bdae122260b932111017b1a0af31bb268d46a9d6
+ms.sourcegitcommit: a88aadf5786f1bd9e5bae763f603a2b690473322
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/20/2022
-ms.locfileid: "68643589"
+ms.lasthandoff: 11/02/2022
+ms.locfileid: "68817459"
 ---
 # <a name="revoke-email-encrypted-by-advanced-message-encryption"></a>Revocación del correo electrónico cifrado mediante cifrado avanzado de mensajes
 
@@ -90,15 +90,15 @@ Antes de poder revocar un correo cifrado, recopile el identificador de mensaje d
 
 Hay varias maneras de encontrar el identificador de mensaje del correo electrónico que desea revocar. En esta sección se describen un par de opciones, pero puede usar cualquier método que proporcione el identificador.
 
-#### <a name="to-identify-the-message-id-of-the-email-you-want-to-revoke-by-using-message-trace-in-the-security-amp-compliance-center"></a>Para identificar el identificador de mensaje del correo electrónico que desea revocar mediante seguimiento de mensajes en el Centro de cumplimiento de seguridad &amp;
+#### <a name="to-identify-the-message-id-of-the-email-you-want-to-revoke-by-using-message-trace-in-the-microsoft-purview-compliance-portal"></a>Para identificar el identificador de mensaje del correo electrónico que desea revocar mediante seguimiento de mensajes en el portal de cumplimiento Microsoft Purview
 
-1. Busque el correo electrónico por remitente o destinatario mediante [Nuevo seguimiento de mensajes en el Centro de cumplimiento de seguridad &](https://blogs.technet.microsoft.com/exchange/2018/05/02/new-message-trace-in-office-365-security-compliance-center/).
+1. Busque el correo electrónico por remitente o destinatario mediante [Nuevo seguimiento de mensajes en portal de cumplimiento Microsoft Purview](https://blogs.technet.microsoft.com/exchange/2018/05/02/new-message-trace-in-office-365-security-compliance-center/).
 
 2. Una vez que haya localizado el correo electrónico, selecciónelo para abrir el panel **Detalles del seguimiento de mensajes** . Expanda **Más información** para buscar el identificador de mensaje.
 
-#### <a name="to-identify-the-message-id-of-the-email-you-want-to-revoke-by-using-message-encryption-reports-in-the-security-amp-compliance-center"></a>Para identificar el identificador de mensaje del correo electrónico que desea revocar mediante informes de cifrado de mensajes en el Centro de cumplimiento de seguridad &amp;
+#### <a name="to-identify-the-message-id-of-the-email-you-want-to-revoke-by-using-message-encryption-reports-in-the-microsoft-purview-compliance-portal"></a>Para identificar el identificador de mensaje del correo electrónico que desea revocar mediante informes de cifrado de mensajes en el portal de cumplimiento Microsoft Purview
 
-1. En el Centro de cumplimiento de seguridad &amp; , vaya al **informe Cifrado de mensajes**. Para obtener información sobre este informe, vea [Ver informes de seguridad de correo electrónico en el Centro de cumplimiento de seguridad&amp;](../security/office-365-security/view-email-security-reports.md).
+1. En el portal de cumplimiento Microsoft Purview, vaya al **informe Cifrado de mensajes**. Para obtener información sobre este informe, vea [Ver informes de seguridad de correo electrónico en el Centro de cumplimiento de seguridad&amp;](../security/office-365-security/view-email-security-reports.md).
 
 2. Elija la tabla **Ver detalles** e identifique el mensaje que desea revocar.
 
@@ -106,7 +106,7 @@ Hay varias maneras de encontrar el identificador de mensaje del correo electrón
 
 ### <a name="step-2-verify-that-the-mail-is-revocable"></a>Paso 2. Comprobar que el correo es revocable
 
-Para comprobar si puede revocar un mensaje, compruebe si el campo Estado de revocación está visible en el informe Cifrado, en la tabla **Detalles** del Centro de cumplimiento de seguridad &amp; .
+Para comprobar si puede revocar un mensaje, compruebe si el campo Estado de revocación está visible en el informe Cifrado, en la tabla **Detalles** de la portal de cumplimiento Microsoft Purview.
 
 Para comprobar si puede revocar un mensaje de correo electrónico determinado mediante Windows PowerShell, complete estos pasos.
 
@@ -128,11 +128,11 @@ Para comprobar si puede revocar un mensaje de correo electrónico determinado me
 
 ### <a name="step-3-revoke-the-mail"></a>Paso 3. Revocar el correo
 
-Una vez que sepa el identificador de mensaje del correo electrónico que desea revocar y haya comprobado que el mensaje es revocable, puede revocar el correo electrónico mediante el Centro de cumplimiento de seguridad &amp; o Windows PowerShell.
+Una vez que sepa el identificador de mensaje del correo electrónico que desea revocar y haya comprobado que el mensaje es revocable, puede revocar el correo electrónico mediante el portal de cumplimiento Microsoft Purview o Windows PowerShell.
 
-Para revocar el mensaje mediante el Centro de cumplimiento de seguridad &amp;
+Para revocar el mensaje mediante el portal de cumplimiento Microsoft Purview
 
-1. Con una cuenta profesional o educativa que tenga permisos de administrador global en su organización, conéctese al Centro de cumplimiento de seguridad &.
+1. Con una cuenta profesional o educativa que tenga permisos de administrador global en su organización, conéctese a la portal de cumplimiento Microsoft Purview.
 
 2. En el **informe Cifrado**, en la tabla **Detalles** del mensaje, elija **Revocar mensaje**.
 

@@ -21,12 +21,12 @@ ms.custom:
 - admindeeplinkMAC
 - admindeeplinkEXCHANGE
 description: Obtenga información sobre cómo realizar la transición de archivos heredados a Office 365 cifrado de mensajes (OME) para su organización.
-ms.openlocfilehash: 97333df898dfd8aaff0670cc73b3c67a9325fd47
-ms.sourcegitcommit: 0d8fb571024f134d7480fe14cffc5e31a687d356
+ms.openlocfilehash: ef6dd13ee42d83a671486a502667b4ccaa9fea39
+ms.sourcegitcommit: a88aadf5786f1bd9e5bae763f603a2b690473322
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/20/2022
-ms.locfileid: "68626432"
+ms.lasthandoff: 11/02/2022
+ms.locfileid: "68817587"
 ---
 # <a name="legacy-information-for-office-365-message-encryption"></a>Información heredada para el cifrado de mensajes de Office 365
 
@@ -317,4 +317,4 @@ La [declaración de privacidad del portal de cifrado de mensajería de Office 36
 
 En primer lugar, compruebe la carpeta de correo no deseado en el cliente de correo electrónico. La configuración de DKIM y DMARC para su organización puede hacer que estos correos electrónicos terminen filtrados como correo no deseado.
 
-A continuación, compruebe la cuarentena en el Centro de cumplimiento de seguridad &. A menudo, los mensajes que contienen un código de paso único, especialmente los primeros que recibe su organización, terminan en cuarentena.
+A continuación, compruebe la cuarentena en el portal de cumplimiento Microsoft Purview. A menudo, los mensajes que contienen un código de paso único, especialmente los primeros que recibe su organización, terminan en cuarentena.

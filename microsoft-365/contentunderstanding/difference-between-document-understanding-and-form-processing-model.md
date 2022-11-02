@@ -13,12 +13,12 @@ ms.collection:
 - m365initiative-syntex
 ms.localizationpriority: medium
 description: Obtenga información sobre las diferencias clave entre los modelos personalizados en Microsoft Syntex.
-ms.openlocfilehash: a6102debf34c56807e8ca10b08c6f5abc52da3de
-ms.sourcegitcommit: ab45f2963e0635ff2cb9670f6f7b4c784f6a250e
+ms.openlocfilehash: 4ac3254b1351ebc9edfef744943f933a4916fe29
+ms.sourcegitcommit: a88aadf5786f1bd9e5bae763f603a2b690473322
 ms.translationtype: MT
 ms.contentlocale: es-ES
 ms.lasthandoff: 11/02/2022
-ms.locfileid: "68814899"
+ms.locfileid: "68817529"
 ---
 # <a name="compare-custom-models-in-microsoft-syntex"></a>Comparación de modelos personalizados en Microsoft Syntex 
 
@@ -26,7 +26,6 @@ Use la tabla siguiente para ver las diferencias en los modelos personalizados pa
 
 | Característica | Procesamiento de documentos no estructurados | Procesamiento de documentos de forma libre | Procesamiento estructurado de documentos |
 | ------- | ------- | ------- | ------- |
-| Método de creación | Método de entrenamiento | Método de selección de forma libre | Layout (método) |
 | Usar para este tipo de contenido | Formatos de archivo no estructurados o semiestructurados, por ejemplo, documentos de Office en los que hay diferencias en el diseño, pero sigue siendo información similar que se va a extraer. | Formatos de archivo no estructurados y de forma libre, por ejemplo, documentos que no tienen ninguna estructura establecida, como cartas, contratos e instrucciones de trabajo. | Formatos de archivo estructurados y semiestructurados, por ejemplo, archivos PDF para el contenido de formularios, como facturas o pedidos de compra, donde el diseño y el formato son similares. |
 | Método de entrenamiento | Método de enseñanza | Método de selección de forma libre | Layout (método) |
 | Creación de modelos | Modelo creado en SharePoint en un sitio nuevo, el centro de contenido.  | Modelo creado en [AI Builder](/ai-builder/overview) con acceso sin problemas desde la biblioteca de documentos de SharePoint.| Modelo creado en [AI Builder](/ai-builder/overview) con acceso sin problemas desde la biblioteca de documentos de SharePoint. |

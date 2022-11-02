@@ -19,12 +19,12 @@ ms.custom: ''
 description: Obtenga información sobre los rastreadores de amenazas, incluidos los nuevos rastreadores notables, para ayudar a su organización a mantenerse al tanto de los problemas de seguridad.
 ms.subservice: mdo
 ms.service: microsoft-365-security
-ms.openlocfilehash: 5bc2bfb0d6592b9afd5dd1d6295b1bc1cf7d014a
-ms.sourcegitcommit: 181a0aff54842dcbafd834647c6e9ee47304d10f
+ms.openlocfilehash: 1b0d22cbe4eb34d06e439d620b1b58d25e7ddd32
+ms.sourcegitcommit: a88aadf5786f1bd9e5bae763f603a2b690473322
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/27/2022
-ms.locfileid: "68728057"
+ms.lasthandoff: 11/02/2022
+ms.locfileid: "68817502"
 ---
 # <a name="threat-trackers---new-and-noteworthy"></a>Rastreadores de amenazas: nuevos y destacables
 
@@ -42,10 +42,6 @@ ms.locfileid: "68728057"
 ## <a name="what-are-threat-trackers"></a>¿Qué son los rastreadores de amenazas?
 
 Los rastreadores de amenazas son widgets informativos y vistas que le proporcionan inteligencia sobre diferentes problemas de ciberseguridad que podrían afectar a su empresa. Por ejemplo, puede ver información sobre las campañas de malware de tendencias mediante Los rastreadores de amenazas.
-
-La mayoría de las páginas de seguimiento incluyen números de tendencia que se actualizan periódicamente, widgets para ayudarle a comprender qué problemas son los más grandes o que más han crecido, y un vínculo rápido en la columna **Acciones** que le lleva al Explorador, donde puede ver información más detallada.
-
-:::image type="content" source="../../media/e426f220-fdcb-4dd9-99a2-db97dbcf71d5.png" alt-text="Ejemplo de información de campaña en el Explorador" lightbox="../../media/e426f220-fdcb-4dd9-99a2-db97dbcf71d5.png":::
 
 Los rastreadores son solo algunas de las muchas características excelentes que se obtienen con [Microsoft Defender para Office 365 Plan 2](office-365-ti.md). Los rastreadores de amenazas incluyen [rastreadores notables](#noteworthy-trackers), [seguimientos de tendencias](#trending-trackers), [consultas con seguimiento](#tracked-queries) y [consultas guardadas](#saved-queries).
 

@@ -14,12 +14,12 @@ ms.collection:
 - m365initiative-migratetom365
 search.appverid: MET150
 description: Migración entre inquilinos de OneDrive
-ms.openlocfilehash: 0088e7088dd67fd3a4d189eacdacde5362d0ff73
-ms.sourcegitcommit: ab45f2963e0635ff2cb9670f6f7b4c784f6a250e
+ms.openlocfilehash: d17c1ff16dc5cc4a833fb0f37823516b335ea34c
+ms.sourcegitcommit: a88aadf5786f1bd9e5bae763f603a2b690473322
 ms.translationtype: MT
 ms.contentlocale: es-ES
 ms.lasthandoff: 11/02/2022
-ms.locfileid: "68814107"
+ms.locfileid: "68817232"
 ---
 # <a name="cross-tenant-onedrive-migration"></a>Migración entre inquilinos de OneDrive
 
@@ -34,7 +34,8 @@ Los administradores de SharePoint de dos inquilinos independientes pueden usar e
 
 Se pueden programar hasta 4000 cuentas de OneDrive para la migración de antemano en un momento dado. Una vez programadas, las migraciones se producen sin que los datos del usuario salgan de la nube de Microsoft 365 y con una interrupción mínima, lo que requiere solo unos minutos en los que OneDrive de un usuario será de solo lectura. Una vez completadas las migraciones, se coloca una redirección en la ubicación de OneDrive original del usuario, por lo que los vínculos a archivos y carpetas pueden seguir funcionando en la nueva ubicación. 
 
-Esta característica no es compatible con los usuarios de la nube para administración pública, incluidos GCC, Consumidor, GCC High o DoD.
+>[!Note]
+>Esta característica no es compatible con los usuarios de la nube para administración pública, incluidos GCC, Consumidor, GCC High o DoD.
 
 ## <a name="licensing"></a>Licencias
 
