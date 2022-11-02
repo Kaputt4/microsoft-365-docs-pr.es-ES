@@ -19,12 +19,12 @@ ms.collection:
 search.appverid:
 - MET150
 description: Obtenga información sobre cómo definir la configuración central de prevención de pérdida de datos en el punto de conexión (DLP).
-ms.openlocfilehash: eaa286aa1767b1cbf401d44035d1ed240131af69
-ms.sourcegitcommit: a250d043a2e42ecbc7b86147468d1660af5a6ba7
+ms.openlocfilehash: 155de9a60966f53b1b0e8b8d41e2d1e7e8e8a063
+ms.sourcegitcommit: ab45f2963e0635ff2cb9670f6f7b4c784f6a250e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/21/2022
-ms.locfileid: "68672961"
+ms.lasthandoff: 11/02/2022
+ms.locfileid: "68813205"
 ---
 # <a name="configure-endpoint-data-loss-prevention-settings"></a>Configuración de la prevención de pérdida de datos de punto de conexión
 
@@ -253,7 +253,7 @@ Por ejemplo, con esta configuración:
 
 - **El modo de lista de dominios de servicio** está establecido en **Permitir**.
     - Contoso.com está en la lista.
--  Una directiva DLP se establece en **Bloquear** la carga de elementos confidenciales que contienen números de tarjeta de crédito.
+    -  Una directiva DLP se establece en **Bloquear** la carga de elementos confidenciales que contienen números de tarjeta de crédito.
  
 El usuario intenta:
 
@@ -289,6 +289,15 @@ pero si un usuario intenta:
 
 > [!IMPORTANT]
 > Cuando el modo de restricción del servicio esté establecido en "Permitir", debe tener al menos un dominio de servicio configurado antes de que las restricciones se apliquen.
+
+Tabla de resumen
+
+
+|Configuración de la lista de dominios de servicio |Carga de elementos confidenciales en el sitio de la lista  |Carga de un elemento confidencial en el sitio que no está en la lista  |
+|---------|---------|---------|
+|Permitir   |- No se aplican directivas DLP </br> - La actividad del usuario se audita </br> - Evento generado        | : se aplican directivas DLP </br> : se realizan acciones configuradas </br>- Se genera el evento </br>- Se genera una alerta          |
+|Bloquear    | : se aplican directivas DLP </br> : se realizan acciones configuradas </br> - Se genera el evento </br> - Se genera una alerta         | - No se aplican directivas DLP </br> - La actividad del usuario se audita </br>- Se genera el evento         |
+
 
 Use el formato FQDN del dominio de servicio sin finalizar `.` al agregar un dominio a la lista.
 

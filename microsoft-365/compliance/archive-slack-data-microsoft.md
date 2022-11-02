@@ -15,12 +15,12 @@ ms.collection:
 - tier3
 - purview-compliance
 - data-connectors
-ms.openlocfilehash: 519a86113b8258f28dc7d283809af4167b2531eb
-ms.sourcegitcommit: 8d3c027592a638f411f87d89772dd3d39e92aab0
+ms.openlocfilehash: 8c117a8410af9774adf992f3559b10cf02158c28
+ms.sourcegitcommit: ab45f2963e0635ff2cb9670f6f7b4c784f6a250e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/12/2022
-ms.locfileid: "68533122"
+ms.lasthandoff: 11/02/2022
+ms.locfileid: "68811817"
 ---
 # <a name="set-up-a-connector-to-archive-slack-ediscovery-data-preview"></a>Configuración de un conector para archivar datos de Slack eDiscovery (versión preliminar)
 
@@ -48,9 +48,9 @@ En la información general siguiente se explica el proceso de uso de un conector
 
 - Al usuario que crea el conector de datos se le debe asignar el rol de aplicación **Propietarios** de la organización en su organización de Slack. Para obtener más información, consulte [Tipos de roles en Slack](https://slack.com/intl/en-gb/help/articles/360018112273-Types-of-roles-in-Slack).
 
-- Obtenga el nombre de usuario y la contraseña de la cuenta empresarial de Slack de su organización. Estas credenciales se usan para iniciar sesión en esta cuenta al crear el conector de datos. También se recomienda que haya configurado el aprovisionamiento de usuarios automatizado en su organización de Slack para usar el inicio de sesión único (SSO). [Roles en el Centro de cumplimiento de & de seguridad](../security/office-365-security/permissions-in-the-security-and-compliance-center.md#roles-in-the-security--compliance-center)
+- Obtenga el nombre de usuario y la contraseña de la cuenta empresarial de Slack de su organización. Estas credenciales se usan para iniciar sesión en esta cuenta al crear el conector de datos. También se recomienda que haya configurado el aprovisionamiento de usuarios automatizado en su organización de Slack para usar el inicio de sesión único (SSO). [Roles en el Centro de cumplimiento de & de seguridad](../security/office-365-security/permissions-in-the-security-and-compliance-center.md#roles-in-the-defender-and-compliance-portals)
 
-- Al usuario que crea el conector de Slack eDiscovery se le debe asignar el rol Administración Conector de datos. Este rol es necesario para agregar conectores en la página **Conectores de datos** de la portal de cumplimiento Microsoft Purview. Este rol se agrega de forma predeterminada a varios grupos de roles. Para obtener una lista de estos grupos de roles, consulte la sección "Roles en los centros de seguridad y cumplimiento" de [Permisos en el Centro de cumplimiento de & seguridad](../security/office-365-security/permissions-in-the-security-and-compliance-center.md#roles-in-the-security--compliance-center). Como alternativa, un administrador de su organización puede crear un grupo de roles personalizado, asignar el rol Administración conector de datos y, a continuación, agregar los usuarios adecuados como miembros. Para obtener instrucciones, consulte la sección "Crear un grupo de roles personalizado" en [Permisos en el portal de cumplimiento Microsoft Purview](microsoft-365-compliance-center-permissions.md#create-a-custom-role-group).
+- Al usuario que crea el conector de Slack eDiscovery se le debe asignar el rol Administración Conector de datos. Este rol es necesario para agregar conectores en la página **Conectores de datos** de la portal de cumplimiento Microsoft Purview. Este rol se agrega de forma predeterminada a varios grupos de roles. Para obtener una lista de estos grupos de roles, consulte la sección "Roles en los portales de defender y cumplimiento" de [Roles y grupos de roles en los portales de cumplimiento de Microsoft 365 Defender y Microsoft Purview](../security/office-365-security/permissions-in-the-security-and-compliance-center.md#roles-in-the-defender-and-compliance-portals). Como alternativa, un administrador de su organización puede crear un grupo de roles personalizado, asignar el rol Administración conector de datos y, a continuación, agregar los usuarios adecuados como miembros. Para obtener instrucciones, consulte la sección "Crear un grupo de roles personalizado" en [Permisos en el portal de cumplimiento Microsoft Purview](microsoft-365-compliance-center-permissions.md#create-a-custom-role-group).
 
 ## <a name="step-1-create-a-slack-ediscovery-connector"></a>Paso 1: Crear un conector de eDiscovery de Slack
 

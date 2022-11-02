@@ -1,5 +1,5 @@
 ---
-title: Plan de implementación de Confianza cero de Microsoft 365
+title: Confianza cero plan de implementación con Microsoft 365
 f1.keywords:
 - deploy zero trust
 - zero trust strategy
@@ -7,7 +7,7 @@ ms.author: bcarter
 author: brendacarter
 manager: dansimp
 audience: Admin
-description: Obtenga información sobre cómo implementar la seguridad de Microsoft 365 Confianza cero en su entorno para defenderse frente a amenazas y proteger la información confidencial.
+description: Aprenda a aplicar Confianza cero principios de seguridad con Microsoft 365 para defenderse de amenazas y proteger la información confidencial.
 ms.topic: tutorial
 ms.service: microsoft-365-security
 ms.localizationpriority: medium
@@ -20,14 +20,14 @@ ms.collection:
 - zerotrust-solution
 - highpri
 - tier1
-ms.openlocfilehash: 7293085f5a16c05d5657246de481857fe6675d26
-ms.sourcegitcommit: d0557f757cfa48330ed57e966033891d10f03688
+ms.openlocfilehash: de227a1f4524770709e1a25345cfbdb697076c8d
+ms.sourcegitcommit: ab45f2963e0635ff2cb9670f6f7b4c784f6a250e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/06/2022
-ms.locfileid: "68492299"
+ms.lasthandoff: 11/02/2022
+ms.locfileid: "68815603"
 ---
-# <a name="microsoft-365-zero-trust-deployment-plan"></a>Plan de implementación de Confianza cero de Microsoft 365
+# <a name="zero-trust-deployment-plan-with-microsoft-365"></a>Confianza cero plan de implementación con Microsoft 365
 
 En este artículo se proporciona un plan de implementación para crear **Confianza cero** seguridad con Microsoft 365. Confianza cero es un nuevo modelo de seguridad que supone una infracción y comprueba cada solicitud como si se originase en una red no controlada. Independientemente de dónde se origine la solicitud o del recurso al que acceda, el modelo de Confianza cero nos enseña a "no confiar nunca, comprobar siempre".
 

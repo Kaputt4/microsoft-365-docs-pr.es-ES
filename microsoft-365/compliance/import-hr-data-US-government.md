@@ -19,12 +19,12 @@ ms.collection:
 - data-connectors
 ms.custom: admindeeplinkCOMPLIANCE
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: b669d4c283cc0cb462ae14f22fad8f73e1c8b5ac
-ms.sourcegitcommit: 8d3c027592a638f411f87d89772dd3d39e92aab0
+ms.openlocfilehash: 6fd524166e436a97512063ca7bbd2eef8720ca88
+ms.sourcegitcommit: ab45f2963e0635ff2cb9670f6f7b4c784f6a250e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/12/2022
-ms.locfileid: "68536112"
+ms.lasthandoff: 11/02/2022
+ms.locfileid: "68815295"
 ---
 # <a name="set-up-a-connector-to-import-hr-data-in-us-government"></a>Configuración de un conector para importar datos de RR. HH. en el Gobierno de EE. UU.
 
@@ -34,7 +34,7 @@ Puede configurar un conector de datos en el portal de cumplimiento Microsoft Pur
 
 ## <a name="before-you-begin"></a>Antes de empezar
 
-- Al usuario que crea el conector de RR. HH. en el paso 3 se le debe asignar el rol Administración conector de datos. Este rol es necesario para agregar conectores en la página **Conectores de datos** del portal de cumplimiento. Este rol se agrega de forma predeterminada a varios grupos de roles. Para obtener una lista de estos grupos de roles, consulte la sección "Roles en los centros de seguridad y cumplimiento" de [Permisos en el Centro de cumplimiento de & seguridad](../security/office-365-security/permissions-in-the-security-and-compliance-center.md#roles-in-the-security--compliance-center). Como alternativa, un administrador de su organización puede crear un grupo de roles personalizado, asignar el rol Administración conector de datos y, a continuación, agregar los usuarios adecuados como miembros. Para obtener instrucciones, consulte la sección "Crear un grupo de roles personalizado" en [Permisos en el portal de cumplimiento Microsoft Purview](microsoft-365-compliance-center-permissions.md#create-a-custom-role-group).
+- Al usuario que crea el conector de RR. HH. en el paso 3 se le debe asignar el rol Administración conector de datos. Este rol es necesario para agregar conectores en la página **Conectores de datos** del portal de cumplimiento. Este rol se agrega de forma predeterminada a varios grupos de roles. Para obtener una lista de estos grupos de roles, consulte la sección "Roles en los portales de defender y cumplimiento" de [Roles y grupos de roles en los portales de cumplimiento de Microsoft 365 Defender y Microsoft Purview](../security/office-365-security/permissions-in-the-security-and-compliance-center.md#roles-in-the-defender-and-compliance-portals). Como alternativa, un administrador de su organización puede crear un grupo de roles personalizado, asignar el rol Administración conector de datos y, a continuación, agregar los usuarios adecuados como miembros. Para obtener instrucciones, consulte la sección "Crear un grupo de roles personalizado" en [Permisos en el portal de cumplimiento Microsoft Purview](microsoft-365-compliance-center-permissions.md#create-a-custom-role-group).
 
    > [!NOTE]
    > El rol de Administración del conector de datos no se admite actualmente en los entornos GCC High y DoD del Gobierno de EE. UU. Por lo tanto, al usuario que crea el conector de RR. HH. en entornos de GCC High y DoD se le debe asignar el rol Exportación de importación de buzones en Exchange Online. Este rol no está asignado a ningún grupo de roles de Exchange Online de forma predeterminada. Puede agregar el rol Exportación de importación de buzones al grupo de roles Administración de la organización en Exchange Online. O bien, puede crear un nuevo grupo de roles, asignar el rol Exportar importación de buzón y, a continuación, agregar los usuarios adecuados como miembros. Para obtener más información, vea las secciones [Crear grupos de roles](/Exchange/permissions-exo/role-groups#create-role-groups) o [Modificar grupos de roles](/Exchange/permissions-exo/role-groups#modify-role-groups) en el artículo "Administrar grupos de roles en Exchange Online".

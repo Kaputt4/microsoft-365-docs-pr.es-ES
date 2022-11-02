@@ -18,12 +18,12 @@ ms.assetid: e3c6df61-8513-499d-ad8e-8a91770bff63
 ms.collection:
 - purview-compliance
 ms.custom: seo-marvel-mar2020
-ms.openlocfilehash: 0d84b220496fd0a8f371e57492bb9f4cdd009be8
-ms.sourcegitcommit: 21548843708d80bc861f03ffae41457252492bb6
+ms.openlocfilehash: 2caf9fb9c958eae004fe8754009d325673066129
+ms.sourcegitcommit: ab45f2963e0635ff2cb9670f6f7b4c784f6a250e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/31/2022
-ms.locfileid: "68793750"
+ms.lasthandoff: 11/02/2022
+ms.locfileid: "68814635"
 ---
 # <a name="whats-new-in-microsoft-purview-risk-and-compliance-solutions"></a>Novedades de las soluciones de cumplimiento y riesgo de Microsoft Purview
 
@@ -49,6 +49,22 @@ Ya sea agregando nuevas soluciones a la [portal de cumplimiento Microsoft Purvie
 
 - **En versión preliminar**: nueva integración de cumplimiento de comunicaciones [con la administración de riesgos internos](/microsoft-365/compliance/communication-compliance#integration-with-insider-risk-management-preview). El cumplimiento de comunicaciones ahora puede proporcionar señales de riesgo detectadas en los mensajes a las directivas de administración de riesgos internos. Los usuarios de riesgo detectados en los mensajes por la directiva de cumplimiento de comunicaciones actúan como un evento desencadenante para que los usuarios entren en el ámbito de las directivas de administración de riesgos internos.
 
+### <a name="data-loss-prevention"></a>Prevención de pérdida de datos
+
+- **En versión preliminar** Varias actualizaciones para grupos de autorización en [Configuración de la DLP de punto de conexión](/microsoft-365/compliance/dlp-configure-endpoint-settings.md) y [Uso de la prevención de pérdida de datos de punto de conexión](/microsoft-365/compliance/endpoint-dlp-using.md).
+    - [Grupos de impresoras](/microsoft-365/compliance/dlp-configure-endpoint-settings.md#printer-groups-preview)
+    - [Grupos de dispositivos de almacenamiento USB extraíbles](/microsoft-365/compliance/dlp-configure-endpoint-settings.md#removable-storage-device-groups-preview)
+    - [Rutas de acceso de recursos compartidos de red](/microsoft-365/compliance/dlp-configure-endpoint-settings.md#network-share-groups-preview)
+    - [Grupos de sitios web](/microsoft-365/compliance/endpoint-dlp-using.md#scenario-4-avoid-looping-dlp-notifications-from-cloud-synchronization-apps-with-auto-quarantine-preview)
+    - [Grupos de ubicación de red VPN](/microsoft-365/compliance/dlp-configure-endpoint-settings.md#vpn-settings-preview)
+    - [Dominios de servicio confidenciales](/microsoft-365/compliance/dlp-configure-endpoint-settings.md#sensitive-service-domains)
+- **En versión preliminar** Las directivas pueden usar la agrupación de condiciones, el anidamiento de grupos y el uso de operadores booleanos (AND/OR/NOT) entre ellos.
+    - [Diseño complejo de reglas](/microsoft-365/compliance/dlp-policy-design.md#complex-rule-design-preview)
+    - [Uso de clasificadores entrenables como condiciones en las directivas DLP](/microsoft-365/compliance/dlp-policy-reference.md#location-support-for-how-content-can-be-defined)
+-  **En versión preliminar** En el caso de los puntos de conexión, compatibilidad con la detección de elementos confidenciales protegidos con contraseña o cifrados.
+    - [Condiciones que admiten los dispositivos](/microsoft-365/compliance/dlp-policy-reference.md#conditions-devices-supports)
+- **Disponibles con carácter general** [100 nuevos tipos de archivos que se pueden examinar](/exchange/security-and-compliance/mail-flow-rules/inspect-message-attachments.md#supported-file-types-for-mail-flow-rule-content-inspection)
+
 ### <a name="insider-risk-management"></a>Administración de riesgos internos
 
 - **En versión preliminar**: Insider Risk Management presenta [pruebas forenses](/microsoft-365/compliance/insider-risk-management-forensic-evidence), que permiten capturar actividades visuales personalizables en todos los dispositivos para ayudar a su organización a mitigar, comprender y responder mejor a posibles riesgos de datos, como la filtración de datos no autorizados de datos confidenciales.
@@ -71,9 +87,11 @@ Ya sea agregando nuevas soluciones a la [portal de cumplimiento Microsoft Purvie
 - **En versión preliminar**: [las directivas de transferencia de datos](/privacy/priva/risk-management-policy-data-transfer) de Privacy Risk Management ahora ofrecen condiciones de límite flexibles adicionales: detección de transferencias basadas en los atributos de Azure Active Directory de los usuarios, transferencias entre usuarios en diferentes grupos de Microsoft 365 y transferencias entre sitios de SharePoint.
 
 ### <a name="on-premises-scanner"></a>Escáner local
+
 - **En versión preliminar**: se cambia el nombre del analizador local de Azure Information Protection (AIP) **Microsoft Purview Information Protection escáner** y [la configuración se mueve a la portal de cumplimiento Microsoft Purview](/information-protection/deploy-aip-scanner-configure-install).
 
 ### <a name="sensitivity-labels"></a>Etiquetas de confidencialidad
+
 - Llamada a la acción: [guía de migración](sensitivity-labels-aip.md) para ayudarle a pasar del complemento AIP para aplicaciones de Office, con un [cuaderno de estrategias de migración](https://microsoft.github.io/ComplianceCxE/playbooks/AIP2MIPPlaybook) de nuestro equipo de Ingeniería de la experiencia del cliente (CxE)
 - **Disponibilidad general (GA):** contextos de autenticación para grupos de etiquetas [y configuración de sitio](sensitivity-labels-teams-groups-sites.md#how-to-configure-groups-and-site-settings) que funcionan con directivas de acceso condicional de Azure AD para aplicar condiciones de acceso más estrictas a un sitio.
 - **Disponibilidad general (GA):** [permisos de uso compartido de sitios mediante PowerShell](sensitivity-labels-teams-groups-sites.md#configure-site-sharing-permissions-by-using-powershell-advanced-settings).
@@ -81,6 +99,11 @@ Ya sea agregando nuevas soluciones a la [portal de cumplimiento Microsoft Purvie
 - **En versión preliminar**: el complemento AIP para aplicaciones de Office está [deshabilitado de forma predeterminada](sensitivity-labels-aip.md#how-to-disable-the-aip-add-in-to-use-built-in-labeling-for-office-apps) y requiere una nueva configuración para invalidar este valor predeterminado.
 - Instrucción de compatibilidad: [tipos de archivos admitidos para SharePoint y OneDrive](sensitivity-labels-sharepoint-onedrive-files.md#supported-file-types), después de habilitar las etiquetas de confidencialidad para estos servicios.
 - Nuevo [requisito previo para la coautoría](sensitivity-labels-coauthoring.md#prerequisites) y azure Information Protection cliente y analizador de etiquetado unificados: no se admite el uso del cifrado de doble clave en el mismo inquilino que la característica de coautoría.
+
+### <a name="trainable-classifiers"></a>Clasificadores que se pueden entrenar
+
+- **En la versión preliminar** 20 + nuevos clasificadores entrenables y un artículo sobre definiciones de clasificador entrenables independientes.
+    - [Definiciones de clasificadores entrenables](/microsoft-365/compliance/classifier-tc-definitions.md)
 
 ## <a name="september-2022"></a>Septiembre de 2022
 
@@ -327,7 +350,7 @@ Para satisfacer los desafíos del área de trabajo descentralizada y rica en dat
 
 | **Nombre anterior** | **Nombre nuevo** | **Descripción** |
 |:----------------|:-------------|:----------------|
-| Auditoría avanzada de Microsoft 365 <br><br> Auditoría básica de Microsoft 365 | Auditoría de Microsoft Purview (Premium) <br><br> Auditoría de Microsoft Purview (estándar)| Las soluciones de auditoría proporcionan una solución integrada para ayudar a las organizaciones a responder eficazmente a eventos de seguridad, investigaciones forenses, investigaciones internas y obligaciones de cumplimiento. Para obtener más información, consulte [Auditoría avanzada de Microsoft Purview (Premium)](advanced-audit.md) y [Auditoría avanzada de Microsoft Purview (estándar).](set-up-basic-audit.md) |
+| Auditoría avanzada de Microsoft 365 <br><br> auditoría de Microsoft 365 Básico | Auditoría de Microsoft Purview (Premium) <br><br> Auditoría de Microsoft Purview (estándar)| Las soluciones de auditoría proporcionan una solución integrada para ayudar a las organizaciones a responder eficazmente a eventos de seguridad, investigaciones forenses, investigaciones internas y obligaciones de cumplimiento. Para obtener más información, consulte [Auditoría avanzada de Microsoft Purview (Premium)](advanced-audit.md) y [Auditoría avanzada de Microsoft Purview (estándar).](set-up-basic-audit.md) |
 | Cumplimiento de comunicaciones de Microsoft 365 | Cumplimiento de comunicaciones de Microsoft Purview | El cumplimiento de comunicaciones ayuda a minimizar los riesgos, ya que le ayuda a detectar, capturar y tomar medidas correctivas rápidamente para los canales de comunicación de la empresa y las infracciones de directivas. Para más información, consulte [Cumplimiento de comunicaciones de Microsoft Purview](communication-compliance-solution-overview.md). |
 | Administrador de cumplimiento de Microsoft | Administrador de cumplimiento de Microsoft Purview | El Administrador de cumplimiento puede ayudarle a lo largo del proceso de cumplimiento, desde realizar un inventario de los riesgos de protección de datos hasta administrar las complejidades de la implementación de controles, estar al corriente de las normativas y certificaciones e informar a los auditores. Para más información, consulte [Administrador de cumplimiento de Microsoft Purview](compliance-manager.md). |
 | Clave de cliente de Microsoft 365 | Clave de cliente de Microsoft Purview | La clave de cliente proporciona protección adicional contra la visualización de datos por parte de sistemas o personal no autorizados, y complementa el cifrado de disco de BitLocker en centros de datos de Microsoft. Para obtener más información, consulte [Clave de cliente de Microsoft Purview](customer-key-overview.md). |

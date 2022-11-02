@@ -19,12 +19,12 @@ ms.collection:
 - m365initiative-compliance
 - highpri
 ms.custom: admindeeplinkCOMPLIANCE
-ms.openlocfilehash: 0dc240addd772dc820838a1f213fcfeb9aa43a07
-ms.sourcegitcommit: 21548843708d80bc861f03ffae41457252492bb6
+ms.openlocfilehash: 6304ff45bb5ee9b05061f0ff4c793c875fed4233
+ms.sourcegitcommit: ab45f2963e0635ff2cb9670f6f7b4c784f6a250e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/31/2022
-ms.locfileid: "68793376"
+ms.lasthandoff: 11/02/2022
+ms.locfileid: "68812545"
 ---
 # <a name="get-started-with-insider-risk-management-settings"></a>Introducción a la configuración de administración de riesgos internos
 
@@ -360,15 +360,15 @@ Para usar las API para revisar la información de alertas de riesgo internos:
 
 ![Configuración de alertas de exportación de administración de riesgos internos.](../media/insider-risk-settings-export.png)
 
-La información de alerta contiene información del esquema de alertas de seguridad y cumplimiento y del esquema común de la API de actividad de Office 365 Management.
+La información de alerta contiene información del esquema alertas de seguridad y cumplimiento y el esquema común [de la API de actividad de Office 365 Management](/office/office-365-management-api/office-365-management-activity-api-schema.md#security-and-compliance-alerts-schema).
 
-Los siguientes campos y valores se exportan para las alertas de administración de riesgos internos para el esquema de alertas de cumplimiento de seguridad &:
+Los siguientes campos y valores se exportan para las alertas de administración de riesgos internos para el esquema alertas de seguridad y cumplimiento:
 
 | **Parámetro de alerta** | **Descripción** |
 |:------------------|:----------------|
 | AlertType | El tipo de la alerta es *Custom*.  |
 | AlertId | GUID de la alerta. Las alertas de administración de riesgos internos son mutables. A medida que cambia el estado de la alerta, se genera un nuevo registro con el mismo AlertID. Este AlertID se puede usar para correlacionar las actualizaciones de una alerta. |
-| Categoría | La categoría de la alerta es *InsiderRiskManagement*. Esta categoría se puede usar para distinguir de estas alertas de otras alertas de cumplimiento de seguridad &. |
+| Categoría | La categoría de la alerta es *InsiderRiskManagement*. Esta categoría se puede usar para distinguir de estas alertas de otras alertas de seguridad y cumplimiento. |
 | Comentarios | Comentarios predeterminados para la alerta. Los valores son *Nueva alerta* (registrada cuando se crea una alerta) y *Alerta actualizada* (registrada cuando hay una actualización de una alerta). Use AlertID para correlacionar las actualizaciones de una alerta. |
 | Datos | Los datos de la alerta incluyen el identificador de usuario único, el nombre principal de usuario y la fecha y hora (UTC) cuando el usuario se desencadenó en una directiva. |
 | Nombre | Nombre de directiva para la directiva de administración de riesgos internos que generó la alerta. |
@@ -376,7 +376,7 @@ Los siguientes campos y valores se exportan para las alertas de administración 
 | Severity | Gravedad de la alerta. Los valores son *Alto*, *Medio* o *Bajo*. |
 | Origen | Origen de la alerta. El valor es *Office 365 Security & Compliance*. |
 | Estado | Estado de la alerta. Los valores son *Activos* (*Revisión de necesidades* en riesgo interno), *Investigar* (*Confirmado* en riesgo interno), *Resuelto* (*Resuelto* en riesgo interno), *Descartado* (*Descartado* en riesgo interno). |
-| Versión | Versión del esquema de alertas de seguridad y cumplimiento. |
+| Versión | Versión del esquema alertas de seguridad y cumplimiento. |
 
 Los siguientes campos y valores se exportan para las alertas de administración de riesgos internos para el [esquema común de la API de actividad de Office 365 Management](/office/office-365-management-api/office-365-management-activity-api-schema#common-schema).
 

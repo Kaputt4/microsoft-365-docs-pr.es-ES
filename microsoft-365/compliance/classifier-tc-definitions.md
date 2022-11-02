@@ -20,19 +20,19 @@ search.appverid:
 - MOE150
 - MET150
 description: Esta es una lista de todos los clasificadores entrenables, sus definiciones y todos los tipos de archivo que buscan para encontrar información confidencial.
-ms.openlocfilehash: d62e3e9b32a7ab977c0b052725b472ac326967f3
-ms.sourcegitcommit: a250d043a2e42ecbc7b86147468d1660af5a6ba7
+ms.openlocfilehash: 91f4350250adf5f2bd20bc67183f183539887a6c
+ms.sourcegitcommit: ab45f2963e0635ff2cb9670f6f7b4c784f6a250e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/21/2022
-ms.locfileid: "68673159"
+ms.lasthandoff: 11/02/2022
+ms.locfileid: "68814063"
 ---
 # <a name="trainable-classifiers-definitions"></a>Definiciones de clasificadores entrenables
 
 Microsoft Purview incluye varios clasificadores previamente entrenados. Aparecen en la vista **Clasificadores entrenables** de **clasificación** \> de **datos portal de cumplimiento Microsoft Purview** \> con el estado de `Ready to use`.
 
 
-- **Adulto, racy y gory**: detecta imágenes de estos tipos. Las imágenes deben tener un tamaño de entre 50 kilobytes (KB) y 4 megabytes (MB) y superar los 50 x 50 píxeles de alto x ancho. El examen y la detección son compatibles con Exchange Online mensajes de correo electrónico y los canales y chats de Microsoft Teams. Detecta contenido en archivos .jpeg, .png, .gif y .bmp.
+- **Adulto, racy y gory**: detecta imágenes de estos tipos. Las imágenes deben tener un tamaño de entre 100 kilobytes (KB) y 4 megabytes (MB) y ser mayores que 50 x 50 píxeles de alto x ancho. El examen y la detección son compatibles con Exchange Online mensajes de correo electrónico y los canales y chats de Microsoft Teams. Detecta contenido en archivos .jpeg, .png, .gif y .bmp.
 
 - **Acuerdos**: detecta contenido relacionado con contratos legales como contratos de no divulgación, declaraciones de trabajo, contratos de préstamo y arrendamiento, contratos de empleo y contratos de no competencia. Detecta contenido en los archivos .docx, .docm, .doc, .dotx, .dotm, .dot, .pdf, .rtf, .txt, .one, .msg, .eml.
 

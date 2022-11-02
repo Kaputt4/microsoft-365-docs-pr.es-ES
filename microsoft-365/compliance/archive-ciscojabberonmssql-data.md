@@ -15,12 +15,12 @@ ms.collection:
 - tier3
 - purview-compliance
 - data-connectors
-ms.openlocfilehash: 2c0eb6ad56705829c7973d1d94714b0fdc3a3b0d
-ms.sourcegitcommit: 8d3c027592a638f411f87d89772dd3d39e92aab0
+ms.openlocfilehash: f3db6ea13ed6c2c9a516bf9d79041998f3634797
+ms.sourcegitcommit: ab45f2963e0635ff2cb9670f6f7b4c784f6a250e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/12/2022
-ms.locfileid: "68535545"
+ms.lasthandoff: 11/02/2022
+ms.locfileid: "68812479"
 ---
 # <a name="set-up-a-connector-to-archive-cisco-jabber-on-ms-sql-data"></a>Configuración de un conector para archivar Cisco Jabber en datos de MS SQL
 
@@ -50,7 +50,7 @@ En la información general siguiente se explica el proceso de uso de un conector
 
 - Configure una SQL Database MS para recuperar elementos del Jabber antes de crear el conector en el paso 1. Usted especificará las configuraciones de conexión para el MS SQL Database al configurar el conector del Jabber de Cisco en el paso 2. Para obtener más información, consulte la [Guía del usuario de conectores de terceros merge1](https://docs.ms.merge1.globanetportal.com/Merge1%20Third-Party%20Connectors%20Cisco%20Jabber%20on%20MS%20SQL%20User%20Guide%20.pdf).
 
-- El usuario que crea el conector del Jabber de Cisco en el paso 1 (y lo completa en el paso 3) debe ser asignado el rol Administración del conector de datos. Este rol es necesario para agregar conectores en la página **Conectores de datos** del portal de cumplimiento. Este rol se agrega de forma predeterminada a varios grupos de roles. Para obtener una lista de estos grupos de roles, consulte la sección "Roles en los centros de seguridad y cumplimiento" de [Permisos en el Centro de cumplimiento de & seguridad](../security/office-365-security/permissions-in-the-security-and-compliance-center.md#roles-in-the-security--compliance-center). Como alternativa, un administrador de su organización puede crear un grupo de roles personalizado, asignar el rol Administración conector de datos y, a continuación, agregar los usuarios adecuados como miembros. Para obtener instrucciones, consulte la sección "Crear un grupo de roles personalizado" en [Permisos en el portal de cumplimiento Microsoft Purview](microsoft-365-compliance-center-permissions.md#create-a-custom-role-group).
+- El usuario que crea el conector del Jabber de Cisco en el paso 1 (y lo completa en el paso 3) debe ser asignado el rol Administración del conector de datos. Este rol es necesario para agregar conectores en la página **Conectores de datos** del portal de cumplimiento. Este rol se agrega de forma predeterminada a varios grupos de roles. Para obtener una lista de estos grupos de roles, consulte la sección "Roles en los portales de defender y cumplimiento" de [Roles y grupos de roles en los portales de cumplimiento de Microsoft 365 Defender y Microsoft Purview](../security/office-365-security/permissions-in-the-security-and-compliance-center.md#roles-in-the-defender-and-compliance-portals). Como alternativa, un administrador de su organización puede crear un grupo de roles personalizado, asignar el rol Administración conector de datos y, a continuación, agregar los usuarios adecuados como miembros. Para obtener instrucciones, consulte la sección "Crear un grupo de roles personalizado" en [Permisos en el portal de cumplimiento Microsoft Purview](microsoft-365-compliance-center-permissions.md#create-a-custom-role-group).
 
 - Este conector de datos de Veritas está en versión preliminar pública en entornos GCC en la nube de Microsoft 365 US Government. Las aplicaciones y servicios de terceros pueden implicar almacenar, transmitir y procesar los datos de clientes de su organización en sistemas de terceros que están fuera de la infraestructura de Microsoft 365 y, por lo tanto, no están cubiertos por los compromisos de protección de datos y Microsoft Purview. Microsoft no hace ninguna representación de que el uso de este producto para conectarse a aplicaciones de terceros implica que esas aplicaciones de terceros son compatibles con FEDRAMP.
 

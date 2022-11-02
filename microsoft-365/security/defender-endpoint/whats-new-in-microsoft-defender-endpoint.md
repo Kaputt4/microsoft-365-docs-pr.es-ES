@@ -11,7 +11,7 @@ ms.pagetype: security
 ms.author: macapara
 author: mjcaparas
 ms.localizationpriority: medium
-ms.date: 09/26/2022
+ms.date: 11/01/2022
 manager: dansimp
 audience: ITPro
 ms.collection:
@@ -19,12 +19,12 @@ ms.collection:
 - tier1
 ms.topic: conceptual
 ms.subservice: mde
-ms.openlocfilehash: 228c126f3355cb5e0435c9b2b83aa84fac176b42
-ms.sourcegitcommit: 4e42bafee965446f44f7f57d1defed2b9b24fce8
+ms.openlocfilehash: 656ed58f84657b76a8b923582fff7cf27a786c87
+ms.sourcegitcommit: ab45f2963e0635ff2cb9670f6f7b4c784f6a250e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/30/2022
-ms.locfileid: "68224742"
+ms.lasthandoff: 11/02/2022
+ms.locfileid: "68815581"
 ---
 # <a name="whats-new-in-microsoft-defender-for-endpoint"></a>Novedades de Microsoft Defender para punto de conexión
 
@@ -65,6 +65,11 @@ Para obtener más información sobre Microsoft Defender para punto de conexión 
 - [Novedades de Defender para punto de conexión en iOS](ios-whatsnew.md)
 - [Novedades de Defender para punto de conexión en Linux](linux-whatsnew.md)
 
+## <a name="october-2022"></a>Octubre de 2022
+
+- [La detección y corrección de la protección de red C2 ya está disponible con carácter general](network-protection.md#block-command-and-control-attacks). <br/>Los atacantes a menudo ponen en peligro los servidores conectados a Internet existentes para convertirse en sus servidores de comandos y control. Los atacantes pueden usar los servidores en peligro para ocultar el tráfico malintencionado e implementar bots malintencionados que se usan para infectar puntos de conexión. La detección y corrección de la protección de red ayudará a mejorar el tiempo que tardan los equipos de operaciones de seguridad (SecOps) en identificar y responder a amenazas de red malintencionadas que buscan poner en peligro los puntos de conexión.
+
+
 ## <a name="september-2022"></a>Septiembre de 2022
 
 - [El informe de reglas de reducción de superficie expuesta a ataques (ASR) ya está disponible en el portal de Microsoft 365 Defender](attack-surface-reduction-rules-report.md). <br/>El informe de reglas de reducción de superficie expuesta a ataques (ASR) ya está disponible en el portal de Microsoft 365 Defender. Este informe de ASR proporciona información sobre las reglas de reducción de la superficie expuesta a ataques que se aplican a los dispositivos de su organización y le ayuda a detectar amenazas, bloquear posibles amenazas y obtener visibilidad sobre ASR y la configuración del dispositivo.
@@ -103,7 +108,7 @@ Para obtener más información sobre Microsoft Defender para punto de conexión 
 - [Agregar dispositivos de controlador de dominio: mejora del laboratorio de evaluación (versión preliminar)](evaluation-lab.md#add-a-domain-controller)<br>Agregue un controlador de dominio para ejecutar escenarios complejos, como movimiento lateral y ataques de varias fases en varios dispositivos.
 - [Modo de solución de problemas de Microsoft Defender para punto de conexión ahora disponible con carácter general](https://techcommunity.microsoft.com/t5/microsoft-defender-for-endpoint/troubleshooting-mode-for-microsoft-defender-for-endpoint-now/ba-p/3347344)<br>Introducción al modo de solución de problemas, una manera única, innovadora y segura de investigar y ajustar las configuraciones en los dispositivos. Este modo permitirá al administrador local del dispositivo invalidar Microsoft Defender configuraciones de directiva de seguridad antivirus en el dispositivo, incluida la protección contra alteraciones. 
 - [Anuncio de la versión preliminar pública del perfil personal de Defender para punto de conexión para Android Enterprise](https://techcommunity.microsoft.com/t5/microsoft-defender-for-endpoint/announcing-the-public-preview-of-defender-for-endpoint-personal/ba-p/3370979)<br>Nos complace anunciar que los usuarios que deseen inscribir sus propios dispositivos en el programa BYOD de su lugar de trabajo ahora pueden beneficiarse de la protección proporcionada por Microsoft Defender para punto de conexión también en su perfil personal.
-- [La administración de la configuración de seguridad en Microsoft Defender para punto de conexión ya está disponible con carácter general](https://techcommunity.microsoft.com/t5/microsoft-defender-for-endpoint/security-settings-management-in-microsoft-defender-for-endpoint/ba-p/3356970)<br>A finales de 2021, anunciamos que Microsoft Defender para punto de conexión expandió sus funcionalidades de administración de configuración. Esta versión facultó a los equipos de seguridad para configurar los dispositivos con sus opciones de seguridad deseadas sin necesidad de implementar e implementar otras herramientas o infraestructura.  Gracias a microsoft Endpoint Manager, las organizaciones han podido administrar las directivas de antivirus (AV), detección y respuesta de puntos de conexión (EDR) y firewall (FW) desde una sola vista para todos los dispositivos inscritos. En la actualidad, anunciamos que esta funcionalidad ya está disponible con carácter general para el cliente de Windows y Windows Server, lo que admite Windows 10, Windows 11 y Windows Server 2012 R2 o posterior.
+- [La administración de la configuración de seguridad en Microsoft Defender para punto de conexión ya está disponible con carácter general](https://techcommunity.microsoft.com/t5/microsoft-defender-for-endpoint/security-settings-management-in-microsoft-defender-for-endpoint/ba-p/3356970)<br>A finales de 2021, anunciamos que Microsoft Defender para punto de conexión expandió sus funcionalidades de administración de configuración. Esta versión facultó a los equipos de seguridad para configurar los dispositivos con sus opciones de seguridad deseadas sin necesidad de implementar e implementar otras herramientas o infraestructura.  Gracias a Microsoft Endpoint Manager, las organizaciones han podido administrar directivas de antivirus (AV), detección y respuesta de puntos de conexión (EDR) y firewall (FW) desde una sola vista para todos los dispositivos inscritos. En la actualidad, anunciamos que esta funcionalidad ya está disponible con carácter general para el cliente de Windows y Windows Server, lo que admite Windows 10, Windows 11 y Windows Server 2012 R2 o posterior.
 
 ## <a name="april-2022"></a>Abril de 2022
 - [Incorporación actualizada y paridad de características para Windows Server 2012 R2 y Windows Server 2016)](configure-server-endpoints.md)<br/> El nuevo paquete de solución unificada ya está disponible con carácter general y facilita la incorporación de servidores mediante la eliminación de dependencias y los pasos de instalación. Además, este paquete de solución unificada incluye muchas mejoras de características nuevas.
@@ -133,7 +138,7 @@ Para obtener más información sobre Microsoft Defender para punto de conexión 
 
 ## <a name="november-2021"></a>Noviembre de 2021
 
-- [Administración de configuración de seguridad](security-config-management.md) <br/> Una funcionalidad para que los dispositivos que no estén administrados por un Endpoint Manager de Microsoft, ya sea Microsoft Intune o Configuration Manager de punto de conexión de Microsoft, reciban configuraciones de seguridad para Microsoft Defender directamente desde Endpoint Manager.
+- [Administración de configuración de seguridad](security-config-management.md) <br/> Una funcionalidad para que los dispositivos que no están administrados por Microsoft Endpoint Manager, ya sea Microsoft Intune o Microsoft Endpoint Configuration Manager, reciban configuraciones de seguridad para Microsoft Defender directamente desde Endpoint Manager.
 - [Laboratorio de evaluación: compatibilidad del sistema operativo expandido & simulaciones de atomic Red Team](https://techcommunity.microsoft.com/t5/microsoft-defender-for-endpoint/evaluation-lab-expanded-os-support-amp-atomic-red-team/ba-p/2993927)<br>El laboratorio de evaluación ahora admite la adición de dispositivos Windows 11, Windows Server 2016 y Linux. Además, también nos gustaría anunciar una nueva asociación con la biblioteca de simulación de código abierto de Red Canary, Atomic Red Team!
 - [Anuncio de la versión preliminar pública de Microsoft Defender para punto de conexión Mobile: protección contra alteraciones](https://techcommunity.microsoft.com/t5/microsoft-defender-for-endpoint/announcing-the-public-preview-of-microsoft-defender-for-endpoint/ba-p/2971038)<br>Marque un dispositivo no compatible después de siete días de inactividad en la aplicación móvil Microsoft Defender para punto de conexión.
 - [Aumente la protección de su patrimonio de Linux con la supervisión del comportamiento, la cobertura de distribución extendida y mucho más.](https://techcommunity.microsoft.com/t5/microsoft-defender-for-endpoint/boost-protection-of-your-linux-estate-with-behavior-monitoring/ba-p/2909320)<br>Estamos encantados de compartir las últimas noticias sobre Microsoft Defender para punto de conexión en protección de última generación de Linux, detección y respuesta de puntos de conexión (EDR), Administración de amenazas y vulnerabilidades (TVM). La protección de Microsoft para su patrimonio de Linux está obteniendo un aumento impresionante en todo el espectro del conjunto de seguridad. Con Microsoft Defender para punto de conexión recientes en la integración de Linux en Azure Security Center, las ventajas de nuestros EDR y TVM de Linux ahora se extienden a los clientes de Azure Defender.

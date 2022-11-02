@@ -22,12 +22,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Pasos prescriptivos para administradores, requisitos de licencia y escenarios comunes que usan etiquetas de confidencialidad para ayudar a proteger los datos de la organización.
-ms.openlocfilehash: cb956c413d975c6d0199cb9b8f2d620b35b69fdc
-ms.sourcegitcommit: ca082da1c51a3f643f152492579eef5679d52bd0
+ms.openlocfilehash: d684232f7ed44231d45a5a4e3d7ac26b834be7d7
+ms.sourcegitcommit: ab45f2963e0635ff2cb9670f6f7b4c784f6a250e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/12/2022
-ms.locfileid: "68548002"
+ms.lasthandoff: 11/02/2022
+ms.locfileid: "68814239"
 ---
 # <a name="get-started-with-sensitivity-labels"></a>Empiece a usar las etiquetas de confidencialidad
 
@@ -78,7 +78,7 @@ Alternatively to using the default roles, you can create a new role group and ad
 > - **Investigadores de Information Protection**
 > - **Lectores de Information Protection**
 >
-> For an explanation of each one, and the new roles that they contain, select a role group in the <a href="https://go.microsoft.com/fwlink/p/?linkid=2077149" target="_blank">Microsoft Purview compliance portal</a> > **Permissions & roles** > **Compliance center** > **Roles**, and then review the description in the flyout pane. Or, see [Role groups in the Security & Compliance Center](../security/office-365-security/permissions-in-the-security-and-compliance-center.md#role-groups-in-the-security--compliance-center).
+> For an explanation of each one, and the new roles that they contain, select a role group in the <a href="https://go.microsoft.com/fwlink/p/?linkid=2077149" target="_blank">Microsoft Purview compliance portal</a> > **Permissions & roles** > **Compliance center** > **Roles**, and then review the description in the flyout pane. Or, see [Role groups in the Security & Compliance Center](../security/office-365-security/permissions-in-the-security-and-compliance-center.md#role-groups-in-the-defender-and-compliance-portals).
 
 Para obtener instrucciones sobre cómo agregar usuarios al grupo de roles predeterminado, roles o crear sus propios grupos de roles, consulte [Permisos en el Portal de cumplimiento de Purview](microsoft-365-compliance-center-permissions.md).
 

@@ -12,12 +12,12 @@ author: robmazz
 manager: laurawi
 audience: itpro
 ms.collection: m365-security-compliance
-ms.openlocfilehash: a0cbe8409517d5b27e6f7eb1b9dca54cd3b238ae
-ms.sourcegitcommit: 0d8fb571024f134d7480fe14cffc5e31a687d356
+ms.openlocfilehash: 6d35faf52b03afd6189e869da38e2b6f20255ec4
+ms.sourcegitcommit: ab45f2963e0635ff2cb9670f6f7b4c784f6a250e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/20/2022
-ms.locfileid: "68631420"
+ms.lasthandoff: 11/02/2022
+ms.locfileid: "68815097"
 ---
 # <a name="manage-insider-risk-management-forensic-evidence-preview"></a>Administración de pruebas forenses de administración de riesgos internos (versión preliminar)
 
@@ -150,7 +150,9 @@ Una vez que los dispositivos están configurados para admitir pruebas forenses, 
 
 ![Estado del dispositivo de pruebas forenses de administración de riesgos internos.](../media/insider-risk-forensic-evidence-device-health.png)
 
-El informe permite ver el estado y el estado de todos los dispositivos que tienen instalado el agente de evidencia forense. Cada widget de informe del informe muestra información de las últimas 24 horas.
+Para obtener una lista de los requisitos mínimos de configuración y dispositivo, consulte [Información sobre las pruebas forenses (versión preliminar).](insider-risk-management-forensic-evidence.md#device-and-configuration-requirements) Para incorporar dispositivos compatibles, complete los pasos descritos en el artículo [Introducción a los dispositivos de Windows 10 y Windows 11 a Microsoft 365](/microsoft-365/compliance/device-onboarding-overview). 
+
+El informe Estado del dispositivo permite ver el estado y el estado de todos los dispositivos que tienen instalado el agente de pruebas forenses. Cada widget de informe del informe muestra información de las últimas 24 horas.
 
 - **Dispositivos en línea**: el número total de dispositivos actualmente en línea.
 - **Dispositivos sin conexión**: el número total de dispositivos actualmente sin conexión.
@@ -190,4 +192,4 @@ El estado de mantenimiento del dispositivo proporciona información sobre posibl
 | El dispositivo no puede acceder al directorio que almacena las capturas de evidencia forense. | Error | Reinstalación del cliente en este dispositivo |
 | Error de inicialización del codificador.  | Error | Vuelva a instalar el cliente en este dispositivo. |
 
-Póngase en contacto con el soporte técnico de Microsoft si las acciones recomendadas no resuelven problemas con el cliente.
+Póngase en contacto con Soporte técnico de Microsoft si las acciones recomendadas no resuelven problemas con el cliente.

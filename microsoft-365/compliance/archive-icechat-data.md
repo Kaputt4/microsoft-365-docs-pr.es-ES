@@ -15,12 +15,12 @@ ms.collection:
 - tier3
 - purview-compliance
 - data-connectors
-ms.openlocfilehash: e71099d5693deeac062e4dae1be76683a20fd0f0
-ms.sourcegitcommit: 8d3c027592a638f411f87d89772dd3d39e92aab0
+ms.openlocfilehash: 62cc3187a4f66f13015e640671b18f0c41ac1b9b
+ms.sourcegitcommit: ab45f2963e0635ff2cb9670f6f7b4c784f6a250e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/12/2022
-ms.locfileid: "68534154"
+ms.lasthandoff: 11/02/2022
+ms.locfileid: "68812017"
 ---
 # <a name="set-up-a-connector-to-archive-ice-chat-data"></a>Configuración de un conector para archivar datos de ICE Chat
 
@@ -60,7 +60,7 @@ Algunos de los pasos de implementación necesarios para archivar los datos de IC
 
 - El conector ICE Chat puede importar un total de 200 000 elementos en un solo día. Si hay más de 200 000 elementos en el sitio SFTP, ninguno de esos elementos se importará a Microsoft 365.
 
-- Al administrador que crea el conector ICE Chat en el paso 3 (y quién descarga las claves públicas y la dirección IP en el paso 1) se le debe asignar el rol de Administración conector de datos. Este rol es necesario para agregar conectores en la página **Conectores de datos** del portal de cumplimiento. Este rol se agrega de forma predeterminada a varios grupos de roles. Para obtener una lista de estos grupos de roles, consulte la sección "Roles en los centros de seguridad y cumplimiento" de [Permisos en el Centro de cumplimiento de & seguridad](../security/office-365-security/permissions-in-the-security-and-compliance-center.md#roles-in-the-security--compliance-center). Como alternativa, un administrador de su organización puede crear un grupo de roles personalizado, asignar el rol Administración conector de datos y, a continuación, agregar los usuarios adecuados como miembros. Para obtener instrucciones, consulte la sección "Crear un grupo de roles personalizado" en [Permisos en el portal de cumplimiento Microsoft Purview](microsoft-365-compliance-center-permissions.md#create-a-custom-role-group).
+- Al administrador que crea el conector ICE Chat en el paso 3 (y quién descarga las claves públicas y la dirección IP en el paso 1) se le debe asignar el rol de Administración conector de datos. Este rol es necesario para agregar conectores en la página **Conectores de datos** del portal de cumplimiento. Este rol se agrega de forma predeterminada a varios grupos de roles. Para obtener una lista de estos grupos de roles, consulte la sección "Roles en los portales de defender y cumplimiento" de [Roles y grupos de roles en los portales de cumplimiento de Microsoft 365 Defender y Microsoft Purview](../security/office-365-security/permissions-in-the-security-and-compliance-center.md#roles-in-the-defender-and-compliance-portals). Como alternativa, un administrador de su organización puede crear un grupo de roles personalizado, asignar el rol Administración conector de datos y, a continuación, agregar los usuarios adecuados como miembros. Para obtener instrucciones, consulte la sección "Crear un grupo de roles personalizado" en [Permisos en el portal de cumplimiento Microsoft Purview](microsoft-365-compliance-center-permissions.md#create-a-custom-role-group).
 
 ## <a name="set-up-a-connector-using-public-keys"></a>Configuración de un conector mediante claves públicas
 

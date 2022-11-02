@@ -18,12 +18,12 @@ search.appverid:
 - MET150
 description: Guía del usuario de prueba de soluciones de Microsoft Purview.
 ms.custom: trial-playbook
-ms.openlocfilehash: b34caf007a9710dd351ec4a7e5ed456b5b19d840
-ms.sourcegitcommit: b439d097e55bba35d9328447d993bbcac7a178a9
+ms.openlocfilehash: f3683f195982eb2bb115dbd04cec7ded44c1a171
+ms.sourcegitcommit: ab45f2963e0635ff2cb9670f6f7b4c784f6a250e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/01/2022
-ms.locfileid: "68801988"
+ms.lasthandoff: 11/02/2022
+ms.locfileid: "68815405"
 ---
 # <a name="trial-user-guide-microsoft-purview-solutions"></a>Guía del usuario de prueba: Soluciones de Microsoft Purview
 
@@ -270,7 +270,7 @@ Aproveche los flujos de trabajo de un extremo a otro para ayudarle a identificar
 
 Hay cuatro grupos de roles que se usan para configurar permisos para administrar las características de Insider Risk Management, que tienen diferentes roles y nivel de acceso. La configuración de permisos en Insider Risk Management es clave antes de continuar.
 
-[Adición de usuarios a un grupo de roles de administración de riesgos internos](insider-risk-management-configure.md#add-users-to-an-insider-risk-management-role-group)
+[Agregar usuarios al grupo de roles Insider Risk Management](insider-risk-management-configure.md#add-users-to-the-insider-risk-management-role-group)
 
 Si no puede ver los permisos, póngase en contacto con el administrador de inquilinos para asignar los roles correctos.
 

@@ -20,12 +20,12 @@ description: Obtenga información sobre cómo SharePoint Online detecta virus en
 ms.custom: seo-marvel-apr2020
 ms.subservice: mdo
 ms.service: microsoft-365-security
-ms.openlocfilehash: 373c8d1b26fc31aae034b47fbe17b78024ad2147
-ms.sourcegitcommit: 12af9e8e3a6eaa090fda9e98ccb831dff65863a4
+ms.openlocfilehash: 58560d86c412f343301d859afa5044be2fdcc30c
+ms.sourcegitcommit: ab45f2963e0635ff2cb9670f6f7b4c784f6a250e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/27/2022
-ms.locfileid: "68074997"
+ms.lasthandoff: 11/02/2022
+ms.locfileid: "68815493"
 ---
 # <a name="built-in-virus-protection-in-sharepoint-online-onedrive-and-microsoft-teams"></a>Protección antivirus integrada en SharePoint Online, OneDrive y Microsoft Teams
 
@@ -58,7 +58,7 @@ De forma predeterminada, los usuarios pueden descargar archivos infectados desde
 1. En un explorador web, un usuario intenta descargar un archivo de SharePoint Online que resulta estar infectado.
 2. Al usuario se le muestra una advertencia de que se ha detectado un virus en el archivo. El usuario tiene la opción de continuar con la descarga e intentar limpiarla mediante software antivirus en su dispositivo.
 
-Para cambiar este comportamiento para que los usuarios no puedan descargar archivos infectados, incluso desde la ventana de advertencia antivirus, los administradores pueden usar el parámetro *DisallowInfectedFileDownload* en el cmdlet **[Set-SPOTenant](/powershell/module/sharepoint-online/Set-SPOTenant)** en PowerShell de SharePoint Online. El valor $true para el parámetro *DisallowInfectedFileDownload* bloquea completamente el acceso a los archivos detectados o bocked para los usuarios.
+Para cambiar este comportamiento para que los usuarios no puedan descargar archivos infectados, incluso desde la ventana de advertencia antivirus, los administradores pueden usar el parámetro *DisallowInfectedFileDownload* en el cmdlet **[Set-SPOTenant](/powershell/module/sharepoint-online/Set-SPOTenant)** en PowerShell de SharePoint Online. El valor $true para el parámetro *DisallowInfectedFileDownload* bloquea completamente el acceso a los archivos detectados o bloqueados para los usuarios.
 
 Para obtener instrucciones, consulte [Uso de PowerShell de SharePoint Online para evitar que los usuarios descarguen archivos malintencionados](turn-on-mdo-for-spo-odb-and-teams.md#step-2-recommended-use-sharepoint-online-powershell-to-prevent-users-from-downloading-malicious-files).
 

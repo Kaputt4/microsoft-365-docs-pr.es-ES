@@ -14,17 +14,19 @@ ms.collection:
 - m365initiative-migratetom365
 search.appverid: MET150
 description: Migración entre inquilinos de OneDrive
-ms.openlocfilehash: 6e2d925d6512df4fa62d3b8d5b71138439f836e8
-ms.sourcegitcommit: b386eaa33e1e5cdea59916247082b6e6e6a3d99e
+ms.openlocfilehash: 0088e7088dd67fd3a4d189eacdacde5362d0ff73
+ms.sourcegitcommit: ab45f2963e0635ff2cb9670f6f7b4c784f6a250e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/01/2022
-ms.locfileid: "68807529"
+ms.lasthandoff: 11/02/2022
+ms.locfileid: "68814107"
 ---
 # <a name="cross-tenant-onedrive-migration"></a>Migración entre inquilinos de OneDrive
 
 >[!Note]
 > La información de este artículo hace referencia a la **migración entre inquilinos de OneDrive**. Para la migración de buzones de correo, consulte [Migración de buzones entre inquilinos](/microsoft-365/enterprise/cross-tenant-mailbox-migration).
+
+## <a name="overview"></a>Información general
 
 Durante las fusiones o desinversiones, normalmente se necesita la capacidad de mover cuentas de OneDrive de los usuarios a un nuevo inquilino de Microsoft 365. Con la migración entre inquilinos de OneDrive, los administradores de inquilinos pueden usar herramientas conocidas como *PowerShell de SharePoint Online* para realizar la transición de los usuarios a su nueva organización.
 
@@ -32,15 +34,13 @@ Los administradores de SharePoint de dos inquilinos independientes pueden usar e
 
 Se pueden programar hasta 4000 cuentas de OneDrive para la migración de antemano en un momento dado. Una vez programadas, las migraciones se producen sin que los datos del usuario salgan de la nube de Microsoft 365 y con una interrupción mínima, lo que requiere solo unos minutos en los que OneDrive de un usuario será de solo lectura. Una vez completadas las migraciones, se coloca una redirección en la ubicación de OneDrive original del usuario, por lo que los vínculos a archivos y carpetas pueden seguir funcionando en la nueva ubicación. 
 
->[!Note]
-> Esta característica no se admite actualmente para los usuarios de la nube de Government, incluidos GCC, Consumer, GCC High o DoD.
+Esta característica no es compatible con los usuarios de la nube para administración pública, incluidos GCC, Consumidor, GCC High o DoD.
 
+## <a name="licensing"></a>Licencias
 
-
->[!Important]
->- Cada usuario que tenga su multiinquilino migrado de OneDrive debe tener licencia para la **migración de datos de usuario entre inquilinos**.
->- La migración entre inquilinos de OneDrive no se puede usar para los clientes que usan El cifrado de servicio con la clave de cliente de Microsoft Purview. [Más información sobre el cifrado de servicios con la clave de cliente de Microsoft Purview: Microsoft Purview](/microsoft-365/compliance/customer-key-overview)
-
+**La migración de datos de usuario entre inquilinos** está disponible como complemento a los siguientes planes de suscripción de Microsoft 365 para Enterprise Agreement clientes. Las licencias de usuario son por migración (tarifa de una sola vez). Póngase en contacto con el equipo de su cuenta de Microsoft para obtener más información.
+ 
+Microsoft 365 Empresa Básico/Business Standard/Business Premium/F1/F3/E3/A3/E5/A5; Office 365 F3/E1/A1/E3/A3/E5/A5; Exchange Online; SharePoint Online; OneDrive para la Empresa.
 
 
 ## <a name="prerequisites-and-settings"></a>Requisitos previos y configuración
@@ -97,7 +97,7 @@ Esas redireccionamientos permanecen hasta que se desaprovisiona el inquilino de 
 - **Paso 3:** [Comprobar que se ha establecido la confianza](cross-tenant-onedrive-migration-step3.md) 
 - **Paso 4:** [Creación previa de usuarios y grupos](cross-tenant-onedrive-migration-step4.md)  
 - **Paso 5:** [Preparación de la asignación de identidades](cross-tenant-onedrive-migration-step5.md)
-- **Paso 6:** [Iniciar una migración entre inquilinos de OneDrive]
+- **Paso 6:** [Iniciar una migración entre inquilinos de OneDrive](cross-tenant-onedrive-migration-step6.md)
 - **Paso 7:** [Pasos posteriores a la migración](cross-tenant-onedrive-migration-step7.md)
 
 ## <a name="step-1-connect-to-source-and-target-tenants"></a>Paso 1: [Conectarse a inquilinos de origen y de destino](cross-tenant-onedrive-migration-step1.md)

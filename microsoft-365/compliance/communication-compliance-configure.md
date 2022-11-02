@@ -24,12 +24,12 @@ ms.custom: admindeeplinkCOMPLIANCE
 search.appverid:
 - MET150
 - MOE150
-ms.openlocfilehash: c837bee4ccbab7f146c553b97a8d44bff8ae2949
-ms.sourcegitcommit: a20d30f4e5027f90d8ea4cde95d1d5bacfdd2b5e
+ms.openlocfilehash: 75d25c6f138e7a48494361c9d88482bb48fce611
+ms.sourcegitcommit: ab45f2963e0635ff2cb9670f6f7b4c784f6a250e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/28/2022
-ms.locfileid: "68769983"
+ms.lasthandoff: 11/02/2022
+ms.locfileid: "68814349"
 ---
 # <a name="get-started-with-communication-compliance"></a>Introducción al cumplimiento de las comunicaciones
 
@@ -131,19 +131,19 @@ Elija entre estas opciones de grupo de roles de solución al configurar y admini
 
 ### <a name="option-1-assign-all-compliance-users-to-the-communication-compliance-role-group"></a>Opción 1: Asignar todos los usuarios de cumplimiento al grupo de roles De cumplimiento de comunicaciones
 
-1. [https://compliance.microsoft.com/permissions](https://compliance.microsoft.com/permissions) Inicie sesión con las credenciales de una cuenta de administrador en su organización de Microsoft 365.
+Complete los pasos siguientes para agregar usuarios a este grupo de roles:
 
-2. En el Centro de cumplimiento de seguridad &amp; , vaya a **Permisos**. Seleccione el vínculo para ver y administrar roles en Office 365.
+1. Inicie sesión en la [portal de cumplimiento Microsoft Purview](https://compliance.microsoft.com) con las credenciales de una cuenta de administrador en la organización de Microsoft 365.
 
-3. Seleccione el grupo *de roles Cumplimiento de comunicación* y, a continuación, seleccione **Editar grupo de roles**.
+2. Seleccione **Permisos** en el panel de navegación izquierdo y seleccione **Roles** en la lista **Soluciones de Microsoft Purview** .
 
-4. Seleccione **Elegir miembros** en el panel de navegación izquierdo y, a continuación, seleccione **Editar**.
+3. Seleccione el grupo *de roles Cumplimiento de comunicaciones* y, a continuación, seleccione **Editar**.
 
-5. Seleccione **Agregar** y, a continuación, active la casilla para todos los usuarios que quiera agregar al grupo de roles *Cumplimiento de comunicación* .
+4. Seleccione la pestaña **Elegir usuarios** y, a continuación, active la casilla para todos los usuarios que quiera agregar al grupo de roles.
 
-6. Seleccione **Agregar** y, después, **Listo**.
+6. Elija **Seleccionar** y, a continuación, **Siguiente**.
 
-7. Seleccione **Guardar** para agregar los usuarios al grupo de roles. Seleccione **Cerrar** para completar los pasos.
+7. Seleccione **Guardar** para agregar los usuarios al grupo de roles. Seleccione **Listo** para completar los pasos.
 
 ### <a name="option-2-assign-users-to-specific-communication-compliance-role-groups"></a>Opción 2: Asignar usuarios a grupos de roles de cumplimiento de comunicaciones específicos
 

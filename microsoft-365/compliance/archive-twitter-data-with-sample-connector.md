@@ -18,12 +18,12 @@ ms.collection:
 - purview-compliance
 - data-connectors
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: c32fe8046a5ec067e405e6d0e0a097eb71b7351e
-ms.sourcegitcommit: 8d3c027592a638f411f87d89772dd3d39e92aab0
+ms.openlocfilehash: 8b0e82d8d9077b0de868bbf8edc7984050f7789c
+ms.sourcegitcommit: ab45f2963e0635ff2cb9670f6f7b4c784f6a250e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/12/2022
-ms.locfileid: "68533868"
+ms.lasthandoff: 11/02/2022
+ms.locfileid: "68813667"
 ---
 # <a name="set-up-a-microsoft-connector-to-archive-twitter-data-preview"></a>Configuración de un conector de Microsoft para archivar datos de Twitter (versión preliminar)
 
@@ -54,7 +54,7 @@ Complete los siguientes requisitos previos antes de configurar y configurar un c
 
 - El conector de Twitter puede importar un total de 200 000 elementos en un solo día. Si hay más de 200 000 elementos de Twitter en un día, ninguno de esos elementos se importará a Microsoft 365.
 
-- Al usuario que configura el conector de Twitter en el portal de cumplimiento (en el paso 5) se le debe asignar el rol Administración Conector de datos. Este rol es necesario para agregar conectores en la página **Conectores de datos** del portal de cumplimiento. Este rol se agrega de forma predeterminada a varios grupos de roles. Para obtener una lista de estos grupos de roles, consulte la sección "Roles en los centros de seguridad y cumplimiento" de [Permisos en el Centro de cumplimiento de & seguridad](../security/office-365-security/permissions-in-the-security-and-compliance-center.md#roles-in-the-security--compliance-center). Como alternativa, un administrador de su organización puede crear un grupo de roles personalizado, asignar el rol Administración conector de datos y, a continuación, agregar los usuarios adecuados como miembros. Para obtener instrucciones, consulte la sección "Crear un grupo de roles personalizado" en [Permisos en el portal de cumplimiento Microsoft Purview](microsoft-365-compliance-center-permissions.md#create-a-custom-role-group).
+- Al usuario que configura el conector de Twitter en el portal de cumplimiento (en el paso 5) se le debe asignar el rol Administración Conector de datos. Este rol es necesario para agregar conectores en la página **Conectores de datos** del portal de cumplimiento. Este rol se agrega de forma predeterminada a varios grupos de roles. Para obtener una lista de estos grupos de roles, consulte la sección "Roles en los portales de defender y cumplimiento" de [Roles y grupos de roles en los portales de cumplimiento de Microsoft 365 Defender y Microsoft Purview](../security/office-365-security/permissions-in-the-security-and-compliance-center.md#roles-in-the-defender-and-compliance-portals). Como alternativa, un administrador de su organización puede crear un grupo de roles personalizado, asignar el rol Administración conector de datos y, a continuación, agregar los usuarios adecuados como miembros. Para obtener instrucciones, consulte la sección "Crear un grupo de roles personalizado" en [Permisos en el portal de cumplimiento Microsoft Purview](microsoft-365-compliance-center-permissions.md#create-a-custom-role-group).
 
 ## <a name="step-1-create-an-app-in-azure-active-directory"></a>Paso 1: Creación de una aplicación en Azure Active Directory
 

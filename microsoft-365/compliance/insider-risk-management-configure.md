@@ -19,12 +19,12 @@ ms.collection:
 - m365initiative-compliance
 - highpri
 ms.custom: admindeeplinkCOMPLIANCE
-ms.openlocfilehash: 1ba34b942c125ec08cb0372fa09c50e68e4c1a32
-ms.sourcegitcommit: 21548843708d80bc861f03ffae41457252492bb6
+ms.openlocfilehash: 5daa694e32399e1b62cd34f1ed7c14fb654f9997
+ms.sourcegitcommit: ab45f2963e0635ff2cb9670f6f7b4c784f6a250e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/31/2022
-ms.locfileid: "68793662"
+ms.lasthandoff: 11/02/2022
+ms.locfileid: "68814525"
 ---
 # <a name="get-started-with-insider-risk-management"></a>Introducción a la administración de riesgos internos
 
@@ -125,23 +125,21 @@ Los miembros de los siguientes roles pueden asignar usuarios a grupos de roles d
 > [!NOTE]
 > Estos grupos de roles no se admiten actualmente en Privileged Identity Management (PIM). Para más información sobre PIM, consulte [Asignación de roles de Azure AD en Privileged Identity Management](/azure/active-directory/privileged-identity-management/pim-how-to-add-role-to-user).
 
-### <a name="add-users-to-an-insider-risk-management-role-group"></a>Adición de usuarios a un grupo de roles de administración de riesgos internos
+### <a name="add-users-to-the-insider-risk-management-role-group"></a>Agregar usuarios al grupo de roles Insider Risk Management
 
-Complete los pasos siguientes para agregar usuarios a un grupo de roles de administración de riesgos internos:
+Complete los pasos siguientes para agregar usuarios a este grupo de roles:
 
 1. Inicie sesión en [portal de cumplimiento Microsoft Purview](https://compliance.microsoft.com) con las credenciales de una cuenta de administrador en la organización de Microsoft 365.
 
-2. En el Centro de cumplimiento de seguridad &amp; , vaya a **Permisos**. Seleccione el vínculo para ver y administrar roles en Office 365.
+2. Seleccione **Permisos** en el panel de navegación izquierdo y seleccione **Roles** en la lista **Soluciones de Microsoft Purview** .
 
-3. Seleccione el grupo de roles de administración de riesgos internos al que desea agregar usuarios y, a continuación, seleccione **Editar grupo de roles**.
+3. Seleccione el grupo *de roles Administración de riesgos* internos y, a continuación, seleccione **Editar**.
 
-4. Seleccione **Elegir miembros** en el panel de navegación izquierdo y, a continuación, seleccione **Editar**.
+4. Seleccione la pestaña **Elegir usuarios** y, a continuación, active la casilla para todos los usuarios que quiera agregar al grupo de roles.
 
-5. Seleccione **Agregar** y, a continuación, active la casilla para todos los usuarios que quiera agregar al grupo de roles.
+6. Elija **Seleccionar** y, a continuación, **Siguiente**.
 
-6. Seleccione **Agregar** y, después, **Listo**.
-
-7. Seleccione **Guardar** para agregar los usuarios al grupo de roles. Seleccione **Cerrar** para completar los pasos.
+7. Seleccione **Guardar** para agregar los usuarios al grupo de roles. Seleccione **Listo** para completar los pasos.
 
 ## <a name="step-2-required-enable-the-microsoft-365-audit-log"></a>Paso 2 (obligatorio): Habilitación del registro de auditoría de Microsoft 365
 

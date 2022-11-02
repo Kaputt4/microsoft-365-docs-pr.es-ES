@@ -1,5 +1,6 @@
 ---
 title: Configurar un conector para archivar datos de Facebook
+description: Obtenga información sobre cómo configurar & usar un conector en el portal de cumplimiento Microsoft Purview para importar & datos de archivo de las páginas de Facebook Business a Microsoft 365.
 f1.keywords:
 - NOCSH
 ms.author: robmazz
@@ -12,15 +13,17 @@ ms.service: O365-seccomp
 ms.localizationpriority: medium
 search.appverid:
 - MET150
-ms.collection: M365-security-compliance
+ms.collection:
+- tier3
+- purview-compliance
+- data-connectors
 ms.custom: seo-marvel-apr2020
-description: Obtenga información sobre cómo configurar & usar un conector en el portal de cumplimiento Microsoft Purview para importar & datos de archivo de las páginas de Facebook Business a Microsoft 365.
-ms.openlocfilehash: 675c4bcb427584be0afe6aa93642ac01d796d7cf
-ms.sourcegitcommit: 433f5b448a0149fcf462996bc5c9b45d17bd46c6
+ms.openlocfilehash: 146dff25f3e4f2865d67a2e5734604bf8cecf97a
+ms.sourcegitcommit: ab45f2963e0635ff2cb9670f6f7b4c784f6a250e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/20/2022
-ms.locfileid: "67823659"
+ms.lasthandoff: 11/02/2022
+ms.locfileid: "68811973"
 ---
 # <a name="set-up-a-connector-to-archive-facebook-data-preview"></a>Configuración de un conector para archivar datos de Facebook (versión preliminar)
 
@@ -29,6 +32,8 @@ Use un conector en el portal de cumplimiento Microsoft Purview para importar y a
 Una vez importados los datos de Facebook, puede aplicar las características de Microsoft Purview como suspensión por juicio, búsqueda de contenido, archivado de In-Place, auditoría, cumplimiento de comunicaciones y directivas de retención de Microsoft 365 a los datos de Facebook. Por ejemplo, cuando un buzón se coloca en suspensión por juicio o se asigna a una directiva de retención, se conservan los datos de Facebook. Puede buscar datos de terceros mediante Búsqueda de contenido o asociar el buzón donde se almacenan los datos de Facebook con un custodio en un caso de Microsoft Purview eDiscovery (Premium). El uso de un conector para importar y archivar datos de Facebook en Microsoft 365 puede ayudar a su organización a cumplir las directivas gubernamentales y normativas.
 
 Si desea participar en la versión preliminar, póngase en contacto con el equipo en dcfeedback@microsoft.com.
+
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
 
 ## <a name="prerequisites-for-setting-up-a-connector-for-facebook-business-pages"></a>Requisitos previos para configurar un conector para páginas de Facebook Business
 
@@ -47,7 +52,7 @@ Complete los siguientes requisitos previos antes de configurar y configurar un c
 
 - Las páginas del conector para empresas de Facebook pueden importar un total de 200 000 elementos en un solo día. Si hay más de 200 000 elementos de Facebook Business en un día, ninguno de esos elementos se importará a Microsoft 365.
 
-- Al usuario que configura el conector personalizado en el portal de cumplimiento (en el paso 5) se le debe asignar el rol Administración Conector de datos. Este rol es necesario para agregar conectores en la página **Conectores de datos** del portal de cumplimiento. Este rol se agrega de forma predeterminada a varios grupos de roles. Para obtener una lista de estos grupos de roles, consulte la sección "Roles en los centros de seguridad y cumplimiento" de [Permisos en el Centro de cumplimiento de & seguridad](../security/office-365-security/permissions-in-the-security-and-compliance-center.md#roles-in-the-security--compliance-center). Como alternativa, un administrador de su organización puede crear un grupo de roles personalizado, asignar el rol Administración conector de datos y, a continuación, agregar los usuarios adecuados como miembros. Para obtener instrucciones, consulte la sección "Crear un grupo de roles personalizado" en [Permisos en el portal de cumplimiento Microsoft Purview](microsoft-365-compliance-center-permissions.md#create-a-custom-role-group).
+- Al usuario que configura el conector personalizado en el portal de cumplimiento (en el paso 5) se le debe asignar el rol Administración Conector de datos. Este rol es necesario para agregar conectores en la página **Conectores de datos** del portal de cumplimiento. Este rol se agrega de forma predeterminada a varios grupos de roles. Para obtener una lista de estos grupos de roles, consulte la sección "Roles en los portales de defender y cumplimiento" de [Roles y grupos de roles en los portales de cumplimiento de Microsoft 365 Defender y Microsoft Purview](../security/office-365-security/permissions-in-the-security-and-compliance-center.md#roles-in-the-defender-and-compliance-portals). Como alternativa, un administrador de su organización puede crear un grupo de roles personalizado, asignar el rol Administración conector de datos y, a continuación, agregar los usuarios adecuados como miembros. Para obtener instrucciones, consulte la sección "Crear un grupo de roles personalizado" en [Permisos en el portal de cumplimiento Microsoft Purview](microsoft-365-compliance-center-permissions.md#create-a-custom-role-group).
 
 ## <a name="step-1-create-an-app-in-azure-active-directory"></a>Paso 1: Creación de una aplicación en Azure Active Directory
 

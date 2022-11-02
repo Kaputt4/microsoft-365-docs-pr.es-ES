@@ -20,12 +20,12 @@ ms.collection:
 - m365-security
 - tier2
 search.appverid: met150
-ms.openlocfilehash: ab9af833225c26a0c0651a6fd3adacf948881f34
-ms.sourcegitcommit: a250d043a2e42ecbc7b86147468d1660af5a6ba7
+ms.openlocfilehash: 99d1d4bfbbce6a010f9823071b2c3be8920aa409
+ms.sourcegitcommit: ab45f2963e0635ff2cb9670f6f7b4c784f6a250e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/21/2022
-ms.locfileid: "68673203"
+ms.lasthandoff: 11/02/2022
+ms.locfileid: "68815559"
 ---
 # <a name="protect-your-network"></a>Proteger la red
 
@@ -96,7 +96,7 @@ La protección de red es una parte fundamental de la pila de protección y respu
 > [!TIP]
 > Para obtener más información sobre la protección de red para Windows Server, Linux, MacOS y Mobile Threat Defense (MTD), consulte [Búsqueda proactiva de amenazas con búsqueda avanzada](advanced-hunting-overview.md).
 
-### <a name="block-command-and-control-c2-attacks"></a>Bloquear ataques de comando y control (C2)
+### <a name="block-command-and-control-attacks"></a>Bloquear ataques de comando y control
 
 Los equipos de servidor de comandos y control (C2) los usan usuarios malintencionados para enviar comandos a sistemas en peligro por malware y, a continuación, ejercen algún tipo de control sobre sistemas en peligro. Los ataques C2 normalmente se ocultan en servicios basados en la nube, como el uso compartido de archivos y los servicios de correo web, lo que permite que los servidores C2 eviten la detección combinando con el tráfico típico.
 
@@ -108,6 +108,12 @@ Los servidores C2 se pueden usar para iniciar comandos que pueden:
 - Propagar malware, como ransomware
 
 El componente de protección de red de Defender para punto de conexión identifica y bloquea las conexiones a las infraestructuras C2 usadas en ataques de ransomware operados por personas, mediante técnicas como el aprendizaje automático y la identificación inteligente del indicador de riesgo (IoC).
+
+#### <a name="network-protection-c2-detection-and-remediation"></a>Protección de red: detección y corrección de C2
+
+En su forma inicial, ransomware es una amenaza de mercancía, preprogramada y centrada en resultados limitados y específicos (por ejemplo, el cifrado de un equipo). Sin embargo, el ransomware ha evolucionado hasta convertirse en una amenaza sofisticada controlada por el ser humano, adaptable y centrada en resultados a mayor escala y más extendidos, como mantener los recursos o datos de toda una organización para el rescate.
+
+La compatibilidad con servidores de comandos y control (C2) es una parte clave de esta evolución de ransomware y es lo que permite que estos ataques se adapten al entorno al que se dirigen. La interrupción del vínculo a la infraestructura de comandos y control detiene la progresión de un ataque a su siguiente fase. Para obtener más información sobre la detección y corrección de C2, consulte [Detección y corrección de ataques de comando y control en la capa de red](https://techcommunity.microsoft.com/t5/microsoft-defender-for-endpoint/detecting-and-remediating-command-and-control-attacks-at-the/ba-p/3650607).
 
 #### <a name="network-protection-new-toast-notifications"></a>Protección de red: nuevas notificaciones del sistema
 
@@ -158,14 +164,6 @@ Un usuario visita un sitio web:
   - **Comentarios** La notificación del sistema presenta al usuario un vínculo para enviar una incidencia, que el usuario puede usar para enviar comentarios al administrador en un intento de justificar el acceso al sitio.
 
     :::image type="content" source="images/network-protection-phishing-blocked.png" alt-text="Muestra una notificación de bloqueo de contenido de phishing conocido de protección de red." lightbox="images/network-protection-phishing-blocked.png":::
-
-### <a name="network-protection-c2-detection-and-remediation"></a>Protección de red: detección y corrección de C2
-
-[!INCLUDE [Prerelease information](../includes/prerelease.md)]
-
-En su forma inicial, ransomware es una amenaza de mercancía, preprogramada y centrada en resultados limitados y específicos (por ejemplo, el cifrado de un equipo). Sin embargo, el ransomware ha evolucionado hasta convertirse en una amenaza sofisticada controlada por el ser humano, adaptable y centrada en resultados a mayor escala y más extendidos; como mantener activos o datos completos de una organización para el rescate.
-
-La compatibilidad con servidores de comandos y control (C2) es una parte clave de esta evolución de ransomware y es lo que permite que estos ataques se adapten al entorno al que se dirigen. La interrupción del vínculo a la infraestructura de comandos y control detiene la progresión de un ataque a su siguiente fase.
 
 ## <a name="smartscreen-unblock"></a>Desbloqueo de SmartScreen
 

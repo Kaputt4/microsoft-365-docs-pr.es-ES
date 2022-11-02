@@ -12,12 +12,12 @@ author: robmazz
 manager: laurawi
 audience: itpro
 ms.collection: m365-security-compliance
-ms.openlocfilehash: 484da1e07de1a160149f2a1159b5610a3d22192f
-ms.sourcegitcommit: 0d8fb571024f134d7480fe14cffc5e31a687d356
+ms.openlocfilehash: 5bc3f1863fa2e49bc6cc98aca1c9be38b07ec582
+ms.sourcegitcommit: ab45f2963e0635ff2cb9670f6f7b4c784f6a250e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/20/2022
-ms.locfileid: "68639028"
+ms.lasthandoff: 11/02/2022
+ms.locfileid: "68815229"
 ---
 # <a name="learn-about-insider-risk-management-forensic-evidence-preview"></a>Más información sobre las pruebas forenses de administración de riesgos internos (versión preliminar)
 
@@ -36,6 +36,39 @@ Tener contexto visual es fundamental para que los equipos de seguridad durante l
 - **La segmentación de directivas centrada en el usuario** significa que los equipos de seguridad y cumplimiento pueden centrarse en la actividad del usuario, no en el dispositivo, para obtener una mejor información contextual.
 - **Los fuertes controles de acceso basado en roles (RBAC)** significan que la capacidad de configurar y revisar clips forenses está estrechamente controlada y solo está disponible para los usuarios de la organización con los permisos adecuados.
 - **Integración profunda con las características actuales de administración de riesgos** internos, lo que facilita la incorporación y los flujos de trabajo más familiares para los administradores de administración de riesgos internos y un enfoque de una sola plataforma de confianza.
+
+## <a name="device-and-configuration-requirements"></a>Requisitos de dispositivo y configuración
+
+En las tablas siguientes se incluyen los requisitos mínimos admitidos para usar pruebas forenses de administración de riesgos internos.
+
+### <a name="supported-platforms"></a>Plataformas compatibles
+
+|**Sistema operativo**|**SKU**|**Procesador**|
+|:----------|:-------|:-------------------|
+| Windows 10 | Enterprise | 64 bits (Intel o AMD) |
+| Windows 11 | Enterprise | 64 bits (Intel o AMD) |
+
+### <a name="physical-devices"></a>Dispositivos físicos
+
+|**Hardware**|**Requisito mínimo**|
+|:----------|:-------------------------------|
+| RAM | Mínimo de 8 GB (al menos 2 GB deben estar disponibles para el uso del cliente |
+| Procesador de CPU | Intel i5 o superior y AMD Ryzen 5 o superior |
+| Tarjeta gráfica | Compatible con DirectX 11 o posterior, con un controlador WDDM 1.0 o posterior (actualmente solo se admiten tarjetas gráficas integradas)|
+| Espacio en disco | Mínimo de 10 GB de almacenamiento en disco |
+| Visualización | Resolución mínima de pantalla de 1920 x 1080 | 
+
+### <a name="hyper-v-and-virtual-machines"></a>Hyper-V y máquinas virtuales
+
+|**Hardware**|**Requisito mínimo**|
+|:----------|:-------------------------------|
+| RAM | Mínimo de 16 GB (al menos 2 GB deben estar disponibles para el uso del cliente) |
+| Procesador de CPU | Mínimo de dos procesadores vCPU y al menos cuatro núcleos para cada procesador vCPU |
+| Espacio en disco | Mínimo de 10 GB de almacenamiento en disco |
+| Visualización | Resolución mínima de pantalla de 1920 x 1080 | 
+
+> [!IMPORTANT]
+> Si no se cumplen los requisitos mínimos, es probable que los usuarios se encuentren con problemas de cliente de Microsoft Purview y que la calidad de las grabaciones forenses no sea confiable.
 
 ## <a name="capturing-options"></a>Opciones de captura
 

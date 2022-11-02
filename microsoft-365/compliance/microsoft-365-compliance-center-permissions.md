@@ -1,5 +1,6 @@
 ---
 title: Permisos en el portal de cumplimiento de Microsoft Purview
+description: Obtenga información sobre la administración de permisos en el portal de cumplimiento Microsoft Purview.
 f1.keywords:
 - NOCSH
 ms.author: robmazz
@@ -9,17 +10,18 @@ ms.service: O365-seccomp
 audience: ITPro
 ms.topic: article
 ms.localizationpriority: medium
-description: Obtenga información sobre la administración de permisos en el portal de cumplimiento Microsoft Purview.
-ms.collection: M365-security-compliance
+ms.collection:
+- tier1
+- purview-compliance
 ms.custom:
 - admindeeplinkCOMPLIANCE
 - admindeeplinkEXCHANGE
-ms.openlocfilehash: b8e7f17ef22163e091307fda7cd0beb6659022dc
-ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
+ms.openlocfilehash: 9e372ce41b3c1e037dfd6b1d740af785cb437ac0
+ms.sourcegitcommit: ab45f2963e0635ff2cb9670f6f7b4c784f6a250e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/06/2022
-ms.locfileid: "66623855"
+ms.lasthandoff: 11/02/2022
+ms.locfileid: "68812369"
 ---
 # <a name="permissions-in-the-microsoft-purview-compliance-portal"></a>Permisos en el portal de cumplimiento de Microsoft Purview
 
@@ -31,6 +33,8 @@ Para ver la pestaña **Permisos** en el portal de cumplimiento, los usuarios deb
 
 Los permisos del portal de cumplimiento se basan en el modelo de permisos de control de acceso basado en rol (RBAC). RBAC es el mismo modelo de permisos que usan la mayoría de los servicios de Microsoft 365, por lo que si está familiarizado con la estructura de permisos de estos servicios, le resultará familiar conceder permisos en el portal de cumplimiento. Es importante recordar que los permisos administrados en el portal de cumplimiento no cubren la administración de todos los permisos necesarios en cada servicio individual. Seguirá teniendo que administrar determinados permisos específicos del servicio en el centro de administración para el servicio específico. Por ejemplo, si necesita asignar permisos para el archivado, la auditoría y las directivas de retención de MRM, tendrá que administrar estos permisos en el <a href="https://go.microsoft.com/fwlink/p/?linkid=2059104" target="_blank">Centro de administración de Exchange</a>.
 
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
+
 ## <a name="relationship-of-members-roles-and-role-groups"></a>Relación de los miembros, los roles y los grupos de roles
 
 Un rol concede permisos para realizar un conjunto de tareas; por ejemplo, el rol Administración de casos permite a los usuarios trabajar con casos de eDiscovery.
@@ -41,7 +45,7 @@ Un grupo de roles es un conjunto de roles que permiten a los usuarios realizar s
 
 ## <a name="permissions-needed-to-use-features-in-the-compliance-portal"></a>Permisos necesarios para usar características en el portal de cumplimiento
 
-Para ver todos los grupos de roles predeterminados que están disponibles en el portal de cumplimiento y los roles asignados a los grupos de roles de forma predeterminada, consulte [permisos en el Centro de cumplimiento de seguridad &](/microsoft-365/security/office-365-security/permissions-in-the-security-and-compliance-center).
+Para ver todos los grupos de roles predeterminados que están disponibles en el portal de cumplimiento y los roles asignados a los grupos de roles de forma predeterminada, consulte [Roles y grupos de roles en los portales de cumplimiento de Microsoft 365 Defender y Microsoft Purview](/microsoft-365/security/office-365-security/permissions-in-the-security-and-compliance-center).
 
 La administración de permisos en el portal de cumplimiento solo proporciona a los usuarios acceso a las características de cumplimiento que están disponibles en el portal de cumplimiento. Si desea conceder permisos a otras características que no están en el portal de cumplimiento, como las reglas de flujo de correo de Exchange (también conocidas como reglas de transporte), deberá usar el <a href="https://go.microsoft.com/fwlink/p/?linkid=2059104" target="_blank">Centro de administración de Exchange</a>.
 
@@ -52,13 +56,13 @@ Los roles que aparecen en la sección **Roles** de **Azure AD** >  de la página
 |Role|Descripción|
 |:---|:----------|
 |**Administrador global**|Acceso a todas las características administrativas en todos los servicios de Microsoft 365. Los administradores globales son los únicos que pueden asignar otros roles de administrador. Para más información, consulte [Administrador global / Administrador de empresa](/azure/active-directory/roles/permissions-reference#global-administrator--company-administrator).|
-|**Administrador de datos de cumplimiento**|Realice un seguimiento de los datos de su organización en Microsoft 365, asegúrese de que están protegidos y obtenga información sobre los problemas para ayudar a mitigar los riesgos. Para obtener más información, vea [Administrador de datos de cumplimiento](/azure/active-directory/roles/permissions-reference#compliance-data-administrator).|
-|**Administrador de cumplimiento**|Ayude a su organización a cumplir los requisitos normativos, administre casos de exhibición de documentos electrónicos y mantenga directivas de gobernanza de datos en  ubicaciones, identidades y aplicaciones de Microsoft 365. Para obtener más información, vea [administrador de cumplimiento](/azure/active-directory/roles/permissions-reference#compliance-administrator).|
+|**Administrador de datos de cumplimiento**|Keep track of your organization's data across Microsoft 365, make sure it's protected, and get insights into any issues to help mitigate risks. For more information, see [Compliance Data Administrator](/azure/active-directory/roles/permissions-reference#compliance-data-administrator).|
+|**Administrador de cumplimiento**|Help your organization stay compliant with any regulatory requirements, manage eDiscovery cases, and maintain data governance policies across Microsoft 365 locations, identities, and apps. For more information, see [Compliance Administrator](/azure/active-directory/roles/permissions-reference#compliance-administrator).|
 |**Operador de seguridad**|Ver, investigar y responder a las amenazas activas a usuarios, dispositivos y contenido de Microsoft 365. Para obtener más información, vea [Operador de seguridad de seguridad](/azure/active-directory/roles/permissions-reference#security-operator).|
-|**Lector de seguridad**|Vea e investigue las amenazas activas a los usuarios, dispositivos y contenido de Microsoft 365, pero (a diferencia del operador de seguridad) no tienen permisos para responder tomando medidas. Para obtener más información, vea [lector de seguridad](/azure/active-directory/roles/permissions-reference#security-reader).|
-|**Administrador de seguridad**|Controle la seguridad general de su organización mediante la administración de directivas de seguridad, la revisión de análisis e informes de seguridad en los productos de Microsoft 365 y el mantenimiento al día del panorama de amenazas. Para obtener más información, vea [administrador de seguridad](/azure/active-directory/roles/permissions-reference#security-administrator).|
+|**Lector de seguridad**|View and investigate active threats to your Microsoft 365 users, devices, and content, but (unlike the Security operator) they do not have permissions to respond by taking action. For more information, see [Security Reader](/azure/active-directory/roles/permissions-reference#security-reader).|
+|**Administrador de seguridad**|Control your organization's overall security by managing security policies, reviewing security analytics and reports across Microsoft 365 products, and staying up-to-speed on the threat landscape. For more information, see [Security Administrator](/azure/active-directory/roles/permissions-reference#security-administrator).|
 |**Lector global**|La versión de solo lectura del rol de **Administrador global**. Ver todas las configuraciones e información administrativa en Microsoft 365. Para más información, vea [Lector global](/azure/active-directory/roles/permissions-reference#global-reader).|
-|**Administrador de simulación de ataque**|Cree y administre todos los aspectos de simulación de ataques la creación, el inicio o la programación de una simulación y la revisión de los resultados de la simulación. Para obtener más información, vea [administrador de simulación de ataques](/azure/active-directory/roles/permissions-reference#attack-simulation-administrator).|
+|**Administrador de simulación de ataque**|Create and manage all aspects of attack simulation creation, launch/scheduling of a simulation, and the review of simulation results. For more information, see [Attack Simulation Administrator](/azure/active-directory/roles/permissions-reference#attack-simulation-administrator).|
 |**Autor de carga de ataque**|Crea cargas de ataques pero no las inicia ni programa. Para más información, consulte [Autor de carga de ataques](/azure/active-directory/roles/permissions-reference#attack-payload-author).|
 |
 

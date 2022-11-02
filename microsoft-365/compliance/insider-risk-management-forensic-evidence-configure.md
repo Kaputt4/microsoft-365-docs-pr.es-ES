@@ -12,12 +12,12 @@ author: robmazz
 manager: laurawi
 audience: itpro
 ms.collection: m365-security-compliance
-ms.openlocfilehash: 1d4406ea6372786fda542d2a9b4e83f2ede9abac
-ms.sourcegitcommit: 0d8fb571024f134d7480fe14cffc5e31a687d356
+ms.openlocfilehash: 38dd4b4ee3908da144b1e55d8efbc0af30a39dc9
+ms.sourcegitcommit: ab45f2963e0635ff2cb9670f6f7b4c784f6a250e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/20/2022
-ms.locfileid: "68623943"
+ms.lasthandoff: 11/02/2022
+ms.locfileid: "68814393"
 ---
 # <a name="get-started-with-insider-risk-management-forensic-evidence-preview"></a>Introducción a las pruebas forenses de administración de riesgos internos (versión preliminar)
 
@@ -47,12 +47,7 @@ Los dispositivos de usuario aptos para la captura de pruebas forenses deben inco
 >[!IMPORTANT]
 >El cliente de Microsoft Purview recopila automáticamente datos de diagnóstico generales relacionados con la configuración del dispositivo y las métricas de rendimiento. Esto incluye datos sobre errores críticos, consumo de RAM, errores de proceso y otros datos. Estos datos nos ayudan a evaluar el estado del cliente e identificar cualquier problema. Para obtener más información sobre cómo se pueden usar los datos de diagnóstico, consulte Uso de software con servicios en línea en los [Términos del producto de Microsoft](https://www.microsoft.com/licensing/product-licensing/products).
 
-Las capturas visuales en evidencia forense se admiten para los siguientes dispositivos o configuraciones:
-
-- Versión más reciente Windows 10 o Windows 11 compilación x64
-- Un máximo de 4 monitores por dispositivo
-
-Para incorporar dispositivos, complete los pasos descritos en el artículo [Introducción a los dispositivos de Windows 10 y Windows 11 a Microsoft 365](/microsoft-365/compliance/device-onboarding-overview).
+Para obtener una lista de los requisitos de dispositivo y configuración, consulte [Información sobre las pruebas forenses (versión preliminar).](insider-risk-management-forensic-evidence.md#device-and-configuration-requirements) Para incorporar dispositivos compatibles, complete los pasos descritos en el artículo [Introducción a los dispositivos de Windows 10 y Windows 11 a Microsoft 365](/microsoft-365/compliance/device-onboarding-overview). 
 
 Para instalar el cliente de Microsoft Purview, siga estos pasos:
 
