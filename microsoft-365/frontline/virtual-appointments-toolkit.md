@@ -24,12 +24,12 @@ description: Recursos e infografías personalizables que puede agregar a su siti
 appliesto:
 - Microsoft Teams
 - Microsoft 365 for frontline workers
-ms.openlocfilehash: 48a584769980bea2257bf5f2f629a0bd9f77428c
-ms.sourcegitcommit: 0ad7edcfdcdd11d02fa8a14ffe4b36e120d92deb
+ms.openlocfilehash: 50735b59689b0b1d2fcb6673bf409dd8f643852c
+ms.sourcegitcommit: a66b30765efc0ea0eca865f08a62d45047a90246
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/29/2022
-ms.locfileid: "68786703"
+ms.lasthandoff: 11/02/2022
+ms.locfileid: "68827954"
 ---
 # <a name="help-your-clients-and-customers-use-virtual-appointments-scheduled-with-bookings"></a>Ayuda a tus clientes y clientes a usar citas virtuales programadas con Bookings
 
@@ -117,10 +117,10 @@ Descargue y [personalice](#customize-your-infographic) una de estas infografías
 
 | Gráfico                | Descripción y vínculos              |
 | :------------------- | -------------------: |
-| [![Imagen de la infografía de servicios financieros](media/vv-finserv-thumbnail.png)](//download.microsoft.com/download/8/5/7/85784cd8-6945-4fcc-a3c3-972bd88d3fef/VirtualVisit_Financial_Infographic.pdf) | Infografía personalizable para la organización de servicios financieros <br> [Descargar como PDF](//download.microsoft.com/download/8/5/7/85784cd8-6945-4fcc-a3c3-972bd88d3fef/VirtualVisit_Financial_Infographic.pdf) <br> [Descargar como PowerPoint](//download.microsoft.com/download/8/5/7/85784cd8-6945-4fcc-a3c3-972bd88d3fef/VirtualVisit_Financial_Infographic.pptx)
-| [![Imagen de la infografía comercial](media/vv-retail-thumbnail.png)](//download.microsoft.com/download/a/b/5/ab5c07d9-cf7a-47b3-ba54-05a8a0a2a1bd/VirtualVisit_Retail_Infographic.pdf) | Infografía personalizable para su organización minorista <br> [Descargar como PDF](//download.microsoft.com/download/a/b/5/ab5c07d9-cf7a-47b3-ba54-05a8a0a2a1bd/VirtualVisit_Retail_Infographic.pdf) <br> [Descargar como PowerPoint](//download.microsoft.com/download/a/b/5/ab5c07d9-cf7a-47b3-ba54-05a8a0a2a1bd/VirtualVisit_Retail_Infographic.pptx) |
-| [![Imagen de la infografía de la organización de atención sanitaria](media/vv-healthcare-thumbnail.png)](//download.microsoft.com/download/4/d/3/4d3d9c53-0304-4aea-a56a-60a16402c58f/VirtualVisit_Healthcare_Infographic.pdf) | Infografía personalizable para su organización de atención sanitaria <br> [Descargar como PDF](//download.microsoft.com/download/4/d/3/4d3d9c53-0304-4aea-a56a-60a16402c58f/VirtualVisit_Healthcare_Infographic.pdf) <br> [Descargar como PowerPoint](//download.microsoft.com/download/4/d/3/4d3d9c53-0304-4aea-a56a-60a16402c58f/VirtualVisit_Healthcare_Infographic.pptx) |
-| [![Imagen de la infografía no específica del sector.](media/va-generic-thumb.png)](//download.microsoft.com/download/c/6/9/c69d3f29-a8f5-462b-a645-79119beab406/VirtualVisit_Generic_Infographic.pdf) | Infografía personalizable no específica de un sector determinado <br> [Descargar como PDF](//download.microsoft.com/download/c/6/9/c69d3f29-a8f5-462b-a645-79119beab406/VirtualVisit_Generic_Infographic.pdf) <br> [Descargar como PowerPoint](//download.microsoft.com/download/c/6/9/c69d3f29-a8f5-462b-a645-79119beab406/VirtualVisit_Generic_Infographic.pptx) |
+|![Imagen de la infografía de servicios financieros](media/vv-finserv-thumbnail.png)| Infografía personalizable para la organización de servicios financieros <br> [Descargar como PDF](https://go.microsoft.com/fwlink/?linkid=2214189) <br> [Descargar como PowerPoint](https://go.microsoft.com/fwlink/?linkid=2214285)
+|![Imagen de la infografía comercial](media/vv-retail-thumbnail.png)| Infografía personalizable para su organización minorista <br> [Descargar como PDF](https://go.microsoft.com/fwlink/?linkid=2214355) <br> [Descargar como PowerPoint](https://go.microsoft.com/fwlink/?linkid=2214283) |
+|![Imagen de la infografía de la organización de atención sanitaria](media/vv-healthcare-thumbnail.png)| Infografía personalizable para su organización de atención sanitaria <br> [Descargar como PDF](https://go.microsoft.com/fwlink/?linkid=2214356) <br> [Descargar como PowerPoint](https://go.microsoft.com/fwlink/?linkid=2214357) |
+|![Imagen de la infografía no específica del sector.](media/va-generic-thumb.png)| Infografía personalizable no específica de un sector determinado <br> [Descargar como PDF](https://go.microsoft.com/fwlink/?linkid=2214284) <br> [Descargar como PowerPoint](https://go.microsoft.com/fwlink/?linkid=2214282) |
 
 ### <a name="customize-your-infographic"></a>Personalizar la infografía
 
@@ -128,7 +128,7 @@ Descargue y [personalice](#customize-your-infographic) una de estas infografías
     1. Salud
     2. Servicios financieros
     3. Venta minorista
-    1. Cualquier sector
+    4. Cualquier sector
 
 2. Personalice la infografía en PowerPoint.
     1. Use los colores y las fuentes preferidas de su organización.
