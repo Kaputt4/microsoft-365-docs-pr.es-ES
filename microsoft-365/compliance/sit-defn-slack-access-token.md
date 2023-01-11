@@ -1,5 +1,5 @@
 ---
-title: Definición de entidad de token de acceso de Slack (versión preliminar)
+title: Definición de entidad de token de acceso de Slack
 f1.keywords:
 - CSH
 ms.author: chrfox
@@ -20,18 +20,20 @@ hideEdit: true
 feedback_system: None
 recommendations: false
 description: Definición de entidad de tipo de información confidencial del token de acceso de Slack.
-ms.openlocfilehash: 03625b59e35dd9f265988dab84c39d8735b0e8be
-ms.sourcegitcommit: 176bbd29c92e1c0812e8bcd1e1e4938a3e1d7331
+ms.openlocfilehash: e92abbabd1f968f1b7d725e7d86f13cfeb379d7a
+ms.sourcegitcommit: 50da6f1f6ef2274c17ed9729e7ad84395b0a9be2
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/05/2022
-ms.locfileid: "68471824"
+ms.lasthandoff: 10/08/2022
+ms.locfileid: "68504446"
 ---
-# <a name="slack-access-token-preview"></a>Token de acceso de Slack (versión preliminar)
+# <a name="slack-access-token"></a>Token de acceso de Slack
 
 [!INCLUDE [purview-preview](../includes/purview-preview.md)]
 
-## <a name="format"></a>Formato
+Esta SIT también se incluye en el SIT de [todas las credenciales](sit-defn-all-creds.md) agrupadas.
+
+ ## <a name="format"></a>Formato
 
 Una combinación de hasta 34 caracteres que consta de letras, dígitos y caracteres especiales.
 
@@ -48,9 +50,15 @@ Por ejemplo:
 
 `xoxp-abcdef-abcdef-abcdef-abcdef` 
 
+## <a name="credential-example"></a>Ejemplo de credencial 
+
+`slack_token= xoxp-abcdef-abcdef-abcdef-abcdef;`
+
 ## <a name="checksum"></a>Suma de comprobación
 
 No
+
+Los SIT que tienen sumas de comprobación usan un cálculo único para comprobar si la información es válida. Esto significa que cuando el valor **de suma de comprobación** es **Sí**, el servicio puede realizar una detección positiva solo en función de los datos confidenciales. Cuando el valor **de suma de comprobación** es **No** se deben detectar elementos adicionales (secundarios) para que el servicio realice una detección positiva.
 
 ## <a name="definition"></a>Definición
 

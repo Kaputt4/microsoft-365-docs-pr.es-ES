@@ -11,16 +11,19 @@ ms.service: microsoft-365-business
 ms.localizationpriority: medium
 ROBOTS: NOINDEX, NOFOLLOW
 description: Obtener información general sobre los metadatos de conformidad para las publicaciones del Centro de mensajes
-ms.openlocfilehash: 93259a813990bf106dc91729f042f5a10b727599
-ms.sourcegitcommit: 04e517c7e00323b5c33d8ea937115725cf2cfd4d
+ms.openlocfilehash: 1205c5429427741f6383fd48205730db1ccbfc98
+ms.sourcegitcommit: 1f4c51d022d1cfb6c194bf0f0af9c2841c781d68
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/13/2022
-ms.locfileid: "68566454"
+ms.lasthandoff: 10/14/2022
+ms.locfileid: "68573953"
 ---
 # <a name="conformance-metadata-for-message-center-posts"></a>Metadatos de conformidad para las publicaciones del Centro de mensajes
 
-Al planear nuevas características o implementaciones de servicio, debe comprender y evaluar los cambios para la conformidad con el sector, la región y el país. Hemos escuchado sus comentarios de que si no hay suficiente información de conformidad sobre una característica nueva o cambiante, tiene que realizar su propia investigación sobre la característica o ponerse en contacto con el Programa de cumplimiento con preguntas.  
+> [!IMPORTANT]
+> Este documento privado solo está destinado a los usuarios de metadatos de conformidad de Administración de cambios. No comparta este documento más allá de los que están directamente implicados en el piloto.
+
+Al planear nuevas características o implementaciones de servicio, le gustaría comprender y evaluar los cambios para la conformidad con su sector, región y país. Hemos escuchado sus comentarios cuando no hay suficiente información de conformidad sobre una característica nueva o cambiante, tiene que realizar su propia investigación sobre la característica o ponerse en contacto con el Programa de cumplimiento con preguntas.  
 
 En este programa piloto, queremos proporcionar de forma proactiva metadatos para las características y servicios nuevos y actualizados de Microsoft 365. Nuestro objetivo es ayudarle a evaluar de forma eficaz sus requisitos de cumplimiento y ayudarle con las decisiones de adopción y administración de cambios.  
 
