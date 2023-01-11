@@ -10,7 +10,7 @@ manager: dougeby
 audience: ITPro
 description: Cree una directiva de acceso condicional en Azure AD para requerir dispositivos compatibles, manteniendo los datos corporativos seguros cuando los usuarios trabajan desde cualquier dispositivo en cualquier ubicación.
 ms.topic: article
-ms.service: microsoft-365-enterprise
+ms.service: o365-solutions
 ms.localizationpriority: high
 ms.collection:
 - highpri
@@ -21,12 +21,12 @@ ms.collection:
 - m365solution-scenario
 - zerotrust-solution
 ms.custom: ''
-ms.openlocfilehash: 0ae76d5bab0a1b0cb0d6ae4ce246dc62e0730c2b
-ms.sourcegitcommit: 0af064e8b6778060f1bd365378d69b16fc9949b5
+ms.openlocfilehash: 1425f01b5cd2cf2c50cfa1f31acb358cda871e39
+ms.sourcegitcommit: fce27da5140691b013a6f7c0ea9c88b4ea4b7c10
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/15/2022
-ms.locfileid: "67730625"
+ms.lasthandoff: 09/23/2022
+ms.locfileid: "67986122"
 ---
 # <a name="step-4-require-healthy-and-compliant-devices-with-intune"></a>Paso 4. Requerir dispositivos correctos y compatibles con Intune
 
