@@ -8,7 +8,9 @@ audience: Admin
 ms.topic: overview
 ms.service: microsoft-365-enterprise
 ms.localizationpriority: medium
-ms.collection: Ent_O365
+ms.collection:
+- scotvorg
+- Ent_O365
 f1.keywords:
 - CSH
 ms.custom:
@@ -19,12 +21,12 @@ search.appverid:
 - BCS160
 ms.assetid: 170e96ea-d65d-4e51-acac-1de56abe39b9
 description: En este artículo se proporcionan detalles sobre cómo aproximar el número de clientes que puede usar por dirección IP de su organización mediante NAT.
-ms.openlocfilehash: 74c202f9f1ce8550f05a107fac9237dfc86b724f
-ms.sourcegitcommit: 9b133379196da2b3a4bb311b07ff274f43780f68
+ms.openlocfilehash: afffa1fcd5aad1c641eb56323326b596e1616fd2
+ms.sourcegitcommit: 0b7070ec119e00e0dafe030bbfbef0ae5c9afa19
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/14/2022
-ms.locfileid: "67687183"
+ms.lasthandoff: 09/29/2022
+ms.locfileid: "68169395"
 ---
 # <a name="nat-support-with-office-365"></a>Compatibilidad de NAT con Office 365
 

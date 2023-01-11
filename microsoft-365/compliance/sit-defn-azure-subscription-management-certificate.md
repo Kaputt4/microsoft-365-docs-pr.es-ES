@@ -1,5 +1,5 @@
 ---
-title: Definición de entidad de certificado de administración de suscripciones de Azure (versión preliminar)
+title: Definición de entidad de certificado de administración de suscripciones de Azure
 f1.keywords:
 - CSH
 ms.author: chrfox
@@ -14,21 +14,26 @@ f1_keywords:
 ms.service: O365-seccomp
 ms.localizationpriority: medium
 ms.collection:
-- M365-security-compliance
+- tier3
+- purview-compliance
 hideEdit: true
 feedback_system: None
 recommendations: false
 description: Definición de entidad de tipo de información confidencial del certificado de administración de suscripciones de Azure.
-ms.openlocfilehash: 7ce7b09fdeae6f9622a3aac4f92beb446715f8df
-ms.sourcegitcommit: 5aed330d8af523f0dffe5e392f1c79f047e38172
+ms.openlocfilehash: d75a012c92d31dc5a103e6379241b9ecb2812277
+ms.sourcegitcommit: 50da6f1f6ef2274c17ed9729e7ad84395b0a9be2
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/21/2022
-ms.locfileid: "66999242"
+ms.lasthandoff: 10/08/2022
+ms.locfileid: "68502992"
 ---
-# <a name="azure-subscription-management-certificate-preview"></a>Certificado de administración de suscripciones de Azure (versión preliminar)
+# <a name="azure-subscription-management-certificate"></a>Certificado de administración de suscripciones de Azure
 
-## <a name="format"></a>Formato
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
+
+Esta SIT también se incluye en el SIT de [todas las credenciales](sit-defn-all-creds.md) agrupadas.
+
+ ## <a name="format"></a>Formato
 
 Combinación de hasta 20 000 caracteres que constan de letras, dígitos y caracteres especiales.
 
@@ -45,9 +50,18 @@ Por ejemplo:
 
 `MIIKcQIBAzCCCi0GCSqGSIb3DQEHAaCCCh4EggoaMIIKFjCCBg8GCSqGSIb3DQEHAaCCBgAEggX8MIIF+DCCBfQGCyqGSIb3DQEM`
 
+## <a name="credential-example"></a>Ejemplo de credencial 
+
+`<Subscription id="f70163aa-03a8-4f4a-8a30-d38e3f38fde4" ManagementCertificate="MIIPuQIBAzCCD38GCSqGS...`
+
+> [!IMPORTANT]
+> Este ejemplo se ha truncado. No es un ejemplo detectable de este SIT.
+
 ## <a name="checksum"></a>Suma de comprobación
 
 Sí
+
+Los SIT que tienen sumas de comprobación usan un cálculo único para comprobar si la información es válida. Esto significa que cuando el valor **de suma de comprobación** es **Sí**, el servicio puede realizar una detección positiva solo en función de los datos confidenciales. Cuando el valor **de suma de comprobación** es **No** se deben detectar elementos adicionales (secundarios) para que el servicio realice una detección positiva.
 
 ## <a name="definition"></a>Definición
 
@@ -64,4 +78,4 @@ Los patrones están diseñados para que coincidan con las credenciales reales co
 
 ### <a name="keyword_base64encodedstringliteral"></a>Keyword_Base64EncodedStringLiteral:
 
-- MII
+- Mii

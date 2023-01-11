@@ -14,19 +14,22 @@ f1_keywords:
 ms.service: O365-seccomp
 ms.localizationpriority: medium
 ms.collection:
-- M365-security-compliance
+- tier3
+- purview-compliance
 hideEdit: true
 feedback_system: None
 recommendations: false
 description: Definición de entidad de tipo de información confidencial del servicio de ciudadanos neerlandeses (BSN).
-ms.openlocfilehash: 4a5ca70bbbffe2d89b2dd05bd51e3dcda525e6a3
-ms.sourcegitcommit: 5aed330d8af523f0dffe5e392f1c79f047e38172
+ms.openlocfilehash: 11b4c2a2354b074277761dca5d513747892d5d40
+ms.sourcegitcommit: 6df492719fecc2b213d55465dc1cd60ab4627ed6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/21/2022
-ms.locfileid: "66951260"
+ms.lasthandoff: 10/04/2022
+ms.locfileid: "68383313"
 ---
-# <a name="netherlands-citizens-service-bsn-number"></a>Número de servicio de ciudadanos neerlandeses (BSN)
+# <a name="netherlands-citizens-service-bsn-number"></a>Número del documento de identidad (BSN) de Países Bajos
+
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
 
 ## <a name="format"></a>Formato
 
@@ -48,10 +51,10 @@ Sí
 
 ## <a name="definition"></a>Definición
 
-Una directiva DLP tiene una gran confianza en que se detecta este tipo de información confidencial si, dentro de una proximidad de 300 caracteres:
+Una política de DLP tiene una gran confianza en que ha detectado este tipo de información confidencial si, dentro de una proximidad de 300 caracteres:
 
 - Contenido de la función `Func_netherlands_bsn finds` que coincide con el patrón.
-- Se encuentra una palabra clave de `Keyword_netherlands_bsn` .
+- Se encuentra una palabra clave de `Keyword_netherlands_bsn`.
 - Se supera la suma de comprobación.
 
 ```xml

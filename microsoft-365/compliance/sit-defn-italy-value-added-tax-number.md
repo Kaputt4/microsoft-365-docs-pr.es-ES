@@ -14,19 +14,22 @@ f1_keywords:
 ms.service: O365-seccomp
 ms.localizationpriority: medium
 ms.collection:
-- M365-security-compliance
+- tier3
+- purview-compliance
 hideEdit: true
 feedback_system: None
 recommendations: false
 description: Definición de entidad del tipo de información confidencial del número de impuestos agregado de Italia.
-ms.openlocfilehash: 9e45fda7fe698e4059ec1f3af79ef7625f8f81a8
-ms.sourcegitcommit: 72d10d0bc29ecc8b19c395f1815dc48b549096d9
+ms.openlocfilehash: 4420b2238a59ee280024c00740e6b987f8a7f0b4
+ms.sourcegitcommit: 6df492719fecc2b213d55465dc1cd60ab4627ed6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/17/2022
-ms.locfileid: "67369920"
+ms.lasthandoff: 10/04/2022
+ms.locfileid: "68384237"
 ---
 # <a name="italy-value-added-tax-number"></a>Número del impuesto sobre el valor añadido de Italia
+
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
 
 ## <a name="format"></a>Formato
 

@@ -1,5 +1,5 @@
 ---
-title: Definición de entidad de firma de acceso compartido de Azure Logic App (versión preliminar)
+title: Definición de entidad de firma de acceso compartido de Azure Logic App
 f1.keywords:
 - CSH
 ms.author: chrfox
@@ -14,21 +14,26 @@ f1_keywords:
 ms.service: O365-seccomp
 ms.localizationpriority: medium
 ms.collection:
-- M365-security-compliance
+- tier3
+- purview-compliance
 hideEdit: true
 feedback_system: None
 recommendations: false
 description: Definición de entidad de tipo de información confidencial de firma de acceso compartido de Azure Logic App.
-ms.openlocfilehash: ff777170f9c9cc7ea3865a4a01e794c20137f7db
-ms.sourcegitcommit: 5aed330d8af523f0dffe5e392f1c79f047e38172
+ms.openlocfilehash: 3a567291acfb8aa121cf0bde5ee76fca381b48a7
+ms.sourcegitcommit: 50da6f1f6ef2274c17ed9729e7ad84395b0a9be2
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/21/2022
-ms.locfileid: "66999419"
+ms.lasthandoff: 10/08/2022
+ms.locfileid: "68504466"
 ---
-# <a name="azure-logic-app-shared-access-signature-preview"></a>Firma de acceso compartido de Azure Logic App (versión preliminar) 
+# <a name="azure-logic-app-shared-access-signature"></a>Firma de acceso compartido de Azure Logic App 
 
-## <a name="format"></a>Formato
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
+
+Esta SIT también se incluye en el SIT de [todas las credenciales](sit-defn-all-creds.md) agrupadas.
+
+ ## <a name="format"></a>Formato
 
 Combinación de hasta 76 caracteres que constan de letras, dígitos y caracteres especiales.
 
@@ -45,9 +50,15 @@ Por ejemplo:
 
 `abcdefghijklmnopqrstuvwxyz0123456789%2F%2BABCDE%3D`
 
+## <a name="credential-example"></a>Ejemplo de credencial 
+
+`https://account.logic.azure.com/?...&sig=abcdefghijklmnopqrstuvwxyz0123456789%2F%2BABCDE%3D`
+
 ## <a name="checksum"></a>Suma de comprobación
 
 No
+
+Los SIT que tienen sumas de comprobación usan un cálculo único para comprobar si la información es válida. Esto significa que cuando el valor **de suma de comprobación** es **Sí**, el servicio puede realizar una detección positiva solo en función de los datos confidenciales. Cuando el valor **de suma de comprobación** es **No** se deben detectar elementos adicionales (secundarios) para que el servicio realice una detección positiva.
 
 ## <a name="definition"></a>Definición
 

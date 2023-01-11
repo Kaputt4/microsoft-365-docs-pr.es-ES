@@ -4,18 +4,18 @@ description: Obtenga información sobre la administración del tamaño del buzó
 manager: serdars
 audience: ITPro
 ms.topic: article
-ms.service: o365-administration
-localization_priority: Normal
+ms.service: microsoft-365-business
+ms.localizationpriority: medium
 search.appverid: ''
 ms.reviewer: ''
 author: serdars
 ms.author: serdars
-ms.openlocfilehash: e97ed8b6f7d4d57fe993c6039b165f1a8e85eeb8
-ms.sourcegitcommit: cd9df1a681265905eef99c039f7036b2fa6e8b6d
+ms.openlocfilehash: 7651903eecf899b15306ed7ec81fa15eed131450
+ms.sourcegitcommit: 6df492719fecc2b213d55465dc1cd60ab4627ed6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/07/2022
-ms.locfileid: "67277243"
+ms.lasthandoff: 10/04/2022
+ms.locfileid: "68384039"
 ---
 # <a name="microsoft-365-group-mailbox-size-management"></a>Administración del tamaño del buzón de grupo de Microsoft 365 
 

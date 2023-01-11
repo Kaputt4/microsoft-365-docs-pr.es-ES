@@ -14,19 +14,22 @@ f1_keywords:
 ms.service: O365-seccomp
 ms.localizationpriority: medium
 ms.collection:
-- M365-security-compliance
+- tier3
+- purview-compliance
 hideEdit: true
 feedback_system: None
 recommendations: false
 description: Definición de entidad de tipo de información confidencial de número de cuenta bancaria de Israel.
-ms.openlocfilehash: a68f90cd92432778d89d3f8494522a5ab2822d07
-ms.sourcegitcommit: 5aed330d8af523f0dffe5e392f1c79f047e38172
+ms.openlocfilehash: d29a328cc53a76ad86cc0c7cee51457b0cfa2c26
+ms.sourcegitcommit: 6df492719fecc2b213d55465dc1cd60ab4627ed6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/21/2022
-ms.locfileid: "67000400"
+ms.lasthandoff: 10/04/2022
+ms.locfileid: "68382470"
 ---
 # <a name="israel-bank-account-number"></a>Número de cuenta bancaria de Israel
+
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
 
 ## <a name="format"></a>Formato
 
@@ -54,7 +57,7 @@ No
 
 Una política de DLP tiene confianza media en que ha detectado este tipo de información confidencial si, dentro de una proximidad de 300 caracteres:
 
-- La expresión `Regex_israel_bank_account_number` regular busca contenido que coincida con el patrón.
+- La expresión regular `Regex_israel_bank_account_number` encuentra contenido que coincide con el patrón.
 - Se encuentra una palabra clave de `Keyword_israel_bank_account_number`.
 
 ```xml

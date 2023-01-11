@@ -14,19 +14,22 @@ f1_keywords:
 ms.service: O365-seccomp
 ms.localizationpriority: medium
 ms.collection:
-- M365-security-compliance
+- tier3
+- purview-compliance
 hideEdit: true
 feedback_system: None
 recommendations: false
 description: Definición de entidad de tipo de información confidencial del número de la seguridad social (SSN) de España.
-ms.openlocfilehash: 4a531f0548aba2caa330423d493cf8e524c4ed73
-ms.sourcegitcommit: 5aed330d8af523f0dffe5e392f1c79f047e38172
-ms.translationtype: HT
+ms.openlocfilehash: 8a87fcc82af413e074e7e37302bb72de0f9a501a
+ms.sourcegitcommit: 176bbd29c92e1c0812e8bcd1e1e4938a3e1d7331
+ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/21/2022
-ms.locfileid: "66999908"
+ms.lasthandoff: 10/05/2022
+ms.locfileid: "68470572"
 ---
 # <a name="spain-social-security-number-ssn"></a>Número de la seguridad social de España (NSS)
+
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
 
 ## <a name="format"></a>Formato
 

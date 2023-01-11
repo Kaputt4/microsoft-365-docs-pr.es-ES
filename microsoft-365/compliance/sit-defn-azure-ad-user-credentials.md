@@ -1,5 +1,5 @@
 ---
-title: Definición de entidad de credenciales de usuario de Azure AD (versión preliminar)
+title: Definición de entidad de credenciales de usuario de Azure AD
 f1.keywords:
 - CSH
 ms.author: chrfox
@@ -14,21 +14,26 @@ f1_keywords:
 ms.service: O365-seccomp
 ms.localizationpriority: medium
 ms.collection:
-- M365-security-compliance
+- tier3
+- purview-compliance
 hideEdit: true
 feedback_system: None
 recommendations: false
 description: Definición de entidad de tipo de información confidencial de credenciales de usuario de Azure AD.
-ms.openlocfilehash: 5b27f2a5c700770df65be74f0cebb23351de77bc
-ms.sourcegitcommit: 5aed330d8af523f0dffe5e392f1c79f047e38172
+ms.openlocfilehash: 80ae30fa7356c549a86d0bbbd053abca48143077
+ms.sourcegitcommit: 50da6f1f6ef2274c17ed9729e7ad84395b0a9be2
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/21/2022
-ms.locfileid: "66999509"
+ms.lasthandoff: 10/08/2022
+ms.locfileid: "68504576"
 ---
-# <a name="azure-ad-user-credentials-preview"></a>Credenciales de usuario de Azure AD (versión preliminar)
+# <a name="azure-ad-user-credentials"></a>Credenciales de usuario de Azure AD
 
-## <a name="format"></a>Formato
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
+
+Esta SIT también se incluye en el SIT de [todas las credenciales](sit-defn-all-creds.md) agrupadas.
+
+ ## <a name="format"></a>Formato
 
 Nombre de usuario y contraseña emparejados relacionados con el dominio *.onmicrosoft.com.
 
@@ -74,9 +79,15 @@ Varios formatos de contraseña en XML, por ejemplo:
 ```
 
 
+## <a name="credential-example"></a>Ejemplo de credencial 
+
+`username=user@tenant.onmicrosoft.com;password=ZYXWVU$1;`
+
 ## <a name="checksum"></a>Suma de comprobación
 
 No
+
+Los SIT que tienen sumas de comprobación usan un cálculo único para comprobar si la información es válida. Esto significa que cuando el valor **de suma de comprobación** es **Sí**, el servicio puede realizar una detección positiva solo en función de los datos confidenciales. Cuando el valor **de suma de comprobación** es **No** se deben detectar elementos adicionales (secundarios) para que el servicio realice una detección positiva.
 
 ## <a name="definition"></a>Definición
 
@@ -84,7 +95,7 @@ Esta SIT está diseñada para coincidir con la información de seguridad que se 
 
 Usa varios recursos principales:
 
-- Patrones de nombre de usuario y contraseña de texto sin formato para el inquilino de Azure AD.
+- Patrones de nombre de usuario y contraseña de texto sin formato para inquilinos de Azure AD.
 - Patrones de contexto de contraseña en el código.
 - Patrones de contexto de contraseña en XML.
 - Patrones de CredentialName, CredentialFeatures, AccountIdentityName, AccountIdentityValue, ResourceType, ResourceName.

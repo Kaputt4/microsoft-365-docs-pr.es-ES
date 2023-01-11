@@ -1,5 +1,5 @@
 ---
-title: Definición general de entidad de contraseña (versión preliminar)
+title: Definición general de entidad de contraseña
 f1.keywords:
 - CSH
 ms.author: chrfox
@@ -20,18 +20,20 @@ hideEdit: true
 feedback_system: None
 recommendations: false
 description: Definición general del tipo de información confidencial de contraseña.
-ms.openlocfilehash: 39a789fed5d0cf1467da4be0e05324dea3d5a12d
-ms.sourcegitcommit: fa570d90b00ed1bb40e1ca27b11c66a84c4204e9
+ms.openlocfilehash: 59171b8add2bb9a694eecfb9e5151c79b9078e34
+ms.sourcegitcommit: 50da6f1f6ef2274c17ed9729e7ad84395b0a9be2
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/05/2022
-ms.locfileid: "68476757"
+ms.lasthandoff: 10/08/2022
+ms.locfileid: "68504268"
 ---
-# <a name="general-password-preview"></a>Contraseña general (versión preliminar)
+# <a name="general-password"></a>Contraseña general
 
 [!INCLUDE [purview-preview](../includes/purview-preview.md)]
 
-## <a name="format"></a>Formato
+Esta SIT también se incluye en el SIT de [todas las credenciales](sit-defn-all-creds.md) agrupadas.
+
+ ## <a name="format"></a>Formato
 
 Combinación de hasta 20 000 caracteres de letras, dígitos y caracteres especiales.
 
@@ -226,9 +228,15 @@ Por ejemplo:
 
 `abcdefghijklmnopqrstuvwxyz0123456789/+ABCDEabcdefghijklmnopqrstuvwxyz0123456789/+ABCDE==`
 
+## <a name="credential-example"></a>Ejemplo de credencial 
+
+`<secret>ZYXWVU_3</secret>`
+
 ## <a name="checksum"></a>Suma de comprobación
 
 Sí
+
+Los SIT que tienen sumas de comprobación usan un cálculo único para comprobar si la información es válida. Esto significa que cuando el valor **de suma de comprobación** es **Sí**, el servicio puede realizar una detección positiva solo en función de los datos confidenciales. Cuando el valor **de suma de comprobación** es **No** se deben detectar elementos adicionales (secundarios) para que el servicio realice una detección positiva.
 
 ## <a name="description"></a>Descripción
 

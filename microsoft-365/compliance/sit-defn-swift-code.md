@@ -14,19 +14,22 @@ f1_keywords:
 ms.service: O365-seccomp
 ms.localizationpriority: medium
 ms.collection:
-- M365-security-compliance
+- tier3
+- purview-compliance
 hideEdit: true
 feedback_system: None
 recommendations: false
 description: Definición de entidad de tipo de información confidencial del código SWIFT.
-ms.openlocfilehash: b1bbadf8f2b56218a90eec1cfd2fac7d550efe0e
-ms.sourcegitcommit: 5aed330d8af523f0dffe5e392f1c79f047e38172
+ms.openlocfilehash: c857976bc52516f8a3845c28f4cd1e68867cdf20
+ms.sourcegitcommit: 176bbd29c92e1c0812e8bcd1e1e4938a3e1d7331
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/21/2022
-ms.locfileid: "66999071"
+ms.lasthandoff: 10/05/2022
+ms.locfileid: "68472119"
 ---
 # <a name="swift-code"></a>Código SWIFT
+
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
 
 ## <a name="format"></a>Formato
 
@@ -50,7 +53,7 @@ No
 
 Una política de DLP tiene confianza media en que ha detectado este tipo de información confidencial si, dentro de una proximidad de 300 caracteres:
 
-- La expresión `Regex_swift` regular busca contenido que coincida con el patrón.
+- La expresión regular `Regex_swift` encuentra contenido que coincide con el patrón.
 - Se encuentra una palabra clave de `Keyword_swift`.
 
 ```xml
@@ -87,7 +90,7 @@ Una política de DLP tiene confianza media en que ha detectado este tipo de info
 - le numéro de swift
 - swift numéro d'acheminement
 - le numéro BIC
-- \# BIC
+- \# Bic
 - code identificateur de banque
 - SWIFTコード
 - SWIFT番号
