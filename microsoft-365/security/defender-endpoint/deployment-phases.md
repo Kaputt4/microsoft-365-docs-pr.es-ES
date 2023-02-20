@@ -61,7 +61,7 @@ Cada sección corresponde a un artículo independiente de esta solución.
 
 Una vez completada esta guía, estarán configurados los permisos de acceso adecuados, se habrán incorporado los puntos de conexión y estarán notificando los datos del sensor al servicio, y se habrán aplicado funcionalidades como la protección de próxima generación y la reducción de la superficie de ataque.
 
-Independientemente de la arquitectura del entorno y el método de implementación que elija descritos en la guía [Planeamiento de la implementación](deployment-strategy.md) , esta guía le ayudarña en la incorporación de puntos de conexión.
+Independientemente de la arquitectura del entorno y el método de implementación que elija descritos en la guía [Planeamiento de la implementación](deployment-strategy.md) , esta guía le ayudará en la incorporación de puntos de conexión.
 
 ## <a name="key-capabilities"></a>Principales funcionalidades
 
