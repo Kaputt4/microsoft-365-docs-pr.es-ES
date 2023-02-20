@@ -80,9 +80,9 @@ Aunque Microsoft Defender para punto de conexión proporciona muchas funcionalid
 
 Todas estas funcionalidades están disponibles para los titulares de licencias de Microsoft Defender para punto de conexión. Para obtener más información, consulte [Requisitos de licencias](minimum-requirements.md#licensing-requirements).
 
-## <a name="scope"></a>Ámbito
+## <a name="scope"></a>Alcamce
 
-### <a name="in-scope"></a>En el ámbito
+### <a name="in-scope"></a>Dentro del alcance
 
 - Uso de Microsoft Endpoint Manager y Microsoft Endpoint Configuration Manager para incorporar puntos de conexión al servicio y configurar funcionalidades
 - Habilitación de las funcionalidades de detección y respuesta de puntos de conexión (EDR) de Defender para punto de conexión
@@ -90,9 +90,9 @@ Todas estas funcionalidades están disponibles para los titulares de licencias d
   - Protección de última generación
   - Reducción de la superficie de ataque
 
-### <a name="out-of-scope"></a>Fuera de ámbito
+### <a name="out-of-scope"></a>Fuera del alcance
 
-Las siguientes opciones están fuera del ámbito de esta guía de implementación:
+Las siguientes opciones están fuera del alcance de esta guía de implementación:
 
 - Configuración de soluciones de terceros que podrían integrarse con Defender para punto de conexión
 - Pruebas de penetración en entornos de producción
