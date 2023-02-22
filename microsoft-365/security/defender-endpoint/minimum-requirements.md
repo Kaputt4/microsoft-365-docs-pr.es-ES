@@ -44,26 +44,26 @@ Hay algunos requisitos mínimos para incorporar dispositivos al servicio. Obteng
 
 ## <a name="licensing-requirements"></a>Requisitos de licencias
 
-Las versiones independientes de [Defender para el plan 1 y el plan 2](defender-endpoint-plan-1-2.md), incluso cuando se incluyen como parte de otros planes de Microsoft 365, no incluyen licencias de servidor. Para incorporar servidores a esos planes, necesitará Defender for Servers Plan 1 o Plan 2 como parte de la oferta de [Defender for Cloud](/azure/defender-for-cloud/defender-for-cloud-introduction) . Para obtener más información, consulte la introducción a [Microsoft Defender para servidores](/azure/defender-for-cloud/defender-for-servers-introduction).
+Las versiones independientes de [Defender para el plan 1 y el plan 2](defender-endpoint-plan-1-2.md), incluso cuando se incluyen como parte de otros planes de Microsoft 365, no incluyen licencias de servidor. Para incorporar servidores a esos planes, necesitará Defender for Servers Plan 1 o Plan 2 como parte de la oferta de [Defender for Cloud](/azure/defender-for-cloud/defender-for-cloud-introduction) . Para obtener más información, consulte la [introducción a Microsoft Defender para servidores](/azure/defender-for-cloud/defender-for-servers-introduction).
 
-Para obtener información sobre los requisitos de licencia de Microsoft Defender para punto de conexión, consulte [Microsoft Defender para punto de conexión información de licencias](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance#microsoft-defender-for-endpoint).
+Para obtener información sobre los requisitos de licencia de Microsoft Defender para punto de conexión, consulte la [información de licencias de Microsoft Defender para punto de conexión](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance#microsoft-defender-for-endpoint).
 
-Para obtener información detallada sobre las licencias, consulte el [sitio términos del producto](https://www.microsoft.com/licensing/terms/) y trabaje con el equipo de su cuenta para obtener más información sobre los términos y condiciones.
+Para obtener información detallada sobre las licencias, consulte el [sitio de términos del producto](https://www.microsoft.com/licensing/terms/) y trabaje con el equipo de su cuenta para obtener más información sobre los términos y condiciones.
 
 Para obtener más información sobre la matriz de características en las ediciones de Windows, consulta [Comparar ediciones de Windows](https://www.microsoft.com/windowsforbusiness/compare).
-## <a name="browser-requirements"></a>Requisitos de los exploradores
+## <a name="browser-requirements"></a>Requisitos de los navegadores
 
-El acceso a Defender para punto de conexión se realiza a través de un explorador, lo que admite los siguientes exploradores:
+El acceso a Defender para punto de conexión se realiza a través de un navegador, siendo compatibles los siguientes navegadores:
 
 - Microsoft Edge
 - Google Chrome
 
 > [!NOTE]
-> Aunque otros exploradores pueden funcionar, los exploradores mencionados son los que se admiten.
+> Aunque otros navegadores pueden funcionar, los navegadores mencionados son los compatibles.
 
 ## <a name="hardware-and-software-requirements"></a>Requisitos de hardware y software
 
-### <a name="supported-windows-versions"></a>Versiones de Windows comptibles
+### <a name="supported-windows-versions"></a>Versiones de Windows compatibles
 
 - Windows 11 Enterprise
 - Windows 11 Education
@@ -74,7 +74,7 @@ El acceso a Defender para punto de conexión se realiza a través de un explorad
 - Windows 10 Enterprise loT
 
     >[!NOTE]
-    >Aunque Windows 10 IoT Enterprise es un sistema operativo compatible en Microsoft Defender para punto de conexión y permite que los OEM/ODM lo distribuyan como parte de su producto o solución, los clientes deben seguir las instrucciones del OEM/ODM sobre el software instalado basado en host y la compatibilidad.
+    >Aunque Windows 10 IoT Enterprise es un sistema operativo compatible con Microsoft Defender para punto de conexión y permite que los OEM/ODM lo distribuyan como parte de su producto o solución, los clientes deben seguir las instrucciones del OEM/ODM sobre el software instalado basado en host y la compatibilidad.
 
 - Windows 10 Education
 - Windows 10 Pro
@@ -94,11 +94,13 @@ El acceso a Defender para punto de conexión se realiza a través de un explorad
 - Windows Virtual Desktop
 - Windows 365
 
-Los dispositivos de la red deben ejecutar una de estas ediciones.
+Los dispositivos de su red deben ejecutar una de estas ediciones.
 
 Los requisitos de hardware de Defender para punto de conexión en dispositivos son los mismos para las ediciones admitidas.
 
-> Núcleos: 2 memorias mínimas y 4 preferidas: 1 GB como mínimo, 4 preferidas
+> Núcleos: 2 como mínimo y 4 preferido
+>
+> Memoria: 1 GB como mínimo, 4 preferidos
 
 Para obtener más información sobre las versiones admitidas de Windows 10, consulte [Windows 10 información de versión](/windows/release-health/release-information).
 
@@ -111,9 +113,9 @@ Para obtener más información sobre las versiones admitidas de Windows 10, cons
 >
 > - Las versiones independientes de [Defender para el plan 1 y el plan 2](defender-endpoint-plan-1-2.md) no incluyen licencias de servidor. Para incorporar servidores a esos planes, necesitará Defender for Servers Plan 1 o Plan 2 como parte de la oferta de [Defender for Cloud](/azure/defender-for-cloud/defender-for-cloud-introduction) . Para obtener más información. consulte [Información general de Microsoft Defender para servidores](/azure/defender-for-cloud/defender-for-servers-introduction).
 
-Cuando los componentes están actualizados en los sistemas operativos Microsoft Windows, Microsoft Defender para punto de conexión soporte técnico seguirá el ciclo de vida del sistema operativo correspondiente. Para obtener más información, consulte [Preguntas más frecuentes sobre el ciclo de vida](/lifecycle/faq/general-lifecycle). Por lo general, las nuevas características o funcionalidades solo se proporcionan en sistemas operativos que aún no han alcanzado el final de su ciclo de vida. Las actualizaciones de inteligencia de seguridad (actualizaciones de definición y motor) y la lógica de detección seguirán proporcionándose hasta al menos:
+Cuando los componentes están actualizados en los sistemas operativos Microsoft Windows, la compatibilidad con Microsoft Defender para punto de conexión seguirá el ciclo de vida del sistema operativo correspondiente. Para obtener más información, consulte [Preguntas más frecuentes sobre el ciclo de vida](/lifecycle/faq/general-lifecycle). Por lo general, las nuevas características o funcionalidades solo se proporcionan en sistemas operativos que aún no han alcanzado el final de su ciclo de vida. Las actualizaciones de inteligencia de seguridad (actualizaciones de definición y motor) y la lógica de detección seguirán proporcionándose hasta al menos:
 
-- Fecha [de finalización del soporte](/lifecycle/products/) técnico (para sistemas operativos que no tienen un programa de Novedades de seguridad extendida (ESU).
+- Fecha [de finalización del soporte técnico](/lifecycle/products/) (para sistemas operativos que no tienen un programa de Novedades de seguridad extendida (ESU)).
 - Fecha [de finalización de la ESU](/lifecycle/faq/extended-security-updates) (para sistemas operativos que tienen un programa ESU).
 
 ### <a name="other-supported-operating-systems"></a>Otros sistemas operativos admitidos
@@ -132,8 +134,8 @@ Al ejecutar el asistente de incorporación por primera vez, debe elegir dónde s
 
 > [!NOTE]
 >
-> - No se puede cambiar la ubicación de almacenamiento de datos después de la configuración por primera vez.
-> - Revise la [Microsoft Defender para punto de conexión el almacenamiento de datos y la privacidad](data-storage-privacy.md) para obtener más información sobre dónde y cómo Microsoft almacena los datos.
+> - No se puede cambiar la ubicación de almacenamiento de datos después de la primera configuración.
+> - Revise el [almacenamiento de datos y privacidad de Microsoft Defender para punto de conexión](data-storage-privacy.md) para obtener más información sobre dónde y cómo Microsoft almacena los datos.
 
 ### <a name="diagnostic-data-settings"></a>Configuración de datos de diagnóstico
 
@@ -141,11 +143,11 @@ Al ejecutar el asistente de incorporación por primera vez, debe elegir dónde s
 > Microsoft Defender para punto de conexión no requiere ningún nivel de diagnóstico específico siempre que esté habilitado.
 
 Asegúrese de que el servicio de datos de diagnóstico está habilitado en todos los dispositivos de la organización.
-De forma predeterminada, este servicio está habilitado. Es recomendable comprobar para asegurarse de que obtendrá datos del sensor de ellos.
+De forma predeterminada, este servicio está habilitado. Es recomendable comprobarlo para asegurarse de que obtendrá datos del sensor de ellos.
 
-El nombre para mostrar de este servicio es _Experiencias de usuario conectado y Telemetría_.
+El nombre mostrado de este servicio es _Experiencias de usuario conectado y Telemetría_.
 
-#### <a name="use-the-command-line-to-check-the-windows-diagnostic-data-service-startup-type"></a>Usar la línea de comandos para comprobar el tipo de inicio del servicio de datos de diagnóstico de Windows
+#### <a name="use-the-command-line-to-check-the-windows-diagnostic-data-service-startup-type"></a>Use la línea de comandos para comprobar el tipo de inicio del servicio de datos de diagnóstico de Windows
 
 1. Abra un símbolo del sistema con privilegios elevados en el dispositivo:
    1. Vaya a **Inicio** y escriba **cmd**.
@@ -191,7 +193,7 @@ Para obtener más información sobre las opciones de configuración de proxy adi
 
 Antes de incorporar dispositivos, el servicio de datos de diagnóstico debe estar habilitado. El servicio está habilitado de forma predeterminada en Windows 10 y Windows 11.
 
-## <a name="microsoft-defender-antivirus-configuration-requirement"></a>Microsoft Defender requisito de configuración de Antivirus
+## <a name="microsoft-defender-antivirus-configuration-requirement"></a>Requisitos de configuración Microsoft Defender Antivirus
 
 El agente de Defender para punto de conexión depende de la capacidad de Microsoft Defender Antivirus para examinar archivos y proporcionar información sobre ellos.
 
@@ -204,13 +206,13 @@ Si su organización ha desactivado Microsoft Defender Antivirus a través de la 
 Si va a incorporar servidores y Microsoft Defender Antivirus no es el antimalware activo en los servidores, Microsoft Defender Antivirus deberá configurarse para ir en modo pasivo o desinstalarse. La configuración depende de la versión del servidor. Para obtener más información, consulte [compatibilidad con Microsoft Defender Antivirus](microsoft-defender-antivirus-compatibility.md).
 
 > [!NOTE]
-> La directiva de grupo normal no se aplica a La protección contra alteraciones y los cambios en Microsoft Defender configuración del Antivirus se omitirán cuando la protección contra alteraciones esté activada.
+> La directiva de grupo normal no se aplica a la protección contra alteraciones y los cambios en la configuración de Microsoft Defender Antivirus se omitirán cuando la protección contra alteraciones esté activada.
 
-## <a name="microsoft-defender-antivirus-early-launch-antimalware-elam-driver-is-enabled"></a>Microsoft Defender controlador antimalware de inicio anticipado del Antivirus (ELAM) está habilitado
+## <a name="microsoft-defender-antivirus-early-launch-antimalware-elam-driver-is-enabled"></a>El controlador antimalware de inicio anticipado (ELAM) de Microsoft Defender Antivirus está habilitado
 
 Si ejecuta Microsoft Defender Antivirus como producto antimalware principal en los dispositivos, el agente de Defender para punto de conexión se incorporará correctamente.
 
-Si ejecuta un cliente antimalware de terceros y usa soluciones de Mobile Administración de dispositivos o Microsoft Endpoint Manager (rama actual), deberá asegurarse de que el controlador ELAM de antivirus de Microsoft Defender está habilitado. Para obtener más información, vea [Asegurarse de que Microsoft Defender Antivirus no está deshabilitado por directiva](troubleshoot-onboarding.md#ensure-that-microsoft-defender-antivirus-is-not-disabled-by-a-policy).
+Si ejecuta un cliente antimalware de terceros y usa soluciones de gestión de dispositivos móbiles (MDM) o Microsoft Endpoint Manager (rama actual), deberá asegurarse de que el controlador ELAM de Microsoft Defender Antivirus está habilitado. Para obtener más información, vea [Asegurarse de que Microsoft Defender Antivirus no está deshabilitado por directiva](troubleshoot-onboarding.md#ensure-that-microsoft-defender-antivirus-is-not-disabled-by-a-policy).
 
 ## <a name="related-topics"></a>Temas relacionados
 
