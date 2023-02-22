@@ -59,7 +59,7 @@ Cada sección corresponde a un artículo independiente de esta solución.
 |[Fase 3: Incorporación](onboarding.md)|Obtenga información sobre cómo usar los anillos de implementación, las herramientas de incorporación admitidas en función del tipo de punto de conexión y la configuración de las funcionalidades disponibles.|
 |
 
-Una vez completada esta guía, se configurará con los permisos de acceso adecuados, se incorporarán los puntos de conexión y se notificarán los datos del sensor al servicio, y se aplicarán funcionalidades como la protección de próxima generación y la reducción de la superficie expuesta a ataques.
+Una vez completada esta guía, se configurará con los permisos de acceso adecuados, se incorporarán los puntos de conexión y se notificarán los datos del sensor al servicio, y se aplicarán funcionalidades como la protección de próxima generación y la reducción de la superficie de ataque.
 
 Independientemente de la arquitectura del entorno y el método de implementación que elija descritos en la guía [Planeamiento de la implementación](deployment-strategy.md) , esta guía le admitirá en la incorporación de puntos de conexión.
 
@@ -75,7 +75,7 @@ Aunque Microsoft Defender para punto de conexión proporciona muchas funcionalid
 |---|---|
 |Detección y respuesta de puntos de conexión|Las funcionalidades de detección y respuesta de puntos de conexión se implementan para detectar, investigar y responder a intentos de intrusiones y infracciones activas.|
 |Protección de última generación|Para reforzar aún más el perímetro de seguridad de la red, Microsoft Defender para punto de conexión usa la protección de próxima generación diseñada para detectar todos los tipos de amenazas emergentes.|
-|Reducción de la superficie expuesta a ataques|Proporcione la primera línea de defensa en la pila. Al garantizar que los valores de configuración se establecen correctamente y se aplican las técnicas de mitigación de vulnerabilidades de seguridad, estas funcionalidades resisten los ataques y la explotación.|
+|Reducción de la superficie de ataque|Proporcione la primera línea de defensa en la pila. Al garantizar que los valores de configuración se establecen correctamente y se aplican las técnicas de mitigación de exploits, estas funcionalidades resisten los ataques y la explotación.|
 |
 
 Todas estas funcionalidades están disponibles para Microsoft Defender para punto de conexión titulares de licencias. Para obtener más información, consulte [Requisitos de licencias](minimum-requirements.md#licensing-requirements).
@@ -85,10 +85,10 @@ Todas estas funcionalidades están disponibles para Microsoft Defender para punt
 ### <a name="in-scope"></a>En el ámbito
 
 - Uso de Microsoft Endpoint Manager y Microsoft Endpoint Configuration Manager para incorporar puntos de conexión al servicio y configurar funcionalidades
-- Habilitación de las funcionalidades de detección y respuesta de puntos de conexión de Defender para punto de conexión (EDR)
+- Habilitación de las funcionalidades de detección y respuesta en puntos de conexión de Defender para punto de conexión (EDR)
 - Habilitación de las funcionalidades de la plataforma de protección de puntos de conexión (EPP) de Defender para punto de conexión
   - Protección de última generación
-  - Reducción de la superficie expuesta a ataques
+  - Reducción de la superficie de ataque
 
 ### <a name="out-of-scope"></a>Fuera de ámbito
 

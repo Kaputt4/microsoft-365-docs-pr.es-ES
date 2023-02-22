@@ -51,7 +51,7 @@ Aunque Defender para punto de conexión admite la incorporación de varios punto
 
 Este tema guía a los usuarios en:
 
-- Paso 1: Incorporación de dispositivos al servicio mediante la creación de un grupo en Microsoft Endpoint Manager (MEM) para asignar configuraciones en
+- Paso 1: Incorporación de dispositivos al servicio mediante la creación de un grupo en Microsoft Endpoint Manager (MEM)
 - Paso 2: Configuración de las funcionalidades de Defender para punto de conexión mediante Microsoft Endpoint Manager
 
 Esta guía de incorporación le guiará por los siguientes pasos básicos que debe seguir al usar Microsoft Endpoint Manager:
@@ -75,7 +75,7 @@ Para obtener más información sobre Microsoft Endpoint Manager, consulte estos 
 - [Entrada de blog sobre la convergencia de Intune y ConfigMgr](https://www.microsoft.com/microsoft-365/blog/2019/11/04/use-the-power-of-cloud-intelligence-to-simplify-and-accelerate-it-and-the-move-to-a-modern-workplace/)
 - [Vídeo de introducción en MEM](https://www.microsoft.com/microsoft-365/blog/2019/11/04/use-the-power-of-cloud-intelligence-to-simplify-and-accelerate-it-and-the-move-to-a-modern-workplace)
 
-## <a name="step-1-onboard-devices-by-creating-a-group-in-mem-to-assign-configurations-on"></a>Paso 1: Incorporación de dispositivos mediante la creación de un grupo en MEM para asignar configuraciones en
+## <a name="step-1-onboard-devices-by-creating-a-group-in-mem-to-assign-configurations-on"></a>Paso 1: Incorporación de dispositivos mediante la creación de un grupo en MEM
 
 ### <a name="identify-target-devices-or-users"></a>Identificación de dispositivos o usuarios de destino
 
@@ -117,25 +117,25 @@ En esta sección, crearemos un grupo de pruebas en el que asignar las configurac
 
 En la sección siguiente, creará varias directivas de configuración.
 
-En primer lugar, es una directiva de configuración para seleccionar qué grupos de usuarios o dispositivos se incorporarán a Defender para punto de conexión:
+Lo primero es una directiva de configuración para seleccionar qué grupos de usuarios o dispositivos se incorporarán a Defender para punto de conexión:
 
 - [EDR](#endpoint-detection-and-response)
 
 A continuación, seguirá creando varios tipos diferentes de directivas de seguridad de puntos de conexión:
 
 - [Protección de última generación](#next-generation-protection)
-- [Reducción de la superficie expuesta a ataques](#attack-surface-reduction---attack-surface-reduction-rules)
+- [Reducción de la superficie de ataque](#attack-surface-reduction---attack-surface-reduction-rules)
 
 ### <a name="endpoint-detection-and-response"></a>Detección y respuesta de puntos de conexión
 
 1. Abra el portal de MEM.
 
-2. Vaya a **Seguridad del punto de conexión > Detección y respuesta de puntos de conexión**. Haga clic en **Crear perfil**.
+2. Vaya a **Seguridad del punto de conexión \> Detección y respuesta de puntos de conexión**. Haga clic en **Crear perfil**.
 
     > [!div class="mx-imgBorder"]
     > :::image type="content" source="images/58dcd48811147feb4ddc17212b7fe840.png" alt-text="Portal de Microsoft Endpoint Manager 4" lightbox="images/58dcd48811147feb4ddc17212b7fe840.png":::
 
-3. En **Plataforma, seleccione Windows 10 y versiones posteriores, Perfil: detección y respuesta de puntos de conexión > Crear**.
+3. En **Plataforma**, seleccione **Windows 10 y versiones posteriores**, y en perfil, **Detección y respuesta de puntos de conexión**. Haga click en Crear.
 
 4. Escriba un nombre y una descripción y, a continuación, seleccione  **Siguiente**.
 
@@ -178,19 +178,19 @@ A continuación, seguirá creando varios tipos diferentes de directivas de segur
 
 1. Abra el portal de MEM.
 
-2. Vaya a **Seguridad del punto de conexión > Antivirus > Crear directiva**.
+2. Vaya a **Seguridad del punto de conexión \> Antivirus \> Crear directiva**.
 
     > [!div class="mx-imgBorder"]
     > :::image type="content" source="images/6b728d6e0d71108d768e368b416ff8ba.png" alt-text="Portal de Microsoft Endpoint Manager 12" lightbox="images/6b728d6e0d71108d768e368b416ff8ba.png":::
 
-3. Seleccione **Plataforma - Windows 10 y versiones posteriores - Windows y Perfil - Microsoft Defender Antivirus > Crear**.
+3. Seleccione **Plataforma: Windows 10 y versiones posteriores** y **Perfil: Microsoft Defender Antivirus \> Crear**.
 
 4. Escriba el nombre y la descripción y, a continuación, seleccione  **Siguiente**.
 
     > [!div class="mx-imgBorder"]
     > :::image type="content" source="images/a7d738dd4509d65407b7d12beaa3e917.png" alt-text="Portal de Microsoft Endpoint Manager 13" lightbox="images/a7d738dd4509d65407b7d12beaa3e917.png":::
 
-5. En la **página Configuración**: establezca las configuraciones que necesita para Microsoft Defender Antivirus (Cloud Protection, Exclusiones, Real-Time Protection y Corrección).
+5. En la página **Configuración**, establezca las configuraciones que necesita para Microsoft Defender Antivirus (Protección Cloud, Exclusiones, Protección en tiempo real y Remediación).
 
     > [!div class="mx-imgBorder"]
     > :::image type="content" source="images/3840b1576d6f79a1d72eb14760ef5e8c.png" alt-text="Portal de Microsoft Endpoint Manager 14" lightbox="images/3840b1576d6f79a1d72eb14760ef5e8c.png":::
@@ -205,7 +205,7 @@ A continuación, seguirá creando varios tipos diferentes de directivas de segur
     > [!div class="mx-imgBorder"]
     > :::image type="content" source="images/48318a51adee06bff3908e8ad4944dc9.png" alt-text="Portal de Microsoft Endpoint Manager 16" lightbox="images/48318a51adee06bff3908e8ad4944dc9.png":::
 
-8. Revise y cree y, a continuación, seleccione  **Crear**.
+8. Revise los detalles y, a continuación, seleccione  **Crear**.
 
     > [!div class="mx-imgBorder"]
     > :::image type="content" source="images/dfdadab79112d61bd3693d957084b0ec.png" alt-text="Portal de Microsoft Endpoint Manager 17" lightbox="images/dfdadab79112d61bd3693d957084b0ec.png":::
@@ -215,15 +215,15 @@ A continuación, seguirá creando varios tipos diferentes de directivas de segur
     > [!div class="mx-imgBorder"]
     > :::image type="content" source="images/38180219e632d6e4ec7bd25a46398da8.png" alt-text="Portal de Microsoft Endpoint Manager 18" lightbox="images/38180219e632d6e4ec7bd25a46398da8.png":::
 
-### <a name="attack-surface-reduction---attack-surface-reduction-rules"></a>Reducción de superficie expuesta a ataques: reglas de reducción de superficie expuesta a ataques
+### <a name="attack-surface-reduction---attack-surface-reduction-rules"></a>Reducción de superficie de ataque: reglas de reducción de superficie de ataque
 
 1. Abra el portal de MEM.
 
-2. Vaya a **Seguridad del punto de conexión > Reducción de la superficie expuesta a ataques**.
+2. Vaya a **Seguridad del punto de conexión > Reducción de la superficie de ataque**.
 
 3. Seleccione  **Crear directiva**.
 
-4. Seleccione **Plataforma- Windows 10 y versiones posteriores - Perfil - Reglas de reducción de superficie expuesta a ataques > Crear**.
+4. Seleccione **Plataforma: Windows 10 y versiones posteriores** y **Perfil: Reglas de reducción de superficie de ataque \> Crear**.
 
     > [!div class="mx-imgBorder"]
     > :::image type="content" source="images/522d9bb4288dc9c1a957392b51384fdd.png" alt-text="Portal de Microsoft Endpoint Manager 19" lightbox="images/522d9bb4288dc9c1a957392b51384fdd.png":::
@@ -233,12 +233,12 @@ A continuación, seguirá creando varios tipos diferentes de directivas de segur
     > [!div class="mx-imgBorder"]
     > :::image type="content" source="images/a5a71fd73ec389f3cdce6d1a6bd1ff31.png" alt-text="Portal de Microsoft Endpoint Manager 20" lightbox="images/a5a71fd73ec389f3cdce6d1a6bd1ff31.png":::
 
-6. En la **página Configuración**: establezca las configuraciones que necesita para las reglas de reducción de superficie expuesta a ataques y, a continuación, seleccione  **Siguiente**.
+6. En la página **Configuración**, establezca las configuraciones que necesita para las reglas de reducción de superficie de ataque y, a continuación, seleccione  **Siguiente**.
 
     > [!NOTE]
-    > Configuraremos todas las reglas de reducción de superficie expuesta a ataques en Auditoría.
+    > Configuraremos todas las reglas de reducción de superficie de ataque en Auditoría.
     >
-    > Para obtener más información, consulte [Reglas de reducción de superficie expuesta a ataques](attack-surface-reduction.md).
+    > Para obtener más información, consulte [Reglas de reducción de superficie de ataque](attack-surface-reduction.md).
 
     > [!div class="mx-imgBorder"]
     > :::image type="content" source="images/dd0c00efe615a64a4a368f54257777d0.png" alt-text="Portal de Microsoft Endpoint Manager 21" lightbox="images/dd0c00efe615a64a4a368f54257777d0.png":::
@@ -248,7 +248,7 @@ A continuación, seguirá creando varios tipos diferentes de directivas de segur
     > [!div class="mx-imgBorder"]
     > :::image type="content" source="images/6daa8d347c98fe94a0d9c22797ff6f28.png" alt-text="Portal de Microsoft Endpoint Manager 22" lightbox="images/6daa8d347c98fe94a0d9c22797ff6f28.png":::
 
-8. Seleccione los grupos que desea incluir y asignar a un grupo de prueba y, a continuación, seleccione  **Siguiente**.
+8. Seleccione los grupos que desea incluir, asígnelo al grupo de pruebas y, a continuación, seleccione **Siguiente**.
 
     > [!div class="mx-imgBorder"]
     > :::image type="content" source="images/45cefc8e4e474321b4d47b4626346597.png" alt-text="Portal de Microsoft Endpoint Manager 23" lightbox="images/45cefc8e4e474321b4d47b4626346597.png":::
@@ -263,15 +263,15 @@ A continuación, seguirá creando varios tipos diferentes de directivas de segur
     > [!div class="mx-imgBorder"]
     > :::image type="content" source="images/7a631d17cc42500dacad4e995823ffef.png" alt-text="Portal de Microsoft Endpoint Manager 25" lightbox="images/7a631d17cc42500dacad4e995823ffef.png":::
 
-### <a name="attack-surface-reduction---web-protection"></a>Reducción de superficie expuesta a ataques: protección web
+### <a name="attack-surface-reduction---web-protection"></a>Reducción de superficie de ataque: protección web
 
 1. Abra el portal de MEM.
 
-2. Vaya a **Seguridad del punto de conexión > Reducción de la superficie expuesta a ataques**.
+2. Vaya a **Seguridad del punto de conexión > Reducción de la superficie de ataque**.
 
 3. Seleccione  **Crear directiva**.
 
-4. Seleccione **Windows 10 y versiones posteriores: protección web > Crear**.
+4. Seleccione **Plataforma: Windows 10 y versiones posteriores** y **Perfil: protección web \> Crear**.
 
     > [!div class="mx-imgBorder"]
     > :::image type="content" source="images/cd7b5a1cbc16cc05f878cdc99ba4c27f.png" alt-text="Portal de Microsoft Endpoint Manager 26" lightbox="images/cd7b5a1cbc16cc05f878cdc99ba4c27f.png":::
@@ -281,27 +281,27 @@ A continuación, seguirá creando varios tipos diferentes de directivas de segur
     > [!div class="mx-imgBorder"]
     > :::image type="content" source="images/5be573a60cd4fa56a86a6668b62dd808.png" alt-text="Portal de Microsoft Endpoint Manager 27" lightbox="images/5be573a60cd4fa56a86a6668b62dd808.png":::
 
-6. En la **página Configuración**: establezca las configuraciones que necesita para La protección web y, a continuación, seleccione  **Siguiente**.
+6. En la página **Configuración**, establezca las configuraciones que necesita para la protección web y, a continuación, seleccione  **Siguiente**.
 
     > [!NOTE]
-    > Estamos configurando La protección web en bloque.
+    > Estamos configurando la protección web en bloque.
     >
     > Para obtener más información, consulte [Protección web](web-protection-overview.md).
 
     > [!div class="mx-imgBorder"]
     > :::image type="content" source="images/6104aa33a56fab750cf30ecabef9f5b6.png" alt-text="Portal de Microsoft Endpoint Manager 28" lightbox="images/6104aa33a56fab750cf30ecabef9f5b6.png":::
 
-7. Agregue **etiquetas de ámbito según sea necesario > Siguiente**.
+7. Agregue etiquetas de ámbito según sea necesario y, a continuación, seleccione **Siguiente**.
 
     > [!div class="mx-imgBorder"]
     > :::image type="content" source="images/6daa8d347c98fe94a0d9c22797ff6f28.png" alt-text="Portal de Microsoft Endpoint Manager 29" lightbox="images/6daa8d347c98fe94a0d9c22797ff6f28.png":::
 
-8. Seleccione **Asignar para probar el grupo > Siguiente**.
+8. Seleccione los grupos que desea incluir, asígnelo al grupo de pruebas y, a continuación, seleccione **Siguiente**.
 
     > [!div class="mx-imgBorder"]
     > :::image type="content" source="images/45cefc8e4e474321b4d47b4626346597.png" alt-text="Portal de Microsoft Endpoint Manager 30" lightbox="images/45cefc8e4e474321b4d47b4626346597.png":::
 
-9. Seleccione **Revisar y crear > Crear**.
+9. Revise los detalles y, a continuación, seleccione  **Crear**.
 
     > [!div class="mx-imgBorder"]
     > :::image type="content" source="images/8ee0405f1a96c23d2eb6f737f11c1ae5.png" alt-text="Portal de Microsoft Endpoint Manager 31" lightbox="images/8ee0405f1a96c23d2eb6f737f11c1ae5.png":::
@@ -313,11 +313,11 @@ A continuación, seguirá creando varios tipos diferentes de directivas de segur
 
 ## <a name="validate-configuration-settings"></a>Validación de los valores de configuración
 
-### <a name="confirm-policies-have-been-applied"></a>Confirmación de que se han aplicado directivas
+### <a name="confirm-policies-have-been-applied"></a>Confirmar que se han aplicado directivas
 
 Una vez asignada la directiva de configuración, se tardará algún tiempo en aplicarse.
 
-Para obtener información sobre el tiempo, consulte [Intune información de configuración](/mem/intune/configuration/device-profile-troubleshoot#how-long-does-it-take-for-devices-to-get-a-policy-profile-or-app-after-they-are-assigned).
+Para obtener información sobre el tiempo, consulte [información de configuración de Intune](/mem/intune/configuration/device-profile-troubleshoot#how-long-does-it-take-for-devices-to-get-a-policy-profile-or-app-after-they-are-assigned).
 
 Para confirmar que la directiva de configuración se ha aplicado al dispositivo de prueba, siga el proceso siguiente para cada directiva de configuración.
 
@@ -349,24 +349,24 @@ Para confirmar que la directiva de configuración se ha aplicado al dispositivo 
     > [!div class="mx-imgBorder"]
     > [![Imagen del portal de Microsoft Endpoint Manager 37.](images/42acc69d0128ed09804010bdbdf0a43c.png)](images/42acc69d0128ed09804010bdbdf0a43c.png#lightbox)
 
-### <a name="confirm-endpoint-detection-and-response"></a>Confirmación de la detección y respuesta del punto de conexión
+### <a name="confirm-endpoint-detection-and-response"></a>Confirmar la detección y respuesta del punto de conexión
 
-1. Antes de aplicar la configuración, no se debe iniciar el servicio Defender para Endpoint Protection.
+1. Antes de aplicar la configuración, no se debe iniciar el servicio de protección de Defender para punto de conexión.
 
     > [!div class="mx-imgBorder"]
     > [![Imagen del panel Servicios1.](images/b418a232a12b3d0a65fc98248dbb0e31.png)](images/b418a232a12b3d0a65fc98248dbb0e31.png#lightbox)
 
-2. Una vez aplicada la configuración, se debe iniciar el servicio Defender para Endpoint Protection.
+2. Una vez aplicada la configuración, se debe iniciar el servicio de protección de Defender para punto de conexión.
 
     > [!div class="mx-imgBorder"]
     > [![Imagen del panel Servicios2.](images/a621b699899f1b41db211170074ea59e.png)](images/a621b699899f1b41db211170074ea59e.png#lightbox)
 
-3. Una vez que los servicios se ejecutan en el dispositivo, el dispositivo aparece en Microsoft 365 Defender portal.
+3. Una vez que los servicios se ejecutan en el dispositivo, el dispositivo aparece en el portal de Microsoft 365 Defender.
 
     > [!div class="mx-imgBorder"]
     > [![Imagen de Microsoft 365 Defender portal.](images/df0c64001b9219cfbd10f8f81a273190.png)](images/df0c64001b9219cfbd10f8f81a273190.png#lightbox)
 
-### <a name="confirm-next-generation-protection"></a>Confirmación de la protección de próxima generación
+### <a name="confirm-next-generation-protection"></a>Confirmar la protección de próxima generación
 
 1. Antes de aplicar la directiva en un dispositivo de prueba, debe poder administrar manualmente la configuración como se muestra a continuación.
 
@@ -381,9 +381,9 @@ Para confirmar que la directiva de configuración se ha aplicado al dispositivo 
     > [!div class="mx-imgBorder"]
     > :::image type="content" source="images/9341428b2d3164ca63d7d4eaa5cff642.png" alt-text="Página de configuración 2" lightbox="images/9341428b2d3164ca63d7d4eaa5cff642.png":::
 
-### <a name="confirm-attack-surface-reduction---attack-surface-reduction-rules"></a>Confirmar reducción de superficie expuesta a ataques: reglas de reducción de superficie expuesta a ataques
+### <a name="confirm-attack-surface-reduction---attack-surface-reduction-rules"></a>Confirmar la reducción de superficie de ataque: reglas de reducción de superficie de ataque
 
-1. Antes de aplicar la directiva en un dispositivo de prueba, escriba una ventana de PowerShell y escriba `Get-MpPreference`.
+1. Antes de aplicar la directiva en un dispositivo de prueba, abra una ventana de PowerShell y escriba `Get-MpPreference`.
 
 2. Esto debe responder con las siguientes líneas sin contenido:
 
@@ -395,21 +395,21 @@ Para confirmar que la directiva de configuración se ha aplicado al dispositivo 
 
     :::image type="content" source="images/cb0260d4b2636814e37eee427211fe71.png" alt-text="Línea de comandos-1" lightbox="images/cb0260d4b2636814e37eee427211fe71.png":::
 
-3. Después de aplicar la directiva en un dispositivo de prueba, abra un Windows de PowerShell y escriba `Get-MpPreference`.
+3. Después de aplicar la directiva en un dispositivo de prueba, abra una ventana de PowerShell y escriba `Get-MpPreference`.
 
 4. Esto debe responder con las siguientes líneas con contenido, como se muestra a continuación:
 
    :::image type="content" source="images/619fb877791b1fc8bc7dfae1a579043d.png" alt-text="Línea de comandos-2" lightbox="images/619fb877791b1fc8bc7dfae1a579043d.png":::
 
-### <a name="confirm-attack-surface-reduction---web-protection"></a>Confirmación de la reducción de superficie expuesta a ataques: Protección web
+### <a name="confirm-attack-surface-reduction---web-protection"></a>Confirmar la reducción de superficie de ataque: Protección web
 
-1. En el dispositivo de prueba, abra un windows de PowerShell y escriba  `(Get-MpPreference).EnableNetworkProtection`.
+1. En el dispositivo de prueba, abra una ventana de PowerShell y escriba `(Get-MpPreference).EnableNetworkProtection`.
 
 2. Esto debe responder con un 0 como se muestra a continuación.
 
    :::image type="content" source="images/196a8e194ac99d84221f405d0f684f8c.png" alt-text="Línea de comandos-3" lightbox="images/196a8e194ac99d84221f405d0f684f8c.png":::
 
-3. Después de aplicar la directiva, abra un windows de PowerShell y escriba  `(Get-MpPreference).EnableNetworkProtection`.
+3. Después de aplicar la directiva, abra una ventana de PowerShell y escriba `(Get-MpPreference).EnableNetworkProtection`.
 
 4. Esto debe responder con un 1 como se muestra a continuación.
 
