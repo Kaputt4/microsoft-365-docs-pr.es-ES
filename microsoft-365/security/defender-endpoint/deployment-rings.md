@@ -47,7 +47,7 @@ Los anillos de implementación se pueden aplicar en los siguientes escenarios:
 
 :::image type="content" source="images/deployment-rings.png" alt-text="Los anillos de implementación." lightbox="images/deployment-rings.png":::
 
-Un enfoque basado en anillos es un método para identificar un conjunto de puntos de conexión para incorporar y comprobar que se cumplen determinados criterios antes de continuar con la implementación del servicio en un conjunto mayor de dispositivos. Puede definir los criterios de salida para cada anillo y asegurarse de que están satisfechos antes de pasar al siguiente anillo.
+Un enfoque basado en anillos es un método para identificar un conjunto de puntos de conexión para incorporar y comprobar que se cumplen determinados criterios antes de continuar con la implementación del servicio en un conjunto mayor de dispositivos. Puede definir los criterios de salida para cada anillo y asegurarse de que están cumplidos antes de pasar al siguiente anillo.
 
 La adopción de una implementación basada en anillos ayuda a reducir los posibles problemas que podrían surgir al implementar el servicio. Al pilotar un determinado número de dispositivos en primer lugar, puede identificar posibles problemas y mitigar los posibles riesgos que puedan surgir.
 
@@ -57,7 +57,7 @@ En la tabla 1 se proporciona un ejemplo de los anillos de implementación que pu
 
 |Anillo de implementación|Descripción|
 |---|---|
-|Calcular|Anillo 1: Identificación de 50 sistemas para pruebas piloto|
+|Evaluación|Anillo 1: Identificación de 50 sistemas para pruebas piloto|
 |Piloto|Anillo 2: Identificación de los próximos 50-100 puntos de conexión en el entorno de producción|
 |Implementación completa|Anillo 3: Implementación del servicio en el resto del entorno en incrementos mayores|
 
@@ -90,7 +90,7 @@ En la tabla siguiente se muestran los puntos de conexión admitidos y la herrami
 
 ### <a name="full-deployment"></a>Implementación completa
 
-En esta fase, puede usar el material [plan de implementación](deployment-strategy.md) para ayudarle a planear la implementación.
+En esta fase, puede usar el material del [Plan de implementación](deployment-strategy.md) para ayudarle a planificar la implementación.
 
 Use el siguiente material para seleccionar la arquitectura de Microsoft Defender para punto de conexión adecuada que mejor se adapte a su organización.
 
@@ -100,23 +100,23 @@ Use el siguiente material para seleccionar la arquitectura de Microsoft Defender
 
 ## <a name="existing-deployments"></a>Implementaciones existentes
 
-### <a name="windows-endpoints"></a>Puntos de conexión de Windows
+### <a name="windows-endpoints"></a>Puntos de conexión Windows
 
-En el caso de windows o servidores Windows, seleccione varias máquinas para realizar pruebas con antelación (antes del martes de revisión) mediante el **programa de validación de actualizaciones de seguridad (SUVP).**
+En el caso de equipos y/o servidores Windows, seleccione varias máquinas para realizar pruebas con antelación (antes del martes de parches) mediante el **programa de validación de actualizaciones de seguridad (SUVP).**
 
 Para obtener más información, consulte:
 
 - [¿Qué es el programa de validación de actualizaciones de seguridad?](https://techcommunity.microsoft.com/t5/windows-it-pro-blog/what-is-the-security-update-validation-program/ba-p/275767)
 - [Programa de validación de actualizaciones de software y establecimiento de Centro de protección contra malware de Microsoft- TwC Interactive Timeline Part 4](https://www.microsoft.com/security/blog/2012/03/28/software-update-validation-program-and-microsoft-malware-protection-center-establishment-twc-interactive-timeline-part-4/)
 
-### <a name="non-windows-endpoints"></a>Puntos de conexión que no son de Windows
+### <a name="non-windows-endpoints"></a>Puntos de conexión que no son Windows
 
 Con macOS y Linux, podría tomar un par de sistemas y ejecutarse en el canal Beta.
 
 > [!NOTE]
 > Lo ideal es que al menos un administrador de seguridad y un desarrollador puedan encontrar problemas de compatibilidad, rendimiento y confiabilidad antes de que la compilación llegue al canal actual.
 
-La elección del canal determina el tipo y la frecuencia de las actualizaciones que se ofrecen al dispositivo. Los dispositivos beta son los primeros en recibir actualizaciones y nuevas características, seguidos más adelante de la versión preliminar y, por último, de Actual.
+La elección del canal determina el tipo y la frecuencia de las actualizaciones que se ofrecen al dispositivo. Los dispositivos beta son los primeros en recibir actualizaciones y nuevas características, seguidos más adelante de la versión preliminar y, por último, de la actual.
 
 :::image type="content" source="images/insider-rings.png" alt-text="Los anillos internos." lightbox="images/insider-rings.png":::
 

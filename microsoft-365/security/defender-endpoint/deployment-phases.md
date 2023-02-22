@@ -75,12 +75,12 @@ Aunque Microsoft Defender para punto de conexión proporciona muchas funcionalid
 |---|---|
 |Detección y respuesta de puntos de conexión|Las funcionalidades de detección y respuesta de puntos de conexión se implementan para detectar, investigar y responder a intentos de intrusiones y infracciones activas.|
 |Protección de última generación|Para reforzar aún más el perímetro de seguridad de la red, Microsoft Defender para punto de conexión usa la protección de próxima generación diseñada para detectar todos los tipos de amenazas emergentes.|
-|Reducción de la superficie expuesta a ataques|Proporcione la primera línea de defensa en la pila. Al garantizar que los valores de configuración se establecen correctamente y se aplican las técnicas de mitigación de vulnerabilidades de seguridad, estas funcionalidades resisten los ataques y la explotación.|
+|Reducción de la superficie de ataque|Proporcione la primera línea de defensa en la pila. Al garantizar que los valores de configuración se establecen correctamente y se aplican las técnicas de mitigación de exploits, estas funcionalidades resisten los ataques y la explotación.|
 |
 
 Todas estas funcionalidades están disponibles para los titulares de licencias de Microsoft Defender para punto de conexión. Para obtener más información, consulte [Requisitos de licencias](minimum-requirements.md#licensing-requirements).
 
-## <a name="scope"></a>Alcamce
+## <a name="scope"></a>Alcance
 
 ### <a name="in-scope"></a>Dentro del alcance
 

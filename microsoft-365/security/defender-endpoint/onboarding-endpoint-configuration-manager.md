@@ -74,11 +74,11 @@ Cualquier sistema que reciba esta configuración necesaria mantendrá esa config
 
 Siga los pasos siguientes para incorporar puntos de conexión mediante Microsoft Endpoint Configuration Manager.
 
-1. En la consola de Microsoft Endpoint Configuration Manager, vaya a **Assets and Compliance Overview Device Collections (Recopilaciones de dispositivos de información general sobre \> recursos y cumplimiento\>**).
+1. En la consola de Microsoft Endpoint Configuration Manager, vaya a **Activos y Cumplimiento \> Vista general \> Recopilación de dispositivos**).
 
     :::image type="content" source="images/configmgr-device-collections.png" alt-text="Asistente para Microsoft Endpoint Configuration Manager1" lightbox="images/configmgr-device-collections.png":::
 
-2. Seleccione **Recopilación de dispositivos** con el botón derecho y **seleccione Crear recopilación de dispositivos**.
+2. Seleccione **Recopilación de dispositivos** con el botón derecho y seleccione **Crear recopilación de dispositivos**.
 
     :::image type="content" source="images/configmgr-create-device-collection.png" alt-text="Asistente para Microsoft Endpoint Configuration Manager2" lightbox="images/configmgr-create-device-collection.png":::
 
@@ -98,7 +98,7 @@ Siga los pasos siguientes para incorporar puntos de conexión mediante Microsoft
 
     :::image type="content" source="images/configmgr-criteria.png" alt-text="Asistente para Microsoft Endpoint Configuration Manager6" lightbox="images/configmgr-criteria.png":::
 
-7. Mantenga el tipo de criterio como **valor simple**, elija dónde como **Sistema operativo: número de compilación**, operador como **mayor o igual que** y valor **14393** y seleccione en **Aceptar**.
+7. Mantenga el tipo de criterio como **valor simple**, elija dónde como **Sistema operativo — número de compilación**, operador como **es mayor o igual que** y valor **14393** y seleccione **Aceptar**.
 
     :::image type="content" source="images/configmgr-simple-value.png" alt-text="Asistente para Microsoft Endpoint Configuration Manager7" lightbox="images/configmgr-simple-value.png":::
 
@@ -112,19 +112,19 @@ Siga los pasos siguientes para incorporar puntos de conexión mediante Microsoft
 
 Después de completar esta tarea, ahora tiene una recopilación de dispositivos con todos los puntos de conexión de Windows en el entorno.
 
-## <a name="step-2-configure-microsoft-defender-for-endpoint-capabilities"></a>Paso 2: Configurar funcionalidades de Microsoft Defender para punto de conexión
+## <a name="step-2-configure-microsoft-defender-for-endpoint-capabilities"></a>Paso 2: Configuración de las funcionalidades de Microsoft Defender para punto de conexión
 
 Esta sección le guía en la configuración de las siguientes funcionalidades mediante Microsoft Endpoint Configuration Manager en dispositivos Windows:
 
 - [**Detección y respuesta de puntos de conexión**](#endpoint-detection-and-response)
 - [**Protección de última generación**](#next-generation-protection)
-- [**Reducción de la superficie expuesta a ataques**](#attack-surface-reduction)
+- [**Reducción de la superficie de ataque**](#attack-surface-reduction)
 
 ### <a name="endpoint-detection-and-response"></a>Detección y respuesta de puntos de conexión
 
 #### <a name="windows-10-and-windows-11"></a>Windows 10 y Windows 11
 
-Desde el portal de Microsoft 365 Defender es posible descargar la `.onboarding` directiva que se puede usar para crear la directiva en System Center Configuration Manager e implementarla en dispositivos Windows 10 y Windows 11.
+Desde el portal de Microsoft 365 Defender es posible descargar la directiva `.onboarding` que se puede usar para crear la directiva en System Center Configuration Manager e implementarla en dispositivos Windows 10 y Windows 11.
 
 1. En un <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">portal de Microsoft 365 Defender</a>, seleccione [Configuración y, a continuación, Incorporación](https://security.microsoft.com/preferences2/onboarding).
 
@@ -137,13 +137,13 @@ Desde el portal de Microsoft 365 Defender es posible descargar la `.onboarding` 
    :::image type="content" source="images/mdatp-download-package.png" alt-text="Asistente de Microsoft Endpoint Configuration Manager11" lightbox="images/mdatp-download-package.png":::
 
 4. Guarde el paquete en una ubicación accesible.
-5. En Microsoft Endpoint Configuration Manager, vaya a: **Recursos y compatibilidad > Información general > Directivas de ATP > Microsoft Defender Endpoint Protection**.
+5. En Microsoft Endpoint Configuration Manager, vaya a: **Recursos y cumplimiento \> Información general \> Endpoint Protection \> Directivas ATP de Microsoft Defender**.
 
-6. Haga clic con el botón derecho en **Microsoft Defender directivas de ATP** y seleccione **Crear Microsoft Defender directiva de ATP**.
+6. Haga clic con el botón derecho en **Directivas ATP de Microsoft Defender** y seleccione **Crear Directiva ATP de Microsoft Defender**.
 
     :::image type="content" source="images/configmgr-create-policy.png" alt-text="Asistente de Microsoft Endpoint Configuration Manager12" lightbox="images/configmgr-create-policy.png":::
 
-7. Escriba el nombre y la descripción, compruebe **que La incorporación** está seleccionada y, a continuación, seleccione **Siguiente**.
+7. Escriba el nombre y la descripción, compruebe que **incorporación** está seleccionada y, a continuación, seleccione **Siguiente**.
 
     :::image type="content" source="images/configmgr-policy-name.png" alt-text="Asistente de Microsoft Endpoint Configuration Manager13" lightbox="images/configmgr-policy-name.png":::
 
@@ -178,7 +178,7 @@ Desde el portal de Microsoft 365 Defender es posible descargar la `.onboarding` 
 
 Siga los pasos siguientes para identificar el identificador del área de trabajo de Defender para punto de conexión y la clave del área de trabajo que serán necesarios para la incorporación de versiones anteriores de Windows.
 
-1. En un <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">portal de Microsoft 365 Defender</a>, seleccione **Configuración** \> **Puntos de conexión** \> **Incorporación** (en **Administración de dispositivos**).
+1. En un <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">portal de Microsoft 365 Defender</a>, seleccione **Configuración \> Puntos de conexión \> Incorporación** (en **Administración de dispositivos**).
 
 2. En sistema operativo, elija **Windows 7 SP1 y 8.1**.
 
@@ -203,7 +203,7 @@ Siga los pasos siguientes para identificar el identificador del área de trabajo
 
    En concreto, para Windows 7 SP1, se deben instalar las siguientes revisiones:
 
-   - Instalar [KB4074598](https://support.microsoft.com/help/4074598/windows-7-update-kb4074598)
+   - Instale [KB4074598](https://support.microsoft.com/help/4074598/windows-7-update-kb4074598)
    - Instale [.NET Framework 4.5](https://www.microsoft.com/download/details.aspx?id=30653) (o posterior) **o** [KB3154518](https://support.microsoft.com/help/3154518/support-for-tls-system-default-versions-included-in-the-net-framework). No instale ambos en el mismo sistema.
 
 5. Si usa un proxy para conectarse a Internet, consulte la sección Configuración de proxy.
@@ -214,11 +214,11 @@ Una vez completado, debería ver los puntos de conexión incorporados en el port
 
 Microsoft Defender Antivirus es una solución antimalware integrada que proporciona protección de próxima generación para equipos de escritorio, equipos portátiles y servidores.
 
-1. En la consola de Microsoft Endpoint Configuration Manager, vaya a **Assets and Compliance Overview Endpoint Protection Antimalware Polices (Directivas antimalware de Endpoint Protection \> de Información general \> sobre activos y cumplimiento\>**) y elija **Create Antimalware Policy (Crear directiva antimalware**).
+1. En la consola de Microsoft Endpoint Configuration Manager, vaya a **Recursos y cumplimiento \> Información general \> Endpoint Protection \> Directivas Antimalware **) y elija **Crear directiva antimalware**.
 
    :::image type="content" source="images/9736e0358e86bc778ce1bd4c516adb8b.png" alt-text="Directiva antimalware" lightbox="images/9736e0358e86bc778ce1bd4c516adb8b.png":::
 
-2. Seleccione **Exámenes programados**, **Configuración de examen**, **Acciones predeterminadas**, **Protección en tiempo real**, **Configuración de exclusión**, **Opciones avanzadas**, **Invalidaciones de amenazas**, **Servicio de protección** en la nube y **Actualizaciones de inteligencia de seguridad** y elija **Aceptar**.
+2. Seleccione **Exámenes programados**, **Configuración de examen**, **Acciones predeterminadas**, **Protección en tiempo real**, **Configuración de exclusión**, **Opciones avanzadas**, **Invalidaciones de amenazas**, **Servicio de protección en la nube** y **Actualizaciones de inteligencia de seguridad** y elija **Aceptar**.
 
    :::image type="content" source="images/1566ad81bae3d714cc9e0d47575a8cbd.png" alt-text="Panel de protección de próxima generación1" lightbox="images/1566ad81bae3d714cc9e0d47575a8cbd.png":::
 
@@ -226,7 +226,7 @@ Microsoft Defender Antivirus es una solución antimalware integrada que proporci
 
     [Examen rápido frente a examen completo y examen personalizado](/windows/security/threat-protection/microsoft-defender-antivirus/scheduled-catch-up-scans-microsoft-defender-antivirus#quick-scan-versus-full-scan-and-custom-scan)
 
-    Para obtener más información, consulte [Seguridad de Windows marco de configuración](/windows/security/threat-protection/windows-security-configuration-framework/windows-security-configuration-framework).
+    Para obtener más información, consulte el [marco de configuración de seguridad de Windows](/windows/security/threat-protection/windows-security-configuration-framework/windows-security-configuration-framework).
   
     :::image type="content" source="images/cd7daeb392ad5a36f2d3a15d650f1e96.png" alt-text="Panel de protección de próxima generación2" lightbox="images/cd7daeb392ad5a36f2d3a15d650f1e96.png":::
 
@@ -248,31 +248,31 @@ Microsoft Defender Antivirus es una solución antimalware integrada que proporci
 
     :::image type="content" source="images/f5508317cd8c7870627cb4726acd5f3d.png" alt-text="Panel de protección de última generación10" lightbox="images/f5508317cd8c7870627cb4726acd5f3d.png":::
 
-4. Dirige la nueva directiva antimalware a tu colección de Windows y selecciona **Aceptar**.
+4. Dirija la nueva directiva antimalware a tu colección de Windows y selecciona **Aceptar**.
 
     :::image type="content" source="images/configmgr-select-collection.png" alt-text="Panel de protección de próxima generación11" lightbox="images/configmgr-select-collection.png":::
 
 Después de completar esta tarea, ahora ha configurado correctamente Microsoft Defender Antivirus.
 
-### <a name="attack-surface-reduction"></a>Reducción de la superficie expuesta a ataques
+### <a name="attack-surface-reduction"></a>Reducción de la superficie de ataque
 
-El pilar de reducción de la superficie expuesta a ataques de Defender para punto de conexión incluye el conjunto de características que está disponible en Protección contra vulnerabilidades de seguridad. Reglas de reducción de la superficie expuesta a ataques (ASR), acceso controlado a carpetas, protección de red y protección contra vulnerabilidades de seguridad.
+El pilar de reducción de la superficie de ataque de Defender para punto de conexión incluye el conjunto de características que está disponible en Exploit Guard: reglas de reducción de la superficie de ataque (ASR), acceso controlado a carpetas, protección de red y protección contra exploits.
 
-Todas estas características proporcionan un modo de prueba y un modo de bloque. En el modo de prueba, no hay ningún impacto en el usuario final. Todo lo que hace es recopilar telemetría adicional y hacer que esté disponible en el portal de Microsoft 365 Defender. El objetivo de una implementación es mover paso a paso los controles de seguridad al modo de bloque.
+Todas estas características proporcionan un modo de prueba y un modo de bloqueo. En el modo de prueba, no hay ningún impacto en el usuario final. Todo lo que hace es recopilar telemetría adicional y ponerla a disposición en el portal de Microsoft 365 Defender. El objetivo de una implementación es mover paso a paso los controles de seguridad al modo de bloque.
 
 Para establecer reglas de ASR en modo de prueba:
 
-1. En la consola de Microsoft Endpoint Configuration Manager, vaya a **Assets and Compliance \> Overview \> Endpoint Protection \> Windows डिफेन्डर Exploit Guard** y elija Crear directiva **de Protección contra vulnerabilidades de seguridad**.
+1. En la consola de Microsoft Endpoint Configuration Manager, vaya a **Recursos y cumplimiento \> Información general \> Endpoint Protection \> Windows Defender Exploit Guard** y elija **Crear directiva de Exploit Guard**.
 
    :::image type="content" source="images/728c10ef26042bbdbcd270b6343f1a8a.png" alt-text="La consola de Microsoft Endpoint Configuration Manager0" lightbox="images/728c10ef26042bbdbcd270b6343f1a8a.png":::
 
-2. Seleccione **Reducción de superficie expuesta a ataques**.
+2. Seleccione **Reducción de superficie de ataque**.
 
 3. Establezca reglas en **Auditar** y seleccione **Siguiente**.
 
    :::image type="content" source="images/d18e40c9e60aecf1f9a93065cb7567bd.png" alt-text="La consola de Microsoft Endpoint Configuration Manager1" lightbox="images/d18e40c9e60aecf1f9a93065cb7567bd.png":::
 
-4. Para confirmar la nueva directiva de Protección contra vulnerabilidades de seguridad, seleccione **Siguiente**.
+4. Para confirmar la nueva directiva de Exploit Guard, seleccione **Siguiente**.
 
    :::image type="content" source="images/0a6536f2c4024c08709cac8fcf800060.png" alt-text="Consola de Microsoft Endpoint Configuration Manager2" lightbox="images/0a6536f2c4024c08709cac8fcf800060.png":::
 
@@ -296,23 +296,23 @@ A continuación se muestran pasos adicionales para comprobar si las reglas de AS
 
 2. Seleccione **Administración de configuración** en el menú de la izquierda.
 
-3. Seleccione **Ir a la administración de superficies expuestas a ataques** en el panel Administración de superficie expuesta a ataques.
+3. Seleccione **Ir a la administración de superficies expuestas a ataques** en el panel Administración de superficie de ataque.
 
-   :::image type="content" source="images/security-center-attack-surface-mgnt-tile.png" alt-text="Administración de la superficie expuesta a ataques" lightbox="images/security-center-attack-surface-mgnt-tile.png":::
+   :::image type="content" source="images/security-center-attack-surface-mgnt-tile.png" alt-text="Administración de la superficie de ataque" lightbox="images/security-center-attack-surface-mgnt-tile.png":::
 
-4. Seleccione **la pestaña Configuración** en Informes de reglas de reducción de superficie expuesta a ataques. Muestra información general sobre la configuración de reglas de ASR y el estado de las reglas de ASR en cada dispositivo.
+4. Seleccione **la pestaña Configuración** en Informes de reglas de reducción de superficie de ataque. Muestra información general sobre la configuración de reglas de ASR y el estado de las reglas de ASR en cada dispositivo.
 
-   :::image type="content" source="images/f91f406e6e0aae197a947d3b0e8b2d0d.png" alt-text="Las reglas de reducción de superficie expuesta a ataques informan1" lightbox="images/f91f406e6e0aae197a947d3b0e8b2d0d.png":::
+   :::image type="content" source="images/f91f406e6e0aae197a947d3b0e8b2d0d.png" alt-text="Las reglas de reducción de superficie de ataque informan1" lightbox="images/f91f406e6e0aae197a947d3b0e8b2d0d.png":::
 
 5. Seleccionar cada dispositivo muestra los detalles de configuración de las reglas de ASR.
 
-   :::image type="content" source="images/24bfb16ed561cbb468bd8ce51130ca9d.png" alt-text="Las reglas de reducción de superficie expuesta a ataques informan2" lightbox="images/24bfb16ed561cbb468bd8ce51130ca9d.png":::
+   :::image type="content" source="images/24bfb16ed561cbb468bd8ce51130ca9d.png" alt-text="Las reglas de reducción de superficie de ataque informan2" lightbox="images/24bfb16ed561cbb468bd8ce51130ca9d.png":::
 
 Consulte [Optimización de la implementación y detecciones de reglas de ASR](/microsoft-365/security/defender-endpoint/configure-machines-asr) para obtener más detalles.
 
-#### <a name="set-network-protection-rules-in-test-mode"></a>Establecimiento de reglas de protección de red en modo de prueba
+#### <a name="set-network-protection-rules-in-test-mode"></a>Establecer de reglas de protección de red en modo de prueba
 
-1. En la consola de Microsoft Endpoint Configuration Manager, vaya a **Assets and Compliance \> Overview \> Endpoint Protection \> Windows डिफेन्डर Exploit Guard** y elija Crear directiva **de Protección contra vulnerabilidades de seguridad**.
+1. En la consola de Microsoft Endpoint Configuration Manager, vaya a **Recursos y cumplimiento \> Información general \> Endpoint Protection \> Windows Defender Exploit Guard** y elija **Crear directiva de Exploit Guard**.
 
    :::image type="content" source="images/728c10ef26042bbdbcd270b6343f1a8a.png" alt-text="The System Center Configuration Manager1" lightbox="images/728c10ef26042bbdbcd270b6343f1a8a.png":::
 
@@ -322,13 +322,13 @@ Consulte [Optimización de la implementación y detecciones de reglas de ASR](/m
 
    :::image type="content" source="images/c039b2e05dba1ade6fb4512456380c9f.png" alt-text="The System Center Configuration Manager2" lightbox="images/c039b2e05dba1ade6fb4512456380c9f.png":::
 
-4. Para confirmar la nueva directiva de Protección contra vulnerabilidades de seguridad, seleccione **Siguiente**.
+4. Para confirmar la nueva directiva de Exploit Guard, seleccione **Siguiente**.
 
-   :::image type="content" source="images/0a6536f2c4024c08709cac8fcf800060.png" alt-text="La directiva de Protección contra vulnerabilidades1" lightbox="images/0a6536f2c4024c08709cac8fcf800060.png":::
+   :::image type="content" source="images/0a6536f2c4024c08709cac8fcf800060.png" alt-text="La directiva de Exploit Guard1" lightbox="images/0a6536f2c4024c08709cac8fcf800060.png":::
 
 5. Una vez creada la directiva, seleccione **Cerrar**.
 
-   :::image type="content" source="images/95d23a07c2c8bc79176788f28cef7557.png" alt-text="La directiva de Protección contra vulnerabilidades2" lightbox="images/95d23a07c2c8bc79176788f28cef7557.png":::
+   :::image type="content" source="images/95d23a07c2c8bc79176788f28cef7557.png" alt-text="La directiva de Exploit Guard2" lightbox="images/95d23a07c2c8bc79176788f28cef7557.png":::
 
 6. Haga clic con el botón derecho en la directiva recién creada y elija **Implementar**.
 
@@ -340,9 +340,9 @@ Consulte [Optimización de la implementación y detecciones de reglas de ASR](/m
 
 Después de completar esta tarea, ahora ha configurado correctamente Protección de red en modo de prueba.
 
-#### <a name="to-set-controlled-folder-access-rules-in-test-mode"></a>Para establecer reglas de acceso controlado a carpetas en modo de prueba
+#### <a name="to-set-controlled-folder-access-rules-in-test-mode"></a>Establecer reglas de acceso controlado a carpetas en modo de prueba
 
-1. En la consola de Microsoft Endpoint Configuration Manager, vaya a **Assets and Compliance** > **Overview** > **Endpoint Protection** >  **Windows डिफेन्डर Exploit Guard** y, a continuación, elija **Crear directiva de Protección contra vulnerabilidades de seguridad**.
+1. En la consola de Microsoft Endpoint Configuration Manager, vaya a **Recursos y cumplimiento \> Información general \> Endpoint Protection \>  Windows Defender Exploit Guard** y, a continuación, elija **Crear directiva de Exploit Guard**.
 
    :::image type="content" source="images/728c10ef26042bbdbcd270b6343f1a8a.png" alt-text="The Microsoft Endpoint Configuration Manager-3" lightbox="images/728c10ef26042bbdbcd270b6343f1a8a.png":::
 
@@ -352,7 +352,7 @@ Después de completar esta tarea, ahora ha configurado correctamente Protección
 
    :::image type="content" source="images/a8b934dab2dbba289cf64fe30e0e8aa4.png" alt-text="The Microsoft Endpoint Configuration Manager-4" lightbox="images/a8b934dab2dbba289cf64fe30e0e8aa4.png":::
 
-4. Para confirmar la nueva directiva de Protección contra vulnerabilidades de seguridad, seleccione **Siguiente**.
+4. Para confirmar la nueva directiva de Exploit Guard, seleccione **Siguiente**.
 
    :::image type="content" source="images/0a6536f2c4024c08709cac8fcf800060.png" alt-text="The Microsoft Endpoint Configuration Manager-5" lightbox="images/0a6536f2c4024c08709cac8fcf800060.png":::
 
